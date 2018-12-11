@@ -14,11 +14,11 @@ ms.collection:
 ms.custom: ''
 description: 哪裡可以找到現代化電腦部署的說明和支援。
 ms.openlocfilehash: 7c6f68320165abdfd131a84e84345bd6ff6d47c1
-ms.sourcegitcommit: 369f07db4e457334900314a2575f2f75cff5ce9c
+ms.sourcegitcommit: fec2c756121006069dc3e5b8dbd6c4abe7a3c63c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27201617"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27214421"
 ---
 # <a name="find-help-for-your-modern-desktop-deployment"></a>尋找現代化電腦部署的說明 
 
