@@ -10,10 +10,10 @@ title: Microsoft 365 文件
 description: 尋找 Microsoft 365 的文件和資源--完整的智慧解決方案，包括 Office 365、Windows 10 以及 Enterprise Mobility + Security，可讓所有人發揮創意並安全地合作。
 ms.date: 07/01/2018
 ms.openlocfilehash: b2c796fc35859128d4a65ea3587db082f8264abd
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866131"
 ---
 <div id="main" class="v2">

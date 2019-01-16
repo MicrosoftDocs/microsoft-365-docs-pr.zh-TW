@@ -18,10 +18,10 @@ search.appverid:
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: 了解如何自動安裝 32 位元的 Office 應用程式到 Windows 10 電腦並保留加以更新。
 ms.openlocfilehash: 16a8230d60157f1c6731ac639d89533b05aa3afe
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866116"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-business"></a>透過 Microsoft 365 商務版準備 Office 用戶端部署

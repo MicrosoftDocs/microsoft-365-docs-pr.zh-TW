@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365 企業版測試環境的 MAM 原則
+title: Microsoft 365 企業版的裝置規範遵守原則測試環境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 11/14/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,22 +11,22 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: 若要新增至 Microsoft 365 企業版的 Intune 行動應用程式管理 (MAM) 原則測試環境中使用此測試實驗室指南。
-ms.openlocfilehash: f00379a5e70dce5e07c031a7647b27041d3fa9d1
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: 若要新增至 Microsoft 365 企業版的 Intune 裝置規範遵守原則測試環境中使用此測試實驗室指南。
+ms.openlocfilehash: 1d957c5cdc888251224bbca43fe82ab0a15e7a93
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866748"
 ---
-# <a name="mam-policies-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企業版測試環境的 MAM 原則
+# <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企業版的裝置規範遵守原則測試環境
 
-本文中的指示，與您新增至 Microsoft 365 企業版的 Intune 行動應用程式管理 (MAM) 原則測試環境。
+使用本文中的指示，您可以將 Intune 裝置規範原則新增至 Microsoft 365 企業版測試環境。
 
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](https://aka.ms/m365etlgstack)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1： 建立您的 Microsoft 365 Enterprise 的測試環境
 
@@ -38,15 +38,15 @@ ms.locfileid: "26866748"
 > 測試自動化授權和群組成員資格不需要模擬的企業測試環境中，其中包含連線至網際網路模擬內部網路和 Windows Server AD 樹系目錄同步處理。它會提供這裡是做為選項可以測試自動化授權和群組成員資格和代表的典型組織的環境中實驗。 
 >  
 
-## <a name="phase-2-create-and-deploy-mam-policies-for-ios-and-android-devices"></a>階段 2：建立和部署 iOS 和 Android 的裝置的 MAM 原則
+## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>階段 2： 建立 Windows 10 裝置的裝置規範原則
 
-在此階段中，您會建立和部署兩個不同的 MAM 原則：一個適用於 iOS 裝置，另一個適用於 Android 裝置。
+在此階段中，您會建立 Windows 10 裝置的裝置規範原則。
   
-1. 移至 Office 365 入口網站 ([https://portal.office.com](https://portal.office.com)) 並登入您的 Office 365 試用版訂閱以全域管理員帳戶。
+1. 移至 [Office 入口網站 ([https://office.com](https://office.com)) 並登入您的 Office 365 試用版訂閱以全域管理員帳戶。
     
 2. 在瀏覽器的新] 索引標籤上開啟 Azure 入口網站[https://portal.azure.com](https://portal.azure.com)。
 
-3. Azure 入口網站] 索引標籤上的 Internet Explorer 中，在功能窗格] 中按一下 [**所有服務**、 並輸入**Intune**，然後按一下都 [ **Intune**。
+3. 在 Azure 的入口網站] 索引標籤中瀏覽器中，在功能窗格] 中按一下 [**所有服務**、 並輸入**Intune**，然後按一下都 [ **Intune**。
     
 4. 如果您看到**尚未啟用尚未裝置管理**訊息**Microsoft Intune** blade 上，按一下它。在**行動裝置管理授權**blade 中，按一下 [ **Intune MDM 授權**、 及 [**選擇**。重新整理您瀏覽器] 索引標籤。
     
@@ -54,97 +54,43 @@ ms.locfileid: "26866748"
     
 6. 在**群組所有群組**blade 中，按一下 [ **+ 新群組**。
     
-7. 在**群組**blade 中，選取 [ **Office 365** **群組類型？**、 在 [**名稱**] 中輸入 [**受管理的 iOS 裝置使用者****成員資格類型**] 中選取 [**已指派**] 和 [**建立**。 
+7. 在**群組**blade 中，選取 [ **Office 365** **群組類型？**、 在 [**名稱**] 中輸入**受管理的 Windows 10 裝置的使用者**在**成員資格類型**] 中選取 [**已指派**] 和 [**建立**。 
     
 8. 關閉**群組**blade。
     
-9. 在**群組所有群組**blade 中，按一下 [**新增]**。
-    
-10. 在**群組**blade 中，選取 [ **Office 365** **群組類型？**、 在 [**名稱**] 中輸入**受管理的 Android 裝置使用者****成員資格類型**] 中選取 [**已指派**] 和 [**建立**。
-    
 11. 關閉**群組所有群組**blade。
     
-12. 在**Intune** blade、**快速工作**清單中，按一下 [**建立規範原則**。
+12. 在**Microsoft Intune** blade、**快速工作**清單中，按一下 [**建立規範原則**。
     
 13. 在**規範原則設定檔**blade 中，按一下 [**建立原則**。
     
-14. 在**建立原則**blade，在 [**名稱**] 輸入**iOS**。在**平台**，選取**iOS**、 上**iOS 規範原則**blade 中，按一下 [**確定]** 和 [**建立**。
+14. 在**建立原則**blade，在 [**名稱**] 輸入**Windows 10**。**平台**，在選取**10 及更新版本的 Windows**、 在**Windows 10 規範原則**blade 中，按一下 [**確定]** 和 [**建立**。關閉**Windows 10** blade。
     
-15. 在**規範原則設定檔**blade 中，按一下 [**建立原則**。
+15. 在**規範原則設定檔**blade 中，按一下 [ **Windows 10**原則名稱。
     
-16. 在**建立原則**blade，在 [**名稱**] 中，輸入**Android**。在**平台**，選取**Android**、 在**Android 規範原則**blade 中，按一下 [**確定]** 和 [**建立**。
+16. 在**Windows 10** blade 中，按一下 [**工作分派**，及 [**選取要包含的群組**。
     
-17. 按一下 [**規範原則設定檔**blade、 **Android**原則名稱。
+17. **選取要包含的群組**blade，在 [**受管理的 Windows 10 裝置 users**群組，和 [**選取**。
     
-18. **Android-屬性**blade 的左方導覽，按一下 [**工作分派**，和 [**選取群組**。
+18. 按一下 [**儲存**]，然後關閉 [ **Windows 10-工作分派**blade。
     
-19. 在 [**選取群組**blade、 [**受管理的 Android 裝置 users**群組，和 [**選取**。
+19. 關閉**規範原則設定檔**blade。
     
-20. 按一下 [**儲存**]，然後關閉 [ **Android-工作分派**blade。
+20. 在**Microsoft Intune** blade 中，按一下 [在左側導覽中的**用戶端應用程式**。
     
-21. 按一下 [**規範原則設定檔**blade、 **iOS**原則名稱。
-    
-22. **IOS-屬性**blade 的左方導覽，按一下 [**工作分派**，和 [**選取群組**。
-    
-23. 在 [**選取群組**blade、 [**受管理 iOS 裝置 users**群組，和 [**選取**。
-    
-24. 按一下 [**儲存**]，然後關閉 [ **iOS-工作分派**blade。
-    
-25. 關閉**規範原則設定檔**blade。
-    
-26. 在**Intune** blade 中，按一下 [在左側導覽中的**管理應用程式**。
-    
-27. 在**行動應用程式**blade 中，按一下 [**應用程式**。
-    
-28. 在 [應用程式] 清單中按一下 [ **PowerPoint** 
-    
-29. 在**PowerPoint 概觀 （英文)** blade 中，按一下 [**指派 > 選取群組 > 受管理的 iOS 裝置 > 選取**。在 [**類型**] 選取 [**線上**] 和 [**儲存**。
-    
-30. 重複步驟 29 下列應用程式：
-    
-    - Outlook for Android
-    
-    - Word for iOS
-    
-    - iOS 版 Excel
-    
-    - iOS 版 Outlook
-    
-    - iOS 版 Microsoft Dynamics CRM (適用於 iPad)
-    
-    - iOS 版 Microsoft Dynamics CRM (適用於 iPhone)
-    
-    - Android 版 Dynamics CRM (適用於手機)
-    
-    - Android 版 Dynamics CRM (適用於平板電腦)
-    
-    - Android 版 Excel
-    
-    - Android 版 Word
-    
-    - iOS 版的 OneNote
-    
-31. 關閉**行動應用程式-應用程式**blade。
-    
-32. 在**行動應用程式**blade 中，按一下 [**應用程式保護原則**。
-    
-33. 在**應用程式保護原則**blade 中，按一下 [**新增原則**。
-    
-34. 在 [**新增原則**blade 中，輸入**iOS**，和 [**選取所需的應用程式**。
-    
-35. 在**應用程式**blade、 [ **PowerPoint**、 **IPhone 上的 Microsoft Dynamics CRM**、 **Excel**、 **IPhone 上的 Microsoft Dynamics CRM**、 **Word**、 **OneNote**、 及**Outlook**] 和 [**選取**。
-    
-36. 按一下 [**新增原則**blade、 的 [**建立**]。
-    
-37. 在**應用程式保護原則**blade 中，按一下 [**新增原則**。
-    
-38. 在**新增原則**blade 中，輸入**Android**、 選取 [ **Android** **平台**，及 [**選取所需的應用程式**。
-    
-39. 在**應用程式**blade 中，按一下 [ **PowerPoint**、**平板電腦的 Dynamics CRM**、 **Excel**、 **Word**、 **Outlook**和**Dynamics CRM 電話**、 及 [**選取**。
-    
-40. 按一下 [**新增原則**blade、 的 [**建立**]。
-    
-您現在有兩個 MAM 原則，一個適用於 iOS 裝置，另一個適用於 Android 裝置，並且都已準備好對選取的應用程式使用測試設定進行試驗。 
+21. 在**用戶端應用程式**blade 中，按一下 [**應用程式**，然後按一下 [**新增**。 
+
+22. 在**新增應用程式**blade 中，選取**類型的應用程式**]，然後選取 [ **Office 365 套裝軟體** **Windows 10** 。
+
+23. 按一下 [**設定應用程式套件**，並再按一下 [**確定]**。
+
+24. 按一下 [**應用程式套件資訊**、 輸入**套件名稱**] 中**的 Windows 10 Office 應用程式****套件描述**] 中，在**Office 應用程式的 Windows 10** ，然後按一下 [**確定]**。
+
+25. 按一下 [**應用程式套件設定**、 選取**分號每年次**中**更新通道**，並再按一下 [**確定]**。
+
+26. 在**新增 app** blade 中，按一下 [**新增]**。
+
+您現在有裝置規範原則中的**Windows 10**裝置規範原則測試所選的應用程式與**受管理的 Windows 10 裝置的使用者**群組的成員。 
   
 ## <a name="next-step"></a>下一步
 

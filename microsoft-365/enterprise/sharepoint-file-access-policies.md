@@ -11,47 +11,46 @@ ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
-ms.openlocfilehash: 2f5658146df3da7cc28c907b33e5035a84628fc5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 72dd50649dba9e290d50c2831557c06db3cb7586
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866404"
 ---
-# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>保護 SharePoint 網站和檔案的原則建議
+# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>保護 SharePoint 網站及檔案的原則建議
 本文說明如何實作的建議的身分識別和來保護 SharePoint Online 和 OneDrive for Business 的裝置存取原則。這份指導建立之[一般身分識別與裝置存取的原則](identity-access-policies.md)。 
-
 
 這些建議根據三種不同的層的安全性與保護 SharePoint 檔案可以套用根據您的需要的層次：**基準**、**機密**、 和**高度規範**。您可以深入了解這些安全性各層和建議的用戶端作業系統與這些建議[概觀 （英文)](microsoft-365-policies-configurations.md)中所參照。
 
-中實作這份指導以及，因此請務必設定 SharePoint 網站與右量的保護，包括確保機密及高度規範內容的適當的權限。如需建立網站的比較基準 」、 機密、 和高度規範保護功能的詳細資訊，請參閱[Secure SharePoint Online 網站及檔案](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)。 
+除了實作這份指導，請務必設定 SharePoint 網站與右邊的保護，包括設定適當的權限的機密與高度規範的內容量。如需建立網站的比較基準 」、 機密、 和高度規範保護的詳細資訊，請參閱[Secure SharePoint Online 網站及檔案](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)。 
 
 ## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>更新加入 SharePoint 和 OneDrive for Business 的一般原則
-下圖說明設定的建議原則保護 SharePoint Online 和 OneDrive for Business 的檔案。它會指出哪些原則將會更新或新建要新增的 SharePoint Online 和 OneDrive for Business 的保護。
+下圖說明設定的建議原則保護 SharePoint Online 和 OneDrive for Business 的檔案。它會指出哪些原則應更新或新建立要新增的 SharePoint Online 和 OneDrive for Business 的保護。
 
 ![SharePoint Online 與 OneDrive 原則的摘要](../images/identity-access-ruleset-sharepoint.png)
 
-如果當您建立通用原則包含 SharePoint Online，只需要建立新的原則。當設定條件式存取規則，SharePoint Online 包含 OneDrive for Business。
+如果當您建立通用原則包含 SharePoint Online，您只需要建立新的原則。當設定條件式存取規則，SharePoint Online 包含 OneDrive for Business。
 
 新的原則套用至指定的 SharePoint 網站的特定存取需求實作裝置保護機密和高度規範的內容。 
 
- 下表列出您也需要檢閱和更新或建立新的 SharePoint Online 的原則。一般原則連結至[一般身分識別與裝置存取的原則](identity-access-policies.md)文章 （即將推出的連結） 中的關聯的設定指示。
+下表列出您也需要檢閱和更新或建立新的 SharePoint Online 的原則。一般原則連結至[常見的身分識別與裝置存取原則](identity-access-policies.md)文章中的關聯的設定指示。
 
 
 |保護層級|Policies|詳細資訊|
 |:---------------|:-------|:----------------|
-|**基準**|[登入風險為*medium*或*high*時需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包含 SharePoint Online 中的雲端應用程式的工作分派。|
-|        |[不支援經過驗證的封鎖用戶端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|包含 SharePoint Online 中的雲端應用程式的工作分派。|
-|        |[定義應用程式保護原則](identity-access-policies.md#define-app-protection-policies)|請務必的應用程式清單中包括所有建議的應用程式。請務必更新每個平台 (iOS、 Android、 Windows) 的原則。|
-|        |[需要相容的 Pc](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|包含 SharePoint Online 中的雲端應用程式清單。|
-|        |[在 SharePoint Online 中使用強制執行的應用程式限制](#use-app-enforced-restrictions-in-sharepoint-online)|新增此新原則。這會告知 Azure AD 使用 SharePoint Online 中所指定的設定。此規則套用至所有使用者，但只會影響包含在 SharePoint Online 存取原則的網站存取權。
-|**敏感性**|[登入風險為*低*、 *medium*或*high*時需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| 包含 SharePoint Online 中的雲端應用程式的工作分派。|
-|         |[需要相容的 Pc*和*行動裝置](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|包含 SharePoint Online 中的雲端應用程式清單。|
-||[SharePoint Online 的存取控制原則](#sharepoint-online-access-control-policies)： 允許從未受管理的裝置僅供瀏覽器存取特定的 SharePoint 網站|這可防止編輯及下載的檔案。若要指定網站的使用者 PowerShell。|
-|**高管制**|[*永遠*requrie MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包含 SharePoint Online 中的雲端應用程式的工作分派。 |
-||[SharePoint Online 的存取控制原則](#use-app-enforced-restrictions-in-sharepoint-online)： 從未受管理的裝置封鎖特定的 SharePoint 網站的存取|使用 PowerShell 來指定的網站。|
+|**基準**|[登入風險為*medium*或*high*時需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包含 SharePoint Online 中的雲端應用程式的工作分派|
+|        |[不支援經過驗證的封鎖用戶端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|包含 SharePoint Online 中的雲端應用程式的工作分派|
+|        |[定義應用程式保護原則](identity-access-policies.md#define-app-protection-policies)|請務必的應用程式清單中包括所有建議的應用程式。請務必更新每個平台 (iOS、 Android、 Windows) 的原則|
+|        |[需要相容的 Pc](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|包含 SharePoint Online 的雲端應用程式清單中|
+|        |[在 SharePoint Online 中使用強制執行的應用程式限制](#use-app-enforced-restrictions-in-sharepoint-online)|新增此新原則。這會告知 Azure AD 使用 SharePoint Online 中所指定的設定。此規則套用至所有使用者，但只會影響包含在 SharePoint Online 存取原則的網站存取權|
+|**敏感性**|[登入風險為*低*、 *medium*或*high*時需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包含 SharePoint Online 中的雲端應用程式的工作分派|
+|         |[需要相容的 Pc*和*行動裝置](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|包含 SharePoint Online 的雲端應用程式清單中|
+||[SharePoint Online 的存取控制原則](#sharepoint-online-access-control-policies)： 允許從未受管理的裝置僅供瀏覽器存取特定的 SharePoint 網站|這可防止編輯及下載的檔案。使用 PowerShell 來指定的網站|
+|**高管制**|[*永遠*需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包含 SharePoint Online 中的雲端應用程式的工作分派|
+||[SharePoint Online 的存取控制原則](#use-app-enforced-restrictions-in-sharepoint-online)： 從未受管理的裝置封鎖特定的 SharePoint 網站的存取|使用 PowerShell 來指定的網站|
 
-## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>在 SharePoint Online 中使用強制執行的應用程式限制
+## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>在 SharePoint Online 中使用應用程式強制執行的限制
 如果您在 SharePoint Online 中實作存取控制項，您必須建立此設定格式化的條件存取原則以告訴您在 SharePoint Online 中設定的原則強制執行的 Azure AD 的 Azure AD。此規則套用至所有使用者，但只會影響您指定當您在 SharePoint Online 中建立存取控制項使用 PowerShell 網站存取權。
 
 若要在本文中設定此原則，請參閱 「 封鎖] 或 [限制存取特定的 SharePoint 網站集合或 OneDrive 帳戶":[控制存取來自未受管理的裝置](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622)。
@@ -59,8 +58,8 @@ ms.locfileid: "26866404"
 
 ## <a name="sharepoint-online-access-control-policies"></a>SharePoint Online 的存取控制原則
 Microsoft 建議您保護敏感和高度規範內容的裝置存取控制項使用在 SharePoint 網站內容。您執行這項作業來建立指定的保護及套用來保護所有網站層級的原則。 
-- 機密的網站-允許瀏覽器唯讀存取。這樣會讓使用者編輯及下載檔案。
-- 高度規範網站 — 封鎖來自未受管理的裝置的存取。
+- 機密網站： 允許瀏覽器唯讀存取。這樣會讓使用者編輯及下載檔案。
+- 高度規範網站： 封鎖來自未受管理的裝置的存取。
 
 請參閱本文中的"封鎖] 或 [限制存取特定的 SharePoint 網站集合或 OneDrive 帳戶":[控制存取來自未受管理的裝置](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622)。 
 

@@ -10,11 +10,11 @@ ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
-ms.openlocfilehash: dd1504ac11f0e2eefa56572af24de14b5f87830e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f3d3d72ddf9129997dd4232a578e1f101f113a53
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866129"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>保護電子郵件的原則建議
@@ -34,20 +34,20 @@ ms.locfileid: "26866129"
 
 |保護層級|Policies|詳細資訊|
 |:---------------|:-------|:----------------|
-|**基準**|[登入風險為*medium*或*high*時需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Exchange Online 中包含的雲端應用程式的工作分派。|
-|        |[不支援經過驗證的封鎖用戶端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Exchange Online 中包含的雲端應用程式的工作分派。|
-|        |[定義應用程式保護原則](identity-access-policies.md#high-risk-users-must-change-password)|請務必 Outlook 隨附的應用程式清單中。請務必更新每個平台 (iOS、 Android、 Windows) 的原則。|
-|        |[需要核准的應用程式](identity-access-policies.md#require-approved-apps)|Exchange Online 中包含的雲端應用程式清單。|
-|        |[需要相容的 Pc](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Exchange Online 中包含的雲端應用程式清單。|
-|        |[封鎖 ActiveSync 用戶端](#block-activesync)|新增此新原則。 
-|**敏感性**|[登入風險為*低*、 *medium*或*high*時需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Exchange Online 中包含的雲端應用程式的工作分派。|
-|         |[需要相容的 Pc*和*行動裝置](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Exchange Online 中包含的雲端應用程式清單。|
-|**高管制**|[*永遠*需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包含 Exchange Online 中的雲端應用程式的工作分派 |
+|**基準**|[登入風險為*medium*或*high*時需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包含 Exchange Online 中的雲端應用程式的工作分派|
+|        |[不支援經過驗證的封鎖用戶端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|包含 Exchange Online 中的雲端應用程式的工作分派|
+|        |[定義應用程式保護原則](identity-access-policies.md#high-risk-users-must-change-password)|請務必 Outlook 隨附的應用程式清單中。請務必更新每個平台 (iOS、 Android、 Windows) 的原則|
+|        |[需要核准的應用程式](identity-access-policies.md#require-approved-apps)|包含 Exchange Online 的雲端應用程式清單中|
+|        |[需要相容的 Pc](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|包含 Exchange Online 的雲端應用程式清單中|
+|        |[封鎖 ActiveSync 用戶端](#block-activesync-clients)|新增此新原則| 
+|**敏感性**|[登入風險為*低*、 *medium*或*high*時需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| 包含 Exchange Online 中的雲端應用程式的工作分派|
+|         |[需要相容的 Pc*和*行動裝置](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|包含 Exchange Online 的雲端應用程式清單中|
+|**高管制**|[*永遠*需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|包含 Exchange Online 中的雲端應用程式的工作分派|
 
 ## <a name="block-activesync-clients"></a>封鎖 ActiveSync 用戶端
 此原則可禁止 ActiveSync 用戶端略過其他條件式存取規則。規則設定僅適用於 ActiveSync 用戶端。選取 [**需要核准用戶端應用程式**，此原則會封鎖 ActiveSync 用戶端。若要設定此原則：
 
-1. 前往[ Azure 入口網站](https://portal.azure.com)，並使用您的認證登入。 成功登入之後，您會看到 [Azure 儀表板]。
+1. 移至[Azure 入口網站](https://portal.azure.com)，並使用您的認證登入。您已順利登入之後，您會看到 Azure 儀表板。
 
 2. 從左功能表選擇 [Azure Active Directory]。
 
@@ -59,15 +59,17 @@ ms.locfileid: "26866129"
 
 6. 選擇 [雲端應用程式]。
 
-7. 選擇 [**選取應用程式**中，選取 [Office 365 Exchange Online。按一下 [**選取 [** **完成**]。
+7. 選擇 [**選取應用程式**中，選取 [ **Office 365 Exchange Online**。選擇 [**選取 [** **完成**]。
+
 8. 選擇 [**條件**]，然後選擇 [**用戶端應用程式**。
-9. 針對**設定**] 中選取 **[是]**。檢查只有下列項目：**行動應用程式和桌面用戶端**與**Exchange ActiveSync 用戶端**。按一下 [**完成**]。
+
+9. 針對**設定**] 中選取 **[是]**。檢查只有下列項目：**行動應用程式和桌面用戶端**與**Exchange ActiveSync 用戶端**。選擇 [**完成**]。
 
 10. 選擇 [存取控制] 區段中的 [授與]。
 
 11. 選擇 [**授與存取權**，請選取 [**需要核准用戶端應用程式**。 多個控制項，選取 [**需要在選定的控制項**，然後選擇 [**選取**。 
 
-12. 按一下 [建立]****。
+12. 選擇 [**建立**]。
 
 ## <a name="setup-office-365-message-encryption"></a>安裝 Office 365 郵件加密
 新的 Office 365 郵件加密 (OME) 功能運用在 Azure 資訊保護的保護功能，您的組織可以輕鬆地共用受保護的電子郵件與任何裝置上的任何人。使用者可以傳送及接收與其他 Office 365 組織以及非 Office 365 客戶使用 Outlook.com、 Gmail，以及其他電子郵件服務受保護的郵件。

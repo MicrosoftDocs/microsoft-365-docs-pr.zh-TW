@@ -13,11 +13,11 @@ ms.service: ''
 ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 ms.custom: microsoft-intune
-ms.openlocfilehash: 8d048ec6628cb8f7cb9c5e0d4c7960481bc69de1
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 3afc28f0d21918c027a6a1622a40318e333f7ab4
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866776"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>階段 5： 行動裝置管理的 Microsoft 365 企業版
@@ -110,7 +110,7 @@ Intune 可以管理應用程式，包括新增應用程式、 指派給不同的
 
 |||
 |:-------|:-----|
-|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide： 行動應用程式管理原則](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide： 裝置規範遵守原則](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>步驟 6： 開啟規範及設定格式化的條件的存取

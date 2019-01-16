@@ -20,10 +20,10 @@ search.appverid:
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: 了解 Microsoft 365 Business 中的裝置狀態。
 ms.openlocfilehash: bd6f1ad7f7671d9616fd14d477dfcfb164ff6bd0
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866347"
 ---
 # <a name="device-states"></a>裝置狀態

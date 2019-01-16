@@ -13,11 +13,11 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用下列步驟來保護 Microsoft 365 企業版測試環境中的全域管理員帳戶。
-ms.openlocfilehash: 233e2178b060df4950c340e034d5f51216fac8fb
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4d444e217c5a232811701f6519c2eb3ebe86df70
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866142"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>保護您的 Microsoft 365 Enterprise 的測試環境中的全域管理員帳戶
@@ -32,7 +32,7 @@ ms.locfileid: "26866142"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](https://aka.ms/m365etlgstack)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1： 建立您的 Microsoft 365 Enterprise 的測試環境
@@ -48,7 +48,7 @@ ms.locfileid: "26866142"
 
 首先，建立 Office 365 雲端應用程式安全性原則監視全域管理員帳戶活動並將通知傳送給您的全域管理員帳戶的電子郵件地址。 
 
-1. 登入 Office 365 入口網站[http://portal.office.com](http://portal.office.com)使用全域管理員帳戶。
+1. 在 Office 入口網站登入[http://portal.office.com](http://portal.office.com)使用全域管理員帳戶。
 2. 按一下 [**系統**] 磚。在 [ **Office 系統管理中心**] 索引標籤上按一下 [**系統中心 > 安全性與規範**。
 3. 在左側的導覽窗格中，按一下 [**提醒 > 管理進階提醒**。
 4. **進階提醒的管理**] 頁面上按一下 [**開啟 Office 365 雲端應用程式安全性**] 和 [**移至 Office 365 雲端應用程式安全性**。

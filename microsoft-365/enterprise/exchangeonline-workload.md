@@ -11,11 +11,11 @@ ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
 description: 逐步解說規劃、 啟用、 及 Microsoft 365 enterprise 驅動的 Exchange Online 值整個組織的程序的步驟。
-ms.openlocfilehash: 36b24290acd4467400eab86b4c2760ccad65deab
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: aafa1b28546eb77938bb3e4a5ebe9ccd60b9a60b
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866741"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>部署 Exchange Online Microsoft 365 enterprise
@@ -29,7 +29,7 @@ Exchange Online 也具有進階安全性功能，包括反惡意程式碼和反�
 下列階段與步驟引導您進行想像變換一系列的漸進式部署至 Exchange Online 組織的 Exchange Online 組織 onboarding 中的角色及驅動的 Exchange Online 的使用狀況的程序和其為一般使用者的值。
 
 >[!Note]
->Microsoft 365 enterprise 完成您[foundation 基礎結構](deploy-foundation-infrastructure.md)後才應該遵循這些部署指示。
+>只有在您完成 Microsoft 365 企業版 foundation 基礎結構的[階段 2-Identity](identity-infrastructure.md)之後應該遵循這些部署指示。
 >
 
 ## <a name="phase-1-envision"></a>第 1 階段：構想
@@ -38,7 +38,7 @@ Exchange Online 也具有進階安全性功能，包括反惡意程式碼和反�
 
 ### <a name="step-1-gather-your-exchange-online-deployment-members"></a>步驟 1： 收集您的 Exchange Online 部署成員
 
-成功部署的 Exchange Online 上的 Microsoft 365 [foundation 基礎結構](deploy-foundation-infrastructure.md)功能，您需要輸入及意見反應取得適當的人員。主要人員包括商業性決策負責人、 IT 人員如架構師和實施者注意事項，以及適用於使用者的代言人。 
+成功部署的 Exchange Online 上的[階段 2-Identity](identity-infrastructure.md) Microsoft 365 企業版 foundation 基礎結構的功能，您需要輸入及意見反應取得適當的人員。主要人員包括商業性決策負責人、 IT 人員如架構師和實施者注意事項，以及適用於使用者的代言人。 
 
 這三個群組請確定您的 Exchange Online 部署包含解決的業務需求、 技術方面的信箱移轉與安全性，及結果會是某個項目將會使用一般使用者的考量。
 
@@ -74,7 +74,7 @@ Exchange Online 解決貴組織的需求為通訊、 排程和短期的共同作
 
 在此階段中，您的 Exchange Online 部署的技術方面的規劃，並啟動推出至選取的使用者群組。
 
-### <a name="prerequisites-identity-and-device-access-configuration"></a>必要： 身分識別與裝置存取設定
+### <a name="prerequisites-identity-and-device-access-configuration"></a>必要條件：身分識別與裝置存取設定
 
 若要保護 Exchange Online 信箱的存取權，請確定您已設定[身分識別與裝置存取的原則](identity-access-policies.md)和[建議的 Exchange Online 存取原則](secure-email-recommended-policies.md)。
 
@@ -86,7 +86,7 @@ Exchange Online 解決貴組織的需求為通訊、 排程和短期的共同作
 
 使用下列資源準備 Exchange Online 的導入的技術方面： 
 
-- [將多個電子郵件帳戶移轉到 Office 365 的方法](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)
+- [將多個電子郵件帳戶移轉到 Office 365 的方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
 - [Office 365 郵件移轉顧問](https://portal.office.com/onboarding/mailsetupadvisor#/)（必須先登入您的 Office 365 訂閱）
 - [Exchange Online 中的協同作業](https://technet.microsoft.com/library/jj983794(v=exchg.150).aspx)
 - [Exchange Online 中的收件者](https://technet.microsoft.com/library/jj200702(v=exchg.150).aspx)
@@ -165,7 +165,7 @@ Exchange Online IT 試驗完成且初始變更管理教材 （英文） 已開�
 以下是一些建議的活動：
 
 - 請參閱 [Office 365 採用指南](https://aka.ms/successfactors)以了解雲端服務採用的一般最佳做法。 
-- 請參閱 [Office 365 系統管理中心的活動報告](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263)，以了解整個組織的 Office 365 服務用法。如果貴組織還沒有 Office 365 全域系統管理員，請找將報告讀取權限授與給使用者帳戶的人員，讓您可以存取活動報告。
+- 請參閱 [Office 365 系統管理中心的活動報告](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports)，以了解整個組織的 Office 365 服務用法。如果貴組織還沒有 Office 365 全域系統管理員，請找將報告讀取權限授與給使用者帳戶的人員，讓您可以存取活動報告。
 - 監視問題及從其體驗與 Exchange Online 相關的個人的意見反應您的意見反應場所 （中央團隊小組或 Yammer 中的公用通道）。您可以防止挫折的個人及示範以支援導入以快速解決問題與問題。
 - 識別及加強冠軍中每個商務群組並反白顯示其完成事項及使用 Exchange Online 的最佳作法。會反映出其成功顯示專案成功和採用組織。依商務群組內的技術主管適用的簽署可以會強大的影響整個負責人和等項目。
 

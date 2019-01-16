@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此測試實驗室指南，讓其他 Office 365 的安全性設定 Microsoft 365 企業版測試環境。
-ms.openlocfilehash: 18e7b682d20c2212ae73783d668250d28b04075f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 62cf2347d3e003e9368c987912e7748029241501
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866386"
 ---
 # <a name="increased-office-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企業版測試環境之增強的 Office 365 安全性
@@ -26,7 +26,7 @@ ms.locfileid: "26866386"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](https://aka.ms/m365etlgstack)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1： 建立您的 Microsoft 365 Enterprise 的測試環境
 
@@ -46,7 +46,7 @@ ms.locfileid: "26866386"
 
 不支援經過驗證的應用程式不能有[身分識別與裝置存取設定](microsoft-365-policies-configurations.md)套用至他們，這是保護您的 Microsoft 365 訂閱和其數位資產的重要元素。 
 
-1. 移至 Office 365 入口網站 ([https://portal.office.com](https://portal.office.com)) 並登入您的 Office 365 試用版訂閱以全域管理員帳戶。
+1. 移至 [Office 入口網站 ([https://office.com](https://office.com)) 並登入您的 Office 365 試用版訂閱以全域管理員帳戶。
     
   - 如果您使用輕量級的 Microsoft 365 測試環境，從您的本機電腦登入。
     
@@ -55,10 +55,10 @@ ms.locfileid: "26866386"
 2. 從**Microsoft 365 系統管理中心**] 索引標籤上，按一下 [**管理**]。
 3. 在 [新**Microsoft 365 系統管理中心**] 索引標籤上按一下 [**系統中心 > SharePoint**。
 4. 在 [新增**SharePoint 系統管理中心**] 索引標籤上按一下 [**存取控制**]。
-5. [**應用程式不支援經過驗證**，按一下 [**封鎖 > [確定]**。
+5. 下 **，不支援經過驗證的應用程式**，[**封鎖**，然後再按一下 [**確定]**。
 
 
-### <a name="enable-advanced-threat-protection-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>啟用 Advanced 威脅保護 (ATP) for SharePoint、 OneDrive 及 Microsoft 小組
+### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>啟用 Advanced 威脅保護） for SharePoint、 OneDrive for Business 和 Microsoft 小組
 
 Office 365 進階威脅保護 (ATP) 是一種功能的 Exchange Online Protection (EOP) 可協助保留惡意程式碼不在您的電子郵件。ATP，與您建立原則在 Exchange 系統管理中心 (EAC) 或安全性及規範中心有助於確保您的使用者存取僅或連結會被識別為不是惡意的電子郵件中的附件。如需詳細資訊，請參閱 ＜[進階的威脅保護安全附件及安全的連結](https://docs.microsoft.com/office365/securitycompliance/office-365-atp)。
 

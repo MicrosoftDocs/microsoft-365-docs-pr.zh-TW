@@ -3,7 +3,7 @@ title: Microsoft 365 企業版的資料分類測試環境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 12/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,21 +12,21 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此測試實驗室指南建立及使用 Office 365 標籤在 Microsoft 365 企業版測試環境中的文件。
-ms.openlocfilehash: 718cf038d88f1431ec6ca6fce1554d4f44dc1cb7
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 33ac1fa8e26c0037882e6c240cc04ec19e6a6a7b
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866733"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企業版的資料分類測試環境
 
-本文中的指示，您設定 Microsoft 365 企業版測試環境中使用 Office 365 標籤的資料分類。
+本文中的指示，您設定 Microsoft 365 企業版測試環境中使用 Office 365 保留標籤的資料分類。
 
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](https://aka.ms/m365etlgstack)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1： 建立您的 Microsoft 365 Enterprise 的測試環境
 
@@ -39,17 +39,17 @@ ms.locfileid: "26866733"
 
 ## <a name="phase-2-create-office-365-labels"></a>階段 2：建立 Office 365 標籤
 
-在此階段中，您可以建立不同的層級的 SharePoint Online 的文件資料夾的安全性的標籤。
+在此階段中，您可以建立不同層級的 SharePoint Online 的文件資料夾的保留的標籤。
   
-1. 必要時，使用專用的網際網路瀏覽器並登入 Office 365 入口網站以全域管理員帳戶。為了協助，請參閱 ＜[登入 Office 365 的位置](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 必要時，使用專用的網際網路瀏覽器並登入 Office 入口網站以全域管理員帳戶。為了協助，請參閱 ＜[登入 Office 365 的位置](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 從 [Microsoft Office 的首頁]**** 索引標籤中，按一下 [管理]**** 磚。
     
 3. 從瀏覽器的新 [Office 系統管理中心]**** 索引標籤中，按一下 [系統管理中心] > [安全性 &amp; 合規性]****。
     
-4. 從瀏覽器的新 [首頁 - 安全性 &amp; 合規性]**** 索引標籤中，按一下 [分類] > [標籤]****。
+4. 從新**首頁-安全性&amp;規範**] 索引標籤的瀏覽器中，按一下 [**分類 > 標籤**。從**首頁 > 標籤**] 窗格中，按一下 [**保留**] 索引標籤。
     
-5. 從 [首頁] > [標籤]**** 窗格中，按一下 [建立標籤]****。
+5. 按一下 [**建立的標籤**。
     
 6. 在 [命名您的標籤]**** 窗格中，輸入 **內部公用**，然後按一下 [下一步]****。
     
@@ -83,13 +83,13 @@ ms.locfileid: "26866733"
 
 請注意可能需要幾分鐘時間要發佈之標籤。
 
-## <a name="phase-3-apply-office-365-labels-to-documents"></a>階段 3： 將 Office 365 標籤套用至文件
+## <a name="phase-3-apply-office-365-retention-labels-to-documents"></a>階段 3： 將 Office 365 保留標籤套用至文件
 
 在此階段中，您會發現 label 的預設行為的 SharePoint Online 網站的 [文件] 資料夾中的檔案與手動變更文件的標籤。
 
 首先，建立機密層級 SharePoint Online 小組網站：
   
-1. 請使用本機電腦上的瀏覽器，並以全域管理員帳戶登入 Office 365 入口網站。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 本機電腦上使用瀏覽器中，Office 入口網站使用全域管理員帳戶登入。為了協助，請參閱 ＜[登入 Office 365 的位置](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 在磚清單中，按一下 [SharePoint]****。
     
@@ -125,13 +125,13 @@ ms.locfileid: "26866733"
     
 4. 按一下 [Word 圖示旁**Document.docx**檔案名稱。
     
-5. 在右窗格的 [**屬性**] 區段的 [**套用] 標籤**、 中記下文件已經有自動套用**敏感**標籤。
+5. 在右窗格的 [**屬性**] 區段的 [**套用] 保留標籤**、 中記下文件已經有自動套用**敏感**標籤。
     
 6. 按一下 [**編輯所有**。
     
 7. 在**Document.docx**窗格**套用標籤**、 選取的**高度機密**的標籤和 [**儲存**。
 
-請參閱[Configure 分類環境的](data-classification-microsoft-365-enterprise-dev-test-environment.md)步驟中的資訊及連結至 Office 365 標籤在生產環境中的**資訊保護**階段。
+請參閱[Configure 分類環境的](infoprotect-configure-classification.md)步驟中的資訊及連結至 Office 365 保留標籤在生產環境中的**資訊保護**階段。
 
 ## <a name="next-step"></a>下一步
 

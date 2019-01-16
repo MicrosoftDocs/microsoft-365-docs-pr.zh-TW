@@ -3,14 +3,14 @@ title: Microsoft 受管理的桌上型電腦的網路設定
 description: ''
 keywords: Microsoft 受管理的桌上型電腦、 [Microsoft 365 服務、 文件
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 3eab9237b177ea76faa1296fec2bfda739c78534
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 88f095706c82736d4c2ebc6a555aa3e384eeca09
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866674"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 受管理的桌上型電腦的網路設定
@@ -45,7 +45,7 @@ Microsoft 服務 | 文件來源-上所需的 Url 允許] 清單
 Windows Update for Business (WUfB) | [Windows Update 商務防火牆及 proxy 需求](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
 傳遞最佳化 | [Windows Update proxy 需求](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update)
 商務用 Microsoft Store | [Microsoft 存放區允許清單](https://support.microsoft.com/help/2778122/using-authenticated-proxy-servers-together-with-windows-8)
-Office 365 | [Office 365 URL 和 IP 位址範圍](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Office 365 | [Office 365 URL 和 IP 位址範圍](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)包括\*。 apibasic.diagnostics.office.com
 Azure Active Directory | [混合式身分識別所需的連接埠和通訊協定](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-ports)和[Active Directory 與 Active Directory 網域服務的連接埠需求](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune 網路組態需求](https://docs.microsoft.com/intune/network-bandwidth-use)
 商務用 OneDrive <br> | [所需的 Url 及 OneDrive 的連接埠](https://docs.microsoft.com/onedrive/required-urls-and-ports)

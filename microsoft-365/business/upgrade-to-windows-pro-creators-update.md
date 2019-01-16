@@ -17,10 +17,10 @@ search.appverid:
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: '了解如何升級至 Windows 資料行 10 專業人員的建立者更新 Windows 裝置。 '
 ms.openlocfilehash: 5a9d232ffa50b642bdeab2dea391895e759e118b
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866294"
 ---
 # <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>將 Windows 裝置升級到 Windows 專業版 Creators Update

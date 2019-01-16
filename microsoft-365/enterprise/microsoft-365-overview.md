@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: it-pro
 description: Microsoft 365 enterprise 提供元件、 計劃及部署路徑的簡介。
-ms.openlocfilehash: f47689c60bb3cb4e085f0d3fa7fafb351f9d45a5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 842355f8467965824116dc244430ad06d19f7f87
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866608"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 企業版概觀
@@ -60,7 +60,7 @@ Microsoft 365 Enterprise 是三個計劃中提供。
 
 ![](./media/m365-poster/m365e-poster.png)
 
-若要下載一份海報，請按一下[這裡](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/Media/Microsoft365Enterprise.pdf)。
+若要下載一份海報，請按一下[這裡](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf)。
 
 ## <a name="deploying"></a>部署
 

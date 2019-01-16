@@ -240,9 +240,9 @@ pilar@contoso.com AND filetype="xlxs"
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>在內容搜尋中使用已局部編製索引的項目
 
-已局部編製索引的項目 (也稱為「未編製索引的項目」) 是 SharePoint Online 和商務用 OneDrive 網站上，基於某種原因而未完全編製索引以利搜尋的 Exchange Online 信箱項目和文件，這表示無法使用「內容搜尋」來加以搜尋。大部分的電子郵件訊息和網站文件都可成功編製索引，因為落在 [Office 365 索引限制](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??)內。電子郵件訊息或檔案未編製索引以利搜尋的原因包括：
+已局部編製索引的項目 (也稱為「未編製索引的項目」) 是 SharePoint Online 和商務用 OneDrive 網站上，基於某種原因而未完全編製索引以利搜尋的 Exchange Online 信箱項目和文件，這表示無法使用「內容搜尋」來加以搜尋。大部分的電子郵件訊息和網站文件都可成功編製索引，因為落在 [Office 365 索引限制](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??d??)內。電子郵件訊息或檔案未編製索引以利搜尋的原因包括：
 
--   檔案類型[無法辨識或不支援索引編製](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)；雖然，有時可支援該檔案類型的索引編製，但是特定檔案發生索引編製錯誤
+-   檔案類型[無法辨識或不支援索引編製](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??b??)；雖然，有時可支援該檔案類型的索引編製，但是特定檔案發生索引編製錯誤
 
 -   電子郵件訊息所具有的附加檔案 (例如影像檔) 缺乏有效的處理常式，這是已局部編製索引的電子郵件項目最常見的原因
 
@@ -250,7 +250,7 @@ pilar@contoso.com AND filetype="xlxs"
 
 我們建議您深入了解已局部編製索引的項目，讓您可在回應 DSR 要求時使用。如需詳細資訊，請參閱：
 
--   [位於 Office 365 中內容搜尋的已局部編製索引項目](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)
+-   [位於 Office 365 中內容搜尋的已局部編製索引項目](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??b??)
 
 -   [調查 Office 365 電子文件探索中已局部編製索引的項目](https://support.office.com/article/investigating-partially-indexed-items-in-office-365-ediscovery-4e8ff113-6361-41e2-915a-6338a7e2a1ed)
 

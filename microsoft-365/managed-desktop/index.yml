@@ -1,9 +1,9 @@
 ### YamlMime:YamlDocument
 ms.openlocfilehash: 07a77c646f8aef2440f415fdf143373cd249a641
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866438"
 documentType: LandingData
 title: Microsoft 受管理的桌上型電腦文件和資源
@@ -46,7 +46,7 @@ sections:
       html: <p>了解如何排序裝置及新增連絡人。</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_whats-new.svg
-      title: 快速入門
+      title: 開始使用
     - href: working-with-managed-desktop/index.md
       html: <p>了解應用程式的管理。</p>
       image:

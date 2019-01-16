@@ -17,10 +17,10 @@ search.appverid:
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: '了解 Microsoft 365 business 貴組織所設定的必要條件。 '
 ms.openlocfilehash: caca6564d6706acd48538a2d33143ed27ed3bd25
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866114"
 ---
 # <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>使用 Microsoft 365 商務版保護裝置資料的先決條件

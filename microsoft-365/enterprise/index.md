@@ -10,11 +10,11 @@ localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 title: Microsoft 365 企業版文件和資源
-ms.openlocfilehash: b8c4fd137e96bf96595e1670ea63655839ffc332
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 0e758884c063aaa82b5c7fc55051925376f8688b
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866124"
 ---
 <div id="main" class="v2">
@@ -136,6 +136,7 @@ ms.locfileid: "26866124"
                                             </div>
                                             <div class="cardText">
                                                 <h3>管理企業行動性 + 安全性</h3>
+                                                <P><a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security" target="_blank">Microsoft Cloud App Security</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune/index" target="_blank">Microsoft Intune</a></p>                              <P><a href="https://docs.microsoft.com/azure/active-directory" target="_blank">Azure Active Directory</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure/information-protection/" target="_blank">Azure 資訊保護</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/" target="_blank">Azure 進階的威脅保護</a></p>

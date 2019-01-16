@@ -3,14 +3,14 @@ title: 新增 Microsoft 受管理的桌上型電腦管理入口網站中管理�
 description: 告訴我們要針對每個區域的焦點連絡的人。
 keywords: Microsoft 受管理的桌上型電腦、 [Microsoft 365 服務、 文件
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 65dd8709c469826e2696015c13823c58eb10e342
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 31984609681b6e3b1b6de9996eb8fb0fcf6f5624
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866298"
 ---
 # <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>新增 Microsoft 受管理的桌上型電腦管理入口網站中管理連絡人
@@ -25,11 +25,11 @@ Microsoft 受管理的桌上型電腦管理入口網站需要存取入口網站�
 - 計費管理員
 - 服務支援管理員
 
-如需有關這些角色及其在 Azure AD 為其指派的詳細資訊，請參閱[在 Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 
+全域管理員必須是一個以註冊 Microsoft 受管理的桌上型電腦的客戶。 所有五個角色具有相同的存取權來初始化和檢視工作管理入口網站內。 如需有關如何將這些角色指派的 Azure AD 的詳細資訊，請參閱[在 Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 
 
 ## <a name="admin-contact-focus-areas"></a>管理連絡人焦點區域
 
-管理連絡人應最佳的人員或群組可回答的問題和進行不同的焦點區域的決策。這些區域包括：
+管理連絡人應最佳的人員或群組可回答的問題和進行不同的焦點區域的決策。 Microsoft 受管理的桌上型電腦作業將會連絡這些管理連絡人涉及歸檔由客戶支援要求的問題。 這些管理連絡人將會收到通知的支援要求更新和新的訊息。 這些區域包括：
 
 焦點區域 | 如需問題
 --- | ---

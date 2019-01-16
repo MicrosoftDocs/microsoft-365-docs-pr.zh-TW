@@ -13,11 +13,11 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 設定使用文字訊息傳送給 Microsoft 365 企業版測試環境中的智慧型手機的多重要素驗證。
-ms.openlocfilehash: aae493e79a197635b2e14fa7f238a3189ed695ae
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 353f09253794670e8107e084acb3a01cd309fd60
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866121"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企業版的多重要素驗證測試環境
@@ -35,7 +35,7 @@ ms.locfileid: "26866121"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](https://aka.ms/m365etlgstack)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1： 建立您的 Microsoft 365 Enterprise 的測試環境
 
@@ -50,7 +50,7 @@ ms.locfileid: "26866121"
 
 啟用多重要素驗證使用者 2 帳戶進行這些步驟：
   
-1. 開啟瀏覽器中的個別的私人執行個體，請移至 Office 365 入口網站 ([https://portal.office.com](https://portal.office.com))，並再登入您的全域管理員帳戶。
+1. 開啟瀏覽器中的個別的私人執行個體，請移至 Office 入口網站 ([https://office.com](https://office.com))，並再登入您的全域管理員帳戶。
     
 2. 從主要的入口網站頁面中，按一下 [管理]****。
     
@@ -74,7 +74,7 @@ ms.locfileid: "26866121"
   
 1. 開啟瀏覽器中新的私人執行個體。
     
-2. 移至 Office 365 入口網站 ([https://portal.office.com](https://portal.office.com)) 和登入的使用者 2 帳戶 (user2 @\<組織名稱 >。 onmicrosoft.com) 和密碼。
+2. 移至 [Office 入口網站 ([https://office.com](https://office.com)) 和登入的使用者 2 帳戶 (user2 @\<組織名稱 >。 onmicrosoft.com) 和密碼。
     
 3. 登入之後, 會提示您設定如需詳細資訊的帳戶。按一下 [**下一步**]。
     
@@ -94,7 +94,7 @@ ms.locfileid: "26866121"
     
 8. 如果這是第一次您登入的使用者 2 帳戶後，系統提示您變更密碼。按兩次，輸入原始密碼] 和 [新密碼] 和 [**更新密碼，登入**。安全的位置記錄的新密碼。
     
-    您應請參閱 ＜ Office 365 入口網站使用者 2 在瀏覽器的 [ **Microsoft Office Home** ] 索引標籤。
+    您應該會在瀏覽器的 [ **Microsoft Office Home** ] 索引標籤上的使用者 2 看到 Office 入口網站。
 
 
 請參閱 「 身分識別 」 階段的資訊及連結部署在生產環境中的多重要素驗證[設定多重要素驗證](identity-multi-factor-authentication.md)步驟。

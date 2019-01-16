@@ -3,14 +3,14 @@ title: Microsoft 受管理的桌上型電腦技術
 description: 本主題將列出的技術及 Microsoft 受管理的桌上型電腦中所使用的應用程式。
 keywords: Microsoft 受管理的桌上型電腦、 [Microsoft 365 服務、 文件
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: da0268c6b0eddbd44cf62de2a95b963a443c3278
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4b26ec88e1f4ca95fee6f7c4c927fc06cab32135
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866324"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft 受管理的桌上型電腦技術
@@ -38,14 +38,14 @@ Skype 商務線上雲端 PBX | 這項功能是透過 Office 365 E5。Microsoft �
  |
  --- | ---
 認證 Guard |  Microsoft 受管理的桌上型電腦將提供相關指導和管理的這項功能的雲端層面
-裝置 Guard （Windows 防禦者應用程式控制項）   | Microsoft 受管理的桌上型電腦會建立原則。客戶管理簽章
+裝置 Guard （Windows 防禦者應用程式控制項） | Microsoft 受管理的桌上型電腦會建立原則。客戶管理簽章
 AppLocker 管理 |  Microsoft 受管理的桌上型電腦會建立原則。客戶管理簽章
 Application Virtualization (APP-V) |    當它不支援 Intune Microsoft 受管理的桌上型電腦不支援這種類型的部署。
 使用者經驗虛擬化 (使用者教育 V) | 這不會使用與受管理的 Microsoft 受管理的桌上型電腦裝置
 受管理的使用者經驗  | 這不會使用與受管理的 Microsoft 受管理的桌上型電腦裝置。MDM 作為解決方案的裝置管理
 Windows Defender 進階威脅防護 |   這是由 Microsoft 受管理的桌上型電腦用來管理裝置安全性原則。 
 
-## <a name="enterprise-mobility--security"></a>企業行動力 + 安全性 
+## <a name="enterprise-mobility--security"></a>Enterprise Mobility + Security 
 
  |
  --- | ---

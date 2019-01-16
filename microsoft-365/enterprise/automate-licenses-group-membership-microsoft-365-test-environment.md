@@ -13,11 +13,11 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 在 Microsoft 365 企業版測試環境中設定群組型授權和動態群組成員資格。
-ms.openlocfilehash: 46d2f0ca063b387d1a4a51b4ea97bd5d60c03fe5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 45a78af202f2d9ab029683aae4d95ed9a3370b08
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26866507"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>自動化 Microsoft 365 企業版測試環境的授權與群組成員資格
@@ -32,7 +32,7 @@ ms.locfileid: "26866507"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](https://aka.ms/m365etlgstack)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1： 建立您的 Microsoft 365 Enterprise 的測試環境
 
@@ -47,7 +47,7 @@ ms.locfileid: "26866507"
 
 首先，您建立新的銷售群組並新增動態群組成員資格規則以便與設為銷售部門的使用者帳戶會自動新增至 [銷售] 群組。
 
-1. 使用網際網路瀏覽器的私人執行個體，請登入 Office 365 入口網站[https://portal.office.com](https://portal.office.com)與您的 Office 365 E5 試用版訂閱的全域管理員帳戶。
+1. 使用網際網路瀏覽器的私人執行個體，請登入 Office 入口網站[https://office.com](https://office.com)與您的 Office 365 E5 試用版訂閱的全域管理員帳戶。
 2. 在瀏覽器中的個別] 索引標籤上移至 Azure 入口網站[https://portal.azure.com](https://portal.azure.com)。
 3. 在 Azure 入口網站中，按一下 [Azure Active Directory] > [使用者和群組] > [所有群組]****。
 4. 在**所有群組**blade 中，按一下 [**新群組**。
