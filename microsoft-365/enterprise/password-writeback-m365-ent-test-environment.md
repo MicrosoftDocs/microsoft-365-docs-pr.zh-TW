@@ -16,16 +16,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定適用於 Microsoft 365 測試環境的密碼回寫。
-ms.openlocfilehash: 748ccaf8601d9e9564d176f2368e3cc71f926208
-ms.sourcegitcommit: 73fb9a7cf1b7b1045a304391ed393acb7b909317
+ms.openlocfilehash: 8148341359b66b147ecc5cf9b4927621db1f78dd
+ms.sourcegitcommit: 6f94b7a272e33c492957336eae28f439e438c85b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27241976"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29993224"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼回寫
 
-密碼回寫允許使用者透過 Azure Active Directory (AD) 更新其密碼，然後密碼會複製到本機 Windows Server Active Directory (AD)。使用密碼回寫，使用者不需要透過內部部署的 Windows Server AD (其原始使用者帳戶儲存於此) 更新他們的密碼。這對於漫遊或遠端使用者非常有幫助，因為他們沒有內部部署網路的遠端存取連線。
+密碼回寫能讓使用者透過 Azure Active Directory (Azure AD) 更新密碼，然後系統會將密碼複寫到本機 Active Directory Domain Services (AD DS)。使用密碼回寫，使用者不需要透過內部部署的 Windows Server AD (其原始使用者帳戶儲存於此) 更新他們的密碼。這對於漫遊或遠端使用者非常有幫助，因為他們無法遠端存取內部部署網路。
 
 本文說明如何設定您的 Microsoft 365 測試環境以進行密碼回寫。
 
