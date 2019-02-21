@@ -6,12 +6,12 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
-ms.openlocfilehash: 54d986f37b3981200bdead30a2c232143b9dd49d
-ms.sourcegitcommit: 59bc66eaa2575bad8ecb34d45b1172cda23a729b
+ms.openlocfilehash: 64560a1eb597072dd99c1538b0131e3cd807899c
+ms.sourcegitcommit: 1942a860d1b65e1f8062564ec4703b953e0c2fd7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051084"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30122243"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>可設定-Microsoft 受管理的桌上型電腦
 
@@ -64,9 +64,9 @@ Microsoft 受管理的桌上型電腦中的組態設定將 IT 系統管理員提
 - **追蹤進度**– 追蹤狀態之後部署變更。狀態會變更為 [**進行中**，然後再可以是**Complete**、 」 或 「**失敗**。如果部署失敗，支援要求自動開啟調查問題 Microsoft 受管理的桌上型電腦作業。  
 - **請參閱部署版本**– 分別部署變更具有版本號碼。
 - **還原變更**– 回復變更會停止目前的部署，並回復至已部署至所有鈴響的最後一個變更所有鈴響。您會回復為上次正確設定值。
-- **Validatie cahnges** -部署完成之後，驗證您如預期般已套用變更。  
+- **驗證變更**-部署完成之後，驗證您如預期般已套用變更。  
 
-如果部署失敗，或您不能將回復變更 Microsoft 受管理的桌上型電腦作業[開啟支援要求](admin-support.md)。 
+如果部署失敗，或無法回復變更 Microsoft 受管理的桌上型電腦作業[開啟支援要求](admin-support.md)。 
 
 如需詳細資訊，請參閱 ＜ [Deploy 和追蹤可設定的設定](config-setting-deploy.md)。
 
