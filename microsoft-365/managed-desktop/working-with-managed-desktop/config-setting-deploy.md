@@ -5,13 +5,13 @@ keywords: Microsoft 受管理的桌上型電腦、 Microsoft 365、 服務、 �
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 2/12/2019
-ms.openlocfilehash: fd0e0750332fa8f650cfc4756f8eb108be2a71df
-ms.sourcegitcommit: 59bc66eaa2575bad8ecb34d45b1172cda23a729b
+ms.date: 2/17/2019
+ms.openlocfilehash: d6e669ecb2e00158dd3ce6712014244fa2f081c9
+ms.sourcegitcommit: b838e1dc7a98fcce1bdf7b76173f5f04f16be703
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051124"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175775"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>部署及追蹤組態設定-Microsoft 受管理的桌上型電腦
 
@@ -24,9 +24,9 @@ ms.locfileid: "30051124"
 狀態  | 說明 
 --- | --- 
 部署 | 您的變更正在等待部署至這個響鈴。
-進行中 | 變更會套用到此響鈴的裝置。 
-完整 | 變更會套用到此響鈴的裝置。 
-失敗 | 變更失敗 10%的響鈴的裝置上以便部署已停止。<br><br> 支援要求將會自動開啟 Microsoft 受管理的桌上型電腦每日操作來疑難排解部署。 
+進行中 | 變更會套用到此響鈴中作用中的裝置。 
+完整 | 在此響鈴所有作用中的裝置上完成變更。 
+失敗 | 變更無法在作用中的裝置鈴響 10%，部署已停止。<br><br> 支援要求將會自動開啟 Microsoft 受管理的桌上型電腦每日操作來疑難排解部署。 
 Csdeviceupdateconfiguration | 變更已還原成已成功部署至所有部署鈴響的最後一個修訂。
 
 ## <a name="deploy-changes"></a>部署的變更
