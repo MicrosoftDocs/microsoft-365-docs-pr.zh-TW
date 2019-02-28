@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定適用於 Microsoft 365 測試環境的密碼回寫。
-ms.openlocfilehash: 8148341359b66b147ecc5cf9b4927621db1f78dd
-ms.sourcegitcommit: 6f94b7a272e33c492957336eae28f439e438c85b
+ms.openlocfilehash: 7593da41d51d85c0f73d01450bb67306f82c7a1e
+ms.sourcegitcommit: 15c60addeaa51e0601c580665e8316ece75d3abc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29993224"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30303638"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼回寫
 
@@ -106,11 +106,11 @@ ms.locfileid: "29993224"
 
 4. 在 [其他工作] **** 頁面，按一下 [自訂同步處理選項]****，然後按 [下一步]****。
 
-5. 在 [連線到 Azure AD]**** 頁面上，輸入使用者 1 帳戶認證，然後按 [下一步]****。
+5. 在 [連線到 Azure AD]**** 頁面上，輸入您的全域管理員帳戶認證，然後按 [下一步]****。
 
 6. 在 [連線目錄]**** 和 [網域/OU]** 篩選**頁面上，按一下 [下一步]****。
 
-7. 在 [選擇性功能]**** 頁面上，選取 [密碼回寫]****，並按 [下一步]。 
+7. 在 [選擇性功能]**** 頁面上，選取 [密碼回寫]****，並按 [下一步]****。 
 
 8. 在 [已可設定]**** 頁面上，按一下 [設定]**** 並等待程序完成。
 
@@ -129,7 +129,7 @@ ms.locfileid: "29993224"
 - Azure AD Connect 在 APP1 上執行，以將來自 Office 365 和 EMS E5 訂閱之 Azure AD 租用戶的帳戶和群組清單同步至 TESTLAB Windows Server AD 網域。 
 - 密碼回寫已啟用，因此使用者可以透過 Azure AD 變更其密碼，而不需要連線到簡化的內部網路。
 
-如需在生產中進行密碼回寫的相關資訊和連結，請參閱身分識別階段中的「[簡化密碼更新](identity-password-writeback.md)」步驟。
+如需在生產中進行密碼回寫的相關資訊和連結，請參閱身分識別階段中的「[簡化密碼更新](identity-password-reset.md#identity-pw-writeback)」步驟。
 
 ## <a name="next-step"></a>下一步
 
