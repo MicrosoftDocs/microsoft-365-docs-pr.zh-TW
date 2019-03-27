@@ -1,5 +1,5 @@
 ---
-title: 尋找現代化電腦部署的說明
+title: 尋找 Windows 10 和 Office 365 專業增強版部署之說明
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,19 +12,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 哪裡可以找到現代化電腦部署的說明和支援。
-ms.openlocfilehash: 7c6f68320165abdfd131a84e84345bd6ff6d47c1
-ms.sourcegitcommit: 73fb9a7cf1b7b1045a304391ed393acb7b909317
+description: 哪裡可以找到 Windows 10 和 Office 365 專業增強版部署的說明。
+ms.openlocfilehash: 78d231dbcb5f965e2b4233bc7980da31fbfcbc2e
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27241966"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900252"
 ---
-# <a name="find-help-for-your-modern-desktop-deployment"></a>尋找現代化電腦部署的說明 
+# <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>尋找 Windows 10 和 Office 365 專業增強版部署的說明 
 
-如果您正在規劃 Windows 10 部署與 Office 365 專業增強版，有數個選項可以從認證的 Microsoft 合作夥伴和 [Microsoft FastTrack](https://www.microsoft.com/fasttrack) 取得額外說明。
+如果您正在規劃含 Office 365 專業增強版的 Windows 10 部署，有數個選項可以從認證的 Microsoft 合作夥伴和 [Microsoft FastTrack](https://www.microsoft.com/fasttrack) 取得額外說明。
 
-以下是適用於 Windows 10、Office 365 專業增強版和 Enterprise Mobility + Security，與[現代化電腦部署](http://www.aka.ms/howtoshift)程序一致的可用服務地圖，具有現有合作夥伴和 FastTrack 供應項目。在許多情況下，這些服務隨附於您對於 Microsoft 365、Office 365 或 Windows 10 企業版的合格訂閱中。針對合作夥伴領導的服務 (例如現代化電腦評估)，身為合格的組織，Microsoft 針對合作夥伴所執行的服務提供憑券。每個供應項目的詳細資料可以在以下的連結中找到。
+下方地圖是與 Windows 10、Office 365 專業增強版和 Enterprise Mobility + Security  [桌面部署](http://www.aka.ms/howtoshift)程序對應的可用服務，由現有合作夥伴和 FastTrack 提供。 在許多情況下，這些服務是包含在 Microsoft 365、 Office 365 或 Windows 10 企業版的合格訂閱中。 針對 Microsoft 合作夥伴主導的服務 (例如 Windows 10 和 Office 365 專業增強版桌面評估)，Microsoft 身為合格組織，可提供由合作夥伴所執行服務的儲值券。 在下面連結中找到各方案的詳細資料。
 
 <br>
 
@@ -33,8 +33,8 @@ ms.locfileid: "27241966"
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="step 1" height="144" width="144" /></td>
 <td><p><strong>裝置和應用程式整備</strong></p>
 <ul>
-<li><p><a href="http://aka.ms/MDAcustomerform">現代化電腦評估</a>，您的區域中的合格合作夥伴會使用最新的 Microsoft 工具和程序，為貴組織提供深度應用程式和裝置相容性，以及升級整備評估。</p>
-<li><p><a href="http://www.aka.ms/desktopappassure">桌面應用程式保證</a>，如果您在部署 Windows 10 和 Office 365 專業增強版或後續更新時遇到應用程式相容性問題，Microsoft 的 FastTrack 工程師會提供建議和整備指引。</p>
+<li><p><a href="http://aka.ms/MDAcustomerform">現代化電腦評定</a>，您的區域中的合格合作夥伴會使用最新的 Microsoft 工具和程序，為貴組織提供深度應用程式和裝置相容性，以及升級整備評定。</p>
+<li><p><a href="http://www.aka.ms/desktopappassure">傳統型應用程式保證</a>，如果您在部署 Windows 10 和 Office 365 專業增強版或後續更新時遇到應用程式相容性問題，Microsoft 的 FastTrack 工程師會提供建議和整備指導方針。</p>
 </ul></td>
 </tr>
 <tbody>
@@ -64,7 +64,7 @@ ms.locfileid: "27241966"
 </tr>
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="step 5" height="144" width="144" /></td>
-<td><p><strong>安全性與相容性考量事項</strong></p>
+<td><p><strong>安全性與合規性考量事項</strong></p>
 <ul>
 <li><p>
   <a href="https://docs.microsoft.com/en-us/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Azure AD Premium</a>，Microsoft 的 FastTrack 專家會在您採用 Microsoft 365 時，提供啟用服務方面的協助，以增強您的安全性和資訊保護層級。服務包括 Azure Multi-Factor Authentication、自助密碼重設、Azure Active Directory 條件式存取等等。針對裝置和端點安全性，Microsoft FastTrack 也可以透過 <a href="https://docs.microsoft.com/en-us/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a> 佈建和原則來提供協助。</p></li>
@@ -72,7 +72,7 @@ ms.locfileid: "27241966"
 </tr>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="step 6" height="144" width="144" /></td>
-<td><p><strong>作業系統部署與功能更新</strong></p>
+<td><p><strong>OS 部署與功能更新</strong></p>
 <ul>
 <li><p>
   <a href="https://docs.microsoft.com/en-us/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>，Microsoft 的 FastTrack 專家會提供以下協助：佈建使用者授權和為新裝置設定 Windows Autopilot、為您的 Windows 10 和其他行動裝置設定 MDM 原則，包括應用程式部署；Wi-Fi 和 VPN 原則；與 System Center Configuration Manager 共同管理等等。</p></li>
@@ -83,12 +83,12 @@ ms.locfileid: "27241966"
 <td><p><strong>Office 和 Windows 即服務</strong></p>
 <ul>
 <li><p>
-  <a href="https://docs.microsoft.com/en-us/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>，Microsoft 的 FastTrack 專家會提供為 Windows 10 和 Office 365 專業增強版設定更新原則方面的協助。<a href="https://docs.microsoft.com/en-us/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 專業增強版</a>，Microsoft FastTrack 也可以提供設定部署更新步調保持在最新狀態的指引。</p></li>
+  <a href="https://docs.microsoft.com/en-us/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>，Microsoft 的 FastTrack 專家會提供為 Windows 10 和 Office 365 專業增強版設定更新原則方面的協助。<a href="https://docs.microsoft.com/en-us/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 專業增強版</a>，Microsoft FastTrack 也可以提供設定部署通道以保持在最新狀態的指導方針。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="step 8" height="144" width="144" /></td>
-<td><p><strong>使用者的通訊和訓練</strong></p>
+<td><p><strong>使用者通訊和訓練</strong></p>
 <ul>
 <li><p><a href="https://www.microsoft.com/en-us/microsoft-365/success/productivitylibrary/quickly-and-easily-transform-new-devices?rtc=2">生產力文件庫</a>，Microsoft 提供的一組線上資源，適用於跨 Microsoft 365 的使用者通訊和訓練。</p></li>
 <li><p><a href="https://www.office.com/training">Office 訓練</a>，Microsoft 提供的一組線上資源，適用於 Office 365 和 Office 365 專業增強版的使用者訓練。</p></li>
@@ -104,8 +104,8 @@ ms.locfileid: "27241966"
 
 ## <a name="related-resources"></a>**相關資源**
 
-  - [現代化電腦的部署中心](http://www.aka.ms/howtoshift)
+  - [桌面部署中心](http://www.aka.ms/howtoshift)
 
-  - [來自 Microsoft Mechanics 的現代化電腦部署系列影片](http://www.aka.ms/watchhowtoshift) (英文)
+  - [來自 Microsoft Mechanics 的桌面部署中心系列影片](http://www.aka.ms/watchhowtoshift)
 
-  - [現代化電腦部署及管理實驗室套件](https://aka.ms/howtoshiftlabs)
+  - [桌面部署中心及管理實驗室套件](https://aka.ms/howtoshiftlabs)
