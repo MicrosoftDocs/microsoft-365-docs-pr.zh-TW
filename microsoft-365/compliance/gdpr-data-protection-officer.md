@@ -2,20 +2,20 @@
 title: Microsoft 的資料保護長
 description: GDPR 的 Microsoft 歐盟資料保護長 (DPO) 相關資訊
 keywords: Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: ''
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: a58c15425d56398a341166448687db149cca1f78
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 2401613de3c57bc02af67ed527eb37c314528930
+ms.sourcegitcommit: 709163e0d802fbe27d801ace4f004045e78a797c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 04/01/2019
 ms.locfileid: "26866506"
 ---
 # <a name="microsofts-data-protection-officer"></a>Microsoft 的資料保護長
@@ -42,6 +42,7 @@ Leopardstown<br>
 Dublin 18<br>
 D18 P521<br>
 愛爾蘭<br>
+電話：+353 (0) 1 295-3826<br>
 
 資料保護長的連絡人詳細資料已傳達至 Microsoft 的主管機關。   
 
