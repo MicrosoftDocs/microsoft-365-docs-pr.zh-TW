@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何購買和註冊 Microsoft 365 商務版。
-ms.openlocfilehash: 136ccc0d769a24b767101e1e8eb50261d4816f15
-ms.sourcegitcommit: 07f9eeb20b80573361e4d93b45acb68151a9e881
+ms.openlocfilehash: ce12c872e8cc30ece9e59aaf8c5b5d7c86694df2
+ms.sourcegitcommit: bbb32d1601f87dc72bebd00fad36d760ca233cd7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30933248"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31477704"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>註冊 Microsoft 365 商務版
 
@@ -31,23 +31,26 @@ ms.locfileid: "30933248"
 
 移至[探索 Microsoft 365 商務版優勢](https://www.microsoft.com/microsoft-365/business#pmg-cmp-desktop)，然後選擇 [**立即購買]** 底下 Microsoft 365 商務版。
 
-1. 在 [**歡迎使用，讓我們前往認識您**] 頁面上輸入必要的資訊。 請注意， 
+1. 在 [**歡迎使用，讓我們前往認識您**] 頁面上輸入必要的資訊。 請注意的事項：
  
-    -  您選擇會決定該服務的**國家/地區**取得且無法稍後變更。
-    - **商業電子郵件地址**是任何電子郵件，也可以將 microsoft 用來傳送給您關於您的訂閱的對應關係。
-    - 將顯示在系統管理中心中，**公司名稱**，並將其用於任何 SharePoint 網站 Url。
+    -  **國家或地區：** 這會決定您收到的服務，無法變更更新版本。
+    - **商業電子郵件地址：** 輸入您目前的電子郵件地址。 Microsoft 會使用這個地址來與您對應關於您的 Microsoft 365 訂閱。
+    - **公司名稱**我們將顯示您的公司名稱在系統管理中心;這是您將在其中管理 Microsoft 365 的使用者、 授權、 等等。 我們也會包含在任何 SharePoint 網站 Url。
 
-2. 在 [**建立您的使用者識別碼**] 頁面中，輸入您想要用來登入之後的網域名稱的別名 @ 符號，然後選取 [從下拉式清單的網域。 您可以使用這個購買網域，並從下拉式清單選取副檔名，例如，您可以輸入*Teresa@ContosoSkis.net*和精靈會判斷網域是可用並新增成本成本您 Microsoft 365 商務版。 新的網域就也會設定為您備妥可用於當您在這裡購買。
+2. 在 [**建立您的使用者識別碼**] 頁面上：
 
-    如果您有現有的網域想要使用，請選擇 [ *。 onmicrosoft.com*從下拉式清單，以及您可以稍後再設定它在系統管理中心。
+    - **使用者名稱**： 輸入的名稱 （稱為別名），您要使用您自己的商業電子郵件。 例如，Robert Young 可能使用 RobY 或 RobYoung 工時別名。
+    - **您的公司**： 輸入唯一的公司名稱。 這是您公司的網站使用如果有的話的名稱，而且也是您想要包含在之後的名稱 @ 符號時接收商務電子郵件。 此名稱會呼叫網域。 例如，如果貴公司稱為 Contoso Skis，輸入後的 ContosoSkis @ 符號後面。
+    - **選取 [網域]**: 如果您已擁有您的網域名稱，選取 [。 從下拉式清單男性 onmicrosoft.com，我們將要求您稍後再設定它。 否則，很容易購買代表貴公司的網域名稱。 若要這麼做，請選取您偏好的網域從下拉式清單功能表。 例如，可能是您完整的電子郵件地址*Teresa@ContosoSkis.net*。 我們會告知您立即是否可以使用的網域名稱。 如果是的話，我們會加入您的 Microsoft 365 商務版訂閱的成本來您網域的成本。 新的網域也將並準備就緒用於 Microsoft 365 如果您在這裡購買。
     
     ![建立您的使用者識別碼] 頁面的螢幕擷取畫面。](media/signinuserid.png)
 
 3. 填入其餘欄位，選取 [**建立我的帳戶]**。
 4. 在 [**證明您正在。Not'A。機器人。** ] 頁面上輸入電話號碼，以接收透過文字或通話和選取**的文字我**或**打電話給我**，程式碼，然後輸入驗證碼\>**下一步**。
-5. **在將您使用此**頁面填滿上您的商務地址。 這項資訊用於判斷稅金與訂閱的可用性。 選取 [**下一步**，檢閱您的訂單，然後選取 [**下一步**一次。
-6. 在**您要支付方式**] 頁面上，輸入您付款的詳細資訊，然後**單**。
-    您可以再移至[系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=837890)以完成您的[設定](set-up.md)。
+5. **在將您使用此**n 上您的商務地址。 這項資訊會決定哪些稅金您付款，但這些訂閱可用。 如需稅金的詳細資訊，請參閱[將我要支付哪些稅？](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
+1. 選取 [**下一步**，檢閱您的訂單，然後選取 [**下一步**一次。
+1. 在**您要支付方式**] 頁面上，輸入您付款的詳細資訊，然後**單**。
+    您可以再移至[系統管理中心](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide)以完成您的[設定](set-up.md)。
 
     > [!NOTE]
-    > 安裝程式結束時，如果您選取連結移至系統管理中心，您就會進入直接[設定](set-up.md)體驗。
+    > 安裝程式結束時，如果您選取 [**移至系統管理中心**] 連結，您就會進入直接[設定](set-up.md)體驗。
