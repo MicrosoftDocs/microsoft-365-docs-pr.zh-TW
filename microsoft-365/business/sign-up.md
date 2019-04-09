@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何購買和註冊 Microsoft 365 商務版。
-ms.openlocfilehash: ce12c872e8cc30ece9e59aaf8c5b5d7c86694df2
-ms.sourcegitcommit: bbb32d1601f87dc72bebd00fad36d760ca233cd7
+ms.openlocfilehash: 5e8bdb9121f2b567ef4faced2b960feaab49d923
+ms.sourcegitcommit: 913564997dbba42a448865a8913e07e6f203c736
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31477704"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31504079"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>註冊 Microsoft 365 商務版
 
@@ -41,13 +41,13 @@ ms.locfileid: "31477704"
 
     - **使用者名稱**： 輸入的名稱 （稱為別名），您要使用您自己的商業電子郵件。 例如，Robert Young 可能使用 RobY 或 RobYoung 工時別名。
     - **您的公司**： 輸入唯一的公司名稱。 這是您公司的網站使用如果有的話的名稱，而且也是您想要包含在之後的名稱 @ 符號時接收商務電子郵件。 此名稱會呼叫網域。 例如，如果貴公司稱為 Contoso Skis，輸入後的 ContosoSkis @ 符號後面。
-    - **選取 [網域]**: 如果您已擁有您的網域名稱，選取 [。 從下拉式清單男性 onmicrosoft.com，我們將要求您稍後再設定它。 否則，很容易購買代表貴公司的網域名稱。 若要這麼做，請選取您偏好的網域從下拉式清單功能表。 例如，可能是您完整的電子郵件地址*Teresa@ContosoSkis.net*。 我們會告知您立即是否可以使用的網域名稱。 如果是的話，我們會加入您的 Microsoft 365 商務版訂閱的成本來您網域的成本。 新的網域也將並準備就緒用於 Microsoft 365 如果您在這裡購買。
+    - **選取 [網域]**: 如果您已擁有您的網域名稱，選取 [。 從下拉式清單男性 onmicrosoft.com，我們將要求您稍後再設定它。 否則，很容易購買代表貴公司的網域名稱。 若要這麼做，請選取您偏好的網域從下拉式清單功能表。 例如，可能是您完整的電子郵件地址*Teresa@ContosoSkis.net*。 我們會告知您立即是否可以使用的網域名稱。 如果是的話，我們會加入您的 Microsoft 365 商務版訂閱的成本來您網域的成本。 新的網域也將並準備就緒用於 Microsoft 365 如果您在這裡購買。 網域的相關資訊，請參閱[網域的常見問題集](https://docs.microsoft.com/office365/admin/setup/domains-faq)。
     
     ![建立您的使用者識別碼] 頁面的螢幕擷取畫面。](media/signinuserid.png)
 
 3. 填入其餘欄位，選取 [**建立我的帳戶]**。
 4. 在 [**證明您正在。Not'A。機器人。** ] 頁面上輸入電話號碼，以接收透過文字或通話和選取**的文字我**或**打電話給我**，程式碼，然後輸入驗證碼\>**下一步**。
-5. **在將您使用此**n 上您的商務地址。 這項資訊會決定哪些稅金您付款，但這些訂閱可用。 如需稅金的詳細資訊，請參閱[將我要支付哪些稅？](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
+5. **在將您使用此**頁面上輸入您的商務地址。 這項資訊會決定哪些稅金您付款，但這些訂閱可用。 如需稅金的詳細資訊，請參閱[將我要支付哪些稅？](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
 1. 選取 [**下一步**，檢閱您的訂單，然後選取 [**下一步**一次。
 1. 在**您要支付方式**] 頁面上，輸入您付款的詳細資訊，然後**單**。
     您可以再移至[系統管理中心](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide)以完成您的[設定](set-up.md)。
