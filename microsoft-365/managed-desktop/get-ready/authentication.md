@@ -6,16 +6,16 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2317a0581b356dadbde2042920ed2542f0e2203c
-ms.sourcegitcommit: 392b906e64d27366b47931e8285b625e5e2f884e
+ms.openlocfilehash: c4ebe0c7ad3d1e197cf90cc975366df61d3b0cb5
+ms.sourcegitcommit: db52a11eb192a28dbec827c565e36ad4a81d8e3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31838164"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901207"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的準備內部部署資源的存取
 
-在 Microsoft 受管理的電腦，裝置會自動加入至 Azure Active Directory。 這表示，如果您使用內部部署 Active Directory，您必須檢查以確保裝置加入 Azure AD 可以與您在內部部署 Active Directory 通訊的一些事項。 
+在 Microsoft 受管理的電腦，裝置會自動加入至 Azure Active Directory (Azure AD)。 這表示，如果您使用內部部署 Active Directory，您必須檢查以確保裝置加入 Azure AD 可以與您在內部部署 Active Directory 通訊的一些事項。 
 
 > [!NOTE]  
 > *混合式*Microsoft 受管理的電腦不支援 azure AD 加入。
@@ -32,20 +32,20 @@ Azure Active Directory 可讓您利用的單一登入 (SSO)，這表示它們通
 
 Microsoft 受管理的電腦裝置上的預設會啟用單一登入 (SSO) 使用 UPN 和密碼。 但您的使用者也可以使用 Windows Hello 商務，需要一些額外設定步驟。 
 
-### <a name="single-sign-on-by-using-upn-and-passwords"></a>單一登入使用 UPN 和密碼
+### <a name="single-sign-on-by-using-upn-and-password"></a>單一登入使用 UPN 和密碼
 
 在大多數的組織，您的使用者能夠使用 SSO 進行驗證的 UPN 與 Microsoft 受管理的電腦裝置上的密碼。 不過，若要確保這將會運作，您應該仔細檢查下列：
 
-- 確認的 Azure Active Directory (AAD) 連線設定，並使用內部 Active Directory 伺服器上執行 Windows Server 2008 R2 或更新版本。
-- 請先確認，AAD Connect 執行支援的版本，且設為同步處理與 Azure AD 這三個屬性： 
+- 請先確認 Azure AD Connect 設定，並使用內部 Active Directory 伺服器上執行 Windows Server 2008 R2 或更新版本。
+- 確認 Azure AD Connect 執行支援的版本，且設為同步處理與 Azure AD 這三個屬性： 
     - DNS 網域名稱 （使用者的所在位置） 的內部部署 Active directory
-    - NetBIOS yor 的內部部署 Active Directory （對使用者的所在位置）
+    - NetBIOS （使用者的所在位置） 您內部部署 Active directory
     - SAM 帳戶名稱的使用者
 
 
 ### <a name="single-sign-on-by-using-windows-hello-for-business"></a>單一登入藉由使用 Windows Hello for Business
 
-Microsoft 受管理的電腦裝置也可讓使用者快速、 passwordless 體驗採用 Windows Hello 企業版。 若要確保 Windows Hello 的商務正常沒有您不必提供 UPN 和密碼的使用者，請造訪以檢查的需求，然後遵循[設定 Azure AD 加入的內部部署單一登入使用 Windows Hello 企業版的裝置](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base)那里提供的步驟。
+Microsoft 受管理的電腦裝置也可讓使用者快速、 passwordless 體驗採用 Windows Hello 企業版。 若要確保 Windows Hello 的商務正常沒有您不必提供各自的 UPN 與密碼的使用者，請造訪[設定 Azure AD 加入的內部部署單一登入使用 Windows Hello 企業版的裝置](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base)檢查的需求，然後選取依照此處所提供的步驟。
 
 
 ## <a name="apps-and-resources-that-use-authentication"></a>應用程式和使用驗證的資源
