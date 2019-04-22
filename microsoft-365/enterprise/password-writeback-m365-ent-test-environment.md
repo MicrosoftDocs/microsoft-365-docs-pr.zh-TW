@@ -3,7 +3,7 @@ title: 適用於 Microsoft 365 測試環境的密碼回寫
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2018
+ms.date: 04/16/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,32 +16,32 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定適用於 Microsoft 365 測試環境的密碼回寫。
-ms.openlocfilehash: 6dada4734798d0e30b50e271520742f3b170ebaf
-ms.sourcegitcommit: aba6d1b81e4c579e82e6fad90daec65d775b450a
+ms.openlocfilehash: 11a0efbae09c36098a19725187cd43b53850f4fc
+ms.sourcegitcommit: db52a11eb192a28dbec827c565e36ad4a81d8e3f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573427"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901217"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼回寫
 
-密碼回寫能讓使用者透過 Azure Active Directory (Azure AD) 更新密碼，然後系統會將密碼複寫到本機 Active Directory Domain Services (AD DS)。使用密碼回寫，使用者不需要透過內部部署的 Windows Server AD (其原始使用者帳戶儲存於此) 更新他們的密碼。這對於漫遊或遠端使用者非常有幫助，因為他們無法遠端存取內部部署網路。
+密碼回寫能讓使用者透過 Azure Active Directory (Azure AD) 更新密碼，然後系統會將密碼複寫到本機 Active Directory Domain Services (AD DS)。使用密碼回寫，使用者不需要透過內部部署的 Active Directory Domain Services (AD DS) (其原始使用者帳戶儲存於此) 更新他們的密碼。這對於漫遊或遠端使用者非常有幫助，因為他們無法遠端存取內部部署網路。
 
 本文說明如何設定您的 Microsoft 365 測試環境以進行密碼回寫。
 
 此測試環境的設定分為兩個階段︰
 
 1.  使用密碼雜湊同步處理建立 Microsoft 365 模擬企業測試環境。
-2.  啟用適用於 TESTLAB Windows Server AD 網域的密碼回寫。
+2.  啟用適用於 TESTLAB AD DS 網域的密碼回寫。
     
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > 按一下[這裡](https://aka.ms/m365etlgstack)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
-## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>階段 1：設定適用於 Microsoft 365 測試環境的密碼雜湊同步處理
+## <a name="phase-1-configure-password-hash-synchronization-and-password-reset-for-your-microsoft-365-test-environment"></a>階段 1：設定適用於 Microsoft 365 測試環境的密碼雜湊同步處理和密碼重設
 
-請遵循[適用於 Microsoft 365 的密碼雜湊同步處理](password-hash-sync-m365-ent-test-environment.md)中的指示。以下是您產生的組態。
+首先，請遵循[密碼雜湊同步處理](password-hash-sync-m365-ent-test-environment.md)中的指示。以下是您產生的組態。
   
 ![使用密碼雜湊同步處理測試環境的模擬企業](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
@@ -49,9 +49,13 @@ ms.locfileid: "30573427"
   
 - Office 365 E5 和 EMS E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 
-- Azure AD Connect 在 APP1 上執行，以將 TESTLAB Windows Server AD 網域同步至 Office 365 和 EMS E5 訂閱的 Azure AD 租用戶。
+- Azure AD Connect 在 APP1 上執行，以將 TESTLAB AD DS 網域同步至 Office 365 和 EMS E5 訂閱的 Azure AD 租用戶。
 
-## <a name="phase-2-enable-password-writeback-for-the-testlab-windows-server-ad-domain"></a>階段 2：啟用適用於 TESTLAB Windows Server AD 網域的密碼回寫。
+接下來，遵循測試實驗室指南中的[密碼重設的階段 2](password-reset-m365-ent-test-environment.md#phase-2-configure-and-test-password-reset)。
+
+您必須啟用密碼重設才能使用密碼回寫。
+
+## <a name="phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain"></a>階段 2：啟用適用於 TESTLAB AD DS 網域的密碼回寫
 
 首先，使用全域系統管理員角色設定使用者 1 帳戶。
 
@@ -65,7 +69,7 @@ ms.locfileid: "30573427"
 
 5. 在 user1 的 [編輯使用者角色]**** 窗格中，按一下 [全域系統管理員]****。按一下 [儲存]****，然後按一下 [關閉]****。
 
-接下來，使用安全性設定來配置使用者 1 帳戶，該安全性設定允許其代表 TESTLAB Windows Server AD 網域中的其他使用者變更密碼。。
+接下來，使用安全性設定來配置使用者 1 帳戶，該安全性設定允許其代表 TESTLAB AD DS 網域中的其他使用者變更密碼。。
 
 1. 從 [Azure 入口網站](https://portal.azure.com)，以您的全域管理員帳戶登入，然後以 TESTLAB\User1 帳戶連線到 APP1。
 
@@ -126,7 +130,7 @@ ms.locfileid: "30573427"
 
 - 已註冊 DNS 網域 TESTLAB.\<您的網域名稱> 的 Office 365 E5 和 EMS E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 
-- Azure AD Connect 在 APP1 上執行，以將來自 Office 365 和 EMS E5 訂閱之 Azure AD 租用戶的帳戶和群組清單同步至 TESTLAB Windows Server AD 網域。 
+- Azure AD Connect 在 APP1 上執行，以將來自 Office 365 和 EMS E5 訂閱之 Azure AD 租用戶的帳戶和群組清單同步至 TESTLAB AD DS 網域。 
 - 密碼回寫已啟用，因此使用者可以透過 Azure AD 變更其密碼，而不需要連線到簡化的內部網路。
 
 如需在生產中進行密碼回寫的相關資訊和連結，請參閱身分識別階段中的「[簡化密碼更新](identity-password-reset.md#identity-pw-writeback)」步驟。
