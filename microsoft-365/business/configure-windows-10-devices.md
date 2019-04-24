@@ -4,11 +4,14 @@ ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4PushSoftware
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -20,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
 description: 了解裝置原則套用至組織中的所有使用者的 Windows 10。
-ms.openlocfilehash: 38b79b03ea385913d45df4e61f60c9e2071f3679
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 73a1e59704eb5f261d425cdc58894d824214b4fa
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276847"
 ---
 # <a name="configure-windows-10-devices"></a>設定 Windows 10 裝置
 

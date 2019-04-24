@@ -4,10 +4,13 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -18,19 +21,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: 了解 Microsoft 365 Business 中的裝置狀態。
-ms.openlocfilehash: bd6f1ad7f7671d9616fd14d477dfcfb164ff6bd0
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 了解 Microsoft 365 商務版中的裝置狀態。
+ms.openlocfilehash: 15114835a5014f5bfac600eac79bcdffdaec481a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276957"
 ---
 # <a name="device-states"></a>裝置狀態
 
 ## <a name="device-states"></a>裝置狀態
 
-在 [**裝置動作**] 清單中的裝置 (管理首頁\>**裝置動作**) 可以有下列狀態。
+Devices in the **Device actions** list (Admin home \> **Device actions**) can have the following states.
   
 ![In the Device actions list, you can see the Devices states.](media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
   

@@ -7,7 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -18,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: '了解如何建立、 編輯、 刪除或移除自動駕駛儀上設定檔。 '
-ms.openlocfilehash: 4658a27e5f2c64a52f8a7d08b3fc13df5e239dc3
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: '了解如何建立、 編輯、 刪除或移除 AutoPilot 設定檔。 '
+ms.openlocfilehash: 85fc897b2f428afae8d55feeb577021adaa30f72
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277074"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>建立及編輯 AutoPilot 設定檔
 
@@ -32,13 +35,11 @@ ms.locfileid: "26866423"
 
 設定檔適用於單一裝置或一組裝置。
   
-1. 在 Microsoft 365 商務系統管理中心中，選擇 [**使用自動駕駛儀上部署 Windows** **裝置動作**卡片上。 
-    
-    ![On the Device actions card, choose Deploy Windows with Autopilot.](media/160d5c2a-11a8-48f9-a8aa-70f084b85448.png)
+1. 在 Microsoft 365 商務版系統管理中心中，選擇 [**裝置**] \> **AutoPilot**。
   
-2. 在 [**準備 Windows** ] 頁面上選擇 [**設定檔**] 索引標籤\>**建立設定檔**。
+2. 在**自動駕駛**頁面上，選擇 [**設定檔**] 索引標籤\>**建立設定檔**。
     
-3. 在 [**建立設定檔**] 頁面上輸入有助於您識別，例如行銷、 開啟您想 （請參閱[關於自動駕駛儀上設定檔設定](autopilot-profile-settings.md)如需詳細資訊，） 的設定和選擇 [**儲存**設定檔的名稱。
+3. 在 [**建立設定檔**] 頁面上，輸入可協助您識別，例如行銷，開啟您想要 （如需詳細資訊，請參閱[關於 AutoPilot 設定檔設定](autopilot-profile-settings.md)，） 的設定，然後選擇 [**儲存**設定檔的名稱。
     
     ![Enter name and turn on settings in the Create profile panel.](media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
@@ -46,9 +47,9 @@ ms.locfileid: "26866423"
 
 建立設定檔之後，您可以將它套用到單一裝置或一組裝置。您可以在[逐步指南](add-autopilot-devices-and-profile.md)中挑選現有設定檔、可以將設定檔套用到新裝置，或者也可以取代單一裝置或一組裝置的現有設定檔。 
   
-1. 在 [**準備 Windows** ] 頁面上選擇 [**裝置**] 索引標籤。 
+1. 在 [**準備 Windows** ] 頁面上，選擇 [**裝置**] 索引標籤。 
     
-2. 按一下 [核取方塊旁的裝置名稱及 [**裝置**] 面板中，從**已指派] 設定檔**] 下拉式清單中選擇一個設定檔\>**儲存**。
+2. 按一下核取方塊，裝置名稱旁邊，然後在 [**裝置**] 面板中，從**指派的設定檔**下拉式清單中選擇設定檔\>**儲存**。
     
     ![In the Device panel, select an Assigned profile to apply it.](media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -58,23 +59,23 @@ ms.locfileid: "26866423"
   
 ### <a name="edit-a-profile"></a>編輯設定檔
 
-1. 在 [**準備 Windows** ] 頁面上選擇 [**設定檔**] 索引標籤。 
+1. 在 [**準備 Windows** ] 頁面上，選擇 [**設定檔**] 索引標籤。 
     
-2. 按一下 [裝置名稱旁核取方塊並**設定檔**中面板更新任何可用的設定\>**儲存**。
+2. 按一下裝置名稱旁邊的核取方塊，並在 [**設定檔**] 面板更新任何可用設定\>**儲存**。
     
     如果您在使用者將裝置連線到網際網路之前這麼做，設定檔則會套用到設定程序。
     
 ### <a name="delete-a-profile"></a>刪除設定檔
 
-1. 在 [**準備 Windows** ] 頁面上選擇 [**設定檔**] 索引標籤。 
+1. 在 [**準備 Windows** ] 頁面上，選擇 [**設定檔**] 索引標籤。 
     
-2. 按一下 [裝置名稱旁核取方塊並在 [**設定檔**] 面板中按一下 [**刪除設定檔** \> **儲存**。
+2. 按一下裝置名稱旁邊的核取方塊，然後在 [**設定檔**] 面板中按一下 [**刪除設定檔** \> **儲存**。
     
     當您刪除設定檔時，會移除單一裝置或一組裝置中的獲派設定檔。
     
 ### <a name="remove-a-profile"></a>移除設定檔
 
-1. 在 [**準備 Windows** ] 頁面上選擇 [**裝置**] 索引標籤。 
+1. 在 [**準備 Windows** ] 頁面上，選擇 [**裝置**] 索引標籤。 
     
-2. 按一下 [核取方塊旁的裝置名稱及 [**裝置**] 面板中，選擇 [**無**從**已指派 profile**下拉式\>**儲存**。
+2. 按一下核取方塊，裝置名稱旁邊，然後在 [**裝置**] 面板中，從**指派的設定檔**下拉式清單選擇 [**無** \> **儲存**。
     

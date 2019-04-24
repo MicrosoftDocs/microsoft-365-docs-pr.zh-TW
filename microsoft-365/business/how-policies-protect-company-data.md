@@ -4,13 +4,14 @@ ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - O365E_ESPoliciesLM
 - ESPoliciesLM
 - BCS365_ESPoliciesLM
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -21,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
-description: 深入了解特定裝置和安全性群組保護使用者的個人裝置上的公司資料為目標的原則。
-ms.openlocfilehash: e52026ccc96e032bbccb7334992a447e14b2cc05
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 了解針對特定裝置和安全性群組來保護使用者的個人裝置上公司資料的原則。
+ms.openlocfilehash: 11f0432b9e738841e6523dce436c534af41b827a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276780"
 ---
 # <a name="how-policies-in-microsoft-365-business-protect-company-data"></a>Microsoft 365 商務版中的原則如何保護公司資料
 
@@ -39,6 +40,6 @@ ms.locfileid: "26866147"
   
 [設定適用於 Windows 10 電腦的裝置設定](protection-settings-for-windows-10-pcs.md)
   
-[設定 Windows 10 裝置適用的應用程式保護設定](protection-settings-for-windows-10-devices.md)
+[設定 Windows 10 裝置的 app 保護設定](protection-settings-for-windows-10-devices.md)
   
 

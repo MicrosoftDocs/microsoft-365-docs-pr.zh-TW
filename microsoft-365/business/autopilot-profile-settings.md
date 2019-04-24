@@ -4,14 +4,17 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - ZTDProfileSettings
 - O365E_ZTDProfileSettings
 - BCS365_ZTDProfileSettings
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -22,32 +25,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: 自動駕駛儀上設定檔可協助您控制 Windows 取得安裝在使用者裝置上的方式。設定檔包含預設和選用設定 like 略過 Cortana 安裝。
-ms.openlocfilehash: 5440286f1363780c87ab60514584c4addfeea0b2
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: AutoPilot 設定檔可協助您控制如何取得使用者裝置上安裝 Windows。 設定檔包含預設和選擇性的設定，例如略過 Cortana 安裝。
+ms.openlocfilehash: d43a15e5f3dc83596b5c23dd0ceb416b24810298
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276934"
 ---
 # <a name="about-autopilot-profile-settings"></a>關於 AutoPilot 設定檔的設定
 
-## <a name="autopilot-profile-settings"></a>自動駕駛儀上設定檔設定
+## <a name="autopilot-profile-settings"></a>AutoPilot 設定檔設定
 
-您可以控制如何 Windows 取得安裝在使用者裝置上使用自動駕駛儀上設定檔。設定檔包含下列設定值。
+您可以控制使用者裝置上安裝 Windows 取得方式，使用 AutoPilot 設定檔。 設定檔包含下列設定值。
   
- **自動駕駛儀上預設 （必要） 的功能會自動設定：**
+ **AutoPilot 預設功能 （必要），就會自動設定：**
   
 |**設定**|**描述**|
 |:-----|:-----|
-|略過 Cortana、 OneDrive 及 OEM 註冊  <br/> |會略過 Cortana 和個人 OneDrive 的用戶應用程式的安裝。只要他就是在裝置上的本機系統管理員裝置使用者可以安裝這些更新。原始的製造商註冊會略過裝置將變成由 Microsoft 365 Business。  <br/> |
-|登入經驗與公司品牌  <br/> |如果您的公司具有[新增您的公司品牌 Office 365 登入] 頁面上](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a)，裝置使用者會取得該經驗時登入。  <br/> |
-|MDM 自動註冊具有設定 AAD 帳戶。  <br/> |使用者身分識別將變成由 Azure Active directory、 及使用者將會使用其 Microsoft 365 商務認證簽署至 Windows 與 Office 365。  <br/> |
+|略過 Cortana、 OneDrive 及 OEM 註冊  <br/> |略過 Cortana 與個人的 OneDrive 等消費者應用程式的安裝。 裝置使用者，只要他或她已在裝置上的本機系統管理員，才能安裝這些更新。 因為將會由 Microsoft 365 商務版管理裝置，會略過的原始的製造商註冊。  <br/> |
+|登入您的公司品牌的經驗  <br/> |如果貴公司有[新增公司商標至 Office 365 登入] 頁面上](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a)，裝置使用者會收到該經驗，當登入。  <br/> |
+|MDM 自動註冊以設定 AAD 帳戶。  <br/> |將由 Azure Active directory 管理使用者身分識別和使用者使用其 Microsoft 365 商務版認證，將登入 Windows 和 Office 365。  <br/> |
    
  **選用的設定：**
   
 |**設定**|**描述**|
 |:-----|:-----|
-|略過隱私權設定 （預設為關閉）  <br/> |如果此選項設為**在**裝置使用者不會看到裝置和 Windows 授權的合約時一次第一次登入。  <br/> |
-|不允許使用者可以成為本機管理員  <br/> |如果此選項設為**在**、 裝置使用者將無法安裝任何個人的應用程式，例如 Cortana。  <br/> |
+|略過的隱私權設定 （預設為關閉）  <br/> |如果此選項設為**上**，裝置使用者會看到 [授權合約的裝置和 Windows 當他或她第一次登入。  <br/> |
+|不允許使用者成為本機系統管理員  <br/> |如果此選項設為 [**開啟**，裝置使用者將無法安裝任何個人的應用程式，例如 Cortana。  <br/> |
    

@@ -1,42 +1,44 @@
 ---
 title: 取得 Microsoft 受管理電腦的支援
 description: ''
-keywords: Microsoft 受管理的桌上型電腦、 [Microsoft 365 服務、 文件
+keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
 ms.date: 11/28/2018
-ms.openlocfilehash: fb92b7971a35e6fca093f9911fbf480f1b26e6e8
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 3e48fdfc9708f0a1eb3b1cb0e5deb64d1a5ca748
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278221"
 ---
-# <a name="getting-help-for-end-users"></a>適用於使用者取得說明
+# <a name="getting-help-for-end-users"></a>取得使用者的說明
 
-有兩種組織中的使用者可以使用其 Microsoft 受管理的桌上型電腦裝置取得協助的方式：**取得協助**的應用程式或電話支援。請注意裝置中測試響鈴超出範圍這些使用者的支援選項。 
+您組織中的使用者可以使用其 Microsoft 受管理的電腦裝置取得協助的兩種方式：**取得協助**的應用程式或電話支援。 請注意，位於 [測試] 群組中的裝置這些使用者的支援選項的範圍外。 
 
 ## <a name="get-help-app"></a>取得說明應用程式
 
-對使用者提供支援的慣用的方法是**取得協助**，端使用者裝置內建易於使用介面。  
+提供支援，您的使用者的慣用的方法是**取得協助**，易於使用內建於使用者裝置的介面。  
 
 ![取得說明](images/get-help.png)
 
-這是 Microsoft 受管理的桌上型電腦的所有裝置上已安裝且固定至任務長條圖的應用程式。 
+這是 Microsoft 受管理電腦的所有裝置上安裝並已釘選到工作列的應用程式。 
 
-- 使用者可以要求回至所提供的電話號碼或聊天室線上服務代表與通話。
-- 屬於 Microsoft 受管理的桌上型電腦支援範圍外的要求會重新導向至本機 IT 服務台透過電話通話。  
+- 使用者可以要求回到提供的電話號碼或線上服務代表具有的交談呼叫。
+- 屬於 Microsoft 受管理電腦的支援範圍以外的要求重新導向至本機 IT 服務台透過電話。  
 
 ## <a name="phone-support"></a>電話支援
 
-與 Microsoft 受管理的桌上型電腦裝置的使用者也可以存取他們可以呼叫的免付費電話號碼。這是用來取得協助無法使用時使用。例如，如果他們無法登入裝置或裝置會中斷。以下是電話支援的電話號碼：
+使用 Microsoft 受管理的電腦裝置的使用者也可以存取他們可以撥的免付費電話號碼。 這是要用於時無法取得說明。 例如，如果他們無法登入裝置或裝置會中斷。 以下是電話支援的電話號碼：
  
-- 美國： +1 855 425 0216
-- 英國: + 44 2076年 601135
-- 澳洲： +61 180 037 0619
+
+- 美國 & 加拿大 （不含魁北克）： +1 855 425 0216
+- 英國： +44 800 026 0698
+- 澳大利亞： +61 180 037 0619
 
 
 ## <a name="additional-resources"></a>其他資源
-- [管理的 Microsoft 受管理的桌上型電腦支援](admin-support.md)。 
-- [Microsoft 受管理的桌上型電腦支援](../service-description/support.md)。
+- [系統管理員支援 Microsoft 受管理的電腦](admin-support.md)。 
+- [Microsoft 受管理電腦的支援](../service-description/support.md)。
