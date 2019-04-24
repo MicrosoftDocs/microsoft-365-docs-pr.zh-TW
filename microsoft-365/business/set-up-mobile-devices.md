@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: 在 iPhone 或 Android 電話以及 Office 應用程式將會受到 Microsoft 365 Business 中的您工作檔案安裝 Office。
-ms.openlocfilehash: 15dc9742cb9712bcbf21e7e3668adc572ee9eb2b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 在 iPhone 或 Android 手機，與您在 Office 應用程式就會受到 Microsoft 365 商務版中的工作檔案上安裝 Office。
+ms.openlocfilehash: 4ffde6197104cfceb337a9d531032dacfd9efcf0
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284574"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>為 Microsoft 365 商務版使用者設定行動裝置
 
@@ -34,11 +37,11 @@ ms.locfileid: "26866251"
 
 ## <a name="iphonetabiphone"></a>[iPhone](#tab/iPhone)
   
-觀賞影片如何設定 Microsoft 365 business iOS 裝置上的 Office 應用程式：
+觀看有關如何設定 iOS 裝置上使用 Microsoft 365 商務版的 Office 應用程式的影片：
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9?autoplay=false] 
 
-移到**應用程式存放區**，並在 Microsoft Outlook 中的搜尋欄位類型。
+移到**應用程式存放區**，並在搜尋欄位中輸入 Microsoft Outlook 中。
   
 ![Go to the iPhone App Store](media/886913de-76e5-4883-8ed0-4eb3ec06188f.png)
   
@@ -46,15 +49,15 @@ ms.locfileid: "26866251"
   
 ![Tap the cloud icon to install Outlook](media/665e1620-948a-4ab8-b914-dca49530142c.png)
   
-當安裝完成時，點選 [**開啟**] 按鈕開啟 Outlook 並再點選 [**開始**]。
+安裝完成時，點選 [**開啟**] 按鈕來開啟 Outlook，然後點選 [**開始**]。
   
 ![Screenshot of Outlook with Get Started button](media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-在 [**新增電子郵件帳戶**] 畫面中輸入您公司的電子郵件地址\>**新增帳戶**]，然後輸入您的 Microsoft 365 商務認證\>**登入**。
+在 [**新增電子郵件帳戶**] 畫面上輸入您的公司電子郵件地址\>**新增帳戶**]，然後輸入您的 Microsoft 365 商務版認證\>**登入**。
   
 ![Sign in to your work account](media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
-如果您的組織會保護應用程式上的檔案，您會看到表示您的組織現在會保護應用程式中的資料與您需要重新啟動繼續使用該應用程式] 對話方塊。點選 [**確定]** 並關閉 Outlook。 
+如果貴組織保護 App 上的檔案，您會看到一個對話方塊，指出貴組織正在保護 App 中的資料，而且您必須重新啟動 App 才能繼續使用。 點選 [**確定]** ，並關閉 Outlook。 
   
 ![Screenshot that showa your organization is now protecting your Outlook app](media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
   
@@ -64,19 +67,19 @@ ms.locfileid: "26866251"
   
 ## <a name="androidtabandroid"></a>[Android](#tab/Android)
   
-若要開始 Android 電話上的安裝程式，請前往播放存放區。
+若要開始安裝 Android 手機上的，移至 Play 商店。
   
 ![On the Android home screen, tap Play Store](media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-Google 播放在搜尋方塊中輸入 Microsoft Outlook，然後點選 [**安裝**。一旦完成 Outlook 安裝，請點選 [**開啟**。
+Google Play 搜尋方塊中輸入 Microsoft Outlook，然後點選 [**安裝**]。一旦完成 Outlook 安裝，請點選 [**開啟**。
   
 ![Tap Open to open Outlook app](media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-Outlook 應用程式中點選 [**開始**，然後再新增 Microsoft 365 商務電子郵件帳戶\>**繼續**，] 和 [登入您的組織的認證。
+在 Outlook app 中點選 [**開始**，然後新增您的 Microsoft 365 商務版電子郵件帳戶\>**繼續**，並以您組織的認證登入。
   
 ![Sign in to your organizational account in Outlook](media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
-在] 對話方塊中，指出您必須安裝 Intune 的公司入口網站應用程式、 點選 [**移至存放區**。
+在] 對話方塊中，指出您必須安裝 Intune 公司入口網站應用程式，點選 [**移至商店]**。
   
 ![Tap on Go to store to get Intune Company Portal app](media/a702d712-5622-45dd-a511-b1adaee63071.png)
   

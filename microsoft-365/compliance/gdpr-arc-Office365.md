@@ -2,20 +2,19 @@
 title: 符合 GDPR 的 Office 365 責任整備程度檢查清單
 description: 此責任整備檢查清單 (ARC) 可提供您使用 Office 365 時支援 GDPR 的所需資訊。
 keywords: GDPR 責任整備, 責任整備檢查清單, Microsoft 365, Microsoft 365 教育版, GDPR 文件, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
-manager: bcarter
+ms.author: heicba
+manager: laurawi
 ms.collection: GDPR
-ms.openlocfilehash: 3fe44b99f33db852d5115295662a2556c3efdee6
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 8c789b233a3fd10745ef718a190d45ec1126e189
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286531"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-office-365"></a>適用於 Microsoft Office 365 的責任整備檢查清單
 

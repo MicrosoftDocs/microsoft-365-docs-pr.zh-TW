@@ -2,21 +2,21 @@
 title: GDPR 規定的 Dynamics 365 和外洩通知
 description: Dynamics 365 如何防止個人資料外洩，以及若發生外洩 Microsoft 會如何回應和通知您。
 keywords: Dynamics 365、Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 5bdaa174a4701466ce9f7bd4975221ab95c1cb45
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 3ee90c2fbe2684cebbd19376f44fc97d743515db
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286383"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>GDPR 規定的 Dynamics 365 和外洩通知
 

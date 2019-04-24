@@ -7,7 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -17,37 +20,37 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: 了解如何驗證 Windows 10 裝置中的 Microsoft 365 商務應用程式保護設定。
-ms.openlocfilehash: db05c86bd75cc30e22e025034a3dab478d0f5365
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 了解如何驗證 Windows 10 裝置中的 Microsoft 365 商務版應用程式保護設定。
+ms.openlocfilehash: 5ab91d65fa7bd40ebc118df217c9711b7bbfe7a4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286696"
 ---
-# <a name="validate-device-protection-settings-on-windows-10-pcs"></a>驗證 Windows 10 Pc 上的裝置保護設定
+# <a name="validate-device-protection-settings-on-windows-10-pcs"></a>驗證 Windows 10 電腦上的裝置保護設定
 
-## <a name="verify-that-windows-10-device-policies-are-set"></a>確認 Windows 10 裝置原則的設定
+## <a name="verify-that-windows-10-device-policies-are-set"></a>請確認已設定 Windows 10 裝置原則
 
-之後您[設定裝置原則](protection-settings-for-windows-10-pcs.md)，它可能需要幾個小時才會影響使用者的裝置原則。您可以確認原則的使用者的裝置上查看 \\servername\share\spbr 各種 Windows 設定畫面萬一效果。使用者將無法修改其 Windows 10 裝置上的 Windows Update 及 Windows 防禦者防毒設定，因為這些選項的許多將會顯示成灰色。
+之後您[設定裝置原則](protection-settings-for-windows-10-pcs.md)，可能會佔用的原則至使用者的裝置上生效的幾個小時。 您可以確認原則所需的效果，來查看使用者的裝置上的各種 Windows 設定畫面。 因為使用者無法修改其 Windows 10 裝置上的 Windows 更新] 和 [Windows Defender 防毒軟體設定，這些選項許多將會顯示成灰色。
   
-1. 移至 [**設定** \> **更新&amp;安全性** \> **Windows Update** \> **重新啟動選項**並確認所有設定的都灰色。 
+1. 移至 [**設定** \> **更新&amp;安全性** \> **Windows Update** \> **重新啟動選項**，並確認所有的設定灰色。 
     
-    ![重新啟動的所有選項的都灰色。](media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
+    ![重新啟動的所有選項被都灰色。](media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. 移至 [**設定** \> **更新&amp;安全性** \> **Windows Update** \> **進階選項**，並確認所有設定的都灰色。 
+2. 移至 [**設定** \> **更新&amp;安全性** \> **Windows Update** \> **進階選項]** ，並確認所有的設定灰色。 
     
     ![Windows Advanced 更新選項是所有顯示成灰色。](media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
-3. 移至 [**設定** \> **更新&amp;安全性** \> **Windows Update** \> **進階選項** \> **選擇更新傳遞的方式**。
+3. 移至 [**設定** \> **更新&amp;安全性** \> **Windows Update** \> **進階選項** \> **選擇更新傳送的方式**。
     
-    確認您可以看到的訊息 （以紅色） 和部分設定都是隱藏或管理您的組織的所有選項會顯示成都灰色。
+    確認您可以看到的訊息 （以紅色） 和某些設定都是隱藏或由您的組織，受管理的所有選項會顯示成都灰色。
     
-    ![選擇更新傳遞的方式] 頁面上會指出設定都是隱藏或由組織管理。](media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
+    ![選擇 [更新傳送的方式設定都是隱藏或由組織管理] 頁面上會指示。](media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. 若要開啟 [Windows 防禦者安全性中心，移至 [**設定** \> **更新&amp;安全性** \> **Windows 防禦者**\>按一下 [**開啟 Windows 防禦者安全性中心** \> **病毒&amp;執行緒保護** \> **病毒&amp;威脅保護設定**。 
+4. 若要開啟 [Windows Defender 資訊安全中心，移至 [**設定** \> **更新&amp;安全性** \> **Windows Defender** \>按一下 [**開啟 Windows defender 資訊安全中心** \> **病毒&amp;執行緒保護** \> **病毒&amp;威脅保護設定**。 
     
-5. 確認所有選項的都灰色。 
+5. 確認所有選項都灰色。 
     
     ![病毒和威脅保護設定被灰色。](media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   

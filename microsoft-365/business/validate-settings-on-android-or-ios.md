@@ -1,5 +1,5 @@
 ---
-title: 驗證 Android 或 iOS 裝置上的應用程式保護設定
+title: 驗證 Android 或 iOS 裝置上的 app 保護設定
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -16,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: 'Learn how to validate the Microsoft 365 Business app protection settings in your Android or iOS devices.  '
-ms.openlocfilehash: 300f59e81a93cc3dfc03fd1d98891be1ac4f7795
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 5ab16d481bd11ec31a1387a7e94d8b08bb3e0abe
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287205"
 ---
-# <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>驗證 Android 或 iOS 裝置上的應用程式保護設定
+# <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>驗證 Android 或 iOS 裝置上的 app 保護設定
 
-遵循在索引標籤中的指示來驗證 Android 或 iOS 裝置上的應用程式保護設定。
+請依照下列索引標籤中的指示來驗證 Android 或 iOS 裝置上的 app 保護設定。
   
 ## <a name="androidtab"></a>[Android](#tab/)
   
@@ -35,15 +38,15 @@ ms.locfileid: "26866697"
   
 首先，確認原則已套用到您要驗證的 App。
   
-1. 在 Microsoft 365 商務[系統管理中心](https://portal.office.com)移至 [**原則** \> **編輯原則**。
+1. 在 Microsoft 365 商務版[系統管理中心](https://portal.office.com)前往**原則** \> **編輯原則**。
     
-2. 您在安裝程式，建立的設定或其他原則建立，並確認該就會強制執行 outlook 例如選擇**for Android 應用程式原則**。 
+2. 對於您建立安裝程式，在設定] 或 [另一個原則，您建立，並確認它強制執行該 outlook，例如，選擇 [ **Android 版的應用程式原則**。 
     
     ![Shows all the apps for which this policy protects files.](media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
   
 ### <a name="validate-require-a-pin-or-a-fingerprint-to-access-office-apps"></a>檢查 [需要 PIN 或指紋才能存取 Office App] 設定
 
-在 [**編輯原則**] 窗格中選擇 [ **Office 文件存取控制**] 旁的 [**編輯**、 依序展開 [**管理使用者如何存取行動裝置上的 Office 檔案**，並確定**需要 PIN 或指紋來存取 Office 應用程式**會設定若要**在**。
+在 [**編輯原則**] 窗格中，選擇旁的 [**編輯** **Office 文件存取控制**，依序展開 [**管理使用者如何存取行動裝置上的 Office 檔案**，並確定，設定**需要 PIN 或指紋才能存取 Office app**若要**在上**。
   
 ![Make sure that the Require a PIN or fingerprint to acces Office apps is set to On.](media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
@@ -55,19 +58,19 @@ ms.locfileid: "26866697"
   
 ### <a name="validate-reset-pin-after-number-of-failed-attempts"></a>驗證 [嘗試失敗幾次之後重設 PIN ] 設定
 
-在**編輯原則**] 窗格中，選擇 [ **Office 文件存取控制**] 旁的 [**編輯**、 依序展開 [**管理使用者如何存取行動裝置上的 Office 檔案**，並確認**重設 PIN 之後的失敗的嘗試**設為部分number-此為預設的 5。 
+在 [**編輯原則**] 窗格中，選擇旁的 [**編輯** **Office 文件存取控制**，依序展開 [**管理使用者如何存取行動裝置上的 Office 檔案**，並確定，**重設 PIN 的天數之後失敗的嘗試**設為部分number-這是預設值為 5。 
   
 1. 在使用者的 Android 裝置中，開啟 Outlook 並以使用者的 Microsoft 365 商務版認證登入。
     
-2. 輸入不正確的 pin 碼原則所指定的次數。您會看到提示表示**PIN 嘗試限制達到**重設 pin 碼。 
+2. 根據原則指定的次數重複輸入不正確的 PIN。 您會看到提示，指出**已達到 PIN 嘗試限制**重設 pin 碼。 
     
     ![After too many incorrect PIN attempts, you need to reset your PIN.](media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
   
-3. 按下**重設 pin 碼**。您可以使用使用者的 Microsoft 365 商務認證，登入系統提示以及才能設定新的 PIN。
+3. 按下 [**重設 pin 碼**]。 系統會提示您以使用者的 Microsoft 365 商務版認證登入，並要求您設定新的 PIN。
     
 ### <a name="validate-force-users-to-save-all-work-files-to-onedrive-for-business"></a>驗證 [強制使用者將所有工作檔案儲存到商務用 OneDrive] 設定
 
-在**編輯原則**] 窗格中，選擇**是否針對遺失或竊裝置提供保護**] 旁的 [**編輯**、 依序展開 [**保護工作檔案遺失或竊裝置的時機**、 並確認該**強制使用者將所有工作檔案都儲存至 OneDrive for商務**設為**上**。
+在 [**編輯原則**] 窗格中，選擇旁的 [**編輯****防範遺失或遭竊的裝置**、 展開**裝置遺失或遭竊時保護工作檔案**，並確定該**強制使用者將所有工作檔案都儲存到 OneDrive商務**設為**上**。
   
 ![Verify that Force users to save all work files to OneDrive for Business is set to On.](media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
@@ -77,7 +80,7 @@ ms.locfileid: "26866697"
     
     ![Tap the down arrow next to an attachment to try to save it.](media/b22573bb-91ce-455f-84fa-8feb2846b117.png)
   
-    您會看到**裝置無法儲存**在螢幕底部。 
+    您會看到**無法儲存到裝置**上螢幕底部。 
     
     ![Warning text that indicates cannot save a file locally to an Android.](media/52ca3f3d-7ed0-4a52-9621-4872da6ea9c5.png)
   
@@ -86,7 +89,7 @@ ms.locfileid: "26866697"
   
 ### <a name="validate-require-user-to-sign-in-again-if-office-apps-have-been-idle-for-a-specified-time"></a>驗證 [Office App 閒置這段時間之後要求使用者重新登入] 設定
 
-在**編輯原則**] 窗格中，選擇 [ **Office 文件存取控制**] 旁的 [**編輯**、 展開 [**管理使用者如何存取行動裝置上的 Office 檔案**，並確認要求使用者在 Office 應用程式已閒置時間後，一次登入該**針對**設至部分的分鐘數-這是預設為 30 分鐘。 
+在 [**編輯原則**] 窗格中，選擇旁的 [**編輯** **Office 文件存取控制**，依序展開 [**管理使用者如何存取行動裝置上的 Office 檔案**，並確定要求使用者重新登入之後 Office app 閒置該**針對**設至部分的分鐘數-這是預設的 30 分鐘。 
   
 1. 在使用者的 Android 裝置中，開啟 Outlook 並以使用者的 Microsoft 365 商務版認證登入及輸入 PIN (如果系統要求的話)。
     
@@ -98,7 +101,7 @@ ms.locfileid: "26866697"
     
 ### <a name="validate-protect-work-files-with-encryption"></a>驗證 [使用加密保護工作檔案] 設定
 
-在**編輯原則**] 窗格中，選擇**針對遺失或竊裝置提供保護**] 旁的 [**編輯**、 **Protect 工作檔案遺失或竊裝置的時機**，依序展開 [並確認**運作加密檔案的保護**設為 **]**，**強制使用者儲存至 OneDrive for Business 的所有工作檔案**設為**關閉**。
+在 [**編輯原則**] 窗格中，選擇旁的 [**編輯****防範遺失或遭竊的裝置**、 展開**裝置遺失或遭竊時保護工作檔案**，並確定**保護工作檔案加密**設定為 [ **]**，並且**強制使用者將儲存到商務用 OneDrive 的所有工作檔案**設為**關閉**。
   
 1. 在使用者的 Android 裝置中，開啟 Outlook 並以使用者的 Microsoft 365 商務版認證登入及輸入 PIN (如果系統要求的話)。
     
@@ -108,9 +111,9 @@ ms.locfileid: "26866697"
     
     ![Tap the down arrow to save the figure file to the Android device.](media/08a9e21e-4022-45d5-acff-59cface651e7.png)
   
-4. 系統可能會提示您允許存取相片、 媒體及檔案在裝置上的 Outlook。點選 [**允許**]。
+4. 系統可能會提示您允許 Outlook 存取裝置上的相片、媒體和檔案。 點選 [**允許**]。
     
-5. 螢幕底部選擇**儲存裝置**，然後開啟 [**圖庫**應用程式。 
+5. 在畫面底端，選擇 [儲存**至裝置**，然後再開啟 [**圖片庫**] app。 
     
 6. 您應該會在清單中看到一張經過加密的相片 (或數張相片，如果您儲存了多個影像檔案附件的話)。這張相片可能會在 [圖片] 清單中顯示為灰色的方形，中央有以白色圓圈包住的白色驚嘆號。
     
@@ -124,15 +127,15 @@ ms.locfileid: "26866697"
   
 首先，確認原則已套用到您要驗證的 App。
   
-1. 在 Microsoft 365 商務[系統管理中心](https://portal.office.com)，移至 [**原則** \> **編輯原則**。
+1. 在 Microsoft 365 商務版[系統管理中心](https://portal.office.com)中，移至 [**原則** \> **編輯原則**。
     
-2. 您在安裝程式，建立的設定或其他原則建立，並確認該就會強制執行 outlook 例如選擇**iOS 的應用程式原則**。 
+2. 對於您建立安裝程式，在設定] 或 [另一個原則，您建立，並確認它強制執行該 outlook，例如，選擇 [ **iOS 版的應用程式原則**。 
     
     ![Shows all the apps for which this policy protects files.](media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
   
 ### <a name="validate-require-a-pin-to-access-office-apps"></a>驗證 [設定需要 PIN 才能存取 Office App] 設定
 
-在 [**編輯原則**] 窗格中選擇 [ **Office 文件存取控制**] 旁的 [**編輯**、 依序展開 [**管理使用者如何存取行動裝置上的 Office 檔案**，並確定**需要 PIN 或指紋來存取 Office 應用程式**會設定若要**在**。
+在 [**編輯原則**] 窗格中，選擇旁的 [**編輯** **Office 文件存取控制**，依序展開 [**管理使用者如何存取行動裝置上的 Office 檔案**，並確定，設定**需要 PIN 或指紋才能存取 Office app**若要**在上**。
   
 ![Make sure that the Require a PIN or fingerprint to acces Office apps is set to On.](media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
@@ -144,35 +147,35 @@ ms.locfileid: "26866697"
   
 ### <a name="validate-reset-pin-after-number-of-failed-attempts"></a>驗證 [嘗試失敗幾次之後重設 PIN ] 設定
 
-在**編輯原則**] 窗格中，選擇 [ **Office 文件存取控制**] 旁的 [**編輯**、 依序展開 [**管理使用者如何存取行動裝置上的 Office 檔案**，並確認**重設 PIN 之後的失敗的嘗試**設為部分number-此為預設的 5。 
+在 [**編輯原則**] 窗格中，選擇旁的 [**編輯** **Office 文件存取控制**，依序展開 [**管理使用者如何存取行動裝置上的 Office 檔案**，並確定，**重設 PIN 的天數之後失敗的嘗試**設為部分number-這是預設值為 5。 
   
 1. 在使用者的 iOS 裝置中，開啟 Outlook 並以使用者的 Microsoft 365 商務版認證登入。
     
-2. 輸入不正確的 pin 碼原則所指定的次數。您會看到提示表示**PIN 嘗試限制達到**重設 pin 碼。 
+2. 根據原則指定的次數重複輸入不正確的 PIN。 您會看到提示，指出**已達到 PIN 嘗試限制**重設 pin 碼。 
     
     ![After too many incorrect PIN attempts, you need to reset your PIN.](media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
   
-3. 按 **[確定]**。您可以使用使用者的 Microsoft 365 商務認證，登入系統提示以及才能設定新的 PIN。
+3. 按 **[確定]**。 系統會提示您以使用者的 Microsoft 365 商務版認證登入，並要求您設定新的 PIN。
     
 ### <a name="validate-force-users-to-save-all-work-files-to-onedrive-for-business"></a>驗證 [強制使用者將所有工作檔案儲存到商務用 OneDrive] 設定
 
-在**編輯原則**] 窗格中，選擇**是否針對遺失或竊裝置提供保護**] 旁的 [**編輯**、 依序展開 [**保護工作檔案遺失或竊裝置的時機**、 並確認該**強制使用者將所有工作檔案都儲存至 OneDrive for商務**設為**上**。
+在 [**編輯原則**] 窗格中，選擇旁的 [**編輯****防範遺失或遭竊的裝置**、 展開**裝置遺失或遭竊時保護工作檔案**，並確定該**強制使用者將所有工作檔案都儲存到 OneDrive商務**設為**上**。
   
 ![Verify that Force users to save all work files to OneDrive for Business is set to On.](media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
 1. 在使用者的 iOS 裝置中，開啟 Outlook 並以使用者的 Microsoft 365 商務版認證登入及輸入 PIN (如果系統要求的話)。
     
-2. 開啟包含附件的電子郵件、 開啟附件並選擇 [螢幕底部的 [**儲存**。 
+2. 開啟包含附件的電子郵件、 開啟附件，並選擇畫面底部的 [**儲存**。 
     
     ![Tap the Save option after you open an attachment to try to save it.](media/b419b070-1530-4f14-86a8-8d89933a2b25.png)
   
-3. 您只應該 OneDrive for Business 的會看到一個選項。如果不如果沒，點選 [**新增帳戶**並從 [**新增存放裝置帳戶**] 畫面中選取**OneDrive for Business** 。提供使用者的 Microsoft 365 商務系統提示時登入。 
+3. 您應該只會看到一個適用於商務用 OneDrive 的選項。 如果不沒有，請點選 [**新增帳戶**，並從 [**新增儲存體帳戶**] 畫面中選取 [**商務用 OneDrive** 。 在系統提示時提供使用者的 Microsoft 365 商務版以登入。 
     
-    點選 [**儲存**] 並選取 [ **OneDrive for Business**。
+    點選 [**儲存**]，然後選取 [**商務用 OneDrive**。
     
 ### <a name="validate-require-user-to-sign-in-again-if-office-apps-have-been-idle-for-a-specified-time"></a>驗證 [Office App 閒置這段時間之後要求使用者重新登入] 設定
 
-在**編輯原則**] 窗格中，選擇 [ **Office 文件存取控制**] 旁的 [**編輯**、 展開 [**管理使用者如何存取行動裝置上的 Office 檔案**，並確認要求使用者在 Office 應用程式已閒置時間後，一次登入該**針對**設至部分的分鐘數-這是預設為 30 分鐘。 
+在 [**編輯原則**] 窗格中，選擇旁的 [**編輯** **Office 文件存取控制**，依序展開 [**管理使用者如何存取行動裝置上的 Office 檔案**，並確定要求使用者重新登入之後 Office app 閒置該**針對**設至部分的分鐘數-這是預設的 30 分鐘。 
   
 1. 在使用者的 iOS 裝置中，開啟 Outlook 並以使用者的 Microsoft 365 商務版認證登入及輸入 PIN (如果系統要求的話)。
     
@@ -184,15 +187,15 @@ ms.locfileid: "26866697"
     
 ### <a name="validate-protect-work-files-with-encryption"></a>驗證 [使用加密保護工作檔案] 設定
 
-在**編輯原則**] 窗格中，選擇**針對遺失或竊裝置提供保護**] 旁的 [**編輯**、 **Protect 工作檔案遺失或竊裝置的時機**，依序展開 [並確認**運作加密檔案的保護**設為 **]**，**強制使用者儲存至 OneDrive for Business 的所有工作檔案**設為**關閉**。
+在 [**編輯原則**] 窗格中，選擇旁的 [**編輯****防範遺失或遭竊的裝置**、 展開**裝置遺失或遭竊時保護工作檔案**，並確定**保護工作檔案加密**設定為 [ **]**，並且**強制使用者將儲存到商務用 OneDrive 的所有工作檔案**設為**關閉**。
   
 1. 在使用者的 iOS 裝置中，開啟 Outlook 並以使用者的 Microsoft 365 商務版認證登入及輸入 PIN (如果系統要求的話)。
     
 2. 開啟包含幾個影像檔案附件的電子郵件。
     
-3. 點選 [附件，然後點選 [其下的 [**儲存**] 選項。 
+3. 點選附件，然後點選 [**儲存**] 選項。 
     
-4. 從主畫面開啟**相片**應用程式。您應該會看到加密的相片 （或更久，如果您儲存多個圖像的檔案附件） 儲存，但加密。 
+4. 從主畫面開啟**相片**」 app。 您應該會看到一張經過加密的相片被儲存 (或數張相片，如果您儲存多個影像檔案附件的話)。 
     
 ---
 

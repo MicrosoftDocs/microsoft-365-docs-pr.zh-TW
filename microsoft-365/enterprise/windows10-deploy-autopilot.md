@@ -1,40 +1,41 @@
 ---
-title: 部署 Windows 10 Enterprise 與 Windows 自動駕駛儀上的新裝置
-description: 設定及部署 Windows 自動駕駛儀上 Windows 10 Enterprise 提供指導。
-keywords: Microsoft 365、 Microsoft 365 企業版、 Microsoft 365 文件、 Windows 10 Enterprise、 部署、 Windows 自動駕駛儀上
+title: 新裝置透過 Windows Autopilot 部署 Windows 10 企業版
+description: 針對設定及部署 Windows 10 企業版與 Windows Autopilot 提供指導。
+keywords: Microsoft 365，Microsoft 365 企業版，Microsoft 365 文件、 Windows 10 企業版部署，Windows Autopilot
 author: greg-lindsay
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: ed3d21091acd5b54dfdc2917fca85ed0535c3332
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: f173bd2357d445b502a4b28b60399d5cdb087cd0
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289253"
 ---
-# <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>步驟 3： 部署 Windows 10 Enterprise 與 Windows 自動駕駛儀上的新裝置
+# <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>步驟 3： 為新的裝置，透過 Windows Autopilot 部署 Windows 10 企業版
 
-*本文適用於 Microsoft 365 企業版的 E3 和 E5 版本*
+*本文適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-如果您有新的 Windows 10 pc 後，您可以使用 Windows 自動駕駛儀上以您的組織自訂 （英文）--方塊-經驗 (OOBE) 及部署新的系統與應用程式及已設定的設定。有沒有圖像部署、 插入、 無驅動程式及管理沒有基礎結構。使用者可以前往部署程序透過單獨，而且不需要查閱其 IT 系統管理員。
+如果您有新的 Windows 10 電腦，您可以使用 Windows Autopilot 自訂您的組織外的-全新體驗 (OOBE) 及部署新的系統應用程式與已設定的設定。 有任何影像部署、 要插入，沒有驅動程式及任何基礎結構，以管理。 使用者可以移到部署程序獨立，而不需要連絡其 IT 管理員。
 
-您可以設定和前設定新的 Windows 10 裝置並且讓使用者準備好供使用 Windows 自動駕駛儀上的生產力使用。若要深入了解 Windows 自動駕駛，包括的好處及 Windows 自動駕駛儀上的情況下，請參閱[概觀 （英文） 的 Windows 自動駕駛儀](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot)。準備好時, 遵循這些組件以啟動新的裝置設定。
+您可以設定和預先設定新的 Windows 10 裝置，並且讓使用者準備好使用 Windows Autopilot 的產能使用。 若要深入了解 Windows Autopilot，包括優點和 Windows Autopilot 案例，請參閱 < <b0>Windows Autopilot 概觀</b0>。 準備好時，請遵循這些組件，以啟動新的裝置設定。
 
-## <a name="part-1-start-windows-autopilot-deployment"></a>第 1 部分： 啟動 Windows 自動駕駛儀上部署
-請參閱 ＜ [Overview of Windows 自動駕駛儀上](https://docs.microsoft.com/windows/deployment/windows-Autopilot/windows-10-Autopilot)至：
+## <a name="part-1-start-windows-autopilot-deployment"></a>第 1 部分： 開始 Windows Autopilot 部署
+請參閱 < <b0>Overview of Windows Autopilot</b0>來：
 
-1. 了解並完成 Windows 自動駕駛儀上部署的必要條件。必要條件包括：
+1. 了解並完成 Windows Autopilot 部署的必要條件。 必要條件包括：
     - **裝置註冊和 OOBE 自訂**
 
-        若要註冊裝置，您需要要取得其硬體識別碼並將其登錄。我們主動使用各種硬體廠商啟用它們所需的資訊提供給您，或將其上傳代替您撥打電話。您也可以選擇來擷取此資訊由自行使用 PowerShell 指令碼所產生.csv 檔案與裝置的硬體識別碼。
+        若要註冊裝置，您必須取得其硬體識別碼，並將其登錄。 我們目前正在使用各種硬體廠商，以讓他們所需的資訊提供給您，或將其代替您上傳。 您也可以選擇使用 PowerShell 指令碼，就會產生.csv 檔案具有裝置的硬體識別碼自行擷取這項資訊
 
-        一旦登錄裝置，有您可以設定包括略過隱私權設定和 EULA OOBE 自訂選項。
+        一旦註冊裝置，有 OOBE 自訂選項，您可以設定包括略過的隱私權設定與使用者授權合約。
 
     - **OOBE 公司品牌推廣**
 
@@ -42,68 +43,68 @@ ms.locfileid: "26866369"
 
     - **Microsoft Intune 中的 MDM 自動註冊**
         
-        自動註冊讓使用者可以註冊 Intune 在其 Windows 10 裝置的裝置管理其裝置連線至 Azure AD 時。若要註冊，使用者將其工時帳戶新增至其個人擁有的裝置或公司擁有裝置加入 Azure AD。在背景中之裝置也被註冊 intune 的管理。
+        自動註冊可讓他們的裝置連線到 Azure AD 註冊裝置管理其 Windows 10 裝置在 Intune 中的使用者。 若要註冊，使用者將其公司帳戶新增至其個人擁有的裝置，或公司擁有裝置加入 Azure AD。 在背景，也是使用 Intune 管理註冊裝置。
 
     - **Windows Autopilot 所用雲端服務的網路連線能力**
 
-        Windows 自動駕駛儀上部署程式使用數目雲端服務來取得您的裝置提高工作效率的狀態和這些服務都必須是從登錄為 Windows 自動駕駛儀上裝置的裝置可存取。 
+        Windows Autopilot Deployment 方案使用，以取得您的裝置能夠生產力狀態的雲端服務的數字，這些服務必須能夠從登錄為 Windows Autopilot 裝置的裝置存取。 
 
     - **裝置必須與 Windows 10 (版本 1703 或更新版本) 一起預先安裝**
 
-2. 了解並選取 [Windows 自動駕駛儀上部署方案的組織。您可以從這些部署程式] 中選取：
+2. 了解，然後選取 [Windows Autopilot Deployment 方案，為您的組織。 您可以選取這些部署程式：
     - **商務用 Microsoft Store**
     - **Microsoft Intune**
-    - **協力廠商中心**
+    - **合作夥伴中心**
 
-## <a name="part-2-set-up-a-windows-10-device-for-microsoft-365"></a>第 2 部分： 設定 Windows 10 裝置 Microsoft 365
-您可以設定為 Microsoft 365 使用者的 Windows 裝置之前，請確定所有的 Windows 裝置執行 Windows 10、 版本 1703 （建立者更新） 或更新版本。
+## <a name="part-2-set-up-a-windows-10-device-for-microsoft-365"></a>第 2 部分： 設定 Windows 10 裝置適用於 Microsoft 365
+您可以設定為 Microsoft 365 使用者的 Windows 裝置之前，請確定所有 Windows 裝置皆都執行 Windows 10，版本 1703 (Creators Update) 或更新版本。
 
-在組織中的所有 Windows 裝置也都已升級至 Windows 10 建立者 Update 或已在執行 Windows 10 建立者更新之後，您可以加入貴組織的 Azure Active Directory 來這些裝置。
+組織中的所有 Windows 裝置可以都已升級至 Windows 10 Creators Update，或已在執行 Windows 10 Creators Update 之後，您可以將這些裝置加入貴組織的 Azure Active Directory。
 
-### <a name="set-up-a-brand-new-or-newly-upgraded-windows-10-device"></a>設定全新或新升級 Windows 10 裝置
-請遵循下列步驟來設定使用 Windows 10 OOBE 上執行 Windows 10 建立者更新全新裝置的裝置 （或更新版本） 或裝置上的已升級至 Windows 10 建立者 Update （含） 以後但未經過現成可用的安裝程式。
+### <a name="set-up-a-brand-new-or-newly-upgraded-windows-10-device"></a>設定全新或新升級的 Windows 10 裝置
+請遵循下列步驟來設定在執行 Windows 10 Creators Update 的全新裝置上使用 Windows 10 OOBE 裝置 （或更新版本） 或已升級到 Windows 10 Creators Update （或更新版本），但未經過現成可用的安裝程式在裝置上。
 
-1. 如果您沒有無線網路設定，請務必裝置連線到網際網路透過有線或乙太網路連線。
-2. 通過 Windows 裝置安裝經驗。在新的或重設裝置上的安裝程式經驗開頭**讓我們開始與地區。是此權限吗？** 螢幕。
-3. 移到 Windows 10 裝置安裝程式直到到達**如何您想要設定？** ] 頁面。以下，選取 [**組織設定**。
-4. 使用 Microsoft 365 使用者帳戶和密碼登入。根據使用者密碼設定，可能會提示您更新密碼。 
+1. 如果您沒有設定無線網路，請確定將裝置連接到網際網路，透過有線或乙太網路連線。
+2. 經過 Windows 裝置安裝體驗。 在新的或重設裝置上，安裝程式體驗開頭為**讓我們開始與地區。是此權限？** 螢幕。
+3. 移到 Windows 10 裝置設定，直到到達**您要如何設定？** ] 頁面。 在這裡，選取 [**組織設定**。
+4. 使用 Microsoft 365 使用者帳戶和密碼登入。 根據使用者密碼設定，可能會提示您更新密碼。 
 5. 完成 Windows 10 裝置設定。
 
-完成後，裝置將連線至您的組織 Azure AD。
+完成後，裝置將已連接到貴組織的 Azure AD。
 
-### <a name="set-up-a-device-that-has-already-completed-out-of-box-setup"></a>設定已經完成現成可用的安裝程式的裝置
-如果您的裝置有 10 建立者的 Windows 更新 （或更新版本），且尚未經過現成可用的安裝程式，請遵循下列步驟。
+### <a name="set-up-a-device-that-has-already-completed-out-of-box-setup"></a>設定已完成的全新安裝的裝置
+如果您的裝置有 Windows 10 Creators Update （或更新版本），且已經過的現成可用的安裝，請遵循下列步驟。
 
-1. 執行 Windows 10、 版本 1703 （建立者更新） 的使用者之 Windows 電腦選取**Windows**標誌，，然後選取 [**設定**] 圖示。
-2. 在 [**設定**] 中，移至**的帳戶**。
-3. 在 [**您的資訊**] 頁面上選取 [**存取工作或學校** > **連線**。
-4. 在 [**工時] 或 [學校帳戶設定**] 對話方塊的 [**其他動作**] 下選取 [**加入至 Azure Active Directory 此裝置**。
-5. 在**我們要取得您登入**] 頁面上輸入您的工作或學校帳戶，然後選取 [**下一步]**。
-6. 在 [**輸入密碼**] 頁面上輸入您的密碼，然後選取 [**登入**。
-7. **確保這是您的組織**] 索引標籤上確認資訊正確無誤，然後選取 [**加入**。
-8. 在**你全都設 ！** ] 頁面上，選取 [**完成**]。
+1. 在使用者的 Windows 電腦是執行 Windows 10，版本 1703 (Creators Update)，選取 [ **Windows**標誌，，然後選取 [**設定**] 圖示。
+2. 在 [**設定**] 中，移至 [**帳戶**。
+3. 在**您的資訊]** 頁面上，選取 [**存取公司或學校** > **連線**。
+4. 在 [**設定公司或學校帳戶**] 對話方塊中，[**其他動作**] 底下選取 [**加入至 Azure Active Directory 此裝置**]。
+5. 在 [**讓我們協助您登入**] 頁面上，輸入您的工作或學校帳戶]，然後選取 [**下一步]**。
+6. 在 [**輸入密碼**] 頁面中，輸入您的密碼，然後選取 [**登入**。
+7. 在 [**確認這是您的組織**] 頁面上，確認資訊正確，然後選取 [**加入**。
+8. 在**一切就緒 ！** ] 頁面上，選取 [**完成**。
 
-完成後，使用者將連線至您的組織 Azure AD。
+完成後，就會連線到您組織的 Azure AD。
 
 ### <a name="verify-the-device-is-connected-to-azure-ad"></a>驗證裝置已連線到 Azure AD
-請遵循下列步驟來驗證與 Azure AD 的裝置的同步處理狀態並再啟動 [裝置上使用您的 Microsoft 365 帳戶。 
+遵循下列步驟來驗證與 Azure AD 裝置的同步處理狀態，然後啟動 [在裝置上使用 Microsoft 365 帳戶。 
 
 1. 開啟 [**設定**]。
-2. 在 [**存取工作或學校**] 頁面上選取 [**連接至<organization name>**] 區域中公開 [**資訊**] 以及 [**中斷連線**] 按鈕。
-3. 選取要取得您同步處理的狀態**資訊**。
-4. 在 [**同步處理狀態**] 頁面上選取 [取得最新的行動裝置管理原則到 PC**同步處理**]。
-5. 若要開始使用 Microsoft 365 帳戶，請移至 [Windows [**開始**] 按鈕、 目前的帳戶圖片上按一下滑鼠右鍵，然後選取**交換器**帳戶。
+2. 在 [**存取公司或學校資源**] 頁面上，選取 [**連接至<organization name>** 區域，以公開 [**資訊**] 以及 [**中斷連線**] 按鈕。
+3. 選取 [**資訊**]，以取得您同步處理狀態。
+4. 在 [**同步處理狀態**] 頁面上，選取**同步處理**以取得最新的行動裝置管理原則至電腦。
+5. 若要開始使用 Microsoft 365 帳戶，請移至 Windows [**開始**] 按鈕以滑鼠右鍵按一下您目前的帳戶圖片，然後選取 [**切換**帳戶。
 6. 使用您的組織電子郵件和密碼登入。
 
-如果您在企業環境中使用 Windows 10 時遇到問題，您可以查閱[的最常見的問題的最佳 Microsoft 技術支援人員解決方案](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions)。下列資源包含 KB 文章、 更新及文件庫文章。
+如果您遇到問題，在企業環境中使用 Windows 10 時，您可以請洽詢[上方的 Microsoft 支援服務解決方案的最常見的問題](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions)。 這些資源包括 KB 文章、 更新和文件庫文章。
 
-作為過渡期的檢查點，您可以看到此步驟的[允出準則](windows10-exit-criteria.md#crit-windows10-step3)。
+作為過渡期的檢查點，您可以看到對應至此步驟的[允出準則](windows10-exit-criteria.md#crit-windows10-step3)。
 
 ## <a name="next-step"></a>下一步
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [監視裝置狀況與規範](windows10-enable-windows-analytics.md) |
+|![](./media/stepnumbers/Step4.png)| [監控裝置健全狀況和合規性](windows10-enable-windows-analytics.md) |
 
 
 

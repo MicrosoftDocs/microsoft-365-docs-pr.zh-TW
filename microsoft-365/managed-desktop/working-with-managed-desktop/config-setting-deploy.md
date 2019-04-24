@@ -8,11 +8,11 @@ ms.localizationpriority: normal
 ms.date: 2/17/2019
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 4662373b926d07558ecedd05c9dfcf472ceb6357
-ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278414"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>部署及追蹤可設定-Microsoft 受管理的電腦
 

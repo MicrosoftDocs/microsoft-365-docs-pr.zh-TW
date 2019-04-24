@@ -4,13 +4,16 @@ ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4MobileData
 - BCSSetup4MobileData
 - BCS365_BCSSetup4MobileData
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -20,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
-description: '了解預設組態和新增保護使用者的個人的行動裝置上的公司資料的應用程式管理原則。 '
-ms.openlocfilehash: 3c5b16e6bff07e27422299f8051d7601a772238e
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: '了解預設組態，並新增應用程式管理原則來保護使用者的個人的行動裝置上公司資料。 '
+ms.openlocfilehash: 8c534723f8d7ef903612ab637484891b1e21166e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285278"
 ---
 # <a name="protect-work-files-on-devices"></a>保護裝置上的工作檔案
 

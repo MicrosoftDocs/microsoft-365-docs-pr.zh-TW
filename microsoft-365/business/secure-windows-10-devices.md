@@ -4,11 +4,14 @@ ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4WindowsConfig
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -18,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: '了解預設和安全 Windows 10 裝置的其他設定。 '
-ms.openlocfilehash: 0bdf6a56d880cb84f4a4f50550539d97c006ba49
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: '了解預設及其他設定，以保護 Windows 10 裝置。 '
+ms.openlocfilehash: 6f06936c2075710210ad9e29ee92905b3b49917a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278050"
 ---
 # <a name="secure-windows-10-devices"></a>保護 Windows 10 裝置
 
@@ -32,16 +35,16 @@ ms.locfileid: "26866677"
   
 ## <a name="settings-to-secure-windows-10-devices"></a>保護 Windows 10 裝置的設定
 
-根據預設**上**都所有設定。會提供下列設定：
+預設所有設定都是**上**。 下列為可用的設定：
   
 |||
 |:-----|:-----|
-|設定  <br/> |描述  <br/> |
+|設定  <br/> |說明  <br/> |
 |使用 Windows Defender 防毒軟體來協助保護電腦免於遭受病毒與其他威脅的侵害  <br/> |需要開啟 Windows Defender 防毒軟體，以保護電腦免於遭受連接至網際網路時的安全威脅。  <br/> |
 |協助保護電腦免於遭受 Microsoft Edge 中的網路安全威脅  <br/> |開啟 Microsoft Edge 中的設定，以協助保護使用者免受惡意網站與下載檔案的威脅。  <br/> |
 |閒置這段時間之後關閉裝置螢幕  <br/> |確保使用者閒置時，公司資料已受到保護。使用者可能會在咖啡館等公共場所工作，當使用者暫時離開或是分心時，他們的裝置就容易受到他人任意窺伺。此設定能讓您控制螢幕將於使用者閒置多久之後關閉。  <br/> |
-|允許使用者從 Microsoft Store 下載 App  <br/> |可讓使用者從下載及安裝的應用程式之 Microsoft 存放區。應用程式包含每個項目從遊樂場生產力工具]，讓我們保留**在**此設定，但您可以將它關閉的額外安全性。<br/> |
-|允許使用者存取 Cortana  <br/> |Cortana 可以是非常有用 ！她可以設定開啟或關閉您、 授與指示，並請確定您已對時間的約會 （英文），因此我們保留此**上**預設。<br/> |
+|允許使用者從 Microsoft Store 下載 App  <br/> |讓使用者從 Microsoft Store 下載並安裝 App。 應用程式包括所有項目從遊戲生產力工具]，讓我們保留**上**，此設定，但您可以將它關閉額外的安全性。  <br/> |
+|允許使用者存取 Cortana  <br/> |Cortana 非常實用！ 她可以開啟設定或關閉您，提供指示，並請確定您已在約會現場，因此我們將此**上**預設。  <br/> |
 |允許使用者接收來自 Microsoft 的 Windows 祕訣和廣告  <br/> |Windows 祕訣相當實用，並且能在新功能推出時引導使用者。  <br/> |
 |自動讓 Windows 10 裝置保持在最新狀態  <br/> |確保 Windows 10 裝置能自動收到最新的更新。  <br/> |
    

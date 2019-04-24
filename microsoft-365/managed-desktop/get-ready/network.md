@@ -1,57 +1,63 @@
 ---
-title: Microsoft 受管理的桌上型電腦的網路設定
+title: Microsoft 受管理電腦的網路組態
 description: ''
-keywords: Microsoft 受管理的桌上型電腦、 [Microsoft 365 服務、 文件
+keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 88f095706c82736d4c2ebc6a555aa3e384eeca09
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: f4cfaffe25638de80d23c3e681e50cbb544ca961
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289098"
 ---
-#  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 受管理的桌上型電腦的網路設定
+#  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的網路組態
 
 <!--Proxy config -->
 
 
-## <a name="proxy-configuration"></a>Proxy 設定
+## <a name="proxy-configuration"></a>Proxy 組態
 
-Microsoft 受管理的桌上型電腦是受雲端管理的服務。有一組 Microsoft 受管理的桌上型電腦服務需要能夠抵達的端點。當客戶設定 proxy 或防火牆時，他們只允許來自特定網域基於安全性考量的網路流量。本節列出需要所允許的端點。 
+Microsoft 受管理的電腦是雲端管理的服務。 有一群 Microsoft 受管理的電腦服務能夠連接時所需的端點。 此章節將列出需要允許 Microsoft 受管理的電腦服務的各種層面的端點。 
+
+客戶可以藉由傳送所有受信任的 Microsoft 365 的網路要求直接透過其防火牆/proxy、 略過驗證及所有其他的封包層級檢查或處理，以最佳化其網路。 這可減少延遲與周邊容量需求。 
+
+此外，若要最佳化 Microsoft 受管理電腦雲端式服務的效能，這些端點需要特別處理 [客戶用戶端瀏覽器和邊緣網路內的裝置。 這些裝置包括防火牆、 SSL 會自動換行和檢查、 封包檢查裝置，以及資料外洩防護系統。
 
 ### <a name="proxy-requirement"></a>Proxy 需求
 
-Proxy 或防火牆必須支援 TLS 1.2。否則，您可能必須停用通訊協定偵測。
+Proxy 或防火牆必須支援 TLS 1.2。 否則，客戶可能要停用通訊協定偵測。
 
-### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>允許端點-Microsoft 受管理的桌上型電腦的特定
+### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>允許端點-Microsoft 受管理電腦的特定
 
-設為 [允許] 清單中，讓 Microsoft 受管理的桌上型電腦裝置可以與 Microsoft 服務通訊這些 Url 需求。
+Microsoft 受管理的電腦使用 Azure 入口網站來裝載其 web 主控台。 下表中的下列 Url 必須在您的 proxy 和防火牆允許清單，讓 Microsoft 受管理的電腦裝置可與 Microsoft 服務通訊。  
 
-Microsoft 服務  | 在所需的 Url 允許] 清單 
+請注意，Microsoft 受管理的桌上型電腦下列 URL 會用於上客戶 API，我們的服務執行的任何項目。 客戶必須確定此 URL 會永遠可在其公司網路上存取。
+
+Microsoft 服務  | Url 上需要允許清單 
 --- | --- | ---
-取得說明 | \*。 support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>產品-mwaas-服務-customerapi.azurewebsites.net
-「快速助手」 | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*。 建立與 lync.com
+Microsoft 受管理的電腦 | prod-ag3 mwaas-服務 customerapi.azurewebsites.net
+取得說明 | \*。 support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-ag3 mwaas-服務 customerapi.azurewebsites.net
+「 快速助手 」 | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*。 lync.com
+Microsoft 支援及修復小幫手，office 365 | \*。 apibasic.diagnostics.office.com  <br>\*。 api.diagnostics.office.com
  
 
-### <a name="endpoints-allowed---other-microsoft-products"></a>允許端點-其他 Microsoft 產品
+### <a name="endpoints-allowed---other-microsoft-products"></a>允許-其他 Microsoft 產品的端點
 
-必須在 [允許] 清單中，讓 Microsoft 受管理的桌上型電腦裝置可以與 Microsoft 服務通訊的數個 Microsoft 產品中有 Url。若要查看每個產品的完整清單可使用的連結。 
+從數個 Microsoft 產品必須在允許的清單，讓 Microsoft 受管理的電腦裝置可以與彼此那些 Microsoft 服務有 Url。 若要查看每個產品的完整清單使用的連結。 
 
-Microsoft 服務 | 文件來源-上所需的 Url 允許] 清單
+Microsoft 服務 | 文件來源的 Url 上需要允許清單
 --- | ---
-Windows Update for Business (WUfB) | [Windows Update 商務防火牆及 proxy 需求](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
-傳遞最佳化 | [Windows Update proxy 需求](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update)
-商務用 Microsoft Store | [Microsoft 存放區允許清單](https://support.microsoft.com/help/2778122/using-authenticated-proxy-servers-together-with-windows-8)
-Office 365 | [Office 365 URL 和 IP 位址範圍](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)包括\*。 apibasic.diagnostics.office.com
-Azure Active Directory | [混合式身分識別所需的連接埠和通訊協定](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-ports)和[Active Directory 與 Active Directory 網域服務的連接埠需求](https://aka.ms/AA26ygm) 
+Windows 10 企業版包括商務用 Windows Update | [利用適用於 Windows 10，版本 1803年管理連線端點](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[利用適用於 Windows 10，版本 1809年管理連線端點](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)
+傳遞最佳化 | [設定傳遞最佳化適用於 Windows 10 更新](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
+Office 365 | [Office 365 URL 和 IP 位址範圍](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Azure Active Directory | [混合式身分識別所需的連接埠和通訊協定](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)和[Active Directory 和 Active Directory 網域服務的連接埠需求](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune 網路組態需求](https://docs.microsoft.com/intune/network-bandwidth-use)
-商務用 OneDrive <br> | [所需的 Url 及 OneDrive 的連接埠](https://docs.microsoft.com/onedrive/required-urls-and-ports)
-Windows 防禦者進階威脅保護 (ATP) | [Windows 防禦者 ATP 端點](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection)
-SharePoint Online  | [Microsoft Teams](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#bkmk_teams)
-Power BI | [OneNote](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Windows Defender 進階威脅防護 (ATP) | [Windows Defender ATP 端點](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server
+)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

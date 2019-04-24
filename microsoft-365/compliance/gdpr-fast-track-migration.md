@@ -5,18 +5,18 @@ keywords: FastTrack 移轉、Microsoft 365 教育版、Microsoft 365 文件、GD
 author: MohitKumar
 localization_priority: Priority
 Robots: NOFOLLOW,NOINDEX
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: mohitku
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 9b129b7bbc1ffdcfa2dd4ac7bc0d70d09f3fb2a6
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: ae4c088ce16b2b415ffa79a6fadd3f1c2a0426c7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286800"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>提交刪除要求的 FASTTRACK 移轉工具組
 

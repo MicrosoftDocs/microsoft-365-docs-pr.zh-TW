@@ -1,5 +1,5 @@
 ---
-title: 保護企業文件執行 Microsoft Office 增益集-Microsoft 365 企業版 |Microsoft 文件
+title: 保護執行 Microsoft Office 增益集-Microsoft 365 企業版的企業文件 |Microsoft Docs
 description: 說明如何使用 WIP 和 Intune 來保護執行 Office 增益集的文件中的企業資料。
 author: barlanmsft
 manager: angrobe
@@ -10,11 +10,11 @@ ms.author: barlan
 ms.reviewer: jsnow
 ms.custom: it-pro
 ms.openlocfilehash: 6871f288a7e5849b147cbf0aedb056f84575f376
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290758"
 ---
 # <a name="use-wip-and-intune-to-protect-enterprise-data-in-documents-running-office-add-ins"></a>使用 WIP 和 Intune 來保護執行 Office 增益集之文件中的企業資料
 當組織中的使用者使用 Office 增益集與組織資料互動時，某些資料可能會有洩漏的風險。 當使用者執行 Office 增益集時，您可以使用 Windows 資訊保護 (WIP) 和 Microsoft Intune 來保護企業資料。
@@ -96,13 +96,13 @@ Word、Excel 和 PowerPoint 目前支援 iPad 版 Office 上的 Office 增益集
 
 >**<sup>*</sup>** 系統管理員可以使用 [Office 365 集中式部署](https://support.office.com/article/Deploy-Office-add-ins-in-the-Office-365-admin-center-737e8c86-be63-44d7-bf02-492fa7cd9c3f)，直接從 Office 365 系統管理中心或使用 PowerShell 指令碼，將 Word、Excel 和 PowerPoint 增益集部署至個別使用者、群組或組織。 當使用者在 Windows、Mac 或 Office Online 上開啟 Office 應用程式時，會自動在其功能區上安裝增益集。
 
-## <a name="summary"></a>[摘要]
+## <a name="summary"></a>摘要
 
 如有 Office 增益集的相關原則，WIP 和 Intune 就可讓系統管理員管理企業資料，並提供終端使用者完成其工作所需的工具。 這會導致企業資料可能會在組織外部洩漏。 Office JavaScript API 目前無法讓開發人員辨識在 Office 文件與增益集之間轉送的資料類型。 開發人員必須向使用者呈現多個提示，而且在某些情況下會錯誤地將個人檔案標示為企業檔案，這對使用者體驗可能會有負面影響，而且不符合資料保護原則。
 
 Microsoft 致力於保護客戶資料，並將繼續投入心力以改善 Intune 和 WIP 技術以及客戶體驗。
 
-## <a name="learn-more"></a>進一步了解
+## <a name="learn-more"></a>深入了解
 
 -   [關於 Windows 資訊保護 (WIP) 的一般指導方針與最佳做法](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/guidance-and-best-practices-wip)
 

@@ -1,146 +1,147 @@
 ---
-title: 現有裝置的 Windows 10 企業部署為就地升級
-description: 設定及部署使用 System Center Configuration Manager 就地升級為 Windows 10 Enterprise 映像提供指導。
-keywords: Microsoft 365、 Microsoft 365 企業版、 Microsoft 365 文件、 Windows 10 Enterprise、 部署、 使用就地升級、 Configuration Manager System Center Configuration Manager
+title: 將 Windows 10 企業版的現有裝置部署為就地升級
+description: 針對設定及部署使用 System Center Configuration Manager 進行就地升級為 Windows 10 企業版映像提供指導。
+keywords: Microsoft 365，Microsoft 365 企業版，Microsoft 365 文件、 Windows 10 企業版部署中，就地升級，Configuration Manager，System Center Configuration Manager
 author: greg-lindsay
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 3df76c0de7b5a8b12c063113c79f9efa4e33b4c1
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 31650774a784f1fe784c30b90bc1f9ae579b34fa
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291610"
 ---
-# <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>步驟 2： 部署現有裝置的就地升級為 Windows 10 Enterprise
+# <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>步驟 2： 以進行就地升級現有的裝置部署 Windows 10 企業版
 
-*本文適用於 Microsoft 365 企業版的 E3 和 E5 版本*
+*本文適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-升級 Pc 目前為 Windows 10 執行 Windows 7 或 Windows 8.1 最簡單的路徑是透過就地升級。您可以使用 System Center Configuration Manager (Configuration Manager) 工作順序完全自動化程序。 
+升級目前執行 Windows 7 或 Windows 8.1 到 Windows 10 電腦的最簡單路徑是透過使用就地升級。 您可以使用 System Center Configuration Manager (Configuration Manager) 工作順序完全自動化程序。 
 
-如果您有現有的電腦執行 Windows 7 或 Windows 8.1，建議此路徑如果您的組織已部署 Windows 10。這如何運用 Windows 安裝程式 (Setup.exe) 以執行就地升級，以自動會保留所有的資料、 設定、 應用程式，並從現有的作業系統版本的驅動程式。這需要最少的 IT 努力，因為不需要任何複雜部署基礎結構。
+如果您有現有的電腦執行 Windows 7 或 Windows 8.1，我們建議此路徑，如果您的組織正在部署 Windows 10。 這會運用 Windows 安裝程式 (Setup.exe) 以執行就地升級，自動會保留所有的資料、 設定、 應用程式，並從現有的作業系統版本的驅動程式。 這需要最少的 IT 努力，因為不需要任何複雜的部署基礎結構。
 
-請遵循下列步驟來設定並部署 Configuration Manager 使用就地升級為 Windows 10 Enterprise 圖像。
+請遵循下列步驟來設定並部署 Configuration Manager 使用就地升級為 Windows 10 企業版映像。
 
-## <a name="part-1-verify-readiness-to-upgrade-windows"></a>第 1 部分： 準備升級 [Windows 驗證
+## <a name="part-1-verify-readiness-to-upgrade-windows"></a>第 1 部分： 確認升級 Windows 的整備
 
-首先，使用 Windows 分析升級整備功能提供強大的見解與建議電腦、 應用程式以及驅動程式在您的組織在無需額外成本並沒有其他基礎結構需求。此新服務會引導您完成使用 Microsoft 建議的做法為基礎的工作流程的升級與功能的更新專案。最新的庫存資料可讓您以平衡成本與升級專案中的風險。
+首先，使用 Windows Analytics Upgrade Readiness 功能來提供功能強大的見解和電腦、 應用程式及驅動程式在您組織中，在不需建議額外成本和不具有其他基礎結構需求。 這項新服務會引導您完成使用 Microsoft 建議作法為基礎的工作流程的升級與功能更新專案。 最新的庫存資料可讓您以平衡成本與您升級的專案中的風險。
 
-請參閱 ＜[管理 Windows 升級以升級整備](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness)深入了解、 快速入門、 使用與疑難排解升級整備。
+若要了解更多、 開始、 使用及疑難排解升級整備狀況，請參閱[管理 Windows 升級以升級整備狀況](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness)。
 
-接下來，遵循指南 （英文） Windows 7 或更新版本的作業系統升級至 Windows 10 使用 System Center Configuration Manager （目前分公司）。就像任何高風險的部署，建議您備份再繼續進行的使用者資料。OneDrive 雲端儲存空間可供使用的授權的 Microsoft 365 使用者及可以用來安全地儲存其檔案。如需詳細資訊，請參閱[OneDrive 快速啟動指南 》](https://aka.ms/ODfBquickstartguide)。若要存取此頁面上，您必須租用戶系統管理員或 Office 365 或 Microsoft 365 租用戶中的全域管理員身分登入。
+接下來，遵循使用 System Center Configuration Manager （最新分支） 升級至 Windows 10 的 Windows 7 或更新版本的作業系統指南。 就像任何高風險的部署中，我們建議您備份使用者資料，再繼續執行。 OneDrive 雲端儲存空間已準備用於 Microsoft 365 的授權使用者，且可以用來安全地儲存其檔案。 如需詳細資訊，請參閱 < <b0>OneDrive 快速開始指南</b0>。 若要存取此頁面上，您必須是租用戶系統管理員或在 Office 365 或 Microsoft 365 租用戶的全域系統管理員登入。
 
-Configuration Manager 版本和支援的相對應 Windows 10 用戶端版本的清單，請參閱[支援的 Windows 10 的 System Center Configuration Manager](https://aka.ms/supportforwin10sccm)。
+Configuration Manager 版本及支援的相對應 Windows 10 用戶端版本清單，請參閱[支援適用於 Windows 10 的 System Center Configuration Manager](https://aka.ms/supportforwin10sccm)。
 
-**若要確認升級 Windows 整備**
+**若要確認升級 Windows 的整備**
 
-啟動 Windows 10 部署前檢閱這些需求：
+啟動 Windows 10 部署之前，請檢閱下列需求：
 
-- **適合的 Windows 版本升級**-您的裝置必須執行 Windows 7 或 Windows 8.1 的版本升級為 Windows 10 Enterprise 合格。如需支援版本的清單，請參閱[Windows 10 升級路徑](https://aka.ms/win10upgradepaths)。 
-- **支援的裝置**與 Windows 8.1 相容的大部分電腦會與 Windows 10 相容。您可能需要 Windows 10 更新發行的驅動程式安裝您的裝置正常運作。如需詳細資訊，請參閱[Windows 10 規格](https://aka.ms/windows10specifications)。
-- **部署準備**-請確定您有下列再開始設定部署：
-    - Windows 10 安裝媒體的安裝媒體必須位於與已經裝載 ISO 不同的磁碟機。您可以取得 ISO 從[MSDN 訂閱者下載](https://aka.ms/msdn-subscriber-downloads)或從[大量授權服務中心](https://aka.ms/mvlsc)。
-    - 使用者資料-備份雖然將的升級、 移轉使用者資料最佳做法是設定備份的案例。例如，將所有使用者資料都匯出至 OneDrive 帳戶、 移 BitLocker 加密 USB 快閃磁碟機或網路檔案伺服器。如需詳細資訊，請參閱[備份或傳輸 Windows 中的資料](https://aka.ms/backuptransferdatawindows)。
-- **環境準備**-您要用以作業系統部署準備現有的 Configuration Manager 伺服器結構。除了基底的安裝程式、 Configuration Manager 環境中可供下列設定：
-    1. [擴充 Active Directory 架構](https://aka.ms/extendadschema)和[建立管理系統容器](https://aka.ms/createsysmancontainer)。
-    2. 啟用 Active Directory 樹系搜索與 Active Directory 系統探索。如需詳細資訊，請參閱 ＜ [Configure 探索方法的 System Center Configuration Manager](https://aka.ms/configurediscoverymethods)。
-    3. 建立 IP 範圍限制與界限群組的內容與網站的工作分派。如需詳細資訊，請參閱[定義網站限制與界限群組的 System Center Configuration Manager](https://aka.ms/definesiteboundaries)。
-    4. 新增並設定 reporting services 點角色 Configuration Manager。如需詳細資訊，請參閱[設定報表的 Configuration Manager](https://aka.ms/configurereporting)。
+- **合格的 Windows 版本升級**對您的裝置必須執行 Windows 7 或 Windows 8.1 便符合資格，以升級到 Windows 10 企業版的版本。 如需支援的版本的清單，請參閱 < <b0>Windows 10 升級路徑</b0>。 
+- **支援的裝置**與 Windows 8.1 相容的大部分電腦將會與 Windows 10 相容。 您可能需要安裝更新的驅動程式在 Windows 10 中您的裝置正常運作。 如需詳細資訊，請參閱[Windows 10 規格](https://aka.ms/windows10specifications)。
+- **部署準備**-請確定您有下列，再開始設定部署：
+    - Windows 10 安裝媒體的安裝媒體必須位於不同的磁碟機，已裝載 iso。 從[MSDN 訂閱者下載](https://aka.ms/msdn-subscriber-downloads)或[大量授權服務中心](https://aka.ms/mvlsc)，您可以取得 ISO。
+    - 備份的使用者資料-使用者的資料會移轉升級，雖然最佳作法是設定備份的案例。 例如，將所有使用者資料都匯出至 OneDrive 帳戶、 移 BitLocker 加密 USB 快閃磁碟機或網路檔案伺服器。 如需詳細資訊，請參閱[備份 （或轉接） 在 Windows 中的資料](https://aka.ms/backuptransferdatawindows)。
+- **環境準備**-您將使用現有的 Configuration Manager 伺服器結構來準備部署作業系統。 基底的安裝程式，除了應該 Configuration Manager 部署環境中進行下列設定：
+    1. [擴充 Active Directory 架構](https://aka.ms/extendadschema)，並[建立的系統管理容器](https://aka.ms/createsysmancontainer)。
+    2. 啟用 Active Directory 樹系探索及 Active Directory 系統探索。 如需詳細資訊，請參閱 < <b0>Configure 探索方法的 System Center Configuration Manager</b0>。
+    3. 建立 IP 範圍界限和界限群組內容和網站的工作分派。 如需詳細資訊，請參閱[定義站台界限和界限群組的 System Center Configuration Manager](https://aka.ms/definesiteboundaries)。
+    4. 新增及設定 reporting services 點角色 Configuration Manager。 如需詳細資訊，請參閱[設定報告組態管理員] 中](https://aka.ms/configurereporting)。
     5. 建立套件檔案系統資料夾結構。
-    6. 建立套件的 Configuration Manager console] 資料夾結構。
-    7. 安裝 System Center Configuration Manager （目前分支） 更新及任何其他 Windows 10 必要條件。
+    6. 建立套件的 Configuration Manager 主控台資料夾結構。
+    7. 安裝 System Center Configuration Manager （最新分支） 更新及任何其他的 Windows 10 必要條件。
 
-## <a name="part-2-add-a-windows-10-os-image-using-configuration-manager"></a>第 2 部分： 新增使用 Configuration Manager Windows 10 作業系統映像
-現在您需要建立包含完整的 Windows 10 安裝媒體作業系統升級封裝。下列步驟，您將使用 Configuration Manager for Windows 10 Enterprise x64 建立升級的封裝。
+## <a name="part-2-add-a-windows-10-os-image-using-configuration-manager"></a>第 2 部分： 新增使用 Configuration Manager 的 Windows 10 OS 映像
+現在您需要建立包含完整的 Windows 10 安裝媒體作業系統升級封裝。 在下列步驟中，您將使用 Configuration Manager 來建立的 Windows 10 企業版 x64 升級的封裝。
 
-**若要新增使用 Configuration Manager Windows 10 作業系統映像**
+**若要新增使用 Configuration Manager Windows 10 OS 映像**
 
-1. 使用 [Configuration Manager console、**軟體文件庫**工作區中，[**作業系統升級封裝**] 節點上按一下滑鼠右鍵，然後選取 [**新增作業系統升級封裝**。
-2. 在 [**資料來源**] 頁面指定 Windows 10 Enterprise x64 媒體的 UNC 路徑，然後選取 [**下一步**。
-3. 在 [**一般**] 頁面上指定**Windows 10 Enterprise x64 升級**，然後再選取 [**下一步**。 
-4. 在 [**摘要**] 頁面上選取 [**下一步**，，然後選取 [**關閉**。 
-5. 以滑鼠右鍵按一下建立的**Windows 10 Enterprise x64 更新**封裝，然後再選取 [**發佈內容**。 
+1. 使用 Configuration Manager 主控台中，在**軟體程式庫**工作區中，以滑鼠右鍵按一下 [**作業系統升級封裝**] 節點，然後選取 [**新增作業系統升級封裝**。
+2. 在 [**資料來源**] 頁面上指定的 Windows 10 企業版 x64 媒體，UNC 路徑，然後選取 [**下一步**。
+3. 在 [**一般**] 頁面上，指定**Windows 10 企業版 x64 升級**，，然後選取 [**下一步**。 
+4. 在 [**摘要**] 頁面上，選取 [**下一步**，，然後選取 [**關閉**。 
+5. 建立的**Windows 10 企業版 x64 更新**套件，以滑鼠右鍵按一下，然後選取 [**發佈內容**。 
 6. 選擇您的發佈點。
 
-## <a name="part-3-configure-deployment-settings"></a>第 3 部分： 部署設定
-在此步驟中，您將設定包含設定 Windows 10 升級的升級工作順序。您將然後找出要升級的裝置，然後將那些裝置的部署工作順序。
+## <a name="part-3-configure-deployment-settings"></a>第 3 部分： 設定部署設定
+在此步驟中，您會設定包含設定 Windows 10 升級的升級工作順序。 您將接著識別要升級，裝置，然後再部署至那些裝置的 [工作順序。
 
 ### <a name="create-a-task-sequence"></a>建立工作順序
 若要建立升級工作順序，請執行下列步驟：
   
-1. 在 [Configuration Manager console、**軟體文件庫**工作區中展開 [**作業系統**。 
-2. 以滑鼠右鍵按一下 [**工作順序**] 節點，然後選取 [**建立工作順序**。
-3. 在 [**建立新的工作順序**] 頁面上選取 [**升級作業系統升級的封裝**、，，然後選取 [**下一步**。
-4. **工作順序資訊**] 頁面上指定**Windows 10 Enterprise x64 升級**，然後再選取 [**下一步**。
-5. 在**Windows 作業系統升級**] 頁面上選取 [**瀏覽**和選擇**Windows 10 Enterprise x64 升級作業系統升級封裝**、 選取 **[確定**]，然後選取**下一步**。
+1. 在 Configuration Manager 主控台中，在**軟體程式庫**工作區中，依序展開 [**作業系統**。 
+2. 以滑鼠右鍵按一下 [ **Task Sequences** ] 節點，然後選取 [**建立工作順序**。
+3. 在 [**建立新的工作順序**] 頁面上選取 [**升級作業系統升級的封裝**，，然後選取 [**下一步**。
+4. 在 [ **Task Sequence 資訊**] 頁面上，指定**Windows 10 企業版 x64 升級**，，然後選取 [**下一步**。
+5. 在**Windows 作業系統升級**] 頁面中，選取 [**瀏覽**選擇**Windows 10 企業版 x64 升級作業系統升級封裝**、 選取 **[確定]**，並再選取 [**下一步**。
 6. 繼續執行其餘的精靈頁面，然後再選取 [**關閉**。
 
 ### <a name="create-a-device-collection"></a>建立裝置集合
-建立升級工作順序之後，您需要建立包含您要升級之裝置的集合。
+您建立的升級工作順序之後，您需要建立包含您要升級之裝置的集合。
 
 > [!NOTE]
-> 使用下列設定以測試部署的單一裝置。您可以使用不同的成員資格規則當您準備好包含一組裝置。如需詳細資訊，請參閱 ＜[如何建立在 System Center Configuration Manager 的集合](https://aka.ms/sccm-create-collections)。
+> 以測試部署的單一裝置上使用下列設定值。 您可以使用不同的成員資格規則包含一組裝置，當您準備好。 如需詳細資訊，請參閱 <<c0>如何建立在 System Center Configuration Manager 的集合。
 
-1. 在 [Configuration Manager console、**資產和規範**工作區中用滑鼠右鍵按一下 [**裝置集合**，然後選取**建立裝置集合**。 
-2. 在建立裝置集合精靈] 的 [**一般**] 頁面上輸入下列設定值，然後選取 [**下一步**：
-    - 名稱： Windows 10 Enterprise x64 升級
-    - 限制集合： 的所有系統
-3. 在 [**成員資格規則**] 頁面上選取 [**新增規則** > **直接規則**以啟動 [建立直接成員資格規則精靈]。
-4. 在 [建立直接成員資格規則精靈]**歡迎**頁面中，選取 [**下一步**]。
-5. **搜尋的資源**] 索引標籤上輸入下列設定以您要升級之裝置的名稱取代預留位置文字**值**： 
+1. 在 Configuration Manager 主控台中，在**資產和合規性**工作區中，以滑鼠右鍵按一下 [**裝置集合**，，，然後選取 [**建立裝置集合**。 
+2. 在 [建立裝置集合精靈] 在 [**一般**] 頁面上輸入下列設定值，然後選取 [**下一步**：
+    - 名稱： Windows 10 企業版 x64 升級
+    - 限制的集合： 所有系統
+3. 在 [**成員資格的規則**] 頁面上，選取 [**新增規則** > **直接規則**，以啟動建立直接成員資格規則精靈]。
+4. 在 [建立直接成員資格規則精靈] 的 [**歡迎**] 頁面中，選取 [**下一步**]。
+5. 在 [**資源搜尋**] 頁面上，輸入下列設定值，以您正在升級裝置的名稱取代預留位置文字**值**： 
     - 資源類別： 系統資源
     - 屬性名稱： 名稱
     - 值： *PC0003*
-6. **選取 [資源**] 索引標籤上選取您的裝置，然後選取 [**下一步**。
-7. 完成 [建立直接成員資格規則精靈] 和 [建立裝置集合精靈]。  
-8. 檢閱 Windows 10 Enterprise x64 升級集合。請勿繼續直到您看到機器您加入集合中。
+6. 在**選取的資源**] 頁面上，選取您的裝置，然後選取 [**下一步**。
+7. 完成建立直接成員資格規則精靈 」 和 「 建立裝置集合精靈 」。  
+8. 檢閱 Windows 10 企業版 x64 升級集合。 不會繼續直到您看到機器加入集合中。
 
 ### <a name="create-an-operating-system-deployment"></a>建立作業系統部署
-請遵循下列步驟建立的部署工作順序。
+請遵循下列步驟來建立工作順序的部署。
 
-1. 在 [Configuration Manager console、**軟體文件庫**工作區中用滑鼠右鍵按一下您在上一個步驟中建立工作順序，然後選取**部署**。
-2. 在 [**一般**] 頁面上選取**Windows 10 Enterprise x64 升級**集合，然後再選取 [**下一步**。
-3. 在 [**內容**] 頁面上選取 [**下一步**]。
-4. 在 [**部署設定**] 頁面上選取下列設定，然後選取**下一個**：
+1. 在 Configuration Manager 主控台中，在**軟體程式庫**工作區中，以滑鼠右鍵按一下您在上一個步驟中建立工作順序，然後選取 [**部署**]。
+2. 在 [**一般**] 頁面上選取 [ **Windows 10 企業版 x64 升級**的集合，然後再選取 [**下一步**。
+3. 在 [**內容**] 頁面上，選取 [**下一步**]。
+4. 在**部署設定**] 頁面上，選取下列設定值，，然後選取 [**下一步**：
 
     > [!NOTE]
-    > 針對這個測試部署，您將會設為**有空**，需要使用者介入以啟動部署的用途。在實際執行環境中，您可能會想要自動化使用所需的用途，需要設定其他選項，例如排程執行部署時的部署。 
+    > 針對這個測試部署，您將設定目的 」，**可使用**，這需要使用者介入才能開始部署。 在實際執行環境中，您可能想要自動化使用所需的目的，包括設定其他選項，例如排程執行部署時的部署。 
 
     - 巨集指令： 安裝
     - 目的： 可用
 
-5. 在 [**排程**] 頁面上，接受預設設定，然後選取 [**下一步**。
-6. 在**使用者經驗**] 頁面上，接受預設設定，然後選取 [**下一步**。
-7. 在 [**提醒**] 頁面上，接受預設設定，然後選取 [**下一步**。
-8. 在 [**摘要**] 頁面上選取 [**下一步**，，然後選取 [**關閉**。
+5. 在 [**排程**] 頁面上，接受預設設定，，然後選取 [**下一步**。
+6. 在**使用者經驗**] 頁面上，接受預設設定，然後再選取 [**下一步**。
+7. 在 [**提醒**] 頁面上，接受預設設定，然後再選取 [**下一步**。
+8. 在 [**摘要**] 頁面上，選取 [**下一步**，，然後選取 [**關閉**。
 
-## <a name="part-5-start-the-windows-10-upgrade-task-sequence"></a>第 5 部分： Windows 10 開始升級工作順序
-請遵循下列步驟，在您要升級之裝置上啟動 Windows 10 升級工作順序。
+## <a name="part-5-start-the-windows-10-upgrade-task-sequence"></a>第 5 部分︰ 開始 Windows 10 的升級工作順序
+請遵循下列步驟，在您要升級的裝置上啟動 Windows 10 升級工作順序。
  
-1. 登入 Windows 電腦和啟動**軟體中心**。
+1. 登入 Windows 電腦並啟動**軟體中心**。
 2. 選取您在上一個步驟中建立工作順序，然後選取 [**安裝**。
-3. 當工作順序開始時，它自動會起始就地升級程序所叫用與所需的命令列參數來執行自動的升級會保留所有的資料、 設定、 應用程式，Windows 安裝程式 (Setup.exe) 和發行的驅動程式。
-4. 工作順序成功完成之後，電腦將完整升級為 Windows 10。
+3. 當工作順序開始時，自動啟動就地升級程序藉由叫用必要的命令列參數來執行自動的升級，會保留所有的資料、 設定、 應用程式，與 Windows 安裝程式 (Setup.exe) 及驅動程式。
+4. 工作順序成功完成之後，電腦會完全升級到 Windows 10。
 
-如果您在企業環境中使用 Windows 10 時遇到問題，您可以查閱[的最常見的問題的最佳 Microsoft 技術支援人員解決方案](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions)。下列資源包含 KB 文章、 更新及文件庫文章。
+如果您遇到問題，在企業環境中使用 Windows 10 時，您可以請洽詢[上方的 Microsoft 支援服務解決方案的最常見的問題](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions)。 這些資源包括 KB 文章、 更新和文件庫文章。
 
-更新整個組織的首度發行期間使用 Windows 分析更新規範的功能提供 OS 更新規範、 更新部署進度以及疑難排解 Windows 10 裝置失敗的整體檢視。此新服務使用包括安裝進度、 Windows Update 設定及其他資訊的診斷資料提供這類前瞻，在沒有額外成本並沒有其他基礎結構需求。是否搭配使用 Windows Update 商務或其他管理工具，您可以確保正確更新您的裝置。
+期間更新整個組織推出，使用 Windows Analytics 更新合規性功能，提供能夠全面檢視 OS 升級相容性、 更新部署進度以及疑難排解 Windows 10 裝置的失敗。 這項新服務使用診斷資料，包括安裝進度、 Windows Update 設定及其他資訊來提供無這類見解，額外成本和不具有其他基礎結構需求。 是否搭配使用 Windows Update 基於商業或其他管理工具，您可以確保正確更新您的裝置。
 
-請參閱[監視 Windows Update 及更新規範與 Windows 防禦者防毒深入了解、 開始，並使用更新規範。](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor)
+請參閱[監視 Windows 更新及升級相容性與 Windows Defender 防毒軟體了解更多、 要開始，並使用升級相容性。](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor)
 
-作為過渡期的檢查點，您可以看到此步驟的[允出準則](windows10-exit-criteria.md#crit-windows10-step2)。
+作為過渡期的檢查點，您可以看到對應至此步驟的[允出準則](windows10-exit-criteria.md#crit-windows10-step2)。
 
 ## <a name="next-step"></a>下一步
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [部署 Windows 10 Enterprise 與 Windows 自動駕駛儀上的新裝置](windows10-deploy-autopilot.md) |
+|![](./media/stepnumbers/Step3.png)| [新裝置透過 Windows Autopilot 部署 Windows 10 企業版](windows10-deploy-autopilot.md) |
 
 
 

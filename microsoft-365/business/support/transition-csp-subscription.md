@@ -10,11 +10,11 @@ audience: microsoft-business 
 keywords: Microsoft 365 商務版, Microsoft 365, SMB, 轉換雲端解決方案提供者訂閱
 ms.date: 11/01/2017
 ms.openlocfilehash: 8109c0b00f06a15c12bbccf89e7f49dc3fa4b34a
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286202"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>轉換 Microsoft 365 商務版雲端解決方案提供者訂閱
 
@@ -23,35 +23,35 @@ ms.locfileid: "26866220"
 **如何將預覽訂閱轉換至 GA**
 
 1. 登入<a href="https://partnercenter.microsoft.com" target="_blank">合作夥伴中心</a>。
-2. 從儀表板、 選取**客戶**，然後尋找並選取公司名稱。
+2. From the dashboard, select **Customers**, and then find and select the company name.
 
     將會列出該公司的訂閱。
 
     ![合作夥伴中心的客戶訂閱](images/pc_customer_subscriptions_1.png)
     
-3. 在公司的**訂閱**] 頁面上，選取 [**新增訂閱**。
-4. 在 [**新的訂閱**] 頁面上，選取**適用於小型企業**，然後從清單中選取 [ **Microsoft 365 商務**。
-5. 新增授權數目，然後選取 [**下一步： 檢閱**檢閱訂閱，然後選取 [**送出**。
+3. In the company's **Subscriptions** page, select **Add subscription**.
+4. In the **New subscription** page, select **Small business** and then select **Microsoft 365 Business** from the list.
+5. Add the number of licenses and then select **Next: Review** to review the subscription and then select **Submit**.
 
     ![檢視 Microsoft 365 商務版的新訂閱](images/pc_customer_reviewnewsubscription.png)
 
-    **授權型訂閱**會顯示**Microsoft 365 商務預覽**和**Microsoft 365 Business**。您將需要暫停預覽訂閱下一步]。
+    The **License-based subscriptions** will show **Microsoft 365 Business Preview** and **Microsoft 365 Business**. You'll need to suspend the Preview subscription next.
 
-6. 選取 [ **Microsoft 365 Business 預覽**]。
-7. 在**Microsoft 365 商務預覽**] 頁面上，選取要暫停的預覽訂閱**已擱置**。
+6. Select **Microsoft 365 Business Preview**.
+7. In the **Microsoft 365 Business Preview** page, select **Suspended** to suspend the Preview subscription.
 
     ![暫停 Microsoft 365 商務版預覽訂閱](images/pc_customer_m365bpreview_suspend.png)
 
-8. 選取 [**提交**] 以確認。
+8. Select **Submit** to confirm.
 
-    在 [**訂閱**] 頁面上，確認**Microsoft 365 商務預覽**狀態會顯示**已擱置**。
+    In the **Subscriptions** page, confirm that the **Microsoft 365 Business Preview** status shows **Suspended**.
 
     ![確認預覽訂閱狀態為已暫停](images/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. 或者，您也可以驗證授權合約。 若要這樣做，請執行下列步驟：
-    1. 從公司的**訂閱**] 頁面上選取**的使用者和授權**。
-    2. 從 [**使用者和授權**] 頁面上，選取使用者。
-    3. 在 [使用者] 頁面上，檢查 [**指派授權**] 區段中並加以確認它會顯示**Microsoft 365 Business**。
+    1. Select **Users and licenses** from the company's **Subscriptions** page.
+    2. From the **Users and licenses** page, select a user.
+    3. In the user's page, check the **Assign licenses** section and confirm that it shows **Microsoft 365 Business**.
 
         ![確認 Microsoft 365 商務版授權已指派給使用者](images/pc_customer_userslicenses_m365b_validate.png)
 

@@ -1,5 +1,5 @@
 ---
-title: 取得 Microsoft 365 商務版
+title: 從合作夥伴中心取得 Microsoft 365 商務版
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -7,7 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -17,19 +19,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: 了解如何購買 Microsoft 365 商務從 Microsoft 合作夥伴中心。
-ms.openlocfilehash: 77c8e3af930db540c0fab665aceef850f82e219c
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 了解如何購買 Microsoft 365 商務版，從 Microsoft 合作夥伴中心。
+ms.openlocfilehash: 1dcd9c21a598020447308970024a896b157bdae4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278349"
 ---
 # <a name="get-microsoft-365-business"></a>取得 Microsoft 365 商務版
 
 ## <a name="get-microsoft-365-business-from-microsoft"></a>從 Microsoft 取得 Microsoft 365 商務版
 
-如果您不具有合作夥伴並想要取得 Microsoft 365 Business，您還可以[購買這裡](https://www.microsoft.com/en-US/microsoft-365/business)。
+如果您不有合作夥伴，並想要取得 Microsoft 365 商務版，您可以[在這裡購買](https://www.microsoft.com/en-US/microsoft-365/business)。
   
 ## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a>從 Microsoft 合作夥伴中心取得 Microsoft 365 商務版
 
@@ -39,9 +41,9 @@ ms.locfileid: "26866104"
     
     ![In the Microsoft Partner center, add a new customer.](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. 客戶的**訂閱**] 索引標籤上選取 [新增訂閱、 選擇 [目錄、 適用於小型企業選項，然後選擇**Microsoft 365 商務**。
+3. On the customer's **Subscription** page, select Add subscription, choose the Small business option under Catalog, and then choose **Microsoft 365 Business**.
     
-    選取 [數字的授權需要 (最多 300)。如果您有多個 300 位使用者，請改為參閱[Microsoft 365 企業版](https://go.microsoft.com/fwlink/p/?linkid=862316)。 
+    選取您需要的授權數量 (最多 300 個)。 如果您有多個 300 位使用者，請改為參閱 < <b0>Microsoft 365 企業版</b0>。 
     
     ![On the New subscription page choose small business.](media/52d99e89-2175-4974-84bb-dd626048541b.png)
   

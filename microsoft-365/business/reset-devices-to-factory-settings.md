@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: '了解如何使用 Microsoft 365 商務至原廠重設 Windows 10 裝置。 '
-ms.openlocfilehash: ed745ea792f755ada17b3b327032246dab16d94b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: '了解如何使用 Microsoft 365 商務版以原廠重設您的 Windows 10 裝置。 '
+ms.openlocfilehash: 8340bd6a24f3b4d875f6482c03a69275a9a48f33
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283716"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>將 Windows 10 裝置重設成出廠預設值
 
@@ -29,13 +32,11 @@ ms.locfileid: "26866652"
   
 1. 使用全域系統管理員認證登入[系統管理中心](https://aka.ms/bcsportal)。 
     
-2. 在管理中心的 [**裝置動作**在卡片上，選擇 [**原廠重設**]。
+2. 在系統管理中心中，在左側導覽中，選擇 [**裝置** \> **管理**。
+
+3. 在 [**管理**] 頁面上檢查您要移除其中資料裝置旁邊的核取方塊，然後在**管理**下拉式清單選擇**重設成出廠預設值**。
     
-    ![On the Device actions card, choose Factory reset](media/7caddd12-207e-4c99-b61c-0495fc5f55e3.png)
-  
-3. 在**原廠重設**] 窗格中，勾選 [您要移除的資料，然後選擇 [**選取**裝置] 旁的核取方塊。
-    
-4. 在**您確定要原廠重設裝置下**] 窗格中，選擇 [**確認** \> **關閉**。
+4. 在**您確定要原廠重設下列裝置**] 窗格中，選擇 [ **Confirm** \> **關閉**。
     
   
 

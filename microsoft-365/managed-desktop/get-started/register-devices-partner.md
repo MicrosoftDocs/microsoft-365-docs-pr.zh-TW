@@ -6,11 +6,11 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
 ms.openlocfilehash: 23a2eae6435f5ce234cf6406f2753ec54f675bce
-ms.sourcegitcommit: 7af6350fb5a6d37934c1b6bfdc38acd09b2d5d86
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31988419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291667"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop-for-partners"></a>Microsoft 受管理電腦中註冊裝置的合作夥伴
 
@@ -65,7 +65,7 @@ ms.locfileid: "31988419"
 
 您可以監視進度的主要**Microsoft 受管理電腦的 [裝置**] 頁面上的裝置註冊。 報告那里可能的狀態包括：
 
-| 狀態 | 描述 |
+| 狀態 | 說明 |
 |---------------|-------------|
 | 註冊暫止 | 註冊未尚未完成。 請稍後再回來。 |
 | 註冊失敗 | 無法完成註冊。 如需詳細資訊，請參閱[疑難排解](register-devices-self.md#troubleshooting)。 |

@@ -7,11 +7,11 @@ author: trudyha
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 5ccb240460958d5978f4fd19e08652123790784e
-ms.sourcegitcommit: 2211f57c268754d242d6331c188143f818f5a9f4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282519"
 ---
 # <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>將應用程式部署至 Microsoft 受管理的電腦裝置
 以 Microsoft 受管理的電腦上架一部分的包含新增和應用程式部署至使用者的裝置。 一旦您使用 Microsoft 受管理電腦入口網站，您可以新增並部署您的應用程式。 
