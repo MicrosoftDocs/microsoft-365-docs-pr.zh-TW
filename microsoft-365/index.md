@@ -5,16 +5,16 @@ author: CelesteDG
 localization_priority: Normal
 ms.author: celested
 ms.topic: hub-page
-keywords: Microsoft 365, Microsoft 365 文件, 商務用 Microsoft 365, 適用於企業的 Microsoft 365, 適用於教育的 Microsoft 365, 企業, 商務, 教育, 文件, 文件
+keywords: Microsoft 365、 Microsoft 365 文件、 Microsoft 365 企業版、 Microsoft 365 企業版、 Microsoft 365 教育版、 企業、 商務、 教育版、 文件、 文件
 title: Microsoft 365 文件
-description: 尋找 Microsoft 365 的文件和資源--完整的智慧解決方案，包括 Office 365、Windows 10 以及 Enterprise Mobility + Security，可讓所有人發揮創意並安全地合作。
+description: 尋找文件和資源的 Microsoft 365-完整的智慧型解決方案，包括 Office 365、 Windows 10 以及 Enterprise Mobility + Security，可讓所有人發揮創意並安全地，在一起。
 ms.date: 07/01/2018
-ms.openlocfilehash: b2c796fc35859128d4a65ea3587db082f8264abd
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 255d60ba415b6af7435aeadbb0ee74c8bc760908
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289014"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -26,7 +26,7 @@ ms.locfileid: "26866131"
                     <li>
                         <a href="#home-all"></a>
                         <ul id="home-all" class="cardsW">
-                            <li class="fullSpan intro"><a href="https://www.microsoft.com/microsoft-365/default.aspx" data-raw-source="[Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)">Microsoft 365</a> 是完整的智慧解決方案，包括 Office 365、Windows 10 以及 Enterprise Mobility + Security，可讓所有人發揮創意並安全地合作。
+                            <li class="fullSpan intro"><a href="https://www.microsoft.com/microsoft-365/default.aspx" data-raw-source="[Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)">Microsoft 365</a>是完整的智慧型解決方案，包括 Office 365、 Windows 10 以及 Enterprise Mobility + Security，可讓所有人發揮創意並安全地，在一起。
                             </li>
                             <li>
                                 <a href="https://docs.microsoft.com/microsoft-365/enterprise/" target="blank">
@@ -35,13 +35,13 @@ ms.locfileid: "26866131"
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/microsoft365/M365-enterprise.svg" alt="Microsoft 365 Enterprise documentation and resources" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/M365-HubTile-Enterprise-400x140.svg" alt="Microsoft 365 Enterprise documentation and resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 企業版</h3>
-                                                    <p>Microsoft 365 企業版專為大型組織所設計，且整合了 Office 365 企業版、Windows 10 企業版和 Enterprise Mobility + Security。</p>
+                                                    <p>Microsoft 365 企業版旨在為大型組織，且整合了 Office 365 企業版、 Windows 10 企業版和 Enterprise Mobility + Security。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -55,13 +55,13 @@ ms.locfileid: "26866131"
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/microsoft365/M365-business.svg" alt="Microsoft 365 Business documentation and resources" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/M365-HubTile-Business-400x140.svg" alt="Microsoft 365 Business documentation and resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 商務版</h3>
-                                                    <p>Microsoft 365 商務版是專為中小型企業 (SMB) 設計的新解決方案，其將 Office 365 的同等級最佳生產力和共同作業能力，與裝置管理和安全性方案整合在一起，以保護商務資料。</p>
+                                                    <p>Microsoft 365 商務版是專為小型和中型企業 (SMB) 設計的新方案將同時適合在類別生產力和共同作業功能的 Office 365 與裝置管理和安全性解決方案以保護商務資料。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -75,33 +75,13 @@ ms.locfileid: "26866131"
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/microsoft365/M365-education.svg" alt="Microsoft 365 Education documentation and resources" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/M365-HubTile-Education-400x140.svg" alt="Microsoft 365 Education documentation and resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 教育版</h3>
-                                                    <p>Microsoft 365 教育版可讓授課者解放創意、提升團隊合作，並在專為教育打造且價格合理的單一解決方案中提供簡單且安全的體驗。</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/microsoft-365/managed-desktop/index" target="blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/365-md.svg" alt="Microsoft 365 Managed Desktop documentation and resources" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <br />
-                                                    <h3>Microsoft 365 受管理的桌面</h3>
-                                                    <p>Microsoft 365 受管理的桌上型電腦結合 Microsoft 365 E5 裝置為-a-服務 （採購、 設定、 維護） 與 IT 作為-a-服務 （部署、 監控、 報告、 服務台）。</p>
+                                                    <p>Microsoft 365 教育版可讓授課者解放創意、 提升團隊合作，並提供簡單且安全的體驗，為教育打造單一且價格合理解決方案中。</p>
                                                 </div>
                                             </div>
                                         </div>

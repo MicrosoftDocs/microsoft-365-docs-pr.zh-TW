@@ -7,7 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -17,48 +20,48 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: 了解如何驗證 Windows 10 裝置中的 Microsoft 365 商務應用程式保護設定。
-ms.openlocfilehash: db05c86bd75cc30e22e025034a3dab478d0f5365
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 了解如何驗證 Windows 10 裝置中的 Microsoft 365 商務版應用程式保護設定。
+ms.openlocfilehash: 5ab91d65fa7bd40ebc118df217c9711b7bbfe7a4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26866286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286696"
 ---
-# <a name="validate-device-protection-settings-on-windows-10-pcs"></a><span data-ttu-id="072c2-103">驗證 Windows 10 Pc 上的裝置保護設定</span><span class="sxs-lookup"><span data-stu-id="072c2-103">Validate device protection settings on Windows 10 PCs</span></span>
+# <a name="validate-device-protection-settings-on-windows-10-pcs"></a><span data-ttu-id="669fd-103">驗證 Windows 10 電腦上的裝置保護設定</span><span class="sxs-lookup"><span data-stu-id="669fd-103">Validate device protection settings on Windows 10 PCs</span></span>
 
-## <a name="verify-that-windows-10-device-policies-are-set"></a><span data-ttu-id="072c2-104">確認 Windows 10 裝置原則的設定</span><span class="sxs-lookup"><span data-stu-id="072c2-104">Verify that Windows 10 device policies are set</span></span>
+## <a name="verify-that-windows-10-device-policies-are-set"></a><span data-ttu-id="669fd-104">請確認已設定 Windows 10 裝置原則</span><span class="sxs-lookup"><span data-stu-id="669fd-104">Verify that Windows 10 device policies are set</span></span>
 
-<span data-ttu-id="072c2-p101">之後您[設定裝置原則](protection-settings-for-windows-10-pcs.md)，它可能需要幾個小時才會影響使用者的裝置原則。您可以確認原則的使用者的裝置上查看 \\servername\share\spbr 各種 Windows 設定畫面萬一效果。使用者將無法修改其 Windows 10 裝置上的 Windows Update 及 Windows 防禦者防毒設定，因為這些選項的許多將會顯示成灰色。</span><span class="sxs-lookup"><span data-stu-id="072c2-p101">After you [set up devices policies](protection-settings-for-windows-10-pcs.md), it may take up to a few hours for the policy to take effect on users' devices. You can confirm that the policies took effect by looking at various Windows Settings screens on the users' devices. Because the users won't be able to modify the Windows Update and Windows Defender Antivirus settings on their Windows 10 devices, a lot of those options will be greyed out.</span></span>
+<span data-ttu-id="669fd-105">之後您[設定裝置原則](protection-settings-for-windows-10-pcs.md)，可能會佔用的原則至使用者的裝置上生效的幾個小時。</span><span class="sxs-lookup"><span data-stu-id="669fd-105">After you [set up devices policies](protection-settings-for-windows-10-pcs.md), it may take up to a few hours for the policy to take effect on users' devices.</span></span> <span data-ttu-id="669fd-106">您可以確認原則所需的效果，來查看使用者的裝置上的各種 Windows 設定畫面。</span><span class="sxs-lookup"><span data-stu-id="669fd-106">You can confirm that the policies took effect by looking at various Windows Settings screens on the users' devices.</span></span> <span data-ttu-id="669fd-107">因為使用者無法修改其 Windows 10 裝置上的 Windows 更新] 和 [Windows Defender 防毒軟體設定，這些選項許多將會顯示成灰色。</span><span class="sxs-lookup"><span data-stu-id="669fd-107">Because the users won't be able to modify the Windows Update and Windows Defender Antivirus settings on their Windows 10 devices, a lot of those options will be greyed out.</span></span>
   
-1. <span data-ttu-id="072c2-108">移至 [**設定** \> **更新&amp;安全性** \> **Windows Update** \> **重新啟動選項**並確認所有設定的都灰色。</span><span class="sxs-lookup"><span data-stu-id="072c2-108">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Restart options** and confirm that all settings are greyed out.</span></span> 
+1. <span data-ttu-id="669fd-108">移至 [**設定** \> **更新&amp;安全性** \> **Windows Update** \> **重新啟動選項**，並確認所有的設定灰色。</span><span class="sxs-lookup"><span data-stu-id="669fd-108">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Restart options** and confirm that all settings are greyed out.</span></span> 
     
-    ![重新啟動的所有選項的都灰色。](media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
+    ![重新啟動的所有選項被都灰色。](media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. <span data-ttu-id="072c2-110">移至 [**設定** \> **更新&amp;安全性** \> **Windows Update** \> **進階選項**，並確認所有設定的都灰色。</span><span class="sxs-lookup"><span data-stu-id="072c2-110">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** and confirm that all settings are greyed out.</span></span> 
+2. <span data-ttu-id="669fd-110">移至 [**設定** \> **更新&amp;安全性** \> **Windows Update** \> **進階選項]** ，並確認所有的設定灰色。</span><span class="sxs-lookup"><span data-stu-id="669fd-110">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** and confirm that all settings are greyed out.</span></span> 
     
     ![Windows Advanced 更新選項是所有顯示成灰色。](media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
-3. <span data-ttu-id="072c2-112">移至 [**設定** \> **更新&amp;安全性** \> **Windows Update** \> **進階選項** \> **選擇更新傳遞的方式**。</span><span class="sxs-lookup"><span data-stu-id="072c2-112">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.</span></span>
+3. <span data-ttu-id="669fd-112">移至 [**設定** \> **更新&amp;安全性** \> **Windows Update** \> **進階選項** \> **選擇更新傳送的方式**。</span><span class="sxs-lookup"><span data-stu-id="669fd-112">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.</span></span>
     
-    <span data-ttu-id="072c2-113">確認您可以看到的訊息 （以紅色） 和部分設定都是隱藏或管理您的組織的所有選項會顯示成都灰色。</span><span class="sxs-lookup"><span data-stu-id="072c2-113">Confirm that you can see the message (in red) that some settings are hidden or managed by your organization, and all the options are greyed out.</span></span>
+    <span data-ttu-id="669fd-113">確認您可以看到的訊息 （以紅色） 和某些設定都是隱藏或由您的組織，受管理的所有選項會顯示成都灰色。</span><span class="sxs-lookup"><span data-stu-id="669fd-113">Confirm that you can see the message (in red) that some settings are hidden or managed by your organization, and all the options are greyed out.</span></span>
     
-    ![選擇更新傳遞的方式] 頁面上會指出設定都是隱藏或由組織管理。](media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
+    ![選擇 [更新傳送的方式設定都是隱藏或由組織管理] 頁面上會指示。](media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. <span data-ttu-id="072c2-115">若要開啟 [Windows 防禦者安全性中心，移至 [**設定** \> **更新&amp;安全性** \> **Windows 防禦者**\>按一下 [**開啟 Windows 防禦者安全性中心** \> **病毒&amp;執行緒保護** \> **病毒&amp;威脅保護設定**。</span><span class="sxs-lookup"><span data-stu-id="072c2-115">To open the Windows Defender Security Center, go to **Settings** \> **Update &amp; security** \> **Windows Defender** \> click **Open Windows Defender Security Center** \> **Virus &amp; thread protection** \> **Virus &amp; threat protection settings**.</span></span> 
+4. <span data-ttu-id="669fd-115">若要開啟 [Windows Defender 資訊安全中心，移至 [**設定** \> **更新&amp;安全性** \> **Windows Defender** \>按一下 [**開啟 Windows defender 資訊安全中心** \> **病毒&amp;執行緒保護** \> **病毒&amp;威脅保護設定**。</span><span class="sxs-lookup"><span data-stu-id="669fd-115">To open the Windows Defender Security Center, go to **Settings** \> **Update &amp; security** \> **Windows Defender** \> click **Open Windows Defender Security Center** \> **Virus &amp; thread protection** \> **Virus &amp; threat protection settings**.</span></span> 
     
-5. <span data-ttu-id="072c2-116">確認所有選項的都灰色。</span><span class="sxs-lookup"><span data-stu-id="072c2-116">Verify that all options are greyed out.</span></span> 
+5. <span data-ttu-id="669fd-116">確認所有選項都灰色。</span><span class="sxs-lookup"><span data-stu-id="669fd-116">Verify that all options are greyed out.</span></span> 
     
     ![病毒和威脅保護設定被灰色。](media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
-## <a name="related-topics"></a><span data-ttu-id="072c2-118">相關主題</span><span class="sxs-lookup"><span data-stu-id="072c2-118">Related Topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="669fd-118">相關主題</span><span class="sxs-lookup"><span data-stu-id="669fd-118">Related Topics</span></span>
 
-[<span data-ttu-id="072c2-119">Microsoft 365 商務版文件和資源</span><span class="sxs-lookup"><span data-stu-id="072c2-119">Microsoft 365 Business documentation and resources</span></span>](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[<span data-ttu-id="669fd-119">Microsoft 365 商務版文件和資源</span><span class="sxs-lookup"><span data-stu-id="669fd-119">Microsoft 365 Business documentation and resources</span></span>](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[<span data-ttu-id="072c2-120">開始使用 Microsoft 365 商務版</span><span class="sxs-lookup"><span data-stu-id="072c2-120">Get started with Microsoft 365 Business</span></span>](microsoft-365-business-overview.md)
+[<span data-ttu-id="669fd-120">開始使用 Microsoft 365 商務版</span><span class="sxs-lookup"><span data-stu-id="669fd-120">Get started with Microsoft 365 Business</span></span>](microsoft-365-business-overview.md)
   
-[<span data-ttu-id="072c2-121">管理 Microsoft 365 商務版</span><span class="sxs-lookup"><span data-stu-id="072c2-121">Manage Microsoft 365 Business</span></span>](manage.md)
+[<span data-ttu-id="669fd-121">管理 Microsoft 365 商務版</span><span class="sxs-lookup"><span data-stu-id="669fd-121">Manage Microsoft 365 Business</span></span>](manage.md)
   
-[<span data-ttu-id="072c2-122">設定適用於 Windows 10 電腦的裝置設定</span><span class="sxs-lookup"><span data-stu-id="072c2-122">Set device configurations for Windows 10 PCs</span></span>](protection-settings-for-windows-10-pcs.md)
+[<span data-ttu-id="669fd-122">設定適用於 Windows 10 電腦的裝置設定</span><span class="sxs-lookup"><span data-stu-id="669fd-122">Set device configurations for Windows 10 PCs</span></span>](protection-settings-for-windows-10-pcs.md)
   
 
