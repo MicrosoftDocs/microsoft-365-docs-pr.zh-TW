@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 217418cfce66baa02b30ae7d8a01b938a1f2366e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 02b3b7ab32ff92304ab27ca8e8c805ade803c971
+ms.sourcegitcommit: cf77e4bf69e6ae144563f1e764ea3437ed6fc836
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289128"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33296163"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中註冊裝置
 
@@ -59,7 +59,7 @@ Microsoft 受管理的電腦可搭配全新的裝置，或者您可以重新使�
 >不 power 目標裝置上一次直到您已經完成註冊為它。 
 
 >[!NOTE]
->以方便您使用，您可以下載這個 CSV 檔案的[範本](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.xlsx)。
+>以方便您使用，您可以下載這個 CSV 檔案的[範本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.xlsx)。
 
 您的檔案必須包含**完全相同的欄名**為其中一個範例 （製造商、 型號、 等），但您自己的資料列的資料。 如果您使用的範本，在編輯 [記事本] 之類的文字中開啟，並且考慮離開的所有資料列 1 單獨中的，只輸入資料，資料列 2 中下, 面。 
     
@@ -95,7 +95,7 @@ Microsoft 受管理的電腦可搭配全新的裝置，或者您可以重新使�
 
 您可以監視進度的主要**Microsoft 受管理電腦的 [裝置**] 頁面上的裝置註冊。 報告那里可能的狀態包括：
 
-| 狀態 | 說明 |
+| 狀態 | 描述 |
 |---------------|-------------|
 | 註冊暫止 | 註冊未尚未完成。 請稍後再回來。 |
 | 註冊失敗 | 無法完成註冊。 如需詳細資訊，請參閱[疑難排解](register-devices-self.md#troubleshooting)。 |
