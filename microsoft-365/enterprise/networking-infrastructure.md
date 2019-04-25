@@ -9,22 +9,22 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 企業版網路基礎結構的部署步驟。
-ms.openlocfilehash: d575d8c3156ac1fc1a8a2bca96c875d4587ebf05
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 9b8c23d543eca97147801d70e42de7105266c52d
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291179"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>階段 1：Microsoft 365 企業版的網路基礎結構
 
 ![](./media/deploy-foundation-infrastructure/networking_icon.png)
 
-Microsoft 365 企業版包含 Office 365 和 Windows Intune 作為 Enterprise Management + Security (EMS) 的一部分。這兩種雲端式服務仰賴從用戶端裝置連線到網際網路或專用迴路的安全性、效能及可靠性。為了裝載這些服務並提供世界各地的客戶使用，Microsoft 設計了強調效能和整合的網路基礎結構。 
+Microsoft 365 企業版將 Office 365 和 Microsoft Intune 納入為企業管理和安全性 (EMS) 的一部分。 這兩種雲端服務都依賴透過網際網路或專用線路從用戶端裝置連線的安全性、效能及可靠性。 為了裝載這些服務並且讓世界各地的客戶使用，Microsoft 設計了強調效能和整合的網路基礎結構。 
 
 在這個階段，您會逐步探討對 Microsoft 365 企業版雲端服務建立更具效能的連線之關鍵考量。如需概觀，請參閱 [Office 365 網路原則](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694)。
 

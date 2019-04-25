@@ -8,18 +8,20 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-collaboration
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 推行並發揮 Microsoft 365 企業版 Microsoft Teams 在組織中的價值，規劃這整個程序的步驟。
-ms.openlocfilehash: 25329c7024f267983a83c4e719f18df6ad613bf5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 646062babf525be176386264b4ef3c4a3a21647a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291657"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版的 Microsoft Teams
+
+*此工作負載包含在 Microsoft 365 企業版的 E3 和 E5 版本中*
 
 Microsoft Teams 將交談、會議、共用文件、往來對話整合在一起，讓您在群組間輕鬆建立及共用內容。Teams 是進行 Microsoft 365 企業版團隊合作和共同作業的工具，是專門為了 Microsoft 365 團隊合作而打造的重要元素。如果您沒用過 Teams，請參閱 [Microsoft Teams 概觀](https://docs.microsoft.com/MicrosoftTeams/teams-overview)。
  
@@ -27,9 +29,7 @@ Microsoft Teams 將交談、會議、共用文件、往來對話整合在一起�
 
 以下的階段與步驟會帶領您構想 Teams 在組織中的角色，透過一系列的漸進式推行讓組織導入 Teams，並向使用者推廣 Teams 的使用和價值。 
 
->[!Note]
->請在您完成 Microsoft 365 企業版的[基本基礎結構](deploy-foundation-infrastructure.md)之後，遵循下列部署指示。
->
+開始之前，請確定您已設定正確的[基礎結構](deploy-foundation-infrastructure.md)階段，您的小組才能具備您需要的安全性功能。
 
 ## <a name="phase-1-envision"></a>第 1 階段：構想
 
@@ -45,7 +45,7 @@ Microsoft Teams 將交談、會議、共用文件、往來對話整合在一起�
 代表組織的業務、技術、使用者三方面的人員清單。
 
 ### <a name="step-2-determine-and-prioritize-your-teams-business-scenarios"></a>步驟 2：決定 Teams 商務案例並定立優先順序
-Teams 可以用於許多不同的用途。您必須決定哪些用途對應到組織中業務需求、業務群組、部門、個別工作與專案小組的不同層級。如需範例請參閱 [Microsoft 365 生產力文件庫](https://www.microsoft.com/microsoft-365/success)，來協助您定義 Teams 案例。 
+Teams 可以用於許多不同的用途。您必須決定哪些用途對應到組織中業務需求、業務群組、部門、個別工作與專案小組的不同層級。如需範例請參閱 [Microsoft 365 生產力文件庫](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=1)，來協助您定義 Teams 案例。 
 
 您應該將 Teams 的目標放在處理進展快速且高度共同作業的小組，他們密切合作並需要電子郵件和 Exchange Online 以外的更多功能。像是具有歷程記錄的即時群組聊天、用通用易找的位置儲存檔案和備忘稿。 
 

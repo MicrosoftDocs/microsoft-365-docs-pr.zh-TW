@@ -3,24 +3,24 @@ title: Microsoft 365 企業版測試實驗室指南
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用「測試實驗室指南」以設定 Microsoft 365 企業版的示範、概念證明或開發/測試環境。
-ms.openlocfilehash: df723647748532936e40bbdb4e34ff698b9fa650
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 027386f9b44d09d2927c2473d1ef27381f82f969
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283643"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Microsoft 365 企業版測試實驗室指南
 
@@ -41,7 +41,7 @@ TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符�
 
 - 當您想要在僅雲端環境中 (其中不包含任何內部部署元件) 設定及示範 Microsoft 365 企業版功能時，使用[輕量型基底組態](lightweight-base-configuration-microsoft-365-enterprise.md)。
 
-- 當您想要在混合式雲端環境中 (該環境使用內部部署元件，例如 Windows Server Active Directory (AD) 網域) 設定及示範 Microsoft 365 企業版功能時，使用[模擬的企業基底組態](simulated-ent-base-configuration-microsoft-365-enterprise.md)。
+- 當您想要在混合式雲端環境 (該環境使用內部部署元件，例如 Active Directory Domain Services (AD DS) 網域) 中設定及示範 Microsoft 365 企業版功能時，使用[模擬的企業基底組態](simulated-ent-base-configuration-microsoft-365-enterprise.md)。
     
 ## <a name="identity"></a>身分識別
 
@@ -49,15 +49,15 @@ TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符�
 
 - [密碼雜湊同步處理](password-hash-sync-m365-ent-test-environment.md)
   
-   從 Windows Server AD 網域控制站啟用及測試密碼雜湊型目錄同步處理。
+   從 Active Directory Domain Services (AD DS) 網域控制站啟用及測試密碼雜湊型目錄同步處理。
 
 - [傳遞驗證](pass-through-auth-m365-ent-test-environment.md)
   
-   啟用及測試對 Windows Server AD 網域控制站的傳遞驗證。
+   啟用及測試對 AD DS 網域控制站的傳遞驗證。
 
 - [Azure AD 無縫單一登入](single-sign-on-m365-ent-test-environment.md)
   
-   使用 Windows Server AD 網域控制站來啟用並測試 Azure AD 無縫單一登入 (SSO)。
+   使用 AD DS 網域控制站來啟用並測試 Azure AD 無縫單一登入 (SSO)。
 
 - [多重要素驗證](multi-factor-authentication-microsoft-365-test-environment.md)
   
@@ -66,6 +66,10 @@ TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符�
 - [保護全域系統管理員帳戶](protect-global-administrator-accounts-microsoft-365-test-environment.md)
  
    使用 Office 365 雲端 App 安全性和條件式存取原則鎖定您的全域系統管理員帳戶。
+
+- [密碼回寫](password-writeback-m365-ent-test-environment.md)
+
+   您可使用密碼回寫，從 Azure AD 變更 AD DS 使用者帳戶的密碼。
 
 - [密碼重設](password-reset-m365-ent-test-environment.md)
 
@@ -83,9 +87,9 @@ TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符�
 
 若要示範行動裝置管理相關的功能，請參閱：
 
-- [MAM 原則](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+- [裝置合規性原則](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
     
-   建立使用者群組和適用於 iOS 和 Android 裝置的行動應用程式管理 (MAM) 原則。
+   建立 Windows 10 裝置的使用者群組和裝置合規性原則。
     
 - [註冊 iOS 和 Android 裝置](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
    
@@ -104,12 +108,10 @@ TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符�
     
    設定 Office 365 標籤並且將其套用至 SharePoint Online 小組網站中的文件。
     
-- [Microsoft 365 企業版測試環境的特殊權限存取管理](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
+- [特殊權限存取管理](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
    設定特殊權限存取管理，以對您 Office 365 組織中提升權限和特殊權限的工作進行 Just-In-Time 存取。
 
 ## <a name="see-also"></a>另請參閱
 
-[使用雲端採用測試實驗室指南來體驗 Microsoft Cloud](https://mva.microsoft.com/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881)
-    
-[One Microsoft Cloud 測試實驗室指南堆疊](http://aka.ms/catlgstack)
+[使用雲端採用 TLG 測試 Office 365](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)

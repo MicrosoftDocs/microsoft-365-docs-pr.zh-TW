@@ -2,20 +2,20 @@
 title: GDP 的 Microsoft 支援服務與專業服務資料主體要求
 description: Microsoft 支援服務與專業服務如何處理資料主體要求。
 keywords: 專業服務、Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: dd86914c0b3931f0cddc762db3f5916a34853eff
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: fdbd15e3b6cb3a5283bea9dc92ed89c7f2493f40
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278242"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr"></a>GDPR 的 Microsoft 支援服務與專業服務資料主體要求
 
@@ -23,7 +23,7 @@ ms.locfileid: "26866400"
 
 Microsoft 專業服務包括一組多元化的技術結構設計師、工程師、顧問師，以及致力於達成 Microsoft 任務的支援專業人員，以期讓客戶更有能力與成就。我們的專業服務小組總計包括超過 21,000 名顧問師、數位顧問、頂級支援、工程師和專業銷售人員，這些專業人員在全球 191 個國家/地區工作，可支援 46 種不同的語言，每個月管理數百萬件約定，以及透過內部部署、電話、網路、社群和自動化工具參與客戶與合作夥伴互動。該組織具備廣泛的 Microsoft 產品組合專業知識，並運用廣闊的合作夥伴、技術社群、工具、診斷及通道網路來連結我們與企業客戶。
 
-由此處 (<https://www.microsoft.com/microsoftservices/professional_services.aspx>) 深入了解 Microsoft 專業服務，也可以移至 Microsoft 信任中心 (<https://www.microsoft.com/trustcenter/cloudservices/commercialsupport>) 的 Microsoft 專業服務區段。Microsoft 專業服務十分重視對於一般資料保護規定 (GDPR) 的責任。這份文件中的資訊專用於回答客戶疑問，說明 Microsoft 支援與諮詢服務會如何回應及協助客戶來回應 GDPR 下的資料主體要求 (DSR) 義務。<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
+移至 Microsoft 信任中心的 [Microsoft 專業服務] 區段 (<https://www.microsoft.com/trustcenter/professional-services>)，以深入了解 Microsoft 專業服務。 Microsoft 專業服務很認真看待其在一般資料保護規定 (GDPR) 下所需承擔的責任。 本文件中的資訊是為了回答客戶有關 Microsoft 的支援和諮詢供應項目如何根據 GDPR 回應及協助客戶回應資料主體要求 (DSR) 義務的問題。<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
 
 ### <a name="introduction-to-dsrs"></a>DSR 簡介 
 
@@ -76,20 +76,21 @@ GDPR 賦予人員 (在規範中稱為「資料主體」**) 權限，以管理由
 本指南包含若客戶使用 Microsoft 專業服務可能會遇到的四個案例。
 
 <span id="_Toc510704611" class="anchor"><span id="_Toc511045453" class="anchor"><span id="_Toc511403161" class="anchor"></span></span></span>
-## <a name="dsr-for-a-customer-contact-engaging-microsoft"></a>Microsoft 客戶連絡人的 DSR
+- **Microsoft 客戶連絡人的 DSR**
+
 說明 Microsoft 會如何回應客戶連絡人或 IT 系統管理員的要求來執行資料主體權利。
 
 <span id="_Toc510704612" class="anchor"><span id="_Toc511045454" class="anchor"><span id="_Toc511403162" class="anchor"></span></span></span>
-## <a name="dsr-for-an-end-user-engaging-microsoft"></a>Microsoft 使用者的 DSR
+- **Microsoft 使用者的 DSR**
 
 說明 Microsoft 會如何回應客戶員工或其他資料主體的要求來執行其權利。
 
-## <a name="dsr-for-customer-provided-data-commercial-support"></a>客戶所提供資料的 DSR：商業支援
+- **客戶所提供資料的 DSR：商業支援**
 
 說明當客戶收到員工或其他資料主體的要求要執行權限，且該資料主體的個人資料在支援約定期間由 Microsoft 支援服務所收集，在此情況下如何接收 Microsoft 的協助。
 
 <span id="_Toc511403163" class="anchor"><span id="_Toc511045456" class="anchor"><span id="_Toc510704614" class="anchor"></span></span></span>
-## <a name="dsr-for-customer-provided-data-consulting-services-including-fasttrack-migration-services"></a>客戶所提供資料的 DSR：諮詢服務，包括 FastTrack 移轉服務 
+- **客戶所提供資料的 DSR：諮詢服務，包括 FastTrack 移轉服務** 
 
 <span id="_Toc511045457" class="anchor"><span id="_Toc511403164" class="anchor"></span></span>
 

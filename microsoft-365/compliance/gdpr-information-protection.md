@@ -4,19 +4,21 @@ description: 一般資料保護規定 (GDPR) 的資訊保護
 keywords: Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
 author: BrendaCarter
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: bcarter
 manager: laurawi
-ms.collection: GDPR
-ms.openlocfilehash: 371efa4e1c3e3375cd43dcc661d8aa549788baba
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+audience: itpro
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 94ec13437ff297381b4ea8aca0e9370f295f249e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285185"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>使用 Microsoft 365 功能實現 GDPR 資訊保護
 
@@ -49,8 +51,7 @@ Microsoft 提供下列建議設定，可作為起點設定：
 
 威脅防護是跨 Microsoft 365 服務所建置。您可以從以下幾個資源開始著手：
 - [Office 365 安全性藍圖：前 30 天、前 90 天和之後的最高優先順序](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)。此藍圖包含實作功能的建議。 
-- 
-  [在 Office 365 中防範威脅](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)。了解您可以在 Office 365 安全與規範中心採取的防護動作。
+- [防範 Office 365 中的威脅](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)。 深入了解您可以在 Microsoft 365 資訊安全中心採取的保護動作。
 - [Windows 威脅防護](https://docs.microsoft.com/windows/security/threat-protection/)。深入了解 Windows Defender 進階威脅防護與 Windows 10 的其他功能。
 
 

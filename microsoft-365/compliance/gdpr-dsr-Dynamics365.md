@@ -2,21 +2,21 @@
 title: GDPR 的 Dynamics 365 資料主體要求
 description: 本指南會介紹如何使用 Microsoft 產品、服務及系統管理工具，協助我們的控制者客戶找出並處理個人資料，以回應 DSR 要求。
 keywords: Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/13/2018
-ms.author: bcarter
+ms.date: 04/10/2019
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: e1c79ae466264e302b282244f477dafcc6b49afe
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f5a7f347dc9b26b54cf6bc1fd3a6bdb55d46fe63
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285212"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>GDPR 的 Dynamics 365 資料主體要求
 
@@ -78,7 +78,7 @@ ms.locfileid: "26866793"
 
 Dynamics 365 是種以軟體為服務 (SaaS) 的形式提供多重資料處理功能的線上服務。因此，Dynamics 365 提供的各種功能適用於處理各種資料集合，這些集合在性質、用途或其他特定屬性 (例如銷售資料、交易、財務、人力資源資訊等) 方面都非常不同。因為這項差異，Dynamics 365 會提供多種表單、欄位、結構描述、端點和邏輯以處理客戶資料；這也反映在每個應用程式中會有多種處理 DSR 要求的方式上。若 Dynamics 365 應用程式提供幾種解決特定 DSR 要求的方式，我們會備註在本指南中，指出每個應用程式所提供的技術描述。
 
-### <a name="microsoft-dynamics-365"></a>Microsoft Dynamics 365
+### <a name="dynamics-365"></a>Dynamics 365
 #### <a name="finding-customer-data"></a>尋找客戶資料
 
 回應資料主體權限要求的第一個步驟是搜尋並找出該要求主體的客戶資料。
@@ -101,6 +101,8 @@ Microsoft 提供有助於回應資料主體權利要求的功能，並可用以�
 
 2.  利用對連絡人和行銷執行物件的深入了解檢視，找出可能包含客戶資料的其他資料點。
 
+Dynamics 365 客戶服務見解提供一些功能以供您回應下列要求：複製個人資料、刪除個人資料，以及尋找作為資料主體探索要求 (DSR) 主體的個人資料。 如需詳細資訊，請參閱 [Dynamics 365 客戶服務見解的 GDPR 合規性概觀](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary)。
+
 <span id="_Toc511225658" class="anchor"></span>***Dynamics 365 Finance and Operations*** 提供數種搜尋客戶資料的方式。您可用租用戶系統管理員的身分，執行下列動作來搜尋客戶資料：
 
 -   透過可快速探索個人資料的方法整理客戶資料，請參閱[如何分類資料庫存](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#detailed-inventory)以達成此目的。
@@ -114,6 +116,7 @@ Microsoft 提供有助於回應資料主體權利要求的功能，並可用以�
 -   撰寫可找出並匯出個人資料的自訂表單。
 
 -   撰寫外部入口網站或網站，讓已驗證的客戶查看他/她的個人資料。
+
 
 ***Dynamics for Business Central*** 為您提供數種搜尋客戶資料的方式。如需詳細資訊，請參閱[搜尋、篩選及排序資料](https://docs.microsoft.com/dynamics-nav-app/ui-enter-criteria-filters)。
 
@@ -349,7 +352,7 @@ Social Engagement 已實作來自多個社交平台 (例如 Twitter、WordPress�
 
 - 如需來自使用者設定檔的客戶資料，請移至 [Office 365 管理中心](https://portal.office.com/adminportal/home)。請在**管理中心**內，選取 [使用者]****。在 [作用中使用者] **** 頁面上，搜尋您想要匯出其資料的使用者。刪除目標使用者以外的所有使用者，然後選取 [匯出]**** 以將該資料匯出至 .csv 檔案，讓您可以使用 Excel 來檢視資訊。
 
-- 警示收件者的電子郵件地址 (警示中唯一的客戶資料)。請依照在[以系統管理員的身分管理警示收件者](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)中的步驟。然後選取 [匯出]**** 來下載包含此收件者的警示 Excel 清單。
+- 警示收件者的電子郵件地址 (警示中唯一的個人資料)。請依照在[以系統管理員的身分管理警示收件者](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)中的步驟。然後選取 [匯出]**** 來下載包含此收件者的警示 Excel 清單。
 
 - 來自 Power BI 的使用者名稱：[互動報告](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi)會顯示社交媒體上小組表現報表中的使用者名稱。若要匯出此資料，請依 PowerBI 儀表板或[報表](https://docs.microsoft.com/power-bi/power-bi-report-add-filter)中的使用者來進行篩選，並[將該資料匯出](https://docs.microsoft.com/power-bi/power-bi-visualization-export-data)。
 
