@@ -9,23 +9,23 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定適用於 Microsoft 365 測試環境的傳遞驗證。
-ms.openlocfilehash: 26222f04617999104a1ad010eb189a0c01370a6d
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: e925f0b48194c94993e7bf3e08f1f18650b19a23
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290924"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的傳遞驗證
 
-想要直接使用內部部署 Windows Server Active Directory (AD) 基礎結構，對 Microsoft 雲端式服務和應用程式進行驗證的組織，可以使用傳遞驗證。本文說明可以如何針對傳遞驗證設定 Microsoft 365 測試環境，造成下列組態：
+想要直接使用內部部署 Active Directory Domain Services (AD DS) 基礎結構，對 Microsoft 雲端式服務和應用程式進行驗證的組織，可以使用傳遞驗證。 本文說明可以如何針對傳遞驗證設定 Microsoft 365 測試環境，以造成下列組態：
   
 ![使用傳遞驗證測試環境的模擬企業](media/pass-through-auth-m365-ent-test-environment/Phase2.png)
   
@@ -47,8 +47,8 @@ ms.locfileid: "26866313"
   
 此組態包含： 
   
-- Office 365 E5 和 EMS E5 試用版或永久訂閱。
-- 簡化的組織內部網路與網際網路連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成。在 APP1 上執行的 Azure AD Connect 會定期將 TESTLAB Windows Server AD 網域同步處理至 Office 365 和 EMS E5 訂閱的 Azure AD 租用戶。
+- Office 365 E5 和 EMS E5 試用版或付費訂閱。
+- 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 Azure AD Connect 會在 APP1 上執行，以將 TESTLAB Active Directory Domain Services (AD DS) 網域定期同步至 Office 365 和 EMS E5 訂閱的 Azure AD 租用戶。
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>階段 2：在 APP1 上針對傳遞驗證設定 Azure AD Connect
 
@@ -76,13 +76,13 @@ ms.locfileid: "26866313"
 
 10. 按一下 [傳遞驗證]****。[傳遞驗證]**** 窗格會列出您的驗證代理程式安裝所在的伺服器。您應該會在清單中看到 APP1。關閉 [傳遞驗證]**** 窗格。
 
-接下來，以 User1 帳戶的 user1@testlab.\<您的公用網域> 使用者名稱測試登入 Office 365 訂閱的能力。
+接下來，以 <strong>user1@testlab.</strong>\<您的公用網域> User1 帳戶的使用者名稱測試登入 Office 365 訂閱的能力。
 
 1. 從 APP1 登出 Office 365，然後再次登入，這次指定不同的帳戶。
 
-2. 當系統提示輸入使用者名稱和密碼時，指定 user1@testlab.\<您的公用網域> 和 User1 密碼。您應該可以用 User1 的身分成功登入。
+2. 當系統提示輸入使用者名稱和密碼時，指定 <strong>user1@testlab.</strong>\<您的公用網域> 和 User1 密碼。 您應該可以用 User1 的身分成功登入。
 
-請注意，User1 雖具有 TESTLAB Windows Server AD 網域的網域管理員權限，但並不是 Office 365 全域管理員。因此，您不會看到 [管理員]**** 圖示選項。
+請注意，User1 雖具有 TESTLAB AD DS 網域的網域管理員權限，但並不是 Office 365 全域管理員。 因此，您不會看到 [管理員]**** 圖示選項。
 
 以下是您產生的組態：
 
@@ -90,7 +90,7 @@ ms.locfileid: "26866313"
  
 此組態包含：
 
-- 已註冊 DNS 網域 TESTLAB.\<您的網域名稱> 的 Office 365 E5 和 EMS E5 試用版或永久訂閱。
+- 已註冊 DNS 網域 testlab.\<您的網域名稱> 的 Office 365 E5 和 EMS E5 試用版或付費訂閱。
 - 簡化的組織內部網路與網際網路連線，由 Azure 虛擬網路子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成。驗證代理程式會在 APP1 上執行，以處理來自 Office 365 和 EMS E5 訂閱 Azure AD 租用戶的傳遞驗證要求。
 
 ## <a name="next-step"></a>下一步

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在環境中評估目錄和網路整備。
-ms.openlocfilehash: e690e99110e647ffc06c9ff7d40b789d8670e571
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 93a0e66159a4d9ea275765beec42ea92bff63feb
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290662"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>步驟 2：目錄和網路整備
 
@@ -36,7 +36,7 @@ ms.locfileid: "26866138"
 </table>
 
 >[!NOTE]
->目錄和網路整備是我們所建議部署程序轉輪中的第二個步驟，主要著重於 Azure Active Directory 及網路最佳化。若要查看完整的桌面部署程序，請瀏覽[現代化電腦的部署中心](https://aka.ms/HowToShift) (英文)。
+>目錄和網路整備是我們所建議部署程序轉輪中的第二個步驟，主要著重於 Azure Active Directory 及網路最佳化。 若要查看完整的桌面部署程序，請瀏覽[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
 目錄和網路整備是確保順利部署作業系統和桌面的基礎。如同使用任何自動化部署，務必確保可以存取您的檔案共用，且您的網路必須能夠支援傳送大型檔案，可能傳送至一次數百或甚至數千部電腦。
@@ -47,25 +47,25 @@ ms.locfileid: "26866138"
 
 ## <a name="adding-azure-active-directory"></a>新增 Azure Active Directory
 
-如果貴組織已使用 Office 365、Exchange Online、Microsoft Intune 或其他 Microsoft 線上服務，好消息是，您已經在使用 Azure Active Directory。如果是，您只需要確認您目標桌面部署的使用者是在 Azure Active Directory 中，並已指派授權。
+如果貴組織已使用 Office 365、Exchange Online、Microsoft Intune 或其他 Microsoft 線上服務，好消息是，您已經在使用 Azure Active Directory。 如果是，您只需要確認您目標桌面部署的使用者是在 Azure Active Directory 中，並已指派授權。
 
-如果您目前沒有使用 Azure Active Directory，[許多資源](https://docs.microsoft.com/zh-TW/azure/active-directory/)可協助您設定。您也可能符合資格透過 Microsoft FastTrack 取得專人協助，這屬於 Office 365 授權的一部分。您可以在[這裡](https://fasttrack.microsoft.com) (英文) 查看更多有關 Microsoft Fastrack 的資訊。
+如果您目前未使用 Azure Active Directory，則有[許多資源](https://docs.microsoft.com/zh-TW/azure/active-directory/)可協助您進行設定。 您也可能符合透過 Microsoft FastTrack 的個人化協助資格 (Office 365 授權的一部分)。 您可以在[這裡](https://fasttrack.microsoft.com)進一步了解 Microsoft Fastrack。
 
 一旦 Azure Active Directory 就位後，您的使用者可以登入並啟用其 Office 365 專業增強版應用程式，且您可以使用 Microsoft Intune 或 Windows Autopilot 部署，以自動化部署應用程式和原則。
 
 ## <a name="network-readiness"></a>網路整備
 
-規劃部署時，您必須考慮頻寬需求。在部署中有三個主要元件將會影響網路 - 電腦影像；軟體更新；使用者個人化。在這些當中，這可能表示初始移轉時每部電腦超過 20 GB，以及通常每個月每部電腦 1 GB 或更多來保持最新版本。
+規劃部署時，您必須考慮頻寬需求。 部署中有三個主要元件會影響您的網路 – 電腦映像處理、軟體更新及使用者個人化。 這可能表示每部電腦在初始移轉時超過 20 GB，而每部電腦每個月通常需要 1 GB (含) 以上來保持最新狀態。
 
 首先，瀏覽這三個主要元件的需求：
 
 ### <a name="pc-imaging"></a>電腦影像
 
-下列圖表可協助您根據影像的大小進行規劃。對於沒有自訂的 Windows 映像，您應該規劃通常為每部電腦 3 GB，而對於包含應用程式的自訂影像，您能需要允許 6 GB 或更多。您可能也需要考慮驅動程式套件；這些可能是每部電腦幾百 MB，有時高達 1 GB。
+對於沒有自訂的 Windows 映像，您通常應該規劃每部電腦 3 GB，而對於具有應用程式的自訂映像，您可能需要允許 6 GB 或更多。 您可能也需要考慮驅動程式套件，這些套件可能為每部電腦數百個 MB (有時高達 1 GB)。
 
 ### <a name="software-updates"></a>軟體更新
 
-您必須計劃軟體更新的網路頻寬。Windows 10 和 Office 365 專業增強版使用新的維護模型，提供每月及半年更新。如果您是第一次使用這個模式，可以在[這裡](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-overview) (英文) 深入了解如何進行此作業。
+您必須規劃軟體更新的網路頻寬。 Windows 10 和 Office 365 專業增強版會使用每月和每半年提供更新的新服務模型。 如果是初次使用這個模式，您可以在[這裡](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-overview)深入了解其運作方式。
 
 新維護模型包含每年兩次適用於 Windows 的功能更新、Office 半年通道更新，以及高品質的每月更新。功能更新的大小通常是 2 到 4 GB，而 Office 半年通道更新的每個更新為 300-400 MB。接著有每月高品質更新。這範圍可能會從數百 MB 至 1 GB 以上。這是因為每月更新是累計的，因此這些會隨著每個 Windows 10 版本的服務存留時間而變大。不過，有些工具可協助您減少必須透過網路傳遞來實作更新的資料量。以下我們將深入討論這個部分。
 
@@ -103,29 +103,29 @@ Windows Server 2019 與 System Center Configuration Manager 1806 版支援的低
 
 **BranchCache** 可協助您在分散式環境中下載內容而不會使網路飽和。它有兩個選項：託管快取模式，這可讓您使用本機伺服器來快取內容，以及分散式快取模式 (System Center Configuration Manager 中支援的模式)，可讓用戶端與其他人員共用已下載的內容。
 
-**對等快取**系統管理中心設定支援的用戶端也可以使用對等快取。這樣可以允許網路上可靠的可用電腦主控內容發佈的來源。您不需要在所有電腦上啟用這個 – 只需將目標設定可靠的網路連線作為主機 (例如桌上型電腦、迷你立式或塔台電腦)。對等快取甚至可適用於設定期間在 Windows PE 階段中執行的部署工作。
+System Center Configuration Manager 支援的**對等快取**用戶端也可利用對等快取。 這允許可在網路上可靠使用的電腦裝載內容散發的來源。 您不想對您所有的電腦啟用此功能 – 只鎖定以具有可靠網路連線的裝置 (例如桌上型、迷你機箱或直立式電腦) 作為主機。 對等快取甚至適用於在設定期間於 Windows PE 階段中執行的部署工作。
 
 附註：BranchCache 和對等快取互補，而且可以在同一個環境中共同作業。
 
 [BranchCache 與對等快取](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/) (英文)
 
-**傳遞最佳化**傳遞最佳化是另一個對等快取技術，提供 Windows 部署的網路型控制項。Windows 10 傳遞最佳化以更新內建 UWP 應用程式，還能夠安裝來自 Microsoft Store 的應用程式，以及使用快速更新進行軟體更新。從舊版 Windows 10 就已提供，不過最近才與 System Center Configuration Manager 整合。自 Windows 10 1803 版起新的設定選項表示您現在可以個別設定頻寬限制以進行背景更新和前景工作，例如 Microsoft Store 中的應用程式更新。
+**傳遞最佳化** 傳遞最佳化是另一種對等式快取技術，可為部署提供網路型控制項。 Windows 10 傳遞最佳化可更新內建 UWP 應用程式時，也可安裝來自 Microsoft Store 的應用程式，以及使用 Express Updates 進行軟體更新。 早期的 Windows 10 版本中已提供此功能，不過最近才與 System Center Configuration Manager 整合。 從 Windows 10 版本 1803 起，新的設定選項讓您現在可以針對背景更新和前景作業 (例如從 Store 安裝應用程式) 獨立設定頻寬限制。 Windows 傳遞最佳化目前也在用戶端更新期間支援 Office 365 專業增強版，您可在所有支援的 Office 365 用戶端更新管道取得。 我們即將在 Office 365 用戶端初始安裝期間支援 Windows 傳遞最佳化，敬請期待。  
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 
 **Office 365 專業增強版的額外考量**
 
-以下三個項目將會因 Office 365 專業增強版部署而減少網路負載。
+除了運用傳遞最佳化，以下三個項目會因 Office 365 專業增強版部署而有助於減少網路負載。
 
 **二進位差異壓縮** 從最新版本的 Office 365 專業增強版更新至下一個版本時，Office 365 專業增強版會使用二進位差異壓縮來減少軟體更新所耗用的頻寬。透過只從兩個先前版本放入二進位層級變更，可將累積更新的每月成長影響降到最低。這有可能會每部電腦每個月儲存數百 MB 的資料。但若要使用這項功能，您無法略過版本。如果您這麼做，必須先下載完整的累積更新。
 
 [下載 Office 365 的更新](https://docs.microsoft.com/zh-TW/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus) (英文)
 
-**Outlook 資料檔** Outlook 通常會設定為在本機快取使用者的整個信箱以供離線使用。在任何 Windows 部署中，除了就地升級，需要使用者的 Outlook 資料檔以在升級之後重建自行。這是自動化的程序，但 Outlook 通常會設定為最多 100 GB 的信箱限制，在本機上重新快取所有使用者的整個信箱表示大量的資料傳輸。若要減少網路負擔，可能需要考慮使用群組原則來減少「要離線保留的郵件」設定。在 Office 365 專業增強版或 Outlook 2016 的 Outlook 中預設值設為 12 個月。請考慮將離線快取設定為持續介於 1 到 6 個月。變更此設定不會影響線上信箱的大小，且在線上時仍可以透過 Outlook 搜尋整個信箱。
+**Outlook 資料檔** Outlook 通常會設定為在本機快取使用者的整個信箱，以供離線使用。 在任何 Windows 部署中，除了就地升級以外，使用者的 Outlook 資料檔都需要在升級後自行重建。 這是自動化程序，但是 Outlook 信箱限制通常設為最多 100 GB，而在本機重新快取所有使用者的整個信箱表示有大量資料轉送。 若要減少網路負載，您可考慮使用群組原則來降低「要離線保留的郵件」設定。 在 Office 365 專業增強版或 Office 2016 中，Outlook 的預設值會設為 12 個月。 若要降低網路影響，請考慮將離線快取設定為最近 1 到 6 個月。 變更此設定並不會影響線上信箱的大小，仍可透過 Outlook 在線上搜尋整個信箱。
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-6.png)
 
-**隨需 OneDrive 檔案和已知資料夾移動** OneDrive 是從電腦和雲端中其他裝置同步處理及保護使用者檔案的絕佳方式。您可以強制執行從使用者的桌面、文件和圖片資料夾將檔案同步到 OneDrive，讓這些檔案在登入新的裝置或重新建立映像的電腦時可供使用。不過，請記住，由於保持桌面、文件和圖片位置中保留的真正檔案大小和數目，您需要展示您電腦上啟用及強制執行 OneDrive 的原則。其中一個選項是使用群組原則網路控制項來節流 OneDrive 同步處理服務所使用的頻寬。
+**隨選 OneDrive 檔案和已知資料夾移動** OneDrive 是在雲端中同步處理和保護電腦和其他裝置中使用者檔案的絕佳方式。 您可以利用「已知資料夾移動」，強制從使用者的 [桌面]、[文件] 和 [圖片] 資料夾進行檔案同步至 OneDrive，以便在登入新的裝置或重新安裝映像的電腦時取得這些檔案。 不過，由於保留在 [桌面]、[文件] 和 [圖片] 位置的檔案大小和數目，您會打算推出在您的電腦上啟用和強制執行 OneDrive 的原則。 其中一個選項是使用群組原則網路控制項來節流 OneDrive 同步服務所用的頻寬。
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-7.png)
 
@@ -133,7 +133,7 @@ Windows Server 2019 與 System Center Configuration Manager 1806 版支援的低
 
 [隨需 OneDrive 檔案](https://www.microsoft.com/zh-TW/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/) (英文)
 
-如果您尚未推出 OneDrive，從 Windows 7 移轉到 Windows 10 是啟用 OneDrive 的絕佳機會，且完美整合 Office 365 專業增強版。在執行您的應用程式和裝置整備時，請考慮啟動此推出。這會在您開始移動 Windows 映像並透過網路部署應用程式之前，讓檔案同步處理搶先開始。
+如果您還沒推行 OneDrive，從 Windows 7 轉移到 Windows 10 是啟用 OneDrive 且緊密整合 Office 365 專業增強版的完美機會。 請考慮在進行您的應用程式和裝置整備工作時，開始這項推行。 在您開始透過網路移動 Windows 映像及部署應用程式之前，這會為檔案同步提供領先優勢。
 
 ## <a name="next-step"></a>下一步 
 
@@ -141,7 +141,7 @@ Windows Server 2019 與 System Center Configuration Manager 1806 版支援的低
 
 ## <a name="previous-step"></a>上一步：
 
-## <a name="step-1-device-and-app-readinesshttpsakamsmdd1"></a>[步驟 1：裝置和應用程式整備](https://aka.ms/mdd1) (英文)
+## <a name="step-1-device-and-app-readinesshttpsakamsmdd1"></a>[步驟 1：裝置和應用程式整備](https://aka.ms/mdd1)
 
 ## <a name="feedback"></a>意見反應
 

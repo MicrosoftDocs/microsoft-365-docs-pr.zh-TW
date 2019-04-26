@@ -3,25 +3,25 @@ title: 適用於 Microsoft 365 測試環境的密碼重設
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/30/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
 - TLGS
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定並測試適用於 Microsoft 365 測試環境的密碼重設。
-ms.openlocfilehash: a90cb362a2831bf0bcf3fe05932e3a4345d52b2e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f5fc8d68493464d6b4a6ffdcda64ed9a0d8c7cdd
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289458"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼重設
 
@@ -29,26 +29,30 @@ Azure AD 自助密碼重設 (SSPR) 允許使用者重設或解除鎖定其密碼
 
 本文將以兩階段說明如何針對 Microsoft 365 測試環境，設定及測試密碼重設：
 
-1.  使用密碼雜湊同步處理建立 Microsoft 365 模擬企業測試環境。
+1.  建立 Microsoft 365 企業版測試環境。
 2.  設定及測試「使用者 2」帳戶的密碼重設。
     
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
-  
-## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>階段 1：設定適用於 Microsoft 365 測試環境的密碼雜湊同步處理
+> 按一下[這裡](https://aka.ms/m365etlgstack)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
 
-請遵循[適用於 Microsoft 365 的密碼雜湊同步處理](password-hash-sync-m365-ent-test-environment.md)中的指示。以下是您產生的組態。
+## <a name="phase-1-configure-password-hash-synchronization-and-password-writebback-for-your-microsoft-365-test-environment"></a>階段 1：設定適用於 Microsoft 365 測試環境的密碼雜湊同步和密碼回寫
+
+首先，請遵循[密碼雜湊同步處理](password-hash-sync-m365-ent-test-environment.md)中的指示。以下是您產生的組態。
   
-![使用傳遞驗證測試環境的模擬企業](media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![使用密碼雜湊同步處理測試環境的模擬企業](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 此組態包含： 
   
-- Office 365 E5 和 EMS E5 試用版或永久訂閱。
+- Office 365 E5 和 EMS E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 
-- Azure AD Connect 在 APP1 上執行，以將 TESTLAB Windows Server AD 網域同步至 Office 365 和 EMS E5 訂閱的 Azure AD 租用戶。
+- Azure AD Connect 在 APP1 上執行，以將 TESTLAB AD DS 網域同步至 Office 365 和 EMS E5 訂閱的 Azure AD 租用戶。
 
+接下來，遵循測試實驗室指南中的[密碼回寫的階段 2](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain)。
+
+您必須啟用密碼回寫才能使用密碼重設。
+  
 ## <a name="phase-2-configure-and-test-password-reset"></a>階段 2：設定及測試密碼重設
 
 在這個階段中，您會在透過群組成員資格在 Azure AD 租用戶中設定密碼重設，然後驗證是否運作正常。
@@ -75,9 +79,9 @@ Azure AD 自助密碼重設 (SSPR) 允許使用者重設或解除鎖定其密碼
 6. 以「使用者 2」的帳戶認證登入，輸入 CAPTCHA 顯示的字元，然後再按一下 [下一步]****。
 8. 對於 [驗證步驟 1]****，請按一下 [寄電子郵件到我的備用電子郵件地址]****，然後再按一下 [寄電子郵件]****。當您收到電子郵件後，請輸入驗證碼，然後再按一下 [下一步]****。
 9. 在 [取回您的帳戶]**** 中，輸入「使用者 2」帳戶的新密碼，然後按一下 [完成]****。請記下「使用者 2」帳戶的密碼變更，並儲存到安全的位置。
-10. 在相同瀏覽器的新分頁中，前往 [https://portal.office.com](https://portal.office.com)，並以「使用者 2」帳戶名稱及新密碼登入。您應該會看見 [Office 首頁]**** 頁面。
+10. 在相同瀏覽器的新分頁中，前往 [https://office.com](https://office.com)，並以「使用者 2」帳戶名稱及新密碼登入。您應該會看見 [Office 首頁]**** 頁面。
 
-如需在生產中進行密碼重設的相關資訊和連結，請參閱身分識別階段中的「[簡化密碼重設](identity-password-reset.md)」步驟。
+如需在生產中進行密碼重設的相關資訊和連結，請參閱身分識別階段中的「[簡化密碼重設](identity-password-reset.md#identity-pw-reset)」步驟。
 
 ## <a name="next-step"></a>下一步
 

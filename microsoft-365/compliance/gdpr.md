@@ -2,21 +2,20 @@
 title: GDPR
 description: 一般資料保護規定 (GDPR) 的 Microsoft 技術指導
 keywords: Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/13/2018
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: e8f23a73981070fc8115034c00c18e769a8765a3
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: e50395fc2d809f19ffe46a95c18abe06e67baba6
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285319"
 ---
 # <a name="gdpr"></a>GDPR
 
@@ -25,10 +24,25 @@ ms.locfileid: "26866554"
 - [資料主體要求](gdpr-data-subject-requests.md)
 - [外洩通知](gdpr-breach-notification.md)
 
-如需 Microsoft 如何協助您使用 GDPR 的詳細資訊，請參閱服務信任入口網站中的[快速入門：GDPR 責任支援](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)。
+如需 Microsoft 如何協助您處理 GDPR 的詳細資訊，請參閱信任中心上的 [GDPR 概觀](https://www.microsoft.com/zh-TW/trustcenter/privacy/gdpr/gdpr-overview)。
 
 
 ## <a name="learn-more"></a>深入了解
 [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+<br>
+<br>
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrOQI] 
+<br>
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1RP] 
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI] 
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrZgG] 
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrOQE] 
+<br>

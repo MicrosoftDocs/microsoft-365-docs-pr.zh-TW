@@ -1,5 +1,5 @@
 ---
-title: 部署適用於 Microsoft 365 企業版的 SharePoint Online
+title: 部署適用於 Microsoft 365 企業版的 SharePoint Online 和商務用 OneDrive
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/19/2018
@@ -8,19 +8,20 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-collaboration
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 推行並發揮 Microsoft 365 企業版 SharePoint Online 在組織中的價值，規劃這整個程序的步驟。
-ms.openlocfilehash: 7a9fc1733c64b3f639d2de0b5b64e20df60e04a9
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 30fe3a971a869a4609d6b8ef2809692b4d4e5420
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290897"
 ---
-# <a name="deploy-sharepoint-online-for-microsoft-365-enterprise"></a>部署適用於 Microsoft 365 企業版的 SharePoint Online
+# <a name="deploy-sharepoint-online-and-onedrive-for-business-for-microsoft-365-enterprise"></a>部署適用於 Microsoft 365 企業版的 SharePoint Online 和商務用 OneDrive
 
+*此工作負載包含在 Microsoft 365 企業版的 E3 和 E5 版本中*
 
 當您進行檔案儲存與共用、內容管理及共同作業時，SharePoint Online 和 Microsoft Teams 就是您的最佳選擇，也是打造 Microsoft 365 企業版團隊合作價值的重要元素。 
 
@@ -28,11 +29,9 @@ SharePoint Online 也具有進階的安全性功能，包括存取控制和權�
 
 如果您是 SharePoint Online 新手，請參閱 [SharePoint Online](https://products.office.com/sharepoint/sharepoint-online-collaboration-software) 與 [SharePoint 入門](https://support.office.com/article/Get-started-with-SharePoint-3a26444b-08c5-46ad-b80a-cda82b11b27b#ID0EAABAAA=Basics)。
 
-以下的階段與步驟會帶領您構想 SharePoint Online 在貴組織中的角色，透過一系列的漸進式推行讓組織導入，並向使用者推廣其使用價值。您應先完成[底層基礎結構](deploy-foundation-infrastructure.md)，再遵循這些指示進行部署。 
+以下的階段與步驟會帶領您構想 SharePoint Online 在貴組織中的角色，透過一系列的漸進式推行讓組織導入，並向使用者推廣其使用價值。 開始之前，請確定您已設定正確的[基礎結構](deploy-foundation-infrastructure.md)階段，您的 SharePoint Online 網站才能具備您需要的安全性功能。 
 
->[!Note]
->若要部署適用於 Microsoft 365 企業版的商務用 OneDrive，請參閱[適用於企業的 OneDrive 指南](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise)。
->
+若要部署適用於 Microsoft 365 企業版的商務用 OneDrive，請參閱[適用於企業的 OneDrive 指南](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise)。
 
 ## <a name="phase-1-envision"></a>第 1 階段：構想
 在這個階段，您要召集負責 SharePoint Online 部署的人員，並決定組織將如何使用它們來解決業務需求。

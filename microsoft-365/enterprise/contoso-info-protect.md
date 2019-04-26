@@ -3,22 +3,22 @@ title: Contoso Corporation 的資訊保護
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft 365 企業版中的資訊保護功能，在雲端中保護其數位資產。
-ms.openlocfilehash: 2f6619aa3c6051696644b055e6c766525ad3a26d
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f0869dfd661ae4dbaed74fdfd660c863deb20175
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276110"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的資訊保護
 
@@ -44,9 +44,9 @@ Contoso 執行資料分析，並且決定下列層級。
 |||||
 |:-------|:-----|:-----|:-----|
 |  | **存取** | **資料保留** | **資訊保護** |
-| 第 1 級︰低商業價值 (基準) | 允許所有人存取  | 6 個月 | 使用加密 |
-| 第 2 級︰中等的商業價值 (機密) | 允許 Contoso 員工、次承攬人和合作夥伴存取 <BR> <BR> 使用多重要素驗證 (MFA)、傳輸層安全性 (TLS) 和行動裝置應用程式管理 (MAM) | 2 年  | 使用雜湊值以確保資料完整  |
-| 第 3 層級：高商業價值 (高管制) | 允許高階主管以及工程部和製造部的主管存取 <BR> <BR> 版權管理系統 (RMS)，只有受控網路裝置  | 7 年  | 使用數位簽章以提供不可否認性  |
+| 低商業價值 (第 1 級：基準) | 允許所有人存取  | 6 個月 | 使用加密 |
+| 中等商業價值 (第 2 級：敏感性) | 允許 Contoso 員工、次承攬人和合作夥伴存取 <BR> <BR> 使用多重要素驗證 (MFA)、傳輸層安全性 (TLS) 和行動裝置應用程式管理 (MAM) | 2 年  | 使用雜湊值以確保資料完整  |
+| 高商業價值 (第 3 級：高管制) | 允許高階主管以及工程部和製造部的主管存取 <BR> <BR> 版權管理系統 (RMS)，只有受控網路裝置  | 7 年  | 使用數位簽章以提供不可否認性  |
 |||||
 
 ## <a name="contosos-path-to-information-protection-with-microsoft-365-enterprise"></a>Contoso 使用 Microsoft 365 企業版進行資訊保護的途徑
@@ -61,21 +61,21 @@ Contoso 使用下列步驟，針對其資訊保護需求準備 Microsoft 365 企
 
    Contoso 根據資料層級決定原則需求，這些原則需求是用來在移至雲端時保護現有的數位資產。
 
-3. 針對不同的資訊層級，建立 Azure 資訊保護標籤及其設定
+3. 針對不同的資訊層級建立敏感度標籤及其設定
 
-   Contoso 使用符合其資料層級的標題來修改預設 Azure 資訊保護標籤，並且設定「機密」和「高管制」標籤以使用 Azure 雲端金鑰進行加密。他們針對特定類型的營業秘密資料，建立「高管制」標籤的子標籤，並限制對於特定研究及開發群組的存取權。Contoso 也會將 Azure 資訊保護用戶端部署到所有 Windows 電腦和裝置。
+   Contoso 針對其資料層級建立了敏感度標籤，其中包括加密、權限和浮水印等敏感性和高管制標籤。
 
 4. 針對機密和高管制資料建立受保護的 SharePoint Online 網站，具有鎖定存取的權限
 
-   機密和高管制網站均已設定為[隔離網站](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites)，在其中預設 SharePoint Online 小組網站的權限已自訂為 Azure AD 群組。機密和高管制 SharePoint Online 網站也會以預設 Office 365 標籤進行設定。儲存在高管制 SharePoint Online 網站的檔案受到有範圍原則的 Azure 資訊保護 (AIP) 子標籤的保護。如需詳細信息，請參閱[針對高管制資料的 Microsoft Teams 和 SharePoint Online 網站](teams-sharepoint-online-sites-highly-regulated-data.md)。
+   機密和高管制網站均已設定為[隔離網站](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites)，在其中預設 SharePoint Online 小組網站的權限已自訂為 Azure Active Directory (Azure AD) 群組。 此外，也以使用對應的保留標籤來設定敏感性和高管制 SharePoint Online 網站。 儲存在高管制 SharePoint Online 網站中的檔案受到高管制敏感度標籤保護。 如需詳細資訊，請參閱[適用於高管制資料的 Microsoft Teams 和 SharePoint Online 網站](teams-sharepoint-online-sites-highly-regulated-data.md)案例。
 
 5.  從內部部署 SharePoint 網站和檔案共用將資料移至新的 SharePoint Online 網站
 
-    遷移至新 SharePoint Online 網站的檔案，會繼承指派給網站的預設 Office 365 標籤。
+    遷移至新 SharePoint Online 網站的檔案，會繼承指派給網站的預設保留標籤。
 
-6.  訓練員工如何針對新文件使用 Azure 資訊保護標籤、如何在建立新 SharePoint Online 網站時與 Contoso IT 互動，以及一律將數位資產儲存在 SharePoint Online 網站上
+6.  訓練員工如何針對新文件使用敏感度標籤、如何在建立新 SharePoint Online 網站時與 Contoso IT 互動，以及一律將數位資產儲存在 SharePoint Online 網站上
 
-    這個部分是雲端資訊保護轉換最困難的部分，Contoso IT 和管理階層必須改變組織員工總是標示其數位資產，而從不使用內部部署檔案共用這樣的一個資訊儲存壞習慣。
+    這個部分是雲端資訊保護轉換最困難的部分，Contoso IT 和管理階層必須改變組織員工總是在雲端儲存及標示其數位資產、抑制使用內部部署檔案共用，而從不使用第三方雲端儲存服務或 USB 磁碟機這樣的一個資訊儲存壞習慣。
 
 ## <a name="conditional-access-policies-for-information-protection"></a>資訊保護的條件式存取原則
 
@@ -97,7 +97,7 @@ Contoso 使用下列步驟，針對其資訊保護需求準備 Microsoft 365 企
 
 這些原則會確保：
 
-- 應用程式保護原則定義允許哪些應用程式，以及這些應用程式可以對組織資料執行什麼動作。
+- 允許使用應用程式，並由應用程式保護原則定義這些應用程式可以對組織資料執行哪些動作。
 - 電腦和行動裝置都必須符合規範。
 - Exchange Online 使用適用於 Exchange Online 的 Office 365 訊息加密。
 - SharePoint Online 會使用應用程式強制限制。
@@ -110,9 +110,9 @@ Contoso 使用下列步驟，針對其資訊保護需求準備 Microsoft 365 企
 |||||
 |:-------|:-----|:-----|:-----|
 | | **Office 365** | **Windows 10 和 Office 365 專業增強版** | **EMS** |
-| 第 1 級：基準  | SharePoint Online 和 Exchange Online 條件式存取原則 <BR> SharePoint Online 網站的權限 | Azure 資訊保護用戶端 <BR> BitLocker <BR> Windows 資訊保護 | 裝置條件式存取原則和行動裝置應用程式管理原則 |
-| 第 2 級：高機密 | 第 1 級：基準加上： <BR> <BR> Azure 資訊保護標籤 <BR> SharePoint Online 網站的 Office 365 標籤 <BR> SharePoint Online 和 Exchange Online 的 Office 365 資料外洩防護 <BR> 隔離的 SharePoint Online 網站  | 第 1 級：基準加上： <BR> <BR> 數位資產上的 Azure 資訊保護標籤 <BR> Office 365 進階資料控管 | 第 1 級：基準 |
-| 第 3 級：高管制 | 第 2 級：高機密加上： <BR><BR> 針對營業秘密資訊的使用自己的金鑰 (BYOK) 加密和保護 <BR> 適用於與 Office 365 服務互動之企業營運應用程式的 Azure Key Vault | 第 2 級：高機密 | 第 1 級：基準 |
+| 第 1 級：基準  | SharePoint Online 和 Exchange Online 條件式存取原則 <BR> SharePoint Online 網站的權限 | 敏感度標籤 <BR> BitLocker <BR> Windows 資訊保護 | 裝置條件式存取原則和行動裝置應用程式管理原則 |
+| 第 2 級：敏感性 | 第 1 級增強版： <BR> <BR> 敏感度標籤 <BR> SharePoint Online 網站的 Office 365 標籤 <BR> SharePoint Online 和 Exchange Online 的 Office 365 資料外洩防護 <BR> 隔離的 SharePoint Online 網站  | 第 1 級增強版： <BR> <BR> 數位資產上的敏感度標籤 <BR> Office 365 進階資料控管 | 第 1 級 |
+| 第 3 級：高管制 | 第 2 級增強版： <BR><BR> 針對營業秘密資訊的使用自己的金鑰 (BYOK) 加密和保護 <BR> 適用於與 Office 365 服務互動之企業營運應用程式的 Azure Key Vault | 第 2 級 | 第 1 級 |
 |||||
 
 

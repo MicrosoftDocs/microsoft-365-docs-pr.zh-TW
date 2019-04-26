@@ -3,22 +3,22 @@ title: 第 2 階段：身分識別
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 04/16/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 企業版身分識別基礎結構的部署步驟。
-ms.openlocfilehash: 7b5d62f5c09a1ea6d46449b113bff59dbf07ebad
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 932b6fb2cfeb86edcf708bdfdea55cdd8b580838
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288732"
 ---
 # <a name="phase-2-identity"></a>第 2 階段：身分識別
 
@@ -32,25 +32,20 @@ ms.locfileid: "26866524"
 
 ## <a name="plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure"></a>規劃及部署 Microsoft 365 企業版的身分識別基礎結構 
 
+開始之前，請觀看這段影片，以大略了解身分識別模型和 Microsoft 365 的驗證。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
+
 使用下列步驟在雲端規劃及部署新的身分識別基礎結構。您也可以使用這些步驟讓現有的內部部署或混合式身分識別基礎結構能搭配使用 Microsoft 365 企業版。 
 
 |||
 |:-------|:-----|
 |![](./media/stepnumbers/Step1.png)| [規劃使用者與群組](identity-plan-users-groups.md) |
-|![](./media/stepnumbers/Step2.png)| [保護全域系統管理員帳戶](identity-designate-protect-admin-accounts.md) |
-|![](./media/stepnumbers/Step3.png)| [設定隨選全域系統管理員](identity-privileged-identity-management.md) |
-|![](./media/stepnumbers/Step4.png)| [簡化密碼重設](identity-password-reset.md) |
-|![](./media/stepnumbers/Step5.png)| [設定多重要素驗證](identity-multi-factor-authentication.md) |
-|![](./media/stepnumbers/Step6.png)| [防護認證洩露](identity-azure-ad-identity-protection.md) |
-|![](./media/stepnumbers/Step7.png)| [同步處理目錄](identity-azure-ad-connect.md) |
-|![](./media/stepnumbers/Step8.png)| [監控同步處理健康情況](identity-azure-ad-connect-health.md) |
-|![](./media/stepnumbers/Step9.png)| [簡化密碼更新](identity-password-writeback.md) |
-|![](./media/stepnumbers/Step10.png)| [簡化使用者登入](identity-single-sign-on.md) |
-|![](./media/stepnumbers/Step11.png)| [自訂 Office 365 登入頁面](identity-customize-office-365-sign-in.md) |
-|![](./media/stepnumbers/Step12.png)| [設定自動授權](identity-group-based-licensing.md) |
-|![](./media/stepnumbers/Step13.png)| [監控租用戶和登入活動](identity-azure-ad-access-usage-reporting.md) |
-|![](./media/stepnumbers/Step14.png)| [允許使用者建立及管理自己的群組](identity-self-service-group-management.md) |
-|![](./media/stepnumbers/Step15.png)| [設定動態群組成員資格](identity-automatic-group-membership.md) |
+|![](./media/stepnumbers/Step2.png)| [保護您的特殊權限身分識別](identity-designate-protect-admin-accounts.md) |
+|![](./media/stepnumbers/Step3.png)| [設定混合式身分識別](identity-azure-ad-connect.md) |
+|![](./media/stepnumbers/Step4.png)| [設定安全的使用者驗證](identity-multi-factor-authentication.md) |
+|![](./media/stepnumbers/Step5.png)| [簡化使用者的存取權](identity-password-reset.md) |
+|![](./media/stepnumbers/Step6.png)| [使用群組更輕鬆地進行管理](identity-self-service-group-management.md) |
 
 完成這些步驟之後，請移至此階段的[允出準則](identity-exit-criteria.md)，以確定您符合 Microsoft 365 企業版的必要與選用條件。
 

@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解重要的 Windows 和 Office 安全性與相容性考量。
-ms.openlocfilehash: 3b0e9ae38f988b8c148fe67eeeb629a9fce23037
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: ff3adb5ef517c3b3115b867b585c090329ed6ac6
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290025"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>步驟 5：安全性與相容性考量事項
-
-從先前版本的 Windows 和 Office 移轉時，檢閱針對新的安全性及相容性功能作為現代化電腦部署的一部分，以及考量及常見封鎖的選項。
 
 ![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
@@ -36,10 +34,10 @@ ms.locfileid: "26866586"
 </table>
 
 >[!NOTE]
->安全性與相容性是我們建議的部署程序轉輪中第五個步驟，說明 Windows 10 和 Office 365 專業增強安全性與相容性考量。若要查看完整的桌面部署程序，請瀏覽[現代化電腦的部署中心](https://aka.ms/HowToShift) (英文)。
+>安全性與相容性是我們建議的部署程序轉輪中第五個步驟，說明 Windows 10 和 Office 365 專業增強安全性與相容性考量。 若要查看完整的桌面部署程序，請瀏覽[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
-Windows 10 中許多安全性相關功能都在驅動轉換至較新的平台。此外，使用 Azure Active Directory 與 Office 365 中的雲端服務和身分識別選項整合能為您的資料、裝置和使用者帶來新的核持續更新保護的存取。
+現在是時候檢閱可在部署 Windows 10 和 Office 365 專業增強版時以新的安全性及合規性功能作為目標的選項，以及檢閱在從先前版本的 Windows 和 Office 移轉時的考量及常見阻礙。 Windows 10 中許多安全性相關功能都在驅動轉換至較新的平台。 此外，使用 Azure Active Directory 與 Office 365 中的雲端服務和身分識別選項整合能為您的資料、裝置和使用者帶來新的核持續更新保護的存取。
 
 ## <a name="overcoming-potential-security-related-deployment-blockers"></a>克服潛在的安全性相關部署封鎖
 

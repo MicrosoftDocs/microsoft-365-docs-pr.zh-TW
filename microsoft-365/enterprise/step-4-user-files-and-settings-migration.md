@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何移轉使用者檔案和設定。
-ms.openlocfilehash: 51811cf972328cc26687b45fb65e2bdd6d58af1f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: cb5d670d06b284bb9191447ce461835728223f27
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291729"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>步驟 4：使用者檔案和設定移轉
 
-將使用者的檔案及設定移動至其新的或更新的電腦是非常重要的程序，絕對不可失敗。您可以手動移轉每一部電腦，或者選擇下列其中一種方式來自動化程序。無論選擇何種移轉方法，有三個項目要處理 – 使用者檔案的移轉、其設定及管理 Windows 10 [開始] 和工作列版面配置。
+將使用者的檔案和設定移至其新的或重新整理的電腦是很重要的程序，因此絕對不能失敗。 您可以手動遷移每一部電腦，也可以選擇下列其中一個方法來將此程序自動化。 無論選擇何種移轉方法，都必須解決三個主要的考量，分別是傳輸使用者的檔案、其設定，以及管理 Windows 10 的「開始」和工作列版面配置。
 
 ![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
@@ -36,7 +36,7 @@ ms.locfileid: "26866573"
 </table>
 
 >[!NOTE]
->儘管您可以繼續使用過去使用過的移轉程序，但在移轉至 Office 365 專業增強版時，建議您使用 OneDrive「已知資料夾移動」 (如下所示)。若要查看完整的桌面部署程序，請造訪[現代桌面部署中心](https://aka.ms/HowToShift)。
+>儘管您可以繼續使用過去使用過的移轉程序，但在移轉至 Office 365 專業增強版時，建議您使用 OneDrive「已知資料夾移動」(如下所示)。 若要查看完整的桌面部署程序，請瀏覽[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
 大型部署中最棘手且通常最需手動執行的其中一項工作就是移轉使用者的檔案和設定。本文將討論您可以使用的選項，以便將使用者移轉至新的、重新整理及影像重新處理的電腦。

@@ -13,30 +13,28 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解作業系統部署與功能更新的選項。
-ms.openlocfilehash: 6aae2fb39937bec1eebfdc11e403f3835cb895cd
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: b860a56ba2ed163311a8a92d8dd408dcb8983821
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290075"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>步驟 6：作業系統部署與功能更新
-
-了解選項並準備好透過 System Center Configuration Manager 或 Microsoft 部署工具組使用升級和映像方法部署作業系統。
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
 
 <table>
 <thead>
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Step 6" height="144" width="144" /></td>
-<td><p><strong>步驟 6：作業系統部署與功能更新</strong></p>
+<td><p><strong>步驟 6：作業系統部署與功能更新</strong> (英文)</p>
 <p>工作序列型部署是用於自動化大型、階段部署，以進行裸機安裝、電腦重新整理和電腦取代。升級工作序列也會協助您保持在最新的主要半年更新。Windows Autopilot 是最近的新增功能，讓新電腦收購程序現代化。</p></td>
 <td><a href="https://aka.ms/ddev6" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-19.png" alt="Step 6" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->作業系統部署和功能是我們建議的部署程序轉輪中第六個步驟，說明 Windows 10 作業系統部署、升級與功能更新。若要查看完整的桌面部署程序，請瀏覽[現代化電腦的部署中心](https://aka.ms/HowToShift)。
+>作業系統部署和功能更新是我們建議的部署程序中的第六個步驟，其說明了 Windows 10 作業系統部署、升級與功能更新。 若要查看完整的桌面部署程序，請瀏覽[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
 如果您到目前為止已遵循部署程序轉輪，您應至少已部分完成裝置和應用程式整備的步驟、準備好基礎結構、設定並收集應用程式套件、計劃就位可移轉使用者檔案及設定預設設定，以及計劃好保留您現有的安全性控制項，並可能部署新的控制項。
@@ -109,7 +107,7 @@ ms.locfileid: "26866414"
 
 ### <a name="windows-autopilot"></a>Windows Autopilot
 
-Windows 10 的新選項是設定新的電腦作為使用 Windows Autopilot 時硬體更新週期的一部分。您可以在這裡使用支援的硬體廠商來自訂預設 Windows 安裝體驗 – 例如透過排除呈現給使用者的選項，像是授權合約或遙測設定。
+Windows 10 的新選項使用Windows Autopilot 將新電腦設定配置為硬體更新周期的一部分。 您可以在這裡可以與支援的硬體供應商合作，自訂預設的 Windows 安裝體驗 - 例如，透過減少提供給使用者的選項，如授權合約或診斷資料設定。
 
 接著，當使用者在安裝程式期間使用其 Azure AD 認證登入電腦時，裝置會註冊為 Microsoft Intune，也可以接管部署程序及套用應用程式、軟體更新設定與合規性原則。Windows Autopilot 也可以選擇性地防止使用者在佈建完成之前存取第一個工作階段。
 
@@ -117,9 +115,21 @@ Windows 10 的新選項是設定新的電腦作為使用 Windows Autopilot 時�
 
 [Windows Autopilot 必要條件](https://docs.microsoft.com/zh-TW/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites) (英文)
 
+## <a name="windows-update-for-business-for-feature-updates"></a>商務用 Windows 更新功能更新
+
+商務用 Windows Update是一項免費服務，透過將裝置直接連線到 Windows Update 服務，IT 專業人員可以使 Windows 10 裝置始終保持最新狀態。 可以透過群組原則或 MDM 解決方案 (如 Microsoft Intune) 來設定商務用 Windows Update，並可讓 IT 專業人員建立[部署通道](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-deployment-rings-windows-10-updates)以驗證新組建。 這項工具已整合至現有管理工具中，如 Windows Server Update Services (WSUS)、System Center Configuration Manager (目前分支) 和 Microsoft Intune。 此外，商務用 Windows Update支援點對點傳送，以協助優化頻寬效率並減少網路擁塞。
+
+如需商務用 Windows Update 的詳細資訊，請參閱以下文件：
+
+- [使用商務用 Windows Update 部署更新](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-manage-updates-wufb) (機器翻譯)
+- [設定商務用 Windows Update](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-configure-wufb) (機器翻譯)
+- [整合商務用 Windows Update 與現有的管理工具](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-integrate-wufb) (機器翻譯)
+- [使用群組原則來設定商務用 Windows Update](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-wufb-group-policy) (機器翻譯)
+- [使用 Microsoft Intune 來設定商務用 Windows Update](https://docs.microsoft.com/zh-TW/intune/windows-update-for-business-configure) (機器翻譯)
+
 ## <a name="next-step"></a>下一步 
 
-## <a name="step-7-windows-and-office-as-a-servicehttpsakamsmdd7"></a>[步驟 7：Windows 和 Office 即服務](https://aka.ms/mdd7) (英文)
+## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[步驟 7：Windows 和 Office 服務](https://aka.ms/mdd7)
 
 ## <a name="previous-step"></a>上一步
 

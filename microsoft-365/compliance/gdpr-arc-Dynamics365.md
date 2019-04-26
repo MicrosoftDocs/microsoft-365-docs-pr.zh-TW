@@ -2,21 +2,21 @@
 title: 符合 GDPR 的 Dynamics 365 責任整備程度檢查清單
 description: 提供使用 Dynamics 365 時，便於存取支援 GDPR 所需資訊的方式。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 05/24/2018
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: b358776da0d2cdd676ac79736efea1908cd2a961
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: c175e10e15bb35993b5234a76b6f7ca61e03dd3a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283566"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>符合 GDPR 的 Dynamics 365 責任整備程度檢查清單
 
@@ -99,7 +99,7 @@ ms.locfileid: "26866387"
 | PII 傳輸的目的地國家/地區和組織 (7.5.2)         | 客戶應了解個人資料已傳輸到或可能傳輸到哪些國家/地區，並要能夠向個人提供此資訊。如果是由第三方/處理者執行此傳輸，則客戶應從處理者獲得此資訊。                                                                                                                                                  | 說明由 Microsoft 服務傳輸的個人資料類型、傳輸雙方的位置、以及傳輸的法律保障。<br>- Dynamics 365 針對客戶資料保護影響評估的重要資訊 [2]                                                       | (30)(1)(e)                                      |
 | PII (個人資料) 傳輸的記錄 (7.5.3)                           | 客戶應該維護與個人資料傳輸相關的所有必要記錄。在第三方/處理器執行移轉的位置，客戶應該確定他們維護適當的記錄並視需要取得。                                                                                                                                                    | 說明由 Microsoft 服務傳輸的個人資料類型、傳輸雙方的位置、以及傳輸的法律保障。<br>- Dynamics 365 針對客戶資料保護影響評估的重要資訊 [2]                                                       | (30)(1)(e)                                      |
 | 向第三方揭露 PII 的記錄 (7.5.4)                            | 客戶應該了解有關記錄向誰公開個人資料的規定，包括向執法機關揭露。如果是由第三方/處理者揭露這些資料，客戶應確保他們保留適當的記錄並能在必要時取得記錄。                                                                                                 | 關於個人資料 (包括可用揭露記錄) 揭露收件者類別的提供文件。<br>- 誰根據哪些條款可以存取您的資料 [[7](gdpr-arc-Dynamics365.md#7)]                                                                                                              | (30)(1)(d)                                      |
-| 聯合控制者 (7.5.5)                                                      | 客戶應該判斷他們是否與其他組織一起作為聯合的控制者，並適當地記錄和分配責任。                                                                                                                                                                                                                                                           | Dynamics 365 是個人資料的處理器。<br>- 線上服務條款 [1] <!-- look at this one --> 請參閱「處理器和控制者角色及責任」[1]**                                                                                                                                        | (26)(1)、(26)(2)、(26)(3)                       |
+| 聯合控制者 (7.5.5)                                                      | 客戶應該判斷他們是否與其他組織一起作為聯合的控制者，並適當地記錄和分配責任。                                                                                                                                                                                                                                                           | Dynamics 365 是個人資料的處理器。<br>- 線上服務條款 [1] <!-- look at this one -->請參閱「處理器和控制者角色及責任」**[1]                                                                                                                                        | (26)(1)、(26)(2)、(26)(3)                       |
 |                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                    |                                                 |
 
 <br>

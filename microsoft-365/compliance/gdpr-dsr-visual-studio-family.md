@@ -4,21 +4,21 @@ description: GDPR 的 Visual Studio 系列資料主體要求
 keywords: Visual Studio、Visual Studio Code、Visual Studio for Mac、Visual Studio 文件、隱私權、GDPR
 localization_priority: Priority
 audience: itpro
-ms.prod: visual-studio
+ms.prod: visual-studio-family
 ms.topic: article
 ms.date: 05/24/2018
 author: PoulChapman
-ms.author: pchapman
-manager: scalla
+ms.author: olholder
+manager: pchapman
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bba28648cbee6dd32c2005bcb584e97a4c534e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 5b07cefa4a850d5de7c858f180c8f7688fd0a6d7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286921"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>GDPR 的 Visual Studio 系列資料主體要求
 
@@ -101,7 +101,7 @@ Microsoft 會收集資料，以協助我們重現您使用 Visual Studio 系列�
 
 若要檢視與您意見反應相關的資料，請遵循下列步驟：
 
-1. 登入[開發人員社群](https://developercommunity.visualstudio.com)。從右上角按一下您的設定檔，然後選取 [設定檔和喜好設定]****。
+1. 登入[開發人員社群](https://developercommunity.visualstudio.com)。 從右上角按一下您的設定檔，然後選取 [設定檔和喜好設定]****。
 2. 按一下任一個 [設定檔]****、[通知]****、[活動]**** 和 [附件]**** 索引標籤來檢視提交至意見反應系統的資料。
    1. [設定檔]**** 是指您的[開發人員社群](https://developercommunity.visualstudio.com)設定檔，其中包含使用者名稱、電子郵件地址、關於等等。
    2. [通知]**** 是控制您接收電子郵件通知的方式。
@@ -121,7 +121,7 @@ Microsoft 會收集資料，以協助我們重現您使用 Visual Studio 系列�
 
 若要開始匯出，請遵循下列步驟：
 
-1. 登入[開發人員社群](https://developercommunity.visualstudio.com)。從右上角按一下您的設定檔，然後選取 [設定檔和喜好設定]****。
+1. 登入[開發人員社群](https://developercommunity.visualstudio.com)。 從右上角按一下您的設定檔，然後選取 [設定檔和喜好設定]****。
 2. 按一下 [隱私權]**** 索引標籤，然後按一下 [建立封存]**** 以要求匯出您的資料。
 3. [封存狀態]**** 將會更新，以顯示我們正在準備資料。資料可供使用之前的時間長度會依據我們所需匯出的資料量而定。
 4. 一旦資料就緒之後，我們會傳送電子郵件給您。

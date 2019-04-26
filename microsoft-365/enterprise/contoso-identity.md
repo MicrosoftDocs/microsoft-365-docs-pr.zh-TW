@@ -3,32 +3,32 @@ title: Contoso Corporation 的身分識別
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 01/17/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用身分識別即服務 (IDaaS)，為其員工提供雲端式驗證，為其合作夥伴和客戶提供同盟驗證。
-ms.openlocfilehash: 7571aa455cac4da9e56d7d2001ae4421c3769c94
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: bcd83eaafb5df86d9a660aeb74b2e97f7bdc6b7b
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277572"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的身分識別
 
 **摘要：** Contoso 如何利用識別即服務 (IDaaS)，為其員工提供雲端式驗證，為其合作夥伴和客戶提供同盟驗證。
 
-Microsoft 在具有 Azure Active Directory (AD) 的雲端供應項目之間提供身分識別即服務 (IDaaS)。為了採用 Microsoft 365 企業版，Contoso 的 IDaaS 解決方案必須運用其內部部署的身分識別提供者，並且仍然包含使用其現有信任的第三方身分識別提供者的同盟驗證。
+Microsoft 在具有 Azure Active Directory (AD) 的雲端供應項目之間提供身分識別即服務 (IDaaS)。 為了採用 Microsoft 365 企業版，Contoso 的 IDaaS 解決方案必須運用其內部部署的身分識別提供者，並且仍然包含使用其現有信任的第三方身分識別提供者的同盟驗證。
 
-## <a name="contosos-windows-server-ad-forest"></a>Contoso 的 Windows Server AD 樹系
+## <a name="contosos-active-directory-domain-services-forest"></a>Contoso 的 Active Directory Domain Services 樹系
 
-Contoso 在 contoso.com 上會使用單一 Windows Server Active Directory (AD) 樹系，以及七個分屬全球各地區的子網域。總部、地區中心辦公室和衛星辦公室包含用於本機驗證與授權的網域控制站。
+Contoso 在 contoso.com 上會使用單一 Active Directory Domain Services (AD DS) 樹系，以及七個分屬全球各地區的子網域。 總部、地區中心辦公室和衛星辦公室包含用於本機驗證與授權的網域控制站。
 
 圖 1 顯示 Contoso 樹系，具有包含區域中樞之不同世界各地的區域網域。
 
@@ -36,7 +36,7 @@ Contoso 在 contoso.com 上會使用單一 Windows Server Active Directory (AD) 
  
 **圖 1：Contoso 的樹系和世界各地的網域**
 
-Contoso 希望在 contoso.com 樹系中使用的帳戶和群組，以對其雲端式應用程式和工作負載進行驗證及授權。
+Contoso 希望在 contoso.com 樹系中使用帳戶和群組，以對其 Microsoft 365 工作負載和服務進行驗證及授權。
 
 ## <a name="contosos-federated-authentication-infrastructure"></a>Contoso 的同盟驗證基礎結構
 
@@ -55,41 +55,32 @@ DMZ 中的 AD FS 伺服器會驗證客戶的認證以存取公用網站，以及
 
 Contoso 決定要保留此基礎結構，並讓它專屬於客戶和合作夥伴驗證。Contoso 的身分識別工程師會調查此基礎結構到 Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) 與 [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) 解決方案的轉換。
 
-## <a name="hybrid-identity-with-pass-through-authentication-for-cloud-based-authentication"></a>混合式身分識別，具有雲端式驗證的通過驗證
+## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>用於雲端式驗證的混合式身分識別和密碼雜湊同步
 
-Contoso 想要使用其內部部署 Windows Server AD 樹系來驗證 Microsoft 365 雲端資源。它決定使用具有密碼雜湊同步處理 (PHS) 的通過驗證 (PTA)。
+Contoso 公司想要使用其內部部署 AD DS 樹系來對 Microsoft 365 雲端資源進行驗證。 其決定使用密碼雜湊同步 (PHS)。
 
-### <a name="pta-authentication"></a>PTA 驗證
+PHS 會同步處理內部部署 AD DS 樹系與 Microsoft 365 企業版訂閱中的 Azure AD 租用戶，並複製使用者和群組帳戶以及雜湊版本的使用者帳戶密碼。 
 
-針對使用者認證的驗證，Contoso 使用 PTA。當 Contoso 使用者存取雲端式資源時，它傳送的認證會由 Azure AD 傳遞至 Contoso 總部資料中心中執行驗證代理程式的伺服器。其中一部驗證代理程式伺服器會代表 Azure AD 來驗證使用者認證。
-
-圖 3 顯示 Contoso 總部中執行驗證代理程式的一組伺服器，這些伺服器會處理從 Azure AD 傳遞給它們的驗證要求。 
-
-![](./media/contoso-identity/contoso-identity-fig3.png)
- 
-**圖 3：Contoso 的通過驗證基礎結構**
-
-Contoso 選擇 PTA 來履行安全性需求，要求評估所有驗證嘗試以了解是否對內部部署 Windows Server AD 樹系進行使用者帳戶狀態、密碼原則及登入時數的立即變更。
-
-### <a name="phs"></a>PHS
-
-PHS 會同步處理內部部署 Windows Server AD 樹系與 Microsoft 365 企業版訂閱中的 Azure AD 租用戶，複製使用者和群組帳戶以及雜湊版本的使用者帳戶密碼。Contoso 決定使用 PHS，在 PTA 無法使用時，提供直接以 Azure AD 租用戶進行驗證的替代方法。
-
-為了執行後續的目錄同步處理，Contoso 已在巴黎資料中心的伺服器上部署 Azure AD Connect 工具。圖 4 顯示執行 Azure AD Connect 的伺服器正在輪詢 Contoso Windows Server AD 樹系是否有變更，然後將這些變更與 Azure AD 租用戶進行同步處理。
+為了執行後續的目錄同步處理，Contoso 已在巴黎資料中心的伺服器上部署 Azure AD Connect 工具。 圖 3 顯示執行 Azure AD Connect 的伺服器正在輪詢 Contoso AD 樹系是否有變更，然後將這些變更與 Azure AD 租用戶進行同步。
 
 ![](./media/contoso-identity/contoso-identity-fig4.png)
  
-**圖 4：Contoso 的 PHS 目錄同步處理基礎結構**
+**圖 3：Contoso 的 PHS 目錄同步處理基礎結構**
 
-## <a name="conditional-access-policies-for-identity"></a>身分識別的條件式存取原則
 
-Contoso 建立一組 Azure AD [條件式存取原則](identity-access-policies.md)，以確保當 Azure AD 判斷驗證要求有登入風險時，會強制執行多重要素驗證和密碼變更。
+## <a name="conditional-access-policies-for-identity-and-device-access"></a>身分識別和裝置存取的條件式存取原則
 
-圖 5 顯示身分識別的條件式存取原則結果集合。
+Contoso 已針對三個保護層級建立一組 Azure AD 和 Intune 的[條件式存取原則](identity-access-policies.md)：
+
+- **基本**保護適用於所有使用者帳戶
+- **機密**保護適用於高階領導人和主管人員
+- **高管制**保護適用於財務、法務和研究部門中的特定使用者，他們需存取高管制的資料
+
+圖 4 顯示身分識別及裝置條件式存取原則的結果集合。
 
 ![](./media/contoso-identity/contoso-identity-fig5.png)
  
-**圖 5：Contoso 的身分識別型條件式存取原則**
+**圖 4：Contoso 的身分識別及裝置條件式存取原則**
 
 ## <a name="next-step"></a>下一步
 

@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解 Contoso 如何在 Microsoft 365 企業版中使用 EMS，來管理裝置和在裝置上執行的應用程式。
-ms.openlocfilehash: e6b6f822a8c0ea26b3d899e3531653b19e225d65
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f47d6a1ee608d33802f1c523d3b954af3771f212
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278039"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 的行動裝置管理
 
@@ -46,7 +46,10 @@ Contoso 不會使用 Intune 來：
 這是 Contoso 設定行動裝置管理基礎架構的方式：
 
 - 將 Intune 設定為行動裝置管理 (MDM) 的授權單位，並在 Azure 上使用 Intune 管理內容及裝置
-- 建立適用於 Azure AD 群組的裝置群組，以進行註冊和使用 Intune 設定和條件式存取原則
+- 建立適用於 Azure AD 群組的裝置，以進行註冊和使用 Intune 設定及以裝置為基礎的條件式存取原則
+
+  如需詳細資訊，請參閱 [Contoso 的條件式存取原則](contoso-identity.md#conditional-access-policies-for-identity-and-device-access)。
+
 - 啟用 Apple 裝置平台以支援員工使用 iPad、iMac、iPhone 及 iPhone 式公司手機
 - 建立 Contoso 特定的條款與條件原則，會在行動裝置安裝 Contoso 公司入口網站時出現
 - 對於未註冊的裝置，則需要一組 Mobile Application Management (MAM) 原則才能授權存取 Office 365 服務

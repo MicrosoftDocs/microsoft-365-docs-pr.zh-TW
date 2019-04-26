@@ -12,17 +12,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解如何透過通訊和訓練，讓使用者準備迎接現代化電腦。
-ms.openlocfilehash: 7737828600a9708b0b422a1fada6e0296de67f0f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: 了解如何透過通訊和訓練，讓終端使用者準備迎接 Windows 10 和 Office 365 專業增強版。
+ms.openlocfilehash: fb0dc2dfc571d61c9d480204d0e3e12c58cf3aca
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289903"
 ---
 # <a name="step-8-user-communications-and-training"></a>步驟 8：使用者的通訊和訓練
-
-使用 Azure Active Directory 等，通知並為使用者做好準備迎接現代化工作體驗，橫跨 Office 365、Windows 10 和新的安全性和相容性控制。
 
 ![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
@@ -31,15 +29,15 @@ ms.locfileid: "26866696"
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>步驟 8：使用者的通訊和訓練</strong></p>
 <p>將電腦移至 Windows 10 和 Office 365 專業增強版時，請確認使用者了解新版體驗與新的工作方式。了解如何利用 Microsoft FastTrack 的使用者採用協助、訓練教材和通訊範本，以及全新的方式來監控使用者接受及其使用方式。</p></td>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->使用者的通訊和訓練是建議的部署程序中第八個步驟，包含祕訣與建議，以告知並為使用者做好準備。若要查看完整的電腦部署程序，請造訪[現代化電腦的部署中心](https://aka.ms/HowToShift)。
+>使用者的通訊和訓練是建議的部署程序中第八個步驟，包含祕訣與建議，以告知並為使用者做好準備。 若要查看完整的桌面部署程序，請瀏覽[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
-此處秘訣是找出介紹更新的方法 -- 某些使用者可能會擔心中斷其生產力或變更工作流程，或必須學習新的項目。
+使用 Azure Active Directory 通知並為使用者做好準備迎接現代化工作體驗 (橫跨 Office 365、Windows 10 和新的安全性和相容性控制) 是推動採用的關鍵部分。 此處秘訣是找出介紹更新的方法 -- 某些使用者可能會擔心中斷其生產力或變更工作流程，或必須學習新的項目。
 
 好消息是如果您從 Windows 7 和 Office 2010 或 Office 2013 移動，會有很多人熟悉在個人裝置上執行的 Windows 10 和更新版本 Office，這有助於減少變更的影響。
 
@@ -91,7 +89,7 @@ ms.locfileid: "26866696"
 
 一旦您滿意第一個階段後，可以針對第二個試驗階段設定更大組的目標使用者。這應包含使用者角色、裝置類型、Windows 應用程式和 Office 增益集的典型組合。從這些群組傳回的資料會透過 Analytics 用來鎖定初始階段 3 更廣泛的部署。
 
-請記住，此階段和未來階段的所有電腦應記錄至 Analytics 服務，您才能收集關於裝置和應用程式健康情況的遙測資料，以及從傳遞最佳化的頻寬節省和 Windows Hello 登入的使用。
+請記住，此階段和未來階段的所有電腦應記錄至 Analytics 服務，您才能收集關於裝置和應用程式健康情況的診斷資料，以及從傳遞最佳化的頻寬節省和 Windows Hello 登入的使用。
 
 此階段特別重要的是傳達變更，並協助使用者充分利用新功能。使用者通常可以取消排列優先順序或忽略電子郵件或來自 IT 的其他通訊，因此這有助於管理，以取得協助傳達變更並提升新工具和技術的採用。
 
@@ -123,14 +121,14 @@ Microsoft IT 展示系列也是 Windows 10 部署相關內容很好的資源。�
 
 ### <a name="phase-3-and-beyond-broad-production-deployment"></a>階段 3 及其後：廣泛生產部署 
 
-您到達廣泛部署階段時，您將已精簡程序、通訊、訓練與自助服務工具。現在，您可以使用透過遙測所收集的資料將更多電腦設為目標。
+您到達廣泛部署階段時，您將已精簡程序、通訊、訓練與自助服務工具。 現在，您可以使用所收集的診斷資料將更多電腦設為目標。
 
 以 IT 部門、服務台、使用者和網路容量可管理的速率進行部署。您可以隨時返回部署程序轉輪中的步驟 2，使用對等快取、LEDBAT 及其他技術以進一步最佳化您的網路，有助於更快速地傳輸部署的相關資料。
 
-除了透過分析工具監視的遙測，您也可以透過系統管理中心工作負載的詳細使用量報告，以及透過 Power BI 使用系統管理儀表板，來監視 Office 365 和 Microsoft 365 服務使用量。這些是很好的工具，當您推行新的共同作業工具 (如 Microsoft Teams) 或共用檔案的新方式 (如 OneDrive) 時，可協助設定及追蹤目標。
+除了透過分析工具監視的診斷資料，您也可以透過系統管理中心工作負載的詳細使用量報告，以及透過 Power BI 使用系統管理儀表板，以更細微的方式來監視 Office 365 和 Microsoft 365 服務使用量。 這些是很好的工具，當您推行新的共同作業工具 (如 Microsoft Teams) 或共用檔案的新方式 (如 OneDrive) 時，可協助設定及追蹤目標。
 
 新技術的接受與採用會在組織中每部電腦都安裝 Windows 10 和 Office 365 專業增強版後持續進行。若沒有花時間來通知及訓練使用者使用新功能，使用者不一定會變更運作的方式。最後，新的服務模型會在 Windows 進行中的半年排程，或 Office 的每月排程中提供新功能，通訊將會持續進行。
 
 ## <a name="previous-step"></a>上一步 
 
-## <a name="step-7-windows-and-office-as-a-servicehttpsakamsmdd7"></a>[步驟 7：Windows 和 Office 即服務](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[步驟 7：Windows 和 Office 服務](https://aka.ms/mdd7)

@@ -14,11 +14,11 @@ ms.collection:
 ms.custom: ''
 description: 了解部署 Microsoft 365 企業版底層基礎結構階段的一些方法。
 ms.openlocfilehash: fb4cf301f1e450cd5db9b392c0ca2d8e3767242a
-ms.sourcegitcommit: e749e2db2a15bb52b1a2857dbccdf55c31cff3d7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30340113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289540"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 企業版底層基礎結構部署策略
 
@@ -87,7 +87,7 @@ IT 基礎結構包含後端服務和向終端使用者推出的新增或改進�
 試驗使用者體驗的簡化範例：
 
 - 我需要於 12 月使用智慧型手機啟用 MFA。(身分識別)
-- 我於 3 月在 Windows 8.1 電腦上安裝了 Windows 10 企業版。(Windows 10 企業版)
+- 我於 3 月在 Windows 8.1 電腦上安裝了 Windows 10 企業版。 (Windows 10 企業版)
 - 我於 6 月安裝了 Office 365 專業增強版，取代原本的 Office 2013。(Office 365 專業增強版)
 - 我於 9 月取得裝置註冊和 App，並套用條件式存取原則。(行動裝置管理)
 - 我於 12 月安裝了 Azure 資訊保護用戶端，並接受有關如何將標籤套用至文件的訓練。(資訊保護)
@@ -119,7 +119,7 @@ IT 基礎結構包含後端服務和向終端使用者推出的新增或改進�
 試驗使用者體驗的簡化範例： 
 
 - 我需要於 12 月使用智慧型手機啟用 MFA。(身分識別)
-- 我於 2 月在 Windows 8.1 電腦上安裝了 Windows 10 企業版。(Windows 10 企業版)
+- 我於 2 月在 Windows 8.1 電腦上安裝了 Windows 10 企業版。 (Windows 10 企業版)
 - 我於 4 月安裝了 Office 365 專業增強版，取代原本的 Office 2013。(Office 365 專業增強版)
 - 我於 6 月取得裝置註冊和 App，並套用條件式存取原則。(行動裝置管理)
 - 我於 8 月安裝了 Azure 資訊保護用戶端，並接受有關如何將標籤套用至文件的訓練。(資訊保護)

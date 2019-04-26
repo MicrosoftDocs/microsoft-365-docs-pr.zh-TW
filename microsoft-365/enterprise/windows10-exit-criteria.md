@@ -3,28 +3,28 @@ title: 階段 3：Windows 10 企業版基礎結構允出準則
 ms.author: greglin
 author: greg-lindsay
 manager: laurawi
-ms.date: 06/01/2018
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的組態符合 Windows 10 企業版的 Microsoft 365 企業版準則。
-ms.openlocfilehash: 7ac79fec93e4b4aae0b075891917e2f88432b80f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 1e8a2e748f42431465c027acbc468f4c5891d320
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289512"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>階段 3：Windows 10 企業版基礎結構允出準則
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-如果 Windows 10 企業版基礎結構符合下列條件，就可以移至階段 4。
+請確定您的 Windows 10 企業版基礎結構符合下列必要準則，而且您已將這些視為選擇性準則。
 
 <a name="crit-windows10-step1"></a>
 ## <a name="required-your-microsoft-365-domains-are-added-and-verified"></a>必要：您的 Microsoft 365 網域已新增並經過驗證
@@ -37,7 +37,7 @@ ms.locfileid: "26866508"
 
 ## <a name="optional-your-users-are-added-and-licensed"></a>選用：您的使用者已新增並或獲得授權
 
-已新增您的使用者的對應帳戶 (不是直接新增到 Office 365 和 Intune 訂用帳戶的 Azure AD 租用戶，就是從您的內部部署 Windows Server AD 同步處理目錄)。
+已新增您的使用者的對應帳戶 (不是直接新增到 Office 365 和 Intune 訂用帳戶的 Azure AD 租用戶，就是從您的內部部署 Active Directory Domain Services (AD DS) 同步處理目錄)。
 
 新增使用者後，您可以將 Microsoft 365 企業版授權指派給他們 (不是直接指派為全域管理員或使用者管理員，就是透過群組成員資格自動指派)。
 
@@ -70,12 +70,12 @@ ms.locfileid: "26866508"
 若要使用 Windows Autopilot 在新的裝置上部署及自訂 Windows 10 企業版，您必須：
 
 - 設定適當的 Windows 診斷資料層級
-- 完成 Windows Autopilot 的先決條件，其中包含：
-- 裝置註冊和 OOBE 自訂
-- OOBE 公司品牌推廣
-- Microsoft Intune 中的 MDM 自動註冊
-- Windows Autopilot 所用雲端服務的網路連線能力
-- 裝置必須與 Windows 10 (版本 1703 或更新版本) 一起預先安裝
+- 設定 Windows Autopilot 的先決條件，其中包含：
+   - 裝置註冊和 OOBE 自訂
+   - OOBE 公司品牌推廣
+   - Microsoft Intune 中的 MDM 自動註冊
+   - Windows Autopilot 所用雲端服務的網路連線能力
+- 已預先安裝 Windows 10 (版本 1703 或更新版本) 的裝置
 - 為您的組織選取 Windows Autopilot Deployment 方案
 
 Windows Autopilot 設定好之後，您就可以使用它來設定和自訂 Windows 10 企業版，以獲得全新的體驗 (OOBE)：
@@ -119,9 +119,10 @@ Windows Autopilot 會設定裝置並將它連線到 Azure AD。
 
 如有需要，[步驟 5](windows10-enable-security-features.md#windows10-sec-atp) 可協助您符合這項要求。
 
+## <a name="results-and-next-steps"></a>結果和後續步驟
 
-## <a name="next-phase"></a>下一個階段
+您的 Windows 10 企業版基礎結構已準備好可以在新裝置上開始安裝，以及在執行舊版 Windows 的裝置上開始就地升級，且您會使用 Windows 10 企業版的重要安全性功能。
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| Microsoft 365 企業版 端對端部署程序的下一個階段是 [Office 365 ProPlus](office365proplus-infrastructure.md)。 |
+|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| 如果您會遵循 Microsoft 365 企業版的端對端部署階段，則下一個階段是 [Office 365 專業增強版](office365proplus-infrastructure.md)。 |

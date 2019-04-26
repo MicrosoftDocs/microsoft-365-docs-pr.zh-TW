@@ -4,18 +4,19 @@ description: 當您工作以符合國際標準組織 (ISO) 需求時可以遵循
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, ISO, ISO 27001
 author: BrendaCarter
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: bcarter
 manager: laurawi
-ms.collection: GDPR
-ms.openlocfilehash: 1e0232759bd33fb2bcaf66f7afd5334eed43fbbf
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+audience: itpro
+ms.collection:
+- M365-security-compliance
+ms.openlocfilehash: 3f81ad10d4549f9f28b5df4a0e090fb38a54bf6f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283455"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 ISO 27001 行動計畫 — 前 30 天、90 天及過後的首要工作
 
@@ -47,7 +48,7 @@ ISO/IEC 27001 是用來實作資訊安全性管理系統 (ISMS) 的國際標準�
 |**適用範圍**|**工作**|
 |了解您的 ISO 27001 控管和合規性需求。|• 藉由在 [Microsoft 服務信任入口網站](https://support.office.com/article/get-started-with-the-microsoft-service-trust-portal-f30e2353-0bd6-41ed-8347-eea1fb8d2662) (STP) (機器翻譯) 內使用 [Microsoft Compliance Manager](https://support.office.com/article/use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services-429e686f-d8a6-455e-a2b6-3791d763f000) (英文)，評定和管理您的合規性風險，以執行貴組織的 ISO 27001:2013 評定。為 14 個 ISO 27001 群組都建立標準作業程序 (SOP)。
 |開始規劃將資訊分類和保留原則與工具推出至組織，以協助使用者識別、分類及保護機密資料和資產。|• 藉由推出分類原則和 [Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)應用程式，協助使用者根據您的資訊保護原則和標準作業程序 (SOP)，輕鬆地識別及分類機密資料。開發貴組織的資訊分類結構描述 (原則)，以及實施教育和推出計劃。<br>• 藉由將 [Office 365 標籤](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30)推出至組織，協助使用者輕易地將記錄保留和保護原則套用至內容。根據資訊記錄保留的法規需求，規劃貴組織的標籤，以及實施教育和推出計劃。
-|藉由建立稽核和責任原則作為標準作業程序 (SOP) 的一部分，確保與資訊安全性相關的記錄受到保護，免於遺失、刪除、修改或未經授權的存取。|• 啟用 [Office 365 稽核紀錄](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) (機器翻譯) 和[信箱稽核](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918) (機器翻譯) (針對所有 Exchange 信箱)，以監視 Office 365 是否有潛在的惡意活動，並啟用資料外洩的鑑識調查分析。<br>• 以定期頻率搜尋您的 Office 365 租用戶的稽核記錄，以檢閱對租用戶組態設定所做的變更。<br>• 在 Office 365 安全性與合規性中心中，針對機密活動啟用 [Office 365 警示原則](https://support.office.com/article/alert-policies-in-the-office-365-security-compliance-center-8927b8b9-c5bc-45a8-a9f9-96c732e58264) (機器翻譯)，例如當使用者帳戶發生權限提升時。<br>• 針對長期儲存 Office 365 稽核記錄資料，使用 [Office 365 管理活動 API 參考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) (英文) 以與安全性資訊和事件管理 (SIEM) 工具整合。
+|藉由建立稽核和責任原則作為標準作業程序 (SOP) 的一部分，確保與資訊安全性相關的記錄受到保護，免於遺失、刪除、修改或未經授權的存取。|• 啟用 [Office 365 稽核紀錄](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) (機器翻譯) 和[信箱稽核](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918) (機器翻譯) (針對所有 Exchange 信箱)，以監視 Office 365 是否有潛在的惡意活動，並啟用資料外洩的鑑識調查分析。<br>• 以定期頻率搜尋您的 Office 365 租用戶的稽核記錄，以檢閱對租用戶組態設定所做的變更。<br>• 在 Microsoft 365 安全性或合規性中心中，針對機密活動啟用 [Office 365 警示原則](https://support.office.com/article/alert-policies-in-the-office-365-security-compliance-center-8927b8b9-c5bc-45a8-a9f9-96c732e58264) (機器翻譯)，例如當使用者帳戶發生權限提升時。<br>• 針對長期儲存 Office 365 稽核記錄資料，使用 [Office 365 管理活動 API 參考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) (英文) 以與安全性資訊和事件管理 (SIEM) 工具整合。
 |定義組織的系統管理和安全性角色，以及與職責劃分相關的適當原則。|• 使用 [Office 365 系統管理角色](https://support.office.com/article/understanding-administrative-roles-52f29955-6a60-435f-aba9-eb69c898606a) (英文) 以區隔系統管理職責。附註：Office 365 中許多系統管理員角色在 Exchange Online、SharePoint Online 和商務用 Skype Online 中有對應的角色。<br>• 區隔權限以確保單一系統管理員不會具備超過必要的存取權。|
 
 

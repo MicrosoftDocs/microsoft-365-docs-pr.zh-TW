@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用整個 Microsoft 365 企業版的安全性功能。
-ms.openlocfilehash: 2cbabb04c79816684f4c566b92003bb64471d22b
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 55ee8ff88490a82a9438b076bcebfab976f8baf6
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289031"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>適用於 Contoso Corporation 之 Microsoft 365 企業版安全性的摘要
 
@@ -40,7 +40,7 @@ Contoso 會使用下列步驟來準備部署 Microsoft 365 企業版的安全性
 
 1. 受限制的雲端系統管理員帳戶
 
-   Contoso 針對現有的 Windows Server AD 系統管理員帳戶進行全面的審查，並設定了一系列的雲端系統管理員帳戶和群組。
+   Contoso 針對現有的 Active Directory Domain Services (AD DS) 系統管理員帳戶進行全面的審查，並設定了一系列的雲端系統管理員帳戶和群組。
 
 2. 進行資料分類分析並分為三個層級
 
@@ -62,7 +62,7 @@ Contoso 會使用下列步驟來準備部署 Microsoft 365 企業版的安全性
 
   Contoso 的安全性管理員相較於該 IT 人員作業功能和責任的適當帳戶，獲指派較少的管理角色。
 
-  如需詳細資訊，請參閱[關於 Office 365 系統管理員角色](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)。
+  如需詳細資訊，請參閱[關於 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
 
 - 適用於所有使用者帳戶的 MFA
 
@@ -81,7 +81,7 @@ Contoso 會使用下列步驟來準備部署 Microsoft 365 企業版的安全性
 
 - Windows Defender Credential Guard
 
-  為了封鎖在作業系統上使用系統管理權限執行的已設定目標攻擊和惡意程式碼，Contoso 已透過 Windows Server AD 群組原則啟用 [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) (機器翻譯)。
+  為了封鎖在作業系統上使用系統管理權限執行的已設定目標攻擊和惡意程式碼，Contoso 已透過 AD DS 群組原則啟用 [Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)。
 
 ## <a name="threat-protection"></a>威脅防護
 
@@ -95,9 +95,9 @@ Contoso 會使用下列步驟來準備部署 Microsoft 365 企業版的安全性
 
   Contoso 也已啟用信箱稽核記錄，判斷誰已登入使用者信箱、傳送訊息，以及由信箱擁有者、委派使用者或系統管理員執行的其他活動。
 
-- 使用 Office 365 威脅情報來進行攻擊監視和防護
+- 使用 Office 365 威脅調查及回應來進行攻擊監視和防護
 
-  Contoso 使用 [Office 365 威脅情報](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) (機器翻譯)，藉由讓識別和解決攻擊以及防範未來的攻擊變得簡單，來保護其 Office 365 使用者。
+  Contoso 使用 [Office 365 威脅調查及回應](https://docs.microsoft.com/office365/securitycompliance/office-365-ti)，讓識別和解決攻擊以及防範未來的攻擊變得簡單，藉此來保護其 Office 365 使用者。
 
 - 使用 Advanced Threat Analytics 來防護縝密的攻擊
 

@@ -1,5 +1,5 @@
 ---
-title: 現代化電腦的部署中心
+title: 桌面部署中心
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,19 +12,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 現代化電腦的部署中心概觀。
-ms.openlocfilehash: d9c91c57fda8c1438ae7233002508c51b7b0ff5e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: 桌面部署中心概觀。
+ms.openlocfilehash: 2f4615e66f23d852b751abfb2688202d25e39299
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284870"
 ---
-# <a name="modern-desktop-deployment-center"></a>現代化電腦的部署中心
+# <a name="desktop-deployment-center"></a>桌面部署中心
 
-<img src="media/getting-started-media/getting-started-media-1.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
+<img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
-請遵循以下的步驟，規劃及執行您的 Windows 10 和 Office 365 專業增強版大型部署。以下每個步驟都是整體規劃和部署程序的一部分，在階段部署中，步驟通常都是彼此平行執行。請下載[新式桌面部署及管理實驗室套件](https://aka.ms/howtoshiftlabs)，使用部署程序中反白顯示的工具進行實際操作訓練。
+按照以下步驟來規劃和執行 Windows 10 和 Office 365 專業增強版的大規模部署。 以下每個步驟都是整個規劃和部署過程的一部分，這些步驟通常會在分段部署中同步執行。 使用部署程序中強調的工具下載免費的[桌面部署和管理實驗室工具包](https://aka.ms/howtoshiftlabs)，以進行實際操作訓練。 您還可以從 Microsoft 合作夥伴和 FastTrack 服務中為桌面部署[找到說明](https://aka.ms/mddhelp)。
 
 <br>
 
@@ -32,7 +32,7 @@ ms.locfileid: "26866483"
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="144" width="144" /></td>
 <td><p><strong><a href="https://aka.ms/mdd0">快速入門：人員、流程及技術指導方針</a></strong> (英文)</p>
-<p>探索現代化電腦的優點，重大變更、考量與先前的部署以及最佳做法，以確保順利轉移到 Windows 10 和 Office 365 專業增強版。</p></td>
+<p>探索移轉至 Windows 10 和 Office 365 專業增強版的優點、與先前部署比較後的重大變更與考量及最佳做法，以確保順利轉移到 Windows 10 和 Office 365 專業增強版。</p></td>
 <td><a href="https://aka.ms/ddev0" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="130" width="231" /></a></td>
 </tr>
 <tbody>
@@ -51,44 +51,44 @@ ms.locfileid: "26866483"
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="144" width="144" /></td>
 <td><p><strong><a href="https://aka.ms/mdd3">步驟 3：Office 和 LOB 應用程式傳遞</a></strong> (英文)</p>
-<p>請確定您的應用程式已封裝並且準備好進行自動化安裝。了解隨選即用封裝與 Office 365 專業增強版如何給予您設定、傳遞及將 Office 應用程式保持在最新狀態的新選項。</p></td>
+<p>確定您的應用程式已封裝並準備好進行自動安裝。 了解隨選即用封裝與 Office 365 專業增強版如何是您在設定、交付及將 Office 應用程式保持在最新狀態的新選擇。</p></td>
 <td><a href="https://aka.ms/ddev3" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="144" width="144" /></td>
 <td><p><strong><a href="https://aka.ms/mdd4">步驟 4：使用者檔案和設定</a></strong> (英文)</p>
-<p>重新整理或取代電腦時，將使用者狀態備份與還原自動化以節省時間。雲端檔案同步的新選項可讓您強制執行，將每個使用者的桌面、文件和圖片資料夾同步處理至 OneDrive，以從新的 Windows 安裝順利存取檔案。</p></td>
+<p>重新整理或汰換電腦時，透過自動執行使用者狀態備份和還原來節省時間。 雲端檔案同步的新選項可讓您強制將每個使用者的桌面、文件和圖片資料夾同步處理至 OneDrive，以從新的 Windows 安裝順利存取檔案。</p></td>
 <td><a href="https://aka.ms/ddev4" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
 </tr>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="144" width="144" /></td>
 <td><p><strong><a href="https://aka.ms/mdd5">步驟 5：安全性與相容性考量事項</a></strong> (英文)</p>
-<p>Windows 10 和 Office 365 專業增強版提供全新的方式來保護您的資料、裝置和使用者，並快速偵測及回應威脅。此外，了解如何在轉移到 Windows 10 時處理與磁碟加密、反惡意程式碼應用程式和原則相關的常見問題。</p></td>
+<p>Windows 10 和 Office 365 專業增強版提供了保護資料、裝置和使用者以及快速偵測和回應威脅的新方法。 此外，了解如何在移轉到 Windows 10 時處理與磁碟加密、反惡意程式應用程式和原則相關的常見問題。</p></td>
 <td><a href="https://aka.ms/ddev5" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Step 6" height="144" width="144" /></td>
 <td><p><strong><a href="https://aka.ms/mdd6">步驟 6：作業系統部署與功能更新</a></strong> (英文)</p>
-<p>工作序列型部署是用於自動化大型、階段部署，以進行裸機安裝、電腦重新整理和電腦取代。升級工作序列也會協助您保持在最新的主要半年更新。Windows Autopilot 是最近的新增功能，讓新電腦收購程序現代化。</p></td>
+<p>任務順序型部署用於自動執行大規模、分段部署以進行裸機安裝、電腦重新整和電腦汰換。 升級任務順序還將幫助您及時了解主要的半年更新。 Windows Autopilot 是最近新增的功能，可現代化新和現有裝置的影像製作。</p></td>
 <td><a href="https://aka.ms/ddev6" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-19.png" alt="Step 6" height="130" width="231" /></a></td>
 </tr>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
-<td><p><strong><a href="https://aka.ms/mdd7">步驟 7：準備 Windows 和 Office 即服務</a></strong> (英文)</p>
-<p>Windows 10 和 Office 365 專業增強版都會持續新增功能，以最新的發明帶領使用者體驗和安全性前進。深入了解如何保持在最新的半年和每月更新、新服務模型如何運作，以及您所擁有的工具和選項。</p></td>
+<td><p><strong><a href="https://aka.ms/mdd7">步驟 7：Windows 和 Office 服務</a></strong></p>
+<p>Windows 10 和 Office 365 專業增強版不斷地增加新功能，以透過最新的創新持續提升使用者體驗和安全性。 了解如何掌握半年和每月更新的最新消息、新服務模式的運作方式以及您擁有的工具和選項。</p></td>
 <td><a href="https://aka.ms/ddev7" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong><a href="https://aka.ms/mdd8">步驟 8：使用者的通訊和訓練</a></strong> (英文)</p>
 <p>將電腦移至 Windows 10 和 Office 365 專業增強版時，請確認使用者了解新版體驗與新的工作方式。了解如何利用 Microsoft FastTrack 的使用者採用協助、訓練教材和通訊範本，以及全新的方式來監控使用者接受及其使用方式。</p></td>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </tr>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-12.png" alt="Value Discovery and Business Case" height="144" width="144" /></td>
 <td><p><strong><a href="https://transform.microsoft.com" target="_blank">獲得領導力：探索價值和商務案例</a></strong> (英文)</p>
-<p>如果您已完成部署研究、評估應用程式和裝置整備、建置部署計劃及開始試驗您的部署，但是沒有來自管理小組的必要支援或資源，以符合部署時間表，Microsoft 的 Business Value Programs 能夠提供協助。深入了解如何針對新式桌面建置商務案例，並且協助每個人利用。</p></td>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-22.png" alt="Value Discovery and Business Case" height="130" width="231" /></td>
+<p>如果您已完成部署研究、評估應用程式和裝置整備、建置部署計劃及開始試驗您的部署，但是沒有來自管理小組的必要支援或資源，以符合部署時間表，Microsoft 的 Business Value Programs 能夠提供協助。 了解如何建構業務案例以移轉到 Windows 10 和 Office 365 專業增強版，並幫助每個人順利使用。</p></td>
+<td><a href="https://transform.microsoft.com" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-22.png" alt="Value Discovery and Business Case" height="130" width="231" /></td>
 </tr>
 </tbody>
 </table>

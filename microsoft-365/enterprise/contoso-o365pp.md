@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解 Contoso 如何使用 System Center Configuration Manager 來部署 Office 365 專業增強版。
-ms.openlocfilehash: 5b98f72561d7a431a4ca4a0b0241c6105c87026f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 0fa0ca1d268dbfd57891804e20959147cd6385e4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283546"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Contoso 的 Office 365 專業增強版部署指南
 
@@ -71,7 +71,7 @@ Contoso 遵循相同的兩階段方式進行功能更新和部署 Office：在�
 7. 他們在 Configuration Manager 中將 Windows 和 Office 套件部署到內部網路中發佈點，然後執行 Configuration Manager 部署工作順序將試驗 Office 365 專業增強版套件部署到試驗群組。
 8. Contoso 在試驗群組解決任何相容性問題後，即會執行工作順序將各種 Office 365 專業增強版套件部署到大型群組。
 
-Contoso 選擇自動更新雲端裝置，因此無需管理 Configuration Manger 中的程序。他們的裝置會根據初始部署時定義的更新通道，直接從雲端自動更新。 
+因為 Contoso 選擇從雲端自動更新裝置，因此不需要管理 Configuration Manager 中的程序。 其裝置會根據初始部署時所定義的更新通道，直接從雲端自動進行更新。 
 
 ## <a name="next-step"></a>下一步
 

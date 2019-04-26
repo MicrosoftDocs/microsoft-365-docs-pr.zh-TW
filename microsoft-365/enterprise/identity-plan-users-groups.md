@@ -3,22 +3,22 @@ title: 步驟 1：適用於使用者與群組的方案
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2018
+ms.date: 02/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 適用於您組織之使用者和群組的方案。
-ms.openlocfilehash: 8062cc2b681f0ae45a8114a6d827f5d1ece2fe3e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f8b3df73518e33c7750c0b72b2cb9f36bc8e9745
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283786"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>步驟 1：適用於使用者與群組的方案
 
@@ -39,10 +39,10 @@ ms.locfileid: "26866111"
 
 當貴組織採用 Microsoft 365 企業版時，您主要的身分識別提供者是以下其中一項：
 
-- **Windows Server Active Directory (AD)**，是在執行 Windows Server 電腦上主控的身分識別提供者。一般使用對象為擁有現有內部部署身分識別提供者的組織。
-- **Azure Active Directory (Azure AD**)，為以雲端為基礎的身份認證即服務 (IDaaS)，提供管理及保護環境的各種功能。一般使用對象為不具現有內部部署基礎結構的組織。
+- **Active Directory 網域服務 (AD DS)**，是裝載於執行 Windows Server 的電腦上的內部網路身分識別提供者。 一般使用對象為具有現有內部部署身分識別提供者的組織。
+- **Azure Active Directory (Azure AD**)，為以雲端為基礎的身份認證即服務 (IDaaS)，提供管理及保護環境的各種功能。 一般使用對象為不具現有內部部署基礎結構的組織。
 
-如果您的組織有現有內部部署身分識別提供者，您需要將使用者帳戶和群組從 Windows Server AD 同步處理至 Azure AD，以提供對 Microsoft 365 企業版以雲端為基礎之服務的更流暢存取。您也可以使用 Azure AD 來建立及管理只存在於 Microsoft 雲端中的群組。
+如果您的組織現有內部部署身分識別提供者，您需要將使用者帳戶和群組從 Active Directory 網域服務 (AD DS) 同步處理至 Azure AD，以提供對 Microsoft 365 企業版以雲端為基礎之服務的更流暢存取。 您也可以使用 Azure AD 來建立及管理只存在於 Microsoft 雲端中的群組。
 
 在使用者和群組都位於 Azure AD 中後，您可以：
 
@@ -63,11 +63,11 @@ ms.locfileid: "26866111"
 
 此外，某些雲端服務可以與組織外的使用者共用，而不需使用任何使用者帳戶。您也必須識別使用者的這些群組。
 
-## <a name="plan-for-windows-server-ad-and-azure-ad-groups"></a>適用於 Windows Server AD 和 Azure AD 群組的方案
+## <a name="plan-for-ad-ds-and-azure-ad-groups"></a>規劃 AD DS 和 Azure AD 群組
 
 您可以使用 Azure AD 中的群組，以實現簡化雲端環境管理的多個目的。例如，針對 Azure AD 群組，您可以：
 
-- 使用以群組為基礎的授權，以在 Azure AD 中新增您的使用者帳戶或從 Windows Server AD 進行同步處理後，立即將 Office 365 與 Enterprise Mobility + Security (EMS) 的授權自動指派給將這些使用者帳戶。 
+- 使用以群組為基礎的授權，以在 Azure AD 中新增您的使用者帳戶或從 AD DS 進行同步處理後，立即將 Office 365 與 Enterprise Mobility + Security (EMS) 的授權自動指派給將這些使用者帳戶。 
 - 根據使用者帳戶屬性 (例如部門) 以動態方式將使用者帳戶新增至特定群組。  
 - 為軟體即服務 (SaaS) 應用程式自動佈建使用者，並透過多重要素驗證和其他條件式存取規則來保護對這些應用程式的存取權。
 - 佈建 SharePoint Online 小組網站的權限和存取層級。Azure AD 群組也可與限定範圍的 Azure 資訊保護原則一起使用來透過加密和權限保護檔案。 
@@ -79,12 +79,13 @@ ms.locfileid: "26866111"
 - 在 Azure AD 中的使用者帳戶清單，其與貴組織的員工和與貴組織合作的廠商、承包商及外部夥伴相對應。
 - Azure AD 中一組群組和其成員反映的使用者帳戶和其他群組的邏輯集合，適用於為 Microsoft 雲端服務的安全性設定佈建進行自動授權。
 
-作為過渡期的檢查點，您可以看到此步驟的[允出準則](identity-exit-criteria.md#crit-identity-user-groups)。
+做為過渡期的檢查點，您可以看到此步驟的[允出準則](identity-exit-criteria.md#crit-identity-user-groups)。
 
+Azure AD 使用者和群組建立後，您就可以開始指派授權及使用 Exchange Online。 若要向使用者推行 Exchange Online，請參閱[針對 Microsoft 365 企業版部署 Exchange Online](exchangeonline-workload.md)。
 
 ## <a name="next-step"></a>下一步
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [保護全域系統管理員帳戶](identity-designate-protect-admin-accounts.md) |
+|![](./media/stepnumbers/Step2.png)| [保護您的特殊權限身分識別](identity-designate-protect-admin-accounts.md) |
 

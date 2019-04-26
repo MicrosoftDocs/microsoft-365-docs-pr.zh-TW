@@ -3,22 +3,22 @@ title: Office 365 專業增強版的部署允出準則
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/29/2018
+ms.date: 03/06/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的設定符合 Microsoft 365 企業版中 Office 365 專業增強版基礎結構的準則。
-ms.openlocfilehash: c38539d85e1c826667b7a8a177a15ab75350aa5f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: c9a2afeae8d28170f4e8a15531a08e6b94cb48c2
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291071"
 ---
 # <a name="office-365-proplus-deployment-exit-criteria"></a>Office 365 專業增強版的部署允出準則
 
@@ -26,7 +26,7 @@ ms.locfileid: "26866106"
 
 *本文同時適用於 Microsoft 365 企業版和 Microsoft 365 教育版的 E3 和 E5 版本*
 
-在您進行部署程序的下一個階段之前，請確定您的設定符合下列的 Office 365 專業增強版基礎結構必要條件。
+請確定您的設定符合下列適用於 Office 365 專業增強版基礎結構的必要準則。
 
 - 基礎結構和環境的評估已經完成，包括：
 
@@ -52,9 +52,12 @@ ms.locfileid: "26866106"
     - 所有用戶端裝置位於適當的更新通道中，而且可接收更新
     - 所有用戶端裝置皆已安裝或可使用適當的語言
 
-## <a name="next-phase"></a>下一個階段 
 
+
+## <a name="results-and-next-steps"></a>結果和後續步驟
+
+用戶端裝置已安裝最新版本的 Office 365 專業增強版，並且會持續收到更新。
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Microsoft 365 企業版 端對端部署程序的下一個階段是[行動裝置管理](mobility-infrastructure.md)。 |
+|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| 如果您會遵循 Microsoft 365 企業版的端對端部署階段，則下一個階段是[行動裝置管理](mobility-infrastructure.md)。 |
