@@ -3,45 +3,43 @@ title: 步驟 1：定義安全性和資訊保護層級
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並設定您組織的安全性和資訊保護層級。
-ms.openlocfilehash: bc55fab7b450685268ae89648ae18292e5494ce8
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 91274ec2bcd4e4472969a7cd65660742daaef5bd
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26866360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286996"
 ---
-# <a name="step-1-define-security-and-information-protection-levels"></a><span data-ttu-id="ccaec-103">步驟 1：定義安全性和資訊保護層級</span><span class="sxs-lookup"><span data-stu-id="ccaec-103">Step 1: Define security and information protection levels</span></span>
+# <a name="step-1-define-security-and-information-protection-levels"></a><span data-ttu-id="4a92a-103">步驟 1：定義安全性和資訊保護層級</span><span class="sxs-lookup"><span data-stu-id="4a92a-103">Step 1: Define security and information protection levels</span></span>
 
-<span data-ttu-id="ccaec-104">*此為必要步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*</span><span class="sxs-lookup"><span data-stu-id="ccaec-104">*This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
+<span data-ttu-id="4a92a-104">*這是必要步驟，且同時適用於 Microsoft 365 企業版 E3 與 E5 版本*</span><span class="sxs-lookup"><span data-stu-id="4a92a-104">*This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
 
 ![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-<span data-ttu-id="ccaec-p101">在本步驟中，您會為組織定義安全性與保護層級。比方說，銷售部門可能只需要較低的安全性層級，不過，您的研究部門與其高價值的智慧財產權可能需要高安全性層級，以便加密檔案並將存取權限制在僅供研究人員使用。</span><span class="sxs-lookup"><span data-stu-id="ccaec-p101">In Step 1, you'll define the levels of security and protection for your organization. For example, your sales department might only require a low security level, However, your research department and its highly valuable intellectual property might require a high security level that encrypts files and limits access to only research staff.</span></span>
+<span data-ttu-id="4a92a-105">在此步驟中，您會為組織定義安全性與保護層級。</span><span class="sxs-lookup"><span data-stu-id="4a92a-105">In this step, you'll define the levels of security and protection for your organization.</span></span> <span data-ttu-id="4a92a-106">例如，銷售部門可能只需要較低的安全性層級。</span><span class="sxs-lookup"><span data-stu-id="4a92a-106">For example, your sales department might only require a low security level.</span></span> <span data-ttu-id="4a92a-107">不過，您的研究部門與其高價值的智慧財產權可能需要高安全性層級，以便加密檔案並將存取權限制在僅供研究人員使用。</span><span class="sxs-lookup"><span data-stu-id="4a92a-107">In this step, you'll define the levels of security and protection for your organization. For example, your sales department might only require a low security level, However, your research department and its highly valuable intellectual property might require a high security level that encrypts files and limits access to only research staff.</span></span>
 
-<span data-ttu-id="ccaec-p102">雖然您可以定義自己的安全性層級且可能已有定義好的層級，Microsoft 建議您開發計劃，以使用至少三個不同的可套用的安全性與保護層級。以下清單可協助您快速上手：</span><span class="sxs-lookup"><span data-stu-id="ccaec-p102">Although you can define your own security levels and might already have some in place, Microsoft recommendations that you develop a plan to use at least three different levels of security and protection that can be applied. Here is a list to get you started:</span></span> 
+<span data-ttu-id="4a92a-108">雖然您可以定義自己的安全性層級且可能已有定義好的層級，Microsoft 建議您開發計劃，以使用至少三個不同的可套用的安全性與保護層級。</span><span class="sxs-lookup"><span data-stu-id="4a92a-108">Although you can define your own security levels and might already have some in place, Microsoft recommendations that you develop a plan to use at least three different levels of security and protection that can be applied. Here is a list to get you started:</span></span> <span data-ttu-id="4a92a-109">以下清單可協助您快速上手：</span><span class="sxs-lookup"><span data-stu-id="4a92a-109">Here is a list to get you started:</span></span> 
 
-- <span data-ttu-id="ccaec-p103">**基準線：** 此為保護資料的最低標準，適用於存取您資料的身分識別與裝置。您可以遵循基準線安全性與保護建議來提供最強的預設保護，此預設保護符合許多組織或其部門的需求。</span><span class="sxs-lookup"><span data-stu-id="ccaec-p103">**Baseline:** This is a minimum standard for protecting data and for the identities and devices that access your data. You can follow baseline security and protection recommendations to provide strong default protection that meets the needs of many organizations or their departments.</span></span>
-- <span data-ttu-id="ccaec-p104">**敏感性：** 此為對您資料子集的額外保護，該資料的保護層級必須大於基準線。您可以將此提高的保護套用至 Office 365 環境中特定的資料集。Microsoft 也建議將敏感安全性層級套用至會存取敏感資料的身分識別和裝置。</span><span class="sxs-lookup"><span data-stu-id="ccaec-p104">**Sensitive:** This is additional protection for a subset of your data that must be protected beyond the baseline level. You can apply this increased protection to specific data sets in your Office 365 environment. Microsoft also recommends applying the sensitive security level to identities and devices that access sensitive data.</span></span>
-- <span data-ttu-id="ccaec-p105">**高管制：** 這是最高層級的保護，適用於通常有少量高機密資料、受重視的智慧財產權或商業機密或必須遵守嚴格之安全性法規的資料。Microsoft 365 企業版能夠協助組織符合這些高安全性需求 (包括對身分識別與裝置的對等保護)。</span><span class="sxs-lookup"><span data-stu-id="ccaec-p105">**Highly regulated:** This is the highest level of protection for organizations that typically have a very small amount of data that is highly classified, considered intellectual property or trade secrets, or data that must adhere to strict security regulations. Microsoft 365 Enterprise has capabilities to help organizations meet these high security requirements, including equivalent protection for identities and devices.</span></span>
+- <span data-ttu-id="4a92a-p103">**基準線：** 此為保護資料的最低標準，適用於存取您資料的身分識別與裝置。您可以遵循基準線安全性與保護建議來提供最強的預設保護，此預設保護符合許多組織或其部門的需求。</span><span class="sxs-lookup"><span data-stu-id="4a92a-p103">**Baseline:** This is a minimum standard for protecting data and for the identities and devices that access your data. You can follow baseline security and protection recommendations to provide strong default protection that meets the needs of many organizations or their departments.</span></span>
+- <span data-ttu-id="4a92a-p104">**敏感性：** 此為對您資料子集的額外保護，該資料的保護層級必須大於基準線。您可以將此提高的保護套用至 Office 365 環境中特定的資料集。Microsoft 也建議將敏感安全性層級套用至會存取敏感資料的身分識別和裝置。</span><span class="sxs-lookup"><span data-stu-id="4a92a-p104">**Sensitive:** This is additional protection for a subset of your data that must be protected beyond the baseline level. You can apply this increased protection to specific data sets in your Office 365 environment. Microsoft also recommends applying the sensitive security level to identities and devices that access sensitive data.</span></span>
+- <span data-ttu-id="4a92a-p105">**高管制：** 這是最高層級的保護，適用於通常有少量高機密資料、受重視的智慧財產權或商業機密或必須遵守嚴格之安全性法規的資料。Microsoft 365 企業版能夠協助組織符合這些高安全性需求 (包括對身分識別與裝置的對等保護)。</span><span class="sxs-lookup"><span data-stu-id="4a92a-p105">**Highly regulated:** This is the highest level of protection for organizations that typically have a very small amount of data that is highly classified, considered intellectual property or trade secrets, or data that must adhere to strict security regulations. Microsoft 365 Enterprise has capabilities to help organizations meet these high security requirements, including equivalent protection for identities and devices.</span></span>
 
-<span data-ttu-id="ccaec-116">如需詳細資訊，請參閱[三層的保護](microsoft-365-policies-configurations.md#three-tiers-of-protection)。</span><span class="sxs-lookup"><span data-stu-id="ccaec-116">For more information, see [Three tiers of protection](microsoft-365-policies-configurations.md#three-tiers-of-protection).</span></span>
+<span data-ttu-id="4a92a-117">如需詳細資訊，請參閱[三層的保護](microsoft-365-policies-configurations.md#three-tiers-of-protection)。</span><span class="sxs-lookup"><span data-stu-id="4a92a-117">For more information, see [Three tiers of protection](microsoft-365-policies-configurations.md#three-tiers-of-protection).</span></span>
 
-<span data-ttu-id="ccaec-117">結果會決定您的安全性和資訊保護層級。</span><span class="sxs-lookup"><span data-stu-id="ccaec-117">The result is a determination of your security and information protection levels.</span></span>
+<span data-ttu-id="4a92a-118">作為過渡期的檢查點，您可以看到與此步驟相對應的[允出準則](infoprotect-exit-criteria.md#crit-infoprotect-step1)。</span><span class="sxs-lookup"><span data-stu-id="4a92a-118">As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#crit-infoprotect-step1) corresponding to this step.</span></span>
 
-<span data-ttu-id="ccaec-118">作為過渡期的檢查點，您可以看到與此步驟相對應的[允出準則](infoprotect-exit-criteria.md#crit-infoprotect-step1)。</span><span class="sxs-lookup"><span data-stu-id="ccaec-118">As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#crit-infoprotect-step1) corresponding to this step.</span></span>
-
-## <a name="next-step"></a><span data-ttu-id="ccaec-119">下一步</span><span class="sxs-lookup"><span data-stu-id="ccaec-119">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="4a92a-119">下一步</span><span class="sxs-lookup"><span data-stu-id="4a92a-119">Next step</span></span>
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)|[<span data-ttu-id="ccaec-120">設定環境的分類</span><span class="sxs-lookup"><span data-stu-id="ccaec-120">Configure classification for your environment</span></span>](infoprotect-configure-classification.md)|
+|![](./media/stepnumbers/Step2.png)|[<span data-ttu-id="4a92a-120">設定環境的分類</span><span class="sxs-lookup"><span data-stu-id="4a92a-120">Configure classification for your environment</span></span>](infoprotect-configure-classification.md)|
