@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並設定您的系統管理員帳戶的保護上限。
-ms.openlocfilehash: 4b4a8d01cdf71e30139fa448813a3ff7c43855c7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0be82fc6f431001c69e79a0a26007c54a87424c3
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285154"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353085"
 ---
 # <a name="step-2-secure-your-privileged-identities"></a>步驟 2：保護您的特殊權限身分識別
 
@@ -39,7 +39,6 @@ ms.locfileid: "32285154"
 1. 在測試使用者帳戶上測試根據使用者帳戶或條件式以存取為基礎的多重要素驗證 (MFA) 設定，以確保 MFA 正確且如預測般運作。MFA 需要第二種形式的驗證 (例如將驗證碼傳送給智慧型手機)。
 2. 為每一個專用的 Office 365 全域系統管理員帳戶設定 MFA ，並使用貴組織中可供使用的最強型次要驗證。如需詳細資訊，請參閱[多重要素驗證](identity-multi-factor-authentication.md#identity-mfa)。
 2. 使用條件訪問策略來要求全域系統管理員帳戶的 MFA。如需詳細資訊，請參閱[保護系統管理員帳戶](identity-access-prerequisites.md#protecting-administrator-accounts)。
-4. 使用 Office 365 雲端 App 安全性原則來監控全域系統管理員帳戶活動。如需詳細資訊，請參閱[設定增強的 Office 365 安全性](infoprotect-configure-increased-security-office-365.md)。
 
 請參閱[保護您的 Office 365 全域系統管理員帳戶](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)以了解設定的相關詳細資訊。
 

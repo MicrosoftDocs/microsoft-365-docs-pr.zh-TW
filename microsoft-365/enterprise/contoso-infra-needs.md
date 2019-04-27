@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 內部部署 IT 基礎結構的基本結構，以及 Microsoft 365 企業版如何符合其業務需求。
-ms.openlocfilehash: bd259f367cdf3417e32671457f248029c853b6f8
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a4a86c56f956361e58730f328ef940a627370ea6
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283673"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353127"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contoso 的 IT 基礎結構與業務需求
 
@@ -127,7 +127,7 @@ Contoso 的 IT 部門決定在部署之前，將下列業務需求對應至 Micr
 | 安全性 |  |  |
 |  | 身分識別和存取管理 | 具有多重要素驗證 (MFA) 與 Azure AD Privileged Identity Management (PIM) 的專用全域系統管理員帳戶 <BR> 適用於所有使用者帳戶的 MFA <BR> 條件式存取 <BR> Windows Hello <BR> Windows Credential Guard |
 |  | 威脅防護 | 進階威脅分析 <BR> Windows Defender <BR> 進階威脅防護 <BR> Office 365 進階威脅防護 <BR> Office 365 威脅調查及回應 <BR> |
-|  | 資訊保護 | Azure 資訊保護 <BR> Office 365 資料外洩防護 (DLP) <BR> Windows 資訊保護 <BR> Microsoft Cloud App Security <BR> Office 365 雲端 App 安全性 (CAS) <BR> Microsoft Intune |
+|  | 資訊保護 | Azure 資訊保護 <BR> Office 365 資料外洩防護 (DLP) <BR> Windows 資訊保護 <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | 安全性管理 | Azure 資訊安全中心  <BR> Windows Defender 資訊安全中心 |
 | 遠端和行動裝置存取與商務合作夥伴 |  |  |
 |  | 更好的遠端和行動工作者安全性 | Microsoft Intune |
