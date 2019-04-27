@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 企業版提供元件、 計劃及部署路徑的簡介。
-ms.openlocfilehash: 24aacc1a992e2dfdc683e5e4c4405b105eea7bf5
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a206924e7056d0213dd0721c2259736a031f80d6
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291298"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353198"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -64,13 +64,17 @@ Microsoft 365 企業版所組成：
 
 ## <a name="deploying"></a>部署
 
-有兩種方式可以部署產品、 功能和 Microsoft 365 企業版的元件：
+有三種方式可以部署產品、 功能和 Microsoft 365 企業版的元件：
 
 1. 與 FastTrack
   
-   使用 FastTrack，Microsoft 工程師協助您移動到您自己的步調雲端。 請參閱 <<c0>適用於 Microsoft 365 的 FastTrack。
+   使用 FastTrack，Microsoft 工程師協助您移動到您自己的步調雲端。 請參閱[適用於 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365)。
   
-2. 自行執行此工作
+2. Microsoft 諮詢服務或[Microsoft 合作夥伴](https://partner.microsoft.com/)的協助。
+
+   顧問可以分析您目前的基礎結構並協助您開發以納入所有軟體與服務的 Microsoft 365 企業版計劃。
+
+3. 自行執行此工作
 
    [Microsoft 365 企業版部署指南](deploy-microsoft-365-enterprise.md)會帶您逐步透過建置基礎結構和生產力工作負載。 
 
@@ -108,7 +112,7 @@ Microsoft 365 企業版所組成：
 
 ## <a name="next-step"></a>下一步
 
-啟動您的[Microsoft 365 企業版部署的作業過程](deploy-microsoft-365-enterprise.md)。
+如果您正在自行進行部署，來啟動您的[Microsoft 365 企業版部署的作業過程](deploy-microsoft-365-enterprise.md)。
 
 ## <a name="see-also"></a>另請參閱
 

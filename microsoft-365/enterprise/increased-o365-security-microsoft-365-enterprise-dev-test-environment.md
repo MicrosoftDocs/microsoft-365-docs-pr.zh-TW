@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此測試實驗室指南來啟用其他 Microsoft 365 安全性設定 Microsoft 365 企業版測試環境。
-ms.openlocfilehash: 54e05122dcbe5d4e24f092536897f2a8ad449e05
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 583d815d9f413df8aeb5ec7abaf68cf79a6cc8b9
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283653"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353115"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>適用於 Microsoft 365 企業版測試環境的增強的 Microsoft 365 安全性
 
@@ -26,7 +26,7 @@ ms.locfileid: "32283653"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](https://aka.ms/m365etlgstack)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中文件的所有視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1： 建置 Microsoft 365 企業版測試環境
 
@@ -46,16 +46,15 @@ ms.locfileid: "32283653"
 
 不支援新式驗證的應用程式不能有[身分識別與裝置存取設定](microsoft-365-policies-configurations.md)套用至它們，也就是保護您的 Microsoft 365 訂閱和其數位資產的重要元素。 
 
-1. 移至 Office 入口網站 ([https://office.com](https://office.com)) 並登入 Office 365 試用訂閱以全域管理員帳戶。
+1. 移至 Microsoft 365 系統管理中心 ([https://portal.microsoft.com](https://portal.microsoft.com)) 並登入您的 Office 365 測試實驗室訂閱，以全域管理員帳戶。
     
   - 如果您使用輕量級 Microsoft 365 測試環境，從您本機電腦登入。
     
   - 如果您使用 Microsoft 365 模擬企業版測試環境，使用[Azure 入口網站](https://portal.azure.com)連線至 CLIENT1 虛擬機器，然後從 CLIENT1 登入。
  
-2. 從**Microsoft 365 系統管理中心**] 索引標籤上，按一下 [**系統**]。
-3. 在 [新的**Microsoft 365 系統管理中心**] 索引標籤，按一下 [**系統管理中心 > SharePoint**。
-4. 在 [新的**SharePoint 系統管理中心**] 索引標籤，按一下 [**存取控制**。
-5. [] 下 **，不支援新式驗證的應用程式**，按一下 [**封鎖**]，然後按一下 [**確定]**。
+2. 在 [新的**Microsoft 365 系統管理中心**] 索引標籤，按一下 [**系統管理中心 > SharePoint**。
+3. 在 [新的**SharePoint 系統管理中心**] 索引標籤，按一下 [**存取控制**。
+4. [] 下 **，不支援新式驗證的應用程式**，按一下 [**封鎖**]，然後按一下 [**確定]**。
 
 
 ### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>啟用進階的威脅防護 for SharePoint、 OneDrive for Business 和 Microsoft Teams
@@ -86,20 +85,15 @@ Office 365 具有內建的惡意軟體和垃圾郵件篩選功能，可協助防
 4. [**常見的附件類型篩選器**] 中，按一下 [**在 > 儲存**。
 
 
-## <a name="phase-3-examine-office-365-security-tools-and-logs"></a>階段 3： 檢查 Office 365 安全性工具和記錄檔
-
-在這個階段，您查看安全性事件的相關通知您以及測量您的整體安全性狀態的內建服務。
-
-### <a name="threat-management-dashboard"></a>威脅管理儀表板
+## <a name="phase-3-examine-the-threat-management-dashboard"></a>階段 3： 檢查威脅管理儀表板
 
 Office 365 威脅管理，可協助您控制和管理行動裝置存取您的組織資料，協助保護組織免於資料遺失，並協助防止惡意軟體和垃圾郵件的輸入及輸出郵件。 您也會使用威脅保護您的網域信譽，並判斷已遭到惡意詐騙的寄件者的管理帳戶從您的網域。 如需詳細資訊，請參閱 <<c0>在 Microsoft 365 安全性中心中的威脅管理。
 
-
-### <a name="office-365-cloud-app-security-dashboard"></a>Office 365 雲端 App 安全性儀表板
-
-Office 365 雲端 App 安全性，先前稱為 Office 365 進階安全性管理，可讓您建立原則來監視並通知您的 Office 365 訂閱中的可疑活動，讓您進行調查，並採取可能修復動作。 如需詳細資訊，請參閱[概觀的 Office 365 雲端 App 安全性](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview)。
-
 <!--
+### Office 365 Cloud App Security dashboard
+
+Office 365 Cloud App Security, previously known as Office 365 Advanced Security Management, allows you to create policies that monitor for and inform you of suspicious activities in your Office 365 subscription, so that you can investigate and take possible remediation action. For more information, see [Overview of Office 365 Cloud App Security](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview).
+
 ### Microsoft 365 Secure Score
 
 1. Create a new tab in your browser and go to the [Microsoft 365 security center](https://security.microsoft.com/), and then click **Secure score**.

@@ -13,16 +13,16 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用下列步驟來保護 Microsoft 365 企業版測試環境中的全域系統管理員帳戶。
-ms.openlocfilehash: cded424188447f96e5614f31d3e207bb541d438e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 86b2d325fc710fd8b387bc37cad5f8ea60df001d
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290856"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353055"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>保護您的 Microsoft 365 企業版測試環境中的全域系統管理員帳戶
 
-您可以防止數位攻擊您的組織藉由確保您的系統管理員帳戶會盡可能的安全。 本文說明如何使用 Office 365 雲端 App 安全性和 Azure AD 條件式存取原則來保護全域系統管理員帳戶。
+您可以防止數位攻擊您的組織藉由確保您的系統管理員帳戶會盡可能的安全。 本文說明如何使用 Azure Active Directory (Azure AD) 條件式存取原則來保護全域系統管理員帳戶。
 
 有兩個階段，以保護您的 Microsoft 365 企業版測試環境中的全域系統管理員帳戶：
 
@@ -32,10 +32,7 @@ ms.locfileid: "32290856"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
-
-> [!NOTE]
-> Microsoft 365 企業版測試環境使用 Office 365 與企業管理 + 安全性 (EMS) E5 的版本。 只在 E5 版本 Office 365 中使用 Office 365 雲端 App 安全性功能。 
+> 按一下[這裡](https://aka.ms/m365etlgstack)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中文件的所有視覺對應。
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1： 建置 Microsoft 365 企業版測試環境
 
@@ -47,24 +44,9 @@ ms.locfileid: "32290856"
 > [!NOTE]
 > 測試保護不需要模擬的企業測試環境，其中包含的模擬內部網路的全域系統管理員帳戶連線至網際網路和 Active Directory 網域服務 (AD DS) 的目錄同步處理。 它提供了此選項，讓您可以測試全域系統管理員帳戶保護與代表典型組織的環境中實驗。 
   
-## <a name="phase-2-configure-cloud-app-security-and-conditional-access-policies"></a>階段 2： 設定雲端 App 安全性和條件式存取原則
+## <a name="phase-2-configure-conditional-access-policies"></a>階段 2： 設定條件式存取原則
 
-首先，建立 Office 365 雲端 App 安全性原則，以監視全域系統管理員帳戶的活動，並將提醒傳送給您全域系統管理員帳戶的電子郵件地址。 
-
-1. 登入[Office 365 安全性 & 規範入口網站](https://protection.office.com/)使用您的全域系統管理員帳戶。
-2. 在左側的導覽窗格中，按一下 [**提醒 > 管理進階提醒**]。
-3. 在 [**管理進階提醒**] 頁面上，按一下 [**開啟 Office 365 雲端 App 安全性**]，然後按一下 [**移至 Office 365 雲端 App 安全性**。
-4. 在 [新的**儀表板**] 索引標籤，按一下 [**控制項 > 原則**。
-5. 在 [**原則**] 頁面上，按一下 [**建立原則**]，然後按一下**活動原則**。
-6. 在 [**原則名稱**] 中，輸入**管理活動**。
-7. 在 [原則嚴重性]**** 中按一下 [高]****。
-8. 在 [**類別**中，按一下 [**特殊權限的帳戶**]。
-9. 在 [**建立篩選器原則**中**符合下列所有的活動**，按一下 [**系統管理活動**。
-10. 在 [警示]**** 中按一下 [透過電子郵件傳送警示]****。在 [收件者]**** 中輸入全域管理員帳戶的電子郵件地址。
-11. 在頁面底部按一下 [建立]****。
-12. 關閉 [**儀表板**] 索引標籤。
-    
-接下來，建立新的使用者帳戶為專用的全域系統管理員。
+首先，建立新的使用者帳戶為專用的全域系統管理員。
 
 1. 個別索引標籤上，開啟[Microsoft 365 系統管理中心](https://admin.microsoft.com/)。
 2. [**作用中使用者**] 下方按一下 [**新增使用者**]。

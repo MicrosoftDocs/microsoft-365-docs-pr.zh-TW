@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 設定使用文字訊息傳送至 Microsoft 365 企業版測試環境中的智慧型手機的多重要素驗證。
-ms.openlocfilehash: 8e202936451030718c0c86601c2c621c50f78e1a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: ab346934ea639e819e4e45dd6560093629ee9cde
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291138"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353175"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>多重要素驗證您的 Microsoft 365 企業版測試環境
 
@@ -35,7 +35,7 @@ ms.locfileid: "32291138"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](https://aka.ms/m365etlgstack)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中文件的所有視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1： 建置 Microsoft 365 企業版測試環境
 
@@ -50,31 +50,29 @@ ms.locfileid: "32291138"
 
 啟用多重要素驗證的 「 使用者 2 」 帳戶使用下列步驟：
   
-1. 開啟瀏覽器的個別的私用執行個體，請移至 Office 入口網站 ([https://office.com](https://office.com))，然後使用全域管理員帳戶登入。
+1. 開啟瀏覽器的個別的私用執行個體，請移至 Microsoft 365 系統管理中心 ([https://portal.microsoft.com](https://portal.microsoft.com))，然後使用全域管理員帳戶登入。
     
-2. 從主要的入口網站頁面中，按一下 [管理]****。
+2. 在左方的瀏覽區域中，按一下 [使用者] > [作用中的使用者]****。
     
-3. 在左方的瀏覽區域中，按一下 [使用者] > [作用中的使用者]****。
+3. 在 [作用中使用者] 窗格中，按一下 [**更多 > 多重要素驗證設定**]。
     
-4. 在 [作用中使用者] 窗格中，按一下 [**更多 > 多重要素驗證設定**]。
+4. 在清單中，選取 「**使用者 2** 」 帳戶。
     
-5. 在清單中，選取 「**使用者 2** 」 帳戶。
+5. 在 [**使用者 2** ] 區段中，[**快速步驟**，按一下 [**啟用**。
     
-6. 在 [**使用者 2** ] 區段中，[**快速步驟**，按一下 [**啟用**。
+6. 在 [**關於啟用多重要素驗證**] 對話方塊中，按一下 [**啟用多重要素驗證**]。
     
-7. 在 [**關於啟用多重要素驗證**] 對話方塊中，按一下 [**啟用多重要素驗證**]。
+7. 在**更新成功**] 對話方塊中，按一下 [**關閉**]。
     
-8. 在**更新成功**] 對話方塊中，按一下 [**關閉**]。
+8. 在**Microsoft 365 系統管理中心**] 索引標籤上，按一下右上方，使用者帳戶圖示，然後按一下 [**登出]**。
     
-9. 在 [ **Microsoft Office 的首頁**] 索引標籤中，按一下右上方，使用者帳戶圖示，然後按一下 [**登出]**。
-    
-10. 關閉瀏覽器執行個體。
+9. 關閉瀏覽器執行個體。
    
 完成文字郵件驗證和測試這些步驟的 「 使用者 2 」 帳戶的設定：
   
 1. 開啟瀏覽器的新的私用執行個體。
     
-2. 移至 Office 入口網站 ([https://office.com](https://office.com)) 並以 「 使用者 2 」 帳戶登入 (user2 @\<組織 name>.onmicrosoft.com) 和密碼。
+2. 移至 Office 365 入口網站 ([https://portal.office.com](https://portal.office.com)) 並以使用者 2 帳戶名稱和密碼登入。
     
 3. 登入後，系統會提示您若要設定之帳戶的詳細資訊。 按 [下一步]****。
     
