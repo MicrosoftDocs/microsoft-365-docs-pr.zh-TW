@@ -9,7 +9,7 @@
 
 ### <a name="optional-your-users-are-added-and-licensed"></a>選用：您的使用者已新增並或獲得授權
 
-已新增您的使用者的對應帳戶 (不是直接新增到 Office 365 和 Intune 訂用帳戶的 Azure AD 租用戶，就是從您的內部部署 Windows Server AD 同步處理目錄)。
+已新增您的使用者的對應帳戶 (不是直接新增到 Office 365 和 Intune 訂用帳戶的 Azure AD 租用戶，就是從您的內部部署 Active Directory Domain Services (AD DS) 同步處理目錄)。
 
 新增使用者後，您可以將 Microsoft 365 企業版授權指派給他們 (不是直接指派為全域管理員或使用者管理員，就是透過群組成員資格自動指派)。
 
@@ -28,7 +28,7 @@
 
 - 設定適當的 Windows 診斷資料層級
 - 確認升級 Windows 的整備度
-- 建立 Configuration Manager 工作順序，其中包含裝置集合和使用 Windows 10 OS 映像的作業系統部署
+- 建立 Configuration Manager 工作順序，其中包含裝置集合和使用 Windows 10 OS 影像的作業系統部署
 
 一旦備妥，您就可以在準備好升級 Windows 的裝置上執行就地升級。若要從 Microsoft 365 企業版獲得最大好處，請儘可能多升級執行 Windows 7 和 Windows 8.1 的裝置。 
 
@@ -42,12 +42,12 @@
 若要使用 Windows Autopilot 在新的裝置上部署及自訂 Windows 10 企業版，您必須：
 
 - 設定適當的 Windows 診斷資料層級
-- 完成 Windows Autopilot 的先決條件，其中包含：
-- 裝置註冊和 OOBE 自訂
-- OOBE 公司品牌推廣
-- Microsoft Intune 中的 MDM 自動註冊
-- Windows Autopilot 所用雲端服務的網路連線能力
-- 裝置必須與 Windows 10 (版本 1703 或更新版本) 一起預先安裝
+- 設定 Windows Autopilot 的先決條件，其中包含：
+   - 裝置註冊和 OOBE 自訂
+   - OOBE 公司品牌推廣
+   - Microsoft Intune 中的 MDM 自動註冊
+   - Windows Autopilot 所用雲端服務的網路連線能力
+- 已預先安裝 Windows 10 (版本 1703 或更新版本) 的裝置
 - 為您的組織選取 Windows Autopilot Deployment 方案
 
 Windows Autopilot 設定好之後，您就可以使用它來設定和自訂 Windows 10 企業版，以獲得全新的體驗 (OOBE)：
