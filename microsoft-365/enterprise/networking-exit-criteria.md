@@ -14,11 +14,11 @@ ms.collection:
 ms.custom: ''
 description: 請確定您的設定符合 Microsoft 365 企業版的網路基礎結構的準則。
 ms.openlocfilehash: 9ea601d66ef2df0d7a4efde188a70c51e3fb9f60
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291365"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400217"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>第1 階段：網路基礎結構的允出準則
 

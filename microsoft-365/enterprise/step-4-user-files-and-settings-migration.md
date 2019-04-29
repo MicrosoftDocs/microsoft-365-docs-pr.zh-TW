@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何移轉使用者檔案和設定。
-ms.openlocfilehash: cb5d670d06b284bb9191447ce461835728223f27
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 99cc252181627d5f0cf07fdf46f63b3ba526e20a
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291729"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400117"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>步驟 4：使用者檔案和設定移轉
 

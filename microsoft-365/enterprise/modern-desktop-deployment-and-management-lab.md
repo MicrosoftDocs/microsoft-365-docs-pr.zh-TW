@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: 2db50816f4a87007ce74fef934d3a4211cf4e905
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 213d53b323cd5a5ca6f803320cf09e168beb1114
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291098"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400068"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署的 Lab Kit
 

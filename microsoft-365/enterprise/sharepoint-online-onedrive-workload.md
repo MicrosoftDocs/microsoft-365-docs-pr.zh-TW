@@ -13,11 +13,11 @@ ms.collection:
 ms.custom: ''
 description: 推行並發揮 Microsoft 365 企業版 SharePoint Online 在組織中的價值，規劃這整個程序的步驟。
 ms.openlocfilehash: 30fe3a971a869a4609d6b8ef2809692b4d4e5420
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290897"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400177"
 ---
 # <a name="deploy-sharepoint-online-and-onedrive-for-business-for-microsoft-365-enterprise"></a>部署適用於 Microsoft 365 企業版的 SharePoint Online 和商務用 OneDrive
 

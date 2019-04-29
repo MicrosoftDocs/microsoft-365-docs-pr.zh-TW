@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 推行並發揮 Microsoft 365 企業版 Microsoft Teams 在組織中的價值，規劃這整個程序的步驟。
-ms.openlocfilehash: 646062babf525be176386264b4ef3c4a3a21647a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: bfc9e76211779aa960ff7633dd7d59b2b01e9f98
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291657"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400207"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版的 Microsoft Teams
 
@@ -45,7 +45,7 @@ Microsoft Teams 將交談、會議、共用文件、往來對話整合在一起�
 代表組織的業務、技術、使用者三方面的人員清單。
 
 ### <a name="step-2-determine-and-prioritize-your-teams-business-scenarios"></a>步驟 2：決定 Teams 商務案例並定立優先順序
-Teams 可以用於許多不同的用途。您必須決定哪些用途對應到組織中業務需求、業務群組、部門、個別工作與專案小組的不同層級。如需範例請參閱 [Microsoft 365 生產力文件庫](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=1)，來協助您定義 Teams 案例。 
+Teams 可以用於許多不同的用途。您必須決定哪些用途對應到組織中業務需求、業務群組、部門、個別工作與專案小組的不同層級。如需範例請參閱 [Microsoft 365 生產力文件庫](https://www.microsoft.com/microsoft-365/success/?rtc=1)，來協助您定義 Teams 案例。 
 
 您應該將 Teams 的目標放在處理進展快速且高度共同作業的小組，他們密切合作並需要電子郵件和 Exchange Online 以外的更多功能。像是具有歷程記錄的即時群組聊天、用通用易找的位置儲存檔案和備忘稿。 
 

@@ -6,11 +6,11 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
 ms.openlocfilehash: d743092fdd309c1afd748afa7523f0cc0c6a2fd0
-ms.sourcegitcommit: cf77e4bf69e6ae144563f1e764ea3437ed6fc836
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33295879"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400007"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop-for-partners"></a>Microsoft 受管理電腦中註冊裝置的合作夥伴
 

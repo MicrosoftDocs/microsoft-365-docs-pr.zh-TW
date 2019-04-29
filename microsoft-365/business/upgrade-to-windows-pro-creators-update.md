@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: '了解如何將 Windows 裝置升級到 Windows 10 專業版 Creators Update。 '
-ms.openlocfilehash: ec1ef0462cc1ba1cd1ae01ee28795096097e01a9
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 13a964b19b1fbd43e9c255a90161ca6b48099305
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279858"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33399967"
 ---
 # <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>將 Windows 裝置升級到 Windows 專業版 Creators Update
 
@@ -37,6 +37,9 @@ ms.locfileid: "32279858"
      - 建立使用[媒體建立工具](https://go.microsoft.com/fwlink/?LinkID=836960)安裝媒體-選取此選項可建立 Windows 10 專業版 Creators Update 安裝媒體 （USB 快閃磁碟機或 ISO 檔案） 與您使用一個不同的電腦上安裝 Windows 10。
     
         a. 閱讀如何使用此工具，並建立您的安裝媒體上的指示。 
+
+> [!Note]
+> 如果您有 Windows 執行 Windows 7 專業版、 Windows 8 專業版或 Windows 8.1 專業版的裝置，您的 Microsoft 365 商務版訂閱賦與您的 Windows 10 升級-您不需要產品金鑰。
     
 請參閱[為 Microsoft 365 商務版使用者的 Windows 裝置上設定](set-up-windows-devices.md)完成 Windows 10 裝置設定。 
   

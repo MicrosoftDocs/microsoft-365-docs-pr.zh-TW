@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解作業系統部署與功能更新的選項。
-ms.openlocfilehash: b860a56ba2ed163311a8a92d8dd408dcb8983821
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d5053219750b056c9f72e94524f334a42e2aaa06
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290075"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400197"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>步驟 6：作業系統部署與功能更新
 

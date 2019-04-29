@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在環境中評估目錄和網路整備。
-ms.openlocfilehash: 93a0e66159a4d9ea275765beec42ea92bff63feb
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: cc3dcc1dd9c2e8d9c79f52de76b116ef7f9dffac
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290662"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400167"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>步驟 2：目錄和網路整備
 

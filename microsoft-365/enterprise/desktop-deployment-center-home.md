@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 桌面部署中心概觀。
-ms.openlocfilehash: 2f4615e66f23d852b751abfb2688202d25e39299
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 90b57beaa22651f407ea7a0d07d490d74041d524
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32284870"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400267"
 ---
 # <a name="desktop-deployment-center"></a>桌面部署中心
 
