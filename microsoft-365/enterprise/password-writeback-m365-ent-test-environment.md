@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定適用於 Microsoft 365 測試環境的密碼回寫。
-ms.openlocfilehash: e2ccbe251c4e62790331b949f163816f789436cb
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: e80c169a8aefa60c9e7b3be874a1fb26c86078b6
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291448"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353165"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼回寫
 
@@ -55,9 +55,9 @@ ms.locfileid: "32291448"
 
 首先，使用全域系統管理員角色設定使用者 1 帳戶。
 
-1. 從 [Office 入口網站](https://office.com)，以您的全域系統管理員帳戶登入。
+1. 從 [Microsoft 365 系統管理中心](https://portal.microsoft.com)，使用您的全域系統管理員帳戶登入。
 
-2. 按一下 [系統管理員]**** 磚。在瀏覽器的新 [Microsoft 365 系統管理中心]**** 索引標籤上，按一下[作用中使用者]****。
+2. 按一下 [作用中使用者]****。
  
 3. 在 [作用中使用者]**** 頁面上，按一下 [user1]**** 帳戶。
 

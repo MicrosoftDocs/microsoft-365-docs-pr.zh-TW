@@ -11,21 +11,21 @@
 
 如有需要，[步驟 1](../infoprotect-define-sec-infoprotect-levels.md) 可協助您符合這項要求。 
 
-<a name="crit-infoprotect-step4"></a>
+<a name="crit-infoprotect-step3"></a>
 ### <a name="required-increased-security-for-microsoft-365-is-configured"></a>必要：設定增強的 Microsoft 365 安全性
 
 您已為 [Office 365 增強的安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)設定下列設定：
 
 - Microsoft 365 安全性中心的威脅管理原則
 - Exchange Online 的其他全租用戶設定
-- SharePoint 系統管理中心中的全租用戶共用原則
+- SharePoint Online 系統管理中心中的全租用戶共用原則
 - Azure Active Directory (Azure AD) 中的設定
 
-您已經[為 SharePoint、OneDrive 和 Microsoft Teams 啟用了 Office 365 進階威脅防護 (ATP)](https://docs.microsoft.com/zh-TW/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams)。
+您已經[為 SharePoint、OneDrive 和 Microsoft Teams 啟用了 Office 365 進階威脅防護 (ATP)](https://docs.microsoft.com/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams)。
 
 如有需要，[步驟 3](../infoprotect-configure-increased-security-office-365.md) 可協助您符合這項要求。 
 
-<a name="crit-infoprotect-step3"></a>
+<a name="crit-infoprotect-step2"></a>
 ### <a name="optional-classification-is-configured-across-your-environment"></a>選用：設定環境的分類
 
 您已與您的法務和法規遵循小組合作，為組織的資料監管和安全性原則開發出適當的分類和標籤配置。 
@@ -39,9 +39,31 @@
 
 如有需要，[步驟 2](../infoprotect-configure-classification.md) 可協助您符合這項要求。 
 
+
+<a name="crit-infoprotect-step4"></a>
+### <a name="optional-windows-information-protection-is-deployed-across-your-environment"></a>選用：在您的環境之間部署 Windows 資訊保護
+
+您已註冊 Windows 10 企業版裝置，該裝置已部署並套用 Intune 原則，定義了：
+
+- 要保護的應用程式。
+- 保護的層級。
+- 保護延伸的位置。
+
+如有需要，[步驟 4](../infoprotect-deploy-windows-information-protection.md) 可協助您符合這項要求。 
+
 <a name="crit-infoprotect-step5"></a>
+### <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>選用：部署 Office 365 資料外洩防護 (DLP)
+
+您已分析、測試然後推出一組 DLP 原則 (具有位置和規則與條件和動作)，貴組織需要保護客戶和其他類型的私密資料，並且遵循產業和地區法規及需求。
+
+您的資料合規性和安全性人員使用 Office 365 安全性與合規性中心儀表板來監視 DLP 事件。
+
+如有需要，[步驟 5](../infoprotect-data-loss-prevention.md) 可協助您符合這項要求。 
+
+
+<a name="crit-infoprotect-step6"></a>
 ### <a name="optional-configure-privileged-access-management-in-office-365"></a>選用：在 Office 365 中設定特殊權限存取管理
 
 您已使用[在 Office 365 中設定特殊存取權限管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)主題中的資訊來啟用特殊存取權限，並在組織中建立一個或多個特殊存取權限原則。 您已設定這些原則，並且啟用了即時存取，以存取敏感資料或存取關鍵配置設定。
 
-如有需要，[步驟 4](../infoprotect-configure-privileged-access-management.md) 可協助您符合這項要求。 
+如有需要，[步驟 6](../infoprotect-configure-privileged-access-management.md) 可協助您符合這項要求。 

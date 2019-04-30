@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 企業版 Office 365 專業增強版的部署步驟。
-ms.openlocfilehash: c4fc3805dd2ea97e1a9797e5adfc31ab83f028ae
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 7905bcf37f2cda0e81208a9666c257e2c871110e
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290937"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400227"
 ---
 # <a name="phase-4-office-365-proplus"></a>第4 階段：Office 365 專業增強版
 
@@ -51,7 +51,7 @@ Office 365 專業增強版達成了 Microsoft 365 企業版的這些策略商務
 如果您已部署 Office 365 專業增強版，請參閱此階段的[允出準則](office365proplus-exit-criteria.md)，以確保其符合 Microsoft 365 企業版的必要條件。
 
 >[!Note]
->若要同時部署 Windows 10 企業版和 Office 365 專業增強版，並且改為使用[現代化電腦](https://www.microsoft.com/microsoft-365/modern-desktop)，請參閱[現代化電腦的部署中心](http://aka.ms/howtoshift)。
+>若要同時部署 Windows 10 企業版和 Office 365 專業增強版，請參閱[桌面部署中心](desktop-deployment-center-home.md)。
 >
 
 ## <a name="step-1-assess-your-environment"></a>步驟 1：評估環境

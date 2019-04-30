@@ -3,7 +3,7 @@ title: 資訊保護基礎結構的允出準則
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
+ms.date: 04/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 檢查資訊保護型服務和基礎結構的準則，確定您的設定符合 Microsoft 365 企業版的需求。
-ms.openlocfilehash: 681b3bb2500680b4f5d5801486347aec1b801714
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 9c74a3994a1a404583326f65f1cec579fccbe659
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283692"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400037"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>資訊保護基礎結構的允出準則
 
@@ -39,21 +39,21 @@ ms.locfileid: "32283692"
 
 如有需要，[步驟 1](infoprotect-define-sec-infoprotect-levels.md) 可協助您符合這項要求。 
 
-<a name="crit-infoprotect-step4"></a>
+<a name="crit-infoprotect-step3"></a>
 ## <a name="required-increased-security-for-microsoft-365-is-configured"></a>必要：設定增強的 Microsoft 365 安全性
 
-您已為 [Office 365 提升安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)設定下列設定：
+您已為 [Office 365 增強的安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)設定下列設定：
 
 - Microsoft 365 安全性中心的威脅管理原則
 - Exchange Online 的其他全租用戶設定
-- SharePoint 系統管理中心中的全租用戶共用原則
+- SharePoint Online 系統管理中心中的全租用戶共用原則
 - Azure Active Directory (Azure AD) 中的設定
 
-您已經[為 SharePoint、OneDrive 和 Microsoft Teams 啟用了 Office 365 進階威脅防護 (ATP)](https://docs.microsoft.com/zh-TW/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams)。
+您已經[為 SharePoint、OneDrive 和 Microsoft Teams 啟用了 Office 365 進階威脅防護 (ATP)](https://docs.microsoft.com/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams)。
 
 如有需要，[步驟 3](infoprotect-configure-increased-security-office-365.md) 可協助您符合這項要求。 
 
-<a name="crit-infoprotect-step3"></a>
+<a name="crit-infoprotect-step2"></a>
 ## <a name="optional-classification-is-configured-across-your-environment"></a>選用：設定環境的分類
 
 您已與您的法務和法規遵循小組合作，為組織的資料監管和安全性原則開發出適當的分類和標籤配置。 
@@ -67,15 +67,37 @@ ms.locfileid: "32283692"
 
 如有需要，[步驟 2](infoprotect-configure-classification.md) 可協助您符合這項要求。 
 
+
+<a name="crit-infoprotect-step4"></a>
+## <a name="optional-windows-information-protection-is-deployed-across-your-environment"></a>選用：在您的環境之間部署 Windows 資訊保護
+
+您已註冊 Windows 10 企業版裝置，該裝置已部署並套用 Intune 原則，定義了：
+
+- 要保護的應用程式。
+- 保護的層級。
+- 保護延伸的位置。
+
+如有需要，[步驟 4](infoprotect-deploy-windows-information-protection.md) 可協助您符合這項要求。 
+
 <a name="crit-infoprotect-step5"></a>
+## <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>選用：部署 Office 365 資料外洩防護 (DLP)
+
+您已分析、測試然後推出一組 DLP 原則 (具有位置和規則與條件和動作)，貴組織需要保護客戶和其他類型的私密資料，並且遵循產業和地區法規及需求。
+
+您的資料合規性和安全性人員使用 Office 365 安全性與合規性中心儀表板來監視 DLP 事件。
+
+如有需要，[步驟 5](infoprotect-data-loss-prevention.md) 可協助您符合這項要求。 
+
+
+<a name="crit-infoprotect-step6"></a>
 ## <a name="optional-configure-privileged-access-management-in-office-365"></a>選用：在 Office 365 中設定特殊權限存取管理
 
 您已使用[在 Office 365 中設定特殊存取權限管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)主題中的資訊來啟用特殊存取權限，並在組織中建立一個或多個特殊存取權限原則。 您已設定這些原則，並且啟用了即時存取，以存取敏感資料或存取關鍵配置設定。
 
-如有需要，[步驟 4](infoprotect-configure-privileged-access-management.md) 可協助您符合這項要求。 
+如有需要，[步驟 6](infoprotect-configure-privileged-access-management.md) 可協助您符合這項要求。 
 
 ## <a name="results-and-next-steps"></a>結果和後續步驟
 
-Microsoft 365 企業版的資訊保護基礎架構使用已定義的安全性層級、Office 365 的增強安全性、使用敏感資料類型和標籤的分類以及特殊存取權限管理。
+Microsoft 365 企業版的資訊保護基礎架構使用已定義的安全性層級、Office 365 的增強安全性、使用敏感資料類型和標籤的分類、Windows 資訊保護、資料外洩防護以及特殊存取權限管理。
 
 如果您遵照 Microsoft 365 企業版的端到端部署，那麼現在您已準備好讓[工作負載和案例](deploy-workloads.md)利用基礎架構的所有功能和設定。

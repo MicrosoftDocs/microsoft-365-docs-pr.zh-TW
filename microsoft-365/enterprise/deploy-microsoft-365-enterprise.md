@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用來在組織中部署 Microsoft 365 企業版的資源。
-ms.openlocfilehash: 3112589a023a563ff599535e1e9045a3d3db3bce
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: dca9d5938a5db9cb3bc00e4e34d1f939700a1182
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289185"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400057"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版
 
@@ -41,7 +41,7 @@ Microsoft 365 企業版是 Office 365、Enterprise Mobility + Security (EMS) 和
 
 由 Microsoft 工程師提供的 FastTrack 可作為訂閱的一部分使用，具有不間斷且可重複的好處，可協助您以自己的步調移轉到雲端。 FastTrack 也可讓您存取合格合作夥伴的其他服務。 至今隨著超過 40000 位啟用此服務的客戶，FastTrack 可協助最大化 ROI、加速部署，以及提高整個組織中的採用率。 請參閱[適用於 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365)。
 
-如果您想要利用 FastTrack 來部署 Microsoft 365 企業版，您可以使用 FastTrack [Microsoft 365 部署建議程式](https://aka.ms/microsoft365setupguide)，以了解有關部署及設定基礎結構的指導方針。 請注意，您必須以 Office 365 或 Microsoft 365 租用戶中全域系統管理員的身分登入，才能存取此頁面。
+如果您想要利用 FastTrack 來部署 Microsoft 365 企業版，您可以使用 FastTrack [Microsoft 365 部署建議程式](https://aka.ms/microsoft365setupguide)，以了解有關部署及設定基礎結構的指導方針。 您必須以 Office 365 或 Microsoft 365 租用戶中全域系統管理員的身分登入，才能存取此頁面。
 
 [從此處](https://fasttrack.microsoft.com/microsoft365)開始 FastTrack 的端對端部署旅程。
 

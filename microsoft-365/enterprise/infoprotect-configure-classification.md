@@ -3,7 +3,7 @@ title: 步驟 2：設定環境的分類
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
+ms.date: 04/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並設定在組織中分類資料的不同方式。
-ms.openlocfilehash: ca64b98bceb6f969adc964e93a6a1cc872763199
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5323e4f682e8a530601308877423502f64878a4c
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286972"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400087"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>步驟 2：設定環境的分類
 
@@ -47,38 +47,31 @@ Microsoft 365 的敏感資訊類型會定義自動化程序 (例如搜尋) 如�
 
 在定義資料管理策略時，其中一項工作是決定應該將特定類型的文件或具有特定內容的文件保留多久，以符合組織的原則和地區的法規。 例如，某些類型的文件應該先保留一定時間再刪除，其他類型的文件則必須無限期保留。
 
-對於儲存在 Microsoft 365 中的文件，您可以對 Exchange 電子郵件、SharePoint Online、商務用 OneDrive 以及 Teams 聊天和頻道的訊息中所儲存的文件和資料，定義並套用保留標籤。 如需詳細資訊，包括其建立方式，請參閱[保留標籤概觀](https://docs.microsoft.com/office365/securitycompliance/labels)。
+對於儲存在 Microsoft 365 中的文件，您可以對 Exchange 電子郵件、SharePoint Online、商務用 OneDrive 以及 Teams 聊天和頻道的訊息中所儲存的文件和資料，定義並套用保留標籤。 
 
 如果您使用保留標籤，請對必須套用保留原則的每個檔案類別設定標籤。 在保留標籤內，您可以指定：
 
 - 一組檔案描述項 (例如，依業務部門、檔案類別或法規)。
-
 - 已附加保留標籤的檔案所需的保留設定，例如保留時間和到達保留時間後的行為。
 
 您也可以藉由設定 SharePoint Online 網站來自動對檔案套用保留標籤，以對該網站中的所有新文件套用預設的保留標籤。 
 
-如需詳細資訊，請參閱此[保留標籤概觀](https://docs.microsoft.com/office365/securitycompliance/labels)。
+如需詳細資訊，請參閱[保留標籤概觀](https://docs.microsoft.com/office365/securitycompliance/labels)。
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 
 在為特定類型的文件或具有特定內容的文件提供保護並實作安全性時，其中一項工作是使用標籤來加以標示，以便再套用一層安全性。 使用 Microsoft 365 中的敏感度標籤時，您可以：
 
 - 強制執行保護設定，例如加密、權限或新增浮水印。
-
 - 藉由在 Microsoft Intune 中使用端點保護，來防止敏感內容從組織內執行 Windows 的裝置上流出。 
-
 - 使用 Windows 資訊保護 (WIP) 端點保護來防止該內容遭人複製到第三方應用程式 (例如 Twitter 或 Gmail)，或複製到抽取式儲存體 (例如 USB 磁碟機)。
-
 - 使用 Microsoft Cloud App Security 來保護地三方應用程式和服務中的內容。 
-
 - 不使用任何保護設定而將內容分類。
 
 如果您使用敏感度標籤，請為每個安全性和資訊保護層級設定標籤。 例如，為下列項目建立三個敏感度標籤：
 
 - 基準
-
 - 敏感性
-
 - 高管制
 
 如需詳細資訊，請參閱此[敏感度標籤概觀](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels)。
@@ -102,12 +95,14 @@ Microsoft 365 的敏感資訊類型會定義自動化程序 (例如搜尋) 如�
 
 如需 GDPR 包含個人資料的分類配置範例，請參閱[設計個人資料的分類結構描述](https://docs.microsoft.com/office365/enterprise/architect-a-classification-schema-for-personal-data)。
 
+## <a name="take-it-for-a-test-drive"></a>試用產品
+
 |||
 |:-------|:-----|
 |![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：資料分類](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
-作為過渡期的檢查點，您可以看到與此步驟相對應的[允出準則](infoprotect-exit-criteria.md#crit-infoprotect-step3)。
+作為過渡期的檢查點，您可以看到與此步驟相對應的[允出準則](infoprotect-exit-criteria.md#crit-infoprotect-step2)。
 
 ## <a name="next-step"></a>下一步
 

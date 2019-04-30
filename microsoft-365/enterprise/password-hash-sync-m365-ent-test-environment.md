@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：為您的 Office 365 測試環境設定及示範密碼雜湊同步處理並且登入。
-ms.openlocfilehash: 9a907894d4f842b334403d047cabbdeb42217744
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a692f445bcb56044e9a6a29cee62facd22743733
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290970"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353138"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>適用於 Office 365 測試環境的密碼雜湊同步處理
 
@@ -103,19 +103,17 @@ ms.locfileid: "32290970"
     
 10. 在 [組態完成]**** 頁面上，按一下 [結束]****。
     
-11. 在 Internet Explorer 中，移至 Office 入口網站 ([https://office.com](https://office.com))。
+11. 在 Internet Explorer 中，移至 Microsoft 365 系統管理中心 ([https://portal.microsoft.com](https://portal.microsoft.com))。
     
-12. 從主要的入口網站頁面中，按一下 [管理]****。
-    
-13. 在左方的瀏覽區域中，按一下 [使用者] > [作用中的使用者]****。
+12. 在左方的瀏覽區域中，按一下 [使用者] > [作用中的使用者]****。
     
     請注意名為 **User1** 的帳戶。 此帳戶是來自 TESTLAB AD DS 網域，且經過證明目錄同步作業可以運作。
     
-14. 按一下 [User1]**** 帳戶。針對產品授權，按一下 [編輯]****。
+13. 按一下 [User1]**** 帳戶。針對產品授權，按一下 [編輯]****。
     
-15. 在 [產品授權]**** 中，選取您的國家/地區，然後按一下 [Office 365 企業版 E5]**** 的 [關閉]**** 控制項 (將它切換至 [開啟]****)。對 [Enterprise Mobility + Security E5]**** 授權執行相同的動作。 
+14. 在 [產品授權]**** 中，選取您的國家/地區，然後按一下 [Office 365 企業版 E5]**** 的 [關閉]**** 控制項 (將它切換至 [開啟]****)。對 [Enterprise Mobility + Security E5]**** 授權執行相同的動作。 
 
-16. 按一下頁面底部的 [儲存]****，然後按一下 [關閉]****。
+15. 按一下頁面底部的 [儲存]****，然後按一下 [關閉]****。
     
 接下來，測試使用 <strong>user1@testlab.</strong>\<您的網域名稱> User1 帳戶的使用者名稱來登入 Office 365 訂閱的能力。
 

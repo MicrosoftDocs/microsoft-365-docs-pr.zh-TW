@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用「測試實驗室指南」以設定 Microsoft 365 企業版的示範、概念證明或開發/測試環境。
-ms.openlocfilehash: 027386f9b44d09d2927c2473d1ef27381f82f969
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 007fac786e7676d219d7e82c435e37fe3c3221df
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283643"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353131"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Microsoft 365 企業版測試實驗室指南
 
@@ -65,7 +65,7 @@ TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符�
 
 - [保護全域系統管理員帳戶](protect-global-administrator-accounts-microsoft-365-test-environment.md)
  
-   使用 Office 365 雲端 App 安全性和條件式存取原則鎖定您的全域系統管理員帳戶。
+   使用條件式存取原則鎖定您的全域系統管理員帳戶。
 
 - [密碼回寫](password-writeback-m365-ent-test-environment.md)
 
@@ -82,6 +82,11 @@ TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符�
 - [Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md)
 
    掃描目前的使用者帳戶是否存在漏洞。
+
+- [身分識別與裝置存取](identity-device-access-m365-test-environment.md)
+
+   建立環境來測試建議的身分識別與裝置存取組態，以及條件式存取原則。
+
 
 ## <a name="mobile-device-management"></a>行動裝置管理
 

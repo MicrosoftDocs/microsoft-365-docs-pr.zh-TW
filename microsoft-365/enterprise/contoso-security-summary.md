@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用整個 Microsoft 365 企業版的安全性功能。
-ms.openlocfilehash: 55ee8ff88490a82a9438b076bcebfab976f8baf6
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 1aade29c8a4f9348b749025818e433981ec19091
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289031"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353098"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>適用於 Contoso Corporation 之 Microsoft 365 企業版安全性的摘要
 
@@ -56,7 +56,7 @@ Contoso 會使用下列步驟來準備部署 Microsoft 365 企業版的安全性
 
 - 專用的全域管理員帳戶 (具有 MFA 和 PIM)
 
-  Contoso 並非將全域管理角色指派給每日使用者帳戶，而是建立三個、專用的全域管理員帳戶，具有非常強式的密碼，並且以多重要素驗證 (MFA) 和 Azure AD Privileged Identity Management (PIM) 加以保護。 
+  Contoso 並非將全域管理角色指派給每日使用者帳戶，而是建立三個、專用的全域管理員帳戶，具有非常強式的密碼，並且以多重要素驗證 (MFA) 和 Azure AD Privileged Identity Management (PIM) 加以保護。  PIM 僅在 Microsoft 365 企業版 E5 中提供。
 
   使用全域管理員帳戶登入只能執行特定系統管理工作，只有指定的人員才知道密碼，且只能在使用 Azure AD PIM 設定的時間內使用。 
 
@@ -105,7 +105,7 @@ Contoso 會使用下列步驟來準備部署 Microsoft 365 企業版的安全性
 
 ## <a name="information-protection"></a>資訊保護
 
-- 使用 Azure 資訊保護來保護機密和高管制數位資產
+- 使用 Azure 資訊保護標籤來保護機密和高管制數位資產
 
   Contoso 決定三個層級的資料保護，並且部署 [Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) 標籤，讓使用者套用至數位資產。針對其營業秘密和其他智慧財產權，Contoso 針對高管制資料 (會加密內容並且限制特定安全性群組的存取) 在範圍原則中使用 Azure 資訊保護子標籤。
 
@@ -119,11 +119,7 @@ Contoso 會使用下列步驟來準備部署 Microsoft 365 企業版的安全性
 
 - 使用 Microsoft Cloud App Security 來進行雲端監視
 
-  Contoso 使用 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)，來對應其雲端環境、監視其使用量，以及偵測安全性事件。 
-
-- 使用 Office 365 雲端 App 安全性來進行 Office 365 安全性監視
-
-  Contoso 安全性系統管理員使用 [Office 365 雲端 App 安全性 (CAS)](https://docs.microsoft.com/office365/securitycompliance/office-365-cas-overview) (機器翻譯) 來設定警示，對不正常或有風險的使用者活動進行通知，例如從 SharePoint Online 或商務用 OneDrive 下載大量資料、多次失敗的登入嘗試，或是從未知或危險的 IP 位址登入。
+  Contoso 使用 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)，來對應其雲端環境、監視其使用量，以及偵測安全性事件。 Microsoft Cloud App Security 僅在 Microsoft 365 企業版 E5 中提供。
 
 - 使用 Microsoft Intune 來進行裝置管理
 
