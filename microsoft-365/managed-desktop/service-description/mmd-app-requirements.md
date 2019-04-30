@@ -7,12 +7,12 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 01/08/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: de6cc7d77e023a9d41961e5fbcce060f1bb659ae
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 07e4719d87cb11910a90665ce9beb95edf6641a4
+ms.sourcegitcommit: e15cf5d0d8ff3dfdc457b469992d72ac802e6434
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278333"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33467741"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft 受管理的電腦應用程式需求
 
@@ -20,41 +20,44 @@ ms.locfileid: "32278333"
 
 <!--Application addendum -->
  
-線條的商務應用程式，您想要部署至 Microsoft 受管理的電腦裝置必須符合本主題中的需求。 
+為了確保效能、 可靠性和服務性的 Microsoft 受管理的電腦裝置的商務應用程式的客戶的行必須不嚴重影響使用者體驗，或修改安全性轉變成為。 因此，您想要部署至 Microsoft 受管理的電腦裝置的商務應用程式必須符合本主題中的需求。
 
 ## <a name="application-condition"></a>應用程式的狀況
 
-請務必應用程式不產生負面影響 Microsoft 受管理的桌上型電腦環境。 以下是應用程式必須符合為了讓 Microsoft，以將它部署的需求。 對於任何指定應用程式或驅動程式，Microsoft 可能撤回提及提供任何需求。 Microsoft 可能決定要移除的任何應用程式或造成負面影響效能和可靠性的 Microsoft 受管理的電腦裝置的驅動程式。
+請務必應用程式不產生負面影響 Microsoft 受管理的桌上型電腦環境。 以下是要部署的應用程式的應用程式必須符合的需求。 對於任何指定應用程式或驅動程式，Microsoft 可能撤回提及提供任何需求。 Microsoft 可能決定要移除的任何應用程式或造成負面影響效能和可靠性的 Microsoft 受管理的電腦裝置的驅動程式。
 
-## <a name="deployable-using-microsoft-technologies"></a>可使用 Microsoft 技術部署
+## <a name="centrally-managed-apps"></a>集中管理的應用程式
 
-Microsoft 受管理的電腦使用 Intune、 Microsoft 網上商店和商務用 Microsoft Store 部署應用程式。 因此，應用程式必須封裝能夠 then 目前版本，這些服務的部署方式。
+必須透過 Intune、 Microsoft 網上商店或 Microsoft 網上商店商務; 部署所有應用程式和 Microsoft 受管理的裝置上安裝驅動程式如果有的話驅動程式也會透過 Windows Update 服務部署。 
 
 ## <a name="prohibited-app-classes"></a>禁止之應用程式的類別
 
 Microsoft 受管理的電腦裝置上不允許特定應用程式類型：
 - 3rd 廠商防病毒、 安全性或稽核軟體
-- 3rd 廠商網頁瀏覽器
 - 在 Office 365 專業增強版之前的 Microsoft Office 版本
 - 安裝或將彙整其他 3rd 廠商軟體應用程式
 
 ## <a name="restricted-app-behaviors"></a>受限制的應用程式行為
 
-某些應用程式行為可能有害的使用者經驗或呈現 Microsoft 受管理的電腦裝置安全性風險。 應用程式應該不會出現下列行為或特性： 
+某些應用程式行為產生負面影響的使用者經驗，或可能呈現 Microsoft 受管理的電腦裝置安全性風險。 若要執行而不從 Microsoft 特定豁免 Microsoft 受管理的桌上型電腦環境中不允許具有下列行為的應用程式。
 
 使用者經驗：
-- 安裝背景服務或即會衍生長時間執行背景處理程序
+- 安裝背景服務
 - 將自己新增至 Windows 啟動路徑
+- 取決於驅動程式的應用程式
+- 3rd 廠商網頁瀏覽器
 
 安全性：
-- 呼叫未記載之 Windows 或 Office Api 或採取內部 Windows 或 Office 資料結構相依性
-- 做為應用程式存放區，或具有內建的擴充管理員
 - 提高使用者的權限
+- 做為應用程式存放區，或具有內建的擴充管理員
 - 有已知的安全性弱點
-- 使用不會縮合至受信任的根憑證簽署
 - 加密或限制存取使用者資料
-- 在執行階段修改作業系統的程式碼
+- 是不帶正負號，或使用不會縮合至受信任的根憑證簽署
+
 
 ## <a name="driver-deployment"></a>驅動程式部署
 
-除非驅動程式在 Windows Update，或分開簽署 Windows 硬體品質實驗室 (WHQL)，Microsoft 必須核准驅動程式，Microsoft 會部署至 Microsoft 受管理的電腦裝置的驅動程式之前。
+Microsoft 受管理電腦只支援可透過 Windows Update 或收件匣隨 Microsoft 受管理裝置的裝置驅動程式。 
+
+如果應用程式需要特定執行它的驅動程式會被視為受限制的應用程式，並要求豁免部署至 Microsoft 受管理的電腦。 
+

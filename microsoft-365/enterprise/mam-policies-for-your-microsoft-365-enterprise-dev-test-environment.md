@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此測試實驗室指南來新增 Intune 裝置合規性原則，以您的 Microsoft 365 企業版測試環境。
-ms.openlocfilehash: d20b050bfc56776656bf1d485b2e107a9debe2f7
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: b8c2fbe437362f72effd5ba550817f847ccbbf74
+ms.sourcegitcommit: e15cf5d0d8ff3dfdc457b469992d72ac802e6434
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353185"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33467731"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>裝置合規性原則，您的 Microsoft 365 企業版測試環境
 
@@ -26,7 +26,7 @@ ms.locfileid: "33353185"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中文件的所有視覺對應。
+> 按一下[這裡](https://aka.ms/m365etlgstack)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1： 建置 Microsoft 365 企業版測試環境
 
@@ -54,7 +54,7 @@ ms.locfileid: "33353185"
     
 6. 在 [**群組-所有群組**] 刀鋒視窗中，按一下 [ **+ 新增群組**]。
     
-7. 在 [**群組**] 刀鋒視窗中，選取 [ **Office 365** **群組類型？**，在 [**名稱**] 中，輸入**受管理的 Windows 10 裝置使用者**在 [**成員資格類型**] 中，選取 [**已指派**，然後按一下 [**建立**。 
+7. 在 [**群組**] 刀鋒視窗中，選取 [ **Office 365**或**安全性****群組類型？**，在 [**名稱**] 中，輸入**受管理的 Windows 10 裝置使用者**在 [**成員資格類型**] 中，選取 [**已指派**，然後按一下 [**建立**。 
     
 8. 關閉 [群組]**** 刀鋒視窗。
     
@@ -90,7 +90,7 @@ ms.locfileid: "33353185"
 
 26. 在 [**新增應用程式**] 刀鋒視窗中，按一下 [**新增**]。
 
-您現在可以在**Windows 10**裝置合規性原則中進行測試選取的應用程式和**受管理的 Windows 10 裝置的使用者**群組的成員裝置合規性原則。 
+您現在可以在**Windows 10**裝置合規性原則中進行測試選取的應用程式和**受管理的 Windows 10 裝置的使用者**群組的成員裝置合規性原則。 請注意，選取 [Office 365，因為群組類型會建立額外的資源。 
   
 ## <a name="next-step"></a>下一步
 
