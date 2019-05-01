@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商務版, Microsoft 365, SMB, 常見問題集, 常見問題集, 解答, 商務版
 ms.date: 06/08/2018
-ms.openlocfilehash: 1e277aed366d82e524ef99c43ab0401b5d35e5b0
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: bdcfd6a78278aff83b3fc21ae0fbb43bce140a16
+ms.sourcegitcommit: 1034f54472de62897f2e8f12459db8043ac8443b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286117"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33497745"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 商務版常見問題集
 
@@ -116,7 +116,7 @@ Microsoft 365 商務版試用版適用於 Csp。 試用版直接客戶將會是�
 成功部署 Microsoft 365 商務版的最直接途徑是參與 Microsoft 合作夥伴的作業。 他們接受過大量訓練，遇到過各種不同的客戶案例，因此絕對擁有最佳條件了解您的環境和需求。 擁有資深 IT 人員的客戶，可以使用 <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Microsoft 365 商務版快速入門</a>來協助部署 Microsoft 365 商務版。 
 
 ### <a name="does-microsoft-365-business-include-the-full-capabilities-of-microsoft-intune"></a>Microsoft 365 商務版是否包含完整的 Microsoft Intune 功能？ 
-是，Microsoft 365 商務版訂閱者已授權給 for iOS、 Android、 MacOS 和其他跨平台裝置管理使用完整的 Intune 功能。 功能不適用於 Microsoft 365 商務版中, 簡化的管理主控台： 3rd 方應用程式管理和組態的之類的 WiFi 設定檔、 VPN 憑證等等，可以管理在完整的 Intune 主控台。   
+是，Microsoft 365 商務版訂閱者已授權給 for iOS、 Android、 MacOS 和其他跨平台裝置管理使用完整的 Intune 功能。 不像 3rd 方應用程式管理和設定 WiFi 設定檔、 VPN 憑證等，在 Microsoft 365 商務版，簡化的管理主控台中可用的功能可以管理在完整的 Intune 主控台。 您必須使用 Configuration Manager 來管理 EMS 授權所涵蓋的用戶端權限。 SCCM 相關的查詢，請參閱<a href="https://docs.microsoft.com/en-us/sccm/core/understand/product-and-licensing-faq#bkmk_csp" target="_blank">SCCM 常見問題集</a>
   
 
 ### <a name="does-azure-active-directory-premium-p1-come-with-microsoft-365-business"></a>Azure Active Directory 進階版 P1 並未隨附 Microsoft 365 商務版？ 
