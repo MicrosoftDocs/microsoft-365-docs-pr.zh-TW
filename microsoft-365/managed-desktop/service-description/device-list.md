@@ -3,14 +3,14 @@ title: Microsoft 受管理的電腦裝置
 description: 本主題列出在 Microsoft 受管理電腦中使用的裝置規格。
 keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: a6572a27f737e3467a7efd2a4aea8488b364a8a7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5858ec7bbbd1cd1f961c94ad9605b79ce9ad7b23
+ms.sourcegitcommit: d57adf17de6bc3e67d104d134f43d899a20db252
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291527"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33520753"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的電腦裝置 
 
