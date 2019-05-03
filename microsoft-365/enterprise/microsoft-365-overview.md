@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 企業版提供元件、 計劃及部署路徑的簡介。
-ms.openlocfilehash: a206924e7056d0213dd0721c2259736a031f80d6
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: d3cac3274a93c2f6d2d042a03a5140f16152d8d9
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353198"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553332"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -98,8 +98,6 @@ Microsoft 365 企業版所組成：
  
   讓美國公共部門員工在一起，安全地運作。
 
-
-
 ## <a name="microsoft-365-training"></a>Microsoft 365 教育訓練
 
 |||
@@ -107,13 +105,10 @@ Microsoft 365 企業版所組成：
 ![](./media/m365-poster/m365-fundamentals.svg)| 取得自行訓練，並向 Microsoft 365 憑證運作。 <BR> 開始使用[Microsoft 365 基本概念](https://docs.microsoft.com/learn/paths/m365-fundamentals/)。
 
 
-
-
-
 ## <a name="next-step"></a>下一步
 
 如果您正在自行進行部署，來啟動您的[Microsoft 365 企業版部署的作業過程](deploy-microsoft-365-enterprise.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 Enterprise 產品頁面](https://www.microsoft.com/microsoft-365/enterprise)
