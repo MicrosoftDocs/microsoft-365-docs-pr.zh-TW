@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立安全的 SharePoint Online 小組網站或 Microsoft Teams 小組，以儲存您最有價值且機密的數位資產。
-ms.openlocfilehash: 4342ba5e5d1c83ed0c9d26100afd86afa1e62723
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d80be334f692f905ec70ae43f851d2b73801f4a0
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289804"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553322"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>適用於高管制資料的 Microsoft Teams 和 SharePoint Online 網站
 
@@ -124,7 +124,7 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 - SharePoint 群組和權限等級的集合
 - 存取群組和每個權限等級之成員的集合
-- 適當的 Office 365 保留標籤與關聯至標籤的 DLP 原則
+- 適當的 Office 365 保留標籤和與標籤相關聯的 DLP 原則
 - 包含加密和權限的 Azure 資訊保護子標籤設定
 
 ## <a name="phase-2-configure"></a>階段 2：設定

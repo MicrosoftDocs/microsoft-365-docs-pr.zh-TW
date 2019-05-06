@@ -3,7 +3,7 @@ title: Microsoft 365 模擬企業基本設定
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 05/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用此「測試實驗室指南」建立 Microsoft 365 企業版的模擬企業測試環境。
-ms.openlocfilehash: 7c16f6fee480e883f7bf87d3b03441cf18e8f73f
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 173622666420976199709d311ef67a7f0be3d867
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290818"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553365"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模擬企業基本設定
 
 本文提供逐步指示來為 Microsoft 365 企業版建立簡化的環境，其中包含：
 
-- Office 365 E5 和 EMS E5 試用版或付費訂閱。
+- Microsoft 365 E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路上的三部虛擬機器 (DC1、APP1 及 CLIENT1) 組成。
  
 ![模擬企業基本設定](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
@@ -125,7 +125,7 @@ $nsg=Get-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
 ```
 
-接下來，我們會建立 DC1 虛擬機器，並將其設定為 **testlab.**\<您的公用網域> Active Directory Domain Services (AD DS) 網域的網域控制站以及 TestLab 虛擬網路中虛擬機器的 DNS 伺服器。 例如，若您的公用網域名稱為 **<span>contoso</span>.com**，則 DC1 虛擬機器會是 **<span>testlab</span>.contoso.com** 網域的網域控制站。
+接下來，建立 DC1 虛擬機器，然後將它設定為 ** 測試實驗室的網域控制站。測試實驗室虛擬網路的虛擬機器的**\<公用網域 > AD DS 網域及 DNS 伺服器。 例如，若您的公用網域名稱為 **<span>contoso</span>.com**，則 DC1 虛擬機器會是 **<span>testlab</span>.contoso.com** 網域的網域控制站。
   
 若要建立 DC1 的 Azure 虛擬機器，請填入您的資源群組，並在本機電腦上的 PowerShell 命令提示字元執行這些命令。
   
@@ -349,54 +349,63 @@ CLIENT1 重新啟動之後，使用 TESTLAB\\User1 帳戶名稱和密碼連線�
 ![模擬企業基本設定步驟 3](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 
-## <a name="phase-2-create-your-office-365-e5-and-ems-e5-subscriptions"></a>階段 2：建立您的 Office 365 E5 和 EMS E5 訂閱
+## <a name="phase-2-create-your-microsoft-365-e5-subscriptions"></a>階段 2：建立您的 Microsoft 365 E5 訂閱
 
-在這個階段，您會建立新的 Office 365 E5 和 EMS E5 訂閱，這些訂閱會使用新的一般 Azure AD 租用戶，其與您的生產訂閱不同分隔。您可使用兩種方式執行此作業：
+您可以在這個階段建立新的 Microsoft 365 E5 訂閱，其使用全新的 Azure AD 租用戶，亦即與您生產訂用帳戶不同。有兩種方法可完成：
 
-- 使用 Office 365 E5 和 EMS E5 的試用訂閱。 
+- 使用 Microsoft 365 E5 的試用版訂閱。 
 
-  Office 365 E5 試用訂閱為期 30 天，也可以輕鬆地擴充到 60 天。EMS E5 試用訂閱為期 90 天。試用訂閱到期時，您必須將它們轉換成付費訂閱，或建立新的試用訂閱。建立新的試用訂閱，表示您會捨棄您的組態 (可能包含複雜的案例)。  
-- 使用具有少量授權的不同 Microsoft 365 Enterprise 生產訂閱。
+  Microsoft 365 E5 試用版訂閱期限是 30 天，也可以輕鬆地延長到 60 天。試用版訂閱到期時，您必須將它轉換為付費訂閱，或建立新的試用版訂閱。建立新的試用版訂閱表示您將失去之前的設定，這可能會留下複雜的情況。  
+- 使用具少數授權數的不同 Microsoft 365 E5 生產訂用帳戶。
 
   這會產生額外的成本，但可確保您有運作中的測試環境可嘗試不會過期的功能、組態和案例。您可以長期使用相同的測試環境進行概念性驗證、同儕示範和管理，以及應用程式開發和測試。這是建議的方法。
 
 ### <a name="use-trial-subscriptions"></a>使用試用訂閱
 
-如果您必須使用試用訂閱，請遵循 [Office 365 開發/測試環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)階段 2 和階段 3 中的步驟進行。
-  
-接著，註冊 EMS E5 試用訂閱，並將它新增至與 Office 365 E5 訂閱相同的組織。
-  
-首先，請新增 EMS E5 試用訂閱，並指派 EMS 授權給您的全域管理員帳戶。
-  
-1. 請使用網際網路瀏覽器的私用執行個體，並使用全域管理員帳戶認證登入 Office 入口網站。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+首先，請依照 [Office 365 開發/測試環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)的階段 2 和 3 階段來建立簡易的 Office 365 開發/測試環境。
+
+>[!Note]
+>我們提供您建立 Office 365 試用版訂閱，以便開發/測試環境中能有不同於您目前已有之付費訂閱的單獨 Azure AD 租用戶。 這項獨立性表示您可以在測試租用戶中新增和移除使用者，而不會影響到生產訂用帳戶。
+>
+
+接下來，新增 Microsoft 365 E5 試用版訂閱，並將 Microsoft 365 授權指派給您的全域系統管理員帳戶。
+
+1. 使用網際網路瀏覽器的私用執行個體，以全域系統管理員帳戶憑證登入位於 [http://admin.microsoft.com](http://admin.microsoft.com) 的 Microsoft 365 系統管理中心。
     
-2. 按一下 [管理]**** 磚。
+2. 在 [Microsoft 365 系統管理中心] **** 頁面的左側導覽中，按一下 [帳單 > 購買服務]****。
     
-3. 在瀏覽器的 [Microsoft 365 系統管理中心]**** 索引標籤上，按一下左導覽中的 [計費] > [購買服務]****。
-    
-4. 在 [購買服務]**** 頁面上，尋找 **Enterprise Mobility + Security E5** 項目。將滑鼠指標停留在上面，並且按一下 [開始免費試用]****。
-    
+3. 在 [購買服務]**** 頁面上，找到 [Microsoft 365 E5]**** 項目。 將滑鼠指標停留在上面，並且按一下 [開始免費試用]****。
+
+4. 在 [Microsoft 365 E5 試用版]**** 頁面上，選擇要收到簡訊或電話、輸入您的電話號碼，然後按一下 [傳送簡訊給我]**** 或 [打電話給我]****。
+
 5. 在 [確認訂單]**** 頁面上，按一下 [立即試用]****。
-    
+
 6. 在 [訂單收據]**** 頁面上，按一下 [繼續]****。
-    
-7. 在瀏覽器的 [Office 365 系統管理中心]**** 索引標籤上，按一下左導覽中的 [使用者] > [作用中使用者]****。
-    
-8. 按一下您的全域系統管理員帳戶，然後按一下 [產品授權]**** 的 [編輯]****。
-    
-9. 在 [產品授權]**** 窗格中，將 [**Enterprise Mobility + Security E5**] 的產品授權設為 [開啟]****，按一下 [儲存]****，然後按兩次 [關閉]****。
-    
+
+7. 在 Microsoft 365 系統管理中心，按一下 [作用中使用者]****，然後您的系統管理員帳戶。
+
+8. 按一下 [產品授權]**** 的 [編輯]****。
+
+9. 關閉 Office 365 企業版 E5 授權，然後開啟 Microsoft 365 E5 授權。
+
+10. 按一下 [儲存 > 關閉 > 關閉]****。
+
+ 接下來，***如果您已完成階段 3*** [Office 365 開發/測試環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)，請為所有其他帳戶重複步驟 8 到 11 的所有程序 (使用者 2、使用者 3、使用者 4 和使用者 5)。
+  
 > [!NOTE]
->  針對永久測試環境，建立具有少數授權的新付費訂閱。 
+> Microsoft 365 E5 試用版訂閱的期限是 30 天。 在永久測試環境中，將此試用訂閱轉換為具少數授權數的付費訂閱。
   
-接下來，請為所有其他帳戶 (使用者 2、使用者 3、使用者 4 和使用者 5) 重複先前程序的步驟 8 和 9。
+測試環境現在擁有：
   
+- Microsoft 365 E5 試用版訂閱。
+- 所有適當的使用者帳戶 (全域系統管理員或所有五個使用者帳戶) 皆已可使用 Microsoft 365 E5。
+    
 ### <a name="results"></a>結果
 
 測試環境現在擁有：
   
-- Office 365 E5 Enterprise 和 EMS E5 試用訂閱會與您的使用者帳戶清單共用相同的 Azure AD 租用戶。
-- 已啟用所有適用的使用者帳戶 (僅全域管理員或全部五個使用者帳戶) 以使用 Office 365 E5 和 EMS E5。
+- Microsoft 365 E5 試用版訂閱。
+- 所有適當的使用者帳戶 (全域系統管理員或所有五個使用者帳戶) 皆已可使用 Microsoft 365 E5。
     
 這是您的最終設定。
   

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 適用於您組織之使用者和群組的方案。
-ms.openlocfilehash: f8b3df73518e33c7750c0b72b2cb9f36bc8e9745
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c74ff672ce84a5609c11eb4fa7a0405d350349ab
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283786"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553292"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>步驟 1：適用於使用者與群組的方案
 
@@ -42,7 +42,7 @@ ms.locfileid: "32283786"
 - **Active Directory 網域服務 (AD DS)**，是裝載於執行 Windows Server 的電腦上的內部網路身分識別提供者。 一般使用對象為具有現有內部部署身分識別提供者的組織。
 - **Azure Active Directory (Azure AD**)，為以雲端為基礎的身份認證即服務 (IDaaS)，提供管理及保護環境的各種功能。 一般使用對象為不具現有內部部署基礎結構的組織。
 
-如果您的組織現有內部部署身分識別提供者，您需要將使用者帳戶和群組從 Active Directory 網域服務 (AD DS) 同步處理至 Azure AD，以提供對 Microsoft 365 企業版以雲端為基礎之服務的更流暢存取。 您也可以使用 Azure AD 來建立及管理只存在於 Microsoft 雲端中的群組。
+如果您的組織有現有的內部部署身分識別提供者，您需要將來自 AD DS 的使用者帳戶與群組同步處理至 Azure AD，以提供更多 Microsoft 365 Enterprise 雲端服務的無縫存取。 您也可以使用 Azure AD 來建立及管理只存在於 Microsoft 雲端中的群組。
 
 在使用者和群組都位於 Azure AD 中後，您可以：
 

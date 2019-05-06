@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的設定符合 Microsoft 365 企業版準則，是否具備以識別為基礎的服務和基礎結構。
-ms.openlocfilehash: e36f6e88c41454a951f6c6da4253c4bac07f2fb8
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0f2d1cbeef87301729b23a6290277b28466c9770
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285545"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553302"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>階段 2：識別基礎結構允出準則
 
@@ -75,7 +75,7 @@ ms.locfileid: "32285545"
 <a name="crit-identity-sync"></a>
 ## <a name="required-users-and-groups-are-synchronized-with-azure-ad"></a>必要：使用者和群組會與 Azure AD 同步處理
 
-如果您有現有內部部署身分識別提供者 (例如 Active Directory Domain Services (AD DS))，您已使用 Azure AD Connect 以將從內部部署身分識別提供者的使用者帳戶和群組同步處理到 Azure AD 租用戶。
+如果您有現有內部部署身分識別提供者 (例如 Active Directory Domain Services (AD DS))，表示您已使用 Azure AD Connect 以將從內部部署身分識別提供者的使用者帳戶和群組同步處理到 Azure AD 租用戶。
 
 隨著將目錄同步處理，使用者可以使用他們用來登入電腦和存取內部部署資源所用的相同認證來登入 Office 365 和其他 Microsoft 雲端服務。
 
@@ -91,9 +91,9 @@ ms.locfileid: "32285545"
 ### <a name="how-to-test"></a>如何測試
 若要確認與內部部署認證的驗證運作正常，使用您的內部部署認證登入 Office 入口網站。
 
-若要確認目錄同步處理是否運作正常，請執行以下動作：
+若要確認目錄同步處理是否正常運作，請執行以下動作：
 
-1.  在 Active Directory 網域服務 (AD DS) 中建立新的測試群組。
+1.  在 AD DS 中建立新的測試群組。
 2.  等待同步處理的時間。
 3.  檢查您的 Azure AD 租用戶以確認新測試群組名稱是否出現。
 
@@ -109,7 +109,7 @@ ms.locfileid: "32285545"
 
 如有需要，[步驟 3](identity-azure-ad-connect.md#identity-sync-health) 可協助您使用此選項。
 
-### <a name="how-to-test"></a>如何測試
+### <a name="how-to-test"></a>測試方式
 Azure AD Connect Health 入口網站會顯示內部部署身分識別伺服器和進行中同步處理的目前和正確狀態。
 
 <a name="crit-identity-mfa"></a>
@@ -121,7 +121,7 @@ Azure AD Connect Health 入口網站會顯示內部部署身分識別伺服器�
 
 如有需要，[步驟 4](identity-multi-factor-authentication.md#identity-mfa) 可協助您使用此選項。
 
-### <a name="how-to-test"></a>如何測試
+### <a name="how-to-test"></a>測試方式
 
 1.  在 Office 365 系統管理員入口網站中建立測試使用者帳戶並為它們指派授權。 
 2.  使用您為實際使用者帳戶使用的其他驗證方法 (例如將郵件傳送給您的電話)，來為測試使用者帳戶設定多重要素驗證。 
@@ -151,7 +151,7 @@ Azure AD Connect Health 入口網站會顯示內部部署身分識別伺服器�
 
 如有需要，[步驟 5](identity-password-reset.md#identity-pw-reset) 可協助您使用此選項。
 
-### <a name="how-to-test"></a>如何測試
+### <a name="how-to-test"></a>測試方式
 
 1. 使用初始密碼建立測試使用者帳戶。
 2. 使用「[讓使用者在 Office 365 中重設其自身密碼](https://docs.microsoft.com/office365/admin/add-users/let-users-reset-passwords)」中的步驟來重設對測試使用者帳戶的密碼。
@@ -163,7 +163,7 @@ Azure AD Connect Health 入口網站會顯示內部部署身分識別伺服器�
 
 您已使用在「[具密碼回寫的 Azure AD SSPR](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)」中的指示，為您 Microsoft 365 企業版訂閱的 Azure AD 租用戶啟用密碼回寫。
 
-如果您略過此選項，未連線到內部部署網路的使用者必須透過 IT 系統管理員重設或解除鎖定 AD DS 密碼。
+如果您略過此選項，未連線到內部部署網路的使用者必須透過 IT 系統管理員，才能重設或解除鎖定 AD DS 密碼。
 
 如有需要，[步驟 5](identity-password-reset.md#identity-pw-writeback) 可協助您使用此選項。
 
@@ -175,11 +175,11 @@ Azure AD Connect Health 入口網站會顯示內部部署身分識別伺服器�
 
 您可藉由在 Office 365 中變更您的密碼來測試密碼回寫。 您應該能夠使用自己的帳戶和新密碼來存取內部部署 AD DS 資源。
 
-1. 在內部部署 AD DS 中建立測試使用者帳戶，允許發生目錄同步處理，然後在 Microsoft 365 系統管理員中心將 Office 365 授權授予該帳戶。
+1. 在內部部署 AD DS 中建立測試使用者帳戶、允許目錄同步處理，然後在 Microsoft 365 系統管理員中心將 Office 365 授權授予該帳戶。
 2. 透過加入您內部部署 AD DS 網域的遠端電腦，使用測試使用者帳戶的認證來登入電腦與 Office 入口網站。
 3. 選取 [設定] > [Office 365 設定] > [密碼] > [變更密碼]****。
 4. 輸入目前的密碼並輸入新密碼，然後加以確認。
-5. 登出 Office 入口網站與遠端電腦，然後以測試使用者帳戶與新密碼登入電腦。 這證明您可以使用 Azure AD 租用戶變更內部部署 AD DS 使用者帳戶的密碼。
+5. 登出 Office 入口網站與遠端電腦，然後使用測試使用者帳戶與新密碼登入電腦。 這證明您可以使用 Azure AD 租用戶來變更內部部署 AD DS 使用者帳戶的密碼。
 
 <a name="crit-identity-sso"></a>
 ## <a name="optional-users-can-sign-in-using-azure-ad-seamless-single-sign-on"></a>選用：使用者可以使用 Azure AD 無縫單一登入來進行登入
@@ -199,7 +199,7 @@ Azure AD Connect Health 入口網站會顯示內部部署身分識別伺服器�
 
 如有需要，[步驟 5](identity-password-reset.md#identity-custom-sign-in) 可協助您使用此選項。
 
-### <a name="how-to-test"></a>如何測試
+### <a name="how-to-test"></a>測試方式
 
 透過使用者帳戶名稱與多重要素驗證登入 Office 365 入口網站。您應會在登入頁面上看到您自訂的商標元素。
 
@@ -212,7 +212,7 @@ Azure AD Connect Health 入口網站會顯示內部部署身分識別伺服器�
 
 如有需要，[步驟 6](identity-self-service-group-management.md#identity-self-service-groups) 可協助您使用此選項。
 
-### <a name="how-to-test"></a>如何測試
+### <a name="how-to-test"></a>測試方式
 1.  使用 Azure 入口網站在 Azure AD 中建立測試使用者帳戶。
 2.  使用測試使用者帳戶登入並建立測試 Azure AD 安全性群組。
 3.  登出，然後使用您的 IT 系統管理員帳戶登入。
@@ -257,11 +257,11 @@ Azure AD Connect Health 入口網站會顯示內部部署身分識別伺服器�
 
 如有需要，[步驟 6](identity-self-service-group-management.md#identity-group-license) 可協助您使用此選項。
 
-### <a name="how-to-test"></a>如何測試
+### <a name="how-to-test"></a>測試方式
 
 1. 在 Azure AD 中使用 Azure 入口網站建立測試安全性群組，並將以群組為基礎的授權設定為指派 Office 365 和 EMS 授權。
 2. 在 Azure AD 中建立測試使用者帳戶，並將它新增到測試安全性群組。
-3. 檢查 Microsoft 365 系統管理員中心的使用者帳戶內容，以確保其已指派至 Office 365 和 EMS 授權。
+3. 檢查 Microsoft 365 系統管理員中心的使用者帳戶內容，以確保其已獲指派 Office 365 和 EMS 授權。
 4. 從測試安全性群組移除測試使用者帳戶。
 5. 檢查使用者帳戶內容，以確保其不再指派至 Office 365 和 EMS 授權。
 6. 刪除測試安全性群組和測試使用者帳戶。

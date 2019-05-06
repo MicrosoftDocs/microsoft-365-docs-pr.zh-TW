@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用「測試實驗室指南」以設定 Microsoft 365 企業版的示範、概念證明或開發/測試環境。
-ms.openlocfilehash: 007fac786e7676d219d7e82c435e37fe3c3221df
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: e45a4c903932116a54f0660f08b394d8d2f91307
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353131"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553282"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Microsoft 365 企業版測試實驗室指南
 
@@ -49,7 +49,7 @@ TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符�
 
 - [密碼雜湊同步處理](password-hash-sync-m365-ent-test-environment.md)
   
-   從 Active Directory Domain Services (AD DS) 網域控制站啟用及測試密碼雜湊型目錄同步處理。
+   啟用並測試 AD DS 網域控制站的密碼雜湊型目錄同步處理。
 
 - [傳遞驗證](pass-through-auth-m365-ent-test-environment.md)
   
