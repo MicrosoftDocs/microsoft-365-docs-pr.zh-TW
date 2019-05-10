@@ -20,29 +20,29 @@ search.appverid:
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: 了解如何新增使用者、 保護他們的裝置，並將 Microsoft 365 商務版中的角色指派。
-ms.openlocfilehash: ab4e98a30b0cf7361e6d5dd6c307908b04133e2e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: e27e9e2b67e187bbca3c2f1b2c9d21196effa77f
+ms.sourcegitcommit: 0feaebc1c5ea2636b5c9fa96eef648a1e37635c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277320"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33864816"
 ---
-# <a name="add-additional-users-to-microsoft-365-business"></a><span data-ttu-id="99368-103">將其他使用者新增至 Microsoft 365 商務版</span><span class="sxs-lookup"><span data-stu-id="99368-103">Add additional users to Microsoft 365 Business</span></span>
+# <a name="add-additional-users-to-microsoft-365-business"></a><span data-ttu-id="2558f-103">將其他使用者新增至 Microsoft 365 商務版</span><span class="sxs-lookup"><span data-stu-id="2558f-103">Add additional users to Microsoft 365 Business</span></span>
 
-## <a name="add-new-users"></a><span data-ttu-id="99368-104">新增使用者</span><span class="sxs-lookup"><span data-stu-id="99368-104">Add new users</span></span>
+## <a name="add-new-users"></a><span data-ttu-id="2558f-104">新增使用者</span><span class="sxs-lookup"><span data-stu-id="2558f-104">Add new users</span></span>
 
-<span data-ttu-id="99368-105">在系統管理中心中移至 [**管理使用者**] 卡片\>**新增的使用者**。</span><span class="sxs-lookup"><span data-stu-id="99368-105">In the admin center go to the **User management** card \> **Add user**.</span></span>
+1. <span data-ttu-id="2558f-105">移至系統管理中心， <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。</span><span class="sxs-lookup"><span data-stu-id="2558f-105">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span></span> 
+2. <span data-ttu-id="2558f-106">在左側導覽中選擇 [**使用者** \> **作用中的使用者**。</span><span class="sxs-lookup"><span data-stu-id="2558f-106">In the left nav choose **Users** \> **Active users**.</span></span>
+1. <span data-ttu-id="2558f-107">在 **[作用中使用者**] 頁面上，選擇 [**新增使用者**]。</span><span class="sxs-lookup"><span data-stu-id="2558f-107">On the **Active users** page, choose **Add a user**.</span></span>
+ 4. <span data-ttu-id="2558f-108">在 [**新增使用者**] 面板中，輸入所需的資訊。</span><span class="sxs-lookup"><span data-stu-id="2558f-108">In the **New user** panel, type in the required information.</span></span> 
   
-<span data-ttu-id="99368-106">在 [**新增使用者**] 面板中，輸入所需的資訊。</span><span class="sxs-lookup"><span data-stu-id="99368-106">In the **New user** panel, type in the required information.</span></span> 
+    <span data-ttu-id="2558f-109">您也可以輸入 [**連絡人資訊**] 下的其他資訊，選擇 [設定**密碼**設定下, 密碼的方式，將**角色**下的角色指派。</span><span class="sxs-lookup"><span data-stu-id="2558f-109">You can also enter additional information under **Contact information**, choose how you set the password under **Password** setting, and assign roles under the **Roles**.</span></span>
+      
+    ![Enter user information in the New user card](media/f04d39ca-48be-4868-8330-8552a4754c8b.png)
+      
+    <span data-ttu-id="2558f-111">在 [產品授權] 區段中，設定**Microsoft 365 商務版**產品授權設定為 [**開啟**。</span><span class="sxs-lookup"><span data-stu-id="2558f-111">In the Product licenses section, set **Microsoft 365 Business** product license setting to **On**.</span></span>
+      
+    ![Set the license setting to On position](media/7404f7f7-93bc-44a3-9ffb-4208b5b17402.png)
   
-<span data-ttu-id="99368-107">您也可以輸入 [**連絡人資訊**] 下的其他資訊，選擇 [設定**密碼**設定下, 密碼的方式，將**角色**下的角色指派。</span><span class="sxs-lookup"><span data-stu-id="99368-107">You can also enter additional information under **Contact information**, choose how you set the password under **Password** setting, and assign roles under the **Roles**.</span></span>
+<span data-ttu-id="2558f-113">另請參閱[個別或大量新增使用者](https://docs.microsoft.com/office365/admin/add-users/add-users)。</span><span class="sxs-lookup"><span data-stu-id="2558f-113">See also [Add users individually or in bulk](https://docs.microsoft.com/office365/admin/add-users/add-users).</span></span>
   
-![Enter user information in the New user card](media/f04d39ca-48be-4868-8330-8552a4754c8b.png)
-  
-<span data-ttu-id="99368-109">在 [產品授權] 區段中，設定**Microsoft 365 商務版**產品授權設定為 [**開啟**。</span><span class="sxs-lookup"><span data-stu-id="99368-109">In the Product licenses section, set **Microsoft 365 Business** product license setting to **On**.</span></span>
-  
-![Set the license setting to On position](media/7404f7f7-93bc-44a3-9ffb-4208b5b17402.png)
-  
-
-  
-
