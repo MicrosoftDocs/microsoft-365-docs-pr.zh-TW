@@ -3,7 +3,7 @@ title: 輕量型基本組態
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 05/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用這個「測試實驗室指南」建立輕量型測試環境，以測試 Microsoft 365 企業版。
-ms.openlocfilehash: 26109f6237ad2eaeb2ac323c190a885031c03a04
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 7ad6d5bcf4e53b918af2c06f81c2744cec7c1b35
+ms.sourcegitcommit: 1b77b699b8e23df8b98530dfad3a29b4aaa0753c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289272"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867993"
 ---
 # <a name="the-lightweight-base-configuration"></a>輕量型基本組態
 
-本文提供逐步指示，以便建立簡化環境，其中包含 Office 365 E5、Enterprise Mobility + Security (EMS) E5 與執行 Windows 10 企業版的電腦。 
+本文提供建立具備 Microsoft 365 E5 訂閱與執行 Windows 10 企業版電腦的簡化環境的逐步指示。 
 
-![輕量級 Microsoft 3656 企業版測試環境](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![輕量型 Microsoft 365 企業版測試環境](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 使用產生的環境來測試 [Microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise)的功能。
 
@@ -37,52 +37,51 @@ ms.locfileid: "32289272"
 
 ## <a name="phase-1-create-your-office-365-e5-subscription"></a>階段 1：建立您的 Office 365 E5 訂閱
 
-請依照 [Office 365 開發/測試環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)中階段 2 和階段 3 的步驟，建立簡易的 Office 365 開發/測試環境，如圖 1 所示。
-  
-**圖 1：Office 365 E5 訂閱及其 Azure Active Directory (Azure AD) 租用戶和使用者帳戶**
+遵循 [Office 365 開發/測試環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)的階段 2 和階段 3 中的步驟來建立輕量型 Office 365 開發/測試環境。
 
-![Microsoft 365 企業版測試環境的階段 1](media/lightweight-base-configuration-microsoft-365-enterprise/Phase1.png)
+>[!Note]
+>我們提供您建立 Office 365 試用版訂閱，以便開發/測試環境中能有不同於您目前已有之付費訂閱的單獨 Azure AD 租用戶。 此區隔表示您可以在測試租用戶中新增和移除使用者，而不會影響到生產訂閱。
+>
+  
+## <a name="phase-2-add-a-microsoft-365-e5-trial-subscription"></a>階段 2：新增 Microsoft 365 E5 試用版訂閱
 
-> [!NOTE]
-> Office 365 E5 試用訂閱為 30 天，也可以輕鬆擴充到 60 天。如需永久測試環境，請建立具有一些授權的新付費訂閱。 
+在此階段中，您可以註冊 Microsoft 365 E5 試用版訂閱，並將它新增至與 Office 365 E5 試用版訂閱相同的組織。
   
-## <a name="phase-2-add-ems"></a>階段 2：新增 EMS
+首先，新增 Microsoft 365 E5 試用版訂閱，並將 Microsoft 365 授權指派給您的全域系統管理員帳戶。
+  
+1. 使用網際網路瀏覽器的私用執行個體，以全域系統管理員帳戶憑證登入位於 [http://admin.microsoft.com](http://admin.microsoft.com) 的 Microsoft 365 系統管理中心。
+    
+2. 在 [Microsoft 365 系統管理中心] **** 頁面的左側導覽中，按一下 [帳單 > 購買服務]****。
+    
+3. 在 [購買服務]**** 頁面上，找到 [Microsoft 365 E5]**** 項目。 將滑鼠指標停留在上面，並且按一下 [開始免費試用]****。
 
-在這個階段中，您可以註冊 EMS E5 試用訂閱，並將它新增至與 Office 365 E5 試用訂閱相同的組織。
-  
-首先，請新增 EMS E5 試用訂閱，並指派 EMS 授權給您的全域管理員帳戶。
-  
-1. 請使用網際網路瀏覽器的私用執行個體，並使用全域管理員帳戶認證登入 Office 入口網站。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
-    
-2. 按一下 [管理]**** 磚。
-    
-3. 在瀏覽器的 [Microsoft 365 系統管理中心]**** 索引標籤上，按一下左導覽中的 [計費] > [購買服務]****。
-    
-4. 在 [購買服務]**** 頁面上，尋找 **Enterprise Mobility + Security E5** 項目。將滑鼠指標停留在上面，並且按一下 [開始免費試用]****。
-    
+4. 在 [Microsoft 365 E5 試用版]**** 頁面上，選擇要收到簡訊或電話、輸入您的電話號碼，然後按一下 [傳送簡訊給我]**** 或 [打電話給我]****。
+
 5. 在 [確認訂單]**** 頁面上，按一下 [立即試用]****。
-    
+
 6. 在 [訂單收據]**** 頁面上，按一下 [繼續]****。
-    
-7. 在瀏覽器的 [Office 365 系統管理中心]**** 索引標籤上，按一下左導覽中的 [使用者] > [作用中使用者]****。
-    
-8. 按一下您的全域系統管理員帳戶，然後按一下 [產品授權]**** 的 [編輯]****。
-    
-9. 在 [產品授權]**** 窗格中，將 [**Enterprise Mobility + Security E5**] 的產品授權設為 [開啟]****，按一下 [儲存]****，然後按兩次 [關閉]****。
-    
-> [!NOTE]
-> Enterprise Mobility + Security E5 試用訂閱為 90 天。針對永久測試環境，建立具有少數授權的新付費訂閱。 
+
+7. 在 Microsoft 365 系統管理中心，按一下 [作用中使用者]****，然後您的系統管理員帳戶。
+
+8. 按一下 [產品授權]**** 的 [編輯]****。
+
+9. 關閉 Office 365 企業版 E5 授權，然後開啟 Microsoft 365 E5 授權。
+
+10. 按一下 [儲存 > 關閉 > 關閉]****。
+
+接下來，***如果您已完成階段 3*** [Office 365 開發/測試環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)，請為所有其他帳戶重複步驟 8 到 11 的所有程序 (使用者 2、使用者 3、使用者 4 和使用者 5)。
   
- ***如果您已完成 [Office 365 開發/測試環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)的階段 3***，請為所有其他帳戶 (使用者 2、使用者 3、使用者 4 和使用者 5) 重複先前程序的步驟 8 和 9。
+> [!NOTE]
+> Microsoft 365 E5 試用版訂閱的期限是 30 天。 在永久測試環境中，將此試用訂閱轉換為具少數授權數的付費訂閱。 
   
 測試環境現在擁有：
   
-- Office 365 E5 Enterprise 和 EMS E5 試用訂閱會與您的使用者帳戶清單共用相同的 Azure AD 租用戶。
-- 已啟用所有適用的使用者帳戶 (僅全域管理員或全部五個使用者帳戶) 以使用 Office 365 E5 和 EMS E5。
+- Microsoft 365 E5 試用版訂閱。
+- 所有適當的使用者帳戶 (全域系統管理員或所有五個使用者帳戶) 皆已可使用 Microsoft 365 E5。
     
-圖 2 顯示產生的組態，其中會新增 EMS。
+圖 1 顯示您產生的組態，該組態將新增 Microsoft 365 E5，其中包含 Office 365 和 Enterprise Mobility + Security (EMS)。
   
-**圖 2：新增 EMS 試用訂閱**
+**圖 1：新增 Microsoft 365 試用版訂閱**
 
 ![Microsoft 365 企業版測試環境的階段 2](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
@@ -150,6 +149,7 @@ New-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName -Location $l
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "M365Ent-TestLab"
 $nsg=Get-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 $pip=New-AzPublicIpAddress -Name WIN10-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzNetworkInterface -Name WIN10-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id
 $vm=New-AzVMConfig -VMName WIN10 -VMSize Standard_D1_V2
@@ -168,13 +168,13 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 > [!NOTE]
 > 針對 Azure 中的虛擬機器，使用[這些指示](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon)來與它連線。
   
-接下來，將 WIN10 電腦加入 Office 365 和 EMS 訂閱的 Azure AD 租用戶。
+接下來，將 WIN10 電腦加入 Microsoft 365 E5 訂閱的 Azure AD 租用戶。
   
 1. 在 WIN10 電腦桌面，按一下 [開始] > [設定] > [帳戶] > [存取公司或學校] > [連線]****。
     
 2. 在 [設定公司或學校帳戶]**** 對話方塊中，按一下 [將此裝置加入 Azure Active Directory]****。
     
-3. 在 [公司或學校帳戶]**** 中，輸入 Office 365 訂閱的全域管理員帳戶名稱，然後按一下 [下一步]****。
+3. 在 [公司或學校帳戶]**** 中，輸入 Microsoft 365 E5 訂閱的全域管理員帳戶名稱，然後按 [下一步]****。
     
 4. 在 [輸入密碼]**** 中，輸入全域管理員帳戶的密碼，然後按一下 [登入]****。
     
@@ -186,7 +186,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 1. 開啟 Microsoft Edge 瀏覽器，並使用全域管理員帳戶認證登入 Office 入口網站。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
-2. 在 [Microsoft Office 首頁]**** 索引標籤上，按一下 [安裝 Office 2016]****。
+2. 在 [Microsoft Office 首頁]**** 索引標籤上，按一下 [安裝 Office]****。
     
 3. 系統提示您要執行的動作時，按一下 [執行]****，然後為 [使用者帳戶控制]**** 按一下 [是]****。
     
@@ -194,12 +194,11 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 圖 3 顯示產生的環境，其中包括以下的 WIN10 電腦：
 
-- 已加入 Office 365 和 EMS 訂閱的 Azure AD 租用戶
-- 已在 Intune 中註冊為 Azure AD 裝置 (EMS)
-- 已安裝 Office 365 專業增強版
+- 已加入您的 Microsoft 365 E5 訂閱的 Azure AD 租用戶。
+- 已在 Microsoft Intune (EMS) 中註冊為 Azure AD 裝置。
+- 已安裝 Office 365 專業增強版。
   
-**圖3：Microsoft 365 測試環境的最終組態**
-
+**圖 2：Microsoft 365 測試環境的最終組態**
 
 ![Microsoft 365 企業版測試環境的階段 4](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
   

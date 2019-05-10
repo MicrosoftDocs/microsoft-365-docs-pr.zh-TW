@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 了解如何取得內部資源的存取權，例如線條的商務應用程式、 檔案共用及從 Azure Active Directory 的印表機加入 Windows 10 裝置。
-ms.openlocfilehash: 212685bc229f519152e69b09d0a745bfac7a38cd
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 2be8eb16b9d17547d3bc4c3e4fe499b4c14117a4
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32276874"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660262"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>存取內部部署 Microsoft 365 商務版中的 Azure AD 加入裝置的資源
 
@@ -47,11 +47,9 @@ ms.locfileid: "32276874"
 如果您是加入先前已加入網域的 Windows 裝置的 Azure AD 或工作群組中，您需要考慮下列限制：
   
 - 當 Azure AD 裝置加入時，它會建立新的使用者，而不參照現有的設定檔。 若要修正此問題，必須手動移轉設定檔。 使用者設定檔包含像是我的最愛、 本機檔案、 瀏覽器設定、 開始功能表中的設定等資訊。最好的作法是尋找協力廠商工具，將現有的檔案和設定對應至新的設定檔
-    
-- 如果裝置使用群組原則物件 (GPO)，有些 Gpo 可能沒有可以比較[設定服務提供者](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers)(CSP) 在 Intune 中。 執行[MMAT 工具](https://www.microsoft.com/download/details.aspx?id=45520)，以尋找現有的 Gpo 相當於今年。 
-    
-- 使用者將無法驗證依賴 Active Directory 驗證應用程式。 若要處理這評估使用舊版的應用程式，並考慮更新以盡可能使用新式驗證的應用程式。
-    
-- Active Directory 印表機探索將無法運作。 若要修正此問題，提供直接的印表機路徑的所有使用者，或利用[混合式雲端列印](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy)。
-    
 
+- 如果裝置使用群組原則物件 (GPO)，有些 Gpo 可能沒有可以比較[設定服務提供者](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers)(CSP) 在 Intune 中。 執行[MMAT 工具](https://www.microsoft.com/download/details.aspx?id=45520)，以尋找現有的 Gpo 相當於今年。
+
+- 使用者將無法驗證依賴 Active Directory 驗證應用程式。 若要處理這評估使用舊版的應用程式，並考慮更新以盡可能使用新式驗證的應用程式。
+
+- Active Directory 印表機探索將無法運作。 若要修正此問題，提供直接的印表機路徑的所有使用者，或利用[混合式雲端列印](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy)。

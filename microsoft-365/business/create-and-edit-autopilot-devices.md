@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: 了解如何上傳 Microsoft 365 商務版中使用 AutoPilot 裝置。 您可以將設定檔指派到單一裝置或一組裝置。
-ms.openlocfilehash: fff2dbc6af45ef9d4189f23849d638172c19dfb2
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 6492f1469a1ac9ea67750e9ffa071d19c88c743f
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277017"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660367"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>建立及編輯 AutoPilot 裝置
 
@@ -41,9 +41,9 @@ ms.locfileid: "32277017"
     
 - 新裝置尚未執行過 Windows 全新體驗設定。
 
-1. 在 Microsoft 365 商務版系統管理中心中，選擇 [**裝置**] \> **AutoPilot** \> **新增**。
+1. 在 Microsoft 365 商務版系統管理中心中，選擇 [**裝置**] \> **AutoPilot**。
   
-2. 在 [**準備 Windows** ] 頁面上，選擇 [**裝置**] 索引標籤\>**新增裝置**。
+2. 在**自動駕駛**頁面上，選擇 [**裝置**] 索引標籤\>**新增裝置**。
     
     ![In the Devices tab, choose Add devices.](media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   

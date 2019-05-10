@@ -1,0 +1,28 @@
+---
+title: 何種訂閱最適合您的業務？
+ms.author: sirkkuw
+author: Sirkkuw
+manager: scotv
+ms.audience: Admin
+ms.topic: article
+ms.service: o365-administration
+ms.collection: M365-subscription-management
+localization_priority: Normal
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+search.appverid:
+- BCS160
+- MET150
+description: 判斷是否正確 yor 商務用 Office 365 E3、 Office 365 商務進階版或 Microsoft 365 商務版。
+ms.openlocfilehash: 1720746c7385c1fc4fbc551ad93638f452665e8c
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33663628"
+---
+# <a name="what-subscription-is-right-for-your-small-business"></a>何種訂閱最適合您的小型企業？
+
+Microsoft 提供了數個適用於小型企業的計劃，建議的訂閱 Office 365 商務進階版或 Microsoft 365 商務版最多 300 位使用者使用。 Microsoft 365 商務版提供 Office 365 商務進階版新增成本較多的安全性功能。

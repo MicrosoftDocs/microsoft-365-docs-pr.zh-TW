@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: 了解如何啟用 Microsoft 365，以保護本機 AD 加入的 Windows 10 裝置。
-ms.openlocfilehash: d61b3bf6be50d6b21e7b883774567bb63995e60e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 661e5bf8205a661eb4382b4bdd8fcf3a54ecc12f
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278070"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660301"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>啟用由 Microsoft 365 商務版來管理已加入網域的 Windows 10 裝置
 
@@ -33,7 +33,7 @@ ms.locfileid: "32278070"
   
 ## <a name="set-up-domain-joined-devices-to-be-managed-by-microsoft-365-business"></a>已加入網域的裝置上設定為受 Microsoft 365 商務版
 
-若要設定您的組織已加入網域的裝置可受益於內部部署 Active Directory 除了 Azure Active Directory 所提供的功能，您可以實作**混合式 Azure AD 加入裝置**。 這些是加入同時您在內部部署 Active Directory 和 Azure Active Directory 的裝置。 混合式已加入 Azure AD 裝置可保護及管理由 Microsoft 365 商務版.. 
+若要設定您的組織已加入網域的裝置可受益於內部部署 Active Directory 除了 Azure Active Directory 所提供的功能，您可以實作**混合式 Azure AD 加入裝置**。 這些是加入同時您在內部部署 Active Directory 和 Azure Active Directory 的裝置。 混合式已加入 Azure AD 裝置可保護及由 Microsoft 365 商務版管理。 
   
 完成下列步驟來進行 Windows 10 裝置混合式 Azure AD 加入，並且由 Microsoft 365 商務版管理。
   
@@ -43,15 +43,13 @@ ms.locfileid: "32278070"
     > 步驟是完全相同的 Microsoft 365 商務版。 
   
 2. 完成步驟 3 以啟用設為混合式 Azure AD 加入的 Windows 10 裝置之前，您需要確定您符合下列必要條件：
-    
+
    - 您正在執行最新版的 Azure AD connect。
-    
+
    - Azure AD connect 已同步處理使用者想要加入 Azure AD 的混合式的裝置的所有電腦物件。 如果電腦物件屬於特定組織單位 (OU)，請確定這些 Ou 設定 Azure AD 中的同步處理連線以及。
     
 3. 登錄現有已加入網域的 Windows 10 裝置是混合式 Azure AD Joined 和註冊其行動裝置管理由 Intune （Microsoft 365 商務版）：
     
 4. 請遵循[如何設定混合式 Azure Active Directory 加入裝置](https://go.microsoft.com/fwlink/p/?linkid=872870)中的逐步指示。 這可讓您在內部部署 Active Directory 同步處理加入 Windows 10 電腦，並且使其雲端準備就緒。
     
-5. 若要註冊的行動裝置管理的 Windows 10 裝置，請參閱如需相關指示[註冊 Intune 使用群組原則與 Windows 10 裝置](https://go.microsoft.com/fwlink/p/?linkid=872871)。 您可以設定群組原則在本機電腦層級或針對大量作業，您可以建立這個群組原則設定網域控制站伺服器上。 
-    
-
+5. 若要註冊的行動裝置管理的 Windows 10 裝置，請參閱如需相關指示[註冊 Intune 使用群組原則與 Windows 10 裝置](https://go.microsoft.com/fwlink/p/?linkid=872871)。 您可以設定群組原則在本機電腦層級或針對大量作業，您可以建立這個群組原則設定網域控制站伺服器上。

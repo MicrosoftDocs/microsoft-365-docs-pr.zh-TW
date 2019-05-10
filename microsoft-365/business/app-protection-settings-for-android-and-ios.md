@@ -21,20 +21,22 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: 了解如何建立、 編輯或刪除應用程式管理原則，和保護 Android 或 iOS 裝置上的工作檔案。
-ms.openlocfilehash: e81ff8a4bd71dbbbf7ccc31249d450e03f4bd241
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 04479360bf13a8ff685a91ed95440c08f8cf80b4
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277437"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660507"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>設定 Android 或 iOS 裝置的 App 保護設定
 
+![指向橫幅https://aka.ms/aboutM365preview。](media/m365admincenterchanging.png)
+
 ## <a name="create-an-app-management-policy"></a>建立應用程式管理原則
 
-1. 使用全域系統管理員認證登入[Microsoft 365 商務版系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=837890)。 
+1. 移至系統管理中心， <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。 
     
-2. 在系統管理中心中，選擇 [**裝置** \> **原則** \> **新增原則**。
+2. 在左側導覽中，選擇 [**裝置** \> **原則** \> **新增**。
   
 3. 在 [**新增原則**] 窗格中，輸入此原則的唯一名稱。 
     
@@ -62,9 +64,9 @@ ms.locfileid: "32277437"
     
 ## <a name="delete-an-app-management-policy"></a>刪除應用程式管理原則
 
-1. 在 [**原則**] 卡片中，選擇 [**刪除原則**]。
+1. 在 [**原則**] 頁面上選擇原則，然後**刪除**。
     
-2. 在 [**刪除原則**] 窗格中，選擇您想要刪除的原則\>**選取**，然後**確認**来刪除原則或您選擇的原則。 
+2. 在 [**刪除原則**] 窗格中選擇 [**確認**刪除原則或您選擇的原則。 
     
 ## <a name="available-settings"></a>可用的設定
 

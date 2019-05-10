@@ -20,18 +20,20 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 了解如何購買 Microsoft 365 商務版，從 Microsoft 合作夥伴中心。
-ms.openlocfilehash: 1dcd9c21a598020447308970024a896b157bdae4
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: f11e5905915e182faa5f3f1b6b7d3477ecac320b
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278349"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660424"
 ---
 # <a name="get-microsoft-365-business"></a>取得 Microsoft 365 商務版
 
 ## <a name="get-microsoft-365-business-from-microsoft"></a>從 Microsoft 取得 Microsoft 365 商務版
 
 如果您不有合作夥伴，並想要取得 Microsoft 365 商務版，您可以[在這裡購買](https://www.microsoft.com/en-US/microsoft-365/business)。
+
+如需詳細指示的 [[註冊 Microsoft 365 商務版](sign-up.md)，請參閱。
   
 ## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a>從 Microsoft 合作夥伴中心取得 Microsoft 365 商務版
 
