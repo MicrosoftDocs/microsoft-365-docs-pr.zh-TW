@@ -7,16 +7,16 @@ author: jdeckerms
 ms.localizationpriority: normal
 ms.date: 11/7/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2e88f629764fa1c19a4a2d53337ebaebc7c173b8
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 97637f28f5a5de292385a36472966f3272b2f09a
+ms.sourcegitcommit: 720881c1a9c5f708e1b4adf7e5ea4ff8da48ea99
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278518"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33970460"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的支援
 
-Microsoft 受管理的電腦裝置由並將維修或更換 microsoft 依保固合約。 Microsoft 會提供主動和被動附隨管理。 Microsoft 會追蹤 Microsoft 受管理的電腦系統管理入口網站中的事件。 他們會歸類根據[嚴重性定義](../working-with-managed-desktop/admin-support.md#sev)。
+Microsoft 會提供主動和被動附隨管理。 Microsoft 會追蹤 Microsoft 受管理的電腦系統管理入口網站中的事件。 他們會歸類根據[嚴重性定義](../working-with-managed-desktop/admin-support.md#sev)。
 
 客戶可以連絡 Microsoft 受管理電腦的作業：
 - Microsoft 受管理電腦租用戶或組態資訊要求
@@ -34,7 +34,7 @@ Microsoft 受管理的電腦支援：
 支援的產品：
 
 - Windows 10 使用 Windows Defender 進階威脅防護 (WDATP) 
-- Microsoft 365 E3 套件的一部分： Outlook、 Word、 PowerPoint、 Excel、 Skype for Business 用戶端，Microsoft Teams 
+- Office 365 套件的一部分： Outlook、 Word、 PowerPoint、 Excel、 Skype for Business 用戶端，Microsoft Teams 
 - 商務用 Microsoft Store 
 - OneDrive for Business 用戶端 
 
