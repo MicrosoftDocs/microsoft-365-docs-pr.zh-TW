@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 08/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 企業版測試環境中設定群組為基礎的授權和動態群組成員資格。
-ms.openlocfilehash: 4ee929b345469d9cab05968a4a4c7f7399635b32
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 179284dce271c69939a560703561a32648af93b1
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353075"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072623"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>自動化適用於 Microsoft 365 企業版測試環境的授權和群組成員資格
 
@@ -32,7 +32,7 @@ ms.locfileid: "33353075"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中文件的所有視覺對應。
+> 按一下[這裡](https://aka.ms/m365etlgstack) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1： 建置 Microsoft 365 企業版測試環境
 

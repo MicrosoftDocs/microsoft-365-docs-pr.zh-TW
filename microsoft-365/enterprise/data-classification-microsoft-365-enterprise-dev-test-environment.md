@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/10/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此測試實驗室指南來建立及使用 Microsoft 365 企業版測試環境中的文件上的 Office 365 保留標籤。
-ms.openlocfilehash: 3d64cd245e117813cb4c81a6e9099cd1a0120317
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 66e06f9a89b102c131bc29af17c4564fabbab9b4
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283536"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072413"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>資料分類您的 Microsoft 365 企業版測試環境
 
@@ -26,7 +26,7 @@ ms.locfileid: "32283536"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](https://aka.ms/m365etlgstack) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1： 建置 Microsoft 365 企業版測試環境
 
@@ -55,9 +55,9 @@ ms.locfileid: "32283536"
     
 7. 在 [檢閱您的設定]**** 窗格中，按一下 [建立標籤]****。
     
-8. 使用這些名稱的其他標籤重複步驟 3-7:
+8. 針對以下名稱的標籤，重複步驟 3-7：
     
-  - Private
+  - 私人
     
   - 敏感性
     

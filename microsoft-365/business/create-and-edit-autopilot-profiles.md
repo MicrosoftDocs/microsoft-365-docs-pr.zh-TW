@@ -3,7 +3,7 @@ title: 建立及編輯 AutoPilot 設定檔
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: '了解如何建立、 編輯、 刪除或移除 AutoPilot 設定檔。 '
-ms.openlocfilehash: 85fc897b2f428afae8d55feeb577021adaa30f72
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 7987cafb3ea234d81be72c79aee8e584a3770875
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277074"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073483"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>建立及編輯 AutoPilot 設定檔
 

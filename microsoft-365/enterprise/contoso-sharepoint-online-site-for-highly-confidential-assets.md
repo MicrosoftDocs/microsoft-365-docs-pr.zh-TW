@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 摘要： 如何 Contoso 實施適用於 SharePoint Online 網站高管制的資料，其研究之間更輕鬆地共同作業的團隊。
-ms.openlocfilehash: c20e3a1c4ad0b862e81b897acc1462e3a1d1f776
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 99599829658e5dc46c8adebfe59f5c6d09b165de
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289215"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072776"
 ---
 # <a name="sharepoint-online-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation 的高度機密數位資產的 SharePoint Online 網站
 
@@ -70,9 +70,9 @@ Contoso 的 IT 系統管理員為其研究小組執行 < review of 一組安全�
 
 - 使用**高度機密**的 Office 365 保留標籤。 
 - 會套用至**Research**網站。
-- 防止使用者共用文件。
+- 當他們嘗試共用 Contoso 以外的**研究**網站上的數位資產時，就會封鎖使用者。
 
-如設定的詳細資訊，請參閱 <<c0>使用 Office 365 標籤與 DLP 保護 SharePoint Online 檔案。
+如設定的詳細資訊，請參閱 <<c0>使用保留標籤與 DLP 保護 SharePoint Online 檔案。
 
 ## <a name="step-4-created-an-azure-information-protection-sub-label-for-the-site"></a>步驟 4： 建立網站的 Azure 資訊保護子標籤
 
@@ -93,7 +93,7 @@ Contoso 系統管理員建立新的 Azure 資訊保護子標籤名為**Research*
 **研究**站台的資料夾中的檔案受到：
 
 - **研究**Azure 資訊保護子標籤，適用於加密和使用權檔案會對每個檔案已移動或複製從**Research**網站。
-- **研究**DLP 原則，會使用**高度機密**的保留標籤和離開網站時，防止檔案的設定。
+- **研究**DLP 原則，會使用**高度機密**的保留標籤和避免與外部使用者共用檔案的設定。
 - 網站權限，只允許存取成員**Research 成員**和**參考資料檢視者**安全性群組和管理由**Research Admins**安全性群組的成員集合。
 
 ## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a>步驟 5： 移轉的內部部署 SharePoint research 資料

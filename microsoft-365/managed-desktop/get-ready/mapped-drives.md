@@ -1,0 +1,52 @@
+---
+title: 對應磁碟機準備 Microsoft 受管理的電腦
+description: 若要確定重要步驟
+keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+ms.service: m365-md
+author: jaimeo
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: b3fc4a4ed82c01188f348d2e494a0dbf7effc77a
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34079265"
+---
+#  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>對應磁碟機準備 Microsoft 受管理的電腦
+
+許多企業環境有舊版的需求，以允許共用及儲存檔案，其使用者或小組的對應磁碟機或內部部署應用程式。 Microsoft 不建議使用對應的磁碟機與 Microsoft 受管理的電腦。 相反地，我們建議您現代化 yor 檔案存取解決方案，如下所示：
+  
+- 移轉商務用 onedrive 的個別使用者所使用的對應磁碟機。 
+- 移轉小組用來共用檔案至 SharePoint Online 的對應磁碟機。 
+- 現代化或取代任何應用程式，用於內部部署檔案共用移除此需求。
+  
+現代化這些服務會允許與 Microsoft 受管理電腦的最佳使用者經驗。 Microsoft FastTrack 服務可以協助您使用 Microsoft 雲端服務現代化您的環境。 您可以檢查您是否是合格的 FastTrack 服務[合格服務與計劃](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans)，而且再連絡這些直接向 Microsoft 受管理電腦的準備。 背景 FastTrack 商務用 OneDrive 或 SharePoint Online 移轉資訊，請參閱[資料移轉](https://docs.microsoft.com/fasttrack/o365-data-migration)。
+
+## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Microsoft 受管理的電腦上的對應磁碟機
+ 
+如果您不能移除或取代對應磁碟機，某些使用情況下，您應該提交 Microsoft 受管理電腦入口網站中的支援要求，已將其部署至 Microsoft 受管理電腦的使用者。
+    
+這類要求，您必須提供支援要求中的下列詳細資料： 
+
+- 所有的 UNC 路徑，檔案共用必須要對應的 Microsoft 受管理的電腦裝置的位置 
+- 需要這些檔案共用位置的存取權的使用者群組 
+- （如果需要） 分派需要任何特定的磁碟機代號
+
+例如：
+
+| 磁碟機代號 | UNC 路徑 | 使用者群組 |
+|--------------|----------|------------|
+| X:  | \\\server\share\Marketing | ContosoMarketing |
+
+它完全是為了確保使用者和群組具有，並維持適當的權限來存取檔案共用位置與內部部署檔案服務仍然可以存取您的責任。 此外，您應該儘速移除這類檔案共用的需求。
+
+### <a name="to-have-mapped-drives-deployed-in-microsoft-managed-desktop"></a>若要有對應的部署中 Microsoft 受管理電腦的磁碟機
+ 
+請確定對應磁碟機無法避免使用，而且您提交任何服務要求之前先仔細檢閱需求。 然後遵循下列步驟：
+
+1. 瀏覽至[Microsoft 受管理電腦入口網站](https://aka.ms/mmdportal)。  
+2. 透過**支援 > 支援要求**] 區段中提交支援要求標題為 「 對應磁碟機部署 」，並提供所有必要的檔案共用的詳細資訊。  
+3. Microsoft 受管理的桌上型電腦作業將會告知，藉由使用時，支援要求的更新，要求已完成。 最初將只部署此組態，測試部署群組中的裝置。  
+4. 您必須測試並確認 Microsoft 受管理的桌上型電腦作業小組所部署的組態是否運作如預期般。 當您完成測試更新 Microsoft 受管理電腦作業使用支援要求。  
+5. Microsoft 受管理的桌上型電腦作業小組會再將設定部署至其他部署群組。 

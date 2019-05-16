@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此測試實驗室指南來新增 Intune 裝置合規性原則，以您的 Microsoft 365 企業版測試環境。
-ms.openlocfilehash: b8c2fbe437362f72effd5ba550817f847ccbbf74
-ms.sourcegitcommit: e15cf5d0d8ff3dfdc457b469992d72ac802e6434
+ms.openlocfilehash: eb140844eba4bc5cf5eba7fe452345f251ced0ff
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33467731"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072113"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>裝置合規性原則，您的 Microsoft 365 企業版測試環境
 
@@ -26,7 +26,7 @@ ms.locfileid: "33467731"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](https://aka.ms/m365etlgstack) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1： 建置 Microsoft 365 企業版測試環境
 

@@ -3,7 +3,7 @@ title: Microsoft 365 企業版測試環境的特殊權限存取管理
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: 使用此測試實驗室指南來啟用特殊權限的存取管理 Microsoft 365 企業版測試環境。
-ms.openlocfilehash: 9cac4f941ba3eb45bfc2bf79075ba22515a589b9
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 306cd8d3cb574fd18a3d184898ead765936bf431
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290768"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073013"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企業版測試環境的特殊權限存取管理
 
@@ -27,7 +27,7 @@ ms.locfileid: "32290768"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](https://aka.ms/m365etlgstack) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1： 建置 Microsoft 365 企業版測試環境
 
@@ -36,7 +36,7 @@ ms.locfileid: "32290768"
 如果您想要在模擬的企業中設定特殊權限的存取管理，請遵循[通過驗證](pass-through-auth-m365-ent-test-environment.md)的指示進行。
   
 > [!NOTE]
-> 測試特殊權限的存取管理，不需要模擬的企業測試環境，其中包含連線至網際網路的模擬內部網路和目錄同步處理 Active Directory 網域服務 (AD DS) 樹系中。 它提供了以下選項，以便您可以測試權限存取管理及實驗它代表典型組織的環境中。 
+> 測試特殊權限的存取管理，不需要模擬的企業測試環境，其中包含連線至網際網路的模擬內部網路和目錄同步處理 AD DS 樹系中。 它提供了以下選項，以便您可以測試權限存取管理及實驗它代表典型組織的環境中。 
 
 ## <a name="phase-2-configure-privileged-access-management"></a>階段 2： 設定特殊權限的存取管理
 

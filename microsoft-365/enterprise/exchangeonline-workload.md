@@ -3,7 +3,7 @@ title: 部署 Microsoft 365 企業版適用於 Exchange Online
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 06/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -11,16 +11,16 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: 逐步說明的規劃、 推行並發揮值的 Exchange Online 中 Microsoft 365 企業版整個組織的程序。
-ms.openlocfilehash: 6efd94da7806b6268881f7eaabe5efacc8920f47
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c54c80a955d86028ac473857cbdcb8b1a8f272d3
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281203"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072283"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版適用於 Exchange Online
 
-*此工作負載隨附於 Microsoft 365 企業版 E3 和 E5 版本*
+*此工作負載包含在 Microsoft 365 企業版的 E3 和 E5 版本中*
 
 Exchange Online 是您的電子郵件的主要雲端服務和行事曆，可協助您的使用者共同作業不需要即時聊天或集中式文件儲存方式。 Exchange Online 是具體做法個別及小型群組短暫的通訊和排程，Microsoft 365 企業版的團隊合作值內建的重要元素。 Exchange Online 可讓您達成更多，並與已知的 Outlook 應用程式，無論您是哪一種裝置更有效率地運作。
 
@@ -138,7 +138,7 @@ Exchange Online 的 IT 試驗完成且次變更管理材料已開發、 檢閱�
 
 商務群組，且和執行與 Exchange Online 變更管理的材料已測試並精簡。
 
-## <a name="phase-3-drive-value"></a>階段 3：發揮價值
+## <a name="phase-3-drive-value"></a>第 3 階段：發揮價值
 
 在這個階段，您完成推出 Exchange Online，並支援您的使用者，以協助他們了解其優點。
 
