@@ -4,7 +4,7 @@ ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
 ms.date: 09/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何透過通訊和訓練，讓終端使用者準備迎接 Windows 10 和 Office 365 專業增強版。
-ms.openlocfilehash: cd413ae0f7a85a65c41c2112a64e19b6ed68c987
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 60207ad991acdee2c5378b331ce85aa762722e40
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400187"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073043"
 ---
 # <a name="step-8-user-communications-and-training"></a>步驟 8：使用者的通訊和訓練
 
@@ -55,11 +55,12 @@ ms.locfileid: "33400187"
 
 另有可見的安全性與相容性控制會公開給使用者。Enterprise Mobility + Security 包含 Azure AD 和 Microsoft Intune，其整合了 Windows 10 和 Office 365 其他功能，可用以為電腦升級設定目標。
 
-[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/zh-TW/cloud-platform/enterprise-mobility-security)
+[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-security)
 
 比方說，如果您已啟用多重要素驗證，這會使用 Azure AD，並利用電話應用程式或 PIN 以安全地存取服務，藉以保護使用者登入資源。Azure 資訊保護可以方便使用者分類並為文件加上標籤。
 
-[設定 Office 365 使用者的多重要素驗證](https://support.office.com/zh-TW/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+
+  [設定 Office 365 使用者的多重要素驗證](https://support.office.com/zh-TW/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 這些只是使用者會發現的幾個新功能，某些使用者可能會以正面方式或稍不正面的方式意外發現新功能。而這些意外，特別是若其變更了一般的工作流程，可能會導致您或服務台接到更多來電與問題票證。
 

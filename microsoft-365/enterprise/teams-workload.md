@@ -3,7 +3,7 @@ title: 部署 Microsoft 365 企業版的 Microsoft Teams
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/16/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 推行並發揮 Microsoft 365 企業版 Microsoft Teams 在組織中的價值，規劃這整個程序的步驟。
-ms.openlocfilehash: bfc9e76211779aa960ff7633dd7d59b2b01e9f98
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 1e7519817a10eb4aa710dff2d4c74c9390c9f6f6
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400207"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072853"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版的 Microsoft Teams
 
@@ -99,7 +99,7 @@ Teams 達成了 Microsoft 365 企業版的這些策略商務案例：
 - [管理使用者對 Microsoft Teams 的存取](https://docs.microsoft.com/MicrosoftTeams/user-access)
 - [取得 Microsoft Teams 用戶端](https://docs.microsoft.com/MicrosoftTeams/get-clients)
 - [開啟 Office 365 組織中的 Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/office-365-set-up)
-- [管理 Office 365 組織中的 Microsoft Teams 功能](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
+- [管理 Office 365 組織中的 Microsoft Teams 功能](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)
 
 #### <a name="result"></a>結果
 

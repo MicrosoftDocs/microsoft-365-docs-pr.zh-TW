@@ -3,7 +3,7 @@ title: 移轉至 Microsoft 365 企業版
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/13/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 在整個組織中逐步執行將 Microsoft Office、Office 伺服器及 Windows 的各版本移轉為 Microsoft 365 企業版的程序。
-ms.openlocfilehash: f165e09b58b5208fa4d9aae24f7d5cdda385c639
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 171a0d1b9db5c6dad89d091e81413fbdd785b3b4
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291261"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073293"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>移轉至 Microsoft 365 企業版
 

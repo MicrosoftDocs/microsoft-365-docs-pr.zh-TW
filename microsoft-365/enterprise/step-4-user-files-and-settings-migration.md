@@ -4,7 +4,7 @@ ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
 ms.date: 09/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何移轉使用者檔案和設定。
-ms.openlocfilehash: 99cc252181627d5f0cf07fdf46f63b3ba526e20a
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 6cd445a41fd8e2c4a83e13e2d8e5f7d9ef76e2d8
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400117"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073003"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>步驟 4：使用者檔案和設定移轉
 
@@ -59,31 +59,33 @@ USMT 會擷取使用者帳戶、使用者檔案、作業系統設定和應用程
 
 您在其中執行電腦重新整理且未格式化的主要 Windows 磁碟分割，您也可以使用 USMT 來使用硬式連結移轉存放區。此程序會在電腦上保留使用者狀態，而舊的作業系統和應用程式會移除並重新整理。還原程序來自相同的本機磁碟分割，這個選項大幅改善效能，並減少網路流量。
 
-[使用者狀態移轉工具 (USMT) 概觀](https://docs.microsoft.com/zh-TW/windows/deployment/usmt/usmt-overview)
+
+  [使用者狀態移轉工具 (USMT) 概觀](https://docs.microsoft.com/zh-TW/windows/deployment/usmt/usmt-overview)
 
 ## <a name="onedrive-known-folder-move"></a>OneDrive 已知資料夾移動
 
 如果使用者正在使用 OneDrive 或您將 OneDrive 新增為此部署的一部分，則您有新的可用選項。使用雲端同步處理使用者檔案，OneDrive 的「已知資料夾移動」功能提供的彈性層級，是本機網路式檔案移轉選項所無法提供的。如果在移轉之前啟用，可在新的或重新整理的電腦上提供安全存取，且不需要在您自己的伺服器上建立暫時的移轉存放區。它也可能會對使用者呈現完全透明。
 
-[將 Windows 已知資料夾重新導向並移動至 OneDrive](https://docs.microsoft.com/zh-TW/onedrive/redirect-known-folders) (英文)
 
-如果您已使用 OneDrive，您就會知道，使用者可以選取想要同步處理 OneDrive 或 SharePoint 至裝置的資料夾或位置，但實際上會造成使用者設定負擔。使用「已知資料夾移動」，可針對使用者設定檔中的文件、電腦和圖片資料夾，並在 OneDrive 上進行保護。使用者可以在這種情況下自行執行，或者您可以[使用群組原則設定強制執行](https://docs.microsoft.com/en-us/onedrive/use-group-policy?redirectSourcePath=%252fen-us%252farticle%252fUse-Group-Policy-to-control-OneDrive-sync-client-settings-0ecb2cf5-8882-42b3-a6e9-be6bda30899c)。
+  [將 Windows 已知資料夾重新導向並移動至 OneDrive](https://docs.microsoft.com/zh-TW/onedrive/redirect-known-folders) (英文)
+
+如果您已使用 OneDrive，您就會知道，使用者可以選取想要同步處理 OneDrive 或 SharePoint 至裝置的資料夾或位置，但實際上會造成使用者設定負擔。使用「已知資料夾移動」，可針對使用者設定檔中的文件、電腦和圖片資料夾，並在 OneDrive 上進行保護。使用者可以在這種情況下自行執行，或者您可以[使用群組原則設定強制執行](https://docs.microsoft.com/zh-TW/onedrive/use-group-policy?redirectSourcePath=%252fen-us%252farticle%252fUse-Group-Policy-to-control-OneDrive-sync-client-settings-0ecb2cf5-8882-42b3-a6e9-be6bda30899c)。
 
 使用「已知資料夾移動」，使用者不變更工作流程，所有項目看起來在之前、期間及之後都相同，使用 OneDrive 的同步處理已完成。透過群組原則，您甚至可以選擇是否要通知使用者其文件、圖片和電腦在 OneDrive 中受保護。如果您選擇不要，會在背景中以無訊息方式進行。使用者只會在傳遞新電腦或電腦重新整理時發現。當使用者登入 OneDrive 帳戶時，這些檔案將可再次使用，且會還原到其新的電腦。當然，使用 OneDrive 表示可以隨時從手機和其他裝置安全存取檔案。
 
 OneDrive 的驗證由 Azure Active Directory 提供，因此對於增加安全性，您可以輕鬆啟用多重要素驗證，並設定原則以控制 OneDrive 用來限制網路活動的上傳和下載頻寬。
 
-您不需要同時移轉所有使用。您可能會想要階段推行群組原則設定，或[限制檔案同步處理至已加入網域的電腦](https://docs.microsoft.com/en-us/powershell/module/sharepoint-online/Set-SPOTenantSyncClientRestriction?view=sharepoint-ps)。
+您不需要同時移轉所有使用。您可能會想要階段推行群組原則設定，或[限制檔案同步處理至已加入網域的電腦](https://docs.microsoft.com/zh-TW/powershell/module/sharepoint-online/Set-SPOTenantSyncClientRestriction?view=sharepoint-ps)。
 
 ## <a name="start-menu-and-task-bar-customization"></a>自訂開始功能表和工作列
 
 OneDrive 設計用來同步處理及保護檔案和資料夾；它不會同步處理應用程式或 Windows 設定。過去若要這麼做您可能會使用複製設定檔的方法來設定使用者的開始功能表和工具列設定的標準版面配置。在 Windows 10 專業版、企業版和教育版中，您可以使用群組原則、MDM、PowerShell 或佈建套件部署[自訂開始和工作列版面配置](https://docs.microsoft.com/zh-TW/windows/configuration/windows-10-start-layout-options-and-policies)。不需重新進行影像處理，只要覆寫包含版面配置的 .xml 檔案即可更新版面配置。
 
-若要建立新的版面配置只需設定範例系統，並使用 PowerShell [Export-StartLayout](https://docs.microsoft.com/en-us/powershell/module/startlayout/export-startlayout?view=win10-ps) Cmdlet 來產生 XML 檔案，然後將此檔案放在網路共用，或在本機上快取為您部署順序的一部分；這只要在使用者登入時為可用的唯讀檔案。然後您可以使用原則或 [Import-StartLayout](https://docs.microsoft.com/en-us/powershell/module/startlayout/import-startlayout?view=win10-ps) Cmdlet 來參考此檔案。
+若要建立新的版面配置只需設定範例系統，並使用 PowerShell [Export-StartLayout](https://docs.microsoft.com/zh-TW/powershell/module/startlayout/export-startlayout?view=win10-ps) Cmdlet 來產生 XML 檔案，然後將此檔案放在網路共用，或在本機上快取為您部署順序的一部分；這只要在使用者登入時為可用的唯讀檔案。然後您可以使用原則或 [Import-StartLayout](https://docs.microsoft.com/zh-TW/powershell/module/startlayout/import-startlayout?view=win10-ps) Cmdlet 來參考此檔案。
 
 ## <a name="removing-unwanted-in-box-apps"></a>移除不想要的內建應用程式
 
-Windows 10 包含許多實用的內建應用程式作為標準安裝，但您可能會想要從受管理的電腦移除部分，甚至設定安裝以防止傳回應用程式，例如 XBOX 或 Zune Music。您可以使用 [PowerShell Get-AppxPackage](https://technet.microsoft.com/zh-TW/library/hh856044.aspx) 命令來擷取這些應用程式的清單，並使用 [Remove-AppxPackage](https://technet.microsoft.com/zh-TW/library/hh856038.aspx) 命令移除不想要的部分。或者，您可以在部署之前離線裝載 Windows Image (.img) 檔案，並使用[部署映像服務與管理 (DISM)](https://docs.microsoft.com/zh-TW/windows-hardware/manufacture/desktop/what-is-dism) 命令列工具與 [Remove-AppxProvisionedPackage](https://docs.microsoft.com/en-us/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps) 命令擷取不想要的套件。
+Windows 10 包含許多實用的內建應用程式作為標準安裝，但您可能會想要從受管理的電腦移除部分，甚至設定安裝以防止傳回應用程式，例如 XBOX 或 Zune Music。您可以使用 [PowerShell Get-AppxPackage](https://technet.microsoft.com/zh-TW/library/hh856044.aspx) 命令來擷取這些應用程式的清單，並使用 [Remove-AppxPackage](https://technet.microsoft.com/zh-TW/library/hh856038.aspx) 命令移除不想要的部分。或者，您可以在部署之前離線裝載 Windows Image (.img) 檔案，並使用[部署映像服務與管理 (DISM)](https://docs.microsoft.com/zh-TW/windows-hardware/manufacture/desktop/what-is-dism) 命令列工具與 [Remove-AppxProvisionedPackage](https://docs.microsoft.com/zh-TW/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps) 命令擷取不想要的套件。
 
 ## <a name="next-step"></a>下一步
 

@@ -4,7 +4,7 @@ ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
 ms.date: 09/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解重要的 Windows 和 Office 安全性與相容性考量。
-ms.openlocfilehash: cefab9cfd1b61f37559d88c5625c512d33595395
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: ceb6a8e54c99a89cb969c0118de9151cb35314ce
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400237"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073033"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>步驟 5：安全性與相容性考量事項
 
@@ -51,11 +51,12 @@ ms.locfileid: "33400237"
 
 解決這些問題的其中一個選項是使用 Windows 10 中的 BitLocker，其包含在 Windows 10 專業版以及更高版本。BitLocker 可讓您暫停作業系統升級保護和功能更新作為程序的一部分。
 
-[Bitlocker 基本部署](https://docs.microsoft.com/zh-TW/windows/security/information-protection/bitlocker/bitlocker-basic-deployment) (英文)
+
+  [Bitlocker 基本部署](https://docs.microsoft.com/zh-TW/windows/security/information-protection/bitlocker/bitlocker-basic-deployment) (英文)
 
 ### <a name="antivirus-and-antimalware-application-compatibility"></a>防毒和反惡意程式碼應用程式相容性
 
-第二，儘管我們已看過 Windows 7 與 Windows 10 之間超過 [99% 的 Windows 應用程式的相容](https://www.microsoft.com/zh-TW/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/) (英文)，例外狀況通常就是防毒軟體 (AV) 應用程式或虛擬私人網路 (VPN) 用戶端。這些應用程式通常會實作非標準的開發方式和 API，通常使用未記載的方法來保護您的系統或是將您連線到網路資源。
+第二，儘管我們已看過 Windows 7 與 Windows 10 之間超過 [99% 的 Windows 應用程式的相容](https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/) (英文)，例外狀況通常就是防毒軟體 (AV) 應用程式或虛擬私人網路 (VPN) 用戶端。這些應用程式通常會實作非標準的開發方式和 API，通常使用未記載的方法來保護您的系統或是將您連線到網路資源。
 
 如此一來，這些應用程式的本質會在轉換到新版的 Windows 時變得易於變更。如果 AV 或 VPN 軟體無法在 Windows 10 中或在升級之後使用，修正方式通常是將您在使用的應用程式取代為在 Windows 10 上支援及測試的項目。
 
@@ -77,19 +78,24 @@ ms.locfileid: "33400237"
 
 在裝置層級，生物識別技術能提供唯一識別項以更輕鬆、更安全地存取您的裝置和應用程式 - 在您移動至排除密碼的目標時。Windows Hello 提供裝置型多重要素驗證。必須仰賴裝置本身、PIN 或唯一的生物識別識別碼，例如您可以透過原則強制執行的臉孔或指紋。
 
-[Azure 身分識別管理的基本概念](https://docs.microsoft.com/zh-TW/azure/active-directory/fundamentals/identity-fundamentals) (英文)
 
-[了解 Azure 識別解決方案](https://docs.microsoft.com/zh-TW/azure/active-directory/fundamentals/understand-azure-identity-solutions) (英文)
+  [Azure 身分識別管理的基本概念](https://docs.microsoft.com/zh-TW/azure/active-directory/fundamentals/identity-fundamentals) (英文)
 
-[Azure Active Directory 條件式存取](https://docs.microsoft.com/zh-TW/azure/active-directory/conditional-access/overview) (英文)
 
-[Windows Hello 企業版](https://docs.microsoft.com/zh-TW/windows/security/identity-protection/hello-for-business/hello-identity-verification) (英文)
+  [了解 Azure 識別解決方案](https://docs.microsoft.com/zh-TW/azure/active-directory/fundamentals/understand-azure-identity-solutions) (英文)
+
+
+  [Azure Active Directory 條件式存取](https://docs.microsoft.com/zh-TW/azure/active-directory/conditional-access/overview) (英文)
+
+
+  [Windows Hello 企業版](https://docs.microsoft.com/zh-TW/windows/security/identity-protection/hello-for-business/hello-identity-verification) (英文)
 
 ### <a name="virtualization-based-security"></a>虛擬化為基礎的安全性
 
 現在除了身分識別，您也可以啟用持續保護已知或未知的威脅，為了這麼做，Windows 10 會在核心使用虛擬化為基礎的安全性以確保使用安全開機時的開機完整性以及程式碼完整性。我們也可以協助利用認證保護阻止認證失竊，方法是從 Windows 獨立維護使用者機密資訊。此外，應用程式保護可以找出並降低瀏覽器型威脅，方法是在獨立容器中執行瀏覽器。這所有的技術都是使用 Windows 10 中虛擬化為基礎的安全性，且為無法在 Windows 7 系統上複製的基礎變更 – 請注意，這些也需要 UEFI、64 位元 Windows，及透過 SLAT 的虛擬化延伸支援 – 位於硬體層級。
 
-[更多虛擬化為基礎的安全性相關資訊](https://docs.microsoft.com/zh-TW/windows-hardware/design/device-experiences/oem-vbs) (英文)
+
+  [更多虛擬化為基礎的安全性相關資訊](https://docs.microsoft.com/zh-TW/windows-hardware/design/device-experiences/oem-vbs) (英文)
 
 ### <a name="security-enhancements-from-cloud-services"></a>雲端服務中的安全性加強功能
 
@@ -97,27 +103,38 @@ ms.locfileid: "33400237"
 
 透過 Microsoft Intelligent Security Graph，您可以更快速地存取新興威脅的資訊和保護。以下是您可以善加利用的幾個功能，從 Office 開始。
 
-**[資料外洩防護](https://docs.microsoft.com/zh-TW/office365/securitycompliance/data-loss-prevention-policies)** (英文) 內建於 Office 365 專業增強版，可協助在偵測到高風險內容 (例如信用卡或識別碼) 時告知使用者安全性原則。通知使用者後，原則可以通知或封鎖傳送及共用。
 
-**[Azure 資訊保護](https://docs.microsoft.com/zh-TW/azure/information-protection/rms-client/client-admin-guide)** (英文) 是一種互補服務，可與 Office 搭配使用，讓使用者可輕鬆地分類及將 Office 檔案標籤。它會在標籤的檔案上觸發自動動作，例如加密或鎖定共用。
+  **
+  [資料外洩防護](https://docs.microsoft.com/zh-TW/office365/securitycompliance/data-loss-prevention-policies)** (英文) 內建於 Office 365 專業增強版，可協助在偵測到高風險內容 (例如信用卡或識別碼) 時告知使用者安全性原則。通知使用者後，原則可以通知或封鎖傳送及共用。
+
+
+  **
+  [Azure 資訊保護](https://docs.microsoft.com/zh-TW/azure/information-protection/rms-client/client-admin-guide)** (英文) 是一種互補服務，可與 Office 搭配使用，讓使用者可輕鬆地分類及將 Office 檔案標籤。它會在標籤的檔案上觸發自動動作，例如加密或鎖定共用。
 
 我們也已推出跨 Office 應用程式的**[安全連結](https://docs.microsoft.com/zh-TW/office365/securitycompliance/atp-safe-links)** (英文) 保護來保護您免於已知惡意網站的動態清單攻擊。
 
 此外，Outlook 中及 Exchange Online 所屬的**[安全附件](https://docs.microsoft.com/zh-TW/office365/securitycompliance/atp-safe-attachments)**，會超越電子郵件篩選以檢查附件。如果識別到高風險的附件，安全附件將會通知使用者已知的惡意附件，並從電子郵件中將其移除。
 
-**[Office 365 郵件加密](https://docs.microsoft.com/zh-TW/office365/securitycompliance/encryption)** (OME) (英文) 也可用來保護所傳送的電子郵件和附件，確保只有預定的收件者可以檢視電子郵件內容。OME 與 Google、Yahoo 和 Microsoft 消費者帳戶驗證緊密運作，一次性密碼可讓其他電子郵件服務的使用者也安全地接收電子郵件。
+
+  **
+  [Office 365 郵件加密](https://docs.microsoft.com/zh-TW/office365/securitycompliance/encryption)** (OME) (英文) 也可用來保護所傳送的電子郵件和附件，確保只有預定的收件者可以檢視電子郵件內容。OME 與 Google、Yahoo 和 Microsoft 消費者帳戶驗證緊密運作，一次性密碼可讓其他電子郵件服務的使用者也安全地接收電子郵件。
 
 #### <a name="additional-windows-10-protections"></a>其他 Windows 10 保護
 
 Windows 10 中的 **[Windows Defender 應用程式控制](https://docs.microsoft.com/zh-TW/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)** (英文) 會運作 Microsoft 已檢查安全性的核准應用程式允許與拒絕清單，全部都是使用 Microsoft Intune 受端點保護原則管理。
 
-**[Windows Defender 進階威脅防護](https://docs.microsoft.com/zh-TW/windows/security/threat-protection/windows-defender-atp/overview)** (英文) 是一個整合式預防保護、入侵後偵測、自動調查及回應平台。它會保護端點免於網路威脅；偵測進階攻擊與資料入侵、自動化安全性事件，並提高安全性狀態。
 
-**[利用保護](https://docs.microsoft.com/zh-TW/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)** (英文) 可協助減少執行應用程式的受攻擊面，方法為防止惡意程式碼進入 Windows 及封鎖不受信任的程序存取受保護資料夾。
+  **
+  [Windows Defender 進階威脅防護](https://docs.microsoft.com/zh-TW/windows/security/threat-protection/windows-defender-atp/overview)** (英文) 是一個整合式預防保護、入侵後偵測、自動調查及回應平台。它會保護端點免於網路威脅；偵測進階攻擊與資料入侵、自動化安全性事件，並提高安全性狀態。
+
+
+  **
+  [利用保護](https://docs.microsoft.com/zh-TW/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)** (英文) 可協助減少執行應用程式的受攻擊面，方法為防止惡意程式碼進入 Windows 及封鎖不受信任的程序存取受保護資料夾。
 
 #### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Microsoft Intune](https://docs.microsoft.com/zh-TW/intune/introduction-intune) (英文) 作為行動裝置情況下的雲端式管理服務，包括 IOS、Android 和 Windows 裝置，且現在可以設定為共同管理以加強及擴充 System Center Configuration Manager 所管理特定工作負載的控制項。此處的其中一個優點是，可能需要註冊到裝置管理，裝置才能存取受保護的資源 – 即使未受管理、非網域聯結或非 Azure AD 聯結裝置。您也可以利用作業系統和應用程式層級的細微設定與合規性原則強制執行。應用程式原則與設定可以使用 Microsoft Intune 在 Windows 10 中集中設定和強制執行 Office 365 專業增強版和 Microsoft Store 應用程式。
+
+  [Microsoft Intune](https://docs.microsoft.com/zh-TW/intune/introduction-intune) (英文) 作為行動裝置情況下的雲端式管理服務，包括 IOS、Android 和 Windows 裝置，且現在可以設定為共同管理以加強及擴充 System Center Configuration Manager 所管理特定工作負載的控制項。此處的其中一個優點是，可能需要註冊到裝置管理，裝置才能存取受保護的資源 – 即使未受管理、非網域聯結或非 Azure AD 聯結裝置。您也可以利用作業系統和應用程式層級的細微設定與合規性原則強制執行。應用程式原則與設定可以使用 Microsoft Intune 在 Windows 10 中集中設定和強制執行 Office 365 專業增強版和 Microsoft Store 應用程式。
 
 ## <a name="next-step"></a>下一步
 
