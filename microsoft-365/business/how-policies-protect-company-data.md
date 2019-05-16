@@ -3,7 +3,7 @@ title: Microsoft 365 商務版中的原則如何保護公司資料
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - O365E_ESPoliciesLM
@@ -23,23 +23,23 @@ search.appverid:
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
 description: 了解針對特定裝置和安全性群組來保護使用者的個人裝置上公司資料的原則。
-ms.openlocfilehash: 11f0432b9e738841e6523dce436c534af41b827a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: ee7a0a1a397d7f527c3db16520ba157168cfbee3
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32276780"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072633"
 ---
-# <a name="how-policies-in-microsoft-365-business-protect-company-data"></a><span data-ttu-id="087b8-103">Microsoft 365 商務版中的原則如何保護公司資料</span><span class="sxs-lookup"><span data-stu-id="087b8-103">How policies in Microsoft 365 Business protect company data</span></span>
+# <a name="how-policies-in-microsoft-365-business-protect-company-data"></a><span data-ttu-id="cde34-103">Microsoft 365 商務版中的原則如何保護公司資料</span><span class="sxs-lookup"><span data-stu-id="cde34-103">How policies in Microsoft 365 Business protect company data</span></span>
 
-<span data-ttu-id="087b8-p101">您建立的原則能夠針對特定的裝置類型，且可以套用至特定的使用者群組。這表示您能夠建立一個套用至高階主管的原則，以及另一個套用至其他所有人的原則。</span><span class="sxs-lookup"><span data-stu-id="087b8-p101">The policies that you create are specific to the device type and can be applied to specific groups of users. This means that you could create one policy that applies to your executives, and another that applies to everyone else.</span></span>
+<span data-ttu-id="cde34-p101">您建立的原則能夠針對特定的裝置類型，且可以套用至特定的使用者群組。這表示您能夠建立一個套用至高階主管的原則，以及另一個套用至其他所有人的原則。</span><span class="sxs-lookup"><span data-stu-id="cde34-p101">The policies that you create are specific to the device type and can be applied to specific groups of users. This means that you could create one policy that applies to your executives, and another that applies to everyone else.</span></span>
   
-<span data-ttu-id="087b8-p102">針對 Android 和 iOS 裝置，您可以新增或編輯應用程式原則，以保護 Office App 與 Office App 所使用的工作檔案。我們對於 Windows 10 裝置有較多控制權，因此應用程式原則包含一些額外設定，例如針對網路和雲端位置的加密與保護。您也可以為 Windows 10 裝置建立裝置原則，以強化病毒保護和自動更新等設定。我們建議您沿用設定時建立的原則，不過若您想要微調原則或新增更多原則，請參閱下列文章：</span><span class="sxs-lookup"><span data-stu-id="087b8-p102">For Android and iOS devices, you can add or edit application policies that protect Office apps and work files used by Office apps. We're able to control Windows 10 devices a bit more, so application policies can include additional settings, like encryption and protection for network and cloud locations. You can also create device policies for Windows 10 devices that enforce settings like virus protection and automatic updates. We recommend that you stick with the policies created during setup, but if you'd like to fine-tune your policies or add more, please reference these articles:</span></span>
+<span data-ttu-id="cde34-p102">針對 Android 和 iOS 裝置，您可以新增或編輯應用程式原則，以保護 Office App 與 Office App 所使用的工作檔案。我們對於 Windows 10 裝置有較多控制權，因此應用程式原則包含一些額外設定，例如針對網路和雲端位置的加密與保護。您也可以為 Windows 10 裝置建立裝置原則，以強化病毒保護和自動更新等設定。我們建議您沿用設定時建立的原則，不過若您想要微調原則或新增更多原則，請參閱下列文章：</span><span class="sxs-lookup"><span data-stu-id="cde34-p102">For Android and iOS devices, you can add or edit application policies that protect Office apps and work files used by Office apps. We're able to control Windows 10 devices a bit more, so application policies can include additional settings, like encryption and protection for network and cloud locations. You can also create device policies for Windows 10 devices that enforce settings like virus protection and automatic updates. We recommend that you stick with the policies created during setup, but if you'd like to fine-tune your policies or add more, please reference these articles:</span></span>
   
-[<span data-ttu-id="087b8-110">設定適用於 Android 或 iOS 裝置的應用程式設定</span><span class="sxs-lookup"><span data-stu-id="087b8-110">Set app configurations for Android or iOS devices</span></span>](app-protection-settings-for-android-and-ios.md)
+[<span data-ttu-id="cde34-110">設定適用於 Android 或 iOS 裝置的應用程式設定</span><span class="sxs-lookup"><span data-stu-id="cde34-110">Set app configurations for Android or iOS devices</span></span>](app-protection-settings-for-android-and-ios.md)
   
-[<span data-ttu-id="087b8-111">設定適用於 Windows 10 電腦的裝置設定</span><span class="sxs-lookup"><span data-stu-id="087b8-111">Set device configurations for Windows 10 PCs</span></span>](protection-settings-for-windows-10-pcs.md)
+[<span data-ttu-id="cde34-111">設定適用於 Windows 10 電腦的裝置設定</span><span class="sxs-lookup"><span data-stu-id="cde34-111">Set device configurations for Windows 10 PCs</span></span>](protection-settings-for-windows-10-pcs.md)
   
-[<span data-ttu-id="087b8-112">設定 Windows 10 裝置的 app 保護設定</span><span class="sxs-lookup"><span data-stu-id="087b8-112">Set app protection settings for Windows 10 devices</span></span>](protection-settings-for-windows-10-devices.md)
+[<span data-ttu-id="cde34-112">設定 Windows 10 裝置的 app 保護設定</span><span class="sxs-lookup"><span data-stu-id="cde34-112">Set app protection settings for Windows 10 devices</span></span>](protection-settings-for-windows-10-devices.md)
   
 

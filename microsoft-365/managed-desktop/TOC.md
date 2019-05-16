@@ -15,6 +15,7 @@
 ### [Microsoft 的必要條件受管理的電腦](get-ready/prerequisites.md)
 ### [準備部署網路](get-ready/network.md)
 ### [Microsoft 受管理電腦的準備內部部署資源的存取](get-ready/authentication.md)
+### [對應磁碟機準備 Microsoft 受管理的電腦](get-ready/mapped-drives.md)
 ### [準備-營運應用程式](get-ready/apps.md)
 ## [開始使用 Microsoft 受管理的電腦](get-started/index.md)
 ### [新增系統管理連絡人](get-started/add-admin-contacts.md)
