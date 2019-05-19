@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 08/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：為您的 Office 365 測試環境設定及示範密碼雜湊同步處理並且登入。
-ms.openlocfilehash: a692f445bcb56044e9a6a29cee62facd22743733
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 0c6f7ec4afdfaaca0c84ed33ea0c1b1f248a82f5
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353138"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073173"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>適用於 Office 365 測試環境的密碼雜湊同步處理
 
@@ -46,7 +46,7 @@ ms.locfileid: "33353138"
 此組態包含： 
   
 - Office 365 E5 和 EMS E5 試用版或付費訂閱。
-- 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路中的 DC1、APP1 及 CLIENT1 虛擬機器組成。 DC1 是 testlab.\<您的公用網域名稱> Active Directory Domain Services (AD DS) 網域的網域控制站。
+- 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路中的 DC1、APP1 及 CLIENT1 虛擬機器組成。 DC1 是 testlab 的網域控制站。\<您的公開網域名稱> AD DS 網域。
 
 ## <a name="phase-2-create-and-register-the-testlab-domain"></a>階段 2：建立及註冊 testlab 網域
 

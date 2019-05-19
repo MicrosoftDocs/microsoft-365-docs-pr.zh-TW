@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 04/23/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用來在組織中部署 Microsoft 365 企業版的資源。
-ms.openlocfilehash: dca9d5938a5db9cb3bc00e4e34d1f939700a1182
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: ac3e023f6a9364f6b9de23cd5b91d0d6fb6dbf1b
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400057"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072493"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版
 
@@ -136,60 +136,23 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
   
 ### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Microsoft 如何使用 Microsoft 365 企業版
 
-一窺 Microsoft IT 內部，並且了解他們如何部署 Microsoft 365 企業版，以及 Microsoft 員工如何每天使用。
+定義數位文化是每個努力促進現代工作場所的領導者的首要任務。 Microsoft 365 旨在支持這種文化轉變，幫助領導者賦予其公司每位員工釋放創造力和共同作業的能力。 在 Microsoft 建立基礎架構時，恰好引發了這種數位文化的轉型。 實作 Microsoft 365 企業版使我們能夠部署如 Microsoft Teams 和 Exchange Online 這類的共同作業技術，並在安全的 SharePoint 內部網站線上分享敏感資料。
 
-#### <a name="networking"></a>網路功能
+同時，智慧安全性功能和產品整合有助於簡化管理需求，並將整個 IT 生命週期的總擁有成本降到最低。 
 
-- [最佳化 Microsoft Office 365 的網路效能](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)
+了解核心服務工程和運作 (以前稱為 Microsoft IT) [如何計劃和部署基礎](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365)，以支援在安全環境中釋放創造力和促進團隊合作的應用程式和服務。
 
-#### <a name="identity"></a>身分識別
-
-- [在 Microsoft 管理使用者身分識別並且保護存取權](https://www.microsoft.com/itshowcase/Article/Content/931/Managing-user-identities-and-secure-access-at-Microsoft)
-- [針對提升權限的存取使用 Azure AD Privileged Identity Management](https://www.microsoft.com/itshowcase/Article/Content/887/Using-Azure-AD-Privileged-Identity-Management-for-elevated-access)
-
-#### <a name="windows-10-enterprise"></a>Windows 10 企業版
-
-- [準備您的組織以便進行完美的 Windows 10 部署](https://www.microsoft.com/itshowcase/windows10deployment?wt.mc_id=bmkg_itsc)
-- [採用 Microsoft 的 Windows 即服務](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
-- [在 Microsoft 以就地升級方式部署 Windows 10](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
-- [使用 Windows Hello 企業版實作強大的使用者驗證](https://www.microsoft.com/itshowcase/Article/Content/756/Implementing-strong-user-authentication-with-Windows-Hello-for-Business)
-- [Windows 10 部署：Microsoft IT 的秘訣與技巧](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (影片)
-- [Windows Defender ATP 可協助偵測複雜的威脅](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
-- [使用 Windows Defender 和 Windows Defender ATP 保護現代的企業](https://www.microsoft.com/itshowcase/Article/Content/903/Securing-the-modern-enterprise-with-Windows-Defender-and-Windows-Defender-ATP) (影片)
-
-#### <a name="office-365-proplus"></a>Office 365 專業增強版
-
-- [部署及更新 Microsoft Office 365 專業增強版](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
-- [自動化和更新通道有助於部署 Microsoft Office 365 專業增強版](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (影片)
-
-#### <a name="mobility-and-device-management"></a>行動力和裝置管理
-
-- [使用企業行動力 + 安全性管理現代行動生產力](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security) (英文)
-- [使用 Microsoft Intune 連線到公司的 Windows 10 裝置](https://www.microsoft.com/itshowcase/Article/Content/783/Connecting-to-work-on-your-Windows-10-device-with-Microsoft-Intune) (英文)
-- [為 Microsoft 的 iOS、OS X 和 Android 設備啟用移動生產力](https://www.microsoft.com/itshowcase/Article/Content/773/Enabling-mobile-productivity-for-iOS-OS-X-and-Android-devices-at-Microsoft) (英文)
-
-#### <a name="security-and-information-protection"></a>安全性和資訊保護
-
-- [使用 Azure 資訊保護來保護雲端的檔案](https://www.microsoft.com/itshowcase/Article/Content/924/Protecting-files-in-the-cloud-with-Azure-Information-Protection)
-- [Microsoft 會使用威脅情報來保護、偵測及回應威脅](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
-- [Microsoft 會使用 Office 365 來阻撓網路釣魚嘗試](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365)
-
-#### <a name="microsoft-teams"></a>Microsoft Teams
-
-- [部署 Microsoft Teams 可簡化共同作業並提升團隊合作](https://www.microsoft.com/itshowcase/Article/Content/1013/Deploying-Microsoft-Teams-streamlines-collaboration-and-improves-teamwork)
-- [Microsoft Teams 可在 Microsoft 的現代化工作場所增進共同作業](https://www.microsoft.com/itshowcase/Article/Content/1012/Microsoft-Teams-increases-collaboration-in-the-modern-workplace-at-Microsoft)
-
-#### <a name="data-migration"></a>資料移轉
-
-- [Microsoft 會將 150000 個信箱移轉到 Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
-- [SharePoint 至雲端：深入了解 Microsoft 如何執行自己的移轉](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
+> [!Note]
+> 此網頁只提供英文版。
 
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Contoso Corporation 如何部署 Microsoft 365 企業版
 
 Contoso Corporation 是虛構但具代表性的全球製造業集團，其總部位於法國巴黎。 請參閱 [Contoso 部署的 Microsoft 365 企業版](contoso-case-study.md)，並且針對網路、身分識別、Windows 10 企業版、Office 365 專業增強版、行動裝置管理、資訊保護和安全性，訂定主要設計決策和實作詳細資料。 
 
-## <a name="next-step"></a>下一步
+## <a name="next-step-to-deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版的下個步驟
 
-若需要 Microsoft 的協助來進行部署，請使用 [FastTrack](https://fasttrack.microsoft.com/microsoft365)。
+若需要 Microsoft 的直接協助以進行部署，請使用 [FastTrack](https://fasttrack.microsoft.com/microsoft365)。
+
+若要透過顧問進行，請連絡 Microsoft 諮詢服務或 [Microsoft 合作夥伴](https://partner.microsoft.com/)。
 
 若要自行開始部署，請參閱[基礎結構](deploy-foundation-infrastructure.md)。
