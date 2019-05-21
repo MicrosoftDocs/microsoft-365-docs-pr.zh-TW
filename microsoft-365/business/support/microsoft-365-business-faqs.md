@@ -1,8 +1,8 @@
 ---
 title: Microsoft 365 商務版常見問題集 
 description: 尋找有關 Microsoft 365 商務版最常見問題的解答，此商務版是專為小中型企業 (SMB) 設計的新解決方案。 
-author: jasongroce
-ms.author: jasgro
+author: Sirkkuw
+ms.author: sirkkuw
 ms.topic: article 
 ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商務版, Microsoft 365, SMB, 常見問題集, 常見問題集, 解答, 商務版
 ms.date: 06/08/2018
-ms.openlocfilehash: bdcfd6a78278aff83b3fc21ae0fbb43bce140a16
-ms.sourcegitcommit: 1034f54472de62897f2e8f12459db8043ac8443b
+ms.openlocfilehash: 6ef500c9b0c9e83e77e46c1eaf7057e3e46cfe0d
+ms.sourcegitcommit: 5c6bbf6dd7020b462b56b644b5a0fcc0217d6a53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33497745"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34276216"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 商務版常見問題集
 
@@ -80,7 +80,7 @@ Windows 10 商務版是一組雲端服務和裝置管理功能，這些功能彌
 Microsoft 365 商務版提供客戶簡單但強大的方式，讓員工以工作時的能力提供商務使用其個人的裝置，來防止這些裝置無法存取、 保留，及/或共用的商務資訊. 更加明確： 
 * **適用於 Office 行動裝置版應用程式的應用程式防護**可協助應用程式保護 Office 資料，包括 iOS 和 Android 行動裝置上的電子郵件、行事曆、連絡人及文件，方法是強制執行如在規定時間內若未連接服務便刪除商務資料等原則、要求資訊僅儲存到商務用 OneDrive、要求提供 PIN/指紋驗證存取 Office 應用程式，以及預防公司資料從 Office 應用程式複製到個人應用程式。 針對其他行動裝置 app 透過 Intune 行動應用程式管理也適用於 Microsoft 365 商務版訂閱者。 
   
-* 若要選擇設定和強制執行的惡意程式碼、 自動更新，並關閉畫面指定時間後的 Windows Defender 保護等功能的**裝置管理的 Windows 10 電腦**aallows 企業。 此外，可以透過系統管理中心完全清除遺失或遭竊 Windows 10 裝置的商務用應用程式和資料。 
+* **Windows 10 電腦適用的行動裝置管理**可讓企業選擇設定並執行功能，例如 Windows Defender 防護惡意程式碼入侵、自動更新，並在規定的時間後關閉螢幕。 此外，可以透過系統管理中心完全清除遺失或遭竊 Windows 10 裝置的商務用應用程式和資料。 
 
 * **裝置管理的 iOS、 Android & MacOS**功能可協助企業安全地管理包括 iOS、 Android、 Windows 及 macOS 裝置各種裝置生態系統。 
 
@@ -185,7 +185,7 @@ Microsoft 365 商務版無法將非正版 Windows 變成正版。 但 Microsoft 
 
 
 
-## <a name="footnotes"></a>Footnotes
+## <a name="footnotes"></a>註腳
 <sup><a name="footnote1">**1**</a></sup> <small>在美國、加拿大和英國提供。</small> </br>
 <sup><a name="footnote2">**2**</a></sup> <small>執行 Windows 7 或 8.1 專業版的裝置，有資格在 Microsoft 365 商務版預覽版內升級到 Windows 10 專業版。</small>
  
