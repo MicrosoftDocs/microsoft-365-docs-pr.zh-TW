@@ -1,25 +1,25 @@
 ---
 title: GDPR 規定的 Microsoft 支援服務與專業服務以及外洩通知
 description: Microsoft 支援服務與專業服務如何防止個人資料外洩，以及若發生外洩 Microsoft 會如何回應和通知您。
-keywords: Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
-author: herviicban
+keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: a17752773304272938c305649ff6e511ab0d1b0b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 8a0f0c5c173fbee6a865d2c9a7afb0f61b388507
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285740"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431594"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>GDPR 規定的 Microsoft 支援服務與專業服務以及外洩通知
 
-Microsoft 支援服務與專業服務很認真看待其在一般資料保護規定 (GDPR) 下所需承擔的責任。
+Microsoft 支援服務與專業服務很認真看待其在一般資料保護規定 (GDPR) 下所需承擔的責任。Microsoft 支援服務與專業服務很認真看待其在一般資料保護規定 (GDPR) 下所需承擔的責任。
 
 Microsoft 專業服務包括一組多元化的技術結構設計師、工程師、顧問師，以及致力於達成 Microsoft 任務的支援專業人員，以期讓客戶更有能力與成就。我們的專業服務小組總計包括超過 21,000 名顧問師、數位顧問、頂級支援、工程師和專業銷售人員，這些專業人員在全球 191 個國家/地區工作，可支援 46 種不同的語言，每個月管理數百萬件約定，以及透過內部部署、電話、網路、社群和自動化工具參與客戶與合作夥伴互動。該組織具備廣泛的 Microsoft 產品組合專業知識，並運用廣闊的合作夥伴、技術社群、工具、診斷及通道網路來連結我們與企業客戶。
 
@@ -77,7 +77,7 @@ Microsoft 專業服務所用的偵測程序主要用來探索資料保護事件�
 
 Microsoft 專業服務組織在識別資料保護事件時，會遵循書面的產業標準回應計劃，首先判斷資料保護事件條件是否符合。當資料保護事件發生時，通常會在「分級」之後立即宣告，但視複雜性而定，宣告可能會發生在取得某個程度的所需資訊時的任何時間點，包括在調查階段之後。另一方面，小組決定只根據合理的懷疑來宣告資料保護事件。在調查過程中，小組也可以在各個階段之間交替。
 
-Microsoft 也會完成資料保護事件的內部事後剖析。在此演練中，會進行充分的回應和作業程序評估，而且會找出並實作「資料保護事件回應標準作業程序」** 所需的任何更新。資料外洩的內部事後剖析是客戶無法取得的極機密記錄。不過，可以將事後剖析彙總並納入客戶事件通知中。在例行稽核週期中，外部稽核者會審查事後剖析程序，以確保會採取後續行動。
+Microsoft 也會完成資料保護事件的內部事後剖析。在此演練中，會進行充分的回應和作業程序評估，而且會找出並實作「*資料保護事件回應標準作業程序*」所需的任何更新。資料外洩的內部事後剖析是客戶無法取得的極機密記錄。不過，可以將事後剖析彙總並納入客戶事件通知中。在例行稽核週期中，外部稽核者會審查事後剖析程序，以確保會採取後續行動。
 
 #### <a name="notification"></a>通知
 
