@@ -1,23 +1,24 @@
 ---
 title: GDPR 的 Intune 資料主體要求
-description: ''
-keywords: Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
-author: dougeby
+description: 本指南會介紹如何使用 Microsoft 產品、服務及系統管理工具，協助我們的控制者客戶找出並處理個人資料，以回應 DSR 要求。
+keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: dougeby
+author: dougeby
 manager: angrobe
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: fa65d33795108a16759fa87d476bb5a4dc94a281
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 868bdf151f853168e7de69669b67e5686089ce72
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285195"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431444"
 ---
 # <a name="intune-data-subject-requests-for-the-gdpr"></a>GDPR 的 Intune 資料主體要求
+
 歐盟資料保護規範 (GDPR) 賦予人員 (在規範中稱為「資料主體」**) 權限，以管理由雇主或其他類型的公司或組織 (稱為「資料控制者」** 或簡稱「控制者」**) 收集而來的個人資料。個人資料在 GDPR 中的定義非常廣泛，係指與已識別或可識別的自然人相關的任何資料。GDPR 賦予資料主體對其個人資料的特定權限，這些權限包括取得個人資料副本、要求更正資料、限制資料的處理、刪除資料或以電子格式接收資料，以便轉交給其他控制者。由資料主體向控制者提出對其個人資料採取某項動作的正式要求，稱為「資料主體要求」** 或 DSR。
 
 本指南會討論如何使用 Microsoft 產品、服務及系統管理工具，協助我們的控制者客戶找出並對個人資料採取動作，以回應 DSR；尤其是針對如何找出、存取與處理在 Microsoft 雲端中常駐的個人資料。以下是本指南中所述程序的快速概觀：
