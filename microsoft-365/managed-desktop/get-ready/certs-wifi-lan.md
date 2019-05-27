@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b8d41e3747ad1e844e8d8f51412366d1c58efbe4
-ms.sourcegitcommit: 82a5c9a1f0f9627264f6f488dedb03f9092451fd
+ms.openlocfilehash: 7c260ce7b3fcb488cb22fb054eeb6ba322fee94b
+ms.sourcegitcommit: ef1382ca224a0c108df2633a6550786666691e1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34163441"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34391264"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>準備 Microsoft 受管理的電腦上的憑證和網路設定檔  
  
@@ -71,7 +71,7 @@ Microsoft 受管理的電腦裝置部署有線的網路組態設定檔之前，�
     - OMA URI （區分大小寫）： 輸入 *./Device/Vendor/MSFT/WiredNetwork/LanXML*
     - 資料類型： 選取**字串 （XML 檔案）**。 
     - 自訂的 XML： 上傳匯出的 XML 檔案。
-2. 將服務要求提交給 Microsoft 受管理的桌上型電腦作業檢閱及部署"現代化工作場所裝置 – Test"的組態設定檔使用 Microsoft 受管理的桌上型電腦系統管理入口網站。 Microsoft 受管理的桌上型電腦作業會讓您知道當要求完成使用系統管理入口網站。
+2. 支援要求提交給 Microsoft 受管理的桌上型電腦 IT 作業使用 Microsoft 受管理的桌上型電腦系統管理入口網站中，若要檢閱並部署 「 現代化工作場所裝置 – Test"的組態設定檔。 Microsoft 受管理的桌上型電腦 IT 作業會讓您知道當要求完成透過管理入口網站中的支援要求。
  
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>部署憑證和 VPN Fi Wi-fi/設定檔 
  
@@ -82,6 +82,6 @@ Microsoft 受管理的電腦裝置部署有線的網路組態設定檔之前，�
 2. 建立每個 SCEP 或 PKCS 憑證的設定檔 （請參閱[建立 SCEP 憑證設定檔](https://docs.microsoft.com/intune/certificates-scep-configure#create-a-scep-certificate-profile)] 或 [[建立 PKCS 憑證設定檔](https://docs.microsoft.com/intune/certficates-pfx-configure#create-a-pkcs-certificate-profile)） 每一個這些設定檔必須包含 DD/MM/YYYY 格式中的到期日的描述。 **將不會部署的憑證設定檔沒有到期日期。**
 3. 建立每個公司 WiFi 設定檔 （請參閱[Windows 10 和更新版本的裝置的 Wi-fi 設定](https://docs.microsoft.com/intune/wi-fi-settings-windows)） 的網路。
 4. 針對每個公司的 VPN 建立設定檔 （請參閱[Windows 10 和 Windows Holographic 的裝置設定，以新增使用 Intune 的 VPN 連線](https://docs.microsoft.com/intune/vpn-settings-windows-10)）。
-5. 提交標題為 「 憑證部署 」 或 Microsoft 受管理的桌上型電腦作業檢閱及部署"現代化工作場所裝置 – Test"的組態設定檔使用 Microsoft 受管理的桌上型電腦系統管理入口網站中的 「 Wi-fi 設定檔部署 「 服務要求。 Microsoft 受管理的桌上型電腦作業將會告知您使用系統管理入口網站中完成的要求。 
+5. 提交支援要求標題為 「 憑證部署 」 或 「 Wi-fi 設定檔部署 」 Microsoft 受管理的桌上型電腦 IT 作業使用 Microsoft 受管理的桌上型電腦系統管理入口網站中，若要檢閱並部署 「 現代化工作場所裝置 – 測試的組態設定檔」。 Microsoft 受管理的桌上型電腦 IT 作業會告知您透過支援要求管理入口網站中完成的要求。 
  
  

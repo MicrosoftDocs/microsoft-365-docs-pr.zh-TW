@@ -7,12 +7,12 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9a080c044939dfde223c231dfebdd248861d5f9f
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 9a7d2130775c9c5d99bba711254fc0f0ce540947
+ms.sourcegitcommit: 3294b97a20ae0e5eb8ce6187310cc96b5050a215
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278622"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422209"
 ---
 # <a name="device-configuration"></a>裝置設定
 
@@ -43,7 +43,6 @@ ms.locfileid: "32278622"
 --- | ---
 [比較基準安全性 | [Microsoft 安全性基準](https://docs.microsoft.com/windows/device-security/windows-security-baselines)MDM 會針對所有 Microsoft 受管理的電腦裝置。 此基準是業界標準的組態。 它公開發行，以及測試，並已檢閱過的 Microsoft 安全性專家將 Microsoft 受管理的電腦裝置和應用程式安全的現代化工作場所。 <br><br>若要降低威脅不斷演變安全性威脅橫向中的，會更新並部署至 Microsoft 受管理的電腦裝置的每個 Windows 10 功能更新的 Microsoft 安全性基準。<br><br>如需詳細資訊，請參閱 <<c0>適用於 Windows 10 安全性基準。
 Microsoft 受管理電腦所建議的安全性範本 | 一系列安全性基準來最佳化使用者經驗的建議變更。  這些變更會記錄在[安全增訂版](#security-addendum)。 在需要時，就會更新原則增訂版。  
-裝置合規性 | 根據預設會針對所有 Microsoft 受管理的電腦裝置設定這些原則。 裝置會報告為不相容，其中一個下列安全性條件不符合時：<br>-啟用 BitLocker 裝置加密來保護裝置上的資料。 如需詳細資訊，請參閱[概觀的 BitLocker 裝置加密在 Windows 10 中。](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10)<br>-安全開機啟用並強制執行，他們可以執行之前，驗證在裝置上的韌體影像。 如需詳細資訊，請參閱[安全開機和裝置加密概觀。](https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview)<br>Microsoft 受管理的電腦裝置需要登入的密碼。
 更新部署 | 使用商務 (WUfB) 的 Windows 更新，來執行逐步部署軟體更新。 IT 系統管理員無法修改部署群組原則設定。 如需有關群組為基礎的部署的詳細資訊，請參閱 <<c0>更新的處理方式。
 診斷資料 | 裝置會設定增強的診斷資料提供給 Microsoft 下一個已知的商業識別碼。 Microsoft 受管理電腦的一部分，IT 系統管理員不能變更這些設定。 客戶的一般資料保護規定 (GDPR) 區域，使用者可以降低程度診斷資料提供，但會減少的服務。 例如，Microsoft 受管理電腦將無法收集來逐一查看上設定和原則，以最佳服務效能與安全性需求所需的資料。 如需詳細資訊，請參閱[貴組織中的設定 Windows 診斷資料。](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
@@ -56,4 +55,4 @@ Microsoft 受管理電腦所建議的安全性範本 | 一系列安全性基準�
  若要提高安全性針對高管制產業新增這些原則。 
  - **應用程式允許清單**： 應用程式必須受到 Microsoft 受管理的電腦裝置上執行組織的信任。 此提供的鎖定的環境。 必須是上架任何應用程式必須向 Microsoft 受管理的桌上型電腦作業小組通訊。 如需詳細資訊，請參閱 < <b0>Windows Defender 裝置防護</b0>。
  - **安全性監視**： Microsoft 會監視使用[Windows Defender 進階威脅防護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)的裝置。 如果偵測到威脅，Microsoft 將會通知客戶、 隔離裝置，並修正此問題： 從遠端。 
-
+ - **停用 PowerShell V2**: Microsoft 已在 2017 年 8 月取代 PowerShell V2。 Microsoft 受管理電腦的所有裝置上已停用此功能。 如需有關此變更的詳細資訊，請參閱 < <b0>Windows PowerShell 2.0 deprecation </b0>。
