@@ -2,21 +2,21 @@
 title: GDPR 規定的 Azure 和外洩通知
 description: Azure 如何防止個人資料外洩，以及若發生外洩 Microsoft 會如何回應和通知您。
 keywords: Azure、Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 287175d6f78efa1052e446b230f39c33fc4d5fc6
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5e8c04bcd20f56580e939bc4a2685eb232d5e589
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286428"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431494"
 ---
 # <a name="azure-and-breach-notification-under-the-gdpr"></a>GDPR 規定的 Azure 和外洩通知
 
@@ -137,7 +137,7 @@ Microsoft 會判斷功能性影響、復原能力和事件的資訊影響，來�
 
 Microsoft 會確認是否已成功遏制客戶和商業風險，並實施了矯正措施。如有需要，會進行緊急風險降低步驟，以解決與事件關聯的迫切安全性風險。
 
-Microsoft 也會完成資料外洩的內部檢討。在此過程中，會評估回應的充分程度和作業程序，並找出和實施安全性事件回應 SOP 或相關程序所需的任何更新。資料外洩的內部檢討是客戶無法取得的極機密記錄。不過，我們可以將檢討摘要並納入客戶事件通知中。在 Azure 的例行稽核週期中，會向外部稽核者提供這些報告以供審查。
+Microsoft 也會完成資料外洩的內部檢討。 在本練習當中，我們將評估回應效率和作業程序，找出安全性事件回應標準作業程序 (SOP) 或相關的程序所需的任何更新，然後執行。 資料外洩的內部檢討是不提供給客戶的高度機密記錄。 但是，檢討的摘要可包含在其他客戶活動的通知中。 這類報表會提供外部檢閱，屬於 Azure 例行稽核循環的一部分。
 
 #### <a name="customer-notification"></a>客戶通知
 ---------------------
@@ -146,13 +146,13 @@ Microsoft Azure 依要求會向客戶和法規機構通知資料外洩。Microso
 
 在宣告 CRSI 後，我們會以最快的速度進行通知程序，同時仍顧及在快速行動下的安全性風險。通常，正在進行事件調查時，就會開始草擬通知。*除了*下列情況，從我們宣告有缺口算起不超過 72 小時內，就會傳送客戶通知：
 
--   Microsoft 相信執行通知的動作會增加其他客戶的風險。比方說，通知的動作可能會驚動攻擊者，因而無法補救。
+-   Microsoft 相信執行通知的動作會增加其他客戶的風險。 例如，敵手可能因此收到通知，導致我們無法做修復。
 
 -   經 Microsoft 法務部門企業外部和法律事務 (CELA) 和事件執行經理審查過的其他不尋常或特殊情況。
 
 Microsoft Azure 可提供客戶詳細資訊，讓他們能執行內部調查，並協助他們符合對使用者的承諾，而不會過度延遲通知程序。
 
-系統會以 Microsoft 選擇的任何方式 (包括透過電子郵件) 將個人資料外洩的通知傳送給客戶。系統會將資料外洩的通知，傳送給 Azure 資訊安全中心所提供的安全性連絡人清單；您可遵循[實作方針](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)來設定此清單。若 Azure 資訊安全中心未提供連絡人資訊，則會將通知傳送給 Azure 訂用帳戶中的一或多個系統管理員。為了確保可順利傳送通知，客戶有責任確保每個訂用帳戶和線上服務入口網站上的管理連絡人資訊是正確的。
+個人資料外洩的通知會經由 Microsoft 的選擇 ，包括透過電子郵件，傳送給客戶。 資料外洩的通知會傳送至 Azure 資訊安全中心提供的安全性連絡人清單。您可以按照[實作指南](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)中的指示設定該清單。 如果未在 Azure 資訊安全中心提供連絡人資訊，則通知會傳送給一或多個 Azure 月租方案的管理員。 為了確保通知能順利送達，客戶有責任確定每個適用之月租方案和線上服務管理入口網站上的管理連絡人資訊是正確的。
 
 Microsoft Azure 或 Azure Government 小組也可以選擇通知客戶服務 (CSS) 和客戶帳戶管理員 (AM)，或技術帳戶管理員 (TAM) 等其他 Microsoft 人員。這些人員通常與客戶有密切的關係，也有助於快速進行補救。<span id="_Appendix_A" class="anchor"></span>
 
@@ -161,7 +161,7 @@ Microsoft Azure 或 Azure Government 小組也可以選擇通知客戶服務 (CS
 
 Microsoft Intune 是 Microsoft Enterprise Mobility and Security 套件服務提供項目的重要元件。為了支援資料控管策略，所有的 Microsoft 雲端服務都是依照「Microsoft 從設計著手保護隱私與安全性」和「預設為保護隱私與安全性」方法來開發的。
 
-而 Microsoft Intune 的雲端服務提供項目，也遵循了與 Microsoft Azure 服務小組在確保資料外洩安全的程序上，所採用的相同技術和組織措施。因此，在這份「Microsoft Azure 資料外洩」通知文件中所記錄的任何資訊，也與 Microsoft Intune 服務很類似。例如，Microsoft Intune 也沿用了相同的安全性事件回應程序和生命週期 (從階段 1：偵測到階段 5<strong>：</strong>結案與檢討)，以及相同的客戶安全性事件通知程序。此外，Microsoft Intune 也透過直接與 Microsoft O365 小組合作，履行了對任何使用 Intune 的 Microsoft O365 客戶進行缺口通知的義務。
+這類 Microsoft Intune 的雲端服務遵循相同的技術與組織措施，可評估一或多個 Microsoft Azure 服務小組的資料安全漏洞程序。 因此，記錄在「Microsoft Azure 資料外洩」通知文件中的任何資訊也類似於 Microsoft Intune 服務。 例如，Microsoft Intune 有相同的安全性事件回應程序和生命週期 (階段 1：偵測到階段 5：</strong>結案與檢討)，以及相同的客戶安全性事件通知程序。 此外，Microsoft Intune 還透過直接與 Microsoft O365 團隊合作，履行其對使用 Intune 的任何 Microsoft O365 客戶之外洩通知的義務。
 
 如需 Microsoft 如何偵測及回應個人資料外洩的詳細資訊，請參閱服務信任入口網站中的 [GDPR 規定的資料外泄通知](https://servicetrust.microsoft.com/ViewPage/GDPRBreach)。
 
