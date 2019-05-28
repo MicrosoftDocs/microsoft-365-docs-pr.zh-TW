@@ -12,36 +12,34 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 0a18089bcead4d2cad5f94cd71081aa521571bfa
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 91399acd19869b0c2633a1b887bd54ae8db35081
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283603"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431664"
 ---
 # <a name="microsoft-365-nist-800-53-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 NIST 800-53 行動計畫 — 前 30 天、90 天及過後的首要工作
 
-Microsoft 365 可讓您利用雲端架構經營您的企業，該架構可對齊控制項與多個法規標準。 Microsoft 365 包含 Office 365、Windows 10、Enterprise Mobility + Security。 Microsoft 的內部控制系統是以美國國家標準與技術研究院 (NIST) 特別出版品 800-53 為基礎，而 Office 365 已被視為符合最新的 NIST 800-53 標準。 
-
+Microsoft 365 可讓您利用雲端架構經營您的企業，該架構可對齊控制項與多個法規標準。 Microsoft 365 包含 Office 365、Windows 10、Enterprise Mobility + Security。 Microsoft 的內部控制系統是以美國國家標準與技術研究院 (NIST) 特別出版品 800-53 為基礎，而 Office 365 已被視為符合最新的 NIST 800-53 標準。
 
 Microsoft 被視為雲端安全性中的業界領導者。使用多年建置企業軟體及執行線上服務的經驗，我們的小組會持續學習並持續更新我們的服務和應用程式來提供符合業界嚴格相容性標準的安全雲端生產力服務。Microsoft 的政府雲端服務 (包括 Office 365 美國政府版) 符合美國聯邦風險與授權管理計劃 (FedRAMP) 的嚴苛需求，讓美國聯邦政府機構能受益於 Microsoft Cloud 的節省成本及嚴格的安全性。
 
 本文包含當您工作以符合 NIST 800-53 需求時可以遵循的優先行動計畫。此行動計畫是與 Protiviti 一同開發，該公司是 Microsoft 合作夥伴，專精於法規遵循。深入了解如何藉由參加以下研討會，在 Microsoft Ignite 使用這個行動計畫：[規劃您的 Microsoft 365 合規性路徑和資訊保護策略](https://myignite.techcommunity.microsoft.com/sessions/65720?source=sessions) (英文)，由 Maithili Dandige (Microsoft) 和 Antonio Maio (Protiviti) 主講。
 
-
 ## <a name="action-plan-outcomes"></a>行動計畫結果
-這些建議橫跨有邏輯順序的三個階段，具有下列結果。 
+
+這些建議橫跨有邏輯順序的三個階段，具有下列結果： 
 
 |||
 |:-----|:-----|
 |**階段**|**結果**|
 |30 天|•   了解您的 NIST 800-53 需求，並且考慮與 Microsoft 諮詢合作夥伴配合。<br>•   學習並了解 Microsoft 365 內建的深度防禦策略。  <br>•   保護使用者和系統管理員的 Office 365 存取權限。 <br>•   確定所有系統的存取權都可根據貴組織的稽核與責任原則進行稽核。|
 |90 天|•   加強反惡意程式碼、修補和設定管理計劃。<br>•   使用 Microsoft 365 安全性功能來控制對環境的存取，以及保護組織資訊和資產。<br>•   使用內建的稽核功能來監視 Office 365 內的機密或風險活動。<br>•   針對電子郵件和 Office 文件中的連結和附件部署進階威脅防護。|
-|超過 90 天|•   使用 Microsoft 365 進階工具和資訊保護來實作裝置的進行中控制措施及公司資料保護。<br>•   在 Microsoft 365 及其他 Cloud 應用程式之間監視持續合規性。  <br>•   利用改良的威脅偵測和防護功能搭配進階的威脅分析為組織提供強大的層級式安全性策略。開發事件回應計劃以減少貴組織中遭入侵系統的影響。|
-
-
+|超過 90 天|•   使用 Microsoft 365 進階工具和資訊保護來實作裝置的進行中控制措施及公司資料保護。<br>•   在 Microsoft 365 及其他 Cloud 應用程式之間監視持續合規性。  <br>•   使用改良的威脅偵測和防護功能搭配進階的威脅分析為組織提供強大的層級式安全性策略。開發事件回應計劃以減少貴組織中遭入侵系統的影響。|
 
 ## <a name="30-days--powerful-quick-wins"></a>30 天 — 強力快速致勝
+
 這些工作可以快速地完成，並且對使用者的影響小。
 
 |||
@@ -52,8 +50,6 @@ Microsoft 被視為雲端安全性中的業界領導者。使用多年建置企�
 |保護使用者和系統管理員的 Office 365 存取權限。|• 建立[強化認證](https://docs.microsoft.com/azure/security/azure-ad-secure-steps#step-1---strengthen-your-credentials)來保護使用者帳戶認證。 <br> •  深入了解 Office 365 服務的[建議身分識別與裝置存取原則](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations) (機器翻譯)。<br> • 使用 [Office 365 系統管理角色](https://support.office.com/article/understanding-administrative-roles-52f29955-6a60-435f-aba9-eb69c898606a) (英文) 來實作角色型存取系統管理功能並啟用分開的管理責任。附註：Office 365 中許多系統管理員角色在 Exchange Online、SharePoint Online 和商務用 Skype Online 中有相對應的角色。區隔權限以確保單一系統管理員沒有高於所需的存取權。|
 |確定所有系統的存取權都可根據貴組織的稽核與責任原則進行稽核。|啟用 [Office 365 稽核記錄](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance) (機器翻譯) 和[信箱稽核](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing) (機器翻譯) (針對所有 Exchange 信箱)，以監視 Office 365 是否有潛在的惡意活動，並啟用資料外洩的鑑識調查分析。|
 |||
-
-
 
 ## <a name="90-days--enhanced-protections"></a>90 天 — 加強的保護 
 這些工作會需要較多時間規劃及實作。 
@@ -67,24 +63,20 @@ Microsoft 被視為雲端安全性中的業界領導者。使用多年建置企�
 |針對電子郵件和 Office 文件中的連結和附件部署進階威脅防護。|實作 [Office 365 進階威脅防護 (ATP)](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) (機器翻譯)，協助防範最常見的攻擊，包括網路釣魚電子郵件和包含惡意連結和附件的 Office 文件。|
 |||
 
-
 ## <a name="beyond-90-days--ongoing-security-data-governance-and-reporting"></a>超過 90 天 – 持續的安全性、資料控管及報告
-這些動作需要較長時間才能完成，並以上一個工作為基礎。  
 
+這些動作需要較長時間才能完成，並以上一個工作為基礎。  
 
 |||
 |:-----|:-----|
 |**適用範圍**|**工作**|
 |使用 Microsoft 365 進階工具和資訊保護來實作裝置的進行中控制措施及公司資料保護。|• 使用 [Microsoft Intune](https://docs.microsoft.com/intune/) 保護在行動裝置上儲存及存取的機密資料，並且確保對存取雲端服務使用符合公司規範的裝置。|
-|在 Microsoft 365 及其他 Cloud 應用程式之間監視持續合規性。|• 若要根據組織定義的原則和程序評估效能，請利用 [Microsoft 合規性管理員](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud?redirectSourcePath=%252fen-us%252farticle%252fuse-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services-429e686f-d8a6-455e-a2b6-3791d763f000) (英文) 持續執行組織資訊安全性原則及定期評估。<br>•   使用 [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)，以高階權限 (例如，特殊權限或系統管理員使用者) 控制及執行所有使用者與群組的定期檢閱。<br>• 部署及設定 [Privileged Access Management](https://docs.microsoft.com/office365/enterprise/privileged-access-management-in-office-365) (機器翻譯)，在 Office 365 中提供對於特殊權限系統管理工作更細微的存取控制。一旦啟用，使用者就必須要求 Just-In-Time 存取，透過高度限制範圍和時間的核准工作流程，完成提升權限的工作。<br>•   稽核[非擁有者信箱存取](https://docs.microsoft.com/Exchange/policy-and-compliance/non-owner-mailbox-access-reports) (機器翻譯) 以識別潛在的資訊外洩，以及主動檢閱所有 Exchange Online 信箱上的非擁有者存取。<br>•   使用 [Office 365 警示原則、資料外洩防護報告和 Microsoft Cloud App Security](https://docs.microsoft.com/Office365/SecurityCompliance/monitor-for-leaks-of-personal-data)，來監視貴組織的雲端應用程式使用方式，並且根據啟發學習法和使用者活動實作進階警示原則。<br>• 使用 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) 自動追蹤有風險的活動，以識別潛在惡意系統管理員、調查資料外洩，或確認是否符合要求的合規性。|
+|在 Microsoft 365 及其他 Cloud 應用程式之間監視持續合規性。|• 若要根據組織定義的原則和程序評估效能，請利用 [Microsoft 合規性管理員](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud?redirectSourcePath=%252fen-us%252farticle%252fuse-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services-429e686f-d8a6-455e-a2b6-3791d763f000) (英文) 持續執行組織資訊安全性原則及定期評估。<br>• 使用 [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)，以高階權限 (例如，特殊權限或系統管理員使用者) 控制及執行所有使用者和群組的定期檢閱。<br>• 部署和設定[特殊權限的存取管理](https://docs.microsoft.com/office365/enterprise/privileged-access-management-in-office-365) (機器翻譯)，對 Office 365 中特殊權限的系統管理工作提供細微的存取控制。  一旦啟用，使用者必須要求即時存取，透過範圍與時間高度受到限制的核准工作流程，完成提升權限和授與特殊權限的工作。<br>• 稽核[非擁有者信箱存取](https://docs.microsoft.com/Exchange/policy-and-compliance/non-owner-mailbox-access-reports) (機器翻譯) 以識別潛在的資訊外洩，以及主動檢閱所有 Exchange Online 信箱上的非擁有者存取。<br>•   使用 [Office 365 警示原則、資料外洩防護報告和 Microsoft Cloud App Security](https://docs.microsoft.com/Office365/SecurityCompliance/monitor-for-leaks-of-personal-data)，來監視貴組織的雲端應用程式使用方式，並且根據啟發學習法和使用者活動實作進階警示原則。<br>• 使用 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) 自動追蹤有風險的活動，以識別潛在惡意系統管理員、調查資料外洩，或確認是否符合要求的合規性。|
 |利用改良的威脅偵測和防護功能搭配進階的威脅分析為組織提供強大的層級式安全性策略。開發事件回應計劃以減少貴組織中遭入侵系統的影響。|• 部署及設定 [Windows 進階威脅分析](https://docs.microsoft.com/advanced-threat-analytics/)以運用豐富的分析和報告，來深入解析貴組織中的哪些使用者是攻擊目標，以及所利用的網路攻擊方法。<br>•    利用 [Office 365 進階威脅防護報告和分析](https://docs.microsoft.com/office365/securitycompliance/view-reports-for-atp) (機器翻譯) 透過在貴組織內自動偵測到的惡意內容及惡意電子郵件的深入見解來分析威脅。利用內建報告與訊息追蹤功能來調查因未知病毒或惡意程式碼而遭到封鎖的電子郵件訊息。<br>•    使用 [Office 365 威脅情報](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) (機器翻譯) 來彙總各種來源的見解和資訊，以取得您雲端安全性情況的完整檢視。<br>•    [整合 Office 365 威脅情報和 Windows Defender 進階威脅防護](https://docs.microsoft.com/office365/securitycompliance/integrate-office-365-ti-with-wdatp) (機器翻譯) 以快速了解使用者的裝置在調查 Office 365 中的威脅時是否處於風險。<br>•   使用 [Office 365 攻擊模擬器](https://docs.microsoft.com/office365/securitycompliance/attack-simulator) (機器翻譯) 模擬在 Office 365 環境內常見的攻擊手法。檢閱攻擊模擬中的結果以找出使用者的訓練機會，並驗證貴組織的事件回應程序。<br>•    設定[安全性或合規性中心內的權限](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center) (機器翻譯)，以確保監視與稽核資料的存取權僅限於核准的使用者，且與組織的事件回應措施整合。|
 |||
-
 
 ## <a name="learn-more"></a>深入了解
 
 深入了解 [Microsoft 和 NIST 網路安全架構 (CSF)](https://www.microsoft.com/trustcenter/compliance/NIST_CSF) (機器翻譯)，包括 NIST 800-53。
 
 [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
-
-
