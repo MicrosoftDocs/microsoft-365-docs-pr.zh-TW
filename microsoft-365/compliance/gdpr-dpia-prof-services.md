@@ -3,20 +3,20 @@ title: 適用於使用 Microsoft 專業服務之資料控制者的指引
 description: 本文件為資料控制者提供專業服務相關資訊，協助他們判斷是否需要 DPIA，以及應包含哪些詳細資料。
 keywords: DPIA、Microsoft 專業服務、Microsoft 365 文件、GDPR
 robots: NOINDEX,NOFOLLOW
-author: herviicban
 ms.localizationpriority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: d9dd822e7e9ef7a93a41c056fc7bc014274ad190
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 01d42a7b8354575ac9b2316064aa9a33affbc441
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285532"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431794"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-professional-services"></a>資料保護影響評估：適用於使用 Microsoft 專業服務之資料控制者的指引
 
@@ -32,18 +32,18 @@ Microsoft 專業服務恪遵一般資料保護規定 (GDPR) 下的義務。本�
 
 本文件旨在提供資料控制者有關專業服務的資訊，協助他們判斷是否需要 DPIA，以及若需要，應包含哪些詳細資料。
 
-## <a name="part-1--determining-whether-a-dpia-is-needed"></a>第 1 部分 – 判斷是否需要 DPIA
+## <a name="part-1--determining-whether-a-dpia-is-needed"></a>第 1 部分 - 判斷是否需要 DPIA
 
 GDPR 第 35 條規定，「如果某種處理，特別是使用新技術，並考慮到處理的性質、範圍、背景和目的，可能會對自然人的權利和自由造成高度風險」，資料控制者需要建立資料保護影響評估。它進一步闡述會發生這類高風險的特定因素，如下表所述。判斷是否需要 DPIA 時，資料控制者應根據控制者的特定專業服務實作和使用，考慮這些因素，以及任何其他相關因素。
 
-***表格 1 - 風險因素和相關資訊***
+***表 1 - 風險因素和相關資訊***
 
 <!--start table here NO HEADER -->
 
 |||
 |:-----|:-----|
 |**風險因素**|**專業服務的相關資訊**|
-|基於自動化處理對自然人的個人方面進行系統和廣泛的評估，包括概況分析，以及對自然人產生法律效果的決定或對自然人產生同樣重大影響的決定；|專業服務會執行特定常式或自動化處理資料，例如協助修正支援 (例如在客戶的電腦中斷時協助他們)、帳戶遷移及系統弱點分析。專業服務解決方案 (排除以下附註涵蓋的客戶開發) 不適用於執行會對個人產生法規或類似重大影響之決策的處理。|
+|基於自動化處理對自然人的個人方面進行系統和廣泛的評估，包括概況分析，以及對自然人產生法律效果的決定或對自然人產生同樣重大影響的決定；|專業服務會執行某些例行或自動化的資料處理，例如中斷/修正支援 (例如在客戶的電腦中斷時協助客戶)、帳戶遷移及系統弱點分析。 專業服務解決方案 (排除以下附註涵蓋的客戶開發) 不適用於執行會對個人產生法規或類似重大影響之決策的處理。|
 |大規模處理[^1]特殊類別的資料 (揭露種族或民族血統、政治傾向、宗教或哲學信仰、或貿易同盟會員資格的個人資料，用於唯一識別自然人的基因資料、計量生物學資料，有關健康的資料或有關自然人性生活或性向的資料)，或與刑事定罪和犯罪行為有關的個人資料；|專業服務不適用於在需要處理個人資料特殊類別的工作中利用，排除以下附註涵蓋的客戶開發。<p>不過，資料控制者可以使用專業服務諮詢解決方案來處理資料的列舉特殊類別。例如，專業服務提供醫療保健產業資料庫開發，可以讓資料控制者用來處理與健康狀況相關聯的個人資料。控制者要負責評估並適當限制或記載這個使用方式。</p>|
 | 大規模有系統地監視可公開進入的地區|專業服務不適用於在需要或促進此類監視的工作中利用，排除以下附註涵蓋的客戶開發。<p>如果資料控制者使用專業服務來開發此類型系統，或使用 IT 系統來處理透過此類監視所收集到的資料，則資料控制者的責任如下所述。</p>|
 |||
@@ -52,11 +52,11 @@ GDPR 第 35 條規定，「如果某種處理，特別是使用新技術，並�
   
 [自訂開發附註] 專業服務提供各式各樣的諮詢解決方案。資料控制者可能會要求解決方案，而這個解決方案依據上述準則，是高風險解決方案。例如，資料控制者可能會要求專業服務建立解決方案以開發商業智慧引擎，來進行雇用決策或信用申請，或者建立的解決方案牽涉到使用者追蹤、人工智慧 (AI)/分析的特殊使用，或處理個人資料的特殊類別。
 
-在參與初始，專業服務有評估和解決它被要求執行之高風險解決方案的處理程序。在此程序中，專業服務可能需要來自資料控制者對於 GDPR 規範 (例如合約條款) 的保證、開發 DPIA 的計劃，或其他準則 (例如同意作業指引)，視 GDPR 下資料處理者的需求。但是，無論 Microsoft 採取什麼動作，使用來自客戶資料處理者的輸入來開發 DPIA 都是資料控制者的責任。
+在參與初始，專業服務有評估和解決它被要求執行之高風險解決方案的處理程序。 在此程序中，專業服務可能需要來自資料控制者對於 GDPR 合規性 (例如合約條款) 的保證、開發 DPIA 的計劃，或其他準則 (例如同意作業指導方針)，如資料處理者依據 GDPR 所要求。 但是，無論 Microsoft 採取什麼動作，在適用時使用來自客戶資料處理者的意見來開發 DPIA，均為資料控制者的責任。
 
 ## <a name="part-2--contents-of-a-dpia"></a>第 2 部分：DPIA 的內容
 
-第 35 (7) 條規定「資料保護影響評估」對設想的處理和處理目的進行有系統的描述。完整的 DPIA 系統描述可能包含像是處理的資料類型、資料會保留多久、資料位置和傳輸目的地，以及哪些第三方可以存取資料。此外，DPIA 也必須包含：
+第 35(7) 條要求資料保護影響評估需指出處理的目的，以及構想處理程序之有系統的描述。 完整的 DPIA 系統描述可能包含像是處理的資料類型、資料會保留多久、資料位置和傳輸目的地，以及哪些第三方可以存取資料。 此外，DPIA 也必須包含：
 
 -   評估與目的有關的處理操作的必要性和比例性；
 
@@ -66,7 +66,7 @@ GDPR 第 35 條規定，「如果某種處理，特別是使用新技術，並�
 
 下表包含與每個要素相關的專業服務資訊。如同第 1 部分，資料控制者必須根據控制者的特定專業服務實作和使用，考慮下述的詳細資料，以及任何其他相關因素。
 
-***表格 2 - 相關專業服務之 DPIA 的要素***
+***表 2 - 相關專業服務之 DPIA 的要素***
 
 <!--start table here -->
 
@@ -76,18 +76,18 @@ GDPR 第 35 條規定，「如果某種處理，特別是使用新技術，並�
 |處理的目的|使用專業服務進行處理的目的取決於實作、設定及使用專業服務的控制者。<p>根據 [Microsoft 專業服務資料保護增訂版](http://aka.ms/professionalservicesdpa) (MPSDPA) (英文) 的規定，Microsoft 作為資料處理者，處理支援和諮詢資料僅為向我們的客戶 (資料控制者) 提供所要求的服務。Microsoft 不會將支援和諮詢資料或任何衍生的資料用於廣告或類似的商業用途。</p>|
 |使用專業服務進行處理的目的取決於實作、設定及使用專業服務的控制者。|根據 [Microsoft 專業服務資料保護增訂版](http://aka.ms/professionalservicesdpa) (MPSDPA) (英文) 的規定，Microsoft 作為資料處理者，處理支援和諮詢資料僅為向我們的客戶 (資料控制者) 提供所要求的服務。Microsoft 不會將支援和諮詢資料或任何衍生的資料用於廣告或類似的商業用途。|
 |處理的個人資料類別|支援和諮詢資料表示所有資料，包括由客戶或代表客戶 (或客戶授權 Microsoft 從線上服務取得) 透過參與 Microsoft 以取得專業服務或支援而向 Microsoft 提供的所有文字、聲音、視訊、影像檔或軟體。可能包含透過電話、交談、電子郵件或網頁表單所收集的資訊。資料包含問題描述、傳輸給 Microsoft 以解決支援問題的檔案、自動化疑難排解工具，或者在客戶許可下遠端存取客戶系統。<p>客戶資料和支援資料不包含客戶連絡人或帳單資料，例如訂閱資訊和付款資料，Microsoft 會利用其資料控制者身分 (本文件範疇外) 所具備的功能收集和處理這些資料。</p>|
-|資料保留|Microsoft 將會在客戶參與期間保留支援和諮詢資料，以及在參與結束之後視需要保留一段時間以確保服務的品質和持續性。舉例來說，在支援案例關閉之後，資料通常會保留一段時間以確保若問題重新出現與案例重新開啟時能夠參考資料。<p>當專業服務提供支援時，參與長度定義了支援案例關閉的時間。當專業服務提供諮詢服務時，參與長度通常是由工單定義。在其他案例中，參與長度是由商業關係的維護來定義的。在所有案例中，支援和諮詢資料是透過專業服務《資料主體權限指南》** 中所述的功能，依要求或根據客戶的指示進行刪除或傳回，而沒有延遲。</p>|
+|資料保留|Microsoft 將會在客戶參與期間保留支援和諮詢資料，以及在參與結束之後視需要保留一段時間，以確保服務的品質和持續性。 舉例來說，在支援案例關閉之後，資料通常會保留一段時間，以確保若問題重新出現與案例重新開啟時能夠參考資料。<p>當專業服務提供支援時，參與長度定義了支援案例關閉的時間。當專業服務提供諮詢服務時，參與長度通常是由工單定義。在其他案例中，參與長度是由商業關係的維護來定義的。在所有案例中，支援和諮詢資料是透過專業服務《資料主體權限指南》** 中所述的功能，依要求或根據客戶的指示進行刪除或傳回，而沒有延遲。</p>|
 |個人資料的位置和傳輸|由於專業服務的本質，包括必須提供全天候支援，所以資料會在全世界傳輸。Microsoft 運作所在的位置可以透過要求取得。針對諮詢服務，如果在工單內有協議，資料可以保留在國內。<p>針對來自歐洲經濟區和瑞士的個人資料，Microsoft 會確保個人資料傳輸給第三國或國際組織時受到 GDPR 第 46 條所述適當保護措施的保護。Microsoft 除了遵守處理者的「標準合約條款」以及其他定型化契約的承諾 (如 [MPSDPA](http://aka.ms/professionalservicesdpa)(英文) 中所述) 外，還通過了「歐盟-美國」和「瑞士-美國」隱私盾框架及其限定承諾的認證。|
 |與第三方共用資料|Microsoft 與充當我們子處理者的第三方共用資料，以支援客戶、技術支援、服務維護及其他操作等功能。接收 Microsoft 傳輸的支援和諮詢資料的所有轉包商，都會與 Microsoft 達成書面協議，提供的保護不低於 [MPSDPA](http://aka.ms/professionalservicesdpa) (英文) 中的資料保護條款。所有共用支援和諮詢資料的第三方子處理者都納入 [Microsoft 商業支援承包商清單](http://aka.ms/servicesapprovedsuppliers) (英文) 的 [MPSDPA](http://aka.ms/professionalservicesdpa) 中。<p>除非法律要求，否則 Microsoft 不會向執法機關揭露支援和諮詢資料。如果執法機關聯繫 Microsoft 提出支援和諮詢資料的需求，Microsoft 會嘗試引導執法機關直接向客戶請求資料。如果被迫向執法機關揭露支援和諮詢資料，Microsoft 會立即通知客戶，並提供一份需求副本，除非法律禁止這樣做。<p>收到其他第三方要求支援和諮詢資料時，Microsoft 會立即通知客戶，除非法律禁止。除非法律規定，否則 Microsoft 會拒絕要求。如果要求有效，Microsoft 會指引第三方直接向客戶要求的資料。</p>|
 |資料主體權利|作為處理者運行時，Microsoft 向客戶 (資料控制者) 提供其資料主體的個人資料，並在 GDPR 下行使其權利履行資料主體請求的能力。我們以符合產品功能和處理者角色的方式進行操作。如果我們收到客戶的資料主體要求行使他們根據 GDPR 的一或多項權利，我們會引導資料主體直接向資料控制者提出要求。<p>「專業服務資料主體要求 GDPR 文件」** 提供客戶可以如何在專業服務中宣稱其資料主體權限義務的描述。</p>|
 評估與目的有關的處理操作的必要性和比例性|這類評估取決於控制者的需求和處理的目的。<p>關於 Microsoft 進行的處理，這種處理對於向資料控制者提供服務的目的是必要的且符合比例原則。Microsoft 在 [MPSDPA](http://aka.ms/professionalservicesdpa)(英文) 中做出此一承諾。</p>|
 |評估資料主體的權利和自由風險 |資料主體使用專業服務在權利和自由方面的主要風險將取決於資料控制者如何以及在何種情況下實作、設定及使用專業服務及「專業服務」所提供的任何解決方案。<p>但是，與任何服務一樣，服務中保存的個人資料可能存在未經授權的存取或無意揭露的風險。下面討論 Microsoft 為解決這些風險所採取的措施。</p>|
-| 旨在解決風險的措施，包括保障措施、安全措施和機制，以確保保護個人資料，並在考慮到資料主體和其他有關人員的權利和合法利益的情況下證明符合 GDPR。<!--is this the correct ending? -->|Microsoft 致力於幫助保護客戶資訊安全。根據 GDPR 第 32 條的規定，Microsoft 已經並將保持並遵循適當的技術和組織措施，旨在保護支援和諮詢資料，避免遭受意外、未經授權或非法的存取、洩漏、更改、遺失或銷毀。<p>此外，Microsoft 遵守適用於資料處理者的所有其他 GDPR 義務，包括但不限於提供資料保護影響評估和記錄保存。</p>|
+| 旨在解決風險的措施，包括保障措施、安全措施和機制，以確保保護個人資料，並在考慮到資料主體和其他有關人員的權利和合法利益的情況下證明符合 GDPR<!--is this the correct ending? -->|Microsoft 致力於協助保護客戶資訊的安全性。 根據 GDPR 第 32 條的規定，Microsoft 已經並將保持並遵循適當的技術和組織措施，旨在保護支援和諮詢資料，避免遭受意外、未經授權或非法的存取、洩漏、更改、遺失或銷毀。<p>此外，Microsoft 遵守適用於資料處理者的所有其他 GDPR 義務，包括但不限於提供資料保護影響評估和記錄保存。</p>|
 |||
 
 <!-- end of table -->
 
-[^1]: With respect to the criteria that the processing be on a “large scale,” Recital 91 of the GDPR clarifies that: “The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional or lawyer. In such cases, a data protection impact assessment should not be mandatory.”
+[^1]: With respect to the criteria that the processing be on a “large scale,” Recital 91 of the GDPR clarifies that: “The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional, or lawyer. In such cases, a data protection impact assessment should not be mandatory.”
 
 
 #### <a name="learn-more"></a>深入了解

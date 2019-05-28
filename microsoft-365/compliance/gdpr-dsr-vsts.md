@@ -12,12 +12,12 @@ manager: douge
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: b3711e0a68600152750d85e6287be735e204a92d
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 91ab1c1e23b2f4f9aab5c4327c29ac6cea52d080
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285091"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431774"
 ---
 # <a name="azure-devops-services-data-subject-requests-for-the-gdpr"></a>GDPR 的 Azure DevOps Services 資料主體要求
 
@@ -33,11 +33,11 @@ ms.locfileid: "32285091"
 
 ## <a name="personal-data-we-collect"></a>我們收集的個人資料
 
-Microsoft 會向使用者收集資料來運作及改善 Azure DevOps Services。Azure DevOps Services 會收集兩個類型的資料&mdash;客戶資料和系統產生的記錄。客戶資料包括 Azure DevOps Services 運作服務所需的使用者識別交易式和互動式資料。系統產生的記錄包含針對每個產品區域和功能所彙總的服務使用狀況資料。
+Microsoft 會向使用者收集資料來運作及改善 Azure DevOps Services。Azure DevOps Services 會收集兩個類型的資料：客戶資料和系統產生的記錄。客戶資料包括 Azure DevOps Services 運作服務所需的使用者識別交易式和互動式資料。系統產生的記錄包含針對每個產品區域和功能所彙總的服務使用狀況資料。
 
 ## <a name="delete-azure-devops-data"></a>刪除 Azure DevOps 資料
 
-若要刪除相關聯的 Azure DevOps Services 客戶資料，並將系統產生的記錄中找到的個人識別資料匿名化，第一個步驟是關閉您的 Azure Active Directory (AAD) 或 Microsoft 帳戶 (MSA)。會利用嚴格的整合性、追蹤功能與稽核規則，仰賴 Azure DevOps Services 作為記錄的系統。這些現有規範會影響我們刪除及保留 GDPR 的義務。關閉身分識別帳戶並不會修改、移除或變更與 Azure DevOps 組織中個人身分識別相關聯的成品和記錄。我們已確定在刪除整個 Azure DevOps 組織時，該帳戶中找到的所有相關聯個人識別資料和系統產生的記錄都會從我們的系統中移除 (在必要的 Azure DevOps 組織 30 天螢幕刪除期間結束後)。
+若要刪除相關聯的 Azure DevOps Services 客戶資料，並將系統產生的記錄中找到的個人識別資料匿名化，第一個步驟是關閉您的 Azure Active Directory (AAD) 或 Microsoft 帳戶 (MSA)。會利用嚴格的整合性、追蹤功能與稽核規則，仰賴 Azure DevOps Services 作為記錄的系統。這些現有規範會影響我們刪除及保留 GDPR 的義務。關閉身分識別帳戶並不會修改、移除或變更與 Azure DevOps 組織中個人身分識別相關聯的成品和記錄。我們已確定在刪除整個 Azure DevOps 組織時，該帳戶中找到的所有相關聯個人識別資料和系統產生的記錄都會從我們的系統中移除 (在必要的 Azure DevOps 組織 30 天虛刪除期間結束後)。
 
 ## <a name="export-azure-devops-data"></a>匯出 Azure DevOps 資料
 

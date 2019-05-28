@@ -10,12 +10,12 @@ ms.author: heicba
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: fdbd15e3b6cb3a5283bea9dc92ed89c7f2493f40
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 4fb7c3140a73e4f72673807bb99214ff6fc0f2bc
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278242"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431744"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr"></a>GDPR 的 Microsoft 支援服務與專業服務資料主體要求
 
@@ -57,11 +57,11 @@ GDPR 賦予人員 (在規範中稱為「資料主體」**) 權限，以管理由
 
 -   **控制者。** 自然人或法人、公家機關、公司或其他主體，不論單獨或與其他單位聯合，會判斷處理個人資料的用途以及方式，其中此類處理的用途以及方式的判斷是根據聯盟與成員國法律，控制者人選或提名控制者的特定準則可由聯盟與成員國法律提供。
 
--   **個人資料和資料主體。** 表示與已識別或可識別之自然人 (以下稱為「資料主體」) 相關的任何資訊；可識別的自然人是可以直接或間接識別的人員，尤其是藉由參照如名稱、身分證號碼、位置資料、線上識別碼，或特定於該自然人的身體、生理、基因、心理、經濟、文化或社會身份等一個或多個識別碼來識別。
+-   **個人資料和資料主體。** 表示與已識別或可識別之自然人 (以下稱為「資料主體」) 相關的任何資訊；可識別的自然人是可以直接或間接識別的人員，尤其是藉由參照如名稱、身分證號碼、位置資料、線上識別碼，或特定於該自然人的身體、生理、基因、心理、經濟、文化或社會身分等一個或多個識別碼來識別。
 
--   **處理者。** 代表控制者處理個人資料的自然人或法人、公家機構、公司或其他主體。
+-   **處理者。** 自然人或法人、公家機關、公司，或代表控制者處理個人資料的其他主體。
 
-#### <a name="additional-terms-and-definitions-that-may-helpful-in-understanding-this-guide"></a>有助於了解本指南的其他術語和定義
+#### <a name="additional-terms-and-definitions-that-may-be-helpful-in-understanding-this-guide"></a>有助於了解本指南的其他術語和定義
 
 -   **支援和查閱資料**是包括所有文字、音訊、視訊、影像檔或軟體的所有資料，由客戶或代表客戶 (或客戶授權 Microsoft 以從線上服務取得) 提供給 Microsoft，透過與 Microsoft 的約定以取得支援或專業服務。若要釐清，這不包括 Microsoft 是資料控制者時收集的資料，包括客戶連絡人資料。
 
@@ -150,7 +150,7 @@ Jane 是企業客戶 Contoso 的員工，Contoso 先前已授與她 Dynamics 365
 
 選項 A：跨 Microsoft 支援服務客戶 DSR**。將 DSR 套用於 Microsoft 支援環境中所有客戶的支援資料。若要這麼做，客戶可以要求 Microsoft 將 DSR 套用於收集的所有支援資料。
 
-選項 B：特定客戶約定。** 使用線上系統檢閱工單，然後找出特定的約定，其中包含相關的個人資料並向 Microsoft 報告。如果客戶無法搜尋約定 (工單)，Microsoft 會嘗試提供協助以執行搜尋。
+*選項 B - 特定客戶約定。* 使用線上系統檢閱工單，然後找出特定的約定，其中包含相關的個人資料並向 Microsoft 報告。如果客戶無法搜尋約定 (工單)，Microsoft 會嘗試提供協助以執行搜尋。
 
 **識別出約定之後，要求將 DSR 套用於記錄的特定部分，或 Microsoft 中與該約定相關的所有項目。 **
 
@@ -198,9 +198,9 @@ Microsoft 的所有資料都有套用保留期與刪除原則，這些會根據�
 
 若客戶要求跨支援系統刪除資料主體的個人資料，可透過 TAM 進行或在 SMC 或對等系統中填寫支援要求 (SR)。您必須** 指出此要求是協助您在 GDPR 下的 DSR。
 
-選項 A：跨 Microsoft 支援服務客戶 DSR**。針對跨系統 DSR，客戶必須提供 Microsoft 需要的個人資料，以識別所需資料 (例如電子郵件地址、電話號碼)。Microsoft 不會建立相互關聯或研究記錄，而僅會在客戶所提供的識別項上直接進行搜尋。找到資料時，Microsoft 就會刪除所有約定和所有相關資料。**重要注意事項：** 這可能會導致客戶組織的重要歷程記錄遺失。
+*選項 A - 跨 Microsoft 支援服務客戶 DSR*。針對跨系統 DSR，客戶必須提供 Microsoft 需要的個人資料，以識別所需資料 (例如電子郵件地址、電話號碼)。Microsoft 不會建立相互關聯或研究記錄，而僅會在客戶所提供的識別項上直接進行搜尋。找到資料時，Microsoft 就會刪除所有約定和所有相關資料。**重要注意事項：** 這可能會導致客戶組織的重要歷程記錄遺失。
 
-選項 B：特定客戶約定**。對於客戶找出並想刪除的特定約定，請勿刪除 SMC 的工單。這會導致存在於記錄檔和下游系統中的個人資料無法在所需時間範圍內刪除。相反地，找出必須刪除的工單或工單內的個人資料，並連絡 Microsoft 支援服務，以協助您刪除資料。
+*選項 B：特定客戶約定。* 對於客戶找出並想刪除的特定約定，請勿刪除 SMC 的工單。這會導致存在於記錄檔和下游系統中的個人資料無法在所需時間範圍內刪除。相反地，找出必須刪除的工單或工單內的個人資料，並連絡 Microsoft 支援服務，以協助您刪除資料。
 
 ### <a name="microsoft-support-data-transfer-and-management-tool-dtm-instructions"></a>Microsoft 支援服務資料傳輸和管理工具 (DTM) 指示
 
@@ -256,7 +256,7 @@ Microsoft 是與 FastTrack 小組合作的客戶連絡人資料控制者。如�
 
 對於 FastTrack 移轉服務而言，Microsoft 是資料處理者。根據我們的 FastTrack 額外隱私權揭露聲明，所有移轉中的資料都會被都視為「轉換資料」。如果您的組織忙於處理 FastTrack 移轉專案時，您需要執行 DSR，則必須特別謹慎。
   
-如果使用者的資料正透過 FastTrack 移轉系統處理時，您需要處理任何存取權、修正或匯出 DSR 要求，客戶就有責任透過使用者資料儲存所在的現有來源系統來滿足這類 DSR。一旦使用者的移轉完成且資料已移轉到目的地 Microsoft cloud 服務後，就會套用 Microsoft 針對客戶如何使用 Microsoft 產品、服務及系統管理工具來找出並處理個人資料，進而回應資料主體要求所提供的指引。若要檢視此指引，請參閱 [GDPR 資料主體要求](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests)。 
+如果使用者的資料正透過 FastTrack 移轉系統處理時，您需要處理任何存取權、修正或匯出 DSR 要求，客戶就有責任透過使用者資料儲存所在的現有來源系統來滿足這類 DSR。一旦使用者的移轉完成且資料已移轉到目的地 Microsoft 雲端服務後，就會套用 Microsoft 針對客戶如何使用 Microsoft 產品、服務及系統管理工具來找出並處理個人資料，進而回應資料主體要求所提供的指引。若要檢視此指引，請參閱 [GDPR 資料主體要求](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests)。 
 
 如果您的組織忙於處理進行中的 FastTrack 移轉專案時，您需要刪除 Office 365 使用者帳戶以回應 DSR 刪除要求，您應該知道移轉系統可能會在使用者完成移轉後，保留移轉資料複本一段時間，而刪除 Office 365 使用者帳戶並不會自動刪除 FastTrack 移轉系統中儲存的這類使用者移轉資料。如果您希望 Microsoft FastTrack 小組刪除使用者移轉資料，您可以[提交要求](https://go.microsoft.com/fwlink/?linkid=874544)。在一般商務過程中，Microsoft FastTrack 會在貴組織的移轉完成後，刪除所有的資料複本。
 

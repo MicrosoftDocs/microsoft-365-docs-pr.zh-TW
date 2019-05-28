@@ -2,21 +2,21 @@
 title: GDPR 的 Dynamics 365 資料主體要求
 description: 本指南會介紹如何使用 Microsoft 產品、服務及系統管理工具，協助我們的控制者客戶找出並處理個人資料，以回應 DSR 要求。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/30/2019
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 4e1597e658b0ac6de0c4805b77660e6c47424aa2
-ms.sourcegitcommit: 1034f54472de62897f2e8f12459db8043ac8443b
+ms.openlocfilehash: 3c394df956801beed63b5e31c4a1579bf5324eba
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33497735"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431754"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>GDPR 的 Dynamics 365 資料主體要求
 
@@ -24,17 +24,17 @@ ms.locfileid: "33497735"
 
 本指南會討論如何使用 Microsoft 產品、服務及系統管理工具，協助我們的控制者客戶找出個人資料並對其採取動作，以回應 DSR；尤其是包括如何找出、存取與處理在 Microsoft 雲端中常駐的個人資料。以下是本指南中所述程序的快速概觀：
 
-1. ***探索***—使用搜尋和探索工具，讓您更輕鬆地找到可能是 DSR 主體的客戶資料。一旦收集了潛在回應文件，您就可以執行下列步驟中所述的一或多個 DSR 動作以回應要求。或者，您也可能判斷該要求不符合貴組織回應 DSR 的指導方針。
+1. ***探索 - 使用搜尋和探索工具，讓您更輕鬆地找到可能是 DSR 要求主體的客戶資料。一旦收集了潛在回應文件，您就可以執行下列步驟中所述的一或多個 DSR 動作以回應要求。或者，您也可能判斷該要求不符合貴組織回應 DSR 要求的指導方針。
 
-2. ***存取***—擷取在 Microsoft 雲端中常駐的個人資料，若有要求，請製作可供資料主體使用的副本。
+2. ***存取 - 擷取在 Microsoft 雲端中常駐的個人資料，若有要求，請製作可供資料主體使用的副本。
 
-3. ***修正***—在適用情況下，對個人資料進行變更或實行其他要求的動作。
+3. ***修正 - 在適用情況下，對個人資料進行變更或實行其他要求的動作。
 
-4.  ***限制***—透過移除各種不同 Azure 服務的授權，或在可行處關閉所需的服務，對個人資料的處理設下限制。您也可以從 Microsoft 雲端中移除資料，並在內部部署或其他位置保留資料。
+4.  ***限制 - 透過移除各種不同線上服務的授權，或在可行處關閉所需的服務，對個人資料的處理設下限制。您也可以從 Microsoft 雲端中移除資料，並在內部部署或其他位置保留資料。
 
-5. ***刪除***—將會永久移除 Microsoft 雲端中常駐的個人資料。
+5. ***刪除 - 將會永久移除 Microsoft 雲端中常駐的個人資料。
 
-6. ***匯出***—將個人資料的電子副本 (以機器可讀取的格式) 提供給資料主體。
+6. ***匯出 - 將個人資料的電子副本 (以機器可讀取的格式) 提供給資料主體。
 
 本指南中的每一節概述資料控制者組織可以採取的技術程序，以回應對 Microsoft 雲端中個人資料的 DSR 要求
 
@@ -42,15 +42,15 @@ ms.locfileid: "33497735"
 
 以下提供與本指南相關的詞彙定義：
 
-- <em>控制者</em> – 自然人或法人、公家機關、公司或其他主體，不論單獨或與其他單位聯合，會判斷處理個人資料的用途以及方式，其中此類處理的用途以及方式的判斷是根據聯盟與成員國法律，控制者人選或提名控制者的特定準則可由聯盟與成員國法律提供。
+- <em>控制者 - 自然人或法人、公家機關、公司或其他主體，不論單獨或與其他單位聯合，會判斷處理個人資料的用途以及方式，其中此類處理的用途以及方式的判斷是根據聯盟與成員國法律，控制者人選或提名控制者的特定準則可由聯盟與成員國法律提供。
 
-- ** 個人資料和資料主體<em></em> – 表示與已識別或可識別之自然人 (以下稱為「資料主體」) 相關的任何資訊；可識別的自然人是可以直接或間接識別的人員，尤其是藉由參照如名稱、身分證號碼、位置資料、線上識別碼，或特定於該自然人的身體、生理、基因、心理、經濟、文化或社會身份等一個或多個識別碼來識別。
+- *個人資料*和<em>資料主體 - 表示與已識別或可識別之自然人 (以下稱為「資料主體」) 相關的任何資訊；可識別的自然人是可以直接或間接識別的人員，尤其是藉由參照如名稱、身分證號碼、位置資料、線上識別碼，或特定於該自然人的身體、生理、基因、心理、經濟、文化或社會身分等一個或多個識別碼來識別。
 
-- <em>處理者</em> – 代表控制者處理個人資料的自然人或法人、公家機構、公司或其他主體。
+- <em>處理者 - 自然人或法人、公家機關、公司，或代表控制者處理個人資料的其他主體。
 
 - *客戶資料* - 由客戶本身或客戶代表，透過企業服務所提供給 Microsoft 的所有資料，包括所有文字、音訊、視訊或影像檔案和軟體 (如 Microsoft 線上服務條款中所定義)。
 
-- *系統*-*產生的記錄檔* - Microsoft 所產生的記錄檔及相關資料，可協助 Microsoft 向使用者提供企業服務。系統產生的記錄檔主要包含經過假名化處理的資料 (例如唯一識別碼，通常是由系統所產生的號碼，無法單獨用來識別個人，但可用來向使用者提供企業服務)。系統產生的記錄檔也可能包含使用者的識別資訊 (例如使用者名稱)。  
+- *系統**產生的記錄檔 - Microsoft 所產生的記錄檔及相關資料，可協助 Microsoft 向使用者提供企業服務。系統產生的記錄檔主要包含經過假名化處理的資料 (例如唯一識別碼，通常是由系統所產生的號碼，無法單獨用來識別個人，但可用來向使用者提供企業服務)。系統產生的記錄檔也可能包含使用者的識別資訊 (例如使用者名稱)。  
 
 ### <a name="how-this-guide-can-help-you-meet-your-controller-responsibilities"></a>本指南如何協助您符合您的控制者責任
 
@@ -165,7 +165,7 @@ Microsoft 提供有助於回應資料主體權利要求的功能，並可用以�
 
 若要快速大量編輯 Business Central 的多筆記錄，您可以使用 [Business Central Excel 增益集](https://docs.microsoft.com/zh-TW/dynamics365/business-central/finance-analyze-excel#the--excel-add-in)將清單匯出至 Excel 來修正多筆記錄，然後再從 Business Central 中的 Excel 發佈已修改的資料。如需詳細資訊，請參閱[將您的商務資料匯出至 Excel](https://docs.microsoft.com/zh-TW/dynamics365/business-central/about-export-data)。
 
-- 您可以手動編輯內含目標個人資料的資料元素，來變更在任何欄位中所儲存的客戶資料 (例如客戶卡中客戶的相關資訊)。 如需詳細資訊，請參閱[輸入資料](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data)。
+- 您可以手動編輯內含目標個人資料的資料元素，來變更在任何欄位中所儲存的客戶資料 (例如客戶卡片中客戶的相關資訊)。 如需詳細資訊，請參閱[輸入資料](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data)。
 
 #### <a name="brief-note-about-modifying-entries-in-business-transactions"></a>修改商務交易中項目的簡短備註
 交易記錄 (例如一般、客戶和稅務會計項目) 是企業資源規劃系統不可或缺的部分。屬於財務或其他交易的個人資料會維持「現況」以遵守財務法規 (例如，稅法)、防止詐騙 (例如安全性稽核記錄)，或遵守產業認證。因此，Dynamics 365 for Finance and Operations 和 Dynamics 365 Business Central 會限制對這類記錄中資料的修改。
@@ -174,7 +174,7 @@ Microsoft 提供有助於回應資料主體權利要求的功能，並可用以�
 
 ### <a name="restricting-the-processing-of-customer-data"></a>限制處理客戶資料
 
-當您從資料主體收到限制對客戶資料處理的要求時，可輕易從線上服務擷取受影響的客戶資料，並將其儲存在個別容器 (例如，內部部署儲存空間或具有資料隔離功能的個別 Web 服務中) 中，與任何雲端應用程式所提供的處理功能隔離。
+當您從資料主體收到限制對客戶資料處理的要求時，可輕易從線上服務擷取受影響的客戶資料，並將其儲存在個別容器 (即，內部部署儲存空間或具有資料隔離功能的個別 Web 服務) 中，與任何雲端應用程式所提供的處理功能隔離。
 
 替代機制，例如資料處理封鎖是由 ***Dynamics 365 Business Central*** 提供，在其中，使用者能夠封鎖特定資料主體的記錄。 如需詳細資訊，請參閱[限制資料主體的資料處理](https://docs.microsoft.com/dynamics365/business-central/admin-responding-to-requests-about-personal-data#restrict-data-processing-for-a-data-subject)。 當記錄標示為已封鎖時，Dynamics 365 Business Central 將不再繼續處理該資料主體的客戶資料。 您無法建立使用封鎖的記錄的新交易。比方說，當客戶或銷售人員遭封鎖時，您無法為客戶建立新發票。
 
@@ -393,7 +393,7 @@ Microsoft 也讓您能夠存取、匯出及刪除系統產生的記錄檔，根�
 
 建立新要求後，該要求會列在 [資料記錄檔匯出] **** 頁面上，您可在其中追蹤其狀態。要求完成後，您可以按一下連結來存取系統產生的記錄檔，系統會在該要求建立後 30 天內，將此記錄檔匯出至貴組織的 Azure 儲存位置。系統將以常見、機器可讀取的檔案格式 (例如 JSON 或 XML) 來儲存資料。如果您沒有 Azure 帳戶和 Azure 儲存位置，就必須為貴組織建立 Azure 帳戶和/或 Azure 儲存位置，讓「資料記錄檔匯出」工具可以匯出系統產生的記錄檔。
 
-Azure 可支援這點；我們讓貴組織能以原生 JSON 格式，將資料匯出到您指定的Azure 儲存體容器。[Microsoft Azure 儲存體 – Blob 儲存體簡介](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage)一文。
+Azure 可支援這點；我們讓貴組織能以原生 JSON 格式，將資料匯出到您指定的Azure 儲存體容器。[Microsoft Azure 儲存體 - Blob 儲存體簡介](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage)一文。
 
 **重要**：您必須是租用戶系統管理員，才能從租用戶中匯出使用者資料。
 
@@ -435,7 +435,8 @@ Azure 可支援這點；我們讓貴組織能以原生 JSON 格式，將資料�
 </tbody>
 </table>
 
-[附註] 基於安全性和稽核理由，部分功能不允許匯出或刪除含個人資訊之系統產生的記錄檔，以維持這些資訊的完整性。
+> [!Note]
+> 基於安全性和稽核理由，部分功能不允許匯出或刪除含個人資訊的系統所產生記錄，以維持這些資訊的完整性。
 
 ### <a name="deleting-system-generated-logs"></a>刪除系統產生的記錄
 若要透過存取要求來刪除系統產生的記錄檔，您必須將使用者從該服務中移除，並永久刪除其 Azure Active Directory 帳戶。如需永久刪除使用者的相關指示，請參閱本指南中[刪除使用者](https://microsoft-my.sharepoint.com/personal/kated_microsoft_com/Documents/DSR%20Guide%20v4%20-(newly%20created%20for%20O365%20only).docx#_Deleting_a_user)一節。請務必注意，一旦開始永久刪除使用者帳戶即無法復原。
@@ -444,4 +445,4 @@ Azure 可支援這點；我們讓貴組織能以原生 JSON 格式，將資料�
 
 #### <a name="learn-more"></a>深入了解
 
-[Microsoft 信任中心](https://www.microsoft.com/zh-TW/TrustCenter/Privacy/gdpr/default.aspx)
+[Microsoft 信任中心](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)

@@ -2,21 +2,21 @@
 title: GDPR 規定的 Office 365 資料外洩通知
 description: Microsoft 如何防止個人資料外洩，以及若發生外洩 Microsoft 會如何回應和通知您。
 keywords: Office 365、Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 6b91b489d8d69faffa0852c3e352a6b2e9e9d496
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 69c626d874e0afd59e1447c494ec1b84c7a4cb7a
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286363"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431864"
 ---
 # <a name="office-365-breach-notification-under-the-gdpr"></a>GDPR 規定的 Office 365 資料外洩通知
 
@@ -36,7 +36,7 @@ Microsoft 認可資料控制者要負責進行風險評估並判斷資料外洩�
 
 以下是一些我們在此方面的投資說明：
 
--   **存取控制系統：** Office 365 會持續維持「無常設存取」原則，亦即，工程師只有在回應需要提高權限的特定事件而被明確授與存取權時，才會擁有服務的存取權。無論何時授與存取權，皆須遵循最低權限原則：針對特定要求授與的權限，僅允許服務執行該要求的最小一組必要動作。為了做到這一點，Office 365 會持續嚴格地區隔「提高權限角色」，每個角色僅允許採取預先定義的特定動作。不同於其他角色，「存取客戶資料」角色通常用來管理服務，並且會在核准前進行最嚴格的檢查。綜合來看，這些在存取控制上的投資，會大幅降低工程師在 Office 365 中不當存取客戶資料的可能性。
+-   **存取控制系統。** Office 365 會持續維持「無常設存取」原則，亦即，工程師只有在回應需要提高權限的特定事件而被明確授與存取權時，才會擁有服務的存取權。無論何時授與存取權，皆須遵循最低權限原則：針對特定要求授與的權限，僅允許服務執行該要求的最小一組必要動作。為了做到這一點，Office 365 會持續嚴格地區隔「提高權限角色」，每個角色僅允許採取預先定義的特定動作。不同於其他角色，「存取客戶資料」角色通常用來管理服務，並且會在核准前進行最嚴格的檢查。綜合來看，這些在存取控制上的投資，會大幅降低工程師在 Office 365 中不當存取客戶資料的可能性。
 
 -   **安全性監視系統與自動化：** Office 365 會持續維護穩固的即時安全性監視系統。在其他問題上，若有人試圖非法存取客戶資料，或試圖非法將我們服務的資料轉送出去時，這些系統會發出警告。對於與上述存取控制相關的部分，我們的安全性監視系統會詳細記錄提高權限的要求，及針對指定提高權限要求採取的動作，並維護這些記錄。Office 365 也會持續維護自動解決問題的能力，以針對我們偵測到的問題，在回應時自動採取動作來降低威脅，並指定團隊來回應無法自動解決的警訊。為了驗證我們的安全性監視系統，Office 365 會定期進行紅隊演練 (red-team exercises)，也就是內部滲透測試團隊會針對實際環境模擬攻擊者的行為。這些演練可讓我們的安全性監視和回應能力持續進化。
 

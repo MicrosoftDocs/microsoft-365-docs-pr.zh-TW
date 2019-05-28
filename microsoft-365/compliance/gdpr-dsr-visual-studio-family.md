@@ -13,12 +13,12 @@ manager: pchapman
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b07cefa4a850d5de7c858f180c8f7688fd0a6d7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 744935cb41e1521970e6fac05493129eaaf7910d
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286921"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431544"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>GDPR 的 Visual Studio 系列資料主體要求
 
@@ -72,8 +72,8 @@ Visual Studio 2015 及更新版本、Visual Studio for Mac 和 Visual Studio Cod
 
 控制者可以透過兩種方法之一 (取決於他們 Visual Studio 系列產品或 Microsoft 擴充功能的註冊方式)，來管理從其資料主體收集到的客戶資料和系統所產生記錄。在某些情況下，必須同時使用這兩種方法。這兩種方法都可讓控制者下載一份受該方法管理的活動歷程記錄。關閉 AAD 或 MSA 帳戶會刪除相關聯的 Visual Studio 客戶資料，並將與這些產品相關的系統所產生記錄中的個人識別資料進行匿名。已匿名之系統所產生記錄的保留時間不會超過 18 個月。
 
-- 使用 Azure 租用戶所支援帳戶&mdash;例如，與 Azure 訂閱相關聯的 AAD 帳戶或 MSA 帳戶&mdash;註冊 Visual Studio 系列產品的使用者可遵循 [GDPR 的 Azure 資料主體要求](gdpr-dsr-azure.md)中的指示。
-- 未使用 Azure 租用戶所支援帳戶&mdash;例如，許多使用 Microsoft 帳戶 (MSA) 的帳戶&mdash;註冊 Visual Studio 系列產品的使用者，可使用透過其 Microsoft 帳戶提供的 [Web 式 Microsoft 隱私權回應中心](https://aka.ms/userprivacysite)來檢視、控制及刪除繫結至其多項 Microsoft 服務中 Microsoft 帳戶的活動資料。在此案例中，使用者是自己個人資料的控制者。
+- 使用 Azure 租用戶所支援帳戶例如，與 Azure 訂閱相關聯的 AAD 帳戶或 MSA 帳戶註冊 Visual Studio 系列產品的使用者可遵循 [GDPR 的 Azure 資料主體要求](gdpr-dsr-azure.md)中的指示。
+- 未使用 Azure 租用戶所支援帳戶例如，許多使用 Microsoft 帳戶 (MSA) 的帳戶註冊 Visual Studio 系列產品的使用者，可使用透過其 Microsoft 帳戶提供的[ Web 式 Microsoft 隱私權回應中心](https://aka.ms/userprivacysite)來檢視、控制及刪除繫結至其多項 Microsoft 服務中 Microsoft 帳戶的活動資料。在此案例中，使用者是自己個人資料的控制者。
 
 > [!NOTE]
 > 當 MSA 帳戶擁有者刪除其帳戶時，所有與這些產品相關的個人識別資料都會加以刪除 (無論帳戶是否受 Azure 租用戶所支援)，且會將系統產生的記錄加以匿名。
@@ -104,7 +104,7 @@ Microsoft 會收集資料，以協助我們重現您使用 Visual Studio 系列�
 1. 登入[開發人員社群](https://developercommunity.visualstudio.com)。 從右上角按一下您的設定檔，然後選取 [設定檔和喜好設定]****。
 2. 按一下任一個 [設定檔]****、[通知]****、[活動]**** 和 [附件]**** 索引標籤來檢視提交至意見反應系統的資料。
    1. [設定檔]**** 是指您的[開發人員社群](https://developercommunity.visualstudio.com)設定檔，其中包含使用者名稱、電子郵件地址、關於等等。
-   2. [通知]**** 是控制您接收電子郵件通知的方式。
+   2. **通知是控制您接收電子郵件通知的方式。
    3. [活動]**** 會提供您已在使用中項目 (已張貼、已註解等) 和已執行活動的意見反應。
    4. [附件]**** 是您附件歷程記錄的清單，格式如 `FileName was attached to the problem "ProblemName" Tue, Apr 10, 18 2:27 PM`。
 

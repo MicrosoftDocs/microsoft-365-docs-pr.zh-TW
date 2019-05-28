@@ -2,27 +2,25 @@
 title: GDPR 規定的 Dynamics 365 和外洩通知
 description: Dynamics 365 如何防止個人資料外洩，以及若發生外洩 Microsoft 會如何回應和通知您。
 keywords: Dynamics 365、Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 3ee90c2fbe2684cebbd19376f44fc97d743515db
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 957fbe5713c248ebcac1a986248455c7d98b4935
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286383"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431874"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>GDPR 規定的 Dynamics 365 和外洩通知
 
-Dynamics 365 非常重視一般資料保護規定 (GDPR) 所規定之義務。Microsoft Dynamics 365 資料外洩
-
-Microsoft 不斷努力為 Dynamics 365 客戶提供高度安全的企業級服務。本節中的資訊提供 Microsoft Dynamics 365 如何保護客戶免於安全性事件/資料外洩的摘要，以及在回應和告知客戶時我們所遵循的程序。
+Dynamics 365 很認真看待其在一般資料保護規定 (GDPR) 下所需承擔的責任。 Microsoft 不斷努力為 Dynamics 365 客戶提供高度安全的企業級服務。 本節中的資訊提供 Microsoft Dynamics 365 如何保護客戶免於安全性事件/資料外洩的摘要，以及在回應和告知客戶時我們所遵循的程序。
 
 #### <a name="microsoft-dynamics-365-built-in-security-features"></a>Microsoft Dynamics 365 內建的安全性功能
 
@@ -128,7 +126,7 @@ Microsoft 會判斷功能性影響、復原能力和事件的資訊影響，來�
 
 Microsoft 會確認是否已成功遏制客戶和商業風險，並實施了矯正措施。如有需要，會進行緊急風險降低步驟，以解決與事件關聯的迫切安全性風險。
 
-Microsoft 也會完成資料外洩的內部檢討。在此過程中，會評估回應的充分程度和作業程序，並找出和實施「Microsoft 內部安全性原則和相關程序」所需的任何更新。資料外洩的內部檢討是客戶無法取得的極機密記錄。不過，我們可以將檢討摘要並納入客戶事件通知中。在 Dynamics 365 的例行稽核週期中，會向外部稽核者提供這些報告以供審查。
+Microsoft 也會完成資料外洩的內部檢討。 在此過程中，會評估回應的充分程度和作業程序，並找出和實施 Microsoft 內部安全性原則或相關程序所需的任何更新。 資料外洩的內部檢討是不提供給客戶的高度機密記錄。 但是，可將檢討節錄並包含在其他客戶事件的通知中。 在 Dynamics 365 的例行稽核週期中，會向外部稽核者提供這些報告以供審查。
 
 #### <a name="customer-notification"></a>客戶通知
 
