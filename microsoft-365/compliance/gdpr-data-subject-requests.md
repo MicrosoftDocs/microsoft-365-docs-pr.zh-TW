@@ -11,12 +11,12 @@ author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: ea8fb66cf826861eac312a02d0d7d3cfaf1cf65c
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 00fed2cde29f12bb7e2b91d28e223c09da8ae7a5
+ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431854"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34544930"
 ---
 # <a name="data-subject-requests-for-the-gdpr"></a>GDPR 的資料主體要求
 
@@ -36,4 +36,4 @@ ms.locfileid: "34431854"
 
 ## <a name="learn-more"></a>深入了解
 
-[Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
