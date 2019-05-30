@@ -10,28 +10,26 @@ author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 049d12f5e8cb738fc7f1d53f6d08c592c8c52c46
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 5d61c98290387563762c75d10c32476c35b9e9a4
+ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431815"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34544900"
 ---
-# <a name="data-protection-impact-assessments"></a><span data-ttu-id="83a46-104">資料保護影響評估</span><span class="sxs-lookup"><span data-stu-id="83a46-104">Data Protection Impact Assessments</span></span>
+# <a name="data-protection-impact-assessments"></a><span data-ttu-id="02e1b-104">資料保護影響評估</span><span class="sxs-lookup"><span data-stu-id="02e1b-104">Data Protection Impact Assessments</span></span>
 
-<span data-ttu-id="83a46-p101">在一般資料保護規定 (GDPR) 下，資料控制者若要進行「可能會對自然人的權利和自由造成高度風險」的處理作業，必須準備資料保護影響評估 (DPIA)。Microsoft Azure 或 Dynamics 365 本身不具有使用它的資料控制者應該建立 DPIA 的項目。然而，是否需要 DPIA，要視控制者「如何」\*\* 部署、設定、使用各產品的詳細資料和相關內容而定。</span><span class="sxs-lookup"><span data-stu-id="83a46-p101">Under the General Data Protection Regulation (GDPR), data controllers are required to prepare a Data Protection Impact Assessment (DPIA) for processing operations that are “likely to result in a high risk to the rights and freedoms of natural persons.” There is nothing inherent in Microsoft Azure or Dynamics 365 that would necessarily require the creation of a DPIA by a Data Controller using it. Rather, whether a DPIA is required will be dependent on the details and context of *how* the data controller deploys, configures each product.</span></span>
+<span data-ttu-id="02e1b-p101">在一般資料保護規定 (GDPR) 下，資料控制者若要進行「可能會對自然人的權利和自由造成高度風險」的處理作業，必須準備資料保護影響評估 (DPIA)。Microsoft Azure 或 Dynamics 365 本身不具有使用它的資料控制者應該建立 DPIA 的項目。然而，是否需要 DPIA，要視控制者「如何」\*\* 部署、設定、使用各產品的詳細資料和相關內容而定。</span><span class="sxs-lookup"><span data-stu-id="02e1b-p101">Under the General Data Protection Regulation (GDPR), data controllers are required to prepare a Data Protection Impact Assessment (DPIA) for processing operations that are “likely to result in a high risk to the rights and freedoms of natural persons.” There is nothing inherent in Microsoft Azure or Dynamics 365 that would necessarily require the creation of a DPIA by a Data Controller using it. Rather, whether a DPIA is required will be dependent on the details and context of *how* the data controller deploys, configures each product.</span></span>
 
-<span data-ttu-id="83a46-108">本文件旨在提供資料控制者資訊，協助他們判斷是否需要 DPIA，以及若需要，應包含哪些詳細資料。</span><span class="sxs-lookup"><span data-stu-id="83a46-108">The purpose of this document is to provide data controllers with information that will help them to determine whether a DPIA is needed and, if so, what details to include.</span></span>
+<span data-ttu-id="02e1b-108">本文件旨在提供資料控制者資訊，協助他們判斷是否需要 DPIA，以及若需要，應包含哪些詳細資料。</span><span class="sxs-lookup"><span data-stu-id="02e1b-108">The purpose of this document is to provide data controllers with information that will help them to determine whether a DPIA is needed and, if so, what details to include.</span></span>
 
-- [<span data-ttu-id="83a46-109">Office 365</span><span class="sxs-lookup"><span data-stu-id="83a46-109">Office 365</span></span>](gdpr-dpia-office365.md)
-- [<span data-ttu-id="83a46-110">Azure</span><span class="sxs-lookup"><span data-stu-id="83a46-110">Azure</span></span>](gdpr-dpia-azure.md)
-- [<span data-ttu-id="83a46-111">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="83a46-111">Dynamics 365</span></span>](gdpr-dpia-dynamics.md)
-- [<span data-ttu-id="83a46-112">Microsoft 支援和專業服務</span><span class="sxs-lookup"><span data-stu-id="83a46-112">Microsoft Support and Professional Services</span></span>](gdpr-dpia-prof-services.md)
+- [<span data-ttu-id="02e1b-109">Office 365</span><span class="sxs-lookup"><span data-stu-id="02e1b-109">Office 365</span></span>](gdpr-dpia-office365.md)
+- [<span data-ttu-id="02e1b-110">Azure</span><span class="sxs-lookup"><span data-stu-id="02e1b-110">Azure</span></span>](gdpr-dpia-azure.md)
+- [<span data-ttu-id="02e1b-111">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="02e1b-111">Dynamics 365</span></span>](gdpr-dpia-dynamics.md)
+- [<span data-ttu-id="02e1b-112">Microsoft 支援和專業服務</span><span class="sxs-lookup"><span data-stu-id="02e1b-112">Microsoft Support and Professional Services</span></span>](gdpr-dpia-prof-services.md)
 
-<span data-ttu-id="83a46-113">如需 Microsoft 資料保護的 GDPR 合規性詳細資訊，請參閱***服務信任入口網站***中的[合規性](https://servicetrust.microsoft.com/ComplianceManager)。</span><span class="sxs-lookup"><span data-stu-id="83a46-113">For more information about GDPR compliance Microsoft data protection, see [Compliance](https://servicetrust.microsoft.com/ComplianceManager) in the ***Service Trust Portal***.</span></span>
+<span data-ttu-id="02e1b-113">如需 Microsoft 資料保護的 GDPR 合規性詳細資訊，請參閱***服務信任入口網站***中的[合規性](https://servicetrust.microsoft.com/ComplianceManager)。</span><span class="sxs-lookup"><span data-stu-id="02e1b-113">For more information about GDPR compliance Microsoft data protection, see [Compliance](https://servicetrust.microsoft.com/ComplianceManager) in the ***Service Trust Portal***.</span></span>
 
-## <a name="learn-more"></a><span data-ttu-id="83a46-114">深入了解</span><span class="sxs-lookup"><span data-stu-id="83a46-114">Learn more</span></span>
+## <a name="learn-more"></a><span data-ttu-id="02e1b-114">深入了解</span><span class="sxs-lookup"><span data-stu-id="02e1b-114">Learn more</span></span>
 
-[<span data-ttu-id="83a46-115">Microsoft 信任中心</span><span class="sxs-lookup"><span data-stu-id="83a46-115">Microsoft Trust Center</span></span>](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
-
-
+- [<span data-ttu-id="02e1b-115">Microsoft 信任中心</span><span class="sxs-lookup"><span data-stu-id="02e1b-115">Microsoft Trust Center</span></span>](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
