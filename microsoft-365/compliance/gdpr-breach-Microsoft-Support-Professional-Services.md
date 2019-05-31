@@ -10,12 +10,12 @@ author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 8a0f0c5c173fbee6a865d2c9a7afb0f61b388507
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 0aa149a9a57fab310ffe1e5a631b37f66a833d9f
+ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431594"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34544880"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>GDPR 規定的 Microsoft 支援服務與專業服務以及外洩通知
 
@@ -25,11 +25,11 @@ Microsoft 專業服務包括一組多元化的技術結構設計師、工程師�
 
 Microsoft 專業服務的全球資料保護事件回應小組的魄力在於 (a) 運用嚴密的作業和程序來預防發生資料保護事件，(b) 在事件發生時以專業且有效率的方式進行管理，以及 (c) 透過定期事後剖析和方案改進，從這些資料保護事件中取得教訓。Microsoft 的專業服務資料保護事件回應小組的程序和結果已經由多項安全性與合規性稽核 (如 ISO/IEC 27001) 進行審查和證實。
 
-### <a name="data-protection-incident-response-overview"></a>資料保護事件回應概觀 
+## <a name="data-protection-incident-response-overview"></a>資料保護事件回應概觀 
 
 Microsoft 專業服務致力於保護其客戶並採取相當多的措施來預防發生資料保護事件，藉以維持客戶的信任感。專業服務組織中的資料保護事件是一個安全性缺口，會導致意外或非法損毀、遺失、變更、未經授權揭露或存取個人資料，或由 Microsoft 處理的支援或諮詢資料。對於已購買頂級支援、整合支援或 Microsoft 諮詢服務的商業客戶，您必須參照專業服務資料保護增補合約 (位於 <http://aka.ms/professionalservicesdpa/>) 中您的資料保護事件回應語言。
 
-### <a name="scope--limits-of-data-protection-incident-response-process"></a>資料保護事件回應程序的範圍與限制
+## <a name="scope--limits-of-data-protection-incident-response-process"></a>資料保護事件回應程序的範圍與限制
 
 當我們宣告發生 [個人資料外洩] 時，我們的個人資料外洩通知程序就會開始。
 
@@ -39,47 +39,44 @@ Microsoft 專業服務致力於保護其客戶並採取相當多的措施來預�
 
 有些動作完全超出此程序的範圍，包括我們的資料保護原則或標準的一般相關問題、資料當事人權利要求、退出要求、與資料保護無關的產品願望清單或錯誤報告、未涉及客戶資料的資料保護事件，以及針對 Microsoft 的詐騙。
 
-### <a name="types-of-data-protection-incidents"></a>資料保護事件的類型
+## <a name="types-of-data-protection-incidents"></a>資料保護事件的類型
 
 資料保護事件回應小組已找出一組可能會在專業服務中出現的案例。在遵循基本資料保護事件回應架構的同時，還開發及自訂了一些程序來加速回應程序。舉例來說，誤傳的電子郵件可能需要稍微調查一下。另一方面，識別惡意人員時，可能需要完整的鑑定調查，這是因為違規者的活動通常鬼鬼祟祟。這組案例可為專業服務提供資料保護事件回應程序的見解。
 
-### <a name="data-protection-incident-response-process"></a>資料保護事件回應程序
+## <a name="data-protection-incident-response-process"></a>資料保護事件回應程序
 
 當 Microsoft 專業服務找出資料保護事件時，就會進行分級程序，該程序會 (a) 評估活動，(b) 判斷事件是否在此程序的範圍內，(c) 判斷是否為惡意事件，(d) 執行初步調查並指派嚴重性等級，以及 (e) 對 Microsoft 內的相關利害關係人提出警示並進行協調。該小組也會開始記錄詳細資料，以便用於追蹤及事後剖析演練。
 
-#### <a name="detection"></a>偵測 
+### <a name="detection"></a>偵測
 
 Microsoft 專業服務會持續監視所有資料存放區 (包含個人資料 - 線上和離線) 浮現的資料保護事件。我們會使用不同的方法來偵測資料保護事件，包括自動化警示、客戶報告、外部當事人的報告、異常觀察，以及惡意或駭客活動的指示。
 
 Microsoft 專業服務所用的偵測程序主要用來探索資料保護事件及觸發調查作業。例如：
 
--   資訊安全漏洞會回報到整個 Microsoft 的報告系統，以便轉介或直接向專業服務資料保護事件回應小組回報。
+- 資訊安全漏洞會回報到整個 Microsoft 的報告系統，以便轉介或直接向專業服務資料保護事件回應小組回報。
+- 客戶可透過[客戶支援入口網站](http://support.microsoft.com)提交報告，以描述可疑的活動。
+- 專業服務人員會提交呈報。Microsoft 員工都受過訓練，可找出潛在的安全性問題並向上呈報。
+- 對於在提供專業人員服務的程序中所使用的工具和系統，作業小組會透過內部監視和警示架構使用自動化系統警示。這些警示是以 特徵型警訊 (例如反惡意程式碼、入侵偵測) 的方式提供，或透過設計用來分析預期活動以及在異常時提出警示的演算法提供。
 
--   客戶可透過[客戶支援入口網站](http://support.microsoft.com)提交報告，以描述可疑的活動。
-
--   專業服務人員會提交呈報。Microsoft 員工都受過訓練，可找出潛在的安全性問題並向上呈報。
-
--   對於在提供專業人員服務的程序中所使用的工具和系統，作業小組會透過內部監視和警示架構使用自動化系統警示。這些警示是以 特徵型警訊 (例如反惡意程式碼、入侵偵測) 的方式提供，或透過設計用來分析預期活動以及在異常時提出警示的演算法提供。
-
-#### <a name="data-protection-incident-response-drills-testing-of-data-protection-incident-response-plan"></a>資料保護事件回應演練、資料保護事件回應計劃測試
+### <a name="data-protection-incident-response-drills-testing-of-data-protection-incident-response-plan"></a>資料保護事件回應演練、資料保護事件回應計劃測試
 
 除了持續訓練，專業服務每年還會執行與相關內部部門合作的演練，以將資料保護事件呈報程序、角色及責任傳達給所有安定小組成員。這可讓重要利害關係人準備好面對真實世界的資料保護事件—不論是屬於安全性、實體或隱私權性質。其中包括與資料保護事件回應小組、安全性小組、法務小組和通訊小組的代表進行演練。
 
 在演練之後，我們會記載結果以及我們已決定要使用的補救方法。
 
-#### <a name="data-protection-incident-response-training"></a>資料保護事件回應訓練
+### <a name="data-protection-incident-response-training"></a>資料保護事件回應訓練
 
 資料保護事件回應的重要元件就是人員訓練，以找出並回報資料保護事件。專業服務組織中的人員必須接受訓練，其中涵蓋隱私權基本概念、GDPR 規範，以及如何找出並回報資料保護事件的最佳做法。
 
 所有人員都必須完成一般線上訓練。訓練方案採用測試、持續性問卷、認知，以及為了確保能了解並保持訓練而設計的後續行動。
 
-#### <a name="process"></a>程序
+### <a name="process"></a>程序
 
 Microsoft 專業服務組織在識別資料保護事件時，會遵循書面的產業標準回應計劃，首先判斷資料保護事件條件是否符合。當資料保護事件發生時，通常會在「分級」之後立即宣告，但視複雜性而定，宣告可能會發生在取得某個程度的所需資訊時的任何時間點，包括在調查階段之後。另一方面，小組決定只根據合理的懷疑來宣告資料保護事件。在調查過程中，小組也可以在各個階段之間交替。
 
 Microsoft 也會完成資料保護事件的內部事後剖析。在此演練中，會進行充分的回應和作業程序評估，而且會找出並實作「*資料保護事件回應標準作業程序*」所需的任何更新。資料外洩的內部事後剖析是客戶無法取得的極機密記錄。不過，可以將事後剖析彙總並納入客戶事件通知中。在例行稽核週期中，外部稽核者會審查事後剖析程序，以確保會採取後續行動。
 
-#### <a name="notification"></a>通知
+### <a name="notification"></a>通知
 
 當 Microsoft 專業服務依據 GDPR 宣告資料保護事件時，我們會在 72 小時內將通知送給客戶。此 72 小時的通知責任是專業服務的原則承諾，而非 GDPR 的法定要求。
 
@@ -89,17 +86,13 @@ Microsoft 也會完成資料保護事件的內部事後剖析。在此演練中�
 
 在提供通知給個人資料外洩的客戶時，Microsoft 會包含下列資訊 (如果適用且知道的話)：
 
--   外洩的性質
+- 外洩的性質
+- Microsoft 目前採取或建議的緩和措施
+- 涉及的產品、服務、應用程式
+- 公開個人資料的時間長度 (如果知道的話)
+- 受影響/公開的個人資料記錄量 (如果知道的話)
+- 子處理器/供應商詳細資訊 (如果其中一項涉及外洩的話)
 
--   Microsoft 目前採取或建議的緩和措施
+## <a name="learn-more"></a>深入了解
 
--   涉及的產品、服務、應用程式
-
--   公開個人資料的時間長度 (如果知道的話)
-
--   受影響/公開的個人資料記錄量 (如果知道的話)
-
--   子處理器/供應商詳細資訊 (如果其中一項涉及外洩的話)
-
-#### <a name="learn-more"></a>深入了解
 深入了解 Microsoft 信任中心的 Microsoft 專業服務 (<https://www.microsoft.com/trustcenter/professional-services>)。 
