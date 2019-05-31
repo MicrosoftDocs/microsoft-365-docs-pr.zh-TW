@@ -1,21 +1,27 @@
-# [Microsoft 365 商務版](index.md)
-## [概觀](microsoft-365-business-overview.md)
+# Microsoft 365 商務版
+## [Microsoft 365](index.md)
+## [什麼是 Microsoft 365 商務版？](microsoft-365-business-overview.md)
 ## [取得 Microsoft 365 商務版](sign-up.md)
 ## [保護資料的先決條件](pre-requisites-for-data-protection.md)
-## [設定](set-up.md)
+## 安裝
+### [安裝程式的概觀](set-up-overview.md)
+### [設定 Microsoft 365 商務版](set-up.md)
 ### [升級至 Windows Pro Creators 更新](upgrade-to-windows-pro-creators-update.md)
-### [設定行動裝置](set-up-mobile-devices.md)
-### [設定 Windows 裝置](set-up-windows-devices.md)
 ### [準備 Office 用戶端部署](prepare-for-office-client-deployment.md)
 ### [自動安裝或解除安裝 Office](auto-install-or-uninstall-office.md)
 ### [存取內部部署資源]()
 #### [啟用要管理已加入網域的 Windows 10 裝置](manage-windows-devices.md)
 #### [從 Azure AD 加入裝置的存取資源](access-resources.md)
+## 使用者裝置設定
+### [設定行動裝置](set-up-mobile-devices.md)
+### [設定 Windows 裝置](set-up-windows-devices.md)
 ## [保護](security-features.md)
 ### [保護您的企業](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [設定進階的安全性功能](set-up-advanced-security.md)
-## [管理](manage.md)
+## 管理使用者
 ### [Add users](add-users-m365b.md)
+### [移除員工](/Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+## 管理裝置
 ### [檢視及編輯原則與裝置](view-policies-and-devices.md)
 ### [移除公司資料](remove-company-data.md)
 ### [裝置重設為原廠設定](reset-devices-to-factory-settings.md)
@@ -26,7 +32,12 @@
 #### [驗證 Windows 10 電腦上的設定](validate-settings-on-windows-10-pcs.md)
 ### [Windows 10 裝置適用的保護設定](protection-settings-for-windows-10-devices.md)
 ## [移轉至 Microsoft 365 商務版](migrate-to-microsoft-365-business.md)
-## [新增 Autopilot 裝置和設定檔](add-autopilot-devices-and-profile.md)
+## 計費
+### [您的帳單](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+### [付款](/Office365/Admin/subscriptions-and-billing/pay-for-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+### [取消](/Office365/Admin/subscriptions-and-billing/cancel-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+## Autopilot
+### [新增 Autopilot 裝置和設定檔](add-autopilot-devices-and-profile.md)
 ### [建立及編輯 AutoPilot 設定檔](create-and-edit-autopilot-profiles.md)
 ### [建立及編輯 AutoPilot 裝置](create-and-edit-autopilot-devices.md)
 ### [AutoPilot 設定檔設定](autopilot-profile-settings.md)
