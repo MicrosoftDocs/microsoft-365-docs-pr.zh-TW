@@ -3,8 +3,8 @@ title: 適用於高管制資料的 Microsoft Teams 和 SharePoint Online 網站
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 04/03/2019
-ms.audience: ITPro
+ms.date: 06/03/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立安全的 SharePoint Online 小組網站或 Microsoft Teams 小組，以儲存您最有價值且機密的數位資產。
-ms.openlocfilehash: d80be334f692f905ec70ae43f851d2b73801f4a0
-ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
+ms.openlocfilehash: d9740a27cdb90f8d490a6c9a323e968725876deb
+ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "33553322"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "34681056"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>適用於高管制資料的 Microsoft Teams 和 SharePoint Online 網站
 
@@ -29,7 +29,7 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 - 受限於區域法規。
 - 貴組織最有價值的資料，例如營業秘密、財務或人力資源資訊，以及組織策略。
 
-符合此商務需求的 Microsoft 365 企業版雲端式解決方案需要您：
+符合此商務需求的 Microsoft 365 企業版雲端式案例需要您：
 
 - 將數位資產 (文件、投影片組、試算表等等) 儲存在 SharePoint Online 小組網站或 Microsoft Teams 小組的 [檔案]**** 索引標籤中。
 - 鎖定網站或小組，以防止：
@@ -41,7 +41,7 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 - 加密網站或小組上最機密的數位資產。
 - 新增權限至最機密的數位資產，即使這些資產在網站外部共用，開啟資產時仍然需要具有權限之使用者帳戶的有效認證。
 
-下表將此解決方案的需求對應至 Microsoft 365 企業版的功能。
+下表將此案例的需求對應至 Microsoft 365 企業版的功能。
 
 |||
 |:-------|:-----|
@@ -54,7 +54,11 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 | 新增權限至網站的數位資產 | EMS 中的 Azure 資訊保護子標籤 |
 |||
 
-此解決方案需要您已部署：
+以下是 SharePoint Online 網站的組態。
+
+![適用於高管制資料案例的 Microsoft Teams 和 SharePoint Online 網站](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+
+此案例需要您已部署：
 
 - 基礎結構的[身分識別](identity-infrastructure.md)階段及[資訊保護](infoprotect-infrastructure.md)階段的步驟 1 和 2。 
 - 針對 SharePoint Online 小組網站中的高管制資料，部署 [SharePoint Online](sharepoint-online-onedrive-workload.md)。
@@ -64,9 +68,13 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 若要查看 Contoso Corporation (虛構但有代表性的跨國企業) 如何為其研究小組設計 SharePoint Online 網站，請參閱[範例設定](contoso-sharepoint-online-site-for-highly-confidential-assets.md)。
 
->[!Note]
->高管制資料的小組需要您先建立適用於高管制資料的 SharePoint Online 小組網站。然後建立新的小組，該小組使用 SharePoint Online 小組網站的 Office 365 群組。如需詳細資訊，請參閱階段 2，步驟 4。
->
+
+高管制資料的小組需要您先建立適用於高管制資料的 SharePoint Online 小組網站。然後建立新的小組，該小組使用 SharePoint Online 小組網站的 Office 365 群組。如需詳細資訊，請參閱階段 2，步驟 4。
+
+以下是小組的組態。
+
+![適用於高管制資料案例的 Microsoft Teams 和 SharePoint Online 網站](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-team.png)
+
 
 ## <a name="identity-and-device-access-prerequisites"></a>身分識別與裝置存取必要條件
 
@@ -208,7 +216,11 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 機密數位資產僅儲存在適用於高管制資料的 SharePoint Online 網站或小組上，最機密的資產已設定為套用 Azure 資訊保護子標籤。
 
-## <a name="see-also"></a>另請參閱
+## <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Contoso Corporation 如何部署 Microsoft 365 企業版
+
+Contoso Corporation 是虛構但具代表性的全球製造業集團，其總部位於法國巴黎。 查看 Contoso 如何設計、設定，然後為其在巴黎、莫斯科、紐約、北京和班加羅爾的研究小組推動採用[安全的 SharePoint Online 網站](contoso-sharepoint-online-site-for-highly-confidential-assets.md)。 
+
+## <a name="see-also"></a>請參閱
 
 [部署指南](deploy-microsoft-365-enterprise.md)
 

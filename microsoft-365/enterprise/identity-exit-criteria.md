@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的設定符合 Microsoft 365 企業版準則，是否具備以識別為基礎的服務和基礎結構。
-ms.openlocfilehash: aabd9f5db223b4b1aba0173dcfb739fe27553555
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 19eefe3cd153668239d9cf15f71c90e8ac9571e1
+ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072123"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "34681040"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>階段 2：識別基礎結構允出準則
 
@@ -51,7 +51,7 @@ ms.locfileid: "34072123"
 
 使用這些步驟來確認您已受保護全域系統管理員帳戶：
 
-1. 在 PowerShell 命令提示字元執行下列 Azure AD V2 命令。您應該會看到僅專用全域系統管理員帳戶的清單。
+1. 在 PowerShell 命令提示字元執行下列 Azure Active Directory PowerShell for Graph 命令。您應該會看到僅專用全域系統管理員帳戶的清單。
    ```
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```

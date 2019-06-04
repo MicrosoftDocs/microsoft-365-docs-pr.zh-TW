@@ -23,7 +23,7 @@
 
 使用這些步驟來確認您已受保護全域系統管理員帳戶：
 
-1. 在 PowerShell 命令提示字元執行下列 Azure AD V2 命令。您應該會看到僅專用全域系統管理員帳戶的清單。
+1. 在 PowerShell 命令提示字元執行下列 Azure Active Directory PowerShell for Graph 命令。您應該會看到僅專用全域系統管理員帳戶的清單。
    ```
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
