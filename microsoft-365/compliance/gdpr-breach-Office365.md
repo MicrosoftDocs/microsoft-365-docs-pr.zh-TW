@@ -11,22 +11,20 @@ author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 0bacc6341ac143a8f2b3dcb066709c951d2f1cbb
-ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
+ms.openlocfilehash: f30bdc4aec20a69c18405b6f69a14fc919f57554
+ms.sourcegitcommit: 651a1c583021a7122a9487be2f32330aff161467
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34544950"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "34675628"
 ---
 # <a name="office-365-breach-notification-under-the-gdpr"></a>GDPR 規定的 Office 365 資料外洩通知
 
 Office 365 將以資料處理者的身分，確保身為資料控制者的客戶可符合 GDPR 資料外洩通知的要求。為此，我們致力於完成以下項目：
 
--   讓客戶能夠指定專用的隱私權連絡人，以便在發生外洩事件時通知此連絡人。客戶可以在 Azure Active Directory (AAD) 中指定此連絡人。
-
--   在宣告發生資料外洩的 72 小時內，向客戶發出個人資料外洩通知。通知會透過電子郵件傳送給客戶指定的連絡人
-
--   初次通知至少會包含外洩性質的描述、使用者的影響估計及降低風險的步驟 (如果適用的話)。如果在發出初次通知時，我們尚未完成調查，初次通知中會指出後續步驟及與您連絡的時間表
+- 讓客戶能夠指定專用的隱私權連絡人，以便在發生外洩事件時通知此連絡人。客戶可以在 Azure Active Directory (AAD) 中指定此連絡人。
+- 在宣告發生資料外洩的 72 小時內，向客戶發出個人資料外洩通知。通知會透過電子郵件傳送給客戶指定的連絡人
+- 初次通知至少會包含外洩性質的描述、使用者的影響估計及降低風險的步驟 (如果適用的話)。如果在發出初次通知時，我們尚未完成調查，初次通知中會指出後續步驟及與您連絡的時間表
 
 Microsoft 認可資料控制者要負責進行風險評估並判斷資料外洩是否需要通知客戶 DPA，而我們傳送給客戶的通知中會提供此評估所需的資訊。因此，Microsoft 會將所有個人資料外洩事件通知客戶，除了確定無法辨識的個人資料以外 (例如，已確認金鑰完整性的強式加密資料)。
 
@@ -62,11 +60,8 @@ Microsoft 認可資料控制者要負責進行風險評估並判斷資料外洩�
 同時，客戶應注意作為資料處理者的 Office 365，並不會判斷資料外洩的風險。每當偵測到個人資料外洩時，我們會通知客戶並提供所需的詳細資料，讓他們正確判斷影響使用者的風險，並決定是否需要進一步向法規主管機關報告。為此，資料控制者預期可判斷以下項目：
 
 - 資料外洩嚴重性 (也就是風險判斷)
-
 - 是否需要通知終端使用者
-
 - 是否需要通知法規機構 (DPA)
-
 - 控制者為降低資料外洩產生的影響，而採取的特定動作
 
 ## <a name="contacting-microsoft"></a>連絡 Microsoft
