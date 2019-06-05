@@ -5,17 +5,17 @@ keywords: DPIA、Office 365、Microsoft 365 文件、GDPR
 ms.localizationpriority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: heicba
-author: herviicban
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 95f3e5e4bb36c5bcf5e2d8a2a3f629c213d2d219
-ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
+ms.openlocfilehash: da9ba78f11dad06a1bea72484e6ecc77e7619493
+ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34544830"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34698295"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-office-365"></a>資料保護影響評估：適用於使用 Office 365 之資料控制者的指引 
 

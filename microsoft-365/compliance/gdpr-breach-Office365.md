@@ -5,18 +5,17 @@ keywords: Office 365、Microsoft 365、Microsoft 365 教育版、Microsoft 365 �
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/13/2018
-ms.author: heicba
-author: herviicban
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: f30bdc4aec20a69c18405b6f69a14fc919f57554
-ms.sourcegitcommit: 651a1c583021a7122a9487be2f32330aff161467
+ms.openlocfilehash: 6ead62d09ee2f87f05342c3248166125266849e4
+ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "34675628"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34698395"
 ---
 # <a name="office-365-breach-notification-under-the-gdpr"></a>GDPR 規定的 Office 365 資料外洩通知
 

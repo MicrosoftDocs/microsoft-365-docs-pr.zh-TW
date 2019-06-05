@@ -5,17 +5,17 @@ keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: heicba
-author: herviicban
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 0aa149a9a57fab310ffe1e5a631b37f66a833d9f
-ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
+ms.openlocfilehash: 3a07400f6c3e788734b4d959080e2008eb7b0cfe
+ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34544880"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34698285"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>GDPR 規定的 Microsoft 支援服務與專業服務以及外洩通知
 
