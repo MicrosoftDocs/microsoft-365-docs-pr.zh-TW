@@ -5,12 +5,12 @@ keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0eabd3c90e0aae2812b2ee9fd6fb4d1768e90c1e
-ms.sourcegitcommit: 8102751ae20c93439e19afded396c4e6ee5ea5a5
+ms.openlocfilehash: c3674df0bfd797b9076bbf52379444665b1ce4d8
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34104211"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857306"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>封存的 Microsoft 受管理電腦裝置
 
@@ -40,7 +40,7 @@ ms.locfileid: "34104211"
 
 - 已核准 Microsoft 受管理電腦的映像。 當您訂購裝置時，請確定您指定，它們所搭配使用 Microsoft 受管理的電腦。
 - 尚未完成 Windows 初次執行體驗。
-- 透過[Windows Autopilot](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven-aad)註冊，並已指派的 Microsoft 受管理的桌上型電腦 Autopilot 設定檔。
+- 註冊 Microsoft 受管理的 Destkop 所使用的[裝置註冊](https://aka.ms/mmddrhelp)功能
 
 #### <a name="additional-help"></a>額外的說明
 

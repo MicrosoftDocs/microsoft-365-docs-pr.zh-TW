@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 02b3b7ab32ff92304ab27ca8e8c805ade803c971
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: f1e61cfc7fd1d6d597efbfa2480155e06a3d3eb7
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400069"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857296"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中註冊裝置
 
@@ -39,20 +39,20 @@ Microsoft 受管理的電腦可搭配全新的裝置，或者您可以重新使�
 若要取得硬體雜湊您可以從您的 OEM 或協力廠商尋求協助，或針對每個裝置遵循下列步驟：
 
 1.  以系統管理權限開啟 PowerShell 命令提示字元。
-2.  執行`Install-Script -Name Get-WindowsAutoPilotInfo`
-3.  執行`powershell -ExecutionPolicy Unrestricted Get-WindowsAutopilotInfo -OutputFile <path>\hardwarehash.csv`
+2.  執行`Install-Script -Name Get-MMDRegistrationInfo`
+3.  執行`powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 
 
 或者，您可以在全新的裝置上遵循下列步驟 （之前第一次經由 OOBE）：
 
 1. 在不同裝置上，插入 USB 磁碟機。
 2. 以系統管理權限開啟 PowerShell 命令提示字元。
-3. 執行`Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
+3. 執行`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
 4. 在目標裝置上，開啟，但不是會啟動安裝程式的經驗。 如果您不小心開始的安裝體驗，您必須重設或重新裝置。
 5. 插入的 USB 磁碟機，並按下 SHIFT + f10 時會顯示功能表。
 6. 以系統管理權限，開啟 PowerShell 命令提示字元，然後執行`cd <pathToUsb>`。
 7. 執行`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
-8. 執行`.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+8. 執行`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 3. 移除的 USB 磁碟機，然後關閉該裝置，藉由執行`shutdown -s -t 0`
 
 >[!IMPORTANT]
