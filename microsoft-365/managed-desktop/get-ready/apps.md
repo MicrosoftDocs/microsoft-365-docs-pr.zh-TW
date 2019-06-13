@@ -1,91 +1,80 @@
 ---
-title: 準備應用程式以使用 Microsoft 受管理的電腦
+title: Microsoft 受管理電腦中的應用程式
 description: ''
 keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: be28760fc3facdb21643943ace11deda378d437c
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: db89e3b1f8b5b8073eab62e4b4d38087e1e73fa4
+ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289061"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913044"
 ---
-# <a name="preparing-apps-for-microsoft-managed-desktop"></a><span data-ttu-id="d77c5-103">準備應用程式以使用 Microsoft 受管理的電腦</span><span class="sxs-lookup"><span data-stu-id="d77c5-103">Preparing apps for Microsoft Managed Desktop</span></span>
+# <a name="apps-in-microsoft-managed-desktop"></a><span data-ttu-id="e34b9-103">Microsoft 受管理電腦中的應用程式</span><span class="sxs-lookup"><span data-stu-id="e34b9-103">Apps in Microsoft Managed Desktop</span></span>
 
 <!--This topic is the target for 2 "Learn more" links in the Admin Portal (aka.ms/app-overview;app-package); also target for link from Online resources (aka.ms/app-overviewmmd-app-prep) do not delete.-->
 
 <!--Applications: supported/onboard/deployment -->
  
-<span data-ttu-id="d77c5-104">Microsoft 和 Microsoft 受管理電腦的客戶同樣也有重大、 尚未不同職責周圍搭配 Microsoft 受管理電腦的應用程式。</span><span class="sxs-lookup"><span data-stu-id="d77c5-104">Microsoft and Microsoft Managed Desktop customers have equally critical, yet different responsibilities around applications used with Microsoft Managed Desktop.</span></span>
+## <a name="apps-generally"></a><span data-ttu-id="e34b9-104">應用程式通常</span><span class="sxs-lookup"><span data-stu-id="e34b9-104">Apps generally</span></span>
 
-## <a name="microsoft-responsibilities"></a><span data-ttu-id="d77c5-105">Microsoft 責任</span><span class="sxs-lookup"><span data-stu-id="d77c5-105">Microsoft responsibilities</span></span>
-<span data-ttu-id="d77c5-106">**Office 365 應用程式**Microsoft 會提供完整的部署、 更新和支援的特定的 Office 365 應用程式的服務。</span><span class="sxs-lookup"><span data-stu-id="d77c5-106">**Office 365 apps** Microsoft will provide full service for the deployment, update, and support of specific Office 365 apps.</span></span> <span data-ttu-id="d77c5-107">所有使用者會都收到 Office 365 隨執行，以便使用者可以快速上手，裝置的映像中包含的應用程式 64 位元版本的基底集。</span><span class="sxs-lookup"><span data-stu-id="d77c5-107">All users will receive the base set of Office 365 click to run, 64 bit version of applications included in the device’s image so that a user can quickly become productive.</span></span> <span data-ttu-id="d77c5-108">Project 和 Visio 應用程式中的 Office 365 套件將分別獲得授權。</span><span class="sxs-lookup"><span data-stu-id="d77c5-108">The Project and Visio applications in of the Office 365 suite are licensed separately.</span></span>  <span data-ttu-id="d77c5-109">Microsoft 受管理的電腦會提供讓 IT 系統管理員管理授權及部署這些應用程式適當地為其組織的部署群組。</span><span class="sxs-lookup"><span data-stu-id="d77c5-109">Microsoft Managed Desktop will provide deployment groups allowing the IT Administrator to manage licenses and deploy these applications appropriately for their organization.</span></span> <span data-ttu-id="d77c5-110">Microsoft 將會支援透過 Microsoft 受管理的桌上型電腦支援頻道這些應用程式的使用者。</span><span class="sxs-lookup"><span data-stu-id="d77c5-110">Microsoft will support end users of these applications through the Microsoft Managed Desktop Support channels.</span></span>
+<span data-ttu-id="e34b9-105">Microsoft 包含特定索引鍵的應用程式，以及參與 Microsoft 受管理的電腦所需的 Microsoft 365 E3 或 E5 授權。</span><span class="sxs-lookup"><span data-stu-id="e34b9-105">Microsoft includes certain key apps along with the Microsoft 365 E3 or E5 license needed to participate in Microsoft Managed Desktop.</span></span> <span data-ttu-id="e34b9-106">不過，即使我們將提供這些應用程式，您仍會有特定的職責和動作，以完成。</span><span class="sxs-lookup"><span data-stu-id="e34b9-106">However, even though we provide these apps, you still have certain responsibilities and actions to complete.</span></span>
 
-<span data-ttu-id="d77c5-111">**營運應用程式**Microsoft 提供工具的 IT 系統管理員管理及部署至使用者其-營運 (LOB) 應用程式作為 Intune 產品的一部分。</span><span class="sxs-lookup"><span data-stu-id="d77c5-111">**Line-of-business apps** Microsoft provides tooling for IT Administrators to manage and deploy their line-of-business (LOB) applications to end users as a part of the Intune product.</span></span> <span data-ttu-id="d77c5-112">Microsoft 將支援如同詳細的[行的商務應用程式](#line-of-business-applications)的應用程式部署問題</span><span class="sxs-lookup"><span data-stu-id="d77c5-112">Microsoft will support application deployment issues as detailed in [Line-of-business applications](#line-of-business-applications)</span></span> 
-
-<span data-ttu-id="d77c5-113">**使用 Intune 部署**Intune 會連結至**商務用 Microsoft Store** ，讓採購應用程式以透過 Intune 部署 Microsoft 受管理的電腦上架期間。</span><span class="sxs-lookup"><span data-stu-id="d77c5-113">**Deploy with Intune** Intune will be linked to the **Microsoft Store for Business** during Microsoft Managed Desktop onboarding allowing procured apps to be deployed through Intune.</span></span> <span data-ttu-id="d77c5-114">Microsoft 也會部署至使用者從 Microsoft 網上商店的公司入口網站應用程式，以便 IT 系統管理員可以為使用者提供自助體驗。</span><span class="sxs-lookup"><span data-stu-id="d77c5-114">Microsoft will also deploy the Company Portal application from the Microsoft Store to end users so that IT Administrators can provide a self-service experience for their end users.</span></span>
-
-<span data-ttu-id="d77c5-115">**應用程式管理**Microsoft 可能會找出受限制的應用程式，這並不適合現代化工作場所增進因其系統的影響。</span><span class="sxs-lookup"><span data-stu-id="d77c5-115">**App management** Microsoft may identify restricted applications which are not suitable for the modern workplace because of their system impact.</span></span> <span data-ttu-id="d77c5-116">識別此類應用程式時 Microsoft 將會通知客戶，而該應用程式需要從租用戶中移除。</span><span class="sxs-lookup"><span data-stu-id="d77c5-116">When such an application is identified Microsoft will notify the customer and that application will need to be removed from the tenant.</span></span> 
-
-<span data-ttu-id="d77c5-117">如需有關受限制的應用程式行為和應用程式需求的詳細資訊，請參閱 < <b0>Microsoft 受管理的電腦應用程式需求</b0></span><span class="sxs-lookup"><span data-stu-id="d77c5-117">For more information on restricted app behaviors and app requirements, see [Microsoft Managed Desktop app requirements](../service-description/mmd-app-requirements.md)</span></span>
-
-## <a name="customer-responsibilities"></a><span data-ttu-id="d77c5-118">客戶責任</span><span class="sxs-lookup"><span data-stu-id="d77c5-118">Customer responsibilities</span></span>
-<span data-ttu-id="d77c5-119">Office 365 套件是核心 Microsoft 的生產力供應項目，隨附於 Microsoft 受管理電腦的所有使用者的 Microsoft 365 授權。</span><span class="sxs-lookup"><span data-stu-id="d77c5-119">The Office 365 Suite is core to Microsoft’s productivity offerings and is included in the Microsoft 365 License for all Microsoft Managed Desktop users.</span></span> <span data-ttu-id="d77c5-120">Microsoft 部署、 更新，以及支援 Microsoft 受管理的電腦裝置的 Office 應用程式時仍有一些客戶有責任的區域。</span><span class="sxs-lookup"><span data-stu-id="d77c5-120">While Microsoft deploys, updates, and supports Office Applications to Microsoft Managed Desktop Devices there are still some areas for which the customer is responsible.</span></span>
-- <span data-ttu-id="d77c5-121">**指派授權**的客戶負責將適當的授權指派給使用者的 Office 365。</span><span class="sxs-lookup"><span data-stu-id="d77c5-121">**Assign licenses** - Customers are responsible for assigning the appropriate licenses to end users for Office 365.</span></span> 
-- <span data-ttu-id="d77c5-122">**新增使用者至安全性群組**-的客戶與使用者需要 Project 或 Visio，IT 系統管理員必須將這些使用者加入適當的部署群組。</span><span class="sxs-lookup"><span data-stu-id="d77c5-122">**Add users to security groups** - For customers with users who need Project or Visio, the IT administrator must add those users to the appropriate deployment groups.</span></span> <span data-ttu-id="d77c5-123">IT 系統管理員也負責管理這些使用者的生命週期結束。</span><span class="sxs-lookup"><span data-stu-id="d77c5-123">IT administrators are also responsible for managing end of life for those users.</span></span> 
-- <span data-ttu-id="d77c5-124">**新增元件部署 Office 365**的客戶負責部署至 Office 365 套件這必要的任何增益集。</span><span class="sxs-lookup"><span data-stu-id="d77c5-124">**Deploy Office 365 Add Ons** - Customers are responsible for deploying any plugins to the Office 365 suite which are deemed necessary.</span></span> 
-
-<span data-ttu-id="d77c5-125">由於-營運 (LOB) 應用程式是唯一的每個客戶，客戶負責管理其組織未部署由 Microsoft 中的所有應用程式。</span><span class="sxs-lookup"><span data-stu-id="d77c5-125">Since line-of-business (LOB) apps are unique for each customer, customers are responsible for managing all applications within their organization not deployed by Microsoft.</span></span> <span data-ttu-id="d77c5-126">其中包括：</span><span class="sxs-lookup"><span data-stu-id="d77c5-126">This includes:</span></span>
-- <span data-ttu-id="d77c5-127">決定哪些應用程式所需及他們需要由誰</span><span class="sxs-lookup"><span data-stu-id="d77c5-127">Deciding which apps are needed and who needs them</span></span>
-- <span data-ttu-id="d77c5-128">將應用程式指派給這些使用者</span><span class="sxs-lookup"><span data-stu-id="d77c5-128">Assigning apps to those users</span></span>
-- <span data-ttu-id="d77c5-129">建立及管理應用程式的工作分派的維護 Azure Active Directory (AD) 群組</span><span class="sxs-lookup"><span data-stu-id="d77c5-129">Create and maintain Azure Active Directory (AD) groups for managing app assignments</span></span> 
-
-<span data-ttu-id="d77c5-130">客戶必須將 LOB 應用程式上傳到 Intune。</span><span class="sxs-lookup"><span data-stu-id="d77c5-130">The customer must upload LOB apps to Intune.</span></span> <span data-ttu-id="d77c5-131">然後，他們必須負責部署、 更新，並透過其各自的週期，解除委任這些應用程式，以及管理這些應用程式的使用者的支援。</span><span class="sxs-lookup"><span data-stu-id="d77c5-131">They are then responsible for deploying, updating, and decommissioning those applications over their respective lifecycles, as well as managing support for these apps for their users.</span></span>
-
-## <a name="office-applications"></a><span data-ttu-id="d77c5-132">Office 應用程式</span><span class="sxs-lookup"><span data-stu-id="d77c5-132">Office applications</span></span>
-<span data-ttu-id="d77c5-133">Microsoft 365 E5 授權的一部分，Microsoft 被部署 Office 365 Standard Suite （64 位元）。</span><span class="sxs-lookup"><span data-stu-id="d77c5-133">As part of the Microsoft 365 E5 license, Office 365 Standard Suite (64 Bit) is deployed by Microsoft.</span></span> 
-
-<span data-ttu-id="d77c5-134">如需詳細資訊，請參閱 < <b0>Microsoft 受管理電腦技術</b0></span><span class="sxs-lookup"><span data-stu-id="d77c5-134">For details, see [Microsoft Managed Desktop technologies](../intro/technologies.md)</span></span> <!--- and the other applications licensed under Office 365 E5 may be deployed by the customer using Intune’s deployment tools.-->
-
-## <a name="line-of-business-applications"></a><span data-ttu-id="d77c5-135">線條的商務應用程式</span><span class="sxs-lookup"><span data-stu-id="d77c5-135">Line-of-business applications</span></span>
-<span data-ttu-id="d77c5-136">下表總結了責任，跨-營運 (LOB) 應用程式的不同階段。</span><span class="sxs-lookup"><span data-stu-id="d77c5-136">This table summarizes responsibilities across the different phases for line-of-business (LOB) applications.</span></span> 
-
-<span data-ttu-id="d77c5-137">應用程式的工作項目</span><span class="sxs-lookup"><span data-stu-id="d77c5-137">Application work items</span></span> |    <span data-ttu-id="d77c5-138">客戶</span><span class="sxs-lookup"><span data-stu-id="d77c5-138">Customer</span></span>    | <span data-ttu-id="d77c5-139">Microsoft</span><span class="sxs-lookup"><span data-stu-id="d77c5-139">Microsoft</span></span>
---- | --- | ---
-<span data-ttu-id="d77c5-140">**上架應用程式**</span><span class="sxs-lookup"><span data-stu-id="d77c5-140">**Onboarding apps**</span></span> |  |
-<span data-ttu-id="d77c5-141">識別應用程式所需的目標的使用者群組</span><span class="sxs-lookup"><span data-stu-id="d77c5-141">Identify applications needed for targeted user groups</span></span>   | ![是](images/checkmark.png)  |
-<span data-ttu-id="d77c5-143">建立及管理應用程式部署 Azure AD 群組</span><span class="sxs-lookup"><span data-stu-id="d77c5-143">Create and manage Azure AD groups for app deployment</span></span> | ![是](images/checkmark.png) |   
-<span data-ttu-id="d77c5-145">**應用程式封裝**</span><span class="sxs-lookup"><span data-stu-id="d77c5-145">**App Packaging**</span></span> |  |
-<span data-ttu-id="d77c5-146">封裝應用程式，以符合 Intune 部署標準</span><span class="sxs-lookup"><span data-stu-id="d77c5-146">Package apps to meet Intune deployment standards</span></span> |  ![是](images/checkmark.png) |  
-<span data-ttu-id="d77c5-148">將應用程式上傳到 Intune</span><span class="sxs-lookup"><span data-stu-id="d77c5-148">Upload apps to Intune</span></span> | ![是](images/checkmark.png)     |
-<span data-ttu-id="d77c5-150">Microsoft 受管理的桌上型電腦環境中測試應用程式</span><span class="sxs-lookup"><span data-stu-id="d77c5-150">Test apps in Microsoft Managed Desktop environment</span></span> |    ![是](images/checkmark.png) |  
-<span data-ttu-id="d77c5-152">測試與使用者的應用程式</span><span class="sxs-lookup"><span data-stu-id="d77c5-152">Test apps with end users</span></span>    | ![是](images/checkmark.png) |    
-<span data-ttu-id="d77c5-154">**部署**</span><span class="sxs-lookup"><span data-stu-id="d77c5-154">**Deployment**</span></span> | |
-<span data-ttu-id="d77c5-155">管理，並將使用者指派給應用程式</span><span class="sxs-lookup"><span data-stu-id="d77c5-155">Manage and assign users to applications</span></span>  | ![是](images/checkmark.png)  |
-<span data-ttu-id="d77c5-157">Intune 部署工具會傳遞至遠端用戶端應用程式</span><span class="sxs-lookup"><span data-stu-id="d77c5-157">Intune deployment tools delivers application to remote clients</span></span>| |   ![是](images/checkmark.png)
-<span data-ttu-id="d77c5-159">識別並部署到 Intune 應用程式更新</span><span class="sxs-lookup"><span data-stu-id="d77c5-159">Identify and deploy application updates through Intune</span></span> | ![是](images/checkmark.png)    |
-<span data-ttu-id="d77c5-161">Unistall] 和 [移除應用程式時已停用</span><span class="sxs-lookup"><span data-stu-id="d77c5-161">Unistall and remove applications when they have been retired</span></span>    | ![是](images/checkmark.png) |    
-<span data-ttu-id="d77c5-163">**管理**</span><span class="sxs-lookup"><span data-stu-id="d77c5-163">**Management**</span></span> | |
-<span data-ttu-id="d77c5-164">視需要而定，並指派授權</span><span class="sxs-lookup"><span data-stu-id="d77c5-164">Procure and assign licenses</span></span> |   ![是](images/checkmark.png)     |
-<span data-ttu-id="d77c5-166">提供-營運應用程式的使用者支援</span><span class="sxs-lookup"><span data-stu-id="d77c5-166">Provide end-user support for line-of-business apps</span></span>  | ![是](images/checkmark.png) |
-<span data-ttu-id="d77c5-168">管理應用程式設定遠端</span><span class="sxs-lookup"><span data-stu-id="d77c5-168">Manage app settings remotely</span></span>    | ![是](images/checkmark.png) |
-
-<span data-ttu-id="d77c5-170">如需 LOB 應用程式需求的詳細資訊，請參閱 < <b0>Microsoft 受管理的電腦應用程式需求</b0></span><span class="sxs-lookup"><span data-stu-id="d77c5-170">For information on LOB application requirements, see [Microsoft Managed Desktop application requirements](../service-description/mmd-app-requirements.md)</span></span>
+<span data-ttu-id="e34b9-107">您也可以部署其他非 Microsoft 應用程式至您的使用者透過公司入口網站或所需的背景安裝的自助，所有使用 Microsoft Intune 部署管線。</span><span class="sxs-lookup"><span data-stu-id="e34b9-107">You can also deploy additional non-Microsoft apps to your end users for self-service through the Company Portal or a required background installation, all using Microsoft Intune’s deployment pipeline.</span></span> <span data-ttu-id="e34b9-108">如果您有您可以移轉您需要自行; 這些應用程式的專業知識如果沒有 Microsoft 諮詢服務 (MCS) 或非 Microsoft 廠商將樂於以協助您進行封裝和移轉的專案。</span><span class="sxs-lookup"><span data-stu-id="e34b9-108">If you have the expertise you can migrate those apps you need yourself; if not either Microsoft Consulting Services (MCS) or non-Microsoft vendors will be happy to help you with a packaging and migration project.</span></span> <span data-ttu-id="e34b9-109">如需使用 MCS 的詳細資訊，請參閱[Working with Microsoft 諮詢服務](apps-MCS.md)。</span><span class="sxs-lookup"><span data-stu-id="e34b9-109">For more information about working with MCS, see [Working with Microsoft Consulting Services](apps-MCS.md).</span></span>
 
 
-## <a name="intune-application-deployment"></a><span data-ttu-id="d77c5-171">Intune 應用程式部署</span><span class="sxs-lookup"><span data-stu-id="d77c5-171">Intune application deployment</span></span>
-<span data-ttu-id="d77c5-172">透過 Microsoft 受管理的桌上型電腦系統管理入口網站，或透過 Intune 入口網站，可以處理應用程式管理。</span><span class="sxs-lookup"><span data-stu-id="d77c5-172">Application management can be handled through the Microsoft Managed Desktop Admin portal, or through the Intune portal.</span></span> <span data-ttu-id="d77c5-173">Intune 的應用程式管理入口網站顯示部署 for Windows、 Android 和 iOS 的應用程式。</span><span class="sxs-lookup"><span data-stu-id="d77c5-173">Intune’s app management portal shows applications deployed for Windows, Android, and iOS.</span></span> <span data-ttu-id="d77c5-174">Microsoft 受管理的桌上型電腦系統管理入口網站限制檢視以 Windows 10 應用程式。</span><span class="sxs-lookup"><span data-stu-id="d77c5-174">Microsoft Managed Desktop Admin portal limits the view to Windows 10 applications.</span></span> <span data-ttu-id="d77c5-175">兩者都可透過 Azure 入口網站。</span><span class="sxs-lookup"><span data-stu-id="d77c5-175">Both are available through the Azure Portal.</span></span> 
-* [<span data-ttu-id="d77c5-176">Intune 應用程式管理基本概念</span><span class="sxs-lookup"><span data-stu-id="d77c5-176">Intune app management basics</span></span>](https://docs.microsoft.com/intune/app-management)
-* [<span data-ttu-id="d77c5-177">將應用程式新增至 Intune</span><span class="sxs-lookup"><span data-stu-id="d77c5-177">Add apps to Intune</span></span>](https://docs.microsoft.com/intune/app-management)
-   * [<span data-ttu-id="d77c5-178">新增-營運應用程式</span><span class="sxs-lookup"><span data-stu-id="d77c5-178">Add a line-of-business App</span></span>](https://docs.microsoft.com/intune/lob-apps-windows)
-   * [<span data-ttu-id="d77c5-179">將 Win32 應用程式新增至 Intune</span><span class="sxs-lookup"><span data-stu-id="d77c5-179">Add Win32 apps to Intune</span></span>](https://docs.microsoft.com/intune/apps-win32-app-management)
-   * [<span data-ttu-id="d77c5-180">新增 web 應用程式</span><span class="sxs-lookup"><span data-stu-id="d77c5-180">Add web applications</span></span>](https://docs.microsoft.com/intune/web-app)
-* [<span data-ttu-id="d77c5-181">部署應用程式</span><span class="sxs-lookup"><span data-stu-id="d77c5-181">Deploy apps</span></span>](https://docs.microsoft.com/intune/apps-deploy)
-   * [<span data-ttu-id="d77c5-182">將應用程式部署至 Windows 10</span><span class="sxs-lookup"><span data-stu-id="d77c5-182">Deploy apps to Windows 10</span></span>](https://docs.microsoft.com/intune/apps-windows-10-app-deploy)
-* <span data-ttu-id="d77c5-183">公司入口網站</span><span class="sxs-lookup"><span data-stu-id="d77c5-183">Company Portal</span></span>
-   * [<span data-ttu-id="d77c5-184">部署在公司入口網站</span><span class="sxs-lookup"><span data-stu-id="d77c5-184">Deploy the Company Portal</span></span>](https://docs.microsoft.com/intune/store-apps-company-portal-app)
-   * [<span data-ttu-id="d77c5-185">設定公司入口網站應用程式</span><span class="sxs-lookup"><span data-stu-id="d77c5-185">Configure the Company Portal app</span></span>](https://docs.microsoft.com/intune/company-portal-app)
+## <a name="apps-provided-by-microsoft"></a><span data-ttu-id="e34b9-110">Microsoft 所提供的應用程式</span><span class="sxs-lookup"><span data-stu-id="e34b9-110">Apps provided by Microsoft</span></span>
+
+<span data-ttu-id="e34b9-111">隨附於 Microsoft 受管理電腦授權是 64 位元版本的 Office 365 專業增強版 Standard Suite （Word、 Excel、 PowerPoint、 Outlook、 Publisher、 Access、 Skype for Business 和 OneNote。) 中的應用程式按一下 [-隨選即用版本的 Microsoft Project 和 Visio 會根據預設，*不*包含，但您可以要求他們加入。</span><span class="sxs-lookup"><span data-stu-id="e34b9-111">Included with your Microsoft Managed Desktop license are 64-bit versions of the apps in the Office 365 ProPlus Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, and OneNote.) Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but you can request them to be added.</span></span> <span data-ttu-id="e34b9-112">如需有關這些應用程式的詳細資訊，請參閱[安裝 Microsoft Project 或 Microsoft 受管理的電腦裝置上的 Microsoft Visio](../get-started/project-visio.md)。</span><span class="sxs-lookup"><span data-stu-id="e34b9-112">For more information about these apps, see [Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](../get-started/project-visio.md).</span></span>
+
+### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a><span data-ttu-id="e34b9-113">Microsoft 沒有為支援我們提供應用程式</span><span class="sxs-lookup"><span data-stu-id="e34b9-113">What Microsoft does to support the apps we provide</span></span>
+
+<span data-ttu-id="e34b9-114">Microsoft 會提供包含 Office 365 專業增強版應用程式的部署、 更新和支援的完整服務。</span><span class="sxs-lookup"><span data-stu-id="e34b9-114">Microsoft will provide full service for the deployment, update, and support for the included Office 365 ProPlus apps.</span></span> <span data-ttu-id="e34b9-115">按一下 [-隨選即用版本的 Microsoft Project 和 Visio 會根據預設，*不*包含，但 Microsoft 受管理的電腦會提供讓 IT 系統管理員管理授權及部署這些應用程式適當的部署群組您組織。</span><span class="sxs-lookup"><span data-stu-id="e34b9-115">Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but Microsoft Managed Desktop will provide deployment groups allowing your IT administrator to manage licenses and deploy these applications appropriately for your organization.</span></span> <span data-ttu-id="e34b9-116">Microsoft 將會支援透過 Microsoft 受管理的電腦支援頻道這些應用程式的使用者。</span><span class="sxs-lookup"><span data-stu-id="e34b9-116">Microsoft will support end users of these applications through the Microsoft Managed Desktop support channels.</span></span>
+
+### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a><span data-ttu-id="e34b9-117">您要做為支援我們提供應用程式</span><span class="sxs-lookup"><span data-stu-id="e34b9-117">What you need to do to support the apps we provide</span></span>
+
+<span data-ttu-id="e34b9-118">仍有某些您需要運用這些應用程式的事項：</span><span class="sxs-lookup"><span data-stu-id="e34b9-118">There are still certain things you need to do with these apps:</span></span>
+
+- <span data-ttu-id="e34b9-119">**將授權指派**-您負責取得並指派適當的授權給 Office 365 專業增強版的使用者。</span><span class="sxs-lookup"><span data-stu-id="e34b9-119">**Assign licenses** - You are responsible for obtaining and assigning the appropriate licenses to end users for Office 365 ProPlus.</span></span>
+- <span data-ttu-id="e34b9-120">**新增使用者至安全性群組**-如果您使用 Microsoft Project 或 Visio，IT 系統管理員必須將新增至適當的部署群組的使用者。</span><span class="sxs-lookup"><span data-stu-id="e34b9-120">**Add users to security groups** - If you're using Microsoft Project or Visio, your IT administrator must add those users to the appropriate deployment groups.</span></span> <span data-ttu-id="e34b9-121">IT 系統管理員也是負責收回這些使用者的授權，如果他們離開公司的。</span><span class="sxs-lookup"><span data-stu-id="e34b9-121">IT administrators are also responsible for reclaiming licenses from those users if they leave the company.</span></span>
+- <span data-ttu-id="e34b9-122">**部署 Office 365 Addons** -如果您需要的任何 Office 365 專業增強版的應用程式的任何 Addons，將其部署集中像任何其他 Windows 32 應用程式。</span><span class="sxs-lookup"><span data-stu-id="e34b9-122">**Deploy Office 365 Addons** - If you need any Addons for any of the Office 365 ProPlus apps, deploy them centrally like any other Windows 32 app.</span></span> 
+
+## <a name="apps-you-provide"></a><span data-ttu-id="e34b9-123">您提供的應用程式</span><span class="sxs-lookup"><span data-stu-id="e34b9-123">Apps you provide</span></span>
+
+<span data-ttu-id="e34b9-124">當然，您可能有其他您需要的企業營運的應用程式的數量。</span><span class="sxs-lookup"><span data-stu-id="e34b9-124">Of course, you probably have a number of other apps you need for your business operations.</span></span> <span data-ttu-id="e34b9-125">這些可以可以只部署至 Microsoft 受管理的電腦裝置使用 Microsoft Intune 部署管線。</span><span class="sxs-lookup"><span data-stu-id="e34b9-125">These can can only be deployed to Microsoft Managed Desktop devices by using Microsoft Intune’s deployment pipeline.</span></span> <span data-ttu-id="e34b9-126">如果應用程式需要它可以讓他們封裝廠商 （這可能是在非 Microsoft 供應商或 Microsoft 諮詢服務 (MCS)），或如果您有方法，您可以封裝他們自己。</span><span class="sxs-lookup"><span data-stu-id="e34b9-126">If the app needs it you can have them packaged by a vendor (which could be a non-Microsoft vendor or Microsoft Consulting Services (MCS)) or if you have the means, you can package them yourself.</span></span> <span data-ttu-id="e34b9-127">然後將這些套件新增至 Microsoft 受管理電腦入口網站，並將它們指派給 Azure Active Directory 群組，以觸發部署。</span><span class="sxs-lookup"><span data-stu-id="e34b9-127">You then add these packages to the Microsoft Managed Desktop portal and assign them to Azure Active Directory groups to trigger the deployment.</span></span> 
+
+<span data-ttu-id="e34b9-128">如果您目前使用 System Center Configuration Manager 部署您的應用程式，Microsoft 受管理的電腦可以提供您評估您的應用程式，並探索哪些項目可供移轉至 Microsoft Intune 和哪些項目可能需要一些調整查詢.</span><span class="sxs-lookup"><span data-stu-id="e34b9-128">If you currently deploy your apps by using System Center Configuration Manager, Microsoft Managed Desktop can provide you with a query to assess your apps and discover which ones are ready for to migrate to Microsoft Intune and which ones might require some adjustment.</span></span>
+
+
+### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a><span data-ttu-id="e34b9-129">準備您自己的應用程式以使用 Microsoft 受管理電腦中的相對路徑</span><span class="sxs-lookup"><span data-stu-id="e34b9-129">Preparing your own apps for inclusion in Microsoft Managed Desktop</span></span>
+<span data-ttu-id="e34b9-130">檢閱您的應用程式，檢查：</span><span class="sxs-lookup"><span data-stu-id="e34b9-130">Review your apps, checking:</span></span>
+
+- <span data-ttu-id="e34b9-131">無應用程式禁止或有限制的行為， [Microsoft 受管理的電腦應用程式需求](https://aka.ms/app-req)所述。</span><span class="sxs-lookup"><span data-stu-id="e34b9-131">None of the apps are prohibited or have restricted behavior, as described in [Microsoft Managed Desktop app requirements](https://aka.ms/app-req).</span></span>
+- <span data-ttu-id="e34b9-132">應用程式必須準備好以透過 Microsoft Intune 進行管理。</span><span class="sxs-lookup"><span data-stu-id="e34b9-132">Apps must be ready for management by Microsoft Intune.</span></span> <span data-ttu-id="e34b9-133">如需有關此的詳細資訊，請參閱[Windows 10 應用程式部署使用 Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy)和[新增應用程式連接至 Microsoft Intune](https://docs.microsoft.com/intune/apps-add)。</span><span class="sxs-lookup"><span data-stu-id="e34b9-133">For more about this, see [Windows 10 app deployment using Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) and [Add apps to Microsoft Intune](https://docs.microsoft.com/intune/apps-add).</span></span>
+- <span data-ttu-id="e34b9-134">提供授權金鑰、 授權合約協議等預先設定的伺服器連線其他前封裝需求。</span><span class="sxs-lookup"><span data-stu-id="e34b9-134">Other pre-packaging requirements such as providing license keys, agreement with license terms, and pre-setting server connections.</span></span>
+
+### <a name="decide-how-to-package-apps"></a><span data-ttu-id="e34b9-135">決定如何封裝應用程式</span><span class="sxs-lookup"><span data-stu-id="e34b9-135">Decide how to package apps</span></span>
+
+<span data-ttu-id="e34b9-136">某些獨立軟體廠商可能會要求您的應用程式會封裝集中在部署之前。</span><span class="sxs-lookup"><span data-stu-id="e34b9-136">Some independent software vendors might require that your apps are packaged before they are centrally deployed.</span></span> <span data-ttu-id="e34b9-137">「 封裝 」 表示應用程式的安裝程式會設定與授權金鑰，遠端伺服器的位置或桌面捷徑語言設定，以便應用程式可以安裝在背景中。</span><span class="sxs-lookup"><span data-stu-id="e34b9-137">“Packaging” means that the app’s installer is configured with settings like license keys, remote server locations, or desktop shortcuts so that the app can be installed in the background.</span></span>
+
+<span data-ttu-id="e34b9-138">有三個選項来封裝您的應用程式：</span><span class="sxs-lookup"><span data-stu-id="e34b9-138">There are three options to get your apps packaged:</span></span> 
+
+
+- <span data-ttu-id="e34b9-139">您可以自行封裝應用程式</span><span class="sxs-lookup"><span data-stu-id="e34b9-139">You can package apps yourself</span></span>
+- <span data-ttu-id="e34b9-140">您可以使用非 Microsoft 廠商</span><span class="sxs-lookup"><span data-stu-id="e34b9-140">You can work with a non-Microsoft vendor</span></span>
+- <span data-ttu-id="e34b9-141">您可以邀請 MCS 與要封裝您的應用程式。</span><span class="sxs-lookup"><span data-stu-id="e34b9-141">You can engage with MCS to package your apps.</span></span> <span data-ttu-id="e34b9-142">使用您的 Microsoft 帳戶代表配合。</span><span class="sxs-lookup"><span data-stu-id="e34b9-142">Work with your Microsoft account representative.</span></span> <span data-ttu-id="e34b9-143">如需詳細資訊，請參閱[Working with Microsoft 諮詢服務](apps-MCS.md)。</span><span class="sxs-lookup"><span data-stu-id="e34b9-143">For more details, see [Working with Microsoft Consulting Services](apps-MCS.md).</span></span>
+
+
+
+
+
+
+
+## <a name="deploying-apps"></a><span data-ttu-id="e34b9-144">部署應用程式</span><span class="sxs-lookup"><span data-stu-id="e34b9-144">Deploying apps</span></span>
+
+<span data-ttu-id="e34b9-145">不論您用來取得封裝之後，已完成，應用程式的方法就可以依照[部署應用程式連接至 Microsoft 受管理的電腦裝置](../get-started/deploy-apps.md)中的步驟。</span><span class="sxs-lookup"><span data-stu-id="e34b9-145">Whatever method you use to get apps packaged, once that is complete, you're ready to follow the steps in [Deploy apps to Microsoft Managed Desktop devices](../get-started/deploy-apps.md).</span></span>
+
+
