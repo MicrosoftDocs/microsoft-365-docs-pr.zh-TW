@@ -1,91 +1,80 @@
 ---
-title: 準備應用程式以使用 Microsoft 受管理的電腦
+title: Microsoft 受管理電腦中的應用程式
 description: ''
 keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: be28760fc3facdb21643943ace11deda378d437c
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: db89e3b1f8b5b8073eab62e4b4d38087e1e73fa4
+ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289061"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913044"
 ---
-# <a name="preparing-apps-for-microsoft-managed-desktop"></a>準備應用程式以使用 Microsoft 受管理的電腦
+# <a name="apps-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的應用程式
 
 <!--This topic is the target for 2 "Learn more" links in the Admin Portal (aka.ms/app-overview;app-package); also target for link from Online resources (aka.ms/app-overviewmmd-app-prep) do not delete.-->
 
 <!--Applications: supported/onboard/deployment -->
  
-Microsoft 和 Microsoft 受管理電腦的客戶同樣也有重大、 尚未不同職責周圍搭配 Microsoft 受管理電腦的應用程式。
+## <a name="apps-generally"></a>應用程式通常
 
-## <a name="microsoft-responsibilities"></a>Microsoft 責任
-**Office 365 應用程式**Microsoft 會提供完整的部署、 更新和支援的特定的 Office 365 應用程式的服務。 所有使用者會都收到 Office 365 隨執行，以便使用者可以快速上手，裝置的映像中包含的應用程式 64 位元版本的基底集。 Project 和 Visio 應用程式中的 Office 365 套件將分別獲得授權。  Microsoft 受管理的電腦會提供讓 IT 系統管理員管理授權及部署這些應用程式適當地為其組織的部署群組。 Microsoft 將會支援透過 Microsoft 受管理的桌上型電腦支援頻道這些應用程式的使用者。
+Microsoft 包含特定索引鍵的應用程式，以及參與 Microsoft 受管理的電腦所需的 Microsoft 365 E3 或 E5 授權。 不過，即使我們將提供這些應用程式，您仍會有特定的職責和動作，以完成。
 
-**營運應用程式**Microsoft 提供工具的 IT 系統管理員管理及部署至使用者其-營運 (LOB) 應用程式作為 Intune 產品的一部分。 Microsoft 將支援如同詳細的[行的商務應用程式](#line-of-business-applications)的應用程式部署問題 
-
-**使用 Intune 部署**Intune 會連結至**商務用 Microsoft Store** ，讓採購應用程式以透過 Intune 部署 Microsoft 受管理的電腦上架期間。 Microsoft 也會部署至使用者從 Microsoft 網上商店的公司入口網站應用程式，以便 IT 系統管理員可以為使用者提供自助體驗。
-
-**應用程式管理**Microsoft 可能會找出受限制的應用程式，這並不適合現代化工作場所增進因其系統的影響。 識別此類應用程式時 Microsoft 將會通知客戶，而該應用程式需要從租用戶中移除。 
-
-如需有關受限制的應用程式行為和應用程式需求的詳細資訊，請參閱 < <b0>Microsoft 受管理的電腦應用程式需求</b0>
-
-## <a name="customer-responsibilities"></a>客戶責任
-Office 365 套件是核心 Microsoft 的生產力供應項目，隨附於 Microsoft 受管理電腦的所有使用者的 Microsoft 365 授權。 Microsoft 部署、 更新，以及支援 Microsoft 受管理的電腦裝置的 Office 應用程式時仍有一些客戶有責任的區域。
-- **指派授權**的客戶負責將適當的授權指派給使用者的 Office 365。 
-- **新增使用者至安全性群組**-的客戶與使用者需要 Project 或 Visio，IT 系統管理員必須將這些使用者加入適當的部署群組。 IT 系統管理員也負責管理這些使用者的生命週期結束。 
-- **新增元件部署 Office 365**的客戶負責部署至 Office 365 套件這必要的任何增益集。 
-
-由於-營運 (LOB) 應用程式是唯一的每個客戶，客戶負責管理其組織未部署由 Microsoft 中的所有應用程式。 其中包括：
-- 決定哪些應用程式所需及他們需要由誰
-- 將應用程式指派給這些使用者
-- 建立及管理應用程式的工作分派的維護 Azure Active Directory (AD) 群組 
-
-客戶必須將 LOB 應用程式上傳到 Intune。 然後，他們必須負責部署、 更新，並透過其各自的週期，解除委任這些應用程式，以及管理這些應用程式的使用者的支援。
-
-## <a name="office-applications"></a>Office 應用程式
-Microsoft 365 E5 授權的一部分，Microsoft 被部署 Office 365 Standard Suite （64 位元）。 
-
-如需詳細資訊，請參閱 < <b0>Microsoft 受管理電腦技術</b0> <!--- and the other applications licensed under Office 365 E5 may be deployed by the customer using Intune’s deployment tools.-->
-
-## <a name="line-of-business-applications"></a>線條的商務應用程式
-下表總結了責任，跨-營運 (LOB) 應用程式的不同階段。 
-
-應用程式的工作項目 |    客戶    | Microsoft
---- | --- | ---
-**上架應用程式** |  |
-識別應用程式所需的目標的使用者群組   | ![是](images/checkmark.png)  |
-建立及管理應用程式部署 Azure AD 群組 | ![是](images/checkmark.png) |   
-**應用程式封裝** |  |
-封裝應用程式，以符合 Intune 部署標準 |  ![是](images/checkmark.png) |  
-將應用程式上傳到 Intune | ![是](images/checkmark.png)     |
-Microsoft 受管理的桌上型電腦環境中測試應用程式 |    ![是](images/checkmark.png) |  
-測試與使用者的應用程式    | ![是](images/checkmark.png) |    
-**部署** | |
-管理，並將使用者指派給應用程式  | ![是](images/checkmark.png)  |
-Intune 部署工具會傳遞至遠端用戶端應用程式| |   ![是](images/checkmark.png)
-識別並部署到 Intune 應用程式更新 | ![是](images/checkmark.png)    |
-Unistall] 和 [移除應用程式時已停用    | ![是](images/checkmark.png) |    
-**管理** | |
-視需要而定，並指派授權 |   ![是](images/checkmark.png)     |
-提供-營運應用程式的使用者支援  | ![是](images/checkmark.png) |
-管理應用程式設定遠端    | ![是](images/checkmark.png) |
-
-如需 LOB 應用程式需求的詳細資訊，請參閱 < <b0>Microsoft 受管理的電腦應用程式需求</b0>
+您也可以部署其他非 Microsoft 應用程式至您的使用者透過公司入口網站或所需的背景安裝的自助，所有使用 Microsoft Intune 部署管線。 如果您有您可以移轉您需要自行; 這些應用程式的專業知識如果沒有 Microsoft 諮詢服務 (MCS) 或非 Microsoft 廠商將樂於以協助您進行封裝和移轉的專案。 如需使用 MCS 的詳細資訊，請參閱[Working with Microsoft 諮詢服務](apps-MCS.md)。
 
 
-## <a name="intune-application-deployment"></a>Intune 應用程式部署
-透過 Microsoft 受管理的桌上型電腦系統管理入口網站，或透過 Intune 入口網站，可以處理應用程式管理。 Intune 的應用程式管理入口網站顯示部署 for Windows、 Android 和 iOS 的應用程式。 Microsoft 受管理的桌上型電腦系統管理入口網站限制檢視以 Windows 10 應用程式。 兩者都可透過 Azure 入口網站。 
-* [Intune 應用程式管理基本概念](https://docs.microsoft.com/intune/app-management)
-* [將應用程式新增至 Intune](https://docs.microsoft.com/intune/app-management)
-   * [新增-營運應用程式](https://docs.microsoft.com/intune/lob-apps-windows)
-   * [將 Win32 應用程式新增至 Intune](https://docs.microsoft.com/intune/apps-win32-app-management)
-   * [新增 web 應用程式](https://docs.microsoft.com/intune/web-app)
-* [部署應用程式](https://docs.microsoft.com/intune/apps-deploy)
-   * [將應用程式部署至 Windows 10](https://docs.microsoft.com/intune/apps-windows-10-app-deploy)
-* 公司入口網站
-   * [部署在公司入口網站](https://docs.microsoft.com/intune/store-apps-company-portal-app)
-   * [設定公司入口網站應用程式](https://docs.microsoft.com/intune/company-portal-app)
+## <a name="apps-provided-by-microsoft"></a>Microsoft 所提供的應用程式
+
+隨附於 Microsoft 受管理電腦授權是 64 位元版本的 Office 365 專業增強版 Standard Suite （Word、 Excel、 PowerPoint、 Outlook、 Publisher、 Access、 Skype for Business 和 OneNote。) 中的應用程式按一下 [-隨選即用版本的 Microsoft Project 和 Visio 會根據預設，*不*包含，但您可以要求他們加入。 如需有關這些應用程式的詳細資訊，請參閱[安裝 Microsoft Project 或 Microsoft 受管理的電腦裝置上的 Microsoft Visio](../get-started/project-visio.md)。
+
+### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Microsoft 沒有為支援我們提供應用程式
+
+Microsoft 會提供包含 Office 365 專業增強版應用程式的部署、 更新和支援的完整服務。 按一下 [-隨選即用版本的 Microsoft Project 和 Visio 會根據預設，*不*包含，但 Microsoft 受管理的電腦會提供讓 IT 系統管理員管理授權及部署這些應用程式適當的部署群組您組織。 Microsoft 將會支援透過 Microsoft 受管理的電腦支援頻道這些應用程式的使用者。
+
+### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>您要做為支援我們提供應用程式
+
+仍有某些您需要運用這些應用程式的事項：
+
+- **將授權指派**-您負責取得並指派適當的授權給 Office 365 專業增強版的使用者。
+- **新增使用者至安全性群組**-如果您使用 Microsoft Project 或 Visio，IT 系統管理員必須將新增至適當的部署群組的使用者。 IT 系統管理員也是負責收回這些使用者的授權，如果他們離開公司的。
+- **部署 Office 365 Addons** -如果您需要的任何 Office 365 專業增強版的應用程式的任何 Addons，將其部署集中像任何其他 Windows 32 應用程式。 
+
+## <a name="apps-you-provide"></a>您提供的應用程式
+
+當然，您可能有其他您需要的企業營運的應用程式的數量。 這些可以可以只部署至 Microsoft 受管理的電腦裝置使用 Microsoft Intune 部署管線。 如果應用程式需要它可以讓他們封裝廠商 （這可能是在非 Microsoft 供應商或 Microsoft 諮詢服務 (MCS)），或如果您有方法，您可以封裝他們自己。 然後將這些套件新增至 Microsoft 受管理電腦入口網站，並將它們指派給 Azure Active Directory 群組，以觸發部署。 
+
+如果您目前使用 System Center Configuration Manager 部署您的應用程式，Microsoft 受管理的電腦可以提供您評估您的應用程式，並探索哪些項目可供移轉至 Microsoft Intune 和哪些項目可能需要一些調整查詢.
+
+
+### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>準備您自己的應用程式以使用 Microsoft 受管理電腦中的相對路徑
+檢閱您的應用程式，檢查：
+
+- 無應用程式禁止或有限制的行為， [Microsoft 受管理的電腦應用程式需求](https://aka.ms/app-req)所述。
+- 應用程式必須準備好以透過 Microsoft Intune 進行管理。 如需有關此的詳細資訊，請參閱[Windows 10 應用程式部署使用 Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy)和[新增應用程式連接至 Microsoft Intune](https://docs.microsoft.com/intune/apps-add)。
+- 提供授權金鑰、 授權合約協議等預先設定的伺服器連線其他前封裝需求。
+
+### <a name="decide-how-to-package-apps"></a>決定如何封裝應用程式
+
+某些獨立軟體廠商可能會要求您的應用程式會封裝集中在部署之前。 「 封裝 」 表示應用程式的安裝程式會設定與授權金鑰，遠端伺服器的位置或桌面捷徑語言設定，以便應用程式可以安裝在背景中。
+
+有三個選項来封裝您的應用程式： 
+
+
+- 您可以自行封裝應用程式
+- 您可以使用非 Microsoft 廠商
+- 您可以邀請 MCS 與要封裝您的應用程式。 使用您的 Microsoft 帳戶代表配合。 如需詳細資訊，請參閱[Working with Microsoft 諮詢服務](apps-MCS.md)。
+
+
+
+
+
+
+
+## <a name="deploying-apps"></a>部署應用程式
+
+不論您用來取得封裝之後，已完成，應用程式的方法就可以依照[部署應用程式連接至 Microsoft 受管理的電腦裝置](../get-started/deploy-apps.md)中的步驟。
+
+

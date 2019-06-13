@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何為 Microsoft 365 商務版設定條件式存取原則。
-ms.openlocfilehash: 6ca3995113f090ccf2b119abde059a68ce562970
-ms.sourcegitcommit: ab04fea2765a63489d70b506f0e14303a5be16a0
+ms.openlocfilehash: a0cc4a9085bdfe6a8d40acc69a020af1c5861fcf
+ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34806814"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913004"
 ---
 # <a name="set-up-conditional-access-policies-for-microsoft-365-business"></a>Microsoft 365 商務版設定條件式存取原則
 
@@ -52,9 +52,9 @@ Microsoft 建議您啟用所有的這些基準原則。 啟用這些原則之後
     ![] 頁面會列出基準條件式存取原則。](media/baslinepolicies.png)
 1. 請參閱下列的特定指示，針對每個原則：
 
-    - [系統管理員需要 MFA](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-
-    -   [使用者需要 MFA](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
-    - [封鎖舊版驗證](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+  - [系統管理員需要 MFA](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
+- [Reequire MFA 使用者](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+ - [封鎖舊版驗證](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+  - [需要 MFA 的服務管理](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 您可以設定許多額外的原則，例如需要核准的用戶端應用程式。 請參閱如需詳細資訊的[條件式存取文件](https://docs.microsoft.com/azure/active-directory/conditional-access/)。

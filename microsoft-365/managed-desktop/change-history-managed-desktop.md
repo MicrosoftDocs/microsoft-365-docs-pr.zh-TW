@@ -8,16 +8,23 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 3cf7e948e5bf963ae9239656881c181d90f23a6e
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: 4cd61e333773ddeddc866481be7e1cfa283e4386
+ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857320"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913024"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 受管理電腦文件的變更歷程記錄
 
 本主題將列出[Microsoft 受管理電腦文件](index.yml)中的最新及更新主題。
+
+## <a name="june-2019"></a>2019 年 6 月
+新的或變更主題 | 描述
+--- | ---
+[Microsoft 受管理電腦中的應用程式](get-ready/apps.md) | 更新的主題
+[使用 Microsoft 諮詢服務](get-ready/apps-mcs.md) | 新的主題
+[Microsoft 受管理電腦角色和責任](intro/roles-and-responsibilities.md) | 更新的主題
 
 
 ## <a name="may-2019"></a>2019 年

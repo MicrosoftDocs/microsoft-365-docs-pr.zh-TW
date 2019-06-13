@@ -3,16 +3,15 @@ title: Microsoft 受管理的電腦應用程式需求
 description: ''
 keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
-ms.date: 01/08/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 07e4719d87cb11910a90665ce9beb95edf6641a4
-ms.sourcegitcommit: e15cf5d0d8ff3dfdc457b469992d72ac802e6434
+ms.openlocfilehash: ded8bcfd87a6b430dfc4be055a582b482872b104
+ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33467741"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913014"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft 受管理的電腦應用程式需求
 
@@ -28,7 +27,7 @@ ms.locfileid: "33467741"
 
 ## <a name="centrally-managed-apps"></a>集中管理的應用程式
 
-必須透過 Intune、 Microsoft 網上商店或 Microsoft 網上商店商務; 部署所有應用程式和 Microsoft 受管理的裝置上安裝驅動程式如果有的話驅動程式也會透過 Windows Update 服務部署。 
+透過 Microsoft Intune、 Microsoft 網上商店或 Microsoft 網上商店商務;，則必須部署所有應用程式和 Microsoft 受管理的裝置上安裝驅動程式如果有的話驅動程式也會透過 Windows Update 服務部署。 
 
 ## <a name="prohibited-app-classes"></a>禁止之應用程式的類別
 
