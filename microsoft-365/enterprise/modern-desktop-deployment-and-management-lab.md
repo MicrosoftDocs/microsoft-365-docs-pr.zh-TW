@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: 86bdf37ca56c5779042ee78be091dd14ee63b80e
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 4b69047c2c595b899fd29593c9c02a3531ffbd53
+ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814544"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017495"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署的 Lab Kit
 
-這些可下載的實際操作實驗室著重於 Windows 10 部署和 Office 365 部署，以及相關的設定和管理考量後置部署。此訓練高度建議給為結束使用 Windows 7 做準備的組織，但如果您目前使用 Windows 10 和 Office 365 增加版或 Office 2019，也適用。其中包括 Windows 10、Office 365 專業增強版、Enterprise Mobility + Security，以及相關產品及服務的指南。
+這些可下載的實際操作實驗室著重於 Windows 10 部署和 Office 365 部署，以及相關的設定和管理考量後置部署。此訓練高度建議給為結束使用 Windows 7 做準備的組織，但如果您目前使用 Windows 10 和 Office 365 增加版或 Office 2019 則也適用。其中包括 Windows 10、Office 365 專業增強版、Enterprise Mobility + Security，以及相關產品及服務的指南。
 
 這些實驗室是設計來協助您規劃、測試及驗證執行 Windows 10 企業版和 Office 365 專業增強版之桌面的部署和管理。 實驗室涵蓋桌面部署輪中概述的步驟和工具，跨越 System Center Configuration Manager、Windows Analytics，Office 自訂工具、OneDrive、Windows Autopilot，以及其他。
 
@@ -36,18 +36,17 @@ ms.locfileid: "34814544"
 
 實驗室可讓您自動佈建虛擬實驗室環境，包括網域結合的桌面用戶端、網域控制站、網際網路閘道，以及完整設定的 ConfigMgr 執行個體。實驗室包含下列產品的評估版本：
 
-  - Windows 10 企業版，版本 1809
-  - Windows 7
-  - Office 365 專業增強版，版本 1901
-  - System Center Configuration Manager，版本 1802
-  - Windows Assessment and Deployment Kit for Windows 10，版本 1809
+  - Windows 10 企業版，版本 1903
+  - Windows 7 Enterprise
+  - System Center Configuration Manager，版本 1902
+  - Windows Assessment and Deployment Kit for Windows 10，版本 1903
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V) 5.1
   - Microsoft BitLocker Administration and Monitoring 2.5 SP1
-  - Windows Server 2016
-  - Microsoft SQL Server 2014
+  - Windows Server 2019
+  - Microsoft SQL Server 2017
 
-此外，實驗室是設計來連線到下列項目的試用版：
+此外，實驗室是設計來連線到下列項目的試用版： 
 
   - Microsoft 365 企業版 E5
 
@@ -119,7 +118,7 @@ ms.locfileid: "34814544"
 
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpsakamsmddlabsevalcenter"></a>[**下載 Windows 和 Office 部署的 Lab Kit**](https://aka.ms/mddlabs_evalcenter)
 
-請使用寬頻來下載此內容，以強化您的下載體驗，並允許 30-45 分鐘進行自動佈建。實驗室環境最少需要 16 GB 可用記憶體及 150 GB 可用磁碟空間。如需最佳效能，建議使用 32 GB 可用記憶體。實驗室將在 2019 年 5 月 13 日到期。到期之前，將會發佈新的版本。**
+*請使用寬頻來下載此內容，以強化您的下載體驗，並允許 30-45 分鐘進行自動佈建。實驗室環境最少需要 16 GB 可用記憶體及 150 GB 可用磁碟空間。如需最佳效能，建議使用 32 GB 可用記憶體。實驗室將在 2019 年 8 月 27 日到期。到期之前，將會發佈新的版本。*
 
 ## <a name="additional-guidance"></a>**其他指引**
 
