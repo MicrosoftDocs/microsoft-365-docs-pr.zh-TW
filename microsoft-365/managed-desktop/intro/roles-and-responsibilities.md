@@ -1,55 +1,55 @@
 ---
-title: Microsoft 受管理電腦角色和責任
-description: 本主題說明的角色和責任 Microsoft 所提供的 Microsoft 受管理的電腦。
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+title: Microsoft 受管理的桌面角色和責任
+description: 本主題說明 Microsoft 針對 Microsoft 受管理的電腦所提供的角色和責任。
+keywords: Microsoft 受管理的桌面、Microsoft 365、服務、檔
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 161be07907754cdd7a0cd88dd3342d4b5e3c72e4
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a51738b993a8a3683769d10882877b3b42d34ddf
+ms.sourcegitcommit: 7edeea1311ebb79a8c72418d2c6451b94fb788cb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283556"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35061846"
 ---
-# <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Microsoft 受管理電腦角色和責任
+# <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Microsoft 受管理的桌面角色和責任
 
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/admin-access); do not delete.-->
 <!-- from Roles and responsibilities -->
 
-當您的組織已註冊 Microsoft 受管理電腦中時，Microsoft 的作用為何您？ 以及為何您組織的責任？
+當您的組織註冊 Microsoft 受管理的電腦時, Microsoft 會為您做什麼？ 您的組織有何責任？
 
 ## <a name="microsofts-roles-and-responsibilities"></a>Microsoft 的角色和責任
 
-以下是幾個重要的角色和會由 Microsoft 提供給您的責任。
+以下是 Microsoft 會提供給您的幾個重要角色和責任。
 
-角色或責任 | 說明
+角色或責任 | 描述
 --- | ---
-MDM 原則管理 | Microsoft 將會套用 MDM 原則根據最佳作法，並且考慮的原則變更要求。 我們也會對您的租用戶前述[裝置原則](../service-description/device-policies.md)進行變更。
-使用者支援 | Microsoft 會提供使用者支援的裝置、 Windows 及 Office 的所有註冊的使用者，透過取得說明應用程式上所有的 Microsoft 受管理的電腦裝置已預先安裝的產品套件。 
-Microsoft 受管理的電腦服務支援 | Microsoft 會提供支援給客戶 IT 部門透過 Microsoft 受管理的桌上型電腦作業小組。 此小組會支援技術的疑難排解，請變更要求和事件管理客戶的 Microsoft 受管理的桌上型電腦環境。 如需詳細資訊，請參閱 <<c0>支援的 Microsoft 受管理電腦的系統管理員。
-安全性監視 | Microsoft 會監視客戶 Microsoft 受管理的電腦裝置使用 Windows Defender ATP。 如果威脅偵測到由 Microsoft 受管理的桌面安全性作業中心 (SOC)，Microsoft 將會通知客戶、 隔離裝置，並修正此問題： 從遠端。 如需詳細資訊，請參閱 < <b0>Security</b0>。
-監視和管理更新 | Microsoft 將主動監視客戶 Microsoft 受管理的電腦裝置，以確保 Microsoft Windows 和 Microsoft Office 安裝最新的品質與功能更新。 如需詳細資訊，請參閱[更新的處理方式](../service-description/updates.md)。
-使用者和裝置群組 | Microsoft 受管理電腦作業小組會建立及管理必要的裝置和使用者群組的 IT 作業過程。 這些群組允許沒有成員資格或組態變更。 更換這些群組可能會導致未預期的裝置設定與遺失的功能。 對於任何問題或周圍一次建立這些群組的問題，IT 系統管理員可以連絡 Microsoft 受管理電腦作業。 如需詳細資訊，請參閱 <<c0>支援的 Microsoft 受管理電腦的系統管理員。
+MDM 原則管理 | Microsoft 會根據最佳作法套用 MDM 原則, 並考慮原則變更的要求。 我們也會對您的租使用者所做的變更, 如[裝置原則](../service-description/device-policies.md)所述。
+使用者支援 | Microsoft 會透過預先安裝在所有 Microsoft 受管理的電腦裝置上的 Get Help app, 為裝置、Windows 和 Office 產品套件提供使用者支援。 
+Microsoft 受管理的桌面服務支援 | Microsoft 會透過 Microsoft 受管理的桌面作業小組, 為客戶 IT 部門提供支援。 此小組將支援客戶的 Microsoft 受管理桌面環境的技術疑難排解、變更要求和事件管理。 如需詳細資訊, 請參閱[Microsoft 受管理電腦的系統管理支援](../working-with-managed-desktop/admin-support.md)。
+安全性監視 | Microsoft 會使用 Windows Defender ATP 來監視客戶 Microsoft 受管理的電腦裝置。 如果 Microsoft 受管理的桌面安全性作業中心 (SOC) 偵測到威脅, Microsoft 會通知客戶、隔離裝置, 並從遠端修正問題。 如需詳細資訊, 請參閱[安全性](../service-description/security.md)。
+更新監控與管理 | Microsoft 會主動監視客戶 Microsoft 受管理的電腦裝置, 以確定已安裝 Microsoft Windows 和 Microsoft Office 的最新品質和功能更新。 如需詳細資訊, 請參閱[處理更新的方式](../service-description/updates.md)。
+使用者和裝置群組 | Microsoft 受管理的桌面作業小組會建立並管理所需的裝置和使用者群組, 做為 IT 作業的一部分。 這些群組都不允許任何成員資格或設定變更。 變更這些群組可能會導致裝置未預期的設定及功能遺失。 關於這些群組的任何問題或問題已建立之後, IT 系統管理員可以聯絡 Microsoft 受管理的桌面作業。 如需詳細資訊, 請參閱[Microsoft 受管理電腦的系統管理支援](../working-with-managed-desktop/admin-support.md)。
 
 ## <a name="your-roles-and-responsibilities"></a>您的角色和責任
 
-下面是常見的角色和責任，未提供的 Microsoft，但成功部署所需的其他設定。 它不是詳盡，但適用於大多數的組織。 有幾項目下方 Microsoft 與客戶共用 responsibilties。 
+以下是 Microsoft 未提供的一組其他共同角色和責任, 但是是成功部署所需的。 這並不是完整的, 但適用于大部分的組織。 以下是 Microsoft 和客戶共用 responsibilties 的一些專案。 
 
-角色或責任 | 說明
+角色或責任 | 描述
 --- | ---
-變更管理 | Microsoft 會事先通知客戶，時對其 Microsoft 受管理的桌上型電腦環境需要變更。 需要有自己的變更管理處理程序，必須與 Microsoft 受管理的桌上型電腦作業小組建立連絡人客戶。 客戶也需要檢閱及核准這些變更的資源。 如需詳細資訊，請參閱[作業和監控](../service-description/operations-and-monitoring.md)。  
-身分識別管理 | 客戶負責建立使用者帳戶指派使用者至群組，將中繼資料保持在最新狀態。 
-Office 365 組態和管理 | Microsoft 負責確保 Office 應用程式會部署至使用者，且這些應用程式會保持在最新狀態。 <br><br> 客戶負責管理 Office 365 服務和原則，包括 Exchange Online 的管理責任：<br>電子郵件管理<br>信箱及規則設定<br>Exchange 內部部署管理<br><br>客戶也負責進行共同作業工具、 SharePoint server 管理、 網域管理、 設定 Office 365 系統管理入口網站中的安全性和資訊原則。 
-使用者支援 | 客戶負責提供使用者支援： <br>-在站台基礎結構： 所有網路和網際網路連線能力、 VPN 基礎結構和用戶端組態、 本機的會議房間設備、 印表機、 proxy 伺服器和防火牆的組態。<br><br>-全公司雲端資源： 電子郵件、 SharePoint、 共同作業服務和其他雲端基礎結構與相關的全公司的技術使用量。<br><br>-一行商務和任何其他公司特定應用程式。
-App | Microsoft 會提供核准要求時使用 Intune 的應用程式的部署指導。<br><br>客戶負責：<br>-提供其組織 （外部 Office 365 應用程式） 的應用程式清單<br>應用程式授權管理<br>– 具有授權的數量和正確的類型<br>應用程式工作分派<br>– 應用程式指派給 Azure AD 使用者群組<br>應用程式更新<br>– 監視、 封裝，以及部署應用程式功能和安全性更新<br>使用者應用程式測試 (UAT)<br>-提供適當的可部署套件<br><br>如需詳細資訊，請參閱[應用程式](../get-ready/apps.md)
-安全性監視和回應 | 客戶負責調查並解決的非-Microsoft 受管理的電腦裝置，以確保 Microsoft 受管理的桌上型電腦作業小組會通知可能會影響服務的任何問題的事件。
-作業支援 | 客戶負責提供慣用的客戶連絡人與主題專家所提供的清單。 Microsoft 會需要這些非-Microsoft 受管理電腦作業事件的情況下。 <br><br>客戶也負責進行調查並解決非-Microsoft 受管理的電腦裝置和服務及確保 Microsoft 受管理的桌上型電腦作業小組會永遠通知事件。
-網路基礎結構，包括 VPN | 客戶負責安裝、 設定及管理 （包括疑難排解及偵錯） 的所有網路相關的基礎結構和服務，包括網際網路連線能力，網路控制項、 proxy 設定及遠端連線基礎結構。<br><br>如果 proxy 設定 （在硬體或軟體），還有一群必須 proxy 所允許的 Url。 客戶負責疑難排解任何衝突或不相容，因為多個 proxy。 您可以新增網路 proxy 特定組織使用可設定的設定。 如需詳細資訊，請參閱 <<c0>組態設定。<br><br>如需詳細資訊，請參閱[Proxy 設定](../get-ready/network.md)。
-列印 | 客戶負責安裝、 維護及管理印表機和列印佇列。 雲端列印是建議的解決方案，但不是必要。 
+變更管理 | Microsoft 會在需要對其 Microsoft 受管理的桌面環境進行變更時, 提前通知客戶。 客戶需要有自己的變更管理程式, 且有與 Microsoft 受管理的桌面作業小組建立的連絡人。 客戶也需要有資源來審查及核准這些變更。 如需詳細資訊, 請參閱[Operations and monitoring](../service-description/operations-and-monitoring.md)。  
+身分識別管理 | 客戶負責建立使用者帳戶、將使用者指派給群組, 以及將中繼資料保持在最新狀態。 
+Office 365 設定和管理 | Microsoft 負責確保 Office 應用程式已部署至使用者, 而這些應用程式會保持在最新狀態。 <br><br> 客戶負責管理 Office 365 服務和原則, 包括 Exchange Online 系統管理責任:<br>-電子郵件管理<br>-信箱和規則設定<br>-Exchange 內部部署管理<br><br>客戶也負責 Office 365 系統管理入口網站中設定的共同作業工具、SharePoint server 管理、網域管理、安全性和資訊原則。 
+使用者支援 | 客戶負責提供下列專案的使用者支援: <br>-網站基礎結構: 所有網路和網際網路連線、VPN 基礎結構和用戶端設定、本機會議會議室設備、印表機、proxy 伺服器和設定、防火牆。<br><br>-全公司的雲端資源: 電子郵件、SharePoint、共同作業服務和其他雲端基礎結構, 與全公司的技術需求量有關。<br><br>-業務線和任何其他公司特定的應用程式。
+App | 角色和責任對作為 Microsoft 受管理的桌面部分所提供, 與您所提供的應用程式稍有不同。 <br><br>針對 Microsoft 所提供的應用程式 (Office 365 專業增強版 Standard Suite, 包含 Word、Excel、PowerPoint、Outlook、Publisher、Access、商務用 Skype、小組和 OneNote), **Microsoft**會提供部署、更新及支援的完整服務。 **您**必須取得並指派這些應用程式的授權、將使用者新增至安全性群組, 以及管理您所需的任何 Office 365 Addons。<br><br>針對您提供的應用程式 (例如企業營運應用程式), 無論您是自行包裝, 還是請與非 Microsoft 廠商接洽,**您**必須負責這些動作: <br><br>-識別目標使用者群組所需的應用程式<br>-建立和管理應用程式部署的 Azure AD 群組<br>-打包應用程式以符合 Microsoft Intune 部署標準<br>-將應用程式上傳至 Microsoft Intune<br>-在 Microsoft 受管理的桌面環境中測試應用程式<br>-與您的使用者一起測試應用程式<br>-管理與指派使用者至應用程式<br>-透過 Microsoft Intune 識別及部署應用程式更新<br>-卸載並移除已淘汰的應用程式<br>-購置和指派授權<br>-提供企業營運應用程式的使用者支援<br>-遠端管理應用程式設定<br><br>**Microsoft**會提供 microsoft Intune 部署工具, 將應用程式提供給遠端用戶端。<br><br>如需詳細資訊, 請參閱[app](../get-ready/apps.md)
+安全性監視和回應 | 客戶負責調查和解決非 Microsoft 受管理的桌面裝置的事件, 並確保 Microsoft 受管理的桌面作業小組獲悉任何可能會影響服務的問題。
+作業支援 | 客戶負責提供一份喜好的客戶連絡人和主題專家的清單。 如果有非 Microsoft 受管理的桌面作業事件, 則 Microsoft 需要這些服務。 <br><br>客戶也負責調查和解決非 Microsoft 受管理的桌面裝置和服務的事件, 並確保始終會通知 Microsoft 受管理的桌面作業小組。
+網路基礎結構, 包括 VPN | 客戶負責所有網路相關基礎結構和服務 (包括網際網路連線、網路控制、proxy 設定和遠端) 的設定、設定和管理 (包括疑難排解及調試)。連線基礎結構。<br><br>如果已設定 proxy (在硬體或軟體中), 則必須有 proxy 所允許的 Url 的集合。 客戶負責疑難排解因多個 proxy 而造成的任何衝突或不相容性。 您可以使用可設定的設定來新增組織特有的網路 proxy。 如需詳細資訊, 請參閱[可設定的設定](../working-with-managed-desktop/config-setting-ref.md#proxy)。<br><br>如需詳細資訊, 請參閱[Proxy Configuration](../get-ready/network.md)。
+列印 | 客戶負責安裝、維護和管理印表機和列印佇列。 雲端列印是建議的解決方案, 但不是必要的。 
 
 
 
