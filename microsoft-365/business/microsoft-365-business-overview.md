@@ -1,10 +1,10 @@
 ---
-title: 概觀 Microsoft 365 商務版
+title: 概述 Microsoft 365 商務版
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.date: 9/20/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,43 +20,45 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: 了解如何設定 Microsoft 365 商務版。
-ms.openlocfilehash: eb3d611d2be0480fdd0ff897ec5ba69b17695041
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+description: 瞭解如何設定 Microsoft 365 商務版。
+ms.openlocfilehash: 6fd328ebd4a8d3fbcde836c4aa87b56b9775c3cd
+ms.sourcegitcommit: 64a7511d8c5ef527673b4c05753e6bb52ce9ab86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660440"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35114955"
 ---
-# <a name="overview-of-microsoft-365-business"></a>Microsoft 365 商務版的概觀
+# <a name="overview-of-microsoft-365-business"></a>Microsoft 365 商務版概述
 
 ## <a name="what-is-microsoft-365-business"></a>什麼是 Microsoft 365 商務版
 
 Microsoft 365 商務版是一組完整的企業生產力和共同作業工具，例如 Outlook、Word、Excel 和其他隨時保持最新狀態的 Office 產品。您可以使用易於管理的企業級安全性功能，保護所有 iOS、Android 和 Windows 10 裝置上的工作檔案。
   
-Microsoft 365 商務版是最多 300 個授權，如果您需要更多授權，請參閱[Microsoft 365 企業版](https://go.microsoft.com/fwlink/p/?linkid=860986)文件的詳細資訊。
+Microsoft 365 企業適用于最多300個授權, 如果您需要更多授權, 請參閱[Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)檔以取得詳細資訊。
 
-完整的功能清單，請參閱[Microsoft 365 商務版服務說明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-business-service-description)。
+如需完整的功能清單, 請參閱[Microsoft 365 商務服務說明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-business-service-description)。
   
-## <a name="small-business-security-needs"></a>小型企業版安全性需求
+## <a name="small-business-security-needs"></a>小型企業安全性需求
 
-您的商務資料可能會遭到洩漏，有許多方式。 您和您的使用者可能危害組織的安全性，當您使用不同的裝置和應用程式上的檢視組織資料或遭入侵的認證登入。 更具體而言，您的組織是處於風險中：
+您的商務資料可能會以多種方式遭到破壞。 當您以受損的認證登入, 或在不同的裝置和應用程式上查看組織資料時, 您和您的使用者可能會危及貴組織的安全性。 更明確地說, 您的組織面臨下列風險:
 
-1. 遭入侵或弱式登入認證。
-2. 遭入侵的裝置，含弱式的 pin 碼或使用者所擁有的裝置。
-3. 可以儲存檔案複製/貼上您的組織資料到個人應用程式的使用者。
-4. 安裝及使用弱式安全性 3<sup>rd</sup>廠商應用程式的使用者。
-5. 包括共用機密資料的電子郵件弱點、 網路釣魚嘗試，惡意程式碼等等。
-6. 時，應該的人員可以存取具有機密資訊的文件。
+1. 已遭破壞或弱登入認證。
+2. 具有弱 pin 碼的受損裝置, 或使用者擁有的裝置。
+3. 可將組織的資料複製/貼上或儲存到個人應用程式的使用者。
+4. 以薄弱的安全性安裝及使用 3<sup>rd</sup>方應用程式的使用者。
+5. 電子郵件弱點, 包括共用敏感性資料、網路釣魚企圖、惡意程式碼等等。
+6. 如果不應該, 使用者可以存取機密資訊的檔。
 
-Microsoft 365 商務版可協助保護您在每個這些執行個體的資料。 保護您的商務資料的安全性功能的詳細資訊，如下圖中。
+Microsoft 365 商務版可協助您保護每個實例中的資料。 下圖將詳細說明保護商務資料的安全性功能。
 
-![顯示 M365B 如何保護您的業務圖。](media/m365businessvalueadd.png)
+![說明 M365B 如何保護您的公司的圖形。](media/m365businessvalueadd.png)
 
-若要查看的安全性功能的完整清單，請參閱[Microsoft 365 商務版安全性功能](security-features.md)。 <b0>設定 Microsoft 365 商務版</b0>之後，請參閱 < 開始使用並不包含在內做為安裝程式的一部分的安全性功能的 [<b1>設定進階的安全性原則</b1>。 如需如何設定抵禦網路罪犯和駭客保護良好概觀讀取也[來保護 Office 365 和 Microsoft 365 商務版計劃的前 10 個方式](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)。
+若要查看完整的安全性功能清單, 請參閱[Microsoft 365 商務安全性功能](security-features.md)。 [設定 Microsoft 365 商務](set-up.md)版之後, 請參閱[設定高級安全性原則](set-up-advanced-security.md), 以開始使用未包含在安裝程式中的安全性功能。 若要瞭解如何針對網路罪犯和駭客設定防護, 請參閱[前10種保護 Office 365 和 Microsoft 365 商務方案的方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)。
 
 ## <a name="get-microsoft-365-business"></a>取得 Microsoft 365 商務版
 
 - 如果您有合作夥伴，他們將獲得 Microsoft 365 商務版：[從 Microsoft 合作夥伴中心取得 Microsoft 365 商務版](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center)。
 
-- 如果您不有合作夥伴，並想要取得 Microsoft 365 商務版，您可以[在這裡購買](https://www.microsoft.com/microsoft-365/business)並遵循[註冊](sign-up.md)指示。
+- 如果您沒有合作夥伴, 而且想要取得 Microsoft 365 商務版, 您可以在[這裡購買](https://www.microsoft.com/microsoft-365/business), 並依照[註冊](sign-up.md)指示進行。
+
+- 您也可以使用[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS)來購買 Microsoft 365 商務版, 並取得設定協助。

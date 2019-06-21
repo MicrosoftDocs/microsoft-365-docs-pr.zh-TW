@@ -18,18 +18,24 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何購買和註冊 Microsoft 365 商務版。
-ms.openlocfilehash: ecbf316f63e11ed07dc775f6659f650112cc8cb4
-ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
+ms.openlocfilehash: 0f92bf35d2a7898d530fd509d8d13c91f32ccab3
+ms.sourcegitcommit: 64a7511d8c5ef527673b4c05753e6bb52ce9ab86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017505"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35114915"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>註冊 Microsoft 365 商務版
 
 如果您是合作夥伴, 請參閱[從 Microsoft 合作夥伴中心取得 Microsoft 365 商務](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center)。
 
-移至[探索 microsoft 365 商務優勢](https://www.microsoft.com/microsoft-365/business#pmg-cmp-desktop), 並選擇 [**立即購買**] 在 Microsoft 365 商務版下。
+若要購買 Microsoft 365 商務版, 請移至 [[探索 microsoft 365 商務優勢](https://www.microsoft.com/microsoft-365/business#pmg-cmp-desktop)], 然後選擇 [Microsoft 365 商務] 下的 [**立即購買**]。
+
+您也可以使用[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS)來購買 Microsoft 365 商務版, 並取得設定協助。
+
+## <a name="complete-the-sign-up-steps"></a>完成註冊步驟
+
+購買 Microsoft 365 商務版之後, 請完成下列步驟。
 
 1. 在 [**歡迎使用, 讓我們告訴您**] 頁面輸入必要的資訊。 請注意:
  
@@ -43,7 +49,7 @@ ms.locfileid: "35017505"
     - **您的公司**: 輸入您的唯一公司名稱。 這是您的商務網站使用的名稱 (如果有的話), 也就是您在收到商務電子郵件時, @ 符號之後所要包含的名稱。 此名稱稱為網域。 例如, 如果您的公司叫用 Contoso Skis, 請在 @ 符號之後輸入 ContosoSkis。
     - **選取網域**: 如果您擁有您的功能變數名稱, 請從下拉式功能表中選取 [onmicrosoft.com], 然後再要求您進行設定。 否則, 很容易購買代表您公司的功能變數名稱。 若要執行這項操作, 請從下拉式功能表中選取您想要的網域。 例如, 您的完整電子郵件地址可能是*Teresa@ContosoSkis.net*。 如果功能變數名稱可用, 我們將會立即知道。 如果是的話, 我們會將您的網域成本新增至 Microsoft 365 商務版訂閱的成本。 如果您在這裡購買新的網域, 也會設定並準備好在 Microsoft 365 中使用。 如需網域的相關資訊, 請參閱[網域常見問題](https://docs.microsoft.com/office365/admin/setup/domains-faq)。
     
-    ![[建立您的使用者識別碼] 頁面的螢幕擷取畫面。](media/signinuserid.png)
+        ![[建立您的使用者識別碼] 頁面的螢幕擷取畫面。](media/signinuserid.png)
 
 3. 填入其餘的欄位, 然後選取 [**建立我的帳戶**]。
 4. 在 [**證明] 上。您是。不是**。 頁面輸入電話號碼以透過文字或呼叫來接收程式碼, 然後選取 [**文字**] 或 [**呼叫我**], 然後輸入驗證\>碼**下一步**。
