@@ -1,18 +1,18 @@
 ---
 title: 裝置設定
-description: 了解套用至 Microsoft 受管理的電腦裝置的預設原則。
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+description: 瞭解適用于 Microsoft 受管理的電腦裝置的預設原則。
+keywords: Microsoft 受管理的桌面、Microsoft 365、服務、檔
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9a7d2130775c9c5d99bba711254fc0f0ce540947
-ms.sourcegitcommit: 3294b97a20ae0e5eb8ce6187310cc96b5050a215
+ms.openlocfilehash: 4e41494e853b79d843c5365beea7f01c5ca41308
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34422209"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390480"
 ---
 # <a name="device-configuration"></a>裝置設定
 
@@ -21,38 +21,38 @@ ms.locfileid: "34422209"
 
 <!-- Device configuration and Security Addendum-->
 
-當正在佈建在新的 Microsoft 受管理的電腦裝置時，我們確保正確設定，Microsoft 受管理的電腦，最適合就地。 這包括一組的預設原則，設定為上架程序的一部分。 若要避免發生衝突，不應該變更這些原則。 
+在布建新的 Microsoft 受管理電腦裝置時, 請確定正確設定 (適用于 Microsoft 受管理的桌面) 已優化。 這包括設定為上架程式一部分的一組預設原則。 若要避免衝突, 不應該變更這些原則。 
 
-裝置會送達使用簽章圖像，然後加入 Azure Active Directory 網域，當第一個使用者登入。 裝置會自動將會安裝必要的原則和應用程式不需要所需的 IT 介入。
+裝置會使用簽章圖像, 然後在第一位使用者登入時加入 Azure Active Directory 網域。 裝置會自動安裝所需的原則和應用程式, 而不需要任何 IT 介入。
 
-## <a name="why-mdm-over-group-policy"></a>為什麼 MDM 透過群組原則
+## <a name="why-mdm-over-group-policy"></a>為何 MDM over 群組原則
 
-有幾個原因會使用行動裝置管理 (MDM)，而不是群組原則：
+使用行動裝置管理 (MDM), 而不是群組原則有幾個原因:
 
-- 安全性-MDM 原則是更安全的新式世界。 群組原則被設計來運作起來最順暢與內部部署身分識別時 MDM 專為最佳與雲端身分識別管理 (Azure Active Directory)。
-- 可靠性-MDM 原則提供更可靠的原則部署。 此外，MDM 設定覆寫群組原則物件 (GPO) 原則。 啟動與 Windows 10，版本 1803，MDM 設定將的優先順序透過 [群組原則的值，其支援客戶移至現代化的管理。 
-- Microsoft 受管理電腦願景對齊-提供更多監視原則部署並支援群組為主的方法，逐步推行原則變更為暫停 / 繼續部署時所需的功能。
+- Security-MDM 原則在現代世界中更安全。 群組原則的設計是最適合使用內部部署身分識別, 而 MDM 設計為最適合雲端身分識別管理 (Azure Active Directory)。
+- 可靠性-MDM 原則可提供更可靠的原則部署。 此外, MDM 設定會覆寫群組原則物件 (GPO) 原則。 從 Windows 10 版本1803開始, MDM 設定會優先于群組原則值, 以支援移至新式管理的客戶。 
+- 與 Microsoft 受管理的桌面願景保持一致-提供更全面的原則部署監視, 並支援以群組為基礎的方法, 讓您可以在必要時以暫停/繼續部署的方式, 逐步推出原則變更。
 
-如需詳細資訊，請參閱[行動裝置管理](https://docs.microsoft.com/windows/client-management/mdm/)。 
+如需詳細資訊, 請參閱行動[裝置管理](https://docs.microsoft.com/windows/client-management/mdm/)。 
 
 ## <a name="default-policies"></a>預設原則
 
-此表格會醒目提示會套用至所有的 Microsoft 受管理的電腦裝置，裝置佈建期間的預設原則。 所有偵測到未核准由 Microsoft 受管理的桌上型電腦作業小組由 Microsoft 受管理的電腦物件的變更將會還原。
+此表格會突出顯示在裝置布建期間套用至所有 Microsoft 受管理電腦裝置的預設原則。 Microsoft 受管理的桌面作業小組未核准所有偵測到的變更, 將會還原 Microsoft 受管理的桌面所管理的物件。
 
 原則 | 描述
 --- | ---
-[比較基準安全性 | [Microsoft 安全性基準](https://docs.microsoft.com/windows/device-security/windows-security-baselines)MDM 會針對所有 Microsoft 受管理的電腦裝置。 此基準是業界標準的組態。 它公開發行，以及測試，並已檢閱過的 Microsoft 安全性專家將 Microsoft 受管理的電腦裝置和應用程式安全的現代化工作場所。 <br><br>若要降低威脅不斷演變安全性威脅橫向中的，會更新並部署至 Microsoft 受管理的電腦裝置的每個 Windows 10 功能更新的 Microsoft 安全性基準。<br><br>如需詳細資訊，請參閱 <<c0>適用於 Windows 10 安全性基準。
-Microsoft 受管理電腦所建議的安全性範本 | 一系列安全性基準來最佳化使用者經驗的建議變更。  這些變更會記錄在[安全增訂版](#security-addendum)。 在需要時，就會更新原則增訂版。  
-更新部署 | 使用商務 (WUfB) 的 Windows 更新，來執行逐步部署軟體更新。 IT 系統管理員無法修改部署群組原則設定。 如需有關群組為基礎的部署的詳細資訊，請參閱 <<c0>更新的處理方式。
-診斷資料 | 裝置會設定增強的診斷資料提供給 Microsoft 下一個已知的商業識別碼。 Microsoft 受管理電腦的一部分，IT 系統管理員不能變更這些設定。 客戶的一般資料保護規定 (GDPR) 區域，使用者可以降低程度診斷資料提供，但會減少的服務。 例如，Microsoft 受管理電腦將無法收集來逐一查看上設定和原則，以最佳服務效能與安全性需求所需的資料。 如需詳細資訊，請參閱[貴組織中的設定 Windows 診斷資料。](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
+安全性基準 | 為所有 Microsoft 受管理的電腦裝置設定 MDM 的[Microsoft 安全性基準](https://docs.microsoft.com/windows/device-security/windows-security-baselines)。 此基準是業界標準的設定。 它已公開發行、經過測試, 而且已由 Microsoft 安全性專家進行過檢查, 讓 Microsoft 受管理的桌面裝置和應用程式在現代的工作場所中保持安全。 <br><br>若要減輕不斷演變的安全性威脅中的威脅, 請使用每個 Windows 10 功能更新, 將 Microsoft 安全性基準更新並部署至 Microsoft 受管理的桌面裝置。<br><br>如需詳細資訊, 請參閱[Windows 10 的安全性基準](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/)。
+Microsoft 受管理的桌面建議的安全性範本 | 安全性基準的一組建議變更, 可優化使用者體驗。  這些變更會記錄在[安全性附錄](#security-addendum)中。 原則附錄的更新會視需要而定。  
+更新部署 | 使用 Windows Update for Business (WUfB) 執行逐步部署軟體更新。 IT 系統管理員無法修改部署群組原則的設定。 如需以群組為基礎的部署的詳細資訊, 請參閱[如何處理更新](../working-with-managed-desktop/updates.md)。
+診斷資料 | 裝置將設定為在已知的商業識別碼下提供增強型診斷資料給 Microsoft。 在 Microsoft 受管理的電腦中, IT 系統管理員無法變更這些設定。 對於一般資料保護規定 (GDPR) 地區的客戶, 使用者可以減少所提供的診斷資料層級, 但將會降低服務的能力。 例如, Microsoft 受管理的桌面將無法收集必要的資料, 以依據設定和原則來提供最佳的效能和安全性需求。 如需詳細資訊, 請參閱[在您的組織中設定 Windows 診斷資料。](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
- ## <a name="security-addendum"></a>安全性增訂版
+ ## <a name="security-addendum"></a>安全性附錄
 
- 本節概述的原則，將會部署為其他標準 Microsoft 受管理電腦原則。 標準原則會列在 [[預設原則](#default-policies)。 此組態的設計與財務服務和高管制產業記住： 最佳化最安全的轉變成為，同時保有使用者產能。
+ 本節概述將部署為標準 Microsoft 受管理電腦原則的其他原則。 標準原則會列在 [[預設原則](#default-policies)] 中。 這項設定是由金融服務和高度管制的行業所設計: 優化最安全的想法, 同時維持使用者的生產力。
 
- ### <a name="additional-security-policies"></a>額外的安全性原則
+ ### <a name="additional-security-policies"></a>其他安全性原則
 
- 若要提高安全性針對高管制產業新增這些原則。 
- - **應用程式允許清單**： 應用程式必須受到 Microsoft 受管理的電腦裝置上執行組織的信任。 此提供的鎖定的環境。 必須是上架任何應用程式必須向 Microsoft 受管理的桌上型電腦作業小組通訊。 如需詳細資訊，請參閱 < <b0>Windows Defender 裝置防護</b0>。
- - **安全性監視**： Microsoft 會監視使用[Windows Defender 進階威脅防護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)的裝置。 如果偵測到威脅，Microsoft 將會通知客戶、 隔離裝置，並修正此問題： 從遠端。 
- - **停用 PowerShell V2**: Microsoft 已在 2017 年 8 月取代 PowerShell V2。 Microsoft 受管理電腦的所有裝置上已停用此功能。 如需有關此變更的詳細資訊，請參閱 < <b0>Windows PowerShell 2.0 deprecation </b0>。
+ 新增這些原則是為了提升高管制行業的安全性。 
+ - **應用程式允許清單**: 應用程式必須受組織信任, 才能在 Microsoft 受管理的電腦裝置上執行。 這會提供鎖定的環境。 任何需要架的應用程式必須傳送至 Microsoft 受管理的桌面作業小組。 如需詳細資訊, 請參閱[Windows Defender Device Guard](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide)。
+ - **安全性監視**: Microsoft 會使用[Windows Defender Advanced 威脅防護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)來監視裝置。 如果偵測到威脅, Microsoft 會通知客戶、隔離裝置, 並從遠端修正問題。 
+ - **Disable Powershell v2**: Microsoft 已在2017年8月推出的 PowerShell V2 已被取代。 此功能已在所有 Microsoft 受管理的電腦裝置上停用。 如需此變更的詳細資訊, 請參閱[Windows PowerShell 2.0 過時](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/)。

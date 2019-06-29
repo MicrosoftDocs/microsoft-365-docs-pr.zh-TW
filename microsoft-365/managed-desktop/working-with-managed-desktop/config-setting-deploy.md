@@ -1,68 +1,68 @@
 ---
-title: 部署 Microsoft 受管理電腦中的組態設定
-description: 部署及追蹤 Microsoft 受管理電腦中的可設定的設定變更。
-keywords: Microsoft 受管理的電腦、 Microsoft 365、 服務、 文件、 部署、 分段的部署中，組態設定
+title: 在 Microsoft 受管理的電腦中部署可設定的設定
+description: 在 Microsoft 受管理的電腦中部署及追蹤可設定的設定變更。
+keywords: Microsoft 受管理的桌面、Microsoft 365、服務、檔、部署、分段部署、可設定的設定
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/17/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4662373b926d07558ecedd05c9dfcf472ceb6357
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: bfa769cab9f8d812fa2533232f66b0d4f8a4edb7
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278414"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390510"
 ---
-# <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>部署及追蹤可設定-Microsoft 受管理的電腦
+# <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>部署及追蹤可設定的設定-Microsoft 受管理的電腦
 
-變更您設定的分類和階段部署之後，[部署狀態] 頁面可讓您開始部署您的設定群組。 此頁面會顯示每個可設定] 設定的摘要。 藉由開啟設定類別您可以將設定部署至群組，並追蹤這些部署中的進度。
+在您變更設定類別和階段部署之後, 部署狀態頁面可讓您開始將設定部署至群組。 此頁面會顯示每個可設定設定的摘要。 開啟設定類別後, 您就可以將設定部署至群組, 並追蹤這些部署的進度。
 
 ## <a name="deployment-statuses"></a>部署狀態 
 
-這些是您會看到每個部署雕像。
+這些是您將會看到的每個部署的 statues。
 
 狀態  | 說明 
 --- | --- 
-部署 | 您的變更正在等候部署至這個群組。
-進行中。 | 變更會套用到此群組中的作用中裝置。 
-已完成 | 變更此群組中的所有作用中裝置上已完成。 
-失敗 | 在群組中的作用中裝置的 10%的變更失敗，導致部署已停止。<br><br> 與 Microsoft 受管理電腦作業來疑難排解部署會自動開啟支援要求。 
-還原 | 變更已還原至已成功部署至所有部署群組的最後變更。
+部署 | 您的變更正等待部署至此群組。
+進行中。 | 此群組中的作用中裝置會套用變更。 
+已完成 | 此群組中所有使用中裝置的變更都已完成。 
+失敗 | 在群組中的 10% 裝置上, 變更失敗, 因此部署已停止。<br><br> 系統會自動使用 Microsoft 受管理的桌面作業開啟支援, 以疑難排解部署。 
+回 | 變更已還原至已成功部署至所有部署群組的最後變更。
 
-## <a name="deploy-changes"></a>將變更部署
+## <a name="deploy-changes"></a>部署變更
 
-我們會在這些指示中顯示桌面背景圖片。 您已分段部署之後，您部署從 [部署狀態] 頁面上的變更。 
+我們會在這些指示中顯示桌面背景圖片。 分段部署後, 您就可以從 [部署狀態] 頁面部署變更。 
 
-**若要部署的變更**
+**部署變更**
 
-1. 登入[Microsoft 受管理電腦系統管理員入口網站](http://aka.ms/mwaasportal)
-2. 在 [**設定**] 下選取 [**可設定**]。
-3. 在**部署狀態**工作區中，選取您想要部署的設定，然後選取分段的部署，以部署。
-4. 選取要將變更部署至其中一個部署群組的**部署**。
+1. 登入[Microsoft 受管理的桌面管理入口網站](http://aka.ms/mwaasportal)
+2. 在 [設定] 下, 選取 [**可****設定**]。
+3. 在 [**部署狀態**工作區] 中, 選取您要部署的設定, 然後選取要部署的分段部署。
+4. 選取 [**部署**], 將變更部署至其中一個部署群組。
 
-![可設定的設定部署狀態概觀](images/deploy-cs-overview.png)
+![可設定的設定部署狀態概述](images/deploy-cs-overview.png)
 
-Microsoft 受管理電腦建議部署至依此順序部署群組： 測試、 第一個、 快速，然後廣泛。 
+Microsoft 受管理的桌面建議依此順序部署至部署群組: Test、First、Fast、後的範圍。 
 
-當變更完成每個群組中時，狀態會變更為**完成**。
+當每個群組中的變更完成時, 狀態會變更為 [已**完成**]。
 
-![完成部署可設定的設定](images/config-setting-complete.png)
+![可設定的設定部署完成](images/config-setting-complete.png)
 
-## <a name="revert-deployment"></a>回復部署
+## <a name="revert-deployment"></a>還原部署
 
-您已部署變更之後，您可以還原從**部署狀態**。 當您還原為**進行中**或**完成**的變更時，會停止目前的部署。 設定會回復至最後一個已部署至所有群組的版本。 
+在您部署變更之後, 您可以從**部署狀態**回復。 當您回復正在**進行**或已**完成**的變更時, 目前的部署會停止。 此設定會回復至已部署至所有群組的最後一個版本。 
 
-我們將顯示還原使用桌面背景圖片做為範例變更的步驟。 
+我們將使用桌面背景圖片做為範例, 示範回復變更的步驟。 
 
-**若要還原的變更**
-1. 登入[Microsoft 受管理電腦系統管理員入口網站](http://aka.ms/mwaasportal)
-2. 在 [**設定**] 下選取 [**可設定**]。
-3. 在**部署狀態**工作區中，選取您想要回復，的設定，然後選取要還原分段的部署。
-4. **需要回復此變更**，請選取 [**還原部署**。
+**回復變更**
+1. 登入[Microsoft 受管理的桌面管理入口網站](http://aka.ms/mwaasportal)
+2. 在 [設定] 下, 選取 [**可****設定**]。
+3. 在 [**部署狀態**工作區] 中, 選取您要還原的設定, 然後選取要還原的分段部署。
+4. 在 [**需要回復此變更**] 下, 選取 [**還原部署**]。
 
-![部署可設定的設定還原](images/config-setting-revert.png) 
+![可設定的設定部署還原](images/config-setting-revert.png) 
 
 ## <a name="additional-resources"></a>其他資源
-- [組態設定概觀](config-setting-overview.md)
+- [可設定的設定概述](config-setting-overview.md)
 - [可設定的設定參考](config-setting-ref.md) 
