@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 40927b18b0d047eae848b5a2a938d98fa6de3119
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: 06ec98ebc7ea44a1bf3d8039e3a3ab7102521d3e
+ms.sourcegitcommit: ef749c44d72b5258706be86a4af1aeca4154ead2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857317"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35447525"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop-for-partners"></a>Microsoft 受管理電腦中註冊裝置的合作夥伴
 
@@ -20,7 +20,7 @@ ms.locfileid: "34857317"
 
 
 ## <a name="prepare-for-registration"></a>準備註冊 
-完成之前註冊為客戶，您必須先建立與其[合作夥伴中心](https://partner.microsoft.com/dashboard)的關係。 深入瞭解[合作夥伴中心的說明](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer)。
+完成之前註冊為客戶，您必須先建立與其[合作夥伴中心](https://partner.microsoft.com/dashboard)的關係。 請務必選取 [**包含委派管理 Azure Active Directory 和 Office 365 的權限**。 深入瞭解[合作夥伴中心的說明](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer)。
 
 若要完成註冊您的客戶，請先建立 CSV 檔案。
 
