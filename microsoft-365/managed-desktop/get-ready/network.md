@@ -1,62 +1,62 @@
 ---
-title: Microsoft 受管理電腦的網路設定
+title: Microsoft 受管理電腦的網路組態
 description: ''
-keywords: Microsoft 受管理的桌面、Microsoft 365、服務、檔
+keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 333fb51fe9d7df7c5ec47c2e7a812cd489c36d23
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 89142f55f4607ccae6cb68d48867db283e7b76f8
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390490"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584499"
 ---
-#  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的網路設定
+#  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的網路組態
 
 <!--Proxy config -->
 
 
-## <a name="proxy-configuration"></a>Proxy 設定
+## <a name="proxy-configuration"></a>Proxy 組態
 
-Microsoft 受管理的桌面是雲端管理的服務。 Microsoft 受管理的桌面服務必須能夠達到一組端點。 本節列出 Microsoft 受管理的桌面服務各方面需要允許的端點。 
+Microsoft 受管理的電腦是雲端管理的服務。 有一群 Microsoft 受管理的電腦服務能夠連接時所需的端點。 此章節將列出需要允許 Microsoft 受管理的電腦服務的各種層面的端點。 
 
-客戶可以透過防火牆/proxy 直接傳送所有受信任的 Microsoft 365 網路要求, 以優化其網路, 略過驗證和所有其他的封包層級檢查或處理。 這可減少延遲和您的周邊容量需求。 
+客戶可以藉由傳送所有受信任的 Microsoft 365 的網路要求直接透過其防火牆/proxy、 略過驗證及所有其他的封包層級檢查或處理，以最佳化其網路。 這可減少延遲與周邊容量需求。 
 
-此外, 若要優化 Microsoft 受管理的桌面雲端式服務的效能, 這些端點需要客戶用戶端瀏覽器的特殊處理, 以及其 edge 網路中的裝置。 這些裝置包括防火牆、SSL 中斷和檢查、封包檢查裝置和資料遺失防護系統。
+此外，若要最佳化 Microsoft 受管理電腦雲端式服務的效能，這些端點需要特別處理 [客戶用戶端瀏覽器和邊緣網路內的裝置。 這些裝置包括防火牆、 SSL 會自動換行和檢查、 封包檢查裝置，以及資料外洩防護系統。
 
 ### <a name="proxy-requirement"></a>Proxy 需求
 
-Proxy 或防火牆必須支援 TLS 1.2。 否則, 客戶可能必須停用通訊協定偵測。
+Proxy 或防火牆必須支援 TLS 1.2。 否則，客戶可能要停用通訊協定偵測。
 
-### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>允許的端點-適用于 Microsoft 受管理的電腦
+### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>允許端點-Microsoft 受管理電腦的特定
 
-Microsoft 受管理的桌面會使用 Azure 入口網站來主控其 web 主控台。 下表中的下列 Url 必須位於 proxy 和防火牆的允許清單上, 讓 Microsoft 受管理的桌面裝置能夠與 Microsoft 服務通訊。  
+Microsoft 受管理的電腦使用 Azure 入口網站來裝載其 web 主控台。 下表中的下列 Url 必須在您的 proxy 和防火牆允許清單，讓 Microsoft 受管理的電腦裝置可與 Microsoft 服務通訊。  
 
-請注意, Microsoft 受管理的桌面 URL 是用於在客戶 API 上執行服務的任何專案。 客戶必須確定此 URL 永遠可在其公司網路上存取。
+請注意，Microsoft 受管理的桌上型電腦下列 URL 會用於上客戶 API，我們的服務執行的任何項目。 客戶必須確定此 URL 會永遠可在其公司網路上存取。
 
-Microsoft 服務  | 允許清單上所需的 Url 
+Microsoft 服務  | Url 上需要允許清單 
 --- | --- | ---
-Microsoft 受管理的電腦 | prod-mwaas-services-customerapi.azurewebsites.net
-取得說明 | \*。 support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
-快速助手 | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*。 lync.com
-適用于 Office 365 的 Microsoft 支援與修復小幫手 | \*。 apibasic.diagnostics.office.com  <br>\*。 api.diagnostics.office.com
+Microsoft 受管理的電腦 | prod-ag3 mwaas-服務 customerapi.azurewebsites.net
+取得說明 | \*。 support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-ag3 mwaas-服務 customerapi.azurewebsites.net
+「 快速助手 」 | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*。 lync.com
+Microsoft 支援及修復小幫手，office 365 | \*。 apibasic.diagnostics.office.com  <br>\*。 api.diagnostics.office.com
  
 
-### <a name="endpoints-allowed---other-microsoft-products"></a>允許的端點-其他 Microsoft 產品
+### <a name="endpoints-allowed---other-microsoft-products"></a>允許-其他 Microsoft 產品的端點
 
-有數個 Microsoft 產品的 Url 需要在允許的清單中, 讓 Microsoft 受管理的桌面裝置能夠與這些 Microsoft 服務進行通訊。 使用連結查看每個產品的完整清單。 
+從數個 Microsoft 產品必須在允許的清單，讓 Microsoft 受管理的電腦裝置可以與彼此那些 Microsoft 服務有 Url。 若要查看每個產品的完整清單使用的連結。 
 
-Microsoft 服務 | 檔來源-允許清單所需的 Url
+Microsoft 服務 | 文件來源的 Url 上需要允許清單
 --- | ---
-Windows 10 企業版, 包括 Windows Update for Business | [管理 Windows 10 版本1803的連線端點](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理 Windows 10 版本1809的連線端點](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)
-傳遞優化 | [設定 Windows 10 更新的傳遞優化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
+Windows 10 企業版包括商務用 Windows Update | [利用適用於 Windows 10，版本 1803年管理連線端點](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[利用適用於 Windows 10，版本 1809年管理連線端點](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[利用適用於 Windows 10，版本 1903年管理連線端點](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1903-endpoints)<br><br>time.windows.com
+傳遞最佳化 | [設定傳遞最佳化適用於 Windows 10 更新](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Office 365 | [Office 365 URL 和 IP 位址範圍](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
-Azure Active Directory | [混合式身分識別所需的埠和通訊協定](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)和[Active Directory 和 Active Directory 網域服務埠需求](https://aka.ms/AA26ygm) 
-Microsoft Intune | [Intune 網路設定需求](https://docs.microsoft.com/intune/network-bandwidth-use)
-Windows Defender Advanced 威脅防護 (ATP) | [Windows Defender ATP 端點](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server
+Azure Active Directory | [混合式身分識別所需的連接埠和通訊協定](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)和[Active Directory 和 Active Directory 網域服務的連接埠需求](https://aka.ms/AA26ygm) 
+Microsoft Intune | [Intune 網路組態需求](https://docs.microsoft.com/intune/network-bandwidth-use)
+Microsoft Defender 進階威脅防護 (ATP) | [Microsoft Defender ATP 端點](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server
 )
 
 <!---
@@ -69,7 +69,7 @@ Office 365 | \*.office365.com<br>\*.office.com<br>\*.office.net<br>\*.live.com<b
 Azure Active Directory | api.login.microsoftonline.com<br>api.passwordreset.microsoftonline.com<br>autologon.microsoftazuread-sso.com<br>becws.microsoftonline.com<br>clientconfig.microsoftonline-p.net <br>companymanager.microsoftonline.com <br>device.login.microsoftonline.com <br>hip.microsoftonline-p.net <br>hipservice.microsoftonline.com <br>login.microsoft.com<br>login.microsoftonline.com <br>logincert.microsoftonline.com <br>loginex.microsoftonline.com<br>login-us.microsoftonline.com <br>login.microsoftonline-p.com <br>login.windows.net <br>nexus.microsoftonline-p.com <br>passwordreset.microsoftonline.com <br>provisioningapi.microsoftonline.com<br>stamp2.login.microsoftonline.com<br>\*.msappproxy.net<br>ccs.login.microsoftonline.com<br>ccs-sdf.login.microsoftonline.com<br>accounts.accesscontrol.windows.net<br>secure.aadcdn.microsoftonline-p.com<br>\*.phonefactor.net<br>account.activedirectory.windowsazure.com<br>secure.aadcdn.microsoftonline-p.com<br>graph.microsoft.com | [Hybrid identity required ports and protocols](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-ports) and [Active Directory and Active Directory Domain Services Port Requirements](https://aka.ms/AA26ygm) 
 Microsoft Intune | login.microsoftonline.com<br>portal.manage.microsoft.com<br>m.manage.microsoft.com<br>sts.manage.microsoft.com<br>Manage.microsoft.com <br>i.manage.microsoft.com <br>r.manage.microsoft.com <br>a.manage.microsoft.com <br>p.manage.microsoft.com <br>EnterpriseEnrollment.manage.microsoft.com <br>EnterpriseEnrollment-s.manage.microsoft.com<br>portal.fei.msua01.manage.microsoft.com<br>m.fei.msua01.manage.microsoft.com<br>fei.msua01.manage.microsoft.com<br>portal.fei.msua01.manage.microsoft.com <br>m.fei.msua01.manage.microsoft.com<br>fei.msua02.manage.microsoft.com<br>portal.fei.msua02.manage.microsoft.com<br>m.fei.msua02.manage.microsoft.com<br>fei.msua02.manage.microsoft.com<br>portal.fei.msua02.manage.microsoft.com<br>m.fei.msua02.manage.microsoft.com<br>fei.msua04.manage.microsoft.com<br>portal.fei.msua04.manage.microsoft.com <br>m.fei.msua04.manage.microsoft.com<br>fei.msua04.manage.microsoft.com<br>portal.fei.msua04.manage.microsoft.com <br>m.fei.msua04.manage.microsoft.com<br>fei.msua05.manage.microsoft.com <br>portal.fei.msua05.manage.microsoft.com <br>m.fei.msua05.manage.microsoft.com<br>fei.msua05.manage.microsoft.com <br>portal.fei.msua05.manage.microsoft.com <br>m.fei.msua05.manage.microsoft.com<br>fei.amsua0502.manage.microsoft.com <br>portal.fei.amsua0502.manage.microsoft.com <br>m.fei.amsua0502.manage.microsoft.com<br>fei.amsua0502.manage.microsoft.com <br>portal.fei.amsua0502.manage.microsoft.com <br>m.fei.amsua0502.manage.microsoft.com<br>fei.msua06.manage.microsoft.com <br>portal.fei.msua06.manage.microsoft.com <br>m.fei.msua06.manage.microsoft.com<br>fei.msua06.manage.microsoft.com <br>portal.fei.msua06.manage.microsoft.com <br>m.fei.msua06.manage.microsoft.com<br>fei.amsua0602.manage.microsoft.com <br>portal.fei.amsua0602.manage.microsoft.com <br>m.fei.amsua0602.manage.microsoft.com<br>fei.amsua0602.manage.microsoft.com <br>portal.fei.amsua0602.manage.microsoft.com <br>m.fei.amsua0602.manage.microsoft.com<br>fei.msub01.manage.microsoft.com <br>portal.fei.msub01.manage.microsoft.com <br>m.fei.msub01.manage.microsoft.com<br>fei.msub01.manage.microsoft.com <br>portal.fei.msub01.manage.microsoft.com <br>m.fei.msub01.manage.microsoft.com<br>fei.amsub0102.manage.microsoft.com <br>portal.fei.amsub0102.manage.microsoft.com <br>m.fei.amsub0102.manage.microsoft.com<br>fei.amsub0102.manage.microsoft.com <br>portal.fei.amsub0102.manage.microsoft.com <br>m.fei.amsub0102.manage.microsoft.com<br>fei.msub02.manage.microsoft.com <br>portal.fei.msub02.manage.microsoft.com <br>m.fei.msub02.manage.microsoft.com<br>fei.msub02.manage.microsoft.com <br>portal.fei.msub02.manage.microsoft.com <br>m.fei.msub02.manage.microsoft.com<br>fei.msub03.manage.microsoft.com <br>portal.fei.msub03.manage.microsoft.com <br>m.fei.msub03.manage.microsoft.com<br>fei.msub03.manage.microsoft.com <br>portal.fei.msub03.manage.microsoft.com <br>m.fei.msub03.manage.microsoft.com<br>fei.msub05.manage.microsoft.com <br>portal.fei.msub05.manage.microsoft.com <br>m.fei.msub05.manage.microsoft.com<br>fei.msub05.manage.microsoft.com <br>portal.fei.msub05.manage.microsoft.com <br>m.fei.msub05.manage.microsoft.com<br>fei.msuc01.manage.microsoft.com <br>portal.fei.msuc01.manage.microsoft.com <br>m.fei.msuc01.manage.microsoft.com<br>fei.msuc01.manage.microsoft.com <br>portal.fei.msuc01.manage.microsoft.com <br>m.fei.msuc01.manage.microsoft.com<br>fei.msuc02.manage.microsoft.com <br>portal.fei.msuc02.manage.microsoft.com <br>m.fei.msuc02.manage.microsoft.com<br>fei.msuc02.manage.microsoft.com <br>portal.fei.msuc02.manage.microsoft.com <br>m.fei.msuc02.manage.microsoft.com<br>fei.msuc03.manage.microsoft.com <br>portal.fei.msuc03.manage.microsoft.com <br>m.fei.msuc03.manage.microsoft.com<br>fei.msuc03.manage.microsoft.com <br>portal.fei.msuc03.manage.microsoft.com <br>m.fei.msuc03.manage.microsoft.com<br>fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com<br>fei.msuc05.manage.microsoft.com <br>portal.fei.msuc05.manage.microsoft.com <br>m.fei.msuc05.manage.microsoft.com<br>fef.msua01.manage.microsoft.com<br>fef.msua02.manage.microsoft.com<br>fef.msua04.manage.microsoft.com<br>fef.msua05.manage.microsoft.com<br>fef.msua06.manage.microsoft.com<br>fef.msua07.manage.microsoft.com<br>fef.msub01.manage.microsoft.com<br>fef.msub02.manage.microsoft.com<br>fef.msub03.manage.microsoft.com<br>fef.msub05.manage.microsoft.com<br>fef.msuc01.manage.microsoft.com<br>fef.msuc02.manage.microsoft.com<br>fef.msuc03.manage.microsoft.com<br>fef.msuc05.manage.microsoft.com |  [Intune network configuration requirements](https://docs.microsoft.com/intune/network-bandwidth-use)
 OneDrive for Business | onedrive.com <br> <br>\*.onedrive.com <br>onedrive.live.com <br>login.live.com <br>spoprod-a.akamaihd.net <br>\*.mesh.com <br>p.sfx.ms <br>\*.microsoft.com <br>fabric.io <br>\*.crashlytics.com <br>vortex.data.microsoft.com <br>https://posarprodcssservice.accesscontrol.windows.net <br>redemptionservices.accesscontrol.windows.net  <br>token.cp.microsoft.com/ <br>tokensit.cp.microsoft-tst.com/ <br>\*.office.com <br>\*.officeapps.live.com <br>\*.aria.microsoft.com <br>\*.mobileengagement.windows.net <br>\*.branch.io <br>\*.adjust.com <br>\*.servicebus.windows.net <br>vas.samsungapps.com <br>odc.officeapps.live.com <br>login.windows.net <br>login.microsoftonline.com <br>\*.files.1drv.com <br>\*.onedrive.live.com <br>\*.\*.onedrive.live.com <br>storage.live.com <br>\*.storage.live.com <br>\*.\*.storage.live.com <br>\*.groups.office.live.com <br>\*.groups.photos.live.com <br>\*.groups.skydrive.live.com <br>favorites.live.com <br>oauth.live.com <br>photos.live.com <br>skydrive.live.com <br>api.live.net <br>apis.live.net <br>docs.live.net <br>\*.docs.live.net <br>policies.live.net <br>\*.policies.live.net <br>settings.live.net <br>\*.settings.live.net <br>skyapi.live.net <br>snapi.live.net <br>\*.livefilestore.com <br>\*.\*.livefilestore.com <br>storage.msn.com <br>\*.storage.msn.com <br>\*.*.storage.msn.com | [Required URLs and ports for OneDrive](https://docs.microsoft.com/onedrive/required-urls-and-ports)
-Windows Defender Advanced Threat Protection (ATP) | \ *.oms.opinsights.azure.com <br>\*.blob.core.windows.net <br>\*.azure-automation.net <br>\*.ods.opinsights.azure.com <br>winatp-gw-cus.microsoft.com <br>winatp-gw-eus.microsoft.com <br>winatp-gw-neu.microsoft.com <br>winatp-gw-weu.microsoft.com <br>winatp-gw-uks.microsoft.com <br>winatp-gw-ukw.microsoft.com <br>winatp-gw-aus.microsoft.com <br>winatp-gw-aue.microsoft.com | [Windows Defender ATP endpoints](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection)
+Microsoft Defender Advanced Threat Protection (ATP) | \ *.oms.opinsights.azure.com <br>\*.blob.core.windows.net <br>\*.azure-automation.net <br>\*.ods.opinsights.azure.com <br>winatp-gw-cus.microsoft.com <br>winatp-gw-eus.microsoft.com <br>winatp-gw-neu.microsoft.com <br>winatp-gw-weu.microsoft.com <br>winatp-gw-uks.microsoft.com <br>winatp-gw-ukw.microsoft.com <br>winatp-gw-aus.microsoft.com <br>winatp-gw-aue.microsoft.com | [Windows Defender ATP endpoints](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection)
 Get Help | \*.support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net   | 
 Quick Assist | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*.lync.com | 
 SharePoint Online  | \*.sharepoint.com <br>\ *.svc.ms  <br>\<tenant\>.sharepoint.com  <br>\<tenant\>-my.sharepoint.com  <br>\<tenant\>-files.sharepoint.com  <br>\<tenant\>-myfiles.sharepoint.com <br>\*.sharepointonline.com  <br>cdn.sharepointonline.com  <br>static.sharepointonline.com  <br>spoprod-a.akamaihd.net  <br>publiccdn.sharepointonline.com  <br>privatecdn.sharepointonline.com | [SharePoint Online and OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
