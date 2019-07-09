@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在環境中評估目錄和網路整備。
-ms.openlocfilehash: d9ab05c9ff7d0b926f147ee4f924d95f01ccffd1
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 8070d08ade5d4b29327ab88bdc36e5f2182c0016
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814614"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584569"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>步驟 2：目錄和網路整備
 
@@ -80,7 +80,7 @@ ms.locfileid: "34814614"
 
   [關於 BITS](https://docs.microsoft.com/zh-TW/windows/desktop/bits/about-bits) (英文)
 
-如果您使用 System Center Configuration Manager，也可以設定啟用 BITS 的發佈點，或啟用搭配 WDS 的多點傳送。
+如果您使用 System Center Configuration Manager (最新分支)，也可以設定啟用 BITS 的發佈點，或啟用搭配 WDS 的多點傳送。
 
 特定流量的節流表示正常的網路流量受電腦下載更新和應用程式的影響較小。但是分割出特定百分比的頻寬給這些工作可協助確保產能不會受 Windows 或 Office 部署的影響，且程序會視需要繼續執行，當使用者在部署執行時鎖定其電腦的情況下，可能會降低部署相關的中斷時間。
 
@@ -90,7 +90,7 @@ ms.locfileid: "34814614"
 
 ## <a name="scavenging-bandwidth"></a>**清除頻寬**
 
-Windows Server 2019 與 System Center Configuration Manager 1806 版支援的低額外延遲背景傳輸 (LEDBAT) 是針對最佳化 Windows 用戶端的網路流量所設計。
+Windows Server 2019 與 System Center Configuration Manager (最新分支) 支援的低額外延遲背景傳輸 (LEDBAT) 是針對最佳化 Windows 用戶端的網路流量所設計。
 
 [Windows Server 2019 的前 10 大網路功能：\#9 LEDBAT – 延遲最佳化背景傳輸](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/) (英文)
 
@@ -110,7 +110,7 @@ System Center Configuration Manager 支援的**對等快取**用戶端也可利�
 
 [BranchCache 與對等快取](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/) (英文)
 
-**傳遞最佳化** 傳遞最佳化是另一種對等式快取技術，可為部署提供網路型控制項。 Windows 10 傳遞最佳化可更新內建 UWP 應用程式時，也可安裝來自 Microsoft Store 的應用程式，以及使用 Express Updates 進行軟體更新。 早期的 Windows 10 版本中已提供此功能，不過最近才與 System Center Configuration Manager 整合。 從 Windows 10 版本 1803 起，新的設定選項讓您現在可以針對背景更新和前景作業 (例如從 Store 安裝應用程式) 獨立設定頻寬限制。 Windows 傳遞最佳化目前也在用戶端更新期間支援 Office 365 專業增強版，您可在所有支援的 Office 365 用戶端更新管道取得。 我們即將在 Office 365 用戶端初始安裝期間支援 Windows 傳遞最佳化，敬請期待。  
+**傳遞最佳化** 傳遞最佳化是另一種對等式快取技術，可為部署提供網路型控制項。 Windows 10 傳遞最佳化可更新內建 UWP 應用程式時，也可安裝來自 Microsoft Store 的應用程式，以及使用 Express Updates 進行軟體更新。 早期的 Windows 10 版本中已提供此功能，不過最近才與 System Center Configuration Manager (最新分支) 整合。 從 Windows 10 版本 1803 起，新的設定選項讓您現在可以針對背景更新和前景作業 (例如從 Store 安裝應用程式) 獨立設定頻寬限制。 Windows 傳遞最佳化目前也在用戶端更新期間支援 Office 365 專業增強版，您可在所有支援的 Office 365 用戶端更新管道取得。 我們即將在 Office 365 用戶端初始安裝期間支援 Windows 傳遞最佳化，敬請期待。  
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 

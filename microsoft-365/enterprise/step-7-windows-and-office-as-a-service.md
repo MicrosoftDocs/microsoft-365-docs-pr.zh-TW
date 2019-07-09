@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在您的環境中準備 Windows 和 Office 服務。
-ms.openlocfilehash: 9cc550ca87c1c71ef4a01030ce93b6300fcc019d
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 6f3f5faf4c45829cdb4d2f9ac48ef0c9988ec270
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814594"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584559"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>步驟 7：Windows 和 Office 服務
 
@@ -37,7 +37,7 @@ ms.locfileid: "34814594"
 >Windows 和 Office 服務是我們建議的部署程序轉輪中第七個步驟，說明對功能的半年更新進行準備的規劃層面。 若要查看完整的桌面部署程序，請瀏覽[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
-Windows 10 與 Office 365 專業增強版都導入了新的服務選項、支援模型和更新時間表。 這些變更可簡化隨時保有最新功能的程序。 連同這些更新一起推出的是新的設定選項，其可實現符合您需求的服務方案。 讓我們了解如何準備迎接可在 Windows 10 和 Office 365 專業增強版中提供新功能的半年通道更新，並同時利用 System Center Configuration Manager 最新分支內的新功能。
+Windows 10 與 Office 365 專業增強版都導入了新的服務選項、支援模型和更新時間表。 這些變更可簡化隨時保有最新功能的程序。 連同這些更新一起推出的是新的設定選項，其可實現符合您需求的服務方案。 讓我們了解如何準備迎接可在 Windows 10 和 Office 365 專業增強版中提供新功能的半年通道更新，並同時利用 System Center Configuration Manager (最新分支) 內的新功能。
 
 [協助客戶改用 Windows 10 和 Office 365 專業增強版](https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
@@ -79,7 +79,7 @@ Windows 10 與 Office 365 專業增強版都導入了新的服務選項、支援
 
 ### <a name="supporting-management-tools"></a>支援的管理工具
 
-我們也思考如何讓您的更新部署更順利。System Center Configuration Manager 最新分支會經常更新，以支援推出這些 Windows 和 Office 更新以及任何新功能。
+我們也思考如何讓您的更新部署更順利。System Center Configuration Manager (最新分支) 會經常更新，以支援推出這些 Windows 和 Office 更新以及任何新功能。
 
 
   [使用 System Center Configuration Manager 來部署 Windows 10 更新](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-manage-updates-configuration-manager) (機器翻譯)
@@ -127,7 +127,7 @@ Office 365 提供四個服務通道：
 
 [說明 Windows 10 品質更新和差異結尾更新](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426)
 
-商務用 Windows Update 及 Windows Server Update Services 已長期支援快速更新，但我們目前已將該支援擴展至 System Center Configuration Manager，因此它也可以使用快速更新。
+商務用 Windows Update 及 Windows Server Update Services 已長期支援快速更新，但我們目前已將該支援擴展至 System Center Configuration Manager (最新分支)，因此它也可以使用快速更新。
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-3.png)
 
@@ -143,7 +143,7 @@ Windows 和 Office 更新通道可使用標準的核准和目標設定程序，�
 
 如同「裝置和應用程式整備」中所說明，您可以使用部署程序轉輪步驟 1 中所設定的相同整備工具，開始進行這些較大更新的準備。
 
-對於工具，您可以使用原則設定與商務用 Windows Update、透過 System Center Configuration Manager 的軟體更新管理、Windows Server Update Services (WSUS)，或 Microsoft Intune 所設定的更新原則。如果您擔心網路頻寬，請參閱步驟 2：目錄和網路整備，以了解透過傳遞最佳化和其他對等快取技術降低網路流量的選項。
+對於工具，您可以使用原則設定與商務用 Windows Update、透過 System Center Configuration Manager (最新分支) 的軟體更新管理、Windows Server Update Services (WSUS)，或 Microsoft Intune 所設定的更新原則。如果您擔心網路頻寬，請參閱步驟 2：目錄和網路整備，以了解透過傳遞最佳化和其他對等快取技術降低網路流量的選項。
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
@@ -155,7 +155,7 @@ Windows 和 Office 更新通道可使用標準的核准和目標設定程序，�
 
 #### <a name="upgrade-task-sequences"></a>升級工作順序
 
-透過標準軟體更新管理常式安裝較大的功能更新是受支援的選項，但許多組織會選擇使用「升級工作順序」搭配 System Center Configuration Manager 或 Microsoft Deployment Toolkit。
+透過標準軟體更新管理常式安裝較大的功能更新是受支援的選項，但許多組織會選擇使用「升級工作順序」搭配 System Center Configuration Manager (最新分支) 或 Microsoft Deployment Toolkit。
 
 「工作順序」可讓您在安裝功能更新之前建立自訂檢查或工作，並可讓您在更新安裝自行完成後執行自訂工作，更新後的工作可能包括在更新期間視需要暫時暫停服務、驅動程式安裝和取代、應用程式升級或工作列與 Windows 10 [開始] 個人化設定。
 
