@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 適用於大型組織的 Windows 7 至 Windows 10 自動升級
-ms.openlocfilehash: 4e07ae23f063bdc714d5dddd8cdb8d8c41e25eac
-ms.sourcegitcommit: 12c4d5444d6e0e8825fc85e3e8453fa376746495
+ms.openlocfilehash: 6fc22ad7ae8b0a34384818bc77813c6802609b89
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35395264"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584509"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>適用於大型組織的 Windows 7 至 Windows 10 自動就地升級
 
 自 2020 年 1 月 14 日起，我們不再提供適用於執行 Windows 7 電腦的安全性更新或支援。 從 Windows 7 升級至 Windows 10 的時間只剩幾個月，卻還有許多選項需要進行部署，因此 IT 社群內最常見的問題便是「從 Windows 7 移至 Windows 10 的最快方法是什麼？」 簡單來說，答案就是針對現有的電腦執行就地升級，這樣做的好處是可以減少對桌面部署程序幾個層面的關注。
 
-![](media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png)
+<center><img src="media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
 使用就地升級可以在範圍內大幅降低數個桌面部署程序，尤其是：
 
