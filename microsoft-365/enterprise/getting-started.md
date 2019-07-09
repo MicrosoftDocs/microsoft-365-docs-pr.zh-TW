@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 桌面部署程序簡介。
-ms.openlocfilehash: b9264f8d9232bf1b88372694d43e2d2c70c8cb70
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 60389149e286bca8e27f50dabee8aaf03f52c90c
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814654"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584519"
 ---
 # <a name="getting-started---desktop-deployment"></a>快速入門 - 桌面部署
 
@@ -86,7 +86,7 @@ ms.locfileid: "34814654"
 
 在開始之前，您可能需要建立高階計劃，並找好贊助者。 我們的部署程序轉輪會概述重要的步驟，以協助您找出要在下列部署區域中管理的核心小組成員和資源。
 
-**[步驟 1：裝置和應用程式整備](https://aka.ms/mdd1)** 為了成功部署，您必須先知道您所擁有的項目。 這表示要取得您裝置和應用程式的詳細目錄，並驗證相容性。 若要協助進行這項工作，您可以在雲端服務 Windows Analytics 中找到可用工具。 Windows Analytics 可讓您深入發掘收集自數億部電腦的相容性情報與診斷資料，以評估裝置上執行的應用程式和驅動程式，讓您可建立電腦空間的完備性。 您甚至可以從 Windows Analytics 匯出一份「準備好進行部署的電腦」清單至 System Center Configuration Manager (如果您使用此功能)，讓您在準備好時建立資料導向的目標電腦集合。
+**[步驟 1：裝置和應用程式整備](https://aka.ms/mdd1)** 為了成功部署，您必須先知道您所擁有的項目。 這表示要取得您裝置和應用程式的詳細目錄，並驗證相容性。 若要協助進行這項工作，您可以在雲端服務「電腦分析」中找到可用工具。 「電腦分析」可讓您深入發掘收集自數億部電腦的相容性情報與診斷資料，以評估裝置上執行的應用程式和驅動程式，讓您可建立電腦空間的完備性。 您甚至可以從「電腦分析」匯出一份「準備好進行部署的電腦」清單至 System Center Configuration Manager (如果您使用此功能)，讓您在準備好時建立資料導向的目標電腦集合。
 
 
   [開始使用升級整備](https://docs.microsoft.com/zh-TW/windows/deployment/upgrade/upgrade-readiness-get-started) (英文)

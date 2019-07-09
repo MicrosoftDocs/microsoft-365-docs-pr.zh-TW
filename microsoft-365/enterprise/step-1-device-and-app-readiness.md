@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在環境中評估裝置和應用程式整備。
-ms.openlocfilehash: f45b4c4b38cd2108c706eb6465e9b5ba241e252f
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: eb619cf807c2bd4ad3644dbb26e72b62e30320c7
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814634"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584549"
 ---
 # <a name="step-1-device-and-app-readiness"></a>步驟 1：裝置和應用程式整備
 
@@ -41,7 +41,7 @@ ms.locfileid: "34814634"
 
 也就是說，根據貴組織的大小和年份，確認應用程式和硬體的相容性很可能還是建議的 8 階段部署程序中的基本初始步驟。
 
-我們會在本文中引導您進行第一個階段 – 裝置和應用程式整備 – 使用 Microsoft 整備評估工具 (包括新的 Windows Analytics 更新整備小幫手工具)，這是一個可透過您的 Windows 授權使用的智慧型雲端式解決方案。
+我們會在本文中引導您進行第一個階段 – 裝置和應用程式整備 – 使用 Microsoft 整備評估工具 (包括新的電腦分析更新整備小幫手工具)，這是一個可透過您的 Windows 授權使用的智慧型雲端式解決方案。
 
 ## <a name="windows-10-compatibility-scan"></a>Windows 10 相容性掃描
 
@@ -53,13 +53,13 @@ ms.locfileid: "34814634"
 
 如需 ScanOnly 和其他 Windows 安裝程式命令參數的詳細資訊，請檢閱 [Windows 安裝程式命令列選項](https://aka.ms/setupswitches)。
 
-## <a name="recommended-tool-windows-analytics-upgrade-readiness"></a>建議的工具：Windows Analytics Upgrade Readiness
+## <a name="recommended-tool-desktop-analytics-upgrade-readiness"></a>建議的工具：電腦分析更新整備小幫手
 
-Windows Analytics 更新整備小幫手是我們建議使用的工具，其提供比傳統桌面管理系統還要多的優點。 這項工具無代理程式，可引導您使用透過升級數億台消費者電腦所蒐集的應用程式和驅動程式相容性資訊。 此資訊提供給您詳細的評估、找出可能封鎖升級的相容性問題，並輔以 Microsoft 已知建議修正程式的連結。
+電腦分析更新整備小幫手是我們建議使用的工具，其提供比傳統桌面管理系統還要多的優點。 這項工具無代理程式，可引導您使用透過升級數億台消費者電腦所蒐集的應用程式和驅動程式相容性資訊。 此資訊提供給您詳細的評估、找出可能封鎖升級的相容性問題，並輔以 Microsoft 已知建議修正程式的連結。
 
-若要設定 Windows Analytics 更新整備小幫手，您必須先設定 Azure 訂用帳戶並包含其 Azure 記錄分析工作區。 執行 Windows Analytics 更新整備小幫手服務後，您可以接著透過群組原則設定，註冊任何連上網際網路的 Windows 7 SP1 或更新裝置 - 就是這麼簡單。 沒有要部署的代理程式，而 Windows Analytics 更新整備小幫手的視覺化工作流程會引導您進行試驗以至生產部署。 如有需要，您可以將資料從 Windows Analytics 更新整備小幫手匯出至 System Center Configuration Manager 之類的軟體部署工具、直接匯出至目標電腦，並且在資料準備好進行部署時建立集合。
+若要設定 Windows Analytics 更新整備小幫手，您必須先設定 Azure 訂用帳戶並包含其 Azure 記錄分析工作區。 執行電腦分析更新整備小幫手服務後，您可以接著透過群組原則設定，註冊任何連上網際網路的 Windows 7 SP1 或更新裝置，就是這麼簡單。 不需要部署代理程式，電腦分析更新整備小幫手的視覺化工作流程會引導您進行試驗以至生產部署。 如有需要，您可以將資料從電腦分析更新整備小幫手匯出至 System Center Configuration Manager (最新分支) 之類的軟體部署工具、直接匯出至目標電腦，並且在資料準備好進行部署時建立集合。
 
-如果您目前尚未針對環境設定 Windows Analytics，或是想要註冊試用，請移至 [Windows Analytics 頁面](http://www.aka.ms/windowsanalytics)並開始使用。
+如果您目前尚未針對環境設定電腦分析，或是想要註冊試用，請移至「電腦分析」頁面 (http://www.aka.ms/desktopanalytics) 並開始使用。
 
 ## <a name="device-and-app-readiness-process"></a>裝置和應用程式整備程序
 
@@ -67,7 +67,7 @@ Windows Analytics 更新整備小幫手是我們建議使用的工具，其提�
 
 ### <a name="1-inventory"></a>1\. 清查
 
-Windows Analytics 更新整備小幫手服務會使用無代理程式的程序，來清查整個桌面的電腦、應用程式和 Office 增益集。
+電腦分析更新整備小幫手服務會使用無代理程式的程序，來清查整個桌面的電腦和應用程式。
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
 
@@ -77,7 +77,7 @@ Windows Analytics 更新整備小幫手服務會使用無代理程式的程序�
 
 ### <a name="2-prioritize"></a>2\. 設定優先順序
 
-清查之後，Windows Analytics 更新整備小幫手會協助您識別貴組織中最常使用的應用程式和硬體並設定優先順序，以及盡可能解除鎖定多部電腦以進行部署時要注意哪些地方，
+清查之後，電腦分析更新整備小幫手會協助您識別貴組織中最常使用的應用程式和硬體，並設定優先順序，以及盡可能解除封鎖多部電腦以進行部署時應該注意的地方，
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-5.png)
 
@@ -85,9 +85,9 @@ Windows Analytics 更新整備小幫手服務會使用無代理程式的程序�
 
 ### <a name="3-testing"></a>3\. 測試
 
-您會發現大部分已清查的應用程式、驅動程式和增益集都以現狀運作。 針對 Windows Analytics 更新整備小幫手評估為有問題的項目，它為您提供已知資訊，包括在哪裡尋找版本更新來解決相容性問題。 並非將時間和資源都耗費在解決非關鍵、鬆散部署應用程式和舊版裝置中的複雜問題，您可以選擇與使用者合作來淘汰及取代這些項目。
+您會發現大部分已清查的應用程式、驅動程式和增益集都以現狀運作。 針對電腦分析更新整備小幫手評估為有問題的項目，它為您提供已知資訊，包括在哪裡尋找版本更新來解決相容性問題。 並非將時間和資源都耗費在解決非關鍵、鬆散部署應用程式和舊版裝置中的複雜問題，您可以選擇與使用者合作來淘汰及取代這些項目。
 
-您也可以使用 Windows Analytics Upgrade Readiness 來評估瀏覽器型相容性問題，識別使用者存取的網站和 Web 應用程式中，仍然使用 ActiveX 控制項、瀏覽器協助程式物件、VBScript 或 Microsoft Edge 瀏覽器已不再支援的舊版技術的項目。您的使用者針對這些網站仍然需要使用 Internet Explorer 11，而您可以使用 Enterprise Mode Site List Manager，將它們新增至[企業模式網站清單](https://docs.microsoft.com/zh-TW/microsoft-edge/deploy/emie-to-improve-compatibility) (機器翻譯)。
+您也可以使用電腦分析更新整備小幫手來評估瀏覽器型相容性問題，識別使用者存取的網站和 Web 應用程式中，仍然使用 ActiveX 控制項、瀏覽器協助程式物件、VBScript 或 Microsoft Edge 瀏覽器已不再支援的舊版技術的項目。您的使用者針對這些網站仍然需要使用 Internet Explorer 11，而您可以使用 Enterprise Mode Site List Manager，將它們新增至[企業模式網站清單](https://docs.microsoft.com/zh-TW/microsoft-edge/deploy/emie-to-improve-compatibility) (機器翻譯)。
 
 此外，為了協助您移至 Office 365 專業增強版，您可能想要使用[適用於 Office 的整備工具組](https://docs.microsoft.com/zh-TW/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro)，測試您的增益集與 Microsoft Visual Basic for Applications (VBA) 巨集的相容性。
 
@@ -114,7 +114,7 @@ Windows Analytics 更新整備小幫手服務會使用無代理程式的程序�
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>繼續使用診斷資料工具
 
-Windows Analytics Upgrade Readiness 不只是協助您移轉至 Windows 10 和 Office 365 專業增強版的工具。一旦您讓桌面在 Windows 10 和 Office 365 上執行，就可以使用它來協助維護部署及管理半年功能更新，讓您保持在最新版本。
+電腦分析更新整備小幫手不只是協助您移轉至 Windows 10 和 Office 365 專業增強版的工具。一旦您讓桌面在 Windows 10 和 Office 365 上執行，就可以使用它來協助維護部署及管理半年功能更新，讓您保持在最新版本。
 
 ## <a name="next-step"></a>下一步 
 
