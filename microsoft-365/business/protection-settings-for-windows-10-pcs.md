@@ -3,7 +3,7 @@ title: 設定適用於 Windows 10 電腦的裝置保護設定
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: 了解預設和其他 Microsoft 365 商務版來保護 Windows 10 裝置中可用的設定。
-ms.openlocfilehash: 5dc6ede8f31f5837d59c200e0b76083dcf419e05
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: 844bddc4b93c7dc543ad6c6a79f5cf92c96ceff0
+ms.sourcegitcommit: 0c1227dc79b66bab529bf178c5672791369ba471
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660324"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35630602"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>設定適用於 Windows 10 電腦的裝置保護設定
 
@@ -34,7 +34,7 @@ ms.locfileid: "33660324"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. 系統管理中心，SGo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。 
+1. 移至系統管理中心， <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。 
     
 2. 在左側導覽中，選擇 [**裝置** \> **原則** \> **新增**。
   

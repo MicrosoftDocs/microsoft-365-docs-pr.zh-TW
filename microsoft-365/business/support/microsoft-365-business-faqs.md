@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商務版, Microsoft 365, SMB, 常見問題集, 常見問題集, 解答, 商務版
 ms.date: 06/08/2018
-ms.openlocfilehash: 6ef500c9b0c9e83e77e46c1eaf7057e3e46cfe0d
-ms.sourcegitcommit: 5c6bbf6dd7020b462b56b644b5a0fcc0217d6a53
+ms.openlocfilehash: 9f3f82169dcd4454ffb46b1269422688a107f2b0
+ms.sourcegitcommit: 0c1227dc79b66bab529bf178c5672791369ba471
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34276216"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35630582"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 商務版常見問題集
 
@@ -27,7 +27,7 @@ Microsoft 365 是整合式的解決方案，聚集所有同等級最佳的生產
 **商務生產力和共同作業工具的整體集合** 
 * Word、Excel、PowerPoint、Outlook、OneNote、Publisher 和 Access 
 * Exchange、OneDrive、商務用 Skype、Microsoft Teams、SharePoint 
-* Office 提供的商務用應用程式 (Bookings、Outlook Customer Manager、MileIQ]<sup>[1](#footnote1)</sup>、Microsoft 清單<sup>[1](#footnote1)</sup>、Microsoft 客戶關係<sup>[1](#footnote1)</sup>、Microsoft 發票處理<sup>[1](#footnote1)</sup>) 
+* 從 Office (Bookings、 Outlook Customer Manager、 MileIQ<sup>[1](#footnote1)</sup>、 Microsoft 開立發票<sup>[1](#footnote1)</sup>) 的商務應用程式 
  
 **企業級裝置管理與安全性功能** 
 - 協助提供從外部威脅，例如網路釣魚保護 & 複雜的惡意程式碼與 Office 365 進階威脅防護和 Windows Defender 惡意探索防護 
