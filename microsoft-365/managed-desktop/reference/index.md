@@ -1,0 +1,4 @@
+<span data-ttu-id="af82d-101">-標題： Microsoft 受管理桌面參考描述： 在某些與 Microsoft 受管理的電腦上的詳細的資訊功能關鍵字： Microsoft 受管理的電腦、 Microsoft 365、 服務、 文件 ms.service: m365 md 作者： jaimeoms.localizationpriority： 一般</span><span class="sxs-lookup"><span data-stu-id="af82d-101">-- title: Microsoft Managed Desktop reference description: Detailed information on certain Microsoft Managed Desktop features keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation ms.service: m365-md author: jaimeo ms.localizationpriority: normal</span></span>
+---
+
+# <a name="microsoft-managed-desktop-reference"></a><span data-ttu-id="af82d-102">Microsoft 受管理電腦參考</span><span class="sxs-lookup"><span data-stu-id="af82d-102">Microsoft Managed Desktop reference</span></span>
