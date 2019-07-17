@@ -5,12 +5,12 @@ keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: c991dd20dcab50c824784c233e03ecc8cdc25f94
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: f16989960d999e65ad904fd11894d5fe8bca98f0
+ms.sourcegitcommit: 1bd18fb00aad37bad8d1411a916f444e1d1a38cf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857286"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35756895"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的電腦裝置 
 
@@ -47,7 +47,6 @@ Microsoft 受管理電腦定期評估要包含在服務中的裝置。 本主題
 | [Surface Book 2](https://www.microsoft.com/en-us/p/surface-book-2-for-business/8x4htznfgg38/lbh3?cid=msft_web_collection&CustomerIntent=Consumer) | 512 GB / Intel i7 / 16 GB RAM | 15 英吋顯示 | 2019 年 11 月 16日日 | 2022 11 月 16日， |
 | [呈現移至](https://www.microsoft.com/en-us/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel 4415Y / 8 GB RAM | 無 | 2020 年 8 月 2 日 | 2023 年 8 月 2 日 |
 | [Surface Laptop 2](https://www.microsoft.com/en-us/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 中 / 8 GB RAM | 無 | 2020 年 10 月 16 日 | 2023 Oct 16， |
-|[Surface Pro （第 5 個產生）](https://www.microsoft.com/en-us/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2019 6 月 15日日** | 2022 6 月 15日， |
 | [Surface Pro 6](https://www.microsoft.com/en-us/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 中 / 8 GB RAM | 無 | 2020 年 10 月 16 日 | 2023 Oct 16， |
 
 此外，裝置必須也：     
