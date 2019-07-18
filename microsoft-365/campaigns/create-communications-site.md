@@ -20,48 +20,48 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 為您的市場活動建立通訊網站。
-ms.openlocfilehash: 123269d462ddbb7a3c91f23be8031d9a2850c186
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+description: 建立您的行銷活動的通訊網站。
+ms.openlocfilehash: 339f6e0de27975a8c768a6752d7fd367e12dd8f6
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35080761"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772530"
 ---
-# <a name="create-a-communications-site-for-your-campaign"></a><span data-ttu-id="dfd9a-103">為您的活動建立通訊網站</span><span class="sxs-lookup"><span data-stu-id="dfd9a-103">Create a communications site for your campaign</span></span>
+# <a name="create-a-communications-site-for-your-campaign"></a><span data-ttu-id="cfbc6-103">建立您的行銷活動的通訊網站</span><span class="sxs-lookup"><span data-stu-id="cfbc6-103">Create a communications site for your campaign</span></span>
 
-<span data-ttu-id="dfd9a-104">使用 SharePoint 中的通訊網站, 來傳達優先順序、共用策略檔及突出顯示即將推出的事件是一種很好的方式。</span><span class="sxs-lookup"><span data-stu-id="dfd9a-104">A great way to communicate priorities, share strategy documents and highlight upcoming events is by using a communications site in SharePoint.</span></span> <span data-ttu-id="dfd9a-105">通訊網站是在整個活動中廣泛共用的內容-它是您的內部即時網頁。</span><span class="sxs-lookup"><span data-stu-id="dfd9a-105">Communications sites are for sharing things broadly across your whole campaign - it's your internal campaign site.</span></span>
+<span data-ttu-id="cfbc6-104">通訊優先順序、 共用策略文件，並反白顯示即將來臨的事件的好方法是使用 SharePoint 中的通訊網站。</span><span class="sxs-lookup"><span data-stu-id="cfbc6-104">A great way to communicate priorities, share strategy documents, and highlight upcoming events is to use a communications site in SharePoint.</span></span> <span data-ttu-id="cfbc6-105">通訊網站會跨整個活動; 廣泛地共用項目它是您內部的行銷活動的網站。</span><span class="sxs-lookup"><span data-stu-id="cfbc6-105">Communications sites are for sharing things broadly across your whole campaign; it's your internal campaign site.</span></span>
 
-## <a name="best-practices"></a><span data-ttu-id="dfd9a-106">最佳做法</span><span class="sxs-lookup"><span data-stu-id="dfd9a-106">Best practices</span></span>
+## <a name="best-practices"></a><span data-ttu-id="cfbc6-106">最佳做法</span><span class="sxs-lookup"><span data-stu-id="cfbc6-106">Best practices</span></span>
 
-<span data-ttu-id="dfd9a-107">在您的通訊網站中包含下列元素:</span><span class="sxs-lookup"><span data-stu-id="dfd9a-107">Include the following elements in your Communications site:</span></span>
+<span data-ttu-id="cfbc6-107">通訊網站中包含下列元素：</span><span class="sxs-lookup"><span data-stu-id="cfbc6-107">Include the following elements in your Communications site:</span></span>
 
-1. <span data-ttu-id="dfd9a-108">將您的活動標誌和色彩新增為標頭圖像和主題</span><span class="sxs-lookup"><span data-stu-id="dfd9a-108">Add your campaign logo and colors as a header image and theme</span></span>
-2. <span data-ttu-id="dfd9a-109">在**英雄網頁元件**中, 以您的策略、訊息、重要檔、目錄和常見問題為導向。</span><span class="sxs-lookup"><span data-stu-id="dfd9a-109">Lead with your strategy, message, important documents, a directory, and FAQ in a **Hero web part**.</span></span>
-3. <span data-ttu-id="dfd9a-110">將候選語句加入至**文字網頁元件**中的小組。</span><span class="sxs-lookup"><span data-stu-id="dfd9a-110">Include a candidate statement to the team in a **Text web part**.</span></span>
-4. <span data-ttu-id="dfd9a-111">將活動事件新增至**事件網頁元件**, 讓每個人都能看到即將推出的內容。</span><span class="sxs-lookup"><span data-stu-id="dfd9a-111">Add campaign events to an **Events web part** so everyone can see what's coming up.</span></span>
-5. <span data-ttu-id="dfd9a-112">新增使用者可以使用或共用至**圖像庫網頁元件**的相片。</span><span class="sxs-lookup"><span data-stu-id="dfd9a-112">Add photos that people can use or share to an **Image gallery web part**.</span></span>
+1. <span data-ttu-id="cfbc6-108">新增您的行銷活動標誌與色彩做為標題影像和佈景主題</span><span class="sxs-lookup"><span data-stu-id="cfbc6-108">Add your campaign logo and colors as a header image and theme</span></span>
+2. <span data-ttu-id="cfbc6-109">導致策略、 與郵件、 重要的文件、 一個目錄，在**Hero 網頁組件**中的常見問題集。</span><span class="sxs-lookup"><span data-stu-id="cfbc6-109">Lead with your strategy, message, important documents, a directory, and FAQ in a **Hero web part**.</span></span>
+3. <span data-ttu-id="cfbc6-110">納入**文字網頁組件**至小組的候選陳述式。</span><span class="sxs-lookup"><span data-stu-id="cfbc6-110">Include a candidate statement to the team in a **Text web part**.</span></span>
+4. <span data-ttu-id="cfbc6-111">將活動事件新增至**事件網頁組件**，讓每個人都可以看到接下來什麼。</span><span class="sxs-lookup"><span data-stu-id="cfbc6-111">Add campaign events to an **Events web part** so everyone can see what's coming up.</span></span>
+5. <span data-ttu-id="cfbc6-112">新增人員可以使用或**影像圖庫網頁組件**共用的相片。</span><span class="sxs-lookup"><span data-stu-id="cfbc6-112">Add photos that people can use or share to an **Image gallery web part**.</span></span>
 
-![SharePoint 通訊頁面的圖表, 包含市場活動所需的一般元素空間](media/m365-democracy-comms-site.png)
+![需要行銷活動的共同元素的空間與 SharePoint 通訊] 頁面上的圖表](media/m365-democracy-comms-site.png)
 
-## <a name="infographic-create-a-communications-site-infographic"></a><span data-ttu-id="dfd9a-114">資訊圖表: 建立通訊網站資訊圖表</span><span class="sxs-lookup"><span data-stu-id="dfd9a-114">Infographic: Create a Communications Site infographic</span></span> 
-<span data-ttu-id="dfd9a-115">您可以採用 tabloid 格式 (也稱為分類帳、11 x 17 或 A3) 下載及列印下列 PowerPoint 和 PDF 的連結。</span><span class="sxs-lookup"><span data-stu-id="dfd9a-115">The links for PowerPoint and PDF below can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
+## <a name="infographic-create-a-communications-site-infographic"></a><span data-ttu-id="cfbc6-114">資訊圖表： 建立通訊網站資訊圖表</span><span class="sxs-lookup"><span data-stu-id="cfbc6-114">Infographic: Create a Communications Site infographic</span></span> 
+<span data-ttu-id="cfbc6-115">下列連結以 PowerPoint 和 PDF 可以下載及列印 tabloid 格式 (也稱為 ledger 11 x 17 或 A3)。</span><span class="sxs-lookup"><span data-stu-id="cfbc6-115">The following links for PowerPoint and PDF can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
 
-<span data-ttu-id="dfd9a-116">[![通訊網站資訊圖表的圖像](media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)</span><span class="sxs-lookup"><span data-stu-id="dfd9a-116">[![Image for communications site infographic](media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)</span></span>
+<span data-ttu-id="cfbc6-116">[![通訊網站資訊圖表的影像](media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)</span><span class="sxs-lookup"><span data-stu-id="cfbc6-116">[![Image for communications site infographic](media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)</span></span>
 
-<span data-ttu-id="dfd9a-117">[PDF](downloads/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsCreateCommunicationSite.pptx)</span><span class="sxs-lookup"><span data-stu-id="dfd9a-117">[PDF](downloads/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsCreateCommunicationSite.pptx)</span></span>
-
-
-## <a name="set-it-up"></a><span data-ttu-id="dfd9a-118">進行設定</span><span class="sxs-lookup"><span data-stu-id="dfd9a-118">Set it up</span></span>
-
-1. <span data-ttu-id="dfd9a-119">登入http://Office.com。</span><span class="sxs-lookup"><span data-stu-id="dfd9a-119">Sign in to http://Office.com.</span></span>
-2. <span data-ttu-id="dfd9a-120">在頁面的左上角, 選取應用程式啟動器圖示, 然後選取 [ **SharePoint**磚]。</span><span class="sxs-lookup"><span data-stu-id="dfd9a-120">In the top left corner of the page, select the app launcher icon and then select the **SharePoint** tile.</span></span> <span data-ttu-id="dfd9a-121">如果您沒有看到**sharepoint**磚, 請按一下 [**網站**磚] 或 [**全部**] [如果不顯示 sharepoint]。</span><span class="sxs-lookup"><span data-stu-id="dfd9a-121">If you don't see the **SharePoint** tile, click the **Sites** tile or **All** if SharePoint is not visible.</span></span>
-3. <span data-ttu-id="dfd9a-122">在 SharePoint 首頁的頂端, 按一下 [ **+ 建立網站**], 然後選擇 [**通訊] 網站**選項。</span><span class="sxs-lookup"><span data-stu-id="dfd9a-122">At the top of the SharePoint home page, click **+ Create site** and choose the **Communication site** option.</span></span>
-
-<span data-ttu-id="dfd9a-123">深入瞭解[通訊網站](https://support.office.com/en-us/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732), 以及如何[在 SharePoint Online 中建立通訊網站](https://support.office.com/en-us/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB)。</span><span class="sxs-lookup"><span data-stu-id="dfd9a-123">Learn all [about Communications sites](https://support.office.com/en-us/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) and how to [create a communication site in SharePoint Online](https://support.office.com/en-us/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB).</span></span>
+<span data-ttu-id="cfbc6-117">[PDF](downloads/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsCreateCommunicationSite.pptx)</span><span class="sxs-lookup"><span data-stu-id="cfbc6-117">[PDF](downloads/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsCreateCommunicationSite.pptx)</span></span>
 
 
-## <a name="admin-settings"></a><span data-ttu-id="dfd9a-124">系統管理設定</span><span class="sxs-lookup"><span data-stu-id="dfd9a-124">Admin settings</span></span>
+## <a name="set-it-up"></a><span data-ttu-id="cfbc6-118">進行設定</span><span class="sxs-lookup"><span data-stu-id="cfbc6-118">Set it up</span></span>
 
-<span data-ttu-id="dfd9a-125">如果您沒有看到 **+ 建立**網站連結, 則 Microsoft 365 可能無法使用自助網站架設。</span><span class="sxs-lookup"><span data-stu-id="dfd9a-125">If you don't see the **+ Create** site link, self-service site creation might not be available in Microsoft 365.</span></span> <span data-ttu-id="dfd9a-126">請洽詢組織中 Microsoft 365 的人員, 以建立小組網站。</span><span class="sxs-lookup"><span data-stu-id="dfd9a-126">Contact the person administering Microsoft 365 in your organization to create a team site.</span></span> <span data-ttu-id="dfd9a-127">如果您是 Microsoft 365 系統管理員, 請參閱[在 Sharepoint online 中管理網站](https://docs.microsoft.com/sharepoint/manage-site-creation)架設, 以啟用組織的自助網站架設或在[新的 Sharepoint 系統管理中心管理網站](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center), 以從 SharePoint Online 系統管理中心建立網站。</span><span class="sxs-lookup"><span data-stu-id="dfd9a-127">If you're a Microsoft 365 admin, see [Manage site creation in SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) to enable self-service site creation for your organization or [Manage sites in the new SharePoint admin center](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) to create a site from the SharePoint Online admin center.</span></span>
+1. <span data-ttu-id="cfbc6-119">登入https://Office.com。</span><span class="sxs-lookup"><span data-stu-id="cfbc6-119">Sign in to https://Office.com.</span></span>
+2. <span data-ttu-id="cfbc6-120">在頁面左上角，選取 [應用程式啟動器圖示，然後選取 [ **SharePoint** ] 磚。</span><span class="sxs-lookup"><span data-stu-id="cfbc6-120">In the top left corner of the page, select the app launcher icon and then select the **SharePoint** tile.</span></span> <span data-ttu-id="cfbc6-121">如果您沒有看到 [ **SharePoint** ] 磚，按一下 [**網站**] 磚] 或 [**全部**如果看不到 SharePoint。</span><span class="sxs-lookup"><span data-stu-id="cfbc6-121">If you don't see the **SharePoint** tile, click the **Sites** tile or **All** if SharePoint is not visible.</span></span>
+3. <span data-ttu-id="cfbc6-122">在 SharePoint 首頁頂端，按一下 [ **+ 建立網站**，並選擇**通訊網站**選項。</span><span class="sxs-lookup"><span data-stu-id="cfbc6-122">At the top of the SharePoint home page, click **+ Create site** and choose the **Communication site** option.</span></span>
+
+<span data-ttu-id="cfbc6-123">了解所有[關於站台的通訊](https://support.office.com/en-us/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732)，以及如何[建立 SharePoint Online 中的通訊網站](https://support.office.com/en-us/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB)。</span><span class="sxs-lookup"><span data-stu-id="cfbc6-123">Learn all [about Communications sites](https://support.office.com/en-us/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) and how to [create a communication site in SharePoint Online](https://support.office.com/en-us/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB).</span></span>
+
+
+## <a name="admin-settings"></a><span data-ttu-id="cfbc6-124">系統管理員設定</span><span class="sxs-lookup"><span data-stu-id="cfbc6-124">Admin settings</span></span>
+
+<span data-ttu-id="cfbc6-125">如果您沒有看到 [ **+ 建立**網站] 連結，可能無法在 Microsoft 365 使用自助網站架設。</span><span class="sxs-lookup"><span data-stu-id="cfbc6-125">If you don't see the **+ Create** site link, self-service site creation might not be available in Microsoft 365.</span></span> <span data-ttu-id="cfbc6-126">若要建立小組網站，請連絡您的組織中管理 Microsoft 365 的人員。</span><span class="sxs-lookup"><span data-stu-id="cfbc6-126">To create a team site, contact the person administering Microsoft 365 in your organization.</span></span> <span data-ttu-id="cfbc6-127">如果您的 Microsoft 365 系統管理員，請參閱[SharePoint Online 中的管理網站建立](https://docs.microsoft.com/sharepoint/manage-site-creation)若要啟用自助網站架設，為您的組織或[在新的 SharePoint 系統管理中心中的受管理的網站](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center)」 從 SharePoint Online 系統管理中心建立網站。</span><span class="sxs-lookup"><span data-stu-id="cfbc6-127">If you're a Microsoft 365 admin, see [Manage site creation in SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) to enable self-service site creation for your organization or [Manage sites in the new SharePoint admin center](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) to create a site from the SharePoint Online admin center.</span></span>
   
