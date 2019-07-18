@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何傳送加密的電子郵件使用 Outlook。
-ms.openlocfilehash: e58a69c25c00a0482d3837d9bde626ec0a54936f
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 7420073ba768f0e5adba33d673d3ccd6369e306c
+ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772320"
+ms.locfileid: "35778138"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>加密或標籤機密電子郵件
 
@@ -60,7 +60,7 @@ ms.locfileid: "35772320"
 
 1. 在網頁瀏覽器中，使用已授與全域系統管理員權限的工作或學校帳戶登入 Office 365。 
 2. 選擇 [管理] 磚。 
-3. 在 Office 365 系統管理中心中，選擇 [**系統管理中心 > Exchange**]。 
+3. 在系統管理中心中，選擇 [**系統管理中心 > Exchange**]。 
 
 如需詳細資訊，請參閱[定義郵件流規則以加密 Office 365 中的電子郵件](https://docs.microsoft.com/en-us/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email)。
 
