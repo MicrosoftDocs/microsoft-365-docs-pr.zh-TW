@@ -21,27 +21,27 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 使用 Microsoft 團隊設定線上會議。
-ms.openlocfilehash: 2b17ee8abb2758f7042147fda6ac7b9da68acc78
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+description: 設定使用 Microsoft Teams 的線上會議。
+ms.openlocfilehash: 67a58b17d3e5153d8e0f36788f68ca7c0e204d6f
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35080702"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772300"
 ---
 # <a name="set-up-meetings"></a>設定會議
 
-Microsoft 小組中的會議包括音訊、影片和共用。 而且因為他們在線上, 您的市場活動永遠都有會議空間, 而不需要會議室或投影儀。Microsoft 團隊會議是與組織內部和外部的員工和志願者共同合作的絕佳方法。 您不需要是組織的成員, 也不需要有帳戶加入會議。 針對您的政治活動, 您可以使用 Microsoft 小組來排程和執行線上會議。 您可以將員工、志願者和來賓加入組織外部。 在會議期間, 您可以共用螢幕、共用檔案、指派任務等等。
+Microsoft Teams 中的會議包含音訊、 視訊和共用。 因為它們是線上，您將一律具有會議空間，而且永遠不需要會議室或投影機行銷活動。Microsoft Teams 會議是來自與您的員工和名冊內部和外部組織很棒的方法。 您不需要為您組織的成員，或甚至有帳戶才能加入會議。 可以為政治活動，您可以排程及執行使用 Microsoft Teams 的線上會議。 您可以包含員工、 名冊和來賓組織外部。 在會議期間，您可以共用您的螢幕共用檔案、 指派工作，等等。
 
-[![使用來自桌上型電腦和行動電話的兩名使用者的圖例](media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+[![兩個使用者在會議中的圖例](media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
-下載[PDF](https://go.microsoft.com/fwlink/?linkid=2078712)或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)中的資訊圖表, 以快速瞭解如何使用 Microsoft 小組加入或架設線上會議。
+下載[PDF](https://go.microsoft.com/fwlink/?linkid=2078712)或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)以取得如何加入或主控線上會議使用 Microsoft Teams 的快速概觀資訊圖表。
 
 ## <a name="best-practices"></a>最佳做法
 
-請遵循下列適用于您線上會議的最佳作法:
-1. 在 Microsoft 小組中安排您的線上會議。 您可以選擇小組和管道, 它會自動邀請該小組或管道中的參與者。
-2. 需要即時會議嗎？ 如果您是在一對一的交談中, 只需選擇 [**立即開會**] 即可與您正在交談的人員啟動影片或音訊通話。 
+請遵循這些的線上會議的最佳作法：
+1. 排程線上會議右手 Microsoft teams。 您可以選擇小組及通道，以及小組會邀請小組參與者或自動通道。
+2. 需要即席會議嗎？ 如果您是在一對一聊天室中，選擇 **[立即開會]** 啟動視訊或音訊通話與您正在與交談的人員。 
 
 
 ## <a name="schedule-a-meeting"></a>排程會議
@@ -52,6 +52,6 @@ Microsoft 小組中的會議包括音訊、影片和共用。 而且因為他們
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn]
 
-深入瞭解 Microsoft 小組中的會議:
+深入了解 Microsoft Teams 中的會議：
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeokQ]

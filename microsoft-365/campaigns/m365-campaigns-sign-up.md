@@ -1,5 +1,5 @@
 ---
-title: 註冊 Microsoft 365 以取得活動
+title: 註冊 Microsoft 365 的行銷活動
 ms.author: supotter
 author: supotter
 manager: scotv
@@ -20,75 +20,75 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Microsoft 365 for 活動的逐步註冊。 保護您的活動, 從 cybersecurity 威脅到電子郵件、資料和通訊。
-ms.openlocfilehash: b1af4138da6f935fc2745444eea4ad82f9f128d6
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+description: 逐步註冊行銷活動適用於 Microsoft 365。 從電子郵件、 資料及通訊的 cybersecurity 威脅保護您的行銷活動。
+ms.openlocfilehash: 178fa371d0f299c58168957b82b0c7da74b37742
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183255"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772460"
 ---
-# <a name="sign-up-for-microsoft-365-for-campaigns"></a>註冊 Microsoft 365 以取得活動 
+# <a name="sign-up-for-microsoft-365-for-campaigns"></a>註冊 Microsoft 365 的行銷活動 
 
-以下說明如何完成 Microsoft 365 的註冊活動。
+以下是如何用於行銷活動的 Microsoft 365 完成您註冊。
 
-## <a name="before-you-start"></a>開始之前: 
-- 完成[取得 microsoft 365 for The 活動](get-microsoft-365-campaigns.md#get-microsoft-365-for-campaigns)中的步驟, 將您的邀請加入 microsoft 365 以取得活動。 
-- 從 Microsoft 開啟您的電子郵件邀請。 邀請有您組織的唯一註冊連結。 您需要此用來取得特別的宣傳。
-- 讓您的商務信用卡和電話準備就緒。 
+## <a name="before-you-start"></a>開始之前： 
+- 透過 Microsoft 365 您邀請行銷活動的完成[活動適用於取得 Microsoft 365](get-microsoft-365-campaigns.md#get-microsoft-365-for-campaigns)中的步驟。 
+- 從 Microsoft 開啟您的電子郵件邀請。 邀請擁有貴組織的唯一登入連結。 您需要此選項，即可取得行銷活動特殊價格。
+- 具有商務信用卡和準備好的電話。 
 
     > [!TIP]
-    > 您的註冊連結對您的活動是唯一的。 它只能正常運作, 因此請確定您有足夠的時間來完成註冊。 您需要大約十分鐘的時間。 
+    > 您註冊的連結是唯一的您的行銷活動。 它只適用於一次，所以請確定您有足夠時間完成註冊。 您需要大約 10 分鐘。 
 
-## <a name="steps-to-sign-up"></a>註冊的步驟
+## <a name="steps-to-sign-up"></a>若要註冊的步驟
 
-1. 在您對 Microsoft 365 的行銷活動電子郵件的邀請中, 選取 [**註冊您的組織] >**。 這會將您帶到 Microsoft 365 註冊。
+1. 在您的邀請 Microsoft 365 的行銷活動的電子郵件，選取 [**註冊您的組織 >**]。 這將帶您註冊的 Microsoft 365。
     > [!NOTE]
-    > 如果您已有商務用 Office 365 訂閱, 且想要新增 Microsoft 365 的活動提供給 it, 請移至[現有訂閱的 [將 microsoft 365 新增至活動](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)]。
-1. **在 [Microsoft 365 商務版] 頁面上**, 輸入您的商務詳細資料。 若為**商務電子郵件地址**, 請使用目前的電子郵件地址。 我們只需要此位址, 即可在安裝程式期間與您保持聯絡。  Select **Next**. 
-1. **在 [建立您的使用者識別碼] 頁面上**:
-    1. 在****[使用者名稱] 中, 輸入您要用於電子郵件地址的名稱或別名。 例如, 您可能只想知道 Alice 或搶。 在較大型的活動中, AliceC 或 AliceChavez 可能更有意義。
-    2. 在**您的公司**中, 輸入您工作的市場活動名稱。 例如, ContosoCampaign。 如果您已經擁有網域, 請在這裡使用該名稱。 
-    3. 在 [**選取網域**] 中, 選取 [ **onmicrosoft.com** ]。 我們可以稍後設定您的網域, 或協助您取得 Microsoft 365 連線至您已擁有的網域。
-    4. 建立密碼, 然後選取 [**建立我的帳戶**]。 
+    > 如果您已有現有的 Office 365 商務版訂閱和您想要新增至此行銷活動提供適用於 Microsoft 365，請移至[新增至現有訂閱的行銷活動適用於 Microsoft 365](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)。
+1. **在 Microsoft 365 商務版] 頁面上**，輸入您的業務詳細資料。 針對**商務電子郵件地址**，使用目前的電子郵件地址。 我們只需要在安裝過程中保持聯繫您這個地址。  Select **Next**. 
+1. **在 [建立您的使用者識別碼] 頁面上**：
+    1. 在 [**使用者名稱**，輸入的名稱或要針對您的電子郵件地址的別名。 例如，您可能想要稱為只是艾莉斯或 rob 都。 在較大的活動，AliceC 或 AliceChavez 可能更具意義。
+    2. 在**您的公司**，輸入適用於行銷活動的名稱。 例如，ContosoCampaign。 如果您已經擁有網域，請在這裡使用該名稱。 
+    3. 在 [**選取網域**，請選取 [ **。 onmicrosoft.com**現在。 我們可以設定您的網域之後，或幫助您取得 Microsoft 365 連線到您已有自己的網域。
+    4. 建立密碼，然後選取 [**建立我的帳戶]**。 
     > [!NOTE]
-    > 如果您的活動或參與方不擁有網域, 而且您已決定想要的網域, 您可以選取它。
+    > 如果您的行銷活動或廠商不會擁有的網域，而且您已決定您想要查看的網域，您可以購買一個現在由選取它。
 
-4. **證明。您是。無.-機器人。頁面**:
-    1. 準備好您的手機, 並選取 [**文字**] (如果您願意, 請**致電我**)。 然後輸入您的電話號碼。 
-    2. 當您選取 [**文字**] 時, 我們會為您傳送驗證碼。 或者, 如果您選取 [**呼叫我**], 就會撥打您的程式碼。
-    3. 從您的文字訊息 (或呼叫) 輸入程式碼, 然後選取 **[下一步]**。 預期短的等待時間。 
-5. **您將在何處使用此頁面**: 輸入市場活動的主要工作位置詳細資料和電話號碼。  Select **Next**. 
-6. **這會如何顯示頁面**:
-    1. 確認每位使用者的成本為 $5.00。 
-    2. 如果您只想要自行設定, 請選取 **[下一步]**。 
-    3. 選用: 變更 [**使用者**] 欄位中的號碼, 立即新增一些額外的授權。 [您使用的人員可以隨時將授權指派給 Microsoft 365](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) 。
-7. **您要如何支付？頁面**: 選取 [**新信用卡**], 輸入您的商務信用卡詳細資料, 然後選取 [**下訂單**]。 如果您願意, 也可以使用銀行帳戶。
-8. **這可能需要一段時間**: 您會找到登入的位置和您的使用者識別碼的詳細資訊。 我們也會將此資訊傳送到您在上述步驟2中輸入的電子郵件地址。
+4. **證明。您正在。不是。答： 機器人。頁面**:
+    1. 具有您電話已做好準備，然後選取 [**文字我**（或**打電話給我**如果您想要的話）。 然後輸入您的電話號碼。 
+    2. 當您選取**的文字我**時，我們將會傳送給您驗證碼。 或者，我們將會呼叫您的程式碼與如果您選取 [**打電話給我**。
+    3. 從您的文字訊息 （或通話） 輸入程式碼，然後選取 [**下一步**]。 預期簡短等候。 
+5. **在將您使用此頁面**： 輸入行銷活動的主要工作位置的詳細資訊和電話號碼。  Select **Next**. 
+6. **如何執行此外觀頁面**:
+    1. 確認每位使用者的成本是 $5.00。 
+    2. 如果您只想要設定立即，選取 [**下一步**]。 
+    3. 選用： 新增一些額外的授權現在藉由變更 [**使用者**] 欄位中的數字。 [您使用的人員可以指派授權給 Microsoft 365](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json)任何時候。
+7. **您希望如何付款？] 頁面上**： 選取 [**新信用卡**，輸入您商務信用卡的詳細資料，然後選取 [**下單**。 如果您想要的話，您也可使用銀行帳戶。
+8. **這可能會花些時間] 頁面上**： 您可以找到詳細哪裡可以登入，以及您的使用者識別碼。 我們也會傳送此資訊到您在上述步驟 2 期間所輸入的電子郵件地址。
 
-您的註冊步驟已完成! 如果您想要繼續進行下一個步驟, 請選取 [**啟動設定**], 或稍後再完成步驟。 當您準備好時, 請檢查您的電子郵件 (從步驟 2), 以尋找您的使用者名稱和密碼, 讓您下次可以登入。 這些稱為您的系統管理員或全域系統管理員認證。
+您註冊的步驟都完成 ！ 如果您想要繼續執行接下來的步驟，選取 [**啟動安裝程式**，或回到稍後完成步驟。 當您準備好，以尋找您的使用者名稱和密碼，讓您還是可以登入下一次檢查您的電子郵件 （從步驟 2）。 這些稱為您的系統管理員或全域系統管理員認證。
 
-## <a name="steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription"></a>將活動新增至現有訂閱的 Microsoft 365 步驟
+## <a name="steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription"></a>若要新增至現有訂閱的行銷活動適用於 Microsoft 365 的步驟
 
-如果您已擁有 Office 365 for business 的訂閱, 例如 Office 365 商務版, 您可以使用 Microsoft 365 for the 促銷活動來新增授權給 it。
+如果您已與現有的訂閱 Office 365 企業版，例如 Office 365 商務進階版，您可以使用 Microsoft 365 的行銷活動提供新增授權給它。
 > [!IMPORTANT]
-> 您不能將行銷活動的 Microsoft 365 新增至現有的 Microsoft 365 商務租使用者。
+> 您無法將行銷活動提供適用於 Microsoft 365 新增至現有的 Microsoft 365 商務版租用戶。
 
-1. 在您對 Microsoft 365 的行銷活動電子郵件的邀請中, 選取 [**註冊您的組織] >**。 這會將您帶到 Microsoft 365 註冊。
-2. 在 [**歡迎, 讓我們看知道您**] 頁面上, 按一下或點擊 [**想要將此新增至現有訂閱嗎？]。登入**。
+1. 在您的邀請 Microsoft 365 的行銷活動的電子郵件，選取 [**註冊您的組織 >**]。 這將帶您註冊的 Microsoft 365。
+2. 在 [**歡迎，讓我們前往認識您**] 頁面上，按一下或點選 [**想要將這新增至現有訂閱嗎？登入**。
     
-    ![選擇右上角的 [登入]。](media/addtoexisting.png)
-3. 在 [登入] 頁面上, 輸入現有訂閱的系統管理員別名, 例如*Alice @ VoteContoso<span> </span> * , 然後選擇 [**下一步]**, 輸入您的密碼, 然後選擇 [登**入**]。
-4. 在 [**這會如何？** 輸入您擁有的使用者數目, 並選擇 [**下一步]**。 請注意, 您不需要在這裡輸入促銷代碼, 因為它已包含在邀請 URL 中。
-5. 在 [**您要支付什麼？** ] 頁面上, 輸入您的付款條件, 然後選擇 [**下一訂單**]。
+    ![在右上角，選擇 [登入。](media/addtoexisting.png)
+3. 在登入] 頁面上，輸入系統管理員的別名現有訂用帳戶，例如， *Alice@VoteContoso<span></span>.org* ，然後選擇 [**下一步**，輸入您的密碼，然後選擇 [**登入**。
+4. 在**如何執行此外觀？** 輸入的使用者也可以選擇 [**下一步**數目。 請注意，您不必輸入促銷代碼，因為它已包含在邀請 URL。
+5. 在**您希望如何付款？** ] 頁面上，輸入您的付款方式，選擇 [**下單**。
 
-完成這些步驟之後, 您就可以[將新的授權指派](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide)給您的活動人員。 
+完成這些步驟之後，您已準備好[指派新授權](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide)給您的行銷活動人員。 
 
 
 ## <a name="whats-next"></a>後續步驟
-- [設定 microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)以完成設定市場活動的 microsoft 365。 
-- [將使用者新增](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json)至您的計畫。 包含市場活動候選人、所有的資深活動人員, 以及將有權存取機密活動或參與方資訊的任何人。
-- [為您的活動增加保護](m365-campaigns-security-overview.md)
+- [設定 Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)完成 Microsoft 365 行銷活動的設定。 
+- [新增使用者](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json)至您的計劃。 包含活動候選項目、 所有的資深活動人員，以及會有機密的活動或方資訊的存取權的任何人。
+- [兩點保護您的行銷活動](m365-campaigns-security-overview.md)
 
 
 
