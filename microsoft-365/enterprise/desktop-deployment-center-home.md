@@ -13,14 +13,72 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 桌面部署中心概觀。
-ms.openlocfilehash: 659ea39fc4ccd1c06d79c8a5c39ff2c4e85ba9ce
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: b19c2f5df6368fd6066b6506a17ed81ddf57f8c6
+ms.sourcegitcommit: 275d5c2d74e55ef6488594165367b02e735dc540
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814644"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35834026"
 ---
 # <a name="desktop-deployment-center"></a>桌面部署中心
+
+<table border="0">
+ <tr>
+ <td>
+  <strong>從 Windows 7 升級到 Windows 10</strong><p>Windows 7 的延伸支援服務在 2020 年 1 月 14 日結束。 從 Windows 7 就地升級到 Windows 10 是最快的部署方法。 您可以<a href="https://docs.microsoft.com/zh-TW/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">升級一部電腦</a>或<a href="https://docs.microsoft.com/zh-TW/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">使用 System Center Configuration Manager 升級數以千計的電腦</a>。 您不需要專注於應用程式傳遞、檔案移轉、自訂影像，或啟用就地升級的雲端服務。 您可以使用已有的工具升級現有的電腦，並專注於下列的更新部署步驟： </td>
+ </tr>
+ <tr>
+ <td>
+    <table border="0">
+     <tr>
+     <td>
+        <table border="0">
+             <tr>
+                  <td>
+                  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" height="144" width="144" />
+              </td>
+              <td>
+              <strong>升級 ConfigMgr 至最新分支</strong>
+                  </td>
+                 </tr>
+                </table>
+    </td>
+        <td>
+        <table border="0">
+             <tr>
+                  <td>
+                  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" height="144" width="144" />
+              </td>
+              <td>
+              <strong>驗證裝置和應用程式的整備</strong>
+                  </td>
+                 </tr>
+                </table>
+    </td>
+        <td>
+        <table border="0">
+             <tr>
+                  <td>
+                  <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" height="144" width="144" />
+              </td>
+              <td>
+              <strong>將 Windows 7 電腦升級至 Windows 10</strong>
+                  </td>
+                 </tr>
+                </table>
+        </td>
+        </tr>
+    </td>
+    </tr>
+    <tr>
+    <td>
+使用 SCCM 的組織所需之目錄和網絡整備步驟的部分 </td>
+    <td>
+電腦 App 保證可提供說明的裝置和應用程式的整備步驟的部分 </td>
+    <td>
+保留使用者的電腦所需的 OS 部署及功能更新步驟的部分 </td>
+    </tr>
+</table>
 
 <img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
