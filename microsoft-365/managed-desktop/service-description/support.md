@@ -3,16 +3,16 @@ title: Microsoft 受管理電腦的支援
 description: ''
 keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
-author: jdeckerms
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 11/7/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 97637f28f5a5de292385a36472966f3272b2f09a
-ms.sourcegitcommit: 720881c1a9c5f708e1b4adf7e5ea4ff8da48ea99
+ms.openlocfilehash: 83f4d8b6fb9f2938151db8dfea37b3c9f18124c9
+ms.sourcegitcommit: 8f57be80955cd374d418c7e1a78849ff3e1d630f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970460"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907544"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的支援
 
@@ -25,15 +25,15 @@ Microsoft 會提供主動和被動附隨管理。 Microsoft 會追蹤 Microsoft 
 
 ## <a name="whats-included"></a>其中包含哪些功能？
 
-Microsoft 受管理的電腦支援：
+Microsoft 受管理的電腦支援包括：
 
-- 提供小組，支援工程師專用於 Microsoft 受管理的電腦裝置
-- 支援 Microsoft 受管理的電腦裝置和指派給這些裝置的使用者
-- 授與管理 Microsoft 受管理的電腦裝置的技術支援工程師有限系統管理存取 Microsoft 受管理電腦的裝置 
+- 一群工程師專用於 Microsoft 受管理的電腦裝置
+- 使用 Microsoft 受管理的電腦裝置的使用者的支援選項
+- 授與管理 Microsoft 受管理的電腦裝置工程師有限系統管理存取 Microsoft 受管理電腦的裝置 
 
 支援的產品：
 
-- Windows 10 使用 Windows Defender 進階威脅防護 (WDATP) 
+- Windows 10 與 Microsoft Defender 進階威脅防護 
 - Office 365 套件的一部分： Outlook、 Word、 PowerPoint、 Excel、 Skype for Business 用戶端，Microsoft Teams 
 - 商務用 Microsoft Store 
 - OneDrive for Business 用戶端 
