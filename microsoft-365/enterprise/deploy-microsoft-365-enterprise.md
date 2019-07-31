@@ -3,7 +3,7 @@ title: 部署 Microsoft 365 企業版
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 04/23/2019
+ms.date: 07/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用來在組織中部署 Microsoft 365 企業版的資源。
-ms.openlocfilehash: ac3e023f6a9364f6b9de23cd5b91d0d6fb6dbf1b
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 9f67c8b6ac28557e8a37a31ec8ca9e0b318cb79a
+ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072493"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35937405"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版
 
@@ -91,49 +91,15 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
 ### <a name="how-customers-use-microsoft-365-enterprise"></a>客戶如何使用 Microsoft 365 企業版
 
-以下是客戶如何使用 Microsoft 365 企業版作為其完整的智慧型解決方案，讓所有人可以發揮創意並且安全地共同作業：
+若要查看 Microsoft 客戶如何使用 Microsoft 365 企業版，請使用客戶案例的網站。
 
-- 營造
-  - [搜尋資料安全性解決方案，發掘一般承包公司的 Microsoft 365 共同作業功能](https://aka.ms/Transbluecasestudy) (英文)
-  - [EMCOR 群組轉換至雲端，建構搭配 Microsoft 365 的智慧型工作區](https://aka.ms/EMCOR)
-- 顧問
-  - [ERM 使用 Microsoft 365 為可靠的未來持續做出貢獻](https://aka.ms/ERM_CS) (英文)
-- 能源服務
-  - [Schlumberger 透過 Microsoft 365 讓全球團隊合作更加精煉](https://aka.ms/Schlumberger_) (英文)
-- 工程
-   - [Cadence 利用行動協同作業工具加快業務步調](https://customers.microsoft.com/story/cadence-partner-professional-services-microsoft-365)
-- 財務服務
-  - [TD Bank 讓員工使用 Office 365 和 Windows 10 中的輔助技術](https://aka.ms/tdbankgroup) (英文)
-  - [家庭報稅開始選擇一體解決方案來協助增加收益](https://aka.ms/SOSCaseStudy) (英文)
-- 遊戲
-  - [遊戲公司使用 Microsoft 365 和 Surface 裝置提高生產力及通訊](https://aka.ms/PlaynGO)
-  - [Razer 透過 Microsoft 365 獲得成功，並可充分運用全球遊戲產業中的優勢](https://aka.ms/Razer_)
-- 健康服務
-  - [Lilly 設想這會是一個內部和外部協同合作的工作場所，有助於創新並加快新藥的上市時間。](https://aka.ms/Eli_CLS)
-  - [醫療保建技術創新加速在雲端中的糖尿病預防](https://aka.ms/Soleracasestudy) (英文)
-  - [Adventist 醫療系統使用 Microsoft 365 加強提供醫療保健](https://aka.ms/adventisthealth) (英文)
-  - [Abrona 使用 Microsoft 365 加速 GDPR 合規性並且增加生產力](https://aka.ms/Abrona) (英文)
-  - [Centra 樂於轉換，使用 Microsoft 365 智慧型商務工具來改善病患照護](https://aka.ms/Centra_Health) (英文)
-  - [Advoraate Aurora Health 使用 Microsoft 醫療照護協作解決方案，協助患者擁有更好的生活品質以加強合作](https://aka.ms/Advocate_) (英文)
-- 進口
-  - [銷售、行銷及進口公司透過 Microsoft 365 提升資料安全性並降低營運成本](https://aka.ms/MvmtGroupNordic)
-- 製造
-  - [鋼鐵業公司透過雲端減少硬體成本、簡化 IT，並且獲得行動生產力](https://aka.ms/Steeledalecasestudy) (英文)
-  - [刺繡設備供應商透過雲端型服務來增強其業務能力，讓名聲散播到其他小型企業](https://aka.ms/PriorityLLCCaseStudy) (英文)
-  - [父子企業向全世界展示了行動不便的員工可以實現的目標](https://aka.ms/JCSCaseStudy) (英文)
-  - [通過現代化的協作工具，椰子公司可以改善移動性、更好的指標並提高生產力](https://aka.ms/SilvermillCS) (英文)
-  - [蓬勃發展的日本創新者透過 Microsoft 365 Business 發現了不會過時的彈性和增強的安全性](https://aka.ms/DreamFactoryCaseStudy) (英文)
-- 非營利機構
-  - [移轉到雲端的技術可讓非營利組織節省 50 萬美元，同時提高安全性、移動性和協作性](https://aka.ms/MOWCaseStudy) (英文)
-- 專業服務
-  - [精品業和不動產法律事務所支援透過全面性的雲端型平台進行擴展](https://aka.ms/Lieserskaffcasestudy) (英文)
-  - [運動科技公司透過生物反饋和分析協助運動員達到巔峰](https://aka.ms/KMOTIONCasestudy) (英文)
-  - [數位轉換和雲端讓商業協會為其成員提供更好的服務](https://aka.ms/AIMCS) (英文)
-- 交通
-  - [Qantas 讓員工能夠利用 Microsoft 365 讓工作盡善盡美，並提升客戶體驗](https://aka.ms/Qantas_CS) (英文)
-  - [Amtrak 利用 Microsoft 365 使其行動企業迎頭領先](https://aka.ms/Amtrak_) (英文)
-  - [Amtrak 擁有現代化的工作場所，使用 Microsoft 365 節省人力成本並改善產品組合透明度](https://aka.ms/Amtrak_CS)
+1. 移至[ https://customers.microsoft.com/ ](https://customers.microsoft.com/)並按一下**搜尋**。
+2. 在左窗格**語言**中，選取您的語言。
+3. 在**產業中，選取您組織的產業。
+4. 在**產品**中，選取**Microsoft 365**。
+5. 按一下客戶案例研究的卡。
   
+
 ### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Microsoft 如何使用 Microsoft 365 企業版
 
 定義數位文化是每個努力促進現代工作場所的領導者的首要任務。 Microsoft 365 旨在支持這種文化轉變，幫助領導者賦予其公司每位員工釋放創造力和共同作業的能力。 在 Microsoft 建立基礎架構時，恰好引發了這種數位文化的轉型。 實作 Microsoft 365 企業版使我們能夠部署如 Microsoft Teams 和 Exchange Online 這類的共同作業技術，並在安全的 SharePoint 內部網站線上分享敏感資料。
