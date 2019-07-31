@@ -3,20 +3,20 @@ title: Microsoft 365 企業版概觀
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/23/2019
-ms.audience: ITPro
+ms.date: 07/30/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 企業版提供元件、 計劃及部署路徑的簡介。
-ms.openlocfilehash: d3cac3274a93c2f6d2d042a03a5140f16152d8d9
-ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
+ms.openlocfilehash: ec2a8f0d60f50503f8f5cf457c2999598e248053
+ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "33553332"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "35937417"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -30,9 +30,9 @@ Microsoft 365 企業版所組成：
 
 |||
 |:-------|:-----|
-| Office 365 Enterprise | 包含這兩個 Office 365 專業增強版，您的 PC 和 Mac （例如 Word、 Excel、 PowerPoint、 Outlook 和其他人），和一套完整的電子郵件、 檔案儲存與共同作業、 會議及更多的線上服務的最新的 Office 應用程式。 |
+| 本機和以雲端為基礎的應用程式和生產力服務 | 包含這兩個 Office 365 專業增強版，您的 PC 和 Mac （例如 Word、 Excel、 PowerPoint、 Outlook 和其他人），和一套完整的電子郵件、 檔案儲存與共同作業、 會議及更多的線上服務的最新的 Office 應用程式。 |
 | Windows 10 企業版 | 解決大型且中型組織中，為使用者提供與最具生產力且安全的 Windows 版本的需求和 IT 專業人員更完整的部署、 裝置和應用程式管理。 |
-| Enterprise Mobility + Security (EMS) | 包含 Microsoft Intune，也就是雲端式企業行動力管理 (EMM) 服務，可協助讓您同時將保持公司資料保護提高生產力的工作人員。 |
+| 裝置管理和進階的安全性的服務 | 包含 Microsoft Intune，也就是雲端式企業行動力管理 (EMM) 服務，可協助讓您同時將保持公司資料保護提高生產力的工作人員。 |
 |||
 
 ## <a name="plans"></a>方案
@@ -41,10 +41,17 @@ Microsoft 365 企業版所組成：
 
 |||
 |:-------|:-----|
-| 版 E3 | 包含 Office 365 企業版、 Windows 10 企業版和 Enterprise Mobility + Security (EMS)。 |
-| E5 | 包含所有的 E3 的功能以及進階的安全性、 語音及資料分析工具。 |
-| F1 | 特殊用途 firstline 工作者連接至工具和盡善盡美所需的資源。 Firstline 工作者所列的第一個與您的客戶，並代表您公司的品牌和 value， |
+| 版 E3 | 存取核心產品與安全地增強工作場所生產力和磁碟機創新能力，Microsoft 365 內的功能。 |
+| E5 | 存取最新的產品和 Microsoft 365 內的功能，包括進階威脅防護、 安全性和共同作業工具. 包含所有的 E3 的功能以及進階的安全性、 語音及資料分析工具。 |
+| F1 | 與第一線透過特殊用途的工具和資源，以允許他們盡善盡美連線。 |
 |||
+
+如果您有 Microsoft 365 企業版 E3，您也可以取得這些[供應項目](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)：
+
+- 身分識別 & 威脅防護
+- 資訊保護 & 合規性
+
+這些供應項目包含隨附於 Microsoft 365 企業版 E5 的其他功能。
 
 如需詳細資訊，請參閱[每個計劃的功能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
 
@@ -52,7 +59,7 @@ Microsoft 365 企業版所組成：
 
 [Microsoft 365 企業版海報](http://aka.ms/m365eposter)是中央位置，讓您檢視：
 
-- 產品與功能的 Microsoft 365 企業版和如何對應到其值要點
+- Microsoft 365 企業版及如何對應到其值要點的優點
 - Microsoft 365 企業版方案，而且其中包含哪些元件 
 - 現代化工作場所，可讓 Microsoft 365 企業版的主要元件
 - Microsoft 365 企業版的重要商務值案例的服務和產品使它們，即會發生
@@ -103,12 +110,13 @@ Microsoft 365 企業版所組成：
 |||
 |:-------|:-----|
 ![](./media/m365-poster/m365-fundamentals.svg)| 取得自行訓練，並向 Microsoft 365 憑證運作。 <BR> 開始使用[Microsoft 365 基本概念](https://docs.microsoft.com/learn/paths/m365-fundamentals/)。
+|||
 
 
 ## <a name="next-step"></a>下一步
 
 如果您正在自行進行部署，來啟動您的[Microsoft 365 企業版部署的作業過程](deploy-microsoft-365-enterprise.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 Enterprise 產品頁面](https://www.microsoft.com/microsoft-365/enterprise)
