@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: fc2d978b50a433249e016c25b4c234de6c7f46b8
-ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
+ms.openlocfilehash: 72277ec2dfe7681aa5f596e655d5e275bbb64dd1
+ms.sourcegitcommit: 5615e790dc53ccc74f3c475ca43d69ca56be348a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778128"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "36041177"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>GDPR 的 Dynamics 365 資料主體要求
 
@@ -87,7 +87,7 @@ Microsoft 提供有助於回應資料主體權利要求的功能，並可用以�
 
 ***Dynamics 365 Customer Service Insights*** 提供的資源清單可協助您[尋找客戶資料](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-discovery)以便回應來自客戶的 GDPR 要求。 
 
-***Dynamics 365 Finance and Operations*** 提供數個方式，讓您搜尋客戶資料。 身為租用戶系統管理員的您，可以執行下列動作來搜尋客戶資料：
+***Dynamics 365 for Finance and Operations*** 提供數個方式讓您搜尋客戶資料。 身為租用戶系統管理員的您，可以執行下列動作來搜尋客戶資料：
 
 - 透過可快速探索個人資料的方法整理客戶資料，請參閱[如何分類資料庫存](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#detailed-inventory)以達成此目的。
 - 使用[人員搜尋報表](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#the-person-search-report)來找出並收集個人資料。
@@ -96,7 +96,7 @@ Microsoft 提供有助於回應資料主體權利要求的功能，並可用以�
 - 撰寫可找出並匯出個人資料的自訂表單。
 - 撰寫外部入口網站或網站，讓已驗證的客戶查看他/她的個人資料。
 
-***Dynamics for Business Central*** 提供數個方式，讓您搜尋客戶資料。 如需詳細資訊，請參閱[搜尋、篩選及排序資料](https://docs.microsoft.com/dynamics-nav-app/ui-enter-criteria-filters)。
+***Dynamics 365 Business Central*** 提供數個方式讓您搜尋客戶資料。 如需詳細資訊，請參閱[搜尋、篩選及排序資料](https://docs.microsoft.com/dynamics365/business-central/ui-enter-criteria-filters)。
 
 ***Dynamics 365 for Talent*** 提供可尋找特定個人資料的進階搜尋和篩選功能，以及可匯出該資訊或使用瀏覽器擴充將該資訊列印為 .pdf 檔的 Microsoft Office 匯出功能。
 
@@ -189,7 +189,7 @@ Dynamics 365 for Finance and Operations 和 ***Dynamics 365 for Talent*** 兩者
 
 ***Dynamics 365 Business Central*** 提供下列功能：
 
-- 您可以將客戶資料匯出為 Excel 檔案。 之後您可以在 Excel 中編輯要包含在可攜性要求中的客戶資料，然後儲存為經常使用的機器可讀取格式，例如 .csv 或 .xml。 如需詳細資訊，請參閱[將您的商務資料匯出至 Excel](https://docs.microsoft.com/dynamics-nav-app/about-export-data)。
+- 您可以將客戶資料匯出為 Excel 檔案。 之後您可以在 Excel 中編輯要包含在可攜性要求中的客戶資料，然後儲存為經常使用的機器可讀取格式，例如 .csv 或 .xml。 如需詳細資訊，請參閱[將您的商務資料匯出至 Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data)。
 - 您可以將客戶資料匯出為 Excel 檔案。 之後您可以在 Excel 中編輯要包含在可攜性要求中的客戶資料，然後儲存為經常使用的機器可讀取格式，例如 .csv 或 .xml。 如需詳細資訊，請參閱[將您的商務資料匯出至 Excel](https://docs.microsoft.com/zh-TW/dynamics365/business-central/about-export-data)。
 
 ### <a name="microsoft-social-engagement"></a>Microsoft Social Engagement
