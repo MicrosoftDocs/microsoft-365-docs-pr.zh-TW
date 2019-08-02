@@ -1,103 +1,103 @@
 ---
-title: 部署 Microsoft 受管理電腦裝置的應用程式
-description: 將應用程式新增及部署至 Microsoft 受管理的電腦裝置的資訊。
-keywords: Microsoft 受管理的桌面、Microsoft 365、服務、檔、應用程式、企業營運應用程式、LOB 應用程式
+title: 部署 Microsoft 受管理的電腦裝置的應用程式
+description: 新增及部署至 Microsoft 受管理的電腦裝置的應用程式的資訊。
+keywords: Microsoft 受管理的電腦、 Microsoft 365、 服務、 文件、 應用程式、-營運應用程式、 LOB 應用程式
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5eac2e8c3023015bd034c51ad7e16a669a484772
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 5e842849afbedd506689caa9ffc0953a58e18fed
+ms.sourcegitcommit: f5c9aff5700f7824bf71f4a7e8c7236f7d91043e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390420"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36059583"
 ---
 # <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>將應用程式部署至 Microsoft 受管理的電腦裝置
-上架的一部分加入 Microsoft 受管理的桌面, 包括在使用者的裝置中新增及部署應用程式。 一旦您使用 Microsoft 受管理的桌面入口網站, 您可以新增和部署您的應用程式。 
+以 Microsoft 受管理的電腦上架一部分的包含新增和應用程式部署至使用者的裝置。 一旦您使用 Microsoft 受管理電腦入口網站，您可以新增並部署您的應用程式。 
 
-整體程式如下所示:
-1. [將應用程式新增至 Microsoft 受管理的桌面入口網站](#1)-這可以是現有的企業營運 (LOB) 應用程式, 或您已與 Intune 同步處理的 Microsoft Store 中的應用程式。 
-2. [建立應用程式指派的 Azure Active Directory (AD) 群組](#2)-您將使用這些群組來管理應用程式指派。
+整體程序看起來像這樣：
+1. [新增應用程式連接至 Microsoft 受管理電腦入口網站](#1)-這可以現有的-營運 (LOB) 應用程式] 或來自使用 Intune，當您同步處理商務用 Microsoft Store 應用程式。 
+2. [建立 Azure Active Directory (AD) 群組的應用程式工作分派](#2)-您將使用這些群組來管理應用程式工作分派。
 3. [將應用程式指派給您的使用者](#3)
 
 <span id="1" />
 
-## <a name="step-1-add-apps-to-microsoft-managed-desktop-portal"></a>步驟 1: 將應用程式新增至 Microsoft 受管理的桌面入口網站
-您可以將[Win32 或 WINDOWS MSI 型應用](#lob-apps)程式, 或[Microsoft Store for Business App](#msfb-apps)新增至 Microsoft 受管理的電腦, 然後將其部署至 Microsoft 受管理的電腦裝置。
+## <a name="step-1-add-apps-to-microsoft-managed-desktop-portal"></a>步驟 1： 將應用程式新增至 Microsoft 受管理電腦入口網站
+您可以將[Win32 或 Windows MSI 型應用程式](#lob-apps)，或[Microsoft 網上商店商務應用程式](#msfb-apps)新增至 Microsoft 受管理的電腦，並再將其部署至 Microsoft 受管理的電腦裝置。
 
 <span id="lob-apps">
 
-###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Microsoft 受管理的電腦的 Win32 或 Windows MSI 型應用程式
+###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Win32 或 Windows MSI 型應用程式連接至 Microsoft 受管理的電腦
 
-您可以將企業營運 (LOB) 應用程式新增至 Microsoft 受管理的桌面入口網站。 如需 Microsoft 受管理電腦裝置上所安裝之應用程式需求的相關資訊, 請參閱[Microsoft 受管理的桌面應用程式需求](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements)。
+您可以將-營運 (LOB) 應用程式新增至 Microsoft 受管理電腦入口網站。 如需 Microsoft 受管理的電腦裝置上安裝的應用程式需求的資訊，請參閱[Microsoft 受管理的電腦應用程式需求](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements)。
 
-在此程式中, 您將選取您要新增的應用程式類型, 然後設定及上傳應用程式來源。 
+在此程序，您需選取哪一個您要新增，然後設定並上傳的應用程式來源應用程式。 
 
-**將 LOB 應用程式或 Windows 應用程式新增至 Microsoft 受管理的桌面入口網站**
+**若要將您的 LOB 應用程式或 Windows 應用程式新增至 Microsoft 受管理電腦入口網站**
 
-您可以登入 Microsoft 受管理的桌面入口網站, 或登入 Intune, 然後搜尋 Microsoft 受管理的電腦。 我們將會顯示 [登入 Microsoft 受管理的桌面入口網站]。 
+您可以登入 Microsoft 受管理電腦入口網站，或登入 Intune，然後搜尋 Microsoft 受管理電腦的。 我們將顯示登入 Microsoft 受管理電腦入口網站。 
 
-1.  登入[Microsoft 受管理的桌面管理入口網站](http://aka.ms/mmdportal)。 
-2.  在 [**清查**] 下, 選取 [**應用程式**]。
-3.  在 [應用程式工作量] 中, 選取 [**新增**]。
-4.  在 [**新增應用程式**] 中, 選取 [**企業營運應用程式**] 或 **[Windows 應用程式 (Win32)-預覽**]。
-    - 如果您已選取**企業營運應用程式**, 請參閱[新增 Windows 營運企業應用程式至 Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) , 以取得新增和設定企業營運應用程式的相關指示。
-    - 如果您選取 **[Windows app (Win32)-預覽**], 請參閱[Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management)以取得新增和設定 Windows 應用程式的指示。
+1.  登入[Microsoft 受管理的桌上型電腦系統管理入口網站](http://aka.ms/mmdportal)。 
+2.  在 [**詳細目錄**] 下選取 [**應用程式**]。
+3.  在 [應用程式的工作負載，選取 [**新增**。
+4.  在 [**新增應用程式**中，選取 [ **-營運應用程式**或**Windows 應用程式 (Win32)**。
+    - 如果您選取 **-營運應用程式**，請參閱[新增至 Microsoft Intune 的 Windows-營運應用程式](https://docs.microsoft.com/intune/lob-apps-windows)，以新增及設定-營運應用程式的相關指示。
+    - 如果您選取**Windows 應用程式 (Win32)**，請參閱新增及設定 Windows 應用程式的指示[Win32 應用程式管理](https://docs.microsoft.com/intune/apps-win32-app-management)。
 
 <span id="msfb-apps">
 
-### <a name="microsoft-store-for-business-apps"></a>商務用 Microsoft Store 應用程式
-如果您尚未註冊商務用 Microsoft Store, 您可以在購買應用程式時註冊。 有您的應用程式之後, 您可以使用 Microsoft 受管理的電腦進行同步處理。 
+### <a name="microsoft-store-for-business-apps"></a>Microsoft 網上商店商務應用程式
+如果您尚未註冊與商務用 Microsoft Store，您可以註冊時您購買應用程式。 您的應用程式之後，您可以使用 Microsoft 受管理的電腦同步它們。 
 
-**若要從商務用 Microsoft Store 購買應用程式**
+**若要購買來自商務用 Microsoft Store 應用程式**
 
-1. 使用 Microsoft Store for Business Admin account 登入[Microsoft store For business](https://businessstore.microsoft.com) 。
-2. 選取 [**為我的群組購買**]。
-3. 使用搜尋來找出您想要的應用程式, 並選取該應用程式。
-4. 在 [產品詳細資料] 中, 選取 [**取得應用程式**]。 Microsoft Store 會將應用程式新增至貴組織的**產品 & 服務**。
+1. [商務用 Microsoft Store](https://businessstore.microsoft.com)與 Microsoft 商店企業版系統管理員帳戶登入。
+2. 選取 [**我的群組購買**]。
+3. 使用搜尋來尋找所想要的話，該應用程式，然後選取 [應用程式。
+4. 在產品詳細資料中，選取 [**取得應用程式**]。 Microsoft 網上商店將為您的組織新增至**產品 & 服務**的應用程式。
 
-**強制執行 Intune 與 Microsoft Store for Business 之間的同步處理**
-1. 以 Intune 系統管理員或您租使用者的全域系統管理員身分登入[Azure 入口網站](https://portal.azure.com/)
-2. 選取 [**所有服務 > Intune**]。 Intune 位於 [監視 + 管理] 區段中。
-3. 在 [Intune] 窗格中, 選取 [**用戶端應用程式**], 然後選取 [**商務用 Microsoft Store**]。
-4. 選取 [**啟用**], 以使用 Intune 同步處理商務應用程式的 Microsoft Store。
-    - 如果您還沒有使用 Intune 註冊並關聯 Microsoft Store for Business 帳戶
-    - 選取您的 Intune 主控台中用來進行商務用 Microsoft Store 應用程式的語言
-    - 選取 [**同步**處理], 以使用 Intune 同步處理商務應用程式的 Microsoft Store。
-    - 確認 Microsoft Store for Business 與 Intune 之間的同步處理已啟用 (下一個步驟)。 
+**若要強制執行 Intune 和商務用 Microsoft Store 間同步處理**
+1. 登入[Azure 入口網站](https://portal.azure.com/)Intune 系統管理員或全域系統管理員為您的租用戶
+2. 選取 [**所有服務 > Intune**]。 Intune 處於監視 + 管理] 區段中。
+3. 在 [Intune] 窗格中，選取 [**用戶端應用程式**，然後再選取**商務用 Microsoft Store**。
+4. 選取 [**啟用**]，以同步處理 Microsoft 商店商務應用程式使用 Intune。
+    - 如果您還沒，簽署並關聯您的 Microsoft 儲存使用 Intune 商務帳戶
+    - 選取 [將您 Intune 主控台中顯示來自商務用 Microsoft Store 應用程式中的語言
+    - 選取 [**同步處理**來同步處理 Microsoft 商店商務應用程式使用 Intune]。
+    - 確認商務用 Microsoft Store 與 Intune 之間同步處理正在使用中 （下一步）。 
 
-**確認 Intune 與 Microsoft Store for Business 之間的同步處理處於作用中狀態**
-1. 使用 Microsoft Store for Business Admin account 登入[Microsoft store For business](https://businessstore.microsoft.com) 。
+**若要確認 Intune 和商務用 Microsoft Store 間同步處理正在使用中**
+1. [商務用 Microsoft Store](https://businessstore.microsoft.com)與 Microsoft 商店企業版系統管理員帳戶登入。
 2. 選取 [**管理**]。
-3. 選取 [**設定**], 然後選取 [**分散**]。
-4. 在 [**管理工具**] 下, 確認已列出 Intune, 且狀態為 [已**啟用**]。  
+3. 選取 [**設定**]，然後選取 [**分散**對齊。
+4. 在 [**管理工具**]，確認 Intune 已列出，且狀態為**作用中**。  
 
 <span id="2" />
 
-## <a name="step-2-create-azure-ad-groups"></a>步驟 2: 建立 Azure AD 群組
+## <a name="step-2-create-azure-ad-groups"></a>步驟 2： 建立 Azure AD 群組
 
-為每個應用程式建立三個 Azure AD 群組。 下表概述您將需要的群組 (可供使用、需要和卸載)。 
+建立三個 Azure AD 群組的每個應用程式。 下表概述您需要的群組 （適用於使用，有需要，以及解除安裝）。 
 
-應用程式指派類型 |   群組使用   | 範例 Azure AD 名稱
+應用程式指派類型 |   群組使用   | 範例 Azure AD 的名稱
 --- | --- | ---
-可以使用 |  此應用程式可從公司入口網站應用程式或網站取得。 | MMD –*應用程式名稱*-可用
-必要 |  應用程式會安裝在選取群組中的裝置上。 | MMD –*應用程式名稱*-必要
-Uninstall |  從選取的群組中的裝置卸載應用程式。 | MMD –*應用程式名稱*–卸載
+可以使用 |  應用程式可從公司入口網站應用程式或網站。 | MMD –*應用程式名稱*-適用於
+必要 |  在 [選取群組中的裝置上安裝應用程式。 | MMD –*應用程式名稱*-必要
+Uninstall |  載入應用程式是從選取群組中的裝置解除安裝。 | MMD –*應用程式名稱*-解除安裝
 
-將您的使用者新增至這些群組, 以讓應用程式 availabe、安裝應用程式, 或從 Microsoft 受管理的電腦裝置中移除應用程式。 
+將您的使用者新增至這些群組，以進行應用程式可用、 安裝應用程式，或從他們的 Microsoft 受管理的電腦裝置中移除應用程式。 
 
 <span id="3" />
 
-## <a name="step-3-assign-apps-to-your-users"></a>步驟 3: 將應用程式指派給您的使用者
+## <a name="step-3-assign-apps-to-your-users"></a>步驟 3： 將應用程式指派給您的使用者
 
-**將應用程式指派給您的使用者**
+**若要將應用程式指派給您的使用者**
 
-1. 登入[Microsoft 受管理的桌面管理入口網站](http://aka.ms/mmdportal)。
-2. 在 [受管理的桌面] 窗格中選取 [**應用程式**]。
-3. 在 [應用程式工作量] 中, 選取您要指派使用者的應用程式, 然後選取 [**指派使用者群組**]。
-4. 針對特定應用程式, 選取 [工作分派類型] ([可用]、[必要]、[卸載]), 並指派適當的群組。
-5. 在 [指派應用程式] 窗格中, 選取 **[確定]**。
+1. 登入[Microsoft 受管理的桌上型電腦系統管理入口網站](http://aka.ms/mmdportal)。
+2. 在 [受管理的電腦] 窗格中，選取 [**應用程式**]。
+3. 在 [應用程式的工作負載，選取您要指派使用者，並選取 [**指派使用者群組**的應用程式。
+4. 特定應用程式中，選取工作分派類型 （適用於使用，有需要，解除安裝），並指派適當的群組。
+5. 在 [指派應用程式] 窗格中，選取 **[確定]**。
 
 <!--# Preparing apps for Microsoft Managed Desktop
 
