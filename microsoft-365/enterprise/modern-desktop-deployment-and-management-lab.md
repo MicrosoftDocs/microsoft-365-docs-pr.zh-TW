@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: ba1cd7e88766b6393bafcbd7381ceeb98f030d51
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: a19c9d2de0cb4cb5436a8c3364bab0e24bb866ee
+ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584529"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35830501"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署的 Lab Kit
 
@@ -116,7 +116,7 @@ ms.locfileid: "35584529"
   - Configuration Manager 中的 Office 365 專業增強版更新管理
   - 使用 Microsoft Intune 套用至 Windows 10 的行動裝置管理
 
-### <a name="download-the-windows-and-office-deployment-lab-kithttpsakamsmddlabsevalcenter"></a>[**下載 Windows 和 Office 部署的 Lab Kit**](https://aka.ms/mddlabs_evalcenter)
+### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**下載 Windows 和 Office 部署的 Lab Kit**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
 *請使用寬頻來下載此內容，以強化您的下載體驗，並允許 30-45 分鐘進行自動佈建。實驗室環境最少需要 16 GB 可用記憶體及 150 GB 可用磁碟空間。如需最佳效能，建議使用 32 GB 可用記憶體。實驗室將在 2019 年 8 月 27 日到期。到期之前，將會發佈新的版本。*
 
