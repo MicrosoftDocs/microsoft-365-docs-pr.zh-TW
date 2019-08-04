@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/18/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 企業版 Office 365 專業增強版的部署步驟。
-ms.openlocfilehash: 7905bcf37f2cda0e81208a9666c257e2c871110e
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: cf698e4dbee17a811a4d2bc01d08d4d97d1961c1
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400227"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074173"
 ---
 # <a name="phase-4-office-365-proplus"></a>第4 階段：Office 365 專業增強版
 
@@ -87,10 +87,7 @@ Office 365 專業增強版達成了 Microsoft 365 企業版的這些策略商務
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何執行 Microsoft 365 企業版
 
-深入了解 Microsoft 的專業人員如何使用以下資源，在 Microsoft 365 企業版中規劃及部署 Office 365 專業增強版：
-
-- [部署及更新 Microsoft Office 365 專業增強版](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
-- [自動化和更新通道有助於部署 Microsoft Office 365 專業增強版](https://www.microsoft.com/itshowcase/Article/Content/794/Automation-and-update-channels-help-deploy-Microsoft-Office-365-ProPlus) (影片)
+了解 Microsoft 的專家如何[部署和管理 Office 365 專業增強版的更新](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR7)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 如何執行 Microsoft 365 企業版
 

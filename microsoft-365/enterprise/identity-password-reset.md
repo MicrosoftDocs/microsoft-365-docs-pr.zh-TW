@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解及設定 Azure AD 的自助密碼重設 (SSPR)。
-ms.openlocfilehash: 98118a5891ea8224843faa638b52a421d96e8a0b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: b57291aabf1b51e7866dba10ba50eacc27291a2a
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287050"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073723"
 ---
 # <a name="step-5-simplify-access-for-users"></a>步驟 5：簡化使用者的存取權
 
@@ -30,7 +30,7 @@ ms.locfileid: "32287050"
 
 *此為混合式環境的選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-在這一節中，您會允許使用者透過 Azure Active Directory (Azure AD) 重設其密碼，然後複製到本機 Active Directory 網域服務 (AD DS)。 這個程序也稱為密碼回寫。 使用密碼回寫，使用者不需要透過使用者帳戶與其屬性儲存在其中的內部部署 Active Directory Domain Services (AD DS) 來更新其密碼。 對於沒有內部部署網路遠端存取連線的漫遊或遠端使用者而言，這非常有用。
+在這一節中，您會允許使用者透過 Azure Active Directory (Azure AD) 重設其密碼，然後複製到本機 Active Directory 網域服務 (AD DS)。 這個程序也稱為密碼回寫。 使用密碼回寫，使用者不需要透過使用者帳戶與其屬性儲存在其中的內部部署 AD DS 來更新其密碼。 對於沒有內部部署網路遠端存取連線的漫遊或遠端使用者而言，這非常有用。
 
 為了充分利用 Identity Protection 功能 (例如當偵測到高風險的帳戶洩露時，要求使用者變更其內部部署密碼)，需要密碼回寫。
 

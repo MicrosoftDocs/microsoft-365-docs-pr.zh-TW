@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/16/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 企業版身分識別基礎結構的部署步驟。
-ms.openlocfilehash: 932b6fb2cfeb86edcf708bdfdea55cdd8b580838
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 6acd462a0fcd4169a42a0b1d0e1738ffcba597f5
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288732"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073893"
 ---
 # <a name="phase-2-identity"></a>第 2 階段：身分識別
 
@@ -58,10 +58,7 @@ Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configur
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何執行 Microsoft 365 企業版
 
-深入了解 Microsoft 的 IT 專業人員如何使用以下資源，規劃及部署 Microsoft 365 企業版的身分識別功能：
-
-- [在 Microsoft 管理使用者身分識別並且保護存取權](https://www.microsoft.com/itshowcase/Article/Content/931/Managing-user-identities-and-secure-access-at-Microsoft)
-- [針對提升權限的存取使用 Azure AD Privileged Identity Management](https://www.microsoft.com/itshowcase/Article/Content/887/Using-Azure-AD-Privileged-Identity-Management-for-elevated-access)
+了解 Microsoft 的 IT 專家如何使用[管理身分識別和保護存取](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR5)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 如何執行 Microsoft 365 企業版
 
