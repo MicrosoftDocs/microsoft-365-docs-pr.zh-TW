@@ -3,7 +3,7 @@ title: 將 Windows 10 裝置重設成出廠預設值
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: '了解如何使用 Microsoft 365 商務版以原廠重設您的 Windows 10 裝置。 '
-ms.openlocfilehash: c125cdb72bf3ca7077b1c283b698ae92ef454b88
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: 7cb7afdc947766598ef5385078a1b2cab87601dd
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660508"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074463"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>將 Windows 10 裝置重設成出廠預設值
 

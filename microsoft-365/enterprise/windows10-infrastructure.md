@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/18/2018
 ms.author: greglin
-ms.openlocfilehash: 88517c6b8de95c54ee9a2e47d4545266eb198249
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 450b14fb82483bd83e0c83dace173540d0281868
+ms.sourcegitcommit: 12fbb429dba7517220191d90816e235583943fe0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289431"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33623127"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>階段 3：Windows 10 企業版
 
@@ -85,15 +85,7 @@ Windows 10 提供功能，協助防範威脅，協助保護您的裝置，並協
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何執行 Microsoft 365 企業版
 
-一窺 Microsoft 並了解公司如何規劃、 部署，及管理更新適用於 Windows 10，請參閱：
-
-- [準備您的組織以便進行完美的 Windows 10 部署](https://www.microsoft.com/itshowcase/windows10deployment?wt.mc_id=bmkg_itsc)
-- [採用 Microsoft 的 Windows 即服務](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
-- [在 Microsoft 以就地升級方式部署 Windows 10](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
-- [使用 Windows Hello 企業版實作強大的使用者驗證](https://www.microsoft.com/itshowcase/Article/Content/756/Implementing-strong-user-authentication-with-Windows-Hello-for-Business)
-- [Windows 10 部署：Microsoft IT 的秘訣與技巧](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (影片)
-- [Windows Defender ATP 可協助偵測複雜的威脅](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
-- [使用 Windows Defender 和 Windows Defender ATP 保護現代的企業](https://www.microsoft.com/itshowcase/Article/Content/903/Securing-the-modern-enterprise-with-Windows-Defender-and-Windows-Defender-ATP) (影片)
+一窺 Microsoft 並了解如何公司[部署 Windows 10 企業版，且正在使用 Intune，且 Windows Defender ATP 的強式驗證](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR6)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 如何執行 Microsoft 365 企業版
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 35fa9f53b555de48f4a5acc09d0619ba978ca87a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0ee9696d441d61fb41359f6502e6f73988749156
+ms.sourcegitcommit: 12fbb429dba7517220191d90816e235583943fe0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291206"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33623147"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>階段 5: Microsoft 365 企業版的行動裝置管理
 
@@ -162,11 +162,7 @@ Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configur
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何執行 Microsoft 365 企業版
 
-了解 Microsoft IT 專家如何規劃及部署 EMS 與裝置管理，使用以下資源：
-
-- [使用企業行動力 + 安全性管理現代行動生產力](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security) (英文)
-- [使用 Microsoft Intune 連線到公司的 Windows 10 裝置](https://www.microsoft.com/itshowcase/Article/Content/783/Connecting-to-work-on-your-Windows-10-device-with-Microsoft-Intune) (英文)
-- [為 Microsoft 的 iOS、OS X 和 Android 設備啟用移動生產力](https://www.microsoft.com/itshowcase/Article/Content/773/Enabling-mobile-productivity-for-iOS-OS-X-and-Android-devices-at-Microsoft) (英文)
+了解如何在 Microsoft[使用 EMS 管理裝置](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR8)的 IT 專業人員。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 如何執行 Microsoft 365 企業版
 

@@ -8,12 +8,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 4915bf5d1b89720c65a5134b23d9d837febff357
-ms.sourcegitcommit: 184957e2878388e0d427a7ee47577d29c4e3c483
+ms.openlocfilehash: 7d09e2fbf9d21497aa9bd43d308978979a6c73c6
+ms.sourcegitcommit: c6ee468b4aeb3684d332cb79f5cd121f60f32d3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605962"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35795619"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 受管理電腦文件的變更歷程記錄
 
@@ -23,6 +23,9 @@ ms.locfileid: "35605962"
 新的或變更主題 | 描述
 --- | ---
 [使用 Microsoft 諮詢服務](get-ready/apps-mcs.md) | 更新的主題
+[Microsoft 受管理的桌上型電腦和 ITIL](MMD-and-ITSM.md) | 新的主題
+[裝置設定](service-description/device-policies.md) | 更新的主題
+
 
 ## <a name="june-2019"></a>2019 年 6 月
 新的或變更主題 | 描述

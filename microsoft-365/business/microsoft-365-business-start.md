@@ -3,7 +3,7 @@ title: 開始使用 Microsoft 365 商務版
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何設定 Microsoft 365 商務版。
-ms.openlocfilehash: 78f7360c80667b8d34fad9d849cfc2cf83a8577b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d309700761ee48ef66a8cd3886fd416c79463ed5
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278102"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074293"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>開始使用 Microsoft 365 商務版
 

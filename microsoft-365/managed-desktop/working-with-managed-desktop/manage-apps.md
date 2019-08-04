@@ -3,16 +3,16 @@ title: 管理 Microsoft 受管理電腦中的應用程式
 description: 如何更新部署至 Microsoft 受管理的電腦裝置的線條營運應用程式的相關資訊
 keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ce2765ef2ab176dc5d9a1d41db7e26549b007d79
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 87968e1238ee5b3dce6e569846e253dada72dd6d
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285943"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390730"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>管理 Microsoft 受管理電腦中的行營運應用程式
 

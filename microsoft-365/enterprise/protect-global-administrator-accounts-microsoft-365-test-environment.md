@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/16/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用下列步驟來保護 Microsoft 365 企業版測試環境中的全域系統管理員帳戶。
-ms.openlocfilehash: 86b2d325fc710fd8b387bc37cad5f8ea60df001d
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 7a6f99ae1123b07618dea9910a0bdd993e36ca13
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353055"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074143"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>保護您的 Microsoft 365 企業版測試環境中的全域系統管理員帳戶
 
@@ -32,7 +32,7 @@ ms.locfileid: "33353055"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中文件的所有視覺對應。
+> 按一下[這裡](https://aka.ms/m365etlgstack) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1： 建置 Microsoft 365 企業版測試環境
 
@@ -83,7 +83,7 @@ ms.locfileid: "33353055"
 2. 在 [**新增**] 刀鋒視窗中，輸入**全域系統管理員**在 [**名稱]**。
 3. 在 [**指派**] 區段中，按一下 [**使用者和群組**。
 4. 在 [**使用者和群組**] 刀鋒視窗的 [**包含**] 索引標籤中，按一下 [**選取使用者及群組 > 使用者和群組 > 選取**。
-5. 在 [**選取**] 刀鋒視窗中，按一下 [**完成 GlobalAdmins > 選取 >**。
+5. 在 [**選取**] 刀鋒視窗上，按一下 [ **GlobalAdmins > 選取 > 完成**]。
 6. 在 [**指派**] 區段中，按一下 [**條件**]。
 7. 在 [**條件**] 刀鋒視窗中，按一下 [**登入風險**、 按一下 [**是]** 的**設定**、 按一下 [**高**] 和 [**媒體**，然後按一下**選取**並**完成**。
 8. 在 [**新增**] 刀鋒視窗中的 [**存取控制**] 區段中，按一下 [**授與**]。

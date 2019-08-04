@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/25/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解身分識別選項，並設定 Azure AD Connect 來將內部部署 Active Directory Domain Services 與 Azure AD 同步。
-ms.openlocfilehash: 6e582a3e3c68b00968faac17fd60b922eaaf7121
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0b494047f984d9fd830e840d2d1f4fafa06fe8ab
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289591"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073823"
 ---
 # <a name="step-3-configure-hybrid-identity"></a>步驟 3：設定混合式身分識別
 

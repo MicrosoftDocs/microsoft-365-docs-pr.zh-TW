@@ -3,15 +3,15 @@ title: Microsoft 受管理電腦中的安全性
 description: ''
 keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: b91b646b00869827dfb2131e9df9db38a770d9df
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5987dcaf717ecb2907f02db675a77c3e1d2d2220
+ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278632"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35425666"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的安全性
 
@@ -46,9 +46,9 @@ Microsoft 受管理的電腦，以確保所有受管理的裝置的安全和保�
 
 Service | 描述
 --- | ---
-防毒 | 安裝及設定 Windows Defender AV<br>Windows Defender AV 的定義是最新狀態
+防毒 | 安裝及設定 Microsoft Defender AV<br>Microsoft Defender AV 的定義是最新狀態
 完整的磁碟區加密 |    Windows BitLocker 是 Microsoft 受管理的電腦裝置的磁碟區加密解決方案。<br><br>恢復服務上的架組織之後，就會以防止未經授權的存取本機資料睡眠模式] 或 [關閉裝置時使用 Windows BitLocker 與內建信任平台模組 (TPM) 來加密裝置。 
-監視 |    Windows Defender 進階威脅防護 (Windows Defender ATP) 用於所有 Microsoft 受管理的電腦裝置上的安全性威脅監視。 Windows Defender ATP 可讓企業客戶偵測、 調查及回應進階威脅其公司網路中。 如需詳細資訊，請參閱[Windows Defender 進階威脅防護。](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+監視 |    Microsoft Defender 進階威脅防護 (Microsoft Defender ATP) 用於所有 Microsoft 受管理的電腦裝置上的安全性威脅監視。 Microsoft Defender ATP 可讓企業客戶偵測、 調查及回應進階威脅其公司網路中。 如需詳細資訊，請參閱[Microsoft Defender 進階威脅防護。](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
 作業系統更新 |  Microsoft 受管理的電腦裝置一律受到保護與最新的安全性更新。
 安全的裝置設定 |   Microsoft 受管理的電腦會實作 Microsoft 安全性基準。 如需詳細資訊，請參閱[Windows 安全性基準線。](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 

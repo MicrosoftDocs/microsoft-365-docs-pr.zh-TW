@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b3fc4a4ed82c01188f348d2e494a0dbf7effc77a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: e4c2dbe8f1cae12aa1b10c6cd43f295a9a6062d0
+ms.sourcegitcommit: 8102751ae20c93439e19afded396c4e6ee5ea5a5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34079265"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34100709"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>對應磁碟機準備 Microsoft 受管理的電腦
 
@@ -25,7 +25,7 @@ ms.locfileid: "34079265"
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Microsoft 受管理的電腦上的對應磁碟機
  
-如果您不能移除或取代對應磁碟機，某些使用情況下，您應該提交 Microsoft 受管理電腦入口網站中的支援要求，已將其部署至 Microsoft 受管理電腦的使用者。
+如果您不能移除或取代某些對應磁碟機使用情況下，您應該提交 Microsoft 受管理的電腦系統管理入口網站中的支援要求，已將其部署至 Microsoft 受管理電腦的使用者。
     
 這類要求，您必須提供支援要求中的下列詳細資料： 
 
@@ -46,7 +46,7 @@ ms.locfileid: "34079265"
 請確定對應磁碟機無法避免使用，而且您提交任何服務要求之前先仔細檢閱需求。 然後遵循下列步驟：
 
 1. 瀏覽至[Microsoft 受管理電腦入口網站](https://aka.ms/mmdportal)。  
-2. 透過**支援 > 支援要求**] 區段中提交支援要求標題為 「 對應磁碟機部署 」，並提供所有必要的檔案共用的詳細資訊。  
-3. Microsoft 受管理的桌上型電腦作業將會告知，藉由使用時，支援要求的更新，要求已完成。 最初將只部署此組態，測試部署群組中的裝置。  
-4. 您必須測試並確認 Microsoft 受管理的桌上型電腦作業小組所部署的組態是否運作如預期般。 當您完成測試更新 Microsoft 受管理電腦作業使用支援要求。  
-5. Microsoft 受管理的桌上型電腦作業小組會再將設定部署至其他部署群組。 
+2. 提交標題 」 對應磁碟機部署 「 為透過**支援 > 支援要求**] 區段中的支援要求，並提供所有必要的檔案共用的詳細資訊。  
+3. Microsoft 受管理的桌上型電腦 IT 作業將會告知，藉由使用時，支援要求的更新，要求已完成。 最初將只部署此組態，測試部署群組中的裝置。  
+4. 您必須測試並確認 Microsoft 受管理的桌上型電腦 IT 作業所部署的組態是否運作如預期般。 支援要求中使用 [討論] 索引標籤，以通知 Microsoft 受管理的桌上型電腦 IT 作業，當您完成測試的回覆。  
+5. Microsoft 受管理的桌上型電腦 IT 作業小組會再將設定部署至其他部署群組。 

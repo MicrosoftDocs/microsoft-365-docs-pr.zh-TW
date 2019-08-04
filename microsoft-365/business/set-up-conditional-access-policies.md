@@ -1,5 +1,5 @@
 ---
-title: 設定條件式存取原則
+title: 設定 Microsoft 365 行銷活動的條件式存取原則
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,15 +19,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何為 Microsoft 365 商務版設定條件式存取原則。
-ms.openlocfilehash: a0cc4a9085bdfe6a8d40acc69a020af1c5861fcf
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+description: 了解如何為 Microsoft 365 行銷活動設定條件式存取原則。
+ms.openlocfilehash: 7d8e1f16019d151478aae57b1593b0e0758e5b19
+ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913004"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35076307"
 ---
-# <a name="set-up-conditional-access-policies-for-microsoft-365-business"></a>Microsoft 365 商務版設定條件式存取原則
+# <a name="set-up-conditional-access-policies"></a>設定條件式存取原則
 
 [條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)原則新增 substancial 額外的安全性。 Microsoft 對於所有客戶提供一組建議的比較基準條件式存取原則。 [比較基準原則是一組預先定義的原則，以協助保護組織免受許多常見的攻擊。 密碼噴灑、 重新顯示和網路釣魚，可以包含這些常見的攻擊。
 

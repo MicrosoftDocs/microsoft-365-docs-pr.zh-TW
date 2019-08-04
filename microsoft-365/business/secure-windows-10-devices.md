@@ -3,7 +3,7 @@ title: 保護 Windows 10 裝置
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4WindowsConfig
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: '了解預設及其他設定，以保護 Windows 10 裝置。 '
-ms.openlocfilehash: 6f06936c2075710210ad9e29ee92905b3b49917a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: b56aac0c760aa0e57d48683b5f1726c9add16d20
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278050"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074413"
 ---
 # <a name="secure-windows-10-devices"></a>保護 Windows 10 裝置
 
@@ -39,7 +39,7 @@ ms.locfileid: "32278050"
   
 |||
 |:-----|:-----|
-|設定  <br/> |說明  <br/> |
+|設定  <br/> |描述  <br/> |
 |使用 Windows Defender 防毒軟體來協助保護電腦免於遭受病毒與其他威脅的侵害  <br/> |需要開啟 Windows Defender 防毒軟體，以保護電腦免於遭受連接至網際網路時的安全威脅。  <br/> |
 |協助保護電腦免於遭受 Microsoft Edge 中的網路安全威脅  <br/> |開啟 Microsoft Edge 中的設定，以協助保護使用者免受惡意網站與下載檔案的威脅。  <br/> |
 |閒置這段時間之後關閉裝置螢幕  <br/> |確保使用者閒置時，公司資料已受到保護。使用者可能會在咖啡館等公共場所工作，當使用者暫時離開或是分心時，他們的裝置就容易受到他人任意窺伺。此設定能讓您控制螢幕將於使用者閒置多久之後關閉。  <br/> |

@@ -4,7 +4,7 @@ ms.author: greglin
 author: greg-lindsay
 manager: laurawi
 ms.date: 03/05/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的組態符合 Windows 10 企業版的 Microsoft 365 企業版準則。
-ms.openlocfilehash: 1e8a2e748f42431465c027acbc468f4c5891d320
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 29ab2373321485d8de892a29132d1af07a318b7b
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289512"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074103"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>階段 3：Windows 10 企業版基礎結構允出準則
 
@@ -56,7 +56,7 @@ ms.locfileid: "32289512"
 
 - 設定適當的 Windows 診斷資料層級
 - 確認升級 Windows 的整備度
-- 建立 Configuration Manager 工作順序，其中包含裝置集合和使用 Windows 10 OS 映像的作業系統部署
+- 建立 Configuration Manager 工作順序，其中包含裝置集合和使用 Windows 10 OS 影像的作業系統部署
 
 一旦備妥，您就可以在準備好升級 Windows 的裝置上執行就地升級。若要從 Microsoft 365 企業版獲得最大好處，請儘可能多升級執行 Windows 7 和 Windows 8.1 的裝置。 
 

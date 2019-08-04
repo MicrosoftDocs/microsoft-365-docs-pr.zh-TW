@@ -2,8 +2,8 @@
 layout: HubPage
 hide_bc: true
 ms.topic: hub-page
-ms.author: robmazz
-author: robmazz
+ms.author: sirkkuw
+author: sirkkuw
 keywords: Microsoft 365 商務版、 Microsoft 365 商務版，SMB，小型至中型企業、 Microsoft 365 商務版文件，docs，文件、 技術資訊
 localization_priority: Normal
 audience: microsoft-business
@@ -11,12 +11,12 @@ ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
 title: Microsoft 365 商務版資源
 description: 了解如何規劃、 部署及使用 Microsoft Office 365、 Windows 10 和 Enterprise Mobility + Security 一起貴公司中的整合式和安全的基礎結構，可讓團隊合作，並且盡情發揮創意。
-ms.openlocfilehash: 3c5cc341734896cb9a42565c8647f3f5ac37fc5b
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: a7b6ef6b3c86868ffd9dd2ab912c427911075911
+ms.sourcegitcommit: 7ac06563c6ff034358e8fd3f9298fc426187ade2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660282"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34653039"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -61,7 +61,7 @@ ms.locfileid: "33660282"
                                             </div>
                                             <div class="cardText">
                                                 <h3>設定</h3>
-                                              <P><a href="get-microsoft-365-business.md" target="_blank">取得 Microsoft 365 商務版</a></p>
+                                              <P><a href="sign-up.md" target="_blank">取得 Microsoft 365 商務版</a></p>
                                                <P><a href="set-up.md" target="_blank">設定 Microsoft 365 商務版</a></p>
                                                 <P><a href="set-up-windows-devices.md" target="_blank">設定 Windows 10 裝置</a></p>
                                                 <P><a href="set-up-mobile-devices.md" target="_blank">設定 iPhone 和 Android 裝置</a></p>
@@ -99,7 +99,6 @@ ms.locfileid: "33660282"
                                             </div>
                                             <div class="cardText">
                                                 <h3>保護商務資料和裝置</h3>
-                                                 <P><a href="https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data"target="_blank">前 10 個的方式，來保護 Microsoft 365 商務版</a></p>
                                                 <P><a href="security-features.md" target="_blank">深入了解安全性功能</a></p>
                                                 <P><a href="remove-company-data.md" target="_blank">從裝置移除資料</a></p>
                                                 <P><a href="reset-devices-to-factory-settings.md" target="_blank">重設裝置</a></p>

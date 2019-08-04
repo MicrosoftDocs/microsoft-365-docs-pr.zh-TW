@@ -3,7 +3,7 @@ title: 為 Microsoft 365 商務版使用者設定 Windows 裝置
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: '了解如何為 Microsoft 365 商務版使用者執行 Windows 10 專業版的 Windows 裝置上設定。 '
-ms.openlocfilehash: f93257bd9a68385fca4f178a2e09c5c11506ee2c
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5efe3aa1e329e7a9edcfd49fcc1f1391f95fd97f
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32284281"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074543"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>為 Microsoft 365 商務版使用者設定 Windows 裝置
 

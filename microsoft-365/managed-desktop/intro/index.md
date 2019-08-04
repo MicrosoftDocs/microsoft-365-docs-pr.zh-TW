@@ -3,15 +3,15 @@ title: 是適合您的 Microsoft 受管理的電腦
 description: ''
 keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 10/24/2018
-ms.openlocfilehash: 6b78586f4ce1f81795e01873161a9cbf7768c2ac
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c0866dc4ff4a768bbae2488cdea2655470978f94
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283445"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390690"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什麼是 Microsoft 受管理的電腦？
 
