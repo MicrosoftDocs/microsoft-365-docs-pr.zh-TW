@@ -3,7 +3,7 @@ title: 適用於非企業的 Microsoft 365 企業版底層基礎結構
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 提供非企業組織逐步執行 Microsoft 365 企業版底層基礎結構的簡化階段。
-ms.openlocfilehash: 64d911a9d59d5b9b1a450a9a122463699ec8eab8
-ms.sourcegitcommit: 2cf0d57b1771b37db773c3eaabac8456a6fa9195
+ms.openlocfilehash: 8e2c254bf352baa14ff62dad500e5cdfa0af4563
+ms.sourcegitcommit: 639607bbf02bdedd3fa5cd7b0984b422fe6c874e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34419812"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35624631"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-for-non-enterprises"></a>適用於非企業的 Microsoft 365 企業版底層基礎結構
 
@@ -42,16 +42,18 @@ ms.locfileid: "34419812"
 
 ## <a name="phase-1-networking"></a>第 1 階段：網路
 
-非企業組織在每間辦公室通常要有當地的網際網路連線，而且不要使用 proxy 伺服器、防火牆或封包檢查裝置。 每間辦公室的網際網路服務提供者 (ISP) 都要有當地的 DNS 伺服器，讓流量能夠導向到最接近您辦公室和內部部署使用者的 Microsoft 365 雲端伺服器。
+非企業組織一般會在每個辦公室有區域網際網路連線，並且不使用 Proxy 伺服器、防火牆或封包檢查裝置。 為每個辦公室提供服務的網際網路服務提供者 (ISP) 會有地區的區域 DNS 伺服器，使得流量能夠導向到最接近您辦公室和其內部部署使用者的 Microsoft 365 網路位置。
 
-因此，您只需要向您的 ISP 確認每間辦公室的連線：
+因此，您只需要向您的 ISP 確認每個辦公室的連線：
 
 - 使用當地的 DNS 伺服器。
 - 當使用者開始使用更多 Microsoft 365 雲端服務時，能夠配合目前及未來的需求。
 
+如果您有使用 Proxy 伺服器、防火牆或封包檢查裝置，如需詳細資訊，請參閱 [Microsoft 365 企業版的網路基礎結構](networking-infrastructure.md)。
+
 ### <a name="your-configuration-so-far"></a>您目前的設定
 
-以下是將第 1 階段項目醒目提示的視覺摘要。 **您的組織**可以有多間辦公室，每一間都能夠透過當地的網際網路連線，連線到使用當地 DNS 伺服器的 ISP。 透過 ISP，每間辦公室的使用者都可以連線到最接近的 Microsoft 網路位置，並且取得 Microsoft 365 訂閱的資源。
+以下是將第 1 階段項目醒目提示的視覺摘要。 **您的組織**可以是多個辦公室，每個都有與使用地區的區域 DNS 伺服器的 ISP 的區域網際網路連線。 透過 ISP，每個辦公室的使用者都可以連線到最接近的 Microsoft 365 網路位置，並且取得 Microsoft 365 訂閱的資源。
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
 
@@ -75,11 +77,12 @@ ms.locfileid: "34419812"
 |:-------|:-----|:-----|
 | 基準 | 這是保護資料，以及保護存取資料的身分識別和裝置的最低和預設標準。 <BR><BR> 這通常是由大部分使用者管理的大部分組織資料。 | 第一線員工 (例如銷售、行銷、客戶服務、管理和製造) 的群組。 |
 | 敏感性 | 這可以額外保護必須以超過基準層級保護的資料子集。 這些群組包含的使用者可以使用和建立特定部門的敏感性資料，以及並非每個人都能取得的專案敏感性資料。 | 正在開發新產品的產品團隊或行銷團隊 |
-| 高管制 | 這是保護的最高層級，適用於高度機密、被視為是智慧財產或商業機密的少量資料，或必須遵守安全性規範的資料。 |  研究、法律和財務團隊。 <BR><BR> 儲存或使用客戶或合作夥伴資料的團隊。 |
+| 高管制 | 這是最高層級的保護，一般適用於高度機密、被視為智慧財產或商業機密的少量資料，或是必須遵守安全性規範的資料。 |  研究、法律及財務團隊，或儲存或使用客戶或合作夥伴資料的團隊。 |
+||||
 
 ### <a name="hybrid-identity"></a>混合式身分識別
 
-如果您有內部部署 AD DS 網域，請在伺服器上使用密碼雜湊同步處理 (PHS) 設定 Azure AD Connect。 如需詳細資訊，請參閱[同步處理身分識別](identity-azure-ad-connect.md)。
+如果您有內部部署 AD DS 網域，您需要與您的 Microsoft 365 企業版訂閱的 Azure AD 租用戶同步處理您的網域的這組使用者帳戶、群組和連絡人。 如果是非企業組織，請在具有密碼雜湊同步處理 (PHS) 的伺服器上設定 Azure AD Connect。 如需詳細資訊，請參閱[同步處理身分識別](identity-azure-ad-connect.md)。
 
 ### <a name="more-secure-user-access-with-conditional-access-policies"></a>條件式存取原則的使用者存取更安全
 
@@ -145,30 +148,38 @@ Azure AD 會評估使用者登入的條件，而且可以使用條件式存取�
 
 ### <a name="your-configuration-so-far"></a>您目前的設定
 
-以下是混合式身分識別在身分識別階段的視覺摘要 (將新項目醒目提示)。
+以下是混合式身分識別在身分識別階段的視覺摘要，其中的新元素已加上醒目提示。
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
  
-新的和醒目提示的身分識別項目包括：
+全新和醒目提示的混合式身分識別元素包括：
  
 |||
 |:------:|:-----|
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-adds.png) | 有使用者帳戶和群組的內部部署 AD DS 網域。 |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-adds.png) | 具有使用者帳戶和群組的內部部署 AD DS 網域。 |
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aadconnect.png) | 執行 Azure AD Connect 的 Windows 伺服器。 |
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts.png) | Azure AD 中已同步處理的 AD DS 帳戶和群組。 |
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | 用於驗證、保護全域帳戶，以及更容易管理群組和授權的 Azure AD 設定。 |
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 條件式存取原則。 |
 |||
 
+以下是僅雲端身分識別在身分識別階段的視覺摘要，其中的新元素已加上醒目提示。
+
+![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
+ 
+全新和醒目提示的僅雲端身分識別元素包括：
+ 
+|||
+|:------:|:-----|
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | 用於驗證、保護全域帳戶，以及更容易管理群組和授權的 Azure AD 設定。 |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 條件式存取原則。 |
+|||
+
+
+
 ## <a name="phase-3-windows-10-enterprise"></a>第 3 階段：Windows 10 企業版
 
 若要確保您的 Windows 10 企業版裝置已整合到 Microsoft 365 的身分識別和安全性基礎結構，您的選項有：
-
-- 僅雲端 (您沒有內部部署 AD DS 網域)
-
-  將每個 Windows 10 企業版裝置加入訂閱的 Azure AD 租用戶。
-
-  如需詳細資訊，請參閱[將您的工作裝置加入組織的網路](https://docs.microsoft.com/zh-TW/azure/active-directory/user-help/user-help-join-device-on-network)。
 
 - 混合式 (您有內部部署 AD DS 網域)
 
@@ -176,9 +187,16 @@ Azure AD 會評估使用者登入的條件，而且可以使用條件式存取�
 
   針對每個新的 Windows 10 企業版裝置，將它們加入您的 AD DS 網域，然後將它們加入 Azure AD 租用戶。
 
-  針對每個 Windows 10 企業版裝置，註冊它們來進行行動裝置管理。 如需指示，請參閱[透過 Intune 使用群組原則來註冊 Windows 10 裝置](https://go.microsoft.com/fwlink/p/?linkid=872871)。
+  針對每個 Windows 10 企業版裝置，註冊它們來進行行動裝置管理。 如需指示，請參閱[使用群組原則透過 Intune 註冊 Windows 10 裝置](https://go.microsoft.com/fwlink/p/?linkid=872871)。
 
-一旦安裝並加入，每個 Windows 10 企業版裝置都會自動安裝來自 Windows Update for Business 雲端服務的更新。 在非企業組織中通常不需要設定基礎結構，就能散發和安裝更新。
+- 僅雲端 (您沒有內部部署 AD DS 網域)
+
+  將每個 Windows 10 企業版裝置加入訂閱的 Azure AD 租用戶。
+
+  如需詳細資訊，請參閱[將您的工作裝置加入組織的網路](https://docs.microsoft.com/zh-TW/azure/active-directory/user-help/user-help-join-device-on-network)。
+
+
+一旦安裝並加入，每個 Windows 10 企業版裝置都會自動安裝來自商務用 Windows Update 雲端服務的更新。 在非企業組織中通常不需要設定基礎結構，就能散發和安裝 Windows 10 更新。
 
 ### <a name="your-configuration-so-far"></a>您目前的設定
 
@@ -186,19 +204,19 @@ Azure AD 會評估使用者登入的條件，而且可以使用條件式存取�
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-config.png)
  
-新的和醒目提示的 Windows 10 企業版項目包括：
+全新和醒目提示的 Windows 10 企業版元素包括：
 
 |||
 |:------:|:-----|
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | 在 Windows 裝置 (以內部部署膝上型電腦為例) 上安裝的 Windows 10 企業版。 |
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | 大量授權服務中心 (提供 Windows 10 企業版新安裝的映像)，和 Windows Update for Business 服務 (提供最新的更新)。 |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | Windows 10 企業版安裝在 Windows 裝置上，以內部部署膝上型電腦為例。 |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | 大量授權服務中心 (提供 Windows 10 企業版新安裝的映像)，以及商務用 Windows Update 服務 (提供最新的更新)。 |
 |||
 
 ## <a name="phase-4-office-365-proplus"></a>第4 階段：Office 365 專業增強版
 
-Microsoft 365 企業版包含 Microsoft Office 的訂閱版本 Office 365 專業增強版。 Office 365 專業增強版與 Office 2016 或 Office 2019 一樣，直接安裝在用戶端裝置上。 不過 Office 365 專業增強版會定期收到新功能。 如需詳細資訊，請參閱[關於企業中的 Office 365 專業增強版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
+Microsoft 365 企業版包含 Microsoft Office 的訂閱版本 Office 365 專業增強版。 Office 365 專業增強版與 Office 2016 或 Office 2019 一樣，直接安裝在用戶端裝置上。 不過，Office 365 專業增強版可定期獲得包含新功能的更新。 如需詳細資訊，請參閱[關於企業中的 Office 365 專業增強版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
 
-如果是非企業組織，請在裝置上手動安裝 Office 365 專業增強版。 準備新裝置時，或者使用者在上線時都可以進行。
+如果是非企業組織，請在裝置上手動安裝 Office 365 專業增強版。 此動作可以在準備要使用的新裝置時完成，或者由使用者在上線程序時完成。
 
 無論是哪一種情況，系統管理員或使用者都要在 https://portal.office.com 登入 Office 365 入口網站。 在 [Microsoft Office 首頁]**** 索引標籤上，按一下 [安裝 Office]****，然後逐步完成安裝程序。
 
@@ -210,23 +228,23 @@ Microsoft 365 企業版包含 Microsoft Office 的訂閱版本 Office 365 專業
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
  
-新的和醒目提示的 Office 365 專業增強版項目包括：
+全新和醒目提示的 Office 365 專業增強版元素包括：
  
 |||
 |:------:|:-----|
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | 在裝置 (以內部部署膝上型電腦為例) 上安裝的 Office 365 專業增強版。 |
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Office 365 專業增強版的 Office 內容傳遞網路 (CDN)，讓裝置存取 Office 365 專業增強版更新。 |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 專業增強版安裝在裝置上，以內部部署膝上型電腦為例。 |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Office 365 專業增強版適用的 Office 內容傳遞網路 (CDN)，裝置會存取它來取得 Office 365 專業增強版更新。 |
 |||
 
 ## <a name="phase-5-mobile-device-management"></a>第 5 階段：行動裝置管理
 
-Microsoft 365 企業版包括 Microsoft Intune，可管理行動裝置。 使用 Intune 可以管理 iOS、Android、macOS 和 Windows 等裝置，保護組織資源 (包括資料) 的存取。 Intune 與 Azure AD 的使用者、群組和電腦帳戶整合。
+Microsoft 365 企業版包括 Microsoft Intune 用於行動裝置管理。 您可以使用 Intune 來管理 Windows、iOS、Android 和 macOS 裝置，以保護對組織資源的存取，包括資料。 Intune 使用 Azure AD 的使用者、群組和電腦帳戶。
 
 Intune 提供兩種類型的行動裝置管理：
 
 - 行動裝置管理 (MDM) - 如果裝置已在 Intune 中註冊。 註冊之後，這些裝置就是受管理的裝置，可以接收組織所使用的原則、規則和設定。 這類裝置通常是您的組織所擁有，然後分發給您的員工。
 
-- 擁有自己個人裝置的使用者可能不希望註冊裝置，或以您的原則和設定由 Intune 管理。 不過，您仍然必須保護組織的資源和資料。 在本案例中，您可以使用行動應用程式管理 (MAM) 保護應用程式。 這類裝置就是所謂的「攜帶您的裝置」(BYOD)，而且通常是您的員工所擁有。 
+- 擁有自己個人裝置的使用者可能不希望註冊裝置，或以您的原則和設定由 Intune 管理。 不過，您仍然必須保護組織的資源和資料。 針對此案例，您可以使用行動應用程式管理 (MAM) 來保護應用程式。  
 
 Intune 原則可以強制執行裝置合規性和應用程式保護。 以下是要建立的 Intune 原則清單。
 
@@ -249,17 +267,17 @@ Intune 原則可以強制執行裝置合規性和應用程式保護。 以下是
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-config.png)
  
-新的和醒目提示的行動裝置管理項目包括：
+全新和醒目提示的行動裝置管理元素包括：
 
 |||
 |:------:|:-----|
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | 已在 Intune 中註冊的裝置，以執行 Windows 10 企業版的內部部署膝上型電腦為例。 |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | 裝置已在 Intune 中註冊，顯示執行 Windows 10 企業版的內部部署膝上型電腦為例。 |
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-policies.png) | 用於裝置合規性和應用程式保護的 Intune 原則。 |
 |||
 
 ## <a name="phase-6-information-protection"></a>第 6 階段：資訊保護
 
-Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控管、安全性和保護層級，以不同的方式處理資料的類別。 
+Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控管、安全性和保護層級，以不同的方式處理資料的分類。 
 
 例如，大多數員工之間的一般通信與他們處理的文件需要某種基準層級的保護。 財務記錄、客戶資料和智慧財產則需要較高層級的保護。
 
@@ -275,13 +293,13 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
 
 - 高管制
 
-  範例包括客戶和合作夥伴的個人識別資訊，以及組織的智慧財產。
+  範例包括客戶和合作夥伴的個人識別資訊，以及組織的財務資訊或智慧財產。
 
 根據這些資料安全性層級，下一步就要找出並實作：
 
 - 自訂敏感性資訊類型
 
-  Microsoft 365 提供各式各樣的敏感性資訊類型，例如健康情況服務與信用卡號碼。 如果您在 Microsoft 365 提供的清單中找不到需要的類型，可以自行建立。
+  Microsoft 365 提供各式各樣的敏感性資訊類型，例如健康情況服務與信用卡號碼。 如果您在提供的清單中找不到需要的類型，可以自行建立。
 
 - 保留標籤
 
@@ -295,7 +313,12 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
 
 如果您使用權限的敏感度標籤，可能需要建立額外的 Azure AD 安全性群組來定義誰可以對電子郵件和文件執行什麼動作。 
 
-例如，您需要建立 RESEARCH 敏感度標籤來保護研究團隊的電子郵件和文件。 您決定某些研究人員必須能夠變更以 RESEARCH 敏感度標籤標示的文件，其他非研究人員的員工則只能檢視以 RESEARCH 敏感度標籤標示的文件。 這表示您必須建立和管理兩個額外的群組：
+例如，您需要建立 RESEARCH 敏感度標籤來保護研究團隊的電子郵件和文件。 您可以決定：
+
+- 研究人員必須能夠變更使用 RESEARCH 敏感度標籤標示的文件。
+- 非研究員工只需要能夠檢視使用 RESEARCH 敏感度標籤標示的文件。 
+
+這表示您必須建立和管理兩個額外的群組：
 
 - RESEARCH-ALL
 - RESEARCH-VIEW
@@ -317,25 +340,25 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-labels.png) | 使用者可以套用至文件的三個安全性層級的敏感度標籤。 |
 |||
 
-不會顯示保留標籤和自訂資訊類型。
+不會顯示自訂資訊類型和保留標籤。
 
-## <a name="onboarding"></a>登入
+## <a name="onboarding"></a>上線
 
-您可以透過這個基礎結構，使用這些程序將 Microsoft 365 企業版的員工登入。
+利用您的既有 Microsoft 365 企業版基礎結構，您可以輕鬆地讓您的員工上線。
 
 ### <a name="a-new-windows-10-enterprise-device"></a>新的 Windows 10 企業版裝置
 
 提供員工新的 Windows 10 企業版裝置之前：
 
+- 對於混合式身分識別
+
+  將裝置加入您的 AD DS 網域、將裝置加入您的 Azure AD 租用戶，然後在 Intune 中註冊裝置。
+
 - 對於僅雲端身分識別
 
   將裝置加入 Microsoft 365 企業版訂閱的 Azure AD 租用戶。
 
-- 對於混合式身分識別
-
-  將裝置加入您的 AD DS、將裝置加入您的 Azure AD 租用戶，然後在 Intune 中註冊裝置。
-
-### <a name="existing-employee-with-an-ad-ds-user-account"></a>有 AD DS 使用者帳戶的現有員工
+### <a name="existing-employee-with-an-ad-ds-user-account"></a>具有 AD DS 使用者帳戶的現有員工
 
 如果使用混合式身分識別，首次登入組織時，請將 AD DS 使用者帳戶新增至這些 Azure AD 群組：
 
@@ -343,9 +366,13 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
 - 屬於 BASELINE、SENSITIVE 和 HIGHLY-REGULATED Azure AD 群組之成員的適當 AD DS 或 Azure AD 安全性群組
 - 敏感度標籤群組 (如有需要)
 
-現有的員工應該已經新增至適當的群組、部門及地區 AD DS 群組。
+應該已將現有員工新增至適當的工作群組、部門及地區 AD DS 群組。
 
-### <a name="new-employee-with-cloud-only-user-account"></a>有僅雲端使用者帳戶的新進員工
+您可以將使用者帳戶新增到 Microsoft 365 系統管理中心的多個 Azure AD 群組。 從使用者帳戶的內容，按一下 [管理群組] > [新增成員資格]****。
+
+如果您想要使用 PowerShell，請查看這個[可下載的 Excel 活頁簿](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/microsoft-365/enterprise/media/Group-License-Mgmt-PowerShell.xlsx?raw=true)，它會根據指定的使用者帳戶和選取的群組名稱產生 PowerShell 命令。
+
+### <a name="new-employee-with-a-cloud-only-user-account"></a>有僅雲端使用者帳戶的新進員工
 
 如果使用僅雲端身分識別，首次登入組織時，請將新的使用者帳戶新增至這些群組：
 
@@ -356,7 +383,7 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
 
 ### <a name="initial-sign-in-to-microsoft-365"></a>首次登入 Microsoft 365
 
-對於有 AD DS 使用者帳戶、第一次登入 Microsoft 365 的新進員工或現有員工，請指導他們：
+如果是第一次登入 Microsoft 365 的員工，請告知他們：
 
 1. 使用他們的使用者帳戶認證登入裝置。
 2. 使用瀏覽器，登入 Office 365 入口網站 https://portal.office.com。
@@ -408,6 +435,6 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
    - 已安裝 Office 365 專業增強版，它會使用最新的 Office 產品改良功能和安全性增強功能自動更新本身。
    - 已在 Intune 中註冊，而且遵守 Intune 裝置合規性原則和應用程式保護原則。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
-部署您的[工作負載和案例](deploy-workloads.md)，善加利用底層基礎結構的功能與設定。
+部署您的[工作負載和案例](deploy-workloads.md)，善加利用 Microsoft 365 企業版底層基礎結構的功能與設定。
