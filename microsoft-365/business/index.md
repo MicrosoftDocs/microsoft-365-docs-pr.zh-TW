@@ -11,12 +11,12 @@ ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
 title: Microsoft 365 商務版資源
 description: 了解如何規劃、 部署及使用 Microsoft Office 365、 Windows 10 和 Enterprise Mobility + Security 一起貴公司中的整合式和安全的基礎結構，可讓團隊合作，並且盡情發揮創意。
-ms.openlocfilehash: a7b6ef6b3c86868ffd9dd2ab912c427911075911
-ms.sourcegitcommit: 7ac06563c6ff034358e8fd3f9298fc426187ade2
+ms.openlocfilehash: 2d937f777ab5aebb0dcdf3eee40c62c109256d82
+ms.sourcegitcommit: 99d3facce4dc02ab9a5a8956bb49de6581b3562d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34653039"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36213332"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -43,7 +43,7 @@ ms.locfileid: "34653039"
                                                 <h3>瀏覽</h3>
                                                 <P><a href="https://support.office.com/article/what-is-microsoft-365-business-901e2522-c2cf-4b8c-894e-f482cda3347a" target="_blank">視訊的概觀</a></p>
                                                 <P><a href="microsoft-365-business-overview.md" target="_blank">什麼是 Microsoft 365 商務版</a></p>
-                                                <P><a href="https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-business-service-description" target="_blank">服務描述</a></p>
+                                                <P><a href="https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description" target="_blank">服務描述</a></p>
                                                 <P><a href="https://docs.microsoft.com/microsoft-365/business/support/microsoft-365-business-faqs" target="_blank">常見問題集</a></p>
                                             </div>
                                         </div>

@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用來在組織中部署 Microsoft 365 企業版的資源。
-ms.openlocfilehash: 9f67c8b6ac28557e8a37a31ec8ca9e0b318cb79a
-ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
+ms.openlocfilehash: bc678a4bd1b6f4e7332589186767894ee46aa83e
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35937405"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054945"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版
 
-Microsoft 365 企業版是 Office 365、Enterprise Mobility + Security (EMS) 和 Windows 10 企業版的組合，其中： 
+Microsoft 365 企業版是本機與雲端生產力應用程式和服務的組合，具有的 Windows 10 企業版：  
 
 - 提供智慧安全性。
 - 已整合，讓您容易使用。
@@ -95,7 +95,7 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
 1. 移至[ https://customers.microsoft.com/ ](https://customers.microsoft.com/)並按一下**搜尋**。
 2. 在左窗格**語言**中，選取您的語言。
-3. 在**產業中，選取您組織的產業。
+3. 在**產業**中，選取您組織的產業。
 4. 在**產品**中，選取**Microsoft 365**。
 5. 按一下客戶案例研究的卡。
   

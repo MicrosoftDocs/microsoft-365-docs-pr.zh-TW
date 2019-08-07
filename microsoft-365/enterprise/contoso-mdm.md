@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -12,19 +12,19 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 深入了解 Contoso 如何在 Microsoft 365 企業版中使用 EMS，來管理裝置和在裝置上執行的應用程式。
-ms.openlocfilehash: f47d6a1ee608d33802f1c523d3b954af3771f212
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: 深入了解 Contoso 如何在 Microsoft 365 企業版中使用 Intune，來管理裝置和在裝置上執行的應用程式。
+ms.openlocfilehash: 9f3db160b01a54afa3457703b0333be1ff3a02ec
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278039"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054985"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 的行動裝置管理
 
-**摘要：** 深入了解 Contoso 如何在 Microsoft 365 企業版中使用 EMS，來管理裝置和在裝置上執行的應用程式。
+**摘要：** 深入了解 Contoso 如何在 Microsoft 365 企業版中使用 Intune，來管理裝置和在裝置上執行的應用程式。
 
-Microsoft 365 企業版的企業行動力 + 安全性 (EMS) 由 Microsoft Intune 和一組 Azure 服務組成，可支援行動裝置和應用程式的管理和安全性。
+Microsoft 365 企業版包含 Microsoft Intune 和一組 Azure 服務，可支援行動裝置和應用程式管理與安全性。
 
 Contoso 有許多使用行動裝置的員工，有些在 Contoso 所在地有辦公室，有些則沒有。Contoso 需要能夠讓員工具備生產力，但保持裝置、儲存在裝置上的 Contoso 公司資料及應用程式行為安全的方法。
 

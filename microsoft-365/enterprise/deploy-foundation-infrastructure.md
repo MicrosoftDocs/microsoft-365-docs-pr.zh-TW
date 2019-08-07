@@ -3,8 +3,8 @@ title: Microsoft 365 企業版底層基礎結構
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 03/05/2019
-ms.audience: ITPro
+ms.date: 05/22/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解貴組織中部署 Microsoft 365 企業版底層基礎結構的主要階段，也稱為核心部署。
-ms.openlocfilehash: e6b8a71f59f20633e323c71e931b930198bc4deb
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 0c683f771609c847556f82fe84a17dad13ee34d4
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400047"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36055017"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 企業版底層基礎結構
 
-如果您要自行進行 Microsoft 365 企業版的端對端部署，請先建置穩固的基礎，以便應用程式與服務能夠在安全的環境中發揮創意和實現團隊合作能力。 此基礎有時也稱為核心部署。
+如果您要自行進行 Microsoft 365 企業版的端對端部署，請先建置穩固的基礎，以便應用程式與服務能夠在安全的環境中發揮創意和實現團隊合作能力。 此基礎有時也稱為*核心部署*。
 
 如需明確的端對端部署路徑，您可以使用下列階段來規劃和部署 Microsoft 365 企業版的底層基礎結構：
 
@@ -38,7 +38,7 @@ ms.locfileid: "33400047"
 這些階段會從最基本的項目 (網路和身分識別) 開始，然後會建立基礎結構的各個設定和群組層級，以便：
 
 - 在裝置上安裝最新且最安全的 Windows 版本。
-- 在裝置上安裝最新的 Office 版本。
+- 在裝置上安裝最新的 Microsoft Office 版本。
 - 管理組織的裝置。
 - 保護這些裝置上和雲端中的資訊。
 
@@ -58,6 +58,22 @@ ms.locfileid: "33400047"
 
 ![](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
+## <a name="at-a-glance"></a>概覽
+
+[Microsoft 365 企業版底層基礎結構海報](http://aka.ms/m365efoundinfraposter)是可讓您檢視每個階段的中心位置：
+
+- 系統管理員和使用者的階段整體目標
+- 服務、功能及工具
+- 規劃的重要決策
+- 組態結果
+- 新使用者的上線程序
+- 如何監控及更新
+
+![](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)
+
+若要下載此海報的副本，請按一下[這裡](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)。
+
+
 ## <a name="infrastructure-configuration-vs-user-rollout"></a>基礎結構設定與使用者推出
 
 底層基礎結構是一組設定好的軟體和服務，結合在一起時可讓使用者利用 Microsoft 365 企業版所提供的完整功能和保護機制。 端對端部署旅程的終點是要讓這個基礎結構套用至所有使用者和其持有的 Windows 架構裝置。 
@@ -74,7 +90,7 @@ ms.locfileid: "33400047"
 | Windows 10 企業版 | 可自動將執行 Windows 7 或 Windows 8.1 的電腦就地升級為 Windows 10 企業版的群組。 |
 | Office 365 專業增強版 | 可自動為使用 Office 2010、Office 2013 或 Office 2016 的使用者部署 Office 365 專業增強版的群組。 |
 | 行動裝置管理 | 用於裝置註冊和裝置型條件式存取原則的群組。 |
-| 資訊保護 | Office 365 和 Azure 資訊保護標籤與群組。 |
+| 資訊保護 | Office 365 敏感度和 Azure 資訊保護標籤與群組。 |
 
 當您準備好對使用者推出這個基礎結構的元素時：
 
@@ -92,10 +108,16 @@ ms.locfileid: "33400047"
 
 若要了解如何讓試驗使用者和組織內的其他人知道如何對底層基礎結構的不同階段進行專案管理，請參閱[部署策略](deployment-strategies-microsoft-365-enterprise.md)。
 
+## <a name="deployment-for-non-enterprises"></a>非企業部署
+
+如果您是小型組織，而 Microsoft 365 商務版不適合您，請參閱[非企業部署](deploy-foundation-infrastructure-non-enterprises.md)。
+
 
 ## <a name="next-step"></a>下一步
 
-- 我有既存的 Office 365、Enterprise Mobility + Security (EMS) 或 Windows 10 企業版基礎結構：
-  - 請參閱[使用現有基礎結構進行部署](deploy-with-existing-infrastructure.md)。 本文將逐步引導您完成每個階段的允出準則。
-- 我要從頭開始： 
-   - 使用[階段 1：網路](networking-infrastructure.md)開始端對端部署旅程。
+
+| 我的所在位置 | 我要前往何處 |
+|:-------|:-----|
+| 我有現有的 Office 365、Enterprise Mobility + Security (EMS) 或 Windows 10 企業版基礎結構 | 從[部署現有的基礎結構](deploy-with-existing-infrastructure.md)開始，這將逐步引導您進行每個階段的允出準則。 |
+| 我是從頭開始的企業 | 使用[階段 1：網路](networking-infrastructure.md)開始端對端部署旅程。 |
+| 我從頭開始，但不是企業 | 使用[非企業部署](deploy-foundation-infrastructure-non-enterprises.md)開始端對端部署旅程。 |
