@@ -6,18 +6,18 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 5987dcaf717ecb2907f02db675a77c3e1d2d2220
-ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
+ms.openlocfilehash: 6d3be89b52d71543687a02a1fd3fbae8bc1543f8
+ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35425666"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36243934"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的安全性
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft 受管理電腦套用一組標準的原則，並使用它來協助保護 Microsoft 受管理的電腦裝置、 預存的公司資料，並更多的許多 Microsoft 技術。 下面列出區域會進一步詳細說明：  
+Microsoft 受管理的電腦使用數種 Microsoft 技術來協助保護受管理的裝置和資料。 特別是： 
 
 - [資料安全性](#data-security)的 Microsoft 受管理的電腦並安全地儲存所收集的資料類型
 - [裝置安全性](#device-security)– 安全性和保護 Microsoft 受管理的電腦裝置上
@@ -37,6 +37,7 @@ Microsoft 受管理電腦套用一組標準的原則，並使用它來協助保�
 - 應用程式部署及可靠性資料
 - [更新與安全性原則部署資料
 - 使用者指派到裝置
+- 從您的租用戶由 Microsoft 受管理的電腦，以管理服務的帳戶與相關的安全性記錄檔
 
 
 
@@ -60,8 +61,7 @@ Service | 描述
 
 Service | 描述
 --- | ---
-生物識別驗證 |  Windows Hello 可讓使用者使用其圖像] 或 [pin 碼，讓密碼忘記或竊取更難登入。 如需詳細資訊，請參閱[Windows Hello。](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
-多重要素驗證 | Azure 多重要素驗證更緊密控制存取權機密的 Microsoft 受管理的電腦服務的功能，藉由提供更高等級的驗證使用行動電話，也為自助密碼重設為。 
+生物識別驗證 |  Windows Hello 可讓使用者使用其圖像] 或 [pin 碼，讓密碼忘記或竊取更難登入。 客戶負責在混合式組態中實作的這項服務的使用其內部部署 Active Directory 所需的必要條件。 如需詳細資訊，請參閱[Windows Hello。](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
 標準使用者權限 |  若要保護您的系統，並讓它更安全，使用者會指派標準使用者權限。 這會指定為 Windows Autopilot 現成可用的體驗的一部分。
 
 
