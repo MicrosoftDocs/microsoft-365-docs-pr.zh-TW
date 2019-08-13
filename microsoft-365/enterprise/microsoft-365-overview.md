@@ -3,7 +3,7 @@ title: Microsoft 365 企業版概觀
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2019
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 企業版提供元件、 計劃及部署路徑的簡介。
-ms.openlocfilehash: ec2a8f0d60f50503f8f5cf457c2999598e248053
-ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
+ms.openlocfilehash: de67f9e99fbb7a3a6e85001ec675f16672f4ef22
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35937417"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297893"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -59,15 +59,26 @@ Microsoft 365 企業版所組成：
 
 [Microsoft 365 企業版海報](http://aka.ms/m365eposter)是中央位置，讓您檢視：
 
-- Microsoft 365 企業版及如何對應到其值要點的優點
+- Microsoft 365 企業版及應用程式和服務如何對應至其值要點的優點
 - Microsoft 365 企業版方案，而且其中包含哪些元件 
 - 現代化工作場所，可讓 Microsoft 365 企業版的主要元件
-- Microsoft 365 企業版的重要商務值案例的服務和產品使它們，即會發生
+- [Microsoft 365 生產力文件庫](https://www.microsoft.com/microsoft-365/success/)及一些常見的組織部門的代表性案例
 - 重點在於說明 Microsoft 365 企業版[部署指南](deploy-microsoft-365-enterprise.md)採用藍圖
 
 ![](./media/m365-poster/m365e-poster.png)
 
 若要下載一份海報，請按一下[這裡](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf)。
+
+
+## <a name="transition-your-entire-organization"></a>轉換整個組織
+
+若要取得較佳的圖片，將整個組織移至 Microsoft 365 企業版產品與服務欲了解，請下載[轉換海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf)。
+
+![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+
+這兩個頁面海報是清查您現有的基礎結構，以取得將移至對應的產品或服務，Microsoft 365 企業版中的指引的快速方法。 其中包括 Windows 和 Office 產品及其他基礎結構和安全性的元素，例如裝置管理、 identity 及資訊和威脅保護。
+
+您可以列印此海報以字母、 法律或 tabloid (11 x 17) 格式。
 
 ## <a name="deploying"></a>部署
 
