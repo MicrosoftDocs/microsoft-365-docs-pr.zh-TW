@@ -3,7 +3,7 @@ title: 部署 Microsoft 365 企業版
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 07/30/2019
+ms.date: 08/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用來在組織中部署 Microsoft 365 企業版的資源。
-ms.openlocfilehash: bc678a4bd1b6f4e7332589186767894ee46aa83e
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 2f527c8d3afe2d3d0690661c6f01efefd5b0d435
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054945"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297903"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版
 
@@ -29,13 +29,13 @@ Microsoft 365 企業版是本機與雲端生產力應用程式和服務的組合
 - 盡情發揮創意。
 - 為團隊合作而建置。
 
-這些優點不只是透過取得這三個產品的授權，也透過以特定方式 (包含整合和最新進的安全性) 部署這些產品以及其功能來實現。
+您可以以包含最新技術的安全性服務與功能的整合方式來部署基礎結構和生產力工作負載，以實現這些權益。
 
 部署 Microsoft 365 企業版的主要方法有三種：
 
-- 使用適用於 Microsoft 365 的 FastTrack 與 Microsoft 工程師合作。
+- 使用[適用於 Microsoft 365 的 FastTrack](#fasttrack-for-microsoft-365) 與 Microsoft 工程師合作。
 - 透過 Microsoft 諮詢服務或 [Microsoft 合作夥伴](https://partner.microsoft.com/)的協助。
-- 自行參照 Microsoft 365 企業版的部署指南。
+- 參考 [Microsoft 365 企業版的部署指南](#microsoft-365-enterprise-deployment-guide)自行完成。
 
 ## <a name="fasttrack-for-microsoft-365"></a>適用於 Microsoft 365 的 FastTrack
 
@@ -57,7 +57,7 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
   **如果您是規模較小或創立不久的組織**，請遵循這些階段以便有系統地建置基礎結構。
 
-  不過，您可以根據所需順序來部署階段或階段的各部分，像是[一個接著一個或同時部署](deployment-strategies-microsoft-365-enterprise.md)，藉此來與您目前的基礎結構整合、搭配您的 IT 計劃和資源，以及符合您的商務需求。 
+  不過，您可以根據所需順序來部署階段或階段的各部分，像是[一個接著一個或同時部署](deployment-strategies-microsoft-365-enterprise.md)，藉此來與您目前的基礎結構整合、搭配您的 IT 計劃和資源，以及符合您的商務需求。 若為非企業的簡化部署，請按一下[這裡](deploy-foundation-infrastructure-non-enterprises.md)。
 
   **如果您是企業組織**，請將這些階段視為 IT 基礎結構層級而非明確的路徑，並判斷最終要如何做才能符合組織內每一層級的需求。
 
@@ -85,6 +85,16 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
+## <a name="transition-your-entire-organization"></a>轉換您的整個組織
+
+若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請下載[轉換海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf)。
+
+![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+
+這份雙頁海報可讓您快速清查您現有的基礎結構，並取得移至 Microsoft 365 企業版中對應產品或服務的指導方針。 包含 Windows 和 Office 產品和其他基礎結構與安全性元素，例如裝置管理、身分識別以及資訊和威脅防護。
+
+您可以以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
+
 ## <a name="how-did-others-do-it"></a>其他人怎麼執行此操作？
 
 若要了解其他人如何部署及使用 Microsoft 365 企業版，可使用這些資源。
@@ -98,11 +108,10 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 3. 在**產業**中，選取您組織的產業。
 4. 在**產品**中，選取**Microsoft 365**。
 5. 按一下客戶案例研究的卡。
-  
 
 ### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Microsoft 如何使用 Microsoft 365 企業版
 
-定義數位文化是每個努力促進現代工作場所的領導者的首要任務。 Microsoft 365 旨在支持這種文化轉變，幫助領導者賦予其公司每位員工釋放創造力和共同作業的能力。 在 Microsoft 建立基礎架構時，恰好引發了這種數位文化的轉型。 實作 Microsoft 365 企業版使我們能夠部署如 Microsoft Teams 和 Exchange Online 這類的共同作業技術，並在安全的 SharePoint 內部網站線上分享敏感資料。
+定義數位文化是每個努力促進現代工作場所領導者的首要任務。 Microsoft 365 旨在支持這種文化轉變，幫助領導者賦予其公司每位員工釋放創造力和共同作業的能力。 建立 Microsoft 的基礎架構時，便精準地引發了此類型數位文化的轉型。 實作 Microsoft 365 企業版使我們能夠部署如 Microsoft Teams 和 Exchange Online 這類的共同作業技術，並在安全的 SharePoint 內部網站線上分享敏感性資料。
 
 同時，智慧安全性功能和產品整合有助於簡化管理需求，並將整個 IT 生命週期的總擁有成本降到最低。 
 
@@ -115,7 +124,7 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
 Contoso Corporation 是虛構但具代表性的全球製造業集團，其總部位於法國巴黎。 請參閱 [Contoso 部署的 Microsoft 365 企業版](contoso-case-study.md)，並且針對網路、身分識別、Windows 10 企業版、Office 365 專業增強版、行動裝置管理、資訊保護和安全性，訂定主要設計決策和實作詳細資料。 
 
-## <a name="next-step-to-deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版的下個步驟
+## <a name="next-step"></a>下一步
 
 若需要 Microsoft 的直接協助以進行部署，請使用 [FastTrack](https://fasttrack.microsoft.com/microsoft365)。
 

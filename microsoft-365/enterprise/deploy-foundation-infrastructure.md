@@ -3,7 +3,7 @@ title: Microsoft 365 企業版底層基礎結構
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 08/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解貴組織中部署 Microsoft 365 企業版底層基礎結構的主要階段，也稱為核心部署。
-ms.openlocfilehash: 0c683f771609c847556f82fe84a17dad13ee34d4
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 0b54225d3ce9043564788e28ddd88426dae611e9
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36055017"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297913"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 企業版底層基礎結構
 
@@ -38,13 +38,13 @@ ms.locfileid: "36055017"
 這些階段會從最基本的項目 (網路和身分識別) 開始，然後會建立基礎結構的各個設定和群組層級，以便：
 
 - 在裝置上安裝最新且最安全的 Windows 版本。
-- 在裝置上安裝最新的 Microsoft Office 版本。
-- 管理組織的裝置。
+- 在裝置上安裝最新的 Microsoft Office 版本，並讓它保持最新。
+- 管理您組織的裝置和其對應用程式的存取。
 - 保護這些裝置上和雲端中的資訊。
 
 不過，您可以彈性地設定和推出這些階段或階段內的步驟，以符合 IT 資源和企業的需求。
 
-- **如果您是規模較小或創立不久的組織**，請視需要地遵循這些階段以便有系統地建置基礎結構。
+- **如果您是規模較小或創立不久的組織**，請視需要地遵循這些階段以便有系統地建置基礎結構。 若為非企業的簡化部署，請按一下[這裡](deploy-foundation-infrastructure-non-enterprises.md)。
 
 -  **如果您是企業組織**，請將這些階段視為 IT 基礎結構層級而非明確的路徑，並判斷最終要如何做才能符合組織內每一層級的需求。
 
@@ -80,7 +80,7 @@ ms.locfileid: "36055017"
 
 不過請務必注意，對使用者推出軟體與服務的行為與 Microsoft 365 企業版底層基礎結構無關。 ***您可以設定底層基礎結構的層級，而不需要對所有使用者推出這些層級。***
 
-因此，您可以事先設定、測試和試驗底層基礎結構的元素，然後再對辦公室、地區或組織部門內的眾多使用者推出這些元素。
+您可以事先設定、測試和試驗底層基礎結構的元素，然後再對辦公室、地區或組織部門內的眾多使用者推出這些元素。
 
 例如，您可以針對下列項目建立設定：
 
@@ -102,7 +102,7 @@ ms.locfileid: "36055017"
 | 行動裝置管理 | 將帳戶新增至用於裝置註冊和裝置型條件式存取原則的群組。 |
 | 資訊保護 | 將使用者帳戶新增至資訊保護標籤的群組。 |
 
-在底層基礎結構完成、經過測試及試驗後，您便可以對使用者以最符合業務目標和 IT 資源的方式推出已安裝好的軟體 (例如，Windows 10 企業版和 Office 365 專業增強版) 以及雲端式服務和保護 (例如，裝置註冊和條件式存取原則)。
+在底層基礎結構的階段或元素完成、經過測試及試驗後，您便可以對使用者以最符合業務目標和 IT 資源的方式推出已安裝好的軟體 (例如，Windows 10 企業版和 Office 365 專業增強版) 以及雲端式服務和保護 (例如，裝置註冊和條件式存取原則)。
 
 ## <a name="deployment-and-project-management-strategies"></a>部署和專案管理策略
 
@@ -114,7 +114,6 @@ ms.locfileid: "36055017"
 
 
 ## <a name="next-step"></a>下一步
-
 
 | 我的所在位置 | 我要前往何處 |
 |:-------|:-----|

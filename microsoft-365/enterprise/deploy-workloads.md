@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 讓貴組織的使用者快速上手 Microsoft 365 企業版的生產力工作負載。
-ms.openlocfilehash: 0c81f93b117645974e93870f20d4dfb469dae3ac
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 3e7e030e3684606a906a57856d08ea25c7dc2001
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054925"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297863"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 企業版工作負載和案例
 
@@ -66,7 +66,7 @@ ms.locfileid: "36054925"
   - [Exchange Online](exchangeonline-workload.md)，讓使用者可以開始使用雲端式電子郵件。
 - 如果您並非立即需要在雲端中儲存高管制的數位資產，請先為使用者部署 [Microsoft Teams](teams-workload.md) 和 [SharePoint Online](sharepoint-online-onedrive-workload.md)，再部署**資訊保護**層級。
 
-您必須決定要如何針對底層基礎結構的先決條件階段，做出最佳的設定順序並進行部署，才會最能符合您的業務需求。
+您必須決定要如何針對底層基礎結構的先決條件階段，做出最佳的設定順序並進行部署，才能符合您的業務需求。
 
 ### <a name="best-practice"></a>最佳作法
 
@@ -77,3 +77,4 @@ ms.locfileid: "36054925"
 雖然整體效能屬於基礎要求且非常重要，但您還是可以在讓使用者快速上手工作負載時同時在網路上推出**網路**階段，因為您知道 Microsoft 365應用程式和服務的效能會慢慢改善。
 
 對於有多個位置並混合使用邊緣裝置與網際網路連線的企業組織來說，更是如此。
+

@@ -2,7 +2,7 @@
 title: 移轉至 Microsoft 365 企業版
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 在整個組織中逐步執行將 Microsoft Office、Office 伺服器及 Windows 的各版本移轉為 Microsoft 365 企業版的程序。
-ms.openlocfilehash: 171a0d1b9db5c6dad89d091e81413fbdd785b3b4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f82e65cdff674884466fe70a299250c92f356186
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073293"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297875"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>移轉至 Microsoft 365 企業版
 
@@ -28,6 +28,10 @@ ms.locfileid: "34073293"
 - 將安裝在您電腦上的 Office 用戶端移轉為 Office 365 專業增強版
 - 將安裝在您伺服器上的 Office 伺服器移轉為 Office 365 中的對等服務
 - 將裝置上的 Windows 7 和 Windows 8.1 移轉為 Windows 10 企業版
+
+>[!Note]
+>Windows 7 將於 2020 年 1 月 14 日進入終止支援。 如需詳細資訊，請按一下[這裡](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。
+>
 
 在一段時間內完成所有這些移轉，讓您的組織更接近[現代職場](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)，也就是安全的整合式環境，讓組織可發揮團隊合作和創意，而以上這些都是藉由 Microsoft 365 企業版來提供及達成。 
 
@@ -151,6 +155,16 @@ Microsoft 365 企業版包含 Office 365，其中包含雲端型版本的 Office
 - [SharePoint 至雲端：深入了解 Microsoft 如何執行自己的移轉](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [在 Microsoft 以就地升級方式部署 Windows 10](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
 - [Windows 10 部署：Microsoft IT 的秘訣與技巧](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (影片)
+
+## <a name="transition-your-entire-organization"></a>轉換您的整個組織
+
+若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版，請下載[轉換海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf)。
+
+![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+
+這份雙頁海報可讓您快速清查您現有的基礎結構，並取得移至 Microsoft 365 企業版中對應產品或服務的指導方針。 本文中包含產品和其他基礎結構與安全性元素，例如裝置管理、身分識別以及資訊和威脅防護。
+
+您可以以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
 ## <a name="result"></a>結果
 
