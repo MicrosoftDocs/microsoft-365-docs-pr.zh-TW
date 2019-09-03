@@ -78,8 +78,7 @@ ms.locfileid: "35584509"
 
   - 低階程式碼解決方案，例如反惡意程式碼、VPN 或虛擬化
 
-
-  [升級工作順序](https://docs.microsoft.com/zh-TW/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)範本已內建於 System Center Configuration Manager 最新分支，並已提供數種版本。 在最新版本中，System Center Configuration Manager 有顯著的技術增強，能讓程序更有效率地判斷裝置和 Office 的相容性整備、降低網路流量並設定新的選項，例如 OneDrive 備份。 請觀賞這段 [Microsoft Mechanics 節目](https://youtu.be/CYRnAmCD7ls)，深入了解 System Center Configuration Manager 作業系統部署最近的更新。
+[升級工作順序](https://docs.microsoft.com/zh-TW/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)範本已內建於 System Center Configuration Manager 最新分支，並已提供數種版本。 在最新版本中，System Center Configuration Manager 有顯著的技術增強，能讓程序更有效率地判斷裝置和 Office 的相容性整備、降低網路流量並設定新的選項，例如 OneDrive 備份。 請觀賞這段 [Microsoft Mechanics 節目](https://youtu.be/CYRnAmCD7ls)，深入了解 System Center Configuration Manager 作業系統部署最近的更新。
 
 如果不使用 System Center Configuration Manager，您可以使用 Microsoft 部署工具組建立並執行升級部署工作順序。
 

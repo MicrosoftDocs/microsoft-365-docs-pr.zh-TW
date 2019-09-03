@@ -112,7 +112,7 @@ Microsoft Office 365 服務也可在下列國家雲環境中取得：[Office 365
 
 如先前所述，Microsoft 估計有超過 90% 的組織資料，是使用 Office 應用程式 (例如 Word 和 Excel) 建立的。這表示，您可以使用安全性與合規性中心內的內容搜尋，來搜尋大部分與 DSR 相關的資料。
 
-本指南假設，針對可回應 DSR 要求的個人資料，您或搜尋人員熟悉安全性與合規性中心內的「內容搜尋」工具，或有使用此工具的經驗。如需使用內容搜尋的一般指導方針，請參閱 [Office 365 中的內容搜尋](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)。請確定您已將安全性與合規性中心內的必要權限，指派給執行搜尋的人員。應將此人員新增為安全性與合規性中心內「電子文件探索管理員」角色群組的成員；請參閱[指派 Office 365 安全性與合規性中心內的電子文件探索權限](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7)。請考慮將貴組織中涉及調查 DSR 的人員也新增至「電子文件探索管理員」角色群組，以便他們在內容搜尋工具中執行必要動作，例如預覽和匯出搜尋結果。不過，除非您設定合規性界限 (如[這裡](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)所述)，否則請注意電子文件探索管理員可以搜尋貴組織中的所有內容位置，包括可能與 DSR 調查不相關的內容位置。
+本指南假設，針對可回應 DSR 要求的個人資料，您或搜尋人員熟悉安全性與合規性中心內的「內容搜尋」工具，或有使用此工具的經驗。如需使用內容搜尋的一般指導方針，請參閱 [Office 365 中的內容搜尋](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)。請確定您已將安全性與合規性中心內的必要權限，指派給執行搜尋的人員。應將此人員新增為安全性與合規性中心內「電子文件探索管理員」角色群組的成員；請參閱[指派 Office 365 安全性與合規性中心內的電子文件探索權限](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7)。請考慮將貴組織中涉及調查 DSR 的人員也新增至「電子文件探索管理員」角色群組，以便他們在內容搜尋工具中執行必要動作，例如預覽和匯出搜尋結果。不過，除非您設定合規性界限 (如[這裡](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)所述)，否則請注意電子文件探索管理員可以搜尋貴組織中的所有內容位置，包括可能與 DSR 調查不相關的內容位置。
 
 找到資料後，接著您可以執行指定的動作來滿足資料主體的要求。
 
@@ -215,15 +215,15 @@ pilar@contoso.com AND filetype="xlxs"
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>在內容搜尋中使用已局部編製索引的項目
 
-已局部編製索引的項目 (也稱為 *「未編製索引的項目」*) 是 SharePoint Online 和商務用 OneDrive 網站上，基於某種原因而未完全編製索引以利搜尋的 Exchange Online 信箱項目和文件，這表示無法使用「內容搜尋」來加以搜尋。 大部分的電子郵件訊息和網站文件都可成功編製索引，因為落在 [Office 365 索引限制](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d?)內。 電子郵件訊息或檔案未編製索引以利搜尋的原因包括：
+已局部編製索引的項目 (也稱為 *「未編製索引的項目」*) 是 SharePoint Online 和商務用 OneDrive 網站上，基於某種原因而未完全編製索引以利搜尋的 Exchange Online 信箱項目和文件，這表示無法使用「內容搜尋」來加以搜尋。 大部分的電子郵件訊息和網站文件都可成功編製索引，因為落在 [Office 365 索引限制](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??)內。 電子郵件訊息或檔案未編製索引以利搜尋的原因包括：
 
-- 檔案類型[無法辨識或不支援索引編製功能](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b?)。 雖然有時候檔案類型會支援索引編製，但在編製特定檔案的索引時發生錯誤。
+- 檔案類型[無法辨識或不支援索引編製功能](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)。 雖然有時候檔案類型會支援索引編製，但在編製特定檔案的索引時發生錯誤。
 - 電子郵件訊息所具有的附加檔案 (例如影像檔) 缺乏有效的處理常式，這是已局部編製索引的電子郵件項目最常見的原因
 - 電子郵件訊息的附加檔案太大，或有太多個附加檔案
 
 我們建議您深入了解已局部編製索引的項目，讓您可在回應 DSR 要求時使用。如需詳細資訊，請參閱：
 
-- [位於 Office 365 中內容搜尋的已局部編製索引項目](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b?)
+- [位於 Office 365 中內容搜尋的已局部編製索引項目](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)
 - [調查 Office 365 電子文件探索中已局部編製索引的項目](https://support.office.com/article/investigating-partially-indexed-items-in-office-365-ediscovery-4e8ff113-6361-41e2-915a-6338a7e2a1ed)
 - [匯出未編製索引的項目](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278#unidexeditems)
 
@@ -1023,7 +1023,7 @@ Kaizala 系統管理員可以在 Kaizala 管理入口網站中移除 Kaizala 使
 
 #### <a name="discover"></a>探索
 
-Planner 計劃與 Office 365 群組相關聯，而且 Office 365 群組的檔案會儲存在該群組的相關聯 SharePoint Online 網站中。 這表示，您可以使用內容搜尋來搜尋 Office 365 群組的網站，以尋找 Planner 檔案。 若要這麼做，您必須要有 Office 365 群組的 URL。 如需怎樣取得 Office 365 群組之相關資訊的訣竅，請參閱「Office 365 中的內容搜尋」說明主題中的[搜尋 Microsoft Teams 和 Office 365 群組](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)，來協助您在對應的 SharePoint Online 網站中搜尋 Planner 檔案。
+Planner 計劃與 Office 365 群組相關聯，而且 Office 365 群組的檔案會儲存在該群組的相關聯 SharePoint Online 網站中。 這表示，您可以使用內容搜尋來搜尋 Office 365 群組的網站，以尋找 Planner 檔案。 若要這麼做，您必須要有 Office 365 群組的 URL。 如需怎樣取得 Office 365 群組之相關資訊的訣竅，請參閱「Office 365 中的內容搜尋」說明主題中的[搜尋 Microsoft Teams 和 Office 365 群組](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)，來協助您在對應的 SharePoint Online 網站中搜尋 Planner 檔案。
 
 #### <a name="access"></a>Access
 

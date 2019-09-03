@@ -42,48 +42,42 @@ ms.locfileid: "34073903"
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="step 2" height="144" width="144" /></td>
 <td><p><strong>目錄和網路整備</strong></p>
 <ul>
-<li><p>
-  <a href="https://docs.microsoft.com/zh-TW/fasttrack/o365-onboarding-and-migration#core">核心上架</a>，Microsoft 的 FastTrack 專家會提供您目前的目錄服務與 Azure Active Directory 之間的身分識別整合。這是 Office 365 專業增強版、Microsoft Intune、OneDrive 和其他屬於您電腦部署之 Office 365 和 EMS 雲端服務的必要項目。</p></li>
+<li><p><a href="https://docs.microsoft.com/zh-TW/fasttrack/o365-onboarding-and-migration#core">核心上架</a>，Microsoft 的 FastTrack 專家會提供您目前的目錄服務與 Azure Active Directory 之間的身分識別整合。這是 Office 365 專業增強版、Microsoft Intune、OneDrive 和其他屬於您電腦部署之 Office 365 和 EMS 雲端服務的必要項目。</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="step 3" height="144" width="144" /></td>
 <td><p><strong>Office 和 LOB 應用程式傳遞</strong></p>
 <ul>
-<li><p>
-  <a href="https://docs.microsoft.com/zh-TW/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 專業增強版</a>組態和部署，如果貴組織是使用 System Center Configuration Manager，Microsoft 的 FastTrack 專家會提供佈建使用者授權、設定隨選即用的安裝和更新設定及建立套件方面的協助。</p></li>
+<li><p><a href="https://docs.microsoft.com/zh-TW/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 專業增強版</a>組態和部署，如果貴組織是使用 System Center Configuration Manager，Microsoft 的 FastTrack 專家會提供佈建使用者授權、設定隨選即用的安裝和更新設定及建立套件方面的協助。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="step 4" height="144" width="144" /></td>
 <td><p><strong>使用者檔案和設定移轉</strong></p>
 <ul>
-<li><p>
-  <a href="https://docs.microsoft.com/zh-TW/fasttrack/o365-onboarding-and-migration#onedrive-for-business">OneDrive</a> 組態和實作，Microsoft 的 FastTrack 專家會提供佈建使用者授權和設定 OneDrive 同步處理用戶端設定方面的協助。針對具有合格訂閱的組織，<a href="https://docs.microsoft.com/zh-TW/fasttrack/data-migration">FastTrack 會將資料遷移至 OneDrive</a>。</p></li>
+<li><p><a href="https://docs.microsoft.com/zh-TW/fasttrack/o365-onboarding-and-migration#onedrive-for-business">OneDrive</a> 組態和實作，Microsoft 的 FastTrack 專家會提供佈建使用者授權和設定 OneDrive 同步處理用戶端設定方面的協助。針對具有合格訂閱的組織，<a href="https://docs.microsoft.com/zh-TW/fasttrack/data-migration">FastTrack 會將資料遷移至 OneDrive</a>。</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="step 5" height="144" width="144" /></td>
 <td><p><strong>安全性與合規性考量事項</strong></p>
 <ul>
-<li><p>
-  <a href="https://docs.microsoft.com/zh-TW/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Azure AD Premium</a>，Microsoft 的 FastTrack 專家會在您採用 Microsoft 365 時，提供啟用服務方面的協助，以增強您的安全性和資訊保護層級。服務包括 Azure Multi-Factor Authentication、自助密碼重設、Azure Active Directory 條件式存取等等。針對裝置和端點安全性，Microsoft FastTrack 也可以透過 <a href="https://docs.microsoft.com/zh-TW/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a> 佈建和原則來提供協助。</p></li>
+<li><p><a href="https://docs.microsoft.com/zh-TW/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Azure AD Premium</a>，Microsoft 的 FastTrack 專家會在您採用 Microsoft 365 時，提供啟用服務方面的協助，以增強您的安全性和資訊保護層級。服務包括 Azure Multi-Factor Authentication、自助密碼重設、Azure Active Directory 條件式存取等等。針對裝置和端點安全性，Microsoft FastTrack 也可以透過 <a href="https://docs.microsoft.com/zh-TW/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a> 佈建和原則來提供協助。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="step 6" height="144" width="144" /></td>
 <td><p><strong>OS 部署與功能更新</strong></p>
 <ul>
-<li><p>
-  <a href="https://docs.microsoft.com/zh-TW/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>，Microsoft 的 FastTrack 專家會提供以下協助：佈建使用者授權和為新裝置設定 Windows Autopilot、為您的 Windows 10 和其他行動裝置設定 MDM 原則，包括應用程式部署；Wi-Fi 和 VPN 原則；與 System Center Configuration Manager 共同管理等等。</p></li>
+<li><p><a href="https://docs.microsoft.com/zh-TW/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>，Microsoft 的 FastTrack 專家會提供以下協助：佈建使用者授權和為新裝置設定 Windows Autopilot、為您的 Windows 10 和其他行動裝置設定 MDM 原則，包括應用程式部署；Wi-Fi 和 VPN 原則；與 System Center Configuration Manager 共同管理等等。</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="step 7" height="144" width="144" /></td>
 <td><p><strong>Office 和 Windows 即服務</strong></p>
 <ul>
-<li><p>
-  <a href="https://docs.microsoft.com/zh-TW/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>，Microsoft 的 FastTrack 專家會提供為 Windows 10 和 Office 365 專業增強版設定更新原則方面的協助。<a href="https://docs.microsoft.com/zh-TW/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 專業增強版</a>，Microsoft FastTrack 也可以提供設定部署通道以保持在最新狀態的指導方針。</p></li>
+<li><p><a href="https://docs.microsoft.com/zh-TW/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>，Microsoft 的 FastTrack 專家會提供為 Windows 10 和 Office 365 專業增強版設定更新原則方面的協助。<a href="https://docs.microsoft.com/zh-TW/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 專業增強版</a>，Microsoft FastTrack 也可以提供設定部署通道以保持在最新狀態的指導方針。</p></li>
 </ul></td>
 </tr>
 <tr class="odd">

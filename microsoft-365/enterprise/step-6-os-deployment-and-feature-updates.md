@@ -53,11 +53,9 @@ ms.locfileid: "35584539"
 
 擷取的映像將會有 Windows 映像 – 或 WIM – 格式如標準 Windows 安裝媒體。一旦您自訂 WIM 檔案之後，可以使用另一個工作順序作為在 System Center Configuration Manager 或 Microsoft 部署工具組中作業系統部署的一部分來執行部署相關的工作，以在您套用 Windows 映像之前和之後套用映像並執行工作。
 
+[建立 Windows 10 參照映像](https://docs.microsoft.com/zh-TW/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image) (英文)
 
-  [建立 Windows 10 參照映像](https://docs.microsoft.com/zh-TW/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image) (英文)
-
-
-  [建立安裝作業系統的工作順序](https://docs.microsoft.com/zh-TW/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system) (英文)
+[建立安裝作業系統的工作順序](https://docs.microsoft.com/zh-TW/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system) (英文)
 
 ### <a name="deployment-types"></a>部署類型
 
@@ -71,8 +69,7 @@ ms.locfileid: "35584539"
 
 這三種案例有共通點，它們會使用工作順序來執行，且每次都可套用自訂映像。
 
-
-  [深入了解 Windows 10 部署案例](https://docs.microsoft.com/zh-TW/windows/deployment/windows-10-deployment-scenarios) (英文)
+[深入了解 Windows 10 部署案例](https://docs.microsoft.com/zh-TW/windows/deployment/windows-10-deployment-scenarios) (英文)
 
 ### <a name="in-place-upgrade-using-task-sequence-automation"></a>使用工作順序自動化就地升級
 
@@ -88,11 +85,9 @@ ms.locfileid: "35584539"
 
 就地升級案例可用來從舊版 Windows 移轉到 Windows 10，以及從舊版 Windows 10 進行升級。在 Windows 安裝程式完成升級之後，您的工作順序可以繼續執行及升級應用程式 (如 Office)、取代驅動程式以及套用個人化設定。同樣地，您可以使用升級工作順序在執行升級之前執行預先安裝工作或檢查。
 
+[使用 Configuration Manager 執行就地升級至 Windows 10](https://docs.microsoft.com/zh-TW/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager) (英文)
 
-  [使用 Configuration Manager 執行就地升級至 Windows 10](https://docs.microsoft.com/zh-TW/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager) (英文)
-
-
-  [建立工作順序以在 Configuration Manager 中升級作業系統](https://docs.microsoft.com/zh-TW/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) (英文)
+[建立工作順序以在 Configuration Manager 中升級作業系統](https://docs.microsoft.com/zh-TW/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) (英文)
 
 ### <a name="phased-deployment"></a>階段式部署
 
@@ -104,9 +99,7 @@ ms.locfileid: "35584539"
 
 無論您選擇的部署類型，您需要確認可預測性和重複性盡可能為自動化。Microsoft 提供兩個解決方案可使用自動化的工作順序自動化作業系統部署：
 
-  - 
-  **
-  [System Center Configuration Manager](https://docs.microsoft.com/zh-TW/sccm/core/understand/introduction)** (ConfigMgr) (英文) 提供內建作業系統部署功能，可加強軟體發佈與軟體更新管理的功能。ConfigMgr 已廣泛用於各種規模的組織，並支援所有四個 Windows 部署類型。或者，您也可以將 ConfigMgr 與 Microsoft Intune 整合以新增其他功能來部署和裝置管理。
+  - **[System Center Configuration Manager](https://docs.microsoft.com/zh-TW/sccm/core/understand/introduction)** (ConfigMgr) (英文) 提供內建作業系統部署功能，可加強軟體發佈與軟體更新管理的功能。ConfigMgr 已廣泛用於各種規模的組織，並支援所有四個 Windows 部署類型。或者，您也可以將 ConfigMgr 與 Microsoft Intune 整合以新增其他功能來部署和裝置管理。
 
   - 其他常用的部署選項是免費的 **[Microsoft 部署工具組](https://docs.microsoft.com/zh-TW/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit)** (MDT) (英文) 通常是由小型及中型規模的組織用來進行作業系統部署。這幾乎不需要基礎結構。MDT 與 Windows 部署服務 (WDS) 整合以進行網路開機。它支援所有四種部署類型以及應用程式安裝、驅動程式和設定。當然，MDT 甚至可與 Configuration Manager 整合。
 
@@ -118,11 +111,9 @@ Windows 10 的新選項使用Windows Autopilot 將新電腦設定配置為硬體
 
 接著，當使用者在安裝程式期間使用其 Azure AD 認證登入電腦時，裝置會註冊為 Microsoft Intune，也可以接管部署程序及套用應用程式、軟體更新設定與合規性原則。Windows Autopilot 也可以選擇性地防止使用者在佈建完成之前存取第一個工作階段。
 
+[Windows Autopilot 概觀](https://docs.microsoft.com/zh-TW/windows/deployment/windows-autopilot/windows-10-autopilot) (英文)
 
-  [Windows Autopilot 概觀](https://docs.microsoft.com/zh-TW/windows/deployment/windows-autopilot/windows-10-autopilot) (英文)
-
-
-  [Windows Autopilot 必要條件](https://docs.microsoft.com/zh-TW/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites) (英文)
+[Windows Autopilot 必要條件](https://docs.microsoft.com/zh-TW/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites) (英文)
 
 ## <a name="windows-update-for-business-for-feature-updates"></a>商務用 Windows 更新功能更新
 
@@ -130,16 +121,11 @@ Windows 10 的新選項使用Windows Autopilot 將新電腦設定配置為硬體
 
 如需商務用 Windows Update 的詳細資訊，請參閱以下文件：
 
-- 
-  [使用商務用 Windows Update 部署更新](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-manage-updates-wufb) (機器翻譯)
-- 
-  [設定商務用 Windows Update](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-configure-wufb) (機器翻譯)
-- 
-  [整合商務用 Windows Update 與現有的管理工具](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-integrate-wufb) (機器翻譯)
-- 
-  [使用群組原則來設定商務用 Windows Update](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-wufb-group-policy) (機器翻譯)
-- 
-  [使用 Microsoft Intune 來設定商務用 Windows Update](https://docs.microsoft.com/zh-TW/intune/windows-update-for-business-configure) (機器翻譯)
+- [使用商務用 Windows Update 部署更新](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-manage-updates-wufb) (機器翻譯)
+- [設定商務用 Windows Update](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-configure-wufb) (機器翻譯)
+- [整合商務用 Windows Update 與現有的管理工具](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-integrate-wufb) (機器翻譯)
+- [使用群組原則來設定商務用 Windows Update](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-wufb-group-policy) (機器翻譯)
+- [使用 Microsoft Intune 來設定商務用 Windows Update](https://docs.microsoft.com/zh-TW/intune/windows-update-for-business-configure) (機器翻譯)
 
 ## <a name="next-step"></a>下一步 
 
