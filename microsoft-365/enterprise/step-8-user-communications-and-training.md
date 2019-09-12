@@ -55,12 +55,11 @@ ms.locfileid: "34814554"
 
 另有可見的安全性與相容性控制會公開給使用者。Enterprise Mobility + Security 包含 Azure AD 和 Microsoft Intune，其整合了 Windows 10 和 Office 365 其他功能，可用以為電腦升級設定目標。
 
-[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-security)
+[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/zh-TW/cloud-platform/enterprise-mobility-security)
 
 比方說，如果您已啟用多重要素驗證，這會使用 Azure AD，並利用電話應用程式或 PIN 以安全地存取服務，藉以保護使用者登入資源。Azure 資訊保護可以方便使用者分類並為文件加上標籤。
 
-
-  [設定 Office 365 使用者的多重要素驗證](https://support.office.com/zh-TW/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[設定 Office 365 使用者的多重要素驗證](https://support.office.com/zh-TW/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 這些只是使用者會發現的幾個新功能，某些使用者可能會以正面方式或稍不正面的方式意外發現新功能。而這些意外，特別是若其變更了一般的工作流程，可能會導致您或服務台接到更多來電與問題票證。
 

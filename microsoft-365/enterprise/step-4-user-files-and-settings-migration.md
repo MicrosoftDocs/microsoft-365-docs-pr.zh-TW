@@ -59,15 +59,13 @@ USMT 會擷取使用者帳戶、使用者檔案、作業系統設定和應用程
 
 您在其中執行電腦重新整理且未格式化的主要 Windows 磁碟分割，您也可以使用 USMT 來使用硬式連結移轉存放區。此程序會在電腦上保留使用者狀態，而舊的作業系統和應用程式會移除並重新整理。還原程序來自相同的本機磁碟分割，這個選項大幅改善效能，並減少網路流量。
 
-
-  [使用者狀態移轉工具 (USMT) 概觀](https://docs.microsoft.com/zh-TW/windows/deployment/usmt/usmt-overview)
+[使用者狀態移轉工具 (USMT) 概觀](https://docs.microsoft.com/zh-TW/windows/deployment/usmt/usmt-overview)
 
 ## <a name="onedrive-known-folder-move"></a>OneDrive 已知資料夾移動
 
 如果使用者正在使用 OneDrive 或您將 OneDrive 新增為此部署的一部分，則您有新的可用選項。使用雲端同步處理使用者檔案，OneDrive 的「已知資料夾移動」功能提供的彈性層級，是本機網路式檔案移轉選項所無法提供的。如果在移轉之前啟用，可在新的或重新整理的電腦上提供安全存取，且不需要在您自己的伺服器上建立暫時的移轉存放區。它也可能會對使用者呈現完全透明。
 
-
-  [將 Windows 已知資料夾重新導向並移動至 OneDrive](https://docs.microsoft.com/zh-TW/onedrive/redirect-known-folders) (英文)
+[將 Windows 已知資料夾重新導向並移動至 OneDrive](https://docs.microsoft.com/zh-TW/onedrive/redirect-known-folders) (英文)
 
 如果您已使用 OneDrive，您就會知道，使用者可以選取想要同步處理 OneDrive 或 SharePoint 至裝置的資料夾或位置，但實際上會造成使用者設定負擔。使用「已知資料夾移動」，可針對使用者設定檔中的文件、電腦和圖片資料夾，並在 OneDrive 上進行保護。使用者可以在這種情況下自行執行，或者您可以[使用群組原則設定強制執行](https://docs.microsoft.com/zh-TW/onedrive/use-group-policy?redirectSourcePath=%252fen-us%252farticle%252fUse-Group-Policy-to-control-OneDrive-sync-client-settings-0ecb2cf5-8882-42b3-a6e9-be6bda30899c)。
 
