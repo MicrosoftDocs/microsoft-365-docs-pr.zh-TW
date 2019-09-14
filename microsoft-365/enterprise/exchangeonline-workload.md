@@ -2,7 +2,7 @@
 title: 部署 Microsoft 365 企業版適用於 Exchange Online
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/28/2018
+ms.date: 08/29/2018
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: 逐步說明的規劃、 推行並發揮值的 Exchange Online 中 Microsoft 365 企業版整個組織的程序。
-ms.openlocfilehash: c54c80a955d86028ac473857cbdcb8b1a8f272d3
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a13cb36dd313ef3e6763c6c48720bb2b3e935880
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072283"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981874"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版適用於 Exchange Online
 
@@ -53,21 +53,6 @@ Exchange Online 也具有進階安全性功能，包括反惡意程式碼和反�
 Exchange Online 可以用於不同用途。 您要找出哪些用途對應至您的業務需求，在您的組織、 您的業務團隊、 部門或個別的工作和專案小組的不同層級上。 您應該針對 Exchange Online，以解決您個別及小型群組短暫通訊和排程需求。 
 
 若要查看 Exchange Online 的好處的其中一個方法是檢查如何個人、 小組成員或 v 小組互動今日，然後尋找適當的案例，提供更容易的方法來進行通訊，排程會議，並進行共同作業。 請記住， [Microsoft Teams](teams-workload.md)可能是比較好的選擇，某些共同作業案例。
-
-Exchange Online 達成版 Microsoft 365 企業版的這些策略商務案例：
-
-- 即時或自己運用時間在文件上共同作業，簡化共同建立的程序
-- 管理專案、工作和截止日期，達成業務目標
-- 了解您的工作習慣以提升影響力
-- 與小組溝通以取得最新資訊、要求輸入，並建立凝聚力和共識
-- 在組織內外部儲存及共用檔案，順暢地跨越組織界限工作
-- 隨時隨地在裝置上安全地工作，以達成更多目標，同時維持彈性的工作方式
-- 保護您的資訊，並降低資料遺失風險
-- 偵測並防範外部威脅 
-- 監控、 報告及分析活動，以回應迅速提供組織的安全性
-- 使用增強的隱私權和法規遵循來支援貴組織，以符合一般資料保護規定 (GDPR)
-
-如需詳細資訊，請參閱[使用 Microsoft 365 進行數位轉換](http://transform.microsoft.com) (英文)。 
 
 #### <a name="result"></a>結果
 Exchange Online 案例，能解決貴組織的需求為通訊、 排程及短暫的共同作業清單。

@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商務版, Microsoft 365, SMB, 常見問題集, 常見問題集, 解答, 商務版
 ms.date: 06/08/2018
-ms.openlocfilehash: 9f3f82169dcd4454ffb46b1269422688a107f2b0
-ms.sourcegitcommit: 0c1227dc79b66bab529bf178c5672791369ba471
+ms.openlocfilehash: 3ab99b402bf440cd0c113a87dc453ff388a5befb
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35630582"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982314"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 商務版常見問題集
 
@@ -30,11 +30,11 @@ Microsoft 365 是整合式的解決方案，聚集所有同等級最佳的生產
 * 從 Office (Bookings、 Outlook Customer Manager、 MileIQ<sup>[1](#footnote1)</sup>、 Microsoft 開立發票<sup>[1](#footnote1)</sup>) 的商務應用程式 
  
 **企業級裝置管理與安全性功能** 
-- 協助提供從外部威脅，例如網路釣魚保護 & 複雜的惡意程式碼與 Office 365 進階威脅防護和 Windows Defender 惡意探索防護 
+- 協助保護您免於外部威脅像網路釣魚 & 複雜的惡意程式碼與 Office 365 進階威脅防護和 Windows Defender 惡意探索防護 
 -  協助管理如何敏感資訊的控制項 & 存取和傳輸 （可在夏季，2018年） 的 Office 365 資料外洩防護原則和 Azure 資訊保護計劃 1 
 -  協助保護、 保留和備份您的資料與 Exchange Online 封存  
 -   Office & 的應用程式保護使用 Intune 應用程式防護其他行動裝置 app 
--  適用於 Windows 10 電腦，MacOS & Mobiles 裝置與 Intune 裝置管理裝置管理 
+-  適用於 Windows 10 電腦，Intune 裝置管理 MacOS & Mobiles 裝置的裝置管理 
 -  保護公司資料跨裝置-Windows Defender，always on 和最新的一致安全性設定跨裝置- 
  
  
@@ -72,7 +72,9 @@ Microsoft 365 商務版是專為 IT 複雜需求程度低至中的中小型企�
 現有的傳統型 (Win32) 應用程式相容性應該也很好，大部分現有的應用程式不需要任何變更就能運作。 客戶及其信任的 IT 顧問應該閱讀建議的應用程式測試程序以了解 <a href="https://docs.microsoft.com/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process" target="_blank">Windows 10 相容性</a>，並且檢閱 <a href="https://products.office.com/office-system-requirements#subscription-plans-section" target="_blank">Office 系統需求</a>以確保平順轉換到 Microsoft 365 商務版。 
 
 ### <a name="what-is-windows-10-business"></a>什麼是 Windows 10 商務版？ 
-Windows 10 商務版是一組雲端服務和裝置管理功能，這些功能彌補了 Windows 10 專業版的不足，並且啟用 Microsoft 365 商務版的集中式管理和安全性控制。 Windows 10 商務版也隨附 Windows AutoPilot，這項服務簡化新 Windows 10 電腦的部署。 如果您的裝置授權適用於 Windows 7、8 和 8.1 專業版，Microsoft 365 商務版提供升級至 Windows 10 專業版的好處，而這正是部署 Windows 10 商務版的必要條件。 
+Windows 10 商務版是一組雲端服務和裝置管理功能，這些功能彌補了 Windows 10 專業版的不足，並且啟用 Microsoft 365 商務版的集中式管理和安全性控制。 Windows 10 商務版也隨附 Windows AutoPilot，這項服務簡化新 Windows 10 電腦的部署。 如果您的裝置授權適用於 Windows 7、8 和 8.1 專業版，Microsoft 365 商務版提供升級至 Windows 10 專業版的好處，而這正是部署 Windows 10 商務版的必要條件。
+> [!IMPORTANT]
+> 您必須提供原始的產品金鑰，當您升級時，否則將無法運作升級。 
 
 ### <a name="how-does-microsoft-365-business-help-support-our-bring-your-own-device-byod-policy"></a>Microsoft 365 商務版如何協助支援我們的「攜帶您自己的裝置」(BYOD) 原則？ 
 許多員工寧願使用自己的行動電話或平板電腦來存取個人和工作資訊，而不是依照每一種目的執行多個裝置。 使用個人裝置工作雖然很平常，卻也增加商務資訊遭到不當利用的風險。 許多競爭激烈的行動數據保護方案要求使用者切換到裝置上的特定模式，或使用另一種讓使用者覺得受干擾而避免使用的複雜機制。 

@@ -17,17 +17,22 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 了解如何取得內部資源的存取權，例如線條的商務應用程式、 檔案共用及從 Azure Active Directory 的印表機加入 Windows 10 裝置。
-ms.openlocfilehash: fa3cf640e799feb81ff08c5b7b81d57f707e0152
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ab9049e78617372463b8446dc8f8bc0089d8c117
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072023"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981654"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>存取內部部署 Microsoft 365 商務版中的 Azure AD 加入裝置的資源
 
-任何 Windows 10 裝置加入 Azure Active Directory，將有權存取所有雲端為基礎的資源，例如您的 Office 365 應用程式，並可由 Microsoft 365 商務版保護。 也允許存取內部資源的企業營運一行 (LOB) 應用程式、 檔案共用及印表機，您必須使用[Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect)與 Azure Active Directory 同步您的內部部署 Active Directory。 若要了解更多的[Azure Active Directory 中的裝置管理簡介](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)，請參閱。 
-  
+任何 Windows 10 裝置加入 Azure Active Directory，將有權存取所有雲端為基礎的資源，例如您的 Office 365 應用程式，並可由 Microsoft 365 商務版保護。 也允許存取內部資源的企業營運一行 (LOB) 應用程式、 檔案共用及印表機，您必須使用[Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect)與 Azure Active Directory 同步您的內部部署 Active Directory。 下列影片詳細說明如何設定這以為最常見的案例的步驟。
+ 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
+
+若要了解更多的[Azure Active Directory 中的裝置管理簡介](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)，請參閱。
+下列各節也摘要說明的步驟。
+
 ## <a name="run-azure-ad-connect"></a>執行 Azure AD Connect
 
 完成下列步驟，以讓您的組織已加入 Azure AD 裝置能夠存取內部部署的資源。
@@ -38,7 +43,7 @@ ms.locfileid: "34072023"
     
 3. 一旦 Windows 10 裝置加入 Azure AD，每位使用者應該重新啟動其裝置並使用其 Microsoft 365 商務版認證登入。 所有的裝置現在有以及內部資源的存取權。
     
-沒有額外的步驟，才能存取內部資源的 Azure AD 加入裝置。 這是 Windows 10 中可用的內建功能。 
+沒有額外的步驟，才能取得已加入 Azure AD 裝置的存取內部部署資源。 這是 Windows 10 中可用的內建功能。 
   
 如果您的組織尚未備妥要部署在 Azure AD 加入裝置組態前文所述，請考慮[混合式 Azure AD Joined 裝置組態](manage-windows-devices.md)設定。
   

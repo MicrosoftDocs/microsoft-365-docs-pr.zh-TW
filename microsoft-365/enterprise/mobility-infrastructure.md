@@ -5,7 +5,7 @@ keywords: Microsoft 365，Microsoft 365 企業版，Microsoft 365 文件、 行�
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2018
+ms.date: 08/28/2019
 ms.topic: conceptual
 ms.prod: microsoft-365-enterprise
 ms.service: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 0ee9696d441d61fb41359f6502e6f73988749156
-ms.sourcegitcommit: 12fbb429dba7517220191d90816e235583943fe0
+ms.openlocfilehash: 570b71a5e766738769b537a2601ede7f01bf078c
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33623147"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982804"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>階段 5: Microsoft 365 企業版的行動裝置管理
 
@@ -26,17 +26,7 @@ ms.locfileid: "33623147"
 
 *此功能適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-Microsoft 365 企業版包含可協助您管理裝置和其應用程式]，在您的組織內的功能。 您可以使用 Microsoft Intune，管理 iOS、 Android、 macOS 和 Windows 裝置，來保護貴組織的資源，包括您的資料存取權。 Intune 與 Azure Active Directory (Azure AD) 整合，並會為 Microsoft 365 啟用下列商務案例：
-
-- 在組織內外部儲存及共用檔案，順暢地跨越組織界限工作
-- 隨時隨地在裝置上安全地工作，以達成更多目標，同時維持彈性的工作方式
-- 通過產業驗證符合合規性的全球標準，提供控制和可見度讓您安心
-- 保護您的資訊，並降低資料遺失風險
-- 偵測並防範外部威脅
-- 監控、 報告及分析活動，以回應迅速提供組織的安全性
-- 保護您的使用者和自己的帳戶
-
-如需詳細資訊，請參閱[使用 Microsoft 365 進行數位轉換](http://transform.microsoft.com) (英文)。 
+Microsoft 365 企業版包含可協助您管理裝置和其應用程式]，在您的組織內的功能。 您可以使用 Microsoft Intune，管理 iOS、 Android、 macOS 和 Windows 裝置，來保護貴組織的資源，包括您的資料存取權。 
 
 在這個階段，您可以註冊您的裝置在 Intune 中，並建立並強制執行原則，以協助保護您的資料，安全無虞且受保護。 Intune 文件的整個文件庫[可用線上](https://docs.microsoft.com/intune)。 它也是很好的作法，以在您開始之前檢閱[Intune 部署規劃、 設計和實作指南](https://docs.microsoft.com/intune/planning-guide)。
 
@@ -146,7 +136,7 @@ Intune 可以管理應用程式，包括新增應用程式、 將它們指派給
 Intune 是功能強大的服務，並包含許多功能。 以下是一些您可以使用 Intune 的其他工作：
 
 - 管理軟體和 Windows[裝置](https://docs.microsoft.com/intune/windows-update-for-business-configure)上的更新 & [電腦](https://docs.microsoft.com/intune/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)和[iOS](https://docs.microsoft.com/intune/software-updates-ios)裝置
-- 在 [ [Windows Defender 進階威脅防護 (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection)上開啟 Windows 10 裝置，並使用合規性和條件式存取來保護存取公司資源，例如 SharePoint 或 Exchange Online
+- 在[Microsoft Defender 進階威脅防護 (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection)上開啟 Windows 10 裝置，並使用合規性和條件式存取來保護存取公司資源，例如 SharePoint 或 Exchange Online
 - 使用[注意](https://docs.microsoft.com/intune/lookout-mobile-threat-defense-connector)、 [Symantec](https://docs.microsoft.com/intune/skycure-mobile-threat-defense-connector)及其他行動防禦威脅協力廠商
 - 新增[協力廠商憑證授權單位 (CA)](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview)發行，以及更新憑證
 - [提供相關指導，以您的使用者](https://docs.microsoft.com/intune/end-user-educate)在公司入口網站應用程式，取得應用程式]，等等

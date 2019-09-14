@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 533d51da027441ac199c3e1bfefb42812309a91b
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 57ad4573712f0a407f8576c1a9ef7e19155bb0e1
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390650"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982484"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft 受管理的電腦裝置服務
 
@@ -26,7 +26,7 @@ Microsoft 將提供 Microsoft 受管理的電腦裝置這些服務。 Microsoft 
  --- | ---
 支援 | 支援專員尋求協助將回答直接與裝置功能相關的問題，並診斷裝置會發出。
 清查 | Microsoft 受管理的桌上型電腦系統管理入口網站中的詳細目錄] 與 [狀態追蹤中追蹤所有的裝置。
-韌體 / 驅動程式更新 | 部署並監視的相容性的 Microsoft 韌體/驅動程式更新。 
+韌體 / 驅動程式更新 | 根據預設，Microsoft 受管理的電腦裝置收到韌體和驅動程式從 Windows Update 的更新。 並非所有的硬體協力廠商部署透過 Windows Update; 其更新您可以分別要求這些更新。
 [附屬應用程式 | 涵蓋附屬應用程式以您的裝置隨附的相同的服務，做為裝置本身，但保固字詞可能會有所不同。 請參閱選擇選取您的裝置時的擔保條款。 
 裝置設定    | 裝置會預先設定與目前的 Windows 版本，並接收其應用程式和透過雲端的設定。 
 

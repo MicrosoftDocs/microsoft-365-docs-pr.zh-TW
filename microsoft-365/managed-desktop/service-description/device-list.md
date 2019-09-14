@@ -5,12 +5,12 @@ keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: f16989960d999e65ad904fd11894d5fe8bca98f0
-ms.sourcegitcommit: 1bd18fb00aad37bad8d1411a916f444e1d1a38cf
+ms.openlocfilehash: 83e7f227639c9efa69bb634ad91e3ff4f0821cd8
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756895"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982494"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的電腦裝置 
 
@@ -33,7 +33,8 @@ Microsoft 受管理電腦定期評估要包含在服務中的裝置。 本主題
 
 | Model    | 最小的規格  | 其他需求    | 封存資料   | 退休日期   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Dell 緯度 5490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-14-5490-laptop?cid=265768&st=dell%2Blatitude%2B5490&VEN1=yKFOheND,73873544881479,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B5490&lid=5980636&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB / Intel i5 中 / 8 GB RAM | 所需的紅外線相機 | 2020 年 1 月 9 日，  | 2023 1 月 9 日，  |
+|[Dell 緯度 5300/5400/5500](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-5400-business-laptop/spd/latitude-14-5400-laptop) | 256 GB / Intel i5 中 / 8 GB RAM | 所需的紅外線相機 | 2021 年 6 月 1 日  | 2024 年 6 月 1 日  |
+[Dell 緯度 5490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-14-5490-laptop?cid=265768&st=dell%2Blatitude%2B5490&VEN1=yKFOheND,73873544881479,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B5490&lid=5980636&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB / Intel i5 中 / 8 GB RAM | 所需的紅外線相機 | 2020 年 1 月 9 日，  | 2023 1 月 9 日，  |
 [Dell 緯度 7390 7390 2-1 / 7490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-13-7390-2-in-1-laptop?cid=265768&st=dell%2Blatitude%2B7390%2B2-in-1&VEN1=bRXisqe7,73255069985268,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B7390%2B2-in-1&lid=5981275&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297)   | 256 GB / Intel i5 中 / 8 GB RAM   | 所需的紅外線相機 | 2020 年 1 月 9 日， | 2023 1 月 9 日， |
 |[Dell 精確度 3530](https://www.dell.com/en-us/work/shop/cty/pdp/spd/precision-15-3530-laptop?cid=265720&st=dell%2Bprecision%2B3530&VEN1=ihEzXzFB,73667408703289,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Bprecision%2B3530&lid=42076560130&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB / Intel i5 中 / 8 GB RAM | 所需的紅外線相機 | 2020 年 22，  | 2023 月 22日， |
 | [HP 精銳 x2 1013 版 G3](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features) | 256 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS03AV，所需的紅外線相機 | 14，2020 | 2023 5 月 14日， |

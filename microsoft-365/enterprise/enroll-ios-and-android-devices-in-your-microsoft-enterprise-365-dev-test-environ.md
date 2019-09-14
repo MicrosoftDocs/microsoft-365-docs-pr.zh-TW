@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 使用此測試實驗室指南來註冊 Microsoft 365 測試環境中的裝置，並從遠端管理。
-ms.openlocfilehash: b72298df3dbc470358f8cd87e5ca249999812516
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 0dde7acd10ad78327adb4862346639e05a276b4e
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073713"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981994"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>註冊 iOS 和 Android 裝置，Microsoft 365 企業版測試環境中
 
@@ -80,4 +80,3 @@ Microsoft Intune 提供遠端鎖定和密碼重設功能。 如果有人遺失�
   
 [部署 Microsoft 365 企業版](deploy-microsoft-365-enterprise.md)
 
-[Enterprise Mobility + Security (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)

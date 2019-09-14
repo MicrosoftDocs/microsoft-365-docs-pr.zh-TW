@@ -8,16 +8,36 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 7d09e2fbf9d21497aa9bd43d308978979a6c73c6
-ms.sourcegitcommit: c6ee468b4aeb3684d332cb79f5cd121f60f32d3e
+ms.openlocfilehash: a9755d1caae20694f1198dec0bf3e659bccee8ee
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35795619"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982604"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 受管理電腦文件的變更歷程記錄
 
 本主題將列出[Microsoft 受管理電腦文件](index.yml)中的最新及更新主題。
+
+## <a name="september-2019"></a>2019 年 9 月
+新的或變更主題 | 描述
+--- | ---
+[Microsoft 的必要條件受管理的電腦](get-ready/prerequisites.md) | 更新的主題
+[Microsoft 受管理的電腦裝置上設定](get-started/set-up-devices.md) | 新的主題
+[自行註冊新裝置](get-started/register-devices-self.md) | 更新的主題
+[自行註冊現有裝置](get-started/register-reused-devices-self.md) | 新的主題
+[Microsoft 受管理電腦中更新的處理方式](service-description/updates.md) | 更新的主題
+
+## <a name="august-2019"></a>2019 年 8 月
+新的或變更主題 | 描述
+--- | ---
+[使用 Microsoft 諮詢服務](get-ready/apps-mcs.md) | 更新的主題
+[Microsoft 受管理電腦的系統管理員支援](working-with-managed-desktop/admin-support.md) | 更新的主題
+[取得使用者的說明](working-with-managed-desktop/end-user-support.md) | 更新的主題
+[Microsoft 的必要條件受管理的電腦](get-ready/prerequisites.md) | 更新的主題
+[Microsoft 受管理電腦技術](intro/technologies.md) | 更新的主題
+
+
 
 ## <a name="july-2019"></a>2019 年 7 月
 新的或變更主題 | 描述
@@ -46,7 +66,7 @@ ms.locfileid: "35795619"
 [對應磁碟機準備 Microsoft 受管理的電腦](get-ready/mapped-drives.md) | 新的主題
 [準備 Microsoft 受管理的電腦上的憑證和網路設定檔](get-ready/certs-wifi-lan.md) | 新的主題
 [順序 Microsoft 受管理的電腦裝置](get-started/devices.md) | 更新的主題
-
+[取得使用者的說明](working-with-managed-desktop/end-user-support.md)
 
 ## <a name="april-2019"></a>2019 年 4 月
 新的或變更主題 | 描述

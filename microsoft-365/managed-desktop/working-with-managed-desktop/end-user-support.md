@@ -5,14 +5,13 @@ keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 11/28/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1e98ef5a7c800ed3fb7fe1b7355e535ed3576c1e
-ms.sourcegitcommit: dd0d99d2ff930cd1777d6704f4d88a70adc9ca74
+ms.openlocfilehash: 0af9134880f018cf814715a8ca3a3b7dc55c5fcd
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35853162"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982394"
 ---
 # <a name="getting-help-for-end-users"></a>取得使用者的說明
 
@@ -46,3 +45,4 @@ ms.locfileid: "35853162"
 ## <a name="additional-resources"></a>其他資源
 - [系統管理員支援 Microsoft 受管理的電腦](admin-support.md)。 
 - [Microsoft 受管理電腦的支援](../service-description/support.md)。
+- 如果您已訂閱 Microsoft 受管理的電腦，您可以找到詳細程序、 程序流程、 工作指示和常見問題集 Microsoft 受管理電腦系統管理員指南 》 中在**線上資源**] 區段中的[Microsoft 受管理電腦系統管理員入口網站](https://aka.ms/mwaasportal)。

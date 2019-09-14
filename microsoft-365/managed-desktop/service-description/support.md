@@ -5,14 +5,13 @@ keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 11/7/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 69e8463ce6bfffcd2ee5e8dd0f7f724910b13802
-ms.sourcegitcommit: d137cb1bd67a79d8af84357dc156824830d35aa7
+ms.openlocfilehash: 6c30f9e9a9f45ac8a68c285f4c594b238874f768
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "35924876"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982504"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的支援
 
@@ -34,7 +33,7 @@ Microsoft 受管理的電腦支援包括：
 支援的產品：
 
 - Windows 10 與 Microsoft Defender 進階威脅防護 
-- Office 365 套件的一部分： Outlook、 Word、 PowerPoint、 Excel、 Skype for Business 用戶端，Microsoft Teams 
+- 這些 Office 365 專業增強版的應用程式： Outlook、 Word、 PowerPoint、 Excel、 Skype for Business 用戶端，Microsoft Teams 
 - 商務用 Microsoft Store 
 - OneDrive for Business 用戶端 
 
@@ -43,7 +42,7 @@ Microsoft 受管理的電腦支援包括：
 - 目前: 「 北美地區 」、 加拿大 （不含魁北克）、 英國、 澳洲及紐西蘭僅 (24 x 7 x 365) 
 - 英文的電話和聊天交談與客戶的唯一支援的語言 
 - 我們會合作對象]，而不取代，公司技術服務人員;營運 (LOB) 應用程式、 網路資源等仍由技術服務人員處理 
-- Microsoft 受管理的裝置位於測試群組和非-Microsoft 受管理的電腦裝置會超出範圍 
+- "Test"群組中的 Microsoft 受管理的電腦裝置和裝置不屬於 Microsoft 受管理的電腦會超出範圍 
 
 
 ## <a name="related-topics"></a>相關主題
