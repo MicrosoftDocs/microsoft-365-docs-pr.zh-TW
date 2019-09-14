@@ -2,7 +2,7 @@
 title: 部署 Microsoft 365 企業版的 Microsoft Teams
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 08/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 推行並發揮 Microsoft 365 企業版 Microsoft Teams 在組織中的價值，規劃這整個程序的步驟。
-ms.openlocfilehash: 1e7519817a10eb4aa710dff2d4c74c9390c9f6f6
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: fd2e72ddb0dfbcc437d30dee16241fbccc81b05b
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072853"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982614"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版的 Microsoft Teams
 
@@ -50,14 +50,6 @@ Teams 可以用於許多不同的用途。您必須決定哪些用途對應到�
 您應該將 Teams 的目標放在處理進展快速且高度共同作業的小組，他們密切合作並需要電子郵件和 Exchange Online 以外的更多功能。像是具有歷程記錄的即時群組聊天、用通用易找的位置儲存檔案和備忘稿。 
 
 看見 Teams 優點的其中一個方法是查看小組或虛擬小組今天的互動，然後找出可取代互動並提供更輕鬆共同作業方式的適當 Teams 案例，再提供額外的功能。
-
-Teams 達成了 Microsoft 365 企業版的這些策略商務案例：
-
-- 與小組溝通以取得最新資訊、要求輸入，並建立凝聚力和共識
-- 與第一線員工互動，啟用數位轉型
-- 了解您的工作習慣以提升影響力
-
-如需詳細資訊，請參閱[使用 Microsoft 365 進行數位轉換](http://transform.microsoft.com) (英文)。 
 
 #### <a name="microsoft-teams-for-highly-regulated-data"></a>適用於高管制資料的 Microsoft Teams
 
@@ -99,7 +91,7 @@ Teams 達成了 Microsoft 365 企業版的這些策略商務案例：
 - [管理使用者對 Microsoft Teams 的存取](https://docs.microsoft.com/MicrosoftTeams/user-access)
 - [取得 Microsoft Teams 用戶端](https://docs.microsoft.com/MicrosoftTeams/get-clients)
 - [開啟 Office 365 組織中的 Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/office-365-set-up)
-- [管理 Office 365 組織中的 Microsoft Teams 功能](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)
+- [管理 Office 365 組織中的 Microsoft Teams 功能](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
 
 #### <a name="result"></a>結果
 

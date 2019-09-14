@@ -3,7 +3,7 @@ title: 第4 階段：Office 365 專業增強版
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 08/29/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 企業版 Office 365 專業增強版的部署步驟。
-ms.openlocfilehash: cf698e4dbee17a811a4d2bc01d08d4d97d1961c1
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f20435edc4cdc675d0308774eb493a67723054f4
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074173"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982764"
 ---
 # <a name="phase-4-office-365-proplus"></a>第4 階段：Office 365 專業增強版
 
@@ -29,24 +29,6 @@ ms.locfileid: "34074173"
 Microsoft 365 企業版包含 Office 365 專業增強版，是 Office 的訂閱版本。和 Office 2016 一樣，Office 365 專業增強版包含所有 Office 應用程式，這些應用程式直接安裝在用戶端裝置上。但不同於 Office 2016，Office 365 專業增強版會定期更新新功能，而且採用使用者授權模型，使用者最多可以在 5 個裝置上安裝 Office。如需詳細資訊，請參閱[有關企業中的 Office 365 專業增強版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
 
 您在這個階段將 Office 365 專業增強版部署到用戶端裝置，這是 Microsoft 365 企業版的一部分。除了本指引，我們建議您使用 [Microsoft Fastrack](https://fasttrack.microsoft.com/office) 來進行部署。 
-
-Office 365 專業增強版達成了 Microsoft 365 企業版的這些策略商務案例：
-
-- 即時或自己運用時間在文件上共同作業，簡化共同建立的程序
-- 運用集體知識和專業技能，讓組織中的使用者可探索、共用及改善檔案、資訊和想法
-- 讓使用者能夠轉換商務程序並提高效率
-- 管理專案、工作和截止日期，達成業務目標
-- 使用智慧型協助進行設計、撰寫、內容探索等，有助於讓您的工作成績更亮眼
-- 探索深入解析、分析資料，並共用您的發現，協助每個人做出明智決策
-- 與小組溝通以取得最新資訊、要求輸入，並建立凝聚力和共識
-- 與全球的合作夥伴、同事及客戶聯絡，以各種規模的群組進行排定與臨時的通話及線上會議
-- 在組織內外部儲存及共用檔案，順暢地跨越組織界限工作
-- 隨時隨地在裝置上安全地工作，以達成更多目標，同時維持彈性的工作方式
-- 通過產業驗證符合合規性的全球標準，提供控制和可見度讓您安心
-- 保護您的資訊，並降低資料遺失風險
-- 為桌面軟體與裝置取得並保持在目前最新狀態，同時降低安全性風險並將 IT 部門的效率最大化
-
-如需詳細資訊，請參閱[使用 Microsoft 365 進行數位轉換](http://transform.microsoft.com) (英文)。 
 
 如果您已部署 Office 365 專業增強版，請參閱此階段的[允出準則](office365proplus-exit-criteria.md)，以確保其符合 Microsoft 365 企業版的必要條件。
 
@@ -87,7 +69,7 @@ Office 365 專業增強版達成了 Microsoft 365 企業版的這些策略商務
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何執行 Microsoft 365 企業版
 
-了解 Microsoft 的專家如何[部署和管理 Office 365 專業增強版的更新](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR7)。
+了解 Microsoft 的專家如何[部署和管理 Office 365 專業增強版的更新](https://www.microsoft.com/zh-TW/itshowcase/deploying-and-managing-microsoft-365#primaryR7)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 如何執行 Microsoft 365 企業版
 

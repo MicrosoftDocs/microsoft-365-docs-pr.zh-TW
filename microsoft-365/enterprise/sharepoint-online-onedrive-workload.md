@@ -2,7 +2,7 @@
 title: 部署適用於 Microsoft 365 企業版的 SharePoint Online 和商務用 OneDrive
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2018
+ms.date: 08/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 推行並發揮 Microsoft 365 企業版 SharePoint Online 在組織中的價值，規劃這整個程序的步驟。
-ms.openlocfilehash: fab2a368a936fc3ffb4a56a9dc81ba6b3e0b0910
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 9ceadbb0268d3a2aa82309d01933a8bd05429188
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074113"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981764"
 ---
 # <a name="deploy-sharepoint-online-and-onedrive-for-business-for-microsoft-365-enterprise"></a>部署適用於 Microsoft 365 企業版的 SharePoint Online 和商務用 OneDrive
 
@@ -67,23 +67,6 @@ Sharepoint 可用於不同的用途。您必須判斷哪些用途是對應到您
 請參閱＜[SharePoint Online 管理](https://docs.microsoft.com/sharepoint/sharepoint-online)＞，取得如何依您需求設定 SharePoint Online。
 
 要查看 SharePoint Online 優點的其中一個方法，是檢查個人、小組、部門或整個組織現今互動的方式，並找出適當的案例，提供更輕鬆的方法來儲存及共用檔案共同作業。請注意，[Microsoft Teams](teams-workload.md) 對您部分的案例而言可能是較好的選擇。
-
-SharePoint Online 達成了 Microsoft 365 企業版的這些策略商務案例：
-
-- 與小組溝通以取得最新資訊、要求輸入，並建立凝聚力和共識
-- 充分利用集體知識
-- 讓使用者能夠轉換商務程序
-- 塑造公司的文化
-- 管理專案、工作和截止日期，達成業務目標
-- 與第一線員工互動，啟用數位轉型
-- 了解您的工作習慣以提升影響力
-- 與合作夥伴、同事和客戶通訊
-- 在組織內外部儲存及共用檔案，順暢地跨越組織界限工作
-- 隨時隨地在裝置上安全地工作，以達成更多目標，同時維持彈性的工作方式
-- 保護您的資訊，並降低資料遺失風險
-- 使用增強的隱私權和法規遵循來支援貴組織，以符合一般資料保護規定 (GDPR)
-
-如需詳細資訊，請參閱[使用 Microsoft 365 進行數位轉換](http://transform.microsoft.com) (英文)。 
 
 #### <a name="sharepoint-online-site-for-highly-regulated-data"></a>適用於高管制資料的 SharePoint Online 網站
 
