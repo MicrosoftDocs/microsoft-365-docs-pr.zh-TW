@@ -45,6 +45,6 @@
 <a name="crit-networking-step5"></a>
 ### <a name="optional-your-clients-and-office-365-applications-are-configured-for-optimal-performance"></a>選用：設定用戶端和 Office 365 應用程式達到最佳效能
 
-在用戶端裝置上有針對 Exchange Online、商務用 Skype Online、SharePoint Online、Project Online 服務的最佳傳輸控制通訊協定 (TCP) 設定。
+您已在用戶端裝置上針對 Exchange Online、商務用 Skype Online、SharePoint Online 和 Project Online 服務最佳化傳輸控制通訊協定 (TCP) 設定。
 
 如有需要，[步驟 5](../networking-optimize-tcp-performance.md) 可協助您使用此選項。
