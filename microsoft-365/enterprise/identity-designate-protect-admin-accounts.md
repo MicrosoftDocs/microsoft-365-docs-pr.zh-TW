@@ -3,7 +3,7 @@ title: 步驟 2：保護您的特殊權限身分識別
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/01/2018
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並設定您的系統管理員帳戶的保護上限。
-ms.openlocfilehash: 8a1d232ffc0242766d79b2e4884582f3b5524d22
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: b9c645d597dfeb2bdc42e2b0b7615252dc1f5ecb
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074053"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981904"
 ---
 # <a name="step-2-secure-your-privileged-identities"></a>步驟 2：保護您的特殊權限身分識別
 
@@ -37,28 +37,27 @@ ms.locfileid: "34074053"
 如需專用的全域系統管理員帳戶，您也必須：
 
 1. 在測試使用者帳戶上測試根據使用者帳戶或條件式以存取為基礎的多重要素驗證 (MFA) 設定，以確保 MFA 正確且如預測般運作。MFA 需要第二種形式的驗證 (例如將驗證碼傳送給智慧型手機)。
-2. 為每一個專用的 Office 365 全域系統管理員帳戶設定 MFA ，並使用貴組織中可供使用的最強型次要驗證。如需詳細資訊，請參閱[多重要素驗證](identity-multi-factor-authentication.md#identity-mfa)。
-2. 使用條件訪問策略來要求全域系統管理員帳戶的 MFA。如需詳細資訊，請參閱[保護系統管理員帳戶](identity-access-prerequisites.md#protecting-administrator-accounts)。
+2. 為您的全域系統管理員帳戶啟用**基準原則：管理員需要進行 MFA** 條件式存取原則，並使用組織中可用的最嚴密次要驗證形式。 如需詳細資訊，請參閱[多重要素驗證](identity-access-prerequisites.md#protecting-administrator-accounts)。
 
-請參閱[保護您的 Office 365 全域系統管理員帳戶](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)以了解設定的相關詳細資訊。
+如需進一步的保護，請參閱[保護您的 Office 365 全域系統管理員帳戶](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations)。
 
 > [!Note]
 > 組織應使用純雲端的身分識別來建立特殊權限的帳戶 (例如全域系統管理員)，以供緊急情況使用 (例如網路攻擊)。如需詳細資訊，請參閱[管理 Azure AD 中的緊急存取系統管理帳戶](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access)。
 
 這一節的結果如下：
 
-- 您的訂閱中唯一擁有全域系統管理員角色的使用者帳戶，就是新建立的一組專用全域系統管理員帳戶。 使用以下 Azure Active Directory PowerShell for Graph 命令驗證這點： 
+- 您的訂閱中唯一擁有全域系統管理員角色的使用者帳戶，就是專用全域系統管理員帳戶。 使用以下 Azure Active Directory PowerShell for Graph 命令驗證這點： 
   ```
   Get-AzureADDirectoryRole | Where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
-- 管理您訂閱的所有其他日常使用者帳戶擁有指派的系統管理員角色，這些角色會與他們的工作職責相關聯。
+- 管理您訂閱服務的所有其他使用者帳戶擁有指派的系統管理員角色，這些角色會與他們的工作職責相關聯。
 
 > [!Note]
 > 請參閱[連線到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)，以取得安裝 Azure Active Directory PowerShell for Graph 模組及登入的指示。
 
 |||
 |:-------|:-----|
-|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：保護全域系統管理員帳戶](protect-global-administrator-accounts-microsoft-365-test-environment.md) |
+|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  若要在測試實驗室環境中練習此組態，請參閱[保護全域系統管理員帳戶測試實驗室指南](protect-global-administrator-accounts-microsoft-365-test-environment.md)。 |
 |||
 
 作為過渡期的檢查點，您可以看到這一節的[允出準則](identity-exit-criteria.md#crit-identity-global-admin)。

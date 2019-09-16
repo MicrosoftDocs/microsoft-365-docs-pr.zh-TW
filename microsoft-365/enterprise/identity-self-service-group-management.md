@@ -3,7 +3,7 @@ title: 步驟6：使用群組更輕鬆地進行管理
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解及設定 Azure AD 自助群組管理。
-ms.openlocfilehash: 67c3a0e45fa253bdaedead03ac1137422ee0f8de
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 97077f5e047f55ea6bf6e532d25d25f4682ff179
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073603"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981774"
 ---
 # <a name="step-6-use-groups-for-easier-management"></a>步驟6：使用群組更輕鬆地進行管理
 
@@ -74,14 +74,11 @@ ms.locfileid: "34073603"
 
 *此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-在這一節中，您將在 Azure AD 中設定安全性群組，以自動將一組訂閱中的授權指派給該群組的所有成員。 這稱為*群組型授權*。 如果在群組中新增或移除使用者帳戶，則將自動指派或從使用者帳戶中移除群組訂閱的授權。
+在這一節中，您將在 Azure AD 中設定安全性群組，以自動將一組訂閱中的授權指派給該群組的所有成員。 這稱為*群組型授權*。 如果在群組中新增或移除使用者帳戶，則將自動指派或從使用者帳戶中取消指派群組訂閱的授權。
 
-針對 Microsoft 365 企業版，您將會設定 Azure AD 安全性群組來指派這些授權：
+針對 Microsoft 365 企業版，您將設定 Azure AD 安全性群組，以指派適當的 Microsoft 365 企業版授權。
 
-- Office 365 企業版 E3 或 E5
-- Enterprise Mobility + Security (EMS) E3 或 E5
-
-使用您在步驟 2 中找出的群組，尋找包含帳戶清單的群組，其中該群組中的所有使用者必須同時擁有 Office 365 和 EMS 授權。請確定您擁有有足夠的授權可供所有群組成員使用。如果您的授權已用完，在授權可供使用前將不會指派新使用者。
+請確定您有足夠的授權可供所有群組成員使用。 如果您用完了授權，除非有授權可供使用，否則將不會對新使用者指派授權。
 
 >[!Note]
 >您不應為包含 Azure 企業對企業 (B2B) 帳戶的群組設定*以群組為基礎的授權*。
@@ -103,6 +100,6 @@ ms.locfileid: "34073603"
 
 作為過渡期的檢查點，您可以看到這一節的[允出準則](identity-exit-criteria.md#crit-identity-group-license)。
 
-## <a name="next-step"></a>下一步
-
-[識別基礎結構允出準則](identity-exit-criteria.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step7.png)| [設定身分識別治理](identity-governance.md) |

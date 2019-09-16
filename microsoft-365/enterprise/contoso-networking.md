@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 網路基礎結構，以及如何使用其 SD-WAN 技術，以取得與 Microsoft 365 企業版雲端式服務的最佳化效能網路連線。
-ms.openlocfilehash: 4a2b9f2172def2c62821536e456b2194795158c4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 8eb6f17ffd7974169c0131fa81f05939a54854e1
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072553"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982104"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation 的網路
 
@@ -50,7 +50,7 @@ ms.locfileid: "34072553"
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>使用 SD-WAN 以取得與 Microsoft 的最佳化網路連線
 
-Contoso 遵循 [Office 365 網路連線原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) (機器翻譯)：
+Contoso 遵循 [Office 365 網路連線原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)，以便：
 
 1. 識別並區分 Office 365 網路流量
 2. 在當地輸出網路連線

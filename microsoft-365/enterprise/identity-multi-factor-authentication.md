@@ -3,7 +3,7 @@ title: 步驟 4：設定安全的使用者驗證
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/17/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並設定使用者帳戶的多重要素驗證。
-ms.openlocfilehash: 73e884802329765fd6a89cfb7d0e04116c17968c
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 2a4a0926a08ae8279523219a2d7a2386ea0c6742
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072083"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981844"
 ---
 # <a name="step-4-configure-secure-user-authentication"></a>步驟 4：設定安全的使用者驗證
 
@@ -36,7 +36,7 @@ ms.locfileid: "34072083"
 - 不容易遭到偽造或重複的個人和受信任裝置 (例如智慧型手機)。
 - 生物識別屬性 (例如指紋)。
 
-您將啟用 MFA，並以每個使用者帳戶為基礎設定次要驗證方法。請務必讓使用者知道 MFA 已啟用，他們就了解要求 (例如強制使用智慧型手機登入) 並能順利登入。
+您將啟用 MFA 並使用[條件式存取原則](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access)來設定次要驗證方法，這會允許您使用 Azure Active Directory (Azure AD) 群組來將 MFA 向指定的一組使用者 (例如試驗使用者、地理位置或部門) 推出。 請務必讓使用者知道即將啟用 MFA，使得他們了解需求 (例如強制使用智慧型手機登入) 並能順利登入。 
 
 如需詳細資訊，請參閱[規劃多重要素驗證](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)。
 
@@ -51,7 +51,22 @@ ms.locfileid: "34072083"
 
 作為過渡期的檢查點，您可以看到這一節的[允出準則](identity-exit-criteria.md#crit-identity-mfa)。
 
+<a name="identity-password-prot"></a>
+## <a name="prevent-bad-passwords"></a>防止不正確的密碼
 
+*此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
+
+若要防止使用者建立容易猜測的密碼，請使用 Azure AD 密碼保護，此功能會同時使用全域禁止密碼清單和您指定的選用自訂禁止密碼清單。 例如，您可以指定組織的特定字詞，例如：
+
+- 品牌名稱
+- 產品名稱
+- 位置 (例如公司總部)
+- 公司的特定內部條款
+- 具有特定公司意義的縮寫。
+
+您可以在[雲端](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)和[內部部署 Active Directory 網域服務 (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises) 中禁止使用不良密碼。
+
+作為過渡期的檢查點，您可以看到這一節的[允出準則](identity-exit-criteria.md#crit-password-prot)。
 
 <a name="identity-ident-prot"></a>
 ## <a name="protect-against-credential-compromise"></a>防護認證洩露
@@ -64,8 +79,8 @@ ms.locfileid: "34072083"
 
 |||
 |:---------|:---------|
-|判斷並處理組織身分識別中潛在的弱點|Azure AD 使用機器學習來偵測異常和可疑活動，例如登入和登入後的活動。Identity Protection 可使用此資料產生報告和警訊，協助您評估問題及採取行動。|
-|偵測與組織身分識別相關的可疑活動，並自動進行回應處理|您可以設定風險原則，在達到指定的風險層級時，會自動回應偵測到的問題。由 Azure Active Directory 和 Enterprise Mobility + Security (EMS) 提供的這些原則，以及其他條件式存取控制，可自動封鎖存取或採取修正動作，包括密碼重設和要求後續登入的多重要素驗證。|
+|判斷並處理組織身分識別中潛在的弱點|Azure AD 使用機器學習來偵測異常和可疑活動，例如登入和登入後的活動。 Azure AD Identity Protection 可使用此資料來產生報告和警示，協助您評估問題及採取行動。|
+|偵測與組織身分識別相關的可疑活動，並自動進行回應處理|您可以設定以風險為基礎的原則，當達到指定風險層級時自動回應偵測到的問題。 除了由 Azure AD 和 Microsoft Intune 提供的其他條件式存取控制項之外，這些原則還可以自動封鎖存取權，或採取更正動作，包括密碼重設以及對後續登入要求多重要素驗證。|
 |調查可疑事件，並使用系統管理動作加以解決|您可以使用安全性事件的相關資訊來調查風險事件。基本工作流程可用於追蹤調查及啟動修復動作，例如密碼重設。|
 
 請參閱 [Azure AD Identity Protection 的相關詳細資訊](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)。
@@ -106,8 +121,6 @@ ms.locfileid: "34072083"
 如需報告以及如何存取他們的詳細資訊，請參閱 [Azure Active Directory 報告](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-azure-portal)。
 
 在此步驟的結果中，您將了解這些報告以及如何使用這些報告來深入了解用於規劃與安全性目的之 Azure AD 事件與活動。
-
-
 
 ## <a name="next-step"></a>下一步
 

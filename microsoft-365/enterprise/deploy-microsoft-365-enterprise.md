@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用來在組織中部署 Microsoft 365 企業版的資源。
-ms.openlocfilehash: 2f527c8d3afe2d3d0690661c6f01efefd5b0d435
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: 896ac2ec0f9964344a416d583858e90a1a59e8fd
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297903"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982066"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版
 
@@ -87,13 +87,13 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
 ## <a name="transition-your-entire-organization"></a>轉換您的整個組織
 
-若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請下載[轉換海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf)。
+若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請參閱[將您的組織轉換至 Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
 
-![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+[![將您的組織轉換至 Microsoft 365 海報](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 這份雙頁海報可讓您快速清查您現有的基礎結構，並取得移至 Microsoft 365 企業版中對應產品或服務的指導方針。 包含 Windows 和 Office 產品和其他基礎結構與安全性元素，例如裝置管理、身分識別以及資訊和威脅防護。
 
-您可以以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
+您可以[下載此轉換海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
 ## <a name="how-did-others-do-it"></a>其他人怎麼執行此操作？
 
@@ -115,7 +115,7 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
 同時，智慧安全性功能和產品整合有助於簡化管理需求，並將整個 IT 生命週期的總擁有成本降到最低。 
 
-了解核心服務工程和運作 (以前稱為 Microsoft IT) [如何計劃和部署基礎](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365)，以支援在安全環境中釋放創造力和促進團隊合作的應用程式和服務。
+了解核心服務工程和運作 (以前稱為 Microsoft IT) [如何計劃和部署基礎](https://www.microsoft.com/zh-TW/itshowcase/deploying-and-managing-microsoft-365)，以支援在安全環境中釋放創造力和促進團隊合作的應用程式和服務。
 
 > [!Note]
 > 此網頁只提供英文版。

@@ -3,7 +3,7 @@ title: 步驟 5：簡化使用者的存取權
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解及設定 Azure AD 的自助密碼重設 (SSPR)。
-ms.openlocfilehash: b57291aabf1b51e7866dba10ba50eacc27291a2a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ec81b2931fd4ad599ffcf983ea8a7d764c56404a
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073723"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981794"
 ---
 # <a name="step-5-simplify-access-for-users"></a>步驟 5：簡化使用者的存取權
 
@@ -32,7 +32,7 @@ ms.locfileid: "34073723"
 
 在這一節中，您會允許使用者透過 Azure Active Directory (Azure AD) 重設其密碼，然後複製到本機 Active Directory 網域服務 (AD DS)。 這個程序也稱為密碼回寫。 使用密碼回寫，使用者不需要透過使用者帳戶與其屬性儲存在其中的內部部署 AD DS 來更新其密碼。 對於沒有內部部署網路遠端存取連線的漫遊或遠端使用者而言，這非常有用。
 
-為了充分利用 Identity Protection 功能 (例如當偵測到高風險的帳戶洩露時，要求使用者變更其內部部署密碼)，需要密碼回寫。
+為了充分利用 Azure AD Identity Protection 功能 (例如當偵測到高風險的帳戶洩露時，要求使用者變更其內部部署密碼)，需要密碼回寫。
 
 如需詳細資訊和設定指示，請參閱 [Azure AD SSPR 密碼回寫](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback)。
 
@@ -92,20 +92,11 @@ ms.locfileid: "34073723"
 
 使用 Microsoft 365 企業版，您可以自訂登入和存取面板頁面的外觀，讓頁面中出現公司的標誌、色彩配置和自訂的使用者資訊。 
 
-自訂之前**，當使用者嘗試從裝置登入時，會看見類似下列範例的 Office 365 登入頁面。
-
-![自訂之前的 Office 365 登入頁面範例](./media/identity-customize-office-365-sign-in/id-step01-sign-in-before.png)
-
-自訂之後**，同一位 Contoso 公司使用者會看到以下頁面。
-
-![自訂之後的 Office 365 登入頁面範例](./media/identity-customize-office-365-sign-in/id-step01-sign-in-after.png)
-
 如需詳細資訊，請參閱[將公司商標新增至 Office 365 登入頁面](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page)。
 
 如需設定的指示，請參閱[將公司商標新增至登入和存取面板頁面](http://aka.ms/aadpaddbranding)。
 
 作為過渡期的檢查點，您可以看到這一節的[允出準則](identity-exit-criteria.md#crit-identity-custom-sign-in)。
-
 
 ## <a name="next-step"></a>下一步
 

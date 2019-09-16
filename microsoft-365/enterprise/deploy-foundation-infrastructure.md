@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解貴組織中部署 Microsoft 365 企業版底層基礎結構的主要階段，也稱為核心部署。
-ms.openlocfilehash: 0b54225d3ce9043564788e28ddd88426dae611e9
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: c66a328becf03a179b3ef0526c3110783904e741
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297913"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982094"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 企業版底層基礎結構
 
@@ -60,7 +60,7 @@ ms.locfileid: "36297913"
 
 ## <a name="at-a-glance"></a>概覽
 
-[Microsoft 365 企業版底層基礎結構海報](http://aka.ms/m365efoundinfraposter)是可讓您檢視每個階段的中心位置：
+[Microsoft 365 企業版底層基礎結構海報](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)是可讓您檢視每個階段的中心位置：
 
 - 系統管理員和使用者的階段整體目標
 - 服務、功能及工具
@@ -69,7 +69,7 @@ ms.locfileid: "36297913"
 - 新使用者的上線程序
 - 如何監控及更新
 
-![](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)
+[![Microsoft 365 企業版底層基礎結構海報的影像](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
 若要下載此海報的副本，請按一下[這裡](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)。
 

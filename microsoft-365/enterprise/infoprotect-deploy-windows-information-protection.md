@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 365 中的 Windows 資訊保護並且進行部署。
-ms.openlocfilehash: e32b09c20e86ff927748f7aedd8b8d769e07916e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a89d61367d3e07cabff0576f16fa359a06dc1ecc
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073556"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981814"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>步驟 4： 設定 Windows 資訊保護
 
@@ -30,7 +30,7 @@ ms.locfileid: "34073556"
 
 Windows 資訊保護 (WIP) 可協助保護 Windows 10 裝置上的此類資料外洩。 如需詳細資訊，請參閱[使用 WIP 保護您的企業資料](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) (機器翻譯)。
 
-在 Microsoft 365 企業版中，WIP 是 Windows 10 企業版和 Microsoft Intune 的組合，隨附於您的訂閱中的 Enterprise Mobility + Security (EMS)。 
+在 Microsoft 365 企業版中，WIP 是 Windows 10 企業版和 Microsoft Intune 的組合，隨附於您的訂閱。 
 
 若要在貴組織中使用 Microsoft 365 企業版部署 WIP：
 
@@ -46,7 +46,6 @@ Windows 資訊保護 (WIP) 可協助保護 Windows 10 裝置上的此類資料�
 作為過渡期的檢查點，您可以看到與此步驟相對應的[允出準則](infoprotect-exit-criteria.md#crit-infoprotect-step4)。
 
 ## <a name="next-step"></a>下一步
-
 
 |||
 |:-------|:-----|

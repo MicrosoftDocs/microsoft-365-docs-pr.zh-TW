@@ -3,7 +3,7 @@ title: 步驟 1：適用於使用者與群組的方案
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 適用於您組織之使用者和群組的方案。
-ms.openlocfilehash: 1f879c789e6b531dec7163fa252e0f85459c823d
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 05b854c182b6f624cf143ed93920c344391ee416
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072173"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981804"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>步驟 1：適用於使用者與群組的方案
 
@@ -31,7 +31,7 @@ ms.locfileid: "34072173"
 - 持續控制誰擁有對您環境中資源的存取權。
 - 透過可強烈確保身分識別之控制項 (使用者的身分即為他們宣稱的身分) 與來自安全裝置的存取權來保護存取權。
 - 使用適當的權限來在環境中佈建資源，以降低損害與資料外洩的可能性。 
-- 監控您的環境，確認是否有異常使用者行為，並自動執行動作。
+- 監控您的環境，確認是否有異常使用者行為，並自動採取行動。
 
 ## <a name="plan-your-primary-identity-provider"></a>規劃您的主要身分識別提供者
 
@@ -67,10 +67,10 @@ ms.locfileid: "34072173"
 
 您可以使用 Azure AD 中的群組，以實現簡化雲端環境管理的多個目的。例如，針對 Azure AD 群組，您可以：
 
-- 使用以群組為基礎的授權，以在 Azure AD 中新增您的使用者帳戶或從 AD DS 進行同步處理後，立即將 Office 365 與 Enterprise Mobility + Security (EMS) 的授權自動指派給將這些使用者帳戶。 
+- 使用以群組為基礎的授權，以在 Azure AD 中新增您的使用者帳戶或從 AD DS 進行同步處理後，立即將授權自動指派給將這些使用者帳戶。 
 - 根據使用者帳戶屬性 (例如部門) 以動態方式將使用者帳戶新增至特定群組。  
 - 為軟體即服務 (SaaS) 應用程式自動佈建使用者，並透過多重要素驗證和其他條件式存取規則來保護對這些應用程式的存取權。
-- 佈建 SharePoint Online 小組網站的權限和存取層級。Azure AD 群組也可與限定範圍的 Azure 資訊保護原則一起使用來透過加密和權限保護檔案。 
+- 佈建 SharePoint Online 小組網站的權限和存取層級。Azure AD 群組也可與敏感度或 Azure 資訊保護標籤一起使用來透過加密和權限保護檔案。 
 
 ## <a name="results"></a>結果
 
@@ -81,7 +81,7 @@ ms.locfileid: "34072173"
 
 做為過渡期的檢查點，您可以看到此步驟的[允出準則](identity-exit-criteria.md#crit-identity-user-groups)。
 
-Azure AD 使用者和群組建立後，您就可以開始指派授權及使用 Exchange Online。 若要向使用者推行 Exchange Online，請參閱[針對 Microsoft 365 企業版部署 Exchange Online](exchangeonline-workload.md)。
+Azure AD 使用者和群組建立之後，您就可以開始指派授權及使用生產力工作負載，例如商務用 OneDrive 或 Exchange Online。
 
 ## <a name="next-step"></a>下一步
 

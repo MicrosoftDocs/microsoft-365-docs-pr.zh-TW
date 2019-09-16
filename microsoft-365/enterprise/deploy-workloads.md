@@ -2,7 +2,7 @@
 title: Microsoft 365 企業版工作負載和案例
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2019
+ms.date: 08/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 讓貴組織的使用者快速上手 Microsoft 365 企業版的生產力工作負載。
-ms.openlocfilehash: 3e7e030e3684606a906a57856d08ea25c7dc2001
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: 730826f388364d1232f1750059002d111279c1be
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297863"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981934"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 企業版工作負載和案例
 
@@ -34,15 +34,16 @@ ms.locfileid: "36297863"
 - 受限於區域法規。
 - 貴組織最有價值的資料，例如營業秘密、財務或人力資源資訊，以及組織策略。
 
-若要讓此資料免於遭受內部和外部威脅，請參閱[適用於高管制資料的 Microsoft Teams 和 SharePoint Online 網站](teams-sharepoint-online-sites-highly-regulated-data.md)中的指示。 此案例會逐步引導您完成 SharePoint Online 網站或 Microsoft Teams 小組的設定，以便安全地儲存您最有價值的資料。
+若要讓此資料免於遭受內部和外部威脅，請參閱[適用於高管制資料的 Microsoft Teams 和 SharePoint Online 網站](teams-sharepoint-online-sites-highly-regulated-data.md)。 此案例會逐步引導您完成 SharePoint Online 網站或 Microsoft Teams 小組的設定，以便安全地儲存您最有價值的資料。
 
 以下是整體 Microsoft 365 企業版部署指南中的工作負載和案例：
 
 ![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
-如需其他案例，請參閱 [Microsoft 365 生產力資源庫](https://www.microsoft.com/microsoft-365/success/)。 從這個網頁上，輸入搜尋字串或按一下 [篩選方式]**** 並指定 Microsoft 365 內的產業、角色 (部門) 和產品。
+如需其他案例，請參閱 [Microsoft 365 生產力資源庫](https://www.microsoft.com/microsoft-365/success/)。 
 
-從結果，按一下某個卡片來查看可協助您快速開始的步驟。
+1. 從這個網頁上，輸入搜尋字串或按一下 [篩選方式]**** 並指定 Microsoft 365 內的產業、角色 (部門) 和產品。
+2. 從結果，按一下某個卡片來查看可協助您快速開始的步驟。
 
 ## <a name="foundation-infrastructure-prerequisites"></a>底層基礎結構先決條件
 
@@ -57,14 +58,14 @@ ms.locfileid: "36297863"
 | 行動裝置管理 | 裝置可以進行註冊並受到管理。 |
 | 資訊保護 | 會啟用 Office 365 安全性功能，且敏感度標籤或 Azure 資訊保護標籤已準備好而可保護文件。 |
 
-請記住，這是理想狀況，您可能需要花點時間來規劃、設定、測試和試驗，尤其是有既存基礎結構和多個位置的大型組織更是如此。 您不一定要為了更快速地從 Microsoft 365 企業版獲得商業價值，而在所有位置都備有上述所有層級。 
+請記住，這是理想狀況，您可能需要花點時間來規劃、設定、測試和試驗，尤其是有既存基礎結構和多個位置的大型組織更是如此。 您不一定要為了更快速地從 Microsoft 365 企業版獲得商業價值，而在所有位置完成所有階段。 
 
 以下是一些要立即部署的常見工作負載： 
 
-- 在對使用者推出底層基礎結構的**身分識別**層級後，許多組織會部署：
+- 在對使用者推出底層基礎結構的**身分識別**階段後，許多組織會部署：
   - [Office 365 專業增強版](office365proplus-infrastructure.md)加上[商務用 OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise)。 Office 365 專業增強版可提供新式驗證的安全性和最新 Microsoft Office 用戶端的使用者體驗。 將使用者的個人檔案遷移到商務用 OneDrive 會減少基礎結構和對於主資料夾及主目錄磁碟的支援需求。
   - [Exchange Online](exchangeonline-workload.md)，讓使用者可以開始使用雲端式電子郵件。
-- 如果您並非立即需要在雲端中儲存高管制的數位資產，請先為使用者部署 [Microsoft Teams](teams-workload.md) 和 [SharePoint Online](sharepoint-online-onedrive-workload.md)，再部署**資訊保護**層級。
+- 如果您並非立即需要在雲端中儲存高管制的數位資產，請先為使用者部署 [Microsoft Teams](teams-workload.md) 和 [SharePoint Online](sharepoint-online-onedrive-workload.md)，再部署**資訊保護**階段。
 
 您必須決定要如何針對底層基礎結構的先決條件階段，做出最佳的設定順序並進行部署，才能符合您的業務需求。
 
@@ -74,7 +75,5 @@ ms.locfileid: "36297863"
 
 **身分識別**階段可確保雲端式身分識別 (無論是只有雲端，還是會與內部部署 Active Directory Domain Services (AD DS) 同步處理) 會包含可用來管理驗證及存取的使用者和電腦帳戶與群組。 所有使用者都必須使用增強式驗證且系統管理員帳戶必須使用增強式保護，才能將組織的數位資產放入 Microsoft 365 雲端。
 
-雖然整體效能屬於基礎要求且非常重要，但您還是可以在讓使用者快速上手工作負載時同時在網路上推出**網路**階段，因為您知道 Microsoft 365應用程式和服務的效能會慢慢改善。
-
-對於有多個位置並混合使用邊緣裝置與網際網路連線的企業組織來說，更是如此。
+雖然整體效能屬於基礎要求且非常重要，但您還是可以在讓使用者快速上手工作負載時同時推出**網路**階段，因為您知道 Microsoft 365 應用程式和服務的效能會慢慢改善。 對於有多個位置並混合使用邊緣裝置與網際網路連線的企業組織來說，更是如此。
 

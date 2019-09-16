@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解重要的 Windows 和 Office 安全性與相容性考量。
-ms.openlocfilehash: 791006a6a836f28adb8d71b20e0e887b903752ba
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 472a838c68ed06560f5b81f7854b05b1b2e8eefd
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814584"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981754"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>步驟 5：安全性與相容性考量事項
 
@@ -111,7 +111,7 @@ ms.locfileid: "34814584"
 
 Windows 10 中的 **[Windows Defender 應用程式控制](https://docs.microsoft.com/zh-TW/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)** (英文) 會運作 Microsoft 已檢查安全性的核准應用程式允許與拒絕清單，全部都是使用 Microsoft Intune 受端點保護原則管理。
 
-**[Windows Defender 進階威脅防護](https://docs.microsoft.com/zh-TW/windows/security/threat-protection/windows-defender-atp/overview)** (英文) 是一個整合式預防保護、入侵後偵測、自動調查及回應平台。它會保護端點免於網路威脅；偵測進階攻擊與資料入侵、自動化安全性事件，並提高安全性狀態。
+**[Microsoft Defender 進階威脅防護](https://docs.microsoft.com/zh-TW/windows/security/threat-protection/windows-defender-atp/overview)** (英文) 是一個整合式預防保護、入侵後偵測、自動調查及回應平台。它會保護端點免於網路威脅；偵測進階攻擊與資料入侵、自動化安全性事件，並提高安全性狀態。
 
 **[利用保護](https://docs.microsoft.com/zh-TW/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)** (英文) 可協助減少執行應用程式的受攻擊面，方法為防止惡意程式碼進入 Windows 及封鎖不受信任的程序存取受保護資料夾。
 

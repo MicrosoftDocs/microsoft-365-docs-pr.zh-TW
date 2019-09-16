@@ -83,10 +83,10 @@ Windows Autopilot 會設定裝置並將它連線到 Azure AD。
 如有需要，[步驟 5](../windows10-enable-security-features.md#windows10-sec-eg) 可協助您符合這項要求。
 
 <a name="crit-windows10-step5c"></a>
-### <a name="required-you-are-using-windows-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>必要：您是使用 Windows Defender 進階威脅防護 (僅限 Microsoft 365 企業版 E5)
+### <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>必要：使用 Microsoft Defender 進階威脅防護 (僅限 Microsoft 365 企業版 E5)
 
-您已部署 Windows Defender 進階威脅防護 (ATP)，以針對您的網路及執行 Windows 10 企業版的裝置偵測、調查及回應進階威脅。 
+您已部署 Microsoft Defender 進階威脅防護 (ATP)，以針對您的網路及執行 Windows 10 企業版的裝置偵測、調查及回應進階威脅。 
 
-此外，您也已整合 Windows Defender ATP 與其他工具，以擴充其功能。
+此外，您也已整合 Microsoft Defender ATP 與其他工具，以擴充其功能。
 
 如有需要，[步驟 5](../windows10-enable-security-features.md#windows10-sec-atp) 可協助您符合這項要求。

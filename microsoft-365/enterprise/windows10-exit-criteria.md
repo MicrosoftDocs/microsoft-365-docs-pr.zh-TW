@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的組態符合 Windows 10 企業版的 Microsoft 365 企業版準則。
-ms.openlocfilehash: 29ab2373321485d8de892a29132d1af07a318b7b
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 289d20b87d9cefcc63a060fb0dc526cf7a45b071
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074103"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982634"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>階段 3：Windows 10 企業版基礎結構允出準則
 
@@ -111,11 +111,11 @@ Windows Autopilot 會設定裝置並將它連線到 Azure AD。
 如有需要，[步驟 5](windows10-enable-security-features.md#windows10-sec-eg) 可協助您符合這項要求。
 
 <a name="crit-windows10-step5c"></a>
-## <a name="required-you-are-using-windows-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>必要：您是使用 Windows Defender 進階威脅防護 (僅限 Microsoft 365 企業版 E5)
+## <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>必要：您是使用 Microsoft Defender 進階威脅防護 (僅限 Microsoft 365 企業版 E5)
 
-您已部署 Windows Defender 進階威脅防護 (ATP)，以針對您的網路及執行 Windows 10 企業版的裝置偵測、調查及回應進階威脅。 
+您已部署 Microsoft Defender 進階威脅防護 (ATP)，以針對您的網路及執行 Windows 10 企業版的裝置偵測、調查及回應進階威脅。 
 
-此外，您也已整合 Windows Defender ATP 與其他工具，以擴充其功能。
+此外，您也已整合 Microsoft Defender ATP 與其他工具，以擴充其功能。
 
 如有需要，[步驟 5](windows10-enable-security-features.md#windows10-sec-atp) 可協助您符合這項要求。
 

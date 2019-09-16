@@ -2,7 +2,7 @@
 title: 移轉至 Microsoft 365 企業版
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/12/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 在整個組織中逐步執行將 Microsoft Office、Office 伺服器及 Windows 的各版本移轉為 Microsoft 365 企業版的程序。
-ms.openlocfilehash: f82e65cdff674884466fe70a299250c92f356186
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: 0def2f90a016c6d81f2c05bb3571646d97edf4ca
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297875"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982816"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>移轉至 Microsoft 365 企業版
 
@@ -64,7 +64,7 @@ Office 365 專業增強版會自動安裝更新，可以充分利用 Office 365 
 
 ### <a name="office-2010"></a>Office 2010
 
-針對 Office 2010 版的 Office 版本，將在 2020 年 10 月 13 日終止支援。如需詳細資訊，請參閱 [Office 2010 終止支援藍圖](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap)。
+針對 Office 2010 發行版本中的 Office 版本，終止支援為 **2020 年 10 月 13 日**。 如需詳細資訊，請參閱 [Office 2010 終止支援藍圖](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap)。
 
 若不使用 Office 2013 或 Office 2016 (這兩者都必須手動更新) 來升級您執行 Office 2010 的電腦，請考慮： 
 
@@ -115,8 +115,8 @@ Microsoft 365 企業版包含 Office 365，其中包含雲端型版本的 Office
 
 對於 Office 2010 版的伺服器產品，已決定終止支援下列項目：
 
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support) 是在 **2010 年 1 月 14 日**。
+- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) 是在 **2020 年 10 月 13 日**。
 
 若不使用 Office 2013 或 Office 2016 版的伺服器產品升級 Office 2010 版的這些伺服器產品，請考慮：
 
@@ -140,11 +140,21 @@ Microsoft 365 企業版包含 Office 365，其中包含雲端型版本的 Office
 2. 向使用者推出新功能和作業程序。
 3. 不再需要執行 Office 2016 伺服器產品的內部部署伺服器時，請予以解除。
 
-## <a name="migration-for-microsoft-windows"></a>Microsoft Windows 的移轉
+## <a name="migration-for-microsoft-windows-7-and-81"></a>Microsoft Windows 7 和 8.1 的移轉
 
-若要移轉執行 Windows 7 或 Windows 8.1 的裝置，您可以執行[就地升級](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade)。 
+Windows 7 於 **2010 年 1 月 14 日**進入終止支援。 若要移轉執行 Windows 7 或 Windows 8.1 的裝置，您可以執行[就地升級](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade)。 
 
-如需其他方法，請參閱 [Windows 10 部署案例](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)。您也可以自行[規劃 Windows 10 部署](https://aka.ms/planforwin10deployment)。
+如需其他方法，請參閱 [Windows 10 部署案例](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)。 您也可以自行[規劃 Windows 10 部署](https://aka.ms/planforwin10deployment)。
+
+## <a name="summary-of-options-for-office-2010-clients-and-servers-and-windows-7"></a>適用於 Office 2010 用戶端與伺服器和 Windows 7 的選項摘要
+
+如需適用於這些產品的升級、移轉和移至雲端選項的視覺摘要，請參閱[終止支援海報](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)。
+
+[![Office 2010 用戶端與伺服器和 Windows 7 終止支援海報的影像](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+
+這張單頁海報可讓您快速了解可以採取的各種方法，以防止 Office 2010 用戶端與伺服器產品以及 Windows 7 進入終止支援，而海報上也會強調顯示 Microsoft 365 企業版中慣用的方式和選項支援。
+
+您可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何執行 Microsoft 365 企業版
 
@@ -158,13 +168,13 @@ Microsoft 365 企業版包含 Office 365，其中包含雲端型版本的 Office
 
 ## <a name="transition-your-entire-organization"></a>轉換您的整個組織
 
-若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版，請下載[轉換海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf)。
+若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請下載[轉換海報](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
 
-![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+[![轉換至 Microsoft 365 海報的影像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-這份雙頁海報可讓您快速清查您現有的基礎結構，並取得移至 Microsoft 365 企業版中對應產品或服務的指導方針。 本文中包含產品和其他基礎結構與安全性元素，例如裝置管理、身分識別以及資訊和威脅防護。
+這份雙頁海報可讓您快速清查您現有的基礎結構，並取得移至 Microsoft 365 企業版中對應產品或服務的指導方針。 包含 Windows 和 Office 產品和其他基礎結構與安全性元素，例如裝置管理、身分識別以及資訊和威脅防護。
 
-您可以以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
+您可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
 ## <a name="result"></a>結果
 

@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 2559734241a8b30ec43b26fb0b096faba18138b9
-ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
+ms.openlocfilehash: 30d6e1566fda4dbc84800bbd4359a689f858f9e4
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778148"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982659"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr"></a>GDPR 的 Office 365 資料主體要求
 
@@ -97,7 +97,7 @@ Microsoft Office 365 服務也可在下列國家雲環境中取得：[Office 365
 | ![Excel 圖示](media/o365-excel-64x64.png) <br> Excel | ![商務用 Skype 圖示](media/o365-skypeforbusiness-64x64.png) <br> 商務用 Skype |
 | ![Office Lens 圖示](media/o365-lens-64x64.png) <br> Office Lens | ![工作圖示](media/O365-DSR-Doc-Final_image8.png) <br> 工作 |
 | ![OneDrive 圖示](media/o365-OneDrive-64x64.png) <br> 商務用 OneDrive |![Teams 圖示](media/o365-teams-64x64.png) <br> Teams |
-| ![OneNote 圖示](media/o365-onenote-64x64.png) <br> OneNote| ![To-Do 圖示](media/o365-todo-64x64.png) <br> To-Do |
+| ![OneNote 圖示](media/o365-onenote-64x64.png) <br> OneNote| ![待辦事項圖示](media/o365-todo-64x64.png) <br> To Do |
 | ![Outlook 圖示](media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![影片圖示](media/O365-DSR-Doc-Final_image14.png) <br> 影片 |
 | ![多人圖示](media/O365-DSR-Doc-Final_image15.png) <br> 多人 | ![Visio 圖示](media/o365-visio-64x64.png) <br> Visio |
 | ![PowerPoint 圖示](media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Word 圖示](media/o365-word-64x64.png) <br> Word
@@ -159,7 +159,7 @@ Microsoft Office 365 服務也可在下列國家雲環境中取得：[Office 365
 | :--- | :--- |:--- |
 |**條件**|**描述** |**條件值的範例**|
 | 檔案類型 | 文件或檔案的副檔名。 請使用此條件以搜尋 Office 365 應用程式建立的 Office 文件及檔案。 當搜尋位於 SharePoint Online 網站和商務用 OneDrive 帳戶中的資料時，請使用此條件。<br/>對應的文件屬性為 filetype。 <br/>如需您可以搜尋之副檔名的完整清單，請參閱 SharePoint 中預設已編目的副檔名及已剖析的檔案類型](https://technet.microsoft.com/library/jj219530.aspx)。|&nbsp;&bull;&nbsp;&nbsp;csv – 搜尋逗號分隔值 (CSV) 檔案。Excel 檔案可以儲存為 CSV 格式，而且 CSV 檔案可以輕鬆地匯入 Excel 中 <br><br>&bull;&nbsp;&nbsp;docx – 搜尋 Word 檔案 <br><br>&bull;&nbsp;&nbsp;mpp - 搜尋 Project 檔案<br/><br>&bull;&nbsp;&nbsp;one - 搜尋 OneNote 檔案 <br><br>&bull;&nbsp;&nbsp;pdf – 搜尋儲存為 PDF 格式的檔案 <br><br>&bull;&nbsp;&nbsp;pptx – 搜尋 PowerPoint 檔案 <br><br>&bull;&nbsp;&nbsp;xlxs – 搜尋 Excel 檔案 <br><br>&bull;&nbsp;&nbsp;vsd – 搜尋 Visio 檔案 <br><br>&bull;&nbsp;&nbsp;wmv – 搜尋 Windows Media 視訊檔 <br>|
-| 訊息類型 | 要搜尋的電子郵件類型。 使用此條件，在信箱中搜尋聯絡人 (人員)、會議 (行事曆) 或商務用 Skype 交談。 對應的電子郵件屬性是 *kind*。|&bull;&nbsp;&nbsp;*contacts – 搜尋信箱中我的連絡人清單 (人員)<br><br>&bull;&nbsp;&nbsp;* email — 搜尋電子郵件 <br><br>&bull;&nbsp;&nbsp;*im — 搜尋商務用 Skype 交談<br><br>&bull;&nbsp;&nbsp;* meetings — 搜尋約會及會議邀請 (行事曆) <br><br>&bull;&nbsp;&nbsp;*tasks – 搜尋我的工作清單 (工作)；使用此值也將傳回以 Microsoft To-Do 建立的工作。<br>|
+| 訊息類型 | 要搜尋的電子郵件類型。 使用此條件，在信箱中搜尋聯絡人 (人員)、會議 (行事曆) 或商務用 Skype 交談。 對應的電子郵件屬性是 *kind*。|&bull;&nbsp;&nbsp;*contacts – 搜尋信箱中我的連絡人清單 (人員)<br><br>&bull;&nbsp;&nbsp;* email — 搜尋電子郵件 <br><br>&bull;&nbsp;&nbsp;*im — 搜尋商務用 Skype 交談<br><br>&bull;&nbsp;&nbsp;* meetings — 搜尋約會及會議邀請 (行事曆) <br><br>&bull;&nbsp;&nbsp;*tasks – 搜尋我的工作清單 (工作)；使用此值也將傳回以 Microsoft ToDo 建立的工作。<br>|
 | 合規性標籤 |指派給電子郵件訊息或文件的標籤。標籤是用來分類電子郵件和文件，以進行資料控管；並根據標籤定義的分類強制執行保留規則。請使用此條件，來搜尋已自動或手動指派標籤的項目。<br/>這是對 DSR 調查很有用的條件，因為貴組織可能會使用標籤來分類與資料隱私權相關的內容，或含有個人資料或敏感性資訊的內容。請參閱 [Office 365 中的標籤概觀](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30)中的＜使用內容搜尋來尋找所有已套用特定標籤的內容＞一節。|compliancetag="personal data"|
 ||||
 
@@ -364,7 +364,7 @@ OneNote 課程筆記本會儲存在課程小組 SharePoint Online 網站中。�
 
 #### <a name="microsoft-to-do"></a>Microsoft To-Do
 
-Microsoft To-Do 中的工作 (稱為「待辦事項」**，儲存在「待辦事項清單」** 中) 會儲存為使用者在 Exchange Online 信箱中的工作。這表示，您可以使用內容搜尋工具來搜尋、存取、刪除及匯出待辦事項。如需詳細資訊，請參閱[設定 Microsoft To-Do](https://support.office.com/article/Set-up-Microsoft-To-Do-490c1a8c-2333-4952-8125-841afadb9620)。
+Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清單*)，會在使用者的 Exchange Online 信箱中儲存為工作。 這表示您可以使用內容搜尋工具來搜尋、存取、刪除及匯出待辦事項。 如需詳細資訊，請參閱[設定 Microsoft To-Do](https://support.office.com/article/Set-up-Microsoft-To-Do-490c1a8c-2333-4952-8125-841afadb9620)。
 
 #### <a name="skype-for-business"></a>商務用 Skype
 
@@ -456,11 +456,11 @@ Microsoft To-Do 中的工作 (稱為「待辦事項」**，儲存在「待辦事
 
 ## <a name="deleting-personal-data"></a>刪除個人資料
 
-從組織的客戶資料中移除其個人資料的「被遺忘權」，是 GDPR 中的關鍵保護機制。這是指移除個人資料，包括刪除整個文件或檔案，或刪除文件或檔案內的特定資料 (如本指南中＜修正＞一節所述的動作和程序)。
+從組織的客戶資料中移除其個人資料的「抹除的權利」，是 GDPR 中的關鍵保護機制。 移除個人資料包括刪除整個文件或檔案，或刪除文件或檔案內的特定資料 (這會類似本指南中＜修正＞一節所述的動作和程序)。
 
 當您調查或準備刪除個人資料，以回應 DSR 時，以下是一些重要事項，讓您了解如何在 Office 365 中刪除 (和保留) 資料。
 
-- **虛刪除與實刪除—Office 365 服務中 (例如，Exchange Online、SharePoint Online 和商務用 OneDrive) 有「虛刪除」** 和「實刪除」** 的概念，此概念與已刪除項目是否能在尚未從 Microsoft 雲端永久移除之前復原 (通常是在一段有限的時間內) 有關。 在此情況下，虛刪除的項目可在實刪除之前由使用者和/或系統管理員復原 (在一段有限的時間內)。 已經實刪除的項目會標示為已永久移除，並且會在對應的 Office 365 服務處理時清除。 以下是信箱和網站中的項目如何進行虛刪除和實刪除的說明 (無論項目是由資料擁有者還是系統管理員刪除)：
+- **虛刪除與實刪除：** Office 365 服務中 (例如，Exchange Online、SharePoint Online 和商務用 OneDrive) 有*虛刪除*和*實刪除*的概念，此概念與已刪除項目是否能在尚未從 Microsoft 雲端永久移除之前復原 (通常是在一段有限的時間內) 有關。 在此情況下，虛刪除的項目可在實刪除之前由使用者和/或系統管理員復原 (在一段有限的時間內)。 已經實刪除的項目會標示為已永久移除，並且會在對應的 Office 365 服務處理時清除。 以下是信箱和網站中的項目如何進行虛刪除和實刪除的說明 (無論項目是由資料擁有者還是系統管理員刪除)：
 
     - **信箱：** 當郵件從 [刪除的郵件] 資料夾刪除或使用者按下 **Shift + Delete** 來刪除郵件時，郵件會虛刪除。 郵件在虛刪除時會移到信箱中的 [可復原的項目] 資料夾。 在此階段，只要刪除的郵件保留期間還沒到期，使用者就可以復原該郵件 (Office 365 中的刪除的郵件保留期間為 14 天，但系統管理員可以將其增加到最長 30 天)。 在保留期間到期後，該郵件就會實刪除，然後移到隱藏的資料夾 (名為「清除」** 資料夾)。 下一次處理信箱時 (信箱每 7 天處理一次)，就會從 Office 365 永久移除 (清除) 郵件。
 
@@ -469,7 +469,7 @@ Microsoft To-Do 中的工作 (稱為「待辦事項」**，儲存在「待辦事
 > [!NOTE]
 > 若能了解導致項目虛刪除或實刪除的動作，將協助您決定在回應刪除要求時，如何以符合 GDPR 需求的方式刪除資料。
 
-- **法務保存措施與保留原則 — 在 Office 365 中，可以將信箱和網站設為「保留」狀態。 簡言之，這表示若信箱或網站處於保留狀態，將不會永久移除 (實刪除) 任何項目，直到項目的保留期間到期或移除保留為止。 事關刪除客戶內容以回應 DSR 時，這點很重要；若從處於保留狀態的內容位置中實刪除項目，該項目並不會從 Office 365 中永久移除。 這表示，我們可以合理預期 IT 系統管理員可將其復原。若貴組織在回應 DSR 時的需求或原則，是在 Office 365 中永久刪除資料並使其無法復原；則必須先從信箱或網站移除保留，才能永久刪除 Office 365 中的資料。 貴組織在回應 DSR 的指導方針中，極有可能設有適當的程序來判斷特定 DSR 刪除要求或法務保存措施何者優先。 如果您移除了保留以便刪除項目，仍可在刪除項目後重新進行保留。
+- **法務保存措施與保留原則：** 在 Office 365 中，可以將信箱和網站設為「保留」狀態。 簡言之，這表示若信箱或網站處於保留狀態，將不會永久移除 (實刪除) 任何項目，直到項目的保留期間到期或移除保留為止。 事關刪除客戶內容以回應 DSR 時，這點很重要；若從處於保留狀態的內容位置中實刪除項目，該項目並不會從 Office 365 中永久移除。 這表示，我們可以合理預期 IT 系統管理員可將其復原。若貴組織在回應 DSR 時的需求或原則，是在 Office 365 中永久刪除資料並使其無法復原；則必須先從信箱或網站移除保留，才能永久刪除 Office 365 中的資料。 貴組織在回應 DSR 的指導方針中，極有可能設有適當的程序來判斷特定 DSR 刪除要求或法務保存措施何者優先。 如果您移除了保留以便刪除項目，仍可在刪除項目後重新進行保留。
 
 ### <a name="deleting-documents-in-sharepoint-online-and-onedrive-for-business"></a>刪除 SharePoint Online 和商務用 OneDrive 中的文件
 
