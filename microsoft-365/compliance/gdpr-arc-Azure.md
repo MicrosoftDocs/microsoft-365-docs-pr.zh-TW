@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 86254d388bc5134b7913ab5e93cde96a7bc4cc66
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: b605bfa3d549b3359f8bb780cfffa7306db44d2d
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698405"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982409"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>符合 GDPR 的 Azure 責任整備程度檢查清單
 
@@ -23,12 +23,12 @@ ms.locfileid: "34698405"
 
 此責任整備程度檢查清單可讓您便捷地存取在使用 Microsoft Azure 時，為了支援一般資料保護規定 (GDPR) 所需要的資訊。該清單是根據個人資訊處理者的一組隱私權和安全控制的標題和參考編號 (列在每個檢查清單主題的括號中) 來進行編排，依循：
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) 安全性技術需求。
-- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 隱私權管理需求。
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) 為安全性技術需求。
+- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 為隱私權管理需求。
 
 您可以使用合規性管理員管理此檢查清單中的項目 [16]，方法是參考 GDPR 圖格中「客戶受管理控制項」底下的控制項識別碼和控制項標題。 此控制項結構也可用於組織 Microsoft Azure 實作以支援 GDPR 的內部控制項展示，您可以在這裡下載：[服務信任中心](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)。
 
-此控制項結構也可用於組織 [Microsoft Dynamics 365 實作以支援 GDPR 的內部控制項](https://aka.ms/gdprcontrols)展示。
+此控制項結構也可用於組織 [Microsoft Dynamics 365 實作以支援 GDPR 的內部控制項](https://aka.ms/GDPRControls)展示。
 
 更多 GDPR 相關文件，請瀏覽[https://aka.ms/gdprgetstarted](https://aka.ms/gdprgetstarted)。
 
