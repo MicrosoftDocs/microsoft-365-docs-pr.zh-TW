@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: db0cb3ed472d0f50808339624550f0e98082b737
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: f14016d596f11869fb923106cb174fa5ce255ec3
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698365"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982304"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>符合 GDPR 的 Microsoft 支援服務與專業服務責任整備程度檢查清單
 
@@ -23,10 +23,10 @@ ms.locfileid: "34698365"
 
 此責任整備程度檢查清單可讓您便捷地存取在使用 Microsoft 專業服務與支援服務時，為了支援 GDPR 所需要的資訊。該清單是根據個人資訊處理者的一組隱私權和安全控制的標題和參考編號 (列在每個檢查清單主題的括號中) 來進行編排，依循：
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) 安全性技術需求。
-- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 隱私權管理需求。
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) 為隱私權資訊管理的技巧和需求。
+- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 為一般的資訊安全性管理需求。
 
-此控制項結構也可用於組織 Microsoft 專業服務實作以支援 GDPR 的內部控制項展示，您可以在這裡下載：[服務信任中心](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)。
+此控制項結構也可用於組織 Microsoft 專業服務實作以支援 GDPR 的內部控制項展示，您可以在[服務信任中心](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)下載。
 
 ## <a name="2-conditions-for-collection-and-processing"></a>2. 收集和處理的條件
 
