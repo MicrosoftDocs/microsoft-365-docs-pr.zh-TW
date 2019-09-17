@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並為信任的 Office 365 位置的流量旁路設定 Web 瀏覽器和邊緣裝置。
-ms.openlocfilehash: 416c93fd3f44e1cd9edba52a9d6117ac6d133760
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: fbc4956525e2661ce791c6ec81b449dba685d0f0
+ms.sourcegitcommit: 1ca1062ccddd7a46fa0bb4af6ee5f0eb141e7280
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982784"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "36999037"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>步驟 4：設定流量旁路
 
@@ -44,7 +44,7 @@ Microsoft 建議您：
 - 
 - 分析您的邊緣裝置來判定複製處理，然後設定它們以將流量轉送至最佳化及允許端點。這稱為流量旁路。 
 
-邊緣裝置包含防火牆、SSL 中斷和檢查、封包檢查裝置，以及資料外洩防護系統。若要設定並更新邊緣裝置的組態，您可以使用指令碼或 REST 呼叫，以使用來自 Office 365 端點 Web 服務的結構化端點清單。如需詳細資訊，請參閱[Office 365 IP 位址和 URL Web 服務](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)。
+邊緣裝置包含防火牆、SSL 中斷和檢查、封包檢查裝置，以及資料外洩防護系統。若要設定並更新邊緣裝置的組態，您可以使用指令碼或 REST 呼叫，以使用來自 Office 365 端點 Web 服務的結構化端點清單。如需詳細資訊，請參閱[Office 365 IP 位址和 URL Web 服務](https://docs.microsoft.com/zh-TW/office365/enterprise/office-365-ip-web-service#exporting-a-proxy-pac-file)。
 
 請注意，您只對 Microsoft 365 最佳化和允許類別端點的流量略過一般 Proxy 和網路安全性處理。所有其他一般網際網路流量將會透過 Proxy 進行，並受制於您的現有網路安全性處理。
 

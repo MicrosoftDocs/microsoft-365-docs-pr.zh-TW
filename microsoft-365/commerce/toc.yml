@@ -19,19 +19,9 @@
           href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
     - name: 帳單和付款
       items:
-        - name: 了解我發票
-          href: /microsoft-store/billing-understand-your-invoice-msfb?context=/microsoft-365/commerce/context/context-commerce
-        - name: 管理付款方法
-          href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
-        - name: 管理帳單的設定檔
-          href: /microsoft-store/billing-profile?context=/microsoft-365/commerce/context/context-commerce
-        - name: Xxxxx xxxxxxx
-          href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
-    - name: 帳單帳戶
-      items:
         - name: 管理帳單的帳戶資訊
           href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce
         - name: 與我的帳單帳戶產生關聯的租用戶
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
     - name: 與我協力廠商管理關係
-      href: /microsoft-store/work-with-partner-microsoft-store-business?context=/microsoft-365/commerce/context/context-commerce
+      href: manage-partners.md
