@@ -1,5 +1,5 @@
 ---
-title: 步驟 6： 設定 Office 365 的特殊權限的存取管理
+title: 步驟 7： 設定 Office 365 的特殊權限的存取管理
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: 了解及設定 Office 365 的特殊權限存取管理。
-ms.openlocfilehash: fdfb0bc69d1dc05cffd717951cb493995d2123d4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 7ed7a69b89a519895e62b78be4a27cfb7fff2f74
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072093"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047286"
 ---
-# <a name="step-6-configure-privileged-access-management-for-office-365"></a>步驟 6： 設定 Office 365 的特殊權限的存取管理
+# <a name="step-7-configure-privileged-access-management-for-office-365"></a>步驟 7： 設定 Office 365 的特殊權限的存取管理
 
 *此為選用步驟，且僅適用於 Microsoft 365 企業版 E5 和進階合規性版本*
 
@@ -39,11 +39,13 @@ ms.locfileid: "34072093"
 
 如需詳細資訊，請參閱 [Office 365 中的特殊權限存取管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) (機器翻譯) 主題。
 
-## <a name="results"></a>結果
 
-這個步驟的結果是您藉由針對貴組織的關鍵資料和組態設定啟用 Just-In-Time 存取控制，增強了 Office 365 的安全性。
+|||
+|:-------|:-----|
+|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  若要練習此測試實驗室環境中的設定，請參閱[特殊權限的存取管理 「 測試實驗室指南](privileged-access-microsoft-365-enterprise-dev-test-environment.md)。 |
+|||
 
-作為過渡期的檢查點，您可以看到與此步驟相對應的[允出準則](infoprotect-exit-criteria.md#crit-infoprotect-step6)。
+作為過渡期的檢查點，您可以看到與此步驟相對應的[允出準則](infoprotect-exit-criteria.md#crit-infoprotect-step7)。
 
 ## <a name="next-step"></a>下一步
 

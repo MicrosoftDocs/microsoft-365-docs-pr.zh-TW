@@ -3,7 +3,7 @@ title: Microsoft 365 企業版概觀
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 企業版提供元件、 計劃及部署路徑的簡介。
-ms.openlocfilehash: b1750e1810556b8dadd4a16481c9ada3195f6c3c
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: f08682709cc47dc8fa6b4fcd48dc4511ff251ba1
+ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982834"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37050284"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -78,27 +78,27 @@ Microsoft 365 企業版所組成：
 
 這兩個頁面海報是清查您現有的基礎結構，以取得將移至對應的產品或服務，Microsoft 365 企業版中的指引的快速方法。 其中包括 Windows 和 Office 產品及其他基礎結構和安全性的元素，例如裝置管理、 identity 及資訊和威脅保護。
 
-您可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)與列印字母、 法律或 tabloid (11 x 17) 格式。
+您也可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)與列印字母、 法律或 tabloid (11 x 17) 格式。
 
-## <a name="avoid-end-of-support-for-office-2010-clients-and-servers-and-windows-7"></a>避免結尾 Office 2010 用戶端和伺服器和 Windows 7 的支援
+## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>避免結尾的 Windows 7 和 Office 2010 用戶端與伺服器支援
 
-下列產品達到終止支援 2010**年 1 月 14 日**：
+下列產品達到結尾**2020 年 1 月 14，** 支援：
 
 - [Windows 7](https://aka.ms/win7upgrade)
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 
 下列產品達到結尾**2020 年 10 月 13，** 支援：
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
+- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 - [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
 視覺升級摘要移轉，與要雲端移動選項這些產品，請參閱[支援海報的結尾](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)。
 
 [![支援 Office 2010 用戶端和伺服器和 Windows 7 海報結尾的影像](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
-這一頁海報是支援的了解可防止 Office 2010 用戶端與伺服器產品及 Windows 7 達到結尾的慣用的路徑與反白顯示的 Microsoft 365 企業版中的選項支援，可採取的各種路徑的快速方法。
+這一頁海報是支援的了解若要防止 Windows 7 和 Office 2010 用戶端和伺服器產品達到結尾的慣用的路徑與中反白顯示的 Microsoft 365 企業版支援，可採取的各種路徑的快速方法。
 
-您可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)與列印字母、 法律或 tabloid (11 x 17) 格式。
+您也可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)與列印字母、 法律或 tabloid (11 x 17) 格式。
 
 ## <a name="deploy"></a>部署
 
@@ -148,6 +148,6 @@ Microsoft 365 企業版所組成：
 
 如果您正在自行進行部署，來啟動您的[Microsoft 365 企業版部署的作業過程](deploy-microsoft-365-enterprise.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 Enterprise 產品頁面](https://www.microsoft.com/microsoft-365/enterprise)

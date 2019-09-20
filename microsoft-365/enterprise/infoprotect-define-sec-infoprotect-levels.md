@@ -3,7 +3,7 @@ title: 步驟 1：定義安全性和資訊保護層級
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並設定您組織的安全性和資訊保護層級。
-ms.openlocfilehash: 37ef1433f2c117e17c78d297a920424d8e83cbb8
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a216079e38b173a8b35c49317a072975b0c7f36e
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071973"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047256"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>步驟 1：定義安全性和資訊保護層級
 

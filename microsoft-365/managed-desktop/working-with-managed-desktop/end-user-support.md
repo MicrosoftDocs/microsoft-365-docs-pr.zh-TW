@@ -6,18 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0af9134880f018cf814715a8ca3a3b7dc55c5fcd
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: de7f218b5cfe2dcdba6c29aea81bd6004adedf76
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982394"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047226"
 ---
 # <a name="getting-help-for-end-users"></a>取得使用者的說明
 
-您組織中的使用者可以使用其 Microsoft 受管理的電腦裝置取得協助的兩種方式：**取得協助**的應用程式或電話支援。 這兩種支援選項可使用的使用者，每週 7 天，每天 24 小時。 
+您組織中的使用者可以使用其 Microsoft 受管理的電腦裝置取得協助的兩種方式：**取得協助**的應用程式或電話支援。 這兩種支援選項可使用的使用者，每週 7 天，每天 24 小時。
+ 
 >[!NOTE]
->位於 [測試] 群組中的裝置都超出範圍，這些使用者的支援選項。 
+>這些就無法使用 [測試] 群組中的裝置的支援選項。 
 
 ## <a name="get-help-app"></a>取得說明應用程式
 
@@ -38,9 +39,10 @@ ms.locfileid: "36982394"
 - 加拿大 （不含魁北克）： +1 855 425 0216
 - 英國： +44 800 026 0698
 - 澳大利亞： +61 180 037 0619
+- 紐西蘭: + 64 988 44380
 
 >[!NOTE]
->請當您呼叫若要確認您的身分識別，已準備好您組織的電子郵件地址。 
+>您需要已準備好您組織的電子郵件地址，當您呼叫若要確認您的身分識別。 
 
 ## <a name="additional-resources"></a>其他資源
 - [系統管理員支援 Microsoft 受管理的電腦](admin-support.md)。 
