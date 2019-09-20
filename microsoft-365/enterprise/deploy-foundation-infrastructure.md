@@ -3,7 +3,7 @@ title: Microsoft 365 企業版底層基礎結構
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 08/09/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解貴組織中部署 Microsoft 365 企業版底層基礎結構的主要階段，也稱為核心部署。
-ms.openlocfilehash: c66a328becf03a179b3ef0526c3110783904e741
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 016764333b7234681aa06e511227b203f9c9eaea
+ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982094"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37050304"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 企業版底層基礎結構
 
@@ -33,7 +33,7 @@ ms.locfileid: "36982094"
 |![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[階段 3：Windows 10 企業版](windows10-infrastructure.md)| 現有的 Windows 架構電腦可升級為 Windows 10 企業版，且新裝置會使用 Windows 10 企業版來進行安裝。 |
 |![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[階段 4：Office 365 專業增強版](office365proplus-infrastructure.md)| 現有的 Microsoft Office 使用者可升級為 Office 365 專業增強版。 |
 |![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[階段 5：行動裝置管理](mobility-infrastructure.md)| 裝置可以進行註冊並受到管理。 |
-|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[階段 6：資訊保護](infoprotect-infrastructure.md)| 標籤已準備好保護文件，並啟用 Office 365 安全性功能。 |
+|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[階段 6：資訊保護](infoprotect-infrastructure.md)| 已啟用 Office 365 安全功能，您的標籤和原則已就緒，可保護文件和電子郵件。 |
 
 這些階段會從最基本的項目 (網路和身分識別) 開始，然後會建立基礎結構的各個設定和群組層級，以便：
 
@@ -48,7 +48,7 @@ ms.locfileid: "36982094"
 
 -  **如果您是企業組織**，請將這些階段視為 IT 基礎結構層級而非明確的路徑，並判斷最終要如何做才能符合組織內每一層級的需求。
 
-在每個階段的結尾，您都應該檢查其允出準則 (內含必須符合的必要條件以及要考慮的選擇性條件)。 每個階段的允出準則可確保您的內部部署和雲端基礎結構與產生的端對端設定符合 Microsoft 365 企業版部署需求。
+在每個階段的結尾，您都應該檢查其允出準則** (內含必須符合的必要條件以及要考慮的選擇性條件)。 每個階段的允出準則可確保您的內部部署和雲端基礎結構與產生的端對端設定符合 Microsoft 365 企業版部署需求。
 
 若要了解內容的建構方式，請觀看這段短片。
 
@@ -90,7 +90,7 @@ ms.locfileid: "36982094"
 | Windows 10 企業版 | 可自動將執行 Windows 7 或 Windows 8.1 的電腦就地升級為 Windows 10 企業版的群組。 |
 | Office 365 專業增強版 | 可自動為使用 Office 2010、Office 2013 或 Office 2016 的使用者部署 Office 365 專業增強版的群組。 |
 | 行動裝置管理 | 用於裝置註冊和裝置型條件式存取原則的群組。 |
-| 資訊保護 | Office 365 敏感度和 Azure 資訊保護標籤與群組。 |
+| 資訊保護 | Office 365 敏感度標籤的群組。 |
 
 當您準備好對使用者推出這個基礎結構的元素時：
 
@@ -100,7 +100,7 @@ ms.locfileid: "36982094"
 | Windows 10 企業版 | 將帳戶新增至可自動為使用 Windows 7 或 Windows 8.1 的使用者就地部署 Windows 10 企業版的群組。 |
 | Office 365 專業增強版 | 將使用者帳戶新增至可自動為使用 Office 2010、Office 2013 或 Office 2016 的使用者部署 Office 365 專業增強版的群組。 |
 | 行動裝置管理 | 將帳戶新增至用於裝置註冊和裝置型條件式存取原則的群組。 |
-| 資訊保護 | 將使用者帳戶新增至資訊保護標籤的群組。 |
+| 資訊保護 | 將使用者帳戶新增至敏感度標籤群組。 |
 
 在底層基礎結構的階段或元素完成、經過測試及試驗後，您便可以對使用者以最符合業務目標和 IT 資源的方式推出已安裝好的軟體 (例如，Windows 10 企業版和 Office 365 專業增強版) 以及雲端式服務和保護 (例如，裝置註冊和條件式存取原則)。
 
@@ -110,13 +110,13 @@ ms.locfileid: "36982094"
 
 ## <a name="deployment-for-non-enterprises"></a>非企業部署
 
-如果您是小型組織，而 Microsoft 365 商務版不適合您，請參閱[非企業部署](deploy-foundation-infrastructure-non-enterprises.md)。
+如果您是小型組織，而 Microsoft 365 商務版不適合您，請參閱[非企業部署](deploy-foundation-infrastructure-non-enterprises.md)，以了解簡化的部署方式。
 
 
 ## <a name="next-step"></a>下一步
 
 | 我的所在位置 | 我要前往何處 |
 |:-------|:-----|
-| 我有現有的 Office 365、Enterprise Mobility + Security (EMS) 或 Windows 10 企業版基礎結構 | 從[部署現有的基礎結構](deploy-with-existing-infrastructure.md)開始，這將逐步引導您進行每個階段的允出準則。 |
+| 我有現有的 Office 365、Enterprise Mobility + Security (EMS) 或 Windows 10 企業版基礎結構 | 從[使用現有基礎結構部署](deploy-with-existing-infrastructure.md)開始，這將逐步引導您進行每個階段的允出準則。 |
 | 我是從頭開始的企業 | 使用[階段 1：網路](networking-infrastructure.md)開始端對端部署旅程。 |
 | 我從頭開始，但不是企業 | 使用[非企業部署](deploy-foundation-infrastructure-non-enterprises.md)開始端對端部署旅程。 |

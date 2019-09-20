@@ -60,10 +60,24 @@
 
 如有需要，[步驟 5](../infoprotect-data-loss-prevention.md) 可協助您符合這項要求。 
 
-
 <a name="crit-infoprotect-step6"></a>
+### <a name="optional-email-encryption-is-configured"></a>選用：已設定電子郵件加密
+
+您已視需要設定組織的電子郵件加密：
+
+|||
+|:-------|:-----|
+| **加密方法** | **針對傳送的電子郵件** |
+| [Office 365 郵件加密 (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | 在組織外部使用加密 |
+| [資訊版權管理 (IRM)](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | 具有加密和權限 |
+| [安全多用途網際網路郵件延伸 (S/MIME)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | 使用公開金鑰加密同時使用加密和數位簽章 |
+|||
+
+如有需要，[步驟 6](../infoprotect-email-encryption.md) 可協助您符合這項要求。
+
+<a name="crit-infoprotect-step7"></a>
 ### <a name="optional-configure-privileged-access-management-in-office-365"></a>選用：在 Office 365 中設定特殊權限存取管理
 
 您已使用[在 Office 365 中設定特殊存取權限管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)主題中的資訊來啟用特殊存取權限，並在組織中建立一個或多個特殊存取權限原則。 您已設定這些原則，並且啟用了即時存取，以存取敏感資料或存取關鍵配置設定。
 
-如有需要，[步驟 6](../infoprotect-configure-privileged-access-management.md) 可協助您符合這項要求。 
+如有需要，[步驟 7](../infoprotect-configure-privileged-access-management.md) 可協助您符合這項要求。 
