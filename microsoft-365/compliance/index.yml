@@ -1,0 +1,93 @@
+### YamlMime:Landing
+title: Microsoft 365 合規性文件
+summary: 如果您的組織需要遵守法律或法規的標準時，請從這裡開始若要了解 Microsoft 365 的合規性。
+metadata:
+  title: Microsoft 365 合規性文件
+  description: Microsoft 365 合規性功能的文件
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: m365-security-compliance
+  author: robmazz
+  ms.author: robmazz
+  ms.date: 09/20/2019
+  ms.openlocfilehash: 0357312feb1821f343809e93b1a53f2c5df536c4
+  ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 09/20/2019
+  ms.locfileid: "37076251"
+landingContent:
+- title: 管理資訊保護
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 保護資訊
+      url: protect-information.md
+    - text: 敏感度標籤
+      url: sensitivity-labels.md
+    - text: 資料外洩防護 (DLP)
+      url: data-loss-prevention-policies.md
+    - text: 敏感資訊類型
+      url: custom-sensitive-info-types.md
+    - text: 電子郵件加密
+      url: email-encryption.md
+- title: 管理資訊控管
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 管理 Microsoft 365 中的記錄
+      url: records-management.md
+    - text: 檔案計劃管理員
+      url: file-plan-manager.md
+    - text: 保留標籤
+      url: labels.md
+    - text: 事件型保留
+      url: event-driven-retention.md
+    - text: 非使用中的信箱
+      url: inactive-mailboxes-in-office-365.md
+    - text: 檢視資料控管報告
+      url: view-the-data-governance-reports.md
+- title: 管理測試人員風險
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 保護使用者和裝置存取權
+      url: protect-access-to-data-and-services.md
+    - text: 特許存取管理
+      url: privileged-access-management-overview.md
+    - text: 客戶加密箱
+      url: customer-lockbox-requests.md
+    - text: 監督通訊
+      url: supervision-policies.md
+    - text: 資訊障礙
+      url: information-barriers.md
+    - text: 客戶金鑰
+      url: controlling-your-data-using-customer-key.md
+- title: 探索和回應
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 進階 eDiscovery
+      url: overview-ediscovery-20.md
+    - text: 管理資料調查
+      url: overview-data-investigations.md
+    - text: 搜尋內容
+      url: search-for-content.md
+    - text: 搜尋稽核記錄
+      url: search-the-audit-log-in-security-and-compliance.md
+- title: 開始使用法規合規性
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: 合規性管理員
+      url: compliance-manager-overview.md
+    - text: GDPR 合規性的行動計劃
+      url: gdpr-action-plan.md
+    - text: GDPR 的資訊保護
+      url: office-365-info-protection-for-gdpr-overview.md
+    - text: ISO 合規性的行動計劃
+      url: iso-action-plan.md
+    - text: NIST 合規性的行動計劃
+      url: nist-action-plan.md
