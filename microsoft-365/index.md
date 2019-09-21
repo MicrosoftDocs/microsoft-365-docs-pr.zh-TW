@@ -1,20 +1,19 @@
 ---
 layout: HubPage
 hide_bc: true
-author: CelesteDG
+author: robmazz
 localization_priority: Normal
-ms.author: celested
+ms.author: robmazz
 ms.topic: hub-page
 keywords: Microsoft 365、 Microsoft 365 文件、 Microsoft 365 企業版、 Microsoft 365 企業版、 Microsoft 365 教育版、 企業、 商務、 教育版、 文件、 文件
 title: Microsoft 365 文件
 description: 尋找文件和資源的 Microsoft 365-完整的智慧型解決方案，包括 Office 365、 Windows 10 以及 Enterprise Mobility + Security，可讓所有人發揮創意並安全地，在一起。
-ms.date: 07/01/2018
-ms.openlocfilehash: 255d60ba415b6af7435aeadbb0ee74c8bc760908
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 6026926ad2dd8638a3a9165e99a36b454eeac6bc
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289014"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071762"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -82,6 +81,46 @@ ms.locfileid: "32289014"
                                                     <br />
                                                     <h3>Microsoft 365 教育版</h3>
                                                     <p>Microsoft 365 教育版可讓授課者解放創意、 提升團隊合作，並提供簡單且安全的體驗，為教育打造單一且價格合理解決方案中。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/microsoft-365/compliance/" target="blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/M365-HubTile-Compliance-400x140.svg" alt="Microsoft 365 compliance documentation and resources" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <br />
+                                                    <h3>Microsoft 365 合規性</h3>
+                                                    <p>Microsoft 365 合規性解決方案可協助您遵守法律或法規的標準的組織。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/microsoft-365/security/" target="blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/M365-HubTile-Security-400x140.svg" alt="Microsoft 365 security documentation and resources" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <br />
+                                                    <h3>Microsoft 365 安全性</h3>
+                                                    <p>Microsoft 365 安全性解決方案有助於保護您的企業跨受攻擊面。</p>
                                                 </div>
                                             </div>
                                         </div>
