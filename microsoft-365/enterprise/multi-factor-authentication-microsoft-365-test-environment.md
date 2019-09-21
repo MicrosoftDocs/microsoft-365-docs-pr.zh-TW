@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 設定使用文字訊息傳送至 Microsoft 365 企業版測試環境中的智慧型手機的多重要素驗證。
-ms.openlocfilehash: 319f8058aa4504c52cacf5f0d97982d115c41c8a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f209c3cebaefd8b4bddafb68471c35e5c37905be
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074213"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071572"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>多重要素驗證您的 Microsoft 365 企業版測試環境
 
@@ -95,7 +95,7 @@ ms.locfileid: "34074213"
     在瀏覽器的 [ **Microsoft Office 的首頁**] 索引標籤上，您應該針對使用者 2 看到 Office 入口網站。
 
 
-在身分識別階段中的資訊，以及部署在生產環境中的多重要素驗證的連結，請參閱[設定多重要素驗證](identity-multi-factor-authentication.md#identity-mfa)的步驟。
+在身分識別階段中的資訊，以及部署在生產環境中的多重要素驗證的連結，請參閱[設定多重要素驗證](identity-secure-user-sign-ins.md#identity-mfa)的步驟。
     
 ## <a name="next-step"></a>下一步
 

@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用下列步驟來保護 Microsoft 365 企業版測試環境中的全域系統管理員帳戶。
-ms.openlocfilehash: 7a6f99ae1123b07618dea9910a0bdd993e36ca13
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 457ac33aa2242dc4b25cd662bf233bb1599a6fec
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074143"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071552"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>保護您的 Microsoft 365 企業版測試環境中的全域系統管理員帳戶
 
@@ -93,7 +93,7 @@ ms.locfileid: "34074143"
 
 若要測試的第一個原則，請登出，並使用 DedicatedAdmin 帳戶登入。 應該會提示您的使用者帳戶上設定 MFA。 此示範，將第一個會被套用原則。
 
-在身分識別階段中的資訊，以及保護您的全域系統管理員帳戶，在生產環境中的連結，請參閱[保護全域系統管理員帳戶](identity-designate-protect-admin-accounts.md#identity-global-admin)的步驟。
+在身分識別階段中的資訊，以及保護您的全域系統管理員帳戶，在生產環境中的連結，請參閱[保護全域系統管理員帳戶](identity-create-protect-global-admins.md#identity-global-admin)的步驟。
 
 ## <a name="next-step"></a>下一步
 

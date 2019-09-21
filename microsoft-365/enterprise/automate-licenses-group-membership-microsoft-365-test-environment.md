@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 企業版測試環境中設定群組為基礎的授權和動態群組成員資格。
-ms.openlocfilehash: 179284dce271c69939a560703561a32648af93b1
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: cb01e1a405e7cff1f9965e34751b3ce638dd8018
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072623"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071722"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>自動化適用於 Microsoft 365 企業版測試環境的授權和群組成員資格
 
@@ -90,8 +90,8 @@ ms.locfileid: "34072623"
 
 在身分識別階段中的資訊，以及部署動態群組成員資格和自動授權在生產環境中的連結，請參閱下列步驟：
 
-- [設定自動授權](identity-self-service-group-management.md#identity-group-license)
-- [設定動態群組成員資格](identity-self-service-group-management.md#identity-dyn-groups)
+- [設定自動授權](identity-use-group-management.md#identity-group-license)
+- [設定動態群組成員資格](identity-use-group-management.md#identity-dyn-groups)
 
 ## <a name="next-step"></a>下一步
 

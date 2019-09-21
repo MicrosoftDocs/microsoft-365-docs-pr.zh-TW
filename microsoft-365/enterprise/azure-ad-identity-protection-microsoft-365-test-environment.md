@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 設定 Azure AD Identity Protection 及分析您的 Microsoft 365 企業版測試環境中的目前的帳戶。
-ms.openlocfilehash: d267bb9dff94acfec46fa1275887f9cade2a7285
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 97530dcec9c32882bbe3b66eb53eaa6d4668a838
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074083"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071712"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Azure AD Identity Protection，您的 Microsoft 365 企業版測試環境
 
@@ -57,7 +57,7 @@ Azure AD Identity Protection 可讓您偵測會影響組織身分識別的潛在
 
 進一步測試與試驗，請參閱[Simulating 風險事件](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook)。
 
-在身分識別階段中的資訊，以及部署在生產環境中的 Azure AD Identity Protection 的連結，請參閱[Protect 針對認證洩露](identity-multi-factor-authentication.md#identity-ident-prot)步驟。
+在身分識別階段中的資訊，以及部署在生產環境中的 Azure AD Identity Protection 的連結，請參閱[Protect 針對認證洩露](identity-secure-user-sign-ins.md#identity-ident-prot)步驟。
 
 ## <a name="next-step"></a>下一步
 
