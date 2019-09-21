@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定並測試適用於 Microsoft 365 測試環境的密碼重設。
-ms.openlocfilehash: de025d6b54b3cc1b69c8e50fec428f58d7754dcb
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 8be1e898d0b995ddbed7b63c2f0ce07c969592c8
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073113"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071592"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼重設
 
@@ -85,7 +85,7 @@ Azure Active Directory (Azure AD) 自助密碼重設 (SSPR) 允許使用者重�
 9. 在 [取回您的帳戶]**** 中，輸入「使用者 2」帳戶的新密碼，然後按一下 [完成]****。請記下「使用者 2」帳戶的密碼變更，並儲存到安全的位置。
 10. 在相同瀏覽器的新分頁中，前往 [https://portal.office.com](https://portal.office.com)，並以「使用者 2」帳戶名稱及新密碼登入。 您應該會看到 [Microsoft Office 首頁]**** 頁面。
 
-如需在生產中進行密碼重設的相關資訊和連結，請參閱身分識別階段中的「[簡化密碼重設](identity-password-reset.md#identity-pw-reset)」步驟。
+如需在生產中進行密碼重設的相關資訊和連結，請參閱身分識別階段中的「[簡化密碼重設](identity-secure-your-passwords.md#identity-pw-reset)」步驟。
 
 ## <a name="next-step"></a>下一步
 
