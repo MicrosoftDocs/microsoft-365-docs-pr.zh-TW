@@ -1,0 +1,62 @@
+---
+title: 原則與防護組合的方式時郵件紅色標幟
+description: 原則的套用，和電子郵件由 EOP，及/或 ATP 標記惡意程式碼、 垃圾郵件、 高信賴度垃圾郵件、 網路釣魚及大量時採取的動作。
+keywords: 安全性、 惡意程式碼、 Microsoft 365、 M365、 安全中心，ATP、 Microsoft Defender ATP、 Office 365 ATP、 Azure ATP
+ms.author: tracyp
+author: MSFTTracyp
+manager: dansimp
+ms.date: 03/26/2019
+audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+ms.collection:
+- M365-security-compliance
+ms.openlocfilehash: 1f1885730d1063a0c36d172f1f9d0e4ac4fb59c7
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37076840"
+---
+# <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a><span data-ttu-id="c6aa9-104">哪些原則適用於何時多個保護方法與在您的電子郵件上執行的偵測掃描</span><span class="sxs-lookup"><span data-stu-id="c6aa9-104">What policy applies when multiple protection methods and detection scans run on your email</span></span>
+
+<span data-ttu-id="c6aa9-105">有可能，傳入的郵件可能由多個表單的保護 (例如這兩個 EOP*和*ATP)，加上標幟並多個偵測掃描 （例如垃圾郵件*和*網路釣魚）。</span><span class="sxs-lookup"><span data-stu-id="c6aa9-105">Potentially, your incoming mail may be flagged by multiple forms of protection (for example both EOP *and* ATP), and multiple detection scans (such as spam *and* phishing).</span></span> <span data-ttu-id="c6aa9-106">這是可行的因為有 ATP 防網路釣魚原則 ATP 的客戶，與 EOP 客戶的 EOP 反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="c6aa9-106">This is possible because there are ATP Anti-phishing policies for ATP customers, and EOP Anti-phishing policies for EOP customers.</span></span> <span data-ttu-id="c6aa9-107">這也表示郵件可能會瀏覽多個偵測掃描惡意程式碼、 網路釣魚，與使用者模擬，例如。</span><span class="sxs-lookup"><span data-stu-id="c6aa9-107">This also means the message may navigate multiple detection scans for malware, phishing, and user-impersonation, for example.</span></span> <span data-ttu-id="c6aa9-108">指定所有此活動，可能會有哪些原則適用於某些混淆。</span><span class="sxs-lookup"><span data-stu-id="c6aa9-108">Given all this activity, there may be some confusion as to which policy applies.</span></span>
+
+<span data-ttu-id="c6aa9-109">一般而言，在**CAT （類別）** 屬性中的**X Forefront-反垃圾郵件報告**標頭中識別套用至郵件的原則。</span><span class="sxs-lookup"><span data-stu-id="c6aa9-109">In general, a policy applied to a message is identified in the **X-Forefront-Antispam-Report** header in the **CAT (Category)** property.</span></span> <span data-ttu-id="c6aa9-110">如果您有多個反網路釣魚原則時，會套用在最高優先順序的一個。</span><span class="sxs-lookup"><span data-stu-id="c6aa9-110">If you have multiple Anti-phishing policies, the one at the highest priority will apply.</span></span>
+
+<span data-ttu-id="c6aa9-111">下列的原則套用到_所有組織_。</span><span class="sxs-lookup"><span data-stu-id="c6aa9-111">The Policies below apply to _all organizations_.</span></span>
+
+|<span data-ttu-id="c6aa9-112">優先順序</span><span class="sxs-lookup"><span data-stu-id="c6aa9-112">Priority</span></span> |<span data-ttu-id="c6aa9-113">原則</span><span class="sxs-lookup"><span data-stu-id="c6aa9-113">Policy</span></span>  |<span data-ttu-id="c6aa9-114">類別</span><span class="sxs-lookup"><span data-stu-id="c6aa9-114">Category</span></span>  |<span data-ttu-id="c6aa9-115">受管理的位置</span><span class="sxs-lookup"><span data-stu-id="c6aa9-115">Where Managed</span></span> |
+|---------|---------|---------|---------|
+|<span data-ttu-id="c6aa9-116">1</span><span class="sxs-lookup"><span data-stu-id="c6aa9-116">1</span></span>     | <span data-ttu-id="c6aa9-117">惡意程式碼</span><span class="sxs-lookup"><span data-stu-id="c6aa9-117">Malware</span></span>      | <span data-ttu-id="c6aa9-118">MALW</span><span class="sxs-lookup"><span data-stu-id="c6aa9-118">MALW</span></span>      | <span data-ttu-id="c6aa9-119">惡意程式碼原則</span><span class="sxs-lookup"><span data-stu-id="c6aa9-119">Malware policy</span></span>   |
+|<span data-ttu-id="c6aa9-120">2</span><span class="sxs-lookup"><span data-stu-id="c6aa9-120">2</span></span>     | <span data-ttu-id="c6aa9-121">網路釣魚</span><span class="sxs-lookup"><span data-stu-id="c6aa9-121">Phishing</span></span>     | <span data-ttu-id="c6aa9-122">PHSH</span><span class="sxs-lookup"><span data-stu-id="c6aa9-122">PHSH</span></span>     | <span data-ttu-id="c6aa9-123">設定您的垃圾郵件篩選原則</span><span class="sxs-lookup"><span data-stu-id="c6aa9-123">Configure your spam filter policies</span></span>     |
+|<span data-ttu-id="c6aa9-124">3</span><span class="sxs-lookup"><span data-stu-id="c6aa9-124">3</span></span>     | <span data-ttu-id="c6aa9-125">高信賴度的垃圾郵件</span><span class="sxs-lookup"><span data-stu-id="c6aa9-125">High confidence spam</span></span>      | <span data-ttu-id="c6aa9-126">HSPM</span><span class="sxs-lookup"><span data-stu-id="c6aa9-126">HSPM</span></span>        | <span data-ttu-id="c6aa9-127">設定您的垃圾郵件篩選原則</span><span class="sxs-lookup"><span data-stu-id="c6aa9-127">Configure your spam filter policies</span></span>        |
+|<span data-ttu-id="c6aa9-128">4</span><span class="sxs-lookup"><span data-stu-id="c6aa9-128">4</span></span>     | <span data-ttu-id="c6aa9-129">詐騙</span><span class="sxs-lookup"><span data-stu-id="c6aa9-129">Spoofing</span></span>        | <span data-ttu-id="c6aa9-130">SPOOF</span><span class="sxs-lookup"><span data-stu-id="c6aa9-130">SPOOF</span></span>        | <span data-ttu-id="c6aa9-131">反網路釣魚原則，詐騙智慧</span><span class="sxs-lookup"><span data-stu-id="c6aa9-131">Anti-phishing policy, spoof intelligence</span></span>        |
+|<span data-ttu-id="c6aa9-132">5</span><span class="sxs-lookup"><span data-stu-id="c6aa9-132">5</span></span>     | <span data-ttu-id="c6aa9-133">垃圾郵件</span><span class="sxs-lookup"><span data-stu-id="c6aa9-133">Spam</span></span>         | <span data-ttu-id="c6aa9-134">SPM</span><span class="sxs-lookup"><span data-stu-id="c6aa9-134">SPM</span></span>         | <span data-ttu-id="c6aa9-135">設定您的垃圾郵件篩選原則</span><span class="sxs-lookup"><span data-stu-id="c6aa9-135">Configure your spam filter policies</span></span>         |
+|<span data-ttu-id="c6aa9-136">6</span><span class="sxs-lookup"><span data-stu-id="c6aa9-136">6</span></span>     | <span data-ttu-id="c6aa9-137">大量</span><span class="sxs-lookup"><span data-stu-id="c6aa9-137">Bulk</span></span>         | <span data-ttu-id="c6aa9-138">BULK</span><span class="sxs-lookup"><span data-stu-id="c6aa9-138">BULK</span></span>        | <span data-ttu-id="c6aa9-139">設定您的垃圾郵件篩選原則</span><span class="sxs-lookup"><span data-stu-id="c6aa9-139">Configure your spam filter policies</span></span>         |
+
+<span data-ttu-id="c6aa9-140">此外，這些原則套用至_組織的 ATP_。</span><span class="sxs-lookup"><span data-stu-id="c6aa9-140">In addition, these policies apply to _organizations with ATP_.</span></span>
+
+|<span data-ttu-id="c6aa9-141">優先順序</span><span class="sxs-lookup"><span data-stu-id="c6aa9-141">Priority</span></span> |<span data-ttu-id="c6aa9-142">原則</span><span class="sxs-lookup"><span data-stu-id="c6aa9-142">Policy</span></span>  |<span data-ttu-id="c6aa9-143">類別</span><span class="sxs-lookup"><span data-stu-id="c6aa9-143">Category</span></span>  |<span data-ttu-id="c6aa9-144">受管理的位置</span><span class="sxs-lookup"><span data-stu-id="c6aa9-144">Where Managed</span></span> |
+|---------|---------|---------|---------|
+|<span data-ttu-id="c6aa9-145">7</span><span class="sxs-lookup"><span data-stu-id="c6aa9-145">7</span></span>     | <span data-ttu-id="c6aa9-146">網域冒充</span><span class="sxs-lookup"><span data-stu-id="c6aa9-146">Domain Impersonation</span></span>         | <span data-ttu-id="c6aa9-147">DIMP</span><span class="sxs-lookup"><span data-stu-id="c6aa9-147">DIMP</span></span>         | <span data-ttu-id="c6aa9-148">設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="c6aa9-148">Set up Office 365 ATP anti-phishing and anti-phishing policies</span></span>        |
+|<span data-ttu-id="c6aa9-149">8 </span><span class="sxs-lookup"><span data-stu-id="c6aa9-149">8</span></span>     | <span data-ttu-id="c6aa9-150">使用者冒充</span><span class="sxs-lookup"><span data-stu-id="c6aa9-150">User Impersonation</span></span>        | <span data-ttu-id="c6aa9-151">UIMP</span><span class="sxs-lookup"><span data-stu-id="c6aa9-151">UIMP</span></span>         | <span data-ttu-id="c6aa9-152">設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="c6aa9-152">Set up Office 365 ATP anti-phishing and anti-phishing policies</span></span>         |
+
+<span data-ttu-id="c6aa9-153">例如，如果您有兩個原則有其各自的優先順序：</span><span class="sxs-lookup"><span data-stu-id="c6aa9-153">As an example, if you have two policies with their respective priorities:</span></span>
+
+|<span data-ttu-id="c6aa9-154">原則</span><span class="sxs-lookup"><span data-stu-id="c6aa9-154">Policy</span></span>  |<span data-ttu-id="c6aa9-155">優先順序</span><span class="sxs-lookup"><span data-stu-id="c6aa9-155">Priority</span></span>  |<span data-ttu-id="c6aa9-156">使用者/網域冒充</span><span class="sxs-lookup"><span data-stu-id="c6aa9-156">User/Domain Impersonation</span></span>  |<span data-ttu-id="c6aa9-157">反詐騙</span><span class="sxs-lookup"><span data-stu-id="c6aa9-157">Anti-spoofing</span></span>  |
+|---------|---------|---------|---------|
+|<span data-ttu-id="c6aa9-158">A</span><span class="sxs-lookup"><span data-stu-id="c6aa9-158">A</span></span>     | <span data-ttu-id="c6aa9-159">1</span><span class="sxs-lookup"><span data-stu-id="c6aa9-159">1</span></span>        | <span data-ttu-id="c6aa9-160">開啟</span><span class="sxs-lookup"><span data-stu-id="c6aa9-160">On</span></span>        |<span data-ttu-id="c6aa9-161">關閉</span><span class="sxs-lookup"><span data-stu-id="c6aa9-161">Off</span></span>         |
+|<span data-ttu-id="c6aa9-162">B</span><span class="sxs-lookup"><span data-stu-id="c6aa9-162">B</span></span>     | <span data-ttu-id="c6aa9-163">2</span><span class="sxs-lookup"><span data-stu-id="c6aa9-163">2</span></span>        | <span data-ttu-id="c6aa9-164">關閉</span><span class="sxs-lookup"><span data-stu-id="c6aa9-164">Off</span></span>        | <span data-ttu-id="c6aa9-165">開啟</span><span class="sxs-lookup"><span data-stu-id="c6aa9-165">On</span></span>        |
+
+<span data-ttu-id="c6aa9-166">如果郵件有已識別為_使用者模擬_和_詐騙_（請參閱反詐騙於上表中），而且相同一組使用者原則的範圍限於原則 B，郵件加上標幟，並視為_詐騙_。</span><span class="sxs-lookup"><span data-stu-id="c6aa9-166">If a message comes in identified as both _user impersonation_ and _spoofing_ (see anti-spoofing in the table above), and the same set of users scoped to policy A is scoped to policy B, then the message is flagged and treated as a _spoof_.</span></span> <span data-ttu-id="c6aa9-167">不過，因為而雖然詐騙執行較高的優先順序 (4) 的多使用者模擬 (8)、 反詐騙已關閉，會不套用任何動作。</span><span class="sxs-lookup"><span data-stu-id="c6aa9-167">However, no action is applied because though spoof runs at a higher priority (4) than User Impersonation (8), Anti-spoofing is turned off.</span></span>
+
+<span data-ttu-id="c6aa9-168">請記住，系統管理員可以建立優先的清單中的原則 （請參閱上方的 [優先順序] 欄位），但只能將一個原則將會執行，並將其動作套用。</span><span class="sxs-lookup"><span data-stu-id="c6aa9-168">Keep in mind, administrators can create a prioritized list of policies (see the priority field above), but only one policy will run and apply its actions.</span></span> <span data-ttu-id="c6aa9-169">表示原則 A 和 B 中的使用者會有較高優先順序原則 （A 是 #1） 執行，且郵件不會篩選透過任何進一步的原則。</span><span class="sxs-lookup"><span data-stu-id="c6aa9-169">That means a user in both policy A and B will have the higher priority policy (A is #1) run, and the message will not filter through any further policies.</span></span> <span data-ttu-id="c6aa9-170">如果反 spoofiing 已關閉，將會不執行任何動作。</span><span class="sxs-lookup"><span data-stu-id="c6aa9-170">If the anti-spoofiing is off, no actions will be run.</span></span>
+
+<span data-ttu-id="c6aa9-171">因為可能會在多個原則中有許多使用者群組，它可能 behoove 系統管理員，請考慮使用較少的原則與更多的功能。</span><span class="sxs-lookup"><span data-stu-id="c6aa9-171">Because there is a potential to have many groups of users in many policies, it may behoove administrators to consider using fewer policies with more capabilities.</span></span> <span data-ttu-id="c6aa9-172">務必確定完整原則所涵蓋的所有使用者。</span><span class="sxs-lookup"><span data-stu-id="c6aa9-172">It is also important to be certain that all users are covered by a comprehensive policy.</span></span>
+
+<span data-ttu-id="c6aa9-173">若要讓其他類型的網路釣魚原則套用，您將需要調整的各種不同的原則套用到使用者的設定。</span><span class="sxs-lookup"><span data-stu-id="c6aa9-173">To make other types of phishing policy apply, you will need to adjust the settings of who the various policies apply to.</span></span>
+
+
+
