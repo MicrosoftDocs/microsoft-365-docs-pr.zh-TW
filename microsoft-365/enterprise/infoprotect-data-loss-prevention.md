@@ -3,7 +3,7 @@ title: 步驟 5：設定 Office 365 資料外洩防護
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 365 中的 Office 365 資料外洩防護並且進行部署。
-ms.openlocfilehash: f6b9291a2965552837f989c98b32674f6093b383
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: dbe88885812e51b0daefa89dae123af5907c60a8
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073555"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047246"
 ---
 # <a name="step-5-configure-office-365-data-loss-prevention"></a>步驟 5：設定 Office 365 資料外洩防護
 
@@ -50,15 +50,14 @@ DLP 原則會指定：
 
 最後，您透過通知員工有新的原則及其所需的行為並且擴大位置範圍，在貴組織中推出該原則。
 
-如需詳細資訊，請參閱[開始使用 DLP 原則建議](https://docs.microsoft.com/office365/securitycompliance/get-started-with-dlp-policy-recommendations) (機器翻譯)。
+如需詳細資訊，請參閱[開始使用 DLP 原則建議](https://docs.microsoft.com/office365/securitycompliance/get-started-with-dlp-policy-recommendations)。
 
 作為過渡期的檢查點，您可以看到與此步驟相對應的[允出準則](infoprotect-exit-criteria.md#crit-infoprotect-step5)。
 
 ## <a name="next-step"></a>下一步
 
-
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)|[設定 Office 365 的特殊權限存取管理](infoprotect-configure-privileged-access-management.md)|
+|![](./media/stepnumbers/Step6.png)|[設定電子郵件加密](infoprotect-email-encryption.md)|
 
 

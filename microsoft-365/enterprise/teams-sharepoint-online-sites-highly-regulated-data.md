@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立安全的 SharePoint Online 小組網站或 Microsoft Teams 小組，以儲存您最有價值且機密的數位資產。
-ms.openlocfilehash: d056acc9598abc2b896c775e0979451f4961e3fb
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 04984be44ddb2cc1aabc2032970f92e71899b268
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982754"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047330"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>適用於高管制資料的 Microsoft Teams 和 SharePoint Online 網站
 
@@ -103,7 +103,7 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 包含高管制資產之 SharePoint Online 小組網站的安全性不會變更，除非是由網站的 SharePoint 系統管理員執行。
 
-請參閱[設計隔離的 SharePoint Online 小組網站](https://docs.microsoft.com/office365/enterprise/design-an-isolated-sharepoint-online-team-site) (機器翻譯)，以取得決定權限等級、SharePoint 群組、存取群組與群組成員集合的詳細資料。
+請參閱[設計隔離的 SharePoint Online 小組網站](https://docs.microsoft.com/office365/enterprise/design-an-isolated-sharepoint-online-team-site)，以取得決定權限等級、SharePoint 群組、存取群組與群組成員集合的詳細資料。
 
 ### <a name="step-2-office-365-retention-labels-and-dlp-policies"></a>步驟 2：Office 365 保留標籤和 DLP 原則
 
@@ -113,7 +113,7 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 如需 Office 365 標籤的設計考量，請參閱 [Office 365 分類和標籤](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels)。
 
-若要保護機密資訊並防止意外或故意洩露，您可以使用 DLP 原則。如需詳細資訊，請參閱[概觀](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies) (機器翻譯)。
+若要保護機密資訊並防止意外或故意洩露，您可以使用 DLP 原則。如需詳細資訊，請參閱[概觀](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)。
 
 針對適用於高管制資料的 SharePoint Online 網站，您必須針對指派至網站的 Office 365 保留標籤設定 DLP 原則，以在使用者嘗試與外部使用者共用數位資產時，封鎖使用者。 
 
@@ -140,12 +140,12 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 ### <a name="step-1-create-and-configure-an-isolated-sharepoint-online-team-site"></a>步驟 1：建立及設定隔離的 SharePoint Online 小組網站
 
-使用[部署隔離的 SharePoint Online 小組網站](https://docs.microsoft.com/office365/enterprise/deploy-an-isolated-sharepoint-online-team-site) (機器翻譯) 中的指示：
+使用[部署隔離的 SharePoint Online 小組網站](https://docs.microsoft.com/office365/enterprise/deploy-an-isolated-sharepoint-online-team-site) 中的指示：
 
 - 針對在網站上使用的每個 SharePoint 權限等級，建立及填入存取群組。
 - 建立及設定隔離的小組網站。
 
-### <a name="step-2-configure-the-site-for-an-office-365-retention-label-dlp-policy"></a>步驟 2：針對 Office 365 保留標籤 DLP 原則設定網站
+### <a name="step-2-configure-the-site-for-an-office-365-retention-label"></a>步驟 2：針對 Office 365 保留標籤設定網站
 
 使用[使用 Office 365 標籤與 DLP 來保護 SharePoint Online 檔案](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)中的指示來：
 
