@@ -3,7 +3,7 @@ title: 步驟 2：設定環境的分類
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並設定在組織中分類資料的不同方式。
-ms.openlocfilehash: 483549e7eaa7f6b77b775cf35bda7b0f42834ad2
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ca1b4aefca7ee63f1c8fe098c115fc4f0074d9f6
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072253"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047296"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>步驟 2：設定環境的分類
 
@@ -63,9 +63,8 @@ Microsoft 365 的敏感資訊類型會定義自動化程序 (例如搜尋) 如�
 在為特定類型的文件或具有特定內容的文件提供保護並實作安全性時，其中一項工作是使用標籤來加以標示，以便再套用一層安全性。 使用 Microsoft 365 中的敏感度標籤時，您可以：
 
 - 強制執行保護設定，例如加密、權限或新增浮水印。
-- 藉由在 Microsoft Intune 中使用端點保護，來防止敏感內容從組織內執行 Windows 的裝置上流出。 
 - 使用 Windows 資訊保護 (WIP) 端點保護來防止該內容遭人複製到第三方應用程式 (例如 Twitter 或 Gmail)，或複製到抽取式儲存體 (例如 USB 磁碟機)。
-- 使用 Microsoft Cloud App Security 來保護地三方應用程式和服務中的內容。 
+- 使用 Microsoft Cloud App Security (CAS) 來保護第三方應用程式和服務中的內容。 
 - 不使用任何保護設定而將內容分類。
 
 如果您使用敏感度標籤，請為每個安全性和資訊保護層級設定標籤。 例如，為下列項目建立三個敏感度標籤：
@@ -73,6 +72,8 @@ Microsoft 365 的敏感資訊類型會定義自動化程序 (例如搜尋) 如�
 - 基準
 - 敏感性
 - 高管制
+
+如果您將具有高度管控資料的檔案儲存在 SharePoint Online 網站中，並希望這些檔案的權限與網站相同，如果檔案離開網站，您就需要建立權限與網站相同的額外靈敏度標籤。
 
 如需詳細資訊，請參閱此[敏感度標籤概觀](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels)。
 

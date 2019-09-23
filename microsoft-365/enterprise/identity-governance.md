@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並設定 Azure AD 租用戶的身分識別治理。
-ms.openlocfilehash: a965b74afc680c2ff506e0fc2ddebc280ee312a1
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 1c0eab574e5436dd0c88a0b46d1916281bcf0577
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982906"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047356"
 ---
 # <a name="step-7-configure-identity-governance"></a>步驟 7：設定身分識別治理
 

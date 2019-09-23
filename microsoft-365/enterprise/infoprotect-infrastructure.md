@@ -3,7 +3,7 @@ title: 階段 6：資訊保護
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 企業版的資訊保護基礎結構部署步驟。
-ms.openlocfilehash: a00f61cbf2f8d00929a67dae6d401fd99014ec26
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 3174790d1ee6c9ed05605dd1c3c75405e3eac42b
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073683"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047306"
 ---
 # <a name="phase-6-information-protection"></a>階段 6：資訊保護
 
@@ -43,14 +43,15 @@ ms.locfileid: "34073683"
 |![](./media/stepnumbers/Step3.png)|[設定增強的 Microsoft 365 安全性](infoprotect-configure-increased-security-office-365.md)|
 |![](./media/stepnumbers/Step4.png)|[設定 Windows 資訊保護](infoprotect-deploy-windows-information-protection.md)|
 |![](./media/stepnumbers/Step5.png)|[設定 Office 365 資料外洩防護](infoprotect-data-loss-prevention.md)|
-|![](./media/stepnumbers/Step6.png)|[設定 Office 365 的特殊權限存取管理](infoprotect-configure-privileged-access-management.md)|
-
+|![](./media/stepnumbers/Step6.png)|[設定電子郵件加密](infoprotect-email-encryption.md)|
+|![](./media/stepnumbers/Step7.png)|[設定 Office 365 的特殊權限存取管理](infoprotect-configure-privileged-access-management.md)|
+|||
 
 完成這些步驟之後，請移至此階段的[允出準則](infoprotect-exit-criteria.md)，以確定您符合 Microsoft 365 企業版的必要與選用條件。
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何執行 Microsoft 365 企業版
 
-了解 Microsoft 的 IT 專家如何使用[Azure 資訊保護和保護資料安全](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR9)。
+了解 Microsoft 的 IT 專家如何使用[Azure 資訊保護和保護資料安全](https://www.microsoft.com/zh-TW/itshowcase/deploying-and-managing-microsoft-365#primaryR9)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 如何執行 Microsoft 365 企業版
 

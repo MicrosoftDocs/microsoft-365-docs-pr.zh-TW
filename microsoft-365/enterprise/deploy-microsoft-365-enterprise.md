@@ -3,7 +3,7 @@ title: 部署 Microsoft 365 企業版
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 08/09/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用來在組織中部署 Microsoft 365 企業版的資源。
-ms.openlocfilehash: 896ac2ec0f9964344a416d583858e90a1a59e8fd
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: ce4b3dfeb3c13f68b0218f5aea5740b6dc5252d0
+ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982066"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37050274"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版
 
@@ -39,7 +39,7 @@ Microsoft 365 企業版是本機與雲端生產力應用程式和服務的組合
 
 ## <a name="fasttrack-for-microsoft-365"></a>適用於 Microsoft 365 的 FastTrack
 
-由 Microsoft 工程師提供的 FastTrack 可作為訂閱的一部分使用，具有不間斷且可重複的好處，可協助您以自己的步調移轉到雲端。 FastTrack 也可讓您存取合格合作夥伴的其他服務。 至今隨著超過 40000 位啟用此服務的客戶，FastTrack 可協助最大化 ROI、加速部署，以及提高整個組織中的採用率。 請參閱[適用於 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365)。
+由 Microsoft 工程師提供的 FastTrack 是*包含在訂閱之內的免費服務*，是一項持續提供且可重複利用的權益，可協助您以自己的步調移轉到雲端。 FastTrack 也可讓您存取合格合作夥伴的其他服務。 至今隨著超過 40000 位啟用此服務的客戶，FastTrack 可協助最大化 ROI、加速部署，以及提高整個組織中的採用率。 請參閱[適用於 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365)。
 
 如果您想要利用 FastTrack 來部署 Microsoft 365 企業版，您可以使用 FastTrack [Microsoft 365 部署建議程式](https://aka.ms/microsoft365setupguide)，以了解有關部署及設定基礎結構的指導方針。 您必須以 Office 365 或 Microsoft 365 租用戶中全域系統管理員的身分登入，才能存取此頁面。
 
@@ -77,23 +77,23 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
 如果您不熟悉 Microsoft 365 企業版或特定產品或功能，了解這些項目的最佳方式就是親自建置及觀看其運作方式。
 
-而測試實驗室指南 (TLG) 可讓此操作更容易，此服務會使用試用版或付費版訂用帳戶，在簡化但具代表性的環境中逐步引導您完成基礎結構或功能的設定。
+而測試實驗室指南 (TLG) 可讓此操作更容易，此服務會使用試用版或付費版訂用帳戶，在簡化但具代表性的測試環境中逐步引導您完成基礎結構或功能的設定。
 
-使用 TLG，您可以自學、示範、自訂或建立複雜組態、工作負載或端對端案例的概念證明。
+使用 TLG，您可以自學、示範、自訂或建立複雜組態、工作負載或端對端案例的概念證明 (PoC)。
 
 如需詳細資訊，請參閱 [Microsoft 365 企業版測試實驗室指南](m365-enterprise-test-lab-guides.md)。
 
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-## <a name="transition-your-entire-organization"></a>轉換您的整個組織
+## <a name="transition-your-entire-organization"></a>轉換整個組織
 
-若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請參閱[將您的組織轉換至 Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
+若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請參閱[將您的組織轉換至 Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)海報。
 
 [![將您的組織轉換至 Microsoft 365 海報](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 這份雙頁海報可讓您快速清查您現有的基礎結構，並取得移至 Microsoft 365 企業版中對應產品或服務的指導方針。 包含 Windows 和 Office 產品和其他基礎結構與安全性元素，例如裝置管理、身分識別以及資訊和威脅防護。
 
-您可以[下載此轉換海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
+您也可以[下載此轉換海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
 ## <a name="how-did-others-do-it"></a>其他人怎麼執行此操作？
 

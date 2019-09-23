@@ -3,7 +3,7 @@ title: 資訊保護基礎結構的允出準則
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 檢查資訊保護型服務和基礎結構的準則，確定您的設定符合 Microsoft 365 企業版的需求。
-ms.openlocfilehash: 267a6efaef5a5bcfb0ec9f8e0e9f33d525f5ce74
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 02e972a80d4b42ae66193bbbc55d0f1e63be5ba6
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071943"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047236"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>資訊保護基礎結構的允出準則
 
@@ -88,16 +88,30 @@ ms.locfileid: "34071943"
 
 如有需要，[步驟 5](infoprotect-data-loss-prevention.md) 可協助您符合這項要求。 
 
-
 <a name="crit-infoprotect-step6"></a>
+## <a name="optional-email-encryption-is-configured"></a>選用：已設定電子郵件加密
+
+您已視需要設定組織的以下電子郵件加密：
+
+|||
+|:-------|:-----|
+| **加密方法** | **針對傳送的電子郵件** |
+| [Office 365 郵件加密 (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | 在組織外部使用加密 |
+| [資訊版權管理 (IRM)](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | 具有加密和權限 |
+| [安全多用途網際網路郵件延伸 (S/MIME)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | 使用公開金鑰加密同時使用加密和數位簽章 |
+|||
+
+如有需要，[步驟 6](infoprotect-email-encryption.md) 可協助您符合這項要求。
+
+<a name="crit-infoprotect-step7"></a>
 ## <a name="optional-configure-privileged-access-management-in-office-365"></a>選用：在 Office 365 中設定特殊權限存取管理
 
 您已使用[在 Office 365 中設定特殊存取權限管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)主題中的資訊來啟用特殊存取權限，並在組織中建立一個或多個特殊存取權限原則。 您已設定這些原則，並且啟用了即時存取，以存取敏感資料或存取關鍵配置設定。
 
-如有需要，[步驟 6](infoprotect-configure-privileged-access-management.md) 可協助您符合這項要求。 
+如有需要，[步驟 7](infoprotect-configure-privileged-access-management.md) 可協助您符合這項要求。 
 
 ## <a name="results-and-next-steps"></a>結果和後續步驟
 
-Microsoft 365 企業版的資訊保護基礎架構使用已定義的安全性層級、Office 365 的增強安全性、使用敏感資料類型和標籤的分類、Windows 資訊保護、資料外洩防護以及特殊存取權限管理。
+Microsoft 365 企業版的資訊保護基礎架構使用已定義的安全性層級、Office 365 的增強安全性、使用敏感資料類型和標籤的分類、Windows 資訊保護、資料外洩防護、電子郵件加密以及特殊存取權限管理。
 
 如果您遵照 Microsoft 365 企業版的端到端部署，那麼現在您已準備好讓[工作負載和案例](deploy-workloads.md)利用基礎架構的所有功能和設定。
