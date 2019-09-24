@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 提供非企業組織逐步執行 Microsoft 365 企業版底層基礎結構的簡化階段。
-ms.openlocfilehash: 8e2c254bf352baa14ff62dad500e5cdfa0af4563
-ms.sourcegitcommit: 639607bbf02bdedd3fa5cd7b0984b422fe6c874e
+ms.openlocfilehash: 37bbf04eafeb3adc63d9dd01d052376f98856df4
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35624631"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071732"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-for-non-enterprises"></a>適用於非企業的 Microsoft 365 企業版底層基礎結構
 
@@ -63,9 +63,9 @@ ms.locfileid: "35624631"
 
 ### <a name="administrator-accounts"></a>系統管理員帳戶
 
-透過非常強的密碼與多重要素驗證 (MFA)，保護您的全域系統管理員使用者帳戶。 如需詳細資訊，請參閱[保護全域系統管理員帳戶](identity-designate-protect-admin-accounts.md#protect-global-administrator-accounts)。
+透過強式密碼與多重要素驗證 (MFA)，保護您的全域系統管理員使用者帳戶。 如需詳細資訊，請參閱[保護全域系統管理員帳戶](identity-create-protect-global-admins.md#protect-global-administrator-accounts)。
 
-如果您的組織需要高安全性而且擁有 Microsoft 365 企業版 E5，請使用 Azure AD Privileged Identity Management 啟用系統管理員即時存取。 如需詳細資訊，請參閱[設定隨選全域系統管理員](identity-designate-protect-admin-accounts.md#set-up-on-demand-global-administrators)。
+如果您的組織需要高安全性而且擁有 Microsoft 365 企業版 E5，請使用 Azure AD Privileged Identity Management 啟用系統管理員即時存取。 如需詳細資訊，請參閱[設定隨選全域系統管理員](identity-create-protect-global-admins.md#identity-pim)。
 
 ### <a name="recommendations-for-groups"></a>群組的建議
 
@@ -82,7 +82,7 @@ ms.locfileid: "35624631"
 
 ### <a name="hybrid-identity"></a>混合式身分識別
 
-如果您有內部部署 AD DS 網域，您需要與您的 Microsoft 365 企業版訂閱的 Azure AD 租用戶同步處理您的網域的這組使用者帳戶、群組和連絡人。 如果是非企業組織，請在具有密碼雜湊同步處理 (PHS) 的伺服器上設定 Azure AD Connect。 如需詳細資訊，請參閱[同步處理身分識別](identity-azure-ad-connect.md)。
+如果您有內部部署 AD DS 網域，您需要與您的 Microsoft 365 企業版訂閱的 Azure AD 租用戶同步處理您的網域的這組使用者帳戶、群組和連絡人。 如果是非企業組織，請在具有密碼雜湊同步處理 (PHS) 的伺服器上設定 Azure AD Connect。 如需詳細資訊，請參閱[同步處理身分識別](identity-add-user-accounts.md)。
 
 ### <a name="more-secure-user-access-with-conditional-access-policies"></a>條件式存取原則的使用者存取更安全
 
@@ -135,16 +135,16 @@ Azure AD 會評估使用者登入的條件，而且可以使用條件式存取�
 
 | 功能 | 用途 |
 |:------|:-----|
-| 自助式群組管理 | 允許由群組擁有者而不是 IT 人員管理 Azure AD 群組。 如需詳細資訊，請參閱[自助式群組管理](identity-self-service-group-management.md#allow-users-to-create-and-manage-their-own-groups)。 |
-| 動態群組成員資格 | 根據使用者帳戶屬性 (例如部門或國家/地區) 來設定自動新增或移除 Azure AD 群組的使用者帳戶。 如需詳細資訊，請參閱[動態群組成員資格](identity-self-service-group-management.md#set-up-dynamic-group-membership)。 |
-| 群組型授權 | 使用群組成員資格，可自動指派或取消指派授權給使用者帳戶。 如需詳細資訊，請參閱[群組型授權](identity-self-service-group-management.md#set-up-automatic-licensing)。 |
+| 自助式群組管理 | 允許由群組擁有者而不是 IT 人員管理 Azure AD 群組。 如需詳細資訊，請參閱[自助式群組管理](identity-use-group-management.md#allow-users-to-create-and-manage-their-own-groups)。 |
+| 動態群組成員資格 | 根據使用者帳戶屬性 (例如部門或國家/地區) 來設定自動新增或移除 Azure AD 群組的使用者帳戶。 如需詳細資訊，請參閱[動態群組成員資格](identity-use-group-management.md#set-up-dynamic-group-membership)。 |
+| 群組型授權 | 使用群組成員資格，可自動指派或取消指派授權給使用者帳戶。 如需詳細資訊，請參閱[群組型授權](identity-use-group-management.md#set-up-automatic-licensing)。 |
 |  |  |
 
 如果您使用群組型授權，請建立一個名為 LICENSED 的群組來包含已指派 Microsoft 365 企業版授權的使用者帳戶名稱。
 
 ### <a name="monitor-user-access"></a>監視使用者存取
 
-如果您有 Microsoft 365 企業版 E5，就可以使用 Azure AD Identity Protection 來監視和分析使用者登入是否有認證洩露的問題。 如需詳細資訊，請參閱[防護認證洩露](identity-multi-factor-authentication.md#protect-against-credential-compromise)。
+如果您有 Microsoft 365 企業版 E5，就可以使用 Azure AD Identity Protection 來監視和分析使用者登入是否有認證洩露的問題。 如需詳細資訊，請參閱[防護認證洩露](identity-secure-user-sign-ins.md#protect-against-credential-compromise)。
 
 ### <a name="your-configuration-so-far"></a>您目前的設定
 

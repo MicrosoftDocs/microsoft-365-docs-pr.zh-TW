@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 適用於您組織之使用者和群組的方案。
-ms.openlocfilehash: 05b854c182b6f624cf143ed93920c344391ee416
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: ac7f5e56bae882e01c31cacee856f73b0ead772f
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981804"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071632"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>步驟 1：適用於使用者與群組的方案
 
@@ -78,8 +78,6 @@ ms.locfileid: "36981804"
 
 - 在 Azure AD 中的使用者帳戶清單，其與貴組織的員工和與貴組織合作的廠商、承包商及外部夥伴相對應。
 - Azure AD 中一組群組和其成員反映的使用者帳戶和其他群組的邏輯集合，適用於為 Microsoft 雲端服務的安全性設定佈建進行自動授權。
-
-做為過渡期的檢查點，您可以看到此步驟的[允出準則](identity-exit-criteria.md#crit-identity-user-groups)。
 
 Azure AD 使用者和群組建立之後，您就可以開始指派授權及使用生產力工作負載，例如商務用 OneDrive 或 Exchange Online。
 
