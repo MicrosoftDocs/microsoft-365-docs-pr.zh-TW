@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: 檢視裝置原則並登入 Microsoft 365 商務版，以全域系統管理員 credintials 的動作。
-ms.openlocfilehash: 3231cfa61dcc85cda162b05f2c653048e980a8d9
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ea53276f4ee8430031105f2b9c516471c702e839
+ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072193"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37121271"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>檢視及管理原則和裝置
 
-![指向橫幅https://aka.ms/aboutM365preview。](media/m365admincenterchanging.png)
+[![標籤，讓您知道變更在系統管理中心，然後您可以在 aka.ms/aboutM365preview 尋找更多詳細資料。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## <a name="view-and-edit-device-policies"></a>檢視及編輯裝置原則
 

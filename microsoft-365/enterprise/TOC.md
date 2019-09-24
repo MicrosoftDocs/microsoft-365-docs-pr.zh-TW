@@ -104,43 +104,11 @@
 ## [建議的 Exchange Online 存取原則](secure-email-recommended-policies.md)
 ## [建議的 SharePoint Online 存取原則](sharepoint-file-access-policies.md)
 
-# [合規性解決方案](../compliance/compliance-solutions-overview.md?toc=/microsoft-365/enterprise/toc.json)
-## [ISO — 建議使用巨集指令計劃](../compliance/iso-action-plan.md)
-## [NIST — 建議使用巨集指令計劃](../compliance/nist-action-plan.md) 
-## [GDPR](../compliance/gdpr.md?toc=/microsoft-365/enterprise/toc.json)
+# [Microsoft 365 合規性](../compliance/index.yml)
+# [Microsoft 365 安全性](../security/index.yml)
 
-### [建議的 GDPR 計劃](../compliance/gdpr-action-plan.md)
-
-### [責任整備檢查清單](../compliance/gdpr-arc.md)
-#### [Office 365](../compliance/gdpr-arc-Office365.md)
-#### [Azure](../compliance/gdpr-arc-Azure.md)
-#### [Dynamics 365](../compliance/gdpr-arc-Dynamics365.md)
-#### [Microsoft 支援和專業服務](../compliance/gdpr-arc-prof-services.md)
-
-
-### [資訊保護](../compliance/gdpr-information-protection.md?toc=/microsoft-365/enterprise/toc.json)
-
-### [資料主體要求](../compliance/gdpr-data-subject-requests.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Office 365](../compliance/gdpr-dsr-Office365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Azure](../compliance/gdpr-dsr-Azure.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Intune](../compliance/gdpr-dsr-Intune.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Dynamics 365](../compliance/gdpr-dsr-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Visual Studio 系列](../compliance/gdpr-dsr-visual-studio-family.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Azure DevOps Services](../compliance/gdpr-dsr-vsts.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Microsoft 支援服務與專業服務](../compliance/gdpr-dsr-prof-services.md?toc=/microsoft-365/enterprise/toc.json)
-
-### [外洩通知](../compliance/gdpr-breach-notification.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Office 365](../compliance/gdpr-breach-Office365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Azure](../compliance/gdpr-breach-Azure.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Dynamics 365](../compliance/gdpr-breach-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Microsoft 支援和專業服務](../compliance/gdpr-breach-Microsoft-Support-Professional-Services.md?toc=/microsoft-365/enterprise/toc.json)
-
-### [資料保護影響評估](../compliance/gdpr-data-protection-impact-assessments.md)
-#### [Office 365](../compliance/gdpr-dpia-office365.md)
-#### [Azure](../compliance/gdpr-dpia-azure.md)
-#### [Dynamics](../compliance/gdpr-dpia-dynamics.md)
-#### [Microsoft 支援服務與專業服務](../compliance/gdpr-dpia-prof-services.md)
-
-### [Microsoft 的資料保護長](../compliance/gdpr-data-protection-officer.md)
-
-# [安全性解決方案](../security/index.yml)
+# [企業商務營運持續力管理 (EBCM) 與雲端服務](ebcm-understanding-ebcm-with-cloud-services.md)
+## [客戶和雲端合作夥伴 EBCM 責任](ebcm-customer-and-cloud-partner-ebcm-responsibilities.md)
+## [Microsoft 365 雲端服務恢復能力](ebcm-m365-service-resiliency.md)
+## [開發您的持續性計劃](ebcm-developing-your-ebcm-plan.md)
+## [服務事件的補救案例](ebcm-microsoft-365-mitigations.md)
