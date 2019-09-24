@@ -3,7 +3,7 @@ title: 階段 2：識別基礎結構允出準則
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/06/2019
+ms.date: 09/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的設定符合 Microsoft 365 企業版準則，是否具備以識別為基礎的服務和基礎結構。
-ms.openlocfilehash: 4621c9e12519e39931fe8b883b3a8c446c39dae3
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 880bfa2b71158a2fa5c64fb09af2e8a34428a7a8
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981854"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071682"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>階段 2：識別基礎結構允出準則
 
@@ -26,17 +26,7 @@ ms.locfileid: "36981854"
 
 請確定您的身分識別基礎結構符合下列必要準則，而且您已將這些視為選擇性準則。
 
-若需身分識別基礎架構的其他建議，另請參閱「[先決條件](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites)」(機器翻譯)。
-
-<a name="crit-identity-user-groups"></a>
-## <a name="required-your-users-groups-and-group-memberships-have-been-created"></a>必要：您的使用者、群組和群組成員資格均已建立
-
-您已建立使用者帳戶和群組，因此：
-
-- 貴組織的員工和與貴組織合作的廠商、承包商及合作夥伴擁有在 Azure Active Directory (Azure AD) 中相對應的使用者帳戶。
-- Azure AD 群組和其成員包含適用於各種目的使用者帳戶和其他群組 (例如 Microsoft 雲端服務的安全性設定佈建、自動授權，與其他使用)。
-
-如有需要，[步驟 1](identity-plan-users-groups.md) 可協助您符合這項要求。
+若需身分識別基礎架構的其他建議，另請參閱「[先決條件](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites)」。
 
 <a name="crit-identity-global-admin"></a>
 ## <a name="required-your-global-administrator-accounts-are-protected"></a>必要：全域系統管理員帳戶會受到保護 
@@ -45,17 +35,17 @@ ms.locfileid: "36981854"
 
 如果您略過這項要求，全域系統管理員帳戶可能會受到攻擊和洩露，讓攻擊者可以取得對您資料的系統範圍存取權，來進行蒐集、損毀，或要求贖金。
 
-如有需要，[步驟 2](identity-designate-protect-admin-accounts.md#identity-global-admin) 可協助您符合這項要求。
+如有需要，[步驟 1](identity-create-protect-global-admins.md#identity-global-admin) 可協助您符合這項要求。
 
 ### <a name="how-to-test"></a>如何測試
 
 使用這些步驟來確認您已受保護全域系統管理員帳戶：
 
-1. 在 PowerShell 命令提示字元執行下列 Azure Active Directory PowerShell for Graph 命令。您應該會看到僅專用全域系統管理員帳戶的清單。
+1. 在 PowerShell 命令提示字元執行以下 Azure Active Directory PowerShell 的圖表。 您應該只會看到專用全域系統管理員帳戶清單。
    ```
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. 使用步驟 1 中的每個帳戶登入Office 365。每個登入必須要求多重要素驗證和您組織中可用的最強型次要驗證。
+2. 使用步驟 1 中的每個帳戶登入 Office 365。 每個登入必須要求 Azure Multi-Factor Authentication 和您組織中可用的最強型次要驗證。
 
 > [!Note]
 > 請參閱[連線到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)，以取得安裝 Azure Active Directory PowerShell for Graph 模組及登入 Office 365 的指示。
@@ -69,17 +59,96 @@ ms.locfileid: "36981854"
 
 如果您略過此選項時，全域系統管理員帳戶可能會受到持續線上攻擊，且機密資訊洩露時，可能會讓攻擊者蒐集、損毀，或保留您的機密資訊，以勒索贖金。
 
-如有需要，[步驟 2](identity-designate-protect-admin-accounts.md#identity-pim) 可協助您使用此選項。
+如有需要，[步驟 1](identity-create-protect-global-admins.md#identity-pim) 可協助您使用此選項。
 
+<a name="crit-identity-pam"></a>
+## <a name="optional-you-have-configure-privileged-access-management-in-office-365"></a>選用：您擁有在 Office 365 中設定特殊權限存取管理
+
+您已使用[在 Office 365 中設定特殊存取權限管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)主題中的資訊來啟用特殊存取權限，並在組織中建立一個或多個特殊存取權限原則。 您已設定這些原則，並且啟用了即時存取，以存取敏感資料或存取關鍵配置設定。
+
+如有需要，[步驟 1](identity-create-protect-global-admins.md#identity-pam) 可協助您符合這項要求。 
+
+<a name="crit-password-prot"></a>
+## <a name="optional-azure-ad-password-protection-is-banning-the-use-of-weak-passwords"></a>選用：Azure AD 密碼保護禁止使用弱式密碼
+
+您已[在雲端](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)啟用禁止使用錯誤密碼，以及為您的[內部部署 Active Directory 網域服務 (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises) 啟用全域禁止密碼以及選用的自訂字詞。
+
+如有需要，[步驟 2](identity-secure-your-passwords.md#identity-password-prot) 可協助您使用此選項。
+
+<a name="crit-identity-pw-reset"></a>
+## <a name="optional-users-can-reset-their-own-passwords"></a>選用：使用者可以重設自己的密碼
+
+您已使用 [Azure AD 自助密碼重設快速部署](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)來為您的使用者設定密碼重設。
+
+如果您不符合此條件，使用者將依賴使用者帳戶的系統管理員重設密碼，造成其他 IT 系統管理員的負擔。
+
+如有需要，[步驟 2](identity-secure-your-passwords.md#identity-pw-reset) 可協助您使用此選項。
+
+<a name="crit-identity-sso"></a>
+## <a name="optional-users-can-sign-in-using-azure-ad-seamless-single-sign-on"></a>選用：使用者可以使用 Azure AD 無縫單一登入來進行登入
+
+您可以為您組織啟用 [Azure AD Connect：隨選即用單一登入](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start)，以簡化使用者登入以雲端為基礎之應用程式 (例如 Office 365) 的方式。
+
+如果您略過此選項，使用者在存取使用您 Azure AD 租用戶的其他應用程式時可能會收到提示，要求他們提供認證。
+
+如有需要，[步驟 2](identity-secure-your-passwords.md#identity-sso) 可協助您使用此選項。
+
+<a name="crit-identity-custom-sign-in"></a>
+## <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>選用：已個人化您組織的 Office 365 登入畫面
+
+您已使用「[將公司商標新增至登入及存取面板頁面](http://aka.ms/aadpaddbranding)」來將貴組織的商標新增至 Office 365 登入頁面。
+
+如果您略過此選項，使用者會看到一般的 Office 365 登入畫面，並且可能無法確定它們登入的是貴組織的網站。
+
+如有需要，[步驟 2](identity-secure-your-passwords.md#identity-custom-sign-in) 可協助您使用此選項。
+
+
+<a name="crit-identity-mfa"></a>
+## <a name="optional-azure-multi-factor-authentication-is-enabled-for-your-users"></a>選用：已為使用者啟用 Azure Multi-Factor Authentication
+
+您已使用[規劃 Azure Multi-Factor Authentication ](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)和[條件式存取原則](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access)，為您的使用者帳戶啟用 Azure Multi-Factor Authentication (MFA)。
+
+如果您略過此選項，使用者帳戶會容易遭到網路攻擊所引起的認證洩露。若使用者帳戶的密碼洩露時，帳戶的所有資源和功能 (例如系統管理員角色) 皆可供攻擊者使用。這可讓攻擊者複製、損毀，或保留內部文件和其他資料以勒索贖金。
+
+如有需要，[步驟 3](identity-secure-user-sign-ins.md#identity-mfa) 可協助您使用此選項。
+
+### <a name="how-to-test"></a>如何測試
+
+1.  建立測試使用者帳戶，並為他們指派授權。 
+2.  使用您為實際使用者帳戶使用的其他驗證方法 (例如將簡訊傳送到您的電話)，來為測試使用者帳戶設定 Azure Multi-Factor Authentication。 
+3.  以測試使用者帳戶登入 Office 365 入口網站。
+4.  請確認 MFA 會提示您輸入其他的驗證資訊，且結果為驗證成功。 
+5.  刪除測試使用者帳戶。
+
+<a name="crit-identity-ident-prot"></a>
+## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>選用：已啟用 Azure AD Identity Protection 來防止認證洩露 (僅限 Microsoft 365 企業版 E5)
+
+您已啟用 Azure AD Identity Protection 來：
+
+- 解決潛在的身分識別弱點。
+- 偵測可能的認證洩露嘗試。
+- 調查並解決持續的可疑身分識別事件。
+
+如果您略過此選項，您將無法偵測或自動抵禦認證洩露嘗試或調查與身分識別相關的安全性事件。這可能會使您的組織憑證洩露並對貴組織的機密資料產生威脅。
+
+如有需要，[步驟 3](identity-secure-user-sign-ins.md#identity-ident-prot) 可協助您使用此選項。
+
+
+### <a name="how-to-test"></a>如何測試
+
+1. 使用初始密碼建立測試使用者帳戶。
+2. 使用「[讓使用者在 Office 365 中重設其自身密碼](https://docs.microsoft.com/office365/admin/add-users/let-users-reset-passwords)」中的步驟來重設對測試使用者帳戶的密碼。
+3. 登出，然後再使用重設密碼登入測試使用者帳戶。
+4. 刪除測試使用者帳戶。
 
 <a name="crit-identity-sync"></a>
-## <a name="required-users-and-groups-are-synchronized-with-azure-ad"></a>必要：使用者和群組會與 Azure AD 同步處理
+## <a name="required-for-hybrid-identity-users-and-groups-are-synchronized-with-azure-ad"></a>混合式身分識別的必要：使用者和群組會與 Azure AD 同步處理
 
-如果您有現有內部部署 Active Directory Domain Services (AD DS)，表示您已使用 Azure AD Connect 將從內部部署 AD DS 的使用者帳戶和群組同步處理到 Azure AD 租用戶。
+如果您有現有的內部部署 Active Directory Domain Services (AD DS)，表示您已使用 Azure AD Connect 將內部部署 AD DS 內的使用者帳戶和群組同步處理到 Azure AD 租用戶。
 
 隨著將目錄同步處理，使用者可以使用他們用來登入電腦和存取內部部署資源所用的相同認證來登入 Office 365 和其他 Microsoft 雲端服務。
 
-如有需要，[步驟 3](identity-azure-ad-connect.md#identity-sync) 可協助您符合這項要求。
+如有需要，[步驟 4](identity-add-user-accounts.md#identity-sync) 可協助您符合這項要求。
 
 如果您略過這項要求，您將有兩組使用者帳戶和群組：
 
@@ -107,63 +176,11 @@ ms.locfileid: "36981854"
 
 如果您略過此選項時，則可以更精確地評估以雲端為基礎的身分識別基礎結構之狀態。
 
-如有需要，[步驟 3](identity-azure-ad-connect.md#identity-sync-health) 可協助您使用此選項。
+如有需要，[步驟 4](identity-add-user-accounts.md#identity-sync-health) 可協助您使用此選項。
 
 ### <a name="how-to-test"></a>如何測試
-Azure AD Connect Health 入口網站會顯示內部部署網域控制站和進行中同步處理的目前和正確狀態。
+Azure AD Connect Health 入口網站會顯示您內部部署網域控制站和進行中同步處理的目前和正確狀態。
 
-<a name="crit-identity-mfa"></a>
-## <a name="optional-multi-factor-authentication-is-enabled-for-your-users"></a>選用：已為使用者啟用多重要素驗證
-
-您已使用[多重要素驗證方案](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)和[條件式存取原則](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted#enable-multi-factor-authentication-with-conditional-access)，為您的使用者帳戶啟用多重要素驗證 (MFA)。
-
-如果您略過此選項，使用者帳戶會容易遭到網路攻擊所引起的認證洩露。若使用者帳戶的密碼洩露時，帳戶的所有資源和功能 (例如系統管理員角色) 皆可供攻擊者使用。這可讓攻擊者複製、損毀，或保留內部文件和其他資料以勒索贖金。
-
-如有需要，[步驟 4](identity-multi-factor-authentication.md#identity-mfa) 可協助您使用此選項。
-
-### <a name="how-to-test"></a>如何測試
-
-1.  建立測試使用者帳戶，並為他們指派授權。 
-2.  使用您為實際使用者帳戶使用的其他驗證方法 (例如將簡訊傳送到您的電話)，來為測試使用者帳戶設定多重要素驗證。 
-3.  以測試使用者帳戶登入 Office 365 入口網站。
-4.  請確認 MFA 會提示您輸入其他的驗證資訊，且結果為驗證成功。 
-5.  刪除測試使用者帳戶。
-
-<a name="crit-password-prot"></a>
-## <a name="optional-azure-ad-password-protection-is-banning-the-use-of-weak-passwords"></a>選用：Azure AD 密碼保護禁止使用弱式密碼
-
-您已[在雲端](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)啟用禁止使用的錯誤密碼，以及為您的[內部部署 Active Directory 網域服務 (AD DS)](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises) 啟用全域禁止密碼以及選用的自訂字詞。
-
-如有需要，[步驟 4](identity-multi-factor-authentication.md#identity-password-prot) 可協助您使用此選項。
-
-<a name="crit-identity-ident-prot"></a>
-## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>選用：已啟用 Azure AD Identity Protection 來防護認證洩露 (僅限 Microsoft 365 企業版 E5)
-
-您已啟用 Azure AD Identity Protection 來：
-
-- 解決潛在的身分識別弱點。
-- 偵測可能的認證洩露嘗試。
-- 調查並解決持續的可疑身分識別事件。
-
-如果您略過此選項，您將無法偵測或自動抵禦認證洩露嘗試或調查與身分識別相關的安全性事件。這可能會使您的組織憑證洩露並對貴組織的機密資料產生威脅。
-
-如有需要，[步驟 4](identity-multi-factor-authentication.md#identity-ident-prot) 可協助您使用此選項。
-
-<a name="crit-identity-pw-reset"></a>
-## <a name="optional-users-can-reset-their-own-passwords"></a>選用：使用者可以重設自己的密碼
-
-您已使用 [Azure AD 自助密碼重設快速部署](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)來為您的使用者設定密碼重設。
-
-如果您不符合此條件，使用者將依賴使用者帳戶的系統管理員重設密碼，造成其他 IT 系統管理員的負擔。
-
-如有需要，[步驟 5](identity-password-reset.md#identity-pw-reset) 可協助您使用此選項。
-
-### <a name="how-to-test"></a>測試方式
-
-1. 使用初始密碼建立測試使用者帳戶。
-2. 使用「[讓使用者在 Office 365 中重設其自身密碼](https://docs.microsoft.com/office365/admin/add-users/let-users-reset-passwords)」中的步驟來重設對測試使用者帳戶的密碼。
-3. 登出，然後再使用重設密碼登入測試使用者帳戶。
-4. 刪除測試使用者帳戶。
 
 <a name="crit-identity-pw-writeback"></a>
 ## <a name="optional-password-writeback-is-enabled-for-your-users"></a>選用：已為您的使用者啟用密碼回寫
@@ -172,7 +189,7 @@ Azure AD Connect Health 入口網站會顯示內部部署網域控制站和進�
 
 如果您略過此選項，未連線到內部部署網路的使用者必須透過 IT 系統管理員，才能重設或解除鎖定 AD DS 密碼。
 
-如有需要，[步驟 5](identity-password-reset.md#identity-pw-writeback) 可協助您使用此選項。
+如有需要，[步驟 4](identity-add-user-accounts.md#identity-pw-writeback) 可協助您使用此選項。
 
 >[!Note]
 >若要充分利用 Azure AD Identity Protection 功能 (例如當 Azure AD 已偵測到高風險的帳戶洩露時，要求使用者變更其內部部署密碼)，則需要密碼回寫。
@@ -188,27 +205,10 @@ Azure AD Connect Health 入口網站會顯示內部部署網域控制站和進�
 4. 輸入目前的密碼並輸入新密碼，然後加以確認。
 5. 登出 Office 入口網站與遠端電腦，然後使用測試使用者帳戶與新密碼登入電腦。 這證明您可以使用 Azure AD 租用戶來變更內部部署 AD DS 使用者帳戶的密碼。
 
-<a name="crit-identity-sso"></a>
-## <a name="optional-users-can-sign-in-using-azure-ad-seamless-single-sign-on"></a>選用：使用者可以使用 Azure AD 無縫單一登入來進行登入
+### <a name="how-to-test"></a>如何測試
 
-您可以為您組織啟用 [Azure AD Connect：隨選即用單一登入](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start)，以簡化使用者登入以雲端為基礎之應用程式 (例如 Office 365) 的方式。
+使用您的使用者帳戶名稱和 Azure Multi-Factor Authentication.登入 Office 365 入口網站。 您應該會在登入頁面上看到您的自訂商標元素。
 
-如果您略過此選項，使用者存取其他使用 Azure AD 租用戶的應用程式時可能會收到提示，要求他們提供認證。
-
-如有需要，[步驟 5](identity-password-reset.md#identity-sso) 可協助您使用此選項。
-
-<a name="crit-identity-custom-sign-in"></a>
-## <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>選用：已個人化您組織的 Office 365 登入畫面
-
-您已使用「[將公司商標新增至登入及存取面板頁面](http://aka.ms/aadpaddbranding)」來將貴組織的商標新增至 Office 365 登入頁面。
-
-如果您略過此選項，使用者會看到一般的 Office 365 登入畫面，並且可能無法確定它們登入的是貴組織的網站。
-
-如有需要，[步驟 5](identity-password-reset.md#identity-custom-sign-in) 可協助您使用此選項。
-
-### <a name="how-to-test"></a>測試方式
-
-透過使用者帳戶名稱與多重要素驗證登入 Office 365 入口網站。您應會在登入頁面上看到您自訂的商標元素。
 
 <a name="crit-identity-self-service-groups"></a>
 ## <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a>選用：已啟用特定 Azure AD 的安全性和 Office 365 群組的自助群組管理
@@ -217,9 +217,9 @@ Azure AD Connect Health 入口網站會顯示內部部署網域控制站和進�
 
 如果您略過此選項時，所有 Azure AD 群組管理工作必須由 IT 系統管理員執行。
 
-如有需要，[步驟 6](identity-self-service-group-management.md#identity-self-service-groups) 可協助您使用此選項。
+如有需要，[步驟 5](identity-use-group-management.md#identity-self-service-groups) 可協助您使用此選項。
 
-### <a name="how-to-test"></a>測試方式
+### <a name="how-to-test"></a>如何測試
 1.  使用 Azure 入口網站在 Azure AD 中建立測試使用者帳戶。
 2.  使用測試使用者帳戶登入並建立測試 Azure AD 安全性群組。
 3.  登出，然後使用您的 IT 系統管理員帳戶登入。
@@ -241,7 +241,7 @@ Azure AD Connect Health 入口網站會顯示內部部署網域控制站和進�
 
 如果銷售和會計群組是動態的，您只需要變更使用者帳戶的部門值。
 
-如有需要，[步驟 6](identity-self-service-group-management.md#identity-dyn-groups) 可協助您使用此選項。
+如有需要，[步驟 5](identity-use-group-management.md#identity-dyn-groups) 可協助您使用此選項。
 
 ### <a name="how-to-test"></a>如何測試
 
@@ -255,23 +255,24 @@ Azure AD Connect Health 入口網站會顯示內部部署網域控制站和進�
 <a name="crit-identity-group-license"></a>
 ## <a name="optional-group-based-licensing-to-automatically-assign-and-remove-licenses-to-user-accounts-based-on-group-membership"></a>選用：以群組為基礎的授權會根據群組成員資格，自動將授權指派至使用者帳戶和將其移除
 
-您已為適當的 Azure AD 安全性群組[啟用以群組為基礎的授權](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal)，使得 Microsoft 365 企業版授權能夠自動指派或取消指派。
+您已為適當的 Azure AD 安全性群組[啟用以群組為基礎的授權](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal)，因此系統會自動指派或取消指派您的 Microsoft 365 企業版授權。
 
 若您略過此選項，您必須手動進行以下動作：
 
 - 將授權指派給您想要提供存取權的新使用者。
-- 將授權從不再存在於您組織中或不需要存取權的使用者取消指派。
+- 從已不在您組織內或不需要存取權的使用者取消指派授權。
 
-如有需要，[步驟 6](identity-self-service-group-management.md#identity-group-license) 可協助您使用此選項。
+如有需要，[步驟 5](identity-use-group-management.md#identity-group-license) 可協助您使用此選項。
 
 ### <a name="how-to-test"></a>如何測試
 
-1. 在 Azure AD 中使用 Azure 入口網站建立測試安全性群組，並將以群組為基礎的授權設定為指派 Microsoft 365 企業版授權。
+1. 在 Azure AD 中使用 Azure 入口網站建立測試安全性群組，並設定以群組為基礎的授權，以指派 Microsoft 365 企業版授權。
 2. 在 Azure AD 中建立測試使用者帳戶，並將它新增到測試安全性群組。
-3. 檢查 Microsoft 365 系統管理中心的使用者帳戶內容，以確保其已獲指派 Microsoft 365 企業版授權。
-4. 從測試安全性群組移除測試使用者帳戶。
-5. 檢查使用者帳戶內容，以確保其不再獲指派 Microsoft 365 企業版授權。
+3. 在 Microsoft 365 系統管理中心中檢查使用者帳戶的內容，以確定其已獲指派 Microsoft 365 企業版授權。
+4. 將測試使用者帳戶從測試安全性群組中移除。
+5. 檢查使用者帳戶內容，以確定其不再獲指派 Microsoft 365 企業版授權。
 6. 刪除測試安全性群組和測試使用者帳戶。
+
 
 <a name="crit-identity-access-reviews"></a>
 ## <a name="optional-access-reviews-configured-and-being-used-to-monitor-access"></a>選用：已設定存取權檢閱並用來監控存取權
@@ -282,7 +283,8 @@ Azure AD Connect Health 入口網站會顯示內部部署網域控制站和進�
 - [Azure AD 角色](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 - [Azure 資源角色](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review?toc=%2fazure%2factive-directory%2fgovernance%2ftoc.json)
 
-如有需要，[步驟 7](identity-governance.md#identity-access-reviews) 可協助您使用此選項。
+如有需要，[步驟 6](identity-configure-identity-governance.md#identity-access-reviews) 可協助您使用此選項。
+
 
 ## <a name="results-and-next-steps"></a>結果和後續步驟
 
