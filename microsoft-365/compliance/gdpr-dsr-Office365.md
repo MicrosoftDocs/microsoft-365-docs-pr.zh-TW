@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 30d6e1566fda4dbc84800bbd4359a689f858f9e4
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: bacf6b55bc4c92987511bdf1ab4ac5b120f11836
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982659"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071492"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr"></a>GDPR 的 Office 365 資料主體要求
 
@@ -104,7 +104,7 @@ Microsoft Office 365 服務也可在下列國家雲環境中取得：[Office 365
 ||
 
 > [!NOTE]
-> 內容搜尋電子文件探索工具並未在[由 21Vianet 運作 (中國) 的 Office 365](https://support.office.com/article/Learn-about-Office-365-operated-by-21Vianet-A8AB5061-3346-4DA0-BB7C-5260822B53AE) (英文) 中提供。這表示您無法使用這項工具來搜尋和匯出表格 1 中所顯示 Office 365 應用程式中的客戶資料。不過，您可以在 Exchange Online 中使用 「就地電子文件探索」工具來搜尋使用者信箱中的內容。您也可以在 SharePoint Online 中使用「電子文件探索中心」來搜尋 SharePoint 網站和 OneDrive 帳戶中的內容。或者，您可以要求文件擁有者協助您尋找並進行內容變更或刪除，或視需要匯出內容。如需詳細資訊，請參閱：</br><br> • [建立就地電子文件探索搜尋](https://technet.microsoft.com/library/dd353189(v=exchg.150).aspx) (機器翻譯)<br> • [在 SharePoint Online 中設定 eDiscovery 中心](https://support.office.com/article/Set-up-an-eDiscovery-Center-in-SharePoint-Online-A18F8975-AA7F-43B4-A7D6-001D14744D8E)
+> 內容搜尋電子文件探索工具並未在[由 21Vianet 運作 (中國) 的 Office 365](https://support.office.com/article/Learn-about-Office-365-operated-by-21Vianet-A8AB5061-3346-4DA0-BB7C-5260822B53AE) (英文) 中提供。這表示您無法使用這項工具來搜尋和匯出表格 1 中所顯示 Office 365 應用程式中的客戶資料。不過，您可以在 Exchange Online 中使用 「就地電子文件探索」工具來搜尋使用者信箱中的內容。您也可以在 SharePoint Online 中使用「電子文件探索中心」來搜尋 SharePoint 網站和 OneDrive 帳戶中的內容。或者，您可以要求文件擁有者協助您尋找並進行內容變更或刪除，或視需要匯出內容。如需詳細資訊，請參閱：</br><br> • [建立就地電子文件探索搜尋](https://technet.microsoft.com/library/dd353189(v=exchg.150).aspx)<br> • [在 SharePoint Online 中設定 eDiscovery 中心](https://support.office.com/article/Set-up-an-eDiscovery-Center-in-SharePoint-Online-A18F8975-AA7F-43B4-A7D6-001D14744D8E)
 
 ### <a name="using-content-search-to-find-personal-data"></a>使用內容搜尋來尋找個人資料
 
@@ -1443,7 +1443,7 @@ Power BI 依賴用於其儀表板和報告的基礎來源資料，才能完整�
 關閉服務最方便的方式是使用 Office 365 PowerShell，並從組織中的所有使用者移除對應的使用者授權。這會實際上限制任何人存取該服務中的資料。如需詳細指示，請參閱[使用 Office 365 PowerShell 停用服務的存取](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-with-office-365-powershell)，並遵循程序從單一授權方案停用使用者的 Office 365 服務。
 
 > [!NOTE]
-> 針對 Yammer，除了從使用者帳戶中移除 Yammer 授權之外，您也必須將使用者使用 Yammer 認證登入 Yammer 的能力停用 (透過在登入時，強制使用 Office 365 認證)。如需詳細指示，請參閱[關閉 Office 365 使用者的 Yammer 存取](https://support.office.com/article/Turn-off-Yammer-access-for-Office-365-users-1f79bfad-f713-4143-aa5d-5584985ce53a) (機器翻譯)。
+> 針對 Yammer，除了從使用者帳戶中移除 Yammer 授權之外，您也必須將使用者使用 Yammer 認證登入 Yammer 的能力停用 (透過在登入時，強制使用 Office 365 認證)。如需詳細指示，請參閱[關閉 Office 365 使用者的 Yammer 存取](https://support.office.com/article/Turn-off-Yammer-access-for-Office-365-users-1f79bfad-f713-4143-aa5d-5584985ce53a)。
 
 ### <a name="temporarily-removing-data-from-sharepoint-online-or-onedrive-for-business-sites"></a>暫時從 SharePoint Online 或商務用 OneDrive 網站中移除資料
 
@@ -1730,10 +1730,10 @@ Microsoft 也讓您能夠存取、匯出及刪除系統所產生的記錄，根�
 
 - DSR 調查程序完成時，請刪除案例。 這會移除與案例相關聯的所有內容搜尋和匯出工作。
 
-若要開始使用 DSR 案例，請參閱[使用 Office 365 安全性與合規性中心的 DSR 案例工具來管理 GDPR 資料主體要求](https://support.office.com/article/manage-dsr-cases-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c) (機器翻譯)。
+若要開始使用 DSR 案例，請參閱[使用 Office 365 安全性與合規性中心的 DSR 案例工具來管理 GDPR 資料主體要求](https://support.office.com/article/manage-dsr-cases-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c)。
 
 > [!IMPORTANT]
-> 電子文件探索管理員可以檢視和管理貴組織中所有的 DSR 案例。如需有關不同電子文件探索角色的詳細資訊，請參閱[將電子文件探索權限指派給潛在案例成員](https://docs.microsoft.com/Office365/SecurityCompliance/assign-ediscovery-permissions) (機器翻譯)。
+> 電子文件探索管理員可以檢視和管理貴組織中所有的 DSR 案例。如需有關不同電子文件探索角色的詳細資訊，請參閱[將電子文件探索權限指派給潛在案例成員](https://docs.microsoft.com/Office365/SecurityCompliance/assign-ediscovery-permissions) 。
 
 ### <a name="set-up-compliance-boundaries-to-limit-the-scope-of-content-searches"></a>設定合規性界限來限制內容搜尋的範圍
 
@@ -1767,7 +1767,7 @@ IT 系統管理員可以使用安全性與合規性中心的稽核記錄搜尋�
 - 已移動檔案
 - 已上傳或下載檔案
 
-您可以搜尋特定活動的稽核記錄、活動類型、特定使用者所執行的活動，以及其他搜尋準則。 除了 SharePoint Online 和商務用 OneDrive 活動外，您也可以搜尋 Flow、Power BI 和 Microsoft Teams 中的活動。 稽核記錄會保留 90 天。 因此，您將無法搜尋 90 天以前的使用者活動。 如需稽核活動的完整清單，以及如何搜尋稽核記錄，請參閱[搜尋 Office 365 安全性與合規性中心的稽核記錄](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)。
+您可以搜尋特定活動的稽核記錄、活動類型、特定使用者所執行的活動，以及其他搜尋準則。 除了 SharePoint Online 和商務用 OneDrive 活動外，您也可以搜尋 Flow、Power BI 和 Microsoft Teams 中的活動。 稽核記錄會保留 90 天。 因此，您將無法搜尋 90 天以前的使用者活動。 如需稽核活動的完整清單，以及如何搜尋稽核記錄，請參閱[搜尋 Office 365 安全性與合規性中心的稽核記錄](search-the-audit-log-in-security-and-compliance.md)。
 
 > [!TIP]
 > 若要解決上述的 90 天限制，並維護貴組織稽核記錄的執行歷程記錄，您可以根據週期性排程 (例如，每隔 30 天) 匯出所有活動，以具有貴組織稽核記錄的連續記錄。
