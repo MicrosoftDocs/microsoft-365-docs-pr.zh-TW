@@ -3,7 +3,7 @@ title: 使用現有基礎結構部署 Microsoft 365 企業版
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/04/2018
+ms.date: 09/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐一討論在您有現有基礎結構時，部署 Microsoft 365 企業版的允出準則。
-ms.openlocfilehash: 8c9c1d1900e9fd1a025d3fd74cc9f358b612a4d1
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 1b464398b981133e2851760d7bfe16869f1d1429
+ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073913"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37148507"
 ---
 # <a name="deployment-of-microsoft-365-enterprise-with-existing-infrastructure"></a>使用現有基礎結構部署 Microsoft 365 企業版
 
@@ -27,7 +27,7 @@ ms.locfileid: "34073913"
 在結束每個階段前，您必須檢查允出準則，其為一組您必須符合的必要條件以及要考慮的選用條件。每個階段的允出準則可確保您的內部部署和雲端基礎結構與產生的端對端設定符合 Microsoft 365 企業版部署需求。
 
 > [!Note] 
-> FastTrack 是由 Microsoft 工程師提供的持續且可重複的好處，作為訂閱的一部分供您使用，可協助您以自己的步調移轉到雲端。FastTrack 也可在您有需要時，讓您存取合格合作夥伴的其他服務。至今隨著超過 40000 位啟用此服務的客戶，FastTrack 可協助最大化 ROI、加速部署，以及提高整個組織中的採用率。請參閱[適用於 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365)。
+> FastTrack 是由 Microsoft 工程師提供的持續且可重複的權益，作為訂閱的一部分免費供您使用，可協助您以自己的步調移轉到雲端。FastTrack 也可在您有需要時，讓您存取合格合作夥伴的其他服務。至今隨著超過 40,000 位啟用此服務的客戶，FastTrack 可協助最大化 ROI、加速部署，以及提高整個組織中的採用率。請參閱[適用於 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365)。
 
 ## <a name="exit-criteria-for-networking-phase-1"></a>網路的允出準則 (階段 1)
 
@@ -49,7 +49,7 @@ ms.locfileid: "34073913"
 
 ## <a name="exit-criteria-for-office-365-proplus-phase-4"></a>Office 365 專業增強版的允出準則 (階段 4)
 
-符合適用於 Microsoft 365 企業版之 Office 365 專業增強版的評估、部署規劃和部署需求。
+符合 Office 365 專業增強版的評估、部署規劃和部署需求。
 
 [!INCLUDE [Deployment exit criteria for Office 365 ProPlus](./includes/deployment-exit-criteria-office365proplus.md)]
 
