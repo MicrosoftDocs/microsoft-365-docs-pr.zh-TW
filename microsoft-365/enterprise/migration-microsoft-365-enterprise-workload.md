@@ -2,7 +2,7 @@
 title: 移轉至 Microsoft 365 企業版
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2019
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 在整個組織中逐步執行將 Microsoft Office、Office 伺服器及 Windows 的各版本移轉為 Microsoft 365 企業版的程序。
-ms.openlocfilehash: 0def2f90a016c6d81f2c05bb3571646d97edf4ca
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 2f5b1b077346e3225252ef25a4e9e685c4892a7c
+ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982816"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37148487"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>移轉至 Microsoft 365 企業版
 
@@ -30,7 +30,7 @@ ms.locfileid: "36982816"
 - 將裝置上的 Windows 7 和 Windows 8.1 移轉為 Windows 10 企業版
 
 >[!Note]
->Windows 7 將於 2020 年 1 月 14 日進入終止支援。 如需詳細資訊，請按一下[這裡](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。
+>Windows 7 將於 **2020 年 1 月 14 日**終止支援。 如需詳細資訊，請按一下[這裡](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。
 >
 
 在一段時間內完成所有這些移轉，讓您的組織更接近[現代職場](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)，也就是安全的整合式環境，讓組織可發揮團隊合作和創意，而以上這些都是藉由 Microsoft 365 企業版來提供及達成。 
@@ -47,8 +47,9 @@ ms.locfileid: "36982816"
 
 - 可使用最新的安全性更新和支援修正進行[更新](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)，但此程序有時需手動進行，且可能無法擴及整個組織。
 - 未以最佳化方式啟用以便運用 Microsoft 雲端技術，及協助您的企業進行數位轉型。
+- 不包含新功能。
  
-Microsoft 365 企業版包含 Office 365 專業增強版，此 Office 用戶端產品版本可使用 Microsoft 365 企業版授權，且會從 Microsoft 雲端進行安裝與更新。請參閱[關於企業中的 Office 365 專業增強版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)以取得詳細資訊。
+Microsoft 365 企業版包含 Office 365 專業增強版，此 Office 用戶端產品版本可使用 Microsoft 365 企業版授權，且會從 Microsoft 雲端進行安裝與更新。 Office 365 專業增強版包括安全性更新和最新功能。 如需詳細資訊，請參閱[關於企業中的 Office 365 專業增強版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
 
 ### <a name="office-2007"></a>Office 2007
 
@@ -72,17 +73,19 @@ Office 365 專業增強版會自動安裝更新，可以充分利用 Office 365 
 2. 在使用者電腦中解除安裝 Office 2010。
 3. 安裝 Office 365 專業增強版 (個別或搭配 IT 推出)。如需詳細資訊，請參閱[階段 4：Office 365 專業增強版](office365proplus-infrastructure.md)。
 
-Office 365 專業增強版會自動安裝更新，可以充分利用 Office 365 中以雲端為基礎的服務，以取得增強的安全性和生產力。
+Office 365 專業增強版會自動安裝安全性和新功能更新，並可以充分利用 Microsoft 365 中以雲端為基礎的服務，以取得增強的安全性和生產力。
 
 ### <a name="office-2013-and-office-2016"></a>Office 2013 和 Office 2016
 
-尚未決定 Office 2013 和 Office 2016 版的 Office 終止支援藍圖。不過，以 Office 2010 為例，您仍然必須[安裝更新](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)，其根據組織規模可能無法順利調整大小。若不使用 Office 2013 或 Office 2016 最新更新來持續更新您的電腦，或將電腦從 Office 2013 更新到 Office 2016，請考慮：
+Office 2013 和 Office 2016 版的終止支援藍圖尚未確定。 不過，與 Office 2010 相同，您仍必須[安全性更新](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)，而具體取決於組織的規模，可能無法妥善地擴充。
+
+若不想使用 Office 2013 或 Office 2016 的最新安全性更新持續更新您的電腦，或將您電腦從 Office 2013 更新至 Office 2016，請考慮：
 
 1. 為使用者取得並指派 Microsoft 365 授權。
 2. 在使用者電腦中解除安裝 Office 2013 或 Office 2016。
 3. 安裝 Office 365 專業增強版 (個別或搭配 IT 推出)。如需詳細資訊，請參閱[階段 4：Office 365 專業增強版](office365proplus-infrastructure.md)。
 
-Office 365 專業增強版會自動安裝更新，可以充分利用 Office 365 中以雲端為基礎的服務，以取得增強的安全性和生產力。
+Office 365 專業增強版會自動安裝安全性和新功能更新，並可以充分利用 Microsoft 365 中以雲端為基礎的服務，以取得增強的安全性和生產力。
 
 ## <a name="migration-for-microsoft-office-server-products"></a>Microsoft Office 伺服器產品的移轉
 
@@ -93,7 +96,7 @@ Office 365 專業增強版會自動安裝更新，可以充分利用 Office 365 
 - 不包含新的生產力應用程式，例如 Microsoft Teams。
 - 不包含最新的安全性功能，例如 Exchange 進階威脅防護。
 
-Microsoft 365 企業版包含 Office 365，其中包含雲端型版本的 Office 伺服器服務，其與內部部署版本的 Office 伺服器軟體使用部分相同工具，例如網頁瀏覽器和 Outlook 用戶端。這些服務會持續更新，而不需要 IT 人員，為您節省維護及更新內部部署伺服器所耗費的時間。這些服務也含有未在 Office 伺服器軟體中提供的增強功能。 
+Microsoft 365 企業版包括 Office 365，其中包括雲端型的 Office 伺服器服務，這些服務使用的工具與內部部署版的 Office 伺服器軟體相同，例如 Web 瀏覽器和 Outlook 用戶端。 這些服務會不斷進行安全性更新，而不需 IT 進行，進而為您節省了維護和更新內部部署伺服器所需的時間。 這些服務也含有 Office 伺服器軟體中沒有的新功能增強功能。 
 
 ### <a name="office-server-2007"></a>Office Server 2007
 
@@ -113,14 +116,14 @@ Microsoft 365 企業版包含 Office 365，其中包含雲端型版本的 Office
 
 ### <a name="office-server-2010"></a>Office Server 2010
 
-對於 Office 2010 版的伺服器產品，已決定終止支援下列項目：
+以下 Office 2010 版的伺服器產品將於 **2020 年 10 月 13 日**終止支援：
 
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support) 是在 **2010 年 1 月 14 日**。
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) 是在 **2020 年 10 月 13 日**。
+- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
+- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
 若不使用 Office 2013 或 Office 2016 版的伺服器產品升級 Office 2010 版的這些伺服器產品，請考慮：
 
-1. 將 Office 2010 伺服器上的資料移轉到 Office 365。如需協助，請參閱 [Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365) 或雇用 Microsoft 合作夥伴。
+1. 將 Office 2010 伺服器上的資料移轉至 Microsoft 365。 若需要協助，請參閱[適用於 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365) 或雇用 Microsoft 合作夥伴。
 2. 向使用者推出新功能和作業程序。
 3. 不再需要執行 Office 2010 伺服器產品的內部部署伺服器時，請予以解除。
 
@@ -142,7 +145,7 @@ Microsoft 365 企業版包含 Office 365，其中包含雲端型版本的 Office
 
 ## <a name="migration-for-microsoft-windows-7-and-81"></a>Microsoft Windows 7 和 8.1 的移轉
 
-Windows 7 於 **2010 年 1 月 14 日**進入終止支援。 若要移轉執行 Windows 7 或 Windows 8.1 的裝置，您可以執行[就地升級](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade)。 
+Windows 7 將於 **2020 年 1 月 14 日**終止支援。 若要移轉執行 Windows 7 或 Windows 8.1 的裝置，您可以執行[就地升級](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade)。 
 
 如需其他方法，請參閱 [Windows 10 部署案例](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)。 您也可以自行[規劃 Windows 10 部署](https://aka.ms/planforwin10deployment)。
 
@@ -152,7 +155,7 @@ Windows 7 於 **2010 年 1 月 14 日**進入終止支援。 若要移轉執行 
 
 [![Office 2010 用戶端與伺服器和 Windows 7 終止支援海報的影像](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
-這張單頁海報可讓您快速了解可以採取的各種方法，以防止 Office 2010 用戶端與伺服器產品以及 Windows 7 進入終止支援，而海報上也會強調顯示 Microsoft 365 企業版中慣用的方式和選項支援。
+這張單頁海報可讓您快速了解可以採取的各種方法，以防止 Office 2010 用戶端與伺服器產品以及 Windows 7 進入終止支援，而海報上也會強調顯示 Microsoft 365 企業版中慣用的方式和結果目的地。
 
 您可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
