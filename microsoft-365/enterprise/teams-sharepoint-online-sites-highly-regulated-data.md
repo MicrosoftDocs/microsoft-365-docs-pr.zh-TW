@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立安全的 SharePoint Online 小組網站或 Microsoft Teams 小組，以儲存您最有價值且機密的數位資產。
-ms.openlocfilehash: 04984be44ddb2cc1aabc2032970f92e71899b268
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 1243a88e6553b1d58370a60b5e2fec38d3dbcaf6
+ms.sourcegitcommit: 681ae93ca1d07532944665cf5d99ff1f08c0b46a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047330"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37210049"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>適用於高管制資料的 Microsoft Teams 和 SharePoint Online 網站
 
