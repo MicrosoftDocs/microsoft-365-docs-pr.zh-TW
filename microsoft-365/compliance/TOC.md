@@ -7,15 +7,17 @@
 ## [使用您的免費 Azure Active Directory 訂閱](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Office 365 中的安全性與合規性計劃](plan-for-security-and-compliance.md)
 
-# 管理測試人員風險
+# 管理內部的風險
 ## [保護使用者和裝置存取權](protect-access-to-data-and-services.md)
-## [特殊權限存取管理](privileged-access-management-overview.md)
-## [設定特殊權限存取管理](privileged-access-management-configuration.md)
 ## [客戶加密箱](customer-lockbox-requests.md)
+## [特殊權限存取管理]()
+### [了解權限存取管理](privileged-access-management-overview.md)
+### [設定特殊權限存取管理](privileged-access-management-configuration.md)
 ## 客戶金鑰
 ### [使用客戶金鑰控制 Office 365 中的資料](controlling-your-data-using-customer-key.md)
 ### [Office 365 中使用客戶金鑰的服務加密常見問題集](service-encryption-with-customer-key-faq.md)
-## [監督通訊內容](supervision-policies.md)
+## [通訊監督]()
+### [了解通訊監督](supervision-policies.md)
 ### [為您的組織設定監督原則](configure-supervision-policies.md)
 ## [資訊障礙](information-barriers.md)
 ### [定義資訊障礙原則](information-barriers-policies.md)
@@ -285,6 +287,7 @@
 ## [指派電子文件探索權限](assign-ediscovery-permissions.md)
 ## [設定 Office 365 中電子文件探索調查的合規性界限](set-up-compliance-boundaries.md)
 ## [電子文件探索解決方案系列 - 資料外洩案例 - 搜尋及清除](data-spillage-scenariosearch-and-purge.md)
+## [針對 eDiscovery 常見問題進行疑難排解](ediscovery-troubleshooting-common-issues.md)
 
 ## 管理保留
 ### [建立電子文件探索保留](ediscovery-cases.md#step-4-place-content-locations-on-hold)
