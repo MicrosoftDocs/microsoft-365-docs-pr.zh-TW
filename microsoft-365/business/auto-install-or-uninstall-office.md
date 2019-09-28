@@ -10,26 +10,22 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: '安裝或解除安裝 Office，從 Microsoft 365 商務版系統管理中心的 Windows 10 裝置上。 '
-ms.openlocfilehash: 1e962f51882ddfd97da566858a0a1e6fb56ecbb8
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: d82ab8292211d1adacba732922bf693dd2157ad6
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071953"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287528"
 ---
 # <a name="automatically-install-or-uninstall-office-on-windows-10-devices"></a>在 Windows 10 裝置上自動安裝或解除安裝 Office
 
-![指向橫幅https://aka.ms/aboutM365preview。](media/m365admincenterchanging.png)
+[![標籤，讓您知道變更在系統管理中心，然後您可以在 aka.ms/aboutM365preview 尋找更多詳細資料。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 您可以從 Microsoft 365 商務版系統管理中心快速且輕鬆地將 Office 安裝到 Windows 10 電腦。
   

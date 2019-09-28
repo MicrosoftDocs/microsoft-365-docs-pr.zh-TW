@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: 在 Microsoft Outlook 中傳送或回覆 S/MIME 加密郵件的實作方式，與非加密郵件十分相似。
-ms.openlocfilehash: 9b7ba86039fe774570c38d58a15591b7f1521302
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 63f45688946f1946f0b0a63cec748d0f0c6a50ee
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077535"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37305927"
 ---
 # <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a>傳送及接收 S/MIME 簽署和加密的 Exchange Online 中的電子郵件
 

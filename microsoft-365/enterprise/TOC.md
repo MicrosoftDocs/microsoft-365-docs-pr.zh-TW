@@ -45,6 +45,7 @@
 ### [Exchange Online](exchangeonline-workload.md)
 ### [SharePoint Online 和商務用 OneDrive](sharepoint-online-onedrive-workload.md)
 ### [移轉](migration-microsoft-365-enterprise-workload.md)
+### [讓遠端員工](empower-people-to-work-remotely.md)
 ### [高管制資料的團隊和網站](teams-sharepoint-online-sites-highly-regulated-data.md)
 ## [測試實驗室指南](m365-enterprise-test-lab-guides.md)
 ### [基本設定]()

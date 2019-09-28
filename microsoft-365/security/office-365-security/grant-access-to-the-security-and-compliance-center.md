@@ -16,19 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 使用者必須獲指派 Office 365 安全性 & 合規性中心的權限，他們可以管理其安全性或規範功能的任何之前。
-ms.openlocfilehash: c64991fa4ad847381cb00e38473aefc848015ff0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5f9688662714a4a33f2c6e3483cf902e0f61def9
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076863"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37305947"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>讓使用者能夠存取 Office 365 安全規範中心
 
-使用者必須獲指派 Office 365 安全性 & 合規性中心的權限，他們可以管理其安全性或規範功能的任何之前。 為 Office 365 全域系統管理員或 OrganizationManagement 角色群組的安全性 & 合規性中心中的成員，您可以授與這些權限的使用者。 使用者只能管理您授予權利給他們的安全性或符合性功能。 
-  
+使用者必須獲指派 Office 365 安全性 & 合規性中心的權限，他們可以管理其安全性或規範功能的任何之前。 為 Office 365 全域系統管理員或 OrganizationManagement 角色群組的安全性 & 合規性中心中的成員，您可以授與這些權限的使用者。 使用者只能管理您授予權利給他們的安全性或符合性功能。
+
 如需詳細資訊的不同的權限您可以授與安全性 & 合規性中心中的使用者，請參閱[Office 365 安全性 & 合規性中心的權限](permissions-in-the-security-and-compliance-center.md)。
-  
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
 - 您必須是 Office 365 全域系統管理員或若要完成本文中的步驟安全性 & 合規性中心，OrganizationManagement 角色群組的成員。
@@ -65,27 +65,27 @@ ms.locfileid: "37076863"
 
 ## <a name="use-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>使用 PowerShell 將另一個使用者存取權授與安全性 & 合規性中心
 
-1. [連線至 Office 365 安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+1. [連線至 Office 365 安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 2. 使用 **Add-RoleGroupMember** 命令，以將使用者新增至組織管理角色，如下列範例所示。
 
-   ```
+   ```PowerShell
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
    **參數**：
-  
+
    - _身分識別_是要新增成員的角色群組。
 
    - _成員_是要新增至角色群組的信箱、 萬用安全性群組 (USG) 或電腦。 您一次只能指定一個成員。
 
 如需詳細的語法及參數的詳細資訊，請參閱[Add-rolegroupmember](https://go.microsoft.com/fwlink/p/?LinkId=510859)。
-  
+
 ### <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 
 若要確認您已給予使用者存取安全性 & 合規性中心，使用**Get-rolegroupmember**指令程式檢視成員中 「 組織管理 」 角色群組，如下列範例所示。
-  
-```
+
+```PowerShell
 Get-RoleGroupMember -Identity "Organization Management"
 ```
 

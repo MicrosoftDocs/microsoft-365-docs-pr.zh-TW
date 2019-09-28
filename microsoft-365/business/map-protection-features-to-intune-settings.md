@@ -12,22 +12,18 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: 了解 Microsoft 365 商務版中的保護功能如何對應 Intune 設定。 訂閱提供您的授權，來修改 Intune 設定。
-ms.openlocfilehash: a6aaf6cc06c31b870eb85582f5aa47699919d75d
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 316dc8efbe69057f049bf8fadd3c3f41c358a33e
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074253"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287949"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-map-to-intune-settings"></a>Microsoft 365 商務版中的保護功能如何對應 Intune 設定
 
@@ -76,11 +72,11 @@ ms.locfileid: "34074253"
   
 |**Windows 10 應用程式原則設定**|**Intune 設定**|
 |:-----|:-----|
-|加密工作檔案  <br/> |**進階設定**\> **資料保護**：**撤銷的加密金鑰上的取消**和**MDM 註冊之撤銷存取受保護的資料裝置**都設定為**上**。  <br/> |
-|防止使用者將公司資料複製到個人檔案。  <br/> |**所需的設定**\> **Windows 資訊保護模式**。 **在**Microsoft 365 商務版中對應至：**隱藏會覆寫**，**關閉**Microsoft 365 商務版中對應至：**關閉**。  <br/> |
-|Office 文件存取控制  <br/> | 如果這設定為**上**在 Microsoft 365 商務版，然後  <br/> **進階設定**\> **存取**，**使用 Windows Hello 企業版以登入 Windows 的方法**設定為**上**，使用下列其他設定：  <br/> **設定的最小 pin 碼所需的字元數**設為**4**。  <br/> **設定 Windows hello 企業 pin 大寫字母運用**設為 [**不允許使用 pin 的大寫字母**。  <br/> **設定使用 Windows hello 企業 pin 的小寫字母**設為 [**不允許使用 pin 的小寫字母**。  <br/> **設定使用 Windows hello 企業 pin 的特殊字元**設為 [**不允許使用 pin 碼的特殊字元**。  <br/> **指定一段時間 （天） 系統之前，可以使用 pin 碼要求使用者變更**其設定為**0**。  <br/> **指定的可，不能重複使用的使用者帳戶相關聯的過去 pin 碼數目**設為**0**。  <br/> **將 [在抹除裝置之前所允許的驗證失敗的次數**設為相同 Microsoft 365 商務版 (預設值為 5)。  <br/> **最大時間量 （以分鐘為單位） 之後裝置處於閒置狀態，會導致成為 PIN 或密碼鎖定裝置允許**設為相同如 Microsoft 365 商務版所示。  <br/> |
-|啟用復原受保護的資料  <br/> |**進階設定**\> **資料保護**：**企業資料保護圖示顯示**] 和 [**針對 WIP 使用 Azure RMS**設定為**On**。  <br/> |
-|保護其他公司雲端位置  <br/> |**進階設定**\> **受保護的網域**和**雲端資源**顯示網域和 SharePoint 網站。  <br/> |
+|加密工作檔案  <br/> |**進階設定** \> **資料保護**：**撤銷的加密金鑰上的取消**和**MDM 註冊之撤銷存取受保護的資料裝置**都設定為**上**。  <br/> |
+|防止使用者將公司資料複製到個人檔案。  <br/> |**需要設定** \> **Windows 資訊保護模式**。 **在**Microsoft 365 商務版中對應至：**隱藏會覆寫**，**關閉**Microsoft 365 商務版中對應至：**關閉**。  <br/> |
+|Office 文件存取控制  <br/> | 如果這設定為**上**在 Microsoft 365 商務版，然後  <br/> **進階設定** \> **存取**，**使用 Windows Hello 企業版以登入 Windows 的方法**設定為**上**，使用下列其他設定：  <br/> **設定的最小 pin 碼所需的字元數**設為**4**。  <br/> **設定 Windows hello 企業 pin 大寫字母運用**設為 [**不允許使用 pin 的大寫字母**。  <br/> **設定使用 Windows hello 企業 pin 的小寫字母**設為 [**不允許使用 pin 的小寫字母**。  <br/> **設定使用 Windows hello 企業 pin 的特殊字元**設為 [**不允許使用 pin 碼的特殊字元**。  <br/> **指定一段時間 （天） 系統之前，可以使用 pin 碼要求使用者變更**其設定為**0**。  <br/> **指定的可，不能重複使用的使用者帳戶相關聯的過去 pin 碼數目**設為**0**。  <br/> **將 [在抹除裝置之前所允許的驗證失敗的次數**設為相同 Microsoft 365 商務版 (預設值為 5)。  <br/> **最大時間量 （以分鐘為單位） 之後裝置處於閒置狀態，會導致成為 PIN 或密碼鎖定裝置允許**設為相同如 Microsoft 365 商務版所示。  <br/> |
+|啟用復原受保護的資料  <br/> |**進階設定** \> **資料保護**：**企業資料保護圖示顯示**] 和 [**針對 WIP 使用 Azure RMS**設定為**On**。  <br/> |
+|保護其他公司雲端位置  <br/> |**進階設定** \> **受保護的網域**和**雲端資源**顯示網域和 SharePoint 網站。  <br/> |
 |這些 App 使用的檔案已受保護  <br/> |受保護的應用程式的清單會列在**允許的應用程式**。  <br/> |
 |||
    
@@ -96,7 +92,7 @@ ms.locfileid: "34074253"
 |協助保護電腦免於遭受 Microsoft Edge 中的網路安全威脅  <br/> |**Edge 瀏覽器設定**中的 [ **SmartScreen**設為**必要**。  <br/> |
 |閒置這段時間之後關閉裝置螢幕 (分鐘)  <br/> |在停止活動最少幾分鐘後鎖定螢幕 (分鐘)  <br/> |
 |允許使用者從 Microsoft Store 下載 App  <br/> |自訂 URI 原則  <br/> |
-|允許使用者存取 Cortana  <br/> |**一般**\> **Cortana**設為當設為**關閉**Microsoft 365 商務版中的 Intune 中的**區塊**。  <br/> |
+|允許使用者存取 Cortana  <br/> |**一般** \> **Cortana**設為當設為**關閉**Microsoft 365 商務版中的 Intune 中的**區塊**。  <br/> |
 |允許使用者接收來自 Microsoft 的 Windows 祕訣和廣告  <br/> |**Windows （聚焦）**，所有 blocked 如果這設定為 [**關閉**Microsoft 365 商務版中。  <br/> |
 |自動讓 Windows 10 裝置保持在最新狀態  <br/> | 此設定位於 [ **Microsoft Intune** \> **服務更新-Windows 10 更新通道**，選擇 [U**針對 Windows 10 裝置的 [更新原則]**，然後按一下 [**內容** \> **設定**。  <br/>  當 Microsoft 365 商務版設定設為**上**時，會設定所有的下列設定：  <br/> **服務分支**是設定為 [ **CB** (CBB 這 Microsoft 365 商務版中關閉時)。  <br/> **Microsoft 產品更新**] 設定為**允許**。  <br/> **[Windows 驅動程式**設為**允許**。  <br/> **自動更新行為**設定為使用**自動安裝在維護階段**：  <br/> **小時開始後**設為**上午 6 點**。  <br/> **作用中的時數結束**設為**10 PM**。  <br/> **品質更新延遲期間 （天）** 設為**0**。  <br/> **功能更新延遲期間 （天）** 設為**0**。  <br/> **傳遞最佳化下載模式**設定為**HTTP 混合相同 NAT 後對等**。  <br/> |
 |||

@@ -12,23 +12,19 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
 description: 了解裝置原則套用至組織中的所有使用者的 Windows 10。
-ms.openlocfilehash: ad7c58bd96a40ac7f91e6bbad1a394aeae70e49e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: dc43dc105d222d269eea1dac75b4f920e3960eb0
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071683"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287488"
 ---
 # <a name="configure-windows-10-devices"></a>設定 Windows 10 裝置
 

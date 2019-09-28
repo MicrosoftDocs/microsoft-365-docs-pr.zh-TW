@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 系統管理員可以在 Exchange Online Protection 中了解如何指派或移除 Exchange 系統管理中心 (EAC) 中的權限。
-ms.openlocfilehash: 589d979b9a2ed3f262eb8171fe08622c225548ce
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9b82836b5f9f28c3055e540890771def28382d2b
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078125"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306127"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>管理 EOP 中的系統管理員角色群組權限
-  
+
 在 Microsoft Exchange Online Protection (EOP) 中，您可以使用 Exchange 系統管理中心 (EAC)，讓使用者成為角色群組的成員，以為他們指派可用以執行特定管理工作的權限。您也可以使用 EAC 從角色群組中移除使用者。
-  
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
 - 預估完成時間：5-10 分鐘
@@ -33,7 +33,7 @@ ms.locfileid: "37078125"
 
 > [!TIP]
 > 有問題嗎？ 要求在[Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)論壇中的協助。
-  
+
 ## <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>使用 EAC 將成員指派給系統管理員角色群組
 
 1. 在 EAC 中，前往 [**權限** \> **系統管理員角色**]，按一下您想要新增的使用者或使用者，角色群組，然後按一下 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.gif)。
@@ -47,8 +47,8 @@ ms.locfileid: "37078125"
 5. 您會看到使用者已新增至 **[成員]** 窗格。按一下 **[儲存]**。
 
    > [!NOTE]
-   > 使用者可能必須先登出再登入，才能在您於角色群組中新增或移除成員後，看到其系統管理權限的變更。 
-  
+   > 使用者可能必須先登出再登入，才能在您於角色群組中新增或移除成員後，看到其系統管理權限的變更。
+
 ## <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>使用 EAC 從系統管理員角色群組中移除成員
 
 1. 在 EAC 中，前往 [**權限** \> **系統管理員角色**]，按一下您想要移除使用者或使用者的角色群組，然後按一下 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.gif)。
@@ -59,7 +59,7 @@ ms.locfileid: "37078125"
 
    > [!NOTE]
    > 使用者可能必須先登出再登入，才能在您於角色群組中新增或移除成員後，看到其系統管理權限的變更。
-  
+
 ## <a name="for-more-information"></a>相關資訊
 
 [EOP 中的功能權限](feature-permissions-in-eop.md)

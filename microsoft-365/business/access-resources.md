@@ -8,27 +8,22 @@ ms.topic: article
 ms.service: o365-administration
 ms.collection: M365-subscription-management
 localization_priority: Normal
-ms.custom:
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 了解如何取得內部資源的存取權，例如線條的商務應用程式、 檔案共用及從 Azure Active Directory 的印表機加入 Windows 10 裝置。
-ms.openlocfilehash: ab9049e78617372463b8446dc8f8bc0089d8c117
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 26ba0ffb64ddce32369002120657456e47ac0c7f
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981654"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287348"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>存取內部部署 Microsoft 365 商務版中的 Azure AD 加入裝置的資源
 
-任何 Windows 10 裝置加入 Azure Active Directory，將有權存取所有雲端為基礎的資源，例如您的 Office 365 應用程式，並可由 Microsoft 365 商務版保護。 也允許存取內部資源的企業營運一行 (LOB) 應用程式、 檔案共用及印表機，您必須使用[Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect)與 Azure Active Directory 同步您的內部部署 Active Directory。 下列影片詳細說明如何設定這以為最常見的案例的步驟。
- 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
+任何 Windows 10 裝置加入 Azure Active Directory，將有權存取所有雲端為基礎的資源，例如您的 Office 365 應用程式，並可由 Microsoft 365 商務版保護。 也允許存取內部資源的企業營運一行 (LOB) 應用程式、 檔案共用及印表機，您必須使用[Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect)與 Azure Active Directory 同步您的內部部署 Active Directory。 
 
 若要了解更多的[Azure Active Directory 中的裝置管理簡介](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)，請參閱。
 下列各節也摘要說明的步驟。

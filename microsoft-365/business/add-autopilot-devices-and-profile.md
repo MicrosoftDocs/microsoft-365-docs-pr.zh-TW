@@ -10,22 +10,19 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 localization_priority: Normal
-ms.custom:
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: 了解如何使用 Windows AutoPilot 為貴公司的新 Windows 10 裝置上設定。
-ms.openlocfilehash: ee4b4a9b06c08b8f9456822b680542665c27baf3
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: 563c3bbbc9f69996778417b35cfaa64d089770ef
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37121191"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287588"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用逐步指南新增 Autopilot 裝置和設定檔
 
