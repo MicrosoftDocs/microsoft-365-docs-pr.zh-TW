@@ -1,0 +1,205 @@
+---
+title: 強化遠端工作人員
+author: JoeDavies-MSFT
+ms.author: josephd
+manager: laurawi
+ms.date: 09/27/2019
+audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection:
+- M365-security-compliance
+- Strat_O365_Enterprise
+ms.custom: ''
+description: 設定基礎結構和安全性，讓您的員工隨時隨地都能遠端工作。
+ms.openlocfilehash: 2ff9923d0a301ba6ced720a9934ceb62bdff37c4
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306557"
+---
+# <a name="empower-remote-workers"></a><span data-ttu-id="38b90-103">強化遠端工作人員</span><span class="sxs-lookup"><span data-stu-id="38b90-103">Empower remote workers</span></span>
+
+<span data-ttu-id="38b90-104">*此案例同時適用於 Microsoft 365 企業版 E3 和 E5 版本*</span><span class="sxs-lookup"><span data-stu-id="38b90-104">*This scenario applies to both the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
+
+<span data-ttu-id="38b90-105">讓員工順利安全地在辦公室之外工作，對於多組織很重要，可以節省辦公室空間、雇用並留住不願意搬家的員工，以及降低員工的通勤時間，讓員工擁有更多時間來提高生產力和從事工作之外的減輕壓力的活動。</span><span class="sxs-lookup"><span data-stu-id="38b90-105">Allowing employees to work away from the office seamlessly and securely is important for many organizations to save on office space, hire and retain employees who are unwilling to relocate, and reduce employee commuting, leaving them with more time to be productive and for stress-reducing activities outside of work.</span></span>
+
+<span data-ttu-id="38b90-106">遠端工作 (又稱為遠距工作) 可以涵蓋以下範圍：</span><span class="sxs-lookup"><span data-stu-id="38b90-106">Remote working, also known as teleworking, can span a spectrum that includes:</span></span>
+
+- <span data-ttu-id="38b90-107">偶爾會離開辦公室去參加會議或客戶會議的員工。</span><span class="sxs-lookup"><span data-stu-id="38b90-107">Employees that are occasionally away from the office for conferences or client meetings.</span></span>
+- <span data-ttu-id="38b90-108">遠端全職工作的部分員工。</span><span class="sxs-lookup"><span data-stu-id="38b90-108">Some employees that work remotely full-time.</span></span>
+- <span data-ttu-id="38b90-109">沒有辦公室且所有員工皆為遠端的完全遠端組織。</span><span class="sxs-lookup"><span data-stu-id="38b90-109">A fully remote organization in which tHere's no office and all employees are remote.</span></span>
+
+<span data-ttu-id="38b90-110">為了支援遠端工作人員，Microsoft 365 企業版的功能組合能以高度共同作業的方式來啟用您的遠端工作人員，例如：</span><span class="sxs-lookup"><span data-stu-id="38b90-110">To support remote workers, a combination of features in Microsoft 365 Enterprise enables your remote workers in a highly collaborative way, such as:</span></span>
+
+- <span data-ttu-id="38b90-111">線上會議和聊天工作階段。</span><span class="sxs-lookup"><span data-stu-id="38b90-111">Online meetings and chat sessions.</span></span>
+- <span data-ttu-id="38b90-112">使用全域協助工具和即時共同作業的雲端式檔案儲存空間以共用工作區。</span><span class="sxs-lookup"><span data-stu-id="38b90-112">Shared workspaces for cloud-based file storage with global accessibility and real-time collaboration.</span></span>
+- <span data-ttu-id="38b90-113">共用工作和工作流程來劃分並完成工作。</span><span class="sxs-lookup"><span data-stu-id="38b90-113">Shared tasks and workflows to divide up the work and get things done.</span></span>
+
+<span data-ttu-id="38b90-114">為了加強安全性，Microsoft 365 企業版包括：</span><span class="sxs-lookup"><span data-stu-id="38b90-114">For strong security, Microsoft 365 Enterprise includes:</span></span>
+
+- <span data-ttu-id="38b90-115">強制執行驗證需求、偵測及回應高風險的登入，並封鎖選取的應用程式和不相容的裝置。</span><span class="sxs-lookup"><span data-stu-id="38b90-115">Enforced authentication requirements, detecting and responding to high-risk sign-ins, and blocking selected apps and non-compliant devices.</span></span>
+- <span data-ttu-id="38b90-116">加密連線與雲端中的數位資產。</span><span class="sxs-lookup"><span data-stu-id="38b90-116">Encrypted connections and digital assets in the cloud.</span></span>
+- <span data-ttu-id="38b90-117">用權限來定義使用者能夠如何使用檔案。</span><span class="sxs-lookup"><span data-stu-id="38b90-117">Permissions to define who can do what with files.</span></span>
+- <span data-ttu-id="38b90-118">資料外洩防護 (DLP) 用來防止高管制資料外洩。</span><span class="sxs-lookup"><span data-stu-id="38b90-118">Data loss prevention (DLP) to prevent leakage of highly regulated data.</span></span>
+
+<span data-ttu-id="38b90-119">遠端工作人員若要符合這些條件，請使用下列 Microsoft 365 企業版功能：</span><span class="sxs-lookup"><span data-stu-id="38b90-119">To meet these criteria for remote workers, use the following Microsoft 365 Enterprise features:</span></span>
+
+- <span data-ttu-id="38b90-120">使用者身分識別與登入安全性</span><span class="sxs-lookup"><span data-stu-id="38b90-120">User identity and sign-in security</span></span>
+  - <span data-ttu-id="38b90-121">Azure Active Directory (Azure AD) 使用多重要素驗證 (MFA) 的使用者帳戶</span><span class="sxs-lookup"><span data-stu-id="38b90-121">Azure Active Directory (Azure AD) user accounts with multi-factor authentication (MFA)</span></span>
+  - <span data-ttu-id="38b90-122">設定條件式存取原則，要求對有風險的登入進行 MFA</span><span class="sxs-lookup"><span data-stu-id="38b90-122">Conditional Access policies to require MFA for risky sign-ins</span></span>
+- <span data-ttu-id="38b90-123">共同作業平台</span><span class="sxs-lookup"><span data-stu-id="38b90-123">Collaboration platforms</span></span>
+  - <span data-ttu-id="38b90-124">遠端工作人員可以使用 Microsoft Teams、SharePoint 和 OneDrive 來排程和參加線上視訊會議，並同時處理相同的文件</span><span class="sxs-lookup"><span data-stu-id="38b90-124">Microsoft Teams, SharePoint, and OneDrive, with which remote workers can schedule and attend online video-based meetings and work on the same documents at the same time</span></span>
+- <span data-ttu-id="38b90-125">安全的資源存取</span><span class="sxs-lookup"><span data-stu-id="38b90-125">Secure access to resources</span></span>
+  - <span data-ttu-id="38b90-126">使用 Teams、SharePoint 網站和 OneDrive 的群組和權限，以便只有經過驗證且被允許的使用者才能存取</span><span class="sxs-lookup"><span data-stu-id="38b90-126">Groups and permissions for Teams, SharePoint sites, and OneDrive so that only authenticated and permitted users have access</span></span>
+- <span data-ttu-id="38b90-127">外洩檔案的保護</span><span class="sxs-lookup"><span data-stu-id="38b90-127">Protection for leaked files</span></span>
+  - <span data-ttu-id="38b90-128">Office 365 DLP 原則</span><span class="sxs-lookup"><span data-stu-id="38b90-128">Step 2: Office 365 labels and DLP policies</span></span>
+  - <span data-ttu-id="38b90-129">跟隨檔案的敏感度標籤，用於加密和權限</span><span class="sxs-lookup"><span data-stu-id="38b90-129">Sensitivity labels for encryption and permissions that travel with files</span></span>
+- <span data-ttu-id="38b90-130">Microsoft Intune 的裝置管理和安全性</span><span class="sxs-lookup"><span data-stu-id="38b90-130">Device management with Microsoft Intune</span></span>
+  - <span data-ttu-id="38b90-131">註冊受管理裝置</span><span class="sxs-lookup"><span data-stu-id="38b90-131">Enrollment for managed devices</span></span>
+  - <span data-ttu-id="38b90-132">個人裝置的應用程式設定</span><span class="sxs-lookup"><span data-stu-id="38b90-132">App settings for personal devices</span></span>
+  - <span data-ttu-id="38b90-133">裝置和應用程式原則</span><span class="sxs-lookup"><span data-stu-id="38b90-133">Device and app policies</span></span>
+- <span data-ttu-id="38b90-134">裝置的生產力應用程式</span><span class="sxs-lookup"><span data-stu-id="38b90-134">Productivity apps for devices</span></span>
+  - <span data-ttu-id="38b90-135">Office 365 專業增強版應用程式搭配 Teams、SharePoint 和 OneDrive 進行共同作業的體驗</span><span class="sxs-lookup"><span data-stu-id="38b90-135">Office 365 ProPlus apps for collaborative experiences with Teams, SharePoint, and OneDrive</span></span> 
+- <span data-ttu-id="38b90-136">Windows 10 企業版</span><span class="sxs-lookup"><span data-stu-id="38b90-136">Windows 10 Enterprise</span></span>
+  - <span data-ttu-id="38b90-137">全面的安全性功能，可防範網路攻擊並防止資料外洩</span><span class="sxs-lookup"><span data-stu-id="38b90-137">Comprehensive security features to protect against cyberattacks and prevent data leakage</span></span>
+- <span data-ttu-id="38b90-138">存取內部部署應用程式</span><span class="sxs-lookup"><span data-stu-id="38b90-138">Access to on-premises apps</span></span>
+  - <span data-ttu-id="38b90-139">具有混合式身分識別的組織可以使用 Azure AD 應用程式 Proxy，而不是使用虛擬私人網路 (VPN) 連線</span><span class="sxs-lookup"><span data-stu-id="38b90-139">Organizations that have hybrid identity can use Azure AD Application Proxy instead of virtual private network (VPN) connections</span></span>
+
+<span data-ttu-id="38b90-140">下列階段逐步引導您部署適用于遠端存取的 Microsoft 365 企業版功能，並推動採用遠端工作人員。</span><span class="sxs-lookup"><span data-stu-id="38b90-140">The following phases step you through deploying the feature of Microsoft 365 Enterprise for remote access and driving adoption for remote workers.</span></span> <span data-ttu-id="38b90-141">如果您已經部署這些階段的元素，請先確認它們符合所述的需求，再移至下一個元素。</span><span class="sxs-lookup"><span data-stu-id="38b90-141">If you have already deployed elements of these phases, ensure that they meet the stated requirements before moving on to the next element.</span></span>
+
+## <a name="phase-1-deploy-microsoft-365-features-and-capabilities-for-remote-workers"></a><span data-ttu-id="38b90-142">階段1：部署適用于遠端工作人員的 Microsoft 365 功能</span><span class="sxs-lookup"><span data-stu-id="38b90-142">Phase 1: Deploy Microsoft 365 features and capabilities for remote workers</span></span>
+
+<span data-ttu-id="38b90-143">由於此案例需要使用廣泛且大量的功能，我們將逐步引導您瞭解 [Microsoft 365 企業版部署指南](deploy-microsoft-365-enterprise.md)的底層基礎結構和工作量區段所需的元素。</span><span class="sxs-lookup"><span data-stu-id="38b90-143">Because of the breadth and number of features and capabilities required for this scenario, we’ll step you through the required elements of the foundation infrastructure and workloads sections of the [Microsoft 365 Enterprise Deployment Guide](deploy-microsoft-365-enterprise.md).</span></span>
+
+### <a name="step-1-foundation-infrastructure-requirements-for-remote-workers"></a><span data-ttu-id="38b90-144">步驟1：遠端工作人員的底層基礎結構需求</span><span class="sxs-lookup"><span data-stu-id="38b90-144">Step 1: Foundation infrastructure requirements for remote workers</span></span>
+
+<span data-ttu-id="38b90-145">在此步驟中，我們將造訪[底層基礎結構](deploy-foundation-infrastructure.md)，並列出啟用遠端工作人員所需的元素。</span><span class="sxs-lookup"><span data-stu-id="38b90-145">In this step, we’ll visit the phases of the [foundation infrastructure](deploy-foundation-infrastructure.md) and list the required elements to enable remote workers.</span></span>
+
+<span data-ttu-id="38b90-146">[階段 2：身分識別](identity-infrastructure.md)針對使用者身分識別和登入安全性部署下列項目：</span><span class="sxs-lookup"><span data-stu-id="38b90-146">For [Phase 2: Identity](identity-infrastructure.md), deploy the following for user identity and sign-in security:</span></span>
+
+- <span data-ttu-id="38b90-147">針對混合式身分識別，由內部部署 Active Directory 網域服務 (AD DS) 同步處理使用者帳戶和群組。</span><span class="sxs-lookup"><span data-stu-id="38b90-147">For hybrid identity, user accounts and groups synchronized from on-premises Active Directory Domain Services (AD DS).</span></span>
+- <span data-ttu-id="38b90-148">針對指派權限，同步處理或使用 Azure AD 群組處理適當的成員。</span><span class="sxs-lookup"><span data-stu-id="38b90-148">For assigning permissions, synchronized or Azure AD groups with the appropriate members.</span></span>
+- <span data-ttu-id="38b90-149">驗證設定，例如要求 MFA。</span><span class="sxs-lookup"><span data-stu-id="38b90-149">Authentication settings, such as requiring MFA.</span></span>
+- <span data-ttu-id="38b90-150">設定條件式存取原則，要求對有風險的登入進行 MFA，並封鎖不支援新式驗證的用戶端。</span><span class="sxs-lookup"><span data-stu-id="38b90-150">Conditional Access policies to require MFA for risky sign-ins and block clients that don’t support modern authentication.</span></span>
+
+<span data-ttu-id="38b90-151">以下是所產生的組態，強調身分識別元素。</span><span class="sxs-lookup"><span data-stu-id="38b90-151">Here's the resulting configuration with the identity elements highlighted.</span></span>
+
+![遠端工作人員的身分識別元素](./media/empower-people-to-work-remotely/remote-workers-id-phase.png)
+ 
+<span data-ttu-id="38b90-153">[階段 3：Windows 10 企業版](windows10-infrastructure.md)部署：</span><span class="sxs-lookup"><span data-stu-id="38b90-153">[Phase 3: Windows 10 Enterprise](windows10-infrastructure.md)</span></span>
+
+- <span data-ttu-id="38b90-154">使用 Windows 10 企業版部署新裝置以及將您的 Windows 7 或 Windows 8.1 裝置升級到 Windows 10 企業版的基礎結構</span><span class="sxs-lookup"><span data-stu-id="38b90-154">The infrastructure to deploy new devices with Windows 10 Enterprise and to upgrade of your Windows 7 or Windows 8.1 devices to Windows 10 Enterprise</span></span>
+- <span data-ttu-id="38b90-155">為身分識別、威脅和資訊保護啟用全面的安全性功能</span><span class="sxs-lookup"><span data-stu-id="38b90-155">Enabling comprehensive security features for identity, threat, and information protection</span></span>
+
+<span data-ttu-id="38b90-156">以下是使用 Windows 10 企業版裝置所產生的組態。</span><span class="sxs-lookup"><span data-stu-id="38b90-156">Here's the resulting configuration with Windows 10 Enterprise devices.</span></span>
+
+![適用于遠端工作人員的 Windows 10 企業元素](./media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
+ 
+<span data-ttu-id="38b90-158">[階段 4：Office 365 專業增強版](office365proplus-infrastructure.md)，部署基礎結構以安裝 Office 365 專業增強版或在組織的裝置上將目前安裝的 Office 套件 (例如 Office 2010 或 Office 2013) 升級至 Office 365 專業增強版。</span><span class="sxs-lookup"><span data-stu-id="38b90-158">For [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md), deploy the infrastructure to install Office 365 ProPlus or upgrade your currently installed Office suite, such as Office 2010 or Office 2013, to Office 365 ProPlus on your organization devices.</span></span> <span data-ttu-id="38b90-159">這會為您的使用者提供最佳的安全性和共同作業體驗。</span><span class="sxs-lookup"><span data-stu-id="38b90-159">This will give your users the best security and collaborative experiences.</span></span>
+
+<span data-ttu-id="38b90-160">以下是安裝 Office 365 專業增強版的裝置所產生的組態。</span><span class="sxs-lookup"><span data-stu-id="38b90-160">Here's the resulting configuration with Office 365 ProPlus installed on devices.</span></span>
+
+![適用于遠端工作人員的 Office 365 專業增強版元素](./media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
+ 
+<span data-ttu-id="38b90-162">[階段 5：行動裝置管理](mobility-infrastructure.md)部署 Intune 裝置和應用程式管理：</span><span class="sxs-lookup"><span data-stu-id="38b90-162">For [Phase 5: Mobile device management](mobility-infrastructure.md), deploy Intune device and app management for:</span></span>
+
+- <span data-ttu-id="38b90-163">註冊您的 Windows 10 企業版、iOS、macOS、Android 和 Android 企業版裝置，以便收到貴組織定義的功能和安全性設定。</span><span class="sxs-lookup"><span data-stu-id="38b90-163">Enrollment of your Windows 10 Enterprise, iOS, macOS, Android, and Android Enterprise devices so they receive features and security settings defined by your organization.</span></span>
+- <span data-ttu-id="38b90-164">適用于額外安全性的應用程式設定，以及允許或封鎖應用程式 (即使是在員工擁有的個人裝置)。</span><span class="sxs-lookup"><span data-stu-id="38b90-164">App settings for extra security and to allow or block apps, even on employee-owned personal devices.</span></span>
+- <span data-ttu-id="38b90-165">具備條件式存取的合規性原則，以防止不符合規範的裝置連線。</span><span class="sxs-lookup"><span data-stu-id="38b90-165">Compliance policies with Conditional Access to prevent non-compliant devices from connecting.</span></span>
+
+<span data-ttu-id="38b90-166">以下是所產生的組態，強調 Intune 註冊裝置和原則。</span><span class="sxs-lookup"><span data-stu-id="38b90-166">Here's the resulting configuration with Intune enrolled devices and policies highlighted.</span></span>
+
+![遠端工作人員的行動裝置管理元素](./media/empower-people-to-work-remotely/remote-workers-mdm-phase.png)
+ 
+<span data-ttu-id="38b90-168">[階段 6：資訊保護](infoprotect-infrastructure.md)是為您的數位資產設計和設定保護：</span><span class="sxs-lookup"><span data-stu-id="38b90-168">For [Phase 6: Information protection](infoprotect-infrastructure.md), design and configure protection for your digital assets with:</span></span>
+
+- <span data-ttu-id="38b90-169">Office 365 DLP 原則。</span><span class="sxs-lookup"><span data-stu-id="38b90-169">Step 2: Office 365 labels and DLP policies</span></span>
+- <span data-ttu-id="38b90-170">跟隨檔案的 Office 365 敏感度標籤，用於加密和權限。</span><span class="sxs-lookup"><span data-stu-id="38b90-170">Office 365 sensitivity labels for encryption and permissions that travel with files.</span></span>
+
+<span data-ttu-id="38b90-171">以下是所產生的組態，強調 [DLP 原則] 和 [敏感度標籤]。</span><span class="sxs-lookup"><span data-stu-id="38b90-171">Here's the resulting configuration with DLP policies and sensitivity labels highlighted.</span></span>
+
+![適用于遠端工作人員的資訊保護元素](./media/empower-people-to-work-remotely/remote-workers-ip-phase.png)
+ 
+<span data-ttu-id="38b90-173">若要存取內部部署的應用程式，您可以使用 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)，這需要混合式身分識別環境。</span><span class="sxs-lookup"><span data-stu-id="38b90-173">For access to on-premises apps, you can use [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy), which requires a hybrid identity environment.</span></span>
+
+<span data-ttu-id="38b90-174">以下是所產生的組態，強調 [應用程式 Proxy] 元件。</span><span class="sxs-lookup"><span data-stu-id="38b90-174">Here's the resulting configuration with the application proxy components highlighted.</span></span>
+
+![遠端工作人員的應用程式 Proxy 元素](./media/empower-people-to-work-remotely/remote-workers-app-proxy.png)
+ 
+### <a name="step-2-workloads-for-remote-workers"></a><span data-ttu-id="38b90-176">步驟2：適用于遠端工作人員的工作負載</span><span class="sxs-lookup"><span data-stu-id="38b90-176">Step 2: Workloads for remote workers</span></span>
+
+<span data-ttu-id="38b90-177">若是 [Exchange Online](exchangeonline-workload.md)，部署 Exchange Online 信箱至每個使用者。</span><span class="sxs-lookup"><span data-stu-id="38b90-177">For [Exchange Online](exchangeonline-workload.md), deploy Exchange Online mailboxes to each of your users.</span></span>
+
+<span data-ttu-id="38b90-178">若是 [Teams](teams-workload.md)，部署 Teams 到您的使用者和群組。</span><span class="sxs-lookup"><span data-stu-id="38b90-178">For [Teams](teams-workload.md), deploy Teams to your users and groups.</span></span>
+
+<span data-ttu-id="38b90-179">若是 [SharePoint 和 OneDrive](sharepoint-online-onedrive-workload.md)，部署 SharePoint 小組或通訊網站和 OneDrive 資料夾。</span><span class="sxs-lookup"><span data-stu-id="38b90-179">For [SharePoint and OneDrive](sharepoint-online-onedrive-workload.md), deploy SharePoint team or communication sites and OneDrive folders.</span></span>
+
+<span data-ttu-id="38b90-180">以下是所產生的組態，強調工作負載。</span><span class="sxs-lookup"><span data-stu-id="38b90-180">Here's the resulting configuration with the workloads highlighted.</span></span>
+
+![適用于遠端工作人員的 Microsoft 365 工作負載](./media/empower-people-to-work-remotely/remote-workers-workloads.png)
+ 
+### <a name="deployment-results"></a><span data-ttu-id="38b90-182">部署結果</span><span class="sxs-lookup"><span data-stu-id="38b90-182">Deployment results</span></span>
+
+<span data-ttu-id="38b90-183">部署底層基礎結構和工作負載並推出 Windows 10 企業版和 Office 365 專業增強版之後，遠端工作人員：</span><span class="sxs-lookup"><span data-stu-id="38b90-183">After deploying the foundation infrastructure and workloads and rolling out Windows 10 Enterprise and Office 365 ProPlus, remote workers:</span></span>
+
+- <span data-ttu-id="38b90-184">受制于增強式驗證和身分識別保護。</span><span class="sxs-lookup"><span data-stu-id="38b90-184">Are subject to strong authentication and identity protection.</span></span>
+- <span data-ttu-id="38b90-185">在其 Windows 裝置上使用最新且最安全的 Windows 版本。</span><span class="sxs-lookup"><span data-stu-id="38b90-185">Have the latest and most secure version of Windows on their Windows devices.</span></span>
+- <span data-ttu-id="38b90-186">在其裝置上使用最新且最有生產力的 Office 套件版本。</span><span class="sxs-lookup"><span data-stu-id="38b90-186">Have the latest and most productive version of the Office suite on their devices.</span></span>
+- <span data-ttu-id="38b90-187">受制于應用程式管理和裝置合規性原則。</span><span class="sxs-lookup"><span data-stu-id="38b90-187">Are subject to app management and device compliance policies.</span></span>
+- <span data-ttu-id="38b90-188">受制于 DLP 原則和限制。</span><span class="sxs-lookup"><span data-stu-id="38b90-188">Are subject to DLP policies and restrictions.</span></span>
+- <span data-ttu-id="38b90-189">可以指派跟隨檔案和電子郵件的敏感度標籤，用於加密和權限。</span><span class="sxs-lookup"><span data-stu-id="38b90-189">Can assign sensitivity labels for encryption and permissions that travel with files and email.</span></span>
+- <span data-ttu-id="38b90-190">可以存取內部部署應用程式，且不需要 VPN 連線。</span><span class="sxs-lookup"><span data-stu-id="38b90-190">Can access on-premises apps without a VPN connection.</span></span>
+- <span data-ttu-id="38b90-191">可以自行工作，並使用 Teams、SharePoint 和 OneDrive 中的聊天、會議和檔案，參與跟同事的即時共同作業。</span><span class="sxs-lookup"><span data-stu-id="38b90-191">Can perform their own work and participate in real-time collaboration with co-workers with chats, meetings, and files in Teams and files in SharePoint and OneDrive.</span></span>
+
+<span data-ttu-id="38b90-192">離線時 (未連線至網際網路) ，您的遠端工作人員可以變更檔案的本機複本。</span><span class="sxs-lookup"><span data-stu-id="38b90-192">When offline (not connected to the Internet), your remote workers can change local copies of files.</span></span> <span data-ttu-id="38b90-193">當他們重新連線到網際網路時，OneDrive 就會同步處理本機複本至儲存在 Microsoft 365 訂閱中的檔案。</span><span class="sxs-lookup"><span data-stu-id="38b90-193">When they reconnect to the Internet, OneDrive synchronizes local copies with the files stored in your Microsoft 365 subscription.</span></span> 
+
+<span data-ttu-id="38b90-194">如果您使用混合式身分識別，以下是貴組織的遠端工作人員所產生的組態。</span><span class="sxs-lookup"><span data-stu-id="38b90-194">Here's the resulting configuration for remote workers of your organization if you use hybrid identity.</span></span>
+
+![使用混合式身分識別的組織的最終設定](./media/empower-people-to-work-remotely/remote-workers-hybrid.png) 
+ 
+<span data-ttu-id="38b90-196">以下是您組織的遠端工作人員 (如果您使用的是雲端身分識別) 所產生的組態。</span><span class="sxs-lookup"><span data-stu-id="38b90-196">Here's the resulting configuration for remote workers your organization if you use cloud-only identity.</span></span>
+
+![只有雲端身分識別的組織的最終組態](./media/empower-people-to-work-remotely/remote-workers-cloud-only.png)
+
+## <a name="phase-2-drive-user-adoption-for-remote-workers"></a><span data-ttu-id="38b90-198">階段2：推動使用者採用遠端工作人員</span><span class="sxs-lookup"><span data-stu-id="38b90-198">Phase 2: Drive user adoption for remote workers</span></span>
+
+<span data-ttu-id="38b90-199">現在底層基礎結構和工作負載都已就緒，是時候推動您的遠端工作人員持續使用這些功能，讓他們能隨時隨地保持生產力。</span><span class="sxs-lookup"><span data-stu-id="38b90-199">Now that the foundation infrastructure and workloads are in place, it’s time to drive the ongoing usage of these capabilities to your remote workers so they can be productive anywhere and at any time.</span></span>
+
+### <a name="step-1-train-your-users"></a><span data-ttu-id="38b90-200">步驟 1：訓練您的使用者</span><span class="sxs-lookup"><span data-stu-id="38b90-200">Step 1: Train your users</span></span>
+
+<span data-ttu-id="38b90-201">訓練您的遠端工作人員：</span><span class="sxs-lookup"><span data-stu-id="38b90-201">Train your remote workers on:</span></span>
+
+- <span data-ttu-id="38b90-202">正確的登入程序，包括 MFA 註冊以及如何在偵測到風險時挑戰登入。</span><span class="sxs-lookup"><span data-stu-id="38b90-202">Proper sign-in procedures, including MFA registration, and how sign ins can be challenged when risk is detected.</span></span>
+- <span data-ttu-id="38b90-203">使用裝置，以及如何使用原則封鎖不合規裝置的存取。</span><span class="sxs-lookup"><span data-stu-id="38b90-203">The use of devices and how policies can be used to block access for non-compliant devices.</span></span>
+- <span data-ttu-id="38b90-204">使用允許的應用程式，以及如何使用 Intune 應用程式原則封鎖應用程式。</span><span class="sxs-lookup"><span data-stu-id="38b90-204">The use of allowed apps and how Intune app polices can be used to block apps.</span></span>
+- <span data-ttu-id="38b90-205">Windows 10 企業版安全性功能。</span><span class="sxs-lookup"><span data-stu-id="38b90-205">Windows 10 Enterprise security features.</span></span>
+- <span data-ttu-id="38b90-206">如何使用 Outlook 的電子郵件和行事曆。</span><span class="sxs-lookup"><span data-stu-id="38b90-206">How to use Outlook for email and calendaring.</span></span>
+- <span data-ttu-id="38b90-207">如何使用 [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) 來聊天、視訊會議、共用文件和往來交談。</span><span class="sxs-lookup"><span data-stu-id="38b90-207">How to use [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) for chat, video-based conferencing, document sharing, and threaded conversations.</span></span>
+- <span data-ttu-id="38b90-208">如何使用 SharePoint 小組或通訊網站和 OneDrive 資料夾來瀏覽使用者文件庫中的檔案，以及那些屬於群組的檔案。</span><span class="sxs-lookup"><span data-stu-id="38b90-208">How to use SharePoint team or communication sites and OneDrive folders to browse files in a user's library and those belonging to a group.</span></span>
+- <span data-ttu-id="38b90-209">在本機和線上版本的檔案中，如何針對內含敏感性或高管制資料的檔案使用及套用敏感度標籤。</span><span class="sxs-lookup"><span data-stu-id="38b90-209">How to use and apply sensitivity labels for files containing sensitive or highly regulated data, for both local and online versions of files.</span></span>
+
+<span data-ttu-id="38b90-210">此訓練應該包含實際操作練習，讓您的學生可以體驗這些功能及其結果。</span><span class="sxs-lookup"><span data-stu-id="38b90-210">This training should include hands-on exercises so that the users can experience these operations and their results.</span></span>
+
+### <a name="step-2-conduct-periodic-reviews-of-usage-and-address-worker-feedback"></a><span data-ttu-id="38b90-211">步驟2：舉辦定期的使用狀況檢閱和處理工作者意見反應</span><span class="sxs-lookup"><span data-stu-id="38b90-211">Step 2: Conduct periodic reviews of usage and files</span></span>
+
+<span data-ttu-id="38b90-212">在訓練後的幾周內：</span><span class="sxs-lookup"><span data-stu-id="38b90-212">In the weeks after training:</span></span>
+
+- <span data-ttu-id="38b90-213">快速處理遠端工作者的意見反應，並微調原則和設定。</span><span class="sxs-lookup"><span data-stu-id="38b90-213">Quickly address remote worker feedback and fine tune polices and configurations.</span></span>
+- <span data-ttu-id="38b90-214">分析 Teams、SharePoint 網站和 OneDrive 資料夾的使用狀況，並比較其使用預期。</span><span class="sxs-lookup"><span data-stu-id="38b90-214">Analyze usage for teams, SharePoint sites, and OneDrive folders and compare it with usage expectations.</span></span>
+- <span data-ttu-id="38b90-215">確認敏感性或高管制的檔案已正確地標示適當的敏感度標籤。</span><span class="sxs-lookup"><span data-stu-id="38b90-215">Verify that sensitive or highly regulated files have been properly labeled with the appropriate sensitivity label.</span></span>
+
+<span data-ttu-id="38b90-216">視需要重新訓練您的使用者。</span><span class="sxs-lookup"><span data-stu-id="38b90-216">Retrain your users as needed.</span></span>
+
+### <a name="user-adoption-results"></a><span data-ttu-id="38b90-217">使用者採用結果</span><span class="sxs-lookup"><span data-stu-id="38b90-217">User adoption results</span></span>
+
+<span data-ttu-id="38b90-218">您的遠端工作人員可以使用其 Windows 10 企業版或其他裝置與 Office 365 專業增強版，在安全的環境中存取和使用共用的 Microsoft 365 企業版雲端服務和資源，並即時開會、建立和共同作業。</span><span class="sxs-lookup"><span data-stu-id="38b90-218">Your remote workers can use their Windows 10 Enterprise or other devices and Office 365 ProPlus to access and work on shared Microsoft 365 Enterprise cloud services and resources in a secure environment, and they’re meeting, creating, and collaborating in real time.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="38b90-219">請參閱</span><span class="sxs-lookup"><span data-stu-id="38b90-219">See also</span></span>
+
+[<span data-ttu-id="38b90-220">工作負載和案例</span><span class="sxs-lookup"><span data-stu-id="38b90-220">Workloads and scenarios</span></span>](deploy-workloads.md)
+
+[<span data-ttu-id="38b90-221">部署指南</span><span class="sxs-lookup"><span data-stu-id="38b90-221">Deployment guide</span></span>](deploy-microsoft-365-enterprise.md)
+
