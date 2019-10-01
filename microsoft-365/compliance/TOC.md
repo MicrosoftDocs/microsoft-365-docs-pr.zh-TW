@@ -1,17 +1,17 @@
 # [Microsoft 365 合規性](index.yml)
 
 # 開始使用
-## [新功能在規範中心](whats-new.md)
+## [合規性中心的新功能](whats-new.md)
 ## [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)
 ## [前往安全性與合規性中心](go-to-the-securitycompliance-center.md)
 ## [使用您的免費 Azure Active Directory 訂閱](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Office 365 中的安全性與合規性計劃](plan-for-security-and-compliance.md)
 
-# 管理內部的風險
+# 管理內部風險
 ## [保護使用者和裝置存取權](protect-access-to-data-and-services.md)
 ## [客戶加密箱](customer-lockbox-requests.md)
 ## [特殊權限存取管理]()
-### [了解權限存取管理](privileged-access-management-overview.md)
+### [了解特殊權限存取管理](privileged-access-management-overview.md)
 ### [設定特殊權限存取管理](privileged-access-management-configuration.md)
 ## 客戶金鑰
 ### [使用客戶金鑰控制 Office 365 中的資料](controlling-your-data-using-customer-key.md)
@@ -19,14 +19,14 @@
 ## [通訊監督]()
 ### [了解通訊監督](supervision-policies.md)
 ### [為您的組織設定監督原則](configure-supervision-policies.md)
-## [資訊障礙](information-barriers.md)
-### [定義資訊障礙原則](information-barriers-policies.md)
-### [針對資訊障礙原則屬性](information-barriers-attributes.md)
-### [疑難排解資訊障礙](information-barriers-troubleshooting.md)
-### [編輯資訊障礙原則](information-barriers-edit-segments-policies.md.md)
+## [資訊屏障](information-barriers.md)
+### [定義資訊屏障原則](information-barriers-policies.md)
+### [資訊屏障原則的屬性](information-barriers-attributes.md)
+### [疑難排解資訊屏障](information-barriers-troubleshooting.md)
+### [編輯資訊屏障原則](information-barriers-edit-segments-policies.md.md)
 
 # [管理資訊保護](protect-information.md)
-## [敏感度標籤](sensitivity-labels.md)
+## [敏感性標籤](sensitivity-labels.md)
 ### [使用敏感度標籤中的加密來限制內容的存取](encryption-sensitivity-labels.md)
 ### [自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)
 ### [利用標籤分析檢視標籤使用量](label-analytics.md)
@@ -52,12 +52,12 @@
 ### [觀看自訂的 DLP 延伸概觀](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [自訂內建的敏感性資訊類型](customize-a-built-in-sensitive-information-type.md)
 ### [自訂敏感性資訊類型](custom-sensitive-info-types.md)
-### [建立符合根據的分類的確切資料類型的自訂機密資訊](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-### [在安全性 & 合規性中心建立自訂機密資訊類型](create-a-custom-sensitive-information-type.md)
-### [使用 PowerShell 建立自訂的敏感性資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+### [使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+### [在安全性與合規性中心建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type.md)
+### [使用 PowerShell 建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [建立關鍵字字典](create-a-keyword-dictionary.md)
 ### [文件指紋](document-fingerprinting.md)
-### [敏感資訊的 DLP 功能](what-the-dlp-functions-look-for.md)
+### [敏感性資訊的 DLP 函數](what-the-dlp-functions-look-for.md)
 ### [觀看自訂的 DLP 延伸概觀](https://go.microsoft.com/fwlink/?linkid=852306)
 
 ## [電子郵件加密](email-encryption.md)
@@ -89,10 +89,10 @@
 ### [使用網路上傳來匯入 RMS 加密的 PST 檔案](use-network-upload-to-import-rms-encrypted-pst-files.md)
 ### [匯入 PST 檔案的常見問題集](faqimporting-pst-files-to-office-365.md)
 ### [在 Office 365 中封存第三方資料](archiving-third-party-data.md)
-#### [若要封存 Facebook 資料使用的範例連接器](archive-facebook-data-with-sample-connector.md)
-#### [若要封存 Twitter 資料使用的範例連接器](archive-twitter-data-with-sample-connector.md)
+#### [使用範例連接器來封存 Facebook 資料](archive-facebook-data-with-sample-connector.md)
+#### [使用範例連接器來封存 Twitter 資料](archive-twitter-data-with-sample-connector.md)
 #### [設定連接器來封存 LinkedIn 資料](archive-linkedin-data.md)
-#### [設定連接器，以封存立即 Bloomberg 資料](archive-instant-bloomberg-data.md)
+#### [設定連接器來封存 Instant Bloomberg 資料](archive-instant-bloomberg-data.md)
 #### [與合作夥伴配合來封存第三方資料](work-with-partner-to-archive-third-party-data.md)
 ## 儲存資料
 ### [啟用封存信箱](enable-archive-mailboxes.md)
@@ -104,7 +104,7 @@
 ### [檔案計劃管理員](file-plan-manager.md)
 ### [保留標籤](labels.md)
 ### [符合美國證券交易委員會規定 17A-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [事件型保留](event-driven-retention.md)
 ### [自動化事件型保留](automate-event-driven-retention.md)
 ## [處置資料](disposition-reviews.md)
@@ -122,17 +122,17 @@
 ### [觀看 Microsoft 資料控管小組的影片](https://go.microsoft.com/fwlink/?linkid=867039)
 ## 記錄管理
 ### [記錄管理](records-management.md)
-### 檔案計劃
+### 檔案計畫
 #### [檔案計劃管理員](file-plan-manager.md)
 #### [保留標籤](labels.md)
-#### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 #### [利用標籤分析檢視標籤使用量](label-analytics.md)
 #### [檢視文件的標籤活動](view-label-activity-for-documents.md)
 #### [檢視資料控管報告](view-the-data-governance-reports.md)
 ### 事件
 #### [事件型保留](event-driven-retention.md)
 #### [自動化事件型保留](automate-event-driven-retention.md)
-### [處理](disposition-reviews.md)
+### [處置](disposition-reviews.md)
 ### 深入了解記錄管理
 #### [觀看有關記錄管理的影片](https://go.microsoft.com/fwlink/?linkid=867039)
 
@@ -191,7 +191,7 @@
 #### [處理資料時發生補救錯誤](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 ### [收集適用於案例的資料](collecting-data-for-ediscovery.md)
-#### [Create a search](create-search-to-collect-data.md)
+#### [建立搜尋](create-search-to-collect-data.md)
 #### [建立搜尋查詢](building-search-queries.md)
 #### [搜尋統計資料](search-statistics.md)
 #### [將搜尋結果新增至檢閱集](add-data-to-review-set.md)
@@ -229,7 +229,7 @@
 #### [進階電子文件探索的限制](limits-ediscovery20.md)
 #### [支援的檔案類型](supported-filetypes-ediscovery20.md)
 #### [下載中繼資料欄位](document-metadata-fields-in-advanced-ediscovery.md)
-#### [交談檢閱設定](conversation-review-sets.md)
+#### [交談檢閱集](conversation-review-sets.md)
 #### [疑難排解 AzCopy](troubleshooting-azcopy.md)
 
 ## [管理電子文件探索案例](ediscovery-cases.md)
@@ -287,7 +287,7 @@
 ## [指派電子文件探索權限](assign-ediscovery-permissions.md)
 ## [設定 Office 365 中電子文件探索調查的合規性界限](set-up-compliance-boundaries.md)
 ## [電子文件探索解決方案系列 - 資料外洩案例 - 搜尋及清除](data-spillage-scenariosearch-and-purge.md)
-## [針對 eDiscovery 常見問題進行疑難排解](ediscovery-troubleshooting-common-issues.md)
+## [疑難排解常見的電子文件探索問題](ediscovery-troubleshooting-common-issues.md)
 
 ## 管理保留
 ### [建立電子文件探索保留](ediscovery-cases.md#step-4-place-content-locations-on-hold)
@@ -300,7 +300,7 @@
 # [管理資料調查](overview-data-investigations.md)
 ## [管理資料外洩事件](manage-data-spillage-incidents.md)
 ## [建立新的調查](create-new-investigation.md)
-## [指派權限的資料調查](permissions.md)
+## [指派資料調查的權限](permissions.md)
  
 ## [搜尋調查中的資料](search-for-data.md)
 ### [建立搜尋查詢](build-search-queries.md)
@@ -344,7 +344,7 @@
 ## [開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)
 ## [管理信箱稽核](enable-mailbox-auditing.md)
 ## [稽核記錄中的詳細內容](detailed-properties-in-the-office-365-audit-log.md)
-## [匯出、 設定及檢視稽核記錄](export-view-audit-log-records.md)
+## [匯出、 設定及檢視稽核記錄檔的記錄](export-view-audit-log-records.md)
 ## [使用稽核記錄檔對常見案例進行疑難排解](auditing-troubleshooting-scenarios.md)
 ## [使用稽核記錄中的共用稽核](use-sharing-auditing.md)
 ## [在稽核記錄中搜尋電子文件探索活動](search-for-ediscovery-activities-in-the-audit-log.md)
@@ -374,10 +374,10 @@
 ### [適用於 Office Web Apps Server 和 Office Online Server 的 GDPR](gdpr-for-office-online-server.md)
 ### [適用於內部部署 Windows Server 檔案共用的 GDPR](gdpr-for-on-premises-file-shares.md)
 
-# [法規合規性的行動計劃](compliance-solutions-overview.md)
+# [法規合規性行動計劃](compliance-solutions-overview.md)
 
-## [ISO — 建議使用巨集指令計劃](iso-action-plan.md)
-## [NIST — 建議使用巨集指令計劃](nist-action-plan.md) 
+## [ISO — 建議使用的行動計劃](iso-action-plan.md)
+## [ — 建議使用的行動計劃](nist-action-plan.md) 
 
 ## [GDPR](gdpr.md)
 ### [建議的 GDPR 計劃](gdpr-action-plan.md)
@@ -386,7 +386,7 @@
 #### [責任整備檢查清單](gdpr-arc.md)
 #### [Azure](gdpr-arc-azure.md)
 #### [Dynamics 365](gdpr-arc-dynamics365.md)
-#### [Microsoft 支援服務 & 專業服務](gdpr-arc-prof-services.md)
+#### [Microsoft 支援服務與專業服務](gdpr-arc-prof-services.md)
 #### [Office 365](gdpr-arc-office365.md)
 
 ### [資訊保護](gdpr-information-protection.md)
@@ -397,7 +397,7 @@
 #### [Azure DevOps Services](gdpr-dsr-vsts.md)
 #### [Dynamics 365](gdpr-dsr-dynamics365.md)
 #### [Intune](gdpr-dsr-intune.md)
-#### [Microsoft 支援服務 & 專業服務](gdpr-dsr-prof-services.md)
+#### [Microsoft 支援服務與專業服務](gdpr-dsr-prof-services.md)
 #### [Office 365](gdpr-dsr-office365.md)
 #### [Visual Studio 系列](gdpr-dsr-visual-studio-family.md)
 
@@ -405,19 +405,19 @@
 #### [外洩通知](gdpr-breach-notification.md)
 #### [Azure](gdpr-breach-azure.md)
 #### [Dynamics 365](gdpr-breach-dynamics365.md)
-#### [Microsoft 支援服務 & 專業服務](gdpr-breach-microsoft-support-professional-services.md)
+#### [Microsoft 支援服務與專業服務](gdpr-breach-microsoft-support-professional-services.md)
 #### [Office 365](gdpr-breach-office365.md)
 
 ### [資料保護影響評估]()
 #### [資料保護影響評估](gdpr-data-protection-impact-assessments.md)
 #### [Azure](gdpr-dpia-azure.md)
 #### [Dynamics 365](gdpr-dpia-dynamics.md)
-#### [Microsoft 支援服務 & 專業服務](gdpr-dpia-prof-services.md)
+#### [Microsoft 支援服務與專業服務](gdpr-dpia-prof-services.md)
 #### [Office 365](gdpr-dpia-office365.md)
 
 ### [Microsoft 的資料保護長](gdpr-data-protection-officer.md)
 
-# 混合式相容性功能
+# 混合式合規性功能
 ## [使用 AD RMS 的 Exchange Online 郵件加密](information-rights-management-in-exchange-online.md)
 ### [將 IRM 設定為使用內部部署 AD RMS 伺服器](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 
