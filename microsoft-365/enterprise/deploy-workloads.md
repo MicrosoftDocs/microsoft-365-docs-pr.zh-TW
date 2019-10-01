@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 讓貴組織的使用者快速上手 Microsoft 365 企業版的生產力工作負載。
-ms.openlocfilehash: 730826f388364d1232f1750059002d111279c1be
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: e8608bd18e493aeb0b0b1200a3b9e9aa6083b641
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981934"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306007"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 企業版工作負載和案例
 
@@ -29,7 +29,11 @@ ms.locfileid: "36981934"
 
 請參閱[移轉](migration-microsoft-365-enterprise-workload.md)工作負載，以了解用來將整個組織遷移到 Microsoft 365 企業版的一般藍圖，其內含 Microsoft Office 用戶端產品、內部部署 Office Server 產品和 Microsoft Windows 架構裝置。
 
-這些案例會以整合方式使用來自 Microsoft 365 企業版的功能和服務，以因應商務需求。 其中一個這類需求是保護 Microsoft 365 中所儲存的高管制資料。 高管制資料包含下列數位資產：
+這些案例會以整合方式使用來自 Microsoft 365 企業版的功能和服務，以因應商務需求。 
+
+其中一個需求是，確保您的員工在不直接連線到內部網路時可以有效率且安全地工作。 請參閱[強化遠端工作人員](empower-people-to-work-remotely.md)案例，以取得部署基礎結構元素和推動遠端使用者採用關鍵工作負載的藍圖，例如 Teams 和 Exchange Online。
+
+另一個這類需求是保護 Microsoft 365 中所儲存的高管制資料。 高管制資料包含下列數位資產：
 
 - 受限於區域法規。
 - 貴組織最有價值的資料，例如營業秘密、財務或人力資源資訊，以及組織策略。
