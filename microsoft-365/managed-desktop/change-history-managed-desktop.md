@@ -8,21 +8,26 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: a9755d1caae20694f1198dec0bf3e659bccee8ee
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: a982b493027775add547a87700906a6cbbdaef60
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982604"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369624"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 受管理電腦文件的變更歷程記錄
 
-本主題將列出[Microsoft 受管理電腦文件](index.yml)中的最新及更新主題。
+本主題將列出[Microsoft 受管理電腦文件](index.yml)中的最新及更新主題。 「 更新 」 主題是指可有鎖材料的新增項目或更正-次要修正校正的錯字，樣式，例如，格式問題未列出。 您總是可以檢視 （包括任何變更的詳細資料） 的特定認可的歷程記錄造訪[GitHub 上的儲存機制](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)。
 
 ## <a name="september-2019"></a>2019 年 9 月
 新的或變更主題 | 描述
 --- | ---
-[Microsoft 的必要條件受管理的電腦](get-ready/prerequisites.md) | 更新的主題
+[Microsoft 受管理電腦技術](intro/technologies.md) | 更新的主題
+[取得使用者的說明](working-with-managed-desktop/end-user-support.md) | 更新的主題
+[Microsoft 受管理的電腦裝置](service-description/device-list.md) | 更新的主題
+[部署及追蹤可設定-Microsoft 受管理的電腦](working-with-managed-desktop/config-setting-deploy.md) | 更新的主題
+[Microsoft 受管理電腦的系統管理員支援](working-with-managed-desktop/admin-support.md) | 更新的主題
+[Microsoft 受管理電腦的先決條件](get-ready/prerequisites.md) | 更新的主題
 [Microsoft 受管理的電腦裝置上設定](get-started/set-up-devices.md) | 新的主題
 [自行註冊新裝置](get-started/register-devices-self.md) | 更新的主題
 [自行註冊現有裝置](get-started/register-reused-devices-self.md) | 新的主題
@@ -34,7 +39,7 @@ ms.locfileid: "36982604"
 [使用 Microsoft 諮詢服務](get-ready/apps-mcs.md) | 更新的主題
 [Microsoft 受管理電腦的系統管理員支援](working-with-managed-desktop/admin-support.md) | 更新的主題
 [取得使用者的說明](working-with-managed-desktop/end-user-support.md) | 更新的主題
-[Microsoft 的必要條件受管理的電腦](get-ready/prerequisites.md) | 更新的主題
+[Microsoft 受管理電腦的先決條件](get-ready/prerequisites.md) | 更新的主題
 [Microsoft 受管理電腦技術](intro/technologies.md) | 更新的主題
 
 
@@ -43,7 +48,7 @@ ms.locfileid: "36982604"
 新的或變更主題 | 描述
 --- | ---
 [使用 Microsoft 諮詢服務](get-ready/apps-mcs.md) | 更新的主題
-[Microsoft 受管理的桌上型電腦和 ITIL](MMD-and-ITSM.md) | 新的主題
+[Microsoft 受管理的電腦和 ITIL](MMD-and-ITSM.md) | 新的主題
 [裝置設定](service-description/device-policies.md) | 更新的主題
 
 
@@ -63,8 +68,8 @@ ms.locfileid: "36982604"
 [Microsoft 受管理的電腦支援的地區和語言](service-description/regions-languages.md) | 更新的主題
 [Microsoft 受管理的電腦裝置](service-description/device-list.md) | 更新的主題
 [封存的 Microsoft 受管理電腦裝置](service-description/archived-device-list.md) | 新的主題
-[對應磁碟機準備 Microsoft 受管理的電腦](get-ready/mapped-drives.md) | 新的主題
-[準備 Microsoft 受管理的電腦上的憑證和網路設定檔](get-ready/certs-wifi-lan.md) | 新的主題
+[為 Microsoft 受管理的電腦準備對應磁碟機](get-ready/mapped-drives.md) | 新的主題
+[為 Microsoft 受管理的電腦準備認證和網路設定檔](get-ready/certs-wifi-lan.md) | 新的主題
 [順序 Microsoft 受管理的電腦裝置](get-started/devices.md) | 更新的主題
 [取得使用者的說明](working-with-managed-desktop/end-user-support.md)
 
@@ -73,7 +78,7 @@ ms.locfileid: "36982604"
 --- | ---
 [Microsoft 受管理的電腦裝置上安裝 Intune 公司入口網站](get-started/company-portal.md) | 新的主題
 [Microsoft 受管理的電腦裝置上安裝 Microsoft Project 和 Microsoft Visio](get-started/project-visio.md) | 新的主題 
-[Microsoft 受管理電腦的準備內部部署資源的存取](get-ready/authentication.md) | 新的主題
+[為 Microsoft 受管理的電腦準備備內部部署資源存取權](get-ready/authentication.md) | 新的主題
 [Microsoft 受管理電腦中註冊裝置](get-started/register-devices-self.md) | 新的主題
 [Microsoft 受管理電腦中註冊裝置的合作夥伴](get-started/register-devices-partner.md) | 新的主題
 [將應用程式部署至 Microsoft 受管理的電腦裝置](get-started/deploy-apps.md) | 更新的主題

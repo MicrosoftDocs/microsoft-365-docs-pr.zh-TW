@@ -15,12 +15,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我們持續正在新增至 Microsoft 365 合規性中心的新功能、 修正的問題我們了解，並變更根據您的意見反應。 了解我們已經被最本月多。
-ms.openlocfilehash: 558a35d255171ffa09f5e8610cdfc0d6ba63c9fe
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b80edfb0425904b03426ef0ff3cdd1d251e638ea
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077634"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369634"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>What's new in Microsoft 365 合規性中心
 
@@ -29,9 +29,23 @@ ms.locfileid: "37077634"
 > [!TIP]
 > 感興趣其他系統管理中心中運作？ 請參閱下列文章：<br>[What's new in Microsoft 365 系統管理中心](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[什麼是 SharePoint 系統管理中心新增](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 
-## <a name="august-2019"></a>2019 年 8 月
+## <a name="september-2019"></a>2019 年 9 月
 
 想知道為何在發行前方安靜本月嗎？ 我們向下建立新的創新合規性解決方案，將會在[Microsoft Ignite](https://www.microsoft.com/ignite)市年 11 月中的標題。 持續關注 ！
+
+### <a name="new-encryption-options-for-sensitivity-labels"></a>敏感度標籤的新的加密選項 
+
+當設定敏感度標籤的加密，您現在有兩個選項，可讓它們以手動方式將標籤套用至電子郵件和文件時，指派權限的使用者：<br>
+- 當將標籤套用至**Outlook 電子郵件**，使用者可以強制執行相當於 [不要轉寄] 選項的限制。 收件者將會是可以要讀取的郵件，但不可轉寄、 列印或複製內容。
+- 當將標籤套用至**Word、 PowerPoint 和 Excel 檔案**，將會提示使用者將存取權限指派給特定使用者和群組。
+
+[深入了解](encryption-sensitivity-labels.md#let-users-assign-permissions)
+
+## <a name="august-2019"></a>2019 年 8 月
+
+### <a name="update-to-data-investigations"></a>更新資料調查
+
+當執行資料調查，您現在可以從其原始位置刪除項目。 這表示您可以從 Exchange 信箱、 SharePoint 網站與 OneDrive 帳戶刪除項目，整個組織。 因為您以作為證據收集項目，您必須複製這些保留在辨識項設為您可以進一步調查，或只保留做為參考。 [深入了解](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
 
 ## <a name="july-2019"></a>2019 年 7 月
 
@@ -49,34 +63,3 @@ ms.locfileid: "37077634"
 不需捲動 sea 的報告，找出您想。 您可以現在 （根據其標題） 的報告和類別篩選搜尋 like '標籤' 和 '規範' 和 'Office 365' 和' Microsoft Cloud App Security' 等的來源。
 
 ![報告與套用的篩選器搜尋和篩選按鈕的螢幕擷取畫面](media/mcc_report_filtering.png)
-
-### <a name="help-content"></a>說明內容
-
-拉張椅子、 抓取杯咖啡，並可讓您離開 sweep 我們最新合規性文件。
-
-**進階 eDiscovery**
-- [在 [進階電子文件的檢閱交談](conversation-review-sets.md)（新）
-- [在 [進階電子文件疑難排解 AzCopy](troubleshooting-azcopy.md)
-- [將非 Office 365 的資料載入檢閱集](load-non-office365-data.md)
-- [處理資料時發生補救錯誤](error-remediation.md)
-
-**封存第 3 廠商資料**
-- [若要封存立即 Bloomberg 資料 Office 365 中的設定連接器](archive-instant-bloomberg-data.md)
-
-**稽核**
-- [稽核共用來找出與外部使用者共用的資源](use-sharing-auditing.md)
-- [Office 365 管理活動 API 參考資料](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
-- [疑難排解 Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api)
-- [在安全性 & 規範中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)
-
-**加密**
-- [Office 365 郵件加密的舊版資訊](legacy-information-for-message-encryption.md)
-
-**分類**
-- [使用基礎的確切資料符合分類建立自訂機密資訊類型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-
-**資料管理**
-- [保留原則概觀](retention-policies.md)
-
-**監督**
-- [Office 365 中的監督原則](supervision-policies.md)

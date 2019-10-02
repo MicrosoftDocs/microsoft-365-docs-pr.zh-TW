@@ -2,6 +2,7 @@
 
 # 開始使用
 ## [合規性中心的新功能](whats-new.md)
+## [合規性內容的新版更新](recently-updated-topics-mcc.md)
 ## [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)
 ## [前往安全性與合規性中心](go-to-the-securitycompliance-center.md)
 ## [使用您的免費 Azure Active Directory 訂閱](use-your-free-azure-ad-subscription-in-office-365.md)
@@ -104,7 +105,7 @@
 ### [檔案計劃管理員](file-plan-manager.md)
 ### [保留標籤](labels.md)
 ### [符合美國證券交易委員會規定 17A-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [事件型保留](event-driven-retention.md)
 ### [自動化事件型保留](automate-event-driven-retention.md)
 ## [處置資料](disposition-reviews.md)
@@ -125,7 +126,7 @@
 ### 檔案計畫
 #### [檔案計劃管理員](file-plan-manager.md)
 #### [保留標籤](labels.md)
-#### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 #### [利用標籤分析檢視標籤使用量](label-analytics.md)
 #### [檢視文件的標籤活動](view-label-activity-for-documents.md)
 #### [檢視資料控管報告](view-the-data-governance-reports.md)
@@ -340,7 +341,9 @@
 ### [下載中繼資料欄位](document-metadata-fields.md)
 ### [管理工作](manage-jobs.md)
 
-# [搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)
+# 管理稽核與警示原則
+## [搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)
+## [管理警示原則](alert-policies.md)
 ## [開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)
 ## [管理信箱稽核](enable-mailbox-auditing.md)
 ## [稽核記錄中的詳細內容](detailed-properties-in-the-office-365-audit-log.md)
