@@ -1,5 +1,5 @@
 ---
-title: 步驟 7： 設定 Office 365 的特殊權限的存取管理
+title: 步驟 7：設定 Office 365 的特殊權限存取管理
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,18 +13,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: 了解及設定 Office 365 的特殊權限存取管理。
-ms.openlocfilehash: 7ed7a69b89a519895e62b78be4a27cfb7fff2f74
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: e9c68e4fafb1e9537b403965b4360806938c6a6f
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047286"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370420"
 ---
-# <a name="step-7-configure-privileged-access-management-for-office-365"></a>步驟 7： 設定 Office 365 的特殊權限的存取管理
+# <a name="step-7-configure-privileged-access-management-for-office-365"></a>步驟 7：設定 Office 365 的特殊權限存取管理
 
 *此為選用步驟，且僅適用於 Microsoft 365 企業版 E5 和進階合規性版本*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![階段 6： 資訊保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 特殊權限存取管理的啟用方法是透過設定原則，該原則會指定您的 Office 365 租用戶中工作型活動的 Just-In-Time 存取。它可以協助保護貴組織免於受到使用現有特殊權限系統管理員帳戶與機密資料的常設存取權或關鍵組態設定之存取權的缺口。例如，您可能會設定特殊權限存取管理原則，該原則需要明確核准的存取權，並且會變更您的 Office 365 租用戶中的組織信箱設定。
 

@@ -1,5 +1,5 @@
 ---
-title: 步驟 6： 設定電子郵件加密
+title: 步驟 6：設定電子郵件加密
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,18 +14,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: 了解及設定 Office 365 的特殊權限存取管理。
-ms.openlocfilehash: 7747f5a0905a9477e9d3fd17b00eae740d76f640
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: ef9da1d6aea20ef965b56006d91c4da3c0ad18ab
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050294"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370430"
 ---
-# <a name="step-6-configure-email-encryption"></a>步驟 6： 設定電子郵件加密
+# <a name="step-6-configure-email-encryption"></a>步驟 6：設定電子郵件加密
 
 *此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![階段 6： 資訊保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 有三種類型的 Microsoft 365 中的電子郵件加密。
 
@@ -79,4 +79,4 @@ S/MIME 可用於電子郵件至您的 Microsoft 365 訂閱中的其他信箱或�
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step7.png)|[設定 Office 365 的特殊權限存取管理](infoprotect-configure-privileged-access-management.md)|
+|![步驟 7](./media/stepnumbers/Step7.png)|[設定 Office 365 的特殊權限存取管理](infoprotect-configure-privileged-access-management.md)|

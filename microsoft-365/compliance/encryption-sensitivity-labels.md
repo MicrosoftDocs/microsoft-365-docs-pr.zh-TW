@@ -1,7 +1,7 @@
 ---
 title: 使用敏感度標籤中的加密來限制內容的存取
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 當建立敏感度標籤時，您可以限制標籤將套用至其中之內容的存取。敏感度標籤可以使用加密來保護內容。
-ms.openlocfilehash: ea7eda3558313389bfa2bc752a469e00cc7ae577
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: be41f60f8d0210c779fb6c5a8fdc783cf23fcc19
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148477"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369444"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>使用敏感度標籤中的加密來限制內容的存取
 
@@ -135,7 +135,7 @@ Rights Management 簽發者一律會被授與文件或電子郵件的完全控�
 
 您可以使用這些選項讓使用者在手動將敏感度標籤套用至內容時指派權限：
 
-- 在 Outlook 中，使用者可以強制執行與 [不可轉寄]**** 選項同等的限制。 Windows 上的 Outlook 原本就支援這個選項，並且不會要求您安裝 Azure 資訊保護統一標籤用戶端。
+- 在 Outlook 中，使用者可以強制執行與 [不可轉寄][](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) 選項同等的限制。 Windows 上的 Outlook 原本就支援這個選項，並且不會要求您安裝 Azure 資訊保護統一標籤用戶端。
 - 在 Word、PowerPoint 和 Excel 中，系統會提示使用者為特定使用者、群組或組織選取權限等級。 這些 Office 應用程式原本就不支援這個選項，因此您的使用者必須安裝 Azure 資訊保護統一標籤用戶端。
 
 這些選項可決定敏感標籤將出現在哪些應用程式中：
