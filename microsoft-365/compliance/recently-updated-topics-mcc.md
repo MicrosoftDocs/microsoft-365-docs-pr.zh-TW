@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 就像在 Microsoft 365 合規性中心的功能，一律會不斷我們的說明內容。 我們持續正在建立新的文章、 更新現有的項目，以及變更根據您的意見反應。 了解什麼是新及更新這個月。
-ms.openlocfilehash: 744c1822331c71e718007105f58d1bc64b3c70df
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: d610ab37312a1305809d740a9353822293c48df0
+ms.sourcegitcommit: 3a632d8ec009abf1aac57363eaf78aeeda5db136
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369646"
+ms.locfileid: "37376128"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 合規性內容的新版更新
 
@@ -34,9 +34,9 @@ ms.locfileid: "37369646"
 
 ### <a name="ediscovery"></a>eDiscovery
 
-[調查，進行疑難排解並解決常見問題 eDiscovery](ediscovery-troubleshooting-common-issues.md) （新）<br> 包含您可以採取來識別並解決的問題，您可能會遇到期間的 eDiscovery 搜尋或其他地方 eDiscovery 程序中的基本疑難排解步驟
+[調查，進行疑難排解並解決常見問題 eDiscovery](ediscovery-troubleshooting-common-issues.md) （新）<br> 包含您可以採取來識別並解決的問題，您可能會遇到期間的 eDiscovery 搜尋或其他地方 eDiscovery 程序中的基本疑難排解步驟。
 
-###<a name="supervision"></a>監督
+### <a name="supervision"></a>監督
 
 [為您的組織設定監督原則](configure-supervision-policies.md)（更新）<br>已移除的詳細使用 Outlook 執行評論的詳細資訊。 相反地，使用檢閱及標記的監督使用者介面中可用的選項。
 

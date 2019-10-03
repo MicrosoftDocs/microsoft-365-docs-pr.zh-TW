@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: 28cf3325dcb3551148d20defad0be88482554a7c
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a6e197c7e95f70163c01f0064877811858062b36
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289394"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370090"
 ---
-# <a name="step-4-monitor-device-health-and-compliance"></a>步驟 4： 監控裝置健全狀況和合規性
+# <a name="step-4-monitor-device-health-and-compliance"></a>步驟 4：監控裝置健全狀況和合規性
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![階段 3：Windows 10 企業版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows Analytics 使用診斷資料提供豐富、 可採取動作的資訊可協助您深入了解深層作業效率與您的環境中的 Windows 10 裝置健全狀況情形。
 
@@ -27,10 +27,10 @@ Windows Analytics 裝置健全狀況功能可提供協助偵測並修復問題�
 
 請參閱了解更多、 要開始，並使用裝置健全狀況[監視的裝置與裝置健全狀況](https://docs.microsoft.com/windows/deployment/update/device-health-monitor)。
 
-作為過渡期的檢查點，您可以看到對應至此步驟的[允出準則](windows10-exit-criteria.md#crit-windows10-step4)。
+作為過渡期的檢查點，您可以看到此步驟的[允出準則](windows10-exit-criteria.md#crit-windows10-step4)。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)| [部署 Windows 10 企業版安全性功能](windows10-enable-security-features.md) |
+|![步驟 5](./media/stepnumbers/Step5.png)| [部署 Windows 10 企業版安全性功能](windows10-enable-security-features.md) |

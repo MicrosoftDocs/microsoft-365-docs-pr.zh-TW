@@ -31,6 +31,7 @@
 ### [使用敏感度標籤中的加密來限制內容的存取](encryption-sensitivity-labels.md)
 ### [自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)
 ### [利用標籤分析檢視標籤使用量](label-analytics.md)
+### [在 Office 應用程式中敏感度標籤](sensitivity-labels-office-apps.md)
 
 ## [資料外洩防護 (DLP)](data-loss-prevention-policies.md)
 ### [DLP 和 Microsoft Teams](dlp-microsoft-teams.md)
