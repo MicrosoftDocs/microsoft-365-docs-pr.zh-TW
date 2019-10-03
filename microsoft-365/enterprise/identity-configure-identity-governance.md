@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並設定 Azure AD 租用戶的身分識別治理。
-ms.openlocfilehash: 7ba54db29335f4f8f6eefff0cafbdefe3c522d7a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3bc0872eefa71288d25ce83ebb8f3c51d8959678
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077610"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370380"
 ---
 # <a name="step-7-configure-identity-governance"></a>步驟 7：設定身分識別治理
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![第 2 階段 - 身分識別](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 身分識別治理就是保護、監控及稽核對關鍵資產的存取權，同時確保員工生產力。 例如，您可以使用身分識別治理來確保適當的使用者具有適當資源的存取權，並隨著時間判斷該存取權是否有所變更。
 

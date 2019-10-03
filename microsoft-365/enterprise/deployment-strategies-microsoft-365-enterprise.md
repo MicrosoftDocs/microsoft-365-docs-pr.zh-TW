@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解部署 Microsoft 365 企業版底層基礎結構階段的一些方法。
-ms.openlocfilehash: d71c46867e27252db90e55f304baa29e4bca4076
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: 0c700c10969142116cc73fc90e8fd283fa6fc6dc
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148497"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369434"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 企業版底層基礎結構部署策略
 
@@ -51,7 +51,7 @@ IT 基礎結構包含後端服務和向終端使用者推出的新增或改進�
 
 本文使用以下圖形來描述這些定義： 
 
-![](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
+![描述試驗和使用者推出之定義的圖形](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
 
 使用者推出的圖形陰影表示，透過使用結構化或有條理的方法 (例如群組、部門或區域)，在貴組織中從 0% 到 100% 的百分比。
 
@@ -76,7 +76,7 @@ IT 基礎結構包含後端服務和向終端使用者推出的新增或改進�
 
 此甘特圖顯示了 Microsoft 365 企業版底層基礎結構階段 2-6 的簡化序列部署。
 
-![](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
+![底層基礎結構階段 2-6 的序列部署](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 為了簡化討論和範例，請假設每個階段中的每個階段和部署區段都需要相同的時間。
 
@@ -86,20 +86,20 @@ IT 基礎結構包含後端服務和向終端使用者推出的新增或改進�
 
 以下是簡化的試驗使用者體驗，可做為範例：
 
-- 我需要於 12 月使用智慧型手機啟用 MFA。(身分識別)
+- 我需要於 12 月使用智慧型手機啟用 MFA。 (身分識別)
 - 我於 3 月在 Windows 8.1 電腦上安裝了 Windows 10 企業版。(Windows 10 企業版)
 - 我於 6 月安裝了 Office 365 專業增強版，取代原本的 Office 2013。(Office 365 專業增強版)
-- 我於 9 月註冊裝置並套用了 App 和裝置原則。(行動裝置管理)
+- 我於 9 月註冊裝置並套用了 App 和裝置原則。 (行動裝置管理)
 - 我於 12 月安裝了 Azure 資訊保護用戶端，並接受有關如何將標籤套用至文件的訓練。(資訊保護)
 
 結果是 90 天的連續試驗推出頻率。
 
 以下是簡化的使用者體驗，可做為範例：
 
-- 我需要於 1 月使用智慧型手機啟用 MFA。(身分識別)
+- 我需要於 1 月使用智慧型手機啟用 MFA。 (身分識別)
 - 我於 4 月在 Windows 8.1 電腦上安裝了 Windows 10 企業版。(Windows 10 企業版)
 - 我於 7 月安裝了 Office 365 專業增強版，取代原本的 Office 2013。(Office 365 專業增強版)
-- 我於 10 月註冊裝置並套用了 App 和裝置原則。(行動裝置管理)
+- 我於 10 月註冊裝置並套用了 App 和裝置原則。 (行動裝置管理)
 - 我於隔年 1 月安裝了 Azure 資訊保護用戶端，並接受有關如何將標籤套用至文件的訓練。(資訊保護)
 
 結果是 90 天的連續使用者推出頻率。
@@ -110,7 +110,7 @@ IT 基礎結構包含後端服務和向終端使用者推出的新增或改進�
 
 對於此部署策略，您可在目前階段之使用者推出的最後一部分啟動下一階段的試驗推出。以下是前一階段的使用者推出結束時，出現試驗推出的階段 2-6 部署。
 
-![](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
+![具有非重疊使用者推出之階段 2-6 的平行部署](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
  
 最終的結果是，在下一個階段開始之前，目前階段的使用者推出會在貴組織內完成。非試驗推出的使用者不會同時處理多個階段的推出，但試驗推出會與使用者推同時進行。
 
@@ -145,7 +145,7 @@ IT 基礎結構包含後端服務和向終端使用者推出的新增或改進�
 
 以下是不同部署策略之間的簡化比較。
 
-![](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
+![具有重疊使用者推出之階段 2-6 的平行部署](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
 
 最後的結果是：
 
@@ -174,11 +174,11 @@ IT 基礎結構包含後端服務和向終端使用者推出的新增或改進�
 
 此部署策略的優點是，它甚至可縮短完整部署 Microsoft 365 企業版底層基礎結構的時間，而不需使用者同時處理多個推出。 但是，使用者無法在連續階段之間休息。
 
-### <a name="up-front-infrastructure-and-rollout-of-end-to-end-configuration"></a>初期基礎結構和端對端設定的推出
+### <a name="up-front-infrastructure-and-rollout-of-the-end-to-end-configuration"></a>初期基礎結構和端對端設定的推出
 
 對於能夠將階段 2-6 壓縮為單一部署區段的小型組織，部署結果如下所示：
  
-![](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
+![初期基礎結構和端對端設定的推出](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
 
 IT 部門為階段 2-6 設定基礎結構，然後推出給試驗使用者，以檢查端對端的功能。例如，試驗使用者同時獲得下列功能：
 

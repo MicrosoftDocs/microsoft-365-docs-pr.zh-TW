@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 企業版的資訊保護基礎結構部署步驟。
-ms.openlocfilehash: 3174790d1ee6c9ed05605dd1c3c75405e3eac42b
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 54866ceb1fa72f404a5d255cb130c70fe180c493
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047306"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370450"
 ---
-# <a name="phase-6-information-protection"></a>階段 6：資訊保護
+# <a name="phase-6-information-protection"></a>第 6 階段：資訊保護
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon.png)
+![第 6 階段：資訊保護](./media/deploy-foundation-infrastructure/infoprotection_icon.png)
 
 資訊保護是定義如何傳送、儲存及處理機密資訊的一組原則和技術。在階段 6 中，您會逐步執行 Microsoft 365 企業版的資訊保護設定及功能，可協助您保護雲端式工作負載和案例的資料。
 
@@ -38,13 +38,13 @@ ms.locfileid: "37047306"
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[定義安全性和資訊保護層級](infoprotect-define-sec-infoprotect-levels.md)|
-|![](./media/stepnumbers/Step2.png)|[設定環境的分類](infoprotect-configure-classification.md)|
-|![](./media/stepnumbers/Step3.png)|[設定增強的 Microsoft 365 安全性](infoprotect-configure-increased-security-office-365.md)|
-|![](./media/stepnumbers/Step4.png)|[設定 Windows 資訊保護](infoprotect-deploy-windows-information-protection.md)|
-|![](./media/stepnumbers/Step5.png)|[設定 Office 365 資料外洩防護](infoprotect-data-loss-prevention.md)|
-|![](./media/stepnumbers/Step6.png)|[設定電子郵件加密](infoprotect-email-encryption.md)|
-|![](./media/stepnumbers/Step7.png)|[設定 Office 365 的特殊權限存取管理](infoprotect-configure-privileged-access-management.md)|
+|![步驟 1](./media/stepnumbers/Step1.png)|[定義安全性和資訊保護層級](infoprotect-define-sec-infoprotect-levels.md)|
+|![步驟 2](./media/stepnumbers/Step2.png)|[設定環境的分類](infoprotect-configure-classification.md)|
+|![步驟 3](./media/stepnumbers/Step3.png)|[設定增強的 Microsoft 365 安全性](infoprotect-configure-increased-security-office-365.md)|
+|![步驟 4](./media/stepnumbers/Step4.png)|[設定 Windows 資訊保護](infoprotect-deploy-windows-information-protection.md)|
+|![步驟 5](./media/stepnumbers/Step5.png)|[設定 Office 365 資料外洩防護](infoprotect-data-loss-prevention.md)|
+|![步驟 6](./media/stepnumbers/Step6.png)|[設定電子郵件加密](infoprotect-email-encryption.md)|
+|![步驟 7](./media/stepnumbers/Step7.png)|[設定 Office 365 的特殊權限存取管理](infoprotect-configure-privileged-access-management.md)|
 |||
 
 完成這些步驟之後，請移至此階段的[允出準則](infoprotect-exit-criteria.md)，以確定您符合 Microsoft 365 企業版的必要與選用條件。
@@ -57,11 +57,11 @@ ms.locfileid: "37047306"
 
 請參閱 Contoso Corporation (虛構但有代表性的跨國企業) 如何使用 Microsoft 365 雲端服務[實作資訊保護](contoso-info-protect.md)。
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso 公司](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>下一步
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)|[定義安全性和資訊保護層級](infoprotect-define-sec-infoprotect-levels.md)|
+|![步驟 1](./media/stepnumbers/Step1.png)|[定義安全性和資訊保護層級](infoprotect-define-sec-infoprotect-levels.md)|
 

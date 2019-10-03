@@ -3,7 +3,7 @@ title: 適用於 Contoso Corporation 的 Microsoft 365 企業版
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 虛構但有代表性的全球組織如何採用 Microsoft 365 企業版。
-ms.openlocfilehash: e587a2c6588faf32aa6882ef1659472365611517
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 0d5453a5f55314207e0c8403837a83dd66eb70d3
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054915"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369614"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>適用於 Contoso Corporation 的 Microsoft 365 企業版
 
@@ -42,15 +42,15 @@ Contoso 對於 Microsoft 365 企業版的整體目標是藉由使用雲端服務
 
 - [網路功能](contoso-networking.md)
 
-  Contoso 的網路工程師已將到其內部網路邊緣，以及到網際網路上最接近 Microsoft 網路位置的流量最佳化。
+  Contoso 的網路工程師已為他們的內部部署使用者，將流到其內部網路邊緣，以及流到網際網路上最接近 Microsoft 網路位置的流量最佳化。
 
 - [身分識別](contoso-identity.md)
 
-  Contoso 在雲端解決方案中的身分識別，會運用其內部部署身分識別提供者並包括現有受信任的第三方身分識別提供者的同盟驗證。
+  Contoso 在雲端解決方案中的身分識別，會運用其內部部署 Active Directory Domain Services (AD DS) 樹系，並包括現有受信任的第三方身分識別提供者的同盟驗證。
 
 - [Windows 10 企業版](contoso-win10.md)
 
-  Contoso Windows 10 企業版已實作基礎結構，部署其主要電腦和裝置作業系統，並且自動安裝更新。
+  Contoso 的 Windows 10 企業版基礎結構會為執行其主要電腦和裝置作業系統的裝置部署並自動安裝更新。
 
 - [Office 365 專業增強版](contoso-o365pp.md)
 
@@ -58,7 +58,7 @@ Contoso 對於 Microsoft 365 企業版的整體目標是藉由使用雲端服務
 
 - [行動裝置管理](contoso-mdm.md)
 
-  Contoso 有許多漫遊員工和公司與個人智慧型手機和平板電腦，Contoso 使用行動裝置管理來註冊並保護裝置及其資料。
+  Contoso 有許多漫遊員工和公司與個人智慧型手機和平板電腦，Contoso 使用行動裝置管理來註冊並保護裝置及其資料，以及管理應用程式。
 
 - [資訊保護](contoso-info-protect.md)
 

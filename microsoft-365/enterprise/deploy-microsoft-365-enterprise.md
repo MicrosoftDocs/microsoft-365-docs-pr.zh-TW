@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用來在組織中部署 Microsoft 365 企業版的資源。
-ms.openlocfilehash: ce4b3dfeb3c13f68b0218f5aea5740b6dc5252d0
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: 1d88ed400d20b15823d3991a1cd099bbb16ffa84
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050274"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369534"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版
 
@@ -65,7 +65,7 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
 以下是基礎結構和工作負載及案例之間的關聯。
 
-![](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![基礎結構和工作負載及案例之間的關聯](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
 工作負載和案例會在基礎結構的頂端運作。 不過，您不一定要建置所有基礎結構階段才能開始進行生力及共同作業的工作負載。
 

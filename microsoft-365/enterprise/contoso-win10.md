@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解 Contoso 如何使用 System Center Configuration Manager 來部署 Windows 10 企業版的就地升級。
-ms.openlocfilehash: 03ee4d9efcedf42eb976e001411299d2080abf83
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 7c4f4492c5b099f77c93df6c578ac88d25b4291f
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073853"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369514"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso 的 Windows 10 企業版部署
 
@@ -79,7 +79,7 @@ Contoso 同時也使用 Windows Analytics 的「升級整備狀況」解決方�
 
 圖 1 顯示就地升級和持續更新部署的基礎架構。
 
-![](./media/contoso-win10/contoso-win10-fig1.png)
+![Contoso 的 Windows 10 企業版部署基礎架構](./media/contoso-win10/contoso-win10-fig1.png)
  
 **圖 1：Contoso 的 Windows 10 企業版部署基礎架構**
 

@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並設定在組織中分類資料的不同方式。
-ms.openlocfilehash: ca1b4aefca7ee63f1c8fe098c115fc4f0074d9f6
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: e1f0a6b9bdc4b6844037e7e873ed321942e8258e
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047296"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370410"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>步驟 2：設定環境的分類
 
 *此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![第 6 階段：資訊保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 在此步驟中，您會與法律和法規遵循小組合作，定義組織資料的分類配置。
 
@@ -109,5 +109,5 @@ Microsoft 365 的敏感資訊類型會定義自動化程序 (例如搜尋) 如�
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)|[設定增強的 Office 365 安全性](infoprotect-configure-increased-security-office-365.md)|
+|![步驟 3](./media/stepnumbers/Step3.png)|[設定增強的 Office 365 安全性](infoprotect-configure-increased-security-office-365.md)|
 

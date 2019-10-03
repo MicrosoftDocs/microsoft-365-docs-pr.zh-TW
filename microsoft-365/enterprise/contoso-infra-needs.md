@@ -3,7 +3,7 @@ title: Contoso 的 IT 基礎結構與業務需求
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,17 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 內部部署 IT 基礎結構的基本結構，以及 Microsoft 365 企業版如何符合其業務需求。
-ms.openlocfilehash: e50a2b17544c1a551d25dffd751d12aec1c15ecd
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: d22763cede23d28c76a28c95a6e4772af81a996c
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072613"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369584"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contoso 的 IT 基礎結構與業務需求
 
 **摘要：** 了解 Contoso 內部部署 IT 基礎結構的基本結構，以及 Microsoft 365 企業版如何符合其業務需求。
-
 
 Contoso 已進行基礎結構轉型作業，即將從內部部署的集中式 IT 基礎結構轉換至整合雲端的個人生產力工作負載和應用程式之融合雲端的 IT 基礎結構。
 
@@ -33,7 +32,7 @@ Contoso 使用絕大部分屬於集中式的內部部署 IT 基礎結構，配�
 
 圖 1 顯示總部辦公室與應用程式資料中心、DMZ 和網際網路。
 
-![](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Contoso 的現有 IT 基礎結構](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 **圖 1：Contoso 的現有 IT 基礎結構**
  
@@ -43,15 +42,15 @@ Contoso 使用絕大部分屬於集中式的內部部署 IT 基礎結構，配�
 - 一組舊版 SharePoint 伺服器。
 - 用於檔案儲存的組織和小組層級伺服器。
 
-此外，還有支援一組伺服器與一組類似應用程式的每個區域中樞辦公室。這些伺服器受區域 IT 部門的控制。
+此外，每個區域中樞辦公室都支援一組有類似應用程式的伺服器。 這些伺服器都受到區域 IT 部門的控制。
 
 這些個別多地理區域資料中心之應用程式和資料的可搜尋性，一直是個挑戰。
 
 在 Contoso 的總部 DMZ 中，不同的伺服器組合提供︰
 
-- 為巴黎總部的員工提供連結至 Contoso 內部網路的 VPN 型遠端存取與 Web Proxy 處理。
 - Contoso 客戶訂購產品、零件、耗材或服務的公用網站主機服務。
 - 用於合作夥伴通訊和共同作業的 Contoso 合作夥伴外部網路主機服務。
+- 為巴黎總部的員工提供連結至 Contoso 內部網路的虛擬私人網路 (VPN) 型遠端存取與 Web Proxy 處理。
 
 ## <a name="contosos-business-needs"></a>Contoso 的業務需求
 
@@ -81,7 +80,7 @@ Contoso 的業務需求分成五個主要類別。
 
 - 資訊保護
 
-  加密高價值數位資產並鎖定其存取權，例如客戶資料、設計規格和員工資訊。
+  加密高價值數位資產並鎖定其存取權，例如客戶資料、設計與製造規格和員工資訊。
 
 - 安全性管理
 
@@ -111,7 +110,7 @@ Contoso 的業務需求分成五個主要類別。
 
 - 降低針對在電腦和裝置上執行之軟體進行管理的 IT 額外負荷
 
-  自動安裝更新到整個組織的 Windows 作業系統和 Microsoft Office。
+  自動安裝更新到整個組織的 Windows 作業系統和 Microsoft Office 專業增強版。
 
 ## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>將 Contoso 的業務需求對應至 Microsoft 365 企業版
 
@@ -121,29 +120,29 @@ Contoso 的 IT 部門決定在部署之前，將下列業務需求對應至 Micr
 |:-------|:-----|:-----|
 | **類別** | **業務需求** | **Microsoft 365 企業版產品或功能** |
 | 生產力 |  |  |
-|  | 讓共同作業更輕鬆 | Teams、SharePoint Online、商務用 Skype Online |
-|  | 改善遠端和行動工作者的生產力 | Office 365 工作負載和雲端式資料 |
+|  | 讓共同作業更輕鬆 | Microsoft Teams、SharePoint、OneDrive |
+|  | 改善遠端和行動工作者的生產力 | Microsoft 365 工作負載和雲端式資料 |
 |  | 增加創意和創新 | Windows Ink、Cortana at Work、PowerPoint |
 | 安全性 |  |  |
-|  | 身分識別和存取管理 | 具有多重要素驗證 (MFA) 與 Azure AD Privileged Identity Management (PIM) 的專用全域系統管理員帳戶 <BR> 適用於所有使用者帳戶的 MFA <BR> 條件式存取 <BR> Windows Hello <BR> Windows Credential Guard |
+|  | 身分識別和存取管理 | 具有 Azure 多重要素驗證 (MFA) 與 Azure AD Privileged Identity Management (PIM) 的專用全域系統管理員帳戶 <BR> 適用於所有使用者帳戶的 MFA <BR> 條件式存取 <BR> Windows Hello <BR> Windows Credential Guard |
 |  | 威脅防護 | 進階威脅分析 <BR> Windows Defender <BR> 進階威脅防護 <BR> Office 365 進階威脅防護 <BR> Office 365 威脅調查及回應 <BR> |
-|  | 資訊保護 | Azure 資訊保護 <BR> Office 365 資料外洩防護 (DLP) <BR> Windows 資訊保護 <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
+|  | 資訊保護 | Azure 資訊保護 <BR> Office 365 資料外洩防護 (DLP) <BR> Windows 資訊保護 (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | 安全性管理 | Azure 資訊安全中心  <BR> Windows Defender 資訊安全中心 |
 | 遠端和行動裝置存取與商務合作夥伴 |  |  |
 |  | 更好的遠端和行動工作者安全性 | Microsoft Intune |
-|  | 減少員工的遠端存取基礎結構 | Office 365 工作負載和雲端式資料 |
+|  | 減少員工的遠端存取基礎結構 | Microsoft 365 工作負載和雲端式資料 |
 |  | 針對 B2B 的交易提供更好的連線能力並降低額外負荷 | 同盟驗證和雲端式資源 |
 | 合規性 |  |  |
 |  | 遵循地區性法規的需求 | Office 365 中的 GDPR 功能 |
 | 管理 |  |  |
-|  | 降低安裝用戶端更新的 IT 額外負荷 | 部署通道 <BR> Windows 10 就地升級和 Autopilot <BR> Office 365 專業增強版 |
+|  | 降低安裝用戶端更新的 IT 額外負荷 | 部署通道 <BR> Windows 10 企業版更新 <BR> Office 365 專業增強版更新 |
 ||||
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
-[了解](contoso-networking.md) Contoso Corporation 內部部署網路，以及它如何針對整個組織 Microsoft 365 雲端式資源的存取和延遲最佳化。
+[了解](contoso-networking.md) Contoso Corporation 內部部署網路，以及它如何針對 Microsoft 365 雲端式資源的存取和延遲最佳化。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [部署指南](deploy-microsoft-365-enterprise.md)
 
