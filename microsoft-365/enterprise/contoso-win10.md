@@ -3,7 +3,7 @@ title: Contoso 的 Windows 10 企業版部署
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解 Contoso 如何使用 System Center Configuration Manager 來部署 Windows 10 企業版的就地升級。
-ms.openlocfilehash: 7c4f4492c5b099f77c93df6c578ac88d25b4291f
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: a63a973bed4bf62ebf7c2534d4c55a4e3b8ef60c
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369514"
+ms.locfileid: "37370470"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso 的 Windows 10 企業版部署
 
 **摘要：** 深入了解 Contoso 如何使用 System Center Configuration Manager 來部署 Windows 10 企業版的就地升級。
 
-在 Microsoft 365 企業版廣泛發佈之前，Contoso 擁有與 Windows 相容的電腦和裝置，分別執行 Windows 7 (10%)、Windows 8.1 (65%) 和 Windows 10 (25%)。Contoso 想要升級電腦至 Windows 10 企業版，好利用增強的安全性並透過自動化部署更新降低 IT 成本。 
+在 Microsoft 365 企業版廣泛發佈之前，Contoso 擁有與 Windows 相容的電腦和裝置，分別執行 Windows 7 (10%)、Windows 8.1 (65%) 和 Windows 10 (25%)。Contoso 想要升級電腦至 Windows 10 企業版，以利用進階安全性及透過自動化部署更新降低 IT 成本。 
 
 在評估基礎架構和業務需求後，Contoso 識別這些部署的關鍵需求：
 
@@ -45,11 +45,11 @@ ms.locfileid: "37369514"
 
 - 升級相容性  
 
-  收集系統和診斷資料，包含升級安裝進度、商務用 Windows Update (WUfB) 配置資料、Windows Defender 防毒軟體資料，以及其他升級相關資訊，並將這些資料儲存在雲端分析與使用情況。
+  針對 Windows 更新顯示裝置的狀態，讓您能視需要確保這些裝置處於最新更新狀態。
 
 - 裝置健全狀況  
 
-  收集 Windows 10 系統和診斷資料，包含升級安裝進度、商務用 Windows Update (WUfB) 配置資料、Windows Defender 防毒軟體資料，以及其他升級相關資訊，並將這些資料儲存在雲端分析與使用情況。
+  識別經常當機，因此可能需要重建或更換的裝置，以及導致裝置當機的裝置驅動程式，並建議能減少當機次數的驅動程式替代版本。 提供 Windows 資訊保護設定錯誤的通知，並傳送提示給使用者。
  
 Contoso 已擁有 Configuration Manager (最新分支) 基礎架構。Configuration Manager 可針對大型環境進行調整並提供安裝、更新及設定的全面控制，其內建功能更讓您可輕鬆且有效率地部署及管理 Windows 10 企業版。
 
@@ -75,20 +75,18 @@ Contoso 同時也使用 Windows Analytics 的「升級整備狀況」解決方�
 4. 使用 Windows Analytics 的「裝置健全狀況」和「升級相容性」解決方案，對在三個驗證和部署執行週期中的電腦和裝置執行成功評估。
 5. Contoso 根據 Windows Analytics 資訊，判斷要部署至廣泛部署週期的 Windows 10 企業版版本。
 6. 執行 Configuration Manager 的部署工作順序，將指定的 Windows 套件部署至廣泛部署週期。
-7. 使用 Windows Analytics 的「裝置健全狀況」和「升級相容性」解決方案，監控在廣泛部署週期中的電腦和裝置及解決問題。
+7. 使用「裝置健康情況」和「更新合規性」解決方案，監控在廣泛部署週期中的電腦和裝置，以解決問題。
 
-圖 1 顯示就地升級和持續更新部署的基礎架構。
+這是 Contoso 就地升級和持續更新部署的基礎架構。
 
 ![Contoso 的 Windows 10 企業版部署基礎架構](./media/contoso-win10/contoso-win10-fig1.png)
- 
-**圖 1：Contoso 的 Windows 10 企業版部署基礎架構**
 
 此基礎架構的組成為：
 
 - System Center Configuration Manager，功用是：
   - 從 Microsoft 網路中的 Microsoft 大量授權取得取得 Windows 10 企業版套件的映像。
   - 部署套件的管理中心點。
-- 通常位於 Contoso 衛星辦公室的地區發布點。
+- 通常位於 Contoso 地區中心辦公室的地區發布點。
 - 在不同地點的 Windows 電腦和裝置會根據週期成員資格，收到並安裝就地升級部署或持續更新套件。
 
 ## <a name="next-step"></a>下一步
