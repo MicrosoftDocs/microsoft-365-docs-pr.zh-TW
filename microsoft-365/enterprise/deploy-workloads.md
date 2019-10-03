@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 讓貴組織的使用者快速上手 Microsoft 365 企業版的生產力工作負載。
-ms.openlocfilehash: 6446e73f79a3dd92d60fa3299e6007e1a5a3fdeb
-ms.sourcegitcommit: a77c4889c5b7d3b8f16e74917079300e8f222941
+ms.openlocfilehash: 9416efe6171f8f3aefee504e5f39d19a2a909073
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37329205"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369424"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 企業版工作負載和案例
 
@@ -42,12 +42,9 @@ ms.locfileid: "37329205"
 
 以下是整體 Microsoft 365 企業版部署指南中的工作負載和案例：
 
-![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![整體 Microsoft 365 企業版部署指南中的工作負載和案例](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 如需其他案例，請參閱 [Microsoft 365 生產力資源庫](https://www.microsoft.com/microsoft-365/success/)。 
-
-1. 從這個網頁上，輸入搜尋字串或按一下 [篩選方式]**** 並指定 Microsoft 365 內的產業、角色 (部門) 和產品。
-2. 從結果，按一下某個卡片來查看可協助您快速開始的步驟。
 
 ## <a name="foundation-infrastructure-prerequisites"></a>底層基礎結構先決條件
 
