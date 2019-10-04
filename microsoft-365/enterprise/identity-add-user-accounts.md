@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 直接在雲端中，或透過與內部部署目錄同步處理來新增使用者帳戶和群組。
-ms.openlocfilehash: ce831a6866f61342f6eb93836d44637742007c03
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 559ea58a5fcee5860a797893230b587adc33a17d
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077613"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370220"
 ---
 # <a name="step-4-add-your-user-accounts"></a>步驟 4：新增使用者帳戶
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![階段 2 - 身分識別](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-cloud-only"></a>
 ## <a name="create-your-user-accounts-for-cloud-only-identity"></a>為僅限雲端身分識別建立使用者帳戶
@@ -126,4 +126,4 @@ Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configur
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)| [使用群組進行管理](identity-use-group-management.md) |
+|![步驟 5](./media/stepnumbers/Step5.png)| [使用群組進行管理](identity-use-group-management.md) |

@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 您可以將使用者登入 Windows 裝置和 Microsoft 365 變得更安全。
-ms.openlocfilehash: edf51b344ed8f9c8e13587cc2ccf0ba1ed081da6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6f45d61694cabd10587ff13bd787fa42bdaeac01
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077608"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370190"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>步驟 3：保護和管理您的使用者登入
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![階段 2 - 身分識別](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 
 <a name="identity-windows-hello"></a>
@@ -92,4 +92,4 @@ Windows 10 企業版的 Windows Hello 企業版在登入 Windows 裝置時，會
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [新增使用者帳戶](identity-add-user-accounts.md) |
+|![步驟 4](./media/stepnumbers/Step4.png)| [新增使用者帳戶](identity-add-user-accounts.md) |

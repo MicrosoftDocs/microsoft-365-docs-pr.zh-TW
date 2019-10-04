@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的設定符合 Microsoft 365 企業版準則，是否具備以識別為基礎的服務和基礎結構。
-ms.openlocfilehash: 880bfa2b71158a2fa5c64fb09af2e8a34428a7a8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4a93d0a9fb497daccba4fd2641fd5faf9c4fb384
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071682"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370200"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>階段 2：識別基礎結構允出準則
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![階段 2 - 身分識別](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 請確定您的身分識別基礎結構符合下列必要準則，而且您已將這些視為選擇性準則。
 
@@ -292,5 +292,5 @@ Azure AD Connect Health 入口網站會顯示您內部部署網域控制站和�
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)| 如果您會遵循 Microsoft 365 企業版的端對端部署階段，則下一個階段是 [Windows 10 企業版](windows10-infrastructure.md)。 |
+|![階段 3：Windows 10 企業版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)| 如果您會遵循 Microsoft 365 企業版的端對端部署階段，則下一個階段是 [Windows 10 企業版](windows10-infrastructure.md)。 |
 

@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 檢查資訊保護型服務和基礎結構的準則，確定您的設定符合 Microsoft 365 企業版的需求。
-ms.openlocfilehash: 02e972a80d4b42ae66193bbbc55d0f1e63be5ba6
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: f4896baeb4c18fc1eabac10b15f3ad8e150ab260
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047236"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370130"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>資訊保護基礎結構的允出準則
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![階段 6：資訊保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 請確定您的資訊保護基礎結構符合下列必要準則，而且您已將這些視為選擇性準則。
 

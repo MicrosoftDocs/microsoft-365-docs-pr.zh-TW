@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 您的全域系統管理員帳戶需要特別處理，以確保認證免受洩漏的危險。
-ms.openlocfilehash: a32781686cd972ca96f6bb08f31c15ede016c4cd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 72de7d683a9c2a080f7be69e585d16d8122cd46d
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077609"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370210"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>步驟 1：建立和保護您的全域系統管理員帳戶
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![階段 2 - 身分識別](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-global-admin"></a>
 ## <a name="protect-global-administrator-accounts"></a>保護全域系統管理員帳戶
@@ -110,5 +110,5 @@ PIM 可與 Azure Active Directory Premium P2 搭配使用，隨附於 Microsoft 
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [保護您的密碼](identity-secure-your-passwords.md) |
+|![步驟 2](./media/stepnumbers/Step2.png)| [保護您的密碼](identity-secure-your-passwords.md) |
 

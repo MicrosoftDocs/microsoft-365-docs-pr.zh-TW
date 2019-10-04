@@ -17,6 +17,8 @@
 #### [裝置監視與報告](./mtp/monitor-devices.md)
 #### [應用程式監視與報告](./mtp/monitor-apps.md)
 
+### [透過 ServiceNow 管理票證](./mtp/tickets.md)
+
 ## [Office 365 安全性]()
 ### [開始使用]()
 #### [Office 365 安全性藍圖](./office-365-security/security-roadmap.md)

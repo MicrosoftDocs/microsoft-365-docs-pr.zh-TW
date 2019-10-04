@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 您可以使用群組來自動管理某些系統管理工作。
-ms.openlocfilehash: 01bbce00457362ed0eb089e126f0d17f31237eb4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 769fc0dd69b13978dbb9cf91d890ad271a7d9bb5
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077606"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370180"
 ---
 # <a name="step-5-use-groups-for-management"></a>步驟 5：使用群組進行管理
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![階段 2 - 身分識別](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-self-service-groups"></a>
 ## <a name="allow-users-to-create-and-manage-their-own-groups"></a>允許使用者建立及管理自己的群組
@@ -104,4 +104,4 @@ ms.locfileid: "37077606"
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step6.png)| [設定身分識別治理](identity-configure-identity-governance.md) |
+|![步驟 6](./media/stepnumbers/Step6.png)| [設定身分識別治理](identity-configure-identity-governance.md) |
