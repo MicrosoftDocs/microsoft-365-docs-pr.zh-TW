@@ -3,7 +3,7 @@ title: 步驟 5：最佳化用戶端和 Office 365 服務效能
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/13/2018
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 設定 TCP 設定與 Office 365 服務以獲得更佳效能。
-ms.openlocfilehash: 9e786b36d7a2afccc3b9112b815cd42a40317c15
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f89ae816780101c31971c8e3e60df803f82f1e55
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073183"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370070"
 ---
 # <a name="step-5-optimize-client-and-office-365-service-performance"></a>步驟 5：最佳化用戶端和 Office 365 服務效能
 
 *此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![階段 1 - 網路](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 您可以透過微調傳輸控制通訊協定 (TCP) 在用戶端裝置與 Office 365 服務間的運作方式來增加效能。
 
@@ -37,12 +37,12 @@ ms.locfileid: "34073183"
 
 針對 Office 365 服務，請參閱這些額外的資源以最佳化效能：
 
-- [Exchange Online](https://support.office.com/article/Tune-Exchange-Online-performance-026e83cb-a945-4543-97b0-a8af6e80ac61)
-- [商務用 Skype Online](https://support.office.com/article/Tune-Skype-for-Business-Online-performance-beec23c2-c5d6-4e84-a8af-e82aefca7802)
-- [SharePoint Online](https://support.office.com/article/Tune-SharePoint-Online-performance-f0522d4a-fbf4-41f9-854e-c9b59555091d)
-- [Project Online](https://support.office.com/article/Tune-Project-Online-performance-12ba0ebd-c616-42e5-b9b6-cad570e8409c)
+- [Exchange Online](https://docs.microsoft.com/office365/enterprise/tune-exchange-online-performance)
+- [商務用 Skype Online](https://docs.microsoft.com/office365/enterprise/tune-skype-for-business-online-performance)
+- [SharePoint Online](https://docs.microsoft.com/office365/enterprise/tune-sharepoint-online-performance)
+- [Project Web App for Project Online](https://docs.microsoft.com/ProjectOnline/tune-project-online-performance)
 
-作為過渡期的檢查點，您可以看到此步驟的[允出準則](networking-exit-criteria.md#crit-networking-step5)。
+做為過渡期的檢查點，您可以看到此步驟的[允出準則](networking-exit-criteria.md#crit-networking-step5)。
 
 ## <a name="next-step"></a>下一步
 

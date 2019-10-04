@@ -3,7 +3,7 @@ title: 自動化的調查和 Office 365 中的回應 （空調）
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,21 +13,27 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解 Office 365 進階威脅防護中的自動化調查及回應功能。
-ms.openlocfilehash: 1e600a7a392acc34fac2547a3daa17c0058322b5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 99eea4d723a2d9f27528eb951c758b33e0390f93
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077281"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386200"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>自動化的調查和 Office 365 中的回應 （空調）
 
-自動化的調查和 （包含在[Office 365 進階的威脅防護](office-365-atp.md)計劃 2） 的回應 （空調） 功能可讓您回應熟知威脅存在於今天執行自動化的調查程序。 空調可協助您操作更有效率的安全性作業小組。
+自動化的調查及回應 （空調） 功能可讓您回應熟知威脅存在於今天執行自動化的調查程序。 空調可協助您操作更有效率的安全性作業小組。
 - 若要取得航空的運作方式的概觀，請使用本文。
 - 若要開始使用空調，請參閱[自動調查及回應 Office 365 中的威脅](office-365-air.md)。
 
 > [!NOTE]
 > 您必須是全域系統管理員、 安全性系統管理員、 安全性運算子或安全性助讀程式來存取空調功能。 若要深入了解這些權限，請參閱[Microsoft 365 安全性中心： 角色和權限](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
+
+空調隨附於下列訂閱：
+- Microsoft 365 E5
+- Microsoft 365 E5 Security
+- Office 365 E5
+- Office 365 進階的威脅保護計劃 2
 
 ## <a name="the-overall-flow-of-air"></a>航空的整體流程
 
@@ -57,8 +63,12 @@ ms.locfileid: "37077281"
 
 - 電子郵件訊息包含傳遞 * 後移除的釣魚程式 Url
 
+- 傳送模式偵測到可疑的電子郵件#
+
+- 使用者限制而無法傳送電子郵件#
+
 > [!NOTE]
-> 標示加有星號的警示關閉的電子郵件通知與指派安全性 & 合規性中心，各自的警示原則*提示資訊*嚴重性。 電子郵件通知可以開啟透過[警示原則設定](../../compliance/alert-policies.md#alert-policy-settings)。
+> 以星號 （*） 標記的警示關閉的電子郵件通知與指派安全性 & 合規性中心，各自的警示原則*提示資訊*嚴重性。 電子郵件通知可以開啟透過[警示原則設定](../../compliance/alert-policies.md#alert-policy-settings)。 以雜湊 （#） 標記的提醒是通常可公開預覽 playbooks 相關聯的提醒。
 
 若要檢視提醒，安全性 & 合規性中心中，選擇 [**提醒** > **檢視警示**。 選取警示若要檢視其詳細資料，並從該處，使用的**檢視調查**連結移至對應的[調查](#investigation-graph)。 請注意預設將資訊警示隱藏 [警示] 檢視中。 若要查看它們，您需要變更篩選功能，包括資訊警示的警示。
 
@@ -74,15 +84,18 @@ ms.locfileid: "37077281"
 
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>安全性 playbooks 已推出階段
 
-航空的一部分，安全性 playbooks 已推出階段。 在階段 1 （預覽會開始在 2019 年 4 月推出） 中，幾個 playbooks 發行包含建議的安全性管理員檢閱和核准的動作：
+航空的一部分，安全性 playbooks 已推出階段。 階段 1 是現在可使用，並包含數個 playbooks 提供建議的安全性系統管理員可以檢閱和核准的動作：
 - 使用者報告的釣魚程式訊息
-- URL 按一下 verdict 變更 
+- URL 按一下 verdict 變更
 - 偵測到的惡意程式碼後傳遞 （惡意程式碼時能量光束）
 - 釣魚程式偵測到後續傳遞 ZAP （Phish 時能量光束）
 
-階段 1 也包含手動的電子郵件調查 （使用[威脅總管](threat-explorer.md)）。
+階段 1 也包含手動的電子郵件調查 （使用[威脅總管](threat-explorer.md)） 的支援。
 
-階段 2 現在正在進行中。 請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)請參閱什麼是計劃的及接下來推出。
+階段 2 現在是與**公開預覽**中提供建議的動作，並在調查問題達到安全性管理員下列 playbooks 的進度：
+- 使用者回報為遭入侵 （公用預覽）
+
+將發行進一步 playbooks，因為它們已完成。 請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)請參閱什麼是計劃的及接下來推出。
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>Playbooks 包括調查與建議
 

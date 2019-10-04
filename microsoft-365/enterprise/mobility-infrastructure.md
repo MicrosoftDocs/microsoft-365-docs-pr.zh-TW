@@ -2,10 +2,10 @@
 title: 階段 5-行動裝置管理
 description: Microsoft 365 企業版包含使用 Microsoft Intune 行動裝置管理。 檢閱需求和先決條件，設定 Intune 使用 Azure Active Directory 資源，註冊 iOS、 macOS、 Android 和 Windows 裝置，部署應用程式、 建立設定檔、 使用合規性政策，並啟用的行動裝置條件式存取使用 Microsoft 365 企業版的裝置管理。
 keywords: Microsoft 365，Microsoft 365 企業版，Microsoft 365 文件、 行動裝置管理、 Intune
-author: MandiOhlinger
-ms.author: mandia
-manager: dougeby
-ms.date: 08/28/2019
+author: JoeDavies-MSFT
+ms.author: josephd
+manager: laurawi
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.prod: microsoft-365-enterprise
 ms.service: ''
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 570b71a5e766738769b537a2601ede7f01bf078c
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: dd73f32ff3c830104777aeefb1271178031a5b0d
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982804"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386140"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>階段 5: Microsoft 365 企業版的行動裝置管理
 
-![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![階段 5： 行動裝置管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *此功能適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
@@ -34,9 +34,9 @@ Microsoft 365 企業版包含可協助您管理裝置和其應用程式]，在�
 
 若要管理行動裝置的主要原因之一是安全性和保護您的組織資源。 [若要使用 Microsoft Intune 的常用方式](https://docs.microsoft.com/intune/common-scenarios)列出一些真實世界的範例，包括保護 Office 365 電子郵件和資料。
 
-Intune 提供您選項來管理您組織中使用[行動裝置管理 (MDM) 或行動應用程式管理 (MAM)](https://docs.microsoft.com/intune/byod-technology-decisions)存取。 MDM 時，使用者的 「 註冊 「 在 Intune 中的其裝置。 一旦註冊，他們受管理的裝置，且可以接收任何原則、 規則和貴組織所使用的設定。 例如，您可以安裝特定應用程式、 建立密碼原則、 安裝 VPN 連線，等等。
+Intune 提供您選項來管理您組織中使用行動裝置管理 (MDM) 或行動應用程式管理 (MAM) 存取。 MDM 時，使用者的 「 註冊 「 在 Intune 中的其裝置。 一旦註冊，他們受管理的裝置，且可以接收任何原則、 規則和貴組織所使用的設定。 例如，您可以安裝特定應用程式、 建立密碼原則、 安裝 VPN 連線，等等。
 
-使用者與自己的個人裝置可能不想要註冊他們的裝置，或由 Intune 和您的原則進行管理。 但是，您仍然需要保護貴組織的資源和資料。 在此案例中，您可以保護您的應用程式使用 MAM。 例如，您可以使用 MAM 原則，要求使用者在裝置上存取 SharePoint 時輸入 pin 碼。
+使用者與自己的個人裝置可能不想要註冊裝置，或由 Intune 和您的原則進行管理。 但您仍須保護貴組織的資源和資料。 在此案例中，您可以保護您的應用程式使用 MAM。 例如，您可以使用 MAM 原則，要求使用者在裝置上存取 SharePoint 時輸入 pin 碼。
 
 您也將決定您要管理個人或公司擁有裝置的方式。 若要根據其使用方式，將裝置。 例如，您可能想為使用者不同的計劃人力資源 (HR) 或銷售中的使用者。 [身分識別的行動裝置管理使用案例案例](https://docs.microsoft.com/intune/planning-guide-scenarios)可以協助您開始，並包含這些不同案例的一些指引。
 
@@ -54,7 +54,7 @@ Intune 提供您選項來管理您組織中使用[行動裝置管理 (MDM) 或�
 
 Intune 使用 Azure AD，包括您的網域，您的使用者，以及您的群組中的許多功能。 您也可以建立新的使用者和新的群組，以符合您公司的需求。 例如，您可以建立一個稱為 「 **iOS 裝置**，或者**所有 HR 使用者**群組。  善用[動態群組](https://docs.microsoft.com/intune/groups-add)可讓您建立使用者或根據周圍簡單或進階規則的裝置群組。
 
-此步驟著重於設定 Intune，並準備您管理您的裝置。
+此步驟著重在 Intune 設定和準備您管理您的裝置。
 
 1. **[確認您的裝置支援](https://docs.microsoft.com/intune/supported-devices-browsers)**。 確認您的 iOS、 macOS、 Android、 星空、 和 Windows 裝置支援 Intune。 如果您的組織中包含不支援的裝置，原則不會套用至這些裝置。
 
@@ -66,13 +66,13 @@ Intune 使用 Azure AD，包括您的網域，您的使用者，以及您的群�
 
 5. **[新增使用者](https://docs.microsoft.com/intune/users-add)** 並**[加入群組](https://docs.microsoft.com/intune/groups-add)**。 
 
-   您可以手動新增使用者，或連線到 Azure AD 同步處理使用者與 Intune。 您也可以提供系統管理員角色給特定使用者。 除非您的裝置 」 userless 」 的裝置，例如 kiosk 裝置，所需的使用者。
+   您可以手動新增使用者，或用於混合式身分識別與 Azure AD Connect 同步處理內部部署使用者帳戶使用 Intune。 您也可以提供系統管理員角色給特定使用者。 除非您的裝置 」 userless 」 的裝置，例如 kiosk 裝置，所需的使用者。
 
    Azure AD 群組用來簡化您管理裝置和在 Intune 中的使用者。 使用群組，您可以執行許多不同的工作。 例如，您的組織想要需要 Android 裝置上的特定應用程式。 您可以建立 Android 裝置群組，並部署到群組與此應用程式的原則。
 
     在 Intune 中，您可以新增使用者或群組，您在建立[階段 2： 身分識別](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure)
 
-6. **[指派授權](https://docs.microsoft.com/intune/licenses-assign)**。 使用者或裝置在 Intune 中註冊，他們必須在裝置上的授權。 每個使用者或 userless 裝置需要 Intune 授權存取的 Intune 服務。 這些授權隨附於 Microsoft 365，且必須在 Intune 中指派。
+6. **[指派授權](https://docs.microsoft.com/intune/licenses-assign)**。 使用者或裝置在 Intune 中註冊，它們會與 Intune 服務能夠存取 Intune 服務需要 Microsoft 365 授權。 您指派 Microsoft 365 授權，已啟用根據預設，在 Microsoft 365 系統管理中心或 PowerShell 的 Microsoft Intune 服務。
 
 ## <a name="step-4-enroll-devices"></a>步驟 4： 註冊裝置
 
@@ -96,7 +96,7 @@ Intune 可以管理應用程式，包括新增應用程式、 將它們指派給
 
 當使用者取得行動裝置時，其中第一個工作是存取組織的電子郵件和文件。 使用 Intune，您可以[建立及部署電子郵件設定](https://docs.microsoft.com/intune/email-settings-configure)的裝置上使用預先安裝的電子郵件應用程式。 
 
-[新增應用程式](https://docs.microsoft.com/intune/app-management)列出的步驟來新增、 部署、 監視、 設定和保護貴內的裝置上的應用程式
+[新增應用程式](https://docs.microsoft.com/intune/apps/apps-add)文章列出的步驟來新增、 部署、 監視、 設定和保護貴內的裝置上的應用程式
 
 |||
 |:-------|:-----|
@@ -107,13 +107,13 @@ Intune 可以管理應用程式，包括新增應用程式、 將它們指派給
 
 在先前步驟中，您可以設定您的環境，並啟用 Intune。 現在，您可以建立使用合規性和條件式存取原則。
 
-合規性和條件式存取極為重要管理裝置。 建立**[符合性原則](https://docs.microsoft.com/intune/device-compliance-get-started)**，協助保護貴組織的資源。 當您建立合規性政策時，您要定義標準或的裝置必須具備 「 基準 」。 例如，您可以選擇可接受 （或無法接受） 威脅層級、 封鎖越獄裝置、 需要密碼長度，等等。 如果這些裝置不符合您的規則，這表示它們不相容，然後可以封鎖存取您的資源。
+合規性和條件式存取極為重要管理裝置。 建立[符合性原則](https://docs.microsoft.com/intune/device-compliance-get-started)，協助保護貴組織的資源。 當您建立合規性政策時，您要定義標準或的裝置必須具備 「 基準 」。 例如，您可以選擇可接受 （或無法接受） 威脅層級、 封鎖越獄裝置、 需要密碼長度，等等。 如果這些裝置不符合您的規則，這表示它們不相容，然後可以封鎖存取您的資源。
 
-此 「 封鎖 」 引進**[條件式存取](https://docs.microsoft.com/intune/conditional-access)**。 如果裝置被視為不相容，您可以封鎖存取電子郵件、 SharePoint、 等等。
+此 「 封鎖 」 引進[條件式存取](https://docs.microsoft.com/intune/conditional-access)。 如果裝置被視為不相容，您可以封鎖存取電子郵件、 SharePoint、 等等。
 
 在[Azure 入口網站](https://portal.azure.com)中的 Intune 可讓您建立這些原則，並將它們套用至您的使用者和裝置。 最佳作法是，啟動小型，並使用分段的方法。 例如，建立 iOS 原則會封鎖越獄裝置。 （稱為 「 指派 「 在 Intune 中的） 的原則套用至試驗或測試群組。 初始測試之後，新增更多使用者到試驗群組。 使用分段的方式，您可以從各種使用者類型取得意見反應。
 
-[開始使用裝置合規性原則](https://docs.microsoft.com/intune/device-compliance-get-started)和[的條件式存取的功能？](https://docs.microsoft.com/intune/conditional-access)可協助您快速入門。
+請參閱[開始使用裝置合規性原則](https://docs.microsoft.com/intune/device-compliance-get-started)和[了解條件式存取和 Intune？](https://docs.microsoft.com/intune/conditional-access)可協助您快速入門。
 
 ## <a name="step-7-apply-features-and-settings"></a>步驟 7： 將套用的功能與設定
 
@@ -125,9 +125,8 @@ Intune 可以管理應用程式，包括新增應用程式、 將它們指派給
 - 使用 iOS 裝置上的受限制的應用程式功能，來建立核准，皆可安裝的應用程式的清單。 或者，建立一份禁止之應用程式。
 - 若要選擇哪個應用程式可以用在 kiosk 模式中執行的 Android 裝置上使用 Kiosk 設定。
 - 適用於 Wi-fi 連線以及其設定，包括上執行 macOS 裝置的安全性類型。
-- 等等
 
-[什麼是 Microsoft Intune 裝置設定檔？](https://docs.microsoft.com/intune/device-profiles)是很理想的閱讀有關的設定檔資訊，請參閱如何建立設定檔，等等。
+[套用功能，以及設定您的裝置使用裝置設定檔](https://docs.microsoft.com/intune/device-profiles)是很理想的閱讀有關的設定檔資訊，請參閱如何建立設定檔，等等。
 
 請記得，啟動小，並使用分段的方法。 給試驗或測試群組指派設定檔。 然後，指派給更多的試驗群組的設定檔。
 
@@ -140,7 +139,7 @@ Intune 是功能強大的服務，並包含許多功能。 以下是一些您可
 - 使用[注意](https://docs.microsoft.com/intune/lookout-mobile-threat-defense-connector)、 [Symantec](https://docs.microsoft.com/intune/skycure-mobile-threat-defense-connector)及其他行動防禦威脅協力廠商
 - 新增[協力廠商憑證授權單位 (CA)](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview)發行，以及更新憑證
 - [提供相關指導，以您的使用者](https://docs.microsoft.com/intune/end-user-educate)在公司入口網站應用程式，取得應用程式]，等等
-- 監視[應用程式](https://docs.microsoft.com/intune/apps-monitor)、 監控[裝置相容性](https://docs.microsoft.com/intune/compliance-policy-monitor)、 監視器[設定設定檔](https://docs.microsoft.com/intune/compliance-policy-monitor)、 和多個遙測使用稽核記錄檔。 您也可以連線到[Intune 資料倉儲](https://docs.microsoft.com/intune/reports-nav-create-intune-reports)，並使用更多報告需求的 Power BI。
+- 監視[應用程式](https://docs.microsoft.com/intune/apps-monitor)和[裝置合規性和設定設定檔](https://docs.microsoft.com/intune/compliance-policy-monitor)，並使用稽核記錄檔的詳細遙測。 您也可以連線到[Intune 資料倉儲](https://docs.microsoft.com/intune/reports-nav-create-intune-reports)，並使用更多報告需求的 Power BI。
 
 
 ## <a name="identity-and-device-access-recommendations"></a>身分識別與裝置存取建議
@@ -158,7 +157,7 @@ Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configur
 
 請參閱 Contoso Corporation，虛構但有代表性的跨國企業，[部署其行動裝置管理基礎結構](contoso-mdm.md)與 Microsoft 365 雲端服務的方式。
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso 公司](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>下一步
 
