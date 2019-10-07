@@ -3,7 +3,7 @@ title: Office 365 進階威脅防護
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 03/28/2019
+ms.date: 10/03/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 進階威脅防護包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
-ms.openlocfilehash: 3981d2bb37b1c9b91ed2b0a93f57a33940a25186
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9f2bedaa436aa5f38d8929e6bc8eda2e34896575
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078022"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386150"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
@@ -87,7 +87,14 @@ Office 365 ATP 方案 2 中包含業界最佳[威脅調查及回應工具](offic
     
 ## <a name="save-time-with-automated-investigation-and-response"></a>利用自動調查及回應節省時間
 
-(**新增！**) 調查潛在的網路攻擊時，時間是關鍵。 愈快找出並減輕威脅，您組織的處境便愈好。 Office 365 ATP 方案 2 現在將包含[自動調查及回應 (AIR)](automated-investigation-response-office.md) 功能。 (如果您尚沒有這些功能，您會隨著 ATP 方案 2 取得這些功能。)
+(**新增！**) 調查潛在的網路攻擊時，時間是關鍵。 愈快找出並減輕威脅，您組織的處境會愈好。 以下列出的訂閱現在將包含[自動調查及回應 (AIR)](automated-investigation-response-office.md) 功能。 (如果您尚沒有這些功能，擁有以下其中一個訂閱之後，即能取得這些功能。)
+
+Office 365 AIR 現在包含在以下訂閱中：
+
+- Microsoft 365 E5
+- Microsoft 365 E5 安全性
+- Office 365 E5
+- Office 365 進階威脅防護方案 2
 
 AIR 包含一組安全性劇本，可以自動啟動 (例如當警示觸發時)，或手動啟動 (例如從檔案總管中的檢視)。 AIR 可以在緩和威脅方面有效也有效率地節省您安全性作業小組的時間和精力。 若要深入了解，請參閱[使用 Office 365 自動調查及回應 (AIR)](automated-investigation-response-office.md)。
 

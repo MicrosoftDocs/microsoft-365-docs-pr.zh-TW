@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 讓貴組織的使用者快速上手 Microsoft 365 企業版的生產力工作負載。
-ms.openlocfilehash: 9416efe6171f8f3aefee504e5f39d19a2a909073
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: a68b3a436daf6f1474f55676c6a167ecd4bdd39c
+ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369424"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37403242"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 企業版工作負載和案例
 
@@ -44,7 +44,7 @@ ms.locfileid: "37369424"
 
 ![整體 Microsoft 365 企業版部署指南中的工作負載和案例](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
-如需其他案例，請參閱 [Microsoft 365 生產力資源庫](https://www.microsoft.com/microsoft-365/success/)。 
+如需其他案例，請參閱 [Microsoft 365 生產力資源庫](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary)。 
 
 ## <a name="foundation-infrastructure-prerequisites"></a>底層基礎結構先決條件
 
