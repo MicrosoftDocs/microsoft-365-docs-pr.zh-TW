@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: 815862616e1bdbf4b3be1d77de2a541ad703149f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3646d86cd9edac95975958458eb52a44fe30d2f5
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076626"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417502"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>版本資訊的合規性管理員 （預覽）
 
@@ -26,6 +26,8 @@ ms.locfileid: "37076626"
 您可以使用[服務信任入口網站](https://servicetrust.microsoft.com)上更新的[合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)」 來追蹤、 指派，並確認與 Microsoft 雲端服務相關的法規合規性活動。
 
 ## <a name="whats-new-in-compliance-manager-preview"></a>What's new 合規性管理員中 （預覽）
+
+- **角色型存取合規性管理員：** 已移除的預設**猜測存取**角色。 為了讓使用者存取合規性管理員中，全域系統管理員必須[指派每位使用者的權限](compliance-manager-overview#permissions.md)。
 
 - **整合與 Microsoft 安全分數：** 合規性管理員可藉由將客戶管理動作對應到超過 50 個安全分數動作支援與[Microsoft 安全分數](../security/mtp/microsoft-secure-score.md)的整合。 當您完成安全分數對應巨集指令時，對應的合規性管理員巨集指令會自動更新。
 
@@ -38,7 +40,7 @@ ms.locfileid: "37076626"
     - **擁有者：** 指定每個動作項目擁有者。
     - **客戶動作：** 管理動作項目包含在合規性管理員 （預覽） 的完整清單，並啟用/停用安全分數監控與安全分數整合在一起的動作項目。
 
-- **更新合規性分數**： 方法具有變更以支援透過 Microsoft 安全分數進行同步處理。 計分系統會移除 Microsoft 管理控制項信用額度，並完全著重完成的客戶管理控制措施。
+- **更新合規性分數**： 方法具有變更以支援透過 Microsoft 安全分數進行同步處理。 分數是根據計算 Microsoft 受管理的巨集指令分數和客戶管理動作分數。
 
 ## <a name="known-issues-in-compliance-manager-preview"></a>已知的問題合規性管理員中 （預覽）
 

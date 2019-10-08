@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: c88b45fb568b0fe29bc967676ea09e89e9084a62
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 428e4ef319d53bf161903fc9584037800d0b3d3b
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076628"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417532"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance Manager （預覽）
 
@@ -111,11 +111,16 @@ ms.locfileid: "37076628"
 
 ## <a name="permissions"></a>權限
 
-合規性管理員中使用角色型存取控制[」 權限模型](working-with-compliance-manager.md#permissions)。 根據預設，Azure Active Directory (Azure AD) 帳戶具有您組織中的每個人都具有完整存取權，並可以合規性管理員中執行任何動作。 一旦由您的組織已實作角色型存取控制，任何未指派給已定義的合規性管理員角色的使用者指派的來賓存取。 Microsoft 服務人員不需要常設存取權，輸入或上載的任何資料。
+合規性管理員中使用角色型存取控制 」 權限模型。 只有獲指派的使用者角色的使用者可能會存取合規性管理員中，並依角色類型會限制每位使用者所允許的動作。 [檢視表格](working-with-compliance-manager.md#permissions)顯示每個權限所允許的動作。
 
-若要變更預設權限，並實作完全角色型存取控制模型，至少一位使用者必須新增至每個合規性管理員角色。 將使用者新增至角色之後，若要執行的動作指派給該角色的權限會移除預設的權限提供一組的所有使用者。 佈建與角色的使用者將能夠存取合規性管理員中，並執行該角色所允許的動作。
+入口網站管理員合規性管理員可以設定其他使用者在合規性管理員中的權限，遵循下列步驟：
 
-如果您將使用者新增至要管理 「 評估 」 的角色時，只有該角色的成員可以管理的評估。 如果您不新增使用者角色可讓使用者能夠讀取 「 評估 」 中的資料，您組織中的所有使用者可以存取合規性管理員中，並讀取任何評估的資料。
+1. 從頂端**多個**下拉式] 功能表中，選取 [**系統**]，然後**設定**]。
+2. 從這裡開始，選取您想要指派，然後新增您想要指派給該角色的員工的角色。 使用者能執行某些動作。
+
+此外，[在 Azure Active Directory (Azure AD) 中的全域讀者角色](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)所指派的使用者擁有存取合規性管理員中; 的唯讀權限不過他們無法編輯資料，或執行合規性管理員中的任何動作。
+
+請注意，有不再預設**來賓存取**角色。 每位使用者必須被指派角色，才能存取及使用合規性管理員中。
   
 ## <a name="manage-evidence"></a>管理辨識項
 
