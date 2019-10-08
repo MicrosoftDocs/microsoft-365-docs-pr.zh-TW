@@ -14,12 +14,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何辨識及回應 Office 365 中遭入侵的電子郵件帳戶
-ms.openlocfilehash: 98a254ad6e356cecd44dac57bbe9f83171ddad73
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 239e880bbdd1b2ef7cbbde7e42fb8392777563a5
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078178"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417572"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>回應 Office 365 中遭入侵的電子郵件帳戶
 
@@ -94,7 +94,7 @@ ms.locfileid: "37078178"
 ### <a name="step-4-unblock-the-user-from-sending-mail"></a>步驟 4 解除封鎖使用者，使其可以傳送郵件
 
 如果懷疑遭入侵的信箱被非法用來傳送垃圾郵件，則可能是該信箱已被封鎖無法傳送郵件。
-1. 若要解除封鎖信箱，使其可以傳送郵件，請遵循[傳送垃圾郵件之後，從封鎖清單移除使用者、網域或 IP 位址](https://docs.microsoft.com/Office365/SecurityCompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email )中的程序。
+1. 若要解除封鎖信箱，使其可以傳送郵件，請遵循[傳送垃圾郵件之後，從封鎖清單移除使用者、網域或 IP 位址](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam)中的程序。
 
 ### <a name="step-5-optional-block-the-user-account-from-signing-in"></a>步驟 5 選用：封鎖使用者帳戶，使其無法登入
 
