@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 了解最常用來協助減少 Office 365 中垃圾郵件的方式。
-ms.openlocfilehash: d99b5e1452c60be713f0f4cfbab965d30eeeb8ef
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 759d56862497444c27d0cc0f081731a3581337bd
+ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077995"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428424"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>如何減少 Office 365 中的垃圾郵件
 
@@ -35,7 +35,7 @@ ms.locfileid: "37077995"
 
 ## <a name="fixing-allowed-spam"></a>修正允許的垃圾郵件
 
-我們經常看到客戶因為設定錯誤而將垃圾郵件收到收件匣中。其中最常見的是在郵件流程規則 (也稱為傳輸規則) 中將網域設定為繞過篩選器，或將您的網域設定在允許/安全寄件者清單中。這樣不好，因為原本會被攔截的這些郵件會跳過垃圾郵件篩選。  
+我們經常看到客戶因為設定錯誤而將垃圾郵件收到收件匣中。其中最常見的是在郵件流程規則 (也稱為傳輸規則) 中將網域設定為繞過篩選器，或將您的網域設定在允許/安全寄件者清單中。這樣不好，因為原本會被攔截的這些郵件會跳過垃圾郵件篩選，因此必須考量建立 [安全寄件者清單][](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365) 來作為暫時的解決方案。  
 
 ## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>收到太多垃圾郵件的其他常見原因解決方案
 

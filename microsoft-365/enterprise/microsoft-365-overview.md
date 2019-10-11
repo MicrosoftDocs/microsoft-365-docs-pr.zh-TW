@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 企業版提供元件、 計劃及部署路徑的簡介。
-ms.openlocfilehash: 8ae6462c2d1de32aa44820f4f417b92bad6db7d3
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: b5629edbdbd660a8548fc30809c408d88b18111b
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370460"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437835"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -30,7 +30,7 @@ Microsoft 365 企業版所組成：
 
 |||
 |:-------|:-----|
-| 本機和以雲端為基礎的應用程式和生產力服務 | 包含這兩個 Office 365 專業增強版，您的 PC 和 Mac （例如 Word、 Excel、 PowerPoint、 Outlook 和其他人），和一套完整的電子郵件、 檔案儲存與共同作業、 會議及更多的線上服務的最新的 Office 應用程式。 |
+| 本機和以雲端為基礎的應用程式和生產力服務 | 包含 Office 365 專業增強版、最新的 PC 與 Mac 版 Office 應用程式（如 Word、Excel、PowerPoint、Outlook 和其他人），以及一組完整的電子郵件、檔案儲存空間和共同作業、會議和其他的線上服務。 |
 | Windows 10 企業版 | 解決大型且中型組織中，為使用者提供與最具生產力且安全的 Windows 版本的需求和 IT 專業人員更完整的部署、 裝置和應用程式管理。 |
 | 裝置管理和進階的安全性的服務 | 包含 Microsoft Intune，也就是雲端式企業行動力管理 (EMM) 服務，可協助讓您同時將保持公司資料保護提高生產力的工作人員。 |
 |||
@@ -57,7 +57,7 @@ Microsoft 365 企業版所組成：
 
 ## <a name="get-the-big-picture"></a>取得大圖片
 
-[Microsoft 365 企業版海報](media/Microsoft365Enterprise.pdf)是中央位置，讓您檢視：
+[Microsoft 365 企業版海報](media/m365-poster/Microsoft365Enterprise.pdf)是中央位置，讓您檢視：
 
 - Microsoft 365 企業版及應用程式和服務如何對應至其值要點的優點
 - Microsoft 365 企業版方案，而且其中包含哪些元件 
@@ -65,9 +65,9 @@ Microsoft 365 企業版所組成：
 - [Microsoft 365 生產力文件庫](https://www.microsoft.com/microsoft-365/success/)及一些常見的組織部門的代表性案例
 - 重點在於說明 Microsoft 365 企業版[部署指南](deploy-microsoft-365-enterprise.md)採用藍圖
 
-[![Microsoft 365 企業版海報的影像](./media/m365-poster/m365e-poster.png)](media/Microsoft365Enterprise.pdf)
+[![Microsoft 365 企業版海報的影像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
-若要下載一份海報，請按一下[這裡](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf)。
+若要下載此海報的副本，請按一下[這裡](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf)。
 
 
 ## <a name="transition-your-entire-organization"></a>轉換整個組織
@@ -76,9 +76,9 @@ Microsoft 365 企業版所組成：
 
 [![[轉換到 Microsoft 365 海報的影像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-這兩個頁面海報是清查您現有的基礎結構，以取得將移至對應的產品或服務，Microsoft 365 企業版中的指引的快速方法。 其中包括 Windows 和 Office 產品及其他基礎結構和安全性的元素，例如裝置管理、 identity 及資訊和威脅保護。
+這份雙頁海報可讓您快速清查您現有的基礎結構，並取得移至 Microsoft 365 企業版中對應產品或服務的指導方針。 包含 Windows 和 Office 產品和其他基礎結構與安全性元素，例如裝置管理、身分識別以及資訊和威脅防護。
 
-您也可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)與列印字母、 法律或 tabloid (11 x 17) 格式。
+您也可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>避免結尾的 Windows 7 和 Office 2010 用戶端與伺服器支援
 
@@ -98,7 +98,7 @@ Microsoft 365 企業版所組成：
 
 這一頁海報是支援的了解若要防止 Windows 7 和 Office 2010 用戶端和伺服器產品達到結尾的慣用的路徑與中反白顯示的 Microsoft 365 企業版支援，可採取的各種路徑的快速方法。
 
-您也可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)與列印字母、 法律或 tabloid (11 x 17) 格式。
+您也可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
 ## <a name="deploy"></a>部署
 
@@ -144,7 +144,7 @@ Microsoft 365 企業版所組成：
 |||
 
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 如果您正在自行進行部署，來啟動您的[Microsoft 365 企業版部署的作業過程](deploy-microsoft-365-enterprise.md)。
 

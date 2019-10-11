@@ -1,27 +1,27 @@
 ---
 title: 套用 EOP 設定至多個承租人的範例指令碼
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 11/17/2014
+ms.author: chrisda
+author: chrisda
+manager: dansimp
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 description: 下列範例指令碼可讓管理多個承租人 (公司) 的 Microsoft Exchange Online Protection (EOP) 系統管理員，利用 Windows PowerShell 將組態設定套用至他們的承租人。
-ms.openlocfilehash: 2886d2c1dd4dc2f324e8cc21babc3a9f4bf51e5f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 17e63bada043bd03a3f3f1a9f2a27dced1a23422
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077415"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441250"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>套用 EOP 設定至多個租用戶的範例指令碼
 
 下列範例指令碼可讓管理多個承租人 (公司) 的 Microsoft Exchange Online Protection (EOP) 系統管理員，利用 Windows PowerShell 將組態設定套用至他們的承租人。
-  
-### <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>對多個承租人執行指令碼或指令程式
+
+## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>對多個承租人執行指令碼或指令程式
 
 1. 使用應用程式 (例如 Excel) 來建立 .csv 檔案 (例如，c:\scripts\inputfile.csv)：
 
@@ -37,7 +37,7 @@ ms.locfileid: "37077415"
    & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
    ```
 
-   以下為範例。
+   以下為範例：
 
    ```Powershell
    & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
@@ -50,7 +50,7 @@ ms.locfileid: "37077415"
 ```Powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.
 # Usage: RunCmdletOnMultipleTenants.ps1 inputfile.csv
-#  
+#
 # .csv input file sample:
 # UserName,Cmdlet
 # admin@contoso.com,Get-AcceptedDomain | ft Name

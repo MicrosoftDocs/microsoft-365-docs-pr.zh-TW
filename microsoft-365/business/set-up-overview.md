@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 商務版的步驟設定概觀 >。
-ms.openlocfilehash: f156d236a783942ec06d457c9b7ca087d12d6f58
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 4be0a8aa1b050ee3e20a045eb2c07666765118ed
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288568"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440530"
 ---
-# <a name="overview-of-setup"></a>安裝程式的概觀
+# <a name="overview-of-setup"></a>步驟概觀
 
 可以在安裝程式精靈] 完成大部分的設定步驟，但也會列出其他選項。
 
@@ -41,7 +41,7 @@ ms.locfileid: "37288568"
         - 您也可以在系統管理中心的 [[新增使用者更新版本](add-users-m365b.md)。
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>步驟 2： 設定安全性原則和設定裝置 
 
-  - 使用[安裝精靈](set-up.md#set-up-security-policies-and-device-configurations)來設定裝置和安全性原則。 
+  - 使用[安裝精靈](set-up.md#protect-data-and-devices)來設定裝置和安全性原則。 
   - 您也可以新增更多，或稍後在[系統管理中心](view-policies-and-devices.md)和[Intune 入口網站](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal)中加以編輯。
   - 除了在安裝精靈中的安全性設定，您可以藉由新增下列設定值增加您的安全性：
 
@@ -62,7 +62,7 @@ ms.locfileid: "37288568"
    當您在 Windows 10 裝置加入 Azure AD 時，取得套用您在[步驟 2](#step-2-set-up-security-policies-and-configure-devices)中設定的原則。
 
    - Windows 10 專業版是 Microsoft 365 商務版的[必要條件](pre-requisites-for-data-protection.md)，但如果您有 Windows 7 專業版、 Windows 8 專業版或 Windows 8.1 專業版，您的訂閱賦與您[升級至 Windows 10 專業版](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)。
-    - 使用[安裝精靈](set-up.md#set-up-security-policies-and-device-configurations)來設定 Windows 10 裝置原則。
+    - 使用[安裝精靈](set-up.md#protect-data-and-devices)來設定 Windows 10 裝置原則。
 
 ## <a name="stes-4-install-office-365-business"></a>Stes 4： 安裝 Office 365 商務版
 - 您可以使用[安裝精靈](set-up.md#deploy-office-365-client-apps)，在 Windows 裝置上自動安裝 Office。
@@ -74,7 +74,7 @@ ms.locfileid: "37288568"
             
      您可以使用[Windows Autopilot](add-autopilot-devices-and-profile.md)來自動預先設定**新**的 Windows 10 裝置的使用者，但它可能會比較容易取得[合作夥伴](https://www.microsoft.com/solution-providers/search)可以執行這項操作您。 您也可以移至[Microsoft 網上商店](https://go.microsoft.com/fwlink/?linkid=874598)，並要求您購買您的新裝置上設定雲端技術專家。
 
-- **存取內部部署資源**
+- **存取內部部署的資料**
 
      - 如果您的組織使用 Windows Server Active Directory 內部部署，您可以設定 Microsoft 365 商務版來保護 Windows 10 裝置，同時仍維持需要本機驗證的內部部署資源的存取權。 請遵循[啟用由 Microsoft 365 商務版來管理已加入網域的 Windows 10 裝置](manage-windows-devices.md)設定此案例中的步驟。 這是慣用的方法，在此狀態的裝置稱為混合式 Azure AD 加入的裝置。
 

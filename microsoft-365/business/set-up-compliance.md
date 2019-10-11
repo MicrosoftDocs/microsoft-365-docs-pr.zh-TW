@@ -10,21 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
-description: 設定 Office 365 進階威脅防護，和保護機密資料。
-ms.openlocfilehash: 53741a7726222bb32329a401953be72257df95cc
-ms.sourcegitcommit: 7ac06563c6ff034358e8fd3f9298fc426187ade2
+description: 設定符合性功能，以防止資料遺失和標籤敏感資料。
+ms.openlocfilehash: a0ba2fa6dbe7c786d577ad7098c1790f569f5acc
+ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34668379"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37453902"
 ---
-# <a name="set-up-compliance-features"></a>設定符合性功能
+# <a name="set-up-compliance-features"></a>設定合規性功能
 
 Microsoft 365 商務版隨附功能來保護您的資料和裝置，並協助您保護其他與您的客戶敏感資訊的安全。
 
@@ -52,48 +50,21 @@ DLP 隨附許多不同的地區設定的許多準備-使用原則範本。 例�
     
 **保留：** 您可以啟用自訂的保留原則，例如，若要保留經過一段時間，或在保留期間結束永久刪除內容。 若要深入了解，請參閱[保留原則的概觀](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)。
 
-## <a name="set-up-azure-information-protection-features"></a>設定 Azure 資訊保護功能
+## <a name="set-up-sensitivity-labels"></a>敏感度標籤設定
 
-Azure 資訊保護 (AIP) 可協助您分類，並選擇性地套用標籤，以保護您的文件和電子郵件。 定義規則和條件的系統管理員，以手動方式的使用者，或使用組合提供使用者的建議，可自動套用標籤。
+敏感度標籤來自與 Azure 資訊保護 (AIP) 計劃 1，並有助於分類及選擇性地套用標籤，以保護您的文件和電子郵件。 定義規則和條件的系統管理員，以手動方式的使用者，或使用組合提供使用者的建議，可自動套用標籤。
 
-網頁型 Outlook 中您可以套用到您的電子郵件的下列內建的標籤和限制：
-  
-- **不要轉寄**： 收件者可以讀取郵件，但他們無法轉寄、 列印或複製內容
-    
-- **加密**： 加密整封郵件。 收件者存取加密的內容之前，必須先確認其身分識別，且無法移除加密。
-    
-- **2 私人 3 機密**： 授與您的組織中的員工完整權限的電子郵件內容和附件，但不適用於您組織外的人員。 資料擁有者可以追蹤及撤銷的任何一點的內容。
-    
-- **高度機密**： 此限制可套用至高度機密資料，讓員工能夠檢視、 編輯和回覆，但不是轉寄、 列印或複製資料。 資料擁有者可以追蹤及撤銷的任何一點的內容。
+若要設定敏感度標籤，檢視[建立及管理敏感度標籤](https://support.office.com/en-us/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)的影片。
 
-### <a name="make-sure-azure-information-protection-is-activated"></a>請確定已啟動 Azure 資訊保護
 
-若要確認 AIP 會在啟動：
-
-1. 登入[Azure 入口網站](https://portal.azure.com/)。
-
-2. *Azure 資訊保護*在**搜尋] 方塊**中，選取 [**所有服務**和類型。
-
-3. 一旦顯示結果，請按一下 [下一步] **Azure 資訊保護**來使其成為我的最愛且更容易尋找稍後開始。
-
-4. 選取 [ **Azure 資訊保護** \> **保護啟用**，並確定狀態設為啟用。 
-
-### <a name="view-the-azure-information-protection-policy-and-default-labels"></a>檢視 Azure 資訊保護原則和預設標籤 
-
-標籤來檢視及修改，現有：
-
-1. 在 [Azure 資訊保護儀表板中，選取 [**分類** \> **標籤**。 <br/>![標準的 Azure 資訊保護標籤。](media/AIPLabels.png)
-
-2. 您可以選擇任何標籤來檢視的選項，您可以變更的顯示名稱、 色彩等等。
- 
-3. 請參閱[修改，並建立新的標籤](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step2)如果您想要建立您自己。 
 
 ### <a name="install-the-azure-information-protection-client-manually"></a>以手動方式安裝 Azure 資訊保護用戶端
 
 若要手動安裝 AIP 用戶端：
 
-1. 從[Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=53018)下載**AzInfoProtection.exe** 。
+1. 從[Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=53018)下載**AzinfoProtection_UL.exe** 。
  
-2. 您可以確認安裝成功可以檢視 Word 文件，以確定可在 [**首頁**] 索引標籤上 [**保護**] 選項。 <br/>![保護索引標籤下拉式清單中的 Word 文件。](media/Word_Protect.png)
+2. 您可以確認安裝成功可以檢視 Word 文件，以確定可在 [**首頁**] 索引標籤上 [**敏感度**] 選項。
+<br/>![保護索引標籤下拉式清單中的 Word 文件。](media/word-sensitivity.png)
 
 如需詳細資訊，請參閱[安裝用戶端](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)。

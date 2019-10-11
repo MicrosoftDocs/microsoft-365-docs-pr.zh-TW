@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: 反網路釣魚保護，更完整的保護，作為 Office 365 進階威脅防護和 Office 365 Exchange Online Protection 中的基本保護的一部分，可協助保護組織免受惡意模擬型網路釣魚攻擊和其他網路釣魚攻擊。
-ms.openlocfilehash: e668a4681f37f4a3d6977f9d42c4aa661a07cac7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 620a6f818d3de7c360c3dc22a0ca5822357fb487
+ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077522"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428404"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則
 
@@ -39,7 +39,7 @@ ms.locfileid: "37077522"
 3. 設定反網路釣魚原則或 ATP 防網路釣魚原則。
 
 >[!IMPORTANT]
-> 若要深入了解如何將多個技術會套用，請造訪[組合原則與防護的方式](https://docs.microsoft.com/office365/securitycompliance/how-policies-and-protections-are-combined)。
+> 若要深入了解如何將多個技術會套用，請造訪[組合原則與防護的方式](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined)。
 
 ## <a name="review-the-prerequisites"></a>請先檢閱必要條件
 
@@ -93,9 +93,6 @@ ms.locfileid: "37077522"
 |**新增信任的寄件者及網域** <br/> |定義電子郵件地址並不會考慮模擬此原則的網域。 您新增為受信任的寄件者郵件寄件者電子郵件地址和網域及網域不屬於歸類為模擬型攻擊。 因此，此原則中的設定與動作不會套用至郵件來自這些寄件者及網域。  <br/><br/>這些清單的最大限制為大約 1000年項目。 |當使用者與網域或觸發模擬，但會視為是安全的使用者互動。 例如，如果合作夥伴具有相同/類似顯示名稱或網域名稱清單上定義的使用者身分。  <br/> |
 |**套用至** <br/> |定義收件者的內送電子郵件將會受到原則的規則。 您可以建立條件和例外狀況的原則相關聯的收件者。  <br/> 例如，您可以將規則套用至您的網域中的所有收件者，為您的組織建立的全域原則。  <br/> 您也可以建立例外狀況規則，如特定群組的收件者未掃描電子郵件訊息的規則。  <br/> |每個原則必須是一組使用者，例如特定群組或網域中的使用者相關聯。  <br/> |
 |**進階的網路釣魚臨界值** <br/> |定義設定層的級的網路釣魚郵件的處理方式。  <br/> **標準**可能是釣魚程式標準的方式來處理電子郵件。  <br/> **積極**電子郵件可能是具有高的釣魚程式或極高的信賴度由系統中的相同方式來處理。  <br/> **更積極**電子郵件可能是使用中、 高的釣魚程式或極高的信賴度由系統中的相同方式來處理。  <br/> **最不積極**可能是與信賴低、 中、 高，或非常高程度的釣魚程式的電子郵件是由系統處理方式相同。  <br/> |當您想要更積極可能在 Office 365 的網路釣魚郵件的處理方式。 例如，具有極高的可能性的釣魚程式的郵件會有最不積極可能性較低的郵件有較不積極所採取的動作時所採取的動作。 此設定也會影響結合訊號將篩選系統的其他組件。 這並不一定實作不同的動作。  基本上，您要設定正在釣魚程式，來判斷 （相同） 指定巨集指令的郵件的可能性。 移動良好郵件的機會隨著設定增加的層級。  <br/>|
-
-> [!IMPORTANT]
-> ![影像](../media/EnableMailboxIntelligenceBasedImpersonation.png)新增重要的設定]、 [separting * * 信箱智慧 」 從 「 信箱智慧基礎模擬保護 」。 模擬是當您以程式設計方式存取您的信箱，並透過使用指令碼、 API 或第 3 廠商軟體或甚至是惡意程式碼在您的信箱的信箱執行動作。
 
 ## <a name="learn-about-anti-phishing-policy-options"></a>了解反網路釣魚原則選項
 

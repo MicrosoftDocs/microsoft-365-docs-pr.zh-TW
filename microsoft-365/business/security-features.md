@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解 Microsoft 365 商務版會隨附的安全性功能。
-ms.openlocfilehash: 8e45d5fdb6a78f3966c46542189aa30ddd80998e
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: c0c37b09fd0bb0218864b6bc97aa127feae1ff16
+ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288448"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37453969"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 商務版安全性與合規性功能
 
@@ -58,7 +58,7 @@ Microsoft 365 商務版提供簡化的安全性功能，以協助保護您在電
 
 Microsoft 365 商務版中的進階的功能可協助您保護網路威脅貴公司及保護機密資訊。
   
-- **[Office 365 進階的威脅防護](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
+- **[Office 365 進階威脅防護](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
     
     進階威脅防護 (ATP) 可協助保護您的業務抵禦複雜的網路釣魚和勒索軟體攻擊為了危及員工或客戶資訊。 功能包括：
     
@@ -98,9 +98,9 @@ Microsoft 365 商務版中的進階的功能可協助您保護網路威脅貴公
     
     Exchange Online Archiving 授權可讓要輕鬆地使用持續性資料備份封存的郵件。 它會儲存所有使用者的電子郵件，包括已刪除的項目，以防稍後需要探索或還原。 此外，您可以使用不同的保留原則來保留電子郵件資料的訴訟保留，eDiscovery，或符合規範需求。
     
-- **[Azure 資訊保護](https://go.microsoft.com/fwlink/p/?linkid=871406)**
-    
-    資訊保護可協助您使用等控制項來控制電子郵件和文件中的敏感資訊的存取權 」 不轉寄 」 和 「 不要複製。 」 您也可以分類為 「 機密 」 的敏感資訊，並指定方式可以外部共用高機密性的資訊和公司內。 企業級加密很容易套用至電子郵件] 和 [保持私人資訊的文件。 Microsoft 365 商務版包含之所有功能的[Azure 資訊保護方案 1](https://go.microsoft.com/fwlink/p/?linkid=871407)。 您也可以安裝 Azure 資訊保護用戶端增益集的 Office 應用程式。 如需詳細資訊，請參閱[Azure 資訊保護用戶端系統管理員指南](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide)。
+- **[敏感度標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
+
+   Microsoft 365 商務版包含之所有功能的[Azure 資訊保護方案 1](https://go.microsoft.com/fwlink/p/?linkid=871407)。 您可以使用此計劃建立**敏感度標籤**，可讓您使用 「 不要轉寄 」 和 「 不要複製。 」 等控制項來控制存取電子郵件和文件中的敏感資訊 您也可以分類為 「 機密 」 的敏感資訊，並指定方式可以外部共用高機密性的資訊和公司內。 企業級加密很容易套用至電子郵件] 和 [保持私人資訊的文件。 您也可以安裝 Azure 資訊保護用戶端增益集的 Office 應用程式。 如需詳細資訊，請參閱[Azure 資訊保護整合標示用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 敏感度標籤的安裝**AzInfoProtection_UL.exe**。
 
 您可以管理這些功能的安全性群組&amp;規範中心和 Intune 系統管理中心。 經過一段時間的簡化的控制項將會新增至 Microsoft 365 商務版系統管理中心。
   

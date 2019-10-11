@@ -13,21 +13,25 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立安全的 SharePoint 小組網站來儲存您最重要且最敏感的檔案。
-ms.openlocfilehash: dc604870826075cee645dd466b82f908e1571339
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: ece6547ba596fe53c4f3b3f6bfbaa6570a724c6a
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403176"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437823"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>適用於高度管制資料的 SharePoint 網站
 
 *此案例同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建立、儲存和保護檔案中儲存的高度管制資料。包含的資料為：
+Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建立、儲存、保護和管理檔案中儲存的高度管制資料。包含的資料為：
 
 - 受限於區域法規。
 - 貴組織最有價值的資料，例如營業秘密、財務或人力資源資訊，以及組織策略。
+
+>[!Note]
+> 使用 Microsoft Teams 的類似案例正在開發中。
+>
 
 符合此商務需求的 Microsoft 365 企業版雲端式案例需要您：
 

@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何識別並修復 Outlook 規則及 Office 365 中的自訂表單資料隱碼攻擊
-ms.openlocfilehash: ef2f08c953b91ccefcadd5947d2d0a9f39683ae2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d19a9c86dce42724aa2be00f11ea49ac7cc19d8a
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076943"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440650"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>偵測並修復 Office 365 中 Outlook 規則與自訂表單插入式攻擊
 
@@ -145,7 +145,7 @@ Exchange 伺服器上的信箱的步驟
         <ol type="a">
             <li><b>多個失敗的登入嘗試次數</b>此原則設定檔您的環境和觸發提醒使用者有關學的比較基準，這可能表示嘗試外洩的單一工作階段中執行多個失敗的登入活動時。</li>
             <li><b>Impossible 旅行</b>-此原則設定檔環境和活動從相同的使用者在不同位置中偵測到兩個位置之間的預期的旅行時間較短的期間內時，會觸發警示。 這可能表示不同的使用者使用相同的認證。 偵測這個異常行為區間初始學習一段期間它可學習新使用者的活動模式的七天。</li>
-            <li><b>不尋常模擬活動 （依使用者）</b>-此原則設定檔環境和使用者執行多個模擬的活動相對於基線學會，在單一工作階段中這可能表示嘗試外洩時，會觸發警示。</li>
+            <li><b>不尋常模擬 （由使用者） 的活動</b>-此原則設定檔您環境與觸發程序的通知當使用者在相對於基線學會，在單一工作階段中執行多個模擬的活動這可能表示嘗試外洩。</li>
         </ol>
     </li>
     <li>利用<a href="https://securescore.office.com/">Office 365 安全分數</a>若要管理帳戶的安全性組態與行為這類的工具。 

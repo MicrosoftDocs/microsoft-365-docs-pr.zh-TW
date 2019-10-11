@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上強制執行保護設定，例如加密或浮水印。
-ms.openlocfilehash: 1de7eadfcf95a54917c1d5e2cc0d42cc1ad486a5
-ms.sourcegitcommit: c7f7ff463141f7d7f0970b64e5a04341db7e4fa8
+ms.openlocfilehash: f702423f0b1074b5619ef1c321cc5e9f1daef1d7
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37378647"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417562"
 ---
 # <a name="how-sensitivity-labels-work-in-office-apps"></a>敏感度標籤在 Office App 中的運作方式
 
@@ -131,7 +131,8 @@ PowerPoint
 <td><font size="-1">即將推出<sup>3</sup>
 <td><font size="-1">即將推出<sup>3</sup>
 
-<tr><td><font size="-1">指派預先定義的權限
+<tr><td><font size="-1">
+  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels#assign-permissions-now">指派預先定義的權限</a>
 <td><font size="-1"><b>是</b><br><font size="-1">1910+</font>
 
 <td><font size="-1"><b>是</b><br><font size="-1">16.21.0+</font>
@@ -167,7 +168,8 @@ PowerPoint
 <td><font size="-1">未定
 <td><font size="-1">未定
 
-<tr><td><font size="-1">要求使用者在電子郵件和文件中套用標籤
+<tr><td><font size="-1">
+  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">要求使用者在電子郵件和文件中套用標籤</a>
 <td><font size="-1">未定
 
 <td><font size="-1">未定
@@ -202,7 +204,7 @@ PowerPoint
 | --- | --- | --- |
 | 所有平台上的 Word、Excel、PowerPoint | 立即 | 立即 |
 | 電腦版和 Mac 版 Outlook | 在 Exchange Online 傳送電子郵件之後 | 立即 |
-| 所有平台上的 Word、Excel、PowerPoint | 在 Exchange Online 傳送電子郵件之後 | 在 Exchange Online 傳送電子郵件之後 |
+| 網頁版、iOS 版和 Android 版 Outlook | 在 Exchange Online 傳送電子郵件之後 | 在 Exchange Online 傳送電子郵件之後 |
 
 ## <a name="can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows"></a>敏感度標籤可以和 Windows 版 Office 中的 Azure 資訊保護用戶端一起執行嗎？
 
@@ -228,11 +230,7 @@ PowerPoint
 
 ## <a name="can-a-file-or-email-have-more-than-one-classification"></a>檔案或電子郵件是否可以有多個分類？
 
-使用者一次只能為每個文件或電子郵件選取一個標籤，因此就只會有一個分類。 不過，如果使用者選取子標籤，即會同時套用兩個標籤；一個主要標籤和一個次要標籤。 使用子標籤後，檔案可以有兩個分類，分別表示父/子關係，以提供另一層控制。 
-
-例如， **機密** 標籤可能包含 如 **法務** 和 **財務**等子標籤。 您可以將不同的分類視覺標記和不同的版權管理範本套用到這些子標籤。 使用者無法自行選取 **機密** 標籤；只能選取其子標籤，如 **法務**。 因此，他們所見的標籤為 **機密** / **法務**。 該檔案的中繼資料包含一個 **機密**的自訂文字屬性、一個 **法務**的自訂文字屬性，另一個包含這兩個值的自訂文字屬性 (**C機密法務**)。 
-
-當您使用子標籤時，請不要在主要標籤上設定視覺標記、保護和條件。 當您使用子層級時，請只在子標籤上設定這些設定。 如果您在主要標籤和子標籤上設定這些設定，則會優先採用子標籤上的設定。
+不行。 使用者一次只能針對每個文件或電子郵件選取一個標籤。
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>標記電子郵件後，附件也會自動獲得相同的標記嗎？
 

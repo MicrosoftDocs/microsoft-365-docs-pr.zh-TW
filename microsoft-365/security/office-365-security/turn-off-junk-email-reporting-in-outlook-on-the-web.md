@@ -1,5 +1,5 @@
 ---
-title: 關閉 reporting 網頁型 Outlook 中的垃圾郵件
+title: 關閉 Outlook 網頁版中的垃圾郵件報告
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -11,14 +11,14 @@ ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
 ms.collection:
 - M365-security-compliance
 description: 身為 Office 365 系統管理員，您可以關閉的能力人員報告電子郵件為垃圾郵件。
-ms.openlocfilehash: a2a8c2f9120ff4b1d2efab4d7ae63294ce7f923b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: de0e5d1aa51ececafc0d344b9907f6751a613370
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078260"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441170"
 ---
-# <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>關閉 reporting 網頁型 Outlook 中的垃圾郵件
+# <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>關閉 Outlook 網頁版中的垃圾郵件報告
 
 您可以傳送垃圾郵件、 網路釣魚，並不是垃圾郵件給 Microsoft 上使用 Outlook 網頁 （原先稱為 Outlook Web App） 的垃圾郵件報告選項，在 [[回報垃圾郵件和網路釣魚詐騙網頁型 Outlook 中的](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)所述的分析。 如果您不想要使用這些選項，系統管理員可以關閉它們透過[Set-owamailboxpolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx)指令程式。 
   
