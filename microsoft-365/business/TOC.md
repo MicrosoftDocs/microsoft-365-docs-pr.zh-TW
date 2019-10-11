@@ -29,9 +29,9 @@
 ### [將保護功能對應到 Intune 設定](map-protection-features-to-intune-settings.md)
 ### [Android 和 iOS 適用的應用程式保護設定](app-protection-settings-for-android-and-ios.md)
 #### [驗證 Android 或 iOS 上的設定](validate-settings-on-android-or-ios.md)
-### [Windows 10 電腦適用的保護設定](protection-settings-for-windows-10-pcs.md)
+### [適用於 Windows 10 電腦的裝置保護設定](protection-settings-for-windows-10-pcs.md)
 #### [驗證 Windows 10 電腦上的設定](validate-settings-on-windows-10-pcs.md)
-### [Windows 10 裝置適用的保護設定](protection-settings-for-windows-10-devices.md)
+### [適用於 Windows 10 電腦的 App 保護設定](protection-settings-for-windows-10-devices.md)
 ## [移轉至 Microsoft 365 商務版](migrate-to-microsoft-365-business.md)
 ## 計費
 ### [您的帳單](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)

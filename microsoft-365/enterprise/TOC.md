@@ -83,7 +83,7 @@
 ### [資訊保護](contoso-info-protect.md)
 ### [安全性摘要](contoso-security-summary.md)
 ### [適用於高度管制資料的 SharePoint 網站](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
-
+## [Microsoft 365 企業版部署內容的變更](microsoft-365-deploment-guide-changes.md)
 # [桌面部署中心](desktop-deployment-center-home.md)
 ## [快速入門：人員、流程及技術指導方針](getting-started.md)
 ## [步驟 1：裝置和應用程式整備](step-1-device-and-app-readiness.md)
