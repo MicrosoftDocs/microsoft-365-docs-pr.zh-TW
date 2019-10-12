@@ -99,11 +99,6 @@
 ## [Windows 和 Office 部署與 Lab Kit](modern-desktop-deployment-and-management-lab.md)
 ## [尋找部署的說明](find-help-for-modern-desktop-deployment.md)
 
-# [身分識別與裝置存取設定](microsoft-365-policies-configurations.md)
-##[必要工作](identity-access-prerequisites.md)
-## [一般身分識別與裝置存取原則](identity-access-policies.md)
-## [建議使用的 Exchange Online 存取原則](secure-email-recommended-policies.md)
-## [建議使用的 SharePoint Online 存取原則](sharepoint-file-access-policies.md)
 
 # [Microsoft 365 合規性](../compliance/index.yml)
 # [Microsoft 365 安全性](../security/index.yml)
