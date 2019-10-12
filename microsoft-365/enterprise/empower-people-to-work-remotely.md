@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 設定基礎結構和安全性，讓您的員工隨時隨地都能遠端工作。
-ms.openlocfilehash: 198b01205e7419c4a3aa874c1e6213cce5284576
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: 9a9520f5246ec70a2b9947536c259c661a5bd44f
+ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453941"
+ms.locfileid: "37469155"
 ---
 # <a name="empower-remote-workers"></a>強化遠端工作人員
 
@@ -74,7 +74,7 @@ ms.locfileid: "37453941"
 
 [![強化遠端工作人員海報](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
-您也可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
+您也可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
 
 ## <a name="phase-1-deploy-microsoft-365-features-and-capabilities-for-remote-workers"></a>階段1：部署適用于遠端工作人員的 Microsoft 365 功能
