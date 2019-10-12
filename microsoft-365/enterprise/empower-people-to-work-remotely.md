@@ -3,7 +3,7 @@ title: 強化遠端工作人員
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/27/2019
+ms.date: 10/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 設定基礎結構和安全性，讓您的員工隨時隨地都能遠端工作。
-ms.openlocfilehash: b73e16a52741a6587e9ed903cab6ddfedf896973
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 198b01205e7419c4a3aa874c1e6213cce5284576
+ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403252"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37453941"
 ---
 # <a name="empower-remote-workers"></a>強化遠端工作人員
 
@@ -69,6 +69,13 @@ ms.locfileid: "37403252"
   - 具有混合式身分識別的組織可以使用 Azure AD 應用程式 Proxy，而不是使用虛擬私人網路 (VPN) 連線
 
 下列階段逐步引導您部署適用于遠端存取的 Microsoft 365 企業版功能，並推動採用遠端工作人員。 如果您已經部署這些階段的元素，請先確認它們符合所述的需求，再移至下一個元素。
+
+<a name="poster"></a> 如需此案例的 1 頁式摘要，請參閱[強化遠端工作人員海報](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)。
+
+[![強化遠端工作人員海報](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
+
+您也可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
+
 
 ## <a name="phase-1-deploy-microsoft-365-features-and-capabilities-for-remote-workers"></a>階段1：部署適用于遠端工作人員的 Microsoft 365 功能
 
