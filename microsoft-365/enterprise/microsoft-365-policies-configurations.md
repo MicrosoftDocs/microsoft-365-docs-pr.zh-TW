@@ -14,16 +14,16 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 9751d1e224d2fb4b879a5dbc37cb368af2152987
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 1fae59706a77663090d4f29cc6a34b339c11e92c
+ms.sourcegitcommit: 6ef9a98e3d9de44ee4f01870f9189fa676572419
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291351"
+ms.lasthandoff: 10/13/2019
+ms.locfileid: "37481301"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
-此系列文章說明如何藉由實作建議的環境與設定，包括條件式存取原則規定的設定來設定安全地存取雲端服務，透過企業行動力 + 安全性產品和相關的功能。 您可以使用本指南來保護所有與 Azure Active Directory，包括 Office 365 服務與 Azure AD 應用程式 Proxy 發佈的其他 SaaS 服務，以及內部應用程式整合的服務存取權。 
+此系列文章說明如何藉由實作建議的環境與設定，包括條件式存取原則規定的設定來設定安全地存取雲端服務，透過 Enterprise Mobility + Security (EMS) 的產品和相關的功能。 EMS 是 Microsoft 365 的核心元件。 您可以使用本指南來保護所有與 Azure Active Directory，包括 Office 365 服務與 Azure AD 應用程式 Proxy 發佈的其他 SaaS 服務，以及內部應用程式整合的服務存取權。 
 
 這些建議會對齊 Microsoft 安全分數，以及[分數 Azure AD 中的身分識別](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/identity-secure-score)，並會增加這些分數的組織。 這些建議也可協助您實作下列[五個步驟來保護您的身分識別基礎結構](https://docs.microsoft.com/en-us/azure/security/azure-ad-secure-steps)。 
 
