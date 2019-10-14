@@ -2,7 +2,7 @@
 title: 部署適用於 Microsoft 365 企業版的 SharePoint 和 OneDrive
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/30/2019
+ms.date: 10/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 推行並發揮 SharePoint 在組織中的價值，規劃這整個程序的步驟。
-ms.openlocfilehash: d8a61a6bc6b4dae431d94e7ccfb9fb0ea8019427
-ms.sourcegitcommit: a77c4889c5b7d3b8f16e74917079300e8f222941
+ms.openlocfilehash: 0cad129cdca5f5dcc072f583b2b651a2547fc5fd
+ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37329202"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37469145"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>部署適用於 Microsoft 365 企業版的 SharePoint 和 OneDrive
 
@@ -27,7 +27,7 @@ ms.locfileid: "37329202"
 
 SharePoint 也具有進階的安全性功能，包括存取控制和權限，以及動態和靜態加密。SharePoint 安全性是 Microsoft 365 企業版情報安全性價值的重要元素。
 
-如果您是 SharePoint 新手，請參閱 [SharePoint ](https://products.office.com/sharepoint/sharepoint-online-collaboration-software) 與 [SharePoint 快速入門](https://support.office.com/article/Get-started-with-SharePoint-3a26444b-08c5-46ad-b80a-cda82b11b27b#ID0EAABAAA=Basics)。
+如果您是 SharePoint 新手，請參閱 [SharePoint ](https://products.office.com/sharepoint/collaboration) 與 [SharePoint 快速入門](https://support.office.com/article/video-what-is-sharepoint-online-c17b6824-cc22-478f-8757-497cc6b57121)。
 
 以下的階段與步驟會帶領您構想 SharePoint 在貴組織中的角色，透過一系列的漸進式推行讓組織導入，並向使用者推廣其使用價值。 開始之前，請確定您已設定正確的[基礎結構](deploy-workloads.md#foundation-infrastructure-prerequisites)階段，您的 SharePoint 網站才能具備您需要的安全性功能。 
 
@@ -50,18 +50,17 @@ SharePoint 也具有進階的安全性功能，包括存取控制和權限，以
 
 SharePoint 可用於不同的用途。您必須判斷哪些用途對應到您的業務需求。您應該將 SharePoint 的重點放在解決小組、部門或整個組織的文件儲存與共用、內容管理及共同作業的需求。 
 
-您可在 [SharePoint](https://products.office.com/sharepoint/sharepoint-online-collaboration-software) 中查看案例和功能清單。
+您可在 [SharePoint](https://products.office.com/sharepoint/collaboration ) 中查看案例和功能清單。
 
 下列商務要點可解決貴組織的需求：
 
 |||
 |:-----|:-----|
-| 共用和共同作業 | 利用小組網站、共同作業網站及同步處理。 |
+| 共用和共同作業 | 利用小組網站、通訊網站及同步處理。 |
 | 通知並保持互動 | 未來的資訊傳入。 |
-| 轉換 | 使用流程來建立儲存區或工作流程。 |
+| 轉換 | 使用 Flow 在應用程式和服務之間建立自動化工作流程。 |
 | 充分利用集體知識 | 使用搜尋來授與貴組織所需的結果。 |
 | 保護 | 確保貴組織受到保護，且有正確的規範。 |
-| 外部/開發 | 讓組織使用 SharePoint 架構來開發自訂解決方案和應用程式。 |
 |||
 
 請參閱 [SharePoint 系統管理](https://docs.microsoft.com/sharepoint/sharepoint-online)，取得如何依需求設定 SharePoint 的資源。
@@ -85,19 +84,16 @@ SharePoint 的案例清單，能解決組織對於文件儲存與共用、內容
 
 ### <a name="step-1-complete-your-technical-planning"></a>步驟 1：完成技術規劃
 
-開始技術規劃之前，請先決定是否要使用 FastTrack。 如果貴組織擁有超過 50 個基座，且參與[合格方案](https://technet.microsoft.com/library/dn783224.aspx)，您可以使用 FastTrack 權益而無需額外費用，它可引導您完成規劃、移轉、部署及服務導入。 或者，您可以使用 FastTrack 導入精靈來完成這項工作，只要您使用 Microsoft 365 帳戶登入後，就能從 [FastTrack](https://docs.microsoft.com/fasttrack/m365-fasttrack-benefit-overview) 使用該精靈。
+開始技術規劃之前，請先決定是否要使用 FastTrack。 如果貴組織擁有超過 50 個基座，且參與[合格方案](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)，您可以使用 FastTrack 權益而無需額外費用，它可引導您完成規劃、移轉、部署及服務導入。 或者，您可以使用 FastTrack 導入精靈來完成這項工作，只要您使用 Microsoft 365 帳戶登入後，就能從 [FastTrack](https://docs.microsoft.com/fasttrack/m365-fasttrack-benefit-overview) 使用該精靈。
 
-如果您要自行規劃，或者搭配 FastTrack 使用，則需要確定您的網路和組織是否已準備好使用 SharePoint。 請務必符合基礎結構的網路允出準則，特別注意網際網路頻寬、輸送量、流量延遲，以達到可用於 SharePoint 型文件其他流量的最佳效能。
+如果您要自行規劃，或者搭配 FastTrack 使用，則需要確定您的網路和組織是否已準備好使用 SharePoint。 請務必符合基礎結構的[網路允出準則](networking-exit-criteria.md)，特別注意網際網路頻寬、輸送量、流量延遲，以達到可用於 SharePoint 型文件其他流量的最佳效能。
 
-您可以使用以下資源來準備推行 SharePoint 的技術層面工作： 
-
-- [SharePoint 規劃指南](https://docs.microsoft.com/sharepoint/planning-guide)
-- [移轉至 SharePoint](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) 
+使用[移轉至 SharePoint](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) 來為您的 SharePoint 推出進行準備： 
 
 如需更深入了解 SharePoint 的安全性，請檢閱下列資源：
 
 -   [SharePoint 和 OneDrive 如何保護您在雲端的資料](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
--   [OneDrive 和 SharePoint 中的資料加密](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo) (機器翻譯)
+-   [OneDrive 和 SharePoint 中的資料加密](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
 
 #### <a name="result"></a>結果
 
@@ -108,8 +104,8 @@ SharePoint 的案例清單，能解決組織對於文件儲存與共用、內容
 在多數中型和大型組織中，您應該和第 1 階段中的利害關係人以及早期採用者、技術愛好者一同執行 IT 試驗。 在 IT 試驗期間：
 
 - 選擇 SharePoint 商務案例，讓您的 IT 試驗參與者可以加以練習。
-- 為試驗參與者提供一組練習，來測試 SharePoint 文件儲存、共用、共同作業、小組排程，以及其他功能。
-- 決定您的變更管理策略，並製作可提升整個組織使用者採用 SharePoint 的資料。 變更管理資料可包含電子郵件公告文字、內部訓練計畫、走道海報和簡報。 這些資料可將 SharePoint 及其優點通報給您的組織，以提高認知度並推動使用。 請參閱 [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) 的變更管理策略文章，以取得一些想法。
+- 為試驗參與者提供一組練習，來測試 SharePoint 文件儲存、共用、共同作業，以及其他功能。
+- 決定您的變更管理策略，並製作可提升整個組織使用者採用 SharePoint 的資料。 變更管理資料可包含電子郵件公告文字、內部訓練計畫、走道海報和簡報。 這些資料可將 SharePoint 及其優點通報給您的組織，以提高認知度並推動使用。 請參閱 [SharePoint 採用資源](https://resources.techcommunity.microsoft.com/resources/SharePoint-adoption/)來開始。
 - 讓您的 IT 試驗參與者根據經驗審查變更管理資料。 他們可以提供最佳做法的秘訣，以及如何最貼切地描述 SharePoint 的優點和使用方法。
 
 #### <a name="result"></a>結果

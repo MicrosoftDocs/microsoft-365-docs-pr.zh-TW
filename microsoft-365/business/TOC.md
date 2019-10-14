@@ -16,8 +16,8 @@
 ### [設定行動裝置](set-up-mobile-devices.md)
 ### [設定 Windows 裝置](set-up-windows-devices.md)
 ## [保護您的企業](security-features.md)
+### [設定 MFA](set-up-mfa.md)
 ### [加強威脅防護](increase-threat-protection.md)
-### [開始使用條件式存取](set-up-conditional-access-policies.md)
 ### [設定合規性功能](set-up-compliance.md)
 ## 管理使用者
 ### [新增使用者](add-users-m365b.md)
