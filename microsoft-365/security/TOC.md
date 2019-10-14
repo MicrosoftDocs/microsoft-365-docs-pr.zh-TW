@@ -19,6 +19,13 @@
 
 ### [透過 ServiceNow 管理票證](./mtp/tickets.md)
 
+
+## [身分識別與裝置存取設定](../enterprise/microsoft-365-policies-configurations.md)
+### [必要工作](../enterprise/identity-access-prerequisites.md)
+### [一般身分識別與裝置存取原則](../enterprise/identity-access-policies.md)
+### [建議使用的 Exchange Online 存取原則](../enterprise/secure-email-recommended-policies.md)
+### [建議使用的 SharePoint Online 存取原則](../enterprise/sharepoint-file-access-policies.md)
+
 ## [Office 365 安全性]()
 ### [開始使用]()
 #### [Office 365 安全性藍圖](./office-365-security/security-roadmap.md)
@@ -43,7 +50,6 @@
 ##### [反惡意程式碼保護常見問題集](./office-365-security/anti-malware-protection-faq-eop.md)
 ##### [Office 365 中的反垃圾郵件和反惡意程式碼保護](./office-365-security/anti-malware-protection.md)
 ##### [反垃圾郵件保護常見問題集](./office-365-security/anti-spam-protection-faq.md)
-##### [控制 Office 365 的輸出垃圾郵件](./office-365-security/controlling-outbound-spam-in-Office-365.md)
 ##### [避免垃圾郵件篩選規則和垃圾郵件篩選原則中的無效字元](./office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md)
 ##### [Exchange Online 中的安全寄件者和封鎖寄件者清單](./office-365-security/safe-sender-and-blocked-sender-lists-faq.md)
 ##### [Office 365 電子郵件的安全提示](./office-365-security/safety-tips-in-office-365.md)
@@ -253,4 +259,8 @@
 
 ### [Office 365 企業版](https://docs.microsoft.com/office-365-security/Enterprise)
 ### [商務用 Office 365](https://docs.microsoft.com/office-365-security/admin/admin-home)
+
+
+
+
 ## [Microsoft 365 合規性](https://docs.microsoft.com/microsoft-365/compliance/)
