@@ -1,14 +1,31 @@
 # [Microsoft 365 安全性](index.yml)
 
+## 開始使用
+### [適用於 BDM 的 Microsoft 365 安全性](Microsoft-365-security-for-bdm.md)
+### [安全分數](./mtp/microsoft-secure-score.md)
+### [資訊安全長 (CISO) 研討會訓練](./office-365-security/ciso-workshop.md)
+#### [單元 1 - Microsoft 網路安全簡報](./office-365-security/ciso-workshop-module-1.md)
+#### [單元 2 - 安全性管理](./office-365-security/ciso-workshop-module-2.md)
+#### [單元 3 - 身分識別和存取管理](./office-365-security/ciso-workshop-module-3.md)
+#### [單元 4a - 威脅防護策略，第一部分](./office-365-security/ciso-workshop-module-4a.md)
+#### [單元 4b - 威脅防護策略，第二部分](./office-365-security/ciso-workshop-module-4b.md)
+#### [單元 5 - 資訊保護](./office-365-security/ciso-workshop-module-5.md)
+
+
+## [身分識別與裝置存取設定](../enterprise/microsoft-365-policies-configurations.md)
+### [必要工作](../enterprise/identity-access-prerequisites.md)
+### [一般身分識別與裝置存取原則](../enterprise/identity-access-policies.md)
+### [建議使用的 Exchange Online 存取原則](../enterprise/secure-email-recommended-policies.md)
+### [建議使用的 SharePoint Online 存取原則](../enterprise/sharepoint-file-access-policies.md)
+
+
 ## Microsoft 威脅防護
 ### [概觀]()
 #### [什麼是 Microsoft 威脅防護？](mtp/microsoft-threat-protection.md)
 #### [Microsoft 365 安全性中心](mtp/overview-security-center.md)
 
-
 ### [在 Microsoft 365 中搜尋](./mtp/hunting.md)
 
-### [安全分數](./mtp/microsoft-secure-score.md)
 
 ### [報告]()
 #### [監視及檢視報告](./mtp/monitoring-and-reporting.md)
@@ -20,12 +37,6 @@
 ### [透過 ServiceNow 管理票證](./mtp/tickets.md)
 
 
-## [身分識別與裝置存取設定](../enterprise/microsoft-365-policies-configurations.md)
-### [必要工作](../enterprise/identity-access-prerequisites.md)
-### [一般身分識別與裝置存取原則](../enterprise/identity-access-policies.md)
-### [建議使用的 Exchange Online 存取原則](../enterprise/secure-email-recommended-policies.md)
-### [建議使用的 SharePoint Online 存取原則](../enterprise/sharepoint-file-access-policies.md)
-
 ## [Office 365 安全性]()
 ### [開始使用]()
 #### [Office 365 安全性藍圖](./office-365-security/security-roadmap.md)
@@ -34,13 +45,8 @@
 #### [安全性與合規性中心的權限](./office-365-security/permissions-in-the-security-and-compliance-center.md)
 #### [讓使用者能夠存取安全性中心](./office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
-#### [資訊安全長 (CISO) 研討會訓練](./office-365-security/ciso-workshop.md)
-##### [單元 1 - Microsoft 網路安全簡報](./office-365-security/ciso-workshop-module-1.md)
-##### [單元 2 - 安全性管理](./office-365-security/ciso-workshop-module-2.md)
-##### [單元 3 - 身分識別和存取管理](./office-365-security/ciso-workshop-module-3.md)
-##### [單元 4a - 威脅防護策略，第一部分](./office-365-security/ciso-workshop-module-4a.md)
-##### [單元 4b - 威脅防護策略，第二部分](./office-365-security/ciso-workshop-module-4b.md)
-##### [單元 5 - 資訊保護](./office-365-security/ciso-workshop-module-5.md)
+
+
 
 
 ### [防範威脅](./office-365-security/protect-against-threats.md)

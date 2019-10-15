@@ -2,7 +2,7 @@
 
 # 開始使用
 ## [合規性中心的新功能](whats-new.md)
-## [合規性內容的新版更新](recently-updated-topics-mcc.md)
+## [合規性內容的最新更新](recently-updated-topics-mcc.md)
 ## [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)
 ## [前往安全性與合規性中心](go-to-the-securitycompliance-center.md)
 ## [使用您的免費 Azure Active Directory 訂閱](use-your-free-azure-ad-subscription-in-office-365.md)
@@ -17,8 +17,8 @@
 ## 客戶金鑰
 ### [使用客戶金鑰控制 Office 365 中的資料](controlling-your-data-using-customer-key.md)
 ### [Office 365 中使用客戶金鑰的服務加密常見問題集](service-encryption-with-customer-key-faq.md)
-## [通訊監督]()
-### [了解通訊監督](supervision-policies.md)
+## [監督]()
+### [了解監督原則](supervision-policies.md)
 ### [為您的組織設定監督原則](configure-supervision-policies.md)
 ## [資訊屏障](information-barriers.md)
 ### [定義資訊屏障原則](information-barriers-policies.md)
@@ -31,7 +31,7 @@
 ### [使用敏感度標籤中的加密來限制內容的存取](encryption-sensitivity-labels.md)
 ### [自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)
 ### [利用標籤分析檢視標籤使用量](label-analytics.md)
-### [在 Office 應用程式中敏感度標籤](sensitivity-labels-office-apps.md)
+### [Office App 中的敏感度標籤](sensitivity-labels-office-apps.md)
 
 ## [資料外洩防護 (DLP)](data-loss-prevention-policies.md)
 ### [DLP 和 Microsoft Teams](dlp-microsoft-teams.md)
@@ -106,7 +106,7 @@
 ### [檔案計劃管理員](file-plan-manager.md)
 ### [保留標籤](labels.md)
 ### [符合美國證券交易委員會規定 17A-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [事件型保留](event-driven-retention.md)
 ### [自動化事件型保留](automate-event-driven-retention.md)
 ## [處置資料](disposition-reviews.md)
@@ -127,7 +127,7 @@
 ### 檔案計畫
 #### [檔案計劃管理員](file-plan-manager.md)
 #### [保留標籤](labels.md)
-#### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [使用 PowerShell 建立及發佈保留標籤](https://docs.microsoft.com/zh-TW/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 #### [利用標籤分析檢視標籤使用量](label-analytics.md)
 #### [檢視文件的標籤活動](view-label-activity-for-documents.md)
 #### [檢視資料控管報告](view-the-data-governance-reports.md)
@@ -330,7 +330,7 @@
 ### [從辨識項匯出文件](export-documents-from-incident.md)
 ### [下載匯出工作](download-export-jobs-from-a-data-investigation.md)
 
-## [設定資料調查的設定](configure-settings-datainvestigations.md)
+## 設定調查設定
 ### [從調查新增或移除成員](add-remove-members.md)
 ### [設定搜尋和分析設定](configure-search-analytics-settings.md)
 ### [關閉或刪除調查](close-or-delete-investigation.md)
@@ -342,7 +342,7 @@
 ### [下載中繼資料欄位](document-metadata-fields.md)
 ### [管理工作](manage-jobs.md)
 
-# 管理稽核與警示原則
+# 管理稽核和警示原則
 ## [搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)
 ## [管理警示原則](alert-policies.md)
 ## [開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)
