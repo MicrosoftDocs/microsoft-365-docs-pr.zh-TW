@@ -14,12 +14,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本的垃圾郵件篩選設定，包括識別為垃圾郵件所採取的選取郵件動作。
-ms.openlocfilehash: 38160952827d8e60884877a67aea15521000f63f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fb46e735c4fae73565b6fe008d47a3e7ffd3f4cb
+ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077243"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510560"
 ---
 # <a name="configure-your-spam-filter-policies"></a>設定您的垃圾郵件篩選原則
 垃圾郵件篩選設定，包括識別為垃圾郵件所採取的選取郵件動作。 垃圾郵件篩選原則設定只會套用於內送郵件，並且有兩種類型：
@@ -48,9 +48,9 @@ ms.locfileid: "37077243"
 
 2. 您可以為自訂原則指定唯一名稱，但無法重新命名預設值。 您也可以為任何原則指定更詳細的說明。
 
-3. 在**垃圾郵件和大量動作**區段之下：
+3. 在 [垃圾郵件與大量動作]**** 區段下：
 
-  - 選取針對 **[垃圾郵件]**、**[高信賴度的垃圾郵件]**、**[網路釣魚電子郵件]** 以及 **[大量電子郵件]** 類型的動作。 可用值包括： 
+  - 選取 [垃圾郵件]****、[高信賴度垃圾郵件]****、[高信賴度網路釣魚電子郵件]****、[網路釣魚電子郵件]**** 以及 [大量電子郵件]**** 類型的動作。 可用值包括： 
 
     - **將郵件移動到 [垃圾郵件] 資料夾：** 將郵件傳送到指定收件者的 [垃圾郵件] 資料夾。 這是垃圾郵件、高信賴度的垃圾郵件，與大量郵件的預設動作。<br/><br/>
 
