@@ -1,8 +1,8 @@
 ---
 title: 首席資訊安全性長 （首席資訊安全長） 研討會
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性原則和建議現代化貴組織中的安全性。
-ms.openlocfilehash: 95bfc90211b90e129e6b208ab09b6123c61ccaae
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6987f5fcb0504ad4b5bee91a417ff632faa11623
+ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077251"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37523618"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>首席資訊安全性長 （首席資訊安全長） 研討會訓練
 
@@ -32,7 +32,7 @@ ms.locfileid: "37077251"
 
 - [模組 2： 安全性管理](ciso-workshop-module-2.md)： 了解如何增加可見度及控制與整合的指引，自動化的原則強制執行 >，監視您混合企業資產。
 
-- [模組 3： 身分識別與存取管理](ciso-workshop-module-3.md)： 因為大部分現代攻擊牽涉到危害使用者身分識別，了解如何建立新的身分識別安全性周邊來保護公司網路之外的資產。
+- [模組 3： 模組 3-身分識別與零信任使用者存取](ciso-workshop-module-3.md)： 了解如何包含零信任概念到您的身分識別與使用者存取策略更妥善地保護您的周邊網路內外的公司資料。
 
 - [模組 4a： 威脅保護策略、 第一部](ciso-workshop-module-4a.md)： 瀏覽有關威脅防護、 安全性演變、 策略和安全性隨身攜帶地圖服務金鑰檢討。
 

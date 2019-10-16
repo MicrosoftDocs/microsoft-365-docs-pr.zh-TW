@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止網路釣魚郵件送達您的信箱，Outlook.com 和網頁型 Outlook 確認寄件者是誰他們說他們且可疑的郵件標示為垃圾郵件。
-ms.openlocfilehash: 1b6c834f5d54c54a577b51edf5f135e30990a92c
-ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
+ms.openlocfilehash: 6f3d11a510756871d6688dc948e2a50b4d59406d
+ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510540"
+ms.locfileid: "37523628"
 ---
 # <a name="unverified-sender"></a>未驗證的寄件者
 
@@ -33,6 +33,15 @@ ms.locfileid: "37510540"
 ## <a name="how-can-i-identify-a-suspicious-message-in-my-inbox"></a>如何識別我的收件匣中的可疑的郵件？
 
 Outlook.com 和網頁型 Outlook 顯示指標，當郵件的寄件者也無法識別或其身分識別為不同於從地址中看到的內容。
+
+## <a name="you-see-a--in-the-sender-image"></a>您會看到 '？ ' 中的寄件者影像
+
+當 Outlook.com 和網頁型 Outlook 無法驗證使用電子郵件驗證技術的寄件者的身分識別時，他們會顯示 '？ ' 中的寄件者相片。 
+
+![郵件未通過驗證](../media/message-did-not-pass-verification.jpg)
+
+若要驗證失敗不是每個訊息是惡意。 不過，您應該謹慎互動與未驗證如果您不能辨識寄件者的郵件。 或者，如果您辨識通常沒有寄件者 '？ ' 寄件者的影像，但您突然開始看到它，可能會登寄件者詐騙。
+
 
 ## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>如何管理哪些郵件接收未驗證的寄件者處理方式 
 
@@ -49,14 +58,6 @@ Outlook.com 和網頁型 Outlook 顯示指標，當郵件的寄件者也無法�
     - 新增透過 PhishFilterPolicy 指令程式的網域組。 如需詳細資訊，請參閱 Office 365 中的 Set-phishfilterpolicy 和反詐騙保護
 
 此外，我們不會套用未驗證寄件者處理方式如果已將其傳遞至收件匣透過系統允許清單，包括電子郵件傳輸規則 (Etr)、 安全網域清單 （反垃圾郵件原則）、 安全的寄件者清單，或使用者已設定為 「 安全寄件者 」 這個使用者在其收件匣。
-
-### <a name="you-see-a--in-the-sender-image"></a>您會看到 '？ ' 中的寄件者影像
-
-當 Outlook.com 和網頁型 Outlook 無法驗證使用電子郵件驗證技術的寄件者的身分識別時，他們會顯示 '？ ' 中的寄件者相片。 
-
-![郵件未通過驗證](../media/message-did-not-pass-verification.jpg)
-
-若要驗證失敗不是每個訊息是惡意。 不過，您應該謹慎互動與未驗證如果您不能辨識寄件者的郵件。 或者，如果您辨識通常沒有寄件者 '？ ' 寄件者的影像，但您突然開始看到它，可能會登寄件者詐騙。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
