@@ -2,7 +2,7 @@
 title: 部署 Microsoft 365 企業版的 Microsoft Teams
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/28/2019
+ms.date: 10/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,163 +11,200 @@ ms.collection:
 - M365-collaboration
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 推行並發揮 Microsoft 365 企業版 Microsoft Teams 在組織中的價值，規劃這整個程序的步驟。
-ms.openlocfilehash: fd2e72ddb0dfbcc437d30dee16241fbccc81b05b
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+description: 請逐步了解，然後在組織內推出 Microsoft Teams。
+ms.openlocfilehash: 2e34c4fcada0f80c597faf89b221321ffa9183ba
+ms.sourcegitcommit: 31392b9599f4b4e9981a1278d6beb9f0a2839ecf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982614"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "37503389"
 ---
-# <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a><span data-ttu-id="0304b-103">部署 Microsoft 365 企業版的 Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="0304b-103">Deploy Microsoft Teams for Microsoft 365 Enterprise</span></span>
+# <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a><span data-ttu-id="5213f-103">部署 Microsoft 365 企業版的 Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="5213f-103">Deploy Microsoft Teams for Microsoft 365 Enterprise</span></span>
 
-<span data-ttu-id="0304b-104">*此工作負載包含在 Microsoft 365 企業版的 E3 和 E5 版本中*</span><span class="sxs-lookup"><span data-stu-id="0304b-104">*This workload is included in both the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
+<span data-ttu-id="5213f-104">*此工作負載包含在 Microsoft 365 企業版的 E3 和 E5 版本中*</span><span class="sxs-lookup"><span data-stu-id="5213f-104">*This workload is included in both the E3 and E5 versions of Microsoft 365 Enterprise*</span></span>
 
-<span data-ttu-id="0304b-p101">Microsoft Teams 將交談、會議、共用文件、往來對話整合在一起，讓您在群組間輕鬆建立及共用內容。Teams 是進行 Microsoft 365 企業版團隊合作和共同作業的工具，是專門為了 Microsoft 365 團隊合作而打造的重要元素。如果您沒用過 Teams，請參閱 [Microsoft Teams 概觀](https://docs.microsoft.com/MicrosoftTeams/teams-overview)。</span><span class="sxs-lookup"><span data-stu-id="0304b-p101">Microsoft Teams brings together chat, conferencing, document sharing, and threaded conversations in a way that makes it easy to create and share content across groups. Teams is the way you do teamwork and collaboration for Microsoft 365 Enterprise and is a key element of the Built for Teamwork value of Microsoft 365. If you are brand new to Teams, see [Overview of Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview).</span></span>
+<span data-ttu-id="5213f-p101">Microsoft Teams 將交談、會議、共用文件、往來對話整合在一起，讓您在群組間輕鬆建立及共用內容。Teams 是進行 Microsoft 365 企業版團隊合作和共同作業的工具，是專門為了 Microsoft 365 團隊合作的價值而打造的重要元素。</span><span class="sxs-lookup"><span data-stu-id="5213f-p101">Microsoft Teams brings together chat, conferencing, document sharing, and threaded conversations in a way that makes it easy to create and share content across groups. Teams is the way you do teamwork and collaboration for Microsoft 365 Enterprise and is a key element of the Built for Teamwork value of Microsoft 365. If you are brand new to Teams, see Overview of Microsoft Teams.</span></span> 
+
+<span data-ttu-id="5213f-107">如果您沒用過 Teams，請參閱[歡迎使用 Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview)。</span><span class="sxs-lookup"><span data-stu-id="5213f-107">If you're brand new to Teams, see [Welcome to Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview).</span></span> 
+
+
+## <a name="roll-out-teams-to-your-organization"></a><span data-ttu-id="5213f-108">向組織推出 Teams</span><span class="sxs-lookup"><span data-stu-id="5213f-108">Step 1: Roll out Teams to the rest of your organization</span></span>
+
+<span data-ttu-id="5213f-109">開始之前：</span><span class="sxs-lookup"><span data-stu-id="5213f-109">Before you begin:</span></span>
+
+- <span data-ttu-id="5213f-110">請確定您已設定正確的[基礎結構](deploy-foundation-infrastructure.md)階段，您的小組才能具備您需要的使用者帳戶和安全性功能。</span><span class="sxs-lookup"><span data-stu-id="5213f-110">Before you begin, make sure you've configured the right [foundation infrastructure](deploy-foundation-infrastructure.md) phases so that your teams have the security capabilities you need.</span></span> <span data-ttu-id="5213f-111">身分識別與資訊保護階段，對登入及使用安全的電子郵件和檔案搭配保留和敏感度標籤來說最重要。</span><span class="sxs-lookup"><span data-stu-id="5213f-111">The Identity and Information Protection phases are the most important for signing on and using securing email and files with retention and sensitivity labels.</span></span>
+- <span data-ttu-id="5213f-112">利用[此文章](https://docs.microsoft.com/microsoftteams/security-compliance-overview)來了解 Teams 中的安全性與合規性。</span><span class="sxs-lookup"><span data-stu-id="5213f-112">Learn about security and compliance in Teams with [this article](https://docs.microsoft.com/microsoftteams/security-compliance-overview).</span></span>
+- <span data-ttu-id="5213f-113">利用[此文章](https://docs.microsoft.com/microsoftteams/office-365-licensing)來了解適用於 Teams 的 Office 365 授權。</span><span class="sxs-lookup"><span data-stu-id="5213f-113">Learn about Office 365 licensing for Teams with [this article](https://docs.microsoft.com/microsoftteams/office-365-licensing).</span></span>
+
+<span data-ttu-id="5213f-114">若要在組織中推出 Teams，請參閱[如何推出 Teams](https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams)。</span><span class="sxs-lookup"><span data-stu-id="5213f-114">To roll out Teams in your organization, read [How to roll out Teams](https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams).</span></span>
+
+<span data-ttu-id="5213f-115">針對您的第一組 Teams 功能，請參閱 [Microsoft Teams 中的聊天、小組、頻道和應用程式](https://docs.microsoft.com/MicrosoftTeams/deploy-chat-teams-channels-microsoft-teams-landing-page)。</span><span class="sxs-lookup"><span data-stu-id="5213f-115">For your first set of Teams capabilities, see [Chat, teams, channels, and apps in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/deploy-chat-teams-channels-microsoft-teams-landing-page).</span></span>
+
+<span data-ttu-id="5213f-116">如需更多進階 Teams 功能，請參閱：</span><span class="sxs-lookup"><span data-stu-id="5213f-116">For more advanced Teams capabilities, see:</span></span>
+
+- [<span data-ttu-id="5213f-117">會議和召集會議</span><span class="sxs-lookup"><span data-stu-id="5213f-117">Meetings and Conferencing</span></span>](https://docs.microsoft.com/microsoftteams/deploy-meetings-microsoft-teams-landing-page)
+- <span data-ttu-id="5213f-118">[雲端語音](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (需要 Microsoft 365 企業版 E5)</span><span class="sxs-lookup"><span data-stu-id="5213f-118">[Cloud voice](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (requires Microsoft 365 Enterprise E5)</span></span>
+
+<span data-ttu-id="5213f-119">若要監視組織的 Teams 使用狀況，請參閱：</span><span class="sxs-lookup"><span data-stu-id="5213f-119">To monitor your organization's usage of Teams, see:</span></span>
+
+- [<span data-ttu-id="5213f-120">Teams 中的跨小組和每一小組分析</span><span class="sxs-lookup"><span data-stu-id="5213f-120">Cross-team and per-team analytics in Teams</span></span>](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/cross-team-per-team-analytics)
+- [<span data-ttu-id="5213f-121">分析和報告</span><span class="sxs-lookup"><span data-stu-id="5213f-121">Analytics and reporting</span></span>](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/teams-reporting-reference)
+
+
+## <a name="upgrade-to-teams"></a><span data-ttu-id="5213f-122">升級至 Teams</span><span class="sxs-lookup"><span data-stu-id="5213f-122">Upgrade to Teams</span></span>
+
+<span data-ttu-id="5213f-123">如果還沒有發生，則您即將從商務用 Skype 升級至 Microsoft Teams。</span><span class="sxs-lookup"><span data-stu-id="5213f-123">If it hasn’t happened already, you will soon upgrade from Skype for Business to Microsoft Teams.</span></span> <span data-ttu-id="5213f-124">無論您是剛開始使用 Teams、已在使用 Teams 搭配商務用 Skype，或是已準備好進行升級，我們都想要確保您具備導覽成功的 Teams 旅程所需的一切。</span><span class="sxs-lookup"><span data-stu-id="5213f-124">Whether you’re just getting started with Teams, already using Teams alongside Skype for Business, or ready to upgrade, we want to ensure you have everything you need to navigate a successful journey to Teams.</span></span>
+
+<span data-ttu-id="5213f-125">無論您要從商務用 Skype Online 升級到 Teams，或從商務用 Skype 內部部署環境升級到 Teams，升級架構會根據您的商務案例引導您完成程序。</span><span class="sxs-lookup"><span data-stu-id="5213f-125">Whether you are upgrading from Skype for Business Online to Teams or from a Skype for Business on-premises environment to Teams, the upgrade framework will guide you through the process based on your business scenario.</span></span>
  
-<span data-ttu-id="0304b-p102">如果您目前使用商務用 Skype，我們正在將商務用 Skype 的功能建置在 Teams 之中。這會在一段時間後完成，Teams 最終會變成單一用戶端體驗。您是重要的商務用 Skype 客戶，Microsoft 在此支援您。如需詳細資訊，請參閱[從商務用 Skype 到 Microsoft Teams 的旅程](https://docs.microsoft.com/microsoftteams/journey-skypeforbusiness-teams)。</span><span class="sxs-lookup"><span data-stu-id="0304b-p102">If you’re currently using Skype for Business, we’re building Skype for Business capabilities into Teams. This will happen over time, and ultimately Teams will become the single client experience. As a valued Skype for Business customer, Microsoft is here to support you. See the [Journey from Skype for Business to Microsoft Teams](https://docs.microsoft.com/microsoftteams/journey-skypeforbusiness-teams) for more information.</span></span>
+<span data-ttu-id="5213f-126">如需詳細資訊，請參閱[開始進行您的 Microsoft Teams 升級](https://docs.microsoft.com/MicrosoftTeams/upgrade-start-here)。</span><span class="sxs-lookup"><span data-stu-id="5213f-126">See the [Getting started with your Microsoft Teams upgrade](https://docs.microsoft.com/MicrosoftTeams/upgrade-start-here) for more information.</span></span>
 
-<span data-ttu-id="0304b-112">以下的階段與步驟會帶領您構想 Teams 在組織中的角色，透過一系列的漸進式推行讓組織導入 Teams，並向使用者推廣 Teams 的使用和價值。</span><span class="sxs-lookup"><span data-stu-id="0304b-112">The following phases and steps guide you through the process of envisioning the role of Teams in your organization, onboarding your organization to Teams through a series of progressive rollouts, and driving usage of Teams and its value to your end users.</span></span> 
+## <a name="how-microsoft-does-microsoft-365-enterprise"></a><span data-ttu-id="5213f-127">Microsoft 如何執行 Microsoft 365 企業版</span><span class="sxs-lookup"><span data-stu-id="5213f-127">How Microsoft does Microsoft 365 Enterprise</span></span>
 
-<span data-ttu-id="0304b-113">開始之前，請確定您已設定正確的[基礎結構](deploy-foundation-infrastructure.md)階段，您的小組才能具備您需要的安全性功能。</span><span class="sxs-lookup"><span data-stu-id="0304b-113">Before you begin, make sure you've configured the right [foundation infrastructure](deploy-foundation-infrastructure.md) phases so that your teams have the security capabilities you need.</span></span>
+<span data-ttu-id="5213f-128">若要深入了解 Microsoft 並了解我們如何部署及使用 Teams 進行共同作業，請參閱：</span><span class="sxs-lookup"><span data-stu-id="5213f-128">To peek inside Microsoft and learn how the company deployed and is using Microsoft Teams for collaboration, see:</span></span>
 
-## <a name="phase-1-envision"></a><span data-ttu-id="0304b-114">第 1 階段：構想</span><span class="sxs-lookup"><span data-stu-id="0304b-114">Phase 1: Envision</span></span>
+- [<span data-ttu-id="5213f-129">Microsoft Teams 採用戰略為員工準備新工作文化</span><span class="sxs-lookup"><span data-stu-id="5213f-129">Microsoft Teams adoption strategy prepares employees for a new culture of work</span></span>](https://www.microsoft.com/zh-TW/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
+- [<span data-ttu-id="5213f-130">有了 Microsoft Teams 會議室，就能擁有可全球調整的新式會議體驗</span><span class="sxs-lookup"><span data-stu-id="5213f-130">With Microsoft Teams Rooms, comes a globally scalable modern meeting experience</span></span>](https://www.microsoft.com/zh-TW/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
 
-<span data-ttu-id="0304b-115">在這個階段，您要召集負責 Teams 部署的人員，並決定組織將如何使用 Teams 解決業務需求。</span><span class="sxs-lookup"><span data-stu-id="0304b-115">In this phase, you gather the people for your Teams deployment and determine how your organization will use Teams to address its business needs.</span></span>
+## <a name="next-steps"></a><span data-ttu-id="5213f-131">後續步驟</span><span class="sxs-lookup"><span data-stu-id="5213f-131">Next steps</span></span>
 
-### <a name="step-1-gather-your-teams-deployment-members"></a><span data-ttu-id="0304b-116">步驟 1：召集 Teams 部署成員</span><span class="sxs-lookup"><span data-stu-id="0304b-116">Step 1: Gather your Teams deployment members</span></span>
-<span data-ttu-id="0304b-p103">為了將 Teams 成功部署在 Microsoft 365 [基本基礎結構](deploy-foundation-infrastructure.md)上，您需要找到適當的人員取得相關想法和意見反應。重點人物包括企業決策者、IT 人員 (如架構與實作者)、使用者提倡者。</span><span class="sxs-lookup"><span data-stu-id="0304b-p103">For a successful deployment of Teams on top of the Microsoft 365 [foundation infrastructure](deploy-foundation-infrastructure.md), you need to get the right people for input and feedback. Key people include business decision makers, IT staff such as architects and implementers, and advocates for your end users.</span></span> 
+- [<span data-ttu-id="5213f-132">管理組織的 Microsoft Teams 功能</span><span class="sxs-lookup"><span data-stu-id="5213f-132">Manage Microsoft Teams features in your Office 365 organization</span></span>](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
+- [<span data-ttu-id="5213f-133">Microsoft Teams 的管理訓練</span><span class="sxs-lookup"><span data-stu-id="5213f-133">Admin training for Microsoft Teams</span></span>](https://docs.microsoft.com/microsoftteams/itadmin-readiness)
 
-<span data-ttu-id="0304b-119">這三種人可確保 Teams 的部署涵蓋各種考量，可以解決業務需求和技術層面的授權與安全性，讓 Teams 成為一般使用者會使用的工具。</span><span class="sxs-lookup"><span data-stu-id="0304b-119">These three groups ensure that your Teams deployment includes considerations that address business needs, technical aspects of licensing and security, and that Teams will be something that your typical users will use.</span></span>
+<!--
 
-#### <a name="result"></a><span data-ttu-id="0304b-120">結果</span><span class="sxs-lookup"><span data-stu-id="0304b-120">Result</span></span>
+## Phase 1: Envision
 
-<span data-ttu-id="0304b-121">代表組織的業務、技術、使用者三方面的人員清單。</span><span class="sxs-lookup"><span data-stu-id="0304b-121">A list of people that represent the business, technical, and end user aspects of your organization.</span></span>
+In this phase, you gather the people for your Teams deployment and determine how your organization will use Teams to address its business needs.
 
-### <a name="step-2-determine-and-prioritize-your-teams-business-scenarios"></a><span data-ttu-id="0304b-122">步驟 2：決定 Teams 商務案例並定立優先順序</span><span class="sxs-lookup"><span data-stu-id="0304b-122">Step 2: Determine and prioritize your Teams business scenarios</span></span>
-<span data-ttu-id="0304b-p104">Teams 可以用於許多不同的用途。您必須決定哪些用途對應到組織中業務需求、業務群組、部門、個別工作與專案小組的不同層級。如需範例請參閱 [Microsoft 365 生產力文件庫](https://www.microsoft.com/microsoft-365/success/?rtc=1)，來協助您定義 Teams 案例。</span><span class="sxs-lookup"><span data-stu-id="0304b-p104">Teams can be used for many different purposes. You need to figure out which purposes map to your business needs on the separate levels of your organization, your business groups, your departments, and individual working and project teams. Take a look at the [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success/?rtc=1) for examples to help you define Teams scenarios.</span></span> 
+### Step 1: Gather your Teams deployment members
 
-<span data-ttu-id="0304b-p105">您應該將 Teams 的目標放在處理進展快速且高度共同作業的小組，他們密切合作並需要電子郵件和 Exchange Online 以外的更多功能。像是具有歷程記錄的即時群組聊天、用通用易找的位置儲存檔案和備忘稿。</span><span class="sxs-lookup"><span data-stu-id="0304b-p105">You should target Teams to address fast-moving and highly collaborative teams that work closely together and require many more facilities than just email with Exchange Online can provide. Examples are live group chats with a recorded history and a common and easy-to-find place to store files and notes.</span></span> 
+For a successful deployment of Teams on top of the Microsoft 365 [foundation infrastructure](deploy-foundation-infrastructure.md), you need to get the right people for input and feedback. Key people include business decision makers, IT staff such as architects and implementers, and advocates for your end users. 
 
-<span data-ttu-id="0304b-128">看見 Teams 優點的其中一個方法是查看小組或虛擬小組今天的互動，然後找出可取代互動並提供更輕鬆共同作業方式的適當 Teams 案例，再提供額外的功能。</span><span class="sxs-lookup"><span data-stu-id="0304b-128">One way to see the benefits of Teams is to examine how a team or v-team interacts today, and then find an appropriate Teams scenario that replaces the interaction and provides easier ways to collaborate and provide additional capabilities.</span></span>
+These three groups ensure that your Teams deployment includes considerations that address business needs, technical aspects of licensing and security, and that Teams is something that your typical users will use.
 
-#### <a name="microsoft-teams-for-highly-regulated-data"></a><span data-ttu-id="0304b-129">適用於高管制資料的 Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="0304b-129">Microsoft Teams for highly regulated data</span></span>
+#### Result
 
-<span data-ttu-id="0304b-p106">高管制資料受限於區域法規，或者是貴組織最有價值的資料，例如營業秘密、財務或人力資源資訊，以及組織策略。您可以設定小組以進行限制存取、資料分類、資料外洩防護以及此資料類型的加密。如需詳細資訊，請參閱[適用於高管制資料的 Microsoft Teams 和 SharePoint Online 網站](teams-sharepoint-online-sites-highly-regulated-data.md)。</span><span class="sxs-lookup"><span data-stu-id="0304b-p106">Highy regulated data is subject to regional regulations or is the most valuable data for your organization, such as trade secrets, financial or human resources information, and organization strategy. You can configure a team for restricted access, data classification, data loss prevention, and encryption for this type of data. For the details, see [Microsoft Teams and SharePoint Online sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md).</span></span>
+A list of people that represent the business, technical, and end user perspectives of your organization.
 
-#### <a name="result"></a><span data-ttu-id="0304b-133">結果</span><span class="sxs-lookup"><span data-stu-id="0304b-133">Result</span></span>
+### Step 2: Determine and prioritize your Teams business scenarios
+Teams can be used for many different purposes. You need to figure out which purposes map to your business needs on the separate levels of your organization, your business groups, your departments, and individual working and project teams. Take a look at the [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success/?rtc=1) for examples to help you define Teams scenarios. 
 
-<span data-ttu-id="0304b-134">解決組織共同作業和團隊合作需求的 Teams 案例清單。</span><span class="sxs-lookup"><span data-stu-id="0304b-134">A list of Teams scenarios that address your organization’s needs for collaboration and teamwork.</span></span>
+You should target Teams to address fast-moving and highly collaborative teams that work closely together and require many more facilities than just email with Exchange Online can provide. Examples are live group chats with a recorded history and a common and easy-to-find place to store files and notes. 
 
-## <a name="phase-2-onboard"></a><span data-ttu-id="0304b-135">第 2 階段：導入</span><span class="sxs-lookup"><span data-stu-id="0304b-135">Phase 2: Onboard</span></span>
+One way to see the benefits of Teams is to examine how a team or v-team interacts today, and then find an appropriate Teams scenario that replaces the interaction and provides easier ways to collaborate and provide additional capabilities.
 
-<span data-ttu-id="0304b-136">在這個階段，規劃 Teams 部署的技術層面，並開始向所選的使用者群組推行 Teams。</span><span class="sxs-lookup"><span data-stu-id="0304b-136">In this phase, you plan for the technical aspects of a Teams deployment and start rolling out Teams to selected groups of users.</span></span>
+#### Microsoft Teams for highly regulated data
 
-### <a name="prerequisites-identity-and-device-access-configuration"></a><span data-ttu-id="0304b-137">必要條件：身分識別與裝置存取設定</span><span class="sxs-lookup"><span data-stu-id="0304b-137">Prerequisites: Identity and device access configuration</span></span>
+Highly regulated data is subject to regional regulations or is the most valuable data for your organization, such as trade secrets, financial or human resources information, and organization strategy. You can configure a team for restricted access, data classification, data loss prevention, and encryption for this type of data. For the details, see [Microsoft Teams and SharePoint Online sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md).
 
-<span data-ttu-id="0304b-138">若要保護 Teams 的存取權，請確定您已設定[身分識別與裝置存取原則](identity-access-policies.md)和[建議的 SharePoint Online 存取原則](sharepoint-file-access-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="0304b-138">To protect access to teams, ensure that you have configured [identity and device access policies](identity-access-policies.md) and the [recommended SharePoint Online access policies](sharepoint-file-access-policies.md).</span></span>
+#### Result
 
-### <a name="step-1-complete-your-technical-planning"></a><span data-ttu-id="0304b-139">步驟 1：完成技術規劃</span><span class="sxs-lookup"><span data-stu-id="0304b-139">Step 1: Complete your technical planning</span></span>
+A list of Teams scenarios that address your organization’s needs for collaboration and teamwork.
 
-<span data-ttu-id="0304b-p107">開始技術規劃之前，先決定您是否要使用 FastTrack。如果組織有超過 50 個基座，並參與[合格方案](https://technet.microsoft.com/library/dn783224.aspx)，您可以使用[適用於 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365) (不另外收費) 來逐步引導您規劃、部署及採用服務。或者，您可以使用我們的「FastTrack 導入精靈」自己完成這項工作，您可以使用 Office 365 帳戶登入，即可從 [FastTrack](https://fasttrack.microsoft.com/) 取得此精靈。</span><span class="sxs-lookup"><span data-stu-id="0304b-p107">Before you begin technical planning, determine whether you want to use FastTrack. If your organization has over 50 seats and is participating in an [eligible plan](https://technet.microsoft.com/library/dn783224.aspx), you can use [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365), available at no additional cost to guide you through planning, deployment and service adoption. Or, you can complete this work yourself using our FastTrack Onboarding Wizards, which are available from [FastTrack](https://fasttrack.microsoft.com/) once you sign in with your Office 365 account.</span></span>
+## Phase 2: Onboard
 
-<span data-ttu-id="0304b-p108">如果您要執行自己的規劃 (或搭配 FastTrack)，必須判斷您的網路和組織是否準備好使用 Teams。請務必符合[基本基礎結構](deploy-foundation-infrastructure.md)的網路允出準則，特別注意頻寬、輸送量、流量延遲，達到以 Teams 舉行會議的最佳效能。</span><span class="sxs-lookup"><span data-stu-id="0304b-p108">If you are doing your own planning (or in conjunction with FastTrack), you need to determine if your network and organization are ready for Teams. It is especially important that you meet the exit criteria for networking in your [foundation infrastructure](deploy-foundation-infrastructure.md), with special attention to bandwidth, throughput, and traffic delays to maximize performance for Teams-based meetings.</span></span>
+In this phase, you plan for the technical aspects of a Teams deployment and start rolling out Teams to selected groups of users.
 
-<span data-ttu-id="0304b-145">使用以下資源來準備組織推行 Teams 的技術層面：</span><span class="sxs-lookup"><span data-stu-id="0304b-145">Use these resources to prepare the technical aspects of your organization for a Teams rollout:</span></span> 
+### Prerequisites: Identity and device access configuration
 
-- [<span data-ttu-id="0304b-146">檢查環境的 Teams 整備程度</span><span class="sxs-lookup"><span data-stu-id="0304b-146">Check your environment's readiness for Teams</span></span>](https://docs.microsoft.com/MicrosoftTeams/environment-readiness)
-- [<span data-ttu-id="0304b-147">準備用於 Teams 的網路</span><span class="sxs-lookup"><span data-stu-id="0304b-147">Prepare your network for Teams</span></span>](https://docs.microsoft.com/MicrosoftTeams/prepare-network)
-- [<span data-ttu-id="0304b-148">Office 365 URL 與 IP 位址範圍</span><span class="sxs-lookup"><span data-stu-id="0304b-148">Office 365 URLs and IP address ranges</span></span>](https://docs.microsoft.com/MicrosoftTeams/office-365-urls-ip-address-ranges)
+To protect access to teams, ensure that you have configured [identity and device access policies](identity-access-policies.md) and the [recommended SharePoint Online access policies](sharepoint-file-access-policies.md).
 
-<span data-ttu-id="0304b-149">若要更深入了解 Teams 的安全性，請參閱下列資源：</span><span class="sxs-lookup"><span data-stu-id="0304b-149">For a better understanding of security in Teams, review the following additional resources:</span></span>
+### Step 1: Complete your technical planning
 
-- [<span data-ttu-id="0304b-150">Teams 的安全性與合規性概觀</span><span class="sxs-lookup"><span data-stu-id="0304b-150">Overview of security and compliance in Teams</span></span>](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview)
-- [<span data-ttu-id="0304b-151">Office 365 群組與 Teams</span><span class="sxs-lookup"><span data-stu-id="0304b-151">Office 365 groups and Teams</span></span>](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
-- [<span data-ttu-id="0304b-152">Teams 中的來賓存取</span><span class="sxs-lookup"><span data-stu-id="0304b-152">Guest access in Teams</span></span>](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
+Before you begin technical planning, determine whether you want to use FastTrack. If your organization has over 50 seats and is participating in an [eligible plan](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365, you can use [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365), *available at no additional cost* to guide you through planning, deployment and service adoption. Or, you can complete this work yourself using our FastTrack Onboarding Wizards, which are available from [FastTrack](https://fasttrack.microsoft.com/) once you sign in with your Microsoft 365 account.
 
-<span data-ttu-id="0304b-153">接下來，使用這些資源以了解 Teams 授權，以及執行組織的 Teams 設定：</span><span class="sxs-lookup"><span data-stu-id="0304b-153">Next, use these resources to understand Teams licensing and to perform the setup of Teams for your organization:</span></span>
+If you are doing your own planning (or in conjunction with FastTrack), you need to determine if your network and organization are ready for Teams. It is especially important that you meet the exit criteria for [networking](networking-infrastructure.md) in your foundation infrastructure for users connected to your organization network. Pay special attention to bandwidth, throughput, and traffic delays to maximize performance for Teams-based meetings.
 
-- [<span data-ttu-id="0304b-154">Office 365 的 Teams 授權</span><span class="sxs-lookup"><span data-stu-id="0304b-154">Office 365 licensing for Teams</span></span>](https://docs.microsoft.com/MicrosoftTeams/office-365-licensing)
-- [<span data-ttu-id="0304b-155">管理使用者對 Microsoft Teams 的存取</span><span class="sxs-lookup"><span data-stu-id="0304b-155">Manage user access to Microsoft Teams</span></span>](https://docs.microsoft.com/MicrosoftTeams/user-access)
-- [<span data-ttu-id="0304b-156">取得 Microsoft Teams 用戶端</span><span class="sxs-lookup"><span data-stu-id="0304b-156">Get clients for Microsoft Teams</span></span>](https://docs.microsoft.com/MicrosoftTeams/get-clients)
-- [<span data-ttu-id="0304b-157">開啟 Office 365 組織中的 Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="0304b-157">Turn on Microsoft Teams in your Office 365 organization</span></span>](https://docs.microsoft.com/MicrosoftTeams/office-365-set-up)
-- [<span data-ttu-id="0304b-158">管理 Office 365 組織中的 Microsoft Teams 功能</span><span class="sxs-lookup"><span data-stu-id="0304b-158">Manage Microsoft Teams features in your Office 365 organization</span></span>](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
+Use these resources to prepare the technical aspects of your organization for a Teams rollout: 
 
-#### <a name="result"></a><span data-ttu-id="0304b-159">結果</span><span class="sxs-lookup"><span data-stu-id="0304b-159">Result</span></span>
+- [Check your environment's readiness for Teams](https://docs.microsoft.com/MicrosoftTeams/environment-readiness)
+- [Prepare your network for Teams](https://docs.microsoft.com/MicrosoftTeams/prepare-network)
+- [Office 365 URLs and IP address ranges](https://docs.microsoft.com/MicrosoftTeams/office-365-urls-ip-address-ranges)
 
-<span data-ttu-id="0304b-160">您已完成網路、安全性、Office 365 授權的規劃，您已可以開始向組織中所選的群組推行 Teams。</span><span class="sxs-lookup"><span data-stu-id="0304b-160">Your network, security, and Office 365 licensing planning is done and you are ready to begin rolling out Teams to selected groups in your organization.</span></span>
+For a better understanding of security in Teams, review the following additional resources:
 
-### <a name="step-2-run-an-it-pilot"></a><span data-ttu-id="0304b-161">步驟 2：執行 IT 試驗</span><span class="sxs-lookup"><span data-stu-id="0304b-161">Step 2: Run an IT pilot</span></span>
+- [Overview of security and compliance in Teams](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview)
+- [Office 365 groups and Teams](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
+- [Guest access in Teams](https://docs.microsoft.com/microsoftteams/guest-access)
 
-<span data-ttu-id="0304b-p109">在多數中型和大型組織中，您應該和第 1 階段中的利害關係人以及早期採用者、技術愛好者一同執行 IT 試驗。在 IT 試驗期間：</span><span class="sxs-lookup"><span data-stu-id="0304b-p109">In most medium-sized and large organizations, you should run an IT pilot with your stakeholders from Phase 1 and early adopters and technical enthusiasts. During the IT pilot:</span></span>
+Next, use these resources to understand Teams licensing and to perform the setup of Teams for your organization:
 
-- <span data-ttu-id="0304b-p110">選擇 IT 試驗參與者可以練習的 Teams 商務案例。請參閱 [Microsoft Teams 快速入門套件](http://microsoft.com/download/56505)中的想法。</span><span class="sxs-lookup"><span data-stu-id="0304b-p110">Choose a Teams business scenario in which your IT pilot participants can practice. See the [Microsoft Teams getting started kit](http://microsoft.com/download/56505) for ideas.</span></span>
-- <span data-ttu-id="0304b-166">給試驗參與者一些練習，來測試透過 Teams 進行的聊天、檔案儲存、會議及其他功能。</span><span class="sxs-lookup"><span data-stu-id="0304b-166">Give your pilot participants a set of exercises to test Teams-based chats, file storage, meetings, and other capabilities.</span></span>
-- <span data-ttu-id="0304b-p111">判斷您的變更管理策略，並產生材料來推動整個組織的使用者採用。變更管理的材料可包含電子郵件公告文字、內部訓練計劃、走廊海報和簡報。這些材料向組織宣傳 Teams 相關事宜及其優點，目的是要引發認知和促進使用。請參閱[Microsoft Teams 的變更管理策略](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)中的一些想法。</span><span class="sxs-lookup"><span data-stu-id="0304b-p111">Determine your change management strategy and produce materials to drive organization-wide user adoption. Change management materials can include email announcement text, internal training plans, hallway posters, and presentations. These materials will inform your organization about Teams and its benefits with the goals of raising awareness and driving usage. See [change management strategy for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) for some ideas.</span></span>
-- <span data-ttu-id="0304b-p112">讓 IT 試驗參與者根據他們的經驗檢閱變更管理策略的材料。他們可以提供最佳做法的祕訣，以及最能描述 Teams 優點以及如何用於共同作業和團隊合作的建議。</span><span class="sxs-lookup"><span data-stu-id="0304b-p112">Have your IT pilot participants review the change management strategy materials based on their experiences. They can provide tips on best practices and advice on how to best describe the benefits of Teams and how to use it for collaboration and teamwork.</span></span>
+- [Office 365 licensing for Teams](https://docs.microsoft.com/MicrosoftTeams/office-365-licensing)
+- [Manage user access to Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/user-access)
+- [Get clients for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/get-clients)
+- [Turn on Microsoft Teams in your organization](https://docs.microsoft.com/MicrosoftTeams/office-365-set-up)
+- [Manage Microsoft Teams features for your organization](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)
 
-#### <a name="result"></a><span data-ttu-id="0304b-173">結果</span><span class="sxs-lookup"><span data-stu-id="0304b-173">Result</span></span>
+#### Result
 
-<span data-ttu-id="0304b-174">完成 Teams 的 IT 試驗，且已經開發、檢閱、精簡首次變更管理的材料。</span><span class="sxs-lookup"><span data-stu-id="0304b-174">Your Teams IT pilot is complete and the initial change management materials have been developed, reviewed, and refined.</span></span>
+Your network, security, and Microsoft 365 licensing planning are done and you are ready to begin rolling out Teams to selected groups in your organization.
 
-### <a name="step-3-roll-out-to-a-business-group"></a><span data-ttu-id="0304b-175">步驟 3：推行至商務群組</span><span class="sxs-lookup"><span data-stu-id="0304b-175">Step 3: Roll out to a business group</span></span>
+### Step 2: Run an IT pilot
 
-<span data-ttu-id="0304b-p113">完成 IT 試驗後，將 Teams 推行至組織中的商務群組或部門。此推行應包含：</span><span class="sxs-lookup"><span data-stu-id="0304b-p113">After completing your IT pilot, roll out Teams to a business group or department in your organization. This rollout should include:</span></span>
+In most medium-sized and large organizations, you should run an IT pilot with your stakeholders from Phase 1, early adopters, and technical enthusiasts. During the IT pilot:
 
-- <span data-ttu-id="0304b-178">識別商務群組中的 Teams 重要商務案例。</span><span class="sxs-lookup"><span data-stu-id="0304b-178">Identification of key business scenarios for Teams within the business group.</span></span>
-- <span data-ttu-id="0304b-179">用公告活動通知使用者有關在部門、工作或專案小組使用 Teams 的預期變更和時間表。</span><span class="sxs-lookup"><span data-stu-id="0304b-179">Announcement activities to inform users of the expectations and timelines for Teams usage for departmental, work, or project teams.</span></span>
-- <span data-ttu-id="0304b-180">引導使用者參與 Teams 訓練，或使用介紹 Teams 與用法的資源連結。</span><span class="sxs-lookup"><span data-stu-id="0304b-180">Direct user training on Teams or links to resources to introduce Teams and how to use it.</span></span>
-- <span data-ttu-id="0304b-181">用意見反應機制 (例如包含商務群組中每個人的中央小組) 收集商務群組使用者的意見和問題。</span><span class="sxs-lookup"><span data-stu-id="0304b-181">A feedback mechanism, such as a central team containing everyone in the business group, to collect comments and issues from users in the business group.</span></span>
+- Choose a Teams business scenario in which your IT pilot participants can practice. See the [Microsoft Teams getting started kit](http://microsoft.com/download/56505) for ideas.
+- Give your pilot participants a set of exercises to test Teams-based chats, meetings, file storage, meetings, and other capabilities.
+- Determine your change management strategy and produce materials to drive organization-wide user adoption. 
 
-<span data-ttu-id="0304b-182">在推行期間，您可以精簡變更管理的材料，為全組織的推行做準備。</span><span class="sxs-lookup"><span data-stu-id="0304b-182">During the rollout, you can refine your change management materials in preparation for the organization-wide rollout.</span></span>
+  Change management materials can include email announcement text, internal training plans, hallway posters, and presentations. These materials will inform your organization about Teams and its benefits with the goals of raising awareness and driving usage. See [change management strategy for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) for some ideas.
 
-#### <a name="result"></a><span data-ttu-id="0304b-183">結果</span><span class="sxs-lookup"><span data-stu-id="0304b-183">Result</span></span>
+- Have your IT pilot participants review the change management strategy materials based on their experiences. They can provide tips on best practices and advice on how to best describe the benefits of Teams and how to use it for collaboration.
 
-<span data-ttu-id="0304b-184">已使用 Teams 建立並執行商務群組，且已經測試並精簡變更管理的材料。</span><span class="sxs-lookup"><span data-stu-id="0304b-184">A business group is up and running with Teams and the change management materials have been tested and refined.</span></span>
+#### Result
 
-## <a name="phase-3-drive-value"></a><span data-ttu-id="0304b-185">階段 3：發揮價值</span><span class="sxs-lookup"><span data-stu-id="0304b-185">Phase 3: Drive value</span></span>
+Your Teams IT pilot is complete and the initial change management materials have been developed, reviewed, and refined.
 
-<span data-ttu-id="0304b-186">在這個階段，您要將 Teams 推行至組織，並支援使用者讓他們知道其優點。</span><span class="sxs-lookup"><span data-stu-id="0304b-186">In this phase, you complete the rollout of Teams to your organization and support your users so that they are realizing its benefits.</span></span>
+### Step 3: Roll out to a business group
 
-### <a name="step-1-roll-out-teams-to-the-rest-of-your-organization"></a><span data-ttu-id="0304b-187">步驟 1：將 Teams 推行至組織的其他單位</span><span class="sxs-lookup"><span data-stu-id="0304b-187">Step 1: Roll out Teams to the rest of your organization</span></span>
+After completing your IT pilot, roll out Teams to a business group or department in your organization. This rollout should include:
 
-<span data-ttu-id="0304b-p114">推行至目標商務群組之後，將 Teams 推行至組織中的其他單位。此推行應包含：</span><span class="sxs-lookup"><span data-stu-id="0304b-p114">After completing your rollout to a targeted business group, roll out Teams to the rest of your organization. This rollout should include:</span></span>
+- Identification of key business scenarios for Teams within the business group.
+- Announcement activities to inform users of the expectations and timelines for Teams usage for departmental, work, or project teams.
+- Delivery of [user training on Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) or links to resources to introduce Teams and how to use it.
+- A feedback mechanism, such as a central team containing everyone in the business group, to collect comments and issues from users in the business group.
 
-- <span data-ttu-id="0304b-190">識別個別商務群組中的 Teams 重要商務案例。</span><span class="sxs-lookup"><span data-stu-id="0304b-190">Identification of key business scenarios for Teams within your separate business groups.</span></span>
-- <span data-ttu-id="0304b-191">在公告活動中使用精簡過的變更管理材料，通知組織有關在部門、工作或專案小組使用 Teams 的預期變更和時間表。</span><span class="sxs-lookup"><span data-stu-id="0304b-191">Use of your refined change management materials for announcement activities to inform your organization of the expectations and timelines for Teams usage for departmental, work, or project teams.</span></span>
-- <span data-ttu-id="0304b-p115">提供 Teams 訓練給使用者，或提供介紹 Teams 與用法的資源連結。請參閱 [Microsoft Teams 使用者訓練](https://docs.microsoft.com/microsoftteams/enduser-training)的訓練資源。</span><span class="sxs-lookup"><span data-stu-id="0304b-p115">Delivering user training on Teams or links to resources to introduce Teams and how to use it. See the training resources at [End user training for Microsoft Teams](https://docs.microsoft.com/microsoftteams/enduser-training).</span></span>
-- <span data-ttu-id="0304b-p116">用意見反應機制 (例如包含每個人的中央小組) 收集組織使用者的意見和針對問題採取的行動。如果組織人數小於 2500 人，請使用 Teams 的公用通道。若超過，請使用 Yammer 中的公用群組。</span><span class="sxs-lookup"><span data-stu-id="0304b-p116">A feedback mechanism, such as a central team containing everyone, to collect comments and act on issues from organization users. If your organization has less than 2500 individuals, use a public channel in Teams. Otherwise, use a public group in Yammer.</span></span>
+During the rollout, you can refine your change management materials in preparation for the organization-wide rollout.
 
-#### <a name="result"></a><span data-ttu-id="0304b-197">結果</span><span class="sxs-lookup"><span data-stu-id="0304b-197">Result</span></span>
+#### Result
 
-<span data-ttu-id="0304b-198">已使用 Teams 建立並執行組織，且變更管理策略已經準備就緒，可以通知、訓練並讓使用者開始使用 Teams。</span><span class="sxs-lookup"><span data-stu-id="0304b-198">Your organization is up and running and your change management strategy is in place to inform, train, and enable users to begin using Teams.</span></span>
+A business group is up and running with Teams and the change management materials have been tested and refined.
 
-### <a name="step-2-measure-usage-manage-satisfaction-and-drive-adoption"></a><span data-ttu-id="0304b-199">步驟 2：評估使用狀況、管理滿意度、推動採用</span><span class="sxs-lookup"><span data-stu-id="0304b-199">Step 2: Measure usage, manage satisfaction, and drive adoption</span></span>
+## Phase 3: Drive value
 
-<span data-ttu-id="0304b-200">將 Teams 推行至整個組織後，您必須繼續使用變更管理策略：</span><span class="sxs-lookup"><span data-stu-id="0304b-200">After rolling out Teams to your entire organization, you must continue to employ your change management strategy to:</span></span>
+In this phase, you complete the rollout of Teams to your organization and support your users so that they are realizing its benefits.
 
-- <span data-ttu-id="0304b-201">讓領導者將 Teams 提升為組織的團隊合作和共同作業的工具。</span><span class="sxs-lookup"><span data-stu-id="0304b-201">Have your leadership promote Teams as the teamwork and collaboration tool for the organization.</span></span>
-- <span data-ttu-id="0304b-202">鼓勵個人將 Teams 用於商務群組、部門、工作、專案小組的溝通和共同作業。</span><span class="sxs-lookup"><span data-stu-id="0304b-202">Encourage individuals to use it for business group, departmental, work, and project team communications and collaboration.</span></span>
+### Step 1: Roll out Teams to the rest of your organization
 
-<span data-ttu-id="0304b-203">以下是一些建議的活動：</span><span class="sxs-lookup"><span data-stu-id="0304b-203">Here are some suggested activities:</span></span>
+After completing your rollout to a targeted business group, roll out Teams to the rest of your organization. This rollout should include:
 
-- <span data-ttu-id="0304b-204">請參閱 [Office 365 採用指南](https://aka.ms/successfactors)以了解雲端服務採用的一般最佳做法。</span><span class="sxs-lookup"><span data-stu-id="0304b-204">See [Office 365 adoption guidance](https://aka.ms/successfactors) to learn about general best practices for cloud service adoption.</span></span> 
-- <span data-ttu-id="0304b-p117">請參閱 [Office 365 活動報告](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263)以了解整個組織的 Office 365 服務用法。如果組織還沒有 Office 365 全域系統管理員，請找將報告讀取權限授與給使用者帳戶的人，讓您可以存取活動報告。</span><span class="sxs-lookup"><span data-stu-id="0304b-p117">See [Office 365 activity reports](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263) to understand Office 365 service usage across your organization. If you aren’t an Office 365 global admin for your organization, ask someone who is to grant your user account Reports Reader permissions so you can access activity reports.</span></span>
-- <span data-ttu-id="0304b-p118">監控意見反應區 (中央小組或 Yammer 中的公用通道) 了解個人的使用 Teams 的 問題和意見反應。盡快解決疑問和問題，以避免個人使用 Teams 的挫折感甚至放棄 Teams。</span><span class="sxs-lookup"><span data-stu-id="0304b-p118">Monitor your feedback venue (a public channel in a central team or Yammer) for issues and feedback from individuals about their experiences with Teams. Address questions and issues as quickly as you can to prevent frustration and abandonment of Teams by individuals.</span></span>
-- <span data-ttu-id="0304b-p119">在每個商務群組中找出高手並加強培養，強調他們使用 Teams 的成就和最佳做法。在組織中反映出他們的成功，以彰顯專案的成功與採。商務群組技術主管的背書對領導者和同儕有強大的影響。</span><span class="sxs-lookup"><span data-stu-id="0304b-p119">Identify and nurture your champions in each business group and highlight their accomplishments and best practices using Teams. Reflect their successes out to the organization to show project success and adoption. Endorsement by technical leaders within a business group can exert a powerful influence over leaders and peers.</span></span>
+- Identification of key business scenarios for Teams within your separate business groups.
+- Use of your refined change management materials for announcement activities to inform your organization of the expectations and timelines for Teams usage for departmental, work, or project teams.
+- Delivery of [user training on Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) or links to resources to introduce Teams and how to use it.
+- A feedback mechanism, such as a central team containing everyone, to collect comments and act on issues from organization users. If your organization has less than 2500 individuals, use a public team or channel in Teams. Otherwise, use a public group in Yammer.
 
-#### <a name="result"></a><span data-ttu-id="0304b-212">結果</span><span class="sxs-lookup"><span data-stu-id="0304b-212">Result</span></span>
+#### Result
 
-<span data-ttu-id="0304b-213">組織已經採用 Teams 作為共同作業和團隊合作的工具。</span><span class="sxs-lookup"><span data-stu-id="0304b-213">Your organization has adopted Teams as its collaboration and teamwork tool.</span></span>
+Your organization is up and running and your change management strategy is in place to inform, train, and enable users to begin using Teams.
 
-## <a name="how-microsoft-does-microsoft-365-enterprise"></a><span data-ttu-id="0304b-214">Microsoft 如何執行 Microsoft 365 企業版</span><span class="sxs-lookup"><span data-stu-id="0304b-214">How Microsoft does Microsoft 365 Enterprise</span></span>
+### Step 2: Measure usage, manage satisfaction, and drive adoption
 
-<span data-ttu-id="0304b-215">若要深入了解 Microsoft 並了解該公司如何部署及使用 Microsoft Teams 進行共同作業，請參閱：</span><span class="sxs-lookup"><span data-stu-id="0304b-215">To peek inside Microsoft and learn how the company deployed and is using Microsoft Teams for collaboration, see:</span></span>
+After rolling out Teams to your entire organization, you must continue to employ your change management strategy to:
 
-- [<span data-ttu-id="0304b-216">部署 Microsoft Teams 可簡化共同作業並提升團隊合作</span><span class="sxs-lookup"><span data-stu-id="0304b-216">Deploying Microsoft Teams streamlines collaboration and improves teamwork</span></span>](https://www.microsoft.com/itshowcase/Article/Content/1013/Deploying-Microsoft-Teams-streamlines-collaboration-and-improves-teamwork)
-- [<span data-ttu-id="0304b-217">Microsoft Teams 可在 Microsoft 的現代化工作場所增進共同作業</span><span class="sxs-lookup"><span data-stu-id="0304b-217">Microsoft Teams increases collaboration in the modern workplace at Microsoft</span></span>](https://www.microsoft.com/itshowcase/Article/Content/1012/Microsoft-Teams-increases-collaboration-in-the-modern-workplace-at-Microsoft)
+- Have your leadership promote Teams as the teamwork and collaboration tool for the organization.
+- Encourage individuals to use it for business group, departmental, work, and project team communications and collaboration.
 
-## <a name="next-steps"></a><span data-ttu-id="0304b-218">後續步驟</span><span class="sxs-lookup"><span data-stu-id="0304b-218">Next steps</span></span>
+Here are some suggested activities:
 
-- [<span data-ttu-id="0304b-219">管理 Office 365 組織中的 Microsoft Teams 功能</span><span class="sxs-lookup"><span data-stu-id="0304b-219">Manage Microsoft Teams features in your Office 365 organization</span></span>](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
-- [<span data-ttu-id="0304b-220">Microsoft Teams 的管理訓練</span><span class="sxs-lookup"><span data-stu-id="0304b-220">Admin training for Microsoft Teams</span></span>](https://docs.microsoft.com/microsoftteams/itadmin-readiness)
+- See [Success factors for Office 365](https://aka.ms/successfactors) to learn about general best practices for cloud service adoption. 
+- See [Office 365 activity reports](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263) to understand Office 365 service usage across your organization. If you aren’t an Office 365 global admin for your organization, ask someone who is to grant your user account Reports Reader permissions so you can access activity reports.
+- Monitor your feedback venue (a public channel in a central team or a public Yammer group) for issues and feedback from individuals about their experiences with Teams. Address questions and issues as quickly as you can to prevent frustration and abandonment of Teams by individuals.
+- Identify and nurture your champions in each business group and highlight their accomplishments and best practices using Teams. Reflect their successes out to the organization to show project success and adoption. Endorsement by technical leaders within a business group can exert a powerful influence over leaders and peers.
+
+#### Result
+
+Your organization has adopted Teams as its collaboration and teamwork tool.
+
+
+--> 
