@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性原則和建議現代化貴組織中的安全性。
-ms.openlocfilehash: 6987f5fcb0504ad4b5bee91a417ff632faa11623
-ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
+ms.openlocfilehash: b00d18e9d14d369716f9c37fb9975f55d3c0eece
+ms.sourcegitcommit: 96eae24db7ce1c9d794da4598c1a392487df8437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37523618"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37554120"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>首席資訊安全性長 （首席資訊安全長） 研討會訓練
 
@@ -32,7 +32,7 @@ ms.locfileid: "37523618"
 
 - [模組 2： 安全性管理](ciso-workshop-module-2.md)： 了解如何增加可見度及控制與整合的指引，自動化的原則強制執行 >，監視您混合企業資產。
 
-- [模組 3： 模組 3-身分識別與零信任使用者存取](ciso-workshop-module-3.md)： 了解如何包含零信任概念到您的身分識別與使用者存取策略更妥善地保護您的周邊網路內外的公司資料。
+- [模組 3： 模組 3-身分識別與零信任使用者存取](ciso-workshop-module-3.md)： 了解如何換頁零信任與您的身分識別與使用者存取策略更妥善地保護您的周邊網路內外的公司資料
 
 - [模組 4a： 威脅保護策略、 第一部](ciso-workshop-module-4a.md)： 瀏覽有關威脅防護、 安全性演變、 策略和安全性隨身攜帶地圖服務金鑰檢討。
 
