@@ -6,7 +6,7 @@
 ### [資訊安全長 (CISO) 研討會訓練](./office-365-security/ciso-workshop.md)
 #### [單元 1 - Microsoft 網路安全簡報](./office-365-security/ciso-workshop-module-1.md)
 #### [單元 2 - 安全性管理](./office-365-security/ciso-workshop-module-2.md)
-#### [單元 3 - 身分識別和存取管理](./office-365-security/ciso-workshop-module-3.md)
+#### [單元 3 - 身分識別和零信任使用者存取](./office-365-security/ciso-workshop-module-3.md)
 #### [單元 4a - 威脅防護策略，第一部分](./office-365-security/ciso-workshop-module-4a.md)
 #### [單元 4b - 威脅防護策略，第二部分](./office-365-security/ciso-workshop-module-4b.md)
 #### [單元 5 - 資訊保護](./office-365-security/ciso-workshop-module-5.md)
@@ -99,6 +99,7 @@
 #### [Office 365 的反詐騙保護](./office-365-security/anti-spoofing-protection.md)
 ##### [深入了解詐騙情報](./office-365-security/learn-about-spoof-intelligence.md)
 ##### [欺騙情報探索的演練](./office-365-security/walkthrough-spoof-intelligence-insight.md)
+##### [在 Outlook.com 和 Outlook 網頁版中找出可疑的郵件](./office-365-security/unverified-sender-feature.md)
 
 #### [EOP 是什麼？](./office-365-security/what-is-eop.md)
 ##### [支援透過 IPv6 的匿名內送電子郵件訊息](./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md)
@@ -160,7 +161,7 @@
 
 #### [威脅總管 (及即時偵測)](./office-365-security/threat-explorer.md)
 ##### [威脅總管檢視](./office-365-security/threat-explorer-views.md)
-##### [在 Outlook.com 和 Outlook 網頁版中找出可疑的郵件](./office-365-security/unverified-sender-feature.md)
+
 
 #### [為了提高安全性的整合]()
 ##### [整合 Office 365 ATP 和 Microsoft Defender ATP](./office-365-security/integrate-office-365-ti-with-wdatp.md)

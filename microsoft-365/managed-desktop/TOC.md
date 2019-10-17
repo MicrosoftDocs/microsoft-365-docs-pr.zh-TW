@@ -15,6 +15,7 @@
 ### [支援](service-description/support.md)
 ### [運作和監視](service-description/operations-and-monitoring.md)
 ### [應用程式需求](service-description/mmd-app-requirements.md)
+### [自訂服務](service-description/customizing.md)
 ## [準備註冊 Microsoft 受管理的電腦](get-ready/index.md)
 ### [Microsoft 受管理電腦的先決條件](get-ready/prerequisites.md)
 ### [準備網路](get-ready/network.md)
