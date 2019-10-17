@@ -425,6 +425,165 @@
 ## [使用 AD RMS 的 Exchange Online 郵件加密](information-rights-management-in-exchange-online.md)
 ### [將 IRM 設定為使用內部部署 AD RMS 伺服器](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 
+# 合規性方案
+## [Microsoft 合規性方案](offering-home.md)
+
+## 全域
+### [CIS 基準](offering-cis-benchmark.md)
+### [CSA-STAR 證明](offering-csa-star-attestation.md)
+### [CSA-STAR 認證](offering-csa-star-certification.md)
+### [CSA STAR 自我評估](offering-csa-star-self-assessment.md)
+### [ISO 20000-1:2011](offering-iso-20000-1-2011.md)
+### [ISO 22301](offering-iso-22301.md)
+### [ISO 27001](offering-iso-27001.md)
+### [ISO 27017](offering-iso-27017.md)
+### [ISO 27018](offering-iso-27018.md)
+### [ISO 27701](offering-iso-27701.md)
+### [ISO-9001](offering-iso-9001.md)
+### [SOC](offering-soc.md)
+### [WCAG 2.1](offering-wcag-2-1.md)
+
+## 政府機關
+### [CJIS](offering-cjis.md)
+### [CNSSI 1253](offering-cnssi-1253.md)
+### [DFARS](offering-dfars.md)
+### [DoD DISA L2、L4、L5](offering-dod-disa-l2-l4-l5.md)
+### [DoE 10 CFR Part 810](offering-doe-10-cfr-part-810.md)
+### [EAR (美國出口管制條例)](offering-ear.md)
+### [FedRAMP](offering-fedramp.md)
+### [FIPS 140-2](offering-fips-140-2.md)
+### [IRS 1075](offering-irs-1075.md)
+### [ITAR](offering-itar.md)
+### [NIST 800-171](offering-nist-sp-800-171.md)
+### [NIST CSF](offering-nist-csf.md)
+### [Section 508 VPATS](offering-section-508-vpats.md)
+
+## 產業
+### 教育
+#### [FERPA](offering-ferpa.md)
+
+### 能源業
+#### [NERC](offering-nerc-cip.md)
+
+### 金融業
+#### [23 NYCRR Part 500](offering-23-nycrr-part-500.md)
+#### [AFM + DNB (荷蘭)](offering-afm-dnb-netherlands.md)
+#### [APRA (澳洲)](offering-apra-australia.md)
+#### [AMF 和 ACPR (法國)](offering-amf-acpr-france.md)
+#### [EBA (歐盟)](offering-eba-eu.md)
+#### [FCA (英國)](offering-fca-uk.md)
+#### [FFIEC (美國)](offering-ffiec-us.md)
+#### [FINMA (瑞士)](offering-finma-switzerland.md)
+#### [FINRA 4511](offering-finra-4511.md)
+#### [FISC (日本)](offering-fisc-japan.md)
+#### [FSA (丹麥)](offering-fsa-denmark.md)
+#### [GLBA](offering-glba.md)
+#### [KNF (波蘭)](offering-knf-poland.md)
+#### [MAS + ABS (新加坡)](offering-mas-abs-singapore.md)
+#### [NBB + FSMA (比利時)](offering-nbb-fsma-belgium.md)
+#### [OSFI (加拿大)](offering-osfi-canada.md)
+#### [PCI DSS](offering-pci-dss.md)
+#### [RBI + IRDAI (印度)](offering-rbi-irdai-india.md)
+#### [SEC 17a-4](offering-sec-17a-4.md)
+#### [SOC](offering-soc.md)
+#### [SOX](offering-sox.md)
+#### [TruSight](offering-trusight.md)
+
+### 醫療保健
+#### [HDS (法國)](offering-hds-france.md)
+#### [HIPAA/HITECH](offering-hipaa-hitech.md)
+#### [HITRUST](offering-hitrust.md)
+#### [MARS-E](offering-mars-e.md)
+#### [NEN-7510 (荷蘭)](offering-nen-7510-netherlands.md)
+#### [NHS IG Toolkit (英國)](offering-nhs-ig-toolkit-uk.md)
+
+### 製造業
+#### [FDA CFR Title 21 Part 11](offering-fda-cfr-title-21-part-11.md)
+#### [GxP](offering-gxp.md)
+#### [TISAX (德國)](offering-tisax-germany.md)
+
+### 媒體業
+#### [CDSA](offering-cdsa.md)
+#### [DPP (英國)](offering-dpp-uk.md)
+#### [FACT (英國)](offering-fact-uk.md)
+#### [MPAA](offering-mpaa.md)
+
+### 零售業
+#### [23 NYCRR Part 500](offering-23-nycrr-part-500.md)
+#### [AFM + DNB (荷蘭)](offering-afm-dnb-netherlands.md)
+#### [AMF 和 ACPR (法國)](offering-amf-acpr-france.md)
+#### [CDSA](offering-cdsa.md)
+#### [CIS 基準](offering-cis-benchmark.md)
+#### [CSA-STAR 證明](offering-csa-star-attestation.md)
+#### [DoE 10 CFR Part 810](offering-doe-10-cfr-part-810.md)
+#### [DPP (英國)](offering-dpp-uk.md)
+#### [EAR (美國出口管制條例)](offering-ear.md)
+#### [ENISA IAF (EU)](https://aka.ms/ENISA)
+#### [EU Model Clauses](offering-eu-model-clauses.md)
+#### [EBA (歐盟)](offering-eba-eu.md)
+#### [歐盟–美國隱私保護盾](offering-eu-us-privacy-shield.md)
+#### [FACT (英國)](offering-fact-uk.md)
+#### [FCA (英國)](offering-fca-uk.md)
+#### [FFIEC (美國)](offering-ffiec-us.md)
+#### [FINMA (瑞士)](offering-finma-switzerland.md)
+#### [GDPR (歐盟)](offering-gdpr-eu.md)
+#### [GLBA](offering-glba.md)
+#### [HITRUST](offering-hitrust.md)
+#### [IRS 1075](offering-irs-1075.md)
+#### [ISO 27018](offering-iso-27018.md)
+#### [ISO-9001](offering-iso-9001.md)
+#### [ITAR](offering-itar.md)
+#### [KNF (波蘭)](offering-knf-poland.md)
+#### [MARS-E](offering-mars-e.md)
+#### [MPAA](offering-mpaa.md)
+#### [NBB + FSMA (比利時)](offering-nbb-fsma-belgium.md)
+#### [NHS IG Toolkit (英國)](offering-nhs-ig-toolkit-uk.md)
+#### [NIST CSF](offering-nist-csf.md)
+#### [PCI DSS](offering-pci-dss.md)
+#### [Section 508 VPATS](offering-section-508-vpats.md)
+#### [共用評估](offering-shared-assessments.md)
+#### [SOC](offering-soc.md)
+#### [LOPD (西班牙)](offering-lopd-spain.md)
+#### [Cyber Essentials Plus (英國)](offering-cyber-essentials-plus-uk.md)
+#### [G-Cloud (英國)](offering-g-cloud-uk.md)
+
+## 地區
+### 亞洲
+#### [CS Mark (Gold) (日本))](offering-cs-mark-gold-japan.md)
+#### [DJCP (中國)](https://www.trustcenter.cn/compliance/default.html#DJCP)
+#### [GB 18030 (中國)](https://www.trustcenter.cn/compliance/default.html#GB18030)
+#### [ISMS (韓國)](offering-ISMS-korea.md)
+#### [MeitY (印度)](offering-meity-india.md)
+#### [MTCS (新加坡)](offering-mtcs-singapore.md)
+#### [My Number (日本)](offering-my-number-act-japan.md)
+#### [TRUCS (中國)](https://aka.ms/TRUCS-Compliance)
+
+### 澳洲/太平洋
+#### [CCSL/IRAP (澳洲)](offering-CCSL-IRAP-Australia.md)
+#### [NZ CC Framework (紐西蘭)](offering-nz-cc-framework-nz.md)
+
+### 歐洲
+#### [BIR 2012 (荷蘭)](offering-bir-2012-netherlands.md)
+#### [C5 (德國)](offering-c5-germany.md)
+#### [Cyber Essentials Plus (英國)](offering-cyber-essentials-plus-uk.md)
+#### [EN 301 549 (歐盟)](offering-en-301-549-eu.md)
+#### [ENS (西班牙)](offering-ens-spain.md)
+#### [ENISA IAF (EU)](https://aka.ms/ENISA)
+#### [EU Model Clauses](offering-eu-model-clauses.md)
+#### [歐盟–美國隱私保護盾](offering-eu-us-privacy-shield.md)
+#### [GDPR (歐盟)](offering-gdpr-eu.md)
+#### [G-Cloud (英國)](offering-g-cloud-uk.md)
+#### [IDW PS 951 (德國)]()
+#### [IT Grundschutz Workbook (德國)](offering-it-grundschutz-workbook-germany.md)
+#### [LOPD (西班牙)](offering-lopd-spain.md)
+#### [PASF (英國)](offering-pasf-uk.md)
+
+### 北美
+#### [加拿大隱私權法](offering-canadian-privacy-laws.md)
+
+### 南美洲
+#### [PDPA (阿根廷)](offering-pdpa-argentina.md)
+
 # [Office 365 企業版](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 商務版](https://docs.microsoft.com/office365/admin/admin-home)
 # [Microsoft 365 安全性](https://docs.microsoft.com/microsoft-365/security/)
