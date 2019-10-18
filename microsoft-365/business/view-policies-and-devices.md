@@ -10,18 +10,22 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: 檢視裝置原則，且由 Microsoft 365 商務版，以全域系統管理員認證登入的動作。
-ms.openlocfilehash: 26cb0d4ebe819b6131aaa4d2e18ef3b2ad588a7c
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: c961630f0698ed864bfb94b4672f92825089ea4c
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287568"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575441"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>檢視及管理原則和裝置
 
@@ -29,7 +33,7 @@ ms.locfileid: "37287568"
 
 ## <a name="view-and-edit-device-policies"></a>檢視及編輯裝置原則
 
-1.  移至系統管理中心， <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。
+1.  移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。
 2. 在左側導覽中，選擇 [**裝置** \> **原則**。
 
     您可以在這個頁面上建立、編輯、變更目標群組或刪除原則。

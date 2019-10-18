@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: c2527b18c422d53060398f90b7470db8b4959afa
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 51db9c88710605c6203023b343edc4359556d57d
+ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982946"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37577769"
 ---
 # <a name="register-existing-devices-yourself"></a>自行註冊現有裝置
 
@@ -176,7 +176,7 @@ Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistration
 
 如果您手動 PowerShell 或快閃磁碟機方法所收集硬體雜湊資料，您現在需要在結合成單一檔案，以完成註冊的 CSV 檔案中有資料。 以下是範例 PowerShell 指令碼，以將此位址設簡單：
 
-`Get-ChildItem -Filter *.csv |Select-Object -expandproperty FullName | Import-Csv |ConvertTo-Csv -NoTypeInformation | %{$_.Replace('"','')}| Out-File -Append .\joinedcsv\aggregatedDevices.csv`
+`Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 合併到一個 CSV 檔案的雜湊資料，您現在可以繼續[註冊裝置](#register-devices)。
 

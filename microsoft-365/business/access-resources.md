@@ -8,18 +8,22 @@ ms.topic: article
 ms.service: o365-administration
 ms.collection: M365-subscription-management
 localization_priority: Normal
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 了解如何取得內部資源的存取權，例如線條的商務應用程式、 檔案共用及從 Azure Active Directory 的印表機加入 Windows 10 裝置。
-ms.openlocfilehash: 26ba0ffb64ddce32369002120657456e47ac0c7f
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 92e8ccb99dfece7687c25db84b81fc7bc7158d71
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287348"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37574671"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>存取內部部署 Microsoft 365 商務版中的 Azure AD 加入裝置的資源
 

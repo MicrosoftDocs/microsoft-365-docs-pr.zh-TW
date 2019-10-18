@@ -10,19 +10,23 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 localization_priority: Normal
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: 了解如何使用 Windows AutoPilot 為貴公司的新 Windows 10 裝置上設定。
-ms.openlocfilehash: 563c3bbbc9f69996778417b35cfaa64d089770ef
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: d028ea3e902965d55c445dc3b3a02aa315201b25
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287588"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37574781"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用逐步指南新增 Autopilot 裝置和設定檔
 
@@ -42,7 +46,7 @@ ms.locfileid: "37287588"
 
 如果您尚未建立裝置群組或設定檔，最佳的開始使用方式是使用逐步指南，但您也可以[新增裝置](create-and-edit-autopilot-devices.md)及[指派設定檔](create-and-edit-autopilot-profiles.md)給裝置，而不使用指南。 
   
-1. 移至系統管理中心， <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。
+1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。
 
 2. 在左側導覽中選擇 [**裝置** \> **AutoPilot**。
 

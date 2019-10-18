@@ -10,18 +10,22 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-security-compliance
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解 Microsoft 365 商務版會隨附的安全性功能。
-ms.openlocfilehash: c0c37b09fd0bb0218864b6bc97aa127feae1ff16
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: 668b83e363a40e61391cbe56b0dbfab88cae7c43
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453969"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575691"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 商務版安全性與合規性功能
 
@@ -98,7 +102,7 @@ Microsoft 365 商務版中的進階的功能可協助您保護網路威脅貴公
     
     Exchange Online Archiving 授權可讓要輕鬆地使用持續性資料備份封存的郵件。 它會儲存所有使用者的電子郵件，包括已刪除的項目，以防稍後需要探索或還原。 此外，您可以使用不同的保留原則來保留電子郵件資料的訴訟保留，eDiscovery，或符合規範需求。
     
-- **[敏感度標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
+- **[敏感性標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
    Microsoft 365 商務版包含之所有功能的[Azure 資訊保護方案 1](https://go.microsoft.com/fwlink/p/?linkid=871407)。 您可以使用此計劃建立**敏感度標籤**，可讓您使用 「 不要轉寄 」 和 「 不要複製。 」 等控制項來控制存取電子郵件和文件中的敏感資訊 您也可以分類為 「 機密 」 的敏感資訊，並指定方式可以外部共用高機密性的資訊和公司內。 企業級加密很容易套用至電子郵件] 和 [保持私人資訊的文件。 您也可以安裝 Azure 資訊保護用戶端增益集的 Office 應用程式。 如需詳細資訊，請參閱[Azure 資訊保護整合標示用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 敏感度標籤的安裝**AzInfoProtection_UL.exe**。
 
