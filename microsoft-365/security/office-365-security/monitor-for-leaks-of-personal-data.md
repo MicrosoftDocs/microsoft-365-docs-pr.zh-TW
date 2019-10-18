@@ -87,9 +87,9 @@ Office 365 稽核記錄包含的事件來自 Exchange Online、SharePoint Online
 
 -   [開啟或關閉 Office 365 稽核記錄搜尋](https://support.office.com/zh-TW/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   [搜尋稽核記錄](https://support.office.com/zh-TW/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+-   [搜尋稽核記錄](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
--   [Search-UnifiedAuditLog](https://technet.microsoft.com/zh-TW//library/mt238501(v=exchg.160).aspx) (Cmdlet) 
+-   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (Cmdlet) 
 
 -   [Office 365 稽核記錄中的詳細內容](https://support.office.com/zh-TW/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 

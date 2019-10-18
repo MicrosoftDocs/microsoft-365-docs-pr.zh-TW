@@ -54,7 +54,7 @@ ms.locfileid: "37077601"
     
 2. 按一下您的全域系統管理員帳戶，然後按一下 [產品授權]**** 的 [編輯]****。
     
-3. 在 [產品授權]**** 窗格中，將 **Enterprise Mobility + Security E5** 的產品授權設為 [開啟]******，按一下 [儲存]****，然後按兩次 [關閉]****。
+3. 在 [產品授權]**** 窗格中，將 **Enterprise Mobility + Security E5** 的產品授權設為 [開啟]**，按一下 [儲存]，然後按兩次 [關閉]。
     
 ## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups"></a>階段 2：建立和設定 Azure Active Directory (AD) 群組
 
