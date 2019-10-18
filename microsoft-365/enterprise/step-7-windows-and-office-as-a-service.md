@@ -71,7 +71,7 @@ Windows 10 與 Office 365 專業增強版都導入了新的服務選項、支援
 
 ### <a name="expanded-validation-of-updates"></a>擴充更新驗證
 
-另一個優點是，在針對廣泛部署推出更新之前，我們會先透過 [Office](https://products.office.com/zh-TW/office-insider?tab=Windows-Desktop) 和 [Windows](https://insider.windows.com/zh-TW/) 的測試人員計畫發行組建，這可讓我們收集診斷資料和意見反應之後，再廣泛發行更新。 測試人員計畫現已對測試人員開放，因此您可事先了解更新。 在更新發行時，我們會從數百萬個設定之中收到診斷資料，因此當我們實際推出更新時，品質自然會更好
+另一個優點是，在針對廣泛部署推出更新之前，我們會先透過 [Office](https://products.office.com/en-us/office-insider?tab=Windows-Desktop) 和 [Windows](https://insider.windows.com/zh-TW/) 的測試人員計畫發行組建，這可讓我們收集診斷資料和意見反應之後，再廣泛發行更新。 測試人員計畫現已對測試人員開放，因此您可事先了解更新。 在更新發行時，我們會從數百萬個設定之中收到診斷資料，因此當我們實際推出更新時，品質自然會更好
 
 還有一件事，由於 Office 365 專業增強版測試人員組建會反映每月通道更新，如果您使用 Office 的半年通道來提供 Windows 每年兩次的功能更新，您也可以使用半年通道目標版本提早驗證這些組建。
 
