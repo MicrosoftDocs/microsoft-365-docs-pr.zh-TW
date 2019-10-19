@@ -3,7 +3,7 @@ title: 設定 EOP 和 Office 365 ATP 安全、 最佳作法、 設定、 寄件�
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) 和進階威脅防護 (ATP) 的安全性設定的最佳做法是什麼？ 什麼被建議？ 應積極地使用什麼？ 以及哪些額外讓如果您也可以使用進階威脅防護 (ATP)？
-ms.openlocfilehash: fb6a39756c54e46f5ac8208c9c92af30bc144a57
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: b40b4189ed996e1b2f671b77602630f2a98966a5
+ms.sourcegitcommit: ffdf576fbc62c4c316f6d8061d2bd973e7df9f56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37387148"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "37598297"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp-security"></a>設定 EOP 和 Office 365 ATP 安全的最佳作法
 
@@ -32,14 +32,14 @@ Exchange Online Protection (EOP) 是安全性 E3 Office 365 訂閱的核心。 �
 
 SPF，DKIM、 DMARC 是縮略字寄件者原則架構、 DomainKeys Identified Mail 和網域型郵件驗證、 報表及 Conformance （相當說來話長），而且是電子郵件驗證和驗證的基礎。
 
-這些方法處理從 Office 365 的外寄電子郵件，並從您網域的電子郵件的說明目的系統信任時才有效。 它們只最佳作法我們將涵蓋牽涉到*外部*Office 365 的 DNS 中所做的組態。 如需特定組態步驟，請參閱[電子郵件驗證與驗證](https://docs.microsoft.com/en-us/office365/securitycompliance/how-office-365-uses-spf-to-prevent-spoofing)] 區段中的安全性與合規性的資料表的內容。
+這些方法處理從 Office 365 的外寄電子郵件，並從您網域的電子郵件的說明目的系統信任時才有效。 它們只最佳作法我們將涵蓋牽涉到*外部*Office 365 的 DNS 中所做的組態。 如需特定組態步驟，請參閱[電子郵件驗證與驗證](https://docs.microsoft.com/office365/securitycompliance/how-office-365-uses-spf-to-prevent-spoofing)] 區段中的安全性與合規性的資料表的內容。
 
 
 |安全性功能名稱  |建議使用 |積極  |註解  |
 |---------|---------|---------|---------|
-|[建立 SPF 記錄](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | Y        |    Y     |   -      |
-|[設定 DKIM 簽章的網域](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  Y       |    Y     |  -       |
-|[拒絕] 或 [隔離] 動作與實作 DMARC](https://docs.microsoft.com/en-us/office365/securitycompliance/use-dmarc-to-validate-email)     |   Y      |     Y    |   使用巨集指令 = 無建議，以及動作的加強 = 拒絕。     |
+|[建立 SPF 記錄](https://docs.microsoft.com/office365/securitycompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)    | 是        |    是     |   -      |
+|[設定 DKIM 簽章的網域](https://docs.microsoft.com/office365/securitycompliance/use-dkim-to-validate-outbound-email)     |  是       |    是     |  -       |
+|[拒絕] 或 [隔離] 動作與實作 DMARC](https://docs.microsoft.com/office365/securitycompliance/use-dmarc-to-validate-email)     |   是      |     是    |   使用巨集指令 = 無建議，以及動作的加強 = 拒絕。     |
 
 > [!IMPORTANT]
 > 若要使用的安全性角色和權限，請務必您有 Office 365 或安全性與合規性中心的正確的角色。 如果您是在 Azure Active Directory*安全性系統管理員*、 Office 365 中的*全域系統管理員*或 Exchange Online/Exchange Online Powershell 中的*Exchange Online 組織管理員*，您正在準備就緒。
@@ -56,15 +56,15 @@ SPF，DKIM、 DMARC 是縮略字寄件者原則架構、 DomainKeys Identified M
 
 |安全性功能名稱  |建議使用 |積極  |註解  |
 |---------|---------|---------|---------|
-|隔離保留期限    |   Y      |     Y    |   30 天   |
-|使用者垃圾郵件通知頻率   |   Y      |     Y    |   3 天   |
-|應啟用零小時 Autopurge   |   Y      |     Y    |   True  |
+|隔離保留期限    |   是      |     是    |   30 天   |
+|使用者垃圾郵件通知頻率   |   是      |     是    |   3 天   |
+|應啟用零小時 Autopurge   |   是      |     是    |   True  |
 |垃圾郵件偵測動作應該傳送給 | JMF | 隔離 | - |
 |高信賴度垃圾郵件偵測動作應該傳送給 | 隔離 | 隔離| - |
 |大量偵測動作應該設定為 | JMF | 隔離 | - |
 |將大量電子郵件閾值設定為 | 6 | 4 | - |
 |應啟用安全提示| True | True | - |
-|啟用使用者垃圾郵件通知| True | False | - |
+|啟用使用者垃圾郵件通知| 是 | False | - |
 |允許寄件者 | 無 | 無 | - |
 |允許寄件者網域 | 無 | 無 | - |
 |封鎖的寄件者 | 無 | 無 | - |
@@ -123,11 +123,11 @@ SPF，DKIM、 DMARC 是縮略字寄件者原則架構、 DomainKeys Identified M
 |TargetedDomainProtectionAction |NoAction |封鎖 | - |
 |AuthenticationFailAction |MoveToJmf |隔離 | - |
 |AntiSpoofEnforcementType |高 |高 | - |
-|EnableAuthenticationSafetyTip |False |True | - |
+|EnableAuthenticationSafetyTip |False |是 | - |
 |EnableAntiSpoofEnforcement |True |True | - |
 |EnableUnauthenticatedSender |True |True | - |
-|EnableAuthenticationSoftPassSafetyTip |False |True | - |
-|TreatSoftPassAsAuthenticated |True |False | - |
+|EnableAuthenticationSoftPassSafetyTip |False |是 | - |
+|TreatSoftPassAsAuthenticated |是 |False | - |
 |EnableSuspiciousSafetyTip |True |True | - |
 
 ## <a name="office-365-advanced-threat-protection-atp-security"></a>Office 365 進階威脅防護 (ATP) 的安全性
@@ -135,7 +135,7 @@ SPF，DKIM、 DMARC 是縮略字寄件者原則架構、 DomainKeys Identified M
 更早版本，我可以說過它已鼓勵新增 Office 365 ATP 計劃 1 或將更多完全實現 ATP 計劃 2 的 E3 訂閱。 進階的反網路釣魚原因是其中一個原因。 啟用根據預設，反網路釣魚***必須***使用操作原則設定。 忘記要設定防網路釣魚原則會公開使用者風險，請務必步驟 2 之後，新增 ATP 訂用帳戶。
 
 > [!IMPORTANT]
->  如果您有 E5 訂閱，您目前已[ATP 計劃 2](https://products.office.com/en-us/exchange/advance-threat-protection)。 當您想要了解[what's new in ATP](https://review.docs.microsoft.com/en-us/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?branch=oatp-newstuff)，請檢查此連結。
+>  如果您有 E5 訂閱，您目前已[ATP 計劃 2](https://products.office.com/exchange/advance-threat-protection)。 當您想要了解[what's new in ATP](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp?branch=oatp-newstuff)，請檢查此連結。
 
 ### <a name="advanced-anti-phishing"></a>進階的反網路釣魚
 
