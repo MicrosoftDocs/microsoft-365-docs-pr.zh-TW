@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: 0b98e48b128eeaea0e0dd5cb9613ece95e991861
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 7253ea698613a38988bd7a6942a4908e9c797e2a
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982744"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37372764"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>階段 3：Windows 10 企業版
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
+![階段 3：Windows 10 企業版](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
 
 Microsoft 365 企業版包含 Windows 10 企業版，可讓您進行更多作業及保持安全的工具。 Windows 10 企業版：
 
@@ -42,13 +42,13 @@ Microsoft 365 企業版包含 Windows 10 企業版，可讓您進行更多作業
 | [使用 System Center Configuration Manager 以進行就地升級](windows10-deploy-inplaceupgrade.md) | 如果您要升級 Windows 7 或<a href="https://aka.ms/introtosccm" target="_blank">System Center Configuration Manager （最新分支）</a>目前管理 Windows 10 企業版的<a href="https://aka.ms/windows-10-release-information" target="_blank">目前版本</a>的 Windows 8.1 電腦與您的電腦，請選取這個選項。 |
 | [使用 Windows Autopilot](windows10-deploy-autopilot.md) | 如果您正在設定新有 Windows 10 企業版，版本 1703年或更新版本預先安裝的 Windows 電腦，請選取這個選項。 使用者將會啟動安裝程式使用您所需的設定，藉由輸入他們的公司或學校帳戶認證。 |
 
-如果這些部署案例不符合您組織的需求，您可以了解其他案例，並了解的功能和每個在[Windows 10 部署案例](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)中的限制。 您也可以靠您自己的<a href="https://aka.ms/planforwin10deployment" target="_blank">Windows 10 部署計劃</a>。
+如果這些部署案例不符合您組織的需求，您可以了解其他案例，並了解的功能和每個在[Windows 10 部署案例](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)中的限制。 您也可以自行<a href="https://aka.ms/planforwin10deployment" target="_blank">規劃 Windows 10 部署</a>。
 
 您可以深入了解 Windows 10 使用以下文章：
 
 - [Microsoft 365 Enterprise 產品頁面](https://www.microsoft.com/microsoft-365/enterprise)
 - [Windows 10](https://docs.microsoft.com/windows/windows-10)
-- [部署並更新 Windows 10](https://docs.microsoft.com/windows/deployment/)
+- [部署及更新 Windows 10](https://docs.microsoft.com/windows/deployment/)
 
 
 ## <a name="additional-services-and-features"></a>其他服務與功能
@@ -78,10 +78,10 @@ Windows 10 提供功能，協助防範威脅，協助保護您的裝置，並協
 
 請參閱如何 Contoso Corporation、 虛構但有代表性的跨國企業、[部署 Windows 10 企業版](contoso-win10.md)。
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso 公司](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>下一步
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [準備您的組織，Windows 10 企業版](windows10-prepare-your-org.md) |
+|![步驟 1](./media/stepnumbers/Step1.png)| [準備您的組織，Windows 10 企業版](windows10-prepare-your-org.md) |

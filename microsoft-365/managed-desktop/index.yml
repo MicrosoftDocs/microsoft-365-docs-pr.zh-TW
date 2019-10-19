@@ -5,16 +5,15 @@ metadata:
   title: Microsoft 受管理電腦文件
   description: null
   keywords: 裝置、 應用程式管理
-  author: trudyha
-  ms.author: trudyha
-  ms.date: 11/1/2018
+  author: jaimeo
+  ms.author: jaimeo
   ms.topic: landing-page
   ms.devlang: na
   ms.service: m365-md
 sections:
   - items:
       - type: markdown
-        text: 最簡單的愉悅感使用者並釋出 IT。
+        text: Microsoft 受管理電腦聚集所有同等級 Microsoft 365 企業版、 Microsoft，以及安全性監視，雲端式裝置管理讓您以釋出您的 IT 小組，以專注在核心業務需求。
   - items:
       - type: list
         style: cards
@@ -22,30 +21,30 @@ sections:
         columns: 2
         items:
           - href: intro/index.md
-            html: <p>了解 Microsoft 受管理電腦的功能及其運作方式。</p>
+            html: <p>Microsoft 受管理電腦的決策者-簡介它是什麼、 其運作方式，以及它可讓您執行的動作</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_overview.svg'
             title: 什麼是 Microsoft 受管理的電腦？
           - href: service-description/index.md
-            html: <p>了解 Microsoft 受管理電腦中包含的內容。</p>
+            html: <p>Microsoft 受管理電腦的所有部分的詳細的描述</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_get-started.svg'
             title: 服務說明
           - href: get-ready/index.md
-            html: <p>了解如何準備註冊 Microsoft 受管理電腦中。</p>
+            html: <p>若要取得您的環境和組織的可使用服務的所有步驟</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_support.svg'
             title: 準備好
           - href: get-started/index.md
-            html: <p>了解如何訂購裝置，並新增連絡人。</p>
+            html: <p>取得 Microsoft 受管理電腦，包括設定裝置和部署應用程式力貴組織</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_whats-new.svg'
-            title: 開始使用
+            title: 入門
           - href: working-with-managed-desktop/index.md
-            html: <p>了解應用程式管理。</p>
+            html: <p>日常作業與服務的所有相關資訊</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_portal.svg'
-            title: 使用 Microsoft 受管理電腦
+            title: 使用 Microsoft 受管理的電腦
   - title: 新文章與部落格文章
     items:
       - type: paragraph

@@ -1,24 +1,25 @@
 ---
-title: 準備註冊 Microsoft 受管理電腦中
-description: ''
+title: 準備註冊 Microsoft 受管理的電腦
+description: 若要準備註冊您的組織應採取的步驟
 keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 06/06/2018
-ms.openlocfilehash: 68cf55e5528affef352f144384888c0cb01cfc88
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 0bfd6e61a08d8db2e6226a004006be9750b94a10
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390540"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37595589"
 ---
-# <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>準備註冊 Microsoft 受管理電腦中
+# <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>準備註冊 Microsoft 受管理的電腦
 
-深入了解 Microsoft 受管理電腦的必要條件。 
+這些主題將說明您需要準備註冊，包括檢查您的環境是否符合索引鍵的必要條件、 設定網路、 設定憑證]，並準備您的應用程式以納入您組織中採取的步驟服務。
 
-## <a name="in-this-section"></a>本節內容
+- [Microsoft 受管理電腦的先決條件](prerequisites.md)
+- [Microsoft 受管理電腦的網路組態](network.md)
+- [為 Microsoft 受管理的電腦準備備內部部署資源存取權](network.md)
+- [為 Microsoft 受管理的電腦準備對應磁碟機](mapped-drives.md)
+- [為 Microsoft 受管理的電腦準備認證和網路設定檔](certs-wifi-lan.md)
+- [Microsoft 受管理電腦中的應用程式](apps.md)
 
-- [Microsoft 的必要條件受管理的電腦](prerequisites.md)
-- [網路設定](network.md)
-- [準備 Microsoft 受管理電腦中的應用程式](apps.md)

@@ -1,23 +1,21 @@
 ---
 title: 開始使用 Microsoft 受管理的電腦
 description: ''
-keywords: Microsoft 受管理的桌面、Microsoft 365、服務、檔
+keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: a79b71a836444ff745e2e9c64fce023db81c1d17
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 7d007329fbb53da2604e688623621eec86f93f5e
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390500"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37595579"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>開始使用 Microsoft 受管理的電腦
 
-使用 Microsoft 受管理的電腦時, 管理您的桌面裝置會轉換為企業雲端基礎結構。 
+一旦您已準備好註冊服務中，此區段會包含要遵循實際加入服務、 取得和設定裝置、 準備您的使用者，以及部署應用程式的步驟。
 
-## <a name="in-this-section"></a>本節內容
-
-- [新增系統管理員連絡人](add-admin-contacts.md)
-- [順序裝置](devices.md)
+- [Microsoft 受管理的桌上型電腦管理入口網站中新增系統管理連絡人](add-admin-contacts.md)
+- [Microsoft 受管理的電腦裝置上設定](set-up-devices.md)
+- [將應用程式部署至 Microsoft 受管理的電腦裝置](deploy-apps.md)
