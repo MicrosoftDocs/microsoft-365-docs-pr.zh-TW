@@ -13,12 +13,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: 了解如何設定以網域為基礎的訊息驗證、報告和符合性 (DMARC) 來驗證從您的 Office 365 組織傳送的訊息。
-ms.openlocfilehash: 24196139d46df8de7813e827e57d04c4bf9146b0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 677b46f970edab98e950c9db49f264afc8d5dd73
+ms.sourcegitcommit: aa878adee65a1cdf87d4cabda41ab35673957f40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077985"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37590487"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>在 Office 365 中使用 DMARC 來驗證電子郵件
 
@@ -209,6 +209,13 @@ Office 365 如此設定，是因為某些合法的電子郵件可能無法通過
 - 使用者使用電子郵件用戶端來個別新增安全寄件者
     
 - 系統管理員為所有使用者建立 Exchange 郵件流程規則 (也稱為傳輸規則)，以允許這些特定寄件者的郵件。 
+
+## <a name="how-office-365-utilizes-authenticated-received-chain-arc"></a>Office 365 如何使用已驗證接收鏈結 (ARC)
+<a name="ARC"> </a>
+
+所有 Office 365 中託管的信箱現在都將取得 ARC 帶來的改良式郵件傳送，以及增強式反詐騙防護的權益。 當電子郵件從原始伺服器路由傳送到收件者信箱時，ARC 會保留來自所有參與中繼或躍點的電子郵件驗證結果。 在 ARC 之前，透過電子郵件路由傳送中的中繼所執行的修改，(例如轉寄規則或自動簽署)，可能在郵件到達收件者信箱時導致 DMARC 失敗。 使用 ARC，Office 365 可利用其驗證結果的加密保留確認電子郵件寄件者。 
+
+Microsoft 身為 ARC密封者，因此 Office 365 目前是使用 ARC 來確認驗證結果，但計畫在未來新增協力廠商 ARC 密封者的支援。 
     
 ## <a name="troubleshooting-your-dmarc-implementation"></a>對 DMARC 實作進行疑難排解
 <a name="dmarctroubleshoot"> </a>
