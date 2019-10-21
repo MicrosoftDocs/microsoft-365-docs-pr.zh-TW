@@ -17,7 +17,7 @@
 ## 客戶金鑰
 ### [使用客戶金鑰控制 Office 365 中的資料](controlling-your-data-using-customer-key.md)
 ### [Office 365 中使用客戶金鑰的服務加密常見問題集](service-encryption-with-customer-key-faq.md)
-## [監督]()
+## [監督通訊內容]()
 ### [了解監督原則](supervision-policies.md)
 ### [為您的組織設定監督原則](configure-supervision-policies.md)
 ## [資訊屏障](information-barriers.md)
@@ -124,6 +124,7 @@
 ### [觀看 Microsoft 資料控管小組的影片](https://go.microsoft.com/fwlink/?linkid=867039)
 ## 記錄管理
 ### [記錄管理](records-management.md)
+### [記錄](records.md)
 ### 檔案計畫
 #### [檔案計劃管理員](file-plan-manager.md)
 #### [保留標籤](labels.md)
@@ -349,7 +350,7 @@
 ## [管理信箱稽核](enable-mailbox-auditing.md)
 ## [稽核記錄中的詳細內容](detailed-properties-in-the-office-365-audit-log.md)
 ## [匯出、 設定及檢視稽核記錄檔的記錄](export-view-audit-log-records.md)
-## [使用稽核記錄檔對常見案例進行疑難排解](auditing-troubleshooting-scenarios.md)
+## [使用稽核記錄調查常見問題](auditing-troubleshooting-scenarios.md)
 ## [使用稽核記錄中的共用稽核](use-sharing-auditing.md)
 ## [在稽核記錄中搜尋電子文件探索活動](search-for-ediscovery-activities-in-the-audit-log.md)
 

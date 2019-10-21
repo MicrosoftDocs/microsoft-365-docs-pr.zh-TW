@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在環境中評估裝置和應用程式整備。
-ms.openlocfilehash: 9898090171d9e009a4f43f5362c363f71f08072e
-ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
+ms.openlocfilehash: dda8291e8f57e4855e582614573d6971fa3919f1
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35830521"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37422560"
 ---
 # <a name="step-1-device-and-app-readiness"></a>步驟 1：裝置和應用程式整備
 

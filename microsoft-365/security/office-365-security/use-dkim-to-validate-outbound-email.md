@@ -1,9 +1,9 @@
 ---
-title: 在 Office 365 中將 DKIM 用於自訂網域中的電子郵件
+title: 在 Office 365 中使用您自訂網域中的電子郵件 DKIM、2048 位元、1024 位元、步驟、執行方式、SPF、DMARC
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 09/27/2019, 10/8/2019
+ms.date: 10/8/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 摘要：本文說明如何在 Office 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統會信任從您的自訂網域傳送的郵件。
-ms.openlocfilehash: bebbc355e6d16d5571733295ce0e48b91332f863
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 4d9228301a4cafd3728a349ad710496ba8f9d379
+ms.sourcegitcommit: ffdf576fbc62c4c316f6d8061d2bd973e7df9f56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37424229"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "37598287"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件
 
