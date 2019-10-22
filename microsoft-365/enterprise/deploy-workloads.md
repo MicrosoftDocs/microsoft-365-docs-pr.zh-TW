@@ -2,7 +2,7 @@
 title: Microsoft 365 企業版工作負載和案例
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/30/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 讓貴組織的使用者快速上手 Microsoft 365 企業版的生產力工作負載。
-ms.openlocfilehash: a68b3a436daf6f1474f55676c6a167ecd4bdd39c
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 2fbc3b5063ab0ed675b9d1a3873877e5486a3d6c
+ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403242"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37608594"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 企業版工作負載和案例
 
@@ -38,7 +38,12 @@ ms.locfileid: "37403242"
 - 受限於區域法規。
 - 貴組織最有價值的資料，例如營業秘密、財務或人力資源資訊，以及組織策略。
 
-若要讓此資料免於遭受內部和外部威脅，請參閱[適用於高管制資料的 Microsoft Teams 和 SharePoint Online 網站](teams-sharepoint-online-sites-highly-regulated-data.md)。 此案例會逐步引導您完成 SharePoint 網站或 Microsoft Teams 團隊的設定，以便安全地儲存您最有價值的資料。
+若要保護此資料免於內部與外部威脅，請參閱：
+
+- [適用於高度管制資料的 Microsoft Teams](secure-teams-highly-regulated-data-scenario.md)
+- [適用於高度管制資料的 SharePoint 網站](teams-sharepoint-online-sites-highly-regulated-data.md)。 
+
+這些案例會逐步引導您完成 Microsoft Teams 小組或 SharePoint 網站的設定，以便安全地儲存您最有價值的資料。
 
 以下是整體 Microsoft 365 企業版部署指南中的工作負載和案例：
 
