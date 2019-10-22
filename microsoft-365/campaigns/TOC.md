@@ -37,4 +37,4 @@
 ## [將裝置重設回原廠設定](../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/campaigns/toc.json)
 
 # 安全性事件管理
-## [回應遭入侵的電子郵件帳戶](../compliance/responding-to-a-compromised-email-account?toc=/microsoft-365/campaigns/toc.json)
+## [回應遭入侵的電子郵件帳戶](https://docs.microsoft.com/microsoft-365/compliance/responding-to-a-compromised-email-account)
