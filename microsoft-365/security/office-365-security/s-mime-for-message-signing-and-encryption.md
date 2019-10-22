@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 系統管理員可以了解如何在 Exchange Online 中使用 S/MIME。
-ms.openlocfilehash: ddb244e9e0cb189dbeb78af49e34ed90f64e77cc
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9b7ad73f1a7dd55abdc5a88a2f86344f5a2f0f5b
+ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077421"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37608584"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>可用於訊息簽署和加密在 Exchange Online 中的 S/MIME
 
@@ -46,6 +46,9 @@ S/MIME （安全多用途網際網路郵件延伸） 是一種被廣為接受的
 - 設定虛擬憑證集合以驗證 S/MIME。 驗證電子郵件，以確保它已由受信任的憑證簽署的簽章時，網頁型 Outlook 會使用這項資訊。
 
 - 設定 Outlook 或 EAS 端點來使用 S/MIME。
+
+> [!NOTE]
+> 您無法在 Outlook 網頁版 Mac、 iOS、 Android 或其他非 Windows 裝置上安裝 S/MIME 控制項。 如需詳細資訊，請參閱[使用 outlook 網頁版中的 S/MIME 加密郵件](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480)。
 
 ## <a name="setup-smime-with-outlook-on-the-web"></a>安裝 S/MIME 與 outlook 網頁版
 
