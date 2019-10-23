@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立安全小組來儲存您最重要且最敏感的檔案。
-ms.openlocfilehash: 5117d310ccd877a7377e6e538e7fba13daaad4ef
-ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
+ms.openlocfilehash: 4ef4d4e9b8ab437c90aac434db158cfb40f066cb
+ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37617261"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37628347"
 ---
 # <a name="teams-for-highly-regulated-data"></a>適用於高度管制資料的 Microsoft Teams
 
@@ -40,9 +40,9 @@ ms.locfileid: "37617261"
 
 ![安全小組案例的組態](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
  
-## <a name="configuration"></a>組態
+## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>階段 1：針對高度管制資料設定小組
 
-安全小組的端對端組態包括下列步驟：
+端對端的設定包括下列步驟：
 
 1. 設定身分識別和裝置存取。
 2. 建立私人小組。
@@ -124,7 +124,7 @@ ms.locfileid: "37617261"
 
 若要針對儲存在「小組網站」中的檔案完成這項額外的安全性層級，您必須設定一個新的敏感度標籤，這個標籤不是自有標籤就是一般標籤的子標籤，適用於高度管制檔案。 只有「小組群組」成員可以在標籤清單中看到這個標籤。
 
-當您的需求是少量標籤、可同時用於全域使用和個別的私人小組時，請使用敏感度標籤。 當您有大量標籤或想要將私人小組的標籤整理在高度管制標籤之下時，請使用敏感度子標籤。
+當您需要少量標籤、可同時用於全域使用和個別的私人小組時，請使用敏感度標籤。 當您有大量標籤或想要將私人小組的標籤整理在高度管制標籤之下時，請使用敏感度子標籤。
 
 [使用下列指示](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)設定包含下列設定的不同標籤或子標籤：
 
@@ -142,30 +142,20 @@ ms.locfileid: "37617261"
 
 
 >[!Note]
->如果您將敏感度標籤或子標籤設定為使用者定義的權限或設定有到期日，您將無法從 Microsoft Teams 或 SharePoint Online 開啟檔案。 您必須使用 Office 應用程式。
+>如果您將敏感度標籤或子標籤設定為使用者定義的權限或設定有到期日，您將無法從 Microsoft Teams 或 SharePoint 開啟檔案。 您必須使用 Office 應用程式。
 >
 
-## <a name="using-the-team-and-a-sensitivity-label"></a>使用小組和敏感度標籤
-
-「小組群組」成員可以存取小組及其所有資源，包括聊天、會議及其他應用程式。 使用頻道中 [檔案]**** 區段的檔案時，「小組群組」成員必須將敏感度標籤或子標籤指派給針對安全小組建立的檔案。 請見以下範例。
-
-![將標籤套用到安全小組的檔案範例](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
- 
-當標籤套用到受保護的檔案時。 「小組群組」成員可以在 Microsoft Teams 中開啟，並即時進行共同作業。 檔案已加密，且包含有設定給「小組群組」成員的共同撰寫權限。 如果檔案離開網站並轉寄給惡意使用者，這些使用者必須提供「小組群組」成員的使用者帳戶認證，才能開啟檔案並檢視其內容。 
-
-您可以在 SharePoint Online 檢視資料夾，然後透過 [新增欄]**** 的 [顯示/隱藏欄]**** 選項新增 [敏感度]**** 欄，查看哪些檔案有被指派標籤。
-
-## <a name="custom-permissions"></a>自訂權限
+### <a name="custom-permissions"></a>自訂權限
 
 您也可以針對「小組網站」設定自訂 SharePoint 網站權限和對應的敏感度標籤 (如有需要的話)。 以下列出兩個範例。
 
-### <a name="example-1-delegating-sharepoint-site-administration"></a>範例 1：委派 SharePoint 網站的系統管理
+#### <a name="example-1-delegating-sharepoint-site-administration"></a>範例 1：委派 SharePoint 網站的系統管理
 
 如果小組擁有者沒有 SharePoint 系統管理經驗或是想要委派「小組網站」的系統管理，小組擁有者可以將 SharePoint 系統管理員的使用者帳戶新增至小組擁有者清單。 但是接下來，SharePoint 系統管理員會擁有小組及其所有資源的完整存取權，並且能夠開啟已套用敏感度標籤的檔案。 
 
 為防止這種過度授與權限的情況發生，請在網站的進階權限設定中，將 SharePoint 系統管理員的使用者帳戶新增至「小組網站」擁有者的 SharePoint 群組。 SharePoint 系統管理員可以管理網站，但是無法存取小組及其任何資源，或是無法開啟已指派敏感度標籤的檔案。
 
-### <a name="example-2-allowing-view-only-access-to-labeled-files"></a>範例 2：允許唯讀存取已加標籤的檔案
+#### <a name="example-2-allowing-view-only-access-to-labeled-files"></a>範例 2：允許唯讀存取已加標籤的檔案
 
 如果有部分人員只需要查看「小組網站」中已加標籤的檔案內容，請將這些人員的個人使用者帳戶新增至：
 
@@ -178,8 +168,48 @@ ms.locfileid: "37617261"
  
 網站訪客將可以直接存取「小組網站」，並查看已套用子標籤的檔案內容。 但是，由於訪客不是「小組群組」成員，因此訪客無法存取小組或其任何資源。
 
+
+## <a name="phase-2-drive-user-adoption-for-team-members"></a>階段 2：對小組成員推動使用者採用
+
+小組成立後，您就可以開始對小組成員推動採用此小組及其額外的安全性。
+
+### <a name="step-1-train-your-users"></a>步驟 1：訓練您的使用者
+
+「小組群組」成員可以存取小組及其所有資源，包括聊天、會議及其他應用程式。 使用頻道中 [檔案]**** 區段的檔案時，「小組群組」成員必須將敏感度標籤或子標籤指派給針對安全小組建立的檔案。 請見以下範例。
+
+![將標籤套用到安全小組的檔案範例](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
+ 
+當標籤套用到受保護的檔案時。 「小組群組」成員可以在 Microsoft Teams 中開啟，並即時進行共同作業。 檔案已加密，且包含有設定給「小組群組」成員的共同撰寫權限。 如果檔案離開網站並轉寄給惡意使用者，這些使用者必須提供「小組群組」成員的使用者帳戶認證，才能開啟檔案並檢視其內容。 
+
+訓練您的小組成員：
+
+- 了解使用新的小組進行聊天、會議、檔案和「小組網站」上其他資源的重要性，以及高度管制資料外洩的後果，例如法律後果、法規罰款、勒索軟體或喪失競爭優勢。
+- 如何存取小組。
+- 如何在網站上建立新檔案，以及上傳儲存在本機的新檔案。
+- DLP 原則如何封鎖他們免於在外部共用檔案。
+- 如何為檔案加上小組的自訂標籤或子標籤。
+- 標籤或子標籤如何保護檔案，即使檔案從網站外洩。
+
+此訓練應該包含實際操作練習，讓您的小組成員可以體驗這些功能及其結果。
+
+### <a name="step-2-conduct-periodic-reviews-of-usage-and-address-team-member-feedback"></a>步驟 2：舉辦定期的使用狀況檢閱和處理小組成員的意見反應
+
+在訓練後的幾週內：
+
+- 快速處理小組成員的意見反應，並微調原則和設定。
+- 分析小組的使用方式，並且與預期使用方式進行比較。
+- 確認高度管制檔案已正確地標示自訂的敏感度標籤。
+
+  您可以在 SharePoint 檢視資料夾，然後透過 [新增欄]**** 的 [顯示/隱藏欄]**** 選項新增 [敏感度]**** 欄，查看哪些檔案有被指派標籤。
+
+視需要重新訓練您的使用者。
+
 ## <a name="see-also"></a>另請參閱
 
 [適用於高度管制資料的 SharePoint 網站](teams-sharepoint-online-sites-highly-regulated-data.md)
+
+[Microsoft 365 企業版工作負載和案例](deploy-workloads.md)
+
+[Microsoft 365 生產力資源庫](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary)
 
 [部署指南](deploy-microsoft-365-enterprise.md)

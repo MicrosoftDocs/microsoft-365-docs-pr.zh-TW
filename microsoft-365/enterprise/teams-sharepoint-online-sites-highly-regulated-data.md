@@ -3,7 +3,7 @@ title: 適用於高度管制資料的 SharePoint 網站
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/04/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立安全的 SharePoint 小組網站來儲存您最重要且最敏感的檔案。
-ms.openlocfilehash: ece6547ba596fe53c4f3b3f6bfbaa6570a724c6a
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 7162ced48a64270713dc1eac6e73de053d24b2f4
+ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437823"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37628337"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>適用於高度管制資料的 SharePoint 網站
 
@@ -30,7 +30,7 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 - 貴組織最有價值的資料，例如營業秘密、財務或人力資源資訊，以及組織策略。
 
 >[!Note]
-> 使用 Microsoft Teams 的類似案例正在開發中。
+> 使用 Microsoft Teams 的類似案例[在此](secure-teams-highly-regulated-data-scenario.md)。
 >
 
 符合此商務需求的 Microsoft 365 企業版雲端式案例需要您：
@@ -50,14 +50,14 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 |:-------|:-----|
 | **需求** | **Microsoft 365 企業版功能** |
 | 儲存檔案 | SharePoint 小組網站 |
-| 鎖定網站 | Azure Active Directory (Azure AD) 群組和 SharePoint 小組網站權限 |
+| 鎖定網站 | Office 365 群組和 SharePoint 小組網站的權限 |
 | 為網站上的檔案新增標籤 | Office 365 保留標籤 |
 | 將檔案傳送到組織外部時封鎖使用者 | Office 365 中的資料外洩防護 (DLP) 原則 |
-| 加密網站上的所有檔案 | Office 365 敏感度子標籤 |
-| 新增權限至網站的檔案 | Office 365 敏感度子標籤 |
+| 加密網站上的所有檔案 | Office 365 敏感度標籤或子標籤 |
+| 新增權限至網站的檔案 | Office 365 敏感度標籤或子標籤 |
 |||
 
-以下是安全的 SharePoint 網站的設定。
+以下是安全 SharePoint 網站的設定範例。
 
 ![適用於高度管制資料的 SharePoint 網站案例](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
@@ -99,12 +99,11 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 ### <a name="step-2-your-office-365-sensitivity-sublabel"></a>步驟 2：您的 Office 365 敏感度子標籤
 
-若要將加密和權限集提供給最敏感的檔案，使用者必須套用 Office 365 敏感度子標籤。
+若要將加密和權限集提供給最敏感的檔案，使用者必須套用 Office 365 敏感度標籤和子標籤。 子標籤位於現有標籤下方。 
 
-子標籤位於現有標籤下方。 例如，您可以在高度管制標籤底下建立研發子標籤。 對於適用於高度管制資料的 SharePoint 網站，您需設定權限，只允許網站成員能開啟及變更附加子標籤的檔案。
+當您的需求是少量標籤、可同時用於全域使用和個別的私人小組時，請使用敏感度標籤。 當您有大量標籤或想要將安全網站的標籤整理在您的高度管制標籤之下時，請使用敏感度子標籤。 
 
-所套用的子標籤設定會隨著檔案移動。 即使檔案流出網站外部，也只有擁有權限的已驗證使用者帳戶能開啟檔案。
-
+所套用的標籤或子標籤設定會隨著檔案移動。 即使檔案流出網站外部，也只有擁有權限的已驗證使用者帳戶能開啟檔案。
 
 ### <a name="design-results"></a>設計結果
 
@@ -125,10 +124,10 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 從 SharePoint 網站設定這些權限設定。
 
-1.  在工具列中，按一下設定圖示，然後按一下 [網站權限]****。
-2.  在 [網站權限]**** 窗格中，按一下 [進階權限設定]****。
-3.  在新的 [權限]**** 瀏覽器索引標籤中，按一下 [存取要求設定]****。
-4.  在 [存取要求設定]**** 對話方塊中，清除 [允許成員共用網站以及個別檔案和資料夾]**** 和 [允許存取要求]**** 核取方塊，(以全部清除這三個核取方塊)，然後按一下 [確定]****。
+1. 在工具列中，按一下設定圖示，然後按一下 [網站權限]****。
+2. 在 [網站權限]**** 窗格的 [共用設定]**** 之下，按一下 [變更共用設定]****。
+3. 在 [共用權限]**** 之下，選擇 [只有網站擁有者可以共用檔案、資料夾及網站]****。
+4. 關閉 [允許存取要求]****，然後按一下 [儲存]****。
 
 清除這些設定後，網站群組成員與其他成員或非成員要求網站存取權以共用網站的功能將會停用。
 
@@ -145,13 +144,13 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 適用於高度管制資料的敏感度標籤可讓任何人套用至任何檔案，但是安全網站不同，它需要自己的子標籤，以致於指派子標籤的檔案都能：
 
 - 受到加密，且加密會隨檔案移動。
--   包含自訂權限，因此只有網站群組的成員能夠開啟檔案。
+- 包含自訂權限，因此只有網站群組的成員能夠開啟檔案。
 
-若要針對儲存在網站中的檔案完成這項額外的安全性，您必須設定一個新的敏感度標籤，而它屬於高度管制檔案之一般標籤的子標籤。 只有網站的群組成員能在高度管制標籤的子標籤清單中看到該網站。
+若要針對儲存在網站中的檔案完成這項額外的安全性，您必須針對高度管制檔案設定一個新的敏感度標籤或一般標籤的子標籤。 只有網站的群組成員能在高度管制標籤的子標籤清單中看到該網站。
 
-使用[這裡](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)的指示來為高度管制檔案所使用的標籤設定子標籤，其設定如下：
+使用[這裡](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)的指示來為高度管制檔案所使用的標籤設定標籤或子標籤，其設定如下：
 
-- 子標籤的名稱包含網站名稱，以便在將子標籤指派到檔案時輕鬆建立關聯。
+- 標籤或子標籤的名稱包含網站名稱，以便在將標籤或子標籤指派到檔案時輕鬆建立關聯。
 - 啟用加密。
 - 網站群組具有共同撰寫權限。
 
@@ -162,14 +161,13 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 - SharePoint 網站上的其他限制權限設定
 - 指派給 SharePoint 網站文件部分的 Office 365 保留標籤
 - Office 365 保留標籤的 DLP 原則
-- 使用者可將 Office 365 敏感度子標籤套用到儲存在網站中的最敏感檔案，其會加密檔案並只允許小組網站群組的成員擁有共同撰寫存取權 
+- 使用者可將 Office 365 敏感度標籤或子標籤套用到儲存在網站中的最敏感檔案，其會加密檔案並只允許小組網站群組的成員擁有共同撰寫存取權 
 
-以下是所產生的設定。
+以下是使用高度管制標籤的子標籤所產生的設定。
 
 ![適用於高度管制資料的 SharePoint 網站案例](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
-
-以下是使用者已將敏感度子標籤套用至儲存在網站中的檔案的範例。
+以下是使用者將子標籤套用至儲存在網站中的檔案的範例。
 
 ![適用於高度管制資料的 SharePoint 網站案例](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
 
@@ -182,14 +180,14 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 ### <a name="step-1-train-your-users"></a>步驟 1：訓練您的使用者
 
-完成您的設定之後，請訓練一組使用者，這些使用者是網站存取群組的成員：
+完成您的設定之後，請訓練一組使用者，這些使用者是網站成員：
 
 - 了解使用新網站來保護有價值檔案的重要性以及高度管制資料外洩的後果，例如法律後果、法規罰款、勒索軟體或喪失競爭優勢。
 - 如何存取網站及其檔案。
 - 如何在網站上建立新檔案，以及上傳儲存在本機的新檔案。
 - DLP 原則如何封鎖他們免於在外部共用檔案。
-- 如何使用網站的子標籤來標記最敏感的檔案。
-- 子標籤如何保護檔案，即使該檔案從網站外洩。
+- 如何使用網站的標籤或子標籤來標記最敏感的檔案。
+- 標籤或子標籤如何保護檔案，即使該檔案從網站外洩。
 
 此訓練應該包含實際操作練習，讓使用者可以體驗這些作業及其結果。
 
@@ -198,21 +196,27 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 在幾週的訓練之後，SharePoint 網站的 SharePoint 系統管理員可以：
 
 - 分析網站的使用方式，並且與預期使用方式進行比較。
-- 確認已使用敏感度子標籤正確地標示高度敏感檔案。
+- 確認已使用敏感度標籤或子標籤正確地標示高度敏感檔案。
+
+  您可以在 SharePoint 檢視資料夾，然後透過 [新增欄]**** 的 [顯示/隱藏欄]**** 選項新增 [敏感度]**** 欄，查看哪些檔案有被指派標籤。
+
 
 視需要重新訓練您的使用者。
 
 ### <a name="user-adoption-results"></a>使用者採用結果
 
-高度管制的檔案會單獨儲存在適用於高度管制資料的 SharePoint 網站上，且最敏感的檔案已套用網站的敏感度子標籤。
+高度管制的檔案會單獨儲存在適用於高度管制資料的 SharePoint 網站上，且最敏感的檔案已套用網站的敏感度標籤或子標籤。
 
 ## <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Contoso Corporation 如何部署 Microsoft 365 企業版
 
-Contoso Corporation 是虛構但具代表性的全球製造業集團，其總部位於法國巴黎。 查看 Contoso 如何設計、設定，然後為其在巴黎、莫斯科、紐約、北京和班加羅爾的研究小組推動採用[安全的 SharePoint 網站](contoso-sharepoint-online-site-for-highly-confidential-assets.md)。 
+Contoso Corporation 是虛構但具代表性的全球製造業集團。 查看 Contoso 如何設計、設定，然後為其在巴黎、莫斯科、紐約、北京和班加羅爾的研究小組推動採用[安全的 SharePoint 網站](contoso-sharepoint-online-site-for-highly-confidential-assets.md)。 
 
 ## <a name="see-also"></a>另請參閱
 
+[適用於高度管制資料的 Microsoft Teams](secure-teams-highly-regulated-data-scenario.md)
+
+[Microsoft 365 企業版工作負載和案例](deploy-workloads.md)
+
+[Microsoft 365 生產力資源庫](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary)
+
 [部署指南](deploy-microsoft-365-enterprise.md)
-
-[測試實驗室指南](m365-enterprise-test-lab-guides.md)
-
