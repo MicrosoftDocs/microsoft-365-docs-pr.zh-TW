@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解 Microsoft 365 商務版會隨附的安全性功能。
-ms.openlocfilehash: 668b83e363a40e61391cbe56b0dbfab88cae7c43
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 0d1c35192bf82ac61e59356cda4d9fb29cb3d995
+ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575691"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37636765"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 商務版安全性與合規性功能
 
@@ -48,7 +48,7 @@ Microsoft 365 商務版提供簡化的安全性功能，以協助保護您在電
     
 - [設定 Windows 10 裝置的裝置保護設定](protection-settings-for-windows-10-pcs.md)。 
     
-    您可以啟用[BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405)加密，以協助保護資料，以防裝置遺失或遭竊，並啟用[Windows 惡意探索防護](https://go.microsoft.com/fwlink/p/?linkid=871404)進階勒索軟體防護。 
+    您可以啟用[BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405)加密，以協助保護資料，以防裝置遺失或遭竊，並啟用[Windows 惡意探索防護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection)進階勒索軟體防護。 
     
 - [從裝置移除公司資料](remove-company-data.md)
     
