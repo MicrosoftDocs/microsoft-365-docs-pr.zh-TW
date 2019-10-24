@@ -3,7 +3,6 @@
   expanded: true
   items:
     - name: 產品和服務
-      expanded: true
       items:
         - name: 管理協力廠商應用程式
           href: manage-saas-apps.md
@@ -18,6 +17,18 @@
         - name: 升級的訂閱
           href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
     - name: 帳單和付款
+      items:
+        - name: 了解您的帳單
+          href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
+        - name: 管理付款方法
+          href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
+        - name: 管理帳單的設定檔
+          href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
+        - name: Xxxxx xxxxxxx
+          href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
+        - name: 付款服務指示詞 2 和強式客戶驗證
+          href: /microsoft-365/commerce/billing-and-payments/psd2.md
+    - name: 帳單帳戶
       items:
         - name: 管理帳單的帳戶資訊
           href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce
