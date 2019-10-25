@@ -13,20 +13,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 企業版 Office 365 專業增強版的部署步驟。
-ms.openlocfilehash: f20435edc4cdc675d0308774eb493a67723054f4
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 5c32257fb9066f170da1f1a3cfe4b865e383cfcb
+ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982764"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37646398"
 ---
-# <a name="phase-4-office-365-proplus"></a>第4 階段：Office 365 專業增強版
+# <a name="phase-4-office-365-proplus"></a>階段 4：Office 365 專業增強版
 
-![](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
+![階段 4：Office 365 專業增強版](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
 
 *本文同時適用於 Microsoft 365 企業版和 Microsoft 365 教育版的 E3 和 E5 版本*
 
-Microsoft 365 企業版包含 Office 365 專業增強版，是 Office 的訂閱版本。和 Office 2016 一樣，Office 365 專業增強版包含所有 Office 應用程式，這些應用程式直接安裝在用戶端裝置上。但不同於 Office 2016，Office 365 專業增強版會定期更新新功能，而且採用使用者授權模型，使用者最多可以在 5 個裝置上安裝 Office。如需詳細資訊，請參閱[有關企業中的 Office 365 專業增強版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
+Microsoft 365 企業版包含 Office 365 專業增強版 (Office 的訂閱版本)。 如同 Office 2019，Office 365 專業增強版包括所有 Office 應用程式，而這些應用程式會直接安裝在您的用戶端裝置上。 與 Office 2019 不同，Office 365 專業增強版會定期更新新的功能，並擁有可讓使用者在多個裝置上安裝 Office 的使用者型授權模型。 如需詳細資訊，請參閱[關於企業中的 Office 365 專業增強版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
 
 您在這個階段將 Office 365 專業增強版部署到用戶端裝置，這是 Microsoft 365 企業版的一部分。除了本指引，我們建議您使用 [Microsoft Fastrack](https://fasttrack.microsoft.com/office) 來進行部署。 
 
@@ -44,7 +44,7 @@ Microsoft 365 企業版包含 Office 365 專業增強版，是 Office 的訂閱�
 
 評估環境之後，請遵循[規劃 Office 365 專業增強版的部署](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus)中的指引建立部署規劃。規劃包含下列決策： 
 
-- 如何部署 Office，包括要使用哪些工具 (例如 System Center 設定管理員或 Office 部署工具 [ODT])，以及從何處安裝 Office
+- 如何部署 Office，包括要使用哪些工具 (例如 System Center 設定管理員或 Office 部署工具)，以及從何處安裝 Office
 - 如何管理 Office 的更新
 - 使用哪些更新通道 (Office 更新通道可控制使用者收到 Office 應用程式功能更新的頻率)
 - 您想要使用的 Office 安裝套件和部署群組，包括哪些使用者應安裝哪些 Office 應用程式和語言
@@ -53,14 +53,12 @@ Microsoft 365 企業版包含 Office 365 專業增強版，是 Office 的訂閱�
 
 ## <a name="step-3-deploy"></a>步驟 3：部署
 
-根據您在步驟 2 中的部署，選擇您要部署的方式：
+根據部署規劃，選擇您要部署的方式：
 
 - **[使用 System Center 設定管理員部署 Office 365 專業增強版](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager)：** 使用設定管理員部署管理，從網路上的發佈點下載並部署 Office
 
 - **[使用 ODT 從雲端部署 Office 365 專業增強版](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud)：** 使用 ODT 管理部署，直接從 Office CDN 將 Office 安裝在用戶端裝置上
  
-- **[使用 ODT 從本機來源部署 Office 365 專業增強版](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-a-local-source)：** 使用 ODT 管理部署，直接從網路上的本機來源下載並部署 Office 
-
 - **[從 Office 入口網站自行安裝 Office 365 專業增強版](https://support.office.com/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658)：** 從 Office 入口網站管理部署，讓使用者直接從入口網站將 Office 安裝在他們的用戶端裝置上
 
 許多組織會組合使用這些選項讓不同使用者使用。例如，組織可能會使用設定管理員為大部分的使用者部署 Office，但為一小群不常連線到內部網路的工作者啟用自行安裝。 
@@ -75,7 +73,7 @@ Microsoft 365 企業版包含 Office 365 專業增強版，是 Office 的訂閱�
 
 請參閱 Contoso Corporation (虛構但有代表性的跨國企業) 如何[部署 Office 365 專業增強版](contoso-o365pp.md)。
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso 公司](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>下一步
 
