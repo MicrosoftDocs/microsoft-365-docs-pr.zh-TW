@@ -21,14 +21,15 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以怎麼做以協助保護您的行銷活動從數位攻擊。
-ms.openlocfilehash: 8e1c958b7434019067c5f85ea534811611a0d037
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 625b72b5bb677769b6ef5cdd3aa2fa10819c5ba2
+ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772500"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37662529"
 ---
-## <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>資訊圖表： 協助您防止數位威脅保護您自己和您的行銷活動 
+# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>資訊圖表： 協助您防止數位威脅保護您自己和您的行銷活動 
+
 下列連結以 PowerPoint 和 PDF 可以下載及列印 tabloid 格式 (也稱為 ledger 11 x 17 或 A3)。
 
 [![影像以保護您的協助保護您的行銷活動資訊圖形](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 10/24/2018
-ms.openlocfilehash: 1cde7cda7cf6bb42508aa52460ff2ee254f62967
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: d3abfaa0901ff9dbc15aa6fcba3bb7a13e6afb84
+ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982584"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37697728"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什麼是 Microsoft 受管理的電腦？
 
@@ -24,7 +24,7 @@ Microsoft 受管理的電腦會採用此進一步結合了 Microsoft 365 企業�
 
 <table>
 <tr><th>愉悅感使用者</th><th>讓 IT</th><th>由 Microsoft 所支援</th></tr>
-<tr><td><p>新式的裝置</p><p>Windows 10</p><p>Office 365 專業增強版</p><p>內建的安全性</p><p>使用臉部辨識登入</p><p>保持最新</p></td><td><p>內建的安全性</p><p>洞察力</p><p>作業支援</p><p>從 Microsoft 專家的指導方針</p></td><td><p>安全性作業小組</p><p>健康情況監視</p><p>雲端備份資料</p><p>無狀態的原則</p><p>24 x 7 使用者支援</p></td></tr>
+<tr><td><p>新式的裝置</p><p>Windows 10</p><p>Office 365 專業增強版</p><p>內建的安全性</p><p>使用臉部辨識登入</p><p>永遠保持最新</p></td><td><p>內建的安全性</p><p>洞察力</p><p>作業支援</p><p>從 Microsoft 專家的指導方針</p></td><td><p>安全性作業小組</p><p>健康情況監視</p><p>雲端備份資料</p><p>24 x 7 使用者支援</p></td></tr>
 </table>
 
 Microsoft 受管理的電腦會提供客戶完整的 IT 解決方案，資料的使用者，並釋放 IT 資源的更重要的工作。 我們已開發根據我們常聽到的意見反應這個服務：
