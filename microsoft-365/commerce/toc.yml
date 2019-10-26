@@ -24,8 +24,6 @@
           href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
         - name: 管理帳單的設定檔
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
-        - name: Xxxxx xxxxxxx
-          href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
         - name: 付款服務指示詞 2 和強式客戶驗證
           href: /microsoft-365/commerce/billing-and-payments/psd2.md
     - name: 帳單帳戶
