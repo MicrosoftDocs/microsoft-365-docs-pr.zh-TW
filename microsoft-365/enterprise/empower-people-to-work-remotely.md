@@ -3,7 +3,7 @@ title: 強化遠端工作人員
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/10/2019
+ms.date: 10/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 設定基礎結構和安全性，讓您的員工隨時隨地都能遠端工作。
-ms.openlocfilehash: 9a9520f5246ec70a2b9947536c259c661a5bd44f
-ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
+ms.openlocfilehash: bc36343d1bdce0f01ff91a5d3cece2b111c22dcb
+ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37469155"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37733474"
 ---
 # <a name="empower-remote-workers"></a>強化遠端工作人員
 
@@ -74,7 +74,7 @@ ms.locfileid: "37469155"
 
 [![強化遠端工作人員海報](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
-您也可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
+您也可以以 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 或 [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) 格式下載此海報，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
 
 ## <a name="phase-1-deploy-microsoft-365-features-and-capabilities-for-remote-workers"></a>階段1：部署適用于遠端工作人員的 Microsoft 365 功能
