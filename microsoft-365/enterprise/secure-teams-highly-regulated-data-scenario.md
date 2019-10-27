@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立安全小組來儲存您最重要且最敏感的檔案。
-ms.openlocfilehash: 4ef4d4e9b8ab437c90aac434db158cfb40f066cb
-ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
+ms.openlocfilehash: d917e14719744dad8a681e15a8547655c3a0457f
+ms.sourcegitcommit: d95aab99d7827dbb9248280044748ca05ebec786
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37628347"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37657800"
 ---
 # <a name="teams-for-highly-regulated-data"></a>適用於高度管制資料的 Microsoft Teams
 
@@ -124,7 +124,7 @@ ms.locfileid: "37628347"
 
 若要針對儲存在「小組網站」中的檔案完成這項額外的安全性層級，您必須設定一個新的敏感度標籤，這個標籤不是自有標籤就是一般標籤的子標籤，適用於高度管制檔案。 只有「小組群組」成員可以在標籤清單中看到這個標籤。
 
-當您需要少量標籤、可同時用於全域使用和個別的私人小組時，請使用敏感度標籤。 當您有大量標籤或想要將私人小組的標籤整理在高度管制標籤之下時，請使用敏感度子標籤。
+當您需要少量標籤、可同時用於全域使用和個別的私人小組時，請使用敏感度標籤。 當您有大量標籤或想要將私人小組的標籤整理到高度管制標籤之下時，請使用敏感度子標籤。
 
 [使用下列指示](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)設定包含下列設定的不同標籤或子標籤：
 
