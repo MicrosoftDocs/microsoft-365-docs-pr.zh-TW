@@ -15,12 +15,12 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: 若要協助防止詐騙，Office 365 和 Outlook.com 現在需要 RFC 規範從： 地址。
-ms.openlocfilehash: 39c9898a31c715487f3bc934ad0986e9a7b3679d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: da1728b59ce100d988538d572a24ca1a44fa9a7b
+ms.sourcegitcommit: 96cbcfe8b02a5efc2d5a4fc070753ea96f298fda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076842"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37749155"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 如何驗證寄地址以防止網路釣魚
 
@@ -223,7 +223,7 @@ Microsoft 強烈建議您針對覆寫強制使用 [從： 原則。 覆寫此原
 ### <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a>防止，並防止 cybercrimes Office 365 中的其他方法
 <a name="OtherProtection"> </a>
 
-如需有關如何在您可增強您的組織抵禦網路釣魚像 cybercrimes 的詳細資訊，濫發垃圾郵件、 資料外洩，以及其他威脅，請參閱[Office 365 的安全性最佳做法](https://support.office.com/article/9295e396-e53d-49b9-ae9b-0b5828cdedc3)。
+如需有關如何在您可增強您的組織抵禦網路釣魚像 cybercrimes 的詳細資訊，濫發垃圾郵件、 資料外洩，以及其他威脅，請參閱[Office 365 的安全性最佳做法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)。
   
 ## <a name="related-topics"></a>相關主題
 
