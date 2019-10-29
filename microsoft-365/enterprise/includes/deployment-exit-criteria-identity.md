@@ -68,7 +68,7 @@
 <a name="crit-identity-custom-sign-in"></a>
 ### <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>選用：已個人化您組織的 Office 365 登入畫面
 
-您已使用「[將公司商標新增至登入及存取面板頁面](http://aka.ms/aadpaddbranding)」來將貴組織的商標新增至 Office 365 登入頁面。
+您已使用「[將公司商標新增至登入及存取面板頁面](https://aka.ms/aadpaddbranding)」來將貴組織的商標新增至 Office 365 登入頁面。
 
 如果您略過此選項，使用者會看到一般的 Office 365 登入畫面，並且可能無法確定它們登入的是貴組織的網站。
 

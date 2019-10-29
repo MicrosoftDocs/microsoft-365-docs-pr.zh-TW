@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用此「測試實驗室指南」建立 Microsoft 365 企業版的模擬企業測試環境。
-ms.openlocfilehash: b0bb241cb475b8ab3bdb0d7ebbbda6ab0936b29d
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 7a23f0eabcd9b4b0b94f6f932570fed12de32cbe
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073093"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746499"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模擬企業基本設定
 
@@ -371,7 +371,7 @@ CLIENT1 重新啟動之後，使用 TESTLAB\\User1 帳戶名稱和密碼連線�
 
 接下來，新增 Microsoft 365 E5 試用版訂閱，並將 Microsoft 365 授權指派給您的全域系統管理員帳戶。
 
-1. 使用網際網路瀏覽器的私用執行個體，以全域系統管理員帳戶憑證登入位於 [http://admin.microsoft.com](http://admin.microsoft.com) 的 Microsoft 365 系統管理中心。
+1. 使用網際網路瀏覽器的私用執行個體，以全域系統管理員帳戶憑證登入位於 [https://admin.microsoft.com](https://admin.microsoft.com) 的 Microsoft 365 系統管理中心。
     
 2. 在 [Microsoft 365 系統管理中心] **** 頁面的左側導覽中，按一下 [帳單 > 購買服務]****。
     

@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用這個「測試實驗室指南」建立輕量型測試環境，以測試 Microsoft 365 企業版。
-ms.openlocfilehash: a189cb63847f2b95402a864422257a38d1f098d1
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 770ddf46f40036f0d711c7c30bdaebee7fdeef6e
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072183"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746529"
 ---
 # <a name="the-lightweight-base-configuration"></a>輕量型基本組態
 
@@ -49,7 +49,7 @@ ms.locfileid: "34072183"
   
 首先，新增 Microsoft 365 E5 試用版訂閱，並將 Microsoft 365 授權指派給您的全域系統管理員帳戶。
   
-1. 使用網際網路瀏覽器的私用執行個體，以全域系統管理員帳戶憑證登入位於 [http://admin.microsoft.com](http://admin.microsoft.com) 的 Microsoft 365 系統管理中心。
+1. 使用網際網路瀏覽器的私用執行個體，以全域系統管理員帳戶憑證登入位於 [https://admin.microsoft.com](https://admin.microsoft.com) 的 Microsoft 365 系統管理中心。
     
 2. 在 [Microsoft 365 系統管理中心] **** 頁面的左側導覽中，按一下 [帳單 > 購買服務]****。
     

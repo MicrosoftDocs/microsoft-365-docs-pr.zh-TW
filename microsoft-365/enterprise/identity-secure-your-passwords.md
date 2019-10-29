@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 您必須在組織中強化且易於管理您的密碼。
-ms.openlocfilehash: a3661eedc11e0c826422f540cf1e2e9abf911f9d
-ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
+ms.openlocfilehash: 375f4a678e85dccb544ffaf56f648e98609841d9
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37662549"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746509"
 ---
 # <a name="step-2-secure-your-passwords"></a>步驟 2：保護您的密碼
 
@@ -90,7 +90,7 @@ ms.locfileid: "37662549"
 
 如需詳細資訊，請參閱[將公司商標新增至 Office 365 登入頁面](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page)。
 
-如需設定的指示，請參閱[將公司商標新增至登入和存取面板頁面](http://aka.ms/aadpaddbranding)。
+如需設定的指示，請參閱[將公司商標新增至登入和存取面板頁面](https://aka.ms/aadpaddbranding)。
 
 作為過渡期的檢查點，您可以看到這一節的[允出準則](identity-exit-criteria.md#crit-identity-custom-sign-in)。
 

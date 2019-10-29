@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的設定符合 Microsoft 365 企業版準則，是否具備以識別為基礎的服務和基礎結構。
-ms.openlocfilehash: 4a93d0a9fb497daccba4fd2641fd5faf9c4fb384
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 84c2b97e064d3dba8a97767a31cc9fe7ccc6dd8c
+ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370200"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37746519"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>階段 2：識別基礎結構允出準則
 
@@ -96,7 +96,7 @@ ms.locfileid: "37370200"
 <a name="crit-identity-custom-sign-in"></a>
 ## <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>選用：已個人化您組織的 Office 365 登入畫面
 
-您已使用「[將公司商標新增至登入及存取面板頁面](http://aka.ms/aadpaddbranding)」來將貴組織的商標新增至 Office 365 登入頁面。
+您已使用「[將公司商標新增至登入及存取面板頁面](https://aka.ms/aadpaddbranding)」來將貴組織的商標新增至 Office 365 登入頁面。
 
 如果您略過此選項，使用者會看到一般的 Office 365 登入畫面，並且可能無法確定它們登入的是貴組織的網站。
 
