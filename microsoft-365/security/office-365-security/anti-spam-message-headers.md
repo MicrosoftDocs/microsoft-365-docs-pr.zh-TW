@@ -13,12 +13,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: 了解 Exchange Online Protection 新增至郵件的標頭欄位和值。
-ms.openlocfilehash: 7a89a5dc0c05bd390669b5008b9d589a89488171
-ms.sourcegitcommit: b0396171d24c6298b809b43bb109d3afed4de5b8
+ms.openlocfilehash: df0e31ad6d1c67c8d7ed92e9b42efb1da0c37731
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37451115"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772257"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾郵件訊息標頭
 
@@ -39,7 +39,6 @@ Exchange Online Protection 掃描輸入的電子郵件訊息時，會在每封�
 |CTRY|郵件連線到服務的來源國家。這是由連線的 IP 位址來判斷，這可能與原始傳送的 IP 位址不同。|
 |LANG|撰寫郵件所用的語言，如國碼所指定 (例如，ru_RU 代表俄文)。|
 |SCL|郵件的垃圾郵件信賴等級 (SCL) 值。 如需解譯這些值的相關資訊，請參閱[垃圾郵件信賴等級](spam-confidence-levels.md)。|
-|PCL|郵件的網路釣魚信賴等級 (PCL) 值。|
 |SRV:BULK|郵件被識別為大量電子郵件。 如果啟用 [封鎖所有大量電子郵件的進階垃圾郵件篩選選項]****，則會將電子郵件標記為垃圾郵件。 如果未啟用，則會在其餘的篩選規則判斷該郵件為垃圾郵件時，才將它標記為垃圾郵件。|
 |SFV:SFE|已略過篩選作業並允許郵件傳入，因為該郵件是從個人的安全寄件者清單上的地址寄送而來。|
 |SFV:BLK|已略過篩選作業，但郵件遭到封鎖，因為該郵件是從個人的封鎖寄件者清單上的地址寄來的。  <br/> **秘訣**：如需使用者應如何建立安全和封鎖寄件者清單的詳細資訊，請參閱[封鎖或允許 (垃圾郵件設定)](https://go.microsoft.com/fwlink/p/?LinkId=294862) (Outlook 網頁版) 以及[垃圾電子郵件篩選概觀](https://go.microsoft.com/fwlink/p/?LinkId=270065) (Outlook)。|
@@ -66,8 +65,7 @@ Exchange Online Protection 掃描輸入的電子郵件訊息時，會在每封�
 
 |**標頭欄位**|**描述**|
 |:-----|:-----|
-|PCL|郵件的網路釣魚信賴等級 (PCL)，表示郵件是否為網路釣魚郵件。 此狀態可以傳回下列其中一個數值： <br/>**0-3**：郵件內容不可能是網路釣魚郵件。 <br/>**4-8**：郵件內容有可能是網路釣魚郵件。 <br/>**-9990**：(僅限 Exchange Online Protection) 郵件內容有可能是網路釣魚郵件。  <br/>  這些值用於判定您的電子郵件用戶端會對郵件採取的動作。 例如，Outlook 會使用 PCL 戳記來封鎖可疑郵件的內容。 如需網路釣魚及 Outlook 如何處理網路釣魚郵件的詳細資訊，請參閱[開啟或關閉電子郵件中的連結](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8)。|
-|
+|BCL|郵件的大量抱怨層級 (BCL) 可協助區分不同類型的大量郵件寄件者。 這會以 0 到 9 之間的值表示。 如需有關 BCL 的值和其他資訊，請參閱[大量抱怨層級值](bulk-complaint-level-values.md)。|
 
 ## <a name="authentication-results-message-header"></a>Authentication-results 郵件標頭
 
