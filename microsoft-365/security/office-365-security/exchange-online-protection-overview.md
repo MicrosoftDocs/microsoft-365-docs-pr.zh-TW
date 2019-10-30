@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) 是雲端式的電子郵件篩選服務，它能協助組織抵禦垃圾郵件和惡意軟體，同時也包括預防組織發生訊息原則違規的功能。
-ms.openlocfilehash: e091946792e78f47f5c0ab5a001bf45ca4de6b08
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: b00de649bf0517d3c5cda99f1c20579ad1dfeec5
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440450"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772267"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概觀
 
@@ -56,13 +56,13 @@ EOP 會在資料中心之間執行負載平衡，但只在一個區域內。如�
 
 ## <a name="eop-plans-and-features"></a>EOP 方案和功能
 
-以下是可用的 EOP 訂閱方案：
+可用的 EOP 訂閱計劃包括：
 
-- **獨立式 EOP**: EOP 會保護您的內部部署信箱。
+- **獨立式 EOP**： 您註冊 EOP 來保護您的內部部署電子郵件組織中。
 
-- **在 Exchange Online EOP 功能**： EOP 會保護 Exchange Online 雲端託管信箱。
+- **在 Exchange Online EOP 功能**： 任何包含 Exchange Online 的訂閱 (獨立或 Office 365 的一部分) 使用 EOP 來保護您的 Exchange Online 信箱。
 
-- **Exchange Enterprise CAL with Services**: EOP 會保護您的內部部署信箱，如 EOP 獨立版，並包含資料外洩防護 (DLP) 和使用 web 服務的報告。
+- **Exchange Enterprise CAL with Services**： 如果您有內部部署 Exchange 組織您已購買其他 Exchange Enterprise CAL with Services 授權，EOP 會包含服務的一部分。
 
 如需所有 EOP 訂閱方案之需求、重要限制和功能可用性的相關資訊，請參閱 [Exchange Online Protection 服務描述](https://go.microsoft.com/fwlink/p/?LinkId=320619)。
 
@@ -72,7 +72,7 @@ EOP 會在資料中心之間執行負載平衡，但只在一個區域內。如�
 
 如果已購買 EOP，請參閱[設定 EOP 服務](set-up-your-eop-service.md)，以確保完成所有必要的 EOP 設定步驟，來保護郵件環境。
 
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="for-more-information"></a>相關資訊
 
 [EOP 功能](eop-features.md)
 

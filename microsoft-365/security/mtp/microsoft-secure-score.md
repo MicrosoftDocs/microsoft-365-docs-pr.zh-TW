@@ -15,18 +15,18 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d8ba3626fc2b6cb7dbc56d32cb61baf34e43996e
-ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
+ms.openlocfilehash: 74afe39e78990d794368ed19aa5fd5116bee17bb
+ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37697748"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37774906"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
 Microsoft 安全分數是具有較高的數字，表示所採取的多個改進動作的組織的安全性狀態，度量單位。 從 Microsoft 365 安全性中心集中式儀表板，組織可以監視，並在其 Microsoft 365 身分識別、 資料、 app、 裝置和基礎結構的安全性上運作。
 
-安全分數可幫助組織執行下列動作：  
+安全分數可幫助組織：
 
 * 在組織的安全性狀態的目前狀態報告。
 * 提供可測知性、 可見性、 指導以及控制項，以提高其安全性狀態。  
@@ -38,17 +38,17 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 
 ## <a name="how-it-works"></a>運作方式
 
-您所設定的特定點建議的安全性功能，執行與安全性相關的工作 （例如檢視報表），或解決與協力廠商應用程式或軟體的改進巨集指令。 一些改進動作只提供點完全完成時，和某些授與部分點為單位，如果他們使用某些裝置或使用者完成。 安全性應該一律平衡與可用性，並不是每個建議才能為您的環境。
+您所設定的特定點建議的安全性功能，執行與安全性相關的工作 （例如檢視報表），或解決與協力廠商應用程式或軟體的改進巨集指令。 一些改進動作只提供點完全完成時，和某些授與部分點為單位，如果他們使用某些裝置或使用者完成。 安全性應取得平衡與可用性，並不是每個建議才能為您的環境。
 
 您的分數會更新以反映視覺效果和改進動作頁面中所呈現的資訊的即時。 安全分數也每天同步處理以接收關於每個動作您達成點為單位的系統資料。
 
 ### <a name="how-improvement-actions-are-scored"></a>如何改進動作，就會獲得
 
-二進位的方式，就會獲得最-如果您實作改進的動作，例如建立新的原則，或開啟的特定設定，您會收到的資料點的 100%。 其他改進的動作，點都指定的百分比的總組態。 例如，如果改進巨集指令會指出您取得 30 點保護您的所有使用者以多重要素驗證和您只需要 100 個受保護的總使用者 5，會提供您大約 2 點的部分分數 (受保護的 5 / 100 總 * 30 的最大點數 = 2 點數 部分的分數）。
+二進位的方式，就會獲得最-如果您實作的改進巨集指令，如建立新的原則，或開啟的特定設定，您會收到的資料點的 100%。 其他改進的動作，點都指定的百分比的總組態。 例如，如果改進巨集指令會指出您取得 30 點保護您的所有使用者以多重要素驗證和您只需要 100 個受保護的總使用者 5，會提供您大約 2 點的部分分數 (受保護的 5 / 100 總 * 30 的最大點數 = 2 點數 部分的分數）。
 
 ### <a name="products-included-in-secure-score"></a>安全分數中包含的產品
 
-目前有 Office 365 （包括 SharePoint Online、 Exchange Online、 OneDrive for Business、 Microsoft 資訊保護和更多），建議 Azure AD，Intune 和 Cloud App Security。 建議的其他安全性產品，例如 Azure ATP 和 Microsoft Defender ATP 即將推出。 建議將涵蓋每個產品相關聯的所有受攻擊面，但它們是不錯的比較基準。 您也可以將標示改進動作為所涵蓋的協力廠商。 
+目前有 Office 365 （包括 SharePoint Online、 Exchange Online、 OneDrive for Business、 Microsoft 資訊保護和更多），建議 Azure AD，Intune 和 Cloud App Security。 建議的其他安全性產品，例如 Azure ATP 和 Microsoft Defender ATP 即將推出。 建議將涵蓋每個產品相關聯的所有受攻擊面，但它們是不錯的比較基準。 您也可以將標示改進動作為所涵蓋的協力廠商。
 
 ## <a name="required-permissions"></a>必要的權限
 
@@ -85,10 +85,10 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 
 為了協助您更快速地需要的資訊，Microsoft 改進動作會組織成群組：
 
-* 身分識別 （Azure AD 帳戶和角色）
-* 資料 （Office 365 文件）
+* 身分識別 （Azure AD 帳戶 & 角色與 Azure ATP 即將推出）
+* 資料 (Microsoft Information Protection)
 * 裝置 （Microsoft Defender ATP 裝置，即將推出）
-* 應用程式 （電子郵件部署與雲端應用程式）
+* 應用程式 （電子郵件和雲端應用程式，包括 Office 365 和 Microsoft Cloud App Security）
 * 基礎結構 （Azure 的資源）
 
 在 [Microsoft 安全分數概觀] 頁面中，您可以看到點分割的方式這些群組與何種點可用之間。 [概觀] 頁面上也是以取得總分基準比較，與您安全分數的歷史趨勢的全面檢視的位置，並可以採取來改善您的分數的改進動作的優先順序。
@@ -132,7 +132,7 @@ Microsoft 安全分數是數字摘要根據系統設定、 使用者行為及其
 
 ## <a name="whats-coming"></a>下來什麼？
 
-為了讓 Microsoft 安全分數更好您的安全性狀態的人，以及改善可用性，我們會在不久的將來進行一些變更。 您的成績和最大可能分數會變更。 不過，這並不表示您的安全性狀態變更。
+若要讓 Microsoft 安全分數較佳的安全性狀態代表並改善可用性，我們會在不久的將來進行一些變更。 您的成績和最大可能分數會變更。 不過，這並不表示您的安全性狀態變更。
 
 ### <a name="removing-not-scored-and-review-improvement-actions"></a>移除 「 不計分 」 和 「 檢閱 」 改進動作
 

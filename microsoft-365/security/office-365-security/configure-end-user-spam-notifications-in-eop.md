@@ -13,12 +13,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: 您可以針對預設的全公司內容篩選原則或是網域所套用的自訂內容篩選原則，設定使用者垃圾郵件通知。
-ms.openlocfilehash: 45cc75a7b090df86d0c5f9b1d47d452520693530
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d20186afaa25b70a40efa88f692a04f3428abb65
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078170"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772227"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>在 EOP 中設定使用者垃圾郵件通知
   
@@ -31,17 +31,9 @@ ms.locfileid: "37078170"
   
 之後收到通知郵件，使用者可以選擇下列選項：
 
-**預覽**郵件如果您想要預覽的內容或之前採取動作的標頭。
-
-**下載**郵件如果您想要檢閱的訊息和附件 （如果有的話） 之前採取行動裝置上。
-
-**版本**如果郵件不是垃圾郵件，而且您希望 Office 365 將郵件傳送至您的信箱。
-
-**釋出 & 允許寄件者**如果郵件不是垃圾郵件和您想要新增至安全的寄件者和收件者清單的未來的電子郵件的寄件者的 Office 365。 請記住您的系統管理員可能會有您的安全寄件者清單會覆寫其他組織整體允許/封鎖組態。
-
-**版本 & 報表**，如果郵件不是垃圾郵件和您想要將郵件傳送至您的信箱及該問題報告給 Microsoft 進行分析。
-
 **封鎖寄件者**如果您希望 Office 365 將寄件者新增至封鎖的寄件者清單。
+
+如果您想要採取其他動作，例如預覽或版本，瀏覽至隔離區入口網站的安全性與合規性中心內的**檢閱**。
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 <a name="sectionSection0"> </a>
@@ -77,7 +69,7 @@ ms.locfileid: "37078170"
   
 ![測試使用者垃圾郵件通知的傳輸規則](../media/EOP-ESN-testspecificusers.jpg)
   
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="for-more-information"></a>相關資訊
 
 [設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)
   
