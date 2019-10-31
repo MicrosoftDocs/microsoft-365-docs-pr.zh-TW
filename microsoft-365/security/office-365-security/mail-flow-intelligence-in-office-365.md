@@ -11,16 +11,16 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 系統管理員可以了解與 Office 365 （也稱為郵件流程情報） 中使用連接器的郵件傳遞相關聯的錯誤碼。
-ms.openlocfilehash: 088af4b6924fde0277901a19437d17c4506ff22b
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: d49937afb379b43821d905001e8aee21ca86eb52
+ms.sourcegitcommit: b91d75d2631166ddd158d26a0a476e26391a58ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441540"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "37886856"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Office 365 中的郵件流程情報
 
-一般而言，您可以使用連接器 Office 365 組織的電子郵件路由傳送至內部部署電子郵件環境。 您也可以使用連接器來路由郵件從 Office 365 到夥伴組織。 當 Office 365 無法傳送這些郵件透過連接器時，他們正在排入佇列中 Office 365。 Office 365 會繼續重試 48 小時的每一封郵件的傳遞。 48 小時之後，已排入佇列的郵件將會到期，與該郵件便會傳回給原始寄件者未傳遞回報 （也稱為 NDR 或彈跳訊息）。
+一般而言，您可以使用連接器 Office 365 組織的電子郵件路由傳送至內部部署電子郵件環境。 您也可以使用連接器來路由郵件從 Office 365 到夥伴組織。 當 Office 365 無法傳送這些郵件透過連接器時，他們正在排入佇列中 Office 365。 Office 365 會繼續重試 24 小時的每一封郵件的傳遞。 24 小時後，已排入佇列的郵件將會到期，與該郵件便會傳回給原始寄件者未傳遞回報 （也稱為 NDR 或彈跳訊息）。
 
 Office 365 會產生錯誤時所使用的連接器無法傳遞郵件。 最常見的錯誤，其解決方案本主題所述。 統稱，透過連接器傳送的郵件無法傳遞佇列和通知錯誤稱為_郵件流程智慧_。
 

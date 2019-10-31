@@ -9,11 +9,11 @@
         - name: 購買授權
           href: /office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: 指派授權
-          href: /office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+          href: /office365/admin/manage/assign-licenses-to-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
+        - name: 取消指派授權
+          href: /office365/admin/manage/remove-licenses-from-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: 從訂閱中移除授權
           href: /office365/admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
-        - name: 從使用者移除授權
-          href: /office365/admin/subscriptions-and-billing/remove-licenses-from-users?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: 升級的訂閱
           href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
     - name: 帳單和付款
@@ -21,7 +21,7 @@
         - name: 了解您的帳單
           href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
         - name: 管理付款方法
-          href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
+          href: /office365/Admin/subscriptions-and-billing/add-update-or-remove-credit-card-or-bank-account?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
         - name: 管理帳單的設定檔
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
         - name: 付款服務指示詞 2 和強式客戶驗證
