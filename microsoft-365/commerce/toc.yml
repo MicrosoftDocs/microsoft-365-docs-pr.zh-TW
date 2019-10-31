@@ -25,7 +25,7 @@
         - name: 管理帳單的設定檔
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
         - name: 付款服務指示詞 2 和強式客戶驗證
-          href: /microsoft-365/commerce/billing-and-payments/psd2.md
+          href: /microsoft-365/commerce/billing-and-payments/psd2
     - name: 帳單帳戶
       items:
         - name: 管理帳單的帳戶資訊
