@@ -10,16 +10,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性原則和建議現代化貴組織中的安全性。
-ms.openlocfilehash: be27e92c44ef6764906448828a94a207bd38bb18
-ms.sourcegitcommit: 96eae24db7ce1c9d794da4598c1a392487df8437
+ms.openlocfilehash: 89b275c621ef0d4d7fe1f95625c34a51ee4c506f
+ms.sourcegitcommit: 9d0a025ea9e265d515a034de0102eabcf47d11f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37554130"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "37911394"
 ---
 # <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a>首席資訊安全長研討會模組 3： 身分識別和零信任使用者存取
 
-因為大部分現代攻擊牽涉到危害使用者身分識別，了解如何建立新的身分識別安全性周邊來保護公司網路之外的資產。
+了解如何換頁零信任與您的身分識別與使用者存取策略更妥善地保護您的周邊網路內外的公司資料。
 
 - 下載 PDF 摘要：[模組 3： 身分識別與零信任使用者存取](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
 - 下載 PowerPoint 摘要：[模組 3： 身分識別與存取管理](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)

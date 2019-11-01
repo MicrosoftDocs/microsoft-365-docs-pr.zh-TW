@@ -13,12 +13,12 @@ ms.custom: aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: 尋找有關自助購買的常問問題的答案。
-ms.openlocfilehash: 7cf1fa1b12ab11e777754cba8f75cc4bead95279
-ms.sourcegitcommit: 29d85279c76ffaaa3f45e7ea3bdb590f54847fd6
+ms.openlocfilehash: 9faa573ea2062af2fe49e2810eaecc75ce90c84c
+ms.sourcegitcommit: 9d0a025ea9e265d515a034de0102eabcf47d11f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "37885577"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "37911384"
 ---
 # <a name="self-service-purchase-faq"></a>自助服務購買常見問題集
 
@@ -29,7 +29,12 @@ ms.locfileid: "37885577"
 
 ### <a name="what-changes-did-microsoft-announce-around-self-service-purchases-for-the-power-platform-products"></a>Microsoft 沒有宣佈何種變更繞自助購買 Power 平台產品？
 
-電源平台開始 2019 年 11 月 19 日，自助購買、 訂閱和授權管理功能產品 （Power BI，PowerApps 和流程） 可用於在美國境內的大多數的商業雲端客戶。 自助服務購買讓使用者有機會嘗試新技術，並讓他們能夠開發解決方案的最終將優點其較大型的組織。 此功能將無法使用至美國的政府、 非營利組織版或教育版，在這個階段中的租用戶。 中央採購與 IT 團隊必須購買和部署自助購買方案透過<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>的所有使用者的可見性。
+2019 年 10 月 31 日起更新： 透過過去一週，我們已被聆聽客戶的意見反應，我們自助購買功能推出有關 Power 平台產品。 根據意見反應，我們要對我們計劃進行下列變更：
+
+- 在 11 月 19 日，我們會提供 IT 系統管理員来關閉自助購買透過 PowerShell 以每個產品為基礎的方式。 更多詳細資料即將推出。
+- 若要提供更多時間來準備進行這項變更，我們要更新自助購買功能，以開始使用 Power BI 年 1 月 14 的商業雲端的所有客戶的電源平台產品的啟動。  
+
+電源平台開始 2020 年 1 月 14，自助購買、 訂閱和授權管理功能產品 （Power BI，PowerApps 和流程） 可用於在美國境內的商業雲端客戶。 自助服務購買讓使用者有機會嘗試新技術，並讓他們能夠開發解決方案的最終將優點其較大型的組織。 此功能將無法使用至美國的政府、 非營利組織版或教育版，在這個階段中的租用戶。 中央採購與 IT 團隊必須購買及部署自助購買透過<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>的解決方案，並將能夠關閉自助購買透過 PowerShell 以每個產品為基礎的所有使用者的可見性。
 
 ### <a name="why-is-microsoft-adding-a-self-service-purchase-option-for-the-power-platform-products"></a>Microsoft 新增 Power 平台產品的自助購買選項的為何？
 
@@ -37,7 +42,7 @@ ms.locfileid: "37885577"
 
 ### <a name="when-will-self-service-purchase-for-the-power-platform-products-be-available"></a>何時自助購買 Power 平台產品可？
 
-Microsoft 就啟動自助購買 Power bi 2019 年 11 月 19 日，在美國，客戶與其他市場擴展在接下來的月份。 PowerApps 和 Microsoft Flow 會加入在 2019 年 12 月 4 日。 此功能將無法使用至美國的政府、 非營利組織版或教育版，在這個階段中的租用戶。
+Microsoft 就啟動自助購買 Power bi 2020 年 1 月 14，在美國，客戶與其他市場擴展在接下來的月份。 PowerApps 和 Microsoft Flow 會加入下週。 此功能將無法使用至美國的政府、 非營利組織版或教育版，在這個階段中的租用戶。
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>將 Power 平台產品以外的服務啟用自助購買？
 
@@ -91,13 +96,7 @@ Microsoft 就啟動自助購買 Power bi 2019 年 11 月 19 日，在美國，�
 
 ### <a name="what-capabilities-does-an-admin-have-for-self-service-purchases"></a>自助購買的將是系統管理員必須在哪些功能？
 
-系統管理員可以檢視組織中<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>中進行所有自助購買。 他們可以看到產品、 購買者姓名、 購買的訂閱、 到期日，訂購記錄、 購買價格及每個自助購買指定的使用者。
-
-系統管理員合格的組織中的所有 Azure AD 使用者才能進行自助購買以及有其訂閱的完全控制權時, 必須透過自助服務購買購買的產品透過相同的資料管理和存取原則或集中。
-
-### <a name="why-are-self-service-purchases-not-subject-to-admin-approval"></a>為何不受到系統管理員核准的自助購買？
-
-我們正在我們的客戶所要求自助購買同時也能夠顧及服務的系統管理員控制能回應。 系統管理員必須具有進行自助採購的人員及使用者在其租用戶上的已指派授權從自助購買完整的可見性。 組織也可以依賴的內部政策，程序和通訊，以確保內部人員進行自助購買遵守公司原則。  如何控制服務存取權的一個範例：[設定 MsolServicePrincipal](https://docs.microsoft.com/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0)可以用來防止跨整個租用的產品的使用狀況。
+系統管理員可以檢視組織中<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>中進行所有自助購買。 他們可以看到產品、 購買者姓名、 購買的訂閱、 到期日，訂購記錄、 購買價格及每個自助購買指定的使用者。 如有需要為其組織，系統管理員將能夠關閉自助購買透過 PowerShell 以每個產品為基礎。 系統管理員有相同的資料管理，並透過產品購買透過自助服務購買或集中式存取原則。
 
 ### <a name="how-is-microsoft-respecting-data-governance-and-compliance-by-enabling-self-service-purchase"></a>如何為 Microsoft 尊重資料控管和合規性藉由啟用自助購買？
 
@@ -122,6 +121,11 @@ Microsoft 就啟動自助購買 Power bi 2019 年 11 月 19 日，在美國，�
 ### <a name="are-customers-it-departments-or-partners-expected-to-support-products-bought-through-self-service-purchase"></a>是客戶的 IT 部門或協力廠商預期支援透過自助服務購買購買的產品？
 
 IT 部門和協力廠商未預期透過自助服務購買購買的產品提供支援。 Microsoft 會提供自助項採購標準的支援。
+
+### <a name="if-a-self-service-purchaser-calls-support-will-they-use-the-customers-premier-support-incidents"></a>如果自助購買者撥打支援，他們會使用客戶的頂級支援事件的嗎？
+
+自助服務項採購不會使用客戶的頂級支援事件的接收支援，如其自助購買。
+
 
 ### <a name="how-are-users-expected-to-receive-training-on-the-products-they-buy-through-self-service-purchase"></a>如何使用者預期會接收透過自助服務購買購買的產品的訓練？
 
