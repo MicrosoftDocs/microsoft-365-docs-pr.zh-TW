@@ -15,6 +15,8 @@
 ## [身分識別與裝置存取設定](../enterprise/microsoft-365-policies-configurations.md)
 ### [必要工作](../enterprise/identity-access-prerequisites.md)
 ### [一般身分識別與裝置存取原則](../enterprise/identity-access-policies.md)
+### [來賓與外部使用者的原則](../enterprise/identity-access-policies-guest-access.md)
+### [建議使用的 Teams 存取原則](../enterprise/teams-access-policies.md)
 ### [建議使用的 Exchange Online 存取原則](../enterprise/secure-email-recommended-policies.md)
 ### [建議使用的 SharePoint Online 存取原則](../enterprise/sharepoint-file-access-policies.md)
 
