@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 了解如何將貴公司從 Microsoft 365 商務版移到 Microsoft 365 企業版 E3。
-ms.openlocfilehash: efdf4030a2a638a3fd56d1c415fcc6e6ac261c1a
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 1ef32960905f1336f9ac92231d463959e3bfd01c
+ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772710"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37931851"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-enterprise-e3"></a>從 Microsoft 365 商務版移轉到 Microsoft 365 企業版 E3
 
@@ -34,10 +34,10 @@ Microsoft 365 商務版具有您需要為您的小型企業，與簡單的裝置
 
 或者，您的業務需求的企業版功能，例如 Office 365 專業增強版、 Windows 10 企業版 E3 或企業用戶端存取使用權 (Cal)。
 
-移轉很簡單： 只要切換授權。 維護所有資料及您目前訂閱中的設定。 沒有執行任何動作，以準備移轉且不需要執行動作之後，但是利用的新功能。 
+升級很簡單： 您可以升級[從管理中心](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide)啟動。 維護所有資料及您目前訂閱中的設定。 沒有執行任何動作，以準備移轉且不需要執行動作之後，但是利用的新功能。 
 
 >[!Note]
->您也可以使用 Microsoft 365 商務版訂閱的最多 300 基座，並取得超過 300 個基座的 Microsoft 365 企業版 E3 訂閱。 不過，Office 365 ATP 不包含 Microsoft 365 企業版 E3。 您應該在 Microsoft 365 企業版 E3 訂閱中新增額外的 Office 365 ATP 授權的使用者。
+>您也可以使用 Microsoft 365 商務版訂閱的最多 300 基座，並取得超過 300 個基座的 Microsoft 365 企業版 E3 訂閱。 不過，Office 365 ATP 不包含 Microsoft 365 企業版 E3。 持續進行的威脅防護，您應該新增額外的 Office 365 ATP 授權，讓所有在您的 Office 365 ATP 的範圍內的使用者原則獲得授權。
 >
 
 ## <a name="differences-between-microsoft-365-business-and-microsoft-365-enterprise"></a>Microsoft 365 商務版和 Microsoft 365 企業版之間的差異
@@ -104,7 +104,7 @@ Microsoft 365 商務版具有您需要為您的小型企業，與簡單的裝置
 您可以開始使用雲端應用程式探索、 Azure AD Connect Health，與 SSO 超過 10 的應用程式。
 
 >[!Note]
->移轉至 Microsoft 365 企業版 E3，您無法再 Outlook Customer Manager 及 MileIQ 之後。
+>使用者移轉至 Microsoft 365 企業版 E3 可以沒有不再使用 Outlook Customer Manager 和 MileIQ。
 >
 
 <a name="threat-protection"></a>
@@ -127,7 +127,7 @@ Windows 10 商務版包含這些保護：
 Windows 10 企業版 E3 也包含企業管理的 Microsoft Edge 的硬體型隔離。
 
 >[!Note]
->移轉至 Microsoft 365 企業版 E3 之後，您不再需要 Office 365 ATP。 您可以購買其他 Office 365 ATP 授權，Microsoft 365 企業版 E3 訂用帳戶，並將它們指派給您的使用者帳戶。
+>使用者移轉至 Microsoft 365 企業版 E3 每個需要 Office 365 ATP 授權持續進行的威脅防護。 請務必購買其他 Office 365 ATP 授權，讓所有在您的 Office 365 ATP 的範圍內的使用者原則獲得授權。 
 >
 
 ### <a name="device-management-with-intune"></a>使用 Intune 裝置管理
