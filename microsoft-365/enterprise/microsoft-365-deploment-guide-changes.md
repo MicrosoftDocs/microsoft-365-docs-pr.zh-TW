@@ -3,7 +3,7 @@ title: Microsoft 365 企業版部署內容的變更
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/30/2019
+ms.date: 10/31/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,31 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 查看 Microsoft 365 部署指南中的新內容及變更。
-ms.openlocfilehash: 6c965efcbbfebe4fd80ac983674a7d183793e946
-ms.sourcegitcommit: a75e3a93b3431bd26b0d072b37a9c5eb3dcb1c7f
+ms.openlocfilehash: 605805d715243c9ef00f681616976be0f4b6b705
+ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "37889932"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37929276"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Microsoft 365 企業版部署內容的變更
 
 ## <a name="october-2019"></a>2019 年 10 月
 
 ### <a name="new-content"></a>新增內容 
+
+
+- [適用於高度管制資料的 Teams 海報](secure-teams-highly-regulated-data-scenario.md#poster)
+
+  [![適用於高度管制資料的 Teams 海報](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+
+  您也可以以 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) 格式下載此海報，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
+
+- [適用於高度管制資料的 SharePoint 網站海報](teams-sharepoint-online-sites-highly-regulated-data.md#poster)
+
+  [![適用於高度管制資料的 SharePoint 網站海報](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
+
+  您也可以以 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) 格式下載此海報，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
 - [使用 Autopilot 部署 Windows 10 海報](windows10-deploy-autopilot.md) 
 
@@ -47,7 +60,7 @@ ms.locfileid: "37889932"
 
 - [強化遠端工作人員海報](empower-people-to-work-remotely.md#poster)
 
-  [![強化遠端工作人員海報](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
+  [![強化遠端工作人員海報](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
  
 
 ### <a name="updates-and-enhancements"></a>更新和增強功能
