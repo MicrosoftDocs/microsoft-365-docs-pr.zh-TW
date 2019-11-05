@@ -3,7 +3,7 @@ title: 適用於高度管制資料的 SharePoint 網站
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 10/31/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立安全的 SharePoint 小組網站來儲存您最重要且最敏感的檔案。
-ms.openlocfilehash: 7162ced48a64270713dc1eac6e73de053d24b2f4
-ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
+ms.openlocfilehash: cfa1f7d85f7dd4d20b293c73b0b8f7d8e2577d02
+ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37628337"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37929238"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>適用於高度管制資料的 SharePoint 網站
 
@@ -68,7 +68,11 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 下列階段會逐步帶您針對適用於高度管制資料的 SharePoint 網站，進行設計、設定及推動採用。
 
-若要查看 Contoso Corporation (虛構但有代表性的跨國企業) 如何為其研究小組設計 SharePoint 網站，請參閱[範例設定](contoso-sharepoint-online-site-for-highly-confidential-assets.md)。
+<a name="poster"></a> 如需此案例的 1 頁式摘要，請參閱[適用於高度管制資料的 SharePoint 網站海報](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)。
+
+[![適用於高度管制資料的 SharePoint 網站海報](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
+
+您也可以用 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) 格式下載此海報，以及用 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
 ## <a name="identity-and-device-access-prerequisites"></a>身分識別與裝置存取必要條件
 

@@ -4,6 +4,7 @@
 ## [合規性中心的新功能](whats-new.md)
 ## [合規性內容的最新更新](recently-updated-topics-mcc.md)
 ## [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)
+## [Microsoft 365 解決方案目錄 (預覽)](microsoft-365-solution-catalog.md)
 ## [前往安全性與合規性中心](go-to-the-securitycompliance-center.md)
 ## [使用您的免費 Azure Active Directory 訂閱](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Office 365 中的安全性與合規性計劃](plan-for-security-and-compliance.md)
@@ -17,9 +18,13 @@
 ## 客戶金鑰
 ### [使用客戶金鑰控制 Office 365 中的資料](controlling-your-data-using-customer-key.md)
 ### [Office 365 中使用客戶金鑰的服務加密常見問題集](service-encryption-with-customer-key-faq.md)
-## 監督通訊
-### [了解監督原則](supervision-policies.md)
-### [為您的組織設定監督原則](configure-supervision-policies.md)
+## 通訊合規性
+### [了解通訊合規性 (預覽)](communication-compliance.md)
+### [設定 Microsoft 365 中的通訊合規性 (預覽)](communication-compliance-configure.md)
+### [調查和修復通訊合規性警示 (預覽)](communication-compliance-investigate-remediate.md)
+### [通訊合規性的功能參考 (預覽)](communication-compliance-feature-reference.md)
+### [Office 365 中的監督原則](supervision-policies.md)
+### [設定 Office 365 的監督原則](configure-supervision-policies.md)
 ## [資訊屏障](information-barriers.md)
 ### [定義資訊屏障原則](information-barriers-policies.md)
 ### [資訊屏障原則的屬性](information-barriers-attributes.md)
@@ -31,6 +36,8 @@
 ### [使用敏感度標籤中的加密來限制內容的存取](encryption-sensitivity-labels.md)
 ### [自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)
 ### [利用標籤分析檢視標籤使用量](label-analytics.md)
+### [對團隊、群組和網站使用敏感度標籤](sensitivity-labels-teams-groups-sites.md)
+### [對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)
 ### [Office App 中的敏感度標籤](sensitivity-labels-office-apps.md)
 
 ## [資料外洩防護 (DLP)](data-loss-prevention-policies.md)
@@ -85,10 +92,11 @@
 ## [了解資料分類 (預覽)](data-classification-overview.md)
 ### [查看標籤活動 (預覽)](data-classification-activity-explorer.md)
 ### [開始使用可訓練的分類器 (預覽)](classifier-getting-started-with.md)
-### [使用已可使用的分類器 (預覽)](classifier-using-a-ready-to-use-classifier)
+### [使用已可使用的分類器 (預覽)](classifier-using-a-ready-to-use-classifier.md)
 ### [建立和訓練分類器 (預覽)](classifier-creating-a-trainable-classifier.md)
 
 # 管理資訊控管
+## [管理資訊控管](manage-information-governance.md)
 ## [匯入資料](importing-pst-files-to-office-365.md)
 ### [使用網路上傳來匯入 PST 檔案](use-network-upload-to-import-pst-files.md)
 ### [使用磁碟機運送來匯入 PST 檔案](use-drive-shipping-to-import-pst-files-to-office-365.md)
@@ -363,11 +371,16 @@
 
 # 管理合規性風險
 ## [Microsoft 服務信任入口網站](get-started-with-service-trust-portal.md)
-## [合規性管理員 (傳統)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## [合規性管理員 (預覽版)](compliance-manager-overview.md)
-### [合規性管理員的新增功能 (預覽版)](compliance-manager-release-notes.md)
-### [使用合規性管理員 (預覽版)](working-with-compliance-manager.md)
-### [合規性分數方法 (預覽版)](compliance-score-methodology.md)
+## 合規性分數和合規性管理員
+### [合規性分數 (預覽)](compliance-score.md)
+### [設定合規性分數 (預覽)](compliance-score-setup.md)
+### [使用合規性分數 (預覽)](working-with-compliance-score.md)
+### [合規性分數計算 (預覽)](compliance-score-methodology.md)
+### [合規性分數版本資訊 (預覽)](compliance-score-release-notes.md)
+### [合規性管理員 (預覽版)](compliance-manager-overview.md)
+#### [合規性管理員的新增功能 (預覽版)](compliance-manager-release-notes.md)
+#### [使用合規性管理員 (預覽版)](working-with-compliance-manager.md)
+#### [合規性管理員 (傳統)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 ## [GDPR 資料主體要求工具](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [GDPR 的 Office 365 資訊保護](office-365-information-protection-for-gdpr.md)
@@ -388,9 +401,9 @@
 
 # [法規合規性行動計劃](compliance-solutions-overview.md)
 
-## [ISO — 建議使用的行動計劃](iso-action-plan.md)
-## [ — 建議使用的行動計劃](nist-action-plan.md) 
-
+## [ISO - 建議使用的行動計劃](iso-action-plan.md)
+## [NIST - 建議使用的行動計劃](nist-action-plan.md)
+## [CCPA - 常見問題集](ccpa-faq.md)
 ## [GDPR](gdpr.md)
 ### [建議的 GDPR 計劃](gdpr-action-plan.md)
 
@@ -587,6 +600,7 @@
 #### [PASF (英國)](offering-pasf-uk.md)
 
 ### 北美
+#### [加州消費者隱私法 (CCPA)](offering-ccpa.md)
 #### [加拿大隱私權法](offering-canadian-privacy-laws.md)
 
 ### 南美洲
