@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 如果您想要是確定您接收來自特定寄件者的郵件，因為您信任它們與他們的郵件，您可以調整您允許在 Exchange 系統管理中心中的垃圾郵件篩選原則中的清單。
-ms.openlocfilehash: b01abc327dd19a2d3098d3c49deed1edb1c07b68
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8651b09d891a57cd5239311026af701064c9a4e1
+ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077939"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37964449"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>在 Office 365 中建立安全的寄件者清單
 
@@ -59,7 +59,7 @@ ms.locfileid: "37077939"
 
 1. 將垃圾郵件信賴等級 (SCL) 設定為-1 （略過垃圾郵件篩選）。
 
-2. 新增至說規則沒有 X 標頭。 在下列範例中，您可以新增一個簡單的標頭 」 X ETR： 略過垃圾郵件篩選已驗證寄件者`contoso.com`"。 如果您有此規則中的多個網域，您可以變更成適當的標題文字。**當郵件會略過篩選 ETR，因為它加上戳記 sfv: skn X Forefront-反垃圾郵件報告標頭中**（**如果它是在 IP 允許清單中，也加上戳記 IPV:CAL**）。 這將會協助您疑難排解。
+2. 新增至說規則沒有 X 標頭。 在下列範例中，您可以新增一個簡單的標頭 」 X ETR： 略過垃圾郵件篩選已驗證寄件者`contoso.com`"。 如果您有此規則中的多個網域，您可以變更成適當的標題文字。 **當郵件會略過篩選 ETR，因為它加上戳記 sfv: skn X Forefront-反垃圾郵件報告標頭中的**（**如果它是在 IP 允許清單中，也加上戳記 IPV:CAL**）。 這將會協助您疑難排解。
 
 ![GUI 的略過垃圾郵件篩選。](../media/1-AllowList-SkipFilteringFromContoso.png)
 
