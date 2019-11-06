@@ -90,6 +90,7 @@
 #### [設定舊版 Office 365 郵件加密的 Azure Rights Management](set-up-azure-rms-for-previous-version-message-encryption.md)
 
 ## [了解資料分類 (預覽)](data-classification-overview.md)
+### [檢視已套用標籤的內容 (預覽)](data-classification-content-explorer.md)
 ### [查看標籤活動 (預覽)](data-classification-activity-explorer.md)
 ### [開始使用可訓練的分類器 (預覽)](classifier-getting-started-with.md)
 ### [使用已可使用的分類器 (預覽)](classifier-using-a-ready-to-use-classifier.md)
