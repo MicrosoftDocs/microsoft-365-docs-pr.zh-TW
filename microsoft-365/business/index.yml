@@ -1,0 +1,185 @@
+### YamlMime:Hub
+title: Microsoft 365 商務版資源
+summary: Microsoft 365 商務版包含最新版的 Windows 和 Office 應用程式，如 Excel 和 Outlook。 取得並執行，並善加利用資料保護和延伸至所有商務裝置的安全性。
+brand: m365
+metadata:
+  title: Microsoft 365 商務版資源
+  description: 描述
+  ms.service: o365-administration
+  ms.topic: hub-page
+  ms.collection: collection
+  author: samanro
+  ms.author: samanro
+  ms.date: 10/01/2019
+  ms.openlocfilehash: 88c08b430fa67d81435b7b6a4eb079a216b228d7
+  ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 11/06/2019
+  ms.locfileid: "38002421"
+conceptualContent:
+  items:
+  - title: 什麼是 Microsoft 365 商務版？
+    links:
+    - url: microsoft-365-business-overview.md
+      itemType: overview
+      text: 概觀
+    - url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+      itemType: video
+      text: Microsoft 365 商務版訓練
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-licensing-deck
+      itemType: overview
+      text: 比較計劃 （只有英文）
+    - url: https://docs.microsoft.com/en-us/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
+      itemType: reference
+      text: 服務描述
+    - url: support/microsoft-365-business-faqs.md
+      itemType: reference
+      text: 常見問題集
+  - title: 設定 Microsoft 365 商務版
+    links:
+    - url: https://support.office.com/article/38003e30-9d10-44cf-b596-f1b5f662bfa1
+      itemType: video
+      text: 1. 執行設定精靈
+    - url: protection-settings-for-windows-10-pcs.md
+      itemType: how-to-guide
+      text: 2. 保護您的電腦
+    - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
+      itemType: video
+      text: 3. 設定 microsoft Teams
+    - url: https://support.office.com/article/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
+      itemType: get-started
+      text: 4. 我有其他問題
+  - title: 合作夥伴 （僅提供英文版） 的資源
+    links:
+    - url: https://www.microsoft.com/microsoft-365/partners/business
+      itemType: overview
+      text: 協力廠商] 頁面
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-customer-pitch-deck
+      itemType: download
+      text: 形艙面的 （客戶焦點）
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-partner-pitch-deck
+      itemType: download
+      text: 形艙面的 （合作夥伴焦點）
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
+      itemType: download
+      text: 技術基礎
+  - title: 管理使用者
+    links:
+    - url: https://docs.microsoft.com/microsoft-365/business/add-users-m365b
+      itemType: how-to-guide
+      text: 新增使用者
+    - url: https://docs.microsoft.com/office365/admin/add-users/remove-former-employee
+      itemType: how-to-guide
+      text: 移除使用者
+    - url: https://docs.microsoft.com/office365/admin/add-users/reset-passwords
+      itemType: how-to-guide
+      text: 重設其他人的密碼
+    footerLink:
+      url: https://docs.microsoft.com/office365/admin/admin-home
+      text: 查看更多
+  - title: 管理威脅
+    links:
+    - url: https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/office-365-atp
+      itemType: overview
+      text: Office 365 進階威脅防護
+    - url: set-up-mfa.md
+      itemType: how-to-guide
+      text: 設定 MFA
+    - url: https://docs.microsoft.com/en-us/microsoft-365/business/increase-threat-protection#protect-against-ransomware
+      itemType: how-to-guide
+      text: 勒索軟體防護
+    - url: https://docs.microsoft.com/azure/active-directory/conditional-access/overview
+      itemType: overview
+      text: 條件式存取
+    footerLink:
+      url: https://docs.microsoft.com/office365/admin/admin-home
+      text: 查看更多
+  - title: 管理資料
+    links:
+    - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
+      itemType: overview
+      text: 資料遺失防護
+    - url: https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980
+      itemType: how-to-guide
+      text: 傳送加密的電子郵件
+    - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving
+      itemType: how-to-guide
+      text: 設定電子郵件保留
+    - url: https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9
+      itemType: video
+      text: 建立及使用敏感度標籤
+    footerLink:
+      url: https://docs.microsoft.com/microsoft-365/compliance/
+      text: 查看更多
+  - title: 管理裝置
+    links:
+    - url: view-policies-and-devices.md
+      itemType: how-to-guide
+      text: PC & 行動裝置
+    - url: remove-company-data.md
+      itemType: how-to-guide
+      text: 移除公司資料
+    - url: reset-devices-to-factory-settings.md
+      itemType: how-to-guide
+      text: 抹除及重設
+    - url: https://docs.microsoft.com/en-us/intune/index
+      itemType: overview
+      text: Intune
+    - url: manage-windows-devices.md
+      itemType: how-to-guide
+      text: 設定混合式 Azure AD 加入
+    - url: access-resources.md
+      itemType: how-to-guide
+      text: 設定 Azure AD 加入
+    - url: https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot
+      text: Windows Autopilot
+      itemType: overview
+    footerLink:
+      url: manage-windows-devices.md
+      text: 查看更多
+  - title: 監視安全性
+    links:
+    - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score
+      itemType: how-to-guide
+      text: 安全分數
+    - url: https://docs.microsoft.com/intune/apps/app-protection-policies-monitor
+      itemType: overview
+      text: Intune 應用程式保護原則報告
+    - url: https://docs.microsoft.com/office365/enterprise/view-service-health
+      itemType: how-to-guide
+      text: 狀況監視提醒
+    footerLink:
+      url: https://docs.microsoft.com/microsoft-365/security/
+      text: 查看更多
+  - title: 支援與社群
+    links:
+    - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
+      itemType: whats-new
+      text: Announcements
+    - url: https://support.office.com/article/7f681212-c649-4a3e-a43b-32b1d1e58988
+      itemType: video
+      text: 取得說明
+    - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business/bd-p/Microsoft365business
+      itemType: overview
+      text: 傳送意見反應
+    - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
+      itemType: overview
+      text: 小型和中型企業技術社群
+  - title: 我要如何...
+    links:
+    - url: sign-up.md
+      itemType: get-started
+      text: 註冊 Microsoft 365 商務版
+    - url: https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790
+      itemType: video
+      text: 將檔案儲存在雲端
+    - url: https://support.office.com/article/9bc459c4-ce13-479b-b88b-b8ae49092732
+      itemType: video
+      text: Microsoft Teams 與共同作業
+    - url: https://docs.microsoft.com/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=%2Fmicrosoft-365%2Fbusiness%2Ftoc.json&bc=%2Fmicrosoft-365%2Fbusiness%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+      itemType: how-to-guide
+      text: 檢視我的帳單
+    footerLink:
+      url: https://docs.microsoft.com/microsoft-365/security/
+      text: 查看更多

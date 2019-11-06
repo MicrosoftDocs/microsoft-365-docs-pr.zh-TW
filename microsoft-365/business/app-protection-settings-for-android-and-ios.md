@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: 了解如何建立、 編輯或刪除應用程式管理原則，和保護 Android 或 iOS 裝置上的工作檔案。
-ms.openlocfilehash: a829cfbcb3209313a53e0a1406f5252d3d5580d8
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 914e6848ac46eb334516aadff2827da2b83a38c4
+ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574731"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38002078"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>設定 Android 或 iOS 裝置的 App 保護設定
 
@@ -71,7 +71,7 @@ ms.locfileid: "37574731"
     
 ## <a name="available-settings"></a>可用的設定
 
-下表針對用來保護裝置上的工作檔案的設定，以及控管使用者透過行動裝置存取 Office 檔案方式的設定，提供相關的詳細資訊。
+下表提供可用來保護工作檔案的裝置上設定及控制使用者如何透過行動裝置存取 Office 檔案的設定的詳細的資訊。
   
  如需詳細資訊，請參閱 [Microsoft 365 商務版中的保護功能如何對應 Intune 設定](map-protection-features-to-intune-settings.md)。 
   

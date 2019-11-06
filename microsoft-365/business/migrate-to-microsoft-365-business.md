@@ -1,5 +1,5 @@
 ---
-title: 從 Office 365 商務進階版移轉到 Microsoft 365 商務版
+title: 從 Office 365 商務進階版升級至 Microsoft 365 商務版
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -14,38 +14,29 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
-description: 了解如何將業務移至 Microsoft 365 商務版。
-ms.openlocfilehash: e4bb18904355663f9f26f58a3fd3aaf7420e5378
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: 將貴公司從 Office 365 商務進階版升級至 Microsoft 365 商務版的步驟。
+ms.openlocfilehash: 1e337b908f848da1d33cbd8e662652550d302b14
+ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072733"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38002102"
 ---
-# <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>從 Office 365 商務進階版移轉到 Microsoft 365 商務版
+# <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>從 Office 365 商務進階版升級至 Microsoft 365 商務版
 
-如果您已經有 Office 365 商務版訂閱，例如 Office 365 商務進階版，您可以輕鬆地將授權新增至 Microsoft 365 商務版，並將它們指派給部分或所有使用者。
-  
-> [!NOTE]
-> 您無法使用 [[切換方案](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a?.aspx#switchbutton)] 按鈕尚未升級為 Microsoft 365 商務版。 
-  
-## <a name="add-microsoft-365-business-licenses"></a>新增 Microsoft 365 商務版授權
+如果您有[Office 365 商務版訂閱](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2)，例如 Office 365 商務進階版，您可以輕鬆地升級至 Microsoft 365 商務版。 如果您想要加入，升級至 Microsoft 365 商務版： 
+- Windows 10 專業版 （若要執行 Windows 8 或更新版本的電腦）
+- 簡單管理裝置上的商務資料的控制項
+- 進階的安全性的功能。
+進一步了解如何在[Microsoft.com](https://www.microsoft.com/microsoft-365/business) Microsoft 365 商務版
 
-您有兩種方法可以取得 Microsoft 365 商務版。 如果您有合作夥伴，他或她可以購買 Microsoft 365 商務版您從[Microsoft 合作夥伴中心](get-microsoft-365-business.md)。 您的合作夥伴也可以協助您轉換到 Microsoft 365 商務版。
-  
-如果您管理自己的訂閱，您可以[連絡銷售人員](https://www.microsoft.com/microsoft-365/business)購買 Microsoft 365 商務版授權。 
-  
-請參閱 <<c0>新增、 變更或刪除訂閱顧問合作夥伴以了解如何開始使用與合作夥伴。 
-  
-如果您給定購買您授權的連結，您將會逐步執行精靈像以下這樣。 選擇 [**是]，新增到我的帳戶**]。 您也可以選擇的授權數目與付款的方法。
-  
-![在 Microsoft 365 商務版直接購買連結中，選擇要新增到您目前的帳戶，或註冊新的帳戶。](media/8bc54fd1-9cab-44d5-af91-c471e89aea46.png)
-  
-## <a name="assign-microsoft-365-licenses"></a>將 Microsoft 365 授權指派
+## <a name="whats-the-difference-between-office-365-business-premium-and-microsoft-365-business"></a>Office 365 商務進階版和 Microsoft 365 商務版之間的差異為何？
+我們已加入下列兩個計劃以並排比較至[Microsoft 365 商務版服務說明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。 
 
 1. 一旦您已購買新授權，且這是您沒有在第一次，Microsoft 365 商務版設定橫幅會顯示在系統管理中心。
     
@@ -68,7 +59,7 @@ ms.locfileid: "34072733"
     
     如果您沒有新員工加入而且想要將授權指派給現有的使用者，請選擇 [**下一步**]。
     
-4. 在 * * 遷移電子郵件訊息 * *] 頁面上，您可以選擇任何您在步驟 3 中新增的新使用者的電子郵件移轉。 您也可以略過此步驟。 選擇 [下一步]****。
+4. 在**移轉電子郵件訊息**] 頁面上，您可以選擇任何您在步驟 3 中新增的新使用者的電子郵件移轉。 您也可以略過此步驟。 選擇 [下一步]****。
     
 5. 在最後一個頁面上，選擇 [**移至系統管理中心**，並那里繼續執行安裝程式。
     
@@ -78,19 +69,47 @@ ms.locfileid: "34072733"
     
     ![在 [使用者] 卡片中，選擇 [產品授權] 旁的 [編輯]。](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
   
-8. 在 [**產品授權**滑動**Microsoft 365 商務版****上** \> **儲存**，然後**關閉**。
-    
-一旦您已購買的初始授權的 Microsoft 365 商務版，您現在也可以新增更多在**帳單** \> **購買服務**。 在 [**購買服務**] 頁面上您可以按一下省略符號 [ **Microsoft 365 商務版**] 卡片上，然後選擇 [購買更多**變更授權數量**。 
+## <a name="before-you-get-started"></a>開始之前
+
+- **何時應該選擇升級？** 升級時，選擇您想要升級**的所有使用者**指派給單一計劃。 當您選擇升級時，所有計劃使用者取得切換到另一個計劃在同一時間。 如果您不想要升級所有人指派給單一計劃，請購買新方案 （在此情況 Microsoft 365 商務版），以及[個別指派這些授權](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)給您想要升級每位使用者的授權。 
+- **某些附加元件可能會導致升級**如果您嘗試啟動升級，且必須防止您繼續執行的附加元件，您可以請先移除附加元件，並再新增回來稍後-如果您仍然需要。 
+- **如果您預付您計劃**沒有預付方案直接升級路徑。 您會知道是否您有預付的方案。 因為您設定儲存區中使用您可能已購買的產品識別碼您計劃。 合作夥伴連絡，移至 Microsoft 網上商店或請稍候，直到您預付的方案過期切換至新的計劃。
+
+## <a name="upgrade-to-microsoft-365-business"></a>升級至 Microsoft 365 商務版
+遵循下列步驟在[新版系統管理中心](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)購買授權：
+1. 登入系統管理中心在<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。
+2. 移至功能窗格，然後選取 [**帳單** \> **產品 & 服務**。 尋找您的 Office 365 訂閱，然後選取要檢視詳細資料。 
+
+    ![螢幕擷取畫面顯示如何尋找並選取您的訂閱在系統管理中心。](media/FindYourSubscription.png)
+
+3. 在下一個頁面上，選取 [**升級**]。 
+
+      ![螢幕擷取畫面顯示在系統管理中心中選取 [升級] 的位置。](media/SelectUpgrade.png)
+
+  > [!NOTE]
+  > 如果您看見 「 您的訂閱不支援升級以群組為基礎的授權 Azure Active Directory 中 」 的訊息，則可以放心忽略這除非您有非常大型的組織。 組織者選取了此選項會知道他們正在使用群組為基礎的授權。
+
+4. 接下來，您可以檢視清單中的，您可以升級至 Office 計劃。 在此情況下，尋找 Microsoft 365 商務版計劃。 您可以向下捲動如果您想要查看所有 Office 應用程式及隨附於此計劃的服務。 **Microsoft 365 商務版**，在 [選取要新增至購物車的 Microsoft 365 商務版**升級**。
+5. 在 [購物車：
+    1. 我們將會自動包含至購物車所有目前使用者的授權。 如果您需要更多或更低的授權，您需要[購買](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)並個別指派這些授權。  
+    2. 您可以調整方式您想要支付的每月或每年。 選取下拉式] 功能表，可讓您選擇。
+6. 選取 [**移至簽出**，您會看到購買，包括針對此帳戶的付款方式項目的摘要。 如果有的話，您也可以新增的促銷代碼。
+7. 選取 [**下單**]，以完成購買。
+若要設定新服務計劃的幾分鐘的花 Microsoft。 若要檢查進度，請選取 [**檢查升級狀態**。 
+1. 準備您的計劃之後，您可能需要完成一些額外設定步驟，在系統管理中心。 在 [功能窗格中，選取 [**住家**完成任何額外的設定步驟。
+
+> [!NOTE]
+> 您會收到您不再需要 Ofifce 365 授權依比例的退款。 您的銀行帳戶或信用卡將支付約兩天後設定新的計劃。
   
 ## <a name="protect-user-devices-and-files"></a>保護使用者裝置和檔案
 
-您已指派授權給 Microsoft 365 商務版之後，您可以開始保護使用者的裝置和檔案。
+現在，Microsoft 365 商務版授權已指派，完成步驟，以啟動保護裝置和檔案。 您要使用系統管理中心瀏覽窗格中包含一些新選項。
   
-1. 在系統管理中心中，在左側導覽中，移至 [**裝置** \> **原則**。
+1. 在系統管理中心，在 [功能窗格中，移至 [**裝置** \> **原則**。
     
-2. 在 [**裝置原則**] 頁面上，選擇 [**新增**]。
+2. 在 [**裝置原則**] 頁面上，選取 [**新增**。
     
-3. 在 [**新增原則**] 窗格中輸入原則的名稱，，然後從下拉式清單中選擇 [**原則類型**。 
+3. 在 [**新增原則**] 窗格中指定原則名稱 （例如，保護工作檔案），，然後從下拉式清單中選擇 [**原則類型**。 
     
     您可以設定應用程式原則保護 Android 和 iPhone 裝置以及 Windows 10 上的檔案，您可以設定公司擁有 Windows 10 裝置的裝置設定原則。 請參閱下列連結，如需詳細資訊：
     
@@ -100,17 +119,14 @@ ms.locfileid: "34072733"
     
   - [設定適用於 Windows 10 電腦的裝置保護設定](protection-settings-for-windows-10-pcs.md)
     
-   ![在 [新增原則] 窗格中，輸入名稱，然後選擇 [原則類型從下拉式清單功能表。](media/76ef37e4-1d18-4f34-8a0f-391ab1d0ae2b.png)
   
-4. 一旦您設定原則時，您和您的員工可以設定裝置：
+4. 設定原則之後，您和您的員工可以設定裝置：
     
-  - 如果您的 Windows 已經不在 Windows Pro Creator 更新，您必須[升級至 Windows [專業版 Creators Update](upgrade-to-windows-pro-creators-update.md)。
+  - 如果您的 Windows 裝置已不使用 Windows Pro Creator 更新，您需要[升級至 Windows [專業版 Creators Update](upgrade-to-windows-pro-creators-update.md)。
     
   - 如需 Windows 裝置步驟，請參閱[為 Microsoft 365 商務版使用者的 Windows 裝置上設定](set-up-windows-devices.md)。 
     
   - 如需 Android 手機和 Iphone 步驟，請參閱[為 Microsoft 365 商務版使用者的行動裝置上設定](set-up-mobile-devices.md)。 
-    
-5. 若要自動安裝 Office 用戶端應用程式，請參閱[準備 Office 用戶端部署 Microsoft 365 商務版](prepare-for-office-client-deployment.md)和[自動安裝或解除安裝 Windows 10 裝置上的 Office](auto-install-or-uninstall-office.md)。
-    
+
 
 
