@@ -3,7 +3,7 @@ title: Microsoft 365 企業版測試實驗室指南
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 11/04/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用「測試實驗室指南」以設定 Microsoft 365 企業版的示範、概念證明或開發/測試環境。
-ms.openlocfilehash: 082d110ca7b25d3613ee276b30066683cd0232b5
-ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
+ms.openlocfilehash: dadde9d6366e2d5d12bf632d0b77bf60ba9cdbab
+ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37733417"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37964421"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Microsoft 365 企業版測試實驗室指南
 
@@ -32,9 +32,10 @@ TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符�
   
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-> [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
-  
+按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+
+[![Microsoft 365 企業版測試實驗室指南堆疊](./media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
+
 ## <a name="base-configuration"></a>基本設定
 
 首先，您可以建立 [Microsoft 365 企業版](https://docs.microsoft.com/microsoft-365-enterprise/)的測試環境，以便包含 Office 365 E5、Enterprise Mobility + Security (EMS) E5 及 Windows 10 企業版。您可以建立兩個不同類型的基底組態：
@@ -117,6 +118,4 @@ TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符�
     
    設定特殊權限存取管理，以對您 Office 365 組織中提升權限和特殊權限的工作進行 Just-In-Time 存取。
 
-## <a name="see-also"></a>另請參閱
 
-[使用雲端採用 TLG 測試 Office 365](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
