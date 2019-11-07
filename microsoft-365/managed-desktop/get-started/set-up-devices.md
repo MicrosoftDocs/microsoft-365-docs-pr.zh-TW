@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: dd86637aeb0d8a8690729a97e81ad5e2bea62818
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 7282e1f9d780c127dd70845efefa90aa03e57537
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982886"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38011844"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>Microsoft 受管理的電腦裝置上設定
 
@@ -35,3 +35,14 @@ Microsoft 受管理電腦中，您可以使用新的和現有的裝置。
     - [自行註冊現有裝置](register-reused-devices-self.md)
     - 使用合作夥伴註冊裝置
 3. [準備好讓使用者](get-started-devices.md)使用 Microsoft 受管理的電腦裝置
+
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>若要開始使用 Microsoft 受管理電腦的步驟
+
+1. [新增及確認系統管理入口網站中的連絡人](add-admin-contacts.md)
+2. [調整條件式存取](conditional-access.md)
+3. [指派授權](assign-licenses.md)
+4. [部署 Intune 公司入口網站](company-portal.md)
+5. [啟用企業狀態漫遊](enterprise-state-roaming.md)
+6. 設定裝置 （本主題）
+7. [讓您的使用者準備好使用裝置](get-started-devices.md)
+8. [部署應用程式](deploy-apps.md)

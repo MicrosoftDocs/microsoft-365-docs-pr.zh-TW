@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5e0ca142e2ef84f198ee154c5b7c7f4f6621c37c
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 6b5f1d7cf8070808aecb57c7f5b2c16ec84b37d6
+ms.sourcegitcommit: 543ac29a15412a348b61db2297e7bcdcca842206
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982454"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38020366"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft 受管理的電腦應用程式需求
 
@@ -38,7 +38,7 @@ Microsoft 受管理的電腦裝置上不允許特定應用程式類型：
 
 ## <a name="restricted-app-behaviors"></a>受限制的應用程式行為
 
-某些應用程式行為產生負面影響的使用者經驗，或可能呈現 Microsoft 受管理的電腦裝置安全性風險。 若要執行而不從 Microsoft 特定豁免 Microsoft 受管理的桌上型電腦環境中不允許具有下列行為的應用程式。
+某些應用程式行為產生負面影響的使用者經驗，或可能呈現 Microsoft 受管理的電腦裝置安全性風險。 不允許沒有特定的 Microsoft 受管理電腦環境中執行從 Microsoft 應用程式具有下列行為。
 
 使用者經驗：
 - 安裝背景服務
@@ -58,5 +58,5 @@ Microsoft 受管理的電腦裝置上不允許特定應用程式類型：
 
 Microsoft 受管理電腦只支援可透過 Windows Update 或收件匣隨 Microsoft 受管理裝置的裝置驅動程式。 
 
-如果應用程式需要特定執行它的驅動程式會被視為受限制的應用程式，並要求豁免部署至 Microsoft 受管理的電腦。 
+如果應用程式需要特定執行它的驅動程式會被視為受限制的應用程式，且需要部署至 Microsoft 受管理的電腦。 
 

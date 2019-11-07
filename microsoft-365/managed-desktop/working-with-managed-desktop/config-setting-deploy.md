@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5b6a2756514e94cb4f96141d6e7c9f6f2a6dd7ff
-ms.sourcegitcommit: a4657a499967751d4c2dfc6cd1904258ab8be193
+ms.openlocfilehash: 7e3827dc12c04d2c7952f9321a70714691c5ed47
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37040791"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012298"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>部署及追蹤可設定-Microsoft 受管理的電腦
 
@@ -35,7 +35,7 @@ ms.locfileid: "37040791"
 
 **若要部署的變更**
 
-1. 登入[Microsoft 受管理電腦系統管理員入口網站](http://aka.ms/mwaasportal)
+1. 登入[Microsoft 受管理電腦系統管理員入口網站](https://aka.ms/mwaasportal)
 2. 在 [**設定**] 下選取 [**可設定**]。
 3. 在**部署狀態**工作區中，選取您想要部署的設定，然後選取分段的部署，以部署。
 4. 選取要將變更部署至其中一個部署群組的**部署**。
@@ -53,7 +53,7 @@ ms.locfileid: "37040791"
 我們將顯示還原使用桌面背景圖片做為範例變更的步驟。 
 
 **若要還原的變更**
-1. 登入[Microsoft 受管理電腦系統管理員入口網站](http://aka.ms/mwaasportal)
+1. 登入[Microsoft 受管理電腦系統管理員入口網站](https://aka.ms/mwaasportal)
 2. 在 [**設定**] 下選取 [**可設定**]。
 3. 在**部署狀態**工作區中，選取您想要回復，的設定，然後選取要還原分段的部署。
 4. **需要回復此變更**，請選取 [**還原部署**。

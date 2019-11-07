@@ -5,12 +5,12 @@ keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: c3674df0bfd797b9076bbf52379444665b1ce4d8
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: 70cde49eb162e33ee99d59eb2ba9782ac1b7db30
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857306"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012308"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>封存的 Microsoft 受管理電腦裝置
 
@@ -32,8 +32,8 @@ ms.locfileid: "34857306"
 
 | Model  | 最小的規格  | 其他需求   | 退休日期 |
 |---------|---------|---------|---------|
-|[Surface Laptop](https://www.microsoft.com/en-us/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 May 20，** |
-|[Surface Pro](https://www.microsoft.com/en-us/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 6 月 15日，** |
+|[Surface Laptop](https://www.microsoft.com/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 May 20，** |
+|[Surface Pro](https://www.microsoft.com/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 6 月 15日，** |
 
 
 此外，裝置必須也：

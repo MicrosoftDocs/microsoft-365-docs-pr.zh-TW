@@ -1,19 +1,19 @@
 ---
-title: 部署 Microsoft 受管理的電腦裝置的應用程式
+title: 將應用程式部署至裝置
 description: 新增及部署至 Microsoft 受管理的電腦裝置的應用程式的資訊。
 keywords: Microsoft 受管理的電腦、 Microsoft 365、 服務、 文件、 應用程式、-營運應用程式、 LOB 應用程式
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5e842849afbedd506689caa9ffc0953a58e18fed
-ms.sourcegitcommit: f5c9aff5700f7824bf71f4a7e8c7236f7d91043e
+ms.openlocfilehash: 5f1e2bd2440b5c38c958d3182684e87643f2e853
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36059583"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012024"
 ---
-# <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>將應用程式部署至 Microsoft 受管理的電腦裝置
+# <a name="deploy-apps-to-devices"></a>將應用程式部署至裝置
 以 Microsoft 受管理的電腦上架一部分的包含新增和應用程式部署至使用者的裝置。 一旦您使用 Microsoft 受管理電腦入口網站，您可以新增並部署您的應用程式。 
 
 整體程序看起來像這樣：
@@ -38,7 +38,7 @@ ms.locfileid: "36059583"
 
 您可以登入 Microsoft 受管理電腦入口網站，或登入 Intune，然後搜尋 Microsoft 受管理電腦的。 我們將顯示登入 Microsoft 受管理電腦入口網站。 
 
-1.  登入[Microsoft 受管理的桌上型電腦系統管理入口網站](http://aka.ms/mmdportal)。 
+1.  登入[Microsoft 受管理的桌上型電腦系統管理入口網站](https://aka.ms/mmdportal)。 
 2.  在 [**詳細目錄**] 下選取 [**應用程式**]。
 3.  在 [應用程式的工作負載，選取 [**新增**。
 4.  在 [**新增應用程式**中，選取 [ **-營運應用程式**或**Windows 應用程式 (Win32)**。
@@ -93,88 +93,27 @@ Uninstall |  載入應用程式是從選取群組中的裝置解除安裝。 | M
 
 **若要將應用程式指派給您的使用者**
 
-1. 登入[Microsoft 受管理的桌上型電腦系統管理入口網站](http://aka.ms/mmdportal)。
+1. 登入[Microsoft 受管理的桌上型電腦系統管理入口網站](https://aka.ms/mmdportal)。
 2. 在 [受管理的電腦] 窗格中，選取 [**應用程式**]。
 3. 在 [應用程式的工作負載，選取您要指派使用者，並選取 [**指派使用者群組**的應用程式。
 4. 特定應用程式中，選取工作分派類型 （適用於使用，有需要，解除安裝），並指派適當的群組。
 5. 在 [指派應用程式] 窗格中，選取 **[確定]**。
 
+
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>若要開始使用 Microsoft 受管理電腦的步驟
+
+1. [新增及確認系統管理入口網站中的連絡人](add-admin-contacts.md)
+2. [調整條件式存取](conditional-access.md)
+3. [指派授權](assign-licenses.md)
+4. [部署 Intune 公司入口網站](company-portal.md)
+5. [啟用企業狀態漫遊](enterprise-state-roaming.md)
+6. [設定裝置](set-up-devices.md)
+7. [讓您的使用者準備好使用裝置](get-started-devices.md)
+8. 部署應用程式 （本主題）
+
+
 <!--# Preparing apps for Microsoft Managed Desktop
 
 This topic is the target for 2 "Learn more" links in the Admin Portal (aka.ms/app-overview;app-package); also target for link from Online resources (aka.ms/app-overviewmmd-app-prep) do not delete.
 
-Applications: supported/onboard/deployment
- 
-Microsoft and Microsoft Managed Desktop customers have equally critical, yet different responsibilities around applications used with Microsoft Managed Desktop.
-
-## Microsoft responsibilities
-**Office 365 apps**
-Microsoft will provide full service for the deployment, update, and support of specific Office 365 apps. All users will receive the base set of Office 365 click to run, 64 bit version of applications included in the device’s image so that a user can quickly become productive. The Project and Visio applications in of the Office 365 suite are licensed separately.  Microsoft Managed Desktop will provide deployment groups allowing the IT Administrator to manage licenses and deploy these applications appropriately for their organization. Microsoft will support end users of these applications through the Microsoft Managed Desktop Support channels.
-
-**Line-of-business apps**
-Microsoft provides tooling for IT Administrators to manage and deploy their line-of-business (LOB) applications to end users as a part of the Intune product. Microsoft will support application deployment issues as detailed in [Line-of-business applications](#line-of-business-applications) 
-
-**Deploy with Intune**
-Intune will be linked to the **Microsoft Store for Business** during Microsoft Managed Desktop onboarding allowing procured apps to be deployed through Intune. Microsoft will also deploy the web-based version of the Company Portal to end users so that IT Administrators can provide a self-service experience for end users.
-
-**App management**
-Microsoft may identify restricted applications which are not suitable for the modern workplace because of their system impact. When such an application is identified Microsoft will notify the customer and that application will need to be removed from the tenant. 
-
-For more information on restricted app behaviors and app requirements, see [Microsoft Managed Desktop app requirements](../service-description/mmd-app-requirements.md)
-
-## Customer responsibilities
-The Office 365 Suite is core to Microsoft’s productivity offerings and is included in the Microsoft 365 License for all Microsoft Managed Desktop users. While Microsoft deploys, updates, and supports Office Applications to Microsoft Managed Desktop Devices there are still some areas for which the customer is responsible.
-- **Assign licenses** - Customers are responsible for assigning the appropriate licenses to end users for Office 365. 
-- **Add users to security groups** - For customers with users who need Project or Visio, the IT administrator must add those users to the appropriate deployment groups. IT administrators are also responsible for managing end of life for those users. 
-- **Deploy Office 365 Add Ons** - Customers are responsible for deploying any plugins to the Office 365 suite which are deemed necessary. 
-
-Since line-of-business (LOB) apps are unique for each customer, customers are responsible for managing all applications within their organization not deployed by Microsoft. This includes:
-- Deciding which apps are needed and who needs them
-- Assigning apps to those users
-- Create and maintain Azure Active Directory (AD) groups for managing app assignments 
-
-The customer must upload LOB apps to Intune. They are then responsible for deploying, updating, and decommissioning those applications over their respective lifecycles, as well as managing support for these apps for their users.
-
-## Office applications
-As part of the Microsoft 365 E5 license, Office 365 Standard Suite (64 Bit) is deployed by Microsoft. 
-
-For details, see [Microsoft Managed Desktop technologies](../intro/technologies.md) <!--- and the other applications licensed under Office 365 E5 may be deployed by the customer using Intune’s deployment tools.
-
-## Line-of-business applications
-This table summarizes responsibilities across the different phases for line-of-business (LOB) applications. 
-
-Application work items |    Customer    | Microsoft
---- | --- | ---
-**Onboarding apps** |  |
-Identify applications needed for targeted user groups   | ![yes](images/checkmark.png)  |
-Create and manage Azure AD groups for app deployment | ![yes](images/checkmark.png) |   
-**App Packaging** |  |
-Package apps to meet Intune deployment standards |  ![yes](images/checkmark.png) |  
-Upload apps to Intune | ![yes](images/checkmark.png)     |
-Test apps in Microsoft Managed Desktop environment |    ![yes](images/checkmark.png) |  
-Test apps with end users    | ![yes](images/checkmark.png) |    
-**Deployment** | |
-Manage and assign users to applications  | ![yes](images/checkmark.png)  |
-Intune deployment tools delivers application to remote clients| |   ![yes](images/checkmark.png)
-Identify and deploy application updates through Intune | ![yes](images/checkmark.png)    |
-Unistall and remove applications when they have been retired    | ![yes](images/checkmark.png) |    
-**Management** | |
-Procure and assign licenses |   ![yes](images/checkmark.png)     |
-Provide end-user support for line-of-business apps  | ![yes](images/checkmark.png) |
-Manage app settings remotely    | ![yes](images/checkmark.png) |
-
-For information on LOB application requirements, see [Microsoft Managed Desktop application requirements](../service-description/mmd-app-requirements.md)
-
-
-## Intune application deployment
-Application management can be handled through the Microsoft Managed Desktop Admin portal, or through the Intune portal. Intune’s app management portal shows applications deployed for Windows, Android, and iOS. Microsoft Managed Desktop Admin portal limits the view to Windows 10 applications. Both are available through the Azure Portal. 
-* [Intune app management basics](https://docs.microsoft.com/intune/app-management)
-* [Add apps to Intune](https://docs.microsoft.com/intune/app-management)
-   * [Add a line-of-business App](https://docs.microsoft.com/intune/lob-apps-windows)
-   * [Add Win32 apps to Intune](https://docs.microsoft.com/intune/apps-win32-app-management)
-   * [Add web applications](https://docs.microsoft.com/intune/web-app)
-* [Deploy apps](https://docs.microsoft.com/intune/apps-deploy)
-   * [Deploy apps to Windows 10](https://docs.microsoft.com/intune/apps-windows-10-app-deploy)
-* Company Portal
-   * [Deploy the Company Portal](https://docs.microsoft.com/intune/store-apps-company-portal-app)
-   * [Configure the Company Portal app](https://docs.microsoft.com/intune/company-portal-app)-->
+-->

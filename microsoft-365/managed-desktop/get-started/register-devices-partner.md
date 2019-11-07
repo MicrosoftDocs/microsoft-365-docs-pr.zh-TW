@@ -1,18 +1,18 @@
 ---
-title: 若要註冊裝置的協力廠商的步驟
+title: 讓合作夥伴註冊裝置的步驟
 description: 如何合作夥伴可以註冊裝置，可由 Microsoft 受管理的電腦
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 69d9387047cbb14a97f3da1d401b30a97bd7fd90
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 971b17d3f9fad15d5c254d47af9b6eb30b66633c
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982714"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38011944"
 ---
-# <a name="steps-for-partners-to-register-devices"></a>若要註冊裝置的協力廠商的步驟
+# <a name="steps-for-partners-to-register-devices"></a>讓合作夥伴註冊裝置的步驟
 
 
 本主題說明適用於要遵循註冊裝置的合作夥伴的步驟。 自行註冊裝置的程序會詳細說明[自行註冊 Microsoft 受管理電腦中的裝置](register-devices-self.md)。
@@ -20,7 +20,7 @@ ms.locfileid: "36982714"
 
 
 ## <a name="prepare-for-registration"></a>準備註冊 
-完成之前註冊為客戶，您必須先建立與其[合作夥伴中心](https://partner.microsoft.com/dashboard)的關係。 請務必選取 [**包含委派管理 Azure Active Directory 和 Office 365 的權限**。 深入瞭解[合作夥伴中心的說明](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer)。
+完成之前註冊為客戶，您必須先建立與其[合作夥伴中心](https://partner.microsoft.com/dashboard)的關係。 請務必選取 [**包含委派管理 Azure Active Directory 和 Office 365 的權限**。 深入瞭解[合作夥伴中心的說明](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)。
 
 若要完成註冊您的客戶，請先建立 CSV 檔案。
 
@@ -70,7 +70,7 @@ ms.locfileid: "36982714"
 | 註冊暫止 | 註冊未尚未完成。 請稍後再回來。 |
 | 註冊失敗 | 無法完成註冊。 如需詳細資訊，請參閱[疑難排解裝置註冊](register-devices-self.md#troubleshooting-device-registration)。 |
 | 準備使用者 | 註冊成功，而且裝置已準備好要傳遞給使用者。 Microsoft 受管理的電腦會逐步引導其第一次 」 設定，因此不需要為您進行任何進一步的準備工作。 |
-| Active | 裝置已經傳送給使用者，他們必須註冊您的租用戶。 這也表示他們定期使用裝置。 |
+| 作用中 | 裝置已經傳送給使用者，他們必須註冊您的租用戶。 這也表示他們定期使用裝置。 |
 | 非使用中 | 裝置已經傳送給使用者，他們必須註冊您的租用戶。 不過，他們有不適用於裝置最近 （過去 7 天）。  |
 
 

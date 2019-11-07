@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 87968e1238ee5b3dce6e569846e253dada72dd6d
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 425ba674ca9911e4c93bda4fc9ad61cec7fb85b7
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390730"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012408"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>管理 Microsoft 受管理電腦中的行營運應用程式
 
@@ -25,7 +25,7 @@ ms.locfileid: "35390730"
 ## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>更新 Microsoft 受管理電腦中的行營運應用程式
 
 **若要更新在 Microsoft 受管理電腦入口網站-營運應用程式**
-1. 登入[Microsoft 受管理的桌上型電腦系統管理入口網站](http://aka.ms/mmdportal)。
+1. 登入[Microsoft 受管理的桌上型電腦系統管理入口網站](https://aka.ms/mmdportal)。
 2. 在 [**詳細目錄**] 下選取 [**應用程式**]。  
 3. 選取您要更新的應用程式，然後選取 [**編輯**。
 4. 在 [**管理**] 下選取 [**屬性**]。 
@@ -58,7 +58,7 @@ ms.locfileid: "35390730"
 
 **若要回復為舊版-營運應用程式**
 
-1. 登入[Microsoft 受管理的桌上型電腦系統管理入口網站](http://aka.ms/mmdportal)。
+1. 登入[Microsoft 受管理的桌上型電腦系統管理入口網站](https://aka.ms/mmdportal)。
 2. 在 [**詳細目錄**] 下選取 [**應用程式**]。  
 3. 選取您要將回復，該應用程式，然後選取 [**編輯**。
 4. 在 [**管理**] 下選取 [**屬性**]。 
