@@ -1,5 +1,5 @@
 # Microsoft 365 商務版
-## [Microsoft 365](index.md)
+## [Microsoft 365](index.yml)
 ## [什麼是 Microsoft 365 商務版？](microsoft-365-business-overview.md)
 ## [取得 Microsoft 365 商務版](sign-up.md)
 ## [保護資料的先決條件](pre-requisites-for-data-protection.md)
@@ -32,7 +32,10 @@
 ### [適用於 Windows 10 電腦的裝置保護設定](protection-settings-for-windows-10-pcs.md)
 #### [驗證 Windows 10 電腦上的設定](validate-settings-on-windows-10-pcs.md)
 ### [適用於 Windows 10 電腦的 App 保護設定](protection-settings-for-windows-10-devices.md)
-## [移轉至 Microsoft 365 商務版](migrate-to-microsoft-365-business.md)
+## 移轉至 Microsoft 365 商務版
+### [從 Office 365 商務進階版移轉](migrate-to-microsoft-365-business.md)
+### [從 Office 365 E3 移轉](migrate-from-e3.md)
+### [移轉至 Microsoft 365 企業版](migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md)
 ## 計費
 ### [您的帳單](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [付款](/Office365/Admin/subscriptions-and-billing/pay-for-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
