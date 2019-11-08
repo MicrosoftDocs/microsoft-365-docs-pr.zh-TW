@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 企業版身分識別基礎結構的部署步驟。
-ms.openlocfilehash: cb5b714afcacd1e21951ec9f83fd7f09cbd88662
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 50c3321dfd8a552d7585606f654360b9cff35b3c
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370440"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030888"
 ---
 # <a name="phase-2-identity"></a>第 2 階段：身分識別
 
@@ -68,7 +68,7 @@ Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configur
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何執行 Microsoft 365 企業版
 
-了解 Microsoft 的 IT 專家如何使用[管理身分識別和保護存取](https://www.microsoft.com/zh-TW/itshowcase/deploying-and-managing-microsoft-365#primaryR5)。
+了解 Microsoft 的 IT 專家如何使用[管理身分識別和保護存取](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR5)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 如何執行 Microsoft 365 企業版
 

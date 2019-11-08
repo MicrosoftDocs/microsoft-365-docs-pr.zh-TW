@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在您的環境中準備 Windows 和 Office 服務。
-ms.openlocfilehash: 6f3f5faf4c45829cdb4d2f9ac48ef0c9988ec270
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: a1cc9cb66754ed86f982d90db0ccbcce16b5ffb1
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584559"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031498"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>步驟 7：Windows 和 Office 服務
 
@@ -39,7 +39,7 @@ ms.locfileid: "35584559"
 
 Windows 10 與 Office 365 專業增強版都導入了新的服務選項、支援模型和更新時間表。 這些變更可簡化隨時保有最新功能的程序。 連同這些更新一起推出的是新的設定選項，其可實現符合您需求的服務方案。 讓我們了解如何準備迎接可在 Windows 10 和 Office 365 專業增強版中提供新功能的半年通道更新，並同時利用 System Center Configuration Manager (最新分支) 內的新功能。
 
-[協助客戶改用 Windows 10 和 Office 365 專業增強版](https://www.microsoft.com/zh-TW/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
+[協助客戶改用 Windows 10 和 Office 365 專業增強版](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
 ## <a name="update-types"></a>更新類型
 
@@ -59,9 +59,9 @@ Windows 10 與 Office 365 專業增強版都導入了新的服務選項、支援
 
 首先，我們已經捨棄過去的模型，過去約每隔三年會引入大型變更，現在則是增量的小型變更，以及每年兩次的功能更新。為什麼？由於技術趨勢變動快速，加上快速發展的安全性威脅，這麼做可讓體驗和保護維持在最新狀態。舉例來說，部分安全性相關的更新，無法只藉由每月的安全性更新或防毒簽章檔案來提供；它們可能是低階變更平台，如虛擬化型安全性。
 
-[Windows 即服務快速指南](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-quick-start) (機器翻譯)
+[Windows 即服務快速指南](https://docs.microsoft.com/windows/deployment/update/waas-quick-start)
 
-[使用 Windows 10 安全性功能來降低威脅](https://docs.microsoft.com/zh-TW/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10%20%20)
+[使用 Windows 10 安全性功能來降低威脅](https://docs.microsoft.com/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10%20%20)
 
 ### <a name="cumulative-update-model-benefits"></a>累計更新模型的優點
 
@@ -71,7 +71,7 @@ Windows 10 與 Office 365 專業增強版都導入了新的服務選項、支援
 
 ### <a name="expanded-validation-of-updates"></a>擴充更新驗證
 
-另一個優點是，在針對廣泛部署推出更新之前，我們會先透過 [Office](https://products.office.com/en-us/office-insider?tab=Windows-Desktop) 和 [Windows](https://insider.windows.com/zh-TW/) 的測試人員計畫發行組建，這可讓我們收集診斷資料和意見反應之後，再廣泛發行更新。 測試人員計畫現已對測試人員開放，因此您可事先了解更新。 在更新發行時，我們會從數百萬個設定之中收到診斷資料，因此當我們實際推出更新時，品質自然會更好
+另一個優點是，在針對廣泛部署推出更新之前，我們會先透過 [Office](https://products.office.com/office-insider?tab=Windows-Desktop) 和 [Windows](https://insider.windows.com/) 的測試人員計畫發行組建，這可讓我們收集診斷資料和意見反應之後，再廣泛發行更新。 測試人員計畫現已對測試人員開放，因此您可事先了解更新。 在更新發行時，我們會從數百萬個設定之中收到診斷資料，因此當我們實際推出更新時，品質自然會更好
 
 還有一件事，由於 Office 365 專業增強版測試人員組建會反映每月通道更新，如果您使用 Office 的半年通道來提供 Windows 每年兩次的功能更新，您也可以使用半年通道目標版本提早驗證這些組建。
 
@@ -79,29 +79,29 @@ Windows 10 與 Office 365 專業增強版都導入了新的服務選項、支援
 
 我們也思考如何讓您的更新部署更順利。System Center Configuration Manager (最新分支) 會經常更新，以支援推出這些 Windows 和 Office 更新以及任何新功能。
 
-[使用 System Center Configuration Manager 來部署 Windows 10 更新](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-manage-updates-configuration-manager) (機器翻譯)
+[使用 System Center Configuration Manager 來部署 Windows 10 更新](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-[使用 Configuration Manager 管理 Office 365 ProPlus](https://docs.microsoft.com/zh-TW/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+[使用 Configuration Manager 管理 Office 365 ProPlus](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## <a name="overview-of-windows-and-office-channels"></a>Windows 和 Office 通道的概觀
 
 Windows 10 提供三個服務通道：
 
-- [**Windows 測試人員計畫**](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-overview#windows-insider)，可供組織對下一次的功能更新所推出的功能進行測試並提供意見反應
+- [**Windows 測試人員計畫**](https://docs.microsoft.com/windows/deployment/update/waas-overview#windows-insider)，可供組織對下一次的功能更新所推出的功能進行測試並提供意見反應
 - **半年通道**，每年兩次提供新的功能與功能更新版本
 - **長期服務通道**，其設計僅供需要較長期服務選項的專門裝置使用
 
 Office 365 提供四個服務通道：
 
-- [**Office 測試人員計畫**](https://support.office.com/zh-TW/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16)，可供組織對仍在開發的最新 Office 功能進行測試並提供意見反應
+- [**Office 測試人員計畫**](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16)，可供組織對仍在開發的最新 Office 功能進行測試並提供意見反應
 - **每月通道**，可在最新的 Office 功能可供使用時，立即提供給使用者。
 - **半年通道**，每年只會提供兩次新的功能與新的特性
 - **半年通道 (有目標地)**，這是完整支援的 Office 組建，可讓試驗使用者和應用程式相容性測試者測試及驗證下一個半年通道
 
 如需 Windows 和 Office 服務通道的詳細資訊，請檢閱下列文件：
 
-- [Windows 即服務概觀](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-overview#servicing-channels)
-- [Office 365 專業增強版更新通道的概觀](https://docs.microsoft.com/zh-TW/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- [Windows 即服務概觀](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)
+- [Office 365 專業增強版更新通道的概觀](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 ## <a name="phased-deployment-of-updates"></a>階段式更新部署
 
@@ -137,9 +137,9 @@ Windows 和 Office 更新通道可使用標準的核准和目標設定程序，�
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
-[Windows 半年通道](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-overview#semi-annual-channel)
+[Windows 半年通道](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Office 365 專業增強版的半年通道](https://docs.microsoft.com/zh-TW/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+[Office 365 專業增強版的半年通道](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 #### <a name="upgrade-task-sequences"></a>升級工作順序
 
@@ -151,11 +151,11 @@ Windows 和 Office 更新通道可使用標準的核准和目標設定程序，�
 
 如果您已使用工作順序將 Windows 7 電腦移轉到 Windows 10，且您很熟悉這些工具，則這是很好的起點，並可提供最終的控制。雖然您可以針對整個升級使用單一工作順序，組織使用兩個工作順序是很常見的。其中一個工作順序用來確定電腦已準備好升級，可自動在目標電腦上將所有必要的安裝檔案預先區分階段，另一個則執行實際的升級。這個方法可確保使用者生產力較不會受到影響。
 
-[建立工作順序以在 Configuration Manager 中升級作業系統](https://docs.microsoft.com/zh-TW/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) (英文)
+[建立工作順序以在 Configuration Manager 中升級作業系統](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 #### <a name="semi-annual-channel-support-for-feature-updates"></a>功能更新的半年通道支援
 
-[如 2018 年 9 月所宣布](https://www.microsoft.com/zh-TW/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)，半年通道更新的支援時間表將會使用下列模型。
+[如 2018 年 9 月所宣布](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)，半年通道更新的支援時間表將會使用下列模型。
 
   - 所有目前支援的 Windows 10 企業版和教育版功能更新，從版本 1607 開始，將會從原始發行日期起受到 30 個月的支援。
 
@@ -169,12 +169,12 @@ Windows 和 Office 更新通道可使用標準的核准和目標設定程序，�
 
 如果您未使用「升級工作順序」，您現在可以執行自訂動作，或在套用升級之前，在預先安裝階段 (在設定執行相容性檢查之前，或在預先認可階段) 的功能更新期間套用驅動程式檔案。
 
-[Windows 10 設定 (版本 1803) 中的新增功能](https://docs.microsoft.com/zh-TW/windows/whats-new/whats-new-windows-10-version-1803%23windows-setup)
+[Windows 10 設定 (版本 1803) 中的新增功能](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803%23windows-setup)
 
 ## <a name="next-step"></a>下一步 
 
-## <a name="step-8-user-communications-and-traininghttpsakamsmdd8"></a>[步驟 8：使用者的通訊和訓練](https://aka.ms/mdd8) (英文)
+## <a name="step-8-user-communications-and-traininghttpsakamsmdd8"></a>[步驟 8：使用者的通訊和訓練](https://aka.ms/mdd8)
 
 ## <a name="previous-step"></a>上一步 
 
-## <a name="step-6-os-deployment-and-feature-updateshttpsakamsmdd6"></a>[步驟 6：作業系統部署與功能更新](https://aka.ms/mdd6) (英文)
+## <a name="step-6-os-deployment-and-feature-updateshttpsakamsmdd6"></a>[步驟 6：作業系統部署與功能更新](https://aka.ms/mdd6)

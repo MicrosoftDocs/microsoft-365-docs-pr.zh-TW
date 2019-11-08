@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在環境中評估目錄和網路整備。
-ms.openlocfilehash: 505099607b6c4744af29d00ff04e2535a2c0848e
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: c009a60849390cc9b796a56f66e63d44e12cdc68
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982724"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031558"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>步驟 2：目錄和網路整備
 
@@ -49,7 +49,7 @@ ms.locfileid: "36982724"
 
 如果貴組織已使用 Office 365、Exchange Online、Microsoft Intune 或其他 Microsoft 線上服務，好消息是，您已經在使用 Azure Active Directory。 如果是，您只需要確認您目標桌面部署的使用者是在 Azure Active Directory 中，並已指派授權。
 
-如果您目前未使用 Azure Active Directory，則有[許多資源](https://docs.microsoft.com/zh-TW/azure/active-directory/)可協助您進行設定。 您也可能符合透過 Microsoft FastTrack 的個人化協助資格 (Office 365 授權的一部分)。 您可以在[這裡](https://fasttrack.microsoft.com)進一步了解 Microsoft Fastrack。
+如果您目前未使用 Azure Active Directory，則有[許多資源](https://docs.microsoft.com/azure/active-directory/)可協助您進行設定。 您也可能符合透過 Microsoft FastTrack 的個人化協助資格 (Office 365 授權的一部分)。 您可以在[這裡](https://fasttrack.microsoft.com)進一步了解 Microsoft Fastrack。
 
 一旦 Azure Active Directory 就位後，您的使用者可以登入並啟用其 Office 365 專業增強版應用程式，且您可以使用 Microsoft Intune 或 Windows Autopilot 部署，以自動化部署應用程式和原則。
 
@@ -65,7 +65,7 @@ ms.locfileid: "36982724"
 
 ### <a name="software-updates"></a>軟體更新
 
-您必須規劃軟體更新的網路頻寬。 Windows 10 和 Office 365 專業增強版會使用每月和每半年提供更新的新服務模型。 如果是初次使用這個模式，您可以在[這裡](https://docs.microsoft.com/zh-TW/windows/deployment/update/waas-overview)深入了解其運作方式。
+您必須規劃軟體更新的網路頻寬。 Windows 10 和 Office 365 專業增強版會使用每月和每半年提供更新的新服務模型。 如果是初次使用這個模式，您可以在[這裡](https://docs.microsoft.com/windows/deployment/update/waas-overview)深入了解其運作方式。
 
 新維護模型包含每年兩次適用於 Windows 的功能更新、Office 半年通道更新，以及高品質的每月更新。功能更新的大小通常是 2 到 4 GB，而 Office 半年通道更新的每個更新為 300-400 MB。接著有每月高品質更新。這範圍可能會從數百 MB 至 1 GB 以上。這是因為每月更新是累計的，因此這些會隨著每個 Windows 10 版本的服務存留時間而變大。不過，有些工具可協助您減少必須透過網路傳遞來實作更新的資料量。以下我們將深入討論這個部分。
 
@@ -77,7 +77,7 @@ ms.locfileid: "36982724"
 
 限制網路上部署相關流量影響的其中一個方法是使用用戶端上的 BITS 設定 (背景智慧型傳輸服務) 進行節流。BITS 會使用適當的位元速率 (ABR) 來調整可供部署用途的頻寬；可在用戶端使用群組原則進行設定。
 
-[關於 BITS](https://docs.microsoft.com/zh-TW/windows/desktop/bits/about-bits) (英文)
+[關於 BITS](https://docs.microsoft.com/windows/desktop/bits/about-bits) (英文)
 
 如果您使用 System Center Configuration Manager (最新分支)，也可以設定啟用 BITS 的發佈點，或啟用搭配 WDS 的多點傳送。
 
@@ -119,7 +119,7 @@ System Center Configuration Manager 支援的**對等快取**用戶端也可利�
 
 **二進位差異壓縮** 從最新版本的 Office 365 專業增強版更新至下一個版本時，Office 365 專業增強版會使用二進位差異壓縮來減少軟體更新所耗用的頻寬。透過只從兩個先前版本放入二進位層級變更，可將累積更新的每月成長影響降到最低。這有可能會每部電腦每個月儲存數百 MB 的資料。但若要使用這項功能，您無法略過版本。如果您這麼做，必須先下載完整的累積更新。
 
-[下載 Office 365 的更新](https://docs.microsoft.com/zh-TW/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus) (英文)
+[下載 Office 365 的更新](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus) (英文)
 
 **Outlook 資料檔** Outlook 通常會設定為在本機快取使用者的整個信箱，以供離線使用。 在任何 Windows 部署中，除了就地升級以外，使用者的 Outlook 資料檔都需要在升級後自行重建。 這是自動化程序，但是 Outlook 信箱限制通常設為最多 100 GB，而在本機重新快取所有使用者的整個信箱表示有大量資料轉送。 若要減少網路負載，您可考慮使用群組原則來降低「要離線保留的郵件」設定。 在 Office 365 專業增強版或 Office 2016 中，Outlook 的預設值會設為 12 個月。 若要降低網路影響，請考慮將離線快取設定為最近 1 到 6 個月。 變更此設定並不會影響線上信箱的大小，仍可透過 Outlook 在線上搜尋整個信箱。
 
@@ -131,7 +131,7 @@ System Center Configuration Manager 支援的**對等快取**用戶端也可利�
 
 [設定已知的資料夾移動](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/Migrate-Your-Files-to-OneDrive-Easily-with-Known-Folder-Move/ba-p/207076) (英文)
 
-[隨需 OneDrive 檔案](https://www.microsoft.com/zh-TW/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/) (英文)
+[隨需 OneDrive 檔案](https://www.microsoft.com/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/) (英文)
 
 如果您還沒推行 OneDrive，從 Windows 7 轉移到 Windows 10 是啟用 OneDrive 且緊密整合 Office 365 專業增強版的完美機會。 請考慮在進行您的應用程式和裝置整備工作時，開始這項推行。 在您開始透過網路移動 Windows 映像及部署應用程式之前，這會為檔案同步提供領先優勢。
 

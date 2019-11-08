@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: 045f0e0fd2375c4342896668f69ce1305f4a1d43
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: b8d6ae3a6721a3563cc68fcec9dd7f9d470bb31e
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981694"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031108"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署的 Lab Kit
 
@@ -26,7 +26,7 @@ ms.locfileid: "36981694"
 
 這些實驗室是設計來協助您規劃、測試及驗證執行 Windows 10 企業版和 Office 365 專業增強版之桌面的部署和管理。 實驗室涵蓋桌面部署輪中概述的步驟和工具，跨越 System Center Configuration Manager、電腦分析、Office 自訂工具、OneDrive、Windows Autopilot，以及其他。
 
-作為 Windows 10 和 Office 365 專業增強版之[桌面部署](http://www.aka.ms/howtoshift)程序的一部分，當您開始探索部署工具更新，並測試部署相關的自動化作業時，建置沙箱化或隔離的實驗室環境是建議的起點。
+作為 Windows 10 和 Office 365 專業增強版之[桌面部署](https://www.aka.ms/howtoshift)程序的一部分，當您開始探索部署工具更新，並測試部署相關的自動化作業時，建置沙箱化或隔離的實驗室環境是建議的起點。
 
 實驗室套件是免費下載的，並使用試用版軟體。
 
@@ -122,11 +122,11 @@ ms.locfileid: "36981694"
 
 ## <a name="additional-guidance"></a>**其他指引**
 
-  - [桌面部署中心](http://www.aka.ms/howtoshift)
+  - [桌面部署中心](https://www.aka.ms/howtoshift)
 
-  - [來自 Microsoft Mechanics 的桌面部署中心系列影片](http://www.aka.ms/watchhowtoshift)
+  - [來自 Microsoft Mechanics 的桌面部署中心系列影片](https://www.aka.ms/watchhowtoshift)
 
-  - [System Center Configuration Manager 作業系統部署](https://docs.microsoft.com/zh-TW/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [System Center Configuration Manager 作業系統部署](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Windows 10 部署計劃</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 

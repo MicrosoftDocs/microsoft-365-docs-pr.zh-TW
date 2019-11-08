@@ -14,24 +14,24 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 桌面部署中心概觀。
-ms.openlocfilehash: 16cabf8080e6d3a04805a4fcce385a80ec80dfd6
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 0e901a162be61c7be2465a0054669ebc459e6f3f
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982084"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031088"
 ---
 # <a name="desktop-deployment-center"></a>桌面部署中心
 
 <strong>從 Windows 7 升級到 Windows 10</strong>
-<p>Windows 7 的延伸支援服務在 2020 年 1 月 14 日結束。 從 Windows 7 就地升級到 Windows 10 是最快的部署方法。 您可以<a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">升級一部電腦</a>或<a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">使用 System Center Configuration Manager 升級數以千計的電腦</a>。 您不需要專注於應用程式傳遞、檔案移轉、自訂影像，或啟用就地升級的雲端服務。 您可以使用已有的工具升級現有的電腦，並專注於下列的升級部署步驟： </p>
+<p>Windows 7 的延伸支援服務在 2020 年 1 月 14 日結束。 從 Windows 7 就地升級到 Windows 10 是最快的部署方法。 您可以<a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">升級一部電腦</a>或<a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">使用 System Center Configuration Manager 升級數以千計的電腦</a>。 您不需要專注於應用程式傳遞、檔案移轉、自訂影像，或啟用就地升級的雲端服務。 您可以使用已有的工具升級現有的電腦，並專注於下列的升級部署步驟： </p>
 
 <p>
 </p>
 
 <ul class="panelContent cardsM">
     <li>
-        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/step-2-directory-and-network-readiness">
+        <a href="https://docs.microsoft.com/microsoft-365/enterprise/step-2-directory-and-network-readiness">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -50,7 +50,7 @@ ms.locfileid: "36982084"
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/step-1-device-and-app-readiness">
+        <a href="https://docs.microsoft.com/microsoft-365/enterprise/step-1-device-and-app-readiness">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -69,7 +69,7 @@ ms.locfileid: "36982084"
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">
+        <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 本文說明 Office 365 如何減少使用偽造寄件者網域的網路釣魚攻擊，即詐騙網域。 其達成目的的方式是透過分析郵件，和封鎖無法使用標準電子郵件驗證方法或其他寄件者信譽技術來進行驗證的郵件。 採用此項變更是為了減少 Office 365 中的組織所暴露的網路釣魚攻擊數量。
-ms.openlocfilehash: e863a7fe580bdd6c60ba6f28d3fbf2df010e9384
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7b793d3244343111f1894ff8aae77c2d6ea8f4f3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077337"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034284"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 
@@ -115,7 +115,7 @@ Microsoft 將詐騙郵件區分為兩種類型：
   
  **組織內部詐騙**
   
-也稱為自我詐騙，當寄件者地址中的網域與收件者網域相同或相符時 (當收件者網域是組織[接受的網域](https://technet.microsoft.com/zh-TW/library/jj945194%28v=exchg.150%29.aspx)之一時)，就會發生這種情況；或者，當寄件者地址中的網域是同一組織的一部分時。
+也稱為自我詐騙，當寄件者地址中的網域與收件者網域相同或相符時 (當收件者網域是組織[接受的網域](https://technet.microsoft.com/library/jj945194%28v=exchg.150%29.aspx)之一時)，就會發生這種情況；或者，當寄件者地址中的網域是同一組織的一部分時。
   
 例如，下列寄件者和收件者來自相同網域 (contoso.com)。 在電子郵件地址間插入空格以防止垃圾郵件機器人從此網頁進行收集)：
   
@@ -654,7 +654,7 @@ Microsoft 的反詐騙技術最初部署在具有 Office 365 企業版 E5 訂閱
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>如何向 Microsoft 回報垃圾郵件或非垃圾郵件？
 
-您可以使用 [Outlook 的回報郵件增益集](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)，如果未安裝 Outlook，則可[將垃圾郵件，非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](https://technet.microsoft.com/zh-TW/library/jj200769%28v=exchg.150%29.aspx)。
+您可以使用 [Outlook 的回報郵件增益集](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)，如果未安裝 Outlook，則可[將垃圾郵件，非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](https://technet.microsoft.com/library/jj200769%28v=exchg.150%29.aspx)。
   
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>我是網域系統管理員，但我不認識所有寄件者！
 

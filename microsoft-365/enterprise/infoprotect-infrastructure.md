@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 企業版的資訊保護基礎結構部署步驟。
-ms.openlocfilehash: 54866ceb1fa72f404a5d255cb130c70fe180c493
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c90fc039124f479629acd5cca414c937a1f5a10d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370450"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030848"
 ---
 # <a name="phase-6-information-protection"></a>第 6 階段：資訊保護
 
@@ -51,7 +51,7 @@ ms.locfileid: "37370450"
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何執行 Microsoft 365 企業版
 
-了解 Microsoft 的 IT 專家如何使用[Azure 資訊保護和保護資料安全](https://www.microsoft.com/zh-TW/itshowcase/deploying-and-managing-microsoft-365#primaryR9)。
+了解 Microsoft 的 IT 專家如何使用[Azure 資訊保護和保護資料安全](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR9)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 如何執行 Microsoft 365 企業版
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 復原能力主題的描述
-ms.openlocfilehash: 4c718674a70186b004d8fefc5381074dba81c164
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: f2fd50a662076904daf3133e0edf45808ef2c39d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122283"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031048"
 ---
 # <a name="built-in-resiliency"></a>內建復原能力
 
@@ -26,7 +26,7 @@ ms.locfileid: "37122283"
 
 **「SharePoint Online 停機時間**：使用者無法讀取或寫入他們擁有適當權限的 SharePoint Online 網站集合任何部分的任何一段時間。」
 
-您可以在[服務等級協定](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37)中尋找每個服務的停機時間定義。
+您可以在[服務等級協定](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37)中尋找每個服務的停機時間定義。
 
 為了將停機時間降至最低 (無論是計劃中或非預期的)，Microsoft 365 服務的設計和運作是要高度可用並對失敗具復原能力，其方法是專注於四個區域：
 

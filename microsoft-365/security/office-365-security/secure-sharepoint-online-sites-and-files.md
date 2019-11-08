@@ -14,16 +14,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
+- SPO_Content
 ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：在 SharePoint Online 和 Office 365 中保護檔案的設定建議。
-ms.openlocfilehash: b11edac77b5b4e3ebd26d1234bbebdf8b2e0880a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 62b7227239c52f50f2dc437e1ddedc663a5bb01d
+ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077540"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035703"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>保護 SharePoint Online 網站與檔案
 
@@ -101,9 +102,9 @@ SharePoint Online 和商務用 OneDrive 包含的租用戶整體設定會影響�
   
 ### <a name="device-access-settings"></a>裝置存取設定
 
-SharePoint Online 和商務用 OneDrive 的裝置存取設定可讓您決定要僅限瀏覽器存取 (無法下載檔案)，或是封鎖存取。 如需詳細資訊，請參閱[控制未受管理裝置的存取權](https://docs.microsoft.com/zh-TW/sharepoint/control-access-from-unmanaged-devices)。 
+SharePoint Online 和商務用 OneDrive 的裝置存取設定可讓您決定要僅限瀏覽器存取 (無法下載檔案)，或是封鎖存取。 如需詳細資訊，請參閱[控制未受管理裝置的存取權](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)。 
 
-若要使用裝置存取設定搭配 Azure Active Directory 中建議的條件式存取原則，請參閱[保護 SharePoint 網站和檔案的原則建議](https://docs.microsoft.com/zh-TW/microsoft-365/enterprise/sharepoint-file-access-policies)。
+若要使用裝置存取設定搭配 Azure Active Directory 中建議的條件式存取原則，請參閱[保護 SharePoint 網站和檔案的原則建議](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies)。
   
 ### <a name="onedrive-for-business"></a>商務用 OneDrive
 
@@ -170,7 +171,7 @@ SharePoint Online 和商務用 OneDrive 的裝置存取設定可讓您決定要�
   
 - 將外部使用者新增至用來設定保護標籤的 Azure AD 群組
     
-     您必須先將帳戶新增為目錄中的 B2B 使用者。當 [Azure 版權管理進行群組成員資格的快取](https://docs.microsoft.com/information-protection/plan-design/prepare#group-membership-caching-by-azure-rights-management)時，可能需要花費數小時的時間。使用此方法時，會授與所有受標籤保護的現有檔案權限 (包括將使用者新增至 Azure AD 群組之前即受保護的檔案)。
+     您必須先將帳戶新增為目錄中的 B2B 使用者。當 [Azure 版權管理進行群組成員資格的快取](https://docs.microsoft.com/information-protection/plan-design/prepare)時，可能需要花費數小時的時間。使用此方法時，會授與所有受標籤保護的現有檔案權限 (包括將使用者新增至 Azure AD 群組之前即受保護的檔案)。
     
 - 將外部使用者直接新增至標籤保護。
     

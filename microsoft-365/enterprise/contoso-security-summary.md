@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用整個 Microsoft 365 企業版的安全性功能。
-ms.openlocfilehash: 394120f811057258afe1bd29e60733e42bf5191a
-ms.sourcegitcommit: 4acd6fc368f547eb7a25d04799cb1a77003b143d
+ms.openlocfilehash: ada72460adffce46951b8784d90b6cfa29b35bc3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37372714"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031098"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>適用於 Contoso Corporation 之 Microsoft 365 企業版安全性的摘要
 
@@ -111,7 +111,7 @@ Contoso 會使用下列步驟來準備部署 Microsoft 365 企業版的安全性
 
 - 使用 Office 365 資料外洩防護來防止內部網路資料外洩
 
-  Contoso 已針對 Exchange Online、SharePoint 和商務用 OneDrive 設定[資料外洩防護](https://docs.microsoft.com/zh-TW/microsoft-365/compliance/data-loss-prevention-policies)原則，以防止使用者意外或故意共用機密資料。
+  Contoso 已針對 Exchange Online、SharePoint 和商務用 OneDrive 設定[資料外洩防護](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)原則，以防止使用者意外或故意共用機密資料。
 
 - 使用 Windows 資訊保護來防止裝置資料外洩
 

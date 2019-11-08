@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在環境中評估裝置和應用程式整備。
-ms.openlocfilehash: dda8291e8f57e4855e582614573d6971fa3919f1
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: b24bd278804e81c53a28bf99971a087fe5b7c3c0
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37422560"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031628"
 ---
 # <a name="step-1-device-and-app-readiness"></a>步驟 1：裝置和應用程式整備
 
@@ -59,7 +59,7 @@ ms.locfileid: "37422560"
 
 若要設定電腦分析，您必須先設定 Azure 訂閱，並為其包含 Azure Log Analytics 工作區。 執行電腦分析服務後，您可以接著透過群組原則設定，註冊任何連上網際網路的 Windows 7 SP1 或更新裝置，就是這麼簡單。 不需要部署代理程式，電腦分析的視覺化工作流程就會引導您從試驗到生產部署。 如有需要，您可以將資料從電腦分析匯出至 System Center Configuration Manager (最新分支) 之類的軟體部署工具、直接匯出至目標電腦，並且在資料準備好進行部署時建置集合。
 
-如果您目前尚未針對環境設定電腦分析，或是想要註冊試用，請移至「電腦分析」頁面 (http://www.aka.ms/desktopanalytics)) 並開始使用。
+如果您目前尚未針對環境設定電腦分析，或是想要註冊試用，請移至「電腦分析」頁面 (https://www.aka.ms/desktopanalytics)) 並開始使用。
 
 ## <a name="device-and-app-readiness-process"></a>裝置和應用程式整備程序
 
@@ -85,9 +85,9 @@ ms.locfileid: "37422560"
 
 您會發現大部分已清查的應用程式、驅動程式和增益集都以現狀運作。 針對電腦分析評估為有問題的項目，它為您提供已知資訊，包括在哪裡尋找版本更新來解決相容性問題。 並非將時間和資源都耗費在解決非關鍵、鬆散部署應用程式和舊版裝置中的複雜問題，您可以選擇與使用者合作來淘汰及取代這些項目。
 
-您也可以使用電腦分析來評估以瀏覽器為基礎的相容性問題，識別出仍在使用 ActiveX 控制項、瀏覽器協助程式物件、VBScript 或 Microsoft Edge 瀏覽器不支援的其他傳統技術的使用者所存取的網站和 Web 應用程式。 您的使用者仍必須對這些網站使用 Internet Explorer 11，而您可以使用 Enterprise Mode Site List Manager 將網站新增到[企業模式網站清單](https://docs.microsoft.com/zh-TW/microsoft-edge/deploy/emie-to-improve-compatibility)。
+您也可以使用電腦分析來評估以瀏覽器為基礎的相容性問題，識別出仍在使用 ActiveX 控制項、瀏覽器協助程式物件、VBScript 或 Microsoft Edge 瀏覽器不支援的其他傳統技術的使用者所存取的網站和 Web 應用程式。 您的使用者仍必須對這些網站使用 Internet Explorer 11，而您可以使用 Enterprise Mode Site List Manager 將網站新增到[企業模式網站清單](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility)。
 
-此外，為了協助您移至 Office 365 專業增強版，您可能想要使用[適用於 Office 的整備工具組](https://docs.microsoft.com/zh-TW/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro)，測試您的增益集與 Microsoft Visual Basic for Applications (VBA) 巨集的相容性。
+此外，為了協助您移至 Office 365 專業增強版，您可能想要使用[適用於 Office 的整備工具組](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro)，測試您的增益集與 Microsoft Visual Basic for Applications (VBA) 巨集的相容性。
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -103,7 +103,7 @@ ms.locfileid: "37422560"
 
 使用雲端式分析解決方案進行裝置和應用程式整備時，Configuration Manager 軟體清查是替代方法。 您可以使用安裝計數並深入了解特定電腦，以協助設定相容性測試和驗證的優先順序，並透過套件將應用程式套件設定為與 Windows 10 相容。 雖然此選項並未提供比較已知相容性資訊與 Microsoft 分析服務的功能，但可成為有效的解決方法，其以一小組已排定優先順序的應用程式為目標進行手動測試。 
 
-如需詳細資訊，請參閱 [System Center Configuration Manager 中的軟體清查簡介](https://docs.microsoft.com/zh-TW/sccm/core/clients/manage/inventory/introduction-to-software-inventory)，以及 [System Center Configuration Manager 中的套件和程式](https://docs.microsoft.com/zh-TW/sccm/apps/deploy-use/packages-and-programs)中應用程式套件的設定平台需求。
+如需詳細資訊，請參閱 [System Center Configuration Manager 中的軟體清查簡介](https://docs.microsoft.com/sccm/core/clients/manage/inventory/introduction-to-software-inventory)，以及 [System Center Configuration Manager 中的套件和程式](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs)中應用程式套件的設定平台需求。
 
 
 ## <a name="desktop-app-assure"></a>電腦 App 保證

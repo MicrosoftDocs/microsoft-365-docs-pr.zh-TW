@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows 7 至 Windows 10 手動升級指南。
-ms.openlocfilehash: f148815a72c9315db2a6d55f7b8433cc9dddf448
-ms.sourcegitcommit: 12c4d5444d6e0e8825fc85e3e8453fa376746495
+ms.openlocfilehash: 13cdb56b52655ed81932601dd3ff97c90c1daad8
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35395266"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033678"
 ---
 # <a name="windows-7-to-windows-10-manual-upgrade-step-by-step-guide"></a>Windows 7 至 Windows 10 手動升級逐步指南
 
@@ -26,7 +26,7 @@ ms.locfileid: "35395266"
 
 ## <a name="windows-10-upgrades-using-the-media-creation-tool-or-iso-files"></a>使用媒體建立工具或 ISO 檔案的 Windows 10 升級
 
-您可以使用[媒體建立工具](https://www.microsoft.com/en-us/software-download/windows10ISO)直接升級至 Windows 10，或使用該工具將 Windows 10 下載為 ISO 檔案。 您必須知道您目前的系統是 32 還是 64 位元、系統的預設語言和 Windows 7 版本 (例如家用版、專業版或企業版)。 在 Windows 7 中，這項資訊位於 [控制台] \> [系統及安全性] \> [系統]。 媒體建立工具不支援 Windows 10 企業版進行升級、建立安裝媒體，或下載 ISO 檔案。 如果是從 Windows 7 企業版升級，您需要 Windows 10 企業版。
+您可以使用[媒體建立工具](https://www.microsoft.com/software-download/windows10ISO)直接升級至 Windows 10，或使用該工具將 Windows 10 下載為 ISO 檔案。 您必須知道您目前的系統是 32 還是 64 位元、系統的預設語言和 Windows 7 版本 (例如家用版、專業版或企業版)。 在 Windows 7 中，這項資訊位於 [控制台] \> [系統及安全性] \> [系統]。 媒體建立工具不支援 Windows 10 企業版進行升級、建立安裝媒體，或下載 ISO 檔案。 如果是從 Windows 7 企業版升級，您需要 Windows 10 企業版。
 
 ![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-1.png)
 
@@ -108,6 +108,6 @@ ms.locfileid: "35395266"
 
 ## <a name="moving-to-windows-10-on-a-new-pc"></a>在新電腦上移至 Windows 10
 
-另外一個建議的方法是在新電腦上移至 Windows 10。 如果您偏好這麼做，可以使用 [OneDrive](https://support.office.com/article/b5e918be-0fd4-4095-98da-bceed57f8e0c?ocid=MoveToWindows10) 備份、[內建於 Windows 的備份與還原](https://support.microsoft.com/help/4469209?ocid=MoveToWindows10)、手動使用[外部儲存裝置](https://support.microsoft.com/en-us/help/4465814/windows-7-move-files-off-pc-with-an-external-storage-device?ocid=MoveToWindows10)，或使用像 [Laplink 的 PCmover Express](https://www.microsoft.com/en-us/windows/transfer-your-data) 的工具，轉移舊電腦的檔案。 如果使用上述任何一種選項，您還是必須重新安裝未隨附於 Windows 10 的所有必要應用程式。 若要深入了解從執行 Windows 7 的現有電腦手動移至 Windows 10 新電腦的選項，請參閱 Windows 支援中的[移至 Windows 10 電腦](https://support.microsoft.com/en-us/help/4229823?ocid=MoveToWindows10)。
+另外一個建議的方法是在新電腦上移至 Windows 10。 如果您偏好這麼做，可以使用 [OneDrive](https://support.office.com/article/b5e918be-0fd4-4095-98da-bceed57f8e0c?ocid=MoveToWindows10) 備份、[內建於 Windows 的備份與還原](https://support.microsoft.com/help/4469209?ocid=MoveToWindows10)、手動使用[外部儲存裝置](https://support.microsoft.com/help/4465814/windows-7-move-files-off-pc-with-an-external-storage-device?ocid=MoveToWindows10)，或使用像 [Laplink 的 PCmover Express](https://www.microsoft.com/windows/transfer-your-data) 的工具，轉移舊電腦的檔案。 如果使用上述任何一種選項，您還是必須重新安裝未隨附於 Windows 10 的所有必要應用程式。 若要深入了解從執行 Windows 7 的現有電腦手動移至 Windows 10 新電腦的選項，請參閱 Windows 支援中的[移至 Windows 10 電腦](https://support.microsoft.com/help/4229823?ocid=MoveToWindows10)。
 
 ## <a name="desktop-deployment-centerhttpsakamshowtoshift"></a>[桌面部署中心](https://aka.ms/howtoshift)

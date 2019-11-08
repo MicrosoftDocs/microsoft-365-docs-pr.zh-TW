@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 推行並發揮 SharePoint 在組織中的價值，規劃這整個程序的步驟。
-ms.openlocfilehash: 0cad129cdca5f5dcc072f583b2b651a2547fc5fd
-ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
+ms.openlocfilehash: 74ab3b65597cdf1752dd5dbf9179724464c998a3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37469145"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031638"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>部署適用於 Microsoft 365 企業版的 SharePoint 和 OneDrive
 
@@ -165,7 +165,7 @@ SharePoint 的案例清單，能解決組織對於文件儲存與共用、內容
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何執行 Microsoft 365 企業版
 
-若要深入查看 Microsoft 並了解公司部署 SharePoint 的方式，請參閱 [SharePoint 至雲端：深入了解 Microsoft 如何執行自己的移轉](https://www.microsoft.com/zh-TW/itshowcase/sharepoint-to-the-cloud-learn-how-microsoft-ran-its-own-migration) (英文)。
+若要深入查看 Microsoft 並了解公司部署 SharePoint 的方式，請參閱 [SharePoint 至雲端：深入了解 Microsoft 如何執行自己的移轉](https://www.microsoft.com/itshowcase/sharepoint-to-the-cloud-learn-how-microsoft-ran-its-own-migration) (英文)。
 
 ## <a name="next-steps"></a>後續步驟
 

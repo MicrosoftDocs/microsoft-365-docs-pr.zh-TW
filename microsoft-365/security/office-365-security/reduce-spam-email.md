@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 了解最常用來協助減少 Office 365 中垃圾郵件的方式。
-ms.openlocfilehash: 759d56862497444c27d0cc0f081731a3581337bd
-ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
+ms.openlocfilehash: 5d915759766b122457553a24d2f92f67c3093b34
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428424"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031818"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>如何減少 Office 365 中的垃圾郵件
 
@@ -45,13 +45,13 @@ ms.locfileid: "37428424"
 
 - **將您的 DNS 記錄指向 Office 365** 為了讓 EOP 提供最佳防護，所有網域的郵件交換程式 (MX) DNS 記錄都必須指向 Office 365，而且只能指向 Office 365。請參閱[當您管理 DNS 記錄時建立 Office 365 的 DNS 記錄](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23)。
     
-- **啟用所有信箱上的垃圾郵件規則** 根據預設，垃圾郵件篩選動作會設為 [將郵件移至垃圾郵件資料夾]****。如果這是您目前喜好的垃圾郵件原則動作，則每個信箱[也須啟用垃圾郵件規則](https://support.office.com/zh-TW/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。若要進行此檢查，您可以對一或多個信箱執行 Get-MailboxJunkEmailConfiguration Cmdlet。例如，您可能會對所有信箱進行此檢查，方法為執行 Cmdlet：Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}
+- **啟用所有信箱上的垃圾郵件規則** 根據預設，垃圾郵件篩選動作會設為 [將郵件移至垃圾郵件資料夾]****。如果這是您目前喜好的垃圾郵件原則動作，則每個信箱[也須啟用垃圾郵件規則](https://support.office.com/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。若要進行此檢查，您可以對一或多個信箱執行 Get-MailboxJunkEmailConfiguration Cmdlet。例如，您可能會對所有信箱進行此檢查，方法為執行 Cmdlet：Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}
     
     檢視輸出時，Enable 屬性應設為 True。如果設為 False，您可以執行 Set-MailboxJunkEmailConfiguration 將其變更為 True，如下所示：Set-MailboxJunkEmailConfiguration -Identity $values.UserPrincipalName -Enabled $true。
     
 - **在內部部署 Exchange Server 中建立郵件流程規則** 如果您使用的是 Exchange Online Protection，但您的信箱位於內部部署 Exchange Server，則您需要在內部部署 Exchange Server 中建立幾個郵件流程規則。請參閱 [EOP 專屬的指示](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj900470(v=exchg.150))。
     
-- **將大量電子郵件標示為垃圾郵件** 大量電子郵件是使用者可能已註冊，但仍有可能不想要的電子郵件。在郵件標頭中，於 X-Microsoft-Antispam 標頭中尋找 BCL (大量信賴等級) 屬性。如果 BCL 值小於垃圾郵件篩選器中設定的閾值，您可能想要調整閾值，而不是將這些類型的大宗郵件標示為垃圾郵件。不同的使用者對於[大量電子郵件的處理方式](https://docs.microsoft.com/zh-TW/office365/SecurityCompliance/bulk-complaint-level-values) 各有不同的容錯和喜好設定。您可以針對不同的使用者喜好設定建立不同的原則或規則。 
+- **將大量電子郵件標示為垃圾郵件** 大量電子郵件是使用者可能已註冊，但仍有可能不想要的電子郵件。在郵件標頭中，於 X-Microsoft-Antispam 標頭中尋找 BCL (大量信賴等級) 屬性。如果 BCL 值小於垃圾郵件篩選器中設定的閾值，您可能想要調整閾值，而不是將這些類型的大宗郵件標示為垃圾郵件。不同的使用者對於[大量電子郵件的處理方式](https://docs.microsoft.com/office365/SecurityCompliance/bulk-complaint-level-values) 各有不同的容錯和喜好設定。您可以針對不同的使用者喜好設定建立不同的原則或規則。 
     
 - **立即封鎖寄件者** 在您需要立即封鎖寄件者的情況下，您可以依電子郵件地址、網域或 IP 位址進行封鎖。請參閱[在 Office 365 中建立封鎖寄件者清單](create-block-sender-lists-in-office-365.md)。使用者允許清單中的項目可以覆寫系統管理員所設定的封鎖。
     

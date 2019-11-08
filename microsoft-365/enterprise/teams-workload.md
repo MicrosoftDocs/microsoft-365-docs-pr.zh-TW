@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請逐步了解，然後在組織內推出 Microsoft Teams。
-ms.openlocfilehash: e6a4ccc1b7ec5989707e2195b66fa1cf987cd091
-ms.sourcegitcommit: a75e3a93b3431bd26b0d072b37a9c5eb3dcb1c7f
+ms.openlocfilehash: 3f4ed40f3c28e9b8ce5c22dfa9bd93e9b1a9e1cb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "37889914"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033598"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版的 Microsoft Teams
 
@@ -63,8 +63,8 @@ Microsoft Teams 將交談、會議、共用文件、往來對話整合在一起�
 
 若要深入了解 Microsoft 並了解我們如何部署及使用 Teams 進行共同作業，請參閱：
 
-- [Microsoft Teams 採用戰略為員工準備新工作文化](https://www.microsoft.com/zh-TW/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
-- [有了 Microsoft Teams 會議室，就能擁有可全球調整的新式會議體驗](https://www.microsoft.com/zh-TW/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
+- [Microsoft Teams 採用戰略為員工準備新工作文化](https://www.microsoft.com/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
+- [有了 Microsoft Teams 會議室，就能擁有可全球調整的新式會議體驗](https://www.microsoft.com/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
 
 ## <a name="next-steps"></a>後續步驟
 

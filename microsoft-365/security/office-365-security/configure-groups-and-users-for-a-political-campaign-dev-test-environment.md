@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 摘要：為政治活動開發/測試環境建立具備使用者與群組的 Office 365 和 Enterprise Mobility + Security (EMS) 之試用訂閱。
-ms.openlocfilehash: 6cf9fb03c66f1cf4d1f20287f5dc121474898d5b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ca72ee800287bf8a90fe45f4aaa1de3400cb71e1
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077601"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038882"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>設定政治活動開發/測試環境的群組和使用者
 
@@ -134,7 +134,7 @@ ms.locfileid: "37077601"
   
 接下來，填寫您的組織名稱、位置及常見的密碼，並從 PowerShell 命令提示字元或整合式指令碼環境 (ISE) 執行這些命令：
   
-```
+```powershell
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
 $commonPassword="<common password for all the new accounts>"
@@ -169,31 +169,31 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 使用這些步驟來確認動態群組成員資格和以群組為基礎之授權是否運作正常。
   
 1. 從瀏覽器的 [Microsoft Office 的首頁]**** 索引標籤中，按一下 [管理]**** 磚。
-    
+
 2. 從瀏覽器的新 [Microsoft 365 系統管理中心]**** 索引標籤中，按一下 [使用者]****。
-    
+
 3. 在使用者清單中，按一下 [應徵者]****。
-    
+
 4. 在列出 [應徵者]**** 使用者帳戶之內容的窗格中，請確認：
-    
+
   - 它屬於**資深和策略的人員**群組 (在**群組成員資格**)。
-    
+
   - 他獲派 **Enterprise Mobility + Security E5** 與 **Office 365 企業版 E5** 授權 (在**產品授權**中)。
-    
+
 5. 關閉 [應徵者]**** 使用者帳戶窗格。
-    
+
 ## <a name="record-values-for-future-reference"></a>記錄值，以便日後參考
 
 記錄這些值以與 Office 365 和 EMS 試用訂閱在此開發/測試環境中搭配使用：
   
 - 試用訂閱組織名稱：![](../media/Common-Images/TableLine.png) 
-    
+
     例如，針對 contoso.onmicrosoft.com 的試用訂閱網域名稱，組織名稱為「contoso」。
-    
+
 - Office 365 全域系統管理員名稱：![](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
     在安全位置記錄此帳戶的密碼以及其他使用者帳戶的常見初始密碼。
-    
+
 ## <a name="next-step"></a>下一步
 
 透過[在政治活動開發/測試環境中建立小組網站](create-team-sites-in-a-political-campaign-dev-test-environment.md)，在此開發/測試環境中建置四種不同類型的 SharePoint Online 小組網站。
@@ -207,7 +207,3 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 [雲端採用測試實驗室指南 (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
   
 [雲端採用和混合式解決方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

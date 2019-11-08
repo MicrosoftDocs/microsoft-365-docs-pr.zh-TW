@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何傳遞 Office 和 LOB 應用程式。
-ms.openlocfilehash: 15a3b1730f5e2a62f067f7615d873ad34fa18d9e
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: fdb16aa9d92e3fd2608ca3738dc5af80389f18ea
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814604"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031528"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>步驟 3：Office 和 LOB 應用程式傳遞
 
@@ -43,7 +43,7 @@ ms.locfileid: "34814604"
 
 在 Windows 上安裝應用程式有許多方法與模型，讓我們來看看您的傳遞選項。
 
-[Windows 10 應用程式管理](https://docs.microsoft.com/zh-TW/windows/application-management/)
+[Windows 10 應用程式管理](https://docs.microsoft.com/windows/application-management/)
 
 ## <a name="msi-based-deployments"></a>MSI 型部署
 
@@ -61,15 +61,15 @@ System Center Configuration Manager 和 Microsoft Intune 等軟體部署工具�
 
 如果您想在映像中包含 Office 365 專業增強版，請記住，這會使用使用者型啟用，而無法由系統管理員預先啟用。使用 Office 部署工具在您進行映像處理的裝置上預先安裝 Office，並跳過使用者登入。 部署映像後，使用者可以使用其 Office 365 認證登入並啟動 Office 365 專業增強版。
 
-[建立安裝作業系統的工作順序](https://docs.microsoft.com/zh-TW/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[建立安裝作業系統的工作順序](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[以作業系統映像的方式部署 Office 365 專業增強版](https://docs.microsoft.com/zh-TW/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[以作業系統映像的方式部署 Office 365 專業增強版](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office 隨選即用 
 
 Office 365 專業增強版使用隨選即用來安裝，隨選即用取代了 Windows 即將推出的 Office 2019 每個版本中的 MSI 型封裝。 它會帶來許多好處，包括更快速的安裝、更快且更有效率的更新以及更簡潔的解除安裝。 
 
-透過「隨選即用」提供的程式會在您電腦上的虛擬應用程式環境中執行，因此會與其他應用程式共存而沒有衝突。如同 MSI 型套件，這些程式也會佔用大約一半的磁碟空間。 Office 應用程式是透過 [Office 部署工具](https://www.microsoft.com/en-us/download/details.aspx?id=49117)提供和管理，該工具是下載、設定及自訂 Office 應用程式所需的 Office 安裝程式引擎。 Office 部署工具會讀取 XML 組態檔，該檔案會提供有關如何設定及自訂 Office 安裝的中繼資料指示。
+透過「隨選即用」提供的程式會在您電腦上的虛擬應用程式環境中執行，因此會與其他應用程式共存而沒有衝突。如同 MSI 型套件，這些程式也會佔用大約一半的磁碟空間。 Office 應用程式是透過 [Office 部署工具](https://www.microsoft.com/download/details.aspx?id=49117)提供和管理，該工具是下載、設定及自訂 Office 應用程式所需的 Office 安裝程式引擎。 Office 部署工具會讀取 XML 組態檔，該檔案會提供有關如何設定及自訂 Office 安裝的中繼資料指示。
 
 Microsoft 建議使用 [Office 自訂工具](https://config.office.com/)來自訂您的部署設定，以及建立您的 XML 組態檔。 您可以透過 Office 自訂工具，設定所要安裝的應用程式和語言、應用程式的更新方式、應用程式喜好設定，以及安裝體驗設定。
 
@@ -79,13 +79,13 @@ Microsoft 建議使用 [Office 自訂工具](https://config.office.com/)來自�
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Office 365 專業增強版部署指南](https://docs.microsoft.com/zh-TW/deployoffice/deployment-guide-for-office-365-proplus)
+[Office 365 專業增強版部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
-[升級至 Office 365 專業增強版時，移除 Office 現有的 MSI 版本](https://docs.microsoft.com/zh-TW/deployoffice/upgrade-from-msi-version)
+[升級至 Office 365 專業增強版時，移除 Office 現有的 MSI 版本](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[使用 Configuration Manager 管理 Office 365 ProPlus](https://docs.microsoft.com/zh-TW/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+[使用 Configuration Manager 管理 Office 365 ProPlus](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 
-[使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置](https://docs.microsoft.com/zh-TW/intune/apps-add-office365)
+[使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置](https://docs.microsoft.com/intune/apps-add-office365)
 
 ## <a name="browser-based-apps"></a>瀏覽器型應用程式
 
@@ -93,7 +93,7 @@ Microsoft 建議使用 [Office 自訂工具](https://config.office.com/)來自�
 
 此外，如果您知道您的內部網路網站使用 Microsoft Edge 無法正常運作，則可以設定所有內部網路網站自動使用 Internet Explorer 11 開啟。此程序會使用 XML 檔案來控制 IE11 是否用於每個網站，並使用群組原則來強制執行設定。
 
-[什麼是企業模式](https://docs.microsoft.com/zh-TW/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#what-is-enterprise-mode)
+[什麼是企業模式](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#what-is-enterprise-mode)
 
 到目前為止，我們探討了數種知名的部署方法。 但還有兩種應用程式部署的新方法您可能可以考慮。
 
