@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定義郵件使用者是管理 Exchange Online Protection (EOP) 的重要環節。
-ms.openlocfilehash: 85a2c3ee278af36b9743fd9ff70ea9ab21437de8
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 38beaa283d4fa120a75f11accf22861e6598d6e0
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441240"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034354"
 ---
 # <a name="manage-mail-users-in-eop"></a>管理 EOP 中的郵件使用者
 
@@ -40,7 +40,7 @@ ms.locfileid: "37441240"
 
 - 本主題中的命令使用批次處理方法會導致前一個命令的結果數分鐘的傳播延遲的 PowerShell 是可見。
 
-- 若要了解如何使用 Windows PowerShell 來連接至 Exchange Online Protection，請參閱[Connect to Exchange Online Protection PowerShell](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx)。
+- 若要了解如何使用 Windows PowerShell 來連接至 Exchange Online Protection，請參閱[連線到 Exchange Online Protection PowerShell](https://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx)。
 
 - 適用於此主題中程序的鍵盤快速鍵相關資訊，請參閱[Exchange 系統管理員的鍵盤快速鍵置在 Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
@@ -59,7 +59,7 @@ ms.locfileid: "37441240"
 
   - **Outlook 安全寄件者和封鎖寄件者清單**： 這些清單時進行同步處理至服務，將會優先於垃圾郵件篩選服務中。 這可讓使用者針對個別使用者或個別網域，管理他們自己的安全寄件者和封鎖的寄件者清單。
 
-  - **目錄架構邊緣封鎖 (DBEB)**: 如需 DBEB 的詳細資訊，請參閱[使用 Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)。
+  - **目錄架構邊緣封鎖 (DBEB)**: 如需 DBEB 的詳細資訊，請參閱[使用 Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)。
 
   - **使用者垃圾郵件隔離區**： 若要存取使用者垃圾郵件隔離區，使用者必須具有有效的 Office 365 使用者識別碼和密碼。 保護內部部署信箱的 EOP 客戶必須是有效的電子郵件使用者。
  

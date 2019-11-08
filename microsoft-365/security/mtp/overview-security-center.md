@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 安全性中心概觀
+title: Microsoft 365 安全性中心概述
 description: 說明用來監控及管理安全性跨您 Microsoft 身分識別、 資料、 裝置和應用程式的新 [首頁。
 keywords: 安全性、 惡意程式碼、 Microsoft 365、 M365、 資訊安全中心、 監視、 報表、 身分識別、 資料、 裝置、 應用程式
 ms.prod: w10
@@ -12,14 +12,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 5dcdce4b86356d514317967188ef07ebaeecbf16
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5779bc02575a01c86333eaa9dbc9e9667c87f5ee
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078332"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034204"
 ---
-# <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全性中心概觀
+# <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全性中心概述
 
 管理您的業務以防止不斷演變威脅橫向安全性帶許多挑戰。 您可能會有太多的安全性解決方案，以進行大量控制項的不同位置，並不知道哪些控制項最有效且可將為您的工作人員介紹新挑戰。 它可能很難的安全性小組合作，找出安全性與生產力的平衡點。
 
@@ -27,7 +27,7 @@ ms.locfileid: "37078332"
 
 新的 Microsoft 365 安全中心和 Microsoft 365 合規性中心是設計用以滿足安全性小組和規範小組的需求的特定工作區。 這些解決方案整合在整個 Microsoft 365 服務，並提供洞察力來協助降低風險並保護您的數位資產。
 
-[了解更多並準備好](https://docs.microsoft.com/en-us/office365/securitycompliance/microsoft-security-and-compliance)新的 Microsoft 365 安全中心和 Microsoft 365 合規性中心。
+[了解更多並準備好](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance)新的 Microsoft 365 安全中心和 Microsoft 365 合規性中心。
 
 請造訪 Microsoft 365 安全性中心在 security.microsoft.com。  
 
@@ -39,16 +39,16 @@ ms.locfileid: "37078332"
 
 ![Microsoft 365 安全性首頁](../media/security-docs/home.jpg)
 
-在 Microsoft 365 安全性中心包含：
+Microsoft 365 安全性中心包含：
 
 * **家用版**– 取得在快速檢視您組織的整體安全性健康狀況。
 * **提醒**-整個 Microsoft 356 環境，包括提醒從 Microsoft Cloud App Security，Office 365 ATP，Azure AD，具有所有警示的可視性和 Microsoft Defender ATP。 適用於 E3 和 E5 客戶。  
 * **報表**– 取得詳細資料，您需要更妥善地保護您的使用者、 裝置、 應用程式]，以及更多的資訊。
-* **安全分數**– 改善您的整體安全性狀態與 Microsoft 安全分數。 此頁面提供所有最多摘要的不同的安全性功能和您已啟用的功能，並包含區域以提升的建議。
-* **搜尋**– 主動搜尋惡意程式碼、 可疑檔案和 Microsoft 365 組織中的活動。
-* **分類**– 藉由新增標籤來分類文件、 電子郵件、 文件、 網站及更多保護資料遺失。 套用標籤時 （自動或使用者），內容或網站受到根據您選擇的設定。 例如，您可以建立加密檔案、 新增內容標示，以及控制特定網站的使用者存取的標籤。
-* **原則**，設定原則來管理裝置，防範威脅，貴組織中會收到有關各種活動警示
-* **權限**-管理組織中誰有權存取 Microsoft 365 安全中心來檢視內容，並執行工作。 您也可以指派在 Azure AD 入口網站中的 Microsoft 365 權限。
+* **安全分數** – 使用 Microsoft 安全分數改善整體的安全性狀況。 此頁面提供所有最多摘要的不同的安全性功能和您已啟用的功能，並包含區域以提升的建議。
+* **搜捕** – 在 Microsoft 365 組織中主動搜尋惡意軟體、可疑檔案和活動。
+* **分類** – 藉由新增標籤來分類文件、電子郵件訊息、文件、網站等項目，以協助防止資料遺失。 套用標籤時 （自動或使用者），內容或網站受到根據您選擇的設定。 例如，您可以建立標籤來加密檔案、新增內容標記，以及控制使用者對特定網站的存取。
+* **原則** – 設定原則來管理裝置、防範威脅，以及接收關於組織中各項活動的警示。
+* **權限** – 管理組織中可存取 Microsoft 365 安全性中心以檢視內容及執行工作的人員。 您也可以在 Azure AD 入口網站中指派 Microsoft 365 權限。
 
 ## <a name="learn-more"></a>深入了解
 

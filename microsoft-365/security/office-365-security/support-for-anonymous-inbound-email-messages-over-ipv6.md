@@ -13,12 +13,12 @@ ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
 description: 了解如何設定 Exchange Online Protection 和 Exchange Online 來源 IPv6 的匿名郵件的支援。
-ms.openlocfilehash: b6b1a0f42d879929de5059b6e197bd5fe14887dc
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c29c1fa450ca2a2e213930c4f4a394aaf462e31d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078236"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031988"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>支援透過 IPv6 的匿名輸入電子郵件
 
@@ -28,7 +28,7 @@ Exchange Online Protection (EOP) 和 Exchange Online 均可支援透過 IPv6 通
   
 1. 傳送 IPv6 地址必須具備有效的 PTR 記錄 (傳送 IPv6 地址的 [反向 DNS 記錄](https://en.wikipedia.org/wiki/Reverse_DNS_lookup))。 
     
-2. 寄件者必須通過 SPF 驗證 (定義於 [RFC 7208](https://tools.ietf.org/html/rfc7208)) 或 [DKIM 驗證](http://dkim.org/) (定義於 [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt))。
+2. 寄件者必須通過 SPF 驗證 (定義於 [RFC 7208](https://tools.ietf.org/html/rfc7208)) 或 [DKIM 驗證](https://dkim.org/) (定義於 [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt))。
     
 選擇加入 IPv6 之前，不論您的組態為何，符合這些需求都是必要的。 若已符合這兩項需求，郵件就會通過經歷此服務所提供的正常電子郵件篩選。 如果一或其他不符合，郵件會遭到拒絕以其中一個下列 450 回應：
   
@@ -40,7 +40,7 @@ Exchange Online Protection (EOP) 和 Exchange Online 均可支援透過 IPv6 通
   
  `550 5.2.1 Service unavailable, [contoso.com] does not accept email over IPv6.`
   
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="for-more-information"></a>相關資訊
 
 [支援 DKIM 簽署郵件的驗證](support-for-validation-of-dkim-signed-messages.md)
   

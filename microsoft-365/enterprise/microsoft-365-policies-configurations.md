@@ -14,24 +14,24 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 1fae59706a77663090d4f29cc6a34b339c11e92c
-ms.sourcegitcommit: 6ef9a98e3d9de44ee4f01870f9189fa676572419
+ms.openlocfilehash: eba186233efa5bebb980c4e16aafb0fe854910c9
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2019
-ms.locfileid: "37481301"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031318"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
 此系列文章說明如何藉由實作建議的環境與設定，包括條件式存取原則規定的設定來設定安全地存取雲端服務，透過 Enterprise Mobility + Security (EMS) 的產品和相關的功能。 EMS 是 Microsoft 365 的核心元件。 您可以使用本指南來保護所有與 Azure Active Directory，包括 Office 365 服務與 Azure AD 應用程式 Proxy 發佈的其他 SaaS 服務，以及內部應用程式整合的服務存取權。 
 
-這些建議會對齊 Microsoft 安全分數，以及[分數 Azure AD 中的身分識別](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/identity-secure-score)，並會增加這些分數的組織。 這些建議也可協助您實作下列[五個步驟來保護您的身分識別基礎結構](https://docs.microsoft.com/en-us/azure/security/azure-ad-secure-steps)。 
+這些建議會對齊 Microsoft 安全分數，以及[分數 Azure AD 中的身分識別](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)，並會增加這些分數的組織。 這些建議也可協助您實作下列[五個步驟來保護您的身分識別基礎結構](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)。 
 
 Microsoft 了解某些組織中具有唯一環境需求或複雜性。 如果您是下列其中一個這些組織，使用這些建議作為起點。 不過，大多數的組織可以實作這些建議，如規定。 
 
 ## <a name="intended-audience"></a>目標對象
 
-這些建議都適用於企業架構設計人員和 IT 專業人員熟悉[Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx)及[Microsoft Enterprise Mobility + Security](http://microsoft.com/ems)，與其他人，包括 Azure Active Directory (identity)，MicrosoftIntune （裝置管理） 與 Azure 資訊保護 （資料保護）。
+這些建議都適用於企業架構設計人員和 IT 專業人員熟悉[Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx)及[Microsoft Enterprise Mobility + Security](https://microsoft.com/ems)，與其他人，包括 Azure Active Directory (identity)，MicrosoftIntune （裝置管理） 與 Azure 資訊保護 （資料保護）。
 
 ### <a name="customer-environment"></a>客戶環境
 
@@ -69,7 +69,7 @@ Microsoft 了解某些組織中具有唯一環境需求或複雜性。 如果您
 
 **Office 365 的檔案保護方案**<br/>
 ![「 Office 365 中檔案保護解決方案 」 海報的縮圖](../images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
-[PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
 
 ## <a name="security-and-productivity-trade-offs"></a>安全性與生產力的取捨
 

@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: b1f655e5befd16058870542f2e595d36599006fd
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: d704f6392f5f0510478073299fcfe60569560105
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746705"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033638"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>階段 3：Windows 10 企業版
 
@@ -72,7 +72,7 @@ Windows 10 提供功能，協助防範威脅，協助保護您的裝置，並協
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何執行 Microsoft 365 企業版
 
-一窺 Microsoft 並了解如何公司[部署 Windows 10 企業版，且正在使用 Intune，且 Microsoft Defender ATP 的強式驗證](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR6)。
+一窺 Microsoft 並了解如何公司[部署 Windows 10 企業版，且正在使用 Intune，且 Microsoft Defender ATP 的強式驗證](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR6)。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 如何執行 Microsoft 365 企業版
 

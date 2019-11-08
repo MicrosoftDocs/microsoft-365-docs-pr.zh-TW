@@ -1,5 +1,5 @@
 ---
-title: 對抗垃圾郵件傳送到 Office 365
+title: 抵禦傳送至 Office 365 的垃圾郵件
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,14 +14,14 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: Microsoft 的電子郵件安全性藍圖包括不相符的跨產品方法。 Exchange Online Protection (EOP) 反垃圾郵件和防網路釣魚篩選技術已套用至使用者提供的最新反垃圾郵件和防網路釣魚的工具和整個網路的創新 Microsoft 的電子郵件平台上。 EOP 的目標是要提供一種完整且可使用的電子郵件服務，可協助您偵測並防止使用者的垃圾郵件、 詐騙電子郵件威脅 （網路釣魚） 和惡意程式碼。
-ms.openlocfilehash: 0a73d428e952c0c0cb340d91a52768a42ae204a1
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7c1b74d2ddb98d1250f80455163c5f0b8690b0de
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076887"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032368"
 ---
-# <a name="fighting-junk-email-sent-to-office-365"></a>對抗垃圾郵件傳送到 Office 365
+# <a name="fighting-junk-email-sent-to-office-365"></a>抵禦傳送至 Office 365 的垃圾郵件
 
 Microsoft 的電子郵件安全性藍圖包括不相符的跨產品方法。 Exchange Online Protection (EOP) 反垃圾郵件和防網路釣魚篩選技術已套用至使用者提供的最新反垃圾郵件和防網路釣魚的工具和整個網路的創新 Microsoft 的電子郵件平台上。 EOP 的目標是要提供一種完整且可使用的電子郵件服務，可協助您偵測並防止使用者的垃圾郵件、 詐騙電子郵件威脅 （網路釣魚） 和惡意程式碼。
   
@@ -66,9 +66,9 @@ Microsoft 會將重點放其反網路釣魚技術努力在兩個店面： 先依
   
 EOP 會使用寄件者保護架構 (SPF)、 DomainKeys Identified Mail (DKIM) 和網域型郵件驗證、 報告和符合性聲明 (DMARC) 和其他隱含驗證來驗證郵件是來自聲稱來自該網域. 建議的所有寄件者使用 SPF 和 DKIM 來保護其收件者從垃圾郵件和網路釣魚詐騙。 建議的寄件者，請考慮發佈 DMARC 來拒絕或隔離來自未經授權寄件者傳送的郵件。
   
-- 若要深入了解關於 SPF 的詳細資訊，請參閱[RFC 7208](https://tools.ietf.org/html/rfc7208)和[寄件者原則架構](http://www.openspf.org/)。
+- 若要深入了解關於 SPF 的詳細資訊，請參閱[RFC 7208](https://tools.ietf.org/html/rfc7208)和[寄件者原則架構](https://www.openspf.org/)。
     
-- 若要深入了解 DKIM，請參閱[RFC 6376](https://tools.ietf.org/html/rfc6376)和[DKIM.org](http://dkim.org/)。
+- 若要深入了解 DKIM，請參閱[RFC 6376](https://tools.ietf.org/html/rfc6376)和[DKIM.org](https://dkim.org/)。
     
 - 若要深入了解 DMARC，請參閱[DMARC.org](https://dmarc.org/)。
     

@@ -14,18 +14,18 @@ ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
 description: 這些文章可協助外部寄件者改善其信譽，並增加其能夠傳遞電子郵件給 Office 365 中的使用者。 他們也會提供一些資訊您可以在方式回報垃圾郵件和網路釣魚嘗試即使您不是 Office 365 使用者自行。
-ms.openlocfilehash: 1b58c5afab28cef15cef80d5f86f2ab4652f89ad
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 335118eb49a078b79ae36f4813c530fe15643bae
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441230"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032078"
 ---
 # <a name="sending-mail-to-office-365"></a>傳送郵件至 Office 365
 
 這些文章可協助外部寄件者改善其信譽，並增加其能夠傳遞電子郵件給 Office 365 中的使用者。 他們也會提供一些資訊您可以在方式回報垃圾郵件和網路釣魚嘗試即使您不是 Office 365 使用者自行。
 
-如果您不是 Office 365 客戶，但嘗試將郵件傳送給其他人有哪些成員，您會在正確的位置。 如果您是 Office 365 系統管理員，而且您需要協助對抗垃圾郵件，但這不是為您的右] 區段。 相反地，請移至[反垃圾郵件和反惡意程式碼保護](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)。
+如果您不是 Office 365 客戶，但嘗試將郵件傳送給其他人有哪些成員，您會在正確的位置。 如果您是 Office 365 系統管理員，而且您需要協助對抗垃圾郵件，但這不是為您的右] 區段。 相反地，請移至[反垃圾郵件和反惡意程式碼保護](https://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)。
 
 |**如需詳細資訊...]**|**請參閱...]**|
 |:-----|:-----|

@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何識別並修復 Outlook 規則及 Office 365 中的自訂表單資料隱碼攻擊
-ms.openlocfilehash: d19a9c86dce42724aa2be00f11ea49ac7cc19d8a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 56882ca53852d33a642f6031c6a3fa6c68eb667d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440650"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033894"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>偵測並修復 Office 365 中 Outlook 規則與自訂表單插入式攻擊
 
@@ -124,18 +124,18 @@ Exchange 伺服器上的信箱的步驟
 
 1. 連線至 Exchange 伺服器使用遠端 PowerShell。 遵循在 [[連線到 Exchange 伺服器使用遠端 PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell?view=exchange-ps)的步驟。
 2. 如果您想要完全移除單一規則、 多個規則或所有規則的信箱使用[移除收件匣規則指令程式](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)，-使用此選項可完全移除一個，多個、 或所有規則從信箱。
-3. 如果您想要保留規則，並使用[Disable-inboxrule 指令程式](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx)，供進一步調查其內容。 
+3. 如果您想要保留規則，並使用[Disable-inboxrule 指令程式](https://technet.microsoft.com/library/dd298120(v=exchg.160).aspx)，供進一步調查其內容。 
 
 在 Exchange Online 信箱的步驟
 1. 請依照[使用連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)中的步驟。
 2.  如果您想要完全移除單一規則，多個規則或從信箱的所有規則使用[移除收件匣規則指令程式](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)。
-3.  如果您想要保留規則，並使用[Disable-inboxrule 指令程式](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx)，供進一步調查其內容。 
+3.  如果您想要保留規則，並使用[Disable-inboxrule 指令程式](https://technet.microsoft.com/library/dd298120(v=exchg.160).aspx)，供進一步調查其內容。 
 
 ## <a name="how-to-minimize-future-attacks"></a>如何減少未來的攻擊
 
 ### <a name="first-protect-your-accounts"></a>第一個： 保護您的帳戶
 
-規則與表單攻擊才會使用攻擊之後他們有竊取或破壞您的使用者帳戶的其中一個。 因此，若要避免使用您的組織對這些攻擊的您第一步是積極地保護您的使用者帳戶。  其中一些帳戶會破壞的常用方法是透過網路釣魚或[密碼噴射](http://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻擊。
+規則與表單攻擊才會使用攻擊之後他們有竊取或破壞您的使用者帳戶的其中一個。 因此，若要避免使用您的組織對這些攻擊的您第一步是積極地保護您的使用者帳戶。  其中一些帳戶會破壞的常用方法是透過網路釣魚或[密碼噴射](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻擊。
 
 
 
@@ -161,19 +161,19 @@ Exchange 伺服器上的信箱的步驟
 
 如需有關個別安全性修補程式的詳細資訊，請參閱：
 
-- [Outlook 2013 安全性修補程式](https://support.microsoft.com/en-us/help/3191938) 
-- [Outlook 2016 安全性修補程式](https://support.microsoft.com/en-us/help/3191883)
+- [Outlook 2013 安全性修補程式](https://support.microsoft.com/help/3191938) 
+- [Outlook 2016 安全性修補程式](https://support.microsoft.com/help/3191883)
 
 ### <a name="third-monitor-your-outlook-clients"></a>第三個： 監視您的 Outlook 用戶端
 請注意，即使與修補程式安裝的更新，它是以變更本機電腦設定若要重新啟用 「 啟動應用程式 」 行為攻擊者可能。 您可以使用[進階群組原則管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/)來監視及強制執行您的用戶端上的本機電腦原則。  
-您可以查看是否 「 啟動應用程式 」 已重新啟用透過覆寫登錄中所使用的資訊[如何檢視使用 64 位元版本的 Windows 系統登錄](https://support.microsoft.com/en-us/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows)中。  請檢查這些子機碼： 
+您可以查看是否 「 啟動應用程式 」 已重新啟用透過覆寫登錄中所使用的資訊[如何檢視使用 64 位元版本的 Windows 系統登錄](https://support.microsoft.com/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows)中。  請檢查這些子機碼： 
 
 - Outlook 2016: HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\
 - Outlook 2013: HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\
 
 機碼 EnableUnsafeClientMailRules 外觀。 如果它有且設為 1，已覆寫 Outlook 安全性修補程式和電腦很容易表單讀規則攻擊。 如果值為 0，會停用的 「 啟動應用程式 」 巨集指令。  如果已安裝的 Outlook 更新及修補版本，而且此登錄機碼不存在，則系統不會受到攻擊。
 
-與內部部署 Exchange 安裝的客戶應該考慮封鎖舊版 Outlook 沒有可用的修補程式。 可以[設定 Outlook 用戶端封鎖](https://technet.microsoft.com/en-us/library/dd335207(v=exchg.150).aspx)」 文件中找到此程序的詳細資訊。
+與內部部署 Exchange 安裝的客戶應該考慮封鎖舊版 Outlook 沒有可用的修補程式。 可以[設定 Outlook 用戶端封鎖](https://technet.microsoft.com/library/dd335207(v=exchg.150).aspx)」 文件中找到此程序的詳細資訊。
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Office 365
 您的 Office 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。  使用 [Office 365 安全性藍圖：前 30 天、前 90 天前和之後的最高優先順序](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)來實作 Microsoft 建議用來保護您的 Office 365 租用戶的最佳做法。

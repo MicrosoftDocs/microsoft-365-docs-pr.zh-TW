@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 與 Microsoft Teams 和 SharePoint 共用檔案和您的行銷活動內的影片。
-ms.openlocfilehash: c554ba2b4e7945cefa9a1e7114b3726efa58561e
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 14daa826e7df961baefaf7f6e7a17530842aad25
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772340"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031188"
 ---
 # <a name="share-files-and-videos"></a>共用檔案和影片
 
@@ -62,7 +62,7 @@ ms.locfileid: "35772340"
 
 若要建立並共用影片，請遵循下列步驟。
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWrv0F]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
 下載[PDF](https://go.microsoft.com/fwlink/?linkid=2079435)或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)若要取得的方式來共用檔案的快速概觀資訊圖表。
 

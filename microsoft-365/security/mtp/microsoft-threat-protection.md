@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 305f4e213d03f4ee7fccca5fee9bea8efb3d1e9e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6e2ca4405838f6e72603bcdb3024b8c0f70e3e99
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078356"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034294"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft 威脅防護
 
@@ -38,7 +38,7 @@ Microsoft 威脅防護是完整的安全性方案一起將功能強大的安全�
 <center><h2>Microsoft 威脅防護服務</center></h2>
 <table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender 進階威脅防護</b></center></a></td>
 <td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Office 365 進階的威脅防護</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/en-us/azure-advanced-threat-protection/"><b>Azure 的進階的威脅防護</b></a></center></td>
+<td><center><b><a href="https://docs.microsoft.com/azure-advanced-threat-protection/"><b>Azure 的進階的威脅防護</b></a></center></td>
 <td><center><b><a href="https://docs.microsoft.com/azure/security-center/"><b>Azure 資訊安全中心</b></a></center></td>
 <td><center><b><a href="https://docs.microsoft.com/cloud-app-security/"><b>Microsoft Cloud App Security</b></a></center></td>
 <td><center><b><a href="https://docs.microsoft.com/azure/sentinel/overview"><b>Microsoft Azure 警示</b></a></center></td>

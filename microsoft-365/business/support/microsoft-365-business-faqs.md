@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商務版, Microsoft 365, SMB, 常見問題集, 常見問題集, 解答, 商務版
 ms.date: 06/08/2018
-ms.openlocfilehash: 23cf7c4770387050c60ac21f537fbd7738a8aab4
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: 2067badcb78b48bac59770993de25c0ebbeaa829
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646378"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031358"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 商務版常見問題集
 
@@ -161,7 +161,7 @@ Windows AutoPilot 是一種服務，可簡化新 Windows 10 電腦部署作業�
 還不是 Microsoft 合作夥伴的 IT 服務提供者，可以到以下網站深入了解 Microsoft 雲端解決方案提供者計畫：[https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business)。
 
 ### <a name="where-can-i-learn-how-to-sell-microsoft-365-business"></a>何處可了解如何銷售 Microsoft 365 商務版？ 
-目前正在銷售 Office 365 的合作夥伴，可以使用相同的諮詢銷售方法來銷售 Microsoft 365 商務版。 此外，我們正推出適合您銷售小組使用的更多資源和訓練，讓他們認識客戶現有桌面環境、Active Directory 依賴、行動通訊和安全性的需求，以和客戶有效地溝通 Microsoft 365 商務版的整體價值。 在位於 [http://partners.office.com/microsoft365business](http://partners.office.com/microsoft365business) 的 Office 合作夥伴入口網站上可找到這些資源。 
+目前正在銷售 Office 365 的合作夥伴，可以使用相同的諮詢銷售方法來銷售 Microsoft 365 商務版。 此外，我們正推出適合您銷售小組使用的更多資源和訓練，讓他們認識客戶現有桌面環境、Active Directory 依賴、行動通訊和安全性的需求，以和客戶有效地溝通 Microsoft 365 商務版的整體價值。 在位於 [https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business) 的 Office 合作夥伴入口網站上可找到這些資源。 
 
 ### <a name="how-can-microsoft-365-business-help-partners-increase-the-profitability"></a>Microsoft 365 商務版如何協助合作夥伴提高獲利？ 
 Microsoft 365 商務版可透過更高的作業效率和銷售其他服務所帶來的收益，協助合作夥伴降低成本。 Forrester Research 在 2017 年 6 月所做Microsoft 365 商務版總體經濟影響 (TEI) 研究 (https://www.microsoft.com/microsoft-365/partners/PartnerTEI) 顯示，Microsoft 365 商務版對於合作夥伴獲利有正面影響。 

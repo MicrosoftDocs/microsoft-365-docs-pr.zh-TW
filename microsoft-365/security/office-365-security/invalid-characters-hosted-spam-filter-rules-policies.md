@@ -1,5 +1,5 @@
 ---
-title: 避免在您的垃圾郵件篩選規則和垃圾郵件篩選原則中的無效字元
+title: 避免垃圾郵件篩選規則和垃圾郵件篩選原則中的無效字元
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 提供其反垃圾郵件組態中有無效的字元，並嘗試使用安全性時遇到問題的系統管理員的說明&amp;合規性中心。
-ms.openlocfilehash: 286a96814e0be5857499d7c54839d20142d0dd60
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 96d81c17c33c5ecf6e7b88ebe5676336b963cb4e
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076818"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38039102"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>避免在您的垃圾郵件篩選規則中的無效字元和垃圾郵件篩選原則 
 
@@ -41,18 +41,18 @@ ms.locfileid: "37076818"
     
 2. 若要變更垃圾郵件篩選器原則的名稱，執行 Set-hostedcontentfilterpolicy 指令程式，如下所示：
     
-    ```
+    ```powershell
     Set-HostedContentFilterPolicy -Identity "Old policy name" -Name "New policy name"
     ```  
 
 3. 若要變更垃圾郵件篩選規則的名稱，執行 Set-hostedcontentfilterrule cmdlet，如下所示：
     
-    ```
+    ```powershell
     Set-HostedContentFilterRule -Identity "Old rule name" -Name "New rule name"
     ```  
 
   
- ## <a name="for-more-information"></a>如需詳細資訊
+ ## <a name="for-more-information"></a>相關資訊
 
 [威脅管理安全性&amp;合規性中心](protect-against-threats.md)
   

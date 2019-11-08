@@ -1,5 +1,5 @@
 ---
-title: '報告的網頁型 Outlook 中的垃圾郵件和網路釣魚詐騙 '
+title: '在 Outlook 網頁版中回報垃圾郵件與網路釣魚詐騙 '
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,14 +14,14 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook web 使用者可以使用內建的郵件報告選項回報垃圾郵件和網路釣魚詐騙。 您也可以讓 Microsoft 知道是否電子郵件誤報為垃圾郵件 （垃圾郵件）。
-ms.openlocfilehash: 0191394c1e0c0f43c65af977c219630c65b6a292
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f066181e912060b137437893dee545787fa405a2
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076207"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031798"
 ---
-# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>報告的網頁型 Outlook 中的垃圾郵件和網路釣魚詐騙 
+# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>在 Outlook 網頁版中回報垃圾郵件與網路釣魚詐騙 
 
 當您組織中的使用者收到垃圾郵件或遺漏重要的電子郵件，因為它已 misidentified 為垃圾郵件時，它可以是令人沮喪。 我們不斷在微調 Exchange Online Protection (EOP) 垃圾郵件篩選以便提升準確性，而且您和您的使用者可協助此程序;Microsoft Outlook web 使用者可以使用內建的郵件報告選項回報垃圾郵件和網路釣魚詐騙。 您也可以讓 Microsoft 知道是否電子郵件誤報為垃圾郵件 （垃圾郵件）。
   
@@ -60,11 +60,11 @@ ms.locfileid: "37076207"
   
 2. 隨即開啟對話方塊，詢問您是否要將垃圾郵件的複本傳送給 Microsoft 以進行分析。 按一下 [**報告**]，將郵件傳送給 Microsoft 垃圾郵件分析小組.. 
     
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="for-more-information"></a>相關資訊
 
 [了解垃圾郵件和網路釣魚](https://go.microsoft.com/fwlink/p/?LinkId=270068)
 
-[垃圾郵件報告的 Microsoft Outlook 增益集](https://docs.microsoft.com/en-us/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
+[垃圾郵件報告的 Microsoft Outlook 增益集](https://docs.microsoft.com/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
   
   
 

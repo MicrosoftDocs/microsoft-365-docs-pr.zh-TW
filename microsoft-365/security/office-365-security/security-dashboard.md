@@ -14,12 +14,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 使用新的安全性儀表板來檢閱 Office 365 威脅保護狀態，並檢視，然後對安全性提醒。
-ms.openlocfilehash: 8f86aa654c79bac2409d64b43d0cf7bb563c1412
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8ce6e21bcc25853e641ee20126ffd38c785e76f7
+ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077362"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033934"
 ---
 # <a name="security-dashboard"></a>安全性儀表板
 
@@ -64,7 +64,7 @@ ms.locfileid: "37077362"
 
 |如果您的訂閱包含...] |您會看到這些詳細資料 |
 |---------|---------|
-|EOP，但不是 Office 365 ATP     |偵測到並由 EOP 封鎖惡意電子郵件<br> 請參閱[威脅保護狀態報表 (EOP)](../../compliance/view-email-security-reports.md#threat-protection-status-report)。| |
+|EOP，但不是 Office 365 ATP     |偵測到並由 EOP 封鎖惡意電子郵件<br> 請參閱[威脅保護狀態報表 (EOP)](../../compliance/view-email-security-reports.md#threat-protection-status-report)。| 
 |Office 365 ATP |惡意內容和惡意電子郵件偵測並封鎖由 EOP 和 Office 365 ATP<br>彙總的數唯一的電子郵件與反惡意程式碼引擎、[零時差自動清除](zero-hour-auto-purge.md)，並 ATP 功能 （包括[安全連結](atp-safe-links.md)、[安全附件](atp-safe-attachments.md)及[ATP 防網路釣魚](atp-anti-phishing.md)） 封鎖惡意內容的詳細資訊。<br>請參閱[威脅保護狀態報表 (ATP)](view-reports-for-atp.md#threat-protection-status-report)。 | 
 
 若要檢視或存取威脅保護狀態] 小工具，您必須檢視進階威脅防護報告的權限。 若要深入了解，請參閱[檢視 ATP 報告需要哪些權限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。 

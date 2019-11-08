@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: dd73f32ff3c830104777aeefb1271178031a5b0d
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: 72ddad03486bf2c7dcba682453fa3bcfbdd1162b
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386140"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031148"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>階段 5: Microsoft 365 企業版的行動裝置管理
 
-![階段 5： 行動裝置管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![階段 5：行動裝置管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *此功能適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
@@ -151,7 +151,7 @@ Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configur
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何執行 Microsoft 365 企業版
 
-了解如何在 Microsoft[使用 EMS 管理裝置](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR8)的 IT 專業人員。
+了解如何在 Microsoft[使用 EMS 管理裝置](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8)的 IT 專業人員。
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 如何執行 Microsoft 365 企業版
 

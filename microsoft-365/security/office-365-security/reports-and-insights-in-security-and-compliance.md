@@ -15,12 +15,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: 概略報表和深入解析 avialable 安全性&amp;合規性中心。
-ms.openlocfilehash: ef3302e6550d70acba6b6072824123179b2d56bd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5c6ef13bbbb46de63dfb0cfecfa0824d8e50547d
+ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077423"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034174"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>智慧型報表和深入了解 Office 365 安全性&amp;合規性中心
 
@@ -52,9 +52,9 @@ ms.locfileid: "37077423"
 |**資料外洩防護** <br/> 資料外洩防護原則比對，誤判和覆寫，並連結到建立或編輯原則  <br/> |安全性&amp;合規性中心，移至 [**資料外洩防護** \> **原則** <br/> |[檢視資料外洩防護報告](../../compliance/view-the-dlp-reports.md) <br/> |
 |**資料管理** <br/> 如何套用標籤的相關資訊，分類為記錄、 標籤趨勢等等的標籤  <br/> |安全性&amp;合規性中心，移至 [**資料控管** \> **儀表板** <br/> |[檢視資料控管報告](../../compliance/view-the-data-governance-reports.md) <br/> |
 |**威脅管理儀表板**（這也稱為安全性儀表板和威脅情報儀表板）  <br/> 威脅偵測、 惡意程式碼趨勢、 最上層的目標的使用者、 詳細資料傳送和接收電子郵件、 等等  <br/> |安全性&amp;合規性中心，移至**威脅管理** \> **儀表板** <br/> |[安全性儀表板概觀](security-dashboard.md) <br/> |
-|**威脅總管**（也稱為總管） 或**即時偵測** <br/> 可疑電子郵件和 Office 365 中的檔案中偵測到的惡意程式碼  <br/> |安全性&amp;合規性中心，移至**威脅管理** \> **檔案總管**] 或 [**即時偵測**<br/> |[威脅總管 （或即時偵測的資訊）](threat-explorer.md) <br/> |
+|**威脅總管**（也稱為 Explorer）] 或 [**即時偵測** <br/> 可疑電子郵件和 Office 365 中的檔案中偵測到的惡意程式碼  <br/> |安全性&amp;合規性中心，移至**威脅管理** \> **檔案總管**] 或 [**即時偵測**<br/> |[威脅總管 (或即時偵測)](threat-explorer.md) <br/> |
 |**進階威脅防護和電子郵件安全性報告** <br/> 電子郵件安全性和威脅保護報告 （包括惡意程式碼、 垃圾郵件、 網路釣魚和詐騙報表）  <br/> |安全性&amp;合規性中心，移至**報表** \> **儀表板** <br/> |[檢視 Office 365 進階威脅防護報告](view-reports-for-atp.md) <br/><br/> [檢視安全性中的電子郵件安全性報告&amp;合規性中心](../../compliance/view-email-security-reports.md) <br/> |
-|**郵件流程** <br/> 相關資訊傳送和接收電子郵件、 最近的通知、 主要寄件者和收件者、 電子郵件轉寄功能報表，以及更多  <br/> |安全性&amp;合規性中心，移至 [**郵件流程** \> **儀表板** <br/> |[郵件流程深入了解 Office 365 安全性&amp;合規性中心](https://support.office.com/article/beb6acaa-6016-4d54-ba7e-3d6d035e2b46.aspx) <br/> |
+|**郵件流程** <br/> 相關資訊傳送和接收電子郵件、 最近的通知、 主要寄件者和收件者、 電子郵件轉寄功能報表，以及更多  <br/> |安全性&amp;合規性中心，移至 [**郵件流程** \> **儀表板** <br/> |[安全性與合規性中心內的郵件流程深入解析](mail-flow-insights-v2.md)<br/> |
 |**GDPR 規範** <br/> GDPR 合規性，包括資料主體、 標籤趨勢和作用中的連結的相關資訊&amp;關閉案例  <br/> |安全性&amp;合規性中心，移至**資料隱私權** \> **GDPR 儀表板** <br/> |[GDPR 的 Office 365 資訊保護](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
 |**稽核記錄** <br/> Office 365 活動、 使用者、 檔案或資料夾及更多的相關資訊  <br/> |安全性&amp;合規性中心，移至**搜尋&amp;調查** \> **稽核記錄搜尋** <br/> |[在 Office 365 安全與規範中心搜尋稽核記錄](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**規範符合性報告** <br/> FedRAMP 報告、 控管、 風險及規範符合性報告、 ISO 資訊安全性管理報表及服務組織控制稽核和評估報告  <br/> |安全性&amp;合規性中心，移至**服務保證** \> **規範符合性報告** <br/> |[規劃安全性&amp;Office 365 的合規性](../../compliance/plan-for-security-and-compliance.md) <br/> |

@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: 如果您的組織傳送大量的大宗郵件標示為垃圾郵件，可能會遭到封鎖無法傳送電子郵件與 Office 365。 閱讀本篇文章以深入了解發生的原因以及可以怎麼做其相關資訊。
-ms.openlocfilehash: 1985f9726a32e2726fd2814e5ec9079ad3ec211e
-ms.sourcegitcommit: 6c42fb7123b9688f9b53bc7fa91fb8cdfcf4c718
+ms.openlocfilehash: 28677e2bbfad7f44595de1300e42b9c58ab99c2b
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37455065"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031848"
 ---
 # <a name="control-outbound-spam-in-office-365"></a>控制 Office 365 的輸出垃圾郵件
 
@@ -60,9 +60,9 @@ ms.locfileid: "37455065"
 
 2. **使用第 3 方傳送大量通訊大量 emailer**： 有幾個 3rd 廠商大量 emailers 很傳送大量電子郵件的唯一事業。 他們可以使用以確保它們有良好的電子方式，且他們具有專用於強制執行資源的客戶。
 
-通訊、 行動裝置，惡意程式碼反不當使用工作群組 (MAAWG) 會發佈其成員資格名冊[以下](http://www.maawg.org/about/roster)。 數個大量電子郵件提供者清單上，而是負責網際網路公民已知。
+通訊、 行動裝置，惡意程式碼反不當使用工作群組 (MAAWG) 會發佈其成員資格名冊[以下](https://www.maawg.org/about/roster)。 數個大量電子郵件提供者清單上，而是負責網際網路公民已知。
 
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="for-more-information"></a>相關資訊
 
 [當寄件者被封鎖，無法傳送輸出垃圾郵件時的範例通知](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
 

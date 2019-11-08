@@ -13,12 +13,12 @@ ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 ms.collection:
 - M365-security-compliance
 description: 了解的驗證的 DKIM 簽署郵件在 Exchange Online Protection 和 Exchange Online
-ms.openlocfilehash: 75c104af4b3e6126bac37024de2c7f6ab337a028
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 347b47c0b182aab32d032abaa864357cc5b242ce
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078235"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031708"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>支援 DKIM 簽署郵件的驗證
 
@@ -28,6 +28,6 @@ DKIM 會驗證郵件標頭的 DKIM 簽章標頭中顯示的數位簽署郵件。
   
  `Authentication-Results: <contoso.com>; dkim=pass (signature was verified) header.d=example.com;`
   
-系統管理員可以建立 Exchange[郵件流程規則](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)（也稱為傳輸規則） 來篩選在 DKIM 驗證結果上，或將郵件路由傳送做為所需。 
+系統管理員可以建立 Exchange[郵件流程規則](https://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)（也稱為傳輸規則） 來篩選在 DKIM 驗證結果上，或將郵件路由傳送做為所需。 
   
 

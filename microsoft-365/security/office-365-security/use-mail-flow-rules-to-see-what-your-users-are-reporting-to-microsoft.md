@@ -13,12 +13,12 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: 您可以建立 Exchange 郵件流程規則，以防止使用者將電子郵件訊息傳送給 Microsoft 進行分析，並在您自己的安全性程序中使用它們
-ms.openlocfilehash: 16075605892bcb6d7b99269a64c9c6acd0d3254e
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: d1b67d60d10ea9ce5d3ed47e20959c85d785e437
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441160"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030637"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>使用郵件流程規則來查看您的使用者報告給 Microsoft 哪些內容
 
@@ -28,7 +28,7 @@ ms.locfileid: "37441160"
 
 預估完成時間：5 分鐘
 
-您必須已獲指派權限，才能執行此程序或這些程序。 若要查看您需要哪些權限，請參閱[訊息原則及符合性權限](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx)主題中的 「 郵件流程規則 」 項目和[用戶端和行動裝置權限](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx)主題中的 「 Outlook web 信箱原則 」 項目。
+您必須已獲指派權限，才能執行此程序或這些程序。 若要查看您需要哪些權限，請參閱[訊息原則及符合性權限](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx)主題中的 「 郵件流程規則 」 項目和[用戶端和行動裝置權限](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx)主題中的 「 Outlook web 信箱原則 」 項目。
 
 適用於此主題中程序的鍵盤快速鍵相關資訊，請參閱[Exchange 系統管理員的鍵盤快速鍵置在 Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 

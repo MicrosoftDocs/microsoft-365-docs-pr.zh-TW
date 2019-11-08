@@ -12,9 +12,9 @@ Microsoft 和任何參與者授與您的 Microsoft 文件及其他內容下[創�
 
 Microsoft、 Windows、 Microsoft Azure 和/或其他 Microsoft 產品和服務所參考文件中可能的 Microsoft 在美國及/或其他國家/地區的註冊的商標。
 這個專案的授權不要授與您權限使用任何 Microsoft 名稱、 標誌、 或商標。
-Microsoft 的一般商標指導方針，請參閱http://go.microsoft.com/fwlink/?LinkID=254653。
+Microsoft 的一般商標指導方針，請參閱https://go.microsoft.com/fwlink/?LinkID=254653。
 
-可以在找到隱私權資訊https://privacy.microsoft.com/en-us/
+可以在找到隱私權資訊https://privacy.microsoft.com/
 
 Microsoft 和所有其他權限，是否在其各自的著作權，任何參與者預約專利案申請，或註冊商標、 是否由 mincopiestoprotect 這個，estoppel 或其他語言。
 

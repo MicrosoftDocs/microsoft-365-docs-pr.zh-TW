@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 852fd00692b4ceb204e80dc26a737b540bc79f10
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 218c78cd8737c3a963386ae0a58a79824ef1615f
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078379"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034385"
 ---
 # <a name="hunt-for-malware-and-other-threats-in-microsoft-365"></a>搜尋的惡意程式碼和其他 Microsoft 365 中的威脅
 
@@ -28,5 +28,5 @@ ms.locfileid: "37078379"
 深入了解：
 
 * [裝置](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)in Microsoft Defender 進階威脅防護
-* [電子郵件和資料](https://docs.microsoft.com/en-us/office365/securitycompliance/office-365-atp)在 Office 365 進階威脅防護
-* 在 Azure 的進階的威脅防護中的[身分識別](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/investigate-a-user)
+* [電子郵件和資料](https://docs.microsoft.com/office365/securitycompliance/office-365-atp)在 Office 365 進階威脅防護
+* 在 Azure 的進階的威脅防護中的[身分識別](https://docs.microsoft.com/azure-advanced-threat-protection/investigate-a-user)

@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威脅調查及回應功能來尋找並調查惡意電子郵件。
-ms.openlocfilehash: bf099dfe8fffdc763d42122e466c982bb90b6492
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 57d419c291fdfed3a5d7237ae2021e9ef06723f5
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076823"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031898"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>尋找並調查已傳遞 Office 365 中的惡意電子郵件
 
@@ -30,7 +30,7 @@ ms.locfileid: "37076823"
 
 請確定符合下列需求：
   
-- 您的組織有[Office 365 進階威脅防護](office-365-atp.md)，並[將授權指派給使用者](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
+- 您的組織有[Office 365 進階威脅防護](office-365-atp.md)，並[將授權指派給使用者](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users)。
     
 - [Office 365 稽核記錄](../../compliance/turn-audit-log-search-on-or-off.md)已為您的組織。 
     

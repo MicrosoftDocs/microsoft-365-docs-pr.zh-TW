@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性原則和建議現代化貴組織中的安全性。
-ms.openlocfilehash: 89b275c621ef0d4d7fe1f95625c34a51ee4c506f
-ms.sourcegitcommit: 9d0a025ea9e265d515a034de0102eabcf47d11f5
+ms.openlocfilehash: 44a870263a832e2d130e0404c5e2ad0736a5fae5
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "37911394"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034375"
 ---
 # <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a>首席資訊安全長研討會模組 3： 身分識別和零信任使用者存取
 
@@ -26,15 +26,15 @@ ms.locfileid: "37911394"
 
 ## <a name="part-1-identity-and-zero-trust-history-933"></a>第 1 部分： 身分識別和零信任歷程記錄 （9 分 33 秒）
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3Yyhs]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Yyhs]
 
 ## <a name="part-2-zero-trust-definition-and-models-1537"></a>第 2 部分： 零信任定義及模型 (15:37)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YaUL]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YaUL]
 
 ## <a name="part-3-strategy-and-priorities-954"></a>第 3 部分： 策略和優先順序 (9:54)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YvHy]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YvHy]
 
 ## <a name="part-4-account-security-measuring-cost-of-attack-password-less-authentication-1311"></a>第 4 部分： 帳戶安全性： 測量的攻擊密碼較不驗證 (13:11) 的成本
 
@@ -42,7 +42,7 @@ ms.locfileid: "37911394"
 
 ##  <a name="part-5-zero-trust-user-access-reference-architecture-842"></a>第 5 部分︰ 零信任使用者存取參考架構 (8:42)
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3Yyhx]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Yyhx]
 
 ##  <a name="part-6-build-an-identity-perimeter-1357"></a>第 6 部分： 建立身分識別周邊 (13:57)
 

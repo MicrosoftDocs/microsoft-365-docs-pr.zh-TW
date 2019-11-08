@@ -15,12 +15,12 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: 若要協助防止詐騙，Office 365 和 Outlook.com 現在需要 RFC 規範從： 地址。
-ms.openlocfilehash: da1728b59ce100d988538d572a24ca1a44fa9a7b
-ms.sourcegitcommit: 96cbcfe8b02a5efc2d5a4fc070753ea96f298fda
+ms.openlocfilehash: ca3ec0ca6e9a2267c84549f26498b46479f74401
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37749155"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032348"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 如何驗證寄地址以防止網路釣魚
 
@@ -227,6 +227,6 @@ Microsoft 強烈建議您針對覆寫強制使用 [從： 原則。 覆寫此原
   
 ## <a name="related-topics"></a>相關主題
 
-[非法回應郵件與 EOP](https://technet.microsoft.com/en-us/library/dn499795%28v=exchg.150%29.aspx)
+[非法回應郵件與 EOP](https://technet.microsoft.com/library/dn499795%28v=exchg.150%29.aspx)
   
 

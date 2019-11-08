@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
 description: 在設定正確的憑證之前，任何人都無法傳送受 S/MIME 保護的郵件。為了透過 Exchange Online 傳送加密郵件，寄件者的電子郵件程式會使用收件者的公用憑證為郵件加密。這個公用的 X.509 憑證必須發行至 Office 365。
-ms.openlocfilehash: ad58b5663eaadf771ed1518edc01ce2f765f5202
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7b42f757ade54e362afc65f920096252bf69eb31
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078224"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030837"
 ---
 # <a name="sync-user-certificates-to-office-365-for-smime"></a>將使用者憑證同步至 Office 365 進行 S/MIME 處理
 
@@ -25,7 +25,7 @@ ms.locfileid: "37078224"
 
 ## <a name="to-sync-certificates-that-support-smime"></a>同步處理支援 S/MIME 的憑證
 
-設定 S/MIME 的首要步驟，是在您的本機 Active Directory 網域服務中核發憑證並加以發行。 如需管理 Exchange Server 中的憑證的詳細資訊，請參閱[Digital Certificates and SSL](http://technet.microsoft.com/library/a9e2e08c-d46a-4135-a387-eb653212b676.aspx)。
+設定 S/MIME 的首要步驟，是在您的本機 Active Directory 網域服務中核發憑證並加以發行。 如需管理 Exchange Server 中的憑證的詳細資訊，請參閱[Digital Certificates and SSL](https://technet.microsoft.com/library/a9e2e08c-d46a-4135-a387-eb653212b676.aspx)。
 
 您的憑證發行後，使用 Azure Active Directory 同步處理工具來同步處理至 Office 365 的使用者資料從您的內部部署 Exchange 環境。 如需有關此程序的詳細資訊，請參閱[DirSync： 目錄同步處理工具版本的版本歷程記錄](https://go.microsoft.com/fwlink/p/?LinkId=392587)。
 
