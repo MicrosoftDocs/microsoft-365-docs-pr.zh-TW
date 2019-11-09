@@ -1,1 +1,1 @@
-# [索引](index.md)
+# [索引](index.yml)
