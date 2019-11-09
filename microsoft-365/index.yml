@@ -1,0 +1,67 @@
+### YamlMime:Hub
+title: 系統管理員和 IT 專業人員的 Microsoft 365 說明中心
+summary: 探索 Microsoft 365 的說明和訓練資源。
+brand: m365
+metadata:
+  title: 系統管理員和 IT 專業人員的 Microsoft 365 說明中心
+  description: 設定、 部署及管理 Microsoft 365，以支援您的組織、 小型企業版、 活動，或授課和學生
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.topic: hub-page
+  ms.collection: m365-security-compliance
+  author: robmazz
+  ms.author: robmazz
+  ms.date: 11/08/2019
+  localization_priority: Priority
+  ms.openlocfilehash: 770cd0927ebab80a545b56de04ed3d4de0226989
+  ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 11/08/2019
+  ms.locfileid: "38076354"
+highlightedContent:
+  items:
+  - title: 系統管理員和 IT 專業人員訓練
+    itemType: learn
+    url: https://docs.microsoft.com/learn/m365/
+  - title: 訓練使用者
+    itemType: learn
+    url: https://support.microsoft.com
+  - title: 適用於小型企業的訓練
+    itemType: learn
+    url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+  - title: 適用於 IT 專業人員的測試實驗室指南
+    itemType: how-to-guide
+    url: ./enterprise/m365-enterprise-test-lab-guides.md
+  - title: Microsoft 365 技術社群
+    itemType: get-started
+    url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
+  - title: 適用於開發人員資源
+    itemType: reference
+    url: https://developer.microsoft.com/microsoft-365
+additionalContent:
+  sections:
+  - title: 取得 Microsoft 365 的說明
+    summary: 選取要深入了解 Microsoft 365 的卡片。
+    items:
+    - title: Microsoft 365 商務版
+      summary: 設計適用於中小型企業。 使用最新版的 Windows 和 Office 應用程式，如 Excel 和 Outlook 執行您的業務。 利用資料保護和延伸至所有商務裝置的安全性。
+      url: ./business/index.yml
+    - title: Microsoft 365 企業版
+      summary: 專為大型組織。 保護您的商業並改造您使用 Office 應用程式、 Windows 10 和 Enterprise Mobility + Security 的方式。
+      url: ./enterprise/index.md
+    - title: Microsoft 365 教育版
+      summary: 針對授課者解放創意、 提升團隊合作，並提供簡單且安全的體驗，為教育打造單一且價格合理解決方案所設計。
+      url: https://docs.microsoft.com/education/
+    - title: Microsoft 365 合規性
+      summary: 協助貴組織控管資訊、 防範風險，並遵守法律或法規的標準。
+      url: ./compliance/index.yml
+    - title: Microsoft 365 安全性
+      summary: 協助保護您的企業跨受攻擊面。
+      url: ./security/index.yml
+    - title: 適用於行銷活動的 Microsoft 365
+      summary: 將您的行銷活動或商務資料和通訊的安全與 Microsoft 365 商務版的建議組態。
+      url: ./campaigns/index.md
+    - title: 新增-Microsoft 365 訓練和 Microsoft 了解在憑證
+      summary: 若要增加您 Microsoft 365 的技術，並且贏得認證新手學習路徑。
+      url: https://docs.microsoft.com/learn/m365/

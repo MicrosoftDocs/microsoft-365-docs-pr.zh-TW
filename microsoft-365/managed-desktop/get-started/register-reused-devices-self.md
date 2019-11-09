@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 51db9c88710605c6203023b343edc4359556d57d
-ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
+ms.openlocfilehash: e11b72228dceb5a4999e6b9398efde02a41ca163
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37577769"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074735"
 ---
 # <a name="register-existing-devices-yourself"></a>自行註冊現有裝置
 
@@ -41,7 +41,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊唯一識別每個裝�
 - 可以執行 Windows PowerShell 指令碼-由上每個裝置--使用[Active Directory](#active-directory-powershell-script-method) ] 或 [[手動](#manual-powershell-script-method)並收集檔案中的結果。
 - 啟動每個裝置--，但未完成 Windows 安裝程式體驗-並[收集卸除式快閃磁碟機上的雜湊](#flash-drive-method)。
 
-#### <a name="configuration-manager"></a>組態管理員
+#### <a name="configuration-manager"></a>Configuration Manager
 
 您可以使用 System Center Configuration Manager 從現有的裝置，您想要註冊 Microsoft 受管理電腦收集硬體雜湊。
 
@@ -71,20 +71,25 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊唯一識別每個裝�
 4. 在 [**報表產生器中**，選取 [**資料來源：**。 選取預設資料來源，應該啟動與 「 AutoGen 」。 
 5. 選擇 [**查詢類型為文字**，，然後輸入此查詢：
 
-```
 
+
+
+```sql
 SELECT comp.manufacturer0      AS Manufacturer,  
        comp.model0             AS Model,  
        bios.serialnumber0      AS Serial_Number,  
        mdm.devicehardwaredata0 AS HardwareHash  
-FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp  
+FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
+
        INNER JOIN Fn_rbac_gs_pc_bios(@UserSIDs) bios  
                ON comp.resourceid = bios.resourceid  
        INNER JOIN Fn_rbac_gs_mdm_devdetail_ext01(@UserSIDs) mdm  
                ON comp.resourceid = mdm.resourceid
-
-
 ```
+
+
+
+
 5. 瀏覽至 [**欄位**] 索引標籤中，應該已經填入 wehre 值的**欄位名稱**] 和 [**來源] 欄位**。 如果不是，然後選取 [**新增**]，然後選取 [**查詢] 欄位**。 輸入的**欄位名稱**和**欄位來源**。
 6. 重複針對每一個這些值： 
     - 製造商 
@@ -225,7 +230,7 @@ CSV 檔案必須註冊以特定格式。 如果您收集的資料自行在先前
 | 註冊暫止 | 註冊未尚未完成。 請稍後再回來。 |
 | 註冊失敗 | 無法完成註冊。 如需詳細資訊，請參閱[疑難排解裝置註冊](#troubleshooting-device-registration)。 |
 | 準備使用者 | 註冊成功，而且裝置已準備好要傳遞給使用者。 Microsoft 受管理的電腦會逐步引導其第一次 」 設定，因此不需要為您進行任何進一步的準備工作。 |
-| Active | 裝置已經傳送給使用者，他們必須註冊您的租用戶。 這也表示他們定期使用裝置。 |
+| 作用中 | 裝置已經傳送給使用者，他們必須註冊您的租用戶。 這也表示他們定期使用裝置。 |
 | 非使用中 | 裝置已經傳送給使用者，他們必須註冊您的租用戶。 不過，他們有不適用於裝置最近 （過去 7 天）。  | 
 
 #### <a name="troubleshooting-device-registration"></a>疑難排解裝置註冊

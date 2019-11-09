@@ -4,15 +4,15 @@ description: ''
 keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5b2b1a147659bf58c9b8ded26d6774994a3c1682
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: a6397f1c78bb15e198ed75be50c51953b049ed68
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012208"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074687"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的網路組態
 
@@ -23,19 +23,19 @@ ms.locfileid: "38012208"
 
 Microsoft 受管理的電腦是雲端管理的服務。 有一群 Microsoft 受管理的電腦服務能夠連接時所需的端點。 此章節將列出需要允許 Microsoft 受管理的電腦服務的各種層面的端點。 
 
-客戶可以藉由傳送所有受信任的 Microsoft 365 的網路要求直接透過其防火牆/proxy、 略過驗證及所有其他的封包層級檢查或處理，以最佳化其網路。 這可減少延遲與周邊容量需求。 
+客戶可以藉由傳送所有受信任直接透過其防火牆或 proxy 的 Microsoft 365 網路要求、 略過驗證及所有其他的封包層級檢查或處理，以最佳化其網路。 這可減少延遲與周邊容量需求。 
 
 此外，若要最佳化 Microsoft 受管理電腦雲端式服務的效能，這些端點需要特別處理 [客戶用戶端瀏覽器和邊緣網路內的裝置。 這些裝置包括防火牆、 SSL 會自動換行和檢查、 封包檢查裝置，以及資料外洩防護系統。
 
 ### <a name="proxy-requirement"></a>Proxy 需求
 
-Proxy 或防火牆必須支援 TLS 1.2。 否則，客戶可能要停用通訊協定偵測。
+Proxy 或防火牆必須支援 TLS 1.2。 否則，您可能必須停用通訊協定偵測。
 
 ### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>允許端點-Microsoft 受管理電腦的特定
 
 Microsoft 受管理的電腦使用 Azure 入口網站來裝載其 web 主控台。 下表中的下列 Url 必須在您的 proxy 和防火牆允許清單，讓 Microsoft 受管理的電腦裝置可與 Microsoft 服務通訊。  
 
-請注意，Microsoft 受管理的桌上型電腦下列 URL 會用於上客戶 API，我們的服務執行的任何項目。 客戶必須確定此 URL 會永遠可在其公司網路上存取。
+請注意，Microsoft 受管理的桌上型電腦下列 URL 會用於上客戶 API，我們的服務執行的任何項目。 您必須確定此 URL 會永遠可在公司網路上存取。
 
 Microsoft 服務  | Url 上需要允許清單 
 --- | --- | ---
@@ -56,8 +56,7 @@ Windows 10 企業版包括商務用 Windows Update | [利用適用於 Windows 10
 Office 365 | [Office 365 URL 和 IP 位址範圍](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [混合式身分識別所需的連接埠和通訊協定](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)和[Active Directory 和 Active Directory 網域服務的連接埠需求](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune 網路組態需求](https://docs.microsoft.com/intune/network-bandwidth-use)
-Microsoft Defender 進階威脅防護 (ATP) | [Microsoft Defender ATP 端點](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server
-)
+Microsoft Defender 進階威脅防護 (ATP) | [Microsoft Defender ATP 端點](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

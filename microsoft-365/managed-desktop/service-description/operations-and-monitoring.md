@@ -4,14 +4,15 @@ description: ''
 keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c618c5bf2acf50d84aca354975670ed84b581601
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 9f0d1889e625ceba52f3e91ee950041f82e9750e
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431914"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074765"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft 受管理電腦作業和監控
 
@@ -76,13 +77,13 @@ Microsoft 受管理的電腦服務是實作，並由 Microsoft 運作，您可�
 
 對於內部部署產品，您的組織都會採用所有負責管理安裝，以及設定和作業活動。
 
-Categories |    Microsoft 將會 | 客戶會
+類別 |    Microsoft 將會 | 客戶會
 --- | --- | ---
 網路 （proxy、 封包檢查，VPN）  | 通知並計劃與客戶的商務使用者的風險降至最低。 | 建立要求的計劃的設定變更，包括設定詳細資料、 範圍、 時間表和 Microsoft，以檢閱其他相關詳細資料資訊的支援要求。<br>-Microsoft 受管理的桌上型電腦作業已評估，並建議您之後僅適用於變更。
 服務帳戶 |-實作、 安全地儲存和管理認證。<br> -未經授權的存取或使用這些認證的安全性操作小組進行通訊。 | 建立要求的計劃的設定變更，包括設定詳細資料、 範圍、 時間表和 Microsoft，以檢閱其他相關詳細資料資訊的支援要求。<br>-Microsoft 受管理的桌上型電腦作業已評估，並建議您之後僅適用於變更。<br>-未指派原則、 多重要素驗證、 條件式存取或應用程式部署至 Microsoft 受管理的桌上型電腦服務帳戶。<br>-不重設密碼，或使用的認證。<br>-如果可疑的活動就觀察到 Intune 或 Azure 稽核記錄檔中，與這些服務帳戶，請開啟 Microsoft 受管理的桌上型電腦作業的嚴重度 C 支援要求。
 裝置群組 | -實作及管理 Microsoft 受管理的電腦群組內的裝置的成員資格。<br>-使用 Microsoft 受管理的電腦群組來管理工作分派和裝置的組態和更新版本。 | 建立要求的計劃的設定變更，包括設定詳細資料、 範圍、 時間表和 Microsoft，以檢閱其他相關詳細資料資訊的支援要求。<br>-Microsoft 受管理的桌上型電腦作業已評估，並建議您之後僅適用於變更。<br>-不修改任何 Microsoft 受管理的電腦群組的成員資格。<br>-僅用於群組指派公司的憑證，例如 VPN、 Windows Hello 企業或電子郵件加密] 或 [公司的 Wi-fi 設定檔設定的服務。<br>-共同管理所在，明確地部署 Configuration Manager 用戶端時，排除所有 Microsoft 受管理的電腦群組。
 原則 |  -實作和管理，進而管理服務內的裝置的組態狀態的 Microsoft 受管理電腦原則。<br>-將更新部署至原則或 Windows，逐漸使用裝置群組。<br> -明確排除目標非-Microsoft 受管理的電腦群組。 | 建立要求的計劃的設定變更，包括設定詳細資料、 範圍、 時間表和 Microsoft，以檢閱其他相關詳細資料資訊的支援要求。<br>-Microsoft 受管理的桌上型電腦作業已評估，並建議您之後僅適用於變更。<br>-無法編輯，或將 Microsoft 受管理電腦原則指派到裝置或未受 Microsoft 受管理的電腦服務的使用者。
-Windows Defender 進階威脅防護 | 監視及調查 Microsoft 受管理的電腦服務範圍內的裝置。 | 建立要求的計劃的設定變更，包括設定詳細資料、 範圍、 時間表和 Microsoft，以檢閱其他相關詳細資料資訊的支援要求。<br>-Microsoft 受管理的桌上型電腦作業已評估，並建議您之後，僅適用於變更
+Windows Defender 進階威脅防護   | 監視及調查 Microsoft 受管理的電腦服務範圍內的裝置。 | 建立要求的計劃的設定變更，包括設定詳細資料、 範圍、 時間表和 Microsoft，以檢閱其他相關詳細資料資訊的支援要求。<br>-Microsoft 受管理的桌上型電腦作業已評估，並建議您之後，僅適用於變更
 商務用 Microsoft Store |  設定及維護的 Microsoft 受管理的電腦服務的 Windows Autopilot 設定檔。 | 建立要求的計劃的設定變更，包括設定詳細資料、 範圍、 時間表和 Microsoft，以檢閱其他相關詳細資料資訊的支援要求。<br>-Microsoft 受管理的桌上型電腦作業已評估，並建議您之後僅適用於變更。<br>-不修改 Microsoft 受管理的桌上型電腦 Windows Autopilot 設定檔的設定，或新增/移除指派的裝置。
 憑證 | | 建立支援要求 60 天前的憑證到期、 要求在計劃的設定變更，包括設定詳細資料、 範圍、 時間表和 Microsoft，以檢閱其他相關詳細資料的資訊。<br>-Microsoft 受管理的桌上型電腦作業已評估，並建議您之後僅適用於變更。<br>-更新所設定的憑證設定檔、 VPN 設定檔，以及 Wi-fi 設定檔的所有憑證。
 
@@ -91,7 +92,7 @@ Windows Defender 進階威脅防護 | 監視及調查 Microsoft 受管理的電�
 
 ## <a name="device-wipe-with-factory-reset"></a>使用原廠重設裝置資料抹除
 
-受管理電腦作業小組可以執行原廠重設到會建立映像需要 Microsoft 受管理電腦的受管理的裝置上。 如果您需要將裝置授與不同的員工，或是如果員工離開公司，這是很有幫助。 
+Microsoft 受管理的桌上型電腦作業小組可以執行時所需的服務中註冊裝置的原廠重設。 如果您需要將裝置授與不同的員工，或是如果員工離開公司，這是很有幫助。 
 
 有幾個需求：
 
@@ -113,4 +114,4 @@ Windows Defender 進階威脅防護 | 監視及調查 Microsoft 受管理的電�
 
 BitLocker 是在此程序中的資料安全性的重要元件。 使用 Microsoft 受管理的電腦裝置上的 BitLocker 加密，磁碟機上的資料安全即使物件之後仍然原廠重設已套用至裝置。 磁碟機的任何資料無法向下一個使用者的裝置。 如需詳細資訊，請參閱[〈 BitLocker 概觀 〉](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)。
 
-如需詳細資訊，請參閱[原廠重設裝置](https://docs.microsoft.com/intune/devices-wipe#factory-reset-a-device)。 
+如需詳細資訊，請參閱[原廠重設裝置](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device)。 
