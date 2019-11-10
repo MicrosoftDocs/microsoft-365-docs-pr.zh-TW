@@ -3,6 +3,7 @@
 ## 開始使用
 ### [適用於 BDM 的 Microsoft 365 安全性](Microsoft-365-security-for-bdm.md)
 ### [安全分數](./mtp/microsoft-secure-score.md)
+### [安全分數 (預覽)](./mtp/microsoft-secure-score-preview.md)
 ### [資訊安全長 (CISO) 研討會訓練](./office-365-security/ciso-workshop.md)
 #### [單元 1 - Microsoft 網路安全簡報](./office-365-security/ciso-workshop-module-1.md)
 #### [單元 2 - 安全性管理](./office-365-security/ciso-workshop-module-2.md)
