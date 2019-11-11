@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 適用於大型組織的 Windows 7 至 Windows 10 自動升級
-ms.openlocfilehash: 4d1601c23d160d5618d491cd168583c78b54181c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 6cf7b25c584b94b077b95b35be58f6cd5ef75ac5
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033628"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078082"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>適用於大型組織的 Windows 7 至 Windows 10 自動就地升級
 
@@ -44,7 +44,7 @@ ms.locfileid: "38033628"
 
 ## <a name="upgrading-a-small-number-of-computers"></a>升級少量電腦
 
-若是單一部電腦或少數幾部電腦，相較於更加自動化的方法，手動升級的方法通常是最佳的選擇。 您可以在 [Microsoft 市集](https://go.microsoft.com/fwlink/p/?LinkId=808282)、其他軟體零售商或在[大量授權服務中心](https://www.microsoft.com/licensing/servicecenter/default.aspx) (如果您有大量授權) 找到所需的軟體與授權。 如需將單一部電腦升級至 Windows 10 的詳細指引以及升級後的還原選項，請參閱 [Windows 7 至 Windows 10 手動升級逐步指南](https://docs.microsoft.com/zh-TW/microsoft-365/enterprise/windows-7-to-windows-10-upgrade)。
+若是單一部電腦或少數幾部電腦，相較於更加自動化的方法，手動升級的方法通常是最佳的選擇。 您可以在 [Microsoft 市集](https://go.microsoft.com/fwlink/p/?LinkId=808282)、其他軟體零售商或在[大量授權服務中心](https://www.microsoft.com/licensing/servicecenter/default.aspx) (如果您有大量授權) 找到所需的軟體與授權。 如需將單一部電腦升級至 Windows 10 的詳細指引以及升級後的還原選項，請參閱 [Windows 7 至 Windows 10 手動升級逐步指南](https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade)。
 
 ## <a name="how-to-upgrade-many-computers"></a>如何升級大量電腦
 
