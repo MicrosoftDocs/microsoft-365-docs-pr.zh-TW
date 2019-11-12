@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解自動展開封存在 Office 365 中，可提供無限制的封存儲存 Exchange Online 信箱。
-ms.openlocfilehash: 475bf53304be55bbac085693788cff4b5522bb14
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c13a6067a4c17b78a869be151b6e119f0c784f46
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078143"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231374"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>在 Office 365 中的無限制封存概觀
 
@@ -55,13 +55,13 @@ ms.locfileid: "37078143"
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>項目取得移至其他封存儲存空間？
 
-若要有效使用自動展開封存儲存，可能會移動資料夾。 Office 365 會決定哪些資料夾取得移至封存新增額外的儲存空間時。 移動資料夾時，原始資料夾中的 [封存在 Outlook 中的資料夾清單部分中自動建立子資料夾。 這個新的子資料夾會指向已移動的項目。 Office 365 使用來命名此資料夾的命名慣例為**\<資料夾名稱\>_yyyy （上建立 mmm dd，yyyy h_mm）**，其中： 
-  
+若要有效使用自動展開封存儲存，可能會移動資料夾。 Office 365 會決定哪些資料夾取得移至封存新增額外的儲存空間時。 有時時移動資料夾，會自動建立一或多個的子資料夾，原來的資料夾中的項目會分配到這些資料夾以利移動程序。 當您在 Outlook 中檢視資料夾清單] 的封存部分，這些子資料夾會顯示原始資料夾下。  Office 365 使用來命名這些子資料夾的命名慣例為**\<資料夾名稱\>_yyyy （上建立 mmm dd，yyyy h_mm）**，其中：
+
 - **yyyy**是所收到的郵件] 資料夾中的年份。 
     
 - **mmm dd，yyyy h_m**是子資料夾由 Office 365 中，建立以 UTC 格式，根據使用者的時區和 Outlook 中的地區設定的時間與日期。 
     
-下列螢幕擷取畫面顯示的資料夾清單前面和後面的郵件會移自動展開封存中。
+下列螢幕擷取畫面顯示的資料夾清單前面和後面的郵件會移至自動展開封存。
   
  **之前新增額外儲存空間**
   
@@ -71,6 +71,9 @@ ms.locfileid: "37078143"
   
 ![之後已佈建自動展開封存的封存信箱的資料夾清單](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
   
+> [!NOTE]
+> 如先前所述，Office 365 將項目移至子資料夾 （以及它們使用的命名慣例上面所述的名稱），協助分配到輔助封存的內容。 但是，將項目移至子資料夾不一定大小寫。 有時整個資料夾可能會移到輔助封存。 在此情況下，該資料夾會保留其原始的名稱。  它不會明顯資料夾已移至輔助封存在 Outlook 中的資料夾清單。
+
 ## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Outlook 需求，來存取自動展開封存中的項目
 
 若要存取儲存在自動展開封存的郵件，使用者必須使用下列其中一個下列 Outlook 用戶端：
@@ -102,11 +105,11 @@ ms.locfileid: "37078143"
   
 - **eDiscovery:** 當您使用 Office 365 電子文件探索工具，例如內容搜尋 」 或 「 就地 eDiscovery 」 也會搜尋中自動展開封存的額外儲存空間區域。
     
-- **保留**: * * 當您將使用工具，例如訴訟暫止在 Exchange Online 或 eDiscovery 案件保留與安全性與合規性中心中的保留原則的保留狀態的信箱時，位於自動展開封存的內容也會處於暫止。
+- **保留：** 當您讓信箱處於保留使用例如訴訟暫止的工具在 Exchange 線上] 或 [eDiscovery 案例保留與位於自動展開封存的保留原則中的安全性與合規性中心，內容也會處於暫止。
     
 - **通訊記錄管理 (MRM):** 如果您使用 Exchange Online 中的 MRM 刪除原則若要永久刪除過期的信箱項目，也會刪除過期的項目位於自動展開封存。
     
-- **匯入服務**: * * 您可以使用 Office 365 匯入服務將 PST 檔案匯入使用者的自動展開封存。 您可以到使用者的封存信箱，最多 100 GB 的資料匯入從 PST 檔案。 
+- **匯入服務：** 您可以使用 Office 365 匯入服務將 PST 檔案匯入使用者的自動展開封存。 您可以到使用者的封存信箱，最多 100 GB 的資料匯入從 PST 檔案。 
 
 ## <a name="more-information"></a>詳細資訊
 

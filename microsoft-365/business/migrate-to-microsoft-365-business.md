@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 將貴公司從 Office 365 商務進階版升級至 Microsoft 365 商務版的步驟。
-ms.openlocfilehash: 1e337b908f848da1d33cbd8e662652550d302b14
-ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
+ms.openlocfilehash: f3a25746cf123fa471c29084a62a6fcfc1542a02
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38002102"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231404"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>從 Office 365 商務進階版升級至 Microsoft 365 商務版
 
@@ -38,37 +38,6 @@ ms.locfileid: "38002102"
 ## <a name="whats-the-difference-between-office-365-business-premium-and-microsoft-365-business"></a>Office 365 商務進階版和 Microsoft 365 商務版之間的差異為何？
 我們已加入下列兩個計劃以並排比較至[Microsoft 365 商務版服務說明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。 
 
-1. 一旦您已購買新授權，且這是您沒有在第一次，Microsoft 365 商務版設定橫幅會顯示在系統管理中心。
-    
-    > [!NOTE]
-    > 安裝程式橫幅 」 是有機會加入新的使用者，新的網域，並將新使用者的電子郵件移轉。 如果您不執行任何計劃，您仍應該通過精靈，然後選擇 [使它消失從 [系統管理] 首頁上的預設選項。 
-  
-   ![選擇 [在 Microsoft 365 商務版上的啟動安裝程式已準備好設定橫幅。](media/8d3b0d97-7cca-497f-9364-4b00ad670209.png)
-  
-    Choose **Start setup**.
-    
-2. 在**個人化登入和電子郵件**] 頁面上，您可以藉由選擇**連接您已經擁有網域**，如果您想要使用這個機會將另一個網域新增至您的訂閱新增網域。 
-    
-    如果您已設定網域，第二個欄位會指出，並會**繼續使用**像是\<_您的網域名稱_\> **的電子郵件和登入**。   如果您尚未設定網域加上您的訂閱，它會像是**繼續使用** \<_貴公司 name.onmicrosoft.com_ \> **的電子郵件和登入**。  
-    
-    選擇 [下一步]****。
-    
-    ![在 [登入的個人化] 和 [電子郵件] 頁面中，選擇 [新增網域，或使用您使用一個。](media/c3f5cfb2-1189-4d2f-803b-c9feb008a7a3.png)
-  
-3. 在 [**新增新使用者**] 頁面中，您可以新增新的使用者，如果您有想要指派至 Microsoft 365 商務版授權的新員工。 
-    
-    如果您沒有新員工加入而且想要將授權指派給現有的使用者，請選擇 [**下一步**]。
-    
-4. 在**移轉電子郵件訊息**] 頁面上，您可以選擇任何您在步驟 3 中新增的新使用者的電子郵件移轉。 您也可以略過此步驟。 選擇 [下一步]****。
-    
-5. 在最後一個頁面上，選擇 [**移至系統管理中心**，並那里繼續執行安裝程式。
-    
-6. 在系統管理中心，移至 [**使用者** \> **作用中的使用者**。
-    
-7. 選取您要指派， **Microsoft 365 商務版**授權的使用者，然後選擇 [旁的 [**編輯****產品授權**。
-    
-    ![在 [使用者] 卡片中，選擇 [產品授權] 旁的 [編輯]。](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
-  
 ## <a name="before-you-get-started"></a>開始之前
 
 - **何時應該選擇升級？** 升級時，選擇您想要升級**的所有使用者**指派給單一計劃。 當您選擇升級時，所有計劃使用者取得切換到另一個計劃在同一時間。 如果您不想要升級所有人指派給單一計劃，請購買新方案 （在此情況 Microsoft 365 商務版），以及[個別指派這些授權](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)給您想要升級每位使用者的授權。 
