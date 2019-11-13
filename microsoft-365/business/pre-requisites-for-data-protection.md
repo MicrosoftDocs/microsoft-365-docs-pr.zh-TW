@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: '了解設定您的組織使用 Microsoft 365 商務版的必要條件。 '
-ms.openlocfilehash: 3bf02ab831a1eb158959490ff7f4d4274a15bb3f
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 157abf0a3396ab374297441bf90d6defc4093390
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575831"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38290523"
 ---
 # <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>使用 Microsoft 365 商務版保護裝置資料的先決條件
 
@@ -34,6 +34,8 @@ ms.locfileid: "37575831"
 - Windows 裝置必須執行 Windows 7 專業版、 Windows 8 專業版或 Windows 8.1 專業版。
     
     [將 Windows 裝置升級到 Windows 專業版 Creators Update](upgrade-to-windows-pro-creators-update.md)
+    
+    如果您執行 Windows 10 家用版，您需要**購買**Windows 10 專業版。 如需相關指示的 [ [Windows 10 家用版到 Windows 10 專業版升級](https://support.office.com/article/0aee10c1-4d34-43ee-a325-579c6c2df90e?ui=en-US&rs=en-US&ad=US)，請參閱。 
     
 - 從行動裝置管理 (Mobile Iron、AirWatch 等等) 移除裝置。您將為貴組織的所有人員註冊 Microsoft 365 商務版行動裝置管理。
     

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5f1e2bd2440b5c38c958d3182684e87643f2e853
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: a064a41fc7ab69e31d49553f600dfd6bb91ef7b0
+ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012024"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302910"
 ---
 # <a name="deploy-apps-to-devices"></a>將應用程式部署至裝置
 以 Microsoft 受管理的電腦上架一部分的包含新增和應用程式部署至使用者的裝置。 一旦您使用 Microsoft 受管理電腦入口網站，您可以新增並部署您的應用程式。 
@@ -83,7 +83,7 @@ ms.locfileid: "38012024"
 --- | --- | ---
 可以使用 |  應用程式可從公司入口網站應用程式或網站。 | MMD –*應用程式名稱*-適用於
 必要 |  在 [選取群組中的裝置上安裝應用程式。 | MMD –*應用程式名稱*-必要
-Uninstall |  載入應用程式是從選取群組中的裝置解除安裝。 | MMD –*應用程式名稱*-解除安裝
+Uninstall |  從選取群組中的裝置解除安裝應用程式。 | MMD –*應用程式名稱*-解除安裝
 
 將您的使用者新增至這些群組，以進行應用程式可用、 安裝應用程式，或從他們的 Microsoft 受管理的電腦裝置中移除應用程式。 
 
@@ -102,7 +102,7 @@ Uninstall |  載入應用程式是從選取群組中的裝置解除安裝。 | M
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>若要開始使用 Microsoft 受管理電腦的步驟
 
-1. [新增及確認系統管理入口網站中的連絡人](add-admin-contacts.md)
+1. [在系統管理入口網站中新增和驗證系統管理員連絡人](add-admin-contacts.md)
 2. [調整條件式存取](conditional-access.md)
 3. [指派授權](assign-licenses.md)
 4. [部署 Intune 公司入口網站](company-portal.md)
