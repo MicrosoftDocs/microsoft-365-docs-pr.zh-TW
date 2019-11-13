@@ -208,6 +208,7 @@
 ### [使用處理錯誤](processing-data-for-case.md)
 #### [進階的監管人資料索引](indexing-custodian-data.md)
 #### [處理資料時發生補救錯誤](error-remediation-when-processing-data-in-advanced-ediscovery.md)
+#### [單一項目錯誤補救](single-item-error-remediation.md)
 
 ### [收集適用於案例的資料](collecting-data-for-ediscovery.md)
 #### [建立搜尋](create-search-to-collect-data.md)
@@ -429,8 +430,7 @@
 
 ### 外洩通知
 #### [外洩通知](gdpr-breach-notification.md)
-#### [Azure](gdpr-breach-azure.md)
-#### [Dynamics 365](gdpr-breach-dynamics365.md)
+#### [Azure & Dynamics 365](gdpr-breach-azure-dynamics.md)
 #### [Microsoft 支援服務與專業服務](gdpr-breach-microsoft-support-professional-services.md)
 #### [Office 365](gdpr-breach-office365.md)
 
