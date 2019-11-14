@@ -22,19 +22,17 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: 深入了解現在在安裝期間，會自動將 Office 部署到 Windows 10 裝置。
-ms.openlocfilehash: 64585d0a34e409822959939d5ae40fac57ff943b
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: fbc11553452ae5068ad7013a409901dee5b3570d
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575991"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320041"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>在設定期間安裝 Windows 10 版 Office
 
 ![指向橫幅https://aka.ms/aboutM365preview。](media/m365admincenterchanging.png)
 
-根據預設，此設定為關閉狀態。您可以開啟此設定以確保使用者可在其所有 Windows 10 裝置上執行最新版 Office，但應先驗證符合所有先決條件。除了[透過 Microsoft 365 商務版準備 Office 用戶端部署](prepare-for-office-client-deployment.md)中所述的其他要求，使用者必須有 Microsoft 365 商務版的授權，此設定才能將軟體推送到裝置。 
+根據預設，此設定為關閉狀態。 您可以開啟它以確定使用者有最新版本的 Office 上所有 Windows 10 裝置，但先確認已符合所有必要條件。 必須為此設定，將軟體推送到裝置，除了其他[Office 用戶端部署 Microsoft 365 商務版準備](prepare-for-office-client-deployment.md)所述的需求的 Microsoft 365 商務版授權給使用者。 
   
-建議您在設定時接受預設設定。 若要在不同使用者群組中有不同的設定，您可以在設定後透過群組基礎管理 Office 部署。 移至**裝置**\>從管理中心首頁的 **[管理 Office 部署**。 如需逐步指示，請參閱[在 Windows 10 裝置上自動安裝或解除安裝 Office](auto-install-or-uninstall-office.md)。
-  
-
+我們建議您接受安裝期間預設設定。 若要在不同使用者群組中有不同的設定，您可以在設定後透過群組基礎管理 Office 部署。 移至**裝置**\>從管理中心首頁的 **[管理 Office 部署**。 如需逐步指示，請參閱[在 Windows 10 裝置上自動安裝或解除安裝 Office](auto-install-or-uninstall-office.md)。
