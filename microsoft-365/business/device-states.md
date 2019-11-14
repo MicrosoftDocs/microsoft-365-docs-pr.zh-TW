@@ -22,16 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: 了解 Microsoft 365 商務版中的裝置狀態。
-ms.openlocfilehash: 06e5c800e6a104785c1fd0724223e05d7729722e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: b55e6a5d538ec28d195225e93797cea27afd2e8b
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072713"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320201"
 ---
 # <a name="device-states"></a>裝置狀態
-
-## <a name="device-states"></a>裝置狀態
 
 Devices in the **Device actions** list (Admin home \> **Device actions**) can have the following states.
   
@@ -43,12 +41,12 @@ Devices in the **Device actions** list (Admin home \> **Device actions**) can ha
 |淘汰擱置中  <br/> |Microsoft 365 商務版 準備好要從裝置移除公司資料。  <br/> |
 |淘汰進行中  <br/> |Microsoft 365 商務版 目前正在從裝置移除公司資料。  <br/> |
 |淘汰失敗  <br/> | 移除公司資料的動作失敗。  <br/> |
-|已取消淘汰  <br/> |已取消淘汰動作。  <br/> |
+|已取消淘汰  <br/> |淘汰已取消的動作。  <br/> |
 |抹除擱置中  <br/> |等待開始重設成出廠預設值。  <br/> |
 |抹除進行中  <br/> |已發出重設成出廠預設值。  <br/> |
-|抹除失敗  <br/> |無法執行重設成出廠預設值。  <br/> |
-|已取消抹除  <br/> |已取消重設成出廠預設值。  <br/> |
-|狀況不良  <br/> |這表示動作擱置中 (或進行中)，但裝置已超過 30 天未曾簽入。  <br/> |
+|抹除失敗  <br/> |無法執行原廠重設。  <br/> |
+|已取消抹除  <br/> |出廠已取消此事件。  <br/> |
+|狀況不良  <br/> |動作擱置中 （或進行中），但裝置尚未超過 30 天未曾簽入。  <br/> |
 |刪除擱置中  <br/> |刪除動作擱置中。  <br/> |
 |已探索  <br/> |Microsoft 365 商務版 偵測到裝置。  <br/> |
    

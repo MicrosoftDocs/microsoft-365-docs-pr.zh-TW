@@ -1,5 +1,5 @@
 ---
-title: 將其他使用者新增至 Microsoft 365 商務版
+title: 將更多使用者新增至 Microsoft 365 商務版
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,23 +21,23 @@ search.appverid:
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: 了解如何新增使用者、 保護他們的裝置，並將 Microsoft 365 商務版中的角色指派。
-ms.openlocfilehash: 0ea3a4845e46ed1d13abf966eea895aa394aebca
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 25f19873400dad1c57445a63dd354bbb5d1fce49
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574751"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38322528"
 ---
-# <a name="add-additional-users-to-microsoft-365-business"></a>將其他使用者新增至 Microsoft 365 商務版
+# <a name="add-more-users-to-microsoft-365-business"></a>將更多使用者新增至 Microsoft 365 商務版
 
 ## <a name="add-new-users"></a>新增使用者
 
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。 
-2. 在左側導覽中選擇 [**使用者** \> **作用中的使用者**。
-1. 在 **[作用中使用者**] 頁面上，選擇 [**新增使用者**]。
- 4. 在 [**新增使用者**] 面板中，輸入所需的資訊。 
+2. 在左側的導覽窗格中，選擇 [**使用者** \> **作用中的使用者**。
+3. 在 **[作用中使用者**] 頁面上，選擇 [**新增使用者**]。
+4. 在 [**新增使用者**] 面板中，輸入所需的資訊。 
   
-    您也可以輸入 [**連絡人資訊**] 下的其他資訊，選擇 [設定**密碼**設定下, 密碼的方式，將**角色**下的角色指派。
+    您可以輸入 [**連絡人資訊**的詳細資訊，選擇您設定在 [**密碼**] 設定下, 密碼及其指派**角色**下的角色。
       
     ![Enter user information in the New user card](media/f04d39ca-48be-4868-8330-8552a4754c8b.png)
       
@@ -45,5 +45,5 @@ ms.locfileid: "37574751"
       
     ![Set the license setting to On position](media/7404f7f7-93bc-44a3-9ffb-4208b5b17402.png)
   
-另請參閱[個別或大量新增使用者](https://docs.microsoft.com/office365/admin/add-users/add-users)。
+如需新增使用者的詳細資訊，請參閱[個別或大量新增使用者](https://docs.microsoft.com/office365/admin/add-users/add-users)。
   

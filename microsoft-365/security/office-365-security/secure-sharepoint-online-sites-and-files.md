@@ -19,18 +19,18 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：在 SharePoint Online 和 Office 365 中保護檔案的設定建議。
-ms.openlocfilehash: 62b7227239c52f50f2dc437e1ddedc663a5bb01d
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+ms.openlocfilehash: 15b67d2569f2c8ceafb16973ae2bf6862ebb9ded
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035703"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38311107"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>保護 SharePoint Online 網站與檔案
 
  **摘要：** 在 SharePoint Online 和 Office 365 中保護檔案的設定建議。
   
-本文提供設定 SharePoint Online 小組網站和檔案保護的建議，以在安全性和順暢的共同作業間取得平衡。本文定義四種不同的設定，首先是組織內的公用網站，並搭配最開放的共用原則。每項額外設定均代表有意識的保護升級，但資源的存取和共同作業能力則會減少為只提供給相關使用者。使用建議作為起點，並且調整組態以符合您的組織的需求。 
+本文提供設定 SharePoint Online 小組網站和檔案保護的建議，以在安全性和順暢的共同作業間取得平衡。本文定義四種不同的設定，首先是組織內的公用網站，並搭配最開放的共用原則。每項額外設定均代表有意識的保護升級，但資源的存取和共同作業能力則會減少為只提供給相關使用者。使用建議作為起點，並且調整組態以符合您的組織的需求。
   
 本文的設定符合 Microsoft 針對資料、身分識別和裝置的下列三層保護建議：
   
@@ -40,7 +40,7 @@ ms.locfileid: "38035703"
     
 - 高度機密保護
     
-如需這些層級和每道層級的建議功能詳細資訊，請參閱下列資源。 
+如需這些層級和每道層級的建議功能詳細資訊，請參閱下列資源。
   
 - [Office 365 的身分識別與裝置保護](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#BKMK_O365IDP)
     
@@ -54,7 +54,7 @@ ms.locfileid: "38035703"
 
 如圖例所示：
   
-- 基準保護包括公用網站與私用網站這兩個 SharePoint Online 小組網站的選項。 公用網站可供組織中的任何人探索及存取。 私用網站則僅供網站成員探索及存取。 這兩個網站的設定都允許群組外部共用。 
+- 基準保護包括公用網站與私用網站這兩個 SharePoint Online 小組網站的選項。 公用網站可供組織中的任何人探索及存取。 私用網站則僅供網站成員探索及存取。 這兩個網站的設定都允許群組外部共用。
     
 - 設有敏感性與高度機密保護的網站為私用網站，其存取權僅限於特定群組的成員。
     
