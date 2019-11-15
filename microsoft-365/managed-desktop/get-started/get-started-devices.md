@@ -1,45 +1,53 @@
 ---
-title: 系統管理員的協助使用者開始使用其 Microsoft 受管理的電腦裝置
+title: 讓您的使用者準備好使用裝置
 description: ''
 keywords: Microsoft 受管理的電腦、 裝置，取得開始，Microsoft 365
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9b87156a66d2f7a8d69a6c6f1a22353a52c69385
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: eec0243b7724eac852a9145a4e4fadcc13fae097
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012398"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627557"
 ---
-# <a name="get-your-users-ready-to-use-devices"></a><span data-ttu-id="ab90d-103">讓您的使用者準備好使用裝置</span><span class="sxs-lookup"><span data-stu-id="ab90d-103">Get your users ready to use devices</span></span>
+# <a name="get-your-users-ready-to-use-devices"></a><span data-ttu-id="78932-103">讓您的使用者準備好使用裝置</span><span class="sxs-lookup"><span data-stu-id="78932-103">Get your users ready to use devices</span></span>
 
-<span data-ttu-id="ab90d-104">Microsoft 受管理的電腦裝置來自預先設定與目前的 Windows 版本。</span><span class="sxs-lookup"><span data-stu-id="ab90d-104">Microsoft Managed Desktop devices come pre-configured with the current version of Windows.</span></span> <span data-ttu-id="ab90d-105">設定和應用程式會從雲端安裝，如使用者完成設定裝置。</span><span class="sxs-lookup"><span data-stu-id="ab90d-105">Configurations and apps will be installed from the cloud as the user completes setting up the device.</span></span> 
+<span data-ttu-id="78932-104">Microsoft 受管理的電腦裝置位於手中您的使用者，一旦快速入門既快速又簡單。</span><span class="sxs-lookup"><span data-stu-id="78932-104">Once a Microsoft Managed Desktop device is in the hands of your end user, getting started with it is fast and easy.</span></span> <span data-ttu-id="78932-105">裝置來自預先設定與目前的 Windows 版本，並且設定和應用程式會安裝從雲端為使用者完成安裝程式。</span><span class="sxs-lookup"><span data-stu-id="78932-105">Devices come pre-configured with the current version of Windows, and configurations and apps are installed from the cloud as the user completes setup.</span></span> 
  
-<span data-ttu-id="ab90d-106">有使用者需要採取期間提高生產力與他們的裝置設定的裝置的只有幾個步驟。</span><span class="sxs-lookup"><span data-stu-id="ab90d-106">There are only a few steps a user needs to take during device set up to be productive with their device.</span></span> <span data-ttu-id="ab90d-107">Microsoft 受管理電腦建議使用下列連結*開始使用您的裝置*指南。</span><span class="sxs-lookup"><span data-stu-id="ab90d-107">Microsoft Managed Desktop recommends using *Get started with your device* guide linked below.</span></span> <span data-ttu-id="ab90d-108">此可下載的快速入門提供基本指示以設定新的 Microsoft 受管理的電腦裝置。</span><span class="sxs-lookup"><span data-stu-id="ab90d-108">This downloadable guide provides basic instructions for setting up a new Microsoft Managed Desktop device.</span></span> <span data-ttu-id="ab90d-109">我們已專為 IT 系統管理員的比較基準，本指南。</span><span class="sxs-lookup"><span data-stu-id="ab90d-109">We've designed this guide to be a baseline for IT administrators.</span></span> <span data-ttu-id="ab90d-110">使用它，或更新，以新增步驟或協助您設定他們的裝置的使用者的資訊。</span><span class="sxs-lookup"><span data-stu-id="ab90d-110">Use it as is, or update it to add steps or info that will help your users set up their devices.</span></span> 
+<span data-ttu-id="78932-106">若要將此位址設更容易，我們提供的指南，內容會逐步引導您完成初始設定的使用者，並設定和使用更新版本中，提供說明資源，如有需要。</span><span class="sxs-lookup"><span data-stu-id="78932-106">To make this even easier, we offer a guide that walks your users through the initial setup and provides help resources both for the setup and for use later, if needed.</span></span> <span data-ttu-id="78932-107">您可以自訂本指南以包括特定組織專屬的詳細資訊。</span><span class="sxs-lookup"><span data-stu-id="78932-107">You can customize this guide to include certain details specific to your organization.</span></span> <span data-ttu-id="78932-108">然後，就會散發直接與您的使用者以及他們的裝置快顯功能表。</span><span class="sxs-lookup"><span data-stu-id="78932-108">You then distribute the guide directly to your users along with their device.</span></span> <span data-ttu-id="78932-109">有兩種版本，一個用於使用 Microsoft 的支援系統 （取得說明應用程式），一個用於那些提供自己的內部使用者支援的組織。</span><span class="sxs-lookup"><span data-stu-id="78932-109">There are two versions, one for organizations using Microsoft's support system (the Get Help app), one for those providing their own internal end-user support.</span></span>
 
-## <a name="get-started-guide"></a><span data-ttu-id="ab90d-111">取得入門的指南</span><span class="sxs-lookup"><span data-stu-id="ab90d-111">Get started guide</span></span> 
-<span data-ttu-id="ab90d-112">您可以下載快顯功能表： [Microsoft 受管理的電腦-開始使用您的裝置](https://www.microsoft.com/download/details.aspx?id=57918)。</span><span class="sxs-lookup"><span data-stu-id="ab90d-112">You can download the guide: [Microsoft Managed Desktop - Get started with your device](https://www.microsoft.com/download/details.aspx?id=57918).</span></span>
+## <a name="to-prepare-the-guide"></a><span data-ttu-id="78932-110">若要準備快顯功能表</span><span class="sxs-lookup"><span data-stu-id="78932-110">To prepare the guide</span></span>
 
-## <a name="what-should-i-update-in-the-get-started-guide"></a><span data-ttu-id="ab90d-113">應該更新項目中取得入門指南？</span><span class="sxs-lookup"><span data-stu-id="ab90d-113">What should I update in the Get started guide?</span></span>
+1. <span data-ttu-id="78932-111">下載適用於貴組織的版本：</span><span class="sxs-lookup"><span data-stu-id="78932-111">Download the version appropriate to your organization:</span></span>
+- <span data-ttu-id="78932-112">[Microsoft 受管理的電腦-開始使用您的裝置 （取得協助的版本）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v2.pdf) ： 如果您的使用者將使用 Microsoft 的支援系統，請使用此版本。</span><span class="sxs-lookup"><span data-stu-id="78932-112">[Microsoft Managed Desktop - Get started with your device (Get Help version)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v2.pdf) - use this version if your end users will use Microsoft's support system.</span></span>
+- <span data-ttu-id="78932-113">[Microsoft 受管理的電腦-開始使用您的裝置](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)-如果您的使用者會使用這個版本*不*使用 Microsoft 的支援系統。</span><span class="sxs-lookup"><span data-stu-id="78932-113">[Microsoft Managed Desktop - Get started with your device](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf) - use this version if your end users will *not* use Microsoft's support system.</span></span>
+2. <span data-ttu-id="78932-114">使用能夠開啟 PDF 檔案的任何應用程式來填入貴組織相關的詳細資訊：</span><span class="sxs-lookup"><span data-stu-id="78932-114">Use any app capable of opening PDF files to fill in details relevant to your organization:</span></span>
+    - <span data-ttu-id="78932-115">網路名稱您的使用者應連接才能繼續執行安裝程式 (在快顯功能表中的步驟 3)</span><span class="sxs-lookup"><span data-stu-id="78932-115">The name of the network your users should connect to in order to continue setup (Step 3 in the guide)</span></span>
+    - <span data-ttu-id="78932-116">貴組織的 Azure 租用戶帳戶 (在快顯功能表中的步驟 4) 的名稱</span><span class="sxs-lookup"><span data-stu-id="78932-116">The name of your organization's Azure tenant account (Step 4 in the guide)</span></span>
+    - <span data-ttu-id="78932-117">您的組織內部 IT 支援 （第二頁的頂端） 的連絡人資訊</span><span class="sxs-lookup"><span data-stu-id="78932-117">Contact information for your organization's internal IT support (top of second page)</span></span>
+3. <span data-ttu-id="78932-118">儲存已編輯的 PDF，並接著發佈至您的使用者。</span><span class="sxs-lookup"><span data-stu-id="78932-118">Save the edited PDF, and then distribute to your end users.</span></span> 
 
-<span data-ttu-id="ab90d-114">以下是 IT 系統管理員可以將個人化*您的裝置快速入門*的幾種方法：</span><span class="sxs-lookup"><span data-stu-id="ab90d-114">Here are a few ways IT administrators can personalize *Get started with your device*:</span></span>
-- <span data-ttu-id="ab90d-115">步驟 2 中包含使用者應該連線到慣用的網際網路</span><span class="sxs-lookup"><span data-stu-id="ab90d-115">Include the preferred internet the user should connect to in step 2</span></span>
-- <span data-ttu-id="ab90d-116">授與適當的使用者名稱或網域名稱與使用者輸入在步驟 3</span><span class="sxs-lookup"><span data-stu-id="ab90d-116">Give the user with the appropriate username, or domain name to enter at step 3</span></span>
-- <span data-ttu-id="ab90d-117">新增支援 Microsoft 受管理的電腦支援外部組織內支援連絡人</span><span class="sxs-lookup"><span data-stu-id="ab90d-117">Add a support contact within your organization for support outside of Microsoft Managed Desktop support</span></span>
-- <span data-ttu-id="ab90d-118">新增有關在哪裡可以挑選其裝置 （如果這是分開這些指示） 指示</span><span class="sxs-lookup"><span data-stu-id="ab90d-118">Add instructions about where to pick up their device (if this is separate from these instructions)</span></span>
+## <a name="ready-to-use-guide"></a><span data-ttu-id="78932-119">「 已準備要可以使用指南 》</span><span class="sxs-lookup"><span data-stu-id="78932-119">"Ready-to-use guide"</span></span>
 
-<span data-ttu-id="ab90d-119">此時，您準備好要繼續進行快速入門的步驟執行：</span><span class="sxs-lookup"><span data-stu-id="ab90d-119">At this point, you're ready to continue with the getting started steps:</span></span>
+<span data-ttu-id="78932-120">我們也不需要以自訂，這些組織提供更泛型版本的快顯功能表。</span><span class="sxs-lookup"><span data-stu-id="78932-120">We also provide a more generic version of the guide for those organizations that don't need to customize it.</span></span> <span data-ttu-id="78932-121">有兩種版本，一個用於使用 Microsoft 的支援系統 （取得說明應用程式），一個用於那些提供自己的內部使用者支援的組織。</span><span class="sxs-lookup"><span data-stu-id="78932-121">There are two versions, one for organizations using Microsoft's support system (the Get Help app), one for those providing their own internal end-user support.</span></span>
+
+- <span data-ttu-id="78932-122">[Microsoft 受管理的電腦-開始使用您的裝置 （取得協助版本-準備好使用）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v2.pdf) -如果您的使用者將使用 Microsoft 的支援系統，請使用此版本。</span><span class="sxs-lookup"><span data-stu-id="78932-122">[Microsoft Managed Desktop - Get started with your device (Get Help version - ready to use)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v2.pdf) - use this version if your end users will use Microsoft's support system.</span></span>
+- <span data-ttu-id="78932-123">[Microsoft 受管理的電腦-開始使用您的裝置 （即可開始使用）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) -如果您的使用者會使用這個版本*不*使用 Microsoft 的支援系統。</span><span class="sxs-lookup"><span data-stu-id="78932-123">[Microsoft Managed Desktop - Get started with your device (ready to use)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) - use this version if your end users will *not* use Microsoft's support system.</span></span>
+
+<span data-ttu-id="78932-124">此時，您準備好要移至部署應用程式：</span><span class="sxs-lookup"><span data-stu-id="78932-124">At this point, you're ready to move on to deploying apps:</span></span>
 
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="ab90d-120">若要開始使用 Microsoft 受管理電腦的步驟</span><span class="sxs-lookup"><span data-stu-id="ab90d-120">Steps to get started with Microsoft Managed Desktop</span></span>
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="78932-125">若要開始使用 Microsoft 受管理電腦的步驟</span><span class="sxs-lookup"><span data-stu-id="78932-125">Steps to get started with Microsoft Managed Desktop</span></span>
 
-1. [<span data-ttu-id="ab90d-121">新增及確認系統管理入口網站中的連絡人</span><span class="sxs-lookup"><span data-stu-id="ab90d-121">Add and verify admin contacts in the Admin portal</span></span>](add-admin-contacts.md)
-2. [<span data-ttu-id="ab90d-122">調整條件式存取</span><span class="sxs-lookup"><span data-stu-id="ab90d-122">Adjust conditional access</span></span>](conditional-access.md)
-3. [<span data-ttu-id="ab90d-123">指派授權</span><span class="sxs-lookup"><span data-stu-id="ab90d-123">Assign licenses</span></span>](assign-licenses.md)
-4. [<span data-ttu-id="ab90d-124">部署 Intune 公司入口網站</span><span class="sxs-lookup"><span data-stu-id="ab90d-124">Deploy Intune Company Portal</span></span>](company-portal.md)
-5. [<span data-ttu-id="ab90d-125">啟用企業狀態漫遊</span><span class="sxs-lookup"><span data-stu-id="ab90d-125">Enable Enterprise State Roaming</span></span>](enterprise-state-roaming.md)
-6. [<span data-ttu-id="ab90d-126">設定裝置</span><span class="sxs-lookup"><span data-stu-id="ab90d-126">Set up devices</span></span>](set-up-devices.md)
-7. <span data-ttu-id="ab90d-127">取得您的使用者即可開始使用裝置 （本主題）</span><span class="sxs-lookup"><span data-stu-id="ab90d-127">Get your users ready to use devices (this topic)</span></span>
-8. [<span data-ttu-id="ab90d-128">部署應用程式</span><span class="sxs-lookup"><span data-stu-id="ab90d-128">Deploy apps</span></span>](deploy-apps.md)
+1. [<span data-ttu-id="78932-126">在系統管理入口網站中新增和驗證系統管理員連絡人</span><span class="sxs-lookup"><span data-stu-id="78932-126">Add and verify admin contacts in the Admin portal</span></span>](add-admin-contacts.md)
+2. [<span data-ttu-id="78932-127">調整條件式存取</span><span class="sxs-lookup"><span data-stu-id="78932-127">Adjust conditional access</span></span>](conditional-access.md)
+3. [<span data-ttu-id="78932-128">指派授權</span><span class="sxs-lookup"><span data-stu-id="78932-128">Assign licenses</span></span>](assign-licenses.md)
+4. [<span data-ttu-id="78932-129">部署 Intune 公司入口網站</span><span class="sxs-lookup"><span data-stu-id="78932-129">Deploy Intune Company Portal</span></span>](company-portal.md)
+5. [<span data-ttu-id="78932-130">啟用企業狀態漫遊</span><span class="sxs-lookup"><span data-stu-id="78932-130">Enable Enterprise State Roaming</span></span>](enterprise-state-roaming.md)
+6. [<span data-ttu-id="78932-131">設定裝置</span><span class="sxs-lookup"><span data-stu-id="78932-131">Set up devices</span></span>](set-up-devices.md)
+7. <span data-ttu-id="78932-132">取得您的使用者即可開始使用裝置 （本主題）</span><span class="sxs-lookup"><span data-stu-id="78932-132">Get your users ready to use devices (this topic)</span></span>
+8. [<span data-ttu-id="78932-133">部署應用程式</span><span class="sxs-lookup"><span data-stu-id="78932-133">Deploy apps</span></span>](deploy-apps.md)

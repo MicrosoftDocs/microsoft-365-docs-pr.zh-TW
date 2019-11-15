@@ -13,62 +13,62 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 設定 Azure AD Identity Protection 及分析您的 Microsoft 365 企業版測試環境中的目前的帳戶。
-ms.openlocfilehash: 97530dcec9c32882bbe3b66eb53eaa6d4668a838
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a21b20f4ca774ad38990e44abc18d666426e74d5
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071712"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640402"
 ---
-# <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a><span data-ttu-id="242b7-103">Azure AD Identity Protection，您的 Microsoft 365 企業版測試環境</span><span class="sxs-lookup"><span data-stu-id="242b7-103">Azure AD Identity Protection for your Microsoft 365 Enterprise test environment</span></span>
+# <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a><span data-ttu-id="7f85b-103">Azure AD Identity Protection，您的 Microsoft 365 企業版測試環境</span><span class="sxs-lookup"><span data-stu-id="7f85b-103">Azure AD Identity Protection for your Microsoft 365 Enterprise test environment</span></span>
 
-<span data-ttu-id="242b7-104">Azure AD Identity Protection 可讓您偵測會影響組織身分識別的潛在弱點，設定自動式回應，並調查事件。</span><span class="sxs-lookup"><span data-stu-id="242b7-104">Azure AD Identity Protection allows you to detect potential vulnerabilities affecting your organization’s identities, configure automated responses, and investigate incidents.</span></span> <span data-ttu-id="242b7-105">本文說明如何啟用 Azure AD Identity Protection，並檢視您的測試環境帳戶的分析。</span><span class="sxs-lookup"><span data-stu-id="242b7-105">This article describes how to enable Azure AD Identity Protection and view the analysis of your test environment accounts.</span></span>
+<span data-ttu-id="7f85b-104">Azure AD Identity Protection 可讓您偵測會影響組織身分識別的潛在弱點，設定自動式回應，並調查事件。</span><span class="sxs-lookup"><span data-stu-id="7f85b-104">Azure AD Identity Protection allows you to detect potential vulnerabilities affecting your organization’s identities, configure automated responses, and investigate incidents.</span></span> <span data-ttu-id="7f85b-105">本文說明如何啟用 Azure AD Identity Protection，並檢視您的測試環境帳戶的分析。</span><span class="sxs-lookup"><span data-stu-id="7f85b-105">This article describes how to enable Azure AD Identity Protection and view the analysis of your test environment accounts.</span></span>
 
-<span data-ttu-id="242b7-106">有兩個主要階段設定 Microsoft 365 企業版測試環境中的 Azure AD Identity Protection:</span><span class="sxs-lookup"><span data-stu-id="242b7-106">There are two phases to setting up Azure AD Identity Protection in your Microsoft 365 Enterprise test environment:</span></span>
+<span data-ttu-id="7f85b-106">有兩個主要階段設定 Microsoft 365 企業版測試環境中的 Azure AD Identity Protection:</span><span class="sxs-lookup"><span data-stu-id="7f85b-106">There are two phases to setting up Azure AD Identity Protection in your Microsoft 365 Enterprise test environment:</span></span>
 
-1. <span data-ttu-id="242b7-107">建立 Microsoft 365 企業版測試環境。</span><span class="sxs-lookup"><span data-stu-id="242b7-107">Create the Microsoft 365 Enterprise test environment.</span></span>
-2. <span data-ttu-id="242b7-108">啟用並使用 Azure AD Identity Protection。</span><span class="sxs-lookup"><span data-stu-id="242b7-108">Enable and use Azure AD Identity Protection.</span></span>
+1. <span data-ttu-id="7f85b-107">建立 Microsoft 365 企業版測試環境。</span><span class="sxs-lookup"><span data-stu-id="7f85b-107">Create the Microsoft 365 Enterprise test environment.</span></span>
+2. <span data-ttu-id="7f85b-108">啟用並使用 Azure AD Identity Protection。</span><span class="sxs-lookup"><span data-stu-id="7f85b-108">Enable and use Azure AD Identity Protection.</span></span>
 
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> <span data-ttu-id="242b7-110">按一下[這裡](https://aka.ms/m365etlgstack) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。</span><span class="sxs-lookup"><span data-stu-id="242b7-110">Click [here](https://aka.ms/m365etlgstack) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.</span></span>
+> <span data-ttu-id="7f85b-110">按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。</span><span class="sxs-lookup"><span data-stu-id="7f85b-110">Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.</span></span>
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a><span data-ttu-id="242b7-111">階段 1： 建置 Microsoft 365 企業版測試環境</span><span class="sxs-lookup"><span data-stu-id="242b7-111">Phase 1: Build out your Microsoft 365 Enterprise test environment</span></span>
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a><span data-ttu-id="7f85b-111">階段 1：建置您的 Microsoft 365 企業版測試環境</span><span class="sxs-lookup"><span data-stu-id="7f85b-111">Phase 1: Build out your Microsoft 365 Enterprise test environment</span></span>
 
-<span data-ttu-id="242b7-112">如果您只想以具有最小需求的輕量型方式測試 Azure AD Identity Protection，請遵循[輕量型基本組態](lightweight-base-configuration-microsoft-365-enterprise.md)中的指示。</span><span class="sxs-lookup"><span data-stu-id="242b7-112">If you just want to test Azure AD Identity Protection in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).</span></span>
+<span data-ttu-id="7f85b-112">如果您只想以具有最小需求的輕量型方式測試 Azure AD Identity Protection，請遵循[輕量型基本組態](lightweight-base-configuration-microsoft-365-enterprise.md)中的指示。</span><span class="sxs-lookup"><span data-stu-id="7f85b-112">If you just want to test Azure AD Identity Protection in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).</span></span>
   
-<span data-ttu-id="242b7-113">如果您想要在模擬的企業中測試 Azure AD Identity Protection，請遵循[通過驗證](pass-through-auth-m365-ent-test-environment.md)的指示進行。</span><span class="sxs-lookup"><span data-stu-id="242b7-113">If you want to test Azure AD Identity Protection in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).</span></span>
+<span data-ttu-id="7f85b-113">如果您想要在模擬的企業中測試 Azure AD Identity Protection，請遵循[通過驗證](pass-through-auth-m365-ent-test-environment.md)的指示進行。</span><span class="sxs-lookup"><span data-stu-id="7f85b-113">If you want to test Azure AD Identity Protection in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="242b7-114">測試 Azure AD Identity Protection 不需要模擬的企業測試環境，其中包含連線至網際網路的模擬內部網路和目錄同步處理 Active Directory 網域服務 (AD DS) 樹系中。</span><span class="sxs-lookup"><span data-stu-id="242b7-114">Testing Azure AD Identity Protection does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Active Directory Domain Services (AD DS) forest.</span></span> <span data-ttu-id="242b7-115">它提供了此選項，讓您可以測試 Azure AD Identity Protection，並代表典型組織的環境中實驗。</span><span class="sxs-lookup"><span data-stu-id="242b7-115">It is provided here as an option so that you can test Azure AD Identity Protection and experiment with it in an environment that represents a typical organization.</span></span> 
+> <span data-ttu-id="7f85b-114">測試 Azure AD Identity Protection 不需要模擬的企業測試環境，其中包含連線至網際網路的模擬內部網路和目錄同步處理 Active Directory 網域服務 (AD DS) 樹系中。</span><span class="sxs-lookup"><span data-stu-id="7f85b-114">Testing Azure AD Identity Protection does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Active Directory Domain Services (AD DS) forest.</span></span> <span data-ttu-id="7f85b-115">它提供了此選項，讓您可以測試 Azure AD Identity Protection，並代表典型組織的環境中實驗。</span><span class="sxs-lookup"><span data-stu-id="7f85b-115">It is provided here as an option so that you can test Azure AD Identity Protection and experiment with it in an environment that represents a typical organization.</span></span> 
   
-## <a name="phase-2-enable-and-use-azure-ad-identity-protection"></a><span data-ttu-id="242b7-116">階段 2： 啟用，並使用 Azure AD Identity Protection</span><span class="sxs-lookup"><span data-stu-id="242b7-116">Phase 2: Enable and use Azure AD Identity Protection</span></span>
+## <a name="phase-2-enable-and-use-azure-ad-identity-protection"></a><span data-ttu-id="7f85b-116">階段 2： 啟用，並使用 Azure AD Identity Protection</span><span class="sxs-lookup"><span data-stu-id="7f85b-116">Phase 2: Enable and use Azure AD Identity Protection</span></span>
 
-1. <span data-ttu-id="242b7-117">開啟瀏覽器的私用執行個體並登入 Azure 入口網站，網址[https://portal.azure.com](https://portal.azure.com)以全域系統管理員帳戶的 Microsoft 365 企業版測試環境。</span><span class="sxs-lookup"><span data-stu-id="242b7-117">Open a private instance of your browser and sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com) with the global administrator account of your Microsoft 365 Enterprise test environment.</span></span>
-2. <span data-ttu-id="242b7-118">在 Azure 入口網站中，按一下 [**所有服務 > 市集**]。</span><span class="sxs-lookup"><span data-stu-id="242b7-118">In the Azure portal, click **All services > Marketplace**.</span></span>
-3. <span data-ttu-id="242b7-119">輸入**Azure AD Identity Protection** ，然後按一下它。</span><span class="sxs-lookup"><span data-stu-id="242b7-119">Type **Azure AD Identity Protection** and then click it.</span></span>
-4. <span data-ttu-id="242b7-120">在 [**快速入門**] 刀鋒視窗上，按一下**Onboard** [**設定**] 下，按一下**釘選到儀表板**]，然後按一下 [**建立**。</span><span class="sxs-lookup"><span data-stu-id="242b7-120">On the **Getting Started** blade, click **Onboard** under **Settings**, click **Pin to dashboard**, and then click **Create**.</span></span>
-5. <span data-ttu-id="242b7-121">在 Azure 入口網站中，按一下 [儀表板上的**Azure AD Identity Protection** 。</span><span class="sxs-lookup"><span data-stu-id="242b7-121">In the Azure portal, click **Azure AD Identity Protection** on the dashboard.</span></span> 
+1. <span data-ttu-id="7f85b-117">開啟瀏覽器的私用執行個體並登入 Azure 入口網站，網址[https://portal.azure.com](https://portal.azure.com)以全域系統管理員帳戶的 Microsoft 365 企業版測試環境。</span><span class="sxs-lookup"><span data-stu-id="7f85b-117">Open a private instance of your browser and sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com) with the global administrator account of your Microsoft 365 Enterprise test environment.</span></span>
+2. <span data-ttu-id="7f85b-118">在 Azure 入口網站中，按一下 [**所有服務 > 市集**]。</span><span class="sxs-lookup"><span data-stu-id="7f85b-118">In the Azure portal, click **All services > Marketplace**.</span></span>
+3. <span data-ttu-id="7f85b-119">輸入**Azure AD Identity Protection** ，然後按一下它。</span><span class="sxs-lookup"><span data-stu-id="7f85b-119">Type **Azure AD Identity Protection** and then click it.</span></span>
+4. <span data-ttu-id="7f85b-120">在 [**快速入門**] 刀鋒視窗上，按一下**Onboard** [**設定**] 下，按一下**釘選到儀表板**]，然後按一下 [**建立**。</span><span class="sxs-lookup"><span data-stu-id="7f85b-120">On the **Getting Started** blade, click **Onboard** under **Settings**, click **Pin to dashboard**, and then click **Create**.</span></span>
+5. <span data-ttu-id="7f85b-121">在 Azure 入口網站中，按一下 [儀表板上的**Azure AD Identity Protection** 。</span><span class="sxs-lookup"><span data-stu-id="7f85b-121">In the Azure portal, click **Azure AD Identity Protection** on the dashboard.</span></span> 
 
-   <span data-ttu-id="242b7-122">您應該會看到**Azure AD Identity Protection-概觀**] 刀鋒視窗中的儀表板。</span><span class="sxs-lookup"><span data-stu-id="242b7-122">You should see an **Azure AD Identity Protection-Overview** blade with a dashboard.</span></span> <span data-ttu-id="242b7-123">下**弱點**，請注意其決定不用多重要素驗證註冊的使用者帳戶的數目。</span><span class="sxs-lookup"><span data-stu-id="242b7-123">Under **Vulnerabilities**, notice that it determined the number of user accounts without multi-factor authentication registration.</span></span> <span data-ttu-id="242b7-124">此數字會根據先前 Microsoft 365 企業版測試實驗室指南，您必須完成而有所不同。</span><span class="sxs-lookup"><span data-stu-id="242b7-124">This number will vary based on previous Microsoft 365 Enterprise Test Lab Guides that you have done.</span></span>
+   <span data-ttu-id="7f85b-122">您應該會看到**Azure AD Identity Protection-概觀**] 刀鋒視窗中的儀表板。</span><span class="sxs-lookup"><span data-stu-id="7f85b-122">You should see an **Azure AD Identity Protection-Overview** blade with a dashboard.</span></span> <span data-ttu-id="7f85b-123">下**弱點**，請注意其決定不用多重要素驗證註冊的使用者帳戶的數目。</span><span class="sxs-lookup"><span data-stu-id="7f85b-123">Under **Vulnerabilities**, notice that it determined the number of user accounts without multi-factor authentication registration.</span></span> <span data-ttu-id="7f85b-124">此數字會根據先前 Microsoft 365 企業版測試實驗室指南，您必須完成而有所不同。</span><span class="sxs-lookup"><span data-stu-id="7f85b-124">This number will vary based on previous Microsoft 365 Enterprise Test Lab Guides that you have done.</span></span>
 
-6. <span data-ttu-id="242b7-125">[所有類別的**調查]** 若要查看是否有任何使用者或已偵測到的事件。</span><span class="sxs-lookup"><span data-stu-id="242b7-125">Click through the categories for **Investigate** to see if there are any users or events that have been detected.</span></span>
+6. <span data-ttu-id="7f85b-125">[所有類別的**調查]** 若要查看是否有任何使用者或已偵測到的事件。</span><span class="sxs-lookup"><span data-stu-id="7f85b-125">Click through the categories for **Investigate** to see if there are any users or events that have been detected.</span></span>
 
-<span data-ttu-id="242b7-126">進一步測試與試驗，請參閱[Simulating 風險事件](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook)。</span><span class="sxs-lookup"><span data-stu-id="242b7-126">For further testing and experimentation, see [Simulating risk events](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook).</span></span>
+<span data-ttu-id="7f85b-126">進一步測試與試驗，請參閱[Simulating 風險事件](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook)。</span><span class="sxs-lookup"><span data-stu-id="7f85b-126">For further testing and experimentation, see [Simulating risk events](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook).</span></span>
 
-<span data-ttu-id="242b7-127">在身分識別階段中的資訊，以及部署在生產環境中的 Azure AD Identity Protection 的連結，請參閱[Protect 針對認證洩露](identity-secure-user-sign-ins.md#identity-ident-prot)步驟。</span><span class="sxs-lookup"><span data-stu-id="242b7-127">See the [Protect against credential compromise](identity-secure-user-sign-ins.md#identity-ident-prot) step in the Identity phase for information and links to deploy Azure AD Identity Protection in production.</span></span>
+<span data-ttu-id="7f85b-127">在身分識別階段中的資訊，以及部署在生產環境中的 Azure AD Identity Protection 的連結，請參閱[Protect 針對認證洩露](identity-secure-user-sign-ins.md#identity-ident-prot)步驟。</span><span class="sxs-lookup"><span data-stu-id="7f85b-127">See the [Protect against credential compromise](identity-secure-user-sign-ins.md#identity-ident-prot) step in the Identity phase for information and links to deploy Azure AD Identity Protection in production.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="242b7-128">下一步</span><span class="sxs-lookup"><span data-stu-id="242b7-128">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="7f85b-128">下一步</span><span class="sxs-lookup"><span data-stu-id="7f85b-128">Next step</span></span>
 
-<span data-ttu-id="242b7-129">瀏覽測試環境中的其他[身分識別](m365-enterprise-test-lab-guides.md#identity)功能。</span><span class="sxs-lookup"><span data-stu-id="242b7-129">Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.</span></span>
+<span data-ttu-id="7f85b-129">瀏覽測試環境中的其他[身分識別](m365-enterprise-test-lab-guides.md#identity)功能。</span><span class="sxs-lookup"><span data-stu-id="7f85b-129">Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="242b7-130">另請參閱</span><span class="sxs-lookup"><span data-stu-id="242b7-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7f85b-130">另請參閱</span><span class="sxs-lookup"><span data-stu-id="7f85b-130">See also</span></span>
 
-[<span data-ttu-id="242b7-131">階段 2：身分識別</span><span class="sxs-lookup"><span data-stu-id="242b7-131">Phase 2: Identity</span></span>](identity-infrastructure.md)
+[<span data-ttu-id="7f85b-131">階段 2：身分識別</span><span class="sxs-lookup"><span data-stu-id="7f85b-131">Phase 2: Identity</span></span>](identity-infrastructure.md)
 
-[<span data-ttu-id="242b7-132">Microsoft 365 企業版測試實驗室指南</span><span class="sxs-lookup"><span data-stu-id="242b7-132">Microsoft 365 Enterprise Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md)
+[<span data-ttu-id="7f85b-132">Microsoft 365 企業版測試實驗室指南</span><span class="sxs-lookup"><span data-stu-id="7f85b-132">Microsoft 365 Enterprise Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md)
 
-[<span data-ttu-id="242b7-133">Microsoft 365 企業版部署</span><span class="sxs-lookup"><span data-stu-id="242b7-133">Microsoft 365 Enterprise deployment</span></span>](deploy-microsoft-365-enterprise.md)
+[<span data-ttu-id="7f85b-133">Microsoft 365 企業版部署</span><span class="sxs-lookup"><span data-stu-id="7f85b-133">Microsoft 365 Enterprise deployment</span></span>](deploy-microsoft-365-enterprise.md)
 
-[<span data-ttu-id="242b7-134">Microsoft 365 企業版文件</span><span class="sxs-lookup"><span data-stu-id="242b7-134">Microsoft 365 Enterprise documentation</span></span>](https://docs.microsoft.com/microsoft-365-enterprise/)
+[<span data-ttu-id="7f85b-134">Microsoft 365 企業版文件</span><span class="sxs-lookup"><span data-stu-id="7f85b-134">Microsoft 365 Enterprise documentation</span></span>](https://docs.microsoft.com/microsoft-365-enterprise/)
