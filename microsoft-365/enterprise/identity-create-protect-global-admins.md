@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 您的全域系統管理員帳戶需要特別處理，以確保認證免受洩漏的危險。
-ms.openlocfilehash: 72de7d683a9c2a080f7be69e585d16d8122cd46d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 257caf197df74d32b438a17158598237cf4c58b5
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370210"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627079"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>步驟 1：建立和保護您的全域系統管理員帳戶
 
@@ -47,7 +47,7 @@ ms.locfileid: "37370210"
 這一節的結果如下：
 
 - 您的訂閱中唯一擁有全域系統管理員角色的使用者帳戶，就是專用全域系統管理員帳戶。 使用以下 Azure Active Directory PowerShell for Graph 命令驗證這點： 
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | Where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 - 管理您訂閱服務的所有其他使用者帳戶擁有指派的系統管理員角色，這些角色會與他們的工作職責相關聯。

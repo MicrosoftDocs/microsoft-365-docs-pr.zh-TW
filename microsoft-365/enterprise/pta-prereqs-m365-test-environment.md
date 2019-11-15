@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立 Microsoft 365 環境，以使用傳遞驗證的先決條件測試身分識別與裝置存取。
-ms.openlocfilehash: b8c9ebefacf81293b553aecf8ead0a387c18758b
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 348885b2cc7a0d6134dce49cd0a2a39706c5e71d
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073020"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627487"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>身分識別與裝置存取 - 您的 Microsoft 365 測試環境中傳遞驗證的先決條件
 
@@ -97,13 +97,13 @@ ms.locfileid: "34073020"
 
 2. 執行此命令。
 
-  ```
+  ```powershell
   Set-CsOAuthConfiguration -ClientAdalAuthOverride Allowed
   ```
 
 3. 使用此命令以確認變更是否成功。
 
-  ```
+  ```powershell
   Get-CsOAuthConfiguration
   ```
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立 Microsoft 365 環境，以使用僅限雲端驗證的先決條件測試身分識別與裝置存取。
-ms.openlocfilehash: 08f805f77771a056cc9d847dd064b472a46cb166
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: eb70153bc2868289fde41ad9a68ffa3a44b01b59
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36055005"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627369"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>身分識別與裝置存取 - 您的 Microsoft 365 測試環境中僅限雲端的先決條件
 
@@ -92,13 +92,13 @@ ms.locfileid: "36055005"
 
 2. 執行此命令。
 
-  ```
+  ```powershell
   Set-CsOAuthConfiguration -ClientAdalAuthOverride Allowed
   ```
 
 3. 使用此命令以確認變更是否成功。
 
-  ```
+  ```powershell
   Get-CsOAuthConfiguration
   ```
 
