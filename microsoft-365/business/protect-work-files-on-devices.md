@@ -25,23 +25,21 @@ search.appverid:
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
 description: '了解預設組態，並新增應用程式管理原則來保護使用者的個人的行動裝置上公司資料。 '
-ms.openlocfilehash: 348f3d0dad9f3a7957f12eea7c7e7be2d1706aa6
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 6c4534f70ea7d8b8c93283e92278f1aa08ab94bf
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575791"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640742"
 ---
 # <a name="protect-work-files-on-devices"></a>保護裝置上的工作檔案
 
-在現今的世界，使用者與他們的裝置緊密連接。當工作與私人生活相衝突的時候，您的公司資料就可能流到某位員工的個人裝置。此處進行的設定能協助您在不影響任何使用者個人設定或資料的情況下，拿回掌控權並保護工作檔案。
+在現今的世界，使用者會繫結到他們的裝置，以及個人和工作生活會發生衝突，您的資料可能會結束員工的個人裝置的公司。 您在此處所設定的設定可協助您取得回控制權，並提供保護工作檔案，而不影響任何使用者的個人設定或資料。
   
 ## <a name="configuring-policies-during-setup"></a>於設定時設定原則
 
-設定時，系統會新增三個應用程式管理原則，分別對應至 Android、iOS 和 Windows 10。每個原則有相同的設定，並會套用至所有使用者。使用者將其公司帳戶連接到行動電話時，便會啟用這些原則。
+設定時，系統會新增三個應用程式管理原則，分別對應至 Android、iOS 和 Windows 10。 每個原則有相同的設定以及這些原則套用至所有使用者。 使用者將其公司帳戶連接到行動電話時，便會啟用這些原則。
   
 建議您在設定時接受預設設定。設定完成後，您可以新增更多原則，讓您微調設定，並針對特定使用者群組套用不同的控制層級。
   
 若要在設定完成後新增原則，請參閱[在系統管理中心管理原則與裝置](manage.md)。
-  
-

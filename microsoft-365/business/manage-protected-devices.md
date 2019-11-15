@@ -24,16 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: 了解如何重設或清除透過保護原則受管理的裝置。
-ms.openlocfilehash: 78eff4b4d29ee5de6f773841cc77239f6acf0634
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ef3b8ed0e3b3f8b9136d3929bce1b835309498c7
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074663"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633322"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business"></a>使用 Microsoft 365 商務版管理受保護的裝置
 
-使用者連線到您的組織，他們的裝置，登入裝置上其公司帳戶裝置或 Office 應用程式之後，我們能夠保護具有的原則設定，並將會列在 [**裝置**] 頁面上的裝置。 如果裝置遺失或遭竊，您可以從此頁面移除任何公司資料。 您也可以將 Windows 10 裝置重設成出廠預設值來清除任何自訂設定。 如需有關您管理裝置可以執行之工作的詳細資訊，請參閱下列文章： 
+使用者登入裝置上其公司帳戶裝置或 Office 應用程式將其裝置連線至您的組織之後，您可以保護您所設定的原則與裝置。 連線的裝置會列在 [**裝置**] 頁面上。 如果裝置遺失或遭竊，您可以從此頁面移除任何公司資料。 您也可以將 Windows 10 裝置重設成出廠預設值來清除任何自訂設定。 
+
+如需詳細資訊工作可用來管理裝置，請參閱下列文章： 
   
 [從裝置移除公司資料](remove-company-data.md)
   

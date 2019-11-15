@@ -1,41 +1,49 @@
 ---
-title: 系統管理員的協助使用者開始使用其 Microsoft 受管理的電腦裝置
+title: 讓您的使用者準備好使用裝置
 description: ''
 keywords: Microsoft 受管理的電腦、 裝置，取得開始，Microsoft 365
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9b87156a66d2f7a8d69a6c6f1a22353a52c69385
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: eec0243b7724eac852a9145a4e4fadcc13fae097
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012398"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627557"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>讓您的使用者準備好使用裝置
 
-Microsoft 受管理的電腦裝置來自預先設定與目前的 Windows 版本。 設定和應用程式會從雲端安裝，如使用者完成設定裝置。 
+Microsoft 受管理的電腦裝置位於手中您的使用者，一旦快速入門既快速又簡單。 裝置來自預先設定與目前的 Windows 版本，並且設定和應用程式會安裝從雲端為使用者完成安裝程式。 
  
-有使用者需要採取期間提高生產力與他們的裝置設定的裝置的只有幾個步驟。 Microsoft 受管理電腦建議使用下列連結*開始使用您的裝置*指南。 此可下載的快速入門提供基本指示以設定新的 Microsoft 受管理的電腦裝置。 我們已專為 IT 系統管理員的比較基準，本指南。 使用它，或更新，以新增步驟或協助您設定他們的裝置的使用者的資訊。 
+若要將此位址設更容易，我們提供的指南，內容會逐步引導您完成初始設定的使用者，並設定和使用更新版本中，提供說明資源，如有需要。 您可以自訂本指南以包括特定組織專屬的詳細資訊。 然後，就會散發直接與您的使用者以及他們的裝置快顯功能表。 有兩種版本，一個用於使用 Microsoft 的支援系統 （取得說明應用程式），一個用於那些提供自己的內部使用者支援的組織。
 
-## <a name="get-started-guide"></a>取得入門的指南 
-您可以下載快顯功能表： [Microsoft 受管理的電腦-開始使用您的裝置](https://www.microsoft.com/download/details.aspx?id=57918)。
+## <a name="to-prepare-the-guide"></a>若要準備快顯功能表
 
-## <a name="what-should-i-update-in-the-get-started-guide"></a>應該更新項目中取得入門指南？
+1. 下載適用於貴組織的版本：
+- [Microsoft 受管理的電腦-開始使用您的裝置 （取得協助的版本）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v2.pdf) ： 如果您的使用者將使用 Microsoft 的支援系統，請使用此版本。
+- [Microsoft 受管理的電腦-開始使用您的裝置](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf)-如果您的使用者會使用這個版本*不*使用 Microsoft 的支援系統。
+2. 使用能夠開啟 PDF 檔案的任何應用程式來填入貴組織相關的詳細資訊：
+    - 網路名稱您的使用者應連接才能繼續執行安裝程式 (在快顯功能表中的步驟 3)
+    - 貴組織的 Azure 租用戶帳戶 (在快顯功能表中的步驟 4) 的名稱
+    - 您的組織內部 IT 支援 （第二頁的頂端） 的連絡人資訊
+3. 儲存已編輯的 PDF，並接著發佈至您的使用者。 
 
-以下是 IT 系統管理員可以將個人化*您的裝置快速入門*的幾種方法：
-- 步驟 2 中包含使用者應該連線到慣用的網際網路
-- 授與適當的使用者名稱或網域名稱與使用者輸入在步驟 3
-- 新增支援 Microsoft 受管理的電腦支援外部組織內支援連絡人
-- 新增有關在哪裡可以挑選其裝置 （如果這是分開這些指示） 指示
+## <a name="ready-to-use-guide"></a>「 已準備要可以使用指南 》
 
-此時，您準備好要繼續進行快速入門的步驟執行：
+我們也不需要以自訂，這些組織提供更泛型版本的快顯功能表。 有兩種版本，一個用於使用 Microsoft 的支援系統 （取得說明應用程式），一個用於那些提供自己的內部使用者支援的組織。
+
+- [Microsoft 受管理的電腦-開始使用您的裝置 （取得協助版本-準備好使用）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v2.pdf) -如果您的使用者將使用 Microsoft 的支援系統，請使用此版本。
+- [Microsoft 受管理的電腦-開始使用您的裝置 （即可開始使用）](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) -如果您的使用者會使用這個版本*不*使用 Microsoft 的支援系統。
+
+此時，您準備好要移至部署應用程式：
 
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>若要開始使用 Microsoft 受管理電腦的步驟
 
-1. [新增及確認系統管理入口網站中的連絡人](add-admin-contacts.md)
+1. [在系統管理入口網站中新增和驗證系統管理員連絡人](add-admin-contacts.md)
 2. [調整條件式存取](conditional-access.md)
 3. [指派授權](assign-licenses.md)
 4. [部署 Intune 公司入口網站](company-portal.md)

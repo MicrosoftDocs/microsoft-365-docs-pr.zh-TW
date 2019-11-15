@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 設定使用文字訊息傳送至 Microsoft 365 企業版測試環境中的智慧型手機的多重要素驗證。
-ms.openlocfilehash: f209c3cebaefd8b4bddafb68471c35e5c37905be
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6c004f1ac093a997c263162ab8c945366f6361bd
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071572"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639903"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>多重要素驗證您的 Microsoft 365 企業版測試環境
 
@@ -35,9 +35,9 @@ ms.locfileid: "37071572"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1： 建置 Microsoft 365 企業版測試環境
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1：建置您的 Microsoft 365 企業版測試環境
 
 如果您只想以具有最小需求的輕量型方式測試多重要素驗證，請遵循[輕量型基本組態](lightweight-base-configuration-microsoft-365-enterprise.md)中的指示。
   
@@ -74,7 +74,7 @@ ms.locfileid: "37071572"
     
 2. 移至 Office 365 入口網站 ([https://portal.office.com](https://portal.office.com)) 並以使用者 2 帳戶名稱和密碼登入。
     
-3. 登入後，系統會提示您若要設定之帳戶的詳細資訊。 按 [下一步]****。
+3. 登入後，系統會提示您若要設定之帳戶的詳細資訊。 按一下 **[下一步]**。
     
 4. 在**其他安全性驗證**] 頁面上：
     
@@ -84,7 +84,7 @@ ms.locfileid: "37071572"
     
    - 在**方法**中，按一下 [**傳送我透過文字訊息的程式碼**。
     
-5. 按 [下一步]****。
+5. 按一下 **[下一步]**。
     
 6. 從智慧型手機上接收簡訊輸入驗證碼，然後按一下 [**驗證**。
     

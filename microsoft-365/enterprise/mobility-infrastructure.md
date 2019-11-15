@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 72ddad03486bf2c7dcba682453fa3bcfbdd1162b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: c507db0d2867b006772f5aca83d8b5342e55113d
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031148"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627427"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>階段 5: Microsoft 365 企業版的行動裝置管理
 
@@ -62,7 +62,7 @@ Intune 使用 Azure AD，包括您的網域，您的使用者，以及您的群�
 
 3. **[登入 Intune](https://docs.microsoft.com/intune/account-sign-up)**。 當您登入時，可能會提示您輸入您的組織的相關資訊。 Intune 隨附於 Microsoft 365，並可直接從[Microsoft 365 系統管理中心](https://admin.microsoft.com)開啟。 您也可以開啟 Intune 直接從[Azure 入口網站](https://portal.azure.com)。
 
-4. **[選擇您的行動裝置管理設定](https://docs.microsoft.com/intune/mdm-authority-set)**。 第一次您使用 Intune，您必須啟用裝置管理。 Intune 可用為僅限雲端服務時，使用 Intune 和 System Center Configuration Manager，或使用行動裝置管理 Office 365 的混合部署。 您可以選擇的設定最適合您的組織。
+4. **[選擇您的行動裝置管理設定](https://docs.microsoft.com/intune/mdm-authority-set)**。 第一次您使用 Intune，您必須啟用裝置管理。 Intune 可用為僅限雲端服務時，使用 Intune 和 Microsoft 端點的組態管理員] 中，或使用行動裝置管理 Office 365 的混合部署。 您可以選擇的設定最適合您的組織。
 
 5. **[新增使用者](https://docs.microsoft.com/intune/users-add)** 並**[加入群組](https://docs.microsoft.com/intune/groups-add)**。 
 

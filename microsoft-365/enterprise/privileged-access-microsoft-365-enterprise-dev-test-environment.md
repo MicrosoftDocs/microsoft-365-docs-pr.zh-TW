@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: 使用此測試實驗室指南來啟用特殊權限的存取管理 Microsoft 365 企業版測試環境。
-ms.openlocfilehash: f701f3f8f74036966de2c516d662ef77341f4842
-ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
+ms.openlocfilehash: cd90aadd2e473668d8c7f634d3edc777c3380dfb
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033608"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639763"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企業版測試環境的特殊權限存取管理
 
@@ -27,7 +27,7 @@ ms.locfileid: "38033608"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 按一下[這裡](https://aka.ms/m365etlgstack) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1：建置您的 Microsoft 365 企業版測試環境
 
@@ -99,7 +99,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>測試特殊權限的存取原則中定義該 New-journalrule 任務核准的需求
 
-1. 在您的本機電腦上開啟並登入 Exchange Online 遠端 PowerShell 模組**Microsoft Corporation**在 > **Microsoft Exchange Online 遠端 PowerShell 模組**使用使用全域系統管理員帳戶為您的測試環境。
+1. 在您的本機電腦上開啟並登入 Exchange Online 遠端 PowerShell 模組**Microsoft Corporation**在 > **Microsoft Exchange Online 遠端 PowerShell 模組**使用使用全域系統管理員帳戶的測試環境。
 
 2. 在 Exchange Management Powershell 中建立新的日誌規則，為您的組織：
 

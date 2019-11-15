@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 將貴公司從 Office 365 商務進階版升級至 Microsoft 365 商務版的步驟。
-ms.openlocfilehash: f3a25746cf123fa471c29084a62a6fcfc1542a02
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: 95c4504d7e6e33bdededee0cfca7add0cb5f7204
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38231404"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640554"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>從 Office 365 商務進階版升級至 Microsoft 365 商務版
 
@@ -40,8 +40,8 @@ ms.locfileid: "38231404"
 
 ## <a name="before-you-get-started"></a>開始之前
 
-- **何時應該選擇升級？** 升級時，選擇您想要升級**的所有使用者**指派給單一計劃。 當您選擇升級時，所有計劃使用者取得切換到另一個計劃在同一時間。 如果您不想要升級所有人指派給單一計劃，請購買新方案 （在此情況 Microsoft 365 商務版），以及[個別指派這些授權](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)給您想要升級每位使用者的授權。 
-- **某些附加元件可能會導致升級**如果您嘗試啟動升級，且必須防止您繼續執行的附加元件，您可以請先移除附加元件，並再新增回來稍後-如果您仍然需要。 
+- **何時我應該選擇先升級？** 升級時，選擇您想要升級**的所有使用者**指派給單一計劃。 當您選擇升級時，所有計劃使用者取得切換到另一個計劃在同一時間。 如果您不想要升級所有人指派給單一計劃，請購買新方案 （在此情況 Microsoft 365 商務版），以及[個別指派這些授權](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)給您想要升級每位使用者的授權。 
+- **某些附加元件可能會導致升級**如果您嘗試啟動升級，且必須防止您繼續執行的附加元件，您可以請先移除附加元件，並再新增回來稍後如果您仍然需要。 
 - **如果您預付您計劃**沒有預付方案直接升級路徑。 您會知道是否您有預付的方案。 因為您設定儲存區中使用您可能已購買的產品識別碼您計劃。 合作夥伴連絡，移至 Microsoft 網上商店或請稍候，直到您預付的方案過期切換至新的計劃。
 
 ## <a name="upgrade-to-microsoft-365-business"></a>升級至 Microsoft 365 商務版
@@ -56,12 +56,12 @@ ms.locfileid: "38231404"
       ![螢幕擷取畫面顯示在系統管理中心中選取 [升級] 的位置。](media/SelectUpgrade.png)
 
   > [!NOTE]
-  > 如果您看見 「 您的訂閱不支援升級以群組為基礎的授權 Azure Active Directory 中 」 的訊息，則可以放心忽略這除非您有非常大型的組織。 組織者選取了此選項會知道他們正在使用群組為基礎的授權。
+  > 如果您看到訊息，指出**的升級您的訂閱不支援與在 Azure Active Directory 群組為基礎的授權**，則可以放心忽略這除非您有非常大型的組織。 組織者選取了此選項會知道他們正在使用群組為基礎的授權。
 
 4. 接下來，您可以檢視清單中的，您可以升級至 Office 計劃。 在此情況下，尋找 Microsoft 365 商務版計劃。 您可以向下捲動如果您想要查看所有 Office 應用程式及隨附於此計劃的服務。 **Microsoft 365 商務版**，在 [選取要新增至購物車的 Microsoft 365 商務版**升級**。
 5. 在 [購物車：
-    1. 我們將會自動包含至購物車所有目前使用者的授權。 如果您需要更多或更低的授權，您需要[購買](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)並個別指派這些授權。  
-    2. 您可以調整方式您想要支付的每月或每年。 選取下拉式] 功能表，可讓您選擇。
+    1. 我們將會自動包含所有目前使用者的授權。 如果您需要更多或較少的授權，您需要[購買](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users)並個別指派這些授權。  
+    2. 您可以調整您想要支付的方式： 每月或每年。 選取下拉式] 功能表，可讓您選擇。
 6. 選取 [**移至簽出**，您會看到購買，包括針對此帳戶的付款方式項目的摘要。 如果有的話，您也可以新增的促銷代碼。
 7. 選取 [**下單**]，以完成購買。
 若要設定新服務計劃的幾分鐘的花 Microsoft。 若要檢查進度，請選取 [**檢查升級狀態**。 
@@ -72,7 +72,7 @@ ms.locfileid: "38231404"
   
 ## <a name="protect-user-devices-and-files"></a>保護使用者裝置和檔案
 
-現在，Microsoft 365 商務版授權已指派，完成步驟，以啟動保護裝置和檔案。 您要使用系統管理中心瀏覽窗格中包含一些新選項。
+現在，Microsoft 365 商務版授權已指派，完成步驟，以啟動保護裝置和檔案。 您可以使用系統管理中心瀏覽窗格中包含一些新選項。
   
 1. 在系統管理中心，在 [功能窗格中，移至 [**裝置** \> **原則**。
     
@@ -96,6 +96,3 @@ ms.locfileid: "38231404"
   - 如需 Windows 裝置步驟，請參閱[為 Microsoft 365 商務版使用者的 Windows 裝置上設定](set-up-windows-devices.md)。 
     
   - 如需 Android 手機和 Iphone 步驟，請參閱[為 Microsoft 365 商務版使用者的行動裝置上設定](set-up-mobile-devices.md)。 
-
-
-
