@@ -3,7 +3,7 @@ title: Contoso 的 Office 365 專業增強版部署指南
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,17 +12,17 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 深入了解 Contoso 如何使用 System Center Configuration Manager 來部署 Office 365 專業增強版。
-ms.openlocfilehash: 8367f6456b6e32c62e03f611114177f4dbe6622f
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+description: 深入了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 來部署 Office 365 專業增強版。
+ms.openlocfilehash: ef13ac14be68b12e9483bd20f385e0cd16f51152
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054995"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627349"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Contoso 的 Office 365 專業增強版部署指南
 
-**摘要：** 深入了解 Contoso 如何使用 System Center Configuration Manager 來部署 Office 365 專業增強版。
+**摘要：** 深入了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 來部署 Office 365 專業增強版。
 
 Contoso 將其電腦升級至 Windows 10 企業版和 Office 365 專業增強版，讓協同合作更有效率、更佳的安全性，以及更現代化的桌面體驗。Contoso 在評估基礎架構和業務需求後，識別這些部署的關鍵需求：
 
@@ -33,7 +33,7 @@ Contoso 將其電腦升級至 Windows 10 企業版和 Office 365 專業增強版
 
 ## <a name="deployment-tools"></a>部署工具
 
-Contoso 根據自身需求，選擇以 System Center Configuration Manager (最新分支) 部署 Windows 和 Office。Configuration Manager 可針對大型環境進行調整並提供安裝、更新及設定的全面控制，其內建功能更讓您可輕鬆且有效率地部署及管理 Office，包括：
+Contoso 根據自身需求，選擇以 Configuration Manager (最新分支) 部署 Windows 10 Enterprise 和 Office 365 專業增強版。Configuration Manager 可針對大型環境進行調整並提供安裝、更新及設定的全面控制，其內建功能更讓您可輕鬆且有效率地部署及管理 Office，包括：
 
 - 對等快取，可協助在部署至遠端位置裝置時限制網路流量
 - Office 用戶端管理儀表板，讓您更輕鬆地部署 Office 和監控更新，並可讓系統管理員存取最新的部署和管理功能
@@ -73,9 +73,13 @@ Contoso 遵循相同的兩階段方式進行功能更新和部署 Office：在�
 
 因為 Contoso 選擇從雲端自動更新裝置，因此不需要管理 Configuration Manager 中的程序。 其裝置會根據初始部署時所定義的更新通道，直接從雲端自動進行更新。 
 
+這是 Contoso Office 365 專業增強版安裝和持續更新部署的基礎架構。
+
+![Contoso 的 Office 365 專業增強版部署基礎結構](./media/contoso-o365pp/contoso-o365pp-fig1.png)
+ 
 ## <a name="next-step"></a>下一步
 
-[深入了解](contoso-mdm.md) Contoso 如何在 Microsoft 365 企業版中使用 Intune 來管理組織中的裝置與執行的應用程式。
+[深入了解](contoso-mdm.md) Contoso 如何在 Microsoft 365 企業版中使用 Microsoft Intune 來管理組織中的裝置與執行的應用程式。
 
 ## <a name="see-also"></a>另請參閱
 
