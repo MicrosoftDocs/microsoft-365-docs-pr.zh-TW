@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用整個 Microsoft 365 企業版的安全性功能。
-ms.openlocfilehash: ada72460adffce46951b8784d90b6cfa29b35bc3
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b49312b94aef35afc5febeae0fd4dc71b7c642af
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031098"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38672679"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>適用於 Contoso Corporation 之 Microsoft 365 企業版安全性的摘要
-
-**摘要：** Contoso 如何使用整個 Microsoft 365 企業版的安全性功能。
 
 為了取得 IT 安全性部門對於 Microsoft 365 企業版部署的簽核，必須執行徹底的安全性檢閱。以下是 Contoso 對於雲端的安全性需求：
 

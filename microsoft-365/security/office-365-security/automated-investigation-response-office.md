@@ -1,9 +1,9 @@
 ---
-title: 自動化的調查和 Office 365 中的回應 （空調）
+title: 自動化 Office 365 中的事件回應 （空調）
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 10/03/2019
+ms.date: 11/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,40 +12,34 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: 了解 Office 365 進階威脅防護中的自動化調查及回應功能。
-ms.openlocfilehash: 99eea4d723a2d9f27528eb951c758b33e0390f93
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+description: 在 Office 365 進階威脅防護計劃 2 中，取得自動化調查及回應能力的概觀。
+ms.openlocfilehash: 18da20491f9641b8313304e350f9c224b63cc5d9
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386200"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673399"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>自動化的調查和 Office 365 中的回應 （空調）
+# <a name="automated-incident-response-air-in-office-365"></a>自動化 Office 365 中的事件回應 （空調）
 
-自動化的調查及回應 （空調） 功能可讓您回應熟知威脅存在於今天執行自動化的調查程序。 空調可協助您操作更有效率的安全性作業小組。
+自動化事件回應 （空調） 功能可讓您回應熟知威脅存在於今天執行自動化的調查程序。 空調可協助您操作更有效率的安全性作業小組。
 - 若要取得航空的運作方式的概觀，請使用本文。
 - 若要開始使用空調，請參閱[自動調查及回應 Office 365 中的威脅](office-365-air.md)。
 
 > [!NOTE]
 > 您必須是全域系統管理員、 安全性系統管理員、 安全性運算子或安全性助讀程式來存取空調功能。 若要深入了解這些權限，請參閱[Microsoft 365 安全性中心： 角色和權限](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
 
-空調隨附於下列訂閱：
-- Microsoft 365 E5
-- Microsoft 365 E5 Security
-- Office 365 E5
-- Office 365 進階的威脅保護計劃 2
-
 ## <a name="the-overall-flow-of-air"></a>航空的整體流程
 
 在高的層級，空調流程的運作方式如下：
 
-|階段  |時需要什麼作業  |
+|階段  |涉及的內容  |
 |---------|---------|
 |1     |就會觸發[警示](#alerts)和[安全性 playbook](#security-playbooks)起始。         |
 |2     |根據特定提醒及安全性 playbook，[自動化的調查會立即開始](#example-a-user-reported-phish-message-launches-an-investigation-playbook)。 （或者，安全性分析師可以[手動啟動自動化的調查](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)，請從報表，例如[檔案總管](threat-explorer.md)中的值。）         |
-|3     |雖然自動化的調查執行時，其範圍可以增加為會觸發新的相關警示。         |
+|3     |執行自動化調查時，其範圍會隨著新的相關警示觸發而增加。         |
 |4     |期間和之後自動調查，[詳細資料和結果](#investigation-graph)可供檢視。 結果包含[建議的動作](#recommended-actions)可以採取回應及修復任何發現的威脅。 此外，也可以使用[playbook 記錄](#playbook-log)中追蹤調查的所有活動。<br/>如果您的組織會使用自訂的報表解決方案或協力廠商解決方案，您可以[使用 Office 365 管理活動 API](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions) ，可檢視自動化的調查和威脅的相關資訊。         |
-|5     |安全性作業小組會檢閱的結果與建議，並核准修復動作。 在 Office 365 中，補救措施採取動作僅在核准時由貴組織的安全性小組。         |
+|5     |您的安全性作業小組會檢閱結果和建議，並核准補救動作。 在 Office 365 中，只能在貴組織的安全性小組核准時採取補救動作。         |
 
 下列各節提供更多詳細資訊空調，包括提醒、 安全性 playbooks 和調查詳細資料相關的詳細資料。 此外，本文中包含航空的運作方式的兩個範例。 若要開始使用空調，請參閱[自動調查及回應 Office 365 中的威脅](office-365-air.md)。
 
@@ -72,7 +66,7 @@ ms.locfileid: "37386200"
 
 若要檢視提醒，安全性 & 合規性中心中，選擇 [**提醒** > **檢視警示**。 選取警示若要檢視其詳細資料，並從該處，使用的**檢視調查**連結移至對應的[調查](#investigation-graph)。 請注意預設將資訊警示隱藏 [警示] 檢視中。 若要查看它們，您需要變更篩選功能，包括資訊警示的警示。
 
-如果您的組織管理您的安全性提醒透過警示管理系統、 服務管理系統或安全性資訊和事件管理 (SIEM) 的系統，您可以透過 [電子郵件通知，或是透過[該系統傳送 Office 365 警示Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。 透過電子郵件或 API 調查警示通知包含連結來存取安全性 & 合規性中心，啟用快速瀏覽到調查指派的安全性系統管理員中的警示。
+如果您的組織管理您的安全性提醒透過警示管理系統、 服務管理系統或安全性資訊和事件管理 (SIEM) 的系統，您可以透過 [電子郵件通知，或是透過[Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)該系統傳送 Office 365 警示。 透過電子郵件或 API 調查警示通知包含連結來存取安全性 & 合規性中心，啟用快速瀏覽到調查指派的安全性系統管理員中的警示。
 
 ![連結至調查的提醒](../media/air-alerts-page-details.png) 
 
@@ -118,18 +112,22 @@ ms.locfileid: "37386200"
 - 將資料匯出至.csv 檔案。
 
 調查狀態表示分析和動作的進度。 當調查執行時，狀態會變更為表示是否已找到威脅，以及是否已核准的動作。 
-- **起始**： 調查已排入佇列推出開始
-- **執行**： 調查已啟動，並且所進行的分析
-- **否威脅找到**： 調查已完成其分析，而且找不到任何威脅
-- **終止前所需的系統**： 調查已不關閉，並將在 7 天後過期
-- **擱置中的巨集指令**： 調查找到威脅與建議的動作
-- **威脅找到**： 調查找到威脅，但威脅沒有空調內可用的動作
-- **Remediated**： 調查完成，並完全修復 （已核准所有動作）
-- **部分修復**： 調查完成，並建議的動作的一些已核准
-- **終止前所需的使用者**： 系統管理員終止調查
-- **失敗**： 無法到達在威脅結論調查期間發生錯誤
-- **排入佇列的節流設定**： 調查正在等候由於系統處理限制 （以保護服務效能） 的分析
-- **終止前所需的節流設定**： 調查無法完成中有足夠的時間，因為調查磁碟區及處理限制的系統。 您可以重新觸發調查，選取 [檔案總管中的 [電子郵件，然後選取調查巨集指令。
+
+
+|狀態  |其意思  |
+|---------|---------|
+|啟動中 | 調查已排入佇列推出開始 |
+|正在執行 | 調查已啟動，並且所進行的分析 |
+|沒有找到的威脅 | 調查已完成其分析，而且找不到任何威脅 |
+|由系統終止 | 調查已不關閉，並將在 7 天後過期 |
+|擱置中的巨集指令 | 調查找到威脅與建議的動作 |
+|找到的威脅 | 調查找到威脅，但威脅沒有空調內可用的動作 |
+|修復 | 調查完成，並完全修復 （已核准所有動作） |
+|部分修復 | 調查完成，並建議的動作的一些已核准 |
+|終止的使用者 | 系統管理員終止調查 |
+|失敗 | 禁止達到上威脅結論調查期間發生錯誤 |
+|排入佇列的節流設定 | 調查正在等候由於系統處理限制 （以保護服務效能） 的分析 |
+|終止的節流設定 | 在有足夠的時間，因為調查磁碟區及處理限制的系統無法完成調查。 您可以重新觸發調查，選取 [檔案總管中的 [電子郵件，然後選取調查巨集指令。 |
 
 ### <a name="investigation-graph"></a>調查圖
 
@@ -189,7 +187,8 @@ ms.locfileid: "37386200"
 
 ![空調調查的電子郵件與彈出式詳細資料](../media/air-investigationemailpageflyoutdetails.png)
 
-* 附註： 在電子郵件的內容，您可能會看到大量異常威脅表面調查的一部分。 磁碟區異常指出相較於舊版項調查事件時間前後的類似電子郵件訊息中的特殊圖文集。 此特殊圖文集的特性類似的電子郵件流量 (例如主旨] 和 [寄件者的網域，本文相似性和寄件者 IP) 是一般的電子郵件行銷活動或攻擊的開始。 不過，大量、 垃圾郵件和合法電子郵件行銷活動常共用這些特性。 磁碟區異常代表潛在威脅，並據此可能少數嚴重相較惡意程式碼或釣魚程式的威脅，用來識別的防毒引擎、 爆炸或惡意的信譽。
+> [!NOTE]
+> 在電子郵件的內容，您可能會看到大量異常威脅表面調查的一部分。 磁碟區異常指出相較於舊版項調查事件時間前後的類似電子郵件訊息中的特殊圖文集。 此特殊圖文集的特性類似的電子郵件流量 (例如主旨] 和 [寄件者的網域，本文相似性和寄件者 IP) 是一般的電子郵件行銷活動或攻擊的開始。 不過，大量、 垃圾郵件和合法電子郵件行銷活動常共用這些特性。 磁碟區異常代表潛在威脅，並據此可能少數嚴重相較惡意程式碼或釣魚程式的威脅，用來識別的防毒引擎、 爆炸或惡意的信譽。
 
 ### <a name="user-investigation"></a>使用者調查
 
@@ -260,7 +259,7 @@ ms.locfileid: "37386200"
 
 當您組織中的使用者送出的電子郵件訊息和報告至 Microsoft，請使用[報告訊息增益集以進行 Outlook 或 Outlook Web Access](enable-the-report-message-add-in.md)，報告也會傳送到您的系統，且使用者報告檢視中顯示在檔案總管。 此使用者回報郵件現在會觸發系統架構資訊警示，這會自動啟動 [調查 playbook。
 
-在根調查階段中，會評估的電子郵件的各個層面。 這些包括：
+在根調查階段中，會評估的電子郵件的各個層面。 包括：
 - 可能需有哪些類型的威脅它決定;
 - 寄件者; 它
 - 其中電子郵件寄件地 （傳送基礎結構）;
@@ -299,12 +298,12 @@ ms.locfileid: "37386200"
 
 ## <a name="how-to-get-air"></a>如何取得航空
 
-Office 365 的空調隨附的下列訂閱：
+Office 365 AIR 現在包含在以下訂閱中：
 
-- Microsoft 365 企業版 E5
-- Office 365 企業版 E5
+- Microsoft 365 E5
+- Office 365 E5
 - Microsoft 威脅防護
-- Office 365 進階的威脅保護計劃 2
+- Office 365 進階威脅防護方案 2
 
 如果您不需要任何這些訂閱，[開始免費試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US)。
 
@@ -317,3 +316,4 @@ Office 365 的空調隨附的下列訂閱：
 [了解 Microsoft Defender ATP 中的空調](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 
 
 [請造訪 Microsoft 365 藍圖 」 來查看的項目是即將推出以及推行](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+

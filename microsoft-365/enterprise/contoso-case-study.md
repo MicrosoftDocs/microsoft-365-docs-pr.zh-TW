@@ -13,16 +13,14 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 虛構但有代表性的全球組織如何採用 Microsoft 365 企業版。
-ms.openlocfilehash: 0d5453a5f55314207e0c8403837a83dd66eb70d3
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: e7c79612b18bdd21d8fd137abe11f8f26cfd6eff
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369614"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673219"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>適用於 Contoso Corporation 的 Microsoft 365 企業版
-
-**摘要：** 虛構但有代表性的全球組織如何採用 Microsoft 365 企業版。
 
 Microsoft 365 企業版是 Microsoft 的頂級雲端供應項目，結合本機與雲端生產力應用程式和服務與 Windows 10 企業版和進階安全功能，成為完整、智慧型的解決方案，讓所有人都能發揮創意並且安全地共同作業。 
 

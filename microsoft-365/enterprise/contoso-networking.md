@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 網路基礎結構，以及如何使用其 SD-WAN 技術，以取得與 Microsoft 365 企業版雲端服務的最佳網路效能。
-ms.openlocfilehash: f448296828f350560451727efdd96097862da8dc
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: 87584660805608c45b36e13804ca1dab6b8e7d17
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369544"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673169"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation 的網路
-
-**摘要：** 了解 Contoso 網路基礎結構，以及如何使用其 SD-WAN 技術，以取得與 Microsoft 365 企業版雲端服務的最佳網路效能。
 
 為了採用內含雲端的基礎結構，Contoso 的網路工程師了解網路流量到雲端服務的基礎轉移。他們並非使用著重在 Contoso 更高階辦公室階層的網路連線和流量的內部中樞與輪輻模型，而是致力於將使用者位置對應至當地網際網路輸出，以及將當地連線對應至網際網路上最接近的 Microsoft 365 網路位置。
 

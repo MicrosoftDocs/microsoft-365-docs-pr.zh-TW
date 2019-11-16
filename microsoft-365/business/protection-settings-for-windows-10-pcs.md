@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: 了解預設和其他 Microsoft 365 商務版來保護 Windows 10 裝置中可用的設定。
-ms.openlocfilehash: ab306e3d5a6011a0e7d537c98ecca6ef49ff82d9
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 5d4bce02df1276dc9b284c7b0709c7dc26b0dbce
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575751"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676041"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>設定適用於 Windows 10 電腦的裝置保護設定
 
@@ -64,9 +64,9 @@ ms.locfileid: "37575751"
 |設定  <br/> |描述  <br/> |
 |使用 Windows Defender 防毒軟體來協助保護電腦免於遭受病毒與其他威脅的侵害  <br/> |需要開啟 Windows Defender 防毒軟體，以保護電腦免於遭受連接至網際網路時的安全威脅。  <br/> |
 |協助保護電腦免於遭受 Microsoft Edge 中的網路安全威脅  <br/> |開啟 Microsoft Edge 中的設定，以協助保護使用者免受惡意網站與下載檔案的威脅。  <br/> |
-|使用能減少裝置受攻擊面的規則  <br/> |設定為 [開啟] 時，受攻擊面縮減能協助系統封鎖惡意程式碼通常會用來感染裝置的動作和 App。只有在 Windows Defender 防毒軟體設為 [開啟] 時，這項設定才能夠使用。請參閱[縮減受攻擊面](https://go.microsoft.com/fwlink/?linkid=870417)以深入了解。  <br/> |
-|保護資料夾來抵擋勒索軟體等威脅  <br/> |這項設定使用受控資料夾存取權來保護公司資料，不讓可疑或惡意的 App 修改。系統會封鎖這類型的 App，不讓它們變更受保護資料夾中的資料。只有在 Windows Defender 防毒軟體設為 [開啟] 時，這項設定才能夠使用。請參閱[使用受控資料夾存取權來保護資料夾](https://go.microsoft.com/fwlink/?linkid=870418)以深入了解。  <br/> |
-|避免連線到網際網路上可能有惡意之內容的網路存取行為  <br/> |請使用這項設定來封鎖前往聲譽不佳之網際網路位置 (可能裝載了網路釣魚詐騙郵件、惡意探索或其他惡意內容) 的連外使用者連線。只有在 Windows Defender 防毒軟體設為 [開啟] 時，這項設定才能夠使用。請參閱[保護您的網路](https://go.microsoft.com/fwlink/?linkid=870419)以深入了解。  <br/> |
+|使用能減少裝置受攻擊面的規則  <br/> |設定為 [開啟] 時，受攻擊面縮減能協助系統封鎖惡意程式碼通常會用來感染裝置的動作和 App。只有在 Windows Defender 防毒軟體設為 [開啟] 時，這項設定才能夠使用。請參閱[縮減受攻擊面](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)以深入了解。  <br/> |
+|保護資料夾來抵擋勒索軟體等威脅  <br/> |這項設定使用受控資料夾存取權來保護公司資料，不讓可疑或惡意的 App 修改。 系統會封鎖這類型的 App，不讓它們變更受保護資料夾中的資料。 只有在 Windows Defender 防毒軟體設為 [開啟] 時，這項設定才能夠使用。 請參閱[使用受控資料夾存取權來保護資料夾](https://docs.microsoft.com/configmgr/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA)來了解更多。  <br/> |
+|避免連線到網際網路上可能有惡意之內容的網路存取行為  <br/> |請使用這項設定來封鎖前往聲譽不佳之網際網路位置 (可能裝載了網路釣魚詐騙郵件、惡意探索或其他惡意內容) 的連外使用者連線。只有在 Windows Defender 防毒軟體設為 [開啟] 時，這項設定才能夠使用。請參閱[保護您的網路](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)以深入了解。  <br/> |
 |利用 BitLocker 來協助您保護電腦上的檔案和資料夾，抵擋未經授權的存取行為  <br/> |Bitlocker 能為電腦硬碟加密來保護資料，以及在電腦遺失或遭竊時保護資料來避免資料外洩。如需詳細資訊，請參閱 [Bitlocker 常見問題集](https://go.microsoft.com/fwlink/?linkid=871000)。  <br/> |
 |允許使用者從 Microsoft Store 下載 App  <br/> |讓使用者從 Microsoft Store 下載並安裝 App。 應用程式包括所有項目從遊戲生產力工具]，讓我們保留**上**，此設定，但您可以將它關閉額外的安全性。  <br/> |
 |允許使用者存取 Cortana  <br/> |Cortana 非常實用！ 她可以開啟設定或關閉您，提供指示，並請確定您已在約會現場，因此我們將此**上**預設。  <br/> |

@@ -16,10 +16,10 @@ search.appverid:
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解自動展開封存在 Office 365 中，可提供無限制的封存儲存 Exchange Online 信箱。
 ms.openlocfilehash: c13a6067a4c17b78a869be151b6e119f0c784f46
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38231374"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>在 Office 365 中的無限制封存概觀

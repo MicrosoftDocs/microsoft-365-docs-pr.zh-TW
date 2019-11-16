@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 來部署 Office 365 專業增強版。
-ms.openlocfilehash: ef13ac14be68b12e9483bd20f385e0cd16f51152
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: e0e1343d2ed36b1c76ad4708545c4e6d4010bb45
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627349"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673159"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Contoso 的 Office 365 專業增強版部署指南
-
-**摘要：** 深入了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 來部署 Office 365 專業增強版。
 
 Contoso 將其電腦升級至 Windows 10 企業版和 Office 365 專業增強版，讓協同合作更有效率、更佳的安全性，以及更現代化的桌面體驗。Contoso 在評估基礎架構和業務需求後，識別這些部署的關鍵需求：
 
