@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解 Contoso 公司的業務及其全球辦公室的分層架構。
-ms.openlocfilehash: ad2b3cce0e40161199513616a07ecd0a83a3e1b1
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: 429d74c66198c1b4a3dea735127a4fb569aa7bb0
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369554"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627339"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso 公司概觀
 
@@ -64,7 +64,7 @@ Contoso 的 IT 架構識別在部署 Microsoft 365 企業版時的以下設計�
 
 - 多個地理位置與其須遵守的當地法規及規範
 - 在總部辦公室的中央內部資料中心和地區應用程式伺服器中，裝載內部業務應用程式
-- 現有的 System Center Configuration Manager 基礎架構
+- 現有的 Microsoft Endpoint Configuration Manager 基礎架構
 - 混合的用戶端電腦裝置，包括 Windows、Mac 和 Linux
 - 混合的個人及公司行動裝置，包括 iOS (iPhone 和 iPad)、Android 智慧型手機及平板電腦
 - 為數眾多的遠端和行動工作者

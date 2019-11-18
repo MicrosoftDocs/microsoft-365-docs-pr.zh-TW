@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立安全小組來儲存您最重要且最敏感的檔案。
-ms.openlocfilehash: 97cc19b0b0067dc0eaca845dd16621be823f1334
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: f787951748cc1fb0b6b207b4b3aca0de1c29e3d7
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302950"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627497"
 ---
 # <a name="teams-for-highly-regulated-data"></a>適用於高度管制資料的 Microsoft Teams
 
@@ -125,7 +125,7 @@ ms.locfileid: "38302950"
 
 ![安全小組案例的組態步驟 4](./media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
  
-### <a name="step-5-create-the-label-or-a-sublabel-of-the-highly-regulated-label"></a>步驟 5：建立標籤或高度管制標籤的子標籤
+### <a name="step-5-create-a-sensitivity-label-or-a-sublabel-of-the-highly-regulated-sensitivity-label"></a>步驟 5：建立敏感度標籤或高度管制敏感度標籤的子標籤
 
 適用於高度管制資料的敏感度標籤可讓任何人套用至任何檔案，但是安全小組不同，安全小組需要自己的標籤或子標籤，使指派到的檔案都能：
 

@@ -12,24 +12,24 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 深入了解 Contoso 如何使用 System Center Configuration Manager 來部署 Windows 10 企業版的就地升級。
-ms.openlocfilehash: a63a973bed4bf62ebf7c2534d4c55a4e3b8ef60c
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 來部署 Windows 10 企業版的就地升級。
+ms.openlocfilehash: a36e933d31ac6d629b649f07d6b8c9a4fe950ec8
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370470"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627329"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso 的 Windows 10 企業版部署
 
-**摘要：** 深入了解 Contoso 如何使用 System Center Configuration Manager 來部署 Windows 10 企業版的就地升級。
+**摘要：** 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 來部署 Windows 10 企業版的就地升級。
 
 在 Microsoft 365 企業版廣泛發佈之前，Contoso 擁有與 Windows 相容的電腦和裝置，分別執行 Windows 7 (10%)、Windows 8.1 (65%) 和 Windows 10 (25%)。Contoso 想要升級電腦至 Windows 10 企業版，以利用進階安全性及透過自動化部署更新降低 IT 成本。 
 
 在評估基礎架構和業務需求後，Contoso 識別這些部署的關鍵需求：
 
 - 執行 Windows 10 企業版的電腦和裝置越多越好
-- 實施就地升級以利用現有的 System Center Configuration Manager 基礎架構
+- 實施就地升級以利用現有的 Configuration Manager 基礎架構
 - 控制要部署的 Windows 10 企業版版本及週期性的更新
 - 電腦和裝置應在最低 IT 管理成本與對使用者影響最低的情況下，保持最新狀態
 
@@ -83,7 +83,7 @@ Contoso 同時也使用 Windows Analytics 的「升級整備狀況」解決方�
 
 此基礎架構的組成為：
 
-- System Center Configuration Manager，功用是：
+- Configuration Manager，其：
   - 從 Microsoft 網路中的 Microsoft 大量授權取得取得 Windows 10 企業版套件的映像。
   - 部署套件的管理中心點。
 - 通常位於 Contoso 地區中心辦公室的地區發布點。
@@ -91,7 +91,7 @@ Contoso 同時也使用 Windows Analytics 的「升級整備狀況」解決方�
 
 ## <a name="next-step"></a>下一步
 
-[深入了解](contoso-o365pp.md) Contoso 如何使用 System Center Configuration Manager 基礎結構，在整個組織部署及保持目前的 Office 365 專業增強版。 
+[了解](contoso-o365pp.md) Contoso 如何使用 Configuration Manager 基礎結構，在整個組織部署及保留目前的 Office 365 專業增強版。 
 
 ## <a name="see-also"></a>另請參閱
 

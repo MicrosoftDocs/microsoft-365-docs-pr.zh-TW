@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 365 中的 Windows 資訊保護並且進行部署。
-ms.openlocfilehash: 5d327ea97a24d4b1015940688b7702dc761e826d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 23c3298545a288b459fd3bb858bb7c1d1714ee75
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370120"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627379"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>步驟 4： 設定 Windows 資訊保護
 
@@ -39,7 +39,7 @@ Windows 資訊保護 (WIP) 可協助保護 Windows 10 裝置上的此類資料�
   - 請確定您已填寫受保護的應用程式清單。
   - 選擇您的 WIP 保護等級。
 
-您也可以搭配 [System Center Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm) 使用 WIP。 
+您也可以搭配使用 WIP 和 [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm)。 
 
 如需詳細資訊，請參閱 [WIP 最佳做法]( https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip)
 
