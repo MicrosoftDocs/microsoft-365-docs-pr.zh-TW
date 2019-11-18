@@ -13,13 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
+- SPO_Content
 description: 摘要： 說明的 Skype、 OneDrive、 SharePoint 和 Exchange Online 的加密。
-ms.openlocfilehash: 55141f671e6cb3d7ea837bfcf9701e37a18fb7ba
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 220f3060bd9581b22183bbb56e68c3ec930d0c24
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077866"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38690304"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>商務用 Skype、 OneDrive for Business、 SharePoint Online 和 Exchange Online 的 office 365 加密
 
@@ -63,7 +64,7 @@ BitLocker 憑證，保護資料中心裡的機器上的實體磁碟區，會儲�
 > [!NOTE]
 > Office 365 US Government 的客戶，資料 blob 儲存在 Azure 美國政府存放區中。 此外，存取 SharePoint Online 中 Office 365 US Government 的機碼僅限於已特別遮蔽的 Office 365 人員。 Azure US Government 操作人員不需要用來加密資料 blob 的 SharePoint Online 重要存放區的存取。
 
-如需有關 SharePoint Online 和商務用 OneDrive 中的資料加密的詳細資訊，請參閱[商務用 OneDrive 和 SharePoint Online 中的資料加密](https://technet.microsoft.com/en-us/library/dn905447.aspx)。
+如需有關 SharePoint Online 和商務用 OneDrive 中的資料加密的詳細資訊，請參閱[商務用 OneDrive 和 SharePoint Online 中的資料加密](https://technet.microsoft.com/library/dn905447.aspx)。
 
 ### <a name="list-items-in-sharepoint-online"></a>SharePoint Online 中的清單項目
 

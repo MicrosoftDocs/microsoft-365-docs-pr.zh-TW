@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: Microsoft Cloud 中的加密的概觀。
-ms.openlocfilehash: 36bb50cda5f39461401b14ca3e7ada77a6e2cc0d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1ca3d1711589ab2d65a27a8d1eeb6da265ce727b
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077858"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38690221"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft Cloud 中的加密
 
@@ -27,11 +27,11 @@ Microsoft 的 enterprise cloud 服務內的客戶資料會受到各種不同的�
 
 無論客戶設定儲存在 Microsoft 的 enterprise cloud 服務內的客戶資料受到使用加密的一或多個表單。 （多個協力廠商稽核員，分別檢定我們密碼編譯的原則和其強制執行的驗證和這些稽核的報告可在[服務信任入口網站](https://aka.ms/stp)）。
 
-Microsoft 會提供客戶資料靜止和傳輸中加密的服務端技術。 例如，靜態的客戶資料，Microsoft Azure 使用[BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview)與[DM 窖](https://en.wikipedia.org/wiki/Dm-crypt)，並 Microsoft Office 365 使用 BitLocker、 [Azure 儲存體服務加密](https://azure.microsoft.com/documentation/articles/storage-service-encryption/)、[分散式金鑰管理員](https://support.office.com/article/989ba10c-f73f-4efb-ad1b-af3322e5f376)(DKM) 和 Office 365 服務加密。 傳輸中的客戶資料、 Azure、 Office 365、 Microsoft 商業支援、 Microsoft Dynamics 365、 Microsoft Power BI 和 Visual Studio Team Services 使用業界標準安全傳輸通訊協定，例如網際網路通訊協定安全性 (IPsec) 及Microsoft 資料中心之間，以及使用者裝置和 Microsoft 資料中心之間的傳輸層安全性 (TLS)。
+Microsoft 會提供客戶資料靜止和傳輸中加密的服務端技術。 例如，靜態的客戶資料，Microsoft Azure 使用[BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview)與[DM 窖](https://en.wikipedia.org/wiki/Dm-crypt)，和 Microsoft Office 365 使用 BitLocker、 [Azure 儲存體服務加密](https://azure.microsoft.com/documentation/articles/storage-service-encryption/)、[分散式金鑰管理員](https://support.office.com/article/989ba10c-f73f-4efb-ad1b-af3322e5f376)(DKM) 和 Office 365 服務加密。 傳輸中的客戶資料、 Azure、 Office 365、 Microsoft 商業支援、 Microsoft Dynamics 365、 Microsoft Power BI 和 Visual Studio Team Services 使用業界標準安全傳輸通訊協定，例如網際網路通訊協定安全性 (IPsec) 及Microsoft 資料中心之間，以及使用者裝置和 Microsoft 資料中心之間的傳輸層安全性 (TLS)。
 
 除了 Microsoft 所提供的密碼編譯安全的基準層級，我們的雲端服務也會包含您可以管理的其他密碼編譯選項。 例如，您可以啟用其 Azure 的虛擬機器 (Vm) 和其使用者之間的流量加密。 與[Azure 虛擬網路](https://azure.microsoft.com/services/virtual-network/)中，您可以使用的業界標準 IPsec 通訊協定來加密您公司的 VPN 閘道與 Azure 也筆電位於您的虛擬網路的 Vm 之間的流量。 此外，此外，[新的 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)讓您將加密的郵件傳送給任何人。
 
-根據公用金鑰基礎結構運作安全性標準，也就是元件的[Microsoft 安全性原則](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5868ecc8-50b7-4f91-b43f-640e2b99e86e&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers)，Microsoft 會採用 Windows 作業系統的憑證中所含的密碼編譯功能和驗證機制，包括使用符合美國政府的[聯邦資訊處理標準](http://csrc.nist.gov/publications/PubsFIPS.html)(FIPS) 140-2 標準的密碼編譯模組。 （如 Microsoft 相關 NIST 憑證數字，請參閱http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/1401vend.htm.)
+根據公用金鑰基礎結構運作安全性標準，也就是元件的[Microsoft 安全性原則](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5868ecc8-50b7-4f91-b43f-640e2b99e86e&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers)，Microsoft 會採用 Windows 作業系統的憑證和驗證機制，其中包含符合美國政府的[聯邦資訊處理標準](https://csrc.nist.gov/publications/PubsFIPS.html)(FIPS) 140-2 標準的密碼編譯模組使用所含的密碼編譯功能。 （如 Microsoft 相關 NIST 憑證數字，請參閱https://csrc.nist.gov/groups/STM/cmvp/documents/140-1/1401vend.htm.)
 
 > [附註]若要存取 Microsoft 安全性原則，當作資源，您必須使用登入您的公司或學校帳戶。 如果您不需要訂閱尚未，[您可以註冊免費試用版](https://servicetrust.microsoft.com/Home/TrialSubscriptions)。
 

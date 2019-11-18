@@ -11,18 +11,18 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要： 了解 Microsoft Office 365 中的資料復原。
-ms.openlocfilehash: 385bb936de2c0cfcb478f0b20d2f7367d5b55ff4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7fec40db9ce12b52d37f2003d7ee8db68739aa41
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077848"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38690218"
 ---
 # <a name="office-365-service-encryption"></a>Office 365 服務加密
 
 除了使用磁碟區層級加密，Exchange Online、 Skype for Business、 SharePoint Online 和商務用 OneDrive 也使用服務加密來加密客戶資料。 服務加密可讓兩個金鑰管理選項：
 - Microsoft 可管理所有的密碼編譯金鑰。 （此選項是 SharePoint Online、 商務用 OneDrive 與 Skype for Business 中目前無法使用。 它目前已在 Exchange Online 的藍圖。）
-- 客戶提供根機碼搭配服務加密和客戶管理使用 Azure Key Vault 這些機碼。 Microsoft 可管理所有其他機碼。 此選項稱為客戶金鑰，而且目前適用於 Exchange Online、 SharePoint Online 和商務用 OneDrive。 （先前稱為使用 BYOK 進階加密。 請參閱[增強透明度及控制 Office 365 客戶](http://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/)的原始的宣告。）
+- 客戶提供根機碼搭配服務加密和客戶管理使用 Azure Key Vault 這些機碼。 Microsoft 可管理所有其他機碼。 此選項稱為客戶金鑰，而且目前適用於 Exchange Online、 SharePoint Online 和商務用 OneDrive。 （先前稱為使用 BYOK 進階加密。 請參閱[增強透明度及控制 Office 365 客戶](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/)的原始的宣告。）
 
 服務加密提供多個好處。 例如，它：
 - 提供的權限以強式的加密保護的保護和管理功能。

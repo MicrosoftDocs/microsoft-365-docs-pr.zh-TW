@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: c502be734ec6fdc86a64968ecf1859587869cdf9
-  ms.sourcegitcommit: a77c4889c5b7d3b8f16e74917079300e8f222941
+  ms.openlocfilehash: b6c5cf658bcd10b4ec7f7ffafad2532efdeb7b58
+  ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/30/2019
-  ms.locfileid: "37329181"
+  ms.lasthandoff: 11/01/2019
+  ms.locfileid: "38690210"
 landingContent:
 - title: 管理資訊保護
   linkLists:
@@ -50,7 +50,7 @@ landingContent:
       url: inactive-mailboxes-in-office-365.md
     - text: 檢視資料控管報告
       url: view-the-data-governance-reports.md
-- title: 管理內部的風險
+- title: 管理內部風險
   linkLists:
   - linkListType: overview
     links:
@@ -60,9 +60,9 @@ landingContent:
       url: privileged-access-management-overview.md
     - text: 客戶加密箱
       url: customer-lockbox-requests.md
-    - text: 監督通訊
-      url: supervision-policies.md
-    - text: 資訊障礙
+    - text: 通訊合規性
+      url: communication-compliance.md
+    - text: 資訊屏障
       url: information-barriers.md
     - text: 客戶金鑰
       url: controlling-your-data-using-customer-key.md
@@ -82,8 +82,8 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: 合規性管理員
-      url: compliance-manager-overview.md
+    - text: 合規性分數
+      url: compliance-score.md
     - text: GDPR 合規性的行動計劃
       url: gdpr-action-plan.md
     - text: GDPR 的資訊保護
