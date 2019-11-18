@@ -16,14 +16,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定並測試適用於 Microsoft 365 測試環境的密碼重設。
-ms.openlocfilehash: 4ddcb0718fbb5546a0e37b648b698b46d7e55ec0
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 3ad5a1477bfc40b541c0b048b9b68b896a748e0a
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640722"
+ms.locfileid: "38673369"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼重設
+
+*這個測試實驗室指南只能用於 Microsoft 365 企業版測試環境。*
 
 Azure Active Directory (Azure AD) 自助密碼重設 (SSPR) 允許使用者重設或解除鎖定其密碼或帳戶。 
 
