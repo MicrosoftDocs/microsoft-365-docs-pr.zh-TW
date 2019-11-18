@@ -222,6 +222,7 @@
 
 ##### [設定 EOP 服務](./office-365-security/set-up-your-eop-service.md)
 ###### [設定 EOP 的最佳做法](./office-365-security/best-practices-for-configuring-eop.md)
+###### [設定 EOP 和 Office365 ATP 安全性的最佳做法](./office-365-security/best-practices-for-eop-office365-atp.md)
 ###### [套用 EOP 設定到多個租用戶的範例指令碼](./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md)
 ###### [將網域與設定從某個 EOP 組織移到另一個 EOP 組織](./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md)
 ###### [從 Google Postini、Barracuda Spam 與 Virus Firewall 或 Cisco IronPort 切換到 EOP](./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md)
