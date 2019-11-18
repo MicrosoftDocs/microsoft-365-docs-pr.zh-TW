@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的組態符合 Windows 10 企業版的 Microsoft 365 企業版準則。
-ms.openlocfilehash: 268423de91309947381509017d386c62a5ef23da
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 98dd4b71f1c2af6d72580066d73e75dfd4aa60ff
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37372804"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627527"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>階段 3：Windows 10 企業版基礎結構允出準則
 
@@ -99,14 +99,14 @@ Windows Autopilot 會設定裝置並將它連線到 Azure AD。
 <a name="crit-windows10-step5a"></a>
 ## <a name="required-you-are-using-windows-defender-antivirus-or-your-own-antimalware-solution"></a>必要：您是使用 Windows Defender 防毒軟體或自有的反惡意程式碼解決方案
 
-您已部署 Windows Defender 防毒軟體或自有的防毒解決方案來保護執行 Windows 10 企業版的裝置，使其免於遭受惡意軟體攻擊。如果您已部署 Windows Defender 防毒軟體，您便已實作報告方法 (例如 System Center Configuration Manager 或 Microsoft Intune) 來監視防毒事件和活動。
+您已部署 Windows Defender 防毒軟體或自有的防毒解決方案來保護執行 Windows 10 企業版的裝置，使其免於遭受惡意軟體攻擊。如果您已部署 Windows Defender 防毒軟體，您便已實作報告方法 (例如 Microsoft Endpoint Configuration Manager 或 Microsoft Intune) 來監視防毒事件和活動。
 
 如有需要，[步驟 5](windows10-enable-security-features.md#windows10-sec-av) 可協助您符合這項要求。
 
 <a name="crit-windows10-step5b"></a>
 ## <a name="required-you-are-using-windows-defender-exploit-guard"></a>必要：您是使用 Windows Defender 惡意探索防護
 
-您已部署 Windows Defender 惡意探索防護來保護執行 Windows 10 企業版的裝置，使其免於遭到入侵，並已實作報告方法 (例如 System Center Configuration Manager 或 Microsoft Intune) 來監視入侵事件和活動。
+您已部署 Windows Defender 惡意探索防護來保護執行 Windows 10 企業版的裝置，使其免於遭到入侵，並已實作報告方法 (例如 Configuration Manager 或 Microsoft Intune) 來監視入侵事件和活動。
 
 如有需要，[步驟 5](windows10-enable-security-features.md#windows10-sec-eg) 可協助您符合這項要求。
 
