@@ -13,12 +13,12 @@ search.appverid:
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: 使用本文中的 Windows PowerShell 指令碼，以快速地複製現有的 Office 365 或 Microsoft 365 的合規性中心中 「 內容搜尋。 當您複製搜尋時、 （以新名稱） 的新搜尋會建立包含原始的搜尋相同的屬性。 然後您可以編輯新的搜尋 （藉由變更的關鍵字查詢或日期範圍），然後再執行它。
-ms.openlocfilehash: 2622b77045d3b4a92ad2e8a1852e1ddbaaca3368
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 25aa5d6a1ba19f697a6ccf474e055faf6a19d6bd
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076644"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685586"
 ---
 # <a name="clone-a-content-search"></a>複製內容搜尋
 
@@ -58,7 +58,7 @@ ms.locfileid: "37076644"
   
 1. 使用.ps1 檔名尾碼，將下列文字儲存至 Windows PowerShell 指令碼檔案例如， `CloneSearch.ps1`。
     
-  ```
+  ```powershell
   # This PowerShell script clones an existing Content Search in the Office 365 security and compliance center.
   # Get login credentials from the user
   if(!$UserCredential)
@@ -120,7 +120,7 @@ ms.locfileid: "37076644"
     
 3. 執行指令碼。例如：
     
-    ```
+    ```powershell
     .\CloneSearch.ps1
     ```
 
@@ -142,4 +142,4 @@ ms.locfileid: "37076644"
     
 - [內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md)
     
-- [eDiscovery 案例](ediscovery-cases.md)
+- [電子文件探索案例](ediscovery-cases.md)

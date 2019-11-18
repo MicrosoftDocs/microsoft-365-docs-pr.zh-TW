@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: dd197d58-5bf6-4d18-b9f8-d16db603fae2
 description: Microsoft SharePoint 2013 支援 PDF 文件的資訊版權管理 (IRM) 的保護。 該的支援，使用者可以上傳 PDF 文件至受 IRM 保護的文件庫，並於下載，檔案將會使用 Microsoft Office IRM 保護。
-ms.openlocfilehash: 0a856ac714dd931bfac0a76019796941eacb97c7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ba65f78198ba9e973253d6dd97c1ab3ac02d2b9c
+ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077510"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38685495"
 ---
 # <a name="sharepoint-compatible-pdf-readers-that-support-microsoft-information-rights-management-services"></a>SharePoint 相容 PDF 讀者的支援 Microsoft 的資訊版權管理服務
 
@@ -34,9 +34,9 @@ Microsoft SharePoint 2013 支援 PDF 文件的資訊版權管理 (IRM) 的保護
 |Windows 8 （傳統模式）  <br/> |Azure 資訊保護應用程式  <br/> Foxit 讀取者  <br/> NitroPDF  <br/> |[下載 Azure 資訊保護應用程式](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [下載 Foxit 讀取者](https://go.microsoft.com/fwlink/?linkid=253210) <br/> [下載 NitroPDF](https://www.gonitro.com/pdf-reader) <br/> |
 |Windows 8.1  <br/> |Azure 資訊保護應用程式  <br/> Foxit 讀取者  <br/> NitroPDF  <br/> |[下載 Azure 資訊保護應用程式](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [下載 Foxit 讀取者](https://go.microsoft.com/fwlink/?linkid=253210) <br/> [下載 NitroPDF](https://www.gonitro.com/pdf-reader) <br/> |
 |Windows 10  <br/> |Azure 資訊保護應用程式  <br/> Foxit 讀取者  <br/> NitroPDF  <br/> |[下載 Azure 資訊保護應用程式](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [下載 Foxit 讀取者](https://go.microsoft.com/fwlink/?linkid=253210) <br/> [下載 NitroPDF](https://www.gonitro.com/pdf-reader) <br/> |
-|Android  <br/> |Azure 資訊保護應用程式  <br/> 使用 RMS Foxit MobilePDF  <br/> |[下載 Azure 資訊保護應用程式](https://go.microsoft.com/fwlink/?linkid=836827) <br/> [購買 Foxit MobilePDF](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.rms) <br/> |
+|Android  <br/> |Azure 資訊保護應用程式  <br/> 使用 RMS Foxit MobilePDF  <br/> |[下載 Azure 資訊保護應用程式](https://go.microsoft.com/fwlink/?linkid=836827) <br/> [購買 Foxit MobilePDF](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite) <br/> |
 |Windows Phone  <br/> |不適用  <br/> |不適用  <br/> |
 |MacOS  <br/> |不適用  <br/> |不適用  <br/> |
-|IOS  <br/> |Azure 資訊保護應用程式  <br/> 使用 RMS Foxit MobilePDF  <br/> |[下載 Azure 資訊保護應用程式](https://go.microsoft.com/fwlink/?linkid=836828) <br/> [購買 Foxit MobilePDF](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.rms) <br/> |
+|IOS  <br/> |Azure 資訊保護應用程式  <br/> 使用 RMS Foxit MobilePDF  <br/> |[下載 Azure 資訊保護應用程式](https://go.microsoft.com/fwlink/?linkid=836828) <br/> [購買 Foxit MobilePDF](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite) <br/> |
    
 

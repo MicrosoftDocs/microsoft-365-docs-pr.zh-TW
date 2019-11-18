@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 3bdb5c4e-94fc-4741-b02f-4e7cc3c54aa1
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 description: 您可以使用資訊版權管理 (IRM) 協助控制及保護下載從清單或文件庫的檔案。
-ms.openlocfilehash: 3c350a3648b77992dd8e86ee47498efc327b2af8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 82cbbf7fdea4a534c2bc73bf0f817d6fc3a249de
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076734"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38685555"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>將資訊版權管理 (IRM) 套用至清單或文件庫
 

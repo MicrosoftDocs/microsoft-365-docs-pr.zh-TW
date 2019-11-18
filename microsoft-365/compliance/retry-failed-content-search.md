@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 用於解決有內容位置錯誤的內容搜尋中的 [重試] 按鈕。
-ms.openlocfilehash: 91c656a05111391ad93e03946cf367133f2c25a2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b35c2985efeafa3192a2404047fe62e28e04157e
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078174"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685649"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>再試一次 「 內容搜尋 」 來解決錯誤的內容位置
 
 當您在安全性與合規性中心中使用內容搜尋來搜尋大量的信箱時，您可能會收到類似下列的搜尋錯誤：
 
-```
+```text
 Error
 
 The search on the following locations failed:

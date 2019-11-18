@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: 428e4ef319d53bf161903fc9584037800d0b3d3b
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: 723f1372b9214367985cc6b42c41e94c3f201b89
+ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417532"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38685384"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance Manager （預覽）
 
@@ -105,22 +105,22 @@ ms.locfileid: "37417532"
 
 [動作項目](working-with-compliance-manager.md#controls-and-actions)會包含在客戶管理控制措施，為您可用來管理及追蹤進度評估完成向內建工作流程管理功能的一部分。
 
-您組織中的人員可以使用合規性管理員來檢閱從其已指派給他們的所有評定的客戶管理控制項。 當使用者登入到合規性管理員，並且會開啟**巨集指令的項目**儀表板時，會顯示指派給他們的動作項目清單。 根據 「 合規性管理員 」 角色指派給使用者，他們可以提供實作或測試詳細資料、 更新狀態，或指派動作項目。
+您組織中的人員可以使用合規性管理員來檢閱從其已指派給他們的所有評定的客戶管理控制項。 當使用者登入「合規性管理員」並開啟 [動作項目]**** 儀表板時，會顯示指派給他們的 [動作項目] 清單。 視使用者獲派的合規性管理員角色而定，他們可以提供實作或測試詳細資料、更新狀態，或是指派動作項目。
 
 憑證控制項通常是由一位人員實作和測試另一個。 例如，初始指派給實作一個人的動作項目都完成之後，動作項目指派給下一個人來測試及上傳證據。 具有足夠的權限控制工作分派的任何使用者可以指派，並重新指派動作項目。 這可讓控制項的工作分派的中央管理，而且分散 implementors 和測試人員之間路由的動作項目。
 
 ## <a name="permissions"></a>權限
 
-合規性管理員中使用角色型存取控制 」 權限模型。 只有獲指派的使用者角色的使用者可能會存取合規性管理員中，並依角色類型會限制每位使用者所允許的動作。 [檢視表格](working-with-compliance-manager.md#permissions)顯示每個權限所允許的動作。
+合規性管理員使用以角色為基礎的存取控制權限模型。 只有獲指派使用者角色的使用者才能存取合規性管理員，而每位使用者所允許的動作會受角色類型限制。 [檢視表格](working-with-compliance-manager.md#permissions)顯示每個權限所允許的動作。
 
 入口網站管理員合規性管理員可以設定其他使用者在合規性管理員中的權限，遵循下列步驟：
 
 1. 從頂端**多個**下拉式] 功能表中，選取 [**系統**]，然後**設定**]。
 2. 從這裡開始，選取您想要指派，然後新增您想要指派給該角色的員工的角色。 使用者能執行某些動作。
 
-此外，[在 Azure Active Directory (Azure AD) 中的全域讀者角色](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)所指派的使用者擁有存取合規性管理員中; 的唯讀權限不過他們無法編輯資料，或執行合規性管理員中的任何動作。
+此外，[在 Azure Active Directory (Azure AD) 中的全域讀者角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)所指派的使用者擁有存取合規性管理員中; 的唯讀權限不過他們無法編輯資料，或執行合規性管理員中的任何動作。
 
-請注意，有不再預設**來賓存取**角色。 每位使用者必須被指派角色，才能存取及使用合規性管理員中。
+請注意，已不再有預設的**來賓存取**角色。 每個使用者都必須獲指派角色，才能在合規性管理員中存取及作業。
   
 ## <a name="manage-evidence"></a>管理辨識項
 
@@ -131,28 +131,30 @@ ms.locfileid: "37417532"
 合規性管理員評估提供預先設定的[範本](working-with-compliance-manager.md#templates)，並可讓您建立的客戶管理控制您的法務遵循需求的自訂的範本。 新範本所建立的控制項資訊從檔案匯入 Excel，或者您可以從現有範本的複本建立範本。
 
 是包含與合規性管理員中預先設定的範本：
- 
-- [ISO 27001: 2013](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-2:v1:en)
-- [ISO 27018:2019](https://www.iso.org/obp/ui/#iso:std:iso-iec:27018:ed-2:v1:en)
-- [NIST 800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-4/final)
-- [NIST 800-171](https://csrc.nist.gov/publications/detail/sp/800-171/rev-1/final)
-- [NIST Cybersecurity Framework (CSF)](https://www.nist.gov/cyberframework)
-- [雲端安全聯盟 (CSA) Cloud Control Matrix (CCM) 3.0.1](https://cloudsecurityalliance.org/working-groups/cloud-controls-matrix/#_overview)
-- [聯邦金融機構檢查委員會 (FFIEC) 的資訊安全性手冊](https://ithandbook.ffiec.gov/it-booklets/information-security.aspx) 
-- [HIPAA](https://www.hhs.gov/hipaa/for-professionals/index.html) / [HITECH](https://www.hhs.gov/hipaa/for-professionals/special-topics/hitech-act-enforcement-interim-final-rule/index.html)
-- [FedRAMP 中度](https://www.fedramp.gov/documents/)
-- [歐盟 GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN)
+
+1. [ISO 27001: 2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+2. [ISO 27018: 2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+3. [NIST 800-53 修訂 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+4. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+5. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+6. [雲端安全聯盟 (CSA) 雲端控制項矩陣 (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+8. [聯邦金融機構檢查委員會 (FFIEC) 的資訊安全性手冊](https://go.microsoft.com/fwlink/?linkid=2109077) 
+8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
+9. [FedRAMP 中度](https://go.microsoft.com/fwlink/?linkid=2108869)
+10. [歐盟 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
+11. [加州消費者隱私權法案 (CCPA)-預覽](https://go.microsoft.com/fwlink/?linkid=2108871)
+12. [Microsoft 365 的資料保護基準](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
 ## <a name="compliance-score"></a>合規性分數
 
-[合規性分數](compliance-score-methodology.md)是 「 核心元件的合規性管理員，可協助您了解並管理合規性的組織。 [Microsoft 安全分數](../security/mtp/microsoft-secure-score.md)，例如合規性分數是行為型計分系統與資料保護、 隱私權和您的組織中的安全性相關的活動。 評量的合規性分數是與特定的標準或法規合規性的運算式。 較高的數值分數，評估好合規性狀態。 了解合規性計分方法是很重要時的若干需要客戶管理控制項的動作。
+[Microsoft 合規性分數 （預覽）](compliance-score.md)是協助您了解貴組織的合規性狀態 Microsoft 365 合規性中心中的功能。 它會計算測量中完成協助減少資料保護和法規的標準周圍的風險的動作您進行風險分數。 了解整體合規性分數可協助您了解並管理合規性的組織。 了解[您的合規性分數的計算方式](compliance-score-methodology.md)。
   
 > [!IMPORTANT]
-> 合規性分數並不會表達組織符合任何特定標準或規定的絕對測量。而是表示您採用控制項的程度，可降低個人資料和個別隱私權的風險。沒有任何服務可保證您符合標準或規定，且不能以任何形式解釋合規性分數作為保證。
+> 合規性分數不 express 與任何特定的標準或法規的組織符合性絕對量值。 它來表示您要採用的個人資料和個人隱私權降低風險的控制項的程度。 您已符合標準或法規，和合規性分數不應該解譯成保證郵件可以以任何方法，可確保沒有任何服務。
 
 ## <a name="secure-score-integration"></a>安全分數整合
 
-[Microsoft 安全分數](../security/mtp/microsoft-secure-score.md)的同步處理的動作項目，自動將安全分數信用套用至合規性分數被整合合規性管理員。 這是可設定為巨集指令的個別項目，並提供項目之間的持續更新。
+[Microsoft 安全分數](../security/mtp/microsoft-secure-score.md)的同步處理的動作項目，自動將安全分數信用套用至合規性分數被整合合規性管理員。 這是全域，可設定個別的動作項目或所有的動作，並從安全分數提供更新。
 
 例如，您有相關的安全性需求來規範相關動作項目也適用於您組織中啟用 Azure Rights Management。 時啟動 Azure Rights Management 和處理安全分數，合規性管理員接收通知的更新，並完成信用自動更新的分數動作項目。
 

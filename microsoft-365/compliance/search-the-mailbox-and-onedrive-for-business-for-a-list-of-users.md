@@ -7,17 +7,19 @@ ms.date: 1/3/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: 本文中使用內容搜尋和指令碼來搜尋信箱與 OneDrive for Business 網站的使用者群組。
-ms.openlocfilehash: 9c8de90f8d2faee73ba269466f90478bc72b708e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 02b89646fdb4175d30dce8840ac069f62995cbbc
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077544"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685584"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>使用內容搜尋來搜尋信箱與商務用 OneDrive 網站的使用者清單
 
@@ -45,7 +47,7 @@ ms.locfileid: "37077544"
   
 以下是[Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)命令，您可以取得組織中的所有使用者的電子郵件地址清單，並將它儲存到文字檔，命名為 runt `Users.txt`。 
   
-```
+```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
 ```
 
@@ -70,7 +72,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
 1. 使用.ps1 檔名尾碼，將下列文字儲存至 Windows PowerShell 指令碼檔案例如， `SearchEXOOD4B.ps1`。 將檔案儲存在步驟 2 中儲存的使用者清單所在的相同資料夾。
     
-  ```
+  ```powershell
   # This PowerShell script will prompt you for the following information:
   #    * Your user credentials 
   #    * The name of your organization's MySite domain                                              
@@ -106,7 +108,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
       }
   }
   # Load the SharePoint assemblies from the SharePoint Online Management Shell
-  # To install, go to http://go.microsoft.com/fwlink/p/?LinkId=255251
+  # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
   if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
   {
       $SharePointClient = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client")
@@ -114,7 +116,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
       $SPUserProfile = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.UserProfiles")
       if (!$SharePointClient)
       {
-          Write-Error "SharePoint Online Management Shell isn't installed, please install from: http://go.microsoft.com/fwlink/p/?LinkId=255251 and then run this script again"
+          Write-Error "SharePoint Online Management Shell isn't installed, please install from: https://go.microsoft.com/fwlink/p/?LinkId=255251 and then run this script again"
           return;
       }
   }
@@ -164,7 +166,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
 3. 啟動指令碼。例如：
     
-    ```
+    ```powershell
     .\SearchEXOOD4B.ps1
     ```
 
@@ -180,4 +182,4 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
     - 搜尋查詢 （離開此空白若要傳回的內容位置中的所有項目）。
     
-    指令碼取得每個 onedrive for Business 網站的 Url，然後建立並啟動搜尋。 您可以執行**Get-compliancesearch** cmdlet 中的安全性 & 合規性中心 PowerShell 來顯示搜尋統計資料和結果，或您可以移至安全性 & 合規性中心，以檢視資訊中的 [**內容搜尋**] 頁面上關於搜尋。 
+    指令碼取得每個 onedrive for Business 網站的 Url，然後建立並啟動搜尋。 您也可以執行**Get-compliancesearch** cmdlet 中安全性 & 合規性中心 PowerShell 來顯示搜尋統計資料和結果，或者您可以移至 [**內容搜尋**] 頁面上，安全性 & 合規性中心，若要檢視搜尋的相關資訊。 

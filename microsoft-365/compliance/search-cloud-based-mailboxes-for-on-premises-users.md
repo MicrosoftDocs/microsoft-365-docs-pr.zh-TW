@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 用於安全性 & 合規性中心的內容搜尋工具來搜尋並匯出在 Exchange 混合式部署中的內部部署使用者 MicrosoftTeams 聊天室資料 （稱為 1xN 聊天室）。
-ms.openlocfilehash: 38aff6116bd3cd8e4ba9f0f46d6fd81f790803f3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 97b849e682c0902b6a2d48919c2f2cd1257d8691
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078137"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685647"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>在 Office 365 中搜尋內部部署使用者的雲端式的信箱
 
@@ -86,7 +86,7 @@ ms.locfileid: "37078137"
     
 3. 建立關鍵字查詢，並將條件新增至搜尋查詢，必要時。 只搜尋的小組聊天資料，您可以在 [**關鍵字**] 方塊中新增下列查詢： 
     
-    ```
+    ```text
     kind:im
     ``` 
 
@@ -112,15 +112,15 @@ ms.locfileid: "37078137"
     
 2. 執行下列 PowerShell 命令來建立搜尋內部部署使用者的雲端式信箱的內容搜尋。
     
-    ```
+    ```powershell
     New-ComplianceSearch <name of new search> -ContentMatchQuery <search query> -ExchangeLocation <on-premises user> -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
-   
+
     *IncludeUserAppContent*參數用來指定使用者或*ExchangeLocation*參數所指定的使用者的雲端式信箱。 *AllowNotFoundExchangeLocationsEnabled*允許雲端式信箱的內部部署使用者。 當您使用`$true`值，此參數，請搜尋不會嘗試之前，先執行驗證信箱是否存在。 這是必要搜尋內部部署使用者的基於雲端的信箱，因為這些類型的信箱不解決與一般信箱。 
     
     下列範例會搜尋小組聊天 （也就是立即訊息），包含關鍵字 「 redstone 」 中的雲端架構信箱的 Sara Davis，身為內部部署組織中的使用者 Contoso。
   
-    ```
+    ```powershell
     New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 

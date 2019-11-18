@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: e6201fc938f7481a524a8d3c4171d4c1b67997e9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 720381c067ba17614df253ffdf0543821a0bf192
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076521"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685579"
 ---
 # <a name="create-a-litigation-hold"></a>建立訴訟資料暫留
 
@@ -64,17 +64,17 @@ ms.locfileid: "37076521"
 
 您也可以建立訴訟暫止狀態，藉由[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)中執行下列命令：
 
-```
+```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true
 ```
 
 上述命令會無限期保留項目因為未指定保留期間。 若要建立時間型保留時，使用下列命令：
 
-```
+```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-如需詳細資訊，請參閱[Set-mailbox](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-mailbox)。
+如需詳細資訊，請參閱[Set-mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)。
 
 ## <a name="how-does-litigation-hold-work"></a>訴訟暫止如何運作？
 

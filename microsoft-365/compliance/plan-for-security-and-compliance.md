@@ -3,7 +3,7 @@ title: 規劃安全性&amp;Office 365 的合規性
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 3/15/2018
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 規劃安全性與合規性的登陸頁面
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3619a5e22a5bc957b001dd4f42a9569a7543e6b5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 86eef432f30ea9a437f0857f693d62eb23f4ba8d
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077553"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38685508"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>規劃安全性&amp;Office 365 的合規性
 
@@ -51,7 +51,7 @@ ms.locfileid: "37077553"
 
 檢閱並依三種保護層級的檔案保護功能的計劃。
   
-[PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
 ## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>步驟 5： 利用 Microsoft 365 安全性&amp;合規性中心
 
@@ -59,9 +59,9 @@ ms.locfileid: "37077553"
   
 - [移至 Office 365 安全性&amp;合規性中心](go-to-the-securitycompliance-center.md)
     
-- [Permissions in the Office 365 Security &amp; Compliance Center](/security/office-365-security/protect-against-threats.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](~/security/office-365-security/protect-against-threats.md)
     
-- [讓使用者能夠存取 Office 365 安全性&amp;合規性中心](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [讓使用者能夠存取 Office 365 安全性&amp;合規性中心](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>步驟 6： 使用端對端安全性案例作為起點
 
@@ -69,7 +69,7 @@ ms.locfileid: "37077553"
   
 - [安全電子郵件原則和設定](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
     
-- [Microsoft Cloud 中的 Contoso](http://aka.ms/cloudarchcontoso)
+- [Microsoft Cloud 中的 Contoso](https://aka.ms/cloudarchcontoso)
     
 ## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 系統管理中心和儀表板
 
@@ -79,6 +79,4 @@ ms.locfileid: "37077553"
 |:-----|:-----|:-----|
 |Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 系統管理中心  <br/>  安全性&amp;合規性中心  <br/>  Exchange 系統管理中心  <br/>  SharePoint 系統管理中心和 OneDrive 商務版系統管理中心  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft 行動應用程式管理  <br/>  Microsoft Intune  <br/> |
-|Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | 雲端 App 安全性  <br/> |
-   
-
+|Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |

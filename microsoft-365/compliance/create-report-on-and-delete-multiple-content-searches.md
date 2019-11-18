@@ -7,18 +7,20 @@ ms.date: 6/26/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 了解如何建立像搜尋及透過 Office 365 中的安全性 & 合規性中心中的 PowerShell 指令碼執行報告的內容搜尋工作自動化。
-ms.openlocfilehash: 75caf75d576ac4a24779de15f5b05cb7fe8fa724
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 43f6046521ef121f52b2a5abe26d2cd6a322d22c
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076467"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685625"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>建立、報告及刪除多個內容搜尋
 
@@ -42,7 +44,7 @@ ms.locfileid: "37076467"
   
 1. 複製並貼入.txt 檔案，使用 [記事本] 中的下列文字。 此檔案儲存至資料夾，在本機電腦上。 您將此資料夾以及儲存其他指令碼。
     
-    ```
+    ```text
     ExchangeLocation,SharePointLocation,ContentMatchQuery,StartDate,EndDate
     sarad@contoso.onmicrosoft.com,https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com,(lawsuit OR legal),1/1/2000,12/31/2005
     sarad@contoso.onmicrosoft.com,https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com,(lawsuit OR legal),1/1/2006,12/31/2010
@@ -72,7 +74,7 @@ ms.locfileid: "37076467"
   
 1. 使用.ps1 檔名尾碼，將下列文字儲存至 Windows PowerShell 指令碼檔案例如， `ConnectSCC.ps1`。 將檔案儲存至您儲存 CSV 檔案，以在步驟 1 中的相同資料夾。
     
-    ```
+    ```powershell
     # Get login credentials 
     $UserCredential = Get-Credential 
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
@@ -82,10 +84,10 @@ ms.locfileid: "37076467"
 
 2. 在您的本機電腦上開啟 Windows PowerShell 移至您在上一個步驟中建立的指令碼所在的資料夾，然後執行指令碼。例如：
     
-    ```
+    ```powershell
     .\ConnectSCC.ps1
     ```
-  
+
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>步驟 3： 執行指令碼，以建立並啟動搜尋
 
 在此步驟中的指令碼會建立每個資料列的個別內容搜尋您在步驟 1 建立的 CSV 檔案中。 當您執行此指令碼時，將會提示您輸入兩個值：

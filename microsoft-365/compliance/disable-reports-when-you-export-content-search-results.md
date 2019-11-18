@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: 編輯 Windows 登錄在本機電腦上，停用的報表，當您從 Office 365 中的安全性 & 合規性中心匯出內容搜尋的結果。 停用這些報告可加速下載時間，並將儲存的磁碟空間。
-ms.openlocfilehash: f6abcf8afe70bc6ce04f0f9343e28879f7fed885
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f9b999eaf3f1924012c9d4899b0e234f0893fc2c
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076330"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685615"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>當您匯出內容搜尋結果時停用報告
 
@@ -34,7 +34,7 @@ ms.locfileid: "37076330"
     
       將下列文字儲存到 Windows 登錄檔中，使用.reg; 檔名尾碼例如，DisableResultsCsv.reg。
     
-      ```
+      ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d False 
       ```
@@ -43,7 +43,7 @@ ms.locfileid: "37076330"
     
       將下列文字儲存到 Windows 登錄檔中，使用.reg; 檔名尾碼例如，DisableManifestXml.reg。
     
-      ```
+      ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d False 
       ```
@@ -68,7 +68,7 @@ ms.locfileid: "37076330"
     
         開啟 [記事本] 中的 DisableResultsCsv.reg 檔案變更值`False`以`True`，然後儲存檔案。 例如，您可以編輯檔案之後，它看起來像這樣：
     
-        ```
+        ```text
         Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d True
         ```
@@ -77,7 +77,7 @@ ms.locfileid: "37076330"
     
         開啟 [記事本] 中的 DisableManifestXml.reg 檔案變更值`False`以`True`，然後儲存檔案。 例如，您可以編輯檔案之後，它看起來像這樣：
     
-      ```
+      ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d True
       ```
@@ -91,7 +91,6 @@ ms.locfileid: "37076330"
     登錄編輯程式中會顯示訊息，說明設定已成功新增至登錄。
   
 ## <a name="frequently-asked-questions-about-disabling-export-reports"></a>停用匯出報告相關的常見問題集
-<a name="faqs"> </a>
 
  **什麼是 Results.csv 和 Manifest.xml 報告？**
   

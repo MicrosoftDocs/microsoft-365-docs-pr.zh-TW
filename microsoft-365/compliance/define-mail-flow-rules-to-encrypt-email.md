@@ -14,21 +14,16 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以了解如何建立郵件流程規則 （傳輸規則） 來加密及解密使用 Office 365 郵件加密的郵件。
-ms.openlocfilehash: 75b8e3c977a2708eb1edb8e2b94f555aa54045ca
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 17a04941d7132dbe50f8a79ec3b8879b300b414e
+ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076369"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "38685369"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定義郵件流規則以加密 Office 365 中的電子郵件
 
 身為 Office 365 全域管理員，您可以建立郵件流程規則 （也稱為傳輸規則） 來協助保護您傳送和接收的電子郵件訊息。 您可以設定規則以加密所有外寄的電子郵件，並移除加密，從加密的郵件來自組織內部或從組織傳送加密郵件的回覆。 若要建立這些規則，您可以使用 Exchange 系統管理中心 (EAC) 或 Exchange Online PowerShell。 除了整體加密的郵件，您也可以選擇啟用或停用使用者的個別郵件加密選項。
-
-||
-|:-----|
-|本文屬於較大的一連串的 Office 365 郵件加密的相關文章。 本文適用於系統管理員和 ITPros。 如果您只是正在尋找的資訊傳送或接收的加密的訊息，請參閱在[Office 365 郵件加密 (OME)](ome.md)中的文章的清單，並找出最適合您需求的文章。 |
-||
 
 如果您最近移轉從 AD RMS Azure 資訊保護，您需要檢閱現有的郵件流程規則，以確保它們繼續在新環境中運作。 此外，如果您想要利用新的 Office 365 郵件加密 (OME) 功能給您透過 Azure 資訊保護，您必須更新您現有的郵件流程規則。 否則，您的使用者將會繼續收到加密的郵件，而不是新的、 無縫 OME 經驗會使用先前的 HTML 附件格式。 如果您尚未設定 OME 尚未，請參閱[設定新的 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)的資訊。
 
@@ -81,7 +76,7 @@ ms.locfileid: "37076369"
 
 3. 在 Microsoft 365 系統管理中心中，選擇 [**系統管理中心** \> **Exchange**。
 
-4. In the EAC, go to **Mail flow** \> **Rules**.
+4. 在 EAC 中，移至 [郵件流程]**** \> [規則]****。
 
 5. 在 [郵件流程規則] 清單中選取您想要修改以使用全新的 OME 功能]，然後選擇 [**編輯**的規則![編輯圖示](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)。
 
@@ -133,7 +128,7 @@ ms.locfileid: "37076369"
 
 ### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>使用 Exchange Online PowerShell 來建立郵件流程規則來加密電子郵件，而不需要全新的 OME 功能
 
-1. 連線至 Exchange Online PowerShell。 如需詳細資訊，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+1. 連線至 Exchange Online PowerShell。 如需詳細資訊，請參閱＜[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)＞。
 
 2. 使用**New-transportrule**指令程式建立規則，並將_ApplyOME_參數設定為`$true`。
 
@@ -151,7 +146,7 @@ ms.locfileid: "37076369"
 
    - _SentToScope_參數會指定郵件的收件者的位置。 在這個範例中，收件者的信箱位於 hotmail 和不屬於 Office 365 組織，因此值`NotInOrganization`使用。
 
-   如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule) (機器翻譯)。
+   如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)。
 
 ### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>移除但全新的 OME 功能未加密的電子郵件回覆的加密
 
@@ -173,11 +168,11 @@ ms.locfileid: "37076369"
 
 7. 在 [**執行下列動作**，選取 [**修改郵件安全性** \> **OME 的先前版本中移除**。
 
-8. 選取**儲存**。
+8. 選取 [儲存]****。
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>使用 Exchange Online PowerShell 來建立規則，以移除全新的 OME 功能不加密的電子郵件回覆的加密
 
-1. 連線至 Exchange Online PowerShell。 如需詳細資訊，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+1. 連線至 Exchange Online PowerShell。 如需詳細資訊，請參閱＜[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)＞。
 
 2. 使用**New-transportrule**指令程式建立規則，並將_RemoveOME_參數設定為`$true`。
 
@@ -199,7 +194,7 @@ ms.locfileid: "37076369"
 
      - 收件者的電子郵件地址位於公認的網域已設定為授權網域] 或 [內部轉送網域中您的組織，_並_將郵件已傳送或接收透過未驗證連線。
 
-如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule) (機器翻譯)。
+如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)。
 
 ## <a name="related-topics"></a>相關主題
 
@@ -211,4 +206,4 @@ ms.locfileid: "37076369"
 
 [Exchange Online 中的郵件流程規則 (傳輸規則)](https://go.microsoft.com/fwlink/p/?LinkId=506707)
 
-[Exchange Online Protection 中郵件流程規則 （傳輸規則）](https://go.microsoft.com/fwlink/p/?LinkId=506708)
+[Exchange Online Protection 中的郵件流程規則 (傳輸規則)](https://go.microsoft.com/fwlink/p/?LinkId=506708)

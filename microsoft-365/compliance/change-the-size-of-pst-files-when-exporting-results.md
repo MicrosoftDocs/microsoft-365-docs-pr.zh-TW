@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: 您可以變更預設的 PST 檔案大小，當您匯出 eDiscovery 搜尋結果下載到您的電腦。
-ms.openlocfilehash: 82a3d80cae04cd8d08b126c800ec2b4a1995f262
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b3bba45ce336b143ed948db384673f0a1a5a456f
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076651"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685572"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>匯出 eDiscovery 搜尋結果時變更 PST 檔案的大小
 
@@ -33,7 +33,7 @@ ms.locfileid: "37076651"
     
 2. 將下列文字儲存到視窗登錄檔案中，使用.reg; 檔名尾碼例如，PstExportSize.reg。 
     
-    ```
+    ```text
     Windows Registry Editor Version 5.00
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool]
     "PstSizeLimitInBytes"="1073741824"

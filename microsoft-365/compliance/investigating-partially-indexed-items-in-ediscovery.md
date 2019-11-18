@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: 已局部編製索引的項目 （也呼叫未建立索引的項目） 是 Exchange 信箱項目和文件在 SharePoint 和 OneDrive 網站，如某個原因而未完全編製索引的內容搜尋。 在本文中了解為何無法編製索引的搜尋項目，並已局部編製索引的項目所傳回、 識別搜尋錯誤的已局部編製索引的項目，並使用 PowerShell 指令碼來判斷您的組織暴露於已局部編製索引的電子郵件項目。
-ms.openlocfilehash: 78ce6fc9816707e4d8bb18da71ca2ee89386b9b8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4e1430fe80c01b1cc9e67777c6955790ea1c6540
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076228"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685596"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>調查 Office 365 電子文件探索中已局部編製索引的項目
 
@@ -84,7 +84,7 @@ ms.locfileid: "37076228"
 
 錯誤標記所組成的資訊、 錯誤和檔案類型的兩個部分。 例如，在此錯誤/filetype 配對：
 
-```
+```text
  parseroutputsize_xls
 ```
 
@@ -120,7 +120,7 @@ ms.locfileid: "37076228"
   
 1. 使用.ps1 檔名尾碼，將下列文字儲存至 Windows PowerShell 指令碼檔案例如， `PartiallyIndexedItems.ps1`。
 
-```
+```powershell
   write-host "**************************************************"
   write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
@@ -163,15 +163,15 @@ ms.locfileid: "37076228"
   }
   
 ```
-   
+
 2. [連接到安全性 & 合規性中心 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084)。
     
 3. 在安全性 & 合規性中心 PowerShell，移至您在步驟 1，儲存指令碼的所在資料夾，然後執行指令碼。例如：
 
-    ```
+    ```powershell
     .\PartiallyIndexedItems.ps1
     ```
-   
+
 以下是範例的指令碼所傳回的輸出。
   
 ![輸出會產生報告，以在您的組織暴露於已局部編製索引的電子郵件項目上的指令碼範例](media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
@@ -182,6 +182,6 @@ ms.locfileid: "37076228"
     
 2. 清單錯誤標記與之對應的檔案類型，發生錯誤。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [位於 Office 365 中內容搜尋的已局部編製索引項目](partially-indexed-items-in-content-search.md)

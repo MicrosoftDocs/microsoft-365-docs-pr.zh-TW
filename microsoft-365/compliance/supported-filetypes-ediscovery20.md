@@ -14,16 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3dbebb20d179f78e97a8ae18fb810a8cb53c45ed
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5f574fa4fa53e83e2af4ea563c63106e8206c3d5
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077498"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "38685377"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>在進階電子文件中支援的檔案類型
 
 進階電子文件支援許多不同的層級，如下表所述的許多檔案類型。 這份清單未完成，並為我們繼續我們驗證測試，我們會將新增新的檔案類型。 表格會指出文字擷取 (OCR 影像)，是否支援的檔案類型中的原生檢視器和也支援進階電子文件中的附註檢視器中檢視。
+
 
 ## <a name="archive--container"></a>封存 / 容器
 
@@ -33,6 +34,18 @@ ms.locfileid: "37077498"
 | 應用程式/x-rar-壓縮 | 是 | 是 | 是 | .rar |
 | 應用程式/x-tar | 是 | 是 | 是 | .tar |
 | 應用程式/zip | 是 | 是 | 是 | .zip |
+||||||||
+
+## <a name="audio--video"></a>音訊 / 視訊
+
+| Mime 類型 | 檔案識別碼 | 中繼資料擷取 | 文字擷取 | 原生檢視器 | 加上註解檢視器 | 可能的擴充功能 |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| 應用程式/mp4 | 是 | 是 | 否 | 是 | 否 | .f4v;.m4a;.m4v;.mp4;.mp4v; mpeg;.mpeg4 |
+| 音訊/mpeg | 是 | 是 | 否 | 是 | 否 | mpeg |
+| 視訊/3gpp | 是 | 是 | 否 | 是 | 否 | .3gp |
+| 視訊/3gpp2 | 是 | 是 | 否 | 是 | 否 | .3g2;.3gp2 |
+| 視訊/quicktime | 是 | 是 | 否 | 是 | 否 | .moov;.mov;.qt |
+| 視訊/x-m4v | 是 | 是 | 否 | 是 | 否 | .m4v |
 ||||||||
 
 ## <a name="database"></a>Database
@@ -95,6 +108,13 @@ ms.locfileid: "37077498"
 | application/vnd.openxmlformats-officedocument.spreadsheetml.template | 是 | 是 | 是 | 是 | 是 | .xltx |
 ||||||||
 
+## <a name="microsoft-onenote"></a>Microsoft OneNote
+
+| Mime 類型 | 檔案識別碼 | 中繼資料擷取 | 文字擷取 | 原生檢視器 | 加上註解檢視器 | 可能的擴充功能 |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| 應用程式/onenote | 是 | 是 | 是 | 是 | 否 | .one |
+||||||||
+
 ## <a name="microsoft-powerpoint"></a>Microsoft Powerpoint
 
 | Mime 類型 | 檔案識別碼 | 中繼資料擷取 | 文字擷取 | 原生檢視器 | 加上註解檢視器 | 可能的擴充功能 |
@@ -103,6 +123,13 @@ ms.locfileid: "37077498"
 | application/vnd.openxmlformats-officedocument.presentationml.presentation | 是 | 是 | 是 | 是 | 是 | .pptx |
 | application/vnd.openxmlformats-officedocument.presentationml.slideshow | 是 | 是 | 是 | 是 | 是 | .ppsx |
 | application/vnd.openxmlformats-officedocument.presentationml.template | 是 | 是 | 是 | 是 | 是 | .potx |
+||||||||
+
+## <a name="microsoft-project"></a>Microsoft Project
+
+| Mime 類型 | 檔案識別碼 | 中繼資料擷取 | 文字擷取 | 原生檢視器 | 加上註解檢視器 | 可能的擴充功能 |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| 應用程式/vnd.ms-專案 | 是 | 是 | 是 | 否 | 是 | .mpp |
 ||||||||
 
 ## <a name="microsoft-publisher"></a>Microsoft Publisher

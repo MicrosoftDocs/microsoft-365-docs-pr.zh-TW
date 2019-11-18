@@ -1,5 +1,5 @@
 ---
-title: 特殊權限存取 Office 365 中管理
+title: Office 365 中的特殊權限存取管理
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 若要深入了解權限使用本主題存取 Office 365 中的管理
-ms.openlocfilehash: 7547568d6ea2a13de5391d5a827df2921833838c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9bc2aab9c9758daf35aa14a41d7997a0bff5764f
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077831"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685472"
 ---
-# <a name="privileged-access-management-in-office-365"></a>特殊權限存取 Office 365 中管理
+# <a name="privileged-access-management-in-office-365"></a>Office 365 中的特殊權限存取管理
 
 > [!IMPORTANT]
 > 本主題涵蓋功能目前僅適用於 Office 365 E5 和進階合規性 Sku 的部署和設定指導。
@@ -94,4 +94,4 @@ ms.locfileid: "37077831"
 
 ## <a name="learn-more"></a>深入了解
 
-[互動式指南： 監視和控制管理員 」 工作與特殊權限存取管理](https://content.cloudguides.com/en-us/guides/Privileged%20Access%20Management)
+[互動式指南： 監視和控制管理員 」 工作與特殊權限存取管理](https://content.cloudguides.com/guides/Privileged%20Access%20Management)

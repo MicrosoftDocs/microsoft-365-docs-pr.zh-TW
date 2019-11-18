@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: '要開始使用 DLP 原則，最簡單且最常見方式是使用 Office 365 所包含的其中一個範本。 '
-ms.openlocfilehash: db32748b25296ef82c56160e95535ac488eb65a5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2f7618f80f02865816a1f937b36c9f09b794b77d
+ms.sourcegitcommit: 8ad30e6c5cd77a72e5c1ce463c9f693132cc0b15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076557"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "38685379"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>從範本建立 DLP 原則
 
@@ -168,7 +168,7 @@ Office 365 包含 40 多個現成可用的範本，可協助您符合各種常�
 |**On** <br/> |原則在使用中且已強制執行。原則已成功部署到其所有內容來源。  <br/> |
 |**正在關閉…** <br/> |正在將原則從其包含的內容來源移除。此原則在某些來源上仍然在作用中且已強制執行。關閉原則可能需要 45 分鐘。  <br/> |
 |**關閉** <br/> |原則不在作用中且並未強制執行。原則的設定 (來源、關鍵字、期限等) 已儲存。  <br/> |
-|**刪除...]** <br/> |正在刪除原則。原則不在作用中且並未強制執行。  <br/> |
+|**刪除...]** <br/> |正在刪除原則。 原則不在作用中且並未強制執行。 它通常需要一小時要刪除原則 <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>關閉 DLP 原則
 

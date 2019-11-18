@@ -7,6 +7,8 @@ ms.date: 1/23/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -14,26 +16,26 @@ search.appverid:
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: 執行指令碼，以快速新增信箱和 OneDrive for Business 網站至新的保留與安全性 & 規範中心的 eDiscovery 案例相關聯。
-ms.openlocfilehash: c680e584a6f729b3d6d0d74b84ddd0e03da6dc9a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7a7ea582391e2fbfcef8b63d331d64f52db4460c
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077457"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685636"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>使用指令碼將使用者新增至 eDiscovery 案例中安全性 & 合規性中心中的保留
 
 安全性 & 合規性中心提供的 Windows PowerShell cmdlet，可讓您大量自動化耗時建立及管理 eDiscovery 案例相關的工作。 目前，放置大量上的位置保存 custodian 內容安全性 & 合規性中心使用 eDiscovery 案例工具需要花費時間和準備。 例如，建立保留，您必須先收集 URL 的每個商務用 OneDrive 網站，您想要就地保留。 然後您想要就地保留每位使用者，您必須將他們的信箱和其 OneDrive for Business 網站新增至保留。 在未來版本的安全性 & 合規性中心，這會取得執行的工作變得更容易。 在那之前，您可以使用指令碼本文中，自動執行此程序。
   
-指令碼會提示您輸入您的組織我的網站網域的名稱 (例如， **contoso**在 URL 中https://contoso-my.sharepoint.com)，現有的 eDiscovery 案例的名稱、 新的保留名稱，與相關聯的情況下，您想要的電子郵件地址的使用者清單若要置於保留，以及使用如果您想要建立查詢式保留在搜尋查詢。 指令碼再取得的 OneDrive for Business 網站的清單中的每個使用者的 [URL、 會建立新的保留，並將信箱和 OneDrive for Business 網站的清單中的每個使用者至保留。 指令碼也會產生包含新的保留狀態的相關資訊的記錄檔。 
+指令碼會提示您輸入您的組織我的網站網域的名稱 (例如， **contoso**在 URL 中https://contoso-my.sharepoint.com)、 現有的 eDiscovery 案例，與案例相關聯的新保留名稱的名稱您想要放入使用者的電子郵件地址清單暫留，以及搜尋查詢，以使用如果您想要建立查詢式保留。 指令碼再取得的 OneDrive for Business 網站的清單中的每個使用者的 [URL、 會建立新的保留，並將信箱和 OneDrive for Business 網站的清單中的每個使用者至保留。 指令碼也會產生包含新的保留狀態的相關資訊的記錄檔。 
   
 若要完成這項工作的步驟如下：
   
 [步驟 1：安裝 SharePoint Online 管理命令介面](#step-1-install-the-sharepoint-online-management-shell)
   
-[步驟 2： 產生使用者的清單](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step2)
+[步驟 2： 產生使用者的清單](#step-2-generate-a-list-of-users)
   
-[步驟 3： 執行指令碼，以建立保留並新增使用者](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step3)
+[步驟 3： 執行指令碼，以建立保留並新增使用者](#step-3-run-the-script-to-create-a-hold-and-add-users)
   
 ## <a name="before-you-begin"></a>開始之前
 
@@ -56,22 +58,18 @@ ms.locfileid: "37077457"
 移至[設定 SharePoint Online 管理命令介面的 Windows PowerShell 環境](https://go.microsoft.com/fwlink/p/?LinkID=286318)並執行步驟 1 和步驟 2 到您本機電腦上安裝 SharePoint Online 管理命令介面。 
 
 ## <a name="step-2-generate-a-list-of-users"></a>步驟 2： 產生使用者的清單
-<a name="step2"> </a>
 
 步驟 3 中的指令碼會建立有相關聯的 eDiscovery 案例，與新增信箱和 OneDrive for Business 網站至保留的使用者清單中的保留。 您只可以在文字檔案中，輸入電子郵件地址，或您可以取得電子郵件地址的清單，並將其儲存至檔案 （位於相同的資料夾，您將在步驟 3 中儲存指令碼，以） 的 Windows PowerShell 中執行命令。
   
 以下是 PowerShell 命令 （，您使用遠端 PowerShell 連線至 Exchange Online 組織執行） 來取得您組織中的所有使用者之電子郵件地址清單，並將它儲存到文字檔名為 HoldUsers.txt。
   
-```
+```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
 您執行此命令，開啟文字檔案，然後移除包含屬性名稱，標頭之後`PrimarySmtpAddress`。 然後移除您想要新增至保留您在步驟 3 中建立的使用者除外的所有電子郵件地址。 請確定有任何空白資料列之前或之後的電子郵件地址清單。
   
-
-  
 ## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>步驟 3： 執行指令碼，以建立保留並新增使用者
-<a name="step3"> </a>
 
 當您在此步驟中執行指令碼時，它會提示您輸入下列資訊。 請務必執行指令碼之前已準備好此資訊。
   
@@ -87,11 +85,11 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
 - **是否要開啟保留**-您可以開啟保留之後建立，或您可以建立保留，而不加以啟用指令碼指令碼。 如果您不需要開啟保留的指令碼，您可以將它稍後安全 & 合規性中心內，或藉由執行下列 PowerShell 命令： 
     
-  ```
+  ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
   ```
 
-  ```
+  ```powershell
   Set-CaseHoldRule -Identity <name of the hold> -Disabled $false
   ```
 
@@ -101,7 +99,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
   
 1. 使用.ps1 檔名尾碼，將下列文字儲存至 Windows PowerShell 指令碼檔案例如， `AddUsersToHold.ps1`。
     
-  ```
+  ```powershell
   #script begin
   " " 
   write-host "***********************************************"
@@ -119,7 +117,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
           return;
       }
   # Load the SharePoint assemblies from the SharePoint Online Management Shell
-  # To install, go to http://go.microsoft.com/fwlink/p/?LinkId=255251
+  # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
   if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
   {
       $SharePointClient = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client")
@@ -127,7 +125,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
       $SPUserProfile = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.UserProfiles")
       if (!$SharePointClient)
       {
-          Write-Error "The SharePoint Online Management Shell isn't installed. Please install it from: http://go.microsoft.com/fwlink/p/?LinkId=255251 and then re-run this script."
+          Write-Error "The SharePoint Online Management Shell isn't installed. Please install it from: https://go.microsoft.com/fwlink/p/?LinkId=255251 and then re-run this script."
           return;
       }
   }
@@ -278,7 +276,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
 3. 執行指令碼。例如：
     
-      ```
+      ```powershell
     .\AddUsersToHold.ps1
       ```
 

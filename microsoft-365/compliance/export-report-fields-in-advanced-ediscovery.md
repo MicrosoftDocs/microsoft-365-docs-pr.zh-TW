@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: 說明在進階電子文件的匯出報告中包含的所有欄位。
-ms.openlocfilehash: 3e73cc1c106dfa98bd35f84c352fc89d0e45b74d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 54287b4319a3fd7cf5be8aaf74d3a375253cba1f
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077033"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38685670"
 ---
 # <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中匯出報告欄位
 
@@ -72,7 +72,7 @@ ms.locfileid: "37077033"
 |Marked_as_seed  <br/> |相關性  <br/> |如果它已設為相關性每個問題/類別中的植入檔案是，標記檔案。  <br/> |是  <br/> |是  <br/> |
 |Marked_as_pre 標記  <br/> |相關性  <br/> |如果它是設定為預先標記相關性每個問題/類別中，標記的檔案。  <br/> |是  <br/> |是  <br/> |
 |Relevance_status_description  <br/> |相關性  <br/> |相關性狀態的描述。  <br/> |是  <br/> |是  <br/> |
-|註解  <br/> |一般  <br/> |使用者所輸入的註解。  <br/> |是  <br/> |是  <br/> |
+|留言  <br/> |一般  <br/> |使用者所輸入的註解。  <br/> |是  <br/> |是  <br/> |
 |Export_input_path  <br/> |處理  <br/> |匯出輸入的路徑。  <br/> |是  <br/> |是  <br/> |
 |Pivot_ID  <br/> |Near 重複項目  <br/> |樞紐分析表檔案的識別碼。  <br/> |是  <br/> |是  <br/> |
 |Family_size  <br/> |處理  <br/> |系列中的檔案數目。  <br/> |是  <br/> |是  <br/> |
@@ -130,9 +130,7 @@ ms.locfileid: "37077033"
 |Set_order_inclusives_first  <br/> |電子郵件  <br/> |電子郵件和附件： 計數器先後順序 (Inclusives 第一個)。 文件： 會進行第一和 rest 由相似性分數，遞減樞紐分析。  <br/> |否  <br/> |是  <br/> |
 |Tagged_By  <br/> |相關性  <br/> |在 [相關性標記檔案的特定問題的使用者。  <br/> |否  <br/> |是  <br/> |
 |Word_count  <br/> |分析  <br/> |文件中的字詞數目。  <br/> |否  <br/> |是  <br/> |
-|||||||||||
-||||||
-||||||
+|
    
 ## <a name="related-topics"></a>相關主題
 

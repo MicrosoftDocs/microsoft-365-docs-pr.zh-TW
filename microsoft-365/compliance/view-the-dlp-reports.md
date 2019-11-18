@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 中的 DLP 報告，您可以快速檢視 DLP 原則相符項目、 覆寫或誤判; 的數請參閱是否它們在一段時間; 趨勢向上或向下以不同方式; 篩選報表然後選取圖形上線條上的一點檢視其他詳細資料。
-ms.openlocfilehash: f3161854a19f9f9a04390eec508ae43e92119f96
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 94569ef24814204263820fb5fdb7a8cb72da20e4
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077652"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685447"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>檢視資料外洩防護報告
 
@@ -85,18 +85,18 @@ ms.locfileid: "37077652"
 
 若要使用之 cmdlet 的大部分 security&amp;合規性中心，您需要：
   
-1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. 使用下列任何一這些[Office 365 安全性&amp;合規性中心 cmdlet](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. 使用下列任何一這些[Office 365 安全性&amp;合規性中心 cmdlet](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
 不過，DLP 報告需要提取資料從 Office 365，包括 Exchange Online。 基於這個理由，DLP 報告指令程式可供 Exchange Online Powershell 中，而不是以安全性&amp;合規性中心 Powershell。 因此，若要使用 cmdlet 的 DLP 報告，您必須：
   
-1. [使用遠端 PowerShell 連線到 Exchange Online](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [使用遠端 PowerShell 連線到 Exchange Online](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
 2. 使用這些 cmdlet 的任何 DLP 報告：
     
-      - [Get-dlpdetectionsreport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+      - [Get-dlpdetectionsreport](https://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
     
-      - [Get-dlpdetailreport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
+      - [Get-dlpdetailreport](https://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
 

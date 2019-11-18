@@ -2,8 +2,8 @@
 title: 針對 DLP 原則傳送電子郵件通知並顯示原則提示
 ms.author: chrfox
 author: chrfox
-manager: dansimp
-ms.date: 06/14/2019
+manager: laurawi
+ms.date: ''
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -12,16 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: '原則提示是通知或其他人正在使用的內容與 DLP 原則衝突時，會出現的警告。 您可以使用電子郵件通知和原則提示來增加知悉的變更，並協助教育人員需貴組織的原則。 您也可以的讓人員選擇覆寫原則，以便他們不會封鎖如果他們有有效的商務需要或原則會偵測誤判。 '
-ms.openlocfilehash: 198b2de6d26b260840f0e578e4b50f0693708a94
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2de9ef48d98e5d702e3f96d90f05b83b0ec4e55a
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078273"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38685546"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>針對 DLP 原則傳送電子郵件通知並顯示原則提示
 
@@ -143,9 +144,9 @@ ms.locfileid: "37078273"
   
 1. 第一次規則： 如果在文件中偵測到此敏感資訊的少於五個執行個體，且與組織內部的人員共用文件，**傳送通知**動作會顯示原則提示。 原則提示，沒有覆寫選項是必要的因為此規則只通知的人員，並不會封鎖存取。 
     
-2. 第二個規則： 如果大於文件中偵測到此敏感資訊的五個執行個體，並與組織內部的人員共用文件，**封鎖內容的存取權**巨集指令會限制的檔案，以及**的權限傳送通知**巨集指令可讓使用者藉由提供業務上理由會覆寫此規則中的動作。 貴組織的業務有時需要內部人員共用 PII 的資料，且您不想您的 DLP 原則，以封鎖這項工作。 
+2. 第二個規則： 如果大於文件中偵測到此敏感資訊的五個執行個體並與組織內部的人員共用文件、**封鎖內容的存取權**的巨集指令會限制檔案的權限及**傳送通知**動作可讓使用者藉由提供業務上理由會覆寫此規則中的動作。 貴組織的業務有時需要內部人員共用 PII 的資料，且您不想您的 DLP 原則，以封鎖這項工作。 
     
-3. 第三個規則： 如果大於文件中偵測到此敏感資訊的五個執行個體，並與組織外部人員共用文件，**封鎖內容的存取權**巨集指令會限制的檔案，以及**的權限傳送通知**巨集指令不允許人員覆寫此規則中的動作，因為外部共用資訊。 在任何情況下應該在組織中的人員允許共用組織外部的 PII 資料。 
+3. 第三個規則： 如果大於文件中偵測到此敏感資訊的五個執行個體並與組織外部人員共用文件、**封鎖內容的存取權**的巨集指令會限制檔案的權限及**傳送通知**動作不允許人員覆寫此規則中的動作，因為外部共用資訊。 在任何情況下應該在組織中的人員允許共用組織外部的 PII 資料。 
     
 以下是一些細節，瞭解如何使用原則提示來覆寫規則：
   
@@ -214,23 +215,13 @@ DLP 原則同步處理到網站且 contented 根據評估它們定期並以非�
 - 內容包含
 - 共用內容
 
-我們目前正在顯示原則提示的其他條件的支援。 這些包括：
-
-- 無法掃描任何電子郵件附件的內容
-- 任何電子郵件附件的內容未完成掃描
-- 附件副檔名為
-- 附件均受密碼保護
-- 文件屬性
-- 收件者網域是
-- 寄件者 IP 位址
-
 請注意，這些條件的所有運作在 Outlook 中，他們會在此比對內容並強制執行內容的保護措施。 但是，對使用者顯示原則提示尚未支援。
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>在 Office 365 安全性與在 Exchange 系統管理中心中的原則提示&amp;合規性中心
 
 原則提示可以搭配 [DLP 原則及郵件流程規則建立在 Exchange 系統管理中心，或建立 Office 365 安全性中的 DLP 原則&amp;合規性中心，但不是能兩者同時。 這是因為這些原則會儲存在不同的位置，但只能從單一位置繪製原則提示。
   
-如果您已設定原則提示在 Exchange 系統管理中心，您設定 Office 365 安全性中任何原則提示&amp;合規性中心不會出現在網頁型 Outlook 和 Outlook 2013 和更新版本，直到您關閉 Exchange 中的提示中的使用者系統管理中心。 這可確保您目前 Exchange 郵件流程規則 （也稱為傳輸規則） 將會繼續處理之前，您選擇要切換至 Office 365 安全性&amp;合規性中心。
+如果您已設定原則提示在 Exchange 系統管理中心，您設定 Office 365 安全性中任何原則提示&amp;合規性中心不會出現在網頁型 Outlook 和 Outlook 2013 和更新版本，直到您關閉 Exchange 系統管理中心中的提示中的使用者。 這可確保您目前 Exchange 郵件流程規則 （也稱為傳輸規則） 將會繼續處理之前，您選擇要切換至 Office 365 安全性&amp;合規性中心。
   
 請注意，原則提示可以從單一位置，只繪製時的電子郵件通知一律傳送，即使您 Office 365 安全性中使用 DLP 原則&amp;規範中心和 Exchange 系統管理中心。
   
@@ -295,5 +286,3 @@ Office 桌面程式自動同步處理直接從 Office 365 的 DLP 原則，，�
 - [DLP 原則範本包含哪些內容](what-the-dlp-policy-templates-include.md)
     
 - [敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
-    
-

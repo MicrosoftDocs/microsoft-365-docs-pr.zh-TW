@@ -12,16 +12,16 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: 了解如何設定 Windows 登錄，以增加資料輸送量，從安全性 & 合規性中心] 及 [進階電子文件探索中 Office 365 下載搜尋結果，並搜尋資料時。
-ms.openlocfilehash: 44f595e6beffcc3d6789ad7b6f70ad77a48381cb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f74d164250f9d5b9b8315fe2651d3374457451ed
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076992"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685595"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>匯出 eDiscovery 搜尋結果從 Office 365 時，增加的下載速度
 
-當您使用 Office 365 電子文件探索匯出工具來下載安全性 & 合規性中心的內容搜尋的結果或下載 Office 365 進階電子文件探索中的資料時，此工具會啟動若要下載的並行匯出作業數目到本機電腦的資料。 根據預設，同時進行的作業數目設為 8 的次數中您要用來下載資料之電腦的核心。 例如，如果您有雙核心電腦 （亦即一晶片上的兩個管理中心處理單位），同時進行匯出作業的預設數為 16。 若要增加資料傳輸輸送量並提升並下載程序，您可以藉由使用若要下載搜尋結果的電腦上設定 Windows 登錄設定增加同時進行的作業數目。 為了提升並下載程序，我們建議您以設定為 24 同時進行的作業開始。
+當您使用 Office 365 電子文件探索匯出工具來下載安全性 & 合規性中心的內容搜尋的結果，或從 Office 365 進階電子文件探索下載資料時，此工具會啟動下載資料至您的本機電腦的並行匯出作業數目。 根據預設，同時進行的作業數目設為 8 的次數中您要用來下載資料之電腦的核心。 例如，如果您有雙核心電腦 （亦即一晶片上的兩個管理中心處理單位），同時進行匯出作業的預設數為 16。 若要增加資料傳輸輸送量並提升並下載程序，您可以藉由使用若要下載搜尋結果的電腦上設定 Windows 登錄設定增加同時進行的作業數目。 為了提升並下載程序，我們建議您以設定為 24 同時進行的作業開始。
   
 如果您透過低頻寬網路下載搜尋結果，請增加此設定可能會造成負面影響。 或者，您可以增加到超過 24 同時進行的作業 （同時進行的作業的最大數目為 48） 的高頻寬網路中的設定。 設定此登錄設定之後，您可能必須變更，以找出最佳的同時進行的作業，為您的環境。
   
@@ -33,7 +33,7 @@ ms.locfileid: "37076992"
     
 2. 將下列文字儲存到視窗登錄檔案中，使用.reg; 檔名尾碼例如，ConcurrentOperations.reg。 
     
-    ```
+    ```text
     Windows Registry Editor Version 5.00
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool]
     "DownloadConcurrency"="24"

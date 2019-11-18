@@ -7,17 +7,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 使用安全性 & 合規性中心的內容搜尋來執行目標的集合。 目標的集合表示您確信回應大小寫的項目或特殊權限項目都位於信箱或網站的特定資料夾。 使用本文中的指令碼，以取得資料夾識別碼或您想要搜尋的特定信箱或網站資料夾的路徑。
-ms.openlocfilehash: 525e2daf5b9dc8268e2b5db2eaab17099bf5bc0d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 02cd78f9ebb02f7c41e0703ba4ddb78bfd184000
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077449"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685635"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>在 Office 365 中使用內容搜尋，對目標集合
 
@@ -28,17 +30,17 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
 
 ## <a name="before-you-begin"></a>開始之前
 
-- 您必須是安全性中的 eDiscovery 管理員角色群組的成員&amp;合規性中心，以在步驟 1 中執行指令碼。 如需詳細資訊，請參閱[指派 eDiscovery 權限](assign-ediscovery-permissions.md)。
+- 您必須是安全性中的 eDiscovery 管理員角色群組的成員&amp;合規性中心，以在步驟 1 中執行指令碼。 如需詳細資訊，請參閱[指派電子文件探索權限](assign-ediscovery-permissions.md)。
     
     此外，您必須獲指派 Exchange Online 組織中的 「 郵件收件者角色。 這樣才能執行**Get-mailboxfolderstatistics**指令程式，在 [步驟 1 中的指令碼包含這個功能。 根據預設，「 郵件收件者 」 角色被指派給組織管理和收件者管理角色群組在 Exchange Online。 如需指派 Exchange Online 中的權限的詳細資訊，請參閱[管理角色群組成員](https://go.microsoft.com/fwlink/p/?linkid=692102)。 您可能也建立自訂角色群組、 指派 「 郵件收件者 」 角色給它，然後再新增需要執行指令碼在步驟 1 中的成員。 如需詳細資訊，請參閱[管理角色群組](https://go.microsoft.com/fwlink/p/?linkid=730688)。
     
 - 每次您在步驟 1 中，執行指令碼會建立新的遠端 PowerShell 工作階段。 因此您可能會用完所有遠端 PowerShell 工作階段提供給您。 若要避免這種情況，您可以執行下列命令，以中斷連線的作用中的遠端 PowerShell 工作階段。
     
-  ```
+  ```powershell
   Get-PSSession | Remove-PSSession
   ```
 
-    如需詳細資訊，請參閱[連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+    如需詳細資訊，請參閱＜[連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)＞。
     
 - 指令碼包含最少的錯誤處理。 指令碼的主要用途是快速顯示信箱資料夾識別碼的清單或網站可以在內容搜尋的搜尋查詢語法中用來執行目標的集合的路徑。
     
@@ -62,7 +64,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
   
 1. 使用.ps1 檔名尾碼，將下列文字儲存至 Windows PowerShell 指令碼檔案例如， `GetFolderSearchParameters.ps1`。
     
-  ```
+  ```powershell
   #########################################################################################################
   # This PowerShell script will prompt you for:                             #
   #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
@@ -177,7 +179,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
     
 3. 執行指令碼。例如：
     
-      ```
+      ```powershell
       .\GetFolderSearchParameters.ps1
       ```
 
@@ -203,7 +205,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
   
 ### <a name="script-output-for-site-folders"></a>網站資料夾的指令碼輸出
 
-如果您收到**documentlink**屬性的路徑從 SharePoint 或 OneDrive for Business 網站，指令碼安全性 & 合規性中心使用遠端 PowerShell 連線時，會建立新的內容搜尋會搜尋資料夾的網站和然後會顯示位於指定的站台的資料夾清單。 指令碼會顯示每個資料夾的名稱，並將**documentlink**的前置詞新增至資料夾的 URL。 由於**documentlink**屬性是可搜尋的屬性，您要使用`documentlink:<path>`搜尋查詢中搜尋該資料夾的步驟 2 中的屬性： 值組。 指令碼會顯示最大值為 200 個站台資料夾。 如果有 200 個以上的網站資料夾，會顯示為最新的。
+如果您收到**documentlink**屬性的路徑從 SharePoint 或 OneDrive for Business 網站，指令碼安全性 & 合規性中心使用遠端 PowerShell 連線時，會建立新的內容搜尋的搜尋資料夾的網站，然後顯示位於指定的站台的資料夾清單。 指令碼會顯示每個資料夾的名稱，並將**documentlink**的前置詞新增至資料夾的 URL。 由於**documentlink**屬性是可搜尋的屬性，您要使用`documentlink:<path>`搜尋查詢中搜尋該資料夾的步驟 2 中的屬性： 值組。 指令碼會顯示最大值為 200 個站台資料夾。 如果有 200 個以上的網站資料夾，會顯示為最新的。
   
 以下是範例的指令碼的站台資料夾所傳回的輸出。
   
@@ -229,7 +231,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
     
     - 按一下 [**選擇要搜尋的特定網站**新增至搜尋，然後新增您指定當您在步驟 1 中執行指令碼的相同網站 URL。 
     
-6. 按 [下一步]****。
+6. 按一下 **[下一步]**。
     
 7. 在**什麼您希望我們要尋找的**頁面上的 [關鍵字] 方塊中，貼上`folderid:<folderid>`或`documentlink:<path>`指令碼在步驟 1 中所傳回的值。 
     
@@ -245,28 +247,28 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
   
 - 本範例會搜尋三個不同的信箱資料夾。 您可以使用類似的查詢語法來搜尋使用者的 [可復原的項目] 資料夾中的隱藏的資料夾。
     
-  ```
+  ```powershell
   folderid:<folderid> OR folderid:<folderid> OR folderid:<folderid>
   ```
 
 - 本範例會搜尋信箱資料夾包含精準字詞的項目。
     
-  ```
+  ```powershell
   folderid:<folderid> AND "Contoso financial results"
   ```
 
 - 本範例會搜尋包含標題中的字母 「 NDA 」 的文件的網站資料夾 （和任何子資料夾）。
     
-  ```
+  ```powershell
   documentlink:<path> AND filename:nda
   ```
 
 - 本範例會搜尋網站資料夾 （和任何子資料夾） 的文件那里已變更的日期範圍內。
     
-  ```
+  ```powershell
   documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
-  
+
 ## <a name="more-information"></a>詳細資訊
 
 在本文中使用指令碼來執行目標的集合時，請記住下列事項。

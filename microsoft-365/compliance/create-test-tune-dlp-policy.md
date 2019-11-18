@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: '要開始使用 DLP 原則，最簡單且最常見方式是使用 Office 365 所包含的其中一個範本。 '
-ms.openlocfilehash: b13dab63514dc8658479dbd68d5a014dc7347bb8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9748e3dc51a322ad3a77bab800d64925da95eeeb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076457"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685444"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>建立、測試及調整 DLP 原則
 
@@ -107,7 +107,7 @@ Office 365 提供的[DLP 原則範本](what-the-dlp-policy-templates-include.md)
 
 ![澳洲稅務檔案編號未通過總和檢查碼](media/DLP-create-test-tune-email-test1.png)
 
-相較之下，含有文字"稅務檔案編號 」 的電子郵件和傳遞總和檢查碼有效 TFN 會觸發該原則。 對於資料錄，我使用 TFN 來自中的網站，就會產生有效，但不是正版，TFNs。 有類似產生[正確的但假信用卡號碼](http://www.fakecreditcardgenerator.net/)的網站。 這類網站是很有用，因為下列其中一個最常見的錯誤測試 DLP 原則時使用的假的數字不是有效，並不會通過總和檢查碼 （也就不會觸發原則）。
+相較之下，含有文字"稅務檔案編號 」 的電子郵件和傳遞總和檢查碼有效 TFN 會觸發該原則。 對於資料錄，我使用 TFN 來自中的網站，就會產生有效，但不是正版，TFNs。 有類似產生[正確的但假信用卡號碼](https://www.fakecreditcardgenerator.net/)的網站。 這類網站是很有用，因為下列其中一個最常見的錯誤測試 DLP 原則時使用的假的數字不是有效，並不會通過總和檢查碼 （也就不會觸發原則）。
 
 ![澳洲稅務檔案編號傳遞總和檢查碼](media/DLP-create-test-tune-email-test2.png)
 
@@ -203,7 +203,7 @@ DLP 原則範本不是完美直線現成可用的。 很有可能，您會發現
 
 ![若要啟用原則的選項](media/DLP-create-test-tune-turn-on-policy.png)
  
-如果您正在等待若要查看原則會採取時生效，[連接到安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)並執行[Get-dlpcompliancepolicy 指令程式](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps)，請參閱 DistributionStatus。
+如果您正在等待若要查看原則會採取時生效，[連接到安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)並執行[Get-dlpcompliancepolicy 指令程式](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps)，請參閱 DistributionStatus。
 
 ![在 PowerShell 中執行指令程式](media/DLP-create-test-tune-PowerShell.png)
 

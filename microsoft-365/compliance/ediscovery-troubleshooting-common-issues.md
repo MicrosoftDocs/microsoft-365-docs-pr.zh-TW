@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: 調查、 進行疑難排解及解決在 Office 365 電子文件探索中常見的問題。
 siblings_only: true
-ms.openlocfilehash: 0d411976ecf6adba9df1f75eb8a45409647b3e1a
-ms.sourcegitcommit: c7f7ff463141f7d7f0970b64e5a04341db7e4fa8
+ms.openlocfilehash: 37e92e480759601f9dfe61430bdd647b20df051d
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37378635"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38685611"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>調查、 進行疑難排解及解決常見問題 eDiscovery
 
@@ -37,19 +37,19 @@ ms.locfileid: "37378635"
 
 1. 連線至[Office 365 安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
-2. 擷取所有的使用者名稱、 類型執行個體：
+2. 執行下列命令，以擷取使用者名稱的所有執行個體：
 
     ```powershell
     Get-Recipient <username>
     ```
 
-'Useralias@contoso.com' 的輸出可能類似下列：
+   'Useralias@contoso.com' 的輸出可能類似下列：
 
-> 
-> |名稱  |收件者類型  |
-> |---------|---------|
-> |別名，使用者     |MailUser         |
-> |別名，使用者     |使用者         |
+   > 
+   > |名稱  |收件者類型  |
+   > |---------|---------|
+   > |別名，使用者     |MailUser         |
+   > |別名，使用者     |使用者         |
 
 3. 如果傳回多個使用者，找出並修正衝突的物件。
 
@@ -64,7 +64,7 @@ ms.locfileid: "37378635"
 
 如果您收到此錯誤，我們建議您驗證失敗，在搜尋] 的位置然後重新執行搜尋] 只有在失敗的位置上。
 
-1. 連線至[Office 365 安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) ，然後輸入下列命令：
+1. 連線至[Office 365 安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)並執行下列命令：
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL 
@@ -74,11 +74,11 @@ ms.locfileid: "37378635"
 
 3. 重試失敗的位置，以只 eDiscovery 搜尋。
 
-4. 如果您繼續收到這些錯誤，請參閱[重試失敗位置](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/retry-failed-content-search)的更多疑難排解的步驟。
+4. 如果您繼續收到這些錯誤，請參閱[重試失敗位置](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search)的更多疑難排解的步驟。
 
 ## <a name="errorissue-file-not-found"></a>錯誤/問題： 找不到檔案
 
-當執行 eDiscovery 搜尋，其中包含 SharePoint Online 和 One Drive For Business 位置，您可能會收到錯誤`File Not Found`雖然該檔案位於網站上。 此錯誤會處於 errors.csv 與匯出警告或略過 items.csv。 如果在網站上找不到檔案或索引已過期，這可能會發生。 以下是錯誤的實際，新增的強調文字。
+當執行 eDiscovery 搜尋，其中包含 SharePoint Online 和 One Drive For Business 位置，您可能會收到錯誤`File Not Found`雖然該檔案位於網站上。 此錯誤會處於 errors.csv 與匯出警告或略過 items.csv。 如果在網站上找不到檔案或過期的索引時，這可能會發生。 以下是錯誤的實際 （使用新增的強調） 的文字。
   
 > 28.06.2019 10:02:19_FailedToExportItem_Failed 下載內容。 其他診斷資訊： Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure： 無法從內容類型的文件的 6ea52149-91cd-4965-b5bb-82ca6a3ec9be 下載。 相互關聯識別碼： 3bd84722-937b-4 c 23-b61b-08d6fba9ec32。 ServerErrorCode:-2147024894---: > Microsoft.SharePoint.Client.ServerException：***找不到檔案***。 在 Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream (資料流 responseStream) 在 Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()---: 內部例外堆疊追蹤的結尾-為-
 
@@ -86,7 +86,7 @@ ms.locfileid: "37378635"
 
 1. 請在搜尋]，以確保的位置識別位置該檔案位於正確，以及新增搜尋位置。
 
-2. 用於程序在[手動要求編目和重新編製索引的網站、 文件庫或清單](https://docs.microsoft.com/en-us/sharepoint/crawl-site-content)重新編製索引的網站。
+2. 用於程序在[手動要求編目和重新編製索引的網站、 文件庫或清單](https://docs.microsoft.com/sharepoint/crawl-site-content)重新編製索引的網站。
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>錯誤/問題： 搜尋失敗，因為找不到收件者
 
@@ -96,7 +96,7 @@ EDiscovery 搜尋失敗，錯誤`recipient not found`。 如果使用者物件�
 
 1. 連線至[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
-2. 請檢查的 user 物件，是否同步處理到 Exchange Online Protection 類型：
+2. 執行下列命令，以檢查是否使用者已同步處理至 Exchange Online Protection:
 
     ```powershell
     Get-Recipient <userId> | FL
@@ -110,9 +110,9 @@ EDiscovery 搜尋失敗，錯誤`recipient not found`。 如果使用者物件�
 
 ### <a name="resolution"></a>解決方案
 
-1.  請嘗試使用識別[增加下載速度](https://docs.microsoft.com/en-us/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results)」 文件中的步驟。
+1.  請嘗試使用識別[增加下載速度](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results)」 文件中的步驟。
 
-2.  如果仍有問題，連線至[Office 365 安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) ，然後輸入下列命令：
+2.  如果您仍有問題，連線至[Office 365 安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) ，然後執行下列命令：
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL
@@ -120,7 +120,7 @@ EDiscovery 搜尋失敗，錯誤`recipient not found`。 如果使用者物件�
 
 4. 尋找下載 SearchResults 及 SearchStatistics 參數中的資料量。
 
-5. 輸入下列命令：
+5. 執行下列命令：
 
    ```powershell
    Get-ComplianceSearchAction | FL
@@ -140,15 +140,15 @@ EDiscovery 搜尋失敗，錯誤`recipient not found`。 如果使用者物件�
 
 1. 搜尋分成較小的搜尋，並再次執行搜尋。  請嘗試使用較小的日期範圍，或限制搜尋的位置數目。
 
-2. 連線至[Office 365 安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) ，然後輸入下列命令：
+2. 連線至[Office 365 安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)並執行下列命令：
 
-    ```powershell
+    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
     Get-ComplianceSearch <searchname> | FL
     ```
 
 3. 檢查結果和錯誤的輸出。
 
-4. 檢查 trace.log 檔案。 它會傳送匯出至的相同資料夾中。
+4. 檢查 trace.log 檔案。 它位於您匯出搜尋結果的相同資料夾中。
 
 5. 連絡 Microsoft 支援人員。
 
@@ -156,21 +156,42 @@ EDiscovery 搜尋失敗，錯誤`recipient not found`。 如果使用者物件�
 
 eDiscovery 案例保留原則同步處理通訊時發生錯誤。 錯誤會顯示如下：
 
-> 「 資源： 花費的時間超過部署原則預期時間。 它可能需要其他兩個小時更新的最終的部署狀態，因此請回到 [幾個小時。 」
+> 「 資源： 花費的時間超過部署原則預期時間。 它可能需要其他 2 小時更新的最終的部署狀態，因此請回到 [幾個小時。 」
 
 ### <a name="resolution"></a>解決方案
 
-1.  連線至[Office 365 安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) ，然後輸入下列命令：
+1.  連線至[Office 365 安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)並執行下列命令，以電子文件探索案例保留：
 
     ```powershell
-    Get-RetentionCompliancePolicy  <policyname> - DistributionDetail | FL
+    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
+    ```
+
+    保留原則，執行下列命令：
+
+    ```powershell
+    Get-RetentionCompliancePolicy <policyname> - DistributionDetail | FL
     ```
 
 2. 檢查錯誤如下所示的 DistributionDetail 參數的值：
+ 
+   > 錯誤： 資源： 花費的時間超過部署原則預期時間。 它可能需要其他 2 小時更新的最終的部署狀態，因此請回到 [幾個小時。 」 
+   
+3. 請嘗試執行 RetryDistribution 參數有問題的原則：
+   
+    
+    針對 eDiscovery 案件保留：
 
-   > 如果存在錯誤，請建立升級為 PG 強制手動重新同步處理的原則。
+    ```powershell
+    Set-CaseHoldPolicy <policyname> -RetryDistribution
+    ```
 
-3. 連絡 Microsoft 支援人員。
+    保留原則：
+
+    ```powershell
+    Set-RetentionCompliancePolicy <policyname> -RetryDistribution
+    ``` 
+
+4. 連絡 Microsoft 支援人員。
 
 ## <a name="see-also"></a>另請參閱
 

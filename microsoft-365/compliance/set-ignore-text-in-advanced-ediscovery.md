@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: '了解如何定義規則以在 Office 365 進階電子文件探索中使用的分析和處理序模組時，略過特定的文字。  '
-ms.openlocfilehash: 70d9879f1cb6b3def06ff978fc2f7fa8f20a92f0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cb40ebe946b65f08de9ffc27ff830fbf76d4f8a7
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077771"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38685461"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中設定略過文字分析選項
 
@@ -96,7 +96,7 @@ ms.locfileid: "37077771"
   - 一般 eExpression 欄位可以是無限制的長度。
     
 > [!TIP]
-> 說明與規則運算式的詳細的語法，請參閱：[規則運算式語言-快速參考](https://msdn.microsoft.com/en-us/library/az24scfc%28v=vs.110%29.aspx)。 
+> 說明與規則運算式的詳細的語法，請參閱：[規則運算式語言-快速參考](https://msdn.microsoft.com/library/az24scfc%28v=vs.110%29.aspx)。 
   
 ## <a name="define-ignore-text-rule"></a>定義規則，略過的文字
 

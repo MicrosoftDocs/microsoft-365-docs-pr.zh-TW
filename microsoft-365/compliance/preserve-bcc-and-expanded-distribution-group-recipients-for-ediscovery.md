@@ -10,25 +10,24 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: 原有範圍暫止、 訴訟暫止狀態，以及 Office 365 保留原則可讓您保留信箱內容，以符合法規遵循和 eDiscovery 需求。
-ms.openlocfilehash: 85e291b5fb4e12ad077c98d805ac232b17e6e647
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 46ec9f39f4fe5629ca1854fab44304f30784dbf4
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077833"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38685512"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>保留電子文件探索密件副本與展開的通訊群組收件者
   
-原有範圍暫止、 訴訟暫止狀態，以及[Office 365 保留原則](http://go.microsoft.com/fwlink/?LinkID=827811)（安全 & 與規範中心建立） 可讓您保留信箱內容，以符合法規遵循和 eDiscovery 需求。 收件者資訊直接寄送中的 To 和 Cc 欄位的預設，包含一則訊息中的所有郵件，但您的組織可能需要搜尋及重現相關郵件的所有收件者的詳細資訊的能力。 其中包括： 
+原有範圍暫止、 訴訟暫止狀態，以及[Office 365 保留原則](https://go.microsoft.com/fwlink/?LinkID=827811)（安全 & 與規範中心建立） 可讓您保留信箱內容，以符合法規遵循和 eDiscovery 需求。 收件者資訊直接寄送中的 To 和 Cc 欄位的預設，包含一則訊息中的所有郵件，但您的組織可能需要搜尋及重現相關郵件的所有收件者的詳細資訊的能力。 這包括： 
   
-- **收件者使用的郵件 [密件副本] 欄位**密件副本收件者所儲存的郵件寄件者的信箱中，但不是包含在傳遞至收件者之郵件的標頭。 
+- **列使用密件副本] 欄位的郵件收件者：** 密件副本收件者所儲存的郵件寄件者的信箱中，但不是包含在傳遞至收件者之郵件的標頭。 
     
-- **展開通訊群組收件者**收件者收到郵件，因為它們是通訊群組成員的郵件已解決中，[在 to、 Cc 或 Bcc 欄位。 
+- **展開通訊群組收件者：** 收件者收到郵件，因為它們是通訊群組成員的郵件已解決中，[在 to、 Cc 或 Bcc 欄位。 
     
 Exchange Online 和 Exchange Server 2013 （累計更新 7 和更新版本） 保留密件副本與展開的通訊群組收件者的相關資訊。 您可以搜尋這項資訊安全性 & 合規性中心中使用 Exchange 系統管理中心 (EAC) 中的就地 eDiscovery 搜尋或內容搜尋。 
   
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>保留密件副本收件者和展開的通訊群組收件者的方式
-<a name="sectionSection0"> </a>
 
 如先前所述，使用收件者的資訊儲存在郵件寄件者的信箱中。 這項資訊已編製索引並可供 ediscovery 和保留。 
   
@@ -41,7 +40,6 @@ Exchange Online 和 Exchange Server 2013 （累計更新 7 和更新版本） �
 |展開的通訊群組收件者  <br/> |寄件者的信箱中的郵件內容。  <br/> |否。 展開的通訊群組收件者資訊是儲存後信箱處於就地保留或訴訟暫止狀態，或指派給 Office 365 保留原則。  <br/> |法規遵循主管  <br/> |
    
 ## <a name="searching-for-messages-sent-to-bcc-and-expanded-distribution-group-recipients"></a>搜尋的郵件傳送到 [密件副本與展開的通訊群組收件者
-<a name="sectionSection1"> </a>
 
 搜尋的收件者傳送郵件時，eDiscovery 搜尋結果現在包括傳送給收件者屬於通訊群組的郵件。 下表顯示其中傳送到 [密件副本與展開的通訊群組收件者的郵件都會退回在 eDiscovery 搜尋中的案例。
   
@@ -62,14 +60,13 @@ Exchange Online 和 Exchange Server 2013 （累計更新 7 和更新版本） �
 |:-----|:-----|:-----|:-----|
 |Bob 的信箱  <br/> |若要 / Cc:John  <br/> |是  <br/> |呈現插孔已使用指示。  <br/> |
 |Bob 的信箱  <br/> |Bcc:Jack  <br/> |是  <br/> |呈現插孔已使用指示。  <br/> |
-|Bob 的信箱  <br/> |Bcc:Jack （透過通訊群組）  <br/> |是  <br/> |已展開郵件已傳送時，使用通訊群組成員的清單會顯示在 eDiscovery 搜尋預覽、 匯出及記錄檔。  <br/> |
+|Bob 的信箱  <br/> |Bcc:Jack （透過通訊群組）  <br/> |是  <br/> |已展開郵件已傳送時，使用通訊群組成員的清單會顯示在 eDiscovery 搜尋預覽、 匯出與記錄檔。  <br/> |
 |John 的信箱  <br/> |若要 / Cc:John  <br/> |是  <br/> |[密件副本收件者的任何指示。  <br/> |
 |John 的信箱  <br/> |Bcc:Jack （直接或透過通訊群組）  <br/> |否  <br/> |[密件副本] 資訊不會儲存在郵件傳遞給收件者。 您必須搜尋寄件者的信箱。  <br/> |
 |接頭的信箱  <br/> |若要 / Cc:John （直接或透過通訊群組）  <br/> |是  <br/> |若要 / [副本] 資訊會包含在郵件傳遞給所有收件者。  <br/> |
 |接頭的信箱  <br/> |Bcc:Jack （直接或透過通訊群組）  <br/> |否  <br/> |[密件副本] 資訊不會儲存在郵件傳遞給收件者。 您必須搜尋寄件者的信箱。  <br/> |
    
 ## <a name="frequently-asked-questions"></a>常見問題集
-<a name="sectionSection2"> </a>
 
  **問： 時間與位置密件副本收件者資訊儲存？**
   
@@ -83,9 +80,9 @@ Exchange Online 和 Exchange Server 2013 （累計更新 7 和更新版本） �
   
 答：是。 否。 這項資訊並不包含在郵件標頭，並無法看見以 / [副本] 收件者。 寄件者可以查看儲存原始郵件儲存在其信箱中的 [密件副本] 欄位。 搜尋寄件者的信箱時，法務人員可以看到這項資訊。
   
- **問： 如何確保一律會保留已展開的通訊群組收件者？**
+ **問： 如何確保擴充的通訊群組收件者一律會保留？**
   
-答：是。 若要確定展開的通訊群組成員一律保留郵件時，[就地保留狀態的所有信箱上的](http://technet.microsoft.com/library/4c141604-3210-44cc-b98e-f3e0f15613b8.aspx)，或建立的全組織的 Office 365 保留原則。 
+答：是。 若要確保展開的通訊群組成員一律保留郵件時，[保留狀態的所有信箱上的位置](https://technet.microsoft.com/library/4c141604-3210-44cc-b98e-f3e0f15613b8.aspx)，或建立的全組織的 Office 365 保留原則。 
   
  **問： 何種類型的群組支援？**
   
@@ -105,6 +102,4 @@ Exchange Online 和 Exchange Server 2013 （累計更新 7 和更新版本） �
   
  **問： 什麼事通訊群組的成員會隱藏從組織的全域通訊清單 (GAL)？**
   
-答：是。 沒有任何影響。 如果從 GAL 隱藏收件者，他們正在仍包含在展開的通訊群組的收件者清單。
-  
-
+答：是。 沒有任何影響。 如果收件者會從 GAL 隱藏，他們仍然隨附的收件者已展開的通訊群組清單中。
