@@ -14,17 +14,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 description: 摘要：在 Microsoft Azure 中建立模擬的跨單位部署虛擬網路，以作為 Microsoft 365 測試環境。
-ms.openlocfilehash: 7fc3035db5e0b6e924d8b55e81cbee5eca38bfbf
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: be753251670f882b277305f808354791efc38547
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640712"
+ms.locfileid: "38673309"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Microsoft 365 測試環境中模擬的跨單位部署虛擬網路
 
- **摘要：** 在 Microsoft Azure 中建立模擬的跨單位部署虛擬網路，以作為開發/測試環境。
-  
+*這個測試實驗室指南可用於 Microsoft 365 企業版和 Office 365 企業版兩種測試環境。*
+
 本文逐步引導您建立模擬的混合式雲端環境，具有使用兩個 Azure 虛擬網路的 Microsoft Azure。以下是產生的組態配置。 
   
 ![模擬的跨部署虛擬網路開發/測試環境，搭配 XPrem VNet 中 DC2 虛擬機器的階段 3](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)

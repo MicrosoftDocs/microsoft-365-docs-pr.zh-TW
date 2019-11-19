@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 適用於系統管理員：了解如何使用網路上傳將多個 PST 檔案大量匯入 Office 365 中的使用者信箱。
-ms.openlocfilehash: a11bd934cf45a8f90ae7f558814a1b6d9e839914
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8596108902cadd82cbab4bd128d457858b5c63c3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078288"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38710020"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>使用網路上傳將組織的 PST 檔案匯入 Office 365
 
@@ -127,11 +127,11 @@ ms.locfileid: "37078288"
     
 3. 執行下列命令將 PST 檔案上傳至 Office365。
 
-    ```
+    ```powershell
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
   
     ```
- 
+
     > [!IMPORTANT] 
     > 您必須在上一個命令中指定目錄作為來源位置；您無法指定個別 PST 檔案。 系統會上傳來源目錄中的所有 PST 檔案。
  
@@ -147,9 +147,8 @@ ms.locfileid: "37078288"
    
 這是 AzCopy.exe 工具針對各個參數使用實際值的語法範例︰
     
-```
+```powershell
   AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
-  
 ```
 
 在您執行命令後，便會顯示 PST 檔案上傳進度的狀態訊息。最終狀態訊息會顯示已成功上傳的檔案總數。
@@ -200,8 +199,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
     
 2. 開啟或儲存 CSV 檔案到您的本機電腦。下列範例顯示了一個已完成的 PST 匯入對應檔案 (在「記事本」中開啟)。若使用 Microsoft Excel 來編輯 CSV 檔案會較為簡單。
 
-
-    ```
+    ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,,annb.pst,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,,annb_archive.pst,annb@contoso.onmicrosoft.com,TRUE,,,,,
@@ -214,6 +212,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
     Exchange,PSTFiles,zrinkam.pst,zrinkam@contoso.onmicrosoft.com,FALSE,,,,,
     Exchange,PSTFiles,zrinkam_archive.pst,zrinkam@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
     ```
+    
     CSV 檔案的第一列或「標題列」會列出參數，PST 匯入服務將使用這些參數來匯入 PST 檔案至使用者信箱。 每個參數名稱都是以逗號分隔。 在標題列下的每一列，代表了要匯入 PST 檔案至特定信箱的參數值。 您需要為每個要匯入至使用者信箱的 PST 檔案設定一列。 請務必在對應檔案中，使用您的實際資料來取代預留位置資料。
 
    **請注意：** 不要在標頭列以及 SharePoint 參數中作任何變更，在 PST 匯入過程中會忽略這些項目。 
@@ -354,7 +353,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
   
 - 以下是在步驟 1 所取得的共用存取簽章(SAS) URL 範例。 此範例也包含您在 AzCopy.exe 工具中，用來將 PST 檔案上傳至 Office 365 所執行命令的語法。 請務必採取預防措施來保護 SAS URL，就如同您保護密碼或其他安全性相關的資訊一樣。
 
-    ```
+    ```text
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D
 
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y

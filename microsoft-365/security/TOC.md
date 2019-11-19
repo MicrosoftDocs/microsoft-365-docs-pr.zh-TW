@@ -49,9 +49,6 @@
 #### [讓使用者能夠存取安全性中心](./office-365-security/grant-access-to-the-security-and-compliance-center.md)
 
 
-
-
-
 ### [防範威脅](./office-365-security/protect-against-threats.md)
 #### [反垃圾郵件和反惡意程式碼防護](./office-365-security/anti-spam-and-anti-malware-protection.md)
 ##### [進階垃圾郵件篩選選項](./office-365-security/advanced-spam-filtering-asf-options.md)
@@ -141,7 +138,6 @@
 ##### [檢視惡意檔案的相關資訊](./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md)
 
 
-
 ### [進階威脅防護](./office-365-security/office-365-atp.md)
 #### [查看新功能]()
 ##### [Office 365 ATP 中的新功能](office-365-security/whats-new-in-office-365-atp.md)
@@ -182,6 +178,7 @@
 #### [Office 365 安全性事件回應](./office-365-security/office365-security-incident-response-overview.md)
 #### [偵測並修復 Office 365 中的非法同意授權](./office-365-security/detect-and-remediate-illicit-consent-grants.md)
 #### [偵測並修復 Office 365 中 Outlook 規則與自訂表單資料隱碼攻擊](./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md)
+#### [對於 Office 365 遭入侵電子郵件帳戶的回覆](office-365-security/responding-to-a-compromised-email-account.md)
 
 ### [郵件流程]()
 #### [啟用報告訊息增益集](./office-365-security/enable-the-report-message-add-in.md)
@@ -222,7 +219,7 @@
 
 ##### [設定 EOP 服務](./office-365-security/set-up-your-eop-service.md)
 ###### [設定 EOP 的最佳做法](./office-365-security/best-practices-for-configuring-eop.md)
-###### [設定 EOP 和 Office365 ATP 安全性的最佳做法](./office-365-security/best-practices-for-eop-office365-atp.md)
+###### [設定 EOP 和 Office 365 ATP 安全性的建議設定](./office-365-security/recommended-settings-for-eop-and-office365-atp.md)
 ###### [套用 EOP 設定到多個租用戶的範例指令碼](./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md)
 ###### [將網域與設定從某個 EOP 組織移到另一個 EOP 組織](./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md)
 ###### [從 Google Postini、Barracuda Spam 與 Virus Firewall 或 Cisco IronPort 切換到 EOP](./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md)

@@ -12,12 +12,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 8ee0d1d8dd20dac6a865e39ca12dea8b07352e6e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5c43a0e26dfc052c23cbaf349bd541d996dca558
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071452"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "38710006"
 ---
 # <a name="microsoft-365-nist-800-53-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 NIST 800-53 行動計畫 — 前 30 天、90 天及過後的首要工作
 
@@ -77,6 +77,6 @@ Microsoft 被視為雲端安全性中的業界領導者。使用多年建置企�
 
 ## <a name="learn-more"></a>深入了解
 
-深入了解 [Microsoft 和 NIST 網路安全架構 (CSF)](https://www.microsoft.com/trustcenter/compliance/NIST_CSF)，包括 NIST 800-53。
+深入了解 [Microsoft 和 NIST 網路安全架構 (CSF)](offering-nist-csf.md)，包括 NIST 800-53。
 
 [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

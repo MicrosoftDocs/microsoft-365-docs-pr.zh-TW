@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
-ms.openlocfilehash: 3d4936a03ab9b2e5d766f514472ea862009da553
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a639c71753602ffd381c9240cf6e7273f3ba8bbe
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076508"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708057"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -82,7 +82,7 @@ ms.locfileid: "37076508"
 (您可以複製、修改及使用我們的範例)。
 
  ```xml
-<EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+<EdmSchema xmlns="https://schemas.microsoft.com/office/2018/edm">
       <DataStore name="PatientRecords" description="Schema for patient records" version="1">
             <Field name="PatientID" searchable="true" />
             <Field name="MRN" searchable="true" />
@@ -186,7 +186,7 @@ Remove-DlpEdmSchema -Identity patientrecords
 
 當您設定規則套件時，請務必正確地參照您的 .csv 檔案和 edm.xml 檔案。 您可以複製、修改及使用我們的範例。 在此範例 xml 中，必須自訂下列欄位，才能建立您的 EDM 敏感性類型：
 
-- **RulePack id 與 ExactMatch id**：使用 [New-GUID](https://docs.microsoft.com/zh-TW/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 產生 GUID。
+- **RulePack id 與 ExactMatch id**：使用 [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 產生 GUID。
 
 - **資料存放區**：此欄位會指定要使用的 EDM 查閱資料存放區。 您要提供已設定之 EDM 結構描述的資料來源名稱。
 
@@ -201,7 +201,7 @@ Remove-DlpEdmSchema -Identity patientrecords
   - 編輯結構描述名稱與描述：視需要自訂。
 
 ```xml
-<RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
+<RulePackage xmlns="https://schemas.microsoft.com/office/2018/edm">
   <RulePack id="fd098e03-1796-41a5-8ab6-198c93c62b11">
     <Version build="0" major="2" minor="0" revision="0" />
     <Publisher id="eb553734-8306-44b4-9ad5-c388ad970528" />
@@ -488,7 +488,7 @@ Exchange Online 用 Office 365 DLP (電子郵件)、商務用 OneDrive (檔案)�
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-[New-DlpEdmSchema](https://docs.microsoft.com/zh-TW/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
 
 ## <a name="feedback"></a>意見反應
 

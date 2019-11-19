@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本主題說明如何使用 Microsoft 365 REST API 透過事件進行自動化保留，設定您的商務程序流程。
-ms.openlocfilehash: 1b687ab89e0d29910c9c0781540b6f9113e53ed6
-ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
+ms.openlocfilehash: 5977b79c47166fdafc76dfdb122b4fd37b63a875
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37342966"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708062"
 ---
 # <a name="automate-event-based-retention"></a>自動化事件型保留
 
@@ -85,7 +85,7 @@ ms.locfileid: "37342966"
         
     - 建立 SharePoint 文件庫。在文件庫層級設定事件型標籤。如需更多資訊，請參閱[將預設的保留標籤套用至 SharePoint 文件庫、資料夾或文件組的所有內容](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。
           
-    - 在 SharePoint 中設定文件組。如需更多資訊，請參閱[文件組簡介](https://support.office.com/zh-TW/article/Introduction-to-Document-Sets-3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234)。
+    - 在 SharePoint 中設定文件組。如需更多資訊，請參閱[文件組簡介](https://support.office.com/article/Introduction-to-Document-Sets-3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234)。
       
 1. 指派資產 ID (資產 ID 是組織使用的產品名稱或代碼，例如，員工編號可以是資產 ID) 給每一個員工文件組 (透過指派資產 ID 給資料夾的方式，該資料夾內的每個項目都會自動繼承相同的資產 ID。這意味著所有的項目可以透過相同的事件觸發保留期間。
 
@@ -103,7 +103,7 @@ ms.locfileid: "37342966"
 
 - **PowerShell 或 HTTP 用戶端呼叫 REST API**使用 PowerShell (6 或更新版本) 呼叫 Microsoft 365 REST API 建立事件。 
 
-Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源的建立、擷取、更新、刪除等存取權，如需更多資訊，請參閱 [REST API 要求/回應的元件](https://docs.microsoft.com/zh-TW/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse)。在這種情況下，透過使用 Microsoft 365 REST API，使用 POST 和 GET 操作 (方法) 可以建立和擷取事件。
+Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源的建立、擷取、更新、刪除等存取權，如需更多資訊，請參閱 [REST API 要求/回應的元件](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse)。在這種情況下，透過使用 Microsoft 365 REST API，使用 POST 和 GET 操作 (方法) 可以建立和擷取事件。
 
 ## <a name="example-scenarios"></a>範例案例
 
@@ -181,10 +181,10 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 <tr class="odd">
 <td>Body</td>
 <td><p>&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'</p>
-<p>xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
-<p>xmlns='http://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
+<p>&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'</p>
+<p>xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
+<p>xmlns='https://www.w3.org/2005/Atom'&gt;</p>
+<p>&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
 <p>&lt;updated&gt;9/9/2017 10:50:00 PM&lt;/updated&gt;</p>
 <p>&lt;content type='application/xml'&gt;</p>
 <p>&lt;m:properties&gt;</p>
@@ -372,10 +372,10 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 <p>$EventName=&quot;EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))&quot;</p>
 <p>Write-Host &quot;開始建立下列名稱的事件：$EventName&quot;</p>
 <p>$body = &quot;&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'</p>
-<p>xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
-<p>xmlns='http://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
+<p>&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'</p>
+<p>xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
+<p>xmlns='https://www.w3.org/2005/Atom'&gt;</p>
+<p>&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
 <p>&lt;updated&gt;7/14/2017 2:03:36 PM&lt;/updated&gt;</p>
 <p>&lt;content type='application/xml'&gt;</p>
 <p>&lt;m:properties&gt;</p>

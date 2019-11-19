@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何搜尋並找出 Office 365 中的個人資料。
-ms.openlocfilehash: b63cf930a38feab6df815b5350d60184a6339927
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f553f29ac1327fa84c2d52f80379593c9291d610
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077550"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38710010"
 ---
 # <a name="search-for-and-find-personal-data"></a>搜尋並找出個人資料
 
@@ -79,7 +79,7 @@ Microsoft 建議三階段方法，來尋找 Office 365 中的個人資料。本�
 
 本主題包含適用在歐盟地區公民的一些敏感性資訊類型的清單。 檢查安全性中心或合規性中心是否有加入新功能，能夠有助於 GDPR 合規性。
 
-另請參閱這篇文章：[敏感資訊類型的清單和每一種敏感資訊類型的樣子](https://support.office.com/zh-TW/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)。
+另請參閱這篇文章：[敏感資訊類型的清單和每一種敏感資訊類型的樣子](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)。
 
 敏感資訊類型定義自動化程序如何辨識特定資訊類型，例如銀行帳號、健康服務號碼和信用卡號碼。敏感資訊類型也稱為條件。敏感資訊類型由規則運算式或函數所能識別的模式來定義。此外，也可使用關鍵字和總和檢查碼之類的佐證來識別敏感資訊類型。評估程序中也會使用信賴等級和鄰近性。
 
@@ -97,7 +97,7 @@ Microsoft 建議三階段方法，來尋找 Office 365 中的個人資料。本�
 <tbody>
 <tr class="odd"><td align="left"><p>移至安全性與合規性中心的內容搜尋</p></td>
 <td align="left"><p>在安全性與合規性中心的左窗格中，按一下 [搜尋與調查]**** &gt; [內容搜尋]****。</p>
-<p>請參閱<a href="https://support.office.com/zh-TW/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">在 Office 365 安全性與合規性中心執行內容搜尋</a>。</p></td>
+<p>請參閱<a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">在 Office 365 安全性與合規性中心執行內容搜尋</a>。</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>為每一種敏感資訊類型建立新的搜尋項目</p></td>
@@ -110,14 +110,14 @@ Microsoft 建議三階段方法，來尋找 Office 365 中的個人資料。本�
 <p>SensitiveType:&quot;France Passport Number&quot;</p>
 </blockquote>
 <p>限定 SharePoint (包括商務用 OneDrive) 的搜尋範圍。請確定語法完全正確，而且沒有多餘的空格或錯字。</p>
-<p>請參閱<a href="https://support.office.com/zh-TW/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">形成查詢以搜尋儲存在網站上的敏感資料</a>。</p></td>
+<p>請參閱<a href="https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">形成查詢以搜尋儲存在網站上的敏感資料</a>。</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>檢閱每個搜尋的結果</p></td>
 <td align="left"><p>尋找這些類型的問題來判斷查詢目標是否精確：</p>
 <p><li>許多誤判</li></p>
 <p><li>缺少已知的資料執行個體</li></p>
-<p>請參閱<a href="https://support.office.com/zh-TW/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">從 Office 365 安全性與合規性中心匯出搜尋結果</a>。</p>
+<p>請參閱<a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">從 Office 365 安全性與合規性中心匯出搜尋結果</a>。</p>
 <p>注意：如果您是使用 Mozilla Firefox 或 Chrome，則可能需要先使用 Internet Explorer 或 Edge 下載報告，才能安裝所需的增益集。</p></td>
 </tr>
 </tbody>
@@ -217,4 +217,4 @@ Microsoft 建議三階段方法，來尋找 Office 365 中的個人資料。本�
 
 注意：“SensitiveType” 會區分大小寫，但查詢的其餘部分不會。
 
-您也可以使用屬性和運算子來說明您如何修改查詢。如需詳細資訊和範例，請參閱[形成查詢以搜尋儲存在網站上的敏感資料](https://support.office.com/zh-TW/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836)。
+您也可以使用屬性和運算子來說明您如何修改查詢。如需詳細資訊和範例，請參閱[形成查詢以搜尋儲存在網站上的敏感資料](https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836)。

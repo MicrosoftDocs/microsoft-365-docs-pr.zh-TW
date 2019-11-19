@@ -1,7 +1,7 @@
 ---
 title: 利用標籤分析檢視標籤使用量
-ms.author: stephow
-author: stephow-MSFT
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立您的保留標籤和敏感度標籤後，您將想要查看租用戶間使用標籤的情況。 利用 Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的標籤分析，您可以快速查看最常使用的標籤，以及套用標籤的位置。
-ms.openlocfilehash: 297987d420b5ed05bf4fdeb86513bc7c4ddec609
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 45cebbe67a773b76289920554d4e39fcbce789cc
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077127"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38710016"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>利用標籤分析檢視標籤使用量
 
@@ -38,9 +38,9 @@ ms.locfileid: "37077127"
 
 ## <a name="sensitivity-label-usage"></a>敏感度標籤使用量
 
-有關敏感度標籤使用量的資料是從 Azure 資訊保護的報告提取，如需詳細資訊，請參閱 [Azure 資訊保護的集中報告](https://docs.microsoft.com/zh-TW/azure/information-protection/reports-aip)。
+有關敏感度標籤使用量的資料是從 Azure 資訊保護的報告提取，如需詳細資訊，請參閱 [Azure 資訊保護的集中報告](https://docs.microsoft.com/azure/information-protection/reports-aip)。
 
-請注意，Azure 資訊保護報告具有[先決條件](https://docs.microsoft.com/zh-TW/azure/information-protection/reports-aip#prerequisites-for-azure-information-protection-analytics)，也適用於 Microsoft 365 合規性中心和 Microsoft 365 安全性中心中敏感度標籤的標籤分析。 比方說，您需要包含記錄分析的 Azure 訂閱，因為這些報告為根據 Azure Log Analytics 服務，從 Azure 資訊保護用戶端與掃描器傳送資訊保護稽核事件至集中位置的結果。
+請注意，Azure 資訊保護報告具有[先決條件](/azure/information-protection/reports-aip#prerequisites)，也適用於 Microsoft 365 合規性中心和 Microsoft 365 安全性中心中敏感度標籤的標籤分析。 比方說，您需要包含記錄分析的 Azure 訂閱，因為這些報告為根據 Azure Log Analytics 服務，從 Azure 資訊保護用戶端與掃描器傳送資訊保護稽核事件至集中位置的結果。
 
 針對敏感度標籤使用量：
 
@@ -97,5 +97,5 @@ ms.locfileid: "37077127"
 - 安全性系統管理員
 - 安全性讀取者
 
-此外，請注意，這類報告會使用 Azure 監視器將資料儲存在您的組織擁有的 Log Analytics 工作區。 因此，應該將使用者新增為保留資料的 Azure 監視工作區的讀取者。如需詳細資訊，請參閱 [Azure 資訊保護分析所需的權限](https://docs.microsoft.com/zh-TW/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics)。
+此外，請注意，這類報告會使用 Azure 監視器將資料儲存在您的組織擁有的 Log Analytics 工作區。 因此，應該將使用者新增為保留資料的 Azure 監視工作區的讀取者。如需詳細資訊，請參閱 [Azure 資訊保護分析所需的權限](https://docs.microsoft.com/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics)。
 

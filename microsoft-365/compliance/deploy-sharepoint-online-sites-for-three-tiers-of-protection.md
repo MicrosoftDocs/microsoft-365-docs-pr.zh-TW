@@ -13,16 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 摘要：建立及設定各種資訊保護等級的 SharePoint Online 小組網站。
-ms.openlocfilehash: 2ddf3de7180d384c387bdc335afda6214508e3c5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4ff892d57d4fe6e707e4cbcb4f1562a3594fe70b
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070692"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38708070"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>部署三種保護層級的 SharePoint Online 網站
 
@@ -46,7 +47,7 @@ ms.locfileid: "37070692"
     
 4. 在 [建立網站]**** 頁面上，按一下 [小組網站]****。
     
-5. 在 [網站名稱]**** 中，鍵入公用小組網站的名稱。 
+5. 在 [網站名稱]**** 中，鍵入公用小組網站的名稱。
     
 6. 在 [小組網站描述]**** 中，鍵入網站用途的描述。
     
@@ -70,7 +71,7 @@ ms.locfileid: "37070692"
     
 4. 在 [建立網站]**** 頁面上，按一下 [小組網站]****。
     
-5. 在 [網站名稱]**** 中，鍵入私人小組網站的名稱。 
+5. 在 [網站名稱]**** 中，鍵入私人小組網站的名稱。
     
 6. 在 [小組網站描述]**** 中，鍵入網站用途的描述。
     

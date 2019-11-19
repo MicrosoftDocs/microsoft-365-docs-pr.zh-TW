@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 在內容中尋找機密資訊時，您需要以所謂的規則來說明資訊。資料外洩防護 (DLP) 包含您可以立即使用之最常用機密資訊類型的規則。若要使用這些規則，您必須將其包含在原則中。您也許想要調整這些內建規則以符合貴組織的特定需求，您可以藉由建立自訂機密資訊類型來完成。本主題說明如何自訂其中包含現有規則集合的 XML 檔案，以偵測更大範圍的潛在信用卡資訊。
-ms.openlocfilehash: 99a65e7862eb1657c73c77b526e3b82b7595d248
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5fbc0e9ffba0237462062e19edb9ca0458675b04
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076428"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708056"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自訂內建機密資訊類型
 
@@ -85,7 +85,7 @@ Set-Content -path C:\custompath\exportedRules.xml -Encoding Byte -Value $ruleCol
   
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
-<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce">
   <RulePack id=". . .">
     <Version major="1" minor="0" build="0" revision="0" />
     <Publisher id=". . ." /> 
@@ -114,7 +114,7 @@ Set-Content -path C:\custompath\exportedRules.xml -Encoding Byte -Value $ruleCol
   
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
-<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
+<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce">
   <RulePack id="8aac8390-e99f-4487-8d16-7f0cdee8defc">
     <Version major="1" minor="0" build="0" revision="0" />
     <Publisher id="8d34806e-cd65-4178-ba0e-5d7d712e5b66" />

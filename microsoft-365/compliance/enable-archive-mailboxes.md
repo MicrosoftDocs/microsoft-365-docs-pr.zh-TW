@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 中的「安全性與合規性中心」來啟用封存信箱，以便支援組織的郵件保留、電子文件探索和保留需求。
-ms.openlocfilehash: 5cf399b311b6c342aff2d84477edaa945f8e0cd4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ea6448c4d47eb89d16266644e5a4ab06f774e0da
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077102"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38708072"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>啟用「安全性與合規性中心」的封存信箱
   
@@ -101,27 +101,27 @@ Office 365 中的封存 (稱為就地封存) 可為使用者提供額外的信�
 
 執行下列命令，以便啟用單一使用者的封存信箱。
     
-  ```
+  ```powershell
   Enable-Mailbox -Identity <username> -Archive
   ```
 
 執行下列命令，以便啟用組織中所有使用者的封存信箱 (針對目前尚未啟用封存信箱者)。
     
-  ```
+  ```powershell
   Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
   ```
-  
+
 ### <a name="disable-archive-mailboxes"></a>停用封存信箱
 
 執行下列命令，以便停用單一使用者的封存信箱。
     
-  ```
+  ```powershell
   Disable-Mailbox -Identity <username> -Archive
   ```
 
 執行下列命令，以便停用組織中所有使用者的封存信箱 (針對目前已啟用封存信箱者)。
     
-  ```
+  ```powershell
   Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
   ```
 

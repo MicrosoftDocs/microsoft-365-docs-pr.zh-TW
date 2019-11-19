@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: 了解如何為 GDPR 修改或建立新的 Office 365 敏感資訊類型。
-ms.openlocfilehash: 264e310c019c47d1b3109b20fbdd61b323ec5530
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 81717e10de794f5ab5885470d0bcbcd795e43044
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076413"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708060"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>自訂或建立新的敏感資訊類型
 
@@ -71,7 +71,7 @@ ms.locfileid: "37076413"
 
 7.  上傳新的敏感資訊類型。
 
-8.  重新編目內容以識別敏感資訊。請參閱[手動要求重新編目網站和重新編製網站檢索](https://support.office.com/zh-TW/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E)。
+8.  重新編目內容以識別敏感資訊。請參閱[手動要求重新編目網站和重新編製網站檢索](https://support.office.com/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E)。
 
 ## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>範例：修改「歐盟轉帳卡卡號」敏感資訊類型。
 
@@ -141,15 +141,15 @@ ms.locfileid: "37076413"
 
 使用下列資源，利用 KQL 來制訂和最佳化查詢：
 
--   [關鍵字查詢語言 (KQL) 語法參考 (DMC)](https://docs.microsoft.com/zh-TW/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+-   [關鍵字查詢語言 (KQL) 語法參考 (DMC)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [執行內容搜尋](https://support.office.com/zh-TW/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [執行內容搜尋](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
-內容搜尋提供另一種資源，協助您開發 KQL 查詢及敏感資訊類型 — 關鍵字。為什麼使用關鍵字清單？您可以取得統計資料，顯示多少個項目比對每一個關鍵字的。這可協助您快速識別哪些關鍵字的效率最好 (最差)。如需搜尋統計資料的詳細資訊，請參閱[檢視內容搜尋結果的關鍵字統計資料](https://support.office.com/zh-TW/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)。
+內容搜尋提供另一種資源，協助您開發 KQL 查詢及敏感資訊類型 — 關鍵字。為什麼使用關鍵字清單？您可以取得統計資料，顯示多少個項目比對每一個關鍵字的。這可協助您快速識別哪些關鍵字的效率最好 (最差)。如需搜尋統計資料的詳細資訊，請參閱[檢視內容搜尋結果的關鍵字統計資料](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)。
 
 每一列上的關鍵字是藉由所建立的搜尋查詢中的 OR 運算子來連線。您也可以連續使用關鍵字片語 (以括號括住)。
 
-如需詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](https://support.office.com/zh-TW/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)。
+如需詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)。
 
 ### <a name="exampleusing-content-search-to-identify-email-addresses"></a>範例 — 使用內容搜尋來識別電子郵件地址
 
@@ -374,7 +374,7 @@ Contoso 一律在內部通信、外部通信、文件等使用 CCN 來參照客�
 ```xml
 \<?xml version="1.0" encoding="utf-8"?\>
 
-\<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce"\>
+\<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce"\>
 
 \<RulePack id="130ae63b-a91e-4a12-9e02-a90e36a83d7f"\>
 

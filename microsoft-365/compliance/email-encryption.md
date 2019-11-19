@@ -15,18 +15,18 @@ ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 ms.collection:
 - M365-security-compliance
 description: 比較 Office 365 中的加密選項，包括 Office 郵件加密 (OME)、S/MIME、資訊版權管理 (IRM)，並了解傳輸層安全性 (TLS)。
-ms.openlocfilehash: 79a7ddd13e437255fa671e949236c879b235c2ba
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 70c22f9627c804c201cb23b7b3c38a4f6a349ece
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077113"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708053"
 ---
 # <a name="email-encryption-in-office-365"></a>Office 365 中的電子郵件加密
 
 本文件會比較 Office 365 中的加密選項，包括 Office 郵件加密 (OME)、S/MIME、資訊版權管理 (IRM)，並介紹傳輸層安全性 (TLS)。
   
-Office 365 提供多個加密選項，可協助您符合電子郵件安全性的商務需求。 本文提供在 Office 365 中加密電子郵件的三個方式。 如果您想要深入了解 Office 365 中的所有安全性功能，請瀏覽 [Office 365 信任中心](http://go.microsoft.com/fwlink/p/?LinkID=282470)。 本文介紹三種加密類型，可供 Office 365 系統管理員用於協助保護 Office 365 中的電子郵件：
+Office 365 提供多個加密選項，可協助您符合電子郵件安全性的商務需求。 本文提供在 Office 365 中加密電子郵件的三個方式。 如果您想要深入了解 Office 365 中的所有安全性功能，請瀏覽 [Office 365 信任中心](https://go.microsoft.com/fwlink/p/?LinkID=282470)。 本文介紹三種加密類型，可供 Office 365 系統管理員用於協助保護 Office 365 中的電子郵件：
   
 - Office 郵件加密 (OME)。
 
@@ -66,7 +66,7 @@ Office 365 提供多個加密選項，可協助您符合電子郵件安全性的
 
 ## <a name="what-encryption-options-are-available-for-my-office-365-subscription"></a>我的 Office 365 訂閱有哪些可用的加密選項？
 
-如需您的 Office 365 訂閱的電子郵件加密選項的詳細資訊，請參閱 [Exchange Online 服務說明](https://technet.microsoft.com/zh-TW/library/exchange-online-service-description.aspx)。 您可以在這裡找到下列加密功能的相關資訊：
+如需您的 Office 365 訂閱的電子郵件加密選項的詳細資訊，請參閱 [Exchange Online 服務說明](https://technet.microsoft.com/library/exchange-online-service-description.aspx)。 您可以在這裡找到下列加密功能的相關資訊：
   
 - Azure RMS，包括 IRM 功能和 OME
 
@@ -92,7 +92,7 @@ Office 365 提供多個加密選項，可協助您符合電子郵件安全性的
   
 **IRM**
   
-[Exchange Online 中的資訊版權管理](https://technet.microsoft.com/zh-TW/library/jj983436%28v=exchg.150%29.aspx)
+[Exchange Online 中的資訊版權管理](https://technet.microsoft.com/library/jj983436%28v=exchg.150%29.aspx)
   
 [什麼是 Azure 版權管理？](https://technet.microsoft.com/library/jj585026)
   
@@ -106,4 +106,4 @@ Office 365 提供多個加密選項，可協助您符合電子郵件安全性的
   
 **TLS**
   
-[使用 Office 365 中的連接器設定自訂郵件流程](https://technet.microsoft.com/zh-TW/library/jj723138%28v=exchg.150%29.aspx)
+[使用 Office 365 中的連接器設定自訂郵件流程](https://technet.microsoft.com/library/jj723138%28v=exchg.150%29.aspx)

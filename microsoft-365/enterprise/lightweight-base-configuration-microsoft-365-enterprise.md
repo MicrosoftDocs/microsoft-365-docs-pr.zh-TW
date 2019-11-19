@@ -15,14 +15,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用這個「測試實驗室指南」建立輕量型測試環境，以測試 Microsoft 365 企業版。
-ms.openlocfilehash: c654dc80620b98d09cf508e309d4410d9cf4a4dc
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: ff9577fb461429fd8d4628dc0eea6b8a35664fbc
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639913"
+ms.locfileid: "38672739"
 ---
 # <a name="the-lightweight-base-configuration"></a>輕量型基本組態
+
+*這個測試實驗室指南可用於 Microsoft 365 企業版和 Office 365 企業版兩種測試環境。*
 
 本文提供建立具備 Microsoft 365 E5 訂閱與執行 Windows 10 企業版電腦的簡化環境的逐步指示。 
 

@@ -11,17 +11,18 @@ ms.collection:
 - Strat_O365_Enterprise
 - GDPR
 - M365-security-compliance
+- SPO_Content
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 DLP 原則來保護 Office 365 中的個人資料。
-ms.openlocfilehash: f6d6d69f7c776b9b49ea360367117a9ce86293b2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 12d6de9b8012062e26daec922d5c55fa0f52381a
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076732"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38708067"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>將保護套用至 Office 365 中的個人資料
 
@@ -41,7 +42,7 @@ Office 365 中個人資訊的保護，包括使用資料外洩防護功能。 �
 
 -   檢視 DLP 報告以了解有哪些內容符合您的組織的 DLP 原則。
 
-如需詳細資訊，請參閱[資料外洩防護原則概觀](https://support.office.com/zh-TW/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)。
+如需詳細資訊，請參閱[資料外洩防護原則概觀](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)。
 
 ![用於建立資料外洩防護原則的選項](Media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
@@ -118,8 +119,8 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Control</strong></th>
-<th align="left"><strong>Settings</strong></th>
+<th align="left"><strong>控制</strong></th>
+<th align="left"><strong>設定</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -142,7 +143,7 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 <tr class="odd">
 <td align="left">在內容符合原則設定時通知使用者</td>
 <td align="left"><p>核取此方塊 (向使用者顯示原則提示，並傳送他們電子郵件通知。)</p>
-<p>按一下 [自訂提示和電子郵件]，並針對您的環境更新這些項目。請參閱本文中的預設通知：<a href="https://support.office.com/zh-TW/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">傳送電子郵件通知，並顯示 DLP 原則的原則提示</a>。</p></td>
+<p>按一下 [自訂提示和電子郵件]，並針對您的環境更新這些項目。請參閱本文中的預設通知：<a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">傳送電子郵件通知，並顯示 DLP 原則的原則提示</a>。</p></td>
 </tr>
 <tr class="even">
 <td align="left">在一次共用特定數量的敏感資訊時偵測</td>
@@ -177,7 +178,7 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 <thead>
 <tr class="header">
 <th align="left"><strong>保護範圍</strong></th>
-<th align="left"><strong>Capabilities</strong></th>
+<th align="left"><strong>功能</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -300,7 +301,7 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 
 詳細資訊：
 
--   [管理您的 SharePoint Online 環境外部共用](https://support.office.com/zh-TW/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [管理您的 SharePoint Online 環境外部共用](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 -   [與您組織外的人員共用網站或文件](https://support.office.com/zh-TW/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
@@ -351,7 +352,7 @@ SharePoint 和商務用 OneDrive 的裝置存取原則需要 Azure Active Direct
 </tbody>
 </table>
 
-詳細資訊：[SharePoint Online 管理中心：控制從未受管理裝置的存取](https://support.office.com/zh-TW/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US)。
+詳細資訊：[SharePoint Online 管理中心：控制從未受管理裝置的存取](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US)。
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>身分識別與裝置的服務存取保護
 
@@ -359,9 +360,9 @@ Microsoft 建議您針對存取服務的身分識別與裝置設定保護。您�
 
 身分識別與裝置的存取保護提供保護的底線，以確保身分識別不會受到連累、裝置安全無虞，且裝置上存取的組織資料遭到隔離並受到保護。
 
-如需起點建議與指引，請參閱[適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南](https://docs.microsoft.com/zh-TW/microsoft-365-enterprise/microsoft-security-guidance)。
+如需起點建議與指引，請參閱[適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance)。
 
-如需搭配 AD FS 的混合式身分識別環境，請參閱[建議的安全性原則和設定](https://docs.microsoft.com/zh-TW/microsoft-365-enterprise/microsoft-security-guidance)。
+如需搭配 AD FS 的混合式身分識別環境，請參閱[建議的安全性原則和設定](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance)。
 
 下圖描述雲端服務 (SaaS、PaaS)、帳戶類型 (租用戶網域帳戶與 B2B 帳戶帳戶)，以及服務存取功能如何相關。請務必注意可與 B2B 帳戶搭配使用的功能。
 

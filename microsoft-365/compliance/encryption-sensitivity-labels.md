@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 當建立敏感度標籤時，您可以限制標籤將套用至其中之內容的存取。敏感度標籤可以使用加密來保護內容。
-ms.openlocfilehash: be41f60f8d0210c779fb6c5a8fdc783cf23fcc19
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: aae46b8a6fa18c9af32005bca87ad80638b5b6c0
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369444"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708052"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>使用敏感度標籤中的加密來限制內容的存取
 
@@ -44,7 +44,7 @@ ms.locfileid: "37369444"
 
 ## <a name="how-encryption-works"></a>加密的運作方式
 
-加密會使用 Azure Rights Management (Azure RMS)。Azure RMS 會使用加密、身分識別和授權原則。若要深入了解，請參閱[什麼是 Azure Rights Management？](https://docs.microsoft.com/zh-TW/azure/information-protection/what-is-azure-rms)
+加密會使用 Azure Rights Management (Azure RMS)。Azure RMS 會使用加密、身分識別和授權原則。若要深入了解，請參閱[什麼是 Azure Rights Management？](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)
 
 ## <a name="how-to-turn-on-encryption-for-a-sensitivity-label"></a>如何開啟敏感度標籤的加密
 
@@ -77,7 +77,7 @@ ms.locfileid: "37369444"
 
 除了重新驗證外，還會重新評估原則和使用者群組成員資格。這表示，如果上次使用者存取內容後，原則或群組成員資格發生變更，則這些使用者可能遇到相同的文件或電子郵件，卻有不同的存取結果。
 
-若要了解如何變更預設的 30 天設定，請參閱 [Rights Management 使用授權](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#rights-management-use-license)。
+若要了解如何變更預設的 30 天設定，請參閱 [Rights Management 使用授權](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-use-license)。
 
 ### <a name="assign-permissions-to-specific-users-or-groups"></a>將權限指派給特定使用者或群組
 
@@ -106,10 +106,10 @@ ms.locfileid: "37369444"
 
 當您選擇要對那些使用者或群組允許的權限時，您可以選取下列任一項：
 
-- [預先定義的權限層級](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)，其中有一組預設的權限，例如共同作者或檢閱者。
+- [預先定義的權限層級](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)，其中有一組預設的權限，例如共同作者或檢閱者。
 - 一組自訂的權限，您可在其中選擇任何您想要的權限。
 
-如需每一個特定權限的詳細資訊，請參閱[使用權限和描述](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。  
+如需每一個特定權限的詳細資訊，請參閱[使用權限和描述](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。  
 
 ![選擇預設或自訂權限的選項](media/Sensitivity-Choose-permissions-settings.png)
 
@@ -129,7 +129,7 @@ Rights Management 簽發者一律會被授與文件或電子郵件的完全控�
 - Rights Management 簽發者一律可以離線存取文件或電子郵件。
 - Rights Management 簽發者仍可以開啟撤銷後的文件。
 
-如需詳細資訊，請參閱 [Rights Management 簽發者和 Rights Management 擁有者](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)。
+如需詳細資訊，請參閱 [Rights Management 簽發者和 Rights Management 擁有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)。
 
 ## <a name="let-users-assign-permissions"></a>讓使用者指派權限
 
@@ -197,7 +197,7 @@ Rights Management 簽發者一律會被授與文件或電子郵件的完全控�
 
 請注意，當加密套用至 OneDrive 和 SharePoint 中儲存的檔案時，服務無法處理這些檔案的內容。這表示共同撰寫、電子文件探索、搜尋、Delve 和其他共同作業功能等這類功能無法運作。此外，資料外洩防護 (DLP) 原則只可使用中繼資料 (包括 Office 365 標籤)，但無法使用加密檔案的內容 (例如檔案內的信用卡號碼)。
 
-這僅適用於 OneDrive 和 SharePoint 中儲存的內容。在 Exchange Online 中，郵件流程規則 (也稱為傳輸規則) 會使用[進階使用者帳戶](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-super-users)，讓他們可以掃描加密內容，並強制執行 DLP 原則。
+這僅適用於 OneDrive 和 SharePoint 中儲存的內容。在 Exchange Online 中，郵件流程規則 (也稱為傳輸規則) 會使用[進階使用者帳戶](https://docs.microsoft.com/azure/information-protection/configure-super-users)，讓他們可以掃描加密內容，並強制執行 DLP 原則。
 
 ## <a name="important-prerequisites"></a>重要的先決條件
 
@@ -205,7 +205,7 @@ Rights Management 簽發者一律會被授與文件或電子郵件的完全控�
 
 ### <a name="activating-azure-rights-management"></a>啟動 Azure Rights Management
 
-若要使用敏感度標籤中的加密，需要在您的租用戶中啟動 Azure Rights Management 服務。在較新的租用戶中，此服務預設為開啟，但您可能需要手動啟動此服務。如需詳細資訊，請參閱[啟用 Azure Rights Management](https://docs.microsoft.com/zh-TW/azure/information-protection/activate-service)。
+若要使用敏感度標籤中的加密，需要在您的租用戶中啟動 Azure Rights Management 服務。在較新的租用戶中，此服務預設為開啟，但您可能需要手動啟動此服務。如需詳細資訊，請參閱[啟用 Azure Rights Management](https://docs.microsoft.com/azure/information-protection/activate-service)。
 
 ### <a name="configure-exchange-for-azure-information-protection"></a>設定 Exchange 進行 Azure 資訊保護
 
@@ -215,5 +215,5 @@ Rights Management 簽發者一律會被授與文件或電子郵件的完全控�
 
 若要確保 Exchange 可以支援這些額外情節，請參閱下列內容：
 
-- 針對 Exchange Online，請參閱 [Exchange Online：IRM 設定](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-office365#exchange-online-irm-configuration)的指示。
-- 針對 Exchange 內部部署，您必須部署 [RMS 連接器和設定您的 Exchange Server](https://docs.microsoft.com/zh-TW/azure/information-protection/deploy-rms-connector)。 
+- 針對 Exchange Online，請參閱 [Exchange Online：IRM 設定](https://docs.microsoft.com/azure/information-protection/configure-office365#exchange-online-irm-configuration)的指示。
+- 針對 Exchange 內部部署，您必須部署 [RMS 連接器和設定您的 Exchange Server](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)。 
