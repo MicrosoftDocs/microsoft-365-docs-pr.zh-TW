@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何設定 Microsoft 365 商務版。
-ms.openlocfilehash: 5986e3fb7786ebb3fa7bcf42b34345be98af44a2
-ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
+ms.openlocfilehash: f269e970cc1ee5ba7455ea799b238db577116f09
+ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38633422"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704108"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>開始使用 Microsoft 365 商務版
 
@@ -80,7 +80,6 @@ Microsoft 365 商務版是最多 300 個授權。 如果您需要更多授權，
   
 如果您保留本機 Active Directory，其中包含一些內部資源 （例如檔案共用和印表機），您可以授與您的**Azure AD 加入的裝置**存取這些資源遵循以下步驟：[存取內部部署 Microsoft 365 商務版中的 Azure AD 加入裝置的資源](access-resources.md)。
   
-您已設定 Windows 10 電腦之後，您可以對裝置的 [[自動安裝 Office](auto-install-or-uninstall-office.md) 。 
   
 ## <a name="contact-support"></a>連絡客戶支援
 

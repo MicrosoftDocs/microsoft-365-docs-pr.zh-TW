@@ -7,18 +7,18 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: eec0243b7724eac852a9145a4e4fadcc13fae097
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: ae544592184b9de1b5a515ccd21af74185486d58
+ms.sourcegitcommit: f64397f3b144de36605da8d7116c46010765346d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627557"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38697156"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>讓您的使用者準備好使用裝置
 
 Microsoft 受管理的電腦裝置位於手中您的使用者，一旦快速入門既快速又簡單。 裝置來自預先設定與目前的 Windows 版本，並且設定和應用程式會安裝從雲端為使用者完成安裝程式。 
  
-若要將此位址設更容易，我們提供的指南，內容會逐步引導您完成初始設定的使用者，並設定和使用更新版本中，提供說明資源，如有需要。 您可以自訂本指南以包括特定組織專屬的詳細資訊。 然後，就會散發直接與您的使用者以及他們的裝置快顯功能表。 有兩種版本，一個用於使用 Microsoft 的支援系統 （取得說明應用程式），一個用於那些提供自己的內部使用者支援的組織。
+若要將此位址設更容易，我們提供的指南，內容會逐步引導您完成初始設定的使用者，並設定和使用更新版本中，提供說明資源，如有需要。 您可以自訂本指南以包括特定組織專屬的詳細資訊。 然後，就會散發直接與您的使用者以及他們的裝置快顯功能表。 有兩種版本，一個用於使用 Microsoft 的支援系統 （取得說明應用程式），一個用於是為其使用者提供替代支援的組織。
 
 ## <a name="to-prepare-the-guide"></a>若要準備快顯功能表
 
