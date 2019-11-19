@@ -13,14 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立 Microsoft 365 環境以測試身分識別與裝置存取。
-ms.openlocfilehash: c8d7aed1422f9d0c5891157e6fb7d3d30d976c4a
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: e86ff814f0b2b986de7eb26e7de362f17cd355e9
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981894"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38672589"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>您的 Microsoft 365 測試環境的身分識別與裝置存取
+
+*這個測試實驗室指南只能用於 Microsoft 365 企業版測試環境。*
 
 [身分識別與裝置存取組態](microsoft-365-policies-configurations.md)是一組功能和條件式存取原則，用來保護對與 Azure Active Directory (Azure AD) 整合之所有服務的存取，包括 Microsoft 365 企業版中的 Office 365 和 Microsoft Intune。
 

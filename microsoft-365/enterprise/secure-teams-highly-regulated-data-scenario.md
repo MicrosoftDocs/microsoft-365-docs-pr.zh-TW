@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立安全小組來儲存您最重要且最敏感的檔案。
-ms.openlocfilehash: f787951748cc1fb0b6b207b4b3aca0de1c29e3d7
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d875c3148a019774e038d18a75bb6fb2c2413463
+ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627497"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699763"
 ---
 # <a name="teams-for-highly-regulated-data"></a>適用於高度管制資料的 Microsoft Teams
 
@@ -48,7 +48,7 @@ ms.locfileid: "38627497"
 
 [![適用於高度管制資料的 Teams 海報](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
-您也可以用 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) 格式下載此海報，以及用 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
+您也可以用 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) 或 [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) 格式下載此海報，以及用 Letter、Legal 或 Tabloid (11 x 17) 大小的紙張列印此海報。
 
 ## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>階段 1：針對高度管制資料設定小組
 
@@ -213,6 +213,10 @@ ms.locfileid: "38627497"
   您可以在 SharePoint 檢視資料夾，然後透過 [新增欄]**** 的 [顯示/隱藏欄]**** 選項新增 [敏感度]**** 欄，查看哪些檔案有被指派標籤。
 
 視需要重新訓練您的使用者。
+
+## <a name="how-the-contoso-corporation-used-a-secure-team-for-a-top-secret-project"></a>Contoso Corporation 如何使用安全小組來進行最機密的專案
+
+Contoso Corporation 是虛構但具代表性的全球製造業集團。 瞭解 Contoso 如何設定並推動採用[安全小組](contoso-team-for-top-secret-project.md)進行一項最高機密的專案：亦即開發一套新的產品和服務，並將它們推向市場。 
 
 ## <a name="see-also"></a>另請參閱
 
