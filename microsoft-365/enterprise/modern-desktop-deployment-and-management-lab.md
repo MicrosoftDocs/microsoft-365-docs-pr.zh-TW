@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: b8d6ae3a6721a3563cc68fcec9dd7f9d470bb31e
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: c3d3c8047e6814a56ec6470a9166fd0c13eb6839
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031108"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718632"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署的 Lab Kit
 
@@ -36,7 +36,7 @@ ms.locfileid: "38031108"
 
 實驗室可讓您自動佈建虛擬實驗室環境，包括網域結合的桌面用戶端、網域控制站、網際網路閘道，以及完整設定的 ConfigMgr 執行個體。實驗室包含下列產品的評估版本：
 
-  - Windows 10 企業版，版本 1903
+  - Windows 10 企業版，版本 1909
   - Windows 7 Enterprise
   - System Center Configuration Manager，版本 1902
   - Windows Assessment and Deployment Kit for Windows 10，版本 1903
@@ -118,7 +118,7 @@ ms.locfileid: "38031108"
 
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**下載 Windows 和 Office 部署的 Lab Kit**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-*請使用寬頻來下載此內容，以強化您的下載體驗，並允許 30-45 分鐘進行自動佈建。實驗室環境最少需要 16 GB 可用記憶體及 150 GB 可用磁碟空間。如需最佳效能，建議使用 32 GB 可用記憶體。實驗室將在 2019 年 11 月 16 日到期。到期之前，將會發佈新的版本。*
+*請使用寬頻來下載此內容，以強化您的下載體驗，並允許 30-45 分鐘進行自動佈建。實驗室環境最少需要 16 GB 可用記憶體及 150 GB 可用磁碟空間。如需最佳效能，建議使用 32 GB 可用記憶體。實驗室將在 2020 年 2 月 15 日到期。到期之前，將會發佈新的版本。*
 
 ## <a name="additional-guidance"></a>**其他指引**
 
