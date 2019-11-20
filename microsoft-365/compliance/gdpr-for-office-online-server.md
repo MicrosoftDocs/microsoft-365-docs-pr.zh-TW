@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: 深入了解如何在內部部署 Exchange Server 中解決 GDPR 需求。
-ms.openlocfilehash: 9b15934f598adcd692d8c47358db357bcea58814
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b1cf86beeeb195396e45e0bc262f1d1b81b21057
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076299"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749692"
 ---
 # <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>適用於 Office Web Apps Server 和 Office Online Server 的 GDPR
 
-Office Online Server 和 Office Web Apps Server 遙測資料是以 ULS 記錄的形式儲存。您可以使用 [ULS 檢視器](https://www.microsoft.com/en-us/download/details.aspx?id=44020)，從您的內部部署租用戶檢視 ULS 記錄。
+Office Online Server 和 Office Web Apps Server 遙測資料是以 ULS 記錄的形式儲存。您可以使用 [ULS 檢視器](https://www.microsoft.com/download/details.aspx?id=44020)，從您的內部部署租用戶檢視 ULS 記錄。
 
 每個記錄行包含 CorrelationID。相關的記錄行會共用相同的 CorrelationID。每個 CorrelationID 繫結至單一 SessionID，而一個 SessionID 可能與許多 CorrelationID 相關。每個 SessionID 可能與單一 UserID 相關，某些工作階段是匿名的，因此沒有相關聯的 UserID。為了判斷哪些資料與特定使用者相關聯，會從單一 UserID 對應至與該使用者相關聯的 SessionID、從這些 SessionID 對應至相關聯的 CorrelationID，然後從這些 CorrelationID 對應至這些相互關聯中的所有記錄。請參閱下圖以了解不同識別碼之間的關係。
 

@@ -10,14 +10,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 6b616da44266dd7ab6bbc15dbdbeb270523c14eb
-ms.sourcegitcommit: d9e9788abb31f6c876f81326569ccc9b716fc1c0
+ms.openlocfilehash: 5ca54ce47fbd9abf464cf51c36dfeb08d61f7b28
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37422360"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749700"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-dynamics-365"></a>資料保護影響評估：資料控制者使用 Dynamics 365 的指引
 
@@ -56,7 +58,7 @@ GDPR 第 35 條規定，「如果某種處理，特別是使用新技術，並�
 | 資料保留 | Microsoft 將在客戶使用服務的權利期間保留客戶資料，直到根據客戶指示或線上服務條款的條款刪除或退回所有客戶料。在客戶訂閱期間的任何時候，客戶都可以存取和擷取儲存在服務中的客戶資料。Microsoft 將在客戶訂閱到期或終止訂閱後的 90 天內，將儲存在線上服務中的客戶資料保留在功能有限的帳戶中，以便客戶可以存取資料。90 天的保留期結束後，Microsoft 將停用客戶的帳戶並刪除客戶資料。<br><br>客戶隨時可以使用 Dynamics 的 *資料主體權利指南*中描述的功能，刪除客戶資料和假名化資料。 |
 | 個人資料的位置和傳輸 | 如果客戶將其 Dynamics 365 核心服務執行個體佈建在澳大利亞、加拿大、歐盟、印度、日本、英國或美國，Microsoft 會將靜態客戶資料儲存在指定的地理區域內，但受限於線上服務條款中的某些例外情況。 有關客戶資料儲存的詳細資訊，可以在[信任中心](https://www.microsoft.com/trustcenter/cloudservices/dynamics365)找到。<br><br>針對來自歐洲經濟區和瑞士的個人資料，Microsoft 會確保個人資料傳輸給第三國或國際組織時受到 GDPR 第 46 條所述適當保護措施的保護。Microsoft 除了遵守處理者的「標準合約條款」以及其他定型化契約的承諾外，還通過了「歐盟-美國」和「瑞士-美國」隱私盾框架及其限定承諾的認證。 |
 | 資料主體權利 | 作為處理者運行時，Microsoft 向客戶 (資料控制者) 提供其資料主體的個人資料，並在 GDPR 下行使其權利履行資料主體請求的能力。我們以符合產品功能和處理者角色的方式進行操作。如果我們收到客戶的資料主體要求行使他們根據 GDPR 的一或多項權利，我們會引導資料主體直接向資料控制者提出要求。<br><br>*Dynamics 365 資料主體要求 GDPR 文件*中說明如何使用 Dynamics 的功能支援資料主題權利。 |
-| 評估與目的有關的處理操作的必要性和比例性 | 這類評估取決於控制者的需求和處理的目的。<br><br>在處理者能力中，Microsoft 提供 D365 來處理個人資料只是為了能提供客戶線上服務，包括符合目的並提供這些服務，例如客戶的個人化、安全性、網路詐騙和惡意程式碼防護、疑難排解、改進。Microsoft 代表客戶 (租用戶) 在有需要時處理資料，以提供客戶要求且事前在線上服務條款 (http://microsoft.com/licensing/contracts) 中約定的服務。 |
+| 評估與目的有關的處理操作的必要性和比例性 | 這類評估取決於控制者的需求和處理的目的。<br><br>在處理者能力中，Microsoft 提供 D365 來處理個人資料只是為了能提供客戶線上服務，包括符合目的並提供這些服務，例如客戶的個人化、安全性、網路詐騙和惡意程式碼防護、疑難排解、改進。Microsoft 代表客戶 (租用戶) 在有需要時處理資料，以提供客戶要求且事前在線上服務條款 (https://microsoft.com/licensing/contracts) 中約定的服務。 |
 | 評估資料主體的權利和自由風險  | 資料主體使用 Dynamics 365 在權利和自由方面的主要風險將取決於資料控制者如何以及在何種情況下實作、設定及使用 Dynamics 365。<br><br>但是，與任何服務一樣，服務中保存的個人資料可能存在未經授權的存取或無意揭露的風險。下面討論 Microsoft 為解決這些風險所採取的措施。 |
 | 旨在解決風險的措施，包括保障措施、安全措施和機制，以確保保護個人資料，並在考慮到資料主體和其他有關人員的權利和合法利益的情況下證明符合 GDPR | Microsoft 致力於協助保護客戶資訊的安全性。 根據 GDPR 第 32 條的規定，Microsoft 已經並將保持並遵循適當的技術和組織措施，旨在保護客戶資料和支援資料，避免遭受意外、未經授權或非法的存取、洩漏、更改、遺失或銷毀。<br><br>如需 Dynamics 365 實作的安全性中 Microsoft 管理控制項目 (技術和業務流程控制) 詳細清單，請前往[服務信任入口網站](https://servicetrust.microsoft.com/)。 此外，Microsoft 遵守適用於資料處理者的所有其他 GDPR 義務，包括但不限於提供資料保護影響評估和準確的記錄保存。 |
 

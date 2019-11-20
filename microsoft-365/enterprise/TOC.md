@@ -83,6 +83,7 @@
 ### [行動裝置管理](contoso-mdm.md)
 ### [資訊保護](contoso-info-protect.md)
 ### [安全性摘要](contoso-security-summary.md)
+### [用於高度機密專案的團隊](contoso-team-for-top-secret-project.md)
 ### [適用於高度管制資料的 SharePoint 網站](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
 ## [Microsoft 365 企業版部署內容的變更](microsoft-365-deploment-guide-changes.md)
 # [桌面部署中心](desktop-deployment-center-home.md)

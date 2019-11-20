@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 11bf048dd1cd913d8344929b5025a65638d47f4b
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: cfd39d25689785be2af80008b6d823beb5a7bc01
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078933"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749689"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般資料保護摘要
 
@@ -29,9 +31,9 @@ ms.locfileid: "35078933"
 
 本文件中使用的 GDPR 術語的實用定義：
 
-- *資料控制者 (控制者)*：法律人員、公開授權單位、公司或其他實體，不論單獨或聯合其他單位，會決定個人資料處理方式的用途及方式。  
-- *個人資料*和*資料主體*：與已識別或可識別的自然人 (資料主體) 相關的任何資訊；可識別的自然人為可直接或間接識別的個人。  
-- *處理者：* 自然人或法人、公家機關、公司，或代表控制者處理個人資料的其他主體。  
+- 資料控制者 (控制者)**：法律人員、公開授權單位、公司或其他實體，不論單獨或聯合其他單位，會決定個人資料處理方式的用途及方式。  
+- 個人資料** 和資料主體**：與已識別或可識別的自然人 (資料主體) 相關的任何資訊；可識別的自然人為可直接或間接識別的個人。  
+- 處理者：** 自然人或法人、公家機關、公司，或代表控制者處理個人資料的其他主體。  
 - *客戶資料*：在公司運作的日常作業中產生並儲存的資料。
 
 ## <a name="what-is-the-gdpr"></a>GDPR 是什麼？
@@ -66,7 +68,7 @@ GDPR 提供人員管理組織中收集之個人資料的權限。 透過資料�
 - **完成 DSR需要何種動作？**：DSRs 包含六種動作：探索、存取、改正、限制、匯出和刪除。
 - **資料來源為何？**：大部分的組織資料在 [Office 應用程式](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs)中產生，例如 Excel 和 Outlook。 您還可以在 Microsoft 產品和服務產生的[深入解析](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365)和[系統產生的記錄](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs)中找到 DSR 相關資料。
 - **需要搜尋何種資料？**：個人資料可能會出現在客戶資料，Microsoft 產品和服務產生的深入解析，以及系統產生的記錄中。
-- **如何搜尋個人資料？**：搜尋的個人資料可能會因 Microsoft 產品和服務而有所不同。 搜尋工具包含[內容搜尋](https://docs.microsoft.com/zh-TW/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs)，或[應用程式內搜尋](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-in-app-functionality-to-respond-to-dsrs)容量。 系統管理員可以存取使用者活動相關聯之[系統產生的記錄](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs)。  
+- **如何搜尋個人資料？**：搜尋的個人資料可能會因 Microsoft 產品和服務而有所不同。 搜尋工具包含[內容搜尋](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs)，或[應用程式內搜尋](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-in-app-functionality-to-respond-to-dsrs)容量。 系統管理員可以存取使用者活動相關聯之[系統產生的記錄](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs)。  
 - **個人資料該以何種格式呈現？**：GDPR「資料可攜帶權」允許資料主體以「經過結構化、常用的、機器可讀取的格式」，要求其個人資料的複本，以及要求貴組織將這些檔案傳輸給另一個資料控制者。
 
 ### <a name="data-protection-impact-assessment"></a>資料保護影響評估

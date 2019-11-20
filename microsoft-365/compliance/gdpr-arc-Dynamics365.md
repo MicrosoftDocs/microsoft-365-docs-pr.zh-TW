@@ -9,14 +9,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 5b41775a4ab68f1738748f6726842472288ce8f1
-ms.sourcegitcommit: d9e9788abb31f6c876f81326569ccc9b716fc1c0
+ms.openlocfilehash: 055c19715ff5dcd28ae05489600a31b2f7904e72
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37422390"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749711"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>符合 GDPR 的 Dynamics 365 責任整備程度檢查清單
 
@@ -128,7 +130,7 @@ ms.locfileid: "37422390"
 |||
 |:-----|:-----|
 |**識別碼**|**描述/連結**|
-| 1 <a name="1"> </a> | [線上服務條款](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
+| 1 <a name="1"> </a> | [線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
 | 2 <a name="2"> </a> | [Dynamics 365 針對客戶資料保護影響評估的重要資訊](https://servicetrust.microsoft.com/ViewPage/GDPRDPIA?command=Download&downloadType=Document&downloadId=ef2902bb-3137-4f4a-8ca6-af35afaa6bec&docTab=2ba9a350-555c-11e8-b74a-77b1f31da06e_DPIA) |
 | 3 <a name="3"> </a> | [Dynamics 365 中的稽核和報告](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing) |
 | 4 <a name="4"> </a> | [GDPR 的 Dynamics 365 資料主體要求](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) |
@@ -138,9 +140,9 @@ ms.locfileid: "37422390"
 | 8 <a name="8"> </a> | [Dynamics 365 SOC 2 Type 2 報告和橋接字母](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=e06a247d-af6b-4933-8074-1002757984bd&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 9 <a name="9"> </a> | [Dynamics 365 - 探索內建安全性功能](https://www.microsoft.com/trustcenter/security/dynamics365-security) |
 | 10 <a name="10"> </a> | [誰根據哪些條款可以存取資料](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
-| 11 <a name="11"> </a> | [子處理者的合約：與 Microsoft 訂立合約](https://www.microsoft.com/zh-TW/procurement/supplier-contracting.aspx#SSPA) |
+| 11 <a name="11"> </a> | [子處理者的合約：與 Microsoft 訂立合約](https://www.microsoft.com/procurement/supplier-contracting.aspx#SSPA) |
 | 12<a name="12"> </a>  | [GDPR 規定的 Dynamics 365 外洩通知](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) |
-| 13 <a name="13"> </a> | [Microsoft 信任中心合規性供應項目](https://www.microsoft.com/trustcenter/compliance/complianceofferings) |
+| 13 <a name="13"> </a> | [Microsoft 信任中心合規性供應項目](offering-home.md) |
 | 14 <a name="14"> </a> | [Dynamics 365 滲透測試和安全性評估報告](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=25aa47b1-c510-43f2-84de-6b78ed3b1258&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Pen_Test_and_Security_Assessments) |
 | 15 <a name="15"> </a> | [合規性管理員](https://servicetrust.microsoft.com/ComplianceManager) |
 | 16 <a name="16"> </a> | [Microsoft DPO 資訊](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer) |

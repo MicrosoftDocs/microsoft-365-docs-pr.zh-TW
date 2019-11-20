@@ -9,13 +9,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: b605bfa3d549b3359f8bb780cfffa7306db44d2d
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.collection:
+- GDPR
+- M365-security-compliance
+hideEdit: true
+ms.openlocfilehash: 92d7e08c17d2f67781b5d261e103717ab57578d9
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982409"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749713"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>符合 GDPR 的 Azure 責任整備程度檢查清單
 
@@ -111,21 +114,21 @@ ms.locfileid: "36982409"
 | ***資訊傳輸原則和程序 (6.10.1)*** | 客戶應設有在實體媒體間傳輸個人資料 (例如在伺服器或設施之間移動硬碟) 的流程。這可能包括記錄、授權和追蹤。這可能包括記錄、授權和追蹤。若由第三方或其他處理者來傳輸實體媒體，則客戶應確保該組織設有適當的流程，可確保個人資料的安全性。 | Microsoft 服務如何傳輸可能包含個人資料的實體媒體，包括可能發生傳輸的情況，以及為保護資料而採取的保護措施。<br>- FedRAMP 中度 FedRAMP 系統安全性計劃** [[3](gdpr-arc-Azure.md#3)] 請參閱「13.10 媒體保護 (MP)」 | (5)(1)(f) |
 | ***機密或保密協議 (6.10.2)*** | 客戶應針對有權存取個人資料的個人，或其責任與個人資料相關的個人，判斷與其訂定保密協議或等同文件的必要性。  | Microsoft 服務如何確保有權存取個人資料的個人致力於保密。<br>- *SOC 2 Type 2 稽核報告* [[12](gdpr-arc-Azure.md#12)]，請參閱 CC1.4 pp72，SOC2 - 13 | (5)(1)(f)、(28)(3)(b)、(38)(5) |
 | ***在公用網路上保護應用程式服務 (6.11.1)*** | 客戶應該了解加密個人資料的規定，特別是透過公用網路傳送資料的情況。系統有提供加密資料的機制時，客戶應在必要時使用這些機制。 | 說明 Microsoft 服務為了保護傳輸中的資料所採取的措施 (包括資料加密)，以及 Microsoft 服務如何在透過公用資料網路傳送可能包含個人資料的資料時，對資料進行保護 (包括任何加密措施)。<br>- Azure 安全性文件 [[2](gdpr-arc-Azure.md#2)]，請參閱「[使用加密保護傳輸中個人資料](https://docs.microsoft.com/azure/security/protect-personal-data-in-transit-encryption)」 | (5)(1)(f)、(32)(1)(a) |
-| ***安全的系統工程原則 (6.11.2)*** | 客戶應了解系統的設計和運作方式，以考慮保護個人資料的方法。 若客戶使用由第三方設計的系統，則他們要負責確保已考慮這類保護。 | Microsoft 服務如何將個人資料保護原則，當作安全設計/工程原則不可或缺的一部分。<br>- SOC 2 Type 2 稽核報告 [12]，請參閱 CC7.1 pp90 以及[什麼是安全性開發生命週期？](https://www.microsoft.com/sdl/) | (25)(1) |
-| ***供應商關係 (6.12)*** | 客戶應確保在合約資訊或其他協議中，提及所有的資訊安全性和個人資料保護規定，以及第三方對上述兩者的責任。 協議也應載明處理方式的指示。 | 在 Microsoft 服務與供應商達成的協議中，關於安全性和資料保護的條款，以及 Microsoft 如何確保這些協議能有效實施。<br>- 誰根據哪些條款可以存取您的資料 [[7](gdpr-arc-Azure.md#7)] | (5)(1)(f)、(28)(1)、(28)(3)(a)、(28)(3)(b)、(28)(3)(c)、(28)(3)(d)、(28)(3)(e)、(28)(3)(f)、(28)(3)(g)、(28)(3)(h),(30)(2)(d)、(32)(1)(b) |
+| ***安全的系統工程原則 (6.11.2)*** | 客戶應了解系統的設計和架設方式，以便考慮如何進行個人資料保護。若客戶使用由第三方架設的系統，便有責任確保已考慮過此類保護措施。 | Microsoft 服務如何將個人資料保護原則，當作安全設計/工程原則不可或缺的一部分。<br>- SOC 2 Type 2 稽核報告 [12]，請參閱 CC7.1 pp90 以及[什麼是安全性開發生命週期？](https://www.microsoft.com/sdl/) | (25)(1) |
+| ***供應商關係 (6.12)*** | 客戶應確保在合約資訊或其他協議中，提及所有的資訊安全性和個人資料保護規定，以及第三方對上述兩者的責任。協議也應載明處理方式的指示。 | 在 Microsoft 服務與供應商達成的協議中，關於安全性和資料保護的條款，以及 Microsoft 如何確保這些協議能有效實施。<br>- 誰根據哪些條款可以存取您的資料 [[7](gdpr-arc-Azure.md#7)] | (5)(1)(f)、(28)(1)、(28)(3)(a)、(28)(3)(b)、(28)(3)(c)、(28)(3)(d)、(28)(3)(e)、(28)(3)(f)、(28)(3)(g)、(28)(3)(h),(30)(2)(d)、(32)(1)(b) |
 | ***管理資訊安全性事件和增強功能 (6.13.1)*** | 客戶應該要有能夠判斷何時發生了個人資料外洩的程序。 | Microsoft 服務如何判斷安全性事件是否外洩了個人資料，以及我們如何向您傳達外洩行為。<br>-Azure 和 GDPR 規定的外洩通知** [[10](gdpr-arc-Azure.md#10)] | (33)(2) |
 | ***職責和程序 (在資訊安全性事件期間) (6.13.2)*** | 在涉及個人資料的資料外洩或安全性事件期間，客戶應了解並記錄自己的責任。這些責任可能包括通知規定的各方、與處理者或其他第三方進行溝通，以及客戶組織內部的責任。 | 如果您察覺到安全性事件或個人資料外洩，如何通知 Microsoft 服務。<br>-Azure 和 GDPR 規定的外洩通知** [[10](gdpr-arc-Azure.md#10)] | (5)(1)(f)、(33)(1)、(33)(3)(a)、(33)(3)(b)、(33)(3)(c)、(33)(3)(d)、(33)(4)、(33)(5)、(34)(1)、(34)(2)、(34)(3)(a)、(34)(3)(b)、(34)(3)(c)、(34)(4) |
 | ***回應資訊安全性事件 (6.13.3)*** | 客戶應該要有能夠判斷何時發生了個人資料外洩的程序。 | 說明 Microsoft 服務為了協助您確定是否發生了個人資料外洩的情況，所提供的資訊。<br>- Azure 和 GDPR 規定的外洩通知** [[10](gdpr-arc-Azure.md#10)] | (33)(1)、(33)(2)、(33)(3)(a)、(33)(3)(b)、(33)(3)(c)、(33)(3)(d)、(33)(4)、(33)(5)、(34)(1)、(34)(2) |
 | ***保護記錄 (6.15.1)*** | 客戶應了解需要維護且與個人資料處理相關的記錄之規定。 | Microsoft 服務如何儲存與處理個人資料相關的記錄。<br>- 使用者的 Azure 安全性文件註冊。<br>- Azure 安全性文件 [[2](gdpr-arc-Azure.md#2)] 請參閱「[以 Azure 報告工具保護文件中的個人資料](https://docs.microsoft.com/azure/security/protection-personal-data-azure-reporting-tools)」 | (5)(2)、(24)(2)  |
-| ***對資訊安全性的獨立審查 (6.15.2)*** | 客戶應了解評估個人資料處理安全性的需求。 這可能會包括內部或外部稽核，或評估安全性處理的其他方法。 如果客戶依賴第三方的其他組織進行全部或部分資訊處理，則應收集由其執行這類評估的相關訊息。 | Microsoft 服務如何測試和評估技術和組織措施的有效性，以確保處理的安全性，包括第三方的任何稽核。<br/>Microsoft 線上服務條款、資料保護條款，請參閱「資料安全性，稽核合規性」** [[1](gdpr-arc-Azure.md#1)] | (32)(1)(d)、(32)(2) |
-| ***技術合規性審查 (6.15.3)*** | 客戶應了解測試和評估處理個人資料安全性的要求。 這可能包括技術測試，例如滲透測試。 如果客戶使用第三方的系統或處理器，則應了解在保護和測試安全性上應負的責任 (例如，管理設定以保護資料安全，然後測試這些設定)。 如果第三方負責全部或部分的安全性處理，則客戶應了解第三方執行的測試或評估，以確保安全性的處理。 | Microsoft 服務如何根據已識別的風險測試安全性，包括第三方的測試，以及技術測試類型和測試的任何可用報告。<br>- Microsoft 線上服務條款、資料保護條款，請參閱「資料安全性，稽核合規性」** [[1](gdpr-arc-Azure.md#1)]<br>- 如需外部憑證的清單，請參閱 **Microsoft 信任中心合規性**供應項目 [[14](gdpr-arc-Azure.md#14)]<br>- 如需有關滲透測試應用程式的詳細資訊，請參閱 *Azure 安全性文件* [[2](gdpr-arc-Azure.md#2)] [畫筆測試](https://docs.microsoft.com/azure/security/azure-security-pen-testing) | (32)(1)(d)、(32)(2) |
+| ***對資訊安全性的獨立審查 (6.15.2)*** | 客戶應該了解評估個人資料處理安全性的規定。這可能包括內部或外部稽核、或其他評估處理安全性的措施。如果客戶依賴其他第三方組織進行全部或部分處理，則應收集該組織所進行評估的相關資訊。 | Microsoft 服務如何測試和評估技術和組織措施的有效性，以確保處理的安全性，包括第三方的任何稽核。<br/>Microsoft 線上服務條款、資料保護條款，請參閱「資料安全性，稽核合規性」** [[1](gdpr-arc-Azure.md#1)] | (32)(1)(d)、(32)(2) |
+| ***技術合規性審查 (6.15.3)*** | 客戶應該了解處理個人資料安全性的測試和評估規定。這可能包括技術測試，如滲透測試。在客戶使用第三方系統或處理者的情況下，應了解自己在保護和測試安全方面承擔了哪些責任 (例如，管理設定以保護資料，然後測試這些組態設定)。如果第三方負責處理的全部或部分安全性，客戶應該了解第三方為了確保處理的安全性而進行的測試或評估。 | Microsoft 服務如何根據已識別的風險測試安全性，包括第三方的測試，以及技術測試類型和測試的任何可用報告。<br>- Microsoft 線上服務條款、資料保護條款，請參閱「資料安全性，稽核合規性」** [[1](gdpr-arc-Azure.md#1)]<br>- 如需外部憑證的清單，請參閱 **Microsoft 信任中心合規性**供應項目 [[14](gdpr-arc-Azure.md#14)]<br>- 如需有關滲透測試應用程式的詳細資訊，請參閱 *Azure 安全性文件* [[2](gdpr-arc-Azure.md#2)] [畫筆測試](https://docs.microsoft.com/azure/security/azure-security-pen-testing) | (32)(1)(d)、(32)(2) |
 
 ## <a name="6-bibliography-of-resources-and-links"></a>6. 資源的參考書目和連結
 
 ||||
 |:-----|:-----|:-------|
 |**識別碼**|**描述/連結**|
-| 1 <a name="1"> </a> | [線上服務條款](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
+| 1 <a name="1"> </a> | [線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
 | 2 <a name="2"></a>  | [Azure 安全性文件](https://docs.microsoft.com/azure/security/)，請參閱「控管和合規性，GDPR」 |
 | 3 <a name="3"> </a> | [FedRAMP 中度 FedRAMP 系統安全性計劃 (SSP)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=e46a519a-bcf6-4dc2-8f60-6d0e4e00a85e&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_FedRAMP_Reports) |
 | 4 <a name="4"> </a>   | [Microsoft 雲端安全性原則](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5868ecc8-50b7-4f91-b43f-640e2b99e86e&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)  |
@@ -138,7 +141,7 @@ ms.locfileid: "36982409"
 | 11 <a name="11"> </a> | [Azure 針對客戶資料保護影響評估的重要資訊](https://aka.ms/DPIAAzure) |
 | 12 <a name="12"> </a> | [SOC 2 Type 2 稽核報告 [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure (全部版本) ISO/IEC 27001:2013 ISMS 適用性聲明](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
-| 14 <a name="14"> </a> | [Microsoft 信任中心合規性供應項目](https://www.microsoft.com/trustcenter/compliance/complianceofferings)  |
+| 14 <a name="14"> </a> | [Microsoft 信任中心合規性供應項目](offering-home.md)  |
 | 15 <a name="15"> </a> | [Intune 中的隱私權和個人資料](https://review.docs.microsoft.com/intune/privacy-personal-data) |
 | 16 <a name="16"> </a> | [完成可下載 Azure GDPR 控制集](https://aka.ms/GDPRControls)或透過[合規性管理員工具](https://servicetrust.microsoft.com/ComplianceManager) |
 | 17 <a name="17"> </a> | [Microsoft DPO 資訊](https://aka.ms/GDPRDPO) |

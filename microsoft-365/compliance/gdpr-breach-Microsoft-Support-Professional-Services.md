@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 3a07400f6c3e788734b4d959080e2008eb7b0cfe
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: c4e9cdeb953e01ee44caa1ba8031332da4e245be
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698285"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749705"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>GDPR 規定的 Microsoft 支援服務與專業服務以及外洩通知
 
@@ -27,7 +29,7 @@ Microsoft 專業服務的全球資料保護事件回應小組的魄力在於 (a)
 
 ## <a name="data-protection-incident-response-overview"></a>資料保護事件回應概觀 
 
-Microsoft 專業服務致力於保護其客戶並採取相當多的措施來預防發生資料保護事件，藉以維持客戶的信任感。專業服務組織中的資料保護事件是一個安全性缺口，會導致意外或非法損毀、遺失、變更、未經授權揭露或存取個人資料，或由 Microsoft 處理的支援或諮詢資料。對於已購買頂級支援、整合支援或 Microsoft 諮詢服務的商業客戶，您必須參照專業服務資料保護增補合約 (位於 <http://aka.ms/professionalservicesdpa/>) 中您的資料保護事件回應語言。
+Microsoft 專業服務致力於保護其客戶並採取相當多的措施來預防發生資料保護事件，藉以維持客戶的信任感。專業服務組織中的資料保護事件是一個安全性缺口，會導致意外或非法損毀、遺失、變更、未經授權揭露或存取個人資料，或由 Microsoft 處理的支援或諮詢資料。對於已購買頂級支援、整合支援或 Microsoft 諮詢服務的商業客戶，您必須參照專業服務資料保護增補合約 (位於 <https://aka.ms/professionalservicesdpa/>) 中您的資料保護事件回應語言。
 
 ## <a name="scope--limits-of-data-protection-incident-response-process"></a>資料保護事件回應程序的範圍與限制
 
@@ -54,7 +56,7 @@ Microsoft 專業服務會持續監視所有資料存放區 (包含個人資料 -
 Microsoft 專業服務所用的偵測程序主要用來探索資料保護事件及觸發調查作業。例如：
 
 - 資訊安全漏洞會回報到整個 Microsoft 的報告系統，以便轉介或直接向專業服務資料保護事件回應小組回報。
-- 客戶可透過[客戶支援入口網站](http://support.microsoft.com)提交報告，以描述可疑的活動。
+- 客戶可透過[客戶支援入口網站](https://support.microsoft.com)提交報告，以描述可疑的活動。
 - 專業服務人員會提交呈報。Microsoft 員工都受過訓練，可找出潛在的安全性問題並向上呈報。
 - 對於在提供專業人員服務的程序中所使用的工具和系統，作業小組會透過內部監視和警示架構使用自動化系統警示。這些警示是以 特徵型警訊 (例如反惡意程式碼、入侵偵測) 的方式提供，或透過設計用來分析預期活動以及在異常時提出警示的演算法提供。
 

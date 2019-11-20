@@ -9,14 +9,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 7b42333f23e674af07bf8acc15069d04605c5e84
-ms.sourcegitcommit: d9e9788abb31f6c876f81326569ccc9b716fc1c0
+ms.openlocfilehash: a0d261616446e94cb6d39ec3e9d67d6d3e3fe0c3
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37422420"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749710"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>符合 GDPR 的 Microsoft 支援服務與專業服務責任整備程度檢查清單
 
@@ -89,7 +91,7 @@ ms.locfileid: "37422420"
 | ***判斷資訊安全性管理系統的範圍 (5.2.3、5.2.4)*** | 客戶應將對個人資料的處理及其相關規定，包含在現有的任何整體安全性或隱私權計劃中。 | Microsoft 服務如何在資訊安全性管理和隱私權程式中包含個人資料處理。<br>- Microsoft 專業服務 ISO/IEC 27001:2013 ISMS 適用性聲明 [[12](gdpr-arc-prof-services.md#12)]<br>- ISO 27001 稽核報告 [[11](gdpr-arc-prof-services.md#11)] | (32)(2) |
 | ***規劃 (5.3)***| 客戶應將對個人資料的處理，視為所完成的任何風險評估中的一環，並採用所有判定為必要的控制措施，以降低所控制個人資料的相關風險。 | Microsoft 服務如何將個人資料處理特有的風險，視為其整體安全性和隱私權計劃的一部分。<br>- Microsoft 專業服務 ISO/IEC 27001:2013 ISMS 適用性聲明 [[12](gdpr-arc-prof-services.md#12)] | (32)(1)(b)、(32)(2) |
 | ***資訊安全性原則 (6.2)*** | 客戶應增強任何現有的資訊安全性原則，納入個人資料保護，包括遵守任何適用法律所需的原則。| 資訊安全性及個人資訊保護任何特定量值的 Microsoft 原則。<br>- Microsoft 專業服務 ISO/IEC 27001:2013 ISMS 適用性聲明 [[12](gdpr-arc-prof-services.md#12)]<br>- ISO 27001 稽核報告 [[11](gdpr-arc-prof-services.md#11)] | 24(2) |
-| ***資訊安全性組織的客戶考量 (6.3)*** | 客戶應該在其組織中定義保護個人資料安全的責任。 這可能包括建立監督隱私權相關問題 (包含 DPO) 的特定角色。 應提供適當的訓練與管理支援以支援這些角色。 | Microsoft 已發佈 Microsoft 資料保護人員資訊、職責特性、報告結構和連絡資訊。<br>－Microsoft DPO 資訊 [[13](gdpr-arc-prof-services.md#13)] | (37)(1)(a)、(37)(1)(b)、(37)(1)(c)、(37)(2)、(37)(3)、(37)(4)、(37)(5)、(37)(6)、(37)(7)、(38)(1)、(38)(2)、(38)(3)、(38)(4)、(38)(5)、(38)(6)、(39)(1)(a)、(39)(1)(b)、(39)(1)(c)、(39)(1)(d)、(39)(1)(e)、(39)(2) |
+| ***資訊安全性組織的客戶考量 (6.3)*** | 客戶應該在其組織內界定個人資料的安全性和保護責任。這可能包括設立特定角色 (包括 DPO) 來監督與隱私權相關的事宜。並應提供適當的訓練和管理支援來支援這些角色。 | Microsoft 已發佈 Microsoft 資料保護人員資訊、職責特性、報告結構和連絡資訊。<br>－Microsoft DPO 資訊 [[13](gdpr-arc-prof-services.md#13)] | (37)(1)(a)、(37)(1)(b)、(37)(1)(c)、(37)(2)、(37)(3)、(37)(4)、(37)(5)、(37)(6)、(37)(7)、(38)(1)、(38)(2)、(38)(3)、(38)(4)、(38)(5)、(38)(6)、(39)(1)(a)、(39)(1)(b)、(39)(1)(c)、(39)(1)(d)、(39)(1)(e)、(39)(2) |
 | ***人力資源安全性 (6.4)*** | 客戶應判斷並界定好責任，以便提供與保護個人資料相關的訓練。 | 概述 Microsoft 資料保護人員的角色、職責特性、報告結構和連絡資訊。<br>- Microsoft 專業服務 ISO/IEC 27001:2013 ISMS 適用性聲明 [[12](gdpr-arc-prof-services.md#12)]<br>- 訓練和認知程式說明 [[3](gdpr-arc-prof-services.md#3)] | (39)(1)(b) |
 | ***資訊分類 (6.5.1)*** | 客戶應該明確地將個人資料視為資料分類配置的一部分。 | Microsoft 如何以資料分類、標記和追蹤資訊來考量個人資料。<br>- Microsoft 專業服務針對客戶資料保護影響評估的重要資訊 [[10](gdpr-arc-prof-services.md#10)] | (39)(1)(b) |
 | ***管理抽取式媒體 (6.5.2)*** | 客戶應決定使用抽取式媒體的內部政策，因為這涉及到個人資料的保護 (例如加密裝置)。 | Microsoft 服務如何保護任何抽取式媒體上個人資訊的安全性。<br>- Microsoft 專業服務 ISO/IEC 27001:2013 ISMS 適用性聲明 [[12](gdpr-arc-prof-services.md#12)]<br>- Microsoft 專業服務控制集 [[5](gdpr-arc-prof-services.md#5)] | (32)(1)(a)、(5)(1)(f) |
@@ -101,7 +103,7 @@ ms.locfileid: "37422420"
 | ***安全的登入程序 (6.6.5)*** | 客戶應該利用服務中所提供的機制，確保必要時為其使用者提供安全的登入功能。 | Microsoft 服務如何支援與個人資料相關的內部存取控制原則。<br>- 誰根據哪些條款可以存取您的資料 [[7](gdpr-arc-prof-services.md#7)] | (5)(1)(f) |
 | ***密碼編譯 (6.7)*** | 客戶應該判斷哪些資料需要加密，以及正在使用的服務是否提供了這種功能。客戶應該根據需要以可用的工具來加密資料。 | Microsoft 服務如何支援加密及假名，以降低處理個人資料的風險。<br>- Microsoft 信任中心的 Microsoft 專業服務安全性文件 [[2](gdpr-arc-prof-services.md#2)] | (32)(1)(a) |
 | ***安全處置或重複使用設備 (6.8.1)*** | 在客戶使用雲端計算服務 (PaaS、SaaS、IaaS) 的情況下，應該了解雲端提供者如何確保在將儲存空間分配給其他客戶之前，將客戶的個人資料從該空間中刪除。 | Microsoft 專業服務如何確保在專業服務期間利用 Microsoft Azure 雲端計算服務時，在儲存體設備傳輸或重複使用之前，從該設備清除個人資料。<br>- Microsoft 專業服務資料安全性 (資料清除和外洩) [[4](gdpr-arc-prof-services.md#4)] | (5)(1)(f) |
-| ***清除桌面及清除螢幕原則 (6.8.2)*** | 客戶應考慮可能會顯示個人資料之實體副本材料的風險，並可能限制這類資料的建立。 在使用的系統上提供功能來加以限制 (例如，避免列印或複製/貼上機密資料的設定)，客戶應考慮使用這些功能的需求。 | Microsoft 實施了哪些措施來管理實體副本。<br>- Microsoft 在內部保持這種控制機制，請參閱 Microsoft 專業服務 ISO/IEC 27001:2013 ISMS 適用性聲明 [[12](gdpr-arc-prof-services.md#12)]<br>- Microsoft 專業服務 GDPR 控制集 [[5](gdpr-arc-prof-services.md#5)] | (5)(1)(f) |
+| ***清除桌面及清除螢幕原則 (6.8.2)*** | 客戶應該考慮以實體副本顯示個人資料的相關風險，並考慮對此類資料的製作加以設限。在使用的系統有提供相關限制功能的情況下 (例如，可以設定禁止列印或複製/貼上敏感資料)，客戶應考慮利用這些功能的需要。 | Microsoft 實施了哪些措施來管理實體副本。<br>- Microsoft 在內部保持這種控制機制，請參閱 Microsoft 專業服務 ISO/IEC 27001:2013 ISMS 適用性聲明 [[12](gdpr-arc-prof-services.md#12)]<br>- Microsoft 專業服務 GDPR 控制集 [[5](gdpr-arc-prof-services.md#5)] | (5)(1)(f) |
 | ***區隔開發、測試和作業環境 (6.9.1)*** | 客戶應該考慮在組織內的開發和測試環境中使用個人資料，所造成的影響。 | Microsoft 如何確保個人資料在開發及測試環境中受到保護。<br>- Microsoft 專業服務 ISO/IEC 27001:2013 ISMS 適用性聲明 [[12](gdpr-arc-prof-services.md#12)]<br>- Microsoft 專業服務控制集 [[5](gdpr-arc-prof-services.md#5)] | (5)(1)(f) |
 | ***資訊備份 (6.9.2)*** | 客戶應確保使用系統提供的功能來建立資料備援，並在必要時進行測試。 | Microsoft 如何確保可提供可能包含個人資料的資料、如何確保所還原資料的正確性，以及 Microsoft 服務所提供、可讓您備份和還原資料的工具和程序。<br>- Microsoft 企業版商務持續性管理文件 [[6](gdpr-arc-prof-services.md#6)] | (32)(1)(c)、(5)(1)(f) |
 | ***事件記錄 (6.9.3)*** | 客戶應該了解系統所提供的記錄功能，並針對判定為與個人資料相關而有必要記錄的動作，利用這些功能來確保可加以記錄。 | Microsoft 服務為您記錄的資料，包括使用者活動、異常情況、故障、資訊安全事件；以及您可以如何存取這些記錄，來當作記錄保存的一部分。<br>- Microsoft 專業服務安全性文件 [[2](gdpr-arc-prof-services.md#2)]<br>- Microsoft 專業服務控制集 [[5](gdpr-arc-prof-services.md#5)] | (5)(1)(f) |
@@ -109,21 +111,21 @@ ms.locfileid: "37422420"
 | ***資訊傳輸原則和程序 (6.10.)*** | 客戶應設有在實體媒體間傳輸個人資料 (例如在伺服器或設施之間移動硬碟) 的流程。這可能包括記錄、授權和追蹤。這可能包括記錄、授權和追蹤。若由第三方或其他處理者來傳輸實體媒體，則客戶應確保該組織設有適當的流程，可確保個人資料的安全性。 | Microsoft 服務如何傳輸可能包含個人資料的實體媒體，包括可能發生傳輸的情況，以及為保護資料而採取的保護措施。<br>- Microsoft 專業服務 ISO/IEC 27001:2013 ISMS 適用性聲明 [[12](gdpr-arc-prof-services.md#12)]<br>- Microsoft 專業服務控制集 [[5](gdpr-arc-prof-services.md#5)] | (5)(1)(f) |
 | ***機密或保密協議 (6.10.2)*** | 客戶應針對有權存取個人資料的個人，或其責任與個人資料相關的個人，判斷與其訂定保密協議或等同文件的必要性。 | Microsoft 服務如何確保有權存取個人資料的個人致力於保密。<br>- Microsoft 專業服務 ISO/IEC 27001:2013 ISMS 適用性聲明 [[12](gdpr-arc-prof-services.md#12)]<br>- Microsoft 專業服務控制集 [[5](gdpr-arc-prof-services.md#5)] | (5)(1)(f)、(28)(3)(b)、(38)(5) |
 | ***在公用網路上保護應用程式服務 (6.11.1)*** | 客戶應該了解加密個人資料的規定，特別是透過公用網路傳送資料的情況。系統有提供加密資料的機制時，客戶應在必要時使用這些機制。 | 說明 Microsoft 服務為了保護傳輸中的資料所採取的措施 (包括資料加密)，以及 Microsoft 服務如何在透過公用資料網路傳送可能包含個人資料的資料時，對資料進行保護 (包括任何加密措施)。<br>- Microsoft 專業服務安全性文件 [[2](gdpr-arc-prof-services.md#2)] | (5)(1)(f)、(32)(1)(a) |
-| ***安全的系統工程原則 (6.11.2)*** | 客戶應了解系統的設計和運作方式，以考慮保護個人資料的方法。 若客戶使用由第三方設計的系統，則他們要負責確保已考慮這類保護。 | Microsoft 服務如何將個人資料保護原則，當作安全設計/工程原則不可或缺的一部分。<br>- Microsoft 專業服務 ISO/IEC 27001:2013 ISMS 適用性聲明 [[12](gdpr-arc-prof-services.md#12)]<br>- [安全性開發週期是什麼？](https://www.microsoft.com/sdl/) | (25)(1) |
-| ***供應商關係 (6.12)***| 客戶應確保在合約資訊或其他協議中，提及所有的資訊安全性和個人資料保護規定，以及第三方對上述兩者的責任。 協議也應載明處理方式的指示。 | 在 Microsoft 服務與供應商達成的協議中，關於安全性和資料保護的條款，以及 Microsoft 如何確保這些協議能有效實施。<br>- 誰根據哪些條款可以存取您的資料 [[7](gdpr-arc-prof-services.md#7)] | (5)(1)(f)、(28)(1)、(28)(3)(a)、(28)(3)(b)、(28)(3)(c)、(28)(3)(d)、(28)(3)(e)、(28)(3)(f)、(28)(3)(g)、(28)(3)(h),(30)(2)(d)、(32)(1)(b) |
+| ***安全的系統工程原則 (6.11.2)*** | 客戶應了解系統的設計和架設方式，以便考慮如何進行個人資料保護。若客戶使用由第三方架設的系統，便有責任確保已考慮過此類保護措施。 | Microsoft 服務如何將個人資料保護原則，當作安全設計/工程原則不可或缺的一部分。<br>- Microsoft 專業服務 ISO/IEC 27001:2013 ISMS 適用性聲明 [[12](gdpr-arc-prof-services.md#12)]<br>- [安全性開發週期是什麼？](https://www.microsoft.com/sdl/) | (25)(1) |
+| ***供應商關係 (6.12)***| 客戶應確保在合約資訊或其他協議中，提及所有的資訊安全性和個人資料保護規定，以及第三方對上述兩者的責任。協議也應載明處理方式的指示。 | 在 Microsoft 服務與供應商達成的協議中，關於安全性和資料保護的條款，以及 Microsoft 如何確保這些協議能有效實施。<br>- 誰根據哪些條款可以存取您的資料 [[7](gdpr-arc-prof-services.md#7)] | (5)(1)(f)、(28)(1)、(28)(3)(a)、(28)(3)(b)、(28)(3)(c)、(28)(3)(d)、(28)(3)(e)、(28)(3)(f)、(28)(3)(g)、(28)(3)(h),(30)(2)(d)、(32)(1)(b) |
 | ***管理資訊安全性事件和增強功能 (6.13.1)*** | 客戶應該要有能夠判斷何時發生了個人資料外洩的程序。 | Microsoft 服務如何判斷安全性事件是否外洩了個人資料，以及我們如何向您傳達外洩行為。<br>- GDPR 規定的 Microsoft 專業服務與外洩通知 [[9](gdpr-arc-prof-services.md#9)] | (33)(2) |
 | ***職責和程序 (在資訊安全性事件期間) (6.13.2)*** | 在涉及個人資料的資料外洩或安全性事件期間，客戶應了解並記錄自己的責任。這些責任可能包括通知規定的各方、與處理者或其他第三方進行溝通，以及客戶組織內部的責任。 | 如果您察覺到安全性事件或個人資料外洩，如何通知 Microsoft 服務。<br>- GDPR 規定的 Microsoft 專業服務與外洩通知 [[9](gdpr-arc-prof-services.md#9)] | (5)(1)(f)、(33)(1)、(33)(3)(a)、(33)(3)(b)、(33)(3)(c)、(33)(3)(d)、(33)(4)、(33)(5)、(34)(1)、(34)(2)、(34)(3)(a)、(34)(3)(b)、(34)(3)(c)、(34)(4) |
 | ***回應資訊安全性事件 (6.13.3)*** | 客戶應該要有能夠判斷何時發生了個人資料外洩的程序。 | 說明 Microsoft 服務為了協助您確定是否發生了個人資料外洩的情況，所提供的資訊。<br>- GDPR 規定的 Microsoft 專業服務與外洩通知 [[9](gdpr-arc-prof-services.md#9)] | (33)(1)、(33)(2)、(33)(3)(a)、(33)(3)(b)、(33)(3)(c)、(33)(3)(d)、(33)(4)、(33)(5)、(34)(1)、(34)(2) |
 | ***保護記錄 (6.15.1)*** | 客戶應了解需要維護且與個人資料處理相關的記錄之規定。 | Microsoft 服務如何儲存與處理個人資料相關的記錄。<br>- Microsoft 專業服務安全性文件 [[2](gdpr-arc-prof-services.md#2)] | (5)(2)、(24)(2) |
-| ***對資訊安全性的獨立審查 (6.15.2)*** | 客戶應了解評估個人資料處理安全性的需求。 這可能會包括內部或外部稽核，或評估安全性處理的其他方法。 如果客戶依賴第三方的其他組織進行全部或部分資訊處理，則應收集由其執行這類評估的相關訊息。 | Microsoft 服務如何測試和評估技術和組織措施的有效性，以確保處理的安全性，包括第三方的任何稽核。<br>- Microsoft 專業服務資料保護增訂版 [[1](gdpr-arc-prof-services.md#1)] | (32)(1)(d)、(32)(2)|
-| ***技術合規性審查 (6.15.3)*** | 客戶應了解測試和評估處理個人資料安全性的要求。 這可能包括技術測試，例如滲透測試。 如果客戶使用第三方的系統或處理器，則應了解在保護和測試安全性上應負的責任 (例如，管理設定以保護資料安全，然後測試這些設定)。 如果第三方負責全部或部分的安全性處理，則客戶應了解第三方執行的測試或評估，以確保安全性的處理。 | Microsoft 服務如何根據已識別的風險測試安全性，包括第三方的測試，以及技術測試類型和測試的任何可用報告 [[1](gdpr-arc-prof-services.md#1)]<br>- 如需外部憑證的清單，請參閱 Microsoft 信任中心合規性供應項目[[13](gdpr-arc-prof-services.md#13)]<br>- 如需用來測試應用程式的弱點詳細資訊，請參閱 Microsoft 專業服務安全性文件 [[2](gdpr-arc-prof-services.md#2)] | (32)(1)(d)、(32)(2) |
+| ***對資訊安全性的獨立審查 (6.15.2)*** | 客戶應該了解評估個人資料處理安全性的規定。這可能包括內部或外部稽核、或其他評估處理安全性的措施。如果客戶依賴其他第三方組織進行全部或部分處理，則應收集該組織所進行評估的相關資訊。 | Microsoft 服務如何測試和評估技術和組織措施的有效性，以確保處理的安全性，包括第三方的任何稽核。<br>- Microsoft 專業服務資料保護增訂版 [[1](gdpr-arc-prof-services.md#1)] | (32)(1)(d)、(32)(2)|
+| ***技術合規性審查 (6.15.3)*** | 客戶應該了解處理個人資料安全性的測試和評估規定。這可能包括技術測試，如滲透測試。在客戶使用第三方系統或處理者的情況下，應了解自己在保護和測試安全方面承擔了哪些責任 (例如，管理設定以保護資料，然後測試這些組態設定)。如果第三方負責處理的全部或部分安全性，客戶應該了解第三方為了確保處理的安全性而進行的測試或評估。 | Microsoft 服務如何根據已識別的風險測試安全性，包括第三方的測試，以及技術測試類型和測試的任何可用報告 [[1](gdpr-arc-prof-services.md#1)]<br>- 如需外部憑證的清單，請參閱 Microsoft 信任中心合規性供應項目[[13](gdpr-arc-prof-services.md#13)]<br>- 如需用來測試應用程式的弱點詳細資訊，請參閱 Microsoft 專業服務安全性文件 [[2](gdpr-arc-prof-services.md#2)] | (32)(1)(d)、(32)(2) |
 
 ## <a name="6-bibliography-of-resources-and-links"></a>6. 資源的參考書目和連結
 
 ||||
 |:-----|:---|:---|
 |**識別碼**|**說明/連結**|**附註**|
-| 1 <a name="1"> </a> | [Microsoft 專業服務資料保護增訂版](http://aka.ms/professionalservicesdpa) | |
+| 1 <a name="1"> </a> | [Microsoft 專業服務資料保護增訂版](https://aka.ms/professionalservicesdpa) | |
 | 2 <a name="2"> </a> | [Microsoft 信任中心的 Microsoft 專業服務安全性文件](https://www.microsoft.com/TrustCenter/professional-services-security) | |
 | 3 <a name="3"> </a> | 訓練和認知程式說明 | 適用於透過客戶帳戶管理小組的要求。| |
 | 4 <a name="4"> </a> | [Microsoft 專業服務 GDPR 控制集](https://aka.ms/GDPRControls) | |
@@ -134,7 +136,7 @@ ms.locfileid: "37422420"
 |  9 <a name="9"> </a> | [Microsoft 專業服務針對客戶資料保護影響評估的重要資訊](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services) | |
 | 10 <a name="10"> </a> | [ISO 27001 稽核報告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=7e71ff67-7609-43e6-9d68-4ceea0b41b50&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) | |
 | 11 <a name="11"> </a> | Microsoft 專業服務 ISO/IEC 27001:2013 ISMS 適用性聲明 | 透過客戶帳戶管理小組的要求 SOA。|
-| 12 <a name="12"> </a> | [Microsoft 信任中心合規性供應項目](https://www.microsoft.com/trustcenter/compliance/complianceofferings) | |
+| 12 <a name="12"> </a> | [Microsoft 信任中心合規性供應項目](offering-home.md) | |
 | 13 <a name="13"> </a> | [Microsoft DPO 資訊](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer) | |
 
 ## <a name="learn-more"></a>深入了解

@@ -8,13 +8,16 @@ ms.topic: article
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.collection: GDPR
-ms.openlocfilehash: c1d671e125eca07f1d559fdeded7ae590c5b8b38
-ms.sourcegitcommit: aace6acb94c3a944fe5863b3a52d74f9054dcd23
+ms.collection:
+- GDPR
+- M365-security-compliance
+hideEdit: true
+ms.openlocfilehash: 66a3478ed625b3c7453992e04070d57beef173eb
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "35921124"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749714"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-office-365"></a>適用於 Microsoft Office 365 的責任整備檢查清單
 
@@ -93,7 +96,7 @@ ms.locfileid: "35921124"
 |***判斷資訊安全性管理系統的範圍 (5.2.3、5.2.4)***|客戶應將對個人資料的處理及其相關規定，包含在現有的任何整體安全性或隱私權計劃中。|Microsoft 服務如何在資訊安全性管理和隱私權程式中包含個人資料處理。<br>- *Microsoft Office 365 ISO/IEC 27001:2013 ISMS 適用性聲明* [[12](gdpr-arc-Office365.md#12)] 請參閱 A.19<br>- SOC 2 Type 2 稽核報告** [[11](gdpr-arc-Office365.md#11)]<br>- Office 365 ISMS 手冊 [[14](gdpr-arc-Office365.md#14)] 請參閱「4. 組織的內容」**<br>- 5.2.3 在合規性管理員中判斷資訊安全性管理系統的範圍<br>5.2.4 [合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中的資訊安全性管理系統|(32)(2)|
 |***規劃 (5.3)***|客戶應將對個人資料的處理，視為所完成的任何風險評估中的一環，並採用所有判定為必要的控制措施，以降低所控制個人資料的相關風險。|Microsoft 服務如何將個人資料處理特有的風險，視為其整體安全性和隱私權計劃的一部分。<br>- Office 365 ISMS 手冊** [[14](gdpr-arc-Office365.md#14)] 請參閱「5.2 原則」**<br>5.3 在[合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中規劃|(32)(1)(b)、(32)(2)|
 |***資訊安全性原則 (6.2)***|客戶應增強任何現有的資訊安全性原則，納入個人資料保護，包括遵守任何適用法律所需的原則。|資訊安全性及個人資訊保護任何特定量值的 Microsoft 原則。<br>- Microsoft Office 365 (全部版本) ISO/IEC 27001:2013 ISMS 適用性聲明** [[12](gdpr-arc-Office365.md#12)] 請參閱 A.19<br>- SOC 2 Type 2 稽核報告** [[11](gdpr-arc-Office365.md#11)]<br>- 6.2 [合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中的資訊安全性原則|24(2)|
-|***資訊安全性組織的客戶考量 (6.3)***|客戶應該在其組織中定義保護個人資料安全的責任。 這可能包括建立監督隱私權相關問題 (包含 DPO) 的特定角色。 應提供適當的訓練與管理支援以支援這些角色。|概述 Microsoft 資料保護人員的角色、職責特性、報告結構和連絡資訊。<br>- Microsoft 的資料保護長** [[18](gdpr-arc-Office365.md#18)]<br>- Office 365 ISMS 手冊** [[14](gdpr-arc-Office365.md#14)] 請參閱「5.3 組織角色、職責和授權」**<br>- 6.3 在 [合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中組織資訊安全性|(37)(1)(a)、(37)(1)(b)、(37)(1)(c)、(37)(2)、(37)(3)、(37)(4)、(37)(5)、(37)(6)、(37)(7)、(38)(1)、(38)(2)、(38)(3)、(38)(4)、(38)(5)、(38)(6)、(39)(1)(a)、(39)(1)(b)、(39)(1)(c)、(39)(1)(d)、(39)(1)(e)、(39)(2)|
+|***資訊安全性組織的客戶考量 (6.3)***|客戶應該在其組織內界定個人資料的安全性和保護責任。這可能包括設立立特定角色 (包括 DPO) 來監督與隱私權相關的事宜，並應提供適當的訓練和管理支援來支援這些角色。|概述 Microsoft 資料保護人員的角色、職責特性、報告結構和連絡資訊。<br>- Microsoft 的資料保護長** [[18](gdpr-arc-Office365.md#18)]<br>- Office 365 ISMS 手冊** [[14](gdpr-arc-Office365.md#14)] 請參閱「5.3 組織角色、職責和授權」**<br>- 6.3 在 [合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中組織資訊安全性|(37)(1)(a)、(37)(1)(b)、(37)(1)(c)、(37)(2)、(37)(3)、(37)(4)、(37)(5)、(37)(6)、(37)(7)、(38)(1)、(38)(2)、(38)(3)、(38)(4)、(38)(5)、(38)(6)、(39)(1)(a)、(39)(1)(b)、(39)(1)(c)、(39)(1)(d)、(39)(1)(e)、(39)(2)|
 |***人力資源安全性 (6.4)***|客戶應判斷並界定好責任，以便提供與保護個人資料相關的訓練。|概述 Microsoft 資料保護人員的角色、職責特性、報告結構和連絡資訊。<br>- Microsoft 的資料保護長** [[18](gdpr-arc-Office365.md#18)]<br>- Office 365 ISMS 手冊** [[14](gdpr-arc-Office365.md#14)] 請參閱「5.3 組織角色、職責和授權」**<br>- 6.4 在[合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中的人力資源安全性|(39)(1)(b)|
 |***資訊分類 (6.5.1)***|客戶應該明確地將個人資料視為資料分類配置的一部分。|Office 365 中支援個人資料分類的功能。<br>- GDPR 的 Office 365 資訊保護** [[5](gdpr-arc-Office365.md#5)] 請參閱「設計個人資料的分類結構描述」<br>- 6.5.1 [合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中的資訊分類|(39)(1)(b)|
 |***管理抽取式媒體 (6.5.2)***|客戶應決定使用抽取式媒體的內部政策，因為這涉及到個人資料的保護 (例如加密裝置)。|Microsoft 服務如何保護任何抽取式媒體上個人資訊的安全性。<br>- FedRAMP 中度 FedRAMP 系統安全性計劃** [[3](gdpr-arc-Office365.md#3)] 請參閱「13.10 媒體保護 (MP)」<br>- 在[合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中管理抽取式媒體|(32)(1)(a)、(5)(1)(f)|
@@ -113,13 +116,13 @@ ms.locfileid: "35921124"
 |***資訊傳輸原則和程序 (6.10.1)***|客戶應設有在實體媒體間傳輸個人資料 (例如在伺服器或設施之間移動硬碟) 的流程。這可能包括記錄、授權和追蹤。這可能包括記錄、授權和追蹤。若由第三方或其他處理者來傳輸實體媒體，則客戶應確保該組織設有適當的流程，可確保個人資料的安全性。|Microsoft 服務如何傳輸可能包含個人資料的實體媒體，包括可能發生傳輸的情況，以及為保護資料而採取的保護措施。<br>- FedRAMP 中度 FedRAMP 系統安全性計劃 [[3](gdpr-arc-Office365.md#3)] 請參閱「13.10 媒體保護 (MP)」<br>- 6.10.1 [合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中的資訊傳輸原則和程序|(5)(1)(f)|
 |***機密或保密協議 (6.10.2)***|客戶應針對有權存取個人資料的個人，或其責任與個人資料相關的個人，判斷與其訂定保密協議或等同文件的必要性。|Microsoft 服務如何確保有權存取個人資料的個人致力於保密。<br>- SOC 2 Type 2 稽核報告 [[11](gdpr-arc-Office365.md#11)] 請參閱 CC1.4 pp33<br>- 6.10.2 [合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中的機密或保密協議|(5)(1)(f)、(28)(3)(b)、(38)(5)|
 |***在公用網路上保護應用程式服務 (6.11.1)***|客戶應該了解加密個人資料的規定，特別是透過公用網路傳送資料的情況。系統有提供加密資料的機制時，客戶應在必要時使用這些機制。|說明 Microsoft 服務為了保護傳輸中的資料所採取的措施 (包括資料加密)，以及 Microsoft 服務如何在透過公用資料網路傳送可能包含個人資料的資料時，對資料進行保護 (包括任何加密措施)。<br>- 在 Microsoft Cloud 中的加密 [[17](gdpr-arc-Office365.md#17)] 請參閱「傳輸中 Office 365 客戶資料的加密**」<br>- 6.11.1 [合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中的在公用網路上保護應用程式服務|(5)(1)(f)、(32)(1)(a)|
-|***安全的系統工程原則 (6.11.2)***|客戶應了解系統的設計和運作方式，以考慮保護個人資料的方法。 若客戶使用由第三方設計的系統，則他們要負責確保已考慮這類保護。|Microsoft 服務如何將個人資料保護原則，當作安全設計/工程原則不可或缺的一部分。<br>- SOC 2 類型 2 稽核報告 [[11](gdpr-arc-Office365.md#11)] 查看 *安全性開發週期* pp23，CC7.1 pp45 <br>- [合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中安全的系統工程原則|(25)(1)|
-|***供應商關係 (6.12)***|客戶應確保在合約資訊或其他協議中，提及所有的資訊安全性和個人資料保護規定，以及第三方對上述兩者的責任。 協議也應載明處理方式的指示。|在 Microsoft 服務與供應商達成的協議中，關於安全性和資料保護的條款，以及 Microsoft 如何確保這些協議能有效實施。<br>- 誰根據哪些條款可以存取您的資料 [[6](gdpr-arc-Office365.md#6)]<br>- 子處理者的合約：與 Microsoft 訂立合約 [[7](gdpr-arc-Office365.md#7)]<br>- 6.12 [合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中的供應商關係|(5)(1)(f)、(28)(1)、(28)(3)(a)、(28)(3)(b)、(28)(3)(c)、(28)(3)(d)、(28)(3)(e)、(28)(3)(f)、(28)(3)(g)、(28)(3)(h),(30)(2)(d)、(32)(1)(b)|
+|***安全的系統工程原則 (6.11.2)***|客戶應了解系統的設計和架設方式，以便考慮如何進行個人資料保護。若客戶使用由第三方架設的系統，便有責任確保已考慮過此類保護措施。|Microsoft 服務如何將個人資料保護原則，當作安全設計/工程原則不可或缺的一部分。<br>- SOC 2 類型 2 稽核報告 [[11](gdpr-arc-Office365.md#11)] 查看 *安全性開發週期* pp23，CC7.1 pp45 <br>- [合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中安全的系統工程原則|(25)(1)|
+|***供應商關係 (6.12)***|客戶應確保在合約資訊或其他協議中，提及所有的資訊安全性和個人資料保護規定，以及第三方對上述兩者的責任。協議也應載明處理方式的指示。|在 Microsoft 服務與供應商達成的協議中，關於安全性和資料保護的條款，以及 Microsoft 如何確保這些協議能有效實施。<br>- 誰根據哪些條款可以存取您的資料 [[6](gdpr-arc-Office365.md#6)]<br>- 子處理者的合約：與 Microsoft 訂立合約 [[7](gdpr-arc-Office365.md#7)]<br>- 6.12 [合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中的供應商關係|(5)(1)(f)、(28)(1)、(28)(3)(a)、(28)(3)(b)、(28)(3)(c)、(28)(3)(d)、(28)(3)(e)、(28)(3)(f)、(28)(3)(g)、(28)(3)(h),(30)(2)(d)、(32)(1)(b)|
 |***管理資訊安全性事件和增強功能 (6.13.1)***|客戶應該要有能夠判斷何時發生了個人資料外洩的程序。|Microsoft 服務如何判斷安全性事件是否外洩了個人資料，以及我們如何向您傳達外洩行為。<br>- GDPR 規定的 Office 365 和外洩通知 [[9](gdpr-arc-Office365.md#9)]<br>- 6.13.1 在[合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中管理資訊安全性事件和增強功能|(33)(2)|
 |***職責和程序 (在資訊安全性事件期間) (6.13.2)***|在涉及個人資料的資料外洩或安全性事件期間，客戶應了解並記錄自己的責任。這些責任可能包括通知規定的各方、與處理者或其他第三方進行溝通，以及客戶組織內部的責任。|如果您察覺到安全性事件或個人資料外洩，如何通知 Microsoft 服務<br>- GDPR 規定的 Office 365 和外洩通知 [[9](gdpr-arc-Office365.md#9)]<br>- 6.13.2 [合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中的職責和程序|(5)(1)(f)、(33)(1)、(33)(3)(a)、(33)(3)(b)、(33)(3)(c)、(33)(3)(d)、(33)(4)、(33)(5)、(34)(1)、(34)(2)、(34)(3)(a)、(34)(3)(b)、(34)(3)(c)、(34)(4)|
 |***回應資訊安全性事件 (6.13.3)***|客戶應該要有能夠判斷何時發生了個人資料外洩的程序。|說明 Microsoft 服務為了協助您確定是否發生了個人資料外洩的情況，所提供的資訊。<br>- GDPR 規定的 Office 365 和外洩通知 [[9](gdpr-arc-Office365.md#9)]<br>- 6.13.3 在[合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中回應資訊安全性事件|(33)(1)、(33)(2)、(33)(3)(a)、(33)(3)(b)、(33)(3)(c)、(33)(3)(d)、(33)(4)、(33)(5)、(34)(1)、(34)(2)|
 |***保護記錄 (6.15.1)***|客戶應了解需要維護且與個人資料處理相關的記錄之規定。|Microsoft 服務如何儲存與處理個人資料相關的記錄<br>- 在 Office 365 安全與規範中心搜尋稽核記錄 [[16](gdpr-arc-Office365.md#16)]<br>- Microsoft Office 365 ISO/IEC 27001:2013 ISMS 適用性聲明 [[12](gdpr-arc-Office365.md#12)] 請參閱 A.18.1.3<br>- Office 365 ISMS 手冊 [14] 請參閱「*9 效能評估*」|(5)(2)、(24)(2)|
-|***對資訊安全性的獨立審查 (6.15.2)***|客戶應了解評估個人資料處理安全性的需求。 這可能會包括內部或外部稽核，或評估安全性處理的其他方法。 如果客戶依賴第三方的其他組織進行全部或部分資訊處理，則應收集由其執行這類評估的相關訊息。|Microsoft 服務如何測試和評估技術和組織措施的有效性，以確保處理的安全性，包括第三方的任何稽核。<br>- Microsoft 線上服務條款、資料保護條款，請參閱「資料安全性，稽核合規性」[[1](gdpr-arc-Office365.md#1)]<br>- Office 365 ISMS 手冊 [[14](gdpr-arc-Office365.md#14)] 請參閱「9 效能評估**」<br>- 6.15.2 在[合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中對資訊安全性的獨立審查|(32)(1)(d)、(32)(2)|
+|***對資訊安全性的獨立審查 (6.15.2)***|客戶應該了解評估個人資料處理安全性的規定。這可能包括內部或外部稽核、或其他評估處理安全性的措施。如果客戶依賴其他第三方組織進行全部或部分處理，則應收集該組織所進行評估的相關資訊。|Microsoft 服務如何測試和評估技術和組織措施的有效性，以確保處理的安全性，包括第三方的任何稽核。<br>- Microsoft 線上服務條款、資料保護條款，請參閱「資料安全性，稽核合規性」[[1](gdpr-arc-Office365.md#1)]<br>- Office 365 ISMS 手冊 [[14](gdpr-arc-Office365.md#14)] 請參閱「9 效能評估**」<br>- 6.15.2 在[合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中對資訊安全性的獨立審查|(32)(1)(d)、(32)(2)|
 |***技術合規性審查 (6.15.3)***|客戶應了解測試和評估處理個人資料安全性的要求。 這可能包括技術測試，例如滲透測試。 如果客戶使用第三方的系統或處理器，則應了解在保護和測試安全性上應負的責任 (例如，管理設定以保護資料安全，然後測試這些設定)。 如果第三方負責全部或部分的安全性處理，則客戶應了解第三方執行的測試或評估，以確保安全性的處理。|Microsoft 服務如何根據已識別的風險測試安全性，包括第三方的測試，以及技術測試類型和測試的任何可用報告。<br>- Microsoft 線上服務條款、資料保護條款，請參閱「資料安全性，稽核合規性」[[1](gdpr-arc-Office365.md#1)]<br>- 如需外部憑證的清單，請參閱「*Microsoft 信任中心合規性供應項目」[[13](gdpr-arc-Office365.md#13)]*<br>如需有關滲透測試您的應用程式的詳細資訊，請參閱「FedRAMP 中度 FedRAMP 系統安全性計劃 (SSP) [[3](gdpr-arc-Office365.md#3)]」、「CA-8 滲透測試 (M) (H) pp204」<br>- 6.15.3 [合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)中的技術合規性審查|(32)(1)(d)、(32)(2)|
 
 ## <a name="6-bibliography-of-resources-and-links"></a>6. 資源的參考書目和連結
@@ -127,19 +130,19 @@ ms.locfileid: "35921124"
 |||
 |:-----|:-----|
 |**識別碼**|**描述/連結**|
-| 1 <a name="1"> </a> | [線上服務條款](http://aka.ms/ost) |
+| 1 <a name="1"> </a> | [線上服務條款](https://aka.ms/ost) |
 | 2 <a name="2"> </a> | [Office 365 安全性文件](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e) |
 | 3 <a name="3"> </a> | [FedRAMP 中度 FedRAMP 系統安全性計劃 (SSP)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=053666de-e359-43ef-a7bb-3cf379208ed8&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_FedRAMP_Reports) |
 | 4 <a name="4"> </a> | [Microsoft 雲端安全性原則](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c83d1345-0cff-4beb-a521-27b837ed271a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) |
 | 5 <a name="5"> </a> | [GDPR 的 Office 365 資訊保護](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) |
 | 6 <a name="6"> </a> | [誰根據哪些條款可以存取您的資料？](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) |
-| 7 <a name="7"> </a> | [子處理者的合約：與 Microsoft 訂立合約](https://www.microsoft.com/en-us/procurement/supplier-contracting.aspx#SSPA) |
+| 7 <a name="7"> </a> | [子處理者的合約：與 Microsoft 訂立合約](https://www.microsoft.com/procurement/supplier-contracting.aspx#SSPA) |
 | 8 <a name="8"> </a> | [GDPR 的 365 資料主體要求](https://aka.ms/DSROffice365) |
 | 9 <a name="9"> </a> | [GDPR 規定的 Office 365 和外洩通知](https://aka.ms/BreachOffice365) |
 | 10 <a name="10"> </a> | [客戶資料保護影響評估適用的 Office 365 重要資訊](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365) |
 | 11 <a name="11"> </a> | [SOC 2 Type 2 稽核報告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=0cf2cce9-972d-4a64-865f-b8e6eba4ed5e&docTab=4ce99610-c9c0-11e7-8c2c-) |
 | 12 <a name="12"> </a> | [Microsoft Office 365 ISO/IEC 27001:2013 ISMS 適用性聲明](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=d7255c90-03e3-48a6-938d-e69d8f723c7a&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
-| 13 <a name="13"> </a> | [Microsoft 信任中心合規性供應項目](https://www.microsoft.com/trustcenter/compliance/complianceofferings) |
+| 13 <a name="13"> </a> | [Microsoft 信任中心合規性供應項目](offering-home.md) |
 | 14 <a name="14"> </a> | [Office 365 ISMS 手冊](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=72821313-c175-4857-b1f7-e3c5e6eb2db4&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 15 <a name="15"> </a> | [使用租用戶限制管理 SaaS 雲端應用程式的存取](https://docs.microsoft.com/azure/active-directory/active-directory-tenant-restrictions) |
 | 16 <a name="16"> </a> | [在 Office 365 安全與合規性中心搜尋稽核記錄](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) |

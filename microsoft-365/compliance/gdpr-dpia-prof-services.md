@@ -10,14 +10,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 61b39db3280d6b55a04a5962f0ca2a7e56cb43c8
-ms.sourcegitcommit: d9e9788abb31f6c876f81326569ccc9b716fc1c0
+ms.openlocfilehash: ff9306aad0a4dcd80971a8429e62e79368969e34
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37422350"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749699"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-professional-services"></a>資料保護影響評估：適用於使用 Microsoft 專業服務之資料控制者的指引
 
@@ -65,14 +67,14 @@ GDPR 第 35 條規定，「如果某種處理，特別是使用新技術，並�
 |||
 |:-----|:-----|
 |**DPIA 的要素** |**專業服務的相關資訊**|
-|處理的目的|使用專業服務進行處理的目的取決於實作、設定及使用專業服務的控制者。 <br><br> 根據 [Microsoft 專業服務資料保護增訂版](http://aka.ms/professionalservicesdpa) (MPSDPA) (英文) 的規定，Microsoft 作為資料處理者，處理支援和諮詢資料僅為向我們的客戶 (資料控制者) 提供所要求的服務。Microsoft 不會將支援和諮詢資料或任何衍生的資料用於廣告或類似的商業用途。 |
-|使用專業服務進行處理的目的取決於實作、設定及使用專業服務的控制者。|根據 [Microsoft 專業服務資料保護增訂版](http://aka.ms/professionalservicesdpa) (MPSDPA) (英文) 的規定，Microsoft 作為資料處理者，處理支援和諮詢資料僅為向我們的客戶 (資料控制者) 提供所要求的服務。Microsoft 不會將支援和諮詢資料或任何衍生的資料用於廣告或類似的商業用途。|
+|處理的目的|使用專業服務進行處理的目的取決於實作、設定及使用專業服務的控制者。 <br><br> 根據 [Microsoft 專業服務資料保護增訂版](https://aka.ms/professionalservicesdpa) (MPSDPA) (英文) 的規定，Microsoft 作為資料處理者，處理支援和諮詢資料僅為向我們的客戶 (資料控制者) 提供所要求的服務。Microsoft 不會將支援和諮詢資料或任何衍生的資料用於廣告或類似的商業用途。 |
+|使用專業服務進行處理的目的取決於實作、設定及使用專業服務的控制者。|根據 [Microsoft 專業服務資料保護增訂版](https://aka.ms/professionalservicesdpa) (MPSDPA) (英文) 的規定，Microsoft 作為資料處理者，處理支援和諮詢資料僅為向我們的客戶 (資料控制者) 提供所要求的服務。Microsoft 不會將支援和諮詢資料或任何衍生的資料用於廣告或類似的商業用途。|
 |處理的個人資料類別|支援和諮詢資料表示所有資料，包括由客戶或代表客戶 (或客戶授權 Microsoft 從線上服務取得) 透過參與 Microsoft 以取得專業服務或支援而向 Microsoft 提供的所有文字、聲音、視訊、影像檔或軟體。可能包含透過電話、交談、電子郵件或網頁表單所收集的資訊。資料包含問題描述、傳輸給 Microsoft 以解決支援問題的檔案、自動化疑難排解工具，或者在客戶許可下遠端存取客戶系統。 <br><br> 客戶資料和支援資料不包含客戶連絡人或帳單資料，例如訂閱資訊和付款資料，Microsoft 會利用其資料控制者身分 (本文件範疇外) 所具備的功能收集和處理這些資料。 |
 |資料保留|Microsoft 將會在客戶參與期間保留支援和諮詢資料，以及在參與結束之後視需要保留一段時間，以確保服務的品質和持續性。 舉例來說，在支援案例關閉之後，資料通常會保留一段時間，以確保若問題重新出現與案例重新開啟時能夠參考資料。 <br><br> 當專業服務提供支援時，參與長度定義了支援案例關閉的時間。當專業服務提供諮詢服務時，參與長度通常是由工單定義。在其他案例中，參與長度是由商業關係的維護來定義的。在所有案例中，支援和諮詢資料是透過專業服務《資料主體權限指南》** 中所述的功能，依要求或根據客戶的指示進行刪除或傳回，而沒有延遲。 |
-|個人資料的位置和傳輸|由於專業服務的本質，包括必須提供全天候支援，所以資料會在全世界傳輸。Microsoft 運作所在的位置可以透過要求取得。針對諮詢服務，如果在工單內有協議，資料可以保留在國內。 <br><br> 針對來自歐洲經濟區和瑞士的個人資料，Microsoft 會確保個人資料傳輸給第三國或國際組織時受到 GDPR 第 46 條所述適當保護措施的保護。Microsoft 除了遵守處理者的「標準合約條款」以及其他定型化契約的承諾 (如 [MPSDPA](http://aka.ms/professionalservicesdpa)(英文) 中所述) 外，還通過了「歐盟-美國」和「瑞士-美國」隱私盾框架及其限定承諾的認證。|
-|與第三方共用資料|Microsoft 與充當我們子處理者的第三方共用資料，以支援客戶、技術支援、服務維護及其他操作等功能。接收 Microsoft 傳輸的支援和諮詢資料的所有轉包商，都會與 Microsoft 達成書面協議，提供的保護不低於 [MPSDPA](http://aka.ms/professionalservicesdpa) (英文) 中的資料保護條款。所有共用支援和諮詢資料的第三方子處理者都納入 [Microsoft 商業支援承包商清單](http://aka.ms/servicesapprovedsuppliers) (英文) 的 [MPSDPA](http://aka.ms/professionalservicesdpa) 中。 <br><br> 除非法律要求，否則 Microsoft 不會向執法機關揭露支援和諮詢資料。如果執法機關聯繫 Microsoft 提出支援和諮詢資料的需求，Microsoft 會嘗試引導執法機關直接向客戶請求資料。如果被迫向執法機關揭露支援和諮詢資料，Microsoft 會立即通知客戶，並提供一份需求副本，除非法律禁止這樣做。 <br><br> 收到其他第三方要求支援和諮詢資料時，Microsoft 會立即通知客戶，除非法律禁止。除非法律規定，否則 Microsoft 會拒絕要求。如果要求有效，Microsoft 會指引第三方直接向客戶要求的資料。 |
+|個人資料的位置和傳輸|由於專業服務的本質，包括必須提供全天候支援，所以資料會在全世界傳輸。Microsoft 運作所在的位置可以透過要求取得。針對諮詢服務，如果在工單內有協議，資料可以保留在國內。 <br><br> 針對來自歐洲經濟區和瑞士的個人資料，Microsoft 會確保個人資料傳輸給第三國或國際組織時受到 GDPR 第 46 條所述適當保護措施的保護。Microsoft 除了遵守處理者的「標準合約條款」以及其他定型化契約的承諾 (如 [MPSDPA](https://aka.ms/professionalservicesdpa)(英文) 中所述) 外，還通過了「歐盟-美國」和「瑞士-美國」隱私盾框架及其限定承諾的認證。|
+|與第三方共用資料|Microsoft 與充當我們子處理者的第三方共用資料，以支援客戶、技術支援、服務維護及其他操作等功能。接收 Microsoft 傳輸的支援和諮詢資料的所有轉包商，都會與 Microsoft 達成書面協議，提供的保護不低於 [MPSDPA](https://aka.ms/professionalservicesdpa) (英文) 中的資料保護條款。所有共用支援和諮詢資料的第三方子處理者都納入 [Microsoft 商業支援承包商清單](https://aka.ms/servicesapprovedsuppliers) (英文) 的 [MPSDPA](https://aka.ms/professionalservicesdpa) 中。 <br><br> 除非法律要求，否則 Microsoft 不會向執法機關揭露支援和諮詢資料。如果執法機關聯繫 Microsoft 提出支援和諮詢資料的需求，Microsoft 會嘗試引導執法機關直接向客戶請求資料。如果被迫向執法機關揭露支援和諮詢資料，Microsoft 會立即通知客戶，並提供一份需求副本，除非法律禁止這樣做。 <br><br> 收到其他第三方要求支援和諮詢資料時，Microsoft 會立即通知客戶，除非法律禁止。除非法律規定，否則 Microsoft 會拒絕要求。如果要求有效，Microsoft 會指引第三方直接向客戶要求的資料。 |
 |資料主體權利|作為處理者運行時，Microsoft 向客戶 (資料控制者) 提供其資料主體的個人資料，並在 GDPR 下行使其權利履行資料主體請求的能力。我們以符合產品功能和處理者角色的方式進行操作。如果我們收到客戶的資料主體要求行使他們根據 GDPR 的一或多項權利，我們會引導資料主體直接向資料控制者提出要求。 <br><br> 「專業服務資料主體要求 GDPR 文件」** 提供客戶可以如何在專業服務中宣稱其資料主體權限義務的描述。 |
-評估與目的有關的處理操作的必要性和比例性|這類評估取決於控制者的需求和處理的目的。 <br><br> 關於 Microsoft 進行的處理，這種處理對於向資料控制者提供服務的目的是必要的且符合比例原則。Microsoft 在 [MPSDPA](http://aka.ms/professionalservicesdpa)(英文) 中做出此一承諾。 |
+評估與目的有關的處理操作的必要性和比例性|這類評估取決於控制者的需求和處理的目的。 <br><br> 關於 Microsoft 進行的處理，這種處理對於向資料控制者提供服務的目的是必要的且符合比例原則。Microsoft 在 [MPSDPA](https://aka.ms/professionalservicesdpa)(英文) 中做出此一承諾。 |
 |評估資料主體的權利和自由風險 |資料主體使用專業服務在權利和自由方面的主要風險將取決於資料控制者如何以及在何種情況下實作、設定及使用專業服務及「專業服務」所提供的任何解決方案。 <br><br> 但是，與任何服務一樣，服務中保存的個人資料可能存在未經授權的存取或無意揭露的風險。下面討論 Microsoft 為解決這些風險所採取的措施。 |
 | 旨在解決風險的措施，包括保障措施、安全措施和機制，以確保保護個人資料，並在考慮到資料主體和其他有關人員的權利和合法利益的情況下證明符合 GDPR。 |Microsoft 致力於協助保護客戶資訊的安全性。 根據 GDPR 第 32 條的規定，Microsoft 已經並將保持並遵循適當的技術和組織措施，旨在保護支援和諮詢資料，避免遭受意外、未經授權或非法的存取、洩漏、更改、遺失或銷毀。 <br><br> 此外，Microsoft 遵守適用於資料處理者的所有其他 GDPR 義務，包括但不限於提供資料保護影響評估和記錄保存。 |
 

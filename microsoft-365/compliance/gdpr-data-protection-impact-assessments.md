@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 7c4e66988c57754324fbc18de95e97d409ab0a53
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: c6f01e5b82d0021c4698dfa7b4fddc5152c7d737
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078913"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749701"
 ---
 # <a name="data-protection-impact-assessment-for-the-gdpr"></a>GDPR 資料保護影響評估
 
@@ -29,9 +31,9 @@ ms.locfileid: "35078913"
 
 本文件中使用的 GDPR 術語的實用定義：
 
-- *資料控制者 (控制者)*：法律人員、公開授權單位、公司或其他實體，不論單獨或聯合其他單位，會決定個人資料處理方式的用途及方式。  
-- *個人資料*和*資料主體*：與已識別或可識別的自然人 (資料主體) 相關的任何資訊；可識別的自然人為可直接或間接識別的個人。  
-- *處理者：* 自然人或法人、公家機關、公司，或代表控制者處理個人資料的其他主體。  
+- 資料控制者 (控制者)**：法律人員、公開授權單位、公司或其他實體，不論單獨或聯合其他單位，會決定個人資料處理方式的用途及方式。  
+- 個人資料** 和資料主體**：與已識別或可識別的自然人 (資料主體) 相關的任何資訊；可識別的自然人為可直接或間接識別的個人。  
+- 處理者：** 自然人或法人、公家機關、公司，或代表控制者處理個人資料的其他主體。  
 - *客戶資料*：在公司運作的日常作業中產生並儲存的資料。
 
 ## <a name="what-is-a-dpia"></a>什麼是 DPIA？
