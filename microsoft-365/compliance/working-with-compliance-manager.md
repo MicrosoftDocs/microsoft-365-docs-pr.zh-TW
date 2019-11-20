@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: e8e1ae997bf48f38e66319aec6ee07d0a84768c8
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: b1d67a71d8440923552e4702f7035bd24b166fec
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38685496"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718682"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>搭配使用 Microsoft Compliance Manager （預覽）
 
@@ -421,13 +421,13 @@ ms.locfileid: "38685496"
 
 - **actionDimensionValues:** 雙以分號分隔的清單適用維度的維度] 索引標籤上，使用下列格式：
 
-    ```
+    ```Markdown
     Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
     ```
     
     例如：
 
-    ```
+    ```Markdown
     Product::Office 365;;Certification::NIST CSF
     ```
 
@@ -461,7 +461,7 @@ ms.locfileid: "38685496"
 
 項目符號被當成星號，而不是 Word 或 Excel 項目符號。 例如：
 
-```
+```Markdown
 * Item A
 * Item B
 * Item C
@@ -480,15 +480,16 @@ ms.locfileid: "38685496"
 
 超連結所建構方式置於立即旁 close 括號括號括住的超連結文字和本身的超連結。  例如：
 
-```
+```Markdown
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 ```
 這段文字轉譯，如下所示： 按一下[這裡](https://www.microsoft.com)以移至 Microsoft 的首頁。
+
 在上述範例所示，合規性管理員中不會呈現 Url 與底線。
 
-粗體文字是設為粗體文字的每一邊僅由兩個星號。  例如：
+粗體文字是設為粗體文字的每一邊的兩個星號。  例如：
 
-```
+```Markdown
 **This text will render in bold**
 ```
 **此文字會以粗體顯示呈現**
