@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: '了解預設及其他設定，以保護 Windows 10 裝置。 '
-ms.openlocfilehash: 63631b6d15ca7e86df94cbb4feff323efb9d07ca
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: fef1bc3e19bada5785232047d37f4bc2393a974d
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575671"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715095"
 ---
 # <a name="secure-windows-10-devices"></a>保護 Windows 10 裝置
 
-您在此進行的設定為預設 Windows 10 裝置原則的一部分。所有連接至 Windows 10 裝置 (包含行動裝置及電腦) 的使用者，一旦使用其公司帳戶登入後，就會自動接收這些設定。建議您在設定時先接受預設原則，並於稍後新增以特定使用者群組為目標的原則。
+您在此進行的設定為預設 Windows 10 裝置原則的一部分。 Windows 10 裝置，包括行動裝置及電腦登入其公司帳戶連接的所有使用者將會自動都接收這些設定。 建議您在設定時先接受預設原則，並於稍後新增以特定使用者群組為目標的原則。
   
 ## <a name="settings-to-secure-windows-10-devices"></a>保護 Windows 10 裝置的設定
 
@@ -41,7 +41,7 @@ ms.locfileid: "37575671"
 |協助保護電腦免於遭受 Microsoft Edge 中的網路安全威脅  <br/> |開啟 Microsoft Edge 中的設定，以協助保護使用者免受惡意網站與下載檔案的威脅。  <br/> |
 |閒置這段時間之後關閉裝置螢幕  <br/> |確保使用者閒置時，公司資料已受到保護。使用者可能會在咖啡館等公共場所工作，當使用者暫時離開或是分心時，他們的裝置就容易受到他人任意窺伺。此設定能讓您控制螢幕將於使用者閒置多久之後關閉。  <br/> |
 |允許使用者從 Microsoft Store 下載 App  <br/> |讓使用者從 Microsoft Store 下載並安裝 App。 應用程式包括所有項目從遊戲生產力工具]，讓我們保留**上**，此設定，但您可以將它關閉額外的安全性。  <br/> |
-|允許使用者存取 Cortana  <br/> |Cortana 非常實用！ 她可以開啟設定或關閉您，提供指示，並請確定您已在約會現場，因此我們將此**上**預設。  <br/> |
+|允許使用者存取 Cortana  <br/> |Cortana 非常實用！ Cortana 可以開啟設定或關閉您，提供指示，並請確定您已在約會現場，因此我們將**在**此設定預設。  <br/> |
 |允許使用者接收來自 Microsoft 的 Windows 祕訣和廣告  <br/> |Windows 祕訣相當實用，並且能在新功能推出時引導使用者。  <br/> |
 |自動讓 Windows 10 裝置保持在最新狀態  <br/> |確保 Windows 10 裝置能自動收到最新的更新。  <br/> |
    

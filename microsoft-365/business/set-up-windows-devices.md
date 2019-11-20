@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: '了解如何為 Microsoft 365 商務版使用者執行 Windows 10 專業版的 Windows 裝置上設定。 '
-ms.openlocfilehash: 7b6fa2ce3243500c3ddcff7883fa9d8da27dcf86
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f929c64b00e4ebf24e9f82fcfea433119abf2f1c
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575561"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718862"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>為 Microsoft 365 商務版使用者設定 Windows 裝置
 
@@ -41,7 +41,7 @@ ms.locfileid: "37575561"
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>將 Windows 10 裝置加入到貴組織的 Azure AD
 
-一旦貴組織中的所有 Windows 裝置皆已升級到 Windows 10 專業版 Creators Update 或已執行 Windows 10 專業版 Creators Update 後，您就可以將這些裝置加入到貴組織的 Azure Active Directory。一旦加入裝置後，裝置將自動升級到 Windows 10 商務版，這是 Microsoft 365 商務版訂閱的一部分。
+組織中的所有 Windows 裝置可以都已升級至 Windows 10 專業版 Creators Update，或已在執行 Windows 10 專業版 Creators Update 時, 您可以將這些裝置加入貴組織的 Azure Active Directory。 一旦加入裝置後，他們將會自動升級到 Windows 10 商務版，這是 Microsoft 365 商務版訂閱的一部分。
   
 ### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>適用於全新或新升級的 Windows 10 專業版裝置
 
@@ -89,7 +89,7 @@ ms.locfileid: "37575561"
   
    ![On the Make sure this is your organization screen, click Join](media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
-如果您將檔案上傳至商務用 OneDrive，請將檔案同步回原處。如果您使用協力廠商工具移轉個人資料和檔案，也請將這些內容同步到新的個人資料。
+如果您將檔案上傳至商務用 OneDrive，請將檔案同步回原處。 如果您使用協力廠商工具移轉個人資料和檔案時，也將這些內容同步到新的設定檔。
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>驗證裝置已連線到 Azure AD
 
@@ -97,7 +97,7 @@ ms.locfileid: "37575561"
   
 在 [同步處理狀態] 頁面上，按一下 [同步處理] 將最新的行動裝置管理原則下載到 PC 上。
   
-若要開始使用 Microsoft 365 商務版帳戶，請移至 Windows [**開始**] 按鈕，以滑鼠右鍵按一下您目前的帳戶圖片然後**切換帳戶**。 使用您的組織電子郵件和密碼登入。
+若要開始使用 Microsoft 365 商務版帳戶，請移至 Windows [**開始**] 按鈕，以滑鼠右鍵按一下您目前的帳戶圖片]，然後**切換帳戶**。 使用您的組織電子郵件和密碼登入。
   
 ![Click Info button to view synchronization status](media/818f7043-adbf-402a-844a-59d50034911d.png)
   

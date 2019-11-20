@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用此「測試實驗室指南」建立 Microsoft 365 企業版的模擬企業測試環境。
-ms.openlocfilehash: bbb3bc2fc7d2abab395dc50481f1955382eca144
-ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
+ms.openlocfilehash: 98eb336a0f63f47b4b79de44c46fcd81f1d9c9f6
+ms.sourcegitcommit: 2bdd7b535a7d2a4896df130b7047f8c85f4d47b4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38694130"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38711877"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模擬企業基本設定
 
@@ -213,7 +213,7 @@ New-ADUser -SamAccountName User1 -AccountPassword (read-host "Set user password"
   
 ```powershell
 $yourDomain="<your public domain>"
-$domainName = "testlab"+$yourDomain
+$domainName = "testlab."+$yourDomain
 $userName="user1@" + $domainName
 $userSID=(New-Object System.Security.Principal.NTAccount($userName)).Translate([System.Security.Principal.SecurityIdentifier]).Value
 $groupNames=@("Domain Admins","Enterprise Admins","Schema Admins")

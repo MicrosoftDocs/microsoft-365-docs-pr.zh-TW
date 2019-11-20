@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 設定 Microsoft 365 商務版的多重要素驗證。
-ms.openlocfilehash: 3aa08670551da3754784237e14a35e94c6f64250
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 59a3ff7a9494ccfc44fa701c6f605a9bd9eeafcf
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575621"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715055"
 ---
 # <a name="multi-factor-authentication"></a>多重要素驗證
 
@@ -31,7 +31,7 @@ ms.locfileid: "37575621"
 
 ## <a name="set-up-mfa-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中設定 MFA
 
-[![標籤，讓您知道變更在系統管理中心，然後您可以在 aka.ms/aboutM365preview 尋找更多詳細資料。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![[標籤] 可讓您知道系統管理中心正在變更，您可以在 aka.ms/aboutM365preview 取得更多詳細資料。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 1. 使用全域系統管理員認證登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。 
 2. 在左側導覽中，選擇 [**安裝**]。
@@ -40,4 +40,4 @@ ms.locfileid: "37575621"
 
   :::image type="content" source="media/turnonmfa.png" alt-text="開啟 MFA] 頁面的螢幕擷取畫面。":::
 
-5. 在 [**登入安全性 Strenghen** ] 面板中，檢查兩者或下列其中一個**需要系統管理員適用的多重要素驗證**，，，然後選擇 [**建立原則**。
+5. 在 [**登入安全性加強**] 面板中，檢查兩者或下列其中一個**需要系統管理員適用的多重要素驗證**，，，然後選擇 [**建立原則**。

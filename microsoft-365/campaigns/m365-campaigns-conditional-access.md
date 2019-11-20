@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何需要 MFA 和 Microsoft 365 商務版設定條件式存取原則。
-ms.openlocfilehash: 570edce03a68dad56c895e2484a5162496d7a3eb
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 0279fff8dd4143c883b2f1633907ac197c65f04a
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772540"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748284"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>需要多重要素驗證和設定條件式存取原則
 
@@ -59,7 +59,7 @@ Microsoft 建議您啟用所有的這些基準原則。 啟用這些原則之後
     ![請登入更安全的卡片。](media/setupmfa.png)
 3. 在進行登入更安全] 頁面上，選擇 [**開始**]。
  
-4. 在 [加強登入安全性] 窗格中，檢查 [**需要系統管理員適用的多重要素驗證**，並**要求使用者註冊 multi-factor authentication 並封鎖存取，如果偵測到風險**] 旁的核取方塊。
+4. 在 [加強登入安全性] 窗格中，選取 [**需要系統管理員適用的多重要素驗證**，並**要求使用者註冊 multi-factor authentication 並封鎖存取，如果偵測到風險**] 旁的核取方塊。
     請務必從 MFA 需求**尋找使用者**] 方塊中排除[緊急](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account)或 「 中斷玻璃 「 系統管理員帳戶。
     
     ![加強登入安全性] 頁面。](media/requiremfa.png)
@@ -70,16 +70,14 @@ Microsoft 建議您啟用所有的這些基準原則。 啟用這些原則之後
 
 1. 移至[Azure 入口網站](https://portal.azure.com)，然後再瀏覽至 [ **Azure Active Directory** \> **條件式存取**。
     
-    比較基準原則會列出在頁面上，並且您可以看到您完成中[需要 MFA](#require-mfa)的步驟後已經啟用需要 MFA 的系統管理員和使用者保護。
+    比較基準原則會列出在頁面上，並且您所見，**需要 MFA 的系統管理員**和**使用者保護**已獲您完成中[需要 MFA](#require-mfa)的步驟之後。
 
     ![] 頁面會列出基準條件式存取原則。](media/casettings.png)
 2. 請參閱下列的特定指示，針對每個原則：
 
-    - [系統管理員需要 MFA](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-
-       
-    -   [使用者需要 MFA](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
-    - [封鎖舊版驗證](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+    - [系統管理員需要 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
+    - [使用者需要 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+    - [封鎖舊版驗證](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
     - [需要 MFA 的服務管理](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
-您可以設定額外的原則，例如需要核准的用戶端應用程式。 請參閱如需詳細資訊的[條件式存取文件](https://docs.microsoft.com/azure/active-directory/conditional-access/)。
+您可以設定額外的原則，例如需要核准的用戶端應用程式。 如需詳細資訊，請參閱[條件式存取文件](https://docs.microsoft.com/azure/active-directory/conditional-access/)。

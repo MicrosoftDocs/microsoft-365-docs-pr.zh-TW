@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解 Microsoft 365 商務版會隨附的安全性功能。
-ms.openlocfilehash: 0d1c35192bf82ac61e59356cda4d9fb29cb3d995
-ms.sourcegitcommit: 4d5e4cb3fa3ab45ad15f103c720c77277b22fc23
+ms.openlocfilehash: f24836ef93c529eddc05c767d6e4fa8af6aef314
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37636765"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715135"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 商務版安全性與合規性功能
 
@@ -33,14 +33,13 @@ Microsoft 365 商務版提供簡化的安全性功能，以協助保護您在電
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Microsoft 365 商務版系統管理中心的安全性功能
 
-[![標籤，讓您知道變更在系統管理中心，然後您可以在 aka.ms/aboutM365preview 尋找更多詳細資料。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![[標籤] 可讓您知道系統管理中心正在變更，您可以在 aka.ms/aboutM365preview 取得更多詳細資料。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-您可以管理許多 Microsoft 365 商務版安全性功能，在系統管理中心中，可讓您簡化的方式，以開啟這些功能，開啟或關閉。 在系統管理中心中您可以執行下列動作：
-  
+您可以管理許多 Microsoft 365 商務版安全性功能，在系統管理中心中，可讓您簡化的方式，以開啟這些功能，開啟或關閉。 在 [系統管理中心中，您可以執行下列動作：
   
 - [設定 Android 或 iOS 裝置的應用程式管理設定](app-protection-settings-for-android-and-ios.md)。 
     
-    這些設定包括某一段之後，然後從非使用中的裝置中刪除檔案、 加密工作檔案，而不需要使用者設定 pin 碼等等。
+    這些設定包括某一段之後，然後從非使用中的裝置中刪除檔案、 加密工作檔案，而不需要使用者設定 pin 碼，以及等等。
     
 - [設定 Windows 10 裝置的應用程式保護設定](protection-settings-for-windows-10-devices.md)。 
     
@@ -68,14 +67,14 @@ Microsoft 365 商務版中的進階的功能可協助您保護網路威脅貴公
     
   - 複雜的附件掃描和 AI 供電分析，以偵測並捨棄危險的郵件。
     
-  - 自動檢查來評估的電子郵件中的連結是否他們是網路釣魚配置的一部分。 這會保留您安全，以防止存取不安全的網站。
+  - 自動檢查來評估的電子郵件中的連結是否它們的網路釣魚配置的一部分。 這會保留您安全，以防止存取不安全的網站。
 
 - **[Intune 中的 Azure 入口網站的完整功能](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
-    存取 Azure 入口網站中的系統管理中心可讓您設定額外的安全性功能，例如管理 MacOS 裝置、 iPhone 及以及 for Windows，進階的裝置管理的 Android 裝置的 Intune，不能透過 Microsoft365 商務版系統管理中心。
-- **Azure AD P1 計劃與相同的[條件式存取](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview)**
+    存取 Azure 入口網站中的系統管理中心可讓您設定額外的安全性功能，例如管理 MacOS 裝置、 iPhone 及 Android 裝置，以及進階的裝置管理的 Windows，Intune 不能透過 Microsoft365 商務版系統管理中心。
+- **Azure AD P1 計劃與相同的[條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)**
 
-    條件式存取可協助保護組織免於登入風險，存取嘗試從非預期的網路或地區設定、 存取嘗試表單有風險的裝置類型，依此類推。 條件式存取原則強制執行之後的第一個驗證完成後，以及使用從第一個驗證事件的訊號來決定是否應該核准嘗試的存取，, 拒絕，或 f （例如第二個表單識別碼） 的其他證明是所需。
+    條件式存取可協助保護組織免於登入風險，存取嘗試從非預期的網路或地區設定，access 會嘗試從風險的裝置類型，依此類推。 之後的第一個驗證完成後，以及使用從第一個驗證事件的訊號來決定是否嘗試的存取應該核准，拒絕，或更多完稿 （例如第二個表單是否強制使用條件式存取原則需要識別）。
 
     包含的條件式存取功能包括：
 
@@ -96,15 +95,15 @@ Microsoft 365 商務版中的進階的功能可協助您保護網路威脅貴公
 
 - **[資料外洩防護原則概觀](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)**(DLP)。 
     
-    您可以設定 DLP 以自動偵測敏感資訊，例如信用卡號碼、 社會安全號碼等可防止其不慎您公司外部共用。
+    您可以設定 DLP 以自動偵測敏感資訊，例如信用卡號碼、 社會安全號碼等等，以防止其不慎您公司外部共用。
     
 - **[Exchange Online 封存](https://products.office.com/exchange/microsoft-exchange-online-archiving-email)**
     
-    Exchange Online Archiving 授權可讓要輕鬆地使用持續性資料備份封存的郵件。 它會儲存所有使用者的電子郵件，包括已刪除的項目，以防稍後需要探索或還原。 此外，您可以使用不同的保留原則來保留電子郵件資料的訴訟保留，eDiscovery，或符合規範需求。
+    Exchange Online Archiving 授權可讓要輕鬆地使用持續性資料備份封存的郵件。 它會儲存所有使用者的電子郵件，包括已刪除的項目，以防時需要這些稍後探索或還原。 此外，您可以使用不同的保留原則來保留電子郵件資料的訴訟保留，eDiscovery，或符合規範需求。
     
-- **[敏感性標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
+- **[敏感度標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
-   Microsoft 365 商務版包含之所有功能的[Azure 資訊保護方案 1](https://go.microsoft.com/fwlink/p/?linkid=871407)。 您可以使用此計劃建立**敏感度標籤**，可讓您使用 「 不要轉寄 」 和 「 不要複製。 」 等控制項來控制存取電子郵件和文件中的敏感資訊 您也可以分類為 「 機密 」 的敏感資訊，並指定方式可以外部共用高機密性的資訊和公司內。 企業級加密很容易套用至電子郵件] 和 [保持私人資訊的文件。 您也可以安裝 Azure 資訊保護用戶端增益集的 Office 應用程式。 如需詳細資訊，請參閱[Azure 資訊保護整合標示用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 敏感度標籤的安裝**AzInfoProtection_UL.exe**。
+   Microsoft 365 商務版包含之所有功能的[Azure 資訊保護方案 1](https://go.microsoft.com/fwlink/p/?linkid=871407)。 透過此計劃，您可以建立**敏感度標籤**，可讓您可以使用 「 不要轉寄 」 和 「 不要複製。 」 等控制項來控制存取電子郵件和文件中的敏感資訊 您也可以分類為 「 機密 」 的敏感資訊，並指定方式可以外部共用高機密性的資訊和公司內。 企業級加密很容易套用至電子郵件] 和 [保持私人資訊的文件。 您也可以安裝 Azure 資訊保護用戶端增益集的 Office 應用程式。 如需詳細資訊，請參閱[Azure 資訊保護整合標示用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 敏感度標籤的安裝**AzInfoProtection_UL.exe**。
 
 您可以管理這些功能的安全性群組&amp;規範中心和 Intune 系統管理中心。 經過一段時間的簡化的控制項將會新增至 Microsoft 365 商務版系統管理中心。
   

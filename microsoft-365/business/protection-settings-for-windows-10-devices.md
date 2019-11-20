@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: 了解如何建立的應用程式管理原則，以及保護 Windows 10 裝置上的工作檔案。
-ms.openlocfilehash: 0e1221e533418166b80afd94431414016774f247
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: ca6d789e0242975a0395e6cf5653d3f43f819801
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575771"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715245"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>設定 Windows 10 裝置的應用程式保護設定
 
@@ -52,11 +52,11 @@ ms.locfileid: "37575771"
     
 7. **防止使用者複製到個人檔案的公司資料並強制他們將工作將檔案儲存到商務用 OneDrive**如果設定為**在**您不想要在其電腦上的工作檔案儲存的使用者。 
     
-9. 依序展開 [**修復 Windows 裝置上的資料**，並建議，您將它**開啟**。
+9. 依序展開 [**修復 Windows 裝置上的資料**。 我們建議您，您將它**開啟**。
     
-    您必須先建立資料修復代理憑證，才能瀏覽至其位置。如需相關指示，請參閱[建立並驗證加密檔案系統 (EFS) 資料修復代理 (DRA) 憑證](https://go.microsoft.com/fwlink/p/?linkid=853700)。
+    您必須先建立資料修復代理憑證，才能瀏覽至其位置。 如需相關指示，請參閱[建立並驗證加密檔案系統 (EFS) 資料修復代理 (DRA) 憑證](https://go.microsoft.com/fwlink/p/?linkid=853700)。
     
-    根據預設，工作檔案加密所使用的祕密金鑰會儲存在裝置中，且與使用者設定檔關聯。只有該使用者可以開啟並解密該檔案。不過，如果裝置遺失或是使用者遭到移除，檔案就會一直停留在加密狀態。系統管理員可以使用資料修復代理程式 (DRA) 憑證來解密該檔案。
+    根據預設，工作檔案加密所使用的祕密金鑰會儲存在裝置中，且與使用者設定檔關聯。 只有該使用者可以開啟並解密該檔案。 不過，如果裝置遺失或是使用者遭到移除，檔案就會一直停留在加密狀態。 系統管理員可以使用資料修復代理 (DRA) 憑證來解密該檔案。
     
     ![Browse to Data Recovery Agent certificate.](media/7d7d664f-b72f-4293-a3e7-d0fa7371366c.png)
   

@@ -5,12 +5,12 @@ keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 11cbdaf47e06536afd996fd41c3ea603967e2685
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 64b5ffab59b19945b20bc614f09963ca43027afe
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640345"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715505"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的電腦裝置 
 
@@ -20,7 +20,7 @@ Microsoft 受管理電腦定期評估要包含在服務中的裝置。 本主題
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-若要在 Microsoft 受管理電腦中註冊裝置必須是下列其中一個下列模型和達到或超過 RAM、 處理器系列以及磁碟空間的列出的規格。 支援沒有其他自訂。
+若要在 Microsoft 受管理電腦中註冊裝置必須是下列其中一個下列模型和達到或超過 RAM、 處理器系列以及磁碟空間的列出的規格。 
 
 您僅供參照的裝置以下連結。 如果您想要訂購裝置，搭配您的商業通道連絡人，以確保您選擇正確的設定。 在此表格中，*封存資料*是在其，這些模型會受到較短的 Microsoft 受管理的電腦服務 life; 日期任何在此日期之後這類裝置上的架也不會收到完整三年字詞的支援從 Microsoft 受管理的電腦。 封存的裝置也會列於[Microsoft 受管理電腦封存裝置](archived-device-list.md)。 *退休日期*是所在此模型將不再支援 Microsoft 受管理的電腦，所有的日期。 在該日期中，所有註冊的裝置，此模型的即將從 Microsoft 受管理的電腦，不論他們已註冊時。
 
@@ -41,7 +41,7 @@ Microsoft 受管理電腦定期評估要包含在服務中的裝置。 本主題
 | [HP EliteBook 830 / 840 / 850 G6 筆記本電腦](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線網路攝影機或指紋感應 | 2020 年 11 月 30 日 | 2023 11 月 30日， |
 | [HP EliteBook x360 830 G6 筆記本電腦](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線網路攝影機或指紋感應 | 2020 年 11 月 30 日 | 2023 11 月 30日， |
 | [HP 精銳 x2 1013 版 G3](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features) | 256 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS03AV，所需的紅外線相機 | 14，2020 | 2023 5 月 14日， |
-| [HP EliteBook x360 1030 版 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 56 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線相機 | 14，2020 | 2023 5 月 14日， |
+| [HP EliteBook x360 1030 版 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 256 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線相機 | 14，2020 | 2023 5 月 14日， |
 | [HP EliteBook x360 1040 版 G5](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1040-3074457345617328670--1#!&tab=features) | 256 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線相機 | 2020 年 10 月 23 日 | 2023 Oct 23， |
 | [HP EliteDesk 800 G4 DM](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU 與 5VS04AV | 2020 年 7 月 18 日 | 2023 年 7 月 18 日 |
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU 與 5VS04AV | 2020 年 7 月 18 日 | 2023 年 7 月 18 日 |

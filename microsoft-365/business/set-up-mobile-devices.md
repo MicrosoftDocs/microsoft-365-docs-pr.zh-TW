@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: 在 iPhone 或 Android 手機，與您在 Office 應用程式就會受到 Microsoft 365 商務版中的工作檔案上安裝 Office。
-ms.openlocfilehash: 6dd18569f0d4b3c71f00004706c2430eb7c5ae43
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: e09db43705d601df0c0b30a46ee36cf0295ecae3
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575601"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718932"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>為 Microsoft 365 商務版使用者設定行動裝置
 
@@ -58,11 +58,11 @@ ms.locfileid: "37575601"
   
 ![Sign in to your work account](media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
-如果貴組織保護 App 上的檔案，您會看到一個對話方塊，指出貴組織正在保護 App 中的資料，而且您必須重新啟動 App 才能繼續使用。 點選 [**確定]** ，並關閉 Outlook。 
+如果您的組織保護應用程式中的檔案，您會看到一個對話方塊，表示您的組織現在保護應用程式中的資料，以及您需要重新啟動應用程式才能繼續使用它。 點選 [**確定]** ，並關閉 Outlook。 
   
-![Screenshot that showa your organization is now protecting your Outlook app](media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
+![螢幕擷取畫面顯示您的組織現在會保護您的 Outlook 應用程式](media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
   
-在 iPhone 上找出並重新啟動 Outlook。當系統提示您時，輸入 PIN 並進行驗證。您 iPhone 上的 Outlook 現已可供使用。
+在 iPhone 上找出並重新啟動 Outlook。 出現提示時，請輸入 PIN 並進行驗證。 您 iPhone 上的 Outlook 現已可供使用。
   
 ![Set a PIN to access your organization's data](media/64f2630b-3164-47a4-9dd6-ca0c29ed5fb3.png)
   
@@ -72,11 +72,11 @@ ms.locfileid: "37575601"
   
 ![On the Android home screen, tap Play Store](media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-Google Play 搜尋方塊中輸入 Microsoft Outlook，然後點選 [**安裝**]。一旦完成 Outlook 安裝，請點選 [**開啟**。
+Google Play 搜尋方塊中輸入 Microsoft Outlook，然後點選 [**安裝**]。 一旦完成 Outlook 安裝，請點選 [**開啟**。
   
 ![Tap Open to open Outlook app](media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-在 Outlook app 中點選 [**開始**，然後新增您的 Microsoft 365 商務版電子郵件帳戶\>**繼續**，並以您組織的認證登入。
+在 Outlook app 中，點選 [**開始**，然後新增您的 Microsoft 365 商務版電子郵件帳戶\>**繼續**，並以您組織的認證登入。
   
 ![Sign in to your organizational account in Outlook](media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -84,7 +84,7 @@ Google Play 搜尋方塊中輸入 Microsoft Outlook，然後點選 [**安裝**]�
   
 ![Tap on Go to store to get Intune Company Portal app](media/a702d712-5622-45dd-a511-b1adaee63071.png)
   
-在 [Play 商店] 中，安裝 Intune 公司入口網站。
+在 [Play 商店，安裝 Intune 公司入口網站。
   
 ![Screenshot that shows the install button for Intune Company Portal in Google Play Store](media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 建立您的行銷活動的通訊網站。
-ms.openlocfilehash: 339f6e0de27975a8c768a6752d7fd367e12dd8f6
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: e8f7730d1ec407bf24a819df7366d9bedd78d390
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772530"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748274"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>建立您的行銷活動的通訊網站
 
@@ -58,7 +58,7 @@ ms.locfileid: "35772530"
 2. 在頁面左上角，選取 [應用程式啟動器圖示，然後選取 [ **SharePoint** ] 磚。 如果您沒有看到 [ **SharePoint** ] 磚，按一下 [**網站**] 磚] 或 [**全部**如果看不到 SharePoint。
 3. 在 SharePoint 首頁頂端，按一下 [ **+ 建立網站**，並選擇**通訊網站**選項。
 
-了解所有[關於站台的通訊](https://support.office.com/en-us/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732)，以及如何[建立 SharePoint Online 中的通訊網站](https://support.office.com/en-us/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB)。
+了解所有[關於站台的通訊](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732)，以及如何[建立 SharePoint Online 中的通訊網站](https://support.office.com/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB)。
 
 
 ## <a name="admin-settings"></a>系統管理員設定

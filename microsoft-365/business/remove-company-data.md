@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: '了解如何使用 Microsoft 365 商務版來移除公司資料從使用者裝置或 Windows 電腦。 '
-ms.openlocfilehash: 169bc7d849bb934de2788daebb90308b1a086111
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 59e94a08e149a5cb119aabbbe816ccd2f4a9f9fb
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575731"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715225"
 ---
 # <a name="remove-company-data-from-devices"></a>從裝置移除公司資料
 
-[![標籤，讓您知道變更在系統管理中心，然後您可以在 aka.ms/aboutM365preview 尋找更多詳細資料。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![[標籤] 可讓您知道系統管理中心正在變更，您可以在 aka.ms/aboutM365preview 取得更多詳細資料。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## <a name="remove-company-data"></a>移除公司資料
 
@@ -41,9 +41,9 @@ ms.locfileid: "37575731"
   
 3. 在 [**管理**] 頁面上，選擇或搜尋使用者誰具有您要移除，並選擇其名稱的資料。 
     
-4. 在下一步] 窗格中，從 [**裝置**] 清單中選取的裝置和在裝置上窗格中，開啟您可以選擇將裝置重設成出廠預設值設定，或移除公司資料，根據裝置類型而定。 
+4. 在下一步] 窗格中，請從**裝置**清單中選取的裝置。 在開啟 [裝置] 窗格中，您可以選擇將裝置重設成出廠預設值設定或移除公司資料，根據裝置類型而定。 
     
-    ![On the remove comapany data pane, select the device from which you want to remove the data.](media/resetorremove.png)
+    ![在 [移除公司資料] 窗格中，選取您要移除的資料的裝置。](media/resetorremove.png)
   
 5. 在 [確認] 窗格中，選擇 [ **Confirm** \> **關閉**。
     
