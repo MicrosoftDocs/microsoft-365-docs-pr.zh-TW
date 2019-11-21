@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 與 Microsoft Teams 和 SharePoint 共用檔案和您的行銷活動內的影片。
-ms.openlocfilehash: 14daa826e7df961baefaf7f6e7a17530842aad25
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 446285c375b64c6622905d3320de92c4ddb2dca0
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031188"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753612"
 ---
 # <a name="share-files-and-videos"></a>共用檔案和影片
 
-當您需要以控制誰可以檢視，以及誰可以編輯，您的檔案，您必須將檔案儲存在安全的位置，其中您可以確定會適當地套用權限。 可以使用 Microsoft Teams 可儲存您的檔案，並使用 Microsoft Teams 或傳送給 SharePoint 連結，然後共用的檔案內部或外部行銷活動。 傳送連結，而不是電子郵件附件形式表示您知道誰是檢視和修改檔案，並無法檢視或修改您的許可。 
+當您需要控制可以檢視，而且您需要將檔案儲存在安全的位置，其中您可以確定誰可以編輯您的檔案，會適當地套用權限。 您可以使用 Microsoft Teams 可儲存您的檔案，並使用 Microsoft Teams 或傳送 SharePoint 連結，然後共用的檔案內部或外部行銷活動。 傳送連結，而不是電子郵件附件形式表示您知道誰是檢視和修改檔案，並無法檢視或修改您的許可。 
 
 ![Microsoft Teams] 視窗中，顯示檔案] 索引標籤和取得連結] 功能表上的圖表](media/m365-democracy-teams-sharefiles.png)
 

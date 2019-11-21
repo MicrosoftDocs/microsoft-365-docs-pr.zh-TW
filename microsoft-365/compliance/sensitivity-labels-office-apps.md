@@ -1,242 +1,153 @@
 ---
-title: 敏感度標籤在 Office App 中的運作方式
-ms.author: greglin
-author: greg-lindsay
+title: Office App 中的敏感度標籤
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: ''
+ms.date: 11/20/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上強制執行保護設定，例如加密或浮水印。
-ms.openlocfilehash: f702423f0b1074b5619ef1c321cc5e9f1daef1d7
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
-ms.translationtype: HT
+description: 了解使用者如何使用桌面的 Office 應用程式、 Office 應用程式的行動電話和 web Office 相關應用程式中敏感度標籤運作。 了解哪些應用程式支援敏感度標籤。
+ms.openlocfilehash: 1b472185df2d45717cba6cfca30176768bf9cd4e
+ms.sourcegitcommit: 5f96fa472cbdca30c2cfe24d66c9c6fcaedb1a6b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417562"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38755591"
 ---
-# <a name="how-sensitivity-labels-work-in-office-apps"></a>敏感度標籤在 Office App 中的運作方式
+# <a name="sensitivity-labels-in-office-apps"></a>Office App 中的敏感度標籤
 
-## <a name="what-prerequisites-are-there-to-use-sensitivity-labels-in-office-applications"></a>使用 Office 應用程式中的敏感度標籤有何必要條件？
+本文說明：
 
-### <a name="common-requirements"></a>常見需求 
+- 您將敏感度標籤套用至電子郵件、 檔案及附件之前您環境的需求。
+- 每個 Office 應用程式支援的敏感度標籤功能。
+- 當您使用與 Office 應用程式搭配使用其他 Microsoft 安全性與合規性技術結合敏感度標籤時，會發生什麼事。
+- 當他們使用 Office 應用程式的 Windows 和 Office 應用程式的 web 貴組織中的人員可以如何使用敏感度標籤。
+- 哪裡可以取得在您開始使用敏感度標籤的組織中的人員。
 
-- 整合敏感度標籤必須在[安全性與合規性中心中設定和發佈](https://aka.ms/managemip)
-- 使用者必須使用其公司帳戶登入 Office。
-- 使用者必須獲派 Office 365 E3 或以上版本的授權。
+## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>訂閱與授權需求的敏感度標籤
 
-### <a name="additional-requirements-for-office-for-windows"></a>Windows 版 Office 的其他需求 
+使用者必須至少有一個獲派下列授權：
 
-- 絕對不能在 Office 中執行 Azure 資訊保護用戶端。 另請參閱：[敏感度標籤可以和Windows 版 Office 中的 Azure 資訊保護用戶端一起執行嗎？](#can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows)。
+- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)或上述
 
-### <a name="additional-requirements-for-outlook-on-all-platforms"></a>所有平台上 Outlook 的其他需求 
+- [Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software)或上述
 
-- 如果您在標籤設定中開啟了內容標記，則必須使用 Exchange Online，才能在傳輸中插入內容標記。
+- [Azure 資訊保護高階 P1](https://azure.microsoft.com/pricing/details/information-protection/)或上述
 
-## <a name="what-sensitivity-label-capabilities-are-supported-in-office-today"></a>目前 Office 支援哪些敏感度標籤功能？ 
+在 Office 內建標示用戶端支援與訂閱的舊版 Office 的敏感度標籤。 用戶端不支援獨立版本，例如 Office 2016 或 Office 2019。
 
-<table border="1" cellspacing="0" cellpadding="0">
-<th><font size="-1">功能<th><font size="-1">Windows<th><font size="-1">Mac<th colspan="2"><font size="-1">iOS<th colspan="2"><font size="-1">Android<th colspan="2"><font size="-1">網頁</tr>
-<tr><td>
+若要使用自動或建議的敏感度標籤，使用者需要下列其中一個下列授權：
 
-<td><font size="-1"> Word<br>
-Excel<br>
-PowerPoint<br>
-Outlook
+- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)或上述
 
+- [Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software)或上述
 
-<td><font size="-1"> Word<br>
-Excel<br>
-PowerPoint<br>
-Outlook
+- [Azure 資訊保護高階 P2](https://azure.microsoft.com/pricing/details/information-protection/)或上述
 
-<td><font size="-1"> Word<br>
-Excel<br>
-PowerPoint
-<td><font size="-1"> Outlook
+## <a name="support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>敏感度標籤功能的 Word、 Excel 及 PowerPoint 的支援
 
-<td><font size="-1"> Word<br>
-Excel<br>
-PowerPoint
-<td><font size="-1"> Outlook
+針對每個功能下, 表會列出該應用程式所需的最小版本。 TBD 表示您無法在該平台上使用該功能。
 
-<td><font size="-1"> Word<br>
-Excel<br>
-PowerPoint
-<td><font size="-1"> Outlook </b>
-</tr>
+|功能                                                                                                        |Windows 桌面 |Mac 桌面 |iOS    |Android      |Web                                                         |
+|------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
+|[以手動方式套用、 變更或移除標籤](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[套用預設標籤](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | TBD                                                        |
+|[需要正當理由，若要變更標籤](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[提供自訂說明頁面的說明連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[標記內容](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
+|系統管理員[檢視標籤使用狀況與標籤分析](label-analytics.md)並傳送資料                      | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
+|
+  [要求使用者在電子郵件和文件中套用標籤](sensitivity-labels.md#what-label-policies-can-do)   | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
+|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 預覽： 在推行[Office 測試人員](https://office.com/insider)                                  | TBD | TBD | TBD | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|標記和受保護的文件上支援[自動儲存](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)與[共同撰寫](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) | TBD | TBD | TBD | TBD | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|
 
-<tr>
-<td><font size="-1">手動套用、變更或移除標籤<td><font size="-1"><b>是</b><br><font size="-1">1910+</font>
+## <a name="support-for-sensitivity-label-capabilities-in-outlook"></a>在 Outlook 中的敏感度標籤功能的支援
 
-<td><font size="-1"><b>是</b><br><font size="-1">16.21.0+</font>
+針對每個功能下, 表會列出該應用程式所需的最小版本。 TBD 表示您無法在該平台上使用該功能。
 
-<td><font size="-1"><b>是</b><br><font size="-1">2.21+</font>
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1"><b>是</b><br><font size="-1">16.0.11231+</font>
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1">即將推出<sup>3</sup><td><font size="-1">即將推出<sup>3</sup>
+|功能                                                                                                        |在 Windows 桌面上的 outlook |在 Mac 桌面上的 outlook  |在 iOS 上的 outlook |在 Android 上的 outlook |Outlook 網頁版 |
+|------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
+|[以手動方式套用、 變更或移除標籤](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39+           | 是               |
+|[套用預設標籤](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39+           | 是               |
+|[需要正當理由，若要變更標籤](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39+           | 是               |
+|[提供自訂說明頁面的說明連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39+           | 是               |
+|[標記內容](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39+           | 是               |
+|[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39+           | 是               |
+|[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39+           | 是               |
+|系統管理員[檢視標籤使用狀況與標籤分析](label-analytics.md)並傳送資料                      | TBD                       | TBD                    | TBD           | TBD               | TBD               |
+|
+  [要求使用者在電子郵件和文件中套用標籤](sensitivity-labels.md#what-label-policies-can-do)   | TBD                       | TBD                    | TBD           | TBD               | TBD               |
+|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | TBD                       | TBD                    | TBD           | TBD               | 預覽： 在推行至[已設定目標發行](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide) |
+|
 
-<tr>
-<td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">套用預設標籤</a>
-<td><font size="-1"><b>是</b><br><font size="-1">1910+</font>
+## <a name="about-the-office-built-in-labeling-client"></a>關於 Office 內建標示用戶端
 
-<td><font size="-1"><b>是</b><br><font size="-1">16.21.0+</font>
+在 Office 內建標示用戶端會從下列系統管理中心下載標籤和原則設定：
 
-<td><font size="-1"><b>是</b><br><font size="-1">2.21+</font>
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1"><b>是</b><br><font size="-1">16.0.11231+</font>
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1">即將推出<sup>3</sup>
+- Office 365 安全性與合規性中心
 
-<tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">需要變更標籤的理由</a><sup>1</sup>
-<td><font size="-1"><b>是</b><br><font size="-1">1910+</font>
+- Microsoft 365 安全性中心
 
-<td><font size="-1"><b>是</b><br><font size="-1">16.21.0+</font>
+- Microsoft 365 合規性中心
 
-<td><font size="-1"><b>是</b><br><font size="-1">2.21+</font>
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1"><b>是</b><br><font size="-1">16.0.11231+</font>
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1">即將推出<sup>3</sup>
+在 Office 內建標示用戶端會自動啟用，具有一或多個[發佈的標籤原則](sensitivity-labels.md#what-label-policies-can-do)給他們的使用者。
 
-<tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">提供自訂說明頁面的說明連結</a>
-<td><font size="-1"><b>是</b><br><font size="-1">1910+</font>
+若要在 Windows 上的 Office 中使用內建標示的用戶端，您不能執行的 Azure 資訊保護增益集在同一時間 Office 中。 您可以暫時或永久解除安裝 Azure 資訊保護用戶端上，或者您可以保留安裝並設定 Office，以防止執行。
 
-<td><font size="-1"><b>是</b><br><font size="-1">16.21.0+</font>
+1. 完成其中一個選項：
 
-<td><font size="-1"><b>是</b><br><font size="-1">2.21+</font>
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1"><b>是</b><br><font size="-1">16.0.11231+</font>
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1">即將推出<sup>3</sup>
+    **進行多部電腦：** 設定 **使用套用及檢視敏感度標籤的 Office 中的 [敏感度] 功能**] 群組原則設定。 找到此設定在 [**使用者設定/系統管理範本/Microsoft Office 2016/安全性設定**。 部署此設定透過群組原則，或藉由使用[Office 雲端原則服務](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)。
 
-<tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">標記內容</a>
-<td><font size="-1"><b>是</b><br><font size="-1">1910+</font>
-
-<td><font size="-1"><b>是</b><br><font size="-1">16.21.0+</font>
-
-<td><font size="-1"><b>是</b><br><font size="-1">2.21+</font>
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1"><b>是</b><br><font size="-1">16.0.11231+</font
-><td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1">即將推出<sup>3</sup>
-
-<tr><td><font size="-1">
-  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels#assign-permissions-now">指派預先定義的權限</a>
-<td><font size="-1"><b>是</b><br><font size="-1">1910+</font>
-
-<td><font size="-1"><b>是</b><br><font size="-1">16.21.0+</font>
-
-<td><font size="-1"><b>是</b><br><font size="-1">2.21+</font>
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1"><b>是</b><br><font size="-1">16.0.11231+</font>
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1">即將推出<sup>3</sup>
-
-<tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">讓使用者指派權限</a>
-<td><font size="-1"><b>是</b><sup>2</sup><br><font size="-1">1910+</font>
-
-<td><font size="-1"><b>是</b><sup>2</sup><br><font size="-1">16.21.0+</font>
-
-<td><font size="-1">未定
-<td><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1">未定<td
-><font size="-1">即將推出<sup>3</sup>
-<td><font size="-1">未定
-<td><font size="-1">即將推出<sup>3</sup>
-
-<tr><td><font size="-1">傳送<a href="https://docs.microsoft.com/microsoft-365/compliance/label-analytics">標籤分析</a>資料給系統管理員
-<td><font size="-1">未定
-
-<td><font size="-1">未定
-
-<td><font size="-1">未定
-<td><font size="-1">未定
-<td><font size="-1">未定
-<td><font size="-1">未定
-<td><font size="-1">未定
-<td><font size="-1">未定
-
-<tr><td><font size="-1">
-  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">要求使用者在電子郵件和文件中套用標籤</a>
-<td><font size="-1">未定
-
-<td><font size="-1">未定
-
-<td><font size="-1">未定
-<td><font size="-1">未定
-<td><font size="-1">未定
-<td><font size="-1">未定
-<td><font size="-1">未定
-<td><font size="-1">未定
-
-<tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically">自動將敏感度標籤套用到內容</a>
-<td><font size="-1">未定
-
-<td><font size="-1">未定
-
-<td><font size="-1">未定
-<td><font size="-1">未定
-<td><font size="-1">未定
-<td><font size="-1">未定
-<td><font size="-1">未定
-<td><font size="-1">未定
-</table>
-
-<br><sup>1</sup>如設定，系統會提示使用者說明標籤降級的理由。 但是，理由資料尚未提供給系統管理員。 當支援 [傳送標籤分析資料給系統管理員] 功能時，系統就會提供此功能。
-<br><sup>2</sup>目前只有 Windows 版和 Mac 版 Outlook 才能讓使用者指派權限。 Word、Excel 和 PowerPoint 的適用性未定。
-<br><sup>3</sup>預計是 2019 年的第四季。
-
-## <a name="when-do-content-marks-or-encryption-get-applied-after-content-is-given-a-sensitivity-label"></a>在內容加上敏感度標籤之後，何時會套用內容標記或加密功能？
-
-| 應用程式 | 內容標記 | 加密
-| --- | --- | --- |
-| 所有平台上的 Word、Excel、PowerPoint | 立即 | 立即 |
-| 電腦版和 Mac 版 Outlook | 在 Exchange Online 傳送電子郵件之後 | 立即 |
-| 網頁版、iOS 版和 Android 版 Outlook | 在 Exchange Online 傳送電子郵件之後 | 在 Exchange Online 傳送電子郵件之後 |
-
-## <a name="can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows"></a>敏感度標籤可以和 Windows 版 Office 中的 Azure 資訊保護用戶端一起執行嗎？
-
-不行。 如果在 Windows 版 Office 中載入 Azure 資訊保護用戶端，敏感度標籤即會關閉。
-
-如果您已安裝 Azure 資訊保護用戶端，但想要改用敏感度標籤，您可以：
-
-1. 設定 [在 Office 中使用 [敏感度] 功能以套用並檢視敏感度標籤] **** 的群組原則設定，這個設定可在 **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings** 下找到。
-
-  >注意：這個設定可透過傳統的群組原則部署機制來部署，或是透過 [Office 雲端原則服務][](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)。 
- 
-  或者，您可以解除安裝或 [停用] [](https://support.office.com/article/view-manage-and-install-add-ins-in-office-programs-16278816-1948-4028-91e5-76dca5380f8d) Azure 資訊保護用戶端。 
+    **的單一電腦：** 請參閱 「 檢視、 管理與 Office 程式中安裝增益集 」 和[永久停用或移除](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)的 Azure 資訊保護增益集在單一電腦上。
 
 2. 重新啟動所有 Office 應用程式。
 
-## <a name="will-sensitivity-labels-be-supported-in-non-subscription-versions-of-office-like-office-2016-or-office-2019"></a>Office 的非訂閱版本是否支援敏感度標籤，例如 Office 2016 或 Office 2019？
+如需詳細的資訊保護用戶端應用程式的詳細資訊，請參閱[Azure 資訊保護用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client)。
 
-不行。 只有 Office 365 訂閱才支援敏感度標籤，所有非訂閱版本均不支援。 不過，可以在 Office 的非訂閱版本中使用 Azure 資訊保護的整合式標籤用戶端。 
+## <a name="protection-templates-and-sensitivity-labels"></a>保護範本和敏感度標籤
 
-## <a name="i-previously-deployed-protection-templates-before-setting-up-sensitivity-labels-where-did-they-go"></a>我在設定敏感度標籤之前已經部署好保護範本。 它們去哪裡了？
+當敏感度標籤已啟用，因為它們是使用已啟用加密的敏感度標籤設為備援，系統管理員定義[保護範本](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)，例如您的 Office 365 郵件加密，定義會隱藏自 Office 使用者體驗。
 
-啟用敏感度標籤後，系統管理員定義的[保護範本](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)即會隱藏，Office 使用者無法使用，因為靈敏度標籤已啟用加密功能，因此這些範本是多餘的。 
+## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>將敏感度標籤套用至檔案、 電子郵件及附件
 
-## <a name="can-a-file-or-email-have-more-than-one-classification"></a>檔案或電子郵件是否可以有多個分類？
+使用者可以將只有一個標籤套用一次每個文件或電子郵件。
 
-不行。 使用者一次只能針對每個文件或電子郵件選取一個標籤。
+當您設定標籤具有附件的電子郵件訊息時，附件不繼承標籤。 如果附件有標籤它們會保留該分別套用的標籤。 如果附件沒有標籤，然後附件維持沒有標籤。 但是，如果電子郵件的標籤套用保護，則該保護將套用至 Office 附件。
 
-## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>標記電子郵件後，附件也會自動獲得相同的標記嗎？
+## <a name="sensitivity-label-compatibility"></a>敏感度標籤相容性
 
-不會。 當您標記具有附件的電子郵件時，這些附件不會繼承相同的標籤。 附件會保持為沒有標籤，或者保留個別套用的標籤。 但是，如果電子郵件的標籤套用保護，則該保護將套用至 Office 附件。
+**使用 RMS enlightened 應用程式**。 如果您不支援敏感度標籤[RMS enlightened 應用程式](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)中開啟已標示_和已加密_的文件或電子郵件，應用程式仍會強制加密和權限管理。
 
-## <a name="additional-resources"></a>其他資源
+**使用 Azure 資訊保護用戶端**。 您可以檢視和變更的敏感度標籤套用至文件和電子郵件與 Office 內建標示用戶端的 Azure 資訊保護用戶端與反之。
 
-[Azure 資訊保護中分類與標籤的常見問題集](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect)<br>
-[在 Office 中將敏感度標籤套用至您的文件和電子郵件](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+**與其他 Office 版本**。 任何授權的使用者可以在其他 Office 版本中開啟已標記的文件和電子郵件。 不過，您可以僅檢視或變更的 Azure 資訊保護用戶端或中支援的 Office 版本的標籤。 支援的 Office 應用程式版本會列在本文中的表格中。
+
+## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>對受保護的敏感度標籤的 SharePoint 和 OneDrive 檔案的支援
+
+若要使用 Office 中的 Office 內建標示用戶端，在 web 上，在文件必須位於 OneDrive for Business 或 SharePoint Online 的執行個體，已選擇集[啟用 SharePoint 和 OneDrive 中的 Office 檔案的敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)。
+
+## <a name="when-office-365-applies-marks-and-encryption-to-content"></a>當 Office 365 適用於標記及加密內容
+
+Office 365 適用於內容的標記或具有不同根據您使用的應用程式敏感度標籤的加密。
+
+| 應用程式 | 內容標記 | 加密 |
+| --- | --- | --- |
+| 所有平台上的 Word、Excel、PowerPoint | 立即 | 立即 |
+| 電腦版和 Mac 版 Outlook | Exchange Online 會傳送電子郵件之後 | 立即 |
+| 網頁版、iOS 版和 Android 版 Outlook | Exchange Online 會傳送電子郵件之後 | Exchange Online 會傳送電子郵件之後 |
+|
+
+## <a name="more-resources"></a>其他資源
+
+[Azure 資訊保護中分類與標籤的常見問題集](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect)
+
+[在 Office 中將敏感度標籤套用至您的文件和電子郵件](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)

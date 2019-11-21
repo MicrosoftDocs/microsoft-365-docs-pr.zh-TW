@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定使用 Microsoft Teams 的線上會議。
-ms.openlocfilehash: 67a58b17d3e5153d8e0f36788f68ca7c0e204d6f
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 7ecdec3f7dc329f1ff70bf8d72a7ca5bc946636f
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772300"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753582"
 ---
 # <a name="set-up-meetings"></a>設定會議
 
@@ -40,8 +40,8 @@ Microsoft Teams 中的會議包含音訊、 視訊和共用。 因為它們是�
 ## <a name="best-practices"></a>最佳做法
 
 請遵循這些的線上會議的最佳作法：
-1. 排程線上會議右手 Microsoft teams。 您可以選擇小組及通道，以及小組會邀請小組參與者或自動通道。
-2. 需要即席會議嗎？ 如果您是在一對一聊天室中，選擇 **[立即開會]** 啟動視訊或音訊通話與您正在與交談的人員。 
+- 排程線上會議右手 Microsoft teams。 您可以選擇小組及通道，以及小組會邀請小組參與者或自動通道。
+- 需要即席會議嗎？ 如果您是在一對一聊天室中，選擇 **[立即開會]** 啟動視訊或音訊通話與您正在與交談的人員。 
 
 
 ## <a name="schedule-a-meeting"></a>排程會議

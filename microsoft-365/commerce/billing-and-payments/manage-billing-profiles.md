@@ -16,23 +16,23 @@ search.appverid:
 - MET150
 description: 了解如何帳單 profiles 支援發票。
 keywords: 帳單設定檔、 發票、 費用，受管理的費用
-ms.openlocfilehash: bd963ff993a064615f0f7ad06c8f2cc5c3401ad2
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: 4b46709cf877ea8689f72b66d5ac357272e4737d
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646419"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753542"
 ---
 # <a name="manage-billing-profiles"></a>管理帳單的設定檔
 從 Microsoft 購買產品和服務的商業客戶，「 帳單設定檔 」 可讓您自訂哪些項目會包含在您的帳單和支付您發票的方式。
 
 帳單設定檔包含下列資訊：
 
-- **計費帳戶**&mdash;設定檔與相關的帳單帳戶名稱
-- **付款方式**&mdash;信用卡或轉帳卡、 銀行帳戶、 存回或線路傳輸
-- **連絡人資訊**&mdash;帳單地址與連絡人的名稱
-- **發票設定**&mdash;貨幣根據帳單帳戶、 選用的 PO 編號，以及收到以電子郵件附件形式的發票的選項的國家/地區
-- **權限**&mdash;的權限可讓您變更帳單的設定檔，支付帳單，或購買商品帳單的設定檔上使用付款方式
+- **計費帳戶**&ndash;設定檔與相關的帳單帳戶名稱
+- **付款方式**&ndash;信用卡或轉帳卡、 銀行帳戶、 存回或線路傳輸
+- **連絡人資訊**&ndash;帳單地址與連絡人的名稱
+- **發票設定**&ndash;貨幣根據帳單帳戶、 選用的 PO 編號，以及收到以電子郵件附件形式的發票的選項的國家/地區
+- **權限**&ndash;的權限可讓您變更帳單的設定檔，支付帳單，或購買商品帳單的設定檔上使用付款方式
 
 用於控制您購買並自訂您的帳單計費的設定檔。 每月的發票付款與帳單的設定檔所購買的產品為產生。 您可以自訂發票，例如更新購買訂單號碼和電子郵件發票喜好設定。
 
@@ -70,4 +70,4 @@ ms.locfileid: "37646419"
 
 如果您有任何疑問，或需要與您 Azure 的費用，<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">建立 Azure 支援的支援要求</a>協助。
 
-如果您有任何疑問，或需要您帳單的設定檔，在 Microsoft 365 系統管理中心，[請連絡商務產品的支援](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products)。
+如果您有任何疑問，或需要您帳單的設定檔，在 Microsoft 365 系統管理中心，[請連絡商務產品的支援](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。

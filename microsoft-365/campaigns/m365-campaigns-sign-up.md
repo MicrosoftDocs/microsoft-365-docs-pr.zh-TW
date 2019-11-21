@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 逐步註冊行銷活動適用於 Microsoft 365。 從電子郵件、 資料及通訊的 cybersecurity 威脅保護您的行銷活動。
-ms.openlocfilehash: 178fa371d0f299c58168957b82b0c7da74b37742
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: b6866a3c2291b00934b5808777f795e5b99faa34
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772460"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753602"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>註冊 Microsoft 365 的行銷活動 
 
@@ -78,14 +78,14 @@ ms.locfileid: "35772460"
 2. 在 [**歡迎，讓我們前往認識您**] 頁面上，按一下或點選 [**想要將這新增至現有訂閱嗎？登入**。
     
     ![在右上角，選擇 [登入。](media/addtoexisting.png)
-3. 在登入] 頁面上，輸入系統管理員的別名現有訂用帳戶，例如， *Alice@VoteContoso<span></span>.org* ，然後選擇 [**下一步**，輸入您的密碼，然後選擇 [**登入**。
-4. 在**如何執行此外觀？** 輸入的使用者也可以選擇 [**下一步**數目。 請注意，您不必輸入促銷代碼，因為它已包含在邀請 URL。
+3. 在登入] 頁面上，輸入系統管理員的別名現有訂用帳戶，例如*Alice@VoteContoso<span></span>.org*，選擇 [**下一步**，輸入您的密碼，然後選擇 [**登入**。
+4. 在**如何執行此外觀？** 輸入的使用者也可以選擇 [**下一步**數目。 您不必輸入促銷代碼，因為它已包含在邀請 URL。
 5. 在**您希望如何付款？** ] 頁面上，輸入您的付款方式，選擇 [**下單**。
 
-完成這些步驟之後，您已準備好[指派新授權](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide)給您的行銷活動人員。 
+完成這些步驟之後，就可以指派[新授權](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide)給您的行銷活動人員。 
 
 
-## <a name="whats-next"></a>後續步驟
+## <a name="whats-next"></a>下一步是什麼？
 - [設定 Microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)完成 Microsoft 365 行銷活動的設定。 
 - [新增使用者](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json)至您的計劃。 包含活動候選項目、 所有的資深活動人員，以及會有機密的活動或方資訊的存取權的任何人。
 - [兩點保護您的行銷活動](m365-campaigns-security-overview.md)

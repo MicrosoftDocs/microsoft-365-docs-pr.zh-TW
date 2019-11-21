@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6c30f9e9a9f45ac8a68c285f4c594b238874f768
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 134e971e00fc64d3ea005d32ed95359ed8fb8feb
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982504"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757660"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的支援
 
@@ -39,7 +39,7 @@ Microsoft 受管理的電腦支援包括：
 
 支援的詳細資訊：
 
-- 目前: 「 北美地區 」、 加拿大 （不含魁北克）、 英國、 澳洲及紐西蘭僅 (24 x 7 x 365) 
+- 目前： 美國、 加拿大 （不含魁北克）、 英國、 比利時、 盧森堡、 荷蘭、 澳洲及紐西蘭 (24 x 7 x 365) 
 - 英文的電話和聊天交談與客戶的唯一支援的語言 
 - 我們會合作對象]，而不取代，公司技術服務人員;營運 (LOB) 應用程式、 網路資源等仍由技術服務人員處理 
 - "Test"群組中的 Microsoft 受管理的電腦裝置和裝置不屬於 Microsoft 受管理的電腦會超出範圍 
