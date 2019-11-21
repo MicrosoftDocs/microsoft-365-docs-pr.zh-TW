@@ -55,6 +55,7 @@
 ### [身分識別]()
 #### [密碼雜湊同步處理](password-hash-sync-m365-ent-test-environment.md)
 #### [傳遞驗證](pass-through-auth-m365-ent-test-environment.md)
+#### [同盟驗證](federated-identity-for-your-office-365-dev-test-environment.md)
 #### [Azure AD 無縫單一登入](single-sign-on-m365-ent-test-environment.md)
 #### [多重要素驗證](multi-factor-authentication-microsoft-365-test-environment.md)
 #### [保護全域系統管理員帳戶](protect-global-administrator-accounts-microsoft-365-test-environment.md)
