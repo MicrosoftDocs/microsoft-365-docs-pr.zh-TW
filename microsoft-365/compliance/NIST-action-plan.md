@@ -12,12 +12,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 5c43a0e26dfc052c23cbaf349bd541d996dca558
-ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
+ms.openlocfilehash: 9a1ca4898696923b7dcbe22879906b25ccebcd13
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "38710006"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757650"
 ---
 # <a name="microsoft-365-nist-800-53-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 NIST 800-53 行動計畫 — 前 30 天、90 天及過後的首要工作
 
@@ -25,7 +25,7 @@ Microsoft 365 可讓您利用雲端架構經營您的企業，該架構可對齊
 
 Microsoft 被視為雲端安全性中的業界領導者。使用多年建置企業軟體及執行線上服務的經驗，我們的小組會持續學習並持續更新我們的服務和應用程式來提供符合業界嚴格相容性標準的安全雲端生產力服務。Microsoft 的政府雲端服務 (包括 Office 365 美國政府版) 符合美國聯邦風險與授權管理計劃 (FedRAMP) 的嚴苛需求，讓美國聯邦政府機構能受益於 Microsoft Cloud 的節省成本及嚴格的安全性。
 
-本文包含當您工作以符合 NIST 800-53 需求時可以遵循的優先行動計畫。此行動計畫是與 Protiviti 一同開發，該公司是 Microsoft 合作夥伴，專精於法規遵循。深入了解如何藉由參加以下研討會，在 Microsoft Ignite 使用這個行動計畫：[規劃您的 Microsoft 365 合規性路徑和資訊保護策略](https://myignite.techcommunity.microsoft.com/sessions/65720?source=sessions) (英文)，由 Maithili Dandige (Microsoft) 和 Antonio Maio (Protiviti) 主講。
+本文包含當您工作以符合 NIST 800-53 需求時可以遵循的優先行動計畫。這個行動計畫是與 Protiviti (這是一家致力於法規合規性的 Microsoft 合作夥伴) 共同開發。 
 
 ## <a name="action-plan-outcomes"></a>行動計畫結果
 

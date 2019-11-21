@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定適用於 Microsoft 365 測試環境的密碼回寫。
-ms.openlocfilehash: f0f10d34cd761f7e7e3c60a1816bd79eea8ecd9b
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 98838bd61fb5664e0b8c8aed4f4b20dee39e0dec
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673359"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757680"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼回寫
 
@@ -49,9 +49,9 @@ ms.locfileid: "38673359"
   
 此組態包含： 
   
-- Office 365 E5 和 EMS E5 試用版或付費訂閱。
+- Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 
-- Azure AD Connect 在 APP1 上執行，以將 TESTLAB AD DS 網域同步至 Office 365 和 EMS E5 訂閱的 Azure AD 租用戶。
+- Azure AD Connect 在 APP1 上執行，以將 TESTLAB AD DS 網域同步至 Microsoft 365 或 Office 365 訂閱的 Azure AD 租用戶。
 
 ## <a name="phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain"></a>階段 2：啟用適用於 TESTLAB AD DS 網域的密碼回寫
 
@@ -126,9 +126,9 @@ ms.locfileid: "38673359"
 
 此組態包含：
 
-- 已註冊 DNS 網域 TESTLAB.\<您的網域名稱> 的 Office 365 E5 和 EMS E5 試用版或付費訂閱。
+- 已註冊 DNS 網域 TESTLAB.\<您的網域名稱> 的 Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 
-- Azure AD Connect 在 APP1 上執行，以將來自 Office 365 和 EMS E5 訂閱之 Azure AD 租用戶的帳戶和群組清單同步至 TESTLAB AD DS 網域。 
+- Azure AD Connect 在 APP1 上執行，以將來自 Microsoft 365 或 Office 365 訂閱之 Azure AD 租用戶的帳戶和群組清單同步至 TESTLAB AD DS 網域。 
 - 密碼回寫已啟用，因此使用者可以透過 Azure AD 變更其密碼，而不需要連線到簡化的內部網路。
 
 如需在生產中進行密碼回寫的相關資訊和連結，請參閱身分識別階段中的「[簡化密碼更新](identity-add-user-accounts.md#identity-pw-writeback)」步驟。

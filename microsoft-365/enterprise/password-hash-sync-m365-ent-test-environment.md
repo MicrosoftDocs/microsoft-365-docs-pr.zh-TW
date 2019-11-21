@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：為您的 Office 365 測試環境設定及示範密碼雜湊同步處理並且登入。
-ms.openlocfilehash: 019a1f80712c426d678603b467bf19815d25f391
-ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
+ms.openlocfilehash: e1055f9a4a64c05f55d4a5446f637ba195c0377c
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38694110"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757730"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>適用於 Office 365 測試環境的密碼雜湊同步處理
 
 *這個測試實驗室指南可用於 Microsoft 365 企業版和 Office 365 企業版兩種測試環境。*
 
-許多組織使用 Azure AD Connect 和密碼雜湊同步處理，將其內部部署 Active Directory Domain Services (AD DS) 樹系中的帳戶集同步處理至 Office 365 和 EMS E5 訂閱的 Azure AD 租用戶中的帳戶集。 本文說明如何將密碼雜湊同步處理新增至 Office 365 測試環境，進而產生下列組態：
+許多組織使用 Azure AD Connect 和密碼雜湊同步處理，將其內部部署 Active Directory Domain Services (AD DS) 樹系中的帳戶集同步處理至 Microsoft 365 或 Office 365 訂閱的 Azure AD 租用戶中的帳戶集。 本文說明如何將密碼雜湊同步處理新增至 Office 365 測試環境，進而產生下列組態：
   
 ![使用密碼雜湊同步處理測試環境的模擬企業](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
@@ -47,7 +47,7 @@ ms.locfileid: "38694110"
   
 此組態包含： 
   
-- Office 365 E5 和 EMS E5 試用版或付費訂閱。
+- Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路中的 DC1、APP1 及 CLIENT1 虛擬機器組成。 DC1 是 testlab 的網域控制站。\<您的公開網域名稱> AD DS 網域。
 
 ## <a name="phase-2-create-and-register-the-testlab-domain"></a>階段 2：建立及註冊 testlab 網域
@@ -64,7 +64,7 @@ ms.locfileid: "38694110"
   
 此組態包含：
 
-- 已註冊 DNS 網域 testlab.\<您的網域名稱> 的 Office 365 E5 和 EMS E5 試用版或付費訂閱。
+- 已註冊 DNS 網域 testlab.\<您的公用網域名稱> 的 Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成
 
 請注意 testlab.\<您的公用網域名稱> 目前的狀況：
@@ -131,8 +131,8 @@ ms.locfileid: "38694110"
 
 此組態包含： 
   
-- 已註冊 DNS 網域 TESTLAB.\<您的網域名稱> 的 Office 365 E5 和 EMS E5 試用版或付費訂閱。
-- 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 Azure AD Connect 會在 APP1 上執行，以將 TESTLAB AD DS 網域定期同步至 Office 365 和 EMS E5 訂閱的 Azure AD 租用戶。
+- 已註冊 DNS 網域 TESTLAB.\<您的網域名稱> 的 Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
+- 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 Azure AD Connect 在 APP1 上執行，以定期將 TESTLAB AD DS 網域同步至 Microsoft 365 或 Office 365 訂閱的 Azure AD 租用戶。
 - TESTLAB AD DS 網域中的 User1 帳戶已經與 Azure AD 租用戶同步處理。
 
 ## <a name="next-step"></a>下一步

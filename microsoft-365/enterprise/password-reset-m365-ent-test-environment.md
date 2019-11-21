@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定並測試適用於 Microsoft 365 測試環境的密碼重設。
-ms.openlocfilehash: 3ad5a1477bfc40b541c0b048b9b68b896a748e0a
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 100db14b7940d68a185c3f6065df053aed7fbf73
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673369"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757710"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼重設
 
@@ -48,9 +48,9 @@ Azure Active Directory (Azure AD) 自助密碼重設 (SSPR) 允許使用者重�
   
 此組態包含： 
   
-- Office 365 E5 和 EMS E5 試用版或付費訂閱。
+- Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 
-- Azure AD Connect 會在 APP1 上執行，以將 TESTLAB Active Directory Domain Services (AD DS) 網域同步至 Office 365 和 EMS E5 訂閱的 Azure AD 租用戶。
+- Azure AD Connect 會在 APP1 上執行，以將 TESTLAB Active Directory Domain Services (AD DS) 網域同步至 Microsoft 365 或 Office 365 訂閱的 Azure AD 租用戶。
 
 
 ## <a name="phase-2-enable-password-writeback"></a>階段 2：啟用密碼回寫

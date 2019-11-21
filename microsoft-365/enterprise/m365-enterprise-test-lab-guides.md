@@ -3,7 +3,7 @@ title: Microsoft 365 企業版測試實驗室指南
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/04/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用「測試實驗室指南」以設定 Microsoft 365 企業版的示範、概念證明或開發/測試環境。
-ms.openlocfilehash: 2f6fd8c17096c9c25a0f1af886894e68d33e939d
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 5f2f6b9fb137cf9d1ea9dc21ca12a3792d79e249
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38672569"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757832"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Microsoft 365 企業版測試實驗室指南
 
@@ -59,6 +59,10 @@ TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符�
 - [傳遞驗證](pass-through-auth-m365-ent-test-environment.md)
   
    啟用及測試對 AD DS 網域控制站的傳遞驗證。
+
+- [同盟驗證](federated-identity-for-your-office-365-dev-test-environment.md)
+  
+   啟用及測試對 AD DS 網域控制站的同盟驗證。
 
 - [Azure AD 無縫單一登入](single-sign-on-m365-ent-test-environment.md)
   
