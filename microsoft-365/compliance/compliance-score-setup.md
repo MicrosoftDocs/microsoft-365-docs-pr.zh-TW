@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何登入，設定權限，以及了解 Microsoft 合規性分數，可協助簡化和自動化風險評定儀表板。
-ms.openlocfilehash: 8c9bc7d1605bad66228bb47de8f86042839ac5be
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 7bff479d4cd7e3f200f7fc169eb351299eec8a39
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685389"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793647"
 ---
-# <a name="microsoft-compliance-score-setup-preview"></a>Microsoft 合規性分數安裝程式 （預覽）
+# <a name="microsoft-compliance-score-preview-setup"></a>Microsoft 合規性分數 （預覽） 安裝程式
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -49,10 +49,10 @@ Microsoft 365 全域系統管理員為您的組織可能會存取合規性分數
 | :------------- | :-------------: | :------------: |
 | **讀取但無法編輯資料**| Azure AD 全域讀者  | Azure AD 全域讀者 | 
 | **讀取但無法編輯資料**| 安全性讀取者 | 合規性管理員讀取者  | 
-| **編輯資料**| 合規性管理員 | 合規性參與者 | 
-| **編輯測試結果**| 合規性管理員 | 合規性管理員評估者 | 
-| **管理評估以及範本和租用戶資料**| 合規性管理員<br>合規性資料管理員<br>安全性系統管理員 | 合規性管理員的系統管理員 | 
-| **指派給使用者**| 全域管理員 | 入口網站管理員 | 
+| **編輯資料**| 合規性系統管理員 | 合規性參與者 | 
+| **編輯測試結果**| 合規性系統管理員 | 合規性管理員評估者 | 
+| **管理評估以及範本和租用戶資料**| 合規性系統管理員<br>合規性資料管理員<br>安全性系統管理員 | 合規性管理員的系統管理員 | 
+| **指派給使用者**| 全域系統管理員 | 入口網站管理員 | 
 
 > [!NOTE]
 > 從合規性分數移至合規性管理員完成工作時 （例如，若要管理 「 評估 」），您的瀏覽器會開啟新的索引標籤，會出現一個對話方塊。 在 [使用標頭 [top] 區段中，「 已 Microsoft 雲端服務客戶嗎？ 您的帳戶，登入] 選取 [**登入**存取合規性管理員;您將不需要重新輸入您的認證。

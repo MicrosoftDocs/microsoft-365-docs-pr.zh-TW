@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 13267597bb29708fcf477a79168e6873a7ccdd90
-ms.sourcegitcommit: b8dd1cb1da936f2b7c9ed621bce6ef5b3588427c
+ms.openlocfilehash: 6f024337ac134cc830dfb61286e7f8e53d41c169
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "37400339"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191218"
 ---
-# <a name="whats-new-in-office-365-atp"></a>What's new in Office 365 ATP
+# <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新功能
 
 **適用於：**
 
@@ -30,7 +30,7 @@ ms.locfileid: "37400339"
 
 >沒有 Office 365 ATP 尚未？ [若要啟動試用版的連絡人銷售](https://go.microsoft.com/fwlink/p/?LinkId=518644)。 
 
-## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 計劃 1 和計劃 2
+## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 方案 1 與方案 2
 
 Office 365 ATP 是兩個計劃中提供： Office 365 ATP 計劃 1 和 Office 365 ATP 計劃 2。 下表摘要說明每個計劃中包含的內容。 
 
@@ -40,9 +40,13 @@ Office 365 ATP 是兩個計劃中提供： Office 365 ATP 計劃 1 和 Office 36
 
 Office 365 ATP 計劃 2 隨附於 Office 365 企業版 E5，Office 365 教育版 A5，Microsoft 365 企業版 E5。 Office 365 ATP 計劃 1 隨附於 Microsoft 365 商務版。 若您目前訂閱不包含 Office 365 ATP，請[連絡銷售人員開始試用版](https://go.microsoft.com/fwlink/p/?LinkId=518644)，請參閱 ATP 可以為您的組織的運作方式。 
 
+## <a name="november-2019"></a>2019 年 11 月
+
+- [嗎？ 請查看新洩漏的使用者偵測及回應功能 （預覽）](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) (Office 365 ATP 計劃 2)
+
 ## <a name="september-2019"></a>2019 年 9 月
 
-- [利用自動化 Office 365 中的事件回應 （空調）](automated-investigation-response-office.md) (Office 365 ATP 計劃 2)
+- [採用 Office 365 中自動化的事件回應 （空調）](automated-investigation-response-office.md) (Office 365 ATP 計劃 2)
 
 - [整合項目搭配使用 Office 365 管理活動 API 的 Office 365 ATP 空調事件](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)(Office 365 ATP 計劃 2)
 

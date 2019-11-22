@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 30697bfafdd7db69444b97345733f3d8ec5be92a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e2719df640a202f5ad88534920ef525f6da97189
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076640"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191168"
 ---
 # <a name="close-or-delete-a-case"></a>關閉或刪除案例
 
@@ -35,16 +35,16 @@ ms.locfileid: "37076640"
 
 若要關閉案例：
 
-1. 從 [**進階電子文件探索**] 頁面上，移至您的案例。
+1. 在 [**進階電子文件探索**] 頁面上，選取您想要關閉的案例。
 
-2. 移至 [**設定**，然後選取 [**大小寫的資訊**。 
+2. 在 [**設定**] 索引標籤上 [**案例資訊**，請按一下 [**選取**。
 
-3. 按一下 [**關閉案例**。 
+3. 按一下 [**關閉案例**。
 
 若要刪除的案例：
 
-1. 從 [**進階電子文件探索**] 頁面上，移至您的案例。
+1. 在 [**進階電子文件探索**] 頁面上，選取您想要刪除的案例。
 
-2. 移至 [**設定**，然後選取 [**大小寫的資訊**。 
+2. 在 [**設定**] 索引標籤上 [**案例資訊**，請按一下 [**選取**。
 
 3. 按一下 [**刪除案例**。 

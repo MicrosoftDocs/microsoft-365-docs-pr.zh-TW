@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 Microsoft 合規性分數會根據 [地址風險採取的動作的個人化的分數的計算，並改善您的合規性狀態。
-ms.openlocfilehash: e3bb9bc2d9d833eea8c5a9e4a29334d9777aebac
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: a94b1051af383041a89fa136ae490875ea48782d
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685383"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793657"
 ---
-# <a name="microsoft-compliance-score-calculation-preview"></a>Microsoft 合規性分數計算 （預覽）
+# <a name="microsoft-compliance-score-preview-calculation"></a>Microsoft 合規性分數 （預覽） 計算
 
 > [!IMPORTANT]
 > 合規性分數不 express 與任何特定的標準或法規的組織符合性絕對量值。 它來表示您要採用的個人資料和個人隱私權降低風險的控制項的程度。 合規性分數和合規性管理員中的建議事項不應該解譯成保證郵件可以合規性。 這項服務目前處於預覽狀態，並受限於條款和條件[線上服務條款](https://go.microsoft.com/fwlink/?linkid=2108910)中。
@@ -74,12 +74,12 @@ ms.locfileid: "38685383"
   
 每個控制項具有指派的值，根據其所代表之風險的合規性分數：
 
-|**Type**|**指派的分數**|
+|**類型**|**指派的分數**|
 |:-----|:-----|
 | 必要的預防性 | 27 |
-| 選擇性的預防性 | 9 |
-| 偵測必要 | 3 |
-| 偵測選擇性 | 1 |
-| 必要的矯正措施 | 3 |
-| 修正了選擇性 | 1 |
+| 選擇性的預防性 | 9  |
+| 偵測必要 | 3  |
+| 偵測選擇性 | 1  |
+| 必要的矯正措施 | 3  |
+| 修正了選擇性 | 1  |
   

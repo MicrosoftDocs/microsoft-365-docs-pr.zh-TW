@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 如果您想要是確定您接收來自特定寄件者的郵件，因為您信任它們與他們的郵件，您可以調整您允許在 Exchange 系統管理中心中的垃圾郵件篩選原則中的清單。
-ms.openlocfilehash: 2a161573e3b51f12cd7582df26a021fab3f8de84
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f4ece6f7528b301ed7046df84ca18915d833dbbf
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033688"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793677"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>在 Office 365 中建立安全的寄件者清單
 
@@ -87,7 +87,7 @@ ms.locfileid: "38033688"
 
 最不適合的選項是授權的寄件者/網域。 此選項應避免使用，*盡可能*完全會略過釣魚程式垃圾郵件/詐騙保護並不會評估寄件者驗證。 此方法會增加壞動作項目從接收郵件的風險，並最佳建議暫時，並只在測試時。 詳細的步驟可以[設定您的垃圾郵件篩選原則](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies)的文件中找到。
 
-這些清單的最大限制為大約 1000年項目。
+這些清單的最大限制是大約 1000年項目;雖然您只能夠輸入入入口網站的 30 個項目。 您必須使用 PowerShell 來新增 30 個以上的項目。
 
 > [!CAUTION]
 > 設定反垃圾郵件原則來*允許寄件者/允許網域*將會產生略過垃圾郵件篩選的） 郵件從寄件者的允許清單中或從允許的網域 b） 任何寄件者的郵件。 此方法會大幅增加的風險濫發垃圾郵件者可以詐騙傳送的網域 （或模擬的完整電子郵件地址） 這會略過所有垃圾郵件篩選，寄件者驗證檢查，然後會直接將人員的收件匣] 傳送郵件。

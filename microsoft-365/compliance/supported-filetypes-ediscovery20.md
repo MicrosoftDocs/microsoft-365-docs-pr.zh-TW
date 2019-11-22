@@ -13,18 +13,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5f574fa4fa53e83e2af4ea563c63106e8206c3d5
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+description: Microsoft 365 進階電子文件探索中支援的檔案類型的清單。 這包括進階電子文件中的 OCR 功能所支援的影像檔案類型清單。
+ms.openlocfilehash: ff9fdc77226ee476de3fe89a980b2658720749bf
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "38685377"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191238"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>在進階電子文件中支援的檔案類型
 
-進階電子文件支援許多不同的層級，如下表所述的許多檔案類型。 這份清單未完成，並為我們繼續我們驗證測試，我們會將新增新的檔案類型。 表格會指出文字擷取 (OCR 影像)，是否支援的檔案類型中的原生檢視器和也支援進階電子文件中的附註檢視器中檢視。
-
+進階電子文件支援許多不同的層級下表所述的許多檔案類型。 這份清單未完成，並為我們繼續我們驗證測試，我們會將加入新的檔案類型。 這些表格指出文字擷取 （和光學字元辨識或 OCR 文字擷取映像檔），是否支援的檔案類型中的原生檢視器和也支援進階電子文件中的附註檢視器中檢視。
 
 ## <a name="archive--container"></a>封存 / 容器
 
@@ -115,7 +114,7 @@ ms.locfileid: "38685377"
 | 應用程式/onenote | 是 | 是 | 是 | 是 | 否 | .one |
 ||||||||
 
-## <a name="microsoft-powerpoint"></a>Microsoft Powerpoint
+## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
 
 | Mime 類型 | 檔案識別碼 | 中繼資料擷取 | 文字擷取 | 原生檢視器 | 加上註解檢視器 | 可能的擴充功能 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |

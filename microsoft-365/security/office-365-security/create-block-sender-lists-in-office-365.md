@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: 封鎖寄件者清單選項包括 Outlook 封鎖寄件者、 反垃圾郵件寄件者/網域封鎖清單、 IP 封鎖清單，以及 Exchange 傳輸規則 (Etr) 也稱為郵件流程規則。
-ms.openlocfilehash: 7f52472f54fb1de93f02b271ec6338da3fb1af93
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 27e0a1881c50031f180192b6bc02f3d606e7b76c
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032398"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793707"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>在 Office 365 中建立封鎖寄件者清單
 
@@ -49,7 +49,7 @@ ms.locfileid: "38032398"
 
 時所受影響多個使用者，範圍更廣，且您需要使用全公司的寄件者/網域 」 封鎖清單反垃圾郵件原則。 詳細的步驟可以[設定您的垃圾郵件篩選原則](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies)的文件中找到。 已封鎖透過此方法的任何訊息會遵循 [垃圾郵件] 動作，該原則中設定的一樣。
 
-這些清單的最大限制為大約 1000年項目。
+這些清單的最大限制是大約 1000年項目;雖然您只能夠輸入入入口網站的 30 個項目。 您必須使用 PowerShell 來新增 30 個以上的項目。
 
 ## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>使用 Exchange 傳輸規則 (Etr) 來封鎖特定寄件者
 

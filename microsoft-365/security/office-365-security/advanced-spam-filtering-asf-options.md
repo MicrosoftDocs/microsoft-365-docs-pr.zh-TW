@@ -14,23 +14,23 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: 進階垃圾郵件篩選選項可讓系統管理員檢查郵件的各種內容屬性。 郵件中有此類屬性存在時，將會提高該郵件的垃圾郵件計分 (進而提高該郵件被識別為垃圾郵件的可能性)，或將該郵件標記為垃圾郵件。 ASF 選項以特定郵件內容為目標，例如 HTML 標記與 URL 重新導向這類常出現在垃圾郵件中的項目。
-ms.openlocfilehash: 0f1fb22a0500df5e9ff261bd60b0430dd4fad4d0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bfb559ece8a69f0d641cdb2ad552d7e831eda416
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077954"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793697"
 ---
 # <a name="advanced-spam-filtering-options"></a>進階垃圾郵件篩選選項
+
+> [!NOTE]
+> 進階垃圾郵件篩選設定的反垃圾郵件原則目前已被取代。 我們建議的設定，這些是以將其**關閉**。 進階垃圾郵件篩選器中可用的功能是要併入篩選堆疊的其他部分。
 
 進階垃圾郵件篩選選項可讓系統管理員檢查郵件的各種內容屬性。 郵件中有此類屬性存在時，將會提高該郵件的垃圾郵件計分 (進而提高該郵件被識別為垃圾郵件的可能性)，或將該郵件標記為垃圾郵件。 ASF 選項以特定郵件內容為目標，例如 HTML 標記與 URL 重新導向這類常出現在垃圾郵件中的項目。
   
 啟用 ASF 選項是一種很激進的垃圾郵件篩選方式，這些選項所篩選出來的任何郵件都無法回報為誤判。您可透過定期的使用者垃圾郵件通知來識別這些郵件，並從垃圾郵件隔離區將其救回。也可以透過 X-header 文字來識別這些郵件，此文字為各個 ASF 選項所特有，出現在已找到相符 ASF 選項的郵件的 Internet 標頭中。如需詳細資訊，請參閱＜[反垃圾郵件訊息標頭](anti-spam-message-headers.md)＞。
   
 可以設定 ASF 選項，開啟、 關閉，或若要測試模式時編輯內容篩選原則。 如需詳細資訊，請參閱[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)。 測試模式不適用於**NDR 退信攻擊**，**的 SPF 記錄： 完全未通過**、**條件式寄件者識別碼篩選： 完全未通過**，和**大量電子郵件**選項。 
-  
-> > [!TIP]
->  考慮在測試模式中啟用 ASF 選項，以根據您的環境使垃圾郵件封鎖功能發揮最大效能。 對於使用特定 ASF 選項會產生高垃圾郵件百分比的客戶，建議您先測試這些選項，再將其實作於您的生產環境中。 如果您擔心網路釣魚貴組織中，開啟**SPF 記錄： 完全未通過**選項。 
   
 下表說明各個進階垃圾郵件篩選選項。
   
