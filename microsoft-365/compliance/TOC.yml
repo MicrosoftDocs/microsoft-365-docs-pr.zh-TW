@@ -1,0 +1,1118 @@
+- name: Microsoft 365 合規性
+  href: index.yml
+- name: 入門
+  items:
+    - name: 合規性中心的新功能
+      href: whats-new.md
+    - name: 合規性內容的最新更新
+      href: recently-updated-topics-mcc.md
+    - name: Microsoft 365 合規性中心
+      href: microsoft-365-compliance-center.md
+    - name: Microsoft 365 解決方案目錄 (預覽)
+      href: microsoft-365-solution-catalog.md
+    - name: 前往安全性與合規性中心
+      href: go-to-the-securitycompliance-center.md
+    - name: 使用您的免費 Azure Active Directory 訂閱
+      href: use-your-free-azure-ad-subscription-in-office-365.md
+    - name: Office 365 中的安全性與合規性計劃
+      href: plan-for-security-and-compliance.md
+- name: 管理內部風險
+  items:
+    - name: 保護使用者和裝置存取權
+      href: protect-access-to-data-and-services.md
+    - name: 客戶加密箱
+      href: customer-lockbox-requests.md
+    - name: 特許存取管理
+      items:
+        - name: 了解特殊權限存取管理
+          href: privileged-access-management-overview.md
+        - name: 設定特殊權限存取管理
+          href: privileged-access-management-configuration.md
+    - name: 客戶金鑰
+      items:
+        - name: 使用客戶金鑰控制 Office 365 中的資料
+          href: controlling-your-data-using-customer-key.md
+        - name: Office 365 中使用客戶金鑰的服務加密常見問題集
+          href: service-encryption-with-customer-key-faq.md
+    - name: 通訊規範 （預覽）
+      items:
+        - name: 了解通訊合規性 (預覽)
+          href: communication-compliance.md
+        - name: 設定 Microsoft 365 中的通訊合規性 (預覽)
+          href: communication-compliance-configure.md
+        - name: 調查和修復通訊合規性警示 (預覽)
+          href: communication-compliance-investigate-remediate.md
+        - name: 通訊合規性的功能參考 (預覽)
+          href: communication-compliance-feature-reference.md
+        - name: Office 365 中的監督原則
+          href: supervision-policies.md
+        - name: 設定 Office 365 的監督原則
+          href: configure-supervision-policies.md
+    - name: 資訊屏障
+      href: information-barriers.md
+      items:
+        - name: 定義資訊屏障原則
+          href: information-barriers-policies.md
+        - name: 資訊屏障原則的屬性
+          href: information-barriers-attributes.md
+        - name: 疑難排解資訊屏障
+          href: information-barriers-troubleshooting.md
+        - name: 編輯資訊屏障原則
+          href: information-barriers-edit-segments-policies.md.md
+- name: 管理資訊保護
+  href: protect-information.md
+  items:
+    - name: 敏感度標籤
+      href: sensitivity-labels.md
+      items:
+        - name: 使用敏感度標籤中的加密來限制內容的存取
+          href: encryption-sensitivity-labels.md
+        - name: 自動將敏感度標籤套用到內容
+          href: apply-sensitivity-label-automatically.md
+        - name: 利用標籤分析檢視標籤使用量
+          href: label-analytics.md
+        - name: 對團隊、群組和網站使用敏感度標籤
+          href: sensitivity-labels-teams-groups-sites.md
+        - name: 對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
+          href: sensitivity-labels-sharepoint-onedrive-files.md
+        - name: Office App 中的敏感度標籤
+          href: sensitivity-labels-office-apps.md
+    - name: 資料外洩防護 (DLP)
+      href: data-loss-prevention-policies.md
+      items:
+        - name: DLP 和 Microsoft Teams
+          href: dlp-microsoft-teams.md
+        - name: 觀看 DLP 的延伸概觀
+          href: 'https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111'
+        - name: 設定 DLP
+          items:
+            - name: 開始使用 DLP 原則建議
+              href: get-started-with-dlp-policy-recommendations.md
+            - name: 開始使用預設的 DLP 原則
+              href: get-started-with-the-default-dlp-policy.md
+            - name: 從範本建立 DLP 原則
+              href: create-a-dlp-policy-from-a-template.md
+            - name: 建立、測試及調整 DLP 原則
+              href: create-test-tune-dlp-policy.md
+            - name: 使用 DLP 原則中的通知和原則提示
+              href: use-notifications-and-policy-tips.md
+            - name: DLP 原則範本包含哪些內容
+              href: what-the-dlp-policy-templates-include.md
+            - name: 建立 DLP 原則來保護具有 FCI 或其他屬性的文件
+              href: protect-documents-that-have-fci-or-other-properties.md
+            - name: 檢視 DLP 報告
+              href: view-the-dlp-reports.md
+            - name: 形成查詢以搜尋儲存在網站上的敏感資料
+              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+            - name: DLP 如何在安全性與合規性中心和 Exchange 系統管理中心之間工作
+              href: how-dlp-works-between-admin-centers.md
+    - name: 敏感資訊類型
+      items:
+        - name: 敏感性資訊類型所尋找的項目
+          href: what-the-sensitive-information-types-look-for.md
+        - name: DLP 功能所尋找的項目
+          href: what-the-dlp-functions-look-for.md
+        - name: 觀看自訂的 DLP 延伸概觀
+          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
+        - name: 自訂內建敏感性資訊類型
+          href: customize-a-built-in-sensitive-information-type.md
+        - name: 自訂敏感性資訊類型
+          href: custom-sensitive-info-types.md
+        - name: 建立符合根據的分類的確切資料類型的自訂機密資訊
+          href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: 在安全性 & 合規性中心建立自訂機密資訊類型
+          href: create-a-custom-sensitive-information-type.md
+        - name: 使用 PowerShell 建立自訂的敏感性資訊類型
+          href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: 建立關鍵字字典
+          href: create-a-keyword-dictionary.md
+        - name: 文件指紋
+          href: document-fingerprinting.md
+        - name: 敏感性資訊的 DLP 函數
+          href: what-the-dlp-functions-look-for.md
+        - name: 觀看自訂的 DLP 延伸概觀
+          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
+    - name: 電子郵件加密
+      href: email-encryption.md
+      items:
+        - name: Office 365 郵件加密 (OME)
+          href: ome.md
+        - name: 設定全新的 Office 365 郵件加密功能
+          href: set-up-new-message-encryption-capabilities.md
+        - name: 定義郵件流規則以加密 Office 365 中的電子郵件
+          href: define-mail-flow-rules-to-encrypt-email.md
+        - name: 將貴組織的品牌新增至您的加密郵件
+          href: add-your-organization-brand-to-encrypted-messages.md
+        - name: 使用 Office 365 郵件加密為貴組織建立敏感性資訊類型原則
+          href: ome-sensitive-info-types.md
+        - name: 管理 Office 365 郵件加密
+          href: manage-office-365-message-encryption.md
+        - name: Office 365 進階郵件加密
+          href: ome-advanced-message-encryption.md
+        - name: 為由 Office 365 進階郵件加密所加密的電子郵件設定到期日
+          href: ome-advanced-expiration.md
+        - name: 撤銷由 Office 365 進階郵件加密所加密的電子郵件
+          href: revoke-ome-encrypted-mail.md
+        - name: 比較 OME 版本
+          href: ome-version-comparison.md
+        - name: Office 365 郵件加密常見問題集
+          href: ome-faq.md
+        - name: Exchange Online 如何保護您的電子郵件機密資料
+          href: exchange-online-secures-email-secrets.md
+        - name: Exchange Online 如何使用 TLS 來保護 Office 365 中的電子郵件連線
+          href: exchange-online-uses-tls-to-secure-email-connections.md
+        - name: 關於 Office 365 中加密的技術參考細節
+          href: technical-reference-details-about-encryption.md
+        - name: BitLocker 與 Distributed Key Manager (DKM) 的加密
+          href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
+        - name: 舊版 OME
+          items:
+            - name: Office 365 郵件加密的舊版資訊
+              href: legacy-information-for-message-encryption.md
+            - name: 設定舊版 Office 365 郵件加密的 Azure 版權管理
+              href: set-up-azure-rms-for-previous-version-message-encryption.md
+    - name: 了解資料分類 (預覽)
+      href: data-classification-overview.md
+      items:
+        - name: 檢視已套用標籤的內容 (預覽)
+          href: data-classification-content-explorer.md
+        - name: 查看標籤活動 (預覽)
+          href: data-classification-activity-explorer.md
+        - name: 開始使用可訓練的分類器 (預覽)
+          href: classifier-getting-started-with.md
+        - name: 使用已可使用的分類器 (預覽)
+          href: classifier-using-a-ready-to-use-classifier.md
+        - name: 建立和訓練分類器 (預覽)
+          href: classifier-creating-a-trainable-classifier.md
+- name: 管理資訊控管
+  items:
+    - name: 管理資訊控管
+      href: manage-information-governance.md
+    - name: 匯入資料
+      href: importing-pst-files-to-office-365.md
+      items:
+        - name: 使用網路上傳來匯入 PST 檔案
+          href: use-network-upload-to-import-pst-files.md
+        - name: 使用磁碟機運送來匯入 PST 檔案
+          href: use-drive-shipping-to-import-pst-files-to-office-365.md
+        - name: 使用 PST 收集工具來尋找、複製及刪除 PST 檔案
+          href: find-copy-and-delete-pst-files-in-your-organization.md
+        - name: 匯入 PST 檔案時篩選資料
+          href: filter-data-when-importing-pst-files.md
+        - name: 使用網路上傳來匯入 RMS 加密的 PST 檔案
+          href: use-network-upload-to-import-rms-encrypted-pst-files.md
+        - name: 匯入 PST 檔案的常見問題集
+          href: faqimporting-pst-files-to-office-365.md
+        - name: 在 Office 365 中封存第三方資料
+          href: archiving-third-party-data.md
+          items:
+            - name: 使用範例連接器來封存 Facebook 資料
+              href: archive-facebook-data-with-sample-connector.md
+            - name: 使用範例連接器來封存 Twitter 資料
+              href: archive-twitter-data-with-sample-connector.md
+            - name: 設定連接器來封存 LinkedIn 資料
+              href: archive-linkedin-data.md
+            - name: 設定連接器來封存 Instant Bloomberg 資料
+              href: archive-instant-bloomberg-data.md
+            - name: 與合作夥伴配合來封存第三方資料
+              href: work-with-partner-to-archive-third-party-data.md
+    - name: 儲存資料
+      items:
+        - name: 啟用封存信箱
+          href: enable-archive-mailboxes.md
+        - name: 無限制封存概觀
+          href: unlimited-archiving.md
+        - name: 啟用無限制封存
+          href: enable-unlimited-archiving.md
+        - name: 設定信箱的封存與刪除原則
+          href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
+    - name: 保留資料
+      items:
+        - name: 保留原則
+          href: retention-policies.md
+        - name: 檔案計劃管理員
+          href: file-plan-manager.md
+        - name: 保留標籤
+          href: labels.md
+        - name: 符合美國證券交易委員會規定 17A-4
+          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
+        - name: 使用 PowerShell 建立及發佈保留標籤
+          href: bulk-create-publish-labels-using-powershell.md
+        - name: 事件型保留
+          href: event-driven-retention.md
+        - name: 自動化事件型保留
+          href: automate-event-driven-retention.md
+        - name: 管理 SharePoint 文件的生命週期
+          href: auto-apply-retention-labels-scenario.md
+    - name: 處置資料
+      href: disposition-reviews.md
+    - name: 管理非使用中的信箱
+      href: inactive-mailboxes-in-office-365.md
+      items:
+        - name: 建立和管理非使用中信箱
+          href: create-and-manage-inactive-mailboxes.md
+        - name: 變更非作用中信箱的保留持續時間
+          href: change-the-hold-duration-for-an-inactive-mailbox.md
+        - name: 復原非作用中的信箱
+          href: recover-an-inactive-mailbox.md
+        - name: 還原非作用中的信箱
+          href: restore-an-inactive-mailbox.md
+        - name: 刪除非作用中的信箱
+          href: delete-an-inactive-mailbox.md
+    - name: 監視資料控管
+      items:
+        - name: 檢視文件的標籤活動
+          href: view-label-activity-for-documents.md
+        - name: 利用標籤分析檢視標籤使用量
+          href: label-analytics.md
+        - name: 檢視資料控管報告
+          href: view-the-data-governance-reports.md
+    - name: 資料控管的其他資訊
+      items:
+        - name: 觀看 Microsoft 資料控管小組的影片
+          href: 'https://go.microsoft.com/fwlink/?linkid=867039'
+    - name: 記錄管理
+      items:
+        - name: 記錄管理
+          href: records-management.md
+        - name: 記錄
+          href: records.md
+        - name: 檔案計畫
+          items:
+            - name: 檔案計劃管理員
+              href: file-plan-manager.md
+            - name: 保留標籤
+              href: labels.md
+            - name: 使用 PowerShell 建立及發佈保留標籤
+              href: bulk-create-publish-labels-using-powershell.md
+            - name: 利用標籤分析檢視標籤使用量
+              href: label-analytics.md
+            - name: 檢視文件的標籤活動
+              href: view-label-activity-for-documents.md
+            - name: 檢視資料控管報告
+              href: view-the-data-governance-reports.md
+        - name: 事件
+          items:
+            - name: 事件型保留
+              href: event-driven-retention.md
+            - name: 自動化事件型保留
+              href: automate-event-driven-retention.md
+        - name: 處置
+          href: disposition-reviews.md
+        - name: 深入了解記錄管理
+          items:
+            - name: 觀看有關記錄管理的影片
+              href: 'https://go.microsoft.com/fwlink/?linkid=867039'
+- name: 搜尋內容
+  href: search-for-content.md
+  items:
+    - name: 使用內容搜尋
+      href: content-search.md
+      items:
+        - name: 內容搜尋的關鍵字查詢和搜尋條件
+          href: keyword-queries-and-search-conditions.md
+        - name: 檢視內容搜尋結果的關鍵字統計資料
+          href: view-keyword-statistics-for-content-search.md
+        - name: 匯出內容搜尋結果
+          href: export-search-results.md
+        - name: 匯出內容搜尋報告
+          href: export-a-content-search-report.md
+        - name: 搜尋並刪除電子郵件訊息
+          href: search-for-and-delete-messages-in-your-organization.md
+        - name: 搜尋 Office 365 中內部部署使用者的雲端式信箱
+          href: search-cloud-based-mailboxes-for-on-premises-users.md
+        - name: 大量編輯多個內容搜尋
+          href: bulk-edit-content-searches.md
+        - name: 準備識別碼清單內容搜尋的 CSV 檔案
+          href: csv-file-for-an-id-list-content-search.md
+        - name: 使用內容搜尋來搜尋協力廠商資料
+          href: use-content-search-to-search-third-party-data-that-was-imported.md
+        - name: 在您的電子文件探索工作流程中使用內容搜尋
+          href: use-content-search-in-ediscovery.md
+        - name: 檢查您的內容搜尋查詢是否有錯誤
+          href: check-your-content-search-query-for-errors.md
+        - name: 重試失敗的內容搜尋
+          href: retry-failed-content-search.md
+        - name: 為內容搜尋保留密件副本收件者
+          href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+    - name: 了解內容搜尋
+      items:
+        - name: 內容搜尋的限制
+          href: limits-for-content-search.md
+        - name: 內容搜尋中已局部編製索引的項目
+          href: partially-indexed-items-in-content-search.md
+        - name: 調查已局部編製索引的項目
+          href: investigating-partially-indexed-items-in-ediscovery.md
+        - name: 電子文件探索搜尋結果中的重複資料刪除
+          href: de-duplication-in-ediscovery-search-results.md
+        - name: 估計與實際內容搜尋結果之間的差異
+          href: differences-between-estimated-and-actual-ediscovery-search-results.md
+    - name: 設定內容搜尋
+      items:
+        - name: 設定內容搜尋的權限篩選
+          href: permissions-filtering-for-content-search.md
+        - name: 增加匯出內容搜尋結果時的下載速度
+          href: increase-download-speeds-when-exporting-ediscovery-results.md
+        - name: 變更匯出內容搜尋結果時的 PST 檔案大小
+          href: change-the-size-of-pst-files-when-exporting-results.md
+        - name: 當您匯出內容搜尋結果時停用報告
+          href: disable-reports-when-you-export-content-search-results.md
+    - name: 使用內容搜尋 PowerShell 指令碼
+      items:
+        - name: 對目標集合使用內容搜尋
+          href: use-content-search-for-targeted-collections.md
+        - name: 使用內容搜尋來搜尋信箱與商務用 OneDrive 網站的使用者清單
+          href: search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md
+        - name: 建立、報告及刪除多個內容搜尋
+          href: create-report-on-and-delete-multiple-content-searches.md
+        - name: 複製內容搜尋
+          href: clone-a-content-search.md
+- name: 管理法律調查
+  href: manage-legal-investigations.md
+  items:
+    - name: Microsoft 365 中的進階電子文件探索解決方案
+      href: overview-ediscovery-20.md
+      items:
+        - name: 建立新案例
+          href: create-new-ediscovery-case.md
+        - name: 與監管人合作
+          href: managing-custodians.md
+          items:
+            - name: 將監管人新增至案例
+              href: add-custodians-to-case.md
+            - name: 管理監管人
+              href: manage-new-custodians.md
+            - name: 檢視監管人活動
+              href: view-custodian-activity.md
+        - name: 使用通訊
+          href: managing-custodian-communications.md
+          items:
+            - name: 建立保留通知
+              href: create-hold-notification.md
+            - name: 使用通訊編輯器
+              href: using-communications-editor.md
+            - name: 管理保留通知
+              href: manage-hold-notification.md
+            - name: 確認保留通知
+              href: acknowledge-hold-notification.md
+        - name: 管理保留
+          href: managing-holds.md
+        - name: 使用處理錯誤
+          href: processing-data-for-case.md
+          items:
+            - name: 進階的監管人資料索引
+              href: indexing-custodian-data.md
+            - name: 處理資料時的錯誤補救
+              href: error-remediation-when-processing-data-in-advanced-ediscovery.md
+            - name: 單一項目錯誤補救
+              href: single-item-error-remediation.md
+        - name: 收集適用於案例的資料
+          href: collecting-data-for-ediscovery.md
+          items:
+            - name: 建立搜尋
+              href: create-search-to-collect-data.md
+            - name: 建立搜尋查詢
+              href: building-search-queries.md
+            - name: 搜尋統計資料
+              href: search-statistics.md
+            - name: 將搜尋結果新增至檢閱集
+              href: add-data-to-review-set.md
+        - name: 管理檢閱集
+          href: managing-review-sets.md
+          items:
+            - name: 將非 Office 365 的資料載入檢閱集
+              href: load-non-Office-365-data-into-a-review-set.md
+            - name: 將資料新增至另一個檢閱集
+              href: add-data-to-review-set-from-another-review-set.md
+            - name: 管理載入集
+              href: manage-load-sets-in-advanced-ediscovery.md
+        - name: 檢閱案例資料
+          items:
+            - name: 檢視檢閱集中的文件
+              href: view-documents-in-review-set.md
+            - name: 查詢檢視集中的資料
+              href: review-set-search.md
+            - name: 標記檢閱集中的文件
+              href: tagging-documents.md
+            - name: 設定律師-委託人權限偵測
+              href: attorney-privilege-detection.md
+        - name: 分析案例資料
+          href: analyzing-data-in-review-set.md
+          items:
+            - name: 近似重複項偵測
+              href: near-duplicate-detection-in-advanced-ediscovery.md
+            - name: 電子郵件執行緒
+              href: email-threading-in-advanced-ediscovery.md
+            - name: 佈景主題
+              href: themes-in-advanced-ediscovery.md
+            - name: 使用相關性模組來分析資料
+              href: using-relevance.md
+        - name: 匯出案例資料
+          href: exporting-data-ediscover20.md
+          items:
+            - name: 從檢閱集匯出文件
+              href: export-documents-from-review-set.md
+            - name: 下載匯出工作
+              href: download-export-jobs.md
+        - name: 管理工作
+          href: managing-jobs-ediscovery20.md
+        - name: 設定案例設定
+          items:
+            - name: 關閉或刪除案例
+              href: close-or-delete-case.md
+            - name: 從案例新增或移除成員
+              href: add-or-remove-members-from-a-case-in-advanced-ediscovery.md
+            - name: 設定搜尋和分析設定
+              href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
+        - name: 進階電子文件探索參考資料
+          items:
+            - name: 版本資訊
+              href: release-notes-ediscovery20.md
+            - name: 進階電子文件探索的限制
+              href: limits-ediscovery20.md
+            - name: 支援的檔案類型
+              href: supported-filetypes-ediscovery20.md
+            - name: 下載中繼資料欄位
+              href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: 交談檢閱集
+              href: conversation-review-sets.md
+            - name: 疑難排解 AzCopy
+              href: troubleshooting-azcopy.md
+    - name: 管理電子文件探索案例
+      href: ediscovery-cases.md
+      items:
+        - name: Office 365 進階電子文件探索
+          href: office-365-advanced-ediscovery.md
+          items:
+            - name: 開始使用進階電子文件探索
+              href: quick-setup-for-advanced-ediscovery.md
+            - name: 設定案例
+              href: set-up-users-and-cases-in-advanced-ediscovery.md
+              items:
+                - name: 定義案例的問題
+                  href: define-issues-and-assign-users.md
+            - name: 收集案例資料
+              items:
+                - name: 準備進階電子文件探索的搜尋結果
+                  href: prepare-search-results-for-advanced-ediscovery.md
+                - name: 將資料載入進階電子文件探索
+                  href: prepare-data-for-advanced-ediscovery.md
+                - name: 將非 Office 365 的內容匯入至案例
+                  href: import-non-office-365-data-into-advanced-ediscovery.md
+            - name: 處理案例資料
+              href: run-the-process-module-in-advanced-ediscovery.md
+              items:
+                - name: 執行處理程序模組及載入資料
+                  href: run-the-process-module-and-load-data-in-advanced-ediscovery.md
+                - name: 檢視處理序模組結果
+                  href: view-process-module-results-in-advanced-ediscovery.md
+            - name: 檢閱案例資料
+              items:
+                - name: 搜尋並標記案例資料
+                  href: search-and-tagging.md
+                - name: 有關檢閱集的決策
+                  href: decision-based-on-the-results-in-advanced-ediscovery.md
+            - name: 分析案例資料
+              href: analyze-case-data-with-advanced-ediscovery.md
+              items:
+                - name: 執行快速分析
+                  href: use-express-analysis-in-advanced-ediscovery.md
+                - name: 文件相似性 (近似重複項) 概觀
+                  href: understand-document-similarity-in-advanced-ediscovery.md
+                - name: 檢視分析結果
+                  href: view-analyze-results-in-advanced-ediscovery.md
+            - name: 使用相關性模組
+              href: use-relevance-in-advanced-ediscovery.md
+              items:
+                - name: 相關性評量的概觀
+                  href: assessment-in-relevance-in-advanced-ediscovery.md
+                - name: 執行相關性評量和標記
+                  href: tagging-and-assessment-in-advanced-ediscovery.md
+                - name: 設定相關性訓練
+                  href: manage-relevance-setup-in-advanced-ediscovery.md
+                - name: 執行相關性訓練和標記
+                  href: tagging-and-relevance-training-in-advanced-ediscovery.md
+                - name: 追蹤相關性訓練程序
+                  href: track-relevance-analysis-in-advanced-ediscovery.md
+                - name: 測試相關性分析的結果
+                  href: test-relevance-analysis-in-advanced-ediscovery.md
+                - name: 載入相關性訓練的其他資料
+                  href: set-up-loads-to-add-imported-files.md
+            - name: 匯出案例資料
+              href: export-case-data-in-advanced-ediscovery.md
+              items:
+                - name: 匯出資料
+                  href: export-results-in-advanced-ediscovery.md
+                - name: 匯出報告欄位
+                  href: export-report-fields-in-advanced-ediscovery.md
+                - name: 檢視批次歷程記錄及匯出過去的結果
+                  href: view-batch-history-and-export-past-results.md
+            - name: 設定進階電子文件探索
+              items:
+                - name: 設定案例和組織設定
+                  href: define-case-and-tenant-settings-in-advanced-ediscovery.md
+                - name: 設定分析設定
+                  href: set-analyze-options-in-advanced-ediscovery.md
+                - name: 設定忽略文字設定
+                  href: set-ignore-text-in-advanced-ediscovery.md
+                - name: 設定醒目提示的關鍵字和其他相關性設定
+                  href: define-highlighted-keywords-and-advanced-options.md
+            - name: 進階電子文件探索參考資料
+              items:
+                - name: 使用進階電子文件探索公用程式
+                  href: use-advanced-ediscovery-utilities.md
+                - name: 執行報告
+                  href: run-reports-in-advanced-ediscovery.md
+        - name: 使用指令碼將使用者新增至電子文件探索案例中的保留
+          href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
+        - name: 在電子文件探索案例中的保留建立報表
+          href: create-a-report-on-holds-in-ediscovery-cases.md
+    - name: 指派電子文件探索權限
+      href: assign-ediscovery-permissions.md
+    - name: 設定 Office 365 中電子文件探索調查的合規性界限
+      href: set-up-compliance-boundaries.md
+    - name: 電子文件探索解決方案系列 - 資料外洩案例 - 搜尋及清除
+      href: data-spillage-scenariosearch-and-purge.md
+    - name: 疑難排解常見的電子文件探索問題
+      href: ediscovery-troubleshooting-common-issues.md
+    - name: 管理保留
+      items:
+        - name: 建立電子文件探索保留
+          href: 'ediscovery-cases.md#step-4-place-content-locations-on-hold'
+        - name: 建立訴訟資料暫留
+          href: create-a-litigation-hold.md
+        - name: 刪除雲端式信箱中可復原的項目資料夾中的保留項目
+          href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
+        - name: 增加保留信箱的可復原項目配額
+          href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+        - name: 如何找出位於 Exchange Online 信箱的保留類型
+          href: identify-a-hold-on-an-exchange-online-mailbox.md
+        - name: 保留密件副本與展開的通訊群組收件者
+          href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+- name: 管理資料調查
+  href: overview-data-investigations.md
+  items:
+    - name: 管理資料外洩事件
+      href: manage-data-spillage-incidents.md
+    - name: 建立新的調查
+      href: create-new-investigation.md
+    - name: 指派資料調查的權限
+      href: permissions.md
+    - name: 搜尋調查中的資料
+      href: search-for-data.md
+      items:
+        - name: 建立搜尋查詢
+          href: build-search-queries.md
+        - name: 搜尋統計資料
+          href: search-statistics.md
+    - name: 檢閱辨識項中的資料
+      href: review-data-in-evidence.md
+      items:
+        - name: 查詢資料
+          href: evidence-query.md
+        - name: 標記文件
+          href: tag-documents.md
+        - name: 標註及校訂文件
+          href: annotate-and-redact-documents.md
+        - name: 載入非 Office 365 資料
+          href: load-non-office365-data.md
+        - name: 處理資料時的錯誤補救
+          href: error-remediation.md
+        - name: 從其原始位置刪除項目
+          href: delete-items-from-original-locations.md
+    - name: 執行分析以更快速地調查
+      href: run-analytics-to-investigate-faster.md
+      items:
+        - name: 電子郵件執行緒
+          href: email-threading.md
+        - name: 近似重複項偵測
+          href: near-duplicates.md
+        - name: 佈景主題
+          href: themes.md
+        - name: 使用相關性模組
+          href: use-relevance-module.md
+    - name: 管理調查中可疑的人員
+      href: manage-people-of-interest.md
+      items:
+        - name: 對調查中人員的資料編製索引
+          href: index-data-people-of-interest.md
+        - name: 檢視調查中人員的稽核活動
+          href: view-people-of-interest-activity.md
+    - name: 從調查匯出資料
+      href: export-data.md
+      items:
+        - name: 從辨識項匯出文件
+          href: export-documents-from-incident.md
+        - name: 下載匯出工作
+          href: download-export-jobs-from-a-data-investigation.md
+    - name: 設定調查設定
+      items:
+        - name: 從調查新增或移除成員
+          href: add-remove-members.md
+        - name: 設定搜尋和分析設定
+          href: configure-search-analytics-settings.md
+        - name: 關閉或刪除調查
+          href: close-or-delete-investigation.md
+    - name: 資料調查參考
+      items:
+        - name: 版本資訊
+          href: data-investigations-release-notes.md
+        - name: '在 [資料調查的限制'
+          href: limits-datainvestigations.md
+        - name: 支援的檔案類型
+          href: supported-filetypes-datainvestigations.md
+        - name: 下載中繼資料欄位
+          href: document-metadata-fields.md
+        - name: 管理工作
+          href: manage-jobs.md
+- name: 管理稽核和警示原則
+  items:
+    - name: 搜尋稽核記錄
+      href: search-the-audit-log-in-security-and-compliance.md
+    - name: 管理警示原則
+      href: alert-policies.md
+    - name: 開啟或關閉稽核記錄搜尋
+      href: turn-audit-log-search-on-or-off.md
+    - name: 管理信箱稽核
+      href: enable-mailbox-auditing.md
+    - name: 稽核記錄中的詳細內容
+      href: detailed-properties-in-the-office-365-audit-log.md
+    - name: 匯出、 設定及檢視稽核記錄檔的記錄
+      href: export-view-audit-log-records.md
+    - name: 使用稽核記錄調查常見問題
+      href: auditing-troubleshooting-scenarios.md
+    - name: 使用稽核記錄中的共用稽核
+      href: use-sharing-auditing.md
+    - name: 在稽核記錄中搜尋電子文件探索活動
+      href: search-for-ediscovery-activities-in-the-audit-log.md
+- name: 管理合規性風險
+  items:
+    - name: Microsoft 服務信任入口網站
+      href: get-started-with-service-trust-portal.md
+    - name: 合規性分數和合規性管理員
+      items:
+        - name: 合規性分數 (預覽)
+          href: compliance-score.md
+        - name: 設定合規性分數 (預覽)
+          href: compliance-score-setup.md
+        - name: 使用合規性分數 (預覽)
+          href: working-with-compliance-score.md
+        - name: 合規性分數計算 (預覽)
+          href: compliance-score-methodology.md
+        - name: 合規性分數版本資訊 (預覽)
+          href: compliance-score-release-notes.md
+        - name: 合規性管理員 (預覽版)
+          href: compliance-manager-overview.md
+          items:
+            - name: 合規性管理員的新增功能 (預覽版)
+              href: compliance-manager-release-notes.md
+            - name: 使用合規性管理員 (預覽版)
+              href: working-with-compliance-manager.md
+            - name: 合規性管理員 （傳統）
+              href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
+    - name: GDPR 資料主體要求工具
+      href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
+    - name: GDPR 的 Office 365 資訊保護
+      href: office-365-information-protection-for-gdpr.md
+      items:
+        - name: 概觀-GDPR 的 Office 365 保護
+          href: office-365-info-protection-for-gdpr-overview.md
+        - name: 搜尋並找出個人資料
+          href: search-for-and-find-personal-data.md
+        - name: 自訂或建立新的 GDPR 敏感性資訊類型
+          href: customize-or-create-a-new-sensitive-information-type.md
+        - name: 設計個人計劃的分類結構描述
+          href: architect-a-classification-schema-for-personal-data.md
+        - name: 將標籤套用至 Office 365 中的個人資料
+          href: apply-labels-to-personal-data-in-office-365.md
+        - name: 將保護套用至 Office 365 中的個人資料
+          href: apply-protection-to-personal-data-in-office-365.md
+        - name: Office 365 GDPR 開發/測試環境
+          href: gdpr-discovery-protection-reporting-in-office365-dev-test-environment.md
+    - name: 適用於內部部署 Office 伺服器的 GDPR
+      href: gdpr-for-office-servers.md
+      items:
+        - name: 適用於 SharePoint Server 的 GDPR
+          href: gdpr-for-sharepoint-server.md
+        - name: 適用於 Exchange Server 的 GDPR
+          href: gdpr-for-exchange-server.md
+        - name: 適用於商務用 Skype Server 和 Lync Server 的 GDPR
+          href: gdpr-for-skype-for-business-server.md
+        - name: 適用於 Project Server 的 GDPR
+          href: gdpr-for-project-server.md
+        - name: 適用於 Office Web Apps Server 和 Office Online Server 的 GDPR
+          href: gdpr-for-office-online-server.md
+        - name: 適用於內部部署 Windows Server 檔案共用的 GDPR
+          href: gdpr-for-on-premises-file-shares.md
+- name: 法規合規性行動計劃
+  href: compliance-solutions-overview.md
+  items:
+    - name: ISO - 建議使用的行動計劃
+      href: iso-action-plan.md
+    - name: NIST - 建議使用的行動計劃
+      href: nist-action-plan.md
+    - name: CCPA - 常見問題集
+      href: ccpa-faq.md
+    - name: GDPR
+      href: gdpr.md
+      items:
+        - name: 建議的 GDPR 計劃
+          href: gdpr-action-plan.md
+        - name: 責任整備檢查清單
+          items:
+            - name: 責任整備檢查清單
+              href: gdpr-arc.md
+            - name: Azure
+              href: gdpr-arc-azure.md
+            - name: Dynamics 365
+              href: gdpr-arc-dynamics365.md
+            - name: Microsoft 支援服務 & 專業服務
+              href: gdpr-arc-prof-services.md
+            - name: Office 365
+              href: gdpr-arc-office365.md
+        - name: 資訊保護
+          href: gdpr-information-protection.md
+        - name: 資料主體要求
+          items:
+            - name: 資料主體要求
+              href: gdpr-data-subject-requests.md
+            - name: Azure
+              href: gdpr-dsr-azure.md
+            - name: Azure DevOps Services
+              href: gdpr-dsr-vsts.md
+            - name: Dynamics 365
+              href: gdpr-dsr-dynamics365.md
+            - name: Intune
+              href: gdpr-dsr-intune.md
+            - name: Microsoft 支援服務 & 專業服務
+              href: gdpr-dsr-prof-services.md
+            - name: Office 365
+              href: gdpr-dsr-office365.md
+            - name: Visual Studio 系列
+              href: gdpr-dsr-visual-studio-family.md
+        - name: 外洩通知
+          items:
+            - name: 外洩通知
+              href: gdpr-breach-notification.md
+            - name: Azure & Dynamics 365
+              href: gdpr-breach-azure-dynamics.md
+            - name: Microsoft 支援服務 & 專業服務
+              href: gdpr-breach-microsoft-support-professional-services.md
+            - name: Office 365
+              href: gdpr-breach-office365.md
+        - name: 資料保護影響評估
+          items:
+            - name: 資料保護影響評估
+              href: gdpr-data-protection-impact-assessments.md
+            - name: Azure
+              href: gdpr-dpia-azure.md
+            - name: Dynamics 365
+              href: gdpr-dpia-dynamics.md
+            - name: Microsoft 支援服務 & 專業服務
+              href: gdpr-dpia-prof-services.md
+            - name: Office 365
+              href: gdpr-dpia-office365.md
+        - name: Microsoft 的資料保護長
+          href: gdpr-data-protection-officer.md
+- name: 混合式合規性功能
+  items:
+    - name: 使用 AD RMS 的 Exchange Online 郵件加密
+      href: information-rights-management-in-exchange-online.md
+      items:
+        - name: 將 IRM 設定為使用內部部署 AD RMS 伺服器
+          href: configure-irm-to-use-an-on-premises-ad-rms-server.md
+- name: 合規性方案
+  items:
+    - name: Microsoft 合規性方案
+      href: offering-home.md
+    - name: 全域
+      items:
+        - name: CIS 基準
+          href: offering-cis-benchmark.md
+        - name: CSA-STAR 證明
+          href: offering-csa-star-attestation.md
+        - name: CSA-STAR 認證
+          href: offering-csa-star-certification.md
+        - name: CSA STAR 自我評估
+          href: offering-csa-star-self-assessment.md
+        - name: ISO 20000-1-2011
+          href: offering-iso-20000-1-2011.md
+        - name: ISO 22301
+          href: offering-iso-22301.md
+        - name: ISO 27001
+          href: offering-iso-27001.md
+        - name: ISO 27017
+          href: offering-iso-27017.md
+        - name: ISO 27018
+          href: offering-iso-27018.md
+        - name: ISO 27701
+          href: offering-iso-27701.md
+        - name: ISO-9001
+          href: offering-iso-9001.md
+        - name: SOC
+          href: offering-soc.md
+        - name: WCAG 2.1
+          href: offering-wcag-2-1.md
+    - name: 美國政府
+      items:
+        - name: CJIS
+          href: offering-cjis.md
+        - name: CNSSI 1253
+          href: offering-cnssi-1253.md
+        - name: DFARS
+          href: offering-dfars.md
+        - name: DoD DISA L2、L4、L5
+          href: offering-dod-disa-l2-l4-l5.md
+        - name: DoE 10 CFR Part 810
+          href: offering-doe-10-cfr-part-810.md
+        - name: EAR (美國出口管制條例)
+          href: offering-ear.md
+        - name: FedRAMP
+          href: offering-fedramp.md
+        - name: FIPS 140-2
+          href: offering-fips-140-2.md
+        - name: IRS 1075
+          href: offering-irs-1075.md
+        - name: ITAR
+          href: offering-itar.md
+        - name: NIST 800-171
+          href: offering-nist-sp-800-171.md
+        - name: NIST CSF
+          href: offering-nist-csf.md
+        - name: Section 508 VPATS
+          href: offering-section-508-vpats.md
+    - name: 產業
+      items:
+        - name: 教育
+          items:
+            - name: FERPA
+              href: offering-ferpa.md
+        - name: 能源業
+          items:
+            - name: NERC
+              href: offering-nerc-cip.md
+        - name: 金融業
+          items:
+            - name: 23 NYCRR Part 500
+              href: offering-23-nycrr-part-500.md
+            - name: AFM + DNB (荷蘭)
+              href: offering-afm-dnb-netherlands.md
+            - name: APRA (澳洲)
+              href: offering-apra-australia.md
+            - name: AMF 和 ACPR (法國)
+              href: offering-amf-acpr-france.md
+            - name: EBA (歐盟)
+              href: offering-eba-eu.md
+            - name: FCA (英國)
+              href: offering-fca-uk.md
+            - name: FFIEC (美國)
+              href: offering-ffiec-us.md
+            - name: FINMA (瑞士)
+              href: offering-finma-switzerland.md
+            - name: FINRA 4511
+              href: offering-finra-4511.md
+            - name: FISC (日本)
+              href: offering-fisc-japan.md
+            - name: FSA (丹麥)
+              href: offering-fsa-denmark.md
+            - name: GLBA
+              href: offering-glba.md
+            - name: KNF (波蘭)
+              href: offering-knf-poland.md
+            - name: MAS + ABS (新加坡)
+              href: offering-mas-abs-singapore.md
+            - name: NBB + FSMA (比利時)
+              href: offering-nbb-fsma-belgium.md
+            - name: OSFI (加拿大)
+              href: offering-osfi-canada.md
+            - name: PCI DSS
+              href: offering-pci-dss.md
+            - name: RBI + IRDAI (印度)
+              href: offering-rbi-irdai-india.md
+            - name: SEC 17a-4
+              href: offering-sec-17a-4.md
+            - name: SOC
+              href: offering-soc.md
+            - name: SOX
+              href: offering-sox.md
+            - name: TruSight
+              href: offering-trusight.md
+        - name: 醫療保健
+          items:
+            - name: HDS (法國)
+              href: offering-hds-france.md
+            - name: HIPAA/HITECH
+              href: offering-hipaa-hitech.md
+            - name: HITRUST
+              href: offering-hitrust.md
+            - name: MARS-E
+              href: offering-mars-e.md
+            - name: NEN-7510 (荷蘭)
+              href: offering-nen-7510-netherlands.md
+            - name: NHS IG Toolkit (英國)
+              href: offering-nhs-ig-toolkit-uk.md
+        - name: 製造業
+          items:
+            - name: FDA CFR Title 21 Part 11
+              href: offering-fda-cfr-title-21-part-11.md
+            - name: GxP
+              href: offering-gxp.md
+            - name: TISAX (德國)
+              href: offering-tisax-germany.md
+        - name: 媒體業
+          items:
+            - name: CDSA
+              href: offering-cdsa.md
+            - name: DPP (英國)
+              href: offering-dpp-uk.md
+            - name: FACT (英國)
+              href: offering-fact-uk.md
+            - name: MPAA
+              href: offering-mpaa.md
+        - name: 零售業
+          items:
+            - name: 23 NYCRR Part 500
+              href: offering-23-nycrr-part-500.md
+            - name: AFM + DNB (荷蘭)
+              href: offering-afm-dnb-netherlands.md
+            - name: AMF 和 ACPR (法國)
+              href: offering-amf-acpr-france.md
+            - name: CDSA
+              href: offering-cdsa.md
+            - name: CIS 基準
+              href: offering-cis-benchmark.md
+            - name: CSA-STAR 證明
+              href: offering-csa-star-attestation.md
+            - name: DoE 10 CFR Part 810
+              href: offering-doe-10-cfr-part-810.md
+            - name: DPP (英國)
+              href: offering-dpp-uk.md
+            - name: EAR (美國出口管制條例)
+              href: offering-ear.md
+            - name: ENISA IAF (EU)
+              href: 'https://aka.ms/ENISA'
+            - name: 歐盟示範條款
+              href: offering-eu-model-clauses.md
+            - name: EBA (歐盟)
+              href: offering-eba-eu.md
+            - name: 歐盟–美國隱私保護盾
+              href: offering-eu-us-privacy-shield.md
+            - name: FACT (英國)
+              href: offering-fact-uk.md
+            - name: FCA (英國)
+              href: offering-fca-uk.md
+            - name: FFIEC (美國)
+              href: offering-ffiec-us.md
+            - name: FINMA (瑞士)
+              href: offering-finma-switzerland.md
+            - name: GDPR (歐盟)
+              href: offering-gdpr-eu.md
+            - name: GLBA
+              href: offering-glba.md
+            - name: HITRUST
+              href: offering-hitrust.md
+            - name: IRS 1075
+              href: offering-irs-1075.md
+            - name: ISO 27018
+              href: offering-iso-27018.md
+            - name: ISO-9001
+              href: offering-iso-9001.md
+            - name: ITAR
+              href: offering-itar.md
+            - name: KNF (波蘭)
+              href: offering-knf-poland.md
+            - name: MARS-E
+              href: offering-mars-e.md
+            - name: MPAA
+              href: offering-mpaa.md
+            - name: NBB + FSMA (比利時)
+              href: offering-nbb-fsma-belgium.md
+            - name: NHS IG Toolkit (英國)
+              href: offering-nhs-ig-toolkit-uk.md
+            - name: NIST CSF
+              href: offering-nist-csf.md
+            - name: PCI DSS
+              href: offering-pci-dss.md
+            - name: Section 508 VPATS
+              href: offering-section-508-vpats.md
+            - name: 共用評估
+              href: offering-shared-assessments.md
+            - name: SOC
+              href: offering-soc.md
+            - name: LOPD (西班牙)
+              href: offering-lopd-spain.md
+            - name: Cyber Essentials Plus (英國)
+              href: offering-cyber-essentials-plus-uk.md
+            - name: G-Cloud (英國)
+              href: offering-g-cloud-uk.md
+    - name: 地區
+      items:
+        - name: 亞洲
+          items:
+            - name: CS Mark (Gold) (日本))
+              href: offering-cs-mark-gold-japan.md
+            - name: DJCP (中國)
+              href: 'https://www.trustcenter.cn/compliance/default.html#DJCP'
+            - name: GB 18030 (中國)
+              href: 'https://www.trustcenter.cn/compliance/default.html#GB18030'
+            - name: ISMS (韓國)
+              href: offering-ISMS-korea.md
+            - name: MeitY (印度)
+              href: offering-meity-india.md
+            - name: MTCS (新加坡)
+              href: offering-mtcs-singapore.md
+            - name: My Number (日本)
+              href: offering-my-number-act-japan.md
+            - name: TRUCS (中國)
+              href: 'https://aka.ms/TRUCS-Compliance'
+        - name: 澳洲/太平洋
+          items:
+            - name: CCSL/IRAP (澳洲)
+              href: offering-CCSL-IRAP-Australia.md
+            - name: NZ CC Framework (紐西蘭)
+              href: offering-nz-cc-framework-nz.md
+        - name: 歐洲
+          items:
+            - name: BIR 2012 (荷蘭)
+              href: offering-bir-2012-netherlands.md
+            - name: C5 (德國)
+              href: offering-c5-germany.md
+            - name: Cyber Essentials Plus (英國)
+              href: offering-cyber-essentials-plus-uk.md
+            - name: EN 301 549 (歐盟)
+              href: offering-en-301-549-eu.md
+            - name: ENS (西班牙)
+              href: offering-ens-spain.md
+            - name: ENISA IAF (EU)
+              href: 'https://aka.ms/ENISA'
+            - name: 歐盟示範條款
+              href: offering-eu-model-clauses.md
+            - name: 歐盟–美國隱私保護盾
+              href: offering-eu-us-privacy-shield.md
+            - name: GDPR (歐盟)
+              href: offering-gdpr-eu.md
+            - name: G-Cloud (英國)
+              href: offering-g-cloud-uk.md
+            - name: IDW PS 951 (德國)
+            - name: IT Grundschutz Workbook (德國)
+              href: offering-it-grundschutz-workbook-germany.md
+            - name: LOPD (西班牙)
+              href: offering-lopd-spain.md
+            - name: PASF (英國)
+              href: offering-pasf-uk.md
+        - name: 北美
+          items:
+            - name: 加州消費者隱私法 (CCPA)
+              href: offering-ccpa.md
+            - name: 加拿大隱私權法
+              href: offering-canadian-privacy-laws.md
+        - name: 南美洲
+          items:
+            - name: PDPA (阿根廷)
+              href: offering-pdpa-argentina.md
+- name: Office 365 企業版
+  href: 'https://docs.microsoft.com/Office365/Enterprise'
+- name: Office 365 商務版
+  href: 'https://docs.microsoft.com/office365/admin/admin-home'
+- name: Microsoft 365 安全性
+  href: 'https://docs.microsoft.com/microsoft-365/security/'
