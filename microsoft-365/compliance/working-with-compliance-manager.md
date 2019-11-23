@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: b1d67a71d8440923552e4702f7035bd24b166fec
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: c50122f390809e145af621ed6341d02ae9c3b8cf
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718682"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202354"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>搭配使用 Microsoft Compliance Manager （預覽）
 
@@ -149,15 +149,19 @@ ms.locfileid: "38718682"
 
 客戶動作區域顯示所有客戶的所有範本及評估動作合規性管理員中 （預覽）。
 
-![合規性管理員-新增使用者](media/compliance-manager-customer-actions.png)
+![合規性管理員-新增使用者](media/compliance-manager-customer-actions.png "合規性管理員客戶動作")
 
-在快速，您可以請參閱巨集指令的標題、 擁有者、 類別、 強制執行 >，以及分數，並判斷是否它整合安全分數。 您可以依序展開 [巨集指令，然後選取 [**更多讀取**閱讀動作的描述，並存取任何說明中的連結。 啟用及停用安全分數整合，根據每個巨集指令，以及新增自訂動作，您也可以使用此介面。 具有安全分數整合功能的動作有這些 （請注意，自訂動作也會有旁邊的省略符號） 旁的省略符號 （...）。
+一眼您可以請參閱巨集指令的標題、 擁有者、 類別、 強制執行 >，以及分數，並判斷是否它整合安全分數。 您可以依序展開 [巨集指令，然後選取 [**更多讀取**閱讀動作的描述，並存取任何說明中的連結。 啟用及停用安全分數整合，根據每個巨集指令，以及新增自訂動作，您也可以使用此介面。 具有安全分數整合功能的動作有這些 （請注意，自訂動作也會有旁邊的省略符號） 旁的省略符號 （...）。
 
 #### <a name="enable-or-disable-secure-score-integration"></a>啟用或停用安全分數整合
 
 1. 選取您要修改，然後選取 [**編輯**巨集的指令的省略符號 （...）。
 2. 切換開啟或關閉安全分數連續更新的參數來啟用或停用連續監視透過安全分數。
 3. 選取 [儲存]****。
+
+當組織第一次部署 Microsoft 365 或 Office 365 時，它會採取約七天的安全分數 」 來完全收集資料，並因素入您的分數。 在這段時間，將安全分數連續更新參數設定為 [**關閉**，並以手動方式設定為**實作**的 [巨集指令會計算向您的分數該巨集指令。 初始七天之後，開啟安全分數連續更新將會啟用該點之後的持續監視。
+
+安全分數整合不支援任何動作以手動方式可實作。 手動實作將因素入該巨集指令群組的分數。
 
 #### <a name="add-a-customer-action"></a>新增客戶巨集指令
 

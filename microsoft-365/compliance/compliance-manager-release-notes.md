@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: 1a490212b2275b9f297e2585e7242f5331d0fe56
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 1f233a6bc19f4a7afa495f49ad77e39e496c1dc5
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "38685408"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202164"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>版本資訊的合規性管理員 （預覽）
 
@@ -51,8 +51,10 @@ ms.locfileid: "38685408"
 - 安全分數結果訣不適用於特定 Microsoft 365 和 Office 365 訂閱中的某些動作項目。 安全分數結果是**無法偵測**在這些情況下。
 - 有時安全分數結果會傳回對應的原則並不會完成的動作項目。
 - 針對新租用戶的所有動作的安全分數更新自動處於開啟狀態。 全域系統管理員可以設定安全分數連續更新切換到關閉，這會關閉的所有動作的更新。
+  - **附註**： 當組織第一次部署 Microsoft 365 或 Office 365，它會採用約七天的安全分數 」 來完全收集資料，並因素入您的分數。 在這段時間，將安全分數連續更新參數設定為 [**關閉**，並以手動方式設定為**實作**的 [巨集指令會計算向您的分數該巨集指令。 初始七天之後，開啟安全分數連續更新將會啟用該點之後的持續監視。
 - 安全分數更新已開啟時，會主動監視動作可以安全分數，雖然巨集指令的測試日期不會更新以反映監視。
 - 當建立新的評估時，分數自動包含 Microsoft 管理控制項分數和安全分數整合。
+- 安全分數整合不支援任何動作以手動方式可實作。 手動實作將因素入該巨集指令群組的分數。
 
 ### <a name="microsoft-managed-controls"></a>Microsoft 管理控制措施
 

@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 摘要：設定適用於 Microsoft 365 測試環境的同盟驗證。
-ms.openlocfilehash: 703f6421a6029f5bdde4cda1942d91f2b467a94a
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: 895d6b825a3e2928fee1e9f68ce2195b92117e37
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757860"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202252"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Microsoft 365 測試環境的同盟身分識別
 
@@ -33,7 +33,7 @@ Office 365 支援同盟身分識別。這表示 Office 365 的連線使用者指
   
 本文說明如何設定 Microsoft 365 或 Office 365 測試環境中的同盟驗證，如下：
 
-![適用於 Microsoft 365 測試環境的同盟驗證](media/federated-identity-for-your-office-365-dev-test-environment/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
+![適用於 Microsoft 365 測試環境的同盟驗證](media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase3.png)
   
 此組態包含： 
   
@@ -60,7 +60,7 @@ Office 365 支援同盟身分識別。這表示 Office 365 的連線使用者指
 
 請遵循[適用於 Microsoft 365 的密碼雜湊同步處理](password-hash-sync-m365-ent-test-environment.md)中的指示。以下是您產生的組態。
   
-![使用密碼雜湊同步處理測試環境的模擬企業](media/federated-identity-for-your-office-365-dev-test-environment/be5b37b0-f832-4878-b153-436c31546e21.png)
+![使用密碼雜湊同步處理測試環境的模擬企業](media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase1.png)
   
 此組態包含： 
   
@@ -109,7 +109,7 @@ Restart-Computer
 
 以下是產生的組態。
   
-![將 AD FS 伺服器新增至 Microsoft 365 測試環境的 DirSync](media/federated-identity-for-your-office-365-dev-test-environment/da82f39e-426d-41e2-842a-c13b382d63d5.png)
+![將 AD FS 伺服器新增至 Microsoft 365 測試環境的 DirSync](media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase2.png)
   
 ## <a name="phase-3-create-the-web-proxy-server"></a>階段 3：建立 Web Proxy 伺服器
 
@@ -176,7 +176,7 @@ Add-DnsServerResourceRecordA -Name "fs" -ZoneName corp.contoso.com -AllowUpdateA
   
 以下是產生的組態。
   
-![將 Web 應用程式 Proxy 伺服器新增至 Microsoft 365 測試環境的 DirSync](media/federated-identity-for-your-office-365-dev-test-environment/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
+![將 Web 應用程式 Proxy 伺服器新增至 Microsoft 365 測試環境的 DirSync](media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase3.png)
   
 ## <a name="phase-4-create-a-self-signed-certificate-and-configure-adfs1-and-proxy1"></a>階段 4：建立自我簽署的憑證並設定 ADFS1 及 PROXY1
 
