@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 6f024337ac134cc830dfb61286e7f8e53d41c169
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 3f9d4e1dff1f324e8e2c3eedb502ef0480d2c25e
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191218"
+ms.locfileid: "39202414"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新功能
 
@@ -26,23 +26,27 @@ ms.locfileid: "39191218"
 
 - [Office 365 進階的威脅防護 (Office 365 ATP)](office-365-atp.md)
 
-下列功能是在最新版的 Office 365 ATP 現在可使用 (GA)。 
+本文列出最新版的 Office 365 ATP 中的新功能。 目前在預覽中的功能被以 **（預覽）**。
 
 >沒有 Office 365 ATP 尚未？ [若要啟動試用版的連絡人銷售](https://go.microsoft.com/fwlink/p/?LinkId=518644)。 
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 方案 1 與方案 2
 
-Office 365 ATP 是兩個計劃中提供： Office 365 ATP 計劃 1 和 Office 365 ATP 計劃 2。 下表摘要說明每個計劃中包含的內容。 
+Office 365 ATP 是兩個計劃中提供： Office 365 ATP 計劃 1 和 Office 365 ATP 計劃 2。
+ 
+下表摘要說明每個計劃中包含的內容。 
 
 |Office 365 ATP 計劃 1  |Office 365 ATP 計劃 2  |
 |---------|---------|
 |設定、 保護及偵測功能：<br/>- [安全附件](atp-safe-attachments.md)<br/>- [安全連結](atp-safe-links.md)<br/>- [SharePoint、 OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)<br/>- [進階反網路釣魚保護](atp-anti-phishing.md)<br/>- [即時偵測](threat-explorer.md)     |Office 365 ATP 計劃 1 功能<br/>---: 加號為--<br/>自動化、 調查、 修復和教育版的功能：<br/>- [威脅追蹤器](threat-trackers.md)<br/>- [威脅總管](threat-explorer.md)<br/>- [自動化事件回應](automated-investigation-response-office.md)<br/>- [攻擊模擬器](attack-simulator.md)         |
 
-Office 365 ATP 計劃 2 隨附於 Office 365 企業版 E5，Office 365 教育版 A5，Microsoft 365 企業版 E5。 Office 365 ATP 計劃 1 隨附於 Microsoft 365 商務版。 若您目前訂閱不包含 Office 365 ATP，請[連絡銷售人員開始試用版](https://go.microsoft.com/fwlink/p/?LinkId=518644)，請參閱 ATP 可以為您的組織的運作方式。 
+- Office 365 ATP 計劃 2 隨附於 Office 365 E5、 Office 365 A5 和 Microsoft 365 E5。 
+- Office 365 ATP 計劃 1 隨附於 Microsoft 365 商務版。 
+- 若您目前訂閱不包含 Office 365 ATP，請[連絡銷售人員開始試用版](https://go.microsoft.com/fwlink/p/?LinkId=518644)，請參閱 ATP 可以為您的組織的運作方式。 
 
 ## <a name="november-2019"></a>2019 年 11 月
 
-- [嗎？ 請查看新洩漏的使用者偵測及回應功能 （預覽）](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) (Office 365 ATP 計劃 2)
+- [請查看新的洩漏的使用者偵測及回應功能 (**預覽**)](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) (Office 365 ATP 計劃 2)
 
 ## <a name="september-2019"></a>2019 年 9 月
 

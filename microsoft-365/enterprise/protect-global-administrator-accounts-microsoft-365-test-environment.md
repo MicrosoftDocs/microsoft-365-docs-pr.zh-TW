@@ -3,7 +3,7 @@ title: 保護您的 Microsoft 365 企業版測試環境中的全域系統管理�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/16/2019
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,16 +13,16 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用下列步驟來保護 Microsoft 365 企業版測試環境中的全域系統管理員帳戶。
-ms.openlocfilehash: 89985f99f5471aab87189e78035062add2c6bad9
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 5447177c6581b69d48272ceef7718552ea84dc9d
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673329"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202224"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>保護您的 Microsoft 365 企業版測試環境中的全域系統管理員帳戶
 
-*此測試實驗室指南僅可用於 Microsoft 365 企業版測試環境。*
+*這個測試實驗室指南只能用於 Microsoft 365 企業版測試環境。*
 
 您可以防止數位攻擊您的組織藉由確保您的系統管理員帳戶會盡可能的安全。 本文說明如何使用 Azure Active Directory (Azure AD) 條件式存取原則來保護全域系統管理員帳戶。
 
@@ -34,7 +34,7 @@ ms.locfileid: "38673329"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1：建置您的 Microsoft 365 企業版測試環境
 
@@ -56,7 +56,7 @@ ms.locfileid: "38673329"
 4. 按一下 [**密碼**] 和 [**讓我建立密碼**，然後輸入 [強式密碼。 此新帳戶的密碼記錄於安全的位置。
 5. 清除 [**讓這位使用者變更其密碼，當使用者第一次登入**。
 6. 按一下 [**角色**]，然後按一下 [**全域系統管理員**。
-7. 按一下 [**產品授權**]，然後再開啟的 [ **Enterprise Mobility + Security E5** ] 和 [ **Office 365 企業版 E5 授權**。
+7. 按一下 [**產品授權**]，然後開啟**Microsoft 365 E5**授權。
 8. 按一下 [新增]****。
 9. 在**已新增使用者] 頁面上**，清除 [**傳送電子郵件中的密碼**，，然後再按一下 [**關閉**。
 

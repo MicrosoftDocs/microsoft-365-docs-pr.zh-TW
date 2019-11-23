@@ -13,25 +13,26 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) 和進階威脅防護 (ATP) 的安全性設定的最佳做法是什麼？ 標準保護目前建議是什麼？ 如果您想要更嚴格應該使用什麼？ 以及哪些額外讓如果您也可以使用進階威脅防護 (ATP)？
-ms.openlocfilehash: 9ef3344bd6497495d3d2279f570a8090d4fa4573
-ms.sourcegitcommit: d8d001c03c28c10bea005d1c9b5f4a8f393af706
+ms.openlocfilehash: d49f465aa66cd3c720e83b28569da2770300067e
+ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38677529"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39204253"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全的建議的設定
 
-**Exchange Online Protection (EOP)** 是 Office 365 訂閱的安全性的核心，並協助防止惡意電子郵件送達您的員工的收件匣。 但與 [新增]，更複雜的攻擊新興的每一天，改善的保護，通常需要。 **Office 365 進階的威脅防護 (ATP)** ATP 方案 1 或 ATP 計劃 2 包含額外的功能，可讓系統管理員層級的安全性、 控制項和調查越多。 
+**Exchange Online Protection (EOP)** 是 Office 365 訂閱的安全性的核心，並協助防止惡意電子郵件送達您的員工的收件匣。 但與 [新增]，更複雜的攻擊新興的每一天，改善的保護，通常需要。 **Office 365 進階的威脅防護 (ATP)** ATP 方案 1 或 ATP 計劃 2 包含額外的功能，可讓系統管理員層級的安全性、 控制項和調查越多。
 
-雖然我們讓安全性系統管理員可以自訂其安全性設定，有兩個 EOP 和建議的 Office 365 ATP 中的安全性層級：**一般**] 及 [**嚴格]**。 每個客戶環境和需求不同，但我們認為郵件篩選設定這些層級可協助防止垃圾的郵件進入您的員工在大多數情況下的收件匣。 
+雖然我們讓安全性系統管理員可以自訂其安全性設定，有兩個 EOP 和建議的 Office 365 ATP 中的安全性層級：**一般**] 及 [**嚴格]**。 每個客戶環境和需求不同，但我們認為郵件篩選設定這些層級可協助防止垃圾的郵件進入您的員工在大多數情況下的收件匣。
 
 本主題說明這些 Microsoft 建議的設定，以協助保護您的 Office 365 使用者。
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>反垃圾郵件、 反惡意程式碼，並在 EOP 中的反網路釣魚保護
+
 反垃圾郵件、 反惡意程式碼，並反網路釣魚是由系統管理員可設定的 EOP 功能。 我們建議下列設定。
 
-### <a name="anti-spam-policy"></a>反垃圾郵件原則
+### <a name="eop-anti-spam-policy-settings"></a>EOP 反垃圾郵件原則設定
 
 |安全性功能名稱|標準|嚴格|留言|
 |---------|---------|---------|---------|
@@ -71,7 +72,7 @@ ms.locfileid: "38677529"
 |MarkAsSpamNdrBackscatter|
 |MarkAsSpamSpfRecordHardFail|
 
-#### <a name="outbound-spam-filter-policy"></a>輸出垃圾郵件篩選原則
+#### <a name="eop-outbound-spam-filter-policy-settings"></a>EOP 輸出垃圾郵件篩選原則設定
 
 |安全性功能名稱|標準|嚴格|留言|
 |---------|---------|---------|---------|
@@ -80,7 +81,7 @@ ms.locfileid: "38677529"
 |輸出垃圾郵件原則的收件者限制-每日的限制|800|1000||
 |當使用者超過限制時的動作|禁止使用者傳送郵件|禁止使用者傳送郵件||
 
-### <a name="anti-malware-policy"></a>反惡意程式碼原則
+### <a name="eop-anti-malware-policy-settings"></a>EOP 反惡意程式碼原則設定
 
 |安全性功能名稱|標準|嚴格|留言|
 |---------|---------|---------|---------|
@@ -90,26 +91,28 @@ ms.locfileid: "38677529"
 |通知內部寄件者的未傳遞的郵件|停用|停用||
 |外部的寄件者的未傳遞的郵件通知|停用|停用||
 
-### <a name="anti-phishing-policy"></a>反網路釣魚原則
+### <a name="eop-anti-phishing-policy-settings"></a>EOP 反網路釣魚原則設定
 
 |安全性功能名稱|標準|嚴格|留言|
 |---------|---------|---------|---------|
-|啟用 antispoofing 保護|開啟|開啟||
+|啟用反詐騙保護|開啟|開啟||
 |啟用未驗證的寄件者 （標記）|開啟|開啟||
 |如果由具有不允許詐騙網域的人所傳送電子郵件|將郵件移至 [收件者的垃圾郵件資料夾|隔離郵件||
 
-## <a name="office-365-advanced-threat-protection-atp-security"></a>Office 365 進階威脅防護 (ATP) 的安全性
-其他安全性優點隨附於 Office 365 進階威脅防護訂閱。 最新的新聞和資訊，您可以請參閱[What's new in Office 365 ATP](whats-new-in-office-365-atp.md)。 
+## <a name="office-365-advanced-threat-protection-security"></a>Office 365 進階威脅防護安全性
+
+其他安全性優點隨附於 Office 365 進階威脅防護 (ATP) 訂閱。 最新的新聞和資訊，您可以請參閱[What's new in Office 365 ATP](whats-new-in-office-365-atp.md)。
 
 Office 365 ATP 包含安全附件和安全連結原則防止傳遞，潛在惡意附件的電子郵件，並讓使用者從按一下具有潛在危險性的 Url。
 
 > [!IMPORTANT]
-> 進階的反網路釣魚是下列其中一個 Office 365 ATP 訂閱的優點。 啟用根據預設，反網路釣魚***必須***設定它將開始篩選郵件之前，先使用原則。 忘記要設定防網路釣魚原則可能會公開風險的電子郵件使用者。 請確定設定防網路釣魚原則之後新增 Office 365 ATP 訂用帳戶。
+> 進階的反網路釣魚是下列其中一個 Office 365 ATP 訂閱的優點。 雖然預設會啟用它，您***必須***設定至少一個反網路釣魚原則，才可開始篩選郵件。 忘記要設定防網路釣魚原則可能會公開風險的電子郵件使用者。 請務必設定防網路釣魚原則之後新增 Office 365 ATP 訂用帳戶。
 
 如果您已新增 Office 365 ATP 訂閱至 EOP，設定下列設定。
 
-### <a name="office-atp-anti-phishing-policy"></a>Office ATP 防網路釣魚原則
-EOP 客戶取得基本反網路釣魚原則設定，但與 Office 365 ATP，系統管理員會取得多個功能和控制項可協助防止、 偵測，以及 remidiate 不受攻擊。
+### <a name="office-atp-anti-phishing-policy-settings"></a>Office ATP 防網路釣魚原則設定
+
+EOP 客戶取得基本反網路釣魚如先前所述，但 Office 365 ATP 包含更多的功能和控制項可協助防止、 偵測及修復的攻擊。
 
 |模擬的安全性功能名稱|標準|嚴格|留言|
 |---------|---------|---------|---------|
@@ -128,13 +131,13 @@ EOP 客戶取得基本反網路釣魚原則設定，但與 Office 365 ATP，系�
 
 |詐騙安全性功能名稱|標準|嚴格|留言|
 |---------|---------|---------|---------|
-|啟用 antispoofing 保護|開啟|開啟||
+|啟用反詐騙保護|開啟|開啟||
 |啟用未驗證的寄件者 （標記）|開啟|開啟||
 |如果由具有不允許詐騙網域的人所傳送電子郵件|將郵件移至 [收件者的垃圾郵件資料夾|隔離郵件||
 |EnableAuthenticationSafetyTip|True|True|此設定只有在 PowerShell|
 |EnableAuthenticationSoftPassSafetyTip|False|True|此設定只有在 PowerShell|
 |EnableSuspiciousSafetyTip|False|True|此設定只有在 PowerShell|
-|TreatSoftPassAsAuthenticated|True|False|此設定只有在 PowerShell|
+|TreatSoftPassAsAuthenticated|對|錯|此設定只有在 PowerShell|
 
 |進階的設定安全性功能名稱|標準|嚴格|留言|
 |---------|---------|---------|---------|
@@ -161,7 +164,7 @@ EOP 客戶取得基本反網路釣魚原則設定，但與 Office 365 ATP，系�
 |偵測時重新導向附件|已啟用|已啟用|用知道如何判斷附件為惡意程式碼或非安全性系統管理員重新導向至電子郵件地址|
 |ATP 安全附件回應如果惡意程式碼掃描附件的逾時或錯誤，就會發生|已啟用|已啟用||
 
-## <a name="miscellaneous-settings-for-eop-or-office-365-atp"></a>EOP 或 Office 365 ATP 的其他設定
+## <a name="miscellaneous-settings"></a>其他設定
 
 這些設定涵蓋的功能不一定符合上述的特定類別的範圍。 某些設定位於外部安全性 & 合規性中心。
 

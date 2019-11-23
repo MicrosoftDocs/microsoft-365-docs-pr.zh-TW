@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止網路釣魚郵件送達您的信箱，Outlook.com 和網頁型 Outlook 確認寄件者是誰他們說他們且可疑的郵件標示為垃圾郵件。
-ms.openlocfilehash: 6f3d11a510756871d6688dc948e2a50b4d59406d
-ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
+ms.openlocfilehash: f758213802d32b4154924d1ab4a3d8bbff49e717
+ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37523628"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39204254"
 ---
 # <a name="unverified-sender"></a>未驗證的寄件者
 
 > [!NOTE] 
-> 這些更新會循環現在，並可能無法使用尚未對所有使用者。
+> 這些更新會循環現在，並可能無法使用尚未對所有使用者。 企業 outlook.com 使用者支援這項功能。 它不是目前適用於消費者 outlook.com。
 
 若要防止網路釣魚郵件送達您的信箱，Outlook.com 和網頁型 Outlook 確認寄件者是誰他們說他們且可疑的郵件標示為垃圾郵件。
 
@@ -51,11 +51,11 @@ Outlook.com 和網頁型 Outlook 顯示指標，當郵件的寄件者也無法�
 
     ![編輯的圖形介面中的未驗證寄件者。](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
-- 如果系統管理員已識別為誤判，而且寄件者應該不會收到未驗證的寄件者處理方式可採取下列動作，以將寄件者新增至詐騙智慧詐騙的其中一個允許清單：
+- 如果系統管理員已識別為誤判，而寄件者應該不會收到未驗證的寄件者處理方式，其中一個下列動作可以採取新增至詐騙智慧詐騙的寄件者允許清單：
         
-    - 加入網域組經由詐騙智慧深入解析。 如需詳細資訊，請參閱逐步解說： 詐騙智慧深入解析
+    - 加入網域組經由詐騙智慧深入解析。 如需詳細資訊，請參閱[逐步解說： 詐騙智慧深入了解](https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight)。
                 
-    - 新增透過 PhishFilterPolicy 指令程式的網域組。 如需詳細資訊，請參閱 Office 365 中的 Set-phishfilterpolicy 和反詐騙保護
+    - 新增透過 PhishFilterPolicy 指令程式的網域組。 如需詳細資訊，請參閱[Set-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy)和[設定 Office 365 ATP 防網路釣魚和防網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)。
 
 此外，我們不會套用未驗證寄件者處理方式如果已將其傳遞至收件匣透過系統允許清單，包括電子郵件傳輸規則 (Etr)、 安全網域清單 （反垃圾郵件原則）、 安全的寄件者清單，或使用者已設定為 「 安全寄件者 」 這個使用者在其收件匣。
 

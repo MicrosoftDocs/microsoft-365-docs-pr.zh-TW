@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 摘要： 管理隔離的 SharePoint Online 小組網站與這些程序。
-ms.openlocfilehash: e6ed86421ec199ce785e2daff5e9c5447939e69b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fd34a8af35b546266cf5d7cf308dbd387207eb1e
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077764"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202444"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>管理獨立的 SharePoint Online 小組網站
 
@@ -48,9 +48,6 @@ $userUPN="<UPN of the user account>"
 $grpName="<display name of the group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
 ```
-
-> [!TIP]
-> 文字檔案，其中包含所有 PowerShell 命令和 Excel PowerShell 命令將會產生的組態工作表的群組和使用者帳戶名稱，請下載[隔離 SharePoint Online 小組網站部署套件](https://gallery.technet.microsoft.com/Isolated-SharePoint-Online-0b364907)。 
 
 若要新增的使用者帳戶來存取群組，其顯示名稱，請使用下列 PowerShell 命令區塊：
 
