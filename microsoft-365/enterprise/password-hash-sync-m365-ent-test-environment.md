@@ -3,7 +3,7 @@ title: 適用於 Office 365 測試環境的密碼雜湊同步處理
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/13/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：為您的 Office 365 測試環境設定及示範密碼雜湊同步處理並且登入。
-ms.openlocfilehash: e1055f9a4a64c05f55d4a5446f637ba195c0377c
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: ef08fcf59602d7812875015971d00a34526576d6
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757730"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202454"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>適用於 Office 365 測試環境的密碼雜湊同步處理
 
@@ -54,9 +54,9 @@ ms.locfileid: "38757730"
 
 在這個階段，您會新增公用 DNS 網域並將它新增至您的訂閱。
 
-首先，與您的公用 DNS 註冊提供者合作，以根據目前的網域名稱建立新的公用 DNS 網域名稱，並新增到您的 Office 365 訂閱中。建議名稱使用 **testlab.**\<您的公用網域>。比方說，如果您的公用網域名稱為 <span>**contoso</span>.com**，請新增公用網域名稱 **<span>testlab</span>.contoso.com**。
+首先，與您的公用 DNS 註冊提供者合作，以根據目前的網域名稱建立新的公用 DNS 網域名稱，並新增到您的訂閱中。建議名稱使用 **testlab.**\<您的公用網域>。比方說，如果您的公用網域名稱為 **<span>contoso</span>.com**，請新增公用網域名稱 **<span>testlab</span>.contoso.com**。
   
-接下來，您會進行網域註冊程序，以將 **testlab.**\<您的公用網域名稱> 網域新增至 Office 365 試用版或付費訂閱。 這包括將其他 DNS 記錄新增至 **testlab.**\<您的公用網域名稱> 網域。 如需詳細資訊，請參閱[將使用者與網域新增至 Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)。 
+接下來，您會進行網域註冊程序，以將 **testlab.**\<您的公用網域名稱> 網域新增至 Microsoft 365 或 Office 365 試用版或付費訂閱。 這包括將其他 DNS 記錄新增至 **testlab.**\<您的公用網域名稱> 網域。 如需詳細資訊，請參閱[新增網域至 Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain)。 
 
 以下是產生的組態。
   
@@ -70,7 +70,7 @@ ms.locfileid: "38757730"
 請注意 testlab.\<您的公用網域名稱> 目前的狀況：
 
 - 由公用 DNS 記錄支援。
-- 已在 Office 365 和 EMS 訂閱中註冊。
+- 已在您的 Microsoft 365 或 Office 365 訂閱中註冊。
 - 模擬內部網路上的 AD DS 網域。
      
 ## <a name="phase-3-install-azure-ad-connect-on-app1"></a>階段 3：在 APP1 上安裝 Azure AD Connect
@@ -97,7 +97,7 @@ ms.locfileid: "38757730"
     
 6. 在 [快速設定]**** 頁面上，按一下 [使用快速設定]****。
     
-7. 在 [連線到 Azure AD]**** 頁面上，在 [使用者名稱]**** 中輸入您的 Office 365 全域系統管理員帳戶名稱，在 [密碼]**** 中輸入其密碼，然後按 [下一步]****。
+7. 在 [連線到 Azure AD]**** 頁面上，在 [使用者名稱]**** 中輸入您的全域系統管理員帳戶名稱，在 [密碼]**** 中輸入其密碼，然後按 [下一步]****。
     
 8. 在 [連線到 AD DS]**** 頁面上，在 [使用者名稱]**** 中輸入 **TESTLAB\\User1**，在 [密碼]**** 中輸入其密碼，然後按 [下一步]****。
     
@@ -111,19 +111,19 @@ ms.locfileid: "38757730"
     
     請注意名為 **User1** 的帳戶。 此帳戶是來自 TESTLAB AD DS 網域，且經過證明目錄同步作業可以運作。
     
-13. 按一下 [User1]**** 帳戶。針對產品授權，按一下 [編輯]****。
+13. 按一下 **User1** 帳戶，然後按一下 [授權與 App]****。
     
-14. 在 [產品授權]**** 中，選取您的國家/地區，然後按一下 [Office 365 企業版 E5]**** 的 [關閉]**** 控制項 (將它切換至 [開啟]****)。對 [Enterprise Mobility + Security E5]**** 授權執行相同的動作。 
+14. 在 [產品授權]**** 中，選取您的位置 (如有需要)，停用 **Office 365 E5** 授權，並啟用 **Microsoft 365 E5** 授權。 
 
 15. 按一下頁面底部的 [儲存]****，然後按一下 [關閉]****。
     
-接下來，測試使用 <strong>user1@testlab.</strong>\<您的網域名稱> User1 帳戶的使用者名稱來登入 Office 365 訂閱的能力。
+接下來，測試使用 <strong>user1@testlab.</strong>\<您的網域名稱> User1 帳戶的使用者名稱來登入訂閱的能力。
 
-1. 從 APP1 登出 Office 365，然後再次登入，這次指定不同的帳戶。
+1. 從 APP1 登出，然後再次登入，這次指定不同的帳戶。
 
 2. 當系統提示您輸入使用者名稱和密碼時，指定 <strong>user1@testlab.</strong>\<您的網域名稱> 與 User1 密碼。您應該可以成功以 User1 身分登入。 
  
-請注意，User1 雖具有 TESTLAB AD DS 網域的網域管理員權限，但並不是 Office 365 全域管理員。 因此，您不會看到 [管理員]**** 圖示選項。 
+請注意，User1 雖具有 TESTLAB AD DS 網域的網域管理員權限，但並不是全域管理員。 因此，您不會看到 [管理員]**** 圖示選項。 
 
 以下是產生的組態。
 

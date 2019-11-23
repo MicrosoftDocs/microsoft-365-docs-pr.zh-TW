@@ -3,7 +3,7 @@ title: 適用於 Microsoft 365 測試環境的 Azure AD 無縫單一登入
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定並測試適用於 Microsoft 365 測試環境的 Azure AD 無縫單一登入。
-ms.openlocfilehash: a32dca8c37d9e6788aef801e9f99a90b724e86b1
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: f263ab507e392c1172d28b5d6ef111d8d9f40682
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757670"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202234"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的 Azure AD 無縫單一登入
 
@@ -81,7 +81,7 @@ Azure AD 無縫單一登入 (SSO) 會在使用者所在的個人電腦或裝置�
 
 11. 從 Azure 入口網站的左窗格，按一下 [Azure Active Directory > Azure AD Connect]****。確認 [無縫單一登入]**** 功能顯示為 [已啟用]****。
 
-接下來，以 <strong>user1@testlab.</strong>\<您的公用網域> User1 帳戶的使用者名稱測試登入 Office 365 訂閱的能力。
+接下來，以 <strong>user1@testlab.</strong>\<您的公用網域> User1 帳戶的使用者名稱測試登入訂閱的能力。
 
 1. 從 APP1 上的 Internet Explorer 中，按一下設定圖示，然後按一下 [網際網路選項]****。
  
@@ -93,11 +93,11 @@ Azure AD 無縫單一登入 (SSO) 會在使用者所在的個人電腦或裝置�
 
 5. 在 [將這個網站新增到區域]**** 中，輸入 **https<span>://</span>autologon.microsoftazuread-sso.com**，然後按一下 [新增 > 關閉 > 確定 > 確定]****。
 
-6. 登出 Office 365，然後再次登入，這次指定不同的帳戶。
+6. 登出然後再次登入，這次指定不同的帳戶。
 
 7. 提示登入時，指定 <strong>user1@testlab.</strong>\<your public domain> name，然後按一下 [下一步]****。 您應該成功以 User1 登入，且系統不會提示您輸入密碼。 這可證明 Azure AD 無縫 SSO 正在執行。
 
-請注意，User1 雖具有 TESTLAB AD DS 網域的網域管理員權限，但並不是 Azure AD 和 Office 365 的全域管理員。 因此，您不會看到 [管理員]**** 圖示選項。
+請注意，User1 雖具有 TESTLAB AD DS 網域的網域管理員權限，但並不是 Azure AD 的全域管理員。 因此，您不會看到 [管理員]**** 圖示選項。
 
 以下是您產生的組態：
 

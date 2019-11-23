@@ -3,7 +3,7 @@ title: Microsoft 365 模擬企業基本設定
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用此「測試實驗室指南」建立 Microsoft 365 企業版的模擬企業測試環境。
-ms.openlocfilehash: 98eb336a0f63f47b4b79de44c46fcd81f1d9c9f6
-ms.sourcegitcommit: 2bdd7b535a7d2a4896df130b7047f8c85f4d47b4
+ms.openlocfilehash: b89df6cad03084a8d9119f03f5c07d01a9c96061
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38711877"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202375"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模擬企業基本設定
 
@@ -364,177 +364,26 @@ CLIENT1 重新啟動之後，使用 TESTLAB\\User1 帳戶名稱和密碼連線�
 
   這會產生額外的成本，但可確保您有運作中的測試環境可嘗試不會過期的功能、組態和案例。您可以長期使用相同的測試環境進行概念性驗證、同儕示範和管理，以及應用程式開發和測試。這是建議的方法。
 
-若要開始 Microsoft 365 E5 試用版訂閱，您需要虛構的公司名稱和新 Microsoft 帳戶。
-  
-1. 我們建議您使用公司名稱 Contoso 的變種作為公司名稱，也就是 Microsoft 範例內容中使用的虛構公司，但此為非必要的動作。在此處記錄您虛構公司名稱：![](./media/Common-Images/TableLine.png)
-    
-2. 若要註冊新 Microsoft 帳戶，請移至 [https://outlook.com ](https://outlook.com)，並使用新電子郵件帳戶以及地址建立帳戶。您會使用這個帳戶來登入 Office 365。
-    
-  - 在此處記錄您新帳戶的名字和姓氏：![](./media/Common-Images/TableLine.png)
-    
-  - 在此處記錄新電子郵件帳戶地址：![](./media/Common-Images/TableLine.png)@outlook.com
-    
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>註冊 Office 365 E5 試用訂閱
 
-我們首先使用 Office 365 E5 試用版訂閱，然後再新增 Microsoft 365 E5 訂閱。
+使用 CORP\User1 帳戶透過 Azure 入口網站連線至 CLIENT1。
 
-1. 針對模擬的企業 Office 365 開發/測試環境，使用來自 Azure 入口網站的 CORP\User1 帳戶連接至 CLIENT1。  從 [開始] 畫面中，執行 Microsoft Edge，然後移至 [https://aka.ms/e5trial](https://aka.ms/e5trial)。
-    
-2. 在 [歡迎，讓我們認識您]**** 頁面上，指定：
-    
-  - 您的實際位置
-    
-  - 新 Microsoft 帳戶的名字和姓氏
-    
-  - 新電子郵件帳戶地址
-    
-  - 公司電話號碼
-    
-  - 虛構公司名稱
-    
-  - 250-999 名人員的組織規模
-    
-3. 按一下 [再多一個步驟]****。
-    
-4. 在 [建立使用者識別碼]**** 頁面上，根據新電子郵件地址輸入使用者名稱、在 @ 符號之後接上虛構公司 (移除名稱中的所有空格)，接著是此新 Office 365 帳戶的密碼 (兩次)。
-    
-    在安全位置中記錄您輸入的密碼。
-    
-    在這裡輸入虛構公司的名稱：![](./media/Common-Images/TableLine.png) (此將稱為**組織名稱**)
-    
-5. 按一下 [建立我的帳戶] ****。
-    
-6. 在 [證明您不是機器人。]**** 頁面中，輸入能夠傳送簡訊的手機號碼，然後按一下 [傳送簡訊給我]****。
-    
-7. 輸入已接收簡訊訊息中的驗證代碼，然後按 [下一步]****。
-    
-8. 在此記錄登入頁面 URL (選取並複製)：![](./media/Common-Images/TableLine.png)
-    
-9. 在此記錄使用者識別碼 (選取與複製)：![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-    此值將被稱為 **Office 365 全域系統管理員名稱**。
-    
-10. 當您看到 [您已準備就緒]****，對其按一下。
-    
-11. 在下一頁中，請稍候直到 Office 365 完成設定且所有的圖標皆可供使用。
-    
-您應會看到主要 Office 365 入口網站頁面，您可以從其中存取 Office 服務和 Microsoft 365 系統管理中心。
-  
-我們提供您建立 Office 365 試用版訂閱，以便開發/測試環境中能有不同於您目前已有之付費訂閱的單獨 Azure AD 租用戶。 此區隔表示您可以在測試租用戶中新增和移除使用者，而不會影響到生產訂閱。
-    
-### <a name="configure-your-office-365-e5-trial-subscription"></a>設定 Office 365 E5 試用版訂閱
+若要建立新的 Office 365 E5 試用訂閱，請執行輕量型基本組態測試實驗室指南的[階段 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-office-365-e5-subscription) 中的指示。
 
-接下來，您可以設定其他使用者使用您的 Office 365 E5 訂閱，並指派他們 Office 365 E5 授權。
-  
-使用[連線到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) 中的指示，將 Azure Active Directory PowerShell for Graph 模組 CLIENT1 虛擬機器連線到您的 Office 365 訂閱。
-    
-在 [Windows PowerShell 認證要求] 對話方塊中，輸入 Office 365 全域管理員帳戶的使用者名稱 (例如：jdoe@contosotoycompany.onmicrosoft.com) 和密碼。
-  
-填入您的組織名稱 (範例︰contosotoycompany)，代表位置的兩個字元國家/地區代碼、常用帳戶密碼，再從 PowerShell 命令提示字元中執行下列命令：
+若要設定您的新 Office 365 E5 試用訂閱，請執行輕量型基本組態測試實驗室指南的[階段 2](lightweight-base-configuration-microsoft-365-enterprise.md#phase-2-configure-your-office-365-trial-subscription) 中的指示。
 
-```powershell
-$orgName="<organization name>"
-$loc="<two-character country code, such as US>"
-$commonPW="<common user account password>"
-$PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
-$PasswordProfile.Password=$commonPW
+#### <a name="using-an-office-365-e5-test-environment"></a>使用 Office 365 E5 測試環境
 
-$userUPN= "user2@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 2" -GivenName User -SurName 2 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user2"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-
-$userUPN= "user3@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 3" -GivenName User -SurName 3 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user3"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-
-$userUPN= "user4@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 4" -GivenName User -SurName 4 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user4"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-```
-> [!NOTE]
-> 這裡會使用常見密碼，以便在開發/測試環境中能自動化並輕鬆進行設定。 當然，對於生產訂閱，這是非常不鼓勵的。 
-
-#### <a name="record-key-information-for-future-reference"></a>記錄重要資訊供日後參考
-
-您可能會想要列印本文章，以記錄 在Office 365 試用版訂閱的 30 天中此環境所需的特定資訊。 您可以輕鬆將試用訂閱延長 30 天。 針對永久開發/測試環境，建立具有單獨 Azure AD 租用戶及少數授權的新付費訂閱。
-
-記錄這些值︰
-  
-- Office 365 全域系統管理員名稱：![](./media/Common-Images/TableLine.png).onmicrosoft.com (在階段 2 的步驟 9)
-    
-    將此帳戶的密碼記錄在安全的位置。
-    
-- 您的試用訂閱組織名稱：![](./media/Common-Images/TableLine.png) (從階段 2 的步驟 4)
-    
-- 若要列出使用者 2、使用者 3、使用者 4 和使用者 5 的帳戶，從適用於 Windows PowerShell 的 Windows Azure Active Directory 模組提示字元中執行下列命令︰
-    
-  ```powershell
-  Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName
-  ```
-
-    在此記錄帳戶名稱：
-    
-  - 使用者 2 的帳戶名稱：user2 @![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-  - 使用者 3 的帳戶名稱：user3 @![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-  - 使用者 4 的帳戶名稱：user4 @![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-  - 使用者 5 的帳戶名稱：user5 @![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-    將這些帳戶的常見密碼記錄於安全的位置。
-   
-
-#### <a name="using-an-office-365-e5-devtest-environment"></a>使用 Office 365 E5 開發/測試環境
-
-如果您只需要 Office 365 開發/測試環境，您可以在這裡停止。 
+如果您只需要 Office 365 測試環境，您可以在這裡停止。 
 
 如需適用於 Office 365 和 Microsoft 365 的其他測試實驗室指南，請參閱 [Microsoft 365 企業版測試實驗室指南](m365-enterprise-test-lab-guides.md)。
-  
+
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>新增 Microsoft 365 E5 試用版訂閱
 
-接下來，您可以註冊 Microsoft 365 E5 試用版訂閱，並將它新增至與 Office 365 E5 試用版訂閱相同的組織。
+若要取得 Microsoft 365 E5 試用訂閱，並設定您的使用者帳戶使用授權，請執行輕量型基本組態測試實驗室指南的[階段 3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) 中的指示。
+
   
-首先，新增 Microsoft 365 E5 試用版訂閱，並將 Microsoft 365 授權指派給您的全域系統管理員帳戶。
-  
-1. 使用網際網路瀏覽器的私用執行個體，以全域系統管理員帳戶憑證登入位於 [https://admin.microsoft.com](https://admin.microsoft.com) 的 Microsoft 365 系統管理中心。
-    
-2. 在 [Microsoft 365 系統管理中心] **** 頁面的左側導覽中，按一下 [帳單 > 購買服務]****。
-    
-3. 在 [購買服務]**** 頁面上，找到 [Microsoft 365 E5]**** 項目。 將滑鼠指標停留在上面，並且按一下 [開始免費試用]****。
-
-4. 在 [Microsoft 365 E5 試用版]**** 頁面上，選擇要收到簡訊或電話、輸入您的電話號碼，然後按一下 [傳送簡訊給我]**** 或 [打電話給我]****。
-
-5. 在 [確認訂單]**** 頁面上，按一下 [立即試用]****。
-
-6. 在 [訂單收據]**** 頁面上，按一下 [繼續]****。
-
-7. 在 Microsoft 365 系統管理中心，按一下 [作用中使用者]****，然後您的系統管理員帳戶。
-
-8. 按一下 [產品授權]**** 的 [編輯]****。
-
-9. 關閉 Office 365 企業版 E5 授權，然後開啟 Microsoft 365 E5 授權。
-
-10. 按一下 [儲存 > 關閉 > 關閉]****。
-
-接下來，請為所有其他帳戶 (使用者 2、使用者 3、使用者 4 和使用者 5) 重複先前程序的步驟 8 至 11。
-  
-> [!NOTE]
-> Microsoft 365 E5 試用版訂閱的期限是 30 天。 在永久測試環境中，將此試用訂閱轉換為具少數授權數的付費訂閱。 
-  
-### <a name="results"></a>結果
+## <a name="results"></a>結果
 
 測試環境現在擁有：
   

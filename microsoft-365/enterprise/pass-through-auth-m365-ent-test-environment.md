@@ -3,7 +3,7 @@ title: 適用於 Microsoft 365 測試環境的傳遞驗證
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/13/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定適用於 Microsoft 365 測試環境的傳遞驗證。
-ms.openlocfilehash: 98e0ad4b216fdc3940c0077cb308d6271ffed678
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: ed21007932b455c4f24af83434af75d44e583574
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757720"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202314"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的傳遞驗證
 
@@ -78,13 +78,13 @@ ms.locfileid: "38757720"
 
 10. 按一下 [傳遞驗證]****。[傳遞驗證]**** 窗格會列出您的驗證代理程式安裝所在的伺服器。您應該會在清單中看到 APP1。關閉 [傳遞驗證]**** 窗格。
 
-接下來，以 <strong>user1@testlab.</strong>\<您的公用網域> User1 帳戶的使用者名稱測試登入 Office 365 訂閱的能力。
+接下來，以 <strong>user1@testlab.</strong>\<您的公用網域> User1 帳戶的使用者名稱測試登入訂閱的能力。
 
-1. 從 APP1 登出 Office 365，然後再次登入，這次指定不同的帳戶。
+1. 從 APP1 登出，然後再次登入，這次指定不同的帳戶。
 
 2. 當系統提示輸入使用者名稱和密碼時，指定 <strong>user1@testlab.</strong>\<您的公用網域> 和 User1 密碼。 您應該可以用 User1 的身分成功登入。
 
-請注意，User1 雖具有 TESTLAB AD DS 網域的網域管理員權限，但並不是 Office 365 全域管理員。 因此，您不會看到 [管理員]**** 圖示選項。
+請注意，User1 雖具有 TESTLAB AD DS 網域的網域管理員權限，但並不是全域管理員。 因此，您不會看到 [管理員]**** 圖示選項。
 
 以下是您產生的組態：
 
@@ -106,5 +106,3 @@ ms.locfileid: "38757720"
 [部署 Microsoft 365 企業版](deploy-microsoft-365-enterprise.md)
 
 [Microsoft 365 企業版文件](https://docs.microsoft.com/microsoft-365-enterprise/)
-
-

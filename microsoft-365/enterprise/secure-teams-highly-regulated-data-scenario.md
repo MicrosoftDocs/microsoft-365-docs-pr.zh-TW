@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立安全小組來儲存您最重要且最敏感的檔案。
-ms.openlocfilehash: d875c3148a019774e038d18a75bb6fb2c2413463
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: cc29bbc076bf4d66593f785a1e4d1f881a530d83
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699763"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202424"
 ---
 # <a name="teams-for-highly-regulated-data"></a>適用於高度管制資料的 Microsoft Teams
 
@@ -213,6 +213,12 @@ ms.locfileid: "38699763"
   您可以在 SharePoint 檢視資料夾，然後透過 [新增欄]**** 的 [顯示/隱藏欄]**** 選項新增 [敏感度]**** 欄，查看哪些檔案有被指派標籤。
 
 視需要重新訓練您的使用者。
+
+## <a name="demonstrate-this-in-a-test-environment"></a>在測試環境中示範此動作
+
+若要建立自己的測試環境，以測試團隊是否有敏感性和高度機密的檔案，請參閱[這些指示](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment)。 
+
+![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
 
 ## <a name="how-the-contoso-corporation-used-a-secure-team-for-a-top-secret-project"></a>Contoso Corporation 如何使用安全小組來進行最機密的專案
 
