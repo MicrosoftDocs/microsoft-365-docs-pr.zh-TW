@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 適用於系統管理員：了解在安全性與合規性中心使用「匯入」服務來將電子郵件資料 (PST 檔案) 大量匯入至 Exchange Online 的使用者信箱。 本主題提供常見問題集，並說明 PST 匯入程序的運作方式。
-ms.openlocfilehash: 4682114ad150f818dfe39fe662bc3440d655e4ea
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 948ba22ff88b72a3af92edb39bfdc28cfde4c385
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076980"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39218838"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>將組織 PST 檔案匯入至 Office 365 概觀
 
@@ -96,7 +96,7 @@ ms.locfileid: "37076980"
     
   - 使用安全性與合規性中心的[保留原則](retention-policies.md)來控制信箱內容的保留時間，並在保留期間結束後刪除內容。 
 
-  - 使用[監督原則](supervision-policies.md)檢查郵件，以確認郵件符合郵件標準的規範，並新增分類類型。
+  - 使用[通訊合規性原則](communication-compliance.md)檢查郵件，以確認郵件符合郵件標準的規範，並新增分類類型。
     
 - 將資料匯入 Office 365 可協助防止資料遺失。 匯入 Office 365 的電子郵件資料會繼承 Exchange Online 的高可用性功能。
     
