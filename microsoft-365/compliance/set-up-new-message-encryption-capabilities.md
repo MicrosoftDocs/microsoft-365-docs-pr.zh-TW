@@ -15,46 +15,41 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 新的 Office 365 郵件加密功能建置在 Azure 資訊保護上，您的組織可以與組織內部和外部的人員使用受保護的電子郵件通訊。 全新的 OME 功能可與其他 Office 365 組織、Outlook.com、Gmail 及其他電子郵件服務搭配運作。
-ms.openlocfilehash: 835b1d6f40868684536dbea8f75dab0665950210
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c772151250d30e62a3f2689df5cd853536af3ede
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077515"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "39218732"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>設定全新的 Office 365 郵件加密功能
 
 新的 Office 365 郵件加密 (OME) 功能可讓組織與任何裝置上的任何人共用受保護的電子郵件。 使用者可以與其他 Office 365 組織以及使用 Outlook.com、Gmail 和其他電子郵件服務的非 Office 365 客戶交換受保護的郵件。
 
-||
-|:-----|
-|本文屬於有關 Office 365 郵件加密的較大系列文件的一部分。 本文章適用於系統管理員和 IT 專業人員。 如果您只是在尋找有關傳送或接收加密郵件的相關資訊，請參閱 [Office 365 郵件加密 (OME)](ome.md) 中的文章清單，並找出最適合您需求的文章。 |
-||
-
 遵循下列步驟以確保新的 OME 功能可在您的 Office 365 組織中使用。
 
 ## <a name="verify-that-azure-rights-management-is-active"></a>驗證 Azure 版權管理作用中
 
-全新的 OME 功能利用 [Azure 版權管理服務 (Azure RMS)](https://docs.microsoft.com/zh-TW/azure/information-protection/what-is-information-protection) 中的保護功能，它是 [Azure 資訊保護](https://docs.microsoft.com/zh-TW/azure/information-protection/what-is-azure-rms)用來透過加密和存取控制保護電子郵件和文件的技術。
+全新的 OME 功能利用 [Azure 版權管理服務 (Azure RMS)](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) 中的保護功能，它是 [Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)用來透過加密和存取控制保護電子郵件和文件的技術。
 
-使用全新 OME 功能的唯一先決條件是必須在組織的租用戶中啟用 [Azure 版權管理](https://docs.microsoft.com/zh-TW/azure/information-protection/what-is-azure-rms)。 如果是，Office 365 會自動啟用新的 OME 功能，您不需要採取任何動作。
+使用全新 OME 功能的唯一先決條件是必須在組織的租用戶中啟用 [Azure 版權管理](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)。 如果是，Office 365 會自動啟用新的 OME 功能，您不需要採取任何動作。
 
-Azure RMS 也會對多數合格方案自動啟用，因此您也不需要對此採取任何動作。 如需詳細資訊，請參閱[啟用 Azure 版權管理](https://docs.microsoft.com/en-gb/azure/information-protection/activate-service)。
+Azure RMS 也會對多數合格方案自動啟用，因此您也不需要對此採取任何動作。 如需詳細資訊，請參閱[啟用 Azure 版權管理](https://docs.microsoft.com/azure/information-protection/activate-service)。
 
 >[!IMPORTANT]
->如果您使用 Active Directory 版權管理服務 (AD RMS) 搭配 Exchange Online，您需要先[移轉至 Azure 資訊保護](https://docs.microsoft.com/zh-TW/azure/information-protection/migrate-from-ad-rms-to-azure-rms)，之後才能使用新的 OME 功能。 OME 與 AD RMS 不相容。  
+>如果您使用 Active Directory 版權管理服務 (AD RMS) 搭配 Exchange Online，您需要先[移轉至 Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms)，之後才能使用新的 OME 功能。 OME 與 AD RMS 不相容。  
 
 如需詳細資訊，請參閱：
 
 - [要使用全新的 OME 功能，我需要什麼訂閱？](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities)可檢查您的訂閱方案是否包含 Azure 資訊保護 (其中包含 Azure RMS 功能)。
-- [Azure 資訊保護](https://azure.microsoft.com/zh-TW/services/information-protection/)可取得購買合格訂閱的相關資訊。  
+- [Azure 資訊保護](https://azure.microsoft.com/services/information-protection/)可取得購買合格訂閱的相關資訊。  
 
 ### <a name="manually-activating-azure-rights-management"></a>手動啟用 Azure 版權管理
 
 如果您已停用 Azure RMS，或如果它因任何原因無法自動啟用，您可以在以下位置手動啟用：
 
-- **Microsoft 365 系統管理中心**：如需相關指示，請參閱[如何從系統管理中心啟用 Azure 版權管理](https://docs.microsoft.com/zh-TW/azure/information-protection/activate-office365)。
-- **Azure 入口網站**：如需相關指示，請參閱[如何從 Azure 入口網站中啟用 Azure 版權管理](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure)。
+- **Microsoft 365 系統管理中心**：如需相關指示，請參閱[如何從系統管理中心啟用 Azure 版權管理](https://docs.microsoft.com/azure/information-protection/activate-office365)。
+- **Azure 入口網站**：如需相關指示，請參閱[如何從 Azure 入口網站中啟用 Azure 版權管理](https://docs.microsoft.com/azure/information-protection/activate-azure)。
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>設定 Azure 資訊保護租用戶金鑰的管理
 
@@ -64,9 +59,9 @@ Azure RMS 也會對多數合格方案自動啟用，因此您也不需要對此�
 
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>在 Exchange Online PowerShell 中驗證 新的 OME 設定
 
-您可以驗證您的 Office 365 租用戶已正確設定以使用 [Exchange Online PowerShell](https://docs.microsoft.com/zh-TW/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) 中的新 OME 功能。
+您可以驗證您的 Office 365 租用戶已正確設定以使用 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) 中的新 OME 功能。
   
-1. 使用具有 Office 365 租用戶中全域系統管理員權限的帳戶[連線至 Exchange Online PowerShell](https://docs.microsoft.com/zh-TW/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+1. 使用具有 Office 365 租用戶中全域系統管理員權限的帳戶[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
 2. 執行 Get-IRMConfiguration Cmdlet。
 
@@ -104,7 +99,7 @@ Azure RMS 也會對多數合格方案自動啟用，因此您也不需要對此�
 
    - 您的 Office 365 組織名稱將取代 *Contoso*。
 
-   - 預設範本名稱可能與上方顯示的不同。 如需詳細資訊，請參閱[設定及管理 Azure 資訊保護的範本](https://docs.microsoft.com/zh-TW/azure/information-protection/configure-policy-templates)。
+   - 預設範本名稱可能與上方顯示的不同。 如需詳細資訊，請參閱[設定及管理 Azure 資訊保護的範本](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)。
 
 4. 移除 Remove-PSSession Cmdlet 來與版權管理服務中斷連線。
 
