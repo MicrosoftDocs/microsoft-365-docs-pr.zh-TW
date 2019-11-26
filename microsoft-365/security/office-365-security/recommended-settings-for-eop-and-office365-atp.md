@@ -13,12 +13,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) 和進階威脅防護 (ATP) 的安全性設定的最佳做法是什麼？ 標準保護目前建議是什麼？ 如果您想要更嚴格應該使用什麼？ 以及哪些額外讓如果您也可以使用進階威脅防護 (ATP)？
-ms.openlocfilehash: d49f465aa66cd3c720e83b28569da2770300067e
-ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
+ms.openlocfilehash: 895715c35dd124bbcea56ed0eb479cfc4281d157
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39204253"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257548"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全的建議的設定
 
@@ -137,7 +137,7 @@ EOP 客戶取得基本反網路釣魚如先前所述，但 Office 365 ATP 包含
 |EnableAuthenticationSafetyTip|True|True|此設定只有在 PowerShell|
 |EnableAuthenticationSoftPassSafetyTip|False|True|此設定只有在 PowerShell|
 |EnableSuspiciousSafetyTip|False|True|此設定只有在 PowerShell|
-|TreatSoftPassAsAuthenticated|對|錯|此設定只有在 PowerShell|
+|TreatSoftPassAsAuthenticated|對|False|此設定只有在 PowerShell|
 
 |進階的設定安全性功能名稱|標準|嚴格|留言|
 |---------|---------|---------|---------|
@@ -164,24 +164,3 @@ EOP 客戶取得基本反網路釣魚如先前所述，但 Office 365 ATP 包含
 |偵測時重新導向附件|已啟用|已啟用|用知道如何判斷附件為惡意程式碼或非安全性系統管理員重新導向至電子郵件地址|
 |ATP 安全附件回應如果惡意程式碼掃描附件的逾時或錯誤，就會發生|已啟用|已啟用||
 
-## <a name="miscellaneous-settings"></a>其他設定
-
-這些設定涵蓋的功能不一定符合上述的特定類別的範圍。 某些設定位於外部安全性 & 合規性中心。
-
-安全性功能名稱|標準|嚴格|留言|
-|---------|---------|---------|---------|
-|[在 Office 365 中設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|是|是||
-|[使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)|是|是||
-|[在 Office 365 中使用 DMARC 來驗證電子郵件](use-dmarc-to-validate-email.md)|是|是|使用巨集指令 = 隔離標準，以及動作的嚴格 = 拒絕。|
-|部署報告郵件附加元件，以改善使用者報告的可疑的電子郵件|是|是||
-|排程惡意軟體和垃圾郵件報告|是|是||
-|自動轉寄至外部網域應該不允許或監視|是|是||
-|應啟用整合的稽核|是|是||
-|IMAP 連線到信箱|停用|停用||
-|POP 信箱連線能力|停用|停用||
-|SMTP 驗證送出至信箱|停用|停用||
-|EWS 連線到信箱|停用|停用||
-|PowerShell 的連線|停用|停用||
-|Whitelist 寄件者盡可能使用詐騙智慧|是|是||
-|目錄架構邊緣封鎖 (DBEB)|已啟用|已啟用|網域類型 = 代表性頁面|
-|[設定所有的系統管理員帳戶的多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|已啟用|已啟用||
