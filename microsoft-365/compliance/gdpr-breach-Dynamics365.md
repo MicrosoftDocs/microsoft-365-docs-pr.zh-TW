@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 1cd1a73395a7bfeb190f8a31589c27bb95312484
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 92979fd66ac2d51c48b7a0836be5eb1133ae242a
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982334"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39266106"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>GDPR 規定的 Dynamics 365 和外洩通知
 
@@ -71,7 +73,7 @@ Microsoft 會判斷功能性影響、復原能力和事件的資訊影響，來�
 
 安全性回應小組會與 Microsoft Dynamics 365 安全性工程師及主題專家 (SME) 合作，根據證據的事實資料將事件分類。安全性事件可以歸類為：
 
-- **誤判：** 事件符合偵測準則，但經查明其實是正常商業活動的一部分，且可能需要進行篩選。服務小組會找出誤判的根本原因，並以系統化的方式視需要運用偵測來源和進行微調，<span id="_Toc350859432" class="anchor"></span>來解決這些問題。
+- **誤判：** 事件符合偵測準則，但經查明其實是正常商業活動的一部分，且可能需要進行篩選。 服務小組會找出誤判的根本原因，並以系統化的方式視需要運用偵測來源和進行微調，來解決這些問題。
 - **安全性事件：** 有人非法存取任何儲存在 Microsoft 設備或 Microsoft 設施上的客戶資料或支援資料，或未經授權存取這類設備或設施，進而造成客戶資料或支援資料遺失、洩漏，或變更的事件。
 - **須向客戶報告的安全性/ 隱私權事件 (CRSPI)：** 有人非法或未經授權存取或使用 Microsoft 系統、設備或設施，導致客戶資料洩漏、修改或遺失。
 - **隱私權事件：** 涉及個人資料安全性事件的子類型。 處理流程與安全性事件並無不同。
@@ -97,7 +99,7 @@ Microsoft Dynamics 365 可提供客戶詳細資訊，讓他們能執行內部調
 
 系統會以 Microsoft 選取的任何方式 (包括透過電子郵件)，將個人資料外洩的通知傳送給客戶。系統會將資料外洩的通知傳送至 Office 安全中心中提供的客戶連絡人/系統管理員清單 (僅限受影響租用戶)，此清單可由客戶/租用戶系統管理員進行設定。為了確保可順利傳送通知，客戶有責任確保每個訂用帳戶和線上服務入口網站上的管理連絡人資訊是正確的。
 
-Microsoft Dynamics 365 小組也可以選擇通知客戶服務 (CSS) 和客戶帳戶管理員 (AM)，或技術帳戶管理員 (TAM) 等其他 Microsoft 人員。這些人員通常與客戶有密切的關係，也有助於快速進行補救。<span id="_Appendix_A" class="anchor"></span>
+Microsoft Dynamics 365 小組也可以選擇通知客服 (CSS) 和客戶專案經理 (AM)，或技術支援專案經理 (TAM) 等其他 Microsoft 人員。 這些人員通常與客戶有密切的關係，也有助於快速進行補救。
 
 ## <a name="learn-more"></a>深入了解
 
