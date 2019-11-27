@@ -1,7 +1,7 @@
 ---
 title: 事件導向保留的概觀
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留標籤，您可以讓發生特定類型事件的時間作為保留期間的依據。事件會觸發啟動保留期間，具有套用至該類型事件之保留標籤的所有事件，會強制執行標籤的保留動作。事件導向保留通常是作為記錄管理處理程序的一部分。
-ms.openlocfilehash: 1f258296017734c80cb3719eb0b830593f69b220
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 08e4f8b5a761cfd80d1b2039c5e2b7a9c1fee981
+ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077051"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "39268452"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件導向保留的概觀
 
@@ -42,7 +42,7 @@ ms.locfileid: "37077051"
 - 根據事件的標籤通常會在保留期間結束時觸發處置檢閱，讓記錄管理員可以手動檢查並處置內容。如需詳細資訊，請參閱[處置檢閱概觀](disposition-reviews.md)。
     
 根據事件的標籤具有與 Office 365 中的任何標籤相同的功能。若要深入了解，請參閱[標籤概觀](labels.md)。
-    
+
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>了解事件類型、標籤、事件和資產識別碼之間的關聯性
 
 若要成功使用事件導向保留，請務必了解如下所示的事件類型、標籤、事件和資產識別碼之間的關聯性。圖表後有說明。
@@ -75,6 +75,9 @@ ms.locfileid: "37077051"
   
 ![設定事件導向保留工作流程的圖表](media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
   
+> [!TIP]
+> 請參閱[管理具有保留標籤之 SharePoint 文件的生命週期](auto-apply-retention-labels-scenario.md)，以了解使用 SharePoint 中受管理屬性來自動套用保留標籤和實作事件導向保留的詳細案例。
+
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>步驟 1：建立其保留期間根據事件的標籤
 
 在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或 Office 365 安全性 &amp; 合規性中心的左側導覽列中，選擇 ** [分類]** >  **[保留標籤]** >  **[標籤]** 索引標籤 > **[建立標籤]**。
@@ -103,7 +106,7 @@ ms.locfileid: "37077051"
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>步驟 3：發佈或自動套用標籤
 
-就像任何標籤一樣，您需要發佈或自動套用事件型標籤，以便手動或自動套用至內容。您可以在 **[分類]** > ** [保留標籤]** 頁面下進行這項操作。
+就像任何標籤，您必須發佈或自動套用以事件為基礎的標籤，這樣標籤才會手動或自動套用到內容。 您可以在 [分類]**** >  [保留標籤]**** 頁面下進行這項操作。
   
 ![發佈或自動套用保留標籤的選項](media/options-to-publish-auto-apply-retention-label.png)
 
@@ -123,9 +126,7 @@ ms.locfileid: "37077051"
   
 ### <a name="step-5-create-an-event"></a>步驟 5：建立事件
 
-發生該事件類型的特定執行個體時 - 例如，產品達到其生命週期的結尾 - 請移至安全性與合規性中心中的 [事件] 頁面，並且建立事件。您需要藉由建立它來手動觸發事件。
-  
-![安全性與合規性中心內的 [事件] 頁面](media/811bddfb-a7e9-4990-bf5e-abe0dfb91809.png)
+發生該事件類型的特定執行個體時 - 例如，產品達到其生命週期的結尾 - 請移至安全性 &amp; 合規性中心中的 [記錄管理]**** >  [事件]**** 頁面，並且建立事件。您需要藉由建立它來手動觸發事件。
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>步驟 6：選擇與步驟 2 中的標籤所使用相同的事件類型
 

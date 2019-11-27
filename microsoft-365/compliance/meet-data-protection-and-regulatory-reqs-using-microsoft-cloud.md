@@ -13,14 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Microsoft 服務信任入口網站中的合規性管理員會提供工具，可追蹤、實作及管理控制項，在針對 Microsoft 雲端服務 (例如 Office 365 和 Microsoft Azure) 進行測量時，可協助貴組織達到安全性和資料保護法規遵循產業標準 (例如 GDPR、ISO 27001 與 27018，與 HIPAA)。合規性管理員可協助監督資料保護和隱私策略的人員，讓貴組織可管理法規遵循和風險評估程序。
-ms.openlocfilehash: 95816ca13818d068066c4e3c7fce371f1eeccc25
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: 4c3f979caf2fdc3a2dc942e49fd33a09d2d1589a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417592"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "39268467"
 ---
-# <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>使用合規性管理員來符合使用Microsoft 雲端服務時的資料保護和法規要求
+# <a name="microsoft-compliance-manager-classic"></a>Microsoft 合規性管理員 (傳統)
+
+> [!NOTE]
+> 本文件將說明舊版產品。 使用者強烈建議使用此版本的合規性管理員，而非建議使用全新的 [Microsoft 合規性分數](compliance-score.md)。
 
  合規性管理員無法使用 21Vianet 運作的 Office 365、Office 365 德國、Office 365 U.S. Government Community High (GCC High)，或 Office 365 美國國防部。** 
   
@@ -831,4 +834,4 @@ ms.locfileid: "37417592"
 
 - [宣布合規性管理員正式公開上市](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
 
-- [Microsoft 365 提供資訊保護策略來協助符合 GDPR](https://blogs.office.com/zh-TW/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)
+- [Microsoft 365 提供資訊保護策略來協助符合 GDPR](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)

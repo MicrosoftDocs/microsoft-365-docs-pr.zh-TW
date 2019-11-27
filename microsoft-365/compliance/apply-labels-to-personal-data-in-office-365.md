@@ -15,12 +15,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 Office 標籤做為 GDPR 保護計劃的一部分。
-ms.openlocfilehash: 518e5352861242bfbf9220f876edcb4b616493df
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 023d6e2d3db1b6ec844801598df1925f3660217f
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076742"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256910"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>將標籤套用至 Office 365 中的個人資料
 
@@ -78,7 +78,7 @@ ms.locfileid: "37076742"
 <p>. . . 至具有此標籤的文件 . . .</p>
 <p>客戶資料</p></td>
 <td align="left"><p>在任何獲批准的 SaaS App 中具有這些屬性的檔案 . . .</p>
-<p>選擇一或多個屬性：預先定義的 PII 屬性、Office 365 機密資訊類型、敏感度標籤 (AIP)、自訂運算式</p>
+<p>選擇一或多個屬性：預先定義的 PII 屬性、Office 365 敏感性資訊類型、敏感度標籤 (AIP)、自訂運算式</p>
 <p>。 。 。 在組織外共用時發出警示</p><p>附註：雲端 App 安全性目前不支援保留標籤。</td>
 </tr>
 <tr class="even">
@@ -119,9 +119,9 @@ ms.locfileid: "37076742"
 
 請確定實作標籤的計劃包括：
 
--   指定建立自動套用原則的優先順序。
+- 指定建立自動套用原則的優先順序。
 
--   在推出標籤供使用者手動套用之前，允許有足夠的時間自動套用這些標籤。最多可能需要 7 天，標籤才會套用至符合條件的所有內容。
+- 在推出標籤供使用者手動套用之前，允許有足夠的時間自動套用這些標籤。最多可能需要 7 天，標籤才會套用至符合條件的所有內容。
 
 ### <a name="example-priority-for-creating-the-auto-apply-policies"></a>建立自動套用原則的優先順序範例
 
@@ -198,8 +198,8 @@ ms.locfileid: "37076742"
 
 在此圖例中：
 
--   已建立「客戶資料」標籤。
+- 已建立「客戶資料」標籤。
 
--   已列出所需的敏感資訊類型範例：比利時國民編碼、信用卡號碼、克羅埃西亞身分證號碼、芬蘭國民身分證
+- 已列出所需的敏感資訊類型範例：比利時國民編碼、信用卡號碼、克羅埃西亞身分證號碼、芬蘭國民身分證
 
--   建立自動套用原則可將標籤「客戶資料」指派給任何檔案，其中包含您新增至原則的其中一個敏感資訊類型。
+- 建立自動套用原則可將標籤「客戶資料」指派給任何檔案，其中包含您新增至原則的其中一個敏感資訊類型。

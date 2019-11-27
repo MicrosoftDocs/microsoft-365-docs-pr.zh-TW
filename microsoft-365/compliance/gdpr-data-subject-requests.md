@@ -1,7 +1,7 @@
 ---
-title: GDPR 的資料主體要求
+title: GDPR 和 CCPA 的資料主體要求
 description: ''
-keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR
+keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,21 +9,25 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: dc4352ac14f42a227f1572b0c7f1442aa4dec838
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: f5ab5230cae7dcc31c487ecbc6a2bbdcbcaaa0dd
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078903"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39268455"
 ---
-# <a name="data-subject-requests-and-the-gdpr"></a>資料主體要求和 GDPR
+# <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>GDPR 與 CCPA 和資料主體要求
 
-針對為歐盟 (EU) 中的人們提供產品及服務或為歐盟居民收集和分析資料的組織，一般資料保護規定 (GDPR) 推出了新的規則，而無論您或您的企業位於何處。 您可以在 [GDPR 摘要主題](gdpr.md)中找到其他詳細資料。 <br><br>
+針對為歐盟 (EU) 中的人們提供產品及服務或為歐盟居民收集和分析資料的組織，一般資料保護規定 (GDPR) 推出了新的規則，而無論您或您的企業位於何處都必須遵守。 您可以在 [GDPR 摘要主題](gdpr.md)中找到其他詳細資料。
+
+同樣地，加州消費者隱私法 (CCPA) 為加州客戶提供隱私權和義務，包括與 GDPR 資料主體權利相似的權利，例如有權刪除、存取和接收 (可攜性) 其個人資訊。  CCPA 也提供特定接露、針對選擇行使權時的歧視提供保護，以及特定資料傳輸的「選擇退出/選擇加入」需求分類為「銷售」。  <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI] 
 
-本文件會引導您了解依據 GDPR 使用 Microsoft 產品和服務時，完成資料主體要求 (DSR) 的相關資訊。
+本文件會引導您了解依據 GDPR 和 CCPA 使用 Microsoft 產品和服務時，完成資料主體要求 (DSR) 的相關資訊。
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -37,14 +41,16 @@ ms.locfileid: "35078903"
 
 本文件中使用的 GDPR 術語的實用定義：
 
-- *資料控制者 (控制者)*：法律人員、公開授權單位、公司或其他實體，不論單獨或聯合其他單位，會決定個人資料處理方式的用途及方式。  
-- *個人資料*和*資料主體*：與已識別或可識別的自然人 (資料主體) 相關的任何資訊；可識別的自然人為可直接或間接識別的個人。  
-- *處理者：* 自然人或法人、公家機關、公司，或代表控制者處理個人資料的其他主體。  
+- 資料控制者 (控制者)**：法律人員、公開授權單位、公司或其他實體，不論單獨或聯合其他單位，會決定個人資料處理方式的用途及方式。  
+- 個人資料** 和資料主體**：與已識別或可識別的自然人 (資料主體) 相關的任何資訊；可識別的自然人為可直接或間接識別的個人。  
+- 處理者：** 自然人或法人、公家機關、公司，或代表控制者處理個人資料的其他主體。  
 - *客戶資料：* 在公司運作的日常作業中產生並儲存的資料。
 
 ## <a name="what-is-a-dsr"></a>什麼是 DSR？
 
 一般資料保護規定 (GDPR) 賦予人們 (在此法規中稱為資料主體) 權利來管理雇主或其他類型的代理機構或組織 (稱為資料控制者或僅稱為控制者) 所收集的個人資料。 GDPR 為資料主體提供其個人資料的特定權限；這些權限包括取得個人資料副本、要求對該資料的變更、限制對該資料的處理、刪除該資料，或是以電子格式接收該資料以移至另一個控制者。
+
+加州消費者隱私法 (CCPA) 為加州客戶提供隱私權和義務，包括與 GDPR 資料主體權利相似的權利，例如有權刪除、存取和接收 (可攜性) 其個人資訊。  
 
 身為控制者的您，有義務盡快考慮每項 DSR，並採取要求的動作來提供實質回應，或針對控制者無法滿足 DSR 的原因進行說明。 控制者應向其法律或法務遵循顧問諮詢有關適當處置任何特定 DSR 的方法。
 

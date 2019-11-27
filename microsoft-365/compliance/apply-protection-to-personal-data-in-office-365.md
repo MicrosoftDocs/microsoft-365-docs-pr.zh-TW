@@ -16,13 +16,13 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: 了解如何使用 DLP 原則來保護 Office 365 中的個人資料。
-ms.openlocfilehash: 12d6de9b8012062e26daec922d5c55fa0f52381a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+description: 了解如何使用資料外洩防護 (DLP) 原則來保護 Office 365 中的個人資料。
+ms.openlocfilehash: e3f7bdc589b34da0aad8baabd5b54bcfd59f25b9
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38708067"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256780"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>將保護套用至 Office 365 中的個人資料
 
@@ -62,7 +62,7 @@ Office 365 中個人資訊的保護，包括使用資料外洩防護功能。 �
 
 Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐盟資料主旨相關的個人資料。Office 365 DLP 可以通知規範小組，個人資訊在 SharePoint Online 和商務用 OneDrive 的儲存位置，或使用者何時傳送包含個人資訊的電子郵件。使用與歐盟居民相關的個人資訊時，DLP 也可以為您的員工提供原則提示。
 
-教育並認知歐盟居民資料應儲存在您環境的何處中，以及允許您的員工如何處理這些資料，這代表一種使用 Office 365 DLP 的資訊保護層級。通常，已有權存取這類資訊的員工需要這個存取權，才能執行其日常工作。實施 DLP 原則來協助遵循 GDPR，可能不需要限制存取。
+教育並認知歐盟居民資料應儲存在您環境的何處中，以及允許您的員工如何處理這些資料，這代表一種使用 Office 365 DLP 的資訊保護層級。通常，已有權存取這類資訊的員工需要這個存取權，才能進行其日常工作。實施 DLP 原則來協助遵循 GDPR，可能不需要限制存取。
 
 不過，遵循 GDPR 通常包含組織的風險型評估，其依循法律與資訊安全觀點、何種類型與個人資訊儲存位置的識別，以及是否有儲存及處理該資訊的法律理由。根據此評估，實作原則來保護組織及遵循 GDPR，可能需要移除員工對文件的存取，而此文件包含歐盟資料主旨的個人資訊。若需要進一步保護，可以另外設定 DLP 保護。
 
@@ -100,7 +100,7 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 <tr class="odd">
 <td align="left">阻止內部及外部共用</td>
 <td align="left"><p>在內部或外部共用此資料時，即會限制存取 SharePoint 和商務用 OneDrive 中包含該內容的文件。</p>
-<p>阻止將包含此資料的電子郵件同時傳送至內部和外部收件者。</p></td>
+<p>阻止包含此資料的電子郵件同時傳送至內部和外部收件者。</p></td>
 <td align="left"><p>阻止內部及外部共用此資料</p>
 <p>員工可能會無法完成需要使用此資料的工作。</p>
 <p>您可以檢閱內部或外部共用資料的 DLP 報告，並決定是否需要使用者訓練。</p></td>
@@ -156,11 +156,11 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 
 所有位置包括
 
--   SharePoint Online
+- SharePoint Online
 
--   OneDrive for商務用帳戶
+- OneDrive for商務用帳戶
 
--   Exchange 信箱
+- Exchange 信箱
 
 由於內容搜尋目前無法讓您利用電子郵件測試敏感資訊類型，請考慮為 Exchange 建立個別原則 (每一個原則中都有敏感資訊類型的子集)，以及監視這些原則的推出。
 
