@@ -10,17 +10,18 @@ localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 9885463e61c36713cbd7be82ac1ef2caaee70e7a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 43ab1083ad028ee53ad355a84fda17b02decbc70
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076201"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "39233516"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -86,13 +87,13 @@ ms.locfileid: "37076201"
 
 - 如果您想要關閉貴組織在 Office 365 中的稽核記錄搜尋功能，您可以在與 Exchange Online 組織連線的遠端 PowerShell 中執行下列命令：
 
-  ```
+  ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
   ```
 
     若要再次開啟稽核搜尋，您可以在 Exchange Online PowerShell 中執行下列命令：
 
-  ```
+  ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
   ```
 
@@ -213,6 +214,9 @@ ms.locfileid: "37076201"
 
 - **IP 位址：** 記錄活動時所使用的裝置之 IP 位址。 IP 位址會以 IPv4 或 IPv6 位址格式顯示。
 
+   > [!NOTE]
+  > 針對某些服務，此欄位中顯示的值可能是代表使用者呼叫服務的受信任應用程式 (例如 Office 網頁版應用程式) 的 IP 位址，而不是執行活動的人員使用之裝置的 IP 位址。 此外，針對 Azure Active Directory 相關事件的系統管理員活動 (或由系統帳戶執行的活動)，不會記錄 IP 位址，且此欄位中顯示的值為 `null`。
+
 - **使用者**：執行動作並觸發事件的使用者 (或服務帳戶)。
 
 - **活動**：使用者執行的活動。 這個值對應您在 [活動]**** 下拉式清單中選取的活動。 若是來自 Exchange 系統管理員稽核記錄的事件，此欄中的這個值則是 Exchange Cmdlet。
@@ -296,8 +300,9 @@ ms.locfileid: "37076201"
 |[使用者管理活動](#user-administration-activities)|[Azure AD 群組管理活動](#azure-ad-group-administration-activities)|[應用程式管理活動](#application-administration-activities)|
 |[角色管理活動](#role-administration-activities)|[目錄管理活動](#directory-administration-activities)|[電子文件探索活動](#ediscovery-activities)|
 |[進階電子文件探索活動](#advanced-ediscovery-activities)|[Power BI 活動](#power-bi-activities)|[Microsoft 工作場所分析](#microsoft-workplace-analytics-activities)|
-|[Microsoft Teams 活動](#microsoft-teams-activities)|[Yammer 活動](#yammer-activities)|[Microsoft Flow 活動](#microsoft-flow-activities)|
-|[Microsoft PowerApps 活動](#microsoft-powerapps)|[Microsoft Stream 活動](#microsoft-stream-activities)|[Exchange 系統管理員活動](#exchange-admin-audit-log)|
+|[Microsoft Teams 活動](#microsoft-teams-activities)|[Microsoft Teams 醫療保健活動](#microsoft-teams-healthcare-activities)|[Yammer 活動](#yammer-activities)|
+|[Microsoft Flow 活動](#microsoft-flow-activities)|[Microsoft PowerApps 活動](#microsoft-powerapps)|[Microsoft Stream 活動](#microsoft-stream-activities)|
+[Exchange 系統管理員活動](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>檔案和頁面活動
@@ -439,7 +444,7 @@ ms.locfileid: "37076201"
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
-|已新增網站集合系統管理員|SiteCollectionAdminAdded|網站集合系統管理員或擁有者新增一位人員來作為網站的網站集合管理員。 網站集合系統管理員擁有網站集合及所有子網站的完全控制權限。 當系統管理員讓自己可存取使用者的 OneDrive 帳戶時 (藉由在 SharePoint 系統管理員中心編輯使用者設定檔，或[使用 Microsoft 365 系統管理員中心](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents))，也會記錄此活動。|
+|已新增網站集合系統管理員|SiteCollectionAdminAdded|網站集合系統管理員或擁有者新增一位人員來作為網站的網站集合管理員。 網站集合系統管理員擁有網站集合及所有子網站的完全控制權限。 當系統管理員讓自己可存取使用者的 OneDrive 帳戶時 (藉由在 SharePoint 系統管理中心編輯使用者設定檔，或[使用 Microsoft 365 系統管理中心](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data))，也會記錄此活動。|
 |已將使用者或群組新增至 SharePoint 群組|AddedToGroup|使用者已新增成員或來賓至 SharePoint 群組。 這可能是刻意的動作，或另一個活動的結果 (例如共用事件)。|
 |已中斷權限等級繼承|PermissionLevelsInheritanceBroken|項目已變更，因此無法從其上層項目繼承權限等級。|
 |已中斷共用繼承|SharingInheritanceBroken|項目已變更，因此無法從其上層項目繼承共用權限。|
@@ -558,7 +563,7 @@ ms.locfileid: "37076201"
 |已變更使用者密碼|變更使用者密碼|系統管理員已變更使用者的密碼。|
 |已刪除使用者|刪除使用者|已刪除 Office 365 使用者帳戶。|
 |重設使用者密碼|重設使用者密碼|系統管理員已重設使用者的密碼。|
-|已設定強制使用者變更密碼的屬性|設定強制變更使用者密碼|系統管理員已設定在使用者下次登入 Office 365 時，強制使用者變更密碼的屬性。|
+|已設定強制使用者變更密碼的屬性|設定強制變更使用者密碼|系統管理員已設定強制使用者在使用者下次登入 Office 365 時變更密碼的屬性。|
 |設定授權屬性|設定授權屬性|系統管理員修改已指派給使用者的授權屬性。|
 |已更新使用者|更新使用者|系統管理員變更使用者帳戶的一個或多個屬性。 如需可更新的使用者屬性清單，請參閱 [Azure Active Directory 稽核報告事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)中的＜更新使用者屬性＞一節。|
 ||||
@@ -680,7 +685,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 
 ### <a name="microsoft-workplace-analytics-activities"></a>Microsoft 工作場所分析活動
 
-工作場所分析可針對群組在 Office 365 組織間共同作業的方式提供見解。 下表列出在工作場所分析中獲派系統管理員角色或分析師角色的使用者所執行的活動。 獲派分析師角色的使用者具有所有服務功能的完整存取權，並可使用產品來進行分析。 獲派系統管理員角色的使用者可以設定隱私權設定與系統預設值，並可以準備、上傳及驗證工作場所分析中的組織資料。 如需詳細資訊，請參閱[工作場所分析](https://docs.microsoft.com/zh-TW/workplace-analytics/index-orig)。
+工作場所分析可針對群組在 Office 365 組織間共同作業的方式提供見解。 下表列出在工作場所分析中獲派系統管理員角色或分析師角色的使用者所執行的活動。 獲派分析師角色的使用者具有所有服務功能的完整存取權，並可使用產品來進行分析。 獲派系統管理員角色的使用者可以設定隱私權設定與系統預設值，並可以準備、上傳及驗證工作場所分析中的組織資料。 如需詳細資訊，請參閱[工作場所分析](https://docs.microsoft.com/workplace-analytics/index-orig)。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
@@ -724,8 +729,16 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 |已移除索引標籤|TabRemoved|使用者將索引標籤從頻道中移除。|
 |已更新連接器|ConnectorUpdated|使用者已修改頻道中的連接器。|
 |已更新索引標籤|TabUpdated|使用者已修改頻道中的索引標籤。|
-|使用者已登入 Teams|TeamsSessionStarted|使用者登入 Microsoft Teams 用戶端。|
+|使用者已登入 Teams|TeamsSessionStarted|使用者登入 Microsoft Teams 用戶端。 此事件不會擷取權杖重新整理活動。|
 ||||
+
+### <a name="microsoft-teams-healthcare-activities"></a>Microsoft Teams 醫療保健活動
+
+如果貴組織正在 Microsoft Teams 中使用[病患應用程式](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview)，則可以在稽核記錄中搜尋與病患應用程式相關的活動。 如果您的環境設定為支援病患應用程式，則**活動**選擇器清單中提供了這些活動的其他活動群組。
+
+![活動選擇器清單中的 Microsoft Teams 醫療保健活動](media/TeamsHealthcareAuditActivities.png)
+
+如需有關病患應用程式活動的說明，請參閱[病患應用程式的稽核記錄](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit)。
 
 ### <a name="yammer-activities"></a>Yammer 活動
 
@@ -758,7 +771,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 
-您可以在 PowerApps 中搜尋應用程式相關活動的稽核記錄。 這些活動包括建立、啟動和發佈應用程式。 將權限指派給應用程式也會經過稽核。 如需所有 PowerApps 活動的說明，請參閱 [PowerApps 的活動記錄](https://docs.microsoft.com/zh-TW/power-platform/admin/logging-powerapps#what-events-are-audited)。
+您可以在 PowerApps 中搜尋應用程式相關活動的稽核記錄。 這些活動包括建立、啟動和發佈應用程式。 將權限指派給應用程式也會經過稽核。 如需所有 PowerApps 活動的說明，請參閱 [PowerApps 的活動記錄](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited)。
 
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream 活動
 
@@ -840,7 +853,7 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
 
 **Office 365 稽核資料可在各個地理位置間流通嗎？**
 
-否。 我們目前將稽核管線部署在 NA (北美洲)、EMEA (歐洲、中東及非洲) 和 APAC (亞太地區) 區域中。 不過，我們可以在這些區域間流通資料來達到負載平衡，並只有在推出即時站台時才可這麼做。 當我們執行這些活動時，資料傳輸會經過加密處理。
+否。 我們目前將稽核管線部署在 NA (北美洲)、EMEA (歐洲、中東及非洲) 和 APAC (亞太地區) 區域中。 不過，我們可以在這些區域間流通資料來達到負載平衡，並只能在即時網站期間才可這麼做。 當我們執行這些活動時，資料傳輸會經過加密處理。
 
 **稽核資料會加密嗎？**
 

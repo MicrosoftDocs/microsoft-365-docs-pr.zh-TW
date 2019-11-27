@@ -13,13 +13,13 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
-description: 系統管理員可以從匯入協力廠商資料社交媒體平台、 立即訊息平台，以及文件共同作業平台到 Office 365 組織中的信箱。 這可讓您封存 Facebook、 Twitter 和其他 Office 365 中的協力廠商資料來源的資料。 然後您可以使用或協力廠商資料套用 Office 365 符合性功能 （例如合法持有、 eDiscovery、 就地封存和保留原則）。
-ms.openlocfilehash: 1e4cc8fc322b4e7e447cc053bd1b0a74ffe40aeb
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+description: 系統管理員可以從匯入協力廠商資料社交媒體平台、 立即訊息平台，以及文件共同作業平台到 Office 365 組織中的信箱。 這可讓您封存 Facebook、 Twitter 和其他 Office 365 中的協力廠商資料來源的資料。 然後您可以使用或協力廠商資料套用 Office 365 符合性功能 （例如法律保留、 eDiscovery、 就地封存和保留原則）。
+ms.openlocfilehash: 084cacf1c2bef8b5786e6dba804f9a1e87001338
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685400"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615583"
 ---
 # <a name="archive-third-party-data-in-office-365"></a>在 Office 365 中封存第三方資料
 
@@ -35,7 +35,7 @@ Office 365 可讓系統管理員匯入及封存立即訊息平台，與文件共
     
 - **SMS/簡訊：** BlackBerry 
     
-協力廠商資料匯入之後，您可以將 Office 365 符合性功能 – 例如訴訟暫止狀態、 eDiscovery、 就地封存、 稽核、[通訊合規性](communication-compliance.md)和 Office 365 保留原則-套用此資料。 例如，當信箱處於訴訟暫止，會保留協力廠商資料。 您可以使用 Microsoft eDiscovery 工具來搜尋協力廠商資料。 或者，您可以將封存和保留原則套用至協力廠商資料如同您可以為 Microsoft 資料。 總之，封存在 Office 365 中的協力廠商資料可協助組織符合規範與政府法規的原則。
+協力廠商資料匯入之後，您可以套用 Office 365 合規性功能&mdash;例如訴訟暫止狀態、 eDiscovery、 就地封存、 稽核、[通訊合規性](communication-compliance.md)和 Office 365 保留原則&mdash;此資料。 例如，當信箱處於訴訟暫止，會保留協力廠商資料。 您可以使用 Microsoft eDiscovery 工具來搜尋協力廠商資料。 或者，您可以將封存和保留原則套用至協力廠商資料如同您可以為 Microsoft 資料。 總之，封存在 Office 365 中的協力廠商資料可協助組織符合規範與政府法規的原則。
 
 有兩種方式可匯入及封存 Office 365 中的協力廠商資料：
 
@@ -49,4 +49,4 @@ Office 365 可讓系統管理員匯入及封存立即訊息平台，與文件共
 
    - **立即 Bloomberg:** [設定要封存立即 Bloomberg 資料 Office 365 中的連接器](archive-instant-bloomberg-data.md)
 
-- **與 Microsoft 合作夥伴合作，：** 貴組織的運作方式與 Microsoft 合作夥伴，負責提供的自訂連接器，將會設定為從以規則為基礎的協力廠商資料來源擷取項目然後連線至 Microsoft 雲端由協力廠商 API 及這些項目匯入至 Office 365。 協力廠商連接器也會項目的內容從協力廠商資料來源將轉換成電子郵件訊息，並再將它們匯入至 Office 365 中的信箱。 您可以使用的協力廠商和此方法的逐步程序的清單，請參閱[與封存 Office 365 中的協力廠商資料合作夥伴合作](work-with-partner-to-archive-third-party-data.md)。
+- **與 Microsoft 合作夥伴合作，：** 貴組織的運作方式與 Microsoft 合作夥伴，負責提供的自訂連接器，將會設定為從以規則為基礎的協力廠商資料來源擷取項目然後連線至 Microsoft 雲端由協力廠商 API 及這些項目匯入至 Office 365。 協力廠商連接器也將協力廠商資料來源中的項目的內容轉換成電子郵件訊息，然後將它匯入至 Office 365 中的信箱。 您可以使用的協力廠商和此方法的逐步程序的清單，請參閱[與封存 Office 365 中的協力廠商資料合作夥伴合作](work-with-partner-to-archive-third-party-data.md)。

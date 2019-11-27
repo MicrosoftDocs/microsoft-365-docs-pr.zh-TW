@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: 723f1372b9214367985cc6b42c41e94c3f201b89
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: be2ba99f7779640df90c35101e96839fb87156d4
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685384"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615613"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance Manager （預覽）
 
@@ -39,7 +39,7 @@ ms.locfileid: "38685384"
 
 ## <a name="compliance-manager-relationships"></a>合規性管理員中的關聯
 
-合規性管理員中使用數個元件協助您符合您的合規性管理活動。 這些元件可以搭配使用，以提供完整的管理工作流程及簡明的合規性的稽核員 」 報告。
+合規性管理員會使用數個元件，協助您符合您的合規性管理活動。 這些元件可以搭配使用，以提供完整的管理工作流程及簡明的合規性的稽核員 」 報告。
 
 此圖顯示的合規性管理員中的主要元件之間的關係：
 
