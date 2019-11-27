@@ -13,12 +13,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) 和進階威脅防護 (ATP) 的安全性設定的最佳做法是什麼？ 標準保護目前建議是什麼？ 如果您想要更嚴格應該使用什麼？ 以及哪些額外讓如果您也可以使用進階威脅防護 (ATP)？
-ms.openlocfilehash: 895715c35dd124bbcea56ed0eb479cfc4281d157
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: fa88f80a0f7423a57850e2d8ad690f2472a23a7c
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257548"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615653"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全的建議的設定
 
@@ -41,7 +41,7 @@ ms.locfileid: "39257548"
 |網路釣魚電子郵件偵測巨集指令|隔離郵件|隔離郵件||
 |高信賴度 Phish 電子郵件偵測巨集指令|隔離郵件|隔離郵件||
 |大量電子郵件偵測巨集指令|將郵件移至垃圾郵件] 資料夾|隔離郵件||
-|將大量電子郵件閾值設定為|6|4||
+|將大量電子郵件閾值設定為|6|4|預設值是目前 7，但建議大部分組織 mvoe 它下，至少有 6|
 |隔離保留期限|30 天|30 天||
 |安全提示|開啟|開啟||
 |允許寄件者|無|無||
@@ -76,9 +76,9 @@ ms.locfileid: "39257548"
 
 |安全性功能名稱|標準|嚴格|留言|
 |---------|---------|---------|---------|
-|輸出垃圾郵件原則的收件者限制-外部每小時的限制|400|500||
-|輸出垃圾郵件原則的收件者限制-內部每小時的限制|800|1000||
-|輸出垃圾郵件原則的收件者限制-每日的限制|800|1000||
+|輸出垃圾郵件原則的收件者限制-外部每小時的限制|500|400||
+|輸出垃圾郵件原則的收件者限制-內部每小時的限制|1000|800||
+|輸出垃圾郵件原則的收件者限制-每日的限制|1000|800||
 |當使用者超過限制時的動作|禁止使用者傳送郵件|禁止使用者傳送郵件||
 
 ### <a name="eop-anti-malware-policy-settings"></a>EOP 反惡意程式碼原則設定
