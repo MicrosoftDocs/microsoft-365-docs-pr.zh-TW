@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: e41b28972dc2ada5c0591de0e73c04ea3306e039
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0d2edb2f7362fa8e8bea6ae82c417f61072bccff
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076638"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633612"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft Compliance Manager 和 GDPR
 
@@ -48,7 +48,7 @@ ms.locfileid: "37076638"
 
 ## <a name="export-a-report-of-account-data-history"></a>匯出帳戶資料歷程記錄的報告
 
-識別每個使用者帳戶，您可能會產生報告的相依性連結到此帳戶。 此資訊可讓您重新指派開啟動作項目或確保先前上傳的辨識項的存取。
+識別每個使用者帳戶，您可能會產生報告的相依性連結到帳戶。 此資訊可讓您重新指派開啟動作項目或確保先前上傳的辨識項的存取。
   
  若要產生並匯出報告：
   
@@ -69,6 +69,6 @@ ms.locfileid: "37076638"
   
 1. 選取 [**刪除**]。
 
-    會顯示確認對話方塊中，「*這將會移除所有控制項動作項目指派與所選使用者的文件上傳歷程記錄。此巨集指令是永久性動作。您是否確定要繼續？*」
+    確認] 對話方塊隨即顯示: 「*這將會移除所有控制項動作項目指派與所選使用者的文件上傳歷程記錄。此巨集指令是永久性動作。您是否確定要繼續？*」
 
 2. 若要選取 [**確定]** 繼續，否則請選擇**取消**。

@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 trainable 類別器是內容的的工具，您可以訓練，讓它正值與負值的範例，來查看辨識各種類型。 一旦訓練類別器並確認其結果是正確的您會使用它來搜尋整個組織內容、 分類它納入資料外洩防護 (DLP) 或保留原則或套用保留或敏感度標籤。
-ms.openlocfilehash: 6b8574b7c87f0b038c46894940cb8d15b152ab5c
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+description: Microsoft 365 trainable 類別器是內容的的工具，您可以訓練，讓它正值與負值的範例，來查看辨識各種類型。 類別器調校完成之後，您確認它的結果正確無誤。 然後您可以用它來搜尋整個組織的內容及分類它納入資料外洩防護 (DLP) 或保留原則或套用保留或敏感度標籤。
+ms.openlocfilehash: 458f7e6c9f15bac71cd3dadf2ed64e1c1f4ef1c5
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38690212"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633862"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>開始使用可訓練的分類器 (預覽)
 
@@ -25,7 +25,7 @@ ms.locfileid: "38690212"
 
 ## <a name="manually"></a>手動
 
-這需要人工 judgement 和巨集指令。 系統管理員可能是使用既有的標籤和敏感資訊類型或建立自己並將它們發行。 使用者與系統管理員將其套用至內容為他們發生。 然後可以保護內容，並管理其處理。
+此方法需要人工判斷和巨集指令。 系統管理員可能是使用既有的標籤和敏感資訊類型或建立自己並將它們發行。 使用者與系統管理員將其套用至內容為他們發生。 然後可以保護內容，並管理其處理。
 
 ## <a name="automated-pattern-matching"></a>自動的模式比對
 
@@ -36,11 +36,11 @@ ms.locfileid: "38690212"
 - 辨識項目，因為它是一項變異範本[（文件手指列印）](document-fingerprinting.md)
 - 使用管制的確切字串[（符合確切資料）](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。
 
-敏感度和保留標籤可以再自動套用的[資料外洩防護 (DLP)](data-loss-prevention-policies.md)和[保留原則](retention-policies.md)中，使該內容可供使用。
+若要讓內容可供使用中[資料外洩防護 (DLP)](data-loss-prevention-policies.md)和[保留原則](retention-policies.md)可以再是自動套用敏感度和保留標籤。
 
 ## <a name="trainable-classifiers"></a>Trainable 相關性
 
-此分類方法是特別適合的本質上，不 predisposed 來輕鬆地識別任一手動或自動模式比對方法的內容。 分類的這個方法是更多關於訓練器來識別哪些項目，不由 （模式比對） 的項目中的項目為基礎的項目。 類別器可學習如何識別類型的內容所要尋找之內容的範例數百您感興趣來分類。 您啟動饋送肯定都是從 [類別] 中的範例，然後它會處理那些，一旦您進行測試給予混合的比對和非比對的範例。 類別器然後進行您要建立新檔指定的任何項目落在類別預測。 您再來確認其結果，排序出 positive、 負號、 誤判和漏報以協助增進及其預測的正確性。 當您發佈受過訓練類別器時，它透過位置，例如 SharePoint Online、 Exchange 和 OneDrive 中的項目排序，並將內容分類。
+此分類方法是特別適用於不容易辨識，由任一手動或自動模式比對方法的內容。 分類的這個方法是更多關於訓練器來識別哪些項目，不由 （模式比對） 的項目中的項目為基礎的項目。 類別器可學習如何識別類型的內容可以查看數百個內容的範例您感興趣來分類。 您啟動饋送肯定都是類別中的範例。 它會處理那些，一旦您進行測試給予混合的比對和非比對的範例。 類別器接著讓預測想指定的任何項目是否落在類別，您正在建立的。 您然後確認它的結果，其排序出 positive、 負號、 誤判，以協助增進及其預測的正確性漏報中。 當您發佈受過訓練類別器時，它透過像 SharePoint Online、 Exchange 和 OneDrive 的位置中的項目排序，並將內容分類。
 
 > [!IMPORTANT]
 > 這兩種相關性可做為[自動套用保留標籤原則式根據條件](labels.md#applying-a-retention-label-automatically-based-on-conditions)和[通訊符合性](communication-compliance.md)條件。
@@ -59,12 +59,12 @@ ms.locfileid: "38690212"
 
 Microsoft 365 隨附六個準備好使用相關性：
 
-- **冒犯**： 偵測其包含 profanities、 slurs、 嘲諷和偽裝的運算式 （也就是具有相同的意義更冒犯性字詞運算式） 的文字項目。
-- **履歷表**： 偵測到項目是文字應徵者個人、 教育、 專業資格、 工作經驗和其他個人識別資訊的帳戶
-- **SourceCode**： 偵測其包含一組指示和陳述式廣泛使用電腦程式設計語言所撰寫的項目。
+- **冒犯**： 偵測到包含 profanities、 slurs、 嘲諷和偽裝的運算式 （也就是具有相同的意義更冒犯性字詞運算式） 的文字項目。
+- **履歷表**： 偵測到之應徵者個人、 教育、 專業資格、 工作經驗及其他個人識別資訊的文字帳戶的項目。
+- **SourceCode**： 偵測到項目包含一組指示和廣泛使用電腦程式設計語言所撰寫的陳述式。
 - **騷擾**： 偵測到特定類別的冒犯的語言文字項目與目標根據下列特性的一或多個個人的不良管理辦法： 競爭、 ethnicity、 宗教、 國家原點、 性別、 性別方向、 保留、 行動不便。
-- **褻瀆**： 偵測到特定類別的不良的語言文字項目中包含運算式，讓大多數人
-- **威脅**： 偵測到特定類別的威脅，從而認可暴力或執行實體損害或損壞的人員或屬性相關的不良的語言文字項目
+- **褻瀆**： 偵測到特定類別冒犯的語言文字包含的項目讓大多數人的運算式。
+- **威脅**： 偵測到特定類別的威脅，從而認可暴力或執行實體損害或損壞的人員或屬性相關的不良的語言文字項目。
 
 這些會出現在**Microsoft 365 合規性中心** > **資料分類 （預覽）** > **Trainable 相關性**檢視狀態的`Ready to use`。
 
@@ -88,7 +88,7 @@ Microsoft 365 隨附六個準備好使用相關性：
 
 #### <a name="process-flow-for-creating-trainable-classifiers"></a>建立 trainable 相關性的程序流程
 
-建立及發佈使用 trainable 類別器在合規性解決方案，例如保留原則及通訊監督遵循此流程。 如需詳細資訊，在建立 trainable 類別器，請參閱[建立 trainable 類別器](classifier-creating-a-trainable-classifier.md)。
+建立及發佈使用 trainable 類別器在合規性解決方案，例如保留原則和通訊監督，後面這個的流程。 如需詳細資訊，在建立 trainable 類別器，請參閱[建立 trainable 類別器](classifier-creating-a-trainable-classifier.md)。
 
 ![處理程序流程 trainable 類別器](media/classifier-trainable-classifier-flow.png)
 

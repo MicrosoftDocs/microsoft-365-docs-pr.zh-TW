@@ -12,17 +12,17 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
-description: 使用本文中的 Windows PowerShell 指令碼，以快速地複製現有的 Office 365 或 Microsoft 365 的合規性中心中 「 內容搜尋。 當您複製搜尋時、 （以新名稱） 的新搜尋會建立包含原始的搜尋相同的屬性。 然後您可以編輯新的搜尋 （藉由變更的關鍵字查詢或日期範圍），然後再執行它。
-ms.openlocfilehash: 25aa5d6a1ba19f697a6ccf474e055faf6a19d6bd
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+description: 使用本文中的 Windows PowerShell 指令碼，以快速地複製現有的 Office 365 或 Microsoft 365 的合規性中心中 「 內容搜尋。 當您複製搜尋時，（以新名稱） 的新搜尋會建立包含原始的搜尋相同的屬性。 然後您可以藉由變更的關鍵字查詢或日期範圍，編輯新的搜尋，然後再執行它。
+ms.openlocfilehash: 87d9c75dc0a2b58b95ad6f2aaeb6c55f178e515f
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685586"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633842"
 ---
 # <a name="clone-a-content-search"></a>複製內容搜尋
 
-在 Office 365 或 Microsoft 365 的合規性中心中建立 「 內容搜尋 」 搜尋大量信箱或 SharePoint 和 OneDrive for Business 網站可能需要一段時間。 指定要搜尋的網站也可以是出錯的機會如果打錯的 URL。 若要避免這些問題，您可以使用 Windows PowerShell 指令碼本文中，快速地複製現有的內容搜尋。 當您複製搜尋時，會建立包含屬性 （例如內容的位置和搜尋查詢） 與相同的原始的搜尋 （使用不同的名稱） 的新搜尋。 然後您可以編輯新的搜尋 （藉由變更的關鍵字查詢或日期範圍），並加以執行。
+在規範中心中 Office 365 或 Microsoft 365，搜尋多個信箱或 SharePoint 和 OneDrive for Business 網站中建立 「 內容搜尋 」 可能需要一段時間。 指定要搜尋的網站也可以是出錯的機會如果打錯的 URL。 若要避免這些問題，您可以使用 Windows PowerShell 指令碼本文中，快速地複製現有的內容搜尋。 當您複製搜尋時，會建立包含屬性 （例如內容的位置和搜尋查詢） 與相同的原始的搜尋 （使用不同的名稱） 的新搜尋。 然後您可以藉由變更的關鍵字查詢或日期範圍，編輯新的搜尋，並加以執行。
   
 為什麼要複製的內容搜尋？
   
@@ -30,7 +30,7 @@ ms.locfileid: "38685586"
     
 - 若要儲存您不必重新輸入大量內容的位置，當您建立新的搜尋。
     
-- 若要縮小搜尋結果中。例如，如果您有傳回結果太多要匯出的搜尋，您可以複製搜尋，然後再新增搜尋條件，根據日期範圍，以減少搜尋結果數目。
+- 若要減少搜尋結果的大小。 例如，如果您有傳回結果太多要匯出的搜尋，您可以複製搜尋，然後再新增搜尋條件，根據日期範圍，以減少搜尋結果數目。
   
 ## <a name="before-you-begin"></a>開始之前
 
@@ -132,11 +132,11 @@ ms.locfileid: "38685586"
     
     - 新的搜尋的名稱。
     
-    指令碼會建立新的內容搜尋，但不會啟動它。 這可以讓您有機會編輯，並在下一個步驟中執行搜尋。 藉由執行**Get-compliancesearch** cmdlet 或移至 [規範中心，根據新的搜尋是與案例相關聯的 [**內容搜尋**] 或 [ **eDiscovery** ] 頁面上，您可以檢視新的搜尋的屬性。 
+    指令碼會建立新的內容搜尋，但不會啟動它。 這可以讓您有機會編輯，並在下一個步驟中執行搜尋。 藉由執行**Get-compliancesearch** cmdlet 或移至 [規範中心，根據新的搜尋是否與案例相關聯的 [**內容搜尋**或**eDiscovery** ] 頁面上，您可以檢視新的搜尋的屬性。 
   
 ## <a name="step-2-edit-and-run-the-cloned-search-in-the-compliance-center"></a>步驟 2： 編輯，並在 「 規範中心執行複製的搜尋
 
-您已執行指令碼以複製現有的內容搜尋之後下, 一步是以移至 「 合規性中心 」，編輯與執行新的搜尋。 如先前所述，您可以編輯搜尋的關鍵字搜尋查詢以及新增或移除搜尋條件。 如需詳細資訊，請參閱：
+執行指令碼以複製現有的內容搜尋之後下, 一步是移至合規性中心編輯及執行新的搜尋。 如先前所述，您可以編輯搜尋的關鍵字搜尋查詢以及新增或移除搜尋條件。 如需詳細資訊，請參閱：
   
 - [Office 365 中的內容搜尋](content-search.md)
     

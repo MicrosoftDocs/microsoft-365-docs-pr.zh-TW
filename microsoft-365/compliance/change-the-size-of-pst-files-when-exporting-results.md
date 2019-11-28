@@ -11,19 +11,19 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: 您可以變更預設的 PST 檔案大小，當您匯出 eDiscovery 搜尋結果下載到您的電腦。
-ms.openlocfilehash: b3bba45ce336b143ed948db384673f0a1a5a456f
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 3a302164a1de6d383e2e120dd7a849e692e622eb
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685572"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634000"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>匯出 eDiscovery 搜尋結果時變更 PST 檔案的大小
 
 當您匯出 eDiscovery 搜尋的電子郵件結果從不同的 Microsoft eDiscovery 工具使用 Office 365 電子文件探索匯出工具時，可匯出的 PST 檔案的預設大小為 10 GB。 如果您想要變更此預設的大小，您可以編輯您用來匯出搜尋結果的電腦上的 Windows 登錄。 若要這麼做的原因之一是讓 PST 檔案可容納抽取式媒體、 這類 DVD、 光碟片或 USB 磁碟機上。 
   
 > [!NOTE]
->  Office 365 電子文件探索匯出工具用來匯出搜尋結果時使用內容搜尋工具中的安全性與合規性中心，就地 eDiscovery 在 Exchange Online 和 SharePoint Online 中的 eDiscovery 中心。
+> Office 365 電子文件探索匯出工具用來匯出搜尋結果時使用內容搜尋工具中的安全性與合規性中心，就地 eDiscovery 在 Exchange Online 和 SharePoint Online 中的 eDiscovery 中心。
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>建立要變更的 PST 檔案大小，當您匯出 eDiscovery 搜尋結果的登錄設定
 
@@ -43,7 +43,7 @@ ms.locfileid: "38685572"
     
     |**調整大小以 GB （大約）**|**大小 （位元組）**|
     |:-----|:-----|
-    |.7 GB (700 MB)  <br/> |751619277  <br/> |
+    |0.7 GB (700 MB)  <br/> |751619277  <br/> |
     |2 GB  <br/> |2147483648  <br/> |
     |4 GB  <br/> |4294967296  <br/> |
     |8 GB  <br/> |8589934592  <br/> |
@@ -68,7 +68,7 @@ ms.locfileid: "38685572"
   
  **我應該增加或減少 PST 檔案的預設大小？**
   
-客戶通常會減少的大小限制，使搜尋結果將會放在他們可以實際運送其組織中的其他位置的抽取式媒體上。 我們不建議您增加預設的大小，因為 PST 檔案大於 10GB 可能已損毀問題。
+客戶通常會減少的大小限制，使搜尋結果將會放在其實際可以運送到其組織中其他位置的抽取式媒體上。 我們不建議您增加預設的大小，因為 PST 檔案大於 10GB 可能已損毀問題。
   
  **我有執行這項作業電腦為何？**
   
@@ -80,4 +80,4 @@ ms.locfileid: "38685572"
   
  **沒有現有的登錄機碼取得編輯或沒有取得建立新的金鑰嗎？**
   
-新的登錄機碼會建立第一次執行您在此程序中建立的.reg 檔案。 然後設定編輯的每當您變更，然後重新執行.reg 編輯檔案。
+新的登錄機碼會建立第一次執行您在此程序中建立的.reg 檔案。 然後設定編輯的每當您變更並重新執行.reg 編輯檔案。

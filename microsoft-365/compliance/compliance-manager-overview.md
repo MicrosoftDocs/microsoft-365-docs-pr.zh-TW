@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: be2ba99f7779640df90c35101e96839fb87156d4
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: f8683fd3b3462a44856266ec0e3bef96829b032c
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615613"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633652"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance Manager （預覽）
 
@@ -51,7 +51,7 @@ ms.locfileid: "39615613"
 
 ## <a name="assessments"></a>「 評估 」
 
-[「 評估 」](working-with-compliance-manager.md#assessments)是可讓您組織的責任 Microsoft 和您的組織評估雲端服務安全性與合規性風險之間共用基礎的控制項的容器。 評估可協助您實作合規性標準和適用的資料保護標準、 法令或法律所指定的資料保護保護措施。 它們可協助您辨識針對選取的業界標準的所選的 Microsoft 雲端服務，您的資料保護和合規性狀態。 評估完成所實作的評估中包含對應至標準憑證的控制項。
+[「 評估 」](working-with-compliance-manager.md#assessments)是可讓您組織的 Microsoft 和您的組織評估雲端服務安全性與合規性風險之間共用的責任的控制項的容器。 評估可協助您實作合規性標準和適用的資料保護標準、 法令或法律所指定的資料保護保護措施。 它們可協助您辨識針對選取的業界標準的所選的 Microsoft 雲端服務，您的資料保護和合規性狀態。 評估完成所實作的評估中包含對應至標準憑證的控制項。
 
 根據預設，合規性管理員會建立組織的下列 「 評估 」:
 
@@ -105,9 +105,9 @@ ms.locfileid: "39615613"
 
 [動作項目](working-with-compliance-manager.md#controls-and-actions)會包含在客戶管理控制措施，為您可用來管理及追蹤進度評估完成向內建工作流程管理功能的一部分。
 
-您組織中的人員可以使用合規性管理員來檢閱從其已指派給他們的所有評定的客戶管理控制項。 當使用者登入「合規性管理員」並開啟 [動作項目]**** 儀表板時，會顯示指派給他們的 [動作項目] 清單。 視使用者獲派的合規性管理員角色而定，他們可以提供實作或測試詳細資料、更新狀態，或是指派動作項目。
+您組織中的人員可以使用合規性管理員來檢閱從他們所指派的所有評定的客戶管理控制項。 當使用者登入「合規性管理員」並開啟 [動作項目]**** 儀表板時，會顯示指派給他們的 [動作項目] 清單。 視使用者獲派的合規性管理員角色而定，他們可以提供實作或測試詳細資料、更新狀態，或是指派動作項目。
 
-憑證控制項通常是由一位人員實作和測試另一個。 例如，初始指派給實作一個人的動作項目都完成之後，動作項目指派給下一個人來測試及上傳證據。 具有足夠的權限控制工作分派的任何使用者可以指派，並重新指派動作項目。 這可讓控制項的工作分派的中央管理，而且分散 implementors 和測試人員之間路由的動作項目。
+憑證控制項通常是由一位人員實作和測試另一個。 例如，最初指派給一位人員實作的動作項目都完成之後，這些動作項目指派給下一個人來測試及上傳證據。 具有足夠的權限控制工作分派的任何使用者可以指派，並重新指派動作項目。 這可讓控制項的工作分派的中央管理，而且分散 implementors 和測試人員之間路由的動作項目。
 
 ## <a name="permissions"></a>權限
 
@@ -116,15 +116,15 @@ ms.locfileid: "39615613"
 入口網站管理員合規性管理員可以設定其他使用者在合規性管理員中的權限，遵循下列步驟：
 
 1. 從頂端**多個**下拉式] 功能表中，選取 [**系統**]，然後**設定**]。
-2. 從這裡開始，選取您想要指派，然後新增您想要指派給該角色的員工的角色。 使用者能執行某些動作。
+2. 從這裡開始，選取您想要指派，的角色，然後新增您想要指派給該角色的員工。 使用者能執行某些動作。
 
-此外，[在 Azure Active Directory (Azure AD) 中的全域讀者角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)所指派的使用者擁有存取合規性管理員中; 的唯讀權限不過他們無法編輯資料，或執行合規性管理員中的任何動作。
+此外，[在 Azure Active Directory (Azure AD) 中的全域讀者角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)所指派的使用者必須存取合規性管理員中的唯讀權限。 不過，他們無法編輯資料，或執行合規性管理員中的任何動作。
 
-請注意，已不再有預設的**來賓存取**角色。 每個使用者都必須獲指派角色，才能在合規性管理員中存取及作業。
+不再是預設**的來賓存取**角色。 每個使用者都必須獲指派角色，才能在合規性管理員中存取及作業。
   
 ## <a name="manage-evidence"></a>管理辨識項
 
-合規性管理員中可以儲存辨識您實作工作執行的客戶管理控制措施測試和驗證。 辨識項包含文件、 試算表、 螢幕擷取畫面，影像、 指令碼、 指令碼輸出檔及其他檔案。 合規性管理員也會自動接收遙測，並建立辨識項記錄的動作項目與安全分數整合。 任何以作為證據到合規性管理員上傳的資料會儲存在美國境內 Microsoft Cloud Storage 網站上。 此資料會複寫跨 Azure 位於東南亞及西歐的區域。
+合規性管理員中可以儲存辨識您實作工作執行測試和客戶管理控制措施的驗證。 辨識項包含文件、 試算表、 螢幕擷取畫面，影像、 指令碼、 指令碼輸出檔及其他檔案。 合規性管理員也會自動接收遙測，並建立辨識項記錄的動作項目與安全分數整合。 任何以作為證據到合規性管理員上傳的資料會儲存在美國境內 Microsoft Cloud Storage 網站上。 此資料會複寫跨 Azure 位於東南亞及西歐的區域。
 
 ## <a name="templates"></a>範本
 
@@ -156,7 +156,7 @@ ms.locfileid: "39615613"
 
 [Microsoft 安全分數](../security/mtp/microsoft-secure-score.md)的同步處理的動作項目，自動將安全分數信用套用至合規性分數被整合合規性管理員。 這是全域，可設定個別的動作項目或所有的動作，並從安全分數提供更新。
 
-例如，您有相關的安全性需求來規範相關動作項目也適用於您組織中啟用 Azure Rights Management。 時啟動 Azure Rights Management 和處理安全分數，合規性管理員接收通知的更新，並完成信用自動更新的分數動作項目。
+例如，您有相關的安全性需求來規範相關動作項目也適用於您組織中啟用 Azure Rights Management。 當 Azure 版權管理為啟動並且處理安全分數時，合規性管理員接收通知的更新，並巨集指令的項目分數會自動更新完成信用。
 
 ## <a name="ready-to-get-started"></a>準備好要開始了嗎？
 
