@@ -1,19 +1,19 @@
 ---
-title: 可靠性深入解析
+title: 可靠深入解析
 description: ''
 keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f830e01d54aef9065727971533633f8e63bc1214
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 8ecc117b2bc6e7cec3dcf0470a6d3c61ad34adf0
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257031"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634030"
 ---
-# <a name="reliability-insights"></a>可靠性深入解析
+# <a name="reliability-insights"></a>可靠深入解析
 
 此檢視為您提供您受管理的裝置健全狀況摘要。 若要檢視可靠性資料，請選取 [**可靠性**] 索引標籤。
 
@@ -35,5 +35,12 @@ ms.locfileid: "39257031"
 - 數字代表的受管理裝置的百分比
 - 特定問題數總計
 - 問題的來源看起來軟體元件
+- 偵測到問題的類別：
+    - 瀏覽器 (Edge、 Chrome IE)
+    - 未知 （非 Microsoft 元件）
+    - 驅動程式 （音訊、 圖形或其他驅動程式）
+    - 產能 （寬限時間，G Suite、 Microsoft Office 和其附加元件或擴充功能、 Teams）
+    - 媒體 （影像、 等候音樂或視訊的應用程式
+    - 安全性 （Windows 安全性元件）
 - 為 Microsoft 受管理的桌上型電腦作業的目前狀態，進行調查和 remediates 問題
 

@@ -8,16 +8,43 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: a982b493027775add547a87700906a6cbbdaef60
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: b66fb73b635eb102bcd474cc884db6d0fa4cdfb6
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369624"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634060"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 受管理電腦文件的變更歷程記錄
 
 本主題將列出[Microsoft 受管理電腦文件](index.yml)中的最新及更新主題。 「 更新 」 主題是指可有鎖材料的新增項目或更正-次要修正校正的錯字，樣式，例如，格式問題未列出。 您總是可以檢視 （包括任何變更的詳細資料） 的特定認可的歷程記錄造訪[GitHub 上的儲存機制](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)。
+
+## <a name="november-2019"></a>2019 年 11 月
+新的或變更主題 | 描述
+--- | ---
+[具備深入解析的工作](working-with-managed-desktop/insights.md) | 新的主題
+[使用情況深入解析](working-with-managed-desktop/usage-insights.md) | 新的主題
+[可靠深入解析](working-with-managed-desktop/reliability-insights.md) | 新的主題
+[Microsoft 受管理的電腦裝置](service-description/device-list.md) | 更新的主題
+[Microsoft 受管理電腦的主要頁面](https://docs.microsoft.com/microsoft-365/managed-desktop/) | 更新的主題
+[什麼是 Microsoft 受管理的電腦？](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | 更新的主題
+[讓您的使用者準備好使用裝置](get-started/get-started-devices.md) | 更新的主題
+[服務方案的例外狀況](service-description/customizing.md) | 更新的主題
+
+
+## <a name="october-2019"></a>2019 年 10 月
+新的或變更主題 | 描述
+--- | ---
+[服務方案的例外狀況](service-description/customizing.md) | 新的主題
+[取得使用者的說明](working-with-managed-desktop/end-user-support.md) | 更新的主題
+[Microsoft 受管理電腦的系統管理員支援](working-with-managed-desktop/admin-support.md) | 更新的主題
+[服務變更與通訊](service-description/servicechanges.md) | 新的主題
+[自行註冊新裝置](get-started/register-devices-self.md) | 更新的主題
+[自行註冊現有裝置](get-started/register-reused-devices-self.md) | 更新的主題
+[Microsoft 受管理的電腦支援的地區和語言](service-description/regions-languages.md) | 更新的主題
+
+
+
 
 ## <a name="september-2019"></a>2019 年 9 月
 新的或變更主題 | 描述
@@ -62,7 +89,7 @@ ms.locfileid: "37369624"
 
 
 
-## <a name="may-2019"></a>2019 年
+## <a name="may-2019"></a>2019 年 5 月
 新的或變更主題 | 描述
 --- | ---
 [Microsoft 受管理的電腦支援的地區和語言](service-description/regions-languages.md) | 更新的主題

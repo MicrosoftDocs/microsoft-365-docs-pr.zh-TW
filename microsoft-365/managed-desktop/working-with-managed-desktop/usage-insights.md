@@ -6,15 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3f1d1deb031d26f9dec687b73be86ec8a2491a50
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: a3367785d858c1d2546571fa1ad8a8c1b96cf59f
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256860"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634020"
 ---
 # <a name="usage-insights"></a>使用情況深入解析
-此檢視您的 Microsoft 受管理的電腦裝置提供使用狀況計量。 
+此檢視您的 Microsoft 受管理的電腦裝置提供使用狀況計量。 進行這些工作，應用程式被視為 「 使用 」 中，如果它正在執行，並在焦點。
 
 若要檢視流量資料，請選取 [**使用狀況**] 索引標籤。
 
