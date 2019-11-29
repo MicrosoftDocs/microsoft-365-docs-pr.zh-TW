@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Office 365 中實作記錄管理。
-ms.openlocfilehash: 143d3fb97afca5b6a3b18e47b7be472f35a857ba
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: dcf350f34a30d27aa66d3e4395b2441694537bae
+ms.sourcegitcommit: 9a420b16aaa401a822ccfd9b133977ad8bd1024b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39266114"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39621106"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -310,9 +310,9 @@ Exchange 公用資料夾和 Skype 不支援標籤。
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>將預設保留標籤套用至 SharePoint 文件庫、資料夾或文件集中的所有內容
 
-除了讓使用者將保留標籤套用至個別文件，您也可以將預設保留標籤套用到 SharePoint 文件庫、資料夾或文件集，讓該位置的所有文件套用預設保留標籤。
+除了讓使用者將保留標籤套用至個別文件，您也可以將預設保留標籤套用到 SharePoint 文件庫、資料夾或文件集，讓該位置的所有文件套用預設保留標籤 (預設標籤是一個 E5 功能)。
   
-若為文件庫，您可以在文件庫的 **[文件庫設定]** 頁面中進行這個動作。 當您選擇預設保留標籤時，也可以選擇將該標籤套用至文件庫中的現有項目。 
+若為文件庫，您可以在文件庫的 [文件庫設定]**** 頁面中進行這個動作。 當您選擇預設保留標籤時，也可以選擇將該標籤套用至文件庫中的現有項目。 
   
 例如，如果您有一個行銷資料的標籤，而且您知道某個文件庫只包含這個類型的內容，就能將「行銷資料」標籤設為該文件庫中所有文件的預設標籤。
   
