@@ -19,17 +19,15 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：在 SharePoint Online 和 Office 365 中保護檔案的設定建議。
-ms.openlocfilehash: 15b67d2569f2c8ceafb16973ae2bf6862ebb9ded
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: e724370c439f8330b28c32fc36d2ea39b303f6ec
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38311107"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631305"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>保護 SharePoint Online 網站與檔案
 
- **摘要：** 在 SharePoint Online 和 Office 365 中保護檔案的設定建議。
-  
 本文提供設定 SharePoint Online 小組網站和檔案保護的建議，以在安全性和順暢的共同作業間取得平衡。本文定義四種不同的設定，首先是組織內的公用網站，並搭配最開放的共用原則。每項額外設定均代表有意識的保護升級，但資源的存取和共同作業能力則會減少為只提供給相關使用者。使用建議作為起點，並且調整組態以符合您的組織的需求。
   
 本文的設定符合 Microsoft 針對資料、身分識別和裝置的下列三層保護建議：
@@ -62,7 +60,7 @@ ms.locfileid: "38311107"
     
 - 系統會針對「敏感性」和「高度機密」的保留標籤設定[資料外洩防護](../../compliance/data-loss-prevention-policies.md) (DLP) 原則，以在使用者嘗試將這類檔案傳送到組織外部時，對他們發出警告或阻止此動作。
     
-- 如果在您的案例中有需要，您可以使用[敏感度標籤](../../compliance/sensitivity-labels.md)以使用加密與權限來保護高度機密檔案。 針對 Azure 資訊保護客戶，您可以使用 Microsoft 365 合規性中心的 Azure 資訊保護標籤，而如果您選擇執行額外或進階組態，標籤就會與 Azure 入口網站同步處理。 Azure 資訊保護標籤與 Office 365 敏感度標籤完全彼此相容。 這表示，比方說，如果您有使用 Azure 資訊保護加上標籤的內容，則不需將內容重新分類或重新加上標籤。並非每位客戶都需要此層級的保護。 
+- 如果在您的案例中有需要，您可以使用[敏感度標籤](../../compliance/sensitivity-labels.md)以使用加密與權限來保護高度機密檔案。 針對 Azure 資訊保護客戶，您可以使用 Microsoft 365 合規性中心的 Azure 資訊保護標籤，而如果您選擇執行額外或進階組態，標籤就會與 Azure 入口網站同步處理。 Azure 資訊保護標籤與 Office 365 敏感度標籤完全彼此相容。 這表示，比方說，如果您有使用 Azure 資訊保護加上標籤的內容，則不需將內容重新分類或重新加上標籤。 並非所有客戶都需要此層級的保護。 
     
 ## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 和商務用 OneDrive 的租用戶整體設定
 
@@ -117,20 +115,20 @@ SharePoint Online 和商務用 OneDrive 的裝置存取設定可讓您決定要�
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 ||**基準保護 #1** <br/> |**基準保護 #2** <br/> |**敏感性保護** <br/> |**高度機密** <br/> |
-|描述  <br/> |開啟組織內的探索及共同作業。  <br/> |私用網站和群組，其可在群組外部共用。  <br/> |隔離的網站，其存取層級會依據特定群組的成員資格而定義。 只允許網站的成員共用。 當使用者嘗試將檔案傳送到組織外部時，DLP 會對其發出警告。  <br/> |使用 Azure 資訊保護的隔離網站 + 檔案加密與權限。 DLP 可防止使用者將檔案傳送到組織外部。  <br/> |
+|描述  <br/> |開啟組織內的探索及共同作業。  <br/> |私用網站和群組，其可在群組外部共用。  <br/> |僅允許網站成員共用的私用網站。嘗試將檔案傳送到組織外時，DLP 將會警告使用者。  <br/> |帶有敏感度標籤的私用網站和檔案加密與權限。 DLP 可防止使用者將檔案傳送到組織外部。  <br/> |
 |私用或公用的小組網站  <br/> |公用  <br/> |Private  <br/> |Private  <br/> |Private  <br/> |
 |誰可以存取？  <br/> |組織中所有人，包括 B2B 使用者和訪客使用者。  <br/> |僅限網站的成員。 其他人可以要求存取權。  <br/> |僅限網站的成員。 其他人可以要求存取權。  <br/> |僅限成員。 其他人無法要求存取權。  <br/> |
 |網站層級的共用控制  <br/> |允許與任何人共用。 預設設定。  <br/> |允許與任何人共用。 預設設定。  <br/> |成員無法共用網站的存取權。  <br/> 非成員可以要求存取網站，但這些要求需要網站系統管理員處理。  <br/> |成員無法共用網站的存取權。  <br/> 非成員無法要求存取網站或內容。  <br/> |
 |網站層級的裝置存取控制  <br/> |無額外控制。  <br/> |無額外控制。  <br/> |防止使用者下載檔案到不相容或非加入網域的裝置。如此一來，所有其他裝置僅可進行瀏覽器存取。  <br/> |封鎖將檔案下載至不相容或非加入網域的裝置。  <br/> |
 |保留標籤  <br/> |內部公用  <br/> |Private  <br/> |敏感性  <br/> |高度機密  <br/> |
 |DLP 原則  <br/> |||當使用者將標記為「敏感性」的檔案傳送到組織外部時，會對其發出警告。  <br/> 若要封鎖敏感性資料類型的外部共用，例如信用卡號碼或其他個人資料，您可以為這些資料類型 (包括您設定的自訂資料類型) 設定額外的 DLP 原則。  <br/> |封鎖使用者，使其無法將標示為高度機密的檔案傳送到組織外部。 允許使用者提供理由來覆寫這項預設，包括共用檔案的對象。  <br/> |
-|敏感度標籤  <br/> ||||使用敏感度標籤可自動加密並授與檔案權限。 敏感度標籤會使用 Azure 資訊保護來加密檔案。 這項保護會與檔案一起移動，以免檔案外洩。  <br/> Office 365 無法讀取以 Azure 資訊保護加密的檔案。此外，DLP 原則僅會使用中繼資料 (包括標籤)，而不會使用這些檔案的內容 (例如檔案中的信用卡號碼)。  <br/> |
+|敏感度標籤  <br/> ||||使用敏感度標籤可自動加密並授與檔案權限。 這項保護會與檔案一起移動，以免檔案外洩。  <br/> Office 365 無法讀取以敏感度標籤加密的檔案。 此外，DLP 原則僅會使用中繼資料 (包括標籤)，而不會使用這些檔案的內容 (例如檔案中的信用卡號碼)。  <br/> |
    
 如需此解決方案中這四種不同類型 SharePoint Online 小組網站的部署步驟，請參閱[部署三層保護的 SharePoint Online 網站](../../compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)。 
   
 ## <a name="office-365-retention-labels"></a>Office 365 保留標籤
 
-建議您在含有敏感性資料的環境中使用保留標籤。 設定並發佈保留標籤之後：
+若環境含有敏感性和高度機密資料，建議使用保留標籤。 設定並發佈保留標籤之後：
   
 - 您可以將預設標籤套用至 SharePoint Online 小組網站的文件庫，以便讓該文件庫中的所有文件取得預設標籤。 
     
@@ -158,16 +156,16 @@ SharePoint Online 和商務用 OneDrive 的裝置存取設定可讓您決定要�
   
 ## <a name="sensitivity-labels"></a>敏感度標籤 
 
-若您的安全性案例有需要，您可以使用敏感度標籤來套用可隨時追蹤檔案的保護。 Microsoft 365 合規性中心的敏感度標籤和 Azure 資訊保護標籤是相同的。 建議您為此解決方案使用限域的 Azure 資訊保護原則以及高度機密標籤的子標籤，來加密需要以最高安全性等級保護的檔案，和為其授予權限。 
+若您的安全性案例有需要，您可以使用敏感度標籤來套用可隨時追蹤檔案的保護。 Microsoft 365 合規性中心的敏感度標籤和 Azure 資訊保護標籤是相同的。 針對這個解決方案，建議您使用敏感度標籤或高度機密敏感度標籤的子標籤來加密並授與需要以最高層級安全性保護的檔案之權限。 
   
-請留意，若將 Azure 資訊保護套用至儲存於 Office 365 中的檔案，服務就無法處理這些檔案的內容。 共同撰寫、eDiscovery、搜尋、Delve 和其他共同作業功能無法運作。 此外，DLP 原則只可用於中繼資料 (包括保留標籤)，但不可用於這些檔案的內容 (例如檔案中的信用卡號碼)。
+請注意，若將敏感度標籤加密套用至儲存於 Office 365 中的檔案，服務就無法處理這些檔案的內容。 共同撰寫、eDiscovery、搜尋、Delve 和其他共同作業功能無法運作。 此外，DLP 原則只可用於中繼資料 (包括保留標籤)，但不可用於這些檔案的內容 (例如檔案中的信用卡號碼)。
 
 如需詳細資訊，請參閱[敏感度標籤概觀](../../compliance/sensitivity-labels.md)。
 
     
 ### <a name="adding-permissions-for-external-users"></a>新增外部使用者的權限
 
-您可以使用兩種方式，將 Azure 資訊保護所保護的檔案存取權授與外部使用者。在這兩種情況下，外部使用者皆必須擁有 Azure AD 帳戶。如果外部使用者不屬於使用 Azure AD 的組織成員，可以使用 [https://aka.ms/aip-signup](https://aka.ms/aip-signup) 這個註冊頁面，以個人身分取得 Azure AD 帳戶。
+您可以使用兩種方式，將敏感度標籤所保護的檔案存取權授與外部使用者。 在這兩種情況下，外部使用者皆必須擁有 Azure AD 帳戶。 如果外部使用者不屬於使用 Azure AD 的組織成員，可以使用 [https://aka.ms/aip-signup](https://aka.ms/aip-signup) 這個註冊頁面，以個人身分取得 Azure AD 帳戶。
   
 - 將外部使用者新增至用來設定保護標籤的 Azure AD 群組
     
@@ -177,9 +175,9 @@ SharePoint Online 和商務用 OneDrive 的裝置存取設定可讓您決定要�
     
      您可以從組織 (例如 Fabrikam.com)、Azure AD 群組 (例如組織內的財務部門) 或個別使用者，新增所有使用者。例如，您可以將外部的監理人員小組新增至標籤保護。使用此方法時，僅會授與在外部實體新增至保護之後受標籤保護的檔案權限。
     
-### <a name="deploying-and-using-azure-information-protection"></a>部署並使用 Azure 資訊保護
+### <a name="deploying-and-using-a-sensitivity-label"></a>部署和使用敏感度標籤
 
-如需在此解決方案中設定 Azure 資訊保護的步驟，請參閱[使用 Azure 資訊保護來保護 SharePoint Online 檔案](../../compliance/protect-sharepoint-online-files-with-azure-information-protection.md)。
+如需在此解決方案中設定敏感度標籤的步驟，請參閱[使用敏感度標籤保護 SharePoint Online 檔案](../../compliance/protect-sharepoint-online-files-with-sensitivity-label.md)。
   
 
 ## <a name="next-step"></a>下一步

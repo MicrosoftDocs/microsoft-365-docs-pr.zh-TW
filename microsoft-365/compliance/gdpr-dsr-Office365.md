@@ -1,7 +1,7 @@
 ---
-title: GDPR 下的 Office 365 資料服務要求
-description: 了解 GDPR 下的使用者權利，以及 Office 365 如何協助企業找出並處理資料，以回應 DSR。
-keywords: Office 365、DSR、Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
+title: GDPR 和 CCPA 下的 Office 365 資料服務要求
+description: 了解 GDPR 和 CCPA 下的使用者權利，以及 Office 365 如何協助企業找出並處理資料，以回應 DSR。
+keywords: Office 365、DSR、Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR、CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,28 +9,32 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: bacf6b55bc4c92987511bdf1ab4ac5b120f11836
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 9f2d17c6165a028061cf7d155f828c683f09543f
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071492"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39624515"
 ---
-# <a name="office-365-data-subject-requests-for-the-gdpr"></a>GDPR 的 Office 365 資料主體要求
+# <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Office 365 資料主體要求
 
 ## <a name="introduction-to-dsrs"></a>DSR 簡介
 
 歐盟[一般資料保護規範 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) 賦予人員 (在規範中稱為 *「資料主體」*) 權限，以管理由雇主或其他類型的公司或組織 (稱為 *「資料控制者」* 或簡稱 *「控制者」*) 收集而來的個人資料。個人資料在 GDPR 中的定義廣泛，係指與已識別或可識別的自然人相關的任何資料。GDPR 賦予資料主體對其個人資料的特定權限，這些權限包括取得個人資料複本、要求更正資料、限制資料的處理、刪除資料或以電子格式接收資料，以便轉交給其他控制者。由資料主體向控制者提出對其個人資料採取某項動作的正式要求，稱為 *「資料主體要求」* 或 DSR。控制者有義務盡快考慮每項 DSR，並採取要求的動作來提供實質回應；或針對控制者無法滿足 DSR 的原因進行說明。控制者應向其法律或法務遵循顧問諮詢有關適當處置任何特定 DSR 的方法。
 
-本指南會討論如何使用 Office 365 產品、服務及系統管理工具，協助您找出並處理個人資料，以回應 DSR；具體來說，這包括了如何找出、存取與處理在 Microsoft 雲端中常駐的個人資料。以下是本指南中所述程序的快速概觀：
+同樣地，加州消費者隱私法 (CCPA) 為加州客戶提供隱私權和義務，包括與 GDPR 資料主體權利相似的權利，例如有權刪除、存取和接收 (可攜性) 其個人資訊。 CCPA 也提供特定接露、針對選擇行使權時的歧視提供保護，以及特定資料傳輸的「選擇退出/選擇加入」需求分類為「銷售」。 銷售的廣泛定義，包括出於有價值的考量而共用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](offering-ccpa.md)和[常見問題集](ccpa-faq.md)。
 
-- **探索：** 使用搜尋和探索工具，讓您更輕鬆地找到可能是 DSR 主體的客戶資料。一旦收集了潛在回應文件，您就可以執行下列步驟中所述的一或多個 DSR 動作以回應要求。或者，您也可能判斷該要求不符合貴組織回應 DSR 的指導方針。
-- **存取：** 擷取在 Microsoft 雲端中常駐的個人資料，若有要求，請製作可供資料主體使用的副本。
+本指南會討論如何使用 Office 365 產品、服務及系統管理工具，協助您找出並處理個人資料或個人資訊以回應 DSR。 具體而言，這包括如何尋找、存取和處理位於 Microsoft 雲端的個人資料或個人資訊。 以下是本指南中所述程序的快速概觀：
+
+- **探索**：使用搜尋和探索工具，更輕鬆地尋找可能成為 DSR 主體的客戶資料。 收集到可能的回應文件之後，您就可以執行下列步驟中所述的一或多個 DSR 動作來回應要求。 或者，您可能判定該要求不符合組織回應 DSR 的方針。
+- **存取：** 擷取在 Microsoft 雲端中常駐的個人資料，並在要求時製作可供資料主體使用的副本。
 - **修正：** 在適用情況下，對個人資料進行變更或實行其他要求的動作。
-- **限制：** 透過移除各種不同 Azure 服務的授權，或在可能的情況下關閉所需的服務，對個人資料的處理設下限制。您也可以從 Microsoft 雲端中移除資料，並在內部部署或其他位置保留資料。
+- **限制**：藉由盡可能移除各種 Azure 服務的授權或關閉所需的服務，以限制個人資料的處理。 您也可以從 Microsoft 雲端移除資料，並將它保留在內部部署或另一個位置。
 - **刪除：** 永久移除 Microsoft 雲端中常駐的個人資料。
-- **匯出：** 將個人資料的電子副本 (以機器可讀取的格式) 提供給資料主體。
+- **匯出/接收 (可攜性)：** 將個人資料或個人資訊以電子複本 (以電腦可讀取的格式) 提供給資料主體。 CCPA 中的個人資訊是任何與已識別或可識別個人相關的資訊。 個人的私人、公開或公司角色之間沒有區別。 定義的「個人資訊」一詞在 GDPR 下，大致與「個人資料」相符。 不過，CCPA 也包含家庭和家用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](offering-ccpa.md)和[常見問題集](ccpa-faq.md)。
 
 ### <a name="terminology"></a>術語
 
@@ -183,13 +187,13 @@ Microsoft Office 365 服務也可在下列國家雲環境中取得：[Office 365
 
 ***關鍵字語法***
 
-```
+```Query
 pilar@contoso.com AND filetype="xlxs"
 ```
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image18.png)
+![關鍵字對話方塊](media/O365-DSR-Doc_image18.png)
 
 ##### <a name="example-2"></a>範例 2
 
@@ -199,19 +203,19 @@ pilar@contoso.com AND filetype="xlxs"
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image19.png)
+![關鍵字對話方塊](media/O365-DSR-Doc_image19.png)
 
 ##### <a name="example-3"></a>範例 3
 
 此範例會傳回包含所指定識別碼 (即法國社會安全號碼 INSEE) 的電子郵件訊息
 
-```
+```Query
 "1600330345678 97" AND kind="email"
 ```
 
 ***GUI***
 
-![](media/O365-DSR-Doc_image20.png)
+![關鍵字對話方塊](media/O365-DSR-Doc_image20.png)
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>在內容搜尋中使用已局部編製索引的項目
 
@@ -281,13 +285,13 @@ pilar@contoso.com AND filetype="xlxs"
 
 使用者要存取其 SharePoint 設定檔資料的另一種方法，就是移至其商務用 OneDrive 帳戶 URL 下的 **EditProfile.aspx** 路徑，來存取商務用 OneDrive 帳戶中的 [編輯設定檔頁面]****。 例如，對於使用者 <strong>user1@contoso.com</strong>，使用者的商務用 OneDrive 帳戶位於：
 
-```
+```URL
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/OneDrive.aspx`
 ```
 
 編輯設定檔頁面的 URL 為：
 
-```
+```URL
 `https://contoso-my.sharepoint.com/personal/user1\_contoso\_com/\_layouts/15/EditProfile.aspx`
 ```
 
@@ -357,9 +361,11 @@ OneNote 課程筆記本會儲存在課程小組 SharePoint Online 網站中。�
 3. 選取該項目，然後複製詳細資料窗格中顯示的資料夾路徑。這是「課程筆記本」的根資料夾。
 4. 編輯您在步驟 1 所建立的搜尋，並將關鍵字查詢中的課程名稱取代為「課程筆記本」的資料夾路徑，然後在資料夾路徑前面加上 **path** 網站屬性，例如，**path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/"**。請務必包括引號和後置斜線。
 5. 新增搜尋條件、選取「檔案類型」條件，然後針對檔案類型的值使用一個條件。 這會在搜尋結果中傳回所有 OneNote 檔案。 產生的關鍵字語法可能類似下列內容：[](#building-search-queries-to-find-personal-data)
-    ```
+
+    ```Query
    path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
    ```
+
 6.  請重新執行內容搜尋。 搜尋結果應該會包含來自課程小組的「課程筆記本」中所有的 OneNote 檔案。
 
 #### <a name="microsoft-to-do"></a>Microsoft To-Do
@@ -426,13 +432,13 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 若要匯出及下載項目：
 
 1. 在「安全性與合規性中心」內開啟 [內容搜尋]。
-2. 請在搜尋彈出式頁面中，按一下 ![](media/o365-dsr_image21.png) [更多]****，然後按 [匯出結果]****。 您也可以匯出報告。
+2. 請在搜尋彈出式頁面中，按一下 ![下載圖示](media/o365-dsr_image21.png) [更多]****，然後按一下 [匯出結果]****。 您也可以匯出報告。
 3. 完成 [匯出結果]**** 彈出式頁面上的區段。請務必使用捲軸，以檢視所有匯出選項。
 4. 回到安全性與合規性中心的內容搜尋頁面，然後按一下 [匯出]**** 索引標籤。
 5. 按一下 [重新整理]**** 來更新頁面。
 6. 在 [名稱] **** 欄中，按一下您建立的匯出工作。 匯出作業的名稱是加上 **\_Export** 的內容搜尋名稱。
 7. 請在匯出彈出式頁面中，按一下 [匯出鍵]**** 下方的 [複製到剪貼簿]****。 您會使用步驟 10 中的這個按鍵來下載搜尋結果
-8. 在彈出式頁面的頂端，按一下 [下載結果]![](media/o365-dsr_image21.png)****。
+8. 在彈出式頁面的頂端，按一下 ![下載結果](media/o365-dsr_image21.png) [下載結果]****。
 9. 如果系統提示您安裝 **Microsoft Office 365 電子文件探索匯出工具**，請按一下[安裝]****。
 10. 在 [電子文件探索匯出工具]**** 中，於適當的方塊中貼上您在步驟 7 中所複製的匯出金鑰。
 11. 按一下 [瀏覽]**** 以指定搜尋結果檔案要下載到的位置。
@@ -847,9 +853,12 @@ Invoicing 會收集並儲存下列類型的資料：
 
 系統管理員可以在 Office 365 安全性與合規性中心使用內容搜尋工具，搜尋與作業提供相關的學生檔案 (在學生功課和課程檔案文件庫中)，以及與作業相關的檔案。 例如，系統管理員可以搜尋組織中的所有 SharePoint 網站，並在搜尋查詢中使用學生的名稱、課程或作業名稱，以尋找與 DSR 要求相關的資料。
 
-同樣地，系統管理員可以搜尋作業相關教師檔案中教師發送給學生的檔案。例如，系統管理員可以搜尋組織中的所有 SharePoint 網站，並在搜尋查詢中使用教師的名稱、課程或作業名稱，以尋找與 DSR 要求相關的資料。
+同樣地，系統管理員可以針對教師分發給學生的檔案，搜尋與作業相關的教師檔案。 例如，系統管理員可以搜尋組織中的所有 SharePoint 網站，並在搜尋查詢中使用教師的姓名和班級或作業名稱，以尋找與 DSR 要求相關的資料。
 
-請參閱本指南中的[使用內容搜尋電子文件探索工具來回應 DSR](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) 一節。
+如需詳細資訊，請參閱：
+
+- [作業系統管理員文件](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-admin-documentation)
+- [使用內容搜尋電子文件探索工具來回應 DSR](#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) (本指南中)。
 
 ##### <a name="finding-assignments-data-not-stored-in-sharepoint"></a>尋找未儲存在 SharePoint 中的「作業」資料
 
@@ -865,24 +874,27 @@ Invoicing 會收集並儲存下列類型的資料：
 
 ##### <a name="export"></a>匯出
 
-您可以使用 PowerShell 指令碼，匯出特定學生註冊之所有課程的「作業」資料。 請參閱：
+您可以使用 PowerShell 指令碼取得學生的課程清單，然後使用 PowerShell 指令碼匯出資料，來匯出特定學生已註冊之所有課程的作業資料。 請參閱：
 
-- [使用指令碼從「作業」中匯出及刪除使用者資料](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe)。
-- [從「作業」中匯出學生和教師資料](https://support.office.com/article/e8c36e0e-fb6e-42c5-97fd-66f90f92a13a)。
+- [設定 Teams 作業](https://docs.microsoft.com/microsoft-365/education/deploy/configure-assignments-for-teams)
+- [取得特定學生的課程清單](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
+- [從「作業」中匯出學生和教師資料](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-export)
 
 如果已從課程小組網站中移除此學生，系統管理員可以在執行匯出指令碼前，先將學生新增回該網站。或者，系統管理員可以使用指令碼的輸入檔，找出學生曾經註冊的每個課程。您也可以使用「作業」匯出指令碼來匯出教師有權存取之所有作業的提交資料。
 
 ##### <a name="delete"></a>刪除
 
-您可以使用 PowerShell 指令碼，刪除特定學生註冊之所有課程的「作業」資料。 您應在從課程中移除學生之前這麼做。 請參閱：
+您可以使用 PowerShell 指令碼取得學生的課程清單，然後使用 PowerShell 指令碼刪除資料，來刪除特定學生已註冊之所有課程的作業資料。 您應在從課程中移除學生之前這麼做。 請參閱：
 
-- [使用指令碼從「作業」中匯出及刪除使用者資料](https://support.office.com/article/04473375-6c00-4dda-bfe5-b55a772958fe)。
-
-- [從「作業」中刪除學生資料](https://support.office.com/article/a368853a-9565-4320-8e86-2f9423e932a4)。
+- [設定 Teams 作業](https://docs.microsoft.com/microsoft-365/education/deploy/configure-assignments-for-teams)
+- [取得特定學生的課程清單](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
+- [從「作業」中刪除學生資料](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-delete)
 
 如果已從課程小組網站中移除此學生，系統管理員可以在執行匯出指令碼前，先將學生新增回該網站。或者，系統管理員可以使用指令碼的輸入檔，找出學生曾經註冊的每個課程。您無法使用「作業」刪除指令碼來刪除教師資料，因為在課程小組網站中會共用所有的作業。此外，系統管理員必須將本身新增至課程小組，然後刪除特定作業。
 
-**課程筆記本：** 稍早已在本指南中討論如何在課程筆記本中搜尋內容。 請參閱[OneNote 課程筆記本](#onenote-class-notebook)一節。 您也可以使用「 內容搜尋 」工具匯出課程筆記本中的資料。 此外，系統管理員或資料主體也可以匯出課程筆記本中的資料。 請參閱[儲存課程筆記本複本](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec)。
+#### <a name="class-notebook"></a>課程筆記本
+
+稍早已在本指南中討論如何在課程筆記本中搜尋內容。 請參閱 [OneNote 課程筆記本](#onenote-class-notebook)一節。 您也可以使用「 內容搜尋 」工具匯出課程筆記本中的資料。 此外，系統管理員或資料主體也可以匯出課程筆記本中的資料。 請參閱[儲存課程筆記本複本](https://support.office.com/article/44733e18-0ef1-4d4b-be51-fc2ac5bfe9ec)。
 
 ### <a name="flow"></a>Flow
 
@@ -1073,7 +1085,7 @@ PowerApps 是一種服務，用於組建可在貴組織內共用及使用的應�
 
 若要促成與 PowerApps 相關的 DSR 要求，您可以運用 [PowerApps 系統管理中心](https://admin.powerapps.com/)和 [PowerApps Admin PowerShell Cmdlet](https://go.microsoft.com/fwlink/?linkid=871804) 中公開的系統管理作業。 要存取這些工具將需要具有下列權限的帳戶：
 
-- 付費的 PowerApps 方案 2 授權或 PowerApps 方案 2 試用版授權。 您可以在[這裡](http://web.powerapps.com/trial)註冊 30 天試用版授權。
+- 付費的 PowerApps 方案 2 授權或 PowerApps 方案 2 試用版授權。 您可以在[這裡](https://web.powerapps.com/trial)註冊 30 天試用版授權。
 - [Office 365 全域系統管理員](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)或
 - [Azure Active Directory 全域系統管理員](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
 
@@ -1168,7 +1180,7 @@ StaffHub 內的大部分資料都可供所有 StaffHub 團隊成員和管理員�
 - **共用檔案：** StaffHub 中的所有檔案都儲存在 SharePoint Online 上，因此可以使用上述的內容搜尋來探索、存取和匯出。 您也可從 StaffHub 內的 [檔案]**** 索引標籤下檢視這些檔案。
 - **訊息：** 目前，您可以遵循在下一個項目中存取使用者特定資料中的相關步驟，來存取訊息。 未來，StaffHub 中的所有郵件都會儲存在 Microsoft Teams 中，這表示您可以使用「內容搜尋」工具來加以存取。
 - **使用者特定資料：** 使用者特定資料包含使用者設定、使用者活動摘要和使用者班次要求歷程記錄；團隊成員或系統管理員全都無法檢視。 若要存取或匯出使用者特定資料，資料主體必須先登入其 StaffHub 帳戶，才能取得這些資料。 或者，如果資料主體已從貴組織離職，您也可以請系統管理員重設資料主體的使用者密碼，讓您或系統管理員可以登入其帳戶，來取得這些資料。
-- **Kronos：** StaffHub 支援[Kronos](http://www.kronos.com/) 連線，這屬於第三方人力管理工具。 StaffHub 和 Kronos 分別是獨立的處理器，根據您與雙方分別簽署的條款處理貴組織的資料。 如果您的 DSR 與 Kronos 所持有的資料相關，則必須連絡 Kronos 取得 DSR 的協助，反之亦然。
+- **Kronos：** StaffHub 支援[Kronos](https://www.kronos.com/) 連線，這屬於第三方人力管理工具。 StaffHub 和 Kronos 分別是獨立的處理器，根據您與雙方分別簽署的條款處理貴組織的資料。 如果您的 DSR 與 Kronos 所持有的資料相關，則必須連絡 Kronos 取得 DSR 的協助，反之亦然。
 
 #### <a name="delete"></a>刪除
 
@@ -1205,7 +1217,7 @@ StaffHub 內的大部分資料都可供所有 StaffHub 團隊成員和管理員�
 
 #### <a name="discover"></a>探索
 
-只有擁有者和經過作者允許的人員，才能檢視使用 Sway 所建立的內容 (可在 [www.sway.com](http://www.sway.com) 找到)。 請參閱 [Sway 的隱私權設定](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217)。 若要判斷 Sway 是否為可回應 DSR 的個人資料可能常駐的位置，您可以要求資料主體和可能產生資料主題相關內容的組織使用者搜尋 Sway，並與您共用可能包含可回應資料主體要求之個人資料的任何 Sway。如需怎樣共用 Sway 的相關資訊， 請參閱[共用您的 Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998) 一文中的「從您的組織帳戶共用 Sway」。
+只有擁有者和經過作者允許的人員，才能檢視使用 Sway 所建立的內容 (可在 [www.sway.com](https://www.sway.com) 找到)。 請參閱 [Sway 的隱私權設定](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217)。 若要判斷 Sway 是否為可回應 DSR 的個人資料可能常駐的位置，您可以要求資料主體和可能產生資料主題相關內容的組織使用者搜尋 Sway，並與您共用可能包含可回應資料主體要求之個人資料的任何 Sway。如需怎樣共用 Sway 的相關資訊， 請參閱[共用您的 Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998) 一文中的「從您的組織帳戶共用 Sway」。
 
 #### <a name="access"></a>Access
 
@@ -1531,7 +1543,7 @@ Microsoft Office 365 服務套件包含線上服務，可對已選擇使用服�
 
 ### <a name="myanalytics"></a>MyAnalytics
 
-我的分析可提供統計資料給使用者，以協助他們了解工作時間分配。若要協助您的使用者深入了解在其個人儀表板中呈現給他們的資料，以及資料的計算方式，請將您的使用者導向至 [我的分析個人儀表板](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard)說明主題。
+我的分析可提供統計資料給使用者，以協助他們了解工作時間分配。若要協助您的使用者深入了解在其個人儀表板中呈現給他們的資料，以及資料的計算方式，請將您的使用者導向至 [我的分析個人儀表板](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2)說明主題。
 
 #### <a name="access-and-export"></a>存取及匯出
 
@@ -1543,7 +1555,7 @@ Microsoft Office 365 服務套件包含線上服務，可對已選擇使用服�
 
 #### <a name="restrict"></a>限制
 
-若要限制特定使用者的處理，您可以從我的分析排除它們。若要查看如何進行，請參閱[設定我的分析使用者設定](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-mya-user-settings)。
+若要限制特定使用者的處理，您可以從我的分析排除它們。若要查看如何進行，請參閱[設定我的分析使用者設定](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-myanalytics)。
 
 #### <a name="delete"></a>刪除
 
@@ -1551,7 +1563,7 @@ Microsoft Office 365 服務套件包含線上服務，可對已選擇使用服�
 
 ### <a name="workplace-analytics"></a>工作場所分析
 
-「工作場所分析」可讓組織利用其自己的商務資料來擴增 Office 365 資料，以深入了解組織生產力、共同作業模式和員工參與度。[本文](https://docs.microsoft.com/workplace-analytics/overview/privacy-and-data-access)說明了貴組織對工作場所分析處理的資料所具有的控制權，以及誰有權存取該資料。
+「工作場所分析」可讓組織利用其自己的商務資料來擴增 Office 365 資料，以深入了解組織生產力、共同作業模式和員工參與度。[本文](https://docs.microsoft.com/workplace-analytics/index-orig)說明了貴組織對工作場所分析處理的資料所具有的控制權，以及誰有權存取該資料。
 
 為了協助在工作場所分析中使用 DSR： 
 
@@ -1580,7 +1592,7 @@ Microsoft Office 365 服務套件包含線上服務，可對已選擇使用服�
 1. 移除資料主體的工作場所分析授權。
 2. 刪除資料主體的 Azure Active Directory (AAD) 項目。(如需詳細資訊，請參閱[刪除使用者](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user)。)
 3. 連絡支援人員並請支援人員為資料主體權限 (DSR) 使用者刪除要求開啟票證。在此票證中，使用資料主體的使用者主要名稱 (UPN) 來識別資料主體。
-4. 從公司的人力資源系統匯出人力資源資料複本 (請參閱[匯出資料](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data#step-three--export-data))，從該人力資源資料檔案中移除資料主體的資訊，然後將已編輯的 .csv 格式人力資源資料檔案上傳到工作場所分析 (請參閱[上傳組織資料](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data))。
+4. 從公司的人力資源系統匯出人力資源資料複本 (請參閱[匯出資料](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data))，從該人力資源資料檔案中移除資料主體的資訊，然後將已編輯的 .csv 格式人力資源資料檔案上傳到工作場所分析 (請參閱[上傳組織資料](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data))。
 
 ## <a name="part-3-responding-to-dsrs-for-system-generated-logs"></a>第 3 部分：回應系統所產生記錄的 DSR
 
@@ -1625,7 +1637,7 @@ Microsoft 也讓您能夠存取、匯出及刪除系統所產生的記錄，根�
 
 - **資料在系統產生的記錄中看起來會是麼樣子？：** 以 JSON 格式記錄的系統所產生記錄範例：
 
-   ```
+   ```JSON
    [{
             "DateTime": "2017-04-28T12:09:29-07:00",
              "AppName": "SharePoint",
@@ -1666,7 +1678,7 @@ Microsoft 也讓您能夠存取、匯出及刪除系統所產生的記錄，根�
 全域 IT 系統管理員必須執行下列動作來刪除下列國家雲中系統所產生的記錄：
 
 - Office 365 Germany - 永久刪除使用者帳戶時，系統產生的記錄也會一併刪除。 
-- Office 365 US Government - 透過 [Office 365 系統管理入口網站](http://portal.office365.us)將要求提交給 Microsoft 支援服務。
+- Office 365 US Government - 透過 [Office 365 系統管理入口網站](https://portal.office365.us)將要求提交給 Microsoft 支援服務。
 - 由 21Vianet (中國) 運作的 Office 365 - 透過位於此 [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage) 的 Office 365 系統管理入口網站，將要求提交給 Microsoft 支援服務。移至 [商務]****，然後選取 [訂用帳戶]****  ->  [隱私權]****  ->  [GDPR]****，然後輸入必要的資訊。
 
 ## <a name="part-4-additional-resources-to-assist-you-with-dsrs"></a>第 4 部分：其他協助您使用 DSR 的資源
@@ -1784,4 +1796,5 @@ IT 系統管理員可以使用安全性與合規性中心的稽核記錄搜尋�
 |1/9/2019|[StaffHub](#staffhub)|在 [刪除] 區段中，更新了使用者帳戶遭到永久刪除時將會發生什麼情況的描述。|
 |2019 年 5 月 8 日| [Publisher](#publisher)|新增有關針對 Publisher 回應 DSR 的內容。|
 |2019 年 7 月 11 日| [MyAnalytics](#myanalytics)|因為所有使用者都能在 MyAnalytics 應用程式中檢視自己的資料，所以已移除系統管理員在 Office 365 安全性與合規性中心內使用 DSR 個案工具以匯出 MyAnalytics 資料的能力。 |
+|2019/11/6|[教育](#education)|連結至使用 PowerShell 指令碼取得特定學生的課程清單，然後匯出或刪除其資料的新主題。|
 ||||

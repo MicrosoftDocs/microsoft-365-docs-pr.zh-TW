@@ -1,7 +1,7 @@
 ---
-title: GDPR 的 Azure 資料主體要求
+title: GDPR 和 CCPA 的 Azure 資料主體要求
 description: ''
-keywords: Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
+keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,28 +9,33 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 7a294893d609747b5ab36c66319427608462b451
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.collection:
+- GDPR
+- M365-security-compliance
+hideEdit: true
+ms.openlocfilehash: 73139f0ab67f728ecb55874bb92d9cc874b60408
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698335"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39268474"
 ---
-# <a name="azure-data-subject-requests-for-the-gdpr"></a>GDPR 的 Azure 資料主體要求
+# <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Azure 資料主體要求
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>資料主體要求 (DSR) 簡介
 
 歐盟[資料保護規範 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) 賦予人員 (在規範中稱為*資料主體*) 權限，以管理由雇主或其他類型的公司或組織 (稱為*資料控制者*或簡稱*控制者*) 收集而來的個人資料。個人資料在 GDPR 中的定義非常廣泛，係指與已識別或可識別的自然人相關的任何資料。GDPR 賦予資料主體對其個人資料的特定權限，這些權限包括取得個人資料副本、要求更正資料、限制資料的處理、刪除資料或以電子格式接收資料，以便轉交給其他控制者。由資料主體向控制者提出對其個人資料採取某項動作的正式要求，稱為*資料主體要求*或 DSR。
 
+同樣地，加州消費者隱私法 (CCPA) 為加州客戶提供隱私權和義務，包括與 GDPR 資料主體權利相似的權利，例如有權刪除、存取和接收 (可攜性) 其個人資訊。 CCPA 也提供特定接露、針對選擇行使權時的歧視提供保護，以及特定資料傳輸的「選擇退出/選擇加入」需求分類為「銷售」。 銷售的廣泛定義，包括出於有價值的考量而共用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](offering-ccpa.md)和[常見問題集](ccpa-faq.md)。
+
 本指南會討論如何使用 Microsoft 產品、服務及系統管理工具，協助我們的控制者客戶找出並對個人資料採取動作，以回應 DSR；尤其是針對如何找出、存取與處理在 Microsoft 雲端中常駐的個人資料。以下是本指南中所述程序的快速概觀：
 
-- **探索：** 使用搜尋和探索工具，讓您更輕鬆地找到可能是 DSR 主體的客戶資料。一旦收集了潛在回應文件，您就可以執行下列步驟中所述的一或多個 DSR 動作以回應要求。或者，您也可能判斷該要求不符合貴組織回應 DSR 的指導方針。
-- **存取：** 擷取在 Microsoft 雲端中常駐的個人資料，若有要求，請製作可供資料主體使用的副本。
+- **探索**：使用搜尋和探索工具，更輕鬆地尋找可能成為 DSR 主體的客戶資料。 收集到可能的回應文件之後，您就可以執行下列步驟中所述的一或多個 DSR 動作來回應要求。 或者，您可能判定該要求不符合組織回應 DSR 的方針。
+- **存取：** 擷取在 Microsoft 雲端中常駐的個人資料，並在要求時製作可供資料主體使用的副本。
 - **修正：** 在適用情況下，對個人資料進行變更或實行其他要求的動作。
-- **限制：** 透過移除各種不同 Azure 服務的授權，或在可能的情況下關閉所需的服務，對個人資料的處理設下限制。您也可以從 Microsoft 雲端中移除資料，並在內部部署或其他位置保留資料。
+- **限制**：藉由盡可能移除各種 Azure 服務的授權或關閉所需的服務，以限制個人資料的處理。 您也可以從 Microsoft 雲端移除資料，並將它保留在內部部署或另一個位置。
 - **刪除：** 永久移除 Microsoft 雲端中常駐的個人資料。
-- **匯出：** 將個人資料的電子副本 (以機器可讀取的格式) 提供給資料主體。
+- **匯出/接收 (可攜性)：** 將個人資料或個人資訊以電子複本 (以電腦可讀取的格式) 提供給資料主體。 CCPA 中的個人資訊是任何與已識別或可識別個人相關的資訊。 個人的私人、公開或公司角色之間沒有區別。 定義的「個人資訊」一詞在 GDPR 下，大致與「個人資料」相符。 不過，CCPA 也包含家庭和家用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](offering-ccpa.md)和[常見問題集](ccpa-faq.md)。
 
 本指南中的每一節說明資料控制者組織可以採取的程序，以回應對 Microsoft 雲端中個人資料的 DSR。
 
@@ -41,15 +46,15 @@ ms.locfileid: "34698335"
 - **控制者：** 自然人或法人、公家機關、公司或其他主體，不論單獨或與其他單位聯合，會決定處理個人資料的用途以及方式，其中此類處理的用途以及方式是由聯盟與成員國法律所決定，控制者人選或提名控制者的特定準則可由聯盟與成員國法律提供。
 - **個人資料和資料主體：** 表示與已識別或可識別之自然人 (以下稱為「資料主體」) 相關的任何資訊；可識別的自然人是可以直接或間接識別的人員，尤其是藉由參照如名稱、身分證號碼、位置資料、線上識別碼，或特定於該自然人的身體、生理、基因、心理、經濟、文化或社會身分等一個或多個識別碼來識別。
 - **處理者：** 自然人或法人、公家機關、公司，或代表控制者處理個人資料的其他主體。
-- **客戶資料：** 透過企業服務由客戶本身或代表客戶提供給 Microsoft 的所有資料，包括所有文字、音訊、視訊或影像檔案和軟體。客戶資料包括 (1) 使用者的識別資訊 (例如 Azure Active Directory 中的使用者名稱和連絡人資訊)，以及客戶上傳到特定服務或在特定服務中建立的客戶內容 (例如，Azure 儲存體帳戶中的客戶內容、Azure SQL Database 的客戶內容，或 Azure 虛擬機器中客戶的虛擬機器映像)。
-- **系統所產生的記錄檔：** Microsoft 所產生的記錄檔及相關資料，可協助 Microsoft 向使用者提供企業服務。系統所產生的記錄檔主要包含經過假名化處理的資料 (例如唯一識別碼，通常由系統所產生，無法單獨用來識別個人，但可用來向使用者提供企業服務)。系統所產生的記錄檔也可能包含使用者的識別資訊 (例如使用者名稱)。
+- **客戶資料：** 由客戶本身或客戶代表，透過企業服務所提供給 Microsoft 的所有資料，包括所有文字、音訊、視訊或影像檔案和軟體。 客戶資料包括 (1) 使用者的識別資訊 (例如 Azure Active Directory 中的使用者名稱和連絡人資訊)，以及客戶上傳到特定服務或在特定服務中建立的客戶內容 (例如，Azure 儲存體帳戶中的客戶內容、Azure SQL Database 的客戶內容，或 Azure 虛擬機器中客戶的虛擬機器映像)。
+- **系統產生的記錄：** Microsoft 產生的記錄及相關資料，可協助 Microsoft 向使用者提供企業服務。 系統產生的記錄主要包含經過假名化處理的資料 (例如唯一識別碼)，一般是由系統所產生的數字，無法單獨用來識別個人，但可用來向使用者提供企業服務。 系統產生的記錄也可能包含使用者的身分識別資訊 (例如使用者名稱)。
 
 ## <a name="how-to-use-this-guide"></a>如何使用本指南
 
 本指南包含兩個部分：
 
-- **第 1 部分：回應資料主體對客戶資料的要求：** 本指南中的第 1 部分討論了如何從您所撰寫資料的應用程式中，存取、修正、限制、刪除以及匯出資料。本節將詳細說明如何針對客戶內容以及識別資訊執行 DSR。
-- **第 2 部分：回應資料主體對系統所產生記錄檔的要求：** 當您使用 Microsoft 企業服務時，Microsoft 會產生某些資訊 (稱為「系統所產生的記錄檔」) 以提供服務。本指南中的第 2 部分將討論如何針對 Azure 來存取、刪除及匯出這類資訊。
+- **第 1 部分：回應資料主體對客戶資料的要求：** 本指南中的第 1 部分討論了如何從您所撰寫資料的應用程式中，存取、修正、限制、刪除以及匯出資料。 本節將詳細說明如何針對客戶內容以及使用者的可識別資訊執行 DSR。
+- **第 2 部分：回應資料主體對系統所產生記錄檔的要求：** 當您使用 Microsoft 企業服務時，Microsoft 會產生某些資訊 (稱為「系統產生的記錄檔」) 以提供服務。 本指南中的第 2 部分將討論如何針對 Azure 來存取、刪除及匯出這類資訊。
 
 ## <a name="understanding-dsrs-for-azure-active-directory-and-microsoft-service-accounts"></a>了解 Azure Active Directory 和 Microsoft 服務帳戶的 DSR
 
@@ -85,19 +90,19 @@ Microsoft 透過 Azure 入口網站，提供了存取、刪除及匯出特定客
 
 1. 請用目錄的全域系統管理員帳戶來登入 [Azure 入口網站](https://portal.azure.com/)。
 
-2. 請選取 [所有服務]****、在文字方塊中輸入 [使用者和群組]****，然後選取 [輸入]****。
+2. 選取 [Azure Active Directory]****。
 
-     ![選取所有的服務](media/azure-dsr_image3.png)
+     ![選取所有服務](media/gdpr-azure-dsr-azure-portal.png)
 
-3. 在 [使用者和群組]**** 刀鋒視窗上，選取 [使用者]****。
+3. 選取 [使用者]****。
 
-     ![選取使用者](media/azure-dsr_image9.png)
+     ![選取使用者](media/gdpr-azure-dsr-azure-all-users.png)
 
-4. 在 [使用者和群組 - 使用者]**** 刀鋒視窗中，從清單中選取使用者；然後在所選使用者的刀鋒視窗中，選取 [設定檔]**** 以檢視可能包含個人資料的使用者設定檔資訊。
+4. 在 [所有使用者]**** 刀鋒視窗中，從清單中選取使用者；然後在所選使用者的刀鋒視窗中，選取 [設定檔]**** 以檢視可能包含個人資料的使用者設定檔資訊。
 
-    ![選取設定檔](media/azure-dsr_image5.png)
+    ![選取設定檔](media/gdpr-azure-dsr-azure-user-profile.png)
 
-5. 若您需要新增或變更使用者設定檔資訊，可以這麼做；然後請在命令列中選取 [儲存]****。
+5. 若您需要新增或變更使用者設定檔資訊，可以在命令列中選取 [編輯]****，然後在變更之後選取 [儲存]****。
 
 #### <a name="service-specific-interfaces"></a>服務特定介面
 
@@ -133,25 +138,21 @@ Microsoft 提供直接透過既有的應用程式開發介面 (API) 或特定服
 
 1. 請用目錄的全域系統管理員帳戶來登入 [Azure 入口網站](https://portal.azure.com/)。
 
-2. 請選取 [所有服務]****、在文字方塊中輸入 [使用者和群組]****，然後選取 [輸入]****。
+2. 選取 [Azure Active Directory]****。
 
-    ![選取所有的服務](media/azure-dsr_image3.png)
+    ![選取所有服務](media/gdpr-azure-dsr-azure-portal.png)
 
-3. 在 [使用者和群組]**** 刀鋒視窗上，選取 [使用者]****。
+3. 選取 [使用者]****。
 
-    ![選取使用者](media/azure-dsr_image9.png)
+    ![選取使用者](media/gdpr-azure-dsr-azure-all-users.png)
 
-4. 在 [使用者和群組 - 使用者]**** 刀鋒視窗中，從清單中選取使用者；然後在所選使用者的刀鋒視窗中，選取 [設定檔]**** 以檢視需要更正或更新的使用者設定檔資訊。
+4. 在 [所有使用者]**** 刀鋒視窗中，從清單中選取使用者；然後在所選使用者的刀鋒視窗中，選取 [設定檔]**** 以檢視需要更正或更新的使用者設定檔資訊。
 
-    ![選取設定檔](media/azure-dsr_image5.png)
+    ![選取設定檔](media/gdpr-azure-dsr-azure-user-profile.png)
 
-5. 請更正或更新該資訊，然後在命令列中選取 [儲存]****。
+5. 在命令列中選取 [編輯]**** 更正或更新包括公司資訊等使用者設定檔資訊，然後在變更之後選取 [儲存] ****。
 
-6. 在所選使用者的刀鋒視窗中，選取 [工作資訊]**** 以檢視需要更正或更新的使用者工作資訊。
-
-    ![選取工作的資訊](media/azure-dsr_image4.png)
-
-7. 請更正或更新該使用者工作資訊，然後在命令列中選取 [儲存]****。
+    ![選取設定檔](media/gdpr-azure-dsr-azure-edit-user-profile.png)
 
 #### <a name="service-specific-interfaces"></a>服務特定介面
 
@@ -184,26 +185,30 @@ Microsoft 提供直接透過既有的應用程式開發介面 (API) 或特定服
 
 ###### <a name="to-delete-a-user-from-an-azure-tenant"></a>若要從 Azure 租用戶中刪除使用者
 
-1. 請開啟 Azure 入口網站，選取 [Azure Active Directory]**** 刀鋒視窗，然後選取 [使用者]****。
+1. 請用目錄的全域系統管理員帳戶登入 [Azure 入口網站](https://portal.azure.com/)。
 
-    [使用者 - 所有使用者]**** 刀鋒視窗隨即出現。
+2. 選取 [Azure Active Directory]****。
 
-    ![找出使用者](media/azure-dsr_image8.png)
+    ![選取所有服務](media/gdpr-azure-dsr-azure-portal.png)
 
-2. 勾選想要刪除的使用者旁邊的核取方塊、選取 [刪除使用者]****，然後選取 [是]****。
+3. 選取 [使用者]****。
 
-    ![使用者管理](media/azure-dsr_image9.png)
+    ![選取使用者](media/gdpr-azure-dsr-azure-all-users.png)
 
-3. 在 [顯示]**** 下拉式方塊中，選取 [最近刪除的使用者]****。
+4. 勾選想要刪除的使用者旁邊的核取方塊、選取 [刪除使用者]****，然後選取 [是]****。
 
-    ![檢視使用者設定檔](media/azure-dsr_image10.png)
+    ![使用者管理](media/gdpr-azure-dsr-azure-selected-user.png)
 
-4. 再次選取相同的使用者、選取 [永久刪除]****，然後在詢問您是否確定的方塊中選取 [是]****。
+5. 在 [所有使用者] ****  刀鋒視窗中，選取 [刪除的使用者] ****。
+
+    ![檢視使用者設定檔](media/gdpr-azure-dsr-azure-deleted-user.png)
+
+4. 再次選取相同的使用者、在命令列中選取 [永久刪除] ****，然後在詢問您是否確定的方塊中選取 [是] **** 。
 
 >[!IMPORTANT]  
 >請注意，按一下 [是]**** 代表您會永久刪除使用者和所有相關的資料，以及系統所產生的記錄檔，而且無可挽回。若您不慎誤刪，就必須手動將使用者新增回租用戶中。相關聯的資料和系統所產生的記錄檔則無法復原。
 
-   ![檢視使用者工作資訊](media/azure-dsr_image11.png)
+   ![檢視使用者工作資訊](media/gdpr-azure-dsr-azure-permanently-deleted-user.png)
 
 #### <a name="service-specific-interfaces"></a>服務特定介面
 
@@ -279,15 +284,15 @@ Microsoft 提供直接透過既有的應用程式開發介面 (API) 或特定服
 
 1. 請開啟 Azure 入口網站，選取 [所有服務]****、在篩選中輸入 [原則]**，然後選取 [原則]****。
 
-     ![所有服務篩選 ](media/azure-dsr_image12.png)
+     ![所有服務篩選 ](media/gdpr-azure-dsr-azure-policy.png)
 
 2. 請在 [原則]**** 刀鋒視窗上，依次選取 [使用者隱私權]****、[管理使用者要求]****、[新增匯出要求]****。
 
-    ![新增匯出要求 ](media/azure-dsr_image13.png)
+    ![新增匯出要求 ](media/gdpr-azure-dsr-azure-add-export-request.png)
 
 3. 完成**匯出資料要求**：
 
-    ![新的匯出資料要求](media/azure-dsr_image14.png)
+    ![新的匯出資料要求](media/gdpr-azure-dsr-azure-export-data-request.png)
 
 - **使用者。** 請輸入要求匯出的 Azure Active Directory 使用者的電子郵件地址。
 - **訂用帳戶。** 請選取用於報告資源使用量和計算服務費用的帳戶。這也是您 Azure 儲存體帳戶的所在位置。

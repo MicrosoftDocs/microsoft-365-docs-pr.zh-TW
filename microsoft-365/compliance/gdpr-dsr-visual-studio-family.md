@@ -1,7 +1,7 @@
 ---
-title: GDPR 的 Visual Studio 系列資料主體要求
-description: GDPR 的 Visual Studio 系列資料主體要求
-keywords: Visual Studio、Visual Studio Code、Visual Studio for Mac、Visual Studio 文件、隱私權、GDPR
+title: GDPR 和 CCPA 的 Visual Studio 系列資料主體要求
+description: GDPR 和 CCPA 的 Visual Studio 系列資料主體要求
+keywords: Visual Studio、Visual Studio Code、Visual Studio for Mac、Visual Studio 文件、隱私權、GDPR、CCPA
 localization_priority: Priority
 audience: itpro
 ms.prod: visual-studio-family
@@ -10,23 +10,29 @@ ms.date: 05/24/2018
 author: PoulChapman
 ms.author: olholder
 manager: pchapman
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 ms.workload:
 - multiple
-ms.openlocfilehash: 744935cb41e1521970e6fac05493129eaaf7910d
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 96cb6820e24a378351c82264929c3aec99e6d4f6
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431544"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39624794"
 ---
-# <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>GDPR 的 Visual Studio 系列資料主體要求
+# <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Visual Studio 系列資料主體要求
 
-歐盟[一般資料保護規範 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) 賦予人員 (在規範中稱為「資料主體」__) 權限，以管理他們的個人資料。個人資料在 GDPR 中的定義非常廣泛，係指與已識別或可識別之自然人相關的任何資料。GDPR 賦予資料主體對其個人資料的特定權限，這些權限包括取得個人資料副本、要求更正資料、限制資料的處理、刪除資料或以電子格式接收資料。由資料主體向資料控制者 (具有個人資料控制權的雇主或其他類型的公司或組織) 提出對該資料主體的個人資料採取某項動作的正式要求，稱為「資料主體要求」__ 或 DSR。如需關於 GDPR 的一般資訊，請參閱[服務信任入口網站的 GDPR 區段](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)。
+歐盟[一般資料保護規範 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) 賦予人員 (在規範中稱為「資料主體」__) 權限，以管理他們的個人資料。個人資料在 GDPR 中的定義非常廣泛，係指與已識別或可識別之自然人相關的任何資料。GDPR 賦予資料主體對其個人資料的特定權限，這些權限包括取得個人資料副本、要求更正資料、限制資料的處理、刪除資料或以電子格式接收資料。由資料主體向資料控制者 (具有個人資料控制權的雇主或其他類型的公司或組織) 提出對該資料主體的個人資料採取某項動作的正式要求，稱為「資料主體要求」__ 或 DSR。
+
+同樣地，加州消費者隱私法 (CCPA) 為加州客戶提供隱私權和義務，包括與 GDPR 資料主體權利相似的權利，例如有權刪除、存取和接收 (可攜性) 其個人資訊。  CCPA 也提供特定接露、針對選擇行使權時的歧視提供保護，以及特定資料傳輸的「選擇退出/選擇加入」需求分類為「銷售」。 銷售的廣泛定義，包括出於有價值的考量而共用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](offering-ccpa.md)和[常見問題集](ccpa-faq.md)。
+
+如需關於 GDPR 的一般資訊，請參閱[服務信任入口網站的 GDPR 區段](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)。
 
 ## <a name="products-covered-by-this-guide"></a>本指南所涵蓋的產品
 
-本文將討論如何使用 Microsoft 工具，將 Visual Studio 和 Visual Studio for Mac 及 Microsoft 對上述兩者與 Visual Studio Code 之擴充功能的驗證 (登入) 工作階段使用期間所收集的個人資料匯出或刪除。本指南也會說明如何針對在使用 Visual Studio 開發人員社群、NuGet.org 和 ASP.NET 網站時所收集的個人資料提出資料主體要求。這些產品可讓您使用非 Microsoft 工具和擴充功能，且 Microsoft 並非這些工具和擴充功能的資料處理者或控制者。使用者必須連絡工具或擴充功能提供者，以了解個人資料與這些工具和擴充功能的集合原則。
+本指南將討論如何使用 Microsoft 工具，匯出或刪除在驗證的 (登入的) 工作階段期間使用 Visual Studio 和 Visual Studio for Mac，以及這兩個產品和 Visual Studio Code 的 Microsoft 擴充功能所收集的個人資料。 本指南也涵蓋如何針對使用 Visual Studio 開發人員社群、NuGet.org 和 ASP.NET 網站時收集的個人資料進行資料主體要求。 這些產品可讓您使用非 Microsoft 工具和擴充功能，而 Microsoft 不是這些工具和擴充功能的資料處理者或控制者。 使用者應連絡工具或擴充功能提供者，以瞭解這些工具和擴充功能的個人資料和集合原則。
 
 ## <a name="additional-privacy-information"></a>其他隱私權資訊
 
@@ -73,7 +79,7 @@ Visual Studio 2015 及更新版本、Visual Studio for Mac 和 Visual Studio Cod
 控制者可以透過兩種方法之一 (取決於他們 Visual Studio 系列產品或 Microsoft 擴充功能的註冊方式)，來管理從其資料主體收集到的客戶資料和系統所產生記錄。在某些情況下，必須同時使用這兩種方法。這兩種方法都可讓控制者下載一份受該方法管理的活動歷程記錄。關閉 AAD 或 MSA 帳戶會刪除相關聯的 Visual Studio 客戶資料，並將與這些產品相關的系統所產生記錄中的個人識別資料進行匿名。已匿名之系統所產生記錄的保留時間不會超過 18 個月。
 
 - 使用 Azure 租用戶所支援帳戶例如，與 Azure 訂閱相關聯的 AAD 帳戶或 MSA 帳戶註冊 Visual Studio 系列產品的使用者可遵循 [GDPR 的 Azure 資料主體要求](gdpr-dsr-azure.md)中的指示。
-- 未使用 Azure 租用戶所支援帳戶例如，許多使用 Microsoft 帳戶 (MSA) 的帳戶註冊 Visual Studio 系列產品的使用者，可使用透過其 Microsoft 帳戶提供的[ Web 式 Microsoft 隱私權回應中心](https://aka.ms/userprivacysite)來檢視、控制及刪除繫結至其多項 Microsoft 服務中 Microsoft 帳戶的活動資料。在此案例中，使用者是自己個人資料的控制者。
+- 未使用 Azure 租用戶所支援帳戶例如，許多使用 Microsoft 帳戶 (MSA) 的帳戶註冊 Visual Studio 系列產品的使用者，可使用透過其 Microsoft 帳戶提供的[ Web 式 Microsoft 隱私權回應中心](https://aka.ms/userprivacysite)來檢視、控制及刪除繫結至其多項 Microsoft 服務中 Microsoft 帳戶的活動資料。 在此案例中，使用者是自己個人資料的控制者。
 
 > [!NOTE]
 > 當 MSA 帳戶擁有者刪除其帳戶時，所有與這些產品相關的個人識別資料都會加以刪除 (無論帳戶是否受 Azure 租用戶所支援)，且會將系統產生的記錄加以匿名。
@@ -148,7 +154,7 @@ Microsoft 會收集資料，以協助我們重現您使用 Visual Studio 系列�
 
 若要開始 [刪除]，請遵循下列步驟：
 
-1. 登入[開發人員社群](https://developercommunity.visualstudio.com)。從右上角按一下您的設定檔，然後選取 [設定檔和喜好設定]****。
+1. 登入[開發人員社群](https://developercommunity.visualstudio.com)。 從右上角按一下您的設定檔，然後選取 [設定檔和喜好設定]****。
 2. 按一下 [隱私權]**** 索引標籤，然後按一下 [刪除資料與帳戶]**** 以開始刪除資料。
 3. [確認] 畫面隨即出現。
 4. 在方塊中輸入「刪除」，然後按一下 [刪除我的帳戶]****。
@@ -162,11 +168,11 @@ Microsoft 會收集資料，以協助我們重現您使用 Visual Studio 系列�
 - 如果您報告新的問題或登入[開發人員社群](https://developercommunity.visualstudio.com)，則系統會將您視為新的使用者。
 - 如果您從[開發人員社群](https://developercommunity.visualstudio.com)中刪除您的帳戶，我們並不會將它從其他 Microsoft 服務中刪除。
 
-## <a name="xamarin-forums-and-bugzilla"></a>Xamarin 論壇和 Bugzilla
+## <a name="xamarin-forums"></a>Xamarin 論壇
 
 ### <a name="personal-data-we-collect"></a>我們收集的個人資料
 
-透過 [Xamarin 論壇](https://forums.xamarin.com)使用者社群和 [Xamarin Bugzilla](https://bugzilla.xamarin.com/) 錯誤報告網站，Microsoft 會收集您提供的資料，協助我們重現您使用 Microsoft 產品和服務時可能遇到的問題，並針對問題進行疑難排解。這項資料包含個人資料和公開意見反應。我們收集的個人資料是使用者帳戶資料 (例如，使用者名稱和與 Xamarin 論壇或 Bugzilla 帳戶相關聯的電子郵件地址)，以及我們收集的公開意見反應，包括您透過 Xamarin 論壇或 Xamarin Bugzilla 錯誤報告網站提供的錯誤、問題、註解和解決方案。
+透過 [Xamarin 論壇](https://forums.xamarin.com/)使用者社群，Microsoft 會收集您提供的資料，協助我們重現您在使用 Microsoft 產品和服務時遇到的問題並進行疑難排解。 這些資料包括個人資料和公開意見反應。 我們收集的個人資料是使用者帳戶資料 (例如，與您的 Xamarin 論壇相關聯的使用者名稱和電子郵件地址)，我們收集的公開意見反應包括您透過 Xamarin 論壇提供的錯誤、問題、註解和解決方案。
 
 ### <a name="how-you-can-control-your-data"></a>您可以控制資料的方式
 
@@ -184,19 +190,8 @@ Xamarin 論壇是由第三方 Vanilla 論壇託管。如需要求匯出您的公
 
 Xamarin 論壇是由第三方 Vanilla 論壇託管。如需要求刪除您的個人及公開資料，使用者需連絡 forums@xamarin.com (受 Xamarin 小組監視)。接著，我們會手動處理使用者的個人資料刪除要求。
 
-#### <a name="bugzilla-for-xamarin"></a>Xamarin 的 Bugzilla
-
-##### <a name="view"></a>檢視
-
-具有有效 Xamarin Bugzilla 帳戶的使用者可以按一下 Xamarin Bugzilla 首頁上的適當連結，檢視他們已回報的所有錯誤，以及他們已新增至錯誤的所有註解。
-
-##### <a name="export"></a>匯出
-
-不支援匯出個人資料。
-
-##### <a name="delete"></a>刪除
-
-如需要求將用於 Xamarin 的 Bugzilla 錯誤報告網站相關的個人資料刪除，使用者可以移至[使用者喜好設定頁面](https://bugzilla.xamarin.com/userprefs.cgi)，然後選擇 [關閉帳戶] 索引標籤****，以關閉其 Xamarin Bugzilla 帳戶。輸入 Bugzilla 密碼，然後勾選方塊，確認您了解這將會永久刪除您的帳戶。系統在收到刪除要求之後，不會將使用者已張貼到 Xamarin Bugzilla 的公開意見反應 (例如，錯誤、問題、註解和解決方案) 刪除。反之，會將公開意見反應加以匿名，方法是將與送出刪除要求的使用者所建立的任何公開意見反應相關聯的名稱和電子郵件地址移除。
+> [!NOTE]
+> Xamarin 的 Bugzilla 不再接受新問題。 前一版的 Xamarin Bugzilla 帳戶擁有者可以在下列網址檢視他們報告之所有錯誤以及新增至錯誤之所有註解的封存於 [https://xamarin.github.io/bugzilla-archives/](https://xamarin.github.io/bugzilla-archives/)。 若要要求刪除封存中所包含的個人資料，使用者可以在 [https://github.com/xamarin/bugzilla-archives/issues/new/choose](https://github.com/xamarin/bugzilla-archives/issues/new/choose) 進行歸檔和發布。 使用者張貼到 Xamarin Bugzilla 的公開意見反應 (例如錯誤、問題、註解和解決方案) 在收到刪除要求後不會被刪除。 透過移除與提交刪除要求的使用者建立之任何公開意見反應相關聯的名稱和電子郵件地址，將匿名公開意見反應。
 
 ## <a name="nuget"></a>NuGet
 
@@ -215,16 +210,6 @@ Xamarin 論壇是由第三方 Vanilla 論壇託管。如需要求刪除您的個
 ### <a name="surveymonkey"></a>SurveyMonkey
 
 有時，我們會邀請客戶透過 SurveyMonkey 提供關於這些產品的意見反應。這項資料會在 28 天內刪除。在處理這些產品的資料主體要求時，如果我們已驗證問卷回應，我們會將其包含在匯入及刪除資料主體要求中。
-
-### <a name="uservoice"></a>UserVoice
-
-我們會邀請客戶在 UserVoice.com 網站提供這些產品的產品建議。這些網站是由 UserVoice 個別運作，而資料主體要求是受 UserVoice 管理。
-
-- [https://visualstudio.uservoice.com/](https://visualstudio.uservoice.com/)
-- [https://aspnet.uservoice.com/](https://aspnet.uservoice.com/)
-- [https://xamarin.uservoice.com/](https://xamarin.uservoice.com/)
-
-如需關於這項資料的資料主體要求，請在[如何匯出您的資料](https://feedback.uservoice.com/knowledgebase/articles/1850245-export-my-personal-data)或[如何刪除您的資料](https://feedback.uservoice.com/knowledgebase/articles/1848856-delete-my-profile-information)上參閱 UserVoice 指導方針。
 
 ## <a name="learn-more"></a>深入了解
 

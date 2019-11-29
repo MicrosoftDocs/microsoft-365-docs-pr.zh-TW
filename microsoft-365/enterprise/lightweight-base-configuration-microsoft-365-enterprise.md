@@ -55,15 +55,15 @@ ms.locfileid: "39202304"
 
 1. 在您的電腦上開啟網際網路瀏覽器，然後移至 [https://aka.ms/e5trial](https://aka.ms/e5trial)。
     
-2. 在 [感謝您選擇 Office 365 E5]**** 頁面上，請於步驟 1 中指定您的新電子郵件帳戶位址。
+2. 在 **[感謝您選擇 Office 365 E5]** 頁面上，請於步驟 1 中指定您的新電子郵件帳戶位址。
 3. 在追蹤訂閱程序的步驟 2 中，輸入要求的資訊，然後執行驗證。
 4. 在步驟 3 中，輸入組織名稱，然後輸入將成為訂閱的全域系統管理員的帳戶名稱。 
 5. 針對步驟 4，在此記錄登入頁面 (選取並複製)：![](./media/Common-Images/TableLine.png) 
 6. 在此記錄使用者識別碼：![](./media/Common-Images/TableLine.png).onmicrosoft.com  
    在安全位置中記錄您輸入的密碼。
-   此值將被稱為「Office 365 全域系統管理員名稱」****。
-8. 按一下 [移至設定]****。
-9. 在 [Office 365 E5 設定] 中，按一下 [繼續在電子郵件和登入中使用 *您的組織*.onmicrosoft.com]****，然後按一下 [結束並稍後再繼續]****。
+   此值將被稱為 **「Office 365 全域系統管理員名稱」**。
+8. 按一下 **[移至設定]**。
+9. 在 [Office 365 E5 設定] 中，按一下 [繼續在電子郵件和登入中使用 **您的組織.*onmicrosoft.com]*，** 然後按一下 **[結束並稍後再繼續]**。
 
 您應該會看到 Microsoft 365 系統管理中心。
   
@@ -75,7 +75,7 @@ ms.locfileid: "39202304"
   
 使用[連線到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) 中的指示，將 Office 365 訂閱從您的電腦連線到 Azure Active Directory PowerShell for Graph 模組。
     
-在 [Windows PowerShell 認證要求]**** 對話方塊中，輸入 Office 365 全域管理員帳戶的使用者名稱 (例如：jdoe@contosotoycompany.onmicrosoft.com) 和密碼。
+在 **[Windows PowerShell 認證要求]** 對話方塊中，輸入 Office 365 全域管理員帳戶的使用者名稱 (例如：jdoe@contosotoycompany.onmicrosoft.com) 和密碼。
   
 填入您的組織名稱 (範例︰contosotoycompany)，代表位置的兩個字元國家/地區代碼、常用帳戶密碼，再從 PowerShell 命令提示字元中執行下列命令：
 
@@ -160,7 +160,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
     
 2. 在 [Microsoft 365 系統管理中心] **** 頁面的左側導覽中，按一下 [帳單 > 購買服務]****。
     
-3. 在 [購買服務]**** 頁面上，按一下 [Microsoft 365 E5]****，然後按一下 [取得免費試用]****。
+3. 在 **[購買服務]** 頁面上，按一下 **[Microsoft 365 E5]**，然後按一下 **[取得免費試用]**。
 
 4. 在 [Microsoft 365 E5 試用版]**** 頁面上，選擇要收到簡訊或電話、輸入您的電話號碼，然後按一下 [傳送簡訊給我]**** 或 [打電話給我]****。 執行驗證。
 
@@ -168,15 +168,15 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 6. 在 [訂單收據]**** 頁面上，按一下 [繼續]****。
 
-7. 在 Microsoft 365 系統管理中心中，按一下 [使用者] > [作用中使用者]****。
+7. 在 Microsoft 365 系統管理中心中，按一下 [使用者] > **[作用中使用者]**。
 
-8. 在 [作用中使用者]**** 中，按一下您的系統管理員帳戶。
+8. 在 **[作用中使用者]** 中，按一下您的系統管理員帳戶。
 
-9. 按一下 [授權與 App]****。
+9. 按一下 **[授權與 App]**。
 
 10. 停用 Office 365 企業版 E5 授權，然後啟用 Microsoft 365 E5 授權。
 
-11. 按一下 [儲存變更]****，然後關閉使用者帳戶資訊窗格。
+11. 按一下 **[儲存變更]**，然後關閉使用者帳戶資訊窗格。
 
 接下來，請為所有其他帳戶 (使用者 2、使用者 3、使用者 4 和使用者 5) 重複先前程序的步驟 8 至 11。
   

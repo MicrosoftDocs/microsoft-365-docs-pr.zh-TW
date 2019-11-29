@@ -3,7 +3,7 @@ title: 使用保留標籤與 DLP 來保護 SharePoint Online 檔案
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/18/2019
+ms.date: 11/27/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,18 +18,16 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 摘要：使用各種資訊保護層級，對 SharePoint Online 小組網站套用保留標籤和資料外洩防護 (DLP) 原則。
-ms.openlocfilehash: 5c7d267b37f024d4defa34b4dfbeff3ba9255ac5
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+ms.openlocfilehash: 4c9eb83cbde7d54706f109484257e97c22c4733c
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38710012"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631002"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>使用保留標籤與 DLP 來保護 SharePoint Online 檔案
 
- **摘要：** 使用各種資訊保護層級，對 SharePoint Online 小組網站套用保留標籤和資料外洩防護 (DLP) 原則。
-  
-您可以使用本文中的步驟，為基準、機密和高度機密 SharePoint Online 小組網站設計及部署保留標籤和 DLP 原則。 如需這三種保護層級的詳細資訊，請參閱[保護 SharePoint Online 網站與檔案](/security/office-365-security/secure-sharepoint-online-sites-and-files.md)。
+您可以使用本文中的步驟，為基準、機密和高度機密 SharePoint Online 小組網站設計及部署保留標籤和 DLP 原則。 如需這三種保護層級的詳細資訊，請參閱[保護 SharePoint Online 網站與檔案](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)。
   
 ## <a name="how-this-works"></a>如何進行此作業
 
@@ -152,7 +150,7 @@ ms.locfileid: "38710012"
     
 14. 在 [Customize policy tips and email notifications]\(自訂原則提示和電子郵件通知)**** 窗格中，按一下 [Customize the policy tip text]\(自訂原則提示文字)****。
     
-15. 在文字方塊中，根據您是否實作 Azure 資訊保護來保護高度機密的檔案，以鍵入或貼上下列其中一個提示：
+15. 在文字方塊中，根據您是否使用敏感度標籤來保護高度機密的檔案，請輸入或貼上下列其中一個提示：
     
   - 若要與組織外部的使用者共用，請下載檔案，然後將它開啟。 依序按一下 [檔案]、[保護文件] 和 [以密碼加密]，然後指定強式密碼。 以個別電子郵件或其他通訊方式傳送密碼。
   - 高度機密的檔案會受加密保護。只有獲得您 IT 部門授與權限的外部使用者可以讀取它們。
@@ -217,9 +215,9 @@ ms.locfileid: "38710012"
   
 ![使用 [高度機密性] 保留標籤之隔離 SharePoint Online 小組網站的 DLP 原則](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
-[使用 Azure 資訊保護來保護 SharePoint Online 檔案](protect-sharepoint-online-files-with-azure-information-protection.md)
+[使用敏感度標籤來保護 SharePoint Online 檔案](protect-sharepoint-online-files-with-sensitivity-label.md)
     
 ## <a name="see-also"></a>另請參閱
 

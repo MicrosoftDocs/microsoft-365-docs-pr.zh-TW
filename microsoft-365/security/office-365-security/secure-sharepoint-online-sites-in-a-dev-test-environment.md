@@ -3,7 +3,7 @@ title: 在開發/測試環境中保護 SharePoint Online 網站
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/18/2019
+ms.date: 11/26/2019
 audience: ITPro
 ms.topic: article
 ms.collection:
@@ -15,57 +15,39 @@ localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
-description: 摘要：在開發/測試環境中建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。
-ms.openlocfilehash: 6bf18c3d010d7e624666745842f7f3c41176b1b3
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+description: 摘要：在開發/測試環境中建立敏感性及高度機密的 SharePoint Online 小組網站。
+ms.openlocfilehash: a88701720147c8bd3e53572c27ba4a1949746cae
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035693"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631635"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>在開發/測試環境中保護 SharePoint Online 網站
 
- **摘要：** 在開發/測試環境中建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。
+本文提供建立開發/測試環境的逐步指示，其中包含 [保護 SharePoint Online 網站和檔案](secure-sharepoint-online-sites-and-files.md) 解決方案的敏感性和高度機密 SharePoint 網站。
   
-本文提供建立開發/測試環境的逐步指示，以在環境中包含[保護 SharePoint Online 網站與檔案解決方案](secure-sharepoint-online-sites-and-files.md)所提之四種不同類型的 SharePoint Online 小組網站。
+![敏感性和高度機密的 SharePoint Online 檔案網站。](../media/sensitive-highly-confidential-sp-sites-dev-test.png)
   
-![安全的 SharePoint Online 開發/測試環境中的所有四個小組網站。](../media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+在生產環境中部署這些類型的小組網站之前，可使用此開發/測試環境來試驗和微調設定，以符合您的特定需求。
   
-您可以先使用此開發/測試環境，來試驗資訊保護行為，並針對特定需求微調設定，然後再將 SharePoint Online 小組網站部署在生產環境中。
-  
-## <a name="phase-1-create-your-devtest-environment"></a>階段 1：建立開發/測試環境
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1：建置您的 Microsoft 365 企業版測試環境
 
-在這個階段中，您會為虛構組織取得 Office 365 與 Enterprise Mobility + Security (EMS) 試用訂閱。
-  
-首先，請遵循 [Office 365 開發/測試環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)的**階段 2** 中的指示進行。
-  
-接著，註冊 EMS 試用訂閱，並將它新增至與 Office 365 試用訂閱相同的組織。
-  
-1. 如果需要，請使用試用訂閱的全域管理員帳戶認證登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com)。
-    
-2. 按一下左導覽中的 [計費] > [購買服務]****。
-    
-3. 在 [購買服務]**** 頁面上，尋找 **Enterprise Mobility + Security E5** 項目。將滑鼠指標停留在上面，並且按一下 [開始免費試用]****。
-    
-4. 在 [確認訂單]**** 頁面上，按一下 [立即試用]****。
-    
-5. 在 [訂單收據]**** 頁面上，按一下 [繼續]****。
-    
-接下來，啟用全域管理員帳戶的 Enterprise Mobility + Security E5 授權。
-  
-1. 在瀏覽器的 [Microsoft 365 系統管理中心]**** 索引標籤上，按一下左導覽中的 [使用者] > [作用中使用者]****。
-    
-2. 按一下您的全域系統管理員帳戶，然後按一下 [產品授權]**** 的 [編輯]****。
-    
-3. 在 [產品授權]**** 窗格中，將 [**Enterprise Mobility + Security E5**] 的產品授權設為 [開啟]****，按一下 [儲存]****，然後按兩次 [關閉]****。
+如果只想要以最小的需求，透過輕量級方式測試敏感性和高度機密小組網站，請依照[輕量型基本組態](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)中的指示進行。
+
+如果想要在模擬的企業中測試敏感性和高度機密小組網站，請依照[密碼雜湊同步處理](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment)中的指示進行。
+
+>[!Note]
+>測試敏感性和高度機密小組網站不需要模擬的企業測試環境，其中包括模擬的內部網路 (連線到網際網路) 與 Active Directory Domain Services (AD DS) 樹系中的目錄同步處理。 此處提供的選項可供您測試敏感性和組織的環境中進行試驗。
+>
     
 ## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups-and-users"></a>階段 2：建立和設定 Azure Active Directory (AD) 群組和使用者
 
 在這個階段中，您會為虛構組織建立和設定 Azure AD 群組和使用者。
   
-首先，利用 Azure 入口網站建立一組典型組織的群組。
+首先，利用 Azure 入口網站建立兩個典型組織的群組。
   
-1. 在瀏覽器中另外建立索引標籤，然後移至 Azure 入口網站 (網址為 [https://portal.azure.com](https://portal.azure.com))。若有需要，請使用 Office 365 E5 試用訂閱的全域管理員帳戶認證登入。
+1. 在瀏覽器中建立個別索引標籤，然後移至 Azure 入口網站 (網址為 [https://portal.azure.com](https://portal.azure.com))。 如果需要，請使用 Microsoft 365 E5 試用或付費訂閱的全域系統管理員帳戶認證登入。
     
 2. 在 Azure 入口網站中，按一下 [Azure Active Directory] > [群組]****。
     
@@ -73,7 +55,7 @@ ms.locfileid: "38035693"
     
 4. 在 [群組]**** 刀鋒視窗中：
     
-  - 選取 [群組類型]**** 中的 [Office 365]****。
+  - 在 [群組類型]**** 中選取 [安全性]****。
     
   - 在 [名稱]**** 中輸入**高階主管**。
     
@@ -81,25 +63,13 @@ ms.locfileid: "38035693"
       
 5. 按一下 [建立]****，然後關閉 [群組]**** 刀鋒視窗。
     
-6. 重複步驟 3-5，逐一設定下列群組名稱：
-    
-  - IT 人員
-    
-  - 研究人員
-    
-  - 一般人員
-    
-  - 行銷人員
-    
-  - 銷售人員
-    
-7. 瀏覽器中的 [Azure 入口網站] 索引標籤請保持開啟。
+6.  針對名為「行銷人員」**** 的新群組，重複步驟 3-5。
     
 接下來，設定自動授權，讓群組成員自動獲指派 Office 365 和 EMS 訂閱的授權。
   
 1. 在 Azure 入口網站中，按一下 [Azure Active Directory] > [授權] > [所有產品]****。
     
-2. 在清單中，選取 [Enterprise Mobility + Security E5]**** 和 [Office 365 企業版 E5]****，然後按一下 [指派]****。
+2. 在清單中，選取 [Microsoft 365 企業版 E5]****，然後按一下 [指派]****。
     
 3. 在 [指派授權]**** 刀鋒視窗中，按一下 [使用者和群組]****。
     
@@ -107,15 +77,7 @@ ms.locfileid: "38035693"
     
   - 高層主管
     
-  - IT 人員
-    
-  - 研究人員
-    
-  - 一般人員
-    
   - 行銷人員
-    
-  - 銷售人員
     
 5. 按一下 [選取]****，然後按一下 [指派]****。
     
@@ -140,36 +102,8 @@ ForEach ($element in $userNames){
 New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location 
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $element }).ObjectID -ObjectId $groupID
 }
-$groupName="IT staff"
-$userNames=@("ITAdmin1","ITAdmin2") 
-$groupID=(Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
-ForEach ($element in $userNames){ 
-New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location 
-Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $element }).ObjectID -ObjectId $groupID
-}
-$groupName="Research staff"
-$userNames=@("Researcher1") 
-$groupID=(Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
-ForEach ($element in $userNames){ 
-New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location 
-Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $element }).ObjectID -ObjectId $groupID
-}
-$groupName="Regular staff"
-$userNames=@("Regular1", "Regular2") 
-$groupID=(Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
-ForEach ($element in $userNames){ 
-New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location 
-Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $element }).ObjectID -ObjectId $groupID
-}
 $groupName="Marketing staff"
 $userNames=@("Marketing1", "Marketing2") 
-$groupID=(Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
-ForEach ($element in $userNames){ 
-New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location 
-Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $element }).ObjectID -ObjectId $groupID
-}
-$groupName="Sales staff"
-$userNames=@("SalesPerson1") 
 $groupID=(Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ForEach ($element in $userNames){ 
 New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location 
@@ -188,12 +122,11 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 3. 在使用者清單中，按一下 [CEO]****。
     
-4. 在列出 **CEO** 使用者帳戶內容的窗格中，確認已獲指派 [Enterprise Mobility + Security E5]**** 和 [Office 365 Enterprise E5]**** 授權 (在 [Product licenses]\(產品授權)**** 中)。
+4. 在列出 **CEO** 使用者帳戶內容的窗格中，確認已獲指派 [Microsoft 365 企業版 E5]**** 授權 (在 [產品授權]**** 中)。
     
 ## <a name="phase-3-create-office-365-retention-labels"></a>階段 3：Office 365 保留標籤
 
-在這個階段中，您會為 SharePoint Online 小組網站的文件資料夾，建立不同安全性層級的保留標籤。
-
+在此階段中為 SharePoint 小組網站的文件，建立保留標籤。
 
 1. 請使用您的全域系統管理員帳戶登入 [Microsoft 365 合規性入口網站](https://compliance.microsoft.com)。
     
@@ -201,7 +134,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 3. 按一下 [保留標籤] > [建立標籤]****。
     
-4. 在 [命名您的標籤]**** 窗格中，在 [命名您的標籤]**** 中輸入 **內部公用**，然後按一下 [下一步]****。
+4. 在 [命名您的標籤]**** 窗格的 [命名您的標籤]**** 中輸入**敏感性**，然後按一下 [下一步]****。
 
 5. 在 [檔案計畫描述元]**** 窗格中，按一下 [下一步]****。
     
@@ -209,14 +142,8 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 7. 在 [檢閱您的設定]**** 窗格中，按一下 [建立標籤]****。
     
-8. 針對以下名稱的標籤，重複步驟 3-7：
+8. 重複步驟 3-7，將其他保留標籤命名為**高度機密**。
     
-  - 私人
-    
-  - 敏感性
-    
-  - 高度機密
-  
 9. 從 [首頁] > [標籤]**** 窗格中，按一下 [Publish labels]\(發佈標籤)****。
     
 10. 在 [選擇要發佈的標籤]**** 窗格中，按一下 [選擇要發佈的標籤]****。
@@ -233,142 +160,27 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 16. 在 [檢閱您的設定]**** 窗格中，按一下 [發佈標籤]****，然後按一下 [關閉]****。
     
-## <a name="phase-4-create-your-sharepoint-online-team-sites"></a>階段 4：建立 SharePoint Online 小組網站
+## <a name="phase-4-create-your-team-sites"></a>階段 4：建立小組網站
 
-在這個階段中，您會為範例組織建立和設定四種類型的 SharePoint Online 小組網站。
-  
-### <a name="organization-wide-team-site"></a>整個組織的小組網站
+在此階段中，為範例組織建立並設定敏感性和高度機密小組網站。
 
-若要建立公用的基準 SharePoint Online 小組網站，請執行下列作業：
-  
-1. 如果需要，請使用試用訂閱的全域管理員帳戶認證登入 [Office 365 入口網站](https://portal.office.com)。
-    
-2. 在磚清單中，按一下 [SharePoint]****。
-    
-3. 在瀏覽器的新 [SharePoint]**** 索引標籤上，按一下 [+ 建立網站]****。
-    
-4. 在 [建立網站]**** 頁面上，按一下 [小組網站]****。
-    
-5. 在 [網站名稱]**** 中，鍵入「整個組織」****。 
-    
-6. 在 [小組網站描述]**** 中輸入**整個組織的 SharePoint 網站**。
-    
-7. 在 [隱私權設定]**** 中，選取 [公用 - 組織中的任何人都可以存取此網站]****，然後按一下 [下一步]****。
-    
-8. 在 [您想要新增誰?]**** 窗格上，按一下 [完成]****。
-    
-接下來，針對 [內部公用] 標籤設定整個組織的小組網站的文件資料夾。
-  
-1. 在瀏覽器的 [整個組織 - 首頁]**** 索引標籤中，按一下 [文件]****。
-    
-2. 按一下設定圖示，然後按一下 [文件庫設定]****。
-    
-3. 在 [權限與管理]**** 下，按一下 [Apply label to items in this library]\(將標籤套用至此文件庫中的項目)****。
-    
-4. 在 [設定 - 套用標籤]**** 中，選取 [內部公用]****，然後按一下 [儲存]****。
-    
-### <a name="project-1-team-site"></a>專案 1 小組網站
+### <a name="sensitive-team-site-for-marketing-campaigns"></a>行銷活動的敏感性小組網站
 
-若要為組織內部的專案建立私用的基準 SharePoint Online 小組網站，請執行下列作業：
-  
-1. 如果需要，請使用試用訂閱的全域管理員帳戶認證登入 [Office 365 入口網站](https://portal.office.com)。
-    
-2. 在磚清單中，按一下 [SharePoint]****。
-    
-3. 在瀏覽器的新 [SharePoint]**** 索引標籤上，按一下 [+ 建立網站]****。
-    
-4. 在 [建立網站]**** 頁面上，按一下 [小組網站]****。
-    
-5. 在 [網站名稱]**** 中輸入**專案 1**。 
-    
-6. 在 [小組網站描述]**** 中輸入**專案 1 的 SharePoint 網站**。
-    
-7. 在 [隱私權設定]**** 中，選取 [私人 - 只有成員可以存取此網站]****，然後按一下 [下一步]****。
-    
-8. 在 [您想要新增誰?]**** 窗格上，按一下 [完成]****。
-    
-接下來，為「專案 1」小組網站的文件資料夾設定「私用」標籤。
-  
-1. 在瀏覽器的 [專案 1 - 首頁]**** 索引標籤中，按一下 [文件]****。
-    
-2. 按一下設定圖示，然後按一下 [文件庫設定]****。
-    
-3. 在 [權限與管理]**** 下，按一下 [Apply label to items in this library]\(將標籤套用至此文件庫中的項目)****。
-    
-4. 在 [設定 - 套用標籤]**** 中，選取 [私用]****，然後按一下 [儲存]****。
-    
-### <a name="marketing-campaigns-team-site"></a>行銷活動小組網站
+首先，為行銷群組成員建立敏感性層級小組網站，以便共同處理持續中的行銷活動。
 
-若要為行銷活動資源建立敏感性層級的隔離 SharePoint Online 小組網站，請執行下列作業：
+1. [建立新的私人小組網站](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)，且名稱為**行銷活動**。
+2.  在 SharePoint 小組網站的工具列中，按一下設定圖示，然後按一下 [網站權限]****。
+3.  在 [網站權限]**** 窗格的 [共用設定]**** 之下，按一下 [變更共用設定]****。
+4.  在 [共用權限]**** 之下，選擇 [只有網站擁有者可以共用檔案、資料夾及網站]****，然後按一下 [儲存]****。
 
- 
-1. 如果需要，請使用試用訂閱的全域管理員帳戶認證登入 [Office 365 入口網站](https://portal.office.com)。
-    
-2. 在磚清單中，按一下 [SharePoint]****。
-    
-3. 在瀏覽器的新 [SharePoint]**** 索引標籤上，按一下 [+ 建立網站]****。
-    
-4. 在 [建立網站]**** 頁面上，按一下 [小組網站]****。
-    
-5. 在 [小組網站名稱]**** 中，鍵入「行銷活動」****。
-    
-6. 在 [小組網站描述]**** 中，輸入**行銷活動的 SharePoint 網站 (敏感性)**。
-    
-7.  在 [隱私權設定]**** 中，選取 [私人 - 只有成員可以存取此網站]****，然後按一下 [下一步]****。
-    
-8. 在 [您想要新增誰?]**** 窗格上，按一下 [完成]****。
-    
-9. 在瀏覽器中新的 [行銷活動]**** 索引標籤上，在工具列中按一下設定圖示，然後按一下 [網站權限]****。
-    
-10. 在 [網站權限]**** 窗格中，按一下 [進階權限設定]****。
-    
-11. 在瀏覽器的新 [權限]**** 索引標籤中，按一下 [存取要求設定]****。
-    
-12. 在 [存取要求設定]**** 對話方塊中，清除 [允許成員共用網站以及個別檔案和資料夾]**** 和 [允許成員邀請其他人加入網站成員群組]**** 核取方塊，在 [傳送存取的所有要求]**** 中輸入 **ITAdmin1@**\<your organization name>**.onmicrosoft.com**，然後按一下 [確定]****。
-    
-13. 按一下清單中的 [行銷活動成員]****。
-    
-14. 在 [人員與群組]**** 頁面上，按一下 [新增]****。
-    
-15. 在 [共用]**** 對話方塊中，輸入**行銷人員**並加以選取，然後按一下 [共用]****。
-    
-16. 針對 **Researcher1** 使用者帳戶，重複步驟 14 和 15。
-    
-17. 按一下瀏覽器上的 [上一頁] 按鈕。
-    
-18. 按一下清單中的 [行銷活動擁有者]****。
-    
-19. 在 [人員與群組]**** 頁面上，按一下 [新增]****。
-    
-20. 在 [共用]**** 對話方塊中，鍵入 **IT 人員**，並加以選取，然後按一下 [共用]****。
-    
-21. 按一下瀏覽器上的 [上一頁] 按鈕。
-    
-22. 關閉瀏覽器中的 [人員與群組]**** 索引標籤，按一下瀏覽器中的 [行銷活動 - 首頁]**** 索引標籤，然後關閉 [網站權限]**** 窗格。
-    
-以下是設定權限的結果：
-  
-- 「行銷活動 - 成員」**** 的 SharePoint 群組僅包含「行銷活動」**** 群組 (其中包含全域管理員使用者帳戶)、「行銷人員」**** 群組 (其中包含 Marketing1 和 Marketing2 使用者帳戶) 和 **Researcher1** 使用者帳戶。
-    
-- 「行銷活動 - 擁有者」**** 的 SharePoint 群組僅包含「IT 人員」**** 群組 (其中僅包含 ITAdmin1 和 ITAdmin2 使用者帳戶)。
-    
-- 「行銷活動 - 訪客」**** 的 SharePoint 群組未包含任何群組或使用者帳戶。
-    
-- 成員無法修改網站層級的權限 (這只能由**行銷活動 - 擁有者**群組成員來執行)。
-    
-- 其他使用者帳戶無法存取網站或其資源，但可以將電子郵件傳送至 ITAdmin1 使用者帳戶信箱，以要求存取網站。
-    
-接下來，為「行銷活動」小組網站的文件資料夾設定「敏感性」標籤。
-  
-1. 在瀏覽器的 [行銷活動 - 首頁]**** 索引標籤中，按一下 [文件]****。
-    
-2. 按一下設定圖示，然後按一下 [文件庫設定]****。
-    
-3. 在 [權限與管理]**** 下，按一下 [Apply label to items in this library]\(將標籤套用至此文件庫中的項目)****。
-    
-4. 在 [設定 - 套用標籤]**** 中，選取 [敏感性]****，然後按一下 [儲存]****。
-    
-接下來，設定資料外洩防護 (DLP) 原則；當使用者在組織外部共用具「敏感性」標籤之 SharePoint Online 小組網站 (包含「行銷活動」網站) 上的文件時，即會通知使用者。
+接下來，為行銷活動 SharePoint 小組網站的文件資料夾設定敏感性保留標籤。
+
+1.  在瀏覽器的 [行銷活動 - 首頁]**** 索引標籤中，按一下 [文件]****。
+2.  按一下設定圖示，然後按一下 [文件庫設定]****。
+3.  在 [權限與管理]**** 下，按一下 [Apply label to items in this library]\(將標籤套用至此文件庫中的項目)****。
+4.  在 [設定 - 套用標籤]**** 中，選取 [敏感性]****，然後按一下 [儲存]****。 
+
+接下來，設定資料外洩防護 (DLP) 原則，當使用者在組織外部共用具「敏感性」標籤的文件 (包含「行銷活動」網站文件) 時，即會通知使用者。
 
 1. 請使用您的全域系統管理員帳戶登入 [Microsoft 365 合規性入口網站](https://compliance.microsoft.com/)。
     
@@ -378,7 +190,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 4. 在 [從範本開始或建立自訂原則]**** 窗格中，按一下 [自訂]****，然後按一下 [下一步]****。
     
-5. 在 [命名您的原則]**** 窗格的 [名稱]**** 中，鍵入 **Sensitive label SharePoint Online team sites**，然後按一下 [下一步]****。
+5. 在 [命名您的原則]**** 窗格的 [名稱]**** 中，輸入**敏感性標籤 SharePoint 網站**，然後按一下 [下一步]****。
     
 6. 在 [選擇位置]**** 窗格中，按一下 [Let me choose specific locations]\(讓我選擇特定位置)****，然後按一下 [下一步]****。
     
@@ -398,7 +210,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 14. 在 [Customize policy tips and email notifications]\(自訂原則提示和電子郵件通知)**** 窗格中，按一下 [Customize the policy tip text]\(自訂原則提示文字)****。
     
-15. 在文字方塊中，根據您是否實作 Azure 資訊保護來保護高度機密的檔案，以鍵入或貼上下列其中一個提示：
+15. 在文字方塊中，鍵入或貼上下列內容：
     
   - 若要與組織外部的使用者共用，請下載檔案，然後將它開啟。 依序按一下 [檔案]、[保護文件] 和 [以密碼加密]，然後指定強式密碼。 以個別電子郵件或其他通訊方式傳送密碼。
     
@@ -409,74 +221,25 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 18. 在 [要先開啟原則或測試內容嗎?]**** 窗格中，按一下 [是]**** 立即將它開啟，然後按一下 [下一步]****。
     
 19. 在 [檢閱您的設定]**** 窗格中，按一下 [建立]****，然後按一下 [關閉]****。
-  
+
 ### <a name="company-strategy-team-site"></a>公司策略小組網站
 
-若要為組織執行長的公司策略資源，建立高度機密層級的隔離 SharePoint Online 小組網站，請執行下列作業：
-  
-1. 如果需要，請使用試用訂閱的全域管理員帳戶認證登入 [Office 365 入口網站](https://portal.office.com)。
-    
-2. 在磚清單中，按一下 [SharePoint]****。
-    
-3. 在瀏覽器的新 [SharePoint]**** 索引標籤上，按一下 [+ 建立網站]****。
-    
-4. 在 [建立網站]**** 頁面上，按一下 [小組網站]****。
-    
-5. 在 [小組網站名稱]**** 中，鍵入「公司策略」****。
-    
-6. 在 [小組網站描述]**** 中，輸入**公司策略的 SharePoint 網站 (高度機密)**。
-    
-7.  在 [隱私權設定]**** 中，選取 [私人 - 只有成員可以存取此網站]****，然後按一下 [下一步]****。
-    
-8. 在 [您想要新增誰?]**** 窗格上，按一下 [完成]****。
-    
-9. 在瀏覽器中新的 [活動策略]**** 索引標籤上，在工具列中按一下設定圖示，然後按一下 [網站權限]****。
-    
-10. 在 [網站權限]**** 窗格中，按一下 [進階權限設定]****。
-    
-11. 在瀏覽器的新 [權限]**** 索引標籤中，按一下 [存取要求設定]****。
-    
-12. 在 [存取要求設定]**** 對話方塊中，清除 [允許成員共用網站以及個別檔案和資料夾]**** 和 [允許成員邀請其他人加入網站成員群組]**** \(亦即清除所有三個核取方塊)，然後按一下 [確定]****。
-    
-13. 按一下清單中的 [活動策略成員]****。
-    
-14. 在 [人員與群組]**** 頁面上，按一下 [新增]****。
-    
-15. 在 [共用]**** 對話方塊中，輸入**高層主管**並加以選取，然後按一下 [共用]****。
-    
-16. 按一下清單中的 [活動策略擁有者]****。
-    
-17. 在 [人員與群組]**** 頁面上，按一下 [新增]****。
-    
-18. 在 [共用]**** 對話方塊中，鍵入 **IT 人員**，並加以選取，然後按一下 [共用]****。
-    
-19. 按一下瀏覽器上的 [上一頁] 按鈕。
-    
-20. 關閉瀏覽器中的 [人員與群組]**** 索引標籤，按一下瀏覽器中的 [活動策略 - 首頁]**** 索引標籤，然後關閉 [網站權限]**** 窗格。
-    
-以下是設定權限的結果：
-  
-- 「公司策略 - 成員」的 SharePoint 群組僅包含「高層主管」群組 (其中僅包含 CEO、CFO 和 CIO 使用者帳戶) 和「公司策略」群組 (其中僅包含全域管理員使用者帳戶)。
-    
-- **公司策略 - 擁有者** SharePoint 群組僅包含 **IT 人員**群組 (其中僅包含 ITAdmin1 和 ITAdmin2 使用者帳戶)。
-    
-- **公司策略 - 訪客** SharePoint 群組未包含任何群組或使用者帳戶。
-    
-- 成員無法修改網站層級的權限 (這只能由「公司策略 - 擁有者」群組成員來執行)。
-    
-- 其他使用者帳戶無法存取網站或其資源，或要求存取網站。 網站的額外權限必須由全域管理員或「公司策略 - 擁有者」群組成員來執行。
-    
-接下來，為「公司策略」小組網站的文件資料夾設定「高度機密」標籤。
-  
-1. 在瀏覽器的 [公司策略 - 首頁]**** 索引標籤中，按一下 [文件]****。
-    
-2. 按一下設定圖示，然後按一下 [文件庫設定]****。
-    
-3. 在 [權限與管理]**** 下，按一下 [Apply label to items in this library]\(將標籤套用至此文件庫中的項目)****。
-    
-4. 在 [設定 - 套用標籤]**** 中，選取 [高度機密]****，然後按一下 [儲存]****。
-    
-接下來，設定 DLP 原則；當使用者在組織外部共用具「高度機密」標籤之 SharePoint Online 小組網站 (包含「公司策略」網站) 上的文件時，即會封鎖使用者。
+首先，為資深領導小組建立高度機密層級小組網站，以共同處理公司策略。
+
+1. [建立新的私人小組網站](https://support.office.com/article/create-a-team-site-in-sharepoint-ef10c1e7-15f3-42a3-98aa-b5972711777d)，且名稱為**公司策略**。
+2.  在 SharePoint 小組網站的工具列中，按一下設定圖示，然後按一下 [網站權限]****。
+3.  在 [網站權限]**** 窗格的 [共用設定]**** 之下，按一下 [變更共用設定]****。
+4.  在 [共用權限]**** 之下，選擇 [只有網站擁有者可以共用檔案、資料夾及網站]****。
+5.  關閉 [允許存取要求]****，然後按一下 [儲存]****。
+
+接下來，為「公司策略」 SharePoint 小組網站的文件資料夾設定「高度機密」標籤。
+
+1.  在瀏覽器的 [公司策略 - 首頁]**** 索引標籤中，按一下 [文件]****。
+2.  按一下設定圖示，然後按一下 [文件庫設定]****。
+3.  在 [權限與管理]**** 下，按一下 [Apply label to items in this library]\(將標籤套用至此文件庫中的項目)****。
+4.  在 [設定 - 套用標籤]**** 中，選取 [高度機密]****，然後按一下 [儲存]****。 
+
+接下來，設定 DLP 原則，當使用者在組織外部共用具「高度機密」標籤之文件 (包含「公司策略」網站文件) 時，即會封鎖使用者。
   
 1. 請使用您的全域系統管理員帳戶登入 [Microsoft 365 合規性入口網站](https://compliance.microsoft.com/)。
     
@@ -486,7 +249,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 4. 在 [從範本開始或建立自訂原則]**** 窗格中，按一下 [自訂]****，然後按一下 [下一步]****。
     
-5. 在 [命名您的原則]**** 窗格的 [名稱]**** 中，鍵入 **Highly Confidential label SharePoint Online team sites**，然後按一下 [下一步]****。
+5. 在 [命名您的原則]**** 窗格的 [名稱]**** 中，輸入**高度機密標籤 SharePoint 網站**，然後按一下 [下一步]****。
     
 6. 在 [選擇位置]**** 窗格中，按一下 [Let me choose specific locations]\(讓我選擇特定位置)****，然後按一下 [下一步]****。
     
@@ -506,7 +269,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 14. 在 [Customize policy tips and email notifications]\(自訂原則提示和電子郵件通知)**** 窗格中，按一下 [Customize the policy tip text]\(自訂原則提示文字)****。
     
-15. 在文字方塊中，根據您是否實作 Azure 資訊保護來保護高度機密的檔案，以鍵入或貼上下列其中一個提示：
+15. 在文字方塊中，鍵入或貼上下列內容：
     
   - 若要與組織外部的使用者共用，請下載檔案，然後將它開啟。 依序按一下 [檔案]、[保護文件] 和 [以密碼加密]，然後指定強式密碼。 以個別電子郵件或其他通訊方式傳送密碼。
     
@@ -517,61 +280,20 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 18. 在 [要先開啟原則或測試內容嗎?]**** 窗格中，按一下 [是]**** 立即將它開啟，然後按一下 [下一步]****。
     
 19. 在 [檢閱您的設定]**** 窗格中，按一下 [建立]****，然後按一下 [關閉]****。
-   
-    
-接下來，遵循[使用 Office 365 系統管理中心啟用 Azure RMS](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) 中的指示進行。
-  
-接著，遵循下列步驟，設定新的 Azure 資訊保護原則和子標籤，為高階主管群組提供保護及權限：
-  
-1. 若需要，使用您的全域系統管理員帳戶登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com)。
-    
-2. 在您瀏覽器的個別索引標籤中，移至 Azure 入口網站 ([https://portal.azure.com](https://portal.azure.com))。
-    
-3. 如果這是您第一次設定 Azure 資訊保護，請參閱這些[指示](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)。
-    
-4. 在清單窗格中，按一下 [所有服務]****，輸入**資訊**，然後按一下 [Azure 資訊保護]****。
 
-5. 按一下 [標籤]****。
-    
-6. 以滑鼠右鍵按一下 [高度機密]**** 標籤，然後再按一下 [新增子標籤]****。
-    
-7. 在 [名稱]**** 與 [描述]**** 中輸入 **高階主管成員**。
-    
-8. 在 [為包含此標籤的文件與電子郵件設定權限]**** 中，按一下 [保護]****。
-    
-9. 在 [保護]**** 區段中，按一下 [Azure (雲端金鑰)]****。
-    
-10. 在 [保護]**** 刀鋒視窗中，按一下 [保護設定]**** 下的 [+ 新增權限]****。
-    
-11. 在 [新增權限]**** 刀鋒視窗中，按一下 [指定使用者與群組]**** 下的 [+ 瀏覽目錄]****。
-    
-12. 在 [AAD 使用者與群組]**** 窗格中，選取 [高階主管]****，然後按一下 [選取]****。
-    
-13. 在 [選擇預設的權限，或設定自訂]**** 下，按一下 [自訂]****，然後選取 [檢視權限]****、[編輯內容]****、[儲存]****、[回覆]****、[全部回覆]**** 核取方塊。
-    
-14. 按兩次 [確定]****。
-    
-15. 在 [子標籤]**** 刀鋒視窗中，按一下 [儲存]****，然後按一下 [確定]****。
+使用[下列指示](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)設定包含下列設定的敏感性標籤：
 
-16. 在 [Azure 資訊保護]**** 刀鋒視窗中，按一下 [原則] > [+ 新增原則]****。
-    
-17. 在 [原則名稱]**** 中輸入 **公司策略**，並在 [描述]**** 中輸入**公司策略小組網站中的文件**。
-    
-18. 按一下 [選取取得此原則的使用者或群組] > [使用者/群組]****，然後選取 [高階主管]****。
-    
-19. 按一下 [選取] > [確定]****。
+- 標籤的名稱是「公司策略」
+- 已啟用加密
+- 公司策略群組具有共同撰寫權限
 
-20. 按一下 [新增或移除標籤]****。在 [原則: 新增或移除標籤]**** 窗格中，按一下 [高階主管]****，然後按一下 [確定]****。   
+建立之後，發佈新標籤。 如果您以公司策略群組的成員身分登入，您會在 Word、Excel 和 PowerPoint 的 [常用] 工具列中看到 [敏感性] 選項中的新標籤。 從 [靈敏性] 選項中選取 [公司策略] 標籤，將標籤指派給檔案。
 
-21. 按一下 [儲存]****，然後按一下 [確定]****。
-    
-若要使用 Azure 資訊保護和這個新標籤來保護文件，您必須在測試電腦上[安裝 Azure 資訊保護用戶端](https://docs.microsoft.com/information-protection/rms-client/install-client-app)，並從系統管理中心安裝 Office，然後從 Microsoft Word 使用試用訂閱的**高階主管**群組中的帳戶登入。
-  
-您現在準備好建立這四個網站中的文件，以及使用您試用訂用帳戶中的不同使用者帳戶來測試與其的存取。
-  
-以下是所有四種 SharePoint Online 小組網站的整體設定。
-  
-![安全的 SharePoint Online 開發/測試環境中的所有四個小組網站。](../media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+在「公司策略」 SharePoint 網站文件區段中的檔案，會獲指派「高度機密」保留標籤，而且受限於設定的 DLP 原則。 也可以將公司策略敏感度標籤指派給檔案。    
+
+以下是「行銷活動」和「公司策略」小組網站產生的設定。
+
+![敏感性和高度機密的 SharePoint Online 檔案網站。](../media/sensitive-highly-confidential-sp-sites-dev-test.png)
   
 ## <a name="next-step"></a>下一步
 

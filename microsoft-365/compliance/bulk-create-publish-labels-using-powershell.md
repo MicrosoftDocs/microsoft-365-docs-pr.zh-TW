@@ -13,19 +13,19 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: 在 Office 365 中，您可以使用保留標籤來為您的組織實作保留排程。做為記錄管理員或合規性主管，您可能有數百個要建立及發佈的保留標籤。您可以透過安全性與合規性中心的 UI 來執行此動作，但一次建立一個保留標籤費時且無效率。使用下面提供的指令碼和 .csv 檔案，您可以大量建立及發佈保留標籤與保留標籤原則。首先在 Excel 中建立保留標籤清單以及保留標籤原則清單，然後使用 PowerShell ，在這些清單中大量建立標籤及標籤原則。這可讓您更輕鬆地一次建立您的保留排程所需的所有保留標籤。
-ms.openlocfilehash: 2be7c2251a3a35f32ff9754134cca1f5958b447a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+description: 在 Office 365 中，您可以使用保留標籤來為貴組織實作保留排程。 透過使用提供的指令碼和 .csv 檔案，您可以使用 PowerShell 大量建立及發佈保留標籤和保留標籤原則。
+ms.openlocfilehash: b2bf7f4a4934e1c5b0c88005e586dd6b0d38e3f9
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38708066"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631593"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>使用 PowerShell 大量建立及發佈保留標籤
 
 在 Office 365 中，您可以使用保留標籤來為您的組織實作保留排程。做為記錄管理員或合規性主管，您可能有數百個要建立及發佈的保留標籤。您可以透過安全性與合規性中心的 UI 來執行此動作，但一次建立一個保留標籤費時且無效率。
   
-使用下面提供的指令碼和 .csv 檔案，您可以大量建立及發佈保留標籤與保留標籤原則。首先在 Excel 中建立保留標籤清單以及保留標籤原則清單，然後使用 PowerShell ，在這些清單中大量建立保留標籤及保留標籤原則。這可讓您更輕鬆地一次建立您的保留排程所需的所有保留標籤。
+您可以使用以下提供的指令碼和 .csv 檔案，大量建立保留標籤及發佈保留標籤原則。 請先在 Excel 中建立保留標籤清單和保留標籤原則清單，然後使用 PowerShell 在這些清單中大量建立保留標籤和保留標籤原則。 這樣就能一次建立及發佈保留排程需要的所有保留標籤，讓操作變得更加簡單。
   
 如需保留標籤的詳細資訊，請參閱[標籤概觀](labels.md)。
   
@@ -69,7 +69,7 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
     
 - 如果 .csv 檔案包含的保留標籤原則與已存在的保留標籤原則同名，則指令碼會略過建立該保留標籤原則。不會建立重複的保留標籤原則。
     
-- 指令碼只會發佈手動套用至內容的保留標籤。此指令碼不支援自動套用至內容的保留標籤。
+- 指令碼只會發佈手動套用到內容的保留標籤。 此指令碼不支援自動套用到內容的保留標籤。
     
 - 如果您變更或重新命名資料行標頭，則指令碼將失敗。指令碼需要 .csv 檔案具有下列提供的格式。
     
