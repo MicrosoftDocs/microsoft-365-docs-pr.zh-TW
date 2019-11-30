@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 43ab1083ad028ee53ad355a84fda17b02decbc70
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 4a43573893ecc16539810cfcfe85c8df469d06dd
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39233516"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634040"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -58,6 +58,8 @@ ms.locfileid: "39233516"
 - Microsoft 工作場所分析中的分析師和系統管理員活動
 
 - Microsoft PowerApps 中的使用者和系統管理員活動
+
+- Microsoft Flow 中的使用者和系統管理員活動
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -125,7 +127,9 @@ ms.locfileid: "39233516"
   |SharePoint Online 和商務用 OneDrive|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sway||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |工作場所分析|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Yammer||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Forms|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  ||||
 
 - Azure Active Directory (Azure AD) 是適用於 Office 365 的目錄服務。 整合的稽核記錄包含 Microsoft 365 系統管理員中心或 Azure 管理入口網站中執行的使用者、群組、應用程式、網域及目錄活動。 如需 Azure AD 事件的完整清單，請參閱 [Azure Active Directory 稽核報告事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)。
 
@@ -302,7 +306,7 @@ ms.locfileid: "39233516"
 |[進階電子文件探索活動](#advanced-ediscovery-activities)|[Power BI 活動](#power-bi-activities)|[Microsoft 工作場所分析](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams 活動](#microsoft-teams-activities)|[Microsoft Teams 醫療保健活動](#microsoft-teams-healthcare-activities)|[Yammer 活動](#yammer-activities)|
 |[Microsoft Flow 活動](#microsoft-flow-activities)|[Microsoft PowerApps 活動](#microsoft-powerapps)|[Microsoft Stream 活動](#microsoft-stream-activities)|
-[Exchange 系統管理員活動](#exchange-admin-audit-log)|||
+|[Microsoft Teams 活動](#microsoft-forms-activities)|[Exchange 系統管理員活動](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>檔案和頁面活動
@@ -776,6 +780,43 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream 活動
 
 您可以在 Microsoft Stream 中搜尋活動的稽核記錄。 這些活動包括使用者執行的視訊活動、群組頻道活動及系統管理員活動，例如管理使用者、管理組織設定及匯出報告。 如需這些活動的說明，請在 [Microsoft Stream 中的稽核記錄](https://docs.microsoft.com/stream/audit-logs)中參閱＜Microsoft Stream 中記錄的活動＞一節。
+
+### <a name="microsoft-forms-activities"></a>Microsoft Teams 活動
+
+下表列出 Office 365 稽核記錄中記錄的 Microsoft Forms 使用者和系統管理員活動。 Microsoft Forms 是用來收集分析資料的表單/測驗/問卷的工具。 
+
+以下說明中指出部分作業包含的其他活動參數。
+
+|**易記名稱**|**作業**|**描述**|
+|:-----|:-----|:-----|
+|已建立註解|CreateComment|表單擁有者為測驗新增註解或分數。|
+|已建立表單|CreateForm|表單擁有者建立新表單。|
+|已編輯表單|EditForm|表單擁有者編輯表單，例如建立、移除或編輯問題。 <br><br>屬性 EditOperation：字串表示編輯作業名稱。 可能的作業為：CreateQuestion、CreateQuestionChoice、DeleteQuestion、DeleteQuestionChoice、DeleteFormImage、DeleteQuestionImage、UpdateQuestion、UpdateQuestionChoice、UploadFormImage/Bing/Onedrive、UploadQuestionImage，以及 ChangeTheme。  <br><br>大部分作業名稱都可一目了然。 <br><br>FormImage 包含在表單中使用者可上傳影像的任何位置，例如在查詢中或做為背景佈景主題。|
+|已移動表單|MoveForm|表單擁有者移動表單。 <br><br>屬性 DestinationUserId：字串表示移動表單人員的使用者識別碼。 屬性 NewFormId：字串是新複製表單的全新識別碼。|
+|已刪除表單|DeleteForm|表單擁有者刪除表單。 這包含 SoftDelete (刪除使用的選項和移至資源回收筒的表單) 與 HardDelete (清空資源回收筒)。|
+|已檢視表單 (設計階段)|ViewForm|表單擁有者開啟現有表單以進行編輯。|
+|已預覽表單|PreviewForm|表單擁有者使用 [預覽] 功能預覽表單。|
+|已匯出表單|ExportForm|表單擁有者將結果匯出到 Excel。 <br><br>屬性 ExportFormat：字串表示 Excel 檔案為下載或線上。|
+|允許複製共用表單|AllowShareFormForCopy|表單擁有者建立範本連結，以與其他使用者共用表單。 當表單擁有者按一下以產生範本 URL 時，系統會記錄此事件。|
+|已禁止複製共用表單|DisallowShareFormForCopy|表單擁有者刪除範本連結。|
+|已新增表單共同撰寫|AddFormCoauthor|使用者使用共同作業連結來協助設計/檢視回應。 當使用者使用共同作業 URL (而不是第一次產生共同作業 URL 時)，系統會記錄此事件。|
+|已移除表單共同撰寫|RemoveFormCoauthor|表單擁有者刪除共同作業連結。|
+|已檢視回應頁面|ViewRuntimeForm|使用者已開啟要檢視的回應頁面。 無論使用者是否提交回應，系統都會記錄此事件。|
+|已建立回應|CreateResponse|類似於接收新回應。  使用者已提交表單的回應。 <br><br>屬性 ResponseId：字串和屬性 ResponderId：字串表示正在檢視哪項結果。 <br><br>針對匿名回應者，ResponderId 屬性將為 Null。|
+|已更新回應|UpdateResponse|表單擁有者已在測驗上更新註解或分數。 <br><br>屬性 ResponseId：字串和屬性 ResponderId：字串表示正在檢視哪項結果。 <br><br>針對匿名回應者，ResponderId 屬性將為 Null。|
+|已刪除所有回應|DeleteAllResponses|表單擁有者刪除所有回應資料。|
+|已刪除回應|DeleteResponse|表單擁有者刪除一項回應。 <br><br>屬性 ResponseId：字串表示正刪除回應。|
+|已檢視回應|ViewResponses|表單擁有者檢視回應的彙總清單。 <br><br>屬性 ViewType：字串表示表單擁有者是否正在檢視彙總詳細資料|
+|已檢視回應|ViewResponse|表單擁有者檢視特定回應。 <br><br>屬性 ResponseId：字串和屬性 ResponderId：字串表示正在檢視哪項結果。 <br><br>針對匿名回應者，ResponderId 屬性將為 Null。|
+|已建立摘要連結|GetSummaryLink|表單擁有者建立摘要結果連結以共用結果。|
+|已刪除摘要連結|DeleteSummaryLink|表單擁有者刪除摘要結果連結。|
+|已更新表單網路釣魚狀態|UpdatePhishingStatus|每當內部安全性狀態的詳細資料值變更時，系統就會記錄此事件，無論這是否會變更最後的安全性狀態 (例如，現在已關閉或開啟表單)。 這表示您可能會看到不具有最終安全性狀態變更的重複事件。|
+|已傳送 Forms Pro 邀請|ProInvitation|使用者按一下以啟用 Pro 試用版。|
+|已更新表單設定|UpdateFormSetting|表單擁有者更新表單設定。 <br><br>屬性 FormSettingName：字串表示設定的名稱和新值。|
+|已編輯使用者設定|UpdateUserSetting|表單擁有者更新使用者設定。 <br><br>屬性 UserSettingName：字串表示設定的名稱和新值。|
+|已列出表單|ListForms|表單擁有者正檢視表單清單。 <br><br>屬性 ViewType：字串表示表單擁有者正查看何種檢視： [所有表單]、[與我共用] 或 [群組表單]|
+|已提交回應|SubmitResponse|使用者提交表單的回應。 <br><br>屬性 IsInternalForm：如果回應者與表單擁有者位於同一組織中，則會顯示布林值。|
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 系統管理員稽核記錄
 
