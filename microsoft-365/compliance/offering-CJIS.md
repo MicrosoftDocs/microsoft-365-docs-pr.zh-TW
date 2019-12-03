@@ -1,7 +1,7 @@
 ---
 title: 刑事案件正義資訊服務 (CJIS) 安全性原則
 description: Microsoft 政府雲端服務遵守美國司法正義資訊 Services 安全性原則。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 52b5718ecbd558cf1bf5e89702b6574c87841040
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 7fb31d007b7935d8a2beef93b80ca1958c7a3a27
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690251"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668811"
 ---
 # <a name="compliance-offering-criminal-justice-information-services-cjis-security-policy"></a>合規性供應項目： 刑事案件正義資訊服務 (CJIS) 安全性原則
 
@@ -40,26 +40,26 @@ Microsoft 已評估的操作原則和程序的 Microsoft Azure 政府版、 Micr
 
 了解如何開始加速 CJIS 安全性原則，與我們的 Azure 安全性與合規性藍圖：[下載 Microsoft 政府雲端服務的 CJIS 實作指導方針](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure 政府版](https://aka.ms/AzureCompliance)
 - [Dynamics 365 美國政府版](https://aka.ms/d365-compliance-list)
 - [Office 365 US Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 雲端服務可以作為獨立服務或 Office 365 為包含在品牌計劃] 或 [套件
+- Power BI 雲端服務，以獨立服務形式提供或包含在 Office 365 品牌方案或套件中
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 FBI 並不提供的 Microsoft 合規性 CJIS 要求的憑證。 相反地，Microsoft 證明隨附於 Microsoft 和狀態 CJIS 授權，以及之間 Microsoft 和其客戶之間的合約。
 
 [Microsoft CJIS 雲端需求](https://aka.ms/MicrosoftCJISCloudRequirements)
 
-## <a name="cjis-status-in-the-united-states"></a>在美國境內的 CJIS 狀態
+## <a name="cjis-status-in-the-united-states-current-as-of-9232019"></a>CJIS 狀態美國 （目前截至 9/23/2019年）
 
-36 狀態和管理協議，反白顯示以綠色標示在地圖上與學的哥倫比亞包括：
+37 狀態和管理協議，反白顯示以綠色標示在地圖上與學的哥倫比亞包括：
 
-Alabama、 阿拉斯加、 Arkansas、 亞歷桑那、 加利福尼亞、 哪、 佛羅里達州、 Georgia、 夏威夷、 伊利諾、 印地安那、 稍後、 堪薩斯、 肯塔基、 Maine、 Massachusetts、 密西根、 明尼蘇達、 台、 Montana、 紐澤西、 New York，Nevada，North 羅來那州、 奧克拉荷馬，Oregon，賓州羅德島、 南羅來那州、 美國、 德州、 猶他、 Vermont、 維吉尼亞州、 Washington，Washington D.C.，西維吉尼亞州。
+Alabama、 阿拉斯加、 Arkansas、 亞歷桑那、 加利福尼亞、 哪、 佛羅里達州、 Georgia、 夏威夷、 伊利諾、 印地安那、 稍後、 堪薩斯、 肯塔基、 Maine、 Massachusetts、 密西根、 明尼蘇達、 台、 Montana、 紐澤西、 New York，Nevada，North 羅來那州、 奧克拉荷馬，Oregon，賓州羅德島、 南羅來那州、 美國、 德州、 猶他、 Vermont、 維吉尼亞州、 Washington，Washington D.C.，西維吉尼亞州，威斯康辛。
 
-Microsoft 的承諾會議的適用的 CJIS 法規的控制項可讓司法正義組織實作雲端式解決方案，並與 CJIS 安全性原則 V5.7 相容。
+Microsoft 的承諾會議的適用的 CJIS 法規的控制項可讓司法正義組織實作雲端式解決方案，並與 CJIS 安全性原則 V5.8 相容。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
@@ -71,8 +71,6 @@ Microsoft 的承諾會議的適用的 CJIS 法規的控制項可讓司法正義�
 
 Microsoft 簽署資訊合約，具有狀態 CJIS 系統機構 (CSA);您可能會從您的狀態 CSA 要求複本。 此外，Microsoft 會提供客戶深入的安全性、 隱私權和規範資訊。 客戶也可以檢閱安全性及規範符合性報告備妥由獨立稽核員讓他們可以驗證 Microsoft 已實作適當的相關的稽核範圍 （例如 ISO 27001) 安全性控制。
 
-使用適當的 CJIS 文件，自年 8 月 2017年起的狀態包括： 阿拉斯加、 亞歷桑那、 Arkansas、 加利福尼亞、 哪、 夏威夷、 Georgia、 Illinois、 印地安那、 稍後、 堪薩斯、 肯塔基、 Massachusetts、 密西根、 明尼蘇達、 台、 Montana、 Nevada、 紐澤西New York，North 羅來那州，Oregon，賓州，羅德島，South 羅來那州，美國，德州，維吉尼亞州，猶他，Vermont 及華盛頓。
-
 **其中開頭我機構合規性努力？**
 
 [CJIS 安全性原則](https://aka.ms/cjis-security-policy)所涵蓋您機構必須保護 CJI 採取預防措施。 此外，您的 Microsoft 帳戶代表可以放您聯繫熟悉您管轄的需求
@@ -83,10 +81,10 @@ Microsoft 簽署資訊合約，具有狀態 CJIS 系統機構 (CSA);您可能會
 - [CJIS 安全性原則](https://aka.ms/cjis-security-policy)
 - [CJIS 安全性原則版本 5.3 背景資料](https://aka.ms/cjis-backgrounder)
 - [CJIS 實作的指導方針 Azure 政府版](https://aka.ms/cjisimplementationguidelines)
-- [Microsoft 一般控制 Hub 合規性架構](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Microsoft 通用控制措施中樞合規性架構](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft 政府雲端](https://go.microsoft.com/fwlink/?linkid=2087246)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf)。

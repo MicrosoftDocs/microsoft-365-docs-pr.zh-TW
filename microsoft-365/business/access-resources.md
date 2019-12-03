@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 了解如何取得行商務應用程式]，檔案共用，例如在內部資源的存取權，以及從 Azure Active Directory 的印表機加入 Windows 10 裝置。
-ms.openlocfilehash: fdc1eca6913ba6af4f6b65691fdee2165e7c827e
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 4a2ff28107c6e2ec4473859c75bf720df7662747
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38323388"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668781"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>存取內部部署 Microsoft 365 商務版中的 Azure AD 加入裝置的資源
 
@@ -32,6 +32,9 @@ ms.locfileid: "38323388"
 若要深入了解，請參閱[在 Azure Active Directory 中的裝置管理的簡介](https://docs.microsoft.com/azure/active-directory/device-management-introduction)。
 下列各節也摘要說明的步驟。
 
+> [!IMPORTANT]
+> 此程序只適用於 OAuth] 和 [NTLM。 不支援 Kerberos。
+ 
 ## <a name="run-azure-ad-connect"></a>執行 Azure AD Connect
 
 完成下列步驟，以讓您的組織已加入 Azure AD 裝置能夠存取內部部署的資源。
@@ -43,6 +46,8 @@ ms.locfileid: "38323388"
 3. 一旦 Windows 10 裝置加入 Azure AD，其裝置和以其 Microsoft 365 商務版認證登入，必須重新啟動每位使用者。 所有的裝置現在有以及內部資源的存取權。
     
 沒有額外的步驟，才能取得已加入 Azure AD 裝置的存取內部部署資源。 這項功能是內建於 Windows 10。 
+
+如果您計劃設定 pin 碼/簡介-評量像透過 WHFB 認證登入的密碼方法以外 AADJ 裝置登入]，然後存取內部資源 （共用、 印表機..等），請遵循https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
   
 如果您的組織尚未準備好在上面所述的 Azure AD 加入的裝置組態中部署，請考慮[混合式 Azure AD Joined 裝置組態](manage-windows-devices.md)設定。
   
