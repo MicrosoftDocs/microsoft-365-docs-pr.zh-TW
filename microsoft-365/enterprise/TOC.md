@@ -1,4 +1,4 @@
-# [Microsoft 365 企業版文件和資源](index.md)
+# [Microsoft 365 企業版文件和資源](index.yml)
 # [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 # [部署 Microsoft 365 企業版](deploy-microsoft-365-enterprise.md)
 ## [部署基礎結構](deploy-foundation-infrastructure.md)
