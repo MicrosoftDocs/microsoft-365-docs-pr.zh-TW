@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 摘要：套用 Azure 資訊保護來保護高度機密 SharePoint Online 小組網站中的檔案。
-ms.openlocfilehash: 6302ee8163525502550017f62fe4350645af59b3
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 19fab529a9a8fb60afef1a419323d7544eeace88
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39630873"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668821"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>使用 Azure 資訊保護來保護 SharePoint Online 檔案
 
@@ -31,7 +31,7 @@ ms.locfileid: "39630873"
   
 使用本文中的步驟來設定 Azure 資訊保護，為檔案提供加密和權限。這些檔案可新增至針對高度機密保護所設定的 SharePoint 文件庫。或者，您可以直接從網站開啟檔案，並使用 Azure 資訊保護用戶端來新增加密。此加密和權限保護會與檔案一起移動，即使是從網站下載檔案也一樣。 
 
-這些步驟是屬於較大的解決方案，用於設定 SharePoint 網站和這些網站中檔案的高度機密保護。如需詳細資訊，請參閱[保護 SharePoint Online 網站與檔案](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)。 
+這些步驟是屬於較大的解決方案，用於設定 SharePoint 網站和這些網站中檔案的高度機密保護。如需詳細資訊，請參閱[保護 SharePoint Online 網站與檔案](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)。 
 
 不建議針對所有的客戶在 SharePoint Online 中的檔案使用 Azure 資訊保護，但可供需要此檔案子集合保護層級的客戶選擇使用。
 
@@ -111,7 +111,7 @@ ms.locfileid: "39630873"
 
 ## <a name="see-also"></a>另請參閱
 
-[保護 SharePoint Online 網站與檔案](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)
+[保護 SharePoint Online 網站與檔案](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
   
 [適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

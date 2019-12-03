@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用此「測試實驗室指南」建立 Microsoft 365 企業版的模擬企業測試環境。
-ms.openlocfilehash: b89df6cad03084a8d9119f03f5c07d01a9c96061
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: febfa4e9ce3fdc430cf53a9cce61a15f0a4247fb
+ms.sourcegitcommit: 3fd6d175c1954ce463198e835d1d8f2f91d80d79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202375"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39662808"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模擬企業基本設定
 
@@ -261,7 +261,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 ```powershell
 $yourDomain="<your public domain name>"
-Add-Computer -DomainName ("testlab" + $yourDomain)
+Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
@@ -319,7 +319,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 ```powershell
 $yourDomain="<your public domain name>"
-Add-Computer -DomainName ("testlab" + $yourDomain)
+Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 

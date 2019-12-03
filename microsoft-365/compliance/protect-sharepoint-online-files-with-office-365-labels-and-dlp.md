@@ -18,16 +18,16 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 摘要：使用各種資訊保護層級，對 SharePoint Online 小組網站套用保留標籤和資料外洩防護 (DLP) 原則。
-ms.openlocfilehash: 4c9eb83cbde7d54706f109484257e97c22c4733c
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: c40261df8203841e3627a0d7a0c09c7f88a02a6b
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39631002"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668871"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>使用保留標籤與 DLP 來保護 SharePoint Online 檔案
 
-您可以使用本文中的步驟，為基準、機密和高度機密 SharePoint Online 小組網站設計及部署保留標籤和 DLP 原則。 如需這三種保護層級的詳細資訊，請參閱[保護 SharePoint Online 網站與檔案](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)。
+您可以使用本文中的步驟，為基準、機密和高度機密 SharePoint Online 小組網站設計及部署保留標籤和 DLP 原則。 如需這三種保護層級的詳細資訊，請參閱[保護 SharePoint Online 網站與檔案](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)。
   
 ## <a name="how-this-works"></a>如何進行此作業
 
@@ -150,7 +150,7 @@ ms.locfileid: "39631002"
     
 14. 在 [Customize policy tips and email notifications]\(自訂原則提示和電子郵件通知)**** 窗格中，按一下 [Customize the policy tip text]\(自訂原則提示文字)****。
     
-15. 在文字方塊中，根據您是否使用敏感度標籤來保護高度機密的檔案，請輸入或貼上下列其中一個提示：
+15. 在文字方塊中，根據您是否選擇使用敏感性標籤來保護敏感性檔案，請輸入或貼上下列其中一個提示：
     
   - 若要與組織外部的使用者共用，請下載檔案，然後將它開啟。 依序按一下 [檔案]、[保護文件] 和 [以密碼加密]，然後指定強式密碼。 以個別電子郵件或其他通訊方式傳送密碼。
   - 高度機密的檔案會受加密保護。只有獲得您 IT 部門授與權限的外部使用者可以讀取它們。
