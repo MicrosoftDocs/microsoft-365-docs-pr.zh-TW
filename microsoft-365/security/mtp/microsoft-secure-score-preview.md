@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 55f962a82fcbacb5ca1c5e3026469880489fd5b7
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: ff159546cd62b2fd2b5cb4fca031e449c860d5cb
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076327"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676800"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft 安全分數 （預覽）
 
@@ -42,6 +42,8 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 ## <a name="how-it-works"></a>運作方式
 
 您所設定的特定點建議的安全性功能，執行與安全性相關的工作，或解決與協力廠商應用程式或軟體的改進巨集指令。 一些改進動作只提供點完全完成時，和某些授與部分點為單位，如果他們使用某些裝置或使用者完成。 如果您無法或不想要達成其中一個改進動作，您可以選擇接受風險或其餘的風險。
+
+我們示範整組可能的改進功能，無論授權，因此您可以了解安全性最佳做法，並改善您的分數。 安全分數，無論哪項產品授權您的組織相同擁有哪些保持代表您的絕對的安全性狀態。 請記住，應取得平衡安全性與可用性，並不是每個建議才能為您的環境。
 
 您的分數會更新以反映視覺效果和改進動作頁面中所呈現的資訊的即時。 安全分數也每天同步處理以接收關於每個動作您達成點為單位的系統資料。
 

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 商務版的安裝步驟的概觀。
-ms.openlocfilehash: 3447f06d031462a7bebc6f129238de9f0c5dee41
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 425c465262c266ca764ae8c7a52130903fa635a5
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721552"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39812771"
 ---
 # <a name="overview-of-setup"></a>步驟概觀
 
@@ -44,16 +44,15 @@ ms.locfileid: "38721552"
         - 您也可以在系統管理中心的 [[新增使用者更新版本](add-users-m365b.md)。
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>步驟 2： 設定安全性原則和設定裝置 
 
-  - 使用[安裝精靈](set-up.md#protect-data-and-devices)來設定裝置和安全性原則。 
+  - 使用[安裝精靈](set-up.md#protect-your-organization)來設定裝置原則。 
   - 您也可以新增更多，或稍後在[系統管理中心](view-policies-and-devices.md)和[Intune 入口網站](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal)中加以編輯。
-  - 除了在安裝精靈中的安全性設定，您可以藉由新增下列設定值增加您的安全性：
+  - 安裝精靈 」 也會設定基本威脅保護和資料遺失防護設定。
+  
+  除了在安裝精靈中的安全性設定，您可以藉由新增下列設定值增加您的安全性：
 
       - **電子郵件的惡意程式碼保護**
-      - **進階的威脅防護 (ATP) 的安全連結**
-      - **ATP 安全附件**
       - **ATP 防網路釣魚**
       - **Exchange Online 封存**
-      - **Data Loss Prevention (DLP)**
       - **Azure 資訊保護 (Plan1**)
 
           若要取得啟動，請參閱[設定進階的安全性原則](set-up-advanced-security.md)。
@@ -62,10 +61,12 @@ ms.locfileid: "38721552"
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>步驟 3： 設定及管理 Windows 10 裝置
 
-   當您在 Windows 10 裝置加入 Azure AD 時，取得套用您在[步驟 2](#step-2-set-up-security-policies-and-configure-devices)中設定的原則。
+執行設定精靈之後，您會想要 proctect Windwos 10 的所有電腦貴組織中。
+  
+- Windows 10 專業版是 Microsoft 365 商務版的[必要條件](pre-requisites-for-data-protection.md)，但如果您有 Windows 7 專業版、 Windows 8 專業版或 Windows 8.1 專業版，您的訂閱賦與您[升級至 Windows 10 專業版](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)。
+- 遵循設定 Windows 10 裝置原則[保護 Windows 10 電腦](secure-win-10-pcs.md)中的步驟。
 
-   - Windows 10 專業版是 Microsoft 365 商務版的[必要條件](pre-requisites-for-data-protection.md)，但如果您有 Windows 7 專業版、 Windows 8 專業版或 Windows 8.1 專業版，您的訂閱賦與您[升級至 Windows 10 專業版](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)。
-    - 使用[安裝精靈](set-up.md#protect-data-and-devices)來設定 Windows 10 裝置原則。
+當您在 Windows 10 裝置加入 Azure AD 時，取得套用所設定的 Windows 10 電腦的原則。 如需詳細資訊，請參閱[為 Microsoft 365 商務版使用者的 Windows 裝置上設定](set-up-windows-devices.md)。
 
 ## <a name="step-4-install-office-365-business"></a>步驟 4： 安裝 Office 365 商務版
 - 您可以使用[安裝精靈](set-up.md#deploy-office-365-client-apps)，在 Windows 裝置上自動安裝 Office。
@@ -82,4 +83,6 @@ ms.locfileid: "38721552"
 
     - 如果貴公司有本機 Active Directory，其中包含一些內部資源 （例如檔案共用和印表機），您可以授與您的 Azure AD 加入的裝置存取這些資源遵循以下步驟：[存取內部部署 Microsoft 365 商務版中的 Azure AD 加入裝置的資源](access-resources.md)。
 
-  
+## <a name="see-also"></a>另請參閱
+
+[Microsoft 365 商務版開發人員訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -10,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -21,18 +22,22 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何設定 Microsoft 365 商務版。
-ms.openlocfilehash: f269e970cc1ee5ba7455ea799b238db577116f09
-ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
+ms.openlocfilehash: 2e6e1e6153fe4033aa7dd47280c737957d0e4bd5
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704108"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813051"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>開始使用 Microsoft 365 商務版
 
 ## <a name="what-is-microsoft-365-business"></a>什麼是 Microsoft 365 商務版
 
 Microsoft 365 商務版是一組完整的商務生產力和共同作業工具，例如 Outlook、 Word、 Excel 和其他 Office 產品，永遠是最新狀態。 您可以保護您的工作檔案上所有您 iOS、 Android 和 Windows 10 裝置以易於管理的企業級安全性。
+
+觀看這段影片為 Microsoft 365 商務版的快速概觀。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
 Microsoft 365 商務版是最多 300 個授權。 如果您需要更多授權，請參閱如需詳細資訊的[Microsoft 365 企業版](https://go.microsoft.com/fwlink/p/?linkid=860986)文件。 
   
@@ -49,6 +54,13 @@ Microsoft 365 商務版是最多 300 個授權。 如果您需要更多授權，
 下圖說明系統管理員如何設定 Microsoft 365 商務版。 此外，也描述準備 Windows 電腦以設定 Microsoft 365 商務版的步驟。 您也可以透過[Windows AutoPilot](add-autopilot-devices-and-profile.md)在 Microsoft 365 商務版系統管理中心中新增新的裝置。 您可以使用 AutoPilot 來設定和預先設定新的裝置，以便它們是用於工作生產就緒，只要使用者登入他們的 Microsoft 365 商務版認證。
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
+
+請觀看此影片的 Microsoft 365 商務版安裝程式的概觀。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
+
+如果您找到這段影片很有幫助，請參閱[完成小型企業版和 Microsoft 365 的新手訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+
   
 ### <a name="1-set-up-microsoft-365-business-admin"></a>1： 設定 Microsoft 365 商務版 （系統）
 
@@ -89,9 +101,10 @@ Microsoft 365 商務版是最多 300 個授權。 如果您需要更多授權，
     
 - Microsoft 365 商務版系統管理員，您可以存取我們的客戶支援小組：**[商務版產品-系統管理說明連絡支援部門](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
-## <a name="related-topics"></a>相關主題
+## <a name="see-also"></a>另請參閱
+
 [Microsoft 365 商務版文件和資源](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
 [管理 Microsoft 365 商務版](manage.md)[將移轉至 Microsoft 365 商務版](migrate-to-microsoft-365-business.md)
-  
 
+[Microsoft 365 商務版開發人員訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

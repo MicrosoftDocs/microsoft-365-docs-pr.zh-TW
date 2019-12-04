@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: '了解如何為 Microsoft 365 商務版使用者執行 Windows 10 專業版的 Windows 裝置上設定。 '
-ms.openlocfilehash: f929c64b00e4ebf24e9f82fcfea433119abf2f1c
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: b377c1e69d117b893b256880cd3b9972e33345c7
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718862"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39812871"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>為 Microsoft 365 商務版使用者設定 Windows 裝置
 
@@ -37,7 +37,13 @@ ms.locfileid: "38718862"
   
 如需有關如何將 Windows 裝置升級到 Windows 10 專業版 Creators Update 的資訊，請按照本主題中的步驟進行：[將 Windows 裝置升級到 Windows 專業版 Creators Update](upgrade-to-windows-pro-creators-update.md)。
   
-請參閱[驗證裝置已連線到 Azure AD](#verify-the-device-is-connected-to-azure-ad)若要確認您已升級或確認升級正常運作。 
+請參閱[驗證裝置已連線到 Azure AD](#verify-the-device-is-connected-to-azure-ad)若要確認您已升級或確認升級正常運作。
+
+觀看有關 Windows 連線至 Microsoft 365 簡短影片。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
+
+如果您找到這段影片很有幫助，請參閱[完成小型企業版和 Microsoft 365 的新手訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>將 Windows 10 裝置加入到貴組織的 Azure AD
 
@@ -115,3 +121,6 @@ ms.locfileid: "38718862"
 
 若要設定行動裝置，請參閱[為 Microsoft 365 商務版使用者設定行動裝置](set-up-mobile-devices.md)。若要設定裝置保護或 App 保護原則，請參閱[管理 Microsoft 365 商務版](manage.md)。
   
+## <a name="see-also"></a>另請參閱
+
+[Microsoft 365 商務版開發人員訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

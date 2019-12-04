@@ -4,13 +4,14 @@ description: 裝置接近淘汰網站，您仍然可以註冊，但必須縮短�
 keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: ccc4d7e2fae0a8e5ee6e3a7d71fb55edc8f04930
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 3372332529f9391b5cea8da4095d04178e8b731b
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640584"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813873"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>封存的 Microsoft 受管理電腦裝置
 
@@ -23,7 +24,7 @@ ms.locfileid: "38640584"
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
 若要在 Microsoft 受管理電腦中註冊裝置必須是下列其中一個下列模型和達到或超過 RAM、 處理器系列以及磁碟空間的列出的規格。 支援沒有其他自訂。
 
-您僅供參照的裝置以下連結。 如果您想要訂購裝置，搭配您的商業通道連絡人，以確保您選擇正確的設定。
+
 
 >[!NOTE]
 >在此表格中，「 退休日期 」 是所在此模型將不再支援 Microsoft 受管理的電腦，所有的日期。 在該日期中，所有註冊的裝置，此模型的即將從 Microsoft 受管理的電腦，不論他們已註冊時。
@@ -32,9 +33,9 @@ ms.locfileid: "38640584"
 
 | Model  | 最小的規格  | 其他需求   | 退休日期 |
 |---------|---------|---------|---------|
-| [HP EliteBook 830 / 840 / 850 版 G5](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線網路攝影機或指紋感應  | **2023 2 月 15日，** |
-|[Surface Laptop](https://www.microsoft.com/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 May 20，** |
-|[Surface Pro](https://www.microsoft.com/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 6 月 15日，** |
+| HP EliteBook 830 / 840 / 850 版 G5| 128 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線網路攝影機或指紋感應  | **2023 2 月 15日，** |
+|Surface Laptop| 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 May 20，** |
+|Surface Pro| 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 6 月 15日，** |
 
 
 此外，裝置必須也：

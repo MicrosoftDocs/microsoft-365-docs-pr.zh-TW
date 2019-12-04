@@ -4,15 +4,16 @@ description: 如何更新部署至 Microsoft 受管理的電腦裝置的線條�
 keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 425ba674ca9911e4c93bda4fc9ad61cec7fb85b7
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 7aca4713aae189e39133e08a1fbcad6fd75e6a70
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012408"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813853"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>管理 Microsoft 受管理電腦中的行營運應用程式
 
@@ -41,7 +42,7 @@ ms.locfileid: "38012408"
 ## <a name="update-line-of-business-apps-in-intune"></a>更新在 Intune 中的行營運應用程式
 
 **若要更新您在 Intune 中的行營運應用程式**
-1. 登入[Azure 入口網站](https://azure.portal.com)。
+1. 登入[Azure 入口網站](https://portal.azure.com)。
 2. 選取 [**所有服務** > **Intune**。 Intune 會在**監視 + 管理**] 區段中。
 3. 選取 [**用戶端應用程式 > 應用程式**。
 4. 尋找並選取您的應用程式的應用程式] 清單中。

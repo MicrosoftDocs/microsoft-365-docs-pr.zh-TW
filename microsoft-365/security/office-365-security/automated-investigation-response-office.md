@@ -3,7 +3,7 @@ title: 自動化 Office 365 中的事件回應 （空調）
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,21 +13,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 在 Office 365 進階威脅防護計劃 2 中，取得自動化調查及回應能力的概觀。
-ms.openlocfilehash: 18da20491f9641b8313304e350f9c224b63cc5d9
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: dc1f2a4c0c91cf7b1e2d351f173367e34c5d3323
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673399"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813913"
 ---
 # <a name="automated-incident-response-air-in-office-365"></a>自動化 Office 365 中的事件回應 （空調）
 
 自動化事件回應 （空調） 功能可讓您回應熟知威脅存在於今天執行自動化的調查程序。 空調可協助您操作更有效率的安全性作業小組。
 - 若要取得航空的運作方式的概觀，請使用本文。
 - 若要開始使用空調，請參閱[自動調查及回應 Office 365 中的威脅](office-365-air.md)。
-
-> [!NOTE]
-> 您必須是全域系統管理員、 安全性系統管理員、 安全性運算子或安全性助讀程式來存取空調功能。 若要深入了解這些權限，請參閱[Microsoft 365 安全性中心： 角色和權限](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
 
 ## <a name="the-overall-flow-of-air"></a>航空的整體流程
 
@@ -47,24 +44,22 @@ ms.locfileid: "38673399"
 
 [提醒](../../compliance/alert-policies.md#viewing-alerts)代表觸發程序適用於安全性事件回應作業小組工作流程。 排列優先順序的調查，同時確保沒有威脅 unaddressed 提醒右組是一項挑戰。 時以手動方式執行提醒到調查，安全性作業小組必須搜尋，並與實體 （例如： 內容、 裝置及使用者） 相互關聯威脅的風險。 這類任務及工作流程相當耗時且牽涉到多個工具和系統。 與空調、 調查及回應會自動完成到主要安全性和威脅管理警報自動觸發您安全性回應 playbooks。 
 
-在初始版本空調 （開始年 4 月 2019年），產生的警示，下列的單一事件警示原則會自動調查。 
+在初始 （開始年 4 月 2019年） 版本中，從下列幾種類型的單一事件警示原則所產生的警示會是空調的自動調查：  
 
 - 偵測到有潛在的惡意 URL 點擊
-
 - 報告的釣魚程式 * 作為使用者的電子郵件
-
 - 電子郵件包含惡意程式碼傳遞 * 後移除
-
 - 電子郵件訊息包含傳遞 * 後移除的釣魚程式 Url
-
 - 傳送模式偵測到可疑的電子郵件#
-
 - 使用者限制而無法傳送電子郵件#
 
 > [!NOTE]
 > 以星號 （*） 標記的警示關閉的電子郵件通知與指派安全性 & 合規性中心，各自的警示原則*提示資訊*嚴重性。 電子郵件通知可以開啟透過[警示原則設定](../../compliance/alert-policies.md#alert-policy-settings)。 以雜湊 （#） 標記的提醒是通常可公開預覽 playbooks 相關聯的提醒。
 
-若要檢視提醒，安全性 & 合規性中心中，選擇 [**提醒** > **檢視警示**。 選取警示若要檢視其詳細資料，並從該處，使用的**檢視調查**連結移至對應的[調查](#investigation-graph)。 請注意預設將資訊警示隱藏 [警示] 檢視中。 若要查看它們，您需要變更篩選功能，包括資訊警示的警示。
+若要檢視提醒，安全性 & 合規性中心中，選擇 [**提醒** > **檢視警示**。 選取警示若要檢視其詳細資料，並從該處，使用的**檢視調查**連結移至對應的[調查](#investigation-graph)。 
+
+> [!NOTE]
+> 預設為 [警示] 檢視中隱藏資訊警示。 若要查看它們，請變更篩選功能，包括資訊警示的警示。
 
 如果您的組織管理您的安全性提醒透過警示管理系統、 服務管理系統或安全性資訊和事件管理 (SIEM) 的系統，您可以透過 [電子郵件通知，或是透過[Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)該系統傳送 Office 365 警示。 透過電子郵件或 API 調查警示通知包含連結來存取安全性 & 合規性中心，啟用快速瀏覽到調查指派的安全性系統管理員中的警示。
 
@@ -308,6 +303,15 @@ Office 365 AIR 現在包含在以下訂閱中：
 如果您不需要任何這些訂閱，[開始免費試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US)。
 
 若要深入了解可用的功能，請造訪[進階威脅防護 (ATP) 計劃的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+
+## <a name="required-permissions-to-use-air-capabilities"></a>若要使用空調功能的必要權限
+
+授與權限是透過特定角色，例如，如下表所述： 
+
+|工作 |所需的角色 |
+|--|--|
+|若要設定空調功能 |下列其中之一： <br/>- **全域系統管理員**<br/>- **安全性系統管理員** <br/>可以指派這些角色，在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)中或在[Office 365 安全性 & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。 |
+|核准或拒絕建議的動作|（ [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)中或在[Office 365 安全性 & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)，可以指派這些角色） 的下列其中一項：<br/>- **全域系統管理員** <br/>- **安全性系統管理員**<br/>- **安全性讀取者** <br/>---: 與--:<br/>- **搜尋及清除**（此角色指派只能在[Office 365 安全性 & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)）
 
 ## <a name="next-steps"></a>後續步驟
 

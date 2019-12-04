@@ -1,7 +1,7 @@
 ---
 title: National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
 description: Microsoft 雲端服務符合國家標準與技術 (NIST) Cybersecurity Framework （csf） （機器翻譯）。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 6ea67a9214f5c52f02f7b4d5888b59971951d033
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 7dae370f9fd41ba0a04dd4c327a238dac3841da3
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690293"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676650"
 ---
 # <a name="compliance-offering-national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>合規性供應項目： 國家標準與技術 (NIST) Cybersecurity Framework （csf） （機器翻譯）
 
@@ -26,7 +26,7 @@ National Institute of Standards 和技術 (NIST) 會升階，並維持度量的�
 
 主要 FICIC 的優先順序會以建立一組標準與作法，以協助組織管理 cybersecurity 風險的無縫隙商業效率。 NIST Framework 位址 cybersecurity 風險，而不用強制的政府和私人磁區組織的其他法規需求。
 
-FICIC 參照全域辨識包括 NIST SP 800-53 附錄 A 的 NIST[改良關鍵基礎結構 Cybersecurity 2014 架構](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf)中找到的標準。 每個控制項內的 FICIC 架構會對應至對應的 NIST 800-53 控制項內 FedRAMP 中度基準線。
+FICIC 參照全域辨識包括 NIST SP 800-53 的 NIST[的改良關鍵基礎結構 Cybersecurity Framework](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)附錄 A 中找到的標準。 每個控制項內的 FICIC 架構會對應至對應的 NIST 800-53 控制項內 FedRAMP 中度基準線。
 
 ## <a name="microsoft-and-the-nist-csf"></a>Microsoft 和 NIST CSF
 
@@ -37,11 +37,11 @@ NIST Cybersecurity Framework (CSF) 是一種自發性架構標準、 準則和�
 - [下載 Azure 的安全性與合規性藍圖-NIST CSF 風險評定檢查清單](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
 - [深入了解 Office 365 合規性管理員中的 NIST CSF 評估](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure 政府版](https://aka.ms/AzureCompliance)
 - [Dynamics 365 for Government](https://aka.ms/d365-compliance-list)
-- [Office 365 和 Office 365 US Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 和 Office 365 美國政府](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="audit-cycle-and-certification"></a>稽核週期和憑證
 
@@ -98,12 +98,12 @@ Microsoft 提供相較於其他雲端服務提供者的最完整供應項目。 
 
 - [Microsoft 雲端服務授權](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
 - [對應至 Microsoft 網路供應項目： NIST Cybersecurity Framework (CSF)、 CI 控制項、 ISO27001:2013 和 HITRUST CSF](https://go.microsoft.com/fwlink/p/?linkid=2074025)
-- [提升關鍵基礎結構 Cybersecurity 2014 架構](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf)
+- [提升關鍵基礎結構 Cybersecurity framework](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)
 - [改進項聯邦網路和關鍵基礎結構的 Cybersecurity 總統 Executive 順序](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Microsoft 政府雲端](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf)。
