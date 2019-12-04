@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 0cf7a32d50c6fd648894934ccbb32d84959bd12b
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 275781c8e5b25555e7b65f830b8c703827d80849
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39232892"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676680"
 ---
 # <a name="compliance-offering-center-for-financial-industry-information-systems-fisc"></a>合規性方案：金融業資訊系統中心 (FISC)
 
@@ -40,10 +40,7 @@ Microsoft 已聘雇外部評估員來驗證 Microsoft Azure、Dynamics 365 和 M
 
 金融機構可以依賴下列評估：評估 Azure、Dynamics 365、Office 365 和 Microsoft Cloud App Security 的範圍內基礎架構和平台服務是否符合這三個區域。
 
-了解 Microsoft 雲端上 FISC 的優點：
-
-- [下載 FISC 日本背景資料](https://aka.ms/fisc-backgrounder)
-- [深入瞭解如何驗證外部評估員和連結至存取人員的網站 (僅適用於日本)](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx) 
+[深入了解外部評定者和評定者網站連結的驗證 (僅提供日文)](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx)。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: e8014b04df0991c89c6f487b3f9d8e176b9cff75
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: caeec733b3b5722f25210d0d2566e1dd9a5cd95e
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "39637816"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818985"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -213,9 +213,9 @@ ms.locfileid: "39637816"
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>具有特定包含或排除的原則
 
-您也可以將保留原則套用至特定使用者。若要這麼做，請將該位置的 [狀態]**** 切換為開啟，然後使用連結來包含或排除特定使用者、Office 365 群組或位置。 
+您也可以將保留原則套用至特定使用者、Office 365 群組或網站。若要這麼做，請將該位置的 [狀態]**** 切換為開啟，然後使用連結來包含或排除特定使用者、Office 365 群組或網站。 
   
-不過請注意，包含或排除超過 1000 個特定使用者的保留原則有下列限制：
+不過請注意，包含或排除超過 1,000 個特定位置的保留原則有下列限制：
   
 - 這類保留原則最多可包含 1,000 個信箱和 100 個網站集合。
     
