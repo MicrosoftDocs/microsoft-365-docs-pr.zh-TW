@@ -24,26 +24,31 @@ sections:
             html: <p>Microsoft 受管理電腦的決策者-簡介它是什麼、 其運作方式，以及它可讓您執行的動作</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_overview.svg'
+              alt: ''
             title: 什麼是 Microsoft 受管理的電腦？
           - href: service-description/index.md
             html: <p>Microsoft 受管理電腦的所有部分的詳細的描述</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
-            title: 服務說明
+              alt: ''
+            title: 服務描述
           - href: get-ready/index.md
             html: <p>若要取得您的環境和組織的可使用服務的所有步驟</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_support.svg'
+              alt: ''
             title: 準備好
           - href: get-started/index.md
             html: <p>取得 Microsoft 受管理電腦，包括設定裝置和部署應用程式力貴組織</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
-            title: 入門
+              alt: ''
+            title: 開始使用
           - href: working-with-managed-desktop/index.md
             html: <p>日常作業與服務的所有相關資訊</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_portal.svg'
+              alt: ''
             title: 使用 Microsoft 受管理的電腦
   - title: 新文章與部落格文章
     items:

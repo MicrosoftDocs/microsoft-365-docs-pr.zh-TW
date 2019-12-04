@@ -1,6 +1,6 @@
 - name: Microsoft 365 合規性
   href: index.yml
-- name: 入門
+- name: 開始使用
   items:
     - name: 合規性中心的新功能
       href: whats-new.md
@@ -75,7 +75,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: 對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Office App 中的敏感度標籤
+        - name: Office 應用程式中的敏感度標籤
           href: sensitivity-labels-office-apps.md
     - name: 資料外洩防護 (DLP)
       href: data-loss-prevention-policies.md
@@ -317,6 +317,8 @@
           href: export-search-results.md
         - name: 匯出內容搜尋報告
           href: export-a-content-search-report.md
+        - name: 使用 Microsoft Edge 中的 eDiscovery 匯出工具
+          href: configure-edge-to-export-search-results.md
         - name: 搜尋並刪除電子郵件訊息
           href: search-for-and-delete-messages-in-your-organization.md
         - name: 搜尋 Office 365 中內部部署使用者的雲端式信箱
