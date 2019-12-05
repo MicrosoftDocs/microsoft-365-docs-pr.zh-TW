@@ -10,7 +10,7 @@
 ### [升級至 Windows Pro Creators 更新](upgrade-to-windows-pro-creators-update.md)
 ### [準備 Office 用戶端部署](prepare-for-office-client-deployment.md)
 ### [協助使用者安裝 Office](help-users-install-office.md)
-### [存取內部部署資源]
+### 存取內部部署的資料
 #### [啟用已加入網域的 Windows 10 裝置以進行管理](manage-windows-devices.md)
 #### [存取已加入 Azure AD 裝置的資源](access-resources.md)
 ## 使用者裝置設定
