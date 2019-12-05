@@ -12,22 +12,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 5779bc02575a01c86333eaa9dbc9e9667c87f5ee
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 12446dcb69b9f2324afcece9f230605fdcfcfdc8
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034204"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831994"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全性中心概述
 
 管理您的業務以防止不斷演變威脅橫向安全性帶許多挑戰。 您可能會有太多的安全性解決方案，以進行大量控制項的不同位置，並不知道哪些控制項最有效且可將為您的工作人員介紹新挑戰。 它可能很難的安全性小組合作，找出安全性與生產力的平衡點。
 
-輸入 Microsoft 365 安全性中心-用來監控及管理安全性跨 Microsoft 身分識別、 資料、 裝置、 應用程式] 及基礎結構的新 [首頁。 這裡您可以輕鬆檢視您的組織，法案設定裝置、 使用者和應用程式]，並取得可疑的活動警訊的安全性健康狀況。 在 Microsoft 365 安全性中心特別適用於安全性系統管理員和更妥善地管理並保護其組織的安全性作業小組。
+輸入用來監控及管理安全性跨 Microsoft 身分識別、 資料、 裝置、 應用程式] 及基礎結構的新 [首頁-Microsoft 365 安全中心 」。 這裡您可以輕鬆檢視您的組織，法案設定裝置、 使用者和應用程式]，並取得可疑的活動警訊的安全性健康狀況。 在 Microsoft 365 安全性中心特別適用於安全性系統管理員和更妥善地管理並保護其組織的安全性作業小組。
 
-新的 Microsoft 365 安全中心和 Microsoft 365 合規性中心是設計用以滿足安全性小組和規範小組的需求的特定工作區。 這些解決方案整合在整個 Microsoft 365 服務，並提供洞察力來協助降低風險並保護您的數位資產。
-
-[了解更多並準備好](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance)新的 Microsoft 365 安全中心和 Microsoft 365 合規性中心。
+新的 Microsoft 365 安全中心和[Microsoft 365 合規性中心](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center)是設計用以滿足安全性小組和規範小組的需求的特定工作區。 這些解決方案整合在整個 Microsoft 365 服務，並提供洞察力來協助降低風險並保護您的數位資產。
 
 請造訪 Microsoft 365 安全性中心在 security.microsoft.com。  
 

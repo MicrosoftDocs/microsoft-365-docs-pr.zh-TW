@@ -13,23 +13,23 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: 使用此測試實驗室指南來啟用特殊權限的存取管理 Microsoft 365 企業版測試環境。
-ms.openlocfilehash: 68d542b3f97022abc65b94162f333e7059f614a8
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 7e6a2ddea341f49c737409d8586bd9e70c9b2b79
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673339"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831814"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企業版測試環境的特殊權限存取管理
 
-*此測試實驗室指南可用於 Microsoft 365 企業版和 Office 365 企業版測試環境。*
+*這個測試實驗室指南可用於 Microsoft 365 企業版和 Office 365 企業版兩種測試環境。*
 
 透過本文中的指示，您可以設定若要提高安全性，Microsoft 365 企業版測試環境中的特殊權限的存取管理。
 
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1：建置您的 Microsoft 365 企業版測試環境
 
@@ -64,7 +64,7 @@ ms.locfileid: "38673339"
 
 1. 在您的本機電腦上開啟並登入 Exchange Online 遠端 PowerShell 模組**Microsoft Corporation**在 > **Microsoft Exchange Online 遠端 PowerShell 模組**使用全域系統管理員帳戶的測試環境。
 
-2. 在 Exchange Management Powershell 中建立新的日誌規則，為您的組織：
+2. 在 Exchange Management PowerShell 中建立新的日誌規則，為您的組織：
 
 ```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
@@ -103,13 +103,13 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 1. 在您的本機電腦上開啟並登入 Exchange Online 遠端 PowerShell 模組**Microsoft Corporation**在 > **Microsoft Exchange Online 遠端 PowerShell 模組**使用使用全域系統管理員帳戶的測試環境。
 
-2. 在 Exchange Management Powershell 中建立新的日誌規則，為您的組織：
+2. 在 Exchange Management PowerShell 中建立新的日誌規則，為您的組織：
 
 ```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
 
-3. 在 Exchange Management PowerShell 中檢視 「 Insuffient 權限 」 錯誤：
+3. 在 Exchange Management PowerShell 中的檢視 」 權限不足 」 錯誤：
 
 ```ExchangeManagementPowerShell
 Insufficient permissions. Please raise an elevated access request for this task.
@@ -155,7 +155,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 1. 在您的本機電腦上開啟並登入 Exchange Online 遠端 PowerShell 模組**Microsoft Corporation**在 > **Microsoft Exchange Online 遠端 PowerShell 模組**使用全域系統管理員帳戶的測試環境。
 
-2. 在 Exchange Management Powershell 中建立新的日誌規則，為您的組織：
+2. 在 Exchange Management PowerShell 中建立新的日誌規則，為您的組織：
 
 ```ExchangeManagementPowerShell
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true

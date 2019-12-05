@@ -1,0 +1,234 @@
+- name: Microsoft 365 企業版文件和資源
+  href: index.yml
+- name: Microsoft 365 企業版概觀
+  href: microsoft-365-overview.md
+- name: 部署 Microsoft 365 企業版
+  href: deploy-microsoft-365-enterprise.md
+  items:
+    - name: 部署基礎結構
+      href: deploy-foundation-infrastructure.md
+      items:
+        - name: 階段 1-網路
+          href: networking-infrastructure.md
+          items:
+            - name: 步驟 1-準備用於 Microsoft 365 的網路
+              href: networking-provide-bandwidth-cloud-services.md
+            - name: 步驟 2-設定每個辦公室的當地網際網路連線
+              href: networking-dns-resolution-same-location.md
+            - name: 步驟 3-避免網路 hairpin
+              href: networking-avoid-network-hairpins.md
+            - name: 步驟 4-設定流量旁路
+              href: networking-configure-proxies-firewalls.md
+            - name: 步驟 5-最佳化用戶端和 Office 365 服務效能
+              href: networking-optimize-tcp-performance.md
+            - name: 網路允出準則
+              href: networking-exit-criteria.md
+        - name: 階段 2-Identity
+          href: identity-infrastructure.md
+          items:
+            - name: 步驟 1-建立和保護您的全域系統管理員帳戶
+              href: identity-create-protect-global-admins.md
+            - name: 步驟 2-保護您的密碼
+              href: identity-secure-your-passwords.md
+            - name: 步驟 3-保護和管理您的使用者登入
+              href: identity-secure-user-sign-ins.md
+            - name: 步驟 4-新增使用者帳戶
+              href: identity-add-user-accounts.md
+            - name: 步驟 5-使用群組來管理
+              href: identity-use-group-management.md
+            - name: 步驟 6-設定身分識別管理
+              href: identity-configure-identity-governance.md
+            - name: 身分識別允出準則
+              href: identity-exit-criteria.md
+        - name: 階段 3-Windows 10 企業版
+          href: windows10-infrastructure.md
+          items:
+            - name: 步驟 1-準備您的組織
+              href: windows10-prepare-your-org.md
+            - name: 步驟 2-部署為就地升級
+              href: windows10-deploy-inplaceupgrade.md
+            - name: 步驟 3-部署新裝置
+              href: windows10-deploy-autopilot.md
+            - name: 步驟 4-監控裝置健全狀況和合規性
+              href: windows10-enable-windows-analytics.md
+            - name: 步驟 5-部署安全性功能
+              href: windows10-enable-security-features.md
+            - name: Windows 10 企業版允出準則
+              href: windows10-exit-criteria.md
+        - name: 階段 4-Office 365 專業增強版
+          href: office365proplus-infrastructure.md
+          items:
+            - name: Office 365 專業增強版允出準則
+              href: office365proplus-exit-criteria.md
+        - name: 階段 5-行動裝置管理
+          href: mobility-infrastructure.md
+          items:
+            - name: 行動裝置管理允出準則
+              href: mobility-infrastructure-exit-criteria.md
+        - name: 階段 6-資訊保護
+          href: infoprotect-infrastructure.md
+          items:
+            - name: 步驟 1-定義安全性和資訊保護層級
+              href: infoprotect-define-sec-infoprotect-levels.md
+            - name: 步驟 2-設定環境的分類
+              href: infoprotect-configure-classification.md
+            - name: 步驟 3-設定增強的 Microsoft 365 安全性
+              href: infoprotect-configure-increased-security-office-365.md
+            - name: 步驟 4-Windows 資訊保護設定
+              href: infoprotect-deploy-windows-information-protection.md
+            - name: 步驟 5-設定 Office 365 資料外洩防護
+              href: infoprotect-data-loss-prevention.md
+            - name: 步驟 6-設定電子郵件加密
+              href: infoprotect-email-encryption.md
+            - name: 步驟 7-設定 Office 365 的特殊權限的存取管理
+              href: infoprotect-configure-privileged-access-management.md
+            - name: 資訊保護允出準則
+              href: infoprotect-exit-criteria.md
+        - name: 部署策略
+          href: deployment-strategies-microsoft-365-enterprise.md
+        - name: 使用現有的基礎結構部署
+          href: deploy-with-existing-infrastructure.md
+        - name: 非企業部署
+          href: deploy-foundation-infrastructure-non-enterprises.md
+    - name: 部署工作負載和案例
+      href: deploy-workloads.md
+      items:
+        - name: Microsoft Teams
+          href: teams-workload.md
+        - name: Exchange Online
+          href: exchangeonline-workload.md
+        - name: SharePoint 和商務用 OneDrive
+          href: sharepoint-online-onedrive-workload.md
+        - name: 移轉
+          href: migration-microsoft-365-enterprise-workload.md
+        - name: 強化遠端工作人員
+          href: empower-people-to-work-remotely.md
+        - name: 適用於高度管制資料的 Microsoft Teams
+          href: secure-teams-highly-regulated-data-scenario.md
+        - name: 適用於高度管制資料的 SharePoint 網站
+          href: teams-sharepoint-online-sites-highly-regulated-data.md
+    - name: 測試實驗室指南
+      href: m365-enterprise-test-lab-guides.md
+      items:
+        - name: 基本設定
+          items:
+            - name: 輕量型
+              href: lightweight-base-configuration-microsoft-365-enterprise.md
+            - name: 模擬企業
+              href: simulated-ent-base-configuration-microsoft-365-enterprise.md
+        - name: 身分識別
+          items:
+            - name: 密碼雜湊同步處理
+              href: password-hash-sync-m365-ent-test-environment.md
+            - name: 傳遞驗證
+              href: pass-through-auth-m365-ent-test-environment.md
+            - name: 同盟驗證
+              href: federated-identity-for-your-office-365-dev-test-environment.md
+            - name: Azure AD 無縫單一登入
+              href: single-sign-on-m365-ent-test-environment.md
+            - name: 多重要素驗證
+              href: multi-factor-authentication-microsoft-365-test-environment.md
+            - name: 保護全域系統管理員帳戶
+              href: protect-global-administrator-accounts-microsoft-365-test-environment.md
+            - name: 密碼回寫
+              href: password-writeback-m365-ent-test-environment.md
+            - name: 密碼重設
+              href: password-reset-m365-ent-test-environment.md
+            - name: 自動授權和群組成員資格
+              href: automate-licenses-group-membership-microsoft-365-test-environment.md
+            - name: Azure AD Identity Protection
+              href: azure-ad-identity-protection-microsoft-365-test-environment.md
+            - name: 身分識別與裝置存取
+              href: identity-device-access-m365-test-environment.md
+              items:
+                - name: 僅雲端
+                  href: cloud-only-prereqs-m365-test-environment.md
+                - name: 密碼雜湊同步處理
+                  href: phs-prereqs-m365-test-environment.md
+                - name: 傳遞驗證
+                  href: pta-prereqs-m365-test-environment.md
+        - name: 行動裝置管理
+          items:
+            - name: 註冊 iOS 和 Android 裝置
+              href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
+            - name: 裝置合規性原則
+              href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
+        - name: 資訊保護
+          items:
+            - name: 增強的 Microsoft 365 安全性
+              href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
+            - name: 資料分類
+              href: data-classification-microsoft-365-enterprise-dev-test-environment.md
+            - name: 特許存取管理
+              href: privileged-access-microsoft-365-enterprise-dev-test-environment.md
+    - name: Contoso 案例研究
+      href: contoso-case-study.md
+      items:
+        - name: 概觀
+          href: contoso-overview.md
+        - name: Contoso 的 IT 基礎結構與需求
+          href: contoso-infra-needs.md
+        - name: 網路功能
+          href: contoso-networking.md
+        - name: 身分識別
+          href: contoso-identity.md
+        - name: Windows 10 企業版
+          href: contoso-win10.md
+        - name: Office 365 專業增強版
+          href: contoso-o365pp.md
+        - name: 行動裝置管理
+          href: contoso-mdm.md
+        - name: 資訊保護
+          href: contoso-info-protect.md
+        - name: 安全性摘要
+          href: contoso-security-summary.md
+        - name: 用於高度機密專案的團隊
+          href: contoso-team-for-top-secret-project.md
+        - name: 適用於高度管制資料的 SharePoint 網站
+          href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
+    - name: Microsoft 365 企業版部署內容的變更
+      href: microsoft-365-deploment-guide-changes.md
+- name: 桌面部署中心
+  href: desktop-deployment-center-home.md
+  items:
+    - name: 快速入門-人員、 流程及技術指導方針
+      href: getting-started.md
+    - name: 步驟 1 - 裝置和應用程式整備
+      href: step-1-device-and-app-readiness.md
+    - name: 步驟 2 - 目錄和網路整備
+      href: step-2-directory-and-network-readiness.md
+    - name: 步驟 3 - Office 和 LOB 應用程式傳遞
+      href: step-3-office-and-lob-app-delivery.md
+    - name: 步驟 4 - 使用者檔案和設定移轉
+      href: step-4-user-files-and-settings-migration.md
+    - name: 步驟 5 - 安全性與相容性考量事項
+      href: step-5-security-and-compliance.md
+    - name: 步驟 6 - 作業系統部署與功能更新
+      href: step-6-os-deployment-and-feature-updates.md
+    - name: 步驟 7 - Windows 和 Office 服務
+      href: step-7-windows-and-office-as-a-service.md
+    - name: 步驟 8 - 使用者的通訊和訓練
+      href: step-8-user-communications-and-training.md
+    - name: Windows 7 至 Windows 10 的手動升級
+      href: windows-7-to-windows-10-upgrade-manual.md
+    - name: Windows 7 至 Windows 10 自動升級
+      href: windows-7-to-windows-10-upgrade-automated.md
+    - name: Windows 和 Office 部署與 Lab Kit
+      href: modern-desktop-deployment-and-management-lab.md
+    - name: 尋找部署的說明
+      href: find-help-for-modern-desktop-deployment.md
+- name: Microsoft 365 合規性
+  href: ../compliance/index.yml
+- name: Microsoft 365 安全性
+  href: ../security/index.yml
+- name: 企業業務連續性管理 (EBCM) 與雲端服務
+  href: ebcm-understanding-ebcm-with-cloud-services.md
+  items:
+    - name: 客戶與雲端合作夥伴的 EBCM 責任
+      href: ebcm-customer-and-cloud-partner-ebcm-responsibilities.md
+    - name: Microsoft 365 雲端服務復原能力
+      href: ebcm-m365-service-resiliency.md
+    - name: 開發您的持續性計劃
+      href: ebcm-developing-your-ebcm-plan.md
+    - name: 服務事件的緩解案例
+      href: ebcm-microsoft-365-mitigations.md

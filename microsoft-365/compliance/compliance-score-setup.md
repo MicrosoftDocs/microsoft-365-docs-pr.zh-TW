@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何登入，設定權限，以及了解 Microsoft 合規性分數，可協助簡化和自動化風險評定儀表板。
-ms.openlocfilehash: 7bff479d4cd7e3f200f7fc169eb351299eec8a39
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 03bcc5663e3b57728eb4ba791bbcba9593e5afc7
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793647"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831176"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Microsoft 合規性分數 （預覽） 安裝程式
 
@@ -52,7 +52,7 @@ Microsoft 365 全域系統管理員為您的組織可能會存取合規性分數
 | **編輯資料**| 合規性系統管理員 | 合規性參與者 | 
 | **編輯測試結果**| 合規性系統管理員 | 合規性管理員評估者 | 
 | **管理評估以及範本和租用戶資料**| 合規性系統管理員<br>合規性資料管理員<br>安全性系統管理員 | 合規性管理員的系統管理員 | 
-| **指派給使用者**| 全域系統管理員 | 入口網站管理員 | 
+| **指派給使用者**| 全域管理員 | 入口網站管理員 | 
 
 > [!NOTE]
 > 從合規性分數移至合規性管理員完成工作時 （例如，若要管理 「 評估 」），您的瀏覽器會開啟新的索引標籤，會出現一個對話方塊。 在 [使用標頭 [top] 區段中，「 已 Microsoft 雲端服務客戶嗎？ 您的帳戶，登入] 選取 [**登入**存取合規性管理員;您將不需要重新輸入您的認證。
@@ -63,8 +63,6 @@ Microsoft 365 全域系統管理員為您的組織可能會存取合規性分數
 
 1. 移至[Microsoft 365 合規性中心](https://compliance.microsoft.com)，並使用您的全域系統管理員帳戶登入。
 2. 在左側的導覽窗格上，選取 [**權限**。 從這裡開始，您可以檢視角色及指派權限。
-
-如需詳細資訊，請閱讀[角色和 Microsoft 365 合規性中心的權限](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)。
 
 ## <a name="understand-the-compliance-score-dashboard"></a>了解合規性分數儀表板
 

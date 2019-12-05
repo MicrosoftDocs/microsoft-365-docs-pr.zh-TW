@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 了解如何帳單 profiles 支援發票。
 keywords: 帳單設定檔、 發票、 費用，受管理的費用
-ms.openlocfilehash: 4b46709cf877ea8689f72b66d5ac357272e4737d
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: 3dbdbb57b46b915891640483bde56ebc8ad1cff6
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753542"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837387"
 ---
 # <a name="manage-billing-profiles"></a>管理帳單的設定檔
 從 Microsoft 購買產品和服務的商業客戶，「 帳單設定檔 」 可讓您自訂哪些項目會包含在您的帳單和支付您發票的方式。

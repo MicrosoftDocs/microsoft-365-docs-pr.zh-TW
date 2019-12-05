@@ -13,12 +13,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) 和進階威脅防護 (ATP) 的安全性設定的最佳做法是什麼？ 標準保護目前建議是什麼？ 如果您想要更嚴格應該使用什麼？ 以及哪些額外讓如果您也可以使用進階威脅防護 (ATP)？
-ms.openlocfilehash: fa88f80a0f7423a57850e2d8ad690f2472a23a7c
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 5f91c321e0644bc526b8f02028e794935cac3265
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615653"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837327"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全的建議的設定
 
@@ -41,7 +41,7 @@ ms.locfileid: "39615653"
 |網路釣魚電子郵件偵測巨集指令|隔離郵件|隔離郵件||
 |高信賴度 Phish 電子郵件偵測巨集指令|隔離郵件|隔離郵件||
 |大量電子郵件偵測巨集指令|將郵件移至垃圾郵件] 資料夾|隔離郵件||
-|將大量電子郵件閾值設定為|6|4|預設值是目前 7，但建議大部分組織 mvoe 它下，至少有 6|
+|將大量電子郵件閾值設定為|6 |4 |預設值是目前 7，但建議，大多數的組織就會將它移動到至少 6|
 |隔離保留期限|30 天|30 天||
 |安全提示|開啟|開啟||
 |允許寄件者|無|無||
@@ -137,7 +137,7 @@ EOP 客戶取得基本反網路釣魚如先前所述，但 Office 365 ATP 包含
 |EnableAuthenticationSafetyTip|True|True|此設定只有在 PowerShell|
 |EnableAuthenticationSoftPassSafetyTip|False|True|此設定只有在 PowerShell|
 |EnableSuspiciousSafetyTip|False|True|此設定只有在 PowerShell|
-|TreatSoftPassAsAuthenticated|對|False|此設定只有在 PowerShell|
+|TreatSoftPassAsAuthenticated|True|False|此設定只有在 PowerShell|
 
 |進階的設定安全性功能名稱|標準|嚴格|留言|
 |---------|---------|---------|---------|

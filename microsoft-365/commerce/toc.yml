@@ -17,6 +17,7 @@
         - name: 升級的訂閱
           href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
     - name: 帳單和付款
+      expanded: true
       items:
         - name: 了解您的帳單
           href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
@@ -28,8 +29,8 @@
           href: /microsoft-365/commerce/billing-and-payments/psd2
     - name: 帳單帳戶
       items:
-        - name: 管理帳單的帳戶資訊
-          href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce
+        - name: 管理帳單帳戶
+          href: /microsoft-365/commerce/billing-accounts/manage-billing-accounts
         - name: 與我的帳單帳戶產生關聯的租用戶
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
     - name: 與我協力廠商管理關係

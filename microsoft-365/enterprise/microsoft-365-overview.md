@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 企業版提供元件、 計劃及部署路徑的簡介。
-ms.openlocfilehash: b5629edbdbd660a8548fc30809c408d88b18111b
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 67d7417af01b7c64094aa46350326f32e0f18534
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437835"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831954"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -41,7 +41,7 @@ Microsoft 365 企業版所組成：
 
 |||
 |:-------|:-----|
-| 版 E3 | 存取核心產品與安全地增強工作場所生產力和磁碟機創新能力，Microsoft 365 內的功能。 |
+| E3 | 存取核心產品與安全地增強工作場所生產力和磁碟機創新能力，Microsoft 365 內的功能。 |
 | E5 | 存取最新的產品和 Microsoft 365 內的功能，包括進階威脅防護、 安全性和共同作業工具. 包含所有的 E3 的功能以及進階的安全性、 語音及資料分析工具。 |
 | F1 | 與第一線透過特殊用途的工具和資源，以允許他們盡善盡美連線。 |
 |||
@@ -70,11 +70,11 @@ Microsoft 365 企業版所組成：
 若要下載此海報的副本，請按一下[這裡](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf)。
 
 
-## <a name="transition-your-entire-organization"></a>轉換整個組織
+## <a name="transition-your-entire-organization"></a>轉換您的整個組織
 
-若要取得較佳的圖片，將整個組織移至 Microsoft 365 企業版產品與服務欲了解，請下載[轉換海報](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
+若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請下載[轉換海報](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
 
-[![[轉換到 Microsoft 365 海報的影像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![轉換至 Microsoft 365 海報的影像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 這份雙頁海報可讓您快速清查您現有的基礎結構，並取得移至 Microsoft 365 企業版中對應產品或服務的指導方針。 包含 Windows 和 Office 產品和其他基礎結構與安全性元素，例如裝置管理、身分識別以及資訊和威脅防護。
 
@@ -92,9 +92,9 @@ Microsoft 365 企業版所組成：
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 - [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
-視覺升級摘要移轉，與要雲端移動選項這些產品，請參閱[支援海報的結尾](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)。
+如需適用於這些產品的升級、移轉和移至雲端選項的視覺摘要，請參閱[終止支援海報](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)。
 
-[![支援 Office 2010 用戶端和伺服器和 Windows 7 海報結尾的影像](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+[![Office 2010 用戶端與伺服器和 Windows 7 終止支援海報的影像](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
 這一頁海報是支援的了解若要防止 Windows 7 和 Office 2010 用戶端和伺服器產品達到結尾的慣用的路徑與中反白顯示的 Microsoft 365 企業版支援，可採取的各種路徑的快速方法。
 

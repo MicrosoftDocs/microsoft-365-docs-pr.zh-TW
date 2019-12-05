@@ -16,17 +16,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: 協助您安裝 Office 應用程式的使用者。
-ms.openlocfilehash: dd2d32ee04402ef977ee1530c20d77512c2d8336
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 73eb3ed9bb88dca4232865b2ecd9015441875c07
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320221"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831206"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>協助您在 Windows 10 裝置上安裝 Office 的使用者
 
@@ -34,8 +36,14 @@ ms.locfileid: "38320221"
 
 您可以快速並輕鬆地從 Microsoft 365 商務版系統管理中心的 Windows 10 Pc 上安裝 Office。
   
-若要了解如何透過這種方式安裝 Office App，請參閱[準備 Office 用戶端安裝](prepare-for-office-client-deployment.md)再開始進行。 
-  
+若要了解如何透過這種方式安裝 Office App，請參閱[準備 Office 用戶端安裝](prepare-for-office-client-deployment.md)再開始進行。
+
+觀看有關安裝 Office 應用程式。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
+
+如果您找到這段影片很有幫助，請參閱[完成小型企業版和 Microsoft 365 的新手訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+
 ## <a name="manage-office-deployments"></a>管理 Office 部署
 
 1. 移至系統管理中心， <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>，並以全域系統管理員認證登入。 
@@ -51,4 +59,6 @@ ms.locfileid: "38320221"
     
       :::image type="content" source="media/sendemailtousers.png" alt-text="選取的使用者傳送電子郵件與 Office 下載連結。":::
 
+## <a name="see-also"></a>另請參閱
 
+[Microsoft 365 商務版開發人員訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
