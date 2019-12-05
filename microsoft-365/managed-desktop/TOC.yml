@@ -1,0 +1,115 @@
+- name: Microsoft 受管理的電腦
+  href: index.yml
+  items:
+    - name: 什麼是 Microsoft 受管理的電腦？
+      href: intro/index.md
+      items:
+        - name: 角色和責任
+          href: intro/roles-and-responsibilities.md
+        - name: Microsoft 受管理電腦中的技術
+          href: intro/technologies.md
+        - name: Microsoft 受管理的電腦和 ITIL
+          href: MMD-and-ITSM.md
+    - name: Microsoft 受管理的電腦服務描述
+      href: service-description/index.md
+      items:
+        - name: 支援的地區和語言
+          href: service-description/regions-languages.md
+        - name: 產品生命週期
+          href: service-description/device-lifecycle.md
+        - name: 程式裝置
+          href: service-description/device-list.md
+          items:
+            - name: 封存的程式裝置
+              href: service-description/archived-device-list.md
+        - name: 裝置服務
+          href: service-description/device-services.md
+        - name: 裝置設定
+          href: service-description/device-policies.md
+        - name: 安全性
+          href: service-description/security.md
+        - name: 更新
+          href: service-description/updates.md
+        - name: 支援
+          href: service-description/support.md
+        - name: 運作和監視
+          href: service-description/operations-and-monitoring.md
+        - name: 應用程式需求
+          href: service-description/mmd-app-requirements.md
+        - name: 服務變更與通訊
+          href: service-description/servicechanges.md
+        - name: 服務方案的例外狀況
+          href: service-description/customizing.md
+    - name: 準備註冊 Microsoft 受管理的電腦
+      href: get-ready/index.md
+      items:
+        - name: Microsoft 受管理電腦的先決條件
+          href: get-ready/prerequisites.md
+        - name: 準備網路
+          href: get-ready/network.md
+        - name: 為 Microsoft 受管理的電腦準備備內部部署資源存取權
+          href: get-ready/authentication.md
+        - name: 為 Microsoft 受管理的電腦準備對應磁碟機
+          href: get-ready/mapped-drives.md
+        - name: 為 Microsoft 受管理的電腦準備認證和網路設定檔
+          href: get-ready/certs-wifi-lan.md
+        - name: 準備應用程式
+          href: get-ready/apps.md
+          items:
+            - name: 使用 Microsoft 諮詢服務
+              href: get-ready/apps-MCS.md
+    - name: 開始使用 Microsoft 受管理的電腦
+      href: get-started/index.md
+      items:
+        - name: 在系統管理入口網站中新增和驗證系統管理員連絡人
+          href: get-started/add-admin-contacts.md
+        - name: 調整條件式存取
+          href: get-started/conditional-access.md
+        - name: 指派授權
+          href: get-started/assign-licenses.md
+        - name: 部署 Intune 公司入口網站
+          href: get-started/company-portal.md
+        - name: 啟用企業狀態漫遊
+          href: get-started/enterprise-state-roaming.md
+        - name: 設定裝置
+          href: get-started/set-up-devices.md
+          items:
+            - name: 自行註冊新裝置
+              href: get-started/register-devices-self.md
+              items:
+                - name: 讓合作夥伴註冊裝置的步驟
+                  href: get-started/register-devices-partner.md
+            - name: 自行註冊現有裝置
+              href: get-started/register-reused-devices-self.md
+        - name: 讓您的使用者準備好使用裝置
+          href: get-started/get-started-devices.md
+        - name: 部署應用程式
+          href: get-started/deploy-apps.md
+          items:
+            - name: Microsoft Project 和 Microsoft Visio
+              href: get-started/project-visio.md
+    - name: 使用 Microsoft 受管理的電腦
+      href: working-with-managed-desktop/index.md
+      items:
+        - name: 具備深入解析的工作
+          href: working-with-managed-desktop/insights.md
+          items:
+            - name: 使用情況深入解析
+              href: working-with-managed-desktop/usage-insights.md
+            - name: 可靠深入解析
+              href: working-with-managed-desktop/reliability-insights.md
+        - name: 管理員支援
+          href: working-with-managed-desktop/admin-support.md
+        - name: 使用者支援
+          href: working-with-managed-desktop/end-user-support.md
+        - name: 管理應用程式
+          href: working-with-managed-desktop/manage-apps.md
+        - name: 可設定的設定
+          href: working-with-managed-desktop/config-setting-overview.md
+          items:
+            - name: 可設定的設定參考
+              href: working-with-managed-desktop/config-setting-ref.md
+            - name: 部署可設定的設定
+              href: working-with-managed-desktop/config-setting-deploy.md
+    - name: Microsoft 受管理電腦文件的變更歷程記錄
+      href: change-history-managed-desktop.md

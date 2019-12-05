@@ -22,17 +22,17 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: 深入了解現在在安裝期間，會自動將 Office 部署到 Windows 10 裝置。
-ms.openlocfilehash: 6bcb85a0acdf738d939c10d4fe418646b00b0b95
-ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
+ms.openlocfilehash: 7b58fd3db6c6f15effe2bc4876903a9f480366b1
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704088"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831616"
 ---
-# <a name="install-office-on-windows-10-during-setup"></a><span data-ttu-id="e0450-103">在設定期間安裝 Windows 10 版 Office</span><span class="sxs-lookup"><span data-stu-id="e0450-103">Install Office on Windows 10 during setup</span></span>
+# <a name="install-office-on-windows-10-during-setup"></a><span data-ttu-id="4dfe3-103">在設定期間安裝 Windows 10 版 Office</span><span class="sxs-lookup"><span data-stu-id="4dfe3-103">Install Office on Windows 10 during setup</span></span>
 
 ![指向橫幅https://aka.ms/aboutM365preview。](media/m365admincenterchanging.png)
 
-<span data-ttu-id="e0450-105">根據預設，此設定為關閉狀態。</span><span class="sxs-lookup"><span data-stu-id="e0450-105">This setting is off by default.</span></span> <span data-ttu-id="e0450-106">您可以開啟它以確定使用者有最新版本的 Office 上所有 Windows 10 裝置，但先確認已符合所有必要條件。</span><span class="sxs-lookup"><span data-stu-id="e0450-106">You can turn it on to make sure users have the latest version of Office on all their Windows 10 devices, but first verify that all prerequisites are met.</span></span> <span data-ttu-id="e0450-107">必須為此設定，將軟體推送到裝置，除了其他[Office 用戶端部署 Microsoft 365 商務版準備](prepare-for-office-client-deployment.md)所述的需求的 Microsoft 365 商務版授權給使用者。</span><span class="sxs-lookup"><span data-stu-id="e0450-107">Users must be licensed for Microsoft 365 Business for this setting to push the software to the device, in addition to other requirements described in [Prepare for Office client deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md).</span></span> 
+<span data-ttu-id="4dfe3-105">根據預設，此設定為關閉狀態。</span><span class="sxs-lookup"><span data-stu-id="4dfe3-105">This setting is off by default.</span></span> <span data-ttu-id="4dfe3-106">您可以開啟它以確定使用者有最新版本的 Office 上所有 Windows 10 裝置，但先確認已符合所有必要條件。</span><span class="sxs-lookup"><span data-stu-id="4dfe3-106">You can turn it on to make sure users have the latest version of Office on all their Windows 10 devices, but first verify that all prerequisites are met.</span></span> <span data-ttu-id="4dfe3-107">必須為此設定，將軟體推送到裝置，除了其他[Office 用戶端部署 Microsoft 365 商務版準備](prepare-for-office-client-deployment.md)所述的需求的 Microsoft 365 商務版授權給使用者。</span><span class="sxs-lookup"><span data-stu-id="4dfe3-107">Users must be licensed for Microsoft 365 Business for this setting to push the software to the device, in addition to other requirements described in [Prepare for Office client deployment by Microsoft 365 Business](prepare-for-office-client-deployment.md).</span></span>
   
-<span data-ttu-id="e0450-108">我們建議您接受安裝期間預設設定。</span><span class="sxs-lookup"><span data-stu-id="e0450-108">We recommend that you accept the default setting during setup.</span></span> 
+<span data-ttu-id="4dfe3-108">我們建議您接受安裝期間預設設定。</span><span class="sxs-lookup"><span data-stu-id="4dfe3-108">We recommend that you accept the default setting during setup.</span></span>
