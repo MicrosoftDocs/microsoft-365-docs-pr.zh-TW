@@ -13,20 +13,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 開發雲端感知商務持續性計劃時需考慮的事項。
-ms.openlocfilehash: e7bd9ad7d1bd14db761ec399e260bbfc23954d99
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a9f8b7f6950375fb976202a10da03662c3b2715a
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031068"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831666"
 ---
 # <a name="developing-your-continuity-plan"></a>開發您的持續性計劃
 
 本主題提供開發商務持續性計劃的指導方針，將 Microsoft 365 相依性納入考量。 我們在這裡建議您分析商務功能及識別有哪些項目依賴 Microsoft 365 服務的方法。 您會在預期有服務失敗且您必須為這些可能性進行準備的情況下，執行這個分析。
 
-一般來說，企業持續性規劃涉及四個層面：評定、規劃、功能驗證以及溝通與協調。
+一般來說，商務持續性規劃涉及四個層面：評定、規劃、功能驗證以及通訊與協調。
 
-## <a name="assesment"></a>評定
+## <a name="assessment"></a>評定
 首先，您必須識別貴組織中的商務功能，以及支援它們的服務和程序。 包括完成商務影響分析，其中每個商務功能會根據關鍵程度排名，並您要識別每個商務功能相依的程序和服務。 以下是範例表格，可協助您開始使用自己的評定。
 
 **範例商務影響評定 (BIA)**
@@ -49,7 +49,7 @@ ms.locfileid: "38031068"
 |技術是否有驅動特定程序 SLA 的已知執行規定？ 如果是的話，請詳細說明。|`details here`|
 |與此服務相關聯的資料遺失或洩露時，是否會觸發重大事件？ 如果是的話，請詳細說明。|`details here`|
 |服務是否有針對部分或所有關鍵功能的因應措施或替代方案？ 如果是的話，請詳細說明。|`details here`|
-|服務是否會處理、儲存或傳輸客戶資料 (PII)？ 如果是的話，請詳細說明。|`details here`|
+|服務是否可處理、儲存或傳輸客戶資料 (例如個人識別資訊 (PII))？ 如果是的話，請詳細說明。|`details here`|
 |BIA 狀態|`develop your own status classification, here are some examples: planned, started, in-progress, complete, on-hold, expired`|
 |完成日期|`the date this BIA was completed`|
 |BIA 講授者|`name of the person or group who is responsible for developing and maintaining this BIA`|

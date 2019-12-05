@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解當雲端服務成為您的 IT 產品的一部分時，在規劃和實現業務連續性上會有何不同。
-ms.openlocfilehash: 9b8d769670b53a75c2b48254cb0026488995274a
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: 86ceac67b90acfbb90a35d9a528a89d619668722
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122253"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831834"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>企業業務連續性管理 (EBCM) 與雲端服務
 
-在組織數位轉型的過程中，您需要重新審視和更新災害復原和業務連續性計劃，以考慮依賴 Microsoft 365 雲端服務的業務流程。 Microsoft 365 雲端服務 (例如 Exchange Online、SharePoint Online 和商務用 OneDrive) 的設計目的和運作方式具有高度的復原力。 即便擁有這樣的復原能力，還是會發生服務事件。 當事件發生時，您的組織必須準備周全，並具備完善的業務連續性策略。
+在組織數位轉型的過程中，您需要重新審視和更新災害復原和業務連續性計劃，以考慮依賴 Microsoft 365 雲端服務的業務流程。 Microsoft 365 雲端服務 (例如 Exchange Online、SharePoint Online 和商務用 OneDrive) 的設計目的和運作方式具有高度的復原力。 即便擁有這樣的復原能力，還是會發生服務事件。 當事件發生時，貴組織必須準備周全，並具備定義明確的商務持續性策略。
 
 如果您還未更新計劃，本主題系列可協助您規劃策略，讓您的服務保持在穩定的狀態。 下列主題著重在改善連續性準備工作的關鍵考慮事項。
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的設定符合 Microsoft 365 企業版的網路基礎結構的準則。
-ms.openlocfilehash: ad54284fdbd00fef486a13a957af6f06cb6a7450
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: f3d2861af90e9a6f8a9b0b64b307dac6b1b76eb1
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370150"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831944"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>第1 階段：網路基礎結構的允出準則
 
@@ -48,7 +48,7 @@ ms.locfileid: "37370150"
 如有需要，[步驟 2](networking-dns-resolution-same-location.md) 可協助您符合這項要求。
 
 <a name="crit-networking-step3"></a>
-## <a name="optional-unneccessary-network-hairpins-are-removed"></a>選用：已移除不需要的網路回送
+## <a name="optional-unnecessary-network-hairpins-are-removed"></a>選用：已移除不需要的網路 Hairpin
 
 您已檢查網路 Hairpin，並判斷出其對您的所有辦公室之效能的影響。您已移除可能的網路 Hairpin，或與協力廠商網路或安全性提供者合作，為其網路實作最佳化的 Microsoft 365 對等。
 

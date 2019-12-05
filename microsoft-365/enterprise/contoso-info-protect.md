@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft 365 企業版中的資訊保護功能，在雲端中保護其數位資產。
-ms.openlocfilehash: f5893414a0aab3d0ab89eb180f0c907d4379194c
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: d6167896c3e42c5fef373de7c5be7123467936f4
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673199"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831676"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的資訊保護
 
@@ -65,7 +65,7 @@ Contoso 使用下列步驟，針對其資訊保護需求準備 Microsoft 365 企
 
 4. 針對機密和高管制資料建立受保護的 SharePoint 網站，具有鎖定存取的權限
 
-   機密和高管制網站均已設定為[隔離網站](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites)，在其中已自訂預設 SharePoint 小組網站的權限。 此外，也以使用對應的保留標籤來設定敏感性和高管制 SharePoint 網站。 儲存在高管制 SharePoint 網站中的檔案受到高管制標籤的敏感度子標籤保護。 如需詳細資訊，請參閱[適用於高度管制資料的 SharePoint 網站](teams-sharepoint-online-sites-highly-regulated-data.md)案例。
+   敏感性和高度管控網站都是透過額外權限限制設定為私人小組網站。 此外，也以使用對應的保留標籤來設定敏感性和高管制 SharePoint 網站。 儲存在高管制 SharePoint 網站中的檔案受到高管制標籤的敏感度子標籤保護。 如需詳細資訊，請參閱[適用於高度管制資料的 SharePoint 網站](teams-sharepoint-online-sites-highly-regulated-data.md)案例。
 
 5.  從內部部署 SharePoint 網站和檔案共用將資料移至新的 SharePoint 網站
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 在服務事件期間做了什麼，讓您可以更好地準備商務持續性計劃。
-ms.openlocfilehash: c74bb83352f87faf0bb7f50e8aec4ac813516d3c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 02ab818a6b26fc6b9902747f6c0211545d4b4704
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031078"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831864"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>企業商務持續性管理客戶與雲端合作夥伴責任
 
@@ -34,7 +34,7 @@ Microsoft 會藉由更新 Microsoft 365 管理入口網站上的租用戶特定�
 ## <a name="targeted"></a>鎖定目標
 在大部分情況下，當我們的監視系統偵測到問題時，我們可以識別受影響的客戶群體，從單一客戶到區域，並將必要通訊導向給這些客戶。 這可協助您了解對業務需要知道的事項，而不會被不影響您的雜訊通知導致分心。 例如，如果某個特定信箱資料庫受到影響，我們就能準確地識別哪些客戶有使用者在受影響的基礎結構上，並將我們的通訊範圍提供給他們。 如果您不清楚事件的影響範圍，我們會將通訊延伸到可能受影響的最廣大客戶群組。
 
-## <a name="highly-avaliable"></a>高度可用
+## <a name="highly-available"></a>高可用性
 Microsoft 為客戶可以使用的服務狀態通訊保留多個通道。
 
 - 如果系統管理中心或系統管理中心內的服務健康狀態儀表板無法使用，您可以使用我們的[備份網站](https://status.office365.com/)來監控服務狀態。

@@ -20,7 +20,7 @@
 如有需要，[步驟 2](../networking-dns-resolution-same-location.md) 可協助您符合這項要求。
 
 <a name="crit-networking-step3"></a>
-### <a name="optional-unneccessary-network-hairpins-are-removed"></a>選用：已移除不需要的網路回送
+### <a name="optional-unnecessary-network-hairpins-are-removed"></a>選用：已移除不需要的網路 Hairpin
 
 您已檢查網路 Hairpin，並判斷出其對您的所有辦公室之效能的影響。您已移除可能的網路 Hairpin，或與協力廠商網路或安全性提供者合作，為其網路實作最佳化的 Microsoft 365 對等。
 
