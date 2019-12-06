@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: 了解如何尋找並使用 Office 365 進階威脅防護中的安全性報告&amp;合規性中心。
-ms.openlocfilehash: d5f0958d199684a9d6ca6bfe4ed01c0ab9102a2a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9ad177e96184913be61e098a1aafa294a123199b
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078313"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866405"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>檢視 Office 365 進階威脅防護報告
 
@@ -29,19 +29,19 @@ ms.locfileid: "37078313"
 ![安全性&amp;合規性中心的儀表板可協助您查看正常進階威脅防護](../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 ATP 報告包含下列：
-- [威脅保護狀態報表](#threat-protection-status-report)
-- [ATP 檔案類型的報告](#atp-file-types-report)
-- [ATP 郵件處理報表](#atp-message-disposition-report)
+- [威脅防護狀態報告](#threat-protection-status-report)
+- [ATP 檔案類型報告](#atp-file-types-report)
+- [ATP 郵件處置報告](#atp-message-disposition-report)
 - [即時偵測或檔案總管]](threat-explorer.md) （視您是否具有 Office 365 ATP 方案 1 或 2）
 - ...[以及更多](#additional-reports-to-view)。 
 
 閱讀本篇文章以取得 ATP 報告概觀，以及如何使用它們。
   
-## <a name="threat-protection-status-report"></a>威脅保護狀態報表
+## <a name="threat-protection-status-report"></a>威脅防護狀態報告
 
 **威脅保護狀態**報表是整合在一起惡意內容和惡意電子郵件偵測並封鎖由[Exchange Online Protection](exchange-online-protection-overview.md) (EOP) 和[Office 365 ATP](office-365-atp.md)的相關資訊的單一檢視。 這份報告可以用來檢視偵測一段時間 （最多為 90 天），並可讓安全性系統管理員識別趨勢或判斷原則是否需要調整。 
 
-威脅保護狀態報告提供的唯一的電子郵件與惡意內容，例如檔案或網站位址 (Url) 已封鎖的反惡意程式碼引擎，[零時差自動清除 (ZAP)](zero-hour-auto-purge.md)，彙總的計數，以及 like ATP 功能[ATP 安全連結](atp-safe-links.md)、 [ATP 安全附件](atp-safe-attachments.md)及[ATP 防網路釣魚功能](atp-anti-phishing.md)。 
+威脅保護狀態報表會提供唯一的電子郵件與惡意內容，例如檔案或網站位址 (Url) 已封鎖的反惡意程式碼引擎、[零時差自動清除 (ZAP)](zero-hour-auto-purge.md)，和 ATP 功能，例如[ATP 安全連結](atp-safe-links.md)， [ATP 安全附件](atp-safe-attachments.md)， [ATP 防網路釣魚功能](atp-anti-phishing.md)彙總的計數。 
 
 > [!NOTE]
 > 威脅保護狀態報表是適用於擁有[Office 365 ATP](office-365-atp.md)或[Exchange Online Protection](exchange-online-protection-eop.md) (EOP); 客戶然而，ATP 客戶威脅保護狀態報表中顯示的資訊可能會包含不同資料比 EOP 客戶可能會看到的內容。 例如，ATP 客戶威脅保護狀態報表將包含[SharePoint Online、 OneDrive 或 Microsoft Teams 中偵測到惡意檔案](atp-for-spo-odb-and-teams.md)的相關資訊。 這類資訊是專屬於 ATP，，因此 EOP，但不是 ATP 的客戶將不會看到其威脅保護狀態報表中的這些詳細資料。
@@ -62,19 +62,19 @@ ATP 報告包含下列：
   
 ![檢視 ATP 威脅保護狀態報表的選項](../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
   
-## <a name="atp-file-types-report"></a>ATP 檔案類型的報告
+## <a name="atp-file-types-report"></a>ATP 檔案類型報告
 
 **ATP 檔案類型**的報告顯示[ATP 安全附件](atp-safe-attachments.md)所偵測到視為惡意的檔案的類型。
   
 若要檢視此報告中，在[安全性&amp;合規性中心](https://protection.office.com)，請移至**報表** \> **儀表板** \> **ATP 檔案類型**。
   
-![ATP 檔案類型的報告](../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
+![ATP 檔案類型報告](../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
 當您將游標的特定一天時，您可以看到分解為由[ATP 安全附件](atp-safe-attachments.md)所偵測到的惡意檔案的類型和[反垃圾郵件&amp;Office 365 中的反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)。
   
 ![一天的 ATP 檔案類型報告資料](../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
   
-## <a name="atp-message-disposition-report"></a>ATP 郵件處理報表
+## <a name="atp-message-disposition-report"></a>ATP 郵件處置報告
 
 **ATP 郵件處理**報告會顯示您針對已偵測到具有惡意內容的電子郵件所採取的動作。 
   
@@ -92,11 +92,11 @@ ATP 報告包含下列：
 
 |報告  |詳細資料  |
 |---------|---------|
-|**檔案總管**] 或 [**即時偵測**（Office 365 ATP 計劃 2 的客戶會有瀏覽器;Office 365 ATP 計劃 1 客戶擁有即時偵測的資訊）。| [威脅總管 （和即時偵測的資訊）](threat-explorer.md)       |
+|**檔案總管**] 或 [**即時偵測**（Office 365 ATP 計劃 2 的客戶會有瀏覽器;Office 365 ATP 計劃 1 客戶擁有即時偵測的資訊）。| [威脅總管 (及即時偵測)](threat-explorer.md)       |
 |**電子郵件安全性報告**，例如頂端寄件者和收件者報告、 詐騙郵件] 報告和垃圾郵件偵測] 報告。 | [檢視安全性中的電子郵件安全性報告&amp;合規性中心](../../compliance/view-email-security-reports.md)        |
-|**ATP 安全連結 URL 追蹤**（這是您藉由使用 PowerShell 產生報表）。這份報告顯示過去七 （7） 天 ATP 安全連結動作的結果。 |[Get-urltrace cmdlet 參照](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace?view=exchange-ps) |
-|**透過 EOP 和 ATP 的結果**（這是您藉由使用 PowerShell 產生自訂報告）。 此報告中包含的資訊，例如網域、 日期、 事件類型、 方向、 巨集指令，以及訊息計數。  | [取得 MailTrafficATPReport cmdlet 參照](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport?view=exchange-ps) |
-|**EOP 和 ATP 偵測**（這是您藉由使用 PowerShell 產生自訂報告）。 這份報告包含詳細惡意檔案或 Url、 網路釣魚嘗試、 模擬，以及其他電子郵件或檔案中的潛在威脅。   | [取得 MailDetailATPReport cmdlet 參照](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport?view=exchange-ps)        |
+|**ATP 安全連結 URL 追蹤**（這是您藉由使用 PowerShell 產生報表）。這份報告顯示過去七 （7） 天 ATP 安全連結動作的結果。 |[Get-urltrace cmdlet 參照](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace) |
+|（這是您藉由使用 PowerShell 產生自訂報告）**透過 EOP 和 ATP 的結果**。 此報告中包含的資訊，例如網域、 日期、 事件類型、 方向、 巨集指令，以及訊息計數。  | [取得 MailTrafficATPReport cmdlet 參照](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport) |
+|**EOP 和 ATP 偵測**（這是您藉由使用 PowerShell 產生自訂報告）。 這份報告包含詳細惡意檔案或 Url、 網路釣魚嘗試、 模擬，以及其他電子郵件或檔案中的潛在威脅。   | [取得 MailDetailATPReport cmdlet 參照](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport)        |
 
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>若要檢視 ATP 報告需要哪些權限？
@@ -108,7 +108,7 @@ ATP 報告包含下列：
     - 安全性系統管理員 (這可以在 Azure Active Directory 系統管理中心中指派 ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
     - 安全性讀取者
 
-- 若是 Exchange Online 中，您必須安裝下列其中一個在 Exchange 系統管理中心中指派下列角色 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) 或使用 PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
+- 若是 Exchange Online 中，您必須安裝下列其中一個在 Exchange 系統管理中心中指派下列角色 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) 或使用 PowerShell cmdlet (請參閱[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)):
     - 組織管理
     - 僅檢視組織管理
     - 僅檢視收件者角色

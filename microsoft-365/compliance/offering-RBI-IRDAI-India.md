@@ -1,7 +1,7 @@
 ---
 title: 預約銀行印度 (RBI) 和保險法規及開發授權單位印度 (IRDAI)
 description: Microsoft 已發佈指引，協助在印度使用雲端採用的金融機構。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 5e6af9be34fe5b14c84e8ba6cc9a55510baab92d
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: c88cfbfc9237e6e9a43dc8b143af015ba377ad17
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690276"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859493"
 ---
-# <a name="compliance-offering-reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>合規性供應項目： 保留銀行印度 (RBI) 和保險法規及開發授權單位的印度 (IRDAI)
+# <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>預約銀行印度 (RBI) 和保險法規及開發授權單位印度 (IRDAI)
 
 ## <a name="about-rbi-and-irdai"></a>關於 RBI] 和 [IRDAI
 
@@ -40,36 +40,36 @@ ms.locfileid: "38690276"
 
 Microsoft 檢查清單可協助在印度財務來進行到期盡職調查 「 評估 」 的 Microsoft business 雲端服務的公司，並包括：
 
-- 針對 context 法規橫向概觀。
-- 檢查清單可設定約定需要解決的問題，並將對應對這些法規義務的 Microsoft Azure、 Microsoft Dynamics 365 和 Microsoft Office 365 服務。 檢查清單可以用做為工具，來測量的法規架構的規範和用於記載合規性，提供內部結構協助進行的 Microsoft business cloud services 自己風險評定的客戶。
+- 內容的法規環境概觀。
+- 檢查清單可設定約定需要解決的問題，並將對應對這些法規義務的 Microsoft Azure、 Microsoft Dynamics 365 和 Microsoft Office 365 服務。 檢查清單可做為工具，以根據法規架構評定合規性，提供記錄合規性的內部結構，並協助客戶自行進行 Microsoft 商務雲端服務風險評估。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
 - [Microsoft 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
-## <a name="how-to-implement"></a>如何實作
+## <a name="how-to-implement"></a>實作方法
 
 - [印度的合規性檢查清單](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)： 財務公司可以取得進行風險評定的 Microsoft business 雲端服務的說明。
-- [風險評定 & 合規性指南](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)： 建立風險評定的 Microsoft 雲端服務，並調整通知的控管模型。
+- [風險評定與合規性指南](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)：建立 Microsoft 雲端服務風險評定的監管模型和調整通知。
 - [金融使用 azure 的案例](https://docs.microsoft.com/azure/industry/financial/)： 使用案例的概觀、 教學課程，以及其他資源來建立 Azure 解決方案的財務服務。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-**是否有任何必要的字詞，必須包含在與雲端服務提供者的合約？**
+**在與雲端服務提供者的合約中，是否必須包含任何強制性條款？**
 
 是。 上述的指導方針自行設定所需的金融機構必須併入其雲端服務合約某些特定點。 [檢查清單](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)（頁面 70） 第 2 部分對應這些對他們寄送 Microsoft 契約性文件中的各節。
 
 ## <a name="resources"></a>資源
 
 - [Microsoft 和 MeitY](offering-meity-india.md)
-- [Microsoft 金融服務合規性程式](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
-- [Microsoft 商務雲端服務和財務服務](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [在 Azure 中的財務服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Azure 的財務服務雲端風險評定工具](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 金融服務合規性計劃](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
+- [Microsoft 商務用雲端服務與金融服務](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Azure 的金融服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Azure 金融服務雲端風險評定工具](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/3/5/A/35AA1544-5E50-43C7-AA08-4911E5429205/RBI-IRDAI-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/3/5/A/35AA1544-5E50-43C7-AA08-4911E5429205/RBI-IRDAI-Compliance.pdf)。

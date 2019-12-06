@@ -1,7 +1,7 @@
 ---
 title: 2002 年沙賓法案 (SOX)
 description: 財務服務公司可以使用 Microsoft 規範符合性報告來解決其合規性年沙賓法案。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 2f496db53cde8779dd45f7d15cc9d6bd7789a75c
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 1bc568d6db13dd91d0e16e29633dccc58e28fc2a
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690281"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859473"
 ---
-# <a name="compliance-offering-sarbanes-oxley-act-of-2002-sox"></a>合規性供應項目： 年沙賓法案 (SOX) 2002年
+# <a name="sarbanes-oxley-act-of-2002-sox"></a>2002 年沙賓法案 (SOX)
 
 ## <a name="sox-overview"></a>SOX 概觀
 
@@ -40,15 +40,15 @@ Azure 用戶端若要進一步協助解決其 SOX 義務，Microsoft 已發佈[�
 
 深入了解如何解決您 SOX 合規義務時使用 Microsoft Azure 規範符合性報告：[下載年沙賓 Azure 指引](https://aka.ms/Azure-SOX-Guide)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 雲端服務可以作為獨立服務或 Office 365 為包含在品牌計劃] 或 [套件
+- Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 [SOC 1 類型 2](offering-SOC.md)報告：
 
@@ -65,12 +65,12 @@ Azure 用戶端若要進一步協助解決其 SOX 義務，Microsoft 已發佈[�
 ## <a name="resources"></a>資源
 
 - [Azure 指導沙賓法案](https://aka.ms/Azure-SOX-Guide)
-- [Microsoft 金融服務合規性程式](https://www.microsoft.com/download/details.aspx?id=55332)
-- [在 Azure 中的財務服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Microsoft 商務雲端服務和財務服務](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [共用的責任雲端運算](https://aka.ms/sharedresponsibility)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 金融服務合規性計劃](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Azure 的金融服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Microsoft 商務用雲端服務與金融服務](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [共同承擔的雲端運算責任](https://aka.ms/sharedresponsibility)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/5/D/2/5D278460-AF57-470F-B166-5BD9258BCE3E/SOX-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/5/D/2/5D278460-AF57-470F-B166-5BD9258BCE3E/SOX-Compliance.pdf)。

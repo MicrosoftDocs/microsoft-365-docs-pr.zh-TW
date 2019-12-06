@@ -5,12 +5,12 @@ keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: f46f5164340ec257a056a2f31bec8f846bb4a54a
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: f8d5b9321d8aad77ae25dcc7563a9e0db7dfc754
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634050"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859323"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的電腦裝置 
 
@@ -47,10 +47,11 @@ Microsoft 受管理電腦定期評估要包含在服務中的裝置。 本主題
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU 與 5VS04AV | 2020 年 7 月 18 日 | 2023 年 7 月 18 日 |
 | [HP EliteOne 800 G4 23.8 中 AIO](https://store.hp.com/us/en/mdp/desktops/eliteone-800-all-in-one-349552--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU 與 5VS04AV | 2020 年 7 月 18 日 | 2023 年 7 月 18 日 |
 | [HP ProBook x360 440 版 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU 與 5VS04AV，所需的紅外線網路攝影機或指紋讀者 | 2020 年 6， | 2023 6 月 6日， |
-| [Surface Book 2](https://www.microsoft.com/p/surface-book-2-for-business/8x4htznfgg38/lbh3?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 中 / 8 GB RAM | 15 英吋顯示 | 2019 年 11 月 16日日 | 2022 11 月 16日， |
 | [呈現移至](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel 4415Y / 8 GB RAM | 無 | 2020 年 8 月 2 日 | 2023 年 8 月 2 日 |
 | [Surface Laptop 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB / Intel i5 中 / 8 GB RAM | 無 | 2020 年 10 月 16 日 | 2023 Oct 16， |
+| **\*[Surface Laptop 3](https://www.microsoft.com/en-us/surface/business/surface-laptop-3)** | 128 GB / Intel i5 中 / 8 GB RAM | 無 | 2021 年 10 月 22 日 | 2024 Oct 22， |
 | [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel i5 中 / 8 GB RAM | 無 | 2020 年 10 月 16 日 | 2023 Oct 16， |
+| **\*[Surface Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB / Intel i5 中 / 8 GB RAM | 無 | 2021 年 10 月 22 日 | 2024 Oct 22， |
 
 
 

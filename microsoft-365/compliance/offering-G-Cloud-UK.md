@@ -1,7 +1,7 @@
 ---
 title: 英國政府雲端 （G 雲端）
 description: 皇冠商業服務更新政府雲端 v.6 Microsoft 雲端服務分類。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: a79b56bc5f6150439cd945f99b53a69b34a04a45
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 525ea4c129e351b157463efdf02280a1f55797ad
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690270"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859783"
 ---
-# <a name="compliance-offering-united-kingdom-government-cloud-g-cloud"></a>合規性供應項目： 聯合英國政府雲端 （G 雲端）
+# <a name="united-kingdom-government-cloud-g-cloud"></a>英國政府雲端 （G 雲端）
 
 ## <a name="uk-g-cloud-overview"></a>英國 G 雲端概觀
 
@@ -38,18 +38,18 @@ Microsoft 服務以數位市集約會表示英國政府機構與合作夥伴可�
 
 了解如何開始加速英國 G 雲端 v6 部署與我們的 Azure 安全性與合規性藍圖：[下載 Azure 藍圖英國 G 雲端原則實作指南](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure](https://aka.ms/AzureCompliance)
-- 雲端 App 安全性
+- Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Microsoft Flow 雲端服務做為獨立服務或做為包含在 Office 365 或 Dynamics 365 品牌計劃] 或 [套件
+- Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Office 365: Exchange Online、 SharePoint Online 和商務用 Skype
-- PowerApps 雲端服務，做為獨立服務或做為包含在 Office 365 或品牌計劃或套件的 Dynamics 365
-- Power BI 雲端服務可以作為獨立服務或 Office 365 為包含在品牌計劃] 或 [套件
+- PowerApps 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
+- Power BI 雲端服務，以獨立服務形式提供或包含在 Office 365 品牌方案或套件中
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 若要確認 Microsoft 雲端服務維護其合規性 G 雲端協議，GDS accreditor 可能會在任何時候，其判斷檢閱證據。
 
@@ -102,7 +102,7 @@ Microsoft Cloud 英國提供可靠性與效能資料常駐在英國結合。 這
 
 **如何取得稽核報告的複本？**
 
-[服務信任入口網站](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662)提供獨立稽核規範符合性報告。 您可以使用入口網站來要求稽核報告，以便您稽核員 」 可以比較 Microsoft 結果與您自己的法律和法規需求。
+[服務信任入口網站](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662)提供獨立稽核的合規性報告。 您可以使用入口網站來要求稽核報告，以便您稽核員 」 可以比較 Microsoft 結果與您自己的法律和法規需求。
 
 ## <a name="resources"></a>資源
 
@@ -111,8 +111,8 @@ Microsoft Cloud 英國提供可靠性與效能資料常駐在英國結合。 這
 - [G 雲端安全性原則](https://aka.ms/UK-G-Cloud)
 - [數位市集](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf)。

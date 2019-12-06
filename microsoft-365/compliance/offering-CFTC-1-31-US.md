@@ -1,7 +1,7 @@
 ---
 title: 貿易委員會 (CFTC) 規則 1.31(c-d) 美國境內的市售 Future
 description: 獨立評估公司驗證 Azure 與 Office 365 可協助符合 CFTC 規則 1.31 記錄保留與固定的儲存需求的財務公司。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 72b5f8301dd32ed9188f52153498853720d883c1
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: db357418b87e98ee0f649e48b1c00f9073d5e5de
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690252"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860063"
 ---
-# <a name="compliance-offering-commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>合規性供應項目： 市售 Future 貿易委員會 (CFTC) 規則 1.31(c-d) 美國
+# <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>貿易委員會 (CFTC) 規則 1.31(c-d) 美國境內的市售 Future
 
 ## <a name="about-cftc-rule-13c-d"></a>關於 CFTC 規則 1.3(c-d)
 
@@ -42,33 +42,33 @@ ms.locfileid: "38690252"
 
 在 Office 365 中封存可協助保留廣泛的資料，包括電子郵件、 語音信箱、 共用文件、 立即訊息和協力廠商資料。 特別是，在 Office 365 中封存可讓客戶若要設定全域或細微通訊保留原則，可將資料儲存在已定義的期間內和 beyond 非可重複燒錄、 非可清除的格式。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 [Azure & CFTC 規則 1.31 — 秒 17a-4(f) & CFTC 1.31(c-d) 合規性評估與目的的 Azure 儲存體
 
 [Office 365 & CFTC 規則 1.31-Office 365、 資料保留和 SEC Rule 17a-4 規範中的封存
 
-## <a name="how-to-implement"></a>如何實作
+## <a name="how-to-implement"></a>實作方法
 
 - [財務服務規定](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)： 規範對應的索引鍵的美國法規原則雲端運算與 Microsoft online services。
-- [風險評定 & 合規性指南](https://aka.ms/RiskGovernanceGuide)： 建立風險評定的 Microsoft 雲端服務，並調整通知的控管模型。
-- [金融使用案例](https://docs.microsoft.com/azure/industry/financial/)： 使用案例的概觀、 教學課程，以及其他資源來建立 Azure 解決方案的財務服務。
+- [風險評定與合規性指南](https://aka.ms/RiskGovernanceGuide)：建立 Microsoft 雲端服務風險評定的監管模型和調整通知。
+- [金融使用案例](https://docs.microsoft.com/azure/industry/financial/)：使用案例概覽、課程及其他資源建立適用於金融服務的 Azure 解決方案。
 
 ## <a name="resources"></a>資源
 
-- [Microsoft 金融服務合規性程式](https://aka.ms/FSCP-Print)
-- [Microsoft 商務雲端服務和財務服務](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [在 Azure 中的財務服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Azure 的財務服務雲端風險評定工具](https://aka.ms/FFIEC-CSDT)
+- [Microsoft 金融服務合規性計劃](https://aka.ms/FSCP-Print)
+- [Microsoft 商務用雲端服務與金融服務](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Azure 的金融服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Azure 金融服務雲端風險評定工具](https://aka.ms/FFIEC-CSDT)
 - [Microsoft Office 365 保留原則](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft 金融服務部落格](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf)。

@@ -1,7 +1,7 @@
 ---
 title: 健康情況資訊信任聯盟 (HITRUST) 常見安全性架構 （csf） （機器翻譯）
 description: Azure 與 Office 365 被認證以健康資訊信賴聯盟 (HITRUST) 常見安全性架構 （csf） （機器翻譯）。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: fae04170595b953b2ec88c34e2fec5a2a7ffa9cb
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: ebe89a7dc63a9adbe2c40961f92c1a6656d9ae9d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690262"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859733"
 ---
-# <a name="compliance-offering-health-information-trust-alliance-hitrust-common-security-framework-csf"></a>合規性供應項目： 健康資訊信賴聯盟 (HITRUST) 常見安全性架構 （csf） （機器翻譯）
+# <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>健康情況資訊信任聯盟 (HITRUST) 常見安全性架構 （csf） （機器翻譯）
 
 ## <a name="hitrust--csf-overview"></a>HITRUST — CSF 概觀
 
@@ -36,13 +36,13 @@ HITRUST 提供三種程度的保證或評量層級： 自我評估、 CSF 驗證
 
 [下載 Microsoft Azure HITRUST 客戶責任矩陣 (CRM) 藍圖 v9.0d](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=3ccde498-4761-4be0-be8b-cd8d379a3a4f&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_Healthcare_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-- [Azure 和 Azure 政府版](https://aka.ms/AzureCompliance)
+- [Azure 和 Azure Government](https://aka.ms/AzureCompliance)
 - Intune
-- [Office 365 和 Office 365 US Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 和 Office 365 美國政府](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 Azure 與 Office 365 HITRUST CSF 憑證時才有效兩年。
 
@@ -106,8 +106,8 @@ Microsoft 提供相較於其他雲端服務提供者的最完整供應項目。 
 - [HITRUST CSF 8.1](https://hitrustalliance.net/csf-license-agreement/)
 - [了解及使用 CSF](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [進一步了解如何在 HITRUST 共用責任程式](https://go.microsoft.com/fwlink/p/?linkid=2100268)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf)。

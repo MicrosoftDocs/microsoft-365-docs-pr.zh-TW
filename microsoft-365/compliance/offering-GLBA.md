@@ -1,7 +1,7 @@
 ---
 title: Gramm-Leach-Bliley Act (GLBA)
 description: Microsoft 可協助符合的 Gramm-leach-bliley 金融服務業現代化法案 (GLBA) 中的隱私權和安全性需求的財務服務用戶端。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8da59d5571b559915b3c4cd7f0e1c6bc6bec8866
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: dc0e77623346bb3cb089069196780870e87af8ac
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690266"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859763"
 ---
-# <a name="compliance-offering-gramm-leach-bliley-act-glba"></a>合規性供應項目： Gramm-leach-bliley 金融服務業現代化法案 (GLBA)
+# <a name="gramm-leach-bliley-act-glba"></a>Gramm-Leach-Bliley Act (GLBA)
 
 ## <a name="glba-overview"></a>GLBA 概觀
 
@@ -35,13 +35,13 @@ Microsoft 開發風險評定工具以進行[Azure](https://servicetrust.microsof
 - [下載 Azure 的財務服務雲端風險評定工具](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=6b218946-c235-4234-9beb-d557e39a3f44&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 - [下載 Office 365 雲端風險評定工具](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=55702ffd-c35a-4619-8722-ab71c0c02002&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 雲端服務可以作為獨立服務或 Office 365 為包含在品牌計劃] 或 [套件
+- Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
@@ -52,17 +52,17 @@ FTC 會接聽此在其 GLB 法案] 頁面上，[誰隱私權規則所涵蓋](htt
 ## <a name="resources"></a>資源
 
 - [Gramm-leach-bliley 金融服務業現代化法案](https://www.ftc.gov/tips-advice/business-center/privacy-and-security/gramm-leach-bliley-act)
-- [Azure 的財務服務雲端風險評定工具](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=6b218946-c235-4234-9beb-d557e39a3f44&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+- [Azure 金融服務雲端風險評定工具](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=6b218946-c235-4234-9beb-d557e39a3f44&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 - [Office 365 雲端風險評定工具](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=55702ffd-c35a-4619-8722-ab71c0c02002&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="other-microsoft-resources-for-financial-services"></a>財務服務適用於其他 Microsoft 資源
+## <a name="other-microsoft-resources-for-financial-services"></a>其他適用於金融服務的 Microsoft 資源
 
-- [Microsoft 金融服務合規性程式](https://www.microsoft.com/download/details.aspx?id=55332)
-- [在 Azure 中的財務服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Microsoft 商務雲端服務和財務服務](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [共用的責任雲端運算](https://aka.ms/sharedresponsibility)
+- [Microsoft 金融服務合規性計劃](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Azure 的金融服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Microsoft 商務用雲端服務與金融服務](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [共同承擔的雲端運算責任](https://aka.ms/sharedresponsibility)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/2/A/C/2AC21A04-CE23-4963-BE1A-515DB4A17C6E/GLBA-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/2/A/C/2AC21A04-CE23-4963-BE1A-515DB4A17C6E/GLBA-Compliance.pdf)。

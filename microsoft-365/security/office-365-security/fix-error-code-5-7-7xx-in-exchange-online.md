@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何在 Exchange Online （封鎖而無法傳送郵件的承租人） 中修正錯誤的程式碼 5.7.7xx 的電子郵件問題。
-ms.openlocfilehash: 28ed444d821cbe00cfcb92872de15bb43a65ae28
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: d89cc0caeebbf37336a3b00346b3393dd5e74e78
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033874"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39865845"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>修正電子郵件傳送問題的錯誤的程式碼 5.7.7xx in Exchange Online
 
@@ -51,7 +51,7 @@ Office 365 允許轉送某些郵件透過 Exchange Online Protection (EOP) 的�
 
 1. 請確定您網域的所有註冊 Microsoft 365 系統管理中心。 詳細資訊，請參閱[以下](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
-2. 尋找不尋常的連接器。 惡意動作項目通常會傳送垃圾郵件您 Office 365 租用戶中建立新的輸入的連接器。 檢查您的連接器的詳細資訊可以找到[以下](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps)。 
+2. 尋找不尋常的連接器。 惡意動作項目通常會傳送垃圾郵件您 Office 365 租用戶中建立新的輸入的連接器。 檢查您的連接器的詳細資訊可以找到[以下](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector)。 
 
 3. 鎖定您的內部部署伺服器，並確定他們沒有遭到盜用。
 
@@ -60,7 +60,7 @@ Office 365 允許轉送某些郵件透過 Exchange Online Protection (EOP) 的�
 
 4. 完成時，您必須連絡 Microsoft 支援服務，並要求以取得您的租用戶解除封鎖再次傳送來自未註冊的網域。  提供錯誤碼很有幫助，但您想要證明您的環境受到保護，且不會在一次傳送垃圾郵件。 在開啟支援案例的詳細資訊可以找到[以下](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online)。
   
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 
 [Office 365 電子郵件的反垃圾郵件保護](anti-spam-protection.md)
 

@@ -13,16 +13,16 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以了解如何使用 Exchange Online Protection 中的郵件流程規則的大量電子郵件篩選。
-ms.openlocfilehash: 557a12455284519cc224cbee5e40a564aa3d4f14
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 4f53ee482567a3c76acb4ee8ca0ffb10f6f8cca0
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441143"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866745"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>使用郵件流程規則來設定 Exchange Online Protection 中篩選大量電子郵件
 
-您可以設定全公司內容篩選的垃圾郵件和大量電子郵件使用的預設垃圾郵件內容篩選器原則。 請參閱[設定垃圾郵件篩選器原則](configure-your-spam-filter-policies.md)and [Set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy?view=exchange-ps)有關如何設定內容篩選原則。
+您可以設定全公司內容篩選的垃圾郵件和大量電子郵件使用的預設垃圾郵件內容篩選器原則。 請參閱[設定垃圾郵件篩選器原則](configure-your-spam-filter-policies.md)and [Set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy)有關如何設定內容篩選原則。
 
 如果您想要更多選項] 來篩選大量郵件，您可以建立要搜尋的文字模式或經常大量電子郵件中找到的片語的郵件流程規則 （也稱為傳輸規則）。 任何包含這些特性的郵件會被標示為垃圾郵件。 使用這些規則有助於減少貴組織接收到的不想要的大量電子郵件數量。
 
@@ -84,7 +84,7 @@ ms.locfileid: "37441143"
 
 ## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-phrases"></a>建立郵件流程規則，以篩選器片語為基礎的大量電子郵件
 
-1. In the EAC, go to **Mail flow** \> **Rules**.
+1. 在 EAC 中，移至 [郵件流程]**** \> [規則]****。
 
 2. 按一下 [**新增**![加入圖示](../media/ITPro-EAC-AddIcon.gif)]，然後選取 [**建立新的規則**。
 

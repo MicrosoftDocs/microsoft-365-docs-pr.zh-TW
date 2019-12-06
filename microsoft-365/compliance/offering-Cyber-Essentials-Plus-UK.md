@@ -1,7 +1,7 @@
 ---
 title: 英國網路基本版加上
 description: 網路基本版加上是英國政府定義結構描述可協助組織防範常見的網路安全性威脅。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 28f30ec3181a90f259d6cafd9a3548d7a1ad5852
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 795a8b94c53aa94731d6c55786312b1baef6a685
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690248"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859983"
 ---
-# <a name="compliance-offering-united-kingdom-cyber-essentials-plus"></a>合規性供應項目： 聯合英國網路基本版加上
+# <a name="united-kingdom-cyber-essentials-plus"></a>英國網路基本版加上
 
 ## <a name="uk-cyber-essentials-plus-overview"></a>英國網路基本版加上概觀
 
@@ -39,7 +39,7 @@ Microsoft Azure 已得到網路基本版加上徽章，且符合[網路基本版
 
 [Azure 網路基本版加上的憑證](https://aka.ms/AzureCyberEPlusCert)，由它套用至 Azure 我們全域作業，是可供下載。
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 - [Azure 網路基本版加上的符合性報告](https://aka.ms/AzureCyberEPlusReport)
 - [Azure 網路基本版加上的憑證](https://aka.ms/AzureCyberEPlusCert)
@@ -47,8 +47,8 @@ Microsoft Azure 已得到網路基本版加上徽章，且符合[網路基本版
 ## <a name="resources"></a>資源
 
 - [網路 Essentials 配置： 保證架構](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf)。

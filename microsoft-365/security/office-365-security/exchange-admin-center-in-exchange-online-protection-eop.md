@@ -14,18 +14,18 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Exchange 系統管理中心 (EAC) 是 Microsoft Exchange Online Protection (EOP) 的 Web 式管理主控台。
-ms.openlocfilehash: bc825f7ebefa5d2d73a6e9cb954389a7d76cbd73
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 6ef800b9f440f67d45f3eaa08b4731989fcf2652
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032378"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871859"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Online Protection 中的 Exchange 系統管理中心
 
 Exchange 系統管理中心 (EAC) 是 Microsoft Exchange Online Protection (EOP) 的 Web 式管理主控台。
 
-在尋找此主題的 Exchange Server 版本？ 請參閱[Exchange admin center in Exchange 2013](https://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx)。
+在尋找此主題的 Exchange Server 版本？ 請參閱[Exchange 系統管理中心中 Exchange 伺服器](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center)。
 
 在尋找本主題的 Exchange Online 版本嗎？ 請參閱[Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。
 

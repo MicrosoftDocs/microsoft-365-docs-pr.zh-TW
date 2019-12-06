@@ -1,7 +1,7 @@
 ---
 title: 察確信 Secure 設施 (PASF) 英國
 description: Microsoft 商務雲端服務支援人員需要察確信安全設施，以處理程序，並將其資料儲存在雲端英國執法機構。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3ec66f54c8db21bf4d94feb22c5dd17ee4b45ef5
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 1cfd4b00c8c23aedb33ca832c37e0147d3beca0c
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690291"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859293"
 ---
-# <a name="compliance-offering-police-assured-secure-facilities-pasf-united-kingdom"></a>合規性供應項目： 察確信安全設施 (PASF) 英國
+# <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>察確信 Secure 設施 (PASF) 英國
 
 ## <a name="about-pasf"></a>關於 PASF
 
@@ -34,17 +34,17 @@ Microsoft 對安全性使用全面性的深度防禦方法。 我們的英國資
 
 這些認證是由我們需要保護我們的資料中心的實體安全性措施所支援。 我們採用分層的方法以開頭方式我們可以在這裡設計、 建置及操作資料中心嚴格控制實體存取客戶資料可儲存所在的區域。 Microsoft 受管理的資料中心有位於設備的周邊，在建置周邊內建置，並在資料中心底板上所需的存取權核准廣泛的層級的保護。 這可減少未經授權的使用者資料和資料中心的資源的實體存取的風險。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
 - [Microsoft 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 NPIRMT 稽核 Azure 資料中心每年每年之間循環在英國四個 Microsoft 資料中心。 Microsoft 資料中心所 PASF NPIRMT 評估是可透過首頁 Office for 法律強制執行客戶來進行自己的 Azure 和其他 Microsoft 雲端服務的風險評定。
 
-## <a name="how-to-implement"></a>如何實作
+## <a name="how-to-implement"></a>實作方法
 
 - [Azure 英國 Official 藍圖](https://servicetrust.microsoft.com/ViewPage/UKBlueprints)： 協助英國的客戶加速 IaaS 和 PaaS 部署在 Azure 中合規性工作負載。
 
@@ -59,9 +59,9 @@ NPIRMT 稽核 Azure 資料中心每年每年之間循環在英國四個 Microsof
 - [國際電話的監督 」 資格鑑定原則](http://library.college.police.uk/docs/APP-National-Policing-Accreditation-Policy-2013.pdf)
 - [Azure 設施、 部署、 和實體安全性](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)
 - [Microsoft 和 ISO/IEC 27001: 2013 ISM 標準](offering-iso-27001.md)
-- [Microsoft 線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Online Services 條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf)。

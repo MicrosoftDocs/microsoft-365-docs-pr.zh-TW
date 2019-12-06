@@ -1,7 +1,7 @@
 ---
 title: 健康保險流通與責任 (HIPAA) & HITECH 動作
 description: Microsoft 提供了健康保險流通 & 責任法案業務相關協議 (Baa)。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b603cc6b946f62a8ca6b7cfa5c0dd7faf64dfbe4
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: c125b3cf01824c5791917bed45766b62cea7cdd5
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690265"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859743"
 ---
-# <a name="compliance-offering-health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>合規性供應項目： 健康保險流通與責任 (HIPAA) & HITECH 動作
+# <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保險流通與責任 (HIPAA) & HITECH 動作
 
 ## <a name="hipaa-and-the-hitech-act-overview"></a>HIPAA 和 HITECH 動作概觀
 
@@ -48,18 +48,18 @@ Microsoft 企業版雲端服務也會涵蓋 FedRAMP 評估。 Microsoft Azure �
 
 了解 HIPAA 和 HITECH 在 Microsoft 雲端的優勢：[讀取 Zwanger — Pesiri Radiology 客戶本文](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-- [Azure 和 Azure 政府版](https://aka.ms/AzureCompliance)
-- 雲端 App 安全性
+- [Azure 和 Azure Government](https://aka.ms/AzureCompliance)
+- Cloud App Security
 - Microsoft 狀況 Bot 服務
 - Microsoft Stream
-- Microsoft 專業服務： Premier 和內部 Azure、 Dynamics 365、 Intune，以及中型商務和企業客戶的 Office 365
-- [Dynamics 365 和 Dynamics 365 美國政府版](https://aka.ms/d365-compliance-list)
-- Microsoft Flow 雲端服務做為獨立服務或做為包含在 Office 365 或 Dynamics 365 品牌計劃] 或 [套件
+- Microsoft 專業服務：Azure、Dynamics 365、Intune 及 Office 365 中型企業和企業客戶的的頂級和內部部署
+- [Dynamics 365 和 Dynamics 365 美國政府](https://aka.ms/d365-compliance-list)
+- Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Intune
-- [Office 365、 Office 365 US Government 和 Office 365 美國政府國防版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- PowerApps 雲端服務，做為獨立服務或做為包含在 Office 365 或品牌計劃或套件的 Dynamics 365
+- [Office 365、Office 365 美國政府和 Office 365 美國政府國防版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- PowerApps 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Power BI 雲端服務做為獨立服務或做為包含在 Office 365 或 Dynamics 365 品牌計劃] 或 [套件
 - Azure DevOps Services
 
@@ -89,7 +89,7 @@ Microsoft 不能修改 HIPAA BAA，因為 Microsoft 服務都是一致的所有�
 
 **如何取得稽核報告的複本？**
 
-[服務信任入口網站](https://www.microsoft.com/trustcenter/STP/default.aspx)提供獨立稽核規範符合性報告。 您可以使用入口網站來要求稽核報告，以便您稽核員 」 可以比較 Microsoft 的雲端服務結果與您自己的法律和法規需求。
+[服務信任入口網站](https://www.microsoft.com/trustcenter/STP/default.aspx)提供獨立稽核的合規性報告。 您可以使用入口網站來要求稽核報告，以便您稽核員 」 可以比較 Microsoft 的雲端服務結果與您自己的法律和法規需求。
 
 **如何了解遵守 HIPAA 和 HITECH 動作？**
 
@@ -102,13 +102,13 @@ Microsoft 不能修改 HIPAA BAA，因為 Microsoft 服務都是一致的所有�
 ## <a name="resources"></a>資源
 
 - [HIPAA Omnibus 規則](https://aka.ms/HIPAA-omnibus)（最終法規修改 HIPAA 的規則）
-- [Microsoft 一般控制 Hub 合規性架構](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Microsoft 線上服務條款](https://aka.ms/Online-Services-Terms)
+- [Microsoft 通用控制措施中樞合規性架構](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 政府雲端](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [了解與 Azure 的 HIPAA 合規性](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(2016 月 19 日)
 - [Azure HIPAA 實作指南](https://aka.ms/azure-hipaa-guide)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf)。

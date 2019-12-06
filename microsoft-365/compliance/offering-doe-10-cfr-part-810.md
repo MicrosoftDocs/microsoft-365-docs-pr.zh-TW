@@ -1,7 +1,7 @@
 ---
 title: 美國 DoE 10 CFR 組件 810
 description: 受到美國 DoE 10 CFR 組件 810 匯出控制需求的客戶可以使用 Azure 政府版。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1e7f850a06a95f86c2afd5c8bccc77ff5431dda4
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: fe87cde60847a0f5d935b50f433cd9b95702bebf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690277"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859403"
 ---
-# <a name="compliance-offering-us-doe-10-cfr-part-810"></a>合規性供應項目： 美國 DoE 10 CFR 組件 810
+# <a name="us-doe-10-cfr-part-810"></a>美國 DoE 10 CFR 組件 810
 
 ## <a name="microsoft-and-doe-10-cfr-part-810"></a>Microsoft 和 DoE 10 CFR 組件 810
 
@@ -31,12 +31,12 @@ FedRAMP 提供適當的基準，可提供 Azure 政府版提供核心基礎結�
 
 此外，Azure 政府版是實體分隔從 Azure 雲端美國政府社群雲端。 它提供其他保證有關特定背景檢測需求 US government，包括限制存取資訊的特定控制項和系統以遮蔽美國公民 Azure 操作人員之間。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure 政府版](https://aka.ms/AzureCompliance)
 - Intune
 
-## <a name="how-to-implement"></a>如何實作
+## <a name="how-to-implement"></a>實作方法
 
 - [NERC CIP 標準 & 雲端運算](https://aka.ms/AzureNERC)： 指導電子公用程式並註冊實體部署 Azure 或 Azure Government 上的工作負載。
 
@@ -64,8 +64,8 @@ FedRAMP 提供適當的基準，可提供 Azure 政府版提供核心基礎結�
 - [Microsoft 和 FedRAMP](offering-fedramp.md)
 - [Microsoft 和 DoD](offering-dod-disa-l2-l4-l5.md)
 - [Microsoft 政府雲端](https://www.microsoft.com/enterprise/government)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf)。

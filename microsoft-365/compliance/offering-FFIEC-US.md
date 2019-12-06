@@ -1,7 +1,7 @@
 ---
 title: 聯邦金融機構檢查委員會 (FFIEC)
 description: Microsoft 可協助符合稽核需求的聯邦金融機構考試委員會 (FFIEC) 的財務服務用戶端。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 61028937f469c21d50688912d9acccde7d1c117c
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 3ee932493aca94109381edde1b2df0aae342a4c2
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690231"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859853"
 ---
-# <a name="compliance-offering-federal-financial-institutions-examination-council-ffiec"></a>合規性供應項目： 聯邦的 「 金融機構考試委員會 」 (FFIEC)
+# <a name="federal-financial-institutions-examination-council-ffiec"></a>聯邦金融機構檢查委員會 (FFIEC)
 
 ## <a name="ffiec-overview"></a>FFIEC 概觀
 
@@ -39,14 +39,14 @@ Accelerate 金融服務部署：[下載 Azure 安全性與合規性 FFIEC 金融
 
 若要進一步協助您遵守 FFIEC 需求，Microsoft 雲端服務會提供[SOC 證明報告](offering-SOC.md)所產生的獨立 CPA 公司。 例如，SOC 1 類型 2 證明根據 AICPA SSAE 18 標準 （請參閱 AT C 區段 105） 取代 SAS 70，且適用於報表上以進行金融報告特定控制項。 SOC 報告包含在指定的監視期間達到相關的控制項的目標上的 Microsoft 控制項效率的稽核人員的意見。 金融機構追求 FFIEC 特有合規義務資產上 Azure、 Power BI 和 Office 365 部署時，可以使用此正式的稽核。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 雲端服務可以作為獨立服務或 Office 365 為包含在品牌計劃] 或 [套件
+- Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 Azure 與 Office 365 SOC 證明報表。
 
@@ -62,17 +62,17 @@ Azure 與 Office 365 SOC 證明報表。
 - [合規性對應的雲端運算與法規原則在美國](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 - [FFIEC 稽核 IT 檢查手冊](https://ithandbook.ffiec.gov/it-booklets/audit.aspx)
 - [FFIEC 外包技術服務 IT 檢查手冊](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx)
-- [Azure 的財務服務雲端風險評定工具](https://aka.ms/FFIEC-CSDT)
+- [Azure 金融服務雲端風險評定工具](https://aka.ms/FFIEC-CSDT)
 - [Azure 安全性與合規性 FFIEC 金融服務藍圖](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)
 
-## <a name="other-microsoft-resources-for-financial-services"></a>財務服務適用於其他 Microsoft 資源
+## <a name="other-microsoft-resources-for-financial-services"></a>其他適用於金融服務的 Microsoft 資源
 
-- [Microsoft 金融服務合規性程式](https://www.microsoft.com/download/details.aspx?id=55332)
-- [在 Azure 中的財務服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Microsoft 商務雲端服務和財務服務](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
-- [共用的責任雲端運算](https://aka.ms/sharedresponsibility)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 金融服務合規性計劃](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Azure 的金融服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Microsoft 商務用雲端服務與金融服務](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
+- [共同承擔的雲端運算責任](https://aka.ms/sharedresponsibility)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/6/2/7/62760960-C4B5-456B-9CF8-DCB7D692AAC4/FFIEC-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/6/2/7/62760960-C4B5-456B-9CF8-DCB7D692AAC4/FFIEC-Compliance.pdf)。

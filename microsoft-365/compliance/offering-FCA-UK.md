@@ -1,7 +1,7 @@
 ---
 title: 英國財務管理辦法授權單位 (FCA)
 description: 在英國財務公司的 Microsoft 的指引來遵循財務進行授權和指導方針外包至雲端。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 55cb9e1901231f63b5e02b44b97c029359718625
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: f009914f2a5178104968fe443bbac0655f5541b9
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690230"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859883"
 ---
-# <a name="compliance-offering-united-kingdom-financial-conduct-authority-fca"></a>合規性供應項目： 聯合英國財務進行授權單位 (FCA)
+# <a name="united-kingdom-financial-conduct-authority-fca"></a>英國財務管理辦法授權單位 (FCA)
 
 ## <a name="fca-uk-overview"></a>FCA （英國） 概觀
 
@@ -40,11 +40,11 @@ Microsoft 指南 》 中的各節將對應 FCA 指引感興趣的每個區域的
 
 [下載 Microsoft 方法，即可完成 FCA 雲端指引](https://go.microsoft.com/fwlink/p/?linkid=2101561)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
-- Power BI 雲端服務可以作為獨立服務或 Office 365 為包含在品牌計劃] 或 [套件
+- Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
@@ -59,11 +59,11 @@ Microsoft 指南 》 中的各節將對應 FCA 指引感興趣的每個區域的
 - [在英國金融機構的 Microsoft Cloud 檢查清單](https://aka.ms/Azure-UK-compliance)
 - [FG 16/5 — 指導公司外包雲端及其他協力廠商 IT 服務](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf)
 - [啟用規範： FCA Microsoft 方法完成雲端指引](https://go.microsoft.com/fwlink/p/?linkid=2101561)
-- [Microsoft 金融服務合規性程式](https://www.microsoft.com/download/details.aspx?id=55332)
-- [在 Azure 中的財務服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Microsoft 商務雲端服務和財務服務](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 金融服務合規性計劃](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Azure 的金融服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Microsoft 商務用雲端服務與金融服務](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf)。

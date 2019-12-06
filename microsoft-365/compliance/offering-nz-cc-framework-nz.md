@@ -1,7 +1,7 @@
 ---
 title: 紐西蘭政府雲端運算安全性及隱私權考量
 description: Microsoft NZ 位址發佈紐西蘭雲端運算架構中的問題。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: eb14bbe784685fb79ba09f28bc9ca12216b24d57
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 2722c5df4b96f28a449057abae353350b036a13b
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690289"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859333"
 ---
-# <a name="compliance-offering-new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>合規性供應項目： 新紐西蘭政府雲端運算安全性及隱私權考量
+# <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>紐西蘭政府雲端運算安全性及隱私權考量
 
 ## <a name="new-zealand-government-cloud-computing-security-and-privacy-overview"></a>紐西蘭政府雲端運算安全性和隱私權的概觀
 
@@ -36,12 +36,12 @@ Microsoft 和紐西蘭政府雲端運算安全性及隱私權考量
 
 了解如何開始加速 NZ CC Framework 部署與我們的 Azure 安全性與合規性藍圖：[下載 Azure 回應 NZ CC 架構](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-- [Azure 和 Azure 政府版](https://aka.ms/AzureCompliance)
+- [Azure 和 Azure Government](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Power BI 雲端服務可以作為獨立服務或 Office 365 為包含在品牌計劃] 或 [套件
+- Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Exchange Online、 SharePoint Online 和商務用 Skype。 Microsoft NZ 具有合作 GCIO 小組，以開發整合 Exchange Online 的參考架構和 SEEMail 所述，本白皮書[Office 365: SEEMail 整合和參考架構](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)
 
@@ -62,9 +62,9 @@ Microsoft 和紐西蘭政府雲端運算安全性及隱私權考量
 - [NZ 政府 ICT 策略 2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
 - [NZ 政府需求雲端運算](https://aka.ms/NZ-Cloud-Requirements)
 - [雲端運算： 資訊安全性及隱私權考量 (ISPC)](https://aka.ms/NZ-Cloud-Computing-Considerations)
-- [Microsoft 線上服務條款](https://aka.ms/Online-Services-Terms)
+- [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)
 - [Office 365: SEEMail 整合和參考架構](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)（其他 Microsoft NZ 指導雲端服務採用）
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>「 雲端運算 IPSC 」 的 Microsoft 回覆
 
@@ -74,6 +74,6 @@ Microsoft 和紐西蘭政府雲端運算安全性及隱私權考量
 - [Office 365](https://aka.ms/O365-NZ-Response)
 - [Power BI](https://download.microsoft.com/download/5/1/7/51726B9B-2E76-49C4-9D4F-A36BF025CB93/Response-to-GCIO-105-questions-Power-BI.pdf)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf)。

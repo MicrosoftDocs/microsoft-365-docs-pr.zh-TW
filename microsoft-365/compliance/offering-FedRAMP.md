@@ -1,7 +1,7 @@
 ---
 title: 聯邦風險與授權管理計劃 (FedRAMP)
 description: 美國聯邦風險與授權管理程式 P ATOs 和 ATOs，Microsoft 已授與。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 5edd043db7d5f8c401aa287032ddf7cfd9b63982
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 0e967520dbbac845861168d3eea5053e18a46edf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690274"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859803"
 ---
-# <a name="compliance-offering-federal-risk-and-authorization-management-program-fedramp"></a>合規性供應項目： 聯邦風險與授權管理計劃 (FedRAMP)
+# <a name="federal-risk-and-authorization-management-program-fedramp"></a>聯邦風險與授權管理計劃 (FedRAMP)
 
 ## <a name="fedramp-overview"></a>FedRAMP 概觀
 
@@ -62,20 +62,20 @@ CSP 一旦授與 P ATO 時，仍然需要授權 — ATO — 從可搭配任何�
 - Office 365 （企業版和商務方案） 和 Office 365 US Government 有 FedRAMP 機構 ATO 從檢查一般部門的健康狀況與 Human 服務 (DHHS) Office 中度影響層級。 Office 365 US Government 的第一個雲端式電子郵件及共同作業服務來取得這項授權。
 - 使用 O365 美國政府國防版願任何客戶可能會利用 DISA P-ATO 來產生記錄的 O365 其接受機構 ATO。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-- [Azure 和 Azure 政府版](https://go.microsoft.com/fwlink/p/?linkid=2095323)
+- [Azure 和 Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [Dynamics 365 美國政府版](https://aka.ms/d365-compliance-list)
 - Intune
-- [Office 365 和 Office 365 US Government](https://aka.ms/o365-compliance-framework)
+- [Office 365 和 Office 365 美國政府](https://aka.ms/o365-compliance-framework)
 - Office 365 美國政府國防版
-- Power BI 雲端服務可以作為獨立服務或 Office 365 為包含在品牌計劃] 或 [套件
+- Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
 - Microsoft Defender ATP
 
 > [!NOTE]
 > 使用 Azure 政府版中的 Azure Active Directory 需要使用的部署在 Azure 的公用雲端的 Azure 政府版以外的元件。
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 Microsoft，才能維護其 P ATO 和 ATOs recertify 其雲端服務每年。 若要這麼做，Microsoft 必須監視及持續，評估其安全性控制和示範，其 services 的安全性，仍會保留在合規性。
 
@@ -109,11 +109,11 @@ FISMA 是需要美國聯邦機構和其合作夥伴，視需要取得資訊系�
 ## <a name="resources"></a>資源
 
 - [聯邦風險與授權管理計劃](https://www.fedramp.gov/)
-- [Microsoft 一般控制 Hub 合規性架構](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Microsoft 通用控制措施中樞合規性架構](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft 政府雲端](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [FedRAMP 安全性評估架構](https://go.microsoft.com/fwlink/p/?linkid=2099507)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/6/B/7/6B7B25B8-D44F-439A-80A9-1ED04C88B922/FedRAMP_backgrounder-2018.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/6/B/7/6B7B25B8-D44F-439A-80A9-1ED04C88B922/FedRAMP_backgrounder-2018.pdf)。

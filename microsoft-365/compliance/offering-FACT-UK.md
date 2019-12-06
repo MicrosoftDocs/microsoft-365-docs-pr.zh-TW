@@ -1,7 +1,7 @@
 ---
 title: 針對著作權竊取 （事實） 同盟
 description: Microsoft Azure 可達到從同盟針對著作權竊取英國的憑證。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1a3fe8adac9dae1b2dcbc04430e9d7d3f49bc201
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 378f03c5c579939abed84cfdea436845f37292af
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690236"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859893"
 ---
-# <a name="compliance-offering-federation-against-copyright-theft-fact"></a>合規性供應項目： 同盟針對著作權竊取 （事實）
+# <a name="federation-against-copyright-theft-fact"></a>針對著作權竊取 （事實） 同盟
 
 ## <a name="fact-overview"></a>事實概觀
 
@@ -32,11 +32,11 @@ ms.locfileid: "38690236"
 
 了解在 Microsoft 雲端的事實的優點：[下載事實背景資料](https://aka.ms/fact-backgrounder)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-[Azure 和 Azure 政府版](https://aka.ms/AzureCompliance)
+[Azure 和 Azure Government](https://aka.ms/AzureCompliance)
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 每年更新 Azure 的憑證： [Azure 事實憑證](https://aka.ms/azurefactcert)
 
@@ -57,9 +57,9 @@ ms.locfileid: "38690236"
 - [Azure 媒體服務的 CDSA 憑證](https://aka.ms/cdsa-cert)
 - [Azure ISO 27001 認證](https://aka.ms/Azure-BSI-Cert)
 - [MPAA 評估](offering-mpaa.md)
-- [Azure CSA CAIQ v3.0.1 回覆](https://aka.ms/csacaiqresponses)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Azure 針對 CSA CAIQ v3.0.1 的回應](https://aka.ms/csacaiqresponses)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf)。

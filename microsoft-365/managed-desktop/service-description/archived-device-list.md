@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 3372332529f9391b5cea8da4095d04178e8b731b
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 437029198d48ef8b2d9d91466108fbef989486c2
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813873"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859283"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>封存的 Microsoft 受管理電腦裝置
 
@@ -34,6 +34,7 @@ ms.locfileid: "39813873"
 | Model  | 最小的規格  | 其他需求   | 退休日期 |
 |---------|---------|---------|---------|
 | HP EliteBook 830 / 840 / 850 版 G5| 128 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線網路攝影機或指紋感應  | **2023 2 月 15日，** |
+|Surface Book 2| 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 年 11 月 16 日** |
 |Surface Laptop| 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 May 20，** |
 |Surface Pro| 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 6 月 15日，** |
 

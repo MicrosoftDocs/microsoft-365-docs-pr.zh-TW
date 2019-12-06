@@ -15,20 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: '要開始使用 DLP 原則，最簡單且最常見方式是使用 Office 365 所包含的其中一個範本。 '
-ms.openlocfilehash: 9748e3dc51a322ad3a77bab800d64925da95eeeb
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f51c0648025b65be1030a84409dd3686fe616b1a
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38685444"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866355"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>建立、測試及調整 DLP 原則
-
-**主體作者** <br/>
-Paul Cunningham，Microsoft 的 MVP <br/>
-[實用 365](https://practical365.com/) <br/>
-[@Practical365](https://twitter.com/practical365)<br/>
-__________________________________________________
 
 資料外洩防護是設計來協助您防止敏感資訊給不想要的對象 」 刻意或意外曝光的組織的 Office 365 的合規性功能。 DLP 已在 Exchange 伺服器] 及 [Exchange Online 中，其根物件，而且也適用於 SharePoint Online 和商務用 OneDrive 中。
 

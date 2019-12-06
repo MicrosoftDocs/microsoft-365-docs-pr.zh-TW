@@ -106,7 +106,7 @@
               href: form-a-query-to-find-sensitive-data-stored-on-sites.md
             - name: DLP 如何在安全性與合規性中心和 Exchange 系統管理中心之間工作
               href: how-dlp-works-between-admin-centers.md
-    - name: 敏感資訊類型
+    - name: 敏感性資訊類型
       items:
         - name: 敏感性資訊類型所尋找的項目
           href: what-the-sensitive-information-types-look-for.md
@@ -1071,7 +1071,7 @@
               href: 'https://aka.ms/TRUCS-Compliance'
         - name: 澳洲/太平洋
           items:
-            - name: CCSL/IRAP (澳洲)
+            - name: 次/CCSL （澳大利亞）
               href: offering-CCSL-IRAP-Australia.md
             - name: NZ CC Framework (紐西蘭)
               href: offering-nz-cc-framework-nz.md

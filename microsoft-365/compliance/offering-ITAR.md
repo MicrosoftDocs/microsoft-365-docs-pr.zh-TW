@@ -1,7 +1,7 @@
 ---
 title: 國際流量武器法規 (ITAR)
 description: Azure 政府版支援建置美國國際流量武器具備 Regs 系統中的客戶。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b79cd30c225631b93c92f8199d008d24ecc9a06d
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 9fa4195daa12ebbdafa33851f2bf458bde3d36ac
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690263"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859653"
 ---
-# <a name="compliance-offering-international-traffic-in-arms-regulations-itar"></a>合規性供應項目： 國際流量中武器法規 (ITAR)
+# <a name="international-traffic-in-arms-regulations-itar"></a>國際流量武器法規 (ITAR)
 
 ## <a name="itar-overview"></a>ITAR 概觀
 
@@ -36,7 +36,7 @@ ITAR 具有報告違規，可提供特定風險降低優點的特定責任。 Mi
   
 客戶對主機 ITAR 管制資料的搜尋應使用其 Microsoft 帳戶和授權小組合作，了解更多，取得適當的協議，並存取相關的系統架構資訊。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure 政府版](https://aka.ms/AzureCompliance)
 - [Office 365 美國政府國防版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
@@ -54,8 +54,8 @@ ITAR 具有報告違規，可提供特定風險降低優點的特定責任。 Mi
 - [使用 Azure 政府版與 ITAR 控制資料](https://aka.ms/azure-itar-guide)
 - [Azure 政府版](https://azure.microsoft.com/features/gov/)
 - [Office 365 US Government](https://products.office.com/government/office-365-web-services-for-government)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf)。

@@ -1,7 +1,7 @@
 ---
 title: 美國匯出管理法規 （耳朵上）
 description: Microsoft 雲端服務可協助客戶受限於美國匯出管理法規 （耳朵上） 符合其合規性需求，以及管理匯出控制項風險。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 283b6a45807547f9a8d0521cf2c6793a2a15c4d6
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: b0bb12a4c7f7120d1a607de53ec97d7e8ce915e8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690278"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859393"
 ---
-# <a name="compliance-offering-us-export-administration-regulations-ear"></a>合規性供應項目： 美國匯出管理法規 （耳朵上）
+# <a name="us-export-administration-regulations-ear"></a>美國匯出管理法規 （耳朵上）
 
 ## <a name="about-the-ear"></a>關於耳朵上
 
@@ -46,13 +46,13 @@ Microsoft 技術、 產品及服務會受限於美國匯出管理法規 （耳�
 - **端對端加密**。 利用中耳朵上指定的實體儲存位置的端對端加密安全港，Microsoft 範圍內的雲端服務會傳送的加密功能，可協助防止匯出控制項風險。 他們也提供客戶[各式各樣的選項來加密資料](https://aka.ms/Azure-Encryption-Overview)傳輸中和 rest、 及彈性來選擇加密選項。
 - **工具和通訊協定以防止未經授權會被視為匯出**。 使用加密也可協助防止潛在的 deemed 匯出 （或重新匯出會被視為） 底下耳朵上，因為偶數如果非美國的人的存取權可 nothing 加密資料，隨著如果無法讀取或了解時的資料就會被加密;因此沒有任何 「 版本 」 控制的資料。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-- [Azure 和 Azure 政府版](https://aka.ms/AzureCompliance)
+- [Azure 和 Azure Government](https://aka.ms/AzureCompliance)
 - [Office 365 政府版 （GCC 高和 DoD）](https://aka.ms/Office-365-Export-Controls)
 - Intune
 
-## <a name="how-to-implement"></a>如何實作
+## <a name="how-to-implement"></a>實作方法
 
 我們概觀匯出控制項和評估下耳朵上其義務的客戶的指引。
 
@@ -88,4 +88,4 @@ Microsoft 技術、 產品及服務會受限於美國匯出管理法規 （耳�
 - [匯出密碼編譯的限制](https://docs.microsoft.com/windows/uwp/security/export-restrictions-on-cryptography)
 - [Microsoft 和 FIPS 140-2](offering-fips-140-2.md)
 - [Microsoft 和 ITAR](offering-itar.md)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

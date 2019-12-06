@@ -1,7 +1,7 @@
 ---
 title: 防禦聯邦擷取規定補充 (DFARS)
 description: Microsoft Azure Government 支援防禦聯邦擷取規定 (DFARS) 需求。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: de25c210fb5b361cf9bba1d7efe15e27d386e200
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 267a506881e8eecdf2ded50e9858054c022dfae1
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690240"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859973"
 ---
-# <a name="compliance-offering-defense-federal-acquisition-regulation-supplement-dfars"></a>合規性供應項目： 防禦聯邦擷取規定補充 (DFARS)
+# <a name="defense-federal-acquisition-regulation-supplement-dfars"></a>防禦聯邦擷取規定補充 (DFARS)
 
 ## <a name="dfars-overview"></a>DFARS 概觀
 
@@ -32,18 +32,18 @@ Microsoft 政府雲端服務說明美國國防工業基底及防禦承包商客�
   
 了解如何開始加速 DFARS 部署與我們的 Azure 安全性與合規性藍圖：[下載 Azure-藍圖 DFARS 客戶責任矩陣](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=7ed1b47c-b180-4323-9aec-21712d54b167&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 DoD 影響等級 5 涵蓋的服務
 
-- [Azure 和 Azure 政府版](https://aka.ms/AzureCompliance)
+- [Azure 和 Azure Government](https://aka.ms/AzureCompliance)
 - [Office 365 US Government 和 Office 365 美國政府國防版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 - [Microsoft 雲端服務授權](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
 - [Azure P ATO 字母簽署 2017 年 3 月 3 日](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=94ff5b42-4077-4612-8cf7-3194ded323dc&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)
-- [請參閱其他稽核報告](https://aka.ms/auditreports)
+- [查看其他稽核報告](https://aka.ms/auditreports)
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
@@ -75,7 +75,7 @@ CDI 是受控制的技術資訊的其他資訊 （CUI 登錄中所述） 需要�
 ## <a name="resources"></a>資源
 
 - [防禦聯邦擷取規定補充 (DFARS)](https://www.acq.osd.mil/dpap/dars/dfarspgi/current/index.html)
-- [Microsoft Cloud for Government](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
+- [適用於政府的 Microsoft 雲端](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [控管的未分類的資訊 (CUI)](https://www.archives.gov/cui/registry/category-list)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

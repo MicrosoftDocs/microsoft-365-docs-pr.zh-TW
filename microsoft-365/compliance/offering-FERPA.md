@@ -1,7 +1,7 @@
 ---
 title: 家庭教育權限和隱私權法案 (FERPA)
 description: Microsoft 配合美國系列教育權限和隱私權法案的需求。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 02259b8c9e957e29ce695330a80b2a252478c0e1
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 7ed252a681942d7c00840d3902f4c48e80231331
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690229"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859863"
 ---
-# <a name="compliance-offering-family-educational-rights-and-privacy-act-ferpa"></a>合規性供應項目： 系列教育權限和隱私權法案 (FERPA)
+# <a name="family-educational-rights-and-privacy-act-ferpa"></a>家庭教育權限和隱私權法案 (FERPA)
 
 ## <a name="ferpa-overview"></a>FERPA 概觀
 
@@ -40,19 +40,19 @@ FERPA 不需要或辨識稽核或其他認證，因此 FERPA 受限於任何 aca
 
 了解在 Microsoft 雲端 FERPA 優點：[下載 FERPA 背景資料](https://aka.ms/ferpa-compliance)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 服務的 Microsoft 同意被指定為 「 學校官方 」 與 「 合法的教育興趣 「 客戶資料中包含：
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- [Office 365、 Office 365 US Government 和 Office 365 美國政府國防版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365、Office 365 美國政府和 Office 365 美國政府國防版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - 做為獨立服務或做為品牌計劃或套件的 Office 365 中包含 power BI，PowerApps 和 Microsoft Flow
 - Azure DevOps Services
 - Windows Defender ATP
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 FERPA 不需要或辨識稽核或認證。
 
@@ -74,9 +74,9 @@ FERPA 不需要或辨識稽核或認證。
 - [聯邦註冊： FERPA 最終規則](https://aka.ms/ferpa-reg)
 - [Microsoft azure FERPA 實作指南](https://aka.ms/azureferpa)
 - [Azure FERPA 合規性架構對應](https://aka.ms/AzureFERPAMapping)
-- [Microsoft 線上服務條款](https://aka.ms/Online-Services-Terms)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf)。

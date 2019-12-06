@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 系統管理員可以了解如何在 Exchange Online 中使用 S/MIME。
-ms.openlocfilehash: 64a76d1e9eebea86e548a06bf05d0030b0396d3d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 87f7438b8297b0c7d6d7674cd2c02db6be14bb28
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032148"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39872049"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>可用於訊息簽署和加密在 Exchange Online 中的 S/MIME
 
@@ -37,7 +37,7 @@ S/MIME （安全多用途網際網路郵件延伸） 是一種被廣為接受的
 
 遵循與每個端點設定 S/MIME 的步驟是稍有不同。 一般而言，您必須執行下列步驟：
 
-- 安裝以 Windows 為基礎的憑證授權單位，並且設定公開金鑰基礎結構，來核發 S/MIME 憑證。也支援協力廠商憑證提供者所發出的憑證。如需詳細資訊，請參閱 [Active Directory 憑證服務概觀](https://technet.microsoft.com/library/hh831740.aspx)。
+- 安裝以 Windows 為基礎的憑證授權單位，並且設定公開金鑰基礎結構，來核發 S/MIME 憑證。也支援協力廠商憑證提供者所發出的憑證。如需詳細資訊，請參閱 [Active Directory 憑證服務概觀](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11))。
 
 - 在內部部署中發佈使用者憑證的**UserSMIMECertificate**和/或**UserCertificate**屬性中的 AD DS 帳戶。
 
@@ -76,6 +76,6 @@ S/MIME 需要憑證和發佈基礎結構 (常用於企業對企業及企業對�
 
 ## <a name="more-information"></a>詳細資訊
 
-[網頁型 Outlook](https://technet.microsoft.com/library/3814b665-01e8-4881-9a44-163f14789ee4.aspx)
+[網頁型 Outlook](https://docs.microsoft.com/exchange/exchange-admin-center)
 
-[安全郵件 (2000)](https://technet.microsoft.com/library/cc962043.aspx)
+[安全郵件 (2000)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc962043(v=technet.10))

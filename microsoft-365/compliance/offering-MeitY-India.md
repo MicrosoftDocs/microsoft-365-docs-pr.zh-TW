@@ -1,7 +1,7 @@
 ---
 title: 韓國的電子產品與資訊技術 (MeitY)
 description: Microsoft 已所電子韓國和用於印度的資訊技術的完整 」 資格鑑定。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 34e20578d09079031d4a41bafdf199d055ced09a
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: b5fb48ebaf16d2f7c17645c347185326cde6eefa
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690255"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859573"
 ---
-# <a name="compliance-offering-ministry-of-electronics-and-information-technology-meity"></a>合規性供應項目： 韓國的電子產品與資訊技術 (MeitY)
+# <a name="ministry-of-electronics-and-information-technology-meity"></a>韓國的電子產品與資訊技術 (MeitY)
 
 ## <a name="meity-overview"></a>MeitY 概觀
 
@@ -38,12 +38,12 @@ MeitY 提供 」 資格鑑定 （引用 MeitY 為 「 empanelment 」） 的雲�
 
 Microsoft MeitY 鑑已嚴格的稽核標準化測試及品質憑證 (STQC) Directorate，提供品質保證服務，政府組織使用評估架構所進行的結果根據 MeghRaj 雲端開發案的工作。 透過 Microsoft Azure，現在可以在各種部署模型與服務供應項目，包括作為服務 (IaaS)、 平台的基礎結構服務 (PaaS)、 嚴重損壞修復、 DevOps，以及受管理的備份上繪製公營組織。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 - 在 [[稽核狀態的雲端服務提供者](https://meity.gov.in/content/gi-cloud-meghraj)] 下的 Microsoft Cloud 」 資格鑑定
 
@@ -58,8 +58,8 @@ Microsoft MeitY 鑑已嚴格的稽核標準化測試及品質憑證 (STQC) Direc
 - [韓國的電子產品與資訊技術](https://meity.gov.in/)
 - [MeghRaj 雲端計劃](https://meity.gov.in/content/gi-cloud-meghraj)
 - [此成員的雲端服務提供者](https://meity.gov.in/content/gi-cloud-meghraj)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf)。

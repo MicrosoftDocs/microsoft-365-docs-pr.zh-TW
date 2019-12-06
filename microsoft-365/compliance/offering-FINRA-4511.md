@@ -1,7 +1,7 @@
 ---
 title: 財務產業法規機構 (FINRA) 規則 4511(c) 美國
 description: 獨立評估公司驗證 Azure 與 Office 365 可協助符合 FINRA 規則 4511 記錄保留與固定的儲存需求的財務公司。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 80114436580e388afce0508f69dc892c0eaaf435
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: af2e282ac992dbf6935e9a2c1a9c7144d26aad39
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690233"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859833"
 ---
-# <a name="compliance-offering-financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>合規性供應項目： 財務產業法規機構 (FINRA) 規則 4511(c) 美國
+# <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>財務產業法規機構 (FINRA) 規則 4511(c) 美國
 
 ## <a name="about-finra-rule-4511"></a>關於 FINRA 規則 4511
 
@@ -48,12 +48,12 @@ Cohasset 驗證[Azure 不變的 Blob 儲存體](https://docs.microsoft.com/azure
 
 在 Office 365 中封存可協助保留廣泛的資料，包括電子郵件、 語音信箱、 共用文件、 立即訊息和協力廠商資料。 特別是，在 Office 365 中封存可讓客戶若要設定全域或細微通訊保留原則，可將資料儲存在已定義的期間內和 beyond 非可重複燒錄、 非可清除的格式。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 ### <a name="azure--finra-rule-4511c"></a>Azure & FINRA 規則 4511(c)
 
@@ -63,24 +63,24 @@ Cohasset 驗證[Azure 不變的 Blob 儲存體](https://docs.microsoft.com/azure
 
 [Office 365、 資料保留和 SEC Rule 17a-4 規範中的封存](https://www.microsoft.com/microsoft-365/blog/2015/11/10/office-365-exchange-online-archiving-now-meets-sec-rule-17a-4-requirements/)
 
-## <a name="how-to-implement"></a>如何實作
+## <a name="how-to-implement"></a>實作方法
 
 - **財務服務規定**： 規範對應的索引鍵的美國法規原則雲端運算與 Microsoft online services。 [深入了解](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
-- **風險評定 & 合規性指南**： 建立風險評定的 Microsoft 雲端服務，並調整通知的控管模型。 [深入了解](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-- **金融使用案例**： 使用案例的概觀、 教學課程，以及其他資源來建立 Azure 解決方案的財務服務。
+- **風險評定與合規性指南**：建立 Microsoft 雲端服務風險評定的監管模型和調整通知。 [深入了解](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+- **金融使用案例**：使用案例概覽、課程及其他資源建立適用於金融服務的 Azure 解決方案。
 
 [深入了解](https://docs.microsoft.com/azure/industry/financial/)
 
 ## <a name="resources"></a>資源
 
-- [Microsoft 金融服務合規性程式](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
-- [Microsoft 商務雲端服務和財務服務](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
-- [在 Azure 中的財務服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Azure 的財務服務雲端風險評定工具](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
+- [Microsoft 金融服務合規性計劃](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
+- [Microsoft 商務用雲端服務與金融服務](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
+- [Azure 的金融服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Azure 金融服務雲端風險評定工具](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Microsoft Office 365 保留原則](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft 金融服務部落格](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/6/B/2/6B20520B-E264-4B58-9EE2-DD6C87D9E254/FINRA-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/6/B/2/6B20520B-E264-4B58-9EE2-DD6C87D9E254/FINRA-Compliance.pdf)。

@@ -1,7 +1,7 @@
 ---
 title: 美國國防部 (DoD) 暫時性授權
 description: Microsoft 收到國防部 (DoD) 暫時性授權層級影響 5、 4 和 2。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ad34c497e82ef8e61e61d6953afcca5815f1bc06
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: d805c5dab7e8ebeb31ea94895356a6529bcd970d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690237"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859953"
 ---
-# <a name="compliance-offering-us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>合規性供應項目： 美國國防部 (DoD) 暫時性的授權層級影響 2、 4 和 5
+# <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>美國國防部 (DoD) 暫時性的授權層級影響 2、 4 和 5
 
 ## <a name="dod-and-disa-overview"></a>DoD 及 DISA 概觀
 
@@ -55,7 +55,7 @@ DISA 雲端服務支援具有 DoD 影響層級 4 PA 授與 Microsoft Azure 政�
 
 影響層級 2 涵蓋 Non-Controlled 未分類資訊 — 公用的發行授權的資料。 它也會涵蓋其他分類的資訊，而不會被視為 「 任務 critical 」 仍需要的最低層級的存取控制。 這項授權可讓我們部署非機密資訊的聯邦政府版客戶和基本國防版應用程式與在網站範圍內 Microsoft 雲端服務。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>DoD 影響等級 5 涵蓋的服務
 
@@ -72,9 +72,9 @@ DISA 雲端服務支援具有 DoD 影響層級 4 PA 授與 Microsoft Azure 政�
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 美國政府版](https://aka.ms/d365-compliance-list)
 - [Office 365 US Government](https://aka.ms/o365-compliance-framework)
-- Power BI 雲端服務可以作為獨立服務或 Office 365 為包含在品牌計劃] 或 [套件
+- Power BI 雲端服務，以獨立服務形式提供或包含在 Office 365 品牌方案或套件中
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 Microsoft 雲端服務後授與 DoD PA，監控和評估每年： [Microsoft FedRAMP 授權](https://marketplace.fedramp.gov/#/products?sort=productName&productNameSearch=microsoft)
 
@@ -84,7 +84,7 @@ Microsoft 雲端服務後授與 DoD PA，監控和評估每年： [Microsoft Fed
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-**可以使用 Microsoft 的合規性我的組織憑證程序嗎？**
+**我是否可以在組織的憑證程序中使用 Microsoft 合規性？**
 
 是。 所有 DoD 行政機關可能都自信地仰賴 Microsoft 雲端服務的認證為基礎的任何程式或需要 DoD 授權計劃。 （這也適用於其他支援 DoD，且需要雲端服務的組織）不過，您需要達成您自己的授權外部這些服務的元件。
 
@@ -102,10 +102,10 @@ Microsoft 雲端服務後授與 DoD PA，監控和評估每年： [Microsoft Fed
 - [DISA 雲端服務支援](http://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
 - [出版資訊系統與組織保護控制非機密資訊](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
-- [Microsoft 一般控制 Hub 合規性架構](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Microsoft 通用控制措施中樞合規性架構](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft 政府雲端](https://go.microsoft.com/fwlink/p/?linkid=2087246)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf)。

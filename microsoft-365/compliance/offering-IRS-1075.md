@@ -1,7 +1,7 @@
 ---
 title: 美國內部收益服務出版物 1075
 description: Microsoft 沒有符合的美國內部收益服務出版物 1075年需求的控制項。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 91d2d00b951252d8c8a1c9d8d405ff6c5fd888e2
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 30509260e83f1aaa59c57365357e18a3f12097c4
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690260"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859723"
 ---
-# <a name="compliance-offering-us-internal-revenue-service-publication-1075"></a>合規性供應項目： 美國內部收益服務出版物 1075年
+# <a name="us-internal-revenue-service-publication-1075"></a>美國內部收益服務出版物 1075
 
 ## <a name="us-internal-revenue-service-publication-1075-overview"></a>美國內部收益服務出版物 1075年概觀
 
@@ -42,17 +42,17 @@ Microsoft Azure 政府版和[Microsoft Office 365 美國政府](https://products
 
 了解在 Microsoft 雲端 IRS 1075 優點：[下載 IRS 1075 背景資料](https://aka.ms/irs1075-backgrounder)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 FedRAMP 授權會依據 NIST 指導方針的三個影響層級授與 — 低、 中型與高。 這些排名的機密性、 完整性或可用性遺失可能對組織有影響 — 低 （有限效果）、 中等 （嚴重的負面影響），以及高 （嚴重或災難性效果）。
 
-- [Azure 和 Azure 政府版](https://azure.microsoft.com/global-infrastructure/government/)
+- [Azure 和 Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
 - Dynamics 365 美國政府版
-- [Office 365 和 Office 365 US Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 和 Office 365 美國政府](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Office 365 美國政府國防版
-- Power BI 雲端服務可以作為獨立服務或 Office 365 為包含在品牌計劃] 或 [套件
+- Power BI 雲端服務，以獨立服務形式提供或包含在 Office 365 品牌方案或套件中
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 合規性 IRS 1075 實質性需求涵蓋 FedRAMP 稽核每年。
 
@@ -79,10 +79,10 @@ Microsoft 會定期監視其安全性、 隱私權和操作控制項和 FedRAMP 
 
 - [IRS 出版物 1075](https://www.irs.gov/pub/irs-pdf/p1075.pdf)
 - [IRS 保護程式](https://www.irs.gov/uac/Safeguards-Program)
-- [Microsoft 一般控制 Hub 合規性架構](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-- [Microsoft Cloud for Government](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 通用控制措施中樞合規性架構](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [適用於政府的 Microsoft 雲端](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/D/1/8/D1825AE2-4FDA-4A4B-8D4F-9B7D2976D54A/IRS1075_Compliance_Backgrounder.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/D/1/8/D1825AE2-4FDA-4A4B-8D4F-9B7D2976D54A/IRS1075_Compliance_Backgrounder.pdf)。

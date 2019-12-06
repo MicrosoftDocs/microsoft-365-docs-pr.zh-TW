@@ -13,12 +13,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: 您可以設定使用者垃圾郵件通知的預設的全公司的垃圾郵件篩選原則或是網域所套用的自訂垃圾郵件篩選原則。
-ms.openlocfilehash: 0f2fc88e0004f78c74f2447998d136e4c5ebc3d0
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 0eef6f508a775513ff5c6e061d12e023534eb0bd
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032449"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871929"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>在 Exchange Online 中設定使用者垃圾郵件通知
 
@@ -47,7 +47,7 @@ ms.locfileid: "38032449"
 
 預估完成時間：2 分鐘
   
-您必須已獲指派權限，才能執行此程序或這些程序。 若要查看您需要的權限，請參閱[Feature Permissions in Exchange Online](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主題中的 「 反垃圾郵件 」 項目。 
+您必須已獲指派權限，才能執行此程序或這些程序。 若要查看您需要的權限，請參閱[Feature Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主題中的 「 反垃圾郵件 」 項目。 
   
 適用於此主題中程序的鍵盤快速鍵相關資訊，請參閱[Exchange 系統管理員的鍵盤快速鍵置在 Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
   
@@ -72,7 +72,7 @@ ms.locfileid: "38032449"
 > [!NOTE]
 >  使用者垃圾郵件通知才會正常運作的已啟用的垃圾郵件篩選原則。 >  每天只傳送一次使用者垃圾郵件通知。 無法向任何特定客戶保證通知傳遞的時間，且無法加以設定。 
   
- **提示：** 如果您想要完全實作它們之前將它們傳送到一組有限的使用者，以測試使用者垃圾郵件通知，建立可讓使用者都位於的網域之使用者垃圾郵件通知的自訂垃圾郵件篩選原則。 接著，在 EAC 中，[**郵件流程\>規則**，且您想要的使用者的例外狀況從 quarantine@messaging.microsoft.com （傳送通知電子郵件通訊） 建立郵件流程規則 （也稱為傳輸規則） 來封鎖郵件若要收到通知。 下圖是從網域 Contoso.com 建立兩個使用者 (SaraD 和 AlexD) 之例外狀況的範例： 
+ **提示：** 如果您想要完全實作它們之前將它們傳送到一組有限的使用者，以測試使用者垃圾郵件通知，建立可讓使用者都位於的網域之使用者垃圾郵件通知的自訂垃圾郵件篩選原則。 接著，在 EAC 中，[**郵件流程\>規則**，且您想要接收通知的使用者的例外狀況從 quarantine@messaging.microsoft.com （傳送通知電子郵件通訊） 建立郵件流程規則 （也稱為傳輸規則） 來封鎖郵件。 下圖是從網域 Contoso.com 建立兩個使用者 (SaraD 和 AlexD) 之例外狀況的範例： 
   
 ![測試使用者垃圾郵件通知的傳輸規則](../media/EOP-ESN-testspecificusers.jpg)
   
@@ -96,7 +96,7 @@ ms.locfileid: "38032449"
     
    - 按一下 [儲存]****。 垃圾郵件篩選原則設定，包括您使用者的垃圾郵件通知設定的摘要隨即出現在窗格中。
 
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 
 [設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)
   

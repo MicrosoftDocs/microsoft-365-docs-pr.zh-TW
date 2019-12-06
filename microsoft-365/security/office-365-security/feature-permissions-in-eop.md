@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: 執行工作以管理 Microsoft Exchange Online Protection (EOP) 所需的權限會視您正在管理的功能而異。
-ms.openlocfilehash: e3b41ea2b58397a9af2a1cb8ba979b5f816b416b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: dcf56a5295f7964b2271331deb2e7f8c1ba1635e
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031908"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871849"
 ---
 # <a name="feature-permissions-in-eop"></a>EOP 中的功能權限
 
@@ -29,15 +29,15 @@ ms.locfileid: "38031908"
 
 |**功能**|**必要的權限**|
 |:-----|:-----|
-|反惡意程式碼|[組織管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [檢疫管理](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|反垃圾郵件|[組織管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [檢疫管理](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|郵件流程規則|[組織管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [Records Management](https://technet.microsoft.com/library/0e0c95ce-6109-4591-b86d-c6cfd44d21f5.aspx)|
-|網域|[組織管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx)|
-|進階的威脅防護 (ATP)|[組織管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [檢疫管理](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|Office 365 連接器|[組織管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|訊息追蹤|[組織管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx)|
-|組織組態|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx)|
-|隔離|[組織管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx) <br/> [Hygiene Management](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|使用者、連絡人及角色群組|[組織管理](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx) <br/> [Hygiene Management](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|通訊群組和安全性群組|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) <br/> [View-Only Organization Management](https://technet.microsoft.com/library/c514c6d0-0157-4c52-9ec6-441d9a30f3df.aspx) <br/> [Hygiene Management](https://technet.microsoft.com/library/fc0a9ec2-9c3d-42f6-8442-8603fb29d464.aspx)|
-|檢視報告|[Organization Management](https://technet.microsoft.com/library/0bfd21c1-86ac-4369-86b7-aeba386741c8.aspx) - 使用者可以存取郵件保護報告。  <br/> [View-Only Recipients](https://technet.microsoft.com/library/37e66b92-81d3-412f-b7a9-e1bb8cbeb468.aspx) - 使用者可以存取郵件保護報告。  <br/> [Compliance Management](https://technet.microsoft.com/library/b91b23a4-e9c7-4bd0-9ee3-ec5cb498da15.aspx) - 使用者可以存取郵件保護報告及資料遺失防護 (DLP) 報告 (如果使用者的訂閱有 DLP 功能)。|
+|反惡意程式碼|組織管理 <br/><br/> 檢疫管理|
+|反垃圾郵件|組織管理 <br/><br/> 檢疫管理|
+|郵件流程規則|組織管理 <br/><br/> 記錄管理|
+|網域|組織管理 <br/><br/> 僅限檢視組織管理|
+|進階的威脅防護 (ATP)|組織管理 <br/><br/> 檢疫管理|
+|Office 365 連接器|組織管理|
+|郵件追蹤|組織管理 <br/><br/> 僅限檢視組織管理|
+|組織組態|組織管理|
+|隔離|組織管理 <br/><br/> 僅限檢視組織管理 <br/><br/> 檢疫管理|
+|使用者、連絡人及角色群組|組織管理 <br/><br/> 僅限檢視組織管理 <br/><br/> 檢疫管理|
+|通訊群組和安全性群組|組織管理 <br/><br/> 僅限檢視組織管理 <br/><br/> 檢疫管理|
+|檢視報告|組織管理： 存取郵件保護報告。 <br/><br/> 僅檢視收件者： 存取郵件保護報告。  <br/><br/> 規範管理： 存取郵件保護報告及資料外洩防護 (DLP) 報告 （如果您的訂閱有 DLP 功能）。|

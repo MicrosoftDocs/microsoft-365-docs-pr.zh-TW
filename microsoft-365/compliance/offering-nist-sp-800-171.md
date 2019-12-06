@@ -1,7 +1,7 @@
 ---
 title: NIST SP 800-171
 description: NIST SP 800-171 指導方針來保護出版資訊系統中的控管的未分類的資訊 (CUI) 遵守 Microsoft 雲端服務。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8924905e83d1911dc30a420319d61940b75bfe05
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: e7b3dbad49fd57005dffd7e39e61906efdab771d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690292"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859343"
 ---
-# <a name="compliance-offering-nist-sp-800171"></a>合規性供應項目： NIST SP 800-171
+# <a name="nist-sp-800171"></a>NIST SP 800-171
 
 ## <a name="about-nist-sp-800171"></a>關於 NIST SP 800-171
 
@@ -39,18 +39,18 @@ NIST SP 800-171 需求是 NIST SP 800-53、 FedRAMP 使用標準的子集。 附
 
 任何實體的程序或儲存 US government CUI — 研究機構，諮詢公司，製造承包商 — 必須遵守嚴格的 NIST SP 800-171 需求。 此證明表示範圍內的雲端服務可以容納想知道如何部署與 Microsoft 處於完整規範保證 CUI 工作負載的客戶的 Microsoft。 例如，所有 DoD 承包商處理程序、 儲存或傳送 「 涵蓋的防禦資訊 」 使用範圍內的 Microsoft 雲端服務在其資訊系統符合防禦 DFARS 美國部門的子句需要安全性與合規性NIST SP 800-171 的需求。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure 政府版](https://aka.ms/AzureCompliance)
 - [Dynamics 365 美國政府版](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365 美國政府社群雲端 (GCC)、 Office 365 GCC 高和 DoD](https://aka.ms/o365-compliance-framework)
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 - [Azure 政府版 Attestation 的合規性 NIST SP 800-171](https://aka.ms/Azure-NIST-800-171)
 
-## <a name="how-to-implement"></a>如何實作
+## <a name="how-to-implement"></a>實作方法
 
 - [NIST SP 800-171 藍圖](https://aka.ms/NIST-800-171-Blueprint)： 取得實作與 NIST SP 800-171 遵循 Azure 中的工作負載的支援。
 
@@ -68,8 +68,8 @@ NIST SP 800-171 需求是 NIST SP 800-53、 FedRAMP 使用標準的子集。 附
 - [NIST 800-171 3.3 稽核和責任與 Office 365 GCC 高](https://info.summit7systems.com/blog/nist-3.3-audit-and-accountability-with-office-365)
 - [Microsoft 和 NIST Cybersecurity Framework](offering-nist-csf.md)
 - [Microsoft 政府雲端](https://www.microsoft.com/enterprise/government)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf )。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf )。

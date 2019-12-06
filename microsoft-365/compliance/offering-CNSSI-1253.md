@@ -1,7 +1,7 @@
 ---
 title: 委員會上國民身分安全性系統指令 [否]。 1253 (CNSSI 1253)
 description: Azure 政府版遵守美國政府版系統需要高機密性、 高完整性和高可用性的 CNSSI 1253 安全性控制。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 232d8ddcdcd108d069247bc76850d7d17f18b629
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 12af7c84a922e3db0b7d234dce6f4095ba062a64
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690250"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860033"
 ---
-# <a name="compliance-offering-committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>合規性供應項目： 委員會上國民身分安全性系統指令 [否]。 1253 (CNSSI 1253)
+# <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>委員會上國民身分安全性系統指令 [否]。 1253 (CNSSI 1253)
 
 ## <a name="about-cnss-instruction-1253"></a>關於 CNSS 指令 1253
 
@@ -36,15 +36,15 @@ Azure 政府版目前擁有高暫時性 FedRAMP 的授權操作 (P ATO) 聯合�
   
 合規性的 Azure 政府版與 Azure 可提供公共部門客戶在美國境內 services 相容的豐富陣列與 CNSSI 1253，讓他們能獲益從節省成本和嚴格的繁重 CNSSI 1253 需求方法Microsoft 雲端的安全性。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure 政府版](https://aka.ms/AzureCompliance)
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 Azure 政府 CNSSI 1253 attestation 的合規性 CNSSI 1253 高高高基準
 
-## <a name="how-to-implement"></a>如何實作
+## <a name="how-to-implement"></a>實作方法
 
 - [Azure 政府版文件](https://docs.microsoft.com/azure/azure-government/)： 教學課程和 how-to 指南，協助開發人員部署及管理服務使用 Azure 政府版。
 
@@ -65,8 +65,8 @@ Azure 政府版 （FedRAMP 套件識別碼 F1603087869） 皆已測試一次這�
 - [Microsoft 和 FedRAMP](offering-fedramp.md)
 - [Microsoft 和 DoD 暫時性的授權](offering-DoD-DISA-L2-L4-L5.md)
 - [Microsoft 政府雲端](https://www.microsoft.com/enterprise/government)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf)。

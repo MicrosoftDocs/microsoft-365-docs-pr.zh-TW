@@ -1,7 +1,7 @@
 ---
 title: 數位生產合作關係 (DPP) 英國
 description: Microsoft Azure 具有已獎勵 DPP 認可至廣播的安全性標記。
-keywords: Microsoft 365、 規範、 供應項目
+keywords: Microsoft 365、合規性、方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ac12047420e29a0c096dffac884ab584a38fad9b
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 3adc0bcc75886476de9f088c1f539c63fe4e4be8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690234"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859963"
 ---
-# <a name="compliance-offering-digital-production-partnership-dpp-united-kingdom"></a>合規性供應項目： 數位實際執行的合作關係 (DPP) 英國
+# <a name="digital-production-partnership-dpp-united-kingdom"></a>數位生產合作關係 (DPP) 英國
 
 ## <a name="about-the-dpp"></a>關於 DPP
 
@@ -32,18 +32,18 @@ Microsoft Azure 具有已獎勵 DPP 認可至廣播的安全性標記後完成�
   
 這表示廣播者和其他使用 Azure 的媒體客戶可有信心，其健全的安全性和恢復服務，有助於滿足唯一廣播產業中，從傳輸至程式開發。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內的雲端服務
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure](https://aka.ms/AzureCompliance)
 
-## <a name="audits-reports-and-certificates"></a>稽核、 報表及憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 Azure 廣播標記有效一年，且每年更新。
 
 - [Azure NABA DPP 廣播者安全性需求的檢查清單](https://aka.ms/Azure-CTS-Broadcast-Checklist)
 - [DPP 認可到安全性公司獎勵標記](https://aka.ms/Azure-Asset-Mgmt)
 
-## <a name="how-to-implement"></a>如何實作
+## <a name="how-to-implement"></a>實作方法
 
 - [資產管理強化指南](https://aka.ms/Azure-Asset-Mgmt)： 最佳作法，在 Azure 中的能防止未經授權的洩漏、 變更或刪除的搶鮮版內容。
 - [Azure 媒體服務](https://docs.microsoft.com/azure/media-services/)： 建置解決方案能達到高畫質視訊編碼與廣播品質視訊資料流。
@@ -52,8 +52,8 @@ Azure 廣播標記有效一年，且每年更新。
 
 - [DPP 認可到安全性 Programme 廣播的檢查清單使用者指南](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklistUserGuide.pdf)
 - [NABA 和 DPP 廣播者聯集以提升供應商的網路安全性需求](https://nabanet.com/wp-content/uploads/2017/08/NABAcaster-Issue_26.pdf)
-- [在 Microsoft 信任中心合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>下載供應項目背景資料
+## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
 
-您是否需要背景資料文件的這項服務？ 下載[PDF](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf)。
+是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf)。
