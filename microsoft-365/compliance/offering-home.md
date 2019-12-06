@@ -10,12 +10,12 @@ keywords: Microsoft、 Microsoft 365、 合規性供應項目
 localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
-ms.openlocfilehash: 15fa462b9cae68b613f7d6d28563acaebb7fa762
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: d93e7071c43bc1d9f5ded5d4c7dd7d1a5af1cd62
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38685493"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859433"
 ---
 # <a name="microsoft-compliance-offerings"></a>Microsoft 合規性方案
 
@@ -155,7 +155,7 @@ Microsoft 提供了一組完整的合規性供應項目，有助於組織符合�
                         <p><a href="offering-bir-2012-netherlands.md">BIR 2012 (荷蘭)</a></p>
                         <p><a href="offering-c5-germany.md">C5 (德國)</a></p>
                         <p><a href="offering-ccpa.md">CCPA （US 加州）</a></p>
-                        <p><a href="offering-ccsl-irap-australia.md">CCSL / 次 （澳大利亞）</a></p>
+                        <p><a href="offering-ccsl-irap-australia.md">次 / CCSL （澳大利亞）</a></p>
                         <p><a href="offering-cs-mark-gold-japan.md">CS 標記黃金 （日本）</a></p>
                         <p><a href="offering-cyber-essentials-plus-uk.md">Cyber Essentials Plus (英國)</a></p>
                         <p><a href="offering-canadian-privacy-laws.md">加拿大隱私權法</a></p>
