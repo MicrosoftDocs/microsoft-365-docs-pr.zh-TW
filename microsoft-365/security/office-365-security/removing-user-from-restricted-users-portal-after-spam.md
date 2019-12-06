@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 如果使用者持續從 Office 365 傳送被歸類為垃圾郵件的電子郵件，使用者將遭到限制而無法再傳送任何郵件。
-ms.openlocfilehash: 4abb37bbda20d17b19144d6f62b4ef1a4fc8fb4c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 7d900e154e60b49b3fcfe63552b6ad3288adfc82
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032158"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871739"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者
 
@@ -34,7 +34,7 @@ ms.locfileid: "38032158"
 
 預估完成時間：5 分鐘
   
-您必須已獲指派權限，才能執行此程序或這些程序。 若要查看您需要的權限，請參閱 [Exchange Online 中的功能權限](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)主題中的＜反垃圾郵件＞項目。
+您必須已獲指派權限，才能執行此程序或這些程序。 若要查看您需要的權限，請參閱 [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主題中的＜反垃圾郵件＞項目。
 
 下列程序也可以透過遠端 PowerShell 執行。 使用 Get-BlockedSenderAddress Cmdlet 來取得受限制使用者的清單，以及使用 Remove-BlockedSenderAddress 來移除限制。 若要了解如何使用 Windows PowerShell 連線到 Exchange Online，請參閱[連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
 

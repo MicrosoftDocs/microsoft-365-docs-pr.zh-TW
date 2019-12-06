@@ -1,7 +1,7 @@
 ---
 title: 加拿大金融機構監理總署 (OSFI)
 description: Microsoft 為協助加拿大金融機構之雲端採用的指引。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,20 +11,20 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: d91663a2217f3ff1f1753f9f94a44de9c1536d8c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 9ca6323d5c5ffd019c7d79f283b98cb25816cf62
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "39233716"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859523"
 ---
-# <a name="compliance-offering-office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>合規性方案：加拿大金融機構監理總署 (OSFI)
+# <a name="office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>加拿大金融機構監理總署 (OSFI)
 
 ## <a name="about-the-osfi"></a>關於 OSFI
 
-[金融機構監理總署](https://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx) (OSFI) 是一個加拿大政府的獨立機關，負責加拿大聯邦管控金融機構和退休金計劃的審慎法規及監管。
+[金融機構監理總署](http://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx) (OSFI) 是一個加拿大政府的獨立機關，負責加拿大聯邦管控金融機構和退休金計劃的審慎法規及監管。
 
-在其監管下，OSFI 發佈了針對[業務活動、功能和流程委外](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)的 B-10 準則。 他們為聯邦管控的金融機構建立了「審慎做法、程序或標準」，以評估和管理與委外其業務給服務提供者相關的風險。 一項後續 OSFI 備忘錄─[新技術委外需求](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx)─提醒這些機構 B-10 準則仍保持有效，且他們必須符合 OSFI 重大委外安排的期待。
+在其監管下，OSFI 發佈了針對[業務活動、功能和流程委外](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)的 B-10 準則。 他們為聯邦管控的金融機構建立了「審慎做法、程序或標準」，以評估和管理與委外其業務給服務提供者相關的風險。 一項後續 OSFI 備忘錄─[新技術委外需求](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx)─提醒這些機構 B-10 準則仍保持有效，且他們必須符合 OSFI 重大委外安排的期待。
 
 此外，由金融機構所使用的雲端服務須符合[個人資訊保護和電子文件法](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA)，或在某些情況下，則為省資料隱私權法。
 
@@ -32,7 +32,7 @@ ms.locfileid: "39233716"
 
 為了協助指導加拿大的金融機構考慮將業務功能委外至雲端，Microsoft 發佈了[雲端之路導覽：加拿大金融機構合規檢查清單](https://aka.ms/Azure-Canada-Compliance)。 透過檢閱並完成檢查清單，金融機構可以採用 Microsoft 商務用雲端服務，並能有符合適用法規需求的信心。
 
-當加拿大金融機構委外業務活動時，他們必須符合由金融機構監理總署 (OSFI) 發佈之針對[業務活動、功能和流程委外](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)的 B-10 準則，以及加拿大隱私權法，包括[個人資訊保護和電子文件法](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA)。
+當加拿大金融機構委外業務活動時，他們必須符合由金融機構監理總署 (OSFI) 發佈之針對[業務活動、功能和流程委外](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)的 B-10 準則，以及加拿大隱私權法，包括[個人資訊保護和電子文件法](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA)。
 
 Microsoft 檢查清單可協助加拿大金融公司執行 Microsoft 商務用雲端服務的審慎評估，包括：
 
@@ -58,7 +58,7 @@ Microsoft 檢查清單可協助加拿大金融公司執行 Microsoft 商務用�
 
 否。 沒有事先通知、諮詢或核准的要求。 您可以使用公開雲端計算，且永遠都需符合 OSFI 的要求。
 
-[OSFI B-10 準則](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)表示 OSFI 預期金融機構設計適用於其所有委外安排的風險管理計劃，且其風險緩解與相關風險相對應。 不過，只有重大委外的安排必須有書面合約的記錄，且提及準則中所述的安全措施。 Microsoft [檢查清單](https://aka.ms/Azure-Canada-Compliance)中第 2 部分（第 53 頁）會將這些內容對應到 Microsoft 契約文件中提及相關內容的章節。
+[OSFI B-10 準則](http://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)表示 OSFI 預期金融機構設計適用於其所有委外安排的風險管理計劃，且其風險緩解與相關風險相對應。 不過，只有重大委外的安排必須有書面合約的記錄，且提及準則中所述的安全措施。 Microsoft [檢查清單](https://aka.ms/Azure-Canada-Compliance)中第 2 部分（第 53 頁）會將這些內容對應到 Microsoft 契約文件中提及相關內容的章節。
 
 **在與雲端服務提供者的合約中，是否必須包含任何強制性條款？**
 

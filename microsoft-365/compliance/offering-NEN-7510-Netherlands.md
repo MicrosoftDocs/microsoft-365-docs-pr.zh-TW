@@ -1,7 +1,7 @@
 ---
 title: NEN 7510
 description: 荷蘭組織必須依照 NEN 7510 標準，證明對患者健康狀況資料的控制權。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 51d167a4aea3abcbef6348cf2a7b9c7fde52d6ea
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 168519277be7b19d0d3e864e39aa506b1bf0ed0d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39268744"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859543"
 ---
-# <a name="compliance-offering-nen-7510"></a>合規性方案：NEN 7510
+# <a name="nen-7510"></a>NEN 7510
 
 ## <a name="nen-7510-overview"></a>NEN 7510 概觀
 

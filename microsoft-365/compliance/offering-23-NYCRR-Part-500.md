@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 4dfec74f56d22365549a031ca858067d39686cb1
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 09126b4086f178f2f94e1344a4f4210a67b66621
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39622475"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860123"
 ---
-# <a name="compliance-offering-title-23-nycrr-part-500"></a>合規性方案：標題 23 NYCRR 第 500 部分
+# <a name="title-23-nycrr-part-500"></a>第 23 號 NYCRR 第 500 編
 
 ## <a name="title-23-nycrr-part-500-overview"></a>標題 23 NYCRR 第 500 部分概觀
 

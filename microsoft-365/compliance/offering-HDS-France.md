@@ -1,7 +1,7 @@
 ---
 title: 法國健康資料代管 (HDS)
 description: Microsoft 雲端服務經過認證，符合健康資料代管 (Hébergeurs de Données de Santé) 標準。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 01af4fd17ecbf88377605101d05de662d37e4c12
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: e4591a6050dd6d1805b4d8904ce5f9b6497c3706
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39622408"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859753"
 ---
-# <a name="compliance-offering-health-data-hosting-hds-france"></a>合規性方案：法國健康資料代管 (HDS)
+# <a name="health-data-hosting-hds-france"></a>法國健康資料代管 (HDS)
 
 ## <a name="about-hds"></a>關於 HDS
 

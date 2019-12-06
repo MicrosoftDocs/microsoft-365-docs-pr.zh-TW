@@ -1,7 +1,7 @@
 ---
 title: 一般資料保護規定 (GDPR)
 description: 閱讀＜利用 Microsoft Cloud 保護個人隱私權＞來了解基本的一般資料保護規定 (GDPR) 主題，包括 Microsoft 365 和 Microsoft Cloud 如何協助貴組織符合規範。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ab50ba0a901672b2bd6f21f95f04612bba3f8cfd
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 3002d8bca20f7505287420d700aff60fec1af966
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233536"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859773"
 ---
-# <a name="compliance-offering-general-data-protection-regulation-gdpr"></a>合規性方案：一般資料保護規定 (GDPR)
+# <a name="general-data-protection-regulation-gdpr"></a>一般資料保護規定 (GDPR)
 
 ## <a name="learn-about-gdpr-compliance-best-practices"></a>了解 GDPR 合規性的最佳做法
 

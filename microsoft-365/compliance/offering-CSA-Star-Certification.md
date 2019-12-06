@@ -1,7 +1,7 @@
 ---
 title: 雲端安全性聯盟 (CSA) STAR 認證
 description: Azure、Intune 和 Power BI 獲得雲端安全性聯盟 STAR 金牌認證。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: d419d974b0d0b15bf6dbcd60531f7c4bcc6cb780
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: c3318be31335c9c9250b056e5972bb1c50ffbcbd
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39622460"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860003"
 ---
-# <a name="compliance-offering-cloud-security-alliance-csa-star-certification"></a>合規性方案：雲端安全性聯盟 (CSA) STAR 認證
+# <a name="cloud-security-alliance-csa-star-certification"></a>雲端安全性聯盟 (CSA) STAR 認證
 
 ## <a name="csa-star-certification-overview"></a>CSA STAR 認證概觀
 

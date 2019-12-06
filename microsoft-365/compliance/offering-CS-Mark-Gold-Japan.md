@@ -1,7 +1,7 @@
 ---
 title: 雲端安全性金色標章 (CS 金色標章)
 description: Microsoft 的 Azure (IaaS 和 PaaS) 和 Office 365 (SaaS) 在日本獲得 CS 金色標章。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 51e8c1fcc577130d0d9446c331b0616ef33e69fd
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: e20c1f63721d77779eae47f701e06e606ca34a04
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39218652"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860023"
 ---
-# <a name="compliance-offering-cloud-security-mark-gold-cs-gold-mark"></a>合規性方案：雲端安全性金色標章 (CS 金色標章)
+# <a name="cloud-security-mark-gold-cs-gold-mark"></a>雲端安全性金色標章 (CS 金色標章)
 
 ## <a name="cs-gold-mark-overview"></a>CS 金色標章概觀
 

@@ -1,7 +1,7 @@
 ---
 title: 雲端安全性聯盟 (CSA) STAR 證明
 description: 根據獨立稽核，Azure 和 Intune 獲得雲端安全性聯盟 STAR 證明。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: be3355f23fcdde86ab2713e0021ed277c5047ddb
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: b5f6ae8d7047ab36867938b65bf546a5ffb7b0a6
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233596"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860013"
 ---
-# <a name="compliance-offering-cloud-security-alliance-csa-star-attestation"></a>合規性方案：雲端安全性聯盟 (CSA) STAR 證明
+# <a name="cloud-security-alliance-csa-star-attestation"></a>雲端安全性聯盟 (CSA) STAR 證明
 
 ## <a name="csa-star-attestation-overview"></a>CSA STAR 證明概觀
 

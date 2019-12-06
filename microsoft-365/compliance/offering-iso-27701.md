@@ -1,7 +1,7 @@
 ---
 title: ISO/IEC 27701 隱私權資訊管理系統 (PIMS)
 description: ISO/IEC 27701 標準支援全域資料處理供應鏈內控制者和處理者之間的隱私權責任和法規合規性。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8deb153fa7dd22c7a4346cf8098e1b184d76e4b7
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 69d105e41050c7c9d1b9fbcf37e891e430a79ef1
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233476"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859373"
 ---
-# <a name="compliance-offering-isoiec-27701-privacy-information-management-system-pims"></a>合規性方案：ISO/IEC 27701 隱私權資訊管理系統 (PIMS)
+# <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 隱私權資訊管理系統 (PIMS)
 
 ## <a name="privacy-information-management-system-pims-overview"></a>隱私權資訊管理系統 (PIMS) 概觀
 

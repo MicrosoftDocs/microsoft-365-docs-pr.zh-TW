@@ -1,7 +1,7 @@
 ---
 title: 歐洲銀行業管理局 (EBA)
 description: Microsoft 對於協助歐盟金融機構遵守 EBA 雲端採用建議的指導方針。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 67fa87edfeb8db2c97854e062a9b1d24910d67d8
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 9c202d6710d1615dcdc34698687826c768ac55b3
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233456"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859943"
 ---
-# <a name="compliance-offering-european-banking-authority-eba"></a>合規性方案：歐洲銀行業管理局 (EBA)
+# <a name="european-banking-authority-eba"></a>歐洲銀行業管理局 (EBA)
 
 ## <a name="about-the-eba"></a>關於 EBA
 

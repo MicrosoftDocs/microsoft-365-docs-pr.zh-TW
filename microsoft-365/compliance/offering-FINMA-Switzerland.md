@@ -1,7 +1,7 @@
 ---
 title: 金融市場監督管理局 (FINMA) 瑞士
 description: Microsoft 為協助瑞士金融機構之雲端採用的指引。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: a98c628296e1b030413212ea03b48efd5ab052a5
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: a2c2fa9fbd27e3519bc993c8e94be6d802cb91dc
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233636"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859843"
 ---
-# <a name="compliance-offering-financial-market-supervisory-authority-finma-switzerland"></a>合規性專案：金融市場監督管理局 (FINMA) 瑞士
+# <a name="financial-market-supervisory-authority-finma-switzerland"></a>金融市場監督管理局 (FINMA) 瑞士
 
 ## <a name="about-finma"></a>關於 FINMA
 

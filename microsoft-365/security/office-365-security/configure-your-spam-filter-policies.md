@@ -14,12 +14,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本的垃圾郵件篩選設定，包括識別為垃圾郵件所採取的選取郵件動作。
-ms.openlocfilehash: dd9385139e869fde094249d2dce014aa19056418
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a762f46d9d3834b9c7f9976da6f91ce4e043c206
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032418"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871899"
 ---
 # <a name="configure-your-spam-filter-policies"></a>設定您的垃圾郵件篩選原則
 垃圾郵件篩選設定，包括識別為垃圾郵件所採取的選取郵件動作。 垃圾郵件篩選原則設定只會套用於內送郵件，並且有兩種類型：
@@ -32,7 +32,7 @@ ms.locfileid: "38032418"
 
 預估完成時間：30 分鐘
   
-您必須已獲指派權限，才能執行此程序或這些程序。 若要查看您需要的權限，請參閱 [Exchange Online 中的功能權限](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) 主題中的反垃圾郵件項目。
+您必須已獲指派權限，才能執行此程序或這些程序。 若要查看您需要的權限，請參閱 [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions) 主題中的反垃圾郵件項目。
 
 垃圾郵件篩選原則設定全部都在安全性與合規性中心 (SCC)。 如需詳細資訊，請參閱[前往 Office 365 安全性與合規性中心](../../compliance/go-to-the-securitycompliance-center.md)。 反垃圾郵件的設定頁面位於 SCC \> **威脅管理** \> **原則** \> **反垃圾郵件** 一節中。
 
@@ -104,15 +104,15 @@ ms.locfileid: "38032418"
 
 您也可以在 PowerShell 中設定和套用垃圾郵件篩選原則。 若要了解如何使用 Windows PowerShell 連線到 Exchange Online，請參閱[連線到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。 若要了解如何使用 Windows PowerShell 來連接至 Exchange Online Protection，請參閱[連線到 Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290)。
   
-- [Get-HostedContentFilterPolicy](https://technet.microsoft.com/library/d510471a-dda5-4df7-b3f8-2ee7a1948436.aspx) 檢視您的垃圾郵件篩選設定。 
+- [Get-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedcontentfilterpolicy) 檢視您的垃圾郵件篩選設定。 
     
-- [Set-HostedContentFilterPolicy](https://technet.microsoft.com/library/f597aa65-baa7-49d0-8832-2a300073f211.aspx) 編輯您的垃圾郵件篩選設定。 
+- [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy) 編輯您的垃圾郵件篩選設定。 
     
-- [New-HostedContentFilterPolicy](https://technet.microsoft.com/library/4d15128d-9e16-42a1-8ac5-36f07d4bbbf0.aspx) 建立新的自訂垃圾郵件篩選原則。 
+- [New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) 建立新的自訂垃圾郵件篩選原則。 
     
-- [Remove-HostedContentFilterPolicy](https://technet.microsoft.com/library/9fe1fe03-8f83-41e3-9bf5-084a392784d6.aspx) 刪除新的自訂垃圾郵件篩選原則。 
+- [Remove-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedcontentfilterpolicy) 刪除新的自訂垃圾郵件篩選原則。 
     
-若要將自訂垃圾郵件篩選原則套用至使用者、群組和 (或) 網域，請使用 [New-HostedContentFilterRule](https://technet.microsoft.com/library/2df13ba9-1eb0-4da3-bd72-a79d5fa15e26.aspx) Cmdlet (建立可套用至自訂原則的新篩選規則) 或 [Set-HostedContentFilterRule](https://technet.microsoft.com/library/ba259260-ffd3-43f3-8ef4-9d8659679d02.aspx) Cmdlet (編輯可套用至自訂原則的現有篩選規則)。使用 [Enable-HostedContentFilterRule](https://technet.microsoft.com/library/354ece28-dcde-4b5f-88ed-475115e7ea78.aspx) Cmdlet或 [Disable-HostedContentFilterRule](https://technet.microsoft.com/library/c1f8dafc-ef5d-47e3-b0fb-71a88e145fc5.aspx) Cmdlet 可以啟用或停用對原則套用的規則。 
+若要將自訂垃圾郵件篩選原則套用至使用者、群組和 (或) 網域，請使用 [New-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterrule) Cmdlet (建立可套用至自訂原則的新篩選規則) 或 [Set-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule) Cmdlet (編輯可套用至自訂原則的現有篩選規則)。使用 [Enable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/enable-hostedcontentfilterrule) Cmdlet或 [Disable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/disable-hostedcontentfilterrule) Cmdlet 可以啟用或停用對原則套用的規則。 
   
 ## <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 

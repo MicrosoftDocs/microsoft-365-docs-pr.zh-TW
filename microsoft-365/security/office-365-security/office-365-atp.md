@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 進階威脅防護包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
-ms.openlocfilehash: ba7395c29a700039e29c066daa942687e610e4aa
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 65f123e77d5b38163dfe4e8971426d8a1135b571
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813763"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866705"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
@@ -102,7 +102,7 @@ Office 365 ATP 方案 2 中包含業界最佳[威脅調查及回應工具](offic
 |---------|---------|
 |Office 365 全域系統管理員 (可在 Azure Active Directory 或 Office 365 安全性與合規性中心指派) |[關於 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
 |安全性系統管理員 (可在 Azure Active Directory 或 Office 365 安全性與合規性中心指派) |[Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)|
-|Exchange Online 組織管理 (這是在 Exchange Online 中指派)|[Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|Exchange Online 組織管理 (這是在 Exchange Online 中指派)|[Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
 |搜尋和清除 (僅能在 Office 365 安全性與合規性中心指派) |[安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md) |
 
 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。

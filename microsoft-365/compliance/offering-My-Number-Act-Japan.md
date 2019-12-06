@@ -1,7 +1,7 @@
 ---
 title: 個人編號法案 (My Number Act) (日本)
 description: Microsoft 商務雲端服務遵循「個人編號法案」標準，以保護「個人編號」資料的隱私權。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c6637db6b73bdc83972d90c938efede0b70938ad
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 208bf7d1e31f797ec24654d1c2cdfe374d1aafe3
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39218712"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859563"
 ---
-# <a name="compliance-offering-my-number-act-japan"></a>合規性方案：「個人編號法案」(日本)
+# <a name="my-number-act-japan"></a>個人編號法案 (日本)
 
 ## <a name="about-the-my-number-act"></a>關於「個人編號法案」
 

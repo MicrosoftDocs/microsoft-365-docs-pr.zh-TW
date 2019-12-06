@@ -1,7 +1,7 @@
 ---
 title: 互聯網安全中心 (CIS) 基準
 description: 互聯網安全中心 (CIS) 已公佈一系列適用於 Microsoft 產品和服務的基準
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 968e2196bec0ff853c8f68625ca078f384d8951d
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 264f592357c9030865d3acd6dc138878bedf41bf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233606"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860053"
 ---
-# <a name="compliance-offering-center-for-internet-security-cis-benchmarks"></a>合規性方案：互聯網安全中心 (CIS) 基準
+# <a name="center-for-internet-security-cis-benchmarks"></a>網際網路安全性 (CIS) 中心基準
 
 ## <a name="about-cis-benchmarks"></a>關於 CIS 基準
 

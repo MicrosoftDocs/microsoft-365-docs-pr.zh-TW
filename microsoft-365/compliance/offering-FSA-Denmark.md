@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c156f586fec07c533ae927317b9a90957f1fb3a4
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 89804f5f5f10d06879effd411cec4a7c52037620
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39625217"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859793"
 ---
-# <a name="compliance-offering-financial-supervisory-authority-fsa-denmark"></a>合規性方案：金融監督管理局 (FSA) 丹麥
+# <a name="financial-supervisory-authority-fsa-denmark"></a>金融監督管理局 (FSA) 丹麥
 
 ## <a name="about-the-fsa"></a>關於 FSA
 

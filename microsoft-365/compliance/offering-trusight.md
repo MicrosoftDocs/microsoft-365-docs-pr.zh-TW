@@ -1,7 +1,7 @@
 ---
 title: TruSight
 description: TruSight 會對 Microsoft 雲端服務進行全面風險評定，這些服務的設計旨在符合其金融服務客戶的嚴格需求。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 73c8a187b018a2471a933a13062c1d3e4505ea02
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: ea0732693f01f2c2898a3bb2f5067b406e613fa0
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233676"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859273"
 ---
-# <a name="compliance-offering-trusight"></a>合規性方案：TruSight
+# <a name="trusight"></a>TruSight
 
 ## <a name="about-trusight"></a>關於 TruSight
 

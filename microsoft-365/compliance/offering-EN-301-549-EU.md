@@ -1,7 +1,7 @@
 ---
 title: 歐洲標準 EN 301 549 報告
 description: Microsoft 雲端由許多服務所組成，且包含在許多個別的一致性報告中。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c882f427ea3d03a649751db514f8239676c6f7af
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 33bd7c3626e29471495e9d7d7d251fc65c4e7892
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39192525"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859933"
 ---
-# <a name="compliance-offering-european-standards-en-301-549-reports"></a>合規性方案：歐洲標準 EN 301 549 報告
+# <a name="european-standards-en-301-549-reports"></a>歐洲標準 EN 301 549 報告
 
 ## <a name="about-en-301-549"></a>關於 EN 301 549
 

@@ -11,22 +11,22 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3c1bfd0d77eb2dd1a928355441cd8bb1ca5d574c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 3bb251b888ba98bd1a815bde0aed0584a4a9bc13
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "39625229"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859303"
 ---
-# <a name="compliance-offering-personal-data-protection-act-pdpa-argentina"></a>合規性方案：個人資料保護法 (PDPA) 阿根廷
+# <a name="personal-data-protection-act-pdpa-argentina"></a>個人資料保護法 (PDPA) 阿根廷
 
 ## <a name="about-the-pdpa"></a>關於 PDPA
 
-經阿根廷國家憲法同意，[個人資料保護法第 25.326 號](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDPA) ([Ley de Protección de los Datos Personales](https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) 於 2000 年生效，旨在協助保護個人資料的隱私權，並允許個人存取儲存在公用資料庫和私人資料庫和註冊機構中的任何資訊。 由內閣長官管轄的阿根廷公開資訊存取機關 ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip)，AAIP)，負責強制執行這項法律。
+經阿根廷國家憲法同意，[個人資料保護法第 25.326 號](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDPA) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) 於 2000 年生效，旨在協助保護個人資料的隱私權，並允許個人存取儲存在公用資料庫和私人資料庫和註冊機構中的任何資訊。 由內閣長官管轄的阿根廷公開資訊存取機關 ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip)，AAIP)，負責強制執行這項法律。
 
 PDPA 與保護資料隱私權的歐洲立法模式相符，阿根廷是拉丁美洲第一個獲得「充分」資格可從歐盟進行資料傳輸的國家。
 
-在 2016 年，AAIP 發布了一項新法規，[60-E/2016 條款](https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm) (西班牙文)，控管跨境傳輸個人資料。 根據該規則，其中批准了用於向資料控制者和資料處理者進行此類傳輸的模型表單 (部分基於歐盟的資料傳輸模型)。
+在 2016 年，AAIP 發布了一項新法規，[60-E/2016 條款](http://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm) (西班牙文)，控管跨境傳輸個人資料。 根據該規則，其中批准了用於向資料控制者和資料處理者進行此類傳輸的模型表單 (部分基於歐盟的資料傳輸模型)。
 
 ## <a name="microsoft-and-the-pdpa"></a>Microsoft 和 PDPA
 

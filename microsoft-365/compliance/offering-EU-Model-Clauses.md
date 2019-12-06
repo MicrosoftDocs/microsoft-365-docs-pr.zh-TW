@@ -1,7 +1,7 @@
 ---
 title: 歐盟示範條款
 description: Microsoft 提供歐盟標準合約條款，可保證個人資料的傳輸。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ef8f7c4d64f9ab02d3500f751f1dad752fcdb8e4
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 2add2a06d684b6516e749cb4a220d71915a9fa45
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233576"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859913"
 ---
-# <a name="compliance-offering-european-union-model-clauses"></a>合規性方案：歐盟示範條款
+# <a name="european-union-model-clauses"></a>歐盟示範條款
 
 ## <a name="european-union-model-clauses-overview"></a>歐盟示範條款概觀
 
