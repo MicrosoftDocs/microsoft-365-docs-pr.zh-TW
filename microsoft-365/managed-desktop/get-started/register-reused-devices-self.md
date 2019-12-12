@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e11b72228dceb5a4999e6b9398efde02a41ca163
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 8d2bc20a1d429510dfcd651c6b15dc1a2a89de9d
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38074735"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962600"
 ---
 # <a name="register-existing-devices-yourself"></a>自行註冊現有裝置
 
@@ -208,7 +208,7 @@ CSV 檔案必須註冊以特定格式。 如果您收集的資料自行在先前
 
 從 Microsoft 受管理電腦的 [ [Azure 入口網站](https://aka.ms/mmdportal)中，選取 [在左側的導覽窗格中的**裝置**。 選取 [ **+ 註冊裝置**;飛出視窗中開啟：
 
-[![飛出視窗中選取註冊裝置之後](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
+[![飛出視窗中選取註冊裝置，列出裝置資料行的指定的使用者、 序號、 狀態、 最後一筆看日期，以及保留天數之後](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
 
 
 [//]: # (可惜這不是，則為 true。我們可以移除此附註-但現在離開它，直到我們有機會關於該聊天室。)

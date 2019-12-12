@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性原則和建議現代化貴組織中的安全性。
-ms.openlocfilehash: 44a870263a832e2d130e0404c5e2ad0736a5fae5
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e1f4e9afb86d475a7dd7261dfe26ff0b5a17826f
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034375"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962630"
 ---
 # <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a>首席資訊安全長研討會模組 3： 身分識別和零信任使用者存取
 
@@ -46,7 +46,7 @@ ms.locfileid: "38034375"
 
 ##  <a name="part-6-build-an-identity-perimeter-1357"></a>第 6 部分： 建立身分識別周邊 (13:57)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMg]
 
 ## <a name="part-7-identity-system-security-337"></a>第 7 部分︰ 身分識別系統安全性 (3:37)
 

@@ -15,12 +15,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: 概略報表和深入解析 avialable 安全性&amp;合規性中心。
-ms.openlocfilehash: 5c6ef13bbbb46de63dfb0cfecfa0824d8e50547d
-ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
+ms.openlocfilehash: 33e02ff96621df72b2224cc8dc9b3666caab3429
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034174"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967966"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>智慧型報表和深入了解 Office 365 安全性&amp;合規性中心
 
@@ -28,7 +28,7 @@ ms.locfileid: "38034174"
       
 ## <a name="smart-reports-and-insights-overview"></a>智慧型報表和深入解析概觀
 
-監控 Office 365 安全性中的可用功能&amp;合規性中心包含智慧型報表和深入解析，讓您以專注於高優先順序的問題，例如安全性攻擊的安全性與合規性系統管理員或增加可疑的活動。 在儀表板，智慧型報表和深入解析類似下列影像：
+監控 Office 365 安全性中的可用功能&amp;合規性中心包含的智慧型報表和深入了解可讓您將焦點放在高優先順序的問題，例如安全性攻擊或增加可疑活動的安全性與合規性系統管理員。 在儀表板，智慧型報表和深入解析類似下列影像：
   
 ![安全性&amp;合規性中心，選擇 [報告]\>儀表板](../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
@@ -48,9 +48,9 @@ ms.locfileid: "38034174"
   
 |**資訊類型**|**如何到該處**|**哪裡可以了解更多**|
 |:-----|:-----|:-----|
-|**安全性&amp;合規性中心報告**（所有最多）  <br/> 深入了解與建議，以及安全性的連結，最&amp;規範符合性報告，包括資料外洩防護報告、 標籤、 電子郵件安全性報告、 進階威脅防護報告，以及更多  <br/> |安全性&amp;合規性中心，移至**報表** \> **儀表板** <br/> |[在 Microsoft 365 安全中心的監視器和檢視報告](../mtp/monitoring-and-reporting.md) <br/> |
+|**安全性&amp;合規性中心報告**（所有最多）  <br/> 深入了解與建議，以及安全性的連結，最&amp;規範符合性報告，包括資料外洩防護報告、 標籤、 電子郵件安全性報告、 進階威脅防護報告，以及更多  <br/> |安全性&amp;合規性中心，移至**報表** \> **儀表板** <br/> |[Microsoft 365 安全中心內的監視器和檢視報告](../mtp/monitoring-and-reporting.md) <br/> |
 |**資料外洩防護** <br/> 資料外洩防護原則比對，誤判和覆寫，並連結到建立或編輯原則  <br/> |安全性&amp;合規性中心，移至 [**資料外洩防護** \> **原則** <br/> |[檢視資料外洩防護報告](../../compliance/view-the-dlp-reports.md) <br/> |
-|**資料管理** <br/> 如何套用標籤的相關資訊，分類為記錄、 標籤趨勢等等的標籤  <br/> |安全性&amp;合規性中心，移至 [**資料控管** \> **儀表板** <br/> |[檢視資料控管報告](../../compliance/view-the-data-governance-reports.md) <br/> |
+|**資料管理** <br/> 如何套用標籤的相關資訊，分類為記錄、 標籤趨勢等等的標籤  <br/> |安全性&amp;合規性中心，移至**資訊管理** \> **儀表板** <br/> |[檢視資料控管報告](../../compliance/view-the-data-governance-reports.md) <br/> |
 |**威脅管理儀表板**（這也稱為安全性儀表板和威脅情報儀表板）  <br/> 威脅偵測、 惡意程式碼趨勢、 最上層的目標的使用者、 詳細資料傳送和接收電子郵件、 等等  <br/> |安全性&amp;合規性中心，移至**威脅管理** \> **儀表板** <br/> |[安全性儀表板概觀](security-dashboard.md) <br/> |
 |**威脅總管**（也稱為 Explorer）] 或 [**即時偵測** <br/> 可疑電子郵件和 Office 365 中的檔案中偵測到的惡意程式碼  <br/> |安全性&amp;合規性中心，移至**威脅管理** \> **檔案總管**] 或 [**即時偵測**<br/> |[威脅總管 (或即時偵測)](threat-explorer.md) <br/> |
 |**進階威脅防護和電子郵件安全性報告** <br/> 電子郵件安全性和威脅保護報告 （包括惡意程式碼、 垃圾郵件、 網路釣魚和詐騙報表）  <br/> |安全性&amp;合規性中心，移至**報表** \> **儀表板** <br/> |[檢視 Office 365 進階威脅防護報告](view-reports-for-atp.md) <br/><br/> [檢視安全性中的電子郵件安全性報告&amp;合規性中心](../../compliance/view-email-security-reports.md) <br/> |
@@ -73,7 +73,7 @@ ms.locfileid: "38034174"
     
 ## <a name="related-topics"></a>相關主題
 
-[在 Microsoft 365 安全中心的監視器和檢視報告](../mtp/monitoring-and-reporting.md)
+[Microsoft 365 安全中心內的監視器和檢視報告](../mtp/monitoring-and-reporting.md)
   
 [防範 Office 365 中的威脅](protect-against-threats.md)
   

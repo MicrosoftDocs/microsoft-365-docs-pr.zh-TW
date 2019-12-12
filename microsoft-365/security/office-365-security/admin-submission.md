@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中，O365 提交，Office 365 垃圾郵件問題，O365 誤判系統提交提交 office 365 中的釣魚程式、 送出掃描、 可疑的電子郵件，Office 365 中的電子郵件、 掃描郵件、 有 Microsoft 掃描的釣魚程式]，讓 Microsoft 的垃圾郵件掃描巨集、 送出電子郵件、 送出電子郵件
+title: 在 Office 365 中，O365 提交，Office 365 垃圾郵件問題，O365 誤判系統提交提交 office 365 中的釣魚程式、 送出掃描、 可疑的電子郵件，Office 365 中的電子郵件、 掃描郵件、 有 Microsoft 掃描的釣魚程式]，讓 Microsoft 的垃圾郵件掃描巨集、 送出電子郵件、 送出電子郵件、 可疑的電子郵件、 壞動作項目郵件、 可疑、 不受信任的郵件
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何送出可疑的電子郵件，可能的網路釣魚郵件、 垃圾郵件，以及其他可能有害的郵件、 Url 和檔案從您的 Office 365 租用戶給 Microsoft 進行掃描。
-ms.openlocfilehash: 5ca5eab2feab1243a83eb60c9320fd48dfb59f12
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3d53c8270e84cd6f6298b9b39cc7e37262aed7b0
+ms.sourcegitcommit: 9c9044885eb9754ce69f2f08afdcc13c782ce2f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078329"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39915214"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>如何送出可疑的垃圾郵件、 釣魚程式、 Url 和 microsoft Office 365 掃描的檔案
 
@@ -26,11 +26,11 @@ ms.locfileid: "37078329"
 
 當您提交的電子郵件時，您會收到郵件中的可能已允許內送電子郵件到您的租用戶，任何原則的相關資訊以及檢查任何 Url 和附件。 可能已允許郵件的原則包含個別使用者的安全寄件者清單，以及您在租用戶層級原則，例如 ETR 規則。 
 
-## <a name="how-to-submit-content-to-microsoft-for-office-365-scanning"></a>如何提交給 Microsoft 的 Office 365 掃描的內容
+## <a name="how-to-direct-suspicious-content-to-microsoft-for-office-365-scanning"></a>如何直接向 Microsoft Office 365 掃描的可疑內容
 
 若要提交給 Microsoft 的內容按一下最左側的 [送出資料] 頁面上的 [**新的送出**] 按鈕。 頁面右側彈出式視窗會顯示送出任一電子郵件、 URL，或檔案的選項。 
 
-### <a name="submit-an-email-to-microsoft"></a>提交給 Microsoft 電子郵件
+### <a name="submit-a-questionable-email-to-microsoft"></a>提交給 Microsoft 的可疑電子郵件
 ![電子郵件送出範例](../media/submission-flyout-email.PNG)
 1. 若要提交的電子郵件，選取 [**電子郵件**和指定**網路郵件識別碼**的電子郵件或電子郵件檔案上傳。 
 
@@ -44,7 +44,7 @@ ms.locfileid: "37078329"
 
 4. 按一下 [**提交**] 按鈕。
 
-### <a name="submit-a-url-to-microsoft"></a>提交給 Microsoft 的 URL
+### <a name="send-a-suspect-url-to-microsoft"></a>傳送可疑給 Microsoft 的 URL
 ![電子郵件送出範例](../media/submission-url-flyout.png)
 1. 若要提交 URL 從彈出式視窗中選取**URL** 。 輸入完整的 URL 包括通訊協定 (**https://**)。 
 
@@ -53,7 +53,7 @@ ms.locfileid: "37078329"
 2. 按一下 [**提交**] 按鈕。 
 
 
-### <a name="submit-a-file-to-microsoft"></a>提交給 Microsoft 檔案
+### <a name="submit-a-suspected-file-to-microsoft"></a>提交給 Microsoft 的可疑的檔案
 ![電子郵件送出範例](../media/submission-file-flyout.PNG)
 1. 提交從彈出式檔案選取**檔案**並上傳檔案至您想要掃描。 
 
@@ -62,7 +62,7 @@ ms.locfileid: "37078329"
 
 ## <a name="related-topics"></a>相關主題
 
-[Office 365 進階的威脅保護計劃 2](office-365-ti.md)
+[Office 365 進階威脅防護方案 2](office-365-ti.md)
   
 [防範 Office 365 中的威脅](protect-against-threats.md)
   
