@@ -71,7 +71,14 @@ sections:
             title: '[電子書]Delight 現代化工作場所增進與貴公司'
             image:
               src: 'https://docs.microsoft.com/media/common/i_guide.svg'
+              alt: ''
   - title: 影片
     items:
+      - type: paragraph
+        text: 了解 Microsoft 受管理電腦從在印地安那 Pacers VP 技術的優點。
       - type: markdown
         text: '>[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]'
+      - type: paragraph
+        text: Microsoft 受管理電腦一般管理員與共用年度 Ignite 會議服務的所有反白的顯示。
+      - type: markdown
+        text: '>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]'
