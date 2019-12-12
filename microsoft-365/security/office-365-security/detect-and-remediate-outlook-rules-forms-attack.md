@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何識別並修復 Outlook 規則及 Office 365 中的自訂表單資料隱碼攻擊
-ms.openlocfilehash: 5a35a227baf7c2d07ca0e7a28f791d65311c96b9
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: d5f4a653463f4105df025bf29679465ca5335098
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871889"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970789"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>偵測並修復 Office 365 中 Outlook 規則與自訂表單插入式攻擊
 
@@ -98,7 +98,7 @@ ms.locfileid: "39871889"
 
 1. 使用者以開啟使用者的 Outlook 用戶端。 使用者可能需要您在檢查其信箱上的規則的協助。
 
-2. 請參閱如何開啟規則介面中的 Outlook 2007、 2010年或 2013年版本的程序的[電子郵件使用規則管理](https://support.office.com/article/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59#ID0EAABAAA=2010)文章。
+2. 請參閱[使用規則管理電子郵件訊息](https://support.office.com/article/c24f5dea-9465-4df4-ad17-a50704d66c59)文章如何在 Outlook 中開啟的規則介面上的程序。
 
 3. 查詢規則，未建立使用者，或任何未預期的規則或規則的可疑的名稱。
 
@@ -110,7 +110,7 @@ ms.locfileid: "39871889"
 
 1. 使用者以開啟使用者的 Outlook 用戶端。
 
-2. 請遵循使用者的 Outlook 版本中，[顯示 [開發人員] 索引標籤](https://support.office.com/article/show-the-developer-tab-e1192344-5e56-4d45-931b-e5fd9bea2d45)的步驟。
+2. 請遵循使用者的 Outlook 版本中，[顯示 [開發人員] 索引標籤](https://support.office.com/article/e1192344-5e56-4d45-931b-e5fd9bea2d45)的步驟。
 
 3. 在 Outlook 中開啟 [現在顯示開發人員] 索引標籤，然後按一下 [**設計表單**。
 
@@ -156,13 +156,13 @@ ms.locfileid: "39871889"
 
 1. 識別使用者已與 Outlook 搭配使用的所有裝置。 他們將所有需要的潛在的惡意程式碼會清除。 不允許使用者登入，並使用電子郵件，直到已清除所有的裝置。
 
-2. 請依照下列每個裝置中[刪除規則](https://support.office.com/article/Delete-a-rule-2F0E7139-F696-4422-8498-44846DB9067F)的步驟。
+2. 請依照下列每個裝置中[刪除規則](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f)的步驟。
 
 3. 如果您不確定相關的其他惡意程式碼存在，您可以設定的格式，並重新安裝在裝置上的所有軟體。 行動裝置的您可以依照製造商以將裝置重設成出廠預設值的影像。
 
 4. 安裝最新版本的 Outlook。 請記住，目前版本的 Outlook 預設會封鎖這兩種此類攻擊。
 
-5. 一旦已經移除所有的信箱的離線複本，重設使用者的密碼 （高品質其中會使用），如果已經尚未啟用 MFA，請遵循[Office 365 使用者設定多重要素驗證](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)] 中的步驟。 這可確保使用者的認證，不會公開透過其他方式 （例如網路釣魚或密碼重複使用）。
+5. 一旦已經移除所有的信箱的離線複本，重設使用者的密碼 （高品質其中會使用），如果已經尚未啟用 MFA，請遵循[Office 365 使用者設定多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)] 中的步驟。 這可確保使用者的認證，不會公開透過其他方式 （例如網路釣魚或密碼重複使用）。
 
 ### <a name="using-powershell"></a>使用 PowerShell
 
@@ -190,7 +190,7 @@ ms.locfileid: "39871889"
 
 規則與表單攻擊才會使用攻擊之後他們有竊取或破壞您的使用者帳戶的其中一個。 因此，若要避免使用您的組織對這些攻擊的您第一步是積極地保護您的使用者帳戶。 其中一些帳戶會破壞的常用方法是透過網路釣魚或[密碼噴射](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻擊。
 
-若要保護您的使用者帳戶，並特別是您系統管理員帳戶，最好是以[設定 Office 365 使用者的多重要素驗證](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)。 您也應該：
+若要保護您的使用者帳戶，並特別是您系統管理員帳戶，最好是以[設定 Office 365 使用者的多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。 您也應該：
 
 - 監視您的使用者帳戶是[存取和使用](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)的方式。 您可能不會使初始資料外洩，但您將來偵測此類更快速地縮短持續時間和資料外洩的影響。 您可以使用這些[Office 365 雲端 App 安全性原則](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)來監視您的帳戶與上不尋常的活動警訊：
 
@@ -204,7 +204,7 @@ ms.locfileid: "39871889"
 
 ### <a name="second-keep-your-outlook-clients-current"></a>第二個： 您的 Outlook 用戶端維持最新狀態
 
-根據預設，完全更新及修補版本的 Outlook 2013 和 2016年停用 「 啟動應用程式 」 規則] / [表單動作。 這可確保，即使攻擊破壞帳戶，規則] 和 [表單動作會被封鎖。 您可以藉由遵循[安裝 Office](https://support.office.com/article/Install-Office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)更新的安裝最新的更新與安全性修補程式。
+根據預設，完全更新及修補版本的 Outlook 2013 和 2016年停用 「 啟動應用程式 」 規則] / [表單動作。 這可確保，即使攻擊破壞帳戶，規則] 和 [表單動作會被封鎖。 您可以藉由遵循[安裝 Office](https://support.office.com/article/2ab296f3-7f03-43a2-8e50-46de917611c5)更新的安裝最新的更新與安全性修補程式。
 
 以下是 Outlook 2013 和 2016年用戶端的修補程式版本：
 
@@ -234,7 +234,7 @@ ms.locfileid: "39871889"
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Office 365
 
-您的 Office 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。 使用 [Office 365 安全性藍圖：前 30 天、前 90 天前和之後的最高優先順序](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)來實作 Microsoft 建議用來保護您的 Office 365 租用戶的最佳做法。
+您的 Office 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。 使用[Office 365 安全性藍圖的 30 天、 前 90 天及過後的頂端優先順序](security-roadmap.md)來實作 Microsoft 建議的最佳作法為保護您的 Office 365 租用戶。
 
 - 要在前 30 天內完成的工作。 這些工作會有立即的影響，而且對您的使用者影響較低。
 

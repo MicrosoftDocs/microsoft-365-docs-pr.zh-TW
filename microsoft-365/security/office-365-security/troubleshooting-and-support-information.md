@@ -14,12 +14,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: 本主題說明使用者和系統管理員可用的疑難排解步驟，並提供如何連絡技術支援人員以取得協助的相關資訊。
-ms.openlocfilehash: c87744608930603f70e6be1132a0b405e9646b57
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: a6a4b94db3e34442d326942641b10db15d104d71
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441190"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971621"
 ---
 # <a name="troubleshooting-and-support-information"></a>疑難排解和支援資訊
 
@@ -86,6 +86,6 @@ ms.locfileid: "37441190"
 
 ## <a name="for-more-information"></a>如需詳細資訊
 
-[啟用報告訊息增益集](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[啟用報告訊息增益集](enable-the-report-message-add-in.md)
 
 [向 Microsoft 回報垃圾郵件](report-junk-email-messages-to-microsoft.md)

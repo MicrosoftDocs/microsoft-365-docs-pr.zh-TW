@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 了解如何取得行商務應用程式]，檔案共用，例如在內部資源的存取權，以及從 Azure Active Directory 的印表機加入 Windows 10 裝置。
-ms.openlocfilehash: 4a2ff28107c6e2ec4473859c75bf720df7662747
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 89ac38f3da9cbdd3ff1a5eb33dc129d2e83521c7
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668781"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967156"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>存取內部部署 Microsoft 365 商務版中的 Azure AD 加入裝置的資源
 
@@ -47,7 +47,7 @@ ms.locfileid: "39668781"
     
 沒有額外的步驟，才能取得已加入 Azure AD 裝置的存取內部部署資源。 這項功能是內建於 Windows 10。 
 
-如果您計劃設定 pin 碼/簡介-評量像透過 WHFB 認證登入的密碼方法以外 AADJ 裝置登入]，然後存取內部資源 （共用、 印表機..等），請遵循https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
+如果您計劃設定 pin 碼/簡介-評量像透過 WHFB 認證登入的密碼方法以外 AADJ 裝置登入]，然後存取內部資源 （共用、 印表機..等），請遵循https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base
   
 如果您的組織尚未準備好在上面所述的 Azure AD 加入的裝置組態中部署，請考慮[混合式 Azure AD Joined 裝置組態](manage-windows-devices.md)設定。
   

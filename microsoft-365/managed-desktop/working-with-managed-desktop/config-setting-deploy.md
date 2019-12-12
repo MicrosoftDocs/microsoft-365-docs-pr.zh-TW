@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7e3827dc12c04d2c7952f9321a70714691c5ed47
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 244070c7fd2d5c98f87990bcb4ef6de96ca5a90c
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012298"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962240"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>部署及追蹤可設定-Microsoft 受管理的電腦
 
@@ -40,11 +40,12 @@ ms.locfileid: "38012298"
 3. 在**部署狀態**工作區中，選取您想要部署的設定，然後選取分段的部署，以部署。
 4. 選取要將變更部署至其中一個部署群組的**部署**。
 
-![可設定的設定部署狀態概觀](images/1deployedit.png)Microsoft 受管理電腦建議部署至依此順序部署群組： 測試、 第一個、 快速，然後廣泛。 
+![部署狀態工作區。 信任的網站在右側窗格。 部署群組] 區段中是三個欄： 部署群組、 裝置及狀態。 在 [狀態] 欄中，「 部署 」 會反白顯示。](images/1deployedit.png)
+我們建議您部署到依此順序部署群組： 測試、 第一個、 快速，然後廣泛。 
 
 當變更完成每個群組中時，狀態會變更為**完成**。
 
-![完成部署可設定的設定](images/2completeedit.png)
+![與更新的日期的資料行、 版本、 測試，第一個、 快速且廣泛部署狀態工作區。 Proxy 擴充列時，顯示為 「 完整 」 中每一個四個部署群組已標幟日期設定。](images/2completeedit.png)
 
 ## <a name="revert-deployment"></a>回復部署
 
@@ -56,9 +57,9 @@ ms.locfileid: "38012298"
 1. 登入[Microsoft 受管理電腦系統管理員入口網站](https://aka.ms/mwaasportal)
 2. 在 [**設定**] 下選取 [**可設定**]。
 3. 在**部署狀態**工作區中，選取您想要回復，的設定，然後選取要還原分段的部署。
-4. **需要回復此變更**，請選取 [**還原部署**。
+4. **需要回復此變更？**，選取 [**還原部署**。
 
-![部署可設定的設定還原](images/3revert.png) 
+![部署狀態工作區。 會選取瀏覽器開始頁面，開啟在右側窗格在送出的變更，而且其狀態的相關資料。 在底部就是 「 需要回復此變更 」 區域其中您可以選取 「 回復部署 」。](images/3revert.png) 
 
 ## <a name="additional-resources"></a>其他資源
 - [組態設定概觀](config-setting-overview.md)

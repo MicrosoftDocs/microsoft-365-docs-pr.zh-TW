@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 如果您想要是確定您接收來自特定寄件者的郵件，因為您信任它們與他們的郵件，您可以調整您允許在 Exchange 系統管理中心中的垃圾郵件篩選原則中的清單。
-ms.openlocfilehash: f4ece6f7528b301ed7046df84ca18915d833dbbf
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 1e804e73b8e2b98107c955004bac240793375ab9
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793677"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970849"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>在 Office 365 中建立安全的寄件者清單
 
@@ -74,7 +74,7 @@ ms.locfileid: "38793677"
 
 ## <a name="use-outlook-safe-senders-end-user-managed"></a>使用 Outlook 安全寄件者 （受管理的使用者）
 
-而不是全域授權位址、 網域或 IP 位址，使用者也可以允許傳送到 Outlook 安全寄件者的地址。 [Outlook Web App](https://support.office.com/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46)和[Outlook 用戶端](https://support.office.com/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)之間的不同設定此案例的步驟。 **當郵件已成功授權由於安全寄件者時您會看到 SFV:SFE X-Forefront-反垃圾郵件的報告**指出，垃圾郵件/詐騙/釣魚程式篩選會略過。
+而不是全域授權位址、 網域或 IP 位址，使用者也可以允許傳送到 Outlook 安全寄件者的地址。 [網頁型 Outlook](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)和[Outlook 用戶端](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)之間的不同設定此案例的步驟。 **當郵件已成功授權由於安全寄件者時您會看到 SFV:SFE X-Forefront-反垃圾郵件的報告**指出，垃圾郵件/詐騙/釣魚程式篩選會略過。
 
 ## <a name="use-anti-spam-policy-ip-allow-lists"></a>使用反垃圾郵件原則 IP 允許清單
 

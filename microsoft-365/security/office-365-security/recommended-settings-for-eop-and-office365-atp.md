@@ -13,18 +13,21 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) 和進階威脅防護 (ATP) 的安全性設定的最佳做法是什麼？ 標準保護目前建議是什麼？ 如果您想要更嚴格應該使用什麼？ 以及哪些額外讓如果您也可以使用進階威脅防護 (ATP)？
-ms.openlocfilehash: 5f91c321e0644bc526b8f02028e794935cac3265
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: 4afdb87adebfa9e685e1109f4532e4356f44a710
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837327"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971541"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全的建議的設定
 
 **Exchange Online Protection (EOP)** 是 Office 365 訂閱的安全性的核心，並協助防止惡意電子郵件送達您的員工的收件匣。 但與 [新增]，更複雜的攻擊新興的每一天，改善的保護，通常需要。 **Office 365 進階的威脅防護 (ATP)** ATP 方案 1 或 ATP 計劃 2 包含額外的功能，可讓系統管理員層級的安全性、 控制項和調查越多。
 
 雖然我們讓安全性系統管理員可以自訂其安全性設定，有兩個 EOP 和建議的 Office 365 ATP 中的安全性層級：**一般**] 及 [**嚴格]**。 每個客戶環境和需求不同，但我們認為郵件篩選設定這些層級可協助防止垃圾的郵件進入您的員工在大多數情況下的收件匣。
+
+> [!IMPORTANT]
+> 垃圾電子郵件設定中有在才能正常運作，篩選的順序中的信箱上啟用。 這依預設，會啟用，但應該要檢查是否篩選似乎不能運作。 若要進一步了解讀取[Set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) 。 
 
 本主題說明這些 Microsoft 建議的設定，以協助保護您的 Office 365 使用者。
 
@@ -41,7 +44,7 @@ ms.locfileid: "39837327"
 |網路釣魚電子郵件偵測巨集指令|隔離郵件|隔離郵件||
 |高信賴度 Phish 電子郵件偵測巨集指令|隔離郵件|隔離郵件||
 |大量電子郵件偵測巨集指令|將郵件移至垃圾郵件] 資料夾|隔離郵件||
-|將大量電子郵件閾值設定為|6 |4 |預設值是目前 7，但建議，大多數的組織就會將它移動到至少 6|
+|將大量電子郵件閾值設定為|6 |4 |預設值為目前 7，但是我們建議您將它變更為 6。 如需詳細資訊，請參閱[大量抱怨層級的值](bulk-complaint-level-values.md)。|
 |隔離保留期限|30 天|30 天||
 |安全提示|開啟|開啟||
 |允許寄件者|無|無||
@@ -163,4 +166,3 @@ EOP 客戶取得基本反網路釣魚如先前所述，但 Office 365 ATP 包含
 |ATP 安全附件未知惡意程式碼回應|封鎖|封鎖||
 |偵測時重新導向附件|已啟用|已啟用|用知道如何判斷附件為惡意程式碼或非安全性系統管理員重新導向至電子郵件地址|
 |ATP 安全附件回應如果惡意程式碼掃描附件的逾時或錯誤，就會發生|已啟用|已啟用||
-

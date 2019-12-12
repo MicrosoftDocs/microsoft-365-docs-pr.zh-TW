@@ -14,26 +14,26 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 身為 Office 365 全域管理員，您可以使用的攻擊模擬器在組織中執行真實的攻擊案例。 這可協助您找出並之前真實的攻擊拜訪人次貴公司，找出受到使用者。
-ms.openlocfilehash: bb68850587647f7e96c940de10e3da23cd5e83de
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: e5f304a7c706875216c58330b1225d341b2b59df
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306177"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971931"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻擊模擬器
 
-**摘要**如果您是 Office 365 全域系統管理員或安全性系統管理員，而且您的組織有 Office 365 進階威脅防護計劃 2，其中包含[威脅調查及回應功能](office-365-ti.md)，您可以使用的攻擊模擬器來執行在您的組織中的真實的攻擊案例。 這可協助您找出並尋找容易遭受使用者之前真實的攻擊影響底部線條。 閱讀本篇文章以了解更多。
+**摘要**如果您是 Office 365 全域系統管理員或安全性系統管理員，而且您的組織有 Office 365 進階威脅防護計劃 2，其中包含[威脅調查及回應功能](office-365-ti.md)，您可以在組織中執行真實的攻擊案例使用攻擊模擬器。 這可協助您在實際攻擊對您造成實質的損害之前識別並找出易受攻擊的使用者。 閱讀本篇文章以了解更多。
 
 ## <a name="the-attacks"></a>攻擊
 
-目前可用的三種類型的攻擊模擬如下：
+目前提供三種進攻模擬：
 
-- [顯示名稱矛網路釣魚攻擊](#display-name-spear-phishing-attack)
+- [顯示名稱魚叉式網路釣魚攻擊](#display-name-spear-phishing-attack)
 
-- [密碼噴灑攻擊](#password-spray-attack)
+- [密碼噴濺攻擊](#password-spray-attack)
 
-- [暴力密碼攻擊](#brute-force-password-attack)
+- [暴力密碼破解攻擊](#brute-force-password-attack)
 
 若要順利啟動攻擊，請確定您用來執行模擬的攻擊的帳戶使用多重要素驗證。 此外，您必須是 Office 365 全域系統管理員或安全性系統管理員。 （若要深入了解角色和權限，請參閱[Office 365 安全性 & 合規性中心的權限](permissions-in-the-security-and-compliance-center.md)）。
 
@@ -47,13 +47,13 @@ ms.locfileid: "37306177"
 
 - 您是 Office 365 全域系統管理員或安全性系統管理員
 
-- [多重要素驗證/條件式存取](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)已關閉，如在最低之 Office 365 全域系統管理員帳戶和安全性系統管理員將使用的攻擊模擬器。 （理想狀況下，多重要素驗證條件式存取已為您組織中的所有使用者。）
+- [多重要素驗證/條件式存取](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)已關閉，如在最低之 Office 365 全域系統管理員帳戶和安全性系統管理員將使用的攻擊模擬器。 （理想狀況下，多重要素驗證條件式存取已為您組織中的所有使用者。）
 
 - 您的組織有[Office 365 進階威脅防護計劃 2](office-365-atp.md)，與安全性可見的攻擊模擬器&amp;合規性中心 (前往**威脅管理** \> **攻擊模擬器**)
 
     ![威脅管理-攻擊模擬器](../media/ThreatMgmt-AttackSimulator.png)
 
-## <a name="display-name-spear-phishing-attack"></a>顯示名稱矛網路釣魚攻擊
+## <a name="display-name-spear-phishing-attack"></a>顯示名稱魚叉式網路釣魚攻擊
 
 網路釣魚是通稱歸類為社交樣式攻擊的攻擊廣泛套件。 此類攻擊著重於矛網路釣魚，針對特定群組的個人或組織在多目標攻擊。 一般而言，自訂的攻擊與某些偵察執行，並使用會產生收件者，例如看起來像來自組織內的高階主管的電子郵件訊息中的信任的顯示名稱。
 
@@ -85,7 +85,7 @@ ms.locfileid: "37306177"
 
 6. 指定的文字或 [**從**] 欄位。 這是顯示為接收電子郵件用戶端的寄件者的電子郵件地址] 欄位。
 
-   您可以在組織內輸入現有的電子郵件命名空間 （這樣會使實際解決接收用戶端，促進非常高信任模型中的電子郵件地址），或您可以輸入的外部電子郵件地址。 您指定的電子郵件地址並沒有實際存在，但仍必須以下列格式為有效的 SMTP 地址，例如`user@domainname.extension`。
+   您可以在組織內輸入現有的電子郵件命名空間 （這樣會使實際解決接收用戶端，促進非常高信任模型中的電子郵件地址），或您可以輸入的外部電子郵件地址。 您指定的電子郵件地址並沒有實際存在，但仍必須遵循的有效的 SMTP 地址，格式如下`user@domainname.extension`。
 
 7. 使用下拉式清單選取器，請選取 [反映您必須在您攻擊內的內容類型的網路釣魚登入伺服器 URL。 多個已設佈景主題的 Url 被提供給您從中選擇，例如文件傳遞、 技術、 薪資等。這實際上是目標的使用者上當系統要您按一下 [URL。
 
@@ -101,7 +101,7 @@ ms.locfileid: "37306177"
 
 11. 選擇 [**下一步]** ，然後**完成]** 來啟動攻擊。 矛網路釣魚電子郵件會傳遞至您目標收件者的信箱。
 
-## <a name="password-spray-attack"></a>密碼噴灑攻擊
+## <a name="password-spray-attack"></a>密碼噴濺攻擊
 
 壞動作項目已成功取得從租用戶的有效使用者的清單之後，通常會使用組織的密碼噴灑攻擊。 壞動作項目所知的人員使用常見密碼。 此為廣泛使用的攻擊，來執行，且更難偵測比暴力方法便宜攻擊。
 
@@ -119,7 +119,7 @@ ms.locfileid: "37306177"
 
 5. 選擇 [**完成**] 以啟動攻擊。
 
-## <a name="brute-force-password-attack"></a>暴力密碼攻擊
+## <a name="brute-force-password-attack"></a>暴力密碼破解攻擊
 
 壞動作項目已成功取得從租用戶的關鍵使用者的清單之後，通常會使用組織暴力密碼攻擊。 此類攻擊著重在嘗試一組單一使用者的帳戶的密碼。
 
@@ -137,7 +137,7 @@ ms.locfileid: "37306177"
 
 ## <a name="new-features-in-attack-simulator"></a>攻擊模擬器中的新功能
 
-新功能最近已新增至攻擊模擬器。 這些包括：
+新功能最近已新增至攻擊模擬器。 包括：
 
 - 進階的報告功能。 查看資料，例如速度最快 （或速度最慢） 時間按一下 [郵件被覆寫且更多的視覺效果中的連結，以開啟攻擊模擬電子郵件訊息，最快 （或速度最慢） 時間的能力。
 
@@ -145,13 +145,13 @@ ms.locfileid: "37306177"
 
 - CSV 匯入收件者。 若要匯入您的目標收件者清單，而不是使用 address book 選擇使用.csv 檔案的能力。
 
-更多的新功能即將推出的攻擊模擬器。 這些包括：
+更多的新功能即將推出的攻擊模擬器。 包括：
 
 - 附件承載網路釣魚模擬。 作為附件承載網路釣魚模擬 URL 取代功能。
 
 請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)請參閱什麼是在開發中、 什麼推行和功能已啟動。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 

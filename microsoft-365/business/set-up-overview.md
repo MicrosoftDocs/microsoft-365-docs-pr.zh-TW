@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 商務版的安裝步驟的概觀。
-ms.openlocfilehash: 425c465262c266ca764ae8c7a52130903fa635a5
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: f531830bffbe1cb6ce4e39ee2ba12da5738a2684
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39812771"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967616"
 ---
 # <a name="overview-of-setup"></a>步驟概觀
 
@@ -50,14 +50,16 @@ ms.locfileid: "39812771"
   
   除了在安裝精靈中的安全性設定，您可以藉由新增下列設定值增加您的安全性：
 
-      - **電子郵件的惡意程式碼保護**
-      - **ATP 防網路釣魚**
-      - **Exchange Online 封存**
-      - **Azure 資訊保護 (Plan1**)
 
-          若要取得啟動，請參閱[設定進階的安全性原則](set-up-advanced-security.md)。
+- **電子郵件的惡意程式碼保護**
+- **ATP 防網路釣魚**
+- **Exchange Online 封存**
+- **Azure 資訊保護 (Plan1**)
 
-        另請參閱[上方的 10 種方法來保護您的 Microsoft 365 商務版](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)的最佳安全性作法藍圖。
+
+若要取得啟動，請參閱[設定進階的安全性原則](set-up-advanced-security.md)。
+
+另請參閱[上方的 10 種方法來保護您的 Microsoft 365 商務版](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)的最佳安全性作法藍圖。
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>步驟 3： 設定及管理 Windows 10 裝置
 

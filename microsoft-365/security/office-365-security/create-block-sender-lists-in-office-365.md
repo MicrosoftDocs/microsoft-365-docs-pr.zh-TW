@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: 封鎖寄件者清單選項包括 Outlook 封鎖寄件者、 反垃圾郵件寄件者/網域封鎖清單、 IP 封鎖清單，以及 Exchange 傳輸規則 (Etr) 也稱為郵件流程規則。
-ms.openlocfilehash: 27e0a1881c50031f180192b6bc02f3d606e7b76c
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: f4fab732a92df2a2500212c9825d2b3e710b0a07
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793707"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970889"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>在 Office 365 中建立封鎖寄件者清單
 
@@ -43,7 +43,7 @@ ms.locfileid: "38793707"
 > [!IMPORTANT]
 > 如果不想要的郵件新聞稿信譽及辨識的來源，取消訂閱電子郵件中是用來停止從未來取得電子郵件使用者的其他選項。
 
-若要設定此案例的步驟是[Outlook Web App](https://support.office.com/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46)和[Outlook 用戶端](https://support.office.com/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)之間的不同。 **郵件已成功封鎖由於封鎖寄件者時您會看到 sfv: X-Forefront-反垃圾郵件的報告**指出郵件會遭到封鎖。
+若要設定此案例的步驟是不同[的網頁型 Outlook](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)和[Outlook 用戶端](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)之間。 **郵件已成功封鎖由於封鎖寄件者時您會看到 sfv: X-Forefront-反垃圾郵件的報告**指出郵件會遭到封鎖。
 
 ## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>使用反垃圾郵件原則/網域的寄件者封鎖清單
 

@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8ecc117b2bc6e7cec3dcf0470a6d3c61ad34adf0
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 1f642d2790af5f4ec83dd1bbe57a9be249d095d1
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634030"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962330"
 ---
 # <a name="reliability-insights"></a>可靠深入解析
 
 此檢視為您提供您受管理的裝置健全狀況摘要。 若要檢視可靠性資料，請選取 [**可靠性**] 索引標籤。
 
 
-![可靠性窗格](images/insights_reliability.png)
+![可靠性窗格： 上方的 [跨裝置透過時間圖表中右上，upper left、 可靠性問題資料表跨底部。 說明和意見反應] 按鈕在右下方。](images/insights_reliability.png)
 
 **跨裝置的可靠性**] 區段中會提供快速的健全狀況摘要。 您過去 14 天的部署所報告的裝置會被認為是 「 良好 」 並觀察到自上次報告失敗後平均時間百分比。 
 

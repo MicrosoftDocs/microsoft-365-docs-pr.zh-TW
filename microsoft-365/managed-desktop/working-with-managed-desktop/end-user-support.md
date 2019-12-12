@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6bb3ebfabe74af82cd62e836e9c3d6dfd606cb88
-ms.sourcegitcommit: 4dc7b5b1ccdb7e8f683104f1b9eec90025b3ad0e
+ms.openlocfilehash: c53813a96772389f8ae180663ca3131701e47365
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "37391216"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962200"
 ---
 # <a name="getting-help-for-end-users"></a>取得使用者的說明
 
@@ -24,7 +24,7 @@ ms.locfileid: "37391216"
 
 提供支援，您的使用者的慣用的方法是**取得協助**，使用者裝置內建易於使用的介面。  
 
-![取得說明](images/get-help.png)
+![取得說明應用程式圖示](images/get-help.png)
 
 這是 Microsoft 受管理電腦的所有裝置上安裝並已釘選到工作列的應用程式。 
 
@@ -51,6 +51,8 @@ ms.locfileid: "37391216"
 - 美國： +1 855 425 0216
 - 加拿大 （不含魁北克）： +1 855 425 0216
 - 英國： +44 800 026 0698
+- 比利時: + 32 800 58533
+- 盧森堡： +352 800 40119
 - 澳大利亞： +61 180 037 0619
 - 紐西蘭: + 64 988 44380
 
@@ -60,4 +62,4 @@ ms.locfileid: "37391216"
 ## <a name="additional-resources"></a>其他資源
 - [系統管理員支援 Microsoft 受管理的電腦](admin-support.md)。 
 - [Microsoft 受管理電腦的支援](../service-description/support.md)。
-- 如果您已訂閱 Microsoft 受管理的電腦，您可以找到詳細程序、 程序流程、 工作指示和常見問題集 Microsoft 受管理電腦系統管理員指南 》 中在**線上資源**] 區段中的[Microsoft 受管理電腦系統管理員入口網站](https://aka.ms/mwaasportal)。
+- 如果您已訂閱 Microsoft 受管理的電腦，您可以找到詳細程序、 程序流程、 工作指示，與常見問題集 Microsoft 受管理電腦系統管理員指南 》 中[Microsoft 受管理的桌上型電腦系統管理入口網站](https://aka.ms/mwaasportal)的 [**線上資源**] 區段中。

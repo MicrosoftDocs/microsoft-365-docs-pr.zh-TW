@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定義郵件使用者是管理 Exchange Online Protection (EOP) 的重要環節。
-ms.openlocfilehash: 065fdae30dea49220c10fd455b7ac346e70c18de
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 2871ec73a06a092aa5cfdab0d9648d8cc5311460
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871769"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971741"
 ---
 # <a name="manage-mail-users-in-eop"></a>管理 EOP 中的郵件使用者
 
@@ -63,13 +63,13 @@ ms.locfileid: "39871769"
 
   - **使用者垃圾郵件隔離區**： 若要存取使用者垃圾郵件隔離區，使用者必須具有有效的 Office 365 使用者識別碼和密碼。 保護內部部署信箱的 EOP 客戶必須是有效的電子郵件使用者。
 
-  - **郵件流程規則**： 當您使用目錄同步處理，您現有的 Active Directory 使用者和群組會自動上傳至雲端，您可以再建立郵件流程規則 （也稱為傳輸規則），而不必手動新增他們透過針對特定使用者和/或群組的 EAC 或 Exchange Online Protection PowerShell。 請注意， [動態通訊群組](https://go.microsoft.com/fwlink/?LinkId=507569)無法透過目錄同步作業進行同步處理。
+  - **郵件流程規則**： 當您使用目錄同步處理，您現有的 Active Directory 使用者和群組會自動上傳至雲端，您可以再建立郵件流程規則 （也稱為傳輸規則），而不必手動新增他們透過針對特定使用者和/或群組的 EAC 或 Exchange Online Protection PowerShell。 請注意， [動態通訊群組](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)無法透過目錄同步作業進行同步處理。
 
-取得必要權限，並做好目錄同步處理的準備工作，如[為目錄同步作業做好準備](https://go.microsoft.com/fwlink/p/?LinkId=308908)所說明。
+取得必要權限，並做好目錄同步處理，如所述[什麼是混合式身分識別與 Azure Active Directory？](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity)。
 
 ### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a>若要同步處理使用者目錄與 Azure Active Directory Connect (AAD Connect)
 
-若要同步處理至 Azure Active Directory (AAD) 的使用者第一次必須**啟動目錄同步處理**，如[啟動目錄同步處理](https://go.microsoft.com/fwlink/p/?LinkId=308909)所述。
+若要同步處理至 Azure Active Directory (AAD) 您必須先**啟動目錄同步處理**，如所述的使用者[Azure AD Connect 同步處理： 了解及自訂同步處理](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis)。
 
 下一步是安裝及設定的內部電腦執行 AAD Connect （如果您還沒有一個--一些值得檢查事先）。 [設定 AAD Connect，快速方式](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)主題會告訴您如何安裝及與 AAD 連線同步到 Azure AD 從內部部署帳戶。
 

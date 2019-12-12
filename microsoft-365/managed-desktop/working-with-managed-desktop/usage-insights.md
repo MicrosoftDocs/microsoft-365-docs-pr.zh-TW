@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a3367785d858c1d2546571fa1ad8a8c1b96cf59f
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 6e114f60d95edb68797e096f56b93836a14425a8
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634020"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962350"
 ---
 # <a name="usage-insights"></a>使用情況深入解析
 此檢視您的 Microsoft 受管理的電腦裝置提供使用狀況計量。 進行這些工作，應用程式被視為 「 使用 」 中，如果它正在執行，並在焦點。
 
 若要檢視流量資料，請選取 [**使用狀況**] 索引標籤。
 
-![使用狀況] 窗格](images/insights_usage.png)
+![使用狀況] 窗格中。 裝置使用量圖表 （與時間百分比使用率） 在左上方。 右上方應用程式使用狀況] 表格。 裝置清單表格與資料行的裝置名稱、 模型、 序號、 顯示名稱、 使用者名稱、 目前狀態 （使用中、 低，或非使用中），底端之間的總裝置使用量在上班時間及作用中的日數。](images/insights_usage.png)
 
 ## <a name="device-usage"></a>裝置使用量
 

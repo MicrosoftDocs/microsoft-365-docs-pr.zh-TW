@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 使用者必須獲指派 Office 365 安全性 & 合規性中心的權限，他們可以管理其安全性或規範功能的任何之前。
-ms.openlocfilehash: 5f9688662714a4a33f2c6e3483cf902e0f61def9
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 698a319b4297a00e0c248df495b7013fa3ae3542
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37305947"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970439"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>讓使用者能夠存取 Office 365 安全規範中心
 
@@ -41,7 +41,7 @@ ms.locfileid: "37305947"
 
 ## <a name="use-the-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>使用管理中心將另一個使用者存取權授與安全性 & 合規性中心
 
-1. [登入 Office 365 並移至系統管理中心](https://go.microsoft.com/fwlink/p/?LinkId=525275)。
+1. [登入 Office 365 並移至系統管理中心](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center)。
 
 2. 在 Microsoft 365 系統管理中心中，開啟 [**系統管理中心**，然後按一下 [**安全性 & 合規性**。
 
@@ -65,7 +65,7 @@ ms.locfileid: "37305947"
 
 ## <a name="use-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>使用 PowerShell 將另一個使用者存取權授與安全性 & 合規性中心
 
-1. [連線至 Office 365 安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. [連線至 Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 2. 使用 **Add-RoleGroupMember** 命令，以將使用者新增至組織管理角色，如下列範例所示。
 
@@ -79,7 +79,7 @@ ms.locfileid: "37305947"
 
    - _成員_是要新增至角色群組的信箱、 萬用安全性群組 (USG) 或電腦。 您一次只能指定一個成員。
 
-如需詳細的語法及參數的詳細資訊，請參閱[Add-rolegroupmember](https://go.microsoft.com/fwlink/p/?LinkId=510859)。
+如需詳細的語法及參數的詳細資訊，請參閱[Add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember)。
 
 ### <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 
@@ -89,4 +89,4 @@ ms.locfileid: "37305947"
 Get-RoleGroupMember -Identity "Organization Management"
 ```
 
-如需詳細的語法及參數的詳細資訊，請參閱[Get-rolegroupmember](https://go.microsoft.com/fwlink/p/?LinkId=510860)。
+如需詳細的語法及參數的詳細資訊，請參閱[Get-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroupMember)。
