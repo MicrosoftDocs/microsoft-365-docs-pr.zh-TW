@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 本文說明 Office 365 如何減少使用偽造寄件者網域的網路釣魚攻擊，即詐騙網域。 其達成目的的方式是透過分析郵件，和封鎖無法使用標準電子郵件驗證方法或其他寄件者信譽技術來進行驗證的郵件。 採用此項變更是為了減少 Office 365 中的組織所暴露的網路釣魚攻擊數量。
-ms.openlocfilehash: 182b422f5ebfac440777eeb975732fe7cd48822b
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 5685fc29f97c9aa41e472926c4e1f26bfcfd1432
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871979"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971991"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 
@@ -103,7 +103,7 @@ Authentication-Results:
 |||
 |:-----|:-----|
 |**原因**|**描述**|
-|0xx |郵件未通過複合驗證。<br/>**000** 表示郵件未通過 DMARC，並產生拒絕或隔離動作。  <br/>**001** 表示郵件未通過隱含電子郵件驗證。 這表示，傳送網域未發佈電子郵件驗證記錄，或是有發佈，但是擁有較弱的失敗原則 (SPF 非封鎖性失敗或中性，DMARC 原則為 p=none)。  <br/>**002** 代表組織擁有的寄件者/網域配對原則明確禁止傳送詐騙電子郵件，這項設定是由系統管理員手動設定。  <br/>**010** 表示郵件未通過 DMARC，並產生拒絕或隔離動作，而傳送網域是組織接受的其中一個網域 (為 self-to-self 或 intra-org, spoofing 的一部分)。 <br/> |
+|0xx |郵件未通過複合驗證。<br/>**000** 表示郵件未通過 DMARC，並產生拒絕或隔離動作。  <br/>**001** 表示郵件未通過隱含電子郵件驗證。 這表示，傳送網域未發佈電子郵件驗證記錄，或是有發佈，但是擁有較弱的失敗原則 (SPF 非封鎖性失敗或中性，DMARC 原則為 p=none)。  <br/>**002** 代表組織擁有的寄件者/網域配對原則明確禁止傳送詐騙電子郵件，這項設定是由系統管理員手動設定。  <br/>**010** 表示郵件未通過 DMARC，並產生拒絕或隔離動作，而傳送網域是組織接受的其中一個網域 (為 self-to-self 或 intra-org, spoofing 的一部分)。|
 |1xx、2xx、3xx、4xx 和 5xx|對應於不同內部代碼，說明為何郵件通過隱含驗證，或未進行驗證但卻未採取動作的原因。|
 |6xx|表示郵件未通過隱含的電子郵件驗證，而傳送網域是組織接受的其中一個網域 (為自我詐騙，或稱為組織內部詐騙的一部分)。|
 
@@ -257,9 +257,9 @@ To: someone@example.com
 
 |**詐騙類型**|**類別**|**是否新增安全提示？**|**適用對象**|
 |:-----|:-----|:-----|:-----|
-|DMARC 失敗 (隔離或拒絕)  <br/> |HSPM (預設)，也可以是 SPM 或 PHSH  <br/> |否 (還沒有)  <br/> |所有 Office 365 客戶，Outlook.com  <br/> |
-|自我  <br/> |SPM  <br/> |是  <br/> |所有 Office 365 組織，Outlook.com  <br/> |
-|跨網域  <br/> |詐騙  <br/> |是  <br/> |Office 365 進階威脅防護 (ATP) 與 E5 客戶  <br/> |
+|DMARC 失敗 (隔離或拒絕)|HSPM (預設)，也可以是 SPM 或 PHSH|否 (還沒有)|所有 Office 365 客戶，Outlook.com|
+|自我|SPM|是|所有 Office 365 組織，Outlook.com|
+|跨網域|詐騙|是|Office 365 進階威脅防護 (ATP) 與 E5 客戶|
 
 ### <a name="changing-your-anti-spoofing-settings"></a>變更您的反詐騙設定
 
@@ -319,8 +319,8 @@ Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnfor
 ```powershell
 $defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false
-
 ```
+
 > [!IMPORTANT]
 > 如果電子郵件路徑中的第一躍點是 Office 365，且有太多合法電子郵件被標示為詐騙郵件，您應該先設定允許傳送詐騙電子郵件到您網域的寄件者 (請參閱*管理傳送未經驗證電子郵件的合法寄件者*)。 如果還是發生太多誤判 (也就是合法郵件被標示為詐騙郵件)，我們則不建議停用反詐騙防護功能。 但是，我們建議您選擇基本防護，不要選擇高度防護。 處理誤判總比將組織暴露在詐騙電子郵件下好，因為後者長期下來可能會耗費相當可觀的成本。
 
@@ -330,15 +330,15 @@ Office 365 會追蹤誰傳送未經驗證電子郵件到您的組織。 如果�
 
 不過，身為系統管理員，您可以指定可傳送詐騙電子郵件的寄件者，來覆寫 Office 365 決策。
 
-**方法 1 - 如果您的組織擁有該網域，請設定電子郵件驗證**
+#### <a name="method-1---if-your-organization-owns-the-domain-set-up-email-authentication"></a>方法 1 - 如果您的組織擁有該網域，請設定電子郵件驗證
 
 在您擁有多個租用戶，或與多個租用戶互動的情況下，這個方法可用來解決組織內部詐騙和跨網域詐騙。 其也有助於解決跨網域詐騙，您在其中傳送郵件給 Office 365 內的客戶，以及主控於其他提供者的第三方。
 
 如需詳細資訊，請參閱 [Office 365 的客戶](#customers-of-office-365)。
 
-**方法 2 - 使用詐騙情報來設定允許傳送未經驗證電子郵件的寄件者**
+#### <a name="method-2---use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email"></a>方法 2 - 使用詐騙情報來設定允許傳送未經驗證電子郵件的寄件者
 
-您也可以使用[詐騙情報](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf)來允許寄件者將未經驗證的郵件傳送至您的組織。
+您也可以使用[詐騙情報](learn-about-spoof-intelligence.md)來允許寄件者將未經驗證的郵件傳送至您的組織。
 
 對外部網域來說，詐騙使用者是寄件者地址中的網域，而傳送基礎架構則是傳送 IP 位置 (分為 /24 CIDR 範圍) 或 PTR 記錄的組織網域 (在以下螢幕擷取畫面中，傳送 IP 可能是131.107.18.4，其 PTR 記錄是 outbound.mail.protection.outlook.com，這將顯示為傳送基礎架構的 outlook.com)。
 
@@ -373,13 +373,13 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 現在，這能讓 bing.com 從 \*.outlook.com 傳送未經驗證的電子郵件。
 
-**方法 3 - 為寄件者/收件者配對建立允許項目**
+#### <a name="method-3---create-an-allow-entry-for-the-senderrecipient-pair"></a>方法 3 - 為寄件者/收件者配對建立允許項目
 
 您也可以選擇略過篩選特定寄件者的所有垃圾郵件。 如需詳細資訊，請參閱[如何在 Office 365 中安全地將寄件者新增至允許清單](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/)。
 
 如果您使用這個方法，將略過垃圾郵件和部分網路釣魚篩選，但不會略過惡意程式碼篩選。
 
-**方法 4 - 連絡寄件者，並要求他們設定電子郵件驗證**
+#### <a name="method-4---contact-the-sender-and-ask-them-to-set-up-email-authentication"></a>方法 4 - 連絡寄件者，並要求他們設定電子郵件驗證
 
 有鑑於垃圾郵件和網路釣魚問題，Microsoft 建議所有寄件者設定電子郵件驗證。 如果您知道傳送網域的系統管理員，請連絡他們來設定電子郵件驗證記錄，這樣您就不需要新增任何覆寫設定。 如需詳細資訊，請參閱本文稍後的[非 Office 365 客戶的網域系統管理員](#administrators-of-domains-that-are-not-office-365-customers)。
 
@@ -654,7 +654,7 @@ Microsoft 的反詐騙技術最初部署在具有 Office 365 企業版 E5 訂閱
 
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>如何向 Microsoft 回報垃圾郵件或非垃圾郵件？
 
-您可以使用 [Outlook 的回報郵件增益集](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)，如果未安裝 Outlook，則可[將垃圾郵件，非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
+您可以使用 [Outlook 的回報郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)，如果未安裝 Outlook，則可[將垃圾郵件，非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
 
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>我是網域系統管理員，但我不認識所有寄件者！
 

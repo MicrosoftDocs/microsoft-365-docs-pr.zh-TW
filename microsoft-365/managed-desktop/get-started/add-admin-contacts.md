@@ -1,63 +1,76 @@
 ---
-title: Microsoft 受管理的電腦系統管理入口網站中新增系統管理連絡人
-description: 告訴我們人員連絡以取得焦點的每個區域。
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+title: 在系統管理入口網站中新增和驗證系統管理連絡人
+description: 告訴我們每個重點領域的連絡人。
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 014404ab38ff5871289be186dec150115c3be6ec
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
-ms.translationtype: MT
+ms.openlocfilehash: f592644b0aa2853839dd83025a112d0fd3c563df
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277529"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962610"
 ---
-# <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>Microsoft 受管理的桌上型電腦管理入口網站中新增系統管理連絡人
+# <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在系統管理入口網站中新增和驗證系統管理連絡人
 
-有幾種方式與客戶的 Microsoft 受管理的電腦服務進行通訊。 若要簡化的通訊，並確保我們正在檢查的最佳的連絡人，您需要提供一組系統管理員連絡人。 Microsoft 受管理的桌上型電腦 IT 作業將連絡這些人員，以協助疑難排解問題，您的租用戶。 
+Microsoft 受管理的電腦服務有多種方式可與客戶溝通。 為了簡化溝通並確保我們與正確的人員一起檢查，您必須移工一組系統管理連絡人。 Microsoft 受管理的電腦 IT 作業將會連絡這些人員，以便為您的租用戶協助疑難排解問題。
 
-## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Microsoft 受管理的桌上型電腦系統管理入口網站的 azure Active Directory 存取
+> [!IMPORTANT]
+> 您可能已經在系統管理入口網站新增這些連絡人。 如果是的話，現在請再次確認連絡人清單使ˋ否正確，因為 Microsoft 受管理的電腦**必須**在發生嚴重事件時能夠連絡到他們。
 
-Microsoft 受管理的桌上型電腦系統管理入口網站，必須具備存取入口網站的人員其中一種 Azure Active Directory (AD) 角色：
-- 全域管理員
-- Intune 服務管理員
+## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory 存取 Microsoft 受管理電腦的系統管理入口網站
+
+Microsoft 受管理電腦的系統管理入口網站要求存取入口網站的人員需要擁有以下其中一個 Azure Active Directory (AD) 角色：
+- 全域系統管理員
+- Intune 服務系統管理員
 - 計費系統管理員
 - 服務支援系統管理員
 
-全域系統管理員必須是要註冊 Microsoft 受管理電腦中的客戶一種。  所有的五個角色都相同的存取權，在系統管理入口網站中啟動和檢視工作。  如需有關如何在 Azure AD 中指派這些角色的詳細資訊，請參閱 < <b0>Azure Active Directory 中的系統管理員角色權限</b0>。 
+全域系統管理員必須是在 Microsoft 受管理的電腦中註冊貴組織的人員。 所有五個角色在系統管理入口網站都擁有相同存取權，以初始化和檢視工作。 如需有關在 Azure AD 中指派這些角色的詳細資訊，請參閱[在 Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 
 
-## <a name="admin-contact-focus-areas"></a>系統管理連絡人的重點領域
+## <a name="admin-contact-areas-of-focus"></a>系統管理連絡人重點領域
 
-系統管理連絡人應該是最佳的人員或群組，可以回答問題，並使不同的重點領域的決策。  Microsoft 受管理的桌上型電腦作業會連絡這些系統管理連絡人的涉及歸檔由客戶支援要求的問題。  這些系統管理連絡人會收到支援要求的更新和新郵件通知。  這些區域，包括：
+系統管理連絡人必須是最佳人員或群組，可回答問題並做出不同重點領域的決策。 **Microsoft 受管理的電腦作業將會連絡這些系統管理連絡人，以解決客戶支援要求的問題。** 這些系統管理連絡人將會收到支援要求更新和新訊息的通知。 這些領域包括：
 
-焦點區域 | 如需問題
+重點領域 | 相關問題
 --- | ---
-App | 疑難排解應用程式封裝
-裝置 | 裝置健全狀況，使用 Microsoft 受管理的電腦裝置進行疑難排解
-安全性 | 疑難排解安全性問題的 Microsoft 受管理的電腦裝置
-其他 | 未涵蓋之其他方面的問題
+應用程式封裝 | 疑難排解應用程式封裝
+裝置 | 裝置健康情況、透過 Microsoft 受管理的電腦裝置進行疑難排解
+安全性 | 透過 Microsoft 受管理的電腦裝置疑難排解安全性問題
+IT 技術支援 | 如果我們的支援人員將使用者票證交給 Microsoft 受管理的電腦支援領域之外 
+其他 | 其他領域未涵蓋的問題
 
-無論您選擇讓知識和授權來決定 Microsoft 受管理的桌上型電腦環境這些連絡人需求。 當您上架您 Microsoft 受管理的桌上型電腦環境中，系統會提示您將連絡人新增本機服務台和安全性。 
+**無論您選擇誰做為這些連絡人，都必須擁有知識和授權，以便為您的 Microsoft 受管理的電腦環境做出決策。** 當您上線 Microsoft 受管理的電腦環境時，系統會提示您為本地技術支援和安全性新增連絡人。 
 
-系統管理連絡人都是必要時您[提交支援要求](../working-with-managed-desktop/support.md)。 您需要有支援要求的 [焦點] 區域的系統管理員連絡。 
+需要系統管理連絡人才能[提交支援要求](../working-with-managed-desktop/support.md)。 您必須擁有針對支援要求之重點領域的系統管理連絡人。 
 
 **若要新增系統管理連絡人**
 
-1.  登入[Microsoft 受管理的電腦系統管理入口網站](http://aka.ms/mwaasportal)。 
+1.  登入 [Microsoft 受管理電腦的入口網站](https://aka.ms/mwaasportal)。 
 
-2.  **支援**] 底下選取 [**系統管理連絡人**]。 
+2.  在 [支援]**** 底下，選取 [系統管理連絡人]****。 
 
-    ![支援] 功能表中，系統管理連絡人](images/admincontacts.png)
+    ![在支援功能表，接近頂端選取的系統管理連絡人](images/admincontacts.png)
 
-3. 選取 [**新增**]。
+3. 選取 [新增]****。
 
-    ![系統管理員入口網站加入] 按鈕](images/adminadd.png)
+    ![在系統管理入口網站 [匯出並重新整理] 左方的 [新增]按鈕](images/adminadd.png)
 
-4.  選取**的焦點] 區域**，然後輸入連絡人的資訊。 
+4.  選取 [重點領域]**** 並輸入連絡人資訊。 
 
-    ![[] 清單中的焦點的區域](images/areaoffocus.png)
+    ![重點領域清單，例如 [其他]、[應用程式] 和 [安全性]](images/areaoffocus.png)
 
-5. 重複的每個區域的焦點。 
+5. 每個重點領域的重複。 
 
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>開始使用 Microsoft 受管理電腦的步驟
+
+1. 在系統管理入口網站中新增和驗證系統管理連絡人 (此主題)
+2. [調整條件式存取](conditional-access.md)
+3. [指派授權](assign-licenses.md)
+4. [在裝置上安裝 Intune 公司入口網站](company-portal.md)
+5. [啟用企業狀態漫遊](enterprise-state-roaming.md)
+6. [設定 Microsoft 受管理的電腦裝置](set-up-devices.md)
+7. [讓您的使用者準備好使用裝置](get-started-devices.md)
+8. [將應用程式部署至裝置](deploy-apps.md)
