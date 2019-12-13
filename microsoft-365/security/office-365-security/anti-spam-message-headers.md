@@ -13,18 +13,18 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: 了解 Exchange Online Protection 新增至郵件的標頭欄位和值。
-ms.openlocfilehash: adc97ea59293d226ae304e128643901faedc1a37
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 7336d67d29976cf968b95b8f0d4157aef6682ba6
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615673"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971981"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾郵件訊息標頭
 
 Exchange Online Protection 掃描輸入的電子郵件訊息時，會在每封郵件插入 **X-Forefront-Antispam-Report** 標頭。 此標頭的欄位有助於提供系統管理員郵件及其處理方式的相關資訊。 **X-Microsoft-Antispam** 標頭中的欄位可提供大宗郵件和網路釣魚的額外資訊。 除了這兩個標頭之外，Exchange Online Protection 還會為其在 **Authentication-results** 標頭中處理的每封郵件插入電子郵件身份驗證結果。
 
-如需如何在各種電子郵件用戶端中檢視電子郵件標頭的詳細資訊，請參閱[郵件標頭分析器](https://go.microsoft.com/fwlink/p/?LinkId=306583)。
+如需如何在各種電子郵件用戶端中檢視電子郵件標頭的詳細資訊，請參閱 [在 Outlook 中查看網際網路郵件標題](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)。
 
 > [!TIP]
 > 您可以複製郵件標頭的內容並貼到[郵件分析器](https://testconnectivity.microsoft.com/?tabid=mha) 工具中。 這項工具可協助您剖析標頭，並以易讀取的格式來呈現。
@@ -41,7 +41,7 @@ Exchange Online Protection 掃描輸入的電子郵件訊息時，會在每封�
 |SCL|郵件的垃圾郵件信賴等級 (SCL) 值。 如需解譯這些值的相關資訊，請參閱[垃圾郵件信賴等級](spam-confidence-levels.md)。|
 |SRV:BULK|郵件被識別為大量電子郵件。 如果啟用 [封鎖所有大量電子郵件的進階垃圾郵件篩選選項]****，則會將電子郵件標記為垃圾郵件。 如果未啟用，則會在其餘的篩選規則判斷該郵件為垃圾郵件時，才將它標記為垃圾郵件。|
 |SFV:SFE|已略過篩選作業並允許郵件傳入，因為該郵件是從個人的安全寄件者清單上的地址寄送而來。|
-|SFV:BLK|已略過篩選作業，但郵件遭到封鎖，因為該郵件是從個人的封鎖寄件者清單上的地址寄來的。  <br/> **秘訣**：如需使用者應如何建立安全和封鎖寄件者清單的詳細資訊，請參閱[封鎖或允許 (垃圾郵件設定)](https://go.microsoft.com/fwlink/p/?LinkId=294862) (Outlook 網頁版) 以及[垃圾電子郵件篩選概觀](https://go.microsoft.com/fwlink/p/?LinkId=270065) (Outlook)。|
+|SFV:BLK|已略過篩選作業，但郵件遭到封鎖，因為該郵件是從個人的封鎖寄件者清單上的地址寄來的。  <br/> **秘訣**：如需使用者應如何建立安全和封鎖寄件者清單的詳細資訊，請參閱[在 Outlook 網頁版中篩選垃圾電子郵件](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)以及[垃圾電子郵件篩選概觀](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) (Outlook)。|
 |IPV:CAL|因為 IP 位址指定於連線篩選的 [IP 允許] 清單中，所以已透過垃圾郵件篩選允許郵件。|
 |IPV:NLI|IP 位址不被列在任何 IP 信譽清單中。|
 |SFV:SPM|內容篩選已將郵件標記為垃圾郵件。|
@@ -54,7 +54,7 @@ Exchange Online Protection 掃描輸入的電子郵件訊息時，會在每封�
 |SFV:NSPM|郵件標記為非垃圾郵件，並傳送給預定的收件者。|
 |H: \[helostring\]|連線郵件伺服器的 HELO 或 EHLO 字串。|
 |PTR: \[ReverseDNS\]|傳送 IP 位址 (也稱為反向 DNS 位址) 的 PTR 記錄或指標記錄。|
-|CAT：|郵件所套用的保護原則類別： <br/>MALW：惡意程式碼 <br/>PHSH：網路釣魚 <br/>HSPM：高信賴度的垃圾郵件 <br/>SPOOF：詐騙 <br/>SPM：垃圾郵件 <br/>BULK：大量郵件 <br/>DIMP：網域冒充 <br/>UIMP：使用者冒充 <br/>GIMP：信箱情報<br/>可能可以透過多種形式的保護和多次偵測掃描來標記傳入郵件。 原則具有不同的優先次序，將套用優先次序最高的原則。 請參閱[在您的電子郵件上執行多種保護方法和偵測掃描時適用的原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined)。|
+|CAT：|郵件所套用的保護原則類別： <br/>MALW：惡意程式碼 <br/>PHSH：網路釣魚 <br/>HSPM：高信賴度的垃圾郵件 <br/>SPOOF：詐騙 <br/>SPM：垃圾郵件 <br/>BULK：大量郵件 <br/>DIMP：網域冒充 <br/>UIMP：使用者冒充 <br/>GIMP：信箱情報<br/>可能可以透過多種形式的保護和多次偵測掃描來標記傳入郵件。 原則具有不同的優先次序，將套用優先次序最高的原則。 請參閱[在您的電子郵件上執行多種保護方法和偵測掃描時適用的原則](how-policies-and-protections-are-combined.md)。|
 |SFTY|郵件已被識別為網路釣魚，並且也會標示為以下其中一個值： <br/>9.1：預設值。 該郵件包含網路釣魚 URL、可能包含其他網路釣魚內容，或者在將郵件轉送到 Office 365 之前，可能已被其他郵件篩選器 (如內部部署的 Exchange Server 版本) 標記為網路釣魚郵件。 <br/>9.11：郵件的反詐騙檢查失敗，其中 [寄件者:] 標頭中的寄件網域與接收網域相同，或與接收網域相同或屬於同一組織。 這表示將在郵件中新增組織內部詐騙安全提示。 <br/>9.19：郵件的網域模擬檢查失敗，寄件網域嘗試模擬接收者擁有的網域，或受反網路釣魚原則保護的自訂網域。 這表示如果透過反網路釣魚原則來啟用，則會在郵件中新增模擬安全提示。 <br/>9.20：郵件的使用者模擬檢查失敗，寄件使用者嘗試模擬接收者組織內的使用者，或受反網路釣魚原則保護的自訂使用者。 這表示如果透過反網路釣魚原則來啟用，則會在郵件中新增模擬安全提示。 <br/>9.21：郵件的反詐騙檢查失敗，[寄件者:] 標頭中的寄件網域不驗證且來自外部網域。 搭配 CompAuth 使用 (請參閱 Authentication-Results)。 <br/>9.22：與 9.21 相同，唯一不同的是使用者的安全寄件者遭到覆寫。 <br/>9.23：與 9.22 相同，唯一不同的是組織允許遭到覆寫的寄件者或網域。 <br/>9.24：與 9.23 相同，唯一不同的是使用者的 Exchange 郵件流程規則遭到覆寫。|
 |X-CustomSpam: \[ASFOption\]|郵件符合進階的垃圾郵件篩選選項。 例如，**X-CustomSpam: Image links to remote sites** 表示已符合 [遠端站台的影像連結]**** ASF 選項。 若要了解每個特定的 ASF 選項新增的 X-header 文字，請參閱[進階垃圾郵件篩選選項](advanced-spam-filtering-asf-options.md)。|
 |

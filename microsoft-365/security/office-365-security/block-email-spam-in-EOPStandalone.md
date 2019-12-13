@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: EOP 獨立版系統管理員適用的文件，以協助防止垃圾郵件誤判
-ms.openlocfilehash: cc0237ddc127c9818ae9cf4916187485e4d1dee7
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 1c82bd65906f79898677136e02fd619bbe4c5214
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871949"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971901"
 ---
 # <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>利用這些設定來自訂 Office 365 反垃圾郵件篩選器
 
@@ -31,7 +31,7 @@ ms.locfileid: "39871949"
 
 將寄件者 IP 位址新增到連線篩選器 IP 封鎖清單，來自訂您的 Office 365 垃圾郵件篩選器：
 
-1. 如[郵件標頭分析器](https://go.microsoft.com/fwlink/p/?LinkId=306583)所述，取得您想要在郵件用戶端 (例如 Outlook 或 Outlook 網頁版 (之前稱為 Outlook Web App)) 封鎖之郵件的標頭。
+1. 如 [在 Outlook 中查看網際網路郵件標題](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)所述，取得您想要在郵件用戶端 (例如 Outlook 或 Outlook 網頁版 (之前稱為 Outlook Web App)) 封鎖之郵件的標頭。
 
 2. 使用[郵件標頭分析器](https://testconnectivity.microsoft.com/?tabid=mha)或手動搜尋位在 X-Forefront-Antispam-Report 標頭中 CIP 標籤後面的 IP 位址。
 
@@ -49,7 +49,7 @@ ms.locfileid: "39871949"
 
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>電子郵件使用者也可以使用 Office 365 垃圾郵件篩選器，來協助確定封鎖誤判和電子郵件垃圾郵件
 
-如果您告訴使用者將垃圾郵件寄件者地址新增至其封鎖的寄件者清單 (位於 [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) 或 [Outlook 網頁版](https://go.microsoft.com/fwlink/p/?LinkId=294862) 中)，它將有助於您的 Office 365 防止誤判和垃圾郵件的反垃圾郵件工作。在 Outlook 網頁版中，按一下 [設定]**** \> [選項]**** \> [封鎖或允許]****，然後將地址新增至 [封鎖的寄件者]**** 清單，如下所示。
+如果您告訴使用者將垃圾郵件寄件者地址新增至其封鎖的寄件者清單 (位於 [Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) 或 [Outlook 網頁版](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d) 中)，它將有助於您的 Office 365 防止誤判和垃圾郵件的反垃圾郵件工作。在 Outlook 網頁版中，按一下 [設定]**** \> [選項]**** \> [封鎖或允許]****，然後將地址新增至 [封鎖的寄件者]**** 清單，如下所示。
 
 ![封鎖 Outlook 網頁版中的寄件者](../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 
