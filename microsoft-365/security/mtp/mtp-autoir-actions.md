@@ -1,0 +1,66 @@
+---
+title: 自動化調查後核准或拒絕擱置中的動作
+description: 使用重要訊息中心來管理與自動化調查和回應相關的動作
+keywords: 動作, 中心, autoair, 自動化, 調查, 回應, 補救
+search.appverid: met150
+ms.prod: microsoft-365-enterprise
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: deniseb
+author: denisebmsft
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection:
+- M365-security-compliance
+ms.topic: conceptual
+ms.custom: autoir
+ms.openlocfilehash: 5c690d07af285b5232d383bb89071c3b64343772
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39910967"
+---
+# <a name="approve-or-reject-pending-actions-from-automated-investigations"></a>核准或拒絕來自自動化調查的擱置中的動作
+
+**適用於：**
+- Microsoft 威脅防護
+
+[!include[Prerelease information](prerelease.md)]
+
+當自動化調查執行時，可能會導致需要核准才能繼續的一或多個[補救動作](mtp-action-center.md#remediation-actions)。 例如，可能需要刪除一組電子郵件訊息，或可能需要移除隔離的檔案。 務必盡快核准 (或拒絕) 擱置中的動作，這樣您的自動化調查才能及時進行和完成。 
+
+使用以下數個方法中的一個可檢閱和核准擱置中的動作：
+- [使用重要訊息中心](#review-a-pending-action-in-the-action-center)
+- [使用調查詳細資料檢視](#review-a-pending-action-in-the-investigation-details-view)
+
+> [!NOTE]
+> 您必須具備[適當的權限](mtp-action-center.md#required-permissions-for-action-center-tasks)，才能核准或拒絕補救動作。
+
+## <a name="review-a-pending-action-in-the-action-center"></a>在重要訊息中心檢閱擱置中的動作
+
+1. 移至 [https://security.microsoft.com](https://security.microsoft.com) 並登入。 
+
+2. 在功能窗格中，選擇 [重要訊息中心]****。 
+
+3. 在重要訊息中心的 [擱置中]**** 索引標籤上，選取清單中的一個項目。 
+
+    - 如果您選取 [調查編號]**** 資料行中的項目，調查詳細資料頁面會隨即開啟。 您可以在該處檢視調查結果，然後核准或拒絕建議的動作。
+ 
+    - 如果您選取清單中的資料列，就會開啟飛出視窗，您可以在此檢視該項目的相關資訊。 <br/>![核准或拒絕動作](../images/air-actioncenter-itemselected.png)<br/>使用連結來檢視相關聯的警示或調查，並核准或拒絕動作。
+
+## <a name="review-a-pending-action-in-the-investigation-details-view"></a>在調查詳細資料檢視中檢閱擱置中的動作
+
+![調查詳細資料](../images/mtp-air-investdetails.png)
+
+1. 在 [調查詳細資料][](mtp-autoir-results.md) 頁面上，選取 [擱置中的動作]**** (或 [動作]****) 索引標籤。此處會列出核准擱置中的項目。
+
+2. 選取清單中的項目，然後選擇 [核准]**** 或 [拒絕]****。
+
+## <a name="next-steps"></a>後續步驟
+
+- [深入了解重要訊息中心](mtp-action-center.md)
+- [深入了解事件](incidents-overview.md)
+- [了解搜捕](advanced-hunting-overview.md)
