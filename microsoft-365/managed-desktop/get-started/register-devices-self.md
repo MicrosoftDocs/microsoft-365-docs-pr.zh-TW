@@ -1,67 +1,79 @@
 ---
-title: 註冊裝置 Microsoft 受管理電腦中自行
-description: 註冊裝置自行這樣可以由 Microsoft 受管理的電腦
+title: 自行註冊新裝置
+description: 自行註冊裝置，以便由 Microsoft 受管理的電腦管理
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: f1e61cfc7fd1d6d597efbfa2480155e06a3d3eb7
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
-ms.translationtype: MT
+ms.openlocfilehash: a1dbb5708cad32a0e37ddc25c97c70a765580f86
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857296"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962520"
 ---
-# <a name="register-devices-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中註冊裝置
+# <a name="register-new-devices-yourself"></a>自行註冊新裝置
 
->[!NOTE]
->本主題說明您註冊裝置上您自己的步驟。 中[註冊裝置的合作夥伴的 Microsoft 受管理電腦中](register-devices-partner.md)會說明協力廠商的程序。
+Microsoft 受管理的電腦可搭配全新的裝置運作，或您可重複使用您可能已經擁有的裝置 (這需要您重新製作其映像)。 您可以使用 Azure 入口網站上的 Microsoft 受管理的電腦來註冊裝置。
 
-Microsoft 受管理的電腦可搭配全新的裝置，或者您可以重新使用您可能已有的裝置 （這會需要，您重新影像它們）。 您可以在 Azure 入口網站上使用 Microsoft 受管理電腦中註冊裝置，或使用 API 獲得的彈性。
+> [!NOTE]
+> 與合作夥伴合作來取得裝置嗎？ 若是如此，您就不需要擔心取得硬體雜湊，他們會為您處理。 確定您的合作夥伴在 [合作夥伴中心](https://partner.microsoft.com/dashboard)建立與您的關係，且具備 Azure Active Directory 和 Office 365 的委派系統管理權限。 您的合作夥伴可在 [合作夥伴中心說明](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)深入了解。 建立這種關聯性後，您的合作夥伴就會代表您直接註冊裝置，您不須採取任何進一步動作。 如果您想要查看詳細資料，或您的合作夥伴有疑問，請參閱[可供合作夥伴註冊裝置的步驟](register-devices-partner.md)。 註冊好裝置後，您可以繼續[檢查映像](#check-the-image)並[將裝置交付](#deliver-the-device)給您的使用者。
 
-## <a name="prepare-to-register-devices"></a>準備註冊裝置
-
-如果您已經尚未取得您想要使用、 檢查[Microsoft 受管理的電腦裝置](../service-description/device-list.md)以及與以採購裝置合作夥伴合作，的裝置支援的裝置。
-
-不論您正在使用全新的裝置，或者重新使用現有的項目，來註冊 Microsoft 受管理的電腦，您需要準備的**以逗號分隔 (CSV) 檔案**。 此檔案應包含每個裝置的下列資訊：
-
->[!NOTE]
->這種格式是只自助註冊。 合作夥伴應使用的格式已記錄在[登錄中的協力廠商的 Microsoft 受管理電腦的裝置](register-devices-partner.md)。
-
-這些值用於顯示用途，並不需要完全相符之裝置的屬性。
-- 裝置製造商 (範例： SpiralOrbit) 
-- 裝置型號 (範例： ContosoABC)
-- 裝置序號
-
-硬體雜湊必須完全符合。
-- 硬體雜湊
-
-若要取得硬體雜湊您可以從您的 OEM 或協力廠商尋求協助，或針對每個裝置遵循下列步驟：
-
-1.  以系統管理權限開啟 PowerShell 命令提示字元。
-2.  執行`Install-Script -Name Get-MMDRegistrationInfo`
-3.  執行`powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
+## <a name="prepare-to-register-brand-new-devices"></a>準備註冊全新的裝置
 
 
-或者，您可以在全新的裝置上遵循下列步驟 （之前第一次經由 OOBE）：
+在您擁有新的裝置後，您會依照下列步驟執行：
 
-1. 在不同裝置上，插入 USB 磁碟機。
-2. 以系統管理權限開啟 PowerShell 命令提示字元。
-3. 執行`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
-4. 在目標裝置上，開啟，但不是會啟動安裝程式的經驗。 如果您不小心開始的安裝體驗，您必須重設或重新裝置。
-5. 插入的 USB 磁碟機，並按下 SHIFT + f10 時會顯示功能表。
-6. 以系統管理權限，開啟 PowerShell 命令提示字元，然後執行`cd <pathToUsb>`。
-7. 執行`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
-8. 執行`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
-3. 移除的 USB 磁碟機，然後關閉該裝置，藉由執行`shutdown -s -t 0`
+1. [取得每個裝置的硬體雜湊。](#obtain-the-hardware-hash)
+2. [合併雜湊資料](#merge-hash-data)
+3. [在 Microsoft 受管理的電腦中註冊裝置](#register-devices)。
+4. [再次確認映像是否正確。](#check-the-image)
+5. [交付裝置](#deliver-the-device)
+
+### <a name="obtain-the-hardware-hash"></a>取得硬體雜湊
+
+Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個裝置。 您有三種選項可取得此資訊：
+
+- 請向您的 OEM 提供者索取 AutoPilot 註冊檔案，其中會包含硬體雜湊。
+- 在每個裝置上執行 [Windows PowerShell 指令碼](#powershell-script-method)，並收集檔案中的結果。
+- 啟動每個裝置 (但不要完成 Windows 設定體驗)，然後[收集卸除式快閃磁碟機上的雜湊](#flash-drive-method)。
+
+#### <a name="powershell-script-method"></a>PowerShell 指令碼方法
+
+1.  以系統管理權限開啟 PowerShell 提示字元。
+2.  執行 `Install-Script -Name Get-MMDRegistrationInfo`
+3.  執行 `powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
+
+#### <a name="flash-drive-method"></a>快閃磁碟機方法
+
+1. 在您要註冊的裝置以外的裝置上，插入 USB 磁碟機。
+2. 以系統管理權限開啟 PowerShell 提示字元。
+3. 執行 `Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
+4. 開啟您要註冊的裝置，但*請勿開始設定體驗*。 如果您不小心開始設定體驗，則必須重設裝置或重新製作其映像。
+5. 插入 USB 磁碟機，然後按 SHIFT + F10。
+6. 以系統管理權限開啟 PowerShell 提示字元，然後執行 `cd <pathToUsb>`。
+7. 執行 `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
+8. 執行 `.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
+9. 移除 USB 磁碟機，然後執行 `shutdown -s -t 0` 以關閉裝置
 
 >[!IMPORTANT]
->不 power 目標裝置上一次直到您已經完成註冊為它。 
+>在您完成註冊前，請勿開啟您所註冊的裝置。 
+
+
+### <a name="merge-hash-data"></a>合併雜湊資料
+
+您必須將 CSV 檔案中的資料合併成單一檔案，才能完成註冊。 以下是讓註冊變輕鬆的範例 PowerShell 指令碼：
+
+`Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
+
+### <a name="register-devices"></a>註冊裝置
+
+CSV 檔案必須採用可供註冊的特定格式。 如果您在先前步驟中自行收集了資料，檔案應該已經是正確的格式。如果您是向供應商取得檔案，則可能需要調整格式。
 
 >[!NOTE]
->以方便您使用，您可以下載這個 CSV 檔案的[範本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.xlsx)。
+>為了方便起見，您可以下載這個 CSV 檔案的[範本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.xlsx)。
 
-您的檔案必須包含**完全相同的欄名**為其中一個範例 （製造商、 型號、 等），但您自己的資料列的資料。 如果您使用的範本，在編輯 [記事本] 之類的文字中開啟，並且考慮離開的所有資料列 1 單獨中的，只輸入資料，資料列 2 中下, 面。 
+您的檔案必須包含**完全相同的欄標題**作為範例一 (製造商、型號等)，但您自己的資料適用於其他列。 如果您使用範本，請在記事本這類的文字編輯工具中開啟範本，然後不妨將列 1 的所有資料維持原狀，只在列 2 以下輸入資料。 
     
   ```
  Manufacturer,Model,Serial Number,Hardware Hash
@@ -71,55 +83,61 @@ Microsoft 受管理的電腦可搭配全新的裝置，或者您可以重新使�
   ```
 
 >[!NOTE]
->如果您忘記變更其中一個範例資料，將會失敗註冊。   
+>如果您忘記變更任何範例資料，註冊將會失敗。
+
+#### <a name="register-devices-by-using-the-azure-portal"></a>使用 Azure 入口網站來註冊裝置
+
+從 Microsoft 受管理的電腦的 [Azure 入口網站](https://aka.ms/mmdportal)，選取左側導覽窗格中的 [裝置]****。 選取 [+ 註冊裝置]****；飛入視窗隨即開啟：
+
+[![在選取 [註冊裝置] 之後飛入，並列出裝置與已指派使用者、序號、狀態、上次查看日期和年限等欄](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
 
 
-## <a name="register-devices-by-using-the-azure-portal"></a>使用 Azure 入口網站來註冊裝置
-
-從 Microsoft 受管理電腦的 [ [Azure 入口網站](https://aka.ms/mmdportal)中，選取 [在左側的導覽窗格中的**裝置**。 選取 [ **+ 註冊裝置**;飛出視窗中開啟：
-
-[![飛出視窗中選取註冊裝置之後](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
-
-
-[//]: # (可惜這不是，則為 true。我們可以移除此附註-但現在離開它，直到我們有機會關於該聊天室。)
+[//]: # (事實並非如此。我們可以移除此注意事項 - 但現在暫且擱置，留待我們有機會討論。)
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 
 
 請遵循下列步驟：
 
-1. 在 [**檔案上傳**，提供您先前建立的 CSV 檔案的路徑。
-2. （選用） 您可以新增**順序識別碼**或**購買識別碼**自己追蹤的目的。 沒有這些值的格式需求。
-3. 選取 [**註冊的裝置**]。 系統會將裝置新增至您的**裝置] 刀鋒視窗中**，標示為 [**擱置中註冊**裝置的清單。 註冊通常採用小於 10 分鐘，並成功時裝置將會顯示為**使用者準備**這很好，等待使用者開始使用。
+1. 在 [檔案上傳]**** 中，提供您先前建立的 CSV 檔案路徑。
+2. 或者，您可以新增 [訂單識別碼]**** 或 [購買識別碼]****，以便自行追蹤。 這些值沒有格式需求。
+3. 選取 [註冊裝置]****。 系統會將裝置新增至 [裝置] 刀鋒視窗**** 上標示為 [註冊擱置]**** 的裝置清單。 註冊通常需要不到 10 分鐘的時間，而註冊成功時，裝置將會顯示為 [使用者就緒]****，標示其已準備就緒並等待終端使用者開始使用。
 
 
-您可以監視進度的主要**Microsoft 受管理電腦的 [裝置**] 頁面上的裝置註冊。 報告那里可能的狀態包括：
+您可以在主要 [Microsoft 受管理的電腦 - 裝置]**** 頁面上監視裝置註冊的進度。 其回報的可能狀態包括：
 
 | 狀態 | 描述 |
 |---------------|-------------|
-| 註冊暫止 | 註冊未尚未完成。 請稍後再回來。 |
-| 註冊失敗 | 無法完成註冊。 如需詳細資訊，請參閱[疑難排解](register-devices-self.md#troubleshooting)。 |
-| 準備使用者 | 註冊成功，而且裝置已準備好要傳遞給使用者。 Microsoft 受管理的電腦會逐步引導其第一次 」 設定，因此不需要為您進行任何進一步的準備工作。 |
-| Active | 裝置已經傳送給使用者，他們必須註冊您的租用戶。 這也表示他們定期使用裝置。 |
-| 非使用中 | 裝置已經傳送給使用者，他們必須註冊您的租用戶。 不過，他們有不適用於裝置最近 （過去 7 天）。  | 
+| 註冊擱置 | 尚未完成註冊。 稍後再回頭檢查。 |
+| 註冊失敗 | 無法完成註冊。 如需詳細資訊，請參閱[針對裝置註冊進行疑難排解](#troubleshooting-device-registration)。 |
+| 使用者就緒 | 註冊成功，且裝置現在已準備好交付給使用者。 Microsoft 受管理的電腦將會逐步引導使用者完成首次設定，因此您不需要再做任何進一步的準備。 |
+| 作用中 | 裝置已交付給終端使用者並已向您的租用戶註冊。 這也表示使用者經常使用該裝置。 |
+| 非作用中 | 裝置已交付給終端使用者並已向您的租用戶註冊。 不過，使用者最近尚未使用裝置 (在過去 7 天內)。  | 
 
-
-## <a name="register-devices-by-using-an-api"></a>使用 API 來註冊裝置
-
-REST API 就可讓您更大的彈性和重複性與經常不同的裝置註冊。 目前，若要使用 API，請尋求協助從您的 Microsoft 連絡人加入這項功能的預覽。
-
-
-
-## <a name="troubleshooting"></a>疑難排解
+#### <a name="troubleshooting-device-registration"></a>針對裝置註冊進行疑難排解
 
 | 錯誤訊息 | 詳細資料 |
 |---------------|-------------|
-| 找不到裝置 | 我們無法註冊此裝置，因為我們找不到相符項目提供的製造商、 模型，或序號。 與您的裝置供應商確認這些值。 |
-| 找不到裝置 | 我們無法取消註冊此裝置，因為不存在於您的組織。 不再需要的動作。 |
-| 不正確的硬體雜湊 | 您提供此裝置的硬體雜湊格式不正確。 請仔細檢查硬體雜湊，然後重新提交。 |
-| 已註冊的裝置 | 此裝置已登錄至您的組織。 不再需要的動作。 |
-| 另一個組織所宣告的裝置 | 此裝置已經被另一個組織所宣告。 請與您的裝置供應商。 |
-| 未預期的錯誤 | 無法自動處理您的要求。 連絡支援人員，並提供 「 要求識別碼：<requestId> |
+| 找不到裝置 | 我們無法註冊這個裝置，因為我們找不到與所提供的製造商、型號或序號相符的裝置。 請與您的裝置供應商確認這些值。 |
+| 硬體雜湊無效 | 您為這個裝置提供的硬體雜湊格式不正確。 再次確認硬體雜湊，然後重新提交。 |
+| 裝置已經註冊 | 此裝置已經註冊到您的組織。 無需採取任何動作。 |
+| 其他組織所宣告的裝置 | 此裝置已經由其他組織所宣告。 請洽詢您的裝置供應商。 |
+| 未預期的錯誤 | 無法自動處理您的要求。 連絡客戶支援並提供要求識別碼：<requestId> |
+
+### <a name="check-the-image"></a>檢查映像
+
+如果您的裝置來自 Microsoft 受管理的電腦合作夥伴供應商，映射應是正確的。
+
+如果您想要的話，也歡迎您自行套用映像。 若要開始使用，請連絡您的 Microsoft 代表，他們會將映像的位置及其套用步驟提供給您。
+
+### <a name="deliver-the-device"></a>交付裝置
+
+> [!IMPORTANT]
+> 將裝置交給使用者之前，請確認您已取得並套用[適合該使用者的授權](../get-ready/prerequisites.md)。
+
+如果已套用所有授權，您可以[讓使用者準備好使用裝置](get-started-devices.md)，然後使用者即可啟動裝置並繼續進行 Windows 設定體驗。
+
+
 
 
 
