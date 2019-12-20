@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ceb8679ccdd5c1fb41772a8b48d9474665922f39
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: HT
+ms.openlocfilehash: 871f659074c4f8386746e341db4d3500c5e80a31
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910894"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807002"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>進階搜捕查詢最佳做法
 
 **適用於：**
 - Microsoft 威脅防護
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 ## <a name="optimize-query-performance"></a>最佳化查詢效能
 套用這些建議來加快取得結果，並避免在執行複雜查詢時發生逾時：
@@ -47,15 +47,15 @@ ms.locfileid: "39910894"
 ### <a name="queries-with-process-ids"></a>含有程序識別碼的查詢
 程序識別碼 (PID) 會在 Windows 中回收，並針對新程序重複使用。 它們本身不能充當特定程序的唯一識別碼。
 
-若要為特定電腦上的程序取得唯一識別碼，請使用程序識別碼與程序建立時間。 結合或摘要處理程序中的資料時，需包含電腦識別碼的欄位 (`MachineId` 或 `ComputerName`)、程序識別碼 (`ProcessId` 或 `InitiatingProcessId`) 以及程序建立時間 (`ProcessCreationTime` 或 `InitiatingProcessCreationTime`)
+若要為特定電腦上的程序取得唯一識別碼，請使用程序識別碼與程序建立時間。 結合或摘要處理程序中的資料時，需包含電腦識別碼的欄位 (`DeviceId` 或 `DeviceName`)、程序識別碼 (`ProcessId` 或 `InitiatingProcessId`) 以及程序建立時間 (`ProcessCreationTime` 或 `InitiatingProcessCreationTime`)
 
 下列範例查詢發現透過連接埠 445 (SMB) 存取 10 個以上 IP 位址的程序，可能是因為掃描檔案共用。
 
 例如查詢：
 ```
-NetworkCommunicationEvents
-| where RemotePort == 445 and EventTime > ago(12h) and InitiatingProcessId !in (0, 4)
-| summarize RemoteIPCount=dcount(RemoteIP) by ComputerName, InitiatingProcessId, InitiatingProcessCreationTime, InitiatingProcessFileName
+DeviceNetworkEvents
+| where RemotePort == 445 and Timestamp > ago(12h) and InitiatingProcessId !in (0, 4)
+| summarize RemoteIPCount=dcount(RemoteIP) by DeviceName, InitiatingProcessId, InitiatingProcessCreationTime, InitiatingProcessFileName
 | where RemoteIPCount > 10
 ```
 
@@ -78,17 +78,17 @@ NetworkCommunicationEvents
 
 ```
 // Non-durable query - do not use
-ProcessCreationEvents
+DeviceProcessEvents
 | where ProcessCommandLine == "net stop MpsSvc"
 | limit 10
 
 // Better query - filters on filename, does case-insensitive matches
-ProcessCreationEvents
-| where EventTime > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc" 
+DeviceProcessEvents
+| where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc" 
 
 // Best query also ignores quotes
-ProcessCreationEvents
-| where EventTime > ago(7d) and FileName in~ ("net.exe", "net1.exe")
+DeviceProcessEvents
+| where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe")
 | extend CanonicalCommandLine=replace("\"", "", ProcessCommandLine)
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```

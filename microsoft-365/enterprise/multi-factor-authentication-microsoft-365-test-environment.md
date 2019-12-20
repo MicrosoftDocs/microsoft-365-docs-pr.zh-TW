@@ -3,7 +3,7 @@ title: 多重要素驗證您的 Microsoft 365 企業版測試環境
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,20 +13,22 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 設定使用文字訊息傳送至 Microsoft 365 企業版測試環境中的智慧型手機的多重要素驗證。
-ms.openlocfilehash: af4ae63f52fa74084dfddf0e6861c5ae3ba2aedb
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: ea87ab6f169829d74339b64b6edb3978bea9ca9a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673259"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801398"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>多重要素驗證您的 Microsoft 365 企業版測試環境
 
-*此測試實驗室指南可用於 Microsoft 365 企業版和 Office 365 企業版測試環境。*
+*這個測試實驗室指南可用於 Microsoft 365 企業版和 Office 365 企業版兩種測試環境。*
 
-針對其他安全性層級的登入 Office 365 或任何服務或應用程式，為您的組織會使用 Azure AD 租用戶，您可以啟用 Azure 多重要素驗證，需要不只是使用者名稱和密碼，可驗證帳戶。 以多重要素驗證使用者，才能確認電話、 輸入傳送文字郵件驗證碼或其智慧型手機上指定應用程式密碼之後正確輸入其密碼。 只有在滿足這個第二次驗證要素之後，他們才可以登入。 
+針對其他安全性層級的登入 Microsoft 365，或任何服務或應用程式的訂用帳戶使用 Azure AD 租用戶，您可以啟用 Azure 多重要素驗證，需要不只是使用者名稱和密碼，可驗證帳戶。 
+
+以多重要素驗證使用者，才能確認電話、 輸入傳送文字郵件驗證碼或其智慧型手機上指定應用程式密碼之後正確輸入其密碼。 只有在滿足這個第二次驗證要素之後，他們才可以登入。 
   
-本文說明如何啟用及測試文字郵件的驗證為特定帳戶。
+本文說明如何啟用及測試文字郵件的驗證，為特定的使用者帳戶。
   
 有兩個主要階段設定多重要素驗證 Microsoft 365 企業版測試環境中的帳戶：
   
@@ -34,10 +36,12 @@ ms.locfileid: "38673259"
     
 2. 啟用並測試 「 使用者 2 」 帳戶的多重要素驗證。
 
+3. 啟用並測試與條件式存取原則 （選用） 的多重要素驗證。
+
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1：建置您的 Microsoft 365 企業版測試環境
 
@@ -46,7 +50,7 @@ ms.locfileid: "38673259"
 如果您想要在模擬的企業中測試多重要素驗證，請遵循[通過驗證](pass-through-auth-m365-ent-test-environment.md)的指示進行。
   
 > [!NOTE]
-> 測試多重要素驗證不需要模擬的企業測試環境，其中包含連線至網際網路的模擬內部網路和目錄同步處理 Active Directory 網域服務 (AD DS) 樹系中。 它提供了此選項，讓您可以測試多重要素驗證與代表典型組織的環境中實驗。 
+> 測試多重要素驗證不需要模擬的企業測試環境，其中包含連線至網際網路的模擬內部網路和目錄同步處理的 Active Directory 網域服務 (AD DS) 樹系。 它提供了此選項，讓您可以測試多重要素驗證與代表典型組織的環境中實驗。 
   
 ## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a>階段 2： 啟用並測試 「 使用者 2 」 帳戶的多重要素驗證
 
@@ -56,7 +60,7 @@ ms.locfileid: "38673259"
     
 2. 在左方的瀏覽區域中，按一下 [使用者] > [作用中的使用者]****。
     
-3. 在 [作用中使用者] 窗格中，按一下 [**更多 > 多重要素驗證設定**]。
+3. 在 [作用中使用者] 窗格中，按一下 [**多重要素驗證**。
     
 4. 在清單中，選取 「**使用者 2** 」 帳戶。
     
@@ -96,6 +100,38 @@ ms.locfileid: "38673259"
     
     在瀏覽器的 [ **Microsoft Office 的首頁**] 索引標籤上，您應該針對使用者 2 看到 Office 入口網站。
 
+## <a name="phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy"></a>階段 3： 啟用並測試與條件式存取原則的多重要素驗證
+
+*這個階段中只能用於 Microsoft 365 企業版測試環境。*
+
+在這個階段中，您會啟用使用群組和條件式存取原則的使用者 3 帳戶的多重要素驗證。
+
+接下來，建立名為 MFAUsers 的新群組和使用者 3 帳戶新增到它。
+
+1. 在**Microsoft 365 系統管理中心**] 索引標籤上，按一下 [**群組**]，請在左側導覽中，，，然後按一下 [**群組**。
+2. 按一下 [**新增群組**。
+3. 在 [**選擇群組類型**] 窗格中，選取 [**安全性**]，然後按一下 [**下一步**。
+4. 在 [**設定 [基本**] 窗格中，按一下 [**建立群組**]，然後按一下 [**關閉**。
+5. 在 [**檢閱並完成新增群組**] 窗格中，輸入**MFAUsers**，，然後按 [**下一步**。
+6. 在群組清單中，按一下 [ **MFAUsers**群組]。
+7. 在**MFAUsers** ] 窗格中，按一下 [**成員**]，然後按一下 [**檢視所有及管理成員**。
+8. 在**MFAUsers** ] 窗格中，按一下 [**新增成員**、 選取的**使用者 3**帳戶後，，然後按一下 [**儲存 > Close > 關閉**。
+
+接下來，建立條件式存取原則以多重要素驗證需要 MFAUsers 群組的成員。
+
+1. 在瀏覽器的新索引標籤，移至 [ [https://portal.azure.com](https://portal.azure.com)。
+2. 按一下 [ **Azure Active Directory > 安全性 > 條件式存取**。
+3. 在 [**條件式存取 – 原則**] 窗格中，按一下 [**新增原則**]。
+4. 在 [**新增**] 窗格中，輸入**名稱**中的**使用者帳戶的 MFA** 。
+5. 在 [**指派**] 區段中，按一下 [**使用者和群組**。
+6. 在 [**使用者和群組**] 窗格的 [**包含**] 索引標籤中，按一下 [**選取使用者及群組 > 使用者和群組 >，請選取**。
+7. 在 [**選取**] 窗格中，按一下 [ **MFAUsers** ] 群組中，然後按一下 [**選取 > 完成**。
+8. 在 [**新增**] 窗格中的 [**存取控制**] 區段中，按一下 [**授與**]。
+9. 在 [**授與**] 窗格中，按一下 [**需要多重要素驗證**，，然後按一下 [**選取**。
+10. 在 [**新增**] 窗格中，**啟用原則**，請按一下 [ **** ，然後按一下 [**建立**]。
+11. 關閉 [ **Azure 入口網站**和**Microsoft 365 系統管理中心**] 索引標籤。
+
+若要測試此原則，登出並以使用者 3 帳戶登入。 應該會提示您設定 MFA。 此示範 MFAUsers 原則會被套用。
 
 在身分識別階段中的資訊，以及部署在生產環境中的多重要素驗證的連結，請參閱[設定多重要素驗證](identity-secure-user-sign-ins.md#identity-mfa)的步驟。
     

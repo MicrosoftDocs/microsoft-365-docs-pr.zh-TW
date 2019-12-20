@@ -16,19 +16,19 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 950dec4c0b0a2de2bdc60a73a12f6c7895189ea4
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: HT
+ms.openlocfilehash: ca98e59ded0956455e3279caa9de2af4f4af86c9
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910973"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808468"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>移至重要訊息中心檢視補救動作
 
 **適用於：**
 - Microsoft 威脅防護
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 ## <a name="a-single-pane-of-glass-experience"></a>「單一玻璃窗」體驗
 

@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 摘要： 設定組織的其他 Office 365 開發/測試環境中隔離的 SharePoint Online 小組網站。
-ms.openlocfilehash: 7f2f4fa15bd9cc3c78afa0e507aaeaf069f83932
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: ae76667a0c6c32dcf83b4fbd911a6e0b5db0c579
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871819"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808108"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>獨立的 SharePoint Online 小組網站開發/測試環境
 
@@ -71,7 +71,7 @@ SharePoint 群組和權限等級由控制存取 SharePoint Online 小組網站�
 
 若要建立新的存取群組的 ProjectX SharePoint Online 小組網站，請在 Windows Azure Active Directory 模組的 Windows PowerShell 提示字元執行下列命令：
 
-```
+```powershell
 $groupName="ProjectX-Members"
 $groupDesc="People allowed to collaborate for ProjectX."
 New-MsolGroup -DisplayName $groupName -Description $groupDesc
@@ -85,7 +85,7 @@ New-MsolGroup -DisplayName $groupName -Description $groupDesc
 
 填入您的組織名稱 (範例︰contosotoycompany)，位置的兩個字元國家/地區代碼，再從適用於 Windows PowerShell 的 Windows Azure Active Directory 模組提示字元中執行下列命令︰
 
-```
+```powershell
 $orgName="<organization name>"
 $loc="<two-character country code, such as US>"
 $licAssignment= $orgName + ":ENTERPRISEPREMIUM"
@@ -97,7 +97,7 @@ New-MsolUser -DisplayName "Lead Designer" -FirstName Lead -LastName Designer -Us
 
 從適用於 Windows PowerShell 的 Windows Azure Active Directory 模組提示字元中執行下列命令︰
 
-```
+```powershell
 $userName= "researcher@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "Lead Researcher" -FirstName Lead -LastName Researcher -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment -ForceChangePassword $false
 ```
@@ -106,7 +106,7 @@ New-MsolUser -DisplayName "Lead Researcher" -FirstName Lead -LastName Researcher
 
 從適用於 Windows PowerShell 的 Windows Azure Active Directory 模組提示字元中執行下列命令︰
 
-```
+```powershell
 $userName= "devvp@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "Development VP" -FirstName Development -LastName VP -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment -ForceChangePassword $false
 ```
@@ -115,7 +115,7 @@ New-MsolUser -DisplayName "Development VP" -FirstName Development -LastName VP -
 
 接下來，將新的帳戶新增至新的存取群組，請在 Windows Azure Active Directory 模組的 Windows PowerShell 提示字元執行這些 PowerShell 命令：
 
-```
+```powershell
 $grpName="ProjectX-Members"
 $userUPN="designer@" + $orgName + ".onmicrosoft.com"
 Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $grpName }).ObjectID -GroupMemberObjectId (Get-MsolUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -GroupMemberType "User"
@@ -282,7 +282,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 ## <a name="see-also"></a>另請參閱
 
-[獨立的 SharePoint Online 小組網站](isolated-sharepoint-online-team-sites.md)。
+[獨立的 SharePoint Online 小組網站](isolated-sharepoint-online-team-sites.md)
 
 [雲端採用測試實驗室指南 (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 

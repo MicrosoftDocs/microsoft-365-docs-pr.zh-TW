@@ -17,19 +17,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 989184c5dd8af6aafc525100e34e0172d96adcfe
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: HT
+ms.openlocfilehash: 1e157ff8c7c2ac61790b4be74c43553eb0807eb2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910914"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808728"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Microsoft 威脅防護中的事件概觀
 
 適用於：****
 - Microsoft 威脅防護
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 基本上，每個事件代表一個警示。 當在您的網路上發現惡意事件或活動時，系統會產生警示。 個別的警示可提供個別事件或實體發生事件的寶貴線索。 不過，攻擊通常會利用各種攻擊媒介來造成侵害。 將各個線索拼湊在一起可能是一項艱鉅而耗時的工作。 
 

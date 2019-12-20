@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f7c7ab393a956aa894a0ca8704ea0e99a82addc9
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: HT
+ms.openlocfilehash: 6aca41e46af8ba94f87e7ee91059c3d11a4fbe9e
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910888"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808628"
 ---
 # <a name="devicetvmsoftwareinventoryvulnerabilities"></a>DeviceTvmSoftwareInventoryVulnerabilities
 
 **適用範圍：**
 - Microsoft 威脅防護
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 進階搜捕結構描述中的 `DeviceTvmSoftwareInventoryVulnerabilities` 表格包含裝置上軟體庫存的 [威脅與弱點管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)，以及這些軟體產品中的任何已知弱點。 本表格也包含作業系統資訊、CVE 識別碼和弱點嚴重性的資訊。 使用這個參照來建立從表格取回之資訊的查詢。
 
@@ -35,8 +35,8 @@ ms.locfileid: "39910888"
 
 | 欄名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
-| `MachineId` | 字串 | 服務中電腦的唯一識別碼 |
-| `ComputerName` | 字串 | 電腦的完整網域名稱 (FQDN) |
+| `DeviceId` | 字串 | 服務中電腦的唯一識別碼 |
+| `DeviceName` | 字串 | 電腦的完整網域名稱 (FQDN) |
 | `OSPlatform` | 字串 | 電腦上執行的作業系統平台。 這表示特定作業系統，包括相同家族內的變化，例如 Windows 10 和 Windows 7。 |
 | `OSVersion` | 字串 | 電腦上執行的作業系統版本。 |
 | `OSArchitecture` | 字串 | 電腦上執行的作業系統架構。 |

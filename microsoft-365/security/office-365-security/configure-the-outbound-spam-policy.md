@@ -14,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 如果您使用該服務來傳送輸出電子郵件，便會一律啟用輸出垃圾郵件篩選功能，從而保護使用該服務的組織及其預期的收件者。
-ms.openlocfilehash: 06c74b578d7c18ad2f193bcbd4a8f9cdb6794416
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 43939022dc365f5b28418d96ae1217e159312da1
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970869"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808438"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>設定輸出垃圾郵件原則
 
@@ -39,7 +39,7 @@ ms.locfileid: "39970869"
 
 您必須已獲指派權限，才能執行此程序或這些程序。 若要查看您需要的權限，請參閱 [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主題中的＜反垃圾郵件＞項目。
 
-下列程序也可以透過遠端 PowerShell 執行。 使用[Get-hostedoutboundspamfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy) cmdlet 來檢閱您的設定，以及[Set-hostedoutboundspamfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy)編輯您的輸出垃圾郵件原則設定。 若要了解如何使用 Windows PowerShell 來連接至 Exchange Online Protection，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。 若要了解如何使用 Windows PowerShell 連線到 Exchange Online，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+下列程序也可以透過遠端 PowerShell 執行。 使用[Get-hostedoutboundspamfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy) cmdlet 來檢閱您的設定，以及[Set-hostedoutboundspamfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy)編輯您的輸出垃圾郵件原則設定。 若要了解如何使用 Windows PowerShell 來連接至 Exchange Online Protection，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell) (部分機器翻譯)。 若要了解如何使用 Windows PowerShell 連線到 Exchange Online，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
 ## <a name="use-the-security-and-compliance-center-scc-to-edit-the-default-outbound-spam-policy"></a>若要編輯預設輸出垃圾郵件原則使用安全性與合規性中心 (SCC)
 
@@ -61,11 +61,11 @@ ms.locfileid: "39970869"
 
    網域的系統管理員 (使用此設定指定) 會收到通知，告知已封鎖該使用者的輸出郵件。  若要查看此通知的外觀，請參閱[當封鎖寄件者時傳送輸出垃圾郵件的範例通知](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)。
 
-   [附註] ！系統也警示指出使用者已受到限制。  若要了解關於警示以及如何復原使用者的詳細資訊，請參閱[移除之後傳送的垃圾郵件的限制使用者入口網站中的使用者](removing-user-from-restricted-users-portal-after-spam.md)。
+   > [附註] ！系統也警示指出使用者已受到限制。  若要了解關於警示以及如何復原使用者的詳細資訊，請參閱[移除之後傳送的垃圾郵件的限制使用者入口網站中的使用者](removing-user-from-restricted-users-portal-after-spam.md)。
 
 4. 展開 [**收件者限制**] 區段中指定的使用者可以傳送至每小時每日的最大數目以及內部和外部收件者的收件者數目上限。
 
-    [附註] ！對於任何輸入數目上限為 10000。  如需詳細資訊，請參閱[接收及傳送限制內 Exchange online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
+    > [附註] ！對於任何輸入數目上限為 10000。  如需詳細資訊，請參閱[接收及傳送限制內 Exchange online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 7. 指定當使用者超過指定的限制時要採取的**動作**。  可行動作如下所示：
     * **禁止使用者傳送郵件到下一天為止**。  一旦已經超過任何傳送限制 （內部、 外部或每日） 將會產生警示的系統管理員和使用者將無法傳送任何進一步的電子郵件，直到下的一天，根據 UTC 時間。 沒有管理員可覆寫此區塊方法。

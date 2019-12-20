@@ -15,23 +15,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 03cd648a178d63b2b964e0136c105068f4d1c6ca
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: HT
+ms.openlocfilehash: 23942b1d39bacfab470d41fca1ea630ad7b80ea3
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910929"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808698"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>使用 Microsoft 威脅防護中的進階搜捕功能主動尋找威脅
 
 **適用於：**
 - Microsoft 威脅防護
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 進階搜捕是一種查詢式威脅搜捕工具，可讓您探索最多 30 天的原始資料。 您可以主動檢查您網路中的事件，以找出相關的指標和實體。 可靈活存取資料有助於不受限制地同時搜捕已知和潛在的威脅。
 
-在 Microsoft 365 安全性中心，進階搜捕支援的查詢會尋找來自 Microsoft Defender ATP 的資料，涵蓋來自上線裝置的資料，以及 Office 365 ATP，提供來自電子郵件的資料。 若要使用進階搜捕，請[開啟 Microsoft 威脅防護](mtp-enable.md)。
+在 Microsoft 365 資訊安全中心，進階的狩獵支援從這兩個 Microsoft Defender ATP，涵蓋上架的裝置和 Office 365 ATP 中的資料、 提供電子郵件中的資料，查看資料的查詢。 若要使用進階搜捕，請[開啟 Microsoft 威脅防護](mtp-enable.md)。
 
 ## <a name="get-started-with-advanced-hunting"></a>開始使用進階搜捕
 

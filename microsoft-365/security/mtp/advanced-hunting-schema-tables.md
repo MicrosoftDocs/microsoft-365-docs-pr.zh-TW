@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1803445dfd9b46fce23b0dcc9585ea543f1b0347
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: HT
+ms.openlocfilehash: 631b328168003668ed06e37d76177c327794ed18
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910896"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808658"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解進階搜捕結構描述
 
 **適用於：**
 - Microsoft 威脅防護
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 [進階搜捕](advanced-hunting-overview.md)結構描述是由多個提供事件資訊或與電腦或實體相關資訊的表格所組成。 若要有效組建跨越多個表格的查詢，您需要了解進階搜捕結構描述中的表格和欄。
 
@@ -37,15 +37,15 @@ ms.locfileid: "39910896"
 
 | 表格名稱 | 描述 |
 |------------|-------------|
-| **[MachineInfo](advanced-hunting-machineinfo-table.md)** | 電腦資訊，包括作業系統資訊 |
-| **[MachineNetworkInfo](advanced-hunting-machinenetworkinfo-table.md)** | 電腦的網路摘要資訊，包括介面卡、IP 和 MAC 位址，以及已連結的網路和網域 |
-| **[ProcessCreationEvents](advanced-hunting-processcreationevents-table.md)** | 程序建立與相關事件 |
-| **[NetworkCommunicationEvents](advanced-hunting-networkcommunicationevents-table.md)** | 網路連結與相關事件 |
-| **[FileCreationEvents](advanced-hunting-filecreationevents-table.md)** | 檔案建立、修改及其他檔案系統事件 |
-| **[RegistryEvents](advanced-hunting-registryevents-table.md)** | 登錄項目的建立及修改 |
-| **[LogonEvents](advanced-hunting-logonevents-table.md)** | 登入和其他驗證事件 |
-| **[ImageLoadEvents](advanced-hunting-imageloadevents-table.md)** | DLL 載入事件 |
-| **[MiscEvents](advanced-hunting-miscevents-table.md)** | 多種事件種類，包括由安全性控制項觸發的事件，例如 Windows Defender 防毒軟體和惡意探索保護 |
+| **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | 電腦資訊，包括作業系統資訊 |
+| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | 電腦的網路摘要資訊，包括介面卡、IP 和 MAC 位址，以及已連結的網路和網域 |
+| **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | 程序建立與相關事件 |
+| **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | 網路連結與相關事件 |
+| **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | 檔案建立、修改及其他檔案系統事件 |
+| **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | 登錄項目的建立及修改 |
+| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | 登入和其他驗證事件 |
+| **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL 載入事件 |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | 多種事件種類，包括由安全性控制項觸發的事件，例如 Windows Defender 防毒軟體和惡意探索保護 |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Office 365 電子郵件事件，包括電子郵件傳送和封鎖事件 |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | 有關已附加到 Office 365 電子郵件的檔案相關資訊 |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Office 365 電子郵件上 URL 的相關資訊 |

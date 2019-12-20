@@ -186,7 +186,7 @@
           href: contoso-team-for-top-secret-project.md
         - name: 適用於高度管制資料的 SharePoint 網站
           href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: Microsoft 365 企業版部署內容的變更
+    - name: 變更 Microsoft 365 企業版部署內容
       href: microsoft-365-deploment-guide-changes.md
 - name: 桌面部署中心
   href: desktop-deployment-center-home.md
@@ -221,7 +221,7 @@
   href: ../compliance/index.yml
 - name: Microsoft 365 安全性
   href: ../security/index.yml
-- name: 企業業務連續性管理 (EBCM) 與雲端服務
+- name: 企業商務營運持續力管理 (EBCM) 與雲端服務
   href: ebcm-understanding-ebcm-with-cloud-services.md
   items:
     - name: 客戶與雲端合作夥伴的 EBCM 責任

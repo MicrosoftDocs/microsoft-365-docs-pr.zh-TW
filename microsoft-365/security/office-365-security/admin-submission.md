@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中，O365 提交，Office 365 垃圾郵件問題，O365 誤判系統提交提交 office 365 中的釣魚程式、 送出掃描、 可疑的電子郵件，Office 365 中的電子郵件、 掃描郵件、 有 Microsoft 掃描的釣魚程式]，讓 Microsoft 的垃圾郵件掃描巨集、 送出電子郵件、 送出電子郵件、 可疑的電子郵件、 壞動作項目郵件、 可疑、 不受信任的郵件
+title: 在 Office 365 中，O365 提交，Office 365 垃圾郵件問題，O365 誤判系統提交提交 office 365 中的釣魚程式、 送出掃描、 可疑的電子郵件，Office 365 中的電子郵件、 掃描郵件、 有 Microsoft 掃描的釣魚程式]，讓 Microsoft 的垃圾郵件掃描巨集、 送出電子郵件、 送出電子郵件，可疑的電子郵件、 壞動作項目郵件、 可疑、 不受信任的郵件，報告釣魚程式的電子郵件給 Microsoft、 回報給 Microsoft 的釣魚程式電子郵件、 報告給 Microsoft，報告給 Microsoft，以電子郵件給 Microsoft，報表惡意程式碼的詐騙電子郵件的惡意電子郵件垃圾郵件收件匣 office 365 中的電子郵件、 電子郵件 office 365 中的病毒
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何送出可疑的電子郵件，可能的網路釣魚郵件、 垃圾郵件，以及其他可能有害的郵件、 Url 和檔案從您的 Office 365 租用戶給 Microsoft 進行掃描。
-ms.openlocfilehash: 3d53c8270e84cd6f6298b9b39cc7e37262aed7b0
-ms.sourcegitcommit: 9c9044885eb9754ce69f2f08afdcc13c782ce2f9
+ms.openlocfilehash: 54cb42f8c02f2f41ad583d640a090509817911ee
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39915214"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808548"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>如何送出可疑的垃圾郵件、 釣魚程式、 Url 和 microsoft Office 365 掃描的檔案
 
@@ -66,6 +66,6 @@ ms.locfileid: "39915214"
   
 [防範 Office 365 中的威脅](protect-against-threats.md)
   
-[檢視 Office 365 進階威脅防護報告](view-reports-for-atp.md)
+[檢視 Office 365 進階威脅防護的報告](view-reports-for-atp.md)
   
 

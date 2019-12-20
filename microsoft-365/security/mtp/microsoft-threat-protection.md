@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 01a81d5f4ac68d72095f86de93b727c60d28393f
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: a47ffecbf0ef1ac7dcfeef9d8cbe4e104de9ca2d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910211"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808578"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft 威脅防護
 
-**適用於：**
+適用於：****
 - Microsoft 威脅防護
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Microsoft 威脅防護是整合的預先和文章外洩企業國防版套件的原生整合跨端點、 身分識別、 電子郵件和應用程式，以偵測、 防止、 調查及自動回應縝密的攻擊。  
 
@@ -74,6 +74,6 @@ Microsoft 威脅防護跨產品功能包括：
 
 
 ## <a name="get-started"></a>開始使用
-與 Microsoft 365 E5 或對等的授權的客戶可以使用 Microsoft Threat Protection。 若要開始，請啟用[security.microsoft.com](https://security.microsoft.com)在 Microsoft 365 安全性中心中的服務。 如需詳細資訊，請閱讀：
+擁有 Microsoft 365 E5 或同等授權的客戶可以使用 Microsoft 威脅防護。 若要開始，請啟用[security.microsoft.com](https://security.microsoft.com)在 Microsoft 365 安全性中心中的服務。 如需詳細資訊，請閱讀：
 - [授權需求](prerequisites.md#licensing-requirements)
 - [開啟 Microsoft 威脅防護](mtp-enable.md)

@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9f6a4aa68826133bee0437116b2fbf3fde4e7e00
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: HT
+ms.openlocfilehash: 9368185fff037b8c3c2f5b70a178f2485fda3736
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910920"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808718"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
 **適用範圍：**
 - Microsoft 威脅防護
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 [進階搜捕](advanced-hunting-overview.md)結構描述中的 `EmailAttachmentInfo` 表格包含有關 Office 365 ATP 所處理的電子郵件附件資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
@@ -35,7 +35,7 @@ ms.locfileid: "39910920"
 
 | 欄名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
-| `EventTime` | datetime | 事件記錄的日期和時間。 |
+| `Timestamp` | datetime | 事件記錄的日期和時間。 |
 | `AttachmentId` | 字串 | 唯一電子郵件附件識別碼 |
 | `NetworkMessageId` | 字串 | Office 365 產生的電子郵件唯一識別碼 |
 | `SenderFromAddress` | 字串 | 電子郵件用戶端上的電子郵件收件者看得到 [寄件者] 標題中的寄件者電子郵件地址 |

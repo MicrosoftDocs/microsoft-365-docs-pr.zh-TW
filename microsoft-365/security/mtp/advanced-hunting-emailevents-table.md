@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1f2deef2c9ffc26f604194ff2d27d5f094471021
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: HT
+ms.openlocfilehash: 3495414148edb5e3b6691e4545e0cf6587af7b4d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910937"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808708"
 ---
 # <a name="emailevents"></a>EmailEvents
 
 **適用範圍：**
 - Microsoft 威脅防護
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 [進階搜捕](advanced-hunting-overview.md)結構描述中的 `EmailEvents` 表格包含有關在 Office 365 ATP 處理電子郵件的事件相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
@@ -35,7 +35,7 @@ ms.locfileid: "39910937"
 
 | 欄名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
-| `EventTime` | datetime | 事件記錄的日期和時間。 |
+| `Timestamp` | datetime | 事件記錄的日期和時間。 |
 | `EmailId` | 字串 | 唯一電子郵件和收件者識別碼 |
 | `NetworkMessageId` | 字串 | Office 365 產生的電子郵的唯一識別碼 |
 | `InternetMessageId` | 字串 | 透過傳送電子郵件系統所設定之電子郵件的公開識別碼 |

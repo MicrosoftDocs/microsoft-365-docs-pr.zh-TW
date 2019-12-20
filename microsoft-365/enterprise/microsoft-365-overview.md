@@ -10,15 +10,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: Microsoft 365 企業版提供元件、 計劃及部署路徑的簡介。
-ms.openlocfilehash: 67d7417af01b7c64094aa46350326f32e0f18534
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+description: 提供 Microsoft 365 企業版元件、 計劃及部署路徑的簡介。
+ms.openlocfilehash: 16efb061bbb8be4ff8cb5a93186d342fc55ca849
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831954"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801458"
 ---
-# <a name="microsoft-365-enterprise-overview"></a>Microsoft 365 企業版概觀
+# <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企業版概觀
 
 Microsoft 365 企業版是完整的智慧型解決方案，讓所有人發揮創意並安全地合作。 
 
@@ -46,12 +46,12 @@ Microsoft 365 企業版所組成：
 | F1 | 與第一線透過特殊用途的工具和資源，以允許他們盡善盡美連線。 |
 |||
 
-如果您有 Microsoft 365 企業版 E3，您也可以取得這些[供應項目](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)：
+如果您有 Microsoft 365 E3，您也可以取得這些[供應項目](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)：
 
 - 身分識別 & 威脅防護
 - 資訊保護 & 合規性
 
-這些供應項目包含隨附於 Microsoft 365 企業版 E5 的其他功能。
+這些供應項目包含隨附於 Microsoft 365 E5 的其他功能。
 
 如需詳細資訊，請參閱[每個計劃的功能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
 
@@ -59,24 +59,24 @@ Microsoft 365 企業版所組成：
 
 [Microsoft 365 企業版海報](media/m365-poster/Microsoft365Enterprise.pdf)是中央位置，讓您檢視：
 
-- Microsoft 365 企業版及應用程式和服務如何對應至其值要點的優點
+- 之優點的 Microsoft 365 企業版和應用程式和服務如何對應至其值要點
 - Microsoft 365 企業版方案，而且其中包含哪些元件 
 - 現代化工作場所，可讓 Microsoft 365 企業版的主要元件
 - [Microsoft 365 生產力文件庫](https://www.microsoft.com/microsoft-365/success/)及一些常見的組織部門的代表性案例
-- 重點在於說明 Microsoft 365 企業版[部署指南](deploy-microsoft-365-enterprise.md)採用藍圖
+- Microsoft 365 企業版[部署指南](deploy-microsoft-365-enterprise.md)的重點在於說明採用藍圖
 
 [![Microsoft 365 企業版海報的影像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
 
 若要下載此海報的副本，請按一下[這裡](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf)。
 
 
-## <a name="transition-your-entire-organization"></a>轉換您的整個組織
+## <a name="transition-your-entire-organization"></a>轉換整個組織
 
-若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請下載[轉換海報](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
+若要取得較佳的圖片的如何將整個組織移至產品和服務在 Microsoft 365 企業版，請下載[轉換海報](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
 
 [![轉換至 Microsoft 365 海報的影像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-這份雙頁海報可讓您快速清查您現有的基礎結構，並取得移至 Microsoft 365 企業版中對應產品或服務的指導方針。 包含 Windows 和 Office 產品和其他基礎結構與安全性元素，例如裝置管理、身分識別以及資訊和威脅防護。
+這兩個頁面海報是清查您現有的基礎結構，以取得將移至對應的產品或服務在 Microsoft 365 企業版的指引的快速方法。 包含 Windows 和 Office 產品和其他基礎結構與安全性元素，例如裝置管理、身分識別以及資訊和威脅防護。
 
 您也可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
@@ -96,13 +96,13 @@ Microsoft 365 企業版所組成：
 
 [![Office 2010 用戶端與伺服器和 Windows 7 終止支援海報的影像](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
-這一頁海報是支援的了解若要防止 Windows 7 和 Office 2010 用戶端和伺服器產品達到結尾的慣用的路徑與中反白顯示的 Microsoft 365 企業版支援，可採取的各種路徑的快速方法。
+這一頁海報是支援的了解若要防止 Windows 7 和 Office 2010 用戶端和伺服器產品達到結尾的慣用的路徑與反白顯示的企業版 Microsoft 365 中支援，可採取的各種路徑的快速方法。
 
 您也可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
 ## <a name="deploy"></a>部署
 
-有三種方式可以部署產品、 功能和 Microsoft 365 企業版的元件：
+有三種方式可以部署產品、 功能及的 Microsoft 365 企業版的元件：
 
 1. 與 FastTrack
   
@@ -110,7 +110,7 @@ Microsoft 365 企業版所組成：
   
 2. Microsoft 諮詢服務或[Microsoft 合作夥伴](https://partner.microsoft.com/)的協助。
 
-   顧問可以分析您目前的基礎結構並協助您開發以納入所有軟體與服務的 Microsoft 365 企業版計劃。
+   顧問可以分析您目前的基礎結構，並協助您開發以納入所有軟體與服務的 Microsoft 365 企業版計劃。
 
 3. 自行執行此工作
 
@@ -118,8 +118,8 @@ Microsoft 365 企業版所組成：
 
 如需部署資訊，請參閱如何：
 
-- [客戶](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-enterprise)使用 Microsoft 365 企業版。
-- [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-enterprise)會使用 Microsoft 365 企業版。
+- [客戶](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-for-enterprise)使用 Microsoft 365 企業版。
+- [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-for-enterprise)會採用 Microsoft 365 企業版。
 - [Contoso Corporation](contoso-overview.md)，虛構但有代表性的跨國企業，已部署 Microsoft 365 企業版。
 
 ## <a name="additional-microsoft-365-solutions"></a>其他 Microsoft 365 解決方案
@@ -150,4 +150,4 @@ Microsoft 365 企業版所組成：
 
 ## <a name="see-also"></a>另請參閱
 
-[Microsoft 365 Enterprise 產品頁面](https://www.microsoft.com/microsoft-365/enterprise)
+[Microsoft 365 企業版產品頁面](https://www.microsoft.com/microsoft-365/enterprise)

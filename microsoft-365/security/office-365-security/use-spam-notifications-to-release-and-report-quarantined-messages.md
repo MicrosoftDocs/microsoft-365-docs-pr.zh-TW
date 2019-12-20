@@ -16,12 +16,12 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: 如果您的系統管理員可讓使用者的通知，您會收到通知訊息，其中列出傳送至您的信箱已識別為垃圾郵件、 大量或網路釣魚郵件提交之郵件。 您可以釋出或回報郵件之後收到通知。
-ms.openlocfilehash: 4cf592f0aec948c3c8f6383cf288fb32ac644cd6
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: c8253ba7002ac88932cbef07508215a3d9a65f75
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971361"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806706"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>利用 Office 365 中的使用者垃圾郵件通知來釋放並回報被隔離的郵件
 
@@ -41,6 +41,8 @@ ms.locfileid: "39971361"
 以下是您可以對隔離的郵件採取的動作：
 
 - **封鎖寄件者**如果您希望 Office 365 將寄件者新增至封鎖的寄件者清單。
+
+- **版本**如果郵件不是垃圾郵件，而且您希望 Office 365 將郵件傳送至您的信箱。
 
 - 如果您想要採取其他動作，例如預覽或版本，瀏覽至隔離區入口網站的安全性與合規性中心內的**檢閱**。
 

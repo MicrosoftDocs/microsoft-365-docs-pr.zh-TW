@@ -1,16 +1,16 @@
 ---
 title: Microsoft 受管理的電腦裝置
 description: 本主題列出在 Microsoft 受管理電腦中使用的裝置規格。
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: f8d5b9321d8aad77ae25dcc7563a9e0db7dfc754
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+ms.openlocfilehash: 350b1afb4734902435ccdca1e9abee26901e446f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859323"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801298"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的電腦裝置 
 
@@ -47,6 +47,8 @@ Microsoft 受管理電腦定期評估要包含在服務中的裝置。 本主題
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU 與 5VS04AV | 2020 年 7 月 18 日 | 2023 年 7 月 18 日 |
 | [HP EliteOne 800 G4 23.8 中 AIO](https://store.hp.com/us/en/mdp/desktops/eliteone-800-all-in-one-349552--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU 與 5VS04AV | 2020 年 7 月 18 日 | 2023 年 7 月 18 日 |
 | [HP ProBook x360 440 版 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU 與 5VS04AV，所需的紅外線網路攝影機或指紋讀者 | 2020 年 6， | 2023 6 月 6日， |
+| **\*[HP Z2 迷你 G4 工作站](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1)** | 256 GB / Intel i5 中 / 8 GB RAM | SKU 與 8QR48AV| 2021 年 1 月 31 日 | 2024 1 月 31日， |
+|**\*[HP ZBook 14u/15u G6 行動工作站](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation)** | 256 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS02AV，所需的紅外線相機 | 2020 年 11 月 30 日 | 2023 11 月 30日， |
 | [呈現移至](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel 4415Y / 8 GB RAM | 無 | 2020 年 8 月 2 日 | 2023 年 8 月 2 日 |
 | [Surface Laptop 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB / Intel i5 中 / 8 GB RAM | 無 | 2020 年 10 月 16 日 | 2023 Oct 16， |
 | **\*[Surface Laptop 3](https://www.microsoft.com/en-us/surface/business/surface-laptop-3)** | 128 GB / Intel i5 中 / 8 GB RAM | 無 | 2021 年 10 月 22 日 | 2024 Oct 22， |

@@ -1,6 +1,6 @@
 ---
 title: 原則與防護組合的方式時郵件紅色標幟
-description: 原則的套用，和電子郵件由 EOP，及/或 ATP 標記惡意程式碼、 垃圾郵件、 高信賴度垃圾郵件、 網路釣魚及大量時採取的動作。
+description: 說明什麼原則和保護時，會套用電子郵件所偵測到多個保護，並掃描由多個表單的偵測。 原則的套用，和電子郵件由 EOP，及/或 ATP 標記惡意程式碼、 垃圾郵件、 高信賴度垃圾郵件、 網路釣魚及大量時採取的動作。
 keywords: 安全性、 惡意程式碼、 Microsoft 365、 M365、 安全中心，ATP、 Microsoft Defender ATP、 Office 365 ATP、 Azure ATP
 ms.author: tracyp
 author: MSFTTracyp
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 1f1885730d1063a0c36d172f1f9d0e4ac4fb59c7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4ca5333f4b07878f8c7d206b78cf884f4e4eec82
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076840"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807984"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>哪些原則適用於何時多個保護方法與在您的電子郵件上執行的偵測掃描
 
@@ -34,13 +34,13 @@ ms.locfileid: "37076840"
 |3     | 高信賴度的垃圾郵件      | HSPM        | 設定您的垃圾郵件篩選原則        |
 |4     | 詐騙        | SPOOF        | 反網路釣魚原則，詐騙智慧        |
 |5     | 垃圾郵件         | SPM         | 設定您的垃圾郵件篩選原則         |
-|6     | 大量         | BULK        | 設定您的垃圾郵件篩選原則         |
+|6      | 大量         | BULK        | 設定您的垃圾郵件篩選原則         |
 
 此外，這些原則套用至_組織的 ATP_。
 
 |優先順序 |原則  |類別  |受管理的位置 |
 |---------|---------|---------|---------|
-|7     | 網域冒充         | DIMP         | 設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則        |
+|7      | 網域冒充         | DIMP         | 設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則        |
 |8      | 使用者冒充        | UIMP         | 設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則         |
 
 例如，如果您有兩個原則有其各自的優先順序：

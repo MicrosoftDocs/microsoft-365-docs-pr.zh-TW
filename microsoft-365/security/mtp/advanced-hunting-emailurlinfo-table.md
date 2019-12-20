@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 10cf82667fd97eebe66c376e0539db000f20b1c2
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: HT
+ms.openlocfilehash: da9712d1f3465c28d2ba880997a52434723a297d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910935"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808668"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
 **適用於：**
 - Microsoft 威脅防護
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 [進階搜捕](advanced-hunting-overview.md)結構描述中的 `EmailUrlInfo` 表格包含有關 Office 365 ATP 所處理的電子郵件和附件 URL 資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
@@ -35,7 +35,7 @@ ms.locfileid: "39910935"
 
 | 欄名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
-| `EventTime` | datetime | 事件記錄的日期和時間 |
+| `Timestamp` | datetime | 事件記錄的日期和時間 |
 | `UrlId` | string | 電子郵件主旨、內文或附件中 URL 的唯一識別碼 |
 | `NetworkMessageId` | string | Office 365 產生的電子郵件唯一識別碼 |
 | `Url` | string | 電子郵件主旨、內文或附件中的完整 URL |
