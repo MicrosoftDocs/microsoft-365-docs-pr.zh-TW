@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 如果使用者持續從 Office 365 傳送被歸類為垃圾郵件的電子郵件，使用者將遭到限制而無法再傳送任何郵件。
-ms.openlocfilehash: 7d900e154e60b49b3fcfe63552b6ad3288adfc82
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 93cc7fb4af878457f7b9570a90d6950e7488d0ac
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871739"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808028"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者
 
@@ -33,19 +33,19 @@ ms.locfileid: "39871739"
 <a name="sectionSection0"> </a>
 
 預估完成時間：5 分鐘
-  
+
 您必須已獲指派權限，才能執行此程序或這些程序。 若要查看您需要的權限，請參閱 [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主題中的＜反垃圾郵件＞項目。
 
-下列程序也可以透過遠端 PowerShell 執行。 使用 Get-BlockedSenderAddress Cmdlet 來取得受限制使用者的清單，以及使用 Remove-BlockedSenderAddress 來移除限制。 若要了解如何使用 Windows PowerShell 連線到 Exchange Online，請參閱[連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+下列程序也可以透過遠端 PowerShell 執行。 使用 Get-BlockedSenderAddress Cmdlet 來取得受限制使用者的清單，以及使用 Remove-BlockedSenderAddress 來移除限制。 若要了解如何使用 Windows PowerShell 連線到 Exchange Online，請參閱[連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
 ## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>移除封鎖的 Office 365 電子郵件帳戶的限制
 
 您可以在安全性與合規性中心 (SCC) 完成此工作。 如需 SCC 的詳細資訊，請[移至安全性與合規性中心](../../compliance/go-to-the-securitycompliance-center.md)。 您必須在**組織管理**或**安全性系統管理員**角色群組，才能執行這些功能。 如需 SCC 角色群組的詳細資訊，請[移至安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)。
 
 1. 使用具備 Office 365 全域系統管理員權限的公司或學校帳戶登入 Office 365 安全性與合規性中心，並在左側清單中，展開 [威脅管理]****，選擇 [檢閱]****，然後選擇 [限制的使用者]****。
-    
+
     > [!TIP]
-    > 若要直接前往安全性與合規性中心中的 [限制的使用者]**** 頁面 (先前稱為重要訊息中心)，請使用此 URL：> [https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+    > 若要直接前往安全性 &amp; 合規性中心中的 [限制的使用者]**** 頁面 (先前稱為重要訊息中心)，請使用此 URL：[https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
 
 2. 此頁面會包含已遭封鎖而無法傳送電子郵件的使用者清單。  尋找您想要移除限制的使用者，並選取 [解除封鎖]****。
 
@@ -56,7 +56,7 @@ ms.locfileid: "39871739"
 5. 按一下 [是]**** 以確認變更。
 
     > [!NOTE]
-    > 可能需要 30 分鐘以上的時間，才能移除限制。 
+    > 可能需要 30 分鐘以上的時間，才能移除限制。
 
 ## <a name="making-sure-admins-are-alerted-when-this-happens"></a>確認發生此情況時系統管理員會收到警示
 

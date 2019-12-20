@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 您的全域系統管理員帳戶需要特別處理，以確保認證免受洩漏的危險。
-ms.openlocfilehash: 257caf197df74d32b438a17158598237cf4c58b5
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 1a0274967798e6c2ba6048e5a2cfd70e73cb0671
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627079"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801828"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>步驟 1：建立和保護您的全域系統管理員帳戶
 
@@ -72,7 +72,7 @@ ms.locfileid: "38627079"
 
 系統管理員帳戶不是永久系統管理員，而只是符合資格的系統管理員。 系統管理員角色直到有人需要時才會啟用。 到時您將完成啟用程式，將系統管理員角色在特定時間內新增至系統管理員帳戶。 時間到期時，PIM 會從系統管理員帳戶中移除系統管理員角色。
 
-PIM 可與 Azure Active Directory Premium P2 搭配使用，隨附於 Microsoft 365 企業版 E5。 或者，您也可以為您的系統管理員帳戶購買個別 Azure Active Directory Premium P2 授權。
+PIM 可與 Azure Active Directory Premium P2 搭配使用，隨附於 Microsoft 365 E5。 或者，您也可以為您的系統管理員帳戶購買個別 Azure Active Directory Premium P2 授權。
 
 若要為 Azure AD 租用戶和系統管理員帳戶啟用 Azure PIM，請參閱[設定 PIM 步驟](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)。
 

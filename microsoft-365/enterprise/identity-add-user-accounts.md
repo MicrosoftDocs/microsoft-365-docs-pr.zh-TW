@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 直接在雲端中，或透過與內部部署目錄同步處理來新增使用者帳戶和群組。
-ms.openlocfilehash: 559ea58a5fcee5860a797893230b587adc33a17d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 04564d86031642276e964f3a70fa2729f6b16c00
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370220"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801838"
 ---
 # <a name="step-4-add-your-user-accounts"></a>步驟 4：新增使用者帳戶
 
@@ -82,7 +82,7 @@ Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configur
 <a name="identity-sync-health"></a>
 ## <a name="monitor-synchronization-health"></a>監控同步處理健康情況
 
-*此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
+*此為選用步驟，且同時適用於 Microsoft 365 E3 和 E5 版本*
 
 在這一節中，您會在每個內部部署 AD DS 網域控制站上安裝 Azure AD Connect Health 代理程式，以監控您的身分識別基礎結構，以及由 Azure AD Connect 提供的同步處理服務。 監控資訊會在 Azure AD Connect Health 入口網站提供，您可以在其中檢視警訊、效能監控、使用量分析及其他資訊。
 

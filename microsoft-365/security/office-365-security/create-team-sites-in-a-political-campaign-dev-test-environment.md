@@ -16,12 +16,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治活動開發/測試環境中，建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。
-ms.openlocfilehash: bade24bbe0ebcf56007a7b5650ee5a55fc3697b6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: db248081460c30dbc1fb10b7e0ea2d55dbb8d3ab
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077938"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808588"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治活動開發/測試環境中建立小組網站
 
@@ -37,7 +37,7 @@ ms.locfileid: "37077938"
 
 在這個階段中，您會為 SharePoint Online 小組網站的文件資料夾，建立不同安全性層級的標籤。
   
-1. 如果需要，請使用試用訂閱的全域管理員帳戶認證登入系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如果需要，請使用試用訂閱的全域管理員帳戶認證登入系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 從 [Microsoft Office 的首頁]**** 索引標籤中，按一下 [管理]**** 磚。
     
@@ -367,13 +367,11 @@ ms.locfileid: "37077938"
   
 接著，遵循下列步驟，為 Azure 資訊保護設定新的限域原則與子標籤，以提供保護及權限：
   
-1. 使用具有安全性系統管理員或公司系統管理員角色的帳戶登入系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用具有安全性系統管理員或公司系統管理員角色的帳戶登入系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 在您瀏覽器的個別索引標籤中，移至 Azure 入口網站 ([https://portal.azure.com](https://portal.azure.com))。
     
-3. 如果這是您第一次設定 Azure 資訊保護，請參閱這些[指示](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time)。
-    
-4. 在清單窗格中，按一下 [所有服務]****，輸入**資訊**，然後按一下 [Azure 資訊保護]****。
+4. 在搜尋窗格中，輸入 **[資訊]**，然後按一下 **Azure 資訊保護**。
 
 5. 按一下 [標籤]****。
     

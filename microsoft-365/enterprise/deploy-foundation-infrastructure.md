@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 企業版底層基礎結構
+title: 企業用 Microsoft 365 底層基礎結構
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -12,19 +12,19 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解貴組織中部署 Microsoft 365 企業版底層基礎結構的主要階段，也稱為核心部署。
-ms.openlocfilehash: c18e4d770aec63da091ad38fc341a87f9d71e9be
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+description: 了解貴組織中部署企業用 Microsoft 365 底層基礎結構的主要階段，也稱為核心部署。
+ms.openlocfilehash: 78bfaf64fc247a88b30df4f2cf2a7f8b962dfdb6
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370350"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801958"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 企業版底層基礎結構
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>企業用 Microsoft 365 底層基礎結構
 
-如果您要自行進行 Microsoft 365 企業版的端對端部署，請先建置穩固的基礎，以便應用程式與服務能夠在安全的環境中發揮創意和實現團隊合作能力。 此基礎有時也稱為*核心部署*。
+如果您要自行進行企業用 Microsoft 365 的端對端部署，請先建置穩固的基礎，以便應用程式與服務能夠在安全的環境中發揮創意和實現團隊合作能力。 此基礎有時也稱為*核心部署*。
 
-如需明確的端對端部署路徑，您可以使用下列階段來規劃和部署 Microsoft 365 企業版的底層基礎結構：
+如需明確的端對端部署路徑，您可以使用下列階段來規劃和部署企業用 Microsoft 365 的底層基礎結構：
 
 | | 階段 | 結果 |
 |:-------|:-----|:-----|
@@ -48,19 +48,19 @@ ms.locfileid: "37370350"
 
 -  **如果您是企業組織**，請將這些階段視為 IT 基礎結構層級而非明確的路徑，並判斷最終要如何做才能符合組織內每一層級的需求。
 
-在每個階段的結尾，您都應該檢查其允出準則** (內含必須符合的必要條件以及要考慮的選擇性條件)。 每個階段的允出準則可確保您的內部部署和雲端基礎結構與產生的端對端設定符合 Microsoft 365 企業版部署需求。
+在每個階段的結尾，您都應該檢查其允出準則** (內含必須符合的必要條件以及要考慮的選擇性條件)。 每個階段的允出準則可確保您的內部部署和雲端基礎結構與產生的端對端設定符合企業用 Microsoft 365 部署需求。
 
 若要了解內容的建構方式，請觀看這段短片。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE23VRG]
 
-以下是整個 Microsoft 365 企業版部署指南中的底層基礎結構：
+以下是整個企業用 Microsoft 365 部署指南中的底層基礎結構：
 
-![整個 Microsoft 365 企業版部署指南中的底層基礎結構](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
+![整個企業用 Microsoft 365 部署指南中的底層基礎結構](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
 ## <a name="at-a-glance"></a>概覽
 
-[Microsoft 365 企業版底層基礎結構海報](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)是可讓您檢視每個階段的中心位置：
+[企業用 Microsoft 365 底層基礎結構海報](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)是可讓您檢視每個階段的中央位置：
 
 - 系統管理員和使用者的階段整體目標
 - 服務、功能及工具
@@ -69,16 +69,16 @@ ms.locfileid: "37370350"
 - 新使用者的上線程序
 - 如何監控及更新
 
-[![Microsoft 365 企業版底層基礎結構海報的影像](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
+[![企業用 Microsoft 365 底層基礎結構海報的影像](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
 若要下載此海報的副本，請按一下[這裡](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)。
 
 
 ## <a name="infrastructure-configuration-vs-user-rollout"></a>基礎結構設定與使用者推出
 
-底層基礎結構是一組設定好的軟體和服務，結合在一起時可讓使用者利用 Microsoft 365 企業版所提供的完整功能和保護機制。 端對端部署旅程的終點是要讓這個基礎結構套用至所有使用者和其持有的 Windows 架構裝置。 
+底層基礎結構是一組設定好的軟體和服務，結合在一起時可讓使用者利用企業用 Microsoft 365 所提供的完整功能和保護機制。 端對端部署旅程的終點是要讓這個基礎結構套用至所有使用者和其持有的 Windows 架構裝置。 
 
-不過請務必注意，對使用者推出軟體與服務的行為與 Microsoft 365 企業版底層基礎結構無關。 ***您可以設定底層基礎結構的層級，而不需要對所有使用者推出這些層級。***
+不過請務必注意，對使用者推出軟體與服務的行為與企業用 Microsoft 365 底層基礎結構無關。 ***您可以設定底層基礎結構的層級，而不需要對所有使用者推出這些層級。***
 
 您可以事先設定、測試和試驗底層基礎結構的元素，然後再對辦公室、地區或組織部門內的眾多使用者推出這些元素。
 

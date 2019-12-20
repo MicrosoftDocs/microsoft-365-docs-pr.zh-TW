@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 企業版工作負載和案例
+title: 企業用 Microsoft 365 工作負載和案例
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 10/21/2019
@@ -11,25 +11,25 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 讓貴組織的使用者快速上手 Microsoft 365 企業版的生產力工作負載。
-ms.openlocfilehash: 2fbc3b5063ab0ed675b9d1a3873877e5486a3d6c
-ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
+description: 讓貴組織的使用者快速上手企業用 Microsoft 365 的生產力工作負載。
+ms.openlocfilehash: ff0e4b06972ed53933eb7780759bfcd53e286353
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37608594"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801898"
 ---
-# <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Microsoft 365 企業版工作負載和案例
+# <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>企業用 Microsoft 365 工作負載和案例
 
-若要獲得 Microsoft 365 企業版的創意暨團隊合作優點，請將這些工作負載部署到底層基礎結構上：
+若要獲得企業用 Microsoft 365 的創意暨團隊合作優點，請將這些工作負載部署到底層基礎結構上：
 
 - [Microsoft Teams](teams-workload.md)
 - [Exchange Online](exchangeonline-workload.md)
 - [SharePoint 和 OneDrive](sharepoint-online-onedrive-workload.md)
 
-請參閱[移轉](migration-microsoft-365-enterprise-workload.md)文章，以了解用來將整個組織移轉到 Microsoft 365 企業版的一般藍圖，其內含 Microsoft Office 用戶端產品、內部部署 Office Server 產品和 Microsoft Windows 架構裝置。
+請參閱[移轉](migration-microsoft-365-enterprise-workload.md)文章，以了解用來將整個組織移轉到企業用 Microsoft 365 的一般藍圖，其內含 Microsoft Office 用戶端產品、內部部署 Office Server 產品和 Microsoft Windows 架構裝置。
 
-這些案例會以整合方式使用來自 Microsoft 365 企業版的功能和服務，以因應商務需求。 
+這些案例會以整合方式使用來自企業用 Microsoft 365 的功能和服務，以因應商務需求。 
 
 其中一個需求是，確保您的員工在不直接連線到內部網路時可以有效率且安全地工作。 請參閱[強化遠端工作人員](empower-people-to-work-remotely.md)案例，以取得部署基礎結構元素和推動遠端使用者採用關鍵工作負載的藍圖，例如 Teams 和 Exchange Online。
 
@@ -45,9 +45,9 @@ ms.locfileid: "37608594"
 
 這些案例會逐步引導您完成 Microsoft Teams 小組或 SharePoint 網站的設定，以便安全地儲存您最有價值的資料。
 
-以下是整體 Microsoft 365 企業版部署指南中的工作負載和案例：
+以下是整體企業用 Microsoft 365 部署指南中的工作負載和案例：
 
-![整體 Microsoft 365 企業版部署指南中的工作負載和案例](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![整體企業用 Microsoft 365 部署指南中的工作負載和案例](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 如需其他案例，請參閱 [Microsoft 365 生產力資源庫](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary)。 
 
@@ -64,7 +64,7 @@ ms.locfileid: "37608594"
 | 行動裝置管理 | 裝置可以進行註冊並受到管理。 |
 | 資訊保護 | 會啟用 Microsoft 365 資訊保護功能，且敏感度標籤或 Azure 資訊保護標籤已準備好而可保護文件和電子郵件。 |
 
-請記住，這是理想狀況，您可能需要花點時間來規劃、設定、測試和試驗，尤其是有既存基礎結構和多個位置的大型組織更是如此。 您不一定要為了更快速地從 Microsoft 365 企業版獲得商業價值，而在所有位置完成所有階段。 
+請記住，這是理想狀況，您可能需要花點時間來規劃、設定、測試和試驗，尤其是有既存基礎結構和多個位置的大型組織更是如此。 您不一定要為了更快速地從企業用 Microsoft 365 獲得商業價值，而在所有位置完成所有階段。 
 
 以下是一些要立即部署的常見工作負載： 
 

@@ -1,5 +1,5 @@
 ---
-title: 使用現有基礎結構部署 Microsoft 365 企業版
+title: 使用現有基礎結構部署企業用 Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,19 +12,19 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 逐一討論在您有現有基礎結構時，部署 Microsoft 365 企業版的允出準則。
-ms.openlocfilehash: 1b464398b981133e2851760d7bfe16869f1d1429
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+description: 逐一討論在您有現有基礎結構時，部署企業用 Microsoft 365 的允出準則。
+ms.openlocfilehash: 1b3ed8edd84a1879f4cd46795fc55e3625a97be2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148507"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801928"
 ---
-# <a name="deployment-of-microsoft-365-enterprise-with-existing-infrastructure"></a>使用現有基礎結構部署 Microsoft 365 企業版
+# <a name="deployment-of-microsoft-365-for-enterprise-with-existing-infrastructure"></a>使用現有基礎結構部署企業用 Microsoft 365
 
-許多組織都有現有的網路、身分識別及其他元件，或 Microsoft 內部部署產品和以雲端為基礎的服務。本文將逐一討論部署 Microsoft 365 企業版的每個階段，以便您快速判斷如何調整或變更現有的基礎結構。
+許多組織都有現有的網路、身分識別及其他元件，或 Microsoft 內部部署產品和以雲端為基礎的服務。本文將逐一討論部署適用於企業用 Microsoft 365 的每個階段，以便您快速判斷如何調整或變更現有的基礎結構。
 
-在結束每個階段前，您必須檢查允出準則，其為一組您必須符合的必要條件以及要考慮的選用條件。每個階段的允出準則可確保您的內部部署和雲端基礎結構與產生的端對端設定符合 Microsoft 365 企業版部署需求。
+在結束每個階段前，您必須檢查允出準則，其為一組您必須符合的必要條件以及要考慮的選用條件。每個階段的允出準則可確保您的內部部署和雲端基礎結構與產生的端對端設定符合企業用 Microsoft 365 部署需求。
 
 > [!Note] 
 > FastTrack 是由 Microsoft 工程師提供的持續且可重複的權益，作為訂閱的一部分免費供您使用，可協助您以自己的步調移轉到雲端。FastTrack 也可在您有需要時，讓您存取合格合作夥伴的其他服務。至今隨著超過 40,000 位啟用此服務的客戶，FastTrack 可協助最大化 ROI、加速部署，以及提高整個組織中的採用率。請參閱[適用於 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365)。

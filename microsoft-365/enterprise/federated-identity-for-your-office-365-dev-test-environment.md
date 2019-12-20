@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 摘要：設定適用於 Microsoft 365 測試環境的同盟驗證。
-ms.openlocfilehash: 895d6b825a3e2928fee1e9f68ce2195b92117e37
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 1158109a4d42a7434a1d66750b2182f940d511b9
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202252"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801848"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Microsoft 365 測試環境的同盟身分識別
 
@@ -41,7 +41,7 @@ Office 365 支援同盟身分識別。這表示 Office 365 的連線使用者指
     
 - 簡化的組織內部網路連線到網際網路，包含 Azure 虛擬網路子網路上的五部虛擬機器 (DC1、APP1、CLIENT1、ADFS1 和 PROXY1)。Azure AD Connect 在 APP1 上執行，將 Active Directory Domain Services 網域中的帳戶清單同步處理到 Office 365。PROXY1 接收輸入的驗證要求。ADFS1 使用 DC1 驗證認證和發行安全性權杖。
     
-設定此開發/測試環境有五個階段︰
+設定此測試環境有五個階段︰
   
 1. 使用密碼雜湊同步處理建立模擬企業測試環境。
     

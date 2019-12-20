@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解及設定增強的 Microsoft 365 安全性。
-ms.openlocfilehash: 290b10dd8e0bf9a7180bae72669b22f3d575f914
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 15a4121315a81e1169e7cf1fa1c7ed079201b67b
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370170"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801678"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>步驟 3：設定增強的 Microsoft 365 安全性
 
@@ -43,7 +43,7 @@ ms.locfileid: "37370170"
 - 保護電子郵件中的[連結](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)和[附件](https://docs.microsoft.com/office365/securitycompliance/atp-safe-attachments)。 
 - 為 Exchange Online 中的電子郵件以及 [SharePoint Online、商務用 OneDrive、Microsoft Teams 中的檔案](https://docs.microsoft.com/office365/securitycompliance/atp-for-spo-odb-and-teams)，提供詐騙情報和防網路釣魚的功能。 
 
-Office 365 ATP 僅在 Microsoft 365 企業版 E5 中提供。
+Office 365 ATP 僅在 Microsoft 365 E5 中提供。
 
 |||
 |:-------|:-----|

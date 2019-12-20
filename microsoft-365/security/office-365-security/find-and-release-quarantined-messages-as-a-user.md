@@ -15,12 +15,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: 身為 Office 365 使用者，您可以使用下列兩種方法之一，來管理您已隔離垃圾郵件的訊息：直接回覆傳送給您的垃圾郵件通知 (如果您的系統管理員設定了此功能的話)，或者使用安全性與合規性中心的垃圾郵件隔離功能。
-ms.openlocfilehash: c912c19571cde31c39f4ca3f44c7628ba8b29526
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: bcc9b7ed52af0e9920506aa667e51daad7f82c80
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970459"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807998"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>以 Office 365 使用者身分尋找及釋出隔離的郵件
 
@@ -36,7 +36,7 @@ ms.locfileid: "39970459"
 2. 展開左側的 [威脅管理]****，依序選擇 [檢閱]**** 與 [隔離]****。
 
     > [!TIP]
-    > 若要直接移至安全性與合規性中心的 [隔離]**** 頁面，請使用這個 URL：> [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > 若要直接移至安全性 &amp; 合規性中心的 [隔離]**** 頁面，請使用這個 URL：[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
 
 根據預設，安全性與合規性中心會顯示所有因被視為垃圾郵件而遭到隔離的電子郵件訊息。 郵件會依據接收的 [日期]****，從最新排到最舊。 系統也會顯示每封郵件的 [寄件者]****、[主旨]**** 與到期日 (位於 [到期]**** 底下)。 您可以按一下對應的欄標題來依該欄位排序；再按一下欄標題則可將排序順序倒轉。
 

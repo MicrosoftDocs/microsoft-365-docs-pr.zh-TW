@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的設定符合 Microsoft 365 企業版準則，是否具備以識別為基礎的服務和基礎結構。
-ms.openlocfilehash: 94343400482083b2e793ff218816f06cb982187e
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 540d3c01ea368634cebafb2ec3dd5562fcb0b73c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627389"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801748"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>階段 2：識別基礎結構允出準則
 
@@ -26,7 +26,7 @@ ms.locfileid: "38627389"
 
 請確定您的身分識別基礎結構符合下列必要準則，而且您已將這些視為選擇性準則。
 
-若需身分識別基礎架構的其他建議，另請參閱「[先決條件](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites)」。
+若需身分識別基礎架構的其他建議，另請參閱「[先決條件](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites)」。
 
 <a name="crit-identity-global-admin"></a>
 ## <a name="required-your-global-administrator-accounts-are-protected"></a>必要：全域系統管理員帳戶會受到保護 
@@ -121,7 +121,7 @@ ms.locfileid: "38627389"
 5.  刪除測試使用者帳戶。
 
 <a name="crit-identity-ident-prot"></a>
-## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>選用：已啟用 Azure AD Identity Protection 來防止認證洩露 (僅限 Microsoft 365 企業版 E5)
+## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>選用：已啟用 Azure AD Identity Protection 來防止認證洩露 (僅限 Microsoft 365 E5)
 
 您已啟用 Azure AD Identity Protection 來：
 

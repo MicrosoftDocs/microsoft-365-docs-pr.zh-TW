@@ -3,7 +3,7 @@ title: 適用於高度管制資料的 Microsoft Teams
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 11/12/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立安全小組來儲存您最重要且最敏感的檔案。
-ms.openlocfilehash: fe397dbd091415b15bbc48d54bfa59c432437788
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: b35c4e8332b73b44042430651cbba9daa2c59c04
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39631263"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801418"
 ---
 # <a name="teams-for-highly-regulated-data"></a>適用於高度管制資料的 Microsoft Teams
 
@@ -38,29 +38,21 @@ ms.locfileid: "39631263"
   - 避免非網站成員要求網站的存取權。
 - 基礎 SharePoint 網站的 Office 365 保留標籤，可自動套用到網站上的新檔案，作為定義保留原則的預設方法。
 - 資料外洩防護 (DLP) 原則，利用保留標籤封鎖使用者對組織外部共用或傳送檔案。
-- Office 365 敏感度標籤或高度管制標籤的子標籤，已啟用加密且對小組的 Office 365 群組具有共同撰寫權限。 使用者可以從 Word、Excel 和 PowerPoint 的 [敏感度] 功能表列，將標籤或子標籤套用到儲存在小組中 [檔案]**** 區段的檔案。
+- Office 365 敏感度標籤或高度管制標籤的子標籤，已啟用加密且對小組的 Office 365 群組具有共同撰寫權限。 使用者可以從 Word、Excel 和 PowerPoint 的 [敏感度]**** 功能表列，將標籤或子標籤套用到儲存在小組中 [檔案]**** 區段的檔案。
 
 以下是使用敏感度標籤所產生的組態。
 
 ![安全小組案例的組態](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+
+如需快速概觀，請觀賞以下短片。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
 <a name="poster"></a> 如需此案例的 1 頁式摘要，請參閱[適用於高度管制資料的 Teams 海報](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)。
 
 [![適用於高度管制資料的 Teams 海報](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
 您也可以用 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) 或 [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) 格式下載此海報，以及用 Letter、Legal 或 Tabloid (11 x 17) 大小的紙張列印此海報。
-
-
-<!--
-
-[Quick-Learn test (vertical): PDF](./media/secure-teams-highly-regulated-data-scenario/Click-Through-Test.pdf)
-
-[Quick-Learn test: PowerPoint](./media/secure-teams-highly-regulated-data-scenario/Click-Through-Test.pptx)
-
-[Horizontal PDF (Quick Start)](./media/secure-teams-highly-regulated-data-scenario/Sideways.pdf)
-
---> 
-
 
 ## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>階段 1：針對高度管制資料設定小組
 

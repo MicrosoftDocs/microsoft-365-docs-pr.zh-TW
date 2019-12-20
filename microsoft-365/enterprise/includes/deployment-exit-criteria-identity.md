@@ -1,4 +1,4 @@
-若需身分識別基礎架構的其他建議，另請參閱「[先決條件](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites)」。
+若需身分識別基礎架構的其他建議，另請參閱「[先決條件](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites)」。
 
 <a name="crit-identity-global-admin"></a>
 ### <a name="required-your-global-administrator-accounts-are-protected"></a>必要：全域系統管理員帳戶會受到保護 
@@ -14,7 +14,7 @@
 使用這些步驟來確認您已受保護全域系統管理員帳戶：
 
 1. 在 PowerShell 命令提示字元執行以下 Azure Active Directory PowerShell 的圖表。 您應該只會看到專用全域系統管理員帳戶清單。
-   ```
+   ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
 2. 使用步驟 1 中的每個帳戶登入 Office 365。 每個登入必須要求 Azure Multi-Factor Authentication 和您組織中可用的最強型次要驗證。
@@ -93,7 +93,7 @@
 5.  刪除測試使用者帳戶。
 
 <a name="crit-identity-ident-prot"></a>
-### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-enterprise-e5-only"></a>選用：已啟用 Azure AD Identity Protection 來防止認證洩露 (僅限 Microsoft 365 企業版 E5)
+### <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>選用：已啟用 Azure AD Identity Protection 來防止認證洩露 (僅限 Microsoft 365 E5)
 
 您已啟用 Azure AD Identity Protection 來：
 

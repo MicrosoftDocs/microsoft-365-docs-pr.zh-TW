@@ -3,7 +3,7 @@ title: 適用於 Microsoft 365 測試環境的密碼重設
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定並測試適用於 Microsoft 365 測試環境的密碼重設。
-ms.openlocfilehash: 100db14b7940d68a185c3f6065df053aed7fbf73
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: 930c5b4a4ddcc4866a586ff444380ff6dcd66238
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757710"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801408"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼重設
 
@@ -33,7 +33,7 @@ Azure Active Directory (Azure AD) 自助密碼重設 (SSPR) 允許使用者重�
 
 1.  建立 Microsoft 365 企業版測試環境。
 2.  啟用密碼回寫。
-3.  設定及測試「使用者 2」帳戶的密碼重設。
+3.  設定及測試「使用者 3」帳戶的密碼重設。
     
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -52,7 +52,6 @@ Azure Active Directory (Azure AD) 自助密碼重設 (SSPR) 允許使用者重�
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 
 - Azure AD Connect 會在 APP1 上執行，以將 TESTLAB Active Directory Domain Services (AD DS) 網域同步至 Microsoft 365 或 Office 365 訂閱的 Azure AD 租用戶。
 
-
 ## <a name="phase-2-enable-password-writeback"></a>階段 2：啟用密碼回寫
 
 遵循[測試實驗室指南密碼回寫階段 2](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain) 中的指示。
@@ -67,25 +66,26 @@ Azure Active Directory (Azure AD) 自助密碼重設 (SSPR) 允許使用者重�
 
 1. 從您瀏覽器的私用執行個體開啟 [https://portal.azure.com](https://portal.azure.com)，然後使用全域系統管理員帳戶的認證登入。
 2. 在 Azure 入口網站中，按一下 [Azure Active Directory] > [群組] > [新增群組]****。
-3. 將 [群組類型]**** 設為 [安全性]****、[群族名稱]**** 設為 [PWReset]****，以及將 [成員類型]**** 設為 [指派]****，然後按一下 [建立]****。
-5. 在清單中按一下 [PWReset]**** 群組，然後再按一下 [成員]****。
-6. 按一下 [新增成員]****、接著按一下 [使用者 2]****，然後再按一下 [選取]****。關閉 [PWReset]**** 及 [群組]**** 頁面。
-7. 在 Azure Active Directory 頁面上，按一下 [密碼重設]****。
-8. 在 [屬性]**** 頁面的 [啟用自助密碼重設]**** 下，選擇 [選取]****。
-9. 在 [選取群組]**** 中，選取 [PWReset]****，然後按一下 [儲存]****。
-10. 關閉私用瀏覽器執行個體。
+3. 將 [群組類型]**** 設為 [安全性]****、[群組名稱]**** 設為 [PWReset]****，以及將 [成員類型]**** 設為 [指派]****。 
+4. 按一下 [成員]****，尋找並選取 [使用者 3]****，然後按一下 [選取]****，接著按一下 [建立]****。
+5. 關閉 [群組]**** 窗格。
+6. 在 [Azure Active Directory] 窗格中，按一下左側導覽的 [密碼重設]****。
+7. 在 [密碼重設屬性]**** 窗格中，選擇 [已啟用自助式密碼重設]**** 選項底下的 [已選取]****。
+8. 按一下 [選取群組]****，選取 [PWReset]**** 群組，然後按一下 [選取] > [儲存]****。
+9. 關閉私用瀏覽器執行個體。
 
-下一階段，您將測試「使用者 2」帳戶的密碼重設。
+下一階段，您將測試「使用者 3」帳戶的密碼重設。
 
 1. 開啟新的私用瀏覽器執行個體，並瀏覽至 [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup)。
-2. 以「使用者 2」的認證登入。
-3. 在 [避免您失去帳戶的存取權]**** 中，將認證電話設為您的手機號碼，並將認證電子郵件設為您的公司或個人電子郵件帳戶。
-4. 兩者皆經過驗證之後，按一下 [狀況良好]****，並關閉瀏覽器的私用執行個體。
-5. 開啟新的私用瀏覽器執行個體並前往 [https://aka.ms/sspr](https://aka.ms/sspr)。
-6. 以「使用者 2」的帳戶認證登入，輸入 CAPTCHA 顯示的字元，然後再按一下 [下一步]****。
-8. 對於 [驗證步驟 1]****，請按一下 [寄電子郵件到我的備用電子郵件地址]****，然後再按一下 [寄電子郵件]****。當您收到電子郵件後，請輸入驗證碼，然後再按一下 [下一步]****。
-9. 在 [取回您的帳戶]**** 中，輸入「使用者 2」帳戶的新密碼，然後按一下 [完成]****。請記下「使用者 2」帳戶的密碼變更，並儲存到安全的位置。
-10. 在相同瀏覽器的新分頁中，前往 [https://portal.office.com](https://portal.office.com)，並以「使用者 2」帳戶名稱及新密碼登入。 您應該會看到 [Microsoft Office 首頁]**** 頁面。
+2. 以「使用者 3」的認證登入。
+3. 在 [需要更多資訊]**** 中按一下 [下一步]****。 
+5. 在 [避免您失去帳戶的存取權]**** 中，將認證電話設為您的手機號碼，並將認證電子郵件設為您的公司或個人電子郵件帳戶。
+7. 兩者皆經過驗證之後，按一下 [狀況良好]****，並關閉瀏覽器的私用執行個體。
+8. 開啟新的私用瀏覽器執行個體並前往 [https://aka.ms/sspr](https://aka.ms/sspr)。
+9. 輸入「使用者 3」的帳戶名稱，輸入 CAPTCHA 顯示的字元，然後再按一下 [下一步]****。
+10. 對於 [驗證步驟 1]****，請按一下 [寄電子郵件到我的備用電子郵件地址]****，然後再按一下 [寄電子郵件]****。當您收到電子郵件後，請輸入驗證碼，然後再按一下 [下一步]****。
+11. 在 [取回您的帳戶]**** 中，輸入「使用者 3」帳戶的新密碼，然後按一下 [完成]****。 請記下「使用者 3」帳戶變更的密碼，並儲存到安全的位置。
+12. 在相同瀏覽器的新分頁中，前往 [https://portal.office.com](https://portal.office.com)，並以「使用者 3」帳戶名稱及新密碼登入。 您應該會看到 [Microsoft Office 首頁]**** 頁面。
 
 如需在生產中進行密碼重設的相關資訊和連結，請參閱身分識別階段中的「[簡化密碼重設](identity-secure-your-passwords.md#identity-pw-reset)」步驟。
 

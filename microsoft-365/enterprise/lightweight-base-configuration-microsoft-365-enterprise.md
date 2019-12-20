@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用這個「測試實驗室指南」建立輕量型測試環境，以測試 Microsoft 365 企業版。
-ms.openlocfilehash: 6f49982fe71196f3c147c1638b402ee63bb861c1
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 0bbb54ca054ce1f4f96a32c887fba60b982375de
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202304"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801648"
 ---
 # <a name="the-lightweight-base-configuration"></a>輕量型基本組態
 
@@ -43,13 +43,13 @@ ms.locfileid: "39202304"
 
 若要開始 Office 365 E5 試用訂閱，您需要虛構的公司名稱和新 Microsoft 帳戶。
   
-1. 我們建議您使用公司名稱 Contoso 的變種作為公司名稱，也就是 Microsoft 範例內容中使用的虛構公司，但此為非必要的動作。在此處記錄您虛構公司名稱：![](./media/Common-Images/TableLine.png)
+1. 我們建議您使用公司名稱 Contoso 的變種作為公司名稱，也就是 Microsoft 範例內容中使用的虛構公司，但此為非必要的動作。在此處記錄您虛構公司名稱： ![線](./media/Common-Images/TableLine.png)
     
 2. 若要註冊新 Microsoft 帳戶，請移至 [https://outlook.com ](https://outlook.com)，並使用新電子郵件帳戶以及地址建立帳戶。您會使用這個帳戶來登入 Office 365。
     
-  - 在此處記錄您新帳戶的名字和姓氏：![](./media/Common-Images/TableLine.png)
+  - 在此處記錄您新帳戶的名字和姓氏： ![線](./media/Common-Images/TableLine.png)
     
-  - 在此處記錄新電子郵件帳戶地址：![](./media/Common-Images/TableLine.png)@outlook.com
+  - 在此處記錄新電子郵件帳戶地址： ![線](./media/Common-Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>註冊 Office 365 E5 試用訂閱
 
@@ -58,8 +58,8 @@ ms.locfileid: "39202304"
 2. 在 **[感謝您選擇 Office 365 E5]** 頁面上，請於步驟 1 中指定您的新電子郵件帳戶位址。
 3. 在追蹤訂閱程序的步驟 2 中，輸入要求的資訊，然後執行驗證。
 4. 在步驟 3 中，輸入組織名稱，然後輸入將成為訂閱的全域系統管理員的帳戶名稱。 
-5. 針對步驟 4，在此記錄登入頁面 (選取並複製)：![](./media/Common-Images/TableLine.png) 
-6. 在此記錄使用者識別碼：![](./media/Common-Images/TableLine.png).onmicrosoft.com  
+5. 針對步驟 4，在此記錄登入頁面 (選取並複製)： ![線](./media/Common-Images/TableLine.png) 
+6. 在此記錄使用者識別碼：![線](./media/Common-Images/TableLine.png).onmicrosoft.com  
    在安全位置中記錄您輸入的密碼。
    此值將被稱為 **「Office 365 全域系統管理員名稱」**。
 8. 按一下 **[移至設定]**。
@@ -119,11 +119,11 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 記錄這些值：
   
-- Office 365 全域系統管理員名稱：![](./media/Common-Images/TableLine.png).onmicrosoft.com (來自階段 1 的步驟 6)
+- Office 365 全域系統管理員名稱： ![線](./media/Common-Images/TableLine.png).onmicrosoft.com (來自階段 1 的步驟 6)
     
     也將此帳戶的密碼記錄在安全的位置。
     
-- 您的試用訂閱組織名稱：![](./media/Common-Images/TableLine.png) (來自階段 1 的步驟 4)
+- 您的試用訂閱組織名稱： ![線](./media/Common-Images/TableLine.png) (來自階段 1 的步驟 4)
     
 - 若要列出使用者 2、使用者 3、使用者 4 和使用者 5 的帳戶，從適用於 Windows PowerShell 的 Windows Azure Active Directory 模組提示字元中執行下列命令︰
     
@@ -133,13 +133,13 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
     在此記錄帳戶名稱：
     
-  - 使用者 2 的帳戶名稱：user2 @![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - 使用者 2 的帳戶名稱：user2@![線](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - 使用者 3 的帳戶名稱：user3 @![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - 使用者 3 的帳戶名稱：user3@![線](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - 使用者 4 的帳戶名稱：user4 @![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - 使用者 4 的帳戶名稱：user4@![線](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - 使用者 5 的帳戶名稱：user5 @![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - 使用者 5 的帳戶名稱：user5@![線](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     一併將這些帳戶的常見密碼記錄於安全的位置。
    

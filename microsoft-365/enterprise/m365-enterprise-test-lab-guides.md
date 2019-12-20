@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 企業版測試實驗室指南
+title: 企業用 Microsoft 365 測試實驗室指南
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,17 +14,17 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 使用「測試實驗室指南」以設定 Microsoft 365 企業版的示範、概念證明或開發/測試環境。
-ms.openlocfilehash: 5f2f6b9fb137cf9d1ea9dc21ca12a3792d79e249
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+description: 使用「測試實驗室指南」以設定企業用 Microsoft 365 的示範、概念證明或開發/測試環境。
+ms.openlocfilehash: 42cc3b5572352a4bf83b50e964fd04dd527506cd
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757832"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801638"
 ---
-# <a name="microsoft-365-enterprise-test-lab-guides"></a>Microsoft 365 企業版測試實驗室指南
+# <a name="microsoft-365-for-enterprise-test-lab-guides"></a>企業用 Microsoft 365 測試實驗室指南
 
-*本文適用於 Office 365 企業版和 Microsoft 365 企業版。*
+*本文適用於 Office 365 企業版和企業用 Microsoft 365。*
 
 測試實驗室指南 (TLG) 可協助您快速地了解 Microsoft 產品。它們提供規範的指示，可以設定簡化但是具有代表性的測試環境。您可以將這些環境用於示範、自訂或者針對試用版或付費訂閱持續時間建立複雜的概念證明。 
 
@@ -34,17 +34,17 @@ TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符�
   
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，可查看企業用 Microsoft 365 測試實驗室指南堆疊中所有文章的視覺對應。
 
-[![Microsoft 365 企業版測試實驗室指南堆疊](./media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
+[![企業用 Microsoft 365 測試實驗室指南堆疊](./media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>基本設定
 
-首先，您可以建立 [Microsoft 365 企業版](https://docs.microsoft.com/microsoft-365-enterprise/)的測試環境，以便包含 Office 365 E5、Enterprise Mobility + Security (EMS) E5 及 Windows 10 企業版。您可以建立兩個不同類型的基底組態：
+首先，您可以建立[企業用 Microsoft 365](https://docs.microsoft.com/microsoft-365-enterprise/) 的測試環境，以便包含 Office 365 E5、Enterprise Mobility + Security (EMS) E5 及 Windows 10 企業版。您可以建立兩個不同類型的基底組態：
 
-- 當您想要在僅雲端環境中 (其中不包含任何內部部署元件) 設定及示範 Microsoft 365 企業版功能時，使用[輕量型基底組態](lightweight-base-configuration-microsoft-365-enterprise.md)。
+- 當您想要在僅雲端環境中 (其中不包含任何內部部署元件) 設定及示範企業用 Microsoft 365 功能時，使用[輕量型基底組態](lightweight-base-configuration-microsoft-365-enterprise.md)。
 
-- 當您想要在混合式雲端環境 (該環境使用內部部署元件，例如 Active Directory Domain Services (AD DS) 網域) 中設定及示範 Microsoft 365 企業版功能時，使用[模擬的企業基底組態](simulated-ent-base-configuration-microsoft-365-enterprise.md)。
+- 當您想要在混合式雲端環境 (該環境使用內部部署元件，例如 Active Directory Domain Services (AD DS) 網域) 中設定及示範企業用 Microsoft 365 功能時，使用[模擬的企業基底組態](simulated-ent-base-configuration-microsoft-365-enterprise.md)。
 
 您也可以建立 Office 365 E5 的測試環境，做法是不要將 Microsoft 365 E5 授權新增至您的試用版或生產測試環境。
     
