@@ -1,7 +1,7 @@
 ---
 title: 檢視文件的標籤活動
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 5/9/2018
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 安全性與合規性中心的標籤活動總管，您可以跨 SharePoint 和商務用 OneDrive 快速搜尋和檢視過去 30 天所有內容的標籤活動。這是即時資料，可讓您清楚檢視租用戶發生什麼情況。
-ms.openlocfilehash: 99e3f461ed1ff38b2f204a2823299a3c441c995f
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: 9c34cde4d9dde96b8fb1251e9d2be449031cc58a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38710018"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802228"
 ---
 # <a name="view-label-activity-for-documents"></a>檢視文件的標籤活動
 
@@ -38,7 +38,7 @@ ms.locfileid: "38710018"
     
 - 檢視資料夾以及個別文件的標籤活動。即將推出的能力是顯示由於標示資料夾，該資料夾內有多少檔案可以取得此標籤。
     
-您可以在 [安全性與合規性中心] > **[資訊控管]**  > **[標籤活動總管]** 中找到標籤活動總管。
+您可以在 &amp;[安全性與合規性中心] > **[資訊控管]**  > **[標籤活動總管]** 中找到標籤活動總管。
   
 請注意，標籤活動總管需要 Office 365 企業版 E5 訂閱。
   

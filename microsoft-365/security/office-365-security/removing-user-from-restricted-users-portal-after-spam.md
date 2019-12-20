@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 如果使用者持續從 Office 365 傳送被歸類為垃圾郵件的電子郵件，使用者將遭到限制而無法再傳送任何郵件。
-ms.openlocfilehash: 93cc7fb4af878457f7b9570a90d6950e7488d0ac
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c817add2581ffdbe709023dc3b348631defec169
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808028"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823815"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者
 
@@ -79,7 +79,7 @@ ms.locfileid: "40808028"
 
 ## <a name="for-more-information"></a>相關資訊
 
-[回應遭入侵的電子郵件帳戶](../../compliance/responding-to-a-compromised-email-account.md)
+[回應遭入侵的電子郵件帳戶](responding-to-a-compromised-email-account.md)
 
 [了解「無法傳送電子郵件的受限制使用者」警示](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
 

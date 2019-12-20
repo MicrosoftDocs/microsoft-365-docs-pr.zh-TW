@@ -13,12 +13,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 055c19715ff5dcd28ae05489600a31b2f7904e72
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 828c4f7faaae1225d438a4d34b159d981b31b141
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749711"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806516"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>符合 GDPR 的 Dynamics 365 責任整備程度檢查清單
 
@@ -26,8 +27,8 @@ ms.locfileid: "38749711"
 
 此責任整備程度檢查清單可讓您便捷地存取在使用 Microsoft Dynamics 365 時，為了支援 GDPR 所需要的資訊。該清單是針對個人資訊處理者的一組隱私權和安全控制的標題和參考編號 (列在每個檢查清單主題的括號中) 來進行編排，依循：
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) 安全性技術需求。
-- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 隱私權管理需求。
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail?pid=000000000030351736) 為安全性技術需求。
+- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 為隱私權管理需求。
 
 您可以使用合規性管理員管理此檢查清單中的項目 [[15](gdpr-arc-Dynamics365.md#15)]，方法是參考 GDPR 圖格中「客戶受管理控制項」** 底下的控制項識別碼和控制項標題。
 
