@@ -1,7 +1,7 @@
 ---
 title: 數位生產合作關係 (DPP) 英國
 description: Microsoft Azure 具有已獎勵 DPP 認可至廣播的安全性標記。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3adc0bcc75886476de9f088c1f539c63fe4e4be8
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: b49a898c3a517b6c9468478ad7b7eddeeee1755c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859963"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805236"
 ---
 # <a name="digital-production-partnership-dpp-united-kingdom"></a>數位生產合作關係 (DPP) 英國
 

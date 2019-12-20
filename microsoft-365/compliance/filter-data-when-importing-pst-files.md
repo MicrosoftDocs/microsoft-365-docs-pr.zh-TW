@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: '使用 Office 365 匯入服務中的新的智慧型匯入功能，來篩選實際取得匯入至目標信箱的項目。 智慧型匯入可讓您主動決定何種資料匯入及要留下的項目。 智慧型匯入也可提供見解上您要匯入至 Office 365 的資料。 '
-ms.openlocfilehash: 2e012159f7f278dc10db14b07531686b5d130fd9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e070c32814e8f5a34a90a12dfcd4148199731d66
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077027"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967346"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>匯入至 Office 365 的 PST 檔案時篩選資料
 
@@ -49,7 +49,7 @@ ms.locfileid: "37077027"
     
   - [使用網路上傳將 PST 檔案匯入 Office 365](use-network-upload-to-import-pst-files.md)
     
-  - [使用磁碟機運送將 PST 檔案匯入 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
+  - [使用磁碟機寄送將 PST 檔案匯入 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
 - 之後您可以使用網路上傳，合規性中心設為**在進行中的分析**，這表示 Office 365 會分析您上傳的 PST 檔案中的資料安全性 & [匯入] 頁面上匯入工作的狀態，以建立匯入工作。 按一下 [**重新整理**![重新整理](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png)更新匯入工作的狀態。 
     
@@ -59,21 +59,21 @@ ms.locfileid: "37077027"
 
 您已建立之後 PST 匯入工作，請遵循下列步驟之前進行篩選資料匯入 Office 365。
   
-1. 移至 [[https://protection.office.com/](https://protection.office.com/)並登入 Office 365 組織中系統管理員帳戶使用的認證。 
+1. 前往 [https://protection.office.com/](https://protection.office.com/)，然後使用您 Office 365 組織中系統管理員帳戶的認證來登入。 
     
-2. 按一下 [**資料控管** \> **匯入**。
+2. 按一下 [**資訊管理** \> **匯入** \> **匯入 PST 檔案**。
     
-    貴組織的匯入工作會列在 [**匯入**] 頁面上。 請注意，在 [**狀態**] 欄中的**分析完成**值表示有已由 Office 365 進行分析，並準備好讓您匯入的匯入工作。 
+    **匯入 PST 檔案**] 頁面將列出您組織的匯入工作。 請注意，在 [**狀態**] 欄中的**分析完成**值表示有已由 Office 365 進行分析，並準備好讓您匯入的匯入工作。 
     
     ![分析完成狀態表示 Office 365 已經分析 PST 檔案中的資料](media/de5294f4-f0ba-4b92-a48a-a4b32b6da490.png)
   
 3. 您想要完成匯入工作，按一下 [**準備好匯入至 Office 365** 。 
     
-    飛入] 頁面上的會顯示 PST 檔案的相關資訊與匯入工作的其他資訊。
+    隨即會顯示彈出頁面，以及關於該匯入工作的 PST 檔案資訊和其他資訊。
     
 4. 按一下 [**匯入至 Office 365**。
     
-    會顯示 [**篩選您的資料**] 頁面。 它包含在 PST 檔案匯入工作，包括資訊的資料保留資料的相關資料見解。 
+    隨即會顯示 [篩選您的資料]****。 它包含在 PST 檔案匯入工作，包括資訊的資料保留資料的相關資料見解。 
     
     ![篩選您的資料] 頁面上顯示資料見解的 PST 檔案匯入工作](media/3b537ec0-25a4-45a4-96d5-a429e2a33128.png)
   
@@ -120,7 +120,7 @@ ms.locfileid: "37077027"
     
     b. 在 [**匯入資料到 Office 365** ] 頁面上，按一下 [開始匯入的 [**匯入資料**。 請注意，顯示總將匯入的資料量。 
     
-6. 在 [**匯入**] 頁面上，按一下 [**重新整理**![重新整理](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png)。 匯入工作的狀態會顯示在 [**狀態**] 欄中。 
+6. 在 [**匯入 PST 檔案**] 頁面上，按一下 [**重新整理**![重新整理](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png)。 匯入工作的狀態會顯示在 [**狀態**] 欄中。 
     
 7. 按一下 [匯入該工作以顯示更多詳細的資訊，例如每個 PST 檔案與您設定篩選設定的狀態。
 

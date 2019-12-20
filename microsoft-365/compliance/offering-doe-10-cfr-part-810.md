@@ -1,7 +1,7 @@
 ---
 title: 美國 DoE 10 CFR 組件 810
 description: 受到美國 DoE 10 CFR 組件 810 匯出控制需求的客戶可以使用 Azure 政府版。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: fe87cde60847a0f5d935b50f433cd9b95702bebf
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: e90609c2cb25f78345c7f4da2b7b2811dd104c16
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859403"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804176"
 ---
 # <a name="us-doe-10-cfr-part-810"></a>美國 DoE 10 CFR 組件 810
 

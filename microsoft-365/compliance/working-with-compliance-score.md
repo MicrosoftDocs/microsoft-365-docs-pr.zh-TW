@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在 Microsoft 合規性分數中使用的工作流程工具可協助您管理組織的合規性。
-ms.openlocfilehash: 9dc3eb41b1ad686e1c9e1f0a4cf2df66ccb3ffbe
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: 9c3871db720666319eb8a0523ff8150efd753f91
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685387"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802130"
 ---
 # <a name="working-with-microsoft-compliance-score-preview"></a>使用 Microsoft 合規性分數 （預覽）
 
@@ -193,7 +193,7 @@ ms.locfileid: "38685387"
 
 ### <a name="default-assessments"></a>預設 「 評估 」
 
-根據預設，您會看到 「 評估 」 頁面上的 Microsoft 365 的資料保護基準評估。 如果您想要新增更多評估涵蓋其他法規和標準，您可以管理評估合規性管理員中。 合規性分數提供十個以上的現成可用的評估，包括 GDPR、 CCPA、 ISO 27001、 ISO 27018、 NIST 800-53、 NIST 800-171、 NIST CSF、 CSA CCM、 FFIEC、 HIPAA/HITECH 和 FedRAMP。
+根據預設，您會看到 「 評估 」 頁面上的 Microsoft 365 的資料保護基準評估。 合規性分數也會提供數個現成可用的評估 （[檢視的完整清單](compliance-score.md#templates)）。 如果您想要新增更多評估涵蓋其他法規和標準，您可以這麼做合規性管理員中。
 
 ### <a name="managing-assessments"></a>管理評估
 

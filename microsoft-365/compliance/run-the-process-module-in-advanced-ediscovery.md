@@ -3,6 +3,7 @@ title: 在 Office 365 進階電子文件探索中執行處理序模組
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: '了解做準備案例的 Office 365 資料的檔案與 Office 365 進階電子文件探索分析的準則。  '
-ms.openlocfilehash: 75b6b23a913a6aa8b732501b1c52afb55b47e51e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f96b7670a3886b2bfe01801ea76061bea4a37d14
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077573"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802906"
 ---
 # <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中執行處理序模組
 
@@ -47,7 +48,7 @@ Case 檔案載入至進階電子文件**準備**期間\>**程序**。
     
 - **檔案路徑**： 進階電子文件可以載入檔案與路徑的長度最多 400 個字元。
     
-- **文字擷取**： 擷取文字從原生檔案，除了一般文字，當下列也解壓縮： 隱藏的文字 （Excel 和.doc），隱藏資料行 (Excel)，追蹤的變更 (.doc) 演講者備忘稿 (.ppt) 內嵌物件 （例如，Excel 中的物件.ppt）。 這些可以在文字編輯器中檢視。
+- **文字擷取**： 擷取文字從原生檔案，除了一般文字，當下列也解壓縮： 隱藏文字 （Excel 和.doc）、 隱藏資料行 (Excel)，追蹤修訂 (.doc) 演講者備忘 (.ppt)、 內嵌物件 （例如，在.ppt 中的 Excel 物件）。 這些可以在文字編輯器中檢視。
     
 - **略過文字**： 執行程序之後，再分析定義此選用功能。 忽略文字應該使用時請小心謹慎，因為其使用，可能會降低檔案分析的效能。
     

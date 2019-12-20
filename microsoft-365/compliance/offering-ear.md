@@ -1,7 +1,7 @@
 ---
 title: 美國匯出管理法規 （耳朵上）
 description: Microsoft 雲端服務可協助客戶受限於美國匯出管理法規 （耳朵上） 符合其合規性需求，以及管理匯出控制項風險。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b0bb12a4c7f7120d1a607de53ec97d7e8ce915e8
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: ae28d96416f46a45c0d271b9c291040c2e9d8b31
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859393"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804126"
 ---
 # <a name="us-export-administration-regulations-ear"></a>美國匯出管理法規 （耳朵上）
 

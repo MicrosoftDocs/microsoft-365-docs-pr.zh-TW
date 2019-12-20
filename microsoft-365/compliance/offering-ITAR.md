@@ -1,7 +1,7 @@
 ---
 title: 國際流量武器法規 (ITAR)
 description: Azure 政府版支援建置美國國際流量武器具備 Regs 系統中的客戶。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 9fa4195daa12ebbdafa33851f2bf458bde3d36ac
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: a15b787904149073394bfc08a3ae8faf119d7ac8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859653"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804606"
 ---
 # <a name="international-traffic-in-arms-regulations-itar"></a>國際流量武器法規 (ITAR)
 

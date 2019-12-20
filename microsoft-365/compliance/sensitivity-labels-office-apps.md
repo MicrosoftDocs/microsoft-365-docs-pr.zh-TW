@@ -1,9 +1,9 @@
 ---
-title: Office App 中的敏感度標籤
-ms.author: krowley
-author: kccross
+title: Office 應用程式中的敏感度標籤
+ms.author: cabailey
+author: cabailey
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/09/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解使用者如何使用桌面的 Office 應用程式、 Office 應用程式的行動電話和 web Office 相關應用程式中敏感度標籤運作。 了解哪些應用程式支援敏感度標籤。
-ms.openlocfilehash: 1b472185df2d45717cba6cfca30176768bf9cd4e
-ms.sourcegitcommit: 5f96fa472cbdca30c2cfe24d66c9c6fcaedb1a6b
+ms.openlocfilehash: a904f1adde6ea8df6d7225ed368f77790b21161a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38755591"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802846"
 ---
-# <a name="sensitivity-labels-in-office-apps"></a>Office App 中的敏感度標籤
+# <a name="sensitivity-labels-in-office-apps"></a>Office 應用程式中的敏感度標籤
 
 本文說明：
 
@@ -56,18 +56,18 @@ ms.locfileid: "38755591"
 
 |功能                                                                                                        |Windows 桌面 |Mac 桌面 |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
-|[以手動方式套用、 變更或移除標籤](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[以手動方式套用、 變更或移除標籤](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[套用預設標籤](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | TBD                                                        |
-|[需要正當理由，若要變更標籤](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[提供自訂說明頁面的說明連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[標記內容](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[需要正當理由，若要變更標籤](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[提供自訂的技術] 頁面上的 [說明] 連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[標記內容](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
 |系統管理員[檢視標籤使用狀況與標籤分析](label-analytics.md)並傳送資料                      | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
 |
   [要求使用者在電子郵件和文件中套用標籤](sensitivity-labels.md#what-label-policies-can-do)   | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
-|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 預覽： 在推行[Office 測試人員](https://office.com/insider)                                  | TBD | TBD | TBD | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
-|標記和受保護的文件上支援[自動儲存](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)與[共同撰寫](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) | TBD | TBD | TBD | TBD | [Preview](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 預覽： 在推行[Office 測試人員](https://office.com/insider)                                  | TBD | TBD | TBD | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
+|標記和受保護的文件上支援[自動儲存](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)與[共同撰寫](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) | TBD | TBD | TBD | TBD | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 ## <a name="support-for-sensitivity-label-capabilities-in-outlook"></a>在 Outlook 中的敏感度標籤功能的支援
@@ -79,7 +79,7 @@ ms.locfileid: "38755591"
 |[以手動方式套用、 變更或移除標籤](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39+           | 是               |
 |[套用預設標籤](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39+           | 是               |
 |[需要正當理由，若要變更標籤](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39+           | 是               |
-|[提供自訂說明頁面的說明連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39+           | 是               |
+|[提供自訂的技術] 頁面上的 [說明] 連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39+           | 是               |
 |[標記內容](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39+           | 是               |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39+           | 是               |
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39+           | 是               |
@@ -99,23 +99,27 @@ ms.locfileid: "38755591"
 
 - Microsoft 365 合規性中心
 
-在 Office 內建標示用戶端會自動啟用，具有一或多個[發佈的標籤原則](sensitivity-labels.md#what-label-policies-can-do)給他們的使用者。
+若要使用 Office 內建標示用戶端，您必須一或多個[發佈的標籤原則](sensitivity-labels.md#what-label-policies-can-do)的使用者從下列其中一個列出的系統管理中心。
 
-若要在 Windows 上的 Office 中使用內建標示的用戶端，您不能執行的 Azure 資訊保護增益集在同一時間 Office 中。 您可以暫時或永久解除安裝 Azure 資訊保護用戶端上，或者您可以保留安裝並設定 Office，以防止執行。
+不過，如果使用者有下列其中一個 Azure 資訊保護用戶端安裝 （[整合設定標籤的用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)或[傳統的用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)），根據預設，內建標示的用戶端已停用在他們的 Office 應用程式中。 若要使用內建的標籤，而不 Office 相關應用程式的 Azure 資訊保護用戶端，停用或解除安裝 Office 增益集以進行 Azure 資訊保護：
 
 1. 完成其中一個選項：
-
-    **進行多部電腦：** 設定 **使用套用及檢視敏感度標籤的 Office 中的 [敏感度] 功能**] 群組原則設定。 找到此設定在 [**使用者設定/系統管理範本/Microsoft Office 2016/安全性設定**。 部署此設定透過群組原則，或藉由使用[Office 雲端原則服務](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)。
-
-    **的單一電腦：** 請參閱 「 檢視、 管理與 Office 程式中安裝增益集 」 和[永久停用或移除](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)的 Azure 資訊保護增益集在單一電腦上。
+    
+    - **進行多部電腦：** 設定 **使用套用及檢視敏感度標籤的 Office 中的 [敏感度] 功能**] 群組原則設定。 找到此設定在 [**使用者設定/系統管理範本/Microsoft Office 2016/安全性設定**。 部署此設定透過群組原則，或藉由使用[Office 雲端原則服務](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)。
+    
+    - **的單一電腦：** 如需如何[永久停用或移除](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)的 Azure 資訊保護增益集在單一電腦上的詳細資訊，請參閱 「 檢視、 管理與 Office 程式中安裝增益集 」。
 
 2. 重新啟動所有 Office 應用程式。
 
-如需詳細的資訊保護用戶端應用程式的詳細資訊，請參閱[Azure 資訊保護用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client)。
+當您停用或解除安裝此 Office 增益集時，Azure 資訊保護用戶端會保留已安裝，以便您可以繼續標籤檔案超出您的 Office 應用程式。 例如，藉由使用檔案總管] 中或 PowerShell。
+
+哪些 Azure 資訊保護用戶端和 Office 內建標示用戶端支援功能的資訊，請參閱 Azure 資訊保護文件從[選擇哪一個標示的用戶端使用的 Windows 電腦](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)。
 
 ## <a name="protection-templates-and-sensitivity-labels"></a>保護範本和敏感度標籤
 
-當敏感度標籤已啟用，因為它們是使用已啟用加密的敏感度標籤設為備援，系統管理員定義[保護範本](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)，例如您的 Office 365 郵件加密，定義會隱藏自 Office 使用者體驗。
+系統管理員定義[保護範本](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)，例如您的 Office 365 郵件加密的定義看不到在 Office 應用程式當您使用內建的設定標籤。 此簡化的體驗反映，便不需要選取保護範本，因為相同的設定中有隨附有啟用加密的敏感度標籤。
+
+如果您需要將現有的防護範本轉換成標籤，請使用 Azure 入口網站及下列指示：[轉換至標籤的範本](https://docs.microsoft.com/azure/information-protection/configure-policy-templates#to-convert-templates-to-labels)。
 
 ## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>將敏感度標籤套用至檔案、 電子郵件及附件
 

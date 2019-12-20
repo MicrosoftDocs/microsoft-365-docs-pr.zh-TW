@@ -9,14 +9,14 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
+ROBOTS: NOINDEX, NOFOLLOW
 description: 您必須啟用 ClickOnce 支援，以使用 Microsoft Edge 從內容搜尋和 eDiscovery 的安全性與合規性中心匯出搜尋結果。
-ms.openlocfilehash: 75595f45a1369eb732c2249258af21edced86890
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: f3e0442fe349aa3364594e07873b229f3205fb5e
+ms.sourcegitcommit: d656fd58e5491cfb7fee16b55dc7a58904ed128d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676844"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39891124"
 ---
 # <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a>在 Microsoft Edge 中使用 Office 365 電子文件探索匯出工具
 

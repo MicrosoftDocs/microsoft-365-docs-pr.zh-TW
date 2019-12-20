@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用此主題以深入了解 Office 365 中設定特殊權限的存取管理
-ms.openlocfilehash: 46bfeaf0c73c4598fcdaa65d654201620396600c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5b7bf33f41bc722c557f2b515c5ab027bd401a2a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077832"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803760"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>在 Office 365 中設定特殊權限的存取管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "37077832"
 
 - [步驟 1： 建立核准者群組](privileged-access-management-configuration.md#step1)
 
-    開始使用權限存取之前，請決定誰需要核准授權的傳入要求存取提升權限和特殊權限的工作。 屬於核准者群組的任何使用者都能核准存取要求。 這會啟用在 Office 365 中建立擁有郵件功能的安全性群組。
+    開始使用權限存取之前，請決定誰需要核准授權的傳入要求存取提升權限和特殊權限的工作。 屬於核准者群組的任何使用者都能核准存取要求。 此群組會啟用在 Office 365 中建立擁有郵件功能的安全性群組。
 
 - [步驟 2： 啟用特殊權限的存取](privileged-access-management-configuration.md#step2)
 
@@ -52,7 +52,7 @@ ms.locfileid: "37077832"
 授與核准之後，要求使用者可執行預定的工作和特殊權限的存取將授權執行代表使用者工作。 核准保持有效要求的持續期間 （預設時間為 4 小時），在這期間要求者可執行預定的任務多次。 所有這類執行會記錄，並可供安全性和法規遵循稽核。 
 
 > [!NOTE]
-> 如果您想要使用 Exchange Management PowerShell 來啟用及設定特殊權限的存取，請依照下列[PowerShell 連線到 Exchange Online 使用多重要素驗證](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)連線至您的 Office 365 與 Exchange Online PowerShell 中的步驟認證。 您不需要啟用若要使用的步驟來連線至 Exchange Online PowerShell 時啟用特殊權限的存取 Office 365 組織的多重要素驗證。 以多重要素驗證連線建立簽署您要求的特殊權限存取使用 OAuth 權杖。
+> 如果您想要使用 Exchange Management PowerShell 來啟用及設定特殊權限的存取，請依照下列[PowerShell 連線到 Exchange Online 使用多重要素驗證](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)與您的 Office 365 認證連線至 Exchange Online PowerShell 中的步驟。 您不需要啟用若要使用的步驟來連線至 Exchange Online PowerShell 時啟用特殊權限的存取 Office 365 組織的多重要素驗證。 以多重要素驗證連線建立簽署您要求的特殊權限存取使用 OAuth 權杖。
 
 <a name="step1"> </a>
 
@@ -78,9 +78,9 @@ ms.locfileid: "37077832"
 
 1. 登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)使用您組織中系統管理員帳戶認證。
 
-2. 在系統管理中心中，前往 [**設定 > 安全性 & 隱私權** > **特殊權限的存取**。
+2. 在系統管理中心中，前往 [**設定 > 設定 > 安全性 & 隱私權** > **特殊權限的存取**。
 
-3. 啟用**需要核准的特殊權限的存取**控制。
+3. 啟用**需要核准的特殊權限的工作，但**控制項。
 
 4. 指派您在做為**預設核准者群組**的步驟 1 建立的核准者群組。
 

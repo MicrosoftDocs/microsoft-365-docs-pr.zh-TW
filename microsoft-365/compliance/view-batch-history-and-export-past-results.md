@@ -3,6 +3,7 @@ title: 檢視批次歷程記錄及匯出過去的 Office 365 進階電子文件�
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: '了解如何檢視選取的匯出批次工作階段的詳細的資訊，以及如何復原在 Office 365 進階電子文件探索中的最後一個匯出工作階段。  '
-ms.openlocfilehash: e4e84dc4115c7ec718112c8c38e20b306427c5c0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5e20fa787bcbb9dc6072af779326518d6a03aaa4
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077720"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802248"
 ---
 # <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>檢視批次歷程記錄及匯出過去的 Office 365 進階電子文件探索中的結果
 
@@ -55,7 +56,7 @@ ms.locfileid: "37077720"
     
 2. 按一下 [**瀏覽]** 以選取用來儲存在本機電腦上的下載的匯出檔案的目標位置。 
     
-3. 按一下 [啟動]****。 匯出的檔案下載至本機電腦。 
+3. 按一下 **[開始]**。 匯出的檔案下載至本機電腦。 
     
 ## <a name="see-also"></a>另請參閱
 
