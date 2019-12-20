@@ -1,7 +1,7 @@
 ---
 title: 美國內部收益服務出版物 1075
 description: Microsoft 沒有符合的美國內部收益服務出版物 1075年需求的控制項。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 30509260e83f1aaa59c57365357e18a3f12097c4
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4df4d225658c03433384ca85e5e9d15eed5f1ac8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859723"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804816"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>美國內部收益服務出版物 1075
 

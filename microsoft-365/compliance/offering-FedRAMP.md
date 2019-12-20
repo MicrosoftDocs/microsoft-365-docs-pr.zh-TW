@@ -1,7 +1,7 @@
 ---
 title: 聯邦風險與授權管理計劃 (FedRAMP)
 description: 美國聯邦風險與授權管理程式 P ATOs 和 ATOs，Microsoft 已授與。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 0e967520dbbac845861168d3eea5053e18a46edf
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: da8e7e473210c42cb5d95f2701779561c95b6bb3
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859803"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804946"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>聯邦風險與授權管理計劃 (FedRAMP)
 

@@ -1,7 +1,7 @@
 ---
 title: 歐盟國家識別碼
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主題顯示什麼資料外洩防護 (DLP) 原則會尋找當它偵測到歐盟國民身分識別號碼敏感資訊類型。 此敏感資訊類型定義不同模式、 關鍵字、 和其他辨識項的每個國家/地區。
-ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c00619ed649db53777fa3629deac0162a3589475
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077073"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805936"
 ---
 # <a name="eu-national-identification-number"></a>歐盟國家識別碼
 
@@ -1180,7 +1180,7 @@ identidadúnico#
 
 如需詳細資訊，請參閱 「 瑞典國民身分證 」 中[的敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
 

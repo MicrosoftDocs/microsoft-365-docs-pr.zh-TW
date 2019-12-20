@@ -1,5 +1,6 @@
 ---
 title: 調查和修復通訊合規性警示 (預覽)
+description: 調查並修復 Microsoft 365 中的通訊規範警示。
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,13 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: 調查並修復 Microsoft 365 中的通訊規範警示。
-ms.openlocfilehash: 336ce22813b60a4543941b18e11acf525570bb26
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 322e74b846cc574b52708627d5f59dde3cfe9e80
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633682"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807382"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>調查和修復通訊合規性警示 (預覽)
 

@@ -1,7 +1,7 @@
 ---
 title: 澳洲政府認證雲端服務清單 (CCSL)
 description: Microsoft 會被列在澳洲認證雲端服務清單中的分類散佈限制標記 (DLM) 和受保護的資料，根據次評估與憑證由澳洲網路安全中心 (ACSC)。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 0b4c31408f14bfca45358086678cb2d4e4f7eaae
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4be943b83d1b2286a01731de87dd2b0af34cb322
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860083"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805476"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>澳洲政府資訊安全性註冊評估者計畫 （次）
 

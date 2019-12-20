@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 51f242408e749e7d9bde60a9d462d4a9156f68fc
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 39ce4518e12b4446b339cbf7341a354bf5bd8876
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633582"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805966"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>在進階電子文件中的文件的中繼資料欄位
 
@@ -35,15 +35,15 @@ ms.locfileid: "39633582"
 
 - 中繼資料欄位 （在**描述] 欄**中） 的描述。
 
-| 欄位名稱 | 可搜尋的欄位名稱 | 匯出的欄位名稱 | 顯示欄位名稱 | 描述 |
-| :- |  :- |  :- |  :- |  :- |
+|欄位名稱|可搜尋的欄位名稱|匯出的欄位名稱|顯示欄位名稱|描述|
+|:-|:-|:-|:-|:-|
 | 附件內容識別碼 | AttachmentContentId |  | 附件內容識別碼 | 附件的內容識別碼的項目。 |
 | 附件名稱 | AttachmentNames | Attachment_Names | 附件名稱 | 附件的名稱清單。 |
 | Attorney-client 用戶端權限分數 | AttorneyClientPrivilegeScore |  | Attorney-client 用戶端權限分數 | 設定律師-委託人權限模型內容分數。 |
 | 作者 | 作者 | Doc_authors | 作者 | 從文件中繼資料的作者。 |
 | 密件副本 | 密件副本 | Email_bcc | 密件副本 | 郵件類型的 [密件副本] 欄位。  格式為**DisplayName \<SMTPAddress>**。 |
 | 副本 | 副本 | Email_cc | 副本 | 郵件類型的 [副本] 欄位。  格式為**DisplayName \<SMTPAddress>**。 |
-| 合規性標籤 | ComplianceLabels | Compliance_labels | 合規性標籤 | 套用 Office 365 中的合規性標籤。 |
+| 合規性標籤 | ComplianceLabels | Compliance_labels | 合規性標籤 |[保留標籤](labels.md)套用至 Office 365 中的內容。 |
 | 複合路徑 | CompoundPath | Compound_path | 複合路徑 | 描述項目的來源的人力可讀取路徑。 |
 | 內容 | 內容 |  |  | 擷取的項目的文字。 |
 | 交談內文 | 交談內文 |  | 交談內文 | 交談項目的本文。 |
@@ -53,7 +53,7 @@ ms.locfileid: "39633582"
 | 交談 Pdf 時間 | ConversationPdfTime |  | 交談 Pdf 時間 | PDF 版本交談的建立日期。 |
 | 交談 Redaction 燒錄時間 | ConversationRedactionBurnTime |  | 交談 Redaction 燒錄時間 | PDF 版本的交談建立聊天室的日期。 |
 | 建立的文件日期 | CreatedTime | Doc_date_created | 建立的文件日期 | 從文件中繼資料建立日期。 |
-| Custodian | Custodian | Custodian | Custodian | Custodian 項目名稱已與相關聯。 |
+| 監管人 | 監管人 | 監管人 | 監管人 | Custodian 項目名稱已與相關聯。 |
 | 日期 | 日期 | 日期 | 日期 | 日期是取決於該檔案類型的計算的欄位。<br />**電子郵件**： 傳送日期<br />**電子郵件附件**： 上次修改日期的文件中，如果無法使用，父項的傳送日期<br />**內嵌文件**： 上次修改日期的文件中，如果無法使用，父項的上次修改日期。<br />**SPO 文件 （包含最新附件）**: SharePoint 上次修改日期，如果沒有可用的文件上次修改日期<br />**非 Office 文件**： 上次修改日期<br />**會議**： 會議開始日期<br />**語音信箱**： 傳送日期<br />**IM**： 傳送日期。 |
 | 其他路徑 | Dedupedcompoundpath | Deduped_compound_path | 其他路徑 | 複合完全重複的文件的路徑清單 (電子郵件： 根據文件的內容： 根據雜湊)。 |
 | 其他 custodians | DedupedCustodians | Deduped_custodians | 其他 custodians | Custodians 完全重複的文件的清單 (電子郵件： 根據內容上; 在文件： 根據雜湊)。 |

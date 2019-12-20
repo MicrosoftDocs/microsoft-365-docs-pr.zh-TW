@@ -1,5 +1,5 @@
 ---
-title: 部署到 Office 365 中的 Facebook 資料保存的連接器
+title: 部署封存 Facebook 資料的連接器
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定原生的連接器，以匯入並封存至 Office 365 的 Facebook 商務頁面。 此資料會匯入至 Office 365 之後，您可以使用合規性功能，例如合法持有、 內容搜尋和保留原則來管理您的組織 Facebook 資料的控管。
-ms.openlocfilehash: 786ff97c558a5618643783de803c742c50185f00
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e1ab281b8a3b684f408f80f86246778a9ee6267d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685535"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806256"
 ---
-# <a name="deploy-a-connector-to-archive-facebook-data-in-office-365"></a>部署到 Office 365 中的 Facebook 資料保存的連接器
+# <a name="deploy-a-connector-to-archive-facebook-data"></a>部署封存 Facebook 資料的連接器
 
 本文包含的逐步程序來部署使用 Office 365 匯入服務 Facebook 商務頁面的資料匯入至 Office 365 的連接器。 此程序的高階概觀與部署的 Facebook 連接器所需的必要條件清單，請參閱[使用 Office 365 （預覽） 中的 Facebook 資料保存的範例連接器](archive-facebook-data-with-sample-connector.md)。 
 
@@ -232,9 +232,9 @@ ms.locfileid: "38685535"
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>步驟 7： 設立安全性 & 合規性中心中的自訂連接器
 
-1. 移至 [ <https://protection.office.com> ，然後按一下 [**資料控管\>匯入\>封存協力廠商資料**。
+1. 移至 [ <https://protection.office.com> ，然後按一下 [**資訊控管\>匯入\>封存協力廠商資料**。
 
-   ![移至安全性與合規性中心，按一下 [資料控管 > 匯入 > 封存協力廠商資料](media/FBCimage44.png)
+   ![移至安全性與合規性中心，按一下 [控管 > 匯入 > 封存協力廠商資料的資訊](media/FBCimage44.png)
 
 2.  按一下 [**新增連接器**]，然後按一下 [ **Facebook 頁面**。
 
@@ -278,7 +278,7 @@ ms.locfileid: "38685535"
 
     ![按一下 [完成] 結束連接器服務應用程式](media/FBCimage53.png)
 
-11. 在 [**設定篩選器**] 頁面中，您可以套用篩選器來匯入 （和封存） 特定天數的項目。 按一下 **[下一步]**。
+11. 在 [**設定篩選器**] 頁面中，您可以套用篩選器來匯入 （和封存） 特定天數的項目。 按 [下一步]****。
 
     ![套用篩選器來匯入特定天數的項目](media/FBCimage54.png)
 

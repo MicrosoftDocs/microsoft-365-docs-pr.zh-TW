@@ -3,6 +3,7 @@ title: 在 Office 365 進階電子文件探索中定義反白顯示的關鍵字�
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: '了解如何將使用者定義關鍵字新增至相關性來協助識別相關的檔案時在 Office 365 進階電子文件探索中標記並指定成本參數。  '
-ms.openlocfilehash: 4542e80e5324a35df2e7dc8e7e0cf09f37ae1ef4
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 967258c152c12692cc5eb51f6553317161efa695
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071340"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806126"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中定義反白顯示的關鍵字與進階的選項
 

@@ -1,5 +1,5 @@
 ---
-title: 部署封存 Twitter 資料 Office 365 中的連接器
+title: 部署封存 Twitter 資料的連接器
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定原生的連接器，以匯入並封存 Twitter 資料到 Office 365。 此資料會匯入至 Office 365 之後，您可以使用合規性功能，例如合法持有、 內容搜尋和保留原則來管理您的組織 Twitter 資料的控管。
-ms.openlocfilehash: fda03e3e489b0ae9c754f2eba18bc60785bb3def
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: 87faad6546d70b1e3893e2f5737af189ebb5f77b
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685537"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806146"
 ---
-# <a name="deploy-a-connector-to-archive-twitter-data-in-office-365"></a>部署封存 Twitter 資料 Office 365 中的連接器
+# <a name="deploy-a-connector-to-archive-twitter-data"></a>部署封存 Twitter 資料的連接器
 
 本文包含的逐步程序來部署您的組織 Twitter 帳戶的資料匯入至 Office 365 會使用 Office 365 匯入服務的連接器。 此程序的高階概觀與部署 Twitter 連接器所需的必要條件清單，請參閱[使用封存 Twitter 資料 Office 365 （預覽） 中的範例連接器](archive-twitter-data-with-sample-connector.md)。 
 
@@ -206,7 +206,7 @@ ms.locfileid: "38685537"
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security-and-compliance-center"></a>步驟 7： 設立安全性與合規性中心中的自訂連接器
 
-1.  移至 [ <https://protection.office.com> ，然後按一下 [**資料控管\>匯入\>封存協力廠商資料**。
+1.  移至 [ <https://protection.office.com> ，然後按一下 [**資訊控管\>匯入\>封存協力廠商資料**。
 
     ![移至安全性與合規性中心中封存協力廠商資料頁面](media/TCimage36.png)
 
@@ -242,7 +242,7 @@ ms.locfileid: "38685537"
 
 8. 按一下 [**完成**] 以完成 Twitter 連接器設定。
 
-9. 在 [**設定篩選器**] 頁面中，您可以套用篩選器來匯入 （和封存） 特定天數的項目。 按一下 **[下一步]**。
+9. 在 [**設定篩選器**] 頁面中，您可以套用篩選器來匯入 （和封存） 特定天數的項目。 按 [下一步]****。
 
    ![設定篩選要匯入特定天數之項目](media/TCimage44.png)
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性分數可幫助組織簡化和自動化的風險評估，並建議建議的動作，以協助地址的風險。
-ms.openlocfilehash: f604f52fd66664aeb1b61fb873cfe40e8f48115c
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: c13b4e345f5ab9bee7a0edd134aea73c23d84036
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38685381"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806656"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft 合規性分數 （預覽）
 
@@ -107,17 +107,19 @@ Microsoft 合規性分數是在 Microsoft 365 合規性中心，以協助您了�
 預先設定的範本的合規性分數是：
 
 1. [ISO 27001: 2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-2. [ISO 27018: 2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-3. [NIST 800-53 修訂 4](https://go.microsoft.com/fwlink/?linkid=2109075)
-4. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-5. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-6. [雲端安全聯盟 (CSA) 雲端控制項矩陣 (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+3. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+4. [NIST 800-53 修訂 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+5. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+6. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+7. [雲端安全聯盟 (CSA) 雲端控制項矩陣 (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
 8. [聯邦金融機構檢查委員會 (FFIEC) 的資訊安全性手冊](https://go.microsoft.com/fwlink/?linkid=2109077) 
-8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
-9. [FedRAMP 中度](https://go.microsoft.com/fwlink/?linkid=2108869)
-10. [歐盟 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
-11. [加州消費者隱私權法案 (CCPA)-預覽](https://go.microsoft.com/fwlink/?linkid=2108871)
-12. [Microsoft 365 的資料保護基準](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
+10. [FedRAMP 中度](https://go.microsoft.com/fwlink/?linkid=2108869)
+11. [歐盟 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
+12. [加州消費者隱私權法案 (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) （預覽）
+13. [次](https://go.microsoft.com/fwlink/?linkid=2113709) / [澳洲政府 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) （預覽）
+14. [Microsoft 365 的資料保護基準](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
 > [!NOTE]
 > 期間公開預覽，請移至合規性管理員中建立及管理自己的範本。

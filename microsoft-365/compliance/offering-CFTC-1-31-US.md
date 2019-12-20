@@ -1,7 +1,7 @@
 ---
 title: 貿易委員會 (CFTC) 規則 1.31(c-d) 美國境內的市售 Future
 description: 獨立評估公司驗證 Azure 與 Office 365 可協助符合 CFTC 規則 1.31 記錄保留與固定的儲存需求的財務公司。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: db357418b87e98ee0f649e48b1c00f9073d5e5de
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: e2c911592dea19afeca8d0f347e20ac3bd6c6ba2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860063"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805436"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>貿易委員會 (CFTC) 規則 1.31(c-d) 美國境內的市售 Future
 

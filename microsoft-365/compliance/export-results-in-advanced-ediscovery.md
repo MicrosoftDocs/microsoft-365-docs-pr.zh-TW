@@ -3,6 +3,7 @@ title: 在 Office 365 進階電子文件探索中匯出結果
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: '了解如何定義從 Office 365 進階電子文件探索，包括指定參數匯出批次的程序中匯出結果的選項。 '
-ms.openlocfilehash: ad11ac742f3157811523164c7e4d063e1d101343
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6d535c24a3acfeb09f45ff26e0792f852bf7e016
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077031"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805866"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中匯出結果
 

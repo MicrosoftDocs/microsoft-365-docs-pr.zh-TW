@@ -3,6 +3,7 @@ title: 在 Office 365 進階電子文件探索中定義案例與租用戶設定
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: '了解標籤、 跨模組，以及您可以在 Office 365 進階電子文件探索案例層級定義的租用戶設定。  '
-ms.openlocfilehash: 69e6e824a7c6a5698e9dc25095d4fab49e369490
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 19c653544173afe31b299b9ab5d2b4fc37415630
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076372"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806116"
 ---
 # <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中定義案例與租用戶設定
 

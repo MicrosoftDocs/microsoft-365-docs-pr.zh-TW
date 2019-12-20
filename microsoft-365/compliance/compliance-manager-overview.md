@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: f8683fd3b3462a44856266ec0e3bef96829b032c
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 97cbc676f9de070d1532d1e56c96db0efcce8bd0
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633652"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807332"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance Manager （預覽）
 
@@ -51,7 +51,7 @@ ms.locfileid: "39633652"
 
 ## <a name="assessments"></a>「 評估 」
 
-[「 評估 」](working-with-compliance-manager.md#assessments)是可讓您組織的 Microsoft 和您的組織評估雲端服務安全性與合規性風險之間共用的責任的控制項的容器。 評估可協助您實作合規性標準和適用的資料保護標準、 法令或法律所指定的資料保護保護措施。 它們可協助您辨識針對選取的業界標準的所選的 Microsoft 雲端服務，您的資料保護和合規性狀態。 評估完成所實作的評估中包含對應至標準憑證的控制項。
+[「 評估 」](working-with-compliance-manager.md#assessments)是可讓您組織根據 Microsoft 和您的組織評估雲端服務安全性與合規性風險之間共用的責任的控制項的容器。 評估可協助您實作合規性標準和適用的資料保護標準、 法令或法律所指定的資料保護保護措施。 它們可協助您辨識針對選取的業界標準的所選的 Microsoft 雲端服務，您的資料保護和合規性狀態。 評估完成所實作的評估中包含對應至標準憑證的控制項。
 
 根據預設，合規性管理員會建立組織的下列 「 評估 」:
 
@@ -124,7 +124,7 @@ ms.locfileid: "39633652"
   
 ## <a name="manage-evidence"></a>管理辨識項
 
-合規性管理員中可以儲存辨識您實作工作執行測試和客戶管理控制措施的驗證。 辨識項包含文件、 試算表、 螢幕擷取畫面，影像、 指令碼、 指令碼輸出檔及其他檔案。 合規性管理員也會自動接收遙測，並建立辨識項記錄的動作項目與安全分數整合。 任何以作為證據到合規性管理員上傳的資料會儲存在美國境內 Microsoft Cloud Storage 網站上。 此資料會複寫跨 Azure 位於東南亞及西歐的區域。
+合規性管理員中可以儲存的周圍測試您實作工作的辨識項和客戶管理控制措施的驗證。 辨識項包含文件、 試算表、 螢幕擷取畫面，影像、 指令碼、 指令碼輸出檔及其他檔案。 合規性管理員也會自動接收遙測，並建立辨識項記錄的動作項目與安全分數整合。 任何以作為證據到合規性管理員上傳的資料會儲存在美國境內 Microsoft Cloud Storage 網站上。 此資料會複寫跨 Azure 位於東南亞及西歐的區域。
 
 ## <a name="templates"></a>範本
 
@@ -133,17 +133,19 @@ ms.locfileid: "39633652"
 是包含與合規性管理員中預先設定的範本：
 
 1. [ISO 27001: 2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-2. [ISO 27018: 2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-3. [NIST 800-53 修訂 4](https://go.microsoft.com/fwlink/?linkid=2109075)
-4. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-5. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-6. [雲端安全聯盟 (CSA) 雲端控制項矩陣 (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+3. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+4. [NIST 800-53 修訂 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+5. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+6. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+7. [雲端安全聯盟 (CSA) 雲端控制項矩陣 (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
 8. [聯邦金融機構檢查委員會 (FFIEC) 的資訊安全性手冊](https://go.microsoft.com/fwlink/?linkid=2109077) 
-8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
-9. [FedRAMP 中度](https://go.microsoft.com/fwlink/?linkid=2108869)
-10. [歐盟 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
-11. [加州消費者隱私權法案 (CCPA)-預覽](https://go.microsoft.com/fwlink/?linkid=2108871)
-12. [Microsoft 365 的資料保護基準](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
+10. [FedRAMP 中度](https://go.microsoft.com/fwlink/?linkid=2108869)
+11. [歐盟 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
+12. [加州消費者隱私權法案 (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) （預覽）
+13. [次](https://go.microsoft.com/fwlink/?linkid=2113709) / [澳洲政府 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) （預覽）
+14. [Microsoft 365 的資料保護基準](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
 ## <a name="compliance-score"></a>合規性分數
 

@@ -1,5 +1,5 @@
 ---
-title: 開始使用 Microsoft 365 相關性 （預覽）
+title: 開始使用可訓練的分類器 (預覽)
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 類別器是內容的的工具，您可以訓練，讓它正值與負值的範例，來查看辨識各種類型。 類別器調校完成之後，您確認它的結果正確無誤。 然後您可以用它來搜尋整個組織的內容及分類它納入資料外洩防護 (DLP) 或保留原則或套用保留或敏感度標籤。
-ms.openlocfilehash: 458f7e6c9f15bac71cd3dadf2ed64e1c1f4ef1c5
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: f37549a311af630ced0191b86f0be47b295f93ea
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633862"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807422"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>開始使用可訓練的分類器 (預覽)
 

@@ -1,7 +1,7 @@
 ---
 title: 食物和藥物管理 CFR 標題 21 11 部分
 description: Microsoft 可協助客戶遵守這些美國食物和藥物管理規定。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 7e8d24aecb2343ed03a1d224b21060619426717f
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: adda0e14a5712a4943ee37e029b96aecb0cd7c58
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859873"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805046"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>食物和藥物管理 CFR 標題 21 11 部分
 

@@ -1,7 +1,7 @@
 ---
 title: 文件刪除原則概觀
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: 基於規範、法律或其他商業需求，您的組織可能需要將文件保留一段時間。 但如果您的組織保留文件的時間過久，則會產生不必要的法律風險。 使用文件刪除原則，您可以在一段特定時間後，透過刪除網站上的文件以積極降低風險 - 例如，您可以在文件建立五年之後，在使用者的商務用 OneDrive 網站上刪除文件。
-ms.openlocfilehash: 87d79f6b8f4381693bf043bc0e04fcfe4359fa90
-ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
-ms.translationtype: HT
+ms.openlocfilehash: 85a8a4464a14cb2e0b9e901fbf3912c7ff3faa8d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37342946"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806046"
 ---
 # <a name="overview-of-document-deletion-policies"></a>文件刪除原則概觀
 

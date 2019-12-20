@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中封存第三方資料
+title: 封存協力廠商資料
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 系統管理員可以從匯入協力廠商資料社交媒體平台、 立即訊息平台，以及文件共同作業平台到 Office 365 組織中的信箱。 這可讓您封存 Facebook、 Twitter 和其他 Office 365 中的協力廠商資料來源的資料。 然後您可以使用或協力廠商資料套用 Office 365 符合性功能 （例如法律保留、 eDiscovery、 就地封存和保留原則）。
-ms.openlocfilehash: 084cacf1c2bef8b5786e6dba804f9a1e87001338
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 10ec436887816080716ecd8870e2b2da8021e9af
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615583"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807462"
 ---
-# <a name="archive-third-party-data-in-office-365"></a>在 Office 365 中封存第三方資料
+# <a name="archive-third-party-data"></a>封存協力廠商資料
 
 Office 365 可讓系統管理員匯入及封存立即訊息平台，與文件共同作業平台，您的 Office 365 組織中的信箱從社交媒體平台的協力廠商資料。 您可以匯入至 Office 365 的協力廠商資料來源的範例包括下列服務： 
   

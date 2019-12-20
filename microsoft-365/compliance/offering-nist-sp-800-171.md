@@ -1,7 +1,7 @@
 ---
 title: NIST SP 800-171
 description: NIST SP 800-171 指導方針來保護出版資訊系統中的控管的未分類的資訊 (CUI) 遵守 Microsoft 雲端服務。
-keywords: Microsoft 365、合規性、方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: e7b3dbad49fd57005dffd7e39e61906efdab771d
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: a7967a4bd12f98f3654f2b5006568c868a7e134f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859343"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804016"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800-171
 
