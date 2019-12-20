@@ -3,6 +3,7 @@ title: 匯入非 Office 365 進階電子文件探索分析內容
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: 如何步驟以匯入內容，不會儲存在 O365 到 Azure blob，讓它可以與 AeD 分析
-ms.openlocfilehash: 1c971c9f95d03d05db76f80344adeb93b0a72c06
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: aa14a54c20ac580c6412e8dc534ec44520abb3c8
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076979"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823785"
 ---
 # <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>匯入非 Office 365 進階電子文件探索分析內容
 
@@ -47,7 +48,8 @@ ms.locfileid: "37076979"
     
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>非 Office 365 內容上傳至進階電子文件
 
-1. EDiscovery 管理員或 eDiscovery 系統管理員，以開啟 [ **eDiscovery**]，並開啟非 Office 365 資料就會上傳到的案例。 如果您需要建立案例，請參閱[管理 Office 365 安全性中的 eDiscovery 案例&amp;合規性中心](manage-ediscovery-cases.md)
+
+1. EDiscovery 管理員或 eDiscovery 系統管理員，以開啟 [ **eDiscovery**]，並開啟非 Office 365 資料就會上傳到的案例。 如果您需要建立案例，請參閱[管理 Office 365 安全性中的 eDiscovery 案例&amp;合規性中心](ediscovery-cases.md)
     
 2. 按一下 [**切換至進階電子文件**
     
@@ -84,6 +86,4 @@ ms.locfileid: "37076979"
     > 一旦成功處理進階電子文件的容器，您將不再能夠將新的內容新增至 Azure 中的 SAS 儲存。 如果您收集其他內容，而且您想要將其新增至進階電子文件探索分析案例，您必須建立新的**非 Office 365 資料**容器，並重複此程序。 
   
     > [!NOTE]
-    > 如果容器*不會處理成功由於資料夾命名問題*，而且您然後修正問題，您仍然必須建立新的容器，並重新連線並上傳一次使用本文中的程序。 
-  
-
+    > 如果容器*不會處理成功由於資料夾命名問題*，而且您然後修正問題，您仍然必須建立新的容器，並重新連線並上傳一次使用本文中的程序。

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: c50122f390809e145af621ed6341d02ae9c3b8cf
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 556d3994241db65b70feec55ac0f96469f549361
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202354"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962250"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>搭配使用 Microsoft Compliance Manager （預覽）
 
@@ -78,7 +78,7 @@ ms.locfileid: "39202354"
 
 2. 在服務信任入口網站上方的功能表列中，選取 [**系統管理員**，然後選擇**設定**。
 
-4. 在 [**安全分數**] 索引標籤中，選取適當的按鈕為您選擇設定。
+4. 在 [**安全分數**] 索引標籤中，選取您所選擇的設定適當的按鈕。
 
 **附註：** 只有全域系統管理員可以開啟或關閉自動更新的所有動作。 合規性管理員中系統管理員可以全域開啟 [自動更新的個別的動作，但不適用於所有動作。
 

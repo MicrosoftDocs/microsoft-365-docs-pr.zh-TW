@@ -1,7 +1,7 @@
 ---
 title: 歐盟社會安全號碼或對等項目識別碼
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/17/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主題顯示什麼資料外洩防護 (DLP) 原則會尋找當它偵測到歐盟社會安全號碼或對等識別碼敏感資訊類型。 此敏感資訊類型定義不同模式、 關鍵字、 和其他辨識項的每個國家/地區。
-ms.openlocfilehash: b42a8d927e18f813eb6ef6d1d55b2de15ea9dcd5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0666818dc892070f5c2f0c34abd8ca33d1253e33
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077066"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805926"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>歐盟社會安全號碼或對等項目識別碼
 
@@ -608,7 +608,7 @@ magyar áfa szám
     
   - 序號中的最後一個數字表示性別因 1 女 2 男奇數和偶數女性的工作分派
     
-  - 最多 1990，工作分派的序號採納郡出生數字的承載或 （如果出生之前 1947年） 其中他有已住，根據稅務記錄上 1947 年 1 月 1，具有特殊的程式碼 (通常為 7th 的數字 9) 的immigrants 
+  - 最多 1990，工作分派的序號採納郡出生數字的承載或 （如果出生之前 1947年） 其中他有已住，根據稅務記錄上 1947 年 1 月 1，具有 immigrants 特殊程式碼 (通常為 7th 的數字 9) 
     
 - 一個檢查碼
     
@@ -671,7 +671,7 @@ personnummer#
   
 identifikationsnumret#
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
 

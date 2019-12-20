@@ -1,7 +1,7 @@
 ---
 title: 歐盟駕照編號
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/17/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主題顯示什麼資料外洩防護 (DLP) 原則會尋找當它偵測到歐盟駕駛執照號碼敏感資訊類型。 此敏感資訊類型定義不同模式、 關鍵字、 和其他辨識項的每個國家/地區。
-ms.openlocfilehash: f1a95ecbaf6b6d1ac189290dd6d076cfd91ab30f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6df025caf8d06c617e09a3b53dc6c82d69aaf5a8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077081"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805956"
 ---
 # <a name="eu-drivers-license-number"></a>歐盟駕照編號
 
@@ -1055,7 +1055,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 如需詳細資訊，請參閱區段 」 英國 驅動程式的授權數目 」 中[的敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
 
