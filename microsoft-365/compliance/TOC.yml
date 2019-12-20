@@ -203,7 +203,7 @@
           href: use-network-upload-to-import-rms-encrypted-pst-files.md
         - name: 匯入 PST 檔案的常見問題集
           href: faqimporting-pst-files-to-office-365.md
-        - name: 在 Office 365 中封存第三方資料
+        - name: 封存協力廠商資料
           href: archiving-third-party-data.md
           items:
             - name: 使用範例連接器來封存 Facebook 資料
@@ -317,8 +317,6 @@
           href: export-search-results.md
         - name: 匯出內容搜尋報告
           href: export-a-content-search-report.md
-        - name: 使用 Microsoft Edge 中的 eDiscovery 匯出工具
-          href: configure-edge-to-export-search-results.md
         - name: 搜尋並刪除電子郵件訊息
           href: search-for-and-delete-messages-in-your-organization.md
         - name: 搜尋 Office 365 中內部部署使用者的雲端式信箱
@@ -749,7 +747,6 @@
         - name: 適用於內部部署 Windows Server 檔案共用的 GDPR
           href: gdpr-for-on-premises-file-shares.md
 - name: 法規合規性行動計劃
-  href: compliance-solutions-overview.md
   items:
     - name: ISO - 建議使用的行動計劃
       href: iso-action-plan.md
@@ -855,7 +852,7 @@
           href: offering-iso-9001.md
         - name: SOC
           href: offering-soc.md
-        - name: WCAG 2.1
+        - name: WCAG
           href: offering-wcag-2-1.md
     - name: 美國政府
       items:
@@ -935,6 +932,8 @@
               href: offering-rbi-irdai-india.md
             - name: SEC 17a-4
               href: offering-sec-17a-4.md
+            - name: 秒規定 SCI
+              href: offering-sec-reg-sci.md
             - name: SOC
               href: offering-soc.md
             - name: SOX
