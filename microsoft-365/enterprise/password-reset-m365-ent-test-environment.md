@@ -3,7 +3,7 @@ title: 適用於 Microsoft 365 測試環境的密碼重設
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,87 +16,87 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定並測試適用於 Microsoft 365 測試環境的密碼重設。
-ms.openlocfilehash: 100db14b7940d68a185c3f6065df053aed7fbf73
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: 930c5b4a4ddcc4866a586ff444380ff6dcd66238
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757710"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801408"
 ---
-# <a name="password-reset-for-your-microsoft-365-test-environment"></a><span data-ttu-id="6c3be-103">適用於 Microsoft 365 測試環境的密碼重設</span><span class="sxs-lookup"><span data-stu-id="6c3be-103">Password reset for your Microsoft 365 test environment</span></span>
+# <a name="password-reset-for-your-microsoft-365-test-environment"></a><span data-ttu-id="08a95-103">適用於 Microsoft 365 測試環境的密碼重設</span><span class="sxs-lookup"><span data-stu-id="08a95-103">Password reset for your Microsoft 365 test environment</span></span>
 
-<span data-ttu-id="6c3be-104">*這個測試實驗室指南只能用於 Microsoft 365 企業版測試環境。*</span><span class="sxs-lookup"><span data-stu-id="6c3be-104">*This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*</span></span>
+<span data-ttu-id="08a95-104">*這個測試實驗室指南只能用於 Microsoft 365 企業版測試環境。*</span><span class="sxs-lookup"><span data-stu-id="08a95-104">*This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*</span></span>
 
-<span data-ttu-id="6c3be-105">Azure Active Directory (Azure AD) 自助密碼重設 (SSPR) 允許使用者重設或解除鎖定其密碼或帳戶。</span><span class="sxs-lookup"><span data-stu-id="6c3be-105">Azure Active Directory (Azure AD) self-service password reset (SSPR) allows users to reset or unlock their passwords or accounts.</span></span> 
+<span data-ttu-id="08a95-105">Azure Active Directory (Azure AD) 自助密碼重設 (SSPR) 允許使用者重設或解除鎖定其密碼或帳戶。</span><span class="sxs-lookup"><span data-stu-id="08a95-105">Azure Active Directory (Azure AD) self-service password reset (SSPR) allows users to reset or unlock their passwords or accounts.</span></span> 
 
-<span data-ttu-id="6c3be-106">本文將以三階段說明如何針對 Microsoft 365 測試環境，設定及測試密碼重設：</span><span class="sxs-lookup"><span data-stu-id="6c3be-106">This article describes how you can configure and test password resets in your Microsoft 365 test environment in three phases:</span></span>
+<span data-ttu-id="08a95-106">本文將以三階段說明如何針對 Microsoft 365 測試環境，設定及測試密碼重設：</span><span class="sxs-lookup"><span data-stu-id="08a95-106">This article describes how you can configure and test password resets in your Microsoft 365 test environment in three phases:</span></span>
 
-1.  <span data-ttu-id="6c3be-107">建立 Microsoft 365 企業版測試環境。</span><span class="sxs-lookup"><span data-stu-id="6c3be-107">Create the Microsoft 365 Enterprise test environment.</span></span>
-2.  <span data-ttu-id="6c3be-108">啟用密碼回寫。</span><span class="sxs-lookup"><span data-stu-id="6c3be-108">Enable password writeback.</span></span>
-3.  <span data-ttu-id="6c3be-109">設定及測試「使用者 2」帳戶的密碼重設。</span><span class="sxs-lookup"><span data-stu-id="6c3be-109">Configure and test password reset for the User 2 account.</span></span>
+1.  <span data-ttu-id="08a95-107">建立 Microsoft 365 企業版測試環境。</span><span class="sxs-lookup"><span data-stu-id="08a95-107">Create the Microsoft 365 Enterprise test environment.</span></span>
+2.  <span data-ttu-id="08a95-108">啟用密碼回寫。</span><span class="sxs-lookup"><span data-stu-id="08a95-108">Enable password writeback.</span></span>
+3.  <span data-ttu-id="08a95-109">設定及測試「使用者 3」帳戶的密碼重設。</span><span class="sxs-lookup"><span data-stu-id="08a95-109">Configure and test password reset for the User 2 account.</span></span>
     
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> <span data-ttu-id="6c3be-111">按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。</span><span class="sxs-lookup"><span data-stu-id="6c3be-111">Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.</span></span>
+> <span data-ttu-id="08a95-111">按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。</span><span class="sxs-lookup"><span data-stu-id="08a95-111">Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.</span></span>
 
-## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a><span data-ttu-id="6c3be-112">階段 1：設定適用於 Microsoft 365 測試環境的密碼雜湊同步處理</span><span class="sxs-lookup"><span data-stu-id="6c3be-112">Phase 1: Configure password hash synchronization for your Microsoft 365 test environment</span></span>
+## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a><span data-ttu-id="08a95-112">階段 1：設定適用於 Microsoft 365 測試環境的密碼雜湊同步處理</span><span class="sxs-lookup"><span data-stu-id="08a95-112">Phase 1: Configure password hash synchronization for your Microsoft 365 test environment</span></span>
 
-<span data-ttu-id="6c3be-p101">首先，請遵循[密碼雜湊同步處理](password-hash-sync-m365-ent-test-environment.md)中的指示。以下是您產生的組態。</span><span class="sxs-lookup"><span data-stu-id="6c3be-p101">First, follow the instructions in [password hash synchronization](password-hash-sync-m365-ent-test-environment.md). Here is your resulting configuration.</span></span>
+<span data-ttu-id="08a95-p101">首先，請遵循[密碼雜湊同步處理](password-hash-sync-m365-ent-test-environment.md)中的指示。以下是您產生的組態。</span><span class="sxs-lookup"><span data-stu-id="08a95-p101">First, follow the instructions in [password hash synchronization](password-hash-sync-m365-ent-test-environment.md). Here is your resulting configuration.</span></span>
   
 ![使用密碼雜湊同步處理測試環境的模擬企業](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
-<span data-ttu-id="6c3be-116">此組態包含：</span><span class="sxs-lookup"><span data-stu-id="6c3be-116">This configuration consists of:</span></span> 
+<span data-ttu-id="08a95-116">此組態包含：</span><span class="sxs-lookup"><span data-stu-id="08a95-116">This configuration consists of:</span></span> 
   
-- <span data-ttu-id="6c3be-117">Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。</span><span class="sxs-lookup"><span data-stu-id="6c3be-117">Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions.</span></span>
-- <span data-ttu-id="6c3be-118">簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成</span><span class="sxs-lookup"><span data-stu-id="6c3be-118">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.</span></span> 
-- <span data-ttu-id="6c3be-119">Azure AD Connect 會在 APP1 上執行，以將 TESTLAB Active Directory Domain Services (AD DS) 網域同步至 Microsoft 365 或 Office 365 訂閱的 Azure AD 租用戶。</span><span class="sxs-lookup"><span data-stu-id="6c3be-119">Azure AD Connect runs on APP1 to synchronize the TESTLAB Active Directory Domain Services (AD DS) domain to the Azure AD tenant of your Office 365 and EMS E5 subscriptions.</span></span>
+- <span data-ttu-id="08a95-117">Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。</span><span class="sxs-lookup"><span data-stu-id="08a95-117">Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions.</span></span>
+- <span data-ttu-id="08a95-118">簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成</span><span class="sxs-lookup"><span data-stu-id="08a95-118">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.</span></span> 
+- <span data-ttu-id="08a95-119">Azure AD Connect 會在 APP1 上執行，以將 TESTLAB Active Directory Domain Services (AD DS) 網域同步至 Microsoft 365 或 Office 365 訂閱的 Azure AD 租用戶。</span><span class="sxs-lookup"><span data-stu-id="08a95-119">Azure AD Connect runs on APP1 to synchronize the TESTLAB Active Directory Domain Services (AD DS) domain to the Azure AD tenant of your Microsoft 365 or Office 365 subscription.</span></span>
 
+## <a name="phase-2-enable-password-writeback"></a><span data-ttu-id="08a95-120">階段 2：啟用密碼回寫</span><span class="sxs-lookup"><span data-stu-id="08a95-120">Phase 2: Enable password writeback</span></span>
 
-## <a name="phase-2-enable-password-writeback"></a><span data-ttu-id="6c3be-120">階段 2：啟用密碼回寫</span><span class="sxs-lookup"><span data-stu-id="6c3be-120">Phase 2: Enable password writeback</span></span>
+<span data-ttu-id="08a95-121">遵循[測試實驗室指南密碼回寫階段 2](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain) 中的指示。</span><span class="sxs-lookup"><span data-stu-id="08a95-121">Follow the instructions in [Phase 2 of the password writeback Test Lab Guide](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain).</span></span>
 
-<span data-ttu-id="6c3be-121">遵循[測試實驗室指南密碼回寫階段 2](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain) 中的指示。</span><span class="sxs-lookup"><span data-stu-id="6c3be-121">Follow the instructions in [Phase 2 of the password writeback Test Lab Guide](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain).</span></span>
-
-<span data-ttu-id="6c3be-122">您必須啟用密碼回寫才能使用密碼重設。</span><span class="sxs-lookup"><span data-stu-id="6c3be-122">You must have password writeback enabled to use password reset.</span></span>
+<span data-ttu-id="08a95-122">您必須啟用密碼回寫才能使用密碼重設。</span><span class="sxs-lookup"><span data-stu-id="08a95-122">You must have password writeback enabled to use password reset.</span></span>
   
-## <a name="phase-3-configure-and-test-password-reset"></a><span data-ttu-id="6c3be-123">階段 3：設定及測試密碼重設</span><span class="sxs-lookup"><span data-stu-id="6c3be-123">Phase 3: Configure and test password reset</span></span>
+## <a name="phase-3-configure-and-test-password-reset"></a><span data-ttu-id="08a95-123">階段 3：設定及測試密碼重設</span><span class="sxs-lookup"><span data-stu-id="08a95-123">Phase 3: Configure and test password reset</span></span>
 
-<span data-ttu-id="6c3be-124">在這個階段中，您會在透過群組成員資格在 Azure AD 租用戶中設定密碼重設，然後驗證是否運作正常。</span><span class="sxs-lookup"><span data-stu-id="6c3be-124">In this phase, you configure password reset in the Azure AD tenant through group membership, and then verify that it works.</span></span>
+<span data-ttu-id="08a95-124">在這個階段中，您會在透過群組成員資格在 Azure AD 租用戶中設定密碼重設，然後驗證是否運作正常。</span><span class="sxs-lookup"><span data-stu-id="08a95-124">In this phase, you configure password reset in the Azure AD tenant through group membership, and then verify that it works.</span></span>
 
-<span data-ttu-id="6c3be-125">首先，在特定 Azure AD 群組中啟用該帳戶的密碼重設。</span><span class="sxs-lookup"><span data-stu-id="6c3be-125">First, enable password reset for the accounts in a specific Azure AD group.</span></span>
+<span data-ttu-id="08a95-125">首先，在特定 Azure AD 群組中啟用該帳戶的密碼重設。</span><span class="sxs-lookup"><span data-stu-id="08a95-125">First, enable password reset for the accounts in a specific Azure AD group.</span></span>
 
-1. <span data-ttu-id="6c3be-126">從您瀏覽器的私用執行個體開啟 [https://portal.azure.com](https://portal.azure.com)，然後使用全域系統管理員帳戶的認證登入。</span><span class="sxs-lookup"><span data-stu-id="6c3be-126">From a private instance of your browser, open [https://portal.azure.com](https://portal.azure.com), and then sign in with the credentials of your global administrator account.</span></span>
-2. <span data-ttu-id="6c3be-127">在 Azure 入口網站中，按一下 [Azure Active Directory] > [群組] > [新增群組]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="6c3be-127">In the Azure portal, click **Azure Active Directory > Groups > New group**.</span></span>
-3. <span data-ttu-id="6c3be-p102">將 [群組類型]\*\*\*\* 設為 [安全性]\*\*\*\*、[群族名稱]\*\*\*\* 設為 [PWReset]\*\*\*\*，以及將 [成員類型]\*\*\*\* 設為 [指派]\*\*\*\*，然後按一下 [建立]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="6c3be-p102">Set the **Group type** to **Security**, **Group name** to **PWReset**, and the **Membership type** to **Assigned**. Click **Create**.</span></span>
-5. <span data-ttu-id="6c3be-130">在清單中按一下 [PWReset]\*\*\*\* 群組，然後再按一下 [成員]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="6c3be-130">Click the **PWReset** group in the list, and then click **Members**.</span></span>
-6. <span data-ttu-id="6c3be-p103">按一下 [新增成員]\*\*\*\*、接著按一下 [使用者 2]\*\*\*\*，然後再按一下 [選取]\*\*\*\*。關閉 [PWReset]\*\*\*\* 及 [群組]\*\*\*\* 頁面。</span><span class="sxs-lookup"><span data-stu-id="6c3be-p103">Click **Add members**, click **User 2**, and then click **Select**. Close the **PWReset** and **Group** pages.</span></span>
-7. <span data-ttu-id="6c3be-133">在 Azure Active Directory 頁面上，按一下 [密碼重設]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="6c3be-133">On the Azure Active Directory page, click **Password reset**.</span></span>
-8. <span data-ttu-id="6c3be-134">在 [屬性]\*\*\*\* 頁面的 [啟用自助密碼重設]\*\*\*\* 下，選擇 [選取]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="6c3be-134">From the **Properties** page, under the option **Self Service Password Reset Enabled**, choose **Selected**.</span></span>
-9. <span data-ttu-id="6c3be-135">在 [選取群組]\*\*\*\* 中，選取 [PWReset]\*\*\*\*，然後按一下 [儲存]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="6c3be-135">From **Select group**, select **PWReset**, and then click **Save**.</span></span>
-10. <span data-ttu-id="6c3be-136">關閉私用瀏覽器執行個體。</span><span class="sxs-lookup"><span data-stu-id="6c3be-136">Close the private browser instance.</span></span>
+1. <span data-ttu-id="08a95-126">從您瀏覽器的私用執行個體開啟 [https://portal.azure.com](https://portal.azure.com)，然後使用全域系統管理員帳戶的認證登入。</span><span class="sxs-lookup"><span data-stu-id="08a95-126">From a private instance of your browser, open [https://portal.azure.com](https://portal.azure.com), and then sign in with the credentials of your global administrator account.</span></span>
+2. <span data-ttu-id="08a95-127">在 Azure 入口網站中，按一下 [Azure Active Directory] > [群組] > [新增群組]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="08a95-127">In the Azure portal, click **Azure Active Directory > Groups > New group**.</span></span>
+3. <span data-ttu-id="08a95-128">將 [群組類型]\*\*\*\* 設為 [安全性]\*\*\*\*、[群組名稱]\*\*\*\* 設為 [PWReset]\*\*\*\*，以及將 [成員類型]\*\*\*\* 設為 [指派]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="08a95-128">Set the **Group type** to **Security**, **Group name** to **PWReset**, and the **Membership type** to **Assigned**. Click Create.</span></span> 
+4. <span data-ttu-id="08a95-129">按一下 [成員]\*\*\*\*，尋找並選取 [使用者 3]\*\*\*\*，然後按一下 [選取]\*\*\*\*，接著按一下 [建立]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="08a95-129">Click **Members**, find and select **User 3**, and then click **Select**, and then click **Create**.</span></span>
+5. <span data-ttu-id="08a95-130">關閉 [群組]\*\*\*\* 窗格。</span><span class="sxs-lookup"><span data-stu-id="08a95-130">Close the **Groups** pane.</span></span>
+6. <span data-ttu-id="08a95-131">在 [Azure Active Directory] 窗格中，按一下左側導覽的 [密碼重設]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="08a95-131">In the Azure Active Directory pane, click **Password reset** in the left navigation.</span></span>
+7. <span data-ttu-id="08a95-132">在 [密碼重設屬性]\*\*\*\* 窗格中，選擇 [已啟用自助式密碼重設]\*\*\*\* 選項底下的 [已選取]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="08a95-132">From the **Properties** page, under the option **Self Service Password Reset Enabled**, choose **Selected**.</span></span>
+8. <span data-ttu-id="08a95-133">按一下 [選取群組]\*\*\*\*，選取 [PWReset]\*\*\*\* 群組，然後按一下 [選取] > [儲存]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="08a95-133">Click **Select group**, select the **PWReset** group, and then click **Select > Save**.</span></span>
+9. <span data-ttu-id="08a95-134">關閉私用瀏覽器執行個體。</span><span class="sxs-lookup"><span data-stu-id="08a95-134">Close the private browser instance.</span></span>
 
-<span data-ttu-id="6c3be-137">下一階段，您將測試「使用者 2」帳戶的密碼重設。</span><span class="sxs-lookup"><span data-stu-id="6c3be-137">Next, you test password reset for the User 2 account.</span></span>
+<span data-ttu-id="08a95-135">下一階段，您將測試「使用者 3」帳戶的密碼重設。</span><span class="sxs-lookup"><span data-stu-id="08a95-135">Next, you test password reset for the User 2 account.</span></span>
 
-1. <span data-ttu-id="6c3be-138">開啟新的私用瀏覽器執行個體，並瀏覽至 [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup)。</span><span class="sxs-lookup"><span data-stu-id="6c3be-138">Open a new private browser instance and browse to [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).</span></span>
-2. <span data-ttu-id="6c3be-139">以「使用者 2」的認證登入。</span><span class="sxs-lookup"><span data-stu-id="6c3be-139">Sign in with the User 2 account credentials.</span></span>
-3. <span data-ttu-id="6c3be-140">在 [避免您失去帳戶的存取權]\*\*\*\* 中，將認證電話設為您的手機號碼，並將認證電子郵件設為您的公司或個人電子郵件帳戶。</span><span class="sxs-lookup"><span data-stu-id="6c3be-140">In **Don’t lose access to your account**, set the authentication phone to your mobile phone number and the authentication email to your work or personal email account.</span></span>
-4. <span data-ttu-id="6c3be-141">兩者皆經過驗證之後，按一下 [狀況良好]\*\*\*\*，並關閉瀏覽器的私用執行個體。</span><span class="sxs-lookup"><span data-stu-id="6c3be-141">After both are verified, click **Looks good** and close the private instance of the browser.</span></span>
-5. <span data-ttu-id="6c3be-142">開啟新的私用瀏覽器執行個體並前往 [https://aka.ms/sspr](https://aka.ms/sspr)。</span><span class="sxs-lookup"><span data-stu-id="6c3be-142">Open a new private browser instance and go to [https://aka.ms/sspr](https://aka.ms/sspr).</span></span>
-6. <span data-ttu-id="6c3be-143">以「使用者 2」的帳戶認證登入，輸入 CAPTCHA 顯示的字元，然後再按一下 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="6c3be-143">Sign in with the User 2 account credentials, type the characters from the CAPTCHA, and then click **Next**.</span></span>
-8. <span data-ttu-id="6c3be-p104">對於 [驗證步驟 1]\*\*\*\*，請按一下 [寄電子郵件到我的備用電子郵件地址]\*\*\*\*，然後再按一下 [寄電子郵件]\*\*\*\*。當您收到電子郵件後，請輸入驗證碼，然後再按一下 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="6c3be-p104">For **verification step 1**, click **Email my alternate email**, and then click **Email**. When you receive the email, type the verification code, and then click **Next**.</span></span>
-9. <span data-ttu-id="6c3be-p105">在 [取回您的帳戶]\*\*\*\* 中，輸入「使用者 2」帳戶的新密碼，然後按一下 [完成]\*\*\*\*。請記下「使用者 2」帳戶的密碼變更，並儲存到安全的位置。</span><span class="sxs-lookup"><span data-stu-id="6c3be-p105">In **Get back into your account**, type a new password for the User 2 account, and then click **Finish**. Note the changed password of the User 2 account and store it in a safe location.</span></span>
-10. <span data-ttu-id="6c3be-148">在相同瀏覽器的新分頁中，前往 [https://portal.office.com](https://portal.office.com)，並以「使用者 2」帳戶名稱及新密碼登入。</span><span class="sxs-lookup"><span data-stu-id="6c3be-148">In a separate tab of the same browser, go to [https://portal.office.com](https://portal.office.com), and then sign in with the User 2 account name and its new password.</span></span> <span data-ttu-id="6c3be-149">您應該會看到 [Microsoft Office 首頁]\*\*\*\* 頁面。</span><span class="sxs-lookup"><span data-stu-id="6c3be-149">You should see the **Microsoft Office Home** page.</span></span>
+1. <span data-ttu-id="08a95-136">開啟新的私用瀏覽器執行個體，並瀏覽至 [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup)。</span><span class="sxs-lookup"><span data-stu-id="08a95-136">Open a new private browser instance and browse to [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).</span></span>
+2. <span data-ttu-id="08a95-137">以「使用者 3」的認證登入。</span><span class="sxs-lookup"><span data-stu-id="08a95-137">Sign in with the User 2 account credentials.</span></span>
+3. <span data-ttu-id="08a95-138">在 [需要更多資訊]\*\*\*\* 中按一下 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="08a95-138">In **More information required**, click **Next**.</span></span> 
+5. <span data-ttu-id="08a95-139">在 [避免您失去帳戶的存取權]\*\*\*\* 中，將認證電話設為您的手機號碼，並將認證電子郵件設為您的公司或個人電子郵件帳戶。</span><span class="sxs-lookup"><span data-stu-id="08a95-139">In **Don’t lose access to your account**, set the authentication phone to your mobile phone number and the authentication email to your work or personal email account.</span></span>
+7. <span data-ttu-id="08a95-140">兩者皆經過驗證之後，按一下 [狀況良好]\*\*\*\*，並關閉瀏覽器的私用執行個體。</span><span class="sxs-lookup"><span data-stu-id="08a95-140">After both are verified, click **Looks good** and close the private instance of the browser.</span></span>
+8. <span data-ttu-id="08a95-141">開啟新的私用瀏覽器執行個體並前往 [https://aka.ms/sspr](https://aka.ms/sspr)。</span><span class="sxs-lookup"><span data-stu-id="08a95-141">Open a new private browser instance and go to [https://aka.ms/sspr](https://aka.ms/sspr).</span></span>
+9. <span data-ttu-id="08a95-142">輸入「使用者 3」的帳戶名稱，輸入 CAPTCHA 顯示的字元，然後再按一下 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="08a95-142">Sign in with the User 2 account credentials, type the characters from the CAPTCHA, and then click **Next**.</span></span>
+10. <span data-ttu-id="08a95-p102">對於 [驗證步驟 1]\*\*\*\*，請按一下 [寄電子郵件到我的備用電子郵件地址]\*\*\*\*，然後再按一下 [寄電子郵件]\*\*\*\*。當您收到電子郵件後，請輸入驗證碼，然後再按一下 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="08a95-p102">For **verification step 1**, click **Email my alternate email**, and then click **Email**. When you receive the email, type the verification code, and then click **Next**.</span></span>
+11. <span data-ttu-id="08a95-145">在 [取回您的帳戶]\*\*\*\* 中，輸入「使用者 3」帳戶的新密碼，然後按一下 [完成]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="08a95-145">In **Get back into your account**, type a new password for the User 2 account, and then click **Finish**. Note the changed password of the User 2 account and store it in a safe location.</span></span> <span data-ttu-id="08a95-146">請記下「使用者 3」帳戶變更的密碼，並儲存到安全的位置。</span><span class="sxs-lookup"><span data-stu-id="08a95-146">Note the changed password of the User 3 account and store it in a safe location.</span></span>
+12. <span data-ttu-id="08a95-147">在相同瀏覽器的新分頁中，前往 [https://portal.office.com](https://portal.office.com)，並以「使用者 3」帳戶名稱及新密碼登入。</span><span class="sxs-lookup"><span data-stu-id="08a95-147">In a separate tab of the same browser, go to [https://portal.office.com](https://portal.office.com), and then sign in with the User 2 account name and its new password.</span></span> <span data-ttu-id="08a95-148">您應該會看到 [Microsoft Office 首頁]\*\*\*\* 頁面。</span><span class="sxs-lookup"><span data-stu-id="08a95-148">You should see the **Microsoft Office Home** page.</span></span>
 
-<span data-ttu-id="6c3be-150">如需在生產中進行密碼重設的相關資訊和連結，請參閱身分識別階段中的「[簡化密碼重設](identity-secure-your-passwords.md#identity-pw-reset)」步驟。</span><span class="sxs-lookup"><span data-stu-id="6c3be-150">See the [Simplify password resets](identity-secure-your-passwords.md#identity-pw-reset) step in the Identity phase for information and links to configure password resets in production.</span></span>
+<span data-ttu-id="08a95-149">如需在生產中進行密碼重設的相關資訊和連結，請參閱身分識別階段中的「[簡化密碼重設](identity-secure-your-passwords.md#identity-pw-reset)」步驟。</span><span class="sxs-lookup"><span data-stu-id="08a95-149">See the [Simplify password resets](identity-secure-your-passwords.md#identity-pw-reset) step in the Identity phase for information and links to configure password resets in production.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="6c3be-151">下一步</span><span class="sxs-lookup"><span data-stu-id="6c3be-151">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="08a95-150">下一步</span><span class="sxs-lookup"><span data-stu-id="08a95-150">Next step</span></span>
 
-<span data-ttu-id="6c3be-152">瀏覽測試環境中的其他[身分識別](m365-enterprise-test-lab-guides.md#identity)功能。</span><span class="sxs-lookup"><span data-stu-id="6c3be-152">Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.</span></span>
+<span data-ttu-id="08a95-151">瀏覽測試環境中的其他[身分識別](m365-enterprise-test-lab-guides.md#identity)功能。</span><span class="sxs-lookup"><span data-stu-id="08a95-151">Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="6c3be-153">另請參閱</span><span class="sxs-lookup"><span data-stu-id="6c3be-153">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="08a95-152">另請參閱</span><span class="sxs-lookup"><span data-stu-id="08a95-152">See also</span></span>
 
-[<span data-ttu-id="6c3be-154">Microsoft 365 企業版測試實驗室指南</span><span class="sxs-lookup"><span data-stu-id="6c3be-154">Microsoft 365 Enterprise Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md)
+[<span data-ttu-id="08a95-153">Microsoft 365 企業版測試實驗室指南</span><span class="sxs-lookup"><span data-stu-id="08a95-153">Microsoft 365 Enterprise Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md)
 
-[<span data-ttu-id="6c3be-155">部署 Microsoft 365 企業版</span><span class="sxs-lookup"><span data-stu-id="6c3be-155">Deploy Microsoft 365 Enterprise</span></span>](deploy-microsoft-365-enterprise.md)
+[<span data-ttu-id="08a95-154">部署 Microsoft 365 企業版</span><span class="sxs-lookup"><span data-stu-id="08a95-154">Deploy Microsoft 365 Enterprise</span></span>](deploy-microsoft-365-enterprise.md)
 
-[<span data-ttu-id="6c3be-156">Microsoft 365 企業版文件</span><span class="sxs-lookup"><span data-stu-id="6c3be-156">Microsoft 365 Enterprise documentation</span></span>](https://docs.microsoft.com/microsoft-365-enterprise/)
+[<span data-ttu-id="08a95-155">Microsoft 365 企業版文件</span><span class="sxs-lookup"><span data-stu-id="08a95-155">Microsoft 365 Enterprise documentation</span></span>](https://docs.microsoft.com/microsoft-365-enterprise/)
