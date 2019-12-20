@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用整個 Microsoft 365 企業版的安全性功能。
-ms.openlocfilehash: fb5e99f775c8e23b8ea522ca15b115a5c5d3aedf
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: fd3f73919a113389e9d423dbed11cf0074fb5833
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831884"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802058"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>適用於 Contoso Corporation 之 Microsoft 365 企業版安全性的摘要
 
@@ -54,7 +54,7 @@ Contoso 會使用下列步驟來準備部署 Microsoft 365 企業版的安全性
 
 - 專用的全域管理員帳戶 (具有 MFA 和 PIM)
 
-  Contoso 並非將全域管理角色指派給每日使用者帳戶，而是建立三個、專屬的全域管理員帳戶，具有強式密碼，並且以 Azure 多重要素驗證 (MFA) 和 Azure Active Directory (Azure AD) Privileged Identity Management (PIM) 加以保護。 PIM 僅在 Microsoft 365 企業版 E5 中提供。
+  Contoso 並非將全域管理角色指派給每日使用者帳戶，而是建立三個、專屬的全域管理員帳戶，具有強式密碼，並且以 Azure 多重要素驗證 (MFA) 和 Azure Active Directory (Azure AD) Privileged Identity Management (PIM) 加以保護。 PIM 僅在 Microsoft 365 E5 中提供。
 
   使用全域系統管理員帳戶登入只能執行特定系統管理工作，只有指定的人員才知道密碼，且只能在使用 Azure AD PIM 設定的時間內使用。 
 
@@ -117,7 +117,7 @@ Contoso 會使用下列步驟來準備部署 Microsoft 365 企業版的安全性
 
 - 使用 Microsoft Cloud App Security 來進行雲端監視
 
-  Contoso 使用 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)，來對應其雲端環境、監視其使用量，以及偵測安全性事件。 Microsoft Cloud App Security 僅在 Microsoft 365 企業版 E5 中提供。
+  Contoso 使用 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)，來對應其雲端環境、監視其使用量，以及偵測安全性事件。 Microsoft 雲端 App 安全性僅在 Microsoft 365 E5 中提供。
 
 - 使用 Microsoft Intune 來進行裝置管理
 

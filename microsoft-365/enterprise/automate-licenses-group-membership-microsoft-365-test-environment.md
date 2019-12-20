@@ -3,7 +3,7 @@ title: 自動化適用於 Microsoft 365 企業版測試環境的授權和群組�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/21/2019
+ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 企業版測試環境中設定群組為基礎的授權和動態群組成員資格。
-ms.openlocfilehash: b1f3bc4a44e66d162360e82295c8f2877131cd07
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: facff7eb556299c0312fa7488a35a96151bb1882
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202474"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802118"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>自動化適用於 Microsoft 365 企業版測試環境的授權和群組成員資格
 
@@ -34,7 +34,7 @@ ms.locfileid: "39202474"
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1：建置您的 Microsoft 365 企業版測試環境
 
@@ -43,34 +43,32 @@ ms.locfileid: "39202474"
 如果您想要在模擬的企業中測試自動授權和群組成員資格，請遵循[通過驗證](pass-through-auth-m365-ent-test-environment.md)的指示進行。
   
 > [!NOTE]
-> 測試自動授權和群組成員資格不需要模擬的企業測試環境，其中包含連線至網際網路的模擬內部網路和目錄同步處理 Active Directory 網域服務 (AD DS) 樹系中。 它提供了此選項，讓您可以測試自動授權和群組成員資格與代表典型組織的環境中實驗。 
+> 測試自動授權和群組成員資格不需要模擬的企業測試環境，其中包含連線至網際網路的模擬內部網路和目錄同步處理的 Active Directory 網域服務 (AD DS) 樹系。 它提供了此選項，讓您可以測試自動授權和群組成員資格與代表典型組織的環境中實驗。 
   
 ## <a name="phase-2-configure-and-test-dynamic-group-membership-and-automatic-licensing"></a>階段 2： 設定並測試動態群組成員資格和自動授權
 
 首先，您建立新的 「 業務 」 群組，並新增動態群組成員資格規則，以便與設定為銷售部門的使用者帳戶會自動新增至 「 業務 」 群組。
 
-1. 使用網際網路瀏覽器的私用執行個體，登入 Office 365 入口網站，網址[https://portal.office.com](https://portal.office.com)與您的 Office 365 E5 的全域系統管理員帳戶測試實驗室訂閱。
+1. 使用網際網路瀏覽器的私用執行個體，登入 Office 365 入口網站，網址[https://portal.office.com](https://portal.office.com)與您的 Microsoft 365 E5 的全域系統管理員帳戶測試實驗室訂閱。
 2. 在瀏覽器的個別索引標籤，移至 Azure 入口網站，網址[https://portal.azure.com](https://portal.azure.com)。
-3. 在 Azure 入口網站中，按一下 [Azure Active Directory] > [使用者和群組] > [所有群組]****。
-4. 在 [**所有群組**] 刀鋒視窗中，按一下 [**新的群組**。
+3. 在 Azure 入口網站中，在 [搜尋] 方塊中，輸入**群組**，然後按一下 [**群組**]。
+4. 在 [**所有群組**] 窗格中，按一下 [**新增群組**]。
 5. 在 [**群組類型**] 中，選取 [ **Office 365**]。
 6. 在 [**群組名稱**] 中，輸入 「**銷售額**」。
 7. 在 [**成員資格類型**] 中，選取 [**動態使用者**]。
-8. 按一下 [新增動態查詢]****。
-9. 在 [新增使用者位置]****，請選取 [部門]****。
-10. 在下一個欄位中，選取 [等於]****。
-11. 在 [下一步] 欄位中，輸入 「**銷售額**」。
-12. 按一下 [新增查詢]****，然後按一下 [建立]****。
-13. 關閉**群組**和**群組-所有群組**刀。
+8. 按一下 [**動態使用者成員**。
+9. 在 [**動態成員資格的規則**] 窗格中： 
+   - 選取 [**部門**] 內容。
+   - 選取 [**等於**運算子。
+   - 類型中的 [**銷售****值**。
+10. 按一下 [儲存]****。
+11. 按一下 **[建立]**。
 
 接下來，您設定 「 業務 」 群組，以便成員自動獲指派的 Microsoft 365 E5 授權。
 
-1. 在 Azure Active directory [**概觀**] 刀鋒視窗中，按一下 [**授權 > 所有產品**]。
-2. 在清單中，選取 [ **Micrsooft 365 E5**，，然後按一下 [**指派**。
-3. 在 [**指派授權**] 刀鋒視窗中，按一下 [**使用者和群組**。
-4. 在 [群組] 清單中選取 [**銷售**] 群組。
-5. 按一下 [選取]****，然後按一下 [指派]****。
-6. 關閉瀏覽器的 Azure 入口網站索引標籤。
+1. 按一下 [**銷售**] 群組中，然後按一下 [**授權**]。
+2. 在 [**更新授權指派**] 窗格中，選取 [ **Microsoft 365 E5**，，然後按一下 [**儲存**。
+3. 關閉瀏覽器的 Azure 入口網站索引標籤。
 
 接下來，您測試動態群組成員資格及使用者 4 帳戶上的自動授權。 
 

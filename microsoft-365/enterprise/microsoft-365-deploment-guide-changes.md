@@ -3,7 +3,7 @@ title: Microsoft 365 企業版部署內容的變更
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 12/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,14 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 查看 Microsoft 365 部署指南中的新內容及變更。
-ms.openlocfilehash: bf7cda762d2ac7a8fd57135b985d893ee03c0646
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 9f5b586defa460648c1d3a7b5972124497d0f53f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831824"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801558"
 ---
-# <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Microsoft 365 企業版部署內容的變更
+# <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Microsoft 365 企業版部署內容的變更
 
 ## <a name="december-2019"></a>2019 年 12 月
 
@@ -31,14 +31,13 @@ ms.locfileid: "39831824"
 ### <a name="updates-and-enhancements"></a>更新和增強功能
 
 - [保護 SharePoint Online 網站和檔案](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files)的敏感度標籤使用方式
--  [輕量型基本設定](lightweight-base-configuration-microsoft-365-enterprise.md)和[模擬企業基本設定](simulated-ent-base-configuration-microsoft-365-enterprise.md)的新試用版訂閱程序
-- 
+-  重新整理[測試實驗室指南](m365-enterprise-test-lab-guides.md) 
 
 ## <a name="november-2019"></a>2019 年 11 月
 
 ### <a name="new-content"></a>新增內容 
 
-- [從 Microsoft 365 企業版移轉至 Microsoft 365 企業版 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+- [從 Microsoft 365 商務版移轉至 Microsoft 365 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
 
 - [Contoso Corporation 的機密專案小組](contoso-team-for-top-secret-project.md)
 

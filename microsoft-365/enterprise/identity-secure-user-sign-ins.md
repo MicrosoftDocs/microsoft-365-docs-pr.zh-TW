@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 您可以將使用者登入 Windows 裝置和 Microsoft 365 變得更安全。
-ms.openlocfilehash: 6f45d61694cabd10587ff13bd787fa42bdaeac01
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c1379cfdd65204a27c8147ade8c8c8704e441f1f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370190"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801728"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>步驟 3：保護和管理您的使用者登入
 
@@ -28,7 +28,7 @@ ms.locfileid: "37370190"
 <a name="identity-windows-hello"></a>
 ## <a name="use-windows-hello-for-business"></a>使用 Windows Hello 企業版
 
-*此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
+*此為選用步驟，且同時適用於 Microsoft 365 E3 和 E5 版本*
 
 Windows 10 企業版的 Windows Hello 企業版在登入 Windows 裝置時，會使用加強雙因素驗證取代密碼。 雙因素是一種新的使用者認證類型，可與裝置和生物特徵或 PIN 相繫結。
 
@@ -38,7 +38,7 @@ Windows 10 企業版的 Windows Hello 企業版在登入 Windows 裝置時，會
 <a name="identity-mfa"></a>
 ## <a name="set-up-azure-multi-factor-authentication"></a>設定 Azure Multi-Factor Authentication
 
-*此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
+*此為選用步驟，且同時適用於 Microsoft 365 E3 和 E5 版本*
 
 在這個步驟，您將設定 Azure Multi-Factor Authentication (MFA)，為使用者登入和交易添加第二層安全性。 MFA 在使用者正確輸入其密碼之後，還會需要其他驗證方法。 沒有 MFA，密碼就是唯一的驗證方法。 但密碼的問題在於，許多密碼很容易被攻擊者猜測，或在不知情的情況下分享給不受信任的一方。
 

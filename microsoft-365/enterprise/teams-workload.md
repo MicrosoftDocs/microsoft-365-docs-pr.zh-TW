@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請逐步了解，然後在組織內推出 Microsoft Teams。
-ms.openlocfilehash: 3f4ed40f3c28e9b8ce5c22dfa9bd93e9b1a9e1cb
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 8220d06fe90bc4bc793ab33d6121e93bb855f973
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033598"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801238"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版的 Microsoft Teams
 
@@ -43,7 +43,7 @@ Microsoft Teams 將交談、會議、共用文件、往來對話整合在一起�
 如需更多進階 Teams 功能，請參閱：
 
 - [會議和召集會議](https://docs.microsoft.com/microsoftteams/deploy-meetings-microsoft-teams-landing-page)
-- [雲端語音](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (需要 Microsoft 365 企業版 E5)
+- [雲端語音](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (需要 Microsoft 365 E5)
 
 若要監視組織的 Teams 使用狀況，請參閱：
 

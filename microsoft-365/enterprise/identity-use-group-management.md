@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 您可以使用群組來自動管理某些系統管理工作。
-ms.openlocfilehash: 0d46a2af5683b8da40275302460d453f1f14acbe
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 49cdb0c3d394cb423d0565d7093f1b32b6661158
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831656"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801708"
 ---
 # <a name="step-5-use-groups-for-management"></a>步驟 5：使用群組進行管理
 
@@ -27,7 +27,7 @@ ms.locfileid: "39831656"
 <a name="identity-self-service-groups"></a>
 ## <a name="allow-users-to-create-and-manage-their-own-groups"></a>允許使用者建立及管理自己的群組
 
-*此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
+*此為選用步驟，且同時適用於 Microsoft 365 E3 和 E5 版本*
 
 在本節中，您將識別可由群組擁有者而非 IT 系統管理員管理的Azure Active Directory (Azure AD) 群組。 此功能也稱為*自助服務群組管理*，允許未獲指派系統管理角色的群組擁有者建立和管理安全群組。 
 
@@ -44,7 +44,7 @@ ms.locfileid: "39831656"
 <a name="identity-dyn-groups"></a>
 ## <a name="set-up-dynamic-group-membership"></a>設定動態群組成員資格
 
-*此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
+*此為選用步驟，且同時適用於 Microsoft 365 E3 和 E5 版本*
 
 在這一節中，您將建立一系列規則，來自動新增或移除作為 Azure AD 群組成員的使用者帳戶。 這稱為*動態群組成員資格*。 規則會以使用者帳戶屬性為基礎，例如部門或國家/地區。
 
@@ -74,7 +74,7 @@ ms.locfileid: "39831656"
 <a name="identity-group-license"></a>
 ## <a name="set-up-automatic-licensing"></a>設定自動授權
 
-*此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
+*此為選用步驟，且同時適用於 Microsoft 365 E3 和 E5 版本*
 
 在這一節中，您將在 Azure AD 中設定安全性群組，以自動將一組訂閱中的授權指派給該群組的所有成員。 這稱為*群組型授權*。 如果在群組中新增或移除使用者帳戶，則將自動指派或從使用者帳戶中取消指派群組訂閱的授權。
 

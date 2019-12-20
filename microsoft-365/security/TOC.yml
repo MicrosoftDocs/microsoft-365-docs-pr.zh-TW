@@ -157,7 +157,7 @@
             - name: 設定 Office 365 租用戶以提高安全性
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
             - name: 新的 Microsoft 365 安全性中心
-              href: ./office-365-security/microsoft-security-and-compliance.md
+              href: ./mtp/overview-security-center.md
             - name: 安全性與合規性中心中的權限
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
             - name: 讓使用者能夠存取安全性中心
@@ -405,7 +405,7 @@
             - name: 偵測並修復 Office 365 中 Outlook 規則與自訂表單插入式攻擊
               href: ./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md
             - name: 回應 Office 365 中遭入侵的電子郵件帳戶
-              href: office-365-security/responding-to-a-compromised-email-account.md
+              href: ./office-365-security/responding-to-a-compromised-email-account.md
         - name: 郵件流程
           items:
             - name: 啟用報告訊息增益集

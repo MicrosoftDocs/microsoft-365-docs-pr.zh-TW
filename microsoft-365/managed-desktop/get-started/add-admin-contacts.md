@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f592644b0aa2853839dd83025a112d0fd3c563df
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
-ms.translationtype: HT
+ms.openlocfilehash: d34d7082150b4131634fb695ce6664ded50e6f9d
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962610"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823835"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在系統管理入口網站中新增和驗證系統管理連絡人
 
@@ -44,7 +44,7 @@ IT 技術支援 | 如果我們的支援人員將使用者票證交給 Microsoft 
 
 **無論您選擇誰做為這些連絡人，都必須擁有知識和授權，以便為您的 Microsoft 受管理的電腦環境做出決策。** 當您上線 Microsoft 受管理的電腦環境時，系統會提示您為本地技術支援和安全性新增連絡人。 
 
-需要系統管理連絡人才能[提交支援要求](../working-with-managed-desktop/support.md)。 您必須擁有針對支援要求之重點領域的系統管理連絡人。 
+需要系統管理連絡人才能[提交支援要求](../service-description/support.md)。 您必須擁有針對支援要求之重點領域的系統管理連絡人。 
 
 **若要新增系統管理連絡人**
 
