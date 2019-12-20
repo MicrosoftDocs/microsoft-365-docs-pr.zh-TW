@@ -5,10 +5,6 @@
       items:
         - name: 適用於 BDM 的 Microsoft 365 安全性
           href: Microsoft-365-security-for-bdm.md
-        - name: 安全分數
-          href: ./mtp/microsoft-secure-score.md
-        - name: 安全分數 (預覽)
-          href: ./mtp/microsoft-secure-score-preview.md
         - name: 資訊安全長 (CISO) 研討會訓練
           href: ./office-365-security/ciso-workshop.md
           items:
@@ -61,7 +57,7 @@
               items:
                 - name: 概觀
                   href: mtp/incidents-overview.md
-                - name: 優先順序事件
+                - name: 設定事件優先順序
                   href: mtp/incident-queue.md
                 - name: 調查事件
                   href: mtp/investigate-incidents.md
@@ -71,7 +67,7 @@
               items:
                 - name: 空調概觀
                   href: mtp/mtp-autoir.md
-                - name: '前往 [重要訊息中心'
+                - name: 移至重要訊息中心
                   href: mtp/mtp-action-center.md
                 - name: 檢視空調結果
                   href: mtp/mtp-autoir-results.md
@@ -85,31 +81,31 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: 了解查詢語言
                   href: mtp/advanced-hunting-query-language.md
-                - name: 使用共用的查詢
+                - name: 使用共用查詢
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: 裝置和電子郵件上搜尋
                   href: mtp/advanced-hunting-query-emails-devices.md
                 - name: 了解結構描述
                   href: mtp/advanced-hunting-schema-tables.md
                   items:
-                    - name: MachineInfo
-                      href: mtp/advanced-hunting-machineinfo-table.md
-                    - name: MachineNetworkInfo
-                      href: mtp/advanced-hunting-machinenetworkinfo-table.md
-                    - name: ProcessCreationEvents
-                      href: mtp/advanced-hunting-processcreationevents-table.md
-                    - name: NetworkCommunicationEvents
-                      href: mtp/advanced-hunting-networkcommunicationevents-table.md
-                    - name: FileCreationEvents
-                      href: mtp/advanced-hunting-filecreationevents-table.md
-                    - name: RegistryEvents
-                      href: mtp/advanced-hunting-registryevents-table.md
-                    - name: LogonEvents
-                      href: mtp/advanced-hunting-logonevents-table.md
-                    - name: ImageLoadEvents
-                      href: mtp/advanced-hunting-imageloadevents-table.md
-                    - name: MiscEvents
-                      href: mtp/advanced-hunting-miscevents-table.md
+                    - name: DeviceInfo
+                      href: mtp/advanced-hunting-deviceinfo-table.md
+                    - name: DeviceNetworkInfo
+                      href: mtp/advanced-hunting-devicenetworkinfo-table.md
+                    - name: DeviceProcessEvents
+                      href: mtp/advanced-hunting-deviceprocessevents-table.md
+                    - name: DeviceNetworkEvents
+                      href: mtp/advanced-hunting-devicenetworkevents-table.md
+                    - name: DeviceFileEvents
+                      href: mtp/advanced-hunting-devicefileevents-table.md
+                    - name: DeviceRegistryEvents
+                      href: mtp/advanced-hunting-deviceregistryevents-table.md
+                    - name: DeviceLogonEvents
+                      href: mtp/advanced-hunting-devicelogonevents-table.md
+                    - name: DeviceImageLoadEvents
+                      href: mtp/advanced-hunting-deviceimageloadevents-table.md
+                    - name: DeviceEvents
+                      href: mtp/advanced-hunting-deviceevents-table.md
                     - name: EmailEvents
                       href: mtp/advanced-hunting-emailevents-table.md
                     - name: EmailAttachmentInfo
@@ -124,7 +120,7 @@
                       href: mtp/advanced-hunting-tvm-softwareinventory-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
                       href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
-                - name: 適用於查詢的最佳作法
+                - name: 套用查詢最佳做法
                   href: mtp/advanced-hunting-best-practices.md
             - name: 安全分數
               items:
@@ -355,9 +351,11 @@
                       href: ./office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md
                 - name: 角色系統管理員設定工作
                   items:
-                    - name: 開啟適用於 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
+                    - name: 開啟適用於 SharePoint、OneDrive 與 Microsoft Teams 的 ATP
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
-            - name: 使用威脅分析了解最新的攻擊活動
+            - name: 行銷活動檢視
+              href: ./office-365-security/campaigns.md
+            - name: 了解最新的攻擊與潛在威脅分析
               href: ./mtp/latest-attack-campaigns.md
             - name: 檢視並閱讀 ATP 報告
               href: ./office-365-security/view-reports-for-atp.md
@@ -373,7 +371,7 @@
               href: ./office-365-security/office-365-air.md
             - name: 尋找並調查傳送的惡意電子郵件
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-            - name: 威脅總管 (及即時偵測)
+            - name: 威脅總管 （和即時偵測的資訊）
               href: ./office-365-security/threat-explorer.md
               items:
                 - name: 威脅總管檢視
