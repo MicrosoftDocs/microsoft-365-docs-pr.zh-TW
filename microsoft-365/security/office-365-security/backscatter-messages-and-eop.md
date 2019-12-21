@@ -13,21 +13,21 @@ search.appverid:
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
-description: 非法回應郵件所傳送的郵件伺服器，通常是因為傳入的垃圾郵件自動的退回的郵件。 非法回應 DNSBL 是一份傳送非法回應郵件的 IP 位址清單。 它不是濫發垃圾郵件者清單，我們不會嘗試從非法回應 DNSBL 移除我們的伺服器。
-ms.openlocfilehash: a90383709763974f36aede6f10c9e78224592744
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+description: 非法回應郵件都會自動的退回的郵件傳送至偽造的電子郵件地址。 非法回應 DNSBL 識別傳送非法回應郵件 （其中可能包含許多合法電子郵件來源） 的伺服器。 因為它不是濫發垃圾郵件者清單中，我們不會嘗試從非法回應 DNSBL 移除自誇。
+ms.openlocfilehash: f6e8398565837f7a380c8a6a5c4cd8de422cc215
+ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034254"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "40840162"
 ---
 # <a name="backscatter-messages-and-eop"></a>非法回應郵件與 EOP
 
-非法回應郵件所傳送的郵件伺服器，通常是因為傳入的垃圾郵件自動的退回的郵件。 因為 Exchange Online Protection (EOP) 是垃圾郵件篩選服務，我們的服務會拒絕傳送至不存在收件者及其他可疑目的地的電子郵件。 發生此情況時，EOP 產生未傳遞回報 (NDR) 郵件並傳回給「寄件者」。 因為濫發垃圾郵件者經常在郵件中利用偽造或無效的「寄件者」地址，NDR 所寄到的寄件者地址可能會導致非法回應郵件。 發生此情況時，與 EOP 網路相關聯的外寄伺服器可能會列在非法回應 DNS 封鎖清單 (DNSBL) 中。 非法回應 DNSBL 是一份傳送非法回應郵件的 IP 位址清單。 它不是濫發垃圾郵件者清單，我們不會嘗試從非法回應 DNSBL 移除我們的伺服器。
+*非法回應郵件*是未傳遞回報 （也稱為 Ndr 或退回的郵件） 您會收到未傳送的郵件。 濫發垃圾郵件者冶 （詐騙） [從： 地址，他們的郵件，以及它們通常會使用實際電子郵件地址來強化可信度到他們的郵件。 因此，當他們無可不存在的收件者傳送郵件 （垃圾郵件是在大量作業），在目的地電子郵件伺服器可能盡責回應與 NDR，傳送給在 [從偽造寄件者： 地址。
+
+Exchange Online Protection (EOP) 會盡一切努力來找出並以無訊息方式捨棄可疑的來源訊息而不會產生 NDR。 但是，根據流經服務真正的大量電子郵件，永遠 EOP 會不小心傳送非法回應郵件的可能性。
+
+Backscatterer.org 維護已負責傳送非法回應郵件與 EOP 伺服器的伺服器可能會出現在此清單的電子郵件的封鎖清單 （也就是 DNS 封鎖清單或 DNSBL）。 但是，我們不會嘗試移除自誇從 Backscatterer.org 封鎖清單，因為它不是濫發垃圾郵件者 （依自己的許可） 的清單。
 
 > [!TIP]
-> 根據 Backscatterer 網站的指示，該服務的設定或用法不建議對所有傳入的郵件使用拒絕模式。而是應該在安全模式中使用。如需實作正確非法回應設定的相關資訊，請造訪 [Backscatterer.org 網站](https://www.backscatterer.org/?target=usage)。
-
-## <a name="related-topics"></a>相關主題
-
-[進階垃圾郵件篩選選項](advanced-spam-filtering-asf-options.md)
+> 根據 Backscatter.or 網站 (`http://www.backscatterer.org/?target=usage`)，這些建議使用其服務來檢查在安全的模式，而不是拒絕模式中的內送電子郵件 （大型的電子郵件服務幾乎總是傳送某些非法回應郵件）。

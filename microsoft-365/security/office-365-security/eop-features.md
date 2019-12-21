@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供可在 Exchange Online Protection (EOP) 託管式電子郵件篩選服務中使用的功能清單。
-ms.openlocfilehash: 06f2de012963333f1040861dd8268b6b088f627c
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
-ms.translationtype: HT
+ms.openlocfilehash: 82bdd8e932c194573ad7482c5a561d092897d010
+ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970589"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "40840172"
 ---
 # <a name="eop-features"></a>EOP 功能
 
@@ -93,5 +93,5 @@ ms.locfileid: "39970589"
 |電話和 web 技術支援，每天 24 小時，每週七天|如需 EOP 協助和支援選項的詳細資訊，請參閱 [EOP 的說明和支援](help-and-support-for-eop.md)。|
 |**其他功能**||
 |異地備援的伺服器全域網路|EOP 執行於資料中心的全球性網路，這些資料中心的設計目的是協助提供最佳的可用性。如需詳細資訊，請參閱 [Exchange Online Protection 概觀](exchange-online-protection-overview.md) 中的「EOP 資料中心」一節。  |
-|內部部署伺服器無法接收郵件時，將郵件加入佇列|在延期中的郵件會留在我們佇列中 2 天。郵件重試次數乃是根據我們從收件者的郵件系統所取回的錯誤。平均而言，郵件會每隔 5 分鐘重試一次。如需詳細資訊，請參閱 [EOP 排入佇列、延後和退回的訊息常見問題集](eop-queued-deferred-and-bounced-messages-faq.md)。  |
+|內部部署伺服器無法接收郵件時，將郵件加入佇列|延期的郵件保留在我們佇列中的一天。郵件重試次數乃是根據我們得到從收件者的郵件系統的錯誤。平均而言，郵件會重試每隔 5 分鐘。如需詳細資訊，請參閱[EOP 排入佇列、 延後和退回的訊息常見問題集](eop-queued-deferred-and-bounced-messages-faq.md)。|
 |Office 365 郵件加密可以作為附加元件服務使用|如需詳細資訊，請參閱 [Office 365 中的加密](https://docs.microsoft.com/office365/securitycompliance/encryption)。|
