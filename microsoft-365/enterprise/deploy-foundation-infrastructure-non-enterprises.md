@@ -3,7 +3,7 @@ title: 適用於非企業的 Microsoft 365 企業版底層基礎結構
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/25/2019
+ms.date: 10/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,14 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 提供非企業組織逐步執行 Microsoft 365 企業版底層基礎結構的簡化階段。
-ms.openlocfilehash: 4006980de5341c53d9c6a2d827613015c000fab0
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: ce673222c08823c99c7e9851fced46a90a72b892
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369574"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802028"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure-for-non-enterprises"></a>適用於非企業的 Microsoft 365 企業版底層基礎結構
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>適用於非企業的 Microsoft 365 企業版底層基礎結構
 
 非企業組織也可以部署 Microsoft 365 企業版，體驗經過整合而安全的基礎結構協助團隊合作並盡情發揮創意的商業價值。 非企業型態的組織通常有：
 
@@ -57,7 +57,7 @@ ms.locfileid: "37369574"
 
 ![在網路階段之後的貴組織](./media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
 
-## <a name="phase-2-identity"></a>第 2 階段：身分識別
+## <a name="phase-2-identity"></a>階段 2：身分識別
 
 組織的每位員工都必須能夠登入，條件是在您的 Microsoft 365 企業版訂閱的 Azure Active Directory (Azure AD) 租用戶中必須要有使用者帳戶。 然後使用群組來包含使用者帳戶和其他群組來進行通訊，或取得授權資源 (例如 SharePoint Online 網站或小組) 的存取權。 
 
@@ -65,7 +65,7 @@ ms.locfileid: "37369574"
 
 透過強式密碼與多重要素驗證 (MFA)，保護您的全域系統管理員使用者帳戶。 如需詳細資訊，請參閱[保護全域系統管理員帳戶](identity-create-protect-global-admins.md#protect-global-administrator-accounts)。
 
-如果您的組織需要高安全性而且擁有 Microsoft 365 企業版 E5，請使用 Azure AD Privileged Identity Management 啟用系統管理員即時存取。 如需詳細資訊，請參閱[設定隨選全域系統管理員](identity-create-protect-global-admins.md#identity-pim)。
+如果您的組織需要高安全性而且擁有 Microsoft 365 E5，請使用 Azure AD Privileged Identity Management 啟用系統管理員即時存取。 如需詳細資訊，請參閱[設定隨選全域系統管理員](identity-create-protect-global-admins.md#identity-pim)。
 
 ### <a name="recommendations-for-groups"></a>群組的建議
 
@@ -112,15 +112,15 @@ Azure AD 會評估使用者登入的條件，而且可以使用條件式存取�
 |:------|:-----|
 | 基準原則：管理員需要進行 MFA | 此原則會套用到管理員角色，因此不需要指定群組。 只需要啟用此原則。 必須建立並啟用所有後續的原則。 |
 | 封鎖不支援新式驗證的用戶端 | 在原則設定中選取 [所有使用者]。 |
-| 登入風險為中或高時需要 MFA (需要 Microsoft 365 企業版 E5) | BASELINE |
-| 登入風險為低、中或高時需要 MFA (需要 Microsoft 365 企業版 E5) | SENSITIVE |
+| 登入風險為中或高時需要 MFA (需要 Microsoft 365 E5) | BASELINE |
+| 登入風險為低、中或高時需要 MFA (需要 Microsoft 365 E5) | SENSITIVE |
 | 永遠需要 MFA | HIGHLY-REGULATED |
 | 在 iOS 和 Android 裝置上必須是核准的應用程式 | BASELINE、SENSITIVE、HIGHLY-REGULATED |
 | 需要相容的電腦 | BASELINE |
 | 需要相容的電腦，以及 iOS 和 Android 裝置 | SENSITIVE、HIGHLY-REGULATED |
 |||
 
-以下是要建立和啟用的 Azure AD Identity Protection (需要 Microsoft 365 企業版 E5) 使用者風險原則。
+以下是要建立和啟用的 Azure AD Identity Protection (需要 Microsoft 365 E5) 使用者風險原則。
 
 | Azure AD Identity Protection 使用者風險原則 | 要套用的群組 |
 |:------|:-----|
@@ -144,7 +144,7 @@ Azure AD 會評估使用者登入的條件，而且可以使用條件式存取�
 
 ### <a name="monitor-user-access"></a>監視使用者存取
 
-如果您有 Microsoft 365 企業版 E5，就可以使用 Azure AD Identity Protection 來監視和分析使用者登入是否有認證洩露的問題。 如需詳細資訊，請參閱[防護認證洩露](identity-secure-user-sign-ins.md#protect-against-credential-compromise)。
+如果您有 Microsoft 365 E5，就可以使用 Azure AD Identity Protection 來監視和分析使用者登入是否有認證洩露的問題。 如需詳細資訊，請參閱[防護認證洩露](identity-secure-user-sign-ins.md#protect-against-credential-compromise)。
 
 ### <a name="your-configuration-so-far"></a>您目前的設定
 
@@ -176,7 +176,7 @@ Azure AD 會評估使用者登入的條件，而且可以使用條件式存取�
 | ![Azure AD 條件式存取原則](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 條件式存取原則。 |
 |||
 
-## <a name="phase-3-windows-10-enterprise"></a>第 3 階段：Windows 10 企業版
+## <a name="phase-3-windows-10-enterprise"></a>階段 3：Windows 10 企業版
 
 若要確保您的 Windows 10 企業版裝置已整合到 Microsoft 365 企業版的身分識別和安全性基礎結構，您的選項有：
 
@@ -211,7 +211,7 @@ Azure AD 會評估使用者登入的條件，而且可以使用條件式存取�
 | ![大量授權服務中心](./media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | 大量授權服務中心 (提供 Windows 10 企業版新安裝的映像)，以及商務用 Windows Update 服務 (提供最新的更新)。 |
 |||
 
-## <a name="phase-4-office-365-proplus"></a>第4 階段：Office 365 專業增強版
+## <a name="phase-4-office-365-proplus"></a>階段 4：Office 365 專業增強版
 
 Microsoft 365 企業版包含 Microsoft Office 的訂閱版本 Office 365 專業增強版。 Office 365 專業增強版與 Office 2016 或 Office 2019 一樣，直接安裝在用戶端裝置上。 不過，Office 365 專業增強版可定期獲得包含新功能的更新。 如需詳細資訊，請參閱[關於企業中的 Office 365 專業增強版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
 
@@ -235,7 +235,7 @@ Microsoft 365 企業版包含 Microsoft Office 的訂閱版本 Office 365 專業
 | ![Office 365 專業增強版適用的 Office 內容傳遞網路 (CDN)](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Office 365 專業增強版適用的 Office 內容傳遞網路 (CDN)，裝置會存取它來取得 Office 365 專業增強版更新。 |
 |||
 
-## <a name="phase-5-mobile-device-management"></a>第 5 階段：行動裝置管理
+## <a name="phase-5-mobile-device-management"></a>階段 5：行動裝置管理
 
 Microsoft 365 企業版包括 Microsoft Intune 用於行動裝置管理。 您可以使用 Intune 來管理 Windows、iOS、Android 和 macOS 裝置，以保護對組織資源的存取，包括資料。 Intune 使用 Azure AD 的使用者、群組和電腦帳戶。
 
@@ -274,7 +274,7 @@ Intune 原則可以強制執行裝置合規性和應用程式保護。 以下是
 | ![用於裝置合規性和應用程式保護的 Intune 原則](./media/deploy-foundation-infrastructure-non-enterprises/mdm-policies.png) | 用於裝置合規性和應用程式保護的 Intune 原則。 |
 |||
 
-## <a name="phase-6-information-protection"></a>第 6 階段：資訊保護
+## <a name="phase-6-information-protection"></a>階段 6：資訊保護
 
 Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控管、安全性和保護層級，以不同的方式處理資料的分類。 
 
@@ -310,14 +310,14 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
 
 如需詳細資訊，請參閱 [Microsoft 365 分類類型](infoprotect-configure-classification.md#microsoft-365-classification-types)。
 
-如果您使用權限的敏感度標籤，可能需要建立額外的 Azure AD 安全性群組來定義誰可以對套用敏感度標籤的電子郵件和文件執行什麼動作。 
+如果您使用權限的敏感度標籤，可能需要建立額外的 Office 365 安全性群組來定義誰可以對套用敏感度標籤的電子郵件和文件執行什麼動作。 
 
 例如，您需要建立 RESEARCH 敏感度標籤來保護研究團隊的電子郵件和文件。 您可以決定：
 
 - 研究人員必須能夠變更使用 RESEARCH 敏感度標籤標示的文件。
 - 非研究員工只需要能夠檢視使用 RESEARCH 敏感度標籤標示的文件。 
 
-這表示您必須建立和管理兩個額外的群組：
+這表示您必須建立和管理兩個額外的 Office 365 群組：
 
 - RESEARCH-ALL
 - RESEARCH-VIEW
@@ -369,7 +369,7 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
 
 您可以將使用者帳戶新增到 Microsoft 365 系統管理中心的多個 Azure AD 群組。 從使用者帳戶的內容，按一下 [管理群組] > [新增成員資格]****。
 
-如果您想要使用 PowerShell，請查看這個[可下載的 Excel 活頁簿](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/microsoft-365/enterprise/media/Group-License-Mgmt-PowerShell.xlsx?raw=true)，它會根據指定的使用者帳戶和選取的群組名稱產生 PowerShell 命令。
+如果您想要使用 PowerShell，請查看這個[可下載的 Excel 活頁簿](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx)，它會根據指定的使用者帳戶和選取的群組名稱產生 PowerShell 命令。
 
 ### <a name="new-employee-with-a-cloud-only-user-account"></a>有僅雲端使用者帳戶的新進員工
 
@@ -403,7 +403,7 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
   - COND-ACCESS-EXCLUDE
   - 也同樣屬於 BASELINE、SENSITIVE 和 HIGHLY-REGULATED Azure AD 群組之成員的適當 AD DS 或 Azure AD 安全性群組 
   - 工作群組、部門和地區群組
-  - 敏感度標籤群組 (如有需要)
+  - 敏感度標籤 Office 365 群組 (如有需要)
 - 使用 BASELINE、SENSITIVE、HIGHLY-REGULATED 和 COND-ACCESS-EXCLUDE Azure AD 群組的 Azure AD 登入條件式存取原則。
 - Intune 應用程式和裝置合規性原則。
 - 自訂敏感性資訊類型 (如有需要)。
@@ -427,7 +427,7 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
    - LICENSED
    - 適當的 AD DS 或 Azure AD 安全性群組，也同樣屬於條件式存取原則的 BASELINE、SENSITIVE 和 HIGHLY-REGULATED Azure AD 群組的成員 
    - 適當的工作群組、部門和地區群組
-   - 敏感度標籤群組 (如有需要)
+   - 敏感度標籤 Office 365 群組 (如有需要)
 - 具備下列條件的 Windows 10 企業版裝置：
    - 已加入 Azure AD 租用戶 (僅雲端) 或同時加入 Azure AD 租用戶與 AD DS 網域 (混合式)。
    - 使用最新的 Windows 10 企業版產品改良功能和安全性增強功能自動更新本身。

@@ -13,14 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解部署 Microsoft 365 企業版底層基礎結構階段的一些方法。
-ms.openlocfilehash: 0c700c10969142116cc73fc90e8fd283fa6fc6dc
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: 354ce1a30b91f602049143dc0e93fe01629e6b04
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369434"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801888"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 企業版底層基礎結構部署策略
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 企業版底層基礎結構部署策略
 
 您可以使用多種方法部署 Microsoft 365 企業版[底層基礎結構](deploy-foundation-infrastructure.md)的各個階段，並向使用者推廣其功能、軟體和服務。若要開始對這項工作進行專案管理 (可能龐大且複雜，取決於組織規模及現有基礎結構)，請考慮以下部署策略：
 
@@ -86,7 +86,7 @@ IT 基礎結構包含後端服務和向終端使用者推出的新增或改進�
 
 以下是簡化的試驗使用者體驗，可做為範例：
 
-- 我需要於 12 月使用智慧型手機啟用 MFA。 (身分識別)
+- 我需要於 12 月使用智慧型手機啟用 MFA。(身分識別)
 - 我於 3 月在 Windows 8.1 電腦上安裝了 Windows 10 企業版。(Windows 10 企業版)
 - 我於 6 月安裝了 Office 365 專業增強版，取代原本的 Office 2013。(Office 365 專業增強版)
 - 我於 9 月註冊裝置並套用了 App 和裝置原則。 (行動裝置管理)
@@ -96,7 +96,7 @@ IT 基礎結構包含後端服務和向終端使用者推出的新增或改進�
 
 以下是簡化的使用者體驗，可做為範例：
 
-- 我需要於 1 月使用智慧型手機啟用 MFA。 (身分識別)
+- 我需要於 1 月使用智慧型手機啟用 MFA。(身分識別)
 - 我於 4 月在 Windows 8.1 電腦上安裝了 Windows 10 企業版。(Windows 10 企業版)
 - 我於 7 月安裝了 Office 365 專業增強版，取代原本的 Office 2013。(Office 365 專業增強版)
 - 我於 10 月註冊裝置並套用了 App 和裝置原則。 (行動裝置管理)
@@ -192,4 +192,4 @@ IT 部門為階段 2-6 設定基礎結構，然後推出給試驗使用者，以
 
 ## <a name="next-step"></a>下一步
 
-使用[底層基礎結構](deploy-foundation-infrastructure.md)部署 Microsoft 365 企業版。
+使用[底層基礎結構](deploy-foundation-infrastructure.md)開始部署 Microsoft 365 企業版。
