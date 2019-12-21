@@ -1,9 +1,9 @@
 ---
 title: 敏感度標籤概觀
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
-ms.date: 11/01/2019
+ms.date: 12/13/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上強制執行保護設定，例如加密或浮水印。
-ms.openlocfilehash: 5bc15b1ba18dbc52f9db554f8037cb59187b88fc
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: f411cf5ac91581526c54f718ee83d0beaaaa2d73
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "39232890"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802836"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
@@ -130,7 +130,7 @@ ms.locfileid: "39232890"
 
 - **套用預設標籤**至所有新文件和電子郵件，這些是由標籤原則中包含的使用者和群組所建立。此預設標籤可以設定您想要套用到所有內容的基礎層級保護設定。
 
-- **需要變更標籤的理由。** 如果已將內容標示為「機密」，且使用者想要移除該標籤，或以較低的分類 (例如名為「公用」的標籤) 取代，您可以要求使用者在執行此動作時提供理由。 系統管理員將可檢閱這些理由。
+- **需要變更標籤的理由。** 如果已將內容標示為「機密」，且使用者想要移除該標籤，或以較低的分類 (例如名為「公用」的標籤) 取代，您可以要求使用者在執行此動作時提供理由。 目前，理由尚未傳送到 [標籤分析](label-analytics.md) 以供系統管理員檢閱。 不過 [Azure 資訊保護整合標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)會將此資訊傳送至 [Azure 資訊保護分析](https://docs.microsoft.com/azure/information-protection/reports-aip)。
 
     ![提示使用者輸入理由](media/Sensitivity-label-justification-required.png)
 

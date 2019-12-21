@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何搜尋並找出 Office 365 中的個人資料。
-ms.openlocfilehash: f553f29ac1327fa84c2d52f80379593c9291d610
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 75c6afaae18cddc0c8e63cac671ac1140e3fa303
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38710010"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802856"
 ---
 # <a name="search-for-and-find-personal-data"></a>搜尋並找出個人資料
 
@@ -33,9 +33,7 @@ ms.locfileid: "38710010"
 
 本文示範如何找出 SharePoint 和商務用 OneDrive (其中包含所有 Office 365 群組和 Microsoft Teams 的網站) 中儲存的個人資料。
 
-尋找受制於 GDPR 的個人資料，依賴使用 Office 365 中的敏感資訊類型。這些定義自動化程序如何辨識特定資訊類型，例如健康服務號碼和信用卡號碼。此時，這些無法用來在 Exchange 靜態信箱中尋找資料。不過，敏感資訊類型可與資料外洩防護原則搭配使用，以在傳輸時尋找郵件中的個人資料。
-
-因此，目前無法使用內容搜尋，在 Exchange Online 信箱中尋找靜態個人資料，而您可以使用針對 GDPR 策劃的機密資訊類型，在個人資訊透過電子郵件傳送時，尋找並保護個人資訊。
+尋找受限於 GDPR 的個人資料視 Office 365 中使用的機密資訊類型而定。 這將定義自動化程式如何識別特定的資訊類型，例如健保號碼和信用卡號碼。 您可以在傳輸時使用資料外洩防護原則來尋找郵件中的個人資料。 您可以使用為 GDPR 策展的敏感性資訊類型，來尋找和保護透過電子郵件傳送的個人資訊。 也請參閱[使用安全性與合規性中心的 DSR 案例工具來管理 GDPR 資料主體要求](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool)。
 
 ## <a name="use-content-search-to-find-personal-data"></a>使用內容搜尋來尋找個人資料
 

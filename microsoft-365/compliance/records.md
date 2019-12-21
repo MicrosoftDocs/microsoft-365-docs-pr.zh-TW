@@ -1,7 +1,7 @@
 ---
 title: 記錄概觀
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 若要在您的 Office 365 或 Microsoft 組織中執行記錄管理策略，請使用保留標籤將內容宣告為記錄。 然後發佈或自動套用保留記錄標籤。
-ms.openlocfilehash: 37f23dcd9c2b94edce99fa55977cb26e1faa4d8e
-ms.sourcegitcommit: 9a420b16aaa401a822ccfd9b133977ad8bd1024b
+ms.openlocfilehash: eb8abbb44629261065a9e368814ddeb8296ac0c8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39637822"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803830"
 ---
 # <a name="overview-of-records"></a>記錄概觀
 
@@ -62,7 +62,7 @@ ms.locfileid: "39637822"
 
     ![無法從 SharePoint 中刪除項目的訊息](media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-    如果使用者嘗試刪除 OneDrive 中的記錄，該項目會移到 [文件保留庫] 中，如 [保留原則如何就地使用內容](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites)中所述。
+    如果使用者嘗試刪除 OneDrive 中的記錄，該項目會移到 [文件保留庫] 中，如 [保留原則如何就地使用內容](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites)中所述。
 
   - **無法移除記錄標籤。** 將記錄標籤套用到某個項目後，只有該位置的系統管理員 (例如 SharePoint 網站的網站集合系統管理員) 可以移除該記錄標籤。
 
@@ -76,7 +76,7 @@ ms.locfileid: "39637822"
 
    ![按一下 [使用標籤以將內容分類為「記錄」] 核取方塊](media/recordversioning6.png)
 
-3. [發佈](labels.md#how-retention-labels-work-with-retention-label-policies)或[自動套用](labels.md#applying-a-retention-label-automatically-based-on-conditions)保留標籤到 SharePoint 網站和/或 OneDrive 帳戶。 
+3. [發佈](labels.md#how-retention-labels-work-with-retention-label-policies)或[自動套用](labels.md#applying-a-retention-label-automatically-based-on-conditions)保留標籤到 SharePoint 網站和/或 OneDrive 帳戶。
 
 ### <a name="applying-a-retention-label-to-content"></a>將保留標籤套用至內容
 
@@ -85,7 +85,7 @@ ms.locfileid: "39637822"
 當您將記錄標籤套用至 SharePoint 網站或 OneDrive 帳戶上的文件後，就會顯示以下內容。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning7.png" alt-text="標記為記錄的文件的詳細資料窗格":::
+![標記為記錄之文件的詳細資料窗格](media/recordversioning7.png)
 
 ## <a name="record-versioning"></a>記錄版本設定
 
@@ -102,7 +102,7 @@ ms.locfileid: "39637822"
 如果任何文件的保留標籤會將項目宣告為記錄，則會自動提供記錄版本設定。 當使用者透過 [詳細資料] 窗格查看文件內容時，系統會將 [記錄狀態]**** 從 [鎖定]**** 切換為 [解除鎖定]****。 只要按一下就能在 [文件保留庫] 的 [記錄] 資料夾中建立記錄，該記錄將在保留期的剩餘時間內保留在其中。 文件解除鎖定後，任何擁有權限的使用者都可以編輯該檔案。 不過，使用者無法刪除檔案，因為這是已宣告的記錄。 完成必要的變更之後，使用者就可以將 [記錄狀態]**** 從 [已解鎖]**** 切換為 [鎖定]****，這樣文件就會再次宣告為記錄，且無法編輯。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning8.png" alt-text="標記為記錄的文件的 [記錄狀態] 內容":::
+![標記為記錄之文件的 [記錄狀態] 內容](media/recordversioning8.png)
 
 > [!NOTE]
 > 記錄版本設定要求每位有權編輯在 SharePoint 網站或 OneDrive 帳戶中被宣告為記錄的內容的使用者，都必須獲得 Office 365 Enterprise E5 授權。 具有唯讀存取權的使用者不需要授權。
@@ -112,7 +112,7 @@ ms.locfileid: "39637822"
 當您將記錄標籤指派給文件之後，預設 [成員] 群組 ([參與] 權限等級) 中的任何使用者都可以解除鎖定記錄或鎖定已解鎖的記錄。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning9.png" alt-text="記錄狀態顯示記錄文件已解鎖":::
+![記錄狀態顯示記錄文件已解鎖](media/recordversioning9.png)
 
 當使用者解鎖記錄後，會發生下列動作：
 
@@ -133,7 +133,7 @@ ms.locfileid: "39637822"
 每次使用者解鎖記錄時，系統會將最新版本複製到 [文件保留庫] 的 [記錄] 資料夾中，而該版本則會在版本歷程記錄的 [註解]**** 欄位中包含 [記錄]**** 的值。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning10.png" alt-text="在文件保留庫中顯示的記錄":::
+![在 [文件保留庫] 中顯示的記錄](media/recordversioning10.png)
 
 若要查看版本歷程記錄，請選取文件庫中的文件，然後按一下項目功能表中的 [版本歷程記錄]****。
 
@@ -142,11 +142,11 @@ ms.locfileid: "39637822"
 記錄會儲存在網站集合中，頂層網站中 [文件保留庫] 的 [記錄] 資料夾。 在頂層網站的左側瀏覽中，選擇 [網站內容]**** \> [文件保留庫]****。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning11.png" alt-text="文件保留庫":::
+![文件保留庫](media/recordversioning11.png)
 
 <br/><br/>
 
-:::image type="content" source="media/recordversioning12.png" alt-text="文件保留庫中的記錄資料夾":::
+![[文件保留庫] 中的記錄資料夾](media/recordversioning12.png)
 
 只有網站集合系統管理員才能看到 [文件保留庫]。 此外，預設不存在 [文件保留庫]。 只有在網站集中第一次刪除具有保留標籤或保留原則的內容時，才會建立。
 
@@ -155,6 +155,6 @@ ms.locfileid: "39637822"
 鎖定和解鎖記錄的動作會記錄在 Office 365 稽核記錄中。 您可以搜尋 [已將記錄狀態變更為「鎖定」]**** 和 [已將記錄狀態變更為「未鎖定」]**** 的特定活動，其位於 [安全性與合規性中心]**** 的 [稽核記錄搜尋]**** 頁面上，[檔案與頁面活動] 區段的 [活動]**** 下拉式清單中。
 <br/><br/>
 
-:::image type="content" source="media/recordversioning13.png" alt-text="搜尋記錄版本設定事件的稽核記錄":::
+![搜尋記錄版本設定事件的稽核記錄](media/recordversioning13.png)
 
 如需搜尋這些活動的詳細資訊，請參閱[在安全性與合規性中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)中的「檔案和頁面活動」一節。
