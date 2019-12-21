@@ -1,11 +1,11 @@
 ---
 title: 自動將敏感度標籤套用到內容
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
-ms.date: 11/01/2019
+ms.date: 12/13/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 3c5b52c89c9a5eb9e78e670bce0b5c3edec89cd1
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 77a0b3cdf88301677451fe7fe1bac58de2a40a5f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256710"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807838"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -31,9 +31,9 @@ ms.locfileid: "39256710"
 
 - 您不需要仰賴使用者正確地將所有內容分類。
 
-- 使用者不再需要了解原則，就可以專心工作。
+- 使用者不再需要了解原則，而是可以專心於工作。
 
-如需授權需求的相關資訊，請參閱 [Office 應用程式中的敏感度標籤](sensitivity-labels-office-apps.md)。
+如需授權需求的相關資訊，請參閱[敏感度標籤的訂閱和授權需求](sensitivity-labels-office-apps.md#subscription-and-licensing-requirements-for-sensitivity-labels)。
 
 當您在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或是 Office 365 安全性與合規性中心底下的 [分類]**** >  [敏感度標籤]**** 建立敏感度標籤時，可以使用自動標籤設定。
 

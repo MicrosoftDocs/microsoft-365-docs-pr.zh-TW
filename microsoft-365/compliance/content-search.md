@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 或 Microsoft 365 合規性中心中的「內容搜尋」工具，來搜尋信箱中的內容、SharePoint Online 網站，OneDrive 帳戶、Microsoft Teams、Office 365 群組和商務用 Skype 交談。 您可以使用關鍵字搜尋查詢和搜尋條件來縮小搜尋結果。 然後您可以預覽和匯出搜尋結果。 內容搜尋也是用來搜尋與 GDPR 資料主體要求相關內容的有效工具。
-ms.openlocfilehash: ba3a8ffd495d58726c24ad7abd2e115d2e1c2b8b
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d27bce246cabfafd343286fc40ea670bfe560b9e
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39266112"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967516"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的內容搜尋
 
@@ -310,7 +310,7 @@ ms.locfileid: "39266112"
   
 ### <a name="searching-inactive-mailboxes"></a>搜尋非作用中信箱
 
-您可以在內容搜尋中搜尋非作用中信箱。 若要取得組織中非作用中信箱的清單，請在 Exchange Online PowerShell 中執行命令 `Get-Mailbox -InactiveMailboxOnly`。 或者，您可以移至安全性與合規性中心中的 **[資料控管]** \> **[保留]**，然後按一下 [更多****![瀏覽列省略符號](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)] \> **[非作用中信箱]**。
+您可以在內容搜尋中搜尋非作用中信箱。 若要取得組織中非作用中信箱的清單，請在 Exchange Online PowerShell 中執行命令 `Get-Mailbox -InactiveMailboxOnly`。 或者，您可以移至安全性與合規性中心中的 **[資訊控管]** \> **[保留]**，然後按一下 **[更多]** ![[瀏覽列省略符號]](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **[非作用中信箱]**。
   
 搜尋非作用中信箱時，請注意以下幾點。
 

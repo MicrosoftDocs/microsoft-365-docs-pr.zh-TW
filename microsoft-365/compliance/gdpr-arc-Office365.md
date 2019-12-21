@@ -12,12 +12,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 66a3478ed625b3c7453992e04070d57beef173eb
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: c31107588e6d7841e93c3a1cd653790f3937c21e
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749714"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808528"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-office-365"></a>適用於 Microsoft Office 365 的責任整備檢查清單
 
@@ -31,8 +32,8 @@ ms.locfileid: "38749714"
 
 該清單和合規性管理員是使用個人資訊處理者的一組隱私權和安全性控制的標題和參考編號 (列在每個檢查清單主題的括號中) 來進行編排，依循：
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) 安全性技術需求。
-- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 隱私權管理需求。
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail?pid=000000000030351736) 為安全性技術需求。
+- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 為隱私權管理需求。
 
 此控制項結構也可用於組織 Microsoft Office 365 實作以支援 GDPR 的內部控制項展示，您可以在這裡下載：[服務信任中心](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)。
 
