@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 透過安全性與合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監控及自動保護整個 Office 365 的敏感性資訊。
-ms.openlocfilehash: b9035fde858d8040be14073f61d6c4e9629df53b
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e2fab1df550382f44e09629e5b82a079d6f6555f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "39266110"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806616"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -79,7 +79,9 @@ DLP 原則包含一些基本事項：
 不論敏感性資訊是在 Exchange Online、SharePoint Online、商務用 OneDrive 或 Microsoft Teams 上，DLP 原則都可以透過 Office 365 尋找及保護該資訊。 您可以選擇保護 Exchange 電子郵件、Microsoft Teams 聊天和頻道訊息，以及所有 SharePoint 或 OneDrive 文件庫中的內容，或者針對原則選取特定位置。
   
 ![DLP 原則可以套用的位置選項](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
-  
+
+ 如果您選擇在 Exchange 中包含特定通訊群組，DLP 原則將只會限定至該群組的成員。 類似地排除通訊群組會從原則評估中排除該通訊群組的所有成員。 您可以選擇將原則限定至通訊清單、動態通訊群組和安全性群組的成員。 DLP 原則最多可包含 50 項此類的包含和排除。
+
 如果您選擇包含或排除特定 SharePoint 網站或 OneDrive 帳戶，則 DLP 原則只能包含不超過 100 項此類包含或排除。 雖然有這個限制，但您可以套用全組織原則或套用到整個位置的原則來超過這些限制。
   
 ### <a name="rules"></a>規則
@@ -166,7 +168,9 @@ DLP 原則在尋找信用卡號碼等敏感性資訊類型時，並不只是尋�
 以下是商務用 OneDrive 帳戶中的原則提示外觀。
   
 ![OneDrive 帳戶中的文件原則提示](media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
-  
+
+ 若要深入了解 DLP 原則中的使用者通知和原則提示，請參閱 [使用通知和原則提示](use-notifications-and-policy-tips.md)。
+
 #### <a name="incident-reports"></a>事件報告
 
 規則相符時，您可以將含有事件詳細資料的事件報告傳送給您的法務人員 (或是您選擇的任何人)。 這份報告包含相符項目的相關資訊、符合規則的實際內容，以及上次修改內容的人員名稱。 若是電子郵件訊息，報告則會以附件的方式提供與 DLP 原則相符的原始郵件。
@@ -221,7 +225,7 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
 
 當您在原則中建立規則時，每個規則都會根據建立時間指派優先順序，也就是說，第一個建立的規則具有第一優先順序，第二個建立的規則具有第二優先順序，依此類推。 
   
-![依優先順序排列的規則](media/f7dc06bf-bc6f-485c-bcdb-606edbcf6565.png)
+![依優先順序排列的規則](media/dlp-rules-in-priority-order.png)
   
 您設定一個以上的 DLP 原則之後，可以變更一或多個原則的優先順序。 若要這樣做，請選取原則，選擇 **[編輯原則]**，然後使用 **[優先順序]** 清單來指定優先順序。
 
