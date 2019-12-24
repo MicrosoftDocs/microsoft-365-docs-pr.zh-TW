@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 適用於系統管理員：了解如何使用網路上傳將多個 PST 檔案大量匯入 Office 365 中的使用者信箱。
-ms.openlocfilehash: c25872247e72f53f5b95454acdeb3b0715763748
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4354e0c630066204811f98cce53d6b0f041b20ad
+ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802318"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "40854068"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-office-365"></a>使用網路上傳將組織的 PST 檔案匯入 Office 365
 
@@ -371,13 +371,12 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
     This example uploads PST files to a subfolder named PSTFiles  in the Azure storage location:
 
     AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
-``
+    ```
 
-- As previously explained, the Office 365 Import service turns on the retention hold setting (for an indefinite duration) after PST files are imported to a mailbox. This means the  *RetentionHoldEnabled*  property is set to  **True** so that the retention policy assigned to the mailbox won't be processed. This gives the mailbox owner time to manage the newly imported messages by preventing a deletion or archive policy from deleting or archiving older messages. Here are some steps you can take to manage this retention hold: 
+- 如先前說明，PST 檔案匯入到信箱之後， Office 365 匯入服務的暫停保留設定會開啟 (為無限期)。 這表示 *RetentionHoldEnabled* 屬性設定為 **True**，因此系統不會處理指派給信箱的保留原則。 防止刪除或封存原則可防止刪除或封存較舊的郵件，這讓信箱擁有者有時間管理新匯入的郵件。 這裡是您管理此暫停保留可採取的一些步驟： 
     
-    - After a certain time, you can turn off the retention hold by running the **Set-Mailbox -RetentionHoldEnabled $false** command. For instructions, see [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/p/?LinkId=544749).
+    - 一段時間之後，您可以執行 **Set-Mailbox -RetentionHoldEnabled $false** 命令來關閉暫停保留。 如需指示，請參閱[將信箱設為暫停保留](https://go.microsoft.com/fwlink/p/?LinkId=544749)。
     
-   - You can configure the retention hold so that it's turned off on some date in the future. You do this by running the **Set-Mailbox -EndDateForRetentionHold *date*** command. For example, assuming that today's date is June 1, 2016 and you want the retention hold turned off in 30 days, you would run the following command:  **Set-Mailbox -EndDateForRetentionHold 7/1/2016**. In this scenario, you would leave the  **RetentionHoldEnabled**  property set to  *True*. For more information, see [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
+   - 您可以設定暫停保留，讓它在未來某一天關閉。 方法是執行 **Set-Mailbox -EndDateForRetentionHold *date*** 命令。 例如，假設今天的日期是 2016 年 6 月 1 日，而您想要在 30 天時關閉暫停保留，您可以執行下列命令：**Set-Mailbox -EndDateForRetentionHold 7/1/2016**。 在這個案例中，您會將 **RetentionHoldEnabled** 屬性設定成 *True*。 如需詳細資訊，請參閱 [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317)。
     
-   - You can change the settings for the retention policy that's assigned to the mailbox so that older items that were imported won't be immediately deleted or moved to the user's archive mailbox. For example, you could lengthen the retention age for a deletion or archive policy that's assigned to the mailbox. In this scenario, you would turn off the retention hold on the mailbox after you changed the settings of the retention policy. For more information, see [Set up an archive and deletion policy for mailboxes in your Office 365 organization](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
-    
+   - 您可以變更指派給信箱的保留原則設定，讓匯入的舊項目不會被立即刪除或移至使用者的封存信箱。 例如，您可以延長指派給信箱的刪除或封存原則的保留存留期。 在這個案例中，您會在變更保留原則設定之後，關閉信箱的暫停保留。 如需詳細資訊，請參閱[設定您 Office 365 組織中的信箱封存和刪除原則](set-up-an-archive-and-deletion-policy-for-mailboxes.md)。

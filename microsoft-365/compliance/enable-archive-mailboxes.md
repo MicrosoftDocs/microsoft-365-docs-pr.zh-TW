@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 中的「安全性與合規性中心」來啟用封存信箱，以便支援組織的郵件保留、電子文件探索和保留需求。
-ms.openlocfilehash: 29c90b85b4f8d05664ea6d28f8997265b7e14b49
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 4c115b53f5e47caa785b32c3a356a6a52af83b41
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967356"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850897"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>啟用「安全性與合規性中心」的封存信箱
   
 Office 365 中的封存 (稱為就地封存) 可為使用者提供額外的信箱儲存空間。 開啟封存信箱後，使用者只要使用 Microsoft Outlook 和 Outlook 網頁版 (其前身為 Outlook Web App) 即可存取及儲存封存信箱中的郵件。 使用者也可以在其主要信箱和封存信箱之間移動或複製郵件。 除此之外，他們也可以使用「復原刪除的郵件」工具復原其封存信箱的 [可復原的項目] 資料夾中的已刪除郵件。 
   
 > [!NOTE]
-> Office 365 中的自動展開封存功能可提供封存信箱高達 1 TB 的額外儲存空間。 如果已開啟自動展開封存功能，當使用者封存信箱的初始儲存配額已滿時，Office 365 會自動新增額外的儲存空間。 也就是說，使用者的信箱儲存空間將不會用盡，若您一開始就啟用封存信箱並為組織開啟自動展開封存功能，之後就能高枕無憂。 如需詳細資訊，請參閱[在 Office 365 中的無限制封存的概觀](unlimited-archiving.md)。 
+> Office 365 中的自動展開封存功能提供封存信箱的額外儲存空間。 如果已開啟自動展開封存功能，當使用者封存信箱的初始儲存配額已滿時，Office 365 會自動新增額外的儲存空間。 也就是說，使用者的信箱儲存空間將不會用盡，若您一開始就啟用封存信箱並為組織開啟自動展開封存功能，之後就能高枕無憂。 如需詳細資訊，請參閱[在 Office 365 中的無限制封存的概觀](unlimited-archiving.md)。 
   
 ## <a name="before-you-begin"></a>開始之前
 
