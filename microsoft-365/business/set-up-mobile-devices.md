@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: 在 iPhone 或 Android 手機，與您在 Office 應用程式就會受到 Microsoft 365 商務版中的工作檔案上安裝 Office。
-ms.openlocfilehash: d87ea714f578130d05be57d1f66270b306f37c7c
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 6dc116f9c0822d33e8d742d065c8485a0cf82c37
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831376"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850817"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-business-users"></a>為 Microsoft 365 商務版使用者設定行動裝置
 
@@ -39,9 +39,11 @@ ms.locfileid: "39831376"
 
 ## <a name="iphonetabiphone"></a>[iPhone](#tab/iPhone)
   
-觀看有關如何設定 iOS 裝置上使用 Microsoft 365 商務版的 Office 應用程式的影片。<br><br>
+觀看有關如何設定 iOS 裝置上使用 Microsoft 365 商務版的 Office 應用程式。<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9?autoplay=false] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
+
+如果您找到這段影片很有幫助，請參閱[完成小型企業版和 Microsoft 365 的新手訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 移到**應用程式存放區**，並在搜尋欄位中輸入 Microsoft Outlook 中。
   
