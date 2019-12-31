@@ -5,7 +5,7 @@ author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 06/26/2019
+ms.date: 12/30/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 設定安全連結原則來保護貴組織，以防範 Word、Excel、PowerPoint 和 Visio 檔案，以及電子郵件中的惡意連結。
-ms.openlocfilehash: 29e0c8d485d89498fe952d29d8b68f808c4aaaf3
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
-ms.translationtype: HT
+ms.openlocfilehash: 3055a5330707b3654998fbdc937ead239742cb32
+ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970129"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910154"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>設定 Office 365 ATP 安全連結原則
 
@@ -122,8 +122,8 @@ ms.locfileid: "39970129"
 |此選項  |執行此動作  |
 |---------|---------|
 | **封鎖下列 URL** <br/>    | 可讓貴組織擁有自動封鎖的自訂 URL 清單。 使用者按一下此清單中的 URL 後，就會前往說明 URL 為何遭到封鎖的[警告頁面](atp-safe-links-warning-pages.md)。 若要深入了解，請參閱[使用 Office 365 ATP 安全連結來設定自訂封鎖的 URL 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)。 |
-| **Office 365 專業增強版、iOS 版與 Android 版 Office** <br/>    | 若選取此選項，假設使用者已登入 Office 365，ATP 安全連結防護就會套用至 Windows 或 Mac OS 上 Word、Excel 和 PowerPoint 檔案中的 URL、iOS 或 Android 裝置上的 Office 文件、Windows 上的 Visio 2016，以及 Office 應用程式的網頁版 (Word、PowerPoint、Excel 和 OneNote)。 |
-| **當使用者按一下 ATP 安全連結時不要追蹤** <br/>  | 若選取此選項，則不會儲存 Word、Excel、PowerPoint 和 Visio 文件中 URL 的點選資料。  <br/> |
+| **Office 365 專業增強版、iOS 版與 Android 版 Office** <br/>    | 選取此選項時，ATP 安全連結保護套用至在 Word、 Excel、 Url，並在 web 版本的開啟 Windows 或 Mac 作業系統]、 [Outlook]，在 iOS 或 Android 裝置，Windows 及檔案上的 Visio 2016 檔案上的 Office 文件中的電子郵件上的 PowerPoint 檔案Office 應用程式 （Word、 PowerPoint、 Excel、 Outlook 和 OneNote），提供使用者登入 Office 365。 |
+| **當使用者按一下 ATP 安全連結時不要追蹤** <br/>  | 選取此選項時，按一下 [資料 Word、 Excel、 PowerPoint、 Visio 文件中的 Url 和 Outlook 電子郵件不會儲存。  <br/> |
 |**不要讓使用者點選原始 URL 的 ATP 安全連結** <br/> |若選取此選項，使用者就無法繼續將[警告頁面](atp-safe-links-warning-pages.md)傳送到被判定是惡意的 URL。  <br/> |
 
 ### <a name="policies-that-apply-to-specific-email-recipients"></a>適用於特定電子郵件收件者的原則

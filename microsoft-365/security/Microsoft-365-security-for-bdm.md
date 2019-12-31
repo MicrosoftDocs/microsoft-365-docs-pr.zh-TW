@@ -2,7 +2,7 @@
 title: 適用於商務決策者 (Bdm) 的 Microsoft 365 安全性
 ms.author: bcarter
 author: brendacarter
-manager: ''
+manager: johmar
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 最常見的威脅和攻擊案例目前面臨由其 Microsoft 365 的環境，組織，建議您降低這些風險的動作。
-ms.openlocfilehash: 3d2c7fc289930e3cc73deddcd43f25efc321a237
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 9ad9d05cf29dba5aa3a7d14063db6fa2b4dd3bc4
+ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801248"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910134"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>適用於商務決策者 (Bdm) 的 Microsoft 365 安全性
 
@@ -134,7 +134,7 @@ Microsoft 365 資訊保護功能可協助您了解哪些資訊您擁有的資訊
 |使用**Office 365 ATP**工具：<br>• 威脅調查及回應功能<br> • 自動化調查及回應 |         |![綠色核取記號](../images/green-check-mark.png)|
 |使用**Microsoft Defender ATP**:<br> •[端點偵測及回應](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> • 自動化的調查並修復安全分數 <br>•[進階狩獵](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![綠色核取記號](../images/green-check-mark.png)|
 |使用**Microsoft Cloud App Security**來偵測異常行為之間雲端應用程式以識別勒索軟體，危害使用者或劣等應用程式、 分析高風險的使用狀況及自動修復，以限制組織的風險。|         |![綠色核取記號](../images/green-check-mark.png)|
-|使用**Microsoft Azure 護衛巨像**] 或 [您**目前的 SIEM**工具來監視威脅的整個環境。 Azure 警示有空在預覽期間使用。 |         |![綠色核取記號](../images/green-check-mark.png)|
+|使用**Microsoft Azure 護衛巨像**] 或 [您目前的 SIEM 工具來監視威脅的整個環境。 |         |![綠色核取記號](../images/green-check-mark.png)|
 |監視及防範威脅針對您內部部署 Active Directory 環境中**部署[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) ** 。   |         |![綠色核取記號](../images/green-check-mark.png) |
 |使用**Azure 資訊安全中心**來之間混合式部署與雲端工作負載監視威脅。 Azure 資訊安全中心包含功能的免費層和已支付根據資源小時或交易的功能的標準層。|         |         |
 
