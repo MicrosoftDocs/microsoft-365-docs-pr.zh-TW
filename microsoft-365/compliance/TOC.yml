@@ -120,7 +120,7 @@
           href: custom-sensitive-info-types.md
         - name: 建立符合根據的分類的確切資料類型的自訂機密資訊
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: 在安全性 & 合規性中心建立自訂機密資訊類型
+        - name: 在安全性與合規性中心建立自訂敏感性資訊類型
           href: create-a-custom-sensitive-information-type.md
         - name: 使用 PowerShell 建立自訂的敏感性資訊類型
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
@@ -1097,6 +1097,7 @@
             - name: G-Cloud (英國)
               href: offering-g-cloud-uk.md
             - name: IDW PS 951 (德國)
+              href: 'https://www.idw.de/the-idw/about-the-idw'
             - name: IT Grundschutz Workbook (德國)
               href: offering-it-grundschutz-workbook-germany.md
             - name: LOPD (西班牙)
