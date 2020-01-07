@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: 使用此測試實驗室指南來啟用特殊權限的存取管理 Microsoft 365 企業版測試環境。
-ms.openlocfilehash: 7e6a2ddea341f49c737409d8586bd9e70c9b2b79
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: f0010b4d6aa85902473676d023d8b4fb9f4018bc
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831814"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959631"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企業版測試環境的特殊權限存取管理
 
@@ -28,8 +28,8 @@ ms.locfileid: "39831814"
 
 ![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-> [!TIP]
-> 按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+>[!TIP]
+>按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1：建置您的 Microsoft 365 企業版測試環境
 
@@ -37,8 +37,8 @@ ms.locfileid: "39831814"
   
 如果您想要在模擬的企業中設定特殊權限的存取管理，請遵循[通過驗證](pass-through-auth-m365-ent-test-environment.md)的指示進行。
   
-> [!NOTE]
-> 測試特殊權限的存取管理，不需要模擬的企業測試環境，其中包含連線至網際網路的模擬內部網路和目錄同步處理的 AD DS 樹系。 它提供了以下選項，以便您可以測試權限存取管理及實驗它代表典型組織的環境中。 
+>[!NOTE]
+>測試特殊權限的存取管理，不需要模擬的企業測試環境，其中包含連線至網際網路的模擬內部網路和目錄同步處理的 AD DS 樹系。 它提供了以下選項，以便您可以測試權限存取管理及實驗它代表典型組織的環境中。 
 
 ## <a name="phase-2-configure-privileged-access-management"></a>階段 2： 設定特殊權限的存取管理
 
@@ -74,8 +74,8 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>建立新的特殊權限的存取原則，針對該 New-journalrule 任務
 
-> [!NOTE]
-> 如果您已經完成步驟 1 和 2 從本指南的階段 2，是確定遵循的步驟來建立名為 」 權限存取核准者 」 的核准者群組，並讓測試環境中的特殊權限的存取。
+>[!NOTE]
+>如果您已經完成步驟 1 和 2 從本指南的階段 2，是確定遵循的步驟來建立名為 」 權限存取核准者 」 的核准者群組，並讓測試環境中的特殊權限的存取。
 
 1. 適用於測試環境的全域系統管理員帳戶登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)使用認證。
 
