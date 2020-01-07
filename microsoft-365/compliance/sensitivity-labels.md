@@ -3,7 +3,7 @@ title: 敏感度標籤概觀
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 12/13/2019
+ms.date: 01/06/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -14,23 +14,25 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上強制執行保護設定，例如加密或浮水印。
-ms.openlocfilehash: f411cf5ac91581526c54f718ee83d0beaaaa2d73
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+description: 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上套用保護設定 (包括加密和浮水印)。
+ms.openlocfilehash: f85d94b918c96ea6505b9b52d386e7f30a3fe77a
+ms.sourcegitcommit: 920bca353d16e9b1e5d4d268e0410ef179eced37
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802836"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40948868"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
-若要完成工作，組織中的人員會與組織內外的其他人員共同合作。這表示內容不總是在防火牆後，它會漫遊在裝置、應用程式和服務的各處。而您希望內容以符合組織的商務及合規性原則的安全、受保護的方式漫遊。
+為了完成其工作，組織中的人員會與組織內外的其他人員共同合作。這表示內容不總是在防火牆後，它會漫遊在裝置、應用程式和服務的各處。而您希望內容以符合組織的商務及合規性原則的安全、受保護的方式漫遊。
 
 使用敏感度標籤，您可以分類並協助保護敏感性內容，不會阻礙人員的生產力與共同作業能力。
 
+顯示敏感度標籤的範例：
+
 ![Excel 功能區和狀態列上的敏感度標籤](media/Sensitivity-label-in-Excel.png)
 
-只有全域 (公開) 雲端的租用戶才支援敏感度標籤。 其他雲端 (例如[國家/地區雲端](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud)) 中的租用戶不支援敏感度標籤。
+只有全域 (公開) 雲端的租用戶才支援敏感度標籤。 目前，其他雲端 (例如[國家/地區雲端](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud)) 中的租用戶不支援敏感度標籤。
 
 若要套用敏感度標籤，使用者必須使用公司或學校帳戶登入 Office。
 
@@ -48,7 +50,7 @@ ms.locfileid: "40802836"
 
 - **不使用任何保護設定而將內容分類。** 您也可以直接將分類指派給內容 (例如貼圖)，該分類會在使用和共用時隨著內容保存和漫遊。 您可以使用這個分類來產生使用情況報告，並且查看敏感性內容的活動資料。 根據這項資訊，您一律可以選擇稍後套用保護設定。
 
-在這些案例中，Office 365 中的敏感度標籤可以幫助您對正確的內容採取正確的動作。使用敏感度標籤，您可以分類整個組織中的資料，並根據該分類強制執行保護設定。
+在上述情況下，Office 365 中的敏感度標籤可協助您對正確的內容採取適當的動作。 您可以運用敏感度標籤分類組織的資料，並根據該分類強制執行保護設定。
   
 當您在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或是 Office 365 安全性與合規性中心底下的 [分類]**** >  [敏感度標籤]**** 建立敏感度標籤時，可以使用自動標籤設定。 這些敏感度標籤可供 Azure 資訊保護、Office 應用程式和 Office 365 服務使用。
 
@@ -60,9 +62,9 @@ ms.locfileid: "40802836"
 
 - **可自訂。** 您可以為組織中不同等級的敏感內容建立類別，例如個人、公用、一般、機密、高度機密。
 
-- **純文字。** 因為標籤是純文字，協力廠商應用程式和服務可以套用保護措施至已標示的內容。
+- **純文字。** 由於標籤會以純文字形式儲存在內容的中繼資料中，因此第三方應用程式和服務可以讀取它，然後套用自己的保護動作 (如必要)。
 
-- **持續性。** 將敏感度標籤套用至內容後，標籤會保留在該電子郵件或文件的中繼資料內。這表示標籤會跟隨內容 (包括保護設定) 漫遊，並成為套用和強制執行原則的基礎。
+- **持續性。** 將敏感度標籤套用至內容後，該標籤就會保存在該電子郵件或文件的中繼資料中。 這表示標籤會隨著內容 (包括保護設定) 漫遊，而此資料就變成套用和強制執行原則的基礎。
 
 在 Office 應用程式中，敏感度標籤在電子郵件或文件上只會顯示為標記。
 
@@ -72,13 +74,13 @@ ms.locfileid: "40802836"
 
 ## <a name="what-sensitivity-labels-can-do"></a>敏感度標籤的功能
 
-除了電子郵件和文件之外，在多個公開預覽版中也提供敏感度標籤。 如需敏感度標籤可以對檔案、團隊、群組及網站執行之動作的詳細資訊，請參閱下列文章：
+除了電子郵件和文件之外，在多個公開預覽版中也提供敏感度標籤。 如需如何可將敏感度標籤搭配檔案、團隊、群組及網站使用的詳細資訊，請參閱下列文章：
 
 - [對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤 (公開預覽)](sensitivity-labels-sharepoint-onedrive-files.md)
 
 - [對 Microsoft Teams、Office 365 群組和 SharePoint 網站使用敏感度標籤 (公開預覽)](sensitivity-labels-teams-groups-sites.md)
 
-敏感度標籤套用至電子郵件或文件後，會對內容強制執行該標籤的保護設定。使用敏感度標籤，您可以：
+將敏感度標籤套用至電子郵件或文件後，將會對內容強制執行為該標籤設定的保護設定。 您可以使用敏感度標籤：
 
 - 只**加密**電子郵件或電子郵件和文件。 您可以選擇哪些使用者或群組可以擁有權限來執行哪些動作，以及執行多久。 例如，您可以選擇允許組織外部特定網域中的使用者有權在標記內容後的 7 天內查看內容。 或者，不要自行指派權限，而是可以讓使用者在套用標籤時，指派權限給內容。 如需詳細資訊，請參閱[使用敏感度標籤中的加密來限制內容的存取](encryption-sensitivity-labels.md)。
 
@@ -92,15 +94,17 @@ ms.locfileid: "40802836"
 
     ![指派必要標籤的提示](media/Sensitivity-label-Prompt-for-required-label.png)
 
-在您建立敏感度標籤時，這所有選項都可供使用。
+在您建立敏感度標籤時，這所有選項都可供使用：
 
 ![建立敏感度標籤的選項](media/Sensitivity-label-create-options.png)
 
 ### <a name="label-priority-order-matters"></a>標籤優先順序 (順序很重要)
 
-建立敏感度標籤時，它們會顯示在 [標籤]**** 頁面的 [敏感度]**** 索引標籤上的清單中。 在此清單中，標籤的順序很重要，因為它反映的是其優先順序。 您想要讓最具限制性的敏感度標籤，例如 [高度機密性]，顯示在清單的最**底端**，以及最不具限制性的敏感度標籤，例如公用，顯示在最**上方**。
+在您的系統管理中心中建立敏感度標籤時，它們會顯示在 [標籤]**** 頁面的 [敏感度]**** 索引標籤上的清單中。 在此清單中，標籤的順序很重要，因為它反映的是其優先順序。 您想要讓最具限制性的敏感度標籤，例如 [高度機密性]，顯示在清單的最**底端**，以及最不具限制性的敏感度標籤，例如公用，顯示在最**上方**。
 
-您只能將單一敏感度標籤套用至一個文件或電子郵件。 如果您要求使用者提供將標籤變更為較低分類的理由，則此清單的順序會識別分類下限。
+您只能將一個敏感度標籤套用至文件或電子郵件。 如果您要求使用者提供將標籤變更為較低分類的理由，則此清單的順序會識別分類下限。
+
+標籤優先順序也適用子標籤。
 
 ![建立子標籤的選項](media/Sensitivity-label-sublabel-options.png)
 
@@ -108,9 +112,11 @@ ms.locfileid: "40802836"
 
 您可以使用子標籤將一或多個標籤分組在 Office 應用程式中的使用者可看到的上層標籤之下。 例如，在 [機密文件] 下，您的組織可能會使用不同的標籤來標示該分類的特定類型。 在此範例中，上層標籤 [機密文件] 只是沒有任何保護設定的文字標籤，且因為它有子標籤，所以無法套用至內容。 相反地，使用者必須選擇 [機密文件] 來查看子標籤，然後再選擇要套用到內容的子標籤。
 
-子標籤是以邏輯群組方式向使用者呈現標籤的一個簡單方式。 子標籤不繼承其上層標籤的任何設定。 您可以將子標籤套用至內容；您無法套用上層標籤。
+子標籤是以邏輯群組方式向使用者呈現標籤的一個簡單方式。 子標籤不繼承其上層標籤的任何設定。 當您發佈使用者的子標籤時，該使用者就可以將該子標籤套用到內容，但不能只套用上層標籤。
 
-請勿選擇上層標籤作為預設標籤 (請參閱下一節)，或將上層標籤設定為自動套用或建議的選項，因為上層標籤無法套用至使用 Azure 資訊保護統一標籤用戶端的 Office 應用程式中的內容。
+請勿選擇上層標籤作為預設標籤，或將上層標籤設定為自動套用或建議的選項，因為上層標籤無法套用至使用 Azure 資訊保護整合標籤用戶端的 Office 應用程式中的內容。
+
+子標籤如何對使用者顯示的範例：
 
 ![功能區上分組的子標籤](media/Sensitivity-label-grouped-labels.png)
 
@@ -147,6 +153,8 @@ ms.locfileid: "40802836"
 
 建立標籤原則並將敏感度標籤指派給使用者和群組之後，這些人會在一小時內在 Office 應用程式中看到這些標籤。
 
+您可以建立並發佈的敏感度標籤數量沒有任何限制，但有一個例外：如果標籤套用加密，則上限為 500 個標籤。 不過，為了將系統管理負擔降至最低，並為使用者減少複雜度，最佳做法是應試著將標籤數量保持最低。 實際情況的部署已證明，當使用者擁有五個以上的主要標籤，且每個主要標籤超過五個子標籤時，效果會降低。
+
 ### <a name="label-policy-priority-order-matters"></a>標籤原則優先順序 (順序很重要)
 
 您會在敏感度標籤原則中發佈敏感度標籤，以將其提供給使用者使用，而標籤會顯示在 [標籤原則]**** 頁面上 [敏感度原則]**** 索引標籤的清單中。 正如同敏感度標籤 (請參閱[標籤原則優先順序 (順序很重要)](#label-priority-order-matters))，敏感度標籤原則的順序非常重要，因為順序反映的是優先順序。 優先順序最低的標籤原則會顯示在**上方**，而優先順序最高的標籤原則會顯示在**下方**。
@@ -169,11 +177,11 @@ ms.locfileid: "40802836"
 
 開始使用敏感度標籤的程序很快：
 
-1. **定義標籤。** 首先，您需要建立分類法，以用來定義不同層級的敏感內容。您應使用一般名稱或字詞，以便使用者了解。比方說，您可以從個人、公用、一般、機密，和高度機密等標籤開始。您可以使用子標籤依類別將相似的標籤分組。此外，建立標籤時，工具提示是必要的，當使用者將滑鼠指標停留在功能區上的標籤選項，提示會顯示在 Office 應用程式中。
+1. **定義標籤。** 首先，您要建立用於定義不同敏感度層級內容的分類法。 使用對您的使用者有意義的一般名稱或字詞。 例如，您可以從個人、公開、一般、機密和高度機密等標籤開始。 您可以使用子標籤，依類別將類似的標籤群組。 此外，建立標籤時會需要工具提示，它會在使用者將滑鼠指標移至功能區上的標籤選項時在 Office 應用程式中顯示。
 
-1. **定義每個標籤的功能。** 然後設定與每個標籤相關聯的保護設定。比方說，較低的敏感度內容 (「一般」標籤) 可能只有套用頁首或頁尾，而較高敏感度內容 (「機密」標籤) 可能會套用浮水印、加密及 WIP，以協助確保只有特殊權限使用者可以存取。
+2. **定義每個標籤的功能。** 然後設定您想要與每個標籤相關聯的保護設定。 例如，較低的敏感度內容 (如「一般」標籤) 可能只有套用頁首或頁尾，而較高敏感度內容 (如「機密」標籤) 可能會套用浮水印、加密及 WIP，以協助確保只有特殊權限使用者可以存取。
 
-1. **定義誰可以看到標籤。** 定義組織的標籤後，您會在標籤原則中發佈標籤，此原則可控制哪些使用者和群組會看到這些標籤。單一標籤可重複使用 – 定義一次後，即可將標籤包含在指派給不同使用者的數個標籤原則中。但為了讓標籤可指派給內容，您必須先發佈該標籤，才能在 Office 應用程式及其他服務中使用。剛開始時，您可以先指定給一小部分人員以試驗您的敏感度標籤。
+3. **定義誰可以看到標籤。** 定義組織的標籤後，您會在標籤原則中發佈標籤，此原則可控制哪些使用者和群組會看到這些標籤。單一標籤可重複使用 – 定義一次後，即可將標籤包含在指派給不同使用者的數個標籤原則中。但為了讓標籤可指派給內容，您必須先發佈該標籤，才能在 Office 應用程式及其他服務中使用。剛開始時，您可以先指定給一小部分人員以試驗您的敏感度標籤。
 
 以下是系統管理員、使用者和 Office 應用程式執行項目以讓敏感度標籤運作的基本流程。
 
@@ -181,33 +189,41 @@ ms.locfileid: "40802836"
 
 ## <a name="where-sensitivity-labels-can-appear"></a>敏感度標籤會顯示的位置
 
-敏感度標籤會顯示在 Office 應用程式的 UI 中。若要檢視針對特定應用程式與平台目前的可用性，請參閱**[目前提供此功能的位置？](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)**
+敏感度標籤會顯示在 Office 應用程式的 UI 中。 若要檢視特定應用程式和平台內建標籤的目前狀態，請使用下列表格：
+
+- [在 Word、Excel 和 PowerPoint 中支援敏感度標籤功能](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint)
+
+- [在 Outlook 中支援敏感度標籤功能](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-outlook)
+
+如果您使用 Windows 電腦的 Azure 資訊保護整合標籤用戶端，則有其他功能可供敏感度標籤使用。 如需詳細資訊，請參閱[比較 Windows 電腦的標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。 
 
 ### <a name="office-apps-on-windows"></a>Windows 上的 Office 應用程式
 
-在執行 Windows 的裝置上 Office 應用程式中，敏感度標籤會顯示在功能區上 [常用]**** 索引標籤的 [敏感度]**** 按鈕中。套用的標籤也會顯示在視窗底部的狀態列中。
+在執行 Windows 裝置上的 Office 應用程式中，敏感度標籤會顯示在功能區上 [常用]**** 索引標籤的 [敏感度]**** 按鈕中。 
+
+當您使用內建的標籤時，套用的標籤也會出現在視窗底部的狀態列中：
 
 ![Windows 中 Excel 功能區上的敏感度按鈕](media/Sensitivity-label-Sensitivity-button.png)
 
 ### <a name="office-apps-on-the-web"></a>Office 網頁版應用程式
 
-如需如何搭配敏感度標籤使用 Office 網頁版應用程式的詳細資訊，請參閱[在 Office 網頁版中將敏感度標籤套用至檔案和電子郵件](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)。
+如需如何搭配敏感度標籤使用 Office 網頁版應用程式的詳細資訊，請參閱[在 Office 網頁版中將敏感度標籤套用至文件和電子郵件](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)。
 
 ### <a name="office-apps-on-mac"></a>Mac 上的 Office 應用程式
 
-在 Mac 裝置上的 Office 應用程式中，敏感度標籤會顯示在功能區上 [常用]**** 索引標籤的 [敏感度]**** 按鈕中。套用的標籤也會顯示在視窗底部的狀態列中。
+在 Mac 裝置上的 Office 應用程式中，敏感度標籤會顯示在功能區上 [常用]**** 索引標籤的 [敏感度]**** 按鈕中。 套用的標籤也會出現在視窗底部的狀態列中：
 
 ![Mac 中 Office 功能區上的敏感度按鈕](media/Sensitivity-label-on-Mac.png)
 
 ### <a name="office-apps-on-ios"></a>iOS 上的 Office 應用程式
 
-在 iOS 裝置上的 Office 應用程式中，敏感度標籤會顯示在功能區上 [常用]**** 索引標籤的 [敏感度]**** 按鈕中。套用的標籤也會顯示在視窗底部的狀態列中。
+在 iOS 裝置上的 Office 應用程式中，敏感度標籤會顯示在功能區上 [常用]**** 索引標籤的 [敏感度]**** 按鈕中。 套用的標籤也會出現在視窗底部的狀態列中：
 
 ![iOS 中 Office 功能區上的敏感度按鈕](media/Sensitivity-label-on-iOS.png)
 
 ### <a name="office-apps-on-android"></a>Android 上的 Office 應用程式
 
-在 Android 裝置上的 Office 應用程式中，敏感度標籤會顯示在功能區上 [常用]**** 索引標籤的 [敏感度]**** 按鈕中。套用的標籤也會顯示在視窗底部的狀態列中。
+在 Android 裝置上的 Office 應用程式中，敏感度標籤會顯示在功能區上 [常用]**** 索引標籤的 [敏感度]**** 按鈕中。 套用的標籤也會出現在視窗底部的狀態列中：
 
 ![Android 中 Office 功能區上的敏感度按鈕](media/Sensitivity-label-on-Android.png)
 
@@ -219,21 +235,24 @@ ms.locfileid: "40802836"
 
 ## <a name="how-sensitivity-labels-work-with-existing-azure-information-protection-labels"></a>敏感度標籤如何搭配使用現有的 Azure 資訊保護標籤
 
-Azure 資訊保護使用者目前可藉由使用 Azure 資訊保護整合標籤用戶端，在 Windows 上分類和標記內容。現有的 Azure 資訊保護標籤與新的敏感度標籤可順利搭配運作。這表示您可以：
+Azure 資訊保護使用者可以使用 Azure 資訊保護整合標籤用戶端，在 Windows 上分類和標記內容。 現有的 Azure 資訊保護標籤可與新的敏感度標籤 (也稱為整合標籤) 緊密配合。 這表示您可以：
 
 - 在文件和電子郵件上保留現有的 Azure 資訊保護標籤。
 - 保留現有的 Azure 資訊保護標籤設定。
 
-如果您使用 Azure 資訊保護標籤，目前建議您避免在其他系統管理中心建立新的標籤，直到完成移轉為止。 [Azure 資訊保護移轉主題](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)提供重要的資訊和一些特定的警告。 如果您尚未準備好要將您的生產環境租用戶移轉到敏感度標籤，則無需擔心：目前，您的使用者可以繼續使用 Azure 資訊保護用戶端，而系統管理員可以繼續使用 Azure 入口網站來進行管理。
+如果您因為您的租用戶尚不在[整合標籤平台](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)中而使用 Azure 資訊保護標籤，建議您避免在其他系統管理中心中建立新標籤，直到您啟用整合標籤為止。 如需此程序的詳細資訊，請參閱[如何將 Azure 資訊保護標籤移轉至整合敏感度標籤](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)。 
+
+> [!NOTE]
+>  Azure 入口網站中 Azure 資訊保護標籤的標籤管理功能即將在 **2021 年 3 月 31 日**淘汰。 在官方的[淘汰聲明](https://techcommunity.microsoft.com/t5/azure-information-protection/deprecation-notice-azure-information-protection-classic-client/ba-p/1092108)中深入了解。
 
 ## <a name="sensitivity-labels-and-the-azure-information-protection-client"></a>敏感度標籤和 Azure 資訊保護用戶端
 
-如果您已在 Windows 版 Office 中安裝 Azure 資訊保護用戶端，Office 365 會自動關閉敏感度標籤。
-如需如何修正此問題的相關資訊，請參閱[關於 Office 內建標籤用戶端](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client)。
+如果已安裝 Azure 資訊保護用戶端，則 Office 365 專業增強版應用程式會自動關閉 Office Windows 應用程式中的敏感度標籤。
+若要變更此預設行為，以便使用內建的標籤，請參閱[關於 Office 內建標籤用戶端](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client)。
 
 ## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>使用 Microsoft Intune 中的端點保護來保護 Windows 裝置上的內容
 
-建立敏感度標籤時，您可以告知 Windows 具有此標籤的檔案為敏感且儲存在 Windows 裝置上時需要防止資料外洩。此選項可協助確保具有此標籤的內容只能共用或複製到批准的位置，即使是儲存在端點上。基本上，開啟敏感度標籤的此選項會告訴 Windows 這是非常重要的資料，並保證其他的使用限制。
+建立敏感度標籤時，您可以選擇告知 Windows：當含有此標籤的檔案儲存在 Windows 裝置上時，需要保護此內容不遭受資料外洩。 此選項可協助您確保使用這個標籤的內容只能共用或複製到獲批准的位置，甚至是在端點上儲存時。 實際上，對敏感度標籤開啟此選項，會告知 Windows 這是極為重要的資料，需要提供額外的使用限制。
 
 當您開啟此選項，Windows 可以讀取、了解及對文件中的敏感度標籤採取動作，並自動對內容套用 Windows 資訊保護 (WIP)，不論其如何觸及受管理的 Windows 裝置。在無論是否套用加密的情況下，這有助於防止標記的檔案發生意外洩漏。
 
@@ -243,7 +262,7 @@ Azure 資訊保護使用者目前可藉由使用 Azure 資訊保護整合標籤�
 
 ![已標記內容的訊息無法複製到 Gmail](media/Sensitivity-label-WIP-Gmail.png)
 
-如果使用者嘗試將已標記的內容儲存到 USB 磁碟機，他們會看到這則訊息。
+而如果使用者嘗試將已標記的內容儲存到 USB 磁碟機，他們會看到下列訊息：
 
 ![已標記內容的訊息無法複製到 USB 磁碟機](media/Sensitivity-label-WIP-USB-drive.png)
 
@@ -283,7 +302,7 @@ Azure 資訊保護使用者目前可藉由使用 Azure 資訊保護整合標籤�
 
 ## <a name="permissions-required-to-create-sensitivity-labels"></a>建立敏感度標籤所需的權限
 
-合規性小組成員會建立敏感度標籤，這些成員需要 Microsoft 365 合規性中心、Microsoft 365 安全性中心或 Office 365 安全性與合規性中心的權限。 根據預設，您的租用戶系統管理員可以存取這些系統管理中心，並且授與法務人員和其他人員存取權限，而不需授與他們租用戶系統管理員的所有權限。若要這麼做，我們建議您移至其中一個系統管理中心的 [權限]**** 頁面，然後將成員新增至 [合規性系統管理員]**** 或 [安全性系統系統管理員]**** 角色群組。
+合規性小組成員會建立敏感度標籤，這些成員需要 Microsoft 365 合規性中心、Microsoft 365 安全性中心或 Office 365 安全性與合規性中心的權限。 根據預設，您的租用戶系統管理員可以存取這些系統管理中心，並且授與法務人員和其他人員存取權限，而不需授與他們租用戶系統管理員的所有權限。如需這個委派的受限系統管理員存取權，請移至其中一個系統管理中心的 [權限]**** 頁面，然後將成員新增至 [合規性系統管理員]**** 或 [安全性系統系統管理員]**** 角色群組。
 
 如需詳細資訊，請參閱[授與使用者存取 Office 365 安全性與合規性中心的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
 
