@@ -58,7 +58,7 @@
         - name: 疑難排解資訊屏障
           href: information-barriers-troubleshooting.md
         - name: 編輯資訊屏障原則
-          href: information-barriers-edit-segments-policies.md.md
+          href: information-barriers-edit-segments-policies.md
 - name: 管理資訊保護
   href: protect-information.md
   items:
