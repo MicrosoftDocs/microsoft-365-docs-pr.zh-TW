@@ -1,5 +1,5 @@
 ---
-title: 在安全&amp;合规性中心查看电子邮件安全报告
+title: 檢視安全性與合規性中心內的電子郵件安全性報告
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -14,223 +14,223 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: 了解如何查找和使用组织的电子邮件安全报告。 安全&amp;合规性中心提供电子邮件安全报告。
-ms.openlocfilehash: 35220410212f285c9024d2c8df7d5a275dad03ee
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 了解如何尋找並使用您的組織電子郵件安全性報告。 安全性中的電子郵件安全性報告可用&amp;合規性中心。
+ms.openlocfilehash: 47c53f25954bc5691fe502f3857d9e4d80b97980
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077691"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40962432"
 ---
-# <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>在安全&amp;合规性中心查看电子邮件安全报告
+# <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
-[&amp;安全合规性中心](https://protection.office.com)提供了各种报告，可帮助您了解 Office 365 中的电子邮件安全功能（如反垃圾邮件、反恶意软件和加密功能）如何保护您的组织。 如果您具有[必要的权限，](#what-permissions-are-needed-to-view-these-reports)则可以通过&amp;**访问"报表**\>**仪表板"** 在安全合规性中心查看这些报告。
+提供各種報告所[安全性&amp;合規性中心](https://protection.office.com)可協助您查看如何電子郵件安全性功能，例如 Office 365 中的反垃圾郵件、 反惡意程式碼及加密功能保護您的組織。 如果您有[必要權限](#what-permissions-are-needed-to-view-these-reports)，您可以檢視這些報告中的安全性&amp;合規性中心，移至**報表** \> **儀表板**。
   
-![仪表板，查看高级威胁防护的工作原理](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![儀表板您瞭解進階威脅防護的運作方式](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-您的电子邮件安全报告包括以下内容：
-- [加密报告](#encryption-report)（新！
-- [威胁防护状态报告](#threat-protection-status-report) 
-- [恶意软件检测报告](#malware-detections-report) 
-- [热门恶意软件报告](#top-malware-report)
-- [热门发件人和收件人报告](#top-senders-and-recipients-report)
-- [欺骗检测报告](#spoof-detections-report)
-- [垃圾邮件检测报告](#spam-detections-report)
-- [已发送和接收的电子邮件报告](#sent-and-received-email-report)
-- [用户报告的消息报告](#user-reported-messages-report)
+您的電子郵件安全性報告包括下列：
+- [加密報表](#encryption-report)（新） ！
+- [威脅防護狀態報告](#threat-protection-status-report) 
+- [惡意程式碼偵測報告](#malware-detections-report) 
+- [上方的惡意程式碼報告](#top-malware-report)
+- [上方的寄件者和收件者的報告](#top-senders-and-recipients-report)
+- [詐騙偵測報告](#spoof-detections-report)
+- [垃圾郵件偵測報告](#spam-detections-report)
+- [傳送和接收電子郵件報告](#sent-and-received-email-report)
+- [使用者回報郵件報告](#user-reported-messages-report)
     
-## <a name="encryption-report"></a>加密报告
+## <a name="encryption-report"></a>加密報表
 
-（**新！**）"**加密"报表**显示有关通过组织策略或通过最终用户控件加密的电子邮件的信息。 组织的安全团队可以使用此报告中的信息来识别模式，并主动应用或调整敏感电子邮件的策略。
+(**新增 ！**)**加密報表**顯示已加密，透過您的組織原則，或透過使用者控制項的電子郵件的相關資訊。 貴組織的安全性小組可以找出模式並主動或套用調整機密電子郵件的原則，以使用此報告中資訊。
 
-要查看此报告，在安全&合规性中心，转到**报表**\>**仪表板**\>**加密报告**。
+若要檢視此報告中，安全性 & 合規性中心，移至**報表** \> **儀表板** \> **加密報表**。
 
-![加密报告](media/encryptionreport-defaultview.png) 
+![加密報表](media/encryptionreport-defaultview.png) 
 
-首次打开报表时，您将看到有关过去七 （7） 天在电子邮件中使用的加密方法的数据。 您可以通过单击屏幕右上角**的"筛选器"** 来更改报表中显示的日期范围和详细信息。
+報告第一次開啟時，您會看到在過去七 （7） 天適用於電子郵件訊息的加密方法的相關資料。 您可以變更的日期範圍，會顯示在報告中的 [**篩選器**的畫面右上角的詳細資料。
 
-![加密报告筛选器](media/encryptionreport-filters.png)   
+![加密報告篩選器](media/encryptionreport-filters.png)   
 
-**您还可以使用"按菜单细分"** 按加密模板（或方法）查看数据。
+您也可以使用 [**依細分**] 功能表來檢視資料的加密範本 （或方法）。
 
-![加密方法或模板](media/encryptionreport-breakdownby.png)
+![加密方法或範本](media/encryptionreport-breakdownby.png)
 
-而且，您可以使用"**按"菜单查看数据"** 来更改视图，以查看加密邮件计数到前五个收件人域。
+然後您可以使用 [**檢視資料**] 功能表變更檢視，以查看已加密郵件的頂端的五個收件者網域的計數。
 
-![按菜单加密报表视图数据](media/encryptionreport-viewdataby.png)
+![依據] 功能表的加密報表檢視資料](media/encryptionreport-viewdataby.png)
 
-借助新的加密报告的灵活性，您可以查看趋势并采取相应操作。 例如，如果您看到大量由用户加密的电子邮件，则可能需要添加加密策略以自动加密某些用例。 （要获取有关这一点的帮助，请参阅[定义邮件流规则以加密 Office 365 中的电子邮件。](define-mail-flow-rules-to-encrypt-email.md)另一个示例是，如果您有许多可用的加密模板，但没有人使用它们，则可以了解用户是否需要针对该功能进行培训。 
+在新的加密報告的彈性，您可以檢視趨勢，並採取適當的動作。 例如，如果您看到大量的使用者所加密的電子郵件，您可能要新增某些使用情況下，自動化加密加密原則。 （若要取得的說明，請參閱[定義郵件流規則以加密 Office 365 中的電子郵件](define-mail-flow-rules-to-encrypt-email.md)）。另一個範例是，如果您有可用的加密範本的數字，但沒有人正在使用這些，您可能會瀏覽是否使用者需要訓練該功能。 
 
-使用此报告可使组织的安全和合规性团队能够监视消息加密的使用方式，以及是否需要进一步操作。 要了解有关加密详细信息，请参阅[Office 365 中的电子邮件加密。](email-encryption.md)
+使用此報告可讓您組織的安全性與合規性小組，以監視使用郵件加密的方式，以及是否進一步動作所需。 若要深入了解加密，請參閱[Office 365 中的電子郵件加密](email-encryption.md)。
 
-## <a name="threat-protection-status-report"></a>威胁防护状态报告
+## <a name="threat-protection-status-report"></a>威脅防護狀態報告
 
-**威胁保护状态**报告是一个智能报告，显示由 Exchange 在线保护检测到和阻止的恶意电子邮件。 此报告可用于查看一段时间内标识为恶意软件或网络钓鱼尝试的电子邮件（最多 90 天），并使安全管理员能够识别趋势或确定策略是否需要调整。
+**威脅保護狀態**報表的智慧顯示的報告，已偵測並封鎖 Exchange Online protection 的惡意電子郵件。 這份報告可以用來檢視被識別為惡意程式碼的電子郵件或網路釣魚嘗試透過時間 （最多為 90 天），以及它可讓安全性系統管理員識別趨勢或判斷原則是否需要調整。
 
 > [!NOTE]
-> 具有[Office 365 ATP](/security/office-365-security/office-365-atp.md)或[Exchange 在线保护](/security/office-365-security/exchange-online-protection-eop.md)（EOP） 的客户可以使用威胁保护状态报告;但是，ATP 客户的威胁防护状态报告中显示的信息可能包含与 EOP 客户可能看到的数据不同的数据。 例如，EOP 客户可以查看有关电子邮件中检测到的恶意软件的信息，但不能查看有关[在 SharePoint Online、OneDrive 或 Microsoft Teams 中检测到的恶意文件](/security/office-365-security/atp-for-spo-odb-and-teams.md)的信息，这些恶意文件是 ATP 特定的功能。 （[了解有关 ATP 报告的更多详细信息。](/security/office-365-security/view-reports-for-atp.md)
+> 威脅保護狀態報表是適用於擁有[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)或[Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop) (EOP); 客戶然而，ATP 客戶威脅保護狀態報表中顯示的資訊可能會包含不同資料比 EOP 客戶可能會看到的內容。 例如，EOP 客戶可以檢視電子郵件，但不是[在 SharePoint Online、 OneDrive 或 Microsoft Teams 中偵測到惡意檔案](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)的相關資訊，ATP 特有功能中偵測到的惡意程式碼的相關資訊。 （[深入了解更多關於 ATP 報告](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)）。
   
-要查看此报告，在[&amp;安全合规性中心](https://protection.office.com)中，转到**报表**\>**仪表板**\>**威胁保护状态**。
+若要檢視此報告中，在[安全性&amp;合規性中心](https://protection.office.com)，請移至**報表** \> **儀表板** \> **威脅保護狀態**。
   
-![威胁防护状态报告](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
+![威脅防護狀態報告](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
-首次打开威胁保护状态报告时，默认情况下，该报告显示过去七天的数据;如果显示过去 7 天的数据，则显示过去 7 天的数据。但是，您可以**单击"筛选器"** 并更改最多 90 天的详细信息的日期范围。 （如果您使用的是试用订阅，则数据可能限制为 30 天。
+當您首次開啟威脅保護狀態報表時，報告顯示資料的過去 7 天的預設值;不過，您可以按一下 [**篩選**]，並 90 天的詳細資料變更日期範圍。 （如果您使用試用訂閱，您可能會受限於的 30 天的資料。）
 
-此报告可用于查看组织的[Exchange 在线保护功能](/security/office-365-security//eop-features.md)的有效性和影响，以及长期趋势。 
+這份報告是適用於檢視的效率和影響貴組織的[Exchange Online Protection 功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features)，以及更長期的趨勢。 
   
-![威胁防护状态报告筛选器](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
+![威脅保護狀態報告的篩選器](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   
-您还可以选择是查看标识为恶意的电子邮件、标识为网络钓鱼尝试的电子邮件还是标识为包含恶意软件的电子邮件的数据。
+您也可以選擇是否要檢視的電子郵件被識別為惡意的資料，識別為網路釣魚嘗試，電子郵件或電子郵件被識別為包含惡意程式碼。
   
-![威胁保护状态报告视图选项](media/d429ecd7-cb7a-4c99-8d27-79a2832cf467.png)
+![威脅保護狀態報表檢視選項](media/d429ecd7-cb7a-4c99-8d27-79a2832cf467.png)
   
-## <a name="malware-detections-report"></a>恶意软件检测报告
+## <a name="malware-detections-report"></a>惡意程式碼偵測報告
 
-恶意软件**检测**报告显示检测到有多少传入和传出邮件包含组织的恶意软件。 
+**惡意程式碼偵測**報告 」 顯示為包含組織的惡意程式碼偵測到多少的內送和外寄郵件。 
   
-要查看此报告，在[安全&amp;合规性中心](https://protection.office.com)中，转到**报表**\>**仪表板**\>**恶意软件检测**。
+若要檢視此報告中，在[安全性&amp;合規性中心](https://protection.office.com)，請移至**報表** \> **儀表板** \> **惡意程式碼偵測**。
   
-![恶意软件检测报告示例](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
+![惡意程式碼偵測] 報告範例](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
-与其他报告（如[威胁保护状态报告）](#threat-protection-status-report)类似，默认情况下，该报表显示过去七天的数据。 但是，**您可以选择"筛选器"** 来更改日期范围。 
+類似其他報表，例如[威脅保護狀態報表](#threat-protection-status-report)，報告預設會顯示資料的過去 7 天。 不過，您可以選擇要變更的日期範圍**篩選器**。 
   
-## <a name="top-malware-report"></a>热门恶意软件报告
+## <a name="top-malware-report"></a>上方的惡意程式碼報告
 
-**热门恶意软件**报告显示[由 Exchange 在线](/security/office-365-security/eop-features.md)检测到的各种恶意软件。 
+**Top 惡意程式碼**報告 」 顯示各種不同的[Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features)所偵測到的惡意程式碼。 
   
-要查看此报告，在[&amp;安全合规性中心](https://protection.office.com)中，**转到"报表**\>**仪表板**\>**顶部恶意软件"。**
+若要檢視此報告中，在[安全性&amp;合規性中心](https://protection.office.com)，請移至**報表** \> **儀表板** \> **頂端惡意程式碼**。
   
-![SCC - EOP 顶级恶意软件](media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
+![SCC-EOP 上方惡意程式碼](media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
   
-当您将鼠标悬停在饼图中的楔块上时，您可以看到某种恶意软件的名称以及检测到有多少消息具有该恶意软件。
+當您將滑鼠停留在圓形圖扇形擴展時，您可以看到的惡意程式碼和為具有該惡意程式碼偵測到多少郵件類型的名稱。
   
-单击（或点击）报表以在新的浏览器窗口中打开报表，您可以在其中获取报表的更详细视图。
+按一下 （或點選），在新的瀏覽器視窗，您可以在哪裡取得報告的詳細的檢視中開啟報表。
   
-![此报告显示为您的组织检测到的顶级恶意软件](media/3fded224-fb31-4713-86f2-8afce5ce2991.png)
+![這份報告顯示上方的惡意程式碼偵測到您的組織](media/3fded224-fb31-4713-86f2-8afce5ce2991.png)
   
-在图表下方，您将看到检测到的恶意软件列表，以及检测到有多少邮件具有该恶意软件。
+下方圖表中，您會看到偵測到惡意程式碼和為具有該惡意程式碼偵測到多少郵件的清單。
   
-## <a name="top-senders-and-recipients-report"></a>热门发件人和收件人报告
+## <a name="top-senders-and-recipients-report"></a>上方的寄件者和收件者的報告
 
-**"热门发件人和收件人"** 报表是显示您电子邮件发件人热门邮件的饼图。 
+**Top 寄件者和收件者**的報告是顯示您上方的電子郵件寄件者圓形圖帶有子橫條圖。 
   
-要查看此报告，在[安全&amp;合规性中心](https://protection.office.com)中，转到**报表**\>**仪表板**\>**顶部发件人和收件人**。
+若要檢視此報告中，在[安全性&amp;合規性中心](https://protection.office.com)，請移至**報表** \> **儀表板** \> **頂端寄件者和收件者**。
   
-![要查看此报告，在安全&amp;合规性中心，转到报表\>仪表板\>顶部发件人和收件人](media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
+![若要檢視此報告中，安全性&amp;合規性中心，移至報表\>儀表板\>頂端寄件者和收件者](media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
   
-将鼠标悬停在饼图中的楔块上时，可以看到发送或接收的消息计数。
+當您將滑鼠停留在圓形圖扇形擴展時，您可以看到傳送或接收郵件計數。
   
-单击（或点击）报表以在新的浏览器窗口中打开报表，您可以在其中获取报表的更详细视图。
+按一下 （或點選），在新的瀏覽器視窗，您可以在哪裡取得報告的詳細的檢視中開啟報表。
   
-使用"**显示数据"** 列表可选择是否查看顶级发件人、收件人、垃圾邮件收件人和恶意软件收件人的数据。 您还可以查看谁收到了[由 Exchange 在线保护](/security/office-365-security/exchange-online-protection-overview.md)检测到的恶意软件。 
+用於**顯示資料**] 清單中選擇要檢視的主要寄件者，接收器、 垃圾郵件收件者、 惡意程式碼收件者的資料。 您也可以查看誰收到偵測到[Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop)protection 的惡意程式碼。 
   
-![使用"显示数据"列表查看特定信息](media/bd91449f-7d42-4749-8666-7b44044049b8.png)
+![使用 [顯示資料的清單以檢視特定的資訊](media/bd91449f-7d42-4749-8666-7b44044049b8.png)
   
-在图表下方，您将看到热门电子邮件发件人或收件人是谁，以及给定时间段内发送或接收的邮件计数。
+下方圖表中，您會看到誰上方的電子郵件寄件者或收件者，以及傳送或接收的指定的時間期間內郵件計數。
   
-## <a name="spoof-detections-report"></a>欺骗检测报告
+## <a name="spoof-detections-report"></a>詐騙偵測報告
 
-"**欺骗检测"** 报告显示检测到的欺骗邮件数量，以及其中哪些邮件被视为"良好"（出于合法业务原因执行的欺骗邮件）。 
+**詐騙偵測**報告 」 可顯示已偵測到多少詐騙郵件，以及那些標籤哪些項目已被視為 「 良好 」 （詐騙郵件為合法的商業原因而完成）。 
   
-要查看此报告，在[安全&amp;合规性中心](https://protection.office.com)中，转到**报表**\>**仪表板**\>**欺骗邮件**。
+若要檢視此報告中，在[安全性&amp;合規性中心](https://protection.office.com)，請移至**報表** \> **儀表板** \> **詐騙郵件**。
   
-![在安全&amp;合规性中心，转到报表\>仪表板\>欺骗邮件](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
+![安全性&amp;合規性中心，移至報表\>儀表板\>詐騙郵件](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
-当您在图表中将鼠标悬停在一天上时，您可以看到有多少欺骗性邮件通过。
+當您將滑鼠停留一天圖表中時，您可以看到多少詐騙郵件是透過。
   
-单击（或点击）报表以在新的浏览器窗口中打开报表，您可以在其中获取报表的更详细视图。 要了解有关反欺骗保护详细信息，请参阅[Office 365 中的反欺骗保护。](/security/office-365-security/anti-spoofing-protection.md)
+按一下 （或點選），在新的瀏覽器視窗，您可以在哪裡取得報告的詳細的檢視中開啟報表。 若要深入了解反詐騙保護，請參閱[在 Office 365 中的反詐騙保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spoofing-protection)。
   
-## <a name="spam-detections-report"></a>垃圾邮件检测报告
+## <a name="spam-detections-report"></a>垃圾郵件偵測報告
 
-**垃圾邮件检测**报告显示所有垃圾邮件内容被 Exchange 在线阻止。 邮件按邮件计数，而不是按收件人计数。 例如，如果向组织中的 100 个收件人发送了电子邮件，则会将其计为一条消息。
+[**垃圾郵件偵測**] 報告顯示封鎖的 Exchange Online 中的垃圾郵件內容。 郵件會計算每封郵件，而不是個別寄件者。 例如，如果電子郵件已傳送給組織中的 100 收件者，它就會計算成一封郵件。
   
-要查看此报告，在[安全&amp;合规性中心](https://protection.office.com)中，转到**报表**\>**仪表板**\>**垃圾邮件检测**。
+若要檢視此報告中，在[安全性&amp;合規性中心](https://protection.office.com)，請移至**報表** \> **儀表板** \> **垃圾郵件偵測**。
   
-![要查看此报告，在安全&amp;合规性中心，转到报表\>仪表板\>EOP 垃圾邮件检测](media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
+![若要檢視此報告中，安全性&amp;合規性中心，移至報表\>儀表板\>EOP 垃圾郵件偵測](media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
   
-当您在图表中将鼠标悬停在一天上时，您可以看到当天被阻止的项目数，以及这些项目的分类方式。 例如，您可以看到筛选了垃圾邮件数，以及来自阻止的 Internet 协议 （IP） 地址的项目数。
+當您將滑鼠停留一天圖表中時，您可以看到多少個項目遭到封鎖該日，以及如何分類項目。 例如，您可以看到多少垃圾郵件進行篩選，以及多少個項目是來自封鎖的網際網路通訊協定 (IP) 位址。
   
-单击（或点击）报表以在新的浏览器窗口中打开报表，您可以在其中获取报表的更详细视图。
+按一下 （或點選），在新的瀏覽器視窗，您可以在哪裡取得報告的詳細的檢視中開啟報表。
   
-![垃圾邮件检测报告告诉您有多少垃圾邮件被阻止或过滤掉](media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
+![[垃圾郵件偵測] 報告會告訴您如何許多垃圾郵件被封鎖或篩選出](media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
   
-在图表下方，您将看到检测到的垃圾邮件项目的列表。 选择项目以查看其他信息，例如垃圾邮件项目是入站还是出站、邮件 ID 及其收件人。 要了解有关反垃圾邮件保护的更多内容，请参阅[Office 365 电子邮件反垃圾邮件保护](/security/office-365-security/anti-spam-protection.md)。
+下方圖表中，您會看到所偵測到的垃圾郵件項目清單。 選取要檢視其他資訊，例如垃圾郵件項目已輸入或輸出、 其郵件識別碼，以及其收件者的項目。 若要深入了解反垃圾郵件保護，請參閱[Office 365 電子郵件反垃圾郵件保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)。
   
-## <a name="sent-and-received-email-report"></a>已发送和接收的电子邮件报告
+## <a name="sent-and-received-email-report"></a>傳送和接收電子郵件報告
 
-**已发送和接收的电子邮件**报告是一个智能报告，显示有关传入和传出电子邮件的信息，包括垃圾邮件检测、恶意软件和标识为"良好"的电子邮件。 
+**已傳送和接收的電子郵件**報告是智慧報表顯示資訊內送和外寄電子郵件，包括垃圾郵件偵測、 惡意程式碼，以及電子郵件被識別為 「 良好 」。 
   
-要查看此报告，在[&amp;安全合规性中心](https://protection.office.com)中，\>**转到"已发送和接收的电子邮件"****仪表板。** \> ****
+若要檢視此報告中，在[安全性&amp;合規性中心](https://protection.office.com)，請移至**報表** \> **儀表板** \> **已傳送和接收的電子郵件**。
   
-![要查看此报告，请转到安全&amp;合规性中心，转到已发送和\>接收\>的电子邮件"报告仪表板"](media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
+![若要檢視此報告中，安全性&amp;合規性中心，移至報表\>儀表板\>已傳送和接收的電子郵件](media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
   
-当您在图表中将鼠标悬停在一天上时，您可以看到有多少消息进入，以及这些消息的分类方式。 例如，您可以看到检测到包含恶意软件的邮件数，以及有多少邮件被标识为垃圾邮件。
+當您將滑鼠停留一天圖表中時，您可以看到多少郵件的來源，以及這些郵件分類的方式。 例如，您可以看到為包含惡意程式碼，偵測到多少郵件和多少被判定為垃圾郵件。
   
-单击（或点击）报表以在新的浏览器窗口中打开报表，您可以在其中获取报表的更详细视图。
+按一下 （或點選），在新的瀏覽器視窗，您可以在哪裡取得報告的詳細的檢視中開啟報表。
   
-您可以使用"按列表**细分"** 按类型或方向（传入和传出）查看信息。 
+您可以使用**細分的**清單檢視類型，或方向 （內送和外寄） 的資訊。 
   
-![使用"按细分"列表按类型或方向查看信息](media/a5b30c94-d75f-4bfc-851a-cb155685b177.png)
+![使用 [自動換行向下依據] 清單來檢視資訊類型或方向](media/a5b30c94-d75f-4bfc-851a-cb155685b177.png)
   
-在图表下方，您将看到电子邮件类别的列表，如**GoodMail、****垃圾邮件内容筛选**等。 选择类别以查看其他信息，例如针对恶意软件执行的操作，以及电子邮件是传入还是传出。
+下方圖表中，您會看到一份電子郵件類別，例如**GoodMail**、 **SpamContentFiltered**，等等。 選取要檢視其他資訊，例如惡意程式碼，所採取的動作和是否電子郵件類別是傳入或傳出。
   
-![此报告告诉您有关反恶意软件、反垃圾邮件和其他邮件检测的信息](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
+![此報表會告訴您有關反惡意程式碼、 反垃圾郵件和其他郵件偵測](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
 
-要了解有关电子邮件智能的更多详细信息，请参阅[Office 365 中的"邮件流智能"。](/security/office-365-security/mail-flow-intelligence-in-office-365.md)
+若要深入了解電子郵件智慧，請參閱[在 Office 365 中的郵件流程情報](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365)。
   
-## <a name="user-reported-messages-report"></a>用户报告的消息报告
+## <a name="user-reported-messages-report"></a>使用者回報郵件報告
 
-**用户报告的邮件**报告显示有关用户[通过使用"报告邮件"外接程序](/security/office-365-security/enable-the-report-message-add-in.md)报告为垃圾邮件、网络钓鱼尝试或良好邮件的电子邮件的信息。
+**使用者回報郵件**報告會顯示使用者會回報為垃圾郵件、 網路釣魚企圖或良好郵件[報告訊息增益集](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in)使用的電子郵件的相關資訊。
   
-有关每封邮件的详细信息，包括传递原因，例如为您的组织配置的垃圾邮件策略异常或邮件流规则。 要查看详细信息，请在用户报告列表中选择一个项目，然后**查看"摘要"** 和"**详细信息"** 选项卡上的信息。 
+詳細資料可供每則訊息，包括傳遞的原因，這類垃圾郵件原則的例外狀況或組織設定的郵件流程規則。 若要檢視的詳細資訊，請在使用者報告] 清單中，選取項目，然後檢視資訊**摘要**和**詳細資料**] 索引標籤上。 
   
-!["用户报告的邮件"报告显示标记为垃圾邮件、而不是垃圾邮件或网络钓鱼尝试的邮件用户。](media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
+![User-Reported 郵件報告顯示標示為垃圾郵件、 非垃圾郵件或網路釣魚嘗試的郵件使用者。](media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
   
-要查看此报告，在[&amp;安全合规性中心](https://protection.office.com)中，执行以下操作之一：
+若要檢視此報告中，在[安全性&amp;合規性中心](https://protection.office.com)，執行下列其中一項：
   
-- 转到**威胁管理**\>**仪表板**\>**用户报告的消息。**
+- 移至**威脅管理，** \> **儀表板** \> **使用者報告的郵件**。
     
-- 转到**威胁管理**\>**审核**\>**用户报告的消息**。
+- 移至**威脅管理，** \> **檢閱** \> **使用者報告的郵件**。
     
-![在安全&amp;合规性中心中，选择"威胁\>管理\>审核用户报告"消息](media/e372c57c-1414-4616-957b-bc933b8c8711.png)
+![安全性&amp;合規性中心，選擇 [威脅管理\>檢閱\>使用者所報告的郵件](media/e372c57c-1414-4616-957b-bc933b8c8711.png)
   
 > [!IMPORTANT]
-> 为了使用户报告的消息报告正常工作，必须为 Office 365 环境**打开审核日志记录。** 这通常由在 Exchange 联机中分配审核日志角色的人员完成。 有关详细信息，请参阅[打开或关闭 Office 365 审核日志搜索。](turn-audit-log-search-on-or-off.md) 
+> 在順序，如使用者回報郵件報告能夠正常運作，**必須先開啟稽核記錄功能**適用於 Office 365 環境。 這項工作通常是由在 Exchange Online 中獲派稽核記錄角色的人員完成。 如需詳細資訊，請參閱[開啟或關閉 Office 365 稽核記錄搜尋](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)。 
   
-## <a name="what-permissions-are-needed-to-view-these-reports"></a>查看这些报告需要哪些权限？
+## <a name="what-permissions-are-needed-to-view-these-reports"></a>若要檢視這些報告需要哪些權限？
 
-为了查看和使用本文中描述的报告，**您必须为安全&amp;合规性中心和 Exchange 管理中心分配适当的角色。**
+若要檢視及使用本文中所述的報告**您必須具有適當的角色指派給這兩種安全性&amp;規範中心和 Exchange 系統管理中心**。
 
-- 对于安全&amp;合规性中心，您必须分配以下角色之一：
+- 針對「安全性與合規性中心」，您必須受指派下列其中一個角色：
     - 組織管理
-    - 安全管理员（可在 Azure 活动目录管理中心 （[https://aad.portal.azure.com](https://aad.portal.azure.com)） 中分配
-    - 安全读取器
+    - 安全性系統管理員 (這可以在 Azure Active Directory 系統管理中心中指派 ([https://aad.portal.azure.com](https://aad.portal.azure.com))
+    - 安全性讀取者
 
-- 对于 Exchange 在线，您必须在 Exchange 管理中心 （ ） 或 PowerShell cmdlet 中分配以下角色之一（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)请参阅 Exchange 在线[PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)）：
+- 針對 Exchange Online，您必須在 Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) 或 PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) 受指派下列其中一個角色：
     - 組織管理
     - 僅檢視組織管理
     - 僅檢視收件者角色
     - 合規性管理
 
-要了解更多信息，请参阅以下资源：
+若要深入了解，請參閱下列資源：
 
-- [Permissions in the Office 365 Security &amp; Compliance Center](/security/office-365-security/protect-against-threats.md)
+- [Office 365 安全性與合規性中心權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
 
 - [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    
    
-## <a name="what-if-the-reports-arent-showing-data"></a>如果报表未显示数据，该怎么办？
+## <a name="what-if-the-reports-arent-showing-data"></a>如果報表不顯示資料？
 
-如果报表中未看到数据，请仔细检查策略设置是否正确。 要了解更多信息，请参阅[Office 365 中的"防止威胁"。](/security/office-365-security/protect-against-threats.md)
+如果您不在報表中看到的資料，請仔細檢查您的原則已正確設定。 若要深入了解，請參閱[防範 Office 365 中的威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)。
   
 ## <a name="related-topics"></a>相關主題
 
-[Office 365 電子郵件的反垃圾郵件保護](/security/office-365-security/anti-spam-protection.md)
+[Office 365 電子郵件的反垃圾郵件保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
   
-[Office 365 安全&amp;合规性中心的报告和见解](/security/office-365-security/reports-and-insights-in-security-and-compliance.md)
+[報告和 Office 365 安全性的深入解析&amp;合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
   
-[在安全&amp;合规性中心为报表创建计划](/security/office-365-security/create-a-schedule-for-a-report.md)
+[建立報表排程安全性&amp;合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-a-schedule-for-a-report)
   
-[在安全&amp;合规性中心设置和下载自定义报告](/security/office-365-security/set-up-and-download-a-custom-report.md)
+[設定及下載自訂報告中的安全性&amp;合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-and-download-a-custom-report)
   
 

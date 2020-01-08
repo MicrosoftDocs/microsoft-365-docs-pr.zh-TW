@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中系統管理員身分管理被隔離的郵件和檔案
+title: 以 Office 365 系統管理員身分管理隔離的郵件和檔案
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -16,14 +16,14 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: '身為系統管理員，您可以檢視、 釋出，並報告誤判隔離的郵件在 Office 365 中。 您可以設定原則，讓 Office 365 篩選郵件，並傳送至隔離區幾個原因： 因為被判定是垃圾郵件、 大量、 網路釣魚、 惡意程式碼，或因為它們符合郵件流程規則。 '
-ms.openlocfilehash: 89750aeed6b502155bfba50cc6e475c1ecf746e8
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 615d88f63f738ca443b9ff377bb08fdaa97fe2dc
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970309"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970931"
 ---
-# <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>在 Office 365 中系統管理員身分管理被隔離的郵件和檔案
+# <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>以 Office 365 系統管理員身分管理隔離的郵件和檔案
 
 身為系統管理員，您可以檢視、 釋出，並刪除隔離的郵件，並報告誤判隔離的郵件在 Office 365 中。 您也可以檢視、 下載及刪除隔離擷取藉由進階威脅防護 (ATP) 的 SharePoint Online、 OneDrive for Business 和 Microsoft Teams 的檔案。 您可以設定原則，讓 Office 365 篩選郵件，並傳送至隔離區幾個原因： 因為被判定為垃圾郵件、 大量郵件、 網路釣魚郵件、 包含惡意程式碼，或因為它們符合郵件流程規則。
 
@@ -32,7 +32,25 @@ ms.locfileid: "39970309"
 您必須在 Office 365 全域系統管理員 (GA) 的權限或屬於一或多個安全性 & 合規性中心角色群組，才能使用被隔離的郵件或隔離的檔案。 如需詳細資訊，請參閱[Office 365 安全性 & 合規性中心的權限](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)。
 
 > [!IMPORTANT]
->根據預設，垃圾郵件、 大量和網路釣魚郵件會隔離區中保留 30 天。 因為它們符合郵件流程規則遭到隔離的郵件會保留在隔離區 7 天。 惡意程式碼的郵件會保留在隔離區 15 天。 您可以自訂安全性中的反垃圾郵件設定] 中的垃圾郵件隔離時間&amp;合規性中心。 當 Office 365 從隔離中刪除某封郵件後，您就無法復原該郵件。 如有需要，您可以在您的反垃圾郵件篩選原則中變更隔離郵件的保留期間。 如需詳細資訊，請參閱本文中的[設定隔離保留期限](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime)。
+> 根據預設，垃圾郵件、 大量和網路釣魚郵件會隔離區中保留 30 天。 因為它們符合郵件流程規則遭到隔離的郵件會保留在隔離區 7 天。 惡意程式碼的郵件會保留在隔離區 15 天。 您可以自訂安全性 & 合規性中心中的反垃圾郵件設定] 中的垃圾郵件隔離時間。 當 Office 365 從隔離中刪除某封郵件後，您就無法復原該郵件。 如有需要，您可以在您的反垃圾郵件篩選原則中變更隔離郵件的保留期間。 如需詳細資訊，請參閱[設定隔離保留期限](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime)。
+
+## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
+
+雖然安全性 & 合規性中心位於隔離區，來管理郵件在隔離區的權限是由**Exchange Online**角色群組的成員資格所控制。 如需 Exchange Online 中的角色群組的詳細資訊，請參閱[管理角色群組在 Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
+
+授與管理隔離區檔案的權限的 Exchange Online 角色群組為：
+
+- **組織管理**： 全域系統管理員會自動這個群組的成員。
+
+- **安全性系統管理員**
+
+- **檢疫管理**
+
+若要檢視隔離區檔案的權限授與 Exchange Online 角色群組為：
+
+- **View-Only Organization Management**
+
+- **安全性讀取者**
 
 ## <a name="view-your-organizations-quarantined-messages"></a>檢視您的組織已隔離的郵件
 
@@ -41,9 +59,9 @@ ms.locfileid: "39970309"
 2. 在左側清單中，展開 [**威脅管理**，選擇 [**檢閱**，，然後選擇 [**隔離**。
 
     > [!TIP]
-    > 若要直接移至安全性與合規性中心的 [隔離]**** 頁面，請使用這個 URL：> [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > 若要直接前往安全 & 與規範中心中的 [**隔離**] 頁面上，使用此 URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
 
-    根據預設，安全性與合規性中心會顯示所有因被視為垃圾郵件而遭到隔離的電子郵件訊息。 郵件會依據接收的 [日期]****，從最新排到最舊。 系統也會顯示每封郵件的 [寄件者]****、[主旨]**** 與到期日 (位於 [到期]**** 底下)。 您可以按一下對應的欄標題來依該欄位排序；再按一下欄標題則可將排序順序倒轉。
+    根據預設，安全性 & 合規性中心會顯示已隔離的所有電子郵件為垃圾郵件。 郵件會依據接收的 [日期]****，從最新排到最舊。 系統也會顯示每封郵件的 [寄件者]****、[主旨]**** 與到期日 (位於 [到期]**** 底下)。 您可以按一下對應的欄標題來依該欄位排序；再按一下欄標題則可將排序順序倒轉。
 
 3. 您可以檢視清單中的所有隔離的郵件，或您可以減少設定來篩選結果。 您只能夠對最多 100 封郵件執行大量作業；如果您擁有的郵件超過 100 封，進行篩選也有助於減少結果集。 您可以從頁面頂端的篩選器中選擇選項，以快速篩選單一隔離原因的郵件。 選項包括：
 
@@ -70,13 +88,13 @@ ms.locfileid: "39970309"
 2. 展開左側的 [威脅管理]****，依序選擇 [檢閱]**** 與 [隔離]****。
 
    > [!TIP]
-   > 若要直接移至安全性與合規性中心的 [隔離]**** 頁面，請使用這個 URL：> [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+   > 若要直接前往安全 & 與規範中心中的 [**隔離**] 頁面上，使用此 URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
 
 3. 根據預設，頁面會顯示隔離區的電子郵件。 若要檢視隔離的檔案，設定要顯示的**檔案**，因為**惡意程式碼**隔離的頁面頂端的篩選器。 若要使用隔離檔案的 Office 365 中，您必須具有系統管理員權限。
 
 4. 檔案會以排序從最新到最舊根據隔離檔案的日期。 上次**使用者**修改的檔案，**服務**要張貼檔案，**檔案名稱**、**位置**、**檔案大小**，和到期日期 （**到期日**） 也會列出每個檔案。 您可以藉由按一下標頭; 排序欄位按一下第二次欄標題以相反順序排序。
 
-您可以檢視所有隔離檔案的清單或篩選您可以搜尋特定的檔案。 就像郵件，您可以只執行大量作業最多 100 個項目。 目前，安全性&amp;合規性中心可讓您檢視及管理位於隔離區，因為它們已識別為包含惡意程式碼的檔案。 提示，請參閱[來篩選結果和尋找隔離的郵件和檔案](manage-quarantined-messages-and-files.md#BKMK_AdvSearch)本文中。
+您可以檢視所有隔離檔案的清單或篩選您可以搜尋特定的檔案。 就像郵件，您可以只執行大量作業最多 100 個項目。 目前，安全性 & 合規性中心可讓您檢視及管理位於隔離區，因為它們已識別為包含惡意程式碼的檔案。 提示，請參閱[來篩選結果和尋找隔離的郵件和檔案](manage-quarantined-messages-and-files.md#BKMK_AdvSearch)本文中。
 
 ## <a name="to-filter-results-and-find-quarantined-messages-and-files"></a>若要篩選結果，並找出隔離的郵件和檔案
 <a name="BKMK_AdvSearch"> </a>
@@ -99,25 +117,25 @@ ms.locfileid: "39970309"
 
    - **訊息識別碼**： 使用此功能來識別特定郵件，當您知道郵件識別碼。
 
-     例如，如果特定郵件傳送者]，或適用於您組織中的使用者，但它永遠不會達到其目的，您可以搜尋的郵件使用郵件追蹤 （請參閱[安全性 & 合規性中心中的郵件追蹤](message-trace-scc.md)）。 如果您發現郵件已傳送至隔離，可能是因為它符合郵件流程規則，或已識別為垃圾郵件，您接下來可以輕鬆地尋找此郵件隔離區中藉由指定其郵件識別碼。 請務必包括完整的郵件識別碼字串。 這可能包括角括號 (\<\>)，例如：
+     例如，如果組織中的某位使用者傳送了特定郵件或者他是郵件的預定收件者，但郵件未到達目的地，則您可使用郵件追蹤功能搜尋郵件 (請參閱[安全性與合規性中心內的郵件追蹤](message-trace-scc.md))(英文版)。 如果您發現郵件已傳送至隔離，可能是因為它符合郵件流程規則，或已識別為垃圾郵件，您接下來可以輕鬆地尋找此郵件隔離區中藉由指定其郵件識別碼。 請務必包括完整的郵件識別碼字串。 這可能包括角括號 (\<\>)，例如：
 
      `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`
 
-   - **寄件者電子郵件地址**： 選擇以篩選出的單一寄件者電子郵件地址。
+   - **寄件者電子郵件地址**：選擇依單一寄件者電子郵件地址來篩選。
 
-   - **收件者電子郵件地址**： 選擇以篩選出的單一收件者的電子郵件地址。
+   - **收件者電子郵件地址**：選擇做為篩選依據的單一收件者電子郵件地址。
 
-   - **主旨**： 輸入您要找出電子郵件地址的主旨。 由於不支援萬用字元搜尋，您必須在結果中傳回郵件搜尋順序使用整個郵件的主旨。 搜尋不區分大小寫。
+   - **主旨**：輸入您要尋找之電子郵件地址的主旨。 由於不支援萬用字元搜尋，您必須在結果中傳回郵件搜尋順序使用整個郵件的主旨。 搜尋不區分大小寫。
 
 ## <a name="view-details-about-quarantined-messages-and-files"></a>檢視詳細資料隔離的郵件和檔案
 
-當您選取 [隔離] 清單中顯示的項目時，您會看到其**詳細資料**窗格中的屬性摘要 Security 右側&amp;合規性中心。
+當您選取 [隔離] 清單中顯示的項目時，您會看到其**詳細資料**窗格中的屬性摘要 Security & 合規性中心的右側。
 
 ### <a name="details-displayed-for-quarantined-messages"></a>顯示隔離的郵件詳細資料
 
-- **訊息識別碼**： 郵件的唯一識別碼。
+- **郵件識別碼**：郵件的唯一識別碼。
 
-- **寄件者地址**： 郵件寄件者。
+- **寄件者地址**：傳送郵件的寄件者。
 
 - **Received**： 收到郵件的時間與日期。
 
@@ -127,7 +145,7 @@ ms.locfileid: "39970309"
 
 - **到期日**： 的日期和時間時將會自動刪除郵件從隔離區。
 
-- **若要發行**： 所有電子郵件地址 （如果有的話） 給已釋放郵件其中。
+- **已釋出給**：該封郵件曾釋出至的所有電子郵件地址 (如果有的話)。
 
 - **尚未發行至**： 所有電子郵件地址 （如果有的話） 給這不尚未已釋放郵件。
 
@@ -168,7 +186,7 @@ ms.locfileid: "39970309"
 
 - **檢視郵件標頭**： 選擇此連結以查看郵件標頭文字。 若要分析的標頭中深度，將郵件標頭文字複製到剪貼簿，，然後選擇 [ **Microsoft 郵件標頭分析器**要前往 Remote Connectivity Analyzer （以滑鼠右鍵按一下並選擇 [**開啟新的索引標籤中**，如果您不想要保留完成這項工作的 Office 365）。在郵件標頭分析器] 區段中，貼到頁面的郵件標頭，然後選擇 [**分析標頭**：
 
-- **預覽訊息**： 可讓您查看原始或郵件內文文字的 HTML 版本。 在 HTML 檢視中會停用連結。
+- **預覽郵件**：讓您查看郵件內文文字的原始版本或 HTML 版本。 在 HTML 檢視中會停用連結。
 
 - **下載郵件**或**下載檔案**： 選擇這個選項，郵件或檔案的複本下載到您的本機裝置。 您必須確認您了解與下載的項目從隔離區，才能將允許相關聯的風險。 郵件會儲存在.eml 格式，以指定的資料夾。 隔離的檔案會儲存在其原始格式。
 
@@ -202,7 +220,7 @@ ms.locfileid: "39970309"
 2. 位於左側，展開**威脅管理**，選擇 [**原則**] 中，，然後選擇 [**反垃圾郵件**。
 
     > [!TIP]
-    > 直接前往 [**反垃圾郵件**] 頁面上，安全性&amp;合規性中心，使用下列 URL: >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
+    > 若要直接前往安全 & 與規範中心中的**反垃圾郵件**] 頁面上，使用此 URL: >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
 
 3. 展開 [**預設垃圾郵件篩選原則 (always ON)** ] 列。
 
@@ -212,4 +230,4 @@ ms.locfileid: "39970309"
 
 6. 在 [**隔離**，在 [**保留垃圾郵件的 （天）** ] 文字方塊中輸入您希望 Office 365 到隔離區中保留的郵件和檔案的時間量。 預設值為 30 天。 這也是最大值。
 
-7. 選擇 [**儲存**]。
+7. 選擇 [儲存]****。

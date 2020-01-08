@@ -1,7 +1,7 @@
 ---
 title: 美國國防部 (DoD) 暫時性授權
 description: Microsoft 收到國防部 (DoD) 暫時性授權層級影響 5、 4 和 2。
-keywords: Microsoft 365, 合規性, 方案
+keywords: Microsoft 365, compliance, offerings , 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2fa27680dcc9e0ee7fb495164683a291cc167d59
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e6a41cb2c55e1711048c863cd6f2f7e26e9ee5bc
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805226"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959552"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>美國國防部 (DoD) 暫時性的授權層級影響 2、 4 和 5
 
@@ -87,7 +87,7 @@ Microsoft 雲端服務後授與 DoD PA，監控和評估每年： [Microsoft Fed
 
 **我是否可以在組織的憑證程序中使用 Microsoft 合規性？**
 
-是。 所有 DoD 行政機關可能都自信地仰賴 Microsoft 雲端服務的認證為基礎的任何程式或需要 DoD 授權計劃。 （這也適用於其他支援 DoD，且需要雲端服務的組織）不過，您需要達成您自己的授權外部這些服務的元件。
+可以。 所有 DoD 行政機關可能都自信地仰賴 Microsoft 雲端服務的認證為基礎的任何程式或需要 DoD 授權計劃。 （這也適用於其他支援 DoD，且需要雲端服務的組織）不過，您需要達成您自己的授權外部這些服務的元件。
 
 **Microsoft 的 DoD 憑證是否符合 NIST 800-171 需求？**
 
@@ -100,7 +100,7 @@ Microsoft 雲端服務後授與 DoD PA，監控和評估每年： [Microsoft Fed
 ## <a name="resources"></a>資源
 
 - [DoD 雲端運算安全性需求準則 (SRG) 和其他文件](https://public.cyber.mil/dccs/dccs-documents/)
-- [DISA 雲端服務支援](http://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
+- [DISA 雲端服務支援](https://storefront.disa.mil/kinetic/disa/service-catalog#/forms/cloud-service-support)
 - [出版資訊系統與組織保護控制非機密資訊](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 - [Microsoft 通用控制措施中樞合規性架構](https://www.microsoft.com/trustcenter/common-controls-hub)

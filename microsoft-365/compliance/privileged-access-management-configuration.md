@@ -15,17 +15,17 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用此主題以深入了解 Office 365 中設定特殊權限的存取管理
-ms.openlocfilehash: 5b7bf33f41bc722c557f2b515c5ab027bd401a2a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1ea929026db3ac50a0eac3d452c2608fd0c0d123
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803760"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959512"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>在 Office 365 中設定特殊權限的存取管理
 
-> [!IMPORTANT]
-> 本主題涵蓋功能目前僅適用於 Office 365 E5 和進階合規性 Sku 的部署和設定指導。
+>[!IMPORTANT]
+>本主題涵蓋功能目前僅適用於 Office 365 E5 和進階合規性 Sku 的部署和設定指導。
 
 本主題會引導您啟用及設定特殊權限的存取管理 Office 365 組織中。 您可以使用 Microsoft 365 系統管理中心或 Exchange Management PowerShell 來管理和使用特殊權限的存取。 
 
@@ -51,8 +51,8 @@ ms.locfileid: "40803760"
 
 授與核准之後，要求使用者可執行預定的工作和特殊權限的存取將授權執行代表使用者工作。 核准保持有效要求的持續期間 （預設時間為 4 小時），在這期間要求者可執行預定的任務多次。 所有這類執行會記錄，並可供安全性和法規遵循稽核。 
 
-> [!NOTE]
-> 如果您想要使用 Exchange Management PowerShell 來啟用及設定特殊權限的存取，請依照下列[PowerShell 連線到 Exchange Online 使用多重要素驗證](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)與您的 Office 365 認證連線至 Exchange Online PowerShell 中的步驟。 您不需要啟用若要使用的步驟來連線至 Exchange Online PowerShell 時啟用特殊權限的存取 Office 365 組織的多重要素驗證。 以多重要素驗證連線建立簽署您要求的特殊權限存取使用 OAuth 權杖。
+>[!NOTE]
+>如果您想要使用 Exchange Management PowerShell 來啟用及設定特殊權限的存取，請依照下列[PowerShell 連線到 Exchange Online 使用多重要素驗證](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)與您的 Office 365 認證連線至 Exchange Online PowerShell 中的步驟。 您不需要啟用若要使用的步驟來連線至 Exchange Online PowerShell 時啟用特殊權限的存取 Office 365 組織的多重要素驗證。 以多重要素驗證連線建立簽署您要求的特殊權限存取使用 OAuth 權杖。
 
 <a name="step1"> </a>
 
@@ -89,16 +89,19 @@ ms.locfileid: "40803760"
 ### <a name="in-exchange-management-powershell"></a>在 [Exchange Management PowerShell
 
 若要啟用特殊權限的存取，並將指定的核准者群組，請在 Exchange Online PowerShell 中執行下列命令：
-```
+
+```PowerShell
 Enable-ElevatedAccessControl -AdminGroup '<default approver group>' -SystemAccounts @('<systemAccountUPN1>','<systemAccountUPN2>')
 ```
+
 範例：
-```
+
+```PowerShell
 Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com' -SystemAccounts @('sys1@fabrikamorg.onmicrosoft.com', sys2@fabrikamorg.onmicrosoft.com')
 ```
 
-> [!NOTE]
-> 功能便可確保在組織內特定自動化系統帳戶可以處理，而相依性的特殊權限存取，但還是建議這類排除項目是例外並允許這些應該核准及稽核定期。
+>[!NOTE]
+>功能便可確保在組織內特定自動化系統帳戶可以處理，而相依性的特殊權限存取，但還是建議這類排除項目是例外並允許這些應該核准及稽核定期。
 
 <a name="step3"> </a>
 
@@ -134,11 +137,13 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 若要建立及定義核准原則，請在 Exchange Online PowerShell 中執行下列命令：
 
-```
+```PowerShell
 New-ElevatedAccessApprovalPolicy -Task 'Exchange\<exchange management cmdlet name>' -ApprovalType <Manual, Auto> -ApproverGroup '<default/custom approver group>'
 ```
+
 範例：
-```
+
+```PowerShell
 New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType Manual -ApproverGroup 'mbmanagers@fabrikamorg.onmicrosoft.com'
 ```
 
@@ -175,14 +180,19 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 #### <a name="in-exchange-management-powershell"></a>在 [Exchange Management PowerShell
 
 執行下列命令在 Exchange Online PowerShell 來建立及提交核准要求的核准者群組：
-```
+
+```PowerShell
 New-ElevatedAccessRequest -Task 'Exchange\<exchange management cmdlet name>' -Reason '<appropriate reason>' -DurationHours <duration in hours>
 ```
+
 範例：
-```
+
+```PowerShell
 New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting to fix the user mailbox error' -DurationHours 4
 ```
+
 ### <a name="view-status-of-elevation-requests"></a>檢視提高權限要求的狀態
+
 建立核准要求之後，可以在系統管理中心檢閱提高權限要求的狀態，或在 Exchange Management PowerShell 要求使用相關聯的識別碼。
 
 #### <a name="in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心
@@ -198,15 +208,19 @@ New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting t
 #### <a name="in-exchange-management-powershell"></a>在 [Exchange Management PowerShell
 
 執行下列命令在 Exchange Online PowerShell 來檢視特定的要求 ID 核准要求的狀態：
-```
+
+```PowerShell
 Get-ElevatedAccessRequest -Identity <request ID> | select RequestStatus
 ```
+
 範例：
-```
+
+```PowerShell
 Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | select RequestStatus
 ```
 
 ### <a name="approving-an-elevation-authorization-request"></a>核准提高權限授權要求
+
 建立核准要求時，相關的核准者群組的成員接收電子郵件通知，並可核准要求識別碼相關聯的要求 要求者要求核准或拒絕透過電子郵件訊息的通知。
 
 #### <a name="in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心
@@ -225,25 +239,30 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 若要核准提高權限授權要求，請在 Exchange Online PowerShell 中執行下列命令：
 
-```
+```PowerShell
 Approve-ElevatedAccessRequest -RequestId <request id> -Comment '<approval comment>'
 ```
+
 範例：
-```
+
+```PowerShell
 Approve-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<approval comment>'
 ```
 
 若要拒絕提高權限授權要求，請在 Exchange Online PowerShell 中執行下列命令：
 
-```
+```PowerShell
 Deny-ElevatedAccessRequest -RequestId <request id> -Comment '<denial comment>'
 ```
+
 範例：
-```
+
+```PowerShell
 Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<denial comment>'
 ```
 
 ## <a name="delete-a-privileged-access-policy-in-office-365"></a>刪除 Office 365 中的特殊權限的存取原則
+
 如果不再需要您組織中，您可以刪除的特殊權限的存取原則。
 
 ### <a name="in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心
@@ -264,7 +283,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 若要刪除的特殊權限的存取原則，請在 Exchange Online Powershell 中執行下列命令：
 
-```
+```PowerShell
 Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you want to delete>
 ```
 
@@ -284,6 +303,6 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 若要停用特殊權限的存取，請在 Exchange Online Powershell 中執行下列命令：
 
-```
+```PowerShell
 Disable-ElevatedAccessControl
 ```

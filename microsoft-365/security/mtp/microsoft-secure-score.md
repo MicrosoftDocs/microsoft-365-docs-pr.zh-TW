@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 943c32aa535a319829bd93bde190a5fead12ef08
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: 8a471b08f9c7178c86d4f4bd7b7341b3555ffba7
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910512"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970911"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -60,21 +60,21 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 
 讀取與寫入權限，您可以進行的變更，並直接互動安全分數。 您也可以指派給其他使用者的唯讀權限。
 
-* CompanyAdministrator
-* SecurityAdministrator
-* ExchangeAdmin
-* SharePointAdmin
+* 全域管理員
+* 安全性系統管理員
+* Exchange 管理員
+* SharePoint 系統管理員
 
 ### <a name="read-only-roles"></a>唯讀的角色
 
 具有唯讀存取權，您不能編輯狀態] 或 [備忘稿改進巨集指令、 編輯分數區域，或編輯自訂比較。
 
-* HelpdeskAdmin
-* UserAccountAdmin
-* ServiceSupportAdmin
-* SecurityReader
-* SecurityOperator
-* GlobalReader
+* 服務台管理員
+* 使用者系統管理員
+* 服務管理員
+* 安全性讀取者
+* 安全性操作員
+* 全域的讀取者
 
 ### <a name="graph-api"></a>Graph API
 

@@ -1,7 +1,7 @@
 ---
 title: 紐西蘭政府雲端運算安全性及隱私權考量
 description: Microsoft NZ 位址發佈紐西蘭雲端運算架構中的問題。
-keywords: Microsoft 365, 合規性, 方案
+keywords: Microsoft 365, compliance, offerings , 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1f0ed98386a33b84d109fb94093b3d03cefc127b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: da5fbef7ed9ceb136f276e2d6baab0c94bba3c22
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803996"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959532"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>紐西蘭政府雲端運算安全性及隱私權考量
 
@@ -62,7 +62,7 @@ Microsoft 和紐西蘭政府雲端運算安全性及隱私權考量
 - [Microsoft Azure 合規性內容中的紐西蘭安全性及隱私權需求](https://aka.ms/azurecompliancenewzealand)
 - [NZ 政府 ICT 策略 2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
 - [NZ 政府需求雲端運算](https://aka.ms/NZ-Cloud-Requirements)
-- [雲端運算： 資訊安全性及隱私權考量 (ISPC)](https://aka.ms/NZ-Cloud-Computing-Considerations)
+- [雲端運算： 資訊安全性及隱私權考量 (ISPC)](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/)
 - [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)
 - [Office 365: SEEMail 整合和參考架構](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)（其他 Microsoft NZ 指導雲端服務採用）
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
