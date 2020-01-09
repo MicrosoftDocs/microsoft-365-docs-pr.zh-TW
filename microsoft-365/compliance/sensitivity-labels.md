@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上套用保護設定 (包括加密和浮水印)。
-ms.openlocfilehash: 465b22b7d57718e5b1f38951804d2f76c10ebb3f
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: 91481bb1c1267b40ccd2596c06faf5005372ac39
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962342"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989498"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
@@ -240,10 +240,7 @@ Azure 資訊保護使用者可以使用 Azure 資訊保護整合標籤用戶端�
 - 在文件和電子郵件上保留現有的 Azure 資訊保護標籤。
 - 保留現有的 Azure 資訊保護標籤設定。
 
-如果您因為您的租用戶尚不在[整合標籤平台](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)中而使用 Azure 資訊保護標籤，建議您避免在其他系統管理中心中建立新標籤，直到您啟用整合標籤為止。 如需此程序的詳細資訊，請參閱[如何將 Azure 資訊保護標籤移轉至整合敏感度標籤](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)。 
-
-> [!NOTE]
-> Azure 入口網站中 Azure 資訊保護標籤的標籤管理功能即將在 **2021 年 3 月 31 日**淘汰。 在官方的[淘汰聲明](https://techcommunity.microsoft.com/t5/azure-information-protection/deprecation-notice-azure-information-protection-classic-client/ba-p/1092108)中深入了解。
+如果您因為您的租用戶尚不在[整合標籤平台](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)中而使用 Azure 資訊保護標籤，建議您避免在其他系統管理中心中建立新標籤，直到您啟用整合標籤為止。 如需此程序的詳細資訊，請參閱[如何將 Azure 資訊保護標籤移轉至整合敏感度標籤](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)。
 
 ## <a name="sensitivity-labels-and-the-azure-information-protection-client"></a>敏感度標籤和 Azure 資訊保護用戶端
 

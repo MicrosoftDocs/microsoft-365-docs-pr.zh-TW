@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: df811e38c55becf9ba52de40891fc1201d0afae0
-ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
+ms.openlocfilehash: b2b42c6a49a4422d73148b06e8379dcf1336e926
+ms.sourcegitcommit: d48b7852383262083a6a109530d84f0858cb3801
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40966881"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40999607"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解進階搜捕查詢語言
 
@@ -88,7 +88,7 @@ DeviceProcessEvents
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
-| top 100 by Timestamp'
+| top 100 by Timestamp
 ```
 
 按一下 [執行查詢]**** 以查看結果。 您可以展開畫面檢視，讓您專注在您的搜捕查詢和結果。

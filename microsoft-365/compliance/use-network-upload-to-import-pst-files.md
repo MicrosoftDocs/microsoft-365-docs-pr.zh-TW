@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 適用於系統管理員：了解如何使用網路上傳將多個 PST 檔案大量匯入 Office 365 中的使用者信箱。
-ms.openlocfilehash: 4354e0c630066204811f98cce53d6b0f041b20ad
-ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
+ms.openlocfilehash: a66655fd03a379d56e31ca0960f433d659265edc
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "40854068"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995293"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-office-365"></a>使用網路上傳將組織的 PST 檔案匯入 Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "40854068"
   
 以下是使用網路上傳將多個 PST 檔案大量匯入 Office 365 信箱所需的逐步指示。 如需使用網路上傳將 PST 檔案大量匯入 Office 365 信箱的常見問題集，請參閱[使用網路上傳將 PST 檔案匯入的常見問題集](faqimporting-pst-files-to-office-365.md#using-network-upload-to-import-pst-files)。
   
-[步驟 1：複製 SAS URL，然後安裝 Azure AzCopy](#step-1-copy-the-sas-url-and-install-azure-azcopy)
+[步驟 1：複製 SAS URL 和安裝 AzCopy](#step-1-copy-the-sas-url-and-install-azcopy)
 
 [步驟 2：將您的 PST 檔案上傳至 Office 365](#step-2-upload-your-pst-files-to-office-365)
 
@@ -57,39 +57,39 @@ ms.locfileid: "40854068"
   - 您必須是您 Office365 組織中的全域系統管理員。
     
   > [!TIP]
-    > 建議您在 Exchange Online 中建立新的角色群組，專門用來將 PST 檔案匯入 Office 365。 若要獲得匯入 PST 檔案所需的最低權限等級，請將信箱匯入匯出及郵件收件者角色指派到新的角色群組，然後新增成員。 
+    > 建議您在 Exchange Online 中建立新的角色群組，專門用來將 PST 檔案匯入 Office 365。 若要獲得匯入 PST 檔案所需的最低權限等級，請將信箱匯入匯出及郵件收件者角色指派到新的角色群組，然後新增成員。
   
-- 將 PST 檔案匯入 Office 365 的唯一支援的方法是使用 Azure AzCopy 工具，如本主題中所述。 您無法使用 Azure 儲存體總管直接將 PST 檔案上傳至 Azure 儲存體區域。
+- 將 PST 檔案匯入 Office 365 的唯一支援的方法是使用 AzCopy 工具，如本主題中所述。 您無法使用 Azure 儲存體總管直接將 PST 檔案上傳至 Azure 儲存體區域。
     
-- 您必須將要欲匯入至 Office365 的 PST 檔案儲存於檔案伺服器上，或是貴組織的共用資料夾。 在步驟 2 中，您會執行 Azure AzCopy 工具，其會將儲存於檔案伺服器或是共用資料夾上的 PST 檔案上傳至 Office 365。
+- 您必須將要欲匯入至 Office365 的 PST 檔案儲存於檔案伺服器上，或是貴組織的共用資料夾。 在步驟 2 中，您會執行 AzCopy 工具，以將儲存於檔案伺服器或是共用資料夾上的 PST 檔案上傳至 Office 365。
     
 - 大型 PST 檔案可能會影響 PST 匯入程序的效能。 我們建議您在步驟 2 中上傳到 Azure 儲存位置的每個 PST 檔案都不應超過 20 GB。
 
-- 此程序包含複製及儲存包含存取金鑰的 URL 複本。 此資訊將在步驟 2 中用於上傳 PST 檔案，如果要檢視上傳到 Office 365 的 PST 檔案清單，則會在步驟 3 中使用。 請務必採取預防措施來保護此 URL，就如同您保護密碼或其他安全性相關資訊一樣。 例如，您可能會將其儲存於受密碼保護的 Microsoft Word 文件內，或是儲存於已加密的 USB 磁碟機中。 請參閱[相關資訊](#more-information)一節，以取得此 URL 和金鑰組合的範例。 
+- 此程序包含複製及儲存包含存取金鑰的 URL 複本。 此資訊將在步驟 2 中用於上傳 PST 檔案，如果要檢視上傳到 Office 365 的 PST 檔案清單，則會在步驟 3 中使用。 請務必採取預防措施來保護此 URL，就如同您保護密碼或其他安全性相關資訊一樣。 例如，您可能會將其儲存於受密碼保護的 Microsoft Word 文件內，或是儲存於已加密的 USB 磁碟機中。 請參閱[相關資訊](#more-information)一節，以取得此 URL 和金鑰組合的範例。
     
 - 您否可以將 PST 檔案匯入 Office 365 中的非作用中信箱。 您可以透過在 PST 匯入對應檔案的 `Mailbox` 參數中指定非作用中信箱的 GUID 來執行此操作。 如需詳細資訊，請參閱本主題中**指示**索引標籤上的步驟 4。 
     
 - 您可以在 Exchange 混合部署中為主要信箱位於內部部署的使用者，將 PST 檔案匯入雲端型封存信箱。 您可以透過在 PST 匯入對應檔案中執行以下操作來進行：
     
-  - 在 `Mailbox` 參數中指定使用者內部部署信箱的電子郵件地址。 
+  - 在 `Mailbox` 參數中指定使用者內部部署信箱的電子郵件地址。
     
-  - 在 `IsArchive` 參數上指定 **TRUE** 值。 
+  - 在 `IsArchive` 參數上指定 **TRUE** 值。
     
-    如需詳細資訊，請參閱[步驟 4](#step-4-create-the-pst-import-mapping-file)。 
+    如需詳細資訊，請參閱[步驟 4](#step-4-create-the-pst-import-mapping-file)。
     
-- PST 檔案匯入到 Office 365 信箱之後，信箱的暫停保留設定會開啟為無限期。 這表示在關閉暫停保留或設定日期來關閉暫停之前，系統不會處理指派給信箱的保留原則。 為什麼這麼做？ 如果匯入信箱的郵件是舊郵件，則可能會被永久刪除 (清除)，因為根據信箱設定的保留設定，這些郵件的保留期限已過期。 將信箱置於暫停保留狀態可讓信箱擁有者有時間管理這些新匯入的郵件，或者讓您有時間變更信箱的保留設定。 有關管理暫停保留的建議，請參閱本主題中的[相關資訊](#more-information)章節。 
+- PST 檔案匯入到 Office 365 信箱之後，信箱的暫停保留設定會開啟為無限期。 這表示在關閉暫停保留或設定日期來關閉暫停之前，系統不會處理指派給信箱的保留原則。 為什麼這麼做？ 如果匯入信箱的郵件是舊郵件，則可能會被永久刪除 (清除)，因為根據信箱設定的保留設定，這些郵件的保留期限已過期。 將信箱置於暫停保留狀態可讓信箱擁有者有時間管理這些新匯入的郵件，或者讓您有時間變更信箱的保留設定。 有關管理暫停保留的建議，請參閱本主題中的[相關資訊](#more-information)章節。
     
-- 根據預設，Office 365 信箱可接收的郵件大小上限為 35 MB。 這是因為信箱的 *MaxReceiveSize* 屬性的預設值設定為 35 MB。 然而，Office 365 中的接收郵件大小上限為 150 MB。 因此，如果匯入的 PST 檔案包含大於 35 MB 的項目，Office 365 匯入服務將自動將目標信箱上的 *MaxReceiveSize * 的屬性值變更為 150 MB。 這樣就可將最大 150 MB 的郵件匯入使用者信箱。 
+- 根據預設，Office 365 信箱可接收的郵件大小上限為 35 MB。 這是因為信箱的 *MaxReceiveSize* 屬性的預設值設定為 35 MB。 然而，Office 365 中的接收郵件大小上限為 150 MB。 因此，如果匯入的 PST 檔案包含大於 35 MB 的項目，Office 365 匯入服務將自動將目標信箱上的 *MaxReceiveSize * 的屬性值變更為 150 MB。 這樣就可將最大 150 MB 的郵件匯入使用者信箱。
     
     > [!TIP]
-    > 若要辨識信箱的郵件接收大小，可以在 Exchange Online PowerShell 中執行此命令：`Get-Mailbox <user mailbox> | FL MaxReceiveSize`。 
+    > 若要辨識信箱的郵件接收大小，可以在 Exchange Online PowerShell 中執行此命令：`Get-Mailbox <user mailbox> | FL MaxReceiveSize`。
 
-## <a name="step-1-copy-the-sas-url-and-install-azure-azcopy"></a>步驟 1：複製 SAS URL，然後安裝 Azure AzCopy
+## <a name="step-1-copy-the-sas-url-and-install-azcopy"></a>步驟 1：複製 SAS URL 和安裝 AzCopy
 
-第一個步驟是下載並安裝 Azure AzCopy 工具，這是您在步驟 2 中將 PST 檔案上傳至 Office 365 所執行的工具。 您也會複製組織的 SAS URL。 此 URL 結合了組織的 Microsoft 雲端中，Azure 儲存體位置的網路 URL 和共用存取簽章 (SAS) 金鑰。 此金鑰提供您將 PST 檔案上傳至 Azure 儲存體位置所需要的權限。 請務必採取預防措施來保護 SAS URL。 其對您的組織來說獨一無二，並將用於步驟 2。
+第一個步驟是下載並安裝 AzCopy 工具，這是您在步驟 2 中將 PST 檔案上傳至 Office 365 所執行的工具。 您也會複製組織的 SAS URL。 此 URL 結合了組織的 Microsoft 雲端中，Azure 儲存體位置的網路 URL 和共用存取簽章 (SAS) 金鑰。 此金鑰提供您將 PST 檔案上傳至 Azure 儲存體位置所需要的權限。 請務必採取預防措施來保護 SAS URL。 其對您的組織來說獨一無二，並將用於步驟 2。
 
 > [!IMPORTANT]
-> 若要使用網路上傳方法匯入 PST 檔案，我們建議您使用可在以下程序中的步驟 6b 中下載的 Azure AzCopy 版本。
+> 若要使用本文中記錄的網路上傳方法和命令語法來匯入 PST 檔案，您必須使用可在以下程序之步驟 6b 中下載的 AzCopy 版本。 您也可以從[這裡](https://aka.ms/downloadazcopy)下載該相同版本的 AzCopy。 不支援使用不同版本的 AzCopy。
   
 1. 前往 [https://protection.office.com](https://protection.office.com)，然後使用您 Office 365 組織中系統管理員帳戶的認證來登入。 
     
@@ -110,11 +110,11 @@ ms.locfileid: "40854068"
   
 6. 在 [匯入資料]**** 頁面上，執行以下兩個動作： 
     
-    ![在 [匯入資料] 頁面上複製 SAS URL 並下載 Azure AzCopy 工具](media/74411014-ec4b-4e25-9065-404c934cce17.png)
+    ![在 [匯入資料] 頁面上複製 SAS URL 並下載 AzCopy 工具](media/74411014-ec4b-4e25-9065-404c934cce17.png)
   
     a. 在步驟 2，按一下 [顯示網路上傳 SAS URL]****。 顯示 SAS URL 後，按一下 [複製至剪貼簿]**** 然後貼上，並儲存到檔案中以便日後存取。
     
-    b. 在步驟 3，按一下 [下載 Azure AzCopy]**** 以下載並安裝 Azure AzCopy 工具。 在快顯視窗中，按一下 [執行]**** 來安裝 AzCopy。 
+    b. 在步驟 3，按一下 **[下載 Azure AzCopy]** 以下載並安裝 AzCopy 工具。 在快顯視窗中，按一下 [執行]**** 來安裝 AzCopy。 
     
 > [!NOTE]
 > 您可以讓 [匯入資料]**** 頁面保持開啟 (以防您需要再次複製 SAS URL) 或按一下 [取消]**** 來關閉。 
@@ -267,7 +267,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
     
     ![按一下 [驗證] 檢查 CSV 檔是否有錯誤](media/4680999d-5538-4059-b878-2736a5445037.png)
   
-    CSV 檔案必須成功通過驗證，才能建立 PST 匯入工作。 請注意，檔案名稱成功驗證後會變更為綠色。 如果驗證失敗，按一下 [檢視記錄] **** 連結。 驗證錯誤報告隨即開啟，並針對檔案中每一列有問題項目提供錯誤訊息。 
+    CSV 檔案必須成功通過驗證，才能建立 PST 匯入工作。 檔案名稱成功驗證後會變更為綠色。 如果驗證失敗，按一下 [檢視記錄] **** 連結。 驗證錯誤報告隨即開啟，並針對檔案中每一列有問題項目提供錯誤訊息。
     
 9. PST 對應檔案驗證成功後，請檢閱條款和條件文件，然後按一下核取方塊。
     
@@ -317,7 +317,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
   
 ![使用網路上傳將 PST 檔案匯入 Office 365 的工作流程](media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
-1. **將 PST 匯入工具和金鑰下載到私人 Azure 儲存體位置：** 第一個步驟是下載 Azure AzCopy 命令列工具和存取金鑰，以用於將 PST 檔案上傳到 Microsoft 雲端中 Azure 儲存體位置。 您可以從安全性與合規性中心的[匯入]**** 頁面取得這些工具和金鑰。 金鑰 (稱為安全存取簽章 (SAS)) 會提供您必要的權限，以將 PST 檔案上傳到私人且安全的 Azure 儲存體位置。 此存取金鑰專屬於貴組織，並可在 PST 檔案上傳到 Microsoft 雲端後，協助防止未經授權存取 PST 檔案。 將 PST 檔案匯入至 Office 365 不會要求貴組織具有不同的 Azure 訂閱。 
+1. **將 PST 匯入工具和金鑰下載到私人 Azure 儲存體位置：** 第一個步驟是下載 AzCopy 命令列工具和存取金鑰，以用於將 PST 檔案上傳到 Microsoft 雲端中 Azure 儲存體位置。 您可以從安全性與合規性中心的[匯入]**** 頁面取得這些工具和金鑰。 金鑰 (稱為安全存取簽章 (SAS)) 會提供您必要的權限，以將 PST 檔案上傳到私人且安全的 Azure 儲存體位置。 此存取金鑰專屬於貴組織，並可在 PST 檔案上傳到 Microsoft 雲端後，協助防止未經授權存取 PST 檔案。 將 PST 檔案匯入至 Office 365 不會要求貴組織具有不同的 Azure 訂閱。 
     
 2. **將 PST 檔案上傳到 Azure 儲存體位置：** 下一個步驟是使用 AzCopy.exe 工具 (於步驟 1 中下載) 將您的 PST 檔案上傳並儲存在 Azure 儲存體位置，該位置位於與 Office 365 組織所在位置相同的 Microsoft 資料中心。 若要上傳，您想要匯入 Office 365 的 PST 檔案必須位於組織中的檔案共用或檔案伺服器。
     
