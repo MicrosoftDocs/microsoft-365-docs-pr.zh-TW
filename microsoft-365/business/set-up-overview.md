@@ -23,14 +23,20 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 商務版的安裝步驟的概觀。
-ms.openlocfilehash: f531830bffbe1cb6ce4e39ee2ba12da5738a2684
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: cab999493bf86ed0adf32521eaf6b3943f107f79
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967616"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995243"
 ---
 # <a name="overview-of-setup"></a>步驟概觀
+
+觀看有關 Microsoft 365 商務版安裝程式。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
+
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 可以在安裝程式精靈] 完成大部分的設定步驟，但也會列出其他選項。
 
@@ -50,14 +56,12 @@ ms.locfileid: "39967616"
   
   除了在安裝精靈中的安全性設定，您可以藉由新增下列設定值增加您的安全性：
 
-
 - **電子郵件的惡意程式碼保護**
 - **ATP 防網路釣魚**
 - **Exchange Online 封存**
 - **Azure 資訊保護 (Plan1**)
 
-
-若要取得啟動，請參閱[設定進階的安全性原則](set-up-advanced-security.md)。
+若要開始，請參閱[增加威脅防護](increase-threat-protection.md)，並[設定符合性功能](set-up-compliance.md)。
 
 另請參閱[上方的 10 種方法來保護您的 Microsoft 365 商務版](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)的最佳安全性作法藍圖。
 
@@ -87,4 +91,4 @@ ms.locfileid: "39967616"
 
 ## <a name="see-also"></a>另請參閱
 
-[Microsoft 365 商務版開發人員訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商務版訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

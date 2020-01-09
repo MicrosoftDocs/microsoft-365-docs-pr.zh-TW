@@ -16,6 +16,8 @@
       href: ../business/set-up.md?toc=/microsoft-365/campaigns/toc.json
     - name: 登入
       href: m365-campaigns-sign-in.md
+    - name: 自訂登入頁面
+      href: m365-customize-sign-in.md
     - name: 新增使用者
       href: ../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json
 - name: 加強安全性防護
