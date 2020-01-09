@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: 請在 [反垃圾郵件設定] 頁面上的安全性與合規性中心使用詐騙情報，以檢閱欺騙貴組織網域或欺騙外部網域的所有寄件者。 在 Office 365 企業版 E5 中可取得詐騙情報，也可在進階威脅防護和 EExchange Online Protection 中分開取得。
-ms.openlocfilehash: 67c992dea66d5497d232db3c030cc00dd00db45b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
-ms.translationtype: HT
+ms.openlocfilehash: 2f6a68446698747fe31261c7e892c50e6ec5c7f4
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970429"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989488"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>深入了解詐騙情報
 
@@ -79,9 +79,9 @@ Office 365 一律會強制執行您設定的詐騙情報原則。 您無法將�
 
     ![顯示存取反垃圾郵件頁面的螢幕擷取畫面](../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
 
-4. 在右側窗格的 [反垃圾郵件設定]**** 頁面上，選取 [自訂]**** 索引標籤，然後向下捲動並展開 [詐騙情報原則]****。
+4. 在右窗格中的**反垃圾郵件設定**] 頁面上，向下捲動，然後依序展開 [**詐騙智慧原則**。
 
-    ![顯示存取反垃圾郵件自訂設定的螢幕擷取畫面](../media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
+    ![詐騙](https://user-images.githubusercontent.com/41186174/71801032-6228f100-3062-11ea-8461-682b910418c2.png)
 
 5. 若要檢視欺騙您網域的寄件者清單，請選擇 [檢閱新的寄件者]****，然後選取 [您的網域]**** 索引標籤。
 

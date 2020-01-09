@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何識別並修正在 Office 365 中的非法同意授權。
-ms.openlocfilehash: 46387f82a38c33debdc24a6825479bf3183f0283
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0f4569a4ef8496a07fc1dc52f500ee91a6590fdd
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808428"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989538"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>偵測並修復 Office 365 中的非法同意授權
 
@@ -32,6 +32,7 @@ ms.locfileid: "40808428"
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Office 365 中的非法同意授權攻擊的外觀如何？
 
 您必須搜尋 Office 365 **稽核記錄**才能找到此攻擊的徵象，又名入侵標記 (IOC)。 如果組織擁有許多 Azure 註冊應用程式和大量使用者，最佳做法就是每週檢閱您的組織同意授權。
+
 ### <a name="steps-for-finding-signs-of-this-attack"></a>尋找此攻擊徵象的步驟
 
 1. 在您的 Office 365 租用戶中開啟 [安全性與合規性中心]****。
