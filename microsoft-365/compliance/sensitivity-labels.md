@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上套用保護設定 (包括加密和浮水印)。
-ms.openlocfilehash: f85d94b918c96ea6505b9b52d386e7f30a3fe77a
-ms.sourcegitcommit: 920bca353d16e9b1e5d4d268e0410ef179eced37
+ms.openlocfilehash: 465b22b7d57718e5b1f38951804d2f76c10ebb3f
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/07/2020
-ms.locfileid: "40948868"
+ms.locfileid: "40962342"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
@@ -54,11 +54,11 @@ ms.locfileid: "40948868"
   
 當您在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或是 Office 365 安全性與合規性中心底下的 [分類]**** >  [敏感度標籤]**** 建立敏感度標籤時，可以使用自動標籤設定。 這些敏感度標籤可供 Azure 資訊保護、Office 應用程式和 Office 365 服務使用。
 
-針對 Azure 資訊保護客戶，您可以使用其他系統管理中心的 Azure 資訊保護標籤，而如果您選擇執行額外或進階組態，標籤就會與 Azure 入口網站同步處理。 **Azure 資訊保護標籤與 Office 365 敏感度標籤完全彼此相容。** 這表示，比方說，如果您有使用 Azure 資訊保護加上標籤的內容，則不需將內容重新分類或重新加上標籤。
+針對 Azure 資訊保護客戶，您可以使用其他系統管理中心的 Azure 資訊保護標籤，而如果您選擇執行額外或進階組態，標籤就會與 Azure 入口網站同步處理。 Azure 資訊保護標籤和 Office 365 敏感度標籤彼此相容，這表示，如果您的內容具有 Azure 資訊保護標籤，則不需要重新分類或重新標籤您的內容。
 
 ## <a name="what-a-sensitivity-label-is"></a>敏感度標籤是什麼
 
-當您將敏感度標籤指派至文件或電子郵件，它就像標記：
+當您將敏感度標籤指派給文件或電子郵件，它就像一個戳記套用在內容上，並且是：
 
 - **可自訂。** 您可以為組織中不同等級的敏感內容建立類別，例如個人、公用、一般、機密、高度機密。
 
@@ -66,7 +66,7 @@ ms.locfileid: "40948868"
 
 - **持續性。** 將敏感度標籤套用至內容後，該標籤就會保存在該電子郵件或文件的中繼資料中。 這表示標籤會隨著內容 (包括保護設定) 漫遊，而此資料就變成套用和強制執行原則的基礎。
 
-在 Office 應用程式中，敏感度標籤在電子郵件或文件上只會顯示為標記。
+在 Office 應用程式中，敏感度標籤就像是在電子郵件或文件上讓使用者看的標記。
 
 內容中的每個項目皆可套用單一敏感度標籤。項目可以同時套用單一敏感度標籤和單一[保留標籤](labels.md)。
 
@@ -153,7 +153,7 @@ ms.locfileid: "40948868"
 
 建立標籤原則並將敏感度標籤指派給使用者和群組之後，這些人會在一小時內在 Office 應用程式中看到這些標籤。
 
-您可以建立並發佈的敏感度標籤數量沒有任何限制，但有一個例外：如果標籤套用加密，則上限為 500 個標籤。 不過，為了將系統管理負擔降至最低，並為使用者減少複雜度，最佳做法是應試著將標籤數量保持最低。 實際情況的部署已證明，當使用者擁有五個以上的主要標籤，且每個主要標籤超過五個子標籤時，效果會降低。
+您可以建立並發佈的敏感度標籤數量沒有任何限制，但有一個例外：如果標籤套用加密，則上限為 500 個標籤。 不過，為了降低系統管理負擔並為使用者減少複雜度，最佳做法是試著保持最少的標籤數量。 實際情況的部署已證明，當使用者擁有五個以上的主要標籤，或每個主要標籤有超過五個子標籤時，效果會明顯地降低。
 
 ### <a name="label-policy-priority-order-matters"></a>標籤原則優先順序 (順序很重要)
 
@@ -195,7 +195,7 @@ ms.locfileid: "40948868"
 
 - [在 Outlook 中支援敏感度標籤功能](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-outlook)
 
-如果您使用 Windows 電腦的 Azure 資訊保護整合標籤用戶端，則有其他功能可供敏感度標籤使用。 如需詳細資訊，請參閱[比較 Windows 電腦的標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。 
+如果您使用 Windows 電腦的 Azure 資訊保護整合標籤用戶端，則有其他功能可供敏感度標籤使用。 如需詳細資訊，請參閱[比較 Windows 電腦的標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。
 
 ### <a name="office-apps-on-windows"></a>Windows 上的 Office 應用程式
 
@@ -243,7 +243,7 @@ Azure 資訊保護使用者可以使用 Azure 資訊保護整合標籤用戶端�
 如果您因為您的租用戶尚不在[整合標籤平台](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)中而使用 Azure 資訊保護標籤，建議您避免在其他系統管理中心中建立新標籤，直到您啟用整合標籤為止。 如需此程序的詳細資訊，請參閱[如何將 Azure 資訊保護標籤移轉至整合敏感度標籤](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)。 
 
 > [!NOTE]
->  Azure 入口網站中 Azure 資訊保護標籤的標籤管理功能即將在 **2021 年 3 月 31 日**淘汰。 在官方的[淘汰聲明](https://techcommunity.microsoft.com/t5/azure-information-protection/deprecation-notice-azure-information-protection-classic-client/ba-p/1092108)中深入了解。
+> Azure 入口網站中 Azure 資訊保護標籤的標籤管理功能即將在 **2021 年 3 月 31 日**淘汰。 在官方的[淘汰聲明](https://techcommunity.microsoft.com/t5/azure-information-protection/deprecation-notice-azure-information-protection-classic-client/ba-p/1092108)中深入了解。
 
 ## <a name="sensitivity-labels-and-the-azure-information-protection-client"></a>敏感度標籤和 Azure 資訊保護用戶端
 

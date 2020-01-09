@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3002d8bca20f7505287420d700aff60fec1af966
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 3380ee774388700fd8eca255a805b5595f1c9cda
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859773"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959601"
 ---
 # <a name="general-data-protection-regulation-gdpr"></a>一般資料保護規定 (GDPR)
 
@@ -67,9 +68,13 @@ ms.locfileid: "39859773"
 
 使用[合規性管理員](https://go.microsoft.com/fwlink/p/?linkid=2048390)協助執行持續的風險評定、取得可採取動作的深入解析，並且簡化合規性程序。
 
-### <a name="security-and-compliance-center"></a>安全性與合規性中心
+### <a name="microsoft-365-compliance-center"></a>Microsoft 365 合規性中心
 
-Microsoft 365 [安全性與合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-and-compliance)可讓您探索安全性與合規性控制措施。
+[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)可讓您探索合規性控制。
+
+### <a name="microsoft-365-security-center"></a>Microsoft 365 安全性中心
+
+[Microsoft 365 安全性中心](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)可讓您探索安全性控制。
 
 ### <a name="discover-compliance-solutions"></a>探索合規性解決方案
 

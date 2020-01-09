@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 適用於系統管理員：了解在安全性與合規性中心使用「匯入」服務來將電子郵件資料 (PST 檔案) 大量匯入至 Exchange Online 的使用者信箱。 本主題提供常見問題集，並說明 PST 匯入程序的運作方式。
-ms.openlocfilehash: 309fde077cdf456ba33656c29f9e325aac1820e3
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4e58be4e90429c2d39bbcf4c5ef362e659764d63
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807122"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995283"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>將組織的 PST 檔案匯入至 Office 365 概觀
 
@@ -52,11 +52,11 @@ ms.locfileid: "40807122"
     
 2. **上傳或複製的 PST 檔案** - 下一個步驟取決於您使用網路上傳或磁碟機寄送來匯入 PST 檔案。 在這兩種情況下，您會使用上一個步驟中取得的工具和安全儲存體金鑰。
     
-    - **網路上傳**AzCopy.exe 工具 (於步驟 1 中下載) 用於上傳 PST 檔案並將其儲存在 Microsoft Cloud 中的 Azure 儲存體位置。 上傳 PST 檔案的 Azure 儲存體位置與 Office 365 組織所在的地區性 Microsoft 資料中心相同。
+    - **網路上傳：** AzCopy.exe 工具 (於步驟 1 中下載) 用於上傳 PST 檔案並將其儲存在 Microsoft Cloud 中的 Azure 儲存體位置。 上傳 PST 檔案的 Azure 儲存體位置與 Office 365 組織所在的地區性 Microsoft 資料中心相同。
     
       若要上傳，您想要匯入 Office 365 的 PST 檔案必須位於組織中的檔案共用或檔案伺服器。
     
-    - **磁碟機寄送**WAImportExport.exe 工具 (於步驟 1 下載) 是用於將 PST 檔案複製到硬碟。 此工具會以 BitLocker 加密硬碟，然後將 PST 複製到硬碟。 如同網路上傳，您想要複製到硬碟的 PST 檔案必須位於組織中的檔案共用或檔案伺服器。
+    - **磁碟機寄送：** WAImportExport.exe 工具 (於步驟 1 下載) 是用於將 PST 檔案複製到硬碟。 此工具會以 BitLocker 加密硬碟，然後將 PST 複製到硬碟。 如同網路上傳，您想要複製到硬碟的 PST 檔案必須位於組織中的檔案共用或檔案伺服器。
     
 3. **建立 PST 匯入對應檔案** - PST 檔案上傳到 Azure 儲存體位置或複製到硬碟後，下一個步驟是建立逗點分隔值 (CSV) 檔案，以指定要匯入 PST 檔案的使用者信箱 (PST 檔案可匯入使用者的主要信箱或封存信箱)。 Office 365 匯入服務會使用此資訊匯入 PST 檔案。 
     

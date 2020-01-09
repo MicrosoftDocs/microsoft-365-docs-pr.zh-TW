@@ -1,7 +1,7 @@
 ---
 title: 事件導向保留的概觀
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留標籤，您可以讓發生特定類型事件的時間作為保留期間的依據。事件會觸發啟動保留期間，具有套用至該類型事件之保留標籤的所有事件，會強制執行標籤的保留動作。事件導向保留通常是作為記錄管理處理程序的一部分。
-ms.openlocfilehash: 08e4f8b5a761cfd80d1b2039c5e2b7a9c1fee981
-ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
+ms.openlocfilehash: 109b6104f2a06559beae0148b581854f44e6394a
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "39268452"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989568"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件導向保留的概觀
 
@@ -61,7 +61,7 @@ ms.locfileid: "39268452"
     
   - 關鍵字 (適用於 Exchange 項目)。在此範例中，組織在包含產品記錄的訊息中使用產品代碼，因此 Exchange 項目的關鍵字與 SharePoint 和 OneDrive 文件中的資產識別碼相同。
     
-  - 發生事件的日期。此日期作為保留期間的開始日期。此日期只能是目前或未來的日期，不能是過去的日期。
+  - 發生事件的日期。此日期作為保留期間的開始日期。此日期可能是目前、過去或未來的日期。
     
 4. 在您建立事件之後，事件日期會同步處理至具有該事件類型標籤和包含指定資產識別碼或關鍵字的所有內容。與其他任何標籤一樣，這個同步處理最多會耗費 7 天的時間。在上圖中，用紅色圈起來的所有項目具有由此事件觸發的保留期間，換句話說，當此產品達到其生命週期結尾時，該事件會觸發該產品記錄的保留期間。
     
