@@ -199,23 +199,21 @@
           href: find-copy-and-delete-pst-files-in-your-organization.md
         - name: 匯入 PST 檔案時篩選資料
           href: filter-data-when-importing-pst-files.md
-        - name: 使用網路上傳來匯入 RMS 加密的 PST 檔案
-          href: use-network-upload-to-import-rms-encrypted-pst-files.md
         - name: 匯入 PST 檔案的常見問題集
           href: faqimporting-pst-files-to-office-365.md
-        - name: 封存協力廠商資料
-          href: archiving-third-party-data.md
-          items:
-            - name: 使用範例連接器來封存 Facebook 資料
-              href: archive-facebook-data-with-sample-connector.md
-            - name: 使用範例連接器來封存 Twitter 資料
-              href: archive-twitter-data-with-sample-connector.md
-            - name: 設定連接器來封存 LinkedIn 資料
-              href: archive-linkedin-data.md
-            - name: 設定連接器來封存 Instant Bloomberg 資料
-              href: archive-instant-bloomberg-data.md
-            - name: 與合作夥伴配合來封存第三方資料
-              href: work-with-partner-to-archive-third-party-data.md
+    - name: 封存協力廠商資料
+      href: archiving-third-party-data.md
+      items:
+        - name: 設定連接器來封存 Facebook 資料
+          href: archive-facebook-data-with-sample-connector.md
+        - name: 設定連接器來封存 Twitter 資料
+          href: archive-twitter-data-with-sample-connector.md
+        - name: 設定連接器來封存 LinkedIn 資料
+          href: archive-linkedin-data.md
+        - name: 設定連接器來封存 Instant Bloomberg 資料
+          href: archive-instant-bloomberg-data.md
+        - name: 與合作夥伴配合來封存第三方資料
+          href: work-with-partner-to-archive-third-party-data.md
     - name: 儲存資料
       items:
         - name: 啟用封存信箱
