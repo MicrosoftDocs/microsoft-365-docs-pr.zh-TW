@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解使用者如何使用桌面的 Office 應用程式、 Office 應用程式的行動電話和 web Office 相關應用程式中敏感度標籤運作。 了解哪些應用程式支援敏感度標籤。
-ms.openlocfilehash: 092c8510acac5cafa6417f93eae19731db5df270
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 32ad0abf61de5a64aac6914532f59bb5602e9d83
+ms.sourcegitcommit: d48b7852383262083a6a109530d84f0858cb3801
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970951"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40999587"
 ---
 # <a name="sensitivity-labels-in-office-apps"></a>Office 應用程式中的敏感度標籤
 
@@ -50,11 +50,13 @@ ms.locfileid: "40970951"
 
 - [Azure 資訊保護高階 P2](https://azure.microsoft.com/pricing/details/information-protection/)
 
-## <a name="support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>在 Word、Excel 和 PowerPoint 中支援敏感度標籤功能
+## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>在 [應用程式敏感度標籤功能的支援
 
-針對每個功能下, 表會列出該應用程式，才能支援使用內建的設定標籤的敏感度標籤所需的最小版本。
+針對每個功能下, 表會列出該應用程式，才能支援使用內建的設定標籤的敏感度標籤所需的最小版本。 新的版本供在不同的更新通道的不同的時間。 如需詳細資訊，包括如何設定您的更新通道，以便您可以測試新的標示功能，您有興趣，請參閱[Office 365 專業增強版更新通道的概觀](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。
 
 在您安裝 Azure 資訊保護整合標示用戶端，只有 Windows 電腦上執行時，可使用額外的功能。 這些詳細資訊，請參閱[比較標示的用戶端的 Windows 電腦](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。
+
+### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>敏感度標籤功能的 Word、 Excel 及 PowerPoint
 
 |功能                                                                                                        |Windows 桌面 |Mac 桌面 |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
@@ -72,11 +74,7 @@ ms.locfileid: "40970951"
 |標記和受保護的文件上支援[自動儲存](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)與[共同撰寫](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) | 在 [檢閱] 下 | 在 [檢閱] 下 | 在 [檢閱] 下 | 在 [檢閱] 下 | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
-## <a name="support-for-sensitivity-label-capabilities-in-outlook"></a>在 Outlook 中支援敏感度標籤功能
-
-針對每個功能下, 表會列出該應用程式所需的最小版本。
-
-在您安裝 Azure 資訊保護整合標示用戶端，只有 Windows 電腦上執行時，可使用額外的功能。 這些詳細資訊，請參閱[比較標示的用戶端的 Windows 電腦](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。
+### <a name="sensitivity-label-capabilities-in-outlook"></a>在 Outlook 中的敏感度標籤功能
 
 |功能                                                                                                        |在 Windows 桌面上的 outlook |在 Mac 桌面上的 outlook  |在 iOS 上的 outlook |在 Android 上的 outlook |Outlook 網頁版 |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
