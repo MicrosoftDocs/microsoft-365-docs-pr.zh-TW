@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d34d7082150b4131634fb695ce6664ded50e6f9d
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 9233118a2112aae33a5b784b6495709cbd3345f5
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823835"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004918"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在系統管理入口網站中新增和驗證系統管理連絡人
 
@@ -25,7 +25,7 @@ Microsoft 受管理的電腦服務有多種方式可與客戶溝通。 為了簡
 Microsoft 受管理電腦的系統管理入口網站要求存取入口網站的人員需要擁有以下其中一個 Azure Active Directory (AD) 角色：
 - 全域系統管理員
 - Intune 服務系統管理員
-- 計費系統管理員
+- 全域讀取者
 - 服務支援系統管理員
 
 全域系統管理員必須是在 Microsoft 受管理的電腦中註冊貴組織的人員。 所有五個角色在系統管理入口網站都擁有相同存取權，以初始化和檢視工作。 如需有關在 Azure AD 中指派這些角色的詳細資訊，請參閱[在 Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 
