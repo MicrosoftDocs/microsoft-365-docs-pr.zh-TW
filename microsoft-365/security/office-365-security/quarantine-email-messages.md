@@ -3,7 +3,7 @@ title: 隔離 Office 365 中的電子郵件
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -16,23 +16,23 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: 您可以設定隔離的 Office 365 其中大量被篩選為垃圾郵件的內送電子郵件、 網路釣魚郵件中的內送電子郵件和惡意程式碼可以保留供日後檢閱。
-ms.openlocfilehash: 5590c9de9ff596c359910b5b1793004ae1913365
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f7669f69abb711d71362057f2019b0dd7e30443b
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077997"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021849"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>隔離 Office 365 中的電子郵件
 
-您可以設定供日後檢閱隔離被篩選為垃圾郵件、 大量郵件、 網路釣魚郵件、 郵件包含惡意程式碼，並符合指定的郵件流程規則的郵件的郵件可以保持在其中的 Office 365 中的內送電子郵件訊息。
+您可以設定內送電子郵件訊息，其中會被篩選為垃圾郵件、 大量郵件、 網路釣魚郵件、 郵件包含惡意程式碼，並符合指定的郵件流程規則 （也稱為 trasport 規則） 的郵件的郵件保留的更新版本的 Office 365 中的隔離檢閱。
   
-根據預設，已篩選的郵件會傳送至收件者的垃圾郵件] 資料夾，但不包括包含惡意程式碼的預設傳送至隔離的郵件。 身為系統管理員，您可以設定傳送至隔離區改為所有已篩選的郵件內容篩選原則。 不同的內容篩選的郵件時可採取的動作取決於[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)。
+根據預設，網路釣魚、 惡意程式碼，和郵件流程規則進行篩選的郵件會傳送至隔離區，而被篩選為垃圾郵件和大量郵件的郵件傳送給收件者的垃圾郵件] 資料夾。 身為系統管理員，您可以設定來傳送垃圾郵件和大量郵件訊息，而是隔離的垃圾郵件篩選原則 （也就是內容篩選原則）。 如需詳細資訊，請參閱[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)。
   
 使用者與系統管理員可以使用隔離的郵件。 隔離區中，使用者可以使用剛自己已篩選的郵件。 系統管理員可以搜尋並管理隔離的郵件，所有使用者。
 
 > [!NOTE]
-> Phish 郵件以及隔離的郵件流程規則 （也稱為傳輸規則） 動作的郵件中才有系統管理員隔離區。
+> 高信賴度釣魚程式的郵件以及隔離的郵件流程規則動作的郵件中才有系統管理員隔離區。 使用者可以存取自己的釣魚程式、 垃圾郵件和大量郵件訊息。 
   
 深入了解使用被隔離的郵件：
   
