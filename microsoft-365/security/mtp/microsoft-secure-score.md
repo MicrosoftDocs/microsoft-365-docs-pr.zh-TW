@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8a471b08f9c7178c86d4f4bd7b7341b3555ffba7
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 656b444da9b85028aa1d280a76ca038e2d3a3ac6
+ms.sourcegitcommit: a2e9ab69f99f2069372ccfffd9ef2ffbd8568826
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970911"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41012186"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -135,6 +135,21 @@ Microsoft 安全分數是數字摘要根據系統設定、 使用者行為及其
 ## <a name="whats-coming"></a>下來什麼？
 
 若要讓 Microsoft 安全分數較佳的安全性狀態代表並改善可用性，我們會在不久的將來進行一些變更。 您的成績和最大可能分數會變更。 不過，這並不表示您的安全性狀態變更。
+
+### <a name="mfa-improvement-action-updates"></a>MFA 改進動作更新
+
+若要反映適用於企業以確保 upmost 安全性時，套用原則可搭配其業務需求，Microsoft 安全分數會移除三個改進動作圍繞多重要素驗證，並新增兩個。
+
+會移除三個：
+- 登錄所有使用者的多重要素驗證
+- 需要 MFA 的所有使用者
+- 需要 MFA 的 Azure AD 特殊權限角色
+
+新的改進動作：
+- 確定所有的使用者可以完成的安全存取多重要素驗證
+- 需要 MFA 的系統管理角色
+
+ 這些新的改進動作將會需要透過您的目錄中註冊您的使用者或系統管理員針對多重要素驗證 (MFA)，以及建立正確的一組原則符合貴組織的需求。 主要目標是有彈性，同時確保所有使用者和系統管理員可以驗證與多重因素或風險式身分識別驗證提示。 可能需要的設定，可讓 Microsoft 決定何時挑戰使用者的 mfa 功能、 安全性預設表單，或具有多個原則套用的範圍決策。
 
 ### <a name="removing-not-scored-and-review-improvement-actions"></a>移除 「 不計分 」 和 「 檢閱 」 改進動作
 
