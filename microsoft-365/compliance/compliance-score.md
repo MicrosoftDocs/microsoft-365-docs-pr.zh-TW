@@ -12,26 +12,30 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性分數可幫助組織簡化和自動化的風險評估，並建議建議的動作，以協助地址的風險。
-ms.openlocfilehash: c13b4e345f5ab9bee7a0edd134aea73c23d84036
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d7dfb40434ad3f6da0c728015f53580034ecfdfd
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806656"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021889"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft 合規性分數 （預覽）
 
-Microsoft 合規性分數可協助簡化管理合規性，並減少透過方便使用經驗的合規性風險的方式。 合規性分數是現在適用於[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)中公開預覽。 閱讀本篇文章以了解合規性分數是什麼，它如何協助您管理組織的合規性，以及如何開始。
+Microsoft 合規性分數可協助簡化管理合規性，並減少透過方便使用經驗的合規性風險的方式。 合規性分數是現在適用於[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)中公開預覽。
+
+**本文中：** 閱讀本篇文章以了解合規性分數是什麼以及如何設定以為組織。
+
+**了解如何更新：** 移至[合規性分數版本資訊](compliance-score-release-notes.md)請參閱什麼是新的和已知問題與合規性分數的預覽版本。
 
 ## <a name="what-is-compliance-score"></a>合規性分數是什麼
 
 Microsoft 合規性分數是在 Microsoft 365 合規性中心，以協助您了解貴組織的合規性狀態的預覽功能。 它會計算測量中完成協助減少資料保護和法規的標準周圍的風險的動作您進行風險分數。
 
-您可以使用合規性分數做為工具，以追蹤所有風險評定。 它提供工作流程功能，協助您有效率地執行，並完成您的風險評估，透過常見的工具。
+您可以使用合規性分數做為工具，以追蹤所有風險評定。 它提供可協助您有效率地完成您透過一般工具的風險評估工作流程功能。
 
 如果您目前使用[合規性管理員中](compliance-manager-overview.md)，您會注意到合規性分數現在是獨立功能與更簡單，更方便使用的設計，可協助您更輕鬆地管理合規性。 
 
-主要的合規性分數頁面是自訂儀表板。 它會顯示您目前的分數、 可協助您查看哪些需要注意，及引導您以動作，以改善您的分數。 這是您合規性分數儀表板看起來像：
+主要的合規性分數頁面是自訂儀表板。 它會顯示您目前的分數、 可協助您查看哪些需要注意，及引導您以動作，以改善您的分數。 合規性分數儀表板看起來像這樣：
 
 ![合規性分數-儀表板](media/compliance-score-dashboard.png "合規性分數儀表板")
 
@@ -58,7 +62,7 @@ Microsoft 合規性分數是在 Microsoft 365 合規性中心，以協助您了�
 
 ## <a name="understanding-your-score"></a>了解您的分數
 
-合規性分數可讓您根據 Microsoft 365 的資料保護基準，這是一組控制項包含一般產業法規及標準的方塊出分數。 雖然此分數是不錯的起點的評估您的合規性狀態，但合規性分數會變成功能更強大為您在您新增至您的組織更相關的評估之後。
+合規性分數可讓您根據 Microsoft 365 的資料保護基準初始分數。 此基準線是一組控制項包含一般產業法規及標準。 雖然此分數是不錯的起點的評估您的合規性狀態，但合規性分數會變成功能更強大，一旦您新增至您的組織更相關的評估。
 
 例如，如果您的組織屬於金融服務產業，可能會想要新增 FFIEC 評估。 如果您的組織屬於醫療保健產業，您可以新增 HIPAA/HITECH 評估。 了解如何[新增評估合規性管理員中](working-with-compliance-manager.md#assessments)。
 
@@ -77,8 +81,8 @@ Microsoft 合規性分數是在 Microsoft 365 合規性中心，以協助您了�
 
 合規性分數追蹤兩種類型的控制項：
 
-1. **Microsoft 管理控制措施**： 這些是 Microsoft 雲端服務，Microsoft 是負責實作的控制項
-2. **客戶管理控制措施**： 這些是由您的組織，您必須負責實作受管理的控制項
+1. **Microsoft 管理控制措施**： 控制項的 Microsoft 雲端服務，Microsoft 是負責實作
+2. **客戶管理控制措施**： 由您的組織，您必須負責實作受管理的控制項
  
 ### <a name="assessments"></a>「 評估 」
 
@@ -126,12 +130,12 @@ Microsoft 合規性分數是在 Microsoft 365 合規性中心，以協助您了�
 
 ### <a name="groups"></a>群組
 
-群組可讓您組織的方式，是邏輯給您的評估。 例如，您可以依年份，合規性標準，選擇群組評估服務，您的組織或其他方法中的 teams。 
+群組可讓您組織的方式，是邏輯給您的評估。 例如，您可以依年份，合規性標準，選擇群組評估服務，您的組織或其他方法中的 teams。
 
 當兩個不同的 「 評估 」 在相同的群組共用客戶管理動作時，完成的實作詳細資料、 測試和一個評估巨集指令的狀態會自動同步處理至群組中的任何其他評估中的相同動作。 此統整指派的改進動作跨群組，並減少複製的工作。
 
-了解如何[建立群組合規性管理員中](working-with-compliance-manager.md#groups)。
+了解如何[建立群組合規性管理員中](working-with-compliance-manager.md#groups)。 一旦您建立的群組，您可以[篩選您合規性分數儀表板](compliance-score-setup.md#filtering-your-dashboard-view)來檢視您的分數，由一或多個群組。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step-begin-setup"></a>下一步： 開始安裝
 
-登入、 設定權限，並了解在[合規性分數安裝程式](compliance-score-setup.md)您合規性分數儀表板。
+登入、 設定權限，並了解在[合規性分數安裝](compliance-score-setup.md)您合規性分數儀表板。

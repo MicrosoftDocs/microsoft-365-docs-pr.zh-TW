@@ -3,7 +3,7 @@ title: 以 Office 365 系統管理員身分管理隔離的郵件和檔案
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
-ms.date: 09/05/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: '身為系統管理員，您可以檢視、 釋出，並報告誤判隔離的郵件在 Office 365 中。 您可以設定原則，讓 Office 365 篩選郵件，並傳送至隔離區幾個原因： 因為被判定是垃圾郵件、 大量、 網路釣魚、 惡意程式碼，或因為它們符合郵件流程規則。 '
-ms.openlocfilehash: 615d88f63f738ca443b9ff377bb08fdaa97fe2dc
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 610a5e584f8731440150f643365b4d307b87adf2
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970931"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023327"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>以 Office 365 系統管理員身分管理隔離的郵件和檔案
 
@@ -31,26 +31,17 @@ ms.locfileid: "40970931"
 
 您必須在 Office 365 全域系統管理員 (GA) 的權限或屬於一或多個安全性 & 合規性中心角色群組，才能使用被隔離的郵件或隔離的檔案。 如需詳細資訊，請參閱[Office 365 安全性 & 合規性中心的權限](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)。
 
-> [!IMPORTANT]
-> 根據預設，垃圾郵件、 大量和網路釣魚郵件會隔離區中保留 30 天。 因為它們符合郵件流程規則遭到隔離的郵件會保留在隔離區 7 天。 惡意程式碼的郵件會保留在隔離區 15 天。 您可以自訂安全性 & 合規性中心中的反垃圾郵件設定] 中的垃圾郵件隔離時間。 當 Office 365 從隔離中刪除某封郵件後，您就無法復原該郵件。 如有需要，您可以在您的反垃圾郵件篩選原則中變更隔離郵件的保留期間。 如需詳細資訊，請參閱[設定隔離保留期限](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime)。
+## <a name="what-permissions-are-needed-to-access-administrator-quarantine"></a>若要存取管理員隔離區需要何種權限？
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
+管理隔離的權限是由*安全性 & 合規性中心*角色群組 （特別是，**隔離**角色） 中的成員資格所控制。 如需有關角色與安全性 & 合規性中心中的角色群組的詳細資訊，請參閱[Office 365 安全性 & 合規性中心的權限](permissions-in-the-security-and-compliance-center.md)。
 
-雖然安全性 & 合規性中心位於隔離區，來管理郵件在隔離區的權限是由**Exchange Online**角色群組的成員資格所控制。 如需 Exchange Online 中的角色群組的詳細資訊，請參閱[管理角色群組在 Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
+授與權限來管理隔離的預設安全性 & 符合性角色群組為：
 
-授與管理隔離區檔案的權限的 Exchange Online 角色群組為：
+- **Organization Management** （全域系統管理員）
 
-- **組織管理**： 全域系統管理員會自動這個群組的成員。
+- **隔離區管理員**
 
 - **安全性系統管理員**
-
-- **檢疫管理**
-
-若要檢視隔離區檔案的權限授與 Exchange Online 角色群組為：
-
-- **View-Only Organization Management**
-
-- **安全性讀取者**
 
 ## <a name="view-your-organizations-quarantined-messages"></a>檢視您的組織已隔離的郵件
 

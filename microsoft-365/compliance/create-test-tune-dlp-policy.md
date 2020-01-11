@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: '要開始使用 DLP 原則，最簡單且最常見方式是使用 Office 365 所包含的其中一個範本。 '
-ms.openlocfilehash: f51c0648025b65be1030a84409dd3686fe616b1a
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: fe075c004c397baa2ed568a56c9d675cdd788857
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866355"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021969"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>建立、測試及調整 DLP 原則
 
@@ -101,7 +101,7 @@ Office 365 提供的[DLP 原則範本](what-the-dlp-policy-templates-include.md)
 
 ![澳洲稅務檔案編號未通過總和檢查碼](media/DLP-create-test-tune-email-test1.png)
 
-相較之下，含有文字"稅務檔案編號 」 的電子郵件和傳遞總和檢查碼有效 TFN 會觸發該原則。 對於資料錄，我使用 TFN 來自中的網站，就會產生有效，但不是正版，TFNs。 有類似產生[正確的但假信用卡號碼](https://www.fakecreditcardgenerator.net/)的網站。 這類網站是很有用，因為下列其中一個最常見的錯誤測試 DLP 原則時使用的假的數字不是有效，並不會通過總和檢查碼 （也就不會觸發原則）。
+相較之下，含有文字"稅務檔案編號 」 的電子郵件和傳遞總和檢查碼有效 TFN 會觸發該原則。 對於資料錄，我使用 TFN 來自中的網站，就會產生有效，但不是正版，TFNs。 這類網站是很有用，因為下列其中一個最常見的錯誤測試 DLP 原則時使用的假的數字不是有效，並不會通過總和檢查碼 （也就不會觸發原則）。
 
 ![澳洲稅務檔案編號傳遞總和檢查碼](media/DLP-create-test-tune-email-test2.png)
 
@@ -177,7 +177,6 @@ DLP 原則範本不是完美直線現成可用的。 很有可能，您會發現
 
 此驅動程式的授權案例是很好的範例，若要深入探究。 此誤判發生 「 澳洲駕照 」 類型將會觸發的任何 9 位數字的字串 （甚至是一個屬於 10 位數字的字串），就是 300 個字元鄰近的關鍵字"雪梨 nsw 」 內的原因 （不區分大小寫）。 這樣它就會觸發的電話號碼和電子郵件簽章，只有因為使用者位於雪梨的情況。
 
-有趣的是，如果 「 雪梨、 NSW 」 有逗號，並不會觸發 DLP 原則。 我已經不知道原因逗號差別任何在這裡，也不為何澳洲驅動程式的授權資訊類型，關鍵字中並未包含其他城市和澳洲的狀態，但就可以了。 因此，什麼呢？ 其相關資訊 沒有兩個選項。
 
 其中一個選項是從原則移除澳洲驅動程式的授權資訊類型。 它是在該處因為它是一部分的 DLP 原則範本，但我們不強制使用它。 如果您僅有興趣稅務檔案號碼和不驅動程式的授權，您只可以將其移除。 例如，您可以移除低量規則在原則中，但保留大量規則中，如此仍然會偵測到多個驅動程式授權的清單。
 
@@ -191,7 +190,7 @@ DLP 原則範本不是完美直線現成可用的。 很有可能，您會發現
 
 最後，如果您想要取得更多進階，您可以自訂任何敏感資訊類型--例如，您可以 「 雪梨 NSW 」 從清單中移除之關鍵字[澳洲駕照](what-the-sensitive-information-types-look-for.md#australia-drivers-license-number)，以避免誤判觸發上方。 若要了解如何藉由使用 XML 和 PowerShell 執行這項操作，請參閱在[自訂內建的敏感資訊類型](customize-a-built-in-sensitive-information-type.md)的本主題。
 
-## <a name="turn-off-a-dlp-policy"></a>關閉 DLP 原則
+## <a name="turn-on-a-dlp-policy"></a>開啟 [DLP 原則
 
 當您滿意，DLP 原則很精確，且有效率地偵測敏感資訊類型，以及您的使用者準備好要處理正在進行中的原則，然後您可以啟用此原則。
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 尋找關於 Microsoft 合規性分數，可協助組織常見問題的答案簡化和自動化風險評定。
-ms.openlocfilehash: bc0ddfe71a3de2bbfa2c9c9a0fdc507a540daf90
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: ff53b2f3c7cde3dc9f78ccf13cb3fa8f75e7afa6
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "39625396"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021979"
 ---
 # <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Microsoft 合規性分數 （預覽） 的常見問題集
 
@@ -41,7 +41,7 @@ Microsoft 合規性分數是在[Microsoft 365 合規性中心](microsoft-365-com
 
 合規性分數是適合貴組織使用者所扮演的角色監視合規性和 save 為了遵守法規標準活動中的每個人。 使用合規性分數，您不需要先熟悉法規和標準，可協助改善貴組織的資料保護。 合規性分數是最佳的起始位置的所有使用者。 從這裡開始，您可以看到您的合規性分數，了解哪些建議的動作可協助降低風險，並在許多情況下，啟動從右到解決方案來執行這些動作。
 
-現在，合規性管理員是讓使用者可以管理評估及建立自訂範本，以建立 「 評估 」 的位置。 深入了解[哪些動作支援僅由合規性管理員](compliance-score-release-notes.md#compliance-score-and-compliance-manager-relationship)期間公開預覽。
+現在，合規性管理員是讓使用者可以管理評估及建立自訂範本，以建立 「 評估 」 的位置。 深入了解[哪些動作支援僅由合規性管理員](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)期間公開預覽。
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>如果我有較高的分數，意思我已經完全相容？
 
