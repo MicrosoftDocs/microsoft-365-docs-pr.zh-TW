@@ -3,7 +3,7 @@ title: 敏感度標籤概觀
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 01/06/2020
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,18 +15,21 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上套用保護設定 (包括加密和浮水印)。
-ms.openlocfilehash: 91481bb1c1267b40ccd2596c06faf5005372ac39
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: b69ae981ea8d988d399e325d2532a0a59e27ae20
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989498"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023347"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
 為了完成其工作，組織中的人員會與組織內外的其他人員共同合作。這表示內容不總是在防火牆後，它會漫遊在裝置、應用程式和服務的各處。而您希望內容以符合組織的商務及合規性原則的安全、受保護的方式漫遊。
 
 使用敏感度標籤，您可以分類並協助保護敏感性內容，不會阻礙人員的生產力與共同作業能力。
+
+> [!NOTE]
+> 敏感度標籤無法在美國政府社群 (GCC) 組織中使用。
 
 顯示敏感度標籤的範例：
 
@@ -102,9 +105,9 @@ ms.locfileid: "40989498"
 
 在您的系統管理中心中建立敏感度標籤時，它們會顯示在 [標籤]**** 頁面的 [敏感度]**** 索引標籤上的清單中。 在此清單中，標籤的順序很重要，因為它反映的是其優先順序。 您想要讓最具限制性的敏感度標籤，例如 [高度機密性]，顯示在清單的最**底端**，以及最不具限制性的敏感度標籤，例如公用，顯示在最**上方**。
 
-您只能將一個敏感度標籤套用至文件或電子郵件。 如果您要求使用者提供將標籤變更為較低分類的理由，則此清單的順序會識別分類下限。
+您只能將一個敏感度標籤套用至文件或電子郵件。 如果您設定一個選項，要求使用者提供將標籤變更為較低分類的理由，則此清單的順序會識別分類下限。 不過，此選項不適用子標籤。
 
-標籤優先順序也適用子標籤。
+不過，子標籤的排序會搭配[自動標記](apply-sensitivity-label-automatically.md)使用。 將標籤設定為自動套用或建議時，可能對多個標籤造成相符項目。 若要判斷要套用或建議的標籤，會使用標籤順序：選取最後一個敏感度標籤，然後在適用時使用最後一個子標籤。
 
 ![建立子標籤的選項](media/Sensitivity-label-sublabel-options.png)
 
@@ -189,11 +192,7 @@ ms.locfileid: "40989498"
 
 ## <a name="where-sensitivity-labels-can-appear"></a>敏感度標籤會顯示的位置
 
-敏感度標籤會顯示在 Office 應用程式的 UI 中。 若要檢視特定應用程式和平台內建標籤的目前狀態，請使用下列表格：
-
-- [在 Word、Excel 和 PowerPoint 中支援敏感度標籤功能](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint)
-
-- [在 Outlook 中支援敏感度標籤功能](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-outlook)
+敏感度標籤會顯示在 Office應用程式的 UI 中，且可以從功能區 [常用] 索引標籤上的 [敏感度]**** 按鈕選取。 若要檢視特定應用程式和平台內建標籤的目前狀態，請參閱[在應用程式中支援敏感度標籤功能](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)。
 
 如果您使用 Windows 電腦的 Azure 資訊保護整合標籤用戶端，則有其他功能可供敏感度標籤使用。 如需詳細資訊，請參閱[比較 Windows 電腦的標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。
 

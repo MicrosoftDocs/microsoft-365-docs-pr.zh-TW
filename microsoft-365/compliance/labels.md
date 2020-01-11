@@ -1,7 +1,7 @@
 ---
 title: 保留標籤概觀
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Office 365 中實作記錄管理。
-ms.openlocfilehash: dcf350f34a30d27aa66d3e4395b2441694537bae
-ms.sourcegitcommit: 9a420b16aaa401a822ccfd9b133977ad8bd1024b
+ms.openlocfilehash: 9327e23a25143fa032ea9501a9d89ec6f47950bd
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39621106"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023367"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -55,7 +55,7 @@ ms.locfileid: "39621106"
    - 使用者不再需要了解資料控管原則，就可以專心工作。
 
   > [!NOTE]
-  > 自動套用標籤的功能需要每位使用者均擁有 Office 365 Enterprise E5 授權，這些使用者有權編輯網站或信箱中已自動標籤的內容。
+  > 自動套用標籤的功能要求有權編輯網站或信箱中已選取要自動標記內容的每位使用者均擁有 Office 365 Enterprise E5 授權。對內容或回覆標記電子郵件僅具有唯讀存取的使用者不需要此授權。
       
 - **在 Office 365 中實作記錄管理**，包括電子郵件和文件。您可以使用保留標籤將內容分類成記錄。在這種情況下，無法變更或移除標籤，且不能編輯或刪除內容。 
 
