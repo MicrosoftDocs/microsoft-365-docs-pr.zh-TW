@@ -1,7 +1,7 @@
 ---
 title: 美國國防部 (DoD) 暫時性授權
 description: Microsoft 收到國防部 (DoD) 暫時性授權層級影響 5、 4 和 2。
-keywords: Microsoft 365, compliance, offerings , 合規性, 方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e6a41cb2c55e1711048c863cd6f2f7e26e9ee5bc
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: ad9659799494a3aaad4a3436b263ebcfd2b56d1c
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959552"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112497"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>美國國防部 (DoD) 暫時性的授權層級影響 2、 4 和 5
 
@@ -36,7 +36,7 @@ Microsoft 的政府雲端服務符合美國國防部，從影響層級 2 到 5�
 - 了解在 Microsoft 雲端 DoD DISA L2，L4，L5 優點：[下載防禦 DISA 背景資料的部門](https://aka.ms/disa-backgrounder)
 - 了解如何開始加速您 DoD DISA L2，L4，與我們的 Azure 安全性與合規性藍圖 L5 部署：[下載 Azure DoD 等級 5 安全性控制實作](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=e391da04-ae17-472c-9634-959c5ce6ba92&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD%20Blueprint)
 
-## <a name="dod-impact-level-5-provisional-authorization"></a>[DoD 影響等級 5 暫時性的授權
+## <a name="dod-impact-level-5-provisional-authorization"></a>DoD 影響等級 5 暫時性授權
 
 DISA 雲端服務支援已授與 DoD 影響層級 5 PA Microsoft Azure government DoD。 DISA 具有也授與 Office 365 美國政府國防版 DoD 影響層級 5 PA. 層級 5 涵蓋控制非機密資訊 (CUI) 感測器，由法律、 其他政府法令或所擁有的資訊，且需要較高層級的保護層級 4 提供比機構的影響。 它也會涵蓋分類國家的安全性系統。
 
@@ -87,7 +87,7 @@ Microsoft 雲端服務後授與 DoD PA，監控和評估每年： [Microsoft Fed
 
 **我是否可以在組織的憑證程序中使用 Microsoft 合規性？**
 
-可以。 所有 DoD 行政機關可能都自信地仰賴 Microsoft 雲端服務的認證為基礎的任何程式或需要 DoD 授權計劃。 （這也適用於其他支援 DoD，且需要雲端服務的組織）不過，您需要達成您自己的授權外部這些服務的元件。
+是。 所有 DoD 行政機關可能都自信地仰賴 Microsoft 雲端服務的認證為基礎的任何程式或需要 DoD 授權計劃。 （這也適用於其他支援 DoD，且需要雲端服務的組織）不過，您需要達成您自己的授權外部這些服務的元件。
 
 **Microsoft 的 DoD 憑證是否符合 NIST 800-171 需求？**
 

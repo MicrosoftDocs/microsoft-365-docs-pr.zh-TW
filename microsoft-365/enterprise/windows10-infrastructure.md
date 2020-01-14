@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: 147dd0ec0276d685177ae389092ec18ace0d7bed
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 92a786f40c10170cf0eb5f91f765bad4dc044c97
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831686"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112667"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>階段 3：Windows 10 企業版
 
@@ -39,7 +39,7 @@ Microsoft 365 企業版包含 Windows 10 企業版，可讓您進行更多作業
 
 | 部署案例 | 使用時機 |
 |:--- |:--- |
-| [使用 Microsoft 端點 Configuration Manager 以進行就地升級](windows10-deploy-inplaceupgrade.md) | 如果您要升級 Windows 7 或<a href="https://aka.ms/introtosccm" target="_blank">Configuration Manager （最新分支）</a>目前管理 Windows 10 企業版的<a href="https://aka.ms/windows-10-release-information" target="_blank">目前版本</a>的 Windows 8.1 電腦與您的電腦，請選取這個選項。 |
+| [使用 Microsoft 端點 Configuration Manager 以進行就地升級](windows10-deploy-inplaceupgrade.md) | 如果您要升級 Windows 7 或<a href="https://docs.microsoft.com/configmgr/core/understand/introduction" target="_blank">Configuration Manager （最新分支）</a>目前管理 Windows 10 企業版的<a href="https://aka.ms/windows-10-release-information" target="_blank">目前版本</a>的 Windows 8.1 電腦與您的電腦，請選取這個選項。 |
 | [使用 Windows Autopilot](windows10-deploy-autopilot.md) | 如果您正在設定新有 Windows 10 企業版，版本 1703年或更新版本預先安裝的 Windows 電腦，請選取這個選項。 使用者將會啟動安裝程式使用您所需的設定，藉由輸入他們的公司或學校帳戶認證。 |
 
 如果這些部署案例不符合您組織的需求，您可以了解其他案例，並了解的功能和每個在[Windows 10 部署案例](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)中的限制。 您也可以自行<a href="https://aka.ms/planforwin10deployment" target="_blank">規劃 Windows 10 部署</a>。

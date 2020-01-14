@@ -15,12 +15,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: 概略報表和深入解析 avialable 安全性&amp;合規性中心。
-ms.openlocfilehash: 33e02ff96621df72b2224cc8dc9b3666caab3429
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 88a6cb080b0550274e86dcebb0e96be69e170317
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967966"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111917"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>智慧型報表和深入了解 Office 365 安全性&amp;合規性中心
 
@@ -53,7 +53,7 @@ ms.locfileid: "39967966"
 |**資料管理** <br/> 如何套用標籤的相關資訊，分類為記錄、 標籤趨勢等等的標籤  <br/> |安全性&amp;合規性中心，移至**資訊管理** \> **儀表板** <br/> |[檢視資料控管報告](../../compliance/view-the-data-governance-reports.md) <br/> |
 |**威脅管理儀表板**（這也稱為安全性儀表板和威脅情報儀表板）  <br/> 威脅偵測、 惡意程式碼趨勢、 最上層的目標的使用者、 詳細資料傳送和接收電子郵件、 等等  <br/> |安全性&amp;合規性中心，移至**威脅管理** \> **儀表板** <br/> |[安全性儀表板概觀](security-dashboard.md) <br/> |
 |**威脅總管**（也稱為 Explorer）] 或 [**即時偵測** <br/> 可疑電子郵件和 Office 365 中的檔案中偵測到的惡意程式碼  <br/> |安全性&amp;合規性中心，移至**威脅管理** \> **檔案總管**] 或 [**即時偵測**<br/> |[威脅總管 (或即時偵測)](threat-explorer.md) <br/> |
-|**進階威脅防護和電子郵件安全性報告** <br/> 電子郵件安全性和威脅保護報告 （包括惡意程式碼、 垃圾郵件、 網路釣魚和詐騙報表）  <br/> |安全性&amp;合規性中心，移至**報表** \> **儀表板** <br/> |[檢視 Office 365 進階威脅防護報告](view-reports-for-atp.md) <br/><br/> [檢視安全性中的電子郵件安全性報告&amp;合規性中心](../../compliance/view-email-security-reports.md) <br/> |
+|**進階威脅防護和電子郵件安全性報告** <br/> 電子郵件安全性和威脅保護報告 （包括惡意程式碼、 垃圾郵件、 網路釣魚和詐騙報表）  <br/> |安全性&amp;合規性中心，移至**報表** \> **儀表板** <br/> |[檢視 Office 365 進階威脅防護的報告](view-reports-for-atp.md) <br/><br/> [檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md) <br/> |
 |**郵件流程** <br/> 相關資訊傳送和接收電子郵件、 最近的通知、 主要寄件者和收件者、 電子郵件轉寄功能報表，以及更多  <br/> |安全性&amp;合規性中心，移至 [**郵件流程** \> **儀表板** <br/> |[安全性與合規性中心內的郵件流程深入解析](mail-flow-insights-v2.md)<br/> |
 |**GDPR 規範** <br/> GDPR 合規性，包括資料主體、 標籤趨勢和作用中的連結的相關資訊&amp;關閉案例  <br/> |安全性&amp;合規性中心，移至**資料隱私權** \> **GDPR 儀表板** <br/> |[GDPR 的 Office 365 資訊保護](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
 |**稽核記錄** <br/> Office 365 活動、 使用者、 檔案或資料夾及更多的相關資訊  <br/> |安全性&amp;合規性中心，移至**搜尋&amp;調查** \> **稽核記錄搜尋** <br/> |[在 Office 365 安全與規範中心搜尋稽核記錄](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 4a43573893ecc16539810cfcfe85c8df469d06dd
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 73ad56a335b02de090becdc55e34dc3e90bc4389
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634040"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41022019"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -65,7 +65,7 @@ ms.locfileid: "39634040"
 
 在您開始搜尋 Office 365 稽核記錄前，請務必閱讀下列項目。
 
-- 您 (或其他系統管理員) 必須先開啟稽核記錄，才能開始搜尋 Office 365 稽核記錄。 按一下「安全性與合規性中心」中 [稽核記錄搜尋]**** 頁面上的 [開始記錄使用者和系統管理員活動]****，即可開啟此功能。 (如果您沒看到此連結，表示您的組織已開啟稽核功能。) 開啟此功能後，就會顯示一則訊息，表示正在準備稽核記錄，而您可以在準備完成 (約幾小時) 後執行搜尋。 此操作只需執行一次。
+- 您 (或其他系統管理員) 必須先開啟稽核記錄，才能開始搜尋 Office 365 稽核記錄。 按一下「安全性與合規性中心」中 **[稽核記錄搜尋]** 頁面上的 **[開啟稽核]**，即可開啟此功能。 (如果您沒看到此連結，表示您的組織已開啟稽核功能。) 開啟此功能後，就會顯示一則訊息，表示正在準備稽核記錄，而您可以在準備完成 (約幾小時) 後執行搜尋。 此操作只需執行一次。 如需詳細資訊，請參閱[開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)。
 
   > [!NOTE]
   > 我們還在設法讓稽核功能可預設為開啟。 在那之前，您可以如上述方法來開啟該功能。
@@ -335,6 +335,7 @@ ms.locfileid: "39634040"
 |(無)|FileModifiedExtended|這與「已修改檔案」(FileModified) 活動相關聯。 當相同人員持續修改某個檔案一段時間 (最多 3 小時)，便會記錄 FileModifiedExtended 事件。 <br/><br/> 記錄 FileModifiedExtended 事件的目的在於減少持續修改某個檔案時，記錄 FileModified 事件的數目。 這有助於減少多個 FileModified 記錄的干擾，以了解哪些基本上是同樣的使用者活動，並讓您專注在初始 (且更重要的) FileModified 事件。|
 |已移動檔案|FileMoved|使用者將文件從它在網站上目前的位置移動至新的位置。|
 |(無)|FilePreviewed|使用者預覽 SharePoint 或商務用 OneDrive 網站上的檔案。 這些事件通常發生在單一活動中有龐大數量時，例如檢視影像資源庫。|
+|已執行的搜尋查詢|SearchQueryPerformed|使用者或系統帳戶在 SharePoint 或商務用 OneDrive 中執行搜尋。 在服務帳戶執行搜尋查詢的一些常見案例，包含將電子文件探索保留或保留原則套用至網站和 OneDrive 帳戶，以及將保留或敏感度標籤自動套用至網站內容的時刻。 在這些情況下，記錄在稽核記錄 [使用者] 欄位中的服務帳戶名稱為 **app@sharepoint**。 </br></br> **提示：**[已執行的搜尋查詢] 活動稽核記錄中的 [ApplicationDisplayName] 和 [EventData] 欄位可協助您識別觸發此事件的案例或服務。|
 |已回收所有檔案次要版本|FileVersionsAllMinorsRecycled|使用者從檔案的版本歷程記錄中刪除所有的次要版本。 已刪除的版本會移至網站資源回收筒。|
 |已回收所有檔案版本|FileVersionsAllRecycled|使用者從檔案版本歷程記錄中刪除所有版本。 已刪除的版本會移至網站資源回收筒。|
 |已回收檔案版本|FileVersionRecycled|使用者從檔案版本歷程記錄中刪除版本。 已刪除的版本會移至網站資源回收筒。|
@@ -814,7 +815,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 |已傳送 Forms Pro 邀請|ProInvitation|使用者按一下以啟用 Pro 試用版。|
 |已更新表單設定|UpdateFormSetting|表單擁有者更新表單設定。 <br><br>屬性 FormSettingName：字串表示設定的名稱和新值。|
 |已編輯使用者設定|UpdateUserSetting|表單擁有者更新使用者設定。 <br><br>屬性 UserSettingName：字串表示設定的名稱和新值。|
-|已列出表單|ListForms|表單擁有者正檢視表單清單。 <br><br>屬性 ViewType：字串表示表單擁有者正查看何種檢視： [所有表單]、[與我共用] 或 [群組表單]|
+|已列出表單|ListForms|表單擁有者正檢視表單清單。 <br><br>屬性 ViewType：字串表示表單擁有者正查看何種檢視：[所有表單]、[與我共用] 或 [群組表單]|
 |已提交回應|SubmitResponse|使用者提交表單的回應。 <br><br>屬性 IsInternalForm：如果回應者與表單擁有者位於同一組織中，則會顯示布林值。|
 ||||
 

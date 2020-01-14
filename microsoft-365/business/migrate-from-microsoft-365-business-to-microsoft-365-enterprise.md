@@ -1,5 +1,5 @@
 ---
-title: 從 Microsoft 365 商務版移轉到 Microsoft 365 E3
+title: 從 Microsoft 365 商務版移轉至 Microsoft 365 E3
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 了解如何將貴公司從 Microsoft 365 商務版移到 Microsoft 365 E3。
-ms.openlocfilehash: dc715bbf4cef8a742a28a6452e83b6e8d2f7cdd8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 7d10889a446543a3e9126aaaa1e3fbe6861f87a4
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805616"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111867"
 ---
-# <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>從 Microsoft 365 商務版移轉到 Microsoft 365 E3
+# <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>從 Microsoft 365 商務版移轉至 Microsoft 365 E3
 
 Microsoft 365 商務版具有您需要為您的小型企業，與簡單的裝置管理和安全性，可讓您的員工盡善盡美組合在一起的最佳-雲端生產力應用程式的所有項目。 不過，在某些情況下，您可能需要將您的 Microsoft 365 商務版訂閱移轉至 Microsoft 365 E3。 
 
@@ -74,7 +74,7 @@ Microsoft 365 商務版具有您需要為您的小型企業，與簡單的裝置
 | Office 365 資料外洩防護、 Azure 資訊保護計劃 1  | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 
 | 視窗的端點 DLP 的資訊保護    | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 
 | **用戶端存取使用權 （CAL 權限）**    | | |   
-| 企業 CAL 套件 （Exchange、 SharePoint、 Skype、 Windows、 System Center Configuration Manager、 Windows Rights Management）| |        ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 
+| 企業 CAL 套件 （Exchange、 SharePoint、 Skype、 Windows、 Microsoft 端點 Configuration Manager、 Windows Rights Management）| |       ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 
 | **合規性**        | | | 
 | 無限制的電子郵件封存 | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 
 | 合規性管理員    | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 

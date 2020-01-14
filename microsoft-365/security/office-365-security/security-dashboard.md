@@ -14,12 +14,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 使用新的安全性儀表板來檢閱 Office 365 威脅保護狀態，並檢視，然後對安全性提醒。
-ms.openlocfilehash: 8ce6e21bcc25853e641ee20126ffd38c785e76f7
-ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
+ms.openlocfilehash: f7fc45ca1df86fa29c6e2af69da5258fe6d564b6
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033934"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112647"
 ---
 # <a name="security-dashboard"></a>安全性儀表板
 
@@ -64,7 +64,7 @@ ms.locfileid: "38033934"
 
 |如果您的訂閱包含...] |您會看到這些詳細資料 |
 |---------|---------|
-|EOP，但不是 Office 365 ATP     |偵測到並由 EOP 封鎖惡意電子郵件<br> 請參閱[威脅保護狀態報表 (EOP)](../../compliance/view-email-security-reports.md#threat-protection-status-report)。| 
+|EOP，但不是 Office 365 ATP     |偵測到並由 EOP 封鎖惡意電子郵件<br> 請參閱[威脅保護狀態報表 (EOP)](view-email-security-reports.md#threat-protection-status-report)。| 
 |Office 365 ATP |惡意內容和惡意電子郵件偵測並封鎖由 EOP 和 Office 365 ATP<br>彙總的數唯一的電子郵件與反惡意程式碼引擎、[零時差自動清除](zero-hour-auto-purge.md)，並 ATP 功能 （包括[安全連結](atp-safe-links.md)、[安全附件](atp-safe-attachments.md)及[ATP 防網路釣魚](atp-anti-phishing.md)） 封鎖惡意內容的詳細資訊。<br>請參閱[威脅保護狀態報表 (ATP)](view-reports-for-atp.md#threat-protection-status-report)。 | 
 
 若要檢視或存取威脅保護狀態] 小工具，您必須檢視進階威脅防護報告的權限。 若要深入了解，請參閱[檢視 ATP 報告需要哪些權限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。 
@@ -111,7 +111,7 @@ ms.locfileid: "38033934"
   
 ![趨勢節摘要列出組織的電子郵件流程趨勢](../media/trends.png)
   
-而且，如果貴組織的 Office 365 訂用帳戶包含[Office 365 進階威脅防護計劃 2](office-365-ti.md)，您也必須**最近的威脅管理通知**報表在此] 區段中，可讓您的安全性小組，以檢視並採取動作高優先順序安全性提醒。 
+和，如果貴組織的 Office 365 訂用帳戶包含[Office 365 進階威脅防護計劃 2](office-365-ti.md)，您也必須**最近的威脅管理通知**報告可讓您檢視及對高優先順序安全性警示採取動作的安全性小組本章節中。 
 
 若要檢視或存取已傳送和接收電子郵件] 小工具，您必須檢視進階威脅防護報告的權限。 若要深入了解，請參閱[檢視 ATP 報告需要哪些權限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。 
 
@@ -119,9 +119,9 @@ ms.locfileid: "38033934"
   
 ## <a name="related-topics"></a>相關主題
 
-[檢視安全性中的電子郵件安全性報告&amp;合規性中心](../../compliance/view-email-security-reports.md)
+[檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md)
   
-[檢視 Office 365 進階威脅防護報告](view-reports-for-atp.md)
+[檢視 Office 365 進階威脅防護的報告](view-reports-for-atp.md)
   
 [Office 365 進階威脅防護](office-365-atp.md)
   

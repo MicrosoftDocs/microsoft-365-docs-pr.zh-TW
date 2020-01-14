@@ -1,17 +1,17 @@
 ---
 title: Microsoft 受管理電腦中的應用程式
 description: ''
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: db89e3b1f8b5b8073eab62e4b4d38087e1e73fa4
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: ea6cc92fe84cc39502e3db97361ff9d294fdfca2
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913044"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112657"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的應用程式
 
@@ -32,7 +32,7 @@ Microsoft 包含特定索引鍵的應用程式，以及參與 Microsoft 受管�
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Microsoft 沒有為支援我們提供應用程式
 
-Microsoft 會提供包含 Office 365 專業增強版應用程式的部署、 更新和支援的完整服務。 按一下 [-隨選即用版本的 Microsoft Project 和 Visio 會根據預設，*不*包含，但 Microsoft 受管理的電腦會提供讓 IT 系統管理員管理授權及部署這些應用程式適當的部署群組您組織。 Microsoft 將會支援透過 Microsoft 受管理的電腦支援頻道這些應用程式的使用者。
+Microsoft 會提供包含 Office 365 專業增強版應用程式的部署、 更新和支援的完整服務。 按一下 [-隨選即用版本的 Microsoft Project 和 Visio 會根據預設，*不*包含，但 Microsoft 受管理的電腦會提供讓 IT 系統管理員管理授權及部署這些應用程式適當地為您的組織部署群組。 Microsoft 將會支援透過 Microsoft 受管理的電腦支援頻道這些應用程式的使用者。
 
 ### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>您要做為支援我們提供應用程式
 
@@ -46,7 +46,7 @@ Microsoft 會提供包含 Office 365 專業增強版應用程式的部署、 更
 
 當然，您可能有其他您需要的企業營運的應用程式的數量。 這些可以可以只部署至 Microsoft 受管理的電腦裝置使用 Microsoft Intune 部署管線。 如果應用程式需要它可以讓他們封裝廠商 （這可能是在非 Microsoft 供應商或 Microsoft 諮詢服務 (MCS)），或如果您有方法，您可以封裝他們自己。 然後將這些套件新增至 Microsoft 受管理電腦入口網站，並將它們指派給 Azure Active Directory 群組，以觸發部署。 
 
-如果您目前使用 System Center Configuration Manager 部署您的應用程式，Microsoft 受管理的電腦可以提供您評估您的應用程式，並探索哪些項目可供移轉至 Microsoft Intune 和哪些項目可能需要一些調整查詢.
+您用來評估您的應用程式和探索哪些項目查詢準備好讓移轉至 Microsoft Intune 和哪些項目可能需要一些，如果您目前使用 Microsoft 端點 Configuration Manager 部署您的應用程式，可提供 Microsoft 受管理的電腦調整。
 
 
 ### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>準備您自己的應用程式以使用 Microsoft 受管理電腦中的相對路徑

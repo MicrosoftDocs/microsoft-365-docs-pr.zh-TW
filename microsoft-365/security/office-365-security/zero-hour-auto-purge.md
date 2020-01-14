@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零時差自動清除 (ZAP) 是一種電子郵件防護功能，可偵測含垃圾郵件或惡意程式碼且已傳遞到使用者收件匣的郵件，然後將惡意內容呈現為無害。 ZAP 執行此作業的方式取決於偵測到的惡意內容類型。
-ms.openlocfilehash: 3a888e6a6b4de57efcb0a8b8284432a2b9f1095a
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
-ms.translationtype: HT
+ms.openlocfilehash: 9ffe169baaa522ca86f712bc0fde41d4985092cd
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971381"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111897"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零時差自動清除 - 防範垃圾郵件和惡意程式碼
 
@@ -67,7 +67,7 @@ ZAP 不會將任何郵件移到正在進行動態傳遞掃描或已經有惡意�
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>如何查看 ZAP 是否已移動您的郵件
 
-若要判斷 ZAP 是否已移動您的郵件，您可以使用[威脅防護狀態報告](../../compliance/view-email-security-reports.md#threat-protection-status-report)或[威脅總管 (及即時偵測)](threat-explorer.md)。
+若要判斷 ZAP 是否已移動您的郵件，您可以使用[威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)或[威脅總管 (及即時偵測)](threat-explorer.md)。
 
 ## <a name="disable-zap"></a>停用 ZAP
 
