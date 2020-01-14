@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 將貴公司從 Office 365 商務進階版升級至 Microsoft 365 商務版的步驟。
-ms.openlocfilehash: 95c4504d7e6e33bdededee0cfca7add0cb5f7204
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 61da9148ccb87654aa2391ff90c4f086a4cbbe24
+ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640554"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41120134"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>從 Office 365 商務進階版升級至 Microsoft 365 商務版
 
@@ -68,7 +68,7 @@ ms.locfileid: "38640554"
 1. 準備您的計劃之後，您可能需要完成一些額外設定步驟，在系統管理中心。 在 [功能窗格中，選取 [**住家**完成任何額外的設定步驟。
 
 > [!NOTE]
-> 您會收到您不再需要 Ofifce 365 授權依比例的退款。 您的銀行帳戶或信用卡將支付約兩天後設定新的計劃。
+> 您會收到您不再需要的 Office 365 授權依比例的退款。 您的銀行帳戶或信用卡將支付約兩天後設定新的計劃。
   
 ## <a name="protect-user-devices-and-files"></a>保護使用者裝置和檔案
 
