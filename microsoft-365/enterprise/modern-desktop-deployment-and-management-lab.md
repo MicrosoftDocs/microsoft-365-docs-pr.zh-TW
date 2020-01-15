@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: 0083eb91b49561c858cacc94a148e97c7463b754
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1d95edce079f515572c977913da2ee432514f983
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801358"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112507"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署的 Lab Kit
 
 這些可下載的實際操作實驗室著重於 Windows 10 部署和 Office 365 部署，以及相關的設定和管理考量後置部署。此訓練高度建議給為結束使用 Windows 7 做準備的組織，但如果您目前使用 Windows 10 和 Office 365 增加版或 Office 2019 則也適用。其中包括 Windows 10、Office 365 專業增強版、Enterprise Mobility + Security，以及相關產品及服務的指南。
 
-這些實驗室是設計來協助您規劃、測試及驗證執行 Windows 10 企業版和 Office 365 專業增強版之桌面的部署和管理。 實驗室涵蓋桌面部署輪中概述的步驟和工具，跨越 System Center Configuration Manager、電腦分析、Office 自訂工具、OneDrive、Windows Autopilot，以及其他。
+這些實驗室是設計來協助您規劃、測試及驗證執行 Windows 10 企業版和 Office 365 專業增強版之桌面的部署和管理。 實驗室涵蓋桌面部署輪中概述的步驟和工具，跨越 Microsoft Endpoint Configuration Manager、電腦分析、Office 自訂工具、OneDrive、Windows Autopilot，以及其他。
 
 作為 Windows 10 和 Office 365 專業增強版之[桌面部署](https://www.aka.ms/howtoshift)程序的一部分，當您開始探索部署工具更新，並測試部署相關的自動化作業時，建置沙箱化或隔離的實驗室環境是建議的起點。
 
@@ -38,7 +38,7 @@ ms.locfileid: "40801358"
 
   - Windows 10 企業版，版本 1909
   - Windows 7 Enterprise
-  - System Center Configuration Manager，版本 1902
+  - Microsoft Endpoint Configuration Manager，版本1902
   - Windows Assessment and Deployment Kit for Windows 10，版本 1903
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V) 5.1
@@ -72,7 +72,7 @@ ms.locfileid: "40801358"
 
 ### <a name="office-and-lob-app-delivery"></a>**Office 和 LOB 應用程式傳遞**
 
-  - 使用 System Center Configuration Manager 部署 Office 365 專業增強版
+  - 使用 Microsoft Endpoint Configuration Manager 的 Office 365 專業增強版部署
   - 使用 Microsoft Intune 部署 office 365 專業增強版
   - 使用 Microsoft Intune 部署及管理應用程式
   - 使用商務用 Microsoft Store 進行應用程式部署和自助安裝
@@ -126,7 +126,7 @@ ms.locfileid: "40801358"
 
   - [來自 Microsoft Mechanics 的桌面部署中心系列影片](https://www.aka.ms/watchhowtoshift)
 
-  - [System Center Configuration Manager 作業系統部署](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [Microsoft Endpoint Configuration Manager 作業系統部署](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Windows 10 部署計劃</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 

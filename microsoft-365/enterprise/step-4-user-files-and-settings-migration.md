@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何移轉使用者檔案和設定。
-ms.openlocfilehash: 8b9bde4eb1ddf0951a2ab27795dadef9965f6a1c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e1def35a631f8a90ee699c6ed7129216015e5182
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031488"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112567"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>步驟 4：使用者檔案和設定移轉
 
@@ -51,7 +51,7 @@ ms.locfileid: "38031488"
 
 ## <a name="automated-migration-using-usmt"></a>使用 USMT 自動化移轉 
 
-對於大規模部署，您可以使用工作序列式部署自動化工具來自動化大部分程序，例如 System Center Configuration Manager 或 Microsoft Deployment Toolkit (MDT)。這兩種解決方案都運用使用者狀態移轉工具 (USMT) 作為端對端部署程序一部分。USMT 屬於 [Windows 評定及部署套件 (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
+對於大規模部署，您可以使用工作序列式部署自動化工具來自動化大部分程序，例如 Microsoft Endpoint Configuration Manager 或 Microsoft Deployment Toolkit (MDT)。這兩種解決方案都運用使用者狀態移轉工具 (USMT) 作為端對端部署程序一部分。USMT 屬於 [Windows 評定及部署套件 (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
 
 USMT 會擷取使用者帳戶、使用者檔案、作業系統設定和應用程式設定，然後將這些移轉至新的 Windows 安裝中。同時也能讓 IT 系統管理員準確控制移轉內容，另外也可以選擇排除不想要的檔案類型，如音訊及視訊檔案，或可執行檔。
 
