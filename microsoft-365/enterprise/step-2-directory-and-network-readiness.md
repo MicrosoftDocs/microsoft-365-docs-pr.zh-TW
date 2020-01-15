@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在環境中評估目錄和網路整備。
-ms.openlocfilehash: c009a60849390cc9b796a56f66e63d44e12cdc68
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: cae32d7bd7791cdfb0acce564b2a7839d5314a19
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031558"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112609"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>步驟 2：目錄和網路整備
 
@@ -79,7 +79,7 @@ ms.locfileid: "38031558"
 
 [關於 BITS](https://docs.microsoft.com/windows/desktop/bits/about-bits) (英文)
 
-如果您使用 System Center Configuration Manager (最新分支)，也可以設定啟用 BITS 的發佈點，或啟用搭配 WDS 的多點傳送。
+如果您使用 Microsoft Endpoint Configuration Manager (最新分支)，也可以設定啟用 BITS 的發佈點，或啟用搭配 WDS 的多點傳送。
 
 特定流量的節流表示正常的網路流量受電腦下載更新和應用程式的影響較小。但是分割出特定百分比的頻寬給這些工作可協助確保產能不會受 Windows 或 Office 部署的影響，且程序會視需要繼續執行，當使用者在部署執行時鎖定其電腦的情況下，可能會降低部署相關的中斷時間。
 
@@ -89,7 +89,7 @@ ms.locfileid: "38031558"
 
 ## <a name="scavenging-bandwidth"></a>清除頻寬
 
-Windows Server 2019 與 System Center Configuration Manager (最新分支) 支援的低額外延遲背景傳輸 (LEDBAT) 是針對最佳化 Windows 用戶端的網路流量所設計。
+Windows Server 2019 與 Microsoft Endpoint Configuration Manager (最新分支) 支援的低額外延遲背景傳輸 (LEDBAT) 是針對最佳化 Windows 用戶端的網路流量所設計。
 
 [Windows Server 2019 的前 10 大網路功能：\#9 LEDBAT – 延遲最佳化背景傳輸](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/) (英文)
 
@@ -101,15 +101,15 @@ Windows Server 2019 與 System Center Configuration Manager (最新分支) 支�
 
 越來越多對等選項用於 Windows 10 移轉中，針對電腦映像、軟體更新和使用者個人化。在首次部署 Windows 10 之後，它們對於促進組建對組建升級也很有用。我們在此將介紹幾個範例說明將 Windows 10 與 Office 相關流量移出網路中央、減少傳統節流方法的需求，以及允許電腦尋找其在本機網路同儕中所需的更新檔案，而不是從發佈點或網際網路進行下載。
 
-**BranchCache** 可協助您在分散式環境中下載內容而不會使網路飽和。它有兩個選項：託管快取模式，這可讓您使用本機伺服器來快取內容，以及分散式快取模式 (System Center Configuration Manager 中支援的模式)，可讓用戶端與其他人員共用已下載的內容。
+**BranchCache** 可協助您在分散式環境中下載內容而不會使網路飽和。它有兩個選項：託管快取模式，這可讓您使用本機伺服器來快取內容，以及分散式快取模式 (Configuration Manager 中支援的模式)，可讓用戶端與其他人員共用已下載的內容。
 
-System Center Configuration Manager 支援的**對等快取**用戶端也可利用對等快取。 這允許可在網路上可靠使用的電腦裝載內容散發的來源。 您不想對您所有的電腦啟用此功能 – 只鎖定以具有可靠網路連線的裝置 (例如桌上型、迷你機箱或直立式電腦) 作為主機。 對等快取甚至適用於在設定期間於 Windows PE 階段中執行的部署工作。
+Configuration Manager 支援的**對等快取**用戶端也可利用對等快取。 這允許可在網路上可靠使用的電腦裝載內容散發的來源。 您不想對您所有的電腦啟用此功能 – 只鎖定以具有可靠網路連線的裝置 (例如桌上型、迷你機箱或直立式電腦) 作為主機。 對等快取甚至適用於在設定期間於 Windows PE 階段中執行的部署工作。
 
 附註：BranchCache 和對等快取互補，而且可以在同一個環境中共同作業。
 
 [BranchCache 與對等快取](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/) (英文)
 
-**傳遞最佳化** 傳遞最佳化是另一種對等式快取技術，可為部署提供網路型控制項。 Windows 10 傳遞最佳化可更新內建 UWP 應用程式時，也可安裝來自 Microsoft Store 的應用程式，以及使用 Express Updates 進行軟體更新。 早期的 Windows 10 版本中已提供此功能，不過最近才與 System Center Configuration Manager (最新分支) 整合。 從 Windows 10 版本 1803 起，新的設定選項讓您現在可以針對背景更新和前景作業 (例如從 Store 安裝應用程式) 獨立設定頻寬限制。 Windows 傳遞最佳化目前也在用戶端更新期間支援 Office 365 專業增強版，您可在所有支援的 Office 365 用戶端更新管道取得。 我們即將在 Office 365 用戶端初始安裝期間支援 Windows 傳遞最佳化，敬請期待。  
+**傳遞最佳化** 傳遞最佳化是另一種對等式快取技術，可為部署提供網路型控制項。 Windows 10 傳遞最佳化可更新內建 UWP 應用程式時，也可安裝來自 Microsoft Store 的應用程式，以及使用 Express Updates 進行軟體更新。 早期的 Windows 10 版本中已提供此功能，不過最近才與 Microsoft Endpoint Configuration Manager (最新分支) 整合。 從 Windows 10 版本 1803 起，新的設定選項讓您現在可以針對背景更新和前景作業 (例如從 Store 安裝應用程式) 獨立設定頻寬限制。 Windows 傳遞最佳化目前也在用戶端更新期間支援 Office 365 專業增強版，您可在所有支援的 Office 365 用戶端更新管道取得。 我們即將在 Office 365 用戶端初始安裝期間支援 Windows 傳遞最佳化，敬請期待。  
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 

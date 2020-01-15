@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 桌面部署程序簡介。
-ms.openlocfilehash: 89aeb74eddad4b973854e9900800e1fbcf262f9e
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a9ad328f6a2548a24a981ee3b49665c3091277c9
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030968"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112527"
 ---
 # <a name="getting-started---desktop-deployment"></a>快速入門 - 桌面部署
 
@@ -63,9 +63,9 @@ ms.locfileid: "38030968"
 
 **保護開機前環境安全：** 64 位元 UEFI 韌體會取代 BIOS。 這不僅可加快啟動時間，也是在 Windows 10 中啟動許多現代化安全性功能時的必要項目。 雖然 Windows 10 會在 BIOS 上執行，但強烈建議使用 UEFI。 如果您尚未從 BIOS 切換為 UEFI 並使用 64 位元，現在正是時候。 有一些工具可協助您在 Windows 10 升級期間或之後進行此切換。
 
-**雲端裝置管理：** Microsoft Intune 等服務可讓您像其他行動裝置一樣，在同一個地方管理您的 Windows 10 裝置。 Microsoft Intune 的特點是使用 System Center Configuration Manager 共同管理 Windows 10 裝置。 您可以使用 System Center Configuration Manager 來協助您轉換為 Windows 10，然後新增 Microsoft Intune。 搭配使用 System Center Configuration Manager 後，其會變成貴組織內的智慧邊緣，可連線至 Microsoft 智慧型雲端。 無論使用者裝置位於何處，是否在貴組織連線或在公用雲端連線，這都能讓您管理使用者的裝置。
+**雲端裝置管理：** Microsoft Intune 等服務可讓您像其他行動裝置一樣，在同一個地方管理您的 Windows 10 裝置。 Microsoft Intune 的特點是能夠使用 Microsoft Endpoint Configuration Manager 共同管理 Windows 10 裝置。 您可以使用 Configuration Manager 來協助您轉換為 Windows 10，然後新增 Microsoft Intune。 搭配使用 Microsoft Endpoint Configuration Manager 後，其會變成貴組織內的智慧優勢，可連線至 Microsoft 智慧型雲端。 無論使用者裝置位於何處，是否在貴組織連線或在公用雲端連線，這都能讓您管理使用者的裝置。
 
-[Windows 10 裝置的共同管理](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview) (英文)
+[Windows 10 裝置的共同管理](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview) (英文)
 
 **雲端部署服務：** 當您取得新電腦時，我們已引進新的雲端服務，可協助您部署稱為 Windows Autopilot 部署服務的 Microsoft 365 裝置。 Autopilot 會整合您的硬體提供者，且新電腦會在 Autopilot 中自動註冊，讓新電腦可直接出貨給終端使用者。 當電腦第一次啟動時，會快速設定為貴組織所需的設定，並針對使用者的特定需求進行自訂。
 
@@ -73,7 +73,7 @@ ms.locfileid: "38030968"
 
 **隨選即用部署：** 佈建 Office 傳統型應用程式時，Office 365 專業增強版是慣用的選項。 這可讓您存取 Office 中正在開發的最新創新功能，如此您就不需要等待幾年的時間即可使用新功能。 您也可以使用稱為「隨選即用」的新安裝。
 
-「隨選即用」與過去的 MSI 套件截然不同。 「隨選即用」更快也更輕便，並且支援在背景中進行更新，讓使用者保持啟動且可繼續執行的狀態。 但這仍然是 Office 的本機複本，您可以繼續使用現有的部署工具 (例如 System Center Configuration Manager) 來佈建及設定應用程式。
+「隨選即用」與過去的 MSI 套件截然不同。 「隨選即用」更快也更輕便，並且支援在背景中進行更新，讓使用者保持啟動且可繼續執行的狀態。 但這仍然是 Office 的本機複本，您可以繼續使用現有的部署工具 (例如 Microsoft Endpoint Configuration Manager) 來佈建及設定應用程式。
 
 [Office 365 專業增強版部署指南](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 
@@ -83,7 +83,7 @@ ms.locfileid: "38030968"
 
 在開始之前，您可能需要建立高階計劃，並找好贊助者。 我們的部署程序轉輪會概述重要的步驟，以協助您找出要在下列部署區域中管理的核心小組成員和資源。
 
-**[步驟 1：裝置和應用程式整備](https://aka.ms/mdd1)** 為了成功部署，您必須先知道您所擁有的項目。 這表示要取得您裝置和應用程式的詳細目錄，並驗證相容性。 若要協助進行這項工作，您可以在雲端服務「電腦分析」中找到可用工具。 「電腦分析」可讓您深入發掘收集自數億部電腦的相容性情報與診斷資料，以評估裝置上執行的應用程式和驅動程式，讓您可建立電腦空間的完備性。 您甚至可以從「電腦分析」匯出一份「準備好進行部署的電腦」清單至 System Center Configuration Manager (如果您使用此功能)，讓您在準備好時建立資料導向的目標電腦集合。
+**[步驟 1：裝置和應用程式整備](https://aka.ms/mdd1)** 為了成功部署，您必須先知道您所擁有的項目。 這表示要取得您裝置和應用程式的詳細目錄，並驗證相容性。 若要協助進行這項工作，您可以在雲端服務「電腦分析」中找到可用工具。 「電腦分析」可讓您深入發掘收集自數億部電腦的相容性情報與診斷資料，以評估裝置上執行的應用程式和驅動程式，讓您可建立電腦空間的完備性。 您甚至可以從「電腦分析」匯出一份「準備好進行部署的電腦」清單至 Configuration Manager (如果您使用此功能)，讓您在準備好時建立資料導向的目標電腦集合。
 
 [開始使用升級整備](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-readiness-get-started) (英文)
 
@@ -97,7 +97,7 @@ ms.locfileid: "38030968"
 
 **[步驟 4：使用者檔案和設定移轉](https://aka.ms/mdd4)** 這在任何電腦取代或重新整理循環中都是重要的步驟：您必須確保使用者的檔案、資料和設定移動成功，且在移轉過程中會加以保留。 此步驟涵蓋手動或自動移轉的可用選項，包含已知和新的選項。
 
-如同先前的更新，使用者狀態移轉工具會繼續成為自動化此程序時很有價值的工具，且會保持為使用 System Center Configuration Manager 或 Microsoft Deployment Toolkit 協調移轉時不可或缺的一部分。 但是在移轉過程中，移動這些資料可能是電腦取代項目的時間瓶頸，因為傳送期間有時候每部電腦會涉及兩次數百 GB 的物理情況 – 先從現有的電腦，然後再返回新的電腦。 OneDrive 所啟用的新選項是「已知資料夾移動」，會在部署之前在雲端大量同步處理使用者文件、圖片及桌面檔案。
+如同先前的更新，使用者狀態移轉工具會繼續成為自動化此程序時很有價值的工具，且會保持為使用 Microsoft Endpoint Configuration Manager 或 Microsoft Deployment Toolkit 協調移轉時不可或缺的一部分。 但是在移轉過程中，移動這些資料可能是電腦取代項目的時間瓶頸，因為傳送期間有時候每部電腦會涉及兩次數百 GB 的物理情況 – 先從現有的電腦，然後再返回新的電腦。 OneDrive 所啟用的新選項是「已知資料夾移動」，會在部署之前在雲端大量同步處理使用者文件、圖片及桌面檔案。
 
 [將 Windows 已知資料夾重新導向並移動至 OneDrive](https://docs.microsoft.com/onedrive/redirect-known-folders) (英文)
 
@@ -107,7 +107,7 @@ ms.locfileid: "38030968"
 
 **[步驟 6：作業系統部署與功能更新](https://aka.ms/mdd6)** (英文) 在一切就緒後，下一步就是部署作業系統映像。進行大量的重擔可以使用 System Center Configuration Manage 順序和基礎結構來完成。建議的方法是以階段部署，首先設定目標，並使用一組代表硬體和應用程式部署至貴組織中的「早期採納者群組」。然後，您可以使用這些裝置和使用者的資料逐漸將目標設定為更多部電腦。
 
-[在 System Center Configuration Manager 中部署作業系統的簡介](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment) (英文)
+[在 Configuration Manager 中部署作業系統的簡介](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment) (部分機器翻譯)
 
 **[步驟 7：Windows 和 Office 即服務](https://aka.ms/mdd7)** 這代表您維護使用者桌面大小方式的主要轉變。 您可以利用 Windows 10 及 Office 365 專業增強版的這項移動，將管理 Windows 和 Office 改變為一項服務。 取代每隔幾年的大型技術轉變，您會持續將全新的功能、體驗和保護帶給您的使用者。 半年度功能更新或在每年秋季及春季提供全新的功能，而每月累積的品質更新將會包含安全性、可靠性和錯誤 (bug) 修正。 雖然您可以選擇部署 Office 2019 用戶端，但強烈建議您移至 Office 365 專業增強版。 這會遵循 Windows 的類似服務方案，也可讓使用者定期獲得 Office 應用程式的更新。
 

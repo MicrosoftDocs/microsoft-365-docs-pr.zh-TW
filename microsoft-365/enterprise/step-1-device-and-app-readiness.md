@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在環境中評估裝置和應用程式整備。
-ms.openlocfilehash: b24bd278804e81c53a28bf99971a087fe5b7c3c0
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: dad6b4092cbcedbc4674733af1459d28f9b1d50e
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031628"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112717"
 ---
 # <a name="step-1-device-and-app-readiness"></a>步驟 1：裝置和應用程式整備
 
@@ -45,7 +45,7 @@ ms.locfileid: "38031628"
 
 ## <a name="windows-10-compatibility-scan"></a>Windows 10 相容性掃描
 
-部署 Windows 10 之前，Microsoft 建議您檢查執行 Windows 7 或 8/8.1 的現有裝置整備度。 Windows 10 安裝媒體支援可供 setup.exe 執行升級的命令列參數，但只會檢查相容性，而不會實際執行升級。 ScanOnly 可當作指令碼批次檔案執行或可整合至 System Center Configuration Manager 工作序列 (包括直接從網路執行 ScanOnly 的功能)，讓 Windows 10 安裝媒體不會向下串流至本機裝置。 ScanOnly 完成時，系統會經由 Setup.EXE 所產生記錄檔中的傳回碼來傳回結果。   
+部署 Windows 10 之前，Microsoft 建議您檢查執行 Windows 7 或 8/8.1 的現有裝置整備度。 Windows 10 安裝媒體支援可供 setup.exe 執行升級的命令列參數，但只會檢查相容性，而不會實際執行升級。 ScanOnly 可當作指令碼批次檔案執行或可整合至 Microsoft Endpoint Configuration Manager 工作序列 (包括直接從網路執行 ScanOnly 的功能)，讓 Windows 10 安裝媒體不會向下串流至本機裝置。 ScanOnly 完成時，系統會經由 Setup.EXE 所產生記錄檔中的傳回碼來傳回結果。   
 
 以無訊息方式完成相容性掃描的範例 ScanOnly 命令列，看起來如下所示：
 
@@ -57,7 +57,7 @@ ms.locfileid: "38031628"
 
 電腦分析是我們建議使用的工具，其提供比傳統桌面管理系統還要多的優點。 這項工具無代理程式，可引導您使用透過升級數億台消費者電腦所蒐集的應用程式和驅動程式相容性資訊。 此資訊提供給您詳細的評估、找出可能封鎖升級的相容性問題，並輔以 Microsoft 已知建議修正程式的連結。
 
-若要設定電腦分析，您必須先設定 Azure 訂閱，並為其包含 Azure Log Analytics 工作區。 執行電腦分析服務後，您可以接著透過群組原則設定，註冊任何連上網際網路的 Windows 7 SP1 或更新裝置，就是這麼簡單。 不需要部署代理程式，電腦分析的視覺化工作流程就會引導您從試驗到生產部署。 如有需要，您可以將資料從電腦分析匯出至 System Center Configuration Manager (最新分支) 之類的軟體部署工具、直接匯出至目標電腦，並且在資料準備好進行部署時建置集合。
+若要設定電腦分析，您必須先設定 Azure 訂閱，並為其包含 Azure Log Analytics 工作區。 執行電腦分析服務後，您可以接著透過群組原則設定，註冊任何連上網際網路的 Windows 7 SP1 或更新裝置，就是這麼簡單。 不需要部署代理程式，電腦分析的視覺化工作流程就會引導您從試驗到生產部署。 如有需要，您可以將資料從電腦分析匯出至 Microsoft Endpoint Configuration Manager (最新分支) 之類的軟體部署工具、直接匯出至目標電腦，並且在資料準備好進行部署時建置集合。
 
 如果您目前尚未針對環境設定電腦分析，或是想要註冊試用，請移至「電腦分析」頁面 (https://www.aka.ms/desktopanalytics)) 並開始使用。
 
@@ -103,7 +103,7 @@ ms.locfileid: "38031628"
 
 使用雲端式分析解決方案進行裝置和應用程式整備時，Configuration Manager 軟體清查是替代方法。 您可以使用安裝計數並深入了解特定電腦，以協助設定相容性測試和驗證的優先順序，並透過套件將應用程式套件設定為與 Windows 10 相容。 雖然此選項並未提供比較已知相容性資訊與 Microsoft 分析服務的功能，但可成為有效的解決方法，其以一小組已排定優先順序的應用程式為目標進行手動測試。 
 
-如需詳細資訊，請參閱 [System Center Configuration Manager 中的軟體清查簡介](https://docs.microsoft.com/sccm/core/clients/manage/inventory/introduction-to-software-inventory)，以及 [System Center Configuration Manager 中的套件和程式](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs)中應用程式套件的設定平台需求。
+如需詳細資訊，請參閱 [Configuration Manager 中的軟體清查簡介](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) (英文)，以及 [Configuration Manager 中的套件和程式](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs) (英文) 中應用程式套件的設定平台需求。
 
 
 ## <a name="desktop-app-assure"></a>電腦 App 保證

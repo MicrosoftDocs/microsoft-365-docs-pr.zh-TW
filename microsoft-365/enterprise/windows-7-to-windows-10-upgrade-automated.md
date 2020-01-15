@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 適用於大型組織的 Windows 7 至 Windows 10 自動升級
-ms.openlocfilehash: 6cf7b25c584b94b077b95b35be58f6cd5ef75ac5
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: 7bca0a185bccbec1ee857b17817debfd7f06feb0
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078082"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112697"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>適用於大型組織的 Windows 7 至 Windows 10 自動就地升級
 
@@ -40,7 +40,7 @@ ms.locfileid: "38078082"
 
 依預設，升級程序會備份您先前的 Windows 安裝作為升級的一部分，因此發生升級失敗，或是如果裝置或應用程式在升級後無法正常運作時，電腦可以回復至 Windows 7。 已升級的電腦依預設有 10 天的期限，因此您可以在需要時手動啟動 Windows 7 的回復。
 
-使用作業系統部署工具，如 [System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) 或 [Microsoft 部署工具組](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit)，可以自動化就地升級。 本文內容強調自動化方法和最佳化，以及可取得其他協助的相關資源連結。
+使用作業系統部署工具，如 [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) 或 [Microsoft 部署工具組](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit)，可以自動化就地升級。 本文內容強調自動化方法和最佳化，以及可取得其他協助的相關資源連結。
 
 ## <a name="upgrading-a-small-number-of-computers"></a>升級少量電腦
 
@@ -48,7 +48,7 @@ ms.locfileid: "38078082"
 
 ## <a name="how-to-upgrade-many-computers"></a>如何升級大量電腦
 
-如果您管理的電腦有數十或數千部，您的最佳選擇就是透過 System Center Configuration Manager 或 Microsoft 部署工具組，執行工作順序自動化就地升級。 雖然在大多數的情況下這個程序非常可靠，但是根據您升級的電腦數量，仍然有必要就地測試和控制以確保大規模成功。
+如果您管理的電腦有數十或數千部，您的最佳選擇就是透過 Microsoft Endpoint Configuration Manager 或 Microsoft 部署工具組，執行工作順序自動化就地升級。 雖然在大多數的情況下這個程序非常可靠，但是根據您升級的電腦數量，仍然有必要就地測試和控制以確保大規模成功。
 
 這表示您可以略過與 Azure Active Directory 相關聯的目錄整備和工作、Office 和企業營運應用程式的傳遞和封裝，以及使用者檔案移轉，因為這些層面會保留作為升級的一部分，而且安全性是至少應轉移的部分。 這些方面可以隨時間進行增強。
 
@@ -78,13 +78,13 @@ ms.locfileid: "38078082"
 
   - 低階程式碼解決方案，例如反惡意程式碼、VPN 或虛擬化
 
-[升級工作順序](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)範本已內建於 System Center Configuration Manager 最新分支，並已提供數種版本。 在最新版本中，System Center Configuration Manager 有顯著的技術增強，能讓程序更有效率地判斷裝置和 Office 的相容性整備、降低網路流量並設定新的選項，例如 OneDrive 備份。 請觀賞這段 [Microsoft Mechanics 節目](https://youtu.be/CYRnAmCD7ls)，深入了解 System Center Configuration Manager 作業系統部署最近的更新。
+[升級工作順序](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)範本已內建於 Microsoft Endpoint Configuration Manager (最新分支)，並已提供數種版本。 在最新版本中，Microsoft Endpoint Configuration Manager 有顯著的技術增強，能讓程序更有效率地判斷裝置和 Office 的相容性整備、降低網路流量並設定新的選項，例如 OneDrive 備份。 請觀賞這段 [Microsoft Mechanics 節目](https://youtu.be/CYRnAmCD7ls)，深入了解 Configuration Manager 作業系統部署最近的更新。
 
-如果不使用 System Center Configuration Manager，您可以使用 Microsoft 部署工具組建立並執行升級部署工作順序。
+如果不使用 Microsoft Endpoint Configuration Manager，您可以使用 Microsoft 部署工具組建立並執行升級部署工作順序。
 
 ## <a name="pre-cache-task-sequence-upgrades"></a>預先快取工作順序升級
 
-Configuration Manager 部署工作順序的[預先快取選項](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)可讓用戶端在工作順序升級作業系統之前，先下載相關的作業系統升級套件內容。 在之前，啟動工作順序會啟動套件內容的下載。 預先快取內容也可以讓您選擇，使用戶端一接收到部署時，只能下載適用的作業系統升級套件和所有其他的參考內容。
+Configuration Manager 部署工作順序的[預先快取選項](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)可讓用戶端在工作順序升級作業系統之前，先下載相關的作業系統升級套件內容。 在之前，啟動工作順序會啟動套件內容的下載。 預先快取內容也可以讓您選擇，使用戶端一接收到部署時，只能下載適用的作業系統升級套件和所有其他的參考內容。
 
 預先快取工作順序與相容性掃描結合
 
