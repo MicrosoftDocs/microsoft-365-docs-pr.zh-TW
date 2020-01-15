@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解使用者如何使用桌面的 Office 應用程式、 Office 應用程式的行動電話和 web Office 相關應用程式中敏感度標籤運作。 了解哪些應用程式支援敏感度標籤。
-ms.openlocfilehash: 32ad0abf61de5a64aac6914532f59bb5602e9d83
-ms.sourcegitcommit: d48b7852383262083a6a109530d84f0858cb3801
+ms.openlocfilehash: 3b8522dea71cd0ece5ec63f07a733e1eb5283a43
+ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40999587"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41123624"
 ---
 # <a name="sensitivity-labels-in-office-apps"></a>Office 應用程式中的敏感度標籤
 
@@ -52,7 +52,9 @@ ms.locfileid: "40999587"
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>在 [應用程式敏感度標籤功能的支援
 
-針對每個功能下, 表會列出該應用程式，才能支援使用內建的設定標籤的敏感度標籤所需的最小版本。 新的版本供在不同的更新通道的不同的時間。 如需詳細資訊，包括如何設定您的更新通道，以便您可以測試新的標示功能，您有興趣，請參閱[Office 365 專業增強版更新通道的概觀](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。
+針對每個功能下, 表會列出該應用程式，才能支援使用內建的設定標籤的敏感度標籤所需的最小版本。 或者，如果標籤功能是公開預覽中或其下的未來版本的檢閱。
+
+應用程式的新版本供在不同的更新通道的不同的時間。 如需詳細資訊，包括如何設定您的更新通道，以便您可以測試新的標示功能，您有興趣，請參閱[Office 365 專業增強版更新通道的概觀](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。 在資料表中不包含處於私人預覽的新功能，但您或許可以加入這些預覽提出任何[Microsoft 資訊保護私人預覽程式](https://aka.ms/mip-preview)貴組織。
 
 在您安裝 Azure 資訊保護整合標示用戶端，只有 Windows 電腦上執行時，可使用額外的功能。 這些詳細資訊，請參閱[比較標示的用戶端的 Windows 電腦](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。
 
