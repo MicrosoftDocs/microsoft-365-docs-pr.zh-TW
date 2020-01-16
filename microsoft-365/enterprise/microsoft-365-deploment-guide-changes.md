@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 查看 Microsoft 365 部署指南中的新內容及變更。
-ms.openlocfilehash: 9f5b586defa460648c1d3a7b5972124497d0f53f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 680b42c255053338d401e53b75ab7471a064c44d
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801558"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111969"
 ---
 # <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Microsoft 365 企業版部署內容的變更
 
@@ -65,9 +65,9 @@ ms.locfileid: "40801558"
 
   您也可以以 [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) 或 [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) 格式下載此海報。
 
-- [使用 Microsoft Endpoint Configuration Manager 的 Windows 10 部署海報](windows10-deploy-inplaceupgrade.md)
+- [使用 Configuration Manager 的 Windows 10 部署海報](windows10-deploy-inplaceupgrade.md)
 
-  [![使用 System Center Configuration Manager 的 Windows 10 部署海報](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
+  [![使用 Configuration Manager 的 Windows 10 部署海報](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
 
   您也可以以 [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) 或 [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx) 格式下載此海報。
 
