@@ -17,12 +17,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 781aca371315d1ffde4ca2718d8d371e865ccb29
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: b1832e2080c3178837f43cbfd45366fc4d48322d
+ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970851"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41173819"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>開啟 Microsoft 威脅防護
 
@@ -41,7 +41,7 @@ Microsoft 威脅防護整合了您的事件回應流程，方法是整合跨 Mic
 ## <a name="start-using-the-service"></a>開始使用服務
 開啟 Microsoft 威脅防護服務會彙總來自各種整合服務的資料。 系統將處理資料並集中儲存，以找出新的深入資訊，並使得集中式回應工作流程變得可能。
 
-在您開啟服務前，Microsoft 365 安全性中心 ([security.microsoft.com](https://security.microsoft.com)) 不會在功能表上顯示 [事件]**** 和 [重要訊息中心]**** 選項。
+您開啟服務之前，請在 Microsoft 365 安全性中心 ([security.microsoft.com](https://security.microsoft.com)) 不會顯示**事件**和功能表上的**重要訊息中心**選項。
 
 ![不含 Microsoft 威脅防護功能的 Microsoft 365 安全性中心功能表的影像](../images/mtp-off.png)
 *已關閉 Microsoft 威脅防護的 Microsoft 365 安全性中心*
@@ -71,7 +71,7 @@ Microsoft 威脅防護整合了您的事件回應流程，方法是整合跨 Mic
 
 ## <a name="get-assistance"></a>取得協助
 
-Microsoft 人員可協助您佈建或取消佈建您租用戶上的服務與相關資源。 如需協助，請[連絡頂級支援](https://go.microsoft.com/fwlink/?LinkID=733758)。
+Microsoft 人員可協助您佈建或取消佈建您租用戶上的服務與相關資源。 如需協助，請選取 [**需要協助嗎？** Microsoft 365 安全性中心。 描述您的考量時, 提及 」 Microsoft 威脅防護 」。
 
 ## <a name="related-topics"></a>相關主題
 
