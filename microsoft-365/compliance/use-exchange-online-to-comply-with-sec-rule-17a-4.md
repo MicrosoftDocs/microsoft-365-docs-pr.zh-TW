@@ -1,7 +1,7 @@
 ---
 title: 使用 Exchange Online 和安全性與合規性中心以符合 SEC Rule 17a-4
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates 已驗證當 Exchange Online 和安全性與合規性中心依建議設定時，則會符合 CFTC Rule 1.31(c)-(d)、FINRA Rule 4511 和 SEC Rule 17a-4 的相關儲存要求。您可以下載評估。
-ms.openlocfilehash: 60b8d27ed75afbfd6ffc5d8e254738ea62e0d21b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 33db33589df60b52c4598c52d593b9a6fe4c9c10
+ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077432"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41122422"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>使用 Exchange Online 和安全性與合規性中心以符合 SEC Rule 17a-4
 
@@ -65,7 +65,7 @@ Cohasset 已驗證當 Exchange Online 和安全性與合規性中心依建議設
 
 ## <a name="known-limitations"></a>已知限制
 
-我們已發現 Exchange Online 中有一些限制。我們正在積極解決這些限制，預計將於 2019 年 7 月推出下列案例的支援：
+目前，Exchange Online 存在一些限制：
 
 - 無法在 Office 365 群組信箱中使用項目層級稽核。
 - 無法在 Teams 聊天和頻道訊息中使用通訊對話。
