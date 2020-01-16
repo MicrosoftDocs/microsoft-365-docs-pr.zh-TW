@@ -1,7 +1,7 @@
 ---
 title: 進階搜捕結構描述中的 AlertEvents 表格
 description: 了解進階搜捕結構描述之 AlertEvents 表格中的警示產生事件
-keywords: 進階搜捕、威脅搜捕、網路威脅搜捕、搜尋、查詢、遙測、結構描述參考、kusto、表格、欄、資料類型、描述、alertevents、警示、嚴重性、類別
+keywords: 狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 描述、 alertevents、 進階警示，在高的嚴重性等級類別
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ee14dcc1c2ae0a2bc6fa3c094d757441515f00de
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2d8c484f11e1384e1b98f05b907b043c33231f3f
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807012"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210078"
 ---
 # <a name="alertevents"></a>AlertEvents
 

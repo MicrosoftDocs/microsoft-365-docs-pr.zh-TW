@@ -1,7 +1,7 @@
 ---
 title: 進階搜捕結構描述中的 DeviceTvmSoftwareInventoryVulnerabilities 表格
 description: 了解裝置中的軟體清單及其在進階搜捕結構描述之 DeviceTvmSoftwareInventoryVulnerabilities 表格中的弱點。
-keywords: 進階搜捕、威脅搜捕、網路威脅搜捕、搜尋、查詢、遙測、結構描述參考、Kusto、表格、欄、資料類型、描述、威脅與弱點管理、問題管理、TVM、裝置管理、軟體、庫存、弱點、CVE 識別碼、OS DeviceTvmSoftwareInventoryVulnerabilities
+keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 描述、 威脅 & 弱點管理、 TVM，裝置管理，軟體清查，弱點，CVE-2018 識別碼、 OS DeviceTvmSoftwareInventoryVulnerabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6aca41e46af8ba94f87e7ee91059c3d11a4fbe9e
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d3b85bcbc2cb65cc434c7af0ba078bd835d8203f
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808628"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210495"
 ---
 # <a name="devicetvmsoftwareinventoryvulnerabilities"></a>DeviceTvmSoftwareInventoryVulnerabilities
 

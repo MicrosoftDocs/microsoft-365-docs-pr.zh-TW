@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 656b444da9b85028aa1d280a76ca038e2d3a3ac6
-ms.sourcegitcommit: a2e9ab69f99f2069372ccfffd9ef2ffbd8568826
+ms.openlocfilehash: abd67d08d45a5e66b301e04a6afbd498fcd0344a
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41012186"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210148"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -50,7 +50,7 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 
 ### <a name="products-included-in-secure-score"></a>安全分數中包含的產品
 
-目前有 Office 365 （包括 SharePoint Online、 Exchange Online、 OneDrive for Business、 Microsoft 資訊保護和更多），建議 Azure AD，Intune 和 Cloud App Security。 建議的其他安全性產品，例如 Azure ATP 和 Microsoft Defender ATP 即將推出。 建議將涵蓋每個產品相關聯的所有受攻擊面，但它們是不錯的比較基準。 您也可以將標示改進動作為所涵蓋的協力廠商。
+目前有 Office 365 （包括 SharePoint Online、 Exchange Online、 OneDrive for Business、 Microsoft 資訊保護和更多），建議 Azure AD 和 Cloud App Security。 建議的其他安全性產品，例如 Azure ATP 和 Microsoft Defender ATP 即將推出。 建議將涵蓋每個產品相關聯的所有受攻擊面，但它們是不錯的比較基準。 您也可以將標示改進動作為所涵蓋的協力廠商。
 
 ## <a name="required-permissions"></a>必要的權限
 
@@ -136,16 +136,53 @@ Microsoft 安全分數是數字摘要根據系統設定、 使用者行為及其
 
 若要讓 Microsoft 安全分數較佳的安全性狀態代表並改善可用性，我們會在不久的將來進行一些變更。 您的成績和最大可能分數會變更。 不過，這並不表示您的安全性狀態變更。
 
+### <a name="removing-improvement-actions-from-intune"></a>從 Intune 移除改進動作
+
+提供從 Intune Microsoft 安全分數改進動作的評估之後, 我們決定它們並不提供在組織中的裝置安全性狀態的有用表示法。 而不將重點放在原則，我們正在努力帶來安全性控制的直接評估之裝置的組態狀態。
+
+會移除下列 Intune 改進動作：
+
+- 啟用 Microsoft Intune 行動裝置管理
+- Android 版建立 Microsoft Intune 合規性原則
+- 建立工作 Android 版的 Microsoft Intune 合規性原則
+- Android 版建立 Microsoft Intune 應用程式防護原則
+- 建立 iOS 版 Microsoft Intune 應用程式保護原則
+- 標記裝置與指定為不符合任何 Microsoft Intune 合規性原則
+- 建立 iOS 版 Microsoft Intune 合規性原則
+- 建立 macOS Microsoft Intune 合規性原則
+- 建立 Windows 的 Microsoft Intune 合規性原則
+- Android 版建立 Microsoft Intune 設定設定檔
+- 建立工作 Android 版的 Microsoft Intune 設定設定檔
+- 建立 macOS 的 Microsoft Intune 設定設定檔
+- 建立 iOS 版 Microsoft Intune 設定設定檔
+- 建立 Windows 的 Microsoft Intune 設定設定檔
+- 啟用 Microsoft Intune 中的增強型的 jailbreak 偵測
+- 需要修正的所有裝置、 防毒和防火牆啟用
+- 啟用 Windows Defender ATP 整合至 Microsoft Intune
+- 建立 Microsoft Intune Windows 資訊保護原則
+- 需要有進階安全性設定的所有裝置
+- 每週檢閱封鎖的裝置報告
+
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>移除不符合預期可靠的度量單位的改進動作
+
+若要確保 Microsoft 安全分數才有意義，以及改進的每一個動作是可以測量且可靠，我們會移除下列改進巨集指令。
+
+- 開啟稽核資料記錄
+- 探索風險並不相容的陰影 IT 應用程式
+- 檢閱權限 & 封鎖風險 OAuth 應用程式連線至您的環境
+
 ### <a name="mfa-improvement-action-updates"></a>MFA 改進動作更新
 
 若要反映適用於企業以確保 upmost 安全性時，套用原則可搭配其業務需求，Microsoft 安全分數會移除三個改進動作圍繞多重要素驗證，並新增兩個。
 
 會移除三個：
+
 - 登錄所有使用者的多重要素驗證
 - 需要 MFA 的所有使用者
 - 需要 MFA 的 Azure AD 特殊權限角色
 
 新的改進動作：
+
 - 確定所有的使用者可以完成的安全存取多重要素驗證
 - 需要 MFA 的系統管理角色
 

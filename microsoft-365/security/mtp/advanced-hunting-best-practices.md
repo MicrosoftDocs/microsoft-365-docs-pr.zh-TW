@@ -1,7 +1,7 @@
 ---
 title: Microsoft 威脅防護中進階搜捕的最佳做法
 description: 了解如何在使用進階搜捕時建構快速、有效率且無錯誤的威脅搜捕查詢
-keywords: 進階搜捕,威脅搜捕,網路威脅搜捕,搜尋,查詢,遙測,自訂偵測,結構描述,kusto,避免逾時,命令列,程序識別碼
+keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 自訂偵測、 結構描述、 kusto，避免逾時，命令列，處理程序識別碼
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 97c5f5541e1c3293346a53d87b950121e85e6eae
-ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
+ms.openlocfilehash: adb447916346ad83c95e64ef889d2986a106e776
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40966863"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41209938"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>進階搜捕查詢最佳做法
 

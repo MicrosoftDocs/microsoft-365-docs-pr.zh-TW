@@ -1,9 +1,9 @@
 ---
-title: 檢視安全性與合規性中心內的電子郵件安全性報告
+title: 檢視安全性中的電子郵件安全性報告&amp;合規性中心 Compromised 使用者，加密、 威脅保護狀態，惡意程式碼偵測、 上方惡意程式碼、 垃圾郵件偵測傳送和接收電子郵件、 使用者所報告的郵件、 讀取的報告、 偵測、 安全性資料、 安全性資訊
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/29/2019
+ms.date: 01/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 了解如何尋找並使用您的組織電子郵件安全性報告。 安全性中的電子郵件安全性報告可用&amp;合規性中心。
-ms.openlocfilehash: 70eceb8d7afa227027b71d475aa22b2151f2dea6
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: c44944c8f392b2df8cfe4b9e1741ba4b7ea13382
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112339"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41209948"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
@@ -29,7 +29,8 @@ ms.locfileid: "41112339"
 ![儀表板您瞭解進階威脅防護的運作方式](../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 您的電子郵件安全性報告包括下列：
-- [加密報表](#encryption-report)（新） ！
+- [危害使用者報告 (**新增 ！**)](#compromised-users-report-new)
+- [加密報表](#encryption-report)
 - [威脅防護狀態報告](#threat-protection-status-report) 
 - [惡意程式碼偵測報告](#malware-detections-report) 
 - [上方的惡意程式碼報告](#top-malware-report)
@@ -38,10 +39,17 @@ ms.locfileid: "41112339"
 - [垃圾郵件偵測報告](#spam-detections-report)
 - [傳送和接收電子郵件報告](#sent-and-received-email-report)
 - [使用者回報郵件報告](#user-reported-messages-report)
-    
+
+
+## <a name="compromised-users-report-new"></a>危害使用者報告 (**新增 ！**) 
+
+這份報告，可與 Exchange Online Protection 中，任何人都顯示標示為 Suspicious 或受限的使用者，當帳戶輸入狀態指出的使用者帳戶的其中一個特別有用的資料可能有問題，或偶數的使用者帳戶的數目洩漏。 經常使用與危害使用者報告可以找出突發性，以及偶數的趨勢，標示可疑或有限狀態，讓的證據可能會有此問題： 安全性與您的租用戶同等重要的帳戶中。
+
+![遭入侵的使用者報告為它會出現在 Office 365。](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+
 ## <a name="encryption-report"></a>加密報表
 
-(**新增 ！**)**加密報表**顯示已加密，透過您的組織原則，或透過使用者控制項的電子郵件的相關資訊。 貴組織的安全性小組可以找出模式並主動或套用調整機密電子郵件的原則，以使用此報告中資訊。
+**加密報表**顯示已加密，透過您的組織原則，或透過使用者控制項的電子郵件的相關資訊。 貴組織的安全性小組可以找出模式並主動或套用調整機密電子郵件的原則，以使用此報告中資訊。
 
 若要檢視此報告中，安全性 & 合規性中心，移至**報表** \> **儀表板** \> **加密報表**。
 

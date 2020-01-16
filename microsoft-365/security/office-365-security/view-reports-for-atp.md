@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: 尋找並使用 Office 365 進階威脅防護中的安全性報告&amp;合規性中心。
-ms.openlocfilehash: 1ddb5a549551e674fb257e4f78c81c5df1eb1a10
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 74ed1387af7792d8cb41d6f890deb89be07fc9fc
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112727"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210505"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>檢視 Office 365 進階威脅防護的報告
 
@@ -96,12 +96,6 @@ ATP 報告包含下列：
 
 > [!NOTE]
 > 這是*保護趨勢報告*、 意義的資料代表較大的資料集的趨勢。 報告中不提供以下即時。 按一下 [URL 的即時的資料，請繼續使用 URL 追蹤。
-
-## <a name="compromised-users-report"></a>遭入侵的使用者報告
-
-這份報告，可與 Exchange Online Protection 中，任何人都顯示標示為 Suspicious 或受限的使用者，當帳戶輸入狀態指出的使用者帳戶的其中一個特別有用的資料可能有問題，或偶數的使用者帳戶的數目洩漏。 經常使用與危害使用者報告可以找出突發性，以及偶數的趨勢，標示可疑或有限狀態，讓的證據可能會有此問題： 安全性與您的租用戶同等重要的帳戶中。
-
-![遭入侵的使用者報告為它會出現在 Office 365。](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
 ## <a name="atp-file-types-report"></a>ATP 檔案類型報告
 

@@ -1,7 +1,7 @@
 ---
 title: 搜尋 Microsoft 365 中的威脅
 description: 使用 Microsoft 365 安全性中心威脅狩獵功能主動尋找 [缺口及其他威脅
-keywords: 安全性、 惡意程式碼、 Microsoft 365、 M365、 Microsoft 威脅防護、 MTP、 資訊安全中心、 搜尋、 威脅狩獵、 搜尋、 Microsoft Defender ATP，Office 365 ATP，Azure ATP，進階狩獵網路威脅
+keywords: Microsoft 365、 M365、 Microsoft 威脅防護、 MTP、 資訊安全中心、 搜尋、 狩獵，搜尋，Microsoft Defender ATP、 Office 365 ATP、 Azure ATP 的網路威脅進階狩獵的威脅
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e0f4c97a1c2963fc714420457208b40af688d86b
-ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
+ms.openlocfilehash: c2bb0b088a40511eea36348d39790fd5e88fa40b
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41173499"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210158"
 ---
 # <a name="hunt-for-threats-in-microsoft-365"></a>搜尋 Microsoft 365 中的威脅
 

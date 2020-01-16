@@ -1,7 +1,7 @@
 ---
 title: DeviceLogonEvents 資料表中的進階的狩獵結構描述
 description: 了解驗證] 或 [進階的狩獵結構描述 DeviceLogonEvents 表格中的登入事件
-keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 描述、 logonevents，DeviceLogonEvents，驗證、 登入、 登入
+keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 描述、 logonevents，DeviceLogonEvents，驗證登入，登入
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5e694bb58952acb0e6cd0b436c72ed3cf170a5c5
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 5b2e1fdb49a5ae3730a7a7e67090e09430a8c999
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809250"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210623"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 

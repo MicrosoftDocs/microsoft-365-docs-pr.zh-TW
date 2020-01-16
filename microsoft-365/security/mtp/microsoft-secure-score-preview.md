@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0f54ee771f4358c5c99c3338366eb277013c15e3
-ms.sourcegitcommit: a2e9ab69f99f2069372ccfffd9ef2ffbd8568826
+ms.openlocfilehash: 284efd5224f3e48ab718c0de0c877f68fc0bdecc
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41012176"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210475"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft 安全分數 （預覽）
 
@@ -53,7 +53,7 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 
 ### <a name="products-included-in-secure-score"></a>安全分數中包含的產品
 
-目前有 Office 365 （包括 SharePoint Online、 Exchange Online、 OneDrive for Business、 Microsoft 資訊保護和更多），建議 Azure AD，Intune、 Microsoft Defender ATP 和 Cloud App Security。 建議的其他安全性產品即將推出。 建議將涵蓋每個產品相關聯的所有受攻擊面，但它們是不錯的比較基準。 您也可以將標示改進動作為所涵蓋的協力廠商。
+目前有 Office 365 （包括 SharePoint Online、 Exchange Online、 OneDrive for Business、 Microsoft 資訊保護和更多），建議 Azure AD，Microsoft Defender ATP 與 Cloud App Security。 建議的其他安全性產品即將推出。 建議將涵蓋每個產品相關聯的所有受攻擊面，但它們是不錯的比較基準。 您也可以將標示改進動作為所涵蓋的協力廠商。
 
 ## <a name="required-permissions"></a>必要的權限
 

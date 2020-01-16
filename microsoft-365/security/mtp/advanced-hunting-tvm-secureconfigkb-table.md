@@ -1,7 +1,7 @@
 ---
 title: 進階搜捕結構描述中的 DeviceTvmSecureConfigurationAssessmentKB 表格
 description: 在進階搜捕結構描述之 DeviceTvmSecureConfigurationAssessmentKB 表格中，了解由威脅與弱點管理評估的各種安全性設定。
-keywords: 進階搜捕、威脅搜捕、網路威脅搜捕、搜尋、查詢、遙測、結構描述參考、Kusto、表格、欄、資料類型、描述、威脅與弱點管理、TVM、裝置管理、安全性設定、MITRE ATT&CK 架構、知識庫、KB、DeviceTvmSecureConfigurationAssessmentKB
+keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 描述、 威脅 & 弱點管理、 TVM，裝置管理、 安全性設定、 MITRE ATT&CK 架構，知識庫，KB、 DeviceTvmSecureConfigurationAssessmentKB
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a3ae0a95af4a51d492c577e6a2ac1f2b96bba635
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2bcf3ab438dc8894c186ac7ee477af1821e783cc
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806932"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210178"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 

@@ -1,7 +1,7 @@
 ---
 title: DeviceFileEvents 資料表中的進階的狩獵結構描述
 description: 了解進階的狩獵結構描述的 DeviceFileEvents 資料表中的檔案相關的事件
-keywords: 進階搜尋，搜尋，搜尋網路威脅、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 描述、 filecreationevents，威脅 DeviceFileEvents，檔案、 路徑、 雜湊、 sha1、 sha256、 md5
+keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 描述、 filecreationevents、 DeviceFileEvents、 檔案、 路徑雜湊、 sha1、 sha256、 md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ed0ccbaaf6b06f29eb241d8ddcc38361d1e802bb
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: b772f1adccfcab52709fbedd872cb48b1c15f4e2
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809266"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210485"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 

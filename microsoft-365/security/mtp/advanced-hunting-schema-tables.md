@@ -1,7 +1,7 @@
 ---
 title: Microsoft 威脅防護進階搜捕結構描述的資料表格
 description: 了解進階搜捕結構描述中的表格，以明白您可以執行威脅搜捕查詢的資料
-keywords: 進階搜捕、威脅搜捕、網路威脅搜捕、搜尋、查詢、遙測、結構描述參考、kusto、表格、資料
+keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢，請遙測、 結構描述參考、 kusto、 表格、 資料
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 631b328168003668ed06e37d76177c327794ed18
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: aa2fbeebed10bcb1f0c4078a161be99d16d3b97b
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808658"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210318"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解進階搜捕結構描述
 
@@ -46,6 +46,7 @@ ms.locfileid: "40808658"
 | **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | 登入和其他驗證事件 |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL 載入事件 |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | 多種事件種類，包括由安全性控制項觸發的事件，例如 Windows Defender 防毒軟體和惡意探索保護 |
+| **[DeviceFileCertificateInfoBeta](advanced-hunting-devicefilecertificateinfobeta-table.md)** | 取自憑證驗證事件的端點上的已簽署檔案的憑證資訊 |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Office 365 電子郵件事件，包括電子郵件傳送和封鎖事件 |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | 有關已附加到 Office 365 電子郵件的檔案相關資訊 |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Office 365 電子郵件上 URL 的相關資訊 |

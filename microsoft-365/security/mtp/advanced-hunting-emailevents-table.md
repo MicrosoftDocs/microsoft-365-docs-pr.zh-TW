@@ -1,7 +1,7 @@
 ---
 title: 進階搜捕結構描述中的 EmailEvents 表格
 description: 了解進階搜捕結構描述 EmailEvents 表格中與 Office 365 電子郵件相關聯的事件
-keywords: 進階搜捕、威脅搜捕、網路威脅搜捕、搜尋、查詢、遙測、結構描述參考、kusto、表格、欄、資料類型、描述、EmailEvents、網路郵件識別碼、寄件者、收件者、附件識別碼、附件名稱、惡意程式碼決策、網路釣魚決策、附件計數、連結計數、URL 計數
+keywords: 郵件 id、 寄件者、 收件者的進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 描述、 EmailEvents，網路附件識別碼、 附件名稱、 惡意程式碼 verdict、 網路釣魚 verdict、 附件計數、 連結計數、 url 計數
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3495414148edb5e3b6691e4545e0cf6587af7b4d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 43d30772fa756369971bde747825028b50e9540b
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808708"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210358"
 ---
 # <a name="emailevents"></a>EmailEvents
 

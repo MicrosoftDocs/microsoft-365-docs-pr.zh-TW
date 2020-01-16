@@ -1,7 +1,7 @@
 ---
 title: 了解 Microsoft 威脅防護中的進階搜捕查詢語言
 description: 建立您的第一個威脅搜捕查詢，並了解常用的運算子和進階搜捕查詢語言的其他概念
-keywords: 進階搜捕, 威脅搜捕, 網路威脅搜捕, 搜尋, 查詢, 語言, 了解, 第一個查詢, 遙測, 事件, 遙測, 自訂偵測, 結構描述, kusto, 運算子, 資料類型
+keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 語言，了解，第一個查詢、 遙測、 活動、 遙測、 自訂偵測、 結構描述、 kusto、 運算子、 資料類型
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b2b42c6a49a4422d73148b06e8379dcf1336e926
-ms.sourcegitcommit: d48b7852383262083a6a109530d84f0858cb3801
+ms.openlocfilehash: 36f2efb733e8403b30e0ecc406bb1ea2d6a6248e
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40999607"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210338"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解進階搜捕查詢語言
 

@@ -1,7 +1,7 @@
 ---
 title: 進階搜捕結構描述中的 EmailAttachmentInfo 表格
 description: 了解進階搜捕結構描述之 EmailAttachmentInfo 表格中的電子郵件附件資訊
-keywords: 進階搜捕、威脅搜捕、網路威脅搜捕、搜尋、查詢、遙測、結構描述參考、kusto、表格、欄、資料類型、描述、EmailAttachmentInfo、網路郵件識別碼、寄件者、收件者、附件識別碼、附件名稱、惡意程式碼決策
+keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型，描述] 中，EmailAttachmentInfo，網路郵件 id、 寄件者收件者、 附件識別碼、 附件名稱、 惡意程式碼 verdict
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9368185fff037b8c3c2f5b70a178f2485fda3736
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 3bd4c3ed69c53a4520e0e0739801ef4a74b77059
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808718"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210368"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 

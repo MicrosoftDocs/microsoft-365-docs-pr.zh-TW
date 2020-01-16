@@ -1,7 +1,7 @@
 ---
 title: DeviceRegistryEvents 資料表中的進階的狩獵結構描述
 description: 了解您可以從 DeviceRegistryEvents 資料表的進階的狩獵結構描述查詢的登錄事件
-keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 registryevents、 登錄 DeviceRegistryEvents，索引鍵，子機碼，值
+keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 registryevents、 登錄、 DeviceRegistryEvents，索引鍵，子機碼，值
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e096caea72f268599b171b5ac37414de29352d7a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f08ed781d66ad959149e643cc5773e1b1ed02166
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809258"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210388"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 

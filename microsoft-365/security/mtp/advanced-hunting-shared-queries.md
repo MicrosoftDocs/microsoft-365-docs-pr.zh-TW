@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 威脅防護進階搜捕中使用共用查詢
 description: 立即開始威脅搜捕，並使用預先定義的共用查詢。 將您的查詢與大眾或您的組織共用。
-keywords: 進階搜捕, 威脅搜捕, 網路威脅搜捕, 搜尋, 查詢, 遙測, 自訂偵測, 結構描述, kusto, github 儲存庫, 我的查詢, 共用查詢
+keywords: 狩獵、 進階威脅狩獵，搜尋，microsoft 威脅防護，microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 自訂偵測、 結構描述、 kusto、 github 儲存機制，我查詢的網路威脅共用查詢
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: fb8addc7bc9e8ab01cc72bbdf02c12559d263196
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 64c9b07dad0f109698222d3f3f079a4f3318273a
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808688"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210308"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>在進階搜捕中使用共用查詢
 

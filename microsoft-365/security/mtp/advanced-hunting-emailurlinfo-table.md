@@ -1,7 +1,7 @@
 ---
 title: 進階搜捕結構描述中的 EmailUrlInfo 表格
 description: 了解進階搜捕結構描述之 EmailUrlInfo 表格中的 URL 或連結資訊
-keywords: 進階搜捕, 威脅搜捕, 網路威脅搜捕, 搜尋, 查詢, 遙測, 結構描述參考, kusto, 表格, 欄, 資料類型, 描述, EmailUrlInfo, 網路訊息識別碼, URL, 連結
+keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、] 欄中，輸入資料，描述] 中，EmailUrlInfo，網路郵件識別碼、 url 連結
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da9712d1f3465c28d2ba880997a52434723a297d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 42b7d1734c5925ba493f647268852637072fc4a3
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808668"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210328"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 

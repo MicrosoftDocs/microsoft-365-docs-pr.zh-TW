@@ -1,7 +1,7 @@
 ---
 title: DeviceProcessEvents 資料表中的進階的狩獵結構描述
 description: 了解 DeviceProcessEventstable 進階的狩獵結構描述中的程序衍生或建立事件
-keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 processcreationevents，DeviceProcessEvents，處理程序識別碼、 命令列，DeviceProcessEvents
+keywords: 進階狩獵、 威脅狩獵、 搜尋、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、] 欄中，輸入資料的網路威脅、 processcreationevents，DeviceProcessEvents，處理程序識別碼、 命令線條 DeviceProcessEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4e7899d06d9107ed5fdbaf67d507ed69a034329b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e65231b28e6baeff71ce8bc448b2955d062a46e9
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809259"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210378"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 

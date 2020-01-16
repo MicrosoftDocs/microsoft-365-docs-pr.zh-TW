@@ -1,7 +1,7 @@
 ---
 title: DeviceNetworkEvents 資料表中的進階的狩獵結構描述
 description: 了解您可以從 DeviceNetworkEvents 資料表的進階的狩獵結構描述查詢的網路連線事件
-keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 devicenetworkevents，NetworkCommunicationEvents，網路連線、 遠端 ip、 本機 ip
+keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、] 欄中，資料型別 devicenetworkevents，NetworkCommunicationEvents，網路連線、 遠端 ip、 本機 ip
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 82475ad15090250aa4fca70a6810cb869128102d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 6656aae93d6a8baca0cb351a29f41350b63bbd25
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809263"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210425"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
