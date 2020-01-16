@@ -1,7 +1,7 @@
 ---
 title: 進階搜捕結構描述中的 DeviceTvmSecureConfigurationAssessment 資料表
 description: 了解在進階搜捕結構描述的 DeviceTvmSecureConfigurationAssessment 資料表中的威脅與弱點管理安全性評估事件。 這些事件會提供電腦資訊以及安全性設定的詳細資料、影響及合規性資訊。
-keywords: 進階搜捕, 威脅搜捕, 網路威脅搜捕, 搜尋, 查詢, 遙測, 結構描述參照, Kusto, 資料表, 資料行, 資料類型, 描述, 威脅與弱點管理, TVM, 裝置管理, 安全性設定, DeviceTvmSecureConfigurationAssessment
+keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 描述、 威脅 & 弱點管理、 TVM，裝置管理、 安全性設定，DeviceTvmSecureConfigurationAssessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,42 +15,42 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d03b278fbf029b08b476f20292315807a3f5e32a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 3d58ba24aa3ad2226cfae3ee96a8f0ed3a1c9566
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808618"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210298"
 ---
-# <a name="devicetvmsecureconfigurationassessment"></a><span data-ttu-id="3b58e-105">DeviceTvmSecureConfigurationAssessment</span><span class="sxs-lookup"><span data-stu-id="3b58e-105">DeviceTvmSecureConfigurationAssessment</span></span>
+# <a name="devicetvmsecureconfigurationassessment"></a><span data-ttu-id="17ae7-105">DeviceTvmSecureConfigurationAssessment</span><span class="sxs-lookup"><span data-stu-id="17ae7-105">DeviceTvmSecureConfigurationAssessment</span></span>
 
-<span data-ttu-id="3b58e-106">適用於：\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="3b58e-106">**Applies to:**</span></span>
-- <span data-ttu-id="3b58e-107">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="3b58e-107">Microsoft Threat Protection</span></span>
+<span data-ttu-id="17ae7-106">適用於：\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="17ae7-106">**Applies to:**</span></span>
+- <span data-ttu-id="17ae7-107">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="17ae7-107">Microsoft Threat Protection</span></span>
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-<span data-ttu-id="3b58e-108">`DeviceTvmSecureConfigurationAssessment` 資料表中的每一個資料列都包含來自[威脅和弱點管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的特定安全性設定評估事件。</span><span class="sxs-lookup"><span data-stu-id="3b58e-108">Each row in the `DeviceTvmSecureConfigurationAssessment` table contains an assessment event for a specific security configuration from [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt).</span></span> <span data-ttu-id="3b58e-109">使用這個參考資料來檢查最新的評估結果，並判斷裝置是否符合規定。</span><span class="sxs-lookup"><span data-stu-id="3b58e-109">Use this reference to check the latest assessment results and determine whether devices are compliant.</span></span>
+<span data-ttu-id="17ae7-108">`DeviceTvmSecureConfigurationAssessment` 資料表中的每一個資料列都包含來自[威脅和弱點管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的特定安全性設定評估事件。</span><span class="sxs-lookup"><span data-stu-id="17ae7-108">Each row in the `DeviceTvmSecureConfigurationAssessment` table contains an assessment event for a specific security configuration from [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt).</span></span> <span data-ttu-id="17ae7-109">使用這個參考資料來檢查最新的評估結果，並判斷裝置是否符合規定。</span><span class="sxs-lookup"><span data-stu-id="17ae7-109">Use this reference to check the latest assessment results and determine whether devices are compliant.</span></span>
 
-<span data-ttu-id="3b58e-110">如需進階搜捕結構描述中其他資料表的資訊，請參閱 [進階搜捕參考](advanced-hunting-schema-tables.md)。</span><span class="sxs-lookup"><span data-stu-id="3b58e-110">For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="17ae7-110">如需進階搜捕結構描述中其他資料表的資訊，請參閱 [進階搜捕參考](advanced-hunting-schema-tables.md)。</span><span class="sxs-lookup"><span data-stu-id="17ae7-110">For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="3b58e-111">資料行名稱</span><span class="sxs-lookup"><span data-stu-id="3b58e-111">Column name</span></span> | <span data-ttu-id="3b58e-112">資料類型</span><span class="sxs-lookup"><span data-stu-id="3b58e-112">Data type</span></span> | <span data-ttu-id="3b58e-113">描述</span><span class="sxs-lookup"><span data-stu-id="3b58e-113">Description</span></span> |
+| <span data-ttu-id="17ae7-111">資料行名稱</span><span class="sxs-lookup"><span data-stu-id="17ae7-111">Column name</span></span> | <span data-ttu-id="17ae7-112">資料類型</span><span class="sxs-lookup"><span data-stu-id="17ae7-112">Data type</span></span> | <span data-ttu-id="17ae7-113">描述</span><span class="sxs-lookup"><span data-stu-id="17ae7-113">Description</span></span> |
 |-------------|-----------|-------------|
-| `DeviceId` | <span data-ttu-id="3b58e-114">string</span><span class="sxs-lookup"><span data-stu-id="3b58e-114">string</span></span> | <span data-ttu-id="3b58e-115">服務中電腦的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="3b58e-115">Unique identifier for the machine in the service</span></span> |
-| `DeviceName` | <span data-ttu-id="3b58e-116">string</span><span class="sxs-lookup"><span data-stu-id="3b58e-116">string</span></span> | <span data-ttu-id="3b58e-117">電腦的完整網域名稱 (FQDN)</span><span class="sxs-lookup"><span data-stu-id="3b58e-117">Fully qualified domain name (FQDN) of the machine</span></span> |
-| `OSPlatform` | <span data-ttu-id="3b58e-118">string</span><span class="sxs-lookup"><span data-stu-id="3b58e-118">string</span></span> | <span data-ttu-id="3b58e-119">電腦上執行的作業系統平台。</span><span class="sxs-lookup"><span data-stu-id="3b58e-119">Platform of the operating system running on the machine.</span></span> <span data-ttu-id="3b58e-120">這表示特定作業系統，包括相同系列內的變體，例如 Windows 10 和 Windows 7。</span><span class="sxs-lookup"><span data-stu-id="3b58e-120">This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.</span></span>|
-| `Timestamp` | <span data-ttu-id="3b58e-121">datetime</span><span class="sxs-lookup"><span data-stu-id="3b58e-121">datetime</span></span> | <span data-ttu-id="3b58e-122">記錄的產生日期和時間</span><span class="sxs-lookup"><span data-stu-id="3b58e-122">Date and time when the record was generated</span></span> |
-| `ConfigurationId` | <span data-ttu-id="3b58e-123">string</span><span class="sxs-lookup"><span data-stu-id="3b58e-123">string</span></span> | <span data-ttu-id="3b58e-124">特定設定的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="3b58e-124">Unique identifier for a specific configuration</span></span> |
-| `ConfigurationCategory` | <span data-ttu-id="3b58e-125">string</span><span class="sxs-lookup"><span data-stu-id="3b58e-125">string</span></span> | <span data-ttu-id="3b58e-126">設定所屬的類別或群組：應用程式、作業系統、網路、帳戶、安全性控制</span><span class="sxs-lookup"><span data-stu-id="3b58e-126">Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls</span></span> |
-| `ConfigurationSubcategory` | <span data-ttu-id="3b58e-127">string</span><span class="sxs-lookup"><span data-stu-id="3b58e-127">string</span></span> | <span data-ttu-id="3b58e-128">設定所屬的子類別或子群組。</span><span class="sxs-lookup"><span data-stu-id="3b58e-128">Subcategory or subgrouping to which the configuration belongs.</span></span> <span data-ttu-id="3b58e-129">在許多情況下，這會描述特定性能或功能。</span><span class="sxs-lookup"><span data-stu-id="3b58e-129">In many cases, this describes specific capabilities or features.</span></span> |
-| `ConfigurationImpact` | <span data-ttu-id="3b58e-130">string</span><span class="sxs-lookup"><span data-stu-id="3b58e-130">string</span></span> | <span data-ttu-id="3b58e-131">設定對整個設定分數 (1-10) 的評分影響</span><span class="sxs-lookup"><span data-stu-id="3b58e-131">Rated impact of the configuration to the overall configuration score (1-10)</span></span> |
-| `IsCompliant` | <span data-ttu-id="3b58e-132">布林值</span><span class="sxs-lookup"><span data-stu-id="3b58e-132">boolean</span></span> | <span data-ttu-id="3b58e-133">指出設定或原則是否已正確設定</span><span class="sxs-lookup"><span data-stu-id="3b58e-133">Indicates whether the configuration or policy is properly configured</span></span> |
+| `DeviceId` | <span data-ttu-id="17ae7-114">string</span><span class="sxs-lookup"><span data-stu-id="17ae7-114">string</span></span> | <span data-ttu-id="17ae7-115">服務中電腦的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="17ae7-115">Unique identifier for the machine in the service</span></span> |
+| `DeviceName` | <span data-ttu-id="17ae7-116">string</span><span class="sxs-lookup"><span data-stu-id="17ae7-116">string</span></span> | <span data-ttu-id="17ae7-117">電腦的完整網域名稱 (FQDN)</span><span class="sxs-lookup"><span data-stu-id="17ae7-117">Fully qualified domain name (FQDN) of the machine</span></span> |
+| `OSPlatform` | <span data-ttu-id="17ae7-118">string</span><span class="sxs-lookup"><span data-stu-id="17ae7-118">string</span></span> | <span data-ttu-id="17ae7-119">電腦上執行的作業系統平台。</span><span class="sxs-lookup"><span data-stu-id="17ae7-119">Platform of the operating system running on the machine.</span></span> <span data-ttu-id="17ae7-120">這表示特定作業系統，包括相同系列內的變體，例如 Windows 10 和 Windows 7。</span><span class="sxs-lookup"><span data-stu-id="17ae7-120">This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.</span></span>|
+| `Timestamp` | <span data-ttu-id="17ae7-121">datetime</span><span class="sxs-lookup"><span data-stu-id="17ae7-121">datetime</span></span> | <span data-ttu-id="17ae7-122">記錄的產生日期和時間</span><span class="sxs-lookup"><span data-stu-id="17ae7-122">Date and time when the record was generated</span></span> |
+| `ConfigurationId` | <span data-ttu-id="17ae7-123">string</span><span class="sxs-lookup"><span data-stu-id="17ae7-123">string</span></span> | <span data-ttu-id="17ae7-124">特定設定的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="17ae7-124">Unique identifier for a specific configuration</span></span> |
+| `ConfigurationCategory` | <span data-ttu-id="17ae7-125">string</span><span class="sxs-lookup"><span data-stu-id="17ae7-125">string</span></span> | <span data-ttu-id="17ae7-126">設定所屬的類別或群組：應用程式、作業系統、網路、帳戶、安全性控制</span><span class="sxs-lookup"><span data-stu-id="17ae7-126">Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls</span></span> |
+| `ConfigurationSubcategory` | <span data-ttu-id="17ae7-127">string</span><span class="sxs-lookup"><span data-stu-id="17ae7-127">string</span></span> | <span data-ttu-id="17ae7-128">設定所屬的子類別或子群組。</span><span class="sxs-lookup"><span data-stu-id="17ae7-128">Subcategory or subgrouping to which the configuration belongs.</span></span> <span data-ttu-id="17ae7-129">在許多情況下，這會描述特定性能或功能。</span><span class="sxs-lookup"><span data-stu-id="17ae7-129">In many cases, this describes specific capabilities or features.</span></span> |
+| `ConfigurationImpact` | <span data-ttu-id="17ae7-130">string</span><span class="sxs-lookup"><span data-stu-id="17ae7-130">string</span></span> | <span data-ttu-id="17ae7-131">設定對整個設定分數 (1-10) 的評分影響</span><span class="sxs-lookup"><span data-stu-id="17ae7-131">Rated impact of the configuration to the overall configuration score (1-10)</span></span> |
+| `IsCompliant` | <span data-ttu-id="17ae7-132">布林值</span><span class="sxs-lookup"><span data-stu-id="17ae7-132">boolean</span></span> | <span data-ttu-id="17ae7-133">指出設定或原則是否已正確設定</span><span class="sxs-lookup"><span data-stu-id="17ae7-133">Indicates whether the configuration or policy is properly configured</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="3b58e-134">相關主題</span><span class="sxs-lookup"><span data-stu-id="3b58e-134">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="17ae7-134">相關主題</span><span class="sxs-lookup"><span data-stu-id="17ae7-134">Related topics</span></span>
 
-- [<span data-ttu-id="3b58e-135">主動威脅搜捕</span><span class="sxs-lookup"><span data-stu-id="3b58e-135">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="3b58e-136">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="3b58e-136">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="3b58e-137">使用共用查詢</span><span class="sxs-lookup"><span data-stu-id="3b58e-137">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="3b58e-138">搜捕所有裝置和電子郵件的威脅</span><span class="sxs-lookup"><span data-stu-id="3b58e-138">Hunt for threats across devices and emails</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="3b58e-139">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="3b58e-139">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="3b58e-140">套用查詢最佳做法</span><span class="sxs-lookup"><span data-stu-id="3b58e-140">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
-- [<span data-ttu-id="3b58e-141">威脅與弱點管理的概觀</span><span class="sxs-lookup"><span data-stu-id="3b58e-141">Overview of Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [<span data-ttu-id="17ae7-135">主動威脅搜捕</span><span class="sxs-lookup"><span data-stu-id="17ae7-135">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="17ae7-136">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="17ae7-136">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="17ae7-137">使用共用查詢</span><span class="sxs-lookup"><span data-stu-id="17ae7-137">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="17ae7-138">搜捕所有裝置和電子郵件的威脅</span><span class="sxs-lookup"><span data-stu-id="17ae7-138">Hunt for threats across devices and emails</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="17ae7-139">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="17ae7-139">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="17ae7-140">套用查詢最佳做法</span><span class="sxs-lookup"><span data-stu-id="17ae7-140">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+- [<span data-ttu-id="17ae7-141">威脅與弱點管理的概觀</span><span class="sxs-lookup"><span data-stu-id="17ae7-141">Overview of Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
