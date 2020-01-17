@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 安全連結功能提供 Office 文件和電子郵件訊息中的超連結的時間按一下 [的驗證。 閱讀本篇文章以了解 ATP 安全連結的運作方式。
-ms.openlocfilehash: bf6c2f0460bc285d0093019812e295c1cfe5ce66
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+description: 「安全連結」可在 Office 文件和電子郵件訊息中提供點擊超連結時即進行驗證的功能。 閱讀本篇文章以了解 ATP 安全連結的運作方式。
+ms.openlocfilehash: 56b9ce71ed0f695e2f9ee7d833ecbc980a94edd8
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970759"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230181"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Office 365 ATP 安全連結的運作方式
          
@@ -36,9 +36,7 @@ ms.locfileid: "39970759"
 5. 使用者開啟電子郵件訊息，並按一下電子郵件訊息中的 URL。
     
 6. ATP 安全連結功能立即檢查才能開啟之網站的 URL。 URL 被識別為惡意，/ 安全封鎖。
-    
-   - 如果 URL 包含在[自訂 「 不要重寫 」 Url 清單](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)將套用至使用者原則的網站，網站會隨即開啟。 
-    
+        
    - 組織[自訂封鎖的 Url 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)中包含的網站 URL 時，會開啟[警告] 頁面](atp-safe-links-warning-pages.md)。 
     
    - 已判定為惡意的網站 URL 時，會開啟[警告] 頁面](atp-safe-links-warning-pages.md)。 

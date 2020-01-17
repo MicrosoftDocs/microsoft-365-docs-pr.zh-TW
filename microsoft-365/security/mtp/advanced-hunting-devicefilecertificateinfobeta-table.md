@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d51fc812ffb82d9af1f706e513498da7611a1a6b
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 4d5769088f3904bf62d2889f35f236c9410628db
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210465"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230201"
 ---
 # <a name="devicefilecertificateinfobeta"></a>DeviceFileCertificateInfoBeta
 
@@ -35,23 +35,24 @@ ms.locfileid: "41210465"
 
 | 欄名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | 事件記錄的日期和時間
-| `DeviceId` | 字串 | 服務中電腦的唯一識別碼
-| `DeviceName` | string | 電腦的完整網域名稱 (FQDN)
-| `SHA1` | string | 記錄動作已套用的檔案 SHA-1
-| `IsSigned` | 布林值 | 會指出是否已簽署的檔案
-| `SignatureType` | string | 指示簽章資訊已讀取檔案本身中的內嵌內容或從外部類別目錄檔案讀取
-| `Signer` | string | 檔案的簽署者的相關資訊
-| `SignerHash` | string | 唯一的雜湊值，識別之簽章
-| `Issuer` | string | 憑證授權單位 (CA) 的相關資訊
-| `IssuerHash` | string | 唯一的雜湊值，識別發行的憑證授權單位 (CA)
-| `CrlDistributionPointUrls` | string |  包含憑證和憑證撤銷清單 (CRL) 的網路共用的 URL
-| `CertificateCreationTime` | datetime | 憑證已建立的日期和時間
-| `CertificateExpirationTime` | datetime | 憑證設定到期日期和時間
-| `CertificateCountersignatureTime` | datetime | 日期和時間已簽署的憑證
-| `IsTrusted` | 布林值 | 會指出檔案是否信任根據檢查未知的根憑證資訊、 無效的簽章、 撤銷的憑證及其他可疑屬性 WinVerifyTrust 函式的結果
-| `IsRootSignerMicrosoft` | 布林值 | 指出根憑證的簽署者是否為 Microsoft
-| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，必須使用此資料行搭配 DeviceName 和時間戳記欄。
+| `Timestamp` | datetime | 事件記錄的日期和時間 |
+| `DeviceId` | 字串 | 服務中電腦的唯一識別碼 |
+| `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
+| `SHA1` | string | 記錄動作已套用的檔案 SHA-1 |
+| `IsSigned` | 布林值 | 會指出是否已簽署的檔案 |
+| `SignatureType` | string | 指出是否已讀取的簽章資訊為內嵌 | 在檔案本身的內容或從外部類別目錄檔案的讀取 |
+| `Signer` | string | 檔案的簽署者的相關資訊 |
+| `SignerHash` | string | 唯一的雜湊值，識別之簽章 |
+| `Issuer` | string | 憑證授權單位 (CA) 的相關資訊 |
+| `IssuerHash` | string | 唯一的雜湊值，識別發行的憑證授權單位 (CA) |
+| `CertificateSerialNumber` | string | 憑證的憑證授權單位 (CA) 的唯一識別碼 |
+| `CrlDistributionPointUrls` | string |  列出包含憑證和憑證撤銷清單 (Crl) 的網路共用的 Url 的 JSON 陣列 |
+| `CertificateCreationTime` | datetime | 憑證已建立的日期和時間 |
+| `CertificateExpirationTime` | datetime | 憑證設定到期日期和時間 |
+| `CertificateCountersignatureTime` | datetime | 日期和時間已簽署的憑證 |
+| `IsTrusted` | 布林值 | 會指出檔案是否信任根據檢查未知的根憑證資訊、 無效的簽章、 撤銷的憑證及其他可疑屬性 WinVerifyTrust 函式的結果 |
+| `IsRootSignerMicrosoft` | 布林值 | 指出根憑證的簽署者是否為 Microsoft |
+| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，必須使用此資料行搭配 DeviceName 和時間戳記欄。 | 
 
 ## <a name="related-topics"></a>相關主題
 - [主動威脅搜捕](advanced-hunting-overview.md)

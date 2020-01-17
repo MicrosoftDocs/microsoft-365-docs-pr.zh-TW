@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: abd67d08d45a5e66b301e04a6afbd498fcd0344a
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: ccb529a738ebd326d1c5d5513c6e3236a9c58f8a
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210148"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230191"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -170,6 +170,7 @@ Microsoft 安全分數是數字摘要根據系統設定、 使用者行為及其
 - 開啟稽核資料記錄
 - 探索風險並不相容的陰影 IT 應用程式
 - 檢閱權限 & 封鎖風險 OAuth 應用程式連線至您的環境
+- 在 SharePoint online 的文件庫設定版本設定
 
 ### <a name="mfa-improvement-action-updates"></a>MFA 改進動作更新
 

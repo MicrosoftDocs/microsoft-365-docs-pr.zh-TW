@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e67ff2b28a6dec741b2ad7af5179dca226fb86ad
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 6cd8dd42bfd1947fa8bee7a69f1febad710c808a
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962570"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230211"
 ---
 # <a name="manage-tickets-through-servicenow"></a>透過 ServiceNow 管理票證
 
@@ -109,15 +109,19 @@ ServiceNow 票證可見 Microsoft 365 安全中心內與您的任務 live 就地
 
 前往 [ServiceNow 中的 [應用程式登錄表格 (功能表 > 系統 OAuth > Application Registry)，並找出您 （您指派的名稱） 所建立的 OAuth 實體。
 
-### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>如何驗證整合使用者建立與 Microsoft 365 安全性 & 規範連接器的安裝檢查清單
-
-前往 ServiceNow 中的使用者表格 (功能表 > 使用者管理 > 使用者)，並找出整合使用者建立由您 （您指派的名稱）。
+### <a name="logging-in-as-the-integration-user"></a>整合使用者身分登入
 
 授權 Microsoft 365 安全性中心與 ServiceNow 之間的連線之前，請確定您使用的整合使用者登入與您在安裝步驟中建立的密碼。 請勿使用個人的認證。
 
-### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>安裝完成時，但看不到票證，而且無法共用
+1. 移 ServiceNow 中的 [授權] 頁面。
+2. 如果您已登入您個人的認證，選取 [**不是您**連結中右上角。
+3. 您先前建立的安裝檢查清單從整合使用者身分登入 ServiceNow。  
+4. 在詢問安全性 + 規範連接器可以連線到您 ServiceNow 帳戶 ServiceNow] 頁面上，選取 [**允許**。
+5. 繼續進行設定的步驟。
 
-如果已完成的安裝和設定步驟，但您看不到 ServiceNow 卡在首頁上，而且無法共用 ServiceNow 要從 Microsoft 安全分數，檢查狀態的佈建頁面上的https://security.microsoft.com/ticketProvisioning。 選取 [**儲存**]，並回到 [首頁] 頁面上。 卡應該會出現。
+### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>如何驗證整合使用者建立與 Microsoft 365 安全性 & 規範連接器的安裝檢查清單
+
+前往 ServiceNow 中的使用者表格 (功能表 > 使用者管理 > 使用者)，並找出整合使用者建立由您 （您指派的名稱）。
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>您的公司具有單一登入已啟用阻止您連線至 ServiceNow 透過 Microsoft 365 安全中心
 
@@ -135,3 +139,7 @@ ServiceNow 票證可見 Microsoft 365 安全中心內與您的任務 live 就地
 
 1. 建立使用者具有安全性系統管理員權限在 Azure Active Directory 中。 使用者必須與您建立安裝檢查清單從整合使用者具有相同的名稱和電子郵件地址。 一旦登入和連線完成後，您可以移除安全性系統管理員角色。
 2. 登入為此使用者在 Microsoft 365 安全性管理中心並遵循設定步驟。
+
+### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>安裝完成時，但看不到票證，而且無法共用
+
+如果已完成的安裝和設定步驟，但您看不到 ServiceNow 卡在首頁上，而且無法共用 ServiceNow 要從 Microsoft 安全分數，檢查狀態的佈建頁面上的https://security.microsoft.com/ticketProvisioning。 選取 [**儲存**]，並回到 [首頁] 頁面上。 卡應該會出現。
