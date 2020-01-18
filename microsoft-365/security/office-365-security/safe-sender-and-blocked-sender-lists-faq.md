@@ -12,19 +12,19 @@ search.appverid:
 ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 ms.collection:
 - M365-security-compliance
-description: 以 Exchange Online 或 Exchange Online Protection (EOP) 系統管理員身分，您可以協助確保服務透過電子郵件訊息不會標示為垃圾郵件。 若要這麼做的一種方式是貴組織中的人員來建立安全寄件者和封鎖的寄件者清單。
-ms.openlocfilehash: 5530fa8c8ee5a83c4e8515a8f31f91e45b2ec97b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+description: 如果您是 Exchange Online 或 Exchange Online Protection (EOP) 系統管理員，您可以協助確保透過服務傳送的電子郵件訊息不會被標示為垃圾郵件。 若要這麼做的一種方式是貴組織中的人員來建立安全寄件者和封鎖的寄件者清單。
+ms.openlocfilehash: 9c281460aeff64226343af5e5608ccf42fc83799
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971671"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238390"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Exchange Online 中的安全寄件者和封鎖寄件者清單
 
-以 Exchange Online 或 Exchange Online Protection (EOP) 系統管理員身分，您可以協助確保服務透過電子郵件訊息不會標示為垃圾郵件。 若要這麼做的一種方式是貴組織中的人員來建立安全寄件者和封鎖的寄件者清單。
+如果您是 Exchange Online 或 Exchange Online Protection (EOP) 系統管理員，您可以協助確保透過服務傳送的電子郵件訊息不會被標示為垃圾郵件。 若要這麼做的一種方式是貴組織中的人員來建立安全寄件者和封鎖的寄件者清單。
 
-*請參閱更新的版的秘訣和程序說明如何使用這些清單中的系統管理員*[如何防止良好的電子郵件被標示為在 Office 365 中的垃圾郵件](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)。
+*請參閱更新的版的秘訣和程序說明如何使用這些清單中的系統管理員*[如何防止良好的電子郵件被標示為在 Office 365 中的垃圾郵件](prevent-email-from-being-marked-as-spam.md)。
 
 如果您不是系統管理員，而且您只想要管理自己在 Outlook 中的垃圾郵件所使用的安全寄件者清單，請參閱[垃圾郵件篩選器概觀](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)中的步驟。
 

@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: 了解反垃圾郵件設定和篩選器，可協助您防止 Exchange Online 和 Office 365 中的垃圾郵件。 在 Office 365 收到太多垃圾郵件？ 您可以自訂您的垃圾郵件篩選和反垃圾郵件原則設定。
-ms.openlocfilehash: 16f58efbf326f1450689a8e13624be520f7a4902
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 33a1415306dcfc635e6c5608f3834b79932d9420
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970899"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238530"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Office 365 電子郵件的反垃圾郵件保護
 
@@ -37,7 +37,7 @@ ms.locfileid: "39970899"
  **垃圾郵件篩選**： Office 365 會檢查郵件特性與垃圾郵件一致使用垃圾郵件篩選。 您可以變更哪些動作，以對郵件識別為垃圾郵件，並選擇是否要篩選以特定語言撰寫或從特定國家或地區傳送的郵件。 您也可以開啟進階垃圾郵件篩選選項，如果您想要追求垃圾郵件篩選積極方法。 此外，您可以設定使用者垃圾郵件通知改為通知使用者有關適用於他們的郵件已傳送至隔離區時。 （將郵件傳送至隔離區是下列其中一個可設定的動作）。從這些通知，使用者可以釋放誤判，並向 Microsoft 報告進行分析。 如需詳細資訊，請參閱[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)。 為了協助防止 Office 365 中的垃圾郵件，請使用垃圾郵件篩選，如果您擔心 Office 365 中太多垃圾郵件，請使用連線篩選，協助防範垃圾郵件。
 
 > [!NOTE]
-> 為 EOP 獨立版客戶： 根據預設，EOP 垃圾郵件篩選垃圾郵件偵測到郵件傳送至每個收件者的垃圾郵件] 資料夾。 不過，為了確保 [**移至垃圾郵件] 資料夾的郵件**] 動作將會使用內部部署信箱，您必須設定兩個 Exchange 郵件流程規則 （也稱為傳輸規則） 上您的內部部署伺服器，以偵測 EOP 所新增的垃圾郵件標頭。 如需詳細資訊，請參閱[確定垃圾郵件路由傳送至每一個使用者的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+> 為 EOP 獨立版客戶： 根據預設，EOP 垃圾郵件篩選垃圾郵件偵測到郵件傳送至每個收件者的垃圾郵件] 資料夾。 不過，為了確保 [**移至垃圾郵件] 資料夾的郵件**] 動作將會使用內部部署信箱，您必須設定兩個 Exchange 郵件流程規則 （也稱為傳輸規則） 上您的內部部署伺服器，以偵測 EOP 所新增的垃圾郵件標頭。 如需詳細資料，請參閱[確定垃圾郵件路由傳送至每一個使用者的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
 
 ## <a name="extra-information-if-you-receive-too-much-spam-in-office-365"></a>如果您在 Office 365 收到太多垃圾郵件的額外資訊
 
@@ -73,7 +73,7 @@ ms.locfileid: "39970899"
 
 [反垃圾郵件保護常見問題集](anti-spam-protection-faq.md)
 
-[使用安全清單或其他技術防止誤判電子郵件標示為垃圾郵件](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[使用安全清單或其他技術防止誤判電子郵件標示為垃圾郵件](prevent-email-from-being-marked-as-spam.md)
 
 [如何設定 Office 365 垃圾郵件篩選，以協助封鎖垃圾郵件](reduce-spam-email.md)
 

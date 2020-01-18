@@ -14,12 +14,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: 若要確定您信任的人所傳送的電子郵件並未遭到封鎖，可以使用連線篩選原則，對於您信任的 IP 位址建立允許清單 (也稱為安全寄件者清單)。 您也可以建立封鎖寄件者清單。
-ms.openlocfilehash: d3151ab436c5d904897d518fa119d52a11db4850
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
-ms.translationtype: HT
+ms.openlocfilehash: 70bd682fd9cb990f15314be3187e74f5fa4d562c
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971831"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238420"
 ---
 # <a name="configure-the-connection-filter-policy"></a>設定連線篩選原則
 
@@ -29,7 +29,7 @@ ms.locfileid: "39971831"
 
 - 可將建立封鎖清單的連線篩選原則視為在篩選器中捕捉較少或不信任的帳戶。
 
- 如需適用於整個組織的垃圾郵件設定，請參閱[如何在 Office 365 中防止好的電子郵件被標示為垃圾郵件](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)或[如何減少 Office 365 中的垃圾郵件](reduce-spam-email.md)。 如果您有系統管理員層級的控制權，且您想要避免誤判或漏報，這些內容很有幫助。
+ 如需適用於整個組織的垃圾郵件設定，請參閱[如何在 Office 365 中防止好的電子郵件被標示為垃圾郵件](prevent-email-from-being-marked-as-spam.md)或[如何減少 Office 365 中的垃圾郵件](reduce-spam-email.md)。 如果您有系統管理員層級的控制權，且您想要避免誤判或漏報，這些內容很有幫助。
 
 > [!TIP]
 > 您可能想要暫停並了解如何建立[允許 (或安全寄件者) 清單](create-safe-sender-lists-in-office-365.md)和[封鎖清單](create-block-sender-lists-in-office-365.md)。
@@ -63,7 +63,7 @@ ms.locfileid: "39971831"
    以 nnn.nnn.nnn.nnn 格式 (其中 nnn 是從 0 到 255 的數字) 來指定 IPV4 IP 位址。 您也可以用 nnn.nnn.nnn.nnn/rr 格式來指定無類別網域間路由選擇 (CIDR) 範圍，其中 rr 是 24 到 32 的數字。 若要指定 24 到 32 以外的範圍，請參閱下一節：[設定 IP 允許清單時的其他考量](#additional-considerations-when-configuring-ip-allow-lists)。
 
    > [!NOTE]
-   > 如果將 IP 位址新增到兩個清單中，則允許從該 IP 位址傳送的電子郵件。 <br/><br/> 您最多可以指定 1273 個項目，一個項目就是單一 IP 位址，或 IP 位址從 /24 至 /32 的 CIDR 範圍。 <br/><br/> 如果您正在傳送 TLS 加密訊息，則 IPv6 位址與位址範圍不受支援。
+   > 如果將 IP 位址新增到兩個清單中，則允許從該 IP 位址傳送的電子郵件。<br/><br/> 您最多可以指定 1273 個項目，一個項目就是單一 IP 位址，或 IP 位址從 /24 至 /32 的 CIDR 範圍。 <br/><br/> 如果您正在傳送 TLS 加密訊息，則 IPv6 位址與位址範圍不受支援。
 
 3. 或者，選取 **[啟用安全清單]** 核取方塊避免某些已知寄件者的電子郵件遺失。 怎麼做？ Microsoft 會訂閱協力廠商來源的信任寄件者。 使用這份安全清單表示不會將信任的寄件者錯誤標記為垃圾郵件。 我們建議您選取這個選項，因為它應該會減少您收到的誤判 (好的郵件被分類為垃圾郵件)。
 
@@ -157,6 +157,6 @@ ms.locfileid: "39971831"
 
 [設定輸出垃圾郵件原則](configure-the-outbound-spam-policy.md)
 
-[如何在 Office 365 中防止好的電子郵件被標示為垃圾郵件](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[如何在 Office 365 中防止好的電子郵件被標示為垃圾郵件](prevent-email-from-being-marked-as-spam.md)
 
 [如何減少 Office 365 中的垃圾郵件](reduce-spam-email.md)

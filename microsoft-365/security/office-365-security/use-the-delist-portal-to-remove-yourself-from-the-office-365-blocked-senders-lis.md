@@ -14,12 +14,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: 當您嘗試將電子郵件傳送給其電子郵件地址是在 Office 365 中的收件者時，是否收到錯誤？如果您認為您不應該收到錯誤訊息，您可以使用取消列出入口網站，將您自己從 Office 365 封鎖寄件者清單中移除。
-ms.openlocfilehash: 1cc4958c8ba680e49a454da1f3c7bfd009399da0
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: da1c066c79acd6fb8b80796a0fc7f39d52337017
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971611"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238460"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>使用取消列出入口網站，將您自己從 Office 365 封鎖寄件者清單中移除
 
@@ -56,4 +56,4 @@ Microsoft 會使用封鎖寄件者清單，來保護其客戶避免垃圾郵件�
     > [!NOTE]
     > 它可能需要長達 24 小時，或結果而異廣泛限制會移除前。
 
-了解[如何防止實際電子郵件被標示為在 Office 365 中的垃圾郵件](../../compliance/prevent-email-from-being-marked-as-spam.md )和[控制 Office 365 中的輸出垃圾郵件](outbound-spam-controls.md)，以防止 IP 列入黑名單。
+了解[如何防止實際電子郵件被標示為在 Office 365 中的垃圾郵件](prevent-email-from-being-marked-as-spam.md )和[控制 Office 365 中的輸出垃圾郵件](outbound-spam-controls.md)，以防止 IP 列入黑名單。

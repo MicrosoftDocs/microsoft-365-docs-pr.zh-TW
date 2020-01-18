@@ -3,7 +3,7 @@ title: 如何確保郵件不會被標示為垃圾郵件
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: 01/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,16 +14,16 @@ ms.assetid: ceeda109-6c24-4270-bd09-a36959417276
 ms.collection:
 - M365-security-compliance
 description: 如果您是 Exchange Online 或 Exchange Online Protection (EOP) 系統管理員，您可以協助確保透過服務傳送的電子郵件訊息不會被標示為垃圾郵件。 請參閱最新版的提示和程序來完成這項工作，防止因為安全清單或其他技術誤將電子郵件標示為垃圾郵件。
-ms.openlocfilehash: ef405aaef888937e1d1f9495f4d23a8b23c5ce06
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
-ms.translationtype: HT
+ms.openlocfilehash: d47c4c4dfdc9570ef12ce060c8b08969c6d43cec
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970409"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238520"
 ---
 # <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a>如何確保郵件不會被標示為垃圾郵件
 
-如果您是 Exchange Online 或 Exchange Online Protection (EOP) 系統管理員，您可以協助確保透過服務傳送的電子郵件訊息不會被標示為垃圾郵件。 請參閱[如何防止在 Office 365 中將良好電子郵件標記為垃圾郵件](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)中更新版提示和程序來完成此動作。
+如果您是 Exchange Online 或 Exchange Online Protection (EOP) 系統管理員，您可以協助確保透過服務傳送的電子郵件訊息不會被標示為垃圾郵件。 請參閱[如何防止在 Office 365 中將良好電子郵件標記為垃圾郵件](prevent-email-from-being-marked-as-spam.md)中更新版提示和程序來完成此動作。
 
 ## <a name="see-also"></a>另請參閱
 
