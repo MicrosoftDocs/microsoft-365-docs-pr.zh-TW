@@ -65,6 +65,8 @@
     - name: 敏感度標籤
       href: sensitivity-labels.md
       items:
+        - name: 建立及發佈敏感度標籤
+          href: create-sensitivity-labels.md
         - name: 使用敏感度標籤中的加密來限制內容的存取
           href: encryption-sensitivity-labels.md
         - name: 自動將敏感度標籤套用到內容
