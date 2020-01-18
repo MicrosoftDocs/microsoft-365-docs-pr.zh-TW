@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6cd8dd42bfd1947fa8bee7a69f1febad710c808a
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: 0d47ce82b5138827c4ae1c1ea29c902a8cd77cc0
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41230211"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233874"
 ---
 # <a name="manage-tickets-through-servicenow"></a>透過 ServiceNow 管理票證
 
@@ -107,7 +107,7 @@ ServiceNow 票證可見 Microsoft 365 安全中心內與您的任務 live 就地
 
 ### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>如何驗證建立 Microsoft 365 安全性 & 規範連接器的 OAuth 實體
 
-前往 [ServiceNow 中的 [應用程式登錄表格 (功能表 > 系統 OAuth > Application Registry)，並找出您 （您指派的名稱） 所建立的 OAuth 實體。
+前往 [ServiceNow 中的 [應用程式登錄表格 (**功能表 > 系統 OAuth > Application Registry**)，並找出您建立的您將其指派的名稱與 OAuth 實體。
 
 ### <a name="logging-in-as-the-integration-user"></a>整合使用者身分登入
 
@@ -121,13 +121,13 @@ ServiceNow 票證可見 Microsoft 365 安全中心內與您的任務 live 就地
 
 ### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>如何驗證整合使用者建立與 Microsoft 365 安全性 & 規範連接器的安裝檢查清單
 
-前往 ServiceNow 中的使用者表格 (功能表 > 使用者管理 > 使用者)，並找出整合使用者建立由您 （您指派的名稱）。
+前往 [Users Table **(功能表 > 使用者管理 > 使用者**) 中 ServiceNow] 和 [尋找整合使用者所建立，與您指派的名稱。
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>您的公司具有單一登入已啟用阻止您連線至 ServiceNow 透過 Microsoft 365 安全中心
 
 如果貴公司已啟用單一登入，您會收到錯誤或登入未成功，請遵循下列其中一個兩個解決方案。
 
-#### <a name="logging-into-servicenow-as-the-integration-user"></a>整合使用者身分登入 ServiceNow
+#### <a name="log-into-servicenow-as-the-integration-user"></a>整合使用者身分登入 ServiceNow
 
 1. 瀏覽回 ServiceNow 中的 [授權] 頁面上。
 2. 選取 [**不是您**連結中右上角。
@@ -142,4 +142,5 @@ ServiceNow 票證可見 Microsoft 365 安全中心內與您的任務 live 就地
 
 ### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>安裝完成時，但看不到票證，而且無法共用
 
-如果已完成的安裝和設定步驟，但您看不到 ServiceNow 卡在首頁上，而且無法共用 ServiceNow 要從 Microsoft 安全分數，檢查狀態的佈建頁面上的https://security.microsoft.com/ticketProvisioning。 選取 [**儲存**]，並回到 [首頁] 頁面上。 卡應該會出現。
+如果已完成的安裝和設定步驟，但您看不到 ServiceNow 卡在首頁上，而且無法共用 ServiceNow 要從 Microsoft 安全分數，檢查狀態的佈建頁面上的https://security.microsoft.com/ticketProvisioning。 選取 [**授權]，** 並返回 [首頁] 頁面。 卡應該會出現。
+

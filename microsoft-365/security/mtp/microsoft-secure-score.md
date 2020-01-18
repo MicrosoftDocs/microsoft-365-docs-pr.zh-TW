@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ccb529a738ebd326d1c5d5513c6e3236a9c58f8a
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: 65497522907a4bfc8e2e3d55ccd3a82cde9b8bb7
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41230191"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233884"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -165,7 +165,7 @@ Microsoft 安全分數是數字摘要根據系統設定、 使用者行為及其
 
 ### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>移除不符合預期可靠的度量單位的改進動作
 
-若要確保 Microsoft 安全分數才有意義，以及改進的每一個動作是可以測量且可靠，我們會移除下列改進巨集指令。
+若要確保 Microsoft 安全分數才有意義，以及改進的每一個動作是可以測量且可靠，我們會移除下列改進動作。
 
 - 開啟稽核資料記錄
 - 探索風險並不相容的陰影 IT 應用程式
@@ -182,7 +182,7 @@ Microsoft 安全分數是數字摘要根據系統設定、 使用者行為及其
 - 需要 MFA 的所有使用者
 - 需要 MFA 的 Azure AD 特殊權限角色
 
-新的改進動作：
+新增新的改進動作：
 
 - 確定所有的使用者可以完成的安全存取多重要素驗證
 - 需要 MFA 的系統管理角色
@@ -201,7 +201,7 @@ Microsoft 安全分數是數字摘要根據系統設定、 使用者行為及其
 
 ### <a name="preview-features"></a>預覽功能
 
-預覽版本中，將會包含下列功能：
+[預覽版本](microsoft-secure-score-preview.md)中，將會包含下列功能：
 
 * 首席資訊安全長的所有新評量和趨勢檢視，而且會導致層級的討論區
 * 追蹤及基準測試您的分數的新方法

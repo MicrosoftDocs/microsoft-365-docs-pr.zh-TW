@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4d5769088f3904bf62d2889f35f236c9410628db
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: ea20e7354838bade17ebb83522b543c8aec3d33e
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41230201"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233924"
 ---
 # <a name="devicefilecertificateinfobeta"></a>DeviceFileCertificateInfoBeta
 
@@ -40,7 +40,7 @@ ms.locfileid: "41230201"
 | `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
 | `SHA1` | string | 記錄動作已套用的檔案 SHA-1 |
 | `IsSigned` | 布林值 | 會指出是否已簽署的檔案 |
-| `SignatureType` | string | 指出是否已讀取的簽章資訊為內嵌 | 在檔案本身的內容或從外部類別目錄檔案的讀取 |
+| `SignatureType` | string | 指示簽章資訊已讀取檔案本身中的內嵌內容或從外部類別目錄檔案讀取 |
 | `Signer` | string | 檔案的簽署者的相關資訊 |
 | `SignerHash` | string | 唯一的雜湊值，識別之簽章 |
 | `Issuer` | string | 憑證授權單位 (CA) 的相關資訊 |
