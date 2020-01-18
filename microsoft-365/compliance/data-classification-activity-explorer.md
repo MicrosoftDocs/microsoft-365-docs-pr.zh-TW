@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 活動總管透過讓您查看和篩選使用者對套用標籤的內容執行的操作，來完善資料分類功能。
-ms.openlocfilehash: 272de0400e89f9829b3ead5d4523db27789c0c44
-ms.sourcegitcommit: 9d0a025ea9e265d515a034de0102eabcf47d11f5
+ms.openlocfilehash: ab80de0e1be3a164da8414ef3791fb9717bcc190
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "39268951"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233694"
 ---
 # <a name="view-activity-on-your-labeled-content-preview"></a>檢視套用標籤的內容上的活動 (預覽)
 
@@ -38,6 +38,16 @@ ms.locfileid: "39268951"
 
 
 您可以以清單或橫條圖的形式檢視資料。
+
+## <a name="prerequisites"></a>必要條件
+
+每個存取並使用活動總管的帳戶，都必須有從下列其中一個訂閱中指派的授權：
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- 進階合規性 (E5) 附加元件
+- 進階威脅情報 (E5) 附加元件
+- 進階威脅防護 (E5) 附加元件
 
 ## <a name="activity-type"></a>活動類型
 

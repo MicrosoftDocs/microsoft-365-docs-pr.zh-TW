@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上套用保護設定 (包括加密和浮水印)。
-ms.openlocfilehash: b69ae981ea8d988d399e325d2532a0a59e27ae20
-ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
+ms.openlocfilehash: 91dd28284ad83ec8505f52d380284e31dc9882d5
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023347"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233834"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
@@ -178,7 +178,7 @@ ms.locfileid: "41023347"
 
 ## <a name="how-to-get-started-with-sensitivity-labels"></a>如何開始使用敏感度標籤
 
-開始使用敏感度標籤的程序很快：
+按照以下程序開始使用敏感度標籤：
 
 1. **定義標籤。** 首先，您要建立用於定義不同敏感度層級內容的分類法。 使用對您的使用者有意義的一般名稱或字詞。 例如，您可以從個人、公開、一般、機密和高度機密等標籤開始。 您可以使用子標籤，依類別將類似的標籤群組。 此外，建立標籤時會需要工具提示，它會在使用者將滑鼠指標移至功能區上的標籤選項時在 Office 應用程式中顯示。
 
@@ -189,6 +189,8 @@ ms.locfileid: "41023347"
 以下是系統管理員、使用者和 Office 應用程式執行項目以讓敏感度標籤運作的基本流程。
 
 ![敏感度標籤的工作流程圖](media/Sensitivity-label-flow.png)
+
+如需程序資訊，請參閱 [建立及設定敏感度標籤及其原則](create-sensitivity-labels.md)。
 
 ## <a name="where-sensitivity-labels-can-appear"></a>敏感度標籤會顯示的位置
 
