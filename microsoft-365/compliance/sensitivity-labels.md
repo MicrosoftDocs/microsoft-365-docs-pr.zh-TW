@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上套用保護設定 (包括加密和浮水印)。
-ms.openlocfilehash: 91dd28284ad83ec8505f52d380284e31dc9882d5
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: f416bcb32e9d8c14fee17d2dcecddac2aec20485
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233834"
+ms.locfileid: "41238500"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
@@ -154,7 +154,7 @@ ms.locfileid: "41233834"
 
     ![功能區中 [敏感度] 按鈕上的「深入了解」連結](media/Sensitivity-label-learn-more.png)
 
-建立標籤原則並將敏感度標籤指派給使用者和群組之後，這些人會在一小時內在 Office 應用程式中看到這些標籤。
+建立可將敏感度標籤指派給使用者和群組的標籤原則之後，需要允許最多 24 小時的時間，這些使用者才會在他們的 Office 應用程式中看到該標籤。
 
 您可以建立並發佈的敏感度標籤數量沒有任何限制，但有一個例外：如果標籤套用加密，則上限為 500 個標籤。 不過，為了降低系統管理負擔並為使用者減少複雜度，最佳做法是試著保持最少的標籤數量。 實際情況的部署已證明，當使用者擁有五個以上的主要標籤，或每個主要標籤有超過五個子標籤時，效果會明顯地降低。
 

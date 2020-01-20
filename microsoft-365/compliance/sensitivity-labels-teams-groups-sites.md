@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以將標籤套用至 Microsoft Teams、Office 365 群組和 SharePoint 網站。
-ms.openlocfilehash: 4a8cf810ba29c2bb025b50e1529081a1a9ba6843
-ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
+ms.openlocfilehash: 0b5c4e8ef3611b417c59f7ac5b36f83a799e3397
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40966891"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238440"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>對 Microsoft Teams、Office 365 群組和 SharePoint 網站使用敏感度標籤 (公開預覽)
 
@@ -148,7 +148,7 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
 
 3. 等候 24 小時之後，使用您在步驟 1 中指定的其中一個使用者帳戶來建立小組、Office 365 群組或 SharePoint 網站，並搭配您在步驟 1 中建立的標籤。
 
-4. 如果在步驟 3 的建立作業期間沒有發生任何錯誤，請對您的租用戶中的所有使用者發佈標籤。 如果發生錯誤，請連絡 Microsoft 支援。
+4. 如果在步驟 3 的建立作業期間沒有發生任何錯誤，請對您的租用戶中的所有使用者發佈標籤。 如果發生錯誤，請連絡 [Microsoft 支援](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
 
 **修改及刪除已發佈的標籤：**
 
@@ -160,14 +160,14 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
 
 3. 在等候 48 小時之後，請嘗試建立小組、群組或網站，並確認標籤已不再顯示。
 
-4. 如果敏感度標籤未顯示，您現在可以放心地修改或刪除標籤。 如果標籤仍顯示，請連絡 Microsoft 支援。
+4. 如果敏感度標籤未顯示，您現在可以放心地修改或刪除標籤。 如果標籤仍顯示，請連絡 [Microsoft 支援](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
 
 ## <a name="troubleshoot-sensitivity-label-deployment"></a>疑難排解敏感度標籤部署
 
 ### <a name="labels-not-visible-after-publishing"></a>發佈之後標籤無法顯示
 如果您在啟用這些設定或修改敏感度標籤的描述之後，於建立小組或建立 Office 365 小組時遇到問題，請儲存標籤，等候幾小時，然後嘗試再次建立小組或群組。 如需詳細資訊，請參閱[排程在建立或變更敏感度標籤後推出](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label)。
 
-如果您仍看不到來自 SharePoint Online 的新敏感度標籤，請連絡 Microsoft 支援。
+如果您仍看不到來自 SharePoint Online 的新敏感度標籤，請連絡 [Microsoft 支援](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
 
 ### <a name="team-group-or-sharepoint-site-creation-errors"></a>小組、群組或 SharePoint 網站建立錯誤
 如果您在公開預覽期間遇到建立錯誤，您有兩個選擇：

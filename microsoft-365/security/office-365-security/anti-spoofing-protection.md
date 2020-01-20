@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 本文說明 Office 365 如何減少使用偽造寄件者網域的網路釣魚攻擊，即詐騙網域。 其達成目的的方式是透過分析郵件，和封鎖無法使用標準電子郵件驗證方法或其他寄件者信譽技術來進行驗證的郵件。 採用此項變更是為了減少 Office 365 中的組織所暴露的網路釣魚攻擊數量。
-ms.openlocfilehash: 1bcf6b954c69297981eafecef192cab0e55a7684
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: cb978dd39e9645b8179490d498713137ab79af46
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112737"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233894"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 
@@ -61,7 +61,7 @@ Microsoft 的反詐騙技術最初部署在具有 Office 365 企業版 E5 訂閱
 
 為了阻止詐騙郵件，電子郵件篩選產業已開發出諸如 [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)、[DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email) 和 [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) 等電子郵件驗證通訊協定。 DMARC 透過檢查郵件的寄件者來防止偽造。 也就是使用者在其電子郵件用戶端中看到的寄件者 (在以上範例中，它是 service.outlook.com、outlook.com 和 accountprotection.microsoft.com)。 此外，使用者也可以看到網域已通過 SPF 或 DKIM，這表示網域已驗證，因此不是偽造的。 如需完整討論內容，請參閱本文稍後的*了解為什麼電子郵件驗證不一定能夠阻止詐騙*一節。
 
-不過，問題在於電子郵件驗證記錄並非強制必要的。 因此，雖然採用強式驗證原則的網域 (如 microsoft.com 和 skype.com) 可防止詐騙，但是發佈較弱的驗證原則、或甚至完全未採用任何原則的網域就成了詐騙目標。截至 2018 年 3 月，在財富雜誌前 500 大公司的網域中，只有 9% 發佈強式的電子郵件驗證原則。 剩下 91% 則可能受網路釣魚者的詐騙，且可能傳送郵件到使用者端來欺騙使用者，除非電子郵件篩選器使用另外的原則進行偵測：
+不過，問題在於電子郵件驗證記錄並非強制必要的。 因此，雖然採用強式驗證原則的網域 (如 microsoft.com 和 skype.com) 可防止詐騙，但是發佈較弱的驗證原則、或甚至完全未採用任何原則的網域就成了詐騙目標。 截至 2018 年 3 月，在財富雜誌前 500 大公司的網域中，只有 9% 發佈強式的電子郵件驗證原則。 剩下 91% 則可能受網路釣魚者的詐騙，且可能傳送郵件到使用者端來欺騙使用者，除非電子郵件篩選器使用另外的原則進行偵測：
 
 ![財富雜誌前 500 大公司採用的 DMARC 原則](../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
