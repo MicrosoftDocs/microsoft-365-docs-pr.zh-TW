@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 摘要：本文說明如何在 Office 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統會信任從您的自訂網域傳送的郵件。
-ms.openlocfilehash: 350a8aa793270522b3ca79b9f0fda09c49f21a62
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 7861e2c0009b34d558d64a87a44a10cc3c953b3c
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971641"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233774"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件
 
@@ -60,9 +60,6 @@ Office 365 會自動為其初始 'onmicrosoft.com' 網域設定 DKIM。 這表�
 - [設定 DKIM，讓第三方服務可代表您的自訂網域傳送 (或偽造) 電子郵件](use-dkim-to-validate-outbound-email.md#SetUp3rdPartyspoof)
 
 - [後續步驟：為 Office 365 設定 DKIM 之後](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
-
-> [!NOTE]
-> Microsoft 365 支援使用 1024 或 2048 位元 DKIM 的使用者。 如果您使用 1024 位元，並想要設定為 2048 位元 DKIM，請密切注意本文中有關輪轉您的 DKIM 簽章組態的步驟。 在 2019 年底，Microsoft 預設將對所有客戶支援使用 2048 位元金鑰。
 
 ## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing-in-office-365"></a>DKIM 在 Office 365 中防止惡意詐騙的效用為何優於單獨使用 SPF
 <a name="HowDKIMWorks"> </a>
