@@ -16,24 +16,10 @@
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Office 365 中的安全性與合規性計劃
       href: plan-for-security-and-compliance.md
-- name: 管理內部風險
+- name: 管理測試人員風險
   items:
     - name: 保護使用者和裝置存取權
       href: protect-access-to-data-and-services.md
-    - name: 客戶加密箱
-      href: customer-lockbox-requests.md
-    - name: 特許存取管理
-      items:
-        - name: 了解特殊權限存取管理
-          href: privileged-access-management-overview.md
-        - name: 設定特殊權限存取管理
-          href: privileged-access-management-configuration.md
-    - name: 客戶金鑰
-      items:
-        - name: 使用客戶金鑰控制 Office 365 中的資料
-          href: controlling-your-data-using-customer-key.md
-        - name: Office 365 中使用客戶金鑰的服務加密常見問題集
-          href: service-encryption-with-customer-key-faq.md
     - name: 通訊規範 （預覽）
       items:
         - name: 了解通訊合規性 (預覽)
@@ -59,6 +45,20 @@
           href: information-barriers-troubleshooting.md
         - name: 編輯資訊屏障原則
           href: information-barriers-edit-segments-policies.md
+    - name: 特許存取管理
+      items:
+        - name: 了解特殊權限存取管理
+          href: privileged-access-management-overview.md
+        - name: 設定特殊權限存取管理
+          href: privileged-access-management-configuration.md
+    - name: 客戶金鑰
+      items:
+        - name: 使用客戶金鑰控制 Office 365 中的資料
+          href: controlling-your-data-using-customer-key.md
+        - name: Office 365 中使用客戶金鑰的服務加密常見問題集
+          href: service-encryption-with-customer-key-faq.md
+    - name: 客戶加密箱
+      href: customer-lockbox-requests.md
 - name: 管理資訊保護
   href: protect-information.md
   items:
@@ -214,6 +214,8 @@
           href: archive-linkedin-data.md
         - name: 設定連接器來封存 Instant Bloomberg 資料
           href: archive-instant-bloomberg-data.md
+        - name: 設定連接器，以匯入 HR 資料
+          href: import-hr-data.md
         - name: 與合作夥伴配合來封存第三方資料
           href: work-with-partner-to-archive-third-party-data.md
     - name: 儲存資料
