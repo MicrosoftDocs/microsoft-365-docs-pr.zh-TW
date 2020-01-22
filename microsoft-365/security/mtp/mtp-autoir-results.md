@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: d33844c1bd774f6b53dbbaa428762c4832fccb85
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e70fa5f226b25df72514f75bb20873665d9021f6
+ms.sourcegitcommit: ca06ee52dec472d3827983d67b049847ec2fdfc1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806982"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41256549"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>檢視自動調查的詳細資料和結果
 
@@ -92,6 +92,9 @@ ms.locfileid: "40806982"
 |無害  |裝置或電子郵件內容   |不需要修正動作|
 
 [在控制中心檢閱待核准的動作](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
+
+> [!TIP]
+> 如果您認為某個項目已未接或錯誤偵測到的自動化的調查和 Microsoft 威脅防護中的回應功能，讓我們知道 ！ 請參閱[How to 報告中自動進行調查並 Microsoft 威脅防護中的回應 （空調） 功能，則為 false positive/負號](mtp-autoir-report-false-positives-negatives.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
