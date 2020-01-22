@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: a43576bc18d54e3a5c9b2f9ad918c1df3ee67615
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2ad99943869d3edc16316d90efb9bbfd70a6f18f
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807938"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260221"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新功能
 
@@ -30,10 +30,6 @@ ms.locfileid: "40807938"
 
 > [!TIP]
 > 沒有 Office 365 ATP 尚未？ [若要啟動試用版的連絡人銷售](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
-
-## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 方案 1 與方案 2
-
-Office 365 ATP 是兩個計劃中提供： Office 365 ATP 計劃 1 和 Office 365 ATP 計劃 2。 [深入了解](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
 
 ## <a name="december-2019"></a>2019 年 12 月
 
@@ -65,8 +61,14 @@ Office 365 ATP 是兩個計劃中提供： Office 365 ATP 計劃 1 和 Office 36
 
 - [檢視網路釣魚 Url 相關資料，並按一下 verdict](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) （Office 365 ATP 方案 1 或計劃 2）
 
+## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 方案 1 與方案 2
+
+您知道 Office 365 ATP 可用於兩個計劃嗎？ 沒有 Office 365 ATP 計劃 1 和 Office 365 ATP 計劃 2。 [解更多關於每個方案所包含的內容](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
+
 ## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Office 365 ATP 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+
+[Microsoft 威脅防護的自動化調查及回應](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

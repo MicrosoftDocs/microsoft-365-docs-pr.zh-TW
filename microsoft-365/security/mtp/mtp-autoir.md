@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: ea3201838e625969a239aee4339e0de605d95c55
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 9459b1b8ff431624045c5b57ade531288d41866e
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808608"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260181"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-threat-protection"></a>Microsoft 威脅防護的自動化調查及回應 (AIR)
 
@@ -38,24 +38,26 @@ ms.locfileid: "40808608"
 
 AIR 可讓您的安全性作業小組大幅增加貴組織處理安全性警示和事件的能力。 透過 AIR，您可以降低處理調查和補救活動的成本，並充分利用威脅防護套件。 AIR 協助您的安全性作業小組：
 
-1.  判斷是否要針對威脅採取動作；
-2.  執行 (或建議) 任何必要補救動作；
-3.  判斷應該要進行哪些其他調查；以及
-4.  針對其他警示重複採取必要程序。
+1. 判斷是否要針對威脅採取動作；
+2. 執行 (或建議) 任何必要補救動作；
+3. 判斷應該要進行哪些其他調查；以及
+4. 針對其他警示重複採取必要程序。
 
 ## <a name="the-automated-investigation-process"></a>自動化調查程序
 
 **警示** > **事件** > **自動化調查** > **結果** > **補救動作**
 
-在高層級，觸發的警示會建立事件，其便會開始自動化調查。 該調查會產生一或多個補救動作。 在 Microsoft 威脅防護中，每個自動化調查會與 Azure 進階威脅防護 (Azure ATP)、Microsoft Defender 進階威脅防護 (Microsoft Defender ATP) 和 Office 365 進階威脅防護 (Office 365 ATP) 的訊號有關聯，如下表所示： 
+觸發的警示建立事件，就可以開始自動進行調查。 該調查會產生一或多個補救動作。 在 Microsoft 威脅防護中，每個自動化調查會與 Azure 進階威脅防護 (Azure ATP)、Microsoft Defender 進階威脅防護 (Microsoft Defender ATP) 和 Office 365 進階威脅防護 (Office 365 ATP) 的訊號有關聯，如下表所示： 
 
 |實體 |威脅防護服務  |
 |---------|---------|
 |裝置 (也稱為端點)     |[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |電子郵件內容 (信箱中的檔案和郵件)     |[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-
 每個調查會針對每個調查證據產生結果 (*惡意*、*可疑*或*乾淨*)。 根據威脅類型和產生的結果，補救動作會自動進行，或由貴組織的安全性作業小組核准進行。 待處理和已完成的操作會列在[重要訊息中心](mtp-action-center.md)。
+
+> [!TIP]
+> 如果您認為某個項目已未接或錯誤偵測到的自動化的調查和 Microsoft 威脅防護中的回應功能，讓我們知道 ！ 請參閱[How to 報告中自動進行調查並 Microsoft 威脅防護中的回應 （空調） 功能，則為 false positive/負號](mtp-autoir-report-false-positives-negatives.md)。
 
 當調查進行時，出現的任何其他相關警示會新增到調查中，直到調查完成。 如果在其他地方看到受感染的實體，則自動化調查將擴大其範圍，以包括該實體，並且將執行一般安全性劇本。 
 

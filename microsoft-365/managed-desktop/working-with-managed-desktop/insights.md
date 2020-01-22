@@ -1,17 +1,17 @@
 ---
 title: 具備深入解析的工作
 description: ''
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2366c7b9e3c95ee88753ffb7677a7031c8ac9786
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: d1ee28bad2728fb3e6c12694625b2c29a65425a2
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962320"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260101"
 ---
 # <a name="work-with-insights"></a>具備深入解析的工作
 
@@ -40,4 +40,9 @@ Microsoft 受管理的電腦會提供租用戶中的 IT 系統管理員可以使
 ## <a name="reliability-insights"></a>可靠深入解析
 此檢視為您提供您受管理的裝置健全狀況摘要。 若要檢視可靠性資料，請選取 [**可靠性**] 索引標籤。
 
-深入了解[可靠性深入解析](reliability-insights.md)
+深入了解[可靠性觀點](reliability-insights.md)。
+
+## <a name="battery-insights"></a>電池深入解析
+這個檢視顯示您的應用程式和裝置的預計的電池壽命能源消耗資訊在您的環境中。 若要檢視這項資訊，請選取 [**電池**] 索引標籤。
+
+深入了解[電池觀點](battery-insights.md)。

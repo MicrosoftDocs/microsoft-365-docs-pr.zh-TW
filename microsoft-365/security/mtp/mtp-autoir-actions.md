@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: edc952a0361ee8cfa6ed3df2eaf80f0fc4bf7fd5
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 35433eccf93c56a8f8bf66b50fa6728ff7585d8e
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808458"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260201"
 ---
 # <a name="approve-or-reject-pending-actions-from-automated-investigations"></a>核准或拒絕來自自動化調查的擱置中的動作
 
@@ -31,6 +31,9 @@ ms.locfileid: "40808458"
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 當自動化調查執行時，可能會導致需要核准才能繼續的一或多個[補救動作](mtp-action-center.md#remediation-actions)。 例如，可能需要刪除一組電子郵件訊息，或可能需要移除隔離的檔案。 務必盡快核准 (或拒絕) 擱置中的動作，這樣您的自動化調查才能及時進行和完成。 
+
+> [!TIP]
+> 如果您認為某個項目已未接或錯誤偵測到的自動化的調查和 Microsoft 威脅防護中的回應功能，讓我們知道 ！ 請參閱[How to 報告中自動進行調查並 Microsoft 威脅防護中的回應 （空調） 功能，則為 false positive/負號](mtp-autoir-report-false-positives-negatives.md)。
 
 使用以下數個方法中的一個可檢閱和核准擱置中的動作：
 - [使用重要訊息中心](#review-a-pending-action-in-the-action-center)

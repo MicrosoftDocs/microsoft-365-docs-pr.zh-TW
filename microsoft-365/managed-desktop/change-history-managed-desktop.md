@@ -8,16 +8,25 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: b66fb73b635eb102bcd474cc884db6d0fa4cdfb6
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 8713b678432d71304649e05fba466659de0369ad
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634060"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260121"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 受管理電腦文件的變更歷程記錄
 
 本主題將列出[Microsoft 受管理電腦文件](index.yml)中的最新及更新主題。 「 更新 」 主題是指可有鎖材料的新增項目或更正-次要修正校正的錯字，樣式，例如，格式問題未列出。 您總是可以檢視 （包括任何變更的詳細資料） 的特定認可的歷程記錄造訪[GitHub 上的儲存機制](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)。
+
+## <a name="december-2019"></a>2019 年 12 月
+新的或變更主題 | 描述
+--- | ---
+[Microsoft 受管理電腦的系統管理員支援](working-with-managed-desktop/admin-support.md) | 更新的主題
+[Microsoft 受管理的電腦裝置](service-description/device-list.md) | 更新的主題
+[封存的 Microsoft 受管理電腦裝置](service-description/archived-device-list.md) | 更新的主題
+
+
 
 ## <a name="november-2019"></a>2019 年 11 月
 新的或變更主題 | 描述
@@ -55,7 +64,7 @@ ms.locfileid: "39634060"
 [部署及追蹤可設定-Microsoft 受管理的電腦](working-with-managed-desktop/config-setting-deploy.md) | 更新的主題
 [Microsoft 受管理電腦的系統管理員支援](working-with-managed-desktop/admin-support.md) | 更新的主題
 [Microsoft 受管理電腦的先決條件](get-ready/prerequisites.md) | 更新的主題
-[Microsoft 受管理的電腦裝置上設定](get-started/set-up-devices.md) | 新的主題
+[設定 Microsoft 受管理的電腦裝置](get-started/set-up-devices.md) | 新的主題
 [自行註冊新裝置](get-started/register-devices-self.md) | 更新的主題
 [自行註冊現有裝置](get-started/register-reused-devices-self.md) | 新的主題
 [Microsoft 受管理電腦中更新的處理方式](service-description/updates.md) | 更新的主題

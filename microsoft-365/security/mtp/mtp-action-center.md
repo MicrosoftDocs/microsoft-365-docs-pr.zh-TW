@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: ca98e59ded0956455e3279caa9de2af4f4af86c9
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 91f2ae9a9fef96a3fdfedf86481aa5f5f33cb724
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808468"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260211"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>移至重要訊息中心檢視補救動作
 
@@ -70,6 +70,10 @@ ms.locfileid: "40808468"
     - 如果調查與電子郵件內容相關 (例如，實體為信箱)，便會在 Office 365 安全性與合規性中心 ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)) 開啟調查詳細資料。 
 
     - 如果調查涉及裝置，便會在安全中心 ([https://security.microsoft.com](https://security.microsoft.com)) 開啟調查詳細資料。 
+
+
+> [!TIP]
+> 如果您認為某個項目已未接或錯誤偵測到的自動化的調查和 Microsoft 威脅防護中的回應功能，讓我們知道 ！ 請參閱[How to 報告中自動進行調查並 Microsoft 威脅防護中的回應 （空調） 功能，則為 false positive/負號](mtp-autoir-report-false-positives-negatives.md)。
 
 ## <a name="required-permissions-for-action-center-tasks"></a>重要訊息中心的必要權限
 
