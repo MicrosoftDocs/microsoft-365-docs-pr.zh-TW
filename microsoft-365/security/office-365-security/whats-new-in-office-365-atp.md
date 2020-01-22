@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 2ad99943869d3edc16316d90efb9bbfd70a6f18f
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: f8848ec9b56bc6f44d0a895d7274deb285a64bc7
+ms.sourcegitcommit: 2eb4539291f5035b7bef746df89fbcc6faa17257
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260221"
+ms.locfileid: "41263345"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新功能
 
@@ -63,7 +63,7 @@ ms.locfileid: "41260221"
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 方案 1 與方案 2
 
-您知道 Office 365 ATP 可用於兩個計劃嗎？ 沒有 Office 365 ATP 計劃 1 和 Office 365 ATP 計劃 2。 [解更多關於每個方案所包含的內容](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
+您知道 Office 365 ATP 可用於兩個計劃嗎？ [解更多關於每個方案所包含的內容](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
 
 ## <a name="see-also"></a>另請參閱
 
