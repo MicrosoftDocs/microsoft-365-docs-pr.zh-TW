@@ -14,12 +14,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性與合規性中心的總管和即時偵測。
-ms.openlocfilehash: 64ebfef5c0d5540acf74d0d6f5a864461e83f82f
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
-ms.translationtype: HT
+ms.openlocfilehash: ef605fcc7a76cb2432357856b814453b149a5296
+ms.sourcegitcommit: 5fc0f2cd1f2596fd10299333c826c501936dcd98
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967936"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41261877"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
 
@@ -200,7 +200,7 @@ ms.locfileid: "39967936"
 - [Office 365 安全性與合規性中心權限](permissions-in-the-security-and-compliance-center.md)
 - [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
-## <a name="some-differences-between-threat-exporter-and-real-time-detections"></a>威脅總管和即時偵測的一些差異
+## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>某些威脅總管和即時偵測之間的差異
 
  - Office 365 ATP 方案 1 提供**即時偵測**報告，而 Office 365 ATP 方案 2 提供**威脅總管**。
  - **即時偵測**報告可讓您即時檢視偵測。 **威脅總管**也有這個功能，但也能讓您檢視特定攻擊的其他詳細資料。
