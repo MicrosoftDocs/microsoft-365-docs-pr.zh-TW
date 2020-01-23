@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 9eb781ccaab7f7af00cc3c34bc7f7d9fb312fa26
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: cc43eb0c0f6aa77d6e58464e263920c578553887
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859643"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259991"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>ISO 9001:2015 品質管理系統標準
 
@@ -35,6 +36,7 @@ ISO 9001:2015 是為品質管理系統建立準則的一項國際標準。 它�
 - Genomics
 - Graph
 - Intune
+- Microsoft 受管理的電腦
 - Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - PowerApps 雲端服務，以獨立服務形式提供或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Power BI 雲端服務，以獨立服務形式提供或包含在 Office 365 品牌方案或套件中

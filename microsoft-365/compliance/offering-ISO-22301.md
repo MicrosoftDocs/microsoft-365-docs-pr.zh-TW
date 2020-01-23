@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1f4bfd1c219de2126bc6cb9443f3b899b99945c6
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 08f05939e6cd4ebdff81fb2fd2fda47bac05e882
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859693"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260031"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 商務持續性管理標準
 
@@ -39,6 +40,7 @@ Microsoft 是獲得商務持續性管理 ISO 22301 認證的第一個超大規�
 - Genomics
 - Graph
 - Intune
+- Microsoft 受管理的電腦
 - Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - [Office 365 商業版、政府版和教育版](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - PowerApps 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中

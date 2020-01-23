@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 73ad56a335b02de090becdc55e34dc3e90bc4389
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 6b73e6bbcd9dfee6e3c04ee5c44283633ffdbac4
+ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41022019"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41265891"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -51,13 +51,13 @@ ms.locfileid: "41022019"
 
 - Yammer 中的使用者和系統管理員活動
 
-- Microsoft Flow 中的使用者和系統管理員活動
+- Microsoft Power Automate 中的使用者和系統管理員活動
 
 - Microsoft Stream 中的使用者和系統管理員活動
 
 - Microsoft 工作場所分析中的分析師和系統管理員活動
 
-- Microsoft PowerApps 中的使用者和系統管理員活動
+- Microsoft Power Apps 中的使用者和系統管理員活動
 
 - Microsoft Flow 中的使用者和系統管理員活動
 
@@ -118,7 +118,7 @@ ms.locfileid: "41022019"
   |Dynamics 365 CRM|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |電子文件探索|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Exchange Online|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Flow|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Project|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -305,7 +305,7 @@ ms.locfileid: "41022019"
 |[角色管理活動](#role-administration-activities)|[目錄管理活動](#directory-administration-activities)|[電子文件探索活動](#ediscovery-activities)|
 |[進階電子文件探索活動](#advanced-ediscovery-activities)|[Power BI 活動](#power-bi-activities)|[Microsoft 工作場所分析](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams 活動](#microsoft-teams-activities)|[Microsoft Teams 醫療保健活動](#microsoft-teams-healthcare-activities)|[Yammer 活動](#yammer-activities)|
-|[Microsoft Flow 活動](#microsoft-flow-activities)|[Microsoft PowerApps 活動](#microsoft-powerapps)|[Microsoft Stream 活動](#microsoft-stream-activities)|
+|[Microsoft Power Automate 活動](#microsoft-power-automate-activities)|[Microsoft Power Apps 活動](#microsoft-power-apps-activities)|[Microsoft Stream 活動](#microsoft-stream-activities)|
 |[Microsoft Teams 活動](#microsoft-forms-activities)|[Exchange 系統管理員活動](#exchange-admin-audit-log)|||
 ||||
 
@@ -770,13 +770,13 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 |已檢視檔案|FileVisited|使用者檢視檔案。|
 ||||
 
-### <a name="microsoft-flow-activities"></a>Microsoft Flow 活動
+### <a name="microsoft-power-automate-activities"></a>Microsoft Power Automate 活動
 
-您可以在 Microsoft Flow 中搜尋活動的稽核記錄。 這些活動包括建立、編輯和刪除流程，以及變更流程權限。 如需有關 Flow 活動的稽核資訊，請參閱部落格：[安全性與合規性中心現在已有 Microsoft Flow 稽核事件](https://flow.microsoft.com/blog/security-and-compliance-center)。
+您可以在 Power Automate (之前稱為 Microsoft Flow) 中搜尋活動的稽核記錄。 這些活動包括建立、編輯和刪除流程，以及變更流程權限。 如需有關 Power Automate 活動的稽核資訊，請參閱部落格：[安全性與合規性中心現在已有 Microsoft Flow 稽核事件](https://flow.microsoft.com/blog/security-and-compliance-center)。
 
-### <a name="microsoft-powerapps"></a>Microsoft PowerApps
+### <a name="microsoft-power-apps-activities"></a>Microsoft Power Apps 活動
 
-您可以在 PowerApps 中搜尋應用程式相關活動的稽核記錄。 這些活動包括建立、啟動和發佈應用程式。 將權限指派給應用程式也會經過稽核。 如需所有 PowerApps 活動的說明，請參閱 [PowerApps 的活動記錄](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited)。
+您可以在 Power Apps 中搜尋應用程式相關活動的稽核記錄。 這些活動包括建立、啟動和發佈應用程式。 將權限指派給應用程式也會經過稽核。 如需所有 Power Apps 活動的說明，請參閱 [Power Apps 的活動記錄](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited)。
 
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream 活動
 

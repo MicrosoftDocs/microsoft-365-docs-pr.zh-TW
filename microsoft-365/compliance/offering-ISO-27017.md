@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: f58322fe915c811ba2613bef98116f910abc03d1
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 758e7d0f3e82afa6cfd4b90501bd84080d8f6303
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859683"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260011"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>資訊安全性控制的 ISO/IEC 27017:2015 工作條例規定
 
@@ -48,7 +49,8 @@ ISO/IEC 27017 在為雲端服務提供者和雲端服務客戶提供指導方針
 - Genomics
 - Graph
 - Intune
-- Microsoft Flow 雲端服務，以獨立服務形式提供或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
+- Microsoft 受管理的電腦
+- Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Office 365、Office 365 美國政府、Office 365 美國政府國防版和 Office 365 Germany
 - PowerApps 雲端服務，以獨立服務形式提供或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Power BI 雲端服務，以獨立服務形式提供或包含在 Office 365 品牌方案或套件中
@@ -60,7 +62,7 @@ Microsoft 雲端服務會每年隨著 ISO/IEC 27001:2013 的認證程序，針�
 
 - [Azure ISO 27017 認證](https://go.microsoft.com/fwlink/p/?linkid=2078005)
 - [Azure ISO 27017 評定報告](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Azure ISO 27017 適用性聲明](https://aka.ms/azureiso27017StatementofApplicability)
+- [Azure ISO 27017 適用性聲明](https://aka.ms/AzureISO27017StatementofApplicability)
 - [Office 365 ISO 27001、27018 和 27017 稽核評定報告](https://aka.ms/o365isoreport)
 
 ## <a name="frequently-asked-questions"></a>常見問題集

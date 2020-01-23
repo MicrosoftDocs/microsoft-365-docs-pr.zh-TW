@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 380e1b2fadc48c395fbd8c2b10c0d65a6ba01675
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: a5f68e235252208de664cc6dfdd62b6019d9abe6
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804256"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259981"
 ---
 # <a name="service-organization-controls-soc"></a>服務組織控制 (SOC)
 
@@ -52,6 +52,7 @@ Microsoft 已取得 SOC 1 Type 2、SOC 2 Type 2 和 SOC 3 報告。 通常，SOC
 - Dynamics 365 和 Dynamics 365 美國政府[詳細清單](https://aka.ms/d365-compliance-list)
 - Graph
 - Intune
+- Microsoft 受管理的電腦
 - Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Office 365、Office 365 美國政府版和 Office 365 美國政府國防版[詳細清單](https://go.microsoft.com/fwlink/p/?LinkID=2077751)；Yammer 已取得 SOC 1 Type 1 的報告
 - Office 365 德國
@@ -66,6 +67,7 @@ Microsoft 已取得 SOC 1 Type 2、SOC 2 Type 2 和 SOC 3 報告。 通常，SOC
 - Cloud App Security
 - 圖形
 - Intune
+- Microsoft 受管理的電腦
 - Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - PowerApps 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Power BI

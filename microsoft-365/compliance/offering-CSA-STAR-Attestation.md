@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b5f6ae8d7047ab36867938b65bf546a5ffb7b0a6
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 6a76a557ef391462db09d9b0b3d409ba2b4a042c
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860013"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260061"
 ---
 # <a name="cloud-security-alliance-csa-star-attestation"></a>雲端安全性聯盟 (CSA) STAR 證明
 
@@ -41,6 +42,7 @@ Microsoft Azure 和 Microsoft Intune 獲得 CSA STAR 證明。 STAR 證明可在
 - 雲端 App 安全性
 - 圖形
 - Intune
+- Microsoft 受管理的電腦
 - Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - PowerApps 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中 
 - Power BI
