@@ -18,8 +18,24 @@
       href: plan-for-security-and-compliance.md
 - name: 管理測試人員風險
   items:
-    - name: 保護使用者和裝置存取權
-      href: protect-access-to-data-and-services.md
+    - name: 測試人員風險管理 （預覽）
+      items:
+        - name: 了解測試人員風險管理 （預覽）
+          href: insider-risk-management.md
+        - name: 開始使用測試人員風險管理 （預覽）
+          href: insider-risk-management-configure.md
+        - name: 建立及管理測試人員風險原則 （預覽）
+          href: insider-risk-management-policies.md
+        - name: 調查測試人員風險提醒 （預覽）
+          href: insider-risk-management-alerts.md
+        - name: 測試人員風險情況下 （預覽） 採取動作
+          href: insider-risk-management-cases.md
+        - name: 檢閱資料與測試人員風險內容總管 （預覽）
+          href: insider-risk-management-content-explorer.md
+        - name: 將使用者新增至測試人員風險原則 （預覽）
+          href: insider-risk-management-users.md
+        - name: 建立測試人員風險通知 （預覽）
+          href: insider-risk-management-notices.md
     - name: 通訊規範 （預覽）
       items:
         - name: 了解通訊合規性 (預覽)
@@ -57,6 +73,8 @@
           href: controlling-your-data-using-customer-key.md
         - name: Office 365 中使用客戶金鑰的服務加密常見問題集
           href: service-encryption-with-customer-key-faq.md
+    - name: 保護使用者和裝置存取權
+      href: protect-access-to-data-and-services.md
     - name: 客戶加密箱
       href: customer-lockbox-requests.md
 - name: 管理資訊保護
