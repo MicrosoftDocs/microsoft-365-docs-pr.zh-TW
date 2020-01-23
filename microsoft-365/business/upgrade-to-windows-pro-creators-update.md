@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: '了解如何將 Windows 裝置升級到 Windows 10 專業版。 '
-ms.openlocfilehash: acad4a393e0870299df768fd4c821d9c1e83ecac
-ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
+ms.openlocfilehash: 3457b35c5f9e313e176664ca088e64ce5dd4f881
+ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995263"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41265851"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>將 Windows 裝置升級到 Windows 10 專業版
 
@@ -50,7 +50,7 @@ ms.locfileid: "40995263"
     - 閱讀如何使用此工具，並建立您的安裝媒體上的指示。 
 
 > [!NOTE]
-> 如果您有執行 Windows 7 專業版、 Windows 8 專業版或 Windows 8.1 專業版的 Windows 裝置，您的 Microsoft 365 商務版訂閱賦與您 Windows Pro 10 升級;您不需要產品金鑰。
+> 如果您有執行 Windows 7 專業版、 Windows 8 專業版或 Windows 8.1 專業版的 Windows 裝置，則您的 Microsoft 365 商務版訂閱賦與您 Windows Pro 10 升級。
     
 請參閱[為 Microsoft 365 商務版使用者的 Windows 裝置上設定](set-up-windows-devices.md)完成 Windows 10 裝置設定。 
   
