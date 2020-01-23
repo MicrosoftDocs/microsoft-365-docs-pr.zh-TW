@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b14ef9970aa709ad5e23fdae467992497a1331e8
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 81b7a7c3db69d1c20f9a9cd8c6ea4a37b481ce59
+ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260137"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41269384"
 ---
 # <a name="battery-insights"></a>電池深入解析
 此檢視提供您的 Microsoft 受管理的電腦裝置電源、 電和應用程式使用狀況計量。 進行這些工作，應用程式被視為 「 使用 」 中，如果它正在執行，並在焦點。
@@ -43,8 +43,6 @@ ms.locfileid: "41260137"
 - 其他
 
 「 其他 」 可能包含能源所消耗的各種來源，例如磁碟活動、 行動寬頻使用量和能源至內部的抗拒遺失。 
-
-應用程式中顯示 * * Top 能源取用者 」
 
 您可以篩選此檢視，以顯示只有前景應用程式、 背景應用程式]，或兩者皆使用功能表右上角。 前景應用程式 」 是指有鎖 28 天內，例如選取某個項目與滑鼠與使用者互動。
 

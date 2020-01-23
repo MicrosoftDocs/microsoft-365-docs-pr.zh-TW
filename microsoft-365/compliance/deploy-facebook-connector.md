@@ -1,5 +1,5 @@
 ---
-title: 部署封存 Facebook 資料的連接器
+title: 部署封存的頁面 Facebook 商務資料的連接器
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,23 +10,19 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
-description: 系統管理員可以設定原生的連接器，以匯入並封存至 Office 365 的 Facebook 商務頁面。 此資料會匯入至 Office 365 之後，您可以使用合規性功能，例如合法持有、 內容搜尋和保留原則來管理您的組織 Facebook 資料的控管。
-ms.openlocfilehash: bb348c6e08151d63e92973d3f262704357e40814
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+description: 系統管理員可以設定原生的連接器，以匯入並封存至 Microsoft 365 的 Facebook 商務頁面。 此資料會匯入至 Microsoft 365 之後，您可以使用合規性功能，例如合法持有、 內容搜尋和保留原則來管理您的組織 Facebook 資料的控管。
+ms.openlocfilehash: 1222a82e3a3b8415aa3fc98cd3c06376e491beb0
+ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247476"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41269410"
 ---
-# <a name="deploy-a-connector-to-archive-facebook-data"></a>部署封存 Facebook 資料的連接器
+# <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>部署封存的頁面 Facebook 商務資料的連接器
 
-本文包含的逐步程序來部署使用 Office 365 匯入服務 Facebook 商務頁面的資料匯入至 Office 365 的連接器。 此程序的高階概觀與部署的 Facebook 連接器所需的必要條件清單，請參閱[使用連接器來封存 Facebook Office 365 （預覽） 中的資料](archive-facebook-data-with-sample-connector.md)。 
+本文包含部署 Facebook 商務頁面的資料匯入至 Microsoft 365 使用 Microsoft 365 匯入服務的連接器的逐步程序。 此程序的高階概觀與部署的 Facebook 連接器所需的必要條件清單，請參閱[設定連接器，以封存 Facebook 資料](archive-facebook-data-with-sample-connector.md)。 
 
-## <a name="step-1-download-the-package"></a>步驟 1： 下載套件
-
-從 [版本] 區段中，GitHub 儲存機制中下載預先建立的套件<https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>。 在 [最新版本中，下載 zip 檔名為**SampleConnector.zip**。 您將此 zip 檔案上傳到步驟 4 中的 Azure。
-
-## <a name="step-2-create-an-app-in-azure-active-directory"></a>步驟 2： 在 Azure Active Directory 中建立的應用程式
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>步驟 1: Azure Active Directory 中建立的應用程式
 
 1. 移至 [<https://portal.azure.com>並使用 Office 365 全域系統管理員帳戶的認證登入。
 
@@ -66,77 +62,35 @@ ms.locfileid: "41247476"
 
 10. 移至**資訊清單**，然後複製 identifierUris （這也稱為 AAD 應用程式的 Uri） 以反白顯示下列螢幕擷取畫面。 複製到文字檔或其他儲存位置的 AAD 應用程式的 Uri。 您在步驟 6 中使用。
 
-   ![移至資訊清單，並將複製的 AAD 應用程式的 Uri](media/FBCimage10.png)
+    ![移至資訊清單，並將複製的 AAD 應用程式的 Uri](media/FBCimage10.png)
 
-## <a name="step-3-create-an-azure-storage-account"></a>步驟 3： 建立 Azure 儲存體帳戶
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>步驟 2： 部署至您的 Azure 帳戶從 GitHub 連接器 」 的 web 服務
 
-1. 移至 Azure 的首頁上，為您的組織。
+1. 移至[這個 GitHub 網站](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet)，然後按一下 [**部署至 Azure**。
 
-    ![移至 Azure 的 [首頁] 頁面](media/FBCimage11.png)
+    ![按一下 [部署至 Azure](media/FBCimage11.png)
 
-2. 按一下 [**建立資源**，然後在 [搜尋] 方塊中輸入**儲存體帳戶**。
+2. 按一下 [**部署至 Azure**之後，您將會重新導向至自訂的範本] 頁面上使用 Azure 入口網站。 填入的**基本概念**和**設定**詳細資料，然後按一下 [**購買**。
 
-    ![按一下 [建立資源] 和 [類型儲存體帳戶](media/FBCimage12.png)
+    - **訂閱：** 選取您想要部署 Facebook 商務頁面連接器 web 服務，以您 Azure 訂用帳戶。
+    
+    - **資源群組：** 選擇或建立新的資源群組。 資源群組是保留 Azure 解決方案的相關的資源的容器。
 
-3. 按一下 [**儲存**]，然後按一下 [**儲存體帳戶**。
+    - **位置：** 選擇的位置。
 
-    ![按一下儲存，然後按一下 [儲存體帳戶](media/FBCimage13.png)
+    - **Web 應用程式名稱：** Web 應用程式提供連接器的唯一名稱。 對名稱必須是長度為 3 並 18 個字元之間。 此名稱用來建立 Azure 應用程式服務的 URL;例如，如果您提供**fbconnector**的 Web 應用程式名稱然後 Azure 應用程式服務的 URL 將會是**fbconnector.azurewebsites.net**。
+    
+    - **tenantId:** 您在步驟 1 中的 Azure Active Directory 中建立 Facebook 連接器應用程式之後複製您 Microsoft 365 組織租用戶識別碼。
+    
+   - **APISecretKey:** 您可以為密碼輸入任何值。 這用來存取在步驟 5 中的連接器 web 應用程式。
+   
+     ![按一下 [建立資源] 和 [類型儲存體帳戶](media/FBCimage12.png)
 
-4. 在 [**建立儲存體帳戶**] 頁面上，在 [訂閱] 方塊中，選取**Pay-As-You-Go**或取決於哪些類型的 Azure 訂用帳戶必須**免費試用版**。 然後選取或建立資源群組。
+3. 部署成功後，看起來類似下列的螢幕擷取畫面] 頁面上：
 
-    ![選取 [預付或免費試用版](media/FBCimage14.png)
+     ![按一下儲存，然後按一下 [儲存體帳戶](media/FBCimage13.png)
 
-5. 輸入儲存體帳戶的名稱。
-
-    ![輸入儲存體帳戶的名稱](media/FBCimage15.png)
-
-6. 檢閱，然後按一下 [**建立**]，以建立儲存體帳戶。
-
-    ![建立儲存體帳戶](media/FBCimage16.png)
-
-7. 在一段時間後按一下 [**重新整理**，然後按一下 [瀏覽至儲存體帳戶的 [**移至資源**。
-
-    ![瀏覽至儲存體帳戶](media/FBCimage17.png)
-
-8. 在左側的導覽窗格中，按一下 [**便捷鍵**。
-
-    ![按一下 [便捷鍵](media/FBCimage18.png)
-
-9. 複製**連接字串**，並將它儲存到文字檔或其他儲存位置。 您使用此建立 web 應用程式資源時。
-
-    ![複製連接字串，並將它儲存](media/FBCimage19.png)
-
-## <a name="step-4-create-a-new-web-app-resource-in-azure"></a>步驟 4： 在 Azure 中建立新的 web 應用程式資源
-
-1. 在 [**首頁**] 頁面在 Azure 入口網站中，按一下 [**建立資源\>每個項目\>Web 應用程式**。 在 [ **Web 應用程式**] 頁面上，按一下 [**建立**]。 
-
-   ![建立新的 web 應用程式資源](media/FBCimage20.png)
-
-2. 填入詳細資料 （如下所示），然後再建立 Web 應用程式。 請注意，您在 [**應用程式名稱**] 方塊中輸入的名稱，用於建立 Azure 應用程式服務的 URL;例如，fbconnector.azurewebsites.net。
-
-   ![填入詳細資料，然後再建立 Web 應用程式](media/FBCimage21.png)
-
-3. 移至新建立的 web 應用程式資源，按一下 [**應用程式設定**]，請在左側的導覽窗格中。 應用程式設定] 下按一下 [新增新的設定，新增下列三個設定： 使用的值 （從複製到文字檔先前的步驟）： 
-
-    - **APISecretKey** – 您可以為密碼輸入任何值。 這用來存取在步驟 7 中的連接器 web 應用程式。
-
-    - **StorageAccountConnectionString** -連接字串您在步驟 3 中建立 Azure 儲存體帳戶之後所複製的 Uri。
-
-    - **tenantId** – 您在步驟 2 中的 Azure Active Directory 中建立 Facebook 連接器應用程式之後複製您 Office 365 組織租用戶識別碼。
-
-    ![輸入應用程式設定](media/FBCimage22.png)
-
-4. **一般設定**] 下按一下 [**上**旁**Always On**。 按一下 [**儲存**] 頁面的頂端儲存應用程式的設定。
-
-   ![儲存應用程式設定](media/FBCimage23.png)
-
-5. 最後一個步驟是將連接器 app 原始程式碼上傳至 Azure 中您在步驟 1 中下載。 在網頁瀏覽器中，移至 https://<AzureAppResourceName>.scm.azurewebsites.net/ZipDeployUi。 例如，如果您的 Azure 應用程式資源 （這在本節中的步驟 2 中所命名） 的名稱是**fbconnector**，然後您會移至https://fbconnector.scm.azurewebsites.net/ZipDeployUi。 
-
-6. 拖放到此頁面 SampleConnector.zip （，您在步驟 1 中下載）。 將檔案上傳並部署成功後，看起來類似下列的螢幕擷取畫面] 頁面上：
-
-   ![將拖放到此頁面 SampleConnector.zip](media/FBCimage24.png)
-
-## <a name="step-5-register-the-facebook-app"></a>步驟 5： 註冊 Facebook 應用程式
+## <a name="step-3-register-the-facebook-app"></a>步驟 3： 註冊 Facebook 應用程式
 
 1. 移至 [ <https://developers.facebook.com>，登入之帳戶的組織的 Facebook 商務頁面、 使用的認證，然後按一下 [**新增新的應用程式**。
 
@@ -204,7 +158,7 @@ ms.locfileid: "41247476"
 
     ![取得由 Facebook 檢閱應用程式](media/FBCimage40.png)
 
-## <a name="step-6-configure-the-connector-web-app"></a>步驟 6： 設定連接器的 web 應用程式
+## <a name="step-4-configure-the-connector-web-app"></a>步驟 4： 設定連接器的 web 應用程式
 
 1. 移至 https://\<AzureAppResourceName>.azurewebsites.net （其中 AzureAppResourceName 是您在步驟 4 中名為您 Azure 應用程式資源的名稱），例如，如果名稱為**fbconnector**，請移至`https://fbconnector.azurewebsites.net`。 應用程式的 [首頁] 頁面上看起來像下列螢幕擷取畫面中：
 
@@ -214,82 +168,66 @@ ms.locfileid: "41247476"
  
    ![按一下 [設定] 頁面中，會顯示號](media/FBCimage42.png)
 
-3. 在租用戶識別碼] 方塊中，輸入或貼上您的租用戶識別碼 （您在步驟 2 中所取得）。 在 [密碼] 方塊中，輸入或貼上 APISecretKey （，您在步驟 2 中所取得），，然後按一下要顯示 [**設定詳細資料**] 頁面上**設定的組態設定**。
+3. 在租用戶識別碼] 方塊中，輸入或貼上您的租用戶識別碼 （您在步驟 2 中所取得）。 在 [密碼] 方塊中，輸入或貼上 APISecretKey （，您在步驟 2 中所取得），，然後按一下要顯示 [組態詳細資料] 頁面上**設定的組態設定**。
 
     ![使用您的租用戶識別碼和密碼登入，然後移至設定詳細資料頁面](media/FBCimage43.png)
 
-4. [**設定的詳細資訊**，請輸入下列組態設定 
+4. 輸入下列組態設定 
 
-   - **Facebook 應用程式識別碼**– 您在步驟 5 中所取得的 Facebook 應用程式的應用程式識別碼。
-   - **Facebook 應用程式密碼**– 您在步驟 5 中所取得的 Facebook 應用程式的應用程式密碼。
-   - **Facebook webhooks 驗證權杖**– 您在步驟 5 中建立的驗證權杖。
-   - **AAD 應用程式識別碼**– 您在步驟 2 中建立的 Azure Active Directory 應用程式的應用程式識別碼。
-   - **AAD 應用程式密碼**– 您在步驟 4 中建立的 APISecretKey 密碼的值。
-   - **AAD 應用程式的 Uri** – AAD 應用程式在步驟 2; 中所取得的 Uri例如， `https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213`。
-   - **App 觀點檢測機碼**– 保留此方塊空白。
+   - **Facebook 應用程式識別碼：** 您在步驟 3 中所取得的 Facebook 應用程式的應用程式識別碼。
+   
+   - **Facebook 應用程式密碼：** 您在步驟 3 中所取得的 Facebook 應用程式之應用程式密碼。
+   
+   - **Facebook webhooks 驗證權杖：** 您在步驟 3 中建立驗證權杖。
+   
+   - **AAD 應用程式識別碼：** 您在步驟 1 建立的 Azure Active Directory 應用程式的應用程式識別碼。
+   
+   - **AAD 應用程式密碼：** 您在步驟 1 建立的 APISecretKey 密碼值。
 
 5. 按一下 [**儲存**] 以儲存連接器設定。
 
-## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>步驟 7： 設立安全性 & 合規性中心中的自訂連接器
+## <a name="step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center"></a>步驟 5： 設定 Microsoft 365 合規性中心中的 Facebook 連接器
 
-1. 移至 [ <https://protection.office.com> ，然後按一下 [**資訊控管\>匯入\>封存協力廠商資料**。
+1. 移至 [ [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然後按一下 [從左側的 [**資料連接器**
 
-   ![移至安全性與合規性中心，按一下 [控管 > 匯入 > 封存協力廠商資料的資訊](media/FBCimage44.png)
+2. 在 [**資料連接器 （預覽）** 頁面的 [ **Facebook 商務頁面**，按一下 [**檢視**]。
 
-2.  按一下 [**新增連接器**]，然後按一下 [ **Facebook 頁面**。
+3. 在**Facebook 商務頁面**] 頁面上，按一下 [**新增連接器**]。
 
-    ![新增 Facebook 連接器設定連接器](media/FBCimage46.png)
+4. 在**服務中的條款**] 頁面上，按一下 [**接受**]。
 
-3.  在 [**新增連接器應用程式**] 頁面中，輸入下列資訊，然後按一下 [**驗證連接器**。
+5.  在**您的連接器應用程式新增認證**] 頁面中，輸入下列資訊，然後按一下 [**驗證連線**。
 
-    - 在第一個方塊中，輸入連接器名稱，例如**Facebook**。
-    - 在第二個方塊中，輸入或貼上您在步驟 4 中新增 APISecretKey 的值。
-    - 在第三個方塊中，輸入或貼上的 Azure 應用程式服務 URL;例如`https://fbconnector.azurewebsites.net`。
- 
-    成功驗證連接器之後，按一下 [**下一步**]。
+    ![輸入連接器應用程式的認證](media/TCimage38.png)
+
+    - 在 [**名稱**] 方塊中，輸入連接器，例如**Facebook 新聞] 頁面**的名稱。
     
-    ![在成功驗證連接器之後，按 [下一步]](media/FBCimage47.png)
+    - 在 [**連線 URL** ] 方塊中，輸入或貼上的 Azure 應用程式服務 URL;例如`https://fbconnector.azurewebsites.net`。
+    
+    - 在 [**密碼**] 方塊中，輸入或貼上您在步驟 2 中新增 APISecretKey 的值。
+    
+    - 在**Azure 應用程式識別碼**] 方塊中，輸入或貼上也稱為為您在步驟 1 建立的 AAD 應用程式 ID （用戶端） 的應用程式識別碼的值。
+ 
+6. 連線成功驗證之後，按一下 [**下一步**]。
 
-4.  按一下 [**登入與連接器應用程式**。
+7. 在 [**授權 Microsoft 365，以匯入資料**] 頁面上，輸入或貼上 APISecretKey 再次並再按一下 [**登入 web 應用程式**。
 
-    ![按一下 [登入與連接器應用程式](media/FBCimage45.png)
-
-5. 輸入或貼上 APISecretKey 一次，然後按一下 [**連接器服務的登入**。
-
-   ![輸入或貼上 APISecretKey，然後按一下 [登入] 按鈕](media/FBCimage48.png)
-
-6. 按一下 [**登入與 Facebook**。
-
-   ![按一下 [* * 與 Facebook 的登入](media/FBCimage49.png)
-
-7. 在**登入 Facebook** ] 頁面上，使用登入認證之帳戶的組織的 Facebook 商務頁面。 請確定您指派給貴組織的 Facebook 商務頁面的管理員角色登入 Facebook 帳戶
+8. 在**設定 Facebook 連接器應用程式**] 頁面上，按一下 [**登入與 Facebook**和登入之帳戶的組織的 Facebook 商務頁面使用的認證。 請確定您指派給貴組織的 Facebook 商務頁面的管理員角色登入 Facebook 帳戶。
 
    ![登入 Facebook](media/FBCimage50.png)
 
-8. 按一下 [**選取頁面**，以選擇您想要在 Office 365 中封存的貴組織的業務頁面]。
-
-   ![按一下 [選取頁面，以顯示貴組織的業務頁面](media/FBCimage51.png)
-
-9. 受管理的 Facebook 帳戶，登入商務頁面清單隨即顯示。 選取 [封存，然後按一下 [**儲存**] 頁面。
+9. 受管理的 Facebook 帳戶，登入商務頁面清單隨即顯示。 選取 [頁面以封存，然後按一下 [**下一步**]。
 
     ![選取您想要保存組織 business 頁面](media/FBCimage52.png)
 
-10. 按一下 [**完成**] 結束安裝程式的連接器服務應用程式]。
+10. 按一下 [**繼續**] 以結束連接器服務應用程式的設定。
 
-    ![按一下 [完成] 結束連接器服務應用程式](media/FBCimage53.png)
+11. 在 [**設定篩選器**] 頁面上，您可以套用篩選器，一開始匯入特定天數的項目。 選取 [保留天數，，然後按一下 [**下一步**。
 
-11. 在 [**設定篩選器**] 頁面中，您可以套用篩選器來匯入 （和封存） 特定天數的項目。 按 [下一步]****。
+12. 在 [**選擇儲存位置**] 頁面上，輸入 Facebook 項目會被匯入，並再按 [**下一步**，Microsoft 365 信箱的電子郵件地址。
 
-    ![套用篩選器來匯入特定天數的項目](media/FBCimage54.png)
+13. 在**提供系統管理員同意**，按一下**提供同意**，然後遵循的步驟。 您必須是全域系統管理員提供 Office 365 匯入服務來存取您的組織中資料的同意。
 
-12. 在 [**設定儲存體帳戶**] 頁面上，選取先前選取的 Facebook 商務頁面中的項目將會匯入至 Office 365 信箱。
+14. 按 [**下一步**檢閱連接器設定，然後按一下 [**完成**] 以完成連接器設定。
 
-    ![指定 Office 365 信箱項目從 Facebook 匯入封存](media/FBCimage55.png)
-
-13. 檢閱您的設定，然後按一下 [**完成**] 以完成安全性 & 規範中心的連接器設定。
-
-    ![檢閱連接器設定](media/FBCimage56.png)
-
-14. 移至**封存協力廠商資料**頁面才能看見匯入程序的進度。
-
-    ![移至封存協力廠商資料] 頁面上，以追蹤匯入程序](media/FBCimage58.png)
+15. 在合規性中心] 中，移至**資料連接器**] 頁面上，然後按一下 [**連接器**] 索引標籤，若要查看匯入程序的進度。

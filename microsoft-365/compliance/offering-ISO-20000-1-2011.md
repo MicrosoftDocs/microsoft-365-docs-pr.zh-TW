@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 705b59a5ae499a580086304abe91a9318bb36fcb
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4ae0df3ddc8eec28cc6f29bddd0a46a09d33b0dc
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859703"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260041"
 ---
 # <a name="isoiec-20000-12011-information-technology-service-management"></a>ISO/IEC 20000-1:2011 資訊技術服務管理
 
@@ -37,6 +38,7 @@ ISO 20000-1:2011 在 2005 年的聯合 ISO/IEC 小組委員會中發佈並於 20
 - [Azure 和 Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Intune
+- Microsoft 受管理的電腦
 - Microsoft PowerApps
 - Microsoft Flow
 - Microsoft Graph
@@ -46,7 +48,7 @@ ISO 20000-1:2011 在 2005 年的聯合 ISO/IEC 小組委員會中發佈並於 20
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
-Azure、Intune、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft Datacenter 的 2017 ISO 20000-1 文件
+Azure 2017 ISO 20000-1 文件、Intune、Microsoft 受管理的電腦、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft Datacenter
 
 - [評定報告](https://go.microsoft.com/fwlink/p/?linkid=2077810)
 - [認證](https://go.microsoft.com/fwlink/p/?linkid=2077815)

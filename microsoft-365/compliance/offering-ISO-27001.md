@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 67cb8cd6a7320f0b2ff79566be4cf6c6fa3f67a6
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: efedbdd8230b5fac81b59ca51c0fe863ab4f0c2a
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "39233736"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260111"
 ---
 # <a name="compliance-offerings-isoiec-270012013-information-security-management-standards"></a>合規性方案：ISO/IEC 27001:2013 資訊安全性管理標準
 
@@ -43,6 +44,7 @@ ISO/IEC 27001 在國際上的接受度和適用性，是取得此標準認證為
 - Graph
 - Health Bot
 - Intune
+- Microsoft 受管理的電腦
 - Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - [Office 365、Office 365 美國政府和 Office 365 美國政府國防版](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 德國
@@ -60,7 +62,7 @@ ISO/IEC 27001 在國際上的接受度和適用性，是取得此標準認證為
 
 ### <a name="azure"></a>Azure
 
-- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、OMS 服務對應、PowerApps、Power BI、Stream 及 Microsoft Datacenter - ISO 27001 認證](https://go.microsoft.com/fwlink/p/?linkid=2078342)
+- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、Microsoft 受管理的電腦、OMS 服務對應、PowerApps、Power BI、Stream 及 Microsoft Datacenter - ISO 27001 認證](https://go.microsoft.com/fwlink/p/?linkid=2078342)
 
 ### <a name="office-365"></a>Office 365
 
@@ -88,7 +90,7 @@ ISO/IEC 27001 在國際上的接受度和適用性，是取得此標準認證為
 
 ### <a name="azure"></a>Azure
 
-- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、OMS 服務對應、PowerApps、Power BI、Stream 及 Microsoft Datacenter - ISO 27001 和 27018 稽核評定報告](https://go.microsoft.com/fwlink/p/?linkid=2078010)
+- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、Microsoft 受管理的電腦、OMS 服務對應、PowerApps、Power BI、Stream 及 Microsoft Datacenter - ISO 27001 和 27018 稽核評定報告](https://go.microsoft.com/fwlink/p/?linkid=2078010)
 - [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、OMS 服務對應、PowerApps、Power BI、Stream 及 Microsoft Datacenter - ISO 27001 和 27018 適用性聲明 (SOA)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
 ### <a name="office-365"></a>Office 365

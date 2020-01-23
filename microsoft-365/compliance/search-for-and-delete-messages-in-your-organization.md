@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用 Office 365 中安全性與合規性中心的搜尋和清除功能，可搜尋並刪除組織中所有信箱的電子郵件訊息。
-ms.openlocfilehash: 0c2b54b8e2d18a91075c577d65d7023e3b1d2c44
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 53ec50ddd42e1d17580f4b1581ef8d8fe02f97bf
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39218858"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259971"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>搜尋並刪除 Office 365 組織中的電子郵件
 
@@ -39,7 +39,7 @@ ms.locfileid: "39218858"
   
 ## <a name="before-you-begin"></a>開始之前
 
-- 若要建立和執行內容搜尋，您必須是「eDiscovery 管理員」**** 角色群組的成員，或者獲指派「合規性搜尋」**** 管理角色。 若要刪除郵件，您必須是「組織管理」**** 角色群組的成員，或者獲指派「搜尋及清除」**** 管理角色。 如需新增使用者至角色群組的詳細資訊，請參閱[讓使用者能夠存取 Office 365 安全性與合規性中心](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+- 若要建立和執行內容搜尋，您必須是「eDiscovery 管理員」**** 角色群組的成員，或者獲指派「合規性搜尋」**** 管理角色。 若要刪除郵件，您必須是「組織管理」**** 角色群組的成員，或者獲指派「搜尋及清除」**** 管理角色。 如需新增使用者至角色群組的詳細資訊，請參閱[在安全性與合規性中心中指派電子文件探索權限](assign-ediscovery-permissions.md)。
     
 - 您必須使用安全性與合規性中心 PowerShell 來刪除郵件。 如需如何連線的相關指示，請參閱[步驟 2](#step-2-connect-to-security--compliance-center-powershell)。
     

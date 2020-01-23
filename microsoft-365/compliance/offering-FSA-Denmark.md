@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 89804f5f5f10d06879effd411cec4a7c52037620
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 02cde8915691565614e3d1d04a1fc57ed9a718cb
+ms.sourcegitcommit: 2eb4539291f5035b7bef746df89fbcc6faa17257
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859793"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41263325"
 ---
 # <a name="financial-supervisory-authority-fsa-denmark"></a>金融監督管理局 (FSA) 丹麥
 
@@ -36,7 +37,7 @@ FSA 與歐洲銀行業管理局 (EBA) 合作。「EBA 為獨立的歐盟機關�
 
 ## <a name="microsoft-and-the-fsa"></a>Microsoft 和 FSA
 
-為了協助指導丹麥的金融機構考慮將業務功能委外至雲端，Microsoft 發佈了[丹麥金融機構合規性檢查清單](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf /5fa5cdde-3219-4e95-946d-0c0d05494362)。 透過檢閱並完成檢查清單，金融機構可以採用 Microsoft 商務雲端服務，並能有符合適用法規需求的信心。
+為了協助指導丹麥的金融機構考慮將業務功能委外至雲端，Microsoft 發佈了[丹麥金融機構合規性檢查清單](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf)。 透過檢閱並完成檢查清單，金融機構可以採用 Microsoft 商業雲端服務，並能有符合適用法規需求的信心。
 
 丹麥的金融機構將商務活動外包時，必須符合金融監督管理局 (FSA) 的要求，並在歐洲銀行業管理局 (EBA) 的廣泛原則架構內運作。 具體而言，這些要求著重於金融服務與雲端提供者之間的合約協議如何確保充分控制外包活動。
 

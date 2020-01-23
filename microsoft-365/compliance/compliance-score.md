@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性分數可幫助組織簡化和自動化的風險評估，並建議建議的動作，以協助地址的風險。
-ms.openlocfilehash: d7dfb40434ad3f6da0c728015f53580034ecfdfd
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 27720412ee8d2b03869b96a1ff9fce68b2fe6eb4
+ms.sourcegitcommit: 5fc0f2cd1f2596fd10299333c826c501936dcd98
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021889"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41261857"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft 合規性分數 （預覽）
 
@@ -110,20 +110,23 @@ Microsoft 合規性分數是在 Microsoft 365 合規性中心，以協助您了�
 
 預先設定的範本的合規性分數是：
 
-1. [ISO 27001: 2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-3. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
-4. [NIST 800-53 修訂 4](https://go.microsoft.com/fwlink/?linkid=2109075)
-5. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-6. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-7. [雲端安全聯盟 (CSA) 雲端控制項矩陣 (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
-8. [聯邦金融機構檢查委員會 (FFIEC) 的資訊安全性手冊](https://go.microsoft.com/fwlink/?linkid=2109077) 
-9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
-10. [FedRAMP 中度](https://go.microsoft.com/fwlink/?linkid=2108869)
-11. [歐盟 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
-12. [加州消費者隱私權法案 (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) （預覽）
-13. [次](https://go.microsoft.com/fwlink/?linkid=2113709) / [澳洲政府 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) （預覽）
-14. [Microsoft 365 的資料保護基準](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+1. [巴西一般資料保護 Law (LGPD)](https://go.microsoft.com/fwlink/?linkid=2115387)
+2. [加州消費者隱私權法案 (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) （預覽）
+3. [雲端安全聯盟 (CSA) 雲端控制項矩陣 (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+4. [歐盟 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
+5. [聯邦金融機構檢查委員會 (FFIEC) 的資訊安全性手冊](https://go.microsoft.com/fwlink/?linkid=2109077)
+6. [FedRAMP 中度](https://go.microsoft.com/fwlink/?linkid=2108869)
+7. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
+8. [次](https://go.microsoft.com/fwlink/?linkid=2113709) / [澳洲政府 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) （預覽）
+9. [ISO 27001: 2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+10. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+11. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+12. [Microsoft 365 的資料保護基準](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+13. [NIST 800-53 修訂 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+14. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+15. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+16. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
+17. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
 > [!NOTE]
 > 期間公開預覽，請移至合規性管理員中建立及管理自己的範本。

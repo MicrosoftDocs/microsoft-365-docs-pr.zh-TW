@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c3318be31335c9c9250b056e5972bb1c50ffbcbd
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 56a1836d4224534a8959816578869f4a809ec996
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860003"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260051"
 ---
 # <a name="cloud-security-alliance-csa-star-certification"></a>雲端安全性聯盟 (CSA) STAR 認證
 
@@ -46,15 +47,16 @@ Microsoft Azure、Microsoft Intune 和 Microsoft Power BI 均已獲得 STAR 認�
 - Graph
 - Health Bot
 - Intune
+- Microsoft 受管理的電腦
 - Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - OMS 服務對應
 - PowerApps 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Power BI：Power BI 雲端服務部分是以獨立服務或包含在 Office 365 品牌方案或套件中
 - Stream
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
-- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、OMS 服務對應、PowerApps、Power BI、Stream — CSA STAR 認證](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、Microsoft 受管理的電腦、OMS 服務對應、PowerApps、Power BI、Stream — CSA STAR 認證](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
