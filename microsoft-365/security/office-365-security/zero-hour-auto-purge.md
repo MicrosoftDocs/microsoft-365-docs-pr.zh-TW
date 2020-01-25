@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零時差自動清除 (ZAP) 是一種電子郵件防護功能，可偵測含垃圾郵件或惡意程式碼且已傳遞到使用者收件匣的郵件，然後將惡意內容呈現為無害。 ZAP 執行此作業的方式取決於偵測到的惡意內容類型。
-ms.openlocfilehash: 87d0837b74606a57c7a4aaee3150f70449b09b81
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: b2e2fb8fb0786f921b7c5330e92df519b0877d30
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238380"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515894"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零時差自動清除 - 防範垃圾郵件和惡意程式碼
 
@@ -36,7 +36,7 @@ ms.locfileid: "41238380"
 
 Office 365 每天都會即時更新反垃圾郵件引擎和惡意程式碼簽章。 不過，使用者仍可能因為各種原因而收到傳遞至其收件匣的惡意郵件，原因包括內容是否在傳遞給使用者後具攻擊性。 ZAP 可透過持續監視 Office 365 垃圾郵件和惡意程式碼簽章的更新，解決這種情況。 ZAP 可以尋找及移除已在使用者收件匣中的先前傳遞郵件。
 
-ZAP 動作對信箱使用者而言很順暢；但如果電子郵件遭到移動，使用者就不會收到通知。 郵件不能保留超過 2 天。
+ZAP 動作對信箱使用者而言很順暢；但如果電子郵件遭到移動，使用者就不會收到通知。 
 
 允許清單、[郵件流程規則](use-transport-rules-to-configure-bulk-email-filtering.md) (也稱為傳輸規則)，以及使用者規則或其他優先於 ZAP 的篩選條件。
 
@@ -67,8 +67,8 @@ ZAP 不會將任何郵件移到正在進行動態傳遞掃描或已經有惡意�
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>如何查看 ZAP 是否已移動您的郵件
 
-若要判斷 ZAP 是否已移動您的郵件，您可以使用[威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)或[威脅總管 (及即時偵測)](threat-explorer.md)。
-
+若要判斷 ZAP 是否已移動您的郵件，您可以使用[威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)或[威脅總管 (及即時偵測)](threat-explorer.md)。 請注意，系統巨集指令，為 ZAP 是未記錄在 exchange 信箱稽核記錄。 
+ 
 ## <a name="disable-zap"></a>停用 ZAP
 
 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連接至 Exchange Online Protection PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
@@ -114,6 +114,16 @@ ZAP 會根據反垃圾郵件原則中的網路釣魚和垃圾郵件動作設定�
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>如果郵件移到另一個資料夾 (例如收件匣規則)，該怎麼辦？
 
 除非郵件已遭刪除或位於垃圾郵件中，否則在此情況下，ZAP 仍可運作。
+
+### <a name="does-zap-change-the-email-header"></a>ZAP 會變更的電子郵件標頭嗎？
+
+ZAP 巨集指令不會以電子郵件的標頭進行任何變更。
+
+### <a name="how-does-zap-affect-mailboxes-on-hold"></a>ZAP 如何影響保留的信箱？
+
+ZAP 不會從保留的信箱移除郵件，因此將不會移動到隔離的郵件] 動作。 仍會將郵件移至 [垃圾郵件] 資料夾，如果原則所指定。 
+
+[如需信箱保留的詳細資訊，請按一下這裡。](https://docs.microsoft.com/exchange/policy-and-compliance/holds/holds?view=exchserver-2019)
 
 ## <a name="related-topics"></a>相關主題
 

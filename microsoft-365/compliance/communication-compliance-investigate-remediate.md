@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 322e74b846cc574b52708627d5f59dde3cfe9e80
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 221c773e04bd9b7a4e404d0ec6a5fd5695ca089c
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807382"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515754"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>調查和修復通訊合規性警示 (預覽)
 
@@ -58,7 +58,7 @@ ms.locfileid: "40807382"
 
 5. 選取要開啟 [**篩選器**的詳細資訊] 頁面上的**篩選器**控制項。
 
-6. 選取一或多個核取方塊以啟用這些警示的篩選器。
+6. 選取一或多個核取方塊以啟用這些警示的篩選器。 您可以選擇從眾多的篩選，包括*日期*、*寄件者*、*主旨/標題*、*相關性*，等等。
 
 7. 如果您想要儲存為預設篩選選取的篩選條件，請選取 [**儲存為預設值**]。 如果您想要使用此篩選器為已儲存的篩選，請選取 [**完成**]。
 

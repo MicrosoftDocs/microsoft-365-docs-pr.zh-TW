@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性分數可幫助組織簡化和自動化的風險評估，並建議建議的動作，以協助地址的風險。
-ms.openlocfilehash: 27720412ee8d2b03869b96a1ff9fce68b2fe6eb4
-ms.sourcegitcommit: 5fc0f2cd1f2596fd10299333c826c501936dcd98
+ms.openlocfilehash: 8a523878cb003e1cc676ea65d69f402ddf056e84
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41261857"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515674"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft 合規性分數 （預覽）
 
@@ -141,4 +141,4 @@ Microsoft 合規性分數是在 Microsoft 365 合規性中心，以協助您了�
 
 ## <a name="next-step-begin-setup"></a>下一步： 開始安裝
 
-登入、 設定權限，並了解在[合規性分數安裝](compliance-score-setup.md)您合規性分數儀表板。
+了解如何登入，設定權限，以及在[合規性分數安裝](compliance-score-setup.md)設定更新及儀表板檢視。

@@ -15,12 +15,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我們持續正在新增至 Microsoft 365 合規性中心的新功能、 修正的問題我們了解，並變更根據您的意見反應。 了解我們已經被最本月多。
-ms.openlocfilehash: d9ef94323eb054b5f3c815b3fac114a1175d104e
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: 5d9a4dbd1339fdcf44d1169e5dedc4ea5e0a9f09
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962412"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515854"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>What's new in Microsoft 365 合規性中心
 
@@ -55,6 +55,7 @@ ms.locfileid: "40962412"
 |解決方案目錄 （預覽） <br/>|解決方案目錄是您其中一個停駐點商店探索、 學習，以及快速入門我們的合規性和風險管理解決方案。 目錄被分成三個規範類別，每個包含構成該類別的解決方案詳細資料。 類別包含資訊保護 & 控管、 測試人員風險管理和探索 & 回應 <br/>|[解決方案目錄 （預覽） 的概觀](microsoft-365-solution-catalog.md)|
 |通訊規範 （預覽） <br/>|通訊合規性是新測試人員風險管理類別，可協助通訊風險降到最低，以協助您偵測、 擷取，並採取補救動作不適當的郵件在組織中的一部分。 解決方案擴充 Office 365 中的監督原則的功能簡介智慧型範本、 彈性修復工作流程等洞察力幾個新的增強功能。 <br/>|[Microsoft 365 （預覽） 的通訊合規性](communication-compliance.md)|
 |資料分類 （預覽） <br/>|我們新資料分類] 頁面包含強大的見解和工具，以協助您找出並評估如何機密資訊及標籤 （保留和敏感度） 中所使用的內容整個組織。 檢閱內容包含機密資訊，或必須套用的標籤、 標籤活動探索 Microsoft 365 位置不同，建立自訂機密資訊類型，以及執行更多功能。<br/>|[資料分類概觀 (預覽)](data-classification-overview.md)|
+|Trainable 相關性 （預覽） <br/>|此功能強大新工具會使用我們機器學習引擎協助識別您的組織，例如法規文件或員工協議中的內容類別。 建立之後，可以使用相關性數個合規性解決方案中偵測相關的內容和分類、 保護其、 保留，以及更多。<br/>|[開始使用可訓練的分類器 (預覽)](classifier-getting-started-with.md)|
 
 #### <a name="updated-compliance-solutions"></a>更新的合規性解決方案
 
@@ -75,7 +76,7 @@ ms.locfileid: "40962412"
 |資料連接器|資訊控管 # A0 封存協力廠商資料 <br/> https://protection.office.com/nativeconnector | 資料連接器 <br/> https://compliance.microsoft.com/connectorlanding |[封存協力廠商資料](archiving-third-party-data.md)|
 |資料外洩防護|資料外洩防護 <br/> https://protection.office.com/datalossprevention |資料外洩防護 <br/> https://compliance.microsoft.com/datalossprevention |[資料外洩防護概觀](data-loss-prevention-policies.md)|
 |資料主體要求 |資料隱私權 > 資料主體要求 <br/> https://protection.office.com/dsrcases |資料主體要求 <br/> https://compliance.microsoft.com/datasubjectrequest |[管理 GDPR 資料主體要求使用 DSR 案例工具](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
-|eDiscovery|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery # A0 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理電子文件探索案例](ediscovery-cases.md) |
+|電子文件探索|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery # A0 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理電子文件探索案例](ediscovery-cases.md) |
 |事件|記錄管理 # A0 事件 <br/> https://protection.office.com/events |記錄管理 > 事件] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[事件導向保留的概觀](event-driven-retention.md)|
 |檔案計畫|記錄管理 > 檔案計劃 <br/> https://protection.office.com/fileplan |記錄管理 > 檔案計劃] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[檔案計劃管理員的概觀](file-plan-manager.md)|
 |匯入 PST 檔案|資訊控管 > 匯入 PST 檔案 <br/> https://protection.office.com/importV2 |資訊控管 > 匯入] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[匯入組織的 PST 檔案的概觀](importing-pst-files-to-office-365.md)|

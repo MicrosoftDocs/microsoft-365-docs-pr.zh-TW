@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 Microsoft 合規性分數會根據 [地址風險採取的動作的個人化的分數的計算，並改善您的合規性狀態。
-ms.openlocfilehash: a94b1051af383041a89fa136ae490875ea48782d
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 9fbc2b2beca3a667b09c1a4ba790651a364d1bf0
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793657"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515574"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Microsoft 合規性分數 （預覽） 計算
 
@@ -43,11 +43,13 @@ ms.locfileid: "38793657"
 
 ## <a name="how-compliance-score-continuously-assesses-controls"></a>如何合規性分數持續評估控制項
 
-合規性分數自動透過 Microsoft 365 環境掃描，並會偵測到您系統的設定，連續且自動更新您的技術控制項狀態。 例如，如果您開啟在 Azure AD 入口網站中的多重要素驗證 (MFA)，合規性分數偵測設定，並會反映在控制存取的解決方案詳細資料。 相反地，如果您未啟用 MFA，合規性分數的旗標，為您要採取的建議動作。
+合規性分數自動透過 Microsoft 365 環境掃描，並會偵測到您系統的設定，連續且自動更新您的技術控制項狀態。 合規性分數作為基礎引擎執行監控使用安全分數。 [解更多關於安全分數，以及如何運作](../security/mtp/microsoft-secure-score.md)。
 
-合規性分數控制項狀態更新每隔 24 小時。 一旦您遵循建議實作控制項，您會看到控制項狀態更新的下一步] 一天。
+控制項狀態會更新您的合規性分數儀表板上每隔 24 小時。 一旦您遵循建議實作控制項，您會看到控制項狀態更新的下一步] 一天。
 
-公開預覽期間連續評估是提供部分的控制項，但非全部。
+例如，如果您啟用 Azure AD 入口網站中的多重要素驗證 (MFA)，合規性分數偵測設定，並會反映在控制存取的解決方案詳細資料。 相反地，如果您未啟用 MFA，合規性分數的旗標，為您要採取的建議動作。
+
+公開預覽期間連續評估是控制項，其中的部分可用但非全部。
   
 ## <a name="control-types-and-points"></a>控制項類型和點
 
@@ -78,8 +80,8 @@ ms.locfileid: "38793657"
 |:-----|:-----|
 | 必要的預防性 | 27 |
 | 選擇性的預防性 | 9  |
-| 偵測必要 | 3  |
-| 偵測選擇性 | 1  |
-| 必要的矯正措施 | 3  |
-| 修正了選擇性 | 1  |
+| 偵測必要 | 3 |
+| 偵測選擇性 | 1 |
+| 必要的矯正措施 | 3 |
+| 修正了選擇性 | 1 |
   

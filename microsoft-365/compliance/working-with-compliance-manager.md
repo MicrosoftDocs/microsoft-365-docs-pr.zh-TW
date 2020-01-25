@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派，並驗證 Microsoft 產品與相關的法規合規性活動。
-ms.openlocfilehash: 2bc7ccc4c6c236c0c730ac3fc651701d9a76bedf
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: db63f1b5cba2166ae8e4f922b84672677b52c4e9
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41022009"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515864"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>搭配使用 Microsoft Compliance Manager （預覽）
 
@@ -72,13 +72,25 @@ ms.locfileid: "41022009"
 
 ### <a name="controlling-automatic-secure-score-updates"></a>控制自動安全分數更新
 
-安全分數更新可以開啟自動的所有動作、 可以關閉的所有動作，或可以設定個別的動作。
+安全分數更新可以自動開啟的所有動作、 關閉的所有動作，或依照下列步驟來設定個別的巨集指令。
 
 1. [服務信任入口網站](https://servicetrust.microsoft.com)以全域管理員帳戶登入。
 
-2. 在服務信任入口網站上方的功能表列中，選取 [**系統管理員**，然後選擇**設定**。
+2. 在服務信任入口網站上方的功能表列中，[**更多**，選取 [**系統管理員**，然後選擇**設定**。
 
-4. 在 [**安全分數**] 索引標籤中，選取您所選擇的設定適當的按鈕。
+3. 在 [**安全分數**] 索引標籤中，選取 [對應] 按鈕，任一**開啟的所有動作**，請**關閉的所有動作**，或**設定每個動作。**
+
+如果您選擇**設定每個動作，** 採取下列額外的步驟，將開啟安全分數更新個別的動作：
+
+4. 從上方的功能表選取 [**合規性管理員**(附註： 請勿選取 「 合規性管理員 （傳統） 」)。
+
+5. 在您的畫面右上角中，選取 [**租用戶管理**。
+
+6. 在 [**客戶動作**] 窗格中，尋找您預定的動作，以在**受影響的動作**] 欄下省略符號 （**...**）。 按一下省略符號，然後選取 [**編輯]。**
+
+7. 切換**連續安全分數更新**切換切換至**上。**
+
+8. 選取 [**儲存。** 安全分數持續監視現在已為該動作。
 
 **附註：** 只有全域系統管理員可以開啟或關閉自動更新的所有動作。 合規性管理員中系統管理員可以全域開啟 [自動更新的個別的動作，但不適用於所有動作。
 

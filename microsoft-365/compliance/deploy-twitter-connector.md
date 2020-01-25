@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定原生的連接器，以匯入並封存至 Microsoft 365 Twitter 資料。 此資料會匯入至 Microsoft 365 之後，您可以使用合規性功能，例如合法持有、 內容搜尋和保留原則來管理您的組織 Twitter 資料的控管。
-ms.openlocfilehash: 5a7d7749f99615d9fd6858be05cc63153cfe1d31
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: 9bf0be8684eb18fbc022f4eefa798c5c9265b3d7
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269394"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515694"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>部署封存 Twitter 資料的連接器
 
@@ -56,9 +56,6 @@ ms.locfileid: "41269394"
 
    ![複製並儲存密碼](media/TCimage09.png)
 
-9. 移至**資訊清單**，然後複製 identifierUris （這也稱為 AAD 應用程式的 Uri） 以反白顯示下列螢幕擷取畫面。 複製到文字檔或其他儲存位置的 AAD 應用程式的 Uri。 您在步驟 6 中使用。
-
-    ![複製並儲存的 AAD 應用程式的 Uri](media/TCimage10.png)
 
 ## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>步驟 2： 部署至您的 Azure 帳戶從 GitHub 連接器 」 的 web 服務
 
