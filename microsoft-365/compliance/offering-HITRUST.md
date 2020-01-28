@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9b0448a3ed5cf36a909ebb14e0aadf2b8ac96610
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e6085446677e592425d5453aa350541590de1b9d
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804796"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558530"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>健康情況資訊信任聯盟 (HITRUST) 常見安全性架構 （csf） （機器翻譯）
 
@@ -43,7 +43,7 @@ HITRUST 提供三種程度的保證或評量層級： 自我評估、 CSF 驗證
 - Intune
 - [Office 365 和 Office 365 美國政府](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 Azure 與 Office 365 HITRUST CSF 憑證時才有效兩年。
 
@@ -58,9 +58,9 @@ Azure 與 Office 365 HITRUST CSF 憑證時才有效兩年。
 
 ## <a name="accelerate-your-hipaahitrust-compliance-when-using-office-365"></a>使用 Office 365 時，加速 HIPAA/HITRUST 合規性
 
-使用 Office 365 安全與合規性的方式與合規性管理員，可讓您進行風險評定針對像 NIST CSF 和 NIST 800-53 等的 HIPAA 和安全性控制架構的健康情況法規管理健全狀況資訊。 您可以依照逐步指引，了解如何實作及維護的資料保護控制項，可協助您符合醫療保健合規性責任。
+使用 Office 365 安全與合規性方式與合規性分數，可讓您執行像是 NIST CSF 和 NIST 800-53 等的 HIPAA 和安全性控制架構的健康情況法規風險評估管理健全狀況資訊。 您可以依照逐步指引，了解如何實作及維護的資料保護控制項，可協助您符合醫療保健合規性責任。
 
-[開始使用合規性管理員](https://go.microsoft.com/fwlink/p/?linkid=862650)
+[開始使用合規性分數](compliance-score.md)
 
 ## <a name="collaborate-with-microsoft-in-the-hitrust-shared-responsibility-program"></a>Microsoft 在 HITRUST 共用的責任程式與共同作業
 
@@ -95,7 +95,7 @@ Microsoft 提供相較於其他雲端服務提供者的最完整供應項目。 
 
 **Microsoft 是否提供 「 我的組織，以實作適當的控制項，使用 Office 365 時的指引？**
 
-是，您可以找到建議的客戶動作合規性管理員中，使用雲端服務時，跨 Microsoft 雲端解決方案，可協助您的組織符合複雜的合規性責任。 具體而言，對於 HITRUST CSF，我們建議您執行使用 NIST CSF 評估與 NIST 800-53 合規性管理員中的風險評定。 在評估，我們提供您的逐步指引和 Microsoft 解決方案可用來實作您的資料保護控制項。 您可以瞭解更多有關合規性管理員中此[白皮書](https://resources.office.com/ww-landing-m365e-gdpr-compliance-manager-whitepaper.html?lcid=en-us)。
+是，您可以在合規性分數找到建議的客戶動作，使用雲端服務時，跨 Microsoft 雲端解決方案，可協助您的組織符合複雜的合規性責任。 具體而言，對於 HITRUST CSF，我們建議您執行使用 NIST CSF 評估與 NIST 800-53 合規性分數的風險評定。 在評估，我們提供您的逐步指引和 Microsoft 解決方案可用來實作您的資料保護控制項。 您可以深入了解[Microsoft 合規性](compliance-score.md)分數的合規性分數。
 
 **如何邀請與 Microsoft？**
 

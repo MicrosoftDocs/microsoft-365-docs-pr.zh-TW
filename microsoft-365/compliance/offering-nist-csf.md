@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0fbe175d16a7b588e8c0cb3e7b5457459c314bdc
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 89296e2fb7b94bd74ee8ff617d818705fb844863
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804036"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558510"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
 
@@ -33,10 +33,10 @@ FICIC 參照全域辨識包括 NIST SP 800-53 的 NIST[的改良關鍵基礎結�
 
 NIST Cybersecurity Framework (CSF) 是一種自發性架構標準、 準則和最佳作法，管理 cybersecurity 相關風險所組成。 Microsoft 雲端服務已經過獨立、 協力廠商 FedRAMP 中度和高的比較基準稽核，並根據 FedRAMP 標準認證。 此外，HITRUST、 前置安全性和隱私權標準開發和 」 資格鑑定組織所執行的已驗證評定，透過 Office 365 認證來 NIST CSF 中指定的目標。
 
-了解如何開始加速合規性管理員和我們的 Azure 安全性與合規性藍圖了 NIST Cybersecurity Framework 部署：
+了解如何開始加速合規性分數和我們的 Azure 安全性與合規性藍圖了 NIST Cybersecurity Framework 部署：
 
 - [下載 Azure 的安全性與合規性藍圖-NIST CSF 風險評定檢查清單](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
-- [深入了解 Office 365 合規性管理員中的 NIST CSF 評估](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
+- [深入了解 Office 365 合規性分數 NIST CSF 評估](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -56,11 +56,11 @@ NIST Cybersecurity Framework (CSF) 標準可以是在雲端中具挑戰性。 �
 
 - [開始使用 Azure NIST CSF 藍圖](https://aka.ms/Azure-Blueprint-DoD-NIST)
 
-## <a name="perform-risk-assessment-on-office-365-using-nist-csf-in-compliance-manager"></a>使用 NIST CSF 合規性管理員中的 Office 365 上執行風險評定
+## <a name="perform-risk-assessment-on-office-365-using-nist-csf-in-compliance-score"></a>在 Office 365 中，使用 NIST CSF 合規性分數上執行風險評定
 
-Cybersecurity 保持重要管理問題的數位轉換紀元中。 為了協助您實作和您 Office 365 租用戶驗證安全性措施，Microsoft 會提供建議的客戶動作中 NIST CSF 評估合規性管理員中。
+Cybersecurity 保持重要管理問題的數位轉換紀元中。 為了協助您實作和您 Office 365 租用戶驗證安全性措施，Microsoft 會提供建議的客戶動作中 NIST CSF 評估在合規性分數。
 
-- [開始使用合規性管理員](https://aka.ms/compliancemanager)
+- [開始使用合規性分數](compliance-score.md)
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 了解如何將貴公司從 Microsoft 365 商務版移到 Microsoft 365 E3。
-ms.openlocfilehash: 7d10889a446543a3e9126aaaa1e3fbe6861f87a4
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 1cf6aa741c7f0b427a434d472df7169ef37c5418
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111867"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558040"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>從 Microsoft 365 商務版移轉至 Microsoft 365 E3
 
@@ -77,8 +77,8 @@ Microsoft 365 商務版具有您需要為您的小型企業，與簡單的裝置
 | 企業 CAL 套件 （Exchange、 SharePoint、 Skype、 Windows、 Microsoft 端點 Configuration Manager、 Windows Rights Management）| |       ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 
 | **合規性**        | | | 
 | 無限制的電子郵件封存 | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 
-| 合規性管理員    | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 
-| eDiscovery    | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 
+| 合規性分數/合規性管理員   | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 
+| 電子文件探索    | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 
 | 就地保留與訴訟暫止 | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 
 | 通訊記錄管理 (MRM) 保留標記和保留原則  | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 
 ||||

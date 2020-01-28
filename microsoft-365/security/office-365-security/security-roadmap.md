@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Microsoft 網路安全性小組對於實作安全性功能以保護您 Office 365 環境的主要建議。 '
-ms.openlocfilehash: f07363585917a7088a590e11e89794b924cfb992
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
-ms.translationtype: HT
+ms.openlocfilehash: 31dff93deca17fb5ba57ea16724d20a7ae0e187a
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971631"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558640"
 ---
 # <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Office 365 安全性藍圖 - 前 30 天、90 天和之後的首要工作
 
@@ -72,7 +72,7 @@ ms.locfileid: "39971631"
 |||
 |:-----|:-----|
 |適用範圍|工作|
-|安全性管理|• 檢查針對您環境建議動作的安全分數 ([https://securescore.office.com](https://securescore.office.com))。  <br/>  • 持續定期檢閱 Microsoft 365 安全性中心、Cloud App Security 和 SIEM 工具中的儀表板和報告。 <br/> • 尋找及實作軟體更新。 <br/> •使用 [攻擊模擬器](attack-simulator.md) (隨附於 [Office 365 威脅情報](office-365-ti.md)) 來進行魚叉式網路釣魚、密碼噴灑和暴力密碼破解攻擊的攻擊模擬。  <br/> • 藉由檢閱 Cloud App Security 中的內建報告 (在 [調查] 索引標籤上)，以尋找共用風險。 <br/> • 檢查 [合規性管理員](../../compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)，檢閱適用於貴組織的法規狀態 (例如 GDPR，NIST 800-171)。|
+|安全性管理|• 檢查針對您環境建議動作的安全分數 ([https://securescore.office.com](https://securescore.office.com))。  <br/>  • 持續定期檢閱 Microsoft 365 安全性中心、Cloud App Security 和 SIEM 工具中的儀表板和報告。 <br/> • 尋找及實作軟體更新。 <br/> •使用 [攻擊模擬器](attack-simulator.md) (隨附於 [Office 365 威脅情報](office-365-ti.md)) 來進行魚叉式網路釣魚、密碼噴灑和暴力密碼破解攻擊的攻擊模擬。  <br/> • 藉由檢閱 Cloud App Security 中的內建報告 (在 [調查] 索引標籤上)，以尋找共用風險。 <br/> • 檢查[合規性分數](https://docs.microsoft.com/microsoft-365/compliance/compliance-score)」 來檢閱套用至組織 （例如 GDPR、 NIST 800-171) 的規定的狀態。|
 |威脅防護| 針對系統管理員帳戶實作增強型防護： <br/> • 為系統管理活動設定[特殊權限存取工作站](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAW)。 <br/> • 設定 [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)。 <br/> • 設定安全性資訊和事件管理 (SIEM) 工具，以收集 Office 365、Cloud App Security 及其他服務 (包括 AD FS) 的記錄資料。 Office 365 稽核記錄只會儲存 90 天的資料。 在 SIEM 工具中擷取這項資料，可讓您將資料儲存更長的時間。|
 |身分識別和存取管理|• 為所有使用者啟用和強制執行 MFA。 <br/> • 實作一組[條件式存取及相關原則](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations) (部分機器翻譯)。 |
 |資訊保護| 改編和實作資訊保護原則。 這些資源包括範例： <br/> • [GDPR 的 Office 365 資訊保護](https://aka.ms/o365gdpr) <br/> • [保護 SharePoint Online 網站與檔案](https://docs.microsoft.com/Office365/enterprise/secure-sharepoint-online-sites-and-files) <br/> <br> 針對儲存在 Office 365 (而不是 Cloud App Security) 的資料，使用 Office 365 中的資料外洩防護原則及監視工具。 <br><br>針對進階警示功能 (資料外洩防護以外的功能) 搭配使用 Cloud App Security 和 Office 365。|

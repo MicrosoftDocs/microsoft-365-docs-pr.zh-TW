@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
-ms.openlocfilehash: a639c71753602ffd381c9240cf6e7273f3ba8bbe
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 90fde2475529200ab53411b5cb0c6d3c64de2fee
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38708057"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515664"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -299,6 +299,9 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 > 在開始此程序之前，請確定您是  *EDM\_DataUploaders*  安全性群組的成員，以及您電腦上的本機系統管理員。
 
 1. 下載並安裝 [EDM 上傳代理程式](https://go.microsoft.com/fwlink/?linkid=2088639)。 根據預設，安裝位置應該是 C:\\Program Files\\Microsoft\\EdmUploadAgent。
+
+> [!TIP]
+> 若要取得所支援命令參數的清單，請執行 agent no 無引數。 例如 'EdmUploadAgent.exe'。
 
 2. 若要授權 EDM 上傳代理程式，請開啟 Windows 命令提示字元 (以系統管理員身分)，然後執行下列命令：
 

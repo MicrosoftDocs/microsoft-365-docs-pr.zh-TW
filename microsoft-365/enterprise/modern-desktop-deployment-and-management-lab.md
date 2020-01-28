@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: 1d95edce079f515572c977913da2ee432514f983
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 435b8177fc97f9cd07ff78704605428e594e0dd8
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112507"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558580"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署的 Lab Kit
 
@@ -56,7 +56,7 @@ ms.locfileid: "41112507"
 
 ## <a name="step-by-step-labs"></a>**逐步實驗室**
 
-詳細的實驗室指南可透過多個部署和管理情節來引領您，包括：
+詳細的實驗室指南可透過多個部署和管理案例來引導您。 這些實驗室已針對 Intune 和 Configuration Manager 的最新版本 (版本 1910) 進行了更新。  
 
 ### <a name="device-and-app-readiness"></a>**裝置和應用程式整備**
 
@@ -116,9 +116,12 @@ ms.locfileid: "41112507"
   - Configuration Manager 中的 Office 365 專業增強版更新管理
   - 使用 Microsoft Intune 套用至 Windows 10 的行動裝置管理
 
-### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**下載 Windows 和 Office 部署的 Lab Kit**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+### <a name="new-windows-virtual-desktop"></a>**全新的 Windows 虛擬桌面**
+  - Windows 虛擬桌面：準備、部署、最佳化 
 
-*請使用寬頻來下載此內容，以強化您的下載體驗，並允許 30-45 分鐘進行自動佈建。實驗室環境最少需要 16 GB 可用記憶體及 150 GB 可用磁碟空間。如需最佳效能，建議使用 32 GB 可用記憶體。實驗室將在 2020 年 2 月 15 日到期。到期之前，將會發佈新的版本。*
+### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**下載 Windows 和 Office 的部署 Lab Kit**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+
+請使用寬頻來下載此內容，以強化您的下載體驗，並允許 30-45 分鐘進行自動佈建。實驗室環境最少需要 16 GB 可用記憶體及 150 GB 可用磁碟空間。如需最佳效能，建議使用 32 GB 可用記憶體。實驗室將在 2020 年 4 月 18 日到期。到期之前，將會發佈新的版本。**
 
 ## <a name="additional-guidance"></a>**其他指引**
 

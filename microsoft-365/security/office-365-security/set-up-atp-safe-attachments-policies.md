@@ -15,12 +15,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: 定義安全附件原則，避免您的組織受到電子郵件中惡意檔案的危害。
-ms.openlocfilehash: 0bafa8e21d3788871f9daf38aeeabd00abb97bec
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e38067230554b5d37f7dc4526e90ab4e63608900
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806716"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558620"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
 
@@ -93,6 +93,7 @@ ms.locfileid: "40806716"
 |**取代**|移除偵測到的惡意程式碼附件  <br/> 通知收件者附件已移除  <br/> 將偵測到惡意程式碼的郵件傳送到 [Office 365 中的隔離區](manage-quarantined-messages-and-files.md)，安全性系統管理員或分析者可以在此檢視並釋放 (或刪除) 這些郵件|提高收件者看到附件因為偵測到惡意程式碼而遭移除的可能性|
 |**動態傳遞**|立即傳送郵件  <br/> 將附件取代為預留檔案，直到掃描完成，然後在未偵測到惡意程式碼的情況下重新附加附件  <br/> 掃描期間會保留大部分 PDF 和 Office 檔案的預覽功能  <br/> 將偵測到惡意程式碼的郵件傳送到隔離區，安全性系統管理員或分析者可以在此檢視並釋放 (或刪除) 這些郵件  <br/> [了解 ATP 安全附件的動態傳遞和預覽](dynamic-delivery-and-previewing.md) <br/> |避免郵件延遲，同時為收件者抵禦惡意檔案  <br/> 執行掃描時，讓收件者以安全模式預覽附件|
 |**啟用重新導向**|當選取 [監視]、[封鎖] 或 [取代] 選項時套用  <br/> 將附件傳送到安全性系統管理員或分析者可以查看的特定電子郵件地址|讓安全性系統管理員和分析者調查可疑附件|
+|**如果惡意程式碼掃描附件的逾時或錯誤發生時，套用上述的選取範圍**|適用於針對 unasfe 附件 （因為逾時或錯誤） 無法掃描的附件的巨集指令|
 
 ## <a name="next-steps"></a>後續步驟
 

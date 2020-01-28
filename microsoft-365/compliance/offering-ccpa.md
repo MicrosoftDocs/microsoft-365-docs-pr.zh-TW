@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b6f24cb1afcefc9ddbe468530855603e7ee0f484
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 73c1d7be6da17ae29c6ea8423c879286714fe8f1
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804186"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558600"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>加州消費者隱私法 (CCPA)
 
@@ -51,7 +51,7 @@ OST 出設定，Microsoft 遵守所有法律或法規適用的線上服務，其
 
 以下是您可能需要準備好 CCPA 的幾個步驟：
 
-- 開始運用合規性管理員中的 GDPR 評估，作為 CCPA 隱私權計畫的一部分。
+- 啟動運用在[合規性分數](compliance-score.md)GDPR 評定 CCPA 隱私權計劃的一部分。
 - 建立有效率地回應資料主體存取要求 (DSARs) 使用的資料主體要求工具的程序。
 - 設定標籤和原則以探索、分類並加上標籤，以及使用 Microsoft 資訊保護來保護敏感性資料。
 - 使用電子郵件加密功能進一步控制敏感性資訊。

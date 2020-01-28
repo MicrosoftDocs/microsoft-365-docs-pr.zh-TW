@@ -15,18 +15,28 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立、設定及發佈敏感度標籤的指示，以便分類及保護貴組織的文件和電子郵件。
-ms.openlocfilehash: 964fd20d6ada935d2a76ca0bffccc5bf46161c58
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+ms.openlocfilehash: bef9841da49e24a99a038e9df906d523fe40e044
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247456"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259289"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>建立及設定敏感度標籤及其原則
 
 若要建立及發佈 [[敏感度標籤]](sensitivity-labels.md)，請前往標籤系統管理中心，例如 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)。 您也可以使用 Microsoft 365 安全性中心，或 Office 365 安全性與合規性中心。
 
 首先，建立並設定您要在 Office 應用程式和服務中提供使用的敏感度標籤。 然後，建立一或多個包含您所設定的標籤和原則設定的標籤原則。 這是為您所選的使用者和位置發佈標籤和設定的標籤原則。
+
+## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>建立和管理敏感度標籤所需的權限
+
+合規性小組成員會建立敏感度標籤，這些成員需要 Microsoft 365 合規性中心、Microsoft 365 安全性中心或 Office 365 安全性與合規性中心的權限。 
+
+根據預設，您的租用戶系統管理員可以存取這些系統管理中心，並且授與法務人員和其他人員存取權限，而不需授與他們租用戶系統管理員的所有權限。如需這個委派的受限系統管理員存取權，請移至其中一個系統管理中心的 [權限]**** 頁面，然後將成員新增至 [合規性資料系統管理員]****、[合規性系統管理員]**** 或 [安全性系統系統管理員]**** 角色群組。
+
+如需相關指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
+
+只有建立及設定敏感度標籤及其標籤原則時，才需要這些權限。 您不需要在應用程式或服務中套用這些標籤。
 
 ## <a name="create-and-configure-sensitivity-labels"></a>建立及設定敏感度標籤
 
@@ -56,17 +66,47 @@ ms.locfileid: "41247456"
 若要編輯現有的標籤，請將其選取，然後選取 [編輯標籤]****。 這會啟動 [編輯敏感度標籤]**** 精靈，它可讓您變更步驟 3 中的所有標籤設定。 
 
 > [!NOTE]
-> 如果您編輯已使用標籤原則發佈的標籤，當完成精靈後便不需要額外的步驟。 例如，您不需要將它新增到新的標籤原則。 不過，請允許最多 24 小時的時間讓變更複寫到使用者和服務。
+> 如果您編輯已使用標籤原則發佈的標籤，當完成精靈後便不需要額外的步驟。 例如，您不需要將其新增到新的標籤原則中，就能讓變更供相同的使用者使用。 不過，請允許最多 24 小時的時間讓變更複寫到使用者和服務。
 
-在您發佈標籤之前，無法在應用程式中或為服務選取標籤。 若要發佈標籤，必須先將標籤新增至標籤原則。
+在您發佈標籤之前，無法在應用程式中或為服務選取標籤。 若要發佈標籤，必須先[將標籤新增至標籤原則](#publish-sensitivity-labels-by-creating-a-label-policy)。
 
 ### <a name="additional-label-settings-with-office-365-security--compliance-center-powershell"></a>Office 365 安全性與合規性中心 PowerShell 的其他標籤設定
 
 您可以從 [Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) 使用 [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) Cmdlet 取得其他標籤設定。
 
-例如，使用 *LocaleSettings* 參數為您的標籤名稱和工具提示指定不同的語言。 
+對跨國部署使用 *LocaleSettings* 參數，以便使用者能夠利用本地語言查看標籤名稱和工具提示。 如需設定範例，請參閱下一節。 
 
 使用此 Cmdlet，您同時可以為 Azure 資訊保護整合標籤用戶端指定 [[進階設定]](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)。 這些進階設定包括設定標籤色彩，以及在套用標籤時套用自訂屬性。 如需完整清單，請參閱[標籤原則可用的進階設定](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies)。 
+
+#### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>設定不同語言敏感度標籤的設定範例
+
+下列範例顯示名為「公開」標籤的 PowerShell 設定，其中包含工具提示的預留位置文字。 在此範例中，標籤名稱和工具提示文字設定為法文、義大利文和德文。
+
+由於這項設定，若使用者具有使用這些顯示語言的 Office 應用程式，則會以相同的語言查看其標籤名稱和工具提示。 同樣地，如果您已安裝 Azure 資訊保護的整合標籤用戶端，以在檔案瀏覽器中為檔案加上標籤，則擁有這些語言版本 Windows 的使用者就能在使用滑鼠右鍵進行標記時，以本地語言查看其標籤名稱和工具提示。
+
+針對需要支援的語言，請使用 Office [語言識別項](https://docs.microsoft.com/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) (又稱為語言標籤)，然後為標籤名稱和工具提示指定自己的翻譯。
+
+在 PowerShell 中執行命令之前，您必須先[連線至 Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+
+
+```powershell
+$Languages = @("fr-fr","it-it","de-de")
+$DisplayNames=@("Publique","Publico","Oeffentlich")
+$Tooltips = @("Texte Français","Testo italiano","Deutscher text")
+$label = "Public"
+$DisplayNameLocaleSettings = [PSCustomObject]@{LocaleKey='DisplayName';
+Settings=@(
+@{key=$Languages[0];Value=$DisplayNames[0];}
+@{key=$Languages[1];Value=$DisplayNames[1];}
+@{key=$Languages[2];Value=$DisplayNames[2];})}
+Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSettings -Depth 3 -Compress)
+$TooltipLocaleSettings = [PSCustomObject]@{LocaleKey='Tooltip';
+Settings=@(
+@{key=$Languages[0];Value=$Tooltips[0];}
+@{key=$Languages[1];Value=$Tooltips[1];}
+@{key=$Languages[2];Value=$Tooltips[2];})}
+Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSettings -Depth 3 -Compress)
+```
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>建立標籤原則來發佈敏感度標籤
 

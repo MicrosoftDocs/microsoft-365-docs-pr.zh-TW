@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 如果使用者持續從 Office 365 傳送被歸類為垃圾郵件的電子郵件，使用者將遭到限制而無法再傳送任何郵件。
-ms.openlocfilehash: c817add2581ffdbe709023dc3b348631defec169
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: e942cd9012c3eba226db58808031ac200fbdfeca
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823815"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558630"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者
 
@@ -74,7 +74,7 @@ ms.locfileid: "40823815"
 
 ## <a name="checking-for-and-removing-restrictions-using-powershell"></a>使用 PowerShell 檢查並移除限制
 用於限制的使用者的 PowerShell 命令為：
-- `Get-BlockedSenderAddress`：執行可擷取受限制而無法傳送電子郵件的使用者清單
+- `Get-BlockedSenderAddress`：執行以擷取受限制而無法傳送電子郵件的使用者清單
 - `Remove-BlockedSenderAddress`：執行可從限制中移除使用者
 
 ## <a name="for-more-information"></a>相關資訊
