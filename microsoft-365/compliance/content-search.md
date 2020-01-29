@@ -16,13 +16,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: 使用 Office 365 或 Microsoft 365 合規性中心中的「內容搜尋」工具，來搜尋信箱中的內容、SharePoint Online 網站，OneDrive 帳戶、Microsoft Teams、Office 365 群組和商務用 Skype 交談。 您可以使用關鍵字搜尋查詢和搜尋條件來縮小搜尋結果。 然後您可以預覽和匯出搜尋結果。 內容搜尋也是用來搜尋與 GDPR 資料主體要求相關內容的有效工具。
-ms.openlocfilehash: d27bce246cabfafd343286fc40ea670bfe560b9e
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+description: 使用 Office 365 或 Microsoft 365 合規性中心中的「內容搜尋」工具，來搜尋信箱中的內容、SharePoint Online 網站，OneDrive 帳戶、Microsoft Teams、Office 365 群組、Yammer 群組和商務用 Skype 交談。 您可以使用關鍵字搜尋查詢和搜尋條件來縮小搜尋結果。 然後您可以預覽和匯出搜尋結果。 內容搜尋也是用來搜尋與 GDPR 資料主體要求相關內容的有效工具。
+ms.openlocfilehash: ea4359c594a169abbc518d6fe0f5ebdb4441fc56
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967516"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558400"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的內容搜尋
 
@@ -35,8 +35,10 @@ ms.locfileid: "39967516"
 - 商務用 Skype 交談
     
 - Microsoft Teams 
-    
+
 - Office 365 群組
+
+- Yammer 群組 
     
 執行內容搜尋之後，內容位置數目及預估的搜尋結果數目會顯示在搜尋統計資料中。 您也可以快速檢視統計資料，例如多數項目符合搜尋查詢的內容位置。 執行搜尋後，您可以預覽結果或將結果匯出到本機電腦上。
 
@@ -81,9 +83,9 @@ ms.locfileid: "39967516"
     
        - **位置：** 選擇要搜尋的內容位置。
     
-      - **所有位置：** 使用此選項來搜尋組織中的所有內容位置。 這包括所有 Exchange 信箱 (包括所有非作用中信箱、所有 Office 365 群組的信箱、所有的 Microsoft Teams 信箱) 中的電子郵件、所有商務用 Skype 交談、所有 SharePoint 和商務用 OneDrive 網站 (包括適用於所有 Office 365 群組和 Microsoft Teams 的網站)，以及所有 Exchange 公用資料夾中的項目。
+      - **所有位置：** 使用此選項來搜尋組織中的所有內容位置。 這包括所有 Exchange 信箱 (包括所有非作用中信箱，以及所有 Microsoft Teams、Yammer 群組和 Office 365 群組的信箱) 中的電子郵件、所有商務用 Skype 交談、所有 SharePoint 和商務用 OneDrive 網站 (包括適用於所有 Microsoft Teams、Yammer 群組和 Office 365 群組的網站)，以及所有 Exchange 公用資料夾中的項目。
     
-      - **特定位置：** 使用此選項來搜尋特定內容位置。 您可以搜尋特定 Office 365 服務的所有內容位置 (例如搜尋所有 Exchange 信箱或搜尋所有 SharePoint 網站)，或者您可以搜尋所顯示的任何 Office 365 服務中的特定位置。 
+      - **特定位置：** 使用此選項來搜尋特定內容位置。 您可以搜尋特定 Office 365 服務的所有內容位置 (例如搜尋所有 Exchange 信箱或搜尋所有 SharePoint 網站)，您也可以搜尋所顯示的任何 Office 365 服務中特定位置的內容。 
     
         ![用來選擇要搜尋的內容位置的使用者介面](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
@@ -91,8 +93,7 @@ ms.locfileid: "39967516"
     
        > [!NOTE]
        > 當您搜尋所有信箱位置或只是特定信箱時，匯出內容搜尋的結果時，會包含儲存在使用者信箱、來自其他 Office 365 應用程式的資料。 此資料不會包含在估計的搜尋結果中，並且無法提供預覽。 當您匯出並下載搜尋結果時會包含在內。 如需詳細資訊，請參閱[儲存在 Exchange Online 信箱中的內容](what-is-stored-in-exo-mailbox.md)。
-
-    
+   
 6. 設定您的搜尋查詢之後，請按一下 **[儲存並執行]**。
     
 7. 在 **[儲存搜尋]** 頁面上，輸入搜尋的名稱，以及可協助識別搜尋的選擇性描述。 搜尋的名稱在組織中必須是唯一的。 
@@ -176,6 +177,8 @@ ms.locfileid: "39967516"
 [搜尋 OneDrive 帳戶](#searching-onedrive-accounts)
   
 [搜尋 Microsoft Teams 和 Office 365 群組](#searching-microsoft-teams-and-office-365-groups)
+
+[搜尋 Yammer 群組](#searching-yammer-groups)
   
 [搜尋非作用中信箱](#searching-inactive-mailboxes)
   
@@ -308,6 +311,25 @@ ms.locfileid: "39967516"
 
 條件會使用 **AND** 運算子以邏輯方式連接至關鍵字查詢。 這表示項目必須同時符合關鍵字查詢和搜尋條件，才能在搜尋結果中傳回。 如需詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions)中的「使用條件的指導方針」小節。
   
+### <a name="searching-yammer-groups"></a>搜尋 Yammer 群組
+
+您可以使用 **ItemClass** 電子郵件屬性或**類型**搜尋條件來搜尋 Yammer 群組中的特定交談項目。
+
+  - 若要使用 **ItemClass** 屬性做為關鍵字搜尋查詢的一部分，請在搜尋查詢的 **[關鍵字]** 方塊中，輸入下列其中一種 (或所有)「屬性：值組」：
+
+     - ItemClass:IPM.Yammer.message
+     - ItemClass:IPM.Yammer.poll
+     - ItemClass:IPM.Yammer.praise
+     - ItemClass:IPM.Yammer.question
+  
+    例如，您可以使用下列搜尋查詢來傳回 Yammer 訊息和 Yammer 稱讚項目：
+
+    ![使用 ItemClass 屬性來搜尋 Yammer 項目](media/YammerContentSearch1.png)
+  
+  - 您也可以使用**類型**電子郵件條件，然後選取 **[Yammer 訊息]** 以傳回 Yammer 項目。 例如，下列搜尋查詢會傳回所有包含關鍵字「保密」的 Yammer 交談項目。 
+
+    ![使用「類型」條件卡片來搜尋 Yammer 交談項目](media/YammerContentSearch2.png)
+
 ### <a name="searching-inactive-mailboxes"></a>搜尋非作用中信箱
 
 您可以在內容搜尋中搜尋非作用中信箱。 若要取得組織中非作用中信箱的清單，請在 Exchange Online PowerShell 中執行命令 `Get-Mailbox -InactiveMailboxOnly`。 或者，您可以移至安全性與合規性中心中的 **[資訊控管]** \> **[保留]**，然後按一下 **[更多]** ![[瀏覽列省略符號]](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **[非作用中信箱]**。
@@ -321,7 +343,7 @@ ms.locfileid: "39967516"
 - 您可以使用安全性與合規性中心 PowerShell 來建立內容搜尋，以搜尋非作用中信箱。 若要這麼做，您必須將一個句點 (. ) 附加至非作用中信箱的電子郵件地址前端。 例如，下列命令會建立內容搜尋，搜尋電子郵件地址為 pavelb@contoso.onmicrosoft.com 的非作用中信箱：
 
    ``` 
-   New-ComplianceSearch -name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
+   New-ComplianceSearch -Name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
    ```
 
 - 我們強烈建議您避免使用具有相同 SMTP 地址的作用中信箱及非作用中信箱。 如果您需要重複使用已指派給非作用中信箱的 SMTP 地址，建議您復原非作用中信箱，或將非作用中信箱的內容還原為作用中信箱 (或者作用中信箱的封存)，然後刪除非作用中信箱。 如需詳細資訊，請參閱下列其中一個主題：

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 在 Office 365 進階威脅防護計劃 2 中，取得自動化調查及回應能力的概觀。
-ms.openlocfilehash: d36215c83c926f96b23e930f888e5c8dca40dc60
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: fcb48da4b6f3777fa8c21ef514d5f591e342562e
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808478"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41573040"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>自動化的調查和 Office 365 中的回應 （空調）
 
@@ -37,7 +37,7 @@ ms.locfileid: "40808478"
 |1     |由 Office 事件觸發[警示](#alerts)並[安全性 playbook](#security-playbooks)啟始選取警示自動化的調查。 <br/><br/>或者，安全性分析師可以[手動啟動自動化的調查](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)，請從[Explorer](threat-explorer.md)電子郵件。        |
 |2     |自動化的調查當執行時，它會收集有關電子郵件與該電子郵件 – 檔案、 Url 和收件者相關的實體的其他資料。  調查的範圍可以增加，因為會觸發新的相關的警示。         |
 |3     |期間和之後自動調查，[詳細資料和結果](#investigation-graph)可供檢視。 結果包含[建議的動作](#recommended-actions)可以採取回應及修復任何發現的威脅。 此外，也可以使用[playbook 記錄](#playbook-log)中追蹤調查的所有活動。<br/><br/>如果您的組織會使用自訂的報表解決方案或協力廠商解決方案，您可以[使用 Office 365 管理活動 API](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions) ，可檢視自動化的調查和威脅的相關資訊。         |
-|4     |安全性作業小組會檢閱調查結果與建議，並核准修復動作。 在 Office 365 中，只能在貴組織的安全性小組核准時採取補救動作。         |
+|4      |安全性作業小組會檢閱調查結果與建議，並核准修復動作。 在 Office 365 中，只能在貴組織的安全性小組核准時採取補救動作。         |
 
 下列各節提供更多詳細資訊空調，包括提醒、 安全性 playbooks 和調查詳細資料相關的詳細資料。 此外，本文中包含航空的運作方式的兩個範例。 若要開始使用空調，請參閱[自動調查及回應 Office 365 中的威脅](office-365-air.md)。
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的權限
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過使用 Microsoft 365 安全性中心或 Microsoft 365 合規性中心，您可以集中管理與安全性或合規性相關的所有工作權限。
-ms.openlocfilehash: 43f6388820c531c99b6c12f615a3ffb8e3b85427
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 070e9bb1f7bf070a1b95995c2010b79dee7cbc9b
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971581"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572960"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的權限
 
@@ -57,19 +57,19 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |**在此服務中...**|**合規性系統管理員可以...**|
 |:-----|:-----|
 |[**Microsoft 365 合規性中心**](https://compliance.microsoft.com/)|保護和管理組織在所有 Microsoft 365 服務中的資料。 <br/><br/> 管理合規性警示。|
-|[**合規性管理員**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|追蹤、指派和確認組織的法規合規性活動。|
+|[**合規性分數**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|追蹤、指派和確認組織的法規合規性活動。|
 |[**Office 365 安全性與合規性中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|管理資料控管。 <br/><br/> 執行法律和資料調查。 <br/><br/> 管理資料主體要求。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|檢視所有 Intune 稽核資料。|
 |[**雲端 App 安全性**](https://docs.microsoft.com/cloud-app-security/manage-admins)|具有唯讀權限，並可管理警示。 <br/><br/> 可建立和修改檔案原則，並允許檔案控管動作。 <br/><br/> 可檢視 [資料管理] 下的所有內建報告。|
 
 ### <a name="compliance-data-administrator"></a>合規性資料管理員
 
-具有此角色的使用者有權限保護和追蹤 Microsoft 365 合規性中心、Microsoft 365 系統管理中心和 Azure 中的資料。 使用者也可以管理 Exchange 系統管理中心、合規性管理員、Teams 和商務用 Skype 系統管理中心內的所有功能，並建立適用於 Azure 和 Microsoft 365 的支援票證。
+具有此角色的使用者有權限保護和追蹤 Microsoft 365 合規性中心、Microsoft 365 系統管理中心和 Azure 中的資料。 使用者也可以管理 Exchange 系統管理中心、合規性分數、Teams 和商務用 Skype 系統管理中心內的所有功能，並建立適用於 Azure 和 Microsoft 365 的支援票證。
 
 |**在此服務中...**|**合規性資料系統管理員可以...**|
 |:-----|:-----|
 |[**Microsoft 365 合規性中心**](https://compliance.microsoft.com/)|保護和管理組織在所有 Microsoft 365 服務中的資料。 <br/><br/> 管理合規性警示。 <br/><br/> 管理敏感度標籤|
-|[**合規性管理員**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|追蹤、指派和確認組織的法規合規性活動。|
+|[**合規性分數**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|追蹤、指派和確認組織的法規合規性活動。|
 |[**Office 365 安全性與合規性中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|管理資料控管。 <br/><br/> 執行法律和資料調查。 <br/><br/> 管理資料主體要求。 <br/><br/> 管理敏感度標籤|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control) (即將推出)|檢視所有 Intune 稽核資料。|
 |[**雲端 App 安全性**](https://docs.microsoft.com/cloud-app-security/manage-admins)|使用唯讀權限來檢視資訊。 <br/>管理警示。 <br/><br/> 建立和修改檔案原則，並允許檔案控管動作。 <br/><br/> 檢視 [資料管理] 下的所有內建報告。|
@@ -152,7 +152,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |Azure Active Directory (Azure AD) 與 Azure AD Identity Protection|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Azure 進階威脅防護|[Azure ATP 角色群組](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure 資訊保護|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|合規性管理員|[合規性管理員角色](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud#permissions-and-role-based-access-control)|
+|合規性分數|[合規性分數角色](https://docs.microsoft.com/microsoft-365/compliance/compliance-score-setup#set-user-permissions-and-assign-roles)|
 |Exchange Online|[Exchange 角色型存取控制](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help)|
 |Intune|[Intune 角色型存取控制](https://docs.microsoft.com/intune/role-based-access-control)|
 |受管理的電腦|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|

@@ -12,12 +12,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: cfd39d25689785be2af80008b6d823beb5a7bc01
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: d64d9b98fe3cf24a14b3f3126ff3f38b1d84087d
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749689"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41557980"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般資料保護摘要
 
@@ -99,7 +100,7 @@ GDPR 規範下，資料控制者需要為「可能導致自然人之權利和自
 
 ### <a name="accountability-readiness-checklists-for-the-gdpr"></a>符合 GDPR 的責任整備檢查清單
 
-這些[檢查清單](gdpr-arc.md) 提供使用 Microsoft 產品時，便於存取支援 GDPR 所需資訊的方式。 您可以使用「[合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)」管理檢查清單項目，方法是參考 GDPR 圖格中「客戶受管理控制項」底下的控制項識別碼和控制項標題。
+這些[檢查清單](gdpr-arc.md) 提供使用 Microsoft 產品時，便於存取支援 GDPR 所需資訊的方式。 您可以使用 [Microsoft 合規性管分數](compliance-score.md)管理檢查清單項目，方法是參考 GDPR 動態磚中 [客戶管理控制措施] 底下的控制措施識別碼和控制措施標題。
 
 ## <a name="learn-more"></a>深入了解
 

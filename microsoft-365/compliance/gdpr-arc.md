@@ -12,12 +12,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 1bc2ac17d8548382dff721decba674952de977d6
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: db67326b7fa1f09576ae49de75e3f1de525ffd86
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749708"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558070"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>使用責任整備檢查清單支援 GDPR 計劃
 
@@ -36,7 +37,7 @@ ms.locfileid: "38749708"
 - [Azure](gdpr-arc-Azure.md)
 - [Microsoft 支援服務與專業服務](gdpr-arc-prof-services.md)
 
-您可以使用[「合規性管理員」](https://servicetrust.microsoft.com/ComplianceManager)管理此檢查清單中的項目，方法是參考 GDPR 圖格中「客戶受管理控制項」底下的控制項識別碼和控制項標題。
+您可以使用[合規性分數](compliance-score.md)管理此檢查清單中的項目，方法是參考 GDPR 動態磚中 [客戶管理控制措施] 底下的控制措施識別碼和控制措施標題。
 
 檢查清單包含以下列出之支援 GDPR 隱私計劃的四項基本考量類別，以及範例需求。
 

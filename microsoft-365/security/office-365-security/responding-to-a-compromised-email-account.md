@@ -14,12 +14,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何辨識及回應 Office 365 中遭入侵的電子郵件帳戶
-ms.openlocfilehash: 76ce2cd9b942403f5d25b7f356740cce6c2acad7
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 0262ca29681aa04d66c628a7d9101e3d3296481b
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971503"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572709"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>回應 Office 365 中遭入侵的電子郵件帳戶
 
@@ -56,9 +56,11 @@ ms.locfileid: "39971503"
 
 如果使用者報告上述的任何症狀，則應該執行進一步調查。 Microsoft 365 安全性與合規性中心和 Azure 入口網站會提供工具，以協助您調查您懷疑可能遭入侵之使用者帳戶的活動。
 
-- 安全性與合規性中心的 Office 365 整合稽核記錄 - 檢閱可疑帳戶的所有活動，方法是篩選日期範圍自發生可疑活動之前到目前日期的結果。 請勿在搜尋期間篩選活動。
+- **安全性與合規性中心的 Office 365 整合稽核記錄**：檢閱可疑帳戶的所有活動，方法是篩選日期範圍自發生可疑活動之前到目前日期的結果。 請勿在搜尋期間篩選活動。
 
-- 使用 Azure AD 入口網站中提供的 Azure AD 登入記錄檔及其他風險報告。 檢查這些欄中的值：
+- **EAC 中的 Office 365 系統管理員稽核記錄**：在 Exchange Online 中，您可以使用 Exchange 系統管理中心 (EAC) 來搜尋及檢閱系統管理員稽核記錄中的項目。 系統管理員稽核記錄會根據 Exchange Online PowerShell Cmdlet 記錄由系統管理員以及已被指派系統管理權限的使用者所執行的特定動作。 系統管理員稽核記錄中的項目會提供執行的 Cmdlet、使用的參數、Cmdlet 的執行者，以及受影響的物件的相關資訊。
+
+- **Azure AD 入口網站中的 Azure AD 登入記錄檔和其他風險報告**：檢查這些欄中的值：
 
   - 檢閱 IP 位址
 
@@ -92,7 +94,7 @@ ms.locfileid: "39971503"
 - 如果您的內部部署身分識別與 Office 365 同盟，則必須變更您的內部部署密碼，然後必須通知您的系統管理員相關入侵。
 
 > [!TIP]
-> 強烈建議您啟用多重要素驗證 (MFA)，以防止入侵，特別是具有系統管理權限的帳戶。  您可以在[這裡](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)深入了解。
+> 我們強烈建議您啟用多重要素驗證 (MFA)，以防止入侵，特別是具有系統管理權限的帳戶。  您可以在[這裡](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)深入了解 MFA。
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>步驟 2 移除可疑的電子郵件轉寄地址
 
@@ -180,7 +182,7 @@ ms.locfileid: "39971503"
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Office 365
 
-您的 Office 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。  使用 [Office 365 安全性藍圖 - 前 30 天、前 90 天前和之後的最高頂級順序](security-roadmap.md)來實作 Microsoft 建議用來保護您的 Office 365 租用戶的最佳做法。
+您的 Office 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。  使用 [Office 365 安全性藍圖 - 前 30 天、前 90 天前和之後的最高優先順序](security-roadmap.md)來實作 Microsoft 建議用來保護您的 Office 365 租用戶的最佳做法。
 
 - 要在前 30 天內完成的工作。  這些工作會有立即的影響，而且對您的使用者影響較低。
 

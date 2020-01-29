@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: 5bc131b98bbc0af5cdc9629e029c06f20a003d5f
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: de5fda485c1fbb1f41fd32ff0da40014d30a6a89
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989598"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558590"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -116,7 +116,7 @@ ms.locfileid: "40989598"
 
 版本設定是 SharePoint Online 和商務用 OneDrive 中所有文件庫的功能。 根據預設，版本設定會最少保留 500 個主要版本，不過您可以增加此限制。 如需詳細資訊，請參閱[啟用和設定清單或文件庫的版本設定](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)。
   
-保留原則 (會保留內容而非僅刪除的保留原則) 會保留 SharePoint 網站集合或 OneDrive 帳戶中文件的所有版本。 每當受限於保留或保留原則的文件遭到編輯時，就會將版本複製到保留文件庫。 如果已啟用版本設定，每當受限於保留或保留原則的文件遭到刪除時，就會將所有版本複製到保留文件庫。 文件保留庫中的每個文件版本都會存在為個別的項目，並有其自己的保留期間：
+保留原則 (會保留內容而非僅刪除的保留原則) 會保留 SharePoint 網站集合或 OneDrive 帳戶中文件的所有版本。 受限於保留或保留原則的文件首次遭到編輯時，就會將原始文件版本複製到保留文件庫。 如果已啟用版本設定，受限於保留或保留原則的文件遭到刪除時，就會將所有版本複製到保留文件庫。 文件保留庫中的每個文件版本都會存在為個別的項目，並有其自己的保留期間：
   
 - 如果保留原則是以建立內容的時間為基礎，則每個版本都有與原始文件相同的到期日。原始文件及其版本都在相同時間到期。
     
@@ -193,7 +193,7 @@ ms.locfileid: "40989598"
     
 - OneDrive 帳戶
     
-- Office 365 群組 (適用群組信箱、網站和文件中的內容。 對於 Planner、Yammer、CRM Microsoft Teams、PowerBI、Stream、Exchange 和 SharePoint 小組網站中內容的支援即將推出。)
+- Office 365 群組 (適用群組信箱和相關聯的 SharePoint 網站中的內容)。
     
 - Exchange 公用資料夾
     

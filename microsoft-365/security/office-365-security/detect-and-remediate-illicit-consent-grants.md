@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何識別並修正在 Office 365 中的非法同意授權。
-ms.openlocfilehash: 0f4569a4ef8496a07fc1dc52f500ee91a6590fdd
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: ae26656cdfcb6f17bbe4caa1016f6428f3bd655e
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989538"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572990"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>偵測並修復 Office 365 中的非法同意授權
 
@@ -112,7 +112,7 @@ ms.locfileid: "40989538"
 
 指令碼會產生一個名為「Permissions.csv」的檔案。 依照下列步驟尋找非法應用程式權限授權：
 
-1. 在 [ConsentType] 欄 (欄 G) 中，搜尋值「AllPrinciples」。 AllPrincipals 權限可允許用戶端應用程式存取租用戶內每個人的內容。 原生的 Office 365 應用程式需要此權限才能正常運作。 必須仔細檢閱具有此權限的每一個非 Microsoft 應用程式。
+1. 在 [ConsentType] 欄 (欄 G) 中，搜尋值「AllPrinciples」。 AllPrincipals 權限可讓用戶端應用程式存取租用戶中的每個人的內容。 原生的 Office 365 應用程式需要此權限才能正常運作。 必須仔細檢閱具有此權限的每一個非 Microsoft 應用程式。
 
 2. 在 [Permission] 欄 (欄 F) 中，檢閱每個委派的應用程式對內容所擁有的權限。 尋找「Read」和「Write」權限或「*.All」權限，並仔細加以檢閱，因為它們可能不適當。
 

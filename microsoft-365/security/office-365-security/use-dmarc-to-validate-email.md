@@ -13,12 +13,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: 了解如何設定以網域為基礎的訊息驗證、報告和符合性 (DMARC) 來驗證從您的 Office 365 組織傳送的訊息。
-ms.openlocfilehash: f48ab1e231e0b46889f10fc14723111480f02d5c
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+ms.openlocfilehash: 42238ce7d5129d933b28238f07a9e24ba05ff395
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038902"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515904"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>在 Office 365 中使用 DMARC 來驗證電子郵件
 
@@ -77,7 +77,7 @@ Microsoft 的 DMARC TXT 記錄看起來如下：
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1" 
 ```
 
-Microsoft 會將其 DMARC 報告傳送給協力廠商 [Agari](https://agari.com)。 Agari 會收集並分析 DMARC 報告。
+Microsoft 會將其 DMARC 報告傳送給協力廠商 [Agari](https://agari.com)。 Agari 會收集並分析 DMARC 報告。 此外，Valimail 免費提供[適用於 Office 365 的 DMARC 監視服務](https://go.valimail.com/microsoft.html)。
   
 ## <a name="implement-dmarc-for-inbound-mail"></a>為輸入郵件實作 DMARC
 <a name="implementDMARCinbound"> </a>

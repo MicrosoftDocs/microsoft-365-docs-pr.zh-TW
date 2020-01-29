@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3380ee774388700fd8eca255a805b5595f1c9cda
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: b0563e7056510682a685cb0950324dafa1fd2dd2
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959601"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558520"
 ---
 # <a name="general-data-protection-regulation-gdpr"></a>一般資料保護規定 (GDPR)
 
@@ -37,7 +37,7 @@ ms.locfileid: "40959601"
 
 ### <a name="abrona-prepares-for-gdpr-with-microsoft-365"></a>Abrona 使用 Microsoft 365 做好因應 GDPR 的準備
 
-了解荷蘭的醫療保健組織 Abrona 如何運用 Microsoft 技術 (例如合規性管理員和 Azure 資訊保護) 來做好因應 GDPR 的準備。
+了解荷蘭的醫療保健組織 Abrona 如何運用 Microsoft 技術 (例如合規性分數和 Azure 資訊保護) 來做好因應 GDPR 的準備。
 
 [立即觀看](https://go.microsoft.com/fwlink/p/?linkid=2048705)
 
@@ -64,9 +64,9 @@ ms.locfileid: "40959601"
 
 [深入了解](offering-iso-27701.md)
 
-### <a name="compliance-manager"></a>合規性管理員
+### <a name="compliance-score"></a>合規性分數
 
-使用[合規性管理員](https://go.microsoft.com/fwlink/p/?linkid=2048390)協助執行持續的風險評定、取得可採取動作的深入解析，並且簡化合規性程序。
+使用[合規性分數](compliance-score.md)協助執行持續的風險評估、取得可採取動作的深入解析，並且簡化合規性程序。
 
 ### <a name="microsoft-365-compliance-center"></a>Microsoft 365 合規性中心
 

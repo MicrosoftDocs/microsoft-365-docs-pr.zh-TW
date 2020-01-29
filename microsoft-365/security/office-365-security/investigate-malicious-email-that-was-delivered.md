@@ -15,18 +15,18 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威脅調查及回應功能來尋找並調查惡意電子郵件。
-ms.openlocfilehash: 57d419c291fdfed3a5d7237ae2021e9ef06723f5
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f2eadfaf23c4485e6b50b6550f0a884690a79548
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031898"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572980"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>尋找並調查已傳遞 Office 365 中的惡意電子郵件
 
 [Office 365 進階威脅防護](office-365-atp.md)可讓您調查放入風險，貴組織的人員的活動，並採取動作來保護您的組織。 例如，如果您是貴組織的安全性小組的一部分，您可以尋找和調查可疑的電子郵件已傳遞。 您可以使用[威脅總管 （或即時偵測的資訊）](threat-explorer.md)。
   
-## <a name="before-you-begin"></a>開始之前...]
+## <a name="before-you-begin"></a>開始之前...
 
 請確定符合下列需求：
   
@@ -44,9 +44,9 @@ ms.locfileid: "38031898"
 
 |活動  |角色群組 |所需的預覽角色？  |
 |---------|---------|---------|
-|使用分析威脅威脅總管 （和即時偵測的資訊）     |Office 365 全域系統管理員 <br> 安全性系統管理員 <br> 安全性讀取者     | 否   |
-|使用檢視的電子郵件，以及預覽標頭和下載隔離區的電子郵件威脅總管 （和即時偵測的資訊）    |Office 365 全域系統管理員 <br> 安全性系統管理員 <br>安全性讀取者   |       否  |
-|使用威脅總管檢視標頭，並下載傳遞至信箱的電子郵件     |Office 365 全域系統管理員 <br>安全性系統管理員 <br> 安全性讀取者 <br> 預覽   |   是      |
+|使用分析威脅威脅總管 （和即時偵測的資訊）     |Office 365 全域管理員 <br> 安全性系統管理員 <br> 安全性讀取者     | 否   |
+|使用檢視的電子郵件，以及預覽標頭和下載隔離區的電子郵件威脅總管 （和即時偵測的資訊）    |Office 365 全域管理員 <br> 安全性系統管理員 <br>安全性讀取者   |       否  |
+|使用威脅總管檢視標頭，並下載傳遞至信箱的電子郵件     |Office 365 全域管理員 <br>安全性系統管理員 <br> 安全性讀取者 <br> 預覽   |   是      |
 
 > [!NOTE]
 > *預覽*是角色並不是角色群組。「 預覽 」 角色必須新增至現有的角色群組，以 Office 365。 Office 365 全域系統管理員角色指派的 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))，並安全性管理員和安全性讀取者 」 角色指派 Office 365 安全性 & 合規性中心 ([https://protection.office.com](https://protection.office.com))。 若要深入了解角色和權限，請參閱[Office 365 安全性 & 合規性中心的權限](permissions-in-the-security-and-compliance-center.md)。
@@ -142,7 +142,7 @@ ms.locfileid: "38031898"
 
 - **傳遞位置**-其中這封電子郵件路由傳送結果？
 
-傳遞動作是因為現有的原則或偵測電子郵件所採取的動作。 以下是可能一封電子郵件可以採取的動作：
+傳遞動作是因為現有的原則或偵測電子郵件所採取的動作。 以下是電子郵件可能採取的動作：
 
 - **已傳遞**– 電子郵件已傳遞至收件匣或資料夾的使用者和該使用者可以直接存取。
 
@@ -152,7 +152,7 @@ ms.locfileid: "38031898"
 
 - **取代**– 惡意附件由 state 附件的.txt 檔案所取代其中任何電子郵件程式惡意。
  
-傳遞位置顯示原則，以及執行後續傳遞的偵測的結果。 它會連結到傳遞巨集指令。 此欄位已新增至提供深入時找到問題郵件採取的動作。 以下是傳遞位置的可能值：
+傳遞位置顯示原則和執行傳遞後偵測的結果。 其連結到「傳遞動作」。 已新增此欄位，以深入了解找到問題電子郵件時所採取的動作。 以下是傳遞位置可能的值：
 
 - **收件匣或資料夾**– 電子郵件是在收件匣或資料夾中 （根據您的電子郵件的規則）。
 
@@ -178,6 +178,6 @@ ms.locfileid: "38031898"
   
 [防範 Office 365 中的威脅](protect-against-threats.md)
   
-[檢視 Office 365 進階威脅防護報告](view-reports-for-atp.md)
+[檢視 Office 365 進階威脅防護的報告](view-reports-for-atp.md)
   
 

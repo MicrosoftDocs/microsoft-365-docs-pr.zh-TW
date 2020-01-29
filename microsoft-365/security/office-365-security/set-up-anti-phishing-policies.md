@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: 反網路釣魚保護，更完整的保護，作為 Office 365 進階威脅防護和 Office 365 Exchange Online Protection 中的基本保護的一部分，可協助保護組織免受惡意模擬型網路釣魚攻擊和其他網路釣魚攻擊。
-ms.openlocfilehash: 235bac70380d8eadb006ce0c903036a1fd471cff
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 24470c67b4a630205398860b1741b5bf9fe751a7
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112627"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572259"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則
 
