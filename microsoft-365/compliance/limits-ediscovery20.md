@@ -1,5 +1,7 @@
 ---
 title: 進階電子文件限制
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解作用中的 Microsoft 365 進階電子文件解決方案的限制。 這包括大小寫的限制時使用搜尋工具來收集案例資料, 編製索引限制，以及搜尋限制。
-ms.openlocfilehash: 622d2669457a2a1e84909aadae9b653ca37684ce
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b3e5dd1d80a60249ccc24d1af20f5e78f94f8421
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077116"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585712"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>進階電子文件探索的限制
 
@@ -58,7 +60,7 @@ ms.locfileid: "37077116"
 |可以在同一時間執行的搜尋數目上限。  <br/> |無限制  <br/> | 
 |最大數目的單一使用者可以在同一時間開始搜尋的詳細資訊。  <br/> |10   <br/> | 
 |搜尋查詢 （包括運算子和條件） 的字元數目上限。  <br/> |**信箱**： 10000<br/>**網站**： 4000 搜尋最多 20 個網站<sup>2</sup>時，搜尋所有的網站] 或 [2000 <br/> |
-|前置詞萬用字元; alpha 字元數目下限例如**一個\*** 或**設定\***。 <br/> |3  <br/> |  
+|前置詞萬用字元; alpha 字元數目下限例如**一個\*** 或**設定\***。 <br/> |3   <br/> |  
 |傳回時所要搜尋的精準字詞或使用前置詞萬用字元和**NEAR**或**ONEAR**布林運算子使用前置詞萬用字元時最大的變化。  <br/> |10000 <sup>3</sup> <br/> |
 |每個使用者信箱搜尋的預覽頁面顯示的項目數目上限。 顯示最新的項目。   <br/> |100  <br/> |
 |來自所有信箱搜尋的預覽頁面上顯示的項目數目上限。  <br/> |1,000  <br/> |

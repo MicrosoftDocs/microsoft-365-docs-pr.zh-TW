@@ -1,5 +1,7 @@
 ---
 title: 資訊管理原則簡介
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -17,12 +19,12 @@ ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
 - M365-security-compliance
 description: 資訊管理原則是一種內容的一組規則。 資訊管理原則可讓組織控制和追蹤之類的內容會保留多久或哪些動作的使用者可以對該內容。 資料管理原則可協助組織符合法律或政府規範，或是只強制執行一些內部業務流程。
-ms.openlocfilehash: a5cf571b22b7d698daf8a70f8565b250e2388a1a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3c3ca901674b9ae34aa990f320cf4eb550ea05b9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077131"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41588033"
 ---
 # <a name="introduction-to-information-management-policies"></a>資訊管理原則簡介
 

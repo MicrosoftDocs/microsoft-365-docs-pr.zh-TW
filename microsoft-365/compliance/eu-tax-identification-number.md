@@ -1,5 +1,7 @@
 ---
 title: 歐盟稅務識別碼
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主題顯示什麼資料外洩防護 (DLP) 原則會尋找當它偵測到歐盟稅務識別號碼敏感資訊類型。 此敏感資訊類型定義不同模式、 關鍵字、 和其他辨識項的每個國家/地區。
-ms.openlocfilehash: 0ee76fa46bb22b2754098d053ab769b862fdd3f2
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 5467db921bd518eeeab18a36ee2de473f9017358
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805846"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41591014"
 ---
 # <a name="eu-tax-identification-number"></a>歐盟稅務識別碼
 
@@ -2025,7 +2027,7 @@ taxid#
   
 不稅務檔案。
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
 

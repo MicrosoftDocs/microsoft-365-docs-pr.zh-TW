@@ -5,17 +5,19 @@ keywords: Microsoft 365，測試人員風險管理、 風險管理、 合規性
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e6fd3dd08ff5170a3b0e2afcd97ec788c2aebd93
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: d87531d7a664ca359f7cbe6c05f26f574c44f833
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259861"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41590674"
 ---
 # <a name="insider-risk-management-cases-preview"></a>測試人員風險管理的情況下 （預覽）
 

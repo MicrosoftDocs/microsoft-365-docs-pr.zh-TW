@@ -1,5 +1,7 @@
 ---
 title: 使用進階電子文件中的通訊
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 進階電子文件可以輕鬆管理周圍通知 custodians 法律調查中的合法持有通知工作流程。
-ms.openlocfilehash: 67cd9266fe8e7bc3c476eac39497a3a2a0fe0c9e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ffad61d5bc00202f7f72f6f9021b4f62e81fef96
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077175"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41582742"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>使用進階電子文件中的通訊
 

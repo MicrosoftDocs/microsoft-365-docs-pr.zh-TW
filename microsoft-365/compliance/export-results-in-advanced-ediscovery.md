@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 進階電子文件探索中匯出結果
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: '了解如何定義從 Office 365 進階電子文件探索，包括指定參數匯出批次的程序中匯出結果的選項。 '
-ms.openlocfilehash: 6d535c24a3acfeb09f45ff26e0792f852bf7e016
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ae25c0aac64a437f902ec5533453a05b8bdb5be6
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805866"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41588313"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中匯出結果
 
