@@ -1,5 +1,7 @@
 ---
 title: 使用 Exchange Online 和安全性與合規性中心以符合 SEC Rule 17a-4
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates 已驗證當 Exchange Online 和安全性與合規性中心依建議設定時，則會符合 CFTC Rule 1.31(c)-(d)、FINRA Rule 4511 和 SEC Rule 17a-4 的相關儲存要求。您可以下載評估。
-ms.openlocfilehash: 33db33589df60b52c4598c52d593b9a6fe4c9c10
-ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
+ms.openlocfilehash: dc61521043d176781c2a6fbd9e1b283cc93eb270
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41122422"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628589"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>使用 Exchange Online 和安全性與合規性中心以符合 SEC Rule 17a-4
 
@@ -40,7 +42,7 @@ Cohasset 已驗證當 Exchange Online 和安全性與合規性中心依建議設
 
 請注意，這項評估是針對 Exchange Online。這項評估不包含其他 Office 365 服務 (例如 SharePoint Online 或商務用 OneDrive)，儘管我們正在規劃未來在這些服務中提供 SEC 17a-4 的相關支援。
 
-請務必了解商務用 Skype for Business 和 Teams 也會將資料儲存在 Exchange Online 中。因此，這項評估確實會包含來自商務用 Skype 的訊息，以及來自 Teams 的頻道和聊天訊息。
+請務必了解商務用 Skype 和 Teams 也會將資料儲存在 Exchange Online 中。因此，這項評估確實會包含來自商務用 Skype 的訊息，以及來自 Teams 的頻道和聊天訊息。
 
 ## <a name="using-preservation-lock-is-key-to-the-recommended-configuration"></a>使用保留鎖定是建議設定的關鍵
 
@@ -67,6 +69,8 @@ Cohasset 已驗證當 Exchange Online 和安全性與合規性中心依建議設
 
 目前，Exchange Online 存在一些限制：
 
-- 無法在 Office 365 群組信箱中使用項目層級稽核。
 - 無法在 Teams 聊天和頻道訊息中使用通訊對話。
 - 無法保留 Teams 聊天和頻道訊息中的讚。
+
+> [!NOTE]
+> 項目層級稽核現在可供 Office 365 群組信箱使用。 如需詳細資訊，請參閱[管理信箱稽核](enable-mailbox-auditing.md)。

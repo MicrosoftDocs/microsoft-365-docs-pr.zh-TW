@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本解決方案案例說明如何使用 Office 365 保留標籤來管理儲存在 SharePoint Online 的產品相關文件的生命週期。 方法是使用文件中繼資料來分類內容，具體做法是並自動套用 Office 365 保留標籤及設定以事件為基礎的保留。
-ms.openlocfilehash: 7e0c688502922903cf2c17345713579bf04cc55a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ca3dd4699a608d2e3313efa3c10fc61b72f9b36e
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596370"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628109"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>使用保留標籤管理 SharePoint 文件的生命週期
 
@@ -284,8 +284,8 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 - **方法**：POST
 - **URI**：https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
-- **Headers**: Key = Content-Type, Value = application/atom+xml
-- **Body**：
+- **標頭**：Key = Content-Type, Value = application/atom+xml
+- **本文**：
 
 ```HTML
 <?xml version='1.0' encoding='utf-8' standalone='yes'>
@@ -303,9 +303,9 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 </entry>
 ```
 
-下一節說明必須針對此案例加以設定的動作 *Body* 屬性內的參數。
+下一節說明必須針對此案例在動作的 *Body* 屬性內加以設定的參數。
 
-- **Name**：此參數指定將在安全性與合規性中心建立的事件名稱。 在此案例中，名稱是「停產 xxx」，其中 xxx 是先前建立的 ProductName Managed 屬性值。
+- **Name**：此參數指定將在安全性與合規性中心建立的事件名稱。 在此案例中，名稱是「停產 xxx」，其中 xxx 是先前建立的 ProductName Managed 屬性的值。
 - **EventType**：此參數值與建立的事件將套用的事件類型相對應。 建立保留標籤時，便會定義此事件類型。 在此案例中，事件類型為「停產」。
 - **SharePointAssetIdQuery**：此參數定義事件的資產識別碼。 以事件為基礎的保留需要文件的唯一識別碼。 我們可以使用資產識別碼來識別特定事件適用的文件，或者如同此案例，使用中繼資料欄 (我們的產品名稱) 來識別。 為此，我們必須建立名為 ProductName 的 Managed 屬性，可在 KQL 查詢中使用該屬性 (或使用 RefinableString00，而不是建立新的 Managed 屬性)。 我們也需要將這個新的 Managed 屬性對應至 ows_Product_x0020_Name 編目屬性。 以下是此 Managed 屬性的螢幕擷取畫面。
 
@@ -348,3 +348,9 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 ## <a name="summary"></a>摘要
 
 本文說明根據 SharePoint 網站欄自動套用保留標籤的文件管理案例。 然後，我們使用以事件為基礎的保留和 Microsoft Flow，以根據外部事件自動觸發保留期間。
+
+## <a name="credits"></a>製作群
+
+此案例的作者： 
+
+Frederic Lapierre<br/>Microsoft 服務首席顧問

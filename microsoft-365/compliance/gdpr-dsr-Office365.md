@@ -5,6 +5,8 @@ keywords: Office 365、DSR、Microsoft 365、Microsoft 365 教育版、Microsoft
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 685e653d7f0b8d31990724c58eccafe9a25ae6a5
-ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
+ms.openlocfilehash: 71cadaee5c9b4ddad83a02ed434afd6197fe8e00
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41004928"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628119"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Office 365 資料主體要求
 
@@ -90,7 +92,7 @@ Microsoft Office 365 服務也可在下列國家雲環境中取得：[Office 365
 
 ## <a name="using-the-content-search-ediscovery-tool-to-respond-to-dsrs"></a>使用內容搜尋電子文件探索工具來回應 DSR
 
-在大型資料集內尋找貴組織使用 Office 365 建立並儲存的個人資料時，建議您先考量人員最有可能使用哪些應用程式來撰寫您正在尋找的資料。Microsoft 估計超過 90% 儲存在 Office 365 中的組織資料，是以 Word、Excel、PowerPoint、OneNote 及 Outlook 撰寫的。以這些 Office 應用程式 (即使是透過 Office 365 ProPlus 或 Office 永久授權購買) 所撰寫的文件，最有可能儲存在 SharePoint Online 網站上、使用者的商務用 OneDrive 帳戶中，或使用者的 Exchange Online 信箱中。這表示您可以使用內容搜尋電子文件探索工具，跨 SharePoint Online 網站、商務用 OneDrive 帳戶，以及 Exchange Online 信箱 (包括與 Office 365 群組、Microsoft Teams、EDU 作業及 StaffHub 相關聯的網站及信箱) 進行搜尋 (以及執行其他 DSR 相關動作)，來尋找可能與調查中 DSR 相關的文件和信箱項目。您也可以使用內容搜尋工具來探索以其他 Office 365 應用程式撰寫的客戶資料。
+在大型資料集內尋找貴組織使用 Office 365 建立並儲存的個人資料時，建議您先考量人員最有可能使用哪些應用程式來撰寫您正在尋找的資料。Microsoft 估計超過 90% 儲存在 Office 365 中的組織資料，是以 Word、Excel、PowerPoint、OneNote 及 Outlook 撰寫的。以這些 Office 應用程式 (即使是透過 Office 365 ProPlus 或 Office 永久授權購買) 所撰寫的文件，最有可能儲存在 SharePoint Online 網站上、使用者的商務用 OneDrive 帳戶中，或使用者的 Exchange Online 信箱中。這表示您可以使用內容搜尋電子文件探索工具，跨 SharePoint Online 網站、商務用 OneDrive 帳戶，以及 Exchange Online 信箱 (包括與 Office 365 群組、Microsoft Teams、EDU 作業相關聯的網站及信箱) 進行搜尋 (以及執行其他 DSR 相關動作)，來尋找可能與調查中 DSR 相關的文件和信箱項目。您也可以使用內容搜尋工具來探索以其他 Office 365 應用程式撰寫的客戶資料。
 
 下表列出人員用來建立客戶撰寫內容，而且可以使用內容搜尋來探索的 Office 365 應用程式。 DSR 指南的此節可提供探索、存取、匯出及刪除資料 (使用這些 Office 365 應用程式所建立) 的指導方針。
 
@@ -631,9 +633,8 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 | ![Access 圖示](media/o365-access-64x64.png) <br> [Access](#access) | ![Office 圖示](media/O365-DSR-Doc_image22.png) <br> [適用於 <br>Office 365 的商務應用程式](#business-apps-for-office-365) | ![Office 圖示](media/O365-DSR-Doc_image22.png) <br> [教育版](#education)|
 | ![流程圖示](media/o365-flow-64x64.png) <br> [流程](#flow) | ![表單圖示](media/o365-forms-64x64.png) <br> [表單](#forms) |![Kaizala 圖示](media/o365-kaizala-64x64.png) <br> [Kaizala](#kaizala) |
 | ![Planner 圖示](media/o365-planner-64x64.png) <br> [Planner](#planner) |![PowerApps 圖示](media/o365-powerapps-64x64.png) <br> [Power 應用程式](#powerapps) |![Power BI 圖示](media/o365-powerbi-64x64.png) <br> [Power BI](#power-bi) |
-|![Project 圖示](media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher 圖示](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![StaffHub 圖示](media/o365-staffhub-64x64.png) <br> [StaffHub](#staffhub) |
-|![Stream 圖示](media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway 圖示](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard 圖示](media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
-||![Yammer 圖示](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
+|![Project 圖示](media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher 圖示](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Stream 圖示](media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway 圖示](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard 圖示](media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
+|![Yammer 圖示](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
 |||
 
 ### <a name="access"></a>Access
@@ -1164,33 +1165,6 @@ PowerApps 服務也包含了 Common Data Service For Apps，可讓使用者可�
 #### <a name="delete"></a>刪除
 
 您可以刪除出版物中的內容、刪除整個頁面，或刪除整個 Publisher 檔案。 請參閱[新增或刪除頁面](https://support.office.com/article/add-or-delete-pages-daf71e39-86e0-4bbc-a186-d5ec70450b08)。
-
-### <a name="staffhub"></a>StaffHub
-
-下列各節說明如何使用 Microsoft StaffHub 中的應用程式內功能，來尋找、存取、匯出及刪除個人資料。
-
-#### <a name="discover"></a>探索
-
-StaffHub 內的大部分資料都可供所有 StaffHub 團隊成員和管理員使用。若要檢視 StaffHub 中的資料，您可請管理員和團隊成員可以移至 <https://staffhub.office.com>，來尋找可能與 DSR 要求相關的資料；或請他們將您新增為其團隊的成員，以便您直接檢閱 StaffHub 資訊，找出潛在回應資料。
-
-#### <a name="access"></a>存取
-
-在找到相關的 StaffHub 內容之後，您可以檢視要提供給資料主體的相關資料，並取得螢幕擷取畫面，或是下載該資料。
-
-- **排程資訊：** StaffHub 中的 **[排程]** 索引標籤提供 **[人員檢視]** 與 **[班次檢視]**，讓您可依小組成員或工作班次，檢視每日、每週，每月的排程。 這些檢視可以列印或下載到 Excel 在 StaffHub web 應用程式的左上角，選取三個點 (省略符號)，然後按一下 **[匯出排程]**。
-- **共用檔案：** StaffHub 中的所有檔案都儲存在 SharePoint Online 上，因此可以使用上述的內容搜尋來探索、存取和匯出。 您也可從 StaffHub 內的 [檔案]**** 索引標籤下檢視這些檔案。
-- **訊息：** 目前，您可以遵循在下一個項目中存取使用者特定資料中的相關步驟，來存取訊息。 未來，StaffHub 中的所有郵件都會儲存在 Microsoft Teams 中，這表示您可以使用「內容搜尋」工具來加以存取。
-- **使用者特定資料：** 使用者特定資料包含使用者設定、使用者活動摘要和使用者班次要求歷程記錄；團隊成員或系統管理員全都無法檢視。 若要存取或匯出使用者特定資料，資料主體必須先登入其 StaffHub 帳戶，才能取得這些資料。 或者，如果資料主體已從貴組織離職，您也可以請系統管理員重設資料主體的使用者密碼，讓您或系統管理員可以登入其帳戶，來取得這些資料。
-- **Kronos：** StaffHub 支援[Kronos](https://www.kronos.com/) 連線，這屬於第三方人力管理工具。 StaffHub 和 Kronos 分別是獨立的處理器，根據您與雙方分別簽署的條款處理貴組織的資料。 如果您的 DSR 與 Kronos 所持有的資料相關，則必須連絡 Kronos 取得 DSR 的協助，反之亦然。
-
-#### <a name="delete"></a>刪除
-
-- 團隊管理員可從應用程式本身刪除 StaffHub 中掌控的大部分應用程式內資料內容。如同先前在 StaffHub 的探索一節所述，您可以將自己作為團隊管理員新增至團隊，並刪除資料。
-- 使用者帳戶永久刪除時，StaffHub 就會在該帳戶遭到刪除後的 30 天內，刪除使用者的名稱、電話號碼、電子郵件地址和個人資料圖片。
-
-#### <a name="export"></a>匯出
-
-請參閱 StaffHub 的[存取](#access-12)一節。
 
 ### <a name="stream"></a>Stream
 
@@ -1794,8 +1768,9 @@ IT 系統管理員可以使用安全性與合規性中心的稽核記錄搜尋�
 |9/18/2018 | [Whiteboard](#whiteboard) |「Whiteboard 預覽」不再是預覽狀態，並且已發行正式運作。因此，「Whiteboard 預覽」的章節會重新命名為「適用於電腦、Surface Hub 及其他平台的 Whiteboard」；存取、匯出及刪除資料的程序將會從這個章節中移除，以連結至 Whiteboard 支援文章的連結取代。|
 |11/08/2018 | [工作場所分析](#workplace-analytics) |已為「刪除」一節新增逐步指引，其中包括如何從工作場所分析移除資料主體，以及如何從工作場所分析報告中移除資料主體的相關資訊。|
 |11/12/2018| 全部| 已修復損毀的書籤及損毀的外部主題連結。|
-|1/9/2019|[StaffHub](#staffhub)|在 [刪除] 區段中，更新了使用者帳戶遭到永久刪除時將會發生什麼情況的描述。|
+|1/9/2019| StaffHub |在 [刪除] 區段中，更新了使用者帳戶遭到永久刪除時將會發生什麼情況的描述。|
 |2019 年 5 月 8 日| [Publisher](#publisher)|新增有關針對 Publisher 回應 DSR 的內容。|
 |2019 年 7 月 11 日| [MyAnalytics](#myanalytics)|因為所有使用者都能在 MyAnalytics 應用程式中檢視自己的資料，所以已移除系統管理員在 Office 365 安全性與合規性中心內使用 DSR 個案工具以匯出 MyAnalytics 資料的能力。 |
 |2019/11/6|[教育](#education)|連結至使用 PowerShell 指令碼取得特定學生的課程清單，然後匯出或刪除其資料的新主題。|
+|2020/1/28| 全部 | 已從文件中移除 StaffHub，StaffHub 已淘汰。 |
 ||||
