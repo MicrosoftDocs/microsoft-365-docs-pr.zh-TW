@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5ec30692d5721c316c205cf8b561e59cd6e65e0b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9224261cd0700796bdeccd35b68995c99300e591
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602310"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628089"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保險流通與責任 (HIPAA) & HITECH 動作
 
@@ -70,7 +70,7 @@ Microsoft 企業版雲端服務也會涵蓋 FedRAMP 評估。 Microsoft Azure �
 
 開始在善用的健康情況雲端的優勢 Azure 安全性與合規性藍圖資料解決方案 — HIPAA/HITRUST 健康狀況資料和 AI。 這個藍圖提供工具和指引，協助您開始今天建置 HIPAA/HITRUST 解決方案。
 
-[開始使用 Azure HIPAA/HITRUST 藍圖](https://aka.ms/healthblueprint)
+[開始使用 Azure HIPAA/HITRUST 藍圖](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 

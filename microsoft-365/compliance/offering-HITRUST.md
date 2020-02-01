@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: aa93ea90748f4beeb7a6d2ad6f537b098f19376c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 734621d9017c21822043ff8c1beb82044ec8c860
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602300"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628099"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>健康情況資訊信任聯盟 (HITRUST) 常見安全性架構 （csf） （機器翻譯）
 
@@ -56,7 +56,7 @@ Azure 與 Office 365 HITRUST CSF 憑證時才有效兩年。
 
 開始在善用的健康情況雲端的優勢 Azure 安全性與合規性藍圖資料解決方案 — HIPAA/HITRUST 健康狀況資料和 AI。 這個藍圖提供工具和指引，協助您開始今天建置 HIPAA/HITRUST 解決方案。
 
-[開始使用 Azure HIPAA/HITRUST 藍圖](https://go.microsoft.com/fwlink/p/?linkid=2100613)
+[開始使用 Azure HIPAA/HITRUST 藍圖](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
 ## <a name="accelerate-your-hipaahitrust-compliance-when-using-office-365"></a>使用 Office 365 時，加速 HIPAA/HITRUST 合規性
 
