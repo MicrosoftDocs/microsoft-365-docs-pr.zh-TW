@@ -1,5 +1,7 @@
 ---
 title: 在 Exchange Online 中設定使用者垃圾郵件通知
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -13,12 +15,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: 您可以設定使用者垃圾郵件通知的預設的全公司的垃圾郵件篩選原則或是網域所套用的自訂垃圾郵件篩選原則。
-ms.openlocfilehash: 7292d75afb07864fc50d4df30fa5f84691087820
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 3fc2d78e06d0b33793cab0fac3ba038720662f8a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41573010"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599620"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>在 Exchange Online 中設定使用者垃圾郵件通知
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 了解如何將貴公司從 Microsoft 365 商務版移到 Microsoft 365 E3。
-ms.openlocfilehash: 2515c2d56727b9a8be643dea76e150eeaadce5c9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 02adda0c2c59d2994b0c6197dd76c6cc893ad9f0
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593692"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627979"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>從 Microsoft 365 商務版移轉至 Microsoft 365 E3
 
@@ -56,7 +56,6 @@ Microsoft 365 商務版具有您需要為您的小型企業，與簡單的裝置
 | Teams | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 
 | 商務用 OneDrive | 每個使用者 1 TB 的儲存量限制   | 無限制 | 
 | Yammer，SharePoint Online，規劃中，資料流    | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 
-| StaffHub  | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Microsoft 365 E3](./media/check-mark.png) | 
 | Outlook Customer Manager、 MileIQ  | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | | 
 | **威脅防護**     | | | 
 | 攻擊縮減功能 | [請參閱此清單](#threat-protection) | 企業管理的硬體型孤立 Microsoft Edge | 

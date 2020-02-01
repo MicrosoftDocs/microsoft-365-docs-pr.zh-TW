@@ -6,6 +6,8 @@ manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/11/2018
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
@@ -14,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: eba186233efa5bebb980c4e16aafb0fe854910c9
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: af68a8e81cdaab1bbbd8887a7d586fcaefff1041
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031318"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600890"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
@@ -31,7 +33,7 @@ Microsoft 了解某些組織中具有唯一環境需求或複雜性。 如果您
 
 ## <a name="intended-audience"></a>目標對象
 
-這些建議都適用於企業架構設計人員和 IT 專業人員熟悉[Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx)及[Microsoft Enterprise Mobility + Security](https://microsoft.com/ems)，與其他人，包括 Azure Active Directory (identity)，MicrosoftIntune （裝置管理） 與 Azure 資訊保護 （資料保護）。
+這些建議都適用於企業架構設計人員和 IT 專業人員熟悉[Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx)及[Microsoft Enterprise Mobility + Security](https://microsoft.com/ems)，其中包含，與其他人，Azure Active Directory (identity)、 Microsoft Intune （裝置管理） 與 Azure 資訊保護 （資料保護）。
 
 ### <a name="customer-environment"></a>客戶環境
 

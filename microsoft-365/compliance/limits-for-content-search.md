@@ -1,5 +1,7 @@
 ---
 title: 在安全性 & 合規性中心的內容搜尋的限制
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: '了解作用中的 Office 365，例如同時搜尋的最大數目安全性 & 規範中心中的內容搜尋功能的限制。 '
-ms.openlocfilehash: 0574908468b5c2c94f1feb78c0845bc0a0e2afff
-ms.sourcegitcommit: cbf934ef448fc428f5ed53b07cda7a5f72c89221
+ms.openlocfilehash: a560e26b6a02e48ca50033acad554e3c7bb2ec6e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40911461"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600550"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>在安全性 & 合規性中心的內容搜尋的限制
 

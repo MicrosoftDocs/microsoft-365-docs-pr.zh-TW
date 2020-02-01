@@ -1,5 +1,7 @@
 ---
 title: 設定分析進階設定 Office 365 進階電子文件中
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: '了解如何設定進階的設定，包括近似重複項目、 電子郵件執行緒和佈景主題，Office 365 進階 eDiscovery 中分析處理程序。 '
-ms.openlocfilehash: 06ee57542bfdb87b8bea77b3e4271adf02490046
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2c2a104b834d8da9d0d10f93980b4f2cbb6294c8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802816"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601510"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>設定分析進階設定 Office 365 進階電子文件中
 

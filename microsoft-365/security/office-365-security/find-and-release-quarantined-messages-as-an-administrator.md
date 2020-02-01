@@ -1,5 +1,7 @@
 ---
 title: 以系統管理員身分尋找及釋出被隔離的郵件
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: 本主題說明 Exchange Online 和 Exchange Online Protection (EOP) 系統管理員如何在 Exchange 系統管理中心 (EAC) 尋找、釋出及報告被隔離的郵件。
-ms.openlocfilehash: 7d7288b85660c5569c748a3cb24a1d3cd027b72d
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
-ms.translationtype: HT
+ms.openlocfilehash: d7ea57f1dc78b21dae713ca1b9861abafacfc53a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971751"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599390"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>以系統管理員身分尋找及釋出被隔離的郵件
 

@@ -5,6 +5,8 @@ keywords: 安全性，Microsoft 365，M365，安全分數，安全性中心、 S
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
+f1.keywords:
+- NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
@@ -15,18 +17,18 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0d47ce82b5138827c4ae1c1ea29c902a8cd77cc0
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 26e227b4b1e8047ca962ca9e65b139bacae55e03
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233874"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599990"
 ---
 # <a name="manage-tickets-through-servicenow"></a>透過 ServiceNow 管理票證
 
 Microsoft 365 安全性中心正在增強原本建立並追蹤票證中 ServiceNow 的能力。 安全性系統管理員可以直接傳送 ServiceNow [Microsoft 安全分數](microsoft-secure-score.md)改進巨集指令，並建立票證。 您可以建立兩個事件管理和變更管理票證。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 可以在 Microsoft 365 安全性中心及以 ServiceNow 執行個體的存取：  
 

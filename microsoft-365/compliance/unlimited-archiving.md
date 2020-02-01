@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中的無限制封存概觀
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解自動展開封存在 Office 365 中，可提供無限制的封存儲存 Exchange Online 信箱。
-ms.openlocfilehash: 2ee588a012614a96557f4e977a094c6e08d1052b
-ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
+ms.openlocfilehash: e7d004c7ef92fbcb331191432a70114f36dabc07
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "40850907"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601361"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>在 Office 365 中的無限制封存概觀
 

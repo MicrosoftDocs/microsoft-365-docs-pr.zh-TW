@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6d7bcb6beccc9059d3a7f75fc52b307648f314c2
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d9d0c213fcca5b991b4912d5b9158e2d3836aff9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804226"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602020"
 ---
 # <a name="us-section-508"></a>美國區段 508
 
@@ -25,7 +27,7 @@ ms.locfileid: "40804226"
 
 美國國會 1998年和 2000 需要使其電子版與資訊技術 (EIT) 產品，例如軟體、 硬體、 電子化內容和支援文件，可供存取的聯邦機構中速度健法案行動不便人士使用。 508 條款 1973 （29 美國代碼 §794d），美國人力健法案的速度，因為斷定聯邦機構採購、 維護和使用 EIT 可確保行動不便人士的聯邦員工有相當於存取權，並使用的方式相對於其他聯邦員工 EIT 及資料。
 
-Microsoft 為美國聯邦及狀態政府主要軟體和雲端服務提供者。  若要協助政府版客戶採購決策，Microsoft 會發佈描述要我們的產品與服務支援 508 節的準則之範圍內的協助工具 Conformance 報告。  此資訊可協助 Microsoft 客戶判斷特定產品或服務是否將符合其特定需求。
+Microsoft 為美國聯邦及狀態政府主要軟體和雲端服務提供者。  若要協助政府版客戶採購決策，Microsoft 會發佈描述要我們的產品與服務支援 508 節的準則之範圍內的協助工具 Conformance 報告。  此資訊可協助 Microsoft 客戶判定特定產品或服務是否符合其指定需求。
 
 ## <a name="microsoft-and-us-section-508"></a>Microsoft 和美國區段 508
 

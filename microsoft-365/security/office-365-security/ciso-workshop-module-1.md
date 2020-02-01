@@ -1,5 +1,7 @@
 ---
 title: '首席資訊安全性長 （首席資訊安全長） 研討會，模組 1: Microsoft Cybersecurity 簡報'
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性原則和建議現代化貴組織中的安全性。
-ms.openlocfilehash: fa572e24a549be2f8f9a56d3f83e53d43a6c5294
-ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
+ms.openlocfilehash: e90c26575db04afffd5e5c2722b75a1c7235523d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517512"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599920"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>首席資訊安全長研討會模組 1: Microsoft Cybersecurity 簡報
 

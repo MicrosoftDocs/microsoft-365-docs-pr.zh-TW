@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中搜尋內容
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: 使用安全性 & 合規性中心，以快速找到 Exchange 信箱、 SharePoint 網站和 OneDrive 的位置，以及立即訊息中商務用 Skype 交談中的文件中的 [電子郵件的內容搜尋電子文件探索工具。
-ms.openlocfilehash: 9978262223de059511a011358764069ef23d4340
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d5acdf5bba50d002876491ee0488c1f28a2c51ad
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077797"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601540"
 ---
 # <a name="search-for-content-in-office-365"></a>在 Office 365 中搜尋內容
 

@@ -5,6 +5,8 @@ keywords: 安全性、 惡意程式碼、 Microsoft 365、 M365，安全分數�
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
+f1.keywords:
+- NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
@@ -15,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 65497522907a4bfc8e2e3d55ccd3a82cde9b8bb7
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: aeae243b4e363f69729ccdbd2bc3fc465ec1449b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233884"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600170"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -62,7 +64,7 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 
 * 全域管理員
 * 安全性系統管理員
-* Exchange 管理員
+* Exchange 系統管理員
 * SharePoint 系統管理員
 
 ### <a name="read-only-roles"></a>唯讀的角色
@@ -70,7 +72,7 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 具有唯讀存取權，您不能編輯狀態] 或 [備忘稿改進巨集指令、 編輯分數區域，或編輯自訂比較。
 
 * 服務台管理員
-* 使用者系統管理員
+* 使用者管理員
 * 服務管理員
 * 安全性讀取者
 * 安全性操作員

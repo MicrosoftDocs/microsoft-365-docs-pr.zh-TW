@@ -1,17 +1,19 @@
 ---
 title: 封存的 Microsoft 受管理電腦裝置
 description: 裝置接近淘汰網站，您仍然可以註冊，但必須縮短的支援生命週期
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 437029198d48ef8b2d9d91466108fbef989486c2
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+ms.openlocfilehash: f1389fd64efce16e81e02885127e65c8d1922c5b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859283"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602810"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>封存的 Microsoft 受管理電腦裝置
 

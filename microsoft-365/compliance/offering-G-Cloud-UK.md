@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 91f3575934f9007d8570898047f96202f83dc087
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ecd8a362b0e77df846f486b0a424425f012ee68b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804856"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602350"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>英國政府雲端 （G 雲端）
 

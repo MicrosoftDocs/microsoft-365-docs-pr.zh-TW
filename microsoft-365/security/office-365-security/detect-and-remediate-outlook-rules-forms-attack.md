@@ -1,5 +1,7 @@
 ---
 title: 偵測並修復 Outlook 規則及自訂表單資料隱碼攻擊的 Office 365 中
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何識別並修復 Outlook 規則及 Office 365 中的自訂表單資料隱碼攻擊
-ms.openlocfilehash: d5f4a653463f4105df025bf29679465ca5335098
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: c15eeb057d14cbb252bda0767a15e7c4788ece9f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970789"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599440"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>偵測並修復 Office 365 中 Outlook 規則與自訂表單插入式攻擊
 
@@ -234,7 +236,7 @@ ms.locfileid: "39970789"
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Office 365
 
-您的 Office 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。 使用[Office 365 安全性藍圖的 30 天、 前 90 天及過後的頂端優先順序](security-roadmap.md)來實作 Microsoft 建議的最佳作法為保護您的 Office 365 租用戶。
+您的 Office 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。 使用 [Office 365 安全性藍圖 - 前 30 天、前 90 天前和之後的最高優先順序](security-roadmap.md)來實作 Microsoft 建議用來保護您的 Office 365 租用戶的最佳做法。
 
 - 要在前 30 天內完成的工作。 這些工作會有立即的影響，而且對您的使用者影響較低。
 
@@ -242,7 +244,7 @@ ms.locfileid: "39970789"
 
 - 90 天之後。 這些增強功能會在您的前 90 天工作內建置。
 
-## <a name="see-also"></a>請參閱：
+## <a name="see-also"></a>另請參閱：
 
 - [惡意 Outlook 規則](https://silentbreaksecurity.com/malicious-outlook-rules/)的相關規則向量 SilentBreak 安全性文章提供如何詳細的檢閱 Outlook 規則。
 

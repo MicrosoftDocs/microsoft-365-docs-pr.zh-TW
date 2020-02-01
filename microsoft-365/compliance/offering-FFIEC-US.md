@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6b1b852ee79b377b5d67ada8a5a4de602a74e466
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 74ce16a1cc98943ea808bbae08eccd54f8f21fad
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805029"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602420"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>聯邦金融機構檢查委員會 (FFIEC)
 
@@ -45,7 +47,7 @@ Accelerate 金融服務部署：[下載 Azure 安全性與合規性 FFIEC 金融
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
+- Power BI 雲端服務，以獨立服務形式提供或包含在 Office 365 品牌方案或套件中
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 

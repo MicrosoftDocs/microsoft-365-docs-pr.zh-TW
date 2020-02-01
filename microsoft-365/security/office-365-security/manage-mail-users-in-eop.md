@@ -1,5 +1,7 @@
 ---
 title: 管理 EOP 中的郵件使用者
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定義郵件使用者是管理 Exchange Online Protection (EOP) 的重要環節。
-ms.openlocfilehash: 9322198be4e180988e1651c2ccdcaef2b0ac52a9
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: 53d47452979c42273fd485fa89642eea881bb21a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962322"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598980"
 ---
 # <a name="manage-mail-users-in-eop"></a>管理 EOP 中的郵件使用者
 

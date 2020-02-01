@@ -1,5 +1,7 @@
 ---
 title: Office 365 ATP 安全連結的運作方式
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -12,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 「安全連結」可在 Office 文件和電子郵件訊息中提供點擊超連結時即進行驗證的功能。 閱讀本篇文章以了解 ATP 安全連結的運作方式。
-ms.openlocfilehash: f8fcf6417dfb82a123307358f0fcd3e3cc8427e0
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 7b1c1368b274bbbb6dc7a5b760de4968575962fa
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233904"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599200"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Office 365 ATP 安全連結的運作方式
          

@@ -1,5 +1,7 @@
 ---
 title: 非 Office 365 資料載入辨識項
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e05dc26159545e4daf7a8f4109268a1657fd62d6
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: 3be5e4054e34cabb61505d48524feb2dbbfd0e44
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38685522"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600570"
 ---
 # <a name="load-non-office-365-data-into-evidence"></a>非 Office 365 資料載入辨識項
 

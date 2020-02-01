@@ -1,5 +1,7 @@
 ---
 title: Alerts in the Office 365 Security &amp; Compliance Center
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -15,12 +17,12 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 description: 了解您可以設定以協助 Office 365 安全性的提醒。
-ms.openlocfilehash: a04514b272c4fbe87b56b8475d4c57a3222a5387
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 24b00eab79c9dbc67e913ea05a7d8b34b54293c4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077952"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599940"
 ---
 # <a name="alerts-in-the-office-365-security-amp-compliance-center"></a>Alerts in the Office 365 Security &amp; Compliance Center
 
@@ -32,7 +34,7 @@ ms.locfileid: "37077952"
   
  **若要直接移至 [安全性&amp;合規性中心：**
   
-1. 移至 [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用公司或學校帳戶登入 Office 365。 
     

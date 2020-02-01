@@ -1,5 +1,7 @@
 ---
 title: 首席資訊安全性長 （首席資訊安全長） 研討會，模組 4b： 威脅保護策略
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性原則和建議現代化貴組織中的安全性。
-ms.openlocfilehash: 88cb6ab079afcd420202f5cca47f555895d0d46a
-ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
+ms.openlocfilehash: 38f7a1af7592801a97fd8b5156dcbfaa1c5ebfdf
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517500"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599680"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>首席資訊安全長研討會模組 4b： 威脅保護策略 
 

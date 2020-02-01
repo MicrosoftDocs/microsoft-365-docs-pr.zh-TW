@@ -1,5 +1,7 @@
 ---
 title: 您維持組織安全回應能力與 Office 365 威脅調查
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威脅調查及回應功能如何協助貴組織偵測入侵和威脅，快速地降低，以及復原威脅。
-ms.openlocfilehash: f51a4de9b0bd1da43ccbd2d5e814f0fa6ef87459
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 2f709c555974444b8f2a09d87705043d65240090
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971781"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599100"
 ---
 # <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>您維持組織安全回應能力與 Office 365 威脅調查
 

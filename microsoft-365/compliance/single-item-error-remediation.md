@@ -1,5 +1,7 @@
 ---
 title: 單一項目錯誤補救
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 您可以在進階電子文件探索中設定而不需要遵循大量錯誤修復程序檢閱文件中可修正處理錯誤。
-ms.openlocfilehash: 922c0e4b0ab30bae6507fac7e97080a5951ea750
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: c049ce4b5d3f8fc12a015a61ea927b744ae76eb3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38685516"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601490"
 ---
 # <a name="single-item-error-remediation"></a>單一項目錯誤補救
 

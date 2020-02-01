@@ -1,5 +1,7 @@
 ---
 title: 偵測並修復 Office 365 中的非法同意授權
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何識別並修正在 Office 365 中的非法同意授權。
-ms.openlocfilehash: ae26656cdfcb6f17bbe4caa1016f6428f3bd655e
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 72109b6522a750e4eb31f289352e4ee2abfa7d33
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572990"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599450"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>偵測並修復 Office 365 中的非法同意授權
 

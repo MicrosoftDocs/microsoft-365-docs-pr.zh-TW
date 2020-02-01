@@ -1,5 +1,7 @@
 ---
 title: 自動化適用於 Microsoft 365 企業版測試環境的授權和群組成員資格
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 企業版測試環境中設定群組為基礎的授權和動態群組成員資格。
-ms.openlocfilehash: facff7eb556299c0312fa7488a35a96151bb1882
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0575f2aa763f85a0042e6d02f9cce65e69064973
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802118"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601180"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>自動化適用於 Microsoft 365 企業版測試環境的授權和群組成員資格
 

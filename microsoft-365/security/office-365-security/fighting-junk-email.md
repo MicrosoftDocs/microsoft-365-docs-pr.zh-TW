@@ -1,5 +1,7 @@
 ---
 title: 抵禦傳送至 Office 365 的垃圾郵件
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: Microsoft 的電子郵件安全性藍圖包括不相符的跨產品方法。 Exchange Online Protection (EOP) 反垃圾郵件和防網路釣魚篩選技術已套用至使用者提供的最新反垃圾郵件和防網路釣魚的工具和整個網路的創新 Microsoft 的電子郵件平台上。 EOP 的目標是要提供一種完整且可使用的電子郵件服務，可協助您偵測並防止使用者的垃圾郵件、 詐騙電子郵件威脅 （網路釣魚） 和惡意程式碼。
-ms.openlocfilehash: 7c1b74d2ddb98d1250f80455163c5f0b8690b0de
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 888df6224007471db46b669ac4ffe33983057115
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032368"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599320"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>抵禦傳送至 Office 365 的垃圾郵件
 

@@ -1,5 +1,7 @@
 ---
 title: 再試一次 「 內容搜尋 」 來解決錯誤的內容位置
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 用於解決有內容位置錯誤的內容搜尋中的 [重試] 按鈕。
-ms.openlocfilehash: b35c2985efeafa3192a2404047fe62e28e04157e
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: ce88749a887fea57e977e210de1eda40268cb832
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685649"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601620"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>再試一次 「 內容搜尋 」 來解決錯誤的內容位置
 

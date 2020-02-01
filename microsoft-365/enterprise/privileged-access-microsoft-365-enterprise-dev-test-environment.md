@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 企業版測試環境的特殊權限存取管理
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: 使用此測試實驗室指南來啟用特殊權限的存取管理 Microsoft 365 企業版測試環境。
-ms.openlocfilehash: f0010b4d6aa85902473676d023d8b4fb9f4018bc
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 9dadad2dd11845f9215745863c8176bfa280797f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959631"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600800"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企業版測試環境的特殊權限存取管理
 

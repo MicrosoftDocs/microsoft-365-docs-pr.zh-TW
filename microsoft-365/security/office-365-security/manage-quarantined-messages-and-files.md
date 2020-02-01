@@ -1,5 +1,7 @@
 ---
 title: 以 Office 365 系統管理員身分管理隔離的郵件和檔案
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -16,12 +18,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: '身為系統管理員，您可以檢視、 釋出，並報告誤判隔離的郵件在 Office 365 中。 您可以設定原則，讓 Office 365 篩選郵件，並傳送至隔離區幾個原因： 因為被判定是垃圾郵件、 大量、 網路釣魚、 惡意程式碼，或因為它們符合郵件流程規則。 '
-ms.openlocfilehash: 610a5e584f8731440150f643365b4d307b87adf2
-ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
+ms.openlocfilehash: 229c2fa859b537c366a02cb27d1e9a71cb9aa6b2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023327"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598970"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>以 Office 365 系統管理員身分管理隔離的郵件和檔案
 

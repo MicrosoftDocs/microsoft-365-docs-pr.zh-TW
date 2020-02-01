@@ -1,5 +1,7 @@
 ---
 title: What's new in Microsoft 365 合規性中心
+f1.keywords:
+- NOCSH
 ms.author: brendonb
 author: brendonb
 manager: laurawi
@@ -16,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: 就像在 Microsoft 365 合規性中心的功能，一律會不斷我們的說明內容。 我們持續正在建立新的文章、 更新現有的項目，以及變更根據您的意見反應。 了解什麼是新及更新這個月。
-ms.openlocfilehash: 61e4798575c44a9759a15bb93dbbb723d5be8999
-ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
+ms.openlocfilehash: 40ad0249b834eb187fecc34df3e2785e84201eee
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "40850877"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601650"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 合規性內容的新版更新
 

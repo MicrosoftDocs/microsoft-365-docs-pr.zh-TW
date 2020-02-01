@@ -1,5 +1,7 @@
 ---
 title: 部署獨立的 SharePoint Online 小組網站
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 摘要：使用下列逐步指示來部署新的獨立 SharePoint Online 小組網站。
-ms.openlocfilehash: e5bb5ffdec98b2a8610e4f9d1ecaa0999f5ae710
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
-ms.translationtype: HT
+ms.openlocfilehash: c49b8d2d0c69f76f284061e21c8be31ee2204a54
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970809"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599520"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署獨立的 SharePoint Online 小組網站
 

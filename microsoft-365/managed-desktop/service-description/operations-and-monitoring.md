@@ -1,18 +1,20 @@
 ---
 title: Microsoft 受管理電腦作業和監控
 description: ''
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9f0d1889e625ceba52f3e91ee950041f82e9750e
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 5aee7c835643fab94cc7e233ea005c3f3a1b921c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38074765"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602800"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft 受管理電腦作業和監控
 

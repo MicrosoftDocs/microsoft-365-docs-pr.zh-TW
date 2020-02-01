@@ -1,5 +1,7 @@
 ---
 title: 處理的調查資料
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 79405df5cb581548f8596999a7154c4f8cf2afc1
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cdde5b4a569c1653c3ed48453f30c26081980307
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077824"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601720"
 ---
 # <a name="process-data-for-an-investigation"></a>處理的調查資料
 

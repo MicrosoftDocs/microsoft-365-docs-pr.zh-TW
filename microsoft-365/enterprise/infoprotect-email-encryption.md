@@ -1,5 +1,7 @@
 ---
 title: 步驟 6：設定電子郵件加密
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,18 +16,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: 了解及設定 Office 365 的特殊權限存取管理。
-ms.openlocfilehash: ef9da1d6aea20ef965b56006d91c4da3c0ad18ab
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 252a5f76197deb1034d200553308a281ef079957
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370430"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600920"
 ---
 # <a name="step-6-configure-email-encryption"></a>步驟 6：設定電子郵件加密
 
 *此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-![階段 6： 資訊保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![階段 6：資訊保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 有三種類型的 Microsoft 365 中的電子郵件加密。
 
@@ -42,7 +44,7 @@ OME，與您的組織可以傳送和接收您組織內部和外部的人員之�
 
 ![OME 加密的電子郵件](./media/infoprotect-email-encryption/ome-encryption.png)
 
-您設定定義加密條件的傳輸規則。 當使用者傳送符合規則的郵件時，會自動套用加密。
+您設定定義加密條件的傳輸規則。 當使用者傳送的郵件符合某規則時，會自動套用加密。
 
 若要檢視加密的郵件，收件者可以取得一次性密碼，登入 Microsoft 帳戶或登入公司或學校帳戶與 Microsoft 365 相關聯。 收件者也可以傳送加密的回覆。 則不需要自己 Microsoft 365 訂用帳戶檢視加密的郵件，或傳送加密的回覆。
 
@@ -62,7 +64,7 @@ IRM 原則設定 Microsoft 365 內，且可以套用至文件中的 SharePoint O
 
 ## <a name="smime"></a>S/MIME
 
-S/MIME 是一種數位憑證型電子郵件型保護解決方案，可讓您同時加密，並以數位方式簽署郵件時。 訊息加密有助於確保只有預定的收件者可以開啟和讀取該郵件。 數位簽章可協助收件者驗證寄件者的身分識別，並判斷該寄件者無法傳送它。
+S/MIME 是一種數位憑證型電子郵件型保護解決方案，可讓您同時加密，並以數位方式簽署郵件時。 郵件加密有助於確保只有預定的收件者可以開啟並閱讀郵件。 數位簽章可協助收件者驗證寄件者的身分識別，並判斷該寄件者無法傳送它。
 
 ![S/MIME 的電子郵件保護](./media/infoprotect-email-encryption/smime-protection.png)
 

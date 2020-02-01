@@ -1,5 +1,7 @@
 ---
 title: Office 365 ATP 安全連結
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -22,12 +24,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 「安全連結」可在 Office 文件和電子郵件訊息中提供點擊超連結時即進行驗證的功能。 使用安全連結來保護組織不受網路釣魚及其他攻擊的威脅。
-ms.openlocfilehash: fadec60dc25aad418480d7c26a06e92f5a2065dd
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
-ms.translationtype: HT
+ms.openlocfilehash: 5834c3c49529f983d426084a50712c55de92fc63
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970909"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599790"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP 安全連結
 

@@ -1,5 +1,7 @@
 ---
 title: 垃圾郵件報告的 Microsoft Outlook 增益集
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -12,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: 適用於 Microsoft Outlook 的垃圾郵件回報增益集可讓 Exchange Online 和 Exchange Online Protection 使用者輕易地向 Microsoft 報告垃圾郵件以供分析，減少日後服務篩選的垃圾郵件數目和影響。回報增益集能與搭配 Windows 7、Windows 8 或 Windows 10 的 Microsoft Outlook 2013、Outlook 2010 或 Outlook 2007 相容，它提供以下優勢：
-ms.openlocfilehash: f92f4308b14d8512eeef534124e4d5dde518c603
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ea616cd56fc1e5e7e98e627a8c99c8490c47f164
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076810"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599070"
 ---
 # <a name="junk-email-reporting-add-in-for-microsoft-outlook"></a>垃圾郵件報告的 Microsoft Outlook 增益集
 

@@ -1,5 +1,7 @@
 ---
 title: Office 365 中的攻擊模擬器
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 身為 Office 365 全域管理員，您可以使用的攻擊模擬器在組織中執行真實的攻擊案例。 這可協助您找出並之前真實的攻擊拜訪人次貴公司，找出受到使用者。
-ms.openlocfilehash: e5f304a7c706875216c58330b1225d341b2b59df
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 0bdb4a0ffac139f45d842025238d3780f41d594c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971931"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599820"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻擊模擬器
 
@@ -39,7 +41,7 @@ ms.locfileid: "39971931"
 
 若要存取安全性的攻擊模擬器&amp;合規性中心，選擇 [**威脅管理** \> **攻擊模擬器**。
 
-## <a name="before-you-begin"></a>開始之前...]
+## <a name="before-you-begin"></a>開始之前...
 
 請確定您和您的組織符合的攻擊模擬器需求如下：
 
@@ -151,7 +153,7 @@ ms.locfileid: "39971931"
 
 請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)請參閱什麼是在開發中、 什麼推行和功能已啟動。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 

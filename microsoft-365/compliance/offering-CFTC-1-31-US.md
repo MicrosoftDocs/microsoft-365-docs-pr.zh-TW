@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e2c911592dea19afeca8d0f347e20ac3bd6c6ba2
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 448dbcf250a34d7c7d7acb2d3f3acc4c8de4d14b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805436"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602640"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>貿易委員會 (CFTC) 規則 1.31(c-d) 美國境內的市售 Future
 
@@ -48,7 +50,7 @@ ms.locfileid: "40805436"
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 [Azure & CFTC 規則 1.31 — 秒 17a-4(f) & CFTC 1.31(c-d) 合規性評估與目的的 Azure 儲存體
 

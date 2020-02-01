@@ -1,5 +1,7 @@
 ---
 title: Office 365 中的郵件流程情報
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -11,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 系統管理員可以了解與 Office 365 （也稱為郵件流程情報） 中使用連接器的郵件傳遞相關聯的錯誤碼。
-ms.openlocfilehash: ee02be439cd3bd9405aea7a94410af794808f259
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: ea4fb56f0e303d243af02edf01e5d85b957a6368
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971771"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599050"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Office 365 中的郵件流程情報
 

@@ -9,13 +9,15 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
+f1.keywords:
+- NOCSH
 ms.author: greglin
-ms.openlocfilehash: a6e197c7e95f70163c01f0064877811858062b36
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 964756a1fadba89f644a0d04c1d35d2945b78c6c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370090"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602870"
 ---
 # <a name="step-4-monitor-device-health-and-compliance"></a>步驟 4：監控裝置健全狀況和合規性
 
@@ -29,7 +31,7 @@ Windows Analytics 裝置健全狀況功能可提供協助偵測並修復問題�
 
 作為過渡期的檢查點，您可以看到此步驟的[允出準則](windows10-exit-criteria.md#crit-windows10-step4)。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 |||
 |:-------|:-----|

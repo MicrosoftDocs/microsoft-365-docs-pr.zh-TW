@@ -1,5 +1,7 @@
 ---
 title: 進階電子文件的版本資訊
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文包含 release notes for 進階電子文件。
-ms.openlocfilehash: f3d26b1c84746581ccf32e1d4aada079fc21dfb3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e51647e56e7fb29d8f67d36941a2847278c1e1c0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078180"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601640"
 ---
 # <a name="release-notes-for-advanced-ediscovery"></a>進階電子文件的版本資訊
 

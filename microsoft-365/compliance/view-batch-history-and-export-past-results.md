@@ -1,5 +1,7 @@
 ---
 title: 檢視批次歷程記錄及匯出過去的 Office 365 進階電子文件探索中的結果
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: '了解如何檢視選取的匯出批次工作階段的詳細的資訊，以及如何復原在 Office 365 進階電子文件探索中的最後一個匯出工作階段。  '
-ms.openlocfilehash: 5e20fa787bcbb9dc6072af779326518d6a03aaa4
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0309c84bb28f4034f3a0ec8726a21ca2a4b4f22f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802248"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601260"
 ---
 # <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>檢視批次歷程記錄及匯出過去的 Office 365 進階電子文件探索中的結果
 

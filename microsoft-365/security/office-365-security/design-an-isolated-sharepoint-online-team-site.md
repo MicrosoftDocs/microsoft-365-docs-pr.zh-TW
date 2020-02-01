@@ -1,5 +1,7 @@
 ---
 title: 設計獨立的 SharePoint Online 小組網站
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 摘要： 逐步執行獨立的 SharePoint Online 小組網站的設計程序。
-ms.openlocfilehash: 671baadb3f7226be8c9919874f62cee576f7d294
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 345a5fa5dcdcf2a3e61fdd6f1f346d46afe3fd5f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077928"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599470"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>設計獨立的 SharePoint Online 小組網站
 
@@ -69,7 +71,7 @@ ms.locfileid: "37077928"
   
 Azure AD 群組的 Office 365 是不同於 Office 365 群組。 Azure AD 群組出現在其**類型**設為 [**安全性**與 Microsoft 365 系統管理中心中，而且不具有電子郵件地址。 您可以管理 azure AD 群組內：
   
-- Active Directory 網域服務 (AD DS)
+- Active Directory Domain Services (AD DS)
     
     這些是您內部部署中已建立的群組 AD DS 基礎結構和同步處理至 Office 365 訂閱。 在 Microsoft 365 系統管理中心中，這些群組會有**與 active directory Synched****狀態**。
     
@@ -134,7 +136,7 @@ Azure AD 群組的 Office 365 是不同於 Office 365 群組。 Azure AD 群組�
   
 ## <a name="see-also"></a>另請參閱
 
-[獨立的 SharePoint Online 小組網站](isolated-sharepoint-online-team-sites.md)。
+[獨立的 SharePoint Online 小組網站](isolated-sharepoint-online-team-sites.md)
   
 [管理獨立的 SharePoint Online 小組網站](manage-an-isolated-sharepoint-online-team-site.md)
 

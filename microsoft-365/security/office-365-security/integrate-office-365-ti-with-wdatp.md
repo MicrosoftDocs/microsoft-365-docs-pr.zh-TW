@@ -1,5 +1,7 @@
 ---
 title: 整合 Office 365 進階的威脅防護與 Microsoft Defender 進階威脅防護
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: 整合 Microsoft Defender 進階威脅防護來威脅管理的詳細的資訊請參閱 < Office 365 進階威脅防護。
-ms.openlocfilehash: a4e96615cf0f132a43957a5885b5fb33a5e8f031
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fc2db4c1a3e5b32206ee91cae9f5adbeae4875d4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076826"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599130"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>整合 Office 365 進階的威脅防護與 Microsoft Defender 進階威脅防護
 

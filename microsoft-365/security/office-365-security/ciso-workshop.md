@@ -1,5 +1,7 @@
 ---
 title: 首席資訊安全性長 （首席資訊安全長） 研討會
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性原則和建議現代化貴組織中的安全性。
-ms.openlocfilehash: 9a6fc72cd905a99b555417269aa9f7ec84faef1f
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 7377eb0bedf86e69618a82a05a7f048cc9b1cde7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012418"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599650"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>首席資訊安全性長 （首席資訊安全長） 研討會訓練
 
@@ -38,4 +40,4 @@ ms.locfileid: "38012418"
 
 - [模組 4b： 威脅保護策略、 第 II 部分](ciso-workshop-module-4b.md)： 此模組檢閱 trajectory 的安全性作業中心 (SOC)，提供的 Microsoft 智慧型安全性圖形中的訊號 trillions 與發展。
 
-- [模組 5： 資訊保護](ciso-workshop-module-5.md)： 了解如何保護機密資訊，無論其亦會隨之自動分類、 不同的裝置和不同行動裝置、 雲端服務及其他資料的持續監視常設加密公司資產。
+- [模組 5： 資訊保護](ciso-workshop-module-5.md)： 了解如何保護機密資訊，無論其亦會隨之自動分類、 不同的裝置和不同行動裝置、 雲端服務時，與其他公司資產的資料持續監視常設加密。

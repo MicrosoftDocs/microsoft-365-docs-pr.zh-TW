@@ -1088,6 +1088,8 @@
               href: 'https://aka.ms/TRUCS-Compliance'
         - name: 澳洲/太平洋
           items:
+            - name: APRA (澳洲)
+              href: offering-APRA-Australia.md
             - name: 次/CCSL （澳大利亞）
               href: offering-CCSL-IRAP-Australia.md
             - name: NZ CC Framework (紐西蘭)

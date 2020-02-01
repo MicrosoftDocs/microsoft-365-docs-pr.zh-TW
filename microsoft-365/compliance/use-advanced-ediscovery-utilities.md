@@ -1,5 +1,7 @@
 ---
 title: 使用 Office 365 進階電子文件探索公用程式
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
 description: '了解 Office 365 進階電子文件探索，包括大小寫的記錄檔中的公用程式、 清除資料、 處理錯誤，修改相關性和透明度分析。  '
-ms.openlocfilehash: fd7ed1afe4b9204665e58b393c79bbb47b7598e3
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 3952d1ec58b3f55f997079cec16f16ddb301ed89
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802328"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601330"
 ---
 # <a name="use-office-365-advanced-ediscovery-utilities"></a>使用 Office 365 進階電子文件探索公用程式
 

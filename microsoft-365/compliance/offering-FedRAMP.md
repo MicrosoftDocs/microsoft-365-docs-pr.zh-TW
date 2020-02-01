@@ -1,10 +1,12 @@
 ---
-title: 聯邦風險與授權管理計劃 (FedRAMP)
+title: 聯邦風險與授權管理計畫 (FedRAMP)
 description: 美國聯邦風險與授權管理程式 P ATOs 和 ATOs，Microsoft 已授與。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,14 +14,14 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: da8e7e473210c42cb5d95f2701779561c95b6bb3
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2b7ad248299c12edfeed880ac731f2d23e9b1949
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804946"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602360"
 ---
-# <a name="federal-risk-and-authorization-management-program-fedramp"></a>聯邦風險與授權管理計劃 (FedRAMP)
+# <a name="federal-risk-and-authorization-management-program-fedramp"></a>聯邦風險與授權管理計畫 (FedRAMP)
 
 ## <a name="fedramp-overview"></a>FedRAMP 概觀
 
@@ -70,13 +72,13 @@ CSP 一旦授與 P ATO 時，仍然需要授權 — ATO — 從可搭配任何�
 - Intune
 - [Office 365 和 Office 365 美國政府](https://aka.ms/o365-compliance-framework)
 - Office 365 美國政府國防版
-- Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
+- Power BI 雲端服務，以獨立服務形式提供或包含在 Office 365 品牌方案或套件中
 - Microsoft Defender ATP
 
 > [!NOTE]
 > 使用 Azure 政府版中的 Azure Active Directory 需要使用的部署在 Azure 的公用雲端的 Azure 政府版以外的元件。
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 Microsoft，才能維護其 P ATO 和 ATOs recertify 其雲端服務每年。 若要這麼做，Microsoft 必須監視及持續，評估其安全性控制和示範，其 services 的安全性，仍會保留在合規性。
 

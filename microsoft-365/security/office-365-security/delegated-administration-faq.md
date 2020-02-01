@@ -1,5 +1,7 @@
 ---
 title: 委派管理常見問題集
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: 針對想要執行委派的 Office 365 管理工作的 Microsoft 合作夥伴和轉銷售，包括能夠管理其他承租人 (公司) 的 Exchange Online Protection (EOP)，本主題提供常見問題與解答。
-ms.openlocfilehash: 4e2548ebe52926e00269615a436662183ec5bd2a
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 2a237da685ae3c3d81c5a0912e15b5e7370e2118
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970749"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599480"
 ---
 # <a name="delegated-administration-faq"></a>委派管理常見問題集
 
@@ -23,7 +25,7 @@ ms.locfileid: "39970749"
 
 **問：我是轉銷商，需要管理客戶的承租人；該怎麼做？**
 
-答：是。 如果您的 Microsoft 合作夥伴或轉銷商，而且您已簽署最多可為 Microsoft 顧問，您可以要求權限管理在系統管理中心內其租用戶。 這稱為委派管理，以及它可讓您管理其 Office 365 租用戶中 （包括 EOP 設定） 如果當您已在組織內系統管理員。 執行委派的管理的步驟如下所示：
+答： 如果您的 Microsoft 合作夥伴或轉銷商，而且您已簽署最多可為 Microsoft 顧問，您可以要求權限管理在系統管理中心內其租用戶。 這稱為委派管理，以及它可讓您管理其 Office 365 租用戶中 （包括 EOP 設定） 如果當您已在組織內系統管理員。 執行委派的管理的步驟如下所示：
 
 1. 註冊成為 [Microsoft Office 365 Advisor](https://aka.ms/cloudbenefits)。
 
@@ -43,4 +45,4 @@ ms.locfileid: "39970749"
 
 **問：我可以取得所有子承租人的彙總報告嗎？**
 
-答：是。 跨您管理公司的合併報告不適用於 Microsoft 365 系統管理中心報告這一次。 不過，您可以使用[Microsoft Graph](https://docs.microsoft.com/graph/overview)。
+答： 跨您管理公司的合併報告不適用於 Microsoft 365 系統管理中心報告這一次。 不過，您可以使用[Microsoft Graph](https://docs.microsoft.com/graph/overview)。

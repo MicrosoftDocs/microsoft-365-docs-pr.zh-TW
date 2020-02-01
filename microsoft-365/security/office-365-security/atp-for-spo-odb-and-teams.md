@@ -1,5 +1,7 @@
 ---
 title: 適用於 SharePoint、OneDrive 及 Microsoft Teams 的 Office 365 ATP
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -16,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 將 Office 365 進階威脅防護延伸至 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 中的檔案，讓您的組織可更安全地進行共同作業。
-ms.openlocfilehash: e590d9917cbc32a6e1eaaf15b5716a9bf5e620f5
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
-ms.translationtype: HT
+ms.openlocfilehash: a21654ed8045b9adb6c09a730ada3ae458cf1609
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971951"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599840"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>適用於 SharePoint、OneDrive 及 Microsoft Teams 的 Office 365 ATP
 

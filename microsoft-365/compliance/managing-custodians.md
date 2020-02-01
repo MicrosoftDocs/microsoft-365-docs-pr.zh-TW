@@ -1,5 +1,7 @@
 ---
 title: 使用進階電子文件中的 custodians
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 進階電子文件的 custodian 管理工具可讓您管理的工作流程識別、 保留，以及收集與法律案件感興趣的人員相關聯的資料。
-ms.openlocfilehash: 5f112b5229e2a13b329559786ffe82bce798fa72
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fd796471ae4caeafbabc7b588dcf03b8cad80bc4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077174"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600490"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery"></a>使用進階電子文件中的 custodians
 

@@ -1,5 +1,7 @@
 ---
 title: 設定輸出垃圾郵件原則
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 如果您使用該服務來傳送輸出電子郵件，便會一律啟用輸出垃圾郵件篩選功能，從而保護使用該服務的組織及其預期的收件者。
-ms.openlocfilehash: 43939022dc365f5b28418d96ae1217e159312da1
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c17772db2a2961cade180a5c1e0403ae8450007f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808438"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599560"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>設定輸出垃圾郵件原則
 
@@ -103,7 +105,7 @@ ms.locfileid: "40808438"
 
 8. 按一下 [**儲存**]
 
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="for-more-information"></a>相關資訊
 
 [傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者](https://docs.microsoft.com/office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)
 

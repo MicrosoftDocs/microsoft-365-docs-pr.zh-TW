@@ -1,5 +1,7 @@
 ---
 title: SharePoint 相容 PDF 讀者的支援 Microsoft 的資訊版權管理服務
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: dd197d58-5bf6-4d18-b9f8-d16db603fae2
 description: Microsoft SharePoint 2013 支援 PDF 文件的資訊版權管理 (IRM) 的保護。 該的支援，使用者可以上傳 PDF 文件至受 IRM 保護的文件庫，並於下載，檔案將會使用 Microsoft Office IRM 保護。
-ms.openlocfilehash: ba65f78198ba9e973253d6dd97c1ab3ac02d2b9c
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: 52089e44d41d9fd2562780deb0848a3a1a5705cd
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38685495"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601440"
 ---
 # <a name="sharepoint-compatible-pdf-readers-that-support-microsoft-information-rights-management-services"></a>SharePoint 相容 PDF 讀者的支援 Microsoft 的資訊版權管理服務
 

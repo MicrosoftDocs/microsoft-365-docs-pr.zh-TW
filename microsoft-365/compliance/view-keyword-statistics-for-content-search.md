@@ -1,5 +1,7 @@
 ---
 title: 檢視內容搜尋結果的關鍵字統計資料
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: 使用搜尋統計資料功能來顯示和比較安全 & 與規範中心中的多個內容搜尋的統計資料。 當您建立或編輯搜尋查詢，以取得增強顯示多少個項目比對每個關鍵字或關鍵字文句的統計資料，您也可以設定關鍵字清單。
-ms.openlocfilehash: 558d8bd269d1c1d8bfcf3f15452a83de74f3e38d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 80a2abc2392a21439219d5bd5d462a4671a926a8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077692"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601250"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>檢視內容搜尋結果的關鍵字統計資料
 
@@ -27,7 +29,7 @@ ms.locfileid: "37077692"
   
 此外，您可以設定新的和現有的搜尋，以在搜尋查詢中傳回的每個關鍵字統計資料。 這可讓您比較每個關鍵字查詢中，並比較從多個搜尋的關鍵字統計資料的結果數目。
   
-您也可以下載的搜尋統計資料和關鍵字統計資料至 CSV 檔案。 這可讓您在 Excel 中使用的篩選和排序功能，若要比較的結果，並準備您的搜尋結果中的報告。
+您也可以將搜尋統計資料和關鍵字統計資料下載至 CSV 檔案。 如此可讓您使用 Excel 中的篩選和排序功能來比較結果，並為您的搜尋結果準備報告。
   
 ## <a name="get-statistics-for-content-searches"></a>取得的內容搜尋統計資料
 
@@ -88,7 +90,7 @@ ms.locfileid: "37077692"
     
     **上方的位置**
     
-    此頁面會顯示有關符合搜尋查詢的每個所搜尋的內容位置的項目數目的統計資料。 會顯示前 1000 個位置。 如果您檢視多個搜尋統計資料時，會顯示每個搜尋的頂端 1000 位置。 請注意的內容位置不包含在此頁面上，是否它不含任何符合搜尋查詢的項目。
+    此頁面會顯示有關符合搜尋查詢的每個所搜尋的內容位置的項目數目的統計資料。 會顯示前 1,000 個位置。 如果您檢視多個搜尋統計資料時，會顯示每個搜尋的頂端 1000 位置。 請注意的內容位置不包含在此頁面上，是否它不含任何符合搜尋查詢的項目。
     
     ![有關所搜尋的內容位置中找到的項目數目的統計資料](media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
   

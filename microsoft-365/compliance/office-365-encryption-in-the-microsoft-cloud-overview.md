@@ -1,5 +1,7 @@
 ---
 title: Microsoft Cloud 中的加密
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: Microsoft Cloud 中的加密的概觀。
-ms.openlocfilehash: 1ca3d1711589ab2d65a27a8d1eeb6da265ce727b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 11cce463cf953bd9f8ea0df61e3fe97b356608eb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38690221"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601820"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft Cloud 中的加密
 
@@ -40,8 +42,8 @@ FIPS 140-2 是專為驗證實作密碼編譯，而不是使用這些產品的產
 Microsoft 需要認證使用我們的雲端服務與每個新的版本的 Windows 作業系統中的基礎密碼編譯模組：
 
 - Azure 和 Azure US Government
-- Dynamics 365 和 Dynamics 365 美國政府版
-- Office 365、 Office 365 US Government 和 Office 365 美國政府國防版
+- Dynamics 365 和 Dynamics 365 美國政府
+- Office 365、Office 365 美國政府和 Office 365 美國政府國防版
 
 靜態的 Office 365 客戶資料的加密是由提供多個服務端技術，包括 BitLocker、 DKM、 Azure 儲存體服務加密，以及服務加密在 Exchange Online、 商務用 Skype、 OneDrive for Business 和 SharePoint線上。 Office 365 服務加密包括使用儲存在 Azure 金鑰保存庫中的客戶管理加密金鑰] 選項。 客戶管理金鑰，稱為[Office 365 客戶金鑰](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697)，則使用此選項的 Exchange Online、 SharePoint Online、 商務用 Skype 和商務用 OneDrive。
 

@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a7967a4bd12f98f3654f2b5006568c868a7e134f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 070ec3977768d131e4e4d9c2f493e630a1a707c9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804016"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601890"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800-171
 
@@ -47,7 +49,7 @@ NIST SP 800-171 需求是 NIST SP 800-53、 FedRAMP 使用標準的子集。 附
 - Intune
 - [Office 365 美國政府社群雲端 (GCC)、 Office 365 GCC 高和 DoD](https://aka.ms/o365-compliance-framework)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 - [Azure 政府版 Attestation 的合規性 NIST SP 800-171](https://aka.ms/Azure-NIST-800-171)
 

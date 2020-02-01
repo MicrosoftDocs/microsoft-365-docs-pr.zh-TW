@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中，O365 提交，Office 365 垃圾郵件問題，O365 誤判系統提交提交 office 365 中的釣魚程式、 送出掃描、 可疑的電子郵件，Office 365 中的電子郵件、 掃描郵件、 有 Microsoft 掃描的釣魚程式]，讓 Microsoft 的垃圾郵件掃描巨集、 送出電子郵件、 送出電子郵件，可疑的電子郵件、 壞動作項目郵件、 可疑、 不受信任的郵件，報告釣魚程式的電子郵件給 Microsoft、 回報給 Microsoft 的釣魚程式電子郵件、 報告給 Microsoft，報告給 Microsoft，以電子郵件給 Microsoft，報表惡意程式碼的詐騙電子郵件的惡意電子郵件垃圾郵件收件匣 office 365 中的電子郵件、 電子郵件 office 365 中的病毒
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何送出可疑的電子郵件，可能的網路釣魚郵件、 垃圾郵件，以及其他可能有害的郵件、 Url 和檔案從您的 Office 365 租用戶給 Microsoft 進行掃描。
-ms.openlocfilehash: c46017becfed546557fbf59c0dbbe12e9af53aa0
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: a12981ee302ea72e112826104996fb775e4ac3fb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41573030"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599980"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>如何送出可疑的垃圾郵件、 釣魚程式、 Url 和 microsoft Office 365 掃描的檔案
 

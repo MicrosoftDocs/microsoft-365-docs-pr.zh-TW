@@ -1,5 +1,7 @@
 ---
 title: Exchange Online Protection 中的 Exchange 系統管理中心
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Exchange 系統管理中心 (EAC) 是 Microsoft Exchange Online Protection (EOP) 的網頁型管理主控台。
-ms.openlocfilehash: 58f339e2ebbb566b8656eed68453841ca011a72f
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
-ms.translationtype: HT
+ms.openlocfilehash: 3a00b6b259c94e1446b6d6dc49b0f5daa9178cbd
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970549"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599400"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Online Protection 中的 Exchange 系統管理中心
 

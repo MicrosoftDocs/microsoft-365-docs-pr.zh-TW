@@ -1,5 +1,7 @@
 ---
 title: 疑難排解資訊屏障
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用本文做為指南疑難排解資訊障礙。
-ms.openlocfilehash: 07c3c6fc12ec1b288ae9499715ddadb21764f6ef
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: b4c9bb46bc1e3c13cdc8b46a95733558714a44df
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970801"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600590"
 ---
 # <a name="troubleshooting-information-barriers"></a>疑難排解資訊屏障
 
@@ -29,7 +31,7 @@ ms.locfileid: "40970801"
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>問題： 使用者意外系統阻止您與其他人通訊 Microsoft teams 
 
-在此情況下，人員會回報未預期的問題與其他人通訊 Microsoft teams。 範例：
+在此情況下，人員會回報未預期的問題與其他人通訊 Microsoft teams。 範例:
 - 使用者搜尋，但找不到，在 Microsoft Teams 中的另一位使用者。
 - 使用者可以找到，但不能選取 Microsoft Teams 中的另一位使用者。
 - 使用者可以看到另一位使用者，但無法將郵件傳送至 Microsoft Teams 中的其他使用者。

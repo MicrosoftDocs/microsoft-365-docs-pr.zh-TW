@@ -1,5 +1,7 @@
 ---
 title: 管理 EOP 中的收件者
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
 description: Microsoft Exchange Online Protection (EOP) 提供了數種方式供您管理郵件收件者。 身為管理員，您可以執行特定的管理工作，在 Exchange 系統管理中心 (EAC) 或使用遠端 Windows PowerShell，並驗證 Microsoft 365 系統管理中心中執行的其他管理工作。
-ms.openlocfilehash: f1bac7d19b52d175589f63216b49ce3b0985307c
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: dc79299088beb23f856f0aa385fe7bd34c3e5709
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441470"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598950"
 ---
 # <a name="manage-recipients-in-eop"></a>管理 EOP 中的收件者
 

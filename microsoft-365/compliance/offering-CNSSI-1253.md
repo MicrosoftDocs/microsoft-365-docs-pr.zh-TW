@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7e5d72b6a8992b8db91820c04b451979b474aeb9
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f65baf936e83e4f5128f207a82bce50100cd58b2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805416"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602590"
 ---
 # <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>委員會上國民身分安全性系統指令 [否]。 1253 (CNSSI 1253)
 
@@ -41,7 +43,7 @@ Azure 政府版目前擁有高暫時性 FedRAMP 的授權操作 (P ATO) 聯合�
 
 - [Azure 政府版](https://aka.ms/AzureCompliance)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 Azure 政府 CNSSI 1253 attestation 的合規性 CNSSI 1253 高高高基準
 

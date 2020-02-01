@@ -1,10 +1,12 @@
 ---
 title: 紐西蘭政府雲端運算安全性及隱私權考量
 description: Microsoft NZ 位址發佈紐西蘭雲端運算架構中的問題。
-keywords: Microsoft 365, compliance, offerings , 合規性, 方案
+keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: da5fbef7ed9ceb136f276e2d6baab0c94bba3c22
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 3142ce35cdc55e32cf5f40042967ba60de789dcc
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959532"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601880"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>紐西蘭政府雲端運算安全性及隱私權考量
 

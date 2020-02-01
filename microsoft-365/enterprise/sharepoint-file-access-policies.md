@@ -5,6 +5,8 @@ author: BrendaCarter
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.date: 06/07/2018
 ms.reviewer: martincoetzer
@@ -14,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 1d1f9dc70982a629126f82aaa6f62fed1cece08f
-ms.sourcegitcommit: bd487d36b04b8f8caf10900e8c5237f9ccf9e072
+ms.openlocfilehash: f0cd296157e1d4856c27d1dc547de045510e788b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37654012"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600760"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>保護 SharePoint 網站與檔案的原則建議
 
@@ -77,7 +79,7 @@ Microsoft 建議您保護機密和高管制與裝置存取控制內容的 ShareP
 
 ![SharePoint 的裝置存取原則如何保護網站](../images/SharePoint-rules-scenario.png)
 
-在此圖中：
+在此圖例中：
 
 - James 指派給基準保護相關聯的條件式存取原則，但他可以能夠存取敏感或高管制保護相關聯的 SharePoint 網站。
 - 如果 James 存取敏感或高管制的站台，他是使用其電腦的成員，其授與存取，只要是相容，他的電腦。

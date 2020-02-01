@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 915e70065e6efb05424c710bb3e8a98902857c6c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 5bbc8e8e39e28a020864d705489d704acd0c012b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804246"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602060"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>規則 17a-4(f) 美國證券與 Exchange 委員會 （秒）
 
@@ -45,7 +47,7 @@ Microsoft Azure 不變的 Blob 儲存與原則鎖定和 Microsoft Office 365 wit
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 ### <a name="azure--sec-rule-17"></a>Azure # A0 SEC Rule 17
 

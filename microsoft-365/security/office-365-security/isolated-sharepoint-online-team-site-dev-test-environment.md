@@ -1,5 +1,7 @@
 ---
 title: 獨立的 SharePoint Online 小組網站開發/測試環境
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 摘要： 設定組織的其他 Office 365 開發/測試環境中隔離的 SharePoint Online 小組網站。
-ms.openlocfilehash: ae76667a0c6c32dcf83b4fbd911a6e0b5db0c579
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 49443a5dd6b2c93e6bd7817c09747d49b163cabd
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808108"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599120"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>獨立的 SharePoint Online 小組網站開發/測試環境
 

@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f5627194ad21b73cae664c808d2bba9f4254d8b5
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1b850db09306f3cb4664433fb5659e8b65b421ba
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805246"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602550"
 ---
 # <a name="defense-federal-acquisition-regulation-supplement-dfars"></a>防禦聯邦擷取規定補充 (DFARS)
 
@@ -40,7 +42,7 @@ DoD 影響等級 5 涵蓋的服務
 - [Azure 和 Azure Government](https://aka.ms/AzureCompliance)
 - [Office 365 US Government 和 Office 365 美國政府國防版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 - [Microsoft 雲端服務授權](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
 - [Azure P ATO 字母簽署 2017 年 3 月 3 日](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=94ff5b42-4077-4612-8cf7-3194ded323dc&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)

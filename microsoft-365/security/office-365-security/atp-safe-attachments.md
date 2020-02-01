@@ -1,5 +1,7 @@
 ---
 title: Office 365 ATP 安全附件
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: '[安全附件] 功能可提供電子郵件附件的點擊時驗證。 使用安全附件可保護貴組織不受他人在電子郵件中傳送或接收惡意檔案的危害。'
-ms.openlocfilehash: 7f646895ec7345b96fb35ac1119788b14badc87d
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
-ms.translationtype: HT
+ms.openlocfilehash: c95287b3dd05cce28bad6761ca7e69ce9cc2f914
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971921"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599810"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP 安全附件
 

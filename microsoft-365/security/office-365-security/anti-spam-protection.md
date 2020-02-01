@@ -1,5 +1,7 @@
 ---
 title: Office 365 電子郵件的反垃圾郵件保護
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: 了解反垃圾郵件設定和篩選器，可協助您防止 Exchange Online 和 Office 365 中的垃圾郵件。 在 Office 365 收到太多垃圾郵件？ 您可以自訂您的垃圾郵件篩選和反垃圾郵件原則設定。
-ms.openlocfilehash: 33a1415306dcfc635e6c5608f3834b79932d9420
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: b7ffb29d09a357cc0a2e407d1a66f29273fc950f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238530"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599860"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Office 365 電子郵件的反垃圾郵件保護
 
@@ -67,7 +69,7 @@ ms.locfileid: "41238530"
 
  **使用者受管理的設定**： 如果您正在尋找一般使用者可以如何管理自己的垃圾郵件設定的相關資訊，請參閱[垃圾郵件篩選器概觀](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)（適用於 Microsoft Outlook 使用者） 或[解垃圾郵件和網路釣魚](https://support.microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)（適用於 Outlook web 使用者)。 如果您正在使用 EOP 來保護在內部部署信箱，請務必使用目錄同步處理，以確保這些設定會同步至服務。 若需設定目錄同步作業的詳細資訊，請參閱 [管理 EOP 中的郵件使用者](manage-mail-users-in-eop.md) 中的「使用目錄同步作業來管理郵件使用者」。
 
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="for-more-information"></a>相關資訊
 
 [部落格： 為何沒有垃圾郵件和網路釣魚取得透過 Office 365？](https://blogs.msdn.microsoft.com/tzink/2014/09/12/why-does-spam-and-phishing-get-through-office-365-and-what-can-be-done-about-it/)
 

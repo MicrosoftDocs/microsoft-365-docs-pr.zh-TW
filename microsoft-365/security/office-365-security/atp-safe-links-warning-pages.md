@@ -1,5 +1,7 @@
 ---
 title: Office 365 ATP 安全連結警告頁面
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: 概略警告頁面，您可能會看到 Office 365 進階威脅防護位於工時。
-ms.openlocfilehash: 2c14947f9d9b988eb4f5086500da0d4455f50a43
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: c7c3db68cfb0bc8205c5796bda7ee46d5b0604dd
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970949"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599850"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP 安全連結警告頁面
 
@@ -60,7 +62,7 @@ URL 會指向已識別為惡意的網站。  <br/> 我們建議您不要不繼�
 
 URL 會封鎖您的組織。 有幾個理由為什麼 URL 可能被封鎖。 我們建議您連絡貴組織的 Office 365 系統管理員。
 
-![此網站會遭到封鎖](../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![網站已遭封鎖](../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 
 ### <a name="an-error-has-occurred"></a>發生的錯誤
 
@@ -100,7 +102,7 @@ URL 會封鎖您的組織。 有幾個理由為什麼 URL 可能被封鎖。 我
 
 更新的警告] 頁面上：
 
-![此網站會遭到封鎖](../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![網站已遭封鎖](../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 
 ### <a name="error-occurred-warning-page"></a>「 發生錯誤 」 警告頁面
 

@@ -1,5 +1,7 @@
 ---
 title: 反垃圾郵件訊息標頭
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +15,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: 了解 Exchange Online Protection 新增至郵件的標頭欄位和值。
-ms.openlocfilehash: 7336d67d29976cf968b95b8f0d4157aef6682ba6
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: be6fdded548512f96a502fe04e50bde131f01986
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971981"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599880"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾郵件訊息標頭
 
@@ -52,8 +54,9 @@ Exchange Online Protection 掃描輸入的電子郵件訊息時，會在每封�
 |SFV:SKI|與 SFV:SKN 類似；郵件基於其他原因 (例如，因為是租用戶內的組織內部電子郵件) 而略過篩選。|
 |SFV:SKQ|郵件已從隔離區釋出，並傳送給預定的收件者。|
 |SFV:NSPM|郵件標記為非垃圾郵件，並傳送給預定的收件者。|
-|H: \[helostring\]|連線郵件伺服器的 HELO 或 EHLO 字串。|
-|PTR: \[ReverseDNS\]|傳送 IP 位址 (也稱為反向 DNS 位址) 的 PTR 記錄或指標記錄。|
+|H:\[helostring\]|連線郵件伺服器的 HELO 或 EHLO 字串。|
+|PTR:\[ReverseDNS\]|傳送 IP 位址 (也稱為反向 DNS 位址) 的 PTR 記錄或指標記錄。|
+|ARC|ARC 通訊協定的標頭如下： <br/>• AAR：從 DMARC 記錄驗證結果標頭的內容。 <br/>• AMS：這個標頭包含郵件的加密簽名。 <br/>• AS：包含郵件標頭的加密簽名。 此標頭含有稱為 "cv =" 的鏈結驗證標籤，其中包含鏈結驗證結果為 **none**、**pass**或 **fail**。|
 |CAT：|郵件所套用的保護原則類別： <br/>MALW：惡意程式碼 <br/>PHSH：網路釣魚 <br/>HSPM：高信賴度的垃圾郵件 <br/>SPOOF：詐騙 <br/>SPM：垃圾郵件 <br/>BULK：大量郵件 <br/>DIMP：網域冒充 <br/>UIMP：使用者冒充 <br/>GIMP：信箱情報<br/>可能可以透過多種形式的保護和多次偵測掃描來標記傳入郵件。 原則具有不同的優先次序，將套用優先次序最高的原則。 請參閱[在您的電子郵件上執行多種保護方法和偵測掃描時適用的原則](how-policies-and-protections-are-combined.md)。|
 |SFTY|郵件已被識別為網路釣魚，並且也會標示為以下其中一個值： <br/>9.1：預設值。 該郵件包含網路釣魚 URL、可能包含其他網路釣魚內容，或者在將郵件轉送到 Office 365 之前，可能已被其他郵件篩選器 (如內部部署的 Exchange Server 版本) 標記為網路釣魚郵件。 <br/>9.11：郵件的反詐騙檢查失敗，其中 [寄件者:] 標頭中的寄件網域與接收網域相同，或與接收網域相同或屬於同一組織。 這表示將在郵件中新增組織內部詐騙安全提示。 <br/>9.19：郵件的網域模擬檢查失敗，寄件網域嘗試模擬接收者擁有的網域，或受反網路釣魚原則保護的自訂網域。 這表示如果透過反網路釣魚原則來啟用，則會在郵件中新增模擬安全提示。 <br/>9.20：郵件的使用者模擬檢查失敗，寄件使用者嘗試模擬接收者組織內的使用者，或受反網路釣魚原則保護的自訂使用者。 這表示如果透過反網路釣魚原則來啟用，則會在郵件中新增模擬安全提示。 <br/>9.21：郵件的反詐騙檢查失敗，[寄件者:] 標頭中的寄件網域不驗證且來自外部網域。 搭配 CompAuth 使用 (請參閱 Authentication-Results)。 <br/>9.22：與 9.21 相同，唯一不同的是使用者的安全寄件者遭到覆寫。 <br/>9.23：與 9.22 相同，唯一不同的是組織允許遭到覆寫的寄件者或網域。 <br/>9.24：與 9.23 相同，唯一不同的是使用者的 Exchange 郵件流程規則遭到覆寫。|
 |X-CustomSpam: \[ASFOption\]|郵件符合進階的垃圾郵件篩選選項。 例如，**X-CustomSpam: Image links to remote sites** 表示已符合 [遠端站台的影像連結]**** ASF 選項。 若要了解每個特定的 ASF 選項新增的 X-header 文字，請參閱[進階垃圾郵件篩選選項](advanced-spam-filtering-asf-options.md)。|

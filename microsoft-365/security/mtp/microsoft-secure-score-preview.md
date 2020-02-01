@@ -5,6 +5,8 @@ keywords: 安全性、 惡意程式碼、 Microsoft 365、 M365，安全分數�
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
+f1.keywords:
+- NOCSH
 ms.author: ellevin
 author: levinec
 manager: dansimp
@@ -15,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 284efd5224f3e48ab718c0de0c877f68fc0bdecc
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 3fe8a390e92e56a98d16a4cbc647a74b38c248ed
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210475"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600190"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft 安全分數 （預覽）
 
@@ -65,7 +67,7 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 
 * 全域管理員
 * 安全性系統管理員
-* Exchange 管理員
+* Exchange 系統管理員
 * SharePoint 系統管理員
 
 ### <a name="read-only-roles"></a>唯讀的角色
@@ -73,7 +75,7 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 具有唯讀存取權，您不能編輯狀態] 或 [備忘稿改進巨集指令、 編輯分數區域，或編輯自訂比較。
 
 * 服務台管理員
-* 使用者系統管理員
+* 使用者管理員
 * 服務管理員
 * 安全性讀取者
 * 安全性操作員
@@ -129,7 +131,7 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
     * **風險接受**— 安全性應該一律平衡與可用性，並不是每個建議適用於您的環境。 時，這種情況，您可以選擇要接受風險; 或是其餘的風險，並不制訂的改進巨集指令。 您不會提供任何點，但巨集指令不再是可見的改進動作清單中。 您可以檢視歷程記錄中的此巨集指令或復原在任何時間。
     * **透過協力廠商解決**— 由協力廠商應用程式或軟體已處理過的改進巨集指令。 讓您的成績更妥善地反映您的整體安全性狀態，您將能夠值得了巨集指令的點。 如果協力廠商不再涵蓋控制項，您可以選擇另一個狀態。 請記住，Microsoft 就會有任何可見性實作的完整性，如果改進巨集指令會標示為透過協力廠商解決
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>先決條件
 
 任何需要可獲得授權或需要解決的改進巨集指令先完成的動作，將會列出實作] 區段中的必要條件。 請確定您在您完成的改進巨集指令的授權中有足夠的基座，而且這些授權可套用至所需的使用者。  
 

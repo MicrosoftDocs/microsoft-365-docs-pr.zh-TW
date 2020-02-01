@@ -2,6 +2,8 @@
 title: 原則與防護組合的方式時郵件紅色標幟
 description: 說明什麼原則和保護時，會套用電子郵件所偵測到多個保護，並掃描由多個表單的偵測。 原則的套用，和電子郵件由 EOP，及/或 ATP 標記惡意程式碼、 垃圾郵件、 高信賴度垃圾郵件、 網路釣魚及大量時採取的動作。
 keywords: 安全性、 惡意程式碼、 Microsoft 365、 M365、 安全中心，ATP、 Microsoft Defender ATP、 Office 365 ATP、 Azure ATP
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -12,12 +14,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 4ca5333f4b07878f8c7d206b78cf884f4e4eec82
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c6b3fcc931aa396187eb81d0db495f77877f667b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807984"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599170"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>哪些原則適用於何時多個保護方法與在您的電子郵件上執行的偵測掃描
 
@@ -29,11 +31,11 @@ ms.locfileid: "40807984"
 
 |優先順序 |原則  |類別  |受管理的位置 |
 |---------|---------|---------|---------|
-|1     | 惡意程式碼      | MALW      | 惡意程式碼原則   |
-|2     | 網路釣魚     | PHSH     | 設定您的垃圾郵件篩選原則     |
-|3     | 高信賴度的垃圾郵件      | HSPM        | 設定您的垃圾郵件篩選原則        |
-|4     | 詐騙        | SPOOF        | 反網路釣魚原則，詐騙智慧        |
-|5     | 垃圾郵件         | SPM         | 設定您的垃圾郵件篩選原則         |
+|1      | 惡意程式碼      | MALW      | 惡意程式碼原則   |
+|2      | 網路釣魚     | PHSH     | 設定您的垃圾郵件篩選原則     |
+|3      | 高信賴度的垃圾郵件      | HSPM        | 設定您的垃圾郵件篩選原則        |
+|4      | 詐騙        | SPOOF        | 反網路釣魚原則，詐騙智慧        |
+|5      | 垃圾郵件         | SPM         | 設定您的垃圾郵件篩選原則         |
 |6      | 大量         | BULK        | 設定您的垃圾郵件篩選原則         |
 
 此外，這些原則套用至_組織的 ATP_。
@@ -47,8 +49,8 @@ ms.locfileid: "40807984"
 
 |原則  |優先順序  |使用者/網域冒充  |反詐騙  |
 |---------|---------|---------|---------|
-|A     | 1        | 開啟        |關閉         |
-|B     | 2        | 關閉        | 開啟        |
+|A     | 1         | 開啟        |關閉         |
+|B     | 2         | 關閉        | 開啟        |
 
 如果郵件有已識別為_使用者模擬_和_詐騙_（請參閱反詐騙於上表中），而且相同一組使用者原則的範圍限於原則 B，郵件加上標幟，並視為_詐騙_。 不過，因為而雖然詐騙執行較高的優先順序 (4) 的多使用者模擬 (8)、 反詐騙已關閉，會不套用任何動作。
 

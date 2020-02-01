@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中設定特殊權限的存取管理
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 使用此主題以深入了解 Office 365 中設定特殊權限的存取管理
-ms.openlocfilehash: 1ea929026db3ac50a0eac3d452c2608fd0c0d123
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 36a473369ba539230bc4bbb2a630d74830844fc7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959512"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601730"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>在 Office 365 中設定特殊權限的存取管理
 

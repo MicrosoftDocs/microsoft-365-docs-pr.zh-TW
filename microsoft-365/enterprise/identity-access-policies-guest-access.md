@@ -5,6 +5,8 @@ author: BrendaCarter
 manager: johmar
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
@@ -13,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 4ef679ed6fef217be112317d03d12c007b1375fd
-ms.sourcegitcommit: 7c977771fc295ca1e4e9b16a6d05faee8edeadad
+ms.openlocfilehash: ca9b752f55ebe3fecec4f312bc89b45d99cf0d7d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37913338"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601050"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>允許來賓及外部網路 B2B 存取原則
 本文說明如何調整建議一般身分識別與裝置存取原則，以允許 B2B 帳戶存取權 （來賓和外部使用者）。 本指南為基礎的[常見身分識別與裝置存取原則](identity-access-policies.md)。

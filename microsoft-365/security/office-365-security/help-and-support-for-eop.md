@@ -1,5 +1,7 @@
 ---
 title: EOP 的說明和支援
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
-ms.openlocfilehash: 3be67348b9522832a754e83e57e4a99e4f9147b3
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
-ms.translationtype: HT
+ms.openlocfilehash: 3aef0cfa6209809f7a65e4179809d58d6f55aeb2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970419"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599240"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 的說明和支援
 

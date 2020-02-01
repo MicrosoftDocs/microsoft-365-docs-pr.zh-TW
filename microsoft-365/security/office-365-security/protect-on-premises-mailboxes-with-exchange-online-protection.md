@@ -1,5 +1,7 @@
 ---
 title: 使用 Exchange Online Protection 保護內部部署的信箱
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -17,12 +19,12 @@ ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
 description: 即使您打算將部分或所有信箱裝載在內部部署，您仍然可以使用 Exchange Online Protection (EOP) 保護信箱。 若要設定連接器，您的帳戶必須是 Office 365 全域系統管理員或 Exchange 公司管理員 (組織管理角色群組)。 如需 Office 365 權限與 Exchange 權限之關係的相關資訊，請參閱由 21Vianet 營運的 Office 365 中指派系統管理員角色。 如果您的 Exchange 信箱均為內部部署，請遵循以下步驟以設定 EOP 服務。
-ms.openlocfilehash: 5d7c306451529b15c0bccb56ed6b2cf103b01435
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
-ms.translationtype: HT
+ms.openlocfilehash: 714b5267bf89370885697701fc2b857d71224aa8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971561"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598801"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>使用 Exchange Online Protection 保護內部部署的信箱
 

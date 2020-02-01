@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 476d1b63cfba4c3c9d31fd38c4ad526ca167f7d7
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 292e565064a91d2256dc62831dc1f0957a9b96eb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803986"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601870"
 ---
 # <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>察確信 Secure 設施 (PASF) 英國
 
@@ -41,7 +43,7 @@ Microsoft 對安全性使用全面性的深度防禦方法。 我們的英國資
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
 - [Microsoft 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 NPIRMT 稽核 Azure 資料中心每年每年之間循環在英國四個 Microsoft 資料中心。 Microsoft 資料中心所 PASF NPIRMT 評估是可透過首頁 Office for 法律強制執行客戶來進行自己的 Azure 和其他 Microsoft 雲端服務的風險評定。
 

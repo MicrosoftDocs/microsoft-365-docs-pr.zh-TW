@@ -1,5 +1,7 @@
 ---
 title: 管理 EOP 中的收件者和系統管理員角色群組
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2041a048-8d78-4b76-a91f-43ea43a858bd
 description: Microsoft Exchange Online Protection (EOP) 提供了數種方式供您管理郵件收件者。下列主題及相關子主題提供管理收件者和指派管理員角色群組權限的相關資訊及設定程序。
-ms.openlocfilehash: d69183c009f12dd33aec28d6ee353bf4177601f5
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: a56151167bdc2500af461dbcd188cfe635c6d866
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441440"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598960"
 ---
 # <a name="manage-recipients-and-admin-role-groups-in-eop"></a>管理 EOP 中的收件者和系統管理員角色群組
 

@@ -1,5 +1,7 @@
 ---
 title: 設定連線篩選原則、允許清單、封鎖清單
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: 若要確定您信任的人所傳送的電子郵件並未遭到封鎖，可以使用連線篩選原則，對於您信任的 IP 位址建立允許清單 (也稱為安全寄件者清單)。 您也可以建立封鎖寄件者清單。
-ms.openlocfilehash: 70bd682fd9cb990f15314be3187e74f5fa4d562c
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: 06915527af68df6a858ca8ed97612ab40178be84
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238420"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599590"
 ---
 # <a name="configure-the-connection-filter-policy"></a>設定連線篩選原則
 

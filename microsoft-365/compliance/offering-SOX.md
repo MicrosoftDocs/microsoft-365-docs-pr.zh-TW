@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 35e1887d37f3ca5840d595c7927ff4d6064e08d9
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ef2f30492df89e97348e4dbce81ce4ae43c2e806
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804236"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602030"
 ---
 # <a name="sarbanes-oxley-act-of-2002-sox"></a>2002 年沙賓法案 (SOX)
 
@@ -47,7 +49,7 @@ Azure 用戶端若要進一步協助解決其 SOX 義務，Microsoft 已發佈[�
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
+- Power BI 雲端服務，以獨立服務形式提供或包含在 Office 365 品牌方案或套件中
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 

@@ -1,5 +1,7 @@
 ---
 title: 管理 EOP 中的系統管理員角色群組權限
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 系統管理員可以在 Exchange Online Protection 中了解如何指派或移除 Exchange 系統管理中心 (EAC) 中的權限。
-ms.openlocfilehash: 9b82836b5f9f28c3055e540890771def28382d2b
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: ab574e4d33d84774ef63f73297447ea66a74430b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306127"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599030"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>管理 EOP 中的系統管理員角色群組權限
 
@@ -29,10 +31,10 @@ ms.locfileid: "37306127"
 
 - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [EOP 中的功能權限](feature-permissions-in-eop.md)主題中的「使用者、連絡人及角色群組」項目。
 
-- 適用於此主題中程序的鍵盤快速鍵相關資訊，請參閱[Exchange 系統管理員的鍵盤快速鍵置在 Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 如需適用於本主題中程序的快速鍵相關資訊，請參閱 [Exchange Online 中 Exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
-> 有問題嗎？ 要求在[Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)論壇中的協助。
+> 有問題嗎？ 在 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) 論壇中尋求協助。
 
 ## <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>使用 EAC 將成員指派給系統管理員角色群組
 

@@ -1,5 +1,7 @@
 ---
 title: EOP 功能
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供可在 Exchange Online Protection (EOP) 託管式電子郵件篩選服務中使用的功能清單。
-ms.openlocfilehash: 82bdd8e932c194573ad7482c5a561d092897d010
-ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
+ms.openlocfilehash: 9422330cb4999e4391f92e39807e2d2367366972
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "40840172"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599370"
 ---
 # <a name="eop-features"></a>EOP 功能
 

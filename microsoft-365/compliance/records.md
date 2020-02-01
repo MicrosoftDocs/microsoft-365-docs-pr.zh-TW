@@ -1,5 +1,7 @@
 ---
 title: 記錄概觀
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 若要在您的 Office 365 或 Microsoft 組織中執行記錄管理策略，請使用保留標籤將內容宣告為記錄。 然後發佈或自動套用保留記錄標籤。
-ms.openlocfilehash: eb8abbb44629261065a9e368814ddeb8296ac0c8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 36482ea4a6bb9fb932d72b76dff5f0647d467a9b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803830"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601680"
 ---
 # <a name="overview-of-records"></a>記錄概觀
 
@@ -78,6 +80,10 @@ ms.locfileid: "40803830"
 
 3. [發佈](labels.md#how-retention-labels-work-with-retention-label-policies)或[自動套用](labels.md#applying-a-retention-label-automatically-based-on-conditions)保留標籤到 SharePoint 網站和/或 OneDrive 帳戶。
 
+> [!NOTE]
+> 若要使用 [保留標籤][](labels.md) 將項目宣告為記錄，每位擁有權限在此位置編輯內容的使用者都必須具備 Office 365 企業版 E5 授權或同等權限。 具有唯讀存取權的使用者不需要授權。
+
+
 ### <a name="applying-a-retention-label-to-content"></a>將保留標籤套用至內容
 
 針對 Exchange，任何有信箱寫入存取權的使用者都可以將記錄標籤套用至電子郵件訊息。 對於 SharePoint 和 OneDrive 中的內容，預設 [成員] 群組 ([參與] 權限等級) 中的任何使用者都能將記錄標籤套用到內容。 套用標籤後，只有網站集合系統管理員可以移除或變更該記錄標籤。 如先前所述，將內容分類成記錄的保留標籤可自動套用至內容。
@@ -105,7 +111,7 @@ ms.locfileid: "40803830"
 ![標記為記錄之文件的 [記錄狀態] 內容](media/recordversioning8.png)
 
 > [!NOTE]
-> 記錄版本設定要求每位有權編輯在 SharePoint 網站或 OneDrive 帳戶中被宣告為記錄的內容的使用者，都必須獲得 Office 365 Enterprise E5 授權。 具有唯讀存取權的使用者不需要授權。
+> 記錄版本設定要求每位有權編輯在 SharePoint 網站或 OneDrive 帳戶中被宣告為記錄的內容的使用者，都必須獲得 Office 365 Enterprise E5 授權。 具有唯讀存取權的使用者不需要此授權。
 
 ### <a name="locking-and-unlocking-a-record"></a>鎖定和解除鎖定記錄
 

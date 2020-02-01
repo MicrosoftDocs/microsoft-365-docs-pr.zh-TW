@@ -1,5 +1,7 @@
 ---
 title: DLP 功能所尋找的項目
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 敏感資訊類型尋找特定的模式，並證實來確保適當的格式設定、 強制執行總和檢查碼，並尋找相關的關鍵字或其他資訊。 某些這項功能是由內部函式執行。 本主題說明這些函式查詢，以協助您瞭解預先定義的敏感資訊類型的運作方式。
-ms.openlocfilehash: c192a17c488e5a7252a3599204d2bdeda4d0637c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 86ce1c9d546f776e239fdaca76219129c24a73e8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077642"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601200"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 功能所尋找的項目
 

@@ -3,6 +3,8 @@ title: 行動裝置管理基礎結構允出準則
 description: Microsoft 365 企業版包含使用 Microsoft Intune 行動裝置管理。 檢閱需求和先決條件，設定 Intune 使用 Azure Active Directory 資源，註冊 iOS、 macOS、 Android 和 Windows 裝置，部署應用程式、 建立設定檔、 使用合規性政策，並啟用的行動裝置條件式存取使用 Microsoft 365 企業版的裝置管理。
 keywords: Microsoft 365，Microsoft 365 企業版，Microsoft 365 文件、 行動裝置管理、 Intune
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/03/2019
@@ -13,16 +15,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: e8f8f53224b334f92142e2c03ed05eaa9e38787a
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: daf7bcf6525f30b7b52065e4f6bf2ff335f4ea4b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37385720"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600880"
 ---
 # <a name="mobile-device-management-infrastructure-exit-criteria"></a>行動裝置管理基礎結構允出準則
 
-![階段 5： 行動裝置管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
+![階段 5：行動裝置管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
 
 *這適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
@@ -40,4 +42,4 @@ ms.locfileid: "37385720"
 
 |||
 |:-------|:-----|
-|![第 6 階段：資訊保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| 如果您正在追蹤的 Microsoft 365 企業版端對端部署階段下, 一個階段是[資訊保護](infoprotect-infrastructure.md)。 |
+|![階段 6：資訊保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| 如果您正在追蹤的 Microsoft 365 企業版端對端部署階段下, 一個階段是[資訊保護](infoprotect-infrastructure.md)。 |

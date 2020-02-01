@@ -1,5 +1,7 @@
 ---
 title: 支援的檔案類型中的資料調查 （預覽）
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 60e4baf2df94793b532fb4035a34ca3c7a5cd332
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 055104a5b7f60fe54b421e7236143aa9af08b57f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077502"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601430"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>支援的檔案類型中的資料調查 （預覽）
 

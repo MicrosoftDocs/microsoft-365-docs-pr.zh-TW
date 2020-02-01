@@ -3,14 +3,16 @@ title: 自行註冊新裝置
 description: 自行註冊裝置，以便由 Microsoft 受管理的電腦管理
 ms.prod: w10
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 4472f665faa658349813d9aaeb50596f2a868b35
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: d0e29bd16f1b0afd119fc822d6e2391e7f9f3020
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572269"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602820"
 ---
 # <a name="register-new-devices-yourself"></a>自行註冊新裝置
 

@@ -1,5 +1,7 @@
 ---
 title: 安全性 & 合規性中心中的服務保證
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下載第三方稽核，了解 Microsoft 如何確保客戶資料安全，以及知道如何您可以遵循 ISO、 HIPAA、 FINRA，以及 FedRAMP 當您使用 Office 365。
-ms.openlocfilehash: e346b84d17c2ca95b6a51ff870b18d5ff408b87c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f883f625e872076146e75c01bde26d40f7e1a4d3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078163"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601520"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>安全性 & 合規性中心中的服務保證
 
@@ -36,7 +38,7 @@ ms.locfileid: "37078163"
     
 - 1996 年美國醫療保險轉移與責任法案 (HIPAA)
     
-- 聯邦風險與授權管理計劃 (FedRAMP)
+- 聯邦風險與授權管理計畫 (FedRAMP)
     
 ## <a name="who-can-access-office-365-service-assurance-and-how"></a>誰可以存取 Office 365 服務保證，以及如何？
 
@@ -44,16 +46,16 @@ ms.locfileid: "37078163"
   
  **商務用 Office 365 的現有客戶**可以存取的服務保證。 如果您是 （有時稱為 「 公司系統管理員） 的 Office 365 全域系統管理員為您的組織，您將已服務保證的存取，且您上架可以其他人。 如果您沒有 Office 365 全域系統管理員為您的組織，且您需要的服務保證的存取，請詢問您的系統管理員將您新增至服務保證使用者角色群組。 
   
- **O365 訂閱成員**可以存取 Office365 防護中心中的服務保證一節，根據預設，如果在您的訂閱尚未實作服務保證角色型存取。 服務保證提供報表及說明 Microsoft 的安全性作法，儲存在 Office 365 的客戶資料的文件。 它也會提供有關 Office 365 的獨立第三方稽核報告。 
+ **O365 訂閱成員**可以存取 Office365 防護中心中的服務保證一節，根據預設，如果在您的訂閱尚未實作服務保證角色型存取。 服務保證會針對儲存在 Office 365 中的客戶資料，提供描述 Microsoft 安全性做法的報告和文件。 此外，這個區段也會提供 Office 365 的獨立第三方稽核報告。 
   
 > [!NOTE]
-> 附註： 如果貴公司已在您的 Office 365 訂閱 （這可能是如果您的組織提供了存取自訂報告），實作 Service Assurance Roles-Based 存取和您需要的存取權的服務保證但它不會納入左邊窗格中的安全性 & 合規性中心，要求您的 Office 365 系統管理員，將您新增至 [**權限**] 頁面上的服務保證使用者角色群組。 如需詳細資訊，請參閱 Onboard 其他服務保證使用者或群組。 
+> 附註： 如果貴公司已實作 Service Assurance Roles-Based 存取在您的 Office 365 訂閱 （這可能是如果您的組織提供了存取自訂報告），與您需要的服務保證的存取，但就不會包含安全性 & 合規性中心的左窗格中，要求您的 Office 365 系統管理員，將您新增至 [**權限**] 頁面上的服務保證使用者角色群組。 如需詳細資訊，請參閱 Onboard 其他服務保證使用者或群組。 
   
- **服務保證角色型存取佈建使用者**如果貴公司已實作角色型存取保證服務，您可以提供服務保證的存取權給所有的安全性與合規性工作人員包括資訊安全性風險管理、 規範、 和稽核內的人員及小組您組織。 如需詳細資訊，請參閱[Onboard 其他服務保證使用者或群組](service-assurance.md#addother)。
+ **服務保證角色型存取佈建使用者**如果貴公司已實作角色型存取保證服務，您可以提供服務保證的存取權給所有的安全性與合規性工作人員包括資訊安全性風險管理、 規範、 和稽核小組與人員在組織內。 如需詳細資訊，請參閱[Onboard 其他服務保證使用者或群組](service-assurance.md#addother)。
   
 服務保證是可存取使用安全性 & 合規性中心。 以下是如何取得該處。
   
-1. 移至 [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用公司或學校帳戶登入 Office 365。 
     
@@ -120,7 +122,7 @@ ms.locfileid: "37078163"
     
     ![服務保證使用者-新增](media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
   
-3. 在下一步] 對話方塊中，搜尋並選擇 [個人或群組，需要檢視服務保證規範符合性報告與信任] 資源，然後選取 [**新增**您進行，然後按一下 [中] 窗格右上角的**X**每個選取範圍時完成作業後。 
+3. 在 [下一步] 對話方塊中，搜尋並選擇個人或群組，需要檢視服務保證規範符合性報告和信任的資源，然後選取 [**新增**您進行，然後按一下 [中] 窗格右上角的**X** ，當您完成時，每個選取範圍。 
     
     ![服務保證使用者-選擇使用者](media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
   

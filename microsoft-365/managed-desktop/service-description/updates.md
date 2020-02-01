@@ -1,18 +1,20 @@
 ---
 title: Microsoft 受管理電腦中更新的處理方式
 description: 保持最新 Microsoft 受管理的電腦是權衡方式速度與穩定性。
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 89ebb1bf9787ae90eac1b62078157f1338ce5dcd
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 63e07ffd58a7add7f7f72aad20b6389cd22d2ca7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38074755"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602750"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中更新的處理方式
 

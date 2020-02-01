@@ -1,5 +1,7 @@
 ---
 title: 深入了解詐騙情報
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: 請在 [反垃圾郵件設定] 頁面上的安全性與合規性中心使用詐騙情報，以檢閱欺騙貴組織網域或欺騙外部網域的所有寄件者。 在 Office 365 企業版 E5 中可取得詐騙情報，也可在進階威脅防護和 EExchange Online Protection 中分開取得。
-ms.openlocfilehash: 2f6a68446698747fe31261c7e892c50e6ec5c7f4
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: 82b3759290e4cf0024aaf74a066354f46ea3a303
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989488"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599090"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>深入了解詐騙情報
 

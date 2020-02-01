@@ -1,5 +1,7 @@
 ---
 title: 非法回應郵件與 EOP
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: 非法回應郵件都會自動的退回的郵件傳送至偽造的電子郵件地址。 非法回應 DNSBL 識別傳送非法回應郵件 （其中可能包含許多合法電子郵件來源） 的伺服器。 因為它不是濫發垃圾郵件者清單中，我們不會嘗試從非法回應 DNSBL 移除自誇。
-ms.openlocfilehash: f6e8398565837f7a380c8a6a5c4cd8de422cc215
-ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
+ms.openlocfilehash: 3dc83c303e861c8762f2276de521e1b550ae2e59
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "40840162"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599730"
 ---
 # <a name="backscatter-messages-and-eop"></a>非法回應郵件與 EOP
 
