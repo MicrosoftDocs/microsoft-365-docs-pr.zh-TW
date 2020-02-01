@@ -1,5 +1,7 @@
 ---
 title: 威脅總管] 和 [即時偵測的資訊中的檢視
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -12,18 +14,18 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解各種不同的威脅總管] 和 [即時偵測中可用的檢視。
-ms.openlocfilehash: 7c3d78c5b5d4b1708fc57adba6951b4e352f0eaa
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7f506b77673e416aaecdc707e0659006e6089142
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078207"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598250"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威脅總管] 和 [即時偵測的資訊中的檢視
 
 ![威脅總管](../media/ThreatExplorerFirstOpened.png)
 
-[威脅總管](threat-explorer.md)（與 [即時偵測] 報告） 是功能強大，接近即時的工具，以協助調查及回應安全性威脅的安全性作業小組&amp;合規性中心。 Explorer （並即時偵測] 報告） 會顯示您的組織可疑的惡意軟體和電子郵件中的釣魚程式和 Office 365 中的檔案，以及其他安全性威脅及風險的相關資訊。 
+[威脅總管](threat-explorer.md)（和即時偵測] 報告） 是功能強大，接近即時的工具，以協助調查及回應安全性威脅的安全性作業小組&amp;合規性中心。 Explorer （並即時偵測] 報告） 會顯示您的組織可疑的惡意軟體和電子郵件中的釣魚程式和 Office 365 中的檔案，以及其他安全性威脅及風險的相關資訊。 
 
 - 如果您有[Office 365 進階威脅防護](office-365-atp.md)(ATP) 計劃 2，您會有瀏覽器。
 - 如果您有 Office 365 ATP 方案 1，您必須即時偵測的資訊。
@@ -117,7 +119,7 @@ ms.locfileid: "37078207"
 
 Explorer （與即時偵測的資訊），您可以套用中按一下 [篩選器。 按一下圖例中的項目，該項目會成為報表的篩選器。 例如，假設我們要尋找在檔案總管中的惡意程式碼檢視：
   
-![移至威脅管理，\>總管](../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![移至威脅管理 \> 總管](../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 在此圖表中的結果就像這樣的檢視中，按一下 [ **ATP 爆炸**： 
   

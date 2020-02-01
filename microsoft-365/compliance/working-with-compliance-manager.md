@@ -1,5 +1,7 @@
 ---
 title: 搭配使用 Microsoft Compliance Manager （預覽）
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派，並驗證 Microsoft 產品與相關的法規合規性活動。
-ms.openlocfilehash: db63f1b5cba2166ae8e4f922b84672677b52c4e9
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 645d2bca907d81e32d8262051fd159dd52ba3039
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515864"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597200"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>搭配使用 Microsoft Compliance Manager （預覽）
 

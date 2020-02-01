@@ -1,18 +1,20 @@
 ---
 title: Microsoft 受管理電腦的網路組態
 description: ''
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a6397f1c78bb15e198ed75be50c51953b049ed68
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 141bd55a0619fb2f007b5f9173310a1e2fe5bab1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38074687"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596560"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的網路組態
 
@@ -42,7 +44,7 @@ Microsoft 服務  | Url 上需要允許清單
 Microsoft 受管理的電腦 | prod-ag3 mwaas-服務 customerapi.azurewebsites.net
 取得說明 | \*。 support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-ag3 mwaas-服務 customerapi.azurewebsites.net
 「 快速助手 」 | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*。 lync.com
-Microsoft 支援及修復小幫手，office 365 | \*。 apibasic.diagnostics.office.com  <br>\*。 api.diagnostics.office.com
+適用於 Office 365 的 Microsoft 支援及修復小幫手 | \*。 apibasic.diagnostics.office.com  <br>\*。 api.diagnostics.office.com
  
 
 ### <a name="endpoints-allowed---other-microsoft-products"></a>允許-其他 Microsoft 產品的端點

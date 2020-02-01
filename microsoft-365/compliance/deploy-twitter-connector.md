@@ -1,5 +1,7 @@
 ---
 title: 部署封存 Twitter 資料的連接器
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定原生的連接器，以匯入並封存至 Microsoft 365 Twitter 資料。 此資料會匯入至 Microsoft 365 之後，您可以使用合規性功能，例如合法持有、 內容搜尋和保留原則來管理您的組織 Twitter 資料的控管。
-ms.openlocfilehash: 9bf0be8684eb18fbc022f4eefa798c5c9265b3d7
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 9951040335a2dcacc90ac4dc7a6f3e5079bf5692
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515694"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595278"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>部署封存 Twitter 資料的連接器
 

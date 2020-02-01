@@ -1,5 +1,7 @@
 ---
 title: Office 365 進階電子文件探索中的結果為基礎的決策
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: '了解如何在 Office 365 進階電子文件探索中的決定] 索引標籤提供資料，可協助您決定正確的檢閱一組案例檔案大小。 '
-ms.openlocfilehash: 15c6c28fa48d639f03a421776d7613cbbdba43c1
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e60aff12e20a4f8accfbcda958c2d087fd732e88
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808068"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595380"
 ---
 # <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Office 365 進階電子文件探索中的結果為基礎的決策
 

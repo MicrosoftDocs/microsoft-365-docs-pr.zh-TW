@@ -1,5 +1,7 @@
 ---
 title: 準備識別碼清單在 Office 365 中的內容搜尋的 CSV 檔案
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: 使用 Results.csv 或未編製索引的 Items.csv 檔案從現有的內容搜尋來建立識別碼清單搜尋會傳回特定的電子郵件。 識別碼清單搜尋通常用來傳回已局部編製索引的信箱項目。
-ms.openlocfilehash: caeb1874b113c601135531a1913bdcdda424a3d8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 19128e182183b43edbc5957ac2aca5420b58cfe2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806536"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595520"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>準備識別碼清單在 Office 365 中的內容搜尋的 CSV 檔案
 

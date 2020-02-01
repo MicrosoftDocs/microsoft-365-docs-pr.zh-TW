@@ -1,5 +1,7 @@
 ---
 title: Office 365 進階電子文件探索
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,23 +15,26 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: 了解 Office 365 進階電子文件探索如何協助您分析 Office 365 內的資料、 簡化文件檢閱，以及進行決策有效率 ediscovery （英文）。
-ms.openlocfilehash: 4c72444765f75a77d3b62dbd2675b0c277d3d6ba
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: a3a6291459005d60defe61a8bca40ce382b6d052
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803790"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597890"
 ---
 # <a name="office-365-advanced-ediscovery"></a>Office 365 進階電子文件探索
 
-> [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> [!IMPORTANT]
+> 當我們繼續投入在較新版本的進階電子文件中，我們已宣佈淘汰網站的 Office 365 進階電子文件探索 (也稱為*進階電子文件 v1.0*)。 如果您仍在使用進階電子文件 v1.0，請轉換至[進階電子文件 v2.0](overview-ediscovery-20.md) （也就是*在 Microsoft 365 進階電子文件方案*） 儘速。 進階電子文件探索 2.0 包含進階電子文件 v1.0 中找到的類似功能，但管理、 通訊管理及檢閱設定，也提供了許多新功能，例如 custodian。 若要深入了解的進階電子文件 v1.0 淘汰網站，請參閱[退休的舊版電子文件探索工具](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。 
   
 使用進階電子文件，您可以更妥善地了解您 Office 365 的資料，並降低 eDiscovery 成本。 進階電子文件可協助您分析 Office 365 內的非結構化的資料、 執行更有效率的文件檢閱，以及進行決策來減少資料 ediscovery （英文）。 您可以使用儲存在 Exchange Online、 SharePoint Online、 商務用 OneDrive、 Skype for Business、 Office 365 群組和 Microsoft Teams 的資料。 您可以執行 eDiscovery 搜尋中的安全性和合規性中心來搜尋的內容群組、 個別信箱及站台，然後分析搜尋結果與進階電子文件。 當您準備進階 eDiscovery 中分析的搜尋結果時，光學字元辨識可讓與映像的文字擷取。 這項功能可讓強大的文字的進階電子文件套用至影像檔案的分析功能。
   
 進階電子文件來簡化並加速藉由識別備援資訊與功能，例如近似重複項目偵測和電子郵件執行緒分析文件檢閱程序。 相關性功能才適用預測編碼的技術，以識別相關文件。 進階電子文件可學習從範例文件上標示決策，並套用統計以及自我學習技術來計算相關性資料組中每個文件。 這可讓您專注於主要文件、 進行快速尚未明智決策案例的策略、 cull 資料，並排定優先順序檢閱。
   
- **為什麼進階電子文件探索嗎？** Office 365 進階電子文件是根據現有的 Office 365 中的 eDiscovery 功能集。 例如，您可以使用的搜尋功能在 Office 365 安全性&amp;合規性中心，以執行初始搜尋的所有內容來源以找出並收集的資料，可能是相關的特定的法律案件您組織中。 然後您可以藉由套用文字分析、 機器學習和進階電子文件的相關性/預測式編碼功能，該資料上執行分析。 這可協助您快速處理上千個電子郵件、 文件和其他幾種類型的資料來尋找最有可能這些項目相關的特定案例的組織。 減少的資料集供進一步檢閱然後匯出登出 Office 365。 
+ **為什麼進階電子文件探索嗎？** Office 365 進階電子文件是根據現有的 Office 365 中的 eDiscovery 功能集。 例如，您可以使用的搜尋功能在 Office 365 安全性&amp;合規性中心，以執行初始搜尋的所有內容來源以找出並收集的資料，可能是相關的特定的法律案件您組織中。 然後您可以藉由套用文字分析、 機器學習和進階電子文件的相關性/預測式編碼功能，該資料上執行分析。 這可協助您快速處理上千個電子郵件、 文件和其他幾種類型的資料來尋找最有可能這些項目相關的特定的組織 
+ 
+> [!NOTE]
+> 進階電子文件為您的組織需要與進階合規性附加元件或 E5 訂閱 Office 365 E3。 如果您不具有該計劃，並想要再試進階電子文件，您可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 大小寫。 減少的資料集供進一步檢閱然後匯出登出 Office 365。 
   
 ## <a name="get-started"></a>開始使用
 

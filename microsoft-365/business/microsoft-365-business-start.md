@@ -1,5 +1,7 @@
 ---
 title: 開始使用 Microsoft 365 商務版
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -24,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何設定 Microsoft 365 商務版。
-ms.openlocfilehash: 32bb30208083c4f62dd449290a7c9f5d8c725631
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: a353e39b824bae702fa015b0c7d3dd7e6416454c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831406"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593714"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>開始使用 Microsoft 365 商務版
 
@@ -61,7 +63,7 @@ Microsoft 365 商務版是最多 300 個授權。 如果您需要更多授權，
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-如果您找到這段影片很有幫助，請參閱[完成小型企業版和 Microsoft 365 的新手訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
   
 ### <a name="1-set-up-microsoft-365-business-admin"></a>1： 設定 Microsoft 365 商務版 （系統）
@@ -109,4 +111,4 @@ Microsoft 365 商務版是最多 300 個授權。 如果您需要更多授權，
   
 [管理 Microsoft 365 商務版](manage.md)[將移轉至 Microsoft 365 商務版](migrate-to-microsoft-365-business.md)
 
-[Microsoft 365 商務版開發人員訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[Microsoft 365 商務版訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

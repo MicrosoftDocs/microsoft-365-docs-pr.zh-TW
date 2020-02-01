@@ -1,5 +1,7 @@
 ---
 title: 封存協力廠商資料
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 系統管理員可以從匯入協力廠商資料社交媒體平台、 立即訊息平台，以及文件共同作業平台至 Microsoft 365 組織中的信箱。 這可讓您封存 Facebook、 Twitter 和其他 Microsoft 365 中的協力廠商資料來源的資料。 然後您可以使用，並套用協力廠商資料的 Microsoft 365 合規性功能 （例如法律保留、 eDiscovery、 就地封存和保留原則）。
-ms.openlocfilehash: b2931a018dedb6ac85d7896bef345654cb07ca5b
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+ms.openlocfilehash: ac732110dac8d590ac30cfb062251d2e970bdd3d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247546"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596000"
 ---
 # <a name="archive-third-party-data"></a>封存協力廠商資料
 

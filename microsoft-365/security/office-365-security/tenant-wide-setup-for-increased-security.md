@@ -1,5 +1,7 @@
 ---
 title: 設定 Office 365 租用戶以提高安全性
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 逐步引導您完成會影響 Office 365 環境安全性的全租用戶建議設定。 您的安全性需求可能會高於或低於建議設定， 請使用這些建議做為調整的起始點。
-ms.openlocfilehash: f5df416b71cd3b4885033786d83160644b6d7b1a
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
-ms.translationtype: HT
+ms.openlocfilehash: 01cf10818c83171fbbf30b5ec7f08871f0b9b328
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971451"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598200"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>設定 Office 365 租用戶以提高安全性
 
@@ -126,6 +128,7 @@ SharePoint 系統管理中心與商務用 OneDrive 系統管理中心包含同�
 
 以下文章與指南能提供保護 Office 365 環境的其他規範資訊：
 
-- [適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance) (您可以在任何環境中使用這些建議，特別是僅使用雲端的環境)
+- [適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o) (您可以在任何環境中使用這些建議，特別是僅使用雲端的環境)
+
 
 - [適用於身分識別與裝置的建議安全原則與設定](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations) (這些建議包括 AD FS 環境說明)

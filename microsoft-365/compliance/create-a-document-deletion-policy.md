@@ -1,7 +1,9 @@
 ---
 title: 建立文件刪除原則
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: 基於規範、法律或其他規定，組織通常必須將文件保留一段時間。但是，將文件保留超過要求時間，可能會讓組織暴露在法律風險下。
-ms.openlocfilehash: 00b10e1c86160917c96ed1062f0638acf56ef56e
-ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
+ms.openlocfilehash: 9ada3f2756b627965c9f215c1111ff2fe72da1e7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37342976"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596230"
 ---
 # <a name="create-a-document-deletion-policy"></a>建立文件刪除原則
 
@@ -108,7 +110,7 @@ ms.locfileid: "37342976"
 
 1. 在「Office 365 安全性與合規性中心」中，導覽至 [資料管理]**** \> [保留]****。 在 [刪除]**** 下，按一下 [管理 SharePoint Online 及商務用 OneDrive 的文件刪除原則]****。 「文件刪除原則中心」會在新的瀏覽器索引標籤中開啟。
     
-    您第一次從「安全性與合規性中心」導覽到「文件刪除原則中心」時，系統便會自動為您建立原則中心。 或者，您可以[建立網站集合](http://go.microsoft.com/fwlink/p/?LinkID=404342)然後選擇 [企業]**** 索引標籤上的 [合規性原則中心]****，手動建立原則中心。 
+    您第一次從「安全性與合規性中心」導覽到「文件刪除原則中心」時，系統便會自動為您建立原則中心。 或者，您可以[建立網站集合](https://go.microsoft.com/fwlink/p/?LinkID=404342)然後選擇 [企業]**** 索引標籤上的 [合規性原則中心]****，手動建立原則中心。 
     
 2. 選擇 [刪除原則]****。
     
@@ -122,7 +124,7 @@ ms.locfileid: "37342976"
     
 6. 輸入一個名稱，然後選擇下列選項：
     
-  - 選擇是否將規則永久刪除，或是丟到資源回收桶。 從網站永久刪除一個項目前，資源回收筒提供了一個第二階段的安全網。 如需資源回收筒的詳細資訊，請參閱[清空資源回收筒或還原檔案](http://go.microsoft.com/fwlink/p/?LinkID=404348)。
+  - 選擇是否將規則永久刪除，或是丟到資源回收桶。 從網站永久刪除一個項目前，資源回收筒提供了一個第二階段的安全網。 如需資源回收筒的詳細資訊，請參閱[清空資源回收筒或還原檔案](https://go.microsoft.com/fwlink/p/?LinkID=404348)。
     
   - 選擇刪除日期是以文件建立當天或最後一次更新的日期開始算起。
     

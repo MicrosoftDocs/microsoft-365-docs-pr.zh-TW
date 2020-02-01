@@ -1,5 +1,7 @@
 ---
 title: 合規性分數計算
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 Microsoft 合規性分數會根據 [地址風險採取的動作的個人化的分數的計算，並改善您的合規性狀態。
-ms.openlocfilehash: 9fbc2b2beca3a667b09c1a4ba790651a364d1bf0
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 1ee9410e3b40a8180d768945a643d3e52c29046b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515574"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596240"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Microsoft 合規性分數 （預覽） 計算
 
@@ -80,8 +82,8 @@ ms.locfileid: "41515574"
 |:-----|:-----|
 | 必要的預防性 | 27 |
 | 選擇性的預防性 | 9  |
-| 偵測必要 | 3 |
-| 偵測選擇性 | 1 |
-| 必要的矯正措施 | 3 |
-| 修正了選擇性 | 1 |
+| 偵測必要 | 3  |
+| 偵測選擇性 | 1  |
+| 必要的矯正措施 | 3  |
+| 修正了選擇性 | 1  |
   

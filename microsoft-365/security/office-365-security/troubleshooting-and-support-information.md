@@ -1,5 +1,7 @@
 ---
 title: 疑難排解和支援資訊
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: 本主題說明使用者和系統管理員可用的疑難排解步驟，並提供如何連絡技術支援人員以取得協助的相關資訊。
-ms.openlocfilehash: a6a4b94db3e34442d326942641b10db15d104d71
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: efb71aab852b76b2b898419444bfea4144728514
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971621"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598170"
 ---
 # <a name="troubleshooting-and-support-information"></a>疑難排解和支援資訊
 
@@ -44,7 +46,7 @@ ms.locfileid: "39971621"
 如果問題仍然存在，請連絡您的系統管理員。
 
 > [!TIP]
-> 您也可以將垃圾郵件直接提交給 Microsoft，請使用 [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) 電子郵件地址，若要提交誤判郵件，請使用 [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com) 電子郵件地址。 如需詳細資訊，請參閱[提交垃圾郵件、 非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
+> 您也可以將垃圾郵件直接提交給 Microsoft，請使用 [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) 電子郵件地址，若要提交誤判郵件，請使用 [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com) 電子郵件地址。 如需詳細資訊，請參閱[將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
 
 ## <a name="troubleshooting-for-administrators"></a>系統管理員疑難排解
 
@@ -84,7 +86,7 @@ ms.locfileid: "39971621"
 
 如果您需要安裝的說明，設定或解除安裝增益集，請連絡技術支援使用 Microsoft 365 系統管理中心中的 [支援] 頁面上的 [新的服務要求] 連結。 如其他選項，包括提交服務要求透過電話] 和 [自我支援選項，請參閱[說明和 EOP 的支援](help-and-support-for-eop.md)。
 
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="for-more-information"></a>相關資訊
 
 [啟用報告訊息增益集](enable-the-report-message-add-in.md)
 

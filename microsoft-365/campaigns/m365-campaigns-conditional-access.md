@@ -1,5 +1,7 @@
 ---
 title: 設定條件式存取原則
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何需要 MFA 和 Microsoft 365 商務版設定條件式存取原則。
-ms.openlocfilehash: 0279fff8dd4143c883b2f1633907ac197c65f04a
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: b65cccf9931da4701157f26ffece7a7c90689094
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748284"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594858"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>需要多重要素驗證和設定條件式存取原則
 

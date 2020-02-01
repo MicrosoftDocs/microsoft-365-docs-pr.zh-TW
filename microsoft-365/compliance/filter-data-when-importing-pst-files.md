@@ -1,5 +1,7 @@
 ---
 title: 匯入至 Office 365 的 PST 檔案時篩選資料
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: '使用 Office 365 匯入服務中的新的智慧型匯入功能，來篩選實際取得匯入至目標信箱的項目。 智慧型匯入可讓您主動決定何種資料匯入及要留下的項目。 智慧型匯入也可提供見解上您要匯入至 Office 365 的資料。 '
-ms.openlocfilehash: e070c32814e8f5a34a90a12dfcd4148199731d66
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 0ac3b23443c42a53efc94faccc99991f608185b5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967346"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594564"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>匯入至 Office 365 的 PST 檔案時篩選資料
 

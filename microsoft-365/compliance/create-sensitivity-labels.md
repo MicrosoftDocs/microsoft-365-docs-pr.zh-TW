@@ -1,5 +1,7 @@
 ---
 title: 建立及發佈敏感度標籤
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立、設定及發佈敏感度標籤的指示，以便分類及保護貴組織的文件和電子郵件。
-ms.openlocfilehash: bef9841da49e24a99a038e9df906d523fe40e044
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 3ce1f729853d514a85852221eb997c456a379dcd
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259289"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595530"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>建立及設定敏感度標籤及其原則
 
@@ -69,6 +71,9 @@ ms.locfileid: "41259289"
 > 如果您編輯已使用標籤原則發佈的標籤，當完成精靈後便不需要額外的步驟。 例如，您不需要將其新增到新的標籤原則中，就能讓變更供相同的使用者使用。 不過，請允許最多 24 小時的時間讓變更複寫到使用者和服務。
 
 在您發佈標籤之前，無法在應用程式中或為服務選取標籤。 若要發佈標籤，必須先[將標籤新增至標籤原則](#publish-sensitivity-labels-by-creating-a-label-policy)。
+
+> [!IMPORTANT]
+> 在此 [標籤]**** 索引標籤上，請勿選取 [發佈標籤]**** 索引標籤 (也不要在編輯標籤時選取 [發佈標籤]**** 按鈕)，除非您需要建立新的標籤原則。 只有當使用者需要不同的標籤或不同的原則設定時，才需要多個標籤原則。 盡可能建立較少的標籤原則，只建立一個標籤原則的組織也是很常見的。
 
 ### <a name="additional-label-settings-with-office-365-security--compliance-center-powershell"></a>Office 365 安全性與合規性中心 PowerShell 的其他標籤設定
 

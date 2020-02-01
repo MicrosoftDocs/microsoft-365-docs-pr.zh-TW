@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 進階電子文件探索中使用快速分析
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: 了解如何執行 Office 365 進階電子文件探索的快速分析模式
-ms.openlocfilehash: f1b26e40c2ed3a3b468ada0d501fcafd20fefe2c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 41de4b0c4e4e57501fb2a0774c556e2556c3d496
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802308"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597310"
 ---
 # <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中使用快速分析
 
@@ -127,7 +129,7 @@ ms.locfileid: "40802308"
     
 選擇 **[確定]** 以儲存 [進階] 設定，**還原成預設值**使用預設值，或 [**取消**] 取消 [設定進階的設定。 
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 <a name="BK_AdvancedSettings"> </a>
 
 [Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)

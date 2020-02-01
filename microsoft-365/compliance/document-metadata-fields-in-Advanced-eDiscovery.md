@@ -1,5 +1,7 @@
 ---
 title: 在進階電子文件中的文件的中繼資料欄位
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文中的 Microsoft 365 進階 ediscovery 案例中設定檢閱定義文件的中繼資料欄位。
-ms.openlocfilehash: 7a5a767d22c6f3a5251a11bd201846135cfcf130
-ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
+ms.openlocfilehash: 399e89a577db68e0c31eceef921ef2ab1172352a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "40840152"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595188"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>在進階電子文件中的文件的中繼資料欄位
 
@@ -149,7 +151,7 @@ ms.locfileid: "40840152"
 |標記的大小寫發出 1||Tagged_by_Case_issue_1|案例標記這份文件的使用者發出 1 中的相關性。|
 |標記|標記|標記|在檢閱套用標記設定。|
 |佈景主題清單|ThemesList|Themes_list|計算中分析的佈景主題清單。|
-|職稱|職稱|Doc_title|從文件中繼資料的標題。|
+|標題|標題|Doc_title|從文件中繼資料的標題。|
 |收件者|收件者|Email_to|若要針對郵件類型] 欄位。 格式為**DisplayName\<SmtpAddress>**|
 |唯一的電子郵件設定|UniqueInEmailSet||**False**表示沒有在其電子郵件附件的複本設定。|
 |已修復|WasRemediated|Was_Remediated|**True 是表示**如果項目已修復，否則為**False**。|

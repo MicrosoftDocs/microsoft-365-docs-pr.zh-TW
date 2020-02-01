@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中使用內容搜尋，對目標集合
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 使用安全性 & 合規性中心的內容搜尋來執行目標的集合。 目標的集合表示您確信回應大小寫的項目或特殊權限項目都位於信箱或網站的特定資料夾。 使用本文中的指令碼，以取得資料夾識別碼或您想要搜尋的特定信箱或網站資料夾的路徑。
-ms.openlocfilehash: 02cd78f9ebb02f7c41e0703ba4ddb78bfd184000
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 66929911cdb1692ea1ee2a8920dad349d50ec156
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685635"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597300"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>在 Office 365 中使用內容搜尋，對目標集合
 
@@ -231,7 +233,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
     
     - 按一下 [**選擇要搜尋的特定網站**新增至搜尋，然後新增您指定當您在步驟 1 中執行指令碼的相同網站 URL。 
     
-6. 按一下 **[下一步]**。
+6. 按 [下一步]****。
     
 7. 在**什麼您希望我們要尋找的**頁面上的 [關鍵字] 方塊中，貼上`folderid:<folderid>`或`documentlink:<path>`指令碼在步驟 1 中所傳回的值。 
     

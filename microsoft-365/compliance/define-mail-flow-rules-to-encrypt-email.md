@@ -1,5 +1,7 @@
 ---
 title: 定義郵件流規則以加密 Office 365 中的電子郵件
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以了解如何建立郵件流程規則 （傳輸規則） 來加密及解密使用 Office 365 郵件加密的郵件。
-ms.openlocfilehash: 54fc53d1e39208f42348b6def4afadf71092ff11
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: a2f37bff8fa3fd45999a44341cfdb077b4f43e62
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748551"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595338"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定義郵件流規則以加密 Office 365 中的電子郵件
 
@@ -90,7 +92,7 @@ ms.locfileid: "38748551"
 
 7. 從**執行下列動作**] 清單中，移除任何已指派給**修改郵件安全性**的動作\>**套用 OME 的舊版本**。
 
-8. 選擇 [**儲存**]。
+8. 選擇 [儲存]****。
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>建立郵件流程規則的 Office 365 郵件加密沒有的新功能
 

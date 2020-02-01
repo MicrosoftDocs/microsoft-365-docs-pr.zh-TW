@@ -1,5 +1,7 @@
 ---
 title: Office 365 安全性事件回應
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 此解決方案會告訴您攻擊看起來會像在 Office 365，以及如何回應這些何種最常見 cybersecurity
-ms.openlocfilehash: c55a5d561fec4219d29926036842836174b790da
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 317e685dd9e2b2e0afbf25f0568b352c399e7b87
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823825"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598720"
 ---
 # <a name="office-365-security-incident-response"></a>Office 365 安全性事件回應
 
@@ -55,7 +57,7 @@ ms.locfileid: "40823825"
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Office 365
 
-您的 Office 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。  使用 [Office 365 安全性藍圖 - 前 30 天、前 90 天前和之後的最高頂級順序](security-roadmap.md)來實作 Microsoft 建議用來保護您的 Office 365 租用戶的最佳做法。
+您的 Office 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。  使用 [Office 365 安全性藍圖 - 前 30 天、前 90 天前和之後的最高優先順序](security-roadmap.md)來實作 Microsoft 建議用來保護您的 Office 365 租用戶的最佳做法。
 
 - 要在前 30 天內完成的工作。  這些工作會有立即的影響，而且對您的使用者影響較低。
 

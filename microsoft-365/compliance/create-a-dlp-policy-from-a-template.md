@@ -1,5 +1,7 @@
 ---
 title: 從範本建立 DLP 原則
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: '要開始使用 DLP 原則，最簡單且最常見方式是使用 Office 365 所包含的其中一個範本。 '
-ms.openlocfilehash: 2f7618f80f02865816a1f937b36c9f09b794b77d
-ms.sourcegitcommit: 8ad30e6c5cd77a72e5c1ce463c9f693132cc0b15
+ms.openlocfilehash: b101714190879e4bdd1090b05f94f1f36e5d8729
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "38685379"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595660"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>從範本建立 DLP 原則
 
@@ -54,7 +56,7 @@ Office 365 包含 40 多個現成可用的範本，可協助您符合各種常�
     
 ### <a name="create-a-dlp-policy-from-a-template"></a>從範本建立 DLP 原則
 
-1. 移至 [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用公司或學校帳戶登入 Office 365。 您現在在 Office 365 安全性&amp;合規性中心。
     
@@ -140,7 +142,7 @@ Office 365 包含 40 多個現成可用的範本，可協助您符合各種常�
     
      建立 DLP 原則之前，您應考慮逐漸推出這些原則，以便在完全強制執行之前評估其影響及測試其效果。 例如，您不想要不小心封鎖存取數千名人員需要完成其工作的文件的新 DLP 原則。 
     
-    如果您正在建立 DLP 原則與重大影響，建議下列順序：
+    如果您正在建立的 DLP 原則可能有重大影響，建議依照下列順序進行：
     
 17. 以測試模式啟動但不顯示原則提示，然後使用 DLP 報告來評估影響。您可以使用 DLP 報告來檢視原則相符項目的號碼、位置、類型和嚴重性。根據結果，您可以視需要微調規則。在測試模式中，DLP 原則不會影響您的組織中工作人員的生產力。 
     
@@ -165,7 +167,7 @@ Office 365 包含 40 多個現成可用的範本，可協助您符合各種常�
 |**正在開啟…** <br/> |正在將原則部署到其包含的內容來源。尚未在所有來源上強制執行此原則。  <br/> |
 |**測試，有通知** <br/> |原則處於測試模式。不會套用規則中的動作，但會收集原則相符項目，並且可使用 DLP 報告加以檢視。原則相符項目的相關通知會傳送給指定收件者。  <br/> |
 |**測試，沒有通知** <br/> |原則處於測試模式。不會套用規則中的動作，但會收集原則相符項目，並且可使用 DLP 報告加以檢視。原則相符項目的相關通知不會傳送給指定收件者。  <br/> |
-|**On** <br/> |原則在使用中且已強制執行。原則已成功部署到其所有內容來源。  <br/> |
+|**開啟** <br/> |原則在使用中且已強制執行。原則已成功部署到其所有內容來源。  <br/> |
 |**正在關閉…** <br/> |正在將原則從其包含的內容來源移除。此原則在某些來源上仍然在作用中且已強制執行。關閉原則可能需要 45 分鐘。  <br/> |
 |**關閉** <br/> |原則不在作用中且並未強制執行。原則的設定 (來源、關鍵字、期限等) 已儲存。  <br/> |
 |**刪除...]** <br/> |正在刪除原則。 原則不在作用中且並未強制執行。 它通常需要一小時要刪除原則 <br/> |
@@ -184,7 +186,7 @@ Office 365 包含 40 多個現成可用的範本，可協助您符合各種常�
 
 - [資料外洩防護原則概觀](data-loss-prevention-policies.md)
     
-- [傳送通知並顯示原則提示的 DLP 原則](use-notifications-and-policy-tips.md)
+- [傳送通知並顯示 DLP 原則的原則秘訣](use-notifications-and-policy-tips.md)
     
 - [建立 DLP 原則來保護具有 FCI 或其他屬性的文件](protect-documents-that-have-fci-or-other-properties.md)
     

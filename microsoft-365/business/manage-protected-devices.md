@@ -1,5 +1,7 @@
 ---
 title: 使用 Microsoft 365 商務版管理受保護的裝置
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -24,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: 了解如何重設或清除透過保護原則受管理的裝置。
-ms.openlocfilehash: ef3b8ed0e3b3f8b9136d3929bce1b835309498c7
-ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
+ms.openlocfilehash: b022d9076b60b0d29771b2ba8f7afc0435bda096
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38633322"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593834"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business"></a>使用 Microsoft 365 商務版管理受保護的裝置
 

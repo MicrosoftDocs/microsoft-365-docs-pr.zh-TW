@@ -1,5 +1,7 @@
 ---
 title: 保護您的 Microsoft 365 企業版測試環境中的全域系統管理員帳戶
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用下列步驟來保護 Microsoft 365 企業版測試環境中的全域系統管理員帳戶。
-ms.openlocfilehash: 32e5983532c89c6ada106ed32d8ef3eabd5dc569
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e33790d62adbac4f9b8d816041d28b9dfdf36095
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801388"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596740"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>保護您的 Microsoft 365 企業版測試環境中的全域系統管理員帳戶
 
@@ -53,7 +55,7 @@ ms.locfileid: "40801388"
 2. 按一下 [**使用者 > 作用中使用者**]，然後按一下 [**新增使用者**。
 3. 在 [**新增使用者**] 窗格中，輸入**DedicatedAdmin**中**第一個名稱**、**顯示名稱**和**使用者名稱**。
 4. 按一下 [**密碼**] 和 [**讓我建立密碼**，然後輸入 [強式密碼。 此新帳戶的密碼記錄於安全的位置。
-5. 按一下 **[下一步]**。
+5. 按 [下一步]****。
 6. 在 [**指派產品授權**] 窗格中，選取 [ **Microsoft 365 E5**或**Office 365 E5**，，然後按一下 [**下一步**。
 7. 在 [**選擇性設定**] 窗格中，按一下 [**角色**]，然後選取**系統管理中心存取**並**全域系統管理員**。按一下 [**下一步**]。
 8. 在上**幾乎大功告成**] 窗格中，按一下 [**完成 [新增**]，然後按一下 [**關閉**]。

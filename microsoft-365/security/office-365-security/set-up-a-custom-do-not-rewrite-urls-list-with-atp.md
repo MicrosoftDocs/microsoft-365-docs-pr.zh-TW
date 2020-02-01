@@ -1,5 +1,7 @@
 ---
 title: 使用 Office 365 ATP 安全連結來設定自訂「不要重寫」URL 清單
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: 當您設定您的 ATP 安全連結原則時，可以包括不要重寫的 URL 清單，讓組織中的某些人員造訪您清單中包含的網站。
-ms.openlocfilehash: 3165b8e6074de540d6cf957c4196276da471d88f
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 3a2fd98adc1eee36a984ac09b80546ae6b98e31d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970941"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598370"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>使用 Office 365 ATP 安全連結來設定自訂「不要重寫」URL 清單
 

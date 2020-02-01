@@ -1,5 +1,7 @@
 ---
 title: 準備資料以供 Office 365 進階電子文件探索
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,19 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: '了解如何使用 Microsoft 365 安全性&amp;合規性中心，以準備與 Office 365 進階電子文件探索分析的 Office 365 的資料。 '
-ms.openlocfilehash: 0429c957035068074a571c97cf430b27f9ad5904
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 6407b6f2a2bbe9bc69842057232ec01569ef64c8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803820"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597760"
 ---
 # <a name="prepare-data-for-office-365-advanced-ediscovery"></a>準備資料以供 Office 365 進階電子文件探索
 
 本主題說明如何載入至進階電子文件中的案例中的內容搜尋的結果。 
   
-> [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> [!IMPORTANT]
+> 當我們繼續投入在較新版本的進階電子文件中，我們已宣佈淘汰網站的 Office 365 進階電子文件探索 (也稱為*進階電子文件 v1.0*)。 如果您仍在使用進階電子文件 v1.0，請轉換至[進階電子文件 v2.0](overview-ediscovery-20.md) （也就是*在 Microsoft 365 進階電子文件方案*） 儘速。 進階電子文件探索 2.0 包含進階電子文件 v1.0 中找到的類似功能，但管理、 通訊管理及檢閱設定，也提供了許多新功能，例如 custodian。 若要深入了解的進階電子文件 v1.0 淘汰網站，請參閱[退休的舊版電子文件探索工具](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。  
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>步驟 1： 準備 Office 365 資料以供進階電子文件
 

@@ -1,5 +1,7 @@
 ---
 title: 威脅追蹤器 - 新增和值得注意的功能
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: 了解威脅追蹤器，包括新值得注意的追蹤器，以協助您掌握安全性考量的組織。
-ms.openlocfilehash: 084d3c6de104c675a2af47984a2fcbffcf89447e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f2a68cfbbae0ce91716f69514e30136ac223bbf8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078203"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598180"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威脅追蹤器 - 新增和值得注意的功能
 
@@ -34,7 +36,7 @@ ms.locfileid: "37078203"
   
 ![威脅追蹤器顯示惡意程式碼行銷活動的範例](../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
   
-大部分的追蹤器網頁包含趨勢的數字的定期更新，請以協助您了解哪些問題 widget 最大或最，已成長到，快速連結會帶您前往 [檔案總管中，您可以在其中檢視更詳細的 [**動作**] 欄中資訊。 
+大部分的追蹤器網頁包含趨勢的數字的定期更新，請以協助您了解哪些問題 widget 最大或最，已成長到，[**動作**] 欄中的快速連結，會帶您前往總管] 中，您可以在其中檢視的詳細的資訊。 
   
 ![在檔案總管中的活動資訊的範例](../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   

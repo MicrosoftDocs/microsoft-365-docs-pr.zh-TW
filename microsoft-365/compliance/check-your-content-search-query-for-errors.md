@@ -1,5 +1,7 @@
 ---
 title: 檢查您的內容搜尋查詢是否有錯誤
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: 檢查錯誤和錯字，例如不支援的字元的內容搜尋的關鍵字查詢和小寫布林運算子，才能執行搜尋。 如果我們發現錯誤，則將建議的修訂的查詢。
-ms.openlocfilehash: 1d2c9a9f3e2204fa65fe29c9adaffe818d2f7a4c
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: ff7574629a87062e0a0da36541844179dfe25001
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633990"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595920"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>檢查您的內容搜尋查詢是否有錯誤
 

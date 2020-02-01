@@ -1,5 +1,7 @@
 ---
 title: 使用郵件流程規則來設定 Exchange Online Protection 中篩選大量電子郵件
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +15,12 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以了解如何使用 Exchange Online Protection 中的郵件流程規則的大量電子郵件篩選。
-ms.openlocfilehash: 4f53ee482567a3c76acb4ee8ca0ffb10f6f8cca0
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 5188ce077ce15ab7ad5d03e4aa2c172db6a80c37
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866745"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598040"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>使用郵件流程規則來設定 Exchange Online Protection 中篩選大量電子郵件
 
@@ -32,7 +34,7 @@ ms.locfileid: "39866745"
 
 ## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>建立郵件流程規則，以篩選大量電子郵件根據文字模式
 
-1. 在 Exchange 系統管理中心 (EAC) 中，移至 [郵件流程]**** \> [規則]****。
+1. 在 Exchange 系統管理中心 (EAC) 中，移至 **[郵件流程]** \> **[規則]**。
 
 2. 按一下 [**新增**![加入圖示](../media/ITPro-EAC-AddIcon.gif)]，然後選取 [**建立新的規則**。
 
@@ -138,7 +140,7 @@ ms.locfileid: "39866745"
 
 [垃圾郵件和大量電子郵件有什麼不同？](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
-[大量抱怨層級值](bulk-complaint-level-values.md)
+[大量相容層級值](bulk-complaint-level-values.md)
 
 [設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)
 

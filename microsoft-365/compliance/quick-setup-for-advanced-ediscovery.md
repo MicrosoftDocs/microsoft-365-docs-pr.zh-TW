@@ -1,8 +1,11 @@
 ---
 title: 快速設定 Office 365 進階電子文件探索
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -13,23 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: '了解如何從 Office 365 安全性與合規性中心存取 Office 365 進階電子文件探索，以及檢閱使用進階電子文件探索的一般工作流程。  '
-ms.openlocfilehash: 6b73177a0bd98dfb0d9e2f9127e682911f82703f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6df2d68639f2be9f6ba38ea7211654058bc73035
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077801"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597670"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>快速設定 Office 365 進階電子文件探索
 
+> [!IMPORTANT]
+> 隨著我們繼續投資於更新版本的進階電子文件探索，我們現在宣布停用 Office 365 進階文件探索 (也稱為*進階文件探索 1.0 版*)。 如果您仍在使用進階電子文件探索 1.0 版，請盡快轉換為[進階電子文件探索 2.0 版](overview-ediscovery-20.md) (*在Microsoft 365 中也稱為進階電子文件探索解決方案*)。 進階電子文件探索 2.0 中包含可在進階電子文件探索 1.0 版中找到的類似功能，但同時也提供許多新的功能，例如監管人管理、通訊管理和檢閱集。 若要深入了解進階電子文件探索 1.0 版的停用，請參閱[舊版電子文件探索工具的停用](legacy-ediscovery-retirement.md#advanced-ediscovery-v10) (部分機器翻譯)。 
+
 此設定小節將為 Microsoft 365 安全性與合規性中心的電子文件探索管理員說明如何開始使用「進階電子文件探索」。 本文假設使用者具備這兩者的工作知識。
-  
-> [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 ## <a name="accessing-a-case-in-advanced-ediscovery"></a>存取進階電子文件探索中的案例
 
-您可以從安全性與合規性中心存取進階電子文件探索。您必須是安全性與合規性中心的電子文件探索案例的成員，才能存取進階電子文件探索中的案例。如需指派電子文件探索案例權限，並將使用者新增至電子文件探索案例的相關指示，請參閱[管理 Office 365 中的電子文件探索案例](manage-ediscovery-cases.md)。 
+
+您可以從安全性與合規性中心存取進階電子文件探索。您必須是安全性與合規性中心的電子文件探索案例的成員，才能存取進階電子文件探索中的案例。如需指派電子文件探索案例權限，並將使用者新增至電子文件探索案例的相關指示，請參閱[管理 Office 365 中的電子文件探索案例](ediscovery-cases.md)。 
   
 若要移至進階電子文件探索中的案例： 
   

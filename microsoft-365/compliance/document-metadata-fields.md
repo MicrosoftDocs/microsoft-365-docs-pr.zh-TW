@@ -1,5 +1,7 @@
 ---
 title: 文件的中繼資料欄位中資料調查 （預覽）
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 41e551850b47bec88f6dd8353c6db02048255e74
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1edf55298981fe8c20a38c863229a7349d6b0862
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076311"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595178"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>文件的中繼資料欄位中資料調查 （預覽）
 
@@ -35,7 +37,7 @@ ms.locfileid: "37076311"
 |複合路徑              |                                                 |                         | 是         |
 |容器識別碼               |                                                 |                         | 是         |
 |交談的索引         |                                                 |                         | 是         |
-|Custodian                  | 是 (custodian)                                 |   是 (Custodian)       | 是         |
+|監管人                  | 是 (custodian)                                 |   是 (Custodian)       | 是         |
 |資料來源                | [是] （來源）                                    |   是 （工作負載）          | 是         |
 |日期                       | [是] (date)                                      |   [是] (Date UTC)        | 是         |
 |Deduped 複合路徑      |                                                 |                         | 是         |

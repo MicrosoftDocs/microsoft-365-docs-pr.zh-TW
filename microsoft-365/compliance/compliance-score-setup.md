@@ -1,5 +1,7 @@
 ---
 title: Microsoft 合規性分數安裝程式
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何登入，設定權限，以及了解 Microsoft 合規性分數，可協助簡化和自動化風險評定儀表板。
-ms.openlocfilehash: d6ec9617ff97a254514370c863b02b2fb0415798
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: a97fa1c0598fcab1660d71581fed2be8dafe8911
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515654"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595750"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Microsoft 合規性分數 （預覽） 安裝程式
 
@@ -52,7 +54,7 @@ Microsoft 365 全域系統管理員為您的組織可能會存取合規性分數
 | **編輯資料**| 合規性管理員 | 合規性參與者 | 
 | **編輯測試結果**| 合規性管理員 | 合規性管理員評估者 | 
 | **管理評估以及範本和租用戶資料**| 合規性管理員<br>合規性資料管理員<br>安全性系統管理員 | 合規性管理員的系統管理員 | 
-| **指派給使用者**| 全域系統管理員 | 入口網站管理員 | 
+| **指派給使用者**| 全域管理員 | 入口網站管理員 | 
 
 > [!NOTE]
 > 從合規性分數移至合規性管理員完成工作時 （例如，若要管理 「 評估 」），您的瀏覽器會開啟新的索引標籤，會出現一個對話方塊。 在 [使用標頭 [top] 區段中，「 已 Microsoft 雲端服務客戶嗎？ 您的帳戶，登入] 選取 [**登入**存取合規性管理員;您將不需要重新輸入您的認證。

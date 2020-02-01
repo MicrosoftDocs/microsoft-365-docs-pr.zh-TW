@@ -1,5 +1,7 @@
 ---
 title: Office 365 電子郵件的安全提示
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: 介紹 EOP 和 Office 365 垃圾郵件篩選器所篩選的電子郵件的安全提示。
-ms.openlocfilehash: b8200b88c83e0280dde2ea5780592eaa0dba91a8
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 244b2ceb8ccf5e2e49b56fdebd370f75033f652b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872039"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598520"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Office 365 電子郵件的安全提示
 
@@ -58,7 +60,7 @@ Exchange Online Protection (EOP) 和 Office 365 保護您的垃圾郵件、 網�
 
 即使不是每個郵件將會收到一網頁型 Outlook 一律會啟用安全提示。 Office 365 系統管理員可以關閉安全提示 Outlook 之類的其他電子郵件用戶端。 如需詳細資訊，請參閱[啟用或停用 Office 365 中的安全提示](enable-or-disable-safety-tips.md)。
 
-如果您同意與 Office 365 和 EOP 分類的方式郵件 （也就是它不是垃圾郵件或不合法），您可以提交郵件以進行分析，以協助更妥善地讓您的使用經驗。 如需詳細資訊，請參閱[回報垃圾郵件和網路釣魚詐騙網頁型 Outlook 中](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。 您也可以按一下 [送出至 Microsoft，以協助我們改進直接的註解的安全提示中的意見反應] 連結。
+如果您同意與 Office 365 和 EOP 分類的方式郵件 （也就是它不是垃圾郵件或不合法），您可以提交郵件以進行分析，以協助更妥善地讓您的使用經驗。 如需詳細資訊，請參閱[在 Outlook 網頁版中回報垃圾郵件與網路釣魚詐騙](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。 您也可以按一下 [送出至 Microsoft，以協助我們改進直接的註解的安全提示中的意見反應] 連結。
 
 ## <a name="see-also"></a>另請參閱
 

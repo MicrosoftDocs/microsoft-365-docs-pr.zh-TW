@@ -1,5 +1,7 @@
 ---
 title: 傳送加密的電子郵件
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何傳送加密的電子郵件使用 Outlook。
-ms.openlocfilehash: 7420073ba768f0e5adba33d673d3ccd6369e306c
-ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
+ms.openlocfilehash: 1a450a9891d47a136798432fdb919349fb82e097
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778138"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594734"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>加密或標籤機密電子郵件
 
@@ -46,11 +48,11 @@ ms.locfileid: "35778138"
 
 ## <a name="set-it-up"></a>進行設定
 
-如果您想要加密的郵件不符合的預先定義的規則，或您的系統管理員尚未設定任何規則，您可以在傳送郵件之前，先套用各種不同的加密的郵件。 傳送加密的郵件，從 Outlook 2013 或 2016 或 Outlook 2016 for Mac 中，選取**選項 > 權限**，然後選取您需要的保護選項。 您也可以藉由選取 [**保護**] 按鈕，網頁型 Outlook 中傳送加密的郵件。 如需詳細資訊，請參閱[傳送、 檢視和回覆加密郵件的電腦版 Outlook 中](https://support.office.com/en-us/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-US&rs=en-US&ad=US)。
+如果您想要加密的郵件不符合的預先定義的規則，或您的系統管理員尚未設定任何規則，您可以在傳送郵件之前，先套用各種不同的加密的郵件。 傳送加密的郵件，從 Outlook 2013 或 2016 或 Outlook 2016 for Mac 中，選取**選項 > 權限**，然後選取您需要的保護選項。 您也可以藉由選取 [**保護**] 按鈕，網頁型 Outlook 中傳送加密的郵件。 如需詳細資訊，請參閱[傳送、 檢視和回覆加密郵件的電腦版 Outlook 中](https://support.office.com/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-US&rs=en-US&ad=US)。
 
 ## <a name="admin-settings"></a>系統管理員設定
 
-您可以了解在[Office 365 中的電子郵件加密](https://docs.microsoft.com/en-us/office365/securitycompliance/email-encryption)的電子郵件加密設定。
+您可以了解在[Office 365 中的電子郵件加密](https://docs.microsoft.com/office365/securitycompliance/email-encryption)的電子郵件加密設定。
 
 ### <a name="automatically-encrypt-email-messages"></a>會自動加密電子郵件
 
@@ -60,11 +62,11 @@ ms.locfileid: "35778138"
 
 1. 在網頁瀏覽器中，使用已授與全域系統管理員權限的工作或學校帳戶登入 Office 365。 
 2. 選擇 [管理] 磚。 
-3. 在系統管理中心中，選擇 [**系統管理中心 > Exchange**]。 
+3. 在系統管理中心中，選擇 [**系統管理中心 > 交換**。 
 
-如需詳細資訊，請參閱[定義郵件流規則以加密 Office 365 中的電子郵件](https://docs.microsoft.com/en-us/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email)。
+如需詳細資訊，請參閱[定義郵件流規則以加密 Office 365 中的電子郵件](https://docs.microsoft.com/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email)。
 
 ### <a name="brand-your-encryption-messages"></a>品牌加密郵件
 
-您也可以套用行銷活動品牌自訂外觀和電子郵件訊息中的文字。 如需詳細資訊，請參閱[新增至加密郵件的貴組織的品牌](https://docs.microsoft.com/en-us/office365/securitycompliance/email-encryption)。
+您也可以套用行銷活動品牌自訂外觀和電子郵件訊息中的文字。 如需詳細資訊，請參閱[新增至加密郵件的貴組織的品牌](https://docs.microsoft.com/office365/securitycompliance/email-encryption)。
 

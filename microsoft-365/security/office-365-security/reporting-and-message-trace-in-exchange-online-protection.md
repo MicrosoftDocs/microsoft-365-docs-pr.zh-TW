@@ -1,5 +1,7 @@
 ---
 title: Exchange Online Protection 的報告與訊息追蹤
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) 提供許多不同的報告，可協助您判斷貴組織的整體狀態與健全狀況。還有可協助您疑難排解特定事件 (例如郵件未抵達其預定收件者) 的工具，以及有助於符合規範需求的稽核報告。下表將說明 EOP 系統管理員可以使用的報告和疑難排解工具。
-ms.openlocfilehash: 251286fca4ed54b87809c46e6e0f47ea618df747
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 282fd032e73ccb8217801a575f6029dbd9fadc9c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971504"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598550"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Exchange Online Protection 的報告與訊息追蹤
 
@@ -49,7 +51,7 @@ Microsoft Exchange Online Protection (EOP) 提供許多不同的報告，可協�
 
 **EOP**： 檢視有關惡意程式碼偵測、 詐騙的郵件、 垃圾郵件偵測和進出組織的郵件流程的資訊。
 
-[檢視 Office 365 進階威脅防護報告](view-reports-for-atp.md)
+[檢視 Office 365 進階威脅防護的報告](view-reports-for-atp.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>使用 Microsoft Graph 的自訂報告
 
@@ -61,7 +63,7 @@ Microsoft Exchange Online Protection (EOP) 提供許多不同的報告，可協�
 
 ## <a name="message-trace"></a>郵件追蹤
 
-在電子郵件通過 EOP 時進行追蹤。 您可以判斷服務是否接收、拒絕、延遲或傳遞電子郵件。 它也會顯示是對郵件所採取的行動之前它達到其最終狀態。
+在電子郵件通過 EOP 時進行追蹤。 您可以判斷服務是否接收、拒絕、延遲或傳遞電子郵件。 它也會顯示在郵件到達其最終狀態前，已對郵件執行哪些動作。
 
 您可以使用此資訊來有效回答使用者的問題、 疑難排解郵件流程問題、 驗證原則變更，並此舉可連絡技術支援尋求協助。
 

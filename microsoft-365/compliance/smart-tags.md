@@ -1,5 +1,7 @@
 ---
 title: 設定進階電子文件中的智慧標籤
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: 智慧標籤可讓您套用機器學習功能檢閱進階電子文件探索案例中的內容時。 使用智慧標籤群組來顯示機器學習偵測模型，例如律師-委託人權限模型的結果。
-ms.openlocfilehash: 68b558cc2282cc388387f8d61825b9ee569ff32a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9b3e1310baa06f53a3ee1dab5c371fb67d6ab95c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077511"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597400"
 ---
 # <a name="set-up-smart-tags-in-advanced-ediscovery"></a>設定進階電子文件中的智慧標籤
 

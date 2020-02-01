@@ -1,5 +1,7 @@
 ---
 title: 參照原則、 實務和指導方針
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft 開發各種原則、 程序，而且採用的許多業界最佳作法來協助保護我們的使用者沒有不當、 不想要或惡意電子郵件。
-ms.openlocfilehash: a1e1e213c01eea5a07b616e72955303f21c6d2ae
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: e6e5565b032af656b2204ce448581014595013de
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872059"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598610"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>參考：原則、實務與指導方針
 

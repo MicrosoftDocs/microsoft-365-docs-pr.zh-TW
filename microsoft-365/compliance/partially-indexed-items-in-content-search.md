@@ -1,5 +1,7 @@
 ---
 title: 位於 Office 365 中內容搜尋的已局部編製索引項目
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -19,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: '在 Exchange 中深入了解未編製索引的項目，並您可以在內容搜尋中包含的 SharePoint 執行透過安全性 & 合規性中心。 '
-ms.openlocfilehash: 7a5baa37abbade64ac77ed288afbb5389ac2295f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fc15a4af41495641882c25b23c1a38459b896696
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077555"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597780"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>位於 Office 365 中內容搜尋的已局部編製索引項目
 
@@ -81,7 +83,7 @@ ms.locfileid: "37077555"
     
 - 如果您要匯出的結果的搜尋特定的內容位置或組織中的所有內容位置的搜尋，將會匯出只有的未編製索引項目從內容的位置，包含搜尋準則相符的項目。 In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. 原因是，匯出已局部編製索引的項目從許多組織中的位置可能會增加匯出錯誤的可能性並增加匯出及下載搜尋結果所花費的時間。
     
-    若要匯出搜尋的所有內容位置中的已局部編製索引的項目、 設定搜尋傳回的所有項目 （藉由移除任何關鍵字搜尋查詢從） 並再將匯出只有部分索引項目時 （藉由按一下**只匯出搜尋結果無法辨識的格式的項目已加密，或因為其他原因而未建立索引****輸出選項**] 下)。
+    若要搜尋的所有內容位置從匯出已局部編製索引的項目，請設定搜尋傳回的所有項目 （藉由移除任何關鍵字搜尋查詢從），然後將匯出唯一的已局部編製索引項目，當您匯出搜尋結果 （**輸出選項**] 下，按一下 [**只有具有無法辨識的格式的項目已加密，或未編製索引的其他原因**)。
     
 - 如果您選擇要在搜尋結果中，包含所有信箱項目，或如果未指定任何關鍵字的搜尋查詢，或只指定日期範圍，已局部編製索引的項目可能不會複製到 PST 檔案包含的已局部編製索引的項目。 這是因為所有項目，包括任何已局部編製索引的項目，將會自動包含在一般搜尋結果。
     

@@ -1,5 +1,7 @@
 ---
 title: DLP 原則範本包含哪些內容
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,17 +17,17 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Office 365 安全性中的資料遺失防護 (DLP)&amp;合規性中心包含解決常見的合規性需求，例如幫助您保護敏感資訊受到美國健康保險法案 （的已準備要可以使用原則範本HIPAA)，美國 Gramm-leach-bliley 金融服務業現代化法案 (GLBA) 或美國愛國法案。本主題列出所有原則的範本、 類型的敏感資訊他們在找什麼，以及預設條件和動作為何。
-ms.openlocfilehash: aff9f5179d9bad3d8c1c97d17473a14995137c32
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Office 365 安全性中的資料遺失防護 (DLP)&amp;合規性中心包含解決常見的合規性需求，例如幫助您保護敏感資訊受到美國健康保險法案 (HIPAA)、 美國 Gramm-leach-bliley 金融服務業現代化法案 (GLBA) 或美國愛國法案的已準備要可以使用原則範本。本主題列出所有原則的範本、 類型的敏感資訊他們在找什麼，以及預設條件和動作為何。
+ms.openlocfilehash: 6b87f8c0746611e8ae8cee917e27545ffe5e4373
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077640"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597170"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>DLP 原則範本包含哪些內容
 
-Office 365 安全性中的資料遺失防護 (DLP)&amp;合規性中心包含解決常見的合規性需求，例如幫助您保護敏感資訊受到美國健康保險法案 （的已準備要可以使用原則範本HIPAA)，美國 Gramm-leach-bliley 金融服務業現代化法案 (GLBA) 或美國愛國法案。本主題列出所有原則的範本、 類型的敏感資訊他們在找什麼，以及預設條件和動作為何。 本主題不包含每個原則範本的設定方式; 每個詳細的資料相反地，主題介紹與您足夠的資訊可協助您決定哪一個範本是您案例的最佳起始點。 請記住，您可以自訂這些原則範本，以符合您特定的需求。
+Office 365 安全性中的資料遺失防護 (DLP)&amp;合規性中心包含解決常見的合規性需求，例如幫助您保護敏感資訊受到美國健康保險法案 (HIPAA)、 美國 Gramm-leach-bliley 金融服務業現代化法案 (GLBA) 或美國愛國法案的已準備要可以使用原則範本。本主題列出所有原則的範本、 類型的敏感資訊他們在找什麼，以及預設條件和動作為何。 本主題不包含每個原則範本的設定方式; 每個詳細的資料相反地，主題介紹與您足夠的資訊可協助您決定哪一個範本是您案例的最佳起始點。 請記住，您可以自訂這些原則範本，以符合您特定的需求。
   
 ## <a name="australia-financial-data"></a>澳洲財務資料
 
@@ -283,7 +285,7 @@ Office 365 安全性中的資料遺失防護 (DLP)&amp;合規性中心包含解�
 
 |**規則名稱**|**條件<br/>（包含敏感資訊類型）**|**動作**|
 |:-----|:-----|:-----|
-|內容符合美國 HIPAA  <br/> | 包含任何下列的敏感資訊：  <br/>  美國社會安全號碼 (SSN) — 最小計數 1、 最大計數不限  <br/>  藥物管理局 (DEA) 編號 — 最小計數 1、 最大計數不限  <br/> **AND** <br/>  內容包含任何這些字詞：  <br/>  國際分類的治療法 （ICD-9-公分） — 最小計數 1、 最大計數不限  <br/>  國際分類的治療法 （ICD-10-公分） — 最小計數 1、 最大計數不限  <br/>  內容共用對象：  <br/>  我組織外的人員  <br/> |傳送通知  <br/> |
+|內容符合美國 HIPAA  <br/> | 包含任何下列的敏感資訊：  <br/>  美國社會安全號碼 (SSN) — 最小計數 1、 最大計數不限  <br/>  藥物管理局 (DEA) 編號 — 最小計數 1、 最大計數不限  <br/> **和** <br/>  內容包含任何這些字詞：  <br/>  國際分類的治療法 （ICD-9-公分） — 最小計數 1、 最大計數不限  <br/>  國際分類的治療法 （ICD-10-公分） — 最小計數 1、 最大計數不限  <br/>  內容共用對象：  <br/>  我組織外的人員  <br/> |傳送通知  <br/> |
    
 ## <a name="us-patriot-act"></a>美國愛國者法案
 

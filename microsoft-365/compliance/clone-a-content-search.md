@@ -1,5 +1,7 @@
 ---
 title: 複製內容搜尋
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: 使用本文中的 Windows PowerShell 指令碼，以快速地複製現有的 Office 365 或 Microsoft 365 的合規性中心中 「 內容搜尋。 當您複製搜尋時，（以新名稱） 的新搜尋會建立包含原始的搜尋相同的屬性。 然後您可以藉由變更的關鍵字查詢或日期範圍，編輯新的搜尋，然後再執行它。
-ms.openlocfilehash: 87d9c75dc0a2b58b95ad6f2aaeb6c55f178e515f
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 59fdaab7cf12bc0f5c4b08cbac1834803e5a8d98
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633842"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595880"
 ---
 # <a name="clone-a-content-search"></a>複製內容搜尋
 

@@ -1,5 +1,7 @@
 ---
 title: 關於 AutoPilot 設定檔的設定
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -27,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: AutoPilot 設定檔可協助您控制如何取得使用者裝置上安裝 Windows。 設定檔包含預設和選擇性的設定，例如略過 Cortana 安裝。
-ms.openlocfilehash: 912a24e3d458986a4bcf7dcf903f80211996aca2
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 1cc8a3171bbc4a1e5cb531b9364c7791586fc339
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38321778"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593326"
 ---
 # <a name="about-autopilot-profile-settings"></a>關於 AutoPilot 設定檔的設定
 

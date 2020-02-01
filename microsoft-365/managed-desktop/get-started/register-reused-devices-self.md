@@ -3,14 +3,16 @@ title: 自行註冊現有裝置
 description: 登錄重複使用的裝置已經可能有自己，讓他們可以由 Microsoft 受管理的電腦
 ms.prod: w10
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 1d9b390cc28002b4561d61fa1d6cc411f3b135f1
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: e41d2ac66dea6640978435390bf3a8868c7cec7c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112707"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596530"
 ---
 # <a name="register-existing-devices-yourself"></a>自行註冊現有裝置
 

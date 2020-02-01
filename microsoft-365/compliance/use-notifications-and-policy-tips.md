@@ -1,5 +1,7 @@
 ---
 title: 針對 DLP 原則傳送電子郵件通知並顯示原則提示
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: '原則提示是通知或其他人正在使用的內容與 DLP 原則衝突時，會出現的警告。 您可以使用電子郵件通知和原則提示來增加知悉的變更，並協助教育人員需貴組織的原則。 您也可以的讓人員選擇覆寫原則，以便他們不會封鎖如果他們有有效的商務需要或原則會偵測誤判。 '
-ms.openlocfilehash: 2de9ef48d98e5d702e3f96d90f05b83b0ec4e55a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e3b83c72c8f18ad58fcedb6b8c4271bfebdf8c13
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685546"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597350"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>針對 DLP 原則傳送電子郵件通知並顯示原則提示
 
@@ -50,7 +52,7 @@ ms.locfileid: "38685546"
 
 當您建立的 DLP 原則時，電子郵件通知和原則提示是**使用者通知**] 區段中的一部分。 
   
-1. 移至 [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用公司或學校帳戶登入 Office 365。 您現在在 Office 365 安全性&amp;合規性中心。
     
@@ -91,7 +93,7 @@ ms.locfileid: "38685546"
   
 - 傳送通知您選擇的人員。 這些人員可以包含內容、 上次修改的內容、 儲存內容的位置，網站擁有人或特定使用者的人員擁有的者。
     
-- 自訂通知中包含使用 HTML 或語彙基元的文字。 請參閱以下區段，如需詳細資訊。
+- 自訂通知中包含使用 HTML 或語彙基元的文字。 詳細資訊請參閱下一小節。
     
 > [!NOTE]
 >  只可個別收件者可以傳送電子郵件通知 — 不群組或通訊群組清單。 新的內容就會觸發電子郵件通知。 編輯現有的內容就會觸發原則提示，但不是電子郵件通知。 
@@ -152,9 +154,9 @@ ms.locfileid: "38685546"
   
 - 若要覆寫選項是每個規則，且會覆寫所有 （傳送通知除外，它不能覆寫） 的規則中的動作。
     
-- 很可能想要比對一個 DLP 原則，在數個規則的內容，但只在最嚴格，最高優先順序的規則的原則提示也會顯示。 例如，原則提示從一個規則，透過從一個規則，只會傳送通知原則提示也會顯示封鎖內容的存取權。 這可防止人員看到 cascade 的原則提示。
+- 很可能想要比對一個 DLP 原則，在數個規則的內容，但只在最嚴格，最高優先順序的規則的原則提示也會顯示。 例如，會封鎖內容存取權的規則與僅傳送通知的規則，只會顯示前者的原則提示。 這樣可避免使用者看到重疊顯示的原則提示。
     
-- 如果中的原則提示最嚴格規則允許人員覆寫規則，則覆寫此規則也會覆寫任何其他內容符合的規則。
+- 如果最嚴格規則中的原則提示允許人員覆寫規則，則覆寫此規則也將會覆寫內容符合的任何其他規則。
     
 ## <a name="policy-tips-on-onedrive-for-business-sites-and-sharepoint-online-sites"></a>在 OneDrive for Business 網站和 SharePoint Online 網站的原則提示
 

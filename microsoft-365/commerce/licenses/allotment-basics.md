@@ -1,5 +1,7 @@
 ---
 title: 分配基本概念
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -12,12 +14,12 @@ ms.collection:
 - commerce
 ms.custom: ''
 description: 了解新的分配功能。
-ms.openlocfilehash: fff63b3c61ad95696e7f7677a34154ad65e82259
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: 22f7c35b1a5baf97fb72f541d57da28adeeffbe4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753572"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594684"
 ---
 # <a name="allotment-basics"></a>分配基本概念
 
@@ -27,7 +29,7 @@ ms.locfileid: "38753572"
 
 您也可以委派管理您分配。 委派的分配擁有者存取系統管理中心中，但只能看到並管理自己的分配中的授權。 這可提供更細微的委派授權管理組織內。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 您必須符合[群組為基礎之授權](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)的授權需求。
 

@@ -1,5 +1,7 @@
 ---
 title: 在進階電子文件中建立新的案例
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7860128ef8024a51f3cd25169dfd93116fd07c8f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7d507730e3e5301446889e52e4bbd5d85660da36
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076470"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596110"
 ---
 # <a name="create-a-new-case-in-advanced-ediscovery"></a>在進階電子文件中建立新的案例  
 
-1. 移至 [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用公司或學校帳戶登入 Office 365。
     

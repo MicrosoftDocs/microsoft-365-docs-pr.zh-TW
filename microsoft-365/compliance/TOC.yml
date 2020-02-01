@@ -34,7 +34,7 @@
           href: insider-risk-management-content-explorer.md
         - name: 將使用者新增至測試人員風險原則 （預覽）
           href: insider-risk-management-users.md
-        - name: 建立測試人員風險通知 （預覽）
+        - name: 建立測試人員風險通知範本 （預覽）
           href: insider-risk-management-notices.md
     - name: 通訊規範 （預覽）
       items:
@@ -852,7 +852,7 @@
           href: offering-csa-star-attestation.md
         - name: CSA-STAR 認證
           href: offering-csa-star-certification.md
-        - name: CSA STAR 自我評估
+        - name: CSA 顆星自我評估
           href: offering-csa-star-self-assessment.md
         - name: ISO 20000-1-2011
           href: offering-iso-20000-1-2011.md

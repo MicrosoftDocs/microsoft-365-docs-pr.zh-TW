@@ -1,5 +1,7 @@
 ---
 title: 關閉 Outlook 網頁版中的垃圾郵件報告
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -11,12 +13,12 @@ ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
 ms.collection:
 - M365-security-compliance
 description: 身為 Office 365 系統管理員，您可以關閉的能力人員報告電子郵件為垃圾郵件。
-ms.openlocfilehash: 46ce4de8fa6ea14c81041208864957cbc73aebf5
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 0bca03786d0335c24e48340e588510f09d6f6a7e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871279"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598120"
 ---
 # <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>關閉 Outlook 網頁版中的垃圾郵件報告
 

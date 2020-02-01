@@ -1,5 +1,7 @@
 ---
 title: 設定 Office 365 ATP 防網路釣魚原則
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -12,12 +14,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: 反網路釣魚保護，更完整的保護，作為 Office 365 進階威脅防護和 Office 365 Exchange Online Protection 中的基本保護的一部分，可協助保護組織免受惡意模擬型網路釣魚攻擊和其他網路釣魚攻擊。
-ms.openlocfilehash: 24470c67b4a630205398860b1741b5bf9fe751a7
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 2f57a81451c1bf77399e741752ec2d8ea0577dfe
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572259"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598350"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則
 

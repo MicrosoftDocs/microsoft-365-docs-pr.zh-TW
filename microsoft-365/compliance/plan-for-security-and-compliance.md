@@ -1,5 +1,7 @@
 ---
 title: 規劃安全性&amp;Office 365 的合規性
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 規劃安全性與合規性的登陸頁面
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 86eef432f30ea9a437f0857f693d62eb23f4ba8d
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: 784cf4a2fec64a8156d8761942091fec066e5ae7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38685508"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597750"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>規劃安全性&amp;Office 365 的合規性
 
@@ -59,7 +61,7 @@ ms.locfileid: "38685508"
   
 - [移至 Office 365 安全性&amp;合規性中心](go-to-the-securitycompliance-center.md)
     
-- [Permissions in the Office 365 Security &amp; Compliance Center](~/security/office-365-security/protect-against-threats.md)
+- [Office 365 安全性與合規性中心權限](~/security/office-365-security/protect-against-threats.md)
     
 - [讓使用者能夠存取 Office 365 安全性&amp;合規性中心](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     

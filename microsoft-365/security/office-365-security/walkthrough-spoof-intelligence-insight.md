@@ -1,5 +1,7 @@
 ---
-title: 逐步解說詐騙智慧深入解析
+title: 欺騙情報探索的演練
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: 請參閱 < 新的詐騙智慧深入了解的運作方式。
-ms.openlocfilehash: 652dde07d615a4eef98074fb8d2b5c676f65d633
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 38bf75a2ebeabd41aace42c6116d37ecbe28a2de
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077750"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598010"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>逐步解說： 詐騙智慧深入解析
 

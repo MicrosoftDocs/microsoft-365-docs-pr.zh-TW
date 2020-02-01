@@ -2,6 +2,8 @@
 title: Microsoft 365 商務版常見問題集 
 description: 找出大部分的常見問題集解答有關 Microsoft 365 商務版，專為小中型企業 (SMB) 設計的新解決方案。 
 author: Sirkkuw
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 ms.topic: article 
 ms.prod: microsoft-365-business
@@ -10,19 +12,19 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商務版, Microsoft 365, SMB, 常見問題集, 常見問題集, 解答, 商務版
 ms.date: 06/08/2018
-ms.openlocfilehash: 09a155c87bf90309f8a4cdd2eb5c0b71d2337d58
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 706646eae722b0040db2a5bd7bcf187f5e1295bf
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748364"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594221"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Microsoft 365 商務版常見問題集
 
 ## <a name="general"></a>一般
 
 ### <a name="what-is-microsoft-365-business"></a>什麼是 Microsoft 365 商務版？ 
-Microsoft 365 是整合式的解決方案，聚集所有同等級最佳的生產力工具、 安全性和裝置管理功能適用於小型至中型企業。 其中包括：
+Microsoft 365 是整合式的解決方案，聚集所有同等級最佳的生產力工具、 安全性和裝置管理功能適用於小型至中型企業。 包括：
 
 **一群商務生產力和共同作業工具** 
 * Word、Excel、PowerPoint、Outlook、OneNote、Publisher 和 Access 

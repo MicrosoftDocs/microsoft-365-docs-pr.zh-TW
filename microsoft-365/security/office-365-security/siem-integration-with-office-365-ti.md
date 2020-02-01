@@ -1,5 +1,7 @@
 ---
 title: Office 365 進階威脅防護的 SIEM 整合
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +17,12 @@ ms.date: 11/22/2019
 ms.collection:
 - M365-security-compliance
 description: 將貴組織的 SIEM 伺服器整合與 Office 365 進階威脅防護和 Office 365 活動管理 API 中的相關的威脅事件。
-ms.openlocfilehash: 93253982b9920cd133419e0fc61650cadfa9d192
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 8a870e02a37ea7f4961d0b8dc42a49cb59d2bace
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967926"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598280"
 ---
 # <a name="siem-integration-with-office-365-advanced-threat-protection"></a>Office 365 進階威脅防護的 SIEM 整合
 
@@ -57,5 +59,5 @@ SIEM 伺服器或其他相似 system 應輪詢 access 偵測事件**audit.genera
 
 [智慧型報表和深入了解 Office 365 安全性&amp;合規性中心](reports-and-insights-in-security-and-compliance.md)
   
-[Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+[Office 365 安全性與合規性中心權限](permissions-in-the-security-and-compliance-center.md)
   

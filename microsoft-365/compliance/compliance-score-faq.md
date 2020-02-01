@@ -1,5 +1,7 @@
 ---
 title: Microsoft 合規性分數常見問題集
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 尋找關於 Microsoft 合規性分數，可協助組織常見問題的答案簡化和自動化風險評定。
-ms.openlocfilehash: ff53b2f3c7cde3dc9f78ccf13cb3fa8f75e7afa6
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 81541c66f1bc1ec179faa0180b3135f9b623d319
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021979"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595770"
 ---
 # <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Microsoft 合規性分數 （預覽） 的常見問題集
 

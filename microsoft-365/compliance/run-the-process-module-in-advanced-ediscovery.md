@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 進階電子文件探索中執行處理序模組
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: '了解做準備案例的 Office 365 資料的檔案與 Office 365 進階電子文件探索分析的準則。  '
-ms.openlocfilehash: f96b7670a3886b2bfe01801ea76061bea4a37d14
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 779f9ae4f93933063139b2d7d65deb2500b263e1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802906"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597580"
 ---
 # <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中執行處理序模組
 

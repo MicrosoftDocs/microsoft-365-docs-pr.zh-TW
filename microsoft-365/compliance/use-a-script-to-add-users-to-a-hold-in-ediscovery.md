@@ -1,5 +1,7 @@
 ---
 title: 使用指令碼將使用者新增至 eDiscovery 案例中安全性 & 合規性中心中的保留
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: 執行指令碼，以快速新增信箱和 OneDrive for Business 網站至新的保留與安全性 & 規範中心的 eDiscovery 案例相關聯。
-ms.openlocfilehash: 7a7ea582391e2fbfcef8b63d331d64f52db4460c
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: f61c56beb17e31cf839d102a681b685a1e7fb046
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685636"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597290"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>使用指令碼將使用者新增至 eDiscovery 案例中安全性 & 合規性中心中的保留
 

@@ -1,5 +1,7 @@
 ---
 title: Exchange Online 中的安全寄件者和封鎖寄件者清單
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +15,12 @@ ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 ms.collection:
 - M365-security-compliance
 description: 如果您是 Exchange Online 或 Exchange Online Protection (EOP) 系統管理員，您可以協助確保透過服務傳送的電子郵件訊息不會被標示為垃圾郵件。 若要這麼做的一種方式是貴組織中的人員來建立安全寄件者和封鎖的寄件者清單。
-ms.openlocfilehash: 9c281460aeff64226343af5e5608ccf42fc83799
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: 959af558c32e71e5a4cede2aff7bbcd1dbb092e2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238390"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598510"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Exchange Online 中的安全寄件者和封鎖寄件者清單
 
@@ -42,6 +44,6 @@ Exchange Online 中的安全及封鎖的寄件者限制跟在 Active Directory�
 
 [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [寄件者篩選在 Exchange 伺服器](https://docs.microsoft.com/exchange/antispam-and-antimalware/antispam-protection/sender-filtering)

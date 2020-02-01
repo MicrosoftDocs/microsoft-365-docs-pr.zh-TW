@@ -1,5 +1,7 @@
 ---
 title: 開始使用 DLP 原則建議
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 此深入了解導向建議可協助保護敏感內容安全性，當已儲存，並在 Office 365 中共用的通知您何時中的有可能間隔貴組織 DLP 原則涵蓋範圍。 您會看到這項建議在首頁上的安全性&amp;合規性中心，如果您的文件包含任何的前五個最常見的敏感資訊類型，但不會受到 DLP 原則。
-ms.openlocfilehash: 37292d1496fb9217b2c3d77fadff18ae002e14d7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3bbdbd230e9ae28136bcd89df46f0e9c10cb80fb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076990"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596350"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>開始使用 DLP 原則建議
 

@@ -1,5 +1,7 @@
 ---
 title: 套用或移除網站的文件刪除原則
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: 組織通常會受限於合規性、 法律或其他法規，需要一段時間保留文件。 但是，將文件保留超過要求時間，可能會讓組織暴露在法律風險下。 基於這個理由，您的組織可能已建立您網站的文件刪除原則 — 例如，一般商業文件可能需要刪除五年之後建立它們。
-ms.openlocfilehash: b21c24d902591e1aa619bdd5433e1a7b0c551ff0
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 67bbe3339b492e5199799a21e5b3b249a3a98c08
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808238"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596070"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>套用或移除網站的文件刪除原則
 

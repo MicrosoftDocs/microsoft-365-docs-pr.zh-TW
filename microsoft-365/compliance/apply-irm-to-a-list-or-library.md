@@ -1,5 +1,7 @@
 ---
 title: 將資訊版權管理 (IRM) 套用至清單或文件庫
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -18,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 您可以使用資訊版權管理 (IRM) 協助控制及保護下載從清單或文件庫的檔案。
-ms.openlocfilehash: cd970f5e89a08de133511c99b8209b389f32cd87
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: d404bc8f72d2b1784c4d796a636556b7a5413b4d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256810"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596080"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>將資訊版權管理 (IRM) 套用至清單或文件庫
 

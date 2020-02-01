@@ -1,5 +1,7 @@
 ---
 title: 建立的合法持有通知
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c34271f5dce3bc830241ba0fa5bad70cd294ba22
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e6eedae80b7a04cc77c086153da9d884e8eed167
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076495"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595620"
 ---
 # <a name="create-a-legal-hold-notice"></a>建立的合法持有通知
 
@@ -84,7 +86,7 @@ ms.locfileid: "37076495"
    
 4. 指定的內容或您想要提供給 custodian （必要） 的其他指示。 請注意在步驟 2 中所定義的入口網站內容新增至發行通知的結尾。 
    
-5. 按一下 [儲存]****。 
+5. 按一下 [儲存]**** 
 
 ### <a name="re-issuance-notification"></a>重新發行通知 
 

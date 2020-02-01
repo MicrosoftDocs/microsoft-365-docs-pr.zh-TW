@@ -1,5 +1,7 @@
 ---
 title: Exchange Online 信箱中儲存的內容
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: 在 Office 365 雲端式應用程式所產生的資料會儲存在 Microsoft cloud 中的使用者的 Exchange Online 信箱。
-ms.openlocfilehash: d2d126d28a9b92962af7637610282e99e7685594
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f9db94eebf855a2d8dcfee8897ca6171eabbc400
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077646"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597190"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>Exchange Online 信箱中儲存的內容
 
@@ -33,7 +35,7 @@ Exchange Online 中的信箱主要用來儲存郵件、 行事曆項目、 工�
 |Forms     <br/> |（儲存為 PDF 檔案） 的表單和表單 （儲存 CSV 檔案中） 的回覆電子郵件附加且儲存在隱藏的資料夾中建立表單之使用者的信箱。 當您匯出內容從 PST 檔案中的表單時，此資料位於**ApplicationDataRoot**資料夾的子資料夾中名為下列項目全域唯一識別 (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**。        <br/> |
 |Office 365 群組    <br/>|  電子郵件、 行事曆項目、 連絡人 （人員）、 備忘稿和工作會儲存在與 Office 365 群組相關聯的信箱。       <br/> |
 |Outlook/Exchange Online<br/>|  電子郵件、 行事曆項目、 連絡人 （人員）、 備忘稿和工作會儲存在使用者的信箱。       <br/> |
-|人員    <br/> |  人員應用程式 （也就是可在 Outlook 中存取該組相同的連絡人） 的連絡人會儲存在使用者的信箱。      <br/> |
+|多人    <br/> |  人員應用程式 （也就是可在 Outlook 中存取該組相同的連絡人） 的連絡人會儲存在使用者的信箱。      <br/> |
 |類別排程     <br/> |   建立類別排程中的計劃會儲存在對應的 Office 365 群組時建立新的計劃佈建的信箱。 群組信箱的別名是計劃的名稱。      <br/> |
 |商務用 Skype    <br/>  | 在商務用 Skype 對話會儲存在使用者的信箱中的 [交談歷程記錄] 資料夾。 如果 Skype 會議的參與者的信箱處於訴訟暫止狀態或指派到保留原則後，附加至會議的檔案會保留在參與者信箱。         <br/> |
 |Sway     <br/> |  Sways 會儲存為 HTML 檔案附加到電子郵件，並儲存在隱藏的資料夾中建立 sway 之使用者的信箱。 當您匯出內容從 PST 檔案中的 Sway 時，此資料位於名為下列 guid 的子資料夾中的 [ **ApplicationDataRoot** ] 資料夾中） **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba**。       <br/> |

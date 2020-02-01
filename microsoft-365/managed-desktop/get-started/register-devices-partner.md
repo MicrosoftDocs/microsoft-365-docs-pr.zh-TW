@@ -3,14 +3,16 @@ title: 讓合作夥伴註冊裝置的步驟
 description: 如何合作夥伴可以註冊裝置，可由 Microsoft 受管理的電腦
 ms.prod: w10
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: eb7ff76ef51078e423201b41cf24780b822ba452
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: a9a2a0ccb1e0830d674f4b1b1ef5495fafb38ca3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572239"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596550"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>讓合作夥伴註冊裝置的步驟
 

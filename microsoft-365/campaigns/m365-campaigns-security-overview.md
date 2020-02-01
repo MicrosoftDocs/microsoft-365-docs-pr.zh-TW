@@ -1,5 +1,7 @@
 ---
 title: 兩點安全性保護您的行銷活動
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何藉由增加您的行銷活動適用於 Microsoft 365 的安全性保護您的行銷活動。
-ms.openlocfilehash: 74c7d5f5836fd77b591389dd467114c93b8ab14e
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: f2d57fe0cbc6765b359a759c3d33c6482d86bb06
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772410"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594784"
 ---
 # <a name="bump-up-security-protection-for-your-campaign"></a>兩點安全性保護您的行銷活動
 
@@ -39,7 +41,7 @@ ms.locfileid: "35772410"
 
 
 然後遵循的步驟：
-- [防範惡意程式碼及其他威脅](m365-campaigns-increase-protection.md)
+- [防範惡意程式碼和其他威脅](m365-campaigns-increase-protection.md)
 - [保護存取您的行銷活動資料](m365-campaigns-conditional-access.md)保護您的帳戶和應用程式
 - [保護系統管理員帳戶](m365-campaigns-protect-admin-accounts.md)
 - [設定行動裝置](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)

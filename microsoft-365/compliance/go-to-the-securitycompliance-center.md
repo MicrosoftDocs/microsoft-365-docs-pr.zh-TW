@@ -1,5 +1,7 @@
 ---
 title: 移至 Office 365 安全規範中心
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
 description: 您可以使用安全性 & 合規性中心之前，您需要的權限的權限。 您的公司或學校帳戶必須或是獲指派 Office 365 全域系統管理員角色，或已由全域系統管理員指派給一或多個安全性 & 合規性中心角色群組。
-ms.openlocfilehash: 7dc7afb00750586b34921cce347bcf459c2cf474
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0ac56ad7fb4123b8cd2bd11cdcca7ee90d8126b0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807112"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596520"
 ---
 # <a name="go-to-the-office-365-security--compliance-center"></a>移至 Office 365 安全規範中心
 

@@ -1,5 +1,7 @@
 ---
 title: 多重要素驗證您的 Microsoft 365 企業版測試環境
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 設定使用文字訊息傳送至 Microsoft 365 企業版測試環境中的智慧型手機的多重要素驗證。
-ms.openlocfilehash: ea87ab6f169829d74339b64b6edb3978bea9ca9a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d99e22cdbd8b08f4752a953b63c2d5215a78ec6c
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801398"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596830"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>多重要素驗證您的 Microsoft 365 企業版測試環境
 
@@ -80,7 +82,7 @@ ms.locfileid: "40801398"
     
 2. 移至 Office 365 入口網站 ([https://portal.office.com](https://portal.office.com)) 並以使用者 2 帳戶名稱和密碼登入。
     
-3. 登入後，系統會提示您若要設定之帳戶的詳細資訊。 按一下 **[下一步]**。
+3. 登入後，系統會提示您若要設定之帳戶的詳細資訊。 按 [下一步]****。
     
 4. 在**其他安全性驗證**] 頁面上：
     
@@ -90,7 +92,7 @@ ms.locfileid: "40801398"
     
    - 在**方法**中，按一下 [**傳送我透過文字訊息的程式碼**。
     
-5. 按一下 **[下一步]**。
+5. 按 [下一步]****。
     
 6. 從智慧型手機上接收簡訊輸入驗證碼，然後按一下 [**驗證**。
     

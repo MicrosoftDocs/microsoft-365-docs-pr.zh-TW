@@ -1,5 +1,7 @@
 ---
 title: 設定 Microsoft 365 行銷活動的條件式存取原則
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何為 Microsoft 365 行銷活動設定條件式存取原則。
-ms.openlocfilehash: aebdb733c2dd9a05947335ad4f151104d801568e
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 335fbd7e771b1595e1846529daed76e5ddd3a8f5
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718822"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593378"
 ---
 # <a name="set-up-conditional-access-policies"></a>設定條件式存取原則
 

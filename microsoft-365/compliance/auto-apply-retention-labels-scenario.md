@@ -1,7 +1,9 @@
 ---
 title: 使用保留標籤管理儲存在 SharePoint Online 的產品文件生命週期
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本解決方案案例說明如何使用 Office 365 保留標籤來管理儲存在 SharePoint Online 的產品相關文件的生命週期。 方法是使用文件中繼資料來分類內容，具體做法是並自動套用 Office 365 保留標籤及設定以事件為基礎的保留。
-ms.openlocfilehash: 3c9afd05fd4f59a5136ab12dbd7558ade3073e43
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 7e0c688502922903cf2c17345713579bf04cc55a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39637840"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596370"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>使用保留標籤管理 SharePoint 文件的生命週期
 
@@ -278,82 +280,38 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 ![設定將觸發事件的流程](media/SPRetention24.png)
 
-若要建立此流程，請從 SharePoint 連接器開始，並選取 [建立或修改項目時]**** 觸發程序。 指定網站位址和清單名稱，然後根據 **[生產中]** 清單欄值是否設定為 **[否]** (或在條件卡片中等於 false) 來新增條件。 然後根據內建的 HTTP 範本新增動作。 使用下表中的值來設定 HTTP 動作。 您可以從下表複製 URI 和 Body 屬性的值，然後將值貼到範本中。
+若要建立此流程，請從 SharePoint 連接器開始，並選取 [建立或修改項目時]**** 觸發程序。 指定網站位址和清單名稱，然後根據 **[生產中]** 清單欄值是否設定為 **[否]** (或在條件卡片中等於 false) 來新增條件。 然後根據內建的 HTTP 範本新增動作。 使用下一節中的值來設定 HTTP 動作。 您可以從下一節複製 URI 和 Body 屬性的值，然後將值貼到範本中。
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>參數</strong></th>
-<th><strong>值</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>方法</td>
-<td>POST</td>
-<tr class="even">
-<td>URI</td>
-<td><a href="https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent">https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Headers</td>
-<td>金鑰 = Content-Type，值 = application/atom+xml</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Body</td>
-<td><p>&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
-<p>&lt;updated&gt;9/9/2017 10:50:00 PM&lt;/updated&gt;</p>
-<p>&lt;content type='application/xml'&gt;</p>
-<p>&lt;m:properties&gt;</p>
-<p>&lt;d:Name&gt;Cessation Production @{triggerBody()?['Product_x0020_Name']?['Value']}&lt;/d:Name&gt;</p>
-<p>&lt;d:EventType&gt;Product Cessation&lt;/d:EventType&gt;</p>
-<p>&lt;d:SharePointAssetIdQuery&gt;ProductName:&quot;@{triggerBody()?['Product_x0020_Name']?['Value']}&quot;&lt;/d:SharePointAssetIdQuery&gt;</p>
-<p>&lt;d:EventDateTime&gt;@{formatDateTime(utcNow(),'yyyy-MM-dd')}&lt;/d:EventDateTime&gt;</p>
-<p>&lt;/m:properties&gt;</p>
-<p>&lt;/content&gt;</p>
-<p>&lt;/entry&gt;</p></td>
-<td></td>
-</tr>
+- **方法**：POST
+- **URI**：https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+- **Body**：
 
-</tbody>
-</table>
+```HTML
+<?xml version='1.0' encoding='utf-8' standalone='yes'>
+<entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'>
+<category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent'>
+<updated>9/9/2017 10:50:00 PM</updated>
+<content type='application/xml'>
+<m:properties>
+<d:Name>Cessation Production @{triggerBody()?['Product_x0020_Name']?['Value']}</d:Name>
+<d:EventType>Product Cessation&lt;</d:EventType>
+<d:SharePointAssetIdQuery>ProductName:&quot;@{triggerBody()?['Product_x0020_Name']?['Value']}<d:SharePointAssetIdQuery>
+<d:EventDateTime>@{formatDateTime(utcNow(),'yyyy-MM-dd')}</d:EventDateTime>
+</m:properties>
+</content&gt>
+</entry>
+```
 
-下表說明必須針對此案例加以設定的動作 Body 屬性內的參數。 
+下一節說明必須針對此案例加以設定的動作 *Body* 屬性內的參數。
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>參數</strong></th>
-<th><strong>描述</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>名稱</td>
-<td>此參數指定將在安全性與合規合規性中心建立的事件名稱。 在此案例中，名稱是「停產 xxx」，其中 xxx 是先前建立的 ProductName Managed 屬性的值。 </th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>EventType</td>
-<td>此參數值與建立的事件將套用的事件類型相對應。 建立保留標籤時，便會定義此事件類型。 在此案例中，事件類型為「停產」。</td>
-</tr>
-<tr class="even">
-<td>SharePointAssetIdQuery</td>
-<td>此參數定義事件的資產識別碼。 以事件為基礎的保留需要文件的唯一識別碼。 我們可以使用資產識別碼來識別特定事件適用的文件，或者如同此案例，使用中繼資料欄 (我們的產品名稱) 來識別。 為此，我們必須建立名為 ProductName 的 Managed 屬性，可在 KQL 查詢中使用該屬性 (或使用 RefinableString00，而不是建立新的 Managed 屬性)。 我們也需要將這個新的 Managed 屬性對應至 ows_Product_x0020_Name 編目屬性。 以下是此 Managed 屬性的螢幕擷取畫面。
+- **Name**：此參數指定將在安全性與合規性中心建立的事件名稱。 在此案例中，名稱是「停產 xxx」，其中 xxx 是先前建立的 ProductName Managed 屬性值。
+- **EventType**：此參數值與建立的事件將套用的事件類型相對應。 建立保留標籤時，便會定義此事件類型。 在此案例中，事件類型為「停產」。
+- **SharePointAssetIdQuery**：此參數定義事件的資產識別碼。 以事件為基礎的保留需要文件的唯一識別碼。 我們可以使用資產識別碼來識別特定事件適用的文件，或者如同此案例，使用中繼資料欄 (我們的產品名稱) 來識別。 為此，我們必須建立名為 ProductName 的 Managed 屬性，可在 KQL 查詢中使用該屬性 (或使用 RefinableString00，而不是建立新的 Managed 屬性)。 我們也需要將這個新的 Managed 屬性對應至 ows_Product_x0020_Name 編目屬性。 以下是此 Managed 屬性的螢幕擷取畫面。
 
-<img src="media/SPRetention25.png" style="width:6.49722in;height:0.45069in" /></td>
-</tr>
-<tr class="odd">
-<td>EventDateTime</td>
-<td>此參數定義事件發生的日期。 使用目前的日期格式：<strong>formatDateTime(utcNow(),'yyyy-MM-dd'<strong>)</strong></td>
-</tr>
-</tbody>
-</table>
+    ![保留 Managed 屬性](media/SPRetention25.png)
+
+- **EventDateTime**：此參數定義事件發生的日期。 使用目前的日期格式：*formatDateTime(utcNow(),'yyyy-MM-dd'*)
 
 ### <a name="putting-it-all-together"></a>總整理
 
@@ -390,9 +348,3 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 ## <a name="summary"></a>摘要
 
 本文說明根據 SharePoint 網站欄自動套用保留標籤的文件管理案例。 然後，我們使用以事件為基礎的保留和 Microsoft Flow，以根據外部事件自動觸發保留期間。
-
-## <a name="credits"></a>製作群
-
-此案例的作者：
-
-Frederic Lapierre<br/>Microsoft 服務首席顧問

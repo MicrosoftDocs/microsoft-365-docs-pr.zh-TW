@@ -1,5 +1,7 @@
 ---
 title: 保護 Windows 10 裝置
+f1.keywords:
+- CSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -23,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: '了解預設及其他設定，以保護 Windows 10 裝置。 '
-ms.openlocfilehash: 64f20433d5a4b78fc234a4ec3bec937ec30145c6
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 9560bb4e299dba8f92d435a64670261b0e7e0290
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805636"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593438"
 ---
 # <a name="secure-windows-10-devices"></a>保護 Windows 10 裝置
 

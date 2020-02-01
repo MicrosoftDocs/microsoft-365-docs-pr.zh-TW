@@ -1,5 +1,7 @@
 ---
 title: 估計與實際的 eDiscovery 搜尋結果中 Office 365 之間的差異
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: '了解為什麼估計與實際搜尋結果可能會有所不同中使用 eDiscovery 工具在 Office 365 中執行搜尋。 '
-ms.openlocfilehash: dfa6895f464e1a10f30bd642ef6b11e0869a7e5d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 10c948dbfc7f147011e3ab917828b5b281602fa8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076340"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595248"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>估計與實際的 eDiscovery 搜尋結果中 Office 365 之間的差異
 
@@ -59,7 +61,7 @@ ms.locfileid: "37076340"
     
     安全性 & 合規性中心中使用 「 內容搜尋 」 工具，必須包含未編製索引的項目中搜尋估計值的選項。 搜尋所傳回的未編製索引項目數目會列在詳細資料窗格中與其他預估的搜尋結果。 任何未編製索引的項目也會納入預估的搜尋結果的總大小。 當您匯出搜尋結果時，您必須以包含或不包含未編製索引的項目] 選項。 如何設定這些選項可能會導致差異之間估計與實際搜尋結果，下載。 
     
-- **匯出內容搜尋，包括所有內容位置的結果**-如果搜尋您要匯出的結果是您的組織，則只有的未編製索引項目中包含的內容位置中的所有內容位置的搜尋將匯出的搜尋準則相符項目。 In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. 不過，所有內容的位置 （即使這些不含符合搜尋查詢的項目） 中的未編製索引項目將會包含在預估的搜尋結果。 
+- **匯出內容搜尋，包括所有內容位置的結果**-如果只有的未編製索引項目從內容的位置，包含搜尋準則相符的項目將會匯出，然後搜尋您要匯出的結果在搜尋組織中的所有內容位置。 In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. 不過，所有內容的位置 （即使這些不含符合搜尋查詢的項目） 中的未編製索引項目將會包含在預估的搜尋結果。 
     
     或者，如果搜尋您要匯出的結果包含特定內容的位置，然後未編製索引的項目 （不排除的搜尋準則） 從搜尋中指定的所有內容位置將會匯出。 在此情況下，未編製索引的項目估計的數量和實際匯出未編製索引的項目數目都應該相同。
     

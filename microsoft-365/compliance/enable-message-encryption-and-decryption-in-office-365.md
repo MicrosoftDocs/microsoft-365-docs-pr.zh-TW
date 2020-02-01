@@ -1,5 +1,7 @@
 ---
 title: 啟用加密和解密 [EOP]
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,12 +14,12 @@ ms.assetid: e313c489-ce5e-4015-aadf-981c697ab51f
 ms.collection:
 - M365-security-compliance
 description: Office 365 郵件加密可讓電子郵件使用者傳送加密的郵件給其組織內部或外部的人員。 身為系統管理員，您可以啟用 Office 365 郵件加密藉由建立郵件流程規則 （也稱為傳輸規則），設定加密條件。
-ms.openlocfilehash: 0110bc4bbfc8eeba3cc0390c845f6accb02aed39
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 38152123f0cee4263bac7d2f7666fae2fff3622e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077093"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593214"
 ---
 # <a name="enable-message-encryption-and-decryption-in-office-365"></a>啟用加密和解密 [EOP]
 

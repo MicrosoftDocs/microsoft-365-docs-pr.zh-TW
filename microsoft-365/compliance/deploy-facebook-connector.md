@@ -1,5 +1,7 @@
 ---
 title: 部署封存的頁面 Facebook 商務資料的連接器
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定原生的連接器，以匯入並封存至 Microsoft 365 的 Facebook 商務頁面。 此資料會匯入至 Microsoft 365 之後，您可以使用合規性功能，例如合法持有、 內容搜尋和保留原則來管理您的組織 Facebook 資料的控管。
-ms.openlocfilehash: c13f055a9ca96d9b7cc1ec5791c476e6cda8e5f0
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 22810b377abf3ed30c53bab2cd27b970a5dcd62f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515734"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595298"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>部署封存的頁面 Facebook 商務資料的連接器
 

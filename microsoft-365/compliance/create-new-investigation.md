@@ -1,5 +1,7 @@
 ---
 title: 在資料調查 （預覽） 中建立新的調查
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5848d26df5fd0891caad06ed52afd4df3873f938
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ef84380e17757f96bdf66307595c92d85a335930
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076466"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596160"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>在資料調查 （預覽） 中建立新的調查
 

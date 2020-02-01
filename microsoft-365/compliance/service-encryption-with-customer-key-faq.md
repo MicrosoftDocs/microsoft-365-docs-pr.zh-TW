@@ -1,5 +1,7 @@
 ---
 title: Office 365 中使用客戶金鑰的服務加密常見問題集
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: '[比較基準，透過 BitLocker 與分散式金鑰管理員 (DKM)，而啟用的磁碟區層級加密除了 Office 365 提供多一層的 Office 365，包括資料從 Exchange 中的客戶內容應用程式層級的加密Online、 Skype for Business、 SharePoint Online 和商務用 OneDrive。 這稱為服務加密。'
-ms.openlocfilehash: 0dbc3839d5dfda98460db70de667e2f469bc1291
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: a2285db4bd5ff5594c6b766dcad8909f0442d3ce
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38685534"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597450"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Office 365 中使用客戶金鑰的服務加密常見問題集
 
@@ -224,7 +226,7 @@ Office 365 會遵循此程序來存取 blob 具有客戶檔案資料：
 
 除了授權所需的客戶金鑰，客戶將會造成 Key Vault 流量的成本。 [定價的詳細資訊的 azure Key Vault](https://azure.microsoft.com/pricing/details/key-vault/)說明成本模型，並將會協助進行評估。 沒有任何方法可以預測因為使用模式不同，就可能會形成任何客戶的實際成本。 經驗顯示成本是很低，且通常落在範圍的 $0.002 至 $0.005 每位使用者每月加上 HSM 供電機碼的成本。 成本也會因選擇由客戶及用於 Azure Key Vault 記錄檔的 Azure 儲存體數量的記錄設定。 
   
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="for-more-information"></a>相關資訊
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
 若要開始使用客戶金鑰，請參閱[控制使用客戶金鑰的 Office 365 中的資料](controlling-your-data-using-customer-key.md)。

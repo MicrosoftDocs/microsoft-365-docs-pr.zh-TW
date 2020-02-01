@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 進階電子文件探索中設定分析選項
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: '檢閱步驟以設定 Office 365 進階電子文件探索，包括近似重複項目、 電子郵件執行緒，以及佈景主題中的分析處理程序的選項。  '
-ms.openlocfilehash: b6155814a4540f4cc619382d82cee34c471390d1
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e9acb30d991bd2ee0acba5a9ddde619272788ceb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802736"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597460"
 ---
 # <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中設定分析選項
 

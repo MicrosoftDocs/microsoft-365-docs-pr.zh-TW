@@ -1,5 +1,7 @@
 ---
 title: 未驗證的寄件者
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止網路釣魚郵件送達您的信箱，Outlook.com 和網頁型 Outlook 確認寄件者是誰他們說他們且可疑的郵件標示為垃圾郵件。
-ms.openlocfilehash: b2f66e3aa275c01baf2b8bde3bcca2c3072b5443
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 0dd8b54d2c8153b4200336d8c0e439f278f7ae77
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572699"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598130"
 ---
 # <a name="unverified-sender"></a>未驗證的寄件者
 

@@ -1,5 +1,7 @@
 ---
 title: 建立及編輯 AutoPilot 裝置
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -23,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: 了解如何上傳 Microsoft 365 商務版中使用 AutoPilot 裝置。 您可以將設定檔指派到單一裝置或一組裝置。
-ms.openlocfilehash: 1dd6b1a574166379e29465bf3699e47e3b155e0b
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 5a99f691b0325f511f34e3a6c3a20f08ee8d909f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320251"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594004"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>建立及編輯 AutoPilot 裝置
 

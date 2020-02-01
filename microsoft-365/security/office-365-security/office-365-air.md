@@ -1,6 +1,8 @@
 ---
 title: 自動調查及回應 Office 365 中的威脅
 keywords: AIR, autoIR, ATP, 自動化, 調查, 回應, 修正, 威脅, 進階, 威脅, 保護
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 開始使用 Office 365 進階威脅防護方案 2 中的自動化調查及回應功能
-ms.openlocfilehash: 3f13b1de2747dcb6672f56989ff73cdf485e49b6
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
-ms.translationtype: HT
+ms.openlocfilehash: 9c17d7219e5dd15404b171fbd6707d00fd788f19
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967986"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598760"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>自動調查及回應 Office 365 中的威脅
 
