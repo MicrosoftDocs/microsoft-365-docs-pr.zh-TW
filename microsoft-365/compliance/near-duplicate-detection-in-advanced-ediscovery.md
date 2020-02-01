@@ -1,5 +1,7 @@
 ---
 title: 近似重複項偵測
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,17 +16,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7ae5e695091d140089f979f28793876a2df77251
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8162cae8b69d420ffe87eda137be02688da778b0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077874"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602730"
 ---
-# <a name="near-duplicate-detection"></a><span data-ttu-id="8803b-102">近似重複項偵測</span><span class="sxs-lookup"><span data-stu-id="8803b-102">Near duplicate detection</span></span>
+# <a name="near-duplicate-detection"></a><span data-ttu-id="00783-102">近似重複項偵測</span><span class="sxs-lookup"><span data-stu-id="00783-102">Near duplicate detection</span></span>
 
-<span data-ttu-id="8803b-103">請考慮一組文件檢閱子集根據相同範本和具有大部分相同重複使用的語言，具有以下，有一些差異。</span><span class="sxs-lookup"><span data-stu-id="8803b-103">Consider a set of documents to be reviewed in which a subset is based on the same template and has mostly the same boilerplate language, with a few differences here and there.</span></span> <span data-ttu-id="8803b-104">如果檢閱者無法識別此子集、 徹底，檢閱其中並檢閱其餘的差異，他們會不有未接唯一的任何資訊時採取的時間分數，可能需要花它們讀取封面至封面的所有文件。</span><span class="sxs-lookup"><span data-stu-id="8803b-104">If a reviewer could identify this subset, review one of them thoroughly, and review the differences for the rest, they would not have missed any unique information while taking only a fraction of time that would have taken them to read all documents cover to cover.</span></span> <span data-ttu-id="8803b-105">接近重複資料偵測群組在一起，以協助您進行檢閱程序更有效率加 1 類似的文件。</span><span class="sxs-lookup"><span data-stu-id="8803b-105">Near duplicate detection groups textually similar documents together to help you make your review process more efficient.</span></span>
+<span data-ttu-id="00783-103">請考慮一組文件檢閱子集根據相同範本和具有大部分相同重複使用的語言，具有以下，有一些差異。</span><span class="sxs-lookup"><span data-stu-id="00783-103">Consider a set of documents to be reviewed in which a subset is based on the same template and has mostly the same boilerplate language, with a few differences here and there.</span></span> <span data-ttu-id="00783-104">如果檢閱者無法識別此子集、 徹底，檢閱其中並檢閱其餘的差異，他們會不有未接唯一的任何資訊時採取的時間分數，可能需要花它們讀取封面至封面的所有文件。</span><span class="sxs-lookup"><span data-stu-id="00783-104">If a reviewer could identify this subset, review one of them thoroughly, and review the differences for the rest, they would not have missed any unique information while taking only a fraction of time that would have taken them to read all documents cover to cover.</span></span> <span data-ttu-id="00783-105">接近重複資料偵測群組在一起，以協助您進行檢閱程序更有效率加 1 類似的文件。</span><span class="sxs-lookup"><span data-stu-id="00783-105">Near duplicate detection groups textually similar documents together to help you make your review process more efficient.</span></span>
 
-## <a name="how-does-it-work"></a><span data-ttu-id="8803b-106">它如何運作？</span><span class="sxs-lookup"><span data-stu-id="8803b-106">How does it work?</span></span>
+## <a name="how-does-it-work"></a><span data-ttu-id="00783-106">它的運作方式為何？</span><span class="sxs-lookup"><span data-stu-id="00783-106">How does it work?</span></span>
 
-<span data-ttu-id="8803b-107">執行接近重複資料偵測時，系統會剖析文字的所有文件。</span><span class="sxs-lookup"><span data-stu-id="8803b-107">When near duplicate detection is run, the system parses every document with text.</span></span> <span data-ttu-id="8803b-108">然後，它會比較根據彼此判斷其相似性是否大於設定的臨界值的每個文件。</span><span class="sxs-lookup"><span data-stu-id="8803b-108">Then, it compares every document against each other to determine whether their similarity is greater than the set threshold.</span></span> <span data-ttu-id="8803b-109">如果是的話，則文件，將群組在一起。</span><span class="sxs-lookup"><span data-stu-id="8803b-109">If it is, the documents are grouped together.</span></span> <span data-ttu-id="8803b-110">一旦所有文件有相較，且分組，每個群組的文件會標示為 「 中樞 」;檢閱您的文件，您可以先檢閱樞紐分析表，並檢閱在接近重複組相同的其他文件將重點放在樞紐分析表和檢閱中之文件之間的差異。</span><span class="sxs-lookup"><span data-stu-id="8803b-110">Once all documents have been compared and grouped, a document from each group is marked as the "pivot"; in reviewing your documents, you can review a pivot first and review the other documents in the same near duplicate set, focusing on the difference between the pivot and the document that is in review.</span></span>
+<span data-ttu-id="00783-107">執行接近重複資料偵測時，系統會剖析文字的所有文件。</span><span class="sxs-lookup"><span data-stu-id="00783-107">When near duplicate detection is run, the system parses every document with text.</span></span> <span data-ttu-id="00783-108">然後，它會比較根據彼此判斷其相似性是否大於設定的臨界值的每個文件。</span><span class="sxs-lookup"><span data-stu-id="00783-108">Then, it compares every document against each other to determine whether their similarity is greater than the set threshold.</span></span> <span data-ttu-id="00783-109">如果是的話，則文件，將群組在一起。</span><span class="sxs-lookup"><span data-stu-id="00783-109">If it is, the documents are grouped together.</span></span> <span data-ttu-id="00783-110">一旦所有文件有相較，且分組，每個群組的文件會標示為 「 中樞 」;檢閱您的文件，您可以先檢閱樞紐分析表，並檢閱在接近重複組相同的其他文件將重點放在樞紐分析表和檢閱中之文件之間的差異。</span><span class="sxs-lookup"><span data-stu-id="00783-110">Once all documents have been compared and grouped, a document from each group is marked as the "pivot"; in reviewing your documents, you can review a pivot first and review the other documents in the same near duplicate set, focusing on the difference between the pivot and the document that is in review.</span></span>
