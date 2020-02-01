@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 365 安全性中心中開啟 Microsoft 威脅防護
 description: 了解如何啟用 Microsoft 威脅防護，並開始整合您的安全性事件和回應。
-keywords: 快速入門，啟用 MTP、 Microsoft 威脅防護、 M365、 安全性、 資料位置、 所需的權限、 授權資格
+keywords: 快速入門，啟用 MTP、 Microsoft 威脅防護、 M365、 安全性、 資料位置、 必要權限、 授權資格、 設定] 頁面
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8aeff373b3f5550f7217a5b56aa1dbf994563825
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a85680e323c7a8fba6f2d74d5cc00c58c2013d23
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600060"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662049"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>開啟 Microsoft 威脅防護
 
@@ -36,21 +36,27 @@ ms.locfileid: "41600060"
 Microsoft 威脅防護整合了您的事件回應流程，方法是整合跨 Microsoft Defender 進階威脅防護 (ATP)、Office 365 ATP、Microsoft Cloud App Security 和 Azure ATP 的重要功能。 此整合體驗會新增您可以在 Microsoft 365 安全性中心存取的強大功能。
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>請檢查授權資格及必要的權限
-擁有 Microsoft 365 E5 或同等授權的客戶可以使用 Microsoft 威脅防護。 如需詳細資訊，請[閱讀授權需求](prerequisites.md#licensing-requirements)。
+使用 Microsoft 365 E5、 Microsoft 365 E5 安全性或對等組合的授權的客戶可以使用 Microsoft Threat Protection。 如需詳細資訊，請[閱讀授權需求](prerequisites.md#licensing-requirements)。
 
- 若要能夠開啟 Microsoft 威脅防護，您必須是**全域系統管理員**或[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)中的**安全性系統管理員**。
+您必須是**全域系統管理員**或[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)以開啟 [Microsoft 威脅防護中的**安全性系統管理員**。
 
 ## <a name="start-using-the-service"></a>開始使用服務
-開啟 Microsoft 威脅防護服務會彙總來自各種整合服務的資料。 系統將處理資料並集中儲存，以找出新的深入資訊，並使得集中式回應工作流程變得可能。
+Microsoft 威脅防護彙總資料從各種的整合式服務。 它會處理程序，並儲存資料集中以識別新的深入資訊，並讓集中式的回應系統工作流程。
 
-您開啟服務之前，請在 Microsoft 365 安全性中心 ([security.microsoft.com](https://security.microsoft.com)) 不會顯示**事件**和功能表上的**重要訊息中心**選項。
+開啟服務之前，請在 Microsoft 365 安全性中心 ([security.microsoft.com](https://security.microsoft.com)) 不會顯示**事件**和**重要訊息中心**選項功能窗格中。
 
-![不含 Microsoft 威脅防護功能的 Microsoft 365 安全性中心功能表的影像](../images/mtp-off.png)
-*已關閉 Microsoft 威脅防護的 Microsoft 365 安全性中心*
+![Microsoft 365 安全性中心沒有 Microsoft 威脅防護功能的導覽窗格影像](../images/mtp-off.png)
+*Microsoft 365 安全中心與 Microsoft Threat Protection 關閉*
 
-若要開啟 Microsoft 威脅防護服務，請移至 Microsoft 365 安全性中心的 [設定]****  >  [Microsoft 威脅防護]****  >  [選擇加入/選擇退出]****。
+若要開啟 Microsoft 威脅防護，請選取 [在功能窗格中的**設定**。 在**[設定] 頁面](https://security.microsoft.com/settings)** 上，移至**Microsoft 威脅防護** > **加入 / 退出**。
 
-如果已為您的組織佈建 Microsoft Defender ATP，則資料將會儲存在為[您的 Microsoft Defender ATP 資料](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)選取的相同資料中心位置中。 如果您沒有 Microsoft Defender ATP，系統會要求您選擇專用於 Microsoft 威脅防護的新資料中心位置。 在服務之間共用資料與彙總之前，您必須先提供同意。
+>[!NOTE]
+>如果您沒有看到**設定**功能窗格中，或無法存取] 頁面上，檢查您的權限和授權。
+
+### <a name="select-data-center-location"></a>選取的資料中心位置
+如果已為您的組織佈建 Microsoft Defender ATP，則資料將會儲存在為[您的 Microsoft Defender ATP 資料](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)選取的相同資料中心位置中。 如果您沒有 Microsoft Defender ATP，系統會要求您選擇專用於 Microsoft 威脅防護的新資料中心位置。 
+
+您必須提供同意才能服務之間共用和彙總資料。
 
 ### <a name="confirm-that-the-service-is-on"></a>確認服務已開啟
 服務一旦佈建，它會新增：
@@ -59,8 +65,8 @@ Microsoft 威脅防護整合了您的事件回應流程，方法是整合跨 Mic
 - 用於管理[自動化調查和回應](mtp-autoir.md)的重要訊息中心
 - 現有 [搜捕]**** 頁面的[進階搜捕](advanced-hunting-overview.md)功能
 
-![含有 Microsoft 威脅防護功能的 Microsoft 365 安全性中心功能表的影像](../images/mtp-on.png)
-*具有事件管理和其他 Microsoft 威脅防護功能的 Microsoft 365 安全性中心*
+![Microsoft 365 安全性中心與 Microsoft Threat Protection 功能的導覽窗格影像](../images/mtp-on.png)
+*Microsoft 365 安全性中心事件管理和其他 Microsoft 威脅防護功能*
 
 ### <a name="getting-azure-atp-data"></a>取得 Azure ATP 資料
 若要使用 Microsoft 威脅防護共用 Azure ATP 資料，請確認已開啟 Microsoft Cloud App Security 和 Azure ATP 整合。 [深入了解此整合](https://docs.microsoft.com/cloud-app-security/aatp-integration)
@@ -73,7 +79,7 @@ Microsoft 威脅防護整合了您的事件回應流程，方法是整合跨 Mic
 
 ## <a name="get-assistance"></a>取得協助
 
-Microsoft 人員可協助您佈建或取消佈建您租用戶上的服務與相關資源。 如需協助，請選取 [**需要協助嗎？** Microsoft 365 安全性中心。 描述您的考量時, 提及 」 Microsoft 威脅防護 」。
+Microsoft 支援人員可以幫助佈建或 deprovision 之服務與相關的資源上您的租用戶。 如需協助，請選取 [**需要協助嗎？** Microsoft 365 安全性中心。 連絡支援時, 提及 Microsoft Threat Protection。
 
 ## <a name="related-topics"></a>相關主題
 
