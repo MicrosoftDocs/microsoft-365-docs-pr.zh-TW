@@ -1,5 +1,7 @@
 ---
 title: 在進階電子文件中建立新的案例
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,37 +16,37 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7860128ef8024a51f3cd25169dfd93116fd07c8f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7d507730e3e5301446889e52e4bbd5d85660da36
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076470"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596110"
 ---
-# <a name="create-a-new-case-in-advanced-ediscovery"></a><span data-ttu-id="cc35f-102">在進階電子文件中建立新的案例</span><span class="sxs-lookup"><span data-stu-id="cc35f-102">Create a new case in Advanced eDiscovery</span></span>  
+# <a name="create-a-new-case-in-advanced-ediscovery"></a><span data-ttu-id="3d1ac-102">在進階電子文件中建立新的案例</span><span class="sxs-lookup"><span data-stu-id="3d1ac-102">Create a new case in Advanced eDiscovery</span></span>  
 
-1. <span data-ttu-id="cc35f-103">移至 [https://protection.office.com](https://protection.office.com)。</span><span class="sxs-lookup"><span data-stu-id="cc35f-103">Go to [https://protection.office.com](https://protection.office.com).</span></span>
+1. <span data-ttu-id="3d1ac-103">請移至 [https://protection.office.com](https://protection.office.com)。</span><span class="sxs-lookup"><span data-stu-id="3d1ac-103">Go to [https://protection.office.com](https://protection.office.com).</span></span>
     
-2. <span data-ttu-id="cc35f-104">使用公司或學校帳戶登入 Office 365。</span><span class="sxs-lookup"><span data-stu-id="cc35f-104">Sign in to Office 365 using your work or school account.</span></span>
+2. <span data-ttu-id="3d1ac-104">使用公司或學校帳戶登入 Office 365。</span><span class="sxs-lookup"><span data-stu-id="3d1ac-104">Sign in to Office 365 using your work or school account.</span></span>
     
-3. <span data-ttu-id="cc35f-105">在安全性 & 合規性中心，按一下 [ **eDiscovery > 進階電子文件**。</span><span class="sxs-lookup"><span data-stu-id="cc35f-105">In the Security & Compliance Center, click **eDiscovery > Advanced eDiscovery**.</span></span>
+3. <span data-ttu-id="3d1ac-105">在安全性 & 合規性中心，按一下 [ **eDiscovery > 進階電子文件**。</span><span class="sxs-lookup"><span data-stu-id="3d1ac-105">In the Security & Compliance Center, click **eDiscovery > Advanced eDiscovery**.</span></span>
  
-4. <span data-ttu-id="cc35f-106">在 [**進階電子文件探索**] 頁面上，按一下 [**建立案例**。</span><span class="sxs-lookup"><span data-stu-id="cc35f-106">On the **Advanced eDiscovery** page, click **Create a case**.</span></span>
+4. <span data-ttu-id="3d1ac-106">在 [**進階電子文件探索**] 頁面上，按一下 [**建立案例**。</span><span class="sxs-lookup"><span data-stu-id="3d1ac-106">On the **Advanced eDiscovery** page, click **Create a case**.</span></span>
     
-5. <span data-ttu-id="cc35f-107">在**新的 eDiscovery 案例**彈出式頁面上，提供這種情況 （必要） 的名稱，然後輸入選用的案例編號及描述。</span><span class="sxs-lookup"><span data-stu-id="cc35f-107">On the **New eDiscovery case** flyout page, give the case a name (required), and then type an optional case number and description.</span></span> <span data-ttu-id="cc35f-108">請注意，案例名稱必須是唯一在組織中。</span><span class="sxs-lookup"><span data-stu-id="cc35f-108">Note that the case name must be unique in your organization.</span></span>
+5. <span data-ttu-id="3d1ac-107">在**新的 eDiscovery 案例**彈出式頁面上，提供這種情況 （必要） 的名稱，然後輸入選用的案例編號及描述。</span><span class="sxs-lookup"><span data-stu-id="3d1ac-107">On the **New eDiscovery case** flyout page, give the case a name (required), and then type an optional case number and description.</span></span> <span data-ttu-id="3d1ac-108">請注意，案例名稱必須是唯一在組織中。</span><span class="sxs-lookup"><span data-stu-id="3d1ac-108">Note that the case name must be unique in your organization.</span></span>
 
-6. <span data-ttu-id="cc35f-109">**您想要設定其他設定之後建立此案例？**，執行下列其中一項：</span><span class="sxs-lookup"><span data-stu-id="cc35f-109">Under **Do you want to configure additional settings after creating this case?**, do one of the following:</span></span>
+6. <span data-ttu-id="3d1ac-109">**您想要設定其他設定之後建立此案例？**，執行下列其中一項：</span><span class="sxs-lookup"><span data-stu-id="3d1ac-109">Under **Do you want to configure additional settings after creating this case?**, do one of the following:</span></span>
 
-    - <span data-ttu-id="cc35f-110">按一下 [ **]** 以建立案例，並顯示 [**設定**] 頁面中新的案例。</span><span class="sxs-lookup"><span data-stu-id="cc35f-110">Click **Yes** to create the case, and display the **Settings** page in the new case.</span></span> <span data-ttu-id="cc35f-111">這可讓您將成員新增至案例。</span><span class="sxs-lookup"><span data-stu-id="cc35f-111">This allows you to add members to the case.</span></span>
+    - <span data-ttu-id="3d1ac-110">按一下 [ **]** 以建立案例，並顯示 [**設定**] 頁面中新的案例。</span><span class="sxs-lookup"><span data-stu-id="3d1ac-110">Click **Yes** to create the case, and display the **Settings** page in the new case.</span></span> <span data-ttu-id="3d1ac-111">這可讓您將成員新增至案例。</span><span class="sxs-lookup"><span data-stu-id="3d1ac-111">This allows you to add members to the case.</span></span>
     
-    - <span data-ttu-id="cc35f-112">按一下 [**否]** 剛建立案例，並顯示於 [**進階電子文件探索**] 頁面上的案例清單。</span><span class="sxs-lookup"><span data-stu-id="cc35f-112">Click **No** to just create the case and display it in the list of cases on the **Advanced eDiscovery** page.</span></span> <span data-ttu-id="cc35f-113">如果您選擇此選項，您將會新增為將使用這種情況，以及預設搜尋和分析設定的唯一成員。</span><span class="sxs-lookup"><span data-stu-id="cc35f-113">If you choose this option, you will be added as the only member of the case and the default search and analytics settings will be used.</span></span> <span data-ttu-id="cc35f-114">您可以將成員新增或變更設定之後建立這種情況的任何時間。</span><span class="sxs-lookup"><span data-stu-id="cc35f-114">You can add members or change settings any time after the case is created.</span></span>
+    - <span data-ttu-id="3d1ac-112">按一下 [**否]** 剛建立案例，並顯示於 [**進階電子文件探索**] 頁面上的案例清單。</span><span class="sxs-lookup"><span data-stu-id="3d1ac-112">Click **No** to just create the case and display it in the list of cases on the **Advanced eDiscovery** page.</span></span> <span data-ttu-id="3d1ac-113">如果您選擇此選項，您將會新增為將使用這種情況，以及預設搜尋和分析設定的唯一成員。</span><span class="sxs-lookup"><span data-stu-id="3d1ac-113">If you choose this option, you will be added as the only member of the case and the default search and analytics settings will be used.</span></span> <span data-ttu-id="3d1ac-114">您可以將成員新增或變更設定之後建立這種情況的任何時間。</span><span class="sxs-lookup"><span data-stu-id="3d1ac-114">You can add members or change settings any time after the case is created.</span></span>
 
-7. <span data-ttu-id="cc35f-115">按一下 [**儲存**] 以建立這種情況。</span><span class="sxs-lookup"><span data-stu-id="cc35f-115">Click **Save** to create the case.</span></span>
+7. <span data-ttu-id="3d1ac-115">按一下 [**儲存**] 以建立這種情況。</span><span class="sxs-lookup"><span data-stu-id="3d1ac-115">Click **Save** to create the case.</span></span>
 
-    <span data-ttu-id="cc35f-116">新的案例會顯示在 [**進階電子文件探索**] 頁面上的案例清單。</span><span class="sxs-lookup"><span data-stu-id="cc35f-116">The new case is displayed in the list of cases on the **Advanced eDiscovery** page.</span></span> 
+    <span data-ttu-id="3d1ac-116">新的案例會顯示在 [**進階電子文件探索**] 頁面上的案例清單。</span><span class="sxs-lookup"><span data-stu-id="3d1ac-116">The new case is displayed in the list of cases on the **Advanced eDiscovery** page.</span></span> 
 
-8. <span data-ttu-id="cc35f-117">若要開啟的情況下，按一下 [大小寫名稱。</span><span class="sxs-lookup"><span data-stu-id="cc35f-117">To open a case, click the name of the case.</span></span> 
+8. <span data-ttu-id="3d1ac-117">若要開啟的情況下，按一下 [大小寫名稱。</span><span class="sxs-lookup"><span data-stu-id="3d1ac-117">To open a case, click the name of the case.</span></span> 
 
-    <span data-ttu-id="cc35f-118">案例 [**首頁**] 索引標籤會顯示。</span><span class="sxs-lookup"><span data-stu-id="cc35f-118">The **Home** tab for the case is displayed.</span></span> <span data-ttu-id="cc35f-119">例如，以下是名為*Contoso 調查*的新案例。</span><span class="sxs-lookup"><span data-stu-id="cc35f-119">For example, here's a new case named *Contoso Investigation*.</span></span>
+    <span data-ttu-id="3d1ac-118">案例 [**首頁**] 索引標籤會顯示。</span><span class="sxs-lookup"><span data-stu-id="3d1ac-118">The **Home** tab for the case is displayed.</span></span> <span data-ttu-id="3d1ac-119">例如，以下是名為*Contoso 調查*的新案例。</span><span class="sxs-lookup"><span data-stu-id="3d1ac-119">For example, here's a new case named *Contoso Investigation*.</span></span>
 
     ![進階電子文件中的新案例的 [首頁] 索引標籤](media/newAeDcase.png)

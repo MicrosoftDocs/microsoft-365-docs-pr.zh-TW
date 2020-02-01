@@ -1,5 +1,7 @@
 ---
 title: 將檔案移至商務用 OneDrive
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,34 +22,34 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: 了解如何將檔案移動到 OneDrive。
-ms.openlocfilehash: 597192a352009abf93b507a82f800d56f20c84e8
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 0417325f93582ac5445cb739f9ca877a34f1d1c4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831316"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593652"
 ---
-# <a name="move-files-to-onedrive-for-business"></a><span data-ttu-id="7a48b-103">將檔案移至商務用 OneDrive</span><span class="sxs-lookup"><span data-stu-id="7a48b-103">Move files to OneDrive for Business</span></span>
+# <a name="move-files-to-onedrive-for-business"></a><span data-ttu-id="9ca8d-103">將檔案移至商務用 OneDrive</span><span class="sxs-lookup"><span data-stu-id="9ca8d-103">Move files to OneDrive for Business</span></span>
 
-<span data-ttu-id="7a48b-104">觀看短片，需將檔案移至商務用 OneDrive。</span><span class="sxs-lookup"><span data-stu-id="7a48b-104">Watch a short video about moving files to OneDrive for Business.</span></span><br><br>
+<span data-ttu-id="9ca8d-104">觀看短片，需將檔案移至商務用 OneDrive。</span><span class="sxs-lookup"><span data-stu-id="9ca8d-104">Watch a short video about moving files to OneDrive for Business.</span></span><br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-<span data-ttu-id="7a48b-105">如果您找到這段影片很有幫助，請參閱[完成小型企業版和 Microsoft 365 的新手訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。</span><span class="sxs-lookup"><span data-stu-id="7a48b-105">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
+<span data-ttu-id="9ca8d-105">如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。</span><span class="sxs-lookup"><span data-stu-id="9ca8d-105">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
 
 
-## <a name="move-files-to-onedrive-for-business"></a><span data-ttu-id="7a48b-106">將檔案移至商務用 OneDrive</span><span class="sxs-lookup"><span data-stu-id="7a48b-106">Move files to OneDrive for Business</span></span>
+## <a name="move-files-to-onedrive-for-business"></a><span data-ttu-id="9ca8d-106">將檔案移至商務用 OneDrive</span><span class="sxs-lookup"><span data-stu-id="9ca8d-106">Move files to OneDrive for Business</span></span>
 
-<span data-ttu-id="7a48b-107">如果使用者的電腦包含許多個人檔案，請先將這些檔案移至商務用 OneDrive：</span><span class="sxs-lookup"><span data-stu-id="7a48b-107">If a user has a computer that includes many personal files, you should first move those files to OneDrive for Business:</span></span>
+<span data-ttu-id="9ca8d-107">如果使用者的電腦包含許多個人檔案，請先將這些檔案移至商務用 OneDrive：</span><span class="sxs-lookup"><span data-stu-id="9ca8d-107">If a user has a computer that includes many personal files, you should first move those files to OneDrive for Business:</span></span>
   
-1. <span data-ttu-id="7a48b-108">移至 portal.office.com 並以使用者的 Microsoft 365 商務版認證登入。</span><span class="sxs-lookup"><span data-stu-id="7a48b-108">Go to portal.office.com and sign in with the user's Microsoft 365 Business credentials.</span></span>
+1. <span data-ttu-id="9ca8d-108">移至 portal.office.com 並以使用者的 Microsoft 365 商務版認證登入。</span><span class="sxs-lookup"><span data-stu-id="9ca8d-108">Go to portal.office.com and sign in with the user's Microsoft 365 Business credentials.</span></span>
     
-2. <span data-ttu-id="7a48b-109">按一下應用程式啟動器</span><span class="sxs-lookup"><span data-stu-id="7a48b-109">Click the app launcher</span></span> ![The app launcher icon in Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) <span data-ttu-id="7a48b-111">，然後移至 OneDrive。</span><span class="sxs-lookup"><span data-stu-id="7a48b-111">and go to OneDrive.</span></span> 
+2. <span data-ttu-id="9ca8d-109">按一下應用程式啟動器</span><span class="sxs-lookup"><span data-stu-id="9ca8d-109">Click the app launcher</span></span> ![The app launcher icon in Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) <span data-ttu-id="9ca8d-111">，然後移至 OneDrive。</span><span class="sxs-lookup"><span data-stu-id="9ca8d-111">and go to OneDrive.</span></span> 
     
-3. <span data-ttu-id="7a48b-112">選擇 [**上傳**![上傳](media/d9b963b8-10af-42e2-953d-360301b83d3c.png)中功能表列中，並瀏覽至您想要儲存的檔案。</span><span class="sxs-lookup"><span data-stu-id="7a48b-112">Choose **Upload**![Upload](media/d9b963b8-10af-42e2-953d-360301b83d3c.png) in the menu bar, and browse to the files you want to save.</span></span> 
+3. <span data-ttu-id="9ca8d-112">選擇 [**上傳**![上傳](media/d9b963b8-10af-42e2-953d-360301b83d3c.png)中功能表列中，並瀏覽至您想要儲存的檔案。</span><span class="sxs-lookup"><span data-stu-id="9ca8d-112">Choose **Upload**![Upload](media/d9b963b8-10af-42e2-953d-360301b83d3c.png) in the menu bar, and browse to the files you want to save.</span></span> 
     
-<span data-ttu-id="7a48b-p101">若要傳輸使用者個人資料和重要檔案，您也可以使用協力廠商工具，例如 ForensiT。此外，您也必須將產生的檔案上傳至商務用 OneDrive。</span><span class="sxs-lookup"><span data-stu-id="7a48b-p101">To transfer the user profile and important files, you can also use a third-party tool, such as ForensiT. You should upload the resulting files in OneDrive for Business also.</span></span>
+<span data-ttu-id="9ca8d-p101">若要傳輸使用者個人資料和重要檔案，您也可以使用協力廠商工具，例如 ForensiT。此外，您也必須將產生的檔案上傳至商務用 OneDrive。</span><span class="sxs-lookup"><span data-stu-id="9ca8d-p101">To transfer the user profile and important files, you can also use a third-party tool, such as ForensiT. You should upload the resulting files in OneDrive for Business also.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="7a48b-115">另請參閱</span><span class="sxs-lookup"><span data-stu-id="7a48b-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9ca8d-115">另請參閱</span><span class="sxs-lookup"><span data-stu-id="9ca8d-115">See also</span></span>
 
-[<span data-ttu-id="7a48b-116">Microsoft 365 商務版開發人員訓練影片</span><span class="sxs-lookup"><span data-stu-id="7a48b-116">Microsoft 365 Business training videos</span></span>](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[<span data-ttu-id="9ca8d-116">Microsoft 365 商務版訓練影片</span><span class="sxs-lookup"><span data-stu-id="9ca8d-116">Microsoft 365 Business training videos</span></span>](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

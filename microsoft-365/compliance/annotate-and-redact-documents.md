@@ -1,5 +1,7 @@
 ---
 title: 加上註解和 redact 文件中的辨識項
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,13 +16,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a0ae46b80a1424db60246d0b5739b2c0fca8ee01
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4369420cbaccd6753d8b55aa1b7c2af8bd1275c1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076746"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596140"
 ---
-# <a name="annotate-and-redact-documents-in-evidence"></a><span data-ttu-id="3d733-102">加上註解和 redact 文件中的辨識項</span><span class="sxs-lookup"><span data-stu-id="3d733-102">Annotate and redact documents in evidence</span></span>
+# <a name="annotate-and-redact-documents-in-evidence"></a><span data-ttu-id="44c83-102">加上註解和 redact 文件中的辨識項</span><span class="sxs-lookup"><span data-stu-id="44c83-102">Annotate and redact documents in evidence</span></span>
 
-<span data-ttu-id="3d733-103">內容即將推出。</span><span class="sxs-lookup"><span data-stu-id="3d733-103">Content coming soon.</span></span>
+<span data-ttu-id="44c83-103">內容即將推出。</span><span class="sxs-lookup"><span data-stu-id="44c83-103">Content coming soon.</span></span>
