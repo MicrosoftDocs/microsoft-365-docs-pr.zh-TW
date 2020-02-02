@@ -36,15 +36,15 @@
           href: insider-risk-management-users.md
         - name: 建立測試人員風險通知範本 （預覽）
           href: insider-risk-management-notices.md
-    - name: 通訊規範 （預覽）
+    - name: 通訊合規性
       items:
-        - name: 了解通訊合規性 (預覽)
+        - name: 了解通訊合規性
           href: communication-compliance.md
-        - name: 設定 Microsoft 365 中的通訊合規性 (預覽)
+        - name: 開始使用的通訊合規性
           href: communication-compliance-configure.md
-        - name: 調查和修復通訊合規性警示 (預覽)
+        - name: 調查並修復通訊規範警示
           href: communication-compliance-investigate-remediate.md
-        - name: 通訊合規性的功能參考 (預覽)
+        - name: 通訊規範功能參考
           href: communication-compliance-feature-reference.md
         - name: Office 365 中的監督原則
           href: supervision-policies.md
@@ -150,8 +150,6 @@
           href: document-fingerprinting.md
         - name: 敏感性資訊的 DLP 函數
           href: what-the-dlp-functions-look-for.md
-        - name: 觀看自訂的 DLP 延伸概觀
-          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
     - name: 電子郵件加密
       href: email-encryption.md
       items:
@@ -454,6 +452,8 @@
               href: tagging-documents.md
             - name: 設定律師-委託人權限偵測
               href: attorney-privilege-detection.md
+            - name: 使用檢閱設定儀表板 （預覽）
+              href: advanced-ediscovery-dashboard.md
         - name: 分析案例資料
           href: analyzing-data-in-review-set.md
           items:
@@ -494,6 +494,8 @@
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: 交談檢閱集
               href: conversation-review-sets.md
+            - name: 進階電子文件報告 （預覽）
+              href: advanced-ediscovery-reports.md
             - name: 疑難排解 AzCopy
               href: troubleshooting-azcopy.md
     - name: 管理電子文件探索案例
