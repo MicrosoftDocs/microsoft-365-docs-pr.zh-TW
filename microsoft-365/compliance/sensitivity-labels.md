@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上套用保護設定 (包括加密和浮水印)。
-ms.openlocfilehash: 1cf7b47fbb9161b8000f5cfcce0bb36b86d0aa50
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 723bedfc5208da140140ab475be69400d5308061
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597520"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661989"
 ---
 # <a name="overview-of-sensitivity-labels"></a>敏感度標籤概觀
 
@@ -88,13 +88,13 @@ ms.locfileid: "41597520"
     
     如需建立或編輯敏感度標籤時**加密**設定的詳細資訊，請參閱[使用敏感度標籤中的加密來限制內容的存取](encryption-sensitivity-labels.md)。
 
-- 將浮水印、頁首或頁尾新增至已套用標籤的電子郵件或文件，以在使用 Office 應用程式時**標記內容**。 例如：
+- 將浮水印、頁首或頁尾新增至已套用標籤的電子郵件或文件，以在使用 Office 應用程式時**標記內容**。 浮水印可以套用至文件 (而非電子郵件)。 頁首和浮水印範例：
     
     ![套用至文件的浮水印和頁首](media/Sensitivity-label-watermark-header.png)
     
-    如需何時套用內容標記的相關資訊，請參閱 [Office 365 何時將內容標記和加密套用到內容](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption-to-content)。
+    需要檢查何時套用內容標記？ 請參閱 [Office 365 何時將內容標記和加密套用到內容 ](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption-to-content)。
     
-    有關您建立或編輯敏感度標籤時**內容標記**設定的詳細資訊：浮水印可以套用至文件 (而非電子郵件)，且受限於 255 個字元。 頁首和頁尾均受限於 1024 個字元，但 Excel 除外。 對於頁首及頁尾，Excel 的總限制為 255 個字元，但此限制包含看不見的字元，例如格式代碼。 如果達到該限制，您輸入的字串就不會顯示在 Excel 中。
+    字串長度：浮水印限制為 255 個字元。 頁首和頁尾均受限於 1024 個字元，但 Excel 除外。 對於頁首及頁尾，Excel 的總限制為 255 個字元，但此限制包含看不見的字元，例如格式代碼。 如果達到該限制，您輸入的字串就不會顯示在 Excel 中。
 
 - 在 Intune 中開啟端點保護，**防止資料外洩**。 如果已下載敏感性內容，您可以協助防止 Windows 裝置的資料遺失。 例如，您無法將標籤的內容複製到 Dropbox、Gmail 或 USB 磁碟機。 在敏感度標籤能夠使用 Windows 資訊保護 (WIP) 之前，您必須先在 Azure 入口網站中建立應用程式保護原則。 
     
