@@ -5,6 +5,8 @@ keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a5f68e235252208de664cc6dfdd62b6019d9abe6
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 57d4093712efbee7bcb4f27280b0ba64a50dbe41
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259981"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662019"
 ---
 # <a name="service-organization-controls-soc"></a>服務組織控制 (SOC)
 
@@ -47,15 +49,14 @@ Microsoft 已取得 SOC 1 Type 2、SOC 2 Type 2 和 SOC 3 報告。 通常，SOC
 
 ### <a name="covered-services-for-soc-1-and-soc-2"></a>SOC 1 和 SOC 2 涵蓋的服務
 
-- Azure、Azure Government 和 Azure 德國[詳細清單](https://aka.ms/AzureCompliance)
+- [Azure、Azure Government 和 Azure 德國](https://aka.ms/AzureCompliance)
 - Cloud App Security
-- Dynamics 365 和 Dynamics 365 美國政府[詳細清單](https://aka.ms/d365-compliance-list)
+- [Dynamics 365 和 Dynamics 365 美國政府](https://aka.ms/d365-compliance-list)
 - Graph
 - Intune
 - Microsoft 受管理的電腦
 - Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
-- Office 365、Office 365 美國政府版和 Office 365 美國政府國防版[詳細清單](https://go.microsoft.com/fwlink/p/?LinkID=2077751)；Yammer 已取得 SOC 1 Type 1 的報告
-- Office 365 德國
+- [Office 365、Office 365 美國政府和 Office 365 美國政府國防版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - PowerApps 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
 - 資料流
@@ -63,13 +64,14 @@ Microsoft 已取得 SOC 1 Type 2、SOC 2 Type 2 和 SOC 3 報告。 通常，SOC
 
 ### <a name="covered-services-for-soc-3"></a>SOC 3 涵蓋的服務
 
-- Azure、Azure Government 和 Azure 德國[詳細清單](https://aka.ms/AzureCompliance)
+- [Azure、Azure Government 和 Azure 德國](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - 圖形
 - Intune
 - Microsoft 受管理的電腦
 - Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - PowerApps 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
+- [Office 365、Office 365 美國政府和 Office 365 美國政府國防版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI
 - Stream
 
@@ -93,11 +95,13 @@ Microsoft 雲端服務針對 SOC 1 (SSAE18，ISAE 3402) 和 SOC 2 (AT 第 101 �
 
 #### <a name="office-365"></a>Office 365
 
-- [Office 365 SOC 1 SSAE 16 Type II 稽核報告](https://aka.ms/office365soc1auditreport)
-- [Office 365 SOC 2 AT 101 Type II 稽核報告](https://aka.ms/Office365SOC2AuditReport)
+- [Office 365 核心版 - SSAE 18 SOC 1 報告](https://aka.ms/o365SOC-1)
+- [Office 365 核心版 - SSAE 18 SOC 2 報告](https://aka.ms/o365SOC-2)
+- [Office 365 核心版 - SSAE 18 SOC 3 報告](https://aka.ms/o365SOC-3)
+- [Office 365 微服務 T1 - SSAE 18 SOC2 Type I 報告](https://aka.ms/o365-MS-SOC-2-type1)
 - [Office 365 客戶加密箱 SOC 1 SSAE 16 稽核報告](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
-- [Yammer SOC 2 AT 101 Type II 稽核報告](https://aka.ms/YammerSOC2AuditReport)
 - [Yammer SOC 2 AT 101 Type I 稽核報告](https://aka.ms/YammerSOC2Type1AuditReport)
+- [Yammer SOC 2 Type II 報告](https://aka.ms/yammerSOC-2)
 - [請參閱 Bridge Letter 和其他稽核報告](https://aka.ms/auditreports)
 
 ## <a name="frequently-asked-questions"></a>常見問題集
@@ -127,15 +131,10 @@ Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、串�
 
 ## <a name="resources"></a>資源
 
- - [使用 Microsoft 雲端服務，更進一步保護您的資料](https://www.microsoft.com/trustcenter/guidance/protect-data)
- - [服務組織控制 (SOC) 報告](https://aka.ms/mssocreports)
- - [SSAE 16 稽核標準](https://www.ssae-16.com/)
- - [ISAE 3402 標準](https://isae3402.com/)
- - [Microsoft 通用控制措施中樞合規性架構](https://www.microsoft.com/trustcenter/common-controls-hub)
- - [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)
- - [Microsoft 政府雲端](https://go.microsoft.com/fwlink/p/?linkid=2087246)
- - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf)。
+- [使用 Microsoft 雲端服務，更進一步保護您的資料](https://www.microsoft.com/trustcenter/guidance/protect-data)
+- [服務組織控制 (SOC) 報告](https://aka.ms/mssocreports)
+- [SSAE 16 概觀](http://ssae16.com/SSAE16_overview.html)
+- [ISAE 3402 概觀](http://isae3402.com/ISAE3402_overview.html)
+- [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)
+- [Microsoft 政府雲端](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
