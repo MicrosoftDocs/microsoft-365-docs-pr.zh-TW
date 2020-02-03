@@ -1,5 +1,7 @@
 ---
 title: 在安全性與合規性中心搜尋稽核記錄
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 6b73e6bbcd9dfee6e3c04ee5c44283633ffdbac4
-ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
+ms.openlocfilehash: 519fb739290e5a7ea61c8e27a1ef59edb4cac75f
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41265891"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661999"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -122,6 +124,7 @@ ms.locfileid: "41265891"
   |Microsoft Project|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power Apps|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Power BI|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |安全性與合規性中心|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |SharePoint Online 和商務用 OneDrive|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -335,7 +338,7 @@ ms.locfileid: "41265891"
 |(無)|FileModifiedExtended|這與「已修改檔案」(FileModified) 活動相關聯。 當相同人員持續修改某個檔案一段時間 (最多 3 小時)，便會記錄 FileModifiedExtended 事件。 <br/><br/> 記錄 FileModifiedExtended 事件的目的在於減少持續修改某個檔案時，記錄 FileModified 事件的數目。 這有助於減少多個 FileModified 記錄的干擾，以了解哪些基本上是同樣的使用者活動，並讓您專注在初始 (且更重要的) FileModified 事件。|
 |已移動檔案|FileMoved|使用者將文件從它在網站上目前的位置移動至新的位置。|
 |(無)|FilePreviewed|使用者預覽 SharePoint 或商務用 OneDrive 網站上的檔案。 這些事件通常發生在單一活動中有龐大數量時，例如檢視影像資源庫。|
-|已執行的搜尋查詢|SearchQueryPerformed|使用者或系統帳戶在 SharePoint 或商務用 OneDrive 中執行搜尋。 在服務帳戶執行搜尋查詢的一些常見案例，包含將電子文件探索保留或保留原則套用至網站和 OneDrive 帳戶，以及將保留或敏感度標籤自動套用至網站內容的時刻。 在這些情況下，記錄在稽核記錄 [使用者] 欄位中的服務帳戶名稱為 **app@sharepoint**。 </br></br> **提示：**[已執行的搜尋查詢] 活動稽核記錄中的 [ApplicationDisplayName] 和 [EventData] 欄位可協助您識別觸發此事件的案例或服務。|
+|已執行的搜尋查詢|SearchQueryPerformed|使用者或系統帳戶在 SharePoint 或商務用 OneDrive 中執行搜尋。 在服務帳戶執行搜尋查詢的一些常見案例，包含將電子文件探索保留或保留原則套用至網站和 OneDrive 帳戶，以及將保留或敏感度標籤自動套用至網站內容的時刻。 在這些情況下，記錄在稽核記錄 [使用者] 欄位中的服務帳戶名稱為 **app\@sharepoint**。 </br></br> **提示：**[已執行的搜尋查詢] 活動稽核記錄中的 [ApplicationDisplayName] 和 [EventData] 欄位可協助您識別觸發此事件的案例或服務。|
 |已回收所有檔案次要版本|FileVersionsAllMinorsRecycled|使用者從檔案的版本歷程記錄中刪除所有的次要版本。 已刪除的版本會移至網站資源回收筒。|
 |已回收所有檔案版本|FileVersionsAllRecycled|使用者從檔案版本歷程記錄中刪除所有版本。 已刪除的版本會移至網站資源回收筒。|
 |已回收檔案版本|FileVersionRecycled|使用者從檔案版本歷程記錄中刪除版本。 已刪除的版本會移至網站資源回收筒。|

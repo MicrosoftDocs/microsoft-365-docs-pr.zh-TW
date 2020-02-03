@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立、設定及發佈敏感度標籤的指示，以便分類及保護貴組織的文件和電子郵件。
-ms.openlocfilehash: 3ce1f729853d514a85852221eb997c456a379dcd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 73df1928a89218a419a9d774a7830ecad4aceb6d
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595530"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661859"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>建立及設定敏感度標籤及其原則
 
@@ -45,7 +45,7 @@ ms.locfileid: "41595530"
 1. 在標籤系統管理中心中，導覽至敏感度標籤：
     
     - Microsoft 365 合規性中心： 
-        - **** 解決方案 > **資訊保護 (預覽)**
+        - **解決方案** > **資訊保護**
         
         如果您沒有立即看到這個選項，請先選取 [全部顯示]****。 
     
@@ -118,7 +118,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 1. 在標籤系統管理中心中，導覽至敏感度標籤：
     
     - Microsoft 365 合規性中心： 
-        - **** 解決方案 > **資訊保護 (預覽)**
+        - **解決方案** > **資訊保護**
         
         如果您沒有立即看到這個選項，請先選取 [全部顯示]****。 
     
