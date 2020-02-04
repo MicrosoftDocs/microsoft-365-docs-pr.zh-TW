@@ -18,16 +18,16 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: 如果您的系統管理員可讓使用者的通知，您會收到通知訊息，其中列出傳送至您的信箱已識別為垃圾郵件、 大量或網路釣魚郵件提交之郵件。 您可以釋出或回報郵件之後收到通知。
-ms.openlocfilehash: c9cd0849f826e66411695a3758f271ec70d24c9b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 51fcdefc08987b153d045994927f56df3b670fd0
+ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598020"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41722034"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>利用 Office 365 中的使用者垃圾郵件通知來釋放並回報被隔離的郵件
 
-如果您的系統管理員可讓使用者的垃圾郵件通知，您會收到通知訊息，列出寄送至您信箱的已識別為垃圾郵件而遭到隔離的郵件。
+如果您的系統管理員可讓使用者的垃圾郵件通知，您會收到通知訊息，列出寄送至您信箱的已識別為垃圾郵件、 大量或釣魚程式而遭到隔離的郵件。
 
 > [!TIP]
 > 如果您是系統管理員且想来啟用此功能，您可以選擇選項時您[修改預設的反垃圾郵件原則](configure-your-spam-filter-policies.md)。
@@ -50,6 +50,6 @@ ms.locfileid: "41598020"
 
 請注意下列事項：
 
-- 因為它們符合郵件流程規則遭到隔離的郵件不會包含在使用者隔離的郵件。 該訊息只會列出因垃圾郵件而遭到隔離的郵件。
+- 惡意程式碼和高信賴度網路釣魚郵件，因為它們符合郵件流程規則遭到隔離的郵件不會包含在使用者垃圾郵件通知中。 
 
 - 您只能釋出郵件並將其報告為誤判 (非垃圾郵件)   一次。
