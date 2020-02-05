@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 98a658febe6c20904f82fb2f152bb6cc115cce49
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dc781d9f800b3db938b253775b31df118c21fd03
+ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597952"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41784700"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新功能
 
@@ -49,7 +49,7 @@ ms.locfileid: "41597952"
 
 - [Office 365 ATP 整合項目自動進行調查並使用 Office 365 管理活動 API 回應事件](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)(Office 365 ATP 計劃 2)
 
-- [檢視的電子郵件標頭，並下載電子郵件內文](investigate-malicious-email-that-was-delivered.md#view-the-email-headers-and-download-the-email-body)（Office 365 ATP 方案 1 或計劃 2）
+- [檢視的電子郵件標頭，並下載電子郵件內文](investigate-malicious-email-that-was-delivered.md)（Office 365 ATP 方案 1 或計劃 2）
 
 ## <a name="august-2019"></a>2019 年 8 月
 
@@ -67,7 +67,7 @@ ms.locfileid: "41597952"
 
 您知道 Office 365 ATP 可用於兩個計劃嗎？ [解更多關於每個方案所包含的內容](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 
