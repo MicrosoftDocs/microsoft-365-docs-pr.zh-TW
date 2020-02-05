@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 44c90c6c9394b1f9fee34b8eb068bb7c232c4d78
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: 1177f552652e728928a2b1d322b4ce0217415509
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41627969"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774189"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何報告中自動進行調查並回應功能，則為 false positive/負號
 
@@ -57,7 +57,7 @@ ms.locfileid: "41627969"
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>復原裝置上的修復動作
 
-如果裝置 （例如 Windows 10 裝置） 以及處於實際的項目已採取補救動作，您的安全性作業小組可以復原[重要訊息中心](mtp-action-center.md)中的補救動作。
+如果補救動作 （例如 Windows 10 裝置） 裝置上，且實際上全新的項目，您的安全性作業小組可以復原[重要訊息中心](mtp-action-center.md)中的補救動作。
 
 > [!IMPORTANT]
 > 確定您嘗試執行下列工作之前，先具有[必要權限](mtp-action-center.md#required-permissions-for-action-center-tasks)。

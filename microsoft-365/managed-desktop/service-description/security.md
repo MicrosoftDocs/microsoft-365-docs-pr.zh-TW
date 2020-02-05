@@ -1,17 +1,17 @@
 ---
 title: Microsoft 受管理電腦中的安全性
 description: ''
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 6d3be89b52d71543687a02a1fd3fbae8bc1543f8
-ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
+ms.openlocfilehash: 3d5765de70b21036800d87cedd175ea4fd53b7ba
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243934"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774229"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的安全性
 
@@ -19,25 +19,12 @@ ms.locfileid: "36243934"
 
 Microsoft 受管理的電腦使用數種 Microsoft 技術來協助保護受管理的裝置和資料。 特別是： 
 
-- [資料安全性](#data-security)的 Microsoft 受管理的電腦並安全地儲存所收集的資料類型
+
 - [裝置安全性](#device-security)– 安全性和保護 Microsoft 受管理的電腦裝置上
 - [身分識別與存取管理](#identity-and-access-management)– 管理安全使用的裝置透過 Azure Active Directory 身分識別服務
 - [網路安全性](#network-security)– VPN 資訊和 Microsoft 受管理電腦的建議解決方案和設定
 - [資訊安全性](#information-security)– 選用可用的服務，以進一步保護敏感資訊 
 
-## <a name="data-security"></a>資料安全性
-
-從客戶租用戶所收集的資料 （這可讓 Microsoft 受管理的桌上型電腦 IT 服務與作業） 會儲存在 Azure SQL 資料庫裝載於美國 Microsoft 租用戶中。
-
-如需詳細資訊，請參閱[Microsoft Azure 安全性](https://docs.microsoft.com/azure/security/azure-database-security-overview)。
-
-下面列出的資料從您的租用戶傳輸類型：
-
-- 裝置更新、 使用狀況和可靠性資料
-- 應用程式部署及可靠性資料
-- [更新與安全性原則部署資料
-- 使用者指派到裝置
-- 從您的租用戶由 Microsoft 受管理的電腦，以管理服務的帳戶與相關的安全性記錄檔
 
 
 

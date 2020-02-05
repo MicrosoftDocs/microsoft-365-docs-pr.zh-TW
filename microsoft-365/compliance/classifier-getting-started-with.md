@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 類別器是內容的的工具，您可以訓練，讓它正值與負值的範例，來查看辨識各種類型。 類別器調校完成之後，您確認它的結果正確無誤。 然後您可以用它來搜尋整個組織的內容及分類它納入資料外洩防護 (DLP) 或保留原則或套用保留或敏感度標籤。
-ms.openlocfilehash: 4b4bfa996b1f68f9db8c206aaaec43878abf3f42
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c0ac644f3435d81159156e175c01e1916b0aeaf3
+ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595900"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41722024"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>開始使用可訓練的分類器 (預覽)
 
@@ -49,6 +49,10 @@ ms.locfileid: "41595900"
 
 > [!IMPORTANT]
 > Trainable 相關性只使用未加密，都會以英文顯示的項目。
+
+### <a name="licensing-requirements"></a>授權需求
+
+Trainable 相關性為 Microsoft 365 E5 或 E5 合規性功能。 您必須有一個進行這些訂閱加以使用。
 
 ## <a name="types-of-classifiers"></a>類型的相關性
 
@@ -94,7 +98,7 @@ Microsoft 365 隨附六個準備好使用相關性：
 
 ![處理程序流程 trainable 類別器](media/classifier-trainable-classifier-flow.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [保留標籤](labels.md)
 - [保留原則](retention-policies.md)

@@ -17,19 +17,20 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我們持續正在新增至 Microsoft 365 合規性中心的新功能、 修正的問題我們了解，並變更根據您的意見反應。 了解我們已經被最本月多。
-ms.openlocfilehash: 78c2d2da6c8925e86bcba6c498682b72c9292922
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2ec046b6b5aa78e5eb44bbe6eebff222752f9c18
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597180"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774199"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>What's new in Microsoft 365 合規性中心
 
 我們持續正在新增至[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的新功能、 修正的問題我們了解，並變更根據您的意見反應。 看看下列請參閱什麼是可供您立即。 某些功能取得導入不同的速度我們的客戶。 如果沒有看到一種功能，請嘗試將自己新增至[目標版本](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365)。
 
 > [!TIP]
-> 感興趣其他系統管理中心中運作？ 請參閱下列文章：<br>[What's new in Microsoft 365 系統管理中心](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[什麼是 SharePoint 系統管理中心新增](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+> 感興趣其他系統管理中心中運作？ 請參閱下列文章：<br>[What's new in Microsoft 365 系統管理中心](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[什麼是 SharePoint 系統管理中心新增](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
+請造訪[Microsoft 365 藍圖](https://www.microsoft.com/en-us/microsoft-365/roadmap)以了解 Microsoft 365 功能已啟動、 已推出、 開發中、 已取消或先前發行。
 
 ## <a name="november--december-2019"></a>11 月 # A0 年 12 月 2019
 
