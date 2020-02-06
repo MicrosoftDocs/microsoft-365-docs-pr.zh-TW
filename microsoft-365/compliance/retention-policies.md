@@ -1,5 +1,7 @@
 ---
 title: 保留原則概觀
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: de5fda485c1fbb1f41fd32ff0da40014d30a6a89
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 1585be963b63e2e7f4c3efad972b7b262b4db3cc
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558590"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774219"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -54,7 +56,9 @@ ms.locfileid: "41558590"
 
 - [Microsoft 365 合規性中心](https://compliance.microsoft.com/)的 [原則]**** 頁面。
 - [Office 365 安全性與合規性中心](https://protection.office.com/) 的 [資訊控管]**** 下的 [保留]**** 頁面。&amp;
-  
+
+**如果您想要在永久刪除內容之前檢視內容**，請考慮改用[保留標籤](labels.md)，而非保留原則。 建立保留標籤時，您可以設定[處置檢閱](disposition-reviews.md)，在保留期間結束時檢閱其內容。
+
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>保留原則如何就地使用內容
 
 當您在保留原則中包括網站或信箱這類的位置時，內容仍會留在其原始位置。使用者可以繼續使用其文件或郵件，一樣不會變更。但在他們編輯或刪除原則中包含的內容時，系統會保留內容的複本，與您套用原則時存在的內容相同。

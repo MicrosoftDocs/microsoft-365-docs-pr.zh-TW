@@ -1,5 +1,7 @@
 ---
 title: 步驟 1 - 裝置和應用程式整備
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在環境中評估裝置和應用程式整備。
-ms.openlocfilehash: dad6b4092cbcedbc4674733af1459d28f9b1d50e
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 6bf41d0930a3c957bb856d35815bf05087997208
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112717"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774209"
 ---
 # <a name="step-1-device-and-app-readiness"></a>步驟 1：裝置和應用程式整備
 
@@ -106,9 +108,9 @@ ms.locfileid: "41112717"
 如需詳細資訊，請參閱 [Configuration Manager 中的軟體清查簡介](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) (英文)，以及 [Configuration Manager 中的套件和程式](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs) (英文) 中應用程式套件的設定平台需求。
 
 
-## <a name="desktop-app-assure"></a>電腦 App 保證
+## <a name="app-assure"></a>應用程式保證
 
-協助達到 Windows 10 和 Office 365 專業增強版應用程式相容性的另一個工具是透過 FastTrack Center 提供的[電腦 App 保證](https://aka.ms/desktopappassure)程式。 在有效應用程式發生問題時，Microsoft 工程師可以透過「電腦 App 保證」免費與您合作，協助修復應用程式不相容性問題。
+協助達到 Windows 10 和 Office 365 專業增強版應用程式相容性的另一個工具是透過 FastTrack Center 提供的[應用程式保證](https://aka.ms/appassure)程式。 在有效應用程式發生問題時，透過「應用程式保證」，Microsoft 工程師可以與您合作 (不另行收費)，協助修復應用程式不相容性問題。
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>繼續使用診斷資料工具
 
