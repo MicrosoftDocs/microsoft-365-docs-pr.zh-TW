@@ -5,18 +5,21 @@ keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 206dbd57f5fc5c41c4238e13d9dca3072ef7d121
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 546e4b29f26ffdee8c876032fe83254fb5643fff
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859813"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602380"
 ---
 # <a name="center-for-financial-industry-information-systems-fisc"></a>金融業資訊系統中心 (FISC)
 
@@ -40,7 +43,7 @@ Microsoft 已聘雇外部評估員來驗證 Microsoft Azure、Dynamics 365 和 M
 
 金融機構可以依賴下列評估：評估 Azure、Dynamics 365、Office 365 和 Microsoft Cloud App Security 的範圍內基礎架構和平台服務是否符合這三個區域。
 
-[深入了解外部評定者和評定者網站連結的驗證 (僅提供日文)](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx)。
+[深入了解外部評定者和評定者網站連結的驗證 (僅提供日文)](https://cloudblogs.microsoft.com/industry-blog/ja-jp/financial-services/2018/05/11/fisc_v9/)。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 

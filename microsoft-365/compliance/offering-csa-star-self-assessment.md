@@ -5,18 +5,21 @@ keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 73a21ba3089646df55ad51a7918749f29691aad8
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 576404aadb2328682f10f69f30e58df2cafebe54
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859423"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601990"
 ---
 # <a name="cloud-security-alliance-csa-star-self-assessment"></a>雲端安全性聯盟 (CSA) STAR 自我評定
 

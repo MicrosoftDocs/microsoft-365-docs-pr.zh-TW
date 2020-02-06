@@ -5,18 +5,21 @@ keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 89656556e4cba8fca12708e558aef3254c37bfba
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 3c7d3c6a710141972c1e54a7c67bfccd59c378d6
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859453"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602010"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>可信資訊安全評估交換體系 (TISAX) 德國
 
@@ -26,7 +29,7 @@ ms.locfileid: "39859453"
 
 VDA 成員公司使用這種檢測來進行內部安全性評定以及供應商、服務提供者和其他合作夥伴 (代表他們處理敏感性資訊) 的評定。 不過，因為這些評估是由每家公司個別處理，所以它會為合作夥伴帶來負擔，且 VDA 成員會重複工作。
 
-為了協助簡化評估，VDA 設定常用評定和交換機制，[可信資訊安全評估交換體系](https://www.enx.com/tisax/) (TISAX)。 基礎 TISAX 需求的目錄、檢查資訊安全評估和資訊安全管理的問卷、版本。 4 ([德文](https://www.vda.de/de/services/Publikationen.html)和[英文](https://www.vda.de/en/services/Publications.html))，提供 IT 安全性措施的一般標準，讓註冊 TISAX 的公司能夠分享評定結果。 VDA 受託中立第三方 [ENX Association](https://portal.enx.com/zh-TW/en-en/TISAX/tisaxassessmentresults/)，進行 TISAX 實作。 在該作業中，它會認證給稽核提供者 (稽核員)，維護認證準則和評定需求，以及監控實作和評定結果的品質。
+為了協助簡化評估，VDA 設定常用評定和交換機制，[可信資訊安全評估交換體系](https://www.enx.com/tisax/) (TISAX)。 基礎 TISAX 需求的目錄、檢查資訊安全評估和資訊安全管理的問卷、版本。 4 ([德文](https://www.vda.de/de/services/Publikationen.html)和[英文](https://www.vda.de/en/services/Publications.html))，提供 IT 安全性措施的一般標準，讓註冊 TISAX 的公司能夠分享評定結果。 VDA 受託中立第三方 [ENX Association](https://portal.enx.com/en-US/en-en/TISAX/tisaxassessmentresults/)，進行 TISAX 實作。 在該作業中，它會認證給稽核提供者 (稽核員)，維護認證準則和評定需求，以及監控實作和評定結果的品質。
 
 ## <a name="microsoft-and-tisax"></a>Microsoft 和 TISAX
 
@@ -50,7 +53,7 @@ TISAX 評定著重在下列 Microsoft 服務：
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
-已註冊 ENX 的產業代表，可以在 [ENX 入口網站](https://portal.enx.com/zh-TW/)上找到範圍內 Microsoft 雲端服務的 TISAX 評定詳細資料。 若要搜尋 Microsoft 評定結果，請登入您現有的 TISAX 帳戶，然後搜尋 Microsoft。 或者，您可以使用下列資訊來縮小搜尋範圍：
+已註冊 ENX 的產業代表，可以在 [ENX 入口網站](https://portal.enx.com/en-US/)上找到範圍內 Microsoft 雲端服務的 TISAX 評定詳細資料。 若要搜尋 Microsoft 評定結果，請登入您現有的 TISAX 帳戶，然後搜尋 Microsoft。 或者，您可以使用下列資訊來縮小搜尋範圍：
 
 - Microsoft 參與者識別碼：PGKYK0
 - Microsoft Corp. 歐盟評定等級 (AL) 3 範圍識別碼：SY869K
@@ -72,7 +75,7 @@ ENX 僅對已註冊的產業代表，透過 ENX 入口網站提供認證確認�
 
 ## <a name="resources"></a>資源
 
-- [TISAX 常見問題](https://portal.enx.com/zh-TW/TISAX/faqs/)
+- [TISAX 常見問題](https://portal.enx.com/en-US/TISAX/faqs/)
 - [Volkswagen 和 Microsoft 宣佈戰略合作夥伴關係](https://www.volkswagen-newsroom.com/en/press-releases/volkswagen-and-microsoft-announce-strategic-partnership-4234)
 - [車上的辦公室：BMW 提供商務用 Skype](https://news.microsoft.com/de-de/skype-business-ab-sofort-fahrzeugen-von-bmw-verfugbar/) (德文)
 - [將長途運輸車輛連線：Daimler](https://customers.microsoft.com/story/daimlertrucks)

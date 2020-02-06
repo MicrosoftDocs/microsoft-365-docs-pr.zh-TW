@@ -5,18 +5,21 @@ keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: e4591a6050dd6d1805b4d8904ce5f9b6497c3706
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 88f84cc73bfea5bbc072a46e894a140e227844b2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859753"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602320"
 ---
 # <a name="health-data-hosting-hds-france"></a>法國健康資料代管 (HDS)
 
@@ -30,7 +33,7 @@ HDS 認證要求服務提供者實作措施，確保病患的個人健康資料�
 
 ## <a name="microsoft-and-hds"></a>Microsoft 和 HDS
 
-Microsoft Azure、Microsoft Dynamics 365 和 Microsoft Office 365 已獲健康資料代管 (Hébergeurs de Données de Santé，HDS) 認證，要求代管受法國法律管轄的個人健康資料的所有實體都需要有此認證。 這使 Microsoft 在儲存和處理健康資料方面成為第一個符合嚴格的法國標準的主要雲端服務提供者。 根據 2018 年法國公共衛生法修訂版的要求，此認證對代管服務和雲端提供者提出了進階安全性和隱私權要求，以確保敏感性資料的機密性和完整性受到充分保護。
+Microsoft Azure、Microsoft Dynamics 365 和 Microsoft Office 365 已獲健康資料代管 (Hébergeurs de Données de Santé，HDS) 認證，代管受法國法律管轄的個人健康資料的所有實體都需要有此認證。 這使 Microsoft 在儲存和處理健康資料方面成為第一個符合嚴格的法國標準的主要雲端服務提供者。 根據 2018 年法國公共衛生法修訂版的要求，此認證對代管服務和雲端提供者提出了進階安全性和隱私權要求，以確保敏感性資料的機密性和完整性受到充分保護。
 
 Microsoft 符合 HDS 要求已通過 [BSI Group](https://www.bsigroup.com/fr-FR/) (由法國當局認可進行 HDS 審核的獨立認證機構) 的審核和認證。
 
@@ -43,10 +46,10 @@ HDS 認證讓法國的醫療保健提供者使用 Microsoft 雲端服務，透�
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-- [Azure](https://aka.ms/AzureCompliance)。 HDS 認證適用於所列 Azure 合規性方案中符合 ISO/IEC 27001 標準以及在法國中部、法國南部、歐洲西部和歐洲北部佈建的 Azure 服務。
-- Dynamics 365。 HDS 認證適用於在法國和歐盟地區佈建的 Dynamics 365 [Core Online Services](https://aka.ms/Online-Services-Terms)。
+- [Azure](https://aka.ms/AzureCompliance)。 HDS 認證適用於所列 Azure 合規性方案中符合 ISO/IEC 27001 標準以及從法國中部、法國南部、歐洲西部和歐洲北部佈建的 Azure 服務。
+- Dynamics 365。 HDS 認證適用於從法國和歐盟地區佈建的 Dynamics 365 [Core Online Services](https://aka.ms/Online-Services-Terms)。
 - Intune
-- Microsoft 365。 HDS 認證適用於在法國和歐盟地區佈建的 Office 365 [Core Online Services](https://aka.ms/Online-Services-Terms)。
+- Microsoft 365。 HDS 認證適用於從法國和歐盟地區佈建的 Office 365 [Core Online Services](https://aka.ms/Online-Services-Terms)。
 - Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
 
 HDS 認證不適用於 Microsoft 線上服務預覽版或發行前版本。

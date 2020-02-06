@@ -5,18 +5,21 @@ keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 208bf7d1e31f797ec24654d1c2cdfe374d1aafe3
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: a2ef9ff0521755bbb3000dd42b417ff57e398bbb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859563"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602130"
 ---
 # <a name="my-number-act-japan"></a>個人編號法案 (日本)
 
@@ -70,7 +73,7 @@ PPC Q\&A 的 [Q3-13 章節](https://www.ppc.go.jp/legal/policy/faq/) (日文版)
 ## <a name="resources"></a>資源
 
 - [Azure 合規性和日本安全性與隱私權需求](https://gallery.technet.microsoft.com/Azure-Compliance-and-the-53409748)
-- [Microsoft 中的隱私權](https://privacy.microsoft.com/zh-TW/)
+- [Microsoft 中的隱私權](https://privacy.microsoft.com/en-US/)
 - [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)
 - [雲端隱私權考量](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
