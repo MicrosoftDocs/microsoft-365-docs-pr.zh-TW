@@ -1,5 +1,7 @@
 ---
 title: Exchange Online 如何保護您的電子郵件機密資料
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 989ba10c-f73f-4efb-ad1b-af3322e5f376
 ms.collection:
 - M365-security-compliance
 description: 除了 Office 365 信任中心提供安全性、 隱私權和規範資訊的 Office 365，您可能想要知道 Office 365 如何協助保護您在其資料中心中提供的機密資料。 我們會使用稱為分散式金鑰管理員 (DKM) 的技術。
-ms.openlocfilehash: 8350785968c68b22c58be17ec68d94ff908c95d9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6ba60616ee72a4457d81f3f9c2049007afdcbb1d
+ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077048"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41800073"
 ---
 # <a name="how-exchange-online-secures-your-email-secrets"></a>Exchange Online 如何保護您的電子郵件機密資料
 
@@ -40,9 +42,9 @@ ms.locfileid: "37077048"
 Microsoft 使用[分散式金鑰管理員](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)加密您的機密資料在 Exchange Online 資料中心。 例如：
   
 - 已連線的帳戶的電子郵件帳戶認證。 已連線的帳戶是協力廠商的帳戶，例如 Hotmail、 Gmail 和 yahoo ！ 郵件帳號。
-    
-- 客戶金鑰。 如果您使用[Office 365 中的客戶金鑰](controlling-your-data-using-customer-key.md)，您將使用[Azure 金鑰保存庫](https://docs.microsoft.com/azure/key-vault/key-vault-whatis)來保護您的機密資料。
-    
+
+- 客戶金鑰。 如果您使用[使用 Office 365 中的客戶金鑰服務加密](customer-key-overview.md)，您將使用[Azure 金鑰保存庫](https://docs.microsoft.com/azure/key-vault/key-vault-whatis)來保護您的機密資料。
+
 ## <a name="related-topics"></a>相關主題
 
 [Office 365 中的加密](encryption.md)
