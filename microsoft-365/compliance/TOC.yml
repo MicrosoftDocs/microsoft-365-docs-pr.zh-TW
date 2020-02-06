@@ -22,7 +22,7 @@
       items:
         - name: 了解測試人員風險管理 （預覽）
           href: insider-risk-management.md
-        - name: 開始使用測試人員風險管理 （預覽）
+        - name: 開始使用測試人員風險管理 (預覽版)
           href: insider-risk-management-configure.md
         - name: 建立及管理測試人員風險原則 （預覽）
           href: insider-risk-management-policies.md
@@ -67,12 +67,6 @@
           href: privileged-access-management-overview.md
         - name: 設定特殊權限存取管理
           href: privileged-access-management-configuration.md
-    - name: 客戶金鑰
-      items:
-        - name: 使用客戶金鑰控制 Office 365 中的資料
-          href: controlling-your-data-using-customer-key.md
-        - name: Office 365 中使用客戶金鑰的服務加密常見問題集
-          href: service-encryption-with-customer-key-faq.md
     - name: 保護使用者和裝置存取權
       href: protect-access-to-data-and-services.md
     - name: 客戶加密箱
@@ -85,7 +79,7 @@
       items:
         - name: 建立及發佈敏感度標籤
           href: create-sensitivity-labels.md
-        - name: 使用敏感度標籤中的加密來限制內容的存取
+        - name: 使用敏感度標籤套用加密內容限制存取
           href: encryption-sensitivity-labels.md
         - name: 自動將敏感度標籤套用到內容
           href: apply-sensitivity-label-automatically.md
@@ -150,6 +144,18 @@
           href: document-fingerprinting.md
         - name: 敏感性資訊的 DLP 函數
           href: what-the-dlp-functions-look-for.md
+    - name: 客戶金鑰
+      items:
+        - name: 使用 Office 365 中的客戶金鑰服務加密
+          href: customer-key-overview.md
+        - name: 設定 Office 365 客戶金鑰
+          href: customer-key-set-up.md
+        - name: 管理 office 365 的客戶金鑰
+          href: customer-key-manage.md
+        - name: 展開或旋轉客戶金鑰或可用性機碼
+          href: customer-key-availability-key-roll.md
+        - name: 了解可用性金鑰的 Office 365 客戶金鑰
+          href: customer-key-availability-key-understand.md
     - name: 電子郵件加密
       href: email-encryption.md
       items:
