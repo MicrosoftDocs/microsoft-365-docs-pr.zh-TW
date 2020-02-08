@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: af68a8e81cdaab1bbbd8887a7d586fcaefff1041
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4b76ba16b74eeea26799bb383cd00e497c86d770
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600890"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855382"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
@@ -122,7 +122,7 @@ Azure AD 會提供一套完整的身分識別管理功能。 保護存取的建�
 
 - [設定您的 Office 365 租用戶的增強的安全性](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355)： 這些建議適用於您的 Office 365 租用戶基準安全性。
 - [Office 365 安全性藍圖： 前的 30 天、 前 90 天及過後](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)： 這些建議包含記錄、 資料控管、 系統管理存取權和威脅防護。
-- [保護 SharePoint Online 網站與檔案](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)： 這一系列文章說明如何保護檔案和網站的比較基準 」、 敏感性及高度機密保護的適當層級。
+
 
 ### <a name="windows-10-and-office-365-proplus"></a>Windows 10 和 Office 365 專業增強版
 

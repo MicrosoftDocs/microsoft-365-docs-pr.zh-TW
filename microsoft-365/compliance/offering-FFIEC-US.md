@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 74ce16a1cc98943ea808bbae08eccd54f8f21fad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c77793d7676e836e7b445bd9b638a835bb7051ff
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602420"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851820"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>聯邦金融機構檢查委員會 (FFIEC)
 
@@ -58,6 +58,10 @@ Azure 與 Office 365 SOC 證明報表。
 **可以使用 Microsoft SOC 標準的合規性我機構符合 FFIEC 合規義務？**
 
 若要協助您符合這些義務，Microsoft 會提供相關我們的合規性 SOC 標準上面所述的特定資訊。 不過，最後，它會是您自行以判斷與特定的法律和法規機構適用是否符合我們的服務。 FFIEC 也建議的 「 稽核報告或評論的使用者不應該依賴察覺若要確認 TSP 的內部控制環境報告中所包含的資訊。 他們應該使用其他驗證及監視程序所述更完整 FFIEC IT 檢查手冊[外包技術手冊](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx)。 」
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數 」 來評估您的風險
+
+[Microsoft 合規性分數](compliance-score.md)是在[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)中以協助您了解貴組織的合規性狀態，並採取動作，以協助降低風險的預覽功能。 [設定合規性分數](compliance-score-setup.md)之後, 使用預先設定的[FFIEC Office 365 範本](https://go.microsoft.com/fwlink/?linkid=2117912)和[FFIEC Intune 範本](https://go.microsoft.com/fwlink/?linkid=2118101)可協助組織符合此法規的需求。
 
 ## <a name="resources"></a>資源
 

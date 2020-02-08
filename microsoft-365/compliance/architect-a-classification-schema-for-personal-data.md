@@ -1,5 +1,7 @@
 ---
 title: 設計個人資料的分類結構描述
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -15,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 判斷您的組織是否將實作標籤做為 GDPR 計劃的一部分。
-ms.openlocfilehash: 4470f766ad2f8fd2d914e0e45deac8604028ddb5
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: fa10e3ccd320026f06db76feef8711f8483c2b70
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615643"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596040"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>設計個人資料的分類結構描述
 

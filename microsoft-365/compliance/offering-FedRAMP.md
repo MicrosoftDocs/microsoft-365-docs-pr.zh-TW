@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2b7ad248299c12edfeed880ac731f2d23e9b1949
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 71be1e70a04881b937ee1f75d5fda6f03efdbd5f
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602360"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851860"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>聯邦風險與授權管理計畫 (FedRAMP)
 
@@ -78,7 +78,7 @@ CSP 一旦授與 P ATO 時，仍然需要授權 — ATO — 從可搭配任何�
 > [!NOTE]
 > 使用 Azure 政府版中的 Azure Active Directory 需要使用的部署在 Azure 的公用雲端的 Azure 政府版以外的元件。
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 Microsoft，才能維護其 P ATO 和 ATOs recertify 其雲端服務每年。 若要這麼做，Microsoft 必須監視及持續，評估其安全性控制和示範，其 services 的安全性，仍會保留在合規性。
 
@@ -99,7 +99,7 @@ FISMA 是需要美國聯邦機構和其合作夥伴，視需要取得資訊系�
 
 **若要對象沒有 FedRAMP 套用？**
 
-「 FedRAMP 是必要的聯邦機構雲端部署及低和中度風險影響層級的服務模型 」。 想要邀請 CSP 任何聯邦機構可能需要符合 FedRAMP 規格。 此外，可能需要使用中的產品或服務使用的聯邦政府雲端技術的公司取得 ATO。
+' FedRAMP 是強制聯邦機構雲端部署及低和中度風險影響層級的服務模型的 '。 想要邀請 CSP 任何聯邦機構可能需要符合 FedRAMP 規格。 此外，可能需要使用中的產品或服務使用的聯邦政府雲端技術的公司取得 ATO。
 
 **我機構其中啟動它自己的合規性努力？**
 
@@ -108,6 +108,10 @@ FISMA 是需要美國聯邦機構和其合作夥伴，視需要取得資訊系�
 **可以使用 Microsoft 合規性我機構授權程序嗎？**
 
 是。 您可以在任何程式或需要從聯邦政府機構 ATO 的計劃，做為基礎使用 Microsoft 雲端服務的認證。 不過，您需要達成您自己的授權外部這些服務的元件。
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數 」 來評估您的風險
+
+[Microsoft 合規性分數](compliance-score.md)是在[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)中以協助您了解貴組織的合規性狀態，並採取動作，以協助降低風險的預覽功能。 [設定合規性分數](compliance-score-setup.md)之後, 使用預先設定的[FedRAMP 範本](https://go.microsoft.com/fwlink/?linkid=2118102)可協助組織符合此法規的需求。
 
 ## <a name="resources"></a>資源
 

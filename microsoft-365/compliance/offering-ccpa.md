@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 24217ed5782d14cc67277bc980e4a94b7bc904f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4c761a62e901be065a588f1e4141b731831c4752
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601980"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851840"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>加州消費者隱私法 (CCPA)
 
 ## <a name="ccpa-overview"></a>CCPA 概觀
 
-加州消費者隱私權法案 (CCPA) 是第一個完整的隱私權法律在美國境內。 它提供各種加州消費者隱私權權限。  公司規範的 CCPA 會有數量的義務對那些用戶，包括揭露，一般資料保護規定 (GDPR)-，像是消費者資料主體權利 (Dsr) 的 「 選擇加入延展 」 的特定的資料傳輸及的 「 加入確認程序集 」未成年人獲取需求。
+加州消費者隱私權法案 (CCPA) 是第一個完整的隱私權法律在美國境內。 它提供各種加州消費者隱私權權限。  公司規範的 CCPA 會有數量的義務對那些用戶，包括揭露，一般資料保護規定 (GDPR)-，像是 '退出' 的特定的資料傳輸的及 '選擇集' 的消費者資料主體權利 (Dsr)未成年人獲取需求。
 
 CCPA 僅適用於公司商務加州滿足一或多個項目: （1） 已毛利率的年收益的多個 $25 萬個，或 （2） 超過 50%的其年度收入衍生自加州取用者個人的銷售詳細資訊或 (3) 購買、 銷售或每年共用超過 50000 個加州消費者的個人資訊。
 
@@ -35,7 +35,7 @@ CCPA 會在 2020 年 1 月 1 日生效。 不過，強制執行由加州律師�
 
 ## <a name="microsoft-and-the-ccpa"></a>Microsoft 和 CCPA
 
-執行商務加州的商業客戶，Microsoft 將會做為 「 服務提供者 」 相對於我們的線上服務與專業服務提供。  線上服務條款 (OST) 和 Microsoft 專業服務資料保護增訂版 (MSDPA) 的字詞已符合 CCPA 下的服務提供者的需求而通常已足夠用來允許要繼續傳輸資料的客戶我們的線上服務。 因此，沒有任何其他的契約性變更客戶所要求的能夠自信地仰賴 Microsoft 作為下 CCPA 服務提供者。
+執行商務加州的商業客戶，Microsoft 將會做為 '服務提供者' 相對於我們的線上服務與專業服務提供。  線上服務條款 (OST) 和 Microsoft 專業服務資料保護增訂版 (MSDPA) 的字詞已符合 CCPA 下的服務提供者的需求而通常已足夠用來允許要繼續傳輸資料的客戶我們的線上服務。 因此，沒有任何其他的契約性變更客戶所要求的能夠自信地仰賴 Microsoft 作為下 CCPA 服務提供者。
 
 OST 出設定，Microsoft 遵守所有法律或法規適用的線上服務，其中會包含 CCPA 其佈建。  
 
@@ -72,10 +72,10 @@ OST 出設定，Microsoft 遵守所有法律或法規適用的線上服務，其
 
 - 透明度/洩漏義務
 - 消費者權限來存取、 刪除及接收的資料，複本
-- 「 服務提供者 」 的定義是類似於 GDPR 如何定義 「 處理器 」 與類似的契約義務，和
-- 包含有關 「 控制器 」 的 GDPR 定義 「 公司 」 的定義。
+- '服務提供者 」 的定義是類似於 GDPR 如何定義具有類似的契約義務，' 處理器和
+- 圍繞 '控制站' 的 GDPR 定義 '企業' 的定義。
 
-CCPA 最大的差異在於核心需求，即可以選擇不向第三方銷售資料 (「出售」的廣泛定義，包括出於有價值的考量而共用資料)。
+CCPA 中最大的差異是以啟用 [退出從銷售資料的第三方 （'sale' 廣泛地定義為包含共用資料的重要考量) 的核心需求。
 
 **公司必須依據 CCPA 支援哪些權利？**
 
@@ -92,6 +92,10 @@ CCPA 需要管制的企業收集、 傳輸，以及銷售，而在其他方面�
 
 - CCPA 針對未滿 13 歲的兒童，採用符合兒童線上隱私權保護法 (The Children's Online Privacy Protection Act，COPPA) 的家長同意義務。
 - 如間 13 和 16 年舊的子系，CCPA 會有所沉重若要取得的子選擇加入的同意聲明。
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數 」 來評估您的風險
+
+[Microsoft 合規性分數](compliance-score.md)是在[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)中以協助您了解貴組織的合規性狀態，並採取動作，以協助降低風險的預覽功能。 [設定合規性分數](compliance-score-setup.md)之後, 使用預先設定的[CCPA 範本](https://go.microsoft.com/fwlink/?linkid=2118004)可協助組織符合此法規的需求。
 
 ## <a name="resources"></a>資源
 

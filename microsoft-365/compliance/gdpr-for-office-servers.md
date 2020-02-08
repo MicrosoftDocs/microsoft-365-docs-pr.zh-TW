@@ -1,5 +1,8 @@
 ---
 title: 適用於 Office 伺服器的 GDPR
+description: 深入了解如何在內部部署 Office 伺服器中解決 GDPR 需求。
+f1.keywords:
+- NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,13 +10,13 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-description: 深入了解如何在內部部署 Office 伺服器中解決 GDPR 需求。
-ms.openlocfilehash: 5723580e1a7bdbd997cac6d9cae6c1c915f27c92
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 5ef03851064104df6dcb00ac853bf7dff65cbfd3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749691"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596430"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>適用於內部部署 Office 伺服器的 GDPR
 

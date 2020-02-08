@@ -1,5 +1,7 @@
 ---
 title: 利用標籤分析檢視標籤使用量
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立您的保留標籤和敏感度標籤後，您將想要查看租用戶間使用標籤的情況。 利用 Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的標籤分析，您可以快速查看最常使用的標籤，以及套用標籤的位置。
-ms.openlocfilehash: 45cebbe67a773b76289920554d4e39fcbce789cc
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: e67ab03f3fd551b5b23e5632a42248e7248c9c93
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38710016"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600580"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>利用標籤分析檢視標籤使用量
 

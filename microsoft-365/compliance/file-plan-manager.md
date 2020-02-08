@@ -1,5 +1,7 @@
 ---
 title: 檔案計劃管理員的概觀
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 檔案計劃管理員提供對於保留標籤、保留標籤原則的進階管理功能，並且提供整合的方式讓標籤和標籤至內容活動周遊整個內容生命週期 – 從建立、共同作業、記錄宣告、保留，到最終的處置。
-ms.openlocfilehash: a79f24beb83c27873824973410daff953e989175
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d102d264fd3aeed20eb952caa6df8c73fe5c51b8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805886"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594574"
 ---
 # <a name="overview-of-file-plan-manager"></a>檔案計劃管理員的概觀
 

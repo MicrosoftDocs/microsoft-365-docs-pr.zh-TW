@@ -1,5 +1,7 @@
 ---
 title: 資料外洩防護概觀
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -16,15 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: 透過安全性與合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監控及自動保護整個 Office 365 的敏感性資訊。
-ms.openlocfilehash: e2fab1df550382f44e09629e5b82a079d6f6555f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 8d87367f86d3fd0f9ec5aab19ccd191a1cd20f17
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806616"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595420"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
+<!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
 > 針對已取得 Office 365 進階合規性授權的使用者，系統最近將資料外洩防護功能新增至 Microsoft Teams 聊天和頻道訊息，該功能可作為獨立選項提供，並包含在 Office 365 E5 和 Microsoft 365 E5 合規性中。 若要深入了解授權需求，請參閱 [Microsoft 365 租用戶層級服務授權指導方針](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)
 

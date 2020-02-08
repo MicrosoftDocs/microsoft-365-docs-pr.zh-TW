@@ -1,5 +1,7 @@
 ---
 title: 對 Microsoft Teams、Office 365 群組和 SharePoint 網站使用敏感度標籤 (公開預覽)
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以將標籤套用至 Microsoft Teams、Office 365 群組和 SharePoint 網站。
-ms.openlocfilehash: 0b5c4e8ef3611b417c59f7ac5b36f83a799e3397
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: 7fd19d9d8f84bd6463d61aec68dbd86c4fc627c0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238440"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601560"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>對 Microsoft Teams、Office 365 群組和 SharePoint 網站使用敏感度標籤 (公開預覽)
 

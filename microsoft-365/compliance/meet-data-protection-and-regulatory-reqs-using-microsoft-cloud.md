@@ -1,5 +1,7 @@
 ---
 title: 使用合規性管理員來符合使用Microsoft 雲端服務時的資料保護和法規要求
+f1.keywords:
+- NOCSH
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Microsoft 服務信任入口網站中的合規性管理員會提供工具，可追蹤、實作及管理控制項，在針對 Microsoft 雲端服務 (例如 Office 365 和 Microsoft Azure) 進行測量時，可協助貴組織達到安全性和資料保護法規遵循產業標準 (例如 GDPR、ISO 27001 與 27018，與 HIPAA)。合規性管理員可協助監督資料保護和隱私策略的人員，讓貴組織可管理法規遵循和風險評估程序。
-ms.openlocfilehash: 4c3f979caf2fdc3a2dc942e49fd33a09d2d1589a
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 52f6cbfb6e1c711b8b6bebec36bea965a9dc6e62
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "39268467"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602900"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft 合規性管理員 (傳統)
 

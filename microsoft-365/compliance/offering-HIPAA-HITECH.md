@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9224261cd0700796bdeccd35b68995c99300e591
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: d6f6dc2cc8cb9a36816fa843fcea969d65c94dac
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628089"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851890"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保險流通與責任 (HIPAA) & HITECH 動作
 
@@ -78,7 +78,7 @@ Microsoft 企業版雲端服務也會涵蓋 FedRAMP 評估。 Microsoft Azure �
 
 Microsoft 提供完整的公司或其供應商 BAA，涵蓋範圍內的 Microsoft 服務。
 
-Microsoft 的雲端服務： [HIPAA 業務關聯協議](https://aka.ms/BAA)是透過線上服務條款預設情況下所涵蓋的實體或下 HIPAA 業務夥伴的所有客戶可使用。 此網頁此 BAA 線所涵蓋的雲端服務的清單，請參閱 「 Microsoft 範圍雲端服務 」。
+Microsoft 的雲端服務： [HIPAA 業務關聯協議](https://aka.ms/BAA)是透過線上服務條款預設情況下所涵蓋的實體或下 HIPAA 業務夥伴的所有客戶可使用。 此 BAA 線所涵蓋的雲端服務清單中的這個網頁上，請參閱 「 Microsoft 範圍內的雲端服務'。
 
 Microsoft 專業服務服務： HIPAA 商務關聯修正是可用的範圍內的 Microsoft 專業服務要求您的 microsoft 服務的代表配合。
 
@@ -101,6 +101,10 @@ Microsoft 不能修改 HIPAA BAA，因為 Microsoft 服務都是一致的所有�
 - *HIPAA/HITECH 動作實作指南* [azure](https://aka.ms/azurehipaaguidance)和[Dynamics 365](https://go.microsoft.com/fwlink/?LinkID=257510)和 Office 365。 它們的隱私權、 安全性和法務人員和其他人負責 HIPAA 和 HITECH 動作實作撰寫而成，說明您的組織可以採取維護規範的具體步驟。
 - [若要設計安全狀況解決方案使用 Microsoft Azure 的實用指南](https://aka.ms/azureindustrysecurity)可協助您更加了解花費成功採用的雲端服務以安全方式。
 - [定址 HIPAA 安全性和隱私規定 Microsoft Cloud 中的](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf)提供規定需求的簡要概觀。 它也提供詳細的分析的 Microsoft 雲端服務如何建置與方法會對應至這些需求，以及如何建立可供合規性的解決方案的指引。
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數 」 來評估您的風險
+
+[Microsoft 合規性分數](compliance-score.md)是在[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)中以協助您了解貴組織的合規性狀態，並採取動作，以協助降低風險的預覽功能。 [設定合規性分數](compliance-score-setup.md)之後, 使用預先設定的[HIPAA Office 365 範本](https://go.microsoft.com/fwlink/?linkid=2118005)和[HIPAA Intune 範本](https://go.microsoft.com/fwlink/?linkid=2118006)可協助組織符合此法規的需求。
 
 ## <a name="resources"></a>資源
 

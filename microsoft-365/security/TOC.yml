@@ -463,11 +463,9 @@
                   href: ./office-365-security/deploy-teams-sensitivity-labels.md
                 - name: 在開發/測試環境中保護 Teams 檔案
                   href: ./office-365-security/secure-team-for-files-in-a-dev-test-environment.md
-            - name: 保護 SharePoint Online 網站與檔案
-              href: ./office-365-security/secure-sharepoint-online-sites-and-files.md
-              items:
-                - name: 在開發/測試環境中保護 SharePoint Online 網站
-                  href: ./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md
+            - name: 在開發/測試環境中保護 SharePoint Online 網站
+              href: ./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md
+              items: null
             - name: SIEM 伺服器整合
               href: ./office-365-security/siem-server-integration.md
             - name: Exchange Online Protection

@@ -2,23 +2,26 @@
 title: GDPR
 description: Microsoft 技術指導方針 - 提交刪除要求的 FASTTRACK 移轉工具組
 keywords: FastTrack 移轉、Microsoft 365 教育版、Microsoft 365 文件、GDPR
-author: MohitKumar
 localization_priority: Priority
 Robots: NOFOLLOW,NOINDEX
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: mohitku
+author: MohitKumar
 manager: laurawi
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: ff20eca7a9c1dd50b491a96853bab5c1069e070d
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 89ddb00045e2a17821ef2e841ad9a9b4c38d2219
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749695"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596460"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>提交刪除要求的 FASTTRACK 移轉工具組
 

@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 71cadaee5c9b4ddad83a02ed434afd6197fe8e00
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: 4e5ee52f9158df64e80f057adcfbf49c45f6dc31
+ms.sourcegitcommit: d4941dd0b598fb315e2c87083246ec3b26bbc032
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628119"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41779028"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Office 365 資料主體要求
 
@@ -1581,61 +1581,18 @@ Microsoft 也讓您能夠存取、匯出及刪除系統所產生的記錄，根�
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>存取和匯出系統所產生的記錄
 
-系統管理員可以存取與特定使用者的 Office 365 服務與應用程式相關聯、並由系統所產生的記錄。若要存取並匯出系統所產生的記錄：
+「資料可攜帶權」允許資料主體以 (「經過結構化、常用的、機器可讀取的、互通的」) 電子格式，要求其個人資料的複本，並可傳輸給其他資料控制者。 Azure 可支援這點；我們讓貴組織能以原生 JSON 格式，將資料匯出到您指定的 Azure 儲存體容器。
 
-1. 移至 [Microsoft 服務信任入口網站](https://servicetrust.microsoft.com/)，並使用 Office 365 全域系統管理員認證登入。
+>[!IMPORTANT]
+>您必須是租用戶系統管理員，才能從租用戶中匯出使用者資料。
 
-2. 在頁面頂端的 [隱私權]**** 下拉式清單中，按一下 [資料主體要求]****。
+#### <a name="azure-active-directory"></a>Azure Active Directory
 
-3. 在 [資料主體要求]**** 頁面的 [系統產生的記錄]**** 底下，按一下 [資料記錄匯出]****。
+至於客戶資料，Microsoft 提供了入口網站與產品內體驗，讓企業客戶的租用戶系統管理員能夠管理使用者識別資訊的匯出要求。
 
-    [資料記錄匯出] **** 頁面隨即出現。 系統會顯示一份貴組織所提交的匯出資料要求清單。
+#### <a name="service-specific-interfaces"></a>服務特定介面
 
-4. 若要為某個使用者建立要求，請按一下 [建立匯出資料要求]****。
-
-建立新要求後，該要求會列在 [資料記錄檔匯出] **** 頁面上，您可在其中追蹤其狀態。 要求完成後，您可以按一下連結來存取系統產生的記錄檔，系統會在該要求建立後 30 天內，將此記錄檔匯出至貴組織的 Azure 儲存位置。 系統將以常見、機器可讀取的檔案格式 (例如 JSON 或 XML) 來儲存資料。 如果您沒有 Azure 帳戶和 Azure 儲存位置，就必須為貴組織建立 Azure 帳戶和/或 Azure 儲存位置，讓「資料記錄檔匯出」工具可以匯出系統產生的記錄檔。 如需詳細資訊，請參閱 [Azure 儲存體簡介](https://docs.microsoft.com/azure/storage/common/storage-introduction)。
-
->[!NOTE]
->建立匯出資料要求時，不會透過資料記錄匯出工具匯出一些應用程式的系統產生資料。若要匯出這些應用程式的資料，請參閱[匯出系統所產生記錄資料的其他步驟](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data)。
-
-以下摘要說明如何使用資料記錄匯出工具來存取和匯出系統所產生的記錄：
-
-- **Microsoft 資料記錄檔匯出工具需要花費多少時間才能完成要求？：** 端視各種因素而定。 通常應該會在一到兩天內完成，但最多可能需要 30 天。
-
-- **輸出的格式是什麼？：** 輸出是電腦可讀取的結構化檔案，例如 XML、CSV 或 JSON。
-
-- **誰有權存取資料記錄匯出工具，以提交對系統所產生記錄檔的存取要求？：** Office 365 全域系統管理員將有權存取 GDPR Log Manager 公用程式。
-
-- **資料記錄檔匯出工具傳回的資料為何？：** 資料記錄匯出工具會傳回 Microsoft 儲存的系統產生的記錄檔。 匯出的資料會跨越不同的 Microsoft 服務，包括 Office 365、Azure 和 Dynamics。
-
-- **資料傳回給使用者的方式為何？：** 系統會將資料匯出至貴組織的 Azure 儲存體位置；貴組織的系統管理員將決定是否向使用者顯示此資料，或將此資料傳回給使用者。
-
-- **資料在系統產生的記錄中看起來會是麼樣子？：** 以 JSON 格式記錄的系統所產生記錄範例：
-
-   ```JSON
-   [{
-            "DateTime": "2017-04-28T12:09:29-07:00",
-             "AppName": "SharePoint",
-             "Action": "OpenFile",
-             "IP": "154.192.13.131",
-             "DevicePlatform": "Windows 1.0.1607"
-   }]
-   ```
-
->[!NOTE]
->基於安全性和稽核理由，部分功能不允許匯出或刪除含個人資訊的系統所產生記錄，以維持這些資訊的完整性。
-
-您也可以透過搜尋安全性與合規性中心內的 Office 365 稽核記錄，來擷取部分 Microsoft 最多人使用的服務 (例如 Exchange Online、SharePoint Online、商務用 Skype、Yammer 和 Office 365 群組) 的產品和服務使用情況資料。 如需詳細資訊，請參閱附錄 A 中的[在 DSR 調查時使用 Office 365 稽核記錄搜尋工具](#use-the-office-365-audit-log-search-tool-in-dsr-investigations)。您可能有興趣使用稽核記錄，因為可將權限指派給貴組織中的其他人 (例如您的法務人員) 來搜尋稽核記錄，以存取此資料。
-
-#### <a name="national-clouds"></a>國家雲
-
-全域 IT 系統管理員必須執行下列動作來匯出下列國家雲中系統所產生的記錄資料：
-
-- Office 365 Germany - [移至德國的 Microsoft 服務信任入口網站](https://aka.ms/MicrosoftSTPGermany)並完成上述步驟。
-
-- Office 365 US Government - [移至 Office 365 系統管理入口網站](https://portal.office365.us)，將要求提交給 Microsoft 支援服務。
-
-- 由 21Vianet (中國) 運作的 Office 365 - [移至由 21Vianet 運作的 Office 365 系統管理入口網站](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage)，移至 [商務]****  >  [訂用帳戶]****  >  [隱私權]****  >  [GDPR]****，然後輸入必要的資訊。
+Microsoft 提供直接透過既有的應用程式開發介面 (API) 或特定服務的使用者介面 (UI)，來探索客戶資料的能力。在上述服務各自的參考文件中有詳細資料，說明了適用的 CRUD (建立、讀取、更新、刪除) 作業。
 
 ### <a name="deleting-system-generated-logs"></a>刪除系統產生的記錄
 

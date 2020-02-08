@@ -5,6 +5,8 @@ keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR, CC
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ca3da7e4fcfc5e639ea29b41f92fbfbb2711d450
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: fee4e0472a6d9b08bdab4c5340097d4222aac1d9
+ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "39268472"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41722014"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Dynamics 365 資料主體要求
 
@@ -197,134 +200,6 @@ Dynamics 365 for Finance and Operations 和 ***Dynamics 365 for Talent*** 兩者
 - 您可以將客戶資料匯出為 Excel 檔案。 之後您可以在 Excel 中編輯要包含在可攜性要求中的客戶資料，然後儲存為經常使用的機器可讀取格式，例如 .csv 或 .xml。 如需詳細資訊，請參閱[將您的商務資料匯出至 Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data)。
 - 您可以將客戶資料匯出為 Excel 檔案。 之後您可以在 Excel 中編輯要包含在可攜性要求中的客戶資料，然後儲存為經常使用的機器可讀取格式，例如 .csv 或 .xml。 如需詳細資訊，請參閱[將您的商務資料匯出至 Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data)。
 
-### <a name="microsoft-social-engagement"></a>Microsoft Social Engagement
-
-由於 Microsoft Social Engagement 程序個人資料可能在客戶資料與社交內容中找到，此應用程式提供一個唯一的方式來解決從社交網路擷取的個人資料的相關 DSR 要求。 社交內容是可透過社交媒體網路 (例如 Twitter、Facebook 和 YouTube) 和資料索引或資料彙總服務公開收集取得的內容，以回應客戶在 Microsoft Social Engagement 中執行的搜尋查詢。 社交內容不是客戶資料。 Microsoft 線上服務條款中說明有關處理、使用與儲存社交內容的進一步限制。
-
-### <a name="finding-personal-data"></a>尋找個人資料
-
-回應資料主體要求的第一個步驟是搜尋並找出該要求主體的個人資料。Microsoft Social Engagement 會儲存下列資料：
-
-#### <a name="for-social-media-users"></a>針對社交媒體使用者
-
-- Social Engagement 從社交平台取得的社交媒體使用者資料 (在 Social Engagement 中稱為「作者**」)。它可以包含名稱、使用者名稱、設定檔圖片、位置、網站及簡介 (如果作者有提供)。
-- 作者標籤用來分組和分類作者 (例如，影響者、競爭對手或支持者)。
-
-#### <a name="for-employees"></a>針對員工
-
-- 包含員工姓名、連絡人資訊和設定檔圖片的使用者設定檔，會在 Office 365 中進行管理。
-- 已建立貼文通知和趨勢通知之員工所提供的電子郵件地址。
-- 在 Social Engagement 中經員工驗證的社交媒體帳戶 (在 Social Engagement 中稱為「社群網路基本資料**」)，用以在社交平台上與其他人互動。這些社交媒體帳戶的擁有者可能是員工或組織，且包含員工在社交平台上註冊帳戶時所提供的資料。這些設定檔在社交媒體上代表了組織，且會用來在 Social Engagement 應用程式內，代表該組織與貼文互動。
-- Power BI 中的使用者名稱 (如果您的組織使用適用於 Power BI 的 [Social Engagement 內容套件](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi)來分析社交媒體上的小組表現)。
-
-第一個步驟 (尋找並檢閱上述的個人資料)，可協助您判斷資料主體要求是否符合貴組織的需求，以便接受或拒絕。 例如，在找出並檢閱個人資料後，您可能因為這樣做會對其他人的權利和自由造成負面影響，而判斷要求不符合貴組織的需求。
-
-#### <a name="social-media-users-authors"></a>社交媒體使用者 (作者)
-
-- 若要尋找其個人資料，請依照[找出並刪除作者](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#find-and-delete-an-author)中的前四個步驟。
-- 員工可以建立 Social Engagement 規則，在社交平台上搜尋特定已定義的內容；這些搜尋規則可包含作者名稱。為了確保您可找到這些規則，請檢閱適當帳戶的社交帳戶搜尋規則，例如，[Twitter](https://docs.microsoft.com/dynamics365/social-engagement/add-rules-search-topic#add-a-private-messages-rule)、[Instagram](https://docs.microsoft.com/dynamics365/social-engagement/add-rules-search-topic#add-a-custom-sources-rule) 和 [YouTube](https://docs.microsoft.com/dynamics365/social-engagement/add-rules-search-topic#add-a--rule)。
-- 若要尋找某作者的作者標記，請先依[作者](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/understand-filters#authors)[篩選文章](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/use-filters#add-edit-or-remove-a-filter)，然後[檢視作者標記](https://go.microsoft.com/fwlink/?linkid=864795)。
-
-##### <a name="your-employees"></a>您的員工
-
-尋找：
-
-- 使用者設定檔，移至[系統管理中心](https://portal.office.com/adminportal/home)。 在 [系統管理中心]**** 中選取 [使用者]****。 在 [作用中使用者]**** 頁面上，在清單上搜尋使用者。 在 Social Engagement 中，請移至 [設定] \> [使用者管理] **** 以查看從 Office 365 自動同步處理的資訊。
-- 警示的收件者，請依照[以系統管理員的身分管理警示收件者](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)中的前兩個步驟。
-- 由員工所輸入的社群網路基本資料，請移至 [設定] \> [社群網路基本資料]****。(如需詳細資訊，請參閱[管理社群網路基本資料](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-social-profiles)。)
-- Power BI 中的使用者名稱，請開啟 Social Engagement Power BI 儀表板並依員工名稱進行篩選。
-
-### <a name="providing-a-copy-of-personal-data"></a>提供個人資料的副本
-
-GDPR 賦予了資料主體取得所要求個人資料副本的權利。找到包含個人資料且可能會回應要求的客戶資料之後，您與貴組織有權決定是否要向資料主體提供副本。
-
-#### <a name="social-media-users-authors"></a>社交媒體使用者 (作者)
-
-- 若要匯出作者的個人資料，請依照[匯出作者資訊](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#export-author-information)中所述的步驟，將該資料匯出至 Excel 檔案。
-- 若要擷取已新增至特定作者的作者標記，您可以[匯出作者標記資料](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/author-tags#export-author-tags-data)。
-
-##### <a name="your-employees"></a>您的員工
-
-匯出：
-
-- 來自使用者設定檔的客戶資料，請移至[系統管理中心](https://portal.office.com/adminportal/home)。 在 [系統管理中心]**** 中選取 [使用者]****。 在 [作用中使用者]**** 頁面上，搜尋您想要匯出其資料的使用者。 刪除目標使用者以外的所有使用者，然後選取 [匯出]**** 將資料匯出為 .csv 檔案，您可以使用 Excel 來檢視該檔案的資訊。
-- 警示收件者的電子郵件地址 (警示中的唯一客戶資料)。 請依照[以系統管理員的身分管理警示收件者](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)中的步驟。 然後選取 [匯出]**** 來下載包含此收件者警示的 Excel 清單。
-- 來自 Power BI 的使用者名稱：[互動報告](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi)會顯示社交媒體上小組表現報表中的使用者名稱。若要匯出此資料，依 PowerBI 儀表板或[報表](https://docs.microsoft.com/power-bi/power-bi-report-add-filter)中的使用者來進行篩選，並[將該資料匯出](https://docs.microsoft.com/power-bi/service-export-to-pbix)。
-
-### <a name="rectifying-personal-data"></a>修正個人資料
-
-若要修正不精準或不完整的個人資料：
-
-#### <a name="social-media-users-authors"></a>社交媒體使用者 (作者)
-
-- 您必須要求資料擁有者 (作者) 在社交平台上 (例如 Twitter、WordPress 或 Tumblr) 進行變更。資料主體擁有社交媒體帳戶中的資料，因此他們是唯一可以進行變更的人員。一旦作者進行變更，Social Engagement 會自動同步處理已修訂的詳細資料。
-- 請依照在[變更作者標記](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/author-tags#change-author-tags)中的步驟，製作標籤。
-
-##### <a name="your-employees"></a>您的員工
-
-- 使用者設定檔：若要變更使用者設定檔中的客戶資料，請參閱[變更 Office 365 中的使用者名稱和電子郵件地址](https://support.office.com/article/change-a-user-name-and-email-address-in-office-365-fb5ac074-e203-4e1f-9843-b9d1a3e03297)與[將設定檔相片新增至 Office 365](https://support.office.com/article/add-your-profile-photo-to-office-365-2eaf93fd-b3f1-43b9-9cdc-bdcd548435b7)。 這些變更會在社交參與自動同步。 若要尋找檔案，請移至 [設定]**** \> [使用者管理]****。
-
-- 警示收件者：您可以[變更警示](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#change-an-alert)。
-
-### <a name="restricting-the-processing-of-personal-data"></a>限制處理個人資料
-
-#### <a name="social-media-users-authors"></a>社交媒體使用者 (作者)
-
-若要在 Social Engagement 中停止處理作者的客戶資料，請[刪除作者](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#delete-an-author)。
-
-這會封鎖對此資料主體的資料和任何未來貼文繼續進行處理；同時刪除所有此作者的相關資料及其所撰寫的資料。每當 Social Engagement 取得新文章時，它會自動檢查作者是否在稍早已遭到刪除，並捨棄來自已刪除作者的文章。這對社交平台上的使用者帳戶不會造成任何影響。
-
-##### <a name="your-employees"></a>您的員工
-
-- 若要停止處理員工的客戶資料，您可以在 Office 365 中[移除其授權](https://support.office.com/article/remove-licenses-from-users-in-office-365-for-business-9b497c85-d0a4-4735-80fa-d3565bc05bd1)。 這樣就會刪除所有 Social Engagement 相關項目，例如使用者角色和設定檔、所有相關的使用者定義自訂設定、警示、活動圖及串流。 不會刪除搜尋主題並社交設定檔。不過，系統管理員會繼承已刪除使用者社交設定檔的擁有權，並且可以在要求時將它們刪除。
-- 若要限制傳送警示電子郵件訊息，您可以按照[以系統管理員的身分管理警示收件者](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)中所述的步驟，從該電子郵件地址所新增到的所有警示中，將其移除。
-
-### <a name="deleting-personal-data"></a>刪除個人資料
-
-GDPR 賦予了資料主體在某些情況下，向控制者要求刪除其個人資料的權利。從組織中移除這類資料的「被遺忘權」，是 GDPR 中的關鍵保護機制。
-
-#### <a name="social-media-users-authors"></a>社交媒體使用者 (作者)
-
-若要在 Social Engagement 中永久刪除某作者的所有個人資料，請刪除此作者的完整社群網路基本資料。請參閱[](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors)[刪除作者](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#delete-an-author)。  
-
-一旦這麼做，就沒有方法可復原。這會在 Social Engagement 上刪除所有此作者的相關資料及其所撰寫的資料，並封鎖對其資料和未來的貼文繼續進行處理。每當 Social Engagement 取得新貼文時，會自動檢查作者是否在稍早已遭到刪除，並捨棄來自已刪除作者的文章。這對社交平台上的使用者帳戶不會造成任何影響。
-
-若要刪除作者標記，請參閱[移除作者標記](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/author-tags#remove-author-tags)。
-
->[!NOTE]
->如果系統要求您移除某個特定作者的相關資訊，建議您先確認該作者的身分以驗證要求。 若要確認他們的身分識別，您可以在作者的社交媒體帳戶要求私人訊息。
-
-Social Engagement 已實作來自多個社交平台 (例如 Twitter、WordPress、Tumblr) 的合規性摘要，來處理直接在社交平台上觸發的貼文刪除等類的訊號。系統會透過每個 Social Engagement 安裝自動啟用這項功能，且不需要任何使用者互動。此外，Social Engagement 也提供了讓 Social Engagement 的社交內容上所建置的服務 (例如 Dynamics 365 for Customer Engagement) 繼承這些訊號的機制。
-
-##### <a name="your-employees"></a>您的員工
-
-若要永久刪除某員工的所有客戶資料，您可以在 Office 365 中[移除其授權](https://support.office.com/article/remove-licenses-from-users-in-office-365-for-business-9b497c85-d0a4-4735-80fa-d3565bc05bd1)。
-
-- 這會刪除所有與 Social Engagement 相關的項目 (例如使用者角色和設定檔、所有相關的使用者定義自訂設定、警示、活動圖及串流)。搜尋主題和社群網路基本資料不會刪除。(系統管理員會繼承已刪除使用者之社群網路基本資料的擁有權，並可以依要求將其刪除。)
-- 系統會在 Social Engagement 中自動同步處理這些變更。若要尋找這些變更，請移至 [設定] \> [使用者管理] ****。
-- 當員工個人資料遭到刪除時，系統會將 PowerBI 互動報表中的員工項目匿名化。
-
-您可以[刪除社群網路基本資料](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-social-profiles#delete-a-social-profile)。
-
-若要將電子郵件從它所新增到的所有警示中刪除，請依照[以系統管理員的身分管理警示收件者](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)。[](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)中所述的步驟
-
-### <a name="exporting-personal-data"></a>匯出個人資料
-
-您可透過電子格式將資料主體的個人資料提供給他們。
-
-#### <a name="social-media-users-authors"></a>社交媒體使用者 (作者)
-
-若要匯出作者的個人資料，請依照下列[匯出作者資訊](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-authors#export-author-information)中所述的步驟，將該資料匯出至 Excel 檔案。
-
-若要擷取已新增至特定作者的作者標記，您可以[匯出作者標記資料](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/author-tags#export-author-tags-data)。
-
-##### <a name="your-employees"></a>您的員工
-
-匯出：
-
-- 來自使用者設定檔的客戶資料，請移至[系統管理中心](https://portal.office.com/adminportal/home)。 在 [系統管理中心]**** 中選取 [使用者]****。 在 [作用中使用者]**** 頁面上，搜尋您想要匯出其資料的使用者。 刪除目標使用者以外的所有使用者，然後選取 [匯出]**** 將資料匯出為 .csv 檔案，您可以使用 Excel 來檢視該檔案的資訊。
-- 警示收件者的電子郵件地址 (警示中唯一的個人資料)。請依照在[以系統管理員的身分管理警示收件者](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator)中的步驟。然後選取 [匯出]**** 來下載包含此收件者的警示 Excel 清單。
-- 來自 Power BI 的使用者名稱：[互動報告](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi)會顯示社交媒體上小組表現報表中的使用者名稱。若要匯出此資料，請依 PowerBI 儀表板或[報表](https://docs.microsoft.com/power-bi/power-bi-report-add-filter)中的使用者來進行篩選，並[將該資料匯出](https://docs.microsoft.com/power-bi/service-export-to-pbix)。
 
 ## <a name="part-2-responding-to-dsrs-for-system-generated-logs"></a>第 2 部分：回應系統所產生記錄的 DSR
 

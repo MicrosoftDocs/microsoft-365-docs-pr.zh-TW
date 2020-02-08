@@ -1,5 +1,8 @@
 ---
 title: 適用於 Exchange Server 的 GDPR
+description: 深入了解如何在內部部署 Exchange Server 中解決 GDPR 需求。
+f1.keywords:
+- NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,13 +10,13 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-description: 深入了解如何在內部部署 Exchange Server 中解決 GDPR 需求。
-ms.openlocfilehash: 6f353f6902458671f0bd21d44035753299023e30
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 7d7837716cd453ee3331dced52fc82872a09fc8f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076999"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596440"
 ---
 # <a name="gdpr-for-exchange-server"></a>適用於 Exchange Server 的 GDPR
 

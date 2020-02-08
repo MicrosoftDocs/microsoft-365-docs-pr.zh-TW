@@ -1,5 +1,7 @@
 ---
 title: 自動化事件導向保留
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本主題說明如何使用 Microsoft 365 REST API 透過事件進行自動化保留，設定您的商務程序流程。
-ms.openlocfilehash: b2aadaf4e450167cf7bff864569652c05deb7298
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 46276e1a40df8c5491d569337a683666984be23a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807432"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596320"
 ---
 # <a name="automate-event-based-retention"></a>自動化事件型保留
 

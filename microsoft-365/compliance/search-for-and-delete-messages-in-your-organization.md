@@ -1,5 +1,7 @@
 ---
 title: 搜尋並刪除 Office 365 組織中的電子郵件
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用 Office 365 中安全性與合規性中心的搜尋和清除功能，可搜尋並刪除組織中所有信箱的電子郵件訊息。
-ms.openlocfilehash: 53ec50ddd42e1d17580f4b1581ef8d8fe02f97bf
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 27340bf832feee0dc7b5222f187816b0dfa1bb59
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259971"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601550"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>搜尋並刪除 Office 365 組織中的電子郵件
 
@@ -43,7 +45,7 @@ ms.locfileid: "41259971"
     
 - 您必須使用安全性與合規性中心 PowerShell 來刪除郵件。 如需如何連線的相關指示，請參閱[步驟 2](#step-2-connect-to-security--compliance-center-powershell)。
     
-- 每個信箱一次可以移除最多 10 個項目。 因為搜尋和移除郵件的功能應該是事件回應工具，此限制可以協助確保從信箱快速移除郵件。 這項功能不是用來清除使用者信箱。 若要刪除超過 10 個項目，您可以使用 Exchange Online PowerShell 中的 **Search-Mailbox -DeleteContent** 命令。 請參閱[搜尋並刪除郵件](search-for-and-delete-messagesadmin-help.md)。
+- 每個信箱一次可以移除最多 10 個項目。 因為搜尋和移除郵件的功能應該是事件回應工具，此限制可以協助確保從信箱快速移除郵件。 這項功能不是用來清除使用者信箱。
     
 - 透過搜尋及清除動作，您最多可以在內容搜尋刪除 50,000 個信箱內的項目。 如果內容搜尋 (您在[步驟 1 ](#step-1-create-a-content-search-to-find-the-message-to-delete)中建立) 中有超過 50,000 個來源信箱，則您在步驟 3 中建立的清除動作將失敗。 請參閱[詳細資訊](#more-information)章節以取得搜尋並清除超過 50,000 個信箱的執行提示。 
     

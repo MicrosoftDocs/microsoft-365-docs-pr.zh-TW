@@ -1,5 +1,7 @@
 ---
 title: 自訂內建機密資訊類型
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 在內容中尋找機密資訊時，您需要以所謂的規則來說明資訊。資料外洩防護 (DLP) 包含您可以立即使用之最常用機密資訊類型的規則。若要使用這些規則，您必須將其包含在原則中。您也許想要調整這些內建規則以符合貴組織的特定需求，您可以藉由建立自訂機密資訊類型來完成。本主題說明如何自訂其中包含現有規則集合的 XML 檔案，以偵測更大範圍的潛在信用卡資訊。
-ms.openlocfilehash: 5fbc0e9ffba0237462062e19edb9ca0458675b04
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 4c61ab1a60b6259509d2928e22d31e447a996ec9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38708056"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595490"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自訂內建機密資訊類型
 

@@ -5,6 +5,8 @@ keywords: Dynamics 365、Microsoft 365、Microsoft 365 教育版、Microsoft 365
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 92979fd66ac2d51c48b7a0836be5eb1133ae242a
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: ff0a6c7a0a6d8e82110daa7d7e294ce16aa8e2db
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "39266106"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594463"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>GDPR 規定的 Dynamics 365 和外洩通知
 

@@ -1,5 +1,7 @@
 ---
 title: 使用網路上傳匯入組織的 PST 檔案
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 適用於系統管理員：了解如何使用網路上傳將多個 PST 檔案大量匯入 Office 365 中的使用者信箱。
-ms.openlocfilehash: a66655fd03a379d56e31ca0960f433d659265edc
-ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
+ms.openlocfilehash: 2db98c36091e6cc5be2eb5fa451b76a66f8ac49f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995293"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601340"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-office-365"></a>使用網路上傳將組織的 PST 檔案匯入 Office 365
 

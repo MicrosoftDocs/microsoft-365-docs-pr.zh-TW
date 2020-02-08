@@ -1,5 +1,7 @@
 ---
 title: 將保護套用至 Office 365 中的個人資料
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -17,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用資料外洩防護 (DLP) 原則來保護 Office 365 中的個人資料。
-ms.openlocfilehash: e3f7bdc589b34da0aad8baabd5b54bcfd59f25b9
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: b529a6d58537c4effca3cf198dcf807a0680129d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256780"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596060"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>將保護套用至 Office 365 中的個人資料
 
@@ -249,9 +251,9 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 
 詳細資訊：
 
--   [瞭解 SharePoint 中的權限層級](https://support.office.com/zh-TW/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   [瞭解 SharePoint 中的權限層級](https://support.office.com/en-US/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
 
--   [了解 SharePoint 群組](https://support.office.com/zh-TW/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   [了解 SharePoint 群組](https://support.office.com/en-US/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>SharePoint 和商務用 OneDrive 文件庫的外部共用原則
 
@@ -303,7 +305,7 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 
 -   [管理您的 SharePoint Online 環境外部共用](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
--   [與您組織外的人員共用網站或文件](https://support.office.com/zh-TW/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   [與您組織外的人員共用網站或文件](https://support.office.com/en-US/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
 ### <a name="site-level-device-access-policies"></a>網站層級裝置存取控制
 

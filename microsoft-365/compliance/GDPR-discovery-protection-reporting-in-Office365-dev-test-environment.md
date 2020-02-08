@@ -1,5 +1,8 @@
 ---
 title: Office 365 開發/測試環境中的 GDPR 探索、保護和報告
+description: 展示 Office 365 中的 GDPR 功能。
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -14,13 +17,13 @@ localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
-description: 展示 Office 365 中的 GDPR 功能。
-ms.openlocfilehash: 98339aeec2c89edd4fead1482f98aa3d9f316856
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: f7bf98da5d358f9b76f38372353a1c2a9d0d45d3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38749719"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594087"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Office 365 開發/測試環境中的 GDPR 探索、保護和報告
 

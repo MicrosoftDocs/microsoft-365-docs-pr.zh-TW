@@ -1,5 +1,7 @@
 ---
 title: 使用精確資料比對建立自訂敏感性資訊類型
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
-ms.openlocfilehash: 90fde2475529200ab53411b5cb0c6d3c64de2fee
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 03af99b6e3a156b3d0e14bcadb75911253c837e3
+ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515664"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836723"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -72,10 +74,12 @@ ms.locfileid: "41515664"
 
 2. 以 .csv 檔案格式將敏感性資料結構化，使得第一列包含用於以 EDM 為基礎的分類的欄位名稱。 在您的 .csv 檔案中，您可能會有欄位名稱，例如 "ssn"、"birthdate"、"firstname"、"lastname" 等等。 舉例來說，我們的 .csv 檔案稱為 *PatientRecords.csv*，且其資料行包括 *PatientID*、 *MRN*、 *LastName*、 *FirstName*、 *SSN* 等。
 
-3. 以 .xml 格式定義用於敏感性資訊資料庫的結構描述 (類似以下的範例)。 將此結構描述檔案命名為 edm.xml，然後設定它，使得資料庫中的每一個資料行都會有使用語法 \<Field name="" searchable=""/\> 的行。
+3. 以 .xml 格式定義用於敏感性資訊資料庫的結構描述 (類似以下的範例)。 將此結構描述檔案命名為  **edm.xml**，然後設定它，使得資料庫中的每一個資料欄，都會有使用下列語法的行： 
 
-      - 使用資料行名稱作為 *欄位名稱* 值。
-      - 對您想讓它可供搜尋最多 5 個欄位的欄位，使用 *searchable="true"* 。 您必須至少將一個欄位指定為可搜尋。
+`\<Field name="" searchable=""/\>`.
+
+- 使用資料行名稱作為 *欄位名稱* 值。
+- 對您想讓它可供搜尋最多 5 個欄位的欄位，使用 *searchable="true"* 。 您必須至少將一個欄位指定為可搜尋。
 
 例如，下列 .xml 檔會為病患記錄資料庫定義結構描述，並將五個欄位指定為可搜尋： *PatientID*、 *MRN*、 *SSN*、 *Phone* 以及  *DOB* 
 
@@ -126,9 +130,9 @@ New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>編輯以 EDM 為基礎的分類的結構描述
 
-如果您想要變更 edm.xml 檔案，例如變更哪些欄位用於以 EDM 為基礎的分類，請遵循下列步驟進行：
+如果您想要變更 **edm.xml** 檔案，例如變更哪些欄位用於以 EDM 為基礎的分類，請遵循下列步驟進行：
 
-1. 編輯您的 edm.xml 檔案 (這是本文 [定義結構描述](#define-the-schema-for-your-database-of-sensitive-information) 一節所討論的檔案)。
+1. 編輯您的 **edm.xml** 檔案 (這是本文 [定義結構描述](#define-the-schema-for-your-database-of-sensitive-information) 一節所討論的檔案)。
 
 2. [連線至 Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
 
@@ -184,7 +188,7 @@ Remove-DlpEdmSchema -Identity patientrecords
 
 1. 以 .xml 格式建立規則套件 (使用 Unicode 編碼方式)，類似下列範例。 (您可以複製、修改及使用我們的範例)。
 
-當您設定規則套件時，請務必正確地參照您的 .csv 檔案和 edm.xml 檔案。 您可以複製、修改及使用我們的範例。 在此範例 xml 中，必須自訂下列欄位，才能建立您的 EDM 敏感性類型：
+當您設定規則套件時，請務必正確地參照您的 .csv 檔案和 **edm.xml** 檔案。 您可以複製、修改及使用我們的範例。 在此範例 xml 中，必須自訂下列欄位，才能建立您的 EDM 敏感性類型：
 
 - **RulePack id 與 ExactMatch id**：使用 [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 產生 GUID。
 
@@ -249,7 +253,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 此時，您已設定以 EDM 為基礎的分類。 下一個步驟是要對敏感性資料編製索引，然後上傳已編製索引的資料。
 
-回想一下前面的程序，我們的 PatientRecords 結構描述將五個欄位定義為可搜尋： *PatientID*、 *MRN*、 *SSN*、 *Phone* 和  *DOB*。 我們的範例規則套件包含這些欄位，並會參照資料庫結構描述檔案 (edm.xml)，一個 *ExactMatch* 項目會有一個可搜尋欄位。 請考慮下列 ExactMatch 項目：
+回想一下前面的程序，我們的 PatientRecords 結構描述將五個欄位定義為可搜尋： *PatientID*、 *MRN*、 *SSN*、 *Phone* 和  *DOB*。 我們的範例規則套件包含這些欄位，並會參照資料庫結構描述檔案 (**edm.xml**)，一個  *ExactMatch*  項目會有一個可搜尋欄位。 請考慮下列 ExactMatch 項目：
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
@@ -287,18 +291,18 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 #### <a name="set-up-the-security-group-and-user-account"></a>設定安全性群組和使用者帳戶
 
-1. 以全域系統管理員身分，前往系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com/))，並 [建立名為 EDM\_DataUploaders 的安全性群組](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) 。
+1. 以全域系統管理員身分，前往系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com/))，並 [建立名為  **EDM\_DataUploaders** 的安全性群組](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) 。
 
-2. 將一或多個使用者新增至 *EDM\_DataUploaders* 安全性群組  (這些使用者將管理敏感性資訊的資料庫)。
+2. 將一或多個使用者新增至 **EDM\_DataUploaders** 安全性群組  (這些使用者將管理敏感性資訊的資料庫)。
 
 3. 請確定管理敏感性資料的每個使用者，為用於 EDM 上傳代理程式之電腦上的本機系統管理員。
 
 #### <a name="set-up-the-edm-upload-agent"></a>設定 EDM 上傳代理程式
 
 >[!NOTE]
-> 在開始此程序之前，請確定您是  *EDM\_DataUploaders*  安全性群組的成員，以及您電腦上的本機系統管理員。
+> 在開始此程序之前，請確定您是  **EDM\_DataUploaders**  安全性群組的成員，以及您電腦上的本機系統管理員。
 
-1. 下載並安裝 [EDM 上傳代理程式](https://go.microsoft.com/fwlink/?linkid=2088639)。 根據預設，安裝位置應該是 C:\\Program Files\\Microsoft\\EdmUploadAgent。
+1. 下載並安裝 [EDM 上傳代理程式](https://go.microsoft.com/fwlink/?linkid=2088639)。 根據預設，安裝位置應該是  **C:\\Program Files\\Microsoft\\EdmUploadAgent**。
 
 > [!TIP]
 > 若要取得所支援命令參數的清單，請執行 agent no 無引數。 例如 'EdmUploadAgent.exe'。
@@ -313,7 +317,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 #### <a name="index-and-upload-the-sensitive-data"></a>編製索引及上傳敏感性資料
 
-將敏感性資料檔案 (回想我們的範例是 *PatientRecords.csv*) 儲存至電腦上的本機磁碟機  (我們將範例 *PatientRecords.csv* 檔案儲存至 C:\\Edm\\Data)。
+將敏感性資料檔案 (回想我們的範例是 **PatientRecords.csv**) 儲存至電腦上的本機磁碟機  (我們將範例 **PatientRecords.csv** 檔案儲存至 C: **C:\\Edm\\Data**。)
 
 若要為敏感性資料編製索引並上傳，請在 Windows 命令提示字元中執行下列命令：
 
@@ -327,13 +331,17 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
-範例：**EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
+例如，
+
+> **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
 
 若要上傳已編製索引的資料，請在 Windows 命令提示字元中執行下列命令：
 
 `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
-範例：**EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
+例如， 
+
+> **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
 若要確認您的敏感性資料已上傳，請在 Windows 命令提示字元中執行下列命令：
 

@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解用來復原遺失的 Office 365 客戶金鑰的可用性金鑰。
-ms.openlocfilehash: a4d0bdecfeddb83ffbe47f397f2bda646138b081
-ms.sourcegitcommit: b22d6dea2768679428d512ea2bbbdf8748f71712
+ms.openlocfilehash: 72fbfd139b273d38a0cb017d7bbca3d87c16efb2
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845362"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862083"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>了解可用性金鑰的 Office 365 客戶金鑰
 
@@ -94,7 +94,7 @@ SharePoint online、 商務用 OneDrive 和小組檔案可用性機碼是永不�
 
 ## <a name="how-exchange-online-and-skype-for-business-use-the-availability-key"></a>Exchange Online 和商務用 Skype 如何使用可用性機碼
 
-當您建立 DEP 使用客戶金鑰時，Office 365 會產生該 DEP 相關聯的資料加密原則金鑰 （DEP 索引鍵） 此服務會將 DEP 金鑰加密三次： 一次每個客戶金鑰與一次對可用性機碼。 儲存僅限 DEP 金鑰加密的版本，並只可以使用客戶金鑰或可用性金鑰解密 DEP 金鑰。 DEP 鍵然後用來加密信箱金鑰，然後用來加密個別的信箱。
+當您建立 DEP 使用客戶金鑰時，Office 365 會產生該 DEP 相關聯的資料加密原則金鑰 （DEP 索引鍵） 此服務會將 DEP 金鑰加密三次： 一次每個客戶金鑰與一次對可用性機碼。 儲存僅限 DEP 金鑰加密的版本，並只可以使用客戶金鑰或可用性金鑰解密 DEP 金鑰。 DEP 鍵然後用來加密信箱金鑰，加密個別的信箱。
   
 Office 365 會遵循此程序來解密，客戶會使用服務時提供資料：
   
@@ -171,7 +171,7 @@ SharePoint online、 商務用 OneDrive 和小組檔案，可用性的重點是�
 
 ### <a name="exchange-online-and-skype-for-business-availability-key-logging"></a>Exchange Online 與 Skype for Business 可用性索引鍵記錄
 
-Exchange Online 和商務用 Skype 會自動在暫時性錯誤期間使用的可用性機碼。 這個後援發生時，Office 365 會發佈客戶顯示記錄檔可存取的安全性與合規性中心。 可用性金鑰作業的稽核記錄檔記錄就會產生這些服務切換到使用可用性金鑰每次。 新的記錄類型，呼叫活動類型 「 後援到可用性的金鑰 」 與 「 客戶金鑰服務加密 」 可讓系統管理員來篩選[整合的稽核記錄](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)搜尋結果，以檢視可用性索引鍵記錄。 可用性索引鍵記錄取得產生只有當客戶金鑰可用來存取資料時，不能用於 Microsoft 服務受管理的機碼。
+Exchange Online 和商務用 Skype 會自動在暫時性錯誤期間使用的可用性機碼。 這個後援發生時，Office 365 會發佈客戶顯示記錄檔可存取的安全性與合規性中心。 可用性金鑰作業的稽核記錄檔記錄就會產生這些服務會使用可用性金鑰每次。 新的記錄類型，呼叫活動類型 「 後援到可用性的金鑰 」 與 「 客戶金鑰服務加密 」 可讓系統管理員來篩選[整合的稽核記錄](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)搜尋結果，以檢視可用性索引鍵記錄。 可用性索引鍵記錄取得產生只有當客戶金鑰可用來存取資料時，不能用於 Microsoft 服務受管理的機碼。
 
 記錄包含屬性，例如日期、 時間、 活動、 組織識別碼，以及資料加密原則識別碼。 記錄會提供 Office 365 整合的稽核記錄的一部分且可存取 [Office 365 安全性與合規性中心的稽核記錄搜尋] 索引標籤。
 

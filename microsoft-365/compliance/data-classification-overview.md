@@ -1,5 +1,7 @@
 ---
 title: 開始使用資料分類 (預覽)
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 資料分類儀表板可讓您深入了解貴組織所發現及分類的敏感性資料。
-ms.openlocfilehash: 775802f8aecf04668641c2e7d6b24e645a7c9f90
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 06fe15af513a737ac7669a3115891b7b731d7458
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823735"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595450"
 ---
 # <a name="data-classification-overview-preview"></a>資料分類概觀 (預覽)
 

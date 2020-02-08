@@ -1,5 +1,7 @@
 ---
 title: 將組織的 PST 檔案匯入至 Office 365 概觀
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 適用於系統管理員：了解在安全性與合規性中心使用「匯入」服務來將電子郵件資料 (PST 檔案) 大量匯入至 Exchange Online 的使用者信箱。 本主題提供常見問題集，並說明 PST 匯入程序的運作方式。
-ms.openlocfilehash: 4e58be4e90429c2d39bbcf4c5ef362e659764d63
-ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
+ms.openlocfilehash: eb916ef3f06cc8d58c962b5b05ea4524e9469e4b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995283"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600670"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>將組織的 PST 檔案匯入至 Office 365 概觀
 

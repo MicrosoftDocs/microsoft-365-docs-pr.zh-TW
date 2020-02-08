@@ -1,5 +1,7 @@
 ---
 title: 保留標籤概觀
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Office 365 中實作記錄管理。
-ms.openlocfilehash: 9327e23a25143fa032ea9501a9d89ec6f47950bd
-ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
+ms.openlocfilehash: 541c1727bfc1ca2132120aadff6330a1a9ac5c0a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023367"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585762"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 

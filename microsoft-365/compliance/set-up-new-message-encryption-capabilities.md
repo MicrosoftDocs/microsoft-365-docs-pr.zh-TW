@@ -1,5 +1,7 @@
 ---
 title: 設定全新的 Office 365 郵件加密功能
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 新的 Office 365 郵件加密功能建置在 Azure 資訊保護上，您的組織可以與組織內部和外部的人員使用受保護的電子郵件通訊。 全新的 OME 功能可與其他 Office 365 組織、Outlook.com、Gmail 及其他電子郵件服務搭配運作。
-ms.openlocfilehash: c772151250d30e62a3f2689df5cd853536af3ede
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: 766e1d2ae054a5a5e91786a360177492ee9ba1b7
+ms.sourcegitcommit: d9ceaa6ec54c3760747f31accdb02f729450f324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "39218732"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41680082"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>設定全新的 Office 365 郵件加密功能
 
@@ -84,7 +86,7 @@ Azure RMS 也會對多數合格方案自動啟用，因此您也不需要對此�
      您的結果應該類似於：
 
      ```text
-    Results : Acquiring RMS Templates ...
+     Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not
             Forward.
             Verifying encryption ...
@@ -95,7 +97,7 @@ Azure RMS 也會對多數合格方案自動啟用，因此您也不需要對此�
                 - PASS: IRM verified successfully.
 
             OVERALL RESULT: PASS
-    ```
+     ```
 
    - 您的 Office 365 組織名稱將取代 *Contoso*。
 

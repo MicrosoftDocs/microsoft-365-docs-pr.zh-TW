@@ -1,5 +1,7 @@
 ---
 title: 檢視文件的標籤活動
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 安全性與合規性中心的標籤活動總管，您可以跨 SharePoint 和商務用 OneDrive 快速搜尋和檢視過去 30 天所有內容的標籤活動。這是即時資料，可讓您清楚檢視租用戶發生什麼情況。
-ms.openlocfilehash: 9c34cde4d9dde96b8fb1251e9d2be449031cc58a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: eebe1938195740565f064bbac20608255aa5ef73
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802228"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597230"
 ---
 # <a name="view-label-activity-for-documents"></a>檢視文件的標籤活動
 
