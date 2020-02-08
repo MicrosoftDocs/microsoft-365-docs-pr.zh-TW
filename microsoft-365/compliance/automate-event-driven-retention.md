@@ -1,5 +1,7 @@
 ---
 title: 自動化事件導向保留
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -13,272 +15,272 @@ search.appverid:
 - MOE150
 - MET150
 description: 本主題說明如何使用 Microsoft 365 REST API 透過事件進行自動化保留，設定您的商務程序流程。
-ms.openlocfilehash: b2aadaf4e450167cf7bff864569652c05deb7298
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 46276e1a40df8c5491d569337a683666984be23a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807432"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596320"
 ---
-# <a name="automate-event-based-retention"></a><span data-ttu-id="5aca3-103">自動化事件型保留</span><span class="sxs-lookup"><span data-stu-id="5aca3-103">Automate event-based retention</span></span>
+# <a name="automate-event-based-retention"></a><span data-ttu-id="cc6d2-103">自動化事件型保留</span><span class="sxs-lookup"><span data-stu-id="cc6d2-103">Automate event-based retention</span></span>
 
-<span data-ttu-id="5aca3-p101">組織中的內容量暴增，內容逐漸變得冗餘、過時且瑣碎，有關內容的各種問題已經變成一項嚴重的議題。為了持續迎接法律、商務和法規遵循方面的挑戰，組織必須具備保留和保護重要資訊、同時又能快速找出相關內容的能力。將資訊去蕪存菁，只保留重要且相關的資訊將成為組織致勝的關鍵。</span><span class="sxs-lookup"><span data-stu-id="5aca3-p101">The explosion of content in organizations and how it can become ROT (redundant, obsolete, trivial) is serious business. To continue to meet legal, business, and regulatory compliance challenges, organizations must be able to keep and protect important information and quickly find what’s relevant. Retaining only important, pertinent information is key to an organization's success.</span></span>
+<span data-ttu-id="cc6d2-p101">組織中的內容量暴增，內容逐漸變得冗餘、過時且瑣碎，有關內容的各種問題已經變成一項嚴重的議題。為了持續迎接法律、商務和法規遵循方面的挑戰，組織必須具備保留和保護重要資訊、同時又能快速找出相關內容的能力。將資訊去蕪存菁，只保留重要且相關的資訊將成為組織致勝的關鍵。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-p101">The explosion of content in organizations and how it can become ROT (redundant, obsolete, trivial) is serious business. To continue to meet legal, business, and regulatory compliance challenges, organizations must be able to keep and protect important information and quickly find what’s relevant. Retaining only important, pertinent information is key to an organization's success.</span></span>
 
-<span data-ttu-id="5aca3-p102">為此，組織可以利用 Office 365 安全性與合規性中心的保留解決方案。保留解決方案可以使用[保留標籤](labels.md)進行觸發。保留標籤可以[根據特定事件選擇保留期間](event-driven-retention.md)。一般而言，保留期間是依據已知的日期，例如內容的建立日期或上次修改日期。然而，組織也可以要求依據事件的發生進行內容處置，例如員工離開組織七年後。</span><span class="sxs-lookup"><span data-stu-id="5aca3-p102">To help meet this need, organizations can take advantage of retention solutions in the Office 365 Security & Compliance Center. Retention can be triggered by using [retention labels](labels.md). A retention label has the option to [base the retention period on a specific event](event-driven-retention.md). Typically, the retention period is based on a known date, such as the creation date or last modified date for the content. However, organizations also have requirements to dispose of content based on the occurrence of an event, such as seven years after an employee leaves an organization.</span></span>
+<span data-ttu-id="cc6d2-p102">為此，組織可以利用 Office 365 安全性與合規性中心的保留解決方案。保留解決方案可以使用[保留標籤](labels.md)進行觸發。保留標籤可以[根據特定事件選擇保留期間](event-driven-retention.md)。一般而言，保留期間是依據已知的日期，例如內容的建立日期或上次修改日期。然而，組織也可以要求依據事件的發生進行內容處置，例如員工離開組織七年後。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-p102">To help meet this need, organizations can take advantage of retention solutions in the Office 365 Security & Compliance Center. Retention can be triggered by using [retention labels](labels.md). A retention label has the option to [base the retention period on a specific event](event-driven-retention.md). Typically, the retention period is based on a known date, such as the creation date or last modified date for the content. However, organizations also have requirements to dispose of content based on the occurrence of an event, such as seven years after an employee leaves an organization.</span></span>
 
-<span data-ttu-id="5aca3-p103">為確保內容的處置符合規範，請務必了解事件發生的時間。隨著內容量的迅速暴增，以即時且符合規範的方法保留和處置內容已經演變成一項重大的挑戰。</span><span class="sxs-lookup"><span data-stu-id="5aca3-p103">To ensure compliant disposal of content, it's imperative to know when an event takes place. With the volume of content increasing rapidly, it's becoming challenging to retain and dispose content in a timely and compliant manner.</span></span>
+<span data-ttu-id="cc6d2-p103">為確保內容的處置符合規範，請務必了解事件發生的時間。隨著內容量的迅速暴增，以即時且符合規範的方法保留和處置內容已經演變成一項重大的挑戰。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-p103">To ensure compliant disposal of content, it's imperative to know when an event takes place. With the volume of content increasing rapidly, it's becoming challenging to retain and dispose content in a timely and compliant manner.</span></span>
 
-<span data-ttu-id="5aca3-p104">事件型保留可以解決這個問題。本主題說明如何使用 Microsoft 365 REST API 透過事件進行自動化保留，設定您的商務程序流程。</span><span class="sxs-lookup"><span data-stu-id="5aca3-p104">Event-based retention solves this problem. This topic explains how to set up your business process flows to automate retention through events by using the Microsoft 365 REST API.</span></span>
+<span data-ttu-id="cc6d2-p104">事件型保留可以解決這個問題。本主題說明如何使用 Microsoft 365 REST API 透過事件進行自動化保留，設定您的商務程序流程。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-p104">Event-based retention solves this problem. This topic explains how to set up your business process flows to automate retention through events by using the Microsoft 365 REST API.</span></span>
 
-## <a name="about-event-based-retention"></a><span data-ttu-id="5aca3-116">關於事件型保留</span><span class="sxs-lookup"><span data-stu-id="5aca3-116">About event-based retention</span></span>
+## <a name="about-event-based-retention"></a><span data-ttu-id="cc6d2-116">關於事件型保留</span><span class="sxs-lookup"><span data-stu-id="cc6d2-116">About event-based retention</span></span>
 
-<span data-ttu-id="5aca3-p105">組織的規模可以是小型、中型或大型。每日建立和管理的商務文件、法律文件、員工檔案、合約和產品文件的數量卻是急遽增加。</span><span class="sxs-lookup"><span data-stu-id="5aca3-p105">An organization can be small, medium, or large. The number of business documents, legal documents, employee files, contracts, and product documents that get created and managed on a day-to-day basis is increasing dramatically.</span></span>
+<span data-ttu-id="cc6d2-p105">組織的規模可以是小型、中型或大型。每日建立和管理的商務文件、法律文件、員工檔案、合約和產品文件的數量卻是急遽增加。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-p105">An organization can be small, medium, or large. The number of business documents, legal documents, employee files, contracts, and product documents that get created and managed on a day-to-day basis is increasing dramatically.</span></span>
 
-<span data-ttu-id="5aca3-p106">舉例來說，每天有數以百計的員工加入或離開組織，HR 部門依據企業要求不斷地建立、更新或刪除員工相關的文件。這個程序必須針對企業綱要遵循不同的保留原則：</span><span class="sxs-lookup"><span data-stu-id="5aca3-p106">For example, each day, tens and hundreds of employees are joining and leaving organizations. The HR department continues to create, update, or delete employee-related documents as per business requirements. This process is subject to the different retention policies outlined for the business:</span></span>
+<span data-ttu-id="cc6d2-p106">舉例來說，每天有數以百計的員工加入或離開組織，HR 部門依據企業要求不斷地建立、更新或刪除員工相關的文件。這個程序必須針對企業綱要遵循不同的保留原則：</span><span class="sxs-lookup"><span data-stu-id="cc6d2-p106">For example, each day, tens and hundreds of employees are joining and leaving organizations. The HR department continues to create, update, or delete employee-related documents as per business requirements. This process is subject to the different retention policies outlined for the business:</span></span>
 
-- <span data-ttu-id="5aca3-p107">**內容的保留期間可以是已知的日期**，例如內容的建立日期、上次修改日期或標籤日期。例如，您可以在文件建立後保留文件七年，然後再刪除文件。</span><span class="sxs-lookup"><span data-stu-id="5aca3-p107">**The period of retention for content can be a known date** such as the date the content was created, last modified, or labeled. For example, you might retain documents for seven years after they're created and then delete them.</span></span>
+- <span data-ttu-id="cc6d2-p107">**內容的保留期間可以是已知的日期**，例如內容的建立日期、上次修改日期或標籤日期。例如，您可以在文件建立後保留文件七年，然後再刪除文件。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-p107">**The period of retention for content can be a known date** such as the date the content was created, last modified, or labeled. For example, you might retain documents for seven years after they're created and then delete them.</span></span>
 
-- <span data-ttu-id="5aca3-p108">**內容的保留期間也可以是未知的日期**。例如，您可以使用保留標籤，將保留期間設定成依據特定類型事件的發生時間，例如員工離開組織。</span><span class="sxs-lookup"><span data-stu-id="5aca3-p108">**The period of retention of content can also be an unknown date**. For example, with retention labels, you can also base a retention period on when a specific type of event occurs, such as an employee leaving the organization.</span></span>
+- <span data-ttu-id="cc6d2-p108">**內容的保留期間也可以是未知的日期**。例如，您可以使用保留標籤，將保留期間設定成依據特定類型事件的發生時間，例如員工離開組織。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-p108">**The period of retention of content can also be an unknown date**. For example, with retention labels, you can also base a retention period on when a specific type of event occurs, such as an employee leaving the organization.</span></span>
 
-<span data-ttu-id="5aca3-p109">事件會觸發保留期間開始進行，而在加上標籤的內容中，所有適用於該事件類型的內容都會強制執行標籤的保留動作。這項功能稱為事件型保留，若要深入了解，請參閱[事件導向保留概觀](event-driven-retention.md)。</span><span class="sxs-lookup"><span data-stu-id="5aca3-p109">The event triggers the start of the retention period, and all content with a label applied for that type of event get the label's retention actions enforced on them. This is called event-based retention. To learn more, see [Overview of event-driven retention](event-driven-retention.md).</span></span>
+<span data-ttu-id="cc6d2-p109">事件會觸發保留期間開始進行，而在加上標籤的內容中，所有適用於該事件類型的內容都會強制執行標籤的保留動作。這項功能稱為事件型保留，若要深入了解，請參閱[事件導向保留概觀](event-driven-retention.md)。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-p109">The event triggers the start of the retention period, and all content with a label applied for that type of event get the label's retention actions enforced on them. This is called event-based retention. To learn more, see [Overview of event-driven retention](event-driven-retention.md).</span></span>
 
-## <a name="set-up-event-based-retention"></a><span data-ttu-id="5aca3-129">設定事件型保留</span><span class="sxs-lookup"><span data-stu-id="5aca3-129">Set up event-based retention</span></span>
+## <a name="set-up-event-based-retention"></a><span data-ttu-id="cc6d2-129">設定事件型保留</span><span class="sxs-lookup"><span data-stu-id="cc6d2-129">Set up event-based retention</span></span>
 
-<span data-ttu-id="5aca3-130">本節描述保留內容前必須完成的工作。</span><span class="sxs-lookup"><span data-stu-id="5aca3-130">This section describes what needs to be done before retaining content.</span></span>
+<span data-ttu-id="cc6d2-130">本節描述保留內容前必須完成的工作。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-130">This section describes what needs to be done before retaining content.</span></span>
 
-### <a name="identify-roles"></a><span data-ttu-id="5aca3-131">識別角色</span><span class="sxs-lookup"><span data-stu-id="5aca3-131">Identify roles</span></span>
+### <a name="identify-roles"></a><span data-ttu-id="cc6d2-131">識別角色</span><span class="sxs-lookup"><span data-stu-id="cc6d2-131">Identify roles</span></span>
 
-<span data-ttu-id="5aca3-132">找出組織中執行記錄管理工作，並負責有效且有效率地保留商務文件的各種角色。</span><span class="sxs-lookup"><span data-stu-id="5aca3-132">Identify the different roles in an organization that perform Record Management tasks and would be responsible for effective and efficient retention of business documents.</span></span>
+<span data-ttu-id="cc6d2-132">找出組織中執行記錄管理工作，並負責有效且有效率地保留商務文件的各種角色。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-132">Identify the different roles in an organization that perform Record Management tasks and would be responsible for effective and efficient retention of business documents.</span></span>
 
-  | <span data-ttu-id="5aca3-133">**角色**</span><span class="sxs-lookup"><span data-stu-id="5aca3-133">**Persona**</span></span>| <span data-ttu-id="5aca3-134">**Role**</span><span class="sxs-lookup"><span data-stu-id="5aca3-134">**Role**</span></span>|
+  | <span data-ttu-id="cc6d2-133">**角色**</span><span class="sxs-lookup"><span data-stu-id="cc6d2-133">**Persona**</span></span>| <span data-ttu-id="cc6d2-134">**Role**</span><span class="sxs-lookup"><span data-stu-id="cc6d2-134">**Role**</span></span>|
   | - | - |
-  | <span data-ttu-id="5aca3-135">系統管理</span><span class="sxs-lookup"><span data-stu-id="5aca3-135">Admin</span></span> | <span data-ttu-id="5aca3-136">在 SharePoint 中建立保留事件類型、保留標籤和記錄存放庫</span><span class="sxs-lookup"><span data-stu-id="5aca3-136">Creates Retention Event types, Retention labels and Record repositories in SharePoint</span></span> |
-  | <span data-ttu-id="5aca3-137">記錄管理員</span><span class="sxs-lookup"><span data-stu-id="5aca3-137">Records Manager</span></span>                                  | <span data-ttu-id="5aca3-138">提供保留原則和保留排程的指引和規範詳細資料</span><span class="sxs-lookup"><span data-stu-id="5aca3-138">Provides Retention Policies and Retention Schedules guidance and compliance details</span></span>   |
-  | <span data-ttu-id="5aca3-139">系統管理員 (企業)</span><span class="sxs-lookup"><span data-stu-id="5aca3-139">System Admin (business)</span></span>                          | <span data-ttu-id="5aca3-140">設定和管理外部系統以使用 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="5aca3-140">Sets up and manages external systems to work with Microsoft 365</span></span>                       |
-  | <span data-ttu-id="5aca3-141">資訊工作者</span><span class="sxs-lookup"><span data-stu-id="5aca3-141">Information Worker</span></span>                               | <span data-ttu-id="5aca3-142">管理商務程序 (HR、財務、IT 等) 的生命週期</span><span class="sxs-lookup"><span data-stu-id="5aca3-142">Manages the lifecycle of their business process (HR, Finance, IT, and so on)</span></span>                 |
+  | <span data-ttu-id="cc6d2-135">系統管理</span><span class="sxs-lookup"><span data-stu-id="cc6d2-135">Admin</span></span> | <span data-ttu-id="cc6d2-136">在 SharePoint 中建立保留事件類型、保留標籤和記錄存放庫</span><span class="sxs-lookup"><span data-stu-id="cc6d2-136">Creates Retention Event types, Retention labels and Record repositories in SharePoint</span></span> |
+  | <span data-ttu-id="cc6d2-137">記錄管理員</span><span class="sxs-lookup"><span data-stu-id="cc6d2-137">Records Manager</span></span>                                  | <span data-ttu-id="cc6d2-138">提供保留原則和保留排程的指引和規範詳細資料</span><span class="sxs-lookup"><span data-stu-id="cc6d2-138">Provides Retention Policies and Retention Schedules guidance and compliance details</span></span>   |
+  | <span data-ttu-id="cc6d2-139">系統管理員 (企業)</span><span class="sxs-lookup"><span data-stu-id="cc6d2-139">System Admin (business)</span></span>                          | <span data-ttu-id="cc6d2-140">設定和管理外部系統以使用 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="cc6d2-140">Sets up and manages external systems to work with Microsoft 365</span></span>                       |
+  | <span data-ttu-id="cc6d2-141">資訊工作者</span><span class="sxs-lookup"><span data-stu-id="cc6d2-141">Information Worker</span></span>                               | <span data-ttu-id="cc6d2-142">管理商務程序 (HR、財務、IT 等) 的生命週期</span><span class="sxs-lookup"><span data-stu-id="cc6d2-142">Manages the lifecycle of their business process (HR, Finance, IT, and so on)</span></span>                 |
 
-### <a name="set-up-the-security--compliance-center"></a><span data-ttu-id="5aca3-143">設定安全性與合規性中心</span><span class="sxs-lookup"><span data-stu-id="5aca3-143">Set up the Security & Compliance Center</span></span>
+### <a name="set-up-the-security--compliance-center"></a><span data-ttu-id="cc6d2-143">設定安全性與合規性中心</span><span class="sxs-lookup"><span data-stu-id="cc6d2-143">Set up the Security & Compliance Center</span></span>
   
-1. <span data-ttu-id="5aca3-144">合規性系統管理員建立事件類型&ndash;，例如，僱用終止或合約到期或產品製造結束。</span><span class="sxs-lookup"><span data-stu-id="5aca3-144">Compliance admin creates an event type &ndash; for example, Employee Termination or Contract Expiration or End of Product Manufacturing.</span></span> <span data-ttu-id="5aca3-145">(請參閱[事件導向保留](event-driven-retention.md)中的逐步程序。</span><span class="sxs-lookup"><span data-stu-id="5aca3-145">(See the step-by-step process in [Event-driven retention](event-driven-retention.md).</span></span>
+1. <span data-ttu-id="cc6d2-144">合規性系統管理員建立事件類型&ndash;，例如，僱用終止或合約到期或產品製造結束。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-144">Compliance admin creates an event type &ndash; for example, Employee Termination or Contract Expiration or End of Product Manufacturing.</span></span> <span data-ttu-id="cc6d2-145">(請參閱[事件導向保留](event-driven-retention.md)中的逐步程序。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-145">(See the step-by-step process in [Event-driven retention](event-driven-retention.md).</span></span>
     
-2. <span data-ttu-id="5aca3-146">合規性系統管理員依據事件建立保留標籤，將標籤與事件類型建立相關聯。</span><span class="sxs-lookup"><span data-stu-id="5aca3-146">Compliance admin creates a retention label based on an event and associates the label with an event type.</span></span>
+2. <span data-ttu-id="cc6d2-146">合規性系統管理員依據事件建立保留標籤，將標籤與事件類型建立相關聯。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-146">Compliance admin creates a retention label based on an event and associates the label with an event type.</span></span>
     
-    <span data-ttu-id="5aca3-147">保留標籤有四種類型的觸發程序：</span><span class="sxs-lookup"><span data-stu-id="5aca3-147">There are four types of triggers for retention labels:</span></span>
+    <span data-ttu-id="cc6d2-147">保留標籤有四種類型的觸發程序：</span><span class="sxs-lookup"><span data-stu-id="cc6d2-147">There are four types of triggers for retention labels:</span></span>
             
-    1. <span data-ttu-id="5aca3-148">建立日期</span><span class="sxs-lookup"><span data-stu-id="5aca3-148">Create date</span></span>
+    1. <span data-ttu-id="cc6d2-148">建立日期</span><span class="sxs-lookup"><span data-stu-id="cc6d2-148">Create date</span></span>
                 
-    2. <span data-ttu-id="5aca3-149">上次修改日期</span><span class="sxs-lookup"><span data-stu-id="5aca3-149">Last modified</span></span>
+    2. <span data-ttu-id="cc6d2-149">上次修改日期</span><span class="sxs-lookup"><span data-stu-id="cc6d2-149">Last modified</span></span>
                 
-    3. <span data-ttu-id="5aca3-150">標籤日期 (內容加上標籤的日期)</span><span class="sxs-lookup"><span data-stu-id="5aca3-150">Label date (when the content was labeled)</span></span>
+    3. <span data-ttu-id="cc6d2-150">標籤日期 (內容加上標籤的日期)</span><span class="sxs-lookup"><span data-stu-id="cc6d2-150">Label date (when the content was labeled)</span></span>
                 
-    4. <span data-ttu-id="5aca3-151">事件型</span><span class="sxs-lookup"><span data-stu-id="5aca3-151">Event-based</span></span>
+    4. <span data-ttu-id="cc6d2-151">事件型</span><span class="sxs-lookup"><span data-stu-id="cc6d2-151">Event-based</span></span>
     
-3. <span data-ttu-id="5aca3-152">規範管理員發佈保留標籤。</span><span class="sxs-lookup"><span data-stu-id="5aca3-152">Compliance admin publishes the retention label.</span></span>
+3. <span data-ttu-id="cc6d2-152">規範管理員發佈保留標籤。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-152">Compliance admin publishes the retention label.</span></span>
 
-### <a name="set-up-sharepoint"></a><span data-ttu-id="5aca3-153">設定 SharePoint</span><span class="sxs-lookup"><span data-stu-id="5aca3-153">Set up SharePoint</span></span>
+### <a name="set-up-sharepoint"></a><span data-ttu-id="cc6d2-153">設定 SharePoint</span><span class="sxs-lookup"><span data-stu-id="cc6d2-153">Set up SharePoint</span></span>
    
-<span data-ttu-id="5aca3-154">若要建立記錄存放庫，規範系統管理員必須：</span><span class="sxs-lookup"><span data-stu-id="5aca3-154">To create a records repository, the compliance admin:</span></span>
+<span data-ttu-id="cc6d2-154">若要建立記錄存放庫，規範系統管理員必須：</span><span class="sxs-lookup"><span data-stu-id="cc6d2-154">To create a records repository, the compliance admin:</span></span>
 
-1. <span data-ttu-id="5aca3-155">建立 SharePoint 網站。</span><span class="sxs-lookup"><span data-stu-id="5aca3-155">Creates a SharePoint site.</span></span>
+1. <span data-ttu-id="cc6d2-155">建立 SharePoint 網站。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-155">Creates a SharePoint site.</span></span>
 
-2. <span data-ttu-id="5aca3-156">執行下列其中一項動作：</span><span class="sxs-lookup"><span data-stu-id="5aca3-156">Does one of the following:</span></span>
+2. <span data-ttu-id="cc6d2-156">執行下列其中一項動作：</span><span class="sxs-lookup"><span data-stu-id="cc6d2-156">Does one of the following:</span></span>
         
-    - <span data-ttu-id="5aca3-p111">建立 SharePoint 文件庫。在文件庫層級設定事件型標籤。如需更多資訊，請參閱[將預設的保留標籤套用至 SharePoint 文件庫、資料夾或文件組的所有內容](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。</span><span class="sxs-lookup"><span data-stu-id="5aca3-p111">Creates a SharePoint library: Set event-based label at the library level. For more information, see [Applying a default retention label to all content in a SharePoint library, folder, or document set](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).</span></span>
+    - <span data-ttu-id="cc6d2-p111">建立 SharePoint 文件庫。在文件庫層級設定事件型標籤。如需更多資訊，請參閱[將預設的保留標籤套用至 SharePoint 文件庫、資料夾或文件組的所有內容](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-p111">Creates a SharePoint library: Set event-based label at the library level. For more information, see [Applying a default retention label to all content in a SharePoint library, folder, or document set](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).</span></span>
           
-    - <span data-ttu-id="5aca3-159">在 SharePoint 中設定文件組。</span><span class="sxs-lookup"><span data-stu-id="5aca3-159">Sets up a document set in SharePoint.</span></span> <span data-ttu-id="5aca3-160">如需詳細資訊，請參閱[文件組簡介](https://support.office.com/article/3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234)。</span><span class="sxs-lookup"><span data-stu-id="5aca3-160">For more information, see [Introduction to document sets](https://support.office.com/article/3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234).</span></span>
+    - <span data-ttu-id="cc6d2-159">在 SharePoint 中設定文件組。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-159">Sets up a document set in SharePoint.</span></span> <span data-ttu-id="cc6d2-160">如需詳細資訊，請參閱[文件組簡介](https://support.office.com/article/3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234)。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-160">For more information, see [Introduction to document sets](https://support.office.com/article/3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234).</span></span>
       
-3. <span data-ttu-id="5aca3-161">將資產識別碼指派給每個員工文件組。</span><span class="sxs-lookup"><span data-stu-id="5aca3-161">Assigns an asset ID to each employee document set.</span></span> <span data-ttu-id="5aca3-162">資產識別碼是組織使用的產品名稱或代碼，例如員工識別碼可以是資產識別碼。</span><span class="sxs-lookup"><span data-stu-id="5aca3-162">An asset ID is a product name or code used by the organization, for example, Employee number can be an asset ID.</span></span> <span data-ttu-id="5aca3-163">透過將資產識別碼指派給資料夾的方式，該資料夾內的每個項目都會自動繼承相同的資產識別碼。</span><span class="sxs-lookup"><span data-stu-id="5aca3-163">By assigning the asset ID to the folder, every item in that folder automatically inherits the same asset ID.</span></span> <span data-ttu-id="5aca3-164">這表示所有項目可以透過相同事件觸發保留期間。</span><span class="sxs-lookup"><span data-stu-id="5aca3-164">This means all the items can have their retention period triggered by the same event.</span></span>
+3. <span data-ttu-id="cc6d2-161">將資產識別碼指派給每個員工文件組。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-161">Assigns an asset ID to each employee document set.</span></span> <span data-ttu-id="cc6d2-162">資產識別碼是組織使用的產品名稱或代碼，例如員工識別碼可以是資產識別碼。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-162">An asset ID is a product name or code used by the organization, for example, Employee number can be an asset ID.</span></span> <span data-ttu-id="cc6d2-163">透過將資產識別碼指派給資料夾的方式，該資料夾內的每個項目都會自動繼承相同的資產識別碼。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-163">By assigning the asset ID to the folder, every item in that folder automatically inherits the same asset ID.</span></span> <span data-ttu-id="cc6d2-164">這表示所有項目可以透過相同事件觸發保留期間。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-164">This means all the items can have their retention period triggered by the same event.</span></span>
 
-## <a name="ways-to-trigger-event-based-retention"></a><span data-ttu-id="5aca3-165">觸發事件型保留的方法</span><span class="sxs-lookup"><span data-stu-id="5aca3-165">Ways to trigger event-based retention</span></span>
+## <a name="ways-to-trigger-event-based-retention"></a><span data-ttu-id="cc6d2-165">觸發事件型保留的方法</span><span class="sxs-lookup"><span data-stu-id="cc6d2-165">Ways to trigger event-based retention</span></span>
 
-<span data-ttu-id="5aca3-166">有兩種方法可以觸發事件型保留：</span><span class="sxs-lookup"><span data-stu-id="5aca3-166">There are two ways in which event-based retention can be triggered:</span></span>
+<span data-ttu-id="cc6d2-166">有兩種方法可以觸發事件型保留：</span><span class="sxs-lookup"><span data-stu-id="cc6d2-166">There are two ways in which event-based retention can be triggered:</span></span>
 
-- <span data-ttu-id="5aca3-167">**使用系統管理中心 UI** 這個程序可以用於一次保留較少的內容，或是觸發頻率不高的保留，例如每月或每年的頻率。</span><span class="sxs-lookup"><span data-stu-id="5aca3-167">**Using the admin center UI** This is a process that can be used to retain less content at a time or the frequency to trigger retention isn't often, such as monthly or yearly.</span></span> <span data-ttu-id="5aca3-168">如需更多有關此方法資訊，請參閱[事件驅動保留概觀](event-driven-retention.md)。</span><span class="sxs-lookup"><span data-stu-id="5aca3-168">For more information about this method, see [Overview of event-driven retention](event-driven-retention.md).</span></span> <span data-ttu-id="5aca3-169">然而，這個觸發保留的方法可能非常耗時且容易發生錯誤，從而阻礙了保留的延展性。</span><span class="sxs-lookup"><span data-stu-id="5aca3-169">However, this method of triggering retention can be time consuming and prone to error, thus stunting scalability.</span></span> <span data-ttu-id="5aca3-170">因此，使用自動化流暢的解決方案進行觸發保留將可以增強資料的安全性與合規性。</span><span class="sxs-lookup"><span data-stu-id="5aca3-170">Therefore, an automated, seamless solution to trigger retention can enhance data security and compliance.</span></span>
+- <span data-ttu-id="cc6d2-167">**使用系統管理中心 UI** 這個程序可以用於一次保留較少的內容，或是觸發頻率不高的保留，例如每月或每年的頻率。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-167">**Using the admin center UI** This is a process that can be used to retain less content at a time or the frequency to trigger retention isn't often, such as monthly or yearly.</span></span> <span data-ttu-id="cc6d2-168">如需更多有關此方法資訊，請參閱[事件驅動保留概觀](event-driven-retention.md)。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-168">For more information about this method, see [Overview of event-driven retention](event-driven-retention.md).</span></span> <span data-ttu-id="cc6d2-169">然而，這個觸發保留的方法可能非常耗時且容易發生錯誤，從而阻礙了保留的延展性。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-169">However, this method of triggering retention can be time consuming and prone to error, thus stunting scalability.</span></span> <span data-ttu-id="cc6d2-170">因此，使用自動化流暢的解決方案進行觸發保留將可以增強資料的安全性與合規性。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-170">Therefore, an automated, seamless solution to trigger retention can enhance data security and compliance.</span></span>
 
-- <span data-ttu-id="5aca3-p115">**使用 M365 REST API**這個程序可以用於一次保留大量內容的時候，和 (或) 觸發頻率高的保留，例如每日或每週的頻率。當偵測到您的商務線系統內發生事件時，流程會接著在安全規範中心內自動建立相關的事件。因此，每次發生事件時，您不需要在使用者介面手動建立事件。</span><span class="sxs-lookup"><span data-stu-id="5aca3-p115">**Using a M365 REST API** This process can be used when large amounts of content are to be retained at a time and/or the frequency to trigger retention is often such as daily or weekly. The flow detects when an event occurs in your line-of-business system, and then automatically creates a related event in the Security & Compliance Center. You don't need to manually create an event in the UI each time one occurs.</span></span>
+- <span data-ttu-id="cc6d2-p115">**使用 M365 REST API**這個程序可以用於一次保留大量內容的時候，和 (或) 觸發頻率高的保留，例如每日或每週的頻率。當偵測到您的商務線系統內發生事件時，流程會接著在安全規範中心內自動建立相關的事件。因此，每次發生事件時，您不需要在使用者介面手動建立事件。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-p115">**Using a M365 REST API** This process can be used when large amounts of content are to be retained at a time and/or the frequency to trigger retention is often such as daily or weekly. The flow detects when an event occurs in your line-of-business system, and then automatically creates a related event in the Security & Compliance Center. You don't need to manually create an event in the UI each time one occurs.</span></span>
 
-<span data-ttu-id="5aca3-174">有兩個選項可以使用 REST API：</span><span class="sxs-lookup"><span data-stu-id="5aca3-174">There are two options for using the REST API:</span></span>
+<span data-ttu-id="cc6d2-174">有兩個選項可以使用 REST API：</span><span class="sxs-lookup"><span data-stu-id="cc6d2-174">There are two options for using the REST API:</span></span>
 
-- <span data-ttu-id="5aca3-175">**Microsoft Flow 或類似的應用程式**可以用於自動觸發事件的發生。</span><span class="sxs-lookup"><span data-stu-id="5aca3-175">**Microsoft Flow or a similar application** can be used to trigger the occurrence of an event automatically.</span></span> <span data-ttu-id="5aca3-176">Microsoft Flow 是連線至其他系統的協調器。</span><span class="sxs-lookup"><span data-stu-id="5aca3-176">Microsoft Flow is an orchestrator for connecting to other systems.</span></span> <span data-ttu-id="5aca3-177">使用 Microsoft Flow 不需要自訂的解決方案。</span><span class="sxs-lookup"><span data-stu-id="5aca3-177">Using Microsoft Flow doesn't require a custom solution.</span></span>
+- <span data-ttu-id="cc6d2-175">**Microsoft Flow 或類似的應用程式**可以用於自動觸發事件的發生。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-175">**Microsoft Flow or a similar application** can be used to trigger the occurrence of an event automatically.</span></span> <span data-ttu-id="cc6d2-176">Microsoft Flow 是連線至其他系統的協調器。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-176">Microsoft Flow is an orchestrator for connecting to other systems.</span></span> <span data-ttu-id="cc6d2-177">使用 Microsoft Flow 不需要自訂的解決方案。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-177">Using Microsoft Flow doesn't require a custom solution.</span></span>
 
-- <span data-ttu-id="5aca3-178">**PowerShell 或 HTTP 用戶端呼叫 REST API**使用 PowerShell (6 或更新版本) 呼叫 Microsoft 365 REST API 建立事件。</span><span class="sxs-lookup"><span data-stu-id="5aca3-178">**PowerShell or an HTTP client to call REST API** Using PowerShell (version 6 or higher) to call Microsoft 365 REST API to create events.</span></span> 
+- <span data-ttu-id="cc6d2-178">**PowerShell 或 HTTP 用戶端呼叫 REST API**使用 PowerShell (6 或更新版本) 呼叫 Microsoft 365 REST API 建立事件。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-178">**PowerShell or an HTTP client to call REST API** Using PowerShell (version 6 or higher) to call Microsoft 365 REST API to create events.</span></span> 
 
-<span data-ttu-id="5aca3-179">Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源的建立、擷取、更新、刪除等存取權。</span><span class="sxs-lookup"><span data-stu-id="5aca3-179">A Rest API is a service endpoint that supports sets of HTTP operations (methods), which provide create/retrieve/update/delete access to the service's resources.</span></span> <span data-ttu-id="5aca3-180">如需詳細資訊，請參閱 [REST API 要求/回應的元件](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse)。</span><span class="sxs-lookup"><span data-stu-id="5aca3-180">For more information, see [Components of a REST API request/response](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse).</span></span> <span data-ttu-id="5aca3-181">在這種情況下，透過使用 Microsoft 365 REST API，使用 POST 和 GET 操作 (方法) 可以建立和擷取事件。</span><span class="sxs-lookup"><span data-stu-id="5aca3-181">In this case, by using the Microsoft 365 REST API, events can be created and retrieved using operations (methods) POST and GET.</span></span>
+<span data-ttu-id="cc6d2-179">Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源的建立、擷取、更新、刪除等存取權。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-179">A Rest API is a service endpoint that supports sets of HTTP operations (methods), which provide create/retrieve/update/delete access to the service's resources.</span></span> <span data-ttu-id="cc6d2-180">如需詳細資訊，請參閱 [REST API 要求/回應的元件](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse)。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-180">For more information, see [Components of a REST API request/response](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse).</span></span> <span data-ttu-id="cc6d2-181">在這種情況下，透過使用 Microsoft 365 REST API，使用 POST 和 GET 操作 (方法) 可以建立和擷取事件。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-181">In this case, by using the Microsoft 365 REST API, events can be created and retrieved using operations (methods) POST and GET.</span></span>
 
-## <a name="example-scenarios"></a><span data-ttu-id="5aca3-182">範例案例</span><span class="sxs-lookup"><span data-stu-id="5aca3-182">Example scenarios</span></span>
+## <a name="example-scenarios"></a><span data-ttu-id="cc6d2-182">範例案例</span><span class="sxs-lookup"><span data-stu-id="cc6d2-182">Example scenarios</span></span>
 
-<span data-ttu-id="5aca3-183">讓我們來考慮以下案例。</span><span class="sxs-lookup"><span data-stu-id="5aca3-183">Let’s consider the following scenarios.</span></span>
+<span data-ttu-id="cc6d2-183">讓我們來考慮以下案例。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-183">Let’s consider the following scenarios.</span></span>
 
-### <a name="scenario-1-employees-leaving-the-organization"></a><span data-ttu-id="5aca3-184">案例 1：員工離開組織</span><span class="sxs-lookup"><span data-stu-id="5aca3-184">Scenario 1: Employees leaving the organization</span></span> 
+### <a name="scenario-1-employees-leaving-the-organization"></a><span data-ttu-id="cc6d2-184">案例 1：員工離開組織</span><span class="sxs-lookup"><span data-stu-id="cc6d2-184">Scenario 1: Employees leaving the organization</span></span> 
 
-<span data-ttu-id="5aca3-185">組織針對每位員工建立和儲存無數的員工相關文件。</span><span class="sxs-lookup"><span data-stu-id="5aca3-185">An organization creates and stores numerous employee-related documents per employee.</span></span> <span data-ttu-id="5aca3-186">這些文件會在每位員工的僱用期間內進行管理和保留。</span><span class="sxs-lookup"><span data-stu-id="5aca3-186">These documents are managed and retained during the employment of each employee.</span></span> <span data-ttu-id="5aca3-187">然而，當員工離開組織或僱用終止時，組織有義務根據法律和商務要求在約定時間內保留該位員工的文件。</span><span class="sxs-lookup"><span data-stu-id="5aca3-187">However, when the employee leaves the organization or the employment is terminated, the organization is obligated by legal and business requirements to retain the documents of that employee for a stipulated period.</span></span>
+<span data-ttu-id="cc6d2-185">組織針對每位員工建立和儲存無數的員工相關文件。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-185">An organization creates and stores numerous employee-related documents per employee.</span></span> <span data-ttu-id="cc6d2-186">這些文件會在每位員工的僱用期間內進行管理和保留。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-186">These documents are managed and retained during the employment of each employee.</span></span> <span data-ttu-id="cc6d2-187">然而，當員工離開組織或僱用終止時，組織有義務根據法律和商務要求在約定時間內保留該位員工的文件。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-187">However, when the employee leaves the organization or the employment is terminated, the organization is obligated by legal and business requirements to retain the documents of that employee for a stipulated period.</span></span>
 
-<span data-ttu-id="5aca3-188">現在，如果每天有多位員工離開組織，組織每天必須觸發數以千百份文件的保留計時器。</span><span class="sxs-lookup"><span data-stu-id="5aca3-188">Now if multiple employees leave the organization every day, the organization must trigger the retention clock of hundreds if not thousands of documents each day.</span></span>
+<span data-ttu-id="cc6d2-188">現在，如果每天有多位員工離開組織，組織每天必須觸發數以千百份文件的保留計時器。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-188">Now if multiple employees leave the organization every day, the organization must trigger the retention clock of hundreds if not thousands of documents each day.</span></span>
 
-<span data-ttu-id="5aca3-189">除此之外，還要根據員工記錄的類型計算每位離職員工的保留期間，即僱用終止日期加上天數、月數或年數。</span><span class="sxs-lookup"><span data-stu-id="5aca3-189">In addition to this, the retention period needs to be calculated for each of these employees as Employee termination date + number of days, months, or years based on the type of the employee record.</span></span> <span data-ttu-id="5aca3-190">例如，同一位員工的薪資補償和福利申報可能需要不同的保留期間。</span><span class="sxs-lookup"><span data-stu-id="5aca3-190">For example, worker’s compensation of the employee vs. benefits filings of the same employee may need different retention.</span></span>
+<span data-ttu-id="cc6d2-189">除此之外，還要根據員工記錄的類型計算每位離職員工的保留期間，即僱用終止日期加上天數、月數或年數。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-189">In addition to this, the retention period needs to be calculated for each of these employees as Employee termination date + number of days, months, or years based on the type of the employee record.</span></span> <span data-ttu-id="cc6d2-190">例如，同一位員工的薪資補償和福利申報可能需要不同的保留期間。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-190">For example, worker’s compensation of the employee vs. benefits filings of the same employee may need different retention.</span></span>
 
-<span data-ttu-id="5aca3-191">下圖顯示多個標籤與單一事件相關聯的情況。</span><span class="sxs-lookup"><span data-stu-id="5aca3-191">The diagram below shows how there can be multiple labels that are associated with a single event.</span></span> <span data-ttu-id="5aca3-192">在圖中，員工薪資補償標籤下的所有檔案與員工福利標籤下的所有檔案同時與單一事件相關聯，這個單一事件是員工離開組織。</span><span class="sxs-lookup"><span data-stu-id="5aca3-192">Here all the files under Worker’s compensation label and all the files under Employee benefits label are both associated with a single event, which is the employee leaving the organization.</span></span> <span data-ttu-id="5aca3-193">這些檔案各自有不同的保留計時器。</span><span class="sxs-lookup"><span data-stu-id="5aca3-193">Each of these different files has different retention clocks.</span></span> <span data-ttu-id="5aca3-194">因此，當員工離開組織時，在每一個標籤內的檔案會開始經歷不同的保留期間。</span><span class="sxs-lookup"><span data-stu-id="5aca3-194">So, when an employee leaves the organization, these files within each label experience a different retention period.</span></span> <span data-ttu-id="5aca3-195">若要針對每一位員工的每一種檔案類型或標籤觸發所有不同的保留計時器，這是一項非常具有挑戰性的任務。</span><span class="sxs-lookup"><span data-stu-id="5aca3-195">Triggering all these different retention clocks for each file type or label for each employee is a very challenging task.</span></span> <span data-ttu-id="5aca3-196">請想像一下為多位員工執行這項任務的情形。</span><span class="sxs-lookup"><span data-stu-id="5aca3-196">Imagine doing this for multiple employees.</span></span>
+<span data-ttu-id="cc6d2-191">下圖顯示多個標籤與單一事件相關聯的情況。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-191">The diagram below shows how there can be multiple labels that are associated with a single event.</span></span> <span data-ttu-id="cc6d2-192">在圖中，員工薪資補償標籤下的所有檔案與員工福利標籤下的所有檔案同時與單一事件相關聯，這個單一事件是員工離開組織。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-192">Here all the files under Worker’s compensation label and all the files under Employee benefits label are both associated with a single event, which is the employee leaving the organization.</span></span> <span data-ttu-id="cc6d2-193">這些檔案各自有不同的保留計時器。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-193">Each of these different files has different retention clocks.</span></span> <span data-ttu-id="cc6d2-194">因此，當員工離開組織時，在每一個標籤內的檔案會開始經歷不同的保留期間。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-194">So, when an employee leaves the organization, these files within each label experience a different retention period.</span></span> <span data-ttu-id="cc6d2-195">若要針對每一位員工的每一種檔案類型或標籤觸發所有不同的保留計時器，這是一項非常具有挑戰性的任務。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-195">Triggering all these different retention clocks for each file type or label for each employee is a very challenging task.</span></span> <span data-ttu-id="cc6d2-196">請想像一下為多位員工執行這項任務的情形。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-196">Imagine doing this for multiple employees.</span></span>
 
 ![事件類型、事件和標籤的圖表](media/automate-event-driven-retention-event-diagram-employee-leaving.png)
 
-<span data-ttu-id="5aca3-198">因此，以自動化程序針對多位員工觸發不同的保留計時器不僅節省時間、減少錯誤，而且非常有效率。</span><span class="sxs-lookup"><span data-stu-id="5aca3-198">Hence an automated process to trigger these different retention clocks for multiple employees will be time-saving, error-free, and extremely efficient.</span></span>
+<span data-ttu-id="cc6d2-198">因此，以自動化程序針對多位員工觸發不同的保留計時器不僅節省時間、減少錯誤，而且非常有效率。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-198">Hence an automated process to trigger these different retention clocks for multiple employees will be time-saving, error-free, and extremely efficient.</span></span>
 
-<span data-ttu-id="5aca3-199">**針對這個案例設定自動化事件型保留：**</span><span class="sxs-lookup"><span data-stu-id="5aca3-199">**Configuring Automated Event Based Retention for this scenario:**</span></span>
+<span data-ttu-id="cc6d2-199">**針對這個案例設定自動化事件型保留：**</span><span class="sxs-lookup"><span data-stu-id="cc6d2-199">**Configuring Automated Event Based Retention for this scenario:**</span></span>
 
 ![員工離開組織案例的角色和動作圖表](media/automate-event-driven-retention-employee-termination-diagram.png)
 
-  - <span data-ttu-id="5aca3-201">系統管理員在文件組建立員工資料夾，例如李莉華、王立民。</span><span class="sxs-lookup"><span data-stu-id="5aca3-201">Admin creates employee folders to the Document set such as Jane Doe, John Smith.</span></span>
+  - <span data-ttu-id="cc6d2-201">系統管理員在文件組建立員工資料夾，例如李莉華、王立民。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-201">Admin creates employee folders to the Document set such as Jane Doe, John Smith.</span></span>
 
-  - <span data-ttu-id="5aca3-202">系統管理員將員工檔案新增至每一位員工的員工資料夾，例如福利、薪水、員工的薪資補償。</span><span class="sxs-lookup"><span data-stu-id="5aca3-202">Admin adds employee files such as Benefits, Payroll, Worker’s Compensation to each employee folder.</span></span>
+  - <span data-ttu-id="cc6d2-202">系統管理員將員工檔案新增至每一位員工的員工資料夾，例如福利、薪水、員工的薪資補償。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-202">Admin adds employee files such as Benefits, Payroll, Worker’s Compensation to each employee folder.</span></span>
 
-  - <span data-ttu-id="5aca3-203">系統管理員指派資產識別碼至每一個員工資料夾。</span><span class="sxs-lookup"><span data-stu-id="5aca3-203">Admin assigns Asset ID to each employee folder.</span></span> 
+  - <span data-ttu-id="cc6d2-203">系統管理員指派資產識別碼至每一個員工資料夾。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-203">Admin assigns Asset ID to each employee folder.</span></span> 
 
-  - <span data-ttu-id="5aca3-204">SCC 系統管理員登入安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="5aca3-204">SCC Admin logs into the Security & Compliance Center.</span></span>
+  - <span data-ttu-id="cc6d2-204">SCC 系統管理員登入安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-204">SCC Admin logs into the Security & Compliance Center.</span></span>
 
-  - <span data-ttu-id="5aca3-205">SCC 系統管理員會建立員工相關的事件類型，例如「僱用終止」、「僱用員工」事件。</span><span class="sxs-lookup"><span data-stu-id="5aca3-205">SCC Admin creates employee-related events types such as “Employee Termination”, “Employee Hire” events.</span></span>
+  - <span data-ttu-id="cc6d2-205">SCC 系統管理員會建立員工相關的事件類型，例如「僱用終止」、「僱用員工」事件。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-205">SCC Admin creates employee-related events types such as “Employee Termination”, “Employee Hire” events.</span></span>
 
-  - <span data-ttu-id="5aca3-206">SCC 系統管理員會建立「員工保留」標籤。</span><span class="sxs-lookup"><span data-stu-id="5aca3-206">SCC Admin creates “Employee Retention” label.</span></span>
+  - <span data-ttu-id="cc6d2-206">SCC 系統管理員會建立「員工保留」標籤。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-206">SCC Admin creates “Employee Retention” label.</span></span>
 
-  - <span data-ttu-id="5aca3-207">這個「員工保留」標籤可以手動或自動發佈並套用至 SharePoint 中的員工檔案。</span><span class="sxs-lookup"><span data-stu-id="5aca3-207">This “Employee Retention” label is published and applied manually or automatically to the employee files in SharePoint.</span></span>
+  - <span data-ttu-id="cc6d2-207">這個「員工保留」標籤可以手動或自動發佈並套用至 SharePoint 中的員工檔案。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-207">This “Employee Retention” label is published and applied manually or automatically to the employee files in SharePoint.</span></span>
 
-  - <span data-ttu-id="5aca3-208">HR 管理系統 (例如 Workday) 可以使用 Microsoft Flow 定期執行管理員工檔案。</span><span class="sxs-lookup"><span data-stu-id="5aca3-208">HR Management System like Workday can work with Microsoft Flow to run periodically to manage employee files.</span></span>
+  - <span data-ttu-id="cc6d2-208">HR 管理系統 (例如 Workday) 可以使用 Microsoft Flow 定期執行管理員工檔案。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-208">HR Management System like Workday can work with Microsoft Flow to run periodically to manage employee files.</span></span>
 
-  - <span data-ttu-id="5aca3-209">如果員工離開組織，M365 事件型保留 REST API 將會開始特定員工檔案的保留計時器。</span><span class="sxs-lookup"><span data-stu-id="5aca3-209">If an employee has left the organization, the Flow will trigger the M365 Event Based Retention REST API that will begin the retention clock on the specific employee’s files.</span></span>
+  - <span data-ttu-id="cc6d2-209">如果員工離開組織，M365 事件型保留 REST API 將會開始特定員工檔案的保留計時器。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-209">If an employee has left the organization, the Flow will trigger the M365 Event Based Retention REST API that will begin the retention clock on the specific employee’s files.</span></span>
 
-#### <a name="using-microsoft-flow"></a><span data-ttu-id="5aca3-210">使用 Microsoft Flow</span><span class="sxs-lookup"><span data-stu-id="5aca3-210">Using Microsoft Flow</span></span>
+#### <a name="using-microsoft-flow"></a><span data-ttu-id="cc6d2-210">使用 Microsoft Flow</span><span class="sxs-lookup"><span data-stu-id="cc6d2-210">Using Microsoft Flow</span></span>
 
-<span data-ttu-id="5aca3-211">步驟 1- 建立流程以使用 Microsoft 365 REST API 建立事件</span><span class="sxs-lookup"><span data-stu-id="5aca3-211">Step 1- Create a flow to create an event using the Microsoft 365 REST API</span></span>
+<span data-ttu-id="cc6d2-211">步驟 1- 建立流程以使用 Microsoft 365 REST API 建立事件</span><span class="sxs-lookup"><span data-stu-id="cc6d2-211">Step 1- Create a flow to create an event using the Microsoft 365 REST API</span></span>
 
 ![使用 Flow 建立事件](media/automate-event-driven-retention-flow-1.png)
 
 ![使用流程呼叫 REST API](media/automate-event-driven-retention-flow-2.png)
 
-##### <a name="create-an-event"></a><span data-ttu-id="5aca3-214">建立事件</span><span class="sxs-lookup"><span data-stu-id="5aca3-214">Create an event</span></span>
+##### <a name="create-an-event"></a><span data-ttu-id="cc6d2-214">建立事件</span><span class="sxs-lookup"><span data-stu-id="cc6d2-214">Create an event</span></span>
 
-<span data-ttu-id="5aca3-215">呼叫 REST API 的範例程式碼</span><span class="sxs-lookup"><span data-stu-id="5aca3-215">Sample code to call the REST API</span></span>
+<span data-ttu-id="cc6d2-215">呼叫 REST API 的範例程式碼</span><span class="sxs-lookup"><span data-stu-id="cc6d2-215">Sample code to call the REST API</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="5aca3-216">Method</span><span class="sxs-lookup"><span data-stu-id="5aca3-216">Method</span></span></th>
-<th><span data-ttu-id="5aca3-217">POST</span><span class="sxs-lookup"><span data-stu-id="5aca3-217">POST</span></span></th>
+<th><span data-ttu-id="cc6d2-216">Method</span><span class="sxs-lookup"><span data-stu-id="cc6d2-216">Method</span></span></th>
+<th><span data-ttu-id="cc6d2-217">POST</span><span class="sxs-lookup"><span data-stu-id="cc6d2-217">POST</span></span></th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="5aca3-218">URL</span><span class="sxs-lookup"><span data-stu-id="5aca3-218">URL</span></span></td>
+<td><span data-ttu-id="cc6d2-218">URL</span><span class="sxs-lookup"><span data-stu-id="cc6d2-218">URL</span></span></td>
 <td>https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent</td>
 <td></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="5aca3-219">Headers</span><span class="sxs-lookup"><span data-stu-id="5aca3-219">Headers</span></span></td>
-<td><span data-ttu-id="5aca3-220">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5aca3-220">Content-Type</span></span></td>
-<td><span data-ttu-id="5aca3-221">application/atom+xml</span><span class="sxs-lookup"><span data-stu-id="5aca3-221">application/atom+xml</span></span></td>
+<td><span data-ttu-id="cc6d2-219">Headers</span><span class="sxs-lookup"><span data-stu-id="cc6d2-219">Headers</span></span></td>
+<td><span data-ttu-id="cc6d2-220">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cc6d2-220">Content-Type</span></span></td>
+<td><span data-ttu-id="cc6d2-221">application/atom+xml</span><span class="sxs-lookup"><span data-stu-id="cc6d2-221">application/atom+xml</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="5aca3-222">Body</span><span class="sxs-lookup"><span data-stu-id="5aca3-222">Body</span></span></td>
-<td><p><span data-ttu-id="5aca3-223">&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-223">&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-224">&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'</span><span class="sxs-lookup"><span data-stu-id="5aca3-224">&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'</span></span></p>
-<p><span data-ttu-id="5aca3-225">xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</span><span class="sxs-lookup"><span data-stu-id="5aca3-225">xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</span></span></p>
-<p><span data-ttu-id="5aca3-226">xmlns='https://www.w3.org/2005/Atom'&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-226">xmlns='https://www.w3.org/2005/Atom'&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-227">&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-227">&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-228">&lt;updated&gt;9/9/2017 10:50:00 PM&lt;/updated&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-228">&lt;updated&gt;9/9/2017 10:50:00 PM&lt;/updated&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-229">&lt;content type='application/xml'&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-229">&lt;content type='application/xml'&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-230">&lt;m:properties&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-230">&lt;m:properties&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-231">&lt;d:Name&gt;僱用終止 &lt;/d:Name&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-231">&lt;d:Name&gt;Employee Termination &lt;/d:Name&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-232">&lt;d:EventType&gt;99e0ae64-a4b8-40bb-82ed-645895610f56&lt;/d:EventType&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-232">&lt;d:EventType&gt;99e0ae64-a4b8-40bb-82ed-645895610f56&lt;/d:EventType&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-233">&lt;d:SharePointAssetIdQuery&gt;1234&lt;/d:SharePointAssetIdQuery&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-233">&lt;d:SharePointAssetIdQuery&gt;1234&lt;/d:SharePointAssetIdQuery&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-234">&lt;d:EventDateTime&gt;2018-12-01T00:00:00Z &lt;/d:EventDateTime&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-234">&lt;d:EventDateTime&gt;2018-12-01T00:00:00Z &lt;/d:EventDateTime&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-235">&lt;/m:properties&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-235">&lt;/m:properties&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-236">&lt;/content&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-236">&lt;/content&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-237">&lt;/entry&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-237">&lt;/entry&gt;</span></span></p></td>
+<td><span data-ttu-id="cc6d2-222">Body</span><span class="sxs-lookup"><span data-stu-id="cc6d2-222">Body</span></span></td>
+<td><p><span data-ttu-id="cc6d2-223">&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-223">&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-224">&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'</span><span class="sxs-lookup"><span data-stu-id="cc6d2-224">&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'</span></span></p>
+<p><span data-ttu-id="cc6d2-225">xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</span><span class="sxs-lookup"><span data-stu-id="cc6d2-225">xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</span></span></p>
+<p><span data-ttu-id="cc6d2-226">xmlns='https://www.w3.org/2005/Atom'&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-226">xmlns='https://www.w3.org/2005/Atom'&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-227">&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-227">&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-228">&lt;updated&gt;9/9/2017 10:50:00 PM&lt;/updated&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-228">&lt;updated&gt;9/9/2017 10:50:00 PM&lt;/updated&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-229">&lt;content type='application/xml'&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-229">&lt;content type='application/xml'&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-230">&lt;m:properties&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-230">&lt;m:properties&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-231">&lt;d:Name&gt;僱用終止 &lt;/d:Name&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-231">&lt;d:Name&gt;Employee Termination &lt;/d:Name&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-232">&lt;d:EventType&gt;99e0ae64-a4b8-40bb-82ed-645895610f56&lt;/d:EventType&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-232">&lt;d:EventType&gt;99e0ae64-a4b8-40bb-82ed-645895610f56&lt;/d:EventType&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-233">&lt;d:SharePointAssetIdQuery&gt;1234&lt;/d:SharePointAssetIdQuery&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-233">&lt;d:SharePointAssetIdQuery&gt;1234&lt;/d:SharePointAssetIdQuery&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-234">&lt;d:EventDateTime&gt;2018-12-01T00:00:00Z &lt;/d:EventDateTime&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-234">&lt;d:EventDateTime&gt;2018-12-01T00:00:00Z &lt;/d:EventDateTime&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-235">&lt;/m:properties&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-235">&lt;/m:properties&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-236">&lt;/content&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-236">&lt;/content&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-237">&lt;/entry&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-237">&lt;/entry&gt;</span></span></p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="5aca3-238">驗證</span><span class="sxs-lookup"><span data-stu-id="5aca3-238">Authentication</span></span></td>
-<td><span data-ttu-id="5aca3-239">基本</span><span class="sxs-lookup"><span data-stu-id="5aca3-239">Basic</span></span></td>
+<td><span data-ttu-id="cc6d2-238">驗證</span><span class="sxs-lookup"><span data-stu-id="cc6d2-238">Authentication</span></span></td>
+<td><span data-ttu-id="cc6d2-239">基本</span><span class="sxs-lookup"><span data-stu-id="cc6d2-239">Basic</span></span></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="5aca3-240">使用者名稱</span><span class="sxs-lookup"><span data-stu-id="5aca3-240">Username</span></span></td>
-<td><span data-ttu-id="5aca3-241">“Complianceuser”</span><span class="sxs-lookup"><span data-stu-id="5aca3-241">“Complianceuser”</span></span></td>
+<td><span data-ttu-id="cc6d2-240">使用者名稱</span><span class="sxs-lookup"><span data-stu-id="cc6d2-240">Username</span></span></td>
+<td><span data-ttu-id="cc6d2-241">“Complianceuser”</span><span class="sxs-lookup"><span data-stu-id="cc6d2-241">“Complianceuser”</span></span></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="5aca3-242">密碼</span><span class="sxs-lookup"><span data-stu-id="5aca3-242">Password</span></span></td>
-<td><span data-ttu-id="5aca3-243">“Compliancepassword”</span><span class="sxs-lookup"><span data-stu-id="5aca3-243">“Compliancepassword”</span></span></td>
+<td><span data-ttu-id="cc6d2-242">密碼</span><span class="sxs-lookup"><span data-stu-id="cc6d2-242">Password</span></span></td>
+<td><span data-ttu-id="cc6d2-243">“Compliancepassword”</span><span class="sxs-lookup"><span data-stu-id="cc6d2-243">“Compliancepassword”</span></span></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
-##### <a name="available-parameters"></a><span data-ttu-id="5aca3-244">可用的參數</span><span class="sxs-lookup"><span data-stu-id="5aca3-244">Available parameters</span></span>
+##### <a name="available-parameters"></a><span data-ttu-id="cc6d2-244">可用的參數</span><span class="sxs-lookup"><span data-stu-id="cc6d2-244">Available parameters</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="5aca3-245"><strong>參數</strong></span><span class="sxs-lookup"><span data-stu-id="5aca3-245"><strong>Parameters</strong></span></span></th>
-<th><span data-ttu-id="5aca3-246"><strong>描述</strong></span><span class="sxs-lookup"><span data-stu-id="5aca3-246"><strong>Description</strong></span></span></th>
-<th><span data-ttu-id="5aca3-247"><strong>附註</strong></span><span class="sxs-lookup"><span data-stu-id="5aca3-247"><strong>Notes</strong></span></span></th>
+<th><span data-ttu-id="cc6d2-245"><strong>參數</strong></span><span class="sxs-lookup"><span data-stu-id="cc6d2-245"><strong>Parameters</strong></span></span></th>
+<th><span data-ttu-id="cc6d2-246"><strong>描述</strong></span><span class="sxs-lookup"><span data-stu-id="cc6d2-246"><strong>Description</strong></span></span></th>
+<th><span data-ttu-id="cc6d2-247"><strong>附註</strong></span><span class="sxs-lookup"><span data-stu-id="cc6d2-247"><strong>Notes</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="5aca3-248">&lt;d:Name&gt;&lt;/d:Name&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-248">&lt;d:Name&gt;&lt;/d:Name&gt;</span></span></td>
-<td><span data-ttu-id="5aca3-249">提供事件的唯一名稱，</span><span class="sxs-lookup"><span data-stu-id="5aca3-249">Provide a unique name for the event,</span></span></td>
-<td><span data-ttu-id="5aca3-p121">結尾不可有空格以及下列字元：% \* \ &amp; &lt; &gt; | # ? , : ;</span><span class="sxs-lookup"><span data-stu-id="5aca3-p121">Cannot contain trailing spaces, and the following characters: % \* \ &amp; &lt; &gt; | # ? , : ;</span></span></td>
+<td><span data-ttu-id="cc6d2-248">&lt;d:Name&gt;&lt;/d:Name&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-248">&lt;d:Name&gt;&lt;/d:Name&gt;</span></span></td>
+<td><span data-ttu-id="cc6d2-249">提供事件的唯一名稱，</span><span class="sxs-lookup"><span data-stu-id="cc6d2-249">Provide a unique name for the event,</span></span></td>
+<td><span data-ttu-id="cc6d2-p121">結尾不可有空格以及下列字元：% \* \ &amp; &lt; &gt; | # ? , : ;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-p121">Cannot contain trailing spaces, and the following characters: % \* \ &amp; &lt; &gt; | # ? , : ;</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="5aca3-252">&lt;d:EventType&gt;&lt;/d:EventType&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-252">&lt;d:EventType&gt;&lt;/d:EventType&gt;</span></span></td>
-<td><span data-ttu-id="5aca3-253">輸入事件類型名稱 (或 Guid)</span><span class="sxs-lookup"><span data-stu-id="5aca3-253">Enter event type name (or Guid),</span></span></td>
-<td><span data-ttu-id="5aca3-p122">例如：「僱用終止」。事件類型必須與保留標籤相關聯。</span><span class="sxs-lookup"><span data-stu-id="5aca3-p122">Example: “Employee termination”. Event type has to be associated with a retention label.</span></span></td>
+<td><span data-ttu-id="cc6d2-252">&lt;d:EventType&gt;&lt;/d:EventType&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-252">&lt;d:EventType&gt;&lt;/d:EventType&gt;</span></span></td>
+<td><span data-ttu-id="cc6d2-253">輸入事件類型名稱 (或 Guid)</span><span class="sxs-lookup"><span data-stu-id="cc6d2-253">Enter event type name (or Guid),</span></span></td>
+<td><span data-ttu-id="cc6d2-p122">例如：「僱用終止」。事件類型必須與保留標籤相關聯。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-p122">Example: “Employee termination”. Event type has to be associated with a retention label.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="5aca3-256">&lt;d:SharePointAssetIdQuery&gt;&lt;/d:SharePointAssetIdQuery&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-256">&lt;d:SharePointAssetIdQuery&gt;&lt;/d:SharePointAssetIdQuery&gt;</span></span></td>
-<td><span data-ttu-id="5aca3-257">輸入 ComplianceAssetId: + 員工 ID</span><span class="sxs-lookup"><span data-stu-id="5aca3-257">Enter “ComplianceAssetId:” + employee Id</span></span></td>
-<td><span data-ttu-id="5aca3-258">例如：&quot;ComplianceAssetId:12345&quot;</span><span class="sxs-lookup"><span data-stu-id="5aca3-258">Example:&quot;ComplianceAssetId:12345&quot;</span></span></td>
+<td><span data-ttu-id="cc6d2-256">&lt;d:SharePointAssetIdQuery&gt;&lt;/d:SharePointAssetIdQuery&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-256">&lt;d:SharePointAssetIdQuery&gt;&lt;/d:SharePointAssetIdQuery&gt;</span></span></td>
+<td><span data-ttu-id="cc6d2-257">輸入 ComplianceAssetId: + 員工 ID</span><span class="sxs-lookup"><span data-stu-id="cc6d2-257">Enter “ComplianceAssetId:” + employee Id</span></span></td>
+<td><span data-ttu-id="cc6d2-258">例如：&quot;ComplianceAssetId:12345&quot;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-258">Example:&quot;ComplianceAssetId:12345&quot;</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="5aca3-259">&lt;d:EventDateTime&gt;&lt;/d:EventDateTime&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-259">&lt;d:EventDateTime&gt;&lt;/d:EventDateTime&gt;</span></span></td>
-<td><span data-ttu-id="5aca3-260">事件的日期和時間</span><span class="sxs-lookup"><span data-stu-id="5aca3-260">Event Date and Time</span></span></td>
-<td><p><span data-ttu-id="5aca3-261">格式：yyyy-MM-ddTHH:mm:ssZ，例如：</span><span class="sxs-lookup"><span data-stu-id="5aca3-261">Format: yyyy-MM-ddTHH:mm:ssZ, Example:</span></span></p>
-<p><span data-ttu-id="5aca3-262">2018-12-01T00:00:00Z</span><span class="sxs-lookup"><span data-stu-id="5aca3-262">2018-12-01T00:00:00Z</span></span></p></td>
+<td><span data-ttu-id="cc6d2-259">&lt;d:EventDateTime&gt;&lt;/d:EventDateTime&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-259">&lt;d:EventDateTime&gt;&lt;/d:EventDateTime&gt;</span></span></td>
+<td><span data-ttu-id="cc6d2-260">事件的日期和時間</span><span class="sxs-lookup"><span data-stu-id="cc6d2-260">Event Date and Time</span></span></td>
+<td><p><span data-ttu-id="cc6d2-261">格式：yyyy-MM-ddTHH:mm:ssZ，例如：</span><span class="sxs-lookup"><span data-stu-id="cc6d2-261">Format: yyyy-MM-ddTHH:mm:ssZ, Example:</span></span></p>
+<p><span data-ttu-id="cc6d2-262">2018-12-01T00:00:00Z</span><span class="sxs-lookup"><span data-stu-id="cc6d2-262">2018-12-01T00:00:00Z</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
-##### <a name="response-codes"></a><span data-ttu-id="5aca3-263">回應碼</span><span class="sxs-lookup"><span data-stu-id="5aca3-263">Response codes</span></span>
+##### <a name="response-codes"></a><span data-ttu-id="cc6d2-263">回應碼</span><span class="sxs-lookup"><span data-stu-id="cc6d2-263">Response codes</span></span>
 
-| <span data-ttu-id="5aca3-264">**回應碼**</span><span class="sxs-lookup"><span data-stu-id="5aca3-264">**Response Code**</span></span> | <span data-ttu-id="5aca3-265">**描述**</span><span class="sxs-lookup"><span data-stu-id="5aca3-265">**Description**</span></span>       |
+| <span data-ttu-id="cc6d2-264">**回應碼**</span><span class="sxs-lookup"><span data-stu-id="cc6d2-264">**Response Code**</span></span> | <span data-ttu-id="cc6d2-265">**描述**</span><span class="sxs-lookup"><span data-stu-id="cc6d2-265">**Description**</span></span>       |
 | ----------------- | --------------------- |
-| <span data-ttu-id="5aca3-266">302</span><span class="sxs-lookup"><span data-stu-id="5aca3-266">302</span></span>               | <span data-ttu-id="5aca3-267">重新導向</span><span class="sxs-lookup"><span data-stu-id="5aca3-267">Redirect</span></span>              |
-| <span data-ttu-id="5aca3-268">201</span><span class="sxs-lookup"><span data-stu-id="5aca3-268">201</span></span>               | <span data-ttu-id="5aca3-269">建立時間</span><span class="sxs-lookup"><span data-stu-id="5aca3-269">Created</span></span>               |
-| <span data-ttu-id="5aca3-270">403</span><span class="sxs-lookup"><span data-stu-id="5aca3-270">403</span></span>               | <span data-ttu-id="5aca3-271">授權失敗</span><span class="sxs-lookup"><span data-stu-id="5aca3-271">Authorization Failed</span></span>  |
-| <span data-ttu-id="5aca3-272">401</span><span class="sxs-lookup"><span data-stu-id="5aca3-272">401</span></span>               | <span data-ttu-id="5aca3-273">驗證失敗</span><span class="sxs-lookup"><span data-stu-id="5aca3-273">Authentication Failed</span></span> |
+| <span data-ttu-id="cc6d2-266">302</span><span class="sxs-lookup"><span data-stu-id="cc6d2-266">302</span></span>               | <span data-ttu-id="cc6d2-267">重新導向</span><span class="sxs-lookup"><span data-stu-id="cc6d2-267">Redirect</span></span>              |
+| <span data-ttu-id="cc6d2-268">201</span><span class="sxs-lookup"><span data-stu-id="cc6d2-268">201</span></span>               | <span data-ttu-id="cc6d2-269">建立時間</span><span class="sxs-lookup"><span data-stu-id="cc6d2-269">Created</span></span>               |
+| <span data-ttu-id="cc6d2-270">403</span><span class="sxs-lookup"><span data-stu-id="cc6d2-270">403</span></span>               | <span data-ttu-id="cc6d2-271">授權失敗</span><span class="sxs-lookup"><span data-stu-id="cc6d2-271">Authorization Failed</span></span>  |
+| <span data-ttu-id="cc6d2-272">401</span><span class="sxs-lookup"><span data-stu-id="cc6d2-272">401</span></span>               | <span data-ttu-id="cc6d2-273">驗證失敗</span><span class="sxs-lookup"><span data-stu-id="cc6d2-273">Authentication Failed</span></span> |
 
-##### <a name="get-events-based-on-time-range"></a><span data-ttu-id="5aca3-274">依據時間範圍取得事件</span><span class="sxs-lookup"><span data-stu-id="5aca3-274">Get Events based on time range</span></span>
+##### <a name="get-events-based-on-time-range"></a><span data-ttu-id="cc6d2-274">依據時間範圍取得事件</span><span class="sxs-lookup"><span data-stu-id="cc6d2-274">Get Events based on time range</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="5aca3-275">Method</span><span class="sxs-lookup"><span data-stu-id="5aca3-275">Method</span></span></th>
-<th><span data-ttu-id="5aca3-276">GET</span><span class="sxs-lookup"><span data-stu-id="5aca3-276">GET</span></span></th>
+<th><span data-ttu-id="cc6d2-275">Method</span><span class="sxs-lookup"><span data-stu-id="cc6d2-275">Method</span></span></th>
+<th><span data-ttu-id="cc6d2-276">GET</span><span class="sxs-lookup"><span data-stu-id="cc6d2-276">GET</span></span></th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="5aca3-277">URL</span><span class="sxs-lookup"><span data-stu-id="5aca3-277">URL</span></span></td>
+<td><span data-ttu-id="cc6d2-277">URL</span><span class="sxs-lookup"><span data-stu-id="cc6d2-277">URL</span></span></td>
 <td><ol start="4" type="1">
-<li><p><span data-ttu-id="5aca3-278">https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&amp;EndDateTime=2019-01-16</span><span class="sxs-lookup"><span data-stu-id="5aca3-278">https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&amp;EndDateTime=2019-01-16</span></span></p></li>
+<li><p><span data-ttu-id="cc6d2-278">https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&amp;EndDateTime=2019-01-16</span><span class="sxs-lookup"><span data-stu-id="cc6d2-278">https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&amp;EndDateTime=2019-01-16</span></span></p></li>
 </ol></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="5aca3-279">Headers</span><span class="sxs-lookup"><span data-stu-id="5aca3-279">Headers</span></span></td>
-<td><span data-ttu-id="5aca3-280">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5aca3-280">Content-Type</span></span></td>
-<td><span data-ttu-id="5aca3-281">application/atom+xml</span><span class="sxs-lookup"><span data-stu-id="5aca3-281">application/atom+xml</span></span></td>
+<td><span data-ttu-id="cc6d2-279">Headers</span><span class="sxs-lookup"><span data-stu-id="cc6d2-279">Headers</span></span></td>
+<td><span data-ttu-id="cc6d2-280">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cc6d2-280">Content-Type</span></span></td>
+<td><span data-ttu-id="cc6d2-281">application/atom+xml</span><span class="sxs-lookup"><span data-stu-id="cc6d2-281">application/atom+xml</span></span></td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -286,201 +288,201 @@ ms.locfileid: "40807432"
 <td></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="5aca3-282">驗證</span><span class="sxs-lookup"><span data-stu-id="5aca3-282">Authentication</span></span></td>
-<td><span data-ttu-id="5aca3-283">基本</span><span class="sxs-lookup"><span data-stu-id="5aca3-283">Basic</span></span></td>
+<td><span data-ttu-id="cc6d2-282">驗證</span><span class="sxs-lookup"><span data-stu-id="cc6d2-282">Authentication</span></span></td>
+<td><span data-ttu-id="cc6d2-283">基本</span><span class="sxs-lookup"><span data-stu-id="cc6d2-283">Basic</span></span></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="5aca3-284">使用者名稱</span><span class="sxs-lookup"><span data-stu-id="5aca3-284">Username</span></span></td>
-<td><span data-ttu-id="5aca3-285">“Complianceuser”</span><span class="sxs-lookup"><span data-stu-id="5aca3-285">“Complianceuser”</span></span></td>
+<td><span data-ttu-id="cc6d2-284">使用者名稱</span><span class="sxs-lookup"><span data-stu-id="cc6d2-284">Username</span></span></td>
+<td><span data-ttu-id="cc6d2-285">“Complianceuser”</span><span class="sxs-lookup"><span data-stu-id="cc6d2-285">“Complianceuser”</span></span></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="5aca3-286">密碼</span><span class="sxs-lookup"><span data-stu-id="5aca3-286">Password</span></span></td>
-<td><span data-ttu-id="5aca3-287">“Compliancepassword”</span><span class="sxs-lookup"><span data-stu-id="5aca3-287">“Compliancepassword”</span></span></td>
+<td><span data-ttu-id="cc6d2-286">密碼</span><span class="sxs-lookup"><span data-stu-id="cc6d2-286">Password</span></span></td>
+<td><span data-ttu-id="cc6d2-287">“Compliancepassword”</span><span class="sxs-lookup"><span data-stu-id="cc6d2-287">“Compliancepassword”</span></span></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
-##### <a name="response-codes"></a><span data-ttu-id="5aca3-288">回應碼</span><span class="sxs-lookup"><span data-stu-id="5aca3-288">Response codes</span></span>
+##### <a name="response-codes"></a><span data-ttu-id="cc6d2-288">回應碼</span><span class="sxs-lookup"><span data-stu-id="cc6d2-288">Response codes</span></span>
 
-| <span data-ttu-id="5aca3-289">**回應碼**</span><span class="sxs-lookup"><span data-stu-id="5aca3-289">**Response Code**</span></span> | <span data-ttu-id="5aca3-290">**描述**</span><span class="sxs-lookup"><span data-stu-id="5aca3-290">**Description**</span></span>                   |
+| <span data-ttu-id="cc6d2-289">**回應碼**</span><span class="sxs-lookup"><span data-stu-id="cc6d2-289">**Response Code**</span></span> | <span data-ttu-id="cc6d2-290">**描述**</span><span class="sxs-lookup"><span data-stu-id="cc6d2-290">**Description**</span></span>                   |
 | ----------------- | --------------------------------- |
-| <span data-ttu-id="5aca3-291">200</span><span class="sxs-lookup"><span data-stu-id="5aca3-291">200</span></span>               | <span data-ttu-id="5aca3-292">好的，以 atom+ xml 格式列出事件清單</span><span class="sxs-lookup"><span data-stu-id="5aca3-292">OK, A list of events in atom+ xml</span></span> |
-| <span data-ttu-id="5aca3-293">404</span><span class="sxs-lookup"><span data-stu-id="5aca3-293">404</span></span>               | <span data-ttu-id="5aca3-294">找不到</span><span class="sxs-lookup"><span data-stu-id="5aca3-294">Not found</span></span>                         |
-| <span data-ttu-id="5aca3-295">302</span><span class="sxs-lookup"><span data-stu-id="5aca3-295">302</span></span>               | <span data-ttu-id="5aca3-296">重新導向</span><span class="sxs-lookup"><span data-stu-id="5aca3-296">Redirect</span></span>                          |
-| <span data-ttu-id="5aca3-297">401</span><span class="sxs-lookup"><span data-stu-id="5aca3-297">401</span></span>               | <span data-ttu-id="5aca3-298">授權失敗</span><span class="sxs-lookup"><span data-stu-id="5aca3-298">Authorization Failed</span></span>              |
-| <span data-ttu-id="5aca3-299">403</span><span class="sxs-lookup"><span data-stu-id="5aca3-299">403</span></span>               | <span data-ttu-id="5aca3-300">驗證失敗</span><span class="sxs-lookup"><span data-stu-id="5aca3-300">Authentication Failed</span></span>             |
+| <span data-ttu-id="cc6d2-291">200</span><span class="sxs-lookup"><span data-stu-id="cc6d2-291">200</span></span>               | <span data-ttu-id="cc6d2-292">好的，以 atom+ xml 格式列出事件清單</span><span class="sxs-lookup"><span data-stu-id="cc6d2-292">OK, A list of events in atom+ xml</span></span> |
+| <span data-ttu-id="cc6d2-293">404</span><span class="sxs-lookup"><span data-stu-id="cc6d2-293">404</span></span>               | <span data-ttu-id="cc6d2-294">找不到</span><span class="sxs-lookup"><span data-stu-id="cc6d2-294">Not found</span></span>                         |
+| <span data-ttu-id="cc6d2-295">302</span><span class="sxs-lookup"><span data-stu-id="cc6d2-295">302</span></span>               | <span data-ttu-id="cc6d2-296">重新導向</span><span class="sxs-lookup"><span data-stu-id="cc6d2-296">Redirect</span></span>                          |
+| <span data-ttu-id="cc6d2-297">401</span><span class="sxs-lookup"><span data-stu-id="cc6d2-297">401</span></span>               | <span data-ttu-id="cc6d2-298">授權失敗</span><span class="sxs-lookup"><span data-stu-id="cc6d2-298">Authorization Failed</span></span>              |
+| <span data-ttu-id="cc6d2-299">403</span><span class="sxs-lookup"><span data-stu-id="cc6d2-299">403</span></span>               | <span data-ttu-id="cc6d2-300">驗證失敗</span><span class="sxs-lookup"><span data-stu-id="cc6d2-300">Authentication Failed</span></span>             |
 
-##### <a name="get-an-event-by-id"></a><span data-ttu-id="5aca3-301">依 ID 取得事件</span><span class="sxs-lookup"><span data-stu-id="5aca3-301">Get an event by ID</span></span>
+##### <a name="get-an-event-by-id"></a><span data-ttu-id="cc6d2-301">依 ID 取得事件</span><span class="sxs-lookup"><span data-stu-id="cc6d2-301">Get an event by ID</span></span>
 
-| <span data-ttu-id="5aca3-302">Method</span><span class="sxs-lookup"><span data-stu-id="5aca3-302">Method</span></span>         | <span data-ttu-id="5aca3-303">GET</span><span class="sxs-lookup"><span data-stu-id="5aca3-303">GET</span></span>   |                      |
+| <span data-ttu-id="cc6d2-302">Method</span><span class="sxs-lookup"><span data-stu-id="cc6d2-302">Method</span></span>         | <span data-ttu-id="cc6d2-303">GET</span><span class="sxs-lookup"><span data-stu-id="cc6d2-303">GET</span></span>   |                      |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
-| <span data-ttu-id="5aca3-304">URL</span><span class="sxs-lookup"><span data-stu-id="5aca3-304">URL</span></span>            | <span data-ttu-id="5aca3-305">[https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent(‘174e9a86-74ff-4450-8666-7c11f7730f66’)](https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent\('174e9a86-74ff-4450-8666-7c11f7730f66'\))</span><span class="sxs-lookup"><span data-stu-id="5aca3-305">[https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent(‘174e9a86-74ff-4450-8666-7c11f7730f66’)](https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent\('174e9a86-74ff-4450-8666-7c11f7730f66'\))</span></span> |                      |
-| <span data-ttu-id="5aca3-306">Header</span><span class="sxs-lookup"><span data-stu-id="5aca3-306">Header</span></span>         | <span data-ttu-id="5aca3-307">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5aca3-307">Content-Type</span></span>                                                                                                                                                                                                                                                       | <span data-ttu-id="5aca3-308">application/atom+xml</span><span class="sxs-lookup"><span data-stu-id="5aca3-308">application/atom+xml</span></span> |
-| <span data-ttu-id="5aca3-309">驗證</span><span class="sxs-lookup"><span data-stu-id="5aca3-309">Authentication</span></span> | <span data-ttu-id="5aca3-310">基本</span><span class="sxs-lookup"><span data-stu-id="5aca3-310">Basic</span></span>                                                                                                                                                                                                                                                              |                      |
-| <span data-ttu-id="5aca3-311">使用者名稱</span><span class="sxs-lookup"><span data-stu-id="5aca3-311">Username</span></span>       | <span data-ttu-id="5aca3-312">“Complianceuser”</span><span class="sxs-lookup"><span data-stu-id="5aca3-312">“Complianceuser”</span></span>                                                                                                                                                                                                                                                   |                      |
-| <span data-ttu-id="5aca3-313">密碼</span><span class="sxs-lookup"><span data-stu-id="5aca3-313">Password</span></span>       | <span data-ttu-id="5aca3-314">“Compliancepassword”</span><span class="sxs-lookup"><span data-stu-id="5aca3-314">“Compliancepassword”</span></span>                                                                                                                                                                                                                                               |                      |
+| <span data-ttu-id="cc6d2-304">URL</span><span class="sxs-lookup"><span data-stu-id="cc6d2-304">URL</span></span>            | <span data-ttu-id="cc6d2-305">[https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent(‘174e9a86-74ff-4450-8666-7c11f7730f66’)](https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent\('174e9a86-74ff-4450-8666-7c11f7730f66'\))</span><span class="sxs-lookup"><span data-stu-id="cc6d2-305">[https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent(‘174e9a86-74ff-4450-8666-7c11f7730f66’)](https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent\('174e9a86-74ff-4450-8666-7c11f7730f66'\))</span></span> |                      |
+| <span data-ttu-id="cc6d2-306">Header</span><span class="sxs-lookup"><span data-stu-id="cc6d2-306">Header</span></span>         | <span data-ttu-id="cc6d2-307">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cc6d2-307">Content-Type</span></span>                                                                                                                                                                                                                                                       | <span data-ttu-id="cc6d2-308">application/atom+xml</span><span class="sxs-lookup"><span data-stu-id="cc6d2-308">application/atom+xml</span></span> |
+| <span data-ttu-id="cc6d2-309">驗證</span><span class="sxs-lookup"><span data-stu-id="cc6d2-309">Authentication</span></span> | <span data-ttu-id="cc6d2-310">基本</span><span class="sxs-lookup"><span data-stu-id="cc6d2-310">Basic</span></span>                                                                                                                                                                                                                                                              |                      |
+| <span data-ttu-id="cc6d2-311">使用者名稱</span><span class="sxs-lookup"><span data-stu-id="cc6d2-311">Username</span></span>       | <span data-ttu-id="cc6d2-312">“Complianceuser”</span><span class="sxs-lookup"><span data-stu-id="cc6d2-312">“Complianceuser”</span></span>                                                                                                                                                                                                                                                   |                      |
+| <span data-ttu-id="cc6d2-313">密碼</span><span class="sxs-lookup"><span data-stu-id="cc6d2-313">Password</span></span>       | <span data-ttu-id="cc6d2-314">“Compliancepassword”</span><span class="sxs-lookup"><span data-stu-id="cc6d2-314">“Compliancepassword”</span></span>                                                                                                                                                                                                                                               |                      |
 
-##### <a name="response-codes"></a><span data-ttu-id="5aca3-315">回應碼</span><span class="sxs-lookup"><span data-stu-id="5aca3-315">Response codes</span></span>
+##### <a name="response-codes"></a><span data-ttu-id="cc6d2-315">回應碼</span><span class="sxs-lookup"><span data-stu-id="cc6d2-315">Response codes</span></span>
 
-| <span data-ttu-id="5aca3-316">**回應碼**</span><span class="sxs-lookup"><span data-stu-id="5aca3-316">**Response Code**</span></span> | <span data-ttu-id="5aca3-317">**描述**</span><span class="sxs-lookup"><span data-stu-id="5aca3-317">**Description**</span></span>                                      |
+| <span data-ttu-id="cc6d2-316">**回應碼**</span><span class="sxs-lookup"><span data-stu-id="cc6d2-316">**Response Code**</span></span> | <span data-ttu-id="cc6d2-317">**描述**</span><span class="sxs-lookup"><span data-stu-id="cc6d2-317">**Description**</span></span>                                      |
 | ----------------- | ---------------------------------------------------- |
-| <span data-ttu-id="5aca3-318">200</span><span class="sxs-lookup"><span data-stu-id="5aca3-318">200</span></span>               | <span data-ttu-id="5aca3-319">好的，回應本文包含有 atom+xml 格式的事件</span><span class="sxs-lookup"><span data-stu-id="5aca3-319">OK, The response body contains the event in atom+xml</span></span> |
-| <span data-ttu-id="5aca3-320">404</span><span class="sxs-lookup"><span data-stu-id="5aca3-320">404</span></span>               | <span data-ttu-id="5aca3-321">找不到</span><span class="sxs-lookup"><span data-stu-id="5aca3-321">Not found</span></span>                                            |
-| <span data-ttu-id="5aca3-322">302</span><span class="sxs-lookup"><span data-stu-id="5aca3-322">302</span></span>               | <span data-ttu-id="5aca3-323">重新導向</span><span class="sxs-lookup"><span data-stu-id="5aca3-323">Redirect</span></span>                                             |
-| <span data-ttu-id="5aca3-324">401</span><span class="sxs-lookup"><span data-stu-id="5aca3-324">401</span></span>               | <span data-ttu-id="5aca3-325">授權失敗</span><span class="sxs-lookup"><span data-stu-id="5aca3-325">Authorization Failed</span></span>                                 |
-| <span data-ttu-id="5aca3-326">403</span><span class="sxs-lookup"><span data-stu-id="5aca3-326">403</span></span>               | <span data-ttu-id="5aca3-327">驗證失敗</span><span class="sxs-lookup"><span data-stu-id="5aca3-327">Authentication Failed</span></span>                                |
+| <span data-ttu-id="cc6d2-318">200</span><span class="sxs-lookup"><span data-stu-id="cc6d2-318">200</span></span>               | <span data-ttu-id="cc6d2-319">好的，回應本文包含有 atom+xml 格式的事件</span><span class="sxs-lookup"><span data-stu-id="cc6d2-319">OK, The response body contains the event in atom+xml</span></span> |
+| <span data-ttu-id="cc6d2-320">404</span><span class="sxs-lookup"><span data-stu-id="cc6d2-320">404</span></span>               | <span data-ttu-id="cc6d2-321">找不到</span><span class="sxs-lookup"><span data-stu-id="cc6d2-321">Not found</span></span>                                            |
+| <span data-ttu-id="cc6d2-322">302</span><span class="sxs-lookup"><span data-stu-id="cc6d2-322">302</span></span>               | <span data-ttu-id="cc6d2-323">重新導向</span><span class="sxs-lookup"><span data-stu-id="cc6d2-323">Redirect</span></span>                                             |
+| <span data-ttu-id="cc6d2-324">401</span><span class="sxs-lookup"><span data-stu-id="cc6d2-324">401</span></span>               | <span data-ttu-id="cc6d2-325">授權失敗</span><span class="sxs-lookup"><span data-stu-id="cc6d2-325">Authorization Failed</span></span>                                 |
+| <span data-ttu-id="cc6d2-326">403</span><span class="sxs-lookup"><span data-stu-id="cc6d2-326">403</span></span>               | <span data-ttu-id="cc6d2-327">驗證失敗</span><span class="sxs-lookup"><span data-stu-id="cc6d2-327">Authentication Failed</span></span>                                |
 
-##### <a name="get-an-event-by-name"></a><span data-ttu-id="5aca3-328">依名稱取得事件</span><span class="sxs-lookup"><span data-stu-id="5aca3-328">Get an event by name</span></span>
+##### <a name="get-an-event-by-name"></a><span data-ttu-id="cc6d2-328">依名稱取得事件</span><span class="sxs-lookup"><span data-stu-id="cc6d2-328">Get an event by name</span></span>
 
-| <span data-ttu-id="5aca3-329">Method</span><span class="sxs-lookup"><span data-stu-id="5aca3-329">Method</span></span>         | <span data-ttu-id="5aca3-330">GET</span><span class="sxs-lookup"><span data-stu-id="5aca3-330">GET</span></span>       |                      |
+| <span data-ttu-id="cc6d2-329">Method</span><span class="sxs-lookup"><span data-stu-id="cc6d2-329">Method</span></span>         | <span data-ttu-id="cc6d2-330">GET</span><span class="sxs-lookup"><span data-stu-id="cc6d2-330">GET</span></span>       |                      |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| <span data-ttu-id="5aca3-331">URL</span><span class="sxs-lookup"><span data-stu-id="5aca3-331">URL</span></span>            | <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('EventByRESTPost-2226bfebcc2841a8968ba71f9516b763')> |                      |
-| <span data-ttu-id="5aca3-332">Headers</span><span class="sxs-lookup"><span data-stu-id="5aca3-332">Headers</span></span>        | <span data-ttu-id="5aca3-333">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5aca3-333">Content-Type</span></span>                                                                                                                                 | <span data-ttu-id="5aca3-334">application/atom+xml</span><span class="sxs-lookup"><span data-stu-id="5aca3-334">application/atom+xml</span></span> |
-| <span data-ttu-id="5aca3-335">驗證</span><span class="sxs-lookup"><span data-stu-id="5aca3-335">Authentication</span></span> | <span data-ttu-id="5aca3-336">基本</span><span class="sxs-lookup"><span data-stu-id="5aca3-336">Basic</span></span>                                                                                                                                        |                      |
-| <span data-ttu-id="5aca3-337">使用者名稱</span><span class="sxs-lookup"><span data-stu-id="5aca3-337">Username</span></span>       | <span data-ttu-id="5aca3-338">“Complianceuser”</span><span class="sxs-lookup"><span data-stu-id="5aca3-338">“Complianceuser”</span></span>                                                                                                                             |                      |
-| <span data-ttu-id="5aca3-339">密碼</span><span class="sxs-lookup"><span data-stu-id="5aca3-339">Password</span></span>       | <span data-ttu-id="5aca3-340">“Compliancepassword”</span><span class="sxs-lookup"><span data-stu-id="5aca3-340">“Compliancepassword”</span></span>                                                                                                                         |                      |
+| <span data-ttu-id="cc6d2-331">URL</span><span class="sxs-lookup"><span data-stu-id="cc6d2-331">URL</span></span>            | <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('EventByRESTPost-2226bfebcc2841a8968ba71f9516b763')> |                      |
+| <span data-ttu-id="cc6d2-332">Headers</span><span class="sxs-lookup"><span data-stu-id="cc6d2-332">Headers</span></span>        | <span data-ttu-id="cc6d2-333">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cc6d2-333">Content-Type</span></span>                                                                                                                                 | <span data-ttu-id="cc6d2-334">application/atom+xml</span><span class="sxs-lookup"><span data-stu-id="cc6d2-334">application/atom+xml</span></span> |
+| <span data-ttu-id="cc6d2-335">驗證</span><span class="sxs-lookup"><span data-stu-id="cc6d2-335">Authentication</span></span> | <span data-ttu-id="cc6d2-336">基本</span><span class="sxs-lookup"><span data-stu-id="cc6d2-336">Basic</span></span>                                                                                                                                        |                      |
+| <span data-ttu-id="cc6d2-337">使用者名稱</span><span class="sxs-lookup"><span data-stu-id="cc6d2-337">Username</span></span>       | <span data-ttu-id="cc6d2-338">“Complianceuser”</span><span class="sxs-lookup"><span data-stu-id="cc6d2-338">“Complianceuser”</span></span>                                                                                                                             |                      |
+| <span data-ttu-id="cc6d2-339">密碼</span><span class="sxs-lookup"><span data-stu-id="cc6d2-339">Password</span></span>       | <span data-ttu-id="cc6d2-340">“Compliancepassword”</span><span class="sxs-lookup"><span data-stu-id="cc6d2-340">“Compliancepassword”</span></span>                                                                                                                         |                      |
 
-##### <a name="response-codes"></a><span data-ttu-id="5aca3-341">回應碼</span><span class="sxs-lookup"><span data-stu-id="5aca3-341">Response codes</span></span>
+##### <a name="response-codes"></a><span data-ttu-id="cc6d2-341">回應碼</span><span class="sxs-lookup"><span data-stu-id="cc6d2-341">Response codes</span></span>
 
-| <span data-ttu-id="5aca3-342">**回應碼**</span><span class="sxs-lookup"><span data-stu-id="5aca3-342">**Response Code**</span></span> | <span data-ttu-id="5aca3-343">**描述**</span><span class="sxs-lookup"><span data-stu-id="5aca3-343">**Description**</span></span>                                      |
+| <span data-ttu-id="cc6d2-342">**回應碼**</span><span class="sxs-lookup"><span data-stu-id="cc6d2-342">**Response Code**</span></span> | <span data-ttu-id="cc6d2-343">**描述**</span><span class="sxs-lookup"><span data-stu-id="cc6d2-343">**Description**</span></span>                                      |
 | ----------------- | ---------------------------------------------------- |
-| <span data-ttu-id="5aca3-344">200</span><span class="sxs-lookup"><span data-stu-id="5aca3-344">200</span></span>               | <span data-ttu-id="5aca3-345">好的，回應本文包含有 atom+xml 格式的事件</span><span class="sxs-lookup"><span data-stu-id="5aca3-345">OK, The response body contains the event in atom+xml</span></span> |
-| <span data-ttu-id="5aca3-346">404</span><span class="sxs-lookup"><span data-stu-id="5aca3-346">404</span></span>               | <span data-ttu-id="5aca3-347">找不到</span><span class="sxs-lookup"><span data-stu-id="5aca3-347">Not found</span></span>                                            |
-| <span data-ttu-id="5aca3-348">302</span><span class="sxs-lookup"><span data-stu-id="5aca3-348">302</span></span>               | <span data-ttu-id="5aca3-349">重新導向</span><span class="sxs-lookup"><span data-stu-id="5aca3-349">Redirect</span></span>                                             |
-| <span data-ttu-id="5aca3-350">401</span><span class="sxs-lookup"><span data-stu-id="5aca3-350">401</span></span>               | <span data-ttu-id="5aca3-351">授權失敗</span><span class="sxs-lookup"><span data-stu-id="5aca3-351">Authorization Failed</span></span>                                 |
-| <span data-ttu-id="5aca3-352">403</span><span class="sxs-lookup"><span data-stu-id="5aca3-352">403</span></span>               | <span data-ttu-id="5aca3-353">驗證失敗</span><span class="sxs-lookup"><span data-stu-id="5aca3-353">Authentication Failed</span></span>                                |
+| <span data-ttu-id="cc6d2-344">200</span><span class="sxs-lookup"><span data-stu-id="cc6d2-344">200</span></span>               | <span data-ttu-id="cc6d2-345">好的，回應本文包含有 atom+xml 格式的事件</span><span class="sxs-lookup"><span data-stu-id="cc6d2-345">OK, The response body contains the event in atom+xml</span></span> |
+| <span data-ttu-id="cc6d2-346">404</span><span class="sxs-lookup"><span data-stu-id="cc6d2-346">404</span></span>               | <span data-ttu-id="cc6d2-347">找不到</span><span class="sxs-lookup"><span data-stu-id="cc6d2-347">Not found</span></span>                                            |
+| <span data-ttu-id="cc6d2-348">302</span><span class="sxs-lookup"><span data-stu-id="cc6d2-348">302</span></span>               | <span data-ttu-id="cc6d2-349">重新導向</span><span class="sxs-lookup"><span data-stu-id="cc6d2-349">Redirect</span></span>                                             |
+| <span data-ttu-id="cc6d2-350">401</span><span class="sxs-lookup"><span data-stu-id="cc6d2-350">401</span></span>               | <span data-ttu-id="cc6d2-351">授權失敗</span><span class="sxs-lookup"><span data-stu-id="cc6d2-351">Authorization Failed</span></span>                                 |
+| <span data-ttu-id="cc6d2-352">403</span><span class="sxs-lookup"><span data-stu-id="cc6d2-352">403</span></span>               | <span data-ttu-id="cc6d2-353">驗證失敗</span><span class="sxs-lookup"><span data-stu-id="cc6d2-353">Authentication Failed</span></span>                                |
 
-#### <a name="using-powershell-ver6-or-higher-or-any-http-client"></a><span data-ttu-id="5aca3-354">使用 PowerShell (6 或更新版本) 或任何 HTTP 用戶端</span><span class="sxs-lookup"><span data-stu-id="5aca3-354">Using PowerShell (ver.6 or higher) or any HTTP client</span></span>
+#### <a name="using-powershell-ver6-or-higher-or-any-http-client"></a><span data-ttu-id="cc6d2-354">使用 PowerShell (6 或更新版本) 或任何 HTTP 用戶端</span><span class="sxs-lookup"><span data-stu-id="cc6d2-354">Using PowerShell (ver.6 or higher) or any HTTP client</span></span>
 
-<span data-ttu-id="5aca3-355">步驟 1：連線至 PowerShell。</span><span class="sxs-lookup"><span data-stu-id="5aca3-355">Step 1: Connect to PowerShell.</span></span>
+<span data-ttu-id="cc6d2-355">步驟 1：連線至 PowerShell。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-355">Step 1: Connect to PowerShell.</span></span>
 
-<span data-ttu-id="5aca3-356">步驟 2：執行下列指令碼。</span><span class="sxs-lookup"><span data-stu-id="5aca3-356">Step 2: Run the following script.</span></span>
+<span data-ttu-id="cc6d2-356">步驟 2：執行下列指令碼。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-356">Step 2: Run the following script.</span></span>
 
 <table>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="5aca3-357">param([string]$baseUri)</span><span class="sxs-lookup"><span data-stu-id="5aca3-357">param([string]$baseUri)</span></span></p>
-<p><span data-ttu-id="5aca3-358">$userName = &quot;使用者名稱&quot;</span><span class="sxs-lookup"><span data-stu-id="5aca3-358">$userName = &quot;UserName&quot;</span></span></p>
-<p><span data-ttu-id="5aca3-359">$password = &quot;密碼&quot;</span><span class="sxs-lookup"><span data-stu-id="5aca3-359">$password = &quot;Password&quot;</span></span></p>
-<p><span data-ttu-id="5aca3-360">$securePassword = ConvertTo-SecureString $password -AsPlainText -Force</span><span class="sxs-lookup"><span data-stu-id="5aca3-360">$securePassword = ConvertTo-SecureString $password -AsPlainText -Force</span></span></p>
-<p><span data-ttu-id="5aca3-361">$credentials = New-Object System.Management.Automation.PSCredential($userName, $securePassword)</span><span class="sxs-lookup"><span data-stu-id="5aca3-361">$credentials = New-Object System.Management.Automation.PSCredential($userName, $securePassword)</span></span></p>
-<p><span data-ttu-id="5aca3-362">$EventName=&quot;EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))&quot;</span><span class="sxs-lookup"><span data-stu-id="5aca3-362">$EventName=&quot;EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))&quot;</span></span></p>
-<p><span data-ttu-id="5aca3-363">Write-Host &quot;開始建立下列名稱的事件：$EventName&quot;</span><span class="sxs-lookup"><span data-stu-id="5aca3-363">Write-Host &quot;Start to create an event with name: $EventName&quot;</span></span></p>
-<p><span data-ttu-id="5aca3-364">$body = &quot;&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-364">$body = &quot;&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-365">&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'</span><span class="sxs-lookup"><span data-stu-id="5aca3-365">&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'</span></span></p>
-<p><span data-ttu-id="5aca3-366">xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</span><span class="sxs-lookup"><span data-stu-id="5aca3-366">xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</span></span></p>
-<p><span data-ttu-id="5aca3-367">xmlns='https://www.w3.org/2005/Atom'&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-367">xmlns='https://www.w3.org/2005/Atom'&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-368">&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-368">&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-369">&lt;updated&gt;7/14/2017 2:03:36 PM&lt;/updated&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-369">&lt;updated&gt;7/14/2017 2:03:36 PM&lt;/updated&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-370">&lt;content type='application/xml'&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-370">&lt;content type='application/xml'&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-371">&lt;m:properties&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-371">&lt;m:properties&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-372">&lt;d:Name&gt;$EventName&lt;/d:Name&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-372">&lt;d:Name&gt;$EventName&lt;/d:Name&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-373">&lt;d:EventType&gt;e823b782-9a07-4e30-8091-034fc01f9347&lt;/d:EventType&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-373">&lt;d:EventType&gt;e823b782-9a07-4e30-8091-034fc01f9347&lt;/d:EventType&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-374">&lt;d:SharePointAssetIdQuery&gt;'ComplianceAssetId:123'&lt;/d:SharePointAssetIdQuery&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-374">&lt;d:SharePointAssetIdQuery&gt;'ComplianceAssetId:123'&lt;/d:SharePointAssetIdQuery&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-375">&lt;/m:properties&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-375">&lt;/m:properties&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-376">&lt;/content&gt;</span><span class="sxs-lookup"><span data-stu-id="5aca3-376">&lt;/content&gt;</span></span></p>
-<p><span data-ttu-id="5aca3-377">&lt;/entry&gt;&quot;</span><span class="sxs-lookup"><span data-stu-id="5aca3-377">&lt;/entry&gt;&quot;</span></span></p>
-<p><span data-ttu-id="5aca3-378">$event = $null</span><span class="sxs-lookup"><span data-stu-id="5aca3-378">$event = $null</span></span></p>
-<p><span data-ttu-id="5aca3-379">try</span><span class="sxs-lookup"><span data-stu-id="5aca3-379">try</span></span></p>
-<p><span data-ttu-id="5aca3-380">{</span><span class="sxs-lookup"><span data-stu-id="5aca3-380">{</span></span></p>
-<p><span data-ttu-id="5aca3-381">$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri &quot;$baseUri/ComplianceRetentionEvent&quot; -ContentType &quot;application/atom+xml&quot; -Authentication Basic -Credential $credentials -MaximumRedirection 0</span><span class="sxs-lookup"><span data-stu-id="5aca3-381">$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri &quot;$baseUri/ComplianceRetentionEvent&quot; -ContentType &quot;application/atom+xml&quot; -Authentication Basic -Credential $credentials -MaximumRedirection 0</span></span></p>
-<p><span data-ttu-id="5aca3-382">}</span><span class="sxs-lookup"><span data-stu-id="5aca3-382">}</span></span></p>
-<p><span data-ttu-id="5aca3-383">catch</span><span class="sxs-lookup"><span data-stu-id="5aca3-383">catch</span></span></p>
-<p><span data-ttu-id="5aca3-384">{</span><span class="sxs-lookup"><span data-stu-id="5aca3-384">{</span></span></p>
-<p><span data-ttu-id="5aca3-385">$response = $_.Exception.Response</span><span class="sxs-lookup"><span data-stu-id="5aca3-385">$response = $_.Exception.Response</span></span></p>
-<p><span data-ttu-id="5aca3-386">if($response.StatusCode -eq &quot;Redirect&quot;)</span><span class="sxs-lookup"><span data-stu-id="5aca3-386">if($response.StatusCode -eq &quot;Redirect&quot;)</span></span></p>
-<p><span data-ttu-id="5aca3-387">{</span><span class="sxs-lookup"><span data-stu-id="5aca3-387">{</span></span></p>
-<p><span data-ttu-id="5aca3-388">$url = $response.Headers.Location</span><span class="sxs-lookup"><span data-stu-id="5aca3-388">$url = $response.Headers.Location</span></span></p>
-<p><span data-ttu-id="5aca3-389">Write-Host &quot;redirected to $url&quot;</span><span class="sxs-lookup"><span data-stu-id="5aca3-389">Write-Host &quot;redirected to $url&quot;</span></span></p>
-<p><span data-ttu-id="5aca3-390">$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType &quot;application/atom+xml&quot; -Authentication Basic -Credential $credentials -MaximumRedirection 0</span><span class="sxs-lookup"><span data-stu-id="5aca3-390">$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType &quot;application/atom+xml&quot; -Authentication Basic -Credential $credentials -MaximumRedirection 0</span></span></p>
-<p><span data-ttu-id="5aca3-391">}</span><span class="sxs-lookup"><span data-stu-id="5aca3-391">}</span></span></p>
-<p><span data-ttu-id="5aca3-392">}</span><span class="sxs-lookup"><span data-stu-id="5aca3-392">}</span></span></p>
-<p><span data-ttu-id="5aca3-393">$event | fl \*</span><span class="sxs-lookup"><span data-stu-id="5aca3-393">$event | fl \*</span></span></p></td>
+<td><p><span data-ttu-id="cc6d2-357">param([string]$baseUri)</span><span class="sxs-lookup"><span data-stu-id="cc6d2-357">param([string]$baseUri)</span></span></p>
+<p><span data-ttu-id="cc6d2-358">$userName = &quot;使用者名稱&quot;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-358">$userName = &quot;UserName&quot;</span></span></p>
+<p><span data-ttu-id="cc6d2-359">$password = &quot;密碼&quot;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-359">$password = &quot;Password&quot;</span></span></p>
+<p><span data-ttu-id="cc6d2-360">$securePassword = ConvertTo-SecureString $password -AsPlainText -Force</span><span class="sxs-lookup"><span data-stu-id="cc6d2-360">$securePassword = ConvertTo-SecureString $password -AsPlainText -Force</span></span></p>
+<p><span data-ttu-id="cc6d2-361">$credentials = New-Object System.Management.Automation.PSCredential($userName, $securePassword)</span><span class="sxs-lookup"><span data-stu-id="cc6d2-361">$credentials = New-Object System.Management.Automation.PSCredential($userName, $securePassword)</span></span></p>
+<p><span data-ttu-id="cc6d2-362">$EventName=&quot;EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))&quot;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-362">$EventName=&quot;EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))&quot;</span></span></p>
+<p><span data-ttu-id="cc6d2-363">Write-Host &quot;開始建立下列名稱的事件：$EventName&quot;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-363">Write-Host &quot;Start to create an event with name: $EventName&quot;</span></span></p>
+<p><span data-ttu-id="cc6d2-364">$body = &quot;&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-364">$body = &quot;&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-365">&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'</span><span class="sxs-lookup"><span data-stu-id="cc6d2-365">&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'</span></span></p>
+<p><span data-ttu-id="cc6d2-366">xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</span><span class="sxs-lookup"><span data-stu-id="cc6d2-366">xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</span></span></p>
+<p><span data-ttu-id="cc6d2-367">xmlns='https://www.w3.org/2005/Atom'&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-367">xmlns='https://www.w3.org/2005/Atom'&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-368">&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-368">&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-369">&lt;updated&gt;7/14/2017 2:03:36 PM&lt;/updated&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-369">&lt;updated&gt;7/14/2017 2:03:36 PM&lt;/updated&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-370">&lt;content type='application/xml'&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-370">&lt;content type='application/xml'&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-371">&lt;m:properties&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-371">&lt;m:properties&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-372">&lt;d:Name&gt;$EventName&lt;/d:Name&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-372">&lt;d:Name&gt;$EventName&lt;/d:Name&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-373">&lt;d:EventType&gt;e823b782-9a07-4e30-8091-034fc01f9347&lt;/d:EventType&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-373">&lt;d:EventType&gt;e823b782-9a07-4e30-8091-034fc01f9347&lt;/d:EventType&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-374">&lt;d:SharePointAssetIdQuery&gt;'ComplianceAssetId:123'&lt;/d:SharePointAssetIdQuery&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-374">&lt;d:SharePointAssetIdQuery&gt;'ComplianceAssetId:123'&lt;/d:SharePointAssetIdQuery&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-375">&lt;/m:properties&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-375">&lt;/m:properties&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-376">&lt;/content&gt;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-376">&lt;/content&gt;</span></span></p>
+<p><span data-ttu-id="cc6d2-377">&lt;/entry&gt;&quot;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-377">&lt;/entry&gt;&quot;</span></span></p>
+<p><span data-ttu-id="cc6d2-378">$event = $null</span><span class="sxs-lookup"><span data-stu-id="cc6d2-378">$event = $null</span></span></p>
+<p><span data-ttu-id="cc6d2-379">try</span><span class="sxs-lookup"><span data-stu-id="cc6d2-379">try</span></span></p>
+<p><span data-ttu-id="cc6d2-380">{</span><span class="sxs-lookup"><span data-stu-id="cc6d2-380">{</span></span></p>
+<p><span data-ttu-id="cc6d2-381">$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri &quot;$baseUri/ComplianceRetentionEvent&quot; -ContentType &quot;application/atom+xml&quot; -Authentication Basic -Credential $credentials -MaximumRedirection 0</span><span class="sxs-lookup"><span data-stu-id="cc6d2-381">$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri &quot;$baseUri/ComplianceRetentionEvent&quot; -ContentType &quot;application/atom+xml&quot; -Authentication Basic -Credential $credentials -MaximumRedirection 0</span></span></p>
+<p><span data-ttu-id="cc6d2-382">}</span><span class="sxs-lookup"><span data-stu-id="cc6d2-382">}</span></span></p>
+<p><span data-ttu-id="cc6d2-383">catch</span><span class="sxs-lookup"><span data-stu-id="cc6d2-383">catch</span></span></p>
+<p><span data-ttu-id="cc6d2-384">{</span><span class="sxs-lookup"><span data-stu-id="cc6d2-384">{</span></span></p>
+<p><span data-ttu-id="cc6d2-385">$response = $_.Exception.Response</span><span class="sxs-lookup"><span data-stu-id="cc6d2-385">$response = $_.Exception.Response</span></span></p>
+<p><span data-ttu-id="cc6d2-386">if($response.StatusCode -eq &quot;Redirect&quot;)</span><span class="sxs-lookup"><span data-stu-id="cc6d2-386">if($response.StatusCode -eq &quot;Redirect&quot;)</span></span></p>
+<p><span data-ttu-id="cc6d2-387">{</span><span class="sxs-lookup"><span data-stu-id="cc6d2-387">{</span></span></p>
+<p><span data-ttu-id="cc6d2-388">$url = $response.Headers.Location</span><span class="sxs-lookup"><span data-stu-id="cc6d2-388">$url = $response.Headers.Location</span></span></p>
+<p><span data-ttu-id="cc6d2-389">Write-Host &quot;redirected to $url&quot;</span><span class="sxs-lookup"><span data-stu-id="cc6d2-389">Write-Host &quot;redirected to $url&quot;</span></span></p>
+<p><span data-ttu-id="cc6d2-390">$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType &quot;application/atom+xml&quot; -Authentication Basic -Credential $credentials -MaximumRedirection 0</span><span class="sxs-lookup"><span data-stu-id="cc6d2-390">$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType &quot;application/atom+xml&quot; -Authentication Basic -Credential $credentials -MaximumRedirection 0</span></span></p>
+<p><span data-ttu-id="cc6d2-391">}</span><span class="sxs-lookup"><span data-stu-id="cc6d2-391">}</span></span></p>
+<p><span data-ttu-id="cc6d2-392">}</span><span class="sxs-lookup"><span data-stu-id="cc6d2-392">}</span></span></p>
+<p><span data-ttu-id="cc6d2-393">$event | fl \*</span><span class="sxs-lookup"><span data-stu-id="cc6d2-393">$event | fl \*</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
-#### <a name="verify-the-outcome-in-both-options"></a><span data-ttu-id="5aca3-394">確認兩個選項的結果</span><span class="sxs-lookup"><span data-stu-id="5aca3-394">Verify the outcome in both options</span></span>
+#### <a name="verify-the-outcome-in-both-options"></a><span data-ttu-id="cc6d2-394">確認兩個選項的結果</span><span class="sxs-lookup"><span data-stu-id="cc6d2-394">Verify the outcome in both options</span></span>
 
-<span data-ttu-id="5aca3-395">步驟 1：移至安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="5aca3-395">Step 1: Go to the Security & Compliance Center.</span></span>
+<span data-ttu-id="cc6d2-395">步驟 1：移至安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-395">Step 1: Go to the Security & Compliance Center.</span></span>
 
-<span data-ttu-id="5aca3-396">步驟 2：選取 **[資料控管]** 下的 **[事件]**。</span><span class="sxs-lookup"><span data-stu-id="5aca3-396">Step 2: Select **Events** under **Data Governance**.</span></span>
+<span data-ttu-id="cc6d2-396">步驟 2：選取 **[資料控管]** 下的 **[事件]**。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-396">Step 2: Select **Events** under **Information governance**.</span></span>
 
-<span data-ttu-id="5aca3-397">步驟 3：驗證 [事件] 已建立。</span><span class="sxs-lookup"><span data-stu-id="5aca3-397">Step 3: Verify Event has been created.</span></span>
+<span data-ttu-id="cc6d2-397">步驟 3：驗證 [事件] 已建立。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-397">Step 3: Verify Event has been created.</span></span>
 
-<span data-ttu-id="5aca3-398">同樣地，上述自動化事件型保留的選項也可以用於下列案例。</span><span class="sxs-lookup"><span data-stu-id="5aca3-398">Similarly, the above options to automate event-based retention can be used for the following scenarios as well.</span></span>
+<span data-ttu-id="cc6d2-398">同樣地，上述自動化事件型保留的選項也可以用於下列案例。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-398">Similarly, the above options to automate event-based retention can be used for the following scenarios as well.</span></span>
 
-### <a name="scenario-2-contracts-expiring"></a><span data-ttu-id="5aca3-399">案例 2：合約到期</span><span class="sxs-lookup"><span data-stu-id="5aca3-399">Scenario 2: Contracts Expiring</span></span>
+### <a name="scenario-2-contracts-expiring"></a><span data-ttu-id="cc6d2-399">案例 2：合約到期</span><span class="sxs-lookup"><span data-stu-id="cc6d2-399">Scenario 2: Contracts Expiring</span></span>
 
-<span data-ttu-id="5aca3-400">針對客戶、廠商和合作夥伴的單一合約，組織可以擁有多個記錄。</span><span class="sxs-lookup"><span data-stu-id="5aca3-400">An organization can have multiple records for a single contract with customers, vendors, and partners.</span></span> <span data-ttu-id="5aca3-401">這些文件可以存放在 SharePoint 等文件庫中。</span><span class="sxs-lookup"><span data-stu-id="5aca3-401">These documents can reside in a document library like SharePoint.</span></span> <span data-ttu-id="5aca3-402">合約結束表示合約相關文件的保留期間開始。</span><span class="sxs-lookup"><span data-stu-id="5aca3-402">The end of a contract determines the start of the retention period of the documents associated with the contract.</span></span> <span data-ttu-id="5aca3-403">例如，與合約相關的所有記錄必須從合約到期時間起保留五年。</span><span class="sxs-lookup"><span data-stu-id="5aca3-403">For example, all records related to contracts need to be retained for five years from the time the contract expires.</span></span> <span data-ttu-id="5aca3-404">觸發五年保留期間的事件是合約到期日。</span><span class="sxs-lookup"><span data-stu-id="5aca3-404">The event that triggers the five-year retention period is the expiration of the contract.</span></span>
+<span data-ttu-id="cc6d2-400">針對客戶、廠商和合作夥伴的單一合約，組織可以擁有多個記錄。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-400">An organization can have multiple records for a single contract with customers, vendors, and partners.</span></span> <span data-ttu-id="cc6d2-401">這些文件可以存放在 SharePoint 等文件庫中。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-401">These documents can reside in a document library like SharePoint.</span></span> <span data-ttu-id="cc6d2-402">合約結束表示合約相關文件的保留期間開始。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-402">The end of a contract determines the start of the retention period of the documents associated with the contract.</span></span> <span data-ttu-id="cc6d2-403">例如，與合約相關的所有記錄必須從合約到期時間起保留五年。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-403">For example, all records related to contracts need to be retained for five years from the time the contract expires.</span></span> <span data-ttu-id="cc6d2-404">觸發五年保留期間的事件是合約到期日。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-404">The event that triggers the five-year retention period is the expiration of the contract.</span></span>
 
-<span data-ttu-id="5aca3-405">客戶關係管理 (CRM) 系統可以使用 Microsoft 365 並觸發合約文件的保留</span><span class="sxs-lookup"><span data-stu-id="5aca3-405">A Customer Relationship Management (CRM) system can work with Microsoft 365 and trigger retention of Contract documents</span></span>
+<span data-ttu-id="cc6d2-405">客戶關係管理 (CRM) 系統可以使用 Microsoft 365 並觸發合約文件的保留</span><span class="sxs-lookup"><span data-stu-id="cc6d2-405">A Customer Relationship Management (CRM) system can work with Microsoft 365 and trigger retention of Contract documents</span></span>
 
-<span data-ttu-id="5aca3-406">**針對這個案例設定自動化事件型保留：**</span><span class="sxs-lookup"><span data-stu-id="5aca3-406">**Configuring Automated Event Based Retention for this scenario:**</span></span>
+<span data-ttu-id="cc6d2-406">**針對這個案例設定自動化事件型保留：**</span><span class="sxs-lookup"><span data-stu-id="cc6d2-406">**Configuring Automated Event Based Retention for this scenario:**</span></span>
 
 ![合約到期案例的角色和工作圖表](media/automate-event-driven-retention-contract-expiration.png)
 
-  - <span data-ttu-id="5aca3-408">管理員針對每一種合約類型使用各種資料夾建立 SharePoint 文件庫。</span><span class="sxs-lookup"><span data-stu-id="5aca3-408">Admin creates a SharePoint library with various folders for each contract type.</span></span>
+  - <span data-ttu-id="cc6d2-408">管理員針對每一種合約類型使用各種資料夾建立 SharePoint 文件庫。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-408">Admin creates a SharePoint library with various folders for each contract type.</span></span>
 
-  - <span data-ttu-id="5aca3-409">系統管理員會將合約檔案 (例如授權合約、開發合約) 新增至每一個合約資料夾。</span><span class="sxs-lookup"><span data-stu-id="5aca3-409">Admin adds contract files such as License Contracts, Development Contracts to each contract folder.</span></span>
+  - <span data-ttu-id="cc6d2-409">系統管理員會將合約檔案 (例如授權合約、開發合約) 新增至每一個合約資料夾。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-409">Admin adds contract files such as License Contracts, Development Contracts to each contract folder.</span></span>
 
-  - <span data-ttu-id="5aca3-410">系統管理員會指派資產識別碼至每一個合約資料夾。</span><span class="sxs-lookup"><span data-stu-id="5aca3-410">Admin assigns Asset ID to each contract folder.</span></span>
+  - <span data-ttu-id="cc6d2-410">系統管理員會指派資產識別碼至每一個合約資料夾。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-410">Admin assigns Asset ID to each contract folder.</span></span>
 
-  - <span data-ttu-id="5aca3-411">SCC 系統管理員登入安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="5aca3-411">SCC Admin logs into the Security & Compliance Center.</span></span>
+  - <span data-ttu-id="cc6d2-411">SCC 系統管理員登入安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-411">SCC Admin logs into the Security & Compliance Center.</span></span>
 
-  - <span data-ttu-id="5aca3-412">SCC 系統管理員會建立合約相關的事件類型，例如「合約建立日」、「合約到期日」事件。</span><span class="sxs-lookup"><span data-stu-id="5aca3-412">SCC Admin creates contract-related events types such as “Contract Creation”, “Contract Expiration” events.</span></span>
+  - <span data-ttu-id="cc6d2-412">SCC 系統管理員會建立合約相關的事件類型，例如「合約建立日」、「合約到期日」事件。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-412">SCC Admin creates contract-related events types such as “Contract Creation”, “Contract Expiration” events.</span></span>
 
-  - <span data-ttu-id="5aca3-413">SCC 系統管理員會建立「合約到期日」標籤。</span><span class="sxs-lookup"><span data-stu-id="5aca3-413">SCC Admin creates “Contract Expiration” label.</span></span>
+  - <span data-ttu-id="cc6d2-413">SCC 系統管理員會建立「合約到期日」標籤。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-413">SCC Admin creates “Contract Expiration” label.</span></span>
 
-  - <span data-ttu-id="5aca3-414">這個「合約到期」標籤可以手動或自動發佈並套用至 SharePoint 中的合約檔案。</span><span class="sxs-lookup"><span data-stu-id="5aca3-414">This “ Contract Expiration” label is published and applied manually or automatically to the contract files in SharePoint.</span></span>
+  - <span data-ttu-id="cc6d2-414">這個「合約到期」標籤可以手動或自動發佈並套用至 SharePoint 中的合約檔案。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-414">This “ Contract Expiration” label is published and applied manually or automatically to the contract files in SharePoint.</span></span>
 
-  - <span data-ttu-id="5aca3-415">合約管理系統可以搭配 Microsoft Flow 或類似的應用程式使用，進行定期執行管理合約檔案。</span><span class="sxs-lookup"><span data-stu-id="5aca3-415">Contract Management System can work with Microsoft Flow or a similar application to run periodically to manage contract files.</span></span>
+  - <span data-ttu-id="cc6d2-415">合約管理系統可以搭配 Microsoft Flow 或類似的應用程式使用，進行定期執行管理合約檔案。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-415">Contract Management System can work with Microsoft Flow or a similar application to run periodically to manage contract files.</span></span>
 
-  - <span data-ttu-id="5aca3-416">如果合約到期，Microsoft Flow 將會觸發 M365 事件型保留 REST API，開始特定合約檔案的保留計時器。</span><span class="sxs-lookup"><span data-stu-id="5aca3-416">If a contract expires, Microsoft Flow will trigger the M365 Event Based Retention REST API that will begin the retention clock on the specific contract’s files.</span></span>
+  - <span data-ttu-id="cc6d2-416">如果合約到期，Microsoft Flow 將會觸發 M365 事件型保留 REST API，開始特定合約檔案的保留計時器。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-416">If a contract expires, Microsoft Flow will trigger the M365 Event Based Retention REST API that will begin the retention clock on the specific contract’s files.</span></span>
 
-### <a name="scenario-3-end-of-product-manufacturing"></a><span data-ttu-id="5aca3-417">案例 3：產品製造結束</span><span class="sxs-lookup"><span data-stu-id="5aca3-417">Scenario 3: End of Product Manufacturing</span></span>
+### <a name="scenario-3-end-of-product-manufacturing"></a><span data-ttu-id="cc6d2-417">案例 3：產品製造結束</span><span class="sxs-lookup"><span data-stu-id="cc6d2-417">Scenario 3: End of Product Manufacturing</span></span>
 
-<span data-ttu-id="5aca3-p124">生產各種產品線的製造公司建立許多製造規格和價格文件。當產品不再製造時，所有連結至這個產品的規格和文件都必須在產品存留期結束後保留一段特定的時間。</span><span class="sxs-lookup"><span data-stu-id="5aca3-p124">A manufacturing company that produces different lines of products creates many manufacturing specifications and pricing documents. When the product is no longer manufactured, all specifications and documents linked to this product need to be retained for a specific period after the end of the lifetime of the product.</span></span>
+<span data-ttu-id="cc6d2-p124">生產各種產品線的製造公司建立許多製造規格和價格文件。當產品不再製造時，所有連結至這個產品的規格和文件都必須在產品存留期結束後保留一段特定的時間。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-p124">A manufacturing company that produces different lines of products creates many manufacturing specifications and pricing documents. When the product is no longer manufactured, all specifications and documents linked to this product need to be retained for a specific period after the end of the lifetime of the product.</span></span>
 
-<span data-ttu-id="5aca3-420">企業資源規劃 (ERP) 系統可以使用 Microsoft 365 和 Microsoft Flow 觸發保留。</span><span class="sxs-lookup"><span data-stu-id="5aca3-420">An Enterprise Resource Planning (ERP) system can work with Microsoft 365 and Microsoft Flow to trigger retention.</span></span>
+<span data-ttu-id="cc6d2-420">企業資源規劃 (ERP) 系統可以使用 Microsoft 365 和 Microsoft Flow 觸發保留。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-420">An Enterprise Resource Planning (ERP) system can work with Microsoft 365 and Microsoft Flow to trigger retention.</span></span>
 
-<span data-ttu-id="5aca3-421">**針對這個案例設定自動化事件型保留：**</span><span class="sxs-lookup"><span data-stu-id="5aca3-421">**Configuring Automated Event Based Retention for this scenario:**</span></span>
+<span data-ttu-id="cc6d2-421">**針對這個案例設定自動化事件型保留：**</span><span class="sxs-lookup"><span data-stu-id="cc6d2-421">**Configuring Automated Event Based Retention for this scenario:**</span></span>
 
 ![產品生命週期案例的角色和工作圖表](media/automate-event-driven-retention-product-lifecycle-expiration.png)
 
-  - <span data-ttu-id="5aca3-423">管理員在文件組建立產品資料夾，例如產品 1、產品 2 等。</span><span class="sxs-lookup"><span data-stu-id="5aca3-423">Admin creates product folders in the Document set such as Product 1, Product 2, and so on.</span></span>
+  - <span data-ttu-id="cc6d2-423">管理員在文件組建立產品資料夾，例如產品 1、產品 2 等。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-423">Admin creates product folders in the Document set such as Product 1, Product 2, and so on.</span></span>
 
-  - <span data-ttu-id="5aca3-424">管理員將產品檔案新增至每一個產品資料夾，例如製造規格、產品價格、產品授權。</span><span class="sxs-lookup"><span data-stu-id="5aca3-424">Admin adds product files such as Manufacturing Specifications, Product Pricing, Product licensing to each product folder.</span></span>
+  - <span data-ttu-id="cc6d2-424">管理員將產品檔案新增至每一個產品資料夾，例如製造規格、產品價格、產品授權。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-424">Admin adds product files such as Manufacturing Specifications, Product Pricing, Product licensing to each product folder.</span></span>
 
-  - <span data-ttu-id="5aca3-425">管理員指派資產識別碼至每一個產品資料夾。</span><span class="sxs-lookup"><span data-stu-id="5aca3-425">Admin assigns Asset ID to each product folder.</span></span>
+  - <span data-ttu-id="cc6d2-425">管理員指派資產識別碼至每一個產品資料夾。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-425">Admin assigns Asset ID to each product folder.</span></span>
 
-  - <span data-ttu-id="5aca3-426">SCC 系統管理員登入安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="5aca3-426">SCC Admin logs into the Security & Compliance Center.</span></span>
+  - <span data-ttu-id="cc6d2-426">SCC 系統管理員登入安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-426">SCC Admin logs into the Security & Compliance Center.</span></span>
 
-  - <span data-ttu-id="5aca3-427">SCC 系統管理員會建立員工相關的事件類型，例如「產品製造開始」、「產品製造結束」事件。</span><span class="sxs-lookup"><span data-stu-id="5aca3-427">SCC Admin creates employee-related events types such as “Start of Product Manufacturing”, “End of Product Manufacturing” events.</span></span>
+  - <span data-ttu-id="cc6d2-427">SCC 系統管理員會建立員工相關的事件類型，例如「產品製造開始」、「產品製造結束」事件。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-427">SCC Admin creates employee-related events types such as “Start of Product Manufacturing”, “End of Product Manufacturing” events.</span></span>
 
-  - <span data-ttu-id="5aca3-428">SCC 系統管理員會建立「產品製造結束」標籤。</span><span class="sxs-lookup"><span data-stu-id="5aca3-428">SCC Admin creates “End of Product Manufacturing” label.</span></span>
+  - <span data-ttu-id="cc6d2-428">SCC 系統管理員會建立「產品製造結束」標籤。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-428">SCC Admin creates “End of Product Manufacturing” label.</span></span>
 
-  - <span data-ttu-id="5aca3-429">這個「產品製造結束」標籤可以手動或自動發佈並套用至 SharePoint 中的產品檔案。</span><span class="sxs-lookup"><span data-stu-id="5aca3-429">This “ End of Product Manufacturing” label is published and applied manually or automatically to the product files in SharePoint.</span></span>
+  - <span data-ttu-id="cc6d2-429">這個「產品製造結束」標籤可以手動或自動發佈並套用至 SharePoint 中的產品檔案。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-429">This “ End of Product Manufacturing” label is published and applied manually or automatically to the product files in SharePoint.</span></span>
 
-  - <span data-ttu-id="5aca3-430">ERP 系統可以搭配 Microsoft Flow 或類似的應用程式使用，進行定期執行管理產品檔案。</span><span class="sxs-lookup"><span data-stu-id="5aca3-430">ERP Systems can work with Microsoft Flow or similar applications to run periodically to manage product files.</span></span>
+  - <span data-ttu-id="cc6d2-430">ERP 系統可以搭配 Microsoft Flow 或類似的應用程式使用，進行定期執行管理產品檔案。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-430">ERP Systems can work with Microsoft Flow or similar applications to run periodically to manage product files.</span></span>
 
-  - <span data-ttu-id="5aca3-431">如果產品的製造結束，Microsoft Flow 將會觸發 M365 事件型保留 REST API，開始特定產品檔案的保留計時器。</span><span class="sxs-lookup"><span data-stu-id="5aca3-431">If the manufacturing of a product ends, Microsoft Flow will trigger the M365 Event Based Retention REST API that will begin the retention clock on the specific product’s files.</span></span>
+  - <span data-ttu-id="cc6d2-431">如果產品的製造結束，Microsoft Flow 將會觸發 M365 事件型保留 REST API，開始特定產品檔案的保留計時器。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-431">If the manufacturing of a product ends, Microsoft Flow will trigger the M365 Event Based Retention REST API that will begin the retention clock on the specific product’s files.</span></span>
 
-## <a name="appendix"></a><span data-ttu-id="5aca3-432">附錄</span><span class="sxs-lookup"><span data-stu-id="5aca3-432">Appendix</span></span>
+## <a name="appendix"></a><span data-ttu-id="cc6d2-432">附錄</span><span class="sxs-lookup"><span data-stu-id="cc6d2-432">Appendix</span></span>
 
-### <a name="using-redirect-302-response-results-to-call-the-rest-api"></a><span data-ttu-id="5aca3-433">使用重新導向 302 回應結果呼叫 REST API</span><span class="sxs-lookup"><span data-stu-id="5aca3-433">Using Redirect 302 response results to call the REST API</span></span>
+### <a name="using-redirect-302-response-results-to-call-the-rest-api"></a><span data-ttu-id="cc6d2-433">使用重新導向 302 回應結果呼叫 REST API</span><span class="sxs-lookup"><span data-stu-id="cc6d2-433">Using Redirect 302 response results to call the REST API</span></span>
 
-1. <span data-ttu-id="5aca3-434">使用 REST API URL 叫用 POST 保留事件呼叫<https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (需要全域管理員權限)</span><span class="sxs-lookup"><span data-stu-id="5aca3-434">Invoke a POST retention event call using the REST API URL <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (Global Admin permissions are required)</span></span>
+1. <span data-ttu-id="cc6d2-434">使用 REST API URL 叫用 POST 保留事件呼叫<https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (需要全域管理員權限)</span><span class="sxs-lookup"><span data-stu-id="cc6d2-434">Invoke a POST retention event call using the REST API URL <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (Global Admin permissions are required)</span></span>
 
-2. <span data-ttu-id="5aca3-p125">檢查回應碼。如果是 302，則從回應標頭的 Location 屬性取得重新導向的 URL</span><span class="sxs-lookup"><span data-stu-id="5aca3-p125">Check the response code. If it’s 302, then get the redirected URL from Location property of the response header</span></span>
+2. <span data-ttu-id="cc6d2-p125">檢查回應碼。如果是 302，則從回應標頭的 Location 屬性取得重新導向的 URL</span><span class="sxs-lookup"><span data-stu-id="cc6d2-p125">Check the response code. If it’s 302, then get the redirected URL from Location property of the response header</span></span>
 
-3. <span data-ttu-id="5aca3-437">使用重新導向的 URL 再次叫用 POST 保留事件呼叫。</span><span class="sxs-lookup"><span data-stu-id="5aca3-437">Invoke the POST retention event call again using the redirected URL.</span></span>
+3. <span data-ttu-id="cc6d2-437">使用重新導向的 URL 再次叫用 POST 保留事件呼叫。</span><span class="sxs-lookup"><span data-stu-id="cc6d2-437">Invoke the POST retention event call again using the redirected URL.</span></span>
 
-## <a name="credits"></a><span data-ttu-id="5aca3-438">參與名單</span><span class="sxs-lookup"><span data-stu-id="5aca3-438">Credits</span></span>
+## <a name="credits"></a><span data-ttu-id="cc6d2-438">參與名單</span><span class="sxs-lookup"><span data-stu-id="cc6d2-438">Credits</span></span>
 
-<span data-ttu-id="5aca3-439">本主題的檢閱者：</span><span class="sxs-lookup"><span data-stu-id="5aca3-439">This topic was reviewed by:</span></span>
+<span data-ttu-id="cc6d2-439">本主題的檢閱者：</span><span class="sxs-lookup"><span data-stu-id="cc6d2-439">This topic was reviewed by:</span></span>
 
-<span data-ttu-id="5aca3-440">Antonio Maio</span><span class="sxs-lookup"><span data-stu-id="5aca3-440">Antonio Maio</span></span><br/><span data-ttu-id="5aca3-441">Microsoft Office Apps and Services MVP</span><span class="sxs-lookup"><span data-stu-id="5aca3-441">Microsoft Office Apps and Services MVP</span></span><br/> <span data-ttu-id="5aca3-442">Antonio.Maio@Protiviti.com</span><span class="sxs-lookup"><span data-stu-id="5aca3-442">Antonio.Maio@Protiviti.com</span></span>
+<span data-ttu-id="cc6d2-440">Antonio Maio</span><span class="sxs-lookup"><span data-stu-id="cc6d2-440">Antonio Maio</span></span><br/><span data-ttu-id="cc6d2-441">Microsoft Office Apps and Services MVP</span><span class="sxs-lookup"><span data-stu-id="cc6d2-441">Microsoft Office Apps and Services MVP</span></span><br/> <span data-ttu-id="cc6d2-442">Antonio.Maio@Protiviti.com</span><span class="sxs-lookup"><span data-stu-id="cc6d2-442">Antonio.Maio@Protiviti.com</span></span>
