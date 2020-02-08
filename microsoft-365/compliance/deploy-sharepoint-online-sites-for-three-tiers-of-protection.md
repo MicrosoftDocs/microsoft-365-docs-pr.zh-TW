@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 摘要：建立及設定各種資訊保護等級的 SharePoint Online 小組網站。
-ms.openlocfilehash: 8aee0018db9035ca29037448e3d1200471589a7c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1f67dd1956059162902aefdb194e5e514d063778
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595288"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855252"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>部署三種保護層級的 SharePoint Online 網站
 
@@ -104,8 +104,6 @@ ms.locfileid: "41595288"
 
 ## <a name="see-also"></a>另請參閱
 
-[保護 SharePoint Online 網站與檔案](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
-  
 [適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [雲端採用和混合式解決方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
