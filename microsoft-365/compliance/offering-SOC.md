@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 57d4093712efbee7bcb4f27280b0ba64a50dbe41
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 5f11cb99d4bf235ba41e05d1bf79217f827fe8c2
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662019"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851880"
 ---
 # <a name="service-organization-controls-soc"></a>服務組織控制 (SOC)
 
@@ -128,6 +128,10 @@ Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、串�
 **我要從何處著手組織自身的合規性工作？**
 
 [適用於服務組織的 SOC 套件](https://aka.ms/soc-toolkit)是了解 SOC 報告程序及推動貴組織使用這些報告的實用資源。
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
+
+[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 [設定合規性分數](compliance-score-setup.md)之後，請使用預先設定 [SOC 1 範本](https://go.microsoft.com/fwlink/?linkid=2117918)和 [SOC 2 範本](https://go.microsoft.com/fwlink/?linkid=2117919)，協助您的組織符合此法規的規定。
 
 ## <a name="resources"></a>資源
 

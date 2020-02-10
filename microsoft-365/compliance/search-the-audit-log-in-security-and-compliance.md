@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 519fb739290e5a7ea61c8e27a1ef59edb4cac75f
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 81bcf62d810e9649bcb0a464e765b71490a4752d
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661999"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862123"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -77,17 +77,17 @@ ms.locfileid: "41661999"
   > [!IMPORTANT]
   > 如果您在安全性與合規性中心的 [權限]**** 頁面上，將 [僅限檢視稽核記錄] 或 [稽核記錄] 角色指派給使用者，使用者將無法搜尋 Office 365 稽核記錄。 您必須在 Exchange Online 中指派權限。 這是因為用來搜尋稽核記錄的基礎 Cmdlet 是 Exchange Online Cmdlet。
 
-- 當使用者或系統管理員執行稽核的活動時，稽核記錄會隨即產生，並儲存在您組織的 Office 365 稽核記錄中。 稽核記錄的保留時間及可在稽核記錄中搜尋的時間長度，取決於您的 Office 365 訂閱，具體來說，取決於指派給特定使用者的授權類型。
+- 當使用者或系統管理員執行稽核的活動時，稽核記錄會隨即產生，並儲存在您組織的 Office 365 稽核記錄中。 稽核記錄的保留時間及可在稽核記錄中搜尋的時間長度，取決於您的 Office 365 或 Microsoft 365 訂閱，具體來說，取決於指派給特定使用者的授權類型。
 
-  - **Office 365 E3：** 稽核記錄會保留 90 天。 這表示您可以搜尋稽核記錄來尋找過去 90 天中執行的活動。
+  - **Office 365 和 Microsoft 365 E3：** 稽核記錄會保留 90 天。 這表示您可以搜尋稽核記錄來尋找過去 90 天中執行的活動。
 
     > [!NOTE]
     > 即使信箱稽核預設為開啟，您可能會發現某些使用者的信箱稽核事件在安全性與合規性中心的稽核記錄搜尋或透過 Office 365 管理活動 API 找不到。 如需詳細資訊，請參閱[信箱稽核記錄的相關資訊](enable-mailbox-auditing.md#more-information)。
 
-  - **Office 365 E5：** 稽核記錄也會保留 90 天。 E5 使用者與具有 E3 授權及 Office 365 進階合規性附加元件授權的使用者，最終可保留稽核記錄一年。
+  - **Office 365 或 Microsoft 365 E5 或擁有 Microsoft 365 E5 合規性附加元件授權的使用者：** Azure Active Directory、Exchange 和 SharePoint 活動的稽核記錄依預設會保留一年。 組織也可建立稽核記錄保留原則，以保留其他服務中的活動稽核記錄，最長一年。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md)。
 
     > [!NOTE]
-    > E5 組織 (或 E3 組織中具有進階合規性附加元件授權的使用者) 的稽核記錄一年保留期的私人預覽方案將不再接受新註冊。 本文會在一年保留期可公開預覽或正式發行時進行更新。
+    > 如果您的組織有參與一年期稽核記錄保留的私人預覽計畫，則將不會重設一般發行日期之前產生的稽核記錄保留期間。
 
 - 如果您想要關閉貴組織在 Office 365 中的稽核記錄搜尋功能，您可以在與 Exchange Online 組織連線的遠端 PowerShell 中執行下列命令：
 
@@ -851,10 +851,6 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-**哪裡可以找到 Office 365 稽核服務所提供的功能？**
-
-如需 Office 365 中的稽核和報告功能詳細資訊，請參閱 [Office 365 中的稽核和報告](https://docs.microsoft.com/Office365/Enterprise/office-365-auditing-and-reporting-overview)。
-
 **目前稽核的各種 Office 365 服務是什麼？**
 
 最常使用的 Office 365 服務，例如 Exchange Online、SharePoint Online、商務用 OneDrive、Azure Active Directory、Microsoft Teams、Dynamics 365、進階威脅防護和 Power BI 都會進行稽核。 如需稽核的服務清單，請參閱[這篇文章的開頭](search-the-audit-log-in-security-and-compliance.md)。
@@ -869,16 +865,13 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
 
 **稽核記錄可保留多久時間？**
 
-如先前所述，稽核記錄的保留期取決於您組織的 Office 365 訂閱。
+如先前所述，稽核記錄的保留期取決於您組織的 Office 365 或 Microsoft 訂閱。
 
-- **Office 365 E3：** 稽核記錄會保留 90 天。
+  - **Office 365 和 Microsoft 365 E3：** 稽核記錄會保留 90 天。 這表示您可以搜尋稽核記錄來尋找過去 90 天中執行的活動。
 
-- **Office 365 E5：** 稽核記錄也會保留 90 天。 E5 使用者與具有 E3 授權及 Office 365 進階合規性附加元件授權的使用者，最終可保留稽核記錄一年。
+  - **Office 365 或 Microsoft 365 E5 或擁有 Microsoft 365 E5 合規性附加元件授權的使用者：** Azure Active Directory、Exchange 和 SharePoint 活動的稽核記錄依預設會保留一年。 組織也可建立稽核記錄保留原則，以保留其他服務中的活動稽核記錄，最長一年。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md)。
 
-  > [!NOTE]
-  > 如先前所述，E5 組織 (或具有進階合規性附加元件授權的 E3 組織) 的稽核記錄一年保留期的私人預覽方案將不再用於新註冊。 本文會在一年保留期可公開預覽或正式發行時進行更新。
-
-此外，請注意，稽核記錄保留期的時間長度會根據以使用者為單位的授權。 例如，如果您組織中的使用者獲派 Office 365 E3 或 E5 授權，則該使用者執行的活動稽核記錄會保留 90 天。
+此外請注意，稽核記錄保留期的時間長度會根據每位使用者的授權而定。 例如，如果您組織中的使用者獲派 Office 365 E3 授權，則該使用者執行的活動稽核記錄會保留 90 天。
 
 **我可以以程式設計方式存取稽核資料嗎？**
 
@@ -902,4 +895,6 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
 
 **稽核資料會加密嗎？**
 
-稽核資料會儲存在稽核管線部署所在位置中的 Exchange 信箱內 (靜態資料)。 這些資料不會加密。 不過，傳輸中的資料一律會加密。
+稽核資料會儲存在整合稽核管線部署所在位置中的 Exchange 信箱內 (靜態資料)。 靜態信箱資料未經 Exchange 加密。 不過，服務層級加密功能會加密所有信箱資料，因為 Microsoft 資料中心的 Exchange 伺服器是透過 BitLocker 進行加密。 如需詳細資訊，請參閱[商務用 Skype、商務用 OneDrive、SharePoint Online 與 Exchange Online 的 Office 365 加密](office-365-encryption-for-skype-onedrive-sharepoint-and-exchange.md)。
+
+傳輸中的郵件資料一律會加密。

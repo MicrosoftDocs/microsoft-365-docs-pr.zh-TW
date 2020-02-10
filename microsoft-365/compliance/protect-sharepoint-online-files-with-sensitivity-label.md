@@ -1,5 +1,7 @@
 ---
 title: 使用敏感度標籤來保護 SharePoint Online 檔案
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 摘要：套用 Azure 資訊保護來保護高度機密 SharePoint Online 小組網站中的檔案。
-ms.openlocfilehash: 51950bd3c9790dedd2801e98234ff16470db6421
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 7b43ee5bcc3193da398359a155e2daeac2d06a85
+ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668801"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41830967"
 ---
 # <a name="protect-sharepoint-online-files-with-a-sensitivity-label"></a>使用敏感度標籤來保護 SharePoint Online 檔案
 
@@ -33,8 +35,8 @@ ms.locfileid: "39668801"
 
 不建議針對所有的客戶在 SharePoint Online 中的檔案使用敏感度標籤，但可供需要此檔案子集合保護層級的客戶選擇使用。
 
-此解決方案的一些相關重要注意事項：
-- 將加密套用至儲存於 Office 365 中的檔案時，服務會無法處理這些檔案的內容。 共同撰寫、eDiscovery、搜尋、Delve 和其他共同作業功能無法運作。 此外，資料外洩防護 (DLP) 原則只可用於中繼資料 (包括 Office 365 標籤)，但無法用於這些檔案的內容 (例如檔案中的信用卡號碼)。
+這套解決方案的一些相關重要注意事項：
+- 如果貴組織未[在 SharePoint 和 OneDrive (公開預覽版) 中針對 Office 檔案啟用敏感度標籤](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)：當您將加密套用到儲存在 Office 365 中的檔案時，服務無法處理這些檔案的內容。 共同撰寫、eDiscovery、搜尋、Delve 和其他共同作業功能無法運作。 此外，資料外洩防護 (DLP) 原則只可用於中繼資料 (包括 Office 365 標籤)，但無法用於這些檔案的內容 (例如檔案中的信用卡號碼)。
 
 - 本解決方案要求使用者選取適用保護的標籤。 如果您需要自動加密和 SharePoint 的功能來為檔案編製索引及檢查檔案，請考慮在 SharePoint Online 中使用資訊版權管理 (IRM)。 當您為 IRM 設定 SharePoint 文件庫，即會在下載檔案以供編輯時自動加密。  SharePoint IRM 包含可能會影響您決策的限制。 如需詳細資訊，請參閱[在 SharePoint 系統管理中心設定資訊版權管理 (IRM)](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C)。
 

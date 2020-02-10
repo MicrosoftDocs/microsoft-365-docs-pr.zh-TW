@@ -74,7 +74,7 @@ ms.locfileid: "41836723"
 
 2. 以 .csv 檔案格式將敏感性資料結構化，使得第一列包含用於以 EDM 為基礎的分類的欄位名稱。 在您的 .csv 檔案中，您可能會有欄位名稱，例如 "ssn"、"birthdate"、"firstname"、"lastname" 等等。 舉例來說，我們的 .csv 檔案稱為 *PatientRecords.csv*，且其資料行包括 *PatientID*、 *MRN*、 *LastName*、 *FirstName*、 *SSN* 等。
 
-3. 以 .xml 格式定義用於敏感性資訊資料庫的結構描述 (類似以下的範例)。 將此結構描述檔案命名為  **edm.xml**，然後設定它，使得資料庫中的每一個資料欄，都會有使用下列語法的行： 
+3. 以 .xml 格式定義用於敏感性資訊資料庫的結構描述 (類似以下的範例)。 將此結構描述檔案命名為  **edm.xml**，然後進行設定，讓資料庫中的每一個資料行都會有使用下列語法的行： 
 
 `\<Field name="" searchable=""/\>`.
 
@@ -188,7 +188,7 @@ Remove-DlpEdmSchema -Identity patientrecords
 
 1. 以 .xml 格式建立規則套件 (使用 Unicode 編碼方式)，類似下列範例。 (您可以複製、修改及使用我們的範例)。
 
-當您設定規則套件時，請務必正確地參照您的 .csv 檔案和 **edm.xml** 檔案。 您可以複製、修改及使用我們的範例。 在此範例 xml 中，必須自訂下列欄位，才能建立您的 EDM 敏感性類型：
+當您設定規則套件時，請務必正確參照您的 .csv 檔案和 **edm.xml** 檔案。 您可以複製、修改及使用我們的範例。 在此範例 xml 中，必須自訂下列欄位，才能建立您的 EDM 敏感性類型：
 
 - **RulePack id 與 ExactMatch id**：使用 [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 產生 GUID。
 
@@ -317,7 +317,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 #### <a name="index-and-upload-the-sensitive-data"></a>編製索引及上傳敏感性資料
 
-將敏感性資料檔案 (回想我們的範例是 **PatientRecords.csv**) 儲存至電腦上的本機磁碟機  (我們將範例 **PatientRecords.csv** 檔案儲存至 C: **C:\\Edm\\Data**。)
+將敏感性資料檔案 (回想我們的範例是 **PatientRecords.csv**) 儲存至電腦上的本機磁碟機  (我們將範例  **PatientRecords.csv**  檔案儲存至  **C:\\Edm\\Data**。)
 
 若要為敏感性資料編製索引並上傳，請在 Windows 命令提示字元中執行下列命令：
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4bc6663efe704205787e1c69d4e6dd06122419c3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5cd89e0f31d650e85de20b40e3870de0ef8c7cc3
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601910"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851830"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 隱私權資訊管理系統 (PIMS)
 
@@ -39,7 +39,7 @@ ms.locfileid: "41601910"
 
 ## <a name="too-many-regulatory-requirements-to-juggle"></a>要操控的法規需求太多
 
-ISO/IEC 27701 包含一個附件，其中包含標準的操作控制，這些控制是根據控制者和處理者在 GDPR 中的相關需求而對應。 這個對應只是一個範例，說明隱私權法規如何在 ISO 架構中運作。 由於以其他法規進行的額外對應變得可用且經過驗證，因此來自標準的操作控制可直接從法規檢閱轉移至實作。 此通用架構可讓組織可靠地操作相關法規需求，而不用「重造輪子」。 擱置的開放原始碼專案正在進行中，讓隱私權社群能夠對應其他法規並驗證現有的對應。 隨時掌握最新資訊。
+ISO/IEC 27701 包含一個附件，其中包含標準的操作控制，這些控制是根據控制者和處理者在 GDPR 中的相關需求而對應。 這個對應只是一個範例，說明隱私權法規如何在 ISO 架構中運作。 由於以其他法規進行的額外對應變得可用且經過驗證，因此來自標準的操作控制可直接從法規檢閱轉移至實作。 此通用架構可讓組織可靠地操作相關法規需求，而不用重頭來過。 擱置的開放原始碼專案正在進行中，讓隱私權社群能夠對應其他法規並驗證現有的對應。 隨時掌握最新資訊。
 
 ## <a name="too-costly-to-audit-regulation-by-regulation"></a>法規逐條稽核成本太高
 
@@ -71,6 +71,10 @@ ISO/IEC 27001 和 PIMS 的要點：
 
 - [Azure ISO/IEC 27701 認證](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
 - [Azure ISO/IEC 27701 評估報告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
+
+[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 [設定合規性分數](compliance-score-setup.md)之後，請使用預先設定 [ISO 27701 範本](https://go.microsoft.com/fwlink/?linkid=2117915)，協助您的組織符合此法規的規定。
 
 ## <a name="resources"></a>資源
 

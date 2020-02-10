@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 016d0f9fdd0795ea709f168a0fc8ba027f029e8f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6791754e0d34ca2ca564a805269bb9fdc216d0ad
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602230"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851870"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>保護雲端中個人資料的 ISO/IEC 27018 工作條例規定
 
@@ -107,7 +107,7 @@ Microsoft 雲端和商業技術支援服務會一年根據 ISO/IEC 27018 工作�
 在 ISO/IEC 27018 之中：
 
 - 「控制者」控制個人資訊的集合、持有、處理或使用；它們包含代表另一家公司控制的人員。
-- 「處理者」代表控制者處理資訊；它們不會針對如何使用資訊或處理目的做決策。 Microsoft 做為您的供應商，是為您提供企業雲端服務的資訊處理者。
+- 「處理者」則代表控制者處理資訊；它們不會針對如何使用資訊或處理目的做決策。 Microsoft 做為您的供應商，是為您提供企業雲端服務的資訊處理者。
 
 **可以在何處查看 Microsoft 的 ISO/IEC 27018 合規性資訊？**
 
@@ -120,6 +120,10 @@ Microsoft 雲端和商業技術支援服務會一年根據 ISO/IEC 27018 工作�
 可以。 如果 ISO/IEC 27018 合規性對您的企業和在任何 Microsoft 範圍內的企業雲端服務作部署的實作很重要，您可以在合規性評定中使用 Microsoft 的 ISO/IEC 27018 證明，並搭配 Microsoft 的 ISO/IEC 27001 憑證。
 
 不過，您有責任確保處理者有參與評估合規性的實作，以及組織中的控制和程序。
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
+
+[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 [設定合規性分數](compliance-score-setup.md)之後，請使用預先設定 [ISO 27018 範本](https://go.microsoft.com/fwlink/?linkid=2117523)，協助您的組織符合此法規的規定。
 
 ## <a name="resources"></a>資源
 
