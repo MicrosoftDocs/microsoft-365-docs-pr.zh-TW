@@ -79,7 +79,7 @@
       items:
         - name: 建立及發佈敏感度標籤
           href: create-sensitivity-labels.md
-        - name: 使用敏感度標籤套用加密內容限制存取
+        - name: 使用敏感度標籤來套用加密以限制存取內容
           href: encryption-sensitivity-labels.md
         - name: 自動將敏感度標籤套用到內容
           href: apply-sensitivity-label-automatically.md
@@ -202,6 +202,8 @@
           href: data-classification-content-explorer.md
         - name: 查看標籤活動 (預覽)
           href: data-classification-activity-explorer.md
+        - name: 資料分類公開預覽版本資訊 （預覽）
+          href: data-classification-pub-preview-relnotes.md
         - name: 開始使用可訓練的分類器 (預覽)
           href: classifier-getting-started-with.md
         - name: 使用已可使用的分類器 (預覽)
