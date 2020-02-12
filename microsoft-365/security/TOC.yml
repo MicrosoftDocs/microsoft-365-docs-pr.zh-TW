@@ -181,6 +181,8 @@
                       href: ./office-365-security/configure-anti-malware-policies.md
                     - name: 將惡意程式碼與非惡意程式碼提交給 Microsoft 進行分析
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+                    - name: 復原從勒索軟體攻擊
+                      href: ./office-365-security/recover-from-ransomware.md
                     - name: Sharepoint Online 中的病毒偵測
                       href: ./office-365-security/virus-detection-in-spo.md
                 - name: 進階垃圾郵件篩選選項

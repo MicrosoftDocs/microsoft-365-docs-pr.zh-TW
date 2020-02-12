@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 逐步引導您完成會影響 Office 365 環境安全性的全租用戶建議設定。 您的安全性需求可能會高於或低於建議設定， 請使用這些建議做為調整的起始點。
-ms.openlocfilehash: 01cf10818c83171fbbf30b5ec7f08871f0b9b328
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3bf11ae0520ac6f715e3f84669c6d6f615deaf14
+ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598200"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41932293"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>設定 Office 365 租用戶以提高安全性
 
@@ -67,7 +67,7 @@ Exchange 系統管理中心中有許多安全性與保護控制項同時也包�
 
 |****適用範圍****|****包含預設原則****|****建議****|
 |:-----|:-----|:-----|
-|**郵件流程** (郵件流程規則，又稱為傳輸規則)|否|新增郵件流程規則來協助防範勒索軟體。 請參閱此部落格文章中的「如何使用 Exchange 傳輸規則來追蹤或封鎖含有勒索軟體使用之副檔名的電子郵件」：[如何處理勒索軟體](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/) (英文)。 <br><br/> 請參閱這些主題： <br/>•[防範勒索軟體](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide#ransomware)<br/>•[Office 365 中的惡意程式碼與勒索軟體防護](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection)<br/><br/>  建立郵件流程規則來防止郵件自動轉寄至外部網域。 如需詳細資訊，請參閱[含有安全分數的用戶端外部轉寄降低風險規則](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/) (英文)。 <br/><br/> 其他資訊：[Exchange Online 中的郵件流程規則 (傳輸規則)](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
+|**郵件流程** (郵件流程規則，又稱為傳輸規則)|否|新增郵件流程規則，以協助防範勒索軟體所封鎖的可執行檔類型及包含巨集的 Office 檔案類型。 如需詳細資訊，請參閱[使用郵件流程規則檢查郵件附件中 Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)。 <br><br/> 請參閱這些額外的主題： <br/>•[針對勒索軟體保護](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide#ransomware)<br/>•[惡意程式碼和勒索軟體防護，Office 365 中](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>•[復原從 Office 365 中勒索軟體攻擊](recover-from-ransomware.md) <br/><br/>  建立郵件流程規則來防止郵件自動轉寄至外部網域。 如需詳細資訊，請參閱[含有安全分數的用戶端外部轉寄降低風險規則](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/) (英文)。 <br/><br/> 其他資訊：[Exchange Online 中的郵件流程規則 (傳輸規則)](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
 |**啟用新式驗證**|否|Office 365 中的新式驗證是使用多重要素驗證 (MFA) 的先決條件。 MFA 是保護雲端資源存取權 (包括電子郵件) 的建議選項。 <br/><br/> 請參閱這些主題：  <br/>• [啟用或停用 Exchange Online 中的新式驗證](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>• [商務用 Skype Online：以新式驗證啟用您的租用戶](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (英文) <br/><br/> Office 2016 用戶端、SharePoint Online 和商務用 OneDrive 預設會啟用新式驗證。 <br/><br/> 其他資訊：[Office 2013 和 Office 2016 用戶端應用程式的新式驗證運作方式](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
 
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>設定 SharePoint 系統管理中心的全租用戶共用原則

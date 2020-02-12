@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: aeae243b4e363f69729ccdbd2bc3fc465ec1449b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b37b8f0aaa225dec9e522964b59871047081be9d
+ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600170"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41932303"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -76,7 +76,7 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 * 服務管理員
 * 安全性讀取者
 * 安全性操作員
-* 全域的讀取者
+* 全域讀取者
 
 ### <a name="graph-api"></a>Graph API
 
@@ -134,6 +134,16 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 
 Microsoft 安全分數是數字摘要根據系統設定、 使用者行為及其他安全性相關的度量值; 您安全性狀態。它不是絕對的度量單位的方式可能會破壞您的系統或資料。 相反地，它表示要採用的安全性控制 Microsoft 環境中可協助位移正在外洩的風險的程度。 沒有線上服務已完全免於安全性弱點，以及安全分數不應該解譯成保證郵件可以針對任何方式的安全性漏洞。
 
+## <a name="whats-new"></a>新功能？
+
+若要讓 Microsoft 安全分數較佳的安全性狀態代表我們已進行一些變更。
+
+### <a name="removed-not-scored-improvement-actions"></a>已移除 「 不計分 」 改進動作
+
+之一的安全分數原則是分數應依照標準化預定且更容易與相關。 具有不是可以測量或可採取行動的改進動作具有已造成混淆。 一個 Microsoft 安全分數僅合理時的每個建議有清除影響分數。 不計分改進動作不是可以測量的。  
+
+基於這些理由，已被移除已不會被記錄的所有改進動作。 在您的組件上不需要採取任何動作。
+
 ## <a name="whats-coming"></a>下來什麼？
 
 若要讓 Microsoft 安全分數較佳的安全性狀態代表並改善可用性，我們會在不久的將來進行一些變更。 您的成績和最大可能分數會變更。 不過，這並不表示您的安全性狀態變更。
@@ -173,6 +183,11 @@ Microsoft 安全分數是數字摘要根據系統設定、 使用者行為及其
 - 探索風險並不相容的陰影 IT 應用程式
 - 檢閱權限 & 封鎖風險 OAuth 應用程式連線至您的環境
 - 在 SharePoint online 的文件庫設定版本設定
+- 商務用 OneDrive 中儲存使用者文件
+- 不允許 [信箱委派]
+- 允許匿名來賓共用網站和文件的連結
+- 設定 Office 365 ATP 安全附件原則
+- 若要確認 Url 設定 Office 365 安全連結
 
 ### <a name="mfa-improvement-action-updates"></a>MFA 改進動作更新
 
@@ -191,11 +206,11 @@ Microsoft 安全分數是數字摘要根據系統設定、 使用者行為及其
 
  這些新的改進動作將會需要透過您的目錄中註冊您的使用者或系統管理員針對多重要素驗證 (MFA)，以及建立正確的一組原則符合貴組織的需求。 主要目標是有彈性，同時確保所有使用者和系統管理員可以驗證與多重因素或風險式身分識別驗證提示。 可能需要的設定，可讓 Microsoft 決定何時挑戰使用者的 mfa 功能、 安全性預設表單，或具有多個原則套用的範圍決策。
 
-### <a name="removing-not-scored-and-review-improvement-actions"></a>移除 「 不計分 」 和 「 檢閱 」 改進動作
+### <a name="removing-review-improvement-actions"></a>移除 「 檢閱 」 改進動作
 
-之一的安全分數原則是分數應依照標準化預定且更容易與相關。 具有不是可以測量或可採取行動的改進動作具有已造成混淆。 一個 Microsoft 安全分數僅合理時的每個建議有清除影響分數。 不計分的改進動作不是可以測量的並檢閱動作不會測量為其他改進動作的同一個標準的改進。  
+之一的安全分數原則是分數應依照標準化預定且更容易與相關。 具有不是可以測量或可採取行動的改進動作具有已造成混淆。 一個 Microsoft 安全分數僅合理時的每個建議有清除影響分數。 檢閱改進動作不會測量至其他改進動作為相同的標準。  
 
-基於這些理由，將會暫時移除所有已不會被記錄或需要檢閱頻率的改進動作。 在您的組件上不需要採取任何動作。
+基於這些理由，將會暫時移除所有需要檢閱頻率的改進動作。 在您的組件上不需要採取任何動作。
 
 ### <a name="simplification-of-the-point-system"></a>簡化的點系統
 
