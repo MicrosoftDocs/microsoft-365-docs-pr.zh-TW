@@ -16,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 身為 Office 365 全域管理員，您可以使用的攻擊模擬器在組織中執行真實的攻擊案例。 這可協助您找出並之前真實的攻擊拜訪人次貴公司，找出受到使用者。
-ms.openlocfilehash: 0bdb4a0ffac139f45d842025238d3780f41d594c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6fb88e6b79c0949c7ddc26eabda2bb04ea1fa3bf
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599820"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957408"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻擊模擬器
 
@@ -31,7 +31,9 @@ ms.locfileid: "41599820"
 
 目前提供三種進攻模擬：
 
-- [顯示名稱魚叉式網路釣魚攻擊](#display-name-spear-phishing-attack)
+- [認證搜集矛網路釣魚攻擊](#credential-harvest-spear-phishing-attack)
+
+- [附件矛網路釣魚攻擊](#attachment-spear-phishing-attack)
 
 - [密碼噴濺攻擊](#password-spray-attack)
 
@@ -49,13 +51,15 @@ ms.locfileid: "41599820"
 
 - 您是 Office 365 全域系統管理員或安全性系統管理員
 
+- 網路釣魚活動，將收集和處理事件的 30 天內，歷史行銷活動資料可多達 90 天後啟動活動。
+
 - [多重要素驗證/條件式存取](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)已關閉，如在最低之 Office 365 全域系統管理員帳戶和安全性系統管理員將使用的攻擊模擬器。 （理想狀況下，多重要素驗證條件式存取已為您組織中的所有使用者。）
 
 - 您的組織有[Office 365 進階威脅防護計劃 2](office-365-atp.md)，與安全性可見的攻擊模擬器&amp;合規性中心 (前往**威脅管理** \> **攻擊模擬器**)
 
     ![威脅管理-攻擊模擬器](../media/ThreatMgmt-AttackSimulator.png)
 
-## <a name="display-name-spear-phishing-attack"></a>顯示名稱魚叉式網路釣魚攻擊
+## <a name="credential-harvest-spear-phishing-attack"></a>認證搜集矛網路釣魚攻擊
 
 網路釣魚是通稱歸類為社交樣式攻擊的攻擊廣泛套件。 此類攻擊著重於矛網路釣魚，針對特定群組的個人或組織在多目標攻擊。 一般而言，自訂的攻擊與某些偵察執行，並使用會產生收件者，例如看起來像來自組織內的高階主管的電子郵件訊息中的信任的顯示名稱。
 
@@ -103,11 +107,25 @@ ms.locfileid: "41599820"
 
 11. 選擇 [**下一步]** ，然後**完成]** 來啟動攻擊。 矛網路釣魚電子郵件會傳遞至您目標收件者的信箱。
 
+## <a name="attachment-spear-phishing-attack"></a>附件矛網路釣魚攻擊
+
+網路釣魚是通稱歸類為社交樣式攻擊的攻擊廣泛套件。 此類攻擊著重於附件矛網路釣魚，針對特定群組的個人或組織在多目標攻擊。 一般而言，自訂的攻擊與某些偵察執行，並使用會產生收件者，例如看起來像來自組織內的高階主管的電子郵件訊息中的信任的顯示名稱。
+
+此類攻擊著重於給您，讓您管理誰會顯示訊息，已變更的顯示名稱和來源地址，但這次而不提供嘗試和引誘使用者按一下 URL 源自於，我們提供的附件，我們想要取得 t若要開啟 [他使用者。 
+
+### <a name="to-simulate-a-attachment-spear-phishing-attack"></a>若要模擬附件矛網路釣魚攻擊
+
+1. 請依照從上述需要這一次按一下登陸頁面上的 [**附件攻擊**。
+
+2. 進行的程序執行精靈，您會看到兩個選項來設定。 **附件類型**，我們支援兩種附件類型， **.docx**或 **.pdf**。 **附件名稱**] 中，使用此欄位來建立行銷活動的有意義的附件名稱。
+
 ## <a name="password-spray-attack"></a>密碼噴濺攻擊
 
 壞動作項目已成功取得從租用戶的有效使用者的清單之後，通常會使用組織的密碼噴灑攻擊。 壞動作項目所知的人員使用常見密碼。 此為廣泛使用的攻擊，來執行，且更難偵測比暴力方法便宜攻擊。
 
 此類攻擊著重於讓您指定要對使用者的大型目標基底常見的密碼。
+
+**重要事項**執行密碼噴灑攻擊已經有多重要素驗證，會導致失敗的嘗試這些報告中的帳戶的使用者帳戶。 這是因為正在其中一個主要機制，以協助防範密碼噴灑攻擊，因此預期的多重要素驗證。
 
 ### <a name="to-simulate-a-password-spray-attack"></a>若要模擬密碼噴灑攻擊
 
@@ -125,6 +143,8 @@ ms.locfileid: "41599820"
 
 壞動作項目已成功取得從租用戶的關鍵使用者的清單之後，通常會使用組織暴力密碼攻擊。 此類攻擊著重在嘗試一組單一使用者的帳戶的密碼。
 
+針對已經有多重要素驗證的使用者帳戶執行暴力密碼攻擊的**重要注意事項，** 會導致失敗的嘗試這些報告中的帳戶。 這是因為正在其中一個主要機制，以協助防範暴力密碼攻擊，因此預期的多重要素驗證。
+
 ### <a name="to-simulate-a-brute-force-password-attack"></a>若要模擬暴力密碼攻擊
 
 1. 在[安全性&amp;合規性中心](https://protection.office.com)，選擇 [**威脅管理** \> **攻擊模擬器**。
@@ -137,23 +157,11 @@ ms.locfileid: "41599820"
 
 5. 選擇 [**完成**] 以啟動攻擊。
 
-## <a name="new-features-in-attack-simulator"></a>攻擊模擬器中的新功能
 
-新功能最近已新增至攻擊模擬器。 包括：
-
-- 進階的報告功能。 查看資料，例如速度最快 （或速度最慢） 時間按一下 [郵件被覆寫且更多的視覺效果中的連結，以開啟攻擊模擬電子郵件訊息，最快 （或速度最慢） 時間的能力。
-
-- 電子郵件範本編輯器]。 若要建立自訂、 可重複使用的電子郵件範本可供未來的攻擊模擬的能力。
-
-- CSV 匯入收件者。 若要匯入您的目標收件者清單，而不是使用 address book 選擇使用.csv 檔案的能力。
-
-更多的新功能即將推出的攻擊模擬器。 包括：
-
-- 附件承載網路釣魚模擬。 作為附件承載網路釣魚模擬 URL 取代功能。
 
 請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)請參閱什麼是在開發中、 什麼推行和功能已啟動。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 

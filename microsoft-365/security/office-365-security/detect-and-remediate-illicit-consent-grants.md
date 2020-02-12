@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何識別並修正在 Office 365 中的非法同意授權。
-ms.openlocfilehash: 72109b6522a750e4eb31f289352e4ee2abfa7d33
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0ff16d01c3fe0f150e5a39cec574bc80aead9661
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599450"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957148"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>偵測並修復 Office 365 中的非法同意授權
 
@@ -39,11 +39,13 @@ ms.locfileid: "41599450"
 
 1. 在您的 Office 365 租用戶中開啟 [安全性與合規性中心]****。
 
-2. 瀏覽至 [搜尋與調查]**** 節點，然後選取 [稽核記錄]**** 搜尋。
+2. 瀏覽至**搜尋**，然後選取 [**稽核記錄搜尋**。
 
-3. 建立搜尋 (所有活動和所有使用者)，並篩選同意應用程式的結果，並新增 OAuth2PermissionGrant。
+3. 搜尋 （所有活動和所有的使用者），然後輸入開始日期和結束日期若需要，然後按一下 [**搜尋**。 
 
-4. 檢查擴充屬性，並檢查 IsAdminContent 是否設為 True。
+4. 應用程式，並新增 OAuth2PermissionGrant 同意篩選結果。
+
+5. 按一下以檢視活動的詳細資料的結果。 按一下 [若要取得的活動詳細資料的**其他相關資訊**。 請檢查 IsAdminContent 是否設為 True。
 
 > [!NOTE]
 > • 發生事件後，對應的稽核記錄項目最多可能需要 30 分鐘或 24 小時才會顯示在搜尋結果中。<br/><br/> • 稽核記錄的保留時間及可在稽核記錄中搜尋的時間長度，取決於您的 Office 365 訂閱，具體來說，取決於指派給特定使用者的授權類型。 如需詳細資訊，請參閱[稽核記錄](../../compliance/search-the-audit-log-in-security-and-compliance.md)。

@@ -15,19 +15,19 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: 您可以設定使用者垃圾郵件通知的預設的全公司的垃圾郵件篩選原則或是網域所套用的自訂垃圾郵件篩選原則。
-ms.openlocfilehash: 3fc2d78e06d0b33793cab0fac3ba038720662f8a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f7ef916eea8d9c926f53ef073874dfb299cb92f8
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599620"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957388"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>在 Exchange Online 中設定使用者垃圾郵件通知
 
 > [!IMPORTANT]
 > 本主題適用於保護雲端託管信箱的 Exchange Online 客戶。 保護內部部署信箱的 Exchange Online Protection (EOP) 獨立客戶應改閱讀下列主題： [EOP 中的設定使用者垃圾郵件通知](configure-end-user-spam-notifications-in-eop.md)。 
   
-您可以設定使用者垃圾郵件通知的預設的全公司的垃圾郵件篩選原則或自訂垃圾郵件篩選原則。 啟用使用者垃圾郵件通知訊息可讓您管理自己的垃圾隔離郵件的使用者。 
+您可以設定使用者垃圾郵件通知的預設的全公司的垃圾郵件篩選原則或自訂垃圾郵件篩選原則。 啟用使用者垃圾郵件通知訊息，可讓您管理自己被隔離的垃圾郵件、 大量和網路釣魚郵件的使用者。   
   
 使用者垃圾郵件通知包含使用者在您設定的時間期間 (您可指定 1 到 15 天之間的值) 內收到，被當成垃圾郵件隔離的所有郵件清單。您也可以設定用來撰寫通知郵件的語言。
   
@@ -63,7 +63,7 @@ ms.locfileid: "41599620"
     
    - **通知語言** 您可以使用下拉式清單，選取用來撰寫此原則之使用者垃圾郵件通知的語言。 
     
-   - 按一下 [儲存]****。 垃圾郵件篩選原則設定，包括您使用者的垃圾郵件通知設定的摘要隨即出現在右側窗格中。
+   - 按一下 **[儲存]**。 垃圾郵件篩選原則設定，包括您使用者的垃圾郵件通知設定的摘要隨即出現在右側窗格中。
     
 > [!NOTE]
 >  使用者垃圾郵件通知才會正常運作的已啟用的垃圾郵件篩選原則。 >  每天只傳送一次使用者垃圾郵件通知。 無法向任何特定客戶保證通知傳遞的時間，且無法加以設定。 
@@ -90,9 +90,9 @@ ms.locfileid: "41599620"
     
    - **通知語言** 您可以使用下拉式清單，選取用來撰寫此原則之使用者垃圾郵件通知的語言。 
     
-   - 按一下 [儲存]****。 垃圾郵件篩選原則設定，包括您使用者的垃圾郵件通知設定的摘要隨即出現在窗格中。
+   - 按一下 **[儲存]**。 垃圾郵件篩選原則設定，包括您使用者的垃圾郵件通知設定的摘要隨即出現在窗格中。
 
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 
 [設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)
   

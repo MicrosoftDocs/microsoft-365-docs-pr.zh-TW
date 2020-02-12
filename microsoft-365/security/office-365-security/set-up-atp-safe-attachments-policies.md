@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: 定義安全附件原則，避免您的組織受到電子郵件中惡意檔案的危害。
-ms.openlocfilehash: 6ec78f8734fd655d71d9ce2877baa8ebde2e50ee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ad90ffb4e3503021923470238626d6025e9820fb
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598340"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957178"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
 
@@ -43,13 +43,13 @@ ms.locfileid: "41598340"
 
 - 請確認您組織有 [Office 365 進階威脅防護](office-365-atp.md)。
 
-- 請確定您具有必要權限。 若要定義 (或編輯) ATP 原則，您必須獲派適當的角色。 下表中有一些範例描述：
+- 請確定您具有必要權限。 若要定義 （或編輯） ATP 原則，您必須獲指派 Exchange Online 組織管理角色 （Office 365 全域系統管理員被指派給此角色預設） 或 Exchange Online 檢疫管理和安全性系統管理員角色。 如需詳細資訊，請參閱下表：
 
   |角色|指派位置/條件|
   |---------|---------|
   |Office 365 全域系統管理員 |註冊購買 Office 365 的人會預設為為全域系統管理員。 (請參閱[關於 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以深入了解。)|
   |安全性系統管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-  |Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+  |Exchange Online 組織管理、 Exchange Online 檢疫管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
 
   若要深入了解角色和權限，請參閱 [Office 365 安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md) (英文)。
 

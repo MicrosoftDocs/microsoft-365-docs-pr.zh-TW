@@ -18,12 +18,12 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: 您可以設定隔離的 Office 365 其中大量被篩選為垃圾郵件的內送電子郵件、 網路釣魚郵件中的內送電子郵件和惡意程式碼可以保留供日後檢閱。
-ms.openlocfilehash: 253e1b9e03d395f67ff1290a527e035cbf8dfc3f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 280421457662dd30cdcc3c7985feaad7ba0d16f2
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598670"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957428"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>隔離 Office 365 中的電子郵件
 
@@ -34,7 +34,7 @@ ms.locfileid: "41598670"
 使用者與系統管理員可以使用隔離的郵件。 隔離區中，使用者可以使用剛自己已篩選的郵件。 系統管理員可以搜尋並管理隔離的郵件，所有使用者。
 
 > [!NOTE]
-> 高信賴度釣魚程式的郵件以及隔離的郵件流程規則動作的郵件中才有系統管理員隔離區。 使用者可以存取自己的釣魚程式、 垃圾郵件和大量郵件訊息。 
+> 惡意程式碼、 高信賴度釣魚程式的郵件和隔離的郵件流程規則動作的郵件中才有系統管理員隔離區。 使用者可以存取自己的釣魚程式、 垃圾郵件和大量郵件訊息。 
   
 深入了解使用被隔離的郵件：
   

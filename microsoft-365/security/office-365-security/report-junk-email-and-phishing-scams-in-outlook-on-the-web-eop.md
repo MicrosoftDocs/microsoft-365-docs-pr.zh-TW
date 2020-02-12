@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook web 使用者可以使用內建的郵件報告選項回報垃圾郵件和網路釣魚詐騙。 您也可以讓 Microsoft 知道是否電子郵件誤報為垃圾郵件 （垃圾郵件）。
-ms.openlocfilehash: e433a91d1152e1e87aa9f45b0ccfe94e8b39f0f9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 98b53aa17cb84defa9d20aa4610390db9f5447c5
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598590"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957418"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>在 Outlook 網頁版中回報垃圾郵件與網路釣魚詐騙
 
@@ -38,7 +38,7 @@ ms.locfileid: "41598590"
    > [!NOTE]
    > 或者，若要顯示的功能表中，郵件上按一下滑鼠右鍵，然後按一下 [**標示為垃圾郵件**。
 
-   您可以從您的**收件匣**]、 [**待過濾郵件**或 [**刪除的項目**資料夾回報垃圾郵件。
+   您可以從您**的收件匣**] 或 [**刪除的項目**資料夾回報垃圾郵件。
 
 2. 隨即開啟對話方塊，詢問您是否要將垃圾郵件的複本傳送給 Microsoft 以進行分析。 按一下 [將郵件傳送給 Microsoft 垃圾郵件分析小組**報告**。 選擇性地，如果您想要自動將之後的垃圾郵件提交給 Microsoft，而不出現提示，則請選取 **[不要再顯示此訊息]** 核取方塊。
 
@@ -57,7 +57,7 @@ ms.locfileid: "41598590"
 
    或者，若要顯示的功能表中，郵件上按一下滑鼠右鍵，然後按一下 [**標記為網路釣魚**。
 
-   您可以從您的**收件匣**]、 [**待過濾郵件**或 [**刪除的項目**資料夾回報網路釣魚詐騙郵件。
+   您可以從您**的收件匣**] 或 [**刪除的項目**資料夾回報網路釣魚詐騙郵件。
 
 2. 有些組織隨即開啟對話方塊，詢問您是否要傳送一份網路釣魚詐騙電子郵件給 Microsoft 進行分析。 按一下 [將郵件傳送給 Microsoft 垃圾郵件分析小組**報告**。 此報表的選項的目前可有限數量的組織;您可能不會要求您向 Microsoft 回報網路釣魚詐騙郵件。
 
@@ -71,7 +71,7 @@ ms.locfileid: "41598590"
 
 2. 隨即開啟對話方塊，詢問您是否要將垃圾郵件的複本傳送給 Microsoft 以進行分析。 按一下 [**報告**]，將郵件傳送給 Microsoft 垃圾郵件分析小組..
 
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 
 [了解垃圾郵件和網路釣魚](https://support.microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)
 
