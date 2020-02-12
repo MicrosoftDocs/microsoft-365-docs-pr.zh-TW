@@ -15,30 +15,30 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止網路釣魚郵件送達您的信箱，Outlook.com 和網頁型 Outlook 確認寄件者是誰他們說他們且可疑的郵件標示為垃圾郵件。
-ms.openlocfilehash: 0dd8b54d2c8153b4200336d8c0e439f278f7ae77
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a6ae80adb9ddae2c675e75d747dda27f09a404fb
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598130"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957248"
 ---
 # <a name="unverified-sender"></a>未驗證的寄件者
 
 > [!NOTE]
-> 這些更新會循環現在，並可能無法使用尚未對所有使用者。 企業 outlook.com 使用者支援這項功能。 它不是目前適用於消費者 outlook.com。
+> 這些更新會循環現在，而且可能無法提供給所有使用者。 這項功能被支援企業 Outlook.com 和企業 Outlook Win32 桌面的使用者。 它不是目前適用於家庭用戶 Office 365 使用者。
 
-若要防止網路釣魚郵件送達您的信箱，Outlook.com 和網頁型 Outlook 確認寄件者是誰他們說他們且可疑的郵件標示為垃圾郵件。
+若要防止網路釣魚郵件送達您的信箱，Office 365 會驗證寄件者是誰他們說他們且可疑的郵件標示為垃圾郵件。
 
 > [!IMPORTANT]
-> 當郵件標示為網路釣魚詐騙、 Outlook.com 和 Outlook 網頁顯示一則警告] 頁面頂端，但仍然可以開啟任何郵件中的連結。
+> 將郵件標記為網路釣魚詐騙郵件時，Outlook 就會顯示警告] 頁面頂端，但仍然可以開啟任何郵件中的連結。
 
 ## <a name="how-can-i-identify-a-suspicious-message-in-my-inbox"></a>如何識別我的收件匣中的可疑的郵件？
 
-Outlook.com 和網頁型 Outlook 顯示指標，當郵件的寄件者也無法識別或其身分識別為不同於從地址中看到的內容。
+郵件的寄件者也無法識別或其身分識別是不同於從地址中看到的內容時，outlook 會顯示標記。
 
 ## <a name="you-see-a--in-the-sender-image"></a>您會看到 '？ ' 中的寄件者影像
 
-當 Outlook.com 和網頁型 Outlook 無法驗證使用電子郵件驗證技術的寄件者的身分識別時，他們會顯示 '？ ' 中的寄件者相片。
+Office 365 無法驗證使用電子郵件驗證技術，寄件者的身分識別時 '？ ' 顯示寄件者映像中。
 
 ![郵件未通過驗證](../media/message-did-not-pass-verification.jpg)
 
@@ -58,25 +58,29 @@ Outlook.com 和網頁型 Outlook 顯示指標，當郵件的寄件者也無法�
 
   - 加入網域組經由**Set-phishfilterpolicy** cmdlet 在 Exchange Online PowerShell。 如需詳細資訊，請參閱[Set-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy)和[設定 Office 365 ATP 防網路釣魚和防網路釣魚原則](set-up-anti-phishing-policies.md)。
 
-此外，我們不適用未驗證的寄件者處理方式，如果郵件已傳遞至收件匣透過郵件流程規則 （也稱為傳輸規則），安全網域清單 （反垃圾郵件原則）] 或 [安全的寄件者清單。
+此外，我們不適用未驗證的寄件者處理方式，如果郵件已傳遞至郵件流程規則 （也稱為傳輸規則） 透過收件匣] 或 [安全的網域清單 （反垃圾郵件原則）。
+
+## <a name="how-to-manage-the-via-tag"></a>如何管理透過' 標記 
+
+如果您是 Office 365 客戶可以管理此功能透過 Office 365 安全性 & 合規性中心，您管理未驗證的寄件者處理方式的相同方式。 如果您新增寄件者詐騙允許詐騙智慧清單中，將不會套用透過' 處理方式。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>查看準則沒有 Outlook.com 和網頁型 Outlook 使用新增 '？ ' 和 '透過' 屬性？
+### <a name="what-criteria-does-outlookcom-and-outlook-win32-desktop-use-to-add-the--and-the-via-properties"></a>準則沒有新增 Outlook.com 和 Outlook Win32 桌面使用 '？ ' 和 '透過' 屬性？
 
 為 '？ ' 中的寄件者影像： Outlook.com 需要郵件通過 SPF 或 DKIM 驗證，並將會收到任一 dmarc 複雜，或從 Office 365 詐騙情報傳遞複合驗證。 如需詳細資訊，請參閱[Set up SPF in Office 365，以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)和[使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的外寄電子郵件](use-dkim-to-validate-outbound-email.md)。
 
 針對透過標記： Outlook.com 中自地址的網域不同網域的 DKIM 簽章或 SMTP MAIL FROM 中時，顯示在兩個欄位 （偏好的 DKIM 簽章） 的其中一個網域。
 
-### <a name="how-do-i-remove-the-"></a>如何移除 '？ '
+### <a name="how-do-i-remove-the--without-utilizing-the-spoof-intelligence-spoof-allow-list"></a>如何移除 '？ ' 而不需使用詐騙智慧詐騙允許清單？
 
 為 '？ ' 中的寄件者影像： 為寄件者，您應該驗證與 SPF 或 DKIM 郵件。
 
 針對透過標記： 為寄件者，您應該確定是在 DKIM 簽章的網域或 SMTP 郵件從相同，或是的在 [從地址的網域子網域。
 
-### <a name="does-outlookcom-and-outlook-on-the-web-show-this-for-every-message-that-doesnt-pass-authentication"></a>Outlook.com 和 Outlook 網頁顯示執行此動作不會通過驗證每個郵件嗎？
+### <a name="do-outlookcom-and-outlook-win32-desktop-show-this-for-every-message-that-doesnt-pass-authentication"></a>Outlook.com 和 Outlook Win32 桌面顯示這不會通過驗證每封郵件嗎？
 
-不是一定。 Outlook.com 和網頁型 Outlook 可能已驗證寄件者的郵件內的其他屬性。
+不是一定。 Office 365 可能已驗證寄件者的郵件內的其他屬性。
 
 ## <a name="related-topics"></a>相關主題
 
