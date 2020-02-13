@@ -5,6 +5,8 @@ keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR, CC
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,22 +14,19 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: f5ab5230cae7dcc31c487ecbc6a2bbdcbcaaa0dd
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: d2f9ac660c30b815d4ac381f347e1c1aa354ce0d
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "39268455"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916908"
 ---
 # <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>GDPR 與 CCPA 和資料主體要求
 
 針對為歐盟 (EU) 中的人們提供產品及服務或為歐盟居民收集和分析資料的組織，一般資料保護規定 (GDPR) 推出了新的規則，而無論您或您的企業位於何處都必須遵守。 您可以在 [GDPR 摘要主題](gdpr.md)中找到其他詳細資料。
 
-同樣地，加州消費者隱私法 (CCPA) 為加州客戶提供隱私權和義務，包括與 GDPR 資料主體權利相似的權利，例如有權刪除、存取和接收 (可攜性) 其個人資訊。  CCPA 也提供特定接露、針對選擇行使權時的歧視提供保護，以及特定資料傳輸的「選擇退出/選擇加入」需求分類為「銷售」。  <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI] 
-
-本文件會引導您了解依據 GDPR 和 CCPA 使用 Microsoft 產品和服務時，完成資料主體要求 (DSR) 的相關資訊。
+同樣地，加州消費者隱私法 (CCPA) 為加州客戶提供隱私權和義務，包括與 GDPR 資料主體權利相似的權利，例如有權刪除、存取和接收 (可攜性) 其個人資訊。  CCPA 也提供特定接露、針對選擇行使權時的歧視提供保護，以及特定資料傳輸的「選擇退出/選擇加入」需求分類為「銷售」。 本文件會引導您了解依據 GDPR 和 CCPA 使用 Microsoft 產品和服務時，完成資料主體要求 (DSR) 的相關資訊。
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -79,7 +78,7 @@ Microsoft 產生的記錄檔和相關資料可能包含依據 GDPR 的「個人�
 
 ### <a name="yammer-and-kaizala"></a>Yammer 和 Kaizala
 
-刪除使用者帳戶不會移除系統為 Yammer 和 Kaizala 所產生的記錄。若要從這些應用程式中移除資料，請參閱以下資訊：
+刪除使用者帳戶不會移除系統為 Yammer 和 Kaizala 所產生的記錄。若要從這些應用程式中移除資料，請參閱以下其中一個資源：
 
 - [管理 Yammer Enterprise 中的 GDPR 資料主體要求](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
 - [在 Kaizala 中匯出或刪除使用者的組織資料](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
@@ -99,6 +98,12 @@ Microsoft 產生的記錄檔和相關資料可能包含依據 GDPR 的「個人�
 ### <a name="third-party-products"></a>協力廠商產品
 
 針對透過 Microsoft 帳戶驗證存取的協力廠商產品和服務，應該將任何資料主體要求導向至適當的協力廠商。
+
+## <a name="data-subject-request-admin-tools"></a>資料主體要求系統管理工具
+
+- **安全性與合規性中心**：使用者產生的資料是由[安全性與合規性中心](https://aka.ms/stpsecurityandcompliance)匯出，或以應用程式功能匯出。
+- **Azure AD 系統管理中心**：使用 [Azure AD 系統管理中心](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/Allusers/menuId/)刪除來自 Azure Active Directory 及相關服務的資料主體。
+- **Microsoft 資料記錄匯出**：租用戶系統管理員可以使用 [Microsoft 資料記錄匯出](https://aka.ms/MicrosoftGDPR)，將系統產生的記錄匯出。
 
 ## <a name="learn-more"></a>深入了解
 

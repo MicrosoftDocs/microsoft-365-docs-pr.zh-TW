@@ -15,20 +15,16 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ffd5bd81542e2d39a928789c8575178c1b9a7633
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e419dd362ec42f7f2acb8cda03688afe3ade37be
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594423"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916918"
 ---
 # <a name="gdpr-breach-notification"></a>GDPR 外洩通知
 
-針對為歐盟 (EU) 中的人們提供產品及服務或為歐盟居民收集和分析資料的組織，一般資料保護規定 (GDPR) 推出了新的規則，而無論您或您的企業位於何處。 您可以在 [GDPR 摘要主題](gdpr.md)中找到其他詳細資料。<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrZgG] 
-
-本文件會引導您了解依據 GDPR 使用 Microsoft 產品和服務時，完成外洩通知的相關資訊。
+針對為歐盟 (EU) 中的人們提供產品及服務或為歐盟居民收集和分析資料的組織，一般資料保護規定 (GDPR) 推出了新的規則，而無論您或您的企業位於何處。 您可以在 [GDPR 摘要主題](gdpr.md)中找到其他詳細資料。 本文件會引導您了解依據 GDPR 使用 Microsoft 產品和服務時，完成外洩通知的相關資訊。
 
 ## <a name="what-constitute-a-breach-of-personal-data-under-the-gdpr"></a>GDPR 規定的個人資料是由什麼所構成？
 
@@ -47,7 +43,7 @@ ms.locfileid: "41594423"
 
 Microsoft 很認真看待其在一般資料保護規定 (GDPR) 下所需承擔的責任。 安全性事件/資料外洩是指例如非法存取客戶儲存在 Microsoft 設備上或 Microsoft 設施中資料的事件，或未經授權存取而可能導致客戶資料遺失、揭露或變更的事件。
 
-身為資料處理者，Microsoft 確保服務客戶能夠符合與資料控制者一樣的 GDPR 外洩通知需求。 我們的通知提供進行該評估所需的資訊。 Microsoft 會在有任何個人資料外洩時通知客戶，除了個人資料經確認為無法辨識的情況 (例如，已確認其金鑰完整性的強式加密資料)。
+身為資料處理者，Microsoft 確保服務客戶能夠符合與資料控制者一樣的 GDPR 外洩通知需求。 我們的通知提供進行該評估所需的資訊。 Microsoft 會在有任何個人資料外洩時通知客戶，除了個人資料經確認為無法辨識的情況 (例如，已確認其金鑰完整性的加密資料)。
 
 資料控制者負責評估資料隱私權的風險，並且決定外洩時是否需要客戶 DPA 的通知。 Microsoft 伴隨您的 GDPR 合規性原則提供需要的通知，以進行該評估。
 
@@ -73,12 +69,16 @@ Microsoft 很認真看待其在一般資料保護規定 (GDPR) 下所需承擔�
     - 客戶通知**：Microsoft Azure 視需要通知客戶和監管單位有資料外洩。 客戶通知會在我們宣告外洩的 72 小時內傳遞，除了下列情況：
 
         - Microsoft 相信執行通知的動作會增加其他客戶的風險。
-        - 72 小時的時間表可能會讓某些事件詳細資料可供使用。 這些資訊會隨著調查進行提供給您。
+        - 72 小時的時間表可能會讓某些事件詳細資料可供使用。 這些詳細資料會隨著調查進行提供給您。
 
         如需進一步的詳細資料，請參閱[客戶通知](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#customer-notification)。
 
 3. **[Microsoft 支援服務與專業服務](gdpr-breach-Microsoft-Support-Professional-Services.md)**  
     專業服務的本質表示某些資料保護事件可能會落在客戶的責任範圍。 Microsoft 專業服務發現資料保護事件時，它會遵循如[資料保護事件回應程序的範圍與限制](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services#scope--limits-of-data-protection-incident-response-process)中所述的記載業界標準回應計劃。
+
+## <a name="breach-notification-admin-tools"></a>外洩通知系統管理工具
+
+- **設定貴組織的隱私權連絡人**：如果 Microsoft 需要與貴組織的隱私權連絡人進行通訊，租用戶系統管理員可以使用 [Azure Active Directory 系統管理入口網站](https://go.microsoft.com/fwlink/p/?linkid=2052736)來定義貴組織的隱私權連絡人。
 
 ## <a name="learn-more"></a>深入了解
 
