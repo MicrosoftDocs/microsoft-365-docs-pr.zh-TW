@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 中使用您自訂網域中的電子郵件 DKIM、2048 位元、1024 位元、步驟、執行方式、SPF、DMARC
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 摘要：本文說明如何在 Office 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統會信任從您的自訂網域傳送的郵件。
-ms.openlocfilehash: a6d45dbcb5015be1b688cad562a234c555d0ef66
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 496089ff46d66df3382895626831023610c706be
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572689"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957158"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件
 
@@ -114,7 +116,7 @@ SPF 會在郵件信封中新增資訊，但 DKIM 則會為郵件標頭中的簽�
 
 對於要在 DNS 中新增 DKIM 簽章的每個網域，您必須發佈兩個 CNAME 記錄。
 
-請執行下列命令：
+執行下列命令以建立選取器記錄：
 
 ```powershell
     New-DkimSigningConfig -DomainName <domain> -Enabled $false
@@ -126,8 +128,6 @@ SPF 會在郵件信封中新增資訊，但 DKIM 則會為郵件標頭中的簽�
 ```powershell
     Set-DkimSigningConfig -Identity <domain> -Enabled $true
 ```
-
-您 DNS 中的 CNAME 記錄會指向已建立、且 Office 365 的 Microsoft DNS 伺服器的 DNS 中已有的 DKIM TXT 記錄。
 
 Office 365 會自動使用您建立的兩個記錄執行自動金鑰輪換。 如果您在 Office 365 中除了初始網域以外也佈建了自訂網域，則必須為每個額外的網域發佈兩個 CNAME 記錄。 因此，如果您有兩個網域，您必須發佈兩個額外的 CNAME 記錄，依此類推。
 
@@ -177,6 +177,9 @@ Host name:          selector2._domainkey
 Points to address or value: selector2-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:                3600
 ```
+
+> [!NOTE]
+> 建立第二筆記錄很重要，但建立時只能使用其中一個選取器。 基本上，第二個選取器可能會指向尚未建立的位址。 我們還是建議您建立第二筆 CNAME 記錄，因為您的金鑰輪換會較流暢，且您不需要自行執行任何手動步驟。
 
 ### <a name="enable-dkim-signing-for-your-custom-domain-in-office-365"></a>為 Office 365 中的自訂網域啟用 DKIM 簽署
 <a name="EnableDKIMinO365"> </a>

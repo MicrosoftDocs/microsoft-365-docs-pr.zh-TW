@@ -1,5 +1,7 @@
 ---
 title: 使用 DMARC 來驗證 Office 365 電子郵件
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,17 +15,20 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: 了解如何設定以網域為基礎的訊息驗證、報告和符合性 (DMARC) 來驗證從您的 Office 365 組織傳送的訊息。
-ms.openlocfilehash: a812003df72cfb3697a5b114acb37aede4268b21
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 0702baec4dd2b585dcf45546befc19a6108004b9
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572679"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957348"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>在 Office 365 中使用 DMARC 來驗證電子郵件
 
 以網域為基礎的郵件驗證、報告和一致性 ([DMARC](https://dmarc.org)) 搭配寄件者原則架構 (SPF) 和網域金鑰識別郵件 (DKIM) 來驗證郵件寄件者，並確保目的地電子郵件系統信任您網域傳送的郵件。 搭配 SPF 和 DKIM 來實作 DMARC 可提供額外保護，防範詐騙和網路釣魚電子郵件。 DMARC 可協助接收方郵件系統決定如何處理未通過 SPF 或 DKIM 檢查的您網域傳送的郵件。
-  
+
+> [!TIP]
+> 請造訪 [Microsoft 情報安全性聯盟 (MISA)](https://www.microsoft.com/misapartnercatalog) 目錄，以檢視為 Office 365 提供 DMARC 報告的協力廠商。 
+
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-office-365"></a>SPF 和 DMARC 如何共同運作以在 Office 365 中保護電子郵件？
 <a name="SPFandDMARC"> </a>
 
@@ -77,7 +82,7 @@ Microsoft 的 DMARC TXT 記錄看起來如下：
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1" 
 ```
 
-Microsoft 會將其 DMARC 報告傳送給協力廠商 [Agari](https://agari.com)。 Agari 會收集並分析 DMARC 報告。 此外，Valimail 免費提供[適用於 Office 365 的 DMARC 監視服務](https://go.valimail.com/microsoft.html)。
+Microsoft 會將其 DMARC 報告傳送給協力廠商 [Agari](https://agari.com)。 Agari 會收集並分析 DMARC 報告。 請造訪 [MISA 目錄](https://www.microsoft.com/misapartnercatalog)，以檢視更多為 Office 365 提供 DMARC 報告的協力廠商。
   
 ## <a name="implement-dmarc-for-inbound-mail"></a>為輸入郵件實作 DMARC
 <a name="implementDMARCinbound"> </a>
