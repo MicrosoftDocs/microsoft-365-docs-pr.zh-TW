@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 用於安全性 & 合規性中心的內容搜尋工具來搜尋並匯出在 Exchange 混合式部署中的內部部署使用者 MicrosoftTeams 聊天室資料 （稱為 1xN 聊天室）。
-ms.openlocfilehash: d59af2e39d91bf107567016428102a5aba9cb724
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 042e34028023f1dd4f49804230fe99f2d042d0d6
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597570"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957138"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>在 Office 365 中搜尋內部部署使用者的雲端式的信箱
 
@@ -109,7 +109,7 @@ ms.locfileid: "41597570"
 
 您可以使用**New-compliancesearch**和**Set-compliancesearch** cmdlet 安全性 & 合規性中心 PowerShell 中，搜尋內部部署使用者的雲端式信箱。 如先前所述，您不需要將支援要求提交給使用 PowerShell 來搜尋內部部署使用者的小組聊天資料。 
   
-1. [連接到安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 2. 執行下列 PowerShell 命令來建立搜尋內部部署使用者的雲端式信箱的內容搜尋。
 
@@ -137,9 +137,8 @@ ms.locfileid: "41597570"
 
 ## <a name="known-issues"></a>已知問題
 
-- 目前，您可以僅搜尋、 預覽並在雲端式信箱中的內容匯出內部部署使用者。 將內部部署使用者的雲端架構信箱置於保留 eDiscovery 相關聯情況下，或是將它指派給 Office 365 保留原則不支援。 
+- 目前，您可以搜尋、 預覽，並匯出內部部署使用者的雲端式信箱中的內容。 您也可以為內部使用者的雲端架構信箱置於保留的 eDiscovery 案例相關聯和小組聊天或通道訊息保留原則套用至雲端架構信箱的內部部署使用者。 不過在這個階段中，您無法將其他其他內容的位置 （例如 Exchange 信箱和 SharePoint 網站） 的保留原則套用到雲端式信箱的內部部署使用者。 
 
-- 電子文件探索的內容位置選擇器保留顯示內部使用者，並且會讓您選取他們。 不過，如同先前的說明保留不會套用到內部部署使用者。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
@@ -157,7 +156,7 @@ ms.locfileid: "41597570"
   
  **可以我套用 eDiscovery 保留或 Office 365 保留原則至內部部署使用者？**
   
-否。
+是。 您可以將 eDiscovery 保留 」 或 「 小組聊天和通道訊息的保留原則套用至雲端架構信箱的內部部署使用者。
   
  **可以較舊的小組聊天內部部署使用者的時間之前我的組織的內容搜尋尋找提交要求以啟用這項功能嗎？**
   
