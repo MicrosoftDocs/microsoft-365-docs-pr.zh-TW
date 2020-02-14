@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 111bafdb5d95792e8fda08007bccd7cd274b8832
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bb4056b90afc8805d4e56b9b73c0c7d118d6f08c
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594483"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916888"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>使用責任整備檢查清單支援 GDPR 計劃
 
@@ -28,9 +28,7 @@ ms.locfileid: "41594483"
 
 ## <a name="accountability-readiness-checklists"></a>責任整備檢查清單
 
-責任整備檢查清單提供使用 Microsoft 產品與服務時，便於存取支援 GDPR 所需資訊的方式。 檢查清單列出在 GDPR 下您可能須盡的義務，並指出支援貴組織的法規遵循所需的資訊。 <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1RP] 
+責任整備檢查清單提供使用 Microsoft 產品與服務時，便於存取支援 GDPR 所需資訊的方式。 檢查清單列出在 GDPR 下您可能須盡的義務，並指出支援貴組織的法規遵循所需的資訊。
 
 四項 Microsoft 產品和服務系列的特定指南：
 
@@ -65,6 +63,17 @@ ms.locfileid: "41594483"
     - 了解組織和其內容  
     - 規劃  
     - 資訊安全性原則
+
+## <a name="customer-agreements"></a>客戶合約
+
+- **線上服務條款**：您可以在[線上服務條款](https://go.microsoft.com/fwlink/p/?linkid=2052208)中找到與 GDPR 相關的 Microsoft 合約承諾。
+- **Microsoft 產品條款**：Microsoft 將 [GDPR 條款承諾](https://go.microsoft.com/fwlink/p/?linkid=2052213)擴展至所有大量授權客戶。
+- **資料保護附錄**：Microsoft 服務[將承諾擴展](https://go.microsoft.com/fwlink/p/?linkid=2052215)至 Microsoft 諮詢服務客戶及其他人。
+
+## <a name="gdpr-compliance-controls"></a>GDPR 合規性控制
+
+- **使用合規性分數**：審閱和整合 Microsoft 用來支援 GDPR 中的義務與[合規性分數](compliance-score.md)的控制。
+- **GDPR 控制對應**：存取 Microsoft 控制的[完整對應](https://go.microsoft.com/fwlink/p/?linkid=2052220) ，以盡 GDPR 義務。
 
 ## <a name="learn-more"></a>深入了解
 
