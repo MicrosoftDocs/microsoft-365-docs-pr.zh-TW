@@ -1,5 +1,7 @@
 ---
 title: 設定您的垃圾郵件篩選原則
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本的垃圾郵件篩選設定，包括識別為垃圾郵件所採取的選取郵件動作。
-ms.openlocfilehash: 107b4cfa79a83ec5703edd3b47d00c59da81f4b6
-ms.sourcegitcommit: 8b619cc0587d180322d0799fdad813cdd929d9dc
+ms.openlocfilehash: a645d00bd650cba06ca3751aa4fc3f48f9959e5b
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "40929789"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957198"
 ---
 # <a name="configure-your-spam-filter-policies"></a>設定您的垃圾郵件篩選原則
 垃圾郵件篩選設定，包括識別為垃圾郵件所採取的選取郵件動作。 垃圾郵件篩選原則設定只會套用於內送郵件，並且有兩種類型：
@@ -138,7 +140,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 ## <a name="fine-tuning-your-spam-filter-policy-to-prevent-false-positives-and-false-negatives"></a>調整您的垃圾郵件篩選原則，以避免誤判和漏報
 
-如果想要使用積極的垃圾郵件篩選方法，您可以啟用進階的垃圾郵件篩選技術。 如需套用至整個組織的一般垃圾郵件設定，請參閱[如何在 Office 365 中防止好的電子郵件被標示為垃圾郵件](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam) (部分機器翻譯)，或[使用 Office 365 垃圾郵件篩選器封鎖垃圾郵件以避免漏報問題](reduce-spam-email.md)。 如果您有系統管理員層級的控制權，且您想要避免誤判或漏報，這些內容很有幫助。
+如果想要使用積極的垃圾郵件篩選方法，您可以啟用進階的垃圾郵件篩選技術。 如需套用至整個組織的一般垃圾郵件設定，請參閱[如何在 Office 365 中防止好的電子郵件被標示為垃圾郵件](prevent-email-from-being-marked-as-spam.md) (部分機器翻譯)，或[使用 Office 365 垃圾郵件篩選器封鎖垃圾郵件以避免漏報問題](reduce-spam-email.md)。 如果您有系統管理員層級的控制權，且您想要避免誤判或漏報，這些內容很有幫助。
 
 ## <a name="allowblock-lists"></a>允許/封鎖清單
 
@@ -160,6 +162,9 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
    - 將不想要的寄件者新增到 [寄件者封鎖清單]。 按一下 **[編輯]** ![[新增圖示]](../media/ITPro-EAC-AddIcon.gif)，然後在選取範圍對話方塊中新增您想要封鎖的寄件者地址。 您可以使用分號或新行區隔多個項目。 按一下 **[確定]** 回到 **[封鎖清單]** 頁面。
 
    - 將不想要的網域新增到 [網域封鎖清單]。 按一下 **[編輯]** ![[新增圖示]](../media/ITPro-EAC-AddIcon.gif)，然後在選取範圍對話方塊中新增您想要封鎖的網域。 您可以使用分號或新行區隔多個項目。 按一下 **[確定]** 回到 **[封鎖清單]** 頁面。
+   
+     > [!NOTE]
+     > 您可以在垃圾郵件篩選原則中封鎖整個網域或特定寄件者，但不能使用萬用字元 (\*)。 
 
 > [!TIP]
 > 在某些情況下，有時您的組織可能不同意服務所提供的結果。 如果這樣，您可能希望永久保留 [允許] 或 [封鎖] 清單。 不過，如果您要長期將網域放在 [允許]清單上，請告知寄件者先確認他們使用已驗證的網域；如果不是則將遭 DMARC 拒絕。
@@ -171,7 +176,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 [隔離區](quarantine.md)
 
-[如何在 Office 365 中防止好的電子郵件被標示為垃圾郵件](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[如何在 Office 365 中防止好的電子郵件被標示為垃圾郵件](prevent-email-from-being-marked-as-spam.md)
 
 [如何減少 Office 365 中的垃圾郵件](reduce-spam-email.md)
 

@@ -16,26 +16,26 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Microsoft 365 中的「進階稽核」提供新的稽核功能，以協助貴組織進行鑑識與合規性調查。
-ms.openlocfilehash: 49d2e2bbf7d1c19bb4c282920008a0ca9a34188d
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+description: Microsoft 365 中的進階稽核提供新的稽核功能，以協助組織進行鑑識與合規性調查。
+ms.openlocfilehash: e06e7f6330a36c8f98042fcce472b7baf6ef16ff
+ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862383"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41960239"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 中的進階稽核
 
-Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and-compliance.md)，可讓組織深入了解 Microsoft 365 中多種不同服務的多個類型的稽核活動。 現在隨著 Microsoft 365 中進階稽核的推出，我們會加入新的稽核功能，以協助貴組織進行鑑識與合規性調查。
+Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and-compliance.md)，可讓組織深入了解 Microsoft 365 中多種不同服務的多個類型的稽核活動。 現在隨著 Microsoft 365 中進階稽核的推出，我們會加入新的稽核功能，以協助組織進行鑑識與合規性調查。
 
 > [!NOTE]
-> 進階稽核可供具有 Office 365 或 Microsoft 365 企業版 E5 訂閱的組織使用。 此外，當「進階稽核」功能需要使用每位使用者授權時，您可以將 Microsoft 365 E5 合規性附加元件訂閱指派給使用者，針對稽核記錄和高價值稽核事件的長期保留也是如此。
+> 進階稽核可供具有 Office 365 或 Microsoft 365 企業版 E5 訂閱的組織使用。 此外，當進階稽核功能需要使用每位使用者授權時，您可以將 Microsoft 365 E5 合規性附加元件訂閱指派給使用者，針對稽核記錄和高價值稽核事件的長期保留也是如此。
 
-本文提供這些「進階稽核」功能的概觀。
+本文提供這些進階稽核功能的概觀。
 
 ## <a name="long-term-retention-of-audit-logs"></a>長期保留稽核記錄
 
-「進階稽核」會保留所有 Exchange、SharePoint 和 Azure Active Directory 稽核記錄一年。 這是透過預設的稽核記錄保留原則完成，它會保留包含 **Workload** 屬性 (這指出發生活動所在的服務) 的 **Exchange**、**SharePoint** 或 **AzureActiveDirectory** 的值的任何稽核記錄一年。 這可協助進行持續的鑑識或合規性調查。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md#default-audit-log-retention-policy)中的「預設稽核記錄保留原則」一節。
+進階稽核會保留所有 Exchange、SharePoint 和 Azure Active Directory 稽核記錄，時間為一年。 這是透過預設的稽核記錄保留原則完成，它會保留包含 **Workload** 屬性 (這指出發生活動所在的服務) 的 **Exchange**、**SharePoint** 或 **AzureActiveDirectory** 的值的任何稽核記錄一年。 這可協助進行持續的鑑識或合規性調查。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md#default-audit-log-retention-policy)中的「預設稽核記錄保留原則」一節。
 
 ## <a name="audit-log-retention-policies"></a>稽核記錄保留原則
 
