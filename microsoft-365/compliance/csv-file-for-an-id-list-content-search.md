@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: 使用 Results.csv 或未編製索引的 Items.csv 檔案從現有的內容搜尋來建立識別碼清單搜尋會傳回特定的電子郵件。 識別碼清單搜尋通常用來傳回已局部編製索引的信箱項目。
-ms.openlocfilehash: 19128e182183b43edbc5957ac2aca5420b58cfe2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 97c69cd096e1ec2fa69082edef70cd41dfd229b0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595520"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077009"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>準備識別碼清單在 Office 365 中的內容搜尋的 CSV 檔案
 
@@ -65,7 +65,7 @@ ms.locfileid: "41595520"
 
     以下是範例已準備好要送出識別碼清單內容搜尋的 CSV 檔案。
 
-    ![已設定目標內容搜尋的 CSV 檔案的範例](media/8371b8cb-1638-496e-9be1-fe1565757d67.png)
+    ![已設定目標內容搜尋的 CSV 檔案的範例](../media/8371b8cb-1638-496e-9be1-fe1565757d67.png)
 
 6. 儲存該 CSV 檔案，或使用**另存新檔**儲存具有不同的檔案名稱的檔案。 在這兩種情況下，務必將檔案儲存與 CSV 格式。
 
@@ -78,9 +78,9 @@ ms.locfileid: "41595520"
 
 1. 在 [安全性 & 合規性中心，移至**搜尋** \> **內容搜尋**。
 
-2. 在 [**搜尋**] 頁面上，按一下箭號下一步]![加入圖示](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)**新搜尋**]，然後按一下 [**搜尋依識別碼清單**。
+2. 在 [**搜尋**] 頁面上，按一下箭號下一步]![加入圖示](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif)**新搜尋**]，然後按一下 [**搜尋依識別碼清單**。
 
-    ![按一下 [搜尋]，依識別碼清單，從新的 [搜尋] 下拉式清單](media/e65f9942-09b2-4127-865e-e64029a590df.png)
+    ![按一下 [搜尋]，依識別碼清單，從新的 [搜尋] 下拉式清單](../media/e65f9942-09b2-4127-865e-e64029a590df.png)
 
 3. **識別碼清單來搜尋**彈出式視窗中，在名稱搜尋 （及選擇性描述），然後按一下 [**瀏覽]** 並在先前步驟中選取您備妥的 CSV 檔案。
 
@@ -90,7 +90,7 @@ ms.locfileid: "41595520"
 
     以下是預估的搜尋結果並產生識別碼清單搜尋查詢的範例。
 
-    ![在詳細資料窗格中的目標內容搜尋的搜尋查詢](media/dbd9e570-c04b-4056-a8a7-37e9916ec683.png)
+    ![在詳細資料窗格中的目標內容搜尋的搜尋查詢](../media/dbd9e570-c04b-4056-a8a7-37e9916ec683.png)
 
     請注意，[識別碼] 搜尋統計資料中顯示的估計項的目數應該符合您在 CSV 檔案中選取的項目數。
 

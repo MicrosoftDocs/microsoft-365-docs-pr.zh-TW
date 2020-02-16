@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解用來復原遺失的 Office 365 客戶金鑰的可用性金鑰。
-ms.openlocfilehash: 72fbfd139b273d38a0cb017d7bbca3d87c16efb2
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 86f602a59f436a6ce42df583c88c0403eb17e5ae
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862083"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076944"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>了解可用性金鑰的 Office 365 客戶金鑰
 
@@ -175,11 +175,11 @@ Exchange Online 和商務用 Skype 會自動在暫時性錯誤期間使用的可
 
 記錄包含屬性，例如日期、 時間、 活動、 組織識別碼，以及資料加密原則識別碼。 記錄會提供 Office 365 整合的稽核記錄的一部分且可存取 [Office 365 安全性與合規性中心的稽核記錄搜尋] 索引標籤。
 
-![稽核記錄搜尋可用性重要事件](media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
+![稽核記錄搜尋可用性重要事件](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
 
 Exchange Online 與 Skype 商務可用性索引鍵記錄使用與 Office 365 管理活動[常見的結構描述](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)新增自訂的參數： 原則識別碼、 範圍金鑰版本 Id 及要求 id。
 
-![可用性金鑰的自訂參數](media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
+![可用性金鑰的自訂參數](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
 
 ### <a name="sharepoint-online-onedrive-for-business-and-teams-files-availability-key-logging"></a>SharePoint Online、 商務用 OneDrive，以及小組檔案可用性索引鍵記錄
 
@@ -195,11 +195,11 @@ Office 365 會使用可用性金鑰來為客戶金鑰服務加密所建立的金
 
 ### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>加密 cipher 用來加密金鑰，Exchange Online 和商務用 Skype
 
-![Exchange Online 客戶金鑰加密 cipher](media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Exchange Online 客戶金鑰加密 cipher](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 ### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-and-onedrive-for-business"></a>用來加密金鑰，SharePoint Online 和商務用 OneDrive 加密 cipher
 
-![SharePoint Online 客戶金鑰加密 cipher](media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![SharePoint Online 客戶金鑰加密 cipher](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>相關文章
 

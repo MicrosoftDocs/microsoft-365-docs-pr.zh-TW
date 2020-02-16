@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 了解如何建立像搜尋及透過 Office 365 中的安全性 & 合規性中心中的 PowerShell 指令碼執行報告的內容搜尋工作自動化。
-ms.openlocfilehash: 6c92d9dab093b802acc518aebb96ddf83cf54ea5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 915ea910eebba8f6f39ceb41d9475769a6403729
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595570"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077181"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>建立、報告及刪除多個內容搜尋
 
@@ -191,7 +191,7 @@ ms.locfileid: "41595570"
     
     指令碼會顯示進度的建立和執行搜尋。 指令碼完成時，它會傳回的提示。 
     
-    ![執行指令碼以建立多個規範搜尋的範例輸出](media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
+    ![執行指令碼以建立多個規範搜尋的範例輸出](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
   
 ## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>步驟 4： 執行指令碼，以報告搜尋估計
 
@@ -266,7 +266,7 @@ ms.locfileid: "41595570"
     
     指令碼會顯示進度的建立和執行搜尋。 指令碼完成時，會顯示報表。 
     
-    ![執行搜尋報告，以顯示搜尋群組的估計](media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
+    ![執行搜尋報告，以顯示搜尋群組的估計](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
   
 > [!NOTE]
 > 如果相同的信箱或網站指定為 [搜尋] 群組中的多個搜尋的內容位置，（適用於項目數目與大小總計） 報告中的總結果估計可能包含相同的項目結果。 這是因為在相同的電子郵件或文件會被計算一次以上如果它會比對 [搜尋] 群組中的不同搜尋查詢。 
@@ -301,4 +301,4 @@ ms.locfileid: "41595570"
     
     指令碼會顯示在刪除每個搜尋的名稱。
     
-    ![執行指令碼，以刪除搜尋群組中的搜尋](media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)
+    ![執行指令碼，以刪除搜尋群組中的搜尋](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)

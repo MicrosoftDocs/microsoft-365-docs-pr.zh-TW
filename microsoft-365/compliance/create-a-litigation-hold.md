@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: dbcddd57fcf2d1471b4a4aa4b715dcae22dbc40c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d465e2a28b47abc5020480a4a862cbbca1d5e678
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596190"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077723"
 ---
 # <a name="create-a-litigation-hold"></a>建立訴訟資料暫留
 
@@ -86,7 +86,7 @@ Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <num
 
 下圖顯示在 [可復原的項目] 資料夾中的子資料夾以及並保留工作流程程序。
 
-![訴訟暫止生命週期](media/LitigationHoldLifeCycle.png)
+![訴訟暫止生命週期](../media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
 > 如果 eDiscovery 案例相關聯保留在信箱上，清除項目會從 [刪除] 子資料夾移到 [DiscoveryHolds] 子資料夾，並會保留直到信箱釋放 eDiscovery 保留中。

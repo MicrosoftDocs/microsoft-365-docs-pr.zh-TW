@@ -14,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: 基於規範、法律或其他規定，組織通常必須將文件保留一段時間。但是，將文件保留超過要求時間，可能會讓組織暴露在法律風險下。
-ms.openlocfilehash: 9ada3f2756b627965c9f215c1111ff2fe72da1e7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0144b12c05fcd4c8f973ee7e6b6df373f5b609a5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596230"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077884"
 ---
 # <a name="create-a-document-deletion-policy"></a>建立文件刪除原則
 
@@ -32,19 +32,19 @@ ms.locfileid: "41596230"
   
 建立文件刪除原則後，您可以將其指派到網站集合範本，因此可將此原則套用到從那個範本中建立的所有網站集合。您也可以指派一個原則至特定網站集合，它會覆寫已經指派到此網站集合範本的任何原則。
   
-![文件刪除原則中心的首頁](media/IP-Document-Deletion-Policy-Center-home-page.png)
+![文件刪除原則中心的首頁](../media/IP-Document-Deletion-Policy-Center-home-page.png)
   
 ## <a name="policy-templates"></a>原則範本
 
 您可以從頭開始建立文件刪除原則，或是使用其中一個範例原則。規範原則中心含有可供您直接使用的範例原則，或者您可以將它們做為起點，然後加以重新命名或修改。
   
-![文件刪除原則範例](media/IP-Sample-deletion-policies.png)
+![文件刪除原則範例](../media/IP-Sample-deletion-policies.png)
   
 ## <a name="examples-of-how-to-use-document-deletion-policies"></a>如何使用文件刪除原則的範例
 
 一個網站集合或網站集合範本可擁有一或多個原則指派，每個原則可擁有一或多個規則。 但是，每個網站只能有一個作用中的原則，而對於網站中的文件庫，則只能有一個刪除原則可以隨時發生作用。
   
-![顯示原則間關係的圖表](media/IP-Two-policies-four-rules.png)
+![顯示原則間關係的圖表](../media/IP-Two-policies-four-rules.png)
   
 此外，您可以將原則選擇做為強制或預設原則，也可以將刪除規則選擇做為預設規則： 
   
@@ -68,7 +68,7 @@ ms.locfileid: "41596230"
     
 在此範例中，預設的刪除原則將套用到範本下網站集合的所有文件庫，而且網站擁有者無法選擇退出此原則。這是最簡單的方法來廣泛且正確地強制執行文件刪除原則。
   
-![顯示單一強制原則的圖表](media/IP-Example-1-doc-deletion-policies.png)
+![顯示單一強制原則的圖表](../media/IP-Example-1-doc-deletion-policies.png)
   
 ### <a name="example-2-apply-a-single-policy-with-several-rules-to-a-site-collection-template"></a>範例 2：將包含數個規則之單一原則套用到網站集合範本
 
@@ -84,7 +84,7 @@ ms.locfileid: "41596230"
     
 網站擁有者可選擇其中一個替代刪除規則、選擇退出原則，或是不執行任何動作，然後遵循預設的原則和規則。
   
-![顯示一個含有許多規則之原則的圖表](media/IP-Example-2-doc-deletion-policies.png)
+![顯示一個含有許多規則之原則的圖表](../media/IP-Example-2-doc-deletion-policies.png)
   
 ### <a name="example-3-apply-several-policies-with-one-or-more-rules-to-a-site-collection"></a>範例 3：將包含一或多個規則的數個原則套用至網站集合
 
@@ -104,7 +104,7 @@ ms.locfileid: "41596230"
     
 此外，這些原則與規則專為特定網站集合量身訂作，其中網站擁有者藉由選擇最符合其網站需求的原則和規則來中斷繼承。
   
-![顯示許多原則和規則的圖表](media/IP-Example-3-doc-deletion-policies.png)
+![顯示許多原則和規則的圖表](../media/IP-Example-3-doc-deletion-policies.png)
   
 ## <a name="create-a-document-deletion-policy"></a>建立文件刪除原則
 
@@ -114,7 +114,7 @@ ms.locfileid: "41596230"
     
 2. 選擇 [刪除原則]****。
     
-    ![刪除原則選項](media/IP-Deletion-Policies-option.png)
+    ![刪除原則選項](../media/IP-Deletion-Policies-option.png)
   
 3. 選擇 [新增項目]****。
     
@@ -132,7 +132,7 @@ ms.locfileid: "41596230"
     
   - 選擇此規則是否是預設的規則。您所建立的第一個規則會自動設定為預設的規則。預設規則會自動套用到使用此原則之網站上的所有文件庫。
     
-![新增刪除規則頁面](media/IP-New-deletion-rule.png)
+![新增刪除規則頁面](../media/IP-New-deletion-rule.png)
   
 7. 按一下 [儲存]****。
     
@@ -143,7 +143,7 @@ ms.locfileid: "41596230"
     > [!NOTE]
     > 如果您刪除規則，但原則中並未包含預設規則，則原則中的規則都不會受到影響，也就是說，沒有文件會遭到刪除。 
   
-![確認從原則移除規則訊息](media/IP-Remove-rule-from-policy-message.png)
+![確認從原則移除規則訊息](../media/IP-Remove-rule-from-policy-message.png)
   
 ## <a name="assign-the-document-deletion-policy-to-a-site-collection-template"></a>將文件刪除原則指派至網站集合範本。
 
@@ -155,7 +155,7 @@ ms.locfileid: "41596230"
     
 2. 選擇 [範本的原則指派]。
     
-    ![指派原則給範本選項](media/IP-Policy-Assignments-for-Templates-option.png)
+    ![指派原則給範本選項](../media/IP-Policy-Assignments-for-Templates-option.png)
   
 3. 選擇 **[新增項目]**。
     
@@ -168,7 +168,7 @@ ms.locfileid: "41596230"
     > [!NOTE]
     > 當您將原則指派至網站集合範本，此原則會套用到範本下現有的網站集合以及未來建立的網站集合。 
   
-![顯示 OneDrive 選項的 [選擇範本] 頁面](media/IP-Choose-a-template.png)
+![顯示 OneDrive 選項的 [選擇範本] 頁面](../media/IP-Choose-a-template.png)
   
 5. 按一下 [儲存]****。
     
@@ -177,7 +177,7 @@ ms.locfileid: "41596230"
   
 6. 選取 **[管理指派的原則]**，選擇您要指派的原則，然後選擇是否設定為預設原則。 如果您設定一個預設原則，所有套用此原則的網站都會自動執行此原則，網站擁有者不需要進行任何動作。
     
-    ![新增和管理原則頁面](media/IP-Add-and-manage-policies-page.png)
+    ![新增和管理原則頁面](../media/IP-Add-and-manage-policies-page.png)
   
 7. 按一下 [儲存]****。
     
@@ -197,7 +197,7 @@ ms.locfileid: "41596230"
     
 2. 選擇 [網站集合的原則指派]。
     
-    ![網站集合的原則指派選項](media/IP-Policy-Assignments-for-Site-Collections-option.png)
+    ![網站集合的原則指派選項](../media/IP-Policy-Assignments-for-Site-Collections-option.png)
   
 3. 選擇 [新增項目]****。
     
@@ -206,11 +206,11 @@ ms.locfileid: "41596230"
     > [!NOTE]
     > 每個網站集合只能有一組指派給它的原則。 如果您看到有錯誤訊息顯示，已有原則指派至此網站集合，請選擇 [取消]**** \> [指派至網站集合]**** 並選取一個網站集合來檢視與管理已指派的原則集合。 
   
-![選擇網站集合頁面](media/IP-Choose-a-site-collection-page.png)
+![選擇網站集合頁面](../media/IP-Choose-a-site-collection-page.png)
   
 5. 選取 **[管理指派的原則]**，選擇您要指派的原則，然後選擇是否設定為預設原則。 如果您設定一個預設原則，所有套用此原則的網站都會自動執行此原則，網站擁有者不需要進行任何動作。
     
-    ![新增和管理原則頁面](media/IP-Add-and-manage-policies-page.png)
+    ![新增和管理原則頁面](../media/IP-Add-and-manage-policies-page.png)
   
 6. 按一下 [儲存]****。
     
@@ -230,7 +230,7 @@ ms.locfileid: "41596230"
     
 3. 選取指派項目，然後按一下 [刪除項目]****。
     
-    ![原則指派的刪除項目命令](media/IP-Delete-policy-assignment.png)
+    ![原則指派的刪除項目命令](../media/IP-Delete-policy-assignment.png)
   
 ## <a name="delete-a-policy"></a>刪除原則
 
@@ -240,17 +240,17 @@ ms.locfileid: "41596230"
     
 2. 選擇 [刪除原則]。
     
-    ![刪除原則選項](media/IP-Deletion-Policies-option.png)
+    ![刪除原則選項](../media/IP-Deletion-Policies-option.png)
   
 3. 選取原則。
     
 4. 在功能區上 \> [項目]**** 索引標籤 \> [移除原則]****。
     
-    ![功能區上的移除原則按鈕](media/IP-Remove-Policy-button-on-Ribbon.png)
+    ![功能區上的移除原則按鈕](../media/IP-Remove-Policy-button-on-Ribbon.png)
   
 5. 如果原則正在使用中，系統會詢問您是否要移除所有正在使用中之網站集合的原則。 如果確定，請選擇 [確定]****。
     
-    ![刪除原則確認訊息](media/IP-Delete-policy-confirmation.png)
+    ![刪除原則確認訊息](../media/IP-Delete-policy-confirmation.png)
   
 ## <a name="see-also"></a>另請參閱
 

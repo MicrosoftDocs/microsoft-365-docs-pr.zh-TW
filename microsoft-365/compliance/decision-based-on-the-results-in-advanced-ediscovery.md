@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: '了解如何在 Office 365 進階電子文件探索中的決定] 索引標籤提供資料，可協助您決定正確的檢閱一組案例檔案大小。 '
-ms.openlocfilehash: e60aff12e20a4f8accfbcda958c2d087fd732e88
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b0dd68c294b4555bcf7c9b2cb1c6db455af32e7d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595380"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076242"
 ---
 # <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Office 365 進階電子文件探索中的結果為基礎的決策
 
@@ -31,7 +31,7 @@ ms.locfileid: "41595380"
   
 ## <a name="using-the-decide-tab"></a>使用 [決定] 索引標籤
 
-![決定相關性](media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
+![決定相關性](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
   
 此索引標籤包含下列特性：
   

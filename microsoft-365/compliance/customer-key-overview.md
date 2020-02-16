@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 使用客戶金鑰，您可以控制您組織的加密金鑰，然後設定 [要用來加密存放在 Microsoft 資料中心中的 Office 365。
-ms.openlocfilehash: ee62065542ea50091d73362dd8d05f2e4e7dc337
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: 6fd7167dd46f3a44d97a493830aef19e40f062e8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804771"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076916"
 ---
 # <a name="service-encryption-with-customer-key-in-office-365"></a>使用 Office 365 中的客戶金鑰服務加密
 
@@ -71,11 +71,11 @@ Office 365 提供基準，啟用透過 BitLocker 與分散式金鑰管理員 (DK
 
 #### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>加密 cipher 用來加密金鑰，Exchange Online 和商務用 Skype
 
-![Exchange Online 客戶金鑰加密 cipher](media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Exchange Online 客戶金鑰加密 cipher](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 #### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>加密 cipher 用來加密金鑰，如 SharePoint Online、 商務用 OneDrive 和小組檔案
 
-![SharePoint Online 客戶金鑰加密 cipher](media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![SharePoint Online 客戶金鑰加密 cipher](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>相關文章
 
