@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: 了解如何建立的應用程式管理原則，以及保護 Windows 10 裝置上的工作檔案。
-ms.openlocfilehash: 703f63fc1c90966eb8412886e82670af3e9d6f62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: eb9c5465bf7376efa95162cd39be3f1c6840a3e4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593529"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064993"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>設定 Windows 10 裝置的應用程式保護設定
 
@@ -60,11 +60,11 @@ ms.locfileid: "41593529"
     
     根據預設，工作檔案加密所使用的祕密金鑰會儲存在裝置中，且與使用者設定檔關聯。 只有該使用者可以開啟並解密該檔案。 不過，如果裝置遺失或是使用者遭到移除，檔案就會一直停留在加密狀態。 系統管理員可以使用資料修復代理 (DRA) 憑證來解密該檔案。
     
-    ![Browse to Data Recovery Agent certificate.](media/7d7d664f-b72f-4293-a3e7-d0fa7371366c.png)
+    ![Browse to Data Recovery Agent certificate.](../media/7d7d664f-b72f-4293-a3e7-d0fa7371366c.png)
   
 10. 如果您想要新增其他網域或 SharePoint Online 的位置，以確保所有列出的應用程式中的檔案會受到保護，請展開 [**保護其他網路及雲端位置**]。 如果您需要為任何欄位輸入多個項目，請在每個項目之間插入分號 (;)。
     
-    ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
+    ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](../media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
   
 11. 下一步] 決定**人員會收到這些設定？** 如果您不想要使用預設**的所有使用者**安全性] 群組中，選擇 [**變更**] 中，選擇會收到這些設定的安全性群組\>**選取**。
     

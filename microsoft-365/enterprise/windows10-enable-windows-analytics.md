@@ -12,16 +12,16 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 964756a1fadba89f644a0d04c1d35d2945b78c6c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9a53759eafbedc6b48d2a6266b4b52777112941d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602870"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085562"
 ---
 # <a name="step-4-monitor-device-health-and-compliance"></a>步驟 4：監控裝置健全狀況和合規性
 
-![階段 3：Windows 10 企業版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![階段 3：Windows 10 企業版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows Analytics 使用診斷資料提供豐富、 可採取動作的資訊可協助您深入了解深層作業效率與您的環境中的 Windows 10 裝置健全狀況情形。
 
@@ -35,4 +35,4 @@ Windows Analytics 裝置健全狀況功能可提供協助偵測並修復問題�
 
 |||
 |:-------|:-----|
-|![步驟 5](./media/stepnumbers/Step5.png)| [部署 Windows 10 企業版安全性功能](windows10-enable-security-features.md) |
+|![步驟 5](../media/stepnumbers/Step5.png)| [部署 Windows 10 企業版安全性功能](windows10-enable-security-features.md) |

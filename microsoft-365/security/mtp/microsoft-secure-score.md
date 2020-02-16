@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ec659a939064d34d3e0cc078a90cd343e495ae58
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 6a0caa80d89ad40c3a2e2b0caa55c8dc2027a06d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957368"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087258"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -97,7 +97,7 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 
 在 [Microsoft 安全分數概觀] 頁面中，您可以看到點分割的方式這些群組與何種點可用之間。 [概觀] 頁面上也是以取得總分基準比較，與您安全分數的歷史趨勢的全面檢視的位置，並可以採取來改善您的分數的改進動作的優先順序。
 
-![安全分數首頁](../media/secure-score/homepage-original.png)
+![安全分數首頁](../../media/secure-score/homepage-original.png)
 *圖 1: Microsoft 安全分數概觀] 頁面上*
 
 ## <a name="take-action-to-improve-your-score"></a>採取動作來改善您的分數
@@ -122,7 +122,7 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 
 4. 因為改進巨集指令會要求您定期檢閱您的環境以取得，並保留點的一部分，請選取 [**檢閱**]。 例如，信箱轉寄規則應檢閱以確定資料尚未進行挾帶出去，從您的網路以每週為基礎。 您不需要進行任何變更，但需要要執行巨集指令。 若您定期檢閱規則時，您會收到資料點。 如果不是，減少分數。
 
-![安全分數改進巨集指令範例](../media/secure-score/secure-score1x450.png) ![安全分數檢閱改進巨集指令範例](../media/secure-score/secure-score2x450.png)
+![安全分數改進巨集指令範例](../../media/secure-score/secure-score1x450.png) ![安全分數檢閱改進巨集指令範例](../../media/secure-score/secure-score2x450.png)
 
 *圖表 2 & 3： 改進巨集指令延伸顯示*
 
@@ -140,7 +140,7 @@ Microsoft 安全分數是數字摘要根據系統設定、 使用者行為及其
 
 ### <a name="removed-not-scored-improvement-actions"></a>已移除 「 不計分 」 改進動作
 
-之一的安全分數原則是分數應依照標準化預定且更容易與相關。 具有不是可以測量或可採取行動的改進動作具有已造成混淆。 一個 Microsoft 安全分數僅合理時的每個建議有清除影響分數。 不計分改進動作不是可以測量的。  
+之一的安全分數原則是分數應依照標準化預定且更容易與相關。 具有不是可以測量或可採取行動的改進動作具有已造成混淆。 Microsoft 安全分數僅合理時的每個建議有清除影響分數。 不計分改進動作不是可以測量的。  
 
 基於這些理由，已被移除已不會被記錄的所有改進動作。 在您的組件上不需要採取任何動作。
 
@@ -210,11 +210,7 @@ Microsoft 安全分數是數字摘要根據系統設定、 使用者行為及其
 
 之一的安全分數原則是分數應依照標準化預定且更容易與相關。 具有不是可以測量或可採取行動的改進動作具有已造成混淆。 一個 Microsoft 安全分數僅合理時的每個建議有清除影響分數。 檢閱改進動作不會測量至其他改進動作為相同的標準。  
 
-基於這些理由，將會暫時移除所有需要檢閱頻率的改進動作。 在您的組件上不需要採取任何動作。
-
-### <a name="simplification-of-the-point-system"></a>簡化的點系統
-
-若要跨多個體驗標準化點，每個安全分數改進巨集指令點總計會更新為 10 點值得或更少。 視需要在我們今天有的安全性控制和我們將在未來新增的探索寬口氣是更一致。 雖然這是重大變更，您會看到以點合計放置會有不會變更您的安全性狀態。  
+基於這些理由，將會暫時移除所有需要檢閱頻率的改進動作。 在您的組件上不需要採取任何動作。 
 
 ### <a name="preview-features"></a>預覽功能
 
@@ -225,6 +221,7 @@ Microsoft 安全分數是數字摘要根據系統設定、 使用者行為及其
 * 更有效率的追蹤和監控分數衰退
 * 篩選、 標記、 搜尋及群組改進動作
 * 管理向您未來的目標，使用分數估算和計劃的動作
+* 簡化的點為單位系統
 * 還有更多 ！
 
 ## <a name="we-want-to-hear-from-you"></a>我們想要從您聽到

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 586b887c9c5c1e4c19623c89dd08ed62ba0d4bb2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: acc515d046b1ebd2ff7c5dd9c52b363fe99f0b9e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600340"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087457"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解進階搜捕查詢語言
 
@@ -53,7 +53,7 @@ DeviceProcessEvents
 
 這是它在進階搜捕中看起來的樣子。
 
-![Microsoft Defender ATP 進階搜捕查詢的影像](../images/advanced-hunting-query-example.png)
+![Microsoft Defender ATP 進階搜捕查詢的影像](../../media/advanced-hunting-query-example.png)
 
 查詢會從描述其用途的簡短註解開始。 如果您後來決定要儲存查詢，並與組織中的其他人共用，這會有所幫助。
 
@@ -130,7 +130,7 @@ DeviceProcessEvents
 
 [開始使用]**** 區段提供一些使用常用運算子的簡單查詢。 嘗試執行這些查詢，並對它們進行些微修改。
 
-![進階搜捕視窗的影像](../images/advanced-hunting-get-started.png)
+![進階搜捕視窗的影像](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
 >除了基本查詢範例以外，您也可以取得適用於特定威脅搜捕案例的[共用查詢](advanced-hunting-shared-queries.md)。 探索頁面左側或 GitHub 查詢儲存庫的共用查詢。

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: a0b86240e09838ff290bb9c3b4b53f5cce3e2995
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5f31c9cb5272248ae8250f73d054ca599b83edc2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600120"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083776"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>移至重要訊息中心檢視補救動作
 
@@ -34,7 +34,7 @@ ms.locfileid: "41600120"
 
 ## <a name="a-single-pane-of-glass-experience"></a>「單一玻璃窗」體驗
 
-![重要訊息中心](../images/air-actioncenter.png)
+![重要訊息中心](../../media/air-actioncenter.png)
 
 使用重要訊息中心查看組織的裝置和信箱目前和過去的調查結果。 根據威脅類型和[產生的結果](mtp-autoir-results.md#remediation-actions-following-automated-investigation)，補救動作會自動進行，或由貴組織的安全性作業小組核准進行。 所有補救動作 (無論是等待核准或已核准) 皆合併在重要訊息中心。 
 
@@ -65,9 +65,9 @@ ms.locfileid: "41600120"
 
     - **[歷史記錄]** 索引標籤會列出過去所做的調查和補救動作。 您可以檢視過去一天、一周、一個月或六個月的資料。
 
-4. 若只要顯示需要查看的欄，請選取 **[自訂欄]**。<br/>![Microsoft 威脅防護中的重要訊息中心](../images/mtp-action-center.png)
+4. 若只要顯示需要查看的欄，請選取 **[自訂欄]**。<br/>![Microsoft 威脅防護中的重要訊息中心](../../media/mtp-action-center.png)
 
-5. 選取清單中的項目以檢視更多有關某調查的詳細資料。 調查詳細資料檢視隨即開啟。<br/>![調查詳細資料](../images/mtp-air-investdetails.png)
+5. 選取清單中的項目以檢視更多有關某調查的詳細資料。 調查詳細資料檢視隨即開啟。<br/>![調查詳細資料](../../media/mtp-air-investdetails.png)
 
     - 如果調查與電子郵件內容相關 (例如，實體為信箱)，便會在 Office 365 安全性與合規性中心 ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)) 開啟調查詳細資料。 
 

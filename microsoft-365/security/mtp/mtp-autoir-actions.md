@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 77770904454228f595e1772e5f6927f943af8294
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fa572e71ec5b6613e5db7751e0341ea94fb9bf5f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600110"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087535"
 ---
 # <a name="approve-or-reject-pending-actions-from-automated-investigations"></a>核准或拒絕來自自動化調查的擱置中的動作
 
@@ -54,11 +54,11 @@ ms.locfileid: "41600110"
 
     - 如果您選取 [調查編號]**** 資料行中的項目，調查詳細資料頁面會隨即開啟。 您可以在該處檢視調查結果，然後核准或拒絕建議的動作。
  
-    - 如果您選取清單中的資料列，就會開啟飛出視窗，您可以在此檢視該項目的相關資訊。 <br/>![核准或拒絕動作](../images/air-actioncenter-itemselected.png)<br/>使用連結來檢視相關聯的警示或調查，並核准或拒絕動作。
+    - 如果您選取清單中的資料列，就會開啟飛出視窗，您可以在此檢視該項目的相關資訊。 <br/>![核准或拒絕動作](../../media/air-actioncenter-itemselected.png)<br/>使用連結來檢視相關聯的警示或調查，並核准或拒絕動作。
 
 ## <a name="review-a-pending-action-in-the-investigation-details-view"></a>在調查詳細資料檢視中檢閱擱置中的動作
 
-![調查詳細資料](../images/mtp-air-investdetails.png)
+![調查詳細資料](../../media/mtp-air-investdetails.png)
 
 1. 在 [調查詳細資料][](mtp-autoir-results.md) 頁面上，選取 [擱置中的動作]**** (或 [動作]****) 索引標籤。此處會列出核准擱置中的項目。
 

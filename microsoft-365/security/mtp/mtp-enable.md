@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: a85680e323c7a8fba6f2d74d5cc00c58c2013d23
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 8f966060ebc9a30166647b397b93f2b45356df74
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662049"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083718"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>開啟 Microsoft 威脅防護
 
@@ -45,7 +45,7 @@ Microsoft 威脅防護彙總資料從各種的整合式服務。 它會處理程
 
 開啟服務之前，請在 Microsoft 365 安全性中心 ([security.microsoft.com](https://security.microsoft.com)) 不會顯示**事件**和**重要訊息中心**選項功能窗格中。
 
-![Microsoft 365 安全性中心沒有 Microsoft 威脅防護功能的導覽窗格影像](../images/mtp-off.png)
+![Microsoft 365 安全性中心沒有 Microsoft 威脅防護功能的導覽窗格影像](../../media/mtp-off.png)
 *Microsoft 365 安全中心與 Microsoft Threat Protection 關閉*
 
 若要開啟 Microsoft 威脅防護，請選取 [在功能窗格中的**設定**。 在**[設定] 頁面](https://security.microsoft.com/settings)** 上，移至**Microsoft 威脅防護** > **加入 / 退出**。
@@ -65,7 +65,7 @@ Microsoft 威脅防護彙總資料從各種的整合式服務。 它會處理程
 - 用於管理[自動化調查和回應](mtp-autoir.md)的重要訊息中心
 - 現有 [搜捕]**** 頁面的[進階搜捕](advanced-hunting-overview.md)功能
 
-![Microsoft 365 安全性中心與 Microsoft Threat Protection 功能的導覽窗格影像](../images/mtp-on.png)
+![Microsoft 365 安全性中心與 Microsoft Threat Protection 功能的導覽窗格影像](../../media/mtp-on.png)
 *Microsoft 365 安全性中心事件管理和其他 Microsoft 威脅防護功能*
 
 ### <a name="getting-azure-atp-data"></a>取得 Azure ATP 資料

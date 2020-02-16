@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3fe8a390e92e56a98d16a4cbc647a74b38c248ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1039232750e52b3c03cbe7c8190498382c795708
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600190"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087566"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft 安全分數 （預覽）
 
@@ -79,7 +79,7 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 * 服務管理員
 * 安全性讀取者
 * 安全性操作員
-* 全域的讀取者
+* 全域讀取者
 
 ### <a name="graph-api"></a>Graph API
 
@@ -100,7 +100,7 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 
 在 [Microsoft 安全分數概觀] 頁面中，您可以看到點分割的方式這些群組與何種點可用之間。 [概觀] 頁面上也是以取得總分基準比較，與您安全分數的歷史趨勢的全面檢視的位置，並可以採取來改善您的分數的改進動作的優先順序。
 
-![安全分數首頁](../media/secure-score/secure-score-homepage.png)
+![安全分數首頁](../../media/secure-score/secure-score-homepage.png)
 *圖 1: Microsoft 安全分數概觀] 頁面上*
 
 ## <a name="take-action-to-improve-your-score"></a>採取動作來改善您的分數
@@ -115,7 +115,7 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 
 當您選取特定的改進巨集指令時，整頁彈出式視窗隨即出現。  
 
-![改進巨集指令彈出式範例](../media/secure-score/secure-score-improvement-action.png)
+![改進巨集指令彈出式範例](../../media/secure-score/secure-score-improvement-action.png)
 *圖 2： 改進巨集指令彈出式範例*
 
 若要完成此動作，您有幾個選項：
@@ -131,7 +131,7 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
     * **風險接受**— 安全性應該一律平衡與可用性，並不是每個建議適用於您的環境。 時，這種情況，您可以選擇要接受風險; 或是其餘的風險，並不制訂的改進巨集指令。 您不會提供任何點，但巨集指令不再是可見的改進動作清單中。 您可以檢視歷程記錄中的此巨集指令或復原在任何時間。
     * **透過協力廠商解決**— 由協力廠商應用程式或軟體已處理過的改進巨集指令。 讓您的成績更妥善地反映您的整體安全性狀態，您將能夠值得了巨集指令的點。 如果協力廠商不再涵蓋控制項，您可以選擇另一個狀態。 請記住，Microsoft 就會有任何可見性實作的完整性，如果改進巨集指令會標示為透過協力廠商解決
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 
 任何需要可獲得授權或需要解決的改進巨集指令先完成的動作，將會列出實作] 區段中的必要條件。 請確定您在您完成的改進巨集指令的授權中有足夠的基座，而且這些授權可套用至所需的使用者。  
 

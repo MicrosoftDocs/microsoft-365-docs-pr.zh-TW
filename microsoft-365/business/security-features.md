@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解 Microsoft 365 商務版會隨附的安全性功能。
-ms.openlocfilehash: 0e1823374ec1843b6caa3f080393ca013302bf72
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e5f67d70c5a8f22e95b60a229d68ae12574d0036
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593418"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064788"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Microsoft 365 商務版安全性與合規性功能
 
@@ -35,7 +35,7 @@ Microsoft 365 商務版提供簡化的安全性功能，以協助保護您在電
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Microsoft 365 商務版系統管理中心的安全性功能
 
-[![[標籤] 可讓您知道系統管理中心正在變更，您可以在 aka.ms/aboutM365preview 取得更多詳細資料。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![[標籤] 可讓您知道系統管理中心正在變更，您可以在 aka.ms/aboutM365preview 取得更多詳細資料。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 您可以管理許多 Microsoft 365 商務版安全性功能，在系統管理中心中，可讓您簡化的方式，以開啟這些功能，開啟或關閉。 在 [系統管理中心中，您可以執行下列動作：
   
@@ -123,6 +123,6 @@ Microsoft 365 商務版中的進階的功能可協助您保護網路威脅貴公
     
 2. 在左側導覽中，找出**系統管理中心**並加以展開。 
     
-    ![在 Microsoft 365 系統管理中心左側導覽中，選擇 [系統管理中心]。](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
+    ![在 Microsoft 365 系統管理中心左側導覽中，選擇 [系統管理中心]。](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
 3. 選擇 [**安全性&amp;規範**移至安全性&amp;合規性中心。

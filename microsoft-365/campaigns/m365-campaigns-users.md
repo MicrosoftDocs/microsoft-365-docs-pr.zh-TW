@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 365 的行銷活動會如何影響您的使用者。
-ms.openlocfilehash: 7c510de861758da3da2c86a6804a58de6d4e8030
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a7ec8d6c9ffcf70071332027fde5d2aa182700d0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594754"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080502"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>行銷活動適用於 Microsoft 365 如何影響您的使用者
 
 行銷活動適用於 Microsoft 365 讓更難駭客得以存取您的環境。 缺點是您的使用者將需要留意如何配合這更安全的環境。 我們理解一點的額外耐心為必要，但它是值得您維持組織受到保護。
 
-![圖例，概括重點從下面、 Iphone 的 Android 裝置，Mac，Windows 10、 共用與主要人員](media/M365-democracy-Users_700px.png)
+![圖例，概括重點從下面、 Iphone 的 Android 裝置，Mac，Windows 10、 共用與主要人員](../media/M365-democracy-Users_700px.png)
 
 ## <a name="use-secure-email-practices"></a>使用安全的電子郵件的作法
 所有使用者應該注意，並使用這些電子郵件作法來協助保護其電子郵件安全性：

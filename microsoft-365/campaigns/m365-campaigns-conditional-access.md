@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何需要 MFA 和 Microsoft 365 商務版設定條件式存取原則。
-ms.openlocfilehash: b65cccf9931da4701157f26ffece7a7c90689094
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7898ded24bb66545b903ab98f3c7aa78d95860f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594858"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056403"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>需要多重要素驗證和設定條件式存取原則
 
@@ -58,13 +58,13 @@ Microsoft 建議您啟用所有的這些基準原則。 啟用這些原則之後
 2. 在 [設定] 頁面上選擇 [**產生登入更安全**卡中的**檢視**。
 
 
-    ![請登入更安全的卡片。](media/setupmfa.png)
+    ![請登入更安全的卡片。](../media/setupmfa.png)
 3. 在進行登入更安全] 頁面上，選擇 [**開始**]。
  
 4. 在 [加強登入安全性] 窗格中，選取 [**需要系統管理員適用的多重要素驗證**，並**要求使用者註冊 multi-factor authentication 並封鎖存取，如果偵測到風險**] 旁的核取方塊。
     請務必從 MFA 需求**尋找使用者**] 方塊中排除[緊急](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account)或 「 中斷玻璃 「 系統管理員帳戶。
     
-    ![加強登入安全性] 頁面。](media/requiremfa.png)
+    ![加強登入安全性] 頁面。](../media/requiremfa.png)
 
 5. 選擇 [上] 頁面底部的 [**建立原則**。
 
@@ -74,7 +74,7 @@ Microsoft 建議您啟用所有的這些基準原則。 啟用這些原則之後
     
     比較基準原則會列出在頁面上，並且您所見，**需要 MFA 的系統管理員**和**使用者保護**已獲您完成中[需要 MFA](#require-mfa)的步驟之後。
 
-    ![] 頁面會列出基準條件式存取原則。](media/casettings.png)
+    ![] 頁面會列出基準條件式存取原則。](../media/casettings.png)
 2. 請參閱下列的特定指示，針對每個原則：
 
     - [系統管理員需要 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)

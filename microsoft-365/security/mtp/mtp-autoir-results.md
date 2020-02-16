@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 208cbb49afc2f4520fa44a4ef283194bcaff22be
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 08aa1f0c252d931ab1abf078b1c0cfcf7d9b43a2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600090"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083748"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>檢視自動調查的詳細資料和結果
 
@@ -34,7 +34,7 @@ ms.locfileid: "41600090"
 
 當您在 Microsoft 威脅防護中進行自動調查時，可在與自動調查處理期間以及處理完成後取得該調查的詳細資料。 如果您擁有[必要權限](mtp-action-center.md#required-permissions-for-action-center-tasks)，您可以在調查詳細資料檢視中查看這些詳細資料。 調查詳細資料檢視可提供您最新的狀態，以及核准任何待核准動作的能力。 
 
-![調查詳細資料](../images/mtp-air-investdetails.png)
+![調查詳細資料](../../media/mtp-air-investdetails.png)
 
 ## <a name="open-the-investigation-details-view"></a>開啟調查詳細資料檢視
 
@@ -60,7 +60,7 @@ ms.locfileid: "41600090"
 
 2. 在功能窗格中，選擇 [事件]****。 
 
-3. 選取清單中的項目以開啟事件詳細資料檢視。<br/>![事件詳細資料](../images/mtp-incidentdetails-tabs.png)
+3. 選取清單中的項目以開啟事件詳細資料檢視。<br/>![事件詳細資料](../../media/mtp-incidentdetails-tabs.png)
 
 4. 在 [調查]**** 索引標籤上，選取清單中的調查。
 
@@ -68,7 +68,7 @@ ms.locfileid: "41600090"
 
 使用調查詳細資料檢視，查看與調查相關的過去、目前和待核准的活動。 調查詳細資料檢視類似以下影像：
 
-![調查詳細資料](../images/mtp-air-investdetails.png)
+![調查詳細資料](../../media/mtp-air-investdetails.png)
 
 在調查詳細資料檢視中，您可以在 [調查圖表]****、[警示]****、[裝置]****、[身分識別]****、[重要結果]****、[實體]****、**[記錄]**，以及 [待核准的動作]**** 索引標籤上查看資訊，如下表所述。
 

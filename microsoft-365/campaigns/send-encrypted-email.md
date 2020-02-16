@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何傳送加密的電子郵件使用 Outlook。
-ms.openlocfilehash: 1a450a9891d47a136798432fdb919349fb82e097
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 559998326caedaf3352741ad9083940f79b1a614
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594734"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080453"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>加密或標籤機密電子郵件
 
@@ -43,7 +43,7 @@ ms.locfileid: "41594734"
 - **加密：** 您可以加密您的電子郵件保護的電子郵件中的資訊私密性。 當您將加密的電子郵件訊息時，它會從可讀取的純文字轉換成亂碼的 cypher 文字。 只有收件者具有比對的公開金鑰用來加密郵件的私密金鑰可解密讀取的郵件。 任何收件者，而不相對應之私密金鑰，不過，會看到無法解讀文字。 您的系統管理員可以定義規則以自動加密符合特定準則的郵件。 比方說，您的系統管理員可以建立傳送組織外的所有郵件都加密的規則或涵蓋特定單字或片語的所有郵件。 任何加密的郵件將會自動套用。
 - **敏感度標籤：** 您可以套用到您的檔案和電子郵件，讓它們與您的行銷活動資訊保護原則相容的敏感度標籤也可以設定您的行銷活動。 當您設定標籤時，標籤保存與您的電子郵件，即使它傳送-例如，藉由讓它成為您的郵件標頭。
 
-![含有圖說文字的標籤和加密的電子郵件的圖表](media/m365-campaign-email-encrypt.png)
+![含有圖說文字的標籤和加密的電子郵件的圖表](../media/m365-campaign-email-encrypt.png)
 
 
 ## <a name="set-it-up"></a>進行設定

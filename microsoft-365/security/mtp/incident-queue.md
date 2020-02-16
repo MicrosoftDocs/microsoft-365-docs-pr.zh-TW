@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5ad616deb8717772a68b01147ed858f8e7f6ed7b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 90f7aaf7eb4425dadeb27699654656c86d2b6263
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600250"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087295"
 ---
 # <a name="prioritize-incidents-in-microsoft-threat-protection"></a>設定 Microsoft 威脅防護事件的優先順序
 
@@ -39,7 +39,7 @@ Microsoft 威脅防護會套用相關分析，並將來自不同產品的所有�
 **事件佇列**顯示由各裝置、使用者和信箱標示的事件集合。 可協助您設定事件優先順序及制定明智的網路安全回應決策。
 
 
-![事件佇列的影像](../images/incidents-queue.png) 
+![事件佇列的影像](../../media/incidents-queue.png) 
 
 根據預設，Microsoft 365 安全中心中的佇列會顯示最近 30 天內發生的事件，最新的事件會顯示在清單頂端，以協助您先查看最新的事件。
 
