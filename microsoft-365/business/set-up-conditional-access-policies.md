@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何為 Microsoft 365 行銷活動設定條件式存取原則。
-ms.openlocfilehash: 335fbd7e771b1595e1846529daed76e5ddd3a8f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1ef90bd77da43ded624d85cef9c7a33beec74345
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593378"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064596"
 ---
 # <a name="set-up-conditional-access-policies"></a>設定條件式存取原則
 
@@ -52,7 +52,7 @@ Microsoft 建議您啟用所有的這些基準原則。 啟用這些原則之後
 1. 移至[Azure 入口網站](https://portal.azure.com)，然後再瀏覽至 [ **Azure Active Directory** \> **條件式存取**。
     
     [比較基準原則會列在 [] 頁面上。 <br/> <br/>
-    ![] 頁面會列出基準條件式存取原則。](media/baslinepolicies.png)
+    ![] 頁面會列出基準條件式存取原則。](../media/baslinepolicies.png)
 1. 請參閱下列的特定指示，針對每個原則：
 
   - [系統管理員需要 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)

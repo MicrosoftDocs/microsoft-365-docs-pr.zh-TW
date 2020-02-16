@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 行銷活動適用於 Microsoft 365 的安裝程式概觀
-ms.openlocfilehash: cca8866241a3759c022a362d39f7b208dff72580
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d2dac24488e5d29b0e888ba09f5359cba6b1f614
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594171"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080476"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>設定 Microsoft 365 的行銷活動
 
@@ -38,7 +38,7 @@ ms.locfileid: "41594171"
 ## <a name="admins-set-up-microsoft-365-for-campaigns"></a>系統管理員： 設定 Microsoft 365 的行銷活動
 下圖說明系統管理員如何設定 Microsoft 365 的行銷活動。
 
-![若要設定 Microsoft 365 的行銷活動的步驟](media/M365-democracy-SetUpProcess.png)
+![若要設定 Microsoft 365 的行銷活動的步驟](../media/M365-democracy-SetUpProcess.png)
 
 如限定的特殊價格的行銷活動、 開始藉由[要求來自 Microsoft 的 invite](https://m365forcampaigns.microsoft.com/)，然後 [[註冊 Microsoft 365 的行銷活動](m365-campaigns-sign-up.md)。 完成安裝程式，來設定核心設定[執行設定精靈](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)。
 
@@ -51,7 +51,7 @@ ms.locfileid: "41594171"
  
 使用者將需要花幾分鐘，才能使用此環境中設定裝置。 為您主要的使用者 （那些身為最高值目標的駭客），您可以設定和預先設定新的裝置。 這可協助他們開始當他們使用其 Microsoft 365 認證登入。 
 
-![使用者裝置安裝程序](media/m365-democracy-user-device-setup.png)
+![使用者裝置安裝程序](../media/m365-democracy-user-device-setup.png)
   
 若要設定使用者裝置： 
 1. 每個使用者[設定他們的行動裝置](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)。 

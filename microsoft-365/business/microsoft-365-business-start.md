@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何設定 Microsoft 365 商務版。
-ms.openlocfilehash: a353e39b824bae702fa015b0c7d3dd7e6416454c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5491486c2bf8da1ee38fcd986d5ecd682d57c82e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593714"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065597"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>開始使用 Microsoft 365 商務版
 
@@ -57,7 +57,7 @@ Microsoft 365 商務版是最多 300 個授權。 如果您需要更多授權，
   
 下圖說明系統管理員如何設定 Microsoft 365 商務版。 此外，也描述準備 Windows 電腦以設定 Microsoft 365 商務版的步驟。 您也可以透過[Windows AutoPilot](add-autopilot-devices-and-profile.md)在 Microsoft 365 商務版系統管理中心中新增新的裝置。 您可以使用 AutoPilot 來設定和預先設定新的裝置，以便它們是用於工作生產就緒，只要使用者登入他們的 Microsoft 365 商務版認證。
   
-![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
+![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
 請觀看此影片的 Microsoft 365 商務版安裝程式的概觀。<br><br>
 
@@ -105,7 +105,7 @@ Microsoft 365 商務版是最多 300 個授權。 如果您需要更多授權，
     
 - Microsoft 365 商務版系統管理員，您可以存取我們的客戶支援小組：**[商務版產品-系統管理說明連絡支援部門](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 商務版文件和資源](https://go.microsoft.com/fwlink/p/?linkid=853701)
   

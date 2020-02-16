@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: 了解如何自動在 Windows 10 電腦上安裝 32 位元 Office app，並讓這些更新。
-ms.openlocfilehash: fa5b2ce1852ebdb1e76c1fa844793fee56af3d68
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0f8cd7df49ad627b190fad6737ec95a6d64d99d0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593612"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065092"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-business"></a>透過 Microsoft 365 商務版準備 Office 用戶端部署
 
@@ -44,7 +44,7 @@ ms.locfileid: "41593612"
     
 若要判斷是否有按一下-隨選即用版本的 Office，在任何 Office 應用程式移至 [**檔案** \> **帳戶**（在 Outlook 中的**Office 帳戶**）。 如果您看到**Office 更新**，如下圖所示，安裝已完成使用 Click-隨選即用。 
   
-![Screenshot of Office updates in Office app Account](media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
+![Screenshot of Office updates in Office app Account](../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
   
  **誰福利由這項功能**
   

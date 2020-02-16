@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性原則和建議現代化貴組織中的安全性。
-ms.openlocfilehash: 2c08570165f893950dc2588ab33b45be36a3816d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 322ced9ae3a565e07de372d7775c176ba647301b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599690"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086542"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>首席資訊安全長研討會模組 4a： 威脅保護策略
 
 瀏覽有關威脅防護、 安全性演變、 策略和安全性隨身攜帶地圖服務金鑰檢討。
 
-- 下載 PDF 摘要：[模組 4a： 威脅保護策略](../media/ciso-workshop-4a-threat-protection.pdf)
+- 下載 PDF 摘要：[模組 4a： 威脅保護策略](../../media/ciso-workshop-4a-threat-protection.pdf)
 - 下載 PowerPoint 摘要：[模組 4a： 威脅保護策略](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4a-threat-protection.pptx)
 
 ## <a name="introduction-threat-protection-strategy-437"></a>簡介： 威脅保護策略 (4:37)

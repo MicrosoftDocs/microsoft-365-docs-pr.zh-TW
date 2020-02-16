@@ -16,12 +16,12 @@ ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
 description: 當電子郵件通過垃圾郵件篩選會指派的垃圾郵件計分。 該分數是對應至個別的垃圾郵件信賴等級 (SCL) 分級，並在 X 標頭中加上戳記。 服務採取動作時取決於垃圾郵件信賴解譯的 SCL 分級的郵件。 下表顯示由篩選以及對每個分級的輸入郵件採取的預設動作如何解譯不同 SCL 分級。
-ms.openlocfilehash: c40317833ea61424dab60ac858c2071f7891c4f8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 65b6f51199e6d8f6ce17a05b28c5bad15d9d1760
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598310"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084755"
 ---
 # <a name="spam-confidence-levels"></a>垃圾郵件信賴等級
 
@@ -39,6 +39,6 @@ ms.locfileid: "41598310"
   
 ||
 |:-----|
-|![LinkedIn Learning 的短圖示](../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **初次使用 Office 365？**         探索 LinkedIn Learning 提供的 **Office 365 admins and IT pros** 免費影片課程。|
+|![LinkedIn Learning 的短圖示](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **初次使用 Office 365？**         探索 LinkedIn Learning 提供的 **Office 365 admins and IT pros** 免費影片課程。|
    
 

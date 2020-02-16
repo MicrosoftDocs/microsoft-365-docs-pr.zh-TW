@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d1ee28bad2728fb3e6c12694625b2c29a65425a2
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: fedd3a98ef176855c4831bbd055522c073c22d7b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260101"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085685"
 ---
 # <a name="work-with-insights"></a>具備深入解析的工作
 
@@ -26,7 +26,7 @@ Microsoft 受管理的電腦會提供租用戶中的 IT 系統管理員可以使
 
 若要存取這些檢視來自 Microsoft 365 系統管理中心，選取**檢視詳細資料****報告**] 區域中：
 
-![與報告] 區域中右上右包括裝置的系統管理中心報告卡片上及 「 檢視詳細資料 」 連結。](images/insights_overview.png)
+![與報告] 區域中右上右包括裝置的系統管理中心報告卡片上及 「 檢視詳細資料 」 連結。](../../media/insights_overview.png)
 
 
 

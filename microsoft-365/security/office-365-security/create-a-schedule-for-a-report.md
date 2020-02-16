@@ -17,12 +17,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: 了解如何設定在 [安全性報表排程&amp;合規性中心。
-ms.openlocfilehash: 743bb0cd71fb4a5c6ce9b875c797ad3ca54d0485
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a7a4d0b6bef3f800a53e4f980ccd689e011a9ea
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599550"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083458"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>建立報表排程安全性&amp;合規性中心
 
@@ -55,7 +55,7 @@ ms.locfileid: "41599550"
     
 3. 在報表的左上角，選擇 [ **+ 建立排程**]。 
     
-    ![若要建立排程](../media/atpfiletypes-createschedule.png)
+    ![若要建立排程](../../media/atpfiletypes-createschedule.png)
 
     (請注意： 並非所有報表都有 [ **+ 建立排程**] 按鈕。)
   
@@ -63,7 +63,7 @@ ms.locfileid: "41599550"
     
 4. 保留預設設定並選擇 [**建立排程**，或選擇 [**自訂排程**。
     
-    ![您可以使用的預設設定，或自訂的報表排程](../media/04fac327-8f73-4711-8319-58c11880fd96.png)
+    ![您可以使用的預設設定，或自訂的報表排程](../../media/04fac327-8f73-4711-8319-58c11880fd96.png)
   
     如果您選擇自訂報表排程，您可以指定報表的頻率、 寄件者的電子郵件地址，以及收件者的電子郵件地址。 
     

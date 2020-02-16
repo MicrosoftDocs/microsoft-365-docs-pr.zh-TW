@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 將貴公司從 Office 365 商務進階版升級至 Microsoft 365 商務版的步驟。
-ms.openlocfilehash: 0732f76e5bd8540e5954bd7ea7b88061326901b5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e17ac2658c7276ba4a77de371847343866815c42
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593672"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065258"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>從 Office 365 商務進階版升級至 Microsoft 365 商務版
 
@@ -51,11 +51,11 @@ ms.locfileid: "41593672"
 1. 登入系統管理中心在<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>。
 2. 移至功能窗格，然後選取 [**帳單** \> **產品 & 服務**。 尋找您的 Office 365 訂閱，然後選取要檢視詳細資料。 
 
-    ![螢幕擷取畫面顯示如何尋找並選取您的訂閱在系統管理中心。](media/FindYourSubscription.png)
+    ![螢幕擷取畫面顯示如何尋找並選取您的訂閱在系統管理中心。](../media/FindYourSubscription.png)
 
 3. 在下一個頁面上，選取 [**升級**]。 
 
-      ![螢幕擷取畫面顯示在系統管理中心中選取 [升級] 的位置。](media/SelectUpgrade.png)
+      ![螢幕擷取畫面顯示在系統管理中心中選取 [升級] 的位置。](../media/SelectUpgrade.png)
 
   > [!NOTE]
   > 如果您看到訊息，指出**的升級您的訂閱不支援與在 Azure Active Directory 群組為基礎的授權**，則可以放心忽略這除非您有非常大型的組織。 組織者選取了此選項會知道他們正在使用群組為基礎的授權。

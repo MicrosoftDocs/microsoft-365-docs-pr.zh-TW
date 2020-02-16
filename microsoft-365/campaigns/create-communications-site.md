@@ -1,5 +1,7 @@
 ---
 title: 建立通訊網站
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 建立您的行銷活動的通訊網站。
-ms.openlocfilehash: e8f7730d1ec407bf24a819df7366d9bedd78d390
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 5c6590ae8e8fbe0dd1cc024c53f3a2a109aa918c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748274"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056368"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>建立您的行銷活動的通訊網站
 
@@ -42,12 +44,12 @@ ms.locfileid: "38748274"
 4. 將活動事件新增至**事件網頁組件**，讓每個人都可以看到接下來什麼。
 5. 新增人員可以使用或**影像圖庫網頁組件**共用的相片。
 
-![需要行銷活動的共同元素的空間與 SharePoint 通訊] 頁面上的圖表](media/m365-democracy-comms-site.png)
+![需要行銷活動的共同元素的空間與 SharePoint 通訊] 頁面上的圖表](../media/m365-democracy-comms-site.png)
 
 ## <a name="infographic-create-a-communications-site-infographic"></a>資訊圖表： 建立通訊網站資訊圖表 
 下列連結以 PowerPoint 和 PDF 可以下載及列印 tabloid 格式 (也稱為 ledger 11 x 17 或 A3)。
 
-[![通訊網站資訊圖表的影像](media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
+[![通訊網站資訊圖表的影像](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
 [PDF](downloads/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsCreateCommunicationSite.pptx)
 

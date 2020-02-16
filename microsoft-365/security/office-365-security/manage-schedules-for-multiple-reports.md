@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: 了解如何檢視、 編輯和管理安全性的報表排程&amp;合規性中心。
-ms.openlocfilehash: 38fd211a20c86fffc564c8b4fbe86e963da7fe05
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5ae6a37a04604ca814348ac42d80a57e3e171b6b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598930"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082865"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>管理多個報表排程安全性&amp;合規性中心
 
@@ -30,7 +30,7 @@ ms.locfileid: "41598930"
 > [!IMPORTANT]
 > 請確定您有必要[權限指派在 Office 365 安全性&amp;合規性中心](permissions-in-the-security-and-compliance-center.md)。 一般而言，Office 365 全域系統管理員、 安全性管理員和安全性讀取者可以存取報告安全性&amp;合規性中心。 
   
-![安全性&amp;合規性中心，選擇 [報告]\>管理排程](../media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
+![安全性&amp;合規性中心，選擇 [報告]\>管理排程](../../media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
 
 1. 移至 [https://protection.office.com](https://protection.office.com) 並登入。 這會帶您前往安全性 & 合規性中心。
 

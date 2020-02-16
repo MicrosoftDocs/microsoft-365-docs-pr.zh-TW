@@ -17,12 +17,12 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用 Office 365 進階威脅防護為貴組織設定封鎖的 URL 清單。 封鎖的 URL 會根據您的 ATP 安全連結原則，套用至電子郵件訊息和 Office 文件。
-ms.openlocfilehash: bb5eb8572aee11be1c4264863b572f014b281985
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5205fbd5ccc873513eed4e367119084516e92bf2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598400"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088085"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>使用 Office 365 ATP 安全連結來設定自訂封鎖的 Url 清單
 
@@ -31,7 +31,7 @@ ms.locfileid: "41598400"
 
 使用 [Office 365 進階威脅防護 ](office-365-atp.md) (ATP)，貴組織即可擁有已封鎖的網站位址 (URL) 自訂清單。 當 URL 遭到封鎖時，按一下封鎖的 URL 連結人員會被帶到[警告頁面](atp-safe-links-warning-pages.md)，類似下列影像： 
   
-![網站已遭封鎖](../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![網站已遭封鎖](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
   
 封鎖的 URL 清單是由貴組織的 Office 365 安全性小組所定義，而該清單適用於組織中受 Office 365 ATP 安全連結原則涵蓋的所有人員。 
   
@@ -58,7 +58,7 @@ ms.locfileid: "41598400"
     
 2. 在左側瀏覽中，選擇 [威脅管理] **** 下方的 [原則] ****\>[安全連結]****。
     
-3. 在 **套用於整個組織的原則**區段中，選取 [預設] ****，然後選擇 [編輯] **** (編輯按鈕類似鉛筆)。<br/>![按一下 [編輯] 已編輯安全連結防護預設原則](../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>這樣做可讓您檢視封鎖的 URL 清單。 一開始您可能沒有任何列出的 URL。<br/>![預設安全連結原則中封鎖的 URL 清單](../media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
+3. 在 **套用於整個組織的原則**區段中，選取 [預設] ****，然後選擇 [編輯] **** (編輯按鈕類似鉛筆)。<br/>![按一下 [編輯] 已編輯安全連結防護預設原則](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>這樣做可讓您檢視封鎖的 URL 清單。 一開始您可能沒有任何列出的 URL。<br/>![預設安全連結原則中封鎖的 URL 清單](../../media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
   
 4. 選取 [輸入有效的 URL] 方塊****，輸入 URL，然後選擇加號 (**+**)。 
 

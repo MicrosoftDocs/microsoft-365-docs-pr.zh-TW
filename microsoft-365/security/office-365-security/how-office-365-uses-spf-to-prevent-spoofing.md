@@ -16,12 +16,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 摘要：本文說明 Office 365 如何在 DNS 中使用寄件者原則架構 (SPF) TXT 記錄，確保目的地電子郵件系統會信任從您的自訂網域傳送的郵件。 這適用於從 Office 365 傳送的外寄郵件。 從 Office 365 傳送到 Office 365 內收件者的郵件一律都會通過 SPF。
-ms.openlocfilehash: f02219b19af592f9ad27ea963cb07a260c09327f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e2863c0b8a66fa511c4ce842dc8026e880594292
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599190"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085989"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 如何使用寄件者原則架構 (SPF) 來防止詐騙
 
@@ -78,7 +78,7 @@ v=spf1 \<IP 位址 #1\> \<IP 位址 #2\> \<IP 位址 #3\> \<強制規則\>
 
 從寄件者到接收者的路徑是直接路徑時，SPF 的效果最好，例如：
 
-![此圖顯示 SPF 如何驗證直接從伺服器傳送至伺服器的電子郵件。](../media/835c20a7-ed4c-49c4-91fe-b8ebb3e452a1.jpg)
+![此圖顯示 SPF 如何驗證直接從伺服器傳送至伺服器的電子郵件。](../../media/835c20a7-ed4c-49c4-91fe-b8ebb3e452a1.jpg)
 
 當 woodgrovebank.com 收到訊息時，如果 IP 位址 #1 位於 contoso.com 的 SPF TXT 記錄中，則訊息會通過 SPF 檢查並經過驗證。
 
@@ -87,7 +87,7 @@ v=spf1 \<IP 位址 #1\> \<IP 位址 #2\> \<IP 位址 #3\> \<強制規則\>
 
 假設網路釣魚者找到欺騙 contoso.com 的方法：
 
-![此圖顯示 SPF 如何驗證從偽造的伺服器所傳送的電子郵件。](../media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg)
+![此圖顯示 SPF 如何驗證從偽造的伺服器所傳送的電子郵件。](../../media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg)
 
 由於 IP 位址 #12 不在 contoso.com 的 SPF TXT 記錄中，所以郵件無法通過 SPF 檢查，而接收者可選擇將其標示為垃圾郵件。
 
@@ -96,7 +96,7 @@ v=spf1 \<IP 位址 #1\> \<IP 位址 #2\> \<IP 位址 #3\> \<強制規則\>
 
 SPF 的其中一個缺點就是已轉寄電子郵件時就無法運作。 例如，假設 woodgrovebank.com 的使用者已設定轉寄規則，以將所有電子郵件傳送到 outlook.com 帳戶：
 
-![此圖顯示 SPF 在訊息被轉送時無法驗證電子郵件。](../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg)
+![此圖顯示 SPF 在訊息被轉送時無法驗證電子郵件。](../../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg)
 
 這封郵件原先在 woodgrovebank.com 通過 SPF 檢查，但在 outlook.com 未通過 SPF 檢查，因為 IP #25 不在 contoso.com 的 SPF TXT 記錄中。 Outlook.com 接著可能會將郵件標示為垃圾郵件。 若要解決此問題，請將 SPF 與其他電子郵件驗證方法 (例如 DKIM 和 DMARC) 搭配使用。
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 了解如何開啟適用於 SharePoint、OneDrive 和 Teams 的 ATP，包括如何為偵測到的檔案設定警示。
-ms.openlocfilehash: 601549db67d34460f4505941d4f2847a2c8f370b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2596dade32d387669eb136856b7a24a66134a773
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598150"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084408"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>開啟適用於 SharePoint、OneDrive 及 Microsoft Teams 的 Office 365 ATP
 
@@ -48,11 +48,11 @@ ms.locfileid: "41598150"
 
 2. 在 Office 365 安全性的 & 合規性中心，在左側的導覽窗格中，**威脅管理**] 下選擇 [**原則** \> **安全附件**。
 
-   ![在安全性 & 合規性中心中，選擇 [威脅管理，\>原則](../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+   ![在安全性 & 合規性中心中，選擇 [威脅管理，\>原則](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
 
 3. 選取 **[開啟適用於 SharePoint、OneDrive 與 Microsoft Teams 的 ATP]**。
 
-   ![開啟適用於 SharePoint Online、商務用 OneDrive 與 Microsoft Teams 的進階威脅防護](../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
+   ![開啟適用於 SharePoint Online、商務用 OneDrive 與 Microsoft Teams 的進階威脅防護](../../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
 
 4. 按一下 **[儲存]**。
 

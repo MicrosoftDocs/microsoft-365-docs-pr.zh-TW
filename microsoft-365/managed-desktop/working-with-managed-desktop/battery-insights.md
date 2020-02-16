@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 81b7a7c3db69d1c20f9a9cd8c6ea4a37b481ce59
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: 056685cbd49e6fb247a92357b3483b479d705c90
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269384"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085725"
 ---
 # <a name="battery-insights"></a>電池深入解析
 此檢視提供您的 Microsoft 受管理的電腦裝置電源、 電和應用程式使用狀況計量。 進行這些工作，應用程式被視為 「 使用 」 中，如果它正在執行，並在焦點。
 
 若要檢視流量資料，請選取 [**電池**] 索引標籤。
 
-![電池窗格： 跨底部預測電池壽命，每個裝置模型在左上方] （依應用程式） 的上方能源消費者，在右上] 觀點資料表。 在右上方的文件連結。](images/insights_battery.png)
+![電池窗格： 跨底部預測電池壽命，每個裝置模型在左上方] （依應用程式） 的上方能源消費者，在右上] 觀點資料表。 在右上方的文件連結。](../../media/insights_battery.png)
 
 ## <a name="predicted-battery-life"></a>預測的電池壽命
 

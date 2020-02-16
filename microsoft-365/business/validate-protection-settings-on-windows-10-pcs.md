@@ -1,5 +1,7 @@
 ---
 title: 驗證 Windows 10 PC 上的 App 保護設定
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: 了解如何驗證 Windows 10 裝置中的 Microsoft 365 商務版應用程式保護設定。
-ms.openlocfilehash: c54b053c1f6efbca8fd02431c416793a044c6821
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 577921f7f33eafbbe652dcf825a145d89f1ff556
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721853"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42057178"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>驗證 Windows 10 PC 上的 App 保護設定
 
@@ -36,11 +38,11 @@ ms.locfileid: "38721853"
   
 1. 使用 Microsoft 365 商務版認證登入後，當您連線到 Azure AD 中[設定 Windows 裝置，為 Microsoft 365 商務版使用者](set-up-windows-devices.md)所述，移至 [ **Windows 設定** \> **帳戶** \> **存取公司或學校資源**。 選擇 [**連線至\<租用戶名稱\>Azure AD**，然後選擇 [**資訊**。
     
-    ![Click or tap Info on the Connected to Azure AD dialog.](media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
+    ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
 2. 在**管理者**\<租用戶名稱\>] 頁面上，您可以查看**連線資訊**，其中包含的**管理伺服器位址**，例如下圖所示。 
     
-    ![Managed by page shows connection info of the device manager URL.](media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
+    ![Managed by page shows connection info of the device manager URL.](../media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
  **確認您無法將公司資料貼在未受管理的應用程式**
   
@@ -52,7 +54,7 @@ ms.locfileid: "38721853"
     
     您會收到錯誤，表示應用程式無法存取內容。
     
-    ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
+    ![A dialog that states app can't access content when you paste into an unmanaged app.](../media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
     不過，您可以將同樣的內容貼入 Word 2016。
     
@@ -68,11 +70,11 @@ ms.locfileid: "38721853"
     
 4. 在 [**存取公司或學校資源**] 頁面上，選擇 [**工作或學校帳戶**，然後選擇 [**資訊**。
     
-    ![按一下或點選資訊的工作或學校帳戶] 對話方塊。](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
+    ![按一下或點選資訊的工作或學校帳戶] 對話方塊。](../media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
   
 5. 在 [**存取公司或學校資源**] 頁面中，您可以查看**連線資訊**，包含**管理伺服器位址**，例如下圖中，所示，並包含單字*wip*和*mam*內。 
     
-    ![Managed by page shows connection info URL that includes the words mam and wpi.](media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
+    ![Managed by page shows connection info URL that includes the words mam and wpi.](../media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
   
  **確認您無法將公司資料貼在未受管理的應用程式**
   
@@ -84,7 +86,7 @@ ms.locfileid: "38721853"
     
     您會收到錯誤，指出 App 無法存取內容。
     
-    ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
+    ![A dialog that states app can't access content when you paste into an unmanaged app.](../media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
     不過，您可以將同樣的內容貼入 Word 2016。
     

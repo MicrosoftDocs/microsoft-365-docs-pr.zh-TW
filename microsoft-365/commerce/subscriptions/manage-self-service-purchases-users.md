@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用者可以了解如何管理其自助購買。
-ms.openlocfilehash: 1535784350b719b606dca9417f9cdb192060adf1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cdc50144179dd4c0f9b6355501167e9420ff0b50
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594654"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080320"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助訂購 （使用者）
 

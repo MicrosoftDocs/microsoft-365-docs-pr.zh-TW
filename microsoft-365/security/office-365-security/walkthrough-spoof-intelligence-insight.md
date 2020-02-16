@@ -17,12 +17,12 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: 請參閱 < 新的詐騙智慧深入了解的運作方式。
-ms.openlocfilehash: 38bf75a2ebeabd41aace42c6116d37ecbe28a2de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 940203bc86339e4cc749565be355d717be9e914d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598010"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084348"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>逐步解說： 詐騙智慧深入解析
 
@@ -50,7 +50,7 @@ ms.locfileid: "41598010"
 
 深入了解儀表板上的會顯示如下的資訊。
   
-![詐騙智慧深入了解的螢幕擷取畫面](../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+![詐騙智慧深入了解的螢幕擷取畫面](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
   
 此深入了解有兩種模式：
   
@@ -82,7 +82,7 @@ ms.locfileid: "41598010"
     
 2. 表格，開啟包含相關的網域組豐富資訊的詳細資料] 窗格中選取項目，包括為什麼我們攔截這，您需要做些什麼，網域摘要、 WhoIs 有關寄件者和我們討論過寄件者相同租用戶中的類似電子郵件。 從這裡開始，您也可以選擇新增或移除**AllowedToSpoof**安全寄件者清單中的網域組。 
   
-![詐騙智慧深入了解詳細資料窗格中的網域的螢幕擷取畫面](../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+![詐騙智慧深入了解詳細資料窗格中的網域的螢幕擷取畫面](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
   
 ## <a name="add-or-remove-a-domain-from-the-allowedtospoof-safe-sender-list"></a>新增或移除 AllowedToSpoof 安全寄件者清單中的網域
 

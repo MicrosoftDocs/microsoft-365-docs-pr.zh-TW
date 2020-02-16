@@ -1,5 +1,7 @@
 ---
 title: 建立小組共同作業
+f1.keywords:
+- NOCSH
 ms.author: stevhord
 author: samanro
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 建立您的小組共同作業空間與 Microsoft Teams。
-ms.openlocfilehash: 18a28364b02b15af9d7d4c69c432ecd26d61b802
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: d057dbf0afca31b91e8792b3e0ca13d45b5e3455
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772520"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056346"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Microsoft Teams 中建立小組共同作業
 
@@ -42,13 +44,13 @@ Microsoft Teams 是共同作業應用程式，可協助您保持分類，並進�
 
 您也可以建立特定的專案小組，並套用保護根據誰應該包含的資料量。 
 
-![具有三個不同的小組，以允許安全的通訊和共同作業 Microsoft Teams 視窗的圖表](media/m365-democracy-teams-collab.png)
+![具有三個不同的小組，以允許安全的通訊和共同作業 Microsoft Teams 視窗的圖表](../media/m365-democracy-teams-collab.png)
 
 當您建立一個小組時，以下是什麼取得建立：
 
-- 新的[Office 365 群組](https://docs.microsoft.com/en-us/MicrosoftTeams/office-365-groups)
-- [SharePoint Online](https://docs.microsoft.com/en-us/MicrosoftTeams/sharepoint-onedrive-interact)網站和文件庫，以儲存小組檔案
-- [Exchange Online](https://docs.microsoft.com/en-us/MicrosoftTeams/exchange-teams-interact)的共用信箱和行事曆
+- 新的[Office 365 群組](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
+- [SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact)網站和文件庫，以儲存小組檔案
+- [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact)的共用信箱和行事曆
 - OneNote 筆記本
 - 繫結到其他 Office 365 應用程式，例如 Planner 和 Power BI
 
@@ -79,9 +81,9 @@ Microsoft Teams 內，您可以找到：
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-深入了解在[Microsoft Teams 技術文件](https://docs.microsoft.com/en-us/microsoftteams/microsoft-teams)的 Microsoft Teams
+深入了解在[Microsoft Teams 技術文件](https://docs.microsoft.com/microsoftteams/microsoft-teams)的 Microsoft Teams
 
 ## <a name="admin-settings"></a>系統管理員設定
 
-您必須是系統管理員建立的全組織的小組。 如需詳細資訊，請參閱[什麼是 Office 365 系統管理員？](https://support.office.com/en-us/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)。
+您必須是系統管理員建立的全組織的小組。 如需詳細資訊，請參閱[什麼是 Office 365 系統管理員？](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)。
   

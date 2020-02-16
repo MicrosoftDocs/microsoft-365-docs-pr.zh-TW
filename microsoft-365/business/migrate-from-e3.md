@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何將業務移至 Microsoft 365 商務版中，從 Office 365 E3。
-ms.openlocfilehash: 210f3ebf76da49349dfb6d61d0b8ce88d15d3734
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 54320ed60825a28147542094b19761889a70ae9f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593702"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065577"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>從 Office 365 E3 移轉至 Microsoft 365 商務版 
 
@@ -44,25 +44,25 @@ Microsoft 365 商務版具有您需要為您的小型企業，簡單的裝置管
 | Office 應用程式<sup>1</sup>   | Office 365 商務版   | Office 365 專業增強版 | 
 | **雲端生產力應用程式**       | | | 
 | Exchange Online 和 Outlook   | 每個信箱和 unlimited Exchange Online Archiving 50 GB 儲存空間限制   | 每個信箱並無限制 Exchange Online 封存的 100 GB 儲存空間上限 | 
-| Teams | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Office 365 E3](./media/check-mark.png) | 
+| Teams | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)  | ![隨附於 Office 365 E3](../media/check-mark.png) | 
 | 商務用 OneDrive | 每個使用者 1 TB 的儲存量限制   | 無限制 | 
-| Yammer，SharePoint Online，規劃中，資料流    | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Office 365 E3](./media/check-mark.png) | 
-| StaffHub  | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | ![隨附於 Office 365 E3](./media/check-mark.png) | 
-| Outlook Customer Manager、 MileIQ  | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)   | | 
+| Yammer，SharePoint Online，規劃中，資料流    | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)  | ![隨附於 Office 365 E3](../media/check-mark.png) | 
+| StaffHub  | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)  | ![隨附於 Office 365 E3](../media/check-mark.png) | 
+| Outlook Customer Manager、 MileIQ  | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)  | | 
 | **威脅防護**     | | | 
-| Office 365 進階的威脅防護 (ATP) 計劃 1 | ![隨附於 Microsoft 365 商務版](./media/check-mark.png)  | 不包含在內，但是可以加上 | 
+| Office 365 進階的威脅防護 (ATP) 計劃 1 | ![隨附於 Microsoft 365 商務版](../media/check-mark.png) | 不包含在內，但是可以加上 | 
 | **身分識別管理**       | | | 
-| 自助密碼重設為混合式 Azure Active Directory (Azure AD) 帳戶，Azure 多重要素驗證 (MFA)、 條件式存取，適用於內部部署身分識別的密碼回寫|    ![隨附於 Microsoft 365 商務版](./media/check-mark.png) |  | 
+| 自助密碼重設為混合式 Azure Active Directory (Azure AD) 帳戶，Azure 多重要素驗證 (MFA)、 條件式存取，適用於內部部署身分識別的密碼回寫|    ![隨附於 Microsoft 365 商務版](../media/check-mark.png)    |  | 
 | **裝置和應用程式管理**     | | |
-| Microsoft Intune、 Windows AutoPilot|  ![隨附於 Microsoft 365 商務版](./media/check-mark.png) |  |
-| 共用電腦啟用|   ![隨附於 Microsoft 365 商務版](./media/check-mark.png) | ![隨附於 Office 365 E3](./media/check-mark.png)| 
-| 升級到 Windows 10 專業版的權限，從 Win 7/8.1 專業版的授權|     ![隨附於 Microsoft 365 商務版](./media/check-mark.png) || 
+| Microsoft Intune、 Windows AutoPilot|  ![隨附於 Microsoft 365 商務版](../media/check-mark.png)    |  |
+| 共用電腦啟用|   ![隨附於 Microsoft 365 商務版](../media/check-mark.png)    | ![隨附於 Office 365 E3](../media/check-mark.png)| 
+| 升級到 Windows 10 專業版的權限，從 Win 7/8.1 專業版的授權|     ![隨附於 Microsoft 365 商務版](../media/check-mark.png)    || 
 | **資訊保護**        | | |
-|Office 365 資料外洩防護|   ![隨附於 Microsoft 365 商務版](./media/check-mark.png)|![隨附於 Office 365 E3](./media/check-mark.png)|
-|Azure 資訊保護方案 1，Bitlocker 強制執行|![隨附於 Microsoft 365 商務版](./media/check-mark.png)||
-|Azure 資訊保護方案 1，敏感度標籤|![隨附於 Microsoft 365 商務版](./media/check-mark.png)||
+|Office 365 資料外洩防護|   ![隨附於 Microsoft 365 商務版](../media/check-mark.png)|![隨附於 Office 365 E3](../media/check-mark.png)|
+|Azure 資訊保護方案 1，Bitlocker 強制執行|![隨附於 Microsoft 365 商務版](../media/check-mark.png)||
+|Azure 資訊保護方案 1，敏感度標籤|![隨附於 Microsoft 365 商務版](../media/check-mark.png)||
 |**用戶端存取使用權 （CAL 權限）**|||
-|企業 CAL 套件 (Exchange、 SharePoint、 Skype)||![隨附於 Office 365 E3](./media/check-mark.png)|
+|企業 CAL 套件 (Exchange、 SharePoint、 Skype)||![隨附於 Office 365 E3](../media/check-mark.png)|
 
 <sup>1</sup> Microsoft 365 商務版版本的 Office 應用程式不會包含大量啟用透過群組原則中，應用程式遙測，更新控制項、 試算表比較和查詢，或商務智慧。
 

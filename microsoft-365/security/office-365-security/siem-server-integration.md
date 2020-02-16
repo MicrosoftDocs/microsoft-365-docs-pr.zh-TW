@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: 取得與 Microsoft 365 雲端服務和應用程式的安全性資訊和事件管理 (SIEM) 伺服器整合的概觀
-ms.openlocfilehash: 0d5f1f6b3137e247778384f3a29390af560394e8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d5adf0a72ac78475cb47f06732375ce01c0d72be
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598290"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082192"
 ---
 #  <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Microsoft 365 服務與應用程式的安全性資訊和事件管理 (SIEM) server 整合
 

@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook web 使用者可以使用內建的郵件報告選項回報垃圾郵件和網路釣魚詐騙。 您也可以讓 Microsoft 知道是否電子郵件誤報為垃圾郵件 （垃圾郵件）。
-ms.openlocfilehash: 98b53aa17cb84defa9d20aa4610390db9f5447c5
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 58973e59644b2e20853cfe053a18586efa5211bf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957418"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082391"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>在 Outlook 網頁版中回報垃圾郵件與網路釣魚詐騙
 
@@ -33,7 +33,7 @@ ms.locfileid: "41957418"
 
 1. 按一下 [垃圾郵件]，然後按一下工具列上的 [**垃圾郵件**。 這會將郵件移至垃圾郵件] 資料夾，並將寄件者新增至封鎖的寄件者清單。
 
-   ![指出電子郵件是來自 Web 上 Outlook 的垃圾郵件](../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
+   ![指出電子郵件是來自 Web 上 Outlook 的垃圾郵件](../../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
 
    > [!NOTE]
    > 或者，若要顯示的功能表中，郵件上按一下滑鼠右鍵，然後按一下 [**標示為垃圾郵件**。
@@ -42,7 +42,7 @@ ms.locfileid: "41957418"
 
 2. 隨即開啟對話方塊，詢問您是否要將垃圾郵件的複本傳送給 Microsoft 以進行分析。 按一下 [將郵件傳送給 Microsoft 垃圾郵件分析小組**報告**。 選擇性地，如果您想要自動將之後的垃圾郵件提交給 Microsoft，而不出現提示，則請選取 **[不要再顯示此訊息]** 核取方塊。
 
-   ![向 Microsoft 報告來自 Web 上 Outlook 的垃圾電子郵件](../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
+   ![向 Microsoft 報告來自 Web 上 Outlook 的垃圾電子郵件](../../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
 
    > [!TIP]
    > 即使您選取 [**不要顯示一次此訊息**] 核取方塊，您可以稍後變更您的喜好設定垃圾郵件報告來存取在 outlook 網頁版中的顯示設定。 (您可以透過登入名稱旁邊的齒輪功能表來存取這些設定。
@@ -53,7 +53,7 @@ ms.locfileid: "41957418"
 
 1. 按一下 [網路釣魚詐騙郵件上，按一下 [**垃圾郵件**旁的向下箭號，然後按一下工具列上的 [**網路釣魚**。 Office 365 不會封鎖寄件者，因為寄件者的網路釣魚詐騙郵件通常會模擬合法的寄件者。 如果您想要的話，下列主題中的[篩選垃圾電子郵件，並且在網頁型 Outlook 中垃圾郵件](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)的指示寄件者新增至封鎖的寄件者清單。
 
-   ![指出電子郵件是 Web 上 Outlook 中的網路釣魚詐騙](../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
+   ![指出電子郵件是 Web 上 Outlook 中的網路釣魚詐騙](../../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
 
    或者，若要顯示的功能表中，郵件上按一下滑鼠右鍵，然後按一下 [**標記為網路釣魚**。
 

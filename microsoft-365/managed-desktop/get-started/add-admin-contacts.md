@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9233118a2112aae33a5b784b6495709cbd3345f5
-ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
+ms.openlocfilehash: 5a980c1e15a6cbc098647139caf48f813b36b040
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41004918"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085888"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在系統管理入口網站中新增和驗證系統管理連絡人
 
@@ -52,15 +52,15 @@ IT 技術支援 | 如果我們的支援人員將使用者票證交給 Microsoft 
 
 2.  在 [支援]**** 底下，選取 [系統管理連絡人]****。 
 
-    ![在支援功能表，接近頂端選取的系統管理連絡人](images/admincontacts.png)
+    ![在支援功能表，接近頂端選取的系統管理連絡人](../../media/admincontacts.png)
 
 3. 選取 [新增]****。
 
-    ![在系統管理入口網站 [匯出並重新整理] 左方的 [新增]按鈕](images/adminadd.png)
+    ![在系統管理入口網站 [匯出並重新整理] 左方的 [新增]按鈕](../../media/adminadd.png)
 
 4.  選取 [重點領域]**** 並輸入連絡人資訊。 
 
-    ![重點領域清單，例如 [其他]、[應用程式] 和 [安全性]](images/areaoffocus.png)
+    ![重點領域清單，例如 [其他]、[應用程式] 和 [安全性]](../../media/areaoffocus.png)
 
 5. 每個重點領域的重複。 
 

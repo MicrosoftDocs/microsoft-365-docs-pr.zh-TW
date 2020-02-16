@@ -1,16 +1,16 @@
 ---
 title: Microsoft 受管理電腦產品生命週期
 description: 本主題列出在 Microsoft 受管理電腦中使用的裝置規格。
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 431b28635f856ebd50e1de4129c00149e1e7c78d
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 2d6dffad4b4d96e065dd5163ea702c91c27520fb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962340"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085824"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Microsoft 受管理電腦產品生命週期
 
@@ -33,7 +33,7 @@ Microsoft 受管理電腦優點使用者，以確保它們永遠使用提供最�
 
 在此圖中描繪的整個順序：
 
-![生命週期時間表： 開頭產品上市，「 主要可用性 」 可持續兩年。 在這段時間結束 [憑證] 視窗中，有些時候裝置是上架。 主要可用性結尾封存產品，並在 「 寬限期 「 三年後啟動。 從開始上架裝置時，其使用 3 年期間直到它會移除管理。 在寬限期結尾處我們從目錄中移除產品。](images/non-dark1-edits.PNG)
+![生命週期時間表： 開頭產品上市，「 主要可用性 」 可持續兩年。 在這段時間結束 [憑證] 視窗中，有些時候裝置是上架。 主要可用性結尾封存產品，並在 「 寬限期 「 三年後啟動。 從開始上架裝置時，其使用 3 年期間直到它會移除管理。 在寬限期結尾處我們從目錄中移除產品。](../../media/non-dark1-edits.PNG)
 
 產品保持在目錄的應用程式最多 24 個月，但根據其個別註冊日期 3 年<em>裝置</em>仍會在 [管理] 下。 實際上，每個產品具有三個重要的日期，但每個裝置都只有一個。 產品，全部三個這些日期根據計算在<em>核准日期</em>中，並因此我們發佈核准這些日期，讓您總是可以看與適當地規劃產品的整個生命週期。
 
@@ -58,7 +58,7 @@ Microsoft 受管理電腦優點使用者，以確保它們永遠使用提供最�
 
 產品生命週期開始時製造商公開發行產品：
 
-![生命週期時間表顯示的版本及評估時間](images/non-dark3-edits.PNG)
+![生命週期時間表顯示的版本及評估時間](../../media/non-dark3-edits.PNG)
 
 在這個階段中，Microsoft 受管理電腦工程團隊會執行其評估和產品的認證。 小組會評估之類的可靠性與效能與 Windows，硬體基準、 與市場舉動詳細目錄] 與 [通道整備，而在其他方面的合規性。 此程序通常需大約 6 週。
   
@@ -71,7 +71,7 @@ Microsoft 受管理電腦只會評估裝置的可用性其第一個 6 個月內�
 
 這段期間是可用性的核心產品:
 
-![生命週期時間表顯示主要外掛](images/non-dark4-edits.PNG)
+![生命週期時間表顯示主要外掛](../../media/non-dark4-edits.PNG)
 
 在這段期間註冊任何裝置收到完整的三年的支援 Microsoft 受管理的電腦 （所示的藍色時間表）。 這段期間會持續直到結束日期設定為 24 個月，從上市日期。
 
@@ -84,7 +84,7 @@ Microsoft 受管理電腦只會評估裝置的可用性其第一個 6 個月內�
 如果您最近已購買的核准裝置之前註冊使用 Microsoft 受管理的電腦數目，您仍然可以註冊，但將不會收到完整的三年的管理。 相反地，他們將改超出規範退休日期開始，無論他們已註冊時。 在幕後好像他們已註冊的最後一天的主要可用性 Microsoft 受管理的電腦時，會將這些裝置。 在此圖中，您可以看到這種情況下所註明在同一天，而不管其一年中的差異註冊結尾的 blue 及 green 的裝置︰
 
 
-![生命週期時間表顯示寬限期](images/non-dark2-edits.PNG)
+![生命週期時間表顯示寬限期](../../media/non-dark2-edits.PNG)
 
 從上表 Fabrikam 膝上型電腦範例說明這種情況： 
 

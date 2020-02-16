@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: f1389fd64efce16e81e02885127e65c8d1922c5b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 653b986de8d580a25a1032b77f34db8924d3ea0d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602810"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085782"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>封存的 Microsoft 受管理電腦裝置
 
@@ -35,7 +35,9 @@ ms.locfileid: "41602810"
 
 | Model  | 最小的規格  | 其他需求   | 退休日期 |
 |---------|---------|---------|---------|
-| HP EliteBook 830 / 840 / 850 版 G5| 128 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線網路攝影機或指紋感應  | **2023 2 月 15日，** |
+|HP EliteBook 830 / 840 / 850 版 G5| 128 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線網路攝影機或指紋感應  | **2023 2 月 15日，** |
+|HP 精銳 x2 1013 版 G3| 256 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS03AV，所需的紅外線相機 |**2023 5 月 14日，** |
+|HP EliteBook x360 1030 版 G3| 256 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線相機 |**2023 5 月 14日，** |
 |Surface Book 2| 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 年 11 月 16 日** |
 |Surface Laptop| 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 May 20，** |
 |Surface Pro| 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 6 月 15日，** |

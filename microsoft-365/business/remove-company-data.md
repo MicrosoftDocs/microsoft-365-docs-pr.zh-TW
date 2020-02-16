@@ -1,5 +1,7 @@
 ---
 title: 從裝置移除公司資料
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,16 +22,16 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: '了解如何使用 Microsoft 365 商務版來移除公司資料從使用者裝置或 Windows 電腦。 '
-ms.openlocfilehash: 59e94a08e149a5cb119aabbbe816ccd2f4a9f9fb
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: 338ce030cb37a6cbd4a1f63c33dc6866bef93c24
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715225"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064890"
 ---
 # <a name="remove-company-data-from-devices"></a>從裝置移除公司資料
 
-[![[標籤] 可讓您知道系統管理中心正在變更，您可以在 aka.ms/aboutM365preview 取得更多詳細資料。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![[標籤] 可讓您知道系統管理中心正在變更，您可以在 aka.ms/aboutM365preview 取得更多詳細資料。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## <a name="remove-company-data"></a>移除公司資料
 
@@ -43,7 +45,7 @@ ms.locfileid: "38715225"
     
 4. 在下一步] 窗格中，請從**裝置**清單中選取的裝置。 在開啟 [裝置] 窗格中，您可以選擇將裝置重設成出廠預設值設定或移除公司資料，根據裝置類型而定。 
     
-    ![在 [移除公司資料] 窗格中，選取您要移除的資料的裝置。](media/resetorremove.png)
+    ![在 [移除公司資料] 窗格中，選取您要移除的資料的裝置。](../media/resetorremove.png)
   
 5. 在 [確認] 窗格中，選擇 [ **Confirm** \> **關閉**。
     

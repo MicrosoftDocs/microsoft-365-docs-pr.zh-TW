@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: 協助您安裝 Office 應用程式的使用者。
-ms.openlocfilehash: 86a32f5f7a9fbd78a56fc934c4668970f8cdc719
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7497be6b0796fdd28156d8c9a6018b05e3dcfe75
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593914"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065710"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>協助您在 Windows 10 裝置上安裝 Office 的使用者
 
-[![[標籤] 可讓您知道系統管理中心正在變更，您可以在 aka.ms/aboutM365preview 取得更多詳細資料。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![[標籤] 可讓您知道系統管理中心正在變更，您可以在 aka.ms/aboutM365preview 取得更多詳細資料。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 您可以快速並輕鬆地從 Microsoft 365 商務版系統管理中心的 Windows 10 Pc 上安裝 Office。
   
@@ -59,7 +59,7 @@ ms.locfileid: "41593914"
 4. 在**下載 Office 的連結的電子郵件使用者**] 面板中，選取您想要電子郵件，然後**選取的電子郵件使用者**的使用者。
 
     
-      :::image type="content" source="media/sendemailtousers.png" alt-text="選取的使用者傳送電子郵件與 Office 下載連結。":::
+      :::image type="content" source="../media/sendemailtousers.png" alt-text="選取的使用者傳送電子郵件與 Office 下載連結。":::
 
 ## <a name="see-also"></a>另請參閱
 

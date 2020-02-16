@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 商務版的增加威脅防護
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 設定符合性功能，以防止資料遺失和標籤敏感資料。
-ms.openlocfilehash: 6fae95e8c5e6d133e3163dbdfd3c09cfede11382
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: d569ff8d84faf82881035f0ed54e5d175605776f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715115"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064691"
 ---
 # <a name="set-up-compliance-features"></a>設定合規性功能
 
@@ -68,6 +70,6 @@ DLP 隨附許多不同的地區設定的許多準備-使用原則範本。 例�
 1. 從[Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=53018)下載**AzinfoProtection_UL.exe** 。
  
 2. 您可以確認安裝成功可以檢視 Word 文件，以確定可在 [**首頁**] 索引標籤上 [**敏感度**] 選項。
-<br/>![保護索引標籤下拉式清單中的 Word 文件。](media/word-sensitivity.png)
+<br/>![保護索引標籤下拉式清單中的 Word 文件。](../media/word-sensitivity.png)
 
 如需詳細資訊，請參閱[安裝用戶端](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)。

@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 逐步引導您完成會影響 Office 365 環境安全性的全租用戶建議設定。 您的安全性需求可能會高於或低於建議設定， 請使用這些建議做為調整的起始點。
-ms.openlocfilehash: 3bf11ae0520ac6f715e3f84669c6d6f615deaf14
-ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
+ms.openlocfilehash: 38c07739ebfd6e10fe08dbc5496e4ae7634ed510
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41932293"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082036"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>設定 Office 365 租用戶以提高安全性
 
@@ -59,7 +59,7 @@ Microsoft 365 安全性中心包含的功能能夠保護您的環境。 同時�
 |[威脅總管 (或即時偵測)](threat-explorer.md)|此功能同樣位於安全性中心的 **[威脅管理]** 區段中。 如果您要調查或正遇到針對您的 Office 365 租用戶發動的攻擊，請使用總管 (或即時偵測) 來分析威脅。 總管 (或即時偵測) 能顯示隨時間受到的攻擊量，而您可以依照威脅系列、攻擊者的基礎結構等項目來分析這份資料。 您也可以將任何可疑的電子郵件標記為 [事件清單]。|
 |報告 - 儀表板|在安全性中心的 **[報告]** 區段中，檢視您的 SharePoint Online 和 Exchange Online 組織的報告。 您也可以從 **[檢視報告]** 頁面存取 Azure Active Directory (Azure AD) 使用者登入報告、使用者活動報告和 Azure AD 稽核記錄。|
 
-![安全性中心儀表板](../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
+![安全性中心儀表板](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
 
 ## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>設定其他 Exchange Online 全租用戶設定
 
@@ -122,7 +122,7 @@ SharePoint 系統管理中心與商務用 OneDrive 系統管理中心包含同�
 
 - [什麼是 Cloud App Security？](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 
-![Cloud App Security 儀表板](../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
+![Cloud App Security 儀表板](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 
 ## <a name="additional-resources"></a>其他資源
 

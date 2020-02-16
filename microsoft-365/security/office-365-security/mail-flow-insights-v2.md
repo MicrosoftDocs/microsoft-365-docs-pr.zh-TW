@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 系統管理員可以了解安全性 & 合規性中心中的郵件流程儀表板。
-ms.openlocfilehash: 0e87fde41c78f46aaac55602175a3716ba54fe7b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 36183f6b5f664a8d5a971f9e141b0607fa66a0bb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599040"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082925"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件流程深入解析
 
@@ -72,4 +72,4 @@ ms.locfileid: "41599040"
 
 2. 依序展開 [**郵件流程**，然後選取 [**儀表板**。
 
-   ![Office 365 安全性 & 規範中心的郵件流程儀表板](../media/mail-flow-dashboard-v2.png)
+   ![Office 365 安全性 & 規範中心的郵件流程儀表板](../../media/mail-flow-dashboard-v2.png)

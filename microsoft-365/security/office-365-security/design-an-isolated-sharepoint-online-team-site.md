@@ -16,12 +16,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 摘要： 逐步執行獨立的 SharePoint Online 小組網站的設計程序。
-ms.openlocfilehash: 345a5fa5dcdcf2a3e61fdd6f1f346d46afe3fd5f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f03df1f99650f458dd9df2c9e561decf491c3011
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599470"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083203"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>設計獨立的 SharePoint Online 小組網站
 
@@ -53,7 +53,7 @@ ms.locfileid: "41599470"
   
 以下是預設 SharePoint 群組和權限等級。
   
-![預設 SharePoint 群組和權限層級的 SharePoint Online 網站。](../media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
+![預設 SharePoint 群組和權限層級的 SharePoint Online 網站。](../../media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>階段 2： 使用存取群組將權限指派給使用者
 
@@ -93,7 +93,7 @@ Azure AD 群組的 Office 365 是不同於 Office 365 群組。 Azure AD 群組�
   
 以下是預設設定為使用 Azure AD 為基礎的存取群組的 SharePoint 群組。
   
-![使用存取群組作為預設 SharePoint Online 網站群組的成員。](../media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
+![使用存取群組作為預設 SharePoint Online 網站群組的成員。](../../media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
   
 在設計時三個存取群組，請謹記下列事項：
   
@@ -103,7 +103,7 @@ Azure AD 群組的 Office 365 是不同於 Office 365 群組。 Azure AD 群組�
     
 以下是範例為名為 ProjectX 隔離網站的存取群組與 SharePoint 群組。
   
-![SharePoint Online 網站使用存取群組的範例會為名為 ProjectX。](../media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
+![SharePoint Online 網站使用存取群組的範例會為名為 ProjectX。](../../media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
   
 ## <a name="phase-3-use-nested-azure-ad-groups"></a>階段 3： 使用巢狀 Azure AD 群組
 
@@ -126,7 +126,7 @@ Azure AD 群組的 Office 365 是不同於 Office 365 群組。 Azure AD 群組�
   
 以下是 [ProjectX 成員存取群組的範例中的巢狀的 Azure AD 安全性群組。
   
-![針對 ProjectX 網站成員存取群組使用巢狀的存取群組的範例。](../media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
+![針對 ProjectX 網站成員存取群組使用巢狀的存取群組的範例。](../../media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
   
 因為所有的參考資料、 工程和專案中的使用者帳戶時會導致 teams 旨在為網站成員，很容易將其 Azure AD 群組新增至 ProjectX 成員存取群組。
   

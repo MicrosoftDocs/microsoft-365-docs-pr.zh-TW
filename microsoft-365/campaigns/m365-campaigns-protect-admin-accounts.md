@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何設定和保護您的系統管理員帳戶。
-ms.openlocfilehash: 6160f7458dc9a4c343c48f07d87776529c4f1326
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b74d9d2d69549bcaa476a346ba2a61fc24e0b3f3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594818"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080569"
 ---
 # <a name="protect-your-administrator-accounts"></a>保護您的系統管理員帳戶
 
@@ -48,18 +48,18 @@ ms.locfileid: "41594818"
 
  1. 移至<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">系統管理中心</a>，然後選擇 [**使用者**\>左側的 **[作用中使用者**
 
-    ![在左側導覽中選擇使用者，然後作用中使用者](media/Activeusers.png)
+    ![在左側導覽中選擇使用者，然後作用中使用者](../media/Activeusers.png)
 
 2. 在 [**作用中使用者**] 頁面上，選取頂端] 頁面上，並且在 [**新增使用者**] 面板上的 [**新增使用者**，輸入名稱，以及其他資訊。
 3. 依序展開 [**角色**] 區段中，並選擇**全域系統管理員**授與此使用者的全域系統管理員存取權。 您也可以選擇**自訂的系統管理員**，然後選擇 [任何會顯示角色。
 
     在 [**備用電子郵件地址**] 文字方塊中輸入備用電子郵件。 您可以使用這個地址來復原您的密碼資訊，如果您要取得鎖定。全域系統管理員，帳單會傳送到這個地址。
 
-    ![選擇系統管理員角色](media/adminroles.png)
+    ![選擇系統管理員角色](../media/adminroles.png)
     
 4. 在 [**產品授權**] 區段中，移動選取器**Microsoft 365 商務**版來**關閉**使用中] 及 [**產品授權沒有建立使用者****上**。
 
-    ![選擇 [產品授權](media/productlicense.png)
+    ![選擇 [產品授權](../media/productlicense.png)
 
 ## <a name="create-an-emergency-admin-account"></a>建立緊急系統管理員帳戶
 

@@ -12,19 +12,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性原則和建議現代化貴組織中的安全性。
-ms.openlocfilehash: 97ba2b0319f8a34bd6fe1cbdf597b85281810855
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4f264bead74f6a087fc0cac93df18d02121fbe4c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599700"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083522"
 ---
 # <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a>首席資訊安全長研討會模組 3： 身分識別和零信任使用者存取
 
 了解如何換頁零信任與您的身分識別與使用者存取策略更妥善地保護您的周邊網路內外的公司資料。
 
-- 下載 PDF 摘要：[模組 3： 身分識別與零信任使用者存取](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
-- 下載 PowerPoint 摘要：[模組 3： 身分識別與存取管理](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
+- 下載 PDF 摘要：[模組 3： 身分識別與零信任使用者存取](../../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
+- 下載 PowerPoint 摘要：[模組 3： 身分識別與存取管理](../../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
 
 ## <a name="part-1-identity-and-zero-trust-history-933"></a>第 1 部分： 身分識別和零信任歷程記錄 （9 分 33 秒）
 

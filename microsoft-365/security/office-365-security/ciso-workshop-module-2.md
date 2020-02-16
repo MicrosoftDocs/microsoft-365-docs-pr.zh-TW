@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性原則和建議現代化貴組織中的安全性。
-ms.openlocfilehash: ebe1797e0a6a4b7f8bafa28b57feedbd96324093
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1b31445e431bb0a709d1f48c3db1a39fe5d464c1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599710"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086552"
 ---
 # <a name="ciso-workshop-module-2-security-management"></a>首席資訊安全長研討會模組 2： 安全性管理 
 
 了解如何增加可見度及控制與整合的指引，自動化的原則強制執行 >，監視您混合企業資產。
 
-- 下載 PDF 摘要：[模組 2： 安全性管理](../media/ciso-workshop-2-security-management.pdf)
+- 下載 PDF 摘要：[模組 2： 安全性管理](../../media/ciso-workshop-2-security-management.pdf)
 - 下載 PowerPoint 摘要：[模組 2： 安全性管理](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-2-security-management.pptx)
 
 ## <a name="introduction-security-management-125"></a>簡介： 安全性管理 (1:25)

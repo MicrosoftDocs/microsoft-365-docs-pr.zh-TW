@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供 Microsoft 365 企業版元件、 計劃及部署路徑的簡介。
-ms.openlocfilehash: b66289ab66770d75743ff5cee88eb2a47efe11b9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 035c7bc2086b4f70dacc31c3489a4a8adc8fb3dd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596850"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066884"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -59,7 +59,7 @@ Microsoft 365 企業版所組成：
 
 ## <a name="get-the-big-picture"></a>取得大圖片
 
-[Microsoft 365 企業版海報](media/m365-poster/Microsoft365Enterprise.pdf)是中央位置，讓您檢視：
+[Microsoft 365 企業版海報](../media/m365-poster/Microsoft365Enterprise.pdf)是中央位置，讓您檢視：
 
 - 之優點的 Microsoft 365 企業版和應用程式和服務如何對應至其值要點
 - Microsoft 365 企業版方案，而且其中包含哪些元件 
@@ -67,16 +67,16 @@ Microsoft 365 企業版所組成：
 - [Microsoft 365 生產力文件庫](https://www.microsoft.com/microsoft-365/success/)及一些常見的組織部門的代表性案例
 - Microsoft 365 企業版[部署指南](deploy-microsoft-365-enterprise.md)的重點在於說明採用藍圖
 
-[![Microsoft 365 企業版海報的影像](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+[![Microsoft 365 企業版海報的影像](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
 若要下載此海報的副本，請按一下[這裡](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf)。
 
 
 ## <a name="transition-your-entire-organization"></a>轉換整個組織
 
-若要取得較佳的圖片的如何將整個組織移至產品和服務在 Microsoft 365 企業版，請下載[轉換海報](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
+若要取得較佳的圖片的如何將整個組織移至產品和服務在 Microsoft 365 企業版，請下載[轉換海報](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
 
-[![轉換至 Microsoft 365 海報的影像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![轉換至 Microsoft 365 海報的影像](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 這份雙頁海報可讓您快速清查您現有的基礎結構，並取得移至 Microsoft 365 企業版中對應產品或服務的指導方針。 包含 Windows 和 Office 產品和其他基礎結構與安全性元素，例如裝置管理、身分識別以及資訊和威脅防護。
 
@@ -94,9 +94,9 @@ Microsoft 365 企業版所組成：
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 - [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
-如需適用於這些產品的升級、移轉和移至雲端選項的視覺摘要，請參閱[終止支援海報](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)。
+如需適用於這些產品的升級、移轉和移至雲端選項的視覺摘要，請參閱[終止支援海報](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)。
 
-[![Office 2010 用戶端與伺服器和 Windows 7 終止支援海報的影像](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+[![Office 2010 用戶端與伺服器和 Windows 7 終止支援海報的影像](../media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
 這一頁海報是支援的了解若要防止 Windows 7 和 Office 2010 用戶端和伺服器產品達到結尾的慣用的路徑與反白顯示的企業版 Microsoft 365 中支援，可採取的各種路徑的快速方法。
 
@@ -142,7 +142,7 @@ Microsoft 365 企業版所組成：
 
 |||
 |:-------|:-----|
-![Microsoft 365 基本概念訓練](./media/m365-poster/m365-fundamentals.svg)| 取得自行訓練，並向 Microsoft 365 憑證運作。 <BR> 開始使用[Microsoft 365 基本概念](https://docs.microsoft.com/learn/paths/m365-fundamentals/)。
+![Microsoft 365 基本概念訓練](../media/m365-poster/m365-fundamentals.svg)| 取得自行訓練，並向 Microsoft 365 憑證運作。 <BR> 開始使用[Microsoft 365 基本概念](https://docs.microsoft.com/learn/paths/m365-fundamentals/)。
 |||
 
 
@@ -150,6 +150,6 @@ Microsoft 365 企業版所組成：
 
 如果您正在自行進行部署，來啟動您的[Microsoft 365 企業版部署的作業過程](deploy-microsoft-365-enterprise.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 企業版產品頁面](https://www.microsoft.com/microsoft-365/enterprise)

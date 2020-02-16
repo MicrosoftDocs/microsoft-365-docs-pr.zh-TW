@@ -16,12 +16,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: 當您嘗試將電子郵件傳送給其電子郵件地址是在 Office 365 中的收件者時，是否收到錯誤？如果您認為您不應該收到錯誤訊息，您可以使用取消列出入口網站，將您自己從 Office 365 封鎖寄件者清單中移除。
-ms.openlocfilehash: af528f7fed60130bec8ff53ad182df928d09faee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3e131addb391ecbf90d74ad4fdfa65b802c5e1ac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598030"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081955"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>使用取消列出入口網站，將您自己從 Office 365 封鎖寄件者清單中移除
 
@@ -45,7 +45,7 @@ Microsoft 會使用封鎖寄件者清單，來保護其客戶避免垃圾郵件�
 
 3. 按一下 **[送出]**。
 
-    入口網站會將電子郵件傳送至您提供的電子郵件地址。 電子郵件看起來如下：![接收當您透過 delist 入口網站將要求提交的電子郵件的螢幕擷取畫面](../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    入口網站會將電子郵件傳送至您提供的電子郵件地址。 電子郵件看起來如下：![接收當您透過 delist 入口網站將要求提交的電子郵件的螢幕擷取畫面](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
 
 4. 按一下取消列出入口網站傳送給您的電子郵件中的確認連結。
 

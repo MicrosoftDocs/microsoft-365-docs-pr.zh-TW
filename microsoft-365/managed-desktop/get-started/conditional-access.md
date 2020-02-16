@@ -1,17 +1,17 @@
 ---
 title: 調整條件式存取
 description: 如何排除特定的 Microsoft 帳戶
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1b91186837ad558965d675f82d013a7081c7c7ec
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 1bc5d937616cba60c5af43fe22a7c4dccf89a55e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012453"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085803"
 ---
 # <a name="adjust-conditional-access"></a>調整條件式存取
 
@@ -25,9 +25,9 @@ ms.locfileid: "38012453"
 
 如果您有使用條件式存取的任何問題，請連絡系統管理員[支援](../working-with-managed-desktop/admin-support.md)。
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>若要開始使用 Microsoft 受管理電腦的步驟
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>開始使用 Microsoft 受管理電腦的步驟
 
-1. [新增及確認系統管理入口網站中的連絡人](add-admin-contacts.md)
+1. [在系統管理入口網站中新增和驗證系統管理員連絡人](add-admin-contacts.md)
 2. 調整條件式存取 （本主題）
 3. [指派授權](assign-licenses.md)
 4. [部署 Intune 公司入口網站](company-portal.md)
