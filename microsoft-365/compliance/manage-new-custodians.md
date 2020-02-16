@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 0b6776571f4abafaf8e050fa6c31311df452d90e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 管理 custodians 進階電子文件探索案例中。
+ms.openlocfilehash: f52c32c2eb65a03369064954ac1af6f881ab556f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582912"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071599"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>管理 custodians 進階電子文件探索案例中
 
 在進階電子文件中的 [Custodians] 索引標籤包含所有 custodians 已新增至案例清單。 您將 custodians 新增至案例之後，每個 custodian 詳細自動收集自 Azure Active Directory 且進階電子文件探索中檢視。
 
-![管理 Custodians](media/CustodianDetails.PNG)
+![管理 Custodians](../media/CustodianDetails.PNG)
 
 ## <a name="view-custodian-details"></a>檢視 custodian 詳細資料
 
@@ -37,7 +37,7 @@ ms.locfileid: "41582912"
 
   - **顯示名稱**-custodian 顯示在通訊錄中的名稱。 這通常是 custodian 名字]、 [中間的初始，和最後一個名稱的組合。
   
-   - **郵件/SMTP** -custodian，例如 brianj@contoso.onmicrosoft.com 的主要 SMTP 位址。 請注意 custodian 的使用者主要名稱 (UPN) 也會列。
+   - **郵件/SMTP** -custodian，例如 brianj@contoso.onmicrosoft.com 的主要 SMTP 位址。 也列出 custodian 的使用者主要名稱 (UPN)。
 
   - **標題**-custodian 的職稱。
 
@@ -82,7 +82,7 @@ ms.locfileid: "41582912"
   
 3. 從清單中選取 custodian，然後按一下 [彈出式頁面的 [**編輯**。
 
-    ![編輯資料來源](media/EditCustodianDataSource.PNG)
+    ![編輯資料來源](../media/EditCustodianDataSource.PNG)
   
 4. 按一下 [**選擇資料來源**] 索引標籤，若要變更 custodian 的 Exchange 信箱和 OneDrive 帳戶的設定，請按一下 [**選擇資料來源**。
   
@@ -92,11 +92,11 @@ ms.locfileid: "41582912"
   
 6. 按一下 [啟用或停用保留 custodian **custodial 就地保留**]。
 
-## <a name="resolve-custodian-processing-errors"></a>解決 custodian 處理錯誤
+## <a name="re-index-custodian-data"></a>重新編製索引 custodian 資料
 
 在大部分法律調查的 eDiscovery 工作流程，custodian 新增的法律案件之後搜尋 custodian 資料的子集。 非常大的檔案大小或可能造成資料損毀，因為 custodian 相關聯的資料來源中的某些項目可能是已局部編製索引。 在進階電子文件中使用的[進階編製索引](indexing-custodian-data.md)的功能，最局部編製索引的項目可進行自動修復藉由重新編製索引視需要這些項目。
 
-當 custodian 新增至案例時，位於 custodian 相關聯的資料來源的資料會自動重新編製索引 （藉由進階索引程序）。 這表示您可以將保留資料就地而不必下載並修復它再搜尋離線）。 不過，週期中法律案例新資料來源可能與 custodian 相關聯。 在此情況下，您重新編製索引 custodian 的資料重新執行 [進階索引程序，以修正任何已局部編製索引的項目，並更新 custodian 資料的索引。
+當 custodian 新增至案例時，位於 custodian 相關聯的資料來源的資料會自動重新編製索引 （藉由進階索引程序）。 這表示您可以將保留資料就地而不必下載並修復它再搜尋離線）。 不過，週期中法律案例新資料來源可能 custodian 相關聯。 在此情況下，您可以重新編製索引 custodian 的資料重新執行 [進階索引程序，以修正任何已局部編製索引的項目，並更新 custodian 資料的索引。
 
 若要觸發地址重新編製索引程序已局部編製索引的項目：
 
@@ -136,7 +136,7 @@ ms.locfileid: "41582912"
 
 5. 按一下 **[是]** ，確認您想要釋出 custodian。 
 
-    請注意，此使用者**Custodians** ] 索引標籤上的狀態設為**已發行**和**保留狀態**的彈出式頁面會變更為**False**。 
+    此使用者**Custodians** ] 索引標籤上的狀態設為**已發行**並**保留狀態**的彈出式頁面變更為**False**。 
 
 > [!NOTE]
 > Custodian 可能同時參與數個法律案件。 當 custodian 發行從案例時，不會影響保留和跨其他事件通知。
@@ -145,4 +145,4 @@ ms.locfileid: "41582912"
 
 您可以使用大量編輯器來編輯多個 custodians 為同一時間。 若要這麼做，請只選取兩個或多個 custodians **Custodians** ] 索引標籤上的顯示大量編輯程式，然後按一下下列其中一個工作。
 
-![若要編輯的多個 custodians 設定彈出式頁面](media/AeDBulkEditCustodians.png)
+![若要編輯的多個 custodians 設定彈出式頁面](../media/AeDBulkEditCustodians.png)

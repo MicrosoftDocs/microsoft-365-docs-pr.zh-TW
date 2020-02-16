@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以了解如何建立郵件流程規則 （傳輸規則） 來加密及解密使用 Office 365 郵件加密的郵件。
-ms.openlocfilehash: a2f37bff8fa3fd45999a44341cfdb077b4f43e62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 80bdd479ec09f0ecefd2758e2b8012a1a7351d6c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595338"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075870"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>定義郵件流規則以加密 Office 365 中的電子郵件
 
@@ -48,7 +48,7 @@ ms.locfileid: "41595338"
 
 3. 在 Microsoft 365 系統管理中心中，選擇 [**系統管理中心** \> **Exchange**。
 
-4. 在 EAC 中，移至 [**郵件流程** \> **規則**，然後選擇 [**新增** ![[新增] 圖示](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱[Exchange 系統管理中心在 Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，移至 [**郵件流程** \> **規則**，然後選擇 [**新增** ![[新增] 圖示](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱[Exchange 系統管理中心在 Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 [**名稱**] 中，輸入規則名稱，例如 Encrypt mail for DrToniRamos@hotmail.com。
 
@@ -82,7 +82,7 @@ ms.locfileid: "41595338"
 
 4. 在 EAC 中，移至 [郵件流程]**** \> [規則]****。
 
-5. 在 [郵件流程規則] 清單中選取您想要修改以使用全新的 OME 功能]，然後選擇 [**編輯**的規則![編輯圖示](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)。
+5. 在 [郵件流程規則] 清單中選取您想要修改以使用全新的 OME 功能]，然後選擇 [**編輯**的規則![編輯圖示](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)。
 
 6. 若要啟用加密使用全新的 OME 功能，從**執行下列動作**，選擇 [**修改郵件安全性**，然後選擇**適用於 Office 365 郵件加密和權限保護**。 從清單中選取的 RMS 範本，選擇 [**儲存]** ，然後選擇 [**確定]**。
 
@@ -106,7 +106,7 @@ ms.locfileid: "41595338"
 
 3. 在 Microsoft 365 系統管理中心中，選擇 [**系統管理中心** \> **Exchange**。
 
-4. 在 EAC 中，移至 [**郵件流程** \> **規則**，然後選擇 [**新增** ![[新增] 圖示](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱[Exchange 系統管理中心在 Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，移至 [**郵件流程** \> **規則**，然後選擇 [**新增** ![[新增] 圖示](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱[Exchange 系統管理中心在 Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 [**名稱**] 中，輸入規則名稱，例如 Encrypt mail for DrToniRamos@hotmail.com。
 
@@ -164,7 +164,7 @@ ms.locfileid: "41595338"
 
 3. 在 Microsoft 365 系統管理中心中，選擇 [**系統管理中心** \> **Exchange**。
 
-4. 在 EAC 中，移至 [**郵件流程** \> **規則**，然後選擇 [**新增** ![[新增] 圖示](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱[Exchange 系統管理中心在 Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，移至 [**郵件流程** \> **規則**，然後選擇 [**新增** ![[新增] 圖示](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱[Exchange 系統管理中心在 Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 [**名稱**] 中，輸入規則名稱，例如 Remove encryption，從內送郵件。
 
@@ -172,7 +172,7 @@ ms.locfileid: "41595338"
 
 7. 在 [**執行下列動作**，選取 [**修改郵件安全性** \> **OME 的先前版本中移除**。
 
-8. 選取 [儲存]****。
+8. 選取 **[儲存]**。
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>使用 Exchange Online PowerShell 來建立規則，以移除全新的 OME 功能不加密的電子郵件回覆的加密
 

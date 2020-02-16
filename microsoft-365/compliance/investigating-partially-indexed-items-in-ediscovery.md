@@ -1,5 +1,7 @@
 ---
 title: 調查 Office 365 電子文件探索中已局部編製索引的項目
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: 已局部編製索引的項目 （也呼叫未建立索引的項目） 是 Exchange 信箱項目和文件在 SharePoint 和 OneDrive 網站，如某個原因而未完全編製索引的內容搜尋。 在本文中了解為何無法編製索引的搜尋項目，並已局部編製索引的項目所傳回、 識別搜尋錯誤的已局部編製索引的項目，並使用 PowerShell 指令碼來判斷您的組織暴露於已局部編製索引的電子郵件項目。
-ms.openlocfilehash: 4e1430fe80c01b1cc9e67777c6955790ea1c6540
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: b67b7d5cfedd37315a9f8bc9027e03b820598846
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38685596"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072339"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>調查 Office 365 電子文件探索中已局部編製索引的項目
 
@@ -49,7 +51,7 @@ ms.locfileid: "38685596"
 
 若要了解您的組織暴露於已局部編製索引的項目，您可以執行所有內容搜尋所有信箱中 （藉由使用空白的關鍵字查詢）。 在下面的下列範例中，有 56,208 (4,830 MB) 完全編製索引項目和 470 (316 MB) 已局部編製索引的項目。
   
-![範例搜尋統計資料顯示的已局部編製索引的項目](media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
+![範例搜尋統計資料顯示的已局部編製索引的項目](../media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
   
 您可以使用下列計算判斷百分比的已局部編製索引的項目。
   
@@ -74,7 +76,7 @@ ms.locfileid: "38685596"
 
 在情況下當您要檢查部分項目來驗證它們不包含的相關資訊，您可以[匯出內容搜尋報告](export-a-content-search-report.md)包含已局部編製索引項目的相關資訊。 當您匯出內容搜尋報告時，請務必選擇其中一個包含已局部編製索引的項目匯出選項。 
   
-![選擇 [匯出已局部編製索引的項目第二個或第三個選項](media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
+![選擇 [匯出已局部編製索引的項目第二個或第三個選項](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
   
 當您匯出內容搜尋結果] 或 [內容搜尋報告使用其中一個選項時，匯出包含名為未編製索引的 Items.csv 報表。 此報告中包含大部分的 ResultsLog.csv 檔案; 相同的資訊不過，未編製索引的 Items.csv 檔案也包含兩個欄位相關的已局部編製索引的項目：**錯誤標記**與**Error 屬性**。 這些欄位包含每個已局部編製索引項目的索引錯誤的相關資訊。 使用這兩個欄位中的資訊可協助您判斷針對特定的索引時發生錯誤會影響您調查。 如果是的話，您可以執行已設定目標內容搜尋和擷取及匯出特定的電子郵件與 SharePoint 或 OneDrive 文件，以便您可以檢查它們，以判斷如果它們相關您調查。 如需逐步指示，請參閱[準備 Office 365 中已設定目標內容搜尋的 CSV 檔案](csv-file-for-an-id-list-content-search.md)。
   
@@ -164,7 +166,7 @@ ms.locfileid: "38685596"
   
 ```
 
-2. [連接到安全性 & 合規性中心 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084)。
+2. [連線到安全性與合規性中心 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084)。
     
 3. 在安全性 & 合規性中心 PowerShell，移至您在步驟 1，儲存指令碼的所在資料夾，然後執行指令碼。例如：
 
@@ -174,7 +176,7 @@ ms.locfileid: "38685596"
 
 以下是範例的指令碼所傳回的輸出。
   
-![輸出會產生報告，以在您的組織暴露於已局部編製索引的電子郵件項目上的指令碼範例](media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
+![輸出會產生報告，以在您的組織暴露於已局部編製索引的電子郵件項目上的指令碼範例](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
   
 注意下列事項：
   
@@ -182,6 +184,6 @@ ms.locfileid: "38685596"
     
 2. 清單錯誤標記與之對應的檔案類型，發生錯誤。
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [位於 Office 365 中內容搜尋的已局部編製索引項目](partially-indexed-items-in-content-search.md)

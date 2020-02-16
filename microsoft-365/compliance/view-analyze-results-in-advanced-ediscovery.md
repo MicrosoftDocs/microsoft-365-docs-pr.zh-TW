@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: '了解要檢視 Office 365 進階電子文件探索，包括顯示的工作選項的定義中的分析處理的結果。  '
-ms.openlocfilehash: 9e06770135afd62a39115c9365a698df4493bd72
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bac173beebe2fdf3d07122bfca04cbaaee6410e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597250"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069176"
 ---
 # <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中檢視分析結果
 
@@ -34,7 +34,7 @@ ms.locfileid: "41597250"
 
 在 [**準備\>分析\>結果\>任務狀態**、 期間和之後分析處理程序執行，會顯示狀態。 
   
-![分析工作狀態](media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
+![分析工作狀態](../media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   
 顯示的工作會視所選取的選項而異。 
   
@@ -73,7 +73,7 @@ ms.locfileid: "41597250"
     
 **附件**結果會顯示附件，根據這類為唯一的類型和重複項目數目。 
   
-![近似重複項目和電子郵件執行緒](media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
+![近似重複項目和電子郵件執行緒](../media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
   
 ## <a name="see-also"></a>另請參閱
 

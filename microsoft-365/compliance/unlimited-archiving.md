@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解自動展開封存在 Office 365 中，可提供無限制的封存儲存 Exchange Online 信箱。
-ms.openlocfilehash: e7d004c7ef92fbcb331191432a70114f36dabc07
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 42318bf2ff102e6197800b2d6cba8b5c9132bcf9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601361"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069431"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>在 Office 365 中的無限制封存概觀
 
@@ -41,7 +41,7 @@ Office 365 （稱為*自動展開封存*） 中的無限制封存功能提供封
 
 以下是程序的簡要概觀。
 
-![自動展開封存程序概觀](media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
+![自動展開封存程序概觀](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
 
 1. 使用者信箱或共用的信箱啟用封存。 會建立封存信箱具有 100 GB 的儲存空間，且封存信箱的 [警告] 配額設為 90 GB。
 
@@ -67,11 +67,11 @@ Office 365 （稱為*自動展開封存*） 中的無限制封存功能提供封
 
  **之前新增額外儲存空間**
 
-![之前已佈建自動展開封存的封存信箱的資料夾清單](media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
+![之前已佈建自動展開封存的封存信箱的資料夾清單](../media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
 
  **之後新增額外儲存空間**
 
-![之後已佈建自動展開封存的封存信箱的資料夾清單](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
+![之後已佈建自動展開封存的封存信箱的資料夾清單](../media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
 
 > [!NOTE]
 > 如先前所述，Office 365 將項目移至子資料夾 （以及它們使用的命名慣例上面所述的名稱），協助分配到輔助封存的內容。 但是，將項目移至子資料夾不一定大小寫。 有時整個資料夾可能會移到輔助封存。 在此情況下，該資料夾會保留其原始的名稱。  它不會明顯資料夾已移至輔助封存在 Outlook 中的資料夾清單。

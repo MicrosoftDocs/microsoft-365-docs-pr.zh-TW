@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 此深入了解導向建議可協助保護敏感內容安全性，當已儲存，並在 Office 365 中共用的通知您何時中的有可能間隔貴組織 DLP 原則涵蓋範圍。 您會看到這項建議在首頁上的安全性&amp;合規性中心，如果您的文件包含任何的前五個最常見的敏感資訊類型，但不會受到 DLP 原則。
-ms.openlocfilehash: 3bbdbd230e9ae28136bcd89df46f0e9c10cb80fb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7fb99942a2288a2545123d44ebdfde89b449edc3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596350"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073199"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>開始使用 DLP 原則建議
 
@@ -26,7 +26,7 @@ ms.locfileid: "41596350"
   
 您可以使用此 widget 快速地建立自訂的 DLP 原則中按一下 [或兩個，並建立此 DLP 原則之後，它可完全自訂。 請注意，如果您沒有看到一開始，建議嘗試按一下 [ **+ 詳細**底部的 [**為您的建議**] 區段中。 
   
-![名為不受保護的敏感資訊的小工具](media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
+![名為不受保護的敏感資訊的小工具](../media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
   
 ## <a name="create-the-recommended-dlp-policy"></a>建立建議的 DLP 原則
 
@@ -48,7 +48,7 @@ ms.locfileid: "41596350"
     
 如果您想要稍後變更這些選項，您可以在建立之後編輯 DLP 原則。 例如，您可以讓原則成為更嚴格由即使封鎖從共用內容包含敏感資訊的人員在第一時間-請參閱下一節。
   
-![[] 小工具設定名為不受保護的敏感資訊](media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
+![[] 小工具設定名為不受保護的敏感資訊](../media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
   
 ## <a name="edit-the-recommended-dlp-policy"></a>編輯建議的 DLP 原則
 
@@ -56,7 +56,7 @@ ms.locfileid: "41596350"
   
 根據預設，原則名為**共用敏感資訊的系統建議的原則**。 此原則可完全自訂，任何，從頭開始建立您自己的 DLP 原則相同。 例如，如果您決定不使用 [] 小工具時，開啟附隨報告 」 和 「 原則提示，您可以一律編輯原則並隨時開啟這些選項。
   
-![建議原則共用敏感資訊的系統](media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
+![建議原則共用敏感資訊的系統](../media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>當] 小工具會以及不會出現
 

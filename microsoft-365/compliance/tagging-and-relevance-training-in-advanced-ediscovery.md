@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: '了解標記的步驟，然後會使用 Office 365 進階電子文件探索的相關性訓練階段期間的訓練樣本的 40 個檔案。  '
-ms.openlocfilehash: fa690857fabb6a732d329dc8a75896d9e1aa195d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0565fa29f79a5269631539939c749a9ad93a029c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601420"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069559"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>標記與相關性訓練中 Office 365 進階電子文件探索
 
@@ -36,7 +36,7 @@ ms.locfileid: "41601420"
 
 1. 在**相關性\>標籤**] 索引標籤，[標記] 窗格中顯示的左的窗格及顯示檔案的範例中的預設值，用於標示一次一個。 
     
-    ![相關性標籤面板](media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
+    ![相關性標籤面板](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
     在 [**標籤**] 索引標籤會顯示檔案的顯示名稱。 這可能是路徑、 電子郵件主旨、 標題、 或使用者定義的名稱。 ID、 檔案路徑或文字路徑可以被複製檔案的路徑上按一下滑鼠右鍵。 
     
@@ -58,7 +58,7 @@ ms.locfileid: "41601420"
     
     （選用) 在 [**標籤**] 索引標籤中，按一下 [**標記設定**來設定下列選項： 
     
-    ![相關性標籤設定](media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
+    ![相關性標籤設定](../media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
   
   - **大量標記**： 使用此選項可透過選取**所有**設定的所有問題 （覆寫已標記問題） 選取的檔案的標籤或選取**其餘**的其餘的無標記問題套用標籤指派多個問題的檔案。 所選取的選項保持作用中的所有使用者的情況下變更該使用者，才能 （設定為每位使用者的所有使用者的情況下）。 
     
@@ -80,7 +80,7 @@ ms.locfileid: "41601420"
   
 1. 在**相關性\>標籤**索引標籤上，選取左的窗格下拉式清單中的範例檔案。 在左窗格中列出的範例檔案。 
     
-    ![相關性標籤範例檔案清單](media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
+    ![相關性標籤範例檔案清單](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
 2. 藉由輸入或選取其數字**範例**或**檔案**] 方塊中選取一個特定的範例或檔案數目。 
     

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: cde55f9dd3a1a9aacc48ba816cd0ef00472dad56
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 5636e2e6186107bee3a0116d203910bc7b766990
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661739"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069010"
 ---
 # <a name="view-documents-in-a-review-set"></a>檢視檢閱集中的文件
 
@@ -36,14 +36,14 @@ ms.locfileid: "41661739"
 此面板可以切換為開啟/關閉顯示各種文件相關聯的中繼資料。 雖然可以自訂搜尋結果方格，以顯示特定的中繼資料，但有其中水平捲動可能很難同時檢閱資料的執行個體。 檔案中繼資料] 面板可讓使用者在檢視器中檢視切換。
 
 ![檔案中繼資料] 面板
-](media/Reviewimage2.png)
+](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>原生檢視
 
 原生檢視器會顯示最豐富的文件檢視。 它支援數百個檔案類型，用來顯示 truest 可能的原生經驗。 Microsoft Office 檔案，請檢視器會使用 web 版本的 Office 應用程式，來顯示內容，例如文件的註解、 Excel 公式、 隱藏的列/欄和 PowerPoint 備忘稿。
 
 ![原生檢視
-](media/Reviewimage3.png)
+](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>文字檢視
 
@@ -56,10 +56,10 @@ ms.locfileid: "41661739"
   - Diff 檢視提供比較檢視，檢視接近重複的文件時，會醒目提示文字的差異
 
 ![文字檢視
-](media/Reviewimage4.png)
+](../media/Reviewimage4.png)
 
 ![Diff 檢視
-](media/Reviewimage5.png)
+](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>加上註解檢視
 
@@ -86,7 +86,7 @@ ms.locfileid: "41661739"
   - 搜尋 – 使用者可以在文件中搜尋和瀏覽至文件內各種拜訪人次
     
     ![加上註解檢視
-    ](media/Reviewimage1.png)
+    ](../media/Reviewimage1.png)
 
 ## <a name="dashboard-view"></a>儀表板檢視 
 儀表板檢視可讓您可以視覺化和彙總您的搜尋結果方格中的資料。 在此檢視中，您可以建立自訂的 widget，以進行分析和報告上檢閱設定直覺式且容易。 一旦您建立您 widget，您可以與其互動以取得項目計數或建立搜尋。 

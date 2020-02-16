@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 進階電子文件可以輕鬆管理周圍通知 custodians 法律調查中的合法持有通知工作流程。
-ms.openlocfilehash: ffad61d5bc00202f7f72f6f9021b4f62e81fef96
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ca3e5a8e500f6a8e5a5483ccc3efd070c05c5cd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582742"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071580"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>使用進階電子文件中的通訊
 

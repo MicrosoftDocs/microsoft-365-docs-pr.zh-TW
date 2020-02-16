@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 是 Office 365 系統管理員，您可以撤銷某些使用 Office 365 進階郵件加密所加密的電子郵件。
-ms.openlocfilehash: 9d694c200df161c0a52884ded14d29908376a9b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6cbe0704d6e84282d71c37c72a45712c30f3ac61
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597600"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070032"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>撤銷由 Office 365 進階郵件加密所加密的電子郵件
 
@@ -41,7 +41,7 @@ ms.locfileid: "41597600"
 
 當使用者透過 Office 365 郵件加密入口網站存取加密的電子郵件收件者之後已撤銷電子郵件，會收到錯誤: 「 寄件者，該訊息已被撤銷 」。
 
-![螢幕擷取畫面顯示 [撤銷加密的電子郵件。](media/revoked-encrypted-email.png)
+![螢幕擷取畫面顯示 [撤銷加密的電子郵件。](../media/revoked-encrypted-email.png)
 
 ## <a name="how-to-revoke-an-encrypted-email"></a>若要撤銷加密的電子郵件的方式
 

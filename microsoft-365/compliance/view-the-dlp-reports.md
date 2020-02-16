@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 中的 DLP 報告，您可以快速檢視 DLP 原則相符項目、 覆寫或誤判; 的數請參閱是否它們在一段時間; 趨勢向上或向下以不同方式; 篩選報表然後選取圖形上線條上的一點檢視其他詳細資料。
-ms.openlocfilehash: 1605e2ebed9ada5903402ae5facdb40ce2f12c39
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c00047680f684e3845c4383face09c2cee579721
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601230"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068747"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>檢視資料外洩防護報告
 
@@ -59,19 +59,19 @@ ms.locfileid: "41601230"
   
 您可以在安全性中找到這些報告&amp;合規性中心\>**報表** \> **儀表板**。
   
-![DLP 原則相符項目報告](media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+![DLP 原則相符項目報告](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
 ## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>檢視覆寫使用者所提交的理由
 
 如果您的 DLP 原則允許使用者覆寫它，您可以使用誤判和覆寫報告] 來檢視提交的原則提示的文字。
   
-![理由欄位中的 DLP 誤判和覆寫報告詳細資料](media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![理由欄位中的 DLP 誤判和覆寫報告詳細資料](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
 ## <a name="take-action-on-insights-and-recommendations"></a>採取動作的見解和建議
 
 報告可以顯示見解和建議您將可以按一下 [請參閱潛在問題的詳細資料，並採取可能的補救措施的紅色警告圖示。
   
-![按一下以查看詳細資料，要採取的動作觀點圖示](media/51782036-7299-4960-8175-75c2b1637159.png)
+![按一下以查看詳細資料，要採取的動作觀點圖示](../media/51782036-7299-4960-8175-75c2b1637159.png)
   
 ## <a name="permissions-for-dlp-reports"></a>DLP 報告的權限
 

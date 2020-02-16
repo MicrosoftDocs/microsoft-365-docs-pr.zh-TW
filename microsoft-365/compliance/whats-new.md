@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我們持續正在新增至 Microsoft 365 合規性中心的新功能、 修正的問題我們了解，並變更根據您的意見反應。 了解我們已經被最本月多。
-ms.openlocfilehash: 2ec046b6b5aa78e5eb44bbe6eebff222752f9c18
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: c3537657eb0bd3bf5b31f1b90c513c3e49eef000
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774199"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068683"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>What's new in Microsoft 365 合規性中心
 
@@ -32,11 +32,71 @@ ms.locfileid: "41774199"
 > 感興趣其他系統管理中心中運作？ 請參閱下列文章：<br>[What's new in Microsoft 365 系統管理中心](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[什麼是 SharePoint 系統管理中心新增](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
 請造訪[Microsoft 365 藍圖](https://www.microsoft.com/en-us/microsoft-365/roadmap)以了解 Microsoft 365 功能已啟動、 已推出、 開發中、 已取消或先前發行。
 
+## <a name="january-2020"></a>2020 年 1 月
+
+等候是透過。 對我們感感到滿意宣佈 Microsoft 365 合規性中心 」 是可供所有客戶使用 Microsoft 365、 Office 365、 Enterprise Mobility + Security (EMS) 和 Windows 10 企業版計劃。 任何資料或原則所管理 Office 365 安全性 & 合規性中心中可用的合規性中心，因此不需要在來回跳轉。
+
+> [!TIP]
+> 讀取到上個月的更新一次重新整理程式一些我們在預覽最近，以及顯示從 Office 365 安全性 & 合規性中心的符合性功能現在居住在 Microsoft 365[藍圖](#updated-compliance-solutions)的[新的解決方案](#new-compliance-solutions)。
+
+書籤，請前往透過現在以[https://compliance.microsoft.com](https://compliance.microsoft.com)若要巡覽您一個停駐點商店規範管理跨貴..若要深入了解更多的位元[： 閱讀本篇文章](microsoft-365-compliance-center.md)或者。
+
+![Microsoft 365 合規性中心首頁](../media/mcc-home-ga.png)
+
+我們也發行最新及更新解決方案這個月。 以下是的快速概覽，反白顯示。
+
+### <a name="now-in-preview"></a>現在存在於預覽
+
+**測試人員風險管理 （預覽）**
+
+我們很樂於宣布，我們測試人員風險管理解決方案現在是公開預覽。 總而言之，測試人員風險管理可協助組織聰明地識別並採取測試人員風險中的動作，藉由提供：
+
+- 匿名控制，以協助確保使用者的隱私權。
+- 原生和第三方識別測試人員威脅，例如資料外洩的指標的智慧型原則範本。
+- 整合跨越的端對端調查工作流程 IT，HR 和法務小組。
+
+我們很樂於聽到您的想法。 當您使用解決方案，提供意見反應給我們因此我們可以確保我們正在會議您的需求，我們為 head 聚集一般可用性。
+
+[深入了解測試人員風險管理](insider-risk-management.md)
+
+### <a name="just-launched"></a>只要啟動
+
+**通訊合規性**
+
+從 「 預覽 」 階段畢業完整的可用性，通訊的合規性是我們測試人員風險解決方案一組新的主要元件。 此健全的解決方案可協助使用工作流程來偵測、 調查，並採取補救動作的郵件不符合您組織的標準的通訊風險降到最低。
+
+客戶的意見反應，在預覽期間已創造精彩。 它會導致幾個增強功能，包括您快速上手，初次執行體驗調查並修復動作及更多的改良功能。
+
+[深入了解通訊合規性](communication-compliance.md)
+
+![通訊 Microsoft 365 合規性中心顯示第一個卡中的歡迎使用經驗的符合性] 頁面上](../media/mcc-communication-compliance-page-with-fre.png)
+
+**資料連接器**
+
+先前共用的空間與其他 Office 365 安全性 & 合規性中心中的 '匯入' 功能] 中，資料連接器現在有其自己的首頁在 Microsoft 365 合規性中心。 使用新的 「 資料連接器' 頁面來匯入和封存信箱您 Microsoft 365 組織中將資料從貴組織的人力資源 (HR) 檔案和各種協力廠商平台 （例如 Facebook、 LinkedIn、 Twitter 和立即 Bloomberg）。 匯入之後，此資料可以管理在數個合規性解決方案，包括電子文件探索、 測試人員風險管理、 通訊合規性、 稽核、 保留原則等等。
+
+[深入了解資料連接器](archiving-third-party-data.md)
+
+![在 Microsoft 365 合規性中心中的資料連接器] 頁面上](../media/mcc-data-connectors-page.png)
+
+### <a name="noteworthy-updates"></a>值得注意的更新
+
+**合規性分數 （預覽） 的新評估範本**
+
+努力硬式項目可協助您開始之前不斷演變規範橫向中，我們的合規性分數小組運送一組新的範本，可協助您評估您的組織針對最近法規合規性狀態，並取得如何實作指南更有效率的控制項。 您會看到新範本：
+
+- ISO/IEC 27701:2019
+- 加州消費者隱私法 (CCPA)
+- 一般資料保護法律巴西 (Lei Geral de Proteção de Dados-LGPD)
+- SOC 1 2 類型和 SOC 2 輸入 2
+
+[深入了解合規性分數範本](compliance-score.md#templates)
+
 ## <a name="november--december-2019"></a>11 月 # A0 年 12 月 2019
 
 透過假日] 下，我們已啟動推行解決方案已示範固然 Ignite 處的所有絕佳合規性。 大部分都是處於預覽狀態，因此進行測試時，請務必讓我們知道您的想法開啟在右下角的合規性中心的 [意見反應] 卡片。
 
-![意見反應](media/Feedback_card_MCC.JPG)
+![意見反應](../media/Feedback_card_MCC.JPG)
 
 ### <a name="get-to-know-the-new-neighborhood"></a>認識新上的芳鄰]
 
@@ -74,12 +134,12 @@ ms.locfileid: "41774199"
 |警示原則|在提醒 > 警示原則 <br/> https://protection.office.com/alertpolicies |在這個階段中，只能在 Office 365 安全性 & 合規性中心中管理警示原則。 |[在安全性與合規性中心中的警示原則](alert-policies.md) |
 |警示|警示 > 檢視警示 <br/> https://protection.office.com/viewalerts |警示 <br/> https://compliance.microsoft.com/compliancealerts |[檢視警示](alert-policies.md#viewing-alerts)|
 |封存|資訊控管 # A0 封存 <br/> https://protection.office.com/archiving |資訊控管 > 封存] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[啟用封存信箱](enable-archive-mailboxes.md)|
-|稽核記錄檔搜尋|搜尋 > 稽核記錄搜尋 <br/> https://protection.office.com/unifiedauditlog |在這個階段中，您可以僅搜尋從 Office 365 安全性 & 合規性中心的稽核記錄。| [在安全性 & 規範中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)|
+|稽核記錄檔搜尋|搜尋 > 稽核記錄搜尋 <br/> https://protection.office.com/unifiedauditlog |稽核 <br/> https://compliance.microsoft.com/auditlogsearch| [在安全性 & 規範中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)|
 |內容搜尋|搜尋 > 內容搜尋 <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | 內容搜尋 <br/> https://compliance.microsoft.com/contentsearch |[在 Office 365 中搜尋內容](search-for-content.md) |
 |資料連接器|資訊控管 # A0 封存協力廠商資料 <br/> https://protection.office.com/nativeconnector | 資料連接器 <br/> https://compliance.microsoft.com/connectorlanding |[封存協力廠商資料](archiving-third-party-data.md)|
 |資料外洩防護|資料外洩防護 <br/> https://protection.office.com/datalossprevention |資料外洩防護 <br/> https://compliance.microsoft.com/datalossprevention |[資料外洩防護概觀](data-loss-prevention-policies.md)|
 |資料主體要求 |資料隱私權 > 資料主體要求 <br/> https://protection.office.com/dsrcases |資料主體要求 <br/> https://compliance.microsoft.com/datasubjectrequest |[管理 GDPR 資料主體要求使用 DSR 案例工具](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
-|電子文件探索|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery # A0 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理電子文件探索案例](ediscovery-cases.md) |
+|eDiscovery|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery # A0 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理電子文件探索案例](ediscovery-cases.md) |
 |事件|記錄管理 # A0 事件 <br/> https://protection.office.com/events |記錄管理 > 事件] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[事件導向保留的概觀](event-driven-retention.md)|
 |檔案計畫|記錄管理 > 檔案計劃 <br/> https://protection.office.com/fileplan |記錄管理 > 檔案計劃] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[檔案計劃管理員的概觀](file-plan-manager.md)|
 |匯入 PST 檔案|資訊控管 > 匯入 PST 檔案 <br/> https://protection.office.com/importV2 |資訊控管 > 匯入] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[匯入組織的 PST 檔案的概觀](importing-pst-files-to-office-365.md)|
@@ -87,7 +147,7 @@ ms.locfileid: "41774199"
 |保留標籤和標籤原則 |分類 > 保留標籤 > 標籤和標籤原則] 索引標籤 <br/> https://protection.office.com/retentionlabels |資訊控管 > 標籤並將標籤原則] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [保留標籤概觀](labels.md)|
 |保留原則|資訊控管 # A0 保留 <br/> https://protection.office.com/retention |資訊控管 > 保留] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[保留原則概觀](retention-policies.md)|
 |機密資訊類型|分類 > 機密資訊類型 <br/> https://protection.office.com/sensitivetypes |資料分類 > 機密資訊類型] 索引標籤 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)|
-|敏感度標籤和標籤原則|分類 > 敏感度標籤 > 標籤和標籤原則] 索引標籤 <br/> https://protection.office.com/sensitivity |資訊保護 > 標籤並將標籤原則] 索引標籤 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[敏感度標籤概觀](sensitivity-labels.md) |
+|敏感度標籤和標籤原則|分類 > 敏感度標籤 > 標籤和標籤原則] 索引標籤 <br/> https://protection.office.com/sensitivity |資訊保護 > 標籤並將標籤原則] 索引標籤 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[了解敏感度標籤](sensitivity-labels.md) |
 |服務保證|服務保證 <br/> https://protection.office.com/serviceassurance/dashboard |在這個階段中，服務保證資源只可以存取 Office 365 安全性 & 合規性中心。 |[安全性 & 合規性中心中的服務保證](service-assurance.md)|
 |監督|監督 <br/> https://protection.office.com/supervisoryreviewv2 |通訊合規性 <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 （預覽） 的通訊合規性](communication-compliance.md) |
 
@@ -124,4 +184,4 @@ ms.locfileid: "41774199"
 
 不需捲動 sea 的報告，找出您想。 您可以現在 （根據其標題） 的報告和類別篩選搜尋 like '標籤' 和 '規範' 和 'Office 365' 和' Microsoft Cloud App Security' 等的來源。
 
-![報告與套用的篩選器搜尋和篩選按鈕的螢幕擷取畫面](media/mcc_report_filtering.png)
+![報告與套用的篩選器搜尋和篩選按鈕的螢幕擷取畫面](../media/mcc_report_filtering.png)

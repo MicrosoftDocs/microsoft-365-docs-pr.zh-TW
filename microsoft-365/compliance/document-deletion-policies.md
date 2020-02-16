@@ -14,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: 基於規範、法律或其他商業需求，您的組織可能需要將文件保留一段時間。 但如果您的組織保留文件的時間過久，則會產生不必要的法律風險。 使用文件刪除原則，您可以在一段特定時間後，透過刪除網站上的文件以積極降低風險 - 例如，您可以在文件建立五年之後，在使用者的商務用 OneDrive 網站上刪除文件。
-ms.openlocfilehash: ac2bdfcd262a673af1078b2ed0a274fcd0b9d3b9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 60bf7808daad3eaead99ef64ea24be0bcfd9be0e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595208"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075195"
 ---
 # <a name="overview-of-document-deletion-policies"></a>文件刪除原則概觀
 
@@ -40,7 +40,7 @@ ms.locfileid: "41595208"
     
 您可以使用「文件刪除原則中心」建立和管理文件刪除原則。 或者，您可以[建立網站集合](https://go.microsoft.com/fwlink/p/?LinkID=404342)，並在 [企業]**** 索引標籤上選擇 [合規性原則中心]****，以手動方式建立原則中心。每個租用戶只能有一個「文件刪除原則中心」。 
   
-![文件刪除原則中心的首頁](media/IP-Document-Deletion-Policy-Center-home-page.png)
+![文件刪除原則中心的首頁](../media/IP-Document-Deletion-Policy-Center-home-page.png)
   
 ## <a name="when-to-use-document-deletion-policies"></a>文件刪除原則的使用時機
 
@@ -56,7 +56,7 @@ ms.locfileid: "41595208"
   
 文件刪除原則不應取代記錄管理或資訊管理原則，因為這些都是最適用於結構化資料和內容類型的功能。 正確來說，您應在需要概括管理非結構化資料 (例如 OneDrive for Business 站台和小組站台) 的自動刪除時，使用文件刪除原則。
   
-![顯示網站內容保留選項的圖表](media/IP-Retention-policies-for-site-content.png)
+![顯示網站內容保留選項的圖表](../media/IP-Retention-policies-for-site-content.png)
   
 如果您將文件刪除原則套用至已對清單或文件庫使用內容類型原則或資訊管理原則的站台，這些原則將會被忽略，而文件刪除原則會有效用。 這表示，您在規劃站台時應僅使用適用於結構化或非結構化內容的原則，而非同時使用兩種原則。 如需有關文件刪除原則會如何覆寫其他原則的詳細資訊，請參閱[套用或移除網站的文件刪除原則](apply-or-remove-a-document-deletion-policy-for-a-site.md)。
   
@@ -74,13 +74,13 @@ ms.locfileid: "41595208"
     
 如果原則包含多個規則，站台擁有者可以從中選取最適用於其內容的規則。
   
-![新增刪除規則頁面](media/IP-New-deletion-rule.png)
+![新增刪除規則頁面](../media/IP-New-deletion-rule.png)
   
 ## <a name="policies-and-assignments"></a>原則和指派
 
 建立文件刪除原則後，您可以將其指派至網站集合範本；例如，您可以將原則指派至商務用 OneDrive 範本，使其包含每個使用者的 OneDrive 網站。 當您將原則指派至站台集合範本時，該範本不僅會套用至往後任何從該範本建立的站台集合，也會套用至已從該範本建立的所有站台集合。
   
-![選擇範本頁面，顯示 OneDrive 選項](media/IP-Choose-a-template.png)
+![選擇範本頁面，顯示 OneDrive 選項](../media/IP-Choose-a-template.png)
   
 您也可以將原則指派至特定站台集合 — 這會覆寫任何已指派至該站台集合範本的原則。例如，您可以將原則指派至「小組站台」範本，但接著將不同的原則集套用至建立自該範本的特定站台集合，而覆寫該原則。
   
@@ -106,7 +106,7 @@ ms.locfileid: "41595208"
   
 對一個站台集合或站台集合範本可以指派一或多個原則，且其中每個原則都可以有一或多個規則。 但是，每個網站只能有一個作用中的原則，而對於網站中的文件庫，則只能有一個刪除原則可以隨時發生作用。
   
-![顯示原則間關係的圖表](media/IP-Two-policies-four-rules.png)
+![顯示原則間關係的圖表](../media/IP-Two-policies-four-rules.png)
   
 ## <a name="document-deletion-policies-are-inherited"></a>繼承文件刪除原則
 

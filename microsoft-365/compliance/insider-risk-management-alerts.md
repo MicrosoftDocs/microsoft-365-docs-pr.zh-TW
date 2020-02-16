@@ -1,7 +1,7 @@
 ---
 title: 測試人員風險管理提醒
 description: 了解 Microsoft 365 測試人員風險管理警示
-keywords: Microsoft 365，測試人員風險、 風險管理、 合規性
+keywords: Microsoft 365、測試人員風險、風險管理、合規性
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 80c5bb701c7805f673280d24903935c2951046b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d1946bb3667fbdde6e7d2c3fbc70f8f546890e27
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590794"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072880"
 ---
 # <a name="insider-risk-management-alerts-preview"></a>測試人員風險管理警示 （預覽）
 
@@ -34,7 +34,7 @@ ms.locfileid: "41590794"
     - 若要解決中嚴重性提醒、 小時、 數天或每個月所列的平均時間。
     - 若要解決低嚴重性提醒、 小時、 數天或每個月所列的平均時間。
 
-![測試人員風險管理警示儀表板](media/insider-risk-alerts-dashboard.png)
+![測試人員風險管理警示儀表板](../media/insider-risk-alerts-dashboard.png)
 
 ## <a name="alert-status-and-severity"></a>警示的狀態和嚴重性
 

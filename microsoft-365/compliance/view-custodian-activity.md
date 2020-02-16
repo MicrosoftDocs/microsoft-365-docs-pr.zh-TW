@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 46dffe5c388f247604bc67dc24916206452745da
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3371587513b16703fa1ead1170f599c406cb6fd2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597260"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069069"
 ---
 # <a name="view-custodian-audit-activity"></a>檢視 custodian 稽核活動
 
@@ -44,19 +44,19 @@ ms.locfileid: "41597260"
 
     Custodian 活動搜尋頁面隨即顯示。 附註您在上一個步驟中選取 custodian 會顯示在**Custodian**下拉式方塊。 您可以在下拉式方塊中，選取不同的 custodians，但您可以僅搜尋活動的一個 custodian 一次。
 
-    ![Custodian 活動搜尋頁面](media/AeDCustodianActivities1.png)
+    ![Custodian 活動搜尋頁面](../media/AeDCustodianActivities1.png)
    
 4. 設定下列搜尋準則：
       
    a. **活動**-按一下下拉式清單，顯示您可以搜尋的活動。 執行搜尋之後，會顯示只有選取活動的稽核記錄。 選取 [**顯示所有活動的結果**會顯示所有活動 custodian 所執行的其他搜尋準則相符的結果。
 
-      ![活動的清單](media/CustodianActivityAudit.PNG)
+      ![活動的清單](../media/CustodianActivityAudit.PNG)
       
       b. **開始日期和結束日期**-選取日期與時間範圍，以顯示該期間內發生的事件。 預設會選取過去 7 天。 日期和時間以國際標準時間 (UTC) 格式表示。 您可以指定的最大的日期範圍是一年。
       
       c. **Custodians** -按一下 [在這個方塊，然後選取 [顯示搜尋結果提供給特定 custodian。 選取您在此方塊中選取的使用者所執行的活動的稽核記錄會顯示在結果清單中。
       
-   5. 按一下   ![[搜尋] 按鈕](media/SearchButton.PNG)  若要執行搜尋使用您的搜尋準則。 載入的搜尋結果時，並在幾分鐘之後他們顯示的結果下 Custodian 活動的 [搜尋] 頁面上。 
+   5. 按一下   ![[搜尋] 按鈕](../media/SearchButton.PNG)  若要執行搜尋使用您的搜尋準則。 載入的搜尋結果時，並在幾分鐘之後他們顯示的結果下 Custodian 活動的 [搜尋] 頁面上。 
 
 ## <a name="step-2-view-the-audit-log-search-results"></a>步驟 2： 檢視稽核記錄搜尋結果
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f43510d0055a487cf1ee00e799a7244114016384
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f10995e5180afc0d8aa7de2b2fdb8040f0f838ac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582902"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072010"
 ---
 # <a name="manage-hold-notifications"></a>管理保留通知
 
@@ -64,7 +64,7 @@ ms.locfileid: "41582902"
 2. 一旦您已選取的情況下，瀏覽至 [**通訊**] 索引標籤。
 3. 選取 [保留請注意，您想要更新，然後按一下 [**編輯**]。
 4. 在 [編輯工作流程之後，選取 [**定義入口網站內容**] 並更新您通知的內容。 
-5. 按一下 [儲存]****。 儲存完畢後，重新發行通知會傳送至所有目前指派給合法持有通知 custodians。 此外，如果您啟用提醒/呈報流程通知，這些工作流程會重新啟動也。 
+5. 按一下 **[儲存]**。 儲存完畢後，重新發行通知會傳送至所有目前指派給合法持有通知 custodians。 此外，如果您啟用提醒/呈報流程通知，這些工作流程會重新啟動也。 
 
 
 #### <a name="update-legal-hold-notifications-and-settings"></a>更新法律保留通知和設定

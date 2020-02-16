@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 用於安全性 & 合規性中心的內容搜尋工具來搜尋並匯出在 Exchange 混合式部署中的內部部署使用者 MicrosoftTeams 聊天室資料 （稱為 1xN 聊天室）。
-ms.openlocfilehash: 042e34028023f1dd4f49804230fe99f2d042d0d6
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 40439c338e00e7ae94ff82ec4be1af78a250acd6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957138"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070006"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>在 Office 365 中搜尋內部部署使用者的雲端式的信箱
 
@@ -47,7 +47,7 @@ ms.locfileid: "41957138"
   
 下圖顯示如何小組聊天內部部署使用者的資料的工作流程的可搜尋、 預覽，並匯出。
   
-![Microsoft Teams 中的內部部署使用者的雲端儲存空間](media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
+![Microsoft Teams 中的內部部署使用者的雲端儲存空間](../media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
   
 除了這項新功能，您仍然可以使用內容搜尋搜尋、 預覽，並匯出雲端型 SharePoint 網站及 Exchange 信箱中的內容相關聯每個 Microsoft 小組及 1xN Teams 中的 Exchange Online 信箱的聊天室資料的小組雲端型使用者。
 
@@ -71,7 +71,7 @@ ms.locfileid: "41957138"
   
 - 在內容搜尋的**位置**會新增至**內部部署使用者的加入 Office 應用程式內容**] 核取方塊。 
     
-    ![「 新增內部部署使用者的 Office 應用程式內容 」] 核取方塊新增至 「 內容搜尋 UI](media/599e751e-17bd-408d-a18c-127538de6e85.png)
+    ![「 新增內部部署使用者的 Office 應用程式內容 」] 核取方塊新增至 「 內容搜尋 UI](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
   
 - 在您用來選取要搜尋的使用者信箱的內容位置選擇器中會顯示內部部署使用者。 
 
@@ -81,7 +81,7 @@ ms.locfileid: "41957138"
   
 1. 在 [安全性 & 合規性中心，移至**搜尋** \> **內容搜尋**
     
-2. 在 [**搜尋**] 頁面上，按一下 [![加入圖示](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)**新的搜尋**。
+2. 在 [**搜尋**] 頁面上，按一下 [![加入圖示](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif)**新的搜尋**。
     
     如先前所述，**內部部署使用者的加入 Office 應用程式內容**] 核取方塊會顯示在 [**位置**] 下。 預設會選取它。
     

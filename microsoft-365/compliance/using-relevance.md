@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ebf5490467ec041cb22c126ac75c90ae58deb942
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2ddc9a6ae868682a3a241e9896d3aa63ac46f985
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601270"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069153"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery"></a>使用相關性模組來分析進階電子文件中的資料
 
@@ -33,7 +33,7 @@ ms.locfileid: "41601270"
 
 相關性工作流程會顯示，並說明如下：
   
-![相關性工作流程](media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
+![相關性工作流程](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **循環的評估和追蹤**：
     

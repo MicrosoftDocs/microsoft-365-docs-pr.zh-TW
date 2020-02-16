@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 若要深入了解權限使用本主題存取 Office 365 中的管理
-ms.openlocfilehash: 29436c9f647de2844f95f05e66b3b6c05527352b
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.openlocfilehash: 8d1b6bbda57cbe51167c87a29e140e6b5f871bca
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784660"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070955"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Office 365 的 Privileged Access Management
 
@@ -37,7 +37,7 @@ ms.locfileid: "41784660"
 
 特殊權限存取管理輔助其他資料與存取權的功能保護 Office 365 安全性架構內。 包括安全性整合及分層方法的一部分的特殊權限的存取管理提供一種安全性模型，將最大化保護敏感資訊和 Office 365 組態設定。 此圖中，與原生 Office 365 資料加密和 Office 365 服務的角色型存取控制安全性模型提供的保護特殊權限的存取管理建置所示。 [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)搭配使用時，這兩項功能會提供與剛-階段存取在不同範圍的存取控制。
 
-![在 Office 365 中的分層的保護](media/pam-layered-protection.png)
+![在 Office 365 中的分層的保護](../media/pam-layered-protection.png)
 
 特殊權限存取管理 Office 365 中的定義及在**任務**層級設定範圍，而 Azure AD Privileged Identity Management 能夠執行多個任務套用**角色**層級的保護。 Azure AD 有權限身分識別管理主要允許管理 AD 角色和角色群組的存取，而特殊權限存取 Office 365 中的管理適用於僅在任務層級。
 
@@ -53,25 +53,25 @@ ms.locfileid: "41784660"
 
 當您使用[Microsoft 365 系統管理中心](https://admin.microsoft.com)或 Exchange Management PowerShell 設定特殊權限的存取原則時，並定義原則的特殊權限存取功能程序和 Office 365 substrate 中的原則屬性。 活動已登入 Office 365 安全性與合規性中心。 原則現已啟用，並準備好處理傳入要求核准。
 
-![步驟 1： 建立原則](media/pam-step1-policy-creation.jpg)
+![步驟 1： 建立原則](../media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>步驟 2： 存取要求
 
 在[Microsoft 365 系統管理中心](https://admin.microsoft.com)或 Exchange Management PowerShell，使用者可以要求存取較高權限或特殊權限的工作。 特殊權限的存取功能會將要求傳送至已設定特殊權限存取原則和記錄的 Office 365 安全性與合規性中心的記錄檔中的活動的處理 Office 365 substrate。
 
-![步驟 2： 存取要求](media/pam-step2-access-request.jpg)
+![步驟 2： 存取要求](../media/pam-step2-access-request.jpg)
 
 ### <a name="step-3-access-approval"></a>步驟 3： 存取權核准
 
 核准要求就會產生和擱置的要求通知電子郵件傳送至核准者。 如果核准，特殊權限的存取要求處理核准為且工作已完成。 如果拒絕時，會封鎖工作並沒有存取權授與給要求者。 要求者要求核准或拒絕透過電子郵件訊息的通知。
 
-![步驟 3： 存取權核准](media/pam-step3-access-approval.jpg)
+![步驟 3： 存取權核准](../media/pam-step3-access-approval.jpg)
 
 ### <a name="step-4-access-processing"></a>步驟 4： 存取處理
 
 核准要求，會由 Exchange 管理 runspace 處理工作。 核准是針對特殊權限的存取原則檢查，且由 Office 365 substrate 處理。 任務的所有活動會都記錄在 Office 365 安全性與合規性中心。
 
-![步驟 4： 存取處理](media/pam-step4-access-processing.jpg)
+![步驟 4： 存取處理](../media/pam-step4-access-processing.jpg)
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 

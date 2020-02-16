@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0da96fe4148ffc30ac8e2f7854157675786cd321
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
-ms.translationtype: HT
+ms.openlocfilehash: 5a3401b80469fa6d22d973204703a6b012ebb11b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582872"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072731"
 ---
 # <a name="insider-risk-management-in-microsoft-365-preview"></a>Microsoft 365 中的測試人員風險管理 (預覽版)
 
@@ -56,7 +56,7 @@ Microsoft 365 中的測試人員風險管理採用完整的服務和協力廠商
 
 使用下列工作流程，辨識並解決 Microsoft 365 中的測試人員風險管理的內部風險活動和合規性問題：
 
-![測試人員風險管理工作流程](media/insider-risk-workflow.png)
+![測試人員風險管理工作流程](../media/insider-risk-workflow.png)
 
 ### <a name="policies"></a>原則
 
@@ -70,7 +70,7 @@ Microsoft 365 中的測試人員風險管理採用完整的服務和協力廠商
 
 如需詳細資訊，請參閱[測試人員風險管理原則](insider-risk-management-policies.md)。
 
-![測試人員風險管理原則儀表板](media/insider-risk-policy-dashboard.png)
+![測試人員風險管理原則儀表板](../media/insider-risk-policy-dashboard.png)
 
 ### <a name="alerts"></a>警示
 
@@ -84,7 +84,7 @@ Microsoft 365 中的測試人員風險管理採用完整的服務和協力廠商
 
 如需詳細資訊，請參閱[測試人員風險管理警示](insider-risk-management-alerts.md)。
 
-![測試人員風險管理警示儀表板](media/insider-risk-alerts-dashboard.png)
+![測試人員風險管理警示儀表板](../media/insider-risk-alerts-dashboard.png)
 
 ### <a name="triage"></a>分級
 
@@ -92,7 +92,7 @@ Microsoft 365 中的測試人員風險管理採用完整的服務和協力廠商
 
 開啟新案例、將警示指派給現有案例或解除警示，就能解決警示。 您可以使用警示篩選器，輕鬆地依狀態、嚴重性或偵測時間來辨識警示。 在分級程序中，檢閱者可以查看與原則相符的警示詳細資料、查看與相符項目關聯的使用者活動、查看警示的嚴重性，並查看使用者設定檔資訊。
 
-![測試人員風險分級](media/insider-risk-triage.png)
+![測試人員風險分級](../media/insider-risk-triage.png)
 
 ### <a name="investigate"></a>調查
 
@@ -106,7 +106,7 @@ Microsoft 365 中的測試人員風險管理採用完整的服務和協力廠商
 
 如需詳細資訊，請參閱[測試人員風險管理案例](insider-risk-management-cases.md)。
 
-![測試人員風險調查](media/insider-risk-investigate.png)
+![測試人員風險調查](../media/insider-risk-investigate.png)
 
 ### <a name="action"></a>動作
 

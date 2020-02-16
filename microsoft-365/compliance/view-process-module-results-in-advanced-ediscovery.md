@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: '了解如何尋找 Office 365 進階電子文件探索，包括任務狀態和處理程序摘要中執行的處理序模組結果。  '
-ms.openlocfilehash: 2c492b9c8dfa2b6851620c434f1a5b4bbddc2e4e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 95e5e8f5ddc24bf0b8bf38800289abd233c655ad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597220"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068829"
 ---
 # <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中檢視處理序模組結果
 
@@ -34,7 +34,7 @@ ms.locfileid: "41597220"
 
 在 [**準備** \> **程序** \> **結果**，頁面會顯示目前狀態 （如果目前正在執行程序） 或最後一個的處理序狀態任務狀態在下列範例所示。
   
-![處理序模組的工作狀態](media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
+![處理序模組的工作狀態](../media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
 顯示的工作會視所選取的處理程序選項而異。 
   
@@ -82,7 +82,7 @@ Panes 呈現匯入的檔案統計資料的圖形顯示，如下所示：
     
     如果**預先標記**檔案的標示失敗，也記下。 
     
-![處理序模組摘要](media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
+![處理序模組摘要](../media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
   
 ## <a name="process-summary-accumulated-and-last-charts"></a>處理程序摘要累積版本和上一個圖表
 
@@ -106,7 +106,7 @@ Panes 呈現匯入的檔案統計資料的圖形顯示，如下所示：
 
 在 [準備\>程序\>結果\>會顯示最後一個程序錯誤，在最後一個工作階段或執行動作的錯誤詳細資料。
   
-![處理序模組錯誤](media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
+![處理序模組錯誤](../media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   
 ## <a name="see-also"></a>另請參閱
 

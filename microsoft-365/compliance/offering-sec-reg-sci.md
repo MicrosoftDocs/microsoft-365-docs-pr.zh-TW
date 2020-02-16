@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 962524f29b72d46500869f4f0059959a2b77ff3e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ad74c8d4ec71587f88a80c3ee109500e230be35
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601860"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071220"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>證券與 Exchange 委員會： 規定系統合規性和完整性 (SCI)
 
@@ -47,7 +47,7 @@ SCI 規則套用至 SCI 實體，其中包含此類 self-regulatory 組織 (SROs
 
 - [Azure](https://aka.ms/AzureCompliance)
 
-## <a name="how-to-implement"></a>實作方法
+## <a name="how-to-implement"></a>實作方式
 
 - [規定 SCI 實作指南](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=a69ce0c1-7b7e-44e9-9143-867241e6b2f9&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_FAQ_and_White_Papers)： 對規定地圖 Azure 功能以及詳細資料合規性的共用的責任。
 - [設計可靠的 Azure 應用程式](https://docs.microsoft.com/azure/architecture/resiliency/)： 如何將每個步驟的 Azure 應用程式的設計建置可靠性的簡要概觀。
@@ -69,7 +69,7 @@ SCI 規則套用至 SCI 實體，其中包含此類 self-regulatory 組織 (SROs
 - [取得關於規定 SCI 的常見問題解答秒回應](https://www.sec.gov/divisions/marketreg/regulation-sci-faq.shtml)
 - [商務持續性與災害復原 (BCDR): Azure 成對的區域](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)
 - [合規性的雲端運算法規的原則和 Microsoft Online Services 的分佈圖](https://aka.ms/FinServ-Guide-US)
-- [Microsoft 雲端財務服務合規性計畫](https://aka.ms/FSCP-Print)
+- [Microsoft 雲端財務服務合規性計劃](https://aka.ms/FSCP-Print)
 - [Azure 的金融服務合規性](https://aka.ms/FinServ-Compliance-Azure)
 - [Microsoft 財務服務](https://aka.ms/FinServ-Compliance)
 - [Microsoft 和 SEC Rule 17a-4](offering-SEC-17a-4.md)

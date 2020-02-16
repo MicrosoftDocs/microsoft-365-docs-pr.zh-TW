@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
 description: 您可以使用安全性 & 合規性中心之前，您需要的權限的權限。 您的公司或學校帳戶必須或是獲指派 Office 365 全域系統管理員角色，或已由全域系統管理員指派給一或多個安全性 & 合規性中心角色群組。
-ms.openlocfilehash: 0ac56ad7fb4123b8cd2bd11cdcca7ee90d8126b0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c141f7f9de5a47412dc009ae6c077404cd3f795d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596520"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073083"
 ---
 # <a name="go-to-the-office-365-security--compliance-center"></a>移至 Office 365 安全規範中心
 
@@ -40,4 +40,4 @@ ms.locfileid: "41596520"
 
 2. 使用公司或學校帳戶登入 Office 365。
 
-![Office 365 安全性 & 合規性中心首頁](media/f1d35324-ac44-4f59-96a7-b11767b43201.png)
+![Office 365 安全性 & 合規性中心首頁](../media/f1d35324-ac44-4f59-96a7-b11767b43201.png)

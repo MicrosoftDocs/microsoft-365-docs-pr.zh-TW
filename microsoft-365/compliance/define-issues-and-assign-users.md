@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: 了解如何新增或編輯的問題，包括將使用者指派給它，或刪除此問題： 在 Office 365 進階電子文件探索中 eDiscovery 案例。
-ms.openlocfilehash: 78f0b53c1f66adb9c1c8534bbf4b1e1915f6ba0d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d0777f6829944a6f64c71bda805edd1b5d55de4b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595348"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075885"
 ---
 # <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>定義問題及指派 Office 365 進階電子文件探索中的使用者
 
@@ -33,11 +33,11 @@ ms.locfileid: "41595348"
 
 1. 在**相關性\>相關性設定**] 索引標籤\>選取**問題**。
     
-    ![相關性設定問題](media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
+    ![相關性設定問題](../media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
   
 2. 若要新增此問題，請按一下 [* * + * * 圖示。 **新增此問題:** ] 對話方塊隨即顯示。 
     
-    ![相關性設定新增問題](media/c8e94982-139a-472a-b85d-282f2d742046.png)
+    ![相關性設定新增問題](../media/c8e94982-139a-472a-b85d-282f2d742046.png)
   
     若要編輯此問題，請按一下 [**編輯**] 圖示。 
     

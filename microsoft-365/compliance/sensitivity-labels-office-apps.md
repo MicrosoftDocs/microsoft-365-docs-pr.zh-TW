@@ -1,5 +1,5 @@
 ---
-title: Office 應用程式中的敏感度標籤
+title: 在 Office 應用程式使用敏感度標籤
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,23 +14,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 了解使用者如何使用桌面的 Office 應用程式、 Office 應用程式的行動電話和 web Office 相關應用程式中敏感度標籤運作。 了解哪些應用程式支援敏感度標籤。
-ms.openlocfilehash: bbdc2ed7407104298e36e214dc3e532cc305c94d
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+description: 了解使用者如何使用桌面、 Office 應用程式的行動電話，以及網頁的 Office 應用程式的 Office 應用程式中使用敏感度標籤運作。 了解哪些應用程式支援敏感度標籤。
+ms.openlocfilehash: a0bb5d8eea5c929f91b8e303b6c14eb52e0b980a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855342"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069860"
 ---
-# <a name="sensitivity-labels-in-office-apps"></a>Office 應用程式中的敏感度標籤
+# <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式使用敏感度標籤
 
-本文說明：
+當您已經發佈從 Microsoft 365 合規性中心或對等標示中心的敏感度標籤時，便會開始來分類及保護資料，建立或編輯使用者的 Office 應用程式中會出現。
 
-- 您將敏感度標籤套用至電子郵件、 檔案及附件之前您環境的需求。
-- 每個 Office 應用程式支援的敏感度標籤功能。
-- 當您使用與 Office 應用程式搭配使用其他 Microsoft 安全性與合規性技術結合敏感度標籤時，會發生什麼事。
-- 當他們使用 Office 應用程式的 Windows 和 Office 應用程式的 web 貴組織中的人員可以如何使用敏感度標籤。
-- 其他資源，可以協助您組織中的人員開始使用敏感度標籤。
+請使用本文中的資訊可協助您成功地管理 Office 應用程式中的使用敏感度標籤。 例如，您要支援內建標示，與 Azure 資訊保護整合標示用戶端之間的互動和相容性與其他應用程式及服務應用程式的最小版本。
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>訂閱與授權需求的敏感度標籤
 
@@ -70,7 +66,7 @@ ms.locfileid: "41855342"
 |[提供自訂的技術] 頁面上的 [說明] 連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[標記內容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 預覽： 推行至[Office 測試人員](https://office.com/insider)            | 預覽： 推行至[Office 測試人員](https://office.com/insider)        | 在 [檢閱] 下   | 在 [檢閱] 下         | 在 [檢閱] 下                                                        |
+|[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 預覽： 在[Office 測試人員](https://office.com/insider)            | 預覽： 在[Office 測試人員](https://office.com/insider)        | 在 [檢閱] 下   | 在 [檢閱] 下         | 在 [檢閱] 下                                                        |
 |系統管理員[檢視標籤使用狀況與標籤分析](label-analytics.md)並傳送資料                      | 在 [檢閱] 下            | 在 [檢閱] 下        | 在 [檢閱] 下   | 在 [檢閱] 下         | 在 [檢閱] 下                                                        |
 |[要求使用者將標籤套用至電子郵件和文件](sensitivity-labels.md#what-label-policies-can-do)   | 在 [檢閱] 下            | 在 [檢閱] 下        | 在 [檢閱] 下   | 在 [檢閱] 下         | 在 [檢閱] 下                                                        |
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 預覽： 在[Office 測試人員](https://office.com/insider)                                  | 在 [檢閱] 下 | 在 [檢閱] 下 | 在 [檢閱] 下 | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -93,7 +89,7 @@ ms.locfileid: "41855342"
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 預覽： 推行至[Office 測試人員](https://office.com/insider)                       | 在 [檢閱] 下                    | 在 [檢閱] 下           | 在 [檢閱] 下               | 是 |
 |
 
-## <a name="about-the-office-built-in-labeling-client"></a>關於 Office 內建標示用戶端
+## <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 內建的設定標籤的用戶端和 Azure 資訊保護用戶端
 
 在 Office 內建標示用戶端會從下列系統管理中心下載敏感度標籤和敏感度標籤原則設定：
 
@@ -127,21 +123,24 @@ ms.locfileid: "41855342"
 
 使用者可以將只有一個標籤套用一次每個文件或電子郵件。
 
-當您設定標籤具有附件的電子郵件訊息時，附件不繼承標籤。 如果附件有標籤它們會保留該分別套用的標籤。 如果附件沒有標籤，然後附件維持沒有標籤。 但是，如果電子郵件的標籤套用保護，則該保護將套用至 Office 附件。
+當您設定標籤具有附件的電子郵件訊息時，附件不繼承標籤：
+
+- 如果附件都有標籤，它們會保留該分別套用的標籤。
+- 如果附件沒有標籤，附件會維持不具有標籤。 但是，如果電子郵件的標籤套用保護，則該保護將套用至 Office 附件。
 
 ## <a name="sensitivity-label-compatibility"></a>敏感度標籤相容性
 
-**使用 RMS enlightened 應用程式**。 如果您不支援敏感度標籤[RMS enlightened 應用程式](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)中開啟已標示_和已加密_的文件或電子郵件，應用程式仍會強制加密和權限管理。
+**與 RMS enlightened 應用程式**： 應用程式如果您不支援敏感度標籤[RMS enlightened 應用程式](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)中開啟已標記和已加密的文件或電子郵件，仍強制加密和權限管理。
 
-**使用 Azure 資訊保護用戶端**。 您可以檢視和變更的敏感度標籤套用至文件和電子郵件與 Office 內建標示用戶端的 Azure 資訊保護用戶端與反之。
+**使用 Azure 資訊保護用戶端**： 您可以檢視和變更的敏感度標籤套用至文件和電子郵件與 Office 內建標示用戶端使用 Azure 資訊保護用戶端和其他種解決方式。
 
-**與其他 Office 版本**。 任何授權的使用者可以在其他 Office 版本中開啟已標記的文件和電子郵件。 不過，您可以僅檢視或變更的 Azure 資訊保護用戶端或中支援的 Office 版本的標籤。 支援的 Office 應用程式版本會列在本文中的表格中。
+**與其他版本的 Office**： 任何授權的使用者可以在其他 Office 版本中開啟已標記的文件和電子郵件。 不過，您可以僅檢視或變更在支援的 Office 版本中，或使用 Azure 資訊保護用戶端的標籤。 [前一節](#support-for-sensitivity-label-capabilities-in-apps)會列出支援的 Office 應用程式版本。
 
 ## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>對受保護的敏感度標籤的 SharePoint 和 OneDrive 檔案的支援
 
-若要使用 Office 中的 Office 內建標示用戶端，在 web 上，在文件必須位於 OneDrive for Business 或 SharePoint Online 的執行個體，已選擇集[啟用 SharePoint 和 OneDrive 中的 Office 檔案的敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)。
+若要使用 Office 內建標示用戶端與 Office web 上的 OneDrive 文件基於商業或 SharePoint Online，請確定您已選擇集若要[啟用 SharePoint 和 OneDrive 中的 Office 檔案的敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)的預覽。
 
-## <a name="when-office-365-applies-content-marking-and-encryption-to-content"></a>當 Office 365 適用於標示內容及加密內容
+## <a name="when-office-365-applies-content-marking-and-encryption"></a>Office 365 時套用內容標示和加密
 
 Office 365 適用於內容標示和使用敏感度標籤的加密方式，視您使用的應用程式。
 
@@ -152,7 +151,7 @@ Office 365 適用於內容標示和使用敏感度標籤的加密方式，視您
 | 網頁版、iOS 版和 Android 版 Outlook | Exchange Online 會傳送電子郵件之後 | Exchange Online 會傳送電子郵件之後 |
 |
 
-## <a name="more-resources"></a>其他資源
+## <a name="end-user-documentation"></a>使用者文件
 
 - [在 Office 中將敏感度標籤套用至您的文件和電子郵件](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 
