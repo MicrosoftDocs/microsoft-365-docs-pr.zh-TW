@@ -16,12 +16,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 威脅調查及回應功能如何協助貴組織偵測入侵和威脅，快速地降低，以及復原威脅。
-ms.openlocfilehash: 2f709c555974444b8f2a09d87705043d65240090
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6734903198fa29cdd7ac4295feb6313479ecab50
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599100"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088666"
 ---
 # <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>您維持組織安全回應能力與 Office 365 威脅調查
 
@@ -35,7 +35,7 @@ ms.locfileid: "41599100"
 
 Explorer 也可協助管理員瀏覽使用者與郵件之間的關係。 了解已損毀的特定郵件的？ 搜尋它以查看哪些使用者接收郵件，然後遵循一系列的事件，並查看這些使用者依次做了什麼。
 
-![在 Office 365 中，惡意程式碼系列的色彩編碼的威脅總管的螢幕擷取畫面](../media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
+![在 Office 365 中，惡意程式碼系列的色彩編碼的威脅總管的螢幕擷取畫面](../../media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
 
 ## <a name="quickly-mitigate-and-recover-from-threats"></a>快速減輕和復原的威脅
 
@@ -43,7 +43,7 @@ Explorer 也可協助管理員瀏覽使用者與郵件之間的關係。 了解�
 
  **更新：** 已新增直接從事件 framework 刪除 （軟性或硬刪除） 電子郵件訊息的能力。 先前的系統管理員只能無法移動郵件至使用者的垃圾郵件] 資料夾，其中使用者無法復原的項目。 具有新發行的刪除功能，您可以現在是確定惡意或垃圾郵件會永久移除。
 
-![事件修復工作的電子郵件清單的螢幕擷取畫面](../media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
+![事件修復工作的電子郵件清單的螢幕擷取畫面](../../media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
 
 ## <a name="leverage-the-threat-telemetry-of-microsoft"></a>利用 Microsoft 威脅遙測
 

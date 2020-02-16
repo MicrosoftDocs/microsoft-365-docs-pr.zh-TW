@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 系統管理員可以在安全性與合規性中心中的郵件流程儀表板了解輸出和輸入郵件流程小工具。
-ms.openlocfilehash: f4781777d90f2156b35dd0bfeab42084ef99d1a1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5c86db8e33ff3ee1dc4d9d126239465b3c84bde5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598840"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088428"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>輸出和輸入郵件流程
 
 **輸出和輸入郵件流程**小工具會將**連接器報告**和先前的 **TLS 概觀報告**集中在一個位置。
 
-![安全性與合規性中心內郵件流程儀表板的輸出和輸入郵件流程報告](../media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
+![安全性與合規性中心內郵件流程儀表板的輸出和輸入郵件流程報告](../../media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
 
 小工具中的資訊會與 Office 365 中的連接器和 TLS 郵件保護相關。 如需相關資訊，請參閱這些主題：
 
@@ -35,7 +35,7 @@ ms.locfileid: "41598840"
 
 當您在 Office 365 組織中接收及傳送郵件時，**輸出和輸入郵件流程**小工具會顯示用於連線的 TLS 加密。 與其他電子郵件服務建立的連線，若兩端都提供 TLS，則會由 TLS 進行加密。 小工具會提供上一週的郵件流程快照。 當您按一下 [檢視詳細資料]**** 時，**傳輸中郵件保護 (使用 TLS)** 彈出頁面會針對進入和離開您組織的郵件顯示 TLS 保護。
 
-![安全性與合規性中心內的傳輸中郵件保護 (使用 TLS) 彈出畫面](../media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
+![安全性與合規性中心內的傳輸中郵件保護 (使用 TLS) 彈出畫面](../../media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
 
 目前，TLS 1.2 是 Office 365 提供的最安全 TLS 版本。 通常，您必須知道用於合規性稽核的 TLS 加密為何。 您可能與來源和目的地電子郵件伺服器都沒有直接關係 (您沒有，Microsoft 也沒有)，因此您沒有許多選項可改善那些伺服器使用的 TLS 加密。
 

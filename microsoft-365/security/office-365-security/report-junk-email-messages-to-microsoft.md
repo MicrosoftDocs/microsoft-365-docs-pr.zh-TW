@@ -16,12 +16,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 「Microsoft Office Outlook 的 Microsoft 垃圾郵件回報增益集」提供多種方式回報垃圾郵件：
-ms.openlocfilehash: a2a427f13c329c4c72f718bb19ecc0dce06f8f91
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3f8d07a2499fa3c8690393aa444e018b83c632b1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598570"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088241"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>向 Microsoft 回報垃圾郵件
 
@@ -47,10 +47,10 @@ ms.locfileid: "41598570"
 1. 以滑鼠右鍵按一下郵件或要回報為垃圾郵件的郵件。
 
 2. 選取 **[垃圾郵件]**，然後按一下 **[回報垃圾郵件]**。
-    ![從收件匣回報垃圾郵件訊息](../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
+    ![從收件匣回報垃圾郵件訊息](../../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
 
 3. [ **Microsoft 垃圾電子郵件回報增益集**] 會隨即開啟。 如果您確定要提交您選取為垃圾郵件的郵件，請按一下 [ **是**]。
-    ![確認報告為垃圾郵件](../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
+    ![確認報告為垃圾郵件](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
 
     > [!NOTE]
     > 如果您不想在提交垃圾郵件時看見此確認訊息，請勾選 [ **不要再顯示此訊息**]。
@@ -59,17 +59,17 @@ ms.locfileid: "41598570"
 
 ### <a name="to-report-a-junk-email-message-from-within-an-opened-message"></a>從已開啟的郵件內回報垃圾郵件
 
-1. 在開啟的郵件內，按一下郵件功能區上的 **[回報垃圾郵件]** 按鈕。 例如，按一下 [**垃圾郵件** \> **回報垃圾郵件**![垃圾從訊息內回報電子郵件](../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
+1. 在開啟的郵件內，按一下郵件功能區上的 **[回報垃圾郵件]** 按鈕。 例如，按一下 [**垃圾郵件** \> **回報垃圾郵件**![垃圾從訊息內回報電子郵件](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
 
 2. [ **Microsoft 垃圾電子郵件回報增益集**] 會隨即開啟。 如果您確定要提交您選取為垃圾郵件的郵件，請按一下 [ **是**]。
-    ![確認報告為垃圾郵件](../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
+    ![確認報告為垃圾郵件](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
 
     > [!NOTE]
     > 如果您不想在提交垃圾郵件時看見此確認訊息，請勾選 [ **不要再顯示此訊息**]。
 
 選取的郵件會傳送至 Microsoft 進行分析，然後移至 [垃圾郵件] 資料夾。若要確認郵件已提交，請開啟 **[寄件備份]** 資料夾，以檢視已提交的郵件。
 
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 
 [啟用報告訊息增益集](enable-the-report-message-add-in.md)
 

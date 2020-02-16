@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用威脅調查及回應功能來尋找並調查惡意電子郵件。
-ms.openlocfilehash: 2f61860178de78302d6fb94309ff01127ac5ce33
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.openlocfilehash: 5fe9e06a582d72b46c4f90f13aee283050a06253
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784719"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088702"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>調查並修復 Office 365 中已傳遞的惡意電子郵件
 
@@ -61,13 +61,13 @@ ms.locfileid: "41784719"
 
 2. 在左的導覽快速-啟動中，選擇 [**威脅管理** \> **總管**。
 
-    ![總管] 中的傳遞巨集指令與傳遞位置欄位。](../media/ThreatExFields.PNG)
+    ![總管] 中的傳遞巨集指令與傳遞位置欄位。](../../media/ThreatExFields.PNG)
 
     <!-- You may notice the new **Special actions** column. This feature is aimed at telling admins the outcome of processing an email. The **Special actions** column can be accessed in the same place as **Delivery action** and **Delivery location**. Special actions might be updated at the end of Threat Explorer's email timeline, which is a new feature aimed at making the hunting experience better for admins.-->
 
 3. **威脅總管中的檢視**： 在 [**檢視**] 功能表中，選擇 [**所有電子郵件**。
 
-    ![威脅總管檢視] 功能表中，與電子郵件-惡意程式碼、 釣魚程式、 送出資料及所有的電子郵件選項，也內容-惡意程式碼。](../media/tp-InvestigateMalEmail-viewmenu.png)
+    ![威脅總管檢視] 功能表中，與電子郵件-惡意程式碼、 釣魚程式、 送出資料及所有的電子郵件選項，也內容-惡意程式碼。](../../media/tp-InvestigateMalEmail-viewmenu.png)
 
     *惡意程式碼*檢視目前預設值，並會擷取電子郵件在偵測到惡意程式碼威脅。 釣魚程式相同的方式運作的*釣魚程式*檢視。
 
@@ -86,11 +86,11 @@ ms.locfileid: "41784719"
 
    進階篩選是另一項絕佳搜尋功能。 布林值**不可**篩選具有已引進*收件者*、*寄件者*和*寄件者網域*以允許系統管理員来調查藉由排除值。 此選項會出現在*不包含*的 selection 參數。 **不**會讓系統管理員排除警示的信箱，預設回覆信箱從其調查，也很適合其中系統管理員搜尋特定主題的情況下 (主旨 ="注意 」) 其中收件者可以設定成 [*無 defaultMail@contoso.com*。 這是實際值搜尋。
 
-   ![收件者-'不包含' 進階篩選器。](../media/tp-InvestigateMalEmail-AdvancedFilter.png)
+   ![收件者-'不包含' 進階篩選器。](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 
    *篩選由小時*可協助貴組織的安全性小組快速向下切入。 最短的允許的時間期間是 30 分鐘。 如果您可以縮小時間範圍可疑採取動作 （例如它發生 3 小時前），這會限制內容，並協助找出問題。
 
-  ![篩選時數] 選項來縮小的量資料安全性小組必須處理程序，以及其最短的持續時間是 30 分鐘。](../media/tp-InvestigateMalEmail-FilterbyHours.png)
+  ![篩選時數] 選項來縮小的量資料安全性小組必須處理程序，以及其最短的持續時間是 30 分鐘。](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
 
 6. **威脅總管] 中的欄位**： 威脅總管公開*傳遞巨集指令*、*傳遞位置*、*特殊巨集指令*、*方向*、*會覆寫*，以及*URL 威脅*等更多的安全性相關的郵件資訊。 它也可讓貴組織的安全性小組，以調查以較高的確實方式。 
 
@@ -189,31 +189,31 @@ ms.locfileid: "41784719"
 
 4. In the **View** menu, choose **All email**.
 
-    ![Use the View menu to choose between Email and Content reports](../media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
+    ![Use the View menu to choose between Email and Content reports](../../media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
     Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.
 
-    ![Threat Explorer showing data for all email](../media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)
+    ![Threat Explorer showing data for all email](../../media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)
     
     (Depending on the actions that were taken on email messages for your organization, you might see other labels, such as **Blocked** or **Replaced**.)
     
 5. In the report, choose **Delivered** to view only email messages that ended up in users' inboxes.
 
-    ![Clicking "Delivered to junk" removes that data from view](../media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
+    ![Clicking "Delivered to junk" removes that data from view](../../media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
   
 6. Below the chart, review the **Email** list below the chart.
 
-    ![Below the chart, view a list of email messages that were detected](../media/dfb60590-1236-499d-97da-86c68621e2bc.png)
+    ![Below the chart, view a list of email messages that were detected](../../media/dfb60590-1236-499d-97da-86c68621e2bc.png)
   
 7. In the list, choose an item to view more details about that email message. For example, you can click the subject line to view information about the sender, recipients, attachments, and other similar email messages.
 
-    ![You can view additional information about an item](../media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
+    ![You can view additional information about an item](../../media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
   
 8. After viewing information about email messages, select one or more items in the list to activate **+ Actions**.
     
 9. Use the **+ Actions** list to apply an action, such as **Move to deleted** items. This deletes the selected messages from the recipients' mailboxes.
 
-    ![When you select one or more email messages, you can choose from several available actions](../media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
+    ![When you select one or more email messages, you can choose from several available actions](../../media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
 
 ## Dealing with suspicious email messages
 
@@ -243,7 +243,7 @@ To access your message header and email download options, follow these steps:
 
     This opens the flyout, where both header preview and email download links are positioned.
 
-    ![Threat Explorer flyout with download and preview links on the page.](../media/ThreatExplorerDownloadandPreview.PNG)
+    ![Threat Explorer flyout with download and preview links on the page.](../../media/ThreatExplorerDownloadandPreview.PNG)
 
 > [!IMPORTANT]
 > This capability doesn't show up for email messages that were never found in a user's mailbox, which can happen if an email was dropped or its delivery failed. In cases where email messages were deleted from users' mailboxes, admins see a "Mail not found" error message.

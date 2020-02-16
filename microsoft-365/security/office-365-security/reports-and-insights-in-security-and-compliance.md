@@ -17,12 +17,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: 概略報表和深入解析 avialable 安全性&amp;合規性中心。
-ms.openlocfilehash: edbc4cd53b5cd830996220c875a1b48565a96c13
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3c205350ef57514c434ac75fae21c104a2c1706e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598560"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088142"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>智慧型報表和深入了解 Office 365 安全性&amp;合規性中心
 
@@ -32,7 +32,7 @@ ms.locfileid: "41598560"
 
 監控 Office 365 安全性中的可用功能&amp;合規性中心包含的智慧型報表和深入了解可讓您將焦點放在高優先順序的問題，例如安全性攻擊或增加可疑活動的安全性與合規性系統管理員。 在儀表板，智慧型報表和深入解析類似下列影像：
   
-![安全性&amp;合規性中心，選擇 [報告]\>儀表板](../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+![安全性&amp;合規性中心，選擇 [報告]\>儀表板](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
 除了醒目提示的問題領域，智慧型報表和深入解析包括建議以及檢視和瀏覽資料和也需要快速動作的連結。 例如，如果您的組織突然有大量的電子郵件被標示為垃圾郵件使用者，可能被建議您重新檢視您的反垃圾郵件原則，以確保正確的保護層級已經準備就緒。
   

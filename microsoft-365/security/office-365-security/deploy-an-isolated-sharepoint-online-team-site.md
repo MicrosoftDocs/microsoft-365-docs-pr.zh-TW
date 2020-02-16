@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 摘要：使用下列逐步指示來部署新的獨立 SharePoint Online 小組網站。
-ms.openlocfilehash: c49b8d2d0c69f76f284061e21c8be31ee2204a54
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 39cf33ce3314e2eb0cd313ff0382f50d7cb8487a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599520"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088788"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署獨立的 SharePoint Online 小組網站
 
@@ -89,7 +89,7 @@ ms.locfileid: "41599520"
   
 以下是您的最終設定，其具有三個網站存取群組。
   
-![用於部署獨立 SharePoint Online 網站的三個存取群組。](../media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
+![用於部署獨立 SharePoint Online 網站的三個存取群組。](../../media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
   
 ### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>步驟 5。 將使用者帳戶新增至存取群組
 
@@ -151,7 +151,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 以下是您的最終設定，其中有三個網站存取群組填入了使用者帳戶或群組。
   
-![三個存取群組填入了使用者帳戶。](../media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
+![三個存取群組填入了使用者帳戶。](../../media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
   
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>第 2 階段：建立及設定獨立的小組網站
 
@@ -221,7 +221,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 以下是您的最終設定，其中網站有三個 SharePoint 群組設定為使用三個存取群組，而這三個存取群組填入了使用者帳戶或 Azure AD 群組。
   
-![具有存取群組與使用者帳戶的獨立 SharePoint Online 網站最終設定。](../media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
+![具有存取群組與使用者帳戶的獨立 SharePoint Online 網站最終設定。](../../media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
   
 您和網站成員現在可以透過其中一個存取群組的群組成員資格，使用網站的資源來共同作業。
   
