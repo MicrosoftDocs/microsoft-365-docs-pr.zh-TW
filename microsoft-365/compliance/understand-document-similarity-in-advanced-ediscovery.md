@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: '檢閱文件相似性值，最低的層級的兩個檔案被視為接近重複，跟在 Office 365 進階電子文件探索中的運作方式。 '
-ms.openlocfilehash: c11359681de4d1e078cde8ebf603396c9a71e3b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b5c777579e876e54032ce5872291a2791e2c3b09
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597330"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080764"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>了解在 Office 365 進階電子文件探索中的文件相似性
 
@@ -44,11 +44,11 @@ Near-複本 (ND) 在集內，可能會有的跟低於相似性閾值等級的文
   
 類似的層級圖例所示，如下所示：
   
-![文件相似性](media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
+![文件相似性](../media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
   
 假設另一個文件，X1，會立即插入。 X1 和 E3 之間跟是 87%。 同樣地，跟 X1 和 F1 之間是 92%。 因此，EquiSet-1、-2、 EquiSet 和 X1 現在結合為一個 ND 設定。
   
-![文件相似性](media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
+![文件相似性](../media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
   
 > [!NOTE]
 > 如果任何兩份文件或指派給一個 ND 組，它們會保持在一起 ND 組相同，即使其他文件新增至集合如果合併設定。 

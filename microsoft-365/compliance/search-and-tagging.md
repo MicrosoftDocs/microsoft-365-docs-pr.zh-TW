@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: 進階 eDiscovery 中搜尋和標記模組可讓您搜尋、 預覽，及組織您的案例中的文件。 目前，此模組處於 beta 版。
-ms.openlocfilehash: d79b702471b7a7234a7f0d147eb4f50bfc56a4c7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a3597cf0abad7095de7a7c6857052f269d202598
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601710"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081393"
 ---
 # <a name="search-and-tagging"></a>搜尋與標記
 
@@ -69,7 +69,7 @@ ms.locfileid: "41601710"
 
 或者，您可以使用進階 eDiscovery 搜尋工具中的條件卡片，新增至搜尋查詢的條件 （選取的內容）。 下列螢幕擷取畫面顯示可以新增至查詢的條件。 [**群組**] 欄會指出屬性是否適用於電子郵件、 網站文件，或兩者 （由*常見*的值來表示）。 此資料行也會識別之後執行相關性模組都是可用的可搜尋屬性。
 
-![在 [進階電子文件探索搜尋工具中的搜尋條件](media/AeDSearchConditions.png)
+![在 [進階電子文件探索搜尋工具中的搜尋條件](../media/AeDSearchConditions.png)
 
 如需可搜尋屬性的詳細資訊，請參閱[關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
   

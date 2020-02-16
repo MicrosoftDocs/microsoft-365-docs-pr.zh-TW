@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: be4c86a5df7e0964744f6b5d7551382916e7ed2d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cd622430df4a636a9529a4d10ddc90057548a810
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597410"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080960"
 ---
 # <a name="tag-documents-in-a-review-set"></a>標記檢閱集中的文件
 
@@ -47,11 +47,11 @@ ms.locfileid: "41597410"
 
 標記類型，除了結構的標籤的 [標記] 面板中的組織的方式可用來進行更容易了解標記的文件。 標記分組章節。 檢閱設定搜尋支援搜尋由標記和標記] 區段中的功能。 這表示您可以建立檢閱設定搜尋以擷取使用中] 區段中的任何標記來標記的文件。
 
-![在 [標籤] 面板中的標記區段](media/Tagtypes.png)
+![在 [標籤] 面板中的標記區段](../media/Tagtypes.png)
 
 標籤可以進一步組織由這些區段內的巢狀。 例如，如果目的是要找出並標記特殊權限的內容、 巢狀結構可以用來清楚，使用者可以標記為 「 權限 」 文件，並藉由檢查適當的巢狀的標記選取的權限類型。
 
-![標記區段內的巢狀的標記](media/Nestingtags.png)
+![標記區段內的巢狀的標記](../media/Nestingtags.png)
 
 ## <a name="applying-tags"></a>套用標籤
 
@@ -61,7 +61,7 @@ ms.locfileid: "41597410"
 
 當您檢視文件檢閱集中，您可以顯示檢閱可用**的編碼控制台]**，即可標記。
 
-![按一下 [標籤面板中顯示的標籤面板](media/Singledoctag.png)
+![按一下 [標籤面板中顯示的標籤面板](../media/Singledoctag.png)
 
 這可讓您將標籤套用至檢視器中顯示的文件。
 
@@ -69,7 +69,7 @@ ms.locfileid: "41597410"
 
 大量標記可透過結果方格中選取多個檔案，然後使用**的編碼面板**類似標記單一文件中的 [標記。 未標示的大量可以進行兩次; 選取標記第一次將套用標記，以及第二個選取項目可確保所有選取的檔案會清除標記。
 
-![行動電話的螢幕擷取畫面會自動產生描述](media/Bulktag.png)
+![行動電話的螢幕擷取畫面會自動產生描述](../media/Bulktag.png)
 
 > [!NOTE]
 > 大量標記時，[標記] 面板將面板中顯示的每個標籤的標記檔案計數。
@@ -88,4 +88,4 @@ ms.locfileid: "41597410"
 
 3. 標記的所有文件、 選取**文件系列**面板中的所有文件，按一下 [**程式碼的文件**，，然後選擇要套用至文件的整個系列的標記。
 
-![社交媒體張貼描述自動產生的螢幕擷取畫面](media/Relatedtag.png)
+![社交媒體張貼描述自動產生的螢幕擷取畫面](../media/Relatedtag.png)

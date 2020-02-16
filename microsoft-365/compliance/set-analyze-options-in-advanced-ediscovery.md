@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: '檢閱步驟以設定 Office 365 進階電子文件探索，包括近似重複項目、 電子郵件執行緒，以及佈景主題中的分析處理程序的選項。  '
-ms.openlocfilehash: e9acb30d991bd2ee0acba5a9ddde619272788ceb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c32a63ee538522a5314a74be6248f253f70f279e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597460"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081152"
 ---
 # <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中設定分析選項
 
@@ -34,7 +34,7 @@ ms.locfileid: "41597460"
 
 開啟**準備\>分析** \> **安裝程式**。 會顯示下列視窗。
   
-![設定分析選項](media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
+![設定分析選項](../media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
  **近似重複項目和電子郵件執行緒**如果您想要執行分析，請核取此方塊。 此為預設選取的選項。 
   
@@ -51,11 +51,11 @@ ms.locfileid: "41597460"
     
     例如，如果建議的單字"computer"，且您指定作為 」 主題數目上限 「"2"，進階電子文件會嘗試產生關聯到 「 電腦 」 這個字的兩個佈景主題。 佈景主題的兩個可能會 「 電腦軟體 」 和 「 電腦硬體 」，例如。 
     
-    ![新增建議的佈景主題](media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
+    ![新增建議的佈景主題](../media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
   
 1. 若要檢視、 新增或編輯建議的佈景主題，按一下 [**修改**]。
     
-2. 在 [**建議追蹤的佈景主題**] 面板中，按一下 [**新增**![新增圖示](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)圖示以新增佈景主題。 在 [**新增建議的佈景主題**] 面板中，新增字詞，以逗號隔開。 
+2. 在 [**建議追蹤的佈景主題**] 面板中，按一下 [**新增**![新增圖示](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)圖示以新增佈景主題。 在 [**新增建議的佈景主題**] 面板中，新增字詞，以逗號隔開。 
     
 3. **佈景主題數目**，選取一個值來判斷進階電子文件會嘗試將產生的 （預設值為 1 佈景主題） 這些字詞的佈景主題數目。
     

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: '檢閱步驟將匯入的檔案新增至最後一個定義的負載或檔案，再執行 Office 365 進階電子文件探索中的相關性訓練的批次。  '
-ms.openlocfilehash: 6778666e1ef0e5900a2afcc2949bdc9579c21fd1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e9179878d085840fcfb93dacc79ac3f776f1f041
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601460"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081092"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>設定載入要在 Office 365 進階電子文件探索中新增匯入的檔案
 
@@ -42,7 +42,7 @@ ms.locfileid: "41601460"
   
 1. 在**相關性\>相關性設定**索引標籤上，選取**負載**。
     
-    ![相關性設定負載索引標籤](media/278aac7f-655f-462f-852a-6baa5d818768.png)
+    ![相關性設定負載索引標籤](../media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
 2. **包含檔案**： 選取要包含的檔案] 選項。 根據預設，將檔案新增至目前的負載根據"All files"母體。
     

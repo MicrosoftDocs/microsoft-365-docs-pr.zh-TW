@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 用於解決有內容位置錯誤的內容搜尋中的 [重試] 按鈕。
-ms.openlocfilehash: ce88749a887fea57e977e210de1eda40268cb832
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6eb08c006f206e3ad7850d67e541f6fc3f496441
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601620"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081573"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>再試一次 「 內容搜尋 」 來解決錯誤的內容位置
 
@@ -46,7 +46,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 重新啟動搜尋會通常會導致在不同伺服器上類似的錯誤。 而不是重新啟動搜尋時，按一下 [搜尋結果頁面頂端會顯示 [**重試**] 按鈕。
 
-![按一下 [重試] 按鈕，以解決內容位置錯誤](media/retrycontentsearch3.png)
+![按一下 [重試] 按鈕，以解決內容位置錯誤](../media/retrycontentsearch3.png)
 
 這會導致重試一次僅針對失敗的信箱搜尋。 當您再試一次搜尋時，會保留已成功傳回的結果。
 

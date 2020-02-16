@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 您可能需要告知他們要保留一部分法律調查的電子儲存的資訊的義務的 custodians。 進階電子文件探索可讓您輕鬆地管理並保留通知程序。
-ms.openlocfilehash: f1a2d4eb03f84df12611115670d52568d6b13d80
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 703034088b03badae309961c2abda9db80425b99
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594066"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080272"
 ---
 # <a name="acknowledge-a-hold-notification"></a>確認保留通知
 
@@ -52,4 +52,4 @@ ms.locfileid: "41594066"
 
 除了電子郵件通知中，每個 custodian 會有唯一的合規性入口網站的存取。 透過入口網站中，每個 custodian 可以檢視、 存取及確認其作用中的保留通知。
 
-![Custodian 規範入口網站](media/CustodianPortal.jpg)
+![Custodian 規範入口網站](../media/CustodianPortal.jpg)

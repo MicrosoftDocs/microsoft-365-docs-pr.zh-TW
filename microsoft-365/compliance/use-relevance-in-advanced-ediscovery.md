@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: '了解 Office 365 進階電子文件探索，包括工作流程和指導方針和訓練與檔案的檢閱步驟中的相關性模組。  '
-ms.openlocfilehash: 5151c94d2b0bd1824abb499f6cb27bbfbc7618b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0b160a5b251f4be7d23ef24a79164b824fe65b7f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601300"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080710"
 ---
 # <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中使用相關性模組
 
@@ -30,7 +30,7 @@ ms.locfileid: "41601300"
   
 在 [進階電子文件，相關性模組包含相關性訓練與 < review of 與案例相關的檔案。 相關性工作流程會顯示，並說明如下：
   
-![相關性工作流程](media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
+![相關性工作流程](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **循環的評估和追蹤**：
     

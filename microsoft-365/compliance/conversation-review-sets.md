@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 78997bfb6a3a77a03d95560d5f0c38eaae2dda4c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 01f2e6f9ceccd1903f62e8661f2cfc8f4cc2b47e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595670"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078115"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>檢閱在進階電子文件中的交談 
 
@@ -39,7 +39,7 @@ ms.locfileid: "41595670"
 
 - 匯出個別郵件或執行緒的交談
 
-## <a name="terminology"></a>術語
+## <a name="terminology"></a>詞彙
 
 以下是一些定義，以協助您開始使用交談重建。
 
@@ -47,7 +47,7 @@ ms.locfileid: "41595670"
 
 - **交談：** 代表一個或多封郵件的群組。 跨不同的應用程式，可能會不同的方式表示交談。 某些應用程式，在沒有明確的動作所產生的回覆至現有的郵件。 交談是明確地形成，由於此使用者動作。 例如，以下是在 Microsoft Teams 的通道交談的螢幕擷取畫面。
 
-   ![Microsoft Teams 通道交談](media/threadedchat.png)
+   ![Microsoft Teams 通道交談](../media/threadedchat.png)
 
    在其他應用程式 （例如 teams 1xN 聊天訊息），並沒有正式回覆鏈結，改為郵件顯示為 「 平面河的郵件 」 的單一執行緒內。 在這些類型的應用程式，從一群發生在特定時間內的郵件會推斷交談。 這個 「 虛群組 」 的郵件 （而非回覆鏈結） 代表 「 往返 」 交談相關的特定主題感興趣。 
 
@@ -71,7 +71,7 @@ ms.locfileid: "41595670"
 
 當您從交談中新增資料，檢閱設定時，您可以使用交談擷取選項擴大搜尋範圍，並將包含內容相關訊息。 設定交談擷取選項之後，可以發生下列情形：
 
-  ![交談擷取](media/messagesandconversations.png)
+  ![交談擷取](../media/messagesandconversations.png)
   
 1. 使用關鍵字和日期範圍查詢，搜尋所傳回落點的*訊息 3*。 此郵件為較大的交談， *CRC1*所說明的一部分。 
   
@@ -99,13 +99,13 @@ ms.locfileid: "41595670"
 
 標準中檢閱設定，郵件會處理並顯示為個別項目，類似於如何依據儲存在信箱資料夾。 在此工作流程，做為個別的項目處理每個訊息。 因此，執行緒的摘要和匯出選項無法使用標準檢閱集合中。 
 
-  ![標準檢閱設定](media/standardrs.PNG)
+  ![標準檢閱設定](../media/standardrs.PNG)
 
 ### <a name="reviewing-conversations-in-a-conversation-review-set"></a>檢閱在交談檢閱交談設定
 
 交談中檢閱設定，個別的郵件都會一起執行緒，並當作交談來呈現。 這可讓您檢視及匯出內容相關的交談。 
 
-  ![交談檢閱設定](media/ConversationRSOptions.PNG)
+  ![交談檢閱設定](../media/ConversationRSOptions.PNG)
 
 下列各節說明檢閱和匯出交談檢閱集合中的交談。
 
@@ -134,7 +134,7 @@ ms.locfileid: "41595670"
 
 在交談中檢閱設定，您可以設定下列選項來匯出交談：
 
-![匯出](media/export.png)
+![匯出](../media/export.png)
 
 a. 中繼資料] 選項
 

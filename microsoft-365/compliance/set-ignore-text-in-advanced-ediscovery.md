@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: '了解如何定義規則以在 Office 365 進階電子文件探索中使用的分析和處理序模組時，略過特定的文字。  '
-ms.openlocfilehash: 7bda497f961ed762b1b077ad0631a0a6a94cdcc8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 440393061fef9b5a3c946322307fcafd034be81c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601500"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081124"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中設定略過文字分析選項
 
@@ -107,7 +107,7 @@ ms.locfileid: "41601500"
     
 2. 在 [**新增略過的文字**] 對話方塊中，在 [**名稱**] 欄位中，輸入略過文字規則的名稱。 
     
-    ![加入略過的文字](media/98e5129b-2667-4692-86fa-2d0117187a7f.png)
+    ![加入略過的文字](../media/98e5129b-2667-4692-86fa-2d0117187a7f.png)
   
 3. 在 [**文字**] 方塊中，輸入要忽略的文字。 [文字] 欄位允許的字元數目不受限制。 
     
@@ -122,7 +122,7 @@ ms.locfileid: "41601500"
     
 7. 按一下 **[確定]** 以儲存搜尋時忽略文字規則]。 會顯示已定義的搜尋時忽略文字規則。 
     
-    ![設定忽略文字名稱](media/3a788ac3-4a1c-46c9-89bd-7ff32d68ce23.png)
+    ![設定忽略文字名稱](../media/3a788ac3-4a1c-46c9-89bd-7ff32d68ce23.png)
   
 ## <a name="see-also"></a>另請參閱
 

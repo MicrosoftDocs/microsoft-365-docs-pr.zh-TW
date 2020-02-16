@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: '了解如何設定進階的設定，包括近似重複項目、 電子郵件執行緒和佈景主題，Office 365 進階 eDiscovery 中分析處理程序。 '
-ms.openlocfilehash: 2c2a104b834d8da9d0d10f93980b4f2cbb6294c8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f2f882f5c5b2bbaf3144d3979455387a4471280c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601510"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081263"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>設定分析進階設定 Office 365 進階電子文件中
 
@@ -32,7 +32,7 @@ ms.locfileid: "41601510"
   
 1. 在 [**準備\>分析\>安裝**索引標籤上，按一下 [**進階設定]** （在頁面底部）。 會顯示下列面板。 
     
-    ![設定分析進階設定](media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
+    ![設定分析進階設定](../media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
 2. 在**接近重複項目和電子郵件執行緒參數**，視需要選取下列值：
     

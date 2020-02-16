@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 665ffe5fea6fa6996b405198524ef7dfb51e162f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c59b36e3594d653f188742890ea849e2595a648
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601740"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081365"
 ---
 # <a name="search-statistics"></a>搜尋統計資料
 
 有效的方法若要驗證您的搜尋結果時調查資料事件來檢視您的搜尋結果，以確保其符合您預期的相關統計資料。 當為 [已完成執行搜尋時，下列高階統計資料搜尋的詳細資訊彈出式頁面上會顯示 [**狀態**] 下：
 
-![搜尋的詳細資訊彈出式頁面上的搜尋 statisics](media/SearchDetailsFlyout.png)
+![搜尋的詳細資訊彈出式頁面上的搜尋 statisics](../media/SearchDetailsFlyout.png)
 
 - 估計的數量和大小符合搜尋準則的項目。
 
@@ -37,7 +37,7 @@ ms.locfileid: "41601740"
 
 若要檢視更詳細的統計資料，請按一下 [**統計資料**搜尋詳細資料] 彈出式頁面上。 在 [**搜尋統計資料**] 頁面上，您可以檢視搜尋摘要，包含項目符合搜尋查詢相關的詳細統計資料與搜尋結果的頂端位置。
 
-![搜尋統計資料] 下拉式清單](media/SearchStatisticsDropDownList.png)
+![搜尋統計資料] 下拉式清單](../media/SearchStatisticsDropDownList.png)
 
 ## <a name="summary"></a>摘要
 

@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 您可以使用資訊版權管理 (IRM) 協助控制及保護下載從清單或文件庫的檔案。
-ms.openlocfilehash: d404bc8f72d2b1784c4d796a636556b7a5413b4d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4366a9fa5c42a8f4505163e0987da1decf727564
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596080"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079894"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>將資訊版權管理 (IRM) 套用至清單或文件庫
 
@@ -47,13 +47,13 @@ ms.locfileid: "41596080"
 ## <a name="apply-irm-to-a-list-or-library"></a>將 IRM 套用至清單或文件庫
 <a name="__toc256598179"> </a>
 
-![資訊版權管理設定](media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
+![資訊版權管理設定](../media/1b708102-9c90-42b0-b255-ef0e72d0be88.png)
   
 1. 移至您要設定 IRM 的清單或文件庫。
     
 2. 功能區上，按一下 [**文件庫**] 索引標籤，然後按一下**文件庫設定**。 （如果您正在清單中，按一下 [**清單**] 索引標籤，然後按一下 [**清單設定**。）
     
-    ![在功能區上的 SharePoint 文件庫設定按鈕](media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
+    ![在功能區上的 SharePoint 文件庫設定按鈕](../media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
   
 3. 在 [**權限與管理**] 按一下 [**資訊版權管理**]。 如果沒有出現 [資訊版權管理] 連結，您網站可能未啟用 IRM。 請連絡您的伺服器管理員，以查看其是否可以用於您的網站啟用 IRM。 圖片庫似乎不到 [資訊版權管理] 連結。
     

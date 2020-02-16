@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 尋找關於 Microsoft 合規性分數，可協助組織常見問題的答案簡化和自動化風險評定。
-ms.openlocfilehash: 81541c66f1bc1ec179faa0180b3135f9b623d319
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9a71abba7b38bcf1e39073133f82abaedfc0d270
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595770"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078640"
 ---
 # <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Microsoft 合規性分數 （預覽） 的常見問題集
 

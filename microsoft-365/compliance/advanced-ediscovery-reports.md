@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 736117f62877bd0b33ae1007f00d5a32680963fb
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: c3bd87f6a6b06cf6fc75705073df5a95a1025a31
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662199"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079946"
 ---
 # <a name="advanced-ediscovery-reports-preview"></a>進階電子文件報告 （預覽）
 
@@ -51,11 +51,11 @@ ms.locfileid: "41662199"
   
    在**進階電子文件探索**首頁] 頁面上，大小寫、 Custodian、 資料來源，以及通訊報表索引標籤會顯示跨頁的最頂端。 
   
-   ![在 [首頁] 頁面上的進階電子文件探索報表](media/report-home.png)
+   ![在 [首頁] 頁面上的進階電子文件探索報表](../media/report-home.png)
 
 5. 若要檢視報表，按一下 [報表] 索引標籤中，，然後視您可以執行下列其中一個下列事項：
 
-   ![您可以篩選或下載報告資料](media/AeDReportsFilterDownload.png)
+   ![您可以篩選或下載報告資料](../media/AeDReportsFilterDownload.png)
 
    a. 按一下 [**篩選器**來縮小報表資料。 您可以篩選每個報表的不同內容。
   

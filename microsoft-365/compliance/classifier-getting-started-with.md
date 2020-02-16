@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 類別器是內容的的工具，您可以訓練，讓它正值與負值的範例，來查看辨識各種類型。 類別器調校完成之後，您確認它的結果正確無誤。 然後您可以用它來搜尋整個組織的內容及分類它納入資料外洩防護 (DLP) 或保留原則或套用保留或敏感度標籤。
-ms.openlocfilehash: c0ac644f3435d81159156e175c01e1916b0aeaf3
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+ms.openlocfilehash: 75cf79e162c2e371821b4329fc1be949f0b3a81c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722024"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078806"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>開始使用可訓練的分類器 (預覽)
 
@@ -74,7 +74,7 @@ Microsoft 365 隨附六個準備好使用相關性：
 
 這些會出現在**Microsoft 365 合規性中心** > **資料分類 （預覽）** > **Trainable 相關性**檢視狀態的`Ready to use`。
 
-![相關性-準備-要-使用-相關性](media/classifiers-ready-to-use-classifiers.png)
+![相關性-準備-要-使用-相關性](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
 > 請注意冒犯、 騷擾、 褻瀆和威脅相關性只使用可搜尋的文字不詳盡或完整。  此外，語言和文化的標準不斷變更，並根據這些最新資訊，Microsoft 保留來更新其自行斟酌中的這些相關性的權限。 雖然相關性可能會協助您組織中監視冒犯與使用其他語言，相關性沒有解決這種語言的後果，而不提供監視或所使用之回應的貴組織的唯一方法這類的語言。 您的組織，並不 Microsoft 或其子公司，會維持負責監視、 強制執行、 封鎖、 移除和保留的預先受過訓練類別器所識別的所有內容的相關的所有決策。
@@ -83,7 +83,7 @@ Microsoft 365 隨附六個準備好使用相關性：
 
 若要使用相關性不需要訓練，但您需要確認他們會識別類型的內容，您會需要他們協助您在合規性解決方案中使用它們之前，已準備好。 測試前受過訓練類別器遵循此流程。
 
-![測試前受過訓練類別器的程序流程](media/classifier-pre-trained-classifier-flow.png)
+![測試前受過訓練類別器的程序流程](../media/classifier-pre-trained-classifier-flow.png)
 
 ### <a name="understanding-trainable-classifiers"></a>了解 trainable 相關性
 
@@ -96,9 +96,9 @@ Microsoft 365 隨附六個準備好使用相關性：
 
 建立及發佈使用 trainable 類別器在合規性解決方案，例如保留原則和通訊監督，後面這個的流程。 如需詳細資訊，在建立 trainable 類別器，請參閱[建立 trainable 類別器](classifier-creating-a-trainable-classifier.md)。
 
-![處理程序流程 trainable 類別器](media/classifier-trainable-classifier-flow.png)
+![處理程序流程 trainable 類別器](../media/classifier-trainable-classifier-flow.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [保留標籤](labels.md)
 - [保留原則](retention-policies.md)

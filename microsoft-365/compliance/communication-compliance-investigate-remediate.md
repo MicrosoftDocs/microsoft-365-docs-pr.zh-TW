@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 31a38ac28d1b483d6b5cdce6fade82d252457641
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: fc1a9cb77cc642ead4af120383b807808e695c22
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661949"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078719"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>調查並修復通訊規範警示
 
@@ -50,7 +50,7 @@ ms.locfileid: "41661949"
 
 #### <a name="to-configure-a-filter"></a>若要設定篩選
 
-1. 登入[https://compliance.microsoft.com](https://compliance.microsoft.com)使用 Microsoft 365 組織中系統管理員帳戶認證。
+1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://compliance.microsoft.com](https://compliance.microsoft.com)。
 
 2. 在 Microsoft 365 合規性中心，移至**通訊合規性**。
 
@@ -66,7 +66,7 @@ ms.locfileid: "41661949"
 
 8. 如果您想要將所選取的篩選器儲存為篩選器查詢中，選取**儲存查詢**的控制項之後您已至少一個篩選值。 輸入篩選器查詢的名稱，然後選取 [**儲存**]。 此篩選器可供您使用僅限此原則，且會列在 [**已儲存的篩選器查詢**] 區段中的 [**篩選器**的詳細資訊] 頁面。
 
-    ![通訊規範篩選詳細資料控制項](media/communication-compliance-filter-detail-controls.png)
+    ![通訊規範篩選詳細資料控制項](../media/communication-compliance-filter-detail-controls.png)
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>使用 near 和完全重複的分析
 
@@ -74,7 +74,7 @@ ms.locfileid: "41661949"
 
 #### <a name="to-remediate-duplicates"></a>若要補救重複項目
 
-1. 登入[https://compliance.microsoft.com](https://compliance.microsoft.com)使用 Microsoft 365 組織中系統管理員帳戶認證。
+1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://compliance.microsoft.com](https://compliance.microsoft.com)。
 
 2. 在 Microsoft 365 合規性中心，移至**通訊合規性**。
 
@@ -90,7 +90,7 @@ ms.locfileid: "41661949"
 
 8. 完成的郵件的補救動作之後，選取 [**關閉**]。
 
-    ![通訊規範完全重複資料控制項](media/communication-compliance-duplicates-controls.png)
+    ![通訊規範完全重複資料控制項](../media/communication-compliance-duplicates-controls.png)
 
 ## <a name="remediate-alerts"></a>修復提醒
 
@@ -98,7 +98,7 @@ ms.locfileid: "41661949"
 
 1. **檢查郵件基本概念**： 有時很明顯地從 [來源] 或 [可以立即修復郵件的主旨。 可能的訊息是假性或不正確相符的原則，而且應該是解析為誤判。 選取要立即解決警示並從暫止警示佇列中移除的**誤判**控制項。 從來源] 或 [寄件者的資訊，您可能已經知道應該如何路由傳送或在這些情況下處理郵件。 請考慮使用**標籤做為**或**提報**控制項，將標籤指派給適用郵件或將訊息傳送給指定檢閱者。
 
-    ![通訊規範修復控制項](media/communication-compliance-remediation-controls.png)
+    ![通訊規範修復控制項](../media/communication-compliance-remediation-controls.png)
 
 2. **檢查訊息詳細資料**： 檢閱郵件基本知識之後，該是時候來開啟郵件若要檢查的詳細資料，並判斷進一步修復動作。 選取要檢視完整的郵件標頭和內文資訊的訊息。 有數個不同的檢視可用來協助您決定適當採取的動作：
 
@@ -107,7 +107,7 @@ ms.locfileid: "41661949"
     - **附註檢視**： 此檢視可讓儲存到的郵件] 檢視的檢閱者直接在郵件上新增註解。
     - **使用者歷程記錄**： 使用者歷程記錄] 檢視會顯示所有由使用者傳送郵件的任何通訊合規性政策產生其他提醒。
 
-    ![通訊合規性訊息檢視控制項](media/communication-compliance-message-views.png)
+    ![通訊合規性訊息檢視控制項](../media/communication-compliance-message-views.png)
 
 3. **修復動作的決定**： 現在，您已檢閱警示訊息的詳細資料，您可以選擇數個修復動作：
 

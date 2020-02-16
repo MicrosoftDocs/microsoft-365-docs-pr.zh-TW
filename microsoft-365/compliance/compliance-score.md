@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性分數可幫助組織簡化和自動化的風險評估，並建議建議的動作，以協助地址的風險。
-ms.openlocfilehash: c1f912deacd9e7a9b30cbc4665a259177aeebf65
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dff5e6c057df37c076e328d5203a1eb4e4b3207a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595740"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078514"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft 合規性分數 （預覽）
 
@@ -39,7 +39,7 @@ Microsoft 合規性分數是在 Microsoft 365 合規性中心，以協助您了�
 
 主要的合規性分數頁面是自訂儀表板。 它會顯示您目前的分數、 可協助您查看哪些需要注意，及引導您以動作，以改善您的分數。 合規性分數儀表板看起來像這樣：
 
-![合規性分數-儀表板](media/compliance-score-dashboard.png "合規性分數儀表板")
+![合規性分數-儀表板](../media/compliance-score-dashboard.png "合規性分數儀表板")
 
 ### <a name="simplified-compliance-management"></a>簡化的合規性管理
 
@@ -75,7 +75,7 @@ Microsoft 合規性分數是在 Microsoft 365 合規性中心，以協助您了�
 
 合規性分數會使用數個元件，可協助您管理您的合規性活動。 當您可以使用合規性分數指派、 測試和監視合規性活動，很有幫助有基本了解這些重要元件。 此圖顯示它們之間的關係：
 
-![合規性管理員第 3 版中的關聯性](media/compliance-manager-relationships.png "合規性分數元件")
+![合規性管理員第 3 版中的關聯性](../media/compliance-manager-relationships.png "合規性分數元件")
 
 ### <a name="controls"></a>控制項
 
