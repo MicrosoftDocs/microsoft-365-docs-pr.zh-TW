@@ -16,12 +16,12 @@ ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 ms.collection:
 - M365-security-compliance
 description: 說明 Office 365 和 EOP 系統管理員如何啟用和停用電子郵件訊息中的安全提示。
-ms.openlocfilehash: 6b94d34b6cf8bebc0aa4032f255b874fb7d4affb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ae8a3bc9811aa54b0c5ae4cc8a0e2eb9aa80aef0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599410"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086241"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>啟用或停用 Office 365 中的安全提示
 
@@ -48,15 +48,15 @@ Exchange Online Protection (EOP) 會對它傳遞的電子郵件加上 (或標記
 
 4. 選擇 **[原則]** 頁面上的 **[反垃圾郵件]**。
 
-    ![這個螢幕擷取畫面顯示如何前往安全性 &amp; 合規性中心中的 [反垃圾郵件] 設定頁面。](../media/b8eb2ee3-2eb1-4ea2-b138-f6d7fb2e23de.png)
+    ![這個螢幕擷取畫面顯示如何前往安全性 &amp; 合規性中心中的 [反垃圾郵件] 設定頁面。](../../media/b8eb2ee3-2eb1-4ea2-b138-f6d7fb2e23de.png)
 
 5. 選擇 **[垃圾郵件防護設定]** 頁面上的 **[自訂]** 索引標籤。
 
-    ![此螢幕擷取畫面顯示安全性 &amp; 合規性中心中之 [反垃圾郵件] 設定頁面上的 [自訂] 索引標籤位置。](../media/1d688d23-e6f3-4de5-84a7-e8ce31786193.png)
+    ![此螢幕擷取畫面顯示安全性 &amp; 合規性中心中之 [反垃圾郵件] 設定頁面上的 [自訂] 索引標籤位置。](../../media/1d688d23-e6f3-4de5-84a7-e8ce31786193.png)
 
 6. 如有需要，請選擇 **[自訂設定]** 開關，以開啟自訂設定。 如果自訂設定開關已設為 **[關閉]**，您將無法修改垃圾郵件篩選原則。
 
-    ![此螢幕擷取畫面顯示自訂反垃圾郵件篩選原則設定為關閉。](../media/94f900ad-b556-4a31-a3ac-acfcd72e71b8.png)
+    ![此螢幕擷取畫面顯示自訂反垃圾郵件篩選原則設定為關閉。](../../media/94f900ad-b556-4a31-a3ac-acfcd72e71b8.png)
 
 7. 展開您要修改的垃圾郵件原則，然後選擇 **[編輯原則]**。 例如，選擇 **[預設垃圾郵件篩選原則]** 旁邊的向下箭號。 或者，您可以視需要選擇 **[新增原則]** 來建立新原則。
 

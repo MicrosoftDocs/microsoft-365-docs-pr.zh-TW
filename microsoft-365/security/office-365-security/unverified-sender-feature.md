@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 若要防止網路釣魚郵件送達您的信箱，Outlook.com 和網頁型 Outlook 確認寄件者是誰他們說他們且可疑的郵件標示為垃圾郵件。
-ms.openlocfilehash: a6ae80adb9ddae2c675e75d747dda27f09a404fb
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 513a45594dd41db56abe143ea6edca7074539d2f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957248"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081997"
 ---
 # <a name="unverified-sender"></a>未驗證的寄件者
 
@@ -40,7 +40,7 @@ ms.locfileid: "41957248"
 
 Office 365 無法驗證使用電子郵件驗證技術，寄件者的身分識別時 '？ ' 顯示寄件者映像中。
 
-![郵件未通過驗證](../media/message-did-not-pass-verification.jpg)
+![郵件未通過驗證](../../media/message-did-not-pass-verification.jpg)
 
 若要驗證失敗不是每個訊息是惡意。 不過，您應該謹慎互動與未驗證如果您不能辨識寄件者的郵件。 或者，如果您辨識通常沒有寄件者 '？ ' 寄件者的影像，但您突然開始看到它，可能會登寄件者詐騙。
 
@@ -50,7 +50,7 @@ Office 365 無法驗證使用電子郵件驗證技術，寄件者的身分識別
 
 - 安全性 & 合規性中心，全域或安全性系統管理員可以關閉透過反 Phish 原則] 底下的反詐騙保護功能，開啟或關閉。 此外，您可以使用**Set AntiPhishPolicy**指令程式在 Exchange Online PowerShell。 如需詳細資訊，請參閱[在 Office 365 中的反網路釣魚保護](anti-phishing-protection.md)及 [設定 AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy)。
 
-    ![編輯的圖形介面中的未驗證寄件者。](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
+    ![編輯的圖形介面中的未驗證寄件者。](../../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
 - 如果系統管理員已識別為誤判，而寄件者應該不會收到未驗證的寄件者處理方式，其中一個下列動作可以採取新增至詐騙智慧詐騙的寄件者允許清單：
 

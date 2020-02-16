@@ -15,12 +15,12 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以了解如何使用 Exchange Online Protection 中的郵件流程規則的大量電子郵件篩選。
-ms.openlocfilehash: 5188ce077ce15ab7ad5d03e4aa2c172db6a80c37
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 81b0f4cc58d712c3a1c1e09dab02d1c6f56cb69d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598040"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081814"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>使用郵件流程規則來設定 Exchange Online Protection 中篩選大量電子郵件
 
@@ -36,11 +36,11 @@ ms.locfileid: "41598040"
 
 1. 在 Exchange 系統管理中心 (EAC) 中，移至 **[郵件流程]** \> **[規則]**。
 
-2. 按一下 [**新增**![加入圖示](../media/ITPro-EAC-AddIcon.gif)]，然後選取 [**建立新的規則**。
+2. 按一下 [**新增**![加入圖示](../../media/ITPro-EAC-AddIcon.gif)]，然後選取 [**建立新的規則**。
 
 3. 指定規則的名稱。
 
-4. 按一下 [**更多選項**![更多選項圖示](../media/ITPro-EAC-MoreOptionsIcon.png)。 在**套用此規則情況**] 下選取 [**主旨或本文** \> **主旨或內文符合這些文字模式**。
+4. 按一下 [**更多選項**![更多選項圖示](../../media/ITPro-EAC-MoreOptionsIcon.png)。 在**套用此規則情況**] 下選取 [**主旨或本文** \> **主旨或內文符合這些文字模式**。
 
 5. 在 [**指定單字或片語**] 對話方塊中，新增下列規則運算式通常位於大量電子郵件，一次，然後完成後，按一下 [**確定]** :
 
@@ -88,7 +88,7 @@ ms.locfileid: "41598040"
 
 1. 在 EAC 中，移至 [郵件流程]**** \> [規則]****。
 
-2. 按一下 [**新增**![加入圖示](../media/ITPro-EAC-AddIcon.gif)]，然後選取 [**建立新的規則**。
+2. 按一下 [**新增**![加入圖示](../../media/ITPro-EAC-AddIcon.gif)]，然後選取 [**建立新的規則**。
 
 3. 指定規則的名稱。
 

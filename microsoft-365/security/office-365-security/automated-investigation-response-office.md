@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 在 Office 365 進階威脅防護計劃 2 中，取得自動化調查及回應能力的概觀。
-ms.openlocfilehash: 975c6d8a00e3e1cd8c30b2d417c74cde39b8cd5a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ca4cf6033b843b92a2edceaae27f43d6eed8e7d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599800"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086790"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>自動化的調查和 Office 365 中的回應 （空調）
 
@@ -66,7 +66,7 @@ ms.locfileid: "41599800"
 
 如果您的組織管理您的安全性提醒透過警示管理系統、 服務管理系統或安全性資訊和事件管理 (SIEM) 的系統，您可以透過 [電子郵件通知，或是透過[Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)該系統傳送 Office 365 警示。 透過電子郵件或 API 調查警示通知包含連結來存取安全性 & 合規性中心，啟用快速瀏覽到調查指派的安全性系統管理員中的警示。
 
-![連結至調查的提醒](../media/air-alerts-page-details.png) 
+![連結至調查的提醒](../../media/air-alerts-page-details.png) 
 
 ## <a name="security-playbooks"></a>安全性 playbooks
 
@@ -103,7 +103,7 @@ ms.locfileid: "41599800"
 
 [自動化的調查] 頁面上顯示貴組織的調查和其目前狀態。
 
-![AIR 的主要調查頁面](../media/air-maininvestigationpage.png) 
+![AIR 的主要調查頁面](../../media/air-maininvestigationpage.png) 
   
 您可以：
 - 直接前往調查 （選取**調查識別碼**）。
@@ -132,7 +132,7 @@ ms.locfileid: "41599800"
 
 當您開啟特定調查時，您會看到 [調查 graph] 頁面。 此頁面會顯示所有不同的實體： 電子郵件、 使用者 （和其活動），以及已自動調查一部分警示所觸發的裝置。
 
-![AIR 調查圖形頁面](../media/air-investigationgraphpage.png)
+![AIR 調查圖形頁面](../../media/air-investigationgraphpage.png)
 
 您可以：
 - 取得目前調查的視覺化概觀。
@@ -144,7 +144,7 @@ ms.locfileid: "41599800"
 
 調查的 [**提醒**] 索引標籤中，您可以看到與調查有關的提醒。 詳細資料包含觸發調查警示和調查相互關聯其他相關的警示，例如風險登入、 違反 DLP 原則等。 此頁面上，從安全性分析師也可以檢視其他詳細資料上獲取個別警示。
 
-![產生提醒] 頁面上](../media/air-investigationalertspage.png)
+![產生提醒] 頁面上](../../media/air-investigationalertspage.png)
 
 您可以：
 - 取得目前的觸發警示和任何相關聯的警示的視覺化概觀。
@@ -177,14 +177,14 @@ ms.locfileid: "41599800"
 
 做為範例，請考慮下列案例。 三個電子郵件的第一個叢集已被視為是釣魚程式。 類似郵件具有相同的 IP 和主旨的另一個叢集已找到，而且視為惡意，有些已識別為釣魚程式初始偵測期間。 
 
-![空調電子郵件調查] 頁面](../media/air-investigationemailpage.png)
+![空調電子郵件調查] 頁面](../../media/air-investigationemailpage.png)
 
 您可以：
 - 取得目前的叢集結果和威脅找到的視覺化概觀。
 - 按一下 [叢集實體或威脅清單] 以開啟飛出視窗] 頁面上顯示的完整警示的詳細資料。
 - 進一步調查的電子郵件叢集按一下頂端的 '電子郵件叢集詳細資料] 索引標籤上的 '在檔案總管中開啟' 連結
 
-![空調調查的電子郵件與彈出式詳細資料](../media/air-investigationemailpageflyoutdetails.png)
+![空調調查的電子郵件與彈出式詳細資料](../../media/air-investigationemailpageflyoutdetails.png)
 
 > [!NOTE]
 > 在電子郵件的內容，您可能會看到大量異常威脅表面調查的一部分。 磁碟區異常指出相較於舊版項調查事件時間前後的類似電子郵件訊息中的特殊圖文集。 此特殊圖文集的特性類似的電子郵件流量 (例如主旨] 和 [寄件者的網域，本文相似性和寄件者 IP) 是一般的電子郵件行銷活動或攻擊的開始。 不過，大量、 垃圾郵件和合法電子郵件行銷活動常共用這些特性。 磁碟區異常代表潛在威脅，並據此可能少數嚴重相較惡意程式碼或釣魚程式的威脅，用來識別的防毒引擎、 爆炸或惡意的信譽。
@@ -195,7 +195,7 @@ ms.locfileid: "41599800"
 
 例如，在下列映像，空調已識別危害和異常根據新的收件匣規則所建立的指標。 調查的其他詳細資料 （辨識項） 可透過此危害的指標] 索引標籤內的詳細檢視，而且異常也可包含從[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)的異常偵測。
 
-![空調調查的使用者] 頁面](../media/air-investigationuserspage.png)
+![空調調查的使用者] 頁面](../../media/air-investigationuserspage.png)
 
 您可以：
 - 取得已識別的使用者結果與風險找到的視覺化概觀。
@@ -205,7 +205,7 @@ ms.locfileid: "41599800"
 
 **機器**索引標籤上，您可以看到識別為調查的一部分的所有機器。 
 
-![空調調查機器頁面](../media/air-investigationmachinepage.png)
+![空調調查機器頁面](../../media/air-investigationmachinepage.png)
 
 某些 playbooks 的一部分，空調相互關聯至裝置 （例如 Zapped 惡意程式碼） 的電子郵件威脅。 例如，調查遞給惡意檔案雜湊跨[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 )調查。 這可讓您的使用者，以協助確保已解決威脅，在雲端和跨端點相關機器的自動化調查。 
@@ -220,19 +220,19 @@ ms.locfileid: "41599800"
 
 在這裡，您可以看到的調查實體與類型的實體，例如電子郵件、 叢集、 IP 位址、 使用者和更多詳細資料。 您也可以查看多少實體進行分析，且威脅，與每個相關聯。 
 
-![空調調查實體] 頁面上](../media/air-investigationentitiespage.png)
+![空調調查實體] 頁面上](../../media/air-investigationentitiespage.png)
 
 您可以：
 - 取得調查實體和威脅找到的視覺化概觀。
 - 選取要開啟飛出視窗] 頁面顯示相關的實體詳細資料的實體。
 
-![空調調查實體詳細資料](../media/air-investigationsentitiespagedetails.png)
+![空調調查實體詳細資料](../../media/air-investigationsentitiespagedetails.png)
 
 ### <a name="playbook-log"></a>Playbook 記錄檔
 
 在 [**記錄**] 索引標籤中，您可以看到調查期間所發生的所有 playbook 步驟。 記錄檔會擷取所有分析器和空調一部分由 Office 365 自動調查功能完成動作的完整詳細目錄。 它本身、 描述及的實際工期提供清楚的所有所採取的步驟，包括巨集指令檢視從開始到完成。 
 
-![空調調查記錄頁面](../media/air-investigationlogpage.png)
+![空調調查記錄頁面](../../media/air-investigationlogpage.png)
 
 您可以：
 - 取得看到所採取的 playbook 步驟的視覺化概觀。
@@ -266,7 +266,7 @@ ms.locfileid: "41599800"
 
 動作擷取 Microsoft 建議您採取調查結尾處的步驟。 您可以藉由選取一或多個動作採取以下修復動作。 按一下 [**核准**允許修復以開始。 （所需的適當的權限-'搜尋及清除' 角色，才能執行從檔案總管和空調）。 例如，安全性讀取者可以檢視動作，而不是核准它們。 附註： 您不必核准的每個動作。 如果您與建議的動作不一致，或您的組織未選擇特定類型的動作，接著您可以選擇**拒絕**動作或只需加以略過並不採取任何動作。 核准及/或拒絕的所有動作可讓完全關閉調查 （狀態會變成修復，） 時前面調查狀態變更為部分修復狀態中的某些動作不完整的結果。
 
-![空調調查動作] 頁面上](../media/air-investigationactionspage.png)
+![空調調查動作] 頁面上](../../media/air-investigationactionspage.png)
 
 您可以：
 - 取得 playbook 建議動作的視覺化概觀。
@@ -319,11 +319,11 @@ ms.locfileid: "41599800"
 
 例如，假設您正在檢視的資料在檔案總管中關於使用者報告的郵件。 您可以在結果清單中選取項目，然後按一下 [從 （假設您具備適當的補救權限） 的 [動作] 功能表的 [**調查]** 。
 
-![使用者報告中的郵件檔案總管與調查] 按鈕](../media/Explorer-UserReported-Investigate.png)
+![使用者報告中的郵件檔案總管與調查] 按鈕](../../media/Explorer-UserReported-Investigate.png)
 
 另一個範例，假設您正在檢視包含惡意程式碼，偵測到的電子郵件的相關資料，並有幾個偵測為包含惡意程式碼的電子郵件訊息。 您可以選取 [**電子郵件**] 索引標籤，選取一或多個電子郵件訊息，然後在 [**動作**] 功能表上選取 [**調查]**。 
 
-![在檔案總管中開始進行調查，惡意程式碼](../media/Explorer-Malware-Email-ActionsInvestigate.png)
+![在檔案總管中開始進行調查，惡意程式碼](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 類似於 playbooks 觸發警示的通知，會觸發從瀏覽器中檢視的自動調查包含根目錄和調查]，以找出並相互關聯的威脅，步驟及建議的動作來減輕這些威脅。
 

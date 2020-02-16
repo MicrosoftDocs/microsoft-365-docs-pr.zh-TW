@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 使用新的安全性儀表板來檢閱 Office 365 威脅保護狀態，並檢視，然後對安全性提醒。
-ms.openlocfilehash: 04c146a90cacccee831edd8a825bff0139963e16
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 85c616c717a85f9a6a47e63a48621a8703b487aa
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598460"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088173"
 ---
 # <a name="security-dashboard"></a>安全性儀表板
 
@@ -44,7 +44,7 @@ ms.locfileid: "41598460"
 
 威脅管理摘要] 小工具會告訴您一眼防止威脅保護您的組織已方式，過去七 （7） 天。
 
-![安全性儀表板-威脅管理摘要] 小工具](../media/SecDash-ThreatMgmtSummary.png)
+![安全性儀表板-威脅管理摘要] 小工具](../../media/SecDash-ThreatMgmtSummary.png)
 
 您會看到的威脅管理摘要中的資訊取決於您的訂閱所包含的內容。 下表說明會包含 Office 365 E3 和 Office 365 E5 哪些資訊。
 
@@ -59,7 +59,7 @@ ms.locfileid: "41598460"
 
 威脅保護狀態] 小工具顯示與趨勢和詳細資料檢視的釣魚程式和惡意程式碼威脅保護效率。 
 
-![威脅保護狀態] 小工具](../media/tpswidget.png)
+![威脅保護狀態] 小工具](../../media/tpswidget.png)
 
 詳細資料取決於您的 Office 365 訂閱是否包含[Exchange Online Protection](exchange-online-protection-eop.md) (EOP)，或者沒有[Office 365 進階威脅防護](office-365-atp.md)(ATP)。
 
@@ -75,7 +75,7 @@ ms.locfileid: "41598460"
  
 全域每週的威脅偵測] 小工具顯示多少威脅所電子郵件中偵測到過去七 （7） 天。
 
-![全域每週威脅偵測小工具](../media/globalweeklythreatdetections.png)
+![全域每週威脅偵測小工具](../../media/globalweeklythreatdetections.png)
 
 下表所述，會計算度量資訊：
 
@@ -90,13 +90,13 @@ ms.locfileid: "41598460"
 
 惡意程式碼 widget 過去七 （7） 天顯示有關惡意程式碼趨勢和惡意程式碼家庭類型的詳細資料。
 
-![惡意程式碼趨勢和家庭類型](../media/malwarewidgetatpe5.png)
+![惡意程式碼趨勢和家庭類型](../../media/malwarewidgetatpe5.png)
  
 ## <a name="insights"></a>深入資訊
 
 深入了解不僅呈現關鍵問題，您應檢閱，它們也包含要考慮的建議與動作。 
 
-![智慧深入解析](../media/smartinsights.png)
+![智慧深入解析](../../media/smartinsights.png)
 
 例如，您可能會看到網路釣魚電子郵件會被傳遞，因為某些使用者已停用其垃圾郵件] 選項。 若要深入了解觀點的運作方式，請參閱[報表和深入了解 Office 365 安全性&amp;合規性中心](reports-and-insights-in-security-and-compliance.md)。
   
@@ -104,14 +104,14 @@ ms.locfileid: "41598460"
 
 如果您的組織訂閱包含[Office 365 進階威脅防護計劃 2](office-365-ti.md)，安全性儀表板會有一個區段，包括進階的威脅調查及回應工具。 貴組織的安全性小組可以了解新興行銷活動、 調查威脅及管理事件，以使用本節中的資訊。 
   
-![威脅情報可協助您了解財經貴組織的攻擊](../media/threatintelwidget.png)
+![威脅情報可協助您了解財經貴組織的攻擊](../../media/threatintelwidget.png)
   
   
 ## <a name="trends"></a>趨勢
 
 安全性儀表板底部附近會摘要說明您組織的電子郵件流程趨勢**趨勢**] 區段。 報表會提供電子郵件分類為垃圾郵件、 惡意程式碼、 網路釣魚企圖和良好的電子郵件的相關資訊。 按一下 [在報告中檢視的詳細的資訊的磚。 
   
-![趨勢節摘要列出組織的電子郵件流程趨勢](../media/trends.png)
+![趨勢節摘要列出組織的電子郵件流程趨勢](../../media/trends.png)
   
 和，如果貴組織的 Office 365 訂用帳戶包含[Office 365 進階威脅防護計劃 2](office-365-ti.md)，您也必須**最近的威脅管理通知**報告可讓您檢視及對高優先順序安全性警示採取動作的安全性小組本章節中。 
 

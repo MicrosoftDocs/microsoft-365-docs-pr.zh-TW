@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定義郵件使用者是管理 Exchange Online Protection (EOP) 的重要環節。
-ms.openlocfilehash: 53d47452979c42273fd485fa89642eea881bb21a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bdbc3cd54901d53b4a7d01bcf513a9b9a0df1c01
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598980"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088582"
 ---
 # <a name="manage-mail-users-in-eop"></a>管理 EOP 中的郵件使用者
 
@@ -108,7 +108,7 @@ ms.locfileid: "41598980"
 
 ### <a name="use-the-eac-to-edit-or-remove-a-mail-user"></a>使用 EAC 來編輯或移除郵件使用者
 
-- In the EAC, go to **Recipients** \> **Contacts**. 在使用者清單中，按一下您要檢視或變更的使用者，然後選取 [**編輯**![編輯圖示](../media/ITPro-EAC-EditIcon.gif)以視需要更新使用者設定。 You can change the user's name, alias, or contact information, and you can record detailed information about the user's role in the organization. 您可以也選取使用者，然後選擇 [**移除**![移除圖示](../media/ITPro-EAC-RemoveIcon.gif)將它刪除。
+- In the EAC, go to **Recipients** \> **Contacts**. 在使用者清單中，按一下您要檢視或變更的使用者，然後選取 [**編輯**![編輯圖示](../../media/ITPro-EAC-EditIcon.gif)以視需要更新使用者設定。 You can change the user's name, alias, or contact information, and you can record detailed information about the user's role in the organization. 您可以也選取使用者，然後選擇 [**移除**![移除圖示](../../media/ITPro-EAC-RemoveIcon.gif)將它刪除。
 
 ## <a name="use-exchange-online-protection-powershell-to-manage-mail-users"></a>使用 Exchange Online Protection PowerShell 來管理郵件使用者
 

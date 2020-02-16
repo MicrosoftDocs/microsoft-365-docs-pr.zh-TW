@@ -1,24 +1,24 @@
 ---
 title: 可靠深入解析
 description: ''
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1f642d2790af5f4ec83dd1bbe57a9be249d095d1
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: b7f56a64f1846676f458f7b3ddb210e84b9ca8f7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962330"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085665"
 ---
 # <a name="reliability-insights"></a>可靠深入解析
 
 此檢視為您提供您受管理的裝置健全狀況摘要。 若要檢視可靠性資料，請選取 [**可靠性**] 索引標籤。
 
 
-![可靠性窗格： 上方的 [跨裝置透過時間圖表中右上，upper left、 可靠性問題資料表跨底部。 說明和意見反應] 按鈕在右下方。](images/insights_reliability.png)
+![可靠性窗格： 上方的 [跨裝置透過時間圖表中右上，upper left、 可靠性問題資料表跨底部。 說明和意見反應] 按鈕在右下方。](../../media/insights_reliability.png)
 
 **跨裝置的可靠性**] 區段中會提供快速的健全狀況摘要。 您過去 14 天的部署所報告的裝置會被認為是 「 良好 」 並觀察到自上次報告失敗後平均時間百分比。 
 

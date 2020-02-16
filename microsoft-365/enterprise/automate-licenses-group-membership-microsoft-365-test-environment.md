@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Microsoft 365 企業版測試環境中設定群組為基礎的授權和動態群組成員資格。
-ms.openlocfilehash: 0575f2aa763f85a0042e6d02f9cce65e69064973
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 266ae8cb133eccf74ea75382b400ca8241782ec5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601180"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068500"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>自動化適用於 Microsoft 365 企業版測試環境的授權和群組成員資格
 
@@ -33,10 +33,10 @@ ms.locfileid: "41601180"
 1. 建立 Microsoft 365 企業版測試環境。
 2. 設定並測試動態群組成員資格和自動授權。
 
-![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1：建置您的 Microsoft 365 企業版測試環境
 
@@ -63,7 +63,7 @@ ms.locfileid: "41601180"
    - 選取 [**部門**] 內容。
    - 選取 [**等於**運算子。
    - 類型中的 [**銷售****值**。
-10. 按一下 [儲存]****。
+10. 按一下 **[儲存]**。
 11. 按一下 **[建立]**。
 
 接下來，您設定 「 業務 」 群組，以便成員自動獲指派的 Microsoft 365 E5 授權。

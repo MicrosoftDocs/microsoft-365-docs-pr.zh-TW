@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性原則和建議現代化貴組織中的安全性。
-ms.openlocfilehash: 38f7a1af7592801a97fd8b5156dcbfaa1c5ebfdf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f187c00a7ce55bbcfe66171bbcc1668f431e3b25
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599680"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083512"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>首席資訊安全長研討會模組 4b： 威脅保護策略 
 
 此模組檢閱 trajectory 的 Microsoft 安全性作業中心 (SOC)，提供的 Microsoft 智慧型安全性圖形中的訊號 trillions 與發展。
 
-- 下載 PDF 摘要：[模組 4b： 威脅保護策略](../media/ciso-workshop-4b-threat-protection-strategy.pdf)
+- 下載 PDF 摘要：[模組 4b： 威脅保護策略](../../media/ciso-workshop-4b-threat-protection-strategy.pdf)
 - 下載 PowerPoint 摘要：[模組 4b： 威脅保護策略](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4b-threat-protection-strategy.pptx)
 
 ## <a name="introduction-threat-protection-strategy-detect-respond-recover-338"></a>簡介： 威脅保護策略 （偵測-回應-復原） (3:38)

@@ -16,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 身為 Office 365 全域管理員，您可以使用的攻擊模擬器在組織中執行真實的攻擊案例。 這可協助您找出並之前真實的攻擊拜訪人次貴公司，找出受到使用者。
-ms.openlocfilehash: 6fb88e6b79c0949c7ddc26eabda2bb04ea1fa3bf
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 93a2601322fd33024c1310e1df69ad1dea2f07b7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957408"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083665"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 中的攻擊模擬器
 
@@ -57,7 +57,7 @@ ms.locfileid: "41957408"
 
 - 您的組織有[Office 365 進階威脅防護計劃 2](office-365-atp.md)，與安全性可見的攻擊模擬器&amp;合規性中心 (前往**威脅管理** \> **攻擊模擬器**)
 
-    ![威脅管理-攻擊模擬器](../media/ThreatMgmt-AttackSimulator.png)
+    ![威脅管理-攻擊模擬器](../../media/ThreatMgmt-AttackSimulator.png)
 
 ## <a name="credential-harvest-spear-phishing-attack"></a>認證搜集矛網路釣魚攻擊
 
@@ -67,7 +67,7 @@ ms.locfileid: "41957408"
 
 ### <a name="to-simulate-a-spear-phishing-attack"></a>若要模擬矛網路釣魚攻擊
 
-![撰寫電子郵件內文](../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+![撰寫電子郵件內文](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
 您可以製作豐富的 HTML 編輯器，直接在**電子郵件內文**欄位本身或與 HTML 來源搭配使用。
 
@@ -75,15 +75,15 @@ ms.locfileid: "41957408"
 
 2. 指定攻擊的有意義的活動名稱，或者選取範本。
 
-   ![網路釣魚起始頁面](../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+   ![網路釣魚起始頁面](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
 3. 指定目標收件者。 這可以是個人或組織中的群組。 每個目標收件者必須擁有 Exchange Online 信箱攻擊的順序才會成功。
 
-   ![收件者的選取範圍](../media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
+   ![收件者的選取範圍](../../media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
 
 4. 設定網路釣魚電子郵件的詳細資訊。
 
-   ![設定電子郵件的詳細資訊](../media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)
+   ![設定電子郵件的詳細資訊](../../media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)
 
    HTML 格式可以為複雜或基本與您的行銷活動需求。 為電子郵件格式是 HTML，您可以插入影像和以增強 believability 的文字。 您可以在所收到的訊息中接收電子郵件用戶端外觀的控制。
 
@@ -161,7 +161,7 @@ ms.locfileid: "41957408"
 
 請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)請參閱什麼是在開發中、 什麼推行和功能已啟動。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 

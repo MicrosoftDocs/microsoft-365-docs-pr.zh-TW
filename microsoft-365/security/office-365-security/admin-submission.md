@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何送出可疑的電子郵件，可能的網路釣魚郵件、 垃圾郵件，以及其他可能有害的郵件、 Url 和檔案從您的 Office 365 租用戶給 Microsoft 進行掃描。
-ms.openlocfilehash: a12981ee302ea72e112826104996fb775e4ac3fb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b123aef485628728df9db27875117b47295975ad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599980"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083621"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>如何送出可疑的垃圾郵件、 釣魚程式、 Url 和 microsoft Office 365 掃描的檔案
 
@@ -35,7 +35,7 @@ ms.locfileid: "41599980"
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>提交給 Microsoft 的可疑電子郵件
 
-![電子郵件送出範例](../media/submission-flyout-email.PNG)
+![電子郵件送出範例](../../media/submission-flyout-email.PNG)
 
 1. 若要提交的電子郵件，選取 [**電子郵件**和指定**網路郵件識別碼**的電子郵件或電子郵件檔案上傳。
 
@@ -51,7 +51,7 @@ ms.locfileid: "41599980"
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>傳送可疑給 Microsoft 的 URL
 
-![電子郵件送出範例](../media/submission-url-flyout.png)
+![電子郵件送出範例](../../media/submission-url-flyout.png)
 
 1. 若要提交 URL 從彈出式視窗中選取**URL** 。 輸入完整的 URL 包括通訊協定 (**https://**)。
 
@@ -61,7 +61,7 @@ ms.locfileid: "41599980"
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>提交給 Microsoft 的可疑的檔案
 
-![電子郵件送出範例](../media/submission-file-flyout.PNG)
+![電子郵件送出範例](../../media/submission-file-flyout.PNG)
 
 1. 提交從彈出式檔案選取**檔案**並上傳檔案至您想要掃描。
 

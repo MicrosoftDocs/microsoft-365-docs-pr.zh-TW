@@ -17,12 +17,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: 整合 Microsoft Defender 進階威脅防護來威脅管理的詳細的資訊請參閱 < Office 365 進階威脅防護。
-ms.openlocfilehash: fc2db4c1a3e5b32206ee91cae9f5adbeae4875d4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8096a950e66ed94d6e056f40b737d89d48cb811e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599130"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088749"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>整合 Office 365 進階的威脅防護與 Microsoft Defender 進階威脅防護
 
@@ -30,7 +30,7 @@ ms.locfileid: "41599130"
   
 下圖顯示 [**裝置**] 索引標籤，您會看到已啟用 Microsoft Defender ATP 整合的時機：
   
-![啟用 Microsoft Defender ATP 時，您可以看到機器警示的清單。](../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
+![啟用 Microsoft Defender ATP 時，您可以看到機器警示的清單。](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
   
 在這個範例中，您可以看到電子郵件的收件者有四種裝置，以及其他有警示。 按一下 [裝置] 連結會開啟其 Microsoft defender 資訊安全中心。
   
@@ -48,11 +48,11 @@ ms.locfileid: "41599130"
   
 1. 為 Office 365 全域系統管理員或安全性系統管理員，請移至[https://protection.office.com](https://protection.office.com)並以 Office 365 您公司或學校帳戶登入。
     
-2. 選擇 [**威脅管理** \> **總管**。<br>![威脅管理] 功能表中的 explorer](../media/ThreatMgmt-Explorer-nav.png)<br>
+2. 選擇 [**威脅管理** \> **總管**。<br>![威脅管理] 功能表中的 explorer](../../media/ThreatMgmt-Explorer-nav.png)<br>
     
 3. 在螢幕的右上角，選擇 [ **WDATP 設定**。
     
-4. 在 [Windows Defender ATP 連線] 對話方塊中，開啟連線到 Windows ATP。<br>![Microsoft Defender ATP 連線](../media/Explorer-WDATPConnection-dialog.png)<br>
+4. 在 [Windows Defender ATP 連線] 對話方塊中，開啟連線到 Windows ATP。<br>![Microsoft Defender ATP 連線](../../media/Explorer-WDATPConnection-dialog.png)<br>
     
 5. 啟用 Microsoft defender 資訊安全中心中的連線。
 

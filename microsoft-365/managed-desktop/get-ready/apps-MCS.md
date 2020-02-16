@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 4491504616eb4bb447f12d08dddb12c73c2a88ac
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
-ms.translationtype: HT
+ms.openlocfilehash: 0cb4da85b5548ced757197a3af818e212b065b47
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962620"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085935"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>使用 Microsoft 諮詢服務
 
@@ -35,7 +35,7 @@ ms.locfileid: "39962620"
 
 將應用程式資訊上傳到 Microsoft 受管理的電腦入口網站來啟動封裝程序。 封裝小組每星期四都會檢閱新的提交。 檢閱和封裝之後，封裝的應用程式會在下星期五交付。 一開始每週最多可以封裝五個應用程式，但能根據您的需求調整服務。
 
-![行事曆顯示應用程式在星期四輸入 (在此範例中為 21 日)，第二天做媒體驗證，下星期一封裝 (25 日)，之後的星期五交付應用程式 (29 日)](images/MCS-cal.png)
+![行事曆顯示應用程式在星期四輸入 (在此範例中為 21 日)，第二天做媒體驗證，下星期一封裝 (25 日)，之後的星期五交付應用程式 (29 日)](../../media/MCS-cal.png)
 
 應用程式交付之後，您會收到通知。 此時，您有 21 天的時間可以執行接受度測試，並在 Microsoft 受管理的電腦入口網站上簽署工作。 如果您在接受度測試期間發現應用程式有些問題，請在 Microsoft 受管理的電腦入口網站中拒絕該應用程式，您將會透過電子郵件與 MCS 封裝程式連線，以了解並解決這個問題。
 

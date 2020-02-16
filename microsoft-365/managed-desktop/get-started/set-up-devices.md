@@ -1,19 +1,19 @@
 ---
 title: Microsoft 受管理電腦的裝置上設定
 description: ''
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7282e1f9d780c127dd70845efefa90aa03e57537
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 64a2936b5a2f9e670a3d89c50424ca0322e99c13
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38011844"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085792"
 ---
-# <a name="set-up-microsoft-managed-desktop-devices"></a>Microsoft 受管理的電腦裝置上設定
+# <a name="set-up-microsoft-managed-desktop-devices"></a>設定 Microsoft 受管理的電腦裝置
 
 Microsoft 受管理電腦中，您可以使用新的和現有的裝置。
 
@@ -36,9 +36,9 @@ Microsoft 受管理電腦中，您可以使用新的和現有的裝置。
     - 使用合作夥伴註冊裝置
 3. [準備好讓使用者](get-started-devices.md)使用 Microsoft 受管理的電腦裝置
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>若要開始使用 Microsoft 受管理電腦的步驟
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>開始使用 Microsoft 受管理電腦的步驟
 
-1. [新增及確認系統管理入口網站中的連絡人](add-admin-contacts.md)
+1. [在系統管理入口網站中新增和驗證系統管理員連絡人](add-admin-contacts.md)
 2. [調整條件式存取](conditional-access.md)
 3. [指派授權](assign-licenses.md)
 4. [部署 Intune 公司入口網站](company-portal.md)

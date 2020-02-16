@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 摘要： 設定組織的其他 Office 365 開發/測試環境中隔離的 SharePoint Online 小組網站。
-ms.openlocfilehash: 49443a5dd6b2c93e6bd7817c09747d49b163cabd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fc56a151d00eba3a6c0131ae1692febe69e76122
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599120"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082996"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>獨立的 SharePoint Online 小組網站開發/測試環境
 
@@ -142,7 +142,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 **圖 1**
 
-![Office 365 群組和適用於隔離 SharePoint Online 群組網站及其成員資格](../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![Office 365 群組和適用於隔離 SharePoint Online 群組網站及其成員資格](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
 ## <a name="phase-3-create-a-new-projectx-sharepoint-online-team-site-and-isolate-it"></a>階段 3： 建立新的 ProjectX SharePoint Online 小組網站並且隔離它
 
@@ -208,7 +208,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 **圖 2**
 
-![SharePoint Online 群組和適用於隔離 SharePoint Online 群組網站及其成員資格](../media/595abff4-64f9-49de-a37a-c70c6856936b.png)
+![SharePoint Online 群組和適用於隔離 SharePoint Online 群組網站及其成員資格](../../media/595abff4-64f9-49de-a37a-c70c6856936b.png)
 
 現在讓我們示範使用 Lead Designer 使用者帳戶的存取：
 

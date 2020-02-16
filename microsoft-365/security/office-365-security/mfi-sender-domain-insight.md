@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 系統管理員可以了解修正寄件者網域深入了解安全性 & 合規性中心中的郵件流程儀表板中。
-ms.openlocfilehash: 1b154f4aecd5ada711b9177380d936cd888df425
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2db1b971ef39f8b207b349ca53237ff87cc9193e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598820"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082558"
 ---
 # <a name="fix-sender-domain-insight"></a>修正寄件者網域深入解析
 
@@ -36,15 +36,15 @@ Office 365 需要從內部電子郵件環境到 Office 365 傳送到符合特定
 
 **修正寄件者網域**深入了解顯示您的電子郵件從內部部署環境不符合準則，可協助您識別可能入侵的機器和使用者帳戶在內部部署電子郵件環境中，可協助您採取補救動作。
 
-![修正寄件者網域深入了解在郵件流程儀表板中安全性 & 合規性中心](../media/sender-domain-insight-selected.png)
+![修正寄件者網域深入了解在郵件流程儀表板中安全性 & 合規性中心](../../media/sender-domain-insight-selected.png)
 
 當您按一下 [**檢視詳細資料**時，您將被帶往另一個小工具以更多的詳細資訊，如下圖所示：
 
-![[詳細資料] 小工具在修正寄件者網域深入解析](../media/sender-domain-view-details.png)
+![[詳細資料] 小工具在修正寄件者網域深入解析](../../media/sender-domain-view-details.png)
 
 您會看到已用來將郵件傳遞到 Office 365 的輸入的連接器。 您也可以按一下**檢視範例郵件識別碼**，以查看從內部部署電子郵件環境傳送郵件的詳細資訊。 因為這些郵件所拒絕的 Office 365，您無法使用郵件追蹤，但您可以使用範例郵件識別碼在內部部署電子郵件環境中追蹤郵件。
 
-![在修正寄件者網域深入了解檢視範例郵件識別碼](../media/sender-domain-view-sample-message-ids.png)
+![在修正寄件者網域深入了解檢視範例郵件識別碼](../../media/sender-domain-view-sample-message-ids.png)
 
 ## <a name="see-also"></a>另請參閱
 

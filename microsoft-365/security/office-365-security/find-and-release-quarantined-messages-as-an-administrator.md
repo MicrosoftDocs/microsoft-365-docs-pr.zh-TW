@@ -16,12 +16,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: 本主題說明 Exchange Online 和 Exchange Online Protection (EOP) 系統管理員如何在 Exchange 系統管理中心 (EAC) 尋找、釋出及報告被隔離的郵件。
-ms.openlocfilehash: d7ea57f1dc78b21dae713ca1b9861abafacfc53a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c46ff11b8d08c46c3000232c836af8148c58511
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599390"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083086"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>以系統管理員身分尋找及釋出被隔離的郵件
 
@@ -137,7 +137,7 @@ ms.locfileid: "41599390"
 
 2. 按一下選取郵件，然後按一下 **[釋出郵件]** 圖示，如以下螢幕擷取畫面所示。
 
-   ![顯示隔離頁面，其中會反白顯示發行訊息圖示，並顯示發行選項](../media/36ee081f-3e30-40c9-8ce3-240cee1970cc.png)
+   ![顯示隔離頁面，其中會反白顯示發行訊息圖示，並顯示發行選項](../../media/36ee081f-3e30-40c9-8ce3-240cee1970cc.png)
 
    從下拉式清單中按一下 **[釋出選取的郵件並允許寄件者]**。
 
@@ -157,7 +157,7 @@ ms.locfileid: "41599390"
 
 4. 按一下 **[釋出]**。
 
-如果按一下 **[重新整理** ![重新整理圖示](../media/ITPro-EAC-RefreshIcon.gif)] 來重新整理資料，然後按兩下郵件，則會看到郵件已釋出到目標收件者。
+如果按一下 **[重新整理** ![重新整理圖示](../../media/ITPro-EAC-RefreshIcon.gif)] 來重新整理資料，然後按兩下郵件，則會看到郵件已釋出到目標收件者。
 
 ### <a name="release-one-or-more-quarantined-messages-to-all-recipients"></a>釋出一或多個隔離的郵件給所有收件者
 
@@ -184,7 +184,7 @@ ms.locfileid: "41599390"
 > [!TIP]
 > 按照[如何協助確保郵件不會被標示為垃圾郵件](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md)中的步驟，協助確保郵件不會被標示為垃圾郵件。
 
-如果按一下 **[重新整理** ![重新整理圖示](../media/ITPro-EAC-RefreshIcon.gif)] 圖示來重新整理資料，然後按兩下郵件，則會看到郵件已釋出到目標收件者。
+如果按一下 **[重新整理** ![重新整理圖示](../../media/ITPro-EAC-RefreshIcon.gif)] 圖示來重新整理資料，然後按兩下郵件，則會看到郵件已釋出到目標收件者。
 
 ## <a name="for-more-information"></a>如需詳細資訊
 

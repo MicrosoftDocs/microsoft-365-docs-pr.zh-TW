@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性與合規性中心的總管和即時偵測。
-ms.openlocfilehash: 21fc170fc820fa0187c03ac07ddc8b8c771f54ad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ddcaf4dc457ead7a203e00d71d0d18c23ee6557
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598240"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082095"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
 
@@ -29,11 +29,11 @@ ms.locfileid: "41598240"
 
 |在 ATP 方案 2，您會看到：  |在 ATP 方案 1，您會看到：  |
 |---------|---------|
-|![威脅總管](../media/threatmgmt-explorer.png)      |![即時偵測](../media/threatmgmt-realtimedetections.png)         |
+|![威脅總管](../../media/threatmgmt-explorer.png)      |![即時偵測](../../media/threatmgmt-realtimedetections.png)         |
 
 總管 (或即時偵測) 提供您強大的報告，讓您的安全性作業小組以有效的方式調查及回應威脅。 報告類似下列影像： 
 
-![移至威脅管理 \> 總管](../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![移至威脅管理 \> 總管](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 您可以使用此報告：
 - [查看 Office 365 安全性功能偵測到的惡意程式碼](#see-malware-detected-in-email-by-technology)
@@ -105,7 +105,7 @@ ms.locfileid: "41598240"
 > [!TIP]
 > 當您透過網路郵件識別碼在總管或關聯的協力廠商工具中進行搜尋時，網路郵件識別碼會將點擊返回對應到特定的郵件。 搜尋網路郵件識別碼時，系統會提供系統管理員與點擊結果相關聯的特定電子郵件。 匯出時，網路郵件識別碼的關聯識別可提供更快且更強大的分析。
 
-![tp_ExportClickResultAndNetworkID.png](../../images/tp_ExportClickResultAndNetworkID.png)
+![tp_ExportClickResultAndNetworkID.png](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>查看透過技術在電子郵件中偵測到的惡意程式碼
 
@@ -113,11 +113,11 @@ ms.locfileid: "41598240"
 
 1. 在安全性與合規性中心 ([https://protection.office.com](https://protection.office.com)) 選擇 **[威脅管理]** > **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
 
-2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[惡意程式碼 ]**。<br/>![總管的檢視功能表](../media/ExplorerViewEmailMalwareMenu.png)<br/>
+2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[惡意程式碼 ]**。<br/>![總管的檢視功能表](../../media/ExplorerViewEmailMalwareMenu.png)<br/>
 
-3. 按一下 **[寄件者]**，然後選擇 **[基本]** > **[偵測技術]**。<br/>您的偵測技術現在可做為報告的篩選器。<br/>![惡意程式碼偵測技術](../media/ExplorerEmailMalwareDetectionTech.png)<br/> 
+3. 按一下 **[寄件者]**，然後選擇 **[基本]** > **[偵測技術]**。<br/>您的偵測技術現在可做為報告的篩選器。<br/>![惡意程式碼偵測技術](../../media/ExplorerEmailMalwareDetectionTech.png)<br/> 
 
-4. 選取一個選項，然後按一下 **[重新整理]** 按鈕來套用該篩選器。<br/>![選取的偵測技術](../media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
+4. 選取一個選項，然後按一下 **[重新整理]** 按鈕來套用該篩選器。<br/>![選取的偵測技術](../../media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
 
 報告會使用您所選取的技術選項重新整理，以顯示在電子郵件中偵測到的惡意程式碼。 您可以從這裡進行進一步分析。
 
@@ -129,11 +129,11 @@ ms.locfileid: "41598240"
 
 1. 在安全性與合規性中心 ([https://protection.office.com](https://protection.office.com)) 選擇 **[威脅管理]** > **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
 
-2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[網路釣魚]**。<br/>![總管的檢視功能表](../media/ExplorerViewEmailPhishMenu.png)<br/>
+2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[網路釣魚]**。<br/>![總管的檢視功能表](../../media/ExplorerViewEmailPhishMenu.png)<br/>
 
 3. 按一下 **[寄件者]**，然後選擇 **[URL]** > **按一下結果**。
 
-4. 選取一或多個選項，例如 **[已封鎖]** 和 **[封鎖覆寫]**，然後按一下要套用該篩選器的選項同一行上的 **[重新整理]** 按鈕。 (請勿重新整理瀏覽器視窗。)<br/>![URL 和按一下結果](../media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
+4. 選取一或多個選項，例如 **[已封鎖]** 和 **[封鎖覆寫]**，然後按一下要套用該篩選器的選項同一行上的 **[重新整理]** 按鈕。 (請勿重新整理瀏覽器視窗。)<br/>![URL 和按一下結果](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
 
     報告會重新整理以在報告下的 [URL] 索引標籤上顯示兩個不同的 URL 表格：
 
@@ -143,7 +143,7 @@ ms.locfileid: "41598240"
    
    兩個 URL 表格依傳遞動作和位置顯示網路釣魚電子郵件訊息熱門 URL，並顯示已封鎖的 URL 點擊 (或儘管已警告卻仍造訪的 URL)，讓您了解使用者接收到及互動的潛在惡意連結。 您可以從這裡進行進一步分析。 例如，在圖表的下方，您可以查看貴組織環境中封鎖的電子郵件訊息熱門 URL。
    
-   ![已封鎖的總管 URL](../media/ExplorerPhishClickVerdictURLs.png)
+   ![已封鎖的總管 URL](../../media/ExplorerPhishClickVerdictURLs.png)
    
    選取 URL 以檢視更多詳細資訊。 **請注意**：URL 飛出對話方塊中，電子郵件篩選已移除，以讓您完整檢視暴露於環境中的 URL。 這能讓您在總管中篩選出擔心的電子郵件訊息，找出具有潛在威脅的特定 URL，然後了解暴露於環境 (經由 URL 詳細資料對話方塊) 中的 URL，而不需要將 URL 篩選新增至總管檢視本身。
 
@@ -153,11 +153,11 @@ ms.locfileid: "41598240"
 
 1. 在安全性與合規性中心 ([https://protection.office.com](https://protection.office.com)) 選擇 **[威脅管理]** > **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
 
-2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[提交]**。<br/>![總管的檢視功能表](../media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[提交]**。<br/>![總管的檢視功能表](../../media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. 按一下 **[寄件者]**，然後選擇 **[基本]** > **[回報類型]**。
 
-4. 選取一個選項，例如 **[網路釣魚]**，然後按一下 **[重新整理]** 按鈕。 <br/>![使用者回報的網路釣魚](../media/EmailUserReportedReportType.png)<br/> 
+4. 選取一個選項，例如 **[網路釣魚]**，然後按一下 **[重新整理]** 按鈕。 <br/>![使用者回報的網路釣魚](../../media/EmailUserReportedReportType.png)<br/> 
 
 報告會重新整理，顯示貴組織中的人員回報為網路釣魚攻擊的電子郵件相關資料。 您可以使用此資訊來進行進一步分析，並視需要調整 [ATP 防網路釣魚原則](set-up-anti-phishing-policies.md)。
 

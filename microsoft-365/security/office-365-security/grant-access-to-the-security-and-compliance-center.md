@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 使用者必須獲指派 Office 365 安全性 & 合規性中心的權限，他們可以管理其安全性或規範功能的任何之前。
-ms.openlocfilehash: 625fe036e8f8b00201abd0f5cb6a8f0003c597f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cccf44a64d20dc1304dbc5145d6ae50441cfacef
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599250"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085964"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>讓使用者能夠存取 Office 365 安全規範中心
 
@@ -49,9 +49,9 @@ ms.locfileid: "41599250"
 
 3. 在安全性 & 合規性中心，前往 [**權限**。
 
-4. 從清單中，選擇 [角色群組，您想要新增使用者並按一下 [**編輯**![編輯圖示](../media/O365-MDM-CreatePolicy-EditIcon.gif)。
+4. 從清單中，選擇 [角色群組，您想要新增使用者並按一下 [**編輯**![編輯圖示](../../media/O365-MDM-CreatePolicy-EditIcon.gif)。
 
-5. 在角色群組的 [屬性] 頁面 [**成員**] 底下，按一下 [**新增**![加入圖示](../media/ITPro-EAC-AddIcon.gif)選取名稱您想要新增的使用者 （或使用者）。
+5. 在角色群組的 [屬性] 頁面 [**成員**] 底下，按一下 [**新增**![加入圖示](../../media/ITPro-EAC-AddIcon.gif)選取名稱您想要新增的使用者 （或使用者）。
 
 6. 當您已選取的所有使用者想要新增至角色群組，請按一下 [**新增-\> ** ]，然後 **[確定]**。
 

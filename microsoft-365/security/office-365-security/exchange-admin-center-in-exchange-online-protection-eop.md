@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Exchange 系統管理中心 (EAC) 是 Microsoft Exchange Online Protection (EOP) 的網頁型管理主控台。
-ms.openlocfilehash: 3a00b6b259c94e1446b6d6dc49b0f5daa9178cbd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f38d36249387fce2ba3b4cac9e187c1cbcadd707
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599400"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083258"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Online Protection 中的 Exchange 系統管理中心
 
@@ -41,7 +41,7 @@ Exchange 系統管理中心 (EAC) 是 Microsoft Exchange Online Protection (EOP)
 
 本節說明 EMC 中的使用者介面元素。
 
-![EOP-AdminCenter](../media/EOP-AdminCenter.png)
+![EOP-AdminCenter](../../media/EOP-AdminCenter.png)
 
 ### <a name="feature-pane"></a>功能窗格
 
@@ -67,14 +67,14 @@ Exchange 系統管理中心 (EAC) 是 Microsoft Exchange Online Protection (EOP)
 
 |**Icon**|**名稱**|**Action**|
 |:-----|:-----|:-----|
-|![新增圖示](../media/ITPro-EAC-AddIcon.gif)|新增|使用此圖示來建立新的物件。這些圖示中有些擁有一個關聯的向下箭號，您可以按一下以顯示所能建立的其他物件。|
-|![編輯圖示](../media/ITPro-EAC-EditIcon.gif)|編輯|使用此圖示來編輯物件。|
-|![刪除圖示](../media/ITPro-EAC-DeleteIcon.gif)|刪除|使用此圖示來刪除物件。部分刪除圖示擁有一個向下箭號，您可以按一下以顯示額外選項。|
-|![搜尋圖示](../media/ITPro-EAC-.gif)|搜尋|使用此圖示來開啟搜尋方塊，您可在此處輸入想要尋找之物件的搜尋字詞。|
-|![重新整理圖示](../media/ITPro-EAC-RefreshIcon.gif)|重新整理|使用此圖示來重新整理清單檢視。|
-|![[更多選項] 圖示](../media/ITPro-EAC-MoreOptionsIcon.gif)|更多選項|使用此圖示來檢視更多可對該索引標籤之物件執行的動作。例如，在 **[收件者 \> 使用者]** 中按一下此圖示會顯示可執行 **[進階搜尋]** 的選項。  |
-|![向上箭號圖示](../media/ITPro-EAC-UpArrowIcon.gif)![向下箭號圖示](../media/ITPro-EAC-DownArrowIcon.gif)|向上鍵和向下鍵|使用這些圖示向上或向下移動物件的優先順序。|
-|![[移除] 圖示](../media/ITPro-EAC-RemoveIcon.gif)|移除|使用此圖示來移除清單中的物件。|
+|![新增圖示](../../media/ITPro-EAC-AddIcon.gif)|新增|使用此圖示來建立新的物件。這些圖示中有些擁有一個關聯的向下箭號，您可以按一下以顯示所能建立的其他物件。|
+|![編輯圖示](../../media/ITPro-EAC-EditIcon.gif)|編輯|使用此圖示來編輯物件。|
+|![刪除圖示](../../media/ITPro-EAC-DeleteIcon.gif)|刪除|使用此圖示來刪除物件。部分刪除圖示擁有一個向下箭號，您可以按一下以顯示額外選項。|
+|![搜尋圖示](../../media/ITPro-EAC-.gif)|搜尋|使用此圖示來開啟搜尋方塊，您可在此處輸入想要尋找之物件的搜尋字詞。|
+|![重新整理圖示](../../media/ITPro-EAC-RefreshIcon.gif)|重新整理|使用此圖示來重新整理清單檢視。|
+|![[更多選項] 圖示](../../media/ITPro-EAC-MoreOptionsIcon.gif)|更多選項|使用此圖示來檢視更多可對該索引標籤之物件執行的動作。例如，在 **[收件者 \> 使用者]** 中按一下此圖示會顯示可執行 **[進階搜尋]** 的選項。  |
+|![向上箭號圖示](../../media/ITPro-EAC-UpArrowIcon.gif)![向下箭號圖示](../../media/ITPro-EAC-DownArrowIcon.gif)|向上鍵和向下鍵|使用這些圖示向上或向下移動物件的優先順序。|
+|![[移除] 圖示](../../media/ITPro-EAC-RemoveIcon.gif)|移除|使用此圖示來移除清單中的物件。|
 
 ### <a name="list-view"></a>清單檢視
 
@@ -86,9 +86,9 @@ Exchange 系統管理中心 (EAC) 是 Microsoft Exchange Online Protection (EOP)
 
 ### <a name="me-tile-and-help"></a>個人資訊動態磚與說明
 
-**[自有磚]** 可讓您登出 EAC，然後以不同使用者的身分登入。您可以從 **[說明]**![說明圖示](../media/ITPro-EAC-HelpIcon.gif) 下拉式功能表執行下列動作：
+**[自有磚]** 可讓您登出 EAC，然後以不同使用者的身分登入。您可以從 **[說明]**![說明圖示](../../media/ITPro-EAC-HelpIcon.gif) 下拉式功能表執行下列動作：
 
-1. **說明：** 按一下 [說明圖示]![](../media/ITPro-EAC-HelpIcon.gif) 即可檢視線上說明內容。
+1. **說明：** 按一下 [說明圖示]![](../../media/ITPro-EAC-HelpIcon.gif) 即可檢視線上說明內容。
 
 2. **停用說明泡泡圖**：[說明泡泡圖] 會在您建立或編輯物件時，顯示欄位的內容說明。 您可以關閉 [說明泡泡圖]，或是在停用的狀態下將它開啟。
 

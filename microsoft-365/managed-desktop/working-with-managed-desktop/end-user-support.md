@@ -1,17 +1,17 @@
 ---
 title: 取得 Microsoft 受管理電腦的支援
 description: ''
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c53813a96772389f8ae180663ca3131701e47365
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 687b587da033b3c6cc8e027221043dd6c52e15c3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962200"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084985"
 ---
 # <a name="getting-help-for-end-users"></a>取得使用者的說明
 
@@ -24,7 +24,7 @@ ms.locfileid: "39962200"
 
 提供支援，您的使用者的慣用的方法是**取得協助**，使用者裝置內建易於使用的介面。  
 
-![取得說明應用程式圖示](images/get-help.png)
+![取得說明應用程式圖示](../../media/get-help.png)
 
 這是 Microsoft 受管理電腦的所有裝置上安裝並已釘選到工作列的應用程式。 
 

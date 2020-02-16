@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 開始使用 Office 365 進階威脅防護方案 2 中的自動化調查及回應功能
-ms.openlocfilehash: 9c17d7219e5dd15404b171fbd6707d00fd788f19
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d45141ce671a4615cb4fd550e36bc7215cd38d51
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598760"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088312"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>自動調查及回應 Office 365 中的威脅
 
@@ -55,11 +55,11 @@ ms.locfileid: "41598760"
 
     這兩種方法都會帶您前往調查清單。
 
-    ![AIR 的主要調查頁面](../media/air-maininvestigationpage.png) 
+    ![AIR 的主要調查頁面](../../media/air-maininvestigationpage.png) 
 
 3. 在調查清單中，選取 [識別碼]**** 欄中的項目。 這樣會開啟調查詳細資料頁面，從檢視中的調查圖形開始。
 
-    ![AIR 調查圖形頁面](../media/air-investigationgraphpage.png)
+    ![AIR 調查圖形頁面](../../media/air-investigationgraphpage.png)
 
 4. 使用各個索引標籤深入了解調查。
 

@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: 了解威脅追蹤器，包括新值得注意的追蹤器，以協助您掌握安全性考量的組織。
-ms.openlocfilehash: 75ade05f5512657a443f3c14c2745cc2cd3d78db
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 50566abfa7bec55fb42465132361971113453a06
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957358"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084453"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威脅追蹤器 - 新增和值得注意的功能
 
@@ -34,11 +34,11 @@ ms.locfileid: "41957358"
 
 威脅追蹤器是指 widget，並檢視可提供您在不同的 cybersecurity 智慧問題可能會影響您的公司。 例如，您可以檢視趨勢使用威脅追蹤器的惡意程式碼行銷活動的相關資訊。
   
-![威脅追蹤器顯示惡意程式碼行銷活動的範例](../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
+![威脅追蹤器顯示惡意程式碼行銷活動的範例](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
   
 大部分的追蹤器網頁包含趨勢的數字的定期更新，請以協助您了解哪些問題 widget 最大或最，已成長到，[**動作**] 欄中的快速連結，會帶您前往總管] 中，您可以在其中檢視的詳細的資訊。 
   
-![在檔案總管中的活動資訊的範例](../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
+![在檔案總管中的活動資訊的範例](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
 追蹤器都只是一些您取得[Office 365 進階威脅防護計劃 2](office-365-ti.md)許多好用的功能。 威脅追蹤器包括[Noteworth 追蹤器](#noteworthy-trackers)、[趨勢追蹤器](#trending-trackers)、[追蹤查詢](#tracked-queries)，以及[已儲存的查詢](#saved-queries)。
   
@@ -57,7 +57,7 @@ ms.locfileid: "41957358"
 
 趨勢 （以前稱為 「 行銷活動 」） 的追蹤器反白顯示貴組織的電子郵件送達過去一週的新威脅。
   
-![範例中的趨勢惡意程式碼行銷活動] 小工具](../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
+![範例中的趨勢惡意程式碼行銷活動] 小工具](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
   
 趨勢追蹤器可讓您概略了新的威脅，您應檢閱以確保您更廣泛的公司環境已備妥的攻擊。
   
@@ -65,13 +65,13 @@ ms.locfileid: "41957358"
 
 追蹤的查詢利用您已儲存的查詢，以定期評估貴組織中的 Office 365 活動。 這可以讓您趨勢，像是在接下來的月份中的更多有關的事件。 追蹤執行查詢，自動執行，而不必重新執行您的查詢，請記得提供最新狀態的資訊。
   
-![選取一項目追蹤查詢的範例](../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
+![選取一項目追蹤查詢的範例](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
   
 ### <a name="saved-queries"></a>已儲存的查詢
 
 已儲存的查詢也會追蹤器] 區段中找到。 您可以使用已儲存查詢，以儲存您想要取得上一步] 以更快速且重複，而不必重新建立搜尋每次常見總管搜尋。
   
-![選取一個已儲存查詢的範例](../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
+![選取一個已儲存查詢的範例](../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
   
 您一律可以儲存值得注意的追蹤器查詢或任何您自己的瀏覽器查詢頂端的 [檔案總管] 頁面上使用 [**儲存查詢**] 按鈕。 儲存至該處的任何項目會顯示在 [追蹤器] 頁面上的 [**已儲存查詢**] 清單中。 
   
@@ -81,13 +81,13 @@ ms.locfileid: "41957358"
   
 請記住，您可以永遠提供我們的意見反應這或其他 Office 365 安全性功能上按一下右上角的 [**意見反應**] 按鈕上的 [ [Overview of Office 365 Security&amp;合規性中心](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85)。
   
-![Office 365 Security &amp; Compliance Center](../media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Office 365 Security &amp; Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>追蹤器和 Office 365 進階的威脅防護
 
 與我們我值得注意的威脅，我們正在反白顯示[Office 365 ATP 安全附件](atp-safe-attachments.md)所偵測到的進階惡意程式碼威脅。 如果您是 Office 365 企業版 E5 客戶，而且您不使用[Office 365 進階威脅防護](office-365-atp.md)(ATP)，您應該先-納入您的訂閱。 即使您有其他篩選與您的 Office 365 服務的電子郵件流程的安全性工具，ATP 會提供值。 不過，反垃圾郵件和[Office 365 ATP 安全連結](atp-safe-links.md)功能運作起來最順暢時您主要的電子郵件安全性解決方案是透過 Office 365。 
   
-![安全性中的 ATP&amp;合規性中心](../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![安全性中的 ATP&amp;合規性中心](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
 在現今的威脅處處世界中，執行只有傳統反惡意程式碼掃描的表示您不保護不夠好遭受攻擊。 今天的更複雜的攻擊者使用常用的工具來建立新的、 模糊化、 或延遲傳統簽章型反惡意程式碼引擎無法辨識的攻擊。 ATP 安全附件功能會採用電子郵件附件，並加以引爆來判斷其是否安全或惡意在虛擬環境中。 此爆炸程序在虛擬電腦環境中，開啟每個檔案，然後觀賞之後開啟檔案時，會發生什麼事。 它是 pdf 格式，並壓縮的檔，還是 Office 文件，惡意程式碼可以隱藏在檔案中，啟動一次受害者其電腦上開啟。 藉由 detonating 及分析中的電子郵件流程的檔案，Office 365 ATP 功能會找到根據行為、 檔案中的聲譽、 和啟發式規則數目這些威脅。
   

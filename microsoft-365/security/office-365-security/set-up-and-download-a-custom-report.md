@@ -16,12 +16,12 @@ ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 ms.collection:
 - M365-security-compliance
 description: 了解如何設定及下載自訂日期範圍與安全性篩選器報告&amp;合規性中心。
-ms.openlocfilehash: 0de4b9bf2ac8d16c0e0ecc38fa69a3c9bf5e2774
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 170360a796d94501b6c13a6ffd4b062401296462
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598380"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087988"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>設定及下載自訂報告中的安全性&amp;合規性中心
 
@@ -34,11 +34,11 @@ ms.locfileid: "41598380"
   
 1. 在[安全性&amp;合規性中心](https://protection.office.com)，請移至**報表** \> **儀表板**。
     
-2. 選擇 [報告]。 （例如，我們將使用郵件處理報告）。<br/>![選擇 [下載報告要求報告](../media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
+2. 選擇 [報告]。 （例如，我們將使用郵件處理報告）。<br/>![選擇 [下載報告要求報告](../../media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   
 3. 在報表的左上角，選擇 [**要求報告**]。
     
-4. 在**要求報表**] 對話方塊中，指定名稱、 開始日期和結束日期的報表。 然後選擇 [**下一步**。<br/>![安全性&amp;合規性中心，選擇 [報告]\>下載報告](../media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
+4. 在**要求報表**] 對話方塊中，指定名稱、 開始日期和結束日期的報表。 然後選擇 [**下一步**。<br/>![安全性&amp;合規性中心，選擇 [報告]\>下載報告](../../media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
   
 5. 指定任何您想要用於報表的篩選。 （例如，您可能會指定用戶端 IP 位址的郵件處理報告。）然後選擇 [**下一步**。
     

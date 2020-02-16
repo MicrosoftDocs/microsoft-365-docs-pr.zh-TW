@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: 隨時變更的商務需求有時需要將一個 Microsoft Exchange Online Protection (EOP) 組織 (租用戶) 分割成兩個個別的組織、將兩個組織合併成一個，或是將您的網域和 EOP 設定從一個組織移至另一個組織。
-ms.openlocfilehash: cfd83b8558ed4cec3a48b536437e0a0dbe75aeaa
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c7d5c7ddc8391c70a555279c530cc2bf19e66ca2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598770"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088324"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>將網域及設定從某個 EOP 組織移到另一個 EOP 組織
 
@@ -28,7 +28,7 @@ ms.locfileid: "41598770"
 
 在下列範例中，Contoso, Ltd. 已經和 Contoso 套件合併。下圖顯示將網域、郵件使用者和群組以及設定從來源 EOP 組織 (contoso.onmicrosoft.com) 移至目標 EOP 組織 (contososuites.onmicrosoft.com) 的程序：
 
-![移動 EOP 網域和設定](../media/EOP-Move-domains-and-settings.jpg)
+![移動 EOP 網域和設定](../../media/EOP-Move-domains-and-settings.jpg)
 
 將網域從一個組織移至另一個網域的挑戰就是已驗證的網域無法同時在兩個組織中存在。下列步驟可協助您完成此作業。
 

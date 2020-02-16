@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 最常見的威脅和攻擊案例目前面臨由其 Microsoft 365 的環境，組織，建議您降低這些風險的動作。
-ms.openlocfilehash: b98fce751a5c1bd06184916824b7054e0828d8f1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d03593059d473e96768e6dc3b2246fcda2ebc999
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602880"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088030"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>適用於商務決策者 (Bdm) 的 Microsoft 365 安全性
 
@@ -37,13 +37,13 @@ Microsoft 提供您要自動分析您根據您的一般活動的安全性狀態�
 
 |建議  |E3 |E5  |
 |---------|---------|---------|
-|強制執行所有系統管理帳戶的多重要素驗證 (MFA)。|![綠色核取記號](../images/green-check-mark.png)|![綠色核取記號](../images/green-check-mark.png)| 
-|實作 Azure Active Directory (Azure AD) 特殊權限 Identity Management (PIM) 套用剛時間特殊權限存取 Azure AD 和 Azure 的資源。 您也可以找出誰可以存取，並檢閱特殊權限的存取。|         | ![綠色核取記號](../images/green-check-mark.png)|
-|在 Office 365 來管理 Office 365 中的特殊權限的系統管理工作更精細的存取控制中實作特殊權限的存取管理。 |         | ![綠色核取記號](../images/green-check-mark.png)|
-|設定及管理服務使用特殊權限存取工作站 （爪）。 不使用相同的工作站瀏覽網際網路並檢查不相關的管理帳戶的電子郵件。|  ![綠色核取記號](../images/green-check-mark.png)|![綠色核取記號](../images/green-check-mark.png) | 
+|強制執行所有系統管理帳戶的多重要素驗證 (MFA)。|![綠色核取記號](../media/green-check-mark.png)|![綠色核取記號](../media/green-check-mark.png)| 
+|實作 Azure Active Directory (Azure AD) 特殊權限 Identity Management (PIM) 套用剛時間特殊權限存取 Azure AD 和 Azure 的資源。 您也可以找出誰可以存取，並檢閱特殊權限的存取。|         | ![綠色核取記號](../media/green-check-mark.png)|
+|在 Office 365 來管理 Office 365 中的特殊權限的系統管理工作更精細的存取控制中實作特殊權限的存取管理。 |         | ![綠色核取記號](../media/green-check-mark.png)|
+|設定及管理服務使用特殊權限存取工作站 （爪）。 不使用相同的工作站瀏覽網際網路並檢查不相關的管理帳戶的電子郵件。|  ![綠色核取記號](../media/green-check-mark.png)|![綠色核取記號](../media/green-check-mark.png) | 
 
 下圖說明這些功能。
-![建議的功能，以保護特殊權限的帳戶](../images/m365-security-bdm-illustrations-privileged-accounts.png)
+![建議的功能，以保護特殊權限的帳戶](../media/m365-security-bdm-illustrations-privileged-accounts.png)
 
 其他建議：
 - 請確定從內部部署同步處理的帳戶未被指派為雲端服務的系統管理員角色。 這有助於防止攻擊者利用系統管理存取雲端服務的內部部署帳戶。 
@@ -66,15 +66,15 @@ Microsoft 提供您要自動分析您根據您的一般活動的安全性狀態�
 
 |建議  |E3  |E5  |
 |---------|---------|---------|
-|**設定多重要素驗證和使用建議的條件式存取原則，包括登入風險原則**。 Microsoft 建議您，並已測試的共同運作以保護所有雲端應用程式，包括 Office 365 和 Microsoft 365 服務的原則設定。 請參閱[身分識別與裝置存取設定](../enterprise/microsoft-365-policies-configurations.md)。 | |![綠色核取記號](../images/green-check-mark.png)|
-|**需要為所有使用者的多重要素驗證**。 如果您不需要實作建議的條件式存取原則所需的授權，至少需要多重要素驗證的所有使用者。|![綠色核取記號](../images/green-check-mark.png)|![綠色核取記號](../images/green-check-mark.png)|
-|**引發防範惡意程式碼在郵件中的層級**。 Office 365 或 Microsoft 365 環境包含防範惡意程式碼，但您可以增加此保護封鎖附件的常用的惡意程式碼的檔案類型。|![綠色核取記號](../images/green-check-mark.png)|![綠色核取記號](../images/green-check-mark.png)|
-|**保護您的電子郵件從目標的網路釣魚攻擊**。 如果您已設定一或多個自訂的網域為您的 Office 365 或 Microsoft 365 環境，您可以設定目標的反網路釣魚保護。 ATP 防網路釣魚防護，Office 365 進階威脅防護，一部分可協助保護組織免於惡意模擬型網路釣魚攻擊和其他網路釣魚攻擊。 如果您未設定自訂的網域，您不需要執行這項操作。| |![綠色核取記號](../images/green-check-mark.png)|
-|**保護電子郵件中的勒索軟體攻擊**。 勒索軟體採取立即存取您的資料加密檔案或鎖定的電腦畫面。 然後會嘗試從受害者勒索金錢，詢問 「 贖金，「 通常格式為 cryptocurrencies 像 Bitcoin，來存取返回您的資料。 您可以協助防禦勒索軟體，藉由建立一或多個郵件流程規則若要封鎖的檔案副檔名通常用於勒索軟體，或警告電子郵件接收這些附件的使用者。|![綠色核取記號](../images/green-check-mark.png)|![綠色核取記號](../images/green-check-mark.png)|
-|**從不與您生意的國家/地區封鎖連線**。 建立 Azure AD 條件式存取原則來封鎖任何這些國家/地區，有效地建立您的租用戶周圍地理防火牆您引導過來的連線。| |![綠色核取記號](../images/green-check-mark.png)|
+|**設定多重要素驗證和使用建議的條件式存取原則，包括登入風險原則**。 Microsoft 建議您，並已測試的共同運作以保護所有雲端應用程式，包括 Office 365 和 Microsoft 365 服務的原則設定。 請參閱[身分識別與裝置存取設定](../enterprise/microsoft-365-policies-configurations.md)。 | |![綠色核取記號](../media/green-check-mark.png)|
+|**需要為所有使用者的多重要素驗證**。 如果您不需要實作建議的條件式存取原則所需的授權，至少需要多重要素驗證的所有使用者。|![綠色核取記號](../media/green-check-mark.png)|![綠色核取記號](../media/green-check-mark.png)|
+|**引發防範惡意程式碼在郵件中的層級**。 Office 365 或 Microsoft 365 環境包含防範惡意程式碼，但您可以增加此保護封鎖附件的常用的惡意程式碼的檔案類型。|![綠色核取記號](../media/green-check-mark.png)|![綠色核取記號](../media/green-check-mark.png)|
+|**保護您的電子郵件從目標的網路釣魚攻擊**。 如果您已設定一或多個自訂的網域為您的 Office 365 或 Microsoft 365 環境，您可以設定目標的反網路釣魚保護。 ATP 防網路釣魚防護，Office 365 進階威脅防護，一部分可協助保護組織免於惡意模擬型網路釣魚攻擊和其他網路釣魚攻擊。 如果您未設定自訂的網域，您不需要執行這項操作。| |![綠色核取記號](../media/green-check-mark.png)|
+|**保護電子郵件中的勒索軟體攻擊**。 勒索軟體採取立即存取您的資料加密檔案或鎖定的電腦畫面。 然後會嘗試從受害者勒索金錢，詢問 「 贖金，「 通常格式為 cryptocurrencies 像 Bitcoin，來存取返回您的資料。 您可以協助防禦勒索軟體，藉由建立一或多個郵件流程規則若要封鎖的檔案副檔名通常用於勒索軟體，或警告電子郵件接收這些附件的使用者。|![綠色核取記號](../media/green-check-mark.png)|![綠色核取記號](../media/green-check-mark.png)|
+|**從不與您生意的國家/地區封鎖連線**。 建立 Azure AD 條件式存取原則來封鎖任何這些國家/地區，有效地建立您的租用戶周圍地理防火牆您引導過來的連線。| |![綠色核取記號](../media/green-check-mark.png)|
 
 下圖說明這些功能。
-![建議的功能，以保護免於已知的威脅](../images/m365-security-bdm-illustrations-known-threats.png)
+![建議的功能，以保護免於已知的威脅](../media/m365-security-bdm-illustrations-known-threats.png)
 
 ## <a name="protect-against-unknown-threats"></a>防範未知的威脅
 
@@ -83,12 +83,12 @@ Microsoft 提供您要自動分析您根據您的一般活動的安全性狀態�
 
 |建議  |E3  |E5  |
 |---------|---------|---------|
-|**設定 Office 365 進階的威脅防護 (ATP)**:<br>• ATP 安全附件<br>• ATP 安全連結<br>• ATP SharePoint、 OneDrive 及 Microsoft Teams<br>• ATP 防網路釣魚保護|         |![綠色核取記號](../images/green-check-mark.png) |
-|**設定 Microsoft Defender 進階威脅防護功能**：<br>• Windows Defender 防毒軟體 <br>• 惡意探索防護 <br> • 攻擊縮減 <br> • 硬體型隔離 <br>• 控制資料夾存取權     |         |![綠色核取記號](../images/green-check-mark.png) |
-|**使用 Microsoft Cloud App Security**可探索 SaaS 應用程式，並開始使用行為分析和異常偵測。 |         |![綠色核取記號](../images/green-check-mark.png) |
+|**設定 Office 365 進階的威脅防護 (ATP)**:<br>• ATP 安全附件<br>• ATP 安全連結<br>• ATP SharePoint、 OneDrive 及 Microsoft Teams<br>• ATP 防網路釣魚保護|         |![綠色核取記號](../media/green-check-mark.png) |
+|**設定 Microsoft Defender 進階威脅防護功能**：<br>• Windows Defender 防毒軟體 <br>• 惡意探索防護 <br> • 攻擊縮減 <br> • 硬體型隔離 <br>• 控制資料夾存取權     |         |![綠色核取記號](../media/green-check-mark.png) |
+|**使用 Microsoft Cloud App Security**可探索 SaaS 應用程式，並開始使用行為分析和異常偵測。 |         |![綠色核取記號](../media/green-check-mark.png) |
 
 下圖說明這些功能。
-![建議的功能，以防止不明的威脅](../images/m365-security-bdm-illustrations-unknown-threats.png)
+![建議的功能，以防止不明的威脅](../media/m365-security-bdm-illustrations-unknown-threats.png)
 
 其他建議：
 - 安全合作夥伴通道通訊，例如電子郵件使用 TLS。
@@ -112,17 +112,17 @@ Microsoft 365 資訊保護功能可協助您了解哪些資訊您擁有的資訊
 
 |建議 |E3|E5 |
 |---------|---------|---------|
-|**檢閱並最佳化您的條件式存取和相關的原則，以符合您的目標為零的信任網路**。 保護免於已知的威脅，包括實作一組[建議的原則](../enterprise/microsoft-365-policies-configurations.md)。 檢閱這些原則，以確保您可以保護您的應用程式和資料獲得存取您網路的駭客免於實作。 請注意，適用於 Windows 10 建議的 Intune 應用程式保護原則可讓 Windows 資訊保護 (WIP)。 WIP 提供保護，避免意外的應用程式和服務，例如電子郵件，您的組織資料外洩社交媒體、 部署及公用雲端。 |         |![綠色核取記號](../images/green-check-mark.png)|
-|**停用外部電子郵件轉寄功能**。 存取使用者信箱的駭客可以藉由設定來自動轉寄電子郵件信箱竊取您的郵件。 這可能會發生，即使不使用者的認知。 您可以防止發生這藉由設定郵件流程規則。|![綠色核取記號](../images/green-check-mark.png) |![綠色核取記號](../images/green-check-mark.png)|
-|**停用匿名外部行事曆共用**。 預設允許外部的匿名行事曆共用。 [停用行事曆共用](https://docs.microsoft.com/exchange/sharing/sharing-policies/modify-a-sharing-policy)若要降低潛在的敏感資訊外洩。|![綠色核取記號](../images/green-check-mark.png) |![綠色核取記號](../images/green-check-mark.png)|
-|**設定資料外洩防護原則的敏感資料**。 探索及保護機密資料，例如信用卡號碼、 社會安全號碼與銀行帳戶號碼在 Office 365 安全性與合規性中心建立資料外洩防護原則。 Office 365 資料外洩防護原則中包含您可以使用許多預先定義的敏感資訊類型。 您也可以建立您的環境自訂的敏感資料您自己的敏感資訊類型。 |![綠色核取記號](../images/green-check-mark.png)|![綠色核取記號](../images/green-check-mark.png)|
-|**實作資料分類和資訊保護原則**。 在 Office 365 中實作敏感度標籤，並使用這些分類，並將保護套用至敏感資料。 您也可以使用這些標籤中的資料外洩防護原則。 如果您使用 Azure 資訊保護標籤，我們建議您避免在其他系統管理中心中建立新的標籤。|         |![綠色核取記號](../images/green-check-mark.png)|
-|**協力廠商應用程式和服務使用雲端 App 安全性中的保護資料**。 設定跨協力廠商雲端應用程式，例如 Salesforce、] 方塊中或投寄箱保護敏感資訊的 Cloud App Security 原則。 您可以使用敏感資訊類型和 Office 365 中建立的 Cloud App Security 原則敏感度標籤，並套用這些跨 SaaS 應用程式。 <br><br>Microsoft Cloud App Security 可讓您以強制執行各種自動化程序。 原則可設為提供連續的相容性掃描，legal 的 eDiscovery 工作，DLP 敏感共用的內容公開，等等。 Cloud App Security 可監視任何超過 20 個中繼資料篩選 （例如，存取層級，檔案類型） 為基礎的檔案類型。 |         |![綠色核取記號](../images/green-check-mark.png)|
-|**使用[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)來識別是否使用者儲存其 Windows 裝置上的敏感資訊**。 |         |![綠色核取記號](../images/green-check-mark.png)|
-|**使用[AIP 掃描程式](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)以識別及分類跨伺服器和檔案共用的資訊**。 使用 AIP 報告工具，來檢視結果，並採取適當的動作。|         |![綠色核取記號](../images/green-check-mark.png)|
+|**檢閱並最佳化您的條件式存取和相關的原則，以符合您的目標為零的信任網路**。 保護免於已知的威脅，包括實作一組[建議的原則](../enterprise/microsoft-365-policies-configurations.md)。 檢閱這些原則，以確保您可以保護您的應用程式和資料獲得存取您網路的駭客免於實作。 請注意，適用於 Windows 10 建議的 Intune 應用程式保護原則可讓 Windows 資訊保護 (WIP)。 WIP 提供保護，避免意外的應用程式和服務，例如電子郵件，您的組織資料外洩社交媒體、 部署及公用雲端。 |         |![綠色核取記號](../media/green-check-mark.png)|
+|**停用外部電子郵件轉寄功能**。 存取使用者信箱的駭客可以藉由設定來自動轉寄電子郵件信箱竊取您的郵件。 這可能會發生，即使不使用者的認知。 您可以防止發生這藉由設定郵件流程規則。|![綠色核取記號](../media/green-check-mark.png) |![綠色核取記號](../media/green-check-mark.png)|
+|**停用匿名外部行事曆共用**。 預設允許外部的匿名行事曆共用。 [停用行事曆共用](https://docs.microsoft.com/exchange/sharing/sharing-policies/modify-a-sharing-policy)若要降低潛在的敏感資訊外洩。|![綠色核取記號](../media/green-check-mark.png) |![綠色核取記號](../media/green-check-mark.png)|
+|**設定資料外洩防護原則的敏感資料**。 探索及保護機密資料，例如信用卡號碼、 社會安全號碼與銀行帳戶號碼在 Office 365 安全性與合規性中心建立資料外洩防護原則。 Office 365 資料外洩防護原則中包含您可以使用許多預先定義的敏感資訊類型。 您也可以建立您的環境自訂的敏感資料您自己的敏感資訊類型。 |![綠色核取記號](../media/green-check-mark.png)|![綠色核取記號](../media/green-check-mark.png)|
+|**實作資料分類和資訊保護原則**。 在 Office 365 中實作敏感度標籤，並使用這些分類，並將保護套用至敏感資料。 您也可以使用這些標籤中的資料外洩防護原則。 如果您使用 Azure 資訊保護標籤，我們建議您避免在其他系統管理中心中建立新的標籤。|         |![綠色核取記號](../media/green-check-mark.png)|
+|**協力廠商應用程式和服務使用雲端 App 安全性中的保護資料**。 設定跨協力廠商雲端應用程式，例如 Salesforce、] 方塊中或投寄箱保護敏感資訊的 Cloud App Security 原則。 您可以使用敏感資訊類型和 Office 365 中建立的 Cloud App Security 原則敏感度標籤，並套用這些跨 SaaS 應用程式。 <br><br>Microsoft Cloud App Security 可讓您以強制執行各種自動化程序。 原則可設為提供連續的相容性掃描，legal 的 eDiscovery 工作，DLP 敏感共用的內容公開，等等。 Cloud App Security 可監視任何超過 20 個中繼資料篩選 （例如，存取層級，檔案類型） 為基礎的檔案類型。 |         |![綠色核取記號](../media/green-check-mark.png)|
+|**使用[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)來識別是否使用者儲存其 Windows 裝置上的敏感資訊**。 |         |![綠色核取記號](../media/green-check-mark.png)|
+|**使用[AIP 掃描程式](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)以識別及分類跨伺服器和檔案共用的資訊**。 使用 AIP 報告工具，來檢視結果，並採取適當的動作。|         |![綠色核取記號](../media/green-check-mark.png)|
 
 下圖說明這些功能。
-![建議的功能，以保護防止外洩](../images/m365-security-bdm-illustrations-assume-breach.png)
+![建議的功能，以保護防止外洩](../media/m365-security-bdm-illustrations-assume-breach.png)
 
 ## <a name="continuous-monitoring-and-auditing"></a>持續監視和稽核
 
@@ -131,17 +131,17 @@ Microsoft 365 資訊保護功能可協助您了解哪些資訊您擁有的資訊
 
 |建議 |E3 |E5 |
 |---------|---------|---------|
-|確定已開啟的**Office 365 稽核記錄**。|![綠色核取記號](../images/green-check-mark.png)|![綠色核取記號](../images/green-check-mark.png)|
-|**檢閱安全分數每週**— 安全分數是一個中央位置來存取您的 Office 365 租用戶的安全性狀態，並採取動作根據安全分數的建議。 建議您執行這項檢查每週。|![綠色核取記號](../images/green-check-mark.png)|![綠色核取記號](../images/green-check-mark.png)|
-|使用**Office 365 ATP**工具：<br>• 威脅調查及回應功能<br> • 自動化調查及回應 |         |![綠色核取記號](../images/green-check-mark.png)|
-|使用**Microsoft Defender ATP**:<br> •[端點偵測及回應](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> • 自動化的調查並修復安全分數 <br>•[進階狩獵](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![綠色核取記號](../images/green-check-mark.png)|
-|使用**Microsoft Cloud App Security**來偵測異常行為之間雲端應用程式以識別勒索軟體，危害使用者或劣等應用程式、 分析高風險的使用狀況及自動修復，以限制組織的風險。|         |![綠色核取記號](../images/green-check-mark.png)|
-|使用**Microsoft Azure 護衛巨像**] 或 [您目前的 SIEM 工具來監視威脅的整個環境。 |         |![綠色核取記號](../images/green-check-mark.png)|
-|監視及防範威脅針對您內部部署 Active Directory 環境中**部署[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) ** 。   |         |![綠色核取記號](../images/green-check-mark.png) |
+|確定已開啟的**Office 365 稽核記錄**。|![綠色核取記號](../media/green-check-mark.png)|![綠色核取記號](../media/green-check-mark.png)|
+|**檢閱安全分數每週**— 安全分數是一個中央位置來存取您的 Office 365 租用戶的安全性狀態，並採取動作根據安全分數的建議。 建議您執行這項檢查每週。|![綠色核取記號](../media/green-check-mark.png)|![綠色核取記號](../media/green-check-mark.png)|
+|使用**Office 365 ATP**工具：<br>• 威脅調查及回應功能<br> • 自動化調查及回應 |         |![綠色核取記號](../media/green-check-mark.png)|
+|使用**Microsoft Defender ATP**:<br> •[端點偵測及回應](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> • 自動化的調查並修復安全分數 <br>•[進階狩獵](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![綠色核取記號](../media/green-check-mark.png)|
+|使用**Microsoft Cloud App Security**來偵測異常行為之間雲端應用程式以識別勒索軟體，危害使用者或劣等應用程式、 分析高風險的使用狀況及自動修復，以限制組織的風險。|         |![綠色核取記號](../media/green-check-mark.png)|
+|使用**Microsoft Azure 護衛巨像**] 或 [您目前的 SIEM 工具來監視威脅的整個環境。 |         |![綠色核取記號](../media/green-check-mark.png)|
+|監視及防範威脅針對您內部部署 Active Directory 環境中**部署[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) ** 。   |         |![綠色核取記號](../media/green-check-mark.png) |
 |使用**Azure 資訊安全中心**來之間混合式部署與雲端工作負載監視威脅。 Azure 資訊安全中心包含功能的免費層和已支付根據資源小時或交易的功能的標準層。|         |         |
 
 下圖說明這些功能。
-![建議的功能，以連續監視和稽核](../images/m365-security-bdm-illustrations-monitoring-auditing.png)
+![建議的功能，以連續監視和稽核](../media/m365-security-bdm-illustrations-monitoring-auditing.png)
 
 建議您監視動作的頂端：
 - **檢閱 Microsoft 安全分數每週**— 安全分數是一個中央位置存取您的 Office 365 租用戶的安全性狀態，以及根據上方建議採取動作。 建議您執行這項檢查每週。 安全分數包含建議透過 Azure AD，Intune、 Cloud App Security，和 Microsoft Defender 進階威脅防護，以及 Office 365。 

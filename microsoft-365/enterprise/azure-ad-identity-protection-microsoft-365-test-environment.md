@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 設定 Azure AD Identity Protection 及分析您的 Microsoft 365 企業版測試環境中的目前的帳戶。
-ms.openlocfilehash: 376fc838191314e93ae37accb7fc5066456499fb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3f3740e42c7ec909f44a3c761dfc743359b3f030
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597160"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068490"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Azure AD Identity Protection，您的 Microsoft 365 企業版測試環境
 
@@ -33,10 +33,10 @@ Azure Active Directory (Azure AD) 身分識別保護可讓您偵測會影響組�
 1. 建立 Microsoft 365 企業版測試環境。
 2. 使用 Azure AD Identity Protection。
 
-![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1：建置您的 Microsoft 365 企業版測試環境
 
@@ -55,7 +55,7 @@ Azure Active Directory (Azure AD) 身分識別保護可讓您偵測會影響組�
 4. [**通知**，按一下 [**使用者風險偵測到的警示**。
 5. 在 [**使用者風險偵測到提醒**] 窗格中，選取 [**中等**]。
 6. 針對**電子郵件傳送給下列的使用者**，按一下 [ **Included**並確認您的全域系統管理員帳戶是在清單中選取的成員。
-7. 按一下 [儲存]****。
+7. 按一下 **[儲存]**。
 
 按一下 [**保護**，查看如何將其設定不同的原則。 如果您建立並啟動原則，請確定它不會封鎖存取太寬範圍的條件，或您可能無法登入，即使為全域系統管理員。
 

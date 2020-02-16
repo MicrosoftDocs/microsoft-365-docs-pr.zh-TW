@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Micr
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 350b1afb4734902435ccdca1e9abee26901e446f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 7c414ed94d343ff4c80bb949640d6198f59ed5a4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801298"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085922"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的電腦裝置 
 
@@ -38,10 +38,10 @@ Microsoft 受管理電腦定期評估要包含在服務中的裝置。 本主題
 | [Dell 緯度 5490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-14-5490-laptop?cid=265768&st=dell%2Blatitude%2B5490&VEN1=yKFOheND,73873544881479,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B5490&lid=5980636&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB / Intel i5 中 / 8 GB RAM | 所需的紅外線相機 | 2020 年 1 月 9 日，  | 2023 1 月 9 日，  |
 | [Dell 緯度 7200 2-在-1/7300/7400](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-7200-2-in-1-business-laptop/spd/latitude-12-7200-2-in-1-laptop) | 256 GB / Intel i5 中 / 8 GB RAM | 所需的紅外線相機 | 2021 年 1，  | 2024 5 月 1日，  |
 | [Dell 緯度 7390 7390 2-1 / 7490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-13-7390-2-in-1-laptop?cid=265768&st=dell%2Blatitude%2B7390%2B2-in-1&VEN1=bRXisqe7,73255069985268,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B7390%2B2-in-1&lid=5981275&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB / Intel i5 中 / 8 GB RAM   | 所需的紅外線相機 | 2020 年 1 月 9 日， | 2023 1 月 9 日， |
-| **\*[HP EliteBook 830 / 840 / 850 G6 筆記本電腦](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features)** | 128 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線網路攝影機或指紋感應 | 2020 年 11 月 30 日 | 2023 11 月 30日， |
-| **\*[HP EliteBook x360 830 G6 筆記本電腦](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc)** | 128 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線網路攝影機或指紋感應 | 2020 年 11 月 30 日 | 2023 11 月 30日， |
-| [HP 精銳 x2 1013 版 G3](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features) | 256 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS03AV，所需的紅外線相機 | 14，2020 | 2023 5 月 14日， |
-| [HP EliteBook x360 1030 版 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 256 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線相機 | 14，2020 | 2023 5 月 14日， |
+| [HP EliteBook 830 / 840 / 850 G6 筆記本電腦](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線網路攝影機或指紋感應 | 2020 年 11 月 30 日 | 2023 11 月 30日， |
+| [HP EliteBook x360 830 G6 筆記本電腦](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線網路攝影機或指紋感應 | 2020 年 11 月 30 日 | 2023 11 月 30日， |
+| **\*[HP 精銳 x2 G4 平板電腦](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1)** | 256 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS03AV | 2021 年 7 月 31 日 | 2024 年 7 月 31 日 |
+| **\*[HP EliteBook x360 1030 G4 筆記本電腦](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g4-notebook-pc)** | 256 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV | 2021 年 2 月 28 日 | 2024 2 月 28日， |
 | [HP EliteBook x360 1040 版 G5](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1040-3074457345617328670--1#!&tab=features) | 256 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線相機 | 2020 年 10 月 23 日 | 2023 Oct 23， |
 | [HP EliteDesk 800 G4 DM](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU 與 5VS04AV | 2020 年 7 月 18 日 | 2023 年 7 月 18 日 |
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU 與 5VS04AV | 2020 年 7 月 18 日 | 2023 年 7 月 18 日 |

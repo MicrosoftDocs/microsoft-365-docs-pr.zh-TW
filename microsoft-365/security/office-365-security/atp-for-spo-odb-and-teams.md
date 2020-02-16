@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 將 Office 365 進階威脅防護延伸至 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 中的檔案，讓您的組織可更安全地進行共同作業。
-ms.openlocfilehash: a21654ed8045b9adb6c09a730ada3ae458cf1609
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3105a9443ddab483bc5ac4037e5260b354d64de9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599840"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086621"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>適用於 SharePoint、OneDrive 及 Microsoft Teams 的 Office 365 ATP
 
@@ -35,15 +35,15 @@ ms.locfileid: "41599840"
 
 當 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 中的檔案被認定為「惡意」時，ATP 會直接與檔案存放區整合來鎖定該檔案。 下列影像顯示文件庫中偵測到的惡意檔案範例。
 
-![商務用 OneDrive 中的檔案，偵測到其中一個是惡意檔案](../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
+![商務用 OneDrive 中的檔案，偵測到其中一個是惡意檔案](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
 雖然封鎖的檔案仍會列在文件庫和網頁、行動裝置或桌面應用程式中，但您無法開啟、複製、移動或共用封鎖的檔案。 不過，您可以刪除封鎖的檔案。 以下範例是使用者行動裝置上呈現的樣子：
 
-![透過 OneDrive 行動應用程式從商務用 OneDrive 中刪除封鎖的檔案](../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
+![透過 OneDrive 行動應用程式從商務用 OneDrive 中刪除封鎖的檔案](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
 視 Office 365 的設定方式而定，使用者可能無法下載封鎖的檔案。 以下是在使用者行動裝置上下載封鎖檔案的畫面：
 
-![在商務用 OneDrive 中下載封鎖的檔案](../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
+![在商務用 OneDrive 中下載封鎖的檔案](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
 若要深入了解，請參閱[為 SharePoint、OneDrive 和 Microsoft Teams 開啟 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)。
 
