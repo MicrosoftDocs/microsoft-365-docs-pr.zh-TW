@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: b79625ba017bd30cc9d6b0153d101b16ec574e8c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8fa959de5806eccf76b0e83103c0274d0eb86da0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600130"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084774"
 ---
 # <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>資料監控與 Microsoft 365 安全性中心中的報告
 
@@ -32,4 +32,4 @@ ms.locfileid: "41600130"
 * 報告了多少 DLP 原則覆寫或誤判
 * 多少 DLP 原則相符項目發生在透過 Microsoft Cloud App Security 3rd 廠商雲端服務
 
-![報告] 頁面上的資料分類](../images/data.png)
+![報告] 頁面上的資料分類](../../media/data.png)

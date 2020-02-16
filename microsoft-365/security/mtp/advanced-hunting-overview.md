@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7e96ca06a7b77a6bdc0cf4af55d519aebda833cd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f268c87da68c2badbfa885f0d9357a6a53d0a039
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600380"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087487"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>使用 Microsoft 威脅防護中的進階搜捕功能主動尋找威脅
 
@@ -61,14 +61,14 @@ ms.locfileid: "41600380"
 - 從查詢排除選取的值 (`!=`)
 - 取得更多可將值新增至查詢的進階運算子，例如 `contains`、`starts with` 和 `ends with` 
 
-![Microsoft Defender ATP 進階搜捕結果集的影像](../images/advanced-hunting-results-filter.png)
+![Microsoft Defender ATP 進階搜捕結果集的影像](../../media/advanced-hunting-results-filter.png)
 
 ## <a name="filter-the-query-results"></a>篩選查詢結果
 顯示在右側的篩選器可提供結果集的摘要。 每個資料行都有各自的區段，列出針對該資料行找到的獨特值和執行個體數量。
 
 選取您要包含或排除的值上的 "+" 或 "-"，然後選取 [執行查詢]****，以精簡您的查詢。
 
-![進階搜捕篩選的影像](../images/advanced-hunting-filter.png)
+![進階搜捕篩選的影像](../../media/advanced-hunting-filter.png)
 
 一旦套用篩選來修改查詢，然後執行查詢，結果就會相應更新。
 

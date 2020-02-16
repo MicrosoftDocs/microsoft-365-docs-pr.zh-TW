@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f0f436e2b4e9a26f10ec134718796624c9496e81
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f7b3f2fcaac71eefa2579a0c3fd66666fe00f605
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600150"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087660"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>應用程式監視和報告在 Microsoft 365 安全中心
 
@@ -29,7 +29,7 @@ ms.locfileid: "41600150"
 
 **電子郵件保護**顯示電子郵件帳戶的風險。 您可以按一下 [帳戶以調查進一步 Microsoft defender 資訊安全中心。
 
-![電子郵件保護卡片](../images/email-protection.png)
+![電子郵件保護卡片](../../media/email-protection.png)
 
 ## <a name="monitor-app-permissions-granted-by-users"></a>監視應用程式權限授與使用者
 
@@ -37,25 +37,25 @@ ms.locfileid: "41600150"
 
 風險因素開始一般資訊，例如應用程式發行者，從安全性措施和控制項，例如應用程式是否支援靜態加密，或提供使用者活動的稽核記錄檔。
 
-![雲端 App 安全性 OAuth 應用程式卡](../images/cloud-app-security-oauth-apps.png)
+![雲端 App 安全性 OAuth 應用程式卡](../../media/cloud-app-security-oauth-apps.png)
 
 ## <a name="monitor-cloud-app-user-accounts"></a>監視雲端應用程式使用者帳戶
 
 **雲端應用程式帳戶檢閱**列出可能需要加以留意的帳戶。
 
-![檢閱卡片的雲端應用程式帳戶](../images/cloud-app-accounts-for-review.png)
+![檢閱卡片的雲端應用程式帳戶](../../media/cloud-app-accounts-for-review.png)
 
 ## <a name="understand-which-cloud-apps-are-used"></a>了解使用哪一個雲端應用程式
 
 **Discovered 雲端應用程式 （類別）** 顯示您的組織和連結至雲端 App 安全性中的雲端探索儀表板中正在使用何種應用程式。 如需詳細資訊，請參閱[快速入門： 使用探索到的應用程式](https://docs.microsoft.com/cloud-app-security/discovered-apps)。  
 
-![探索到的雲端應用程式] 類別卡片](../images/discovered-cloud-apps-categories.png)
+![探索到的雲端應用程式] 類別卡片](../../media/discovered-cloud-apps-categories.png)
 
 ## <a name="monitor-where-users-access-cloud-apps"></a>監視使用者在存取雲端應用程式
 
 **雲端應用程式活動位置**顯示使用者在存取雲端應用程式。
 
-![雲端應用程式活動位置卡](../images/cloud-app-activity-locations.png)
+![雲端應用程式活動位置卡](../../media/cloud-app-activity-locations.png)
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>基礎結構的工作負載的監視器健康情況
 
@@ -65,4 +65,4 @@ Azure 資訊安全中心提供整合安全性管理和進階威脅防護跨內�
 
 如需詳細資訊，請參閱[Azure 安全性中心文件](https://docs.microsoft.com/azure/security-center/)。
 
-![基礎結構健康情況] 卡片](../images/infrastructure-health.png)
+![基礎結構健康情況] 卡片](../../media/infrastructure-health.png)

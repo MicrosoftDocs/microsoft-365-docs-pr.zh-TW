@@ -15,16 +15,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: daf7bcf6525f30b7b52065e4f6bf2ff335f4ea4b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3e8013426983584783488e6f937f8ba5b02d7a1a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600880"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066782"
 ---
 # <a name="mobile-device-management-infrastructure-exit-criteria"></a>行動裝置管理基礎結構允出準則
 
-![階段 5：行動裝置管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
+![階段 5：行動裝置管理](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
 
 *這適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
@@ -42,4 +42,4 @@ ms.locfileid: "41600880"
 
 |||
 |:-------|:-----|
-|![階段 6：資訊保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| 如果您正在追蹤的 Microsoft 365 企業版端對端部署階段下, 一個階段是[資訊保護](infoprotect-infrastructure.md)。 |
+|![階段 6：資訊保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| 如果您正在追蹤的 Microsoft 365 企業版端對端部署階段下, 一個階段是[資訊保護](infoprotect-infrastructure.md)。 |

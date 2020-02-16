@@ -15,16 +15,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 6ada378d63e9a04bd820808ea8a1d93cd7690ffb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f3c4e36ea650dc0e354697c6fb766f5e32c0e3d2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596840"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066755"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>階段 5: Microsoft 365 企業版的行動裝置管理
 
-![階段 5：行動裝置管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![階段 5：行動裝置管理](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *此功能適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
@@ -84,7 +84,7 @@ Intune 使用 Azure AD，包括您的網域，您的使用者，以及您的群�
 
 |||
 |:-------|:-----|
-|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南： iOS 和 Android 裝置註冊](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
+|![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南： iOS 和 Android 裝置註冊](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
 
 
@@ -102,7 +102,7 @@ Intune 可以管理應用程式，包括新增應用程式、 將它們指派給
 
 |||
 |:-------|:-----|
-|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南： 裝置合規性原則](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南： 裝置合規性原則](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>步驟 6： 開啟規範和條件式存取
@@ -159,7 +159,7 @@ Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configur
 
 請參閱 Contoso Corporation，虛構但有代表性的跨國企業，[部署其行動裝置管理基礎結構](contoso-mdm.md)與 Microsoft 365 雲端服務的方式。
 
-![Contoso 公司](./media/contoso-overview/contoso-icon.png)
+![Contoso 公司](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>下一步
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e04f5f48edee663bd6b386d063b67af196e7a782
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2a84cc9c275db1579dfab5050672faf2463698e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600140"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084965"
 ---
 # <a name="identity-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>識別監視與報告在 Microsoft 365 安全中心
 
@@ -29,7 +29,7 @@ ms.locfileid: "41600140"
 * 有多少使用者經條件式存取原則報告為有風險
 * 組織中的全域系統管理員人數
 
-![報告] 頁面上的身分識別類別](../images/identities.png)
+![報告] 頁面上的身分識別類別](../../media/identities.png)
 
 使用者使用特定的偵測，您可以探索特定提醒及調查中 Microsoft defender 資訊安全中心。 偵測包含異常例如不太熟悉的位置從登入的使用者。
 

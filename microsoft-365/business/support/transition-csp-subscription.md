@@ -11,12 +11,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商務版, Microsoft 365, SMB, 轉換雲端解決方案提供者訂閱
 ms.date: 11/01/2017
-ms.openlocfilehash: 4aadfa24bec8728c7e011ac6da48a8e30516e145
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7d8e04a0136f86d3c4bb51208081fd1dcbecf59d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595038"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42057165"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>轉換 Microsoft 365 商務版雲端解決方案提供者訂閱
 
@@ -29,33 +29,33 @@ ms.locfileid: "41595038"
 
     將會列出該公司的訂閱。
 
-    ![合作夥伴中心的客戶訂閱](images/pc_customer_subscriptions_1.png)
+    ![合作夥伴中心的客戶訂閱](../../media/pc_customer_subscriptions_1.png)
     
 3. 在公司的**訂用帳戶**] 頁面上，選取 [**新增訂閱**]。
 4. 在 [**新訂閱**] 頁面上，選取**小型企業版**，然後從清單中選取 [ **Microsoft 365 商務版**。
 5. Add the number of licenses and then select **Next: Review** to review the subscription and then select **Submit**.
 
-    ![檢視 Microsoft 365 商務版的新訂閱](images/pc_customer_reviewnewsubscription.png)
+    ![檢視 Microsoft 365 商務版的新訂閱](../../media/pc_customer_reviewnewsubscription.png)
 
     The **License-based subscriptions** will show **Microsoft 365 Business Preview** and **Microsoft 365 Business**. 您將擱置預覽訂閱下一步]。
 
 6. Select **Microsoft 365 Business Preview**.
 7. 在**Microsoft 365 商務版預覽**頁面上，選取 [暫停預覽訂閱**已擱置**]。
 
-    ![暫停 Microsoft 365 商務版預覽訂閱](images/pc_customer_m365bpreview_suspend.png)
+    ![暫停 Microsoft 365 商務版預覽訂閱](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. Select **Submit** to confirm.
 
     在 [**訂閱**] 頁面上，確認**Microsoft 365 商務版預覽**狀態顯示 [**已擱置**。
 
-    ![確認預覽訂閱狀態為已暫停](images/pc_customer_m365bpreview_suspend_confirm.png)
+    ![確認預覽訂閱狀態為已暫停](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. 或者，您也可以驗證授權合約。 若要這樣做，請執行下列步驟：
     1. Select **Users and licenses** from the company's **Subscriptions** page.
     2. 在 [**使用者和授權**] 頁面上，選取 [使用者]。
     3. 在 [使用者] 頁面上，檢查 [**指派授權**] 區段中，並確認它會顯示**Microsoft 365 商務版**。
 
-        ![確認 Microsoft 365 商務版授權已指派給使用者](images/pc_customer_userslicenses_m365b_validate.png)
+        ![確認 Microsoft 365 商務版授權已指派給使用者](../../media/pc_customer_userslicenses_m365b_validate.png)
 
 ## <a name="impact-to-customers-and-users-during-and-after-transition"></a>轉換期間和轉換後對客戶和使用者的影響
 

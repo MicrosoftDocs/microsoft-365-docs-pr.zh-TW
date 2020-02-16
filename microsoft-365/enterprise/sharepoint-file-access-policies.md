@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f0cd296157e1d4856c27d1dc547de045510e788b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d11b2682b9699e61a4c9ecfa47eb73de87de5e4f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600760"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084197"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>保護 SharePoint 網站與檔案的原則建議
 
@@ -35,7 +35,7 @@ ms.locfileid: "41600760"
 
 下圖說明建議的原則，以保護檔案中 SharePoint Online 和 OneDrive for Business 的集合。 它會指出應該更新或新建立的新增保護 SharePoint Online 和商務用 OneDrive 的原則。
 
-![SharePoint Online 和 OneDrive 的原則的摘要](../images/identity-access-ruleset-sharepoint.png)
+![SharePoint Online 和 OneDrive 的原則的摘要](../media/identity-access-ruleset-sharepoint.png)
 
 如果您建立的一般原則時，您包含 SharePoint Online，您只需要建立新的原則。 當設定條件式存取規則，SharePoint Online 包含商務用 OneDrive。
 
@@ -77,7 +77,7 @@ Microsoft 建議您保護機密和高管制與裝置存取控制內容的 ShareP
 
 下圖提供 SharePoint 裝置存取原則如何保護網站的存取權的範例。
 
-![SharePoint 的裝置存取原則如何保護網站](../images/SharePoint-rules-scenario.png)
+![SharePoint 的裝置存取原則如何保護網站](../media/SharePoint-rules-scenario.png)
 
 在此圖例中：
 

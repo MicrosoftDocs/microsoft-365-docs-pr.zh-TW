@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: af061b50e92d2b7f00be3fab217a60855f0669c4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b12bf7b4bbda79a8699e01f31c97d0cfde330b5c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600230"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087346"
 ---
 # <a name="investigate-incidents-in-microsoft-threat-protection"></a>調查 Microsoft 威脅防護中的事件
 
@@ -42,7 +42,7 @@ Microsoft 威脅防護可彙總各種裝置、使用者和信箱的所有相關�
 
 1. 從事件佇列中選取事件。 <BR> 這會開啟側邊面板，並預覽重要資訊，例如狀態、嚴重性、類別和受影響的實體。
 
-    ![事件側邊面板影像](../images/incident-side-panel.png)
+    ![事件側邊面板影像](../../media/incident-side-panel.png)
 
 2. 選取**開啟事件頁面**。 <BR> 這會開啟事件頁面，您可以在此找到更多資訊事件詳細資料、註解和動作、索引標籤 (概觀、警示、裝置、使用者、調查、證據)。
 
@@ -52,7 +52,7 @@ Microsoft 威脅防護可彙總各種裝置、使用者和信箱的所有相關�
 概觀頁面可讓您一覽無遺地了解事件的主要內容。
 
 
-![事件概觀頁面影像](../images/incidents-overview.png)
+![事件概觀頁面影像](../../media/incidents-overview.png)
 
 
 攻擊類別為您提供視覺和數字檢視，以了解這項攻擊對終止鏈的進展狀況。 如同其他 Microsoft 安全性產品，Microsoft 威脅防護保護與 [MITRE ATT&CK&trade;](https://attack.mitre.org/) 架構一致。 
@@ -69,7 +69,7 @@ Microsoft 威脅防護可彙總各種裝置、使用者和信箱的所有相關�
 ## <a name="alerts"></a>警示 
 您可以檢視與該事件相關的所有警示，以及與該事件相關的其他資訊，例如嚴重性、涉及警示的實體、警示來源 (Azure ATP、Microsoft Defender ATP、Office 365 ATP)，以及連結在一起的原因。 
 
-![事件警示頁面影像](../images/incident-alerts.png)
+![事件警示頁面影像](../../media/incident-alerts.png)
 
 根據預設，警示會依時間順序排列，讓您首先檢視攻擊如何隨時間推移而進行。 按一下每個警示，就會引導您至相關警示頁面，您可以在該頁面中深入調查警示。 
 
@@ -78,7 +78,7 @@ Microsoft 威脅防護可彙總各種裝置、使用者和信箱的所有相關�
 
 按一下執行攻擊的電腦名稱，引導您至其 [電腦] 頁面，您可以其中查看觸發的警示，以及提供的相關事件，以便輕鬆調查。 
 
-![事件機器索引標籤影像](../images/incident-machines.png)
+![事件機器索引標籤影像](../../media/incident-machines.png)
 
 選取 [時間表] 索引標籤可讓您捲動電腦時程表，並以時間順序檢視電腦上觀測到的所有活動和行為，以及散布其中的警示。 
 
@@ -89,18 +89,18 @@ Microsoft 威脅防護可彙總各種裝置、使用者和信箱的所有相關�
 按一下使用者名稱以引導您至使用者的雲端 App 安全性頁面，可在頁面中執行進一步的調查。
 
 
-![事件使用者索引標籤影像](../images/incident-users.png)
+![事件使用者索引標籤影像](../../media/incident-users.png)
 
 ## <a name="mailboxes"></a>信箱
 調查已識別為指定事件一部分或與相關的信箱。 若要執行進一步調查工作，選取與郵件相關的警示，將會開啟 Office 365 進階威脅防護，便可進行修復。
 
 
-![事件信箱索引標籤影像](../images/incident-mailboxes.png)
+![事件信箱索引標籤影像](../../media/incident-mailboxes.png)
 
 ## <a name="investigations"></a>調查
 選取 [調查] **** 即可在此事件中透過警示查看所有觸發的自動化調查內容。 調查將執行修復動作或等待分析人員核准動作，具體取決於您如何設定自動化調查以在 Microsoft Defender ATP 和 Office 365 進階威脅防護中執行。
 
-![事件調查索引標籤影像](../images/incident-investigations.png)
+![事件調查索引標籤影像](../../media/incident-investigations.png)
 
 
 選取調查以瀏覽至 [調查詳細資料] 頁面，取得調查和修復狀態的完整資訊。 如果有任何待核准的動作為調查的一部分，將顯示在 [擱置中的動作] 索引標籤中。採取動作，作為事件修復的一部分。
@@ -109,7 +109,7 @@ Microsoft 威脅防護可彙總各種裝置、使用者和信箱的所有相關�
 ## <a name="evidence"></a>證據
 Microsoft 威脅防護會自動調查警示中所有事件支援活動和可疑實體，為您提供重要檔案、程序、服務、電子郵件等相關自動回應與資訊。 可協助您快速偵測並封鎖事件中的潛在威脅。 
 
-![事件證據索引標籤影像](../images/incident-evidence.png)
+![事件證據索引標籤影像](../../media/incident-evidence.png)
 
 系統會將每個經分析的實體標示為判定結果 (惡意、可疑、清除) 以及修復狀態。 可協助您了解整個事件的修復狀態，以及進一步修復可採取的步驟。
 

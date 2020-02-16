@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: f55a1404a76b55aab6ed6c0b46874fcc80dbbf87
-  ms.sourcegitcommit: d718a3a3ad293ca533ba355047a461b3ab6d4aa3
+  ms.openlocfilehash: 412cc9059aa3f533643ea37295a513ead1a05ed7
+  ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 02/10/2020
-  ms.locfileid: "41882878"
+  ms.lasthandoff: 02/15/2020
+  ms.locfileid: "42085362"
 highlightedContent:
   items:
   - title: 系統管理員和 IT 專業人員訓練
@@ -27,7 +27,7 @@ highlightedContent:
   - title: 訓練使用者
     itemType: learn
     url: https://support.office.com/modernworkplace
-  - title: 適用於小型企業的訓練
+  - title: 在雲端設定您的業務
     itemType: learn
     url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
   - title: 適用於 IT 專業人員的測試實驗室指南
@@ -44,6 +44,9 @@ additionalContent:
   - title: 取得 Microsoft 365 的說明
     summary: 選取要深入了解 Microsoft 365 的卡片。
     items:
+    - title: Microsoft 365 系統管理中心
+      summary: 設定和管理您的 Office 365 和 Microsoft 365 商務和企業 subspcriptions。
+      url: https://docs.microsoft.com/office365/admin/admin-home/
     - title: Microsoft 365 商務版
       summary: 設計適用於中小型企業。 使用最新版的 Windows 和 Office 應用程式，如 Excel 和 Outlook 執行您的業務。 利用資料保護和延伸至所有商務裝置的安全性。
       url: ./business/index.yml

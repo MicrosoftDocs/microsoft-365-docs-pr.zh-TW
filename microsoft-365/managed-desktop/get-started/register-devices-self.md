@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: d0e29bd16f1b0afd119fc822d6e2391e7f9f3020
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e41003a7137b864b52f823debcd72c72ca55045d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602820"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085034"
 ---
 # <a name="register-new-devices-yourself"></a>自行註冊新裝置
 
@@ -90,7 +90,7 @@ CSV 檔案必須採用可供註冊的特定格式。 如果您在先前步驟中
 
 從 Microsoft 受管理的電腦的 [Azure 入口網站](https://aka.ms/mmdportal)，選取左側導覽窗格中的 [裝置]****。 選取 [+ 註冊裝置]****；飛入視窗隨即開啟：
 
-[![在選取 [註冊裝置] 之後飛入，並列出裝置與已指派使用者、序號、狀態、上次查看日期和年限等欄](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
+[![在選取 [註冊裝置] 之後飛入，並列出裝置與已指派使用者、序號、狀態、上次查看日期和年限等欄](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 
 
 [//]: # (事實並非如此。我們可以移除此注意事項 - 但現在暫且擱置，留待我們有機會討論。)

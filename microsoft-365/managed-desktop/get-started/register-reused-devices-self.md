@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e41d2ac66dea6640978435390bf3a8868c7cec7c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b9e1f0691d7bec1d8a17bb7f68a0e0941b3f6bd9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596530"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085952"
 ---
 # <a name="register-existing-devices-yourself"></a>自行註冊現有裝置
 
@@ -60,7 +60,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
     - **描述：** 指定報表的描述。 
     - **伺服器：** 會顯示在其上您要建立此報表的報表伺服器名稱。 
     - **路徑：** 選取 [**瀏覽]** 以指定您要儲存的報告的資料夾]。 
-5.  Select **Next**.  
+5. 選取 **[下一步]**。 
 6. 在 [**摘要**] 頁面上檢閱設定。 選取 [變更設定，或選取 [**下一步**建立報表設定管理員] 中的**上一步**]。 
 7. 在 [**完成**] 頁面上選取 [**關閉**] 結束精靈]，並開啟**報表產生器**輸入報表的設定值。 輸入您的使用者帳戶和密碼，如果出現提示，，然後選取 [ **[確定]。** 如果報表產生器未安裝在裝置上，系統會提示您安裝它。 選取 [**執行，以安裝報表產生器**，這必要修改和建立報告。 
 
@@ -106,7 +106,7 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
 2. 在 **[選擇資料集**，選取 [**選擇現有的資料集，在這份報告或共用資料集**。  
 3. 選取**DataSet0** （預設值），然後再選取 [**下一步**。
 4. 將**製造商**、**模型**和**序號**拖曳至 [**列群組**] 方塊。 將**HardwareHash**拖曳至 [**值**] 方塊，然後選取 [**下一步**。
-5. 清除核取方塊，**顯示小計和總計**] 及 [**展開/折疊群組**。  Select **Next**. 
+5. 清除核取方塊，**顯示小計和總計**] 及 [**展開/折疊群組**。 選取 **[下一步]**。
 6. Select **Finish**.
 7. 選取 [若要執行您的報表的 [**執行**]。 確認報告提供您所預期的資訊。 如有必要，選取 [**設計**回到修改報表的 [設計] 檢視。
 8. 選取 [將報告儲存至 report server 的 [**儲存**]。 您可以監視工作區中的 [報告] 節點中執行新的報表。 
@@ -210,7 +210,7 @@ CSV 檔案必須採用可供註冊的特定格式。 如果您在先前步驟中
 
 從 Microsoft 受管理的電腦的 [Azure 入口網站](https://aka.ms/mmdportal)，選取左側導覽窗格中的 [裝置]****。 選取 [+ 註冊裝置]****；飛入視窗隨即開啟：
 
-[![在選取 [註冊裝置] 之後飛入，並列出裝置與已指派使用者、序號、狀態、上次查看日期和年限等欄](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
+[![在選取 [註冊裝置] 之後飛入，並列出裝置與已指派使用者、序號、狀態、上次查看日期和年限等欄](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 
 
 [//]: # (事實並非如此。我們可以移除此注意事項 - 但現在暫且擱置，留待我們有機會討論。)

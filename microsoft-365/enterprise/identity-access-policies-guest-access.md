@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: ca9b752f55ebe3fecec4f312bc89b45d99cf0d7d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8276dcf85f6c5fd61e01e67deee4fea35c1a15c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601050"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067446"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>允許來賓及外部網路 B2B 存取原則
 本文說明如何調整建議一般身分識別與裝置存取原則，以允許 B2B 帳戶存取權 （來賓和外部使用者）。 本指南為基礎的[常見身分識別與裝置存取原則](identity-access-policies.md)。
@@ -33,7 +33,7 @@ ms.locfileid: "41601050"
 
 下圖說明常見的身分識別與裝置存取原則，並指出 （與 [鉛筆] 圖示） 來新增或更新來保護來賓與外部存取原則。 
 
-![保護來賓存取原則更新的摘要](../images/identity-access-ruleset-guest.png)
+![保護來賓存取原則更新的摘要](../media/identity-access-ruleset-guest.png)
 
 下表列出您需要更新或建立新的原則。 一般原則連結至[常見的身分識別與裝置存取原則](identity-access-policies.md)> 一文中的關聯的設定指示。
 
@@ -45,7 +45,7 @@ ms.locfileid: "41601050"
 
 若要包含或排除來賓和條件式存取規則中的外部使用者，按一下包含或排除] 索引標籤上，檢查**所有來賓和外部使用者。**
 
-![排除來賓的控制項的螢幕擷取畫面](../images/identity-access-exclude-guests-ui.png)
+![排除來賓的控制項的螢幕擷取畫面](../media/identity-access-exclude-guests-ui.png)
 
 ## <a name="more-information"></a>詳細資訊
 

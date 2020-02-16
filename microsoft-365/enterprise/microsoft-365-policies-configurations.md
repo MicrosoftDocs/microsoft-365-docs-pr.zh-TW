@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 4b76ba16b74eeea26799bb383cd00e497c86d770
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: 8d7adda0ded3a118676a67d0446a5744233468f3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855382"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066839"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
@@ -59,25 +59,25 @@ Microsoft 了解某些組織中具有唯一環境需求或複雜性。 如果您
 - **敏感性保護**： 有些客戶會希望必須受保護的資料子集較高層級，或他們可能需要較高層級受到保護的所有資料。 您可以將加強防護套用至 Office 365 環境中的所有或特定資料集。 建議保護以可比較的安全性層級存取敏感性資料的身分識別和裝置。  
 - **高管制**： 有些組織可能會有少量高分類的資料、 consititutes 貿易機密資料，或受管制的資料。 Microsoft 所提供的功能可協助組織符合這些需求，包含針對身分識別和裝置新增的保護。
 
-![安全性圓錐-所有客戶 > 有些客戶 > 特定客戶。 廣泛應用程式特定的應用程式](../images/M365-idquality-threetiers.png)
+![安全性圓錐-所有客戶 > 有些客戶 > 特定客戶。 廣泛應用程式特定的應用程式](../media/M365-idquality-threetiers.png)
 
 本指南將示範如何實作保護身分識別和每個這些保護層級的裝置。 使用此指導方針做為起點，為您的組織，並調整以符合貴組織的特定需求的原則。
 
 請務必針對您的資料、身分識別和裝置使用一致的保護層級。 例如，如果您實作此指導方針，請務必來保護您的資料，可以比較層級。 這些架構模型顯示哪些功能會比較。
 
 **Office 365 的身分識別與裝置保護**<br/>
-![海報 「 身分識別與裝置保護 Office 365 」 的縮圖](../images/O365_Identity_device_protection_thumb.png)<br/>
+![海報 「 身分識別與裝置保護 Office 365 」 的縮圖](../media/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多語言](https://www.microsoft.com/download/details.aspx?id=55032)
 
 **Office 365 的檔案保護方案**<br/>
-![「 Office 365 中檔案保護解決方案 」 海報的縮圖](../images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
+![「 Office 365 中檔案保護解決方案 」 海報的縮圖](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
 
 ## <a name="security-and-productivity-trade-offs"></a>安全性與生產力的取捨
 
 實作任何安全性策略需要之間的安全性與生產力的取捨。 很有幫助評估每個決策會如何影響安全性、 功能及使用者更方便使用的平衡。
 
-![安全性三角平衡安全性、 功能及使用者更方便使用。](media/policies-configurations/security-triad.png)
+![安全性三角平衡安全性、 功能及使用者更方便使用。](../media/policies-configurations/security-triad.png)
 
 所提供的建議根據下列原則：
 

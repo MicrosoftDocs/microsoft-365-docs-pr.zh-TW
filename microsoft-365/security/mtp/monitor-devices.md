@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: cecc84c1df3ccba3eea75d29aa5f293909d5d51f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: af7ed71f2257578e4d4fb063b27cb81ed9802b1a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600160"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087775"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>裝置監視與報告在 Microsoft 365 安全中心
 
@@ -35,7 +35,7 @@ ms.locfileid: "41600160"
 
 使用 [**裝置警示嚴重性**] 卡片，以專注特別的是更嚴重，且可能需要即時回應警訊上。 從這個卡，您可以檢視 Microsoft defender 資訊安全中心入口網站的詳細資訊。
 
-![裝置提醒嚴重性卡](../images/device-alerts-severity.png)
+![裝置提醒嚴重性卡](../../media/device-alerts-severity.png)
 
 ### <a name="understand-sources-of-alerts"></a>了解來源的提醒
 
@@ -43,7 +43,7 @@ Microsoft Defender ATP 會運用廣泛的安全性感應器和智慧來源]，�
 
 **裝置警示偵測**來源卡片顯示由來源警示的通訊。 此卡可協助您追蹤活動相關的特定來源，尤其是您自訂的來源。 您也可以使用這讓您專注於來自感應器未設定為自動封鎖惡意活動或元件的提醒。
 
-![裝置警示偵測來源卡](../images/device-alert-detection-sources.png)
+![裝置警示偵測來源卡](../../media/device-alert-detection-sources.png)
 
 從這個卡，您可以檢視 Microsoft defender 資訊安全中心入口網站的詳細資訊。
 
@@ -53,13 +53,13 @@ Microsoft Defender ATP 排序每個提醒到類別，代表特定階段的攻擊
 
 **裝置威脅類別**卡片顯示提醒的散佈，分為下列類別。 您可以使用這項資訊來識別威脅活動，例如認證竊取嘗試，可能會有較高相較於社交嘗試的影響。 您也可以使用這項資訊來監視之可能破壞性的威脅，如勒索軟體。
 
-![裝置威脅類別卡](../images/device-threat-categories.png)
+![裝置威脅類別卡](../../media/device-threat-categories.png)
 
 ### <a name="monitor-active-alerts"></a>監視作用中警示
 
 **裝置警示狀態**卡片會指出未解決，可能需要加以留意的提醒數目。 從這個卡，您可以檢視 Microsoft defender 資訊安全中心入口網站的詳細資訊。
 
-![裝置警示狀態卡片](../images/device-alert-status.png)
+![裝置警示狀態卡片](../../media/device-alert-status.png)
 
 ### <a name="monitor-classification-of-resolved-alerts"></a>解決的警示的監視器分類
 
@@ -72,7 +72,7 @@ Microsoft Defender ATP 排序每個提醒到類別，代表特定階段的攻擊
 
 附註： 在某些情況下，分類資訊則無法使用某些警示。
 
-![裝置警示分類卡片](../images/device-alert-classification.png)
+![裝置警示分類卡片](../../media/device-alert-classification.png)
 
 ### <a name="monitor-determination-of-resolved-alerts"></a>監視判定的解析提醒
 
@@ -89,13 +89,13 @@ Microsoft Defender ATP 排序每個提醒到類別，代表特定階段的攻擊
 
 您可以從這個卡片，來檢視 Microsoft defender 資訊安全中心的詳細資訊。
 
-![裝置警示判斷卡片](../images/device-alert-determination.png)
+![裝置警示判斷卡片](../../media/device-alert-determination.png)
 
 ### <a name="understand-which-devices-are-at-risk"></a>了解哪些裝置面臨的風險
 
 **裝置保護**顯示裝置的風險層級。 風險層級依據因素影響，例如類型和裝置上有警示的嚴重性。
 
-![裝置保護卡片](../images/device-protection.png)
+![裝置保護卡片](../../media/device-protection.png)
 
 ## <a name="monitor-and-report-status-of-intune-managed-devices"></a>監視和報告 Intune 管理的裝置狀態
 
@@ -114,43 +114,43 @@ Intune 中註冊的裝置資料，包括：
 
 **裝置合規性**顯示多少部裝置，在 Intune 中註冊遵守設定原則。
 
-![裝置合規性卡片](../images/device-compliance.png)
+![裝置合規性卡片](../../media/device-compliance.png)
 
 ### <a name="discover-devices-with-malware-detections"></a>探索裝置與惡意程式碼偵測
 
 **裝置惡意程式碼偵測**提供與惡意程式碼尚未完整解析的 Intune 註冊裝置的數目。 這可以是由於暫止的動作，重新啟動、 完整掃描，手動使用者動作，或如果未成功完成的補救動作。
 
-![裝置惡意程式碼偵測卡](../images/device-malware-detections.png)
+![裝置惡意程式碼偵測卡](../../media/device-malware-detections.png)
 
 ### <a name="understand-the-types-of-malware-detected"></a>了解偵測到的惡意程式碼的類型
 
 **類型的裝置上的惡意程式碼**會顯示在 Intune 中註冊的裝置上的惡意程式碼偵測到的不同類型。 檢閱您可以在 Microsoft 365 安全性中心中的每個類型。
 
-![在 [裝置] 卡片上的惡意程式碼的類型](../images/types-of-malware-on-devices.png)
+![在 [裝置] 卡片上的惡意程式碼的類型](../../media/types-of-malware-on-devices.png)
 
 ### <a name="understand-the-specific-malware-detected-on-your-devices"></a>了解您的裝置上偵測到的特定惡意程式碼
 
 **在裝置上的惡意程式碼**提供特定的惡意程式碼偵測到您的裝置上的清單。
 
-![在 [裝置] 卡片上的惡意程式碼](../images/malware-on-devices.png)
+![在 [裝置] 卡片上的惡意程式碼](../../media/malware-on-devices.png)
 
 ### <a name="understand-which-devices-have-the-most-malware"></a>了解哪些裝置有最多惡意程式碼
 
 **惡意程式碼偵測裝置**顯示哪些裝置有最多惡意程式碼偵測的資訊。 在 Microsoft 365 安全性管理中心中，您可以調查惡意程式碼是否為作用中，使用 Intune 中的裝置，以及其管理狀態的人員。
 
-![惡意程式碼偵測卡的裝置](../images/devices-with-malware-detections.png)
+![惡意程式碼偵測卡的裝置](../../media/devices-with-malware-detections.png)
 
 ### <a name="understand-which-users-have-devices-with-the-most-malware"></a>了解哪些使用者必須具有最多惡意程式碼的裝置
 
 **使用惡意程式碼偵測的使用者**會向使用者顯示有大部分的惡意程式碼偵測的裝置。 在 Microsoft 365 安全性管理中心中，您可以看到多少部裝置會指派給每位使用者及每個裝置和惡意程式碼的類型的詳細資訊。
 
-![使用者與惡意程式碼偵測卡](../images/users-with-malware-detections.png)
+![使用者與惡意程式碼偵測卡](../../media/users-with-malware-detections.png)
 
 ## <a name="monitor-and-manage-asr-rule-deployment-and-detections"></a>監控及管理 ASR 規則部署與偵測
 
 [攻擊面縮減 (ASR) 規則](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)協助防止動作和通常由惡意探索搜尋惡意程式碼用來感染裝置的應用程式。 這些規則會控制可執行檔的執行時間和方式。 例如，您可以防止 JavaScript 或 VBScript 啟動已下載的可執行檔、封鎖 Office 巨集中的 WIN32 API 呼叫，或封鎖從 USB 磁碟碟執行的程序。
 
-![攻擊面縮減卡](../images/attack-surface-reduction-rules.png)
+![攻擊面縮減卡](../../media/attack-surface-reduction-rules.png)
 
 **受攻擊面縮小規則**卡提供在您的裝置之間部署規則的概觀。
 
@@ -166,7 +166,7 @@ Intune 中註冊的裝置資料，包括：
 
 若要檢視您的網路 ASR 規則偵測的詳細的資訊，請**攻擊縮減規則**卡上選取 [**檢視偵測的資訊**。 在 [詳細資料報告] 頁面的 [**偵測的資訊**] 索引標籤會隨即開啟。
 
-![偵測的資訊] 索引標籤](../images/detections-tab.png)
+![偵測的資訊] 索引標籤](../../media/detections-tab.png)
 
 在頁面頂端的圖表顯示偵測透過時間堆疊偵測已封鎖或稽核。 底部的資料表列出最近的偵測。 使用資料表上的下列資訊以了解偵測的性質：
 
@@ -179,7 +179,7 @@ Intune 中註冊的裝置資料，包括：
 
 在 [**攻擊縮減規則**報告] 頁面上，移至 [檢閱規則設定為個別的裝置**組態**] 索引標籤。 選取裝置以取得每個規則是否處於封鎖模式、 稽核模式，或完全關閉的詳細的資訊。
 
-![組態] 索引標籤](../images/configuration-tab.png)
+![組態] 索引標籤](../../media/configuration-tab.png)
 
 Microsoft Intune 提供 ASR 規則的管理功能。 如果您想要更新您的設定，選取 [**設定裝置**] 下的 [**快速入門**中開啟在 Intune 裝置管理] 索引標籤。
 
@@ -192,7 +192,7 @@ Microsoft 365 安全性中心攻擊縮減規則所偵測從收集[您可能想�
 >[!NOTE]  
 >此工具會分析偵測所有攻擊縮減規則，但[僅部分規則支援排除項目](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr)。
 
-![新增排除項目] 索引標籤](../images/add-exclusions-tab.png)
+![新增排除項目] 索引標籤](../../media/add-exclusions-tab.png)
 
 資料表會列出您攻擊縮減規則所偵測到的所有檔案名稱。 您可以選取檢視的排除這些影響的檔案：
 

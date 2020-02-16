@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 92c06eb01abd13df22ae33e72d9663084b05f7ef
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ed9cce1c85dc924762be4408c670f13f318ca02
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600290"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087912"
 ---
 # <a name="devicetvmsoftwareinventoryvulnerabilities"></a>DeviceTvmSoftwareInventoryVulnerabilities
 
@@ -42,7 +42,7 @@ ms.locfileid: "41600290"
 | `OSPlatform` | 字串 | 電腦上執行的作業系統平台。 這表示特定作業系統，包括相同家族內的變化，例如 Windows 10 和 Windows 7。 |
 | `OSVersion` | 字串 | 電腦上執行的作業系統版本。 |
 | `OSArchitecture` | 字串 | 電腦上執行的作業系統架構。 |
-| `SoftwareVendor` | 字串 | 安全性弱點之嚴重性層級的指派是根據 CVSS 分數，以及受威脅環境影響的動態因素 |
+| `SoftwareVendor` | 字串 | 軟體廠商名稱 |
 | `SoftwareName` | 字串 | 軟體產品名稱 |
 | `SoftwareVersion` | 字串 | 軟體產品的版本號碼 |
 | `CveId` | 字串 | 在常見弱點與漏洞 (CVE) 系統下指派給安全性弱點的唯一識別碼 |

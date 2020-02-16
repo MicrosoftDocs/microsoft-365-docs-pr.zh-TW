@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6e5dd8d1d80d08ed808bc607fcc7aba8a390a9ca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6f6468117f73d6cf7079ce50e8ea951422bfc073
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600310"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087421"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>在進階搜捕中使用共用查詢
 
@@ -33,7 +33,7 @@ ms.locfileid: "41600310"
 
 您可以在同一個組織的多位使用者之間共用[進階搜捕](advanced-hunting-overview.md)查詢。 您也可以在 GitHub 尋找公開的查詢。 這些查詢可讓您快速地執行特定威脅搜捕案例，而不需要從頭開始撰寫查詢。
 
-![共用查詢的影像](../images/advanced-hunting-shared-queries.png)
+![共用查詢的影像](../../media/advanced-hunting-shared-queries.png)
 
 ## <a name="save-modify-and-share-a-query"></a>儲存、修改及共用查詢
 您可以儲存新的或現有的查詢，以便只有組織中的其他使用者能存取或共用。 
@@ -44,7 +44,7 @@ ms.locfileid: "41600310"
     
 3. 輸入查詢的名稱。 
 
-   ![儲存查詢的影像](../images/advanced-hunting-save-query.png)
+   ![儲存查詢的影像](../../media/advanced-hunting-save-query.png)
 
 4. 選取您要儲存查詢的資料夾。
     - **共用的查詢** — 與組織的所有使用者共用
@@ -55,7 +55,7 @@ ms.locfileid: "41600310"
 ## <a name="delete-or-rename-a-query"></a>刪除或重新命名查詢
 1. 以滑鼠右鍵按一下您要重新命名或刪除的查詢。
 
-    ![刪除查詢的影像](../images/advanced_hunting_delete_rename.png)
+    ![刪除查詢的影像](../../media/advanced_hunting_delete_rename.png)
 
 2. 選取 [刪除]**** 並確認刪除。 或選取 [重新命名]****，並為查詢提供新名稱。
 
