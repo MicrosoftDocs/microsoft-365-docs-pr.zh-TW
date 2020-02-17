@@ -1,5 +1,7 @@
 ---
 title: 部署三種檔案保護層級的小組
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 使用 Microsoft Teams 建立和設定以不同層級為其檔案提供資訊保護的小組。
-ms.openlocfilehash: 3b90a1b084f7cd7e56d1d6448d74a7d2c2469a4d
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 63a4b6763165f38e1de5331324e5a7b3573ea0f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971821"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083324"
 ---
 # <a name="deploy-teams-for-three-tiers-of-protection-for-files"></a>部署三種檔案保護層級的小組
 
@@ -38,7 +40,7 @@ ms.locfileid: "39971821"
 
 以下是產生的組態。
 
-![公開小組的基準層級保護。](../media/baseline-public-team.png)
+![公開小組的基準層級保護。](../../media/baseline-public-team.png)
 
 ### <a name="private"></a>私人
 
@@ -46,7 +48,7 @@ ms.locfileid: "39971821"
 
 以下是產生的組態。
 
-![私人小組的基準層級保護。](../media/baseline-private-team.png)
+![私人小組的基準層級保護。](../../media/baseline-private-team.png)
 
 ## <a name="sensitive-teams"></a>敏感小組
 
@@ -66,7 +68,7 @@ ms.locfileid: "39971821"
 
 以下是您產生的組態。
 
-![小組的敏感性保護。](../media/sensitive-team.png)
+![小組的敏感性保護。](../../media/sensitive-team.png)
 
 ## <a name="highly-confidential-teams"></a>高度機密小組
 
@@ -88,7 +90,7 @@ ms.locfileid: "39971821"
 
 以下是您產生的組態。
 
-![小組的高度機密保護。](../media/highly-confidential-team.png)
+![小組的高度機密保護。](../../media/highly-confidential-team.png)
 
 ## <a name="next-step"></a>下一步
 

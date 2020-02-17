@@ -1,5 +1,7 @@
 ---
 title: 監視個人資料的外洩
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -16,18 +18,18 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解三種您可以用來監視個人資料外洩的工具。
-ms.openlocfilehash: 43133ed638f91957307b832826c21ae81aa269b0
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 617f0fde0e4b15a014658ba0fc3cf2def4b88d81
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572970"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088382"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>監視個人資料的外洩
 
 有許多工具，可用來監視個人資料的使用和傳輸。本主題描述三種效果不錯的工具。
 
-![監視個人資料之使用及傳輸的工具](../media/Monitor-for-leaks-of-personal-data-image1.png)
+![監視個人資料之使用及傳輸的工具](../../media/Monitor-for-leaks-of-personal-data-image1.png)
 
 在此圖例中：
 
@@ -61,7 +63,7 @@ DLP 報告位於安全性中心和合規性中心。 瀏覽至 [報告] \> [檢�
 
 如需詳細資訊，請參閱[檢視資料外洩防護的報告](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports)。
 
-![顯示 DLP 原則比對的報告](../media/Monitor-for-leaks-of-personal-data-image2.png)
+![顯示 DLP 原則比對的報告](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
 ## <a name="office-365-audit-log-and-alert-policies"></a>Office 365 稽核記錄和警示原則
 
@@ -103,7 +105,7 @@ Microsoft Cloud App Security 是一種全方位服務，可為您的雲端應用
 
 例如，下圖示範兩個可協助 GDPR 的 Cloud App Security 原則。
 
-![Cloud App Security 原則範例](../media/Monitor-for-leaks-of-personal-data-image3.png)
+![Cloud App Security 原則範例](../../media/Monitor-for-leaks-of-personal-data-image3.png)
 
 當具有預先定義的 PII 屬性或您選擇的自訂運算式的檔案，在組織外從您選擇的 SaaS 應用程式共用時，第一個原則會發出警示。
 
@@ -121,7 +123,7 @@ Microsoft Cloud App Security 是一種全方位服務，可為您的雲端應用
 
 附註：當開始使用 Cloud App Security 時，或在您指派標籤之前，請務必啟用 [自動掃描 Azure 資訊保護分類標籤的檔案] (在 [一般] 設定中)。設定後，Cloud App Security 不會重新掃描現有檔案，直到修改了它們。
 
-![顯示警示相關資訊的儀表板](../media/Monitor-for-leaks-of-personal-data-image4.png)
+![顯示警示相關資訊的儀表板](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 詳細資訊：
 

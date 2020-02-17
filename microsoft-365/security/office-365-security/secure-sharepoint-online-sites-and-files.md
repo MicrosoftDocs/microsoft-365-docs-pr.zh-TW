@@ -21,12 +21,13 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：在 SharePoint Online 和 Office 365 中保護檔案的設定建議。
-ms.openlocfilehash: 29bd8ade5f32a2ba7e810d587d731d5036a372b6
-ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 542cf1c899b0eee21b458cd8e9dd5fb8363cf1e9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41830987"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082288"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>保護 SharePoint Online 網站與檔案
 
@@ -50,7 +51,7 @@ ms.locfileid: "41830987"
 
 建議的 SharePoint Online 小組網站依據各種不同 Microsoft 365 功能而定。 下圖顯示四種 SharePoint Online 小組網站的建議設定。
 
-![SharePoint 網站的建議設定](../media/SharePoint-site-configurations.png)
+![SharePoint 網站的建議設定](../../media/SharePoint-site-configurations.png)
 
 如圖例所示：
 
@@ -140,7 +141,7 @@ SharePoint Online 和商務用 OneDrive 的裝置存取設定可讓您決定要�
 
 - 組織的人員可以手動套用標籤至 Outlook 網頁版、Outlook 2010 及更新版本、商務用 OneDrive、SharePoint Online 以及 Office 365 群組中的內容。使用者通常最清楚自己使用的內容類型，因此可以對其分類並套用適當的 DLP 原則。
 
-![SharePoint 網站的建議設定](../media/7fed0126-ab4a-4480-922c-681970642339.png)
+![SharePoint 網站的建議設定](../../media/7fed0126-ab4a-4480-922c-681970642339.png)
 
 如圖例所示，此解決方案包括建立下列保留標籤：
 

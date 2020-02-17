@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 81bcf62d810e9649bcb0a464e765b71490a4752d
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 43cc0317bfce749affc41efe987fe905e1edae5d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862123"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069914"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -113,25 +113,25 @@ ms.locfileid: "41862123"
 
   |**Office 365 服務**|**30 分鐘**|**24 小時**|
   |:-----|:-----:|:-----:|
-  |進階威脅防護和威脅情報|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Azure Active Directory (使用者登入活動)||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Azure Active Directory (系統管理員活動)||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |資料遺失防護|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Dynamics 365 CRM|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |電子文件探索|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Exchange Online|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Power Automate|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Project|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Stream|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Teams|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power Apps|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power BI|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |安全性與合規性中心|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |SharePoint Online 和商務用 OneDrive|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sway||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |工作場所分析|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Forms|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |進階威脅防護和威脅情報|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Azure Active Directory (使用者登入活動)||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Azure Active Directory (系統管理員活動)||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |資料遺失防護|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Dynamics 365 CRM|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |電子文件探索|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Exchange Online|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Project|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Stream|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Teams|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power Apps|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power BI|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |安全性與合規性中心|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |SharePoint Online 和商務用 OneDrive|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Sway||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |工作場所分析|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Yammer||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Forms|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   ||||
 
 - Azure Active Directory (Azure AD) 是適用於 Office 365 的目錄服務。 整合的稽核記錄包含 Microsoft 365 系統管理員中心或 Azure 管理入口網站中執行的使用者、群組、應用程式、網域及目錄活動。 如需 Azure AD 事件的完整清單，請參閱 [Azure Active Directory 稽核報告事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)。
@@ -163,7 +163,7 @@ ms.locfileid: "41862123"
 
     [稽核記錄搜尋]**** 頁面隨即顯示。
 
-    ![設定準則，然後按一下 [搜尋] 即可執行報告](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![設定準則，然後按一下 [搜尋] 即可執行報告](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
 
     > [!NOTE]
     > 您必須先開啟稽核記錄功能，才能執行稽核記錄搜尋。 如果顯示 [開始記錄使用者和系統管理活動]**** 連結，請按一下它以開啟稽核。 (如果您沒有看到此連結，表示貴組織已開啟稽核)。
@@ -195,13 +195,13 @@ ms.locfileid: "41862123"
 
    搜尋結果隨即載入，而它們在片刻之後會顯示於 [結果]**** 底下。 完成搜尋時，就會顯示找到的結果數量。 [結果]**** 窗格中的事件會以 150 個事件為增幅地顯示，上限為 5,000 個事件。 如果符合搜尋準則的事件超過 5,000 個，則會顯示最新的 5,000 個事件。
 
-   ![搜尋完成後，會顯示結果數目。](media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
+   ![搜尋完成後，會顯示結果數目。](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
 #### <a name="tips-for-searching-the-audit-log"></a>搜尋稽核記錄的祕訣
 
 - 您可以按一下活動名稱，以選取要搜尋的特定活動。 或者您也可以按一下群組名稱，以搜尋群組中的所有活動 (例如 [檔案和資料夾活動]****)。 如果已選取活動，您可以按一下它以取消選取。 您也可以使用搜尋方塊顯示含有您輸入的關鍵字之活動。
 
-  ![按一下活動群組名稱以選取所有活動](media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
+  ![按一下活動群組名稱以選取所有活動](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
 
 - 您必須在 [活動]**** 清單中選取 [顯示所有活動的結果]****，才能顯示來自 Exchange 系統管理員稽核記錄的事件。 來自此稽核記錄的事件會在結果的 [活動]**** 欄中顯示 Cmdlet 名稱 (例如 **Set-Mailbox**)。 如需詳細資訊，請按一下本主題中的 [已稽核活動]**** 索引標籤，然後按一下 [Exchange 系統管理員活動]****。
 
@@ -239,7 +239,7 @@ ms.locfileid: "41862123"
 
 您可以按一下搜尋結果清單中的事件記錄，以檢視更多事件相關的詳細資料。 含有事件記錄中詳細屬性的 [詳細資料]**** 頁面隨即顯示。 顯示的屬性會以發生事件的 Office 365 服務為依據。 若要顯示這些詳細資料，請按一下 [更多資訊]****。 如需說明，請參閱 [Office 365 稽核記錄中的詳細內容](detailed-properties-in-the-office-365-audit-log.md)。
 
-![按一下 [更多資訊] 以檢視稽核記錄事件記錄的詳細屬性。](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
+![按一下 [更多資訊] 以檢視稽核記錄事件記錄的詳細屬性。](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
 ### <a name="step-3-filter-the-search-results"></a>步驟 3：篩選搜尋結果
 
@@ -255,7 +255,7 @@ ms.locfileid: "41862123"
 
 3. 按一下欄標頭底下的其中一個方塊，然後輸入字詞或片語 (視您正在篩選的欄而定)。 結果將動態重新調整為顯示與您的篩選相符之事件。
 
-   ![在篩選中輸入一個單字以顯示符合篩選的事件](media/542dc323-a997-402c-934b-cc5e218e50bc.png)
+   ![在篩選中輸入一個單字以顯示符合篩選的事件](../media/542dc323-a997-402c-934b-cc5e218e50bc.png)
 
 4. 若要清除篩選，請按一下篩選方塊中的 [X]****，或按一下 [隱藏篩選]****。
 
@@ -330,7 +330,7 @@ ms.locfileid: "41862123"
 |已刪除資源回收筒中的檔案|FileDeletedFirstStageRecycleBin|使用者從網站的資源回收筒中刪除檔案。|
 |已刪除第二階段資源回收筒中的檔案|FileDeletedSecondStageRecycleBin|使用者從網站的第二階段資源回收筒中刪除檔案。|
 |已刪除記錄合規性原則標籤|ComplianceRecordDelete|已歸類為記錄的文件已刪除。 將內容歸類為記錄的保留標籤套用至文件時，文件就會視為記錄。|
-|偵測到的文件敏感度不相符|DocumentSensitivityMismatchDetected|使用者上傳以敏感度標籤分類的文件，但其敏感度標籤的優先順序高於文件上傳目的地網站所套用的敏感度標籤。 <br/><br/> 如果網站套用的敏感度標籤，其優先順序高於上傳到網站的文件所套用的敏感度標籤，則不會觸發此事件。 如需有關敏感度標籤優先順序的詳細資訊，請參閱[敏感度標籤概觀](sensitivity-labels.md#label-priority-order-matters)中的＜標籤優先順序＞一節。|
+|偵測到的文件敏感度不相符|DocumentSensitivityMismatchDetected|使用者上傳以敏感度標籤分類的文件，但其敏感度標籤的優先順序高於文件上傳目的地網站所套用的敏感度標籤。 <br/><br/> 如果網站套用的敏感度標籤，其優先順序高於上傳到網站的文件所套用的敏感度標籤，則不會觸發此事件。 如需有關敏感度標籤優先順序的詳細資訊，請參閱[了解敏感度標籤](sensitivity-labels.md#label-priority-order-matters)中的＜標籤優先順序＞一節。|
 |在檔案中偵測到惡意程式碼|FileMalwareDetected|SharePoint 防毒引擎在檔案中偵測到惡意程式碼。|
 |已捨棄檔案簽出|FileCheckOutDiscarded|使用者捨棄 (或復原) 已簽出的檔案。這表示會捨棄使用者在簽出時對檔案所做的任何變更，而且不會儲存至文件庫中的文件版本。|
 |下載的檔案|FileDownloaded|使用者從網站下載文件。|
@@ -744,7 +744,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 
 如果貴組織正在 Microsoft Teams 中使用[病患應用程式](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview)，則可以在稽核記錄中搜尋與病患應用程式相關的活動。 如果您的環境設定為支援病患應用程式，則**活動**選擇器清單中提供了這些活動的其他活動群組。
 
-![活動選擇器清單中的 Microsoft Teams 醫療保健活動](media/TeamsHealthcareAuditActivities.png)
+![活動選擇器清單中的 Microsoft Teams 醫療保健活動](../media/TeamsHealthcareAuditActivities.png)
 
 如需有關病患應用程式活動的說明，請參閱[病患應用程式的稽核記錄](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit)。
 
@@ -835,7 +835,7 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
 
 - 若要顯示來自 Exchange 系統管理員稽核記錄的事件，請篩選搜尋結果，並在 [活動]**** 篩選方塊中輸入 **-** (破折號)。 這會顯示那些顯示於 Exchange 系統管理員事件 [活動]**** 欄中的 Cmdlet 名稱。 接著，您可以將 Cmdlet 名稱依字母順序排序顯示。
 
-  ![在 [活動] 方塊中輸入虛線以篩選 Exchange 系統管理員事件](media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+  ![在 [活動] 方塊中輸入虛線以篩選 Exchange 系統管理員事件](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
 
 - 如需取得有關 Cmdlet 執行內容、使用哪些參數和參數值，以及影響哪些物件等相關資訊，您可以藉由選取 [下載所有結果]**** 選項來匯出搜尋結果。 如需詳細資訊，請參閱[匯出、設定及檢視稽核記錄檔的記錄](export-view-audit-log-records.md)。
 

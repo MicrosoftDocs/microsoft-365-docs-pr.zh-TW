@@ -1,5 +1,7 @@
 ---
 title: 在 Microsoft Teams 中保護檔案
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：在 Microsoft Teams 中保護檔案的設定建議。
-ms.openlocfilehash: 309ccfb4850f0c89f48e23c53088db5a2cda1437
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 82c55affc8384c04e0595f82d21c7e3532b5cb0e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572749"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088124"
 ---
 # <a name="secure-files-in-microsoft-teams"></a>在 Microsoft Teams 中保護檔案
 
@@ -47,7 +49,7 @@ ms.locfileid: "41572749"
 
 針對受保護的小組而提供的建議，依據各種不同 Microsoft 365 功能而定。 下圖顯示建議的設定。
 
-![小組的建議設定](../media/secure-team-configurations.png)
+![小組的建議設定](../../media/secure-team-configurations.png)
 
 如圖例所示：
 

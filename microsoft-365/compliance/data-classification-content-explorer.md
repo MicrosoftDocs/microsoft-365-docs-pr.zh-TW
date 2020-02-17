@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 內容總管可讓您本機檢視已套用標籤的項目。
-ms.openlocfilehash: c2bf73a5e6b9076d9c5f42c40f0d1f2f33cd1ee8
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 2d9be42c00940bf9d37d1fdeb9b15b071aa412ac
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661901"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076423"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>使用資料分類內容總管 (預覽)
 
@@ -45,7 +45,7 @@ SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資�
 
 [保留標籤](labels.md)可讓您定義保留標記的項目的時間長度，以及刪除它之前要採取的步驟。 它們會透過原則來手動或自動套用。 它們可以在協助您組織保持遵守法律和法規需求方面扮演一個角色。
 
-![內容總管摺疊的螢幕擷取畫面](media/data-classification-content-explorer-1.png)
+![內容總管摺疊的螢幕擷取畫面](../media/data-classification-content-explorer-1.png)
 
 ### <a name="permissions"></a>權限
 

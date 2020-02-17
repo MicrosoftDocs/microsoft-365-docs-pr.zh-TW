@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Office 365 安全性與合規性中心的資料控管報告，您可以快速檢視標籤是否如您預期一般套用到內容。
-ms.openlocfilehash: b07daf73cf1fca50f4d9831dfe6d96a59df928d0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4236f76a651550504bfcb46057517077704d4b2f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597210"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068786"
 ---
 # <a name="view-the-data-governance-reports"></a>檢視資料控管報告
 
@@ -38,10 +38,10 @@ ms.locfileid: "41597210"
   
 您可以在 [安全性與合規性中心] \> [資訊控管]**** \> [儀表板]**** 中找到這些報告。&amp;
   
-![顯示過去 90 天之標籤趨勢的圖表](media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
+![顯示過去 90 天之標籤趨勢的圖表](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
 您可以依日期 (最多 90 天) 和位置 (Exchange、SharePoint 和商務用 OneDrive) 篩選資料控管報告。最新的資料最多可能需要 24 小時才會出現在報告中。
   
-![資料控管報告的篩選器](media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
+![資料控管報告的篩選器](../media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
   
 

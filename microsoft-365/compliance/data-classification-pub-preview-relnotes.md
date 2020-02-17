@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 資料分類公開預覽版的版本資訊。
-ms.openlocfilehash: fecf643d12cf544c16570c173b15bb1e0dc043f0
-ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
+ms.openlocfilehash: 1beae92089833327cedf6090690530d9e5457a37
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887333"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076360"
 ---
 # <a name="data-classification-public-preview-release-notes-preview"></a>資料分類公開預覽版本資訊 (預覽)
 
@@ -40,7 +40,7 @@ ms.locfileid: "41887333"
 
 ## <a name="seeing-guids-instead-of-label-names"></a>看到 GUID 而不是標籤名稱
 
-私人預覽版客戶已看到下列情況：刪除貼有內容的標籤時，會導致標籤名稱解析為內容總管和活動總管中的 32位元 GUID，而不是標籤名稱。 
+私人預覽版客戶已發現下列情況：當移轉或刪除的標籤，其內容若已經加上戳記，將導致標籤名稱在內容總管和活動總管中解析為32 位 GUID，而非標籤名稱。 
 
 ## <a name="rendering-of-encrypted-documents"></a>呈現加密的文件
 

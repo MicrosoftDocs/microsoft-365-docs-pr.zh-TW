@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 檔案計劃管理員提供對於保留標籤、保留標籤原則的進階管理功能，並且提供整合的方式讓標籤和標籤至內容活動周遊整個內容生命週期 – 從建立、共同作業、記錄宣告、保留，到最終的處置。
-ms.openlocfilehash: d102d264fd3aeed20eb952caa6df8c73fe5c51b8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bad2e592359cb3e1f63e3fa020914ad49a65a471
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594574"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074151"
 ---
 # <a name="overview-of-file-plan-manager"></a>檔案計劃管理員的概觀
 
@@ -29,7 +29,7 @@ ms.locfileid: "41594574"
 
 若要存取安全性與合規性中心的檔案計劃管理員，請移至 **[記錄管理]** >  **[檔案計劃]**。
 
-![檔案計劃頁面](media/file-plan-page.png)
+![檔案計劃頁面](../media/file-plan-page.png)
 
 ## <a name="accessing-file-plan-manager"></a>存取檔案計劃管理員
 
@@ -89,7 +89,7 @@ ms.locfileid: "41594574"
     - 自動刪除
     - 需要檢閱 (也稱為處置檢閱)
 
-![檔案計劃中的標籤設定](media/file-plan-label-columns.png)
+![檔案計劃中的標籤設定](../media/file-plan-label-columns.png)
 
 ### <a name="retention-label-file-plan-descriptors-columns"></a>保留標籤檔案計劃描述元資料行
 
@@ -99,11 +99,11 @@ ms.locfileid: "41594574"
 
 以下是建立或編輯保留標籤時的檔案計劃描述元步驟檢視。
 
-![檔案計劃描述元](media/file-plan-descriptors.png)
+![檔案計劃描述元](../media/file-plan-descriptors.png)
 
 以下是檔案計劃管理員的 **[標籤]** 索引標籤上，檔案計劃描述元的檢視。
 
-![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
+![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
 
 ## <a name="export-all-existing-retention-labels-to-analyze-andor-perform-offline-reviews"></a>匯出所有現有的保留標籤以分析及/或執行離線檢閱
 
@@ -111,11 +111,11 @@ ms.locfileid: "41594574"
 
 若要匯出所有保留標籤：在 **[檔案計劃]** 頁面，**[檔案計劃動作]** \> **[匯出標籤]**。
 
-![匯出檔案計劃的選項](media/file-plan-export-labels-option.png)
+![匯出檔案計劃的選項](../media/file-plan-export-labels-option.png)
 
 包含所有現有保留標籤的 *.csv 檔案隨即開啟。
 
-![顯示所有保留標籤的 CSV 檔案](media/file-plan-csv-file.png)
+![顯示所有保留標籤的 CSV 檔案](../media/file-plan-csv-file.png)
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>將保留標籤匯入至您的檔案計劃
 
@@ -125,13 +125,13 @@ ms.locfileid: "41594574"
 
 1. 移至在 **[檔案計劃]** 頁面上的 **[檔案計劃動作]** >  **[匯入標籤]**。
 
-   ![匯入檔案計劃的選項](media/file-plan-import-labels-option.png)
+   ![匯入檔案計劃的選項](../media/file-plan-import-labels-option.png)
 
-   ![下載空白檔案計劃範本的選項](media/file-plan-blank-template-option.png)
+   ![下載空白檔案計劃範本的選項](../media/file-plan-blank-template-option.png)
 
 2. 下載空白範本以匯入全新保留標籤。 或者，您可以從當匯出組織中的現有保留標籤時所匯出的 .csv 檔案開始。
 
-   ![Excel 中開啟空白檔案計劃範本](media/file-plan-blank-template.png)
+   ![Excel 中開啟空白檔案計劃範本](../media/file-plan-blank-template.png)
 
 3. 填寫範本。 下列描述檔案計劃範本中每個屬性的內容和有效值。<br/>
 
@@ -159,16 +159,16 @@ ms.locfileid: "41594574"
 
    以下是含有保留標籤相關資訊的範本範例。
 
-   ![已填入資訊的檔案計劃範本](media/file-plan-filled-out-template.png)
+   ![已填入資訊的檔案計劃範本](../media/file-plan-filled-out-template.png)
 
 4. 在匯入檔案計劃精靈頁面的步驟 3 下方，按一下 **[瀏覽檔案]** 以上傳填入的範本。 
 
    檔案計劃管理員會驗證項目並且顯示匯入統計資料。
 
-   ![檔案計劃匯入統計資料](media/file-plan-import-statistics.png)
+   ![檔案計劃匯入統計資料](../media/file-plan-import-statistics.png)
 
    萬一有驗證錯誤，檔案計劃匯入將會繼續驗證匯入檔案中的每個項目，並在匯入檔案中顯示參考行/列數的所有錯誤、複製顯示的錯誤結果，讓您可以輕鬆地返回匯入檔案並更正錯誤。
 
 5. 匯入完成後，返回檔案計劃管理員，讓新的保留標籤與新的或現有的保留標籤原則產生關聯。
 
-   ![發佈標籤的選項](media/file-plan-publish-labels-option.png)
+   ![發佈標籤的選項](../media/file-plan-publish-labels-option.png)

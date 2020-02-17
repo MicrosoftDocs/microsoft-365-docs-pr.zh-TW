@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 當建立敏感度標籤時，您可以限制標籤將套用至其中之內容的存取。敏感度標籤可以使用加密來保護內容。
-ms.openlocfilehash: e27e130e96086dd37dd1cf5f49c30ebc764a8958
-ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
+ms.openlocfilehash: 17cea4f80ac1dee75c10c2beef63be06141c89d5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41830947"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074606"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容 
 
@@ -63,7 +63,7 @@ ms.locfileid: "41830947"
 
 設定加密選項：
 
-![用於加密的敏感度標籤選項](media/encrytion-options-sensitivity-label.png)
+![用於加密的敏感度標籤選項](../media/encrytion-options-sensitivity-label.png)
 
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>套用標籤時，現有的加密會發生什麼情況
@@ -111,7 +111,7 @@ ms.locfileid: "41830947"
 
 選擇 [立即指派權限] 或 [讓使用者指派權限]： 
 
-![新增使用者或系統管理員定義權限的選項](media/sensitivity-label-user-or-admin-defined-permissions.png)
+![新增使用者或系統管理員定義權限的選項](../media/sensitivity-label-user-or-admin-defined-permissions.png)
 
 
 ## <a name="assign-permissions-now"></a>立即指派權限
@@ -124,7 +124,7 @@ ms.locfileid: "41830947"
 
 已加密內容的存取控制設定：
 
-![系統管理員定義權限的設定](media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+![系統管理員定義權限的設定](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>用於離線存取的 Rights Management 使用授權
 
@@ -146,7 +146,7 @@ ms.locfileid: "41830947"
 
 指派權限：
 
-![將權限指派給使用者的選項](media/Sensitivity-Assign-permissions-settings.png)
+![將權限指派給使用者的選項](../media/Sensitivity-Assign-permissions-settings.png)
 
 #### <a name="add-users-or-groups"></a>新增使用者或群組
 
@@ -179,13 +179,13 @@ ms.locfileid: "41830947"
 
 如需每一個特定權限的詳細資訊，請參閱[使用權限和描述](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。  
 
-![選擇預設或自訂權限的選項](media/Sensitivity-Choose-permissions-settings.png)
+![選擇預設或自訂權限的選項](../media/Sensitivity-Choose-permissions-settings.png)
 
 請注意，相同標籤可將不同的權限授與不同的使用者。例如，單一標籤可將某些使用者指派為檢閱者，並將不同的使用者指派為共同作者，如以下螢幕擷取畫面所示。
 
 若要這麼做，請新增使用者或群組、將權限指派給他們，並儲存這些設定。然後，重複這些步驟、新增使用者並將權限指派給他們，每次完成後儲存設定。您可以視需要經常重複此設定，為不同的使用者定義不同的權限。
 
-![具有不同權限的不同使用者](media/Sensitivity-Multiple-users-permissions.png)
+![具有不同權限的不同使用者](../media/Sensitivity-Multiple-users-permissions.png)
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>Rights Management 簽發者 (套用敏感度標籤的使用者) 一律具有完全控制權
 
@@ -207,7 +207,9 @@ ms.locfileid: "41830947"
 
 - 在 Word、PowerPoint 和 Excel 中，系統會提示使用者為特定使用者、群組或組織選取其自己的權限。 
     > [!NOTE]
-    > 適用於 Word、PowerPoint 和 Excel 的此選項，是由 Azure 資訊保護整合標籤用戶端支援。 針對使用內建標籤的應用程式，目前在 [Windows 版和 Mac 版預覽](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)中都推出支援。 如果已選取此選項，但使用者的應用程式不支援此選項，則不會向使用者顯示該標籤。
+    > 適用於 Word、PowerPoint 和 Excel 的此選項，是由 Azure 資訊保護整合標籤用戶端支援。 針對使用內建標籤的應用程式，目前在 [Windows 版和 Mac 版預覽](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)中都提供支援。 
+    > 
+    > 如果已選取此選項，但使用者的應用程式不支援此選項，表示該標籤未顯示給使用者，或 (目前正在 iOS 和 Android 版預覽中推出) 為求一致，系統會顯示標籤，但無法在套用時為使用者提供說明訊息。
 
 支援這些選項時，請使用下表來識別使用者何時可看到敏感度標籤：
 
@@ -222,13 +224,13 @@ ms.locfileid: "41830947"
 
 設定使用者指派的權限：
 
-![使用者定義權限的加密設定](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+![使用者定義權限的加密設定](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
 ### <a name="outlook-restrictions"></a>Outlook 限制
 
 在 Outlook 中，當使用者套用的敏感標籤可允許他們指派郵件的權限時，限制與 [不可轉寄] 選項相同。 使用者會在郵件頂端看到標籤名稱和描述，指出內容已受到保護。 與 Word、PowerPoint 和 Excel 不同的是 (請參閱[下一節](#word-powerpoint-and-excel-permissions))，使用者不會收到選取特定權限的提示。
 
-![套用至 Outlook 郵件的敏感度標籤](media/sensitivity-label-outlook-protection-applied.png)
+![套用至 Outlook 郵件的敏感度標籤](../media/sensitivity-label-outlook-protection-applied.png)
 
 將 [不可轉寄] 選項套用到電子郵件時，電子郵件會加密而且收件者必須經過驗證。 收件者無法轉寄、列印或複製該電子郵件。 例如，在 Outlook 用戶端中，無法使用 [轉寄] 按鈕、[另存新檔] 和 [列印] 功能表選項，且您無法在 [收件人]、[副本] 或 [密件副本] 方塊中新增或變更收件者。
 
@@ -244,7 +246,7 @@ ms.locfileid: "41830947"
 - 選取使用者、群組或組織。 這可能包括組織內部或外部的人員。
 - 設定到期日，到期之後所選使用者就無法存取內容。 如需詳細資訊, 請參閱前一節的[用於離線存取的 Rights Management 使用授權](#rights-management-use-license-for-offline-access)。
 
-![讓使用者以自訂權限進行保護的選項](media/sensitivity-aip-custom-permissions-dialog.png)
+![讓使用者以自訂權限進行保護的選項](../media/sensitivity-aip-custom-permissions-dialog.png)
 
 針對內建標籤，使用者會在選取下列項目時看到相同的對話方塊：
 

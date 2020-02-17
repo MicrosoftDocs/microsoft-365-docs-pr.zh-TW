@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates 已驗證當 Exchange Online 和安全性與合規性中心依建議設定時，則會符合 CFTC Rule 1.31(c)-(d)、FINRA Rule 4511 和 SEC Rule 17a-4 的相關儲存要求。您可以下載評估。
-ms.openlocfilehash: dc61521043d176781c2a6fbd9e1b283cc93eb270
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: d2f92f97ba15bcce9466e8886198c7502c41732b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628589"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069252"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>使用 Exchange Online 和安全性與合規性中心以符合 SEC Rule 17a-4
 
@@ -36,7 +36,7 @@ Cohasset 已驗證當 Exchange Online 和安全性與合規性中心依建議設
 
 您可以[在這裡下載 Cohasset 評估](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)。
 
-![Cohasset Associates 的可下載評估標題頁面](media/cohasset-associates-assessment.png)
+![Cohasset Associates 的可下載評估標題頁面](../media/cohasset-associates-assessment.png)
 
 ## <a name="this-assessment-is-specific-to-exchange-online"></a>這項評估是針對 Exchange Online
 

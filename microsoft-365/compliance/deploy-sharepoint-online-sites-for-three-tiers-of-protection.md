@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 摘要：建立及設定各種資訊保護等級的 SharePoint Online 小組網站。
-ms.openlocfilehash: 1f67dd1956059162902aefdb194e5e514d063778
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: 1827c4a19cfd31a236dfbd58e454c610cae14477
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855252"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075511"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>部署三種保護層級的 SharePoint Online 網站
 
@@ -41,7 +41,7 @@ ms.locfileid: "41855252"
 
 以下是產生的組態。
   
-![適用於公用 SharePoint Online 小組網站的基準層級保護。](media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
+![適用於公用 SharePoint Online 小組網站的基準層級保護。](../media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
 ### <a name="private"></a>私人
 
@@ -49,7 +49,7 @@ ms.locfileid: "41855252"
   
 以下是產生的組態。
   
-![適用於私人 SharePoint Online 小組網站的基準層級保護。](media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
+![適用於私人 SharePoint Online 小組網站的基準層級保護。](../media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
 ## <a name="sensitive-sharepoint-online-team-sites"></a>機密 SharePoint Online 小組網站
 
@@ -70,7 +70,7 @@ ms.locfileid: "41855252"
 
 以下是您產生的組態。
   
-![適用於隔離 SharePoint Online 小組網站的敏感性層級保護。](media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
+![適用於隔離 SharePoint Online 小組網站的敏感性層級保護。](../media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
   
 網站成員現在可以透過其中一個存取群組的群組成員資格，安全地在網站的資源上共同作業。
   
@@ -94,7 +94,7 @@ ms.locfileid: "41855252"
 
 以下是您產生的組態。
   
-![適用於隔離 SharePoint Online 小組網站的高度機密層級保護。](media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
+![適用於隔離 SharePoint Online 小組網站的高度機密層級保護。](../media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
 網站成員現在可以透過其中一個存取群組的群組成員資格，安全地在網站的資源上共同作業。
   

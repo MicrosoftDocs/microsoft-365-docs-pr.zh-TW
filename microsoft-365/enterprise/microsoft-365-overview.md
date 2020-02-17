@@ -150,6 +150,6 @@ Microsoft 365 企業版所組成：
 
 如果您正在自行進行部署，來啟動您的[Microsoft 365 企業版部署的作業過程](deploy-microsoft-365-enterprise.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 企業版產品頁面](https://www.microsoft.com/microsoft-365/enterprise)

@@ -1,5 +1,7 @@
 ---
 title: 設定政治活動開發/測試環境的群組和使用者
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 摘要：為政治活動開發/測試環境建立具備使用者與群組的 Office 365 和 Enterprise Mobility + Security (EMS) 之試用訂閱。
-ms.openlocfilehash: a5bce86ef7bce79d58628b78d95e02484051c389
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: a61cc21b67cafd213d47076698929d0aa2644d08
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971841"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083482"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>設定政治活動開發/測試環境的群組和使用者
 
@@ -185,11 +187,11 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
 記錄這些值以與 Office 365 和 EMS 試用訂閱在此開發/測試環境中搭配使用：
 
-- 您的試用訂閱組織名稱： ![底線](../media/Common-Images/TableLine.png)
+- 您的試用訂閱組織名稱： ![底線](../../media/Common-Images/TableLine.png)
 
   例如，針對 contoso.onmicrosoft.com 的試用訂閱網域名稱，組織名稱為「contoso」。
 
-- Office 365 全域系統管理員名稱： ![底線](../media/Common-Images/TableLine.png).onmicrosoft.com
+- Office 365 全域系統管理員名稱： ![底線](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   在安全位置記錄此帳戶的密碼以及其他使用者帳戶的常見初始密碼。
 

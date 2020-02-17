@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: 1585be963b63e2e7f4c3efad972b7b262b4db3cc
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: 3dbc3e221849cd9b5cde1d1f97e50ccf043c336d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774219"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070145"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -87,7 +87,7 @@ ms.locfileid: "41774219"
   
 將保留原則指派給 OneDrive 帳戶或 SharePoint 網站之後，內容可以依循下列兩個途徑之一：
 
-![SharePoint 和 OneDrive 中內容生命週期的圖表](media/Retention_Diagram_of_retention_flow_in_sites.png)
+![SharePoint 和 OneDrive 中內容生命週期的圖表](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 1. 若已在保留期間**修改或刪除內容**，即會在文件保留庫中建立指派保留原則時即存在之原始內容的複本。 計時器工作會在此處定期執行，找到保留期間已過期的項目，並將這些項目移至第二階段資源回收桶，會在 93 天結束時予以永久刪除。 使用者看不到第二階段資源回收筒 (只能看到第一階段資源回收筒)，但網站集合管理員可以檢視並從該處還原內容。
 
@@ -110,7 +110,7 @@ ms.locfileid: "41774219"
   
 將保留原則指派給信箱或公用資料夾之後，內容可以依循下列兩個途徑之一：
 
-![電子郵件和公用資料夾中的保留流程圖](media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
+![電子郵件和公用資料夾中的保留流程圖](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. 在保留期間，**如果使用者已永久修改或刪除項目** (按 SHIFT+DELETE 或從 [刪除的郵件] 中刪除)，則項目會移至 (或在編輯的情況下複製到) [可復原的項目] 資料夾。在那裡，此程序會定期執行，並識別其保留期間已過期的項目，而且會在保留期間結束後的 14 天內永久刪除這些項目。請注意，14 天是預設設定，但它最多可設為 30 天。
     
@@ -139,7 +139,7 @@ ms.locfileid: "41774219"
   
 您可以選擇是否要在保留期間結束時永久刪除內容。 保留原則也可以刪除舊內容而不予以保留。 請參閱下一節。
   
-![保留設定頁面](media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+![保留設定頁面](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
   
 ## <a name="deleting-content-thats-older-than-a-specific-age"></a>刪除早於特定存留期的內容
 
@@ -147,19 +147,19 @@ ms.locfileid: "41774219"
   
 如果您的保留原則刪 內容，請務必了解，文件刪除原則所指定的期限並不是從指派原則的時間算起，而是從建立或修改內容的時間算起。
   
-![刪除設定](media/042f9571-96f4-458f-8f38-fad3ed68ed31.png)
+![刪除設定](../media/042f9571-96f4-458f-8f38-fad3ed68ed31.png)
   
 例如，假設您建立三年後刪除內容的保留原則，然後將該原則指派給所有 OneDrive 帳戶，其中包含許多四或五年前建立的內容。在此情況下，第一次指派保留原則後，很快就會刪除大量的內容。基於這個原因，**刪除內容的保留原則可以對您的內容產生相當大的影響**。 
   
 因此，在第一次將保留原則指派給網站集合之前，您應先考量現有內容的存留期，以及原則對該內容可能造成的影響。您也可以在指派新原則之前先與使用者溝通，讓他們有時間評估可能的影響。請注意，只在您建立保留原則之前，檢閱其設定時才會出現此警告。
   
-![有關刪除內容的警告](media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
+![有關刪除內容的警告](../media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
 ## <a name="advanced-settings-that-apply-a-policy-only-to-content-that-meets-certain-conditions"></a>只將原則套用到符合特定條件之內容的進階設定
 
 保留原則可以套用至其包含之位置中的所有內容，或您可以選擇只將保留原則套用到包含特定關鍵字或[特定類型的敏感資訊](what-the-sensitive-information-types-look-for.md)的內容。
   
-![進階保留選項](media/e8d9dd42-c062-4e8b-a2ca-bffe3ea298e0.png)
+![進階保留選項](../media/e8d9dd42-c062-4e8b-a2ca-bffe3ea298e0.png)
   
 ### <a name="retain-content-that-contains-specific-keywords"></a>保留包含特定關鍵字的內容
 
@@ -169,13 +169,13 @@ ms.locfileid: "41774219"
   
 查詢型保留會使用搜尋索引來識別內容。
   
-![查詢編輯器](media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
+![查詢編輯器](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
   
 ### <a name="retain-content-that-contains-sensitive-information"></a>保留包含敏感資訊的內容
 
 您也可以只將保留原則套用至包含[特定類型的敏感資訊](what-the-sensitive-information-types-look-for.md)的內容。例如，您可以選擇只將唯一的保留需求套用至包含個人識別資訊 (PII) 的內容，例如納稅人身分識別碼、社會安全編號或護照號碼。
   
-![敏感資訊類型頁面](media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
+![敏感資訊類型頁面](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
 附註：
   
@@ -201,7 +201,7 @@ ms.locfileid: "41774219"
     
 - Exchange 公用資料夾
     
-![所有位置選項](media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
+![所有位置選項](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
   
 全組織保留原則的其他重要功能包含：
   
@@ -215,7 +215,7 @@ ms.locfileid: "41774219"
   
 如同全組織原則一般，若原則套用到整個位置的任何組合，則原則可以包含的信箱或網站數目沒有限制。例如，如果原則包含所有 Exchange 電子郵件和所有 SharePoint 網站，則所有網站和信箱都會包含在內，無論有多少。對於 Exchange，套用原則後建立的任何新信箱都會自動繼承此原則。
  
-![選擇位置頁面](media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
+![選擇位置頁面](../media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>具有特定包含或排除的原則
 
@@ -235,7 +235,7 @@ ms.locfileid: "41774219"
   
 選擇商務用 Skype 使用者時，您可以選取欄標題中的 [名稱]**** 方塊，快速包含所有使用者。 不過，請務必了解，會將每個使用者算成原則中的一個特定包含。 因此，如果您包含超過 1,000 個使用者，則會套用上一節提及的限制。 在這裡選取所有 Skype 使用者，和整個組織的原則能夠根據預設包含所有 Skype 使用者並不一樣。 
   
-![選擇 Skype 使用者頁面](media/f1742493-741a-4142-a564-d7d41ab0236a.png)
+![選擇 Skype 使用者頁面](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
 請注意，**交談歷程記錄** (Outlook 中的資料夾) 是與 Skype 封存無關的功能。使用者可以關閉**交談歷程記錄**，但會執行 Skype 的封存，方法為將 Skype 交談的複本儲存在使用者無法存取但 eDiscovery 可以使用的隱藏資料夾中。
 
@@ -250,7 +250,7 @@ ms.locfileid: "41774219"
   
 將保留原則指派給團隊之後，交談和頻道訊息可以依循下列兩個途徑之一：
 
-![Teams 聊天和頻道訊息的保留流程圖](media/TeamsRetentionLifecycle.png)
+![Teams 聊天和頻道訊息的保留流程圖](../media/TeamsRetentionLifecycle.png)
 
 1. 如果使用者在保留期間**修改或刪除聊天或頻道訊息**，則會將該訊息移動 (或如果是編輯的情況下，則為複製) 至 SubstrateHolds 資料夾 (這是每個使用者或群組信箱中的隱藏資料夾)，並儲存在此資料夾中，直到保留期間到期為止。 訊息會在保留期間到期當日永久刪除。
 
@@ -278,7 +278,7 @@ ms.locfileid: "41774219"
   
 套用到 Teams 的保留原則可以使用[保留鎖定](#locking-a-retention-policy)。
   
-![聊天和通道訊息的 Teams 位置](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
+![聊天和通道訊息的 Teams 位置](../media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   
 > [!NOTE]
 > 如果您在組織中建立 Skype 或 Teams 位置的保留原則，當使用者在 Outlook 電腦版用戶端中檢視信箱資料夾的內容時，其中一個原則會顯示為預設資料夾原則。 這是 Outlook 中顯示不正確的問題，並且是[已知問題](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)。 應顯示為預設資料夾原則的是套用至資料夾的信箱保留原則。 Skype 或 Teams 保留原則不會套用至使用者的信箱。  
@@ -309,23 +309,23 @@ ms.locfileid: "41774219"
 
 第二，若要檢視您的保留原則清單，並尋找您想要鎖定的原則名稱，請執行 `Get-RetentionCompliancePolicy`。
 
-![PowerShell 中保留原則的清單](media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+![PowerShell 中保留原則的清單](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
 第三，若要在保留原則上放置保留鎖定，請執行 `Set-RetentionCompliancePolicy` 時將 `RestrictiveRetention` 參數設為 True。 例如：
 
 `Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
 
-![PowerShell 中的 RestrictiveRetention 參數](media/retention-policy-preservation-lock-restrictiveretention.PNG)
+![PowerShell 中的 RestrictiveRetention 參數](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
 
 執行 Cmdlet 之後，您會看到確認提示。請選擇 [全部同意]****。
 
-![確認您在 PowerShell 想要鎖定保留原則的提示。](media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+![確認您在 PowerShell 想要鎖定保留原則的提示。](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 保留鎖定現在放置於保留原則上。 如果您執行 `Get-RetentionCompliancePolicy`，`RestrictiveRetention` 參數會設為 true。 例如：
 
 `Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
 
-![PowerShell 中顯示所有參數的鎖定原則](media/retention-policy-preservation-lock-locked-policy.PNG)
+![PowerShell 中顯示所有參數的鎖定原則](../media/retention-policy-preservation-lock-locked-policy.PNG)
   
 ## <a name="releasing-a-retention-policy"></a>發佈保留原則
 
@@ -337,7 +337,7 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
 
 很有可能內容會套用多個保留原則，這些原則各有不同的動作 (保留、刪除或兩者) 和保留期間。哪一個優先？請放心，最低限度，由一個原則保留的內容不會被另一個原則永久刪除。
   
-![原則保留圖](media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![原則保留圖](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
 若要了解不同的保留原則如何套用至內容，請記住以下保留原則：
   

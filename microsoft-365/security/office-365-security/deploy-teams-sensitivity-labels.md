@@ -1,5 +1,7 @@
 ---
 title: 使用敏感度標籤保護小組中的檔案
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 摘要：套用敏感度標籤以保護高度機密小組中的檔案。
-ms.openlocfilehash: f52b864087d22e14bb3e9bfe1eb38d088f6f981a
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: b263aeae335b83cadb45b16d70a2a45d56f1cbd3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37925759"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083364"
 ---
 # <a name="protect-files-in-teams-with-sensitivity-labels"></a>使用敏感度標籤保護小組中的檔案
 
@@ -48,7 +50,7 @@ ms.locfileid: "37925759"
 
 以下是高度機密小組使用敏感度標籤進行檔案加密和權限授與的設定。
 
-![公開小組的基準層級保護。](../media/highly-confidential-team-dlp-sensitivity-labels.png)
+![公開小組的基準層級保護。](../../media/highly-confidential-team-dlp-sensitivity-labels.png)
 
 
 ## <a name="see-also"></a>另請參閱

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 取得 DLP 的自訂敏感性資訊類型的概觀。
-ms.openlocfilehash: a1afaeb3359ae9705909ff6c23c1f951804aa4c8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b95501c08c2ac53eed6101abfa9f4b814c49f940
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595510"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076974"
 ---
 # <a name="custom-sensitive-information-types"></a>自訂敏感性資訊類型
 
@@ -39,13 +39,13 @@ Office 365 包含可供您在組織中使用的許多內建的敏感性資訊類
 
 - **字元近似值**：主要模式與支援辨識項彼此越接近，偵測到的內容越可能是您要尋找的內容，這是合理的。您可以指定主要模式與支援辨識項之間的字元距離 (也稱為_近似值視窗_)，如下圖所示：
 
-    ![確切辨識項和近似值視窗的圖表](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+    ![確切辨識項和近似值視窗的圖表](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
 - **信賴等級**：您具有的支援辨識項越多，相符項目包含您要尋找的機密資訊的可能性就越高。您可以針對使用更多辨識項偵測到的相符項目指派更高等級的信賴。
 
   滿足條件時，模式會傳回計數和信賴等級，您可以在 DLP 原則的條件中使用。當您將會偵測機密資訊類型的條件新增至 DLP 原則時，可以編輯計數和信賴等級，如下圖所示：
 
-    ![執行個體計數和比對正確性選項](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+    ![執行個體計數和比對正確性選項](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
 ## <a name="creating-custom-sensitive-information-types"></a>建立自訂敏感性資訊類型
 

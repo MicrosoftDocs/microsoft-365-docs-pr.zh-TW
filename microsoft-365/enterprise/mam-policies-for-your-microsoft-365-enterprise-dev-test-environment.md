@@ -97,7 +97,7 @@ ms.locfileid: "42066910"
 
 瀏覽其他[行動裝置管理](m365-enterprise-test-lab-guides.md#mobile-device-management)功能及測試環境中的功能。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 企業版測試實驗室指南](m365-enterprise-test-lab-guides.md)。
   
