@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在安全性與合規性中心的圖形使用者介面中建立、修改、移除及測試 DLP 的自訂敏感性資訊類型。
-ms.openlocfilehash: 7f7c4c787bff6fa9d4c644b5640d05b9320686ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 726f21416a3e83a9c3024d810c4335ea263b3c20
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596210"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078019"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>在安全性與合規性中心建立自訂敏感性資訊類型
@@ -69,7 +69,7 @@ ms.locfileid: "41596210"
 
 1. 在安全性與合規性中心，移至 [**分類**] \> [**機密資訊類型**]，然後按一下 [**建立**]。
 
-    ![機密資訊類型及建立按鈕的位置](media/scc-cust-sens-info-type-new.png)
+    ![機密資訊類型及建立按鈕的位置](../media/scc-cust-sens-info-type-new.png)
 
 2. 在開啟的 [選擇名稱和描述]**** 頁面中，輸入下列值：
 
@@ -77,7 +77,7 @@ ms.locfileid: "41596210"
 
   - **描述**：偵測九位數 Contoso 員工編號。
 
-    ![名稱與描述頁面](media/scc-cust-sens-info-type-new-name-desc.png)
+    ![名稱與描述頁面](../media/scc-cust-sens-info-type-new-name-desc.png)
 
     完成後，按 [下一步]****。
 
@@ -101,17 +101,17 @@ ms.locfileid: "41596210"
 
     - 保留預設**字元近似值** 300。
 
-    ![比對要求頁面](media/scc-cust-sens-info-type-new-reqs.png)
+    ![比對要求頁面](../media/scc-cust-sens-info-type-new-reqs.png)
 
     完成後，按 [下一步]****。
 
 4. 在開啟的 [檢閱並完成]**** 頁面上，檢閱設定並按一下 [完成]****。
 
-    ![檢閱並完成頁面](media/scc-cust-sens-info-type-new-review.png)
+    ![檢閱並完成頁面](../media/scc-cust-sens-info-type-new-review.png)
 
 5. 下一個頁面鼓勵您藉由按一下 [是]****，測試新的自訂機密資訊類型。如需詳細資訊，請參閱[在安全性與合規性中心測試自訂機密資訊類型](#test-custom-sensitive-information-types-in-the-security--compliance-center)。如需稍後再測試規則，請按一下 [否]****。
 
-    ![測試建議頁面](media/scc-cust-sens-info-type-new-test.png)
+    ![測試建議頁面](../media/scc-cust-sens-info-type-new-test.png)
 
 ### <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 
@@ -131,7 +131,7 @@ ms.locfileid: "41596210"
 
 在安全性與合規性中心，移至 [分類]**** \> [機密資訊類型]****，選取您想要修改的自訂機密資訊類型，然後按一下 [編輯]****。
 
-  ![機密資訊類型及編輯按鈕的位置](media/scc-cust-sens-info-type-edit.png)
+  ![機密資訊類型及編輯按鈕的位置](../media/scc-cust-sens-info-type-edit.png)
 
 這裡提供與您在安全性與合規性中心建立自訂機密資訊類型時相同的選項。如需詳細資訊，請參閱[在安全性與合規性中心建立自訂機密資訊類型](#create-custom-sensitive-information-types-in-the-security--compliance-center)。
 
@@ -155,7 +155,7 @@ ms.locfileid: "41596210"
 
 2. 在開啟的飛出視窗中，按一下 [刪除]**** (或 [刪除機密資訊類型]****，如果您已選取多個的話)。
 
-    ![機密資訊類型及刪除按鈕的位置](media/scc-cust-sens-info-type-delete.png)
+    ![機密資訊類型及刪除按鈕的位置](../media/scc-cust-sens-info-type-delete.png)
 
 3. 在出現的警告訊息中，按一下 [是]****。
 
@@ -169,14 +169,14 @@ ms.locfileid: "41596210"
 
 2. 選取要測試的一或多個自訂機密資訊類型。在開啟的飛出視窗中，按一下 [測試類型]**** (或 [測試機密資訊類型]****，如果您已選取多個的話)。
 
-    ![機密資訊類型及測試按鈕的位置](media/scc-cust-sens-info-type-test.png)
+    ![機密資訊類型及測試按鈕的位置](../media/scc-cust-sens-info-type-test.png)
 
 3. 在開啟的 [上傳檔案進行測試]**** 頁面上，拖放檔案或按一下 [瀏覽]**** 並選取檔案，來上傳要測試的文件。
 
-    ![上傳檔案進行測試頁面](media/scc-cust-sens-info-type-test-upload.png)
+    ![上傳檔案進行測試頁面](../media/scc-cust-sens-info-type-test-upload.png)
 
 4. 按一下 [測試]**** 按鈕，來測試文件以在檔案中進行模式比對。
 
 5. 在 [比對結果]**** 頁面上，按一下 [完成]****。
 
-    ![比對結果](media/scc-cust-sens-info-type-test-results.png)
+    ![比對結果](../media/scc-cust-sens-info-type-test-results.png)

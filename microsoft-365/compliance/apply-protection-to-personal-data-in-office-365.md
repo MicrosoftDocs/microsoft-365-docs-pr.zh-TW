@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用資料外洩防護 (DLP) 原則來保護 Office 365 中的個人資料。
-ms.openlocfilehash: b529a6d58537c4effca3cf198dcf807a0680129d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef6907f9c6574f53dc6f3ba6e44c72eac308d825
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596060"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079741"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>將保護套用至 Office 365 中的個人資料
 
@@ -46,7 +46,7 @@ Office 365 中個人資訊的保護，包括使用資料外洩防護功能。 �
 
 如需詳細資訊，請參閱[資料外洩防護原則概觀](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)。
 
-![用於建立資料外洩防護原則的選項](Media/Apply-protection-to-personal-data-in-Office-365-image1.png)
+![用於建立資料外洩防護原則的選項](../media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
 下圖顯示用於建立 DLP 原則的選項：
 
@@ -172,7 +172,7 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 
 下圖詳述您可以套用以保護個人資料存取的額外保護。
 
-![保護個人資料存取的額外保護](Media/Apply-protection-to-personal-data-in-Office-365-image2.png)
+![保護個人資料存取的額外保護](../media/Apply-protection-to-personal-data-in-Office-365-image2.png)
 
 為了便於存取，下表會在圖例中提供相同的資訊。
 
@@ -222,7 +222,7 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 
 使用 SharePoint 中的權限，允許或限制使用者存取網站或其內容。將個別使用者或 Azure Active Directory 群組新增至預設的 SharePoint 群組。或者，建立自訂群組進行更細微的控制。
 
-![從完全控制到僅檢視的權限層級](Media/Apply-protection-to-personal-data-in-Office-365-image3.png)
+![從完全控制到僅檢視的權限層級](../media/Apply-protection-to-personal-data-in-Office-365-image3.png)
 
 此圖描繪從完全控制到僅檢視的權限等級。下表包括相同的資訊。
 
@@ -368,7 +368,7 @@ Microsoft 建議您針對存取服務的身分識別與裝置設定保護。您�
 
 下圖描述雲端服務 (SaaS、PaaS)、帳戶類型 (租用戶網域帳戶與 B2B 帳戶帳戶)，以及服務存取功能如何相關。請務必注意可與 B2B 帳戶搭配使用的功能。
 
-![雲端服務、帳戶類型和存取功能](Media/Apply-protection-to-personal-data-in-Office-365-image4.png)
+![雲端服務、帳戶類型和存取功能](../media/Apply-protection-to-personal-data-in-Office-365-image4.png)
 
 為了便於存取，本節的其餘部分描述此圖。
 

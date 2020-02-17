@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 摘要：使用各種資訊保護層級，對 SharePoint Online 小組網站套用保留標籤和資料外洩防護 (DLP) 原則。
-ms.openlocfilehash: ad333007b2efdcf577f1c31afc716c525a7abf7e
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: ab9026fa4c00038abb166677277145c8129e33e2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855372"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081740"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>使用保留標籤與 DLP 來保護 SharePoint Online 檔案
 
@@ -118,7 +118,7 @@ ms.locfileid: "41855372"
     
 以下是產生的組態。
   
-![用於四種類型 SharePoint Online 小組網站的保留標籤。](media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
+![用於四種類型 SharePoint Online 小組網站的保留標籤。](../media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
   
 ## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>適用於 SharePoint Online 網站的 DLP 原則
 
@@ -169,7 +169,7 @@ ms.locfileid: "41855372"
     
 以下是敏感性 SharePoint Online 小組網站的設定結果。
   
-![使用 [敏感性] 保留標籤之隔離 SharePoint Online 小組網站的 DLP 原則](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
+![使用 [敏感性] 保留標籤之隔離 SharePoint Online 小組網站的 DLP 原則](../media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
 接下來，使用下列步驟來設定 DLP 原則，以在使用者共用組織外部 SharePoint Online 高度機密小組網站上的文件時封鎖使用者。
   
@@ -215,7 +215,7 @@ ms.locfileid: "41855372"
     
 以下是高度機密 SharePoint Online 小組網站的設定結果。
   
-![使用 [高度機密性] 保留標籤之隔離 SharePoint Online 小組網站的 DLP 原則](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+![使用 [高度機密性] 保留標籤之隔離 SharePoint Online 小組網站的 DLP 原則](../media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
 ## <a name="next-step"></a>下一步
 

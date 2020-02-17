@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
-ms.openlocfilehash: 03af99b6e3a156b3d0e14bcadb75911253c837e3
-ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
+ms.openlocfilehash: 044801416c7db4ddec8936a496862c432a63acde
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836723"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077595"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -38,7 +38,7 @@ ms.locfileid: "41836723"
 - 更安全地處理敏感性資訊；以及
 - 能與數個 Microsoft 雲端服務搭配使用。
 
-![以 EDM 為基礎的分類](media/EDMClassification.png)
+![以 EDM 為基礎的分類](../media/EDMClassification.png)
 
 以 EDM 為基礎的分類可讓您建立自訂敏感性資訊類型，其參考敏感性資訊資料庫中的確切值。 資料庫可以每日或每週重新整理，而且可以包含最多 1 千萬列資料。 因此，隨著員工、病患或客戶來來去去，以及記錄變更，您的自訂敏感性資訊類型會維持最新且適用。 同時，您可以對原則使用以 EDM 為基礎的分類，例如 [資料外洩防護原則](data-loss-prevention-policies.md) (DLP) 或  [Microsoft Cloud App Security 檔案原則](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。
 
@@ -473,7 +473,7 @@ Exchange Online 用 Office 365 DLP (電子郵件)、商務用 OneDrive (檔案)�
 
 9. 在 [名稱] **** 區段中，指定規則的名稱和描述。
 
-10. 在 [條件] **** 區段的 [+ 新增條件] **** 清單中，選擇 [內容包含敏感性類型] ****。<br/>![內容包含敏感性資訊類型](media/edm-dlp-newrule-conditions.png)<br/>
+10. 在 [條件] **** 區段的 [+ 新增條件] **** 清單中，選擇 [內容包含敏感性類型] ****。<br/>![內容包含敏感性資訊類型](../media/edm-dlp-newrule-conditions.png)<br/>
 
 11. 搜尋您設定規則套件時建立的敏感性資訊類型，然後選擇 [+ 新增] ****。  
     接著，選擇 [完成] ****。

@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 活動總管透過讓您查看和篩選使用者對套用標籤的內容執行的操作，來完善資料分類功能。
-ms.openlocfilehash: 8af23cac590eb226890979719f938b8e79099bb3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f80ce94433028b2434d442a364c336060b730d94
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595470"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076756"
 ---
 # <a name="view-activity-on-your-labeled-content-preview"></a>檢視套用標籤的內容上的活動 (預覽)
 
 資料分類概觀和內容總管索引標籤可讓您查看已探索和套用標籤的內容，以及內容的位置。 活動總管透過讓您監視對已套用標籤的內容執行的工作，從而完善此功能套件。 活動總管提供歷程記錄的檢視。
 
-![預留位置螢幕擷取畫面概觀活動總管](media/data-classification-activity-explorer-1.png)
+![預留位置螢幕擷取畫面概觀活動總管](../media/data-classification-activity-explorer-1.png)
 
 您可以依照下列方式篩選資料：
 
@@ -71,11 +71,11 @@ Microsoft 365 會監視和報告 SharePoint Online、OneDrive 和端點中的 12
 
 設定篩選條件後，您可以：
 
-- 將游標暫留在橫條圖的某一段上方，以查看該類別中的項目數量 ![活動總管將游標暫留在](media/data-classification-activity-explorer-hover-over-2.png)
+- 將游標暫留在橫條圖的某一段上方，以查看該類別中的項目數量 ![活動總管將游標暫留在](../media/data-classification-activity-explorer-hover-over-2.png)
 - 匯出資料
 - 從清單中選取任何指定的項目，並在飛出中檢視動作的詳細資料
 
-![活動總管詳細資料飛出](media/data-classification-activity-explorer-fly-out-3.png)
+![活動總管詳細資料飛出](../media/data-classification-activity-explorer-fly-out-3.png)
 
 ## <a name="see-also"></a>另請參閱
 - [敏感性標籤](sensitivity-labels.md)

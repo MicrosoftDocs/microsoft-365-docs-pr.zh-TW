@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 88dc03613a6a2b77ed9cb440d8c8d80c7cfbae2b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bcc1634398e86e0f4569d5d5fb0c5bc40ce8fc68
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596490"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073322"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Microsoft 支援服務與專業服務資料主體要求
 
@@ -132,7 +132,7 @@ Microsoft 會如何回應客戶員工或其他資料主體的要求來執行其�
 
 若要找出特定的約定，客戶需要搜尋其約定。對於頂級客戶，客戶的合約服務管理員 (“CSM”) 可看見在該合約排程下建立的所有支援要求 (SR)。對於非頂級客戶，則提供對等的支援約定入口網站，例如透過線上服務支援區域。
 
-![在 SMC 中搜尋](media/Prof-Serv-DSR-Doc-Final_image3.png)CSM 可以進到入口網站 Support.Microsoft.Com ([https://support.microsoft.com/\<local語言代碼\>/頂級](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) ("SMC") 並選取及檢閱支援要求。 (請注意：在 URL 中請替代為您的當地語言代碼)。
+![在 SMC 中搜尋](../media/Prof-Serv-DSR-Doc-Final_image3.png)CSM 可以進到入口網站 Support.Microsoft.Com ([https://support.microsoft.com/\<local語言代碼\>/頂級](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) ("SMC") 並選取及檢閱支援要求。 (請注意：在 URL 中請替代為您的當地語言代碼)。
 
 >[!IMPORTANT]
 >除了 SMC 中的案例歷程記錄，客戶也可擁有在支援約定期間由 Microsoft 收集 (或經客戶同意，從線上服務移除) 的使用者個人資料檔案。 例子包括客戶 exchange 信箱、Azure VM 或資料庫的複本。 此個人資料可能或不一定會在特定約定的案例歷程記錄 (亦即工單) 中述及。 若要檢閱該資料，客戶連絡人必須是特定的驗證 (透過 AAD 或 MSA) 支援要求連絡人，其已在 Microsoft 支援服務資料傳輸和管理工具 (DTM) 中收到工作區 URL。 客戶連絡人可存取檔案，但無法進行全域檢視，且 SMC 不會指出檔案是否存在。

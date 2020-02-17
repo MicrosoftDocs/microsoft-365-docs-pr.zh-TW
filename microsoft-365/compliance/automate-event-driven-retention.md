@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本主題說明如何使用 Microsoft 365 REST API 透過事件進行自動化保留，設定您的商務程序流程。
-ms.openlocfilehash: 46276e1a40df8c5491d569337a683666984be23a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 692671ca5e7d956cb168ac0de2e409e7023cfd04
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596320"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079067"
 ---
 # <a name="automate-event-based-retention"></a>自動化事件型保留
 
@@ -121,13 +121,13 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 
 下圖顯示多個標籤與單一事件相關聯的情況。 在圖中，員工薪資補償標籤下的所有檔案與員工福利標籤下的所有檔案同時與單一事件相關聯，這個單一事件是員工離開組織。 這些檔案各自有不同的保留計時器。 因此，當員工離開組織時，在每一個標籤內的檔案會開始經歷不同的保留期間。 若要針對每一位員工的每一種檔案類型或標籤觸發所有不同的保留計時器，這是一項非常具有挑戰性的任務。 請想像一下為多位員工執行這項任務的情形。
 
-![事件類型、事件和標籤的圖表](media/automate-event-driven-retention-event-diagram-employee-leaving.png)
+![事件類型、事件和標籤的圖表](../media/automate-event-driven-retention-event-diagram-employee-leaving.png)
 
 因此，以自動化程序針對多位員工觸發不同的保留計時器不僅節省時間、減少錯誤，而且非常有效率。
 
 **針對這個案例設定自動化事件型保留：**
 
-![員工離開組織案例的角色和動作圖表](media/automate-event-driven-retention-employee-termination-diagram.png)
+![員工離開組織案例的角色和動作圖表](../media/automate-event-driven-retention-employee-termination-diagram.png)
 
   - 系統管理員在文件組建立員工資料夾，例如李莉華、王立民。
 
@@ -151,9 +151,9 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 
 步驟 1- 建立流程以使用 Microsoft 365 REST API 建立事件
 
-![使用 Flow 建立事件](media/automate-event-driven-retention-flow-1.png)
+![使用 Flow 建立事件](../media/automate-event-driven-retention-flow-1.png)
 
-![使用流程呼叫 REST API](media/automate-event-driven-retention-flow-2.png)
+![使用流程呼叫 REST API](../media/automate-event-driven-retention-flow-2.png)
 
 ##### <a name="create-an-event"></a>建立事件
 
@@ -423,7 +423,7 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 
 **針對這個案例設定自動化事件型保留：**
 
-![合約到期案例的角色和工作圖表](media/automate-event-driven-retention-contract-expiration.png)
+![合約到期案例的角色和工作圖表](../media/automate-event-driven-retention-contract-expiration.png)
 
   - 管理員針對每一種合約類型使用各種資料夾建立 SharePoint 文件庫。
 
@@ -451,7 +451,7 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 
 **針對這個案例設定自動化事件型保留：**
 
-![產品生命週期案例的角色和工作圖表](media/automate-event-driven-retention-product-lifecycle-expiration.png)
+![產品生命週期案例的角色和工作圖表](../media/automate-event-driven-retention-product-lifecycle-expiration.png)
 
   - 管理員在文件組建立產品資料夾，例如產品 1、產品 2 等。
 

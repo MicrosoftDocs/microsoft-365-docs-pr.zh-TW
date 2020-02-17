@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: d54867ad5a469fb429d3edbe012aab9288d76e0f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 53cf720694a52ea18e73a49817418abb489d8c72
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594342"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073409"
 ---
 # <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Azure 資料主體要求
 
@@ -95,15 +95,15 @@ Microsoft 透過 Azure 入口網站，提供了存取、刪除及匯出特定客
 
 2. 選取 [Azure Active Directory]****。
 
-     ![選取所有服務](media/gdpr-azure-dsr-azure-portal.png)
+     ![選取所有服務](../media/gdpr-azure-dsr-azure-portal.png)
 
 3. 選取 [使用者]****。
 
-     ![選取使用者](media/gdpr-azure-dsr-azure-all-users.png)
+     ![選取使用者](../media/gdpr-azure-dsr-azure-all-users.png)
 
 4. 在 [所有使用者]**** 刀鋒視窗中，從清單中選取使用者；然後在所選使用者的刀鋒視窗中，選取 [設定檔]**** 以檢視可能包含個人資料的使用者設定檔資訊。
 
-    ![選取設定檔](media/gdpr-azure-dsr-azure-user-profile.png)
+    ![選取設定檔](../media/gdpr-azure-dsr-azure-user-profile.png)
 
 5. 若您需要新增或變更使用者設定檔資訊，可以在命令列中選取 [編輯]****，然後在變更之後選取 [儲存]****。
 
@@ -143,19 +143,19 @@ Microsoft 提供直接透過既有的應用程式開發介面 (API) 或特定服
 
 2. 選取 [Azure Active Directory]****。
 
-    ![選取所有服務](media/gdpr-azure-dsr-azure-portal.png)
+    ![選取所有服務](../media/gdpr-azure-dsr-azure-portal.png)
 
 3. 選取 [使用者]****。
 
-    ![選取使用者](media/gdpr-azure-dsr-azure-all-users.png)
+    ![選取使用者](../media/gdpr-azure-dsr-azure-all-users.png)
 
 4. 在 [所有使用者]**** 刀鋒視窗中，從清單中選取使用者；然後在所選使用者的刀鋒視窗中，選取 [設定檔]**** 以檢視需要更正或更新的使用者設定檔資訊。
 
-    ![選取設定檔](media/gdpr-azure-dsr-azure-user-profile.png)
+    ![選取設定檔](../media/gdpr-azure-dsr-azure-user-profile.png)
 
 5. 在命令列中選取 [編輯]**** 更正或更新包括公司資訊等使用者設定檔資訊，然後在變更之後選取 [儲存] ****。
 
-    ![選取設定檔](media/gdpr-azure-dsr-azure-edit-user-profile.png)
+    ![選取設定檔](../media/gdpr-azure-dsr-azure-edit-user-profile.png)
 
 #### <a name="service-specific-interfaces"></a>服務特定介面
 
@@ -192,26 +192,26 @@ Microsoft 提供直接透過既有的應用程式開發介面 (API) 或特定服
 
 2. 選取 [Azure Active Directory]****。
 
-    ![選取所有服務](media/gdpr-azure-dsr-azure-portal.png)
+    ![選取所有服務](../media/gdpr-azure-dsr-azure-portal.png)
 
 3. 選取 [使用者]****。
 
-    ![選取使用者](media/gdpr-azure-dsr-azure-all-users.png)
+    ![選取使用者](../media/gdpr-azure-dsr-azure-all-users.png)
 
 4. 勾選想要刪除的使用者旁邊的核取方塊、選取 [刪除使用者]****，然後選取 [是]****。
 
-    ![使用者管理](media/gdpr-azure-dsr-azure-selected-user.png)
+    ![使用者管理](../media/gdpr-azure-dsr-azure-selected-user.png)
 
 5. 在 [所有使用者] ****  刀鋒視窗中，選取 [刪除的使用者] ****。
 
-    ![檢視使用者設定檔](media/gdpr-azure-dsr-azure-deleted-user.png)
+    ![檢視使用者設定檔](../media/gdpr-azure-dsr-azure-deleted-user.png)
 
 4. 再次選取相同的使用者、在命令列中選取 [永久刪除] ****，然後在詢問您是否確定的方塊中選取 [是] **** 。
 
 >[!IMPORTANT]  
 >請注意，按一下 [是]**** 代表您會永久刪除使用者和所有相關的資料，以及系統所產生的記錄檔，而且無可挽回。若您不慎誤刪，就必須手動將使用者新增回租用戶中。相關聯的資料和系統所產生的記錄檔則無法復原。
 
-   ![檢視使用者工作資訊](media/gdpr-azure-dsr-azure-permanently-deleted-user.png)
+   ![檢視使用者工作資訊](../media/gdpr-azure-dsr-azure-permanently-deleted-user.png)
 
 #### <a name="service-specific-interfaces"></a>服務特定介面
 
@@ -287,15 +287,15 @@ Microsoft 提供直接透過既有的應用程式開發介面 (API) 或特定服
 
 1. 請開啟 Azure 入口網站，選取 [所有服務]****、在篩選中輸入 [原則]**，然後選取 [原則]****。
 
-     ![所有服務篩選 ](media/gdpr-azure-dsr-azure-policy.png)
+     ![所有服務篩選 ](../media/gdpr-azure-dsr-azure-policy.png)
 
 2. 請在 [原則]**** 刀鋒視窗上，依次選取 [使用者隱私權]****、[管理使用者要求]****、[新增匯出要求]****。
 
-    ![新增匯出要求 ](media/gdpr-azure-dsr-azure-add-export-request.png)
+    ![新增匯出要求 ](../media/gdpr-azure-dsr-azure-add-export-request.png)
 
 3. 完成**匯出資料要求**：
 
-    ![新的匯出資料要求](media/gdpr-azure-dsr-azure-export-data-request.png)
+    ![新的匯出資料要求](../media/gdpr-azure-dsr-azure-export-data-request.png)
 
 - **使用者。** 請輸入要求匯出的 Azure Active Directory 使用者的電子郵件地址。
 - **訂用帳戶。** 請選取用於報告資源使用量和計算服務費用的帳戶。這也是您 Azure 儲存體帳戶的所在位置。

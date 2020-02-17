@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: ff4a236a56fc2e8259204e7a0202d67176d44964
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b2b78c6b028dc34040019f5087f1f8773eed768d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596050"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079680"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -39,7 +39,7 @@ ms.locfileid: "41596050"
 
 當您在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或是 Office 365 安全性與合規性中心底下的 [分類]**** >  [敏感度標籤]**** 建立敏感度標籤時，可以使用自動標籤設定。
 
-![敏感度標籤的自動標籤選項](media/Sensitivity-labels-Auto-labeling-options.png)
+![敏感度標籤的自動標籤選項](../media/Sensitivity-labels-Auto-labeling-options.png)
 
 ## <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>根據條件自動套用敏感度標籤
 
@@ -47,7 +47,7 @@ ms.locfileid: "41596050"
 
 您可以選擇在內容包含特定類型的敏感性資訊時，自動將敏感度標籤套用到該內容。當您設定自動套用敏感度標籤時，您會看到建立資料外洩防護 (DLP) 原則時的同一份敏感性資訊類型清單。因此，舉例來說，您可以自動將高度機密性標籤套用到包含客戶個人識別資訊 (PII) 的任何內容，例如信用卡號碼或社會安全號碼。
 
-![執行個體計數和比對精確度的選項](media/Sensitivity-labels-instance-count-match-accuracy.png)
+![執行個體計數和比對精確度的選項](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
 選擇敏感性資訊類型之後，您可以變更執行個體計數或精確度來精簡條件。 如需詳細資訊，請參閱[調整規則，讓規則更容易或更難相符](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
 
@@ -55,7 +55,7 @@ ms.locfileid: "41596050"
 
 自動套用敏感度標籤時，使用者會在其 Office App 中看到通知。使用者可以選擇 [確定]**** 來關閉通知。
 
-![文件已自動套用標籤的通知](media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
+![文件已自動套用標籤的通知](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
 ## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>建議使用者套用敏感度標籤
 
@@ -63,11 +63,11 @@ ms.locfileid: "41596050"
 
 Word、PowerPoint 和 Excel 可支援建議標籤功能 (但必須安裝 Azure 資訊保護統一標籤用戶端)。
 
-![向使用者建議敏感度標籤的選項](media/Sensitivity-labels-Recommended-label-option.png)
+![向使用者建議敏感度標籤的選項](../media/Sensitivity-labels-Recommended-label-option.png)
 
 以下是設定條件以將標籤套用為建議動作並顯示自訂原則提示的提示範例。您可以選擇要在原則提示中顯示的文字內容。
 
-![套用建議標籤的提示](media/Sensitivity-label-Prompt-for-required-label.png)
+![套用建議標籤的提示](../media/Sensitivity-label-Prompt-for-required-label.png)
 
 ## <a name="how-automatic-or-recommended-labels-are-applied"></a>如何套用自動或建議標籤
 

@@ -1,5 +1,7 @@
 ---
 title: Office 365 中的電子郵件加密
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 ms.collection:
 - M365-security-compliance
 description: 比較 Office 365 中的加密選項，包括 Office 郵件加密 (OME)、S/MIME、資訊版權管理 (IRM)，並了解傳輸層安全性 (TLS)。
-ms.openlocfilehash: 70c22f9627c804c201cb23b7b3c38a4f6a349ece
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f8baeba9109373c31ac33020a6a37848c67817f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38708053"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074759"
 ---
 # <a name="email-encryption-in-office-365"></a>Office 365 中的電子郵件加密
 
@@ -56,7 +58,7 @@ Office 365 提供多個加密選項，可協助您符合電子郵件安全性的
   
 ## <a name="comparing-email-encryption-options-available-in-office-365"></a>比較 Office 365 中提供的電子郵件加密選項
 
-||![OME 的說明概念圖](media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)|![IRM 的說明概念圖](media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)|![SMIME 的說明概念圖](media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)|
+||![OME 的說明概念圖](../media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)|![IRM 的說明概念圖](../media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)|![SMIME 的說明概念圖](../media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)|
 |:-----|:-----|:-----|:-----|
 |這是什麼？|Office 365 郵件加密 (OME) 是內建於 Azure 版權管理 (Azure RMS) 的服務，可讓您將加密的電子郵件傳送給組織內部或外部的人，無論目的地電子郵件地址為何 (Gmail、Yahoo! Mail、Outlook.com 等)。 <br/> 身為系統管理員，您可以設定用以定義加密條件的傳輸規則。 當使用者傳送的郵件符合某規則時，會自動套用加密。 <br/> 若要檢視加密的郵件，收件者可以取得單次密碼、登入 Microsoft 帳戶、或登入工作或學校相關聯的 Office 365 帳戶。 收件者也可以傳送加密的回覆。 他們不需要 Office 365 訂閱，即可檢視加密的郵件或傳送加密的回覆。|IRM 是加密解決方案，也可對電子郵件套用使用限制。 這有助於防止敏感資訊被未經授權的人員列印、轉寄或複製。 <br/> Office 365 中的 IRM 功能使用 Azure 版權管理 (Azure RMS)。|S/MIME 是一種憑證型加密解決方案，可讓您對郵件進行加密及數位簽署。 郵件加密有助於確保只有預定的收件者可以開啟並閱讀郵件。 數位簽章可協助收件者驗證寄件者的身分。 <br/> 數位簽章和郵件加密之所以可行，皆因為使用了唯一數位憑證，此憑證包含用於驗證數位簽章及加密或解密郵件的金鑰。 <br/> 若要使用 S/MIME，您必須記錄每位收件者的公開金鑰。 收件者必須維護自己的私密金鑰，並妥善保護。 如果收件者的私密金鑰受到危害，收件者必須取得新的私密金鑰，並轉發公開金鑰給所有可能的寄件者。|
 |能做什麼？|OME： <br/> 將傳送給內部或外部收件者的郵件加密。 <br/>  可讓使用者將加密的郵件傳送至任何電子郵件地址，包括 Outlook.com、Yahoo! Mail 和 Gmail。 <br/>  可讓身為系統管理員的您自訂電子郵件檢視入口網站，以反映您組織的品牌。 <br/> Microsoft 安全地管理及儲存金鑰，因此您不需要勞心。 <br/> 只要加密的郵件可以在瀏覽器中開啟 (以 HTML 附件傳送)，就不需要任何特殊的用戶端軟體。|IRM： <br/> 利用加密和使用限制為電子郵件和附件提供線上和離線保護。 <br/> 可讓身為系統管理員的您能夠設定傳輸規則或 Outlook 保護規則，以自動將 IRM 套用至選取的郵件。 <br/> 可讓使用者以手動方式在 Outlook 或 Outlook 網頁版 (先前稱為 Outlook Web App) 中套用範本。|S/MIME 以數位簽章解決寄件者驗證，以加密解決郵件機密性。|
