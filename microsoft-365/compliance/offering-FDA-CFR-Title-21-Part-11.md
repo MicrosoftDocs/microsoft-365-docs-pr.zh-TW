@@ -55,7 +55,7 @@ Microsoft 企業版雲端服務與一般獨立第三方 SOC 1 類型 2 和 SOC 2
 - [Dynamics 365 和 Dynamics 365 美國政府](https://aka.ms/d365-compliance-list)
 - Office 365 和 Office 365 美國政府
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 ISO/IEC 27001 和 ISO/IEC 27018 標準為 SOC 1 和 SOC 2 Type 2 稽核報告足以 Microsoft 已實作，且可能有幫助客戶 FDA CFR 標題 21 部分 11 發表的控制項的有效性。
 

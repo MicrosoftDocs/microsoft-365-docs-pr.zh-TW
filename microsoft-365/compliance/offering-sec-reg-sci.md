@@ -47,7 +47,7 @@ SCI 規則套用至 SCI 實體，其中包含此類 self-regulatory 組織 (SROs
 
 - [Azure](https://aka.ms/AzureCompliance)
 
-## <a name="how-to-implement"></a>實作方式
+## <a name="how-to-implement"></a>實作方法
 
 - [規定 SCI 實作指南](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=a69ce0c1-7b7e-44e9-9143-867241e6b2f9&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_FAQ_and_White_Papers)： 對規定地圖 Azure 功能以及詳細資料合規性的共用的責任。
 - [設計可靠的 Azure 應用程式](https://docs.microsoft.com/azure/architecture/resiliency/)： 如何將每個步驟的 Azure 應用程式的設計建置可靠性的簡要概觀。
