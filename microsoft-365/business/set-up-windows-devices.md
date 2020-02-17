@@ -1,5 +1,7 @@
 ---
 title: 為 Microsoft 365 商務版使用者設定 Windows 裝置
+f1.keywords:
+- CSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: '了解如何為 Microsoft 365 商務版使用者執行 Windows 10 專業版的 Windows 裝置上設定。 '
-ms.openlocfilehash: 1e160d624ce5150a1fb74899949aca824589d908
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 427e1c25b5c6ad52ab280502133a0e2808bb48b1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831336"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42090624"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>為 Microsoft 365 商務版使用者設定 Windows 裝置
 
@@ -45,7 +47,7 @@ ms.locfileid: "39831336"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 
-如果您找到這段影片很有幫助，請參閱[完成小型企業版和 Microsoft 365 的新手訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>將 Windows 10 裝置加入到貴組織的 Azure AD
 
@@ -57,7 +59,7 @@ ms.locfileid: "39831336"
   
 1. 移到 Windows 10 裝置設定，直到到達**您要如何設定？** ] 頁面。 
     
-    ![On the How would you like to set up page, choose Set up for an organization](media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
+    ![On the How would you like to set up page, choose Set up for an organization](../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
   
 2. 在這裡，選擇 [**為組織設定**，然後輸入您的使用者名稱和密碼，Microsoft 365 商務版。 
     
@@ -71,31 +73,31 @@ ms.locfileid: "39831336"
   
 1. In your user's Windows PC, that is running Windows 10 Pro, version 1703 (Creators Update) (see [pre-requisites](pre-requisites-for-data-protection.md)), click the Windows logo, and then the Settings icon.
   
-   ![In the Start menu, click Windows Settings icon](media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
+   ![In the Start menu, click Windows Settings icon](../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
   
 2. 在 [**設定**] 中，移至 [**帳戶**。
   
-   ![In Windows Settings, go to Accounts](media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
+   ![In Windows Settings, go to Accounts](../media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
   
 3. 在**您的資訊]** 頁面上，按一下 [**存取公司或學校** \> **連線**。
   
-   ![Choose Connect under Access work or school](media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
+   ![Choose Connect under Access work or school](../media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
   
 4. 在 [**設定公司或學校帳戶**] 對話方塊中，[**其他動作**] 底下選擇 [**加入至 Azure Active Directory 此裝置**。
   
-   ![Click Join this device to Azure Active Directory](media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
+   ![Click Join this device to Azure Active Directory](../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
 5. 在 [**讓我們協助您登入**] 頁面上，輸入您的公司或學校帳戶\>**下一步**。
   
    在 [**輸入密碼**] 頁面上，輸入您的密碼\>**登入**。
   
-   ![Enter your work or school email on the Let's get you signed in page](media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
+   ![Enter your work or school email on the Let's get you signed in page](../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
 6. 在**確定這是您的組織**] 頁面上，確認資訊正確，然後按一下 [**加入**。
   
    在**一切就緒 ！** ] 頁面上，按一下 [**完成**]。
   
-   ![On the Make sure this is your organization screen, click Join](media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
+   ![On the Make sure this is your organization screen, click Join](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
 如果您將檔案上傳至商務用 OneDrive，請將檔案同步回原處。 如果您使用協力廠商工具移轉個人資料和檔案時，也將這些內容同步到新的設定檔。
   
@@ -107,7 +109,7 @@ ms.locfileid: "39831336"
   
 若要開始使用 Microsoft 365 商務版帳戶，請移至 Windows [**開始**] 按鈕，以滑鼠右鍵按一下您目前的帳戶圖片]，然後**切換帳戶**。 使用您的組織電子郵件和密碼登入。
   
-![Click Info button to view synchronization status](media/818f7043-adbf-402a-844a-59d50034911d.png)
+![Click Info button to view synchronization status](../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
 ## <a name="verify-the-device-is-upgraded-to-windows-10-business"></a>驗證裝置已升級到 Windows 10 商務版
 
@@ -117,7 +119,7 @@ ms.locfileid: "39831336"
     
 2. 確認**版本**] 顯示**Windows 10 商務版**。
     
-    ![Verify that Windows edition is Windows 10 Business.](media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
+    ![Verify that Windows edition is Windows 10 Business.](../media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
   
 ## <a name="next-steps"></a>後續步驟
 
@@ -125,4 +127,4 @@ ms.locfileid: "39831336"
   
 ## <a name="see-also"></a>另請參閱
 
-[Microsoft 365 商務版開發人員訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商務版訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

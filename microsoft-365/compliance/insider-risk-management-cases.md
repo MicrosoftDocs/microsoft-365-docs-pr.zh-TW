@@ -1,7 +1,7 @@
 ---
 title: 測試人員風險管理的情況下 （預覽）
 description: 了解 Microsoft 365 中的測試人員風險管理案例
-keywords: Microsoft 365，測試人員風險管理、 風險管理、 合規性
+keywords: Microsoft 365, 測試人員風險管理, 風險管理, 合規性
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d87531d7a664ca359f7cbe6c05f26f574c44f833
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 02f665f966b929ac8a83acfcdf5be6a5818a64d3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590674"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072838"
 ---
 # <a name="insider-risk-management-cases-preview"></a>測試人員風險管理的情況下 （預覽）
 
@@ -41,7 +41,7 @@ Case 佇列會列出您的組織，除了下列案例屬性的目前狀態的所
 - **上次更新**： 時間後已過已新增的情況下，請注意，或變更大小寫的狀態。
 - **上次更新**： 測試人員風險管理分析師 」 或 「 上次更新這種情況的調查的名稱。
 
-![測試人員風險管理的情況下儀表板](media/insider-risk-cases-dashboard.png)
+![測試人員風險管理的情況下儀表板](../media/insider-risk-cases-dashboard.png)
 
 使用**搜尋**控制，以搜尋特定的文字的大小寫名稱及使用案例篩選來排序的情況下所設定的下列屬性：
 
@@ -67,7 +67,7 @@ Case 佇列會列出您的組織，除了下列案例屬性的目前狀態的所
 - **確認提醒**： 確認案例之使用者的警示的清單。
 - **風險的內容**： 清單中的內容，依內容來源和類型。 例如，對於 SharePoint Online 中的案例警示內容，您可能會看到資料夾或列出與案例中警示的風險活動相關聯的檔案名稱。
 
-![測試人員風險管理案例詳細資料](media/insider-risk-case-details.png)
+![測試人員風險管理案例詳細資料](../media/insider-risk-case-details.png)
 
 ### <a name="alerts"></a>警示
 
@@ -75,7 +75,7 @@ Case 佇列會列出您的組織，除了下列案例屬性的目前狀態的所
 
 - 狀態
 - 嚴重性
-- 偵測到的時間
+- 偵測時間
 
 從佇列，以顯示 [**警示的詳細資料**] 頁面上，選取 [警示。
 
@@ -89,7 +89,7 @@ Case 佇列會列出您的組織，除了下列案例屬性的目前狀態的所
 
 **使用者活動**] 索引標籤可以是下列其中一個最強大的工具，供內部風險分析和調查的情況下，測試人員風險管理解決方案中。 此索引標籤的結構化若要啟用的情況下，包括所有警示，所有警示詳細資料，使用者的目前風險分數歷史時間表控制項採取有效行動包含在這種情況的風險與案例中，快速檢閱。
 
-![測試人員風險管理使用者活動](media/insider-risk-user-activities.png)
+![測試人員風險管理使用者活動](../media/insider-risk-user-activities.png)
 
 1. **日期和視窗時間篩選**： 根據預設，在 [使用者] 活動圖表中顯示提醒的情況下確認過去六個月。 您可以輕鬆地篩選與任一滑動軸控制措施於兩端圖表] 視窗中，或是藉由定義特定的開始和結束日期圖表篩選控制項中的 [圖表] 檢視。
 2. **風險警示活動] 和 [詳細資料**： 風險的活動視覺上會顯示為 [使用者] 活動圖表中的彩色泡泡圖。 泡泡圖會建立不同類別的風險，且類別的風險活動數目成正比泡泡大小。 選取 [顯示詳細資料針對每個風險的活動泡泡圖]。 詳細資料包括：
@@ -107,7 +107,7 @@ Case 佇列會列出您的組織，除了下列案例屬性的目前狀態的所
 
 內容瀏覽器是功能強大的工具與基本和進階搜尋和篩選功能。 若要深入了解使用內容的檔案總管]，請參閱[測試人員風險管理內容檔案總管]](insider-risk-management-content-explorer.md)。
 
-![測試人員風險管理案例內容總管](media/insider-risk-content-explorer.png)
+![測試人員風險管理案例內容總管](../media/insider-risk-content-explorer.png)
 
 ### <a name="case-notes"></a>案例的附註
 

@@ -10,16 +10,24 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 9a5d163d14dda6aed50a39a27ae9a03ffbed526c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5c021654c99faf3104766dc05fe466ce9537d656
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596580"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42091356"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 受管理電腦文件的變更歷程記錄
 
 本主題將列出[Microsoft 受管理電腦文件](index.yml)中的最新及更新主題。 「 更新 」 主題是指可有鎖材料的新增項目或更正-次要修正校正的錯字，樣式，例如，格式問題未列出。 您總是可以檢視 （包括任何變更的詳細資料） 的特定認可的歷程記錄造訪[GitHub 上的儲存機制](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)。
+
+## <a name="january-2020"></a>2020 年 1 月
+新的或變更主題 | 描述
+--- | ---
+[讓您的使用者準備好使用裝置](get-started/get-started-devices.md)| 更新的主題
+[在系統管理入口網站中新增和驗證系統管理員連絡人](get-started/add-admin-contacts.md) | 更新的主題
+[裝置設定](service-description/device-policies.md) | 更新的主題
+
 
 ## <a name="december-2019"></a>2019 年 12 月
 新的或變更主題 | 描述
