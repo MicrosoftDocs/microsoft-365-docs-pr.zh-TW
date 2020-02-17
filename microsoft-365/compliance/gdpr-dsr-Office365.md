@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 4e5ee52f9158df64e80f057adcfbf49c45f6dc31
-ms.sourcegitcommit: d4941dd0b598fb315e2c87083246ec3b26bbc032
+ms.openlocfilehash: c7b945ea464cbb18ae19eaa9f9e4a8df0313b0c6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41779028"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073567"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Office 365 資料主體要求
 
@@ -100,14 +100,14 @@ Microsoft Office 365 服務也可在下列國家雲環境中取得：[Office 365
 
 | | |
 | :---: | :---:|
-![行事曆圖示](media/O365-DSR-Doc-Final_image3.png) <br> 行事曆 | ![SharePoint 圖示](media/o365-sharepoint-64x64.png) <br> SharePoint  |
-| ![Excel 圖示](media/o365-excel-64x64.png) <br> Excel | ![商務用 Skype 圖示](media/o365-skypeforbusiness-64x64.png) <br> 商務用 Skype |
-| ![Office Lens 圖示](media/o365-lens-64x64.png) <br> Office Lens | ![工作圖示](media/O365-DSR-Doc-Final_image8.png) <br> 工作 |
-| ![OneDrive 圖示](media/o365-OneDrive-64x64.png) <br> 商務用 OneDrive |![Teams 圖示](media/o365-teams-64x64.png) <br> Teams |
-| ![OneNote 圖示](media/o365-onenote-64x64.png) <br> OneNote| ![待辦事項圖示](media/o365-todo-64x64.png) <br> To Do |
-| ![Outlook 圖示](media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![影片圖示](media/O365-DSR-Doc-Final_image14.png) <br> 影片 |
-| ![多人圖示](media/O365-DSR-Doc-Final_image15.png) <br> 多人 | ![Visio 圖示](media/o365-visio-64x64.png) <br> Visio |
-| ![PowerPoint 圖示](media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Word 圖示](media/o365-word-64x64.png) <br> Word
+![行事曆圖示](../media/O365-DSR-Doc-Final_image3.png) <br> 行事曆 | ![SharePoint 圖示](../media/o365-sharepoint-64x64.png) <br> SharePoint  |
+| ![Excel 圖示](../media/o365-excel-64x64.png) <br> Excel | ![商務用 Skype 圖示](../media/o365-skypeforbusiness-64x64.png) <br> 商務用 Skype |
+| ![Office Lens 圖示](../media/o365-lens-64x64.png) <br> Office Lens | ![工作圖示](../media/O365-DSR-Doc-Final_image8.png) <br> 工作 |
+| ![OneDrive 圖示](../media/o365-OneDrive-64x64.png) <br> 商務用 OneDrive |![Teams 圖示](../media/o365-teams-64x64.png) <br> Teams |
+| ![OneNote 圖示](../media/o365-onenote-64x64.png) <br> OneNote| ![待辦事項圖示](../media/o365-todo-64x64.png) <br> To Do |
+| ![Outlook 圖示](../media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![影片圖示](../media/O365-DSR-Doc-Final_image14.png) <br> 影片 |
+| ![多人圖示](../media/O365-DSR-Doc-Final_image15.png) <br> 多人 | ![Visio 圖示](../media/o365-visio-64x64.png) <br> Visio |
+| ![PowerPoint 圖示](../media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Word 圖示](../media/o365-word-64x64.png) <br> Word
 ||
 
 >[!NOTE]
@@ -196,7 +196,7 @@ pilar@contoso.com AND filetype="xlxs"
 
 ***GUI***
 
-![關鍵字對話方塊](media/O365-DSR-Doc_image18.png)
+![關鍵字對話方塊](../media/O365-DSR-Doc_image18.png)
 
 ##### <a name="example-2"></a>範例 2
 
@@ -206,7 +206,7 @@ pilar@contoso.com AND filetype="xlxs"
 
 ***GUI***
 
-![關鍵字對話方塊](media/O365-DSR-Doc_image19.png)
+![關鍵字對話方塊](../media/O365-DSR-Doc_image19.png)
 
 ##### <a name="example-3"></a>範例 3
 
@@ -218,7 +218,7 @@ pilar@contoso.com AND filetype="xlxs"
 
 ***GUI***
 
-![關鍵字對話方塊](media/O365-DSR-Doc_image20.png)
+![關鍵字對話方塊](../media/O365-DSR-Doc_image20.png)
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>在內容搜尋中使用已局部編製索引的項目
 
@@ -435,13 +435,13 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 若要匯出及下載項目：
 
 1. 在「安全性與合規性中心」內開啟 [內容搜尋]。
-2. 請在搜尋彈出式頁面中，按一下 ![下載圖示](media/o365-dsr_image21.png) [更多]****，然後按一下 [匯出結果]****。 您也可以匯出報告。
+2. 請在搜尋彈出式頁面中，按一下 ![下載圖示](../media/o365-dsr_image21.png) [更多]****，然後按一下 [匯出結果]****。 您也可以匯出報告。
 3. 完成 [匯出結果]**** 彈出式頁面上的區段。請務必使用捲軸，以檢視所有匯出選項。
 4. 回到安全性與合規性中心的內容搜尋頁面，然後按一下 [匯出]**** 索引標籤。
 5. 按一下 [重新整理]**** 來更新頁面。
 6. 在 [名稱] **** 欄中，按一下您建立的匯出工作。 匯出作業的名稱是加上 **\_Export** 的內容搜尋名稱。
 7. 請在匯出彈出式頁面中，按一下 [匯出鍵]**** 下方的 [複製到剪貼簿]****。 您會使用步驟 10 中的這個按鍵來下載搜尋結果
-8. 在彈出式頁面的頂端，按一下 ![下載結果](media/o365-dsr_image21.png) [下載結果]****。
+8. 在彈出式頁面的頂端，按一下 ![下載結果](../media/o365-dsr_image21.png) [下載結果]****。
 9. 如果系統提示您安裝 **Microsoft Office 365 電子文件探索匯出工具**，請按一下[安裝]****。
 10. 在 [電子文件探索匯出工具]**** 中，於適當的方塊中貼上您在步驟 7 中所複製的匯出金鑰。
 11. 按一下 [瀏覽]**** 以指定搜尋結果檔案要下載到的位置。
@@ -630,11 +630,11 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 
 ||||
 |:-----:|:-----:|:-----:|:-----:|
-| ![Access 圖示](media/o365-access-64x64.png) <br> [Access](#access) | ![Office 圖示](media/O365-DSR-Doc_image22.png) <br> [適用於 <br>Office 365 的商務應用程式](#business-apps-for-office-365) | ![Office 圖示](media/O365-DSR-Doc_image22.png) <br> [教育版](#education)|
-| ![流程圖示](media/o365-flow-64x64.png) <br> [流程](#flow) | ![表單圖示](media/o365-forms-64x64.png) <br> [表單](#forms) |![Kaizala 圖示](media/o365-kaizala-64x64.png) <br> [Kaizala](#kaizala) |
-| ![Planner 圖示](media/o365-planner-64x64.png) <br> [Planner](#planner) |![PowerApps 圖示](media/o365-powerapps-64x64.png) <br> [Power 應用程式](#powerapps) |![Power BI 圖示](media/o365-powerbi-64x64.png) <br> [Power BI](#power-bi) |
-|![Project 圖示](media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher 圖示](media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Stream 圖示](media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway 圖示](media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard 圖示](media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
-|![Yammer 圖示](media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
+| ![Access 圖示](../media/o365-access-64x64.png) <br> [Access](#access) | ![Office 圖示](../media/O365-DSR-Doc_image22.png) <br> [適用於 <br>Office 365 的商務應用程式](#business-apps-for-office-365) | ![Office 圖示](../media/O365-DSR-Doc_image22.png) <br> [教育版](#education)|
+| ![流程圖示](../media/o365-flow-64x64.png) <br> [流程](#flow) | ![表單圖示](../media/o365-forms-64x64.png) <br> [表單](#forms) |![Kaizala 圖示](../media/o365-kaizala-64x64.png) <br> [Kaizala](#kaizala) |
+| ![Planner 圖示](../media/o365-planner-64x64.png) <br> [Planner](#planner) |![PowerApps 圖示](../media/o365-powerapps-64x64.png) <br> [Power 應用程式](#powerapps) |![Power BI 圖示](../media/o365-powerbi-64x64.png) <br> [Power BI](#power-bi) |
+|![Project 圖示](../media/o365-project-64x64.png) <br> [Project](#project-online) |![Publisher 圖示](../media/o365-publisher-64x64.png) <br> [Publisher](#publisher) |![Stream 圖示](../media/o365-stream-64x64.png) <br> [Stream](#stream) |![Sway 圖示](../media/o365-sway-64x64.png) <br> [Sway](#sway) | ![Whiteboard 圖示](../media/O365-DSR-Doc_image36.png) <br> [Whiteboard](#whiteboard) |
+|![Yammer 圖示](../media/o365-yammer-64x64.png) <br> [Yammer](#yammer) |
 |||
 
 ### <a name="access"></a>Access

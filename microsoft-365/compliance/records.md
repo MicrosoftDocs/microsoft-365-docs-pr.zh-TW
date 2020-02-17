@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 若要在您的 Office 365 或 Microsoft 組織中執行記錄管理策略，請使用保留標籤將內容宣告為記錄。 然後發佈或自動套用保留記錄標籤。
-ms.openlocfilehash: 36482ea4a6bb9fb932d72b76dff5f0647d467a9b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 87bed90f4c9bf27eb960a2018b6a641ff3e06993
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601680"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081654"
 ---
 # <a name="overview-of-records"></a>記錄概觀
 
@@ -62,7 +62,7 @@ ms.locfileid: "41601680"
 
     如果使用者嘗試刪除 SharePoint 中的記錄，您會看到無法刪除該項目的錯誤，且該項目仍會保留在文件庫中。
 
-    ![無法從 SharePoint 中刪除項目的訊息](media/d0020726-1593-4a96-b07c-89b275e75c49.png)
+    ![無法從 SharePoint 中刪除項目的訊息](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
     如果使用者嘗試刪除 OneDrive 中的記錄，該項目會移到 [文件保留庫] 中，如 [保留原則如何就地使用內容](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites)中所述。
 
@@ -76,7 +76,7 @@ ms.locfileid: "41601680"
 
 2. 在精靈的 [標籤設定]**** 頁面上，選擇設定保留標籤的選項，將內容宣告為記錄。<br/>
 
-   ![按一下 [使用標籤以將內容分類為「記錄」] 核取方塊](media/recordversioning6.png)
+   ![按一下 [使用標籤以將內容分類為「記錄」] 核取方塊](../media/recordversioning6.png)
 
 3. [發佈](labels.md#how-retention-labels-work-with-retention-label-policies)或[自動套用](labels.md#applying-a-retention-label-automatically-based-on-conditions)保留標籤到 SharePoint 網站和/或 OneDrive 帳戶。
 
@@ -91,7 +91,7 @@ ms.locfileid: "41601680"
 當您將記錄標籤套用至 SharePoint 網站或 OneDrive 帳戶上的文件後，就會顯示以下內容。
 <br/><br/>
 
-![標記為記錄之文件的詳細資料窗格](media/recordversioning7.png)
+![標記為記錄之文件的詳細資料窗格](../media/recordversioning7.png)
 
 ## <a name="record-versioning"></a>記錄版本設定
 
@@ -108,7 +108,7 @@ ms.locfileid: "41601680"
 如果任何文件的保留標籤會將項目宣告為記錄，則會自動提供記錄版本設定。 當使用者透過 [詳細資料] 窗格查看文件內容時，系統會將 [記錄狀態]**** 從 [鎖定]**** 切換為 [解除鎖定]****。 只要按一下就能在 [文件保留庫] 的 [記錄] 資料夾中建立記錄，該記錄將在保留期的剩餘時間內保留在其中。 文件解除鎖定後，任何擁有權限的使用者都可以編輯該檔案。 不過，使用者無法刪除檔案，因為這是已宣告的記錄。 完成必要的變更之後，使用者就可以將 [記錄狀態]**** 從 [已解鎖]**** 切換為 [鎖定]****，這樣文件就會再次宣告為記錄，且無法編輯。
 <br/><br/>
 
-![標記為記錄之文件的 [記錄狀態] 內容](media/recordversioning8.png)
+![標記為記錄之文件的 [記錄狀態] 內容](../media/recordversioning8.png)
 
 > [!NOTE]
 > 記錄版本設定要求每位有權編輯在 SharePoint 網站或 OneDrive 帳戶中被宣告為記錄的內容的使用者，都必須獲得 Office 365 Enterprise E5 授權。 具有唯讀存取權的使用者不需要此授權。
@@ -118,7 +118,7 @@ ms.locfileid: "41601680"
 當您將記錄標籤指派給文件之後，預設 [成員] 群組 ([參與] 權限等級) 中的任何使用者都可以解除鎖定記錄或鎖定已解鎖的記錄。
 <br/><br/>
 
-![記錄狀態顯示記錄文件已解鎖](media/recordversioning9.png)
+![記錄狀態顯示記錄文件已解鎖](../media/recordversioning9.png)
 
 當使用者解鎖記錄後，會發生下列動作：
 
@@ -139,7 +139,7 @@ ms.locfileid: "41601680"
 每次使用者解鎖記錄時，系統會將最新版本複製到 [文件保留庫] 的 [記錄] 資料夾中，而該版本則會在版本歷程記錄的 [註解]**** 欄位中包含 [記錄]**** 的值。
 <br/><br/>
 
-![在 [文件保留庫] 中顯示的記錄](media/recordversioning10.png)
+![在 [文件保留庫] 中顯示的記錄](../media/recordversioning10.png)
 
 若要查看版本歷程記錄，請選取文件庫中的文件，然後按一下項目功能表中的 [版本歷程記錄]****。
 
@@ -148,11 +148,11 @@ ms.locfileid: "41601680"
 記錄會儲存在網站集合中，頂層網站中 [文件保留庫] 的 [記錄] 資料夾。 在頂層網站的左側瀏覽中，選擇 [網站內容]**** \> [文件保留庫]****。
 <br/><br/>
 
-![文件保留庫](media/recordversioning11.png)
+![文件保留庫](../media/recordversioning11.png)
 
 <br/><br/>
 
-![[文件保留庫] 中的記錄資料夾](media/recordversioning12.png)
+![[文件保留庫] 中的記錄資料夾](../media/recordversioning12.png)
 
 只有網站集合系統管理員才能看到 [文件保留庫]。 此外，預設不存在 [文件保留庫]。 只有在網站集中第一次刪除具有保留標籤或保留原則的內容時，才會建立。
 
@@ -161,6 +161,6 @@ ms.locfileid: "41601680"
 鎖定和解鎖記錄的動作會記錄在 Office 365 稽核記錄中。 您可以搜尋 [已將記錄狀態變更為「鎖定」]**** 和 [已將記錄狀態變更為「未鎖定」]**** 的特定活動，其位於 [安全性與合規性中心]**** 的 [稽核記錄搜尋]**** 頁面上，[檔案與頁面活動] 區段的 [活動]**** 下拉式清單中。
 <br/><br/>
 
-![搜尋記錄版本設定事件的稽核記錄](media/recordversioning13.png)
+![搜尋記錄版本設定事件的稽核記錄](../media/recordversioning13.png)
 
 如需搜尋這些活動的詳細資訊，請參閱[在安全性與合規性中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)中的「檔案和頁面活動」一節。

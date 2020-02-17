@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在安全性與合規性中心建立及匯入 DLP 的自訂敏感性資訊類型。
-ms.openlocfilehash: eba95bdb0bf442e143a3f7f3b701e8f46d641655
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 05f43149485bb368f1082180031913293be6d8e7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595680"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078185"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>在安全性與合規性中心 PowerShell 中建立自訂敏感性資訊類型
 
@@ -135,7 +135,7 @@ Office 365 中的資料外洩防護 (DLP) 包含許多內建[機密資訊類型]
 
 以下是最簡單的案例。您想要您的 DLP 原則可以識別內容，其中包含貴組織的員工識別碼，該識別碼的格式為 9 位數數字。因此模式是指規則中所包含的規則運算式，可以識別 9 位數數字。任何包含 9 位數數字的內容都會滿足模式。
   
-![具有一種模式的實體圖表](media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
+![具有一種模式的實體圖表](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
   
 不過，這個模式雖然簡單，但是可以藉由將其中包含不一定是員工識別碼的任何 9 位數數字內容進行比對，識別許多誤判。
   
@@ -145,7 +145,7 @@ Office 365 中的資料外洩防護 (DLP) 包含許多內建[機密資訊類型]
   
 例如，若要增加識別內容 (包含員工識別碼) 的可能性，除了 9 位數數字之外，您可以定義同時會識別雇用日期的另一個模式，並且再定義另一個模式，同時識別雇用日期和關鍵字 (例如「員工識別碼」)。
   
-![具有多種模式的實體圖表](media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
+![具有多種模式的實體圖表](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
   
 請注意此結構的幾個重要層面：
   
@@ -162,7 +162,7 @@ Office 365 中的資料外洩防護 (DLP) 包含許多內建[機密資訊類型]
   
 接下來，為實體產生 GUID。有多種方法可以產生 GUID，但是您可以藉由在 PowerShell 中輸入 [guid]::NewGuid()，輕易地完成。稍後您也會將實體 GUID 新增至當地語系化字串區段。
   
-![XML 標記，顯示 Rules 和 Entity 元素](media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
+![XML 標記，顯示 Rules 和 Entity 元素](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
   
 ## <a name="what-pattern-do-you-want-to-match-pattern-element-idmatch-element-regex-element"></a>您要比對什麼模式？[Pattern 元素、IdMatch 元素、Regex 元素]
 
@@ -170,11 +170,11 @@ Office 365 中的資料外洩防護 (DLP) 包含許多內建[機密資訊類型]
   
 以下模式的共通點是都參考相同的規則運算式，該運算式會尋找 由空格 (\s) … (\s) 圍繞的 9 位數數字 (\d{9})。此規則運算式是由 IdMatch 元素參考，是所有模式 (尋找員工識別碼實體) 的通用需求。IdMatch 是模式嘗試比對的識別碼，例如員工識別碼或信用卡號碼或社會安全號碼。Pattern 元素必須確實只有一個 IdMatch 元素。
   
-![XML 標記，顯示會參考單一 Regex 元素的多個 Pattern 元素](media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
+![XML 標記，顯示會參考單一 Regex 元素的多個 Pattern 元素](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
   
 滿足條件時，模式會傳回計數和信賴等級，您可以在 DLP 原則的條件中使用。當您將會偵測機密資訊類型的條件新增至 DLP 原則時，可以編輯計數和信賴等級，如下所示。信賴等級 (也稱為比對正確性) 會在本主題稍後說明。
   
-![執行個體計數和比對正確性選項](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![執行個體計數和比對正確性選項](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 當您建立規則運算式時，請記住，要注意潛在問題。例如，如果您撰寫及上傳會識別太多內容的 regex，則會影響到效能。若要深入了解這些潛在問題，請參閱稍後的[要注意的潛在驗證問題](#potential-validation-issues-to-be-aware-of)一節。
   
@@ -186,7 +186,7 @@ Office 365 中的資料外洩防護 (DLP) 包含許多內建[機密資訊類型]
   
 您可以使用選擇性的 minCount 屬性，來指定針對每個 Match 元素必須找到多少個相符項目的執行個體。例如，您可以指定只有在找到關鍵字清單中的至少兩個關鍵字時，模式才會獲得滿足。
   
-![XML 標記，顯示具有 minOccurs 屬性的 Match 元素](media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
+![XML 標記，顯示具有 minOccurs 屬性的 Match 元素](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
   
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>關鍵字 [Keyword、Group 及 Term 元素、matchStyle 和 caseSensitive 屬性]
 
@@ -200,7 +200,7 @@ Office 365 中的資料外洩防護 (DLP) 包含許多內建[機密資訊類型]
     
 最後，您可以使用 Term 元素的 caseSensitive 屬性，指定內容必須完全符合關鍵字，包括小寫和大寫字母。
   
-![XML 標記，顯示參考關鍵字的 Match 元素](media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
+![XML 標記，顯示參考關鍵字的 Match 元素](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
   
 ### <a name="regular-expressions-regex-element"></a>規則運算式 [Regex 元素]
 
@@ -214,7 +214,7 @@ Office 365 中的資料外洩防護 (DLP) 包含許多內建[機密資訊類型]
   
 如需詳細資訊，請參閱 [DLP 功能所尋找的項目](what-the-dlp-functions-look-for.md)。
   
-![XML 標記，顯示參考內建函式的 Match 元素](media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
+![XML 標記，顯示參考內建函式的 Match 元素](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
   
 ## <a name="different-combinations-of-evidence-any-element-minmatches-and-maxmatches-attributes"></a>不同的辨識項組合 [Any 元素、minMatches 和 maxMatches 屬性]
 
@@ -276,15 +276,15 @@ Any 元素具有選擇性的 minMatches 和 maxMatches 屬性，您可以用來�
 
 您的機密資訊類型正在尋找代表員工識別碼的模式，該模式的一部分正在尋找像是關鍵字 (例如 "ID") 的確切辨識項。此辨識項越接近，模式就更有可能是真正的員工識別碼。您可以使用 Entity 元素的必要 patternsProximity 屬性，決定模式中的其他辨識項必須與實體有多接近。
   
-![XML 標記，顯示 patternsProximity 屬性](media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
+![XML 標記，顯示 patternsProximity 屬性](../media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
   
 對實體中的每個模式來說，patternsProximity 屬性值可以定義所有其他針對該模式所指定的 Match 與 IdMatch 位置相隔的距離 (以 Unicode 字元形式)。近似值視窗會由 IdMatch 的位置來定位，且視窗會延展到 IdMatch 的左右兩側。
   
-![近似值視窗的圖表](media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
+![近似值視窗的圖表](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
   
 以下範例說明近似值視窗會如何影響模式比對，其中員工識別碼自訂實體的 IdMatch 元素需要至少一個確切相符的關鍵字或日期。只有 ID1 相符，因為對於 ID2 和 ID3，在近似值視窗中只找到部分確切辨識項，或完全找不到。
   
-![確切辨識項和近似值視窗的圖表](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![確切辨識項和近似值視窗的圖表](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
   
 請注意，對於電子郵件，系統會將郵件內文和每個附件視為個別項目。這表示近似值視窗不會延伸超過每個項目結尾。對於每個項目 (附件或內文)，idMatch 和確切辨識項都必須位於該項目內。
   
@@ -294,7 +294,7 @@ Any 元素具有選擇性的 minMatches 和 maxMatches 屬性，您可以用來�
   
 Pattern 元素具有必要的 confidenceLevel 屬性。您可以將 confidenceLevel (介於 1 與 100 之間的整數) 的值視為實體中每個模式的唯一識別碼 - 實體中的模式必須具有與您所指派不同的信賴等級。準確的整數值無關緊要 - 只要挑選對於您的合規性小組有意義的數字即可。在您上傳自訂機密資訊類型然後建立 DLP 原則之後，可以在您建立的規則條件中參考這些信賴等級。
   
-![XML 標記，顯示具有不同 confidenceLevel 屬性值的 Pattern 元素](media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
+![XML 標記，顯示具有不同 confidenceLevel 屬性值的 Pattern 元素](../media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
   
 除了每個 Pattern 的 confidenceLevel 之外，Entity 具有 recommendedConfidence 屬性。可以將建議的 confidence 屬性視為規則的預設信賴等級。當您在 DLP 原則中建立規則時，如果您未指定要讓規則使用的信賴等級，該規則會根據實體的建議信賴等級進行比對。
   
@@ -302,11 +302,11 @@ Pattern 元素具有必要的 confidenceLevel 屬性。您可以將 confidenceLe
 
 如果您的合規性小組使用 Office 365 安全性與合規性中心，以不同的地區設定和語言建立 DLP 原則，您可以提供當地語系化版本的自訂機密資訊類型名稱和描述。當您的合規性小組以您支援的語言使用 Office 365 時，他們會在 UI 中看到當地語系化名稱。
   
-![執行個體計數和比對正確性選項](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![執行個體計數和比對正確性選項](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 Rules 元素必須包含 LocalizedStrings 元素，後者包含 Resource 元素，它會參考您的自訂實體的 GUID。接下來，每個 Resource 元素包含一或多個 Name 和 Description 元素，每個元素會使用 langcode 屬性來提供特定語言的當地語系化字串。
   
-![XML 標記，顯示 LocalizedStrings 元素的內容](media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
+![XML 標記，顯示 LocalizedStrings 元素的內容](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
   
 請注意，您只有針對自訂機密資訊類型在安全性與合規性中心 UI 中的外觀，才使用當地語系化字串。您無法使用當地語系化字串來提供不同當地語系化版本的關鍵字清單或規則運算式。
   
@@ -342,7 +342,7 @@ Version 元素也很重要。當您第一次上傳規則套件時，Office 365 �
 
 完成後，您的 RulePack 元素看起來應該像這樣。
   
-![XML 標記，顯示 RulePack 元素](media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
+![XML 標記，顯示 RulePack 元素](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
   
 ## <a name="changes-for-exchange-online"></a>針對 Exchange Online 變更
 

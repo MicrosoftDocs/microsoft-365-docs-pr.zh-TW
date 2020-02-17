@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立您的保留標籤和敏感度標籤後，您將想要查看租用戶間使用標籤的情況。 利用 Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的標籤分析，您可以快速查看最常使用的標籤，以及套用標籤的位置。
-ms.openlocfilehash: e67ab03f3fd551b5b23e5632a42248e7248c9c93
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 75eb86cb8671c81b80afc67b19d7c54830c4c401
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600580"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072270"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>利用標籤分析檢視標籤使用量
 
@@ -36,7 +36,7 @@ ms.locfileid: "41600580"
 
 您可以在 [Microsoft 365 合規性中心](https://compliance.microsoft.com/labelanalytics)或 [Microsoft 365 安全性中心](https://security.microsoft.com/labelanalytics) > 的 [分類]**** >  [標籤分析]**** 中找到標籤分析。
 
-![標籤分析頁面](media/label-analytics-page.png)
+![標籤分析頁面](../media/label-analytics-page.png)
 
 ## <a name="sensitivity-label-usage"></a>敏感度標籤使用量
 
@@ -50,7 +50,7 @@ ms.locfileid: "41600580"
 - 若要查看每個最常使用標籤的計數，請指向長條圖，然後讀取出現的工具提示。
 - 報告會顯示每個 App 套用敏感度標籤的位置 (其中會顯示每個位置的保留標籤)。
 
-![敏感度標籤使用量報告](media/sensitivity-label-usage-report.png)
+![敏感度標籤使用量報告](../media/sensitivity-label-usage-report.png)
 
 ## <a name="retention-label-usage"></a>保留標籤使用量
 
@@ -63,7 +63,7 @@ ms.locfileid: "41600580"
 - 報告會顯示每個位置套用保留標籤的位置 (其中會顯示每個 App 的敏感度標籤)。
 - 針對保留標籤，這是您的租用戶中所有時間的資料摘要，未篩選至特定日期範圍。 相反地，[標籤活動總管][](view-label-activity-for-documents.md) 只會顯示過去 30 天的資料。
 
-![保留標籤使用量報告](media/retention-label-usage-report.png)
+![保留標籤使用量報告](../media/retention-label-usage-report.png)
 
 ## <a name="view-all-content-with-a-specific-retention-label"></a>檢視具有特定保留標籤的所有內容
 
@@ -71,15 +71,15 @@ ms.locfileid: "41600580"
 
 首先，選擇報告底端的 [檢視詳細資料]****。
 
-![保留標籤使用量報告下方的 [檢視詳細資料] 選項](media/retention-label-usage-view-details.png)
+![保留標籤使用量報告下方的 [檢視詳細資料] 選項](../media/retention-label-usage-view-details.png)
 
 然後在右窗格中選擇 [保留標籤] > [探索項目]****。
 
-![右窗格中的 [探索項目] 選項](media/retention-label-usage-explore-items.png)
+![右窗格中的 [探索項目] 選項](../media/retention-label-usage-explore-items.png)
 
 針對該標籤，您可以選擇 [活動]**** 索引標籤以依位置檢視具有該標籤的項目計數。
 
-![保留標籤的 [活動] 索引標籤](media/retention-label-usage-activity-tab.png)
+![保留標籤的 [活動] 索引標籤](../media/retention-label-usage-activity-tab.png)
 
 您也可以選擇 [套用此標籤的項目]**** 索引標籤。然後可以深入了解特定位置：
 
@@ -88,7 +88,7 @@ ms.locfileid: "41600580"
 
 選擇信箱或網站集合時，您可以檢視該位置中具有該保留標籤的項目清單。
 
-![[套用此標籤的項目] 索引標籤，顯示具有該保留標籤的所有項目](media/retention-label-usage-content-explorer.png)
+![[套用此標籤的項目] 索引標籤，顯示具有該保留標籤的所有項目](../media/retention-label-usage-content-explorer.png)
 
 ## <a name="permissions"></a>權限
 

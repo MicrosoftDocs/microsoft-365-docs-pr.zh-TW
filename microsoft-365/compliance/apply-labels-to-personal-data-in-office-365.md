@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 Office 標籤做為 GDPR 保護計劃的一部分。
-ms.openlocfilehash: 7561daccb400fd5364e8c1ed948924f7975af5a7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 179b71e9fa41b5e3e602dfe78848e9d1afc4699e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596090"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079789"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>將標籤套用至 Office 365 中的個人資料
 
@@ -41,7 +41,7 @@ ms.locfileid: "41596090"
 
 您可對 Exchange Online 中的郵件套用保留標籤，而這些標籤可搭配 Office 365 資料外洩防護使用。 
 
-![Office 365 標籤和 Azure 資訊保護標籤](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
+![Office 365 標籤和 Azure 資訊保護標籤](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
 在此圖例中：
@@ -55,7 +55,7 @@ ms.locfileid: "41596090"
 
 下圖顯示如何在標籤原則、資料外洩防護原則，以及搭配雲端 App 安全性原則使用保留標籤和敏感性資訊類型。
 
-![Office 標籤和敏感資訊類型](Media/Apply-labels-to-personal-data-in-Office-365-image2.png)
+![Office 標籤和敏感資訊類型](../media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
 為了便於存取，下表會在圖例中提供相同的範例。
 
@@ -196,7 +196,7 @@ ms.locfileid: "41596090"
 
 下圖顯示如何為客戶資料標籤建立自動套用標籤。
 
-![為客戶資料建立及套用標籤](Media/Apply-labels-to-personal-data-in-Office-365-image3.png)
+![為客戶資料建立及套用標籤](../media/Apply-labels-to-personal-data-in-Office-365-image3.png)
 
 在此圖例中：
 
