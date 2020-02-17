@@ -79,7 +79,7 @@ Microsoft 365 商務版具有您需要為您的小型企業，與簡單的裝置
 | **合規性**        | | | 
 | 無限制的電子郵件封存 | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)  | ![隨附於 Microsoft 365 E3](../media/check-mark.png) | 
 | 合規性分數/合規性管理員   | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)  | ![隨附於 Microsoft 365 E3](../media/check-mark.png) | 
-| eDiscovery    | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)  | ![隨附於 Microsoft 365 E3](../media/check-mark.png) | 
+| 電子文件探索    | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)  | ![隨附於 Microsoft 365 E3](../media/check-mark.png) | 
 | 就地保留與訴訟暫止 | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)  | ![隨附於 Microsoft 365 E3](../media/check-mark.png) | 
 | 通訊記錄管理 (MRM) 保留標記和保留原則  | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)  | ![隨附於 Microsoft 365 E3](../media/check-mark.png) | 
 ||||

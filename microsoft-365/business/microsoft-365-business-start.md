@@ -105,7 +105,7 @@ Microsoft 365 商務版是最多 300 個授權。 如果您需要更多授權，
     
 - Microsoft 365 商務版系統管理員，您可以存取我們的客戶支援小組：**[商務版產品-系統管理說明連絡支援部門](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 商務版文件和資源](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
