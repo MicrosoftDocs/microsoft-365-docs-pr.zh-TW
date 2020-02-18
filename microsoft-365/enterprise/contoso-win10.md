@@ -1,6 +1,8 @@
 ---
 title: Contoso 的 Windows 10 企業版部署
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 來部署 Windows 10 企業版的就地升級。
-ms.openlocfilehash: 2080562aeb2f6359aa2a4f836de3406e4ca2439c
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 5dc58a9090dd6976d7c521f7552181a10f22f5b2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38672699"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068002"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso 的 Windows 10 企業版部署
 
@@ -49,7 +51,7 @@ ms.locfileid: "38672699"
 
   識別經常當機，因此可能需要重建或更換的裝置，以及導致裝置當機的裝置驅動程式，並建議能減少當機次數的驅動程式替代版本。 提供 Windows 資訊保護設定錯誤的通知，並傳送提示給使用者。
  
-Contoso 擁有現有的 Configuration Manager (最新分支) 基礎結構。 Configuration Manager 適合大型環境，並提供安裝、更新及設定的全面控制。 其內建功能讓部署及管理 Windows 10 企業版更方便且更有效率。
+Contoso 已擁有 Configuration Manager (最新分支) 基礎架構。Configuration Manager 可針對大型環境進行調整並提供安裝、更新及設定的全面控制，其內建功能更讓您可輕鬆且有效率地部署及管理 Windows 10 企業版。
 
 ## <a name="planning-process"></a>規劃程序
 
@@ -77,7 +79,7 @@ Contoso 同時也使用 Windows Analytics 的「升級整備狀況」解決方�
 
 這是 Contoso 就地升級和持續更新部署的基礎架構。
 
-![Contoso 的 Windows 10 企業版部署基礎架構](./media/contoso-win10/contoso-win10-fig1.png)
+![Contoso 的 Windows 10 企業版部署基礎架構](../media/contoso-win10/contoso-win10-fig1.png)
 
 此基礎架構的組成為：
 

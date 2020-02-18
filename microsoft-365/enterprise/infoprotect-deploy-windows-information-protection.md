@@ -1,5 +1,7 @@
 ---
 title: 步驟 4： 設定 Windows 資訊保護
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 365 中的 Windows 資訊保護並且進行部署。
-ms.openlocfilehash: 23c3298545a288b459fd3bb858bb7c1d1714ee75
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 655ff33c3fd1bba822937618d801db76b7881977
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627379"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067160"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>步驟 4： 設定 Windows 資訊保護
 
 *此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-![階段 6：資訊保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![階段 6：資訊保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 當更多的個人裝置用於工作時，應用程式和裝置外洩組織私密資料的風險就會增加。 例如，有員工不經意地將未來產品行銷計劃的圖片傳送到社交媒體網站，或者將包含高度機密資訊的檔案儲存到他們的公用雲端儲存區。 
 
@@ -49,6 +51,6 @@ Windows 資訊保護 (WIP) 可協助保護 Windows 10 裝置上的此類資料�
 
 |||
 |:-------|:-----|
-|![步驟 5](./media/stepnumbers/Step5.png)|[設定 Office 365 資料外洩防護](infoprotect-data-loss-prevention.md)|
+|![步驟 5](../media/stepnumbers/Step5.png)|[設定 Office 365 資料外洩防護](infoprotect-data-loss-prevention.md)|
 
 

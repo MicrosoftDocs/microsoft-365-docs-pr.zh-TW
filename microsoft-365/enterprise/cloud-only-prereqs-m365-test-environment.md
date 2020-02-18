@@ -1,9 +1,11 @@
 ---
 title: 身分識別與裝置存取 - 您的 Microsoft 365 測試環境中僅限雲端的先決條件
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 04/23/2019
+ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立 Microsoft 365 環境，以使用僅限雲端驗證的先決條件測試身分識別與裝置存取。
-ms.openlocfilehash: 6e0796d24f2644907d214c4528eab2051fa3d83c
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 2d40eca964cc338186f17b1b03423526e36ac196
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673229"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068480"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>身分識別與裝置存取 - 您的 Microsoft 365 測試環境中僅限雲端的先決條件
 
@@ -43,7 +45,7 @@ ms.locfileid: "38673229"
 遵循[輕量型組態](lightweight-base-configuration-microsoft-365-enterprise.md)中的指示。
 以下是所產生的組態。
 
-![輕量型 Microsoft 365 企業版測試環境](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![輕量型 Microsoft 365 企業版測試環境](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
  
 
 ## <a name="phase-2-configure-named-locations"></a>階段 2：設定具名位置
@@ -82,7 +84,7 @@ ms.locfileid: "38673229"
 
 ## <a name="phase-6-enable-azure-ad-identity-protection"></a>階段 6：啟用 Azure AD Identity Protection
 
-遵循[測試實驗室指南 Azure AD Identity Protection 階段 2](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-enable-and-use-azure-ad-identity-protection) 中的指示。 
+遵循[測試實驗室指南 Azure AD Identity Protection 階段 2](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection) 中的指示。 
 
 ## <a name="phase-7-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>階段 7：為 Exchange Online 和商務用 Skype Online 啟用新式驗證
 

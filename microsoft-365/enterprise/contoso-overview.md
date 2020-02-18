@@ -1,6 +1,8 @@
 ---
 title: Contoso 公司概觀
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解 Contoso 公司的業務及其全球辦公室的分層架構。
-ms.openlocfilehash: f1c758b92915845a0786c24aec611cb221c70186
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 856363881c749b06a530dc7cc4f0eb82dc155054
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673149"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068292"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso 公司概觀
 
-![Contoso 公司](./media/contoso-overview/contoso-icon.png)
+![Contoso 公司](../media/contoso-overview/contoso-icon.png)
 
 Contoso 公司是一家跨國企業，總部設於法國巴黎。它是一家集製造、銷售與支援的集團，旗下商品超過 100,000 種。
 
@@ -30,7 +32,7 @@ Contoso 公司是一家跨國企業，總部設於法國巴黎。它是一家集
 
 圖 1 顯示在巴黎的總部和其他跨洲的地區中心及衛星辦公室。
 
-![世界各地的 Contoso 辦公室](./media/contoso-overview/contoso-overview-fig1.png)
+![世界各地的 Contoso 辦公室](../media/contoso-overview/contoso-overview-fig1.png)
 
 **圖 1：世界各地的 Contoso 辦公室**
  

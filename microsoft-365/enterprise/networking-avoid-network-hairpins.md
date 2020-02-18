@@ -1,5 +1,7 @@
 ---
 title: 步驟 3：避免網路 Hairpin
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,22 +15,22 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並移除網路 Hairpin 以取得更好的效能。
-ms.openlocfilehash: 8d3c971c1295f8f1112c594635bfd791b251bd68
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: f9499fdb8e8c3f7b77e3349d6cc99f6dbf465870
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370330"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066704"
 ---
 # <a name="step-3-avoid-network-hairpins"></a>步驟 3：避免網路 Hairpin
 
 *此為必要步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-![階段 1 - 網路](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![階段 1 - 網路](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 當繫結到目的地的流量 (例如內部部署安全性堆疊、雲端存取代理程式或雲端 Web 閘道) 首先被導向另一個中繼位置時，會發生[網路 hairpin](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3)。 範例如下。
 
-![網路 hairpin 範例](./media/networking-avoid-network-hairpins/network-hairpin-example.png)
+![網路 hairpin 範例](../media/networking-avoid-network-hairpins/network-hairpin-example.png)
 
 網路 hairpin 也可能是由於網路服務提供者在網際網路上的路由不良所導致。 
 
@@ -44,7 +46,7 @@ Hairpin 會增加延遲，並可能將流量重新導向距離較遠的位置。
 
 儘可能將您的邊緣路由器設定為直接傳送信任的 Microsoft 365 流量，而不是透過處理網際網路流量的協力廠商雲端或雲端型網路安全性廠商來進行 Proxy 處理或通道傳送。 
 
-![略過網路 hairpin 的範例](./media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
+![略過網路 hairpin 的範例](../media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
 
 做為過渡期的檢查點，您可以看到此步驟的[允出準則](networking-exit-criteria.md#crit-networking-step3)。
 
@@ -52,4 +54,4 @@ Hairpin 會增加延遲，並可能將流量重新導向距離較遠的位置。
 
 |||
 |:-------|:-----|
-|![步驟 4](./media/stepnumbers/Step4.png)|[設定流量旁路](networking-configure-proxies-firewalls.md)|
+|![步驟 4](../media/stepnumbers/Step4.png)|[設定流量旁路](networking-configure-proxies-firewalls.md)|

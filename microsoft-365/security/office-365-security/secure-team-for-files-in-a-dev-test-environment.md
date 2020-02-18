@@ -1,5 +1,7 @@
 ---
 title: 在開發/測試環境中保護 Teams 檔案
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 摘要：針對開發/測試環境中的檔案，在 Microsoft Teams 中建立敏感性和高度機密小組。
-ms.openlocfilehash: 26fed13973a87acdd62957dcfc2e0f69323234ef
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 7af36e5a3af94297124c6f03cdead514ac941e5b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202294"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082251"
 ---
 # <a name="secure-teams-for-files-in-a-devtest-environment"></a>在開發/測試環境中保護 Teams 檔案
 
 本文提供建立開發/測試環境的逐步指示，其中包含適用於[保護 Microsoft Teams 中的檔案安全](secure-files-in-teams.md)解決方案的敏感性和高度機密小組。
   
-![在 Microsoft Teams 中，為檔案建立敏感性和高度機密小組。](../media/sensitive-highly-confidential-teams-dev-test.png)
+![在 Microsoft Teams 中，為檔案建立敏感性和高度機密小組。](../../media/sensitive-highly-confidential-teams-dev-test.png)
   
 在生產環境中部署這些類型的小組之前，您可以使用此開發/測試環境來試驗和微調設定，以符合您的特定需求。
   
@@ -86,7 +88,7 @@ ms.locfileid: "39202294"
   
 填寫組織名稱、位置和一般密碼，然後從 PowerShell 命令提示字元或整合指令碼環境 (ISE) 執行下列命令，以建立使用者帳戶，並將帳戶新增至其群組：
   
-```
+```powershell
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
 $commonPassword="<common password for all the new accounts>"
@@ -167,7 +169,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 若要為行銷群組成員建立敏感性層級小組，以便共同處理持續的行銷活動：
 
-1. [建立新的私人小組](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b)，且名稱為**行銷活動**。
+1. [建立新的私人小組](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b)，且名稱為**行銷活動**。
 2. 開啟 [行銷活動]**** 小組。
 3.  在小組的工具列中，按一下 [檔案]****。
 4.  按一下省略符號，然後按一下 [在 SharePoint 中開啟]****。
@@ -226,13 +228,13 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 以下是行銷活動小組產生的設定。
 
-![行銷活動小組的設定。](../media/sensitive-team-config-dev-test.png)
+![行銷活動小組的設定。](../../media/sensitive-team-config-dev-test.png)
   
 ### <a name="company-strategy-team-site"></a>公司策略小組網站
 
 若要為資深領導小組成員建立高度機密層級小組，以共同處理公司策略：
 
-1. [建立新的私人小組](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b)，且名稱為**公司策略**。
+1. [建立新的私人小組](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b)，且名稱為**公司策略**。
 2. 開啟 [公司策略]**** 小組。
 3.  在小組的工具列中，按一下 [檔案]****。
 4.  按一下省略符號，然後按一下 [在 SharePoint 中開啟]****。
@@ -300,7 +302,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 以下是公司策略小組產生的設定。
 
-![公司策略小組的設定。](../media/highlyconfidential-team-config-dev-test.png) 
+![公司策略小組的設定。](../../media/highlyconfidential-team-config-dev-test.png) 
 
 在基礎公司策略 SharePoint 網站文件區段中的檔案會獲指派「高度機密」保留標籤，而且受限於設定的 DLP 原則。 檔案也可以獲指派「公司策略敏感性」標籤。    
   

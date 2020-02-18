@@ -1,6 +1,8 @@
 ---
 title: Contoso 的行動裝置管理
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解 Contoso 如何在 Microsoft 365 企業版中使用 Microsoft Intune，來管理裝置和在裝置上執行的應用程式。
-ms.openlocfilehash: c486c9ef338ab1bd8959266183da6b79d62b3311
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 7232c89cc105525cc57facd5a1b9de06426adbca
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673179"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068362"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 的行動裝置管理
 
@@ -65,7 +67,7 @@ Contoso 不會使用 Intune 來：
 
 以下是 Contoso 的行動裝置管理部署架構。
 
-![Contoso 的行動裝置管理部署基礎結構](./media/contoso-mdm/contoso-mdm-fig1.png)
+![Contoso 的行動裝置管理部署基礎結構](../media/contoso-mdm/contoso-mdm-fig1.png)
 
 ## <a name="next-step"></a>下一步
 

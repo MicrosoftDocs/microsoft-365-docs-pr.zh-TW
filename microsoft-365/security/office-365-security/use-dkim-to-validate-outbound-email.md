@@ -16,12 +16,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 摘要：本文說明如何在 Office 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統會信任從您的自訂網域傳送的郵件。
-ms.openlocfilehash: 496089ff46d66df3382895626831023610c706be
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: d76c31c6a3f0ce1550f0259ee40996189b60cb79
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957158"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084385"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件
 
@@ -68,7 +68,7 @@ Office 365 會自動為其初始 'onmicrosoft.com' 網域設定 DKIM。 這表�
 
 SPF 會在郵件信封中新增資訊，但 DKIM 則會為郵件標頭中的簽章加密。 當您轉寄郵件時，轉寄端伺服器可能會將該郵件信封的某些部分移除掉。 由於數位簽章是電子郵件標頭的一部分，會存留在電子郵件訊息內，因此即使郵件已轉寄，DKIM 仍可運作，如下列範例所示。
 
-![流程圖顯示當 SPF 檢查不通過時，轉送的訊息會傳遞 DKIM 驗證](../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
+![流程圖顯示當 SPF 檢查不通過時，轉送的訊息會傳遞 DKIM 驗證](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
 
 在此範例中，如果您只為您的網域發佈 SPF TXT 記錄，收件者的郵件伺服器可能會將您的電子郵件標示為垃圾郵件，並產生誤判的結果。 在此案例中，加入 DKIM 將可減少誤判垃圾郵件的報告。 由於 DKIM 也使用公開金鑰密碼編譯進行驗證，而非僅使用 IP 位址，因此我們認為 DKIM 是遠優於 SPF 的驗證形式。 我們建議您在部署中應同時使用 SPF 和 DKIM 以及 DMARC。
 

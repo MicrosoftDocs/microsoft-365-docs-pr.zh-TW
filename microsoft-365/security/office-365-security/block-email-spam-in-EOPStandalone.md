@@ -1,5 +1,7 @@
 ---
 title: 在 EOP 獨立版中封鎖垃圾郵件
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt
@@ -16,12 +18,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: EOP 獨立版系統管理員適用的文件，以協助防止垃圾郵件誤判
-ms.openlocfilehash: 1c82bd65906f79898677136e02fd619bbe4c5214
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 6261c183d39b84435110616491f5bd0b2f3f891b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971901"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086578"
 ---
 # <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>利用這些設定來自訂 Office 365 反垃圾郵件篩選器
 
@@ -41,7 +43,7 @@ ms.locfileid: "39971901"
 
 垃圾郵件主要是大宗郵件，例如新聞稿或促銷活動嗎？如果您[使用郵件流程規則來設定大量電子郵件的篩選](use-transport-rules-to-configure-bulk-email-filtering.md)，或在垃圾郵件篩選器的[進階垃圾郵件篩選選項](advanced-spam-filtering-asf-options.md) 中開啟 [大宗郵件]**** 設定，則可以自訂 Office 365 中的垃圾郵件篩選器。在 Exchange 系統管理中心，開始按一下 [保護]**** \> [內容篩選器]****，然後按兩下您要調整的篩選原則。按一下 [垃圾郵件和大宗郵件動作]****，來調整設定，如下所示。
 
-![在 Exchange Online 設定大宗郵件篩選器](../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
+![在 Exchange Online 設定大宗郵件篩選器](../../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
 
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>使用垃圾郵件篩選器封鎖清單封鎖電子郵件垃圾郵件
 
@@ -51,7 +53,7 @@ ms.locfileid: "39971901"
 
 如果您告訴使用者將垃圾郵件寄件者地址新增至其封鎖的寄件者清單 (位於 [Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) 或 [Outlook 網頁版](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d) 中)，它將有助於您的 Office 365 防止誤判和垃圾郵件的反垃圾郵件工作。在 Outlook 網頁版中，按一下 [設定]**** \> [選項]**** \> [封鎖或允許]****，然後將地址新增至 [封鎖的寄件者]**** 清單，如下所示。
 
-![封鎖 Outlook 網頁版中的寄件者](../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
+![封鎖 Outlook 網頁版中的寄件者](../../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 
 > [!NOTE]
 > 如需安全寄件者清單的詳細資訊，請參閱[ Exchange Online 中安全寄件者和封鎖寄件者清單](safe-sender-and-blocked-sender-lists-faq.md)。
@@ -87,4 +89,4 @@ EOP 服務的設計旨在接受使用者的安全和封鎖的寄件者，如果�
 
 [Office 365 電子郵件的反垃圾郵件保護](anti-spam-protection.md)
 
-[使用安全清單或其他技術防止誤判電子郵件標示為垃圾郵件](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[使用安全清單或其他技術防止誤判電子郵件標示為垃圾郵件](prevent-email-from-being-marked-as-spam.md)

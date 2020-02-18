@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
-ms.openlocfilehash: 43d7e3a12c72573b46d6c8d2aff36eed97fd08ac
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4d79b0480462510927f0b1b4c8b5da7132cffec8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595790"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078663"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance Manager （預覽）
 
@@ -45,7 +45,7 @@ ms.locfileid: "41595790"
 
 此圖顯示的合規性管理員中的主要元件之間的關係：
 
-![合規性管理員第 3 版中的關聯性](media/compliance-manager-relationships.png)
+![合規性管理員第 3 版中的關聯性](../media/compliance-manager-relationships.png)
 
 ## <a name="groups"></a>群組
 
@@ -77,7 +77,7 @@ ms.locfileid: "41595790"
 - **發行項識別碼**： 此欄位僅適用於 GDPR 評估，並指定對應的 GDPR 文章編號。
 - **描述**： 從對應認證或規定的控制項的文字。 由於著作權限制的相關資訊的連結列 ISO 標準。
 
-![合規性管理員第 3 版中的控制項](media/compliance-manager-controls.png)
+![合規性管理員第 3 版中的控制項](../media/compliance-manager-controls.png)
 
 有三種類型的合規性管理員中， **Microsoft 管理控制措施**，**客戶管理控制措施**和**共用管理控制項**中的控制項
 
@@ -162,7 +162,7 @@ ms.locfileid: "41595790"
 
 例如，您有相關的安全性需求來規範相關動作項目也適用於您組織中啟用 Azure Rights Management。 當 Azure 版權管理為啟動並且處理安全分數時，合規性管理員接收通知的更新，並巨集指令的項目分數會自動更新完成信用。
 
-## <a name="ready-to-get-started"></a>準備好要開始了嗎？
+## <a name="ready-to-get-started"></a>準備好開始使用了嗎？
 
 開始[使用與合規性管理員](working-with-compliance-manager.md)管理組織的法規合規性活動。
 

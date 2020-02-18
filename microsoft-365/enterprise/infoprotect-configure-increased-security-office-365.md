@@ -1,5 +1,7 @@
 ---
 title: 步驟 3：設定增強的 Microsoft 365 安全性
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解及設定增強的 Microsoft 365 安全性。
-ms.openlocfilehash: 15a4121315a81e1169e7cf1fa1c7ed079201b67b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: eabf0d60f3cfb61b7fffcc688a080ba99f83293e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801678"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067240"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>步驟 3：設定增強的 Microsoft 365 安全性
 
 *此為必要步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-![階段 6：資訊保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![階段 6：資訊保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 若要確保 Microsoft 365 訂用帳戶及其資料開始使用並保持安全抵禦惡意威脅，請設定下列各項：
 
@@ -47,7 +49,7 @@ Office 365 ATP 僅在 Microsoft 365 E5 中提供。
 
 |||
 |:-------|:-----|
-|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：設定增強的 Microsoft 365 安全性](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
+|![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：設定增強的 Microsoft 365 安全性](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 作為過渡期的檢查點，您可以看到與此步驟相對應的[允出準則](infoprotect-exit-criteria.md#crit-infoprotect-step3)。
@@ -57,6 +59,6 @@ Office 365 ATP 僅在 Microsoft 365 E5 中提供。
 
 |||
 |:-------|:-----|
-|![步驟 4](./media/stepnumbers/Step4.png)|[設定 Windows 資訊保護](infoprotect-deploy-windows-information-protection.md)|
+|![步驟 4](../media/stepnumbers/Step4.png)|[設定 Windows 資訊保護](infoprotect-deploy-windows-information-protection.md)|
 
 

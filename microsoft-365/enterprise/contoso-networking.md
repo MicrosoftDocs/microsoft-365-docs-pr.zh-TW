@@ -1,6 +1,8 @@
 ---
 title: Contoso Corporation 的網路
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 網路基礎結構，以及如何使用其 SD-WAN 技術，以取得與 Microsoft 365 企業版雲端服務的最佳網路效能。
-ms.openlocfilehash: 87584660805608c45b36e13804ca1dab6b8e7d17
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 20279ac0aed1b7ad86e1fc8e1d78a412230eba52
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673169"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068334"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation 的網路
 
@@ -42,7 +44,7 @@ ms.locfileid: "38673169"
 
 圖 1 顯示 Contoso 的網路基礎結構及其與網際網路的連線。
 
-![Contoso 的網路](./media/contoso-networking/contoso-networking-fig1.png)
+![Contoso 的網路](../media/contoso-networking/contoso-networking-fig1.png)
  
 **圖 1：Contoso 的網路**
 
@@ -75,7 +77,7 @@ Contoso 已針對以下地點架構其企業營運應用程式和伺服器內部
 
 圖 2 顯示在 Contoso 內部網路存取伺服器時的網路流量百分比。
 
-![Contoso 的內部應用程式基礎結構](./media/contoso-networking/contoso-networking-fig2.png)
+![Contoso 的內部應用程式基礎結構](../media/contoso-networking/contoso-networking-fig2.png)
  
 **圖 2：Contoso 的內部應用程式基礎結構**
 

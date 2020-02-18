@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 模擬企業基本設定
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用此「測試實驗室指南」建立 Microsoft 365 企業版的模擬企業測試環境。
-ms.openlocfilehash: d279ea4eaea1e167b18f48db3c7484885ed48fea
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 66d62677843843476baffac3f295e41eda71be69
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831696"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084110"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模擬企業基本設定
 
@@ -31,14 +33,14 @@ ms.locfileid: "39831696"
 - Microsoft 365 E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路上的三部虛擬機器 (DC1、APP1 及 CLIENT1) 組成。
  
-![模擬企業基本設定](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![模擬企業基本設定](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 您可以利用額外的[測試實驗室指南](m365-enterprise-test-lab-guides.md)或靠您自己，使用所產生的環境來測試 [Microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise)的功能。
 
-![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>階段 1：建立模擬的內部網路
 
@@ -63,7 +65,7 @@ ms.locfileid: "39831696"
 
 範本完成後，您的設定如下。
 
-![Azure 基礎結構服務中的模擬內部網路](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![Azure 基礎結構服務中的模擬內部網路](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 ### <a name="method-2-build-your-simulated-intranet-with-azure-powershell"></a>方法 2：使用 Azure PowerShell 建立模擬內部網路
 
@@ -230,7 +232,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 這是您目前的設定。
   
-![模擬企業基本設定步驟 1](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
+![模擬企業基本設定步驟 1](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
   
 #### <a name="step-2-configure-app1"></a>步驟 2：設定 APP1
 
@@ -285,7 +287,7 @@ New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
 
 這是您目前的設定。
   
-![模擬企業基本設定步驟 2](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
+![模擬企業基本設定步驟 2](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 #### <a name="step-3-configure-client1"></a>步驟 3：設定 CLIENT1
 
@@ -349,7 +351,7 @@ CLIENT1 重新啟動之後，使用 TESTLAB\\User1 帳戶名稱和密碼連線�
     
 這是您目前的設定。
   
-![模擬企業基本設定步驟 3](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![模擬企業基本設定步驟 3](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 
 ## <a name="phase-2-create-your-microsoft-365-e5-subscription"></a>階段 2：建立您的 Microsoft 365 E5 訂閱
@@ -393,7 +395,7 @@ CLIENT1 重新啟動之後，使用 TESTLAB\\User1 帳戶名稱和密碼連線�
     
 這是您的最終設定。
   
-![模擬企業基本設定階段 2](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![模擬企業基本設定階段 2](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
 您現在已準備好嘗試 [Microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
   

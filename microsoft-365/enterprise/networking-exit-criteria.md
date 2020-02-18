@@ -1,5 +1,7 @@
 ---
 title: 第1 階段：網路基礎結構的允出準則
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的設定符合 Microsoft 365 企業版的網路基礎結構的準則。
-ms.openlocfilehash: f3d2861af90e9a6f8a9b0b64b307dac6b1b76eb1
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 1ace68fd19c62e4dc389604c1b0c02ddc18b52dc
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831944"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066618"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>第1 階段：網路基礎結構的允出準則
 
-![階段 1 - 網路](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![階段 1 - 網路](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 請確定您的網路基礎結構符合下列必要準則，而且您已將這些視為選擇性準則。
 
@@ -38,7 +40,7 @@ ms.locfileid: "39831944"
 <a name="crit-networking-step2"></a>
 ## <a name="required-your-local-offices-have-local-internet-connections-and-name-resolution"></a>必要：您的當地辦公室具備當地網際網路連線和名稱解析
 
-您已設定每個當地辦公室可透過當地 ISP 存取網際網路，而 ISP 的 DNS 伺服器會使用當地公用 IP 位址來識別它們在網際網路上的位置。 這可確保存取 Microsoft 365 雲端服務的使用者獲得最佳效能。
+您已設定每個當地辦公室可透過當地 ISP 存取網際網路，而 ISP 的 DNS 伺服器會使用當地公用 IP 位址來識別它們在網際網路上的位置。這可確保存取 Microsoft 365 雲端服務的使用者獲得最佳效能。
 
 如果您的分公司不是使用當地 ISP，效能可能會變差，因為網路流量必須通過組織的骨幹，或是資料要求會交由遠處的前端伺服器處理。
 
@@ -83,4 +85,4 @@ ms.locfileid: "39831944"
 
 |||
 |:-------|:-----|
-|![階段 2 - 身分識別](./media/deploy-foundation-infrastructure/identity_icon-small.png)| 如果您會遵循 Microsoft 365 企業版的端對端部署階段，則下一個階段是[身分識別](identity-infrastructure.md)。 |
+|![階段 2 - 身分識別](../media/deploy-foundation-infrastructure/identity_icon-small.png)| 如果您會遵循 Microsoft 365 企業版的端對端部署階段，則下一個階段是[身分識別](identity-infrastructure.md)。 |

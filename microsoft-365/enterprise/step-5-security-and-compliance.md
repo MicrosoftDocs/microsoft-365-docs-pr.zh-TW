@@ -1,5 +1,7 @@
 ---
 title: 步驟 5 - 安全性與相容性考量事項
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解重要的 Windows 和 Office 安全性與相容性考量。
-ms.openlocfilehash: b4ef8b4d4e5e6277ea129b5a9454983459266462
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 1d38347ca1bdf152a891cfd147ec3fabf552ff3d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112557"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085257"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>步驟 5：安全性與相容性考量事項
 
-![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
+![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
 <td><p><strong>步驟 5：安全性與相容性考量事項</strong></p>
 <p>Windows 10 和 Office 365 專業增強版提供全新的方式來保護您的資料、裝置和使用者，並快速偵測及回應威脅。此外，了解如何在轉移到 Windows 10 時處理與磁碟加密、反惡意程式碼應用程式和原則相關的常見問題。</p></td>
-<td><a href="https://aka.ms/ddev5" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev5" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -63,7 +65,7 @@ ms.locfileid: "41112557"
 
 您用於較舊版 Windows 和 Office 的 Active Directory 群組原則設定可能不會直接翻譯為 Windows 10 及 Office 365 專業增強版，且較新的安全性與相容性功能會有不同的考量。最好使用 Microsoft 安全性相容性工具組取得最新版 Windows 及 Office 的安全性原則基準。此外，值得一探究竟行動裝置管理原則作為 Microsoft Intune 的一部分。
 
-![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
+![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
 
 ## 
 

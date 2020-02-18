@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: 您可以選擇取消重複，以便只有一個電子郵件訊息的複本匯出即使多個執行個體的相同的訊息可能會有不同的信箱中找到匯出 eDiscovery 搜尋結果。
-ms.openlocfilehash: bfd810d358a85c0cdfacab50fb512a8d2a9c8828
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: f3a0291c2c611814e35528e87f5a3897c4e8ba59
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41892036"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076265"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>電子文件探索搜尋結果中的重複資料刪除
 
@@ -45,11 +45,11 @@ EDiscovery 匯出程序，這三個屬性會比較每個符合搜尋準則的郵
   
  ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv 報表 （在 Excel 中檢視）
   
-![檢視 Results.csv 報表中的重複項目的相關資訊](media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![檢視 Results.csv 報表中的重複項目的相關資訊](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
  ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml 報表 （在 Excel 中檢視）
   
-![Manifest.xml 報告中檢視重複的項目相關資訊](media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![Manifest.xml 報告中檢視重複的項目相關資訊](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
 此外，其他屬性，從重複的郵件會包含在匯出報告。 這包括重複的郵件位於，該郵件已傳送至通訊群組，以及是否無法傳遞郵件。 會 [副本] 或 [密件副本位置的分散式另一位使用者的信箱。
   

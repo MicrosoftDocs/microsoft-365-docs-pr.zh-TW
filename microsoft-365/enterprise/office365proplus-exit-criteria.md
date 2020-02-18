@@ -1,5 +1,7 @@
 ---
 title: Office 365 專業增強版的部署允出準則
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的設定符合 Microsoft 365 企業版中 Office 365 專業增強版基礎結構的準則。
-ms.openlocfilehash: 749d9661911bd6b69a3d6abff0b54e9ea1200adc
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: 2f19de8c40c95f27e3b7578d384db39d5feb57e0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746579"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066478"
 ---
 # <a name="office-365-proplus-deployment-exit-criteria"></a>Office 365 專業增強版的部署允出準則
 
-![第4 階段：Office 365 專業增強版](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
+![第4 階段：Office 365 專業增強版](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
 
 *本文同時適用於 Microsoft 365 企業版和 Microsoft 365 教育版的 E3 和 E5 版本*
 
@@ -60,4 +62,4 @@ ms.locfileid: "37746579"
 
 |||
 |:-------|:-----|
-|![階段 5：行動裝置管理](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| 如果您會遵循 Microsoft 365 企業版的端對端部署階段，則下一個階段是[行動裝置管理](mobility-infrastructure.md)。 |
+|![階段 5：行動裝置管理](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| 如果您會遵循 Microsoft 365 企業版的端對端部署階段，則下一個階段是[行動裝置管理](mobility-infrastructure.md)。 |

@@ -1,5 +1,7 @@
 ---
 title: Windows 7 至 Windows 10 手動升級指南
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows 7 至 Windows 10 手動升級指南。
-ms.openlocfilehash: 13cdb56b52655ed81932601dd3ff97c90c1daad8
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: ea1705a91baf6b0526e87bcf04529ab2668aa439
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033678"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086054"
 ---
 # <a name="windows-7-to-windows-10-manual-upgrade-step-by-step-guide"></a>Windows 7 至 Windows 10 手動升級逐步指南
 
@@ -28,7 +30,7 @@ ms.locfileid: "38033678"
 
 您可以使用[媒體建立工具](https://www.microsoft.com/software-download/windows10ISO)直接升級至 Windows 10，或使用該工具將 Windows 10 下載為 ISO 檔案。 您必須知道您目前的系統是 32 還是 64 位元、系統的預設語言和 Windows 7 版本 (例如家用版、專業版或企業版)。 在 Windows 7 中，這項資訊位於 [控制台] \> [系統及安全性] \> [系統]。 媒體建立工具不支援 Windows 10 企業版進行升級、建立安裝媒體，或下載 ISO 檔案。 如果是從 Windows 7 企業版升級，您需要 Windows 10 企業版。
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-1.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-1.png)
 
 從 Windows 7 企業版升級至 Windows 10 企業版時，您必須從[大量授權服務中心](https://www.microsoft.com/licensing/servicecenter/default.aspx)下載適用於您的語言與架構 (32 位元或 64 位元) 的 ISO 檔案。
 
@@ -38,27 +40,27 @@ ms.locfileid: "38033678"
 
 **重要提示：如果要進行就地升級 (亦即應用程式與您的資料要移轉至 Windows 10)，您必須從執行 Windows 7 的工作階段內啟動程序。從 DVD 或 USB 磁碟機開機進入安裝媒體不會提供您保留應用程式和檔案的選項，而是會執行 Windows 10 的全新安裝。**
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-2.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-2.png)
 
 在 Windows 10 安裝程式中，程式將會引導您完成安裝程序，第一個畫面會提供下載更新、驅動程式和選擇性功能的選項。 建議您使用此選項，協助確保升級成功
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-3.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-3.png)
 
 套用更新之後，Windows 10 安裝程式會移至下一個階段：選取映像。 在這裡，您必須選取您的 Windows 版本。 在此案例中，因為電腦安裝的是 Windows 7 企業版，所以您要選取 Windows 10 企業版。
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-4.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-4.png)
 
 在 Windows 10 安裝程式的下一個畫面中，您會看到適用的注意事項與授權條款。 閱讀並了解注意事項和條款之後，請按一下 [接受] 繼續，或按一下 [拒絕] 取消安裝。
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-5.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-5.png)
 
 現在 Windows 10 安裝程式會尋找其他更新。
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-6.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-6.png)
 
 完成之後，Windows 10 安裝程式就可以開始安裝，而且依預設是設定為安裝 Windows 10，並且保留您的個人檔案和已安裝的應用程式。 此為建議選項。 按一下 [變更要保留的項目]，您會發現其他選項。 否則，請按一下 [安裝]。
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-7.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-7.png)
 
 如果您選取 [變更要保留的項目]，您會看到下列選項：
 
@@ -66,15 +68,15 @@ ms.locfileid: "38033678"
 
 [不保留任何項目] 會刪除您的檔案、應用程式及設定，並執行 Windows 的全新安裝。 只有當您先前已經備份想要保留的資料，而且能夠重新安裝您的應用程式時，才使用此選項。
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-8.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-8.png)
 
 現在 Windows 10 安裝程式會根據您在上一個畫面中選取的項目再次取得更新。
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-9.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-9.png)
 
 現在 Windows 10 會花幾分鐘的時間安裝，如果您選擇保留您的個人檔案和應用程式，所有項目都會在相同的檔案位置，您的應用程式現在會出現在 Windows 10 中。
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-10.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-10.png)
 
 ## 
 
@@ -84,27 +86,27 @@ ms.locfileid: "38033678"
 
 若要啟動「回復到 Windows 7」程序，請瀏覽至 [設定] \> [更新與安全性] \> [復原]。 在 [回到 Windows 7] 下，選取 [開始]。
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-11.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-11.png)
 
 現在，Windows 10 會詢問您為什麼要回復。 如果有技術方面的原因，填寫內容有助於推動解決方案，確保其他人可以從您的經驗中獲益。
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-12.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-12.png)
 
 很多時候，您的 Windows 10 版本會有更新，或許可以解決技術性問題。 建議您檢查是否有更新，如果找到並安裝更新，請檢查是否能夠修正您遇到的問題。
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-13.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-13.png)
 
 如果更新無法解決問題，您還是需要還原到先前安裝的 Windows 7，您可能必須重新安裝某些應用程式 (例如您在執行 Windows 10 期間安裝的任何應用程式)，也可能會遺失某些設定。 重要的是，您在使用 Windows 10 時儲存在本機的檔案和文件都會保留，當您回到 Windows 7 之後，就能使用。 
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-14.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-14.png)
 
 在您開始之前，請確認您已經準備好先前 Windows 7 安裝的本機或網域帳戶和密碼。
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-15.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-15.png)
 
 在這裡，您可以啟動回到 Windows 7 的程序。 幾分鐘之後，電腦會開機回到 Windows 7，您的體驗就會與升級到 Windows 10 之前相同。
 
-![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-16.png)
+![](../media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-16.png)
 
 ## <a name="moving-to-windows-10-on-a-new-pc"></a>在新電腦上移至 Windows 10
 

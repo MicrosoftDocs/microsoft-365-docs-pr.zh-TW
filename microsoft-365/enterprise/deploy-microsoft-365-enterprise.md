@@ -1,6 +1,8 @@
 ---
 title: 部署 Microsoft 365 企業版
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 09/19/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用來在組織中部署 Microsoft 365 企業版的資源。
-ms.openlocfilehash: 4181a5efeb7ba63812703ae5eb81667240314e9a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e4660ff6e7fc9646b2e28181afff4df2811acdd1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801918"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067953"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>部署 Microsoft 365 企業版
 
@@ -65,7 +67,7 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
 以下是基礎結構和工作負載及案例之間的關聯。
 
-![基礎結構和工作負載及案例之間的關聯](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![基礎結構和工作負載及案例之間的關聯](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
 工作負載和案例會在基礎結構的頂端運作。 不過，您不一定要建置所有基礎結構階段才能開始進行生力及共同作業的工作負載。
 
@@ -83,13 +85,13 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
 如需詳細資訊，請參閱 [Microsoft 365 企業版測試實驗室指南](m365-enterprise-test-lab-guides.md)。
 
-![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 ## <a name="transition-your-entire-organization"></a>轉換整個組織
 
-若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請參閱[將您的組織轉換至 Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) 海報。
+若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請參閱[將您的組織轉換至 Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) 海報。
 
-[![將您的組織轉換至 Microsoft 365 海報](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![將您的組織轉換至 Microsoft 365 海報](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 這份雙頁海報可讓您快速清查您現有的基礎結構，並取得移至 Microsoft 365 企業版中對應產品或服務的指導方針。 包含 Windows 和 Office 產品和其他基礎結構與安全性元素，例如裝置管理、身分識別以及資訊和威脅防護。
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 或 Microsoft 365 合規性中心中的「內容搜尋」工具，來搜尋信箱中的內容、SharePoint Online 網站，OneDrive 帳戶、Microsoft Teams、Office 365 群組、Yammer 群組和商務用 Skype 交談。 您可以使用關鍵字搜尋查詢和搜尋條件來縮小搜尋結果。 然後您可以預覽和匯出搜尋結果。 內容搜尋也是用來搜尋與 GDPR 資料主體要求相關內容的有效工具。
-ms.openlocfilehash: 8de78da9328d7f8c0a76edab5703821bdb0e6099
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d9fdf5359538209d0793211632979fae1b332d13
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595720"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078374"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 中的內容搜尋
 
@@ -52,9 +52,9 @@ ms.locfileid: "41595720"
     
 2. 按一下 **[搜尋]** \> **[內容搜尋]**。
     
-3. 在 **[搜尋]** 頁面上，按一下 [![加號圖示](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) 新增搜尋]**** 旁邊的箭號。 
+3. 在 **[搜尋]** 頁面上，按一下 [![加號圖示](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) 新增搜尋]**** 旁邊的箭號。 
     
-    ![[新增搜尋] 下拉式清單](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
+    ![[新增搜尋] 下拉式清單](../media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
     您可以選擇下列其中一個選項：
     
@@ -70,7 +70,7 @@ ms.locfileid: "41595720"
     
 5. 在 **[搜尋查詢]** 下，指定下列項目：
     
-    ![指定要搜尋的關鍵字、條件和位置](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
+    ![指定要搜尋的關鍵字、條件和位置](../media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
    - **要搜尋的關鍵字：** 在 **[關鍵字]** 方塊中輸入搜尋查詢。 您可以指定關鍵字、例如傳送和接收日期的郵件屬性，或者例如檔案名稱或文件上次變更的日期的文件屬性。 您可以使用內含布林運算子的更複雜的查詢，例如 **AND**、**OR**、**NOT** 和 **NEAR**。 您也可以搜尋文件中的機密資訊 (如身分證號碼) 或搜尋曾在外部共用的文件。 如果將關鍵字方塊保留空白，則位於指定內容位置的所有內容都會包含在搜尋結果中。
     
@@ -89,7 +89,7 @@ ms.locfileid: "41595720"
     
       - **特定位置：** 使用此選項來搜尋特定內容位置。 您可以搜尋特定 Office 365 服務的所有內容位置 (例如搜尋所有 Exchange 信箱或搜尋所有 SharePoint 網站)，您也可以搜尋所顯示的任何 Office 365 服務中特定位置的內容。 
     
-        ![用來選擇要搜尋的內容位置的使用者介面](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
+        ![用來選擇要搜尋的內容位置的使用者介面](../media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
          您也可以將通訊群組新增到要搜尋的 Exchange 信箱清單。 針對通訊群組，會搜尋群組成員的信箱。 不支援動態通訊群組。
     
@@ -106,13 +106,13 @@ ms.locfileid: "41595720"
     
 若要再次存取此內容搜尋，或存取 **[內容搜尋]** 頁面上所列的其他內容搜尋，請選取搜尋，然後按一下 **[開啟]**。 
   
-若要清除結果，或建立另一個搜尋，請按一下 [![加號圖示](media/O365-MDM-CreatePolicy-AddIcon.gif) 新增搜尋]****。 
+若要清除結果，或建立另一個搜尋，請按一下 [![加號圖示](../media/O365-MDM-CreatePolicy-AddIcon.gif) 新增搜尋]****。 
   
 ## <a name="preview-search-results"></a>預覽搜尋結果
 
 預覽搜尋結果有兩個組態設定。 執行新搜尋或開啟現有的搜尋之後，請按一下 **[個別結果]** 來檢視下列預覽設定： 
   
-![預覽搜尋結果設定](media/83519477-1c85-4442-8886-481f186fd758.png)
+![預覽搜尋結果設定](../media/83519477-1c85-4442-8886-481f186fd758.png)
   
 1. **自動預覽結果：** 此設定會在您執行搜尋後顯示搜尋結果。
     
@@ -157,7 +157,7 @@ ms.locfileid: "41595720"
   
 1. 在 **[內容搜尋]** 頁面上，按一下您想要匯出其結果的搜尋。 
     
-2. 在飛出視窗頁面上，按一下 [![匯出搜尋結果圖示](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) 其他]****，然後按一下 **[匯出結果]**。 您也可以匯出搜尋結果報告。
+2. 在飛出視窗頁面上，按一下 [![匯出搜尋結果圖示](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) 其他]****，然後按一下 **[匯出結果]**。 您也可以匯出搜尋結果報告。
     
 3. 完成 **[匯出結果]** 飛出視窗頁面上的區段。 務必使用捲軸來檢視所有的匯出選項。 
     
@@ -217,21 +217,21 @@ ms.locfileid: "41595720"
     
     **不正確**
     
-    ![設定關鍵字清單格式的方式不正確 (在關鍵字方塊中貼上清單)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
+    ![設定關鍵字清單格式的方式不正確 (在關鍵字方塊中貼上清單)](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
     **正確**
     
-    ![設定關鍵字清單格式的方式正確 (選取核取方塊，然後貼上清單)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
+    ![設定關鍵字清單格式的方式正確 (選取核取方塊，然後貼上清單)](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   
 - 您也可以在 Excel 檔案或純文字檔案中準備關鍵字或關鍵字片語的清單，然後將您的清單複製並貼入關鍵字清單中。 若要這麼做，您必須選取 **[顯示關鍵字清單]** 核取方塊。 然後在關鍵字清單的第一列按一下，並貼上您的清單。 來自 Excel 或文字檔案的每一行都會貼到關鍵字清單中的不同列。 
     
 - 使用關鍵字清單建立查詢之後，最好先驗證搜尋查詢語法，以讓該搜尋查詢成為您想要的查詢。 在詳細資料窗格的 **[查詢]** 下顯示的搜尋查詢中，關鍵字使用文字 **(c:s)** 分隔。 這表示關鍵字是使用與 **OR** 運算子類似功能的邏輯運算子連接。 同樣地，如果您的搜尋查詢中包含條件，關鍵字與條件以文字 **(c:c)** 分隔。 這表示關鍵字是使用與 **AND** 運算子類似功能的邏輯運算子與條件連接。 以下是使用關鍵字清單與條件時產生的搜尋查詢的範例 (顯示在 [詳細資料] 窗格中)。 
     
-    ![使用關鍵字清單與條件時建立的查詢範例](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
+    ![使用關鍵字清單與條件時建立的查詢範例](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
 - 執行內容搜尋時，Office 365 會自動檢查您的搜尋查詢中是否有不受支援的字元，以及可能未大寫的布林值運算子。 不支援的字元通常會隱藏起來，且通常會導致搜尋錯誤或傳回非預期的結果。 如需所檢查不受支援字元的詳細資訊，請參閱[檢查您的內容搜尋查詢是否有錯誤](check-your-content-search-query-for-errors.md)。
     
-- 如果您有包含非英文字元 (例如中文字元) 關鍵字的搜尋查詢時，您可以按一下 **[查詢語言-國家/地區]**![內容搜尋中的 [查詢語言-國家/地區] 圖示](media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)，然後選取搜尋的語言-國家/地區文化特性代碼值。 預設的語言-國家/地區為中性。 如何判斷您是否需要變更內容搜尋的語言設定？ 如果您確定您要搜尋的內容位置包含非英文字元，但搜尋卻未傳回任何結果，這可能是語言設定所造成。 
+- 如果您有包含非英文字元 (例如中文字元) 關鍵字的搜尋查詢時，您可以按一下 **[查詢語言-國家/地區]**![內容搜尋中的 [查詢語言-國家/地區] 圖示](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)，然後選取搜尋的語言-國家/地區文化特性代碼值。 預設的語言-國家/地區為中性。 如何判斷您是否需要變更內容搜尋的語言設定？ 如果您確定您要搜尋的內容位置包含非英文字元，但搜尋卻未傳回任何結果，這可能是語言設定所造成。 
   
 ### <a name="searching-onedrive-accounts"></a>搜尋 OneDrive 帳戶
 
@@ -299,17 +299,17 @@ ms.locfileid: "41595720"
 
   在搜尋結果中，會在 **[類型]** 欄位中將會議摘要識別為 **[會議]**，以及將通話摘要識別為 **[通話]**。 此外，屬於 Teams 頻道和 1xN 聊天的交談，會在 **[類型]** 欄位中識別為 **IM**。
   
-  ![Teams 會議、通話和 1xN 聊天都可在 [類型] 欄位中識別](media/O365-ContentSearch-Teams-MessageKind.png)
+  ![Teams 會議、通話和 1xN 聊天都可在 [類型] 欄位中識別](../media/O365-ContentSearch-Teams-MessageKind.png)
 
 - 您可以使用 **Kind** 電子郵件屬性或 **[郵件類型]** 搜尋條件來搜尋 Teams 中的專屬內容。 
   
   - 若要在關鍵字搜尋查詢中使用 **Kind** 屬性，請在搜尋查詢的 **[關鍵字]** 方塊中輸入 `kind:microsoftteams`。
 
-    ![在關鍵字方塊中使用 kind:microsoftteams](media/O365-ContentSearch-Teams-Keywords.png)
+    ![在關鍵字方塊中使用 kind:microsoftteams](../media/O365-ContentSearch-Teams-Keywords.png)
   
   - 若要使用搜尋條件，請新增 **[郵件類型]** 條件，然後使用 `microsoftteams` 值。 
 
-    ![使用郵件類型條件搭配 microsoftteams 值。](media/O365-ContentSearch-Teams-MessageKindCondition.png)
+    ![使用郵件類型條件搭配 microsoftteams 值。](../media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
 條件會使用 **AND** 運算子以邏輯方式連接至關鍵字查詢。 這表示項目必須同時符合關鍵字查詢和搜尋條件，才能在搜尋結果中傳回。 如需詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions)中的「使用條件的指導方針」小節。
   
@@ -326,15 +326,15 @@ ms.locfileid: "41595720"
   
     例如，您可以使用下列搜尋查詢來傳回 Yammer 訊息和 Yammer 稱讚項目：
 
-    ![使用 ItemClass 屬性來搜尋 Yammer 項目](media/YammerContentSearch1.png)
+    ![使用 ItemClass 屬性來搜尋 Yammer 項目](../media/YammerContentSearch1.png)
   
   - 您也可以使用**類型**電子郵件條件，然後選取 **[Yammer 訊息]** 以傳回 Yammer 項目。 例如，下列搜尋查詢會傳回所有包含關鍵字「保密」的 Yammer 交談項目。 
 
-    ![使用「類型」條件卡片來搜尋 Yammer 交談項目](media/YammerContentSearch2.png)
+    ![使用「類型」條件卡片來搜尋 Yammer 交談項目](../media/YammerContentSearch2.png)
 
 ### <a name="searching-inactive-mailboxes"></a>搜尋非作用中信箱
 
-您可以在內容搜尋中搜尋非作用中信箱。 若要取得組織中非作用中信箱的清單，請在 Exchange Online PowerShell 中執行命令 `Get-Mailbox -InactiveMailboxOnly`。 或者，您可以移至安全性與合規性中心中的 **[資訊控管]** \> **[保留]**，然後按一下 **[更多]** ![[瀏覽列省略符號]](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **[非作用中信箱]**。
+您可以在內容搜尋中搜尋非作用中信箱。 若要取得組織中非作用中信箱的清單，請在 Exchange Online PowerShell 中執行命令 `Get-Mailbox -InactiveMailboxOnly`。 或者，您可以移至安全性與合規性中心中的 **[資訊控管]** \> **[保留]**，然後按一下 **[更多]** ![[瀏覽列省略符號]](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **[非作用中信箱]**。
   
 搜尋非作用中信箱時，請注意以下幾點。
 

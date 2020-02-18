@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: ''
 description: 調查、 進行疑難排解及解決在 Office 365 電子文件探索中常見的問題。
 siblings_only: true
-ms.openlocfilehash: c8eb4a330ab565900a685959ab1291990a6119bb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ff22ae11a21aef3909e58e03c8fefcf21db6435
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595128"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074805"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>調查、 進行疑難排解及解決常見問題 eDiscovery
 
@@ -60,7 +60,7 @@ ms.locfileid: "41595128"
 電子文件探索] 或 [內容搜尋，可能會產生下列錯誤：
 >此搜尋完成 （#） 發生錯誤。  您要重試失敗的位置上的搜尋嗎？
 
-![搜尋特定位置失敗錯誤的螢幕擷取畫面]( media/edisc-tshoot-specific-location-search-fails.png)
+![搜尋特定位置失敗錯誤的螢幕擷取畫面](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### <a name="resolution"></a>解決方案
 
@@ -136,7 +136,7 @@ EDiscovery 搜尋失敗，錯誤`recipient not found`。 如果使用者物件�
 
 當執行 eDiscovery 搜尋，如果搜尋持續失敗，類似於 「 時發生內部伺服器錯誤 (500) 」 的錯誤，可能需要重新執行只能在特定信箱的位置上的搜尋。
 
-![內部伺服器錯誤 500 螢幕擷取畫面](media/edisc-tshoot-error-500.png)
+![內部伺服器錯誤 500 螢幕擷取畫面](../media/edisc-tshoot-error-500.png)
 
 ### <a name="resolution"></a>解決方案
 

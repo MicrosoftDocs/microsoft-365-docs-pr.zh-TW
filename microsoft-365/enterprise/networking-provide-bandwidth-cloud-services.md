@@ -1,5 +1,7 @@
 ---
 title: 步驟 1：準備用於 Microsoft 365 的網路
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 365 企業版的雲端服務網際網路頻寬需求。
-ms.openlocfilehash: ea92bcbd19c0b4cef16292d652cf5f8aa45aee07
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 2f20542609c757c4fbccd2f9b0e4af59d9bc7566
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370290"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066513"
 ---
 # <a name="step-1-prepare-your-network-for-microsoft-365"></a>步驟 1：準備用於 Microsoft 365 的網路
 
 *此為必要步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-![階段 1 - 網路](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![階段 1 - 網路](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 在步驟 1 中，您必須：
 
@@ -40,5 +42,5 @@ ms.locfileid: "37370290"
 
 |||
 |:-------|:-----|
-|![步驟 2](./media/stepnumbers/Step2.png)|[設定每個辦公室的當地網際網路連線](networking-dns-resolution-same-location.md)|
+|![步驟 2](../media/stepnumbers/Step2.png)|[設定每個辦公室的當地網際網路連線](networking-dns-resolution-same-location.md)|
 

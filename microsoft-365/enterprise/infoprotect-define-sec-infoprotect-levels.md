@@ -1,5 +1,7 @@
 ---
 title: 步驟 1：定義安全性和資訊保護層級
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並設定您組織的安全性和資訊保護層級。
-ms.openlocfilehash: 7f1f8a2099da8d99b1b7267e245a80d2143bb0ca
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: d3ba5f490b7aa80c9149a0451059914c78b8f2f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370390"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067210"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>步驟 1：定義安全性和資訊保護層級
 
 *此為必要步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-![第 6 階段：資訊保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![第 6 階段：資訊保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 在此步驟中，您會為組織定義安全性與保護層級。 例如，銷售部門可能只需要較低的安全性層級。 不過，您的研究部門與其高價值的智慧財產權可能需要高安全性層級，以便加密檔案並將存取權限制在僅供研究人員使用。
 
@@ -42,4 +44,4 @@ ms.locfileid: "37370390"
 
 |||
 |:-------|:-----|
-|![步驟 2](./media/stepnumbers/Step2.png)|[設定環境的分類](infoprotect-configure-classification.md)|
+|![步驟 2](../media/stepnumbers/Step2.png)|[設定環境的分類](infoprotect-configure-classification.md)|

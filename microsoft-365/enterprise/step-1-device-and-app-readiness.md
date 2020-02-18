@@ -15,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在環境中評估裝置和應用程式整備。
-ms.openlocfilehash: 6bf41d0930a3c957bb856d35815bf05087997208
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: abeb6bbfcc5a8de869263f5a4aa922a6642a92f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774209"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085464"
 ---
 # <a name="step-1-device-and-app-readiness"></a>步驟 1：裝置和應用程式整備
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-1.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Step 1" height="130" width="130" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Step 1" height="130" width="130" /></td>
 <td><p><strong>步驟 1：裝置和應用程式整備</strong></p>
 <p>從清查您的裝置和應用程式開始您的桌面部署專案，設定前進的優先順序，測試優先的應用程式和裝置，然後針對需要進行修復以準備部署。</p></td>
-<td><a href="https://aka.ms/ddev1" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-14.png" alt="Step 1" height="120" width="213" /></a></td>
+<td><a href="https://aka.ms/ddev1" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-14.png" alt="Step 1" height="120" width="213" /></a></td>
 </thead>
 </table>
 
@@ -71,15 +71,15 @@ ms.locfileid: "41774209"
 
 電腦分析使用無代理程式的程序，來清查整個桌面資產的電腦和應用程式。 它也會提供經常造訪網際網路網站、應用程式和內部網路位置，以協助您稍後進行相容性測試。
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-4.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-4.png)
 
 ### <a name="2-prioritize"></a>2\. 設定優先順序
 
 清查之後，電腦分析會協助您識別貴組織中最常使用的應用程式和硬體，並設定優先順序，以及盡可能減少需部署的電腦數量時可以著重的地方。
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-5.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-5.png)
 
 同時提供指引，協助您評估在下一個步驟「測試」期間解決問題時所需的更新。
 
@@ -91,13 +91,13 @@ ms.locfileid: "41774209"
 
 此外，為了協助您移至 Office 365 專業增強版，您可能想要使用[適用於 Office 的整備工具組](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro)，測試您的增益集與 Microsoft Visual Basic for Applications (VBA) 巨集的相容性。
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
 ### <a name="4-remediation"></a>4\. 修復
 
 裝置和應用程式整備的最後一個階段是「修復」。 您在這裡想要收集必要的軟體或驅動程式套件，您要在部署程序中，使用這些項目來取代或更新舊版。
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-7.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-7.png)
 
 執行問題修復清單時，您會發現越來越多電腦變成「準備好進行部署」。這表示驅動程式和電腦上的應用程式都已記錄為與您目標部署的 Windows 10 版本相容。
 

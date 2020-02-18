@@ -1,6 +1,8 @@
 ---
 title: 適用於高度管制資料的 SharePoint 網站
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/31/2019
@@ -11,14 +13,15 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom: ''
 description: 建立安全的 SharePoint 小組網站來儲存您最重要且最敏感的檔案。
-ms.openlocfilehash: f8ccda85256e1f590f80a9302897e2950c59d154
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: c74a2bc59a6ef9d16ecd0dfbed06d577bd98649b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699743"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085055"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>適用於高度管制資料的 SharePoint 網站
 
@@ -59,7 +62,7 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 以下是安全 SharePoint 網站的設定範例。
 
-![適用於高度管制資料的 SharePoint 網站案例](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+![適用於高度管制資料的 SharePoint 網站案例](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
 此案例需要您已部署：
 
@@ -68,9 +71,9 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 下列階段會逐步帶您針對適用於高度管制資料的 SharePoint 網站，進行設計、設定及推動採用。
 
-<a name="poster"></a> 如需此案例的 1 頁式摘要，請參閱[適用於高度管制資料的 SharePoint 網站海報](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)。
+<a name="poster"></a> 如需此案例的 1 頁式摘要，請參閱[適用於高度管制資料的 SharePoint 網站海報](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)。
 
-[![適用於高度管制資料的 SharePoint 網站海報](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
+[![適用於高度管制資料的 SharePoint 網站海報](../media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
 
 您也可以用 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) 或 [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) 格式下載此海報，以及用 Letter、Legal 或 Tabloid (11 x 17) 大小的紙張列印此海報。
 
@@ -170,11 +173,11 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 以下是使用高度管制標籤的子標籤所產生的設定。
 
-![適用於高度管制資料的 SharePoint 網站案例](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+![適用於高度管制資料的 SharePoint 網站案例](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
 以下是使用者將子標籤套用至儲存在網站中的檔案的範例。
 
-![適用於高度管制資料的 SharePoint 網站案例](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
+![適用於高度管制資料的 SharePoint 網站案例](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
 
 
 ## <a name="phase-3-drive-user-adoption"></a>階段 3：推動使用者採用

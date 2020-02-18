@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 在整個組織中逐步執行將 Microsoft Office、Office 伺服器及 Windows 的各版本移轉為 Microsoft 365 企業版的程序。
-ms.openlocfilehash: 2f5b1b077346e3225252ef25a4e9e685c4892a7c
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: 06cacbb45a98bb62f53866b0d2ab7ba393e609a0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148487"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066804"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>移轉至 Microsoft 365 企業版
 
@@ -151,9 +151,9 @@ Windows 7 將於 **2020 年 1 月 14 日**終止支援。 若要移轉執行 Win
 
 ## <a name="summary-of-options-for-office-2010-clients-and-servers-and-windows-7"></a>適用於 Office 2010 用戶端與伺服器和 Windows 7 的選項摘要
 
-如需適用於這些產品的升級、移轉和移至雲端選項的視覺摘要，請參閱[終止支援海報](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)。
+如需適用於這些產品的升級、移轉和移至雲端選項的視覺摘要，請參閱[終止支援海報](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)。
 
-[![Office 2010 用戶端與伺服器和 Windows 7 終止支援海報的影像](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+[![Office 2010 用戶端與伺服器和 Windows 7 終止支援海報的影像](../media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
 這張單頁海報可讓您快速了解可以採取的各種方法，以防止 Office 2010 用戶端與伺服器產品以及 Windows 7 進入終止支援，而海報上也會強調顯示 Microsoft 365 企業版中慣用的方式和結果目的地。
 
@@ -171,9 +171,9 @@ Windows 7 將於 **2020 年 1 月 14 日**終止支援。 若要移轉執行 Win
 
 ## <a name="transition-your-entire-organization"></a>轉換您的整個組織
 
-若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請下載[轉換海報](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
+若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請下載[轉換海報](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
 
-[![轉換至 Microsoft 365 海報的影像](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![轉換至 Microsoft 365 海報的影像](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 這份雙頁海報可讓您快速清查您現有的基礎結構，並取得移至 Microsoft 365 企業版中對應產品或服務的指導方針。 包含 Windows 和 Office 產品和其他基礎結構與安全性元素，例如裝置管理、身分識別以及資訊和威脅防護。
 

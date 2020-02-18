@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: 就像在 Microsoft 365 合規性中心的功能，一律會不斷我們的說明內容。 我們持續正在建立新的文章、 更新現有的項目，以及變更根據您的意見反應。 了解什麼是新及更新這個月。
-ms.openlocfilehash: 40ad0249b834eb187fecc34df3e2785e84201eee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b285b51ca20e2822be9d8193d33e634418adbeb3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601650"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081621"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 合規性內容的新版更新
 
@@ -117,13 +117,13 @@ ms.locfileid: "41601650"
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 
-[套用敏感度標籤內容自動](apply-sensitivity-label-automatically.md)（更新）<br>移除即將來臨的建議設定標籤的在 Outlook 中支援的相關資訊。 移除重複的授權資訊。 現在會指向[Office 應用程式中的敏感度標籤](sensitivity-labels-office-apps.md)中的授權資訊。
+[套用敏感度標籤內容自動](apply-sensitivity-label-automatically.md)（更新）<br>移除即將來臨的建議設定標籤的在 Outlook 中支援的相關資訊。 移除重複的授權資訊。 現在會指向[Office 應用程式中的使用敏感度標籤](sensitivity-labels-office-apps.md)中的授權資訊。
 
 [啟用 SharePoint 和 OneDrive (public preview) 中的 Office 檔案的敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)（新增）<br>如何準備 SharePoint 和 OneDrive 的敏感度標籤內容儲存在這些位置的應用程式的指引。
 
 [敏感度標籤概觀](sensitivity-labels.md)（更新）<br>新增支援 Office 相關應用程式相關的詳細資料網頁、 Microsoft Teams、 Office 365 群組、 SharePoint 網站與 SharePoint 和 OneDrive 中的 Office 檔案。
 
-[在 Office 應用程式中的敏感度標籤](sensitivity-labels-office-apps.md)（更新）<br>新包括有關的詳細資料的幾個更新支援應用程式、 訂閱與授權需求和系統管理員定義的範本 （例如 Office 365 郵件加密及敏感度標籤的那些） 之間的互動。
+[在 Office 應用程式中的使用敏感度標籤](sensitivity-labels-office-apps.md)（更新）<br>新包括有關的詳細資料的幾個更新支援應用程式、 訂閱與授權需求和系統管理員定義的範本 （例如 Office 365 郵件加密及敏感度標籤的那些） 之間的互動。
 
 [Microsoft Teams、 Office 365 群組與 SharePoint 網站 （公用預覽） 使用敏感度標籤](sensitivity-labels-teams-groups-sites.md)（新增）<br>需設定和套用 Microsoft Teams、 Office 365 群組和 SharePoint 網站中的敏感度標籤的詳細資訊。
 

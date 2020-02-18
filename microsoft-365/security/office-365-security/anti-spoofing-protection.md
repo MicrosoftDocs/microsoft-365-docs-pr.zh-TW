@@ -1,5 +1,7 @@
 ---
 title: Office 365 的反詐騙保護
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTtracyp
 manager: dansimp
@@ -16,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 本文說明 Office 365 如何減少使用偽造寄件者網域的網路釣魚攻擊，即詐騙網域。 其達成目的的方式是透過分析郵件，和封鎖無法使用標準電子郵件驗證方法或其他寄件者信譽技術來進行驗證的郵件。 採用此項變更是為了減少 Office 365 中的組織所暴露的網路釣魚攻擊數量。
-ms.openlocfilehash: cb978dd39e9645b8179490d498713137ab79af46
-ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+ms.openlocfilehash: 007686f8d210124948a42b2c254fc58332cdd3de
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233894"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087047"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 
@@ -41,13 +43,13 @@ Microsoft 的反詐騙技術最初部署在具有 Office 365 企業版 E5 訂閱
 
 首先，詐騙郵件會誘騙使用者按下連結並給予其憑證，下載惡意程式碼或回覆具有敏感內容的郵件 (後者稱為商務電子郵件入侵)。 例如，以下是假冒寄件者為 msoutlook94@service.outlook.com 的網路釣魚郵件：
 
-![冒充 service.outlook.com 的網路釣魚郵件](../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+![冒充 service.outlook.com 的網路釣魚郵件](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
 上述郵件並不是真正從 service.outlook.com 寄出的郵件，而是網路釣魚者所偽造的郵件。 這封郵件試圖誘騙使用者按下郵件內的連結。
 
 下個範例是假冒的 contoso.com：
 
-![網路釣魚郵件 - 商務電子郵件入侵](../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+![網路釣魚郵件 - 商務電子郵件入侵](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
 
 郵件看起來合法，但實際上卻是偽造的。 這封網路釣魚郵件是一種商務電子郵件入侵，也就是網路釣魚的子類別。
 
@@ -55,7 +57,7 @@ Microsoft 的反詐騙技術最初部署在具有 Office 365 企業版 E5 訂閱
 
 第二，詐騙郵件會讓使用者產生不確定感，他們知道什麼是網路釣魚郵件，但卻無法分辨真實郵件和詐騙郵件之間的差異。 例如，下列是來自 Microsoft 安全性帳戶電子郵件地址的實際密碼重設郵件範例：
 
-![Microsoft 合法密碼重設](../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+![Microsoft 合法密碼重設](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
 上述郵件確實是來自 Microsoft，但使用者仍然還是會收到誘騙使用者按下連結並給予其憑證，下載惡意程式碼或回覆具有敏感內容的網路釣魚郵件。 因為分辨真實密碼重設郵件與假冒郵件有其難度，許多使用者會略過這些郵件、將它們回報為垃圾郵件或在不應該的情況下，將這些郵件回報給 Microsoft 為遺漏的網路釣魚詐騙。
 
@@ -63,7 +65,7 @@ Microsoft 的反詐騙技術最初部署在具有 Office 365 企業版 E5 訂閱
 
 不過，問題在於電子郵件驗證記錄並非強制必要的。 因此，雖然採用強式驗證原則的網域 (如 microsoft.com 和 skype.com) 可防止詐騙，但是發佈較弱的驗證原則、或甚至完全未採用任何原則的網域就成了詐騙目標。 截至 2018 年 3 月，在財富雜誌前 500 大公司的網域中，只有 9% 發佈強式的電子郵件驗證原則。 剩下 91% 則可能受網路釣魚者的詐騙，且可能傳送郵件到使用者端來欺騙使用者，除非電子郵件篩選器使用另外的原則進行偵測：
 
-![財富雜誌前 500 大公司採用的 DMARC 原則](../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
+![財富雜誌前 500 大公司採用的 DMARC 原則](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
 不在財富雜誌前 500 大中的中小型企業，有發佈強式電子郵件驗證原則的比例更少，且北美和西歐地區以外的網域具有強式電子郵件驗證原則的比例同樣很少。
 
@@ -149,7 +151,7 @@ SFTY 是郵件安全層級，第一個數字 (9) 表示郵件是網路釣魚，�
 
 在這兩種情況下，郵件中會註記下列紅色安全提示，或依照收件者信箱語言自訂的相同提示：
 
-![紅色安全提示 - 詐騙偵測](../media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
+![紅色安全提示 - 詐騙偵測](../../media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
 
 透過查看收件者地址並了解收件者電子郵件的內容，或者透過檢查電子郵件標頭，您才能分辨內部組織詐騙和跨網域詐騙。
 
@@ -221,7 +223,7 @@ To: receiver @ contoso.com
 
 在電子郵件用戶端 (Outlook、網頁版 Outlook 或任何其他電子郵件用戶端) 中，只會顯示寄件者網域，不會顯示 SPF 或 DKIM 中的網域，這可能會誤導使用者認為郵件是來自 fabrikam.com，但實際上郵件來自 maliciousDomain.com。
 
-![郵件已通過驗證，但寄件者網域未與通過 SPF 或 DKIM 的網域相符](../media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
+![郵件已通過驗證，但寄件者網域未與通過 SPF 或 DKIM 的網域相符](../../media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
 
 為此，Office 365 要求寄件者地址中的網域與 SPF 或 DKIM 簽章中的網域相符，若未相符，則會包含某些其他內部訊號，來指出該郵件為合法郵件。 否則，郵件的 compauth 會失敗。
 
@@ -259,17 +261,17 @@ To: someone@fabrikam.com
 
 若要建立或更新 (跨網域) 反詐騙設定，請瀏覽至 [安全性與合規性中心] 中的 [威脅管理] \> [原則] 索引標籤下的 [防網路釣魚] \>[反詐騙] 設定。 如果您之前從未建立過任何防網路釣魚設定，您必須建立一個新：
 
-![防網路釣魚 - 建立新原則](../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
+![防網路釣魚 - 建立新原則](../../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
 
 如果您已建立，則可以加以選取來修改：
 
-![防網路釣魚 - 修改現有原則](../media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
+![防網路釣魚 - 修改現有原則](../../media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
 
 選取您剛剛建立的原則，然後繼續進行[深入了解詐騙情報](learn-about-spoof-intelligence.md)中所述的步驟。
 
-![啟用或停用反詐騙功能](../media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
+![啟用或停用反詐騙功能](../../media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
 
-![啟用或停用反詐騙安全提示](../media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
+![啟用或停用反詐騙安全提示](../../media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
 
 若要使用 PowerShell 建立新原則：
 
@@ -295,11 +297,11 @@ Set-AntiphishPolicy -Identity $name <fill in rest of parameters>
 
 2018 年下半年，就不需要由您來建立預設原則，系統會為您建立一個涵蓋組織內所有收件者的原則，因此您就不需手動指定 (在最終實作前，以下螢幕擷取畫面有可能變更。)
 
-![防網路釣魚的預設原則](../media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
+![防網路釣魚的預設原則](../../media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
 
 不同於您所建立的原則，您無法刪除預設原則、修改它的優先順序，或選擇要納入範圍的使用者、網域或群組。
 
-![防網路釣魚預設原則的詳細資訊](../media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
+![防網路釣魚預設原則的詳細資訊](../../media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
 
 若要使用 PowerShell 設定預設的防護功能：
 
@@ -338,7 +340,7 @@ Office 365 會追蹤誰傳送未經驗證電子郵件到您的組織。 如果�
 
 若要允許此寄件者傳送未經驗證的電子郵件，請將 [否] **** 變更為 [是]****。
 
-![設定反詐騙允許的寄件者](../media/d4334921-d820-4334-8217-788279701e94.jpg)
+![設定反詐騙允許的寄件者](../../media/d4334921-d820-4334-8217-788279701e94.jpg)
 
 您也可以使用 PowerShell 以允許特定寄件者偽造您的網域：
 
@@ -347,13 +349,13 @@ $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
 Get-PhishFilterPolicy -Detailed -SpoofAllowBlockList -SpoofType External | Export-CSV $file
 ```
 
-![從 Powershell 設定冒名寄件者](../media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
+![從 Powershell 設定冒名寄件者](../../media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
 
 在上一個影像中，新增了額外的分行符號，讓這個螢幕擷取畫面顯示為最適大小。 一般來說，所有值會顯示在同一行。
 
 編輯檔案並尋找對應至 outlook.com 和 bing.com 的行，並將 AllowedToSpoof 項目從 No 變更為 Yes：
 
-![在 Powershell 中將 spoof allow 設定為 Yes](../media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
+![在 Powershell 中將 spoof allow 設定為 Yes](../../media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
 
 儲存檔案，然後再執行：
 
@@ -380,7 +382,7 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 啟用反詐騙原則後，您就可以使用調查和應變功能來得知有多少郵件被標示為網路釣魚郵件。 若要這麼做，請移至安全性與合規性中心 (SCC)，在 [威脅管理] \> [總管] 下，將 [檢視] 設為 [網路釣魚]，並依 [寄件者網域] 或 [防護狀態] 來群組：
 
-![檢視有多少郵件被標示為網路釣魚郵件](../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
+![檢視有多少郵件被標示為網路釣魚郵件](../../media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
 
 您可以與各式各樣的報告互動，以查看有多少郵件被標示為網路釣魚郵件，包括被標示為 SPOOF 的郵件。 若要深入了解，請參閱[Office 365 威脅調查與應變快速入門](office-365-ti.md)。
 
@@ -388,7 +390,7 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 下列螢幕擷取畫面是此資料外觀的提議，但發行時可能有所變更：
 
-![依據偵測類型檢視網路釣魚報告](../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
+![依據偵測類型檢視網路釣魚報告](../../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
 
 針對非 ATP 和 E5 的客戶，之後可在威脅防護狀態 (TPS) 報告下使用這些報告，但將延遲至少 24 個小時。 當這些客戶整合至安全性與合規性中心之後，這個頁面將會更新。
 
@@ -398,9 +400,9 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 這項功能目前還在開發階段。 隨著更多詳細資料定義之後，此頁面將更新安全性與合規性中心的螢幕擷取畫面以及 PowerShell範例。
 
-![啟用反詐騙的「模擬」報告](../media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
+![啟用反詐騙的「模擬」報告](../../media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
 
-![用於允許詐騙寄件者可能的 UX](../media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
+![用於允許詐騙寄件者可能的 UX](../../media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
 
 ### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>停用反詐騙功能的合法案例
 
@@ -410,23 +412,23 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 但是，有一個合法案例反倒應該停用反詐騙功能，也就是在郵件路由中有其他郵件篩選產品，而且 Office 365 不是電子郵件路徑中的第一個躍點：
 
-![客戶 MX 記錄並非指向 Office 365](../media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
+![客戶 MX 記錄並非指向 Office 365](../../media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
 
 另一個伺服器可以是 Exchange 內部部署郵件伺服器、類似 Ironport 的郵件篩選裝置，或其他雲端託管服務。
 
 如果收件人網域的 MX 記錄未指向 Office 365，則無需停用反詐騙功能，因為 Office 365 會查詢您的接收網域的 MX 記錄，並在其指向其他服務時禁止反詐騙功能。 如果您不知道網域中是否還有其他伺服器，則可以使用類似 MX Toolbox 的網站來查詢 MX 記錄。 它可能會顯示如下所示的結果：
 
-![MX 記錄會指出網域未指向 Office 365](../media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
+![MX 記錄會指出網域未指向 Office 365](../../media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
 
 這個網域擁有的 MX 記錄未指向 Office 365，因此 Office 365 不會套用反詐騙強制措施。
 
 不過，如果您的收件者網域的 MX 記錄「未」** 指向 Office 365，即使 Office 365 前有其他服務，您也應該停用反詐騙功能。 最常見的範例是使用收件者重寫：
 
-![收件者重寫的路由圖表](../media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
+![收件者重寫的路由圖表](../../media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
 
 網域 contoso.com 的 MX 記錄指向內部部署伺服器，而網域 @office365.contoso.net 的 MX 記錄指向 Office 365，因為其 MX 記錄中包含 \*.protection.outlook.com 或 \*.eo.outlook.com：
 
-![MX 記錄指向 Office 365，因此可能是收件者重寫](../media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
+![MX 記錄指向 Office 365，因此可能是收件者重寫](../../media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
 
 請務必區分收件人網域 MX 記錄何時未指向 Office 365，以及何時進行了收件人重寫。 請務必分辨出這兩種情況之間的差異。
 
@@ -452,11 +454,11 @@ To: Example Recipient \<recipient @ contoso.com\>
 
 對於此特定範例，以下內容表示contoso.com (從 To：標頭看起來像收件人網域) 具有指向內部部署伺服器的 MX 記錄點：
 
-![MX 記錄指向內部部署伺服器](../media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
+![MX 記錄指向內部部署伺服器](../../media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
 
 不過，實際的收件者是 office365.contoso.net，其 MX 記錄確實指向 Office 365：
 
-![MX 指向 Office 365，必須是收件者重寫](../media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
+![MX 指向 Office 365，必須是收件者重寫](../../media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
 
 因此，這封郵件可能經過收件者重寫。
 

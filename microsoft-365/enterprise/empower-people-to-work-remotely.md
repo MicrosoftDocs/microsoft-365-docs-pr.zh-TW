@@ -1,6 +1,8 @@
 ---
 title: 強化遠端工作人員
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/24/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 設定基礎結構和安全性，讓您的員工隨時隨地都能遠端工作。
-ms.openlocfilehash: 2544820b577b81062550a8c0a84513f2a8c28668
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: b86071b7e5a6101c328b43177e965856f74995d5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831964"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067709"
 ---
 # <a name="empower-remote-workers"></a>強化遠端工作人員
 
@@ -70,9 +72,9 @@ ms.locfileid: "39831964"
 
 下列階段逐步引導您部署適用于遠端存取的 Microsoft 365 企業版功能，並推動採用遠端工作人員。 如果您已經部署這些階段的元素，請先確認它們符合所述的需求，再移至下一個元素。
 
-<a name="poster"></a> 如需此案例的 1 頁式摘要，請參閱[強化遠端工作人員海報](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)。
+<a name="poster"></a> 如需此案例的 1 頁式摘要，請參閱[強化遠端工作人員海報](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)。
 
-[![強化遠端工作人員海報](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
+[![強化遠端工作人員海報](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
 您也可以用 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 或 [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) 格式下載此海報，以及用 Letter、Legal 或 Tabloid (11 x 17) 大小的紙張列印此海報。
 
@@ -94,7 +96,7 @@ ms.locfileid: "39831964"
 
 以下是所產生的組態，強調身分識別元素。
 
-![遠端工作人員的身分識別元素](./media/empower-people-to-work-remotely/remote-workers-id-phase.png)
+![遠端工作人員的身分識別元素](../media/empower-people-to-work-remotely/remote-workers-id-phase.png)
  
 [階段 3：Windows 10 企業版](windows10-infrastructure.md)部署：
 
@@ -103,13 +105,13 @@ ms.locfileid: "39831964"
 
 以下是使用 Windows 10 企業版裝置所產生的組態。
 
-![適用于遠端工作人員的 Windows 10 企業元素](./media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
+![適用于遠端工作人員的 Windows 10 企業元素](../media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
  
 [階段 4：Office 365 專業增強版](office365proplus-infrastructure.md)，部署基礎結構以安裝 Office 365 專業增強版或在組織的裝置上將目前安裝的 Office 套件 (例如 Office 2010 或 Office 2013) 升級至 Office 365 專業增強版。 這會為您的使用者提供最佳的安全性和共同作業體驗。
 
 以下是安裝 Office 365 專業增強版的裝置所產生的組態。
 
-![適用于遠端工作人員的 Office 365 專業增強版元素](./media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
+![適用于遠端工作人員的 Office 365 專業增強版元素](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
  
 [階段 5：行動裝置管理](mobility-infrastructure.md)部署 Intune 裝置和應用程式管理：
 
@@ -119,7 +121,7 @@ ms.locfileid: "39831964"
 
 以下是所產生的組態，強調 Intune 註冊裝置和原則。
 
-![遠端工作人員的行動裝置管理元素](./media/empower-people-to-work-remotely/remote-workers-mdm-phase.png)
+![遠端工作人員的行動裝置管理元素](../media/empower-people-to-work-remotely/remote-workers-mdm-phase.png)
  
 [階段 6：資訊保護](infoprotect-infrastructure.md)是為您的數位資產設計和設定保護：
 
@@ -128,13 +130,13 @@ ms.locfileid: "39831964"
 
 以下是所產生的組態，強調 [DLP 原則] 和 [敏感度標籤]。
 
-![適用于遠端工作人員的資訊保護元素](./media/empower-people-to-work-remotely/remote-workers-ip-phase.png)
+![適用于遠端工作人員的資訊保護元素](../media/empower-people-to-work-remotely/remote-workers-ip-phase.png)
  
 若要存取內部部署的應用程式，您可以使用 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)，這需要混合式身分識別環境。
 
 以下是所產生的組態，強調 [應用程式 Proxy] 元件。
 
-![遠端工作人員的應用程式 Proxy 元素](./media/empower-people-to-work-remotely/remote-workers-app-proxy.png)
+![遠端工作人員的應用程式 Proxy 元素](../media/empower-people-to-work-remotely/remote-workers-app-proxy.png)
  
 ### <a name="step-2-workloads-for-remote-workers"></a>步驟2：適用于遠端工作人員的工作負載
 
@@ -146,7 +148,7 @@ ms.locfileid: "39831964"
 
 以下是所產生的組態，強調工作負載。
 
-![適用于遠端工作人員的 Microsoft 365 工作負載](./media/empower-people-to-work-remotely/remote-workers-workloads.png)
+![適用于遠端工作人員的 Microsoft 365 工作負載](../media/empower-people-to-work-remotely/remote-workers-workloads.png)
  
 ### <a name="deployment-results"></a>部署結果
 
@@ -165,11 +167,11 @@ ms.locfileid: "39831964"
 
 如果您使用混合式身分識別，以下是貴組織的遠端工作人員所產生的組態。
 
-![使用混合式身分識別的組織的最終設定](./media/empower-people-to-work-remotely/remote-workers-hybrid.png) 
+![使用混合式身分識別的組織的最終設定](../media/empower-people-to-work-remotely/remote-workers-hybrid.png) 
  
 以下是您組織的遠端工作人員 (如果您使用的是雲端身分識別) 所產生的組態。
 
-![只有雲端身分識別的組織的最終組態](./media/empower-people-to-work-remotely/remote-workers-cloud-only.png)
+![只有雲端身分識別的組織的最終組態](../media/empower-people-to-work-remotely/remote-workers-cloud-only.png)
 
 ## <a name="phase-2-drive-user-adoption-for-remote-workers"></a>階段2：推動使用者採用遠端工作人員
 

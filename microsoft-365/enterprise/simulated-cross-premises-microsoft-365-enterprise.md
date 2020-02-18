@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 測試環境中模擬的跨單位部署虛擬網路
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 description: 摘要：在 Microsoft Azure 中建立模擬的跨單位部署虛擬網路，以作為 Microsoft 365 測試環境。
-ms.openlocfilehash: 4293975fc6c2cd2583fe8e0dd7bbf54536f6c93c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 52ba80d8613f44b252389da87891359eadae752a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801318"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084159"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Microsoft 365 測試環境中模擬的跨單位部署虛擬網路
 
@@ -27,7 +29,7 @@ ms.locfileid: "40801318"
 
 本文逐步引導您建立模擬的混合式雲端環境，具有使用兩個 Azure 虛擬網路的 Microsoft Azure。以下是產生的組態配置。 
   
-![模擬的跨部署虛擬網路測試環境，搭配 XPrem VNet 中 DC2 虛擬機器的階段 3](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![模擬的跨部署虛擬網路測試環境，搭配 XPrem VNet 中 DC2 虛擬機器的階段 3](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 它模擬 Azure IaaS 混合式雲端生產環境，包括：
   
@@ -58,10 +60,10 @@ ms.locfileid: "40801318"
 
 您可以利用額外的[測試實驗室指南](m365-enterprise-test-lab-guides.md)或靠您自己，使用所產生的環境來測試 [Microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise)的功能。
 
-![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) (英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>階段 1：設定 TestLab 虛擬網路
 
@@ -69,7 +71,7 @@ ms.locfileid: "40801318"
   
 這是您目前的組態。 
   
-![Azure 中的模擬企業基底組態](media/simulated-cross-premises-microsoft-365-enterprise/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Azure 中的模擬企業基底組態](../media/simulated-cross-premises-microsoft-365-enterprise/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 ## <a name="phase-2-create-the-xprem-virtual-network"></a>階段 2：建立 XPrem 虛擬網路
 
@@ -126,7 +128,7 @@ Add-AzVirtualNetworkPeering -Name XPrem2TestLab -VirtualNetwork $vnet2 -RemoteVi
 
 這是您目前的設定。 
   
-![模擬的跨部署虛擬網路測試環境，搭配 XPrem VNet 與 VNet 的對等關係的階段 2](media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
+![模擬的跨部署虛擬網路測試環境，搭配 XPrem VNet 與 VNet 的對等關係的階段 2](../media/simulated-cross-premises-microsoft-365-enterprise/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
   
 ## <a name="phase-3-configure-dc2"></a>階段 3：設定 DC2
 
@@ -198,7 +200,7 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 
 這是您目前的設定。 
   
-![模擬的跨部署虛擬網路測試環境，搭配 XPrem VNet 中 DC2 虛擬機器的階段 3](media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
+![模擬的跨部署虛擬網路測試環境，搭配 XPrem VNet 中 DC2 虛擬機器的階段 3](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
 模擬的 Azure 混合式雲端環境已準備好進行測試。
   

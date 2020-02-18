@@ -1,5 +1,7 @@
 ---
 title: 步驟 4：新增使用者帳戶
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 直接在雲端中，或透過與內部部署目錄同步處理來新增使用者帳戶和群組。
-ms.openlocfilehash: 04564d86031642276e964f3a70fa2729f6b16c00
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 324d4662f868a4a92693b43c6bc0f75c11f20519
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801838"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067365"
 ---
 # <a name="step-4-add-your-user-accounts"></a>步驟 4：新增使用者帳戶
 
-![階段 2 - 身分識別](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![階段 2 - 身分識別](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-cloud-only"></a>
 ## <a name="create-your-user-accounts-for-cloud-only-identity"></a>為僅限雲端身分識別建立使用者帳戶
@@ -42,7 +44,7 @@ ms.locfileid: "40801838"
 
 Azure AD Connect 是支援的 Microsoft 工具，可逐步引導您將單一或多個樹系 AD DS 環境之中您真正需要的身分識別，同步處理至 Azure AD 租用戶。 下圖顯示 Azure AD Connect 同步處理的基本程序。
 
-![Azure AD Connect 如何同步處理內部部署目錄與 Azure AD ](./media/identity-add-user-accounts/azure-ad-connect.png)
+![Azure AD Connect 如何同步處理內部部署目錄與 Azure AD ](../media/identity-add-user-accounts/azure-ad-connect.png)
 
 1. 在伺服器上執行的 Azure AD Connect 會輪詢 AD DS 以了解帳戶、群組和連絡人是否有變更。
 2. Azure AD Connect 會將這些變更傳送至 Microsoft 365 月租方案的 Azure AD 租用戶。
@@ -74,7 +76,7 @@ Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configur
 
 |||
 |:-------|:-----|
-|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：密碼雜湊同步處理](password-hash-sync-m365-ent-test-environment.md)<br> [測試實驗室指南：傳遞驗證](pass-through-auth-m365-ent-test-environment.md) |
+|![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：密碼雜湊同步處理](password-hash-sync-m365-ent-test-environment.md)<br> [測試實驗室指南：傳遞驗證](pass-through-auth-m365-ent-test-environment.md) |
 |||
 
 作為過渡期的檢查點，您可以看到對應至這一節的[允出準則](identity-exit-criteria.md#crit-identity-sync)。
@@ -86,7 +88,7 @@ Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configur
 
 在這一節中，您會在每個內部部署 AD DS 網域控制站上安裝 Azure AD Connect Health 代理程式，以監控您的身分識別基礎結構，以及由 Azure AD Connect 提供的同步處理服務。 監控資訊會在 Azure AD Connect Health 入口網站提供，您可以在其中檢視警訊、效能監控、使用量分析及其他資訊。
 
-![Azure AD Connect Health 的元件](./media/identity-add-user-accounts/identity-azure-ad-connect-health.png)
+![Azure AD Connect Health 的元件](../media/identity-add-user-accounts/identity-azure-ad-connect-health.png)
 
 如何使用 Azure AD Connect Health 的關鍵設計決策取決於您如何使用 Azure AD Connect：
 
@@ -119,11 +121,11 @@ Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configur
 
 |||
 |:-------|:-----|
-|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：密碼回寫](password-writeback-m365-ent-test-environment.md) |
+|![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：密碼回寫](password-writeback-m365-ent-test-environment.md) |
 |||
 
 作為過渡期的檢查點，您可以看到這一節的[允出準則](identity-exit-criteria.md#crit-identity-pw-writeback)。
 
 |||
 |:-------|:-----|
-|![步驟 5](./media/stepnumbers/Step5.png)| [使用群組進行管理](identity-use-group-management.md) |
+|![步驟 5](../media/stepnumbers/Step5.png)| [使用群組進行管理](identity-use-group-management.md) |

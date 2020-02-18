@@ -1,6 +1,8 @@
 ---
 title: Contoso Corporation 的身分識別
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用身分識別即服務 (IDaaS)，為其員工提供雲端式驗證，為其合作夥伴和客戶提供同盟驗證。
-ms.openlocfilehash: dc893fb1e632cf15a612ebf13e911173933d9af3
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 77c90740fd39080ccc204552bc8407aa107e354a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673209"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068442"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的身分識別
 
@@ -30,7 +32,7 @@ Contoso 在 contoso.com 上會使用單一 Active Directory Domain Services (AD 
 
 這是 Contoso 樹系，具有包含區域中樞之不同世界各地的區域網域。
 
-![Contoso 的樹系和世界各地的網域](./media/contoso-identity/contoso-identity-fig1.png)
+![Contoso 的樹系和世界各地的網域](../media/contoso-identity/contoso-identity-fig1.png)
  
 Contoso 希望在 contoso.com 樹系中使用帳戶和群組，以對其 Microsoft 365 工作負載和服務進行驗證及授權。
 
@@ -43,7 +45,7 @@ Contoso 允許︰
 
 這是 Contoso DMZ，其中包含公用網站、合作夥伴外部網路，和一組 Active Directory 同盟服務 (AD FS) 伺服器。DMZ 會連線到網際網路，其中包含客戶、合作夥伴和網際網路服務。
 
-![Contoso 對於客戶和合作夥伴同盟驗證的支援](./media/contoso-identity/contoso-identity-fig2.png)
+![Contoso 對於客戶和合作夥伴同盟驗證的支援](../media/contoso-identity/contoso-identity-fig2.png)
  
 DMZ 中的 AD FS 伺服器可協助依其身分識別提供者來驗證客戶的認證以存取公用網站，以及驗證合作夥伴的認證以存取合作夥伴外部網路。
 
@@ -59,7 +61,7 @@ PHS 會同步處理內部部署 AD DS 樹系與 Microsoft 365 企業版訂閱中
 
 這是執行 Azure AD Connect 的伺服器正在輪詢 Contoso AD 樹系是否有變更，然後將這些變更與 Azure AD 租用戶進行同步。
 
-![Contoso 的 PHS 目錄同步處理基礎結構](./media/contoso-identity/contoso-identity-fig4.png)
+![Contoso 的 PHS 目錄同步處理基礎結構](../media/contoso-identity/contoso-identity-fig4.png)
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>身分識別和裝置存取的條件式存取原則
 
@@ -71,7 +73,7 @@ Contoso 已針對三個保護層級建立一組 Azure AD 和 Intune 的[條件�
 
 這是 Contoso 身分識別及裝置條件式存取原則的結果集合。
 
-![Contoso 的身分識別及裝置條件式存取原則](./media/contoso-identity/contoso-identity-fig5.png)
+![Contoso 的身分識別及裝置條件式存取原則](../media/contoso-identity/contoso-identity-fig5.png)
  
 ## <a name="next-step"></a>下一步
 

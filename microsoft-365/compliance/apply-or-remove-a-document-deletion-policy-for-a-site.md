@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: 組織通常會受限於合規性、 法律或其他法規，需要一段時間保留文件。 但是，將文件保留超過要求時間，可能會讓組織暴露在法律風險下。 基於這個理由，您的組織可能已建立您網站的文件刪除原則 — 例如，一般商業文件可能需要刪除五年之後建立它們。
-ms.openlocfilehash: 67bbe3339b492e5199799a21e5b3b249a3a98c08
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f04b693a68da36b37524fe5c1fd2e00fab6c2bc6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596070"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079830"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>套用或移除網站的文件刪除原則
 
@@ -64,7 +64,7 @@ ms.locfileid: "41596070"
     
 這份清單可僅，檢視網站集合擁有者若要查看所有可用的原則和規則。 若要套用原則，請參閱下一節。
   
-![指派給網站集合的文件刪除原則檢視](media/f2c0433b-2bb5-407d-a364-ae07c9627176.png)
+![指派給網站集合的文件刪除原則檢視](../media/f2c0433b-2bb5-407d-a364-ae07c9627176.png)
   
 ## <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>套用或移除網站的文件刪除原則
 
@@ -83,13 +83,13 @@ ms.locfileid: "41596070"
     
     只能將一個原則和一個規則可以為作用中的網站一次。 您的組織可能會提供數個原則和規則，以從中選擇或只能將一個原則或規則。
     
-    ![選取原則選項](media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
+    ![選取原則選項](../media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
   
   - **若要選擇退出原則**選擇 [**退出： 不要注意刪除** \> **儲存**。
     
     網站擁有人，您可以選擇退出文件刪除原則如果您判斷該原則未適用於您的網站中的內容。 不過，您無法選擇退出已標示為 [**強制**原則。
     
-    ![選擇加入出選項](media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
+    ![選擇加入出選項](../media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
   
 ## <a name="document-deletion-policies-override-other-policies"></a>文件刪除原則會覆寫其他原則
 
@@ -113,7 +113,7 @@ ms.locfileid: "41596070"
     
 2. 在 [**網站管理**] 下\>**內容類型原則範本**。
     
-    ![文件刪除原則，正在使用的網站上的警告](media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
+    ![文件刪除原則，正在使用的網站上的警告](../media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
   
 ### <a name="determine-if-information-management-policies-are-being-ignored"></a>決定是否要忽略資訊管理原則
 
@@ -121,7 +121,7 @@ ms.locfileid: "41596070"
   
 - 清單或文件庫，在功能區上的\>**文件庫**] 索引標籤\>**文件庫設定** \> **權限與管理**] 下\>**資訊管理原則設定**。
     
-    ![文件刪除原則，正在使用的網站上的警告](media/3f043057-a741-4cd8-a165-6d139b986064.png)
+    ![文件刪除原則，正在使用的網站上的警告](../media/3f043057-a741-4cd8-a165-6d139b986064.png)
   
 ## <a name="see-also"></a>另請參閱
 

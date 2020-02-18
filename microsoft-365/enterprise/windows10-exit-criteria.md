@@ -1,5 +1,7 @@
 ---
 title: 階段 3：Windows 10 企業版基礎結構允出準則
+f1.keywords:
+- NOCSH
 ms.author: greglin
 author: greg-lindsay
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的組態符合 Windows 10 企業版的 Microsoft 365 企業版準則。
-ms.openlocfilehash: d51392572c78edb1a21f5edc3229057b9af3f514
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 42d8ec912a70aecef49672682c25f5e42c4bbe21
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801218"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085552"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>階段 3：Windows 10 企業版基礎結構允出準則
 
-![階段 3：Windows 10 企業版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![階段 3：Windows 10 企業版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 請確定您的 Windows 10 企業版基礎結構符合下列必要準則，而且您已將這些視為選擇性準則。
 
@@ -125,4 +127,4 @@ Windows Autopilot 會設定裝置並將它連線到 Azure AD。
 
 |||
 |:-------|:-----|
-|![階段 4：Office 365 專業增強版](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| 如果您會遵循 Microsoft 365 企業版的端對端部署階段，則下一個階段是 [Office 365 專業增強版](office365proplus-infrastructure.md)。 |
+|![階段 4：Office 365 專業增強版](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| 如果您會遵循 Microsoft 365 企業版的端對端部署階段，則下一個階段是 [Office 365 專業增強版](office365proplus-infrastructure.md)。 |

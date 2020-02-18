@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3acd3b300c4472b32a261d28aeae6a9d94e17423
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f77a2967c6b789d28a95516594b1bdd5d8b9f3c6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594056"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080212"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>新增 custodians 至進階電子文件探索案例
 
@@ -29,7 +29,7 @@ ms.locfileid: "41594056"
 
 若要新增及管理 custodians 進階的 eDiscovery 案例中使用下列工作流程。 
 
-![Custodian 管理] 索引標籤](media/CustodianMgtPage.png)
+![Custodian 管理] 索引標籤](../media/CustodianMgtPage.png)
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -46,7 +46,7 @@ ms.locfileid: "41594056"
 
 3. 尋找要新增至案例 custodians。 輸入人名顯示從貴組織的 Azure Active Directory 使用者的第一個部分。 當您找到正確的人員時，請按一下 [他們將它們新增至清單的名稱。
 
-   ![識別潛在 Custodians](media/AddCustodianStep1.png)
+   ![識別潛在 Custodians](../media/AddCustodianStep1.png)
  
 4. 新增所有相關的 custodians 之後，按一下 [**下一步**選取 custodians 的主要資料來源。
   
@@ -58,7 +58,7 @@ ms.locfileid: "41594056"
 
 1. 若要選取的 Exchange 信箱的所有 custodians，選取頂端的資料行的 [ **Exchange** ] 核取方塊。 您可以再清除任何特定 custodian 若要移除的信箱為 custodial 位置核取方塊。 或者，您可以保留在未選取的資料行的最頂端的 [ **Exchange** ] 核取方塊，然後再選取個別 custodians] 核取方塊。 
  
-   ![選取 [Custodial 資料來源](media/AddCustodianStep2.png)
+   ![選取 [Custodial 資料來源](../media/AddCustodianStep2.png)
  
 2. 重複相同的 custodians 的 OneDrive 帳戶。 
 
@@ -74,7 +74,7 @@ ms.locfileid: "41594056"
 
 1. 在 [**選取其他資料來源**] 頁面上，按一下 [**新增**資料列中的特定 custodian。 
   
-   ![將其他資料來源對應](media/AddCustodianStep3.PNG)
+   ![將其他資料來源對應](../media/AddCustodianStep3.PNG)
 
 2. 在彈出式頁面上，您可以指定資料來源是從任何下列的 Office 365 服務：
   
@@ -87,7 +87,7 @@ ms.locfileid: "41594056"
      
      - **Teams** – 按一下 [**選擇小組**，然後按一下 [**選擇小組**]，以顯示 custodian 屬於目前的 Microsoft Teams 的清單。 選取您想要新增至您 custodian Teams。 一旦選取，系統會自動識別相關聯的 SharePoint 網站和群組信箱相關聯的 Microsoft Team & 選取。 按一下 [**選擇**，然後按一下 [**完成**。
 
-       ![對應的資料來源](media/AddCustodianStep4.PNG)
+       ![對應的資料來源](../media/AddCustodianStep4.PNG)
         
       > [!NOTE]
       > 若要建立與 custodian 關聯的其他小組，您必須分別新增信箱及使用**Exchange 郵件**與**SharePoint 網站**位置相關聯的小組網站。
@@ -102,7 +102,7 @@ ms.locfileid: "41594056"
 
 1. 在 [**暫止上選取 custodians** ] 頁面上，選取要就地保留所有 custodians 欄頂端的 [**保留**] 核取方塊。 您可以再清除從保留移除任何特定 custodian 核取方塊。 或者，您可以保留在未選取的資料行的最頂端的 [**保留**] 核取方塊，然後再選取個別 custodians] 核取方塊。 
  
-   ![就地保留](media/AddCustodianStep5.PNG)
+   ![就地保留](../media/AddCustodianStep5.PNG)
 
 2. 驗證 custodian 保留選取項目，然後按一下 [**完成**]。
 

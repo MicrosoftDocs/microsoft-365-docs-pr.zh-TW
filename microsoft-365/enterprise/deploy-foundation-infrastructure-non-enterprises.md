@@ -1,6 +1,8 @@
 ---
 title: 適用於非企業的 Microsoft 365 企業版底層基礎結構
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/08/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 提供非企業組織逐步執行 Microsoft 365 企業版底層基礎結構的簡化階段。
-ms.openlocfilehash: ce673222c08823c99c7e9851fced46a90a72b892
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2620b210c40d5c838cf1a4be4fcd67bf3de03d29
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802028"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068086"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>適用於非企業的 Microsoft 365 企業版底層基礎結構
 
@@ -55,7 +57,7 @@ ms.locfileid: "40802028"
 
 以下是將第 1 階段項目醒目提示的視覺摘要。 **您的組織**可以是多個辦公室，每個都有與使用地區的區域 DNS 伺服器的 ISP 的區域網際網路連線。 透過 ISP，每個辦公室的使用者都可以連線到最接近的 Microsoft 365 網路位置，並且取得 Microsoft 365 訂閱的資源。
 
-![在網路階段之後的貴組織](./media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
+![在網路階段之後的貴組織](../media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
 
 ## <a name="phase-2-identity"></a>階段 2：身分識別
 
@@ -150,30 +152,30 @@ Azure AD 會評估使用者登入的條件，而且可以使用條件式存取�
 
 以下是混合式身分識別在身分識別階段的視覺摘要，其中現有元素和新元素已加上醒目提示。
 
-![在混合式身分識別的身分識別階段之後的貴組織](./media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
+![在混合式身分識別的身分識別階段之後的貴組織](../media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
  
 全新和醒目提示的混合式身分識別元素包括：
  
 |||
 |:------:|:-----|
-| ![具有使用者帳戶和群組的內部部署 AD DS 網域](./media/deploy-foundation-infrastructure-non-enterprises/identity-adds.png) | 具有使用者帳戶和群組的內部部署 AD DS 網域。 |
-| ![執行 Azure AD Connect 的 Windows 伺服器](./media/deploy-foundation-infrastructure-non-enterprises/identity-aadconnect.png) | 執行 Azure AD Connect 的 Windows 伺服器。 |
-| ![Azure AD 中已同步處理的 AD DS 使用者帳戶和群組](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts.png) | Azure AD 中已同步處理的 AD DS 使用者帳戶和群組。 |
-| ![用於驗證、保護全域帳戶，以及更容易管理群組和授權的 Azure AD 設定](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | 用於驗證、保護全域帳戶，以及更容易管理群組和授權的 Azure AD 設定。 |
-| ![Azure AD 條件式存取原則](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 條件式存取原則。 |
+| ![具有使用者帳戶和群組的內部部署 AD DS 網域](../media/deploy-foundation-infrastructure-non-enterprises/identity-adds.png) | 具有使用者帳戶和群組的內部部署 AD DS 網域。 |
+| ![執行 Azure AD Connect 的 Windows 伺服器](../media/deploy-foundation-infrastructure-non-enterprises/identity-aadconnect.png) | 執行 Azure AD Connect 的 Windows 伺服器。 |
+| ![Azure AD 中已同步處理的 AD DS 使用者帳戶和群組](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts.png) | Azure AD 中已同步處理的 AD DS 使用者帳戶和群組。 |
+| ![用於驗證、保護全域帳戶，以及更容易管理群組和授權的 Azure AD 設定](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | 用於驗證、保護全域帳戶，以及更容易管理群組和授權的 Azure AD 設定。 |
+| ![Azure AD 條件式存取原則](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 條件式存取原則。 |
 |||
 
 以下是僅雲端身分識別在身分識別階段的視覺摘要，其中的新元素已加上醒目提示。
 
-![在僅雲端身分識別的身分識別階段之後的貴組織](./media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
+![在僅雲端身分識別的身分識別階段之後的貴組織](../media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
  
 全新和醒目提示的僅雲端身分識別元素包括：
  
 |||
 |:------:|:-----|
-| ![Azure AD 中的使用者帳戶和群組](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts-cloud-only.png) | Azure AD 中的使用者帳戶和群組。 |
-| ![用於驗證、保護全域帳戶，以及更容易管理群組和授權的 Azure AD 設定](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | 用於驗證、保護全域帳戶，以及更容易管理群組和授權的 Azure AD 設定。 |
-| ![Azure AD 條件式存取原則](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 條件式存取原則。 |
+| ![Azure AD 中的使用者帳戶和群組](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts-cloud-only.png) | Azure AD 中的使用者帳戶和群組。 |
+| ![用於驗證、保護全域帳戶，以及更容易管理群組和授權的 Azure AD 設定](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | 用於驗證、保護全域帳戶，以及更容易管理群組和授權的 Azure AD 設定。 |
+| ![Azure AD 條件式存取原則](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Azure AD 條件式存取原則。 |
 |||
 
 ## <a name="phase-3-windows-10-enterprise"></a>階段 3：Windows 10 企業版
@@ -201,14 +203,14 @@ Azure AD 會評估使用者登入的條件，而且可以使用條件式存取�
 
 以下是 Windows 10 企業版階段的視覺摘要 (將新項目醒目提示)。
 
-![在 Windows 10 企業版階段之後的貴組織](./media/deploy-foundation-infrastructure-non-enterprises/win10-config.png)
+![在 Windows 10 企業版階段之後的貴組織](../media/deploy-foundation-infrastructure-non-enterprises/win10-config.png)
  
 全新和醒目提示的 Windows 10 企業版元素包括：
 
 |||
 |:------:|:-----|
-| ![Windows 10 企業版安裝在 Windows 裝置上](./media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | Windows 10 企業版安裝在 Windows 裝置上，以內部部署膝上型電腦為例。 |
-| ![大量授權服務中心](./media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | 大量授權服務中心 (提供 Windows 10 企業版新安裝的映像)，以及商務用 Windows Update 服務 (提供最新的更新)。 |
+| ![Windows 10 企業版安裝在 Windows 裝置上](../media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | Windows 10 企業版安裝在 Windows 裝置上，以內部部署膝上型電腦為例。 |
+| ![大量授權服務中心](../media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | 大量授權服務中心 (提供 Windows 10 企業版新安裝的映像)，以及商務用 Windows Update 服務 (提供最新的更新)。 |
 |||
 
 ## <a name="phase-4-office-365-proplus"></a>階段 4：Office 365 專業增強版
@@ -225,14 +227,14 @@ Microsoft 365 企業版包含 Microsoft Office 的訂閱版本 Office 365 專業
 
 以下是 Office 365 專業增強版階段的視覺摘要 (將新項目醒目提示)。
 
-![在 Office 365 專業增強版階段之後的貴組織](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
+![在 Office 365 專業增強版階段之後的貴組織](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
  
 全新和醒目提示的 Office 365 專業增強版元素包括：
  
 |||
 |:------:|:-----|
-| ![Office 365 專業增強版安裝在裝置上](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 專業增強版安裝在裝置上，以內部部署膝上型電腦為例。 |
-| ![Office 365 專業增強版適用的 Office 內容傳遞網路 (CDN)](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Office 365 專業增強版適用的 Office 內容傳遞網路 (CDN)，裝置會存取它來取得 Office 365 專業增強版更新。 |
+| ![Office 365 專業增強版安裝在裝置上](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 專業增強版安裝在裝置上，以內部部署膝上型電腦為例。 |
+| ![Office 365 專業增強版適用的 Office 內容傳遞網路 (CDN)](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Office 365 專業增強版適用的 Office 內容傳遞網路 (CDN)，裝置會存取它來取得 Office 365 專業增強版更新。 |
 |||
 
 ## <a name="phase-5-mobile-device-management"></a>階段 5：行動裝置管理
@@ -264,14 +266,14 @@ Intune 原則可以強制執行裝置合規性和應用程式保護。 以下是
 
 以下是行動裝置管理階段的視覺摘要 (將新項目醒目提示)。
 
-![在行動裝置管理階段之後的貴組織](./media/deploy-foundation-infrastructure-non-enterprises/mdm-config.png)
+![在行動裝置管理階段之後的貴組織](../media/deploy-foundation-infrastructure-non-enterprises/mdm-config.png)
  
 全新和醒目提示的行動裝置管理元素包括：
 
 |||
 |:------:|:-----|
-| ![裝置已在 Intune 中註冊](./media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | 裝置已在 Intune 中註冊，顯示執行 Windows 10 企業版的內部部署膝上型電腦為例。 |
-| ![用於裝置合規性和應用程式保護的 Intune 原則](./media/deploy-foundation-infrastructure-non-enterprises/mdm-policies.png) | 用於裝置合規性和應用程式保護的 Intune 原則。 |
+| ![裝置已在 Intune 中註冊](../media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | 裝置已在 Intune 中註冊，顯示執行 Windows 10 企業版的內部部署膝上型電腦為例。 |
+| ![用於裝置合規性和應用程式保護的 Intune 原則](../media/deploy-foundation-infrastructure-non-enterprises/mdm-policies.png) | 用於裝置合規性和應用程式保護的 Intune 原則。 |
 |||
 
 ## <a name="phase-6-information-protection"></a>階段 6：資訊保護
@@ -330,13 +332,13 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
 
 以下是資訊保護階段的視覺摘要 (將新項目醒目提示)。
 
-![在資訊保護階段之後的貴組織](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-config.png)
+![在資訊保護階段之後的貴組織](../media/deploy-foundation-infrastructure-non-enterprises/info-protect-config.png)
  
 新的和醒目提示的資訊保護項目包括：
  
 |||
 |:------:|:-----|
-| ![三個安全性層級的敏感度標籤](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-labels.png) | 使用者可以套用至文件和電子郵件的三個安全性層級的敏感度標籤。 |
+| ![三個安全性層級的敏感度標籤](../media/deploy-foundation-infrastructure-non-enterprises/info-protect-labels.png) | 使用者可以套用至文件和電子郵件的三個安全性層級的敏感度標籤。 |
 |||
 
 不會顯示自訂資訊類型和保留標籤。
@@ -412,11 +414,11 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
 
 以下是組織使用混合式身分識別時的基礎結構視覺摘要，其中包含您的 AD DS 網域、Azure AD Connect 伺服器，以及已同步處理的 AD DS 使用者和群組。
 
-![組織使用混合式身分識別時的基礎結構摘要](./media/deploy-foundation-infrastructure-non-enterprises/final-hybrid-config.png)
+![組織使用混合式身分識別時的基礎結構摘要](../media/deploy-foundation-infrastructure-non-enterprises/final-hybrid-config.png)
  
 以下是組織使用僅雲端身分識別時的基礎結構視覺摘要。
  
-![組織使用僅雲端身分識別時的基礎結構摘要](./media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)
+![組織使用僅雲端身分識別時的基礎結構摘要](../media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)
 
 ### <a name="employee-results"></a>員工結果
 

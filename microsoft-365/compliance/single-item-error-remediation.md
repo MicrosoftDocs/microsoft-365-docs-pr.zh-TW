@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 您可以在進階電子文件探索中設定而不需要遵循大量錯誤修復程序檢閱文件中可修正處理錯誤。
-ms.openlocfilehash: c049ce4b5d3f8fc12a015a61ea927b744ae76eb3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3c50f9dcd1448ee36edd0e82e5b2c2879c11d6b5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601490"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069647"
 ---
 # <a name="single-item-error-remediation"></a>單一項目錯誤補救
 
@@ -31,21 +31,21 @@ ms.locfileid: "41601490"
 
 處理錯誤檢閱集合中的文件現在會識別 （與橫幅）。 您可以修復或略過此錯誤。 下列螢幕擷取畫面顯示 Word 文件的處理錯誤橫幅中受到密碼保護檢閱設定。 也請注意，您可以檢視的文件處理錯誤的檔案中繼資料。
 
-![顯示與處理錯誤的文件橫幅](media/SIERimage1.png)
+![顯示與處理錯誤的文件橫幅](../media/SIERimage1.png)
 
 您也可以使用**處理狀態**已處理錯誤的文件的搜尋條件時[查詢中檢閱文件集](review-set-search.md)。
 
-![使用處理狀態條件來搜尋的錯誤文件](media/SIERimage2.png)
+![使用處理狀態條件來搜尋的錯誤文件](../media/SIERimage2.png)
 
 ### <a name="ignore-errors"></a>忽略錯誤
 
 您可以忽略處理錯誤中的 [**略過**處理錯誤橫幅。 當您要略過錯誤時，請從[大量錯誤修復工作流程](error-remediation-when-processing-data-in-advanced-ediscovery.md)中移除文件。 忽略錯誤之後，文件橫幅變更色彩，並指出處理錯誤，已略過。 任何時候，您可以還原]，即可**還原**搜尋時忽略錯誤的決策。
 
-![按一下 [略過略過處理錯誤](media/SIERimage3.png)
+![按一下 [略過略過處理錯誤](../media/SIERimage3.png)
 
 您也可以搜尋已被略過時查詢的文件中的檢閱設定，請使用*略過處理錯誤*條件來處理錯誤的所有文件。
 
-![用於處理錯誤條件 Ignored 略過的錯誤文件中搜尋](media/SIERimage4.png)
+![用於處理錯誤條件 Ignored 略過的錯誤文件中搜尋](../media/SIERimage4.png)
 
 ## <a name="remediate-a-document-with-errors"></a>修復含有錯誤的文件
 
@@ -55,26 +55,26 @@ ms.locfileid: "41601490"
 
 1. 按一下 [**下載** > **下載原始**的檔案複本下載到本機電腦上。
 
-   ![下載文件與處理錯誤](media/SIERimage5.png)
+   ![下載文件與處理錯誤](../media/SIERimage5.png)
 
 2. 修復檔離線中的錯誤。 加密檔案，會需要解密軟體，以移除密碼保護，提供密碼，並將檔案儲存或使用密碼破解。 修復檔案之後，請移至下一個步驟。
 
 3. 在檢閱設定，請選取與您修復處理錯誤的檔案和 [**修復**。
 
-   ![按一下 [處理錯誤之文件橫幅中的 [修復](media/SIERimage6.png)
+   ![按一下 [處理錯誤之文件橫幅中的 [修復](../media/SIERimage6.png)
 
 
 4. 按一下 [**瀏覽**，移至您的本機電腦上的修復檔案的位置，然後選取的檔案。
 
-   ![按一下 [瀏覽]，然後選取 [本機電腦上的修復的檔案](media/SIERimage7.png)
+   ![按一下 [瀏覽]，然後選取 [本機電腦上的修復的檔案](../media/SIERimage7.png)
 
     選取後的修復的檔案，它是自動上傳至檢閱設定。 您可以追蹤檔案的處理狀態。
 
-    ![修復程序的狀態會顯示](media/SIERimage8.png)
+    ![修復程序的狀態會顯示](../media/SIERimage8.png)
 
    處理完成後，您可以檢視修復文件。
 
-    ![您可以檢視修復的檔案中檢閱集內的原生格式](media/SIERimage9.png)
+    ![您可以檢視修復的檔案中檢閱集內的原生格式](../media/SIERimage9.png)
 
 如需修復文件時，會發生什麼情況的詳細資訊，請參閱[當檔案修復時，會發生什麼事](error-remediation.md#what-happens-when-files-are-remediated)。
 

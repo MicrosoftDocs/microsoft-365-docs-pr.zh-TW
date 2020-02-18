@@ -1,5 +1,7 @@
 ---
 title: 事件導向保留的概觀
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留標籤，您可以讓發生特定類型事件的時間作為保留期間的依據。事件會觸發啟動保留期間，具有套用至該類型事件之保留標籤的所有事件，會強制執行標籤的保留動作。事件導向保留通常是作為記錄管理處理程序的一部分。
-ms.openlocfilehash: 109b6104f2a06559beae0148b581854f44e6394a
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: da5e10735e8980199a829ac50d096052abe93d14
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989568"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074495"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件導向保留的概觀
 
@@ -47,9 +49,9 @@ ms.locfileid: "40989568"
 
 若要成功使用事件導向保留，請務必了解如下所示的事件類型、標籤、事件和資產識別碼之間的關聯性。圖表後有說明。
   
-![事件類型、標籤、事件和資產識別碼的圖表](media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
+![事件類型、標籤、事件和資產識別碼的圖表](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
   
-![事件類型、標籤、事件和資產識別碼的圖表](media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
+![事件類型、標籤、事件和資產識別碼的圖表](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
   
 1. 建立不同類型內容的標籤，然後將其與事件類型產生關聯。例如，不同類型產品檔案和記錄的標籤會與名為「產品生命週期」的事件類型相關聯，因為這些記錄必須從產品達到其生命週期結束開始保留 10 年。
     
@@ -73,7 +75,7 @@ ms.locfileid: "40989568"
 
 以下是事件導向保留的高階工作流程。隨後是更詳細的步驟。
   
-![設定事件導向保留工作流程的圖表](media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
+![設定事件導向保留工作流程的圖表](../media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
   
 > [!TIP]
 > 請參閱[管理具有保留標籤之 SharePoint 文件的生命週期](auto-apply-retention-labels-scenario.md)，以了解使用 SharePoint 中受管理屬性來自動套用保留標籤和實作事件導向保留的詳細案例。
@@ -92,7 +94,7 @@ ms.locfileid: "40989568"
     
 - 自動刪除內容或在保留期間結束時觸發處置檢閱。
     
-![讓標籤以事件為依據的選項](media/a4902281-5196-4194-9737-f30231d95861.png)
+![讓標籤以事件為依據的選項](../media/a4902281-5196-4194-9737-f30231d95861.png)
   
 ### <a name="step-2-choose-an-event-type-for-that-label"></a>步驟 2：選擇該標籤的事件類型
 
@@ -102,13 +104,13 @@ ms.locfileid: "40989568"
   
 請注意，一旦您選擇事件類型並建立標籤，就無法變更事件類型。
   
-![建立或選擇事件類型的選項](media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
+![建立或選擇事件類型的選項](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>步驟 3：發佈或自動套用標籤
 
 就像任何標籤，您必須發佈或自動套用以事件為基礎的標籤，這樣標籤才會手動或自動套用到內容。 您可以在 [分類]**** >  [保留標籤]**** 頁面下進行這項操作。
   
-![發佈或自動套用保留標籤的選項](media/options-to-publish-auto-apply-retention-label.png)
+![發佈或自動套用保留標籤的選項](../media/options-to-publish-auto-apply-retention-label.png)
 
 ### <a name="step-4-enter-an-asset-id"></a>步驟 4：輸入資產識別碼
 
@@ -122,7 +124,7 @@ ms.locfileid: "40989568"
     
 了解 Asset ID 只是 SharePoint 和商務用 OneDrive 中的另一個文件屬性。貴組織可能已經使用其他文件屬性和識別碼來分類內容。若是如此，您也可以在建立事件時使用這些屬性和值 - 請參閱下方的步驟 6。重點是貴組織必須在文件中使用一些 property:value 組合，以便讓該項目與事件類型產生關聯。
   
-![在其中輸入資產識別碼的文字方塊](media/6d31628e-7162-4370-a8d7-de704aafa350.png)
+![在其中輸入資產識別碼的文字方塊](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### <a name="step-5-create-an-event"></a>步驟 5：建立事件
 
@@ -132,7 +134,7 @@ ms.locfileid: "40989568"
 
 當您建立事件時，選擇與步驟 2 中的標籤所使用相同的事件類型 - 例如，產品生命週期。只有標籤套用至該事件類型的內容，會觸發其保留期間。
   
-![在事件設定中選擇事件類型的選項](media/11663591-5628-419e-9537-61eb8f5c741f.png)
+![在事件設定中選擇事件類型的選項](../media/11663591-5628-419e-9537-61eb8f5c741f.png)
   
 ### <a name="step-7-enter-keywords-or-an-asset-id"></a>步驟 7：輸入關鍵字或資產識別碼
 
@@ -146,7 +148,7 @@ ms.locfileid: "40989568"
   
 最後，請選擇發生事件的日期；此日期會作為保留期間的開始日期。在您建立事件之後，該事件日期會同步處理至具有該事件類型標籤、資產識別碼和關鍵字的所有內容。就像任何標籤一樣，此同步處理會耗費最多 7 天的時間。
   
-![事件設定頁面](media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
+![事件設定頁面](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
   
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>使用內容搜尋來尋找具有特定標籤或資產識別碼的所有內容
 

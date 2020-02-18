@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 版本資訊及已知的問題的 Microsoft 合規性分數 （預覽），可協助簡化和自動化風險評定 M365 合規性中心中的功能。
-ms.openlocfilehash: a46a495e14187ed76926438bc3e28bd70d4f025e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d89e1415b836e79187c9e484fef72670f828cfbf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595760"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078620"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Microsoft 合規性分數 （預覽） 版本資訊
 

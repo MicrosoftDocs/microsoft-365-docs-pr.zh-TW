@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派，並驗證 Microsoft 產品與相關的法規合規性活動。
-ms.openlocfilehash: 645d2bca907d81e32d8262051fd159dd52ba3039
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a0cdabdc37779ee2f7624242eeb177f3d35b87da
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597200"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083845"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>搭配使用 Microsoft Compliance Manager （預覽）
 
@@ -50,7 +50,7 @@ ms.locfileid: "41597200"
 
 每個合規性管理員角色具有稍有不同的權限。 您可以檢視指派給每個角色的權限，請參閱哪些使用者位於哪些角色，並從新增或移除使用者在服務信任入口網站透過該角色。 選取 [**系統管理**功能表項目，然後選擇 [**設定**]，以檢視。
   
-![STP 系統功能表： 選取的設定](media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
+![STP 系統功能表： 選取的設定](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
 若要新增使用者或從合規性管理員角色中移除使用者。
   
@@ -66,11 +66,11 @@ ms.locfileid: "41597200"
 
 6. 將使用者新增至這個角色，選取 [**新增]**。 在 [**新增使用者**] 對話方塊中，選取 [使用者] 欄位。 您可以逐一捲動查看可用的使用者清單，或開始輸入使用者名稱來篩選清單，根據您的搜尋字詞。 選取使用者，將該帳戶新增至該角色使用佈建的 [**新增使用者**] 清單。 如果您想要新增多個使用者同時，開始輸入使用者名稱，以篩選] 清單中，，，然後選取要新增至清單的使用者。 選取 [**儲存**] 以佈建到這些使用者選取的角色。 
 
-    ![合規性管理員-新增使用者](media/compliance-manager-add-users.png)
+    ![合規性管理員-新增使用者](../media/compliance-manager-add-users.png)
   
 7. 若要移除此角色的使用者，請選取的使用者，然後選取 [**刪除**]。
 
-    ![合規性管理員-刪除使用者](media/compliance-manager-delete-users.png)
+    ![合規性管理員-刪除使用者](../media/compliance-manager-delete-users.png)
 
 ### <a name="controlling-automatic-secure-score-updates"></a>控制自動安全分數更新
 
@@ -120,7 +120,7 @@ ms.locfileid: "41597200"
 2. 從 [**評估**] 彈出式視窗窗格中，輸入您的評估的標題，並從下拉式功能表中選取範本。
 3. 在，**請選取群組或加入新的群組**，請選取 [**新增新群組**，在下列欄位中輸入您的群組名稱。
 4. 若要從現有的群組複製資訊，請切換**您想要將資料複製從現有的群組？** 切換至**上。** 選取您想要從下拉式清單功能表下方，複製的群組，然後選取您想要延續到新的 「 評估您的新群組中的任何欄位的核取方塊。
-5. 選取 [儲存]****。 完成時，彈出式視窗窗格會關閉，新的群組會自動顯示在儀表板上。
+5. 選取 **[儲存]**。 完成時，彈出式視窗窗格會關閉，新的群組會自動顯示在儀表板上。
 
 要知道時使用的項目群組：
   
@@ -178,7 +178,7 @@ ms.locfileid: "41597200"
 
 客戶動作區域顯示所有客戶的所有範本及評估動作合規性管理員中 （預覽）。
 
-![合規性管理員-新增使用者](media/compliance-manager-customer-actions.png "合規性管理員客戶動作")
+![合規性管理員-新增使用者](../media/compliance-manager-customer-actions.png "合規性管理員客戶動作")
 
 一眼您可以請參閱巨集指令的標題、 擁有者、 類別、 強制執行 >，以及分數，並判斷是否它整合安全分數。 您可以依序展開 [巨集指令，然後選取 [**更多讀取**閱讀動作的描述，並存取任何說明中的連結。 啟用及停用安全分數整合，根據每個巨集指令，以及新增自訂動作，您也可以使用此介面。 具有安全分數整合功能的動作有這些 （請注意，自訂動作也會有旁邊的省略符號） 旁的省略符號 （...）。
 
@@ -186,7 +186,7 @@ ms.locfileid: "41597200"
 
 1. 選取您要修改，然後選取 [**編輯**巨集的指令的省略符號 （...）。
 2. 切換開啟或關閉安全分數連續更新的參數來啟用或停用連續監視透過安全分數。
-3. 選取 [儲存]****。
+3. 選取 **[儲存]**。
 
 當組織第一次部署 Microsoft 365 或 Office 365 時，它會採取約七天的安全分數 」 來完全收集資料，並因素入您的分數。 在這段時間，將安全分數連續更新參數設定為 [**關閉**，並以手動方式設定為**實作**的 [巨集指令會計算向您的分數該巨集指令。 初始七天之後，開啟安全分數連續更新將會啟用該點之後的持續監視。
 
@@ -266,15 +266,15 @@ ms.locfileid: "41597200"
 
 以下是 Office 365 和 ISO 27001 評估的範例。 第一個檢視說明新的動作項目檢視合規性管理員中 （預覽）。
 
-![合規性管理員中的動作項目檢視](media/compliance-manager-action-items.png)
+![合規性管理員中的動作項目檢視](../media/compliance-manager-action-items.png)
 
 動作會依字母順序列出和每個巨集指令會指派分數以及擁有者。 選取**更多讀取**連結至讀取每個動作的詳細資料。 
 
-![合規性管理員中的動作項目檢視](media/compliance-manager-actions-read-more.png)
+![合規性管理員中的動作項目檢視](../media/compliance-manager-actions-read-more.png)
 
 選取來管理、 指派、 實作和測試巨集指令的 [**檢閱**] 連結。 以下是範例巨集指令。
 
-![合規性管理員動作檢視](media/compliance-manager-action.png)
+![合規性管理員動作檢視](../media/compliance-manager-action.png)
 
 在舊版的合規性管理員中，實作需求的工作流程執行控制層級。 法務人員會指派給某人實作控制項的控制項。 有了這兩個缺點：
 
@@ -295,7 +295,7 @@ ms.locfileid: "41597200"
 
 合規性管理員 （預覽） 也會包含在舊版中找到控制項為基礎的樞紐分析表。 選取 [檢視它的**控制項資訊**儀表板]。 您可以檢視在評估與範本的層級的控制項的資訊。 以下是範例控制項資訊儀表板的 「 評估 」。
 
-![合規性管理員控制項資訊檢視](media/compliance-manager-controls-info.png)
+![合規性管理員控制項資訊檢視](../media/compliance-manager-controls-info.png)
 
 針對評估，會顯示在控制項資訊儀表板：
 
@@ -311,7 +311,7 @@ ms.locfileid: "41597200"
     - **您的動作**會顯示您可以執行以滿足某些或所有控制項的需求的客戶動作。 多個控制項都有與其，相關聯的多個動作和控制項相關聯的所有動作都顯示在此處。 以下的動作有相同 UI 中的以動作儀表板中所列。
     - **Microsoft 動作**會顯示來自 Microsoft 的內部架構套用至選取的憑證控制項的控制項的清單。 針對每個內部的控制項，選取 [ **Implemented**查看 Microsoft 的實作和測試詳細資料，以及測試結果和測試的日期，如下所示。
 
-![合規性管理員 Microsoft 巨集指令檢視](media/compliance-manager-microsoft-action.png)
+![合規性管理員 Microsoft 巨集指令檢視](../media/compliance-manager-microsoft-action.png)
 
 ### <a name="export-an-assessment"></a>匯出評估
 
@@ -329,7 +329,7 @@ ms.locfileid: "41597200"
 
 當您完成與範本或評估，不再需要以便符合規範時，您可以從檢視中將其隱藏。 隱藏的範本或評估時，則會從預設檢視，移除，而且您必須選取**包含隱藏的**核取方塊可顯示它。
 
-![合規性管理員中隱藏範本檢視](media/compliance-manager-hidden-template.png "合規性管理員中隱藏的範本")
+![合規性管理員中隱藏範本檢視](../media/compliance-manager-hidden-template.png "合規性管理員中隱藏的範本")
 
 > [!IMPORTANT]
 > 隱藏 「 評估 」 不會保留其上傳的辨識項文件的連結。 強烈建議您將匯出的評估之前隱藏它保留在報表中的辨識項文件的連結。
@@ -367,7 +367,7 @@ ms.locfileid: "41597200"
 
 控制項可以從控制項資訊儀表板檢視。 控制項代表從標準、 憑證、 規定或架構的需求。 若要將這些需求對應跨多個標準、 法規等等，並關聯動作，每個項目都會被視為是控制項架構。 例如，控制架構，例如] 區段中，由已細分規定，例如 HIPAA，並用 HIPAA 控制項合規性管理員中相同的編號配置為那些] 區段中，如下所示：
 
-![合規性管理員 Microsoft 控制項詳細資料](media/compliance-manager-control-details.png)
+![合規性管理員 Microsoft 控制項詳細資料](../media/compliance-manager-control-details.png)
 
 有三種類型的控制項：
 
@@ -403,7 +403,7 @@ ms.locfileid: "41597200"
 
 範本為基礎物件合規性管理員中 （預覽） 相關聯的產品與憑證 （例如標準、 法規、 控制項 framework 等等）。 範本可檢視及新增範本儀表板。
 
-![合規性管理員 Microsoft 範本儀表板](media/compliance-manager-template-dashboard.png)
+![合規性管理員 Microsoft 範本儀表板](../media/compliance-manager-template-dashboard.png)
  
 儀表板會顯示每個範本，以及憑證並產品與相關聯範本，的日期所在範本建立以及上次修改日期，客戶及 Microsoft 管理的控制措施，最大合規性分數的數目範本，以及範本 （例如，已核准擱置核准、 匯入） 的狀態。
 
@@ -594,7 +594,7 @@ Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 2. 評估與群組] 下拉式清單功能表中選取您想要匯出的評估。
 3. 選取 [匯出]。 評估匯出為 Excel 檔案下載。
 
-![合規性管理員評估 Excel 報表](media/compliance-manager-assessment-report.png)
+![合規性管理員評估 Excel 報表](../media/compliance-manager-assessment-report.png)
 
 ## <a name="permissions"></a>權限
 

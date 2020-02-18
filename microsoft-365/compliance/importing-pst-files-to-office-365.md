@@ -18,12 +18,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 適用於系統管理員：了解在安全性與合規性中心使用「匯入」服務來將電子郵件資料 (PST 檔案) 大量匯入至 Exchange Online 的使用者信箱。 本主題提供常見問題集，並說明 PST 匯入程序的運作方式。
-ms.openlocfilehash: eb916ef3f06cc8d58c962b5b05ea4524e9469e4b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 82e1ccc41d2df5986b54054d8fb98350608c642e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600670"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072949"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>將組織的 PST 檔案匯入至 Office 365 概觀
 
@@ -32,9 +32,9 @@ ms.locfileid: "41600670"
 
 您可以使用安全性與合規性中心的「匯入」服務將 PST 檔案快速大量匯入到 Office 365 組織中的 Exchange Online 信箱。 有兩種方法可將 PST 檔案匯入到 Office 365：
 
-- **網路上傳**![雲端上傳](media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - 透過網路將 PST 檔案上傳到 Microsoft Cloud 的暫時 Azure 儲存體位置。 然後使用 Office 365 匯入服務將 PST 資料匯入 Office 365 組織中的信箱。 
+- **網路上傳**![雲端上傳](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - 透過網路將 PST 檔案上傳到 Microsoft Cloud 的暫時 Azure 儲存體位置。 然後使用 Office 365 匯入服務將 PST 資料匯入 Office 365 組織中的信箱。 
 
-- **磁碟機寄送**![硬碟](media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) - 將 PST 檔案複製到 BitLocker 加密硬碟，並實際寄送磁碟機給 Microsoft。 當 Microsoft 收到硬碟時，資料中心人員會將資料上傳到 Microsoft Cloud 的暫時 Azure 儲存體位置。 然後使用 Office 365 匯入服務將資料匯入 Office 365 組織中的信箱。
+- **磁碟機寄送**![硬碟](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) - 將 PST 檔案複製到 BitLocker 加密硬碟，並實際寄送磁碟機給 Microsoft。 當 Microsoft 收到硬碟時，資料中心人員會將資料上傳到 Microsoft Cloud 的暫時 Azure 儲存體位置。 然後使用 Office 365 匯入服務將資料匯入 Office 365 組織中的信箱。
 
 ## <a name="step-by-step-instructions"></a>逐步指示
   
@@ -48,7 +48,7 @@ ms.locfileid: "41600670"
 
 以下是完整 PST 匯入程序的圖例和說明。 圖例顯示主要工作流程，並醒目提示網路上傳和磁碟機寄送方法之間的差異。
   
-![PST 匯入程序的工作流程](media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
+![PST 匯入程序的工作流程](../media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
   
 1. **將 PST 匯入工具和金鑰下載到私人 Azure 儲存體位置** - 第一個步驟是下載用於上傳 PST 檔案的工具和存取金鑰，或將它們複製到硬碟。 您可以從安全性與合規性中心的**匯入**頁面取得這些工具和便捷鍵。 此金鑰提供您 (或在磁碟機寄送時提供給 Microsoft 資料中心人員) 將 PST 檔案上傳到私人且安全的 Azure 儲存體位置的必要權限。 此便捷鍵專屬於貴組織，並在 PST 檔案上傳到 Microsoft Cloud 後，協助防止未經授權存取 PST 檔案。 將 PST 檔案匯入至 Office 365 不會要求貴組織具有不同的 Azure 訂閱。 
     

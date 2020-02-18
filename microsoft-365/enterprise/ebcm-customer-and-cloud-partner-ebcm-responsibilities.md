@@ -1,6 +1,8 @@
 ---
 title: 客戶與雲端合作夥伴企業商務持續性責任
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 在服務事件期間做了什麼，讓您可以更好地準備商務持續性計劃。
-ms.openlocfilehash: 02ab818a6b26fc6b9902747f6c0211545d4b4704
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 3d4a1d6c3a69be4cb3051125d5527b1f0b25b375
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831864"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067664"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>企業商務持續性管理客戶與雲端合作夥伴責任
 
@@ -53,7 +55,7 @@ Microsoft 為客戶可以使用的服務狀態通訊保留多個通道。
  
 提供 Microsoft 365 雲端服務的存取權，是貴組織與 Microsoft 之間的合作夥伴關係。 下圖摘要了 Microsoft 與客戶之間在服務事件和一般作業期間的責任權衡方式。
 
-![客戶與 Microsoft 的責任權衡方式](media/ebcm/responsibilities.png)
+![客戶與 Microsoft 的責任權衡方式](../media/ebcm/responsibilities.png)
 
 ## <a name="your-environment---service-continuity"></a>您的環境 - 服務持續性
 當您考慮持續性計劃時，請注意可能會影響貴組織的事件，以及它的整體通訊能力。 在較高的層級上，有三個因素會影響您的企業。
@@ -69,6 +71,6 @@ Microsoft 發佈[網路連線原則](https://docs.microsoft.com/office365/enterp
 許多共同作業解決方案都與系統相依，例如公司廣域網路 (WAN)。 當這些系統無法使用時，貴組織會如何回應？
 這個圖形呈現可能會影響多個區域的問題。 隨附的表格提供要考量的範例
 
-![卞氏圖表](media/ebcm/venn-diagram.png)
+![卞氏圖表](../media/ebcm/venn-diagram.png)
 
 您的持續性計劃應考量每個區域。 例如：如果您需要使用者在公司網路上，但是現在有暴風雪，這些使用者要如何取得關鍵資源的存取權？ 如果大雪阻止使用者進辦公室，而且需要服務工程師才能連線到公司網路，對於他們在家持有公司筆記型電腦是否有原則管制？

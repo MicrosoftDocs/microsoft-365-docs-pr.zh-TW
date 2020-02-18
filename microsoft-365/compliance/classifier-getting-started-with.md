@@ -98,7 +98,7 @@ Microsoft 365 隨附六個準備好使用相關性：
 
 ![處理程序流程 trainable 類別器](../media/classifier-trainable-classifier-flow.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [保留標籤](labels.md)
 - [保留原則](retention-policies.md)

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 95c45034204e04a0b7fe6e0be5a9b3315c821b6c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 06dc88e395ea31d40a4163565d7894a2720cb469
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582732"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081777"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>管理進階電子文件的檢閱集
 
@@ -41,15 +41,15 @@ ms.locfileid: "41582732"
 
 檢閱設定可以建立**檢視集**] 索引標籤上，按一下 [ **+ 新增檢閱設定**。
 
-![新增檢閱設定](media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
+![新增檢閱設定](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
 在 [**新增檢閱組**彈出式頁面上，輸入檢閱集的名稱，然後按一下 [**儲存**。 新的檢閱集合會顯示在 [**檢視設定**] 索引標籤上的清單。
 
-![檢閱 [設定] 索引標籤上列出的新檢閱設定](media/AeDnewreviewset.png)
+![檢閱 [設定] 索引標籤上列出的新檢閱設定](../media/AeDnewreviewset.png)
 
 有三個不同的方式將資料新增至設定進階電子文件探索案例中檢閱。
 
-![若要新增至檢閱的三種方式設定](media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
+![若要新增至檢閱的三種方式設定](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
 1. [將搜尋結果新增至檢閱集](add-data-to-review-set.md)
 

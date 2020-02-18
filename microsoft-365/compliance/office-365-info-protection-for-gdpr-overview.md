@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 取得 GDPR 的 Office 365 資訊保護概觀。了解如何探索、分類、保護及監視個人資料。
-ms.openlocfilehash: 079ff7b7dab099f289bbd0366bba00d5ecf55b80
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dbb420cce572b2e03260f9f5b1be63e65504276b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597860"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071158"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>GDPR 的 Office 365 資訊保護概觀
 
@@ -47,7 +47,7 @@ GDPR 規定個人資料的收集、儲存、處理及共用。在 GDPR 下，個
 
 合規性分數提供數個工具來追蹤、實作及管理稽核控制，以協助組織達到各種不同的規範標準，包括 GDPR。
 
-![使用合規性分數和合規性管理員來檢視需求及追蹤進度](Media/Overview-image1.png)
+![使用合規性分數和合規性管理員來檢視需求及追蹤進度](../media/Overview-image1.png)
 
 如需詳細資訊，請參閱[合規性分數](compliance-score.md)。
 
@@ -59,7 +59,7 @@ GDPR 規定個人資料的收集、儲存、處理及共用。在 GDPR 下，個
 
 - 最佳化敏感資料類型和其他查詢，以尋找環境中的所有個人資料。
 
-![使用內容搜尋和敏感資訊類型來尋找個人資料](Media/Overview-image2.png)
+![使用內容搜尋和敏感資訊類型來尋找個人資料](../media/Overview-image2.png)
 
 敏感資訊類型會定義自動化程序如何辨識特定資訊類型，例如健康服務號碼和信用卡號碼。本文包含一組可以用作起點的資訊類型。即將對歐盟國家中的個人資料推出許多更敏感性資訊類型。
 
@@ -69,7 +69,7 @@ GDPR 規定個人資料的收集、儲存、處理及共用。在 GDPR 下，個
 
 Office 365 中用於資訊保護的部分功能也可以用來保護其他 SaaS 應用程式中的敏感資料。
 
-![分類、保護及監視個人資料](Media/Overview-image3.png)
+![分類、保護及監視個人資料](../media/Overview-image3.png)
 
 本節的其餘部分 (步驟 3 - 5) 描述此圖。
 

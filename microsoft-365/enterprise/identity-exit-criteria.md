@@ -1,5 +1,7 @@
 ---
 title: 階段 2：識別基礎結構允出準則
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的設定符合 Microsoft 365 企業版準則，是否具備以識別為基礎的服務和基礎結構。
-ms.openlocfilehash: 540d3c01ea368634cebafb2ec3dd5562fcb0b73c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 3fd4d0a1df50d55cb7a21668b609341d0c01aa35
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801748"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067302"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>階段 2：識別基礎結構允出準則
 
-![階段 2 - 身分識別](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![階段 2 - 身分識別](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 請確定您的身分識別基礎結構符合下列必要準則，而且您已將這些視為選擇性準則。
 
@@ -292,5 +294,5 @@ Azure AD Connect Health 入口網站會顯示您內部部署網域控制站和�
 
 |||
 |:-------|:-----|
-|![階段 3：Windows 10 企業版](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)| 如果您會遵循 Microsoft 365 企業版的端對端部署階段，則下一個階段是 [Windows 10 企業版](windows10-infrastructure.md)。 |
+|![階段 3：Windows 10 企業版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)| 如果您會遵循 Microsoft 365 企業版的端對端部署階段，則下一個階段是 [Windows 10 企業版](windows10-infrastructure.md)。 |
 

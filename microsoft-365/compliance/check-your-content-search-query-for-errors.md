@@ -13,18 +13,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: 檢查錯誤和錯字，例如不支援的字元的內容搜尋的關鍵字查詢和小寫布林運算子，才能執行搜尋。 如果我們發現錯誤，則將建議的修訂的查詢。
-ms.openlocfilehash: ff7574629a87062e0a0da36541844179dfe25001
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 65b8ea1d9c1d474b2068afc0df5b6e261f56fa69
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595920"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078905"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>檢查您的內容搜尋查詢是否有錯誤
 
 當您建立或編輯內容搜尋時，您可以檢查您的查詢不支援的字元和小寫布林運算子的 Office 365。 怎麼做？ 只要按一下**檢查錯字查詢**的內容搜尋的查詢] 頁面上。 
   
-![按一下 「 檢查錯字查詢 」 來檢查您的搜尋查詢不受支援的字元](media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
+![按一下 「 檢查錯字查詢 」 來檢查您的搜尋查詢不受支援的字元](../media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
   
 以下是我們檢查不支援字元的清單。 通常已隱藏不支援的字元，而且它們通常會導致搜尋錯誤，或傳回非預期的結果。
   
@@ -40,7 +40,7 @@ ms.locfileid: "41595920"
 
 如果找不到查詢中的不受支援的字元，會顯示一則警告訊息，指出找不到不支援的字元，並建議替代。 您接著可以選擇保留原始查詢，或取代的建議的修訂查詢。 以下是您的搜尋查詢的前一個螢幕擷取畫面中按一下 [**檢查錯字查詢**後，會出現警告訊息的範例。 請注意，原始查詢包含智慧引號和小寫布林運算子。 
   
-![針對您的查詢建議修訂會顯示警告訊息](media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
+![針對您的查詢建議修訂會顯示警告訊息](../media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>如何避免在搜尋查詢中不支援的字元
 

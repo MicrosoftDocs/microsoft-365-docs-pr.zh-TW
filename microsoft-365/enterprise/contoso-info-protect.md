@@ -1,6 +1,8 @@
 ---
 title: Contoso Corporation 的資訊保護
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/02/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft 365 企業版中的資訊保護功能，在雲端中保護其數位資產。
-ms.openlocfilehash: d6167896c3e42c5fef373de7c5be7123467936f4
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 2fed60d18c878bf6e509c6955b8c8df758cc4caf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831676"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068406"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的資訊保護
 
@@ -85,7 +87,7 @@ Contoso 使用下列步驟，針對其資訊保護需求準備 Microsoft 365 企
 
 以下是 Contoso 的資訊保護原則結果集合。
 
-![裝置、Exchange Online 和 SharePoint 條件式存取原則](./media/contoso-info-protect/contoso-info-protect-fig1.png)
+![裝置、Exchange Online 和 SharePoint 條件式存取原則](../media/contoso-info-protect/contoso-info-protect-fig1.png)
 
 >[!Note]
 >Contoso 也會為身分識別和登入設定額外的條件式存取原則。 請參閱 [Contoso Corporation 的身分識別](contoso-identity.md#conditional-access-policies-for-identity-and-device-access)。
@@ -113,7 +115,7 @@ Contoso 使用下列步驟，針對其資訊保護需求準備 Microsoft 365 企
 
 以下是 Contoso 的資訊保護設定結果。
 
-![Contoso 的資訊保護設定結果](./media/contoso-info-protect/contoso-info-protect-fig2.png)
+![Contoso 的資訊保護設定結果](../media/contoso-info-protect/contoso-info-protect-fig2.png)
 
 ## <a name="next-step"></a>下一步
 

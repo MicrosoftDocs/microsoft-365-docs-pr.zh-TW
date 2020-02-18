@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下載第三方稽核，了解 Microsoft 如何確保客戶資料安全，以及知道如何您可以遵循 ISO、 HIPAA、 FINRA，以及 FedRAMP 當您使用 Office 365。
-ms.openlocfilehash: f883f625e872076146e75c01bde26d40f7e1a4d3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 823722fe49349a11e828ca56978240e662c8435c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601520"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081294"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>安全性 & 合規性中心中的服務保證
 
@@ -71,7 +71,7 @@ ms.locfileid: "41601520"
   
 1. 存取服務保證後，請選取 [**設定**和區域及產業設定 」 頁面會顯示下列螢幕擷取畫面所示。 
     
-    ![顯示 [防護中心設定] 頁面。](media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
+    ![顯示 [防護中心設定] 頁面。](../media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
   
 2. 在 [**設定**] 頁面上選取**區域**] 旁的向下箭號，並檢查為您的組織適當的區域。 
     
@@ -86,15 +86,15 @@ ms.locfileid: "41601520"
   
 - 若要檢視獨立稽核和評估 Office 365 和其他 Microsoft 雲端服務，如下列螢幕畫面中所示的**規範符合性報告**擷取畫面。 
     
-    ![顯示服務保證頁面： 服務規範符合性報告。](media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
+    ![顯示服務保證頁面： 服務規範符合性報告。](../media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
   
 - [**信任的文件**] 以檢視 Microsoft 如何運作 Office 365，如下列螢幕畫面中所示的資訊擷取畫面。 
     
-    ![顯示服務保證頁面： 信任由 Microsoft 提供的文件](media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
+    ![顯示服務保證頁面： 信任由 Microsoft 提供的文件](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
   
 - 若要檢視 Office 365 的控制的相關資訊的**稽核控制項**符合安全性、 規範和隱私權需求，如下列螢幕擷取畫面所示。 
     
-    ![顯示服務保證稽核控制項畫面。](media/4baf252b-603d-45e0-af12-32616154df65.png)
+    ![顯示服務保證稽核控制項畫面。](../media/4baf252b-603d-45e0-af12-32616154df65.png)
   
 選取您想要下載的報表，然後選取 [**儲存**] 以下載到您的電腦。 稽核控制項，選取您想要然後選取 [**下載**報告。 下表說明您可以找到每個服務保證頁面上的報告。 
   
@@ -116,15 +116,15 @@ ms.locfileid: "41601520"
   
 1. 安全 & 與規範中心中，選取**權限**的左窗格中，如下列螢幕擷取畫面所示。 
     
-    ![安全性&amp;符合性權限] 功能表](media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
+    ![安全性&amp;符合性權限] 功能表](../media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
   
 2. 在右窗格中，選取**服務保證使用者**，然後選取**編輯角色群組**，並在 [**成員**] 區段中，選取 [**編輯**] 以將成員新增至服務保證使用者角色，如下列螢幕擷取畫面所示。 
     
-    ![服務保證使用者-新增](media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
+    ![服務保證使用者-新增](../media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
   
 3. 在 [下一步] 對話方塊中，搜尋並選擇個人或群組，需要檢視服務保證規範符合性報告和信任的資源，然後選取 [**新增**您進行，然後按一下 [中] 窗格右上角的**X** ，當您完成時，每個選取範圍。 
     
-    ![服務保證使用者-選擇使用者](media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
+    ![服務保證使用者-選擇使用者](../media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
   
 4. 每個使用者或群組新增至服務保證使用者角色現在尋找服務保證和下載報告和其他安全性 & 合規性中心的文件。
     

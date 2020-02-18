@@ -1,5 +1,7 @@
 ---
 title: 步驟 6 - 作業系統部署與功能更新
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解作業系統部署與功能更新的選項。
-ms.openlocfilehash: 7da7c9ade2be43e8c60726bafd69cc7939b7bddc
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 24b6cf30398031cf2bf4032795013338fec39ffb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112677"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085210"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>步驟 6：作業系統部署與功能更新
 
-![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
+![](../media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Step 6" height="144" width="144" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Step 6" height="144" width="144" /></td>
 <td><p><strong>步驟 6：作業系統部署與功能更新</strong></p>
 <p>工作序列型部署是用於自動化大型、階段部署，以進行裸機安裝、電腦重新整理和電腦取代。升級工作序列也會協助您保持在最新的主要半年更新。Windows Autopilot 是最近的新增功能，讓新電腦收購程序現代化。</p></td>
-<td><a href="https://aka.ms/ddev6" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-19.png" alt="Step 6" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev6" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-19.png" alt="Step 6" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -81,7 +83,7 @@ ms.locfileid: "41112677"
 
 [使用 setup.exe 的 Windows 10 升級前驗證](https://blogs.technet.microsoft.com/mniehaus/2015/08/23/windows-10-pre-upgrade-validation-using-setup-exe/)
 
-![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-3.png)
+![](../media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-3.png)
 
 就地升級案例可用來從舊版 Windows 移轉到 Windows 10，以及從舊版 Windows 10 進行升級。在 Windows 安裝程式完成升級之後，您的工作順序可以繼續執行及升級應用程式 (如 Office)、取代驅動程式以及套用個人化設定。同樣地，您可以使用升級工作順序在執行升級之前執行預先安裝工作或檢查。
 
@@ -93,7 +95,7 @@ ms.locfileid: "41112677"
 
 當您計劃部署時，您將電腦目標設為裸機、重新整理、取代和升級路徑。在此情況下，建議的方法是使用類似電腦上集合的分階段部署。如此一來，您可以在增加部署規模之前驗證相容性、傳遞和自動化、使用者接受、網路頻寬耗用以及其他因素。
 
-![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-4.png)
+![](../media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-4.png)
 
 ### <a name="recommended-tools-microsoft-endpoint-configuration-manager-current-branch-and-the-microsoft-deployment-toolkit"></a>建議的工具：Microsoft Endpoint Configuration Manager (最新分支) 和 Microsoft 部署工具組
 
@@ -103,7 +105,7 @@ ms.locfileid: "41112677"
 
   - 其他常用的部署選項是免費的 **[Microsoft 部署工具組](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit)** (MDT) (英文) 通常是由小型及中型規模的組織用來進行作業系統部署。這幾乎不需要基礎結構。MDT 與 Windows 部署服務 (WDS) 整合以進行網路開機。它支援所有四種部署類型以及應用程式安裝、驅動程式和設定。當然，MDT 甚至可與 Configuration Manager 整合。
 
-![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-5.png)
+![](../media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-5.png)
 
 ### <a name="windows-autopilot"></a>Windows Autopilot
 

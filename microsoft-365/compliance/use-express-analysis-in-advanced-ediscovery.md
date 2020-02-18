@@ -129,7 +129,7 @@ ms.locfileid: "42080727"
     
 選擇 **[確定]** 以儲存 [進階] 設定，**還原成預設值**使用預設值，或 [**取消**] 取消 [設定進階的設定。 
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 <a name="BK_AdvancedSettings"> </a>
 
 [Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)

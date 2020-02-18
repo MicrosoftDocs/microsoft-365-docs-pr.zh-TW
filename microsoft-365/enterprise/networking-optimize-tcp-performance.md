@@ -1,5 +1,7 @@
 ---
 title: 步驟 5：最佳化用戶端和 Office 365 服務效能
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 設定 TCP 設定與 Office 365 服務以獲得更佳效能。
-ms.openlocfilehash: f89ae816780101c31971c8e3e60df803f82f1e55
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: e3aefb417330ab791a3dd217e2e34591eba3e1d1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370070"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066539"
 ---
 # <a name="step-5-optimize-client-and-office-365-service-performance"></a>步驟 5：最佳化用戶端和 Office 365 服務效能
 
 *此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-![階段 1 - 網路](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![階段 1 - 網路](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 您可以透過微調傳輸控制通訊協定 (TCP) 在用戶端裝置與 Office 365 服務間的運作方式來增加效能。
 

@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e6eedae80b7a04cc77c086153da9d884e8eed167
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3b047e9c3a56a6c03368c79c2c5a4622b396b6b0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595620"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077540"
 ---
 # <a name="create-a-legal-hold-notice"></a>建立的合法持有通知
 
 組織可以使用進階電子文件 custodian 通訊，來管理他們的工作流程與 custodians 通訊。 透過 [通訊] 工具，法務小組可以有系統地傳送、 收集和追蹤合法持有通知。 彈性建立程序也能讓小組合作，來自訂保留通知工作流程與傳送到 custodians 通知中的內容。 
 
-![通訊] 頁面](media/CommunicationPage.PNG)
+![通訊] 頁面](../media/CommunicationPage.PNG)
 
 本文概述保留通知工作流程中的步驟。
 
@@ -35,7 +35,7 @@ ms.locfileid: "41595620"
 
 第一個步驟是指定合法持有傳送通知適當的詳細資訊或其他 custodian 通訊。 
 
-![名稱 [通訊] 頁面](media/NameCommunication.PNG)
+![名稱 [通訊] 頁面](../media/NameCommunication.PNG)
 
 1. 在安全性 & 合規性中心，移至**eDiscovery > 進階電子文件**來顯示貴組織中的案例清單。
    
@@ -53,7 +53,7 @@ ms.locfileid: "41595620"
 
 接下來，您可以建立並新增保留通知的內容。 在 [**建立的通訊**] 精靈的 [**定義入口網站內容**] 頁面上，指定保留通知的內容。 此內容會自動附加至發行、 重新發出、 提醒和呈報流程通知。 此外，此內容會出現在 custodian 規範入口網站。 
 
-![入口網站內容頁面](media/PortalContent.PNG)
+![入口網站內容頁面](../media/PortalContent.PNG)
 
 若要建立入口網站的內容：
 
@@ -102,7 +102,7 @@ ms.locfileid: "41595620"
    
 4. 指定的內容或您想要提供給 custodian （必要） 的其他指示。 請注意在步驟 2 中所定義的入口網站內容新增至重新發行通知的結尾。
    
-5. 按一下 [儲存]****。
+5. 按一下 **[儲存]**。
 
 >[!Note]
 >如果修改保留通知，重新發行通知會自動傳送給所有 custodians 指派給通知。 傳送通知之後，將要求 custodians 重新認可其保留通知。 如果您已設定的任何提醒或呈報工作流程，這些也會一併重新啟動。 
@@ -127,7 +127,7 @@ ms.locfileid: "41595620"
 
 或者，您可以簡化遵循與回應 custodians 藉由建立及排程自動化的提醒及呈報流程通知的工作流程。
 
-![提醒/升級] 頁面](media/ReminderEscalations.PNG)
+![提醒/升級] 頁面](../media/ReminderEscalations.PNG)
 
 ### <a name="reminders"></a>提醒
 
@@ -173,7 +173,7 @@ ms.locfileid: "41595620"
 
 您已完成通知的內容之後，選取您想要將通知傳送 custodians。 
 
-![選取 Custodians 頁面](media/SelectCustodians.PNG)
+![選取 Custodians 頁面](../media/SelectCustodians.PNG)
 
 若要新增 custodians:
 

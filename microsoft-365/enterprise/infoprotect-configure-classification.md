@@ -1,5 +1,7 @@
 ---
 title: 步驟 2：設定環境的分類
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並設定在組織中分類資料的不同方式。
-ms.openlocfilehash: e1f0a6b9bdc4b6844037e7e873ed321942e8258e
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: e8c40ca4c419edc2d59a060dfd4fe8918cf4e784
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370410"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067250"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>步驟 2：設定環境的分類
 
 *此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-![第 6 階段：資訊保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![第 6 階段：資訊保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 在此步驟中，您會與法律和法規遵循小組合作，定義組織資料的分類配置。
 
@@ -100,7 +102,7 @@ Microsoft 365 的敏感資訊類型會定義自動化程序 (例如搜尋) 如�
 
 |||
 |:-------|:-----|
-|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：資料分類](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
+|![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：資料分類](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 作為過渡期的檢查點，您可以看到與此步驟相對應的[允出準則](infoprotect-exit-criteria.md#crit-infoprotect-step2)。
@@ -109,5 +111,5 @@ Microsoft 365 的敏感資訊類型會定義自動化程序 (例如搜尋) 如�
 
 |||
 |:-------|:-----|
-|![步驟 3](./media/stepnumbers/Step3.png)|[設定增強的 Office 365 安全性](infoprotect-configure-increased-security-office-365.md)|
+|![步驟 3](../media/stepnumbers/Step3.png)|[設定增強的 Office 365 安全性](infoprotect-configure-increased-security-office-365.md)|
 

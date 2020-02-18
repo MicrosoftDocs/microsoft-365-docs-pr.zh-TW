@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: '了解如何從 Office 365 安全性與合規性中心存取 Office 365 進階電子文件探索，以及檢閱使用進階電子文件探索的一般工作流程。  '
-ms.openlocfilehash: 6df2d68639f2be9f6ba38ea7211654058bc73035
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e1af09caf57509bf472a766c9d9124ea969acc4e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597670"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070293"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>快速設定 Office 365 進階電子文件探索
 
@@ -51,7 +51,7 @@ ms.locfileid: "41597670"
 
 下圖說明常見的工作流程，用於管理和使用安全性與合規性中心以及進階電子文件探索中的電子文件探索案例。 
   
-![圖表會顯示設定中四個階段的 Office 365 進階電子文件探索工作流程，包括設定使用者和案例、識別案例資料、匯出及處理，接著是分析並匯出至本機電腦的階段。](media/76589ccc-789d-4581-b3a8-98d339b05979.png)
+![圖表會顯示設定中四個階段的 Office 365 進階電子文件探索工作流程，包括設定使用者和案例、識別案例資料、匯出及處理，接著是分析並匯出至本機電腦的階段。](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
   
 此設定一節說明工作流程中的前四個步驟。如需工作流程中其他步驟的說明，請參閱下列資訊。
   

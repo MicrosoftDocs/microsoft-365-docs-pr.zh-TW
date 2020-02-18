@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以將標籤套用至 Microsoft Teams、Office 365 群組和 SharePoint 網站。
-ms.openlocfilehash: 7fd19d9d8f84bd6463d61aec68dbd86c4fc627c0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 297ccd3e17f6c5a747e18a46747e6f2c23311df0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601560"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069778"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>對 Microsoft Teams、Office 365 群組和 SharePoint 網站使用敏感度標籤 (公開預覽)
 
@@ -54,9 +54,9 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
 
 例如：
 
-![從 SharePoint 建立小組網站時的敏感度標籤](media/sensitivity-label-new-team-site.png)
+![從 SharePoint 建立小組網站時的敏感度標籤](../media/sensitivity-label-new-team-site.png)
 
-![Word 傳統型應用程式中顯示的敏感度標籤](media/sensitivity-label-word.png)
+![Word 傳統型應用程式中顯示的敏感度標籤](../media/sensitivity-label-word.png)
 
 ## <a name="enable-this-preview"></a>啟用此預覽
 
@@ -124,7 +124,7 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
     - 來賓存取：您可以控制是否可以將來賓新增至群組。 [了解如何管理 Office 365 群組的來賓存取](/office365/admin/create-groups/manage-guest-access-in-groups)
     - 未受控的裝置：此設定可讓您封鎖或限制從未在 Intune 中混合式加入 AD 或合規的裝置存取 SharePoint 內容。 如果您選取 [未受控的裝置]，您必須移至 Azure AD 來完成原則的設定。 如需資訊，請參閱[從未受控裝置控制存取](/sharepoint/control-access-from-unmanaged-devices)。
     
-    ![網站和群組設定索引標籤](media/edit-sensitivity-label-site-group.png)
+    ![網站和群組設定索引標籤](../media/edit-sensitivity-label-site-group.png)
 
 > [!IMPORTANT]
 > 將標籤套用至小組、群組或網站時，只有網站和群組設定會生效。 其他設定，例如加密和內容標記，均不會套用至小組、群組或網站內的所有內容。
@@ -184,11 +184,11 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
 
 [深入了解 Teams 的敏感度標籤](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
 
-![建立新小組時的隱私權設定](media/privacy-setting-new-team.png)
+![建立新小組時的隱私權設定](../media/privacy-setting-new-team.png)
 
 建立小組之後，敏感度標籤會顯示在所有頻道的右上角。
 
-![敏感度標籤顯示在小組上](media/privacy-setting-teams.png)
+![敏感度標籤顯示在小組上](../media/privacy-setting-teams.png)
 
 服務自動將相同的敏感度標籤套用至 Office 365 群組和連線的 SharePoint 小組網站。
 
@@ -196,7 +196,7 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
 
 在 Outlook 網頁版中，新的 [敏感度]**** 方塊含有已發佈的標籤。 如果使用者需要更多資訊，可以按一下 [說明] 圖示來閱讀可用標籤和相關聯原則的詳細資料。
 
-![建立群組並選取 [敏感度] 底下的選項](media/sensitivity-label-new-group.png)
+![建立群組並選取 [敏感度] 底下的選項](../media/sensitivity-label-new-group.png)
 
 ## <a name="apply-a-sensitivity-label-to-a-new-site"></a>將敏感度標籤套用至新的網站
 
@@ -206,17 +206,17 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
 
 當使用者建立新式小組和通訊網站，預設會選取某個敏感度標籤。 使用者可以選取 [說明] 圖示來深入了解標籤。
 
-![建立網站並選取 [敏感度] 底下的選項](media/sensitivity-label-new-communication-site.png)
+![建立網站並選取 [敏感度] 底下的選項](../media/sensitivity-label-new-communication-site.png)
 
 當使用者瀏覽至網站，他們可以看到標籤的名稱和套用的原則。
 
-![已套用敏感度標籤的網站](media/sensitivity-label-site.png)
+![已套用敏感度標籤的網站](../media/sensitivity-label-site.png)
 
 ## <a name="manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>在 SharePoint 系統管理中心管理敏感度標籤
 
 若要檢視及編輯標籤，請使用新 SharePoint 系統管理中心的 [使用中網站] 頁面。
 
-![[使用中網站] 頁面上的 [敏感度] 欄](media/manage-site-sensitivity-labels.png)
+![[使用中網站] 頁面上的 [敏感度] 欄](../media/manage-site-sensitivity-labels.png)
 
 [深入了解在新的 SharePoint 系統管理中心管理網站](/sharepoint/manage-sites-in-new-admin-center)。
 

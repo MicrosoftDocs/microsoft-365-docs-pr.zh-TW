@@ -1,5 +1,7 @@
 ---
 title: 步驟 8 - 使用者的通訊和訓練
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何透過通訊和訓練，讓終端使用者準備迎接 Windows 10 和 Office 365 專業增強版。
-ms.openlocfilehash: 46a9a21fe60d2cf16f0e24483c5e6ab261714b23
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 02fa62cc7f9276670812a887e927ce8a1c6fb549
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033658"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085110"
 ---
 # <a name="step-8-user-communications-and-training"></a>步驟 8：使用者的通訊和訓練
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>步驟 8：使用者的通訊和訓練</strong></p>
 <p>將電腦移至 Windows 10 和 Office 365 專業增強版時，請確認使用者了解新版體驗與新的工作方式。了解如何利用 Microsoft FastTrack 的使用者採用協助、訓練教材和通訊範本，以及全新的方式來監控使用者接受及其使用方式。</p></td>
-<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -47,7 +49,7 @@ ms.locfileid: "38033658"
 
 詳細的通訊和訓練範本適用於這些和其他本機或瀏覽器型應用程式，例如 Teams 與 Planner。
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-3.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-3.png)
 
 我們也提供應用程式中的新功能指導方針，像在 Outlook 中附加 OneDrive 連結的檔案，或在 PowerPoint 中使用新的 Morph 投影片轉換和設計工具功能。
 
@@ -77,7 +79,7 @@ ms.locfileid: "38033658"
 
 部署週期最適合與業務單位及其管理員一同建立。您將會了解部署或進行變更時要避開的重要日期和時間。若沒有審慎規劃及專案關係人的同意，很難讓使用者上線並輕鬆接受任何變更。
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
 
 ### <a name="phase-1-the-it-team-and-early-adopter-insiders"></a>階段 1：IT 小組與早期採納者測試人員 
 
@@ -117,7 +119,7 @@ Microsoft IT 展示系列也是 Windows 10 部署相關內容很好的資源。�
 
 當試驗展開時，請記錄並發佈常見問題集及自助服務內容，以協助主動減少支援票證及服務台活動。
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
 
 ### <a name="phase-3-and-beyond-broad-production-deployment"></a>階段 3 及其後：廣泛生產部署 
 

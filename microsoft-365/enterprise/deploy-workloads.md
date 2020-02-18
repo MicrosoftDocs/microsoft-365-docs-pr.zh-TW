@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 讓貴組織的使用者快速上手企業用 Microsoft 365 的生產力工作負載。
-ms.openlocfilehash: ff0e4b06972ed53933eb7780759bfcd53e286353
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 692deeee652a4d27b8cc46a8e02890cccb8bb311
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801898"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067842"
 ---
 # <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>企業用 Microsoft 365 工作負載和案例
 
@@ -47,7 +47,7 @@ ms.locfileid: "40801898"
 
 以下是整體企業用 Microsoft 365 部署指南中的工作負載和案例：
 
-![整體企業用 Microsoft 365 部署指南中的工作負載和案例](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![整體企業用 Microsoft 365 部署指南中的工作負載和案例](../media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 如需其他案例，請參閱 [Microsoft 365 生產力資源庫](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary)。 
 

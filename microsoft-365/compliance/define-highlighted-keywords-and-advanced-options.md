@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: '了解如何將使用者定義關鍵字新增至相關性來協助識別相關的檔案時在 Office 365 進階電子文件探索中標記並指定成本參數。  '
-ms.openlocfilehash: 4b74730498b3cb08cd646d57845446ae91daeee9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f24c2d736a1d3c36ed23d16e1bb5d2dadb42cec9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595360"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075918"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中定義反白顯示的關鍵字與進階的選項
 
@@ -48,11 +48,11 @@ ms.locfileid: "41595360"
     
 6. 在 [**描述**] 中，輸入關鍵字清單 （選用）。
     
-    ![新增新關鍵字](media/1683a71f-0875-48fc-b4ef-01f3b0e8e8e9.png)
+    ![新增新關鍵字](../media/1683a71f-0875-48fc-b4ef-01f3b0e8e8e9.png)
   
 7. 按一下 **[確定]** 完成。 建立的清單新增的關鍵字清單表格，並可以編輯或刪除。 
     
-    ![相關性設定關鍵字清單](media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
+    ![相關性設定關鍵字清單](../media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
   
 使用者定義的關鍵字會顯示，在所指定的色彩，在 [相關性\>標籤。 
   
@@ -68,9 +68,9 @@ ms.locfileid: "41595360"
     
 2. 在**檢閱每小時的檔案數目**] 清單中，選取 [金額或接受預設值。 
     
-    ![相關性設定的成本參數](media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
+    ![相關性設定的成本參數](../media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
-3. 按一下 [儲存]****。 會儲存選取的設定。
+3. 按一下 **[儲存]**。 會儲存選取的設定。
     
 ## <a name="see-also"></a>另請參閱
 

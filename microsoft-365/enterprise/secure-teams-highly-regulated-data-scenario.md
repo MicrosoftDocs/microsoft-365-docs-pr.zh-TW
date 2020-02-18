@@ -1,6 +1,8 @@
 ---
 title: 適用於高度管制資料的 Microsoft Teams
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 12/13/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立安全小組來儲存您最重要且最敏感的檔案。
-ms.openlocfilehash: b35c4e8332b73b44042430651cbba9daa2c59c04
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e2499c6e9061704846f4649ade43f74bd5632e8b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801418"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084240"
 ---
 # <a name="teams-for-highly-regulated-data"></a>適用於高度管制資料的 Microsoft Teams
 
@@ -42,15 +44,15 @@ ms.locfileid: "40801418"
 
 以下是使用敏感度標籤所產生的組態。
 
-![安全小組案例的組態](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+![安全小組案例的組態](../media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
 
 如需快速概觀，請觀賞以下短片。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
-<a name="poster"></a> 如需此案例的 1 頁式摘要，請參閱[適用於高度管制資料的 Teams 海報](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)。
+<a name="poster"></a> 如需此案例的 1 頁式摘要，請參閱[適用於高度管制資料的 Teams 海報](../media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)。
 
-[![適用於高度管制資料的 Teams 海報](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+[![適用於高度管制資料的 Teams 海報](../media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](../media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
 您也可以用 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) 或 [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) 格式下載此海報，以及用 Letter、Legal 或 Tabloid (11 x 17) 大小的紙張列印此海報。
 
@@ -84,7 +86,7 @@ ms.locfileid: "40801418"
 
 以下是「小組網站」的預設權限。
 
-![小組網站的預設權限](./media/secure-teams-highly-regulated-data-scenario/secure-team-default-site-permissions.png)
+![小組網站的預設權限](../media/secure-teams-highly-regulated-data-scenario/secure-team-default-site-permissions.png)
  
 >[!Note]
 >如果您檢視 \<小組名稱> 擁有者的 SharePoint 群組的「編輯」權限層級，系統不會顯示 \<小組名稱> 擁有者。
@@ -99,7 +101,7 @@ ms.locfileid: "40801418"
 
 以下是目前所產生的組態。
 
-![安全小組案例的組態步驟 2](./media/secure-teams-highly-regulated-data-scenario/secure-team-step2.png)
+![安全小組案例的組態步驟 2](../media/secure-teams-highly-regulated-data-scenario/secure-team-step2.png)
  
 ### <a name="step-3-configure-the-underlying-sharepoint-site-for-additional-security"></a>步驟 3：設定基礎 SharePoint 網站的額外安全性
 
@@ -114,7 +116,7 @@ ms.locfileid: "40801418"
 
 以下是目前所產生的組態。
 
-![安全小組案例的組態步驟 3](./media/secure-teams-highly-regulated-data-scenario/secure-team-step3.png)
+![安全小組案例的組態步驟 3](../media/secure-teams-highly-regulated-data-scenario/secure-team-step3.png)
 
  
 ### <a name="step-4-create-a-retention-label-and-dlp-policy"></a>步驟 4：建立保留標籤和 DLP 原則
@@ -127,7 +129,7 @@ ms.locfileid: "40801418"
 
 以下是目前所產生的組態。
 
-![安全小組案例的組態步驟 4](./media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
+![安全小組案例的組態步驟 4](../media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
  
 ### <a name="step-5-create-a-sensitivity-label-or-a-sublabel-of-the-highly-regulated-sensitivity-label"></a>步驟 5：建立敏感度標籤或高度管制敏感度標籤的子標籤
 
@@ -148,11 +150,11 @@ ms.locfileid: "40801418"
 
 以下是新標籤所產生的組態。
 
-![安全小組案例的組態步驟 5](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+![安全小組案例的組態步驟 5](../media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
 
 以下是敏感度標籤和「小組群組」之間的關係。
 
-![小組群組和標籤權限之間的關係](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-permissions.png)
+![小組群組和標籤權限之間的關係](../media/secure-teams-highly-regulated-data-scenario/secure-team-label-permissions.png)
 
 
 >[!Note]
@@ -178,7 +180,7 @@ ms.locfileid: "40801418"
 
 以下是標籤上所產生的權限。
 
-![可檢視已加標籤的檔案的自訂權限範例](./media/secure-teams-highly-regulated-data-scenario/secure-team-custom-view-permissions.png)
+![可檢視已加標籤的檔案的自訂權限範例](../media/secure-teams-highly-regulated-data-scenario/secure-team-custom-view-permissions.png)
  
 網站訪客將可以直接存取「小組網站」，並查看已套用子標籤的檔案內容。 但是，由於訪客不是「小組群組」成員，因此訪客無法存取小組或其任何資源。
 
@@ -191,7 +193,7 @@ ms.locfileid: "40801418"
 
 「小組群組」成員可以存取小組及其所有資源，包括聊天、會議及其他應用程式。 使用頻道中 [檔案]**** 區段的檔案時，「小組群組」成員必須將敏感度標籤或子標籤指派給針對安全小組建立的檔案。 請見以下範例。
 
-![將標籤套用到安全小組的檔案範例](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
+![將標籤套用到安全小組的檔案範例](../media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
  
 當標籤套用到受保護的檔案時。 「小組群組」成員可以在 Microsoft Teams 中開啟，並即時進行共同作業。 檔案已加密，且包含有設定給「小組群組」成員的共同撰寫權限。 如果檔案離開網站並轉寄給惡意使用者，這些使用者必須提供「小組群組」成員的使用者帳戶認證，才能開啟檔案並檢視其內容。 
 
@@ -222,7 +224,7 @@ ms.locfileid: "40801418"
 
 若要建立自己的測試環境，以測試團隊是否有敏感性和高度機密的檔案，請參閱[這些指示](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment)。 
 
-![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
+![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
 
 ## <a name="how-the-contoso-corporation-used-a-secure-team-for-a-top-secret-project"></a>Contoso Corporation 如何使用安全小組來進行最機密的專案
 

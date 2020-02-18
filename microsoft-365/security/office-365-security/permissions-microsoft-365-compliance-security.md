@@ -1,5 +1,7 @@
 ---
 title: Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的權限
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過使用 Microsoft 365 安全性中心或 Microsoft 365 合規性中心，您可以集中管理與安全性或合規性相關的所有工作權限。
-ms.openlocfilehash: 070e9bb1f7bf070a1b95995c2010b79dee7cbc9b
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 6553020c215b3ffad0707a699414a6939ef368ca
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572960"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082429"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的權限
 
@@ -27,7 +29,7 @@ ms.locfileid: "41572960"
 
 在全域管理員指派這些系統管理員角色後，系統管理員就可以存取 Microsoft 365 中所有服務的功能和資料，例如 Microsoft 365 安全性中心、Microsoft 365 合規性中心、Azure、Office 365和 Enterprise Mobility + Security。
 
-![Microsoft 365 安全性中心的權限頁面](../media/m365-security-permissions-page.png)
+![Microsoft 365 安全性中心的權限頁面](../../media/m365-security-permissions-page.png)
 
 ## <a name="what-the-microsoft-365-roles-are"></a>什麼是 Microsoft 365 角色
 
@@ -128,13 +130,13 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 
 如需詳細資訊，請參閱[在 Azure Active Directory 中檢視和指派系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal)。
 
-![在 Azure Active Directory 中管理權限的連結](../media/permissions-manage-in-azure-ad-link.png)
+![在 Azure Active Directory 中管理權限的連結](../../media/permissions-manage-in-azure-ad-link.png)
 
 ## <a name="managing-roles-in-a-service-instead-of-azure-active-directory"></a>在服務而非 Azure Active Directory 中管理角色
 
 在 Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色也會出現在這些角色有權限的服務中。 例如，您可以在 Office 365 安全性與合規性中心看到這些角色。
 
-![Office 365 安全性與合規性中心中的角色](../media/m365-roles-in-o365-scc.png)
+![Office 365 安全性與合規性中心中的角色](../../media/m365-roles-in-o365-scc.png)
 
 ### <a name="breaking-inheritance"></a>打破繼承
 

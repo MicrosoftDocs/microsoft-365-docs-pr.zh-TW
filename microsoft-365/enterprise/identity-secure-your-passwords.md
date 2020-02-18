@@ -1,5 +1,7 @@
 ---
 title: 步驟2：保護您的密碼
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 您必須在組織中強化且易於管理您的密碼。
-ms.openlocfilehash: 143f7727846316100e4133ccf4b34646645bfd7f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c0ad9e2ad86cb803484e3d350fe112580610f509
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801738"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067280"
 ---
 # <a name="step-2-secure-your-passwords"></a>步驟 2：保護您的密碼
 
-![第 2 階段 - 身分識別](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![第 2 階段 - 身分識別](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>防止不正確的密碼
@@ -54,7 +56,7 @@ ms.locfileid: "40801738"
 
 |||
 |:-------|:-----|
-|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：密碼重設](password-reset-m365-ent-test-environment.md) |
+|![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：密碼重設](password-reset-m365-ent-test-environment.md) |
 |||
 
 作為過渡期的檢查點，您可以看到這一節的[允出準則](identity-exit-criteria.md#crit-identity-pw-reset)。
@@ -73,7 +75,7 @@ ms.locfileid: "40801738"
 
 |||
 |:-------|:-----|
-|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：Azure AD 無縫單一登入](single-sign-on-m365-ent-test-environment.md) |
+|![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：Azure AD 無縫單一登入](single-sign-on-m365-ent-test-environment.md) |
 |||
 
 作為過渡期的檢查點，您可以看到這一節的[允出準則](identity-exit-criteria.md#crit-identity-sso)。
@@ -98,4 +100,4 @@ ms.locfileid: "40801738"
 
 |||
 |:-------|:-----|
-|![步驟 3](./media/stepnumbers/Step3.png)| [保護和管理您的使用者登入](identity-secure-user-sign-ins.md) |
+|![步驟 3](../media/stepnumbers/Step3.png)| [保護和管理您的使用者登入](identity-secure-user-sign-ins.md) |

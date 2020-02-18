@@ -184,6 +184,6 @@ ms.locfileid: "42072339"
     
 2. 清單錯誤標記與之對應的檔案類型，發生錯誤。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [位於 Office 365 中內容搜尋的已局部編製索引項目](partially-indexed-items-in-content-search.md)

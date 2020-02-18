@@ -1,5 +1,7 @@
 ---
 title: 步驟 2：設定每個辦公室的當地網際網路連線
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並設定 DNS 解析以提升效能。
-ms.openlocfilehash: b47131b9a5f854c630f5d54bd4d3b4738ed953b3
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 8b4302c06e75c59a1b99eb60399c9df897ad17ea
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370300"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066654"
 ---
 # <a name="step-2-configure-local-internet-connections-for-each-office"></a>步驟 2：設定每個辦公室的當地網際網路連線
 
 *此為必要步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-![階段 1-網路](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![階段 1-網路](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 在步驟 2 中，您確定您的每個辦公室都有當地網際網路連線，並使用當地 DNS 伺服器。這兩個元素需要減少連線延遲，並確定內部部署用戶端電腦連線至 Microsoft 365 雲端型服務的最近進入點。
 
@@ -32,13 +34,13 @@ ms.locfileid: "37370300"
 
 Microsoft 全域網路包含*分散式 Front Door* 基礎結構，這是一種地理位置分散的高可用性且可調整的網路邊緣。 它會終止前門伺服器上的使用者連線，並有效地路由 Microsoft 全域網路中的使用者流量。
 
-![Microsoft 全域網路](./media/networking-dns-resolution-same-location/microsoft-global-network.png)
+![Microsoft 全域網路](../media/networking-dns-resolution-same-location/microsoft-global-network.png)
 
 為了獲得最佳效能，內部部署用戶端應存取地理位置最接近的前門位置，而不是以網路主幹和最接近組織中央網際網路連線的前門傳送流量。
 
 請見以下範例。
 
-![使用 Microsoft 全域網路的範例](./media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
+![使用 Microsoft 全域網路的範例](../media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
 
 當巴黎分公司的使用者想要存取 SharePoint Online 網站時：
 
@@ -61,4 +63,4 @@ Microsoft 全域網路包含*分散式 Front Door* 基礎結構，這是一種�
 
 |||
 |:-------|:-----|
-|![步驟 3](./media/stepnumbers/Step3.png)|[避免網路 hairpin](networking-avoid-network-hairpins.md)|
+|![步驟 3](../media/stepnumbers/Step3.png)|[避免網路 hairpin](networking-avoid-network-hairpins.md)|

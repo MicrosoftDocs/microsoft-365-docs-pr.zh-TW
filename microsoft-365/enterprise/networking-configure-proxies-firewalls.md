@@ -1,5 +1,7 @@
 ---
 title: 步驟 4：設定流量旁路
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並為信任的 Office 365 位置的流量旁路設定 Web 瀏覽器和邊緣裝置。
-ms.openlocfilehash: 32aa2216856d5a519fddb55701be745a9dacbd87
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 71f62c5e245962f3514c49477e3cdeda17cb6397
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370140"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066682"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>步驟 4：設定流量旁路
 
 *此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-![階段 1 - 網路](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![階段 1 - 網路](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 由於一般網際網路流量可能會有風險，因此一般的組織網路會使用邊緣裝置 (例如 proxy 伺服器、SSL 中斷和檢查、封包檢查裝置和資料外洩防護系統) 來加強安全性。 請參閱[使用協力廠商網路裝置或解決方案管理 Office 365 流量](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365)中的網路攔截裝置問題。
 
@@ -46,7 +48,7 @@ Microsoft 建議您：
 
 以下是對您的網路基礎結構的有關建議。
 
-![最佳化內部部署流量的建議](./media/networking-configure-proxies-firewalls/bypassing-edge-devices.png)
+![最佳化內部部署流量的建議](../media/networking-configure-proxies-firewalls/bypassing-edge-devices.png)
 
 邊緣裝置包括防火牆、SSL 中斷和檢查、封包檢查裝置，以及資料外洩防護系統。 若要設定及更新邊緣裝置的設定，您可以使用指令碼或 REST 呼叫，使用來自 Office 365 端點 Web 服務的結構化清單。 如需詳細資訊，請參閱 [Office 365 IP 位址和 URL Web 服務](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)。
 
@@ -59,7 +61,7 @@ Microsoft 建議您：
 
 |||
 |:-------|:-----|
-|![步驟 5](./media/stepnumbers/Step5.png)|[最佳化用戶端和 Office 365 服務效能](networking-optimize-tcp-performance.md) |
+|![步驟 5](../media/stepnumbers/Step5.png)|[最佳化用戶端和 Office 365 服務效能](networking-optimize-tcp-performance.md) |
 
 
 

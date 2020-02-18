@@ -1,5 +1,7 @@
 ---
 title: 步驟 5：使用群組進行管理
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 您可以使用群組來自動管理某些系統管理工作。
-ms.openlocfilehash: 49cdb0c3d394cb423d0565d7093f1b32b6661158
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 215bb84cbb0cedc2f1320372ba8239cd51d07c98
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801708"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067270"
 ---
 # <a name="step-5-use-groups-for-management"></a>步驟 5：使用群組進行管理
 
-![階段 2 - 身分識別](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![階段 2 - 身分識別](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-self-service-groups"></a>
 ## <a name="allow-users-to-create-and-manage-their-own-groups"></a>允許使用者建立及管理自己的群組
@@ -66,7 +68,7 @@ ms.locfileid: "40801708"
 
 |||
 |:-------|:-----|
-|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：自動化 Microsoft 365 企業版測試環境的授權與群組成員資格](automate-licenses-group-membership-microsoft-365-test-environment.md) |
+|![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：自動化 Microsoft 365 企業版測試環境的授權與群組成員資格](automate-licenses-group-membership-microsoft-365-test-environment.md) |
 |||
 
 作為過渡期的檢查點，您可以看到這一節的[允出準則](identity-exit-criteria.md#crit-identity-dyn-groups)。
@@ -97,11 +99,11 @@ ms.locfileid: "40801708"
 
 |||
 |:-------|:-----|
-|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：自動化 Microsoft 365 企業版測試環境的授權與群組成員資格](automate-licenses-group-membership-microsoft-365-test-environment.md) |
+|![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [測試實驗室指南：自動化 Microsoft 365 企業版測試環境的授權與群組成員資格](automate-licenses-group-membership-microsoft-365-test-environment.md) |
 |||
 
 作為過渡期的檢查點，您可以看到這一節的[允出準則](identity-exit-criteria.md#crit-identity-group-license)。
 
 |||
 |:-------|:-----|
-|![步驟 6](./media/stepnumbers/Step6.png)| [設定身分識別治理](identity-configure-identity-governance.md) |
+|![步驟 6](../media/stepnumbers/Step6.png)| [設定身分識別治理](identity-configure-identity-governance.md) |
