@@ -1,5 +1,7 @@
 ---
 title: 回應 Office 365 中遭入侵的電子郵件帳戶
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何辨識及回應 Office 365 中遭入侵的電子郵件帳戶
-ms.openlocfilehash: 0262ca29681aa04d66c628a7d9101e3d3296481b
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 3aa8be9b53f2aa8f3fc6bf64744b36de5d912645
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572709"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598600"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>回應 Office 365 中遭入侵的電子郵件帳戶
 

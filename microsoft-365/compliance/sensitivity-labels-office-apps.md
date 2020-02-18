@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解使用者如何使用桌面、 Office 應用程式的行動電話，以及網頁的 Office 應用程式的 Office 應用程式中使用敏感度標籤運作。 了解哪些應用程式支援敏感度標籤。
-ms.openlocfilehash: a0bb5d8eea5c929f91b8e303b6c14eb52e0b980a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 596580a413778e54a3aaeb04bae8f5f164a96c14
+ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069860"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42101233"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式使用敏感度標籤
 
-當您已經發佈從 Microsoft 365 合規性中心或對等標示中心的敏感度標籤時，便會開始來分類及保護資料，建立或編輯使用者的 Office 應用程式中會出現。
+當您從 Microsoft 365 合規性中心或對等標示中心[發佈](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)敏感度標籤時，便會開始來分類及保護資料，建立或編輯使用者的 Office 應用程式中會出現。
 
-請使用本文中的資訊可協助您成功地管理 Office 應用程式中的使用敏感度標籤。 例如，您要支援內建標示，與 Azure 資訊保護整合標示用戶端之間的互動和相容性與其他應用程式及服務應用程式的最小版本。
+請使用本文中的資訊可協助您成功地管理 Office 相關應用程式中的敏感度標籤。 例如，找出您需要支援內建的設定標籤，應用程式的最小版本，並了解與 Azure 資訊保護整合標示用戶端之間的互動，以及與其他應用程式和服務的相容性。
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>訂閱與授權需求的敏感度標籤
 

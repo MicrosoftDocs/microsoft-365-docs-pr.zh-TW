@@ -1,5 +1,7 @@
 ---
 title: 傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -16,12 +18,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: 如果使用者持續從 Office 365 傳送被歸類為垃圾郵件的電子郵件，使用者將遭到限制而無法再傳送任何郵件。
-ms.openlocfilehash: e942cd9012c3eba226db58808031ac200fbdfeca
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 6fad4b9d3554228bdbf474bce2b4b2d0f29f7e2b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558630"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598580"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者
 

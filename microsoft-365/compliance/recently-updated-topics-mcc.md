@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: 就像在 Microsoft 365 合規性中心的功能，一律會不斷我們的說明內容。 我們持續正在建立新的文章、 更新現有的項目，以及變更根據您的意見反應。 了解什麼是新及更新這個月。
-ms.openlocfilehash: b285b51ca20e2822be9d8193d33e634418adbeb3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 36edcbc7106710ff62bc1a176fb76a17fd7076a6
+ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081621"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42101243"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 合規性內容的新版更新
 
@@ -31,6 +31,160 @@ ms.locfileid: "42081621"
 
 > [!TIP]
 > 若要掌握最新功能更新在 Microsoft 365 合規性中心，請參閱[What's new in Microsoft 365 合規性中心](whats-new.md)。
+
+## <a name="january-2020"></a>2020 年 1 月
+
+### <a name="advanced-ediscovery"></a>進階電子文件探索
+
+[進階電子文件報告 （預覽）](advanced-ediscovery-reports.md) （新增）<br>案例、 custodians、 資料來源，以及通訊的彙總整個組織的報告詳細資料。
+
+[進階電子文件的儀表板檢視集 （預覽）](advanced-ediscovery-dashboard.md) （新增）<br>新的分析功能，來識別趨勢或索引鍵的統計資料組中的檢閱詳細資料。
+
+### <a name="auditing"></a>稽核
+
+[管理信箱稽核](enable-mailbox-auditing.md#more-information)（更新）<br>釐清，只有信箱稽核事件 E5 使用者均可在 Office 365 安全性 & 合規性中心或使用 Office 365 管理活動 API 中的稽核記錄搜尋。 也使用 Exchange Online 指令程式來擷取信箱的詳細資訊稽核記錄中的使用者沒有 E5 授權。
+
+[搜尋稽核記錄在安全 & 合規性中心](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)（更新）<br>新增的 SharePoint 檔案與資料夾活動表格中的 「 Performed 搜尋查詢 」 活動的描述。
+
+### <a name="compliance-offerings"></a>合規性方案
+
+[ENISA 資訊保證 Framework](offering-enisa.md) （新增）<br>新提供大綱 Microsoft ENISA 合規性。
+
+更新以釐清 Microsoft 受管理電腦的支援文章：<br>
+[雲端安全性聯盟 (CSA) STAR 證明](offering-CSA-STAR-Attestation.md)<br>
+[雲端安全性聯盟 (CSA) STAR 認證](offering-CSA-Star-Certification.md)<br>
+[ISO/IEC 20000-1:2011 資訊技術服務管理](offering-ISO-20000-1-2011.md)<br>
+[ISO 22301:2012 商務持續性管理標準](offering-ISO-22301.md)<br>
+[ISO/IEC 27001:2013 資訊安全性管理標準](offering-ISO-27001.md)<br>
+[資訊安全性控制的 ISO/IEC 27017:2015 工作條例規定](offering-ISO-27017.md)<br>
+[保護雲端中個人資料的 ISO/IEC 27018 工作條例規定](offering-ISO-27018.md)<br>
+[ISO/IEC 27701 隱私權資訊管理系統 (PIMS)](offering-iso-27701.md)<br>
+[ISO 9001:2015 品質管理系統標準](offering-ISO-9001.md)<br>
+[服務組織控制 (SOC)](offering-SOC.md)
+
+### <a name="compliance-score-and-compliance-manager"></a>合規性分數和合規性管理員
+
+[Microsoft 合規性分數 （預覽）](compliance-score.md) （更新）<br>巴西 LGPD、 SOC 1 和 SOC 2; 包括預先設定的範本的相關資訊的各種更新群組; 的改良的說明若要快速檢視 [what's new in 合規性分數 」 文件的頂端的新連結。
+
+[Microsoft 合規性分數 （預覽） 計算](compliance-score-methodology.md#how-compliance-score-continuously-assesses-controls)（更新）<br>釐清安全分數力量合規性分數連續監視功能。
+
+[Microsoft 合規性分數 （預覽） 版本資訊](compliance-score-release-notes.md)（更新）<br>重新設計，顯示什麼是頂端的文章 （尤其是新範本的 「 評估 」） 的新資訊。
+
+[Microsoft 合規性分數 （預覽） 安裝程式](compliance-score-setup.md)（更新）<br>如何設定自動安全分數更新及改良的指導方針進行篩選的儀表板檢視群組的已新增新區段。
+
+[使用 Microsoft Compliance Manager （預覽） 的工作](working-with-compliance-manager.md)（更新）<br>改善的指導建立和使用群組與新的指示，啟用安全分數更新每個巨集指令層級的詳細資訊。
+
+### <a name="content-search-and-core-ediscovery"></a>內容搜尋和核心的 eDiscovery
+
+[淘汰網站的舊版電子文件探索工具](legacy-ediscovery-retirement.md)（新增）<br>詳細的資訊的就地 eDiscovery、 就地保留，及 Search-mailbox 指令程式在 Exchange Online 退休和的 Office 365 進階電子文件探索 v1.0 淘汰網站的詳細資訊。
+
+[移轉舊版 eDiscovery 搜尋，並保留至 Microsoft 365 合規性中心](migrate-legacy-eDiscovery-searches-and-holds.md)（新）<br>指導方針如何移轉就地 eDiscovery 搜尋，並從 Exchange 系統管理中心會存放在 Microsoft 365 合規性中心。
+
+[使用 Office 365 電子文件探索匯出工具，在 Microsoft Edge 中](configure-edge-to-export-search-results.md)（新增）<br>需設定為新版本的 Edge 來匯出搜尋結果的詳細資訊。
+
+[關鍵字查詢和搜尋條件的內容搜尋](keyword-queries-and-search-conditions.md#special-characters)（更新）<br>新增的搜尋查詢中的特殊字元的相關章節。
+
+[管理 eDiscovery 案例](ediscovery-cases.md#optional-step-11-delete-a-case)（更新）<br>新增新的選擇性步驟有關刪除案例] 和 [*所有*保留相關都聯與案例的關鍵點之前必須先*刪除*這種情況可以加以刪除。
+
+[搜尋並刪除電子郵件訊息](search-for-and-delete-messages-in-your-organization.md#step-3-delete-the-message)（更新）<br>指定 Search-mailbox cmdlet 即將來臨退休、 取代**Search-mailbox DeleteContent**與**New-compliancesearchaction-清除**中的步驟，刪除項目。 即將推出的額外的迴圈清除命令，以因應措施 New-compliancesearchaction cmdlet 10 項目清除限制的範例指令碼。
+
+### <a name="data-connectors"></a>資料連接器
+
+[設定連接器，以匯入 HR 資料](import-hr-data.md)（新增）<br>關於設定人力資源 (HR) 資料連接器，以匯入 HR 資料的詳細資訊。 支援新的測試人員風險管理解決方案。
+
+[封存協力廠商資料](archiving-third-party-data.md)（更新）<br>Facebook、 立即 Bloomberg、 LinkedIn，和 Twitter 資料連接器現在正式發行至一般的可用性。
+
+### <a name="insider-risk-management-preview"></a>測試人員風險管理 （預覽）
+
+測試人員風險管理解決方案的發行新的文章，以支援預覽。<br>
+[Microsoft 365 中的測試人員風險管理 (預覽版)](insider-risk-management.md)<br>
+[開始使用測試人員風險管理 (預覽版)](insider-risk-management-configure.md)<br>
+[測試人員風險管理原則 （預覽）](insider-risk-management-policies.md)<br>
+[測試人員風險管理警示 （預覽）](insider-risk-management-alerts.md)<br>
+[測試人員風險管理的情況下 （預覽）](insider-risk-management-cases.md)<br>
+[測試人員風險管理內容 explorer （預覽）](insider-risk-management-content-explorer.md)<br>
+[測試人員風險管理使用者 （預覽）](insider-risk-management-users.md)<br>
+[測試人員風險管理通知範本 （預覽）](insider-risk-management-notices.md)<br>
+
+### <a name="mrm-in-exchange-online"></a>MRM 在 Exchange Online
+
+[就地保留信箱保留 」 狀態](https://docs.microsoft.com/en-us/Exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold#difference-between-elcprocessingdisabled-and-retentionholdenabled)（更新）<br>比較 ElcProcessingDisabled 和 RetentionHoldEnabled 信箱內容以及它們如何影響的受管理的資料夾助理員處理加入的新章節。
+
+### <a name="records-management"></a>記錄管理
+
+[Overview of 處置檢閱](disposition-reviews.md#permissions-for-disposition)（更新）<br>釐清 「 僅檢視稽核記錄 」 角色必須被指派 Exchange 系統管理中心中解析長期支援問題。
+
+### <a name="sensitivity-labels"></a>敏感度標籤
+
+[建立及設定敏感度標籤和其原則](create-sensitivity-labels.md)（新增）<br>步驟及建議的流程，建立/設定/發佈敏感度標籤。 需要 PowerShell，包括設定不同語言的標籤範例的其他設定的相關也詳細資料。
+
+[解敏感度標籤](sensitivity-labels.md)（更新）<br>以前 '的敏感度標籤概觀'，本文是 overhauled 提供更佳讀取體驗，請更新的螢幕擷取畫面，還有子標籤視覺標記，並等候 24 小時的重設預期的而不是 「 內小時 」。
+
+[Microsoft Teams、 Office 365 群組與 SharePoint 網站 （公用預覽） 使用敏感度標籤](sensitivity-labels-teams-groups-sites.md#change-site-and-group-settings-for-a-label)（更新）<br>每個客戶的意見反應，新增明確 Powershell 逐步告訴您如何變更網站和群組的設定標籤。
+
+[啟用 SharePoint 和 OneDrive (public preview) 中的 Office 檔案的敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)（更新）<br>包括內嵌的視訊，還有限制，及如何 SharePoint 行為並不會變更如果使用 「 保留您自己的金鑰 」 的相關資訊的各種更新 (HYOK)。
+
+[在 Office 應用程式中的使用敏感度標籤](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)（更新）<br>新增的如何變更 Office 更新通道和註冊私人預覽如果您想要測試的新功能的詳細資訊。
+
+[已知問題的 Office 中的敏感度標籤](https://support.office.com/en-us/article/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)（更新）<br>新增新的問題，包括如何只要取代這些設定 Azure 資訊保護用戶端 （傳統），則不適用加密的敏感度標籤就可以移除文件檢查與視覺標記的問題。
+
+## <a name="december-2019"></a>2019 年 12 月
+
+### <a name="communication-compliance-and-supervision-policies"></a>通訊合規性和監督原則
+
+[通訊合規性功能參考](communication-compliance-feature-reference.md)及[Office 365 中的監督原則](supervision-policies.md)（更新）<br>釐清訊息和附件的值應該是而不是以逗號分隔線分隔 [原則] 精靈中的搜尋。
+
+### <a name="compliance-offerings"></a>合規性方案
+
+[證券與 Exchange 委員會： 規定系統合規性和完整性 (SCI)](offering-sec-reg-sci.md) （新增）<br>關於新文件提供大綱 Microsoft SCI 合規性，azure。
+
+[服務組織控制項 (SOC)](offering-SOC.md#frequently-asked-questions) （更新）<br>已變更的常見問題集回答憑證處理程序以釐清 Microsoft 稽核與認證資訊。
+
+### <a name="compliance-score-and-compliance-manager"></a>合規性分數和合規性管理員
+
+[Microsoft 合規性分數 （預覽）](compliance-score.md#templates)與[Microsoft Compliance Manager](compliance-manager-overview.md#templates) （更新）<br>合規性分數和合規性管理員中新增兩個新發行的範本的參考連結： ISO 27701:2019 和次/澳大利亞政府 ISM （預覽）。
+
+### <a name="content-search-and-core-ediscovery-cases"></a>內容搜尋和核心 eDiscovery 案例
+
+[在 Office 365 中的內容搜尋](content-search.md#searching-yammer-groups)和[管理 eDiscovery 案例](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case)（更新）<br>您現在可以使用內容搜尋和 eDiscovery 搜尋來尋找 Yammer 群組中的內容。
+
+### <a name="pst-import-service"></a>PST 匯入服務
+
+[使用網路上傳至 Office 365 組織的 PST 檔案匯入](use-network-upload-to-import-pst-files.md#before-you-begin)（更新）<br>已新增至 Azure 儲存體位置上傳的 PST 檔案是不超過 20 GB，以防止節流效能的建議。
+
+### <a name="sensitivity-labels"></a>敏感度標籤
+
+[解敏感度標籤](sensitivity-labels.md#what-label-policies-can-do)（更新）<br>每個客戶的意見，釐清使用者所提供的理由文字目前不會移至系統管理員檢閱程式的標籤分析，但如果安裝 Azure 資訊保護整合標示用戶端，它沒有移至 Azure 資訊保護分析。
+
+[Microsoft Teams、 Office 365 群組與 SharePoint 網站 （公用預覽） 使用敏感度標籤](sensitivity-labels-teams-groups-sites.md)（更新）<br>數個更新包括校正到 Azure AD PowerShell 模組需求以及如何安裝/更新它 （每個客戶的意見反應），新的命令，以同步處理標籤、 新的指導方針和警告標籤管理、 其他疑難排解，以及如何選擇-的逾時的預覽。
+
+[啟用 SharePoint 和 OneDrive (public preview) 中的 Office 檔案的敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)（更新）<br>每個客戶的意見，釐清安裝和更新 SharePoint Online 管理命令介面的詳細資訊。
+
+[在 Office 應用程式中的使用敏感度標籤](sensitivity-labels-office-apps.md)（更新）<br>停用的 Azure 資訊保護整合標示用戶端，以及如何將保護範本轉換成敏感度標籤還有。
+
+## <a name="november-2019"></a>2019 年 11 月
+
+### <a name="advanced-ediscovery"></a>進階電子文件探索
+
+[單一項目錯誤修復](single-item-error-remediation.md)（新增）<br>說明可讓 eDiscovery 管理員檢視已處理錯誤的檔案中繼資料並修復直接中檢閱設定錯誤的新功能。
+
+### <a name="compliance-score"></a>合規性分數
+
+[Microsoft 合規性分數 （預覽） 的常見問題集](compliance-score-faq.md)（新增）<br>問題和解答合規性分數，包括存取設定，與關係，合規性管理員以及安全分數，並使用非 Microsoft 產品。
+
+[使用 Microsoft Compliance Manager （預覽） 的工作](working-with-compliance-manager.md)與[版本資訊的合規性管理員 （預覽）](compliance-manager-release-notes.md#secure-score) （更新）<br>當組織第一次部署 Microsoft 365 或 Office 365 一週大約需要與安全分數的方式完全整合有關的下列文章中加入釐清。
+
+### <a name="content-search"></a>內容搜尋
+
+[使用 Office 365 電子文件探索匯出工具，在 Microsoft Edge 中](configure-edge-to-export-search-results.md)（新增）<br>指示您如何啟用 Edge （這不再預設為啟用） 中的 ClickOnce 支援因此您可以將搜尋結果匯出使用 Edge 瀏覽器。
+
+### <a name="holds"></a>保留
+
+[如何識別的型別保留在 Exchange Online 信箱上撥](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold)（更新）<br>新增的詳細 'DelayReleaseHoldApplied' 從信箱移除保留時，會設為 True，則信箱屬性的詳細資訊。
+
+### <a name="supervision-in-office-365"></a>Office 365 中的監督
+
+[Office 365 中的設定監督原則](configure-supervision-policies.md#step-2-make-supervision-available-in-your-organization-required)（更新）<br>更新的步驟 2 指導方針，為新的使用者體驗，並釐清角色權限。
 
 ## <a name="october-2019"></a>2019 年 10 月
 

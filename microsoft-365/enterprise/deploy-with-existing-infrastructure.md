@@ -1,5 +1,7 @@
 ---
 title: 使用現有基礎結構部署企業用 Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐一討論在您有現有基礎結構時，部署企業用 Microsoft 365 的允出準則。
-ms.openlocfilehash: 1b3ed8edd84a1879f4cd46795fc55e3625a97be2
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ce9c9343ff6983968f3ed96b1e1558788d04ffc1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801928"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597060"
 ---
 # <a name="deployment-of-microsoft-365-for-enterprise-with-existing-infrastructure"></a>使用現有基礎結構部署企業用 Microsoft 365
 

@@ -1,6 +1,8 @@
 ---
 title: 了解企業業務連續性管理與雲端服務
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解當雲端服務成為您的 IT 產品的一部分時，在規劃和實現業務連續性上會有何不同。
-ms.openlocfilehash: 86ceac67b90acfbb90a35d9a528a89d619668722
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: ced840852aeef9949d005e431125ad2d659cba33
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831834"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597000"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>企業業務連續性管理 (EBCM) 與雲端服務
 

@@ -10,14 +10,15 @@ localization_priority: Priority
 ms.collection:
 - M365-collaboration
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom: ''
 description: 推行並發揮 SharePoint 在組織中的價值，規劃這整個程序的步驟。
-ms.openlocfilehash: 74ab3b65597cdf1752dd5dbf9179724464c998a3
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: cb0cf16df328d667d796008ac7cabfc98c21ad17
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031638"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "39886320"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>部署適用於 Microsoft 365 企業版的 SharePoint 和 OneDrive
 

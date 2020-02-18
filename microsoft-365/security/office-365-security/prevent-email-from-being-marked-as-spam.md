@@ -1,5 +1,7 @@
 ---
 title: 如何避免 Office 365 發生誤判
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何避免發生誤判，並將真實的電子郵件排除在 Office 365、Exchange Online 和獨立版 Exchange Online Protection (EOP) 中的垃圾郵件之外。
-ms.openlocfilehash: 483bad168aa421e3fba4b0cc51e0b2e286f5701d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bf6149d21a5088e4507b65c6474918327faf3510
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809256"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598690"
 ---
 # <a name="how-to-prevent-good-email-messages-from-being-marked-as-spam-in-office-365"></a>如何在 Office 365 中防止真正的電子郵件被標示為垃圾郵件
 
