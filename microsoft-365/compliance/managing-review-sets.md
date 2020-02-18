@@ -16,43 +16,43 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 95c45034204e04a0b7fe6e0be5a9b3315c821b6c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 06dc88e395ea31d40a4163565d7894a2720cb469
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582732"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081777"
 ---
-# <a name="manage-review-sets-in-advanced-ediscovery"></a><span data-ttu-id="cc084-102">管理進階電子文件的檢閱集</span><span class="sxs-lookup"><span data-stu-id="cc084-102">Manage review sets in Advanced eDiscovery</span></span>
+# <a name="manage-review-sets-in-advanced-ediscovery"></a><span data-ttu-id="6cd0e-102">管理進階電子文件的檢閱集</span><span class="sxs-lookup"><span data-stu-id="6cd0e-102">Manage review sets in Advanced eDiscovery</span></span>
 
-<span data-ttu-id="cc084-103">檢閱集是一組靜態的文件其中分析、 查詢、 檢視標記，並匯出案例資料。</span><span class="sxs-lookup"><span data-stu-id="cc084-103">Review sets are a static set of documents where you can analyze, query, view, tag, and export data in a case.</span></span> <span data-ttu-id="cc084-104">如需執行這些工作的詳細資訊，請參閱：</span><span class="sxs-lookup"><span data-stu-id="cc084-104">For more information about performing these tasks, see:</span></span>
+<span data-ttu-id="6cd0e-103">檢閱集是一組靜態的文件其中分析、 查詢、 檢視標記，並匯出案例資料。</span><span class="sxs-lookup"><span data-stu-id="6cd0e-103">Review sets are a static set of documents where you can analyze, query, view, tag, and export data in a case.</span></span> <span data-ttu-id="6cd0e-104">如需執行這些工作的詳細資訊，請參閱：</span><span class="sxs-lookup"><span data-stu-id="6cd0e-104">For more information about performing these tasks, see:</span></span>
 
-- [<span data-ttu-id="cc084-105">分析檢閱集中的資料</span><span class="sxs-lookup"><span data-stu-id="cc084-105">Analyze data in a review set</span></span>](analyzing-data-in-review-set.md)
+- [<span data-ttu-id="6cd0e-105">分析檢閱集中的資料</span><span class="sxs-lookup"><span data-stu-id="6cd0e-105">Analyze data in a review set</span></span>](analyzing-data-in-review-set.md)
 
-- [<span data-ttu-id="cc084-106">查詢檢視集中的資料</span><span class="sxs-lookup"><span data-stu-id="cc084-106">Query the data in a review set</span></span>](review-set-search.md)
+- [<span data-ttu-id="6cd0e-106">查詢檢視集中的資料</span><span class="sxs-lookup"><span data-stu-id="6cd0e-106">Query the data in a review set</span></span>](review-set-search.md)
 
-- [<span data-ttu-id="cc084-107">檢視檢閱集中的文件</span><span class="sxs-lookup"><span data-stu-id="cc084-107">View documents in a review set</span></span>](view-documents-in-review-set.md)
+- [<span data-ttu-id="6cd0e-107">檢視檢閱集中的文件</span><span class="sxs-lookup"><span data-stu-id="6cd0e-107">View documents in a review set</span></span>](view-documents-in-review-set.md)
 
-- [<span data-ttu-id="cc084-108">標記檢閱集中的文件</span><span class="sxs-lookup"><span data-stu-id="cc084-108">Tag documents in a review set</span></span>](tagging-documents.md)
+- [<span data-ttu-id="6cd0e-108">標記檢閱集中的文件</span><span class="sxs-lookup"><span data-stu-id="6cd0e-108">Tag documents in a review set</span></span>](tagging-documents.md)
 
-- [<span data-ttu-id="cc084-109">匯出案例資料</span><span class="sxs-lookup"><span data-stu-id="cc084-109">Export case data</span></span>](exporting-data-ediscover20.md)
+- [<span data-ttu-id="6cd0e-109">匯出案例資料</span><span class="sxs-lookup"><span data-stu-id="6cd0e-109">Export case data</span></span>](exporting-data-ediscover20.md)
 
-## <a name="create-a-review-set"></a><span data-ttu-id="cc084-110">建立檢閱集</span><span class="sxs-lookup"><span data-stu-id="cc084-110">Create a review set</span></span>
+## <a name="create-a-review-set"></a><span data-ttu-id="6cd0e-110">建立檢閱集</span><span class="sxs-lookup"><span data-stu-id="6cd0e-110">Create a review set</span></span>
 
-<span data-ttu-id="cc084-111">檢閱設定可以建立**檢視集**] 索引標籤上，按一下 [ **+ 新增檢閱設定**。</span><span class="sxs-lookup"><span data-stu-id="cc084-111">Review sets can be created on the **Review sets** tab by clicking **+ Add review set**.</span></span>
+<span data-ttu-id="6cd0e-111">檢閱設定可以建立**檢視集**] 索引標籤上，按一下 [ **+ 新增檢閱設定**。</span><span class="sxs-lookup"><span data-stu-id="6cd0e-111">Review sets can be created on the **Review sets** tab by clicking **+ Add review set**.</span></span>
 
-![新增檢閱設定](media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
+![新增檢閱設定](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-<span data-ttu-id="cc084-113">在 [**新增檢閱組**彈出式頁面上，輸入檢閱集的名稱，然後按一下 [**儲存**。</span><span class="sxs-lookup"><span data-stu-id="cc084-113">On the **Add review set** flyout page, type a name for the review set and then click **Save**.</span></span> <span data-ttu-id="cc084-114">新的檢閱集合會顯示在 [**檢視設定**] 索引標籤上的清單。</span><span class="sxs-lookup"><span data-stu-id="cc084-114">The new review set is displayed in the list on the **Review sets** tab.</span></span>
+<span data-ttu-id="6cd0e-113">在 [**新增檢閱組**彈出式頁面上，輸入檢閱集的名稱，然後按一下 [**儲存**。</span><span class="sxs-lookup"><span data-stu-id="6cd0e-113">On the **Add review set** flyout page, type a name for the review set and then click **Save**.</span></span> <span data-ttu-id="6cd0e-114">新的檢閱集合會顯示在 [**檢視設定**] 索引標籤上的清單。</span><span class="sxs-lookup"><span data-stu-id="6cd0e-114">The new review set is displayed in the list on the **Review sets** tab.</span></span>
 
-![檢閱 [設定] 索引標籤上列出的新檢閱設定](media/AeDnewreviewset.png)
+![檢閱 [設定] 索引標籤上列出的新檢閱設定](../media/AeDnewreviewset.png)
 
-<span data-ttu-id="cc084-116">有三個不同的方式將資料新增至設定進階電子文件探索案例中檢閱。</span><span class="sxs-lookup"><span data-stu-id="cc084-116">There are three different ways to add data to a review set in an Advanced eDiscovery case.</span></span>
+<span data-ttu-id="6cd0e-116">有三個不同的方式將資料新增至設定進階電子文件探索案例中檢閱。</span><span class="sxs-lookup"><span data-stu-id="6cd0e-116">There are three different ways to add data to a review set in an Advanced eDiscovery case.</span></span>
 
-![若要新增至檢閱的三種方式設定](media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
+![若要新增至檢閱的三種方式設定](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
-1. [<span data-ttu-id="cc084-118">將搜尋結果新增至檢閱集</span><span class="sxs-lookup"><span data-stu-id="cc084-118">Add search results to a review set</span></span>](add-data-to-review-set.md)
+1. [<span data-ttu-id="6cd0e-118">將搜尋結果新增至檢閱集</span><span class="sxs-lookup"><span data-stu-id="6cd0e-118">Add search results to a review set</span></span>](add-data-to-review-set.md)
 
-2. [<span data-ttu-id="cc084-119">將非 Office 365 的資料載入檢閱集</span><span class="sxs-lookup"><span data-stu-id="cc084-119">Load non-Office 365 data into a review set</span></span>](load-non-office365-data.md)
+2. [<span data-ttu-id="6cd0e-119">將非 Office 365 的資料載入檢閱集</span><span class="sxs-lookup"><span data-stu-id="6cd0e-119">Load non-Office 365 data into a review set</span></span>](load-non-office365-data.md)
 
-3. [<span data-ttu-id="cc084-120">將資料新增至從另一個檢閱組設定檢閱</span><span class="sxs-lookup"><span data-stu-id="cc084-120">Add data to a review set from another review set</span></span>](add-data-to-review-set-from-another-review-set.md)
+3. [<span data-ttu-id="6cd0e-120">將資料新增至從另一個檢閱組設定檢閱</span><span class="sxs-lookup"><span data-stu-id="6cd0e-120">Add data to a review set from another review set</span></span>](add-data-to-review-set-from-another-review-set.md)
