@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: 3dbc3e221849cd9b5cde1d1f97e50ccf043c336d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: dd9cc9624cc58f481e8d8d491493efc22b095d5b
+ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070145"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42093435"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -201,8 +201,9 @@ ms.locfileid: "42070145"
     
 - Exchange 公用資料夾
     
+
 ![所有位置選項](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
-  
+
 全組織保留原則的其他重要功能包含：
   
 - 原則可以包含的信箱或網站數目沒有任何限制。

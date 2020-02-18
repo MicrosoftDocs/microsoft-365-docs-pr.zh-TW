@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 43cc0317bfce749affc41efe987fe905e1edae5d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e4e09360e4f07935867b03b3436a5581bb671774
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069914"
+ms.locfileid: "42091366"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -109,7 +109,7 @@ ms.locfileid: "42069914"
 
 - 如果您想要以程式設計方式從 Office 365 稽核記錄下載資料，我們建議您使用 Office 365 管理活動 API，而非使用 PowerShell 指令碼。 Office 365 管理活動 API 是一個 REST Web 服務，可用於為貴組織開發作業、安全性以及合規性的監控解決方案。 如需詳細資訊，請參閱 [Office 365 管理活動 API 參考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。
 
-- 發生事件後，對應的稽核記錄項目最多可能需要 30 分鐘或 24 小時才會顯示在搜尋結果中。 下列表格顯示不同 Office 365 服務的所需時間。
+- 發生事件後，對應的稽核記錄最多可能需要 30 分鐘或 24 小時的時間，才會在稽核記錄搜尋的結果中傳回。 下列表格顯示不同 Office 365 服務的所需時間。
 
   |**Office 365 服務**|**30 分鐘**|**24 小時**|
   |:-----|:-----:|:-----:|
@@ -117,14 +117,14 @@ ms.locfileid: "42069914"
   |Azure Active Directory (使用者登入活動)||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Azure Active Directory (系統管理員活動)||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |資料遺失防護|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Dynamics 365 CRM|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Dynamics 365 CRM||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |電子文件探索|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Exchange Online|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Power Automate|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Microsoft Project|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power Apps|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power Apps||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Power BI|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |安全性與合規性中心|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |SharePoint Online 和商務用 OneDrive|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
