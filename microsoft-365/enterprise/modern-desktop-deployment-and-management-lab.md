@@ -22,131 +22,131 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 02/15/2020
 ms.locfileid: "42066740"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a><span data-ttu-id="50e6b-103">Windows 和 Office 部署的 Lab Kit</span><span class="sxs-lookup"><span data-stu-id="50e6b-103">Windows and Office Deployment Lab Kit</span></span>
+# <a name="windows-and-office-deployment-lab-kit"></a><span data-ttu-id="78ba3-103">Windows 和 Office 部署的 Lab Kit</span><span class="sxs-lookup"><span data-stu-id="78ba3-103">Windows and Office Deployment Lab Kit</span></span>
 
-<span data-ttu-id="50e6b-p101">這些可下載的實際操作實驗室著重於 Windows 10 部署和 Office 365 部署，以及相關的設定和管理考量後置部署。此訓練高度建議給為結束使用 Windows 7 做準備的組織，但如果您目前使用 Windows 10 和 Office 365 增加版或 Office 2019 則也適用。其中包括 Windows 10、Office 365 專業增強版、Enterprise Mobility + Security，以及相關產品及服務的指南。</span><span class="sxs-lookup"><span data-stu-id="50e6b-p101">These downloadable hands-on labs focus on Windows 10 deployment and Office 365 deployment along with related configuration and management considerations post-deployment. This training is highly recommended for organizations preparing for Windows 7 end of life, but also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Included are guides for Windows 10, Office 365 ProPlus, Enterprise Mobility + Security and related products and services.</span></span>
+<span data-ttu-id="78ba3-p101">這些可下載的實際操作實驗室著重於 Windows 10 部署和 Office 365 部署，以及相關的設定和管理考量後置部署。此訓練高度建議給為結束使用 Windows 7 做準備的組織，但如果您目前使用 Windows 10 和 Office 365 增加版或 Office 2019 則也適用。其中包括 Windows 10、Office 365 專業增強版、Enterprise Mobility + Security，以及相關產品及服務的指南。</span><span class="sxs-lookup"><span data-stu-id="78ba3-p101">These downloadable hands-on labs focus on Windows 10 deployment and Office 365 deployment along with related configuration and management considerations post-deployment. This training is highly recommended for organizations preparing for Windows 7 end of life, but also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Included are guides for Windows 10, Office 365 ProPlus, Enterprise Mobility + Security and related products and services.</span></span>
 
-<span data-ttu-id="50e6b-107">這些實驗室是設計來協助您規劃、測試及驗證執行 Windows 10 企業版和 Office 365 專業增強版之桌面的部署和管理。</span><span class="sxs-lookup"><span data-stu-id="50e6b-107">These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus.</span></span> <span data-ttu-id="50e6b-108">實驗室涵蓋桌面部署輪中概述的步驟和工具，跨越 Microsoft Endpoint Configuration Manager、電腦分析、Office 自訂工具、OneDrive、Windows Autopilot，以及其他。</span><span class="sxs-lookup"><span data-stu-id="50e6b-108">The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.</span></span>
+<span data-ttu-id="78ba3-107">這些實驗室是設計來協助您規劃、測試及驗證執行 Windows 10 企業版和 Office 365 專業增強版之桌面的部署和管理。</span><span class="sxs-lookup"><span data-stu-id="78ba3-107">These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus.</span></span> <span data-ttu-id="78ba3-108">實驗室涵蓋桌面部署輪中概述的步驟和工具，跨越 Microsoft Endpoint Configuration Manager、電腦分析、Office 自訂工具、OneDrive、Windows Autopilot，以及其他。</span><span class="sxs-lookup"><span data-stu-id="78ba3-108">The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.</span></span>
 
-<span data-ttu-id="50e6b-109">作為 Windows 10 和 Office 365 專業增強版之[桌面部署](https://www.aka.ms/howtoshift)程序的一部分，當您開始探索部署工具更新，並測試部署相關的自動化作業時，建置沙箱化或隔離的實驗室環境是建議的起點。</span><span class="sxs-lookup"><span data-stu-id="50e6b-109">As part of the [Desktop Deployment](https://www.aka.ms/howtoshift) process for Windows 10 and Office 365 ProPlus, building a sandboxed or isolated lab environment is the recommended starting point when you begin to explore deployment tool updates and test your deployment-related automation.</span></span>
+<span data-ttu-id="78ba3-109">作為 Windows 10 和 Office 365 專業增強版之[桌面部署](https://www.aka.ms/howtoshift)程序的一部分，當您開始探索部署工具更新，並測試部署相關的自動化作業時，建置沙箱化或隔離的實驗室環境是建議的起點。</span><span class="sxs-lookup"><span data-stu-id="78ba3-109">As part of the [Desktop Deployment](https://www.aka.ms/howtoshift) process for Windows 10 and Office 365 ProPlus, building a sandboxed or isolated lab environment is the recommended starting point when you begin to explore deployment tool updates and test your deployment-related automation.</span></span>
 
-<span data-ttu-id="50e6b-110">實驗室套件是免費下載的，並使用試用版軟體。</span><span class="sxs-lookup"><span data-stu-id="50e6b-110">The lab kit is free to download and uses trial software.</span></span>
+<span data-ttu-id="78ba3-110">實驗室套件是免費下載的，並使用試用版軟體。</span><span class="sxs-lookup"><span data-stu-id="78ba3-110">The lab kit is free to download and uses trial software.</span></span>
 
-### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[<span data-ttu-id="50e6b-111">**下載 Windows 和 Office 部署的 Lab Kit**</span><span class="sxs-lookup"><span data-stu-id="50e6b-111">**Download the Windows and Office Deployment Lab Kit**</span></span>](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[<span data-ttu-id="78ba3-111">**下載 Windows 和 Office 部署的 Lab Kit**</span><span class="sxs-lookup"><span data-stu-id="78ba3-111">**Download the Windows and Office Deployment Lab Kit**</span></span>](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-## <a name="a-complete-lab-environment"></a><span data-ttu-id="50e6b-112">**完整實驗室環境**</span><span class="sxs-lookup"><span data-stu-id="50e6b-112">**A complete lab environment**</span></span>
+## <a name="a-complete-lab-environment"></a><span data-ttu-id="78ba3-112">**完整實驗室環境**</span><span class="sxs-lookup"><span data-stu-id="78ba3-112">**A complete lab environment**</span></span>
 
-<span data-ttu-id="50e6b-p103">實驗室可讓您自動佈建虛擬實驗室環境，包括網域結合的桌面用戶端、網域控制站、網際網路閘道，以及完整設定的 ConfigMgr 執行個體。實驗室包含下列產品的評估版本：</span><span class="sxs-lookup"><span data-stu-id="50e6b-p103">The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured ConfigMgr instance. The lab contains Evaluation Versions of the following products:</span></span>
+<span data-ttu-id="78ba3-p103">實驗室可讓您自動佈建虛擬實驗室環境，包括網域結合的桌面用戶端、網域控制站、網際網路閘道，以及完整設定的 ConfigMgr 執行個體。實驗室包含下列產品的評估版本：</span><span class="sxs-lookup"><span data-stu-id="78ba3-p103">The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured ConfigMgr instance. The lab contains Evaluation Versions of the following products:</span></span>
 
-  - <span data-ttu-id="50e6b-115">Windows 10 企業版，版本 1909</span><span class="sxs-lookup"><span data-stu-id="50e6b-115">Windows 10 Enterprise, Version 1909</span></span>
-  - <span data-ttu-id="50e6b-116">Windows 7 Enterprise</span><span class="sxs-lookup"><span data-stu-id="50e6b-116">Windows 7 Enterprise</span></span>
-  - <span data-ttu-id="50e6b-117">Microsoft Endpoint Configuration Manager，版本1902</span><span class="sxs-lookup"><span data-stu-id="50e6b-117">Microsoft Endpoint Configuration Manager, Version 1902</span></span>
-  - <span data-ttu-id="50e6b-118">Windows Assessment and Deployment Kit for Windows 10，版本 1903</span><span class="sxs-lookup"><span data-stu-id="50e6b-118">Windows Assessment and Deployment Kit for Windows 10, Version 1903</span></span>
-  - <span data-ttu-id="50e6b-119">Microsoft Deployment Toolkit</span><span class="sxs-lookup"><span data-stu-id="50e6b-119">Microsoft Deployment Toolkit</span></span>
-  - <span data-ttu-id="50e6b-120">Microsoft Application Virtualization (App-V) 5.1</span><span class="sxs-lookup"><span data-stu-id="50e6b-120">Microsoft Application Virtualization (App-V) 5.1</span></span>
-  - <span data-ttu-id="50e6b-121">Microsoft BitLocker Administration and Monitoring 2.5 SP1</span><span class="sxs-lookup"><span data-stu-id="50e6b-121">Microsoft BitLocker Administration and Monitoring 2.5 SP1</span></span>
-  - <span data-ttu-id="50e6b-122">Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="50e6b-122">Windows Server 2019</span></span>
-  - <span data-ttu-id="50e6b-123">Microsoft SQL Server 2017</span><span class="sxs-lookup"><span data-stu-id="50e6b-123">Microsoft SQL Server 2017</span></span>
+  - <span data-ttu-id="78ba3-115">Windows 10 企業版，版本 1909</span><span class="sxs-lookup"><span data-stu-id="78ba3-115">Windows 10 Enterprise, Version 1909</span></span>
+  - <span data-ttu-id="78ba3-116">Windows 7 Enterprise</span><span class="sxs-lookup"><span data-stu-id="78ba3-116">Windows 7 Enterprise</span></span>
+  - <span data-ttu-id="78ba3-117">Microsoft Endpoint Configuration Manager，版本1902</span><span class="sxs-lookup"><span data-stu-id="78ba3-117">Microsoft Endpoint Configuration Manager, Version 1902</span></span>
+  - <span data-ttu-id="78ba3-118">Windows Assessment and Deployment Kit for Windows 10，版本 1903</span><span class="sxs-lookup"><span data-stu-id="78ba3-118">Windows Assessment and Deployment Kit for Windows 10, Version 1903</span></span>
+  - <span data-ttu-id="78ba3-119">Microsoft Deployment Toolkit</span><span class="sxs-lookup"><span data-stu-id="78ba3-119">Microsoft Deployment Toolkit</span></span>
+  - <span data-ttu-id="78ba3-120">Microsoft Application Virtualization (App-V) 5.1</span><span class="sxs-lookup"><span data-stu-id="78ba3-120">Microsoft Application Virtualization (App-V) 5.1</span></span>
+  - <span data-ttu-id="78ba3-121">Microsoft BitLocker Administration and Monitoring 2.5 SP1</span><span class="sxs-lookup"><span data-stu-id="78ba3-121">Microsoft BitLocker Administration and Monitoring 2.5 SP1</span></span>
+  - <span data-ttu-id="78ba3-122">Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="78ba3-122">Windows Server 2019</span></span>
+  - <span data-ttu-id="78ba3-123">Microsoft SQL Server 2017</span><span class="sxs-lookup"><span data-stu-id="78ba3-123">Microsoft SQL Server 2017</span></span>
 
-<span data-ttu-id="50e6b-124">此外，實驗室是設計來連線到下列項目的試用版：</span><span class="sxs-lookup"><span data-stu-id="50e6b-124">PLUS, the lab is designed to be connected to trials for:</span></span> 
+<span data-ttu-id="78ba3-124">此外，實驗室是設計來連線到下列項目的試用版：</span><span class="sxs-lookup"><span data-stu-id="78ba3-124">PLUS, the lab is designed to be connected to trials for:</span></span> 
 
-  - <span data-ttu-id="50e6b-125">Microsoft 365 E5</span><span class="sxs-lookup"><span data-stu-id="50e6b-125">Microsoft 365 E5</span></span>
+  - <span data-ttu-id="78ba3-125">Microsoft 365 E5</span><span class="sxs-lookup"><span data-stu-id="78ba3-125">Microsoft 365 E5</span></span>
 
-<span data-ttu-id="50e6b-126">或</span><span class="sxs-lookup"><span data-stu-id="50e6b-126">Or</span></span>
-  - <span data-ttu-id="50e6b-127">Office 365 企業版 E5</span><span class="sxs-lookup"><span data-stu-id="50e6b-127">Office 365 Enterprise E5</span></span>
-  - <span data-ttu-id="50e6b-128">Enterprise Mobility + Security</span><span class="sxs-lookup"><span data-stu-id="50e6b-128">Enterprise Mobility + Security</span></span>
+<span data-ttu-id="78ba3-126">或</span><span class="sxs-lookup"><span data-stu-id="78ba3-126">Or</span></span>
+  - <span data-ttu-id="78ba3-127">Office 365 企業版 E5</span><span class="sxs-lookup"><span data-stu-id="78ba3-127">Office 365 Enterprise E5</span></span>
+  - <span data-ttu-id="78ba3-128">Enterprise Mobility + Security</span><span class="sxs-lookup"><span data-stu-id="78ba3-128">Enterprise Mobility + Security</span></span>
 
-## <a name="step-by-step-labs"></a><span data-ttu-id="50e6b-129">**逐步實驗室**</span><span class="sxs-lookup"><span data-stu-id="50e6b-129">**Step-by-step labs**</span></span>
+## <a name="step-by-step-labs"></a><span data-ttu-id="78ba3-129">**逐步實驗室**</span><span class="sxs-lookup"><span data-stu-id="78ba3-129">**Step-by-step labs**</span></span>
 
-<span data-ttu-id="50e6b-130">詳細的實驗室指南可透過多個部署和管理案例來引導您。</span><span class="sxs-lookup"><span data-stu-id="50e6b-130">Detailed lab guides take you through multiple deployment and management scenarios.</span></span> <span data-ttu-id="50e6b-131">這些實驗室已針對 Intune 和 Configuration Manager 的最新版本 (版本 1910) 進行了更新。</span><span class="sxs-lookup"><span data-stu-id="50e6b-131">The labs have been updated for the latest versions of Intune and Configuration Manager (Version 1910).</span></span>  
+<span data-ttu-id="78ba3-130">詳細的實驗室指南可透過多個部署和管理案例來引導您。</span><span class="sxs-lookup"><span data-stu-id="78ba3-130">Detailed lab guides take you through multiple deployment and management scenarios.</span></span> <span data-ttu-id="78ba3-131">這些實驗室已針對 Intune 和 Configuration Manager 的最新版本 (版本 1910) 進行了更新。</span><span class="sxs-lookup"><span data-stu-id="78ba3-131">The labs have been updated for the latest versions of Intune and Configuration Manager (Version 1910).</span></span>  
 
-### <a name="device-and-app-readiness"></a><span data-ttu-id="50e6b-132">**裝置和應用程式整備**</span><span class="sxs-lookup"><span data-stu-id="50e6b-132">**Device and App Readiness**</span></span>
+### <a name="device-and-app-readiness"></a><span data-ttu-id="78ba3-132">**裝置和應用程式整備**</span><span class="sxs-lookup"><span data-stu-id="78ba3-132">**Device and App Readiness**</span></span>
 
-  - <span data-ttu-id="50e6b-133">電腦分析</span><span class="sxs-lookup"><span data-stu-id="50e6b-133">Desktop Analytics</span></span>
-  - <span data-ttu-id="50e6b-134">Internet Explorer 的企業模式和企業模式網站清單</span><span class="sxs-lookup"><span data-stu-id="50e6b-134">Enterprise Mode and the Enterprise Mode Site List for Internet Explorer</span></span>
+  - <span data-ttu-id="78ba3-133">電腦分析</span><span class="sxs-lookup"><span data-stu-id="78ba3-133">Desktop Analytics</span></span>
+  - <span data-ttu-id="78ba3-134">Internet Explorer 的企業模式和企業模式網站清單</span><span class="sxs-lookup"><span data-stu-id="78ba3-134">Enterprise Mode and the Enterprise Mode Site List for Internet Explorer</span></span>
 
-### <a name="directory-and-network-readiness"></a><span data-ttu-id="50e6b-135">**目錄和網路整備**</span><span class="sxs-lookup"><span data-stu-id="50e6b-135">**Directory and Network Readiness**</span></span>
+### <a name="directory-and-network-readiness"></a><span data-ttu-id="78ba3-135">**目錄和網路整備**</span><span class="sxs-lookup"><span data-stu-id="78ba3-135">**Directory and Network Readiness**</span></span>
 
-  - <span data-ttu-id="50e6b-136">Azure Active Directory 和 Microsoft 365 的基本設定</span><span class="sxs-lookup"><span data-stu-id="50e6b-136">Basic setup for Azure Active Directory and Microsoft 365</span></span>
-  - <span data-ttu-id="50e6b-137">使用傳遞最佳化、ConfigMgr 中的對等快取，以及 LEDBAT 進行網路最佳化</span><span class="sxs-lookup"><span data-stu-id="50e6b-137">Network optimization using Delivery Optimization, Peer Cache in ConfigMgr and LEDBAT</span></span>
-  - <span data-ttu-id="50e6b-138">ConfigMgr 和 Microsoft Intune 共同管理</span><span class="sxs-lookup"><span data-stu-id="50e6b-138">ConfigMgr and Microsoft Intune Co-Management</span></span>
-  - <span data-ttu-id="50e6b-139">遠端存取 (VPN)</span><span class="sxs-lookup"><span data-stu-id="50e6b-139">Remote Access (VPN)</span></span>
+  - <span data-ttu-id="78ba3-136">Azure Active Directory 和 Microsoft 365 的基本設定</span><span class="sxs-lookup"><span data-stu-id="78ba3-136">Basic setup for Azure Active Directory and Microsoft 365</span></span>
+  - <span data-ttu-id="78ba3-137">使用傳遞最佳化、ConfigMgr 中的對等快取，以及 LEDBAT 進行網路最佳化</span><span class="sxs-lookup"><span data-stu-id="78ba3-137">Network optimization using Delivery Optimization, Peer Cache in ConfigMgr and LEDBAT</span></span>
+  - <span data-ttu-id="78ba3-138">ConfigMgr 和 Microsoft Intune 共同管理</span><span class="sxs-lookup"><span data-stu-id="78ba3-138">ConfigMgr and Microsoft Intune Co-Management</span></span>
+  - <span data-ttu-id="78ba3-139">遠端存取 (VPN)</span><span class="sxs-lookup"><span data-stu-id="78ba3-139">Remote Access (VPN)</span></span>
 
-### <a name="office-and-lob-app-delivery"></a><span data-ttu-id="50e6b-140">**Office 和 LOB 應用程式傳遞**</span><span class="sxs-lookup"><span data-stu-id="50e6b-140">**Office and LOB App Delivery**</span></span>
+### <a name="office-and-lob-app-delivery"></a><span data-ttu-id="78ba3-140">**Office 和 LOB 應用程式傳遞**</span><span class="sxs-lookup"><span data-stu-id="78ba3-140">**Office and LOB App Delivery**</span></span>
 
-  - <span data-ttu-id="50e6b-141">使用 Microsoft Endpoint Configuration Manager 的 Office 365 專業增強版部署</span><span class="sxs-lookup"><span data-stu-id="50e6b-141">Office 365 ProPlus deployment using Microsoft Endpoint Configuration Manager</span></span>
-  - <span data-ttu-id="50e6b-142">使用 Microsoft Intune 部署 office 365 專業增強版</span><span class="sxs-lookup"><span data-stu-id="50e6b-142">Office 365 ProPlus deployment using Microsoft Intune</span></span>
-  - <span data-ttu-id="50e6b-143">使用 Microsoft Intune 部署及管理應用程式</span><span class="sxs-lookup"><span data-stu-id="50e6b-143">App deployment and management using Microsoft Intune</span></span>
-  - <span data-ttu-id="50e6b-144">使用商務用 Microsoft Store 進行應用程式部署和自助安裝</span><span class="sxs-lookup"><span data-stu-id="50e6b-144">App deployment and self-service installation using Microsoft Store for Business</span></span>
-  - <span data-ttu-id="50e6b-145">Desktop Bridge 應用程式轉換為 UWP</span><span class="sxs-lookup"><span data-stu-id="50e6b-145">Desktop Bridge application conversion to UWP</span></span>
-  - <span data-ttu-id="50e6b-146">Windows 應用程式認證組件</span><span class="sxs-lookup"><span data-stu-id="50e6b-146">Windows App Certification Kit</span></span>
-  - <span data-ttu-id="50e6b-147">使用 IE 的企業模式補救瀏覽器相容性</span><span class="sxs-lookup"><span data-stu-id="50e6b-147">Browser compatibility remediation using Enterprise Mode for IE</span></span>
+  - <span data-ttu-id="78ba3-141">使用 Microsoft Endpoint Configuration Manager 的 Office 365 專業增強版部署</span><span class="sxs-lookup"><span data-stu-id="78ba3-141">Office 365 ProPlus deployment using Microsoft Endpoint Configuration Manager</span></span>
+  - <span data-ttu-id="78ba3-142">使用 Microsoft Intune 部署 office 365 專業增強版</span><span class="sxs-lookup"><span data-stu-id="78ba3-142">Office 365 ProPlus deployment using Microsoft Intune</span></span>
+  - <span data-ttu-id="78ba3-143">使用 Microsoft Intune 部署及管理應用程式</span><span class="sxs-lookup"><span data-stu-id="78ba3-143">App deployment and management using Microsoft Intune</span></span>
+  - <span data-ttu-id="78ba3-144">使用商務用 Microsoft Store 進行應用程式部署和自助安裝</span><span class="sxs-lookup"><span data-stu-id="78ba3-144">App deployment and self-service installation using Microsoft Store for Business</span></span>
+  - <span data-ttu-id="78ba3-145">Desktop Bridge 應用程式轉換為 UWP</span><span class="sxs-lookup"><span data-stu-id="78ba3-145">Desktop Bridge application conversion to UWP</span></span>
+  - <span data-ttu-id="78ba3-146">Windows 應用程式認證組件</span><span class="sxs-lookup"><span data-stu-id="78ba3-146">Windows App Certification Kit</span></span>
+  - <span data-ttu-id="78ba3-147">使用 IE 的企業模式補救瀏覽器相容性</span><span class="sxs-lookup"><span data-stu-id="78ba3-147">Browser compatibility remediation using Enterprise Mode for IE</span></span>
 
-### <a name="user-file-and-settings-migration"></a><span data-ttu-id="50e6b-148">**使用者檔案和設定移轉**</span><span class="sxs-lookup"><span data-stu-id="50e6b-148">**User File and Settings Migration**</span></span>
+### <a name="user-file-and-settings-migration"></a><span data-ttu-id="78ba3-148">**使用者檔案和設定移轉**</span><span class="sxs-lookup"><span data-stu-id="78ba3-148">**User File and Settings Migration**</span></span>
 
-  - <span data-ttu-id="50e6b-149">屬於 ConfigMgr 和 MDT 中電腦重新整理及取代工作順序的使用者狀態移轉工具</span><span class="sxs-lookup"><span data-stu-id="50e6b-149">User State Migration Tool as part of PC Refresh and Replacement Task Sequences in ConfigMgr and MDT</span></span>
-  - <span data-ttu-id="50e6b-150">OneDrive 已知資料夾移動</span><span class="sxs-lookup"><span data-stu-id="50e6b-150">OneDrive Known Folder Move</span></span>
-  - <span data-ttu-id="50e6b-151">企業狀態漫遊</span><span class="sxs-lookup"><span data-stu-id="50e6b-151">Enterprise State Roaming</span></span>
+  - <span data-ttu-id="78ba3-149">屬於 ConfigMgr 和 MDT 中電腦重新整理及取代工作順序的使用者狀態移轉工具</span><span class="sxs-lookup"><span data-stu-id="78ba3-149">User State Migration Tool as part of PC Refresh and Replacement Task Sequences in ConfigMgr and MDT</span></span>
+  - <span data-ttu-id="78ba3-150">OneDrive 已知資料夾移動</span><span class="sxs-lookup"><span data-stu-id="78ba3-150">OneDrive Known Folder Move</span></span>
+  - <span data-ttu-id="78ba3-151">企業狀態漫遊</span><span class="sxs-lookup"><span data-stu-id="78ba3-151">Enterprise State Roaming</span></span>
 
-### <a name="security-and-compliance"></a><span data-ttu-id="50e6b-152">**安全性與合規性**</span><span class="sxs-lookup"><span data-stu-id="50e6b-152">**Security and Compliance**</span></span>
+### <a name="security-and-compliance"></a><span data-ttu-id="78ba3-152">**安全性與合規性**</span><span class="sxs-lookup"><span data-stu-id="78ba3-152">**Security and Compliance**</span></span>
 
-  - <span data-ttu-id="50e6b-153">BitLocker 裝置加密</span><span class="sxs-lookup"><span data-stu-id="50e6b-153">BitLocker device encryption</span></span>
-  - <span data-ttu-id="50e6b-154">Windows Defender 防毒軟體</span><span class="sxs-lookup"><span data-stu-id="50e6b-154">Windows Defender Antivirus</span></span>
-  - <span data-ttu-id="50e6b-155">Windows Hello 企業版</span><span class="sxs-lookup"><span data-stu-id="50e6b-155">Windows Hello for Business</span></span>
-  - <span data-ttu-id="50e6b-156">BIOS 至 UEFI 轉換，作為虛擬化型安全性的啟用器</span><span class="sxs-lookup"><span data-stu-id="50e6b-156">BIOS to UEFI conversion as an enabler for virtualization-based security</span></span>
-  - <span data-ttu-id="50e6b-157">Windows Defender Credential Guard</span><span class="sxs-lookup"><span data-stu-id="50e6b-157">Windows Defender Credential Guard</span></span>
-  - <span data-ttu-id="50e6b-158">Windows Defender 應用程式防護</span><span class="sxs-lookup"><span data-stu-id="50e6b-158">Windows Defender Application Guard</span></span>
-  - <span data-ttu-id="50e6b-159">Windows Defender 惡意探索防護</span><span class="sxs-lookup"><span data-stu-id="50e6b-159">Windows Defender Exploit Guard</span></span>
-  - <span data-ttu-id="50e6b-160">Windows Defender 應用程式控制</span><span class="sxs-lookup"><span data-stu-id="50e6b-160">Windows Defender Application Control</span></span>
-  - <span data-ttu-id="50e6b-161">Windows Defender 進階威脅防護</span><span class="sxs-lookup"><span data-stu-id="50e6b-161">Microsoft Defender Advanced Threat Protection</span></span>
+  - <span data-ttu-id="78ba3-153">BitLocker 裝置加密</span><span class="sxs-lookup"><span data-stu-id="78ba3-153">BitLocker device encryption</span></span>
+  - <span data-ttu-id="78ba3-154">Windows Defender 防毒軟體</span><span class="sxs-lookup"><span data-stu-id="78ba3-154">Windows Defender Antivirus</span></span>
+  - <span data-ttu-id="78ba3-155">Windows Hello 企業版</span><span class="sxs-lookup"><span data-stu-id="78ba3-155">Windows Hello for Business</span></span>
+  - <span data-ttu-id="78ba3-156">BIOS 至 UEFI 轉換，作為虛擬化型安全性的啟用器</span><span class="sxs-lookup"><span data-stu-id="78ba3-156">BIOS to UEFI conversion as an enabler for virtualization-based security</span></span>
+  - <span data-ttu-id="78ba3-157">Windows Defender Credential Guard</span><span class="sxs-lookup"><span data-stu-id="78ba3-157">Windows Defender Credential Guard</span></span>
+  - <span data-ttu-id="78ba3-158">Windows Defender 應用程式防護</span><span class="sxs-lookup"><span data-stu-id="78ba3-158">Windows Defender Application Guard</span></span>
+  - <span data-ttu-id="78ba3-159">Windows Defender 惡意探索防護</span><span class="sxs-lookup"><span data-stu-id="78ba3-159">Windows Defender Exploit Guard</span></span>
+  - <span data-ttu-id="78ba3-160">Windows Defender 應用程式控制</span><span class="sxs-lookup"><span data-stu-id="78ba3-160">Windows Defender Application Control</span></span>
+  - <span data-ttu-id="78ba3-161">Windows Defender 進階威脅防護</span><span class="sxs-lookup"><span data-stu-id="78ba3-161">Microsoft Defender Advanced Threat Protection</span></span>
 
-### <a name="os-deployment-and-feature-updates"></a><span data-ttu-id="50e6b-162">**作業系統部署與功能更新**</span><span class="sxs-lookup"><span data-stu-id="50e6b-162">**OS Deployment and Feature Updates**</span></span>
+### <a name="os-deployment-and-feature-updates"></a><span data-ttu-id="78ba3-162">**作業系統部署與功能更新**</span><span class="sxs-lookup"><span data-stu-id="78ba3-162">**OS Deployment and Feature Updates**</span></span>
 
-  - <span data-ttu-id="50e6b-163">建立作業系統映像</span><span class="sxs-lookup"><span data-stu-id="50e6b-163">OS image creation</span></span>
-  - <span data-ttu-id="50e6b-164">ConfigMgr 中的作業系統部署工作順序</span><span class="sxs-lookup"><span data-stu-id="50e6b-164">OS Deployment Task Sequences in ConfigMgr</span></span>
-      - <span data-ttu-id="50e6b-165">裸機</span><span class="sxs-lookup"><span data-stu-id="50e6b-165">Bare Metal</span></span>
-      - <span data-ttu-id="50e6b-166">重新整理</span><span class="sxs-lookup"><span data-stu-id="50e6b-166">Refresh</span></span>
-      - <span data-ttu-id="50e6b-167">取代</span><span class="sxs-lookup"><span data-stu-id="50e6b-167">Replacement</span></span>
-      - <span data-ttu-id="50e6b-168">升級</span><span class="sxs-lookup"><span data-stu-id="50e6b-168">Upgrade</span></span>
-  - <span data-ttu-id="50e6b-169">MDT 中的作業系統部署工作順序</span><span class="sxs-lookup"><span data-stu-id="50e6b-169">OS Deployment Task Sequences in MDT</span></span>
-  - <span data-ttu-id="50e6b-170">使用 ConfigMgr 中升級工作順序的功能更新</span><span class="sxs-lookup"><span data-stu-id="50e6b-170">Feature Updates using Upgrade Task Sequences in ConfigMgr</span></span>
-  - <span data-ttu-id="50e6b-171">Windows Autopilot</span><span class="sxs-lookup"><span data-stu-id="50e6b-171">Windows Autopilot</span></span>
+  - <span data-ttu-id="78ba3-163">建立作業系統映像</span><span class="sxs-lookup"><span data-stu-id="78ba3-163">OS image creation</span></span>
+  - <span data-ttu-id="78ba3-164">ConfigMgr 中的作業系統部署工作順序</span><span class="sxs-lookup"><span data-stu-id="78ba3-164">OS Deployment Task Sequences in ConfigMgr</span></span>
+      - <span data-ttu-id="78ba3-165">裸機</span><span class="sxs-lookup"><span data-stu-id="78ba3-165">Bare Metal</span></span>
+      - <span data-ttu-id="78ba3-166">重新整理</span><span class="sxs-lookup"><span data-stu-id="78ba3-166">Refresh</span></span>
+      - <span data-ttu-id="78ba3-167">取代</span><span class="sxs-lookup"><span data-stu-id="78ba3-167">Replacement</span></span>
+      - <span data-ttu-id="78ba3-168">升級</span><span class="sxs-lookup"><span data-stu-id="78ba3-168">Upgrade</span></span>
+  - <span data-ttu-id="78ba3-169">MDT 中的作業系統部署工作順序</span><span class="sxs-lookup"><span data-stu-id="78ba3-169">OS Deployment Task Sequences in MDT</span></span>
+  - <span data-ttu-id="78ba3-170">使用 ConfigMgr 中升級工作順序的功能更新</span><span class="sxs-lookup"><span data-stu-id="78ba3-170">Feature Updates using Upgrade Task Sequences in ConfigMgr</span></span>
+  - <span data-ttu-id="78ba3-171">Windows Autopilot</span><span class="sxs-lookup"><span data-stu-id="78ba3-171">Windows Autopilot</span></span>
 
-### <a name="windows-and-office-servicing"></a><span data-ttu-id="50e6b-172">**Windows 和 Office 服務**</span><span class="sxs-lookup"><span data-stu-id="50e6b-172">**Windows and Office Servicing**</span></span>
+### <a name="windows-and-office-servicing"></a><span data-ttu-id="78ba3-172">**Windows 和 Office 服務**</span><span class="sxs-lookup"><span data-stu-id="78ba3-172">**Windows and Office Servicing**</span></span>
 
-  - <span data-ttu-id="50e6b-173">使用 Configuration Manager 的軟體更新管理</span><span class="sxs-lookup"><span data-stu-id="50e6b-173">Software update management using Configuration Manager</span></span>
-  - <span data-ttu-id="50e6b-174">Configuration Manager 中的 Office 365 專業增強版更新管理</span><span class="sxs-lookup"><span data-stu-id="50e6b-174">Office 365 ProPlus update management in Configuration Manager</span></span>
-  - <span data-ttu-id="50e6b-175">使用 Microsoft Intune 套用至 Windows 10 的行動裝置管理</span><span class="sxs-lookup"><span data-stu-id="50e6b-175">Mobile Device Management applied to Windows 10 using Microsoft Intune</span></span>
+  - <span data-ttu-id="78ba3-173">使用 Configuration Manager 的軟體更新管理</span><span class="sxs-lookup"><span data-stu-id="78ba3-173">Software update management using Configuration Manager</span></span>
+  - <span data-ttu-id="78ba3-174">Configuration Manager 中的 Office 365 專業增強版更新管理</span><span class="sxs-lookup"><span data-stu-id="78ba3-174">Office 365 ProPlus update management in Configuration Manager</span></span>
+  - <span data-ttu-id="78ba3-175">使用 Microsoft Intune 套用至 Windows 10 的行動裝置管理</span><span class="sxs-lookup"><span data-stu-id="78ba3-175">Mobile Device Management applied to Windows 10 using Microsoft Intune</span></span>
 
-### <a name="new-windows-virtual-desktop"></a><span data-ttu-id="50e6b-176">**全新的 Windows 虛擬桌面**</span><span class="sxs-lookup"><span data-stu-id="50e6b-176">**NEW! Windows Virtual Desktop**</span></span>
-  - <span data-ttu-id="50e6b-177">Windows 虛擬桌面：準備、部署、最佳化</span><span class="sxs-lookup"><span data-stu-id="50e6b-177">Windows Virtual Desktop: prepare, deploy, optimze</span></span> 
+### <a name="new-windows-virtual-desktop"></a><span data-ttu-id="78ba3-176">**全新的 Windows 虛擬桌面**</span><span class="sxs-lookup"><span data-stu-id="78ba3-176">**NEW! Windows Virtual Desktop**</span></span>
+  - <span data-ttu-id="78ba3-177">Windows 虛擬桌面：準備、部署、最佳化</span><span class="sxs-lookup"><span data-stu-id="78ba3-177">Windows Virtual Desktop: prepare, deploy, optimze</span></span> 
 
-### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[<span data-ttu-id="50e6b-178">**下載 Windows 和 Office 的部署 Lab Kit**</span><span class="sxs-lookup"><span data-stu-id="50e6b-178">**Download the Windows and Office Deployment Lab Kit**</span></span>](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[<span data-ttu-id="78ba3-178">**下載 Windows 和 Office 的部署 Lab Kit**</span><span class="sxs-lookup"><span data-stu-id="78ba3-178">**Download the Windows and Office Deployment Lab Kit**</span></span>](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-<span data-ttu-id="50e6b-179">請使用寬頻來下載此內容，以強化您的下載體驗，並允許 30-45 分鐘進行自動佈建。實驗室環境最少需要 16 GB 可用記憶體及 150 GB 可用磁碟空間。如需最佳效能，建議使用 32 GB 可用記憶體。實驗室將在 2020 年 4 月 18 日到期。到期之前，將會發佈新的版本。\*\*</span><span class="sxs-lookup"><span data-stu-id="50e6b-179">*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires April 18, 2020. A new version will be published prior to expiration.*</span></span>
+<span data-ttu-id="78ba3-179">請使用寬頻來下載此內容，以強化您的下載體驗，並允許 30-45 分鐘進行自動佈建。實驗室環境最少需要 16 GB 可用記憶體及 150 GB 可用磁碟空間。如需最佳效能，建議使用 32 GB 可用記憶體。實驗室將在 2020 年 4 月 18 日到期。到期之前，將會發佈新的版本。\*\*</span><span class="sxs-lookup"><span data-stu-id="78ba3-179">*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires April 18, 2020. A new version will be published prior to expiration.*</span></span>
 
-## <a name="additional-guidance"></a><span data-ttu-id="50e6b-180">**其他指引**</span><span class="sxs-lookup"><span data-stu-id="50e6b-180">**Additional guidance**</span></span>
+## <a name="additional-guidance"></a><span data-ttu-id="78ba3-180">**其他指引**</span><span class="sxs-lookup"><span data-stu-id="78ba3-180">**Additional guidance**</span></span>
 
-  - [<span data-ttu-id="50e6b-181">桌面部署中心</span><span class="sxs-lookup"><span data-stu-id="50e6b-181">Desktop Deployment Center</span></span>](https://www.aka.ms/howtoshift)
+  - [<span data-ttu-id="78ba3-181">桌面部署中心</span><span class="sxs-lookup"><span data-stu-id="78ba3-181">Desktop Deployment Center</span></span>](https://www.aka.ms/howtoshift)
 
-  - [<span data-ttu-id="50e6b-182">來自 Microsoft Mechanics 的桌面部署中心系列影片</span><span class="sxs-lookup"><span data-stu-id="50e6b-182">Desktop Deployment series videos from Microsoft Mechanics</span></span>](https://www.aka.ms/watchhowtoshift)
+  - [<span data-ttu-id="78ba3-182">來自 Microsoft Mechanics 的桌面部署中心系列影片</span><span class="sxs-lookup"><span data-stu-id="78ba3-182">Desktop Deployment series videos from Microsoft Mechanics</span></span>](https://www.aka.ms/watchhowtoshift)
 
-  - [<span data-ttu-id="50e6b-183">Microsoft Endpoint Configuration Manager 作業系統部署</span><span class="sxs-lookup"><span data-stu-id="50e6b-183">Microsoft Endpoint Configuration Manager OS Deployment</span></span>](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+  - [<span data-ttu-id="78ba3-183">Microsoft Endpoint Configuration Manager 作業系統部署</span><span class="sxs-lookup"><span data-stu-id="78ba3-183">Microsoft Endpoint Configuration Manager OS Deployment</span></span>](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
-  - [<span data-ttu-id="50e6b-184"><span class="underline">Windows 10 部署計劃</span></span><span class="sxs-lookup"><span data-stu-id="50e6b-184"><span class="underline">Plan for Windows 10 deployment</span></span></span>](https://docs.microsoft.com/windows/deployment/planning/index)
+  - [<span data-ttu-id="78ba3-184"><span class="underline">Windows 10 部署計劃</span></span><span class="sxs-lookup"><span data-stu-id="78ba3-184"><span class="underline">Plan for Windows 10 deployment</span></span></span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span data-ttu-id="50e6b-185"><span class="underline">Office 365 專業增強版部署指南</span></span><span class="sxs-lookup"><span data-stu-id="50e6b-185"><span class="underline">Deployment guide for Office 365 ProPlus</span></span></span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span data-ttu-id="78ba3-185"><span class="underline">Office 365 專業增強版部署指南</span></span><span class="sxs-lookup"><span data-stu-id="78ba3-185"><span class="underline">Deployment guide for Office 365 ProPlus</span></span></span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
-  - [<span data-ttu-id="50e6b-186"><span class="underline">開始使用 Intune</span></span><span class="sxs-lookup"><span data-stu-id="50e6b-186"><span class="underline">Getting Started with Intune</span></span></span>](https://docs.microsoft.com/intune/get-started-evaluation)
+  - [<span data-ttu-id="78ba3-186"><span class="underline">開始使用 Intune</span></span><span class="sxs-lookup"><span data-stu-id="78ba3-186"><span class="underline">Getting Started with Intune</span></span></span>](https://docs.microsoft.com/intune/get-started-evaluation)
 
-## <a name="related-resources"></a><span data-ttu-id="50e6b-187">**相關資源**</span><span class="sxs-lookup"><span data-stu-id="50e6b-187">**Related resources**</span></span>
+## <a name="related-resources"></a><span data-ttu-id="78ba3-187">**相關資源**</span><span class="sxs-lookup"><span data-stu-id="78ba3-187">**Related resources**</span></span>
 
-  - <span data-ttu-id="50e6b-188">[<span class="underline">介紹 Microsoft Office 365</span>](https://www.microsoft.com/microsoft-365/default.aspx) (英文)</span><span class="sxs-lookup"><span data-stu-id="50e6b-188">[<span class="underline">Introducing Microsoft 365</span>](https://www.microsoft.com/microsoft-365/default.aspx)</span></span>
+  - <span data-ttu-id="78ba3-188">[<span class="underline">介紹 Microsoft Office 365</span>](https://www.microsoft.com/microsoft-365/default.aspx) (英文)</span><span class="sxs-lookup"><span data-stu-id="78ba3-188">[<span class="underline">Introducing Microsoft 365</span>](https://www.microsoft.com/microsoft-365/default.aspx)</span></span>
 
-  - [<span data-ttu-id="50e6b-189"><span class="underline">商務用 Office 365</span></span><span class="sxs-lookup"><span data-stu-id="50e6b-189"><span class="underline">Office 365 for business</span></span></span>](https://products.office.com/business/office)
+  - [<span data-ttu-id="78ba3-189"><span class="underline">商務用 Office 365</span></span><span class="sxs-lookup"><span data-stu-id="78ba3-189"><span class="underline">Office 365 for business</span></span></span>](https://products.office.com/business/office)
 
-  - [<span data-ttu-id="50e6b-190"><span class="underline">Introducing Enterprise Mobility + Security</span></span><span class="sxs-lookup"><span data-stu-id="50e6b-190"><span class="underline">Introducing Enterprise Mobility + Security</span></span></span>](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+  - [<span data-ttu-id="78ba3-190"><span class="underline">Introducing Enterprise Mobility + Security</span></span><span class="sxs-lookup"><span data-stu-id="78ba3-190"><span class="underline">Introducing Enterprise Mobility + Security</span></span></span>](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
-  - [<span data-ttu-id="50e6b-191"><span class="underline">適用於企業的 Windows 10</span></span><span class="sxs-lookup"><span data-stu-id="50e6b-191"><span class="underline">Windows 10 for enterprise</span></span></span>](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
+  - [<span data-ttu-id="78ba3-191"><span class="underline">適用於企業的 Windows 10</span></span><span class="sxs-lookup"><span data-stu-id="78ba3-191"><span class="underline">Windows 10 for enterprise</span></span></span>](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
 
-  - [<span data-ttu-id="50e6b-192"><span class="underline">適用於中小型企業的 Windows 10</span></span><span class="sxs-lookup"><span data-stu-id="50e6b-192"><span class="underline">Windows 10 for small and medium business</span></span></span>](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
+  - [<span data-ttu-id="78ba3-192"><span class="underline">適用於中小型企業的 Windows 10</span></span><span class="sxs-lookup"><span data-stu-id="78ba3-192"><span class="underline">Windows 10 for small and medium business</span></span></span>](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
