@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 使用安全性 & 合規性中心的內容搜尋來執行目標的集合。 目標的集合表示您確信回應大小寫的項目或特殊權限項目都位於信箱或網站的特定資料夾。 使用本文中的指令碼，以取得資料夾識別碼或您想要搜尋的特定信箱或網站資料夾的路徑。
-ms.openlocfilehash: 66929911cdb1692ea1ee2a8920dad349d50ec156
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b8afe9e65aa65c697d9c5cefbeaf89638c1782d4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597300"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080797"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>在 Office 365 中使用內容搜尋，對目標集合
 
@@ -201,7 +201,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
   
 以下是範例傳回信箱資料夾的指令碼的輸出。
   
-![信箱資料夾和傳回的 id 指令碼的資料夾清單的範例](media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
+![信箱資料夾和傳回的 id 指令碼的資料夾清單的範例](../media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
   
 步驟 2 中的範例會顯示用來搜尋使用者的 [可復原的項目] 資料夾中的清除] 子資料夾的查詢。
   
@@ -211,7 +211,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
   
 以下是範例的指令碼的站台資料夾所傳回的輸出。
   
-![指令碼所傳回的站台資料夾 documentlink 名稱的清單的範例](media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![指令碼所傳回的站台資料夾 documentlink 名稱的清單的範例](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>步驟 2： 使用資料夾識別碼或 documentlink 來執行目標的集合
 
@@ -221,7 +221,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
     
 2. 登入 Office 365 中，使用的帳戶與您用來執行指令碼在步驟 1 中的認證。
     
-3. 在安全性 & 合規性中心的左窗格中，按一下 [**搜尋** \> **內容搜尋**]，然後按一下 [**新增**![加入圖示](media/O365-MDM-CreatePolicy-AddIcon.gif)。
+3. 在安全性 & 合規性中心的左窗格中，按一下 [**搜尋** \> **內容搜尋**]，然後按一下 [**新增**![加入圖示](../media/O365-MDM-CreatePolicy-AddIcon.gif)。
     
 4. 在 [新增搜尋]**** 頁面上，輸入內容搜尋的名稱。 此名稱在您的組織中必須是唯一的。 
     
@@ -239,7 +239,7 @@ Office 365 安全性中的內容搜尋功能&amp;合規性中心不提供在 UI 
     
     例如，下列螢幕擷取畫面中的查詢會搜尋使用者的 [可復原的項目] 資料夾中的 [清除] 子資料夾中的任何項目 (值`folderid`在步驟 1 中的螢幕擷取畫面所示的清除] 子資料夾的屬性):
     
-    ![貼上 folderid 或至搜尋查詢的 [關鍵字] 方塊中 documentlink](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
+    ![貼上 folderid 或至搜尋查詢的 [關鍵字] 方塊中 documentlink](../media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. 按一下 [**搜尋**] 以啟動目標的集合的搜尋。 
   
