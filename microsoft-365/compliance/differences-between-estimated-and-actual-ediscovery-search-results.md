@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: '了解為什麼估計與實際搜尋結果可能會有所不同中使用 eDiscovery 工具在 Office 365 中執行搜尋。 '
-ms.openlocfilehash: 10c948dbfc7f147011e3ab917828b5b281602fa8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4b14e3aca51737b0a7c15b5219fda38c57ecad9d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595248"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075451"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>估計與實際的 eDiscovery 搜尋結果中 Office 365 之間的差異
 
@@ -35,21 +35,21 @@ ms.locfileid: "41595248"
    
 當您執行 eDiscovery 搜尋時，您使用此工具會傳回符合搜尋準則的估計項目的項目數 （和其大小總計）。 例如，當您在安全 & 合規性中心執行搜尋，預估的搜尋結果會顯示已選取搜尋詳細資料窗格中。
   
-![顯示在已選取搜尋詳細資料窗格中的預估結果](media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
+![顯示在已選取搜尋詳細資料窗格中的預估結果](../media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
   
 這是相同的估計項目總大小和項目顯示在 eDiscovery 匯出工具，當您將結果匯出至本機電腦，以及下載與搜尋結果匯出摘要報告中的數字。
   
 **在 eDiscovery 匯出工具中的預估的結果**
 
-![eDiscovery 匯出工具中的預估結果](media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
+![eDiscovery 匯出工具中的預估結果](../media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
   
 **匯出摘要報告中的預估的結果**
 
-![估計的搜尋結果會包含在匯出摘要報告中](media/44b579da-86c2-4f33-81b5-84d604003eda.png)
+![估計的搜尋結果會包含在匯出摘要報告中](../media/44b579da-86c2-4f33-81b5-84d604003eda.png)
   
 不過，您會注意到在匯出摘要報告中的前一個螢幕擷取畫面中，實際上下載的實際搜尋結果數目與大小是不同的大小和預估的搜尋結果數目。 
   
-![預估和下載的搜尋結果之間差異](media/84aef318-230f-430d-9d9e-02f21342d364.png)
+![預估和下載的搜尋結果之間差異](../media/84aef318-230f-430d-9d9e-02f21342d364.png)
   
 以下是一些理由這些差異：
   

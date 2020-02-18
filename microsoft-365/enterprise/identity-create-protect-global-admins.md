@@ -1,5 +1,7 @@
 ---
 title: 步驟 1：建立和保護您的全域系統管理員帳戶
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 您的全域系統管理員帳戶需要特別處理，以確保認證免受洩漏的危險。
-ms.openlocfilehash: 1a0274967798e6c2ba6048e5a2cfd70e73cb0671
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 27b76671581ebd2dac32304752a85f8a6f60ac98
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801828"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067340"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>步驟 1：建立和保護您的全域系統管理員帳戶
 
-![階段 2 - 身分識別](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![階段 2 - 身分識別](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-global-admin"></a>
 ## <a name="protect-global-administrator-accounts"></a>保護全域系統管理員帳戶
@@ -57,7 +59,7 @@ ms.locfileid: "40801828"
 
 |||
 |:-------|:-----|
-|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  若要在測試實驗室環境中練習此組態，請參閱[保護全域系統管理員帳戶測試實驗室指南](protect-global-administrator-accounts-microsoft-365-test-environment.md)。 |
+|![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  若要在測試實驗室環境中練習此組態，請參閱[保護全域系統管理員帳戶測試實驗室指南](protect-global-administrator-accounts-microsoft-365-test-environment.md)。 |
 |||
 
 作為過渡期的檢查點，您可以看到這一節的[允出準則](identity-exit-criteria.md#crit-identity-global-admin)。
@@ -101,7 +103,7 @@ PIM 可與 Azure Active Directory Premium P2 搭配使用，隨附於 Microsoft 
 
 |||
 |:-------|:-----|
-|![Microsoft Cloud 的測試實驗室指南](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  若要在測試實驗室環境中練習此組態，請參閱[特許存取管理測試實驗室指南](privileged-access-microsoft-365-enterprise-dev-test-environment.md) (部分內容機器翻譯)。 |
+|![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  若要在測試實驗室環境中練習此組態，請參閱[特許存取管理測試實驗室指南](privileged-access-microsoft-365-enterprise-dev-test-environment.md) (部分內容機器翻譯)。 |
 |||
 
 作為過渡期的檢查點，您可以看到與此步驟相對應的[允出準則](identity-exit-criteria.md#crit-identity-pam)。
@@ -110,5 +112,5 @@ PIM 可與 Azure Active Directory Premium P2 搭配使用，隨附於 Microsoft 
 
 |||
 |:-------|:-----|
-|![步驟 2](./media/stepnumbers/Step2.png)| [保護您的密碼](identity-secure-your-passwords.md) |
+|![步驟 2](../media/stepnumbers/Step2.png)| [保護您的密碼](identity-secure-your-passwords.md) |
 

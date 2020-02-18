@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: '了解如何使用 Office 365 安全性&amp;合規性中心存取 Office 365 進階電子文件探索及執行處理序模組的案例。  '
-ms.openlocfilehash: e99071246e6c63292bf3ca1fbca0a0fd25eab5a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 13b665c377022997ef4e60bc883993a86d8b9f75
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601590"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081516"
 ---
 # <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>執行處理序模組及載入 Office 365 進階電子文件探索中的資料
 
@@ -49,7 +49,7 @@ ms.locfileid: "41601590"
     
 4. 在 [**準備** \> **程序** \> **安裝程式**，從可用的容器清單容器選取。
     
-    ![按一下 [新增至案例的搜尋結果的程序](media/50bdc55c-d378-4881-b302-31ef785fa359.png)
+    ![按一下 [新增至案例的搜尋結果的程序](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
 5. 如果您想要作為植入的檔案或預先標記檔案新增容器，請按一下 [**進階設定...** ]。 
     
@@ -57,7 +57,7 @@ ms.locfileid: "41601590"
     
     使用預先標記的檔案來自動化相關性訓練。 您應該標記至少 1500 檔案，並新增至相關性集合相同保留之非相關檔案相關的比例。 這些檔案應該手動標記，而且您應該以內的標記品質。
     
-    ![螢幕擷取畫面的進階設定] 頁面上的處理批次檔案](media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
+    ![螢幕擷取畫面的進階設定] 頁面上的處理批次檔案](../media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
   
   - 在 [**種子**] 區段中： 
     

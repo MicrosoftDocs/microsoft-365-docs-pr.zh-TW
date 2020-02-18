@@ -1,5 +1,7 @@
 ---
 title: 適用於 Office 365 測試環境的密碼雜湊同步處理
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：為您的 Office 365 測試環境設定及示範密碼雜湊同步處理並且登入。
-ms.openlocfilehash: ef08fcf59602d7812875015971d00a34526576d6
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: a0a498aea84bacb61de257150801328834724981
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202454"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066383"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>適用於 Office 365 測試環境的密碼雜湊同步處理
 
@@ -29,7 +31,7 @@ ms.locfileid: "39202454"
 
 許多組織使用 Azure AD Connect 和密碼雜湊同步處理，將其內部部署 Active Directory Domain Services (AD DS) 樹系中的帳戶集同步處理至 Microsoft 365 或 Office 365 訂閱的 Azure AD 租用戶中的帳戶集。 本文說明如何將密碼雜湊同步處理新增至 Office 365 測試環境，進而產生下列組態：
   
-![使用密碼雜湊同步處理測試環境的模擬企業](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![使用密碼雜湊同步處理測試環境的模擬企業](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
 設定此測試環境有兩個主要階段︰
   
@@ -37,13 +39,13 @@ ms.locfileid: "39202454"
 2. 在 APP1 上安裝及設定 Azure AD Connect。
     
 > [!TIP]
-> 按一下[這裡](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a>階段 1：建立 Microsoft 365 模擬企業測試環境
 
 請依照 [Microsoft 365 模擬企業基本設定](simulated-ent-base-configuration-microsoft-365-enterprise.md)中的指示操作。以下是所產生的組態。
   
-![模擬企業基本設定](media/password-hash-sync-m365-ent-test-environment/Phase1.png)
+![模擬企業基本設定](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
 此組態包含： 
   
@@ -60,7 +62,7 @@ ms.locfileid: "39202454"
 
 以下是產生的組態。
   
-![testlab 網域名稱註冊](media/password-hash-sync-m365-ent-test-environment/Phase2.png)
+![testlab 網域名稱註冊](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
   
 此組態包含：
 
@@ -127,7 +129,7 @@ ms.locfileid: "39202454"
 
 以下是產生的組態。
 
-![使用密碼雜湊同步處理測試環境的模擬企業](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![使用密碼雜湊同步處理測試環境的模擬企業](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
 
 此組態包含： 
   

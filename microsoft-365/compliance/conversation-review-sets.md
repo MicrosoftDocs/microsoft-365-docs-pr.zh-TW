@@ -39,7 +39,7 @@ ms.locfileid: "42078115"
 
 - 匯出個別郵件或執行緒的交談
 
-## <a name="terminology"></a>詞彙
+## <a name="terminology"></a>術語
 
 以下是一些定義，以協助您開始使用交談重建。
 

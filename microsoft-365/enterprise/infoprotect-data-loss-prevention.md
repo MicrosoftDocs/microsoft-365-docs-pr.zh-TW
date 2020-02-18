@@ -1,5 +1,7 @@
 ---
 title: 步驟 5：設定 Office 365 資料外洩防護
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 365 中的 Office 365 資料外洩防護並且進行部署。
-ms.openlocfilehash: 43ebfb39202e407fe6dc7bb4c8e0fe8f906f7a6d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 896670e9ae83324a1220d64f49a8ea48aee85169
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370160"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067220"
 ---
 # <a name="step-5-configure-office-365-data-loss-prevention"></a>步驟 5：設定 Office 365 資料外洩防護
 
 *此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
-![階段 6：資訊保護](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![階段 6：資訊保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 透過 Office 365 安全性與合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監控及自動保護整個 Microsoft 365 的機密資訊。 使用 DLP 原則，您可以：
 
@@ -58,6 +60,6 @@ DLP 原則會指定：
 
 |||
 |:-------|:-----|
-|![步驟 6](./media/stepnumbers/Step6.png)|[設定電子郵件加密](infoprotect-email-encryption.md)|
+|![步驟 6](../media/stepnumbers/Step6.png)|[設定電子郵件加密](infoprotect-email-encryption.md)|
 
 

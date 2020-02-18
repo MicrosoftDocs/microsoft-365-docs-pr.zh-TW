@@ -1,5 +1,7 @@
 ---
 title: 步驟 4 - 使用者檔案和設定移轉
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,25 +15,25 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何移轉使用者檔案和設定。
-ms.openlocfilehash: e1def35a631f8a90ee699c6ed7129216015e5182
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 9332542e5b87de3e3c237f969a3842545eb03dc4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112567"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085284"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>步驟 4：使用者檔案和設定移轉
 
 將使用者的檔案和設定移至其新的或重新整理的電腦是很重要的程序，因此絕對不能失敗。 您可以手動遷移每一部電腦，也可以選擇下列其中一個方法來將此程序自動化。 無論選擇何種移轉方法，都必須解決三個主要的考量，分別是傳輸使用者的檔案、其設定，以及管理 Windows 10 的「開始」和工作列版面配置。
 
-![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
+![](../media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
 <td><p><strong>步驟 4：使用者檔案和設定</strong> (英文)</p>
 <p>重新整理或取代電腦時，將使用者狀態備份與還原自動化以節省時間。雲端檔案同步的新選項可讓您強制執行，將每個使用者的桌面、文件和圖片資料夾同步處理至 OneDrive，以從新的 Windows 安裝順利存取檔案。</p></td>
-<td><a href="https://aka.ms/ddev4" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev4" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
 </thead>
 </table>
 

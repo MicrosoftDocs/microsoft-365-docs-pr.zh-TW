@@ -1,5 +1,7 @@
 ---
 title: 第4 階段：Office 365 專業增強版
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 企業版 Office 365 專業增強版的部署步驟。
-ms.openlocfilehash: f41990055a97a2853622529e7cc28ccf096eef69
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 2b3ac311863249720a2dc1fba00ead9ebf6ac8e5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831894"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066439"
 ---
 # <a name="phase-4-office-365-proplus"></a>階段 4：Office 365 專業增強版
 
-![階段 4：Office 365 專業增強版](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
+![階段 4：Office 365 專業增強版](../media/deploy-foundation-infrastructure/O365proplus_icon.png)
 
 *本文同時適用於 Microsoft 365 企業版和 Microsoft 365 教育版的 E3 和 E5 版本*
 
@@ -63,7 +65,7 @@ Microsoft 365 企業版包含 Office 365 專業增強版 (Office 的訂閱版本
 
 許多組織會組合使用這些選項讓不同使用者使用。例如，組織可能會使用設定管理員為大部分的使用者部署 Office，但為一小群不常連線到內部網路的工作者啟用自行安裝。 
 
-如果您的組織使用設定管理員，建議您升級至最新分支並更新至最新版本。如需詳細資訊，請參閱[我應該使用設定管理員的哪一個分支？](https://docs.microsoft.com/sccm/core/understand/which-branch-should-i-use)
+如果您的組織使用設定管理員，建議您升級至最新分支並更新至最新版本。如需詳細資訊，請參閱[我應該使用設定管理員的哪一個分支？](https://docs.microsoft.com/configmgr/core/understand/which-branch-should-i-use)
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft 如何執行 Microsoft 365 企業版
 
@@ -73,7 +75,7 @@ Microsoft 365 企業版包含 Office 365 專業增強版 (Office 的訂閱版本
 
 請參閱 Contoso Corporation (虛構但有代表性的跨國企業) 如何[部署 Office 365 專業增強版](contoso-o365pp.md)。
 
-![Contoso 公司](./media/contoso-overview/contoso-icon.png)
+![Contoso 公司](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>下一步
 

@@ -75,8 +75,11 @@
   href: protect-information.md
   items:
     - name: 敏感度標籤
-      href: sensitivity-labels.md
       items:
+        - name: 了解敏感度標籤
+          href: sensitivity-labels.md
+        - name: 開始使用敏感度標籤
+          href: get-started-with-sensitivity-labels.md
         - name: 建立及發佈敏感度標籤
           href: create-sensitivity-labels.md
         - name: 使用敏感度標籤來套用加密以限制存取內容
@@ -89,7 +92,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: 對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Office 應用程式中的敏感度標籤
+        - name: 在 Office 應用程式使用敏感度標籤
           href: sensitivity-labels-office-apps.md
     - name: 資料外洩防護 (DLP)
       href: data-loss-prevention-policies.md
@@ -120,7 +123,7 @@
               href: form-a-query-to-find-sensitive-data-stored-on-sites.md
             - name: DLP 如何在安全性與合規性中心和 Exchange 系統管理中心之間工作
               href: how-dlp-works-between-admin-centers.md
-    - name: 敏感資訊類型
+    - name: 敏感性資訊類型
       items:
         - name: 敏感性資訊類型所尋找的項目
           href: what-the-sensitive-information-types-look-for.md
@@ -202,7 +205,7 @@
           href: data-classification-content-explorer.md
         - name: 查看標籤活動 (預覽)
           href: data-classification-activity-explorer.md
-        - name: 資料分類公開預覽版本資訊 （預覽）
+        - name: 資料分類公開預覽版本資訊 (預覽)
           href: data-classification-pub-preview-relnotes.md
         - name: 開始使用可訓練的分類器 (預覽)
           href: classifier-getting-started-with.md

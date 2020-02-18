@@ -139,7 +139,7 @@ ms.locfileid: "42068683"
 |資料連接器|資訊控管 # A0 封存協力廠商資料 <br/> https://protection.office.com/nativeconnector | 資料連接器 <br/> https://compliance.microsoft.com/connectorlanding |[封存協力廠商資料](archiving-third-party-data.md)|
 |資料外洩防護|資料外洩防護 <br/> https://protection.office.com/datalossprevention |資料外洩防護 <br/> https://compliance.microsoft.com/datalossprevention |[資料外洩防護概觀](data-loss-prevention-policies.md)|
 |資料主體要求 |資料隱私權 > 資料主體要求 <br/> https://protection.office.com/dsrcases |資料主體要求 <br/> https://compliance.microsoft.com/datasubjectrequest |[管理 GDPR 資料主體要求使用 DSR 案例工具](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
-|eDiscovery|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery # A0 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理電子文件探索案例](ediscovery-cases.md) |
+|電子文件探索|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery # A0 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理電子文件探索案例](ediscovery-cases.md) |
 |事件|記錄管理 # A0 事件 <br/> https://protection.office.com/events |記錄管理 > 事件] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[事件導向保留的概觀](event-driven-retention.md)|
 |檔案計畫|記錄管理 > 檔案計劃 <br/> https://protection.office.com/fileplan |記錄管理 > 檔案計劃] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[檔案計劃管理員的概觀](file-plan-manager.md)|
 |匯入 PST 檔案|資訊控管 > 匯入 PST 檔案 <br/> https://protection.office.com/importV2 |資訊控管 > 匯入] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[匯入組織的 PST 檔案的概觀](importing-pst-files-to-office-365.md)|

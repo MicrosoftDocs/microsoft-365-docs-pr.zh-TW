@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2cf0bafa45e96960b8d957d1b8905124223173ce
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9dc6f92ffdc5a676bd6f8895fe884b5493724963
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595540"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077065"
 ---
 # <a name="create-tag-groups"></a>建立標籤群組
 
@@ -31,17 +31,17 @@ ms.locfileid: "41595540"
 
 1.  在 [檢閱設定，按一下 [**管理檢閱設定**。
 
-    ![按一下 [管理檢閱設定](media/ED-managews.png)
+    ![按一下 [管理檢閱設定](../media/ED-managews.png)
 
 2.  在**標記**中並排顯示上，按一下 [**管理標記**。
 
-    ![按一下 [管理標籤] 中 [標記] 磚](media/ED-managetags.png)
+    ![按一下 [管理標籤] 中 [標記] 磚](../media/ED-managetags.png)
 
 一次內標記管理] 中，您可建立標記以符合您案例的需求。 您可以開始建立標記群組。
 
 1.  按一下 [**新增區段**]。
 
-    ![新增標籤群組](media/ED-addtagsection.png)
+    ![新增標籤群組](../media/ED-addtagsection.png)
 
     當您儲存，以便您可以預覽標籤面板，而不需關閉標記的管理] 畫面中，然後回到工作集時，將會更新 [預覽] 畫面。
 
@@ -49,7 +49,7 @@ ms.locfileid: "41595540"
 
 3. 若要建立該群組內的標記，請按一下 [在新的標記群組，以建立標記該新的區段中的省略符號。
     
-    ![建立標籤] 群組中的標記](media/ED-createtag.png)
+    ![建立標籤] 群組中的標記](../media/ED-createtag.png)
 
    - **選項標記**會強制使用者可以從一群標記選取一個標記。
    
@@ -59,5 +59,5 @@ ms.locfileid: "41595540"
 
 若要內嵌標記，按一下標籤旁的省略符號，然後選取要新增的新標籤。
 
-![巢狀結構標記](media/ED-tagnesting.png)
+![巢狀結構標記](../media/ED-tagnesting.png)
 

@@ -1,6 +1,8 @@
 ---
 title: Contoso 的 IT 基礎結構與業務需求
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 內部部署 IT 基礎結構的基本結構，以及 Microsoft 365 企業版如何符合其業務需求。
-ms.openlocfilehash: d98f401ae4a39e3e04b5840e8f76c1e3e1b1a24d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 3cee0f3e6cd20b0d93038595cdab9270c8eb30aa
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802068"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068382"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contoso 的 IT 基礎結構與業務需求
 
@@ -30,7 +32,7 @@ Contoso 使用絕大部分屬於集中式的內部部署 IT 基礎結構，配�
 
 圖 1 顯示總部辦公室與應用程式資料中心、DMZ 和網際網路。
 
-![Contoso 的現有 IT 基礎結構](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Contoso 的現有 IT 基礎結構](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 **圖 1：Contoso 的現有 IT 基礎結構**
  
