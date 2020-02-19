@@ -106,4 +106,4 @@ Configuration Manager 部署工作順序的[預先快取選項](https://docs.mic
 
 您部署預先快取順序，對集合中的大量電腦執行相容性掃描後，您可以開始剖析裝置整備的記錄檔。 以上方列出的輸出結果為例，\#1 (0xC1900210) 可以採取的動作為「可開始部署」，\#4 (0xC190020E) 可以採取的動作為釋放磁碟空間。 此處要注意的是您要刪除的內容，不過 Windows Update 清理、資源回收筒和暫存檔都是您可以開始刪除的地方，而且有許多情況都能提供足夠的空間使升級成功完成。 您可以視需求時常執行相容性掃描，直到找到已準備就緒可以進行就地升級的電腦為止。 您可以在此找到更多有關 Windows 安裝程式命令列選項的資訊：<https://aka.ms/setupswitches>
 
-## <a name="desktop-deployment-centerhttpsakamshowtoshift"></a>[桌面部署中心](https://aka.ms/howtoshift)
+## <a name="desktop-deployment-center"></a>[桌面部署中心](https://aka.ms/howtoshift)
