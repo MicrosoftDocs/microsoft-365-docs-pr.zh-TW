@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我們持續正在新增至 Microsoft 365 合規性中心的新功能、 修正的問題我們了解，並變更根據您的意見反應。 了解我們已經被最本月多。
-ms.openlocfilehash: c3537657eb0bd3bf5b31f1b90c513c3e49eef000
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2140b2b529ccec9a4d081a2e7b6ea1fdb7fb900f
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068683"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106806"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>What's new in Microsoft 365 合規性中心
 
@@ -134,7 +134,7 @@ ms.locfileid: "42068683"
 |警示原則|在提醒 > 警示原則 <br/> https://protection.office.com/alertpolicies |在這個階段中，只能在 Office 365 安全性 & 合規性中心中管理警示原則。 |[在安全性與合規性中心中的警示原則](alert-policies.md) |
 |警示|警示 > 檢視警示 <br/> https://protection.office.com/viewalerts |警示 <br/> https://compliance.microsoft.com/compliancealerts |[檢視警示](alert-policies.md#viewing-alerts)|
 |封存|資訊控管 # A0 封存 <br/> https://protection.office.com/archiving |資訊控管 > 封存] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[啟用封存信箱](enable-archive-mailboxes.md)|
-|稽核記錄檔搜尋|搜尋 > 稽核記錄搜尋 <br/> https://protection.office.com/unifiedauditlog |稽核 <br/> https://compliance.microsoft.com/auditlogsearch| [在安全性 & 規範中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)|
+|稽核記錄檔搜尋|搜尋 > 稽核記錄搜尋 <br/> https://protection.office.com/unifiedauditlog |稽核 <br/> https://compliance.microsoft.com/auditlogsearch | [在安全性 & 規範中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)|
 |內容搜尋|搜尋 > 內容搜尋 <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | 內容搜尋 <br/> https://compliance.microsoft.com/contentsearch |[在 Office 365 中搜尋內容](search-for-content.md) |
 |資料連接器|資訊控管 # A0 封存協力廠商資料 <br/> https://protection.office.com/nativeconnector | 資料連接器 <br/> https://compliance.microsoft.com/connectorlanding |[封存協力廠商資料](archiving-third-party-data.md)|
 |資料外洩防護|資料外洩防護 <br/> https://protection.office.com/datalossprevention |資料外洩防護 <br/> https://compliance.microsoft.com/datalossprevention |[資料外洩防護概觀](data-loss-prevention-policies.md)|
