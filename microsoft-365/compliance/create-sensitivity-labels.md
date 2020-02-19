@@ -16,29 +16,25 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 建立、設定及發佈敏感度標籤的指示，以便分類及保護貴組織的文件和電子郵件。
-ms.openlocfilehash: 8018c18e976d0e6f9904923471bb07c8bb3cbc40
-ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
+description: 所有 Microsoft 資訊保護解決方案的需求：建立、設定及發佈敏感度標籤，以便分類及保護貴組織的文件和電子郵件。
+ms.openlocfilehash: d2300a54583c0b2d12de86e3dbb5f3116daf6460
+ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42091296"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42101223"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>建立及設定敏感度標籤及其原則
 
-若要建立及發佈 [[敏感度標籤]](sensitivity-labels.md)，請前往標籤系統管理中心，例如 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)。 您也可以使用 Microsoft 365 安全性中心，或 Office 365 安全性與合規性中心。
+所有 Microsoft 資訊保護解決方案 (有時候縮寫為 MIP) 是使用[敏感度標籤](sensitivity-labels.md)來實作。 若要建立及發佈這些標籤，請前往標籤系統管理中心，例如 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)。 您也可以使用 Microsoft 365 安全性中心，或 Office 365 安全性與合規性中心。
 
-首先，建立並設定您要在 Office 應用程式和服務中提供使用的敏感度標籤。 然後，建立一或多個包含您所設定的標籤和原則設定的標籤原則。 這是為您所選的使用者和位置發佈標籤和設定的標籤原則。
+首先，建立並設定您要提供應用程式和其他服務使用的敏感度標籤。 例如，您希望使用者從 Office 應用程式看到和套用的標籤。 
 
-## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>建立和管理敏感度標籤所需的權限
+然後，建立一或多個包含您所設定的標籤和原則設定的標籤原則。 這是為您所選的使用者和位置發佈標籤和設定的標籤原則。
 
-合規性小組成員會建立敏感度標籤，這些成員需要 Microsoft 365 合規性中心、Microsoft 365 安全性中心或 Office 365 安全性與合規性中心的權限。 
+## <a name="before-you-begin"></a>開始之前
 
-根據預設，您的租用戶系統管理員可以存取這些系統管理中心，並且授與法務人員和其他人員存取權限，而不需授與他們租用戶系統管理員的所有權限。如需這個委派的受限系統管理員存取權，請移至其中一個系統管理中心的 [權限]**** 頁面，然後將成員新增至 [合規性資料系統管理員]****、[合規性系統管理員]**** 或 [安全性系統系統管理員]**** 角色群組。
-
-除了使用角色以外，您可以建立新的角色群組，並將 [敏感度標籤系統管理員]**** 或 [組織組態]**** 角色新增至此群組。 如需相關指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
-
-只有建立及設定敏感度標籤及其標籤原則時，才需要這些權限。 您不需要在應用程式或服務中套用這些標籤。
+組織的全域系統管理員擁有建立及管理敏感度標籤所有層面的完整權限。 如果您未以全域系統管理員身分登入，請參閱[建立和管理敏感度標籤所需的權限](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels)。
 
 ## <a name="create-and-configure-sensitivity-labels"></a>建立及設定敏感度標籤
 

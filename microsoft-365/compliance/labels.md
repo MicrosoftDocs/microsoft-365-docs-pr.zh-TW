@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留標籤可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Microsoft 365 中實作記錄管理解決方案。
-ms.openlocfilehash: 27f680bf2acf844618f133b074faf6f5ec3f7e90
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 162b9fed66fa3135829f422ccd04a396ddf7e632
+ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072491"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42093452"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -44,9 +44,11 @@ ms.locfileid: "42072491"
     
 - 在當內容符合特定條件時**自動將保留標籤套用到內容**，例如內容包含： 
     
-  - 特定類型的敏感資訊。
+    - 特定類型的敏感資訊。
     
-  - 特定關鍵字符合您建立的查詢。
+    - 特定關鍵字符合您建立的查詢。
+    
+    - 可訓練分類器的模式比對。
     
   自動將保留標籤套用到內容很重要，因為：
     
@@ -57,13 +59,13 @@ ms.locfileid: "42072491"
    - 使用者不再需要了解資料控管原則，就可以專心工作。
 
   > [!NOTE]
-  > 自動套用標籤的功能要求有權編輯網站或信箱中已選取要自動標記內容的每位使用者均擁有 Office 365 Enterprise E5 授權。對內容或回覆標記電子郵件僅具有唯讀存取的使用者不需要此授權。
+  > 自動套用標籤的功能要求有權編輯網站或信箱中已選取要自動標記內容的每位使用者均至少擁有 Office 365 企業版 E5 授權。 使用者若只需要內容的唯讀存取權或回覆加標籤的電子郵件，就不需要此授權。
       
 - **在 Office 365 中實作記錄管理**，包括電子郵件和文件。您可以使用保留標籤將內容分類成記錄。在這種情況下，無法變更或移除標籤，且不能編輯或刪除內容。 
 
 - **將預設保留標籤套用至 SharePoint 中的文件庫、資料夾或文件集**，以便該位置中的所有文件都繼承預設保留標籤。  
     
-您可以在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或 Office 365 安全性與合規性中心建立保留標籤。 在左側導覽中，選擇 **[分類] ** > ** [保留標籤] ** > ** [建立標籤]**。
+您可以在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或 Office 365 安全性與合規性中心建立保留標籤。
 
 ## <a name="how-retention-labels-work-with-retention-label-policies"></a>保留標籤如何與保留標籤原則一起使用
 
@@ -258,14 +260,17 @@ Exchange 公用資料夾和 Skype 不支援標籤。
     
 您可以選擇當內容包含以下資訊時，自動將保留標籤套用到內容：
   
-- 特定類型的敏感資訊。
+- [特定敏感資訊類型](#auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information)
     
-- 特定關鍵字符合您建立的查詢。
+- [符合您所建立查詢的特定關鍵字](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+
+- [可訓練分類器的符合項目](#auto-apply-labels-to-content-by-using-trainable-classifers)
     
-![自動套用標籤的條件選擇頁面](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
+![自動套用標籤的選擇條件頁面](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
+已針對前兩個選項設定的自動套用保留標籤需要 Office 365 企業版 E5 訂閱。 如果您使用用於可訓練分類器的選項，則此功能具有[額外的授權需求](classifier-getting-started-with.md#licensing-requirements)。
 
-自動套用保留標籤需要 Office 365 企業版 E5 訂用帳戶，且如前文所述，可能需要 7 天讓自動套用保留標籤套用至符合條件的所有內容。
+將自動套用保留標籤套用到符合您設定之條件的所有內容，最多可能需要 7 天的時間。
   
 > [!TIP]
 > 請參閱[管理具有保留標籤之 SharePoint 文件的生命週期](auto-apply-retention-labels-scenario.md)，以了解使用 SharePoint 中受管理屬性來自動套用保留標籤和實作事件導向保留的詳細案例。
@@ -309,6 +314,17 @@ Exchange 公用資料夾和 Skype 不支援標籤。
     - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
 
 ![查詢編輯器](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+
+
+### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>使用可訓練分類器自動將標籤套用至內容
+
+選擇用於可訓練分類器的選項時，可以選取其中一個內建分類器或自訂分類器。 內建分類器包括 [粗穢言語]****、[履歷]****、[原始程式碼]****、[騷擾]****、[粗話]**** 和 [威脅]****。
+
+若要使用此選項自動套用標籤，SharePoint Online 網站和信箱必須有至少 10 MB 的資料。
+
+如需有關可訓練分類器的詳細資訊，請參閱[開始使用可訓練分類器 (預覽)](classifier-getting-started-with.md)。
+
+如需組態範例，請參閱[如何準備及使用已可使用的分類器](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-ready-to-use-classifier)。
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>將預設保留標籤套用至 SharePoint 文件庫、資料夾或文件集中的所有內容
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 當建立敏感度標籤時，您可以限制標籤將套用至其中之內容的存取。敏感度標籤可以使用加密來保護內容。
-ms.openlocfilehash: 17cea4f80ac1dee75c10c2beef63be06141c89d5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 102d1da2ec5f49e26a634611f4f640a083d167ff
+ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074606"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42101263"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容 
 
@@ -44,15 +44,15 @@ ms.locfileid: "42074606"
 
 當您在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或是 Office 365 安全性與合規性中心中[建立敏感性標籤](create-sensitivity-labels.md)時，可以使用加密設定。
 
-## <a name="how-encryption-works"></a>加密的運作方式
+## <a name="understand-how-the-encryption-works"></a>了解加密的運作方式
 
 加密使用來自 Azure 資訊保護的 Azure 版權管理服務 (Azure RMS)。 此保護解決方案使用加密、身分識別及授權原則。 若要深入了解，請參閱 Azure 資訊保護文件中的[什麼是 Azure 版權管理？](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)。 
 
 使用此加密解決方案時，**超級使用者**功能可確保獲授權的人員和服務一律可以讀取和檢查已為組織加密的資料。 如有需要，您可以接著將加密移除或變更。 如需詳細資訊，請參閱[為 Azure 資訊保護和探索服務或資料復原設定超級使用者](https://docs.microsoft.com/azure/information-protection/configure-super-users)。
 
-## <a name="configuring-a-label-for-encryption"></a>設定用於加密的標籤
+## <a name="how-to-configure-a-label-for-encryption"></a>如何設定用於加密的標籤
 
-當您[建立或編輯敏感度標籤時](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)，可以在精靈的 [加密]**** 頁面上選取下列其中一個選項：
+[建立或編輯敏感度標籤](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)，並在精靈的 [加密]**** 頁面上選取下列其中一個選項：
 
 - **無**：新標籤的預設設定。 不會套用新的加密。
 - **套用**：開啟加密，然後指定加密設定。
@@ -98,7 +98,7 @@ ms.locfileid: "42074606"
 
 已加密然後新增為附件的文件，一律會保留其原始加密。 
 
-## <a name="how-to-configure-encryption-settings-for-a-sensitivity-label"></a>如何設定敏感度標籤的加密設定
+## <a name="configure-encryption-settings"></a>設定加密設定
 
 當您在精靈的 [加密]**** 頁面上選取 [套用]**** 來建立或編輯敏感度標籤時，請選擇是否要：
 
