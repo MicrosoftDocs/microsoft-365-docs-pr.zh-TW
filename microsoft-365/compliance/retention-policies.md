@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: dd9cc9624cc58f481e8d8d491493efc22b095d5b
-ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
+ms.openlocfilehash: aa0c4667ab85945cd849f94fbfb1fda693e108bd
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42093435"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106874"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -189,7 +189,7 @@ ms.locfileid: "42093435"
   
 ### <a name="org-wide-policy"></a>全組織原則
 
-保留原則的最強大功能之一，就是它會根據預設套用至 Office 365 中的各個位置，包括：
+保留原則最強大的功能之一，就是它可套用至 Office 365 中的各個位置，包括：
   
 - Exchange 電子郵件
     
@@ -202,7 +202,7 @@ ms.locfileid: "42093435"
 - Exchange 公用資料夾
     
 
-![所有位置選項](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
+![所有位置選項](../media/retention-policies-all-locations.png)
 
 全組織保留原則的其他重要功能包含：
   
@@ -215,9 +215,7 @@ ms.locfileid: "42093435"
 當您選擇位置時，您可以輕鬆地包含或排除整個位置，例如 Exchange 電子郵件或 OneDrive 帳戶。 若要這麼做，請將該位置的 [狀態]**** 切換到開啟或關閉。 
   
 如同全組織原則一般，若原則套用到整個位置的任何組合，則原則可以包含的信箱或網站數目沒有限制。例如，如果原則包含所有 Exchange 電子郵件和所有 SharePoint 網站，則所有網站和信箱都會包含在內，無論有多少。對於 Exchange，套用原則後建立的任何新信箱都會自動繼承此原則。
- 
-![選擇位置頁面](../media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
-  
+
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>具有特定包含或排除的原則
 
 您也可以將保留原則套用至特定使用者、Office 365 群組或網站。若要這麼做，請將該位置的 [狀態]**** 切換為開啟，然後使用連結來包含或排除特定使用者、Office 365 群組或網站。 
@@ -232,9 +230,11 @@ ms.locfileid: "42093435"
   
 ### <a name="skype-locations"></a>Skype 位置
 
-不同於 Exchange 電子郵件，您無法將 Skype 位置的狀態切換為開啟以包含所有使用者，但您可以開啟該位置，然後手動選擇您想要保留其交談的使用者。
+不同於 Exchange 電子郵件，您無法將 Skype 位置的狀態切換為開啟以包含所有使用者，但當您開啟該位置時，可以手動選擇您想要保留其交談的使用者：
+
+![為保留原則選擇 Skype 位置](../media/skype-location-retention-policies.png)
   
-選擇商務用 Skype 使用者時，您可以選取欄標題中的 [名稱]**** 方塊，快速包含所有使用者。 不過，請務必了解，會將每個使用者算成原則中的一個特定包含。 因此，如果您包含超過 1,000 個使用者，則會套用上一節提及的限制。 在這裡選取所有 Skype 使用者，和整個組織的原則能夠根據預設包含所有 Skype 使用者並不一樣。 
+當您選取 [選擇使用者]**** 時，您可以選取欄標題中的 [名稱]**** 方塊，快速包含所有使用者。 不過，請務必了解，會將每個使用者算成原則中的一個特定包含。 因此，如果您包含超過 1,000 個使用者，則會套用上一節提及的限制。 在這裡選取所有 Skype 使用者，和整個組織的原則能夠根據預設包含所有 Skype 使用者並不一樣。 
   
 ![選擇 Skype 使用者頁面](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   

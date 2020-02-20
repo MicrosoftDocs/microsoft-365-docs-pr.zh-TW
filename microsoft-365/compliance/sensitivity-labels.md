@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 使用敏感度標籤，您可以分類並協助保護敏感內容，同時確保人員的生產力與共同作業能力不會受到阻礙。您可以使用敏感度標籤在標記的內容上套用保護設定 (包括加密和浮水印)。
-ms.openlocfilehash: fa04fdc2713cbba090ec56972cd87e6cbdc4387b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 從 Microsoft 資訊保護架構使用敏感度標籤來分類及保護組織的資料，同時確保使用者生產效率和共同作業能力不受影響。 這些標籤可套用保護設定以包含加密視覺標記，如頁尾和浮水印。
+ms.openlocfilehash: 92bfb768cf044b6a4837e5dab6936c2d77424a25
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081430"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106826"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
 為了完成其工作，組織中的人員會與組織內外的其他人員共同合作。這表示內容不會停留在防火牆後，它會漫遊在裝置、應用程式和服務的各處。而您希望內容以符合組織的商務及合規性原則的安全、受保護的方式漫遊。
 
-使用敏感度標籤，您可以分類並協助保護組織的資料，不會阻礙人員的生產力與共同作業能力。
+來自 Microsoft 資訊保護架構的敏感度標籤可讓您分類及保護組織的資料，同時確保使用者生產效率和共同作業能力不受影響。
 
 從功能區上的 [首頁]**** 索引標籤顯示 Excel 中可用敏感度標籤的範例。 在此範例中，已套用的標籤會顯示在狀態列上：
 
@@ -100,7 +100,11 @@ ms.locfileid: "42081430"
     
     如需有關當您建立或編輯敏感度標籤 (包括重要的先決條件) 時**端點資料外洩防護**設定的詳細資訊，請參閱 [Windows 資訊保護如何使用敏感度標籤保護檔案](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)。
 
-- **自動將標籤套用至保留包含敏感性資訊的內容。** 您可以選擇您要標示的敏感資訊類型，且可以自動套用標籤，或提示使用者套用您建議的標籤。 如果您建議使用某個標籤，提示會顯示您選擇的任何文字。 例如：
+- 當您加入預覽以[在 Microsoft Teams、Office 365 群組和 SharePoint 網站 (公開預覽版) 中搭配使用敏感度標籤時](sensitivity-labels-teams-groups-sites.md)，**保護容器中的內容，例如網站和群組**。
+    
+    在您選擇預覽版之前，不會顯示 [網站和群組設定]**** 的設定選項。 請注意，此標籤設定並不會導致文件字動加上標籤，相反的，標籤設定會控制儲存文件的容器存取權，以保護內容。 這些設定包括隱私權層級，Office 365 群組擁有者是否可以將來賓新增至群組，以及授權給非管理裝置的存取層級。
+
+- **在 Office 應用程式中自動套用標籤，或建議標籤。** 您可以選擇您要標示的敏感資訊類型，且可以自動套用標籤，或提示使用者套用您建議的標籤。 如果您建議使用某個標籤，提示會顯示您選擇的任何文字。 例如：
     
     ![指派必要標籤的提示](../media/Sensitivity-label-Prompt-for-required-label.png)
     
