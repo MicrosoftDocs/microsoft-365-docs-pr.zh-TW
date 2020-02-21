@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 056685cbd49e6fb247a92357b3483b479d705c90
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 434f62d5ddfc8bc75c54de422aafc8c6325c4086
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085725"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170593"
 ---
 # <a name="battery-insights"></a>電池深入解析
 此檢視提供您的 Microsoft 受管理的電腦裝置電源、 電和應用程式使用狀況計量。 進行這些工作，應用程式被視為 「 使用 」 中，如果它正在執行，並在焦點。
@@ -33,7 +33,7 @@ ms.locfileid: "42085725"
 
 ## <a name="top-energy-consumers"></a>上方能源消費者
 
-在**上方能源消費者**] 區域中，您會發現應用程式耗用 milliWatt 小時 (mWh) 中的大部分能源您環境中。 顯示應用程式是每個特定裝置，向左**Predicted 電池壽命**區段中選取。 例如，若要查看您 Microsft Surface Book 2 的裝置的每個應用程式使用率，請電池壽命區域中選取該資料列。 如果您未選取任何模型，所顯示的應用程式耗用資料是我們統稱有資料的所有應用程式。
+在**上方能源消費者**] 區域中，您會發現應用程式耗用 milliWatt 小時 (mWh) 中的大部分能源您環境中。 顯示應用程式是每個特定裝置，向左**Predicted 電池壽命**區段中選取。 例如，若要查看您的 Microsoft Surface Book 2 裝置的每個應用程式使用率，請電池壽命區域中選取該資料列。 如果您未選取任何模型，所顯示的應用程式耗用資料是我們統稱有資料的所有應用程式。
 
  每個應用程式，彩色的區段顯示您的應用程式的能源使用這些類別之間通訊：
 

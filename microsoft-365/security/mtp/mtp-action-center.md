@@ -18,19 +18,17 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 5f31c9cb5272248ae8250f73d054ca599b83edc2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c838db1b3792bda719102f18a7c473192a7f9481
+ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083776"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42175706"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>移至重要訊息中心檢視補救動作
 
 **適用於：**
 - Microsoft 威脅防護
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 ## <a name="a-single-pane-of-glass-experience"></a>「單一玻璃窗」體驗
 
@@ -47,11 +45,6 @@ ms.locfileid: "42083776"
 
 ## <a name="remediation-actions"></a>補救動作
 
-下表列出重要訊息中心目前支援的補救動作： 
-
-|端點補救動作  |電子郵件補救動作  |
-|---------|---------|
-|隔離的檔案<br/>移除登錄機碼<br/>刪除處理序 <br/>停止服務 <br/>移除登錄機碼 <br/>停用驅動程式 <br/>移除排程工作      |虛刪除電子郵件訊息或群集<br/>封鎖 URL (點擊時)<br/>關閉外部郵件轉寄          |
 
 ## <a name="go-to-the-action-center"></a>移至重要訊息中心
 

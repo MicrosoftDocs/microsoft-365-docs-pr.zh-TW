@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 系統管理員可以在 Exchange Online 中瞭解如何使用 S/MIME。
-ms.openlocfilehash: b135a9dc2c5ad8fbf190b38f9fe10161b95a7531
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1c7b2a56f15b39818d51f405192febebeb2717e8
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598530"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170493"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>可用於 Exchange Online 中訊息簽署和加密的 S/MIME
 
@@ -39,15 +39,15 @@ S/MIME (安全多用途網際網路郵件延伸) 是一種被廣為接受的方�
 
 對每個端點設定 S/MIME 時所採取的步驟會稍有不同。 通常需要執行下列步驟：
 
-- 安裝以 Windows 為基礎的憑證授權單位，並且設定公開金鑰基礎結構，來核發 S/MIME 憑證。也支援協力廠商憑證提供者所發出的憑證。如需詳細資訊，請參閱 [Active Directory 憑證服務概觀](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11))。
+1. 安裝以 Windows 為基礎的憑證授權單位，並且設定公開金鑰基礎結構，來核發 S/MIME 憑證。也支援協力廠商憑證提供者所發出的憑證。如需詳細資訊，請參閱 [Active Directory 憑證服務概觀](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11))。
 
-- 在內部部署 AD DS 帳戶的 **UserSMIMECertificate** 和/或 **UserCertificate** 屬性中發佈使用者憑證。
+2. 在內部部署 AD DS 帳戶的 **UserSMIMECertificate** 和/或 **UserCertificate** 屬性中發佈使用者憑證。
 
-- 在 Exchange Online 組織中，使用適當的 DirSync 版本，將使用者憑證從 AD DS 同步至 Azure Active Directory。這些憑證會從 Azure Active Directory 同步至 Exchange Online 目錄，並於加密寄給收件者的郵件時使用。
+3. Exchange Online 組織，請使用適當版本的 Azure AD Connect 同步處理至 Azure Active Directory 使用者憑證從 AD DS。這些憑證會再取得自 Azure Active Directory 同步至 Exchange Online 目錄，並將用於加密郵件給收件者時。
 
-- 設定虛擬憑證集合以驗證 S/MIME。 Outlook 網頁版會使用此資訊來驗證電子郵件的簽章，以確保電子郵件是以信任的憑證所簽署。
+4. 設定虛擬憑證集合以驗證 S/MIME。 Outlook 網頁版會使用此資訊來驗證電子郵件的簽章，以確保電子郵件是以信任的憑證所簽署。
 
-- 設定 Outlook 或 EAS 端點來使用 S/MIME。
+5. 設定 Outlook 或 EAS 端點來使用 S/MIME。
 
 > [!NOTE]
 > 您無法在 Mac、iOS、Android 或其他非 Windows 裝置上的 Outlook 網頁版中安裝 S/MIME 控制。 如需詳細資訊，請參閱[在 Outlook 網頁版中使用 S/MIME 將郵件加密](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480)。

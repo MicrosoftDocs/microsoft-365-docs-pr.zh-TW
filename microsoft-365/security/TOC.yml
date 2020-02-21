@@ -1,7 +1,7 @@
 - name: Microsoft 365 安全性
   href: index.yml
   items:
-    - name: 開始使用
+    - name: 入門
       items:
         - name: 適用於 BDM 的 Microsoft 365 安全性
           href: Microsoft-365-security-for-bdm.md
@@ -67,9 +67,11 @@
               items:
                 - name: 空調概觀
                   href: mtp/mtp-autoir.md
-                - name: 移至重要訊息中心
+                - name: 檢視修復動作
+                  href: mtp/mtp-remediation-actions.md
+                - name: 請造訪重要訊息中心
                   href: mtp/mtp-action-center.md
-                - name: 檢視空調結果
+                - name: 檢視調查結果
                   href: mtp/mtp-autoir-results.md
                 - name: 核准或拒絕擱置中的動作
                   href: mtp/mtp-autoir-actions.md
@@ -364,6 +366,20 @@
               href: ./office-365-security/campaigns.md
             - name: 了解最新的攻擊與潛在威脅分析
               href: ./mtp/latest-attack-campaigns.md
+            - name: 自動調查及回應
+              items:
+                - name: 航空的概觀
+                  href: ./office-365-security/office-365-air.md
+                - name: 檢視詳細資料及調查的結果
+                  href: ./office-365-security/air-view-investigation-results.md
+                - name: 檢視並核准修復動作
+                  href: ./office-365-security/air-remediation-actions.md
+                - name: 空調整合的自訂或協力廠商的報表解決方案
+                  href: ./office-365-security/air-custom-reporting.md
+            - name: 偵測並快速地址危害的使用者帳戶
+              href: ./office-365-security/address-compromised-users-quickly.md
+            - name: 調查並修復惡意電子郵件
+              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: 檢視並閱讀 ATP 報告
               href: ./office-365-security/view-reports-for-atp.md
             - name: ATP 安全連結警告頁面的意義
@@ -372,12 +388,6 @@
               href: ./office-365-security/threat-trackers.md
             - name: Office 365 中的攻擊模擬器
               href: ./office-365-security/attack-simulator.md
-            - name: 使用威脅調查及回應保護使用者的安全
-              href: ./office-365-security/keep-users-safe-with-office-365-ti.md
-            - name: 自動調查及回應 Office 365 中的威脅
-              href: ./office-365-security/office-365-air.md
-            - name: 尋找並調查傳送的惡意電子郵件
-              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Office 365 ATP 中的安全文件
               href: ./office-365-security/safe-docs.md
             - name: 威脅總管 （和即時偵測的資訊）
@@ -393,6 +403,8 @@
                   href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: ATP 的運作方式
               items:
+                - name: 如何自動化的調查及回應運作
+                  href: ./office-365-security/automated-investigation-response-office.md
                 - name: ATP 安全連結的運作方式
                   href: ./office-365-security/how-atp-safe-links-works.md
                 - name: ATP 安全附件的運作方式
@@ -403,8 +415,6 @@
                   href: ./office-365-security/atp-for-spo-odb-and-teams.md
                 - name: 威脅調查及回應的運作方式
                   href: ./office-365-security/office-365-ti.md
-                - name: 自動調查及回應的運作方式
-                  href: ./office-365-security/automated-investigation-response-office.md
         - name: 安全性事件管理
           items:
             - name: Office 365 安全性事件回應
