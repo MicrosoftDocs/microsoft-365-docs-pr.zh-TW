@@ -1,5 +1,5 @@
 ---
-title: 測試人員風險管理的情況下 （預覽）
+title: 測試人員風險管理案例
 description: 了解 Microsoft 365 中的測試人員風險管理案例
 keywords: Microsoft 365, 測試人員風險管理, 風險管理, 合規性
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 02f665f966b929ac8a83acfcdf5be6a5818a64d3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6b5132cad5725e46a49b9010868ede423321f307
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072838"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179174"
 ---
-# <a name="insider-risk-management-cases-preview"></a>測試人員風險管理的情況下 （預覽）
+# <a name="insider-risk-management-cases"></a>測試人員風險管理案例
 
 案例的測試人員風險管理核心且可讓您深度調查，並採取相應動作在您的原則中定義的風險標記所產生的問題。 從提醒進一步動作才能解決規範相關問題的員工在情況中以手動方式建立的情況。 每個案例的範圍限定為一位員工和員工的多個提醒可新增至現有案例或新的案例。 之後調查案例的詳細資訊，您可以採取動作所傳送的員工通知之外，解析為無害，或途徑案例資料或員工調查。
 
@@ -96,7 +96,7 @@ Case 佇列會列出您的組織，除了下列案例屬性的目前狀態的所
     - 風險活動的**日期**。
     - **風險的活動類別**中。 例如， *Email(s) 傳送組織外部的附件*或*檔案下載從 SharePoint Online*。
     - 警示**風險分數**。 此分數是警示風險嚴重性層級的數字分數。
-    - **檔案**或**電子郵件**與警示相關聯的數目。 連結至每個檔案或風險活動相關聯的電子郵件也是可用的。
+    - 與警示相關聯的事件數。 連結至每個檔案或風險活動相關聯的電子郵件也是可用的。
 3. **風險的活動圖例**： 透過 [使用者] 活動圖表的底部，可識別的圖例可協助您快速地決定每個警示的風險類別。
 4. **風險的活動時序**： 列出所有與案例相關聯的風險警示完整時序，包括所有可用的對應的警示泡泡圖中的詳細資料。
 5. **大小寫的動作**： 案例動作] 工具列上的選項解決這種情況。 您可以解決案例，將電子郵件通知傳送給該員工或提升資料或員工調查的案例。

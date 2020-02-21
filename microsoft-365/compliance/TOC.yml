@@ -1,6 +1,6 @@
 - name: Microsoft 365 合規性
   href: index.yml
-- name: 開始使用
+- name: 入門
   items:
     - name: 合規性中心的新功能
       href: whats-new.md
@@ -18,23 +18,23 @@
       href: plan-for-security-and-compliance.md
 - name: 管理測試人員風險
   items:
-    - name: 測試人員風險管理 （預覽）
+    - name: 測試人員風險管理
       items:
-        - name: 了解測試人員風險管理 （預覽）
+        - name: 了解測試人員風險管理
           href: insider-risk-management.md
-        - name: 開始使用測試人員風險管理 (預覽版)
+        - name: 開始使用測試人員風險管理
           href: insider-risk-management-configure.md
-        - name: 建立及管理測試人員風險原則 （預覽）
+        - name: 建立及管理測試人員風險原則
           href: insider-risk-management-policies.md
-        - name: 調查測試人員風險提醒 （預覽）
+        - name: 調查測試人員風險提醒
           href: insider-risk-management-alerts.md
-        - name: 測試人員風險情況下 （預覽） 採取動作
+        - name: 測試人員風險的情況下採取動作
           href: insider-risk-management-cases.md
-        - name: 檢閱資料與測試人員風險內容總管 （預覽）
+        - name: 測試人員風險內容檔案總管的檢閱資料
           href: insider-risk-management-content-explorer.md
-        - name: 將使用者新增至測試人員風險原則 （預覽）
+        - name: 將使用者新增至測試人員風險原則
           href: insider-risk-management-users.md
-        - name: 建立測試人員風險通知範本 （預覽）
+        - name: 建立測試人員風險通知範本
           href: insider-risk-management-notices.md
     - name: 通訊合規性
       items:
@@ -123,7 +123,7 @@
               href: form-a-query-to-find-sensitive-data-stored-on-sites.md
             - name: DLP 如何在安全性與合規性中心和 Exchange 系統管理中心之間工作
               href: how-dlp-works-between-admin-centers.md
-    - name: 敏感性資訊類型
+    - name: 敏感資訊類型
       items:
         - name: 敏感性資訊類型所尋找的項目
           href: what-the-sensitive-information-types-look-for.md

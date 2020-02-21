@@ -1,5 +1,5 @@
 ---
-title: 測試人員風險管理使用者 （預覽）
+title: 測試人員風險管理使用者
 description: 了解 Microsoft 365 中的測試人員風險管理使用者
 keywords: Microsoft 365, 測試人員風險管理, 風險管理, 合規性
 localization_priority: Normal
@@ -12,19 +12,19 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a9ff7e38a99a5fe5bd8da5301bec5e19bc015cf3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 322cd0aa8b72ea2c81792b36614e87d97db87d7c
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072783"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179104"
 ---
-# <a name="insider-risk-management-users-preview"></a>測試人員風險管理使用者 （預覽）
+# <a name="insider-risk-management-users"></a>測試人員風險管理使用者
 
 測試人員風險管理使用者是員工在組織中所包含的一或多個測試人員風險管理原則。 若要快速檢閱員工的風險資訊，並將員工新增至現有的測試人員風險管理原則，請使用**使用者儀表板**。 測試人員風險管理原則中包含每個使用者有顯示在**使用者儀表板**上的下列資訊：
 
 - **使用者**： 使用者的使用者名稱。
-- **風險層級**： 
+- **風險層級**： 目前的計算之使用者的風險層級。 此分數的計算每隔 24 小時，並使用從使用者相關聯的所有作用中警示警示風險分數。
 - **作用中警示**： 所有原則的作用中警示的數目。
 - **已確認違規**： 案例數目解析為使用者的 [*確認原則違規情形*。
 - **案例**： 使用者目前作用中的案例。
@@ -54,5 +54,5 @@ ms.locfileid: "42072783"
 2. 在工具列上，選取 [**新增使用者至原則**。
 3. 在 [**新增使用者**] 對話方塊中，啟動 [**使用者**] 欄位中輸入使用者名稱。 選取您想要新增至原則的使用者。
 4. 選取要顯示設定的測試人員風險管理原則的**原則**欄位的下拉式箭號。 選取要新增至使用者的原則。
-5. 使用**監控視窗**滑動軸控制來定義...][監視] 視窗中的範圍是 5 到 30 天。
+5. 使用**啟動視窗**滑動軸控制，以定義多久原則已啟用為這位使用者，然後在使用者執行比對原則的第一個活動時觸發。 [監視] 視窗中的範圍是 5 到 30 天。
 6. 選取 [**新增]** ，然後**確認**將使用者新增至原則。

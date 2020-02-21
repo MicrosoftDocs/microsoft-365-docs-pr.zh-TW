@@ -1,7 +1,7 @@
 ---
-title: 測試人員風險管理內容 explorer （預覽）
+title: 測試人員風險管理內容總管
 description: 了解 Microsoft 365 中的測試人員風險管理內容總管
-keywords: Microsoft 365，測試人員風險管理、 風險管理、 合規性
+keywords: Microsoft 365, 測試人員風險管理, 風險管理, 合規性
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a8c1c77bdfa3236ce8f2222fd21a7fba0535f149
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 68a472e4e6b7556fc1b738a49b3c82dcf4804842
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590644"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179074"
 ---
-# <a name="insider-risk-management-content-explorer-preview"></a>測試人員風險管理內容 explorer （預覽）
+# <a name="insider-risk-management-content-explorer"></a>測試人員風險管理內容總管
 
 風險分析師和現場，若要檢查的內容和擷取提醒中的通訊的詳細資訊，可讓測試人員風險管理內容的檔案總管。 所有警示，資料和郵件檔案的複本已封存為快照中的項目，同時維持原來的檔案及儲存來源中的郵件的時間。 資料和訊息複製為透明與警示相關聯的員工和內容的擁有者。 資料的存取權限與權限設定所複製的內容和訊息及風險分析師維護，而且現場需要這些權限和權限如果他們需要開啟並檢視的檔案。 每個檔案及郵件會自動指派管理用途測試人員風險管理案例中的唯一檔案識別碼。
 
@@ -56,7 +56,7 @@ ms.locfileid: "41590644"
 | **收到日期** | 收件者收到電子郵件的日期。 這是做為接收電子郵件屬性相同的屬性。 |
 | **收件者** | 電子郵件中的所有收件者欄位。 這些欄位是以 [副本] 及 [密件副本]。 |
 | **具有代表性的識別碼** | 每一組完全重複的數值識別碼。 |
-| **寄件者** | 電子郵件的寄件者。 |
+| **Sender** | 電子郵件的寄件者。 |
 | **寄件者/作者** | 寄送郵件人員的電子郵件。 對於文件，在 Office 文件中的 [作者] 欄位中所引用的人員。 您可以輸入多個名稱，以逗號隔開。 OR 運算子會以邏輯方式連線兩個或多個值。 |
 | **Sent** | 寄件者傳送電子郵件的日期。 這是做為已傳送電子郵件屬性相同的屬性。 |
 | **大小** | 電子郵件與文件的大小 （以位元組為單位） 的項目。 |
@@ -125,7 +125,7 @@ ms.locfileid: "41590644"
 | **參與者** | 所有的人員欄位中的電子郵件訊息。 這些欄位為、 To、 [副本] 及 [密件副本]。 |
 | **收到日期** | 收件者收到電子郵件的日期。 |
 | **收件者網域** | 所有網域的郵件收件者的清單。 |
-| **寄件者** | 寄件者的郵件類型的欄位 （中）。  格式為**DisplayName \<SmtpAddress>**。 |
+| **Sender** | 寄件者的郵件類型的欄位 （中）。  格式為**DisplayName \<SmtpAddress>**。 |
 | **寄件者網域** | 寄件者的網域。 |
 | **Subject** | 電子郵件訊息的主旨行中的文字。  <br/> **附註：** 當您在查詢中使用 Subject 屬性時，搜尋會傳回所有郵件的主旨行中包含您要搜尋的文字。 換句話說，查詢不會傳回已完全符合這些郵件。 例如，如果您搜尋`subject:"Quarterly Financials"`，您的結果會包含郵件主旨為 「 Quarterly Financials 2018 」。 |
 | **To** | 電子郵件訊息的 [到] 欄位。 |

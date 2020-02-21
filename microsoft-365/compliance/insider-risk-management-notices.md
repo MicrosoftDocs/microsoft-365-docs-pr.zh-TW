@@ -1,5 +1,5 @@
 ---
-title: 測試人員風險管理通知範本 （預覽）
+title: 測試人員風險管理通知範本
 description: 了解測試人員風險管理 Microsoft 365 中的通知範本
 keywords: Microsoft 365, 測試人員風險管理, 風險管理, 合規性
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9e114f0292b4513176cff70afa25f69532e35d86
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 92844691cba4adf39c7b4eee30de97ccff9d0890
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072802"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179084"
 ---
-# <a name="insider-risk-management-notice-templates-preview"></a>測試人員風險管理通知範本 （預覽）
+# <a name="insider-risk-management-notice-templates"></a>測試人員風險管理通知範本
 
 測試人員風險管理看到範本，可讓您將電子郵件傳送給員工，當使用者活動所產生的原則相符項目和警示。 在大多數情況下，產生警示的員工動作是錯誤或沒有不良意圖不慎活動的結果。 通知做為簡單的提醒給員工更仔細或重新整理程式訓練或公司的政策資源提供的連結或資訊。 通知可以是您的內部規範訓練程式很重要的一部分，且可協助您建立含有週期性風險活動的員工所記錄的稽核記錄。
 

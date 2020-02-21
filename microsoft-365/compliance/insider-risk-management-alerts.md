@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d1946bb3667fbdde6e7d2c3fbc70f8f546890e27
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eef600b2fc325454ad7a4d36019a4e762409c8b9
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072880"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179214"
 ---
-# <a name="insider-risk-management-alerts-preview"></a>測試人員風險管理警示 （預覽）
+# <a name="insider-risk-management-alerts"></a>測試人員風險管理提醒
 
 測試人員風險管理警示所自動產生的風險測試人員風險管理原則中定義的指標。 這些警示使您的合規性分析師和現場全面檢視的目前的風險狀態，並讓組織為分級，並採取動作對於探索到的風險。
 
@@ -29,7 +29,7 @@ ms.locfileid: "42072880"
 
 - **若要檢閱的警示**： 列出需要檢閱和分級的提醒的總數，包括警示嚴重性明細。
 - **過去 30 天內開啟提醒**： 原則所建立的提醒總數符合過去 30 天內，排序高、 中型與低警示的嚴重性層級。
-- **平均回應時間已解決的警示**： 概略有用警示的統計資料：
+- **若要解決的警示的平均時間**： 概略有用警示的統計資料：
     - 若要解決高嚴重性提醒、 小時、 數天或每個月所列的平均時間。
     - 若要解決中嚴重性提醒、 小時、 數天或每個月所列的平均時間。
     - 若要解決低嚴重性提醒、 小時、 數天或每個月所列的平均時間。

@@ -1,5 +1,7 @@
 ---
 title: 管理信箱稽核
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 信箱稽核記錄 （也稱為預設信箱稽核或信箱的稽核預設情況下） 的 Office 365 中預設已開啟。 這表示信箱擁有者、 代理人和系統管理員所執行的特定動作都會自動記錄在信箱稽核記錄，您可以搜尋的信箱上執行的活動。
-ms.openlocfilehash: 059039205e82ea63b1dc14a8be5e768e9cdba069
-ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
+ms.openlocfilehash: 28823c3b2b43261d18352cb939c36f1cfc0b2c7c
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "41515564"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170573"
 ---
 # <a name="manage-mailbox-auditing"></a>管理信箱稽核
 
@@ -37,7 +39,7 @@ ms.locfileid: "41515564"
 - （因為您正在稽核所有信箱的相同的動作），您可以有整個組織的一致的信箱稽核原則。
 
 > [!NOTE]
->• 關於信箱的稽核預設版本，請記得重要事情是： 您不需要執行任何動作來管理信箱的稽核。 不過，若要了解更多、 自訂預設設定，從信箱稽核或完全將其關閉，本主題可協助您。 <br><br>• 僅信箱稽核事件 E5 使用者都可以在安全 & 與規範中心中或透過 Office 365 管理活動 API 的稽核記錄搜尋。 如需詳細資訊，請參閱本主題[的詳細資訊](#more-information)一節。
+>• 關於信箱的稽核預設版本，請記得重要事情是： 您不需要執行任何動作來管理信箱的稽核。 不過，若要了解更多、 自訂預設設定，從信箱稽核或完全將其關閉，本主題可協助您。 <br><br>• 依預設，僅 E5 使用者的信箱稽核事件中可用的稽核記錄搜尋的安全性 & 合規性中心中或透過 Office 365 管理活動 API。 如需詳細資訊，請參閱本主題[的詳細資訊](#more-information)一節。
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>確認信箱的稽核預設已開啟
 
@@ -60,11 +62,11 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 |**信箱類型**|**支援**|**不支援**|
 |:---------|:---------:|:---------:|
-|使用者信箱|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-|共用信箱|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-|Office 365 群組信箱|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-|資源信箱||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|公用資料夾信箱||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|使用者信箱|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|共用信箱|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|Office 365 群組信箱|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|資源信箱||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|公用資料夾信箱||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 
 ## <a name="logon-types-and-mailbox-actions"></a>登入類型，以及信箱動作
 
@@ -94,7 +96,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 下表說明可用的信箱稽核記錄的使用者信箱以及共用信箱的信箱動作。
 
-- 核取記號 ( ![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) 指示信箱動作可以記錄 （不是所有動作都可用於所有登入類型） 的登入類型。
+- 核取記號 ( ![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) 指示信箱動作可以記錄 （不是所有動作都可用於所有登入類型） 的登入類型。
 
 - 星號 ( <sup>\*</sup> ) 核取記號表示信箱巨集指令會登入類型的預設記錄之後。
 
@@ -103,25 +105,28 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**信箱動作**|**描述**|**Admin**|**委派**|**Owner**|
 |:---------|:---------|:---------:|:---------:|:---------:|
 |**AddFolderPermissions**|**附註**： 雖然這個值會被接受為信箱的動作，但它已包含在**UpdateFolderPermissions**動作並不分開稽核。 換言之，請勿使用此值。||||
-|**ApplyRecord**|項目標示為記錄。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Copy**|郵件已複製到另一個資料夾。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
-|**Create**|在信箱中的 [行事曆、 連絡人、 備忘稿或工作] 資料夾中建立項目 （例如，會建立新的會議邀請）。 請注意不稽核建立、 傳送或接收郵件。 此外，建立信箱資料夾的動作也不會受到稽核。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**FolderBind**|存取信箱資料夾。 系統管理員或代理人開啟信箱時，也會記錄此巨集指令。 <br/><br/> **附註**： 合併委派所執行的資料夾繫結動作的稽核記錄。 個別資料夾存取產生一個稽核記錄 24 小時期間內。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-|**HardDelete**|郵件已從 [可復原的項目] 資料夾中清除。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**MailboxLogin**|使用者登入其信箱。 |||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**MessageBind**|郵件已在 [預覽] 窗格中檢視，或開啟。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|**ApplyRecord**|項目標示為記錄。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Copy**|郵件已複製到另一個資料夾。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|**Create**|在信箱中的 [行事曆、 連絡人、 備忘稿或工作] 資料夾中建立項目 （例如，會建立新的會議邀請）。 請注意不稽核建立、 傳送或接收郵件。 此外，建立信箱資料夾的動作也不會受到稽核。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**預設值**||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**FolderBind**|存取信箱資料夾。 系統管理員或代理人開啟信箱時，也會記錄此巨集指令。 <br/><br/> **附註**： 合併委派所執行的資料夾繫結動作的稽核記錄。 個別資料夾存取產生一個稽核記錄 24 小時期間內。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**HardDelete**|郵件已從 [可復原的項目] 資料夾中清除。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**MailItemsAccessed**|郵件中的資料是由郵件通訊協定和用戶端存取。 這個值只適用於 E5 或 E5 合規性的附加元件訂閱使用者。 如需詳細資訊，請參閱[Access to 調查的重要事件](advanced-audit.md#access-to-crucial-events-for-investigations)。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**MailboxLogin**|使用者登入其信箱。 |||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**MessageBind**|郵件已在 [預覽] 窗格中檢視或開啟系統管理員。**附註**： 雖然這個值會被接受為信箱的動作，但不再記錄這些動作。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**ModifyFolderPermissions**|**附註**： 雖然這個值會被接受為信箱的動作，但它已包含在**UpdateFolderPermissions**動作並不分開稽核。 換言之，請勿使用此值。||||
-|**Move**|郵件已移到另一個資料夾。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**MoveToDeletedItems**|郵件已遭刪除並移至 [刪除的郵件] 資料夾。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**RecordDelete**|會標示為記錄的虛刪除 （移至 [可復原的項目] 資料夾） 項目。 標示為記錄的項目無法永久刪除 （清除從 [可復原的項目] 資料夾）。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Move**|郵件已移到另一個資料夾。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**MoveToDeletedItems**|郵件已遭刪除並移至 [刪除的郵件] 資料夾。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**RecordDelete**|會標示為記錄的虛刪除 （移至 [可復原的項目] 資料夾） 項目。 標示為記錄的項目無法永久刪除 （清除從 [可復原的項目] 資料夾）。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**RemoveFolderPermissions**|**附註**： 雖然這個值會被接受為信箱的動作，但它已包含在**UpdateFolderPermissions**動作並不分開稽核。 換言之，請勿使用此值。||||
-|**SendAs**|已使用 [傳送為] 權限傳送郵件。 這表示另一位使用者傳送的郵件，就好像它來自信箱擁有者。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SendOnBehalf**|已使用 [代理傳送者] 權限傳送郵件。 這表示另一位使用者傳送代表信箱擁有者的郵件。 此郵件會向收件者指出誰代理傳送郵件，以及實際上是誰傳送郵件。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SoftDelete**|郵件已永久刪除或從 [刪除的郵件] 資料夾中刪除。 虛刪除的項目會移至 [可復原的項目] 資料夾。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**更新**|郵件或其屬性已變更。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**UpdateCalendarDelegation**|行事曆委派已指派給信箱。 行事曆代理可讓其他有相同組織權限的人來管理信箱擁有者的行事曆。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**UpdateFolderPermissions**|資料夾權限已變更。 資料夾權限可控制組織中的哪些使用者可以存取信箱中的資料夾，以及這些資料夾中的郵件。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**UpdateInboxRules**|收件匣規則已新增、 移除或變更。 收件匣規則用來處理郵件使用者的收件匣根據指定的條件，並符合規則的條件，例如將郵件移至指定資料夾或刪除郵件時採取的動作。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**SendAs**|已使用 [傳送為] 權限傳送郵件。 這表示另一位使用者傳送的郵件，就好像它來自信箱擁有者。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SendOnBehalf**|已使用 [代理傳送者] 權限傳送郵件。 這表示另一位使用者傳送代表信箱擁有者的郵件。 此郵件會向收件者指出誰代理傳送郵件，以及實際上是誰傳送郵件。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SoftDelete**|郵件已永久刪除或從 [刪除的郵件] 資料夾中刪除。 虛刪除的項目會移至 [可復原的項目] 資料夾。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**更新**|郵件或其屬性已變更。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**UpdateCalendarDelegation**|行事曆委派已指派給信箱。 行事曆代理可讓其他有相同組織權限的人來管理信箱擁有者的行事曆。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**UpdateComplianceTag**|不同的保留標籤套用至郵件項目 （項目只能有一個保留標籤指派給它）。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**UpdateFolderPermissions**|資料夾權限已變更。 資料夾權限可控制組織中的哪些使用者可以存取信箱中的資料夾，以及這些資料夾中的郵件。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**UpdateInboxRules**|收件匣規則已新增、 移除或變更。 收件匣規則用來處理郵件使用者的收件匣根據指定的條件，並符合規則的條件，例如將郵件移至指定資料夾或刪除郵件時採取的動作。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 
 > [!IMPORTANT]
 > 如果您自訂信箱来稽核的動作的任何登入類型*之前*的信箱稽核上依預設已啟用組織中，自訂的設定會保留在信箱上並不以覆寫預設信箱動作本節所述。 若要還原為其預設值 （其中您可以在任何時間） 的稽核信箱動作，請參閱本主題稍後的 [[還原預設信箱動作](#restore-the-default-mailbox-actions)] 區段。
@@ -136,13 +141,13 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 |**信箱動作**|**描述**|**Admin**|**委派**|**Owner**|
 |:---------|:---------|:---------:|:---------:|:---------:|
-|**Create**|建立的行事曆項目。 請注意不稽核建立、 傳送或接收郵件。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**HardDelete**|郵件已從 [可復原的項目] 資料夾中清除。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**MoveToDeletedItems**|郵件已遭刪除並移至 [刪除的郵件] 資料夾。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**SendAs**|已使用 [傳送為] 權限傳送郵件。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SendOnBehalf**|已使用 [代理傳送者] 權限傳送郵件。 |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SoftDelete**|郵件已永久刪除或從 [刪除的郵件] 資料夾中刪除。 虛刪除的項目會移至 [可復原的項目] 資料夾。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**更新**|郵件或其屬性已變更。|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**Create**|建立的行事曆項目。 請注意不稽核建立、 傳送或接收郵件。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**HardDelete**|郵件已從 [可復原的項目] 資料夾中清除。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**MoveToDeletedItems**|郵件已遭刪除並移至 [刪除的郵件] 資料夾。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**SendAs**|已使用 [傳送為] 權限傳送郵件。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SendOnBehalf**|已使用 [代理傳送者] 權限傳送郵件。 |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SoftDelete**|郵件已永久刪除或從 [刪除的郵件] 資料夾中刪除。 虛刪除的項目會移至 [可復原的項目] 資料夾。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**更新**|郵件或其屬性已變更。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>確認記錄每個登入類型預設信箱動作
 
@@ -183,7 +188,7 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 若要查看目前登入使用者信箱或共用的信箱的信箱動作，取代\<MailboxIdentity\>使用的名稱、 別名、 電子郵件地址或使用者主要名稱 （使用者名稱），信箱的並在 Exchange Online PowerShell 中執行一或多個下列命令。
 
 > [!NOTE]
-> 雖然您可以加入`-GroupMailbox`切換到 Office 365 群組信箱的下列**Get-mailbox**命令不認為您會看到的值。 預設和 Office 365 群組信箱稽核的靜態的信箱動作稍早在本主題中[的 Office 365 群組信箱的信箱動作](#mailbox-actions-for-office-365-group-mailboxes)節所述。
+> 雖然您可以加入`-GroupMailbox`切換到 Office 365 群組信箱的下列**Get-mailbox**命令不認為所傳回的值。 預設和 Office 365 群組信箱稽核的靜態的信箱動作稍早在本主題中[的 Office 365 群組信箱的信箱動作](#mailbox-actions-for-office-365-group-mailboxes)節所述。
 
 #### <a name="owner-actions"></a>擁有者動作
 
@@ -334,9 +339,11 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 ## <a name="more-information"></a>詳細資訊
 
-- 雖然信箱稽核記錄上預設會啟用所有的組織，只有具備 E5 授權的使用者將會傳回信箱稽核記錄事件，在[稽核記錄搜尋的安全性 & 合規性中心中](search-the-audit-log-in-security-and-compliance.md)或透過[Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。
+- 雖然信箱稽核記錄上預設會啟用所有的組織，只有具備 E5 授權的使用者將會傳回信箱稽核記錄事件，在[稽核記錄搜尋的安全性 & 合規性中心中](search-the-audit-log-in-security-and-compliance.md)或透過[Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) **預設**。
 
   若要擷取沒有 E5 授權使用者的信箱稽核記錄項目，您可以：
+
+  - 使用安全性 & 合規性中心中的稽核記錄搜尋，或透過 Office 365 管理活動 API**後**您已手動啟用稽核個別信箱上的信箱。
 
   - 在 Exchange Online PowerShell 中使用下列 cmdlet:
 

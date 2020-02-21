@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5a3401b80469fa6d22d973204703a6b012ebb11b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: cc0c698b5c27b41548b646d03d9f94a2f8671eea
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072731"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179184"
 ---
-# <a name="insider-risk-management-in-microsoft-365-preview"></a>Microsoft 365 中的測試人員風險管理 (預覽版)
+# <a name="insider-risk-management-in-microsoft-365"></a>在 Microsoft 365 測試人員風險管理
 
-測試人員風險管理是Microsoft 365 中的內部風險解決方案，可讓您偵測、調查組織中的危險活動並採取行動。 自訂原則可讓您偵測組織中的惡意及意外風險活動，並採取行動，包括在需要的時候將將案例呈報至其他 Microsoft 365 調查解決方案。 組織中的風險分析師可以迅速採取適當的動作，以確保使用者符合組織的合規性標準。
+測試人員風險管理是在 Microsoft 365，可協助內部的風險降到最低，讓您偵測、 調查，並在組織中有風險的活動採取動作的解決方案。 自訂原則可讓您偵測並採取相應動作包括升級至 Microsoft 進階電子文件探索的情況下，視您的組織中的惡意和不慎風險活動。 組織中的風險分析師可以迅速採取適當的動作，以確保使用者符合組織的合規性標準。
 
 觀看下列影片，了解測試人員風險管理如何協助組織預防、偵測並遏制風險，同時確定組織的價值、文化和員工體驗的優先順序：
 <br>
@@ -66,7 +66,7 @@ Microsoft 365 中的測試人員風險管理採用完整的服務和協力廠商
 
 - 離職員工資料偷竊
 - 資料洩露
-- 溝通中的粗穢言語
+- 電子郵件中的不良語言
 
 如需詳細資訊，請參閱[測試人員風險管理原則](insider-risk-management-policies.md)。
 
