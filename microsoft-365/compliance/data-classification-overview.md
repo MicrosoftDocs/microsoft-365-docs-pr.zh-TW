@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 資料分類儀表板可讓您深入了解貴組織所發現及分類的敏感性資料。
-ms.openlocfilehash: 76c1199fa3842428900db197f15728c116f778b9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bec44dea9059c779a567a3ff222cc41360de9321
+ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076382"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42175797"
 ---
-# <a name="data-classification-overview-preview"></a>資料分類概觀 (預覽)
+# <a name="know-your-data---data-classification-overview-preview"></a>了解您的資料 - 資料分類概觀 (預覽)
 
 身為 Microsoft 365 系統管理員或合規性系統管理員，您可以評估並標記貴組織的內容，以控制其目標位置、隨時隨地加以保護，並確保根據貴組織的需求來保存及刪除內容。 您可以透過[敏感度標籤](sensitivity-labels.md)、[保留標籤](labels.md)和敏感性資訊類型分類來執行此動作。 執行探索、評估和標記有多種方法，但最後您可能會有大量以其中一個或兩個標籤標記及分類的文件和電子郵件。 套用保留標籤和敏感度標籤後，您會想要查看租用戶使用標籤的情況，以及對這些項目進行的動作。 資料分類頁面可讓您了解此內容，具體如下：
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 適用於系統管理員：了解在安全性與合規性中心使用「匯入」服務來將電子郵件資料 (PST 檔案) 大量匯入至 Exchange Online 的使用者信箱。 本主題提供常見問題集，並說明 PST 匯入程序的運作方式。
-ms.openlocfilehash: 82e1ccc41d2df5986b54054d8fb98350608c642e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 94681af376d7c9ae32bdd2cbbb2a28da464712c1
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072949"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170543"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>將組織的 PST 檔案匯入至 Office 365 概觀
 
@@ -145,7 +145,10 @@ ms.locfileid: "42072949"
   
  **哪些地區提供網路上傳服務？**
   
-網路上傳的服務範圍目前包括美國、加拿大、巴西、英國、歐洲、印度、東亞、東南亞、日本、大韓民國和澳洲。我們會盡快在更多地區提供網路上傳服務。
+網路上傳的服務範圍目前包括這些地區：美國、加拿大、巴西、英國、歐洲、印度、東亞、東南亞、日本、大韓民國和澳洲。我們會盡快在更多地區提供網路上傳服務。
+
+> [!NOTE]
+> 目前無法在德國和瑞士使用網路上傳 PST 檔案。 當這些國家/地區開放使用網路上傳時，將會更新此常見問題。
   
  **使用網路上傳匯入 PST 檔案的費用為何？**
   
@@ -215,6 +218,9 @@ Using network upload to import PST files is free.
  **哪些地區提供磁碟機寄送服務？**
   
 磁碟機寄送的服務範圍目前包括美國、加拿大、巴西、英國、歐洲、印度、東亞、東南亞、日本、大韓民國和澳洲。 我們會盡快在更多地區提供磁碟機寄送服務。
+
+> [!NOTE]
+> 目前在德國和瑞士不開放使用磁碟機寄送匯入 PST 檔案。 當這些國家/地區開放磁碟機寄送時，將會更新此常見問題。
   
  **有哪些商業授權合約支援磁碟機寄送？**
   

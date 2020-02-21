@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 中的進階稽核提供新的稽核功能，以協助組織進行鑑識與合規性調查。
-ms.openlocfilehash: e06e7f6330a36c8f98042fcce472b7baf6ef16ff
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+ms.openlocfilehash: 79c7e24349d3b6603e82946fda4a3c1f0c0ae6ff
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960239"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170513"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 中的進階稽核
 
 Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and-compliance.md)，可讓組織深入了解 Microsoft 365 中多種不同服務的多個類型的稽核活動。 現在隨著 Microsoft 365 中進階稽核的推出，我們會加入新的稽核功能，以協助組織進行鑑識與合規性調查。
 
 > [!NOTE]
-> 進階稽核可供具有 Office 365 或 Microsoft 365 企業版 E5 訂閱的組織使用。 此外，當進階稽核功能需要使用每位使用者授權時，您可以將 Microsoft 365 E5 合規性附加元件訂閱指派給使用者，針對稽核記錄和高價值稽核事件的長期保留也是如此。
+> 進階稽核可供具有 Office 365 或 Microsoft 365 企業版 E5 訂閱的組織使用。 此外，當進階稽核功能需要使用每個使用者授權時，您可以將 Microsoft 365 E5 合規性附加元件訂閱指派給使用者，針對稽核記錄和存取調查重要事件的長期保留也是如此。
 
 本文提供這些進階稽核功能的概觀。
 
@@ -49,9 +49,9 @@ Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and
 
 您也可以指定要保留符合原則的稽核記錄的時間長度和優先順序層級，以便特定原則可優先於其他原則。 另請注意，如果您需要為組織中的部分或所有使用者保留 Exchange、SharePoint 或 Azure Active Directory 稽核記錄少於一年，任何自訂稽核記錄保留原則都會優先於預設的稽核保留原則。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md)。
 
-## <a name="high-value-audit-events"></a>高價值稽核活動
+## <a name="access-to-crucial-events-for-investigations"></a>存取調查重要事件
 
-高價值安全性與合規性相關的稽核事件，可協助您調查可能的外洩或其他與鑑識相關的調查。 我們要發佈的第一個這類高價值事件是 *MailItemsAccessed* 信箱稽核事件。 當郵件資料由郵件通訊協定和用戶端存取時，即會觸發此事件。 MailItemsAccessed 事件可協助調查人員識別資料外洩，並判斷可能已遭入侵的郵件範圍。 如果攻擊者取得電子郵件訊息，即使沒有明確訊號指出已實際讀取 (也就是說，在稽核記錄中記錄了透過繫結或同步處理之類的存取類型)，也會觸發 MailItemsAccessed 事件。
+重要安全性與合規性相關的稽核事件，可協助您調查可能外洩或其他與鑑識相關的調查。 我們要發佈的第一個重要事件是 *MailItemsAccessed* 信箱稽核事件。 當郵件資料由郵件通訊協定和用戶端存取時，即會觸發此事件。 MailItemsAccessed 事件可協助調查人員識別資料外洩，並判斷可能已遭入侵的郵件範圍。 如果攻擊者取得電子郵件訊息，即使沒有明確訊號指出已實際讀取 (也就是說，在稽核記錄中記錄了透過繫結或同步處理之類的存取類型)，也會觸發 MailItemsAccessed 事件。
 
 新的 MailItemsAccessed 信箱動作會取代 Exchange Online 中信箱稽核記錄的 MessageBind，並提供下列改善：
 

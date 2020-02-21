@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: e4e09360e4f07935867b03b3436a5581bb671774
-ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
+ms.openlocfilehash: 417496d5c72c03207f61b4652970b103663e615b
+ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42091366"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219184"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -62,6 +62,8 @@ ms.locfileid: "42091366"
 - Microsoft Power Apps 中的使用者和系統管理員活動
 
 - Microsoft Flow 中的使用者和系統管理員活動
+
+- 使用 SharePoint Online 或 Microsoft Teams 網站之敏感度標籤的使用者和系統管理員活動
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -309,7 +311,7 @@ ms.locfileid: "42091366"
 |[進階電子文件探索活動](#advanced-ediscovery-activities)|[Power BI 活動](#power-bi-activities)|[Microsoft 工作場所分析](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams 活動](#microsoft-teams-activities)|[Microsoft Teams 醫療保健活動](#microsoft-teams-healthcare-activities)|[Yammer 活動](#yammer-activities)|
 |[Microsoft Power Automate 活動](#microsoft-power-automate-activities)|[Microsoft Power Apps 活動](#microsoft-power-apps-activities)|[Microsoft Stream 活動](#microsoft-stream-activities)|
-|[Microsoft Teams 活動](#microsoft-forms-activities)|[Exchange 系統管理員活動](#exchange-admin-audit-log)|||
+|[Microsoft Teams 活動](#microsoft-forms-activities)|[敏感度標籤活動](#sensitivity-label-activities)|[Exchange 系統管理員活動](#exchange-admin-audit-log)||
 ||||
 
 ### <a name="file-and-page-activities"></a>檔案和頁面活動
@@ -330,7 +332,7 @@ ms.locfileid: "42091366"
 |已刪除資源回收筒中的檔案|FileDeletedFirstStageRecycleBin|使用者從網站的資源回收筒中刪除檔案。|
 |已刪除第二階段資源回收筒中的檔案|FileDeletedSecondStageRecycleBin|使用者從網站的第二階段資源回收筒中刪除檔案。|
 |已刪除記錄合規性原則標籤|ComplianceRecordDelete|已歸類為記錄的文件已刪除。 將內容歸類為記錄的保留標籤套用至文件時，文件就會視為記錄。|
-|偵測到的文件敏感度不相符|DocumentSensitivityMismatchDetected|使用者上傳以敏感度標籤分類的文件，但其敏感度標籤的優先順序高於文件上傳目的地網站所套用的敏感度標籤。 <br/><br/> 如果網站套用的敏感度標籤，其優先順序高於上傳到網站的文件所套用的敏感度標籤，則不會觸發此事件。 如需有關敏感度標籤優先順序的詳細資訊，請參閱[了解敏感度標籤](sensitivity-labels.md#label-priority-order-matters)中的＜標籤優先順序＞一節。|
+|偵測到的文件敏感度不相符|DocumentSensitivityMismatchDetected|使用者將文件上傳到受敏感度標籤保護的網站，且文件的敏感度標籤低於網站。 <br/><br/> 如果網站套用的敏感度標籤，其優先順序高於上傳到網站之文件所套用的敏感度標籤，則不會觸發此事件。 如需敏感度標籤優先順序的詳細資訊，請參閱[標籤優先順序 (順序很重要)](sensitivity-labels.md#label-priority-order-matters)。|
 |在檔案中偵測到惡意程式碼|FileMalwareDetected|SharePoint 防毒引擎在檔案中偵測到惡意程式碼。|
 |已捨棄檔案簽出|FileCheckOutDiscarded|使用者捨棄 (或復原) 已簽出的檔案。這表示會捨棄使用者在簽出時對檔案所做的任何變更，而且不會儲存至文件庫中的文件版本。|
 |下載的檔案|FileDownloaded|使用者從網站下載文件。|
@@ -350,6 +352,7 @@ ms.locfileid: "42091366"
 |用戶端發出的檢視訊號|ClientViewSignaled|使用者的用戶端 (例如網站或行動應用程式) 已發出訊號，指出使用者已檢視指示的頁面。 此活動通常會在頁面的 PagePrefetched 事件之後進行記錄。 <br/><br/>**請注意**：由於 ClientViewSignaled 事件會由用戶端發出訊號，而不是由伺服器，所以伺服器可能不會記錄事件，因此事件可能也不會出現在稽核記錄中。 稽核記錄中的資訊也可能不可靠。 不過，因為用來建立訊號的權杖會驗證使用者的身分識別，因此對應稽核記錄中所列的使用者身分識別會是正確的。 |
 |(無)|PagePrefetched|使用者的用戶端 (例如網站或行動應用程式) 已要求指定頁面在使用者瀏覽至此時，協助改善效能。 記錄此事件的目的是指出頁面內容已對使用者用戶端提供服務。 此事件並非明確指示使用者已瀏覽到此頁面。 <br/><br/> 當用戶端處理頁面內容時 (根據使用者的要求)，ClientViewSignaled 事件應該會隨即產生。 並非所有用戶端都支援指出預先擷取活動，因此某些預先擷取的活動可能會記錄為 PageViewed 事件。|
 ||||
+
 
 ### <a name="folder-activities"></a>資料夾活動
 
@@ -822,6 +825,18 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 |已提交回應|SubmitResponse|使用者提交表單的回應。 <br><br>屬性 IsInternalForm：如果回應者與表單擁有者位於同一組織中，則會顯示布林值。|
 ||||
 
+### <a name="sensitivity-label-activities"></a>敏感度標籤活動 
+
+下表列出 SharePoint Online 和 Teams 網站套用標籤活動所產生的事件。
+
+|**易記名稱**|**作業**|**描述**|
+|:-----|:-----|:-----|
+|已將敏感度標籤套用到網站|SensitivityLabelApplied|已將敏感度標籤套用到 SharePoint 或 Teams 網站。|
+|已將敏感度標籤從網站移除|SensitivityLabelRemoved|已將敏感度標籤從 SharePoint 或 Teams 網站移除。|
+|已將敏感度標籤套用到檔案|FileSensitivityLabelApplied|已使用 Office 網頁版將敏感度標籤套用到文件。|
+|已變更套用到檔案的敏感度標籤|FileSensitivityLabelChanged|已使用 Office 網頁版將不同的敏感度標籤套用到文件。|
+|已將敏感度標籤從檔案移除|FileSensitivityLabelRemoved|已使用 Office 網頁版將敏感度標籤從文件移除。|
+
 ### <a name="exchange-admin-audit-log"></a>Exchange 系統管理員稽核記錄
 
 Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) 會在系統管理員 (或獲派管理權限的使用者) 在您 Exchange Online 組織中進行變更時，將事件記錄在 Office 365 稽核記錄中。 使用 Exchange 系統管理員中心或執行 Exchange Online PowerShell 中的 Cmdlet 所做的變更會記錄在 Exchange 系統管理稽核記錄中。 以動詞 **Get-**、**Search-** 或 **Test-** 開頭的 Cmdlet 不會記錄在 Office 365 稽核記錄中。 如需有關 Exchange 系統管理員稽核記錄的詳細資訊，請參閱[系統管理員稽核記錄功能](https://go.microsoft.com/fwlink/p/?LinkID=619225)。
@@ -848,6 +863,7 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
 
    請記住，相同的 Exchange 系統管理員活動會同時記錄在 Exchange 系統管理員稽核記錄和 Office 365 稽核記錄中。
+
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
