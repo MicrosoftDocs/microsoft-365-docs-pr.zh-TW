@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 87bb8faa13f34fbe299b6de82bdd9099eaaff5aa
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 98b669a216b5c3a875cb1a42fd0cc97fb6112f1b
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851850"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222105"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>澳洲政府資訊安全性註冊評估者計畫 （次）
 
@@ -86,9 +86,9 @@ Microsoft 服務次評估有助於提供 Microsoft 具有適當及有效的安�
 - [誰提供次訓練？](https://acsc.gov.au/infosec/irap/training.htm)
 - [合規性和不符合需求資訊](https://acsc.gov.au/infosec/irap/compliance.htm)
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數 」 來評估您的風險
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
 
-[Microsoft 合規性分數](compliance-score.md)是在[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)中以協助您了解貴組織的合規性狀態，並採取動作，以協助降低風險的預覽功能。 [設定合規性分數](compliance-score-setup.md)之後, 使用預先設定的[次範本](https://go.microsoft.com/fwlink/?linkid=2117913)可協助組織符合此法規的需求。
+[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 後[設定合規性分數](compliance-score-setup.md)，選取預先設定的[次範本](https://go.microsoft.com/fwlink/?linkid=2117913)從**範本**下拉式] 功能表中，以協助組織符合此法規的需求。
 
 ## <a name="resources"></a>資源
 

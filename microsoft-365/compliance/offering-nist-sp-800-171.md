@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a08932d4f16a17b35fef11cdcd8243c96060a4b5
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: e90d5e47c6aa5ac6c2813f150e8136b93214fa3d
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851780"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42221995"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800-171
 
@@ -49,11 +49,11 @@ NIST SP 800-171 需求是 NIST SP 800-53、 FedRAMP 使用標準的子集。 附
 - Intune
 - [Office 365 美國政府社群雲端 (GCC)、 Office 365 GCC 高和 DoD](https://aka.ms/o365-compliance-framework)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 - [Azure 政府版 Attestation 的合規性 NIST SP 800-171](https://aka.ms/Azure-NIST-800-171)
 
-## <a name="how-to-implement"></a>實作方式
+## <a name="how-to-implement"></a>實作方法
 
 - [NIST SP 800-171 藍圖](https://aka.ms/NIST-800-171-Blueprint)： 取得實作與 NIST SP 800-171 遵循 Azure 中的工作負載的支援。
 
@@ -63,9 +63,9 @@ NIST SP 800-171 需求是 NIST SP 800-53、 FedRAMP 使用標準的子集。 附
 
 是。 Microsoft 客戶可以使用從獨立第三方評估組織 (3PAO) 報告中所述的稽核的控制項根據 FedRAMP 標準自己 FedRAMP 和 NIST 風險分析和限定性條件努力的一部分。 這些報告足以 Microsoft 已實作其範圍內的雲端服務中的控制項的有效性。 客戶負責確保，其 CUI 工作負載遵守 NIST SP 800-171 指導方針。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數 」 來評估您的風險
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
 
-[Microsoft 合規性分數](compliance-score.md)是在[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)中以協助您了解貴組織的合規性狀態，並採取動作，以協助降低風險的預覽功能。 [設定合規性分數](compliance-score-setup.md)之後, 使用預先設定的[NIST 800-171 範本](https://go.microsoft.com/fwlink/?linkid=2117526)可協助組織符合此法規的需求。
+[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 後[設定合規性分數](compliance-score-setup.md)，選取預先設定的[NIST 800-171 範本從**範本**下拉式] 功能表中，以協助組織符合此法規的需求。](https://go.microsoft.com/fwlink/?linkid=2117526)
 
 ## <a name="resources"></a>資源
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c77793d7676e836e7b445bd9b638a835bb7051ff
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 6dcdfd7ec2230de3eec7ccc0db08f7f4a637263d
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851820"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222066"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>聯邦金融機構檢查委員會 (FFIEC)
 
@@ -47,7 +47,7 @@ Accelerate 金融服務部署：[下載 Azure 安全性與合規性 FFIEC 金融
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 雲端服務，以獨立服務形式提供或包含在 Office 365 品牌方案或套件中
+- Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
@@ -59,9 +59,9 @@ Azure 與 Office 365 SOC 證明報表。
 
 若要協助您符合這些義務，Microsoft 會提供相關我們的合規性 SOC 標準上面所述的特定資訊。 不過，最後，它會是您自行以判斷與特定的法律和法規機構適用是否符合我們的服務。 FFIEC 也建議的 「 稽核報告或評論的使用者不應該依賴察覺若要確認 TSP 的內部控制環境報告中所包含的資訊。 他們應該使用其他驗證及監視程序所述更完整 FFIEC IT 檢查手冊[外包技術手冊](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx)。 」
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數 」 來評估您的風險
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
 
-[Microsoft 合規性分數](compliance-score.md)是在[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)中以協助您了解貴組織的合規性狀態，並採取動作，以協助降低風險的預覽功能。 [設定合規性分數](compliance-score-setup.md)之後, 使用預先設定的[FFIEC Office 365 範本](https://go.microsoft.com/fwlink/?linkid=2117912)和[FFIEC Intune 範本](https://go.microsoft.com/fwlink/?linkid=2118101)可協助組織符合此法規的需求。
+[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 後[設定合規性分數](compliance-score-setup.md)，選取預先設定的[FFIEC Office 365 範本](https://go.microsoft.com/fwlink/?linkid=2117912)和[FFIEC Intune 範本](https://go.microsoft.com/fwlink/?linkid=2118101)從**範本**下拉式] 功能表中，以協助組織符合此法規的需求。
 
 ## <a name="resources"></a>資源
 

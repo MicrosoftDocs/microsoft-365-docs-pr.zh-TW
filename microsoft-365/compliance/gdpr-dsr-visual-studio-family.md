@@ -18,12 +18,12 @@ ms.collection:
 ms.workload:
 - multiple
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 08c6bfbcfc571103939d0b824d5fda0fcb789bb6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 159e7a69f0714b93913c36d745641485d7c80798
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596480"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225506"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Visual Studio 系列資料主體要求
 
@@ -47,7 +47,7 @@ ms.locfileid: "41596480"
 
 Microsoft 身為 GDPR 底下的資料處理者，會向我們要提供體驗的使用者收集所需資料，藉以改善 Visual Studio 和 Visual Studio for Mac，以及 Microsoft 對此上述兩種軟體和對 Visual Studio Code 的擴充功能。資料有兩種類別：客戶資料以及系統所產生的記錄。客戶資料包含這些產品執行其所提供服務所需的使用者識別交易和互動資料。例如，若要為使用者提供個人化體驗 (例如漫遊設定)，我們必須收集使用者帳戶資訊和設定資料。系統所產生的記錄是用來協助您找出問題並針對問題進行疑難排解的使用狀況或診斷資料，從而改善我們的產品和服務，並也可能包含關於使用者的識別資訊 (例如使用者名稱)。系統所產生記錄的保留時間不會超過 18 個月。例如，系統所產生的記錄會針對每一天的產品使用情形進行彙總，並且會包含使用日期、所使用的產品 (例如，"Visual Studio 2017")、您所採取的動作 (例如，"vs/core/packagecostsummary/solutionload")，以及採取動作的次數，如本範例中所示：
 
-```
+```Log
 {Time":"2/23/2018 12:00:00 AM","AppName":"Visual Studio 2017","Action":"vs/core/packagecostsummary/solutionload","Target":"1 times",
 "DevicePlatform":"Windows 10 Enterprise","IP":null,"InputMethod":null,
 "SearchTerm":null,"SearchResult":null}

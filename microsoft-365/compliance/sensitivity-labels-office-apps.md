@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解使用者如何使用桌面、 Office 應用程式的行動電話，以及網頁的 Office 應用程式的 Office 應用程式中使用敏感度標籤運作。 了解哪些應用程式支援敏感度標籤。
-ms.openlocfilehash: 596580a413778e54a3aaeb04bae8f5f164a96c14
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.openlocfilehash: 5ca3d7b68f931b7596bc61a587d5e4199aa5f70f
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101233"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225501"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式使用敏感度標籤
 
@@ -123,10 +123,15 @@ ms.locfileid: "42101233"
 
 使用者可以將只有一個標籤套用一次每個文件或電子郵件。
 
-當您設定標籤具有附件的電子郵件訊息時，附件不繼承標籤：
+當您設定標籤具有附件的電子郵件訊息時，附件不繼承的標籤有一個例外狀況：
 
-- 如果附件都有標籤，它們會保留該分別套用的標籤。
-- 如果附件沒有標籤，附件會維持不具有標籤。 但是，如果電子郵件的標籤套用保護，則該保護將套用至 Office 附件。
+- 附件是 Office 文件有不會套用加密，標籤並套用至電子郵件訊息的標籤套用加密。 在此情況下，郵件的 Office 文件會繼承其加密設定的電子郵件的標籤。
+
+否則： 
+
+- 如果附件都有標籤，它們會保留其原本套用的標籤。
+- 如果附件加密不標籤] 中，加密仍會保留，但它們不標示。
+- 如果附件沒有標籤，其值維持未標示。
 
 ## <a name="sensitivity-label-compatibility"></a>敏感度標籤相容性
 

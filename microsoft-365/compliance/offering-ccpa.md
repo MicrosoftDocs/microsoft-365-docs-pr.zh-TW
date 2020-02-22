@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4c761a62e901be065a588f1e4141b731831c4752
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: de9fcad3b1d54247114974ce4432068c136fdb2a
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851840"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222025"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>加州消費者隱私法 (CCPA)
 
@@ -93,9 +93,9 @@ CCPA 需要管制的企業收集、 傳輸，以及銷售，而在其他方面�
 - CCPA 針對未滿 13 歲的兒童，採用符合兒童線上隱私權保護法 (The Children's Online Privacy Protection Act，COPPA) 的家長同意義務。
 - 如間 13 和 16 年舊的子系，CCPA 會有所沉重若要取得的子選擇加入的同意聲明。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數 」 來評估您的風險
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
 
-[Microsoft 合規性分數](compliance-score.md)是在[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)中以協助您了解貴組織的合規性狀態，並採取動作，以協助降低風險的預覽功能。 [設定合規性分數](compliance-score-setup.md)之後, 使用預先設定的[CCPA 範本](https://go.microsoft.com/fwlink/?linkid=2118004)可協助組織符合此法規的需求。
+[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 後[設定合規性分數](compliance-score-setup.md)，選取預先設定的[CCPA 範本](https://go.microsoft.com/fwlink/?linkid=2118004)從**範本**下拉式] 功能表中，以協助組織符合此法規的需求。
 
 ## <a name="resources"></a>資源
 

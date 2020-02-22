@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 71be1e70a04881b937ee1f75d5fda6f03efdbd5f
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: fb667cdf13ed8ed6777f454b8fa3e21342f90272
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851860"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222085"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>聯邦風險與授權管理計畫 (FedRAMP)
 
@@ -72,13 +72,13 @@ CSP 一旦授與 P ATO 時，仍然需要授權 — ATO — 從可搭配任何�
 - Intune
 - [Office 365 和 Office 365 美國政府](https://aka.ms/o365-compliance-framework)
 - Office 365 美國政府國防版
-- Power BI 雲端服務，以獨立服務形式提供或包含在 Office 365 品牌方案或套件中
+- Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
 - Microsoft Defender ATP
 
 > [!NOTE]
 > 使用 Azure 政府版中的 Azure Active Directory 需要使用的部署在 Azure 的公用雲端的 Azure 政府版以外的元件。
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 Microsoft，才能維護其 P ATO 和 ATOs recertify 其雲端服務每年。 若要這麼做，Microsoft 必須監視及持續，評估其安全性控制和示範，其 services 的安全性，仍會保留在合規性。
 
@@ -109,9 +109,9 @@ FISMA 是需要美國聯邦機構和其合作夥伴，視需要取得資訊系�
 
 是。 您可以在任何程式或需要從聯邦政府機構 ATO 的計劃，做為基礎使用 Microsoft 雲端服務的認證。 不過，您需要達成您自己的授權外部這些服務的元件。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數 」 來評估您的風險
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
 
-[Microsoft 合規性分數](compliance-score.md)是在[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)中以協助您了解貴組織的合規性狀態，並採取動作，以協助降低風險的預覽功能。 [設定合規性分數](compliance-score-setup.md)之後, 使用預先設定的[FedRAMP 範本](https://go.microsoft.com/fwlink/?linkid=2118102)可協助組織符合此法規的需求。
+[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 後[設定合規性分數](compliance-score-setup.md)，選取預先設定的[FedRAMP 範本](https://go.microsoft.com/fwlink/?linkid=2118102)從**範本**下拉式] 功能表中，以協助組織符合此法規的需求。
 
 ## <a name="resources"></a>資源
 

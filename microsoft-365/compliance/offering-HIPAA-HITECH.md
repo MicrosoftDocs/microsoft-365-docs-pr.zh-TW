@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d6f6dc2cc8cb9a36816fa843fcea969d65c94dac
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 52752c31ae52fa75a3a50dbd6a4aa27605f6d921
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851890"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228509"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保險流通與責任 (HIPAA) & HITECH 動作
 
@@ -49,7 +49,7 @@ HIPAA 法規要求涵蓋的實體與他們的公司建立關聯 — Microsoft �
 
 Microsoft 企業版雲端服務也會涵蓋 FedRAMP 評估。 Microsoft Azure 和 Microsoft Azure Government 操作接收暫時性的授權從 FedRAMP 聯合授權棋盤;Microsoft Dynamics 365 美國政府收到公家機構操作從美國部門的住宅 and 都市開發，像 Microsoft Office 365 US Government 從美國部門的健康狀況與 Human 服務。
 
-了解 HIPAA 和 HITECH 在 Microsoft 雲端的優勢：[讀取 Zwanger — Pesiri Radiology 客戶本文](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network)
+若要了解 Microsoft Cloud 如何協助客戶支援 HIPAA 和 HITECH 需求，請造訪[Microsoft 客戶的故事](https://customers.microsoft.com)。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -102,9 +102,9 @@ Microsoft 不能修改 HIPAA BAA，因為 Microsoft 服務都是一致的所有�
 - [若要設計安全狀況解決方案使用 Microsoft Azure 的實用指南](https://aka.ms/azureindustrysecurity)可協助您更加了解花費成功採用的雲端服務以安全方式。
 - [定址 HIPAA 安全性和隱私規定 Microsoft Cloud 中的](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf)提供規定需求的簡要概觀。 它也提供詳細的分析的 Microsoft 雲端服務如何建置與方法會對應至這些需求，以及如何建立可供合規性的解決方案的指引。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數 」 來評估您的風險
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
 
-[Microsoft 合規性分數](compliance-score.md)是在[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)中以協助您了解貴組織的合規性狀態，並採取動作，以協助降低風險的預覽功能。 [設定合規性分數](compliance-score-setup.md)之後, 使用預先設定的[HIPAA Office 365 範本](https://go.microsoft.com/fwlink/?linkid=2118005)和[HIPAA Intune 範本](https://go.microsoft.com/fwlink/?linkid=2118006)可協助組織符合此法規的需求。
+[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 後[設定合規性分數](compliance-score-setup.md)，選取預先設定的[HIPAA Office 365 範本](https://go.microsoft.com/fwlink/?linkid=2118005)和[HIPAA Intune 範本](https://go.microsoft.com/fwlink/?linkid=2118006)從**範本**下拉式] 功能表中，以協助組織符合此法規的需求。
 
 ## <a name="resources"></a>資源
 
