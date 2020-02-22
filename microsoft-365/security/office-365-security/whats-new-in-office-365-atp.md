@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 01/28/2020
-ms.openlocfilehash: acb6dbf69033b97f2899738a5ca17182ac9942c6
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.date: 02/21/2020
+ms.openlocfilehash: 09cf8e74cb52d75d454fec371ee965978851b5e5
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106846"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "42230066"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新功能
 
@@ -45,6 +45,8 @@ ms.locfileid: "42106846"
     - 細微時間篩選 （一天、 hour、 半） 
 
 - [**事件**] 小工具現在是 [**重要訊息中心**] 小工具。 (若要檢視您的安全性 widget，在 Office 365 安全性 & 合規性中心，移至 [**威脅管理** > **檢閱**。)
+
+- [在 Office 365 中的安全文件](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **（預覽）**
 
 ## <a name="december-2019"></a>2019 年 12 月
 
@@ -80,7 +82,7 @@ ms.locfileid: "42106846"
 
 您知道 Office 365 ATP 可用於兩個計劃嗎？ [解更多關於每個方案所包含的內容](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 

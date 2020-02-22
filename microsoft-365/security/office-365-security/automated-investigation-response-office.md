@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 在 Office 365 進階威脅防護計劃 2 中，取得自動化調查及回應能力的概觀。
-ms.openlocfilehash: 8f781687047f39d4d038e293e50c9caad83d051a
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 436d70934e32f8609d35532188ac71cbd590c345
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179244"
+ms.locfileid: "42228579"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>自動化的調查和 Office 365 中的回應 （空調）
 
@@ -132,28 +132,6 @@ ms.locfileid: "42179244"
 ![在檔案總管中開始進行調查，惡意程式碼](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 類似於 playbooks 觸發警示的通知，會觸發從瀏覽器中檢視的自動調查包含根目錄和調查]，以找出並相互關聯的威脅，步驟及建議的動作來減輕這些威脅。
-
-## <a name="how-to-get-air"></a>如何取得航空
-
-Office 365 AIR 現在包含在以下訂閱中：
-
-- Microsoft 365 E5
-- Office 365 E5
-- Microsoft 威脅防護
-- Office 365 進階威脅防護方案 2
-
-如果您不需要任何這些訂閱，[開始免費試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US)。
-
-若要深入了解可用的功能，請造訪[進階威脅防護 (ATP) 計劃的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
-
-## <a name="required-permissions-to-use-air-capabilities"></a>若要使用空調功能的必要權限
-
-授與權限是透過特定角色，例如，如下表所述： 
-
-|工作 |所需的角色 |
-|--|--|
-|若要設定空調功能 |下列其中一個下列角色： <br/>- **全域系統管理員**<br/>- **安全性系統管理員** <br/>可以指派這些角色，在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)中或在[Office 365 安全性 & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。 |
-|核准或拒絕建議的動作|下列其中一個指派[Office 365 安全性 & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)或[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)中的下列角色）：<br/>- **全域系統管理員** <br/>- **安全性系統管理員**<br/>- **安全性讀取者** <br/>--- 且 ---<br/>- **搜尋及清除**（此角色指派只能在[Office 365 安全性 & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。 您可能必須建立新角色群組，並將 「 搜尋及清除角色新增至該新的角色群組。）
 
 ## <a name="next-steps"></a>後續步驟
 
