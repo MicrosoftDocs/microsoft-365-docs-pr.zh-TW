@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 417496d5c72c03207f61b4652970b103663e615b
-ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
+ms.openlocfilehash: fe91f43d088242336d7e77e5422093979d34193b
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219184"
+ms.locfileid: "42228589"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -725,7 +725,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 |已將 Bot 新增到小組|BotAddedToTeam|使用者在小組中新增機器人。|
 |新增頻道|ChannelAdded|使用者在小組中新增頻道。|
 |已新增連接器|ConnectorAdded|使用者在頻道中新增連接器。|
-|已新增成員到小組|MemberAdded|小組擁有者在小組中新增成員。|
+|已新增成員|MemberAdded|小組擁有者將成員新增至小組或群組聊天。|
 |已新增索引標籤|TabAdded|使用者在頻道中新增索引標籤。|
 |已變更的頻道設定|ChannelSettingChanged|小組成員執行下列活動時會記錄 ChannelSettingChanged 作業。 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>• 變更小組頻道名稱 (**頻道名稱**)。 <br/><br/>• 變更小組頻道描述 (**頻道描述**)。|
 |已變更的組織設定|TeamsTenantSettingChanged|當全域系統管理員 (使用 Microsoft 365 系統管理員中心) 執行下列活動時，系統會將 TeamsTenantSettingChanged 作業記錄下來；請注意，這些活動會影響整個組織的 Microsoft Teams 設定。 如需詳細資訊，請參閱 [Microsoft Teams 的系統管理員設定](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2)。 <br/> 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>• 啟用或停用組織的 Microsoft Teams (**Microsoft Teams**)。 <br/><br/>• 啟用或停用組織中 Microsoft Teams 與商務用 Skype 之間的互通性 (**商務用 Skype 互通性**)。 <br/><br/>• 啟用或停用 Microsoft Teams 用戶端的組織圖檢視 (組織圖檢視 **)。<br/><br/>• 啟用或停用小組成員排程私人會議的能力 (** 私人會議排程 **)。<br/><br/>• 啟用或停用小組成員排程頻道會議的能力 (頻道會議排程**)。 <br/><br/>• 啟用或停用小組會議中的視訊通話 (Skype 視訊會議 **)。<br/><br/>• 啟用或停用組織中 Microsoft Teams 會議中的螢幕共用 (** Skype 會議的螢幕共用 **)。<br/><br/>• 啟用或停用將動畫影像 (稱為 Giphy) 新增至小組交談的能力 (動畫影像**)。 <br/><br/>• 變更組織的內容評等設定 (**評等設定**)。 內容分級會限制交談中可以顯示的動畫影像類型。 <br/><br/>• 啟用或停用小組成員將自訂影像 (稱為自訂 Meme) 從網際網路新增至小組交談的能力 (來自網際網路的自訂影像 **)。<br/><br/>• 啟用或停用小組成員將可編輯影像 (稱為 Sticker) 新增至小組交談的能力 (** 可編輯的影像 **)。<br/><br/>• 啟用或停用小組成員可在 Microsoft Teams 聊天和頻道中使用 Bot 的能力 (整個組織中的 Bot**)。 <br/><br/>• 啟用 Microsoft Teams 的特定 Bot。 這不包括 T-Bot，也就是當組織啟用 Bot 功能時可用的 Teams 說明 Bot (**個人 Bot**)。 <br/><br/>• 啟用或停用小組成員新增擴充功能或分頁的能力 (**擴充功能或分頁**)。 <br/><br/>• 啟用或停用 Microsoft Teams 專屬機器人的側載功能 (**Bot 側載**)。 <br/><br/>• 啟用或停用使用者傳送電子郵件至 Microsoft Teams 頻道的能力 (**頻道電子郵件**)。|
@@ -736,7 +736,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 |已刪除小組|TeamDeleted|小組擁有者刪除小組。|
 |已將機器人從小組中移除|BotRemovedFromTeam|使用者將機器人從小組中移除。|
 |已移除連接器|ConnectorRemoved|使用者將連接器從頻道中移除。|
-|已將成員從小組中移除|MemberRemoved|已將小組擁有者從小組中移除。|
+|已移除成員|MemberRemoved|小組擁有者將成員從小組或群組聊天中移除。|
 |已移除索引標籤|TabRemoved|使用者將索引標籤從頻道中移除。|
 |已更新連接器|ConnectorUpdated|使用者已修改頻道中的連接器。|
 |已更新索引標籤|TabUpdated|使用者已修改頻道中的索引標籤。|
@@ -836,6 +836,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 |已將敏感度標籤套用到檔案|FileSensitivityLabelApplied|已使用 Office 網頁版將敏感度標籤套用到文件。|
 |已變更套用到檔案的敏感度標籤|FileSensitivityLabelChanged|已使用 Office 網頁版將不同的敏感度標籤套用到文件。|
 |已將敏感度標籤從檔案移除|FileSensitivityLabelRemoved|已使用 Office 網頁版將敏感度標籤從文件移除。|
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 系統管理員稽核記錄
 

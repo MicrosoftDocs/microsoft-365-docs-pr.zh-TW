@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: fee4e0472a6d9b08bdab4c5340097d4222aac1d9
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+ms.openlocfilehash: 1eeed6c1dfef1765089a5998200c93be595a719a
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722014"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225521"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Dynamics 365 資料主體要求
 
@@ -82,10 +82,9 @@ Dynamics 365 是種以軟體為服務 (SaaS) 的形式提供多重資料處理�
 
 Microsoft 提供有助於回應資料主體權利要求的功能，並可用以存取客戶資料。不過，您有責任確保能適當找出並分類個人資料。
 
-***Dynamics 365 for Customer Engagement*** 提供多種方法 (例如：進階尋找搜尋、相關性搜尋和搜尋記錄)，讓您搜尋記錄中的個人資料。 這些功能都可讓您識別 (找出) 個人資料。
+***Dynamics 365 for Customer Engagement*** 提供多種方法 (例如：進階尋找搜尋和搜尋記錄)，讓您搜尋記錄中的個人資料。 這些功能都可讓您識別 (找出) 個人資料。
 
 - [進階尋找搜尋](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)
-- [相關性搜尋](https://docs.microsoft.com/dynamics365/customer-engagement/basics/relevance-search-results)，可使用儀表板來儲存供日後參考
 - 可跨多種記錄類型[搜尋記錄](https://docs.microsoft.com/dynamics365/customer-engagement/basics/search-records)
 
 在 Dynamics 365 for Marketing 中，您還可以：

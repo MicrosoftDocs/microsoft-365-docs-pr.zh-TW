@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5cd89e0f31d650e85de20b40e3870de0ef8c7cc3
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: e6d28d3095f0a08aa7c2bf66df3b32b2dc7bec86
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851830"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222015"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 隱私權資訊管理系統 (PIMS)
 
@@ -74,7 +74,7 @@ ISO/IEC 27001 和 PIMS 的要點：
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
 
-[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 [設定合規性分數](compliance-score-setup.md)之後，請使用預先設定 [ISO 27701 範本](https://go.microsoft.com/fwlink/?linkid=2117915)，協助您的組織符合此法規的規定。
+[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 [設定合規性分數](compliance-score-setup.md)之後，從 [範本]**** 下拉式功能表中選擇預先設定的 [ISO 27701 範本][](https://go.microsoft.com/fwlink/?linkid=2117915)，以幫助您的組織滿足此法規的要求。
 
 ## <a name="resources"></a>資源
 

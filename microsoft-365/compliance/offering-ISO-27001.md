@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ef99b36737627a9ea457e7d4235b42241f34248b
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 5bb3820222258a5b0b4b28c7476541b5d338f4b6
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851810"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222095"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 資訊安全性管理標準
 
@@ -144,7 +144,7 @@ ISO/IEC 27001 在國際上的接受度和適用性，是取得此標準認證為
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
 
-[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 [設定合規性分數](compliance-score-setup.md)之後，請使用預先設定 [ISO 27001 範本](https://go.microsoft.com/fwlink/?linkid=2117914)，協助您的組織符合此法規的規定。
+[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 [設定合規性分數](compliance-score-setup.md)之後，從 [範本]**** 下拉式功能表中選擇預先設定的 [ISO 27001 範本][](https://go.microsoft.com/fwlink/?linkid=2117914)，以幫助您的組織滿足此法規的要求。
 
 ## <a name="resources"></a>資源
 
