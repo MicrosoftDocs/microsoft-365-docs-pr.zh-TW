@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/04/2019
+ms.date: 02/24/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 進階威脅防護包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
-ms.openlocfilehash: 9d7b2561c40e1322b7f15e72c48755268c119f24
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.openlocfilehash: 712fdf6935fa69bfb2079858d6384eee270776e6
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106836"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261030"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
@@ -39,7 +39,7 @@ Office 365 進階威脅防護 (ATP) 可保護組織防範由電子郵件訊息�
 
 - **[威脅調查與回應功能](#use-threat-investigation-and-response-capabilities)**：使用先進的工具來調查、了解、模擬以及防止潛在威脅。
 
-- **[自動化調查及回應功能](#save-time-with-automated-investigation-and-response)**：節省調查和減輕威脅的時間和精力。
+- **[自動化調查及回應功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)**：節省調查和減輕威脅的時間和精力。
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 方案 1 與方案 2
 
@@ -47,7 +47,7 @@ Office 365 進階威脅防護 (ATP) 可保護組織防範由電子郵件訊息�
 
 |Office 365 ATP 方案 1 |Office 365 ATP 方案 2|
 |---------|---------|
-|設定、保護和偵測功能：<br/>- [安全附件](atp-safe-attachments.md)<br/>- [安全連結](atp-safe-links.md)<br/>- [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)<br/>- [進階防網路釣魚保護](atp-anti-phishing.md)<br/>- [即時偵測](threat-explorer.md)     |Office 365 ATP 方案 1 功能<br/>--- 以及 ---<br/>自動化、調查、補救和教育功能：<br/>- [威脅追蹤工具](threat-trackers.md)<br/>- [威脅總管](threat-explorer.md)<br/>- [自動化調查及回應](automated-investigation-response-office.md)<br/>- [攻擊模擬器](attack-simulator.md)|
+|設定、保護和偵測功能：<br/>- [安全附件](atp-safe-attachments.md)<br/>- [安全連結](atp-safe-links.md)<br/>- [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)<br/>- [進階防網路釣魚保護](atp-anti-phishing.md)<br/>- [即時偵測](threat-explorer.md)     |Office 365 ATP 方案 1 功能<br/>--- 以及 ---<br/>自動化、調查、補救和教育功能：<br/>- [威脅追蹤工具](threat-trackers.md)<br/>- [威脅總管](threat-explorer.md)<br/>- [自動化調查及回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>- [攻擊模擬器](attack-simulator.md)|
 
 - Office 365 ATP 方案 2 包含在 Office 365 E5、Office 365 A5 和 Microsoft 365 E5 中。
 
@@ -56,9 +56,6 @@ Office 365 進階威脅防護 (ATP) 可保護組織防範由電子郵件訊息�
 - Office 365 ATP 方案 1 和 Office 365 ATP 方案 2 各以某些訂閱附加元件的形式提供使用。 若要深入了解，請參閱 [ATP 方案中功能的可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 - 如果您目前的訂閱未包含 Office 365 ATP，請[與銷售人員連絡以開始試用](https://go.microsoft.com/fwlink/p/?LinkId=518644)，並了解 ATP 如何能幫助您的組織。
-
-> [!TIP]
-> 您有 Microsoft 365 E5 或 Microsoft 365 E3 以及身分識別與威脅防護產品？ 考慮嘗試 [Microsoft 威脅防護](../mtp/microsoft-threat-protection.md)。
 
 ## <a name="configure-atp-policies"></a>設定 ATP 原則
 
@@ -105,7 +102,7 @@ Office 365 ATP 方案 2 中包含業界最佳[威脅調查及回應工具](offic
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>利用自動調查及回應節省時間
 
-(**新增！**) 調查潛在的網路攻擊時，時間是關鍵。 愈快找出並減輕威脅，您組織的處境會愈好。 [自動化調查和回應](automated-investigation-response-office.md) (AIR) 功能包含一組可以自動啟動 (例如當警示觸發時) 或手動啟動 (例如從檔案總管中的檢視) 的安全性劇本。 AIR 可以在緩和威脅方面有效也有效率地節省您安全性作業小組的時間和精力。 若要深入了解，請參閱 [Office 365 中的AIR](automated-investigation-response-office.md)。
+(**新增！**) 調查潛在的網路攻擊時，時間是關鍵。 愈快找出並減輕威脅，您組織的處境會愈好。 [自動化調查和回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR) 功能包含一組可以自動啟動 (例如當警示觸發時) 或手動啟動 (例如從檔案總管中的檢視) 的安全性劇本。 AIR 可以在緩和威脅方面有效也有效率地節省您安全性作業小組的時間和精力。 若要深入了解，請參閱 [Office 365 中的AIR](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。
 
 ## <a name="permissions-required-to-use-atp-features"></a>使用 ATP 功能所需的權限
 
