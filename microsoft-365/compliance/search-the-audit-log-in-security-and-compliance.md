@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: fe91f43d088242336d7e77e5422093979d34193b
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 380c424acbcb609944ebfc3ea775ca31ac02bfe8
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228589"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266739"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -332,7 +332,7 @@ ms.locfileid: "42228589"
 |已刪除資源回收筒中的檔案|FileDeletedFirstStageRecycleBin|使用者從網站的資源回收筒中刪除檔案。|
 |已刪除第二階段資源回收筒中的檔案|FileDeletedSecondStageRecycleBin|使用者從網站的第二階段資源回收筒中刪除檔案。|
 |已刪除記錄合規性原則標籤|ComplianceRecordDelete|已歸類為記錄的文件已刪除。 將內容歸類為記錄的保留標籤套用至文件時，文件就會視為記錄。|
-|偵測到的文件敏感度不相符|DocumentSensitivityMismatchDetected|使用者將文件上傳到受敏感度標籤保護的網站，且文件的敏感度標籤低於網站。 <br/><br/> 如果網站套用的敏感度標籤，其優先順序高於上傳到網站之文件所套用的敏感度標籤，則不會觸發此事件。 如需敏感度標籤優先順序的詳細資訊，請參閱[標籤優先順序 (順序很重要)](sensitivity-labels.md#label-priority-order-matters)。|
+|偵測到的文件敏感度不相符|DocumentSensitivityMismatchDetected|使用者將文件上傳到受敏感度標籤保護的網站，且文件的敏感度標籤優先於網站的敏感度標籤。 例如，套用「機密」標籤的文件上傳到套用「一般」標籤的網站。 <br/><br/> 如果文件套用的敏感度標籤，其優先順序低於網站所套用的敏感度標籤，則不會觸發此事件。 例如，套用「一般」標籤的文件上傳到標記為「機密」的網站。 如需敏感度標籤優先順序的詳細資訊，請參閱[標籤優先順序 (順序很重要)](sensitivity-labels.md#label-priority-order-matters)。|
 |在檔案中偵測到惡意程式碼|FileMalwareDetected|SharePoint 防毒引擎在檔案中偵測到惡意程式碼。|
 |已捨棄檔案簽出|FileCheckOutDiscarded|使用者捨棄 (或復原) 已簽出的檔案。這表示會捨棄使用者在簽出時對檔案所做的任何變更，而且不會儲存至文件庫中的文件版本。|
 |下載的檔案|FileDownloaded|使用者從網站下載文件。|
@@ -519,6 +519,7 @@ ms.locfileid: "42228589"
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
+|存取信箱項目|MailItemsAccessed|在信箱中讀取或存取郵件。 可以通過以下兩種方式之一觸發此事件的稽核記錄：當郵件客戶端 (例如 Outlook) 對郵件執行繫結作業時，或者當郵件通訊協定 (例如 Exchange ActiveSync 或 IMAP) 同步郵件文件夾中的項目時。 僅有 Office 365 或 Microsoft 365 E5 授權的使用者可記錄此事件。 在調查遭入侵的電子郵件帳戶時，分析此活動的稽核記錄相當實用。 如需詳細資訊，請參閱[進階稽核](advanced-audit.md#access-to-crucial-events-for-investigations)中的〈存取調查重要事件〉一節。 |
 |已新增代理人信箱權限|AddMailboxPermissions|系統管理員已將另一名人員其信箱的 FullAccess 信箱權限指派給某個使用者 (亦稱為「代理人」)。 FullAccess 權限可讓代理人開啟該名人員的信箱，以及讀取和管理信箱的內容。|
 |新增或移除具有行事曆資料夾代理人存取權的使用者|UpdateCalendarDelegation|已新增或移除作為另一個使用者信箱行事曆代理人的使用者。 行事曆代理可讓其他有相同組織權限的人來管理信箱擁有者的行事曆。|
 |已新增資料夾的權限|AddFolderPermissions|資料夾權限已新增。 資料夾權限可控制組織中的哪些使用者可以存取信箱中的資料夾，以及這些資料夾中的郵件。|
@@ -725,7 +726,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 |已將 Bot 新增到小組|BotAddedToTeam|使用者在小組中新增機器人。|
 |新增頻道|ChannelAdded|使用者在小組中新增頻道。|
 |已新增連接器|ConnectorAdded|使用者在頻道中新增連接器。|
-|已新增成員|MemberAdded|小組擁有者將成員新增至小組或群組聊天。|
+|已新增成員|MemberAdded|小組擁有者將成員新增至小組、頻道或群組聊天。|
 |已新增索引標籤|TabAdded|使用者在頻道中新增索引標籤。|
 |已變更的頻道設定|ChannelSettingChanged|小組成員執行下列活動時會記錄 ChannelSettingChanged 作業。 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>• 變更小組頻道名稱 (**頻道名稱**)。 <br/><br/>• 變更小組頻道描述 (**頻道描述**)。|
 |已變更的組織設定|TeamsTenantSettingChanged|當全域系統管理員 (使用 Microsoft 365 系統管理員中心) 執行下列活動時，系統會將 TeamsTenantSettingChanged 作業記錄下來；請注意，這些活動會影響整個組織的 Microsoft Teams 設定。 如需詳細資訊，請參閱 [Microsoft Teams 的系統管理員設定](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2)。 <br/> 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>• 啟用或停用組織的 Microsoft Teams (**Microsoft Teams**)。 <br/><br/>• 啟用或停用組織中 Microsoft Teams 與商務用 Skype 之間的互通性 (**商務用 Skype 互通性**)。 <br/><br/>• 啟用或停用 Microsoft Teams 用戶端的組織圖檢視 (組織圖檢視 **)。<br/><br/>• 啟用或停用小組成員排程私人會議的能力 (** 私人會議排程 **)。<br/><br/>• 啟用或停用小組成員排程頻道會議的能力 (頻道會議排程**)。 <br/><br/>• 啟用或停用小組會議中的視訊通話 (Skype 視訊會議 **)。<br/><br/>• 啟用或停用組織中 Microsoft Teams 會議中的螢幕共用 (** Skype 會議的螢幕共用 **)。<br/><br/>• 啟用或停用將動畫影像 (稱為 Giphy) 新增至小組交談的能力 (動畫影像**)。 <br/><br/>• 變更組織的內容評等設定 (**評等設定**)。 內容分級會限制交談中可以顯示的動畫影像類型。 <br/><br/>• 啟用或停用小組成員將自訂影像 (稱為自訂 Meme) 從網際網路新增至小組交談的能力 (來自網際網路的自訂影像 **)。<br/><br/>• 啟用或停用小組成員將可編輯影像 (稱為 Sticker) 新增至小組交談的能力 (** 可編輯的影像 **)。<br/><br/>• 啟用或停用小組成員可在 Microsoft Teams 聊天和頻道中使用 Bot 的能力 (整個組織中的 Bot**)。 <br/><br/>• 啟用 Microsoft Teams 的特定 Bot。 這不包括 T-Bot，也就是當組織啟用 Bot 功能時可用的 Teams 說明 Bot (**個人 Bot**)。 <br/><br/>• 啟用或停用小組成員新增擴充功能或分頁的能力 (**擴充功能或分頁**)。 <br/><br/>• 啟用或停用 Microsoft Teams 專屬機器人的側載功能 (**Bot 側載**)。 <br/><br/>• 啟用或停用使用者傳送電子郵件至 Microsoft Teams 頻道的能力 (**頻道電子郵件**)。|
@@ -736,7 +737,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 |已刪除小組|TeamDeleted|小組擁有者刪除小組。|
 |已將機器人從小組中移除|BotRemovedFromTeam|使用者將機器人從小組中移除。|
 |已移除連接器|ConnectorRemoved|使用者將連接器從頻道中移除。|
-|已移除成員|MemberRemoved|小組擁有者將成員從小組或群組聊天中移除。|
+|已移除成員|MemberRemoved|小組擁有者將成員從小組、頻道或群組聊天移除。|
 |已移除索引標籤|TabRemoved|使用者將索引標籤從頻道中移除。|
 |已更新連接器|ConnectorUpdated|使用者已修改頻道中的連接器。|
 |已更新索引標籤|TabUpdated|使用者已修改頻道中的索引標籤。|
