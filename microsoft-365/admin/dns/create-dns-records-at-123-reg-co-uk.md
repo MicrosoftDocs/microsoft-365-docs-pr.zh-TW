@@ -1,0 +1,217 @@
+---
+title: 在 123-reg.co.uk 建立 Office 365 的 DNS 記錄
+f1.keywords:
+- NOCSH
+ms.author: pebaum
+author: pebaum
+manager: mnirkhe
+audience: Admin
+ms.topic: get-started-article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_NonTOC
+- Adm_O365_Setup
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
+description: 了解如何驗證您的網域和設定 Office 365 的電子郵件、 商務用 Skype 線上商務和 123-reg.co.uk 其他服務的 DNS 記錄。
+ms.openlocfilehash: acbc0f1c8a7eb7dcbe5f274d0f2c8b2c403e7de0
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42239911"
+---
+# <a name="create-dns-records-at-123-regcouk-for-office-365"></a><span data-ttu-id="9e8d7-103">在 123-reg.co.uk 建立 Office 365 的 DNS 記錄</span><span class="sxs-lookup"><span data-stu-id="9e8d7-103">Create DNS records at 123-reg.co.uk for Office 365</span></span>
+
+ <span data-ttu-id="9e8d7-104">若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span> 
+  
+<span data-ttu-id="9e8d7-105">如果 123-reg.co.uk 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並設定電子郵件與商務用 Skype Online 等項目的 DNS 記錄。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-105">If 123-reg.co.uk is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.</span></span>
+  
+<span data-ttu-id="9e8d7-106">在 123-reg.co.uk 新增這些記錄之後，您的網域就會設定為搭配 Office 365 服務使用。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-106">After you add these records at 123-reg.co.uk, your domain will be set up to work with Office 365 services.</span></span>
+  
+<span data-ttu-id="9e8d7-107">若要了解使用 Office 365 網站的虛擬主機和 DNS，請參閱[搭配 Office 365 使用公用網站](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-107">To learn about webhosting and DNS for websites with Office 365, see [Use a public website with Office 365](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).</span></span>
+  
+> [!NOTE]
+> <span data-ttu-id="9e8d7-108">Typically it takes about 15 minutes for DNS changes to take effect.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-108">Typically it takes about 15 minutes for DNS changes to take effect.</span></span> <span data-ttu-id="9e8d7-109">However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-109">However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.</span></span> <span data-ttu-id="9e8d7-110">如果您遇到與郵件流程或其他問題新增 DNS 記錄之後，請參閱[尋找並修正新增網域或 Office 365 中的 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-110">If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records in Office 365](../get-help-with-domains/find-and-fix-issues.md).</span></span> 
+  
+## <a name="add-a-txt-record-for-verification"></a><span data-ttu-id="9e8d7-111">新增 TXT 記錄以供驗證</span><span class="sxs-lookup"><span data-stu-id="9e8d7-111">Add a TXT record for verification</span></span>
+<span data-ttu-id="9e8d7-112"><a name="BKMK_verify"> </a></span><span class="sxs-lookup"><span data-stu-id="9e8d7-112"><a name="BKMK_verify"> </a></span></span>
+
+<span data-ttu-id="9e8d7-p102">在您將自己的網域用於 Office 365 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Office 365 就能確信您擁有該網域。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-p102">Before you use your domain with Office 365, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Office 365 that you own the domain.</span></span>
+  
+> [!NOTE]
+> <span data-ttu-id="9e8d7-p103">這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-p103">This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.</span></span> 
+  
+1. <span data-ttu-id="9e8d7-p104">首先請用[這個連結](https://www.123-reg.co.uk/secure/cpanel/domain/overview)移至 123-reg.co.uk 上您的網域頁面。系統會提示您先登入。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-p104">To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.</span></span>
+    
+2. <span data-ttu-id="9e8d7-119">On the **Domain name overview** page, select the name of the domain that you want to edit.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-119">On the **Domain name overview** page, select the name of the domain that you want to edit.</span></span> 
+    
+3. <span data-ttu-id="9e8d7-120">Choose **DNS** from the **Select action** drop-down list.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-120">Choose **DNS** from the **Select action** drop-down list.</span></span> 
+    
+4. <span data-ttu-id="9e8d7-121">在 [**管理 DNS** ] 頁面上，選取 [**進階 DNS** ] 索引標籤。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-121">On the **Manage your DNS** page, select the **Advanced DNS** tab.</span></span> 
+    
+5. <span data-ttu-id="9e8d7-122">In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-122">In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table.</span></span> 
+    
+    <span data-ttu-id="9e8d7-123">(Choose the **Type** value from the drop-down list.)</span><span class="sxs-lookup"><span data-stu-id="9e8d7-123">(Choose the **Type** value from the drop-down list.)</span></span> 
+    
+    ||||
+    |:-----|:-----|:-----|
+    |<span data-ttu-id="9e8d7-124">**主機名稱**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-124">**Hostname**</span></span> <br/> |<span data-ttu-id="9e8d7-125">**類型**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-125">**Type**</span></span> <br/> |<span data-ttu-id="9e8d7-126">**Destination TXT/SPF**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-126">**Destination TXT/SPF**</span></span> <br/> |
+    |@  <br/> |<span data-ttu-id="9e8d7-127">TXT/SPF</span><span class="sxs-lookup"><span data-stu-id="9e8d7-127">TXT/SPF</span></span>  <br/> |<span data-ttu-id="9e8d7-128">MS=ms *XXXXXXXX*</span><span class="sxs-lookup"><span data-stu-id="9e8d7-128">MS=ms *XXXXXXXX*</span></span>  <br/> <span data-ttu-id="9e8d7-129">**附註：** 這是範例。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-129">**Note:** This is an example.</span></span> <span data-ttu-id="9e8d7-130">Use your specific **Destination or Points to Address** value here, from the table in Office 365.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-130">Use your specific **Destination or Points to Address** value here, from the table in Office 365.</span></span> [<span data-ttu-id="9e8d7-131">How do I find this?</span><span class="sxs-lookup"><span data-stu-id="9e8d7-131">How do I find this?</span></span>](../get-help-with-domains/information-for-dns-records.md)          |
+   
+6. <span data-ttu-id="9e8d7-132">選取 **[新增]**。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-132">Select **Add**.</span></span>
+    
+7. <span data-ttu-id="9e8d7-133">繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-133">Wait a few minutes before you continue, so that the record you just created can update across the Internet.</span></span>
+    
+<span data-ttu-id="9e8d7-134">Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-134">Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.</span></span>
+  
+<span data-ttu-id="9e8d7-135">When Office 365 finds the correct TXT record, your domain is verified.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-135">When Office 365 finds the correct TXT record, your domain is verified.</span></span>
+  
+1. <span data-ttu-id="9e8d7-136">在系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-136">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
+
+    
+2. <span data-ttu-id="9e8d7-137">在 [**網域**] 頁面上，選取您要驗證的網域。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-137">On the **Domains** page, select the domain that you are verifying.</span></span> 
+    
+3. <span data-ttu-id="9e8d7-138">在 [**安裝**] 頁面上，選取 [**啟動安裝程式**。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-138">On the **Setup** page, select **Start setup**.</span></span>
+    
+4. <span data-ttu-id="9e8d7-139">在 [**驗證網域**] 頁面上，選取 [**驗證**]。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-139">On the **Verify domain** page, select **Verify**.</span></span>
+    
+> [!NOTE]
+> <span data-ttu-id="9e8d7-140">Typically it takes about 15 minutes for DNS changes to take effect.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-140">Typically it takes about 15 minutes for DNS changes to take effect.</span></span> <span data-ttu-id="9e8d7-141">However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-141">However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.</span></span> <span data-ttu-id="9e8d7-142">如果您遇到與郵件流程或其他問題新增 DNS 記錄之後，請參閱[尋找並修正新增網域或 Office 365 中的 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-142">If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records in Office 365](../get-help-with-domains/find-and-fix-issues.md).</span></span> 
+  
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a><span data-ttu-id="9e8d7-143">新增 MX 記錄，以將寄往您網域的電子郵件轉至 Office 365</span><span class="sxs-lookup"><span data-stu-id="9e8d7-143">Add an MX record so email for your domain will come to Office 365</span></span>
+<span data-ttu-id="9e8d7-144"><a name="BKMK_add_MX"> </a></span><span class="sxs-lookup"><span data-stu-id="9e8d7-144"><a name="BKMK_add_MX"> </a></span></span>
+
+1. <span data-ttu-id="9e8d7-145">首先請用[這個連結](https://www.123-reg.co.uk/secure/cpanel/domain/overview)移至 123-reg.co.uk 上您的網域頁面。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-145">To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview).</span></span> <span data-ttu-id="9e8d7-146">系統會提示您先登入。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-146">You'll be prompted to log in first.</span></span>
+    
+2. <span data-ttu-id="9e8d7-147">On the **Domain name overview** page, select the name of the domain that you want to edit.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-147">On the **Domain name overview** page, select the name of the domain that you want to edit.</span></span> 
+    
+3. <span data-ttu-id="9e8d7-148">Choose **DNS** from the **Select action** drop-down list.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-148">Choose **DNS** from the **Select action** drop-down list.</span></span> 
+    
+4. <span data-ttu-id="9e8d7-149">在 [**管理 DNS** ] 頁面上，選取 [**進階 DNS** ] 索引標籤。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-149">On the **Manage your DNS** page, select the **Advanced DNS** tab.</span></span> 
+    
+5. <span data-ttu-id="9e8d7-150">In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-150">In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table.</span></span> 
+    
+    <span data-ttu-id="9e8d7-151">(Choose the **Type** value from the drop-down list.)</span><span class="sxs-lookup"><span data-stu-id="9e8d7-151">(Choose the **Type** value from the drop-down list.)</span></span> 
+    
+    |<span data-ttu-id="9e8d7-152">**主機名稱**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-152">**Hostname**</span></span>|<span data-ttu-id="9e8d7-153">**類型**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-153">**Type**</span></span>|<span data-ttu-id="9e8d7-154">**優先順序**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-154">**Priority**</span></span>|<span data-ttu-id="9e8d7-155">**Destination MX (目的地 MX)**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-155">**Destination MX**</span></span>|
+    |:-----|:-----|:-----|:-----|
+    |@  <br/> |<span data-ttu-id="9e8d7-156">MX</span><span class="sxs-lookup"><span data-stu-id="9e8d7-156">MX</span></span>  <br/> |<span data-ttu-id="9e8d7-157">1</span><span class="sxs-lookup"><span data-stu-id="9e8d7-157">1</span></span>  <br/> <span data-ttu-id="9e8d7-158">如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)</span><span class="sxs-lookup"><span data-stu-id="9e8d7-158">For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)</span></span> <br/> | <span data-ttu-id="9e8d7-159">*\<網域金鑰\>*  .mail.protection.outlook.com.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-159">*\<domain-key\>*  .mail.protection.outlook.com.</span></span>  <br/> <span data-ttu-id="9e8d7-160">**This value MUST end with a period (.)**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-160">**This value MUST end with a period (.)**</span></span> <br/> <span data-ttu-id="9e8d7-161">**附註：** 取得您\<網域金鑰\>從您的 Office 365 帳戶。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-161">**Note:** Get your \<domain-key\> from your Office 365 account.</span></span> [<span data-ttu-id="9e8d7-162">How do I find this?</span><span class="sxs-lookup"><span data-stu-id="9e8d7-162">How do I find this?</span></span>](../get-help-with-domains/information-for-dns-records.md)          |
+   
+    ![複製並貼上資料表中的值](../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
+  
+6. <span data-ttu-id="9e8d7-164">選取 **[新增]**。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-164">Select **Add**.</span></span>
+    
+    ![選取 [新增]](../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
+  
+7. <span data-ttu-id="9e8d7-166">如果有任何其他 MX 記錄，移除每個選擇該記錄的**刪除 （垃圾桶）** 圖示。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-166">If there are any other MX records, remove each one by choosing the **Delete (trash can)** icon for that record.</span></span> 
+    
+    ![選取 [刪除 （垃圾桶可圖示）](../media/3be635e6-b591-49af-8430-a158272834b4.png)
+  
+## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a><span data-ttu-id="9e8d7-168">新增 Office 365 所需的六筆 CNAME 記錄</span><span class="sxs-lookup"><span data-stu-id="9e8d7-168">Add the six CNAME records that are required for Office 365</span></span>
+<span data-ttu-id="9e8d7-169"><a name="BKMK_add_CNAME"> </a></span><span class="sxs-lookup"><span data-stu-id="9e8d7-169"><a name="BKMK_add_CNAME"> </a></span></span>
+
+1. <span data-ttu-id="9e8d7-170">首先請用[這個連結](https://www.123-reg.co.uk/secure/cpanel/domain/overview)移至 123-reg.co.uk 上您的網域頁面。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-170">To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview).</span></span> <span data-ttu-id="9e8d7-171">系統會提示您先登入。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-171">You'll be prompted to log in first.</span></span>
+    
+2. <span data-ttu-id="9e8d7-172">On the **Domain name overview** page, select the name of the domain that you want to edit.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-172">On the **Domain name overview** page, select the name of the domain that you want to edit.</span></span> 
+    
+3. <span data-ttu-id="9e8d7-173">Choose **DNS** from the **Select action** drop-down list.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-173">Choose **DNS** from the **Select action** drop-down list.</span></span> 
+    
+4. <span data-ttu-id="9e8d7-174">在 [**管理 DNS** ] 頁面上，選取 [**進階 DNS** ] 索引標籤。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-174">On the **Manage your DNS** page, select the **Advanced DNS** tab.</span></span> 
+    
+5. <span data-ttu-id="9e8d7-175">新增六筆 CNAME 記錄的第一筆。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-175">Add the first of the six CNAME records.</span></span>
+    
+    <span data-ttu-id="9e8d7-176">In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-176">In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table.</span></span> 
+    
+    <span data-ttu-id="9e8d7-177">(Choose the **Type** value from the drop-down list.)</span><span class="sxs-lookup"><span data-stu-id="9e8d7-177">(Choose the **Type** value from the drop-down list.)</span></span> 
+    
+    |<span data-ttu-id="9e8d7-178">**主機名稱**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-178">**Hostname**</span></span>|<span data-ttu-id="9e8d7-179">**類型**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-179">**Type**</span></span>|<span data-ttu-id="9e8d7-180">**Destination CNAME (目的地 CNAME)**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-180">**Destination CNAME**</span></span>|
+    |:-----|:-----|:-----|
+    |<span data-ttu-id="9e8d7-181">autodiscover</span><span class="sxs-lookup"><span data-stu-id="9e8d7-181">autodiscover</span></span>  <br/> |<span data-ttu-id="9e8d7-182">CNAME</span><span class="sxs-lookup"><span data-stu-id="9e8d7-182">CNAME</span></span>  <br/> |<span data-ttu-id="9e8d7-183">autodiscover.outlook.com。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-183">autodiscover.outlook.com.</span></span>  <br/> <span data-ttu-id="9e8d7-184">**This value MUST end with a period (.)**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-184">**This value MUST end with a period (.)**</span></span> <br/> |
+    |<span data-ttu-id="9e8d7-185">sip</span><span class="sxs-lookup"><span data-stu-id="9e8d7-185">sip</span></span>  <br/> |<span data-ttu-id="9e8d7-186">CNAME</span><span class="sxs-lookup"><span data-stu-id="9e8d7-186">CNAME</span></span>  <br/> |<span data-ttu-id="9e8d7-187">sipdir.online.lync.com>。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-187">sipdir.online.lync.com.</span></span>  <br/> <span data-ttu-id="9e8d7-188">**This value MUST end with a period (.)**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-188">**This value MUST end with a period (.)**</span></span> <br/> |
+    |<span data-ttu-id="9e8d7-189">lyncdiscover</span><span class="sxs-lookup"><span data-stu-id="9e8d7-189">lyncdiscover</span></span>  <br/> |<span data-ttu-id="9e8d7-190">CNAME</span><span class="sxs-lookup"><span data-stu-id="9e8d7-190">CNAME</span></span>  <br/> |<span data-ttu-id="9e8d7-191">webdir.online.lync.com>。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-191">webdir.online.lync.com.</span></span>  <br/> <span data-ttu-id="9e8d7-192">**This value MUST end with a period (.)**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-192">**This value MUST end with a period (.)**</span></span> <br/> |
+    |<span data-ttu-id="9e8d7-193">enterpriseregistration</span><span class="sxs-lookup"><span data-stu-id="9e8d7-193">enterpriseregistration</span></span>  <br/> |<span data-ttu-id="9e8d7-194">CNAME</span><span class="sxs-lookup"><span data-stu-id="9e8d7-194">CNAME</span></span>  <br/> |<span data-ttu-id="9e8d7-195">enterpriseregistration.windows.net>。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-195">enterpriseregistration.windows.net.</span></span>  <br/> <span data-ttu-id="9e8d7-196">**This value MUST end with a period (.)**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-196">**This value MUST end with a period (.)**</span></span> <br/> |
+    |<span data-ttu-id="9e8d7-197">enterpriseenrollment</span><span class="sxs-lookup"><span data-stu-id="9e8d7-197">enterpriseenrollment</span></span>  <br/> |<span data-ttu-id="9e8d7-198">CNAME</span><span class="sxs-lookup"><span data-stu-id="9e8d7-198">CNAME</span></span>  <br/> |<span data-ttu-id="9e8d7-199">enterpriseenrollment-s.manage.microsoft.com。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-199">enterpriseenrollment-s.manage.microsoft.com.</span></span>  <br/> <span data-ttu-id="9e8d7-200">**This value MUST end with a period (.)**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-200">**This value MUST end with a period (.)**</span></span> <br/> |
+   
+    ![複製並貼上表格中的值](../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
+  
+6. <span data-ttu-id="9e8d7-202">選取 **[新增]**。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-202">Select **Add**.</span></span>
+    
+    ![選取 [新增]](../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
+  
+7. <span data-ttu-id="9e8d7-204">新增其他五筆 CNAME 記錄。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-204">Add the other five CNAME records.</span></span>
+    
+    <span data-ttu-id="9e8d7-205">在 [**進階 DNS** ] 區段中，在表格中，使用 [下一步] 列中的值建立記錄，然後再次選擇 [**新增**] 以完成該筆記錄。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-205">In the **Advanced DNS** section, create a record using the values from the next row in the table, and then again select **Add** to complete that record.</span></span> 
+    
+    <span data-ttu-id="9e8d7-206">重複這個程序，直到六筆 CNAME 記錄全部建立完畢。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-206">Repeat this process until you have created all six CNAME records.</span></span>
+    
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a><span data-ttu-id="9e8d7-207">新增 SPF 的 TXT 記錄以協助防範垃圾郵件</span><span class="sxs-lookup"><span data-stu-id="9e8d7-207">Add a TXT record for SPF to help prevent email spam</span></span>
+<span data-ttu-id="9e8d7-208"><a name="BKMK_add_TXT"> </a></span><span class="sxs-lookup"><span data-stu-id="9e8d7-208"><a name="BKMK_add_TXT"> </a></span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="9e8d7-209">You cannot have more than one TXT record for SPF for a domain.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-209">You cannot have more than one TXT record for SPF for a domain.</span></span> <span data-ttu-id="9e8d7-210">If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-210">If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues.</span></span> <span data-ttu-id="9e8d7-211">If you already have an SPF record for your domain, don't create a new one for Office 365.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-211">If you already have an SPF record for your domain, don't create a new one for Office 365.</span></span> <span data-ttu-id="9e8d7-212">Instead, add the required Office 365 values to the current record so that you have a  *single*  SPF record that includes both sets of values.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-212">Instead, add the required Office 365 values to the current record so that you have a  *single*  SPF record that includes both sets of values.</span></span> <span data-ttu-id="9e8d7-213">Need examples?</span><span class="sxs-lookup"><span data-stu-id="9e8d7-213">Need examples?</span></span> <span data-ttu-id="9e8d7-214">請查看這些[Office 365 的外部網域名稱系統記錄](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords)。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-214">Check out these [External Domain Name System records for Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords).</span></span> <span data-ttu-id="9e8d7-215">To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md).</span><span class="sxs-lookup"><span data-stu-id="9e8d7-215">To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md).</span></span> 
+  
+1. <span data-ttu-id="9e8d7-216">首先請用[這個連結](https://www.123-reg.co.uk/secure/cpanel/domain/overview)移至 123-reg.co.uk 上您的網域頁面。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-216">To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview).</span></span> <span data-ttu-id="9e8d7-217">系統會提示您先登入。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-217">You'll be prompted to log in first.</span></span>
+    
+2. <span data-ttu-id="9e8d7-218">On the **Domain name overview** page, select the name of the domain that you want to edit.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-218">On the **Domain name overview** page, select the name of the domain that you want to edit.</span></span> 
+    
+3. <span data-ttu-id="9e8d7-219">Choose **DNS** from the **Select action** drop-down list.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-219">Choose **DNS** from the **Select action** drop-down list.</span></span> 
+    
+4. <span data-ttu-id="9e8d7-220">在 [**管理 DNS** ] 頁面上，選取 [**進階 DNS** ] 索引標籤。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-220">On the **Manage your DNS** page, select the **Advanced DNS** tab.</span></span> 
+    
+5. <span data-ttu-id="9e8d7-221">In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-221">In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table.</span></span> 
+    
+    <span data-ttu-id="9e8d7-222">(Choose the **Type** value from the drop-down list.)</span><span class="sxs-lookup"><span data-stu-id="9e8d7-222">(Choose the **Type** value from the drop-down list.)</span></span> 
+    
+    |<span data-ttu-id="9e8d7-223">**主機名稱**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-223">**Hostname**</span></span>|<span data-ttu-id="9e8d7-224">**類型**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-224">**Type**</span></span>|<span data-ttu-id="9e8d7-225">**Destination TXT/SPF**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-225">**Destination TXT/SPF**</span></span>|
+    |:-----|:-----|:-----|
+    |@  <br/> |<span data-ttu-id="9e8d7-226">TXT/SPF</span><span class="sxs-lookup"><span data-stu-id="9e8d7-226">TXT/SPF</span></span>  <br/> |<span data-ttu-id="9e8d7-227">v=spf1 include:spf.protection.outlook.com -all</span><span class="sxs-lookup"><span data-stu-id="9e8d7-227">v=spf1 include:spf.protection.outlook.com -all</span></span>  <br/> <span data-ttu-id="9e8d7-228">**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-228">**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.</span></span>           |
+   
+    ![123Reg-DYN-BP-CONFIGURE-1-設定-4-1](../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
+  
+6. <span data-ttu-id="9e8d7-230">選取 **[新增]**。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-230">Select **Add**.</span></span>
+    
+    ![選取 [新增]](../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
+  
+## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a><span data-ttu-id="9e8d7-232">新增兩筆 Office 365 所需的 SRV 記錄</span><span class="sxs-lookup"><span data-stu-id="9e8d7-232">Add the two SRV records that are required for Office 365</span></span>
+<span data-ttu-id="9e8d7-233"><a name="BKMK_add_SRV"> </a></span><span class="sxs-lookup"><span data-stu-id="9e8d7-233"><a name="BKMK_add_SRV"> </a></span></span>
+
+1. <span data-ttu-id="9e8d7-234">首先請用[這個連結](https://www.123-reg.co.uk/secure/cpanel/domain/overview)移至 123-reg.co.uk 上您的網域頁面。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-234">To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview).</span></span> <span data-ttu-id="9e8d7-235">系統會提示您先登入。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-235">You'll be prompted to log in first.</span></span>
+    
+2. <span data-ttu-id="9e8d7-236">On the **Domain name overview** page, select the name of the domain that you want to edit.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-236">On the **Domain name overview** page, select the name of the domain that you want to edit.</span></span> 
+    
+3. <span data-ttu-id="9e8d7-237">Choose **DNS** from the **Select action** drop-down list.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-237">Choose **DNS** from the **Select action** drop-down list.</span></span> 
+    
+4. <span data-ttu-id="9e8d7-238">在 [**管理 DNS** ] 頁面上，選取 [**進階 DNS** ] 索引標籤。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-238">On the **Manage your DNS** page, select the **Advanced DNS** tab.</span></span> 
+    
+5. <span data-ttu-id="9e8d7-239">新增兩筆 SRV 記錄的第一筆：</span><span class="sxs-lookup"><span data-stu-id="9e8d7-239">Add the first of the two SRV records:</span></span>
+    
+    <span data-ttu-id="9e8d7-240">In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-240">In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table.</span></span> 
+    
+    <span data-ttu-id="9e8d7-241">(Choose the **Type** value from the drop-down list.)</span><span class="sxs-lookup"><span data-stu-id="9e8d7-241">(Choose the **Type** value from the drop-down list.)</span></span> 
+    
+    ||||||
+    |:-----|:-----|:-----|:-----|:-----|
+    |<span data-ttu-id="9e8d7-242">主機名稱</span><span class="sxs-lookup"><span data-stu-id="9e8d7-242">Hostname</span></span>|<span data-ttu-id="9e8d7-243">Type (類型)</span><span class="sxs-lookup"><span data-stu-id="9e8d7-243">Type</span></span>|<span data-ttu-id="9e8d7-244">Priority (優先順序)</span><span class="sxs-lookup"><span data-stu-id="9e8d7-244">Priority</span></span>|<span data-ttu-id="9e8d7-245">TTL</span><span class="sxs-lookup"><span data-stu-id="9e8d7-245">TTL</span></span>|<span data-ttu-id="9e8d7-246">Destination SRV (目的 SRV)</span><span class="sxs-lookup"><span data-stu-id="9e8d7-246">Destination SRV</span></span>|
+    |<span data-ttu-id="9e8d7-247">_sip._tls</span><span class="sxs-lookup"><span data-stu-id="9e8d7-247">_sip._tls</span></span>|<span data-ttu-id="9e8d7-248">SRV</span><span class="sxs-lookup"><span data-stu-id="9e8d7-248">SRV</span></span>|<span data-ttu-id="9e8d7-249">100</span><span class="sxs-lookup"><span data-stu-id="9e8d7-249">100</span></span>|<span data-ttu-id="9e8d7-250">3600</span><span class="sxs-lookup"><span data-stu-id="9e8d7-250">3600</span></span>|<span data-ttu-id="9e8d7-251">1 443 sipdir.online.lync.com>。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-251">1 443 sipdir.online.lync.com.</span></span> <span data-ttu-id="9e8d7-252">**This value MUST end with a period (.)**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-252">**This value MUST end with a period (.)**</span></span><br> <span data-ttu-id="9e8d7-253">**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-253">**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.</span></span>           |
+    |<span data-ttu-id="9e8d7-254">_sipfederationtls._tcp</span><span class="sxs-lookup"><span data-stu-id="9e8d7-254">_sipfederationtls._tcp</span></span>|<span data-ttu-id="9e8d7-255">SRV</span><span class="sxs-lookup"><span data-stu-id="9e8d7-255">SRV</span></span>|<span data-ttu-id="9e8d7-256">100</span><span class="sxs-lookup"><span data-stu-id="9e8d7-256">100</span></span>|<span data-ttu-id="9e8d7-257">3600</span><span class="sxs-lookup"><span data-stu-id="9e8d7-257">3600</span></span>|<span data-ttu-id="9e8d7-258">1 5061 sipfed.online.lync.com>。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-258">1 5061 sipfed.online.lync.com.</span></span> <span data-ttu-id="9e8d7-259">**This value MUST end with a period (.)**</span><span class="sxs-lookup"><span data-stu-id="9e8d7-259">**This value MUST end with a period (.)**</span></span> <br> <span data-ttu-id="9e8d7-260">**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-260">**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.</span></span>           |
+   
+    ![複製並貼上表格中的值](../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
+  
+6. <span data-ttu-id="9e8d7-262">選取 **[新增]**。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-262">Select **Add**.</span></span>
+    
+    ![選取 [新增]](../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
+  
+7. <span data-ttu-id="9e8d7-264">新增另一筆 SRV 記錄：</span><span class="sxs-lookup"><span data-stu-id="9e8d7-264">To add the other SRV record:</span></span>
+    
+    <span data-ttu-id="9e8d7-265">在 [**進階 DNS** ] 區段中，在表格中，使用第二列的值來建立記錄，然後再次選擇 [**新增**] 以完成該筆記錄。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-265">In the **Advanced DNS** section, create a record by using the values from the second row in the table, and then again select **Add** to complete that record.</span></span> 
+    
+> [!NOTE]
+> <span data-ttu-id="9e8d7-266">Typically it takes about 15 minutes for DNS changes to take effect.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-266">Typically it takes about 15 minutes for DNS changes to take effect.</span></span> <span data-ttu-id="9e8d7-267">However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.</span><span class="sxs-lookup"><span data-stu-id="9e8d7-267">However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.</span></span> <span data-ttu-id="9e8d7-268">如果您遇到與郵件流程或其他問題新增 DNS 記錄之後，請參閱[尋找並修正新增網域或 Office 365 中的 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。</span><span class="sxs-lookup"><span data-stu-id="9e8d7-268">If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records in Office 365](../get-help-with-domains/find-and-fix-issues.md).</span></span> 
+  

@@ -100,6 +100,8 @@
               href: working-with-managed-desktop/reliability-insights.md
             - name: 電池深入解析
               href: working-with-managed-desktop/battery-insights.md
+            - name: Windows 安全性更新深入解析
+              href: working-with-managed-desktop/security-update-insights.md
         - name: 管理員支援
           href: working-with-managed-desktop/admin-support.md
         - name: 使用者支援
