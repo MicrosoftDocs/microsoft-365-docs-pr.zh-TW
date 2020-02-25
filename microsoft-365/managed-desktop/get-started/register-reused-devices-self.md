@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: b9e1f0691d7bec1d8a17bb7f68a0e0941b3f6bd9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a971d8dc413e7794aa48c0b39cc0f42e511739ed
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085952"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250443"
 ---
 # <a name="register-existing-devices-yourself"></a>自行註冊現有裝置
 
@@ -150,7 +150,7 @@ Get-ADComputer -filter * | powershell -ExecutionPolicy Unrestricted Get-MMDRegis
 Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
 ```
 3. 存取任何目錄其中可能會有的裝置的項目。 移除*所有*目錄，包括 Windows Server Active Directory 網域服務和 Azure Active Directory 中的每個裝置的項目。 請注意此移除可能需要幾個小時才能完全處理程序。
-4. 存取管理服務其中可能會有的裝置的項目。 移除*所有*的管理服務，包括 Microsoft 端點組態管理員、 Microsoft Intune 和 Windows Autopilot 為每個裝置的項目。 請注意此移除可能需要幾個小時才能完全處理程序。
+4. 存取管理服務其中可能會有的裝置的項目。 移除*所有*的管理服務，包括 Microsoft 端點 Configuration Manager、 Microsoft Intune 和 Windows Autopilot 為每個裝置的項目。 請注意此移除可能需要幾個小時才能完全處理程序。
 
 現在您可以繼續[註冊裝置](#register-devices)。
 

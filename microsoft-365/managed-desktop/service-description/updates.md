@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 63e07ffd58a7add7f7f72aad20b6389cd22d2ca7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: de674da4230697e953c88d812b0edac8cb7904e5
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602750"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250473"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中更新的處理方式
 
@@ -23,7 +23,7 @@ ms.locfileid: "41602750"
 
 <!--Update management -->
 
-Microsoft 受管理的電腦會將所有的裝置連接到新式的基於雲端的基礎結構。 保持 Windows、 Office、 驅動程式、 韌體和 Microsoft 網上商店商務應用程式的最新狀態是權衡方式速度與穩定性。 部署群組將會用來確保作業系統更新，原則會導入安全的方式。 
+Microsoft 受管理的電腦會將所有的裝置連接到新式的基於雲端的基礎結構。 保持 Windows、 Office、 驅動程式、 韌體和 Microsoft 網上商店商務應用程式的最新狀態是權衡方式速度與穩定性。 部署群組將會用來確保作業系統更新，原則會導入安全的方式。 如需有關此的詳細資訊，請參閱視訊[Microsoft 受管理的桌上型電腦變更及版本處理程序](https://www.microsoft.com/videoplayer/embed/RE4mWqP)。
 
 由 Microsoft 發行的更新是累加的並可分類為 「 品質] 或 [功能更新。
 如需詳細資訊，請參閱[適用於企業的 Windows 更新： 更新類型](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types)。 

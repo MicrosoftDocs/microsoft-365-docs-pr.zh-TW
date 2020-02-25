@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: acc515d046b1ebd2ff7c5dd9c52b363fe99f0b9e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eda9b893057afd54a644f0091bf4e1b421bd5439
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087457"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234692"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解進階搜捕查詢語言
 
 適用於：****
 - Microsoft 威脅防護
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 進階搜捕是以 [Kusto 查詢語言](https://docs.microsoft.com/azure/kusto/query/)為基礎。 您可以使用 Kusto 語法和運算子來建立查詢，以在特別為進階搜捕而建構的[結構描述](advanced-hunting-schema-tables.md)中尋找的資訊。 若要深入了解這些概念，請執行您的第一個查詢。
 

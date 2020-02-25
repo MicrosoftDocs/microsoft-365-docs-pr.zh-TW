@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 460c1e76020457fb4f640c32df39c09adaaba32a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: eae1eff69fa6a91413e3f2dd6644c9c27549968e
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600400"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234772"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
 適用於：****
 - Microsoft 威脅防護
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 `DeviceProcessEvents` [進階的狩獵](advanced-hunting-overview.md)結構描述中的表格包含程序建立及相關的事件的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 

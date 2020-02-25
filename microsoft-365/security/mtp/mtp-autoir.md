@@ -1,5 +1,5 @@
 ---
-title: Microsoft 威脅防護的自動化調查及回應
+title: Microsoft 威脅防護中的自動化的調查及回應功能
 description: Microsoft 威脅防護的自動化調查及回應功能的概
 keywords: automated, investigation, alert, trigger, action, remediation, 自動化, 調查, 警示, 觸發, 動作, 補救
 search.appverid: met150
@@ -18,23 +18,21 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: da7216aa94455a4b431e540b976f8a1662378a58
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f54ec3c0b318acaf6c81d26f32cfde5e87585a13
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600070"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261990"
 ---
-# <a name="automated-investigation-and-response-air-in-microsoft-threat-protection"></a>Microsoft 威脅防護的自動化調查及回應 (AIR)
+# <a name="automated-investigation-and-response-air-capabilities-in-microsoft-threat-protection"></a>自動化的調查和 Microsoft 威脅防護中的回應 （空調） 功能
 
 **適用於：**
 - Microsoft 威脅防護
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+當安全性警示觸發時，您的安全性作業小組將會了解這些警示，並採取步驟保護貴組織。 優先處理和調查警示可能會非常耗時，特別是在調查進行時新警示持續出現。 安全性作業小組可能會對必須監控和防範的龐大威脅感到不知所措。 自動化的調查和 Microsoft 威脅防護中的回應 （空調） 功能可協助。 空調就像需要虛擬分析師安全性作業中心。
 
 ## <a name="your-virtual-analyst"></a>您的虛擬分析員
-
-當安全性警示觸發時，您的安全性作業小組將會了解這些警示，並採取步驟保護貴組織。 優先處理和調查警示可能會非常耗時，特別是在調查進行時新警示持續出現。 安全性作業小組可能會對必須監控和防範的龐大威脅感到不知所措。 
 
 想像您的第 1 層 / 第 2 層安全性作業小組中有一個虛擬分析員。 虛擬分析員會模仿安全性作業要採取哪些理想步驟來調查和補救威脅。 虛擬助理可以全天候工作、提供無限能力，以及接受大量調查和威脅補救。 如此一來，虛擬助理可以大幅減少回應時間，讓您的安全性作業小組能夠進行其他重要的策略專案。 如果這聽起來像是科幻小說中的場景，但確實是真的！ 這類虛擬分析員是屬於您的 Microsoft 威脅防護套件，其名稱為*自動化調查及回應* (AIR)。
 
@@ -73,6 +71,7 @@ AIR 可讓您的安全性作業小組大幅增加貴組織處理安全性警示�
 |訂閱需求 |- Microsoft 365 E5 或 Microsoft 365 E3 以及身分識別與威脅防護產品<br/>- 請參閱[Microsoft 365 方案](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview#plans)|
 |網路需求 |- [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)已啟用<br/>- [Microsoft 雲端 App 安全性](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS) 已設定<br/>- [與 Azure ATP 整合的 MCAS](https://docs.microsoft.com/cloud-app-security/aatp-integration) |
 |Windows 電腦需求 |- Windows 10，安裝版本 1709 或更新版本 (請參閱 [Windows 10 版本資訊](https://docs.microsoft.com/windows/release-information/))<br/>- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) 已設定 <br/>- [Windows Defender 防毒軟體](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)已設定 |
+|保護電子郵件內容和 Office 檔案 |[Office 365 進階威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies)設定 |
 |權限 |- 若要*設定* AIR，您必須在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 中被指派**全域系統管理員**或**安全性系統管理員**角色。<br/><br/>- 若要*使用* AIR 功能，請參閱[重要訊息中心的必要權限](mtp-action-center.md#required-permissions-for-action-center-tasks)。 |
 
 ## <a name="next-steps"></a>後續步驟

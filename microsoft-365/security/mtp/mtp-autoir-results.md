@@ -1,5 +1,5 @@
 ---
-title: 檢視自動調查的詳細資料和結果
+title: 詳細資料及自動化調查的結果
 description: 在自動調查過程中和完成之後，您就可以查看結果和重要結果
 keywords: 自動, 調查, 結果, 分析, 詳細資料, 修正, autoair
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 062dd86de49eb3dfe47566aa8d7269780cf9995c
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: 6b3bc068e5da99e02a64463891e32d137c448d64
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175716"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261060"
 ---
-# <a name="view-the-details-and-results-of-an-automated-investigation"></a>檢視自動調查的詳細資料和結果
+# <a name="details-and-results-of-an-automated-investigation"></a>詳細資料及自動化調查的結果
 
 適用於：****
 - Microsoft 威脅防護
@@ -80,24 +80,9 @@ ms.locfileid: "42175716"
 |記錄    |提供調查過程中所有步驟的詳細資訊，以及狀態。|
 |待核准的動作    |列出需要核准才能繼續的項目。|
 
-## <a name="remediation-actions-following-automated-investigation"></a>自動調查後的修正動作
-
-當自動調查完成後，會對所涉及的每個證據做出裁決，並確定修正動作。 在某些情況下，系統會自動進行修正動作；在其他情況下，修正動作需要核准。 下表列出可能的裁決和結果：
-
-|裁決    |範圍   |結果|
-|------|------|------|
-|惡意  |裝置 (端點)    |自動採取修正動作|
-|惡意  |電子郵件內容 (URL 或附件) | 建議的修正動作待核准|
-|可疑 |裝置或電子郵件內容 |建議的修正動作待核准|
-|無害  |裝置或電子郵件內容   |不需要修正動作|
-
-[在控制中心檢閱待核准的動作](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
-
-> [!TIP]
-> 如果您認為某個項目已未接或錯誤偵測到的自動化的調查和 Microsoft 威脅防護中的回應功能，讓我們知道 ！ 請參閱[How to 報告中自動進行調查並 Microsoft 威脅防護中的回應 （空調） 功能，則為 false positive/負號](mtp-autoir-report-false-positives-negatives.md)。
-
 ## <a name="next-steps"></a>後續步驟
 
 - [取得 [控制中心] 權限的概況](mtp-action-center.md#required-permissions-for-action-center-tasks)
+
 - [核准或拒絕與自動化調查相關的動作並回應](mtp-autoir-actions.md)
 

@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d817c3b4f6e915985878d1586776ac472025f704
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bb3eae9fff658ee1cbb7f80fa3ff15f2335a9a3a
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087922"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234682"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解進階搜捕結構描述
 
 **適用於：**
 - Microsoft 威脅防護
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 [進階搜捕](advanced-hunting-overview.md)結構描述是由多個提供事件資訊或與電腦或實體相關資訊的表格所組成。 若要有效組建跨越多個表格的查詢，您需要了解進階搜捕結構描述中的表格和欄。
 

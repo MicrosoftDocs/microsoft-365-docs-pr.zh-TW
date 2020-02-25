@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5d43584ed9af9a0ac6154d593f4517d0a4152023
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c0b58d41996df2829590d7184615e8f30f4c4e16
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087962"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234802"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
 適用於：****
 - Microsoft 威脅防護
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 `DeviceRegistryEvents` [進階的狩獵](advanced-hunting-overview.md)結構描述中的表格包含建立和修改登錄項目相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 

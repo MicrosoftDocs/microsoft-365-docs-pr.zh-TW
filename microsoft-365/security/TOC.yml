@@ -41,6 +41,8 @@
           items:
             - name: 什麼是 Microsoft 威脅防護？
               href: mtp/microsoft-threat-protection.md
+            - name: What's new in Microsoft 威脅防護
+              href: mtp/whats-new.md
             - name: Microsoft 365 安全性中心
               href: mtp/overview-security-center.md
             - name: 必要條件
@@ -67,11 +69,11 @@
               items:
                 - name: 空調概觀
                   href: mtp/mtp-autoir.md
-                - name: 檢視修復動作
+                - name: 補救動作
                   href: mtp/mtp-remediation-actions.md
-                - name: 請造訪重要訊息中心
+                - name: 重要訊息中心
                   href: mtp/mtp-action-center.md
-                - name: 檢視調查結果
+                - name: 檢視自動化的調查詳細資料和結果
                   href: mtp/mtp-autoir-results.md
                 - name: 核准或拒絕擱置中的動作
                   href: mtp/mtp-autoir-actions.md
@@ -134,6 +136,8 @@
                   href: mtp/microsoft-secure-score.md
                 - name: 安全分數 (預覽)
                   href: mtp/microsoft-secure-score-preview.md
+                - name: 什麼即將
+                  href: mtp/microsoft-secure-score-whats-coming.md
             - name: 報表
               items:
                 - name: 監視及檢視報告
@@ -368,13 +372,13 @@
               href: ./mtp/latest-attack-campaigns.md
             - name: 自動調查及回應
               items:
-                - name: 航空的概觀
+                - name: 空調概觀
                   href: ./office-365-security/office-365-air.md
-                - name: 檢視詳細資料及調查的結果
+                - name: 檢視自動化的調查詳細資料和結果
                   href: ./office-365-security/air-view-investigation-results.md
-                - name: 檢視並核准修復動作
+                - name: 核准或拒絕擱置中的動作
                   href: ./office-365-security/air-remediation-actions.md
-                - name: 空調整合的自訂或協力廠商的報表解決方案
+                - name: 整合空調自訂解決方案或協力廠商解決方案
                   href: ./office-365-security/air-custom-reporting.md
             - name: 偵測並快速地址危害的使用者帳戶
               href: ./office-365-security/address-compromised-users-quickly.md

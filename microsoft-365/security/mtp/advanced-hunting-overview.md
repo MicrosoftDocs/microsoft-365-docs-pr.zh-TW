@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f268c87da68c2badbfa885f0d9357a6a53d0a039
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 598ef669e95081ef098dfa9cfdb5473b21b28306
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087487"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234752"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>使用 Microsoft 威脅防護中的進階搜捕功能主動尋找威脅
 
 **適用於：**
 - Microsoft 威脅防護
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 進階搜捕是一種查詢式威脅搜捕工具，可讓您探索最多 30 天的原始資料。 您可以主動檢查您網路中的事件，以找出相關的指標和實體。 可靈活存取資料有助於不受限制地同時搜捕已知和潛在的威脅。
 

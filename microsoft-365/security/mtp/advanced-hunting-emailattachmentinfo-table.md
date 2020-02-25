@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: c3c907b2ea2c636018223cb9e13e5785f5569b71
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d35313cf481ecd6892725ae385e7db1032565611
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087952"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234792"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
 **適用範圍：**
 - Microsoft 威脅防護
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 [進階搜捕](advanced-hunting-overview.md)結構描述中的 `EmailAttachmentInfo` 表格包含有關 Office 365 ATP 所處理的電子郵件附件資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 

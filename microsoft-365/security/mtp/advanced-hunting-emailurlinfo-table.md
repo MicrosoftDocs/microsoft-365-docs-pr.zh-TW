@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2a3a635b7fd189d380b4323fcf2dc09447e12efe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7f5912306700efa0db704fe8d0c0db006105fda6
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087942"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234762"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
 **適用於：**
 - Microsoft 威脅防護
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 [進階搜捕](advanced-hunting-overview.md)結構描述中的 `EmailUrlInfo` 表格包含有關 Office 365 ATP 所處理的電子郵件和附件 URL 資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 

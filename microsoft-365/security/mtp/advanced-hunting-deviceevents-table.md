@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 34401bde5af594899f88b93f8ca76695ce3c7132
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f99420b978f77f8b4a4660394d4a6f335c5aad66
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602760"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235042"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
 適用於：****
 - Microsoft 威脅防護
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 其他裝置事件或`DeviceEvents`[進階的狩獵](advanced-hunting-overview.md)結構描述中的表格包含各種事件類型，包括由安全性控制，例如 Windows Defender 防毒軟體和惡意探索防護觸發的事件的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 

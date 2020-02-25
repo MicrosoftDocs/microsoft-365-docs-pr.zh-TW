@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 83a4b7b52508002ad9bc5c27e1ebf68677808444
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0bbcef72fa305819c9f8e0813cfcdfd6c2b0fff3
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087932"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234722"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>搜捕所有裝置和電子郵件的威脅
 
 **適用於：**
 - Microsoft 威脅防護
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Microsoft 威脅防護的[進階搜捕](advanced-hunting-overview.md)能讓您主動搜捕 Windows 裝置和 Office 365 電子郵件的威脅。 以下是一些搜捕案例和範例查詢，可協助您探索如何建立涵蓋裝置和電子郵件的查詢。
 

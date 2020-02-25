@@ -18,23 +18,23 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 05356cb9ef17d8c8355896e76185ff9498882069
-ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
+ms.openlocfilehash: a8f4cd9d3b970d6216e05fa6ff78699558c82600
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219174"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42262020"
 ---
-# <a name="go-to-the-action-center-to-view-remediation-actions"></a>移至重要訊息中心檢視補救動作
+# <a name="the-action-center"></a>重要訊息中心
 
 **適用於：**
 - Microsoft 威脅防護
 
-## <a name="a-single-pane-of-glass-experience"></a>「單一玻璃窗」體驗
+使用重要訊息中心查看組織的裝置和信箱目前和過去的調查結果。 根據威脅及產生 verdict 的類型，[修復動作](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions)會發生自動] 或 [核准由貴組織的安全性作業小組。 所有補救動作 (無論是等待核准或已核准) 皆合併在重要訊息中心。 
 
 ![重要訊息中心](../../media/air-actioncenter.png)
 
-使用重要訊息中心查看組織的裝置和信箱目前和過去的調查結果。 根據威脅類型和[產生的結果](mtp-autoir-results.md#remediation-actions-following-automated-investigation)，補救動作會自動進行，或由貴組織的安全性作業小組核准進行。 所有補救動作 (無論是等待核准或已核准) 皆合併在重要訊息中心。 
+## <a name="a-single-pane-of-glass-experience"></a>「單一玻璃窗」體驗
 
 重要訊息中心提供工作的「單一玻璃窗」體驗，例如：
 - 核准擱置的補救動作；
@@ -63,7 +63,6 @@ ms.locfileid: "42219174"
 
     - 如果調查涉及裝置，便會在安全中心 ([https://security.microsoft.com](https://security.microsoft.com)) 開啟調查詳細資料。 
 
-
 > [!TIP]
 > 如果您認為某個項目已未接或錯誤偵測到的自動化的調查和 Microsoft 威脅防護中的回應功能，讓我們知道 ！ 請參閱[How to 報告中自動進行調查並 Microsoft 威脅防護中的回應 （空調） 功能，則為 false positive/負號](mtp-autoir-report-false-positives-negatives.md)。
 
@@ -82,6 +81,8 @@ ms.locfileid: "42219174"
 ## <a name="next-steps"></a>後續步驟 
 
 - [深入了解 Microsoft 威脅防護中的事件](incidents-overview.md)
+
 - [檢視自動調查的結果](mtp-autoir-results.md)
+
 - [深入了解 Microsoft 威脅防護中的搜捕](advanced-hunting-overview.md)
 

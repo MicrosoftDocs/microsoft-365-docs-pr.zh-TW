@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b5cd421770469e674e66045ac341d12a2808da09
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a859aa201b43813d6c66a797cbfee160051d5103
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602840"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235062"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>進階搜捕查詢最佳做法
 
 **適用於：**
 - Microsoft 威脅防護
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 ## <a name="optimize-query-performance"></a>最佳化查詢效能
 套用這些建議來加快取得結果，並避免在執行複雜查詢時發生逾時：

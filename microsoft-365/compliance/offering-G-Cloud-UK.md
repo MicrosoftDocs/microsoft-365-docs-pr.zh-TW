@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ecd8a362b0e77df846f486b0a424425f012ee68b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 27f664f9657e88db1dab86f765be36458b4090d9
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602350"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42236883"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>英國政府雲端 （G 雲端）
 
@@ -64,17 +64,17 @@ Microsoft 服務以數位市集約會表示英國政府機構與合作夥伴可�
 
 ### <a name="dynamics-365"></a>Dynamics 365
 
-- [Dynamics 365 英國 G 雲端風險環境](https://aka.ms/Dynamics365UKGCloudRiskEnvironment)
+- [Dynamics 365 英國 G 雲端風險環境](https://go.microsoft.com/fwlink/?linkid=2099702)
 
 ### <a name="intune"></a>Intune
 
-- [Intune 英國 G 雲端風險環境](https://aka.ms/IntuneUKGCloudRiskEnvironment)
+- [Intune 英國 G 雲端風險環境](https://go.microsoft.com/fwlink/?linkid=2099702)
 - [Intune 英國 G 雲端剩餘風險](https://aka.ms/IntuneUKGCloudResidualRisk)
 - [Azure 英國 G 雲端安全性評估摘要](https://aka.ms/IntuneUKGCloudSecurityAssessmentSummary)
 
 ### <a name="office-365"></a>Office 365
 
-- [Office 365 英國 G 雲端風險環境](https://aka.ms/Office365UKGCloudRiskEnvironment)
+- [Office 365 英國 G 雲端風險環境](https://go.microsoft.com/fwlink/?linkid=2099702)
 
 ## <a name="accelerate-your-deployment-of-uk-g-cloud-solutions-on-azure"></a>Azure 上加速英國 G 雲端解決方案的部署
 

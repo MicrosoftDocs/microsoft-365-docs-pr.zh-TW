@@ -1,5 +1,5 @@
 ---
-title: 自動化調查後核准或拒絕擱置中的動作
+title: 核准或拒絕擱置中的下列自動化的調查的動作
 description: 使用重要訊息中心來管理與自動化調查和回應相關的動作
 keywords: 動作, 中心, autoair, 自動化, 調查, 回應, 補救
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 5118f7fddaee0fa768675597dee862eb75e4ed96
-ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
+ms.openlocfilehash: 725d22629d2c81a0edf8f329602214afddde6511
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42225491"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261980"
 ---
-# <a name="approve-or-reject-pending-actions-from-automated-investigations"></a>核准或拒絕來自自動化調查的擱置中的動作
+# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>核准或拒絕擱置中的下列自動化的調查的動作
 
 **適用於：**
 - Microsoft 威脅防護
@@ -35,9 +35,7 @@ ms.locfileid: "42225491"
 > [!TIP]
 > 如果您認為某個項目已未接或錯誤偵測到的自動化的調查和 Microsoft 威脅防護中的回應功能，讓我們知道 ！ 請參閱[How to 報告中自動進行調查並 Microsoft 威脅防護中的回應 （空調） 功能，則為 false positive/負號](mtp-autoir-report-false-positives-negatives.md)。
 
-使用以下數個方法中的一個可檢閱和核准擱置中的動作：
-- [使用重要訊息中心](#review-a-pending-action-in-the-action-center)
-- [使用調查詳細資料檢視](#review-a-pending-action-in-the-investigation-details-view)
+擱置中的動作可以先檢閱和核准藉由使用[重要訊息中心](#review-a-pending-action-in-the-action-center)或[調查的詳細資料檢視](#review-a-pending-action-in-the-investigation-details-view)。
 
 > [!NOTE]
 > 您必須具備[適當的權限](mtp-action-center.md#required-permissions-for-action-center-tasks)，才能核准或拒絕補救動作。
@@ -65,5 +63,7 @@ ms.locfileid: "42225491"
 ## <a name="next-steps"></a>後續步驟
 
 - [深入了解重要訊息中心](mtp-action-center.md)
+
 - [深入了解事件](incidents-overview.md)
+
 - [了解搜捕](advanced-hunting-overview.md)
