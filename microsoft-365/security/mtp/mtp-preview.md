@@ -19,31 +19,31 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET15
-ms.openlocfilehash: 3a21bf3166191a0a3ef2caf2f78fe0734711961f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 54f2d60a9af7d1d63272aa3d73ecbf85940ca7a2
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083592"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235182"
 ---
-# <a name="microsoft-365-security-preview-features"></a><span data-ttu-id="bc159-104">Microsoft 365 安全性預覽功能</span><span class="sxs-lookup"><span data-stu-id="bc159-104">Microsoft 365 Security preview features</span></span>
+# <a name="microsoft-365-security-preview-features"></a><span data-ttu-id="fb518-104">Microsoft 365 安全性預覽功能</span><span class="sxs-lookup"><span data-stu-id="fb518-104">Microsoft 365 Security preview features</span></span>
 
-<span data-ttu-id="bc159-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="bc159-105">**Applies to:**</span></span>
-- <span data-ttu-id="bc159-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="bc159-106">Microsoft Threat Protection</span></span>
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
-<span data-ttu-id="bc159-107">Microsoft 365 安全性會持續更新以包含最新功能增強與特性。</span><span class="sxs-lookup"><span data-stu-id="bc159-107">Microsoft 365 Security is constantly being updated to include new feature enhancements and capabilities.</span></span>
-
-<span data-ttu-id="bc159-108">了解預覽版 Microsoft 365 安全性中的新功能，並藉由開啟預覽體驗率先嘗試即將推出的功能。</span><span class="sxs-lookup"><span data-stu-id="bc159-108">Learn about new features in the Microsoft 365 Security preview release and be among the first to try upcoming features by turning on the preview experience.</span></span>
-
-<span data-ttu-id="bc159-109">如需更多公開推出的全新功能資訊，請查看 [Microsoft 威脅防護新增功能](mtp-whats-new.md)。</span><span class="sxs-lookup"><span data-stu-id="bc159-109">For more information on new capabilities that are generally available, see [What's new in Microsoft Threat Protection](mtp-whats-new.md).</span></span>
+<span data-ttu-id="fb518-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="fb518-105">**Applies to:**</span></span>
+- <span data-ttu-id="fb518-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="fb518-106">Microsoft Threat Protection</span></span>
 
 
-## <a name="preview-features"></a><span data-ttu-id="bc159-110">預覽功能</span><span class="sxs-lookup"><span data-stu-id="bc159-110">Preview features</span></span>
-<span data-ttu-id="bc159-111">預覽版包含以下功能：</span><span class="sxs-lookup"><span data-stu-id="bc159-111">The following features are included in the preview release:</span></span>
 
-## <a name="august-2019"></a><span data-ttu-id="bc159-112">2019 年 8 月</span><span class="sxs-lookup"><span data-stu-id="bc159-112">August 2019</span></span>
-- <span data-ttu-id="bc159-113">事件</span><span class="sxs-lookup"><span data-stu-id="bc159-113">Incidents</span></span>
-- <span data-ttu-id="bc159-114">自動化調查和修復</span><span class="sxs-lookup"><span data-stu-id="bc159-114">Automated investigation and remediation</span></span>
-- <span data-ttu-id="bc159-115">進階搜捕</span><span class="sxs-lookup"><span data-stu-id="bc159-115">Advanced hunting</span></span> 
+<span data-ttu-id="fb518-107">Microsoft 365 安全性會持續更新以包含最新功能增強與特性。</span><span class="sxs-lookup"><span data-stu-id="fb518-107">Microsoft 365 Security is constantly being updated to include new feature enhancements and capabilities.</span></span>
+
+<span data-ttu-id="fb518-108">了解預覽版 Microsoft 365 安全性中的新功能，並藉由開啟預覽體驗率先嘗試即將推出的功能。</span><span class="sxs-lookup"><span data-stu-id="fb518-108">Learn about new features in the Microsoft 365 Security preview release and be among the first to try upcoming features by turning on the preview experience.</span></span>
+
+<span data-ttu-id="fb518-109">如需更多公開推出的全新功能資訊，請查看 [Microsoft 威脅防護新增功能](mtp-whats-new.md)。</span><span class="sxs-lookup"><span data-stu-id="fb518-109">For more information on new capabilities that are generally available, see [What's new in Microsoft Threat Protection](mtp-whats-new.md).</span></span>
+
+
+## <a name="preview-features"></a><span data-ttu-id="fb518-110">預覽功能</span><span class="sxs-lookup"><span data-stu-id="fb518-110">Preview features</span></span>
+<span data-ttu-id="fb518-111">預覽版包含以下功能：</span><span class="sxs-lookup"><span data-stu-id="fb518-111">The following features are included in the preview release:</span></span>
+
+## <a name="august-2019"></a><span data-ttu-id="fb518-112">2019 年 8 月</span><span class="sxs-lookup"><span data-stu-id="fb518-112">August 2019</span></span>
+- <span data-ttu-id="fb518-113">事件</span><span class="sxs-lookup"><span data-stu-id="fb518-113">Incidents</span></span>
+- <span data-ttu-id="fb518-114">自動化調查和修復</span><span class="sxs-lookup"><span data-stu-id="fb518-114">Automated investigation and remediation</span></span>
+- <span data-ttu-id="fb518-115">進階搜捕</span><span class="sxs-lookup"><span data-stu-id="fb518-115">Advanced hunting</span></span> 
