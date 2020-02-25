@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: fedd3a98ef176855c4831bbd055522c073c22d7b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: dd50e5d7291589d12261396aac62e4d07b06909f
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085685"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250423"
 ---
 # <a name="work-with-insights"></a>具備深入解析的工作
 
@@ -23,6 +23,10 @@ Microsoft 受管理的電腦會提供租用戶中的 IT 系統管理員可以使
 - 最常使用哪些應用程式和哪一個時段？
 - 哪些應用程式由機或懸置的生活導致問題？
 - Microsoft 受管理的桌上型電腦作業如何減輕或解決這類問題嗎？
+- 哪些應用程式會耗用最能源？
+- 什麼是預測的電池壽命我的裝置？
+- 什麼是安全性更新裝置上的目前狀態？
+- 花多少時間並未 95%的裝置來取得目前的最新的安全性更新？
 
 若要存取這些檢視來自 Microsoft 365 系統管理中心，選取**檢視詳細資料****報告**] 區域中：
 
@@ -46,3 +50,9 @@ Microsoft 受管理的電腦會提供租用戶中的 IT 系統管理員可以使
 這個檢視顯示您的應用程式和裝置的預計的電池壽命能源消耗資訊在您的環境中。 若要檢視這項資訊，請選取 [**電池**] 索引標籤。
 
 深入了解[電池觀點](battery-insights.md)。
+
+## <a name="windows-security-update-insights"></a>Windows 安全性更新深入解析
+
+這個檢視會顯示您的 Microsoft 受管理的電腦裝置的安全性更新的狀態資訊。 若要檢視這項資訊，請選取 [ **Windows 安全性 udates** ] 索引標籤。
+
+深入了解[安全性更新觀點](security-update-insights.md)。

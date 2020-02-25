@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 708e55db1c39d85501b1c42f9a46821bbc2eff9e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c7f1bba23379b25ccecc427b2aa866a1105396d
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600430"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235012"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
 適用於：****
 - Microsoft 威脅防護
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 `DeviceLogonEvents` [進階的狩獵](advanced-hunting-overview.md)結構描述中的表格包含使用者的登入及其他驗證事件的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
