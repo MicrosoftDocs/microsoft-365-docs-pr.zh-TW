@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 當建立敏感度標籤時，您可以限制標籤將套用至其中之內容的存取。敏感度標籤可以使用加密來保護內容。
-ms.openlocfilehash: 102d1da2ec5f49e26a634611f4f640a083d167ff
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.openlocfilehash: ef4b5c9768687864427a0805039a35958c476142
+ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101263"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42278769"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容 
 
@@ -85,7 +85,7 @@ ms.locfileid: "42101263"
 |**具有系統管理員定義權限的標籤**|原始加密已移除|新標籤加密已套用|原始加密已移除|
 
 請注意，在套用新標籤加密或移除原始加密的情況下，只有在套用標籤的使用者有支援此動作的使用權利或角色時，才會發生這種情況：
-- [使用權限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions)匯出或完全控制。
+- [使用權限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)匯出或完全控制。
 - [版權管理簽發者或版權管理擁有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)的角色，或[超級使用者](https://docs.microsoft.com/azure/information-protection/configure-super-users)。
 
 如果使用者沒有這些權限或角色中的一個，就無法套用標籤，因此會保留原始加密。 使用者會看到下列訊息：**您沒有對敏感度標籤進行變更所需的權限。請連絡內容的擁有者。**

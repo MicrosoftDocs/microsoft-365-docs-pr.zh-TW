@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: 系統管理員和 IT 專業人員的 Microsoft 365 說明中心
-summary: 探索 Microsoft 365 的說明和訓練資源。
+title: 適用於系統管理員和 IT 專業人員的 Microsoft 365 說明中心
+summary: 探索 Microsoft 365 說明與訓練資源。
 brand: m365
 metadata:
-  title: 系統管理員和 IT 專業人員的 Microsoft 365 說明中心
-  description: 設定、 部署及管理 Microsoft 365，以支援您的組織、 小型企業版、 活動，或授課和學生
+  title: 適用於系統管理員和 IT 專業人員的 Microsoft 365 說明中心
+  description: 設定、部署及管理 Microsoft 365 以支援貴組織、小型企業、行銷活動或教育者與學生
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.topic: hub-page
@@ -15,19 +15,19 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: 0575321bf9ed7953389e5a6a8be6b8c21479326a
   ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-TW
   ms.lasthandoff: 02/24/2020
   ms.locfileid: "42250463"
 highlightedContent:
   items:
-  - title: 系統管理員和 IT 專業人員訓練
+  - title: 適用於系統管理員和 IT 專業人員的訓練
     itemType: learn
     url: https://docs.microsoft.com/learn/m365/
-  - title: 訓練使用者
+  - title: 適用於終端使用者的訓練
     itemType: learn
     url: https://support.office.com/modernworkplace
-  - title: 在雲端設定您的業務
+  - title: 在雲端中設立您的公司
     itemType: learn
     url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
   - title: 適用於 IT 專業人員的測試實驗室指南
@@ -36,35 +36,35 @@ highlightedContent:
   - title: Microsoft 365 技術社群
     itemType: get-started
     url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
-  - title: 適用於開發人員資源
+  - title: 適用於開發人員的資源
     itemType: reference
     url: https://developer.microsoft.com/microsoft-365
 additionalContent:
   sections:
-  - title: 取得 Microsoft 365 的說明
-    summary: 選取要深入了解 Microsoft 365 的卡片。
+  - title: 取得 Microsof 365 的說明
+    summary: 選取卡片以深入了解 Microsoft 365。
     items:
     - title: Microsoft 365 系統管理中心
-      summary: 設定和管理您的 Office 365 和 Microsoft 365 商務和企業 subspcriptions。
+      summary: 設定及管理適用於您公司和企業訂閱的 Office 365 和 Microsoft 365。
       url: ./admin/admin-home.md
     - title: Microsoft 365 商務版
-      summary: 設計適用於中小型企業。 使用最新版的 Windows 和 Office 應用程式，如 Excel 和 Outlook 執行您的業務。 利用資料保護和延伸至所有商務裝置的安全性。
+      summary: 專為中小型企業設計。 使用最新版本的 Windows 和 Office App (例如 Excel 和 Outlook) 處理業務。 利用可延伸至所有商務裝置的資料保護和安全性。
       url: ./business/index.yml
     - title: Microsoft 365 企業版
-      summary: 專為大型組織。 保護您的商業並改造您使用 Office 應用程式、 Windows 10 和 Enterprise Mobility + Security 的方式。
+      summary: 專為大型組織設計。 保護您的企業並轉變您使用 Office App、Windows 10 及 Enterprise Mobility + Security 的方式。
       url: ./enterprise/index.yml
     - title: Microsoft 365 教育版
-      summary: 針對授課者解放創意、 提升團隊合作，並提供簡單且安全的體驗，為教育打造單一且價格合理解決方案所設計。
+      summary: 專為授課者設計，以為教育打造之單一且價格合理的教育解決方案中來解放創意、提升團隊合作，並提供簡單且安全的體驗。
       url: https://docs.microsoft.com/education/
     - title: Microsoft 365 合規性
-      summary: 協助貴組織控管資訊、 防範風險，並遵守法律或法規的標準。
+      summary: 協助貴組織管理資訊、防範風險，並遵守法務或法規標準。
       url: ./compliance/index.yml
     - title: Microsoft 365 安全性
-      summary: 瞭解健全安全性解決方案，以及 Microsoft 365 安全性中的服務，讓您可以更妥善地保護貴組織的攻擊面。
+      summary: 了解 Microsoft 365 安全性中強大的安全性解決方案與服務，讓您能夠更進一步全方面保護組織免受攻擊。
       url: ./security/index.yml
     - title: 適用於行銷活動的 Microsoft 365
-      summary: 將您的行銷活動或商務資料和通訊的安全與 Microsoft 365 商務版的建議組態。
+      summary: 使用 Microsoft 365 商務版推薦的設定，保持行銷活動或商務資料和通訊的安全。
       url: ./campaigns/index.md
     - title: Microsoft 受管理的電腦
-      summary: Microsoft 受管理電腦聚集所有同等級 Microsoft 365 企業版、 Microsoft，以及安全性監視，雲端式裝置管理讓您以釋出您的 IT 小組，以專注在核心業務需求。
+      summary: Microsoft 受管理的電腦將 Microsoft 365企業版、Microsoft 雲端式裝置管理和安全監控結合在一起，使您的 IT 團隊有時間得以專注於核心業務需求。
       url: ./managed-desktop/index.yml

@@ -6,7 +6,7 @@
       href: microsoft-365-business-overview.md
     - name: 取得 Microsoft 365 商務版
       href: sign-up.md
-    - name: 保護資料的先決條件
+    - name: 資料保護的先決條件
       href: pre-requisites-for-data-protection.md
     - name: 設定
       items:
@@ -59,7 +59,7 @@
           href: reset-devices-to-factory-settings.md
         - name: 將保護功能對應到 Intune 設定
           href: map-protection-features-to-intune-settings.md
-        - name: Android 和 iOS 適用的應用程式保護設定
+        - name: 適用於 Android 和 iOS 的應用程式防護設定
           href: app-protection-settings-for-android-and-ios.md
           items:
             - name: 驗證 Android 或 iOS 上的設定
@@ -69,7 +69,7 @@
           items:
             - name: 驗證 Windows 10 電腦上的設定
               href: validate-settings-on-windows-10-pcs.md
-        - name: 適用於 Windows 10 電腦的 App 保護設定
+        - name: 適用於 Windows 10 電腦的應用程式防護設定
           href: protection-settings-for-windows-10-devices.md
     - name: 移轉至 Microsoft 365 商務版
       items:
@@ -79,7 +79,7 @@
           href: migrate-from-e3.md
         - name: 移轉至 Microsoft 365 企業版
           href: migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md
-    - name: 計費
+    - name: 帳單
       items:
         - name: 您的帳單
           href: /Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json

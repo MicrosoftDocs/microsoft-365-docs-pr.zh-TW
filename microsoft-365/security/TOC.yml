@@ -41,17 +41,17 @@
           items:
             - name: 什麼是 Microsoft 威脅防護？
               href: mtp/microsoft-threat-protection.md
-            - name: What's new in Microsoft 威脅防護
+            - name: Microsoft 威脅防護的新增功能
               href: mtp/whats-new.md
             - name: Microsoft 365 安全性中心
               href: mtp/overview-security-center.md
             - name: 必要條件
               href: mtp/prerequisites.md
-            - name: 資料安全性和隱私權
+            - name: 資料安全性及隱私權
               href: mtp/data-privacy.md
-            - name: 疑難排解問題
+            - name: 針對問題進行疑難排解
               href: ./mtp/troubleshoot.md
-        - name: How to 輔助線
+        - name: 操作指南
           items:
             - name: 開啟 Microsoft 威脅防護
               href: mtp/mtp-enable.md
@@ -67,29 +67,29 @@
                   href: mtp/manage-incidents.md
             - name: 自動調查及回應
               items:
-                - name: 空調概觀
+                - name: AIR 概觀
                   href: mtp/mtp-autoir.md
                 - name: 補救動作
                   href: mtp/mtp-remediation-actions.md
                 - name: 重要訊息中心
                   href: mtp/mtp-action-center.md
-                - name: 檢視自動化的調查詳細資料和結果
+                - name: 檢視自動調查的詳細資料和結果
                   href: mtp/mtp-autoir-results.md
-                - name: 核准或拒絕擱置中的動作
+                - name: 核准或拒絕擱置動作
                   href: mtp/mtp-autoir-actions.md
-                - name: 報表 positive/誤判
+                - name: 回報誤判/漏報
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: 進階搜捕
               items:
                 - name: 在 Microsoft 365 中搜尋
                   href: mtp/hunting.md
-                - name: 進階的狩獵概觀
+                - name: 進階搜捕概觀
                   href: mtp/advanced-hunting-overview.md
                 - name: 了解查詢語言
                   href: mtp/advanced-hunting-query-language.md
                 - name: 使用共用查詢
                   href: mtp/advanced-hunting-shared-queries.md
-                - name: 裝置和電子郵件上搜尋
+                - name: 查尋裝置和電子郵件
                   href: mtp/advanced-hunting-query-emails-devices.md
                 - name: 了解結構描述
                   href: mtp/advanced-hunting-schema-tables.md
@@ -136,9 +136,9 @@
                   href: mtp/microsoft-secure-score.md
                 - name: 安全分數 (預覽)
                   href: mtp/microsoft-secure-score-preview.md
-                - name: 什麼即將
+                - name: 即將推出的功能
                   href: mtp/microsoft-secure-score-whats-coming.md
-            - name: 報表
+            - name: 報告
               items:
                 - name: 監視及檢視報告
                   href: mtp/monitoring-and-reporting.md
@@ -150,7 +150,7 @@
                   href: mtp/monitor-devices.md
                 - name: 應用程式監視與報告
                   href: mtp/monitor-apps.md
-            - name: 權限 & 設定
+            - name: 權限與設定
               items:
                 - name: 管理存取權
                   href: mtp/mtp-permissions.md
@@ -160,7 +160,7 @@
               href: ./mtp/tickets.md
     - name: Office 365 安全性
       items:
-        - name: 開始使用
+        - name: 入門
           items:
             - name: Office 365 安全性藍圖
               href: ./office-365-security/security-roadmap.md
@@ -187,9 +187,9 @@
                       href: ./office-365-security/configure-anti-malware-policies.md
                     - name: 將惡意程式碼與非惡意程式碼提交給 Microsoft 進行分析
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
-                    - name: 復原從勒索軟體攻擊
+                    - name: 從勒索軟體的攻擊中復原
                       href: ./office-365-security/recover-from-ransomware.md
-                    - name: Sharepoint Online 中的病毒偵測
+                    - name: SharePoint Online 中的病毒偵測
                       href: ./office-365-security/virus-detection-in-spo.md
                 - name: 進階垃圾郵件篩選選項
                   href: ./office-365-security/advanced-spam-filtering-asf-options.md
@@ -203,7 +203,7 @@
                   href: ./office-365-security/safe-sender-and-blocked-sender-lists-faq.md
                 - name: Office 365 電子郵件的安全提示
                   href: ./office-365-security/safety-tips-in-office-365.md
-                - name: 當寄件者被封鎖，無法傳送輸出垃圾郵件時的範例通知
+                - name: 當寄件者被封鎖，無法傳送外寄垃圾郵件時的範例通知
                   href: ./office-365-security/sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md
                 - name: 利用使用者垃圾郵件通知來釋放並回報被當成垃圾郵件隔離的郵件
                   href: ./office-365-security/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md
@@ -215,7 +215,7 @@
                   href: ./office-365-security/how-policies-and-protections-are-combined.md
                 - name: 如何減少 Office 365 中的垃圾郵件
                   href: ./office-365-security/reduce-spam-email.md
-                - name: 控制 Office 365 的輸出垃圾郵件
+                - name: 控制 Office 365 的外寄垃圾郵件
                   href: ./office-365-security/outbound-spam-controls.md
                 - name: 利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件，以避免誤判問題
                   href: ./office-365-security/reduce-spam-email.md
@@ -346,9 +346,9 @@
         - name: 進階威脅防護
           href: ./office-365-security/office-365-atp.md
           items:
-            - name: 查看新功能
+            - name: 查看新增功能
               items:
-                - name: Office 365 ATP 中的新功能
+                - name: Office 365 ATP 中的新增功能
                   href: office-365-security/whats-new-in-office-365-atp.md
             - name: 系統管理員的 ATP 設定工作
               items:
@@ -368,19 +368,19 @@
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: 行銷活動檢視
               href: ./office-365-security/campaigns.md
-            - name: 了解最新的攻擊與潛在威脅分析
+            - name: 使用威脅分析了解最新的攻擊
               href: ./mtp/latest-attack-campaigns.md
             - name: 自動調查及回應
               items:
-                - name: 空調概觀
+                - name: AIR 概觀
                   href: ./office-365-security/office-365-air.md
-                - name: 檢視自動化的調查詳細資料和結果
+                - name: 檢視自動調查的詳細資料和結果
                   href: ./office-365-security/air-view-investigation-results.md
-                - name: 核准或拒絕擱置中的動作
+                - name: 核准或拒絕擱置動作
                   href: ./office-365-security/air-remediation-actions.md
-                - name: 整合空調自訂解決方案或協力廠商解決方案
+                - name: 整合 AIR 與自訂解決方案或協力廠商解決方案
                   href: ./office-365-security/air-custom-reporting.md
-            - name: 偵測並快速地址危害的使用者帳戶
+            - name: 快速偵測和處理受影響的使用者帳戶
               href: ./office-365-security/address-compromised-users-quickly.md
             - name: 調查並修復惡意電子郵件
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
@@ -394,7 +394,7 @@
               href: ./office-365-security/attack-simulator.md
             - name: Office 365 ATP 中的安全文件
               href: ./office-365-security/safe-docs.md
-            - name: 威脅總管 （和即時偵測的資訊）
+            - name: 威脅總管 (及即時偵測)
               href: ./office-365-security/threat-explorer.md
               items:
                 - name: 威脅總管檢視
@@ -407,7 +407,7 @@
                   href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: ATP 的運作方式
               items:
-                - name: 如何自動化的調查及回應運作
+                - name: 自動調查及回應的運作方式
                   href: ./office-365-security/automated-investigation-response-office.md
                 - name: ATP 安全連結的運作方式
                   href: ./office-365-security/how-atp-safe-links-works.md
@@ -433,7 +433,7 @@
           items:
             - name: 啟用報告訊息增益集
               href: ./office-365-security/enable-the-report-message-add-in.md
-            - name: 安全性與合規性中心內的訊息追蹤
+            - name: 安全性與合規性中心內的郵件追蹤
               href: ./office-365-security/message-trace-scc.md
             - name: 檢視安全性與合規性中心內的電子郵件安全性報告
               href: ./office-365-security/view-email-security-reports.md
@@ -448,11 +448,11 @@
                   href: ./office-365-security/mfi-smtp-auth-clients-report.md
                 - name: 修正寄件者網域深入解析
                   href: ./office-365-security/mfi-sender-domain-insight.md
-                - name: 未傳遞回報
+                - name: 未傳遞報告
                   href: ./office-365-security/mfi-non-delivery-report.md
                 - name: 非公認的網域報告
                   href: ./office-365-security/mfi-non-accepted-domain-report.md
-                - name: 輸出和輸入郵件流程
+                - name: 外寄和內送郵件流程
                   href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
                 - name: 佇列警示和佇列
                   href: ./office-365-security/mfi-queue-alerts-and-queues.md
@@ -586,7 +586,7 @@
                   href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
                 - name: 設定虛擬憑證集合以驗證 S/MIME
                   href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
-        - name: Office 365 Enterprise
+        - name: Office 365 企業版
           href: 'https://docs.microsoft.com/office-365-security/Enterprise'
         - name: 商務用 Office 365
           href: 'https://docs.microsoft.com/office-365-security/admin/admin-home'

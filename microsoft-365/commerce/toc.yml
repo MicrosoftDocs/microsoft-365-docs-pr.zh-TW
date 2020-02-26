@@ -1,4 +1,4 @@
-- name: 管理商務購買和計費
+- name: 管理商務購買和帳單
   href: index.md
   expanded: true
   items:
@@ -6,11 +6,11 @@
       items:
         - name: 管理協力廠商應用程式
           href: manage-saas-apps.md
-        - name: 升級的訂閱
+        - name: 升級訂閱
           href: /microsoft-365/commerce/subscriptions/upgrade-to-different-plan
-        - name: 管理自助訂購 （使用者）
+        - name: 管理自助購買 (使用者)
           href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-users
-        - name: 管理自助訂購 （系統）
+        - name: 管理自助購買 (管理員)
           href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins
     - name: 管理授權
       items:
@@ -22,23 +22,23 @@
           href: /microsoft-365/admin/manage/remove-licenses-from-users
         - name: 從訂閱中移除授權
           href: /microsoft-365/commerce/licenses/remove-licenses-from-subscription
-    - name: 帳單和付款
+    - name: 帳單與付款
       items:
-        - name: 了解您的帳單
+        - name: 了解您的發票
           href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
-        - name: 管理付款方法
+        - name: 管理付款方式
           href: /microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account
-        - name: 管理帳單的設定檔
+        - name: 管理帳單設定檔
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
-        - name: 付款服務指示詞 2 和強式客戶驗證
+        - name: 第二號支付服務指令和加強客戶驗證
           href: /microsoft-365/commerce/billing-and-payments/psd2
     - name: 帳單帳戶
       items:
         - name: 管理帳單帳戶
           href: /microsoft-365/commerce/billing-accounts/manage-billing-accounts
-        - name: 與我的帳單帳戶產生關聯的租用戶
+        - name: 建立租用戶與帳單帳戶的關聯
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
-    - name: 與我協力廠商管理關係
+    - name: 管理與合作夥伴之間的關聯
       href: manage-partners.md
     - name: 關閉您的帳戶
       href: close-your-account.md
