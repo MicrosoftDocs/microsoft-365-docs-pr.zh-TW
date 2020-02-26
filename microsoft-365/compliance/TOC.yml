@@ -698,27 +698,30 @@
           href: manage-jobs.md
 - name: 管理稽核和警示原則
   items:
-    - name: 搜尋稽核記錄
-      href: search-the-audit-log-in-security-and-compliance.md
+    - name: 整合的稽核
+      items:
+        - name: 搜尋稽核記錄
+          href: search-the-audit-log-in-security-and-compliance.md
+        - name: 開啟或關閉稽核記錄搜尋
+          href: turn-audit-log-search-on-or-off.md
+        - name: 稽核記錄中的詳細內容
+          href: detailed-properties-in-the-office-365-audit-log.md
+        - name: 匯出、 設定及檢視稽核記錄檔的記錄
+          href: export-view-audit-log-records.md
+        - name: 使用稽核記錄調查常見問題
+          href: auditing-troubleshooting-scenarios.md
+        - name: 使用稽核記錄中的共用稽核
+          href: use-sharing-auditing.md
+        - name: 在稽核記錄中搜尋電子文件探索活動
+          href: search-for-ediscovery-activities-in-the-audit-log.md
+    - name: 信箱稽核
+      href: enable-mailbox-auditing.md
     - name: 進階的稽核
       href: advanced-audit.md
-    - name: 開啟或關閉稽核記錄搜尋
-      href: turn-audit-log-search-on-or-off.md
-    - name: 管理信箱稽核
-      href: enable-mailbox-auditing.md
-    - name: 管理稽核記錄保留原則
-      href: audit-log-retention-policies.md
-    - name: 稽核記錄中的詳細內容
-      href: detailed-properties-in-the-office-365-audit-log.md
-    - name: 匯出、 設定及檢視稽核記錄檔的記錄
-      href: export-view-audit-log-records.md
-    - name: 使用稽核記錄調查常見問題
-      href: auditing-troubleshooting-scenarios.md
-    - name: 使用稽核記錄中的共用稽核
-      href: use-sharing-auditing.md
-    - name: 在稽核記錄中搜尋電子文件探索活動
-      href: search-for-ediscovery-activities-in-the-audit-log.md
-    - name: 管理警示原則
+      items:
+        - name: 管理稽核記錄保留原則
+          href: audit-log-retention-policies.md
+    - name: 警示原則
       href: alert-policies.md
 - name: 管理合規性風險
   items:

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 進階電子文件可以輕鬆管理周圍通知 custodians 法律調查中的合法持有通知工作流程。
-ms.openlocfilehash: 4ca3e5a8e500f6a8e5a5483ccc3efd070c05c5cd
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3e9fb2bc67fc5eac181afab8ba5c78c4236fb980
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071580"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280121"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>使用進階電子文件中的通訊
 
@@ -37,32 +37,34 @@ ms.locfileid: "42071580"
 
 使用進階電子文件，法務小組可以建立並自訂其合法持有通知工作流程。 Custodian 通訊工具可以讓法務小組設定下列通知及工作流程：
 
-1. **發行請注意**： 合法持有通知會發出 （或起始） 從法務部門通知給 custodians 人員可能會有區分大小專家的相關資訊。 此通知會指示 custodians 保留探索可能需要的任何資訊。
-   
-2.  **重新發行請注意**： 期間情況下，custodians 可能需要其他內容 （或較少的內容） 保留較先前要求。 此案例中，可以更新現有的保留通知，並重新發出到 custodians。
+1. **發行注意事項：** 合法持有通知是發出 （或起始） 從法務部門通知給 custodians 人員可能會有區分大小專家的相關資訊。 此通知會指示 custodians 保留探索可能需要的任何資訊。
 
-3.  **版本請注意**： 一旦專家會解析及 custodian 不再受到保留需求，可以從這種情況釋放 custodian。 此外，您可以通知 custodian 它們不再需要保留內容，並提供有關如何繼續其資料與其一般工作活動的指示。
+2. **重新發行注意事項：** 期間情況下，custodians 可能需要其他內容 （或較少的內容） 保留較先前要求。 此案例中，可以更新現有的保留通知，並重新發出到 custodians。
 
-4. **提醒和呈報**： 在某些情況下，只發出通知是不足以滿足法律需求。 與每個通知法務小組可以排程提醒和呈報工作流程，以自動停止回應 custodians 的待處理一組。
+3. **釋出注意事項：** 一旦專家會解析及 custodian 不再受到保留需求，可從案例釋放 custodian。 此外，您可以通知 custodian 它們不再需要保留內容，並提供有關如何繼續其資料與其一般工作活動的指示。
 
-    - **提醒**： 已發出或重新發行給一群 custodians 合法持有通知之後，組織可以設定提醒，提醒回應 custodians。
+4. **提醒和呈報：** 在某些情況下，只發出通知是不足以滿足法律需求。 與每個通知法務小組可以排程來自動追蹤與回應 custodians 提醒及呈報工作流程的一組。
 
-    - **擴大**： 在某些情況下，如果 custodian 即使之後提醒一組經過一段時間，仍然無法回應法律小組可以設定呈報流程通知回應 custodians 和其主管。
+   - **提醒：** 已發出或重新發行給一群 custodians 合法持有通知之後，組織可以設定提醒，提醒回應 custodians。
 
-## <a name="role-groups-and-permissions"></a>角色群組和權限 
+   - **擴大：** 在某些情況下，如果 custodian 即使之後提醒一組經過一段時間，仍然無法回應法律小組可以設定呈報流程通知回應 custodians 和其主管。
+
+## <a name="role-groups-and-permissions"></a>角色群組和權限
 
 法律小組可以控制及隔離他們安全性 & 合規性中心使用 eDiscovery 相關的角色群組和權限的案例活動。 
 
-若要建立及管理合法持有通知，使用者必須是下列角色群組的一部分：
+若要建立及管理合法持有通知，使用者必須執行 eDiscovery 管理員角色群組的成員。 這個角色群組的成員可以建立及管理進階電子文件探索案例。 他們可以新增和移除成員、 位置 custodians 上的內容位置保留、 管理合法持有通知、 建立和編輯在案例相關聯的搜尋、 將搜尋結果新增至檢閱設定、 分析中檢閱設定，並匯出資料並從進階下載eDiscovery 案例。 
 
-- **eDiscovery 管理員**這個角色群組的成員可以建立及管理 eDiscovery 案例。 他們可以新增和移除成員，放置 custodians 及內容的位置上保留、 管理合法持有通知、 建立及編輯與案例相關聯的內容搜尋、 匯出內容搜尋結果，以及準備進階中分析的搜尋結果eDiscovery。 有兩個此角色群組中的子群組。 這些子群組之間的差異根據範圍。
+有兩個的子群組 eDiscovery 管理員角色群組。 這些子群組之間的差異根據範圍。
 
-  - **eDiscovery 管理員**-可檢視及管理 eDiscovery 案例他們建立或成員。 如果其他 eDiscovery 管理員會建立案例，但不會將第二個 eDiscovery 管理員新增為該案例的成員，第二個 eDiscovery 管理員無法檢視或在安全 & 與規範中心中開啟 [eDiscovery] 頁面上的案例。 eDiscovery 管理員也可以存取其執行分析工作的進階電子文件中的案例。
+- **eDiscovery 管理員：** 可以檢視及管理進階電子文件探索案例他們建立或成員。 如果其他 eDiscovery 管理員會建立案例，但不會將第二個 eDiscovery 管理員新增為該案例的成員，第二個 eDiscovery 管理員無法檢視或在安全 & 與規範中心中開啟 [進階電子文件] 頁面上的案例。
 
-  - **eDiscovery 系統管理員**-可以執行 eDiscovery 管理員可以執行的所有案例的管理工作。 此外，eDiscovery 系統管理員可以：
-    
-    - 檢視 [eDiscovery] 頁面上列出的所有案例。
-    - 在自行新增為案例的成員之後管理組織中的任何案例。
-    - 存取組織中任何案例的進階電子文件中的案例資料。
+- **eDiscovery 系統管理員：** 可以執行 eDiscovery 管理員可以執行的所有案例的管理工作。 此外，eDiscovery 系統管理員可以：
+
+  - 在 [進階電子文件] 頁面上檢視所有的情況下所列。
+  
+  - 在自行新增為案例的成員之後管理組織中的任何案例。
+
+  - 在組織中任何案例的進階電子文件中的存取和匯出案例資料。
 
 如需詳細資訊，請參閱[指派安全性 & 合規性中心的 eDiscovery 權限](assign-ediscovery-permissions.md)。

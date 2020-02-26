@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: '了解如何變更 Office 365 的預設佈景主題，然後進行自訂以符合您的公司標誌或色彩。 '
-ms.openlocfilehash: b59efa21195c0c7bed12c98b9d360d84451b3d35
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 729f029f58a19ed819b194deff526fc9b44757c5
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240246"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280181"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>自訂您組織的 Office 365 佈景主題
 
@@ -43,7 +43,7 @@ ms.locfileid: "42240246"
   - **使用自訂標誌映像**： 選擇是否要使用圖像的 URL，或上傳影像。 如果您使用的 URL，請確定使用 HTTPS 的 URL，而是任何格式的任何大小的 200 x 30 像素。 您可以上傳標誌的 JPG、 PNG、 GIF 或 SVG 格式 200 x 30 像素小於 10 的 KB。
 
     > [!NOTE]
-    > 在 SharePoint 行動應用程式中顯示的標誌，使用僅限 SVG 影像。 上傳中任何其他格式的影像不會顯示在應用程式中。 
+    > 在 SharePoint 行動應用程式中顯示的標誌，使用僅限 SVG 影像。 上傳中任何其他格式的影像不會顯示在應用程式中。 標誌不可點選 SharePoint 行動應用程式。
     
   - **請可點選標誌**： 您可以使用您的標誌在導覽列中的任何公司資源的連結。 您可能輸入 http:// 或 https:// 開頭在這裡，標誌的 URL。 這是選擇性的。
     

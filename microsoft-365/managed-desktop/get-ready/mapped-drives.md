@@ -1,19 +1,20 @@
 ---
-title: 對應磁碟機準備 Microsoft 受管理的電腦
+title: 為 Microsoft 受管理的電腦準備對應磁碟機
 description: 若要確定重要步驟
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: e4c2dbe8f1cae12aa1b10c6cd43f295a9a6062d0
-ms.sourcegitcommit: 8102751ae20c93439e19afded396c4e6ee5ea5a5
+ms.openlocfilehash: 8bdbbefb1fc3bfff324787eedb497afe781184f0
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34100709"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280171"
 ---
-#  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>對應磁碟機準備 Microsoft 受管理的電腦
+#  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>為 Microsoft 受管理的電腦準備對應磁碟機
 
 許多企業環境有舊版的需求，以允許共用及儲存檔案，其使用者或小組的對應磁碟機或內部部署應用程式。 Microsoft 不建議使用對應的磁碟機與 Microsoft 受管理的電腦。 相反地，我們建議您現代化 yor 檔案存取解決方案，如下所示：
   
