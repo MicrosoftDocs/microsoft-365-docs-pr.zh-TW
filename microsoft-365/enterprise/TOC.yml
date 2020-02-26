@@ -8,79 +8,79 @@
     - name: 部署基礎結構
       href: deploy-foundation-infrastructure.md
       items:
-        - name: 階段 1-網路
+        - name: 階段 1 - 網路
           href: networking-infrastructure.md
           items:
-            - name: 步驟 1-準備用於 Microsoft 365 的網路
+            - name: 步驟 1 - 準備用於 Microsoft 365 的網路
               href: networking-provide-bandwidth-cloud-services.md
-            - name: 步驟 2-設定每個辦公室的當地網際網路連線
+            - name: 步驟 2 - 設定每個辦公室的當地網際網路連線
               href: networking-dns-resolution-same-location.md
-            - name: 步驟 3-避免網路 hairpin
+            - name: 步驟 3 - 避免網路 Hairpin
               href: networking-avoid-network-hairpins.md
-            - name: 步驟 4-設定流量旁路
+            - name: 步驟 4 - 設定流量旁路
               href: networking-configure-proxies-firewalls.md
-            - name: 步驟 5-最佳化用戶端和 Office 365 服務效能
+            - name: 步驟 5 - 最佳化用戶端和 Office 365 服務效能
               href: networking-optimize-tcp-performance.md
             - name: 網路允出準則
               href: networking-exit-criteria.md
-        - name: 階段 2-Identity
+        - name: 階段 2 - 身分識別
           href: identity-infrastructure.md
           items:
-            - name: 步驟 1-建立和保護您的全域系統管理員帳戶
+            - name: 步驟 1 - 建立和保護您的全域系統管理員帳戶
               href: identity-create-protect-global-admins.md
-            - name: 步驟 2-保護您的密碼
+            - name: 步驟 2 - 保護您的密碼
               href: identity-secure-your-passwords.md
-            - name: 步驟 3-保護和管理您的使用者登入
+            - name: 步驟 3 - 保護和管理您的使用者登入
               href: identity-secure-user-sign-ins.md
-            - name: 步驟 4-新增使用者帳戶
+            - name: 步驟 4 - 新增使用者帳戶
               href: identity-add-user-accounts.md
-            - name: 步驟 5-使用群組來管理
+            - name: 步驟 5 - 使用群組進行管理
               href: identity-use-group-management.md
-            - name: 步驟 6-設定身分識別管理
+            - name: 步驟 6 - 設定身分識別治理
               href: identity-configure-identity-governance.md
             - name: 身分識別允出準則
               href: identity-exit-criteria.md
-        - name: 階段 3-Windows 10 企業版
+        - name: 階段 3 - Windows 10 企業版
           href: windows10-infrastructure.md
           items:
-            - name: 步驟 1-準備您的組織
+            - name: 步驟 1 - 準備您的組織
               href: windows10-prepare-your-org.md
-            - name: 步驟 2-部署為就地升級
+            - name: 步驟 2 - 部署為就地升級
               href: windows10-deploy-inplaceupgrade.md
-            - name: 步驟 3-部署新裝置
+            - name: 步驟 3 - 部署新裝置
               href: windows10-deploy-autopilot.md
-            - name: 步驟 4-監控裝置健全狀況和合規性
+            - name: 步驟 4 - 監控裝置健全狀況和合規性
               href: windows10-enable-windows-analytics.md
-            - name: 步驟 5-部署安全性功能
+            - name: 步驟 5 - 部署安全性功能
               href: windows10-enable-security-features.md
             - name: Windows 10 企業版允出準則
               href: windows10-exit-criteria.md
-        - name: 階段 4-Office 365 專業增強版
+        - name: 階段 4 - Office 365 專業增強版
           href: office365proplus-infrastructure.md
           items:
             - name: Office 365 專業增強版允出準則
               href: office365proplus-exit-criteria.md
-        - name: 階段 5-行動裝置管理
+        - name: 階段 5 - 行動裝置管理
           href: mobility-infrastructure.md
           items:
             - name: 行動裝置管理允出準則
               href: mobility-infrastructure-exit-criteria.md
-        - name: 階段 6-資訊保護
+        - name: 階段 6 - 資訊保護
           href: infoprotect-infrastructure.md
           items:
-            - name: 步驟 1-定義安全性和資訊保護層級
+            - name: 步驟 1 - 定義安全性和資訊保護層級
               href: infoprotect-define-sec-infoprotect-levels.md
-            - name: 步驟 2-設定環境的分類
+            - name: 步驟 2 - 設定環境的分類
               href: infoprotect-configure-classification.md
-            - name: 步驟 3-設定增強的 Microsoft 365 安全性
+            - name: 步驟 3 - 設定增強的 Microsoft 365 安全性
               href: infoprotect-configure-increased-security-office-365.md
-            - name: 步驟 4-Windows 資訊保護設定
+            - name: 步驟 4 - 設定 Windows 資訊保護
               href: infoprotect-deploy-windows-information-protection.md
-            - name: 步驟 5-設定 Office 365 資料外洩防護
+            - name: 步驟 5 - 設定 Office 365 資料外洩防護
               href: infoprotect-data-loss-prevention.md
-            - name: 步驟 6-設定電子郵件加密
+            - name: 步驟 6 - 設定電子郵件加密
               href: infoprotect-email-encryption.md
-            - name: 步驟 7-設定 Office 365 的特殊權限的存取管理
+            - name: 步驟 7 - 設定 Office 365 的特殊權限存取管理
               href: infoprotect-configure-privileged-access-management.md
             - name: 資訊保護允出準則
               href: infoprotect-exit-criteria.md
@@ -159,7 +159,7 @@
               href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
             - name: 資料分類
               href: data-classification-microsoft-365-enterprise-dev-test-environment.md
-            - name: 特許存取管理
+            - name: 特殊權限存取管理
               href: privileged-access-microsoft-365-enterprise-dev-test-environment.md
     - name: Contoso 案例研究
       href: contoso-case-study.md
@@ -186,12 +186,12 @@
           href: contoso-team-for-top-secret-project.md
         - name: 適用於高度管制資料的 SharePoint 網站
           href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: 變更 Microsoft 365 企業版部署內容
+    - name: Microsoft 365 企業版部署內容的變更
       href: microsoft-365-deploment-guide-changes.md
 - name: 桌面部署中心
   href: desktop-deployment-center-home.md
   items:
-    - name: 快速入門-人員、 流程及技術指導方針
+    - name: 快速入門 - 人員、流程及技術指導方針 (英文)
       href: getting-started.md
     - name: 步驟 1 - 裝置和應用程式整備
       href: step-1-device-and-app-readiness.md
@@ -201,7 +201,7 @@
       href: step-3-office-and-lob-app-delivery.md
     - name: 步驟 4 - 使用者檔案和設定移轉
       href: step-4-user-files-and-settings-migration.md
-    - name: 步驟 5 - 安全性與相容性考量事項
+    - name: 步驟 5 - 安全性與合規性考量事項
       href: step-5-security-and-compliance.md
     - name: 步驟 6 - 作業系統部署與功能更新
       href: step-6-os-deployment-and-feature-updates.md
@@ -221,7 +221,7 @@
   href: ../compliance/index.yml
 - name: Microsoft 365 安全性
   href: ../security/index.yml
-- name: 企業商務營運持續力管理 (EBCM) 與雲端服務
+- name: 企業商務持續性管理 (EBCM) 與雲端服務
   href: ebcm-understanding-ebcm-with-cloud-services.md
   items:
     - name: 客戶與雲端合作夥伴的 EBCM 責任
