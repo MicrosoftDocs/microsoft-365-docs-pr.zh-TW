@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 653b986de8d580a25a1032b77f34db8924d3ea0d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 788021d9bcd531cbd9210299cb90f1cce49db1c7
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085782"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42284364"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>封存的 Microsoft 受管理電腦裝置
 
@@ -35,9 +35,12 @@ ms.locfileid: "42085782"
 
 | Model  | 最小的規格  | 其他需求   | 退休日期 |
 |---------|---------|---------|---------|
+| Dell 緯度 5490| 256 GB / Intel i5 中 / 8 GB RAM | 所需的紅外線相機 | **2023 1 月 9 日，** |
+| Dell 緯度 7390 7390 2-1 / 7490 | 256 GB / Intel i5 中 / 8 GB RAM   | 所需的紅外線相機 | **2023 1 月 9 日，** |
 |HP EliteBook 830 / 840 / 850 版 G5| 128 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線網路攝影機或指紋感應  | **2023 2 月 15日，** |
 |HP 精銳 x2 1013 版 G3| 256 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS03AV，所需的紅外線相機 |**2023 5 月 14日，** |
 |HP EliteBook x360 1030 版 G3| 256 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線相機 |**2023 5 月 14日，** |
+|HP EliteBook x360 1040 版 G5| 256 GB / Intel i5 中 / 8 GB RAM | SKU 與 5VS01AV，所需的紅外線相機 | **2023 Oct 23，** |
 |Surface Book 2| 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 年 11 月 16 日** |
 |Surface Laptop| 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 May 20，** |
 |Surface Pro| 256 GB / Intel i5 中 / 8 GB RAM | 無 | **2022 6 月 15日，** |
@@ -47,7 +50,7 @@ ms.locfileid: "42085782"
 
 - 已核准 Microsoft 受管理電腦的映像。 當您訂購裝置時，請確定您指定，它們所搭配使用 Microsoft 受管理的電腦。
 - 尚未完成 Windows 初次執行體驗。
-- 註冊 Microsoft 受管理的 Destkop 所使用的[裝置註冊](https://aka.ms/mmddrhelp)功能
+- 註冊 Microsoft 受管理的電腦使用的[裝置註冊](https://aka.ms/mmddrhelp)功能
 
 #### <a name="additional-help"></a>額外的說明
 

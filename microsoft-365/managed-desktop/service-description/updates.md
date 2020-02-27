@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: de674da4230697e953c88d812b0edac8cb7904e5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0acbb82001d8856639f5b67daa99323f333e26ad
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250473"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42284374"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中更新的處理方式
 
@@ -32,7 +32,7 @@ Microsoft 受管理的電腦會將所有的裝置連接到新式的基於雲端�
 
 Microsoft 受管理的電腦使用四個 Azure AD 群組管理更新：
 
-- **測試**： 用來驗證 Microsoft 受管理電腦原則變更，作業系統系統更新功能更新，以及其他變更推送至租用戶。 不應該放置在測試群組中任何使用者。 測試群組是免除任何已建立的服務等級協定和使用者支援。 此群組適用於驗證的新原則] 或 [作業系統 hanges 應用程式相容性。  
+- **測試**： 用來驗證 Microsoft 受管理電腦原則變更，作業系統系統更新功能更新，以及其他變更推送至租用戶。 不應該放置在測試群組中任何使用者。 測試群組是免除任何已建立的服務等級協定和使用者支援。 此群組適用於驗證的新原則] 或 [作業系統變更應用程式的相容性。  
 - **第一個**： 包含早期軟體採納者和可能受到搶鮮版更新的裝置。 如果有程式以測試環狀測試期間未深入涵蓋的案例，此群組中的裝置可能會遇到中斷。
 - **Fast**： 來透過穩定性的優先順序速度。 適用於偵測品質問題，其提供給廣泛群組之前。 此群組做為下一個圖層的驗證，但通常更穩定，比測試與第一個群組。 
 - **廣泛**： 有可用的功能和品質更新的最後一個群組。 此群組包含大多數的租用戶中的使用者，並因此偏好穩定性使用透過部署中的速度。 應執行的應用程式的測試環境是最穩定在這裡。 

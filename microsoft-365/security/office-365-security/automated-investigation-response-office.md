@@ -14,18 +14,19 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 在 Office 365 進階威脅防護計劃 2 中，取得自動化調查及回應能力的概觀。
-ms.openlocfilehash: 49b7e95e1669c106ee7f7bf9191ff8e73ae4802f
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.custom: air
+ms.openlocfilehash: 341d950f81d0d74deab901f0e5af24a559c0f342
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42261970"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288501"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>自動化的調查和 Office 365 中的回應 （空調）
 
 為會觸發安全性警訊，它會高達您查看這些提醒，並採取步驟來保護您的組織的安全性作業小組。 有時候，安全性作業小組可以覺得負荷量，便會觸發警示。 自動化的調查和 Office 365 中的回應 （空調） 功能可協助。 空調可讓您操作更有效率的安全性作業小組。 空調功能在今日的熟知威脅的回應中包含自動化的調查程序。 適當的補救動作等候核准，讓您回應偵測到的威脅的安全性作業小組。 
 
-本文提供空調和其元件的概觀。 當您準備好要開始使用空調時，請參閱[自動調查及回應 Office 365 中的威脅](office-365-air.md)。
+本文提供空調的概觀。 當您準備好要開始使用空調時，請參閱[自動調查及回應 Office 365 中的威脅](office-365-air.md)。
 
 ## <a name="at-a-high-level"></a>在高層級
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 決定您的 Office 365 租用戶和使用者是否符合需求，以便您可以使用集中式部署來部署 Office 增益集。
-ms.openlocfilehash: b5cd04100b025705d29f86a07ec5f6aece259a8a
-ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
+ms.openlocfilehash: 09487e0ff495f4b561e7a27eecf2c99fd4da10af
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/26/2020
-ms.locfileid: "42278759"
+ms.locfileid: "42284384"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>判斷是否增益集的集中式部署適用於您的組織
 
@@ -84,7 +84,7 @@ ms.locfileid: "42278759"
 
 ### <a name="exchange-online-requirements"></a>Exchange Online 的需求
 
-Microsoft Exchange 會將增益集資訊清單儲存在貴組織的租用戶中。 部署增益集和收到這些增益集的使用者的系統管理員必須位於 Exchange Online 支援 OAuth 驗證的版本。 根據預設，Exchange 多租用戶和專用 VNext 部署支援 OAuth。 
+Microsoft Exchange 會將增益集資訊清單儲存在貴組織的租用戶中。 部署增益集和收到這些增益集的使用者的系統管理員必須位於 Exchange Online 支援 OAuth 驗證的版本。
   
 請洽詢貴組織的 Exchange 系統管理員，確認現正使用的設定。您可以使用 [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351) PowerShell Cmdlet，驗證每個使用者的 OAuth 連線。 
 

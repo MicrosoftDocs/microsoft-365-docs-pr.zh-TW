@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ba50572405da05359594fea85fdba2d28f3b141b
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: c99ef0634c5858e458b9aa4aa622a7ab55c32088
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235222"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288541"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威脅防護先決條件
 
@@ -36,11 +36,11 @@ ms.locfileid: "42235222"
 了解授權、 硬體及軟體需求及其他組態設定，以佈建並使用 Microsoft 威脅防護。
 
 ## <a name="licensing-requirements"></a>授權需求
-若要使用 Microsoft 威脅防護，您需要下列其中一個下列授權的組合：
+若要使用 Microsoft 威脅防護，您需要*一個*的下列授權的組合：
 
 - Microsoft 365 E5
 - Microsoft 365 E5 安全性
-- Office 365 E5、Enterprise Mobility + Security E5 和 Windows E5
+- Office 365 E5 和 「 Enterprise Mobility + Security E5 (EMS E5) 」 和 Windows E5
 
 [檢視 Microsoft 365 企業版服務計劃](https://www.microsoft.com/en-us/licensing/product-licensing/microsoft-365-enterprise)
 

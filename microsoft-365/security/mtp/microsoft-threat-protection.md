@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: ef68143d185b6b716b8b5c8213b1e4f3ea1a5abd
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 62901a08b8e040266a94967170674336eb1035c8
+ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235072"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288591"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft 威脅防護
 
@@ -34,6 +34,17 @@ ms.locfileid: "42235072"
 Microsoft 威脅防護是整合的預先和文章外洩企業國防版套件的原生整合跨端點、 身分識別、 電子郵件和應用程式，以偵測、 防止、 調查及自動回應縝密的攻擊。  
 
 整合的 Microsoft 威脅防護解決方案，與安全性專業人員可以鏡頭組合在同威脅訊號每項產品接收，並判斷的完整範圍和威脅; 的影響如何輸入它的環境，它是什麼影響，且會它如何目前會影響組織。 Microsoft 威脅防護會採用自動巨集指令，防止或停止攻擊和 self-heal 受影響信箱、 端點及使用者身分識別。  
+
+
+<center><h2>Microsoft 威脅防護服務</center></h2>
+<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender 進階威脅防護</b></center></a></td>
+<td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Office 365 進階的威脅防護</b></center></a></td>
+<td><center><b><a href="https://docs.microsoft.com/azure-advanced-threat-protection/"><b>Azure 的進階的威脅防護</b></a></center></td>
+<td><center><b><a href="https://docs.microsoft.com/cloud-app-security/"><b>Microsoft Cloud App Security</b></a></center></td>
+</tr>
+</table>
+<br>
+
 
 
 Microsoft 威脅防護套件會保護： 
@@ -65,17 +76,8 @@ Microsoft 威脅防護跨產品功能包括：
 - **自我修復的危害的裝置、 使用者身分識別和信箱**-Microsoft 威脅保護使用 AI 提供自動的動作，並以修復受影響的資產 playbooks 回到安全的狀態。 請儘可能，會自動修復 Microsoft 威脅保護利用自動修復功能套件產品以確保所有受影響的資產相關事件。
 - **跨產品威脅狩獵**-安全性小組可以利用其組織的唯一知識，可以建立自己自訂的查詢，透過各種保護產品所收集的未經處理資料搜尋的危害。 Microsoft 威脅防護提供查詢為基礎的歷史原始的訊號和警示資料 30 天存取跨端點和 Office 365 ATP 資料。 
 
-<center><h2>Microsoft 威脅防護服務</center></h2>
-<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender 進階威脅防護</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Office 365 進階的威脅防護</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/azure-advanced-threat-protection/"><b>Azure 的進階的威脅防護</b></a></center></td>
-<td><center><b><a href="https://docs.microsoft.com/cloud-app-security/"><b>Microsoft Cloud App Security</b></a></center></td>
-</tr>
-</table>
-<br>
-
 
 ## <a name="get-started"></a>入門
-擁有 Microsoft 365 E5 或同等授權的客戶可以使用 Microsoft 威脅防護。 若要開始，請啟用[security.microsoft.com](https://security.microsoft.com)在 Microsoft 365 安全性中心中的服務。 如需詳細資訊，請閱讀：
+您可以啟用[security.microsoft.com](https://security.microsoft.com)在 Microsoft 365 安全性中心中的服務之前，必須符合 Microsoft 威脅防護的授權需求。 如需詳細資訊，請閱讀：
 - [授權需求](prerequisites.md#licensing-requirements)
 - [開啟 Microsoft 威脅防護](mtp-enable.md)
