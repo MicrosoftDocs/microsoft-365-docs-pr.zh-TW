@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中設定特殊權限的存取管理
+title: 開始使用特殊權限存取管理
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Solutions
 ms.assetid: ''
-description: 使用此主題以深入了解 Office 365 中設定特殊權限的存取管理
-ms.openlocfilehash: 36a473369ba539230bc4bbb2a630d74830844fc7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 若要深入了解設定特殊權限的存取管理使用本主題。
+ms.openlocfilehash: bb1589252ab7a5f7a512db92666827dd9d3cc2d3
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601730"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322523"
 ---
-# <a name="configuring-privileged-access-management-in-office-365"></a>在 Office 365 中設定特殊權限的存取管理
+# <a name="get-started-with-privileged-access-management"></a>開始使用特殊權限存取管理
 
 >[!IMPORTANT]
 >本主題涵蓋功能目前僅適用於 Office 365 E5 和進階合規性 Sku 的部署和設定指導。
@@ -279,7 +279,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 5. 選取您要刪除的原則，然後選取 [**移除原則**。
 
-6. 選取 [**關閉**]。
+6. 選取 **[關閉]**。
 
 ### <a name="in-exchange-management-powershell"></a>在 [Exchange Management PowerShell
 

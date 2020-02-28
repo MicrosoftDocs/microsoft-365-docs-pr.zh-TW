@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 55c7cb34c5484eaf8f6693be0ce439e33a82550f
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 4d445d4c917a46b12592308f599570725ace8e9d
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266965"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322562"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>什麼 Microsoft 安全分數即將？
 
@@ -59,7 +59,7 @@ ms.locfileid: "42266965"
 - 需要有進階安全性設定的所有裝置
 - 每週檢閱封鎖的裝置報告
 
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>移除不符合預期可靠的度量單位的改進動作
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>移除不符合預期可靠的度量單位的改進動作 
 
 若要確保 Microsoft 安全分數才有意義，以及改進的每一個動作是可以測量且可靠，我們會移除下列改進動作。
 
@@ -93,7 +93,7 @@ ms.locfileid: "42266965"
 
 ## <a name="march-16th-2020"></a>16 2020 年 3 月
 
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>移除不符合預期可靠的度量單位的改進動作
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>移除不符合預期可靠的度量單位，或沒有提供實用的安全性狀態表示改進動作
 
 若要確保 Microsoft 安全分數才有意義，以及改進的每一個動作是可以測量且可靠，我們會移除下列改進動作。
 
@@ -102,6 +102,7 @@ ms.locfileid: "42266965"
 - 若要確認 Url 設定 Office 365 安全連結
 - 不允許 [信箱委派]
 - 允許匿名來賓共用網站和文件的連結
+- 開啟雲端 App 安全性主控台
 
 ### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Azure AD 改進動作支援安全的預設值
 

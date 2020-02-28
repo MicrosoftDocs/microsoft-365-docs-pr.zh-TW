@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: 4e118d0aac0164370f7d7c2d403f15276268f8bf
-  ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+  ms.openlocfilehash: d6f24a93754c60227e668bb8d0ec42776a519dbc
+  ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 02/21/2020
-  ms.locfileid: "42179224"
+  ms.lasthandoff: 02/27/2020
+  ms.locfileid: "42322528"
 landingContent:
 - title: 管理資訊保護
   linkLists:
@@ -32,6 +32,8 @@ landingContent:
       url: custom-sensitive-info-types.md
     - text: 電子郵件加密
       url: email-encryption.md
+    - text: 客戶金鑰
+      url: customer-key-overview.md
 - title: 管理資訊控管
   linkLists:
   - linkListType: overview
@@ -62,12 +64,10 @@ landingContent:
       url: communication-compliance.md
     - text: 資訊屏障
       url: information-barriers.md
-    - text: 特許存取管理
+    - text: 特殊權限存取管理
       url: privileged-access-management-overview.md
     - text: 客戶加密箱
       url: customer-lockbox-requests.md
-    - text: 客戶金鑰
-      url: customer-key-overview.md
 - title: 探索和回應
   linkLists:
   - linkListType: overview

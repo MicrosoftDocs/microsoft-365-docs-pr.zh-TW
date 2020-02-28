@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 380c424acbcb609944ebfc3ea775ca31ac02bfe8
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 0dc9173c03d93ebe79544f8d417842b407025054
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266739"
+ms.locfileid: "42277220"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -791,9 +791,12 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 
 ### <a name="microsoft-forms-activities"></a>Microsoft Teams 活動
 
-下表列出 Office 365 稽核記錄中記錄的 Microsoft Forms 使用者和系統管理員活動。 Microsoft Forms 是用來收集分析資料的表單/測驗/問卷的工具。 
+下表列出 Office 365 稽核記錄中記錄的 Microsoft Forms 使用者和系統管理員活動。 Microsoft Forms 是用來收集資料的表單/測驗/問卷工具，以進行資料分析。 
 
 以下說明中指出部分作業包含的其他活動參數。
+
+> [!NOTE]
+> 如果 Forms 活動是由共同作者或匿名回應者執行，則記錄方式會稍有不同。 如需詳細資訊，請參閱[由共同作者和匿名回應者執行的 Forms 活動](#forms-activities-performed-by-co-authors-and-anonymous-responders)一節。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
@@ -826,7 +829,23 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 |已提交回應|SubmitResponse|使用者提交表單的回應。 <br><br>屬性 IsInternalForm：如果回應者與表單擁有者位於同一組織中，則會顯示布林值。|
 ||||
 
-### <a name="sensitivity-label-activities"></a>敏感度標籤活動 
+#### <a name="forms-activities-performed-by-co-authors-and-anonymous-responders"></a>由共同作者和匿名回應者執行的 Forms 活動
+
+在設計表單和分析回應時，Forms 支援共同作業。 表單合作者稱為 [共同作者]**。 除了刪除或移動表單以外，共同作者可以執行表單擁有者可以執行的所有動作。 Forms 也可讓您建立可匿名回應的表單。 這表示回應者不需要登入您的組織就能回應表單。 
+
+下表說明共同作者和匿名回應者執行之活動的稽核記錄中的稽核活動和資訊。
+
+|**活動類型**|**內部或外部使用者**|**已登入的使用者識別碼**|**已登入的組織**|**Forms 使用者類型**|
+|:-----|:-----|:-----|:-----|:-----|
+|共同撰寫活動|內部|UPN|表單擁有者的組織|共同作者|
+|共同撰寫活動|外部|UPN<br>|共同作者的組織<br>|共同作者|
+|共同撰寫活動|外部|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(識別碼的第二部分是雜湊，會因使用者而有所不同)|表單擁有者的組織<br>|共同作者|
+|回應活動|外部|UPN<br>|回應者的組織<br>|回應者|
+|回應活動|外部|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(使用者識別碼的第二部分是雜湊，會因使用者而有所不同)|表單擁有者的組織|回應者|
+|回應活動|匿名|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(使用者識別碼的第二部分是雜湊，會因使用者而有所不同)|表單擁有者的組織|回應者|
+||||
+
+### <a name="sensitivity-label-activities"></a>敏感度標籤活動
 
 下表列出 SharePoint Online 和 Teams 網站套用標籤活動所產生的事件。
 

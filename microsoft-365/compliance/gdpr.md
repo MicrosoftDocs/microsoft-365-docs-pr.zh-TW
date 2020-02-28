@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: f7c2a19a58dd616e2516ea70492f4f65ab211441
-ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
+ms.openlocfilehash: 960a09c89c855861e3db0402f40dd558b27527ac
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41916878"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322552"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般資料保護摘要
 
@@ -56,15 +56,11 @@ GDPR 提供人員管理組織中收集之個人資料的權限。 透過資料�
 
 如上所述，GDPR 的建議動作方案和責任整備檢查清單提供使用 Microsoft 產品和服務時，實作或評估 GDPR 合規性的指南。
 
-## <a name="the-gdpr-in-action"></a>GDPR 實際運作方式
-
-本節提供完成上述 GDPR 任務的大綱和思考重點。 完成這些工作可能會根據您的 Microsoft 設定而有所不同。
-
-### <a name="data-subject-request-dsr"></a>資料主體要求 (DSR)
+## <a name="data-subject-request-dsr"></a>資料主體要求 (DSR)
 
 GDPR 會授予使用者 (或資料主體) 關於處理其個人資料的特定權限，包括修正錯誤資料、清除資料或限制其處理、接收其資料及滿足將其資料傳送至另一個控制者的要求等權限。 控制者會負責提供即時且 GDPR 合規性的回覆。 如需技術詳細資訊，請參閱[資料主體要求](gdpr-data-subject-requests.md)。  
 
-#### <a name="dsr-faqs"></a>DSR 常見問題集
+### <a name="dsr-faqs"></a>DSR 常見問題集
 
 **完成 DSR 需要採取哪些動作？**
 
@@ -105,11 +101,11 @@ GDPR「資料可攜帶權」允許資料主體以「經過結構化、常用的�
 
 線上服務以控制者身分提供許多功能，可讓您回應資料主體的要求。 Microsoft 企業線上服務與管理控制項可協助您對於回應資料主體權限要求的個人資料採取動作，讓您能探索、存取、修正、限制、刪除及匯出位於儲存在 Microsoft 雲端中控制者所管理資料內的個人資料。 若您需要，線上服務也會以電腦可讀取的格式提供資料。
 
-### <a name="data-protection-impact-assessment"></a>資料保護影響評估
+## <a name="data-protection-impact-assessment"></a>資料保護影響評估
 
 GDPR 規範下，資料控制者需要為「可能導致自然人之權利和自由高風險」的處理作業準備[資料保護影響評估](gdpr-data-protection-impact-assessments.md) (DPIA)。 Microsoft 產品和服務中沒有需要 DPIA 建立的項目。 而是取決於您 Microsoft 設定的詳細資料。 [DPIA 內容](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365#part-2--contents-of-a-dpia)中可找到 Office 中必須考量的詳細資訊清單
 
-#### <a name="dpia-faqs"></a>DPIA 常見問題集
+### <a name="dpia-faqs"></a>DPIA 常見問題集
 
 **何時必須進行 DPIA？**
 
@@ -142,11 +138,11 @@ Microsoft 根據預設會在其工程與商業功能依設計和隱私權實施�
 
 Microsoft 身為處理者，有責任協助控制者確保 GDPR 配置中展示 DPIA 需求之合規性。 為了要支援我們的客戶，我們提供 Microsoft DPIA 相關章節的摘要，並在未來的更新中透過這個區段提供，目的是讓控制者仰賴 Microsoft 服務來運用摘要，以建立自己的 DPIA。
 
-### <a name="breach-notification"></a>外洩通知
+## <a name="breach-notification"></a>外洩通知
 
 若發生個人資料外洩，GDPR 會要求資料控制者與處理者的通知要求。 身為資料處理者，Microsoft 確保客戶能夠符合 GDPR 外洩通知需求。 資料控制者負責評估資料隱私權的風險，並且決定外洩時是否需要客戶 DPA 的通知。 Microsoft 提供進行該評估所需的資訊。 如需 Microsoft 如何偵測及回應個人資料外洩的詳細資訊，請參閱 [GDPR 規定的資料外泄通知](gdpr-breach-notification.md)。
 
-#### <a name="breach-notification-faqs"></a>外洩通知常見問題集
+### <a name="breach-notification-faqs"></a>外洩通知常見問題集
 
 **GDPR 規定的個人資料是由什麼所構成？**
 
@@ -178,7 +174,7 @@ Microsoft 身為處理者，有責任協助控制者確保 GDPR 配置中展示 
 
 Microsoft 具備適當原則和程序可立即通知您。 為滿足您對 DPA 的通知需求，我們會提供用來判斷是否已發生個人資料外洩的程序描述、資料外洩本質的描述，以及我們所採取要減輕資料外洩的方法描述。
 
-### <a name="accountability-readiness-checklists-for-the-gdpr"></a>符合 GDPR 的責任整備檢查清單
+## <a name="accountability-readiness-checklists-for-the-gdpr"></a>符合 GDPR 的責任整備檢查清單
 
 這些[檢查清單](gdpr-arc.md) 提供使用 Microsoft 產品時，便於存取支援 GDPR 所需資訊的方式。 您可以使用 [Microsoft 合規性管分數](compliance-score.md)管理檢查清單項目，方法是參考 GDPR 動態磚中 [客戶管理控制措施] 底下的控制措施識別碼和控制措施標題。
 

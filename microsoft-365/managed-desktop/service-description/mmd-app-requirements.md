@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1ca08e84bf27a64ba7515b6f4c0307c94621601c
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 01c580cd671a84ef68c18b114e133f046a3e5b3b
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280101"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328065"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft 受管理的電腦應用程式需求
 
@@ -59,5 +59,5 @@ Microsoft 受管理的電腦裝置上不允許特定應用程式類型：
 
 Microsoft 受管理電腦只支援可透過 Windows Update 或收件匣隨 Microsoft 受管理裝置的裝置驅動程式。 
 
-如果應用程式需要特定執行它的驅動程式會被視為受限制的應用程式，且需要部署至 Microsoft 受管理的電腦。 
+如果應用程式需要特定執行它的驅動程式會被視為受限制的應用程式，並要求例外狀況之前先部署至 Microsoft 受管理的電腦。 
 

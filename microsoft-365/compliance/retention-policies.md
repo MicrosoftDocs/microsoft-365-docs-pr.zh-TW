@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: aa0c4667ab85945cd849f94fbfb1fda693e108bd
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.openlocfilehash: 9ecc74610c0d150dd511a8e24fb66037768587a4
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106874"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280201"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -275,7 +275,7 @@ ms.locfileid: "42106874"
    > [!NOTE]
    > 過去，保留原則無法刪除少於 30 天的 Teams 內容，我們已移除此限制。 現在 Teams 內容的保留期間，可以是您選擇的任何天數，也可以是一天這麼短的時間。 如果您確實有一天的保留期間，在保留期間到期後，於永久刪除訊息之前，可能需要最長 3 天的時間。
     
-在小組中，聊天中共用的檔案會儲存在共用檔案之使用者的 OneDrive 帳戶中。 上傳至頻道內的檔案則會儲存在小組的 SharePoint 網站中。 因此，若要保留或刪除小組中的檔案，您需要建立適用於套用至 SharePoint 和 OneDrive 位置的保留原則。 如果想要套用原則至某個特定小組的檔案，您可以選擇該小組的 SharePoint 網站，以及該小組中使用者的 OneDrive 帳戶。
+在 Teams 聊天中共用的檔案會儲存在共用檔案之使用者的 OneDrive 帳戶中。 上傳至頻道的檔案則會儲存在團隊的 SharePoint 網站中。 因此，若要保留或刪除 Teams 中的檔案，您需要建立一個套用至 OneDrive 和 Office 365 群組位置的保留原則。 如果您想要將原則套用到特定使用者或團隊在 Teams 中共用的檔案，您可以選擇 OneDrive 或 Office 365 群組位置，並包含特定的使用者或團隊。
   
 套用到 Teams 的保留原則可以使用[保留鎖定](#locking-a-retention-policy)。
   
@@ -402,7 +402,7 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
 
 您的合規性團隊中負責建立保留原則的成員必須具備[安全性與合規性中心](https://protection.office.com/)的權限。&amp; 根據預設，租用戶系統管理員將可存取此位置，並且可直接讓法務人員與其他人存取[安全性&amp;與合規性中心](https://protection.office.com/)，而不需要為其提供租用戶系統管理員的所有權限。若要這麼做，我們建議您：移至[安全性&amp;與合規性中心](https://protection.office.com/)的 **[權限]** 頁面、編輯 **[合規性系統管理員]** 角色群組，並將該成員新增到該角色群組。 
   
-如需詳細資訊，請參閱[授與使用者存取 Office 365 安全性與合規性中心的權限](/security/office-365-security/grant-access-to-the-security-and-compliance-center) (部分機器翻譯)。 
+如需詳細資訊，請參閱[授與使用者存取 Office 365 安全性與合規性中心的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center) (部分機器翻譯)。 
 
 需要這些權限才能建立及套用保留原則。原則強制執行不需要內容的存取權。
   

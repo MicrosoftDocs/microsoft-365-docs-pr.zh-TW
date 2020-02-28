@@ -1,6 +1,6 @@
 - name: Microsoft 365 合規性
   href: index.yml
-- name: 入門
+- name: 開始使用
   items:
     - name: 合規性中心的新功能
       href: whats-new.md
@@ -61,11 +61,11 @@
           href: information-barriers-troubleshooting.md
         - name: 編輯資訊屏障原則
           href: information-barriers-edit-segments-policies.md
-    - name: 特許存取管理
+    - name: 特殊權限存取管理
       items:
         - name: 了解特殊權限存取管理
           href: privileged-access-management-overview.md
-        - name: 設定特殊權限存取管理
+        - name: 開始使用特殊權限存取管理
           href: privileged-access-management-configuration.md
     - name: 保護使用者和裝置存取權
       href: protect-access-to-data-and-services.md
@@ -621,14 +621,15 @@
         - name: 保留密件副本與展開的通訊群組收件者
           href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: 管理資料調查
-  href: overview-data-investigations.md
   items:
+    - name: 資料調查的概觀
+      href: overview-data-investigations.md
     - name: 管理資料外洩事件
       href: manage-data-spillage-incidents.md
+    - name: 指派資料調查的權限
+      href: data-investigations-permissions.md
     - name: 建立新的調查
       href: create-new-investigation.md
-    - name: 指派資料調查的權限
-      href: permissions.md
     - name: 搜尋調查中的資料
       href: search-for-data.md
       items:
