@@ -1,43 +1,77 @@
-- name: 管理商務購買和帳單
+- name: 管理商業採購和帳單
   href: index.md
   expanded: true
   items:
+    - name: 試用或購買
+      items:
+        - name: 註冊 Office 365 試用版
+          href: sign-up-for-office-365-trial.md
+        - name: 試用或購買 Microsoft 365
+          href: try-or-buy-microsoft-365.md
+        - name: 延長試用期
+          href: extend-your-trial.md
+        - name: 購買其他訂閱
+          href: buy-another-subscription.md
+        - name: 購買或編輯附加元件
+          href: buy-or-edit-an-add-on.md
+        - name: 新增儲存空間
+          href: add-storage-space.md
     - name: 管理訂閱
       items:
+        - name: 升級訂閱
+          href: subscriptions/upgrade-to-different-plan.md
+        - name: 取消您的訂閱
+          href: subscriptions/cancel-your-subscription.md
+        - name: 重新啟動您的訂閱
+          href: subscriptions/reactivate-your-subscription.md
+        - name: 為您的訂閱續約
+          href: subscriptions/renew-your-subscription.md
+        - name: 訂閱到期時該怎麼辦？
+          href: subscriptions/what-if-my-subscription-expires.md
         - name: 管理協力廠商應用程式
           href: manage-saas-apps.md
-        - name: 升級訂閱
-          href: /microsoft-365/commerce/subscriptions/upgrade-to-different-plan
         - name: 管理自助購買 (使用者)
-          href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-users
+          href: subscriptions/manage-self-service-purchases-users.md
         - name: 管理自助購買 (管理員)
-          href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins
+          href: subscriptions/manage-self-service-purchases-admins.md
     - name: 管理授權
       items:
         - name: 購買授權
-          href: /microsoft-365/commerce/licenses/buy-licenses
+          href: licenses/buy-licenses.md
         - name: 指派授權
-          href: /microsoft-365/admin/manage/assign-licenses-to-users
+          href: ../admin/manage/assign-licenses-to-users.md
         - name: 取消指派授權
-          href: /microsoft-365/admin/manage/remove-licenses-from-users
+          href: ../admin/manage/remove-licenses-from-users.md
         - name: 從訂閱中移除授權
-          href: /microsoft-365/commerce/licenses/remove-licenses-from-subscription
+          href: licenses/remove-licenses-from-subscription.md
+        - name: 了解訂閱與授權
+          href: licenses/subscriptions-and-licenses.md
     - name: 帳單與付款
       items:
+        - name: 查看您的發票
+          href: billing-and-payments/view-your-bill-or-invoice.md
         - name: 了解您的發票
-          href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
+          href: billing-and-payments/understand-your-invoice.md
         - name: 管理付款方式
-          href: /microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account
+          href: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+        - name: 支付訂閱費用
+          href: billing-and-payments/pay-for-your-subscription.md
+        - name: 變更您的付款方式
+          href: billing-and-payments/change-payment-method.md
+        - name: 變更付款頻率
+          href: billing-and-payments/change-payment-frequency.md
         - name: 管理帳單設定檔
-          href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
+          href: billing-and-payments/manage-billing-profiles.md
+        - name: 變更帳單地址
+          href: billing-and-payments/change-your-billing-addresses.md
         - name: 第二號支付服務指令和加強客戶驗證
-          href: /microsoft-365/commerce/billing-and-payments/psd2
+          href: billing-and-payments/psd2.md
     - name: 帳單帳戶
       items:
         - name: 管理帳單帳戶
-          href: /microsoft-365/commerce/billing-accounts/manage-billing-accounts
+          href: manage-billing-accounts.md
         - name: 建立租用戶與帳單帳戶的關聯
-          href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
+          href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
     - name: 管理與合作夥伴之間的關聯
       href: manage-partners.md
     - name: 關閉您的帳戶
