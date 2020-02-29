@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 當建立敏感度標籤時，您可以限制標籤將套用至其中之內容的存取。敏感度標籤可以使用加密來保護內容。
-ms.openlocfilehash: ef4b5c9768687864427a0805039a35958c476142
-ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
+ms.openlocfilehash: a8418a85c6d936fbe49deb2f11caacf67a2ce407
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42278769"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341278"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容 
 
@@ -155,7 +155,10 @@ ms.locfileid: "42278769"
 - 組織中的所有人 (所有租用戶成員)。此設定會排除來賓帳戶。
 - 任何已驗證的使用者。 選取此選項之前，請先確認您了解此設定的[需求與限制](#requirements-and-limitations-for-add-any-authenticated-users)。
 - 任何特定使用者或啟用電子郵件功能的安全性群組、通訊群組、Office 365 群組或動態通訊群組。 
-- 組織外的任何電子郵件地址或網域，例如 gmail.com、hotmail.com 或 outlook.com。 
+- 任何電子郵件地址或網域。 使用此選項來指定另一個組織中使用 Azure AD 的所有使用者，方法是輸入來自該組織的任何網域名稱。 您也可以針對社交提供者使用此選項，方法是輸入其網域名稱，例如 **gmail.com**、**hotmail.com** 或 **outlook.com**。
+
+> [!NOTE]
+> 如果您指定的網域來自使用 Azure AD 的組織，則無法限制對該特定網域的存取。 相反地，系統會為擁有您指定網域名稱的租用戶自動包含 Azure AD 中的所有經驗證網域。
 
 當您選擇所有租用戶成員或瀏覽目錄時，使用者或群組必須具有電子郵件地址。
 
@@ -163,7 +166,7 @@ ms.locfileid: "42278769"
 
 ##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>**新增任何已驗證使用者**的需求與限制
 
-此設定不會限制能夠存取標籤所加密內容的人員，同時仍會加密內容，並提供限制內容使用方式 (權限) 和存取方式 (到期和離線存取) 的選項。 不過，開啟加密內容的應用程式必須能夠支援所使用的驗證。 因此，同盟社交提供者 (例如 Google) 和一次性密碼驗證僅對電子郵件有效，且僅在您使用 Exchange Online 和來自 Office 365 訊息加密的新功能時才有效。 您可以將 Microsoft 帳戶與 Office 365 應用程式和 [Azure 資訊保護檢視器](https://portal.azurerms.com/#/download)搭配使用。
+此設定不會限制能夠存取標籤所加密內容的人員，同時仍會加密內容，並提供限制內容使用方式 (權限) 和存取方式 (到期和離線存取) 的選項。 不過，開啟加密內容的應用程式必須能夠支援所使用的驗證。 因此，同盟社交提供者 (例如 Google) 和一次性密碼驗證僅對電子郵件有效，且僅在您使用 Exchange Online 時才有效。 您可以將 Microsoft 帳戶與 Office 365 應用程式和 [Azure 資訊保護檢視器](https://portal.azurerms.com/#/download)搭配使用。
 
 任何已驗證使用者設定的一些典型案例如下：
 - 您不在意檢視內容的是誰，但想要限制其使用方式。 例如，您不希望編輯、複製或列印內容。
@@ -175,9 +178,9 @@ ms.locfileid: "42278769"
 當您選擇要對那些使用者或群組允許的權限時，您可以選取下列任一項：
 
 - [預先定義的權限層級](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)，其中有一組預設的權限，例如共同作者或檢閱者。
-- 一組自訂的權限，您可在其中選擇任何您想要的權限。
+- 自訂權限，您可在此選擇一或多個使用權限。
 
-如需每一個特定權限的詳細資訊，請參閱[使用權限和描述](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。  
+如需可協助您選取適當權限的詳細資訊，請參閱[使用權限和描述](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。  
 
 ![選擇預設或自訂權限的選項](../media/Sensitivity-Choose-permissions-settings.png)
 
@@ -255,6 +258,97 @@ ms.locfileid: "42278769"
 - MacOS：[校閱]**** 索引標籤 > [保護]****  >  [權限]****  >  [限制存取]****
 
 
+## <a name="example-configurations-for-the-encryption-settings"></a>加密設定的範例組態
+
+針對後續的各個範例，當您[建立或編輯敏感度標籤](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)時，請從精靈的 [加密]**** 頁面執行組態。 首先，請確認 [加密]**** 設定為 [套用]****：
+
+![敏感度標籤精靈中的套用加密選項](../media/apply-encryption-option.png)
+
+### <a name="example-1-label-that-applies-do-not-forward-to-send-an-encrypted-email-to-a-gmail-account"></a>範例 1：套用 [不可轉寄] 標籤，以傳送加密的電子郵件傳送至 Gmail 帳戶
+
+此標籤只會在 Outlook 和 Outlook 網頁版中顯示，因此您必須使用 Exchange Online。 當使用者需要傳送加密的電子郵件給使用 Gmail 帳戶 (或您組織外部的任何其他電子郵件帳戶)的人員時，指示使用者選取此標籤。 
+
+您的使用者在 [收件者]**** 方塊中輸入 Gmail 電子郵件地址。  然後選取標籤，而 [不可轉寄] 選項會自動新增至電子郵件中。 結果會是收件者無法轉寄電子郵件、列印它、複製其內容，或使用 [另存新檔]**** 選項將電子郵件儲存在信箱外部。 
+
+1. 在 [加密]**** 頁面上：針對 [立即指派權限，或讓使用者決定?]****，選取 [當使用者套用標籤時，讓他們指派權限]****。
+
+3. 選取核取方塊：[在 Outlook 中，強制限制等於 [不可轉寄] 選項]****。
+
+4. 如果已選取，請清除此核取方塊：[在 Word、PowerPoint 與 Excel 中提示使用者指定權限]****。
+
+5. 選取 [下一步]**** 並完成精靈。
+
+
+### <a name="example-2-label-that-restricts-read-only-permission-to-all-users-in-another-organization"></a>範例 2：會對其他組織中的所有使用者限制唯讀權限的標籤
+
+此標籤適用於以唯讀方式共用的非常敏感文件，以及一律需要網際網路連線才能檢視的文件。
+
+此標籤不適合用於電子郵件。
+
+1. 在 [加密]**** 頁面上：針對 [立即指派權限，或讓使用者決定?]****，選取 [立即指派權限]****。
+
+3. 針對 [允許離線存取]****，選取 [從不]****。
+
+4. 選取 [指派權限]****。
+
+3. 在 [指派權限]**** 窗格中，選取 [新增這些電子郵件地址或網域]****。
+
+4. 在文字方塊中，輸入來自另一個組織的網域名稱，例如，**fabrikam.com**。 然後選取 [新增]****。
+
+5. 選取 [從現有或自訂權限中選擇權限]****。
+
+6. 在 [從現有或自訂權限中選擇權限]**** 窗格中，選取下拉式方塊，選取 [檢視器]****，然後選取 [儲存]****。
+
+6. 回到 [指派權限]**** 窗格，選取 [儲存]****。
+
+7. 在 [加密]**** 頁面上，選取 [下一步]**** 並完成精靈。
+
+
+### <a name="example-3-add-external-users-to-an-existing-label-that-encrypts-content"></a>範例 3：將外部使用者新增至可加密內容的現有標籤
+
+您新增的新使用者將能夠開啟已使用此標籤保護的文件和電子郵件。 您授與這些使用者的權限可以與現有使用者所擁有的權限不同。
+
+1. 在 [加密]**** 頁面上：針對 [立即指派權限，或讓使用者決定?]****，確定已選取 [立即指派權限]****。
+
+2. 選取 [指派權限]****。
+
+3. 在 [指派權限]**** 窗格中，選取 [新增這些電子郵件地址或網域]****。
+
+4. 在文字方塊中，輸入要新增的第一個使用者 (或群組) 的電子郵件地址，然後選取 [新增]****。
+
+5. 選取 [從現有或自訂權限中選擇權限]****。
+
+6. 在 [從現有或自訂權限中選擇權限]**** 窗格中，選取此使用者 (或群組) 的權限，然後選取 [儲存]****。
+
+7. 回到 [指派權限]**** 窗格，針對您要新增至此標籤的每個使用者 (或群組) 重複步驟 3 到 6。 然後按一下 [儲存]****。
+
+8. 在 [加密]**** 頁面上，選取 [下一步]**** 並完成精靈。
+
+
+### <a name="example-4-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it"></a>範例 4：加密內容但不會限制能夠存取內容人員的標籤
+
+此組態的優點在於您不需要指定使用者、群組或網域來加密電子郵件或文件。 內容仍會加密，您仍然可以指定使用權限、到期日期和離線存取。 
+
+僅當您不需要限制能開啟受保護文件或電子郵件的人員時，才使用此組態。 [此設定的詳細資訊](#requirements-and-limitations-for-add-any-authenticated-users)
+
+1. 在 [加密]**** 頁面上：針對 [立即指派權限，或讓使用者決定?]****，確定已選取 [立即指派權限]****。
+
+2. 視需要設定 [使用者存取內容的期限]**** 和 [允許離線存取]**** 設定。
+
+3. 選取 [指派權限]****。
+
+4. 在 [指派權限]**** 窗格中，選取 [新增所有經過驗證的使用者]****。 
+    
+    針對 [使用者和群組]****，您會看到 **AuthenticatedUsers** 已自動新增。 您無法變更此值，只能刪除它，這會取消 [新增所有經過驗證的使用者]**** 選取範圍。
+
+5. 選取 [從現有或自訂權限中選擇權限]****。
+
+6. 在 [從現有或自訂權限中選擇權限]**** 窗格中，選取下拉式方塊，選取您要的 [檢視器]**** 權限，然後選取 [儲存]****。
+
+7. 回到 [指派權限]**** 窗格，選取 [儲存]****。
+
+8. 在 [加密]**** 頁面上，選取 [下一步]**** 並完成精靈。
+
 ## <a name="considerations-for-encrypted-content"></a>加密內容的考量事項
 
 加密您最機密的文件和電子郵件，可協助確保只有獲授權的人員可以存取此資料。 不過，有一些事項需要納入考量：
@@ -291,9 +385,9 @@ ms.locfileid: "42278769"
 
 ### <a name="configure-exchange-for-azure-information-protection"></a>設定 Exchange 進行 Azure 資訊保護
 
-在使用者可在 Outlook 中套用標籤以保護其電子郵件之前，不必設定 Exchange 進行 Azure 資訊保護。不過，直到設定 Exchange 進行 Azure 資訊保護前，您都無法取得使用 Azure Rights Management 保護與 Exchange 搭配的完整功能。
+不需要先設定 Exchange 來使用 Azure 資訊保護，使用者就能在 Outlook 中套用標籤來加密電子郵件。 不過，在設定 Exchange 使用 Azure 資訊保護之前，您無法獲得使用 Exchange 的 Azure 版權管理保護的完整功能。
  
-例如，使用者無法在行動電話或 Outlook 網頁版上檢視受保護的電子郵件，無法為受保護的電子郵件編製索引進行搜尋，而且您無法設定 Exchange Online DLP 進行 Rights Management 保護。 
+例如，使用者無法在行動電話或 Outlook 網頁版上檢視加密的電子郵件，無法為加密的電子郵件編製索引供搜尋，而且您無法設定 Exchange Online DLP 使用版權管理保護。 
 
 若要確保 Exchange 可以支援這些額外情節，請參閱下列內容：
 

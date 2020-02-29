@@ -1,5 +1,5 @@
-- name: 管理商業採購和帳單
-  href: index.md
+- name: 管理商務版訂閱
+  href: index.yml
   expanded: true
   items:
     - name: 試用或購買
@@ -20,12 +20,12 @@
       items:
         - name: 升級訂閱
           href: subscriptions/upgrade-to-different-plan.md
-        - name: 取消您的訂閱
-          href: subscriptions/cancel-your-subscription.md
+        - name: 續約您的訂閱
+          href: subscriptions/renew-your-subscription.md
         - name: 重新啟動您的訂閱
           href: subscriptions/reactivate-your-subscription.md
-        - name: 為您的訂閱續約
-          href: subscriptions/renew-your-subscription.md
+        - name: 取消您的訂閱
+          href: subscriptions/cancel-your-subscription.md
         - name: 訂閱到期時該怎麼辦？
           href: subscriptions/what-if-my-subscription-expires.md
         - name: 管理協力廠商應用程式
@@ -38,12 +38,12 @@
       items:
         - name: 購買授權
           href: licenses/buy-licenses.md
-        - name: 指派授權
-          href: ../admin/manage/assign-licenses-to-users.md
-        - name: 取消指派授權
-          href: ../admin/manage/remove-licenses-from-users.md
         - name: 從訂閱中移除授權
           href: licenses/remove-licenses-from-subscription.md
+        - name: 將授權指派給使用者
+          href: ../admin/manage/assign-licenses-to-users.md
+        - name: 取消指派給使用者的授權
+          href: ../admin/manage/remove-licenses-from-users.md
         - name: 了解訂閱與授權
           href: licenses/subscriptions-and-licenses.md
     - name: 帳單與付款
@@ -76,3 +76,5 @@
       href: manage-partners.md
     - name: 關閉您的帳戶
       href: close-your-account.md
+    - name: 連絡客戶支援
+      href: ../admin/contact-support-for-business-products.md

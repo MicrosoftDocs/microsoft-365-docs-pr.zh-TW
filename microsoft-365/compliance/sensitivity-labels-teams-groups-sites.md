@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以將標籤套用至 Microsoft Teams、Office 365 群組和 SharePoint 網站。
-ms.openlocfilehash: 350e1906e4d645c444d772b1ade9a2ff9c850992
-ms.sourcegitcommit: 1b1425142ae06deae3da10a7d30dce4db029d6d3
+ms.openlocfilehash: 477b168435d36170a1506adff021ee4cb5ab5162
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42313798"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333710"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>對 Microsoft Teams、Office 365 群組和 SharePoint 網站使用敏感度標籤 (公開預覽)
 
@@ -87,7 +87,7 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
 > 
 > 同樣地，如果您建立標籤，但未開啟這些網站和群組設定，當使用者建立小組、群組和網站時，標籤仍將可用，但只會套用標籤名稱。
 
-如果您的標籤還未發佈，現在請[將標籤新增至標籤原則](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)以進行發佈。
+如果您的敏感度標籤尚未發佈，現在請[將標籤新增至敏感度標籤原則](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)以進行發佈。 包含此標籤、獲指派敏感度標籤原則的使用者將可以為網站和群組選取它。
 
 ## <a name="sensitivity-label-management"></a>敏感度標籤管理
 
