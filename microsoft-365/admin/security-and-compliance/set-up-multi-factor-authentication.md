@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何使用安全性預設來設定 Office 365 使用者的多重要素驗證。
 monikerRange: o365-worldwide
-ms.openlocfilehash: bc906299e42929dd4dd09b94502a6d463a5971b4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: cb2205e5f5b7df4f6e7d8f7263a91fb2f0f4d3e2
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254203"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341245"
 ---
 # <a name="set-up-multi-factor-authentication"></a>設定多重要素驗證
   
@@ -88,11 +88,11 @@ ms.locfileid: "42254203"
 
 2. 在 [**作用中使用者**] 區段中，按一下 [**多重要素**驗證]。
 
-3. 在 [**多重要素驗證**] 頁面上，選取**使用者**，如果您要啟用此為一位使用者，或者您也可以執行**大量更新**。
+3. 在 [**多重要素驗證**] 頁面上選取**使用者**，如果您啟用此為一位使用者，或選取 [**大量更新**若要啟用多個使用者。
 
 4. 按一下在 [**快速步驟**] 下的 [**啟用**]。
 
-5. 在快顯視窗中，CLickc 上**啟用多重要素驗證**。
+5. 在快顯視窗中，按一下 [**啟用多重要素**驗證]。
 
 為組織設定多重要素驗證之後，您的使用者必須在其裝置上設定雙步驟驗證。 如需詳細資訊，請參閱[設定 Office 365 的雙步驟驗證](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14)。
     

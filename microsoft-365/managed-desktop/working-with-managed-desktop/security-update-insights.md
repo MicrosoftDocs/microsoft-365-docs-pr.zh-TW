@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 600491fbdd70315385587eb8cb443a1696c3bee6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: ef2d5c897709e7f7d2484d032b7471031be77d74
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254587"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341263"
 ---
 # <a name="windows-security-update-insights"></a>Windows 安全性更新深入解析
 此檢視提供您的 Microsoft 受管理的電腦裝置概觀安全性更新的狀態。 
@@ -28,7 +28,7 @@ ms.locfileid: "42254587"
 
 - <strong>作用中：</strong>您必須符合最新的安全性更新版本的最低流量準則 （六個小時，兩個連續） 和簽入 Microsoft Intune 至少每隔五天的裝置
 - <strong>同步處理：</strong>最後一個 28 天內簽入 Intune 裝置
-- <strong>同步處理超出</strong>– 裝置已<i>不</i>使用 Intune 簽入 28 天內
+- <strong>同步：</strong>裝置已<i>不</i>使用 Intune 簽入 28 天內
 
 
 
