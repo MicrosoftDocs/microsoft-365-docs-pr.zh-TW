@@ -12,27 +12,27 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何連絡您的國家或地區的客戶支援。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f4fa03ce204f43b4034fcac2bb33a99b52ac6fc7
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 441f66975a2a9203c63e7493940ef8731d4dafa7
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252324"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360424"
 ---
-# <a name="contact-support-for-aland-islands"></a><span data-ttu-id="86777-103">連絡支援人員的奧蘭群島</span><span class="sxs-lookup"><span data-stu-id="86777-103">Contact support for Aland Islands</span></span>
+# <a name="contact-support-for-aland-islands"></a><span data-ttu-id="9cc53-103">連絡支援人員的奧蘭群島</span><span class="sxs-lookup"><span data-stu-id="9cc53-103">Contact support for Aland Islands</span></span>
 
-<span data-ttu-id="86777-104">[尋找另一個國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="86777-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="9cc53-104">[尋找另一個國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="9cc53-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="86777-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="86777-105">Phone number</span></span>
-<span data-ttu-id="86777-106">08009 8462</span><span class="sxs-lookup"><span data-stu-id="86777-106">08009 8462</span></span>
+## <a name="phone-number"></a><span data-ttu-id="9cc53-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="9cc53-105">Phone number</span></span>
+<span data-ttu-id="9cc53-106">08009 8462</span><span class="sxs-lookup"><span data-stu-id="9cc53-106">08009 8462</span></span>
 
-## <a name="hours"></a><span data-ttu-id="86777-107">小時</span><span class="sxs-lookup"><span data-stu-id="86777-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="86777-108">帳單支援：</span><span class="sxs-lookup"><span data-stu-id="86777-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="9cc53-107">小時</span><span class="sxs-lookup"><span data-stu-id="9cc53-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="9cc53-108">帳單支援：</span><span class="sxs-lookup"><span data-stu-id="9cc53-108">Billing Support:</span></span>
 
-<span data-ttu-id="86777-109">英文： 週一至週五上午 10 點-下午 6 點</span><span class="sxs-lookup"><span data-stu-id="86777-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="9cc53-109">英文： 週一至週五上午 10 點-下午 6 點</span><span class="sxs-lookup"><span data-stu-id="9cc53-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="86777-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="86777-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="9cc53-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="9cc53-110">Technical Support:</span></span>
 
-<span data-ttu-id="86777-111">英文： 每週 7 天，每天 24 小時</span><span class="sxs-lookup"><span data-stu-id="86777-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="9cc53-111">英文： 每週 7 天，每天 24 小時</span><span class="sxs-lookup"><span data-stu-id="9cc53-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="86777-112">市內電話費用</span><span class="sxs-lookup"><span data-stu-id="86777-112">Local call charges apply</span></span>
+<span data-ttu-id="9cc53-112">市內電話費用</span><span class="sxs-lookup"><span data-stu-id="9cc53-112">Local call charges apply</span></span>
