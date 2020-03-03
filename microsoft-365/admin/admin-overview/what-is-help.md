@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: 深入了解您可以取得協助使用 Microsoft 365 系統管理中心的所有方法。
-ms.openlocfilehash: 4aa2d46121aa1a817381592a02bbb9b875207427
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2d75add5b34a760358523de6e6f10553c1984abe
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239299"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352974"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -43,7 +43,7 @@ ms.locfileid: "42239299"
                     <a href="what-is-help.md#integrated-help">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -62,7 +62,7 @@ ms.locfileid: "42239299"
                     <a href="what-is-help.md#modern-self-help-powered-by-ai">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -81,7 +81,7 @@ ms.locfileid: "42239299"
                     <a href="what-is-help.md#guides-and-articles">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -98,7 +98,7 @@ ms.locfileid: "42239299"
 ## <a name="integrated-help"></a>整合式的說明
 說明整合整個系統管理中心中，因此該處是在需要時。 在多個頁面頂端，您會發現內嵌說明文字，概略資訊性工作片時，也可讓您快速的文章連結找到更多的深入學習官方文件。
 
-![群組 」 頁面顯示內嵌說明和文件的連結](../media/integrated-help.png)
+![群組 」 頁面顯示內嵌說明和文件的連結](../../media/integrated-help.png)
 
 ## <a name="modern-self-help-powered-by-ai"></a>新式自助由 AI 入門 http://dev.office.com/getting-started/office365apis
 
@@ -106,7 +106,7 @@ ms.locfileid: "42239299"
 
 或者，當您相當不知道如何取得發生在特定情況中完成這些時間，對於使用支援小幫手。 這種經驗是目前僅提供英文版本。 只要使用切換 「 需要協助 「] 窗格的頂端，以將它開啟。 支援小幫手提供口語介面取得說明。 輸入您的查詢，並 chatbot 會要求釐清 < 的問題，以取得您在特定情況的是正確的答案。 請將它視為虛擬協助專家來探索解決方案及完成的工作。
 
-![新式自助](../media/help-options.png)
+![新式自助](../../media/help-options.png)
 
 當然，有時會最佳回答問題人類。 如果我們新式自助沒有回應，您可以隨時連絡我們支援專員尋求協助的選項。
 
