@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生產力分數的概觀。
-ms.openlocfilehash: 863d644a2dc3b7f756c61b8a9c3063a8545c1fb0
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 03a8e68248458f5dfa1d7192a5c2771b46723129
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254221"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361314"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft 生產力分數 （預覽）
 
@@ -84,7 +84,7 @@ Microsoft 365 提供可讓您的組織符合其業務目標的生產力解決方
 
 他生產力分數首頁提供歷程記錄與目前的分數以百分比為基礎，主要觀點補充了基準測試每個分數類別中的區域。 
 
-![生產力分數首頁](../media/pslanding.png)
+![生產力分數首頁](../../media/pslanding.png)
 
 1。**生產力分數**列出根據百分比也稱為<numerator> / <denominator>格式化，讓您也可以查看您的絕對點 （分子） 和最大可能點  
 1. 這個樞紐分析表可讓您選取您想要讓您專注於分數類別。 在預覽中，您僅可檢視**員工體驗**，但選取項目很快就會展開並包含**技術體驗**。 
@@ -113,7 +113,7 @@ Microsoft 365 提供可讓您的組織符合其業務目標的生產力解決方
 
 ### <a name="area-detail-page--collaborating-on-content"></a>區域詳細資料頁面 – 在內容上共同作業 
 
-![在 [內容] 頁面上的 Collaborationg。](../media/pscollab.png)
+![在 [內容] 頁面上的 Collaborationg。](../../media/pscollab.png)
 
 在 [內容] 頁面上進行共同作業包含從生產力分數首頁主要深入解析。 它具有下列元件：
 
@@ -134,7 +134,7 @@ Microsoft 365 提供可讓您的組織符合其業務目標的生產力解決方
 
 ### <a name="area-detail-page--working-anywhere"></a>區域詳細資料頁面 – 使用 anywhere 
 
-![任何位置工作] 頁面。](../media/psflexibility.png)
+![任何位置工作] 頁面。](../../media/psflexibility.png)
 
 任何位置] 頁面上的使用量化 （以百分比和絕對值） 的使用者跨越兩個或多個平台，也就是桌面，行動裝置與 web 的至少一個產能應用程式。 使用者取得更高版本計分使用多個應用程式和平台。 考慮這些應用程式可 Outlook、 microsoft Teams、 Word、 Excel、 PowerPoint、 OneNote、 Yammer、 Skype。 深入了解的基底是使用者啟用 Office 365 專業增強版、 Exchange、 Yammer、 Skype 或 Teams。
 
@@ -147,7 +147,7 @@ Microsoft 365 提供可讓您的組織符合其業務目標的生產力解決方
 
 若要提升 actionability，每個支援的深入解析隨附內嵌動作，可協助轉換您其中一些可以組態變更或認知行銷活動的員工體驗。 您可能要考慮的建議的動作控制台選項中，按一下要動作這些通話開啟。 目前已啟用**Collaborating 內容**中的動作。
 
-![在 Office 文件] 頁面上共同作業。](../media/psactions1.png)
+![在 Office 文件] 頁面上共同作業。](../../media/psactions1.png)
 
 1. **檢視動作**會移至列出 Collaborating 相關內容的所有動作窗格。
 1. **共同作業的 Encourage 使用者**移至清單中的主題，例如共同撰寫和 @mentions 與共同作業的教學影片。 
@@ -156,7 +156,7 @@ Microsoft 365 提供可讓您的組織符合其業務目標的生產力解決方
 
 選取任何巨集指令按鈕會開啟 [**建議的動作**窗格右側有每個動作和文件頁面的連結的摘要。
 
-![建議的動作] 窗格中。](../media/psacttions2.png)
+![建議的動作] 窗格中。](../../media/psacttions2.png)
 
 
 ## <a name="we-want-to-hear-from-you"></a>我們想要從您聽到 

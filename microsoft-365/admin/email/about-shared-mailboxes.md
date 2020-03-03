@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 有多人需要存取同一個信箱時，會使用共用的信箱。 了解您需要知道之前建立共用的信箱。
-ms.openlocfilehash: a5565f7299a8565b9f70745efebea3444296f353
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3bb78cc272a1920d9eab92aff50a14e345dce2e1
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251717"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362378"
 ---
 # <a name="about-shared-mailboxes"></a>關於共用信箱
 

@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解 Office 365 和您要設定它，請依照下列步驟中的多重要素驗證。
-ms.openlocfilehash: c3d5e83b951e4fd4a05cb18408ecb3d26e397cf9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2e2cbc9d6d966a9858fafb62f08d26893c9f4353
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254214"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361174"
 ---
 # <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Office 365 部署多重要素驗證方案
 
@@ -77,7 +77,7 @@ Office 365 使用多重要素驗證來協助提供額外的安全性，並從 Mi
     
 請見下圖的詳細說明：
   
-![Office 2013 裝置應用程式的現代化驗證。](../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
+![Office 2013 裝置應用程式的現代化驗證。](../../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
   
 ## <a name="software-requirements"></a>軟體需求
 
@@ -91,7 +91,7 @@ Office 365 使用多重要素驗證來協助提供額外的安全性，並從 Mi
     
 3. For Outlook 2013 Click-to-Run installations, an **Update Options** item is displayed. For MSI-based installations, the **Update Options** item is not displayed. 
     
-    ![Graphic that shows how to tell if Office 2013 install is click-to-run or MSI-based](../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
+    ![Graphic that shows how to tell if Office 2013 install is click-to-run or MSI-based](../../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
   
 ### <a name="click-to-run-based-installations"></a>隨選即用型安裝
 

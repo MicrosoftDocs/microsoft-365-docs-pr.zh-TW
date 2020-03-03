@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何連絡您的國家或地區的客戶支援。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1800a2e1e25e43d531b1719b0769cd96cdceb2e5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 88aff10d49ed1eb0b66ce9be4a2e27b5825d869c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252327"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360324"
 ---
 # <a name="contact-support-for-algeria"></a>阿爾及利亞連絡客戶支援
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 決定您的 Office 365 租用戶和使用者是否符合需求，以便您可以使用集中式部署來部署 Office 增益集。
-ms.openlocfilehash: 09487e0ff495f4b561e7a27eecf2c99fd4da10af
-ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
+ms.openlocfilehash: 78d87c5539daa77c2babb7ffa36967c5f27e3c10
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42284384"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362128"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>判斷是否增益集的集中式部署適用於您的組織
 
@@ -77,7 +77,7 @@ ms.locfileid: "42284384"
   
 如果您不想使用 「 啟用 」 報告，您可以要求使用者開啟 Office 應用程式，例如在其電腦上的 Word，然後選擇 [**檔案** \> **帳戶**。 Under **Product Information**, you should see **Subscription Product** and **Microsoft Office 365 ProPlus**, as shown in the following image.
 
-![Office 應用程式中的產品資訊](../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
+![Office 應用程式中的產品資訊](../../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
   
 如需 Office 365 專業增強版的相關說明，請參閱 [Office 365 專業增強版的疑難排解提示](https://go.microsoft.com/fwlink/p/?linkid=846339)。
 
@@ -140,18 +140,18 @@ Invoke-CompatibilityCheck
    
 看看下列範例，其中晨怡、欣雯和銷售部門群組已被指派增益集。由於西岸銷售部門是巢狀群組，誠雄和又倫未被指派增益集。
   
-![銷售部門的圖表](../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![銷售部門的圖表](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
    
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>確認群組是否包含巢狀群組
 
 The easiest way to detect if a group contains nested groups is to view the group contact card within Outlook. 如果您輸入的電子郵件**到**欄位中的群組名稱，然後選取群組名稱解析時，它會顯示包含使用者或巢狀的群組。 In the example below, the **Members** tab of the Outlook contact card for the Test Group shows no users and only two sub groups. 
   
-![Outlook 連絡人卡片的 [成員] 索引標籤](../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Outlook 連絡人卡片的 [成員] 索引標籤](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
   
 You can do the opposite query by resolving the group to see if it's a member of any group. In the example below, you can see under the **Membership** tab of the Outlook contact card that Sub Group 1 is a member of the Test Group. 
   
-![成員資格] 索引標籤的 [Outlook 連絡人卡片](../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![成員資格] 索引標籤的 [Outlook 連絡人卡片](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
   
 或者，您也可以使用 Azure Active Directory 圖形 API 來執行查詢，尋找群組中的群組清單。如需詳細資訊，請參閱[群組上的作業 | 圖形 API 參考](https://go.microsoft.com/fwlink/p/?linkid=846342)。
   

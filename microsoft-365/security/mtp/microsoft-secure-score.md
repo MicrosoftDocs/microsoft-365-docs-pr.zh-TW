@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8bcfd7229a6e27b2e68523754c2b29c1bb9c3cdc
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: b19c48161d5d0f43c2beb207dd0ee2db8bfb1470
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266099"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372021"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -145,6 +145,65 @@ Microsoft 安全分數是數字摘要根據系統設定、 使用者行為及其
 之一的安全分數原則是分數應依照標準化預定且更容易與相關。 具有不是可以測量或可採取行動的改進動作具有已造成混淆。 Microsoft 安全分數僅合理時的每個建議有清除影響分數。 不計分改進動作不是可以測量的。  
 
 基於這些理由，已被移除已不會被記錄的所有改進動作。 在您的組件上不需要採取任何動作。
+
+### <a name="removed-device-improvement-actions"></a>移除的裝置改進動作
+
+Microsoft 安全分數裝置類別的改進動作的評估之後, 被判定那些動作目前評估原則狀態並不裝置的組態狀態。 因為組態直接繫結至安全性狀態，現有的裝置動作已決定不完全代表組織的狀態。  我們將會移除目前的動作裝置類別中為我們可以使用，以提供一組建議直接使用更完整代表裝置安全性狀態的 [診斷資料。
+
+已移除下列改進動作：
+
+- 啟用 Microsoft Intune 行動裝置管理
+- Android 版建立 Microsoft Intune 合規性原則
+- 建立工作 Android 版的 Microsoft Intune 合規性原則
+- Android 版建立 Microsoft Intune 應用程式防護原則
+- 建立 iOS 版 Microsoft Intune 應用程式保護原則
+- 標記裝置與指定為不符合任何 Microsoft Intune 合規性原則
+- 建立 iOS 版 Microsoft Intune 合規性原則
+- 建立 macOS Microsoft Intune 合規性原則
+- 建立 Windows 的 Microsoft Intune 合規性原則
+- Android 版建立 Microsoft Intune 設定設定檔
+- 建立工作 Android 版的 Microsoft Intune 設定設定檔
+- 建立 macOS 的 Microsoft Intune 設定設定檔
+- 建立 iOS 版 Microsoft Intune 設定設定檔
+- 建立 Windows 的 Microsoft Intune 設定設定檔
+- 啟用 Microsoft Intune 中的增強型的 jailbreak 偵測
+- 需要修正的所有裝置、 防毒和防火牆啟用
+- 啟用 Windows Defender ATP 整合至 Microsoft Intune
+- 建立 Microsoft Intune Windows 資訊保護原則
+- 需要有進階安全性設定的所有裝置
+- 每週檢閱封鎖的裝置報告
+
+### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>移除不符合預期可靠的度量單位的改進動作
+
+若要確保 Microsoft 安全分數才有意義，以及改進的每一個動作是可以測量且可靠，我們已移除下列改進動作：
+
+- 開啟稽核資料記錄
+- 探索風險並不相容的陰影 IT 應用程式
+- 檢閱權限 & 封鎖風險 OAuth 應用程式連線至您的環境
+- 在 SharePoint online 的文件庫設定版本設定
+
+### <a name="mfa-improvement-action-updates"></a>MFA 改進動作更新
+
+若要反映適用於企業以確保 upmost 安全性時，套用原則可搭配其業務需求，Microsoft 安全分數已移除以多重要素驗證，為主的三個改進動作，並新增兩個。
+
+已移除的改進動作：
+
+- 登錄所有使用者的多重要素驗證
+- 需要 MFA 的所有使用者
+- 需要 MFA 的 Azure AD 特殊權限角色
+
+新增的改進動作：
+
+- 確定所有的使用者可以完成的安全存取多重要素驗證
+- 需要 MFA 的系統管理角色
+
+ 這些新的改進動作需要透過您的目錄中註冊您的使用者或系統管理員針對多重要素驗證 (MFA)，以及建立正確的一組原則符合貴組織的需求。 主要目標是有彈性，同時確保所有使用者和系統管理員可以驗證與多重因素或風險式身分識別驗證提示。 可能需要的表單具有多個範圍的決策或設定安全性的預設值 （即將年 3 月 16），可讓 Microsoft 決定何時 MFA 的挑戰使用者套用的原則。
+
+### <a name="removed-review-improvement-actions"></a>已移除 「 檢閱 」 改進動作
+
+之一的安全分數原則是分數應依照標準化預定且更容易與相關。 具有不是可以測量或可採取行動的改進動作具有已造成混淆。 一個 Microsoft 安全分數僅合理時的每個建議有清除影響分數。 檢閱改進動作不會測量至其他改進動作為相同的標準。  
+
+基於這些理由，已被暫時移除所有需要檢閱頻率的改進動作。 在您的組件上不需要採取任何動作。
 
 ### <a name="preview-features"></a>預覽功能
 

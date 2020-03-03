@@ -19,36 +19,39 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 73f76dee8a59229138f906e593a84220c7f70aee
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 73c4c9864713432d318b0b3cec9fbaf395deff45
+ms.sourcegitcommit: 0df099d2e1028bbba8b6371dc5fcd021dddc902b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235212"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42374142"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>開啟 Microsoft 威脅防護
 
 **適用於：**
 - Microsoft 威脅防護
 
-
-
 Microsoft 威脅防護整合了您的事件回應流程，方法是整合跨 Microsoft Defender 進階威脅防護 (ATP)、Office 365 ATP、Microsoft Cloud App Security 和 Azure ATP 的重要功能。 此整合體驗會新增您可以在 Microsoft 365 安全性中心存取的強大功能。
 
-## <a name="check-license-eligibility-and-required-permissions"></a>請檢查授權資格及必要的權限
-使用 Microsoft 365 E5、 Microsoft 365 E5 安全性或對等組合的授權的客戶可以使用 Microsoft Threat Protection。 如需詳細資訊，請[閱讀授權需求](prerequisites.md#licensing-requirements)。
+若要取得最佳的保護，並最佳化 Microsoft 威脅防護，我們建議部署您的網路上所有適用的支援的服務。 如需詳細資訊，[了解部署支援的服務](deploy-supported-services.md)。
 
-您必須是**全域系統管理員**或[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)以開啟 [Microsoft 威脅防護中的**安全性系統管理員**。
+## <a name="check-license-eligibility-and-required-permissions"></a>請檢查授權資格及必要的權限
+Microsoft 365 E5、 E5 安全性、 A5 或 A5 安全性授權或有效的授權組合提供支援的服務和賦與您使用 Microsoft 威脅防護 Microsoft 365 安全性中心存取權。
+
+如需詳細的授權資訊，[請閱讀授權需求](prerequisites.md#licensing-requirements)。
+
+### <a name="check-your-role"></a>請檢查您的角色
+您必須是**全域系統管理員**或 Azure Active Directory，以開啟 [Microsoft 威脅防護中的**安全性系統管理員**。 [在 Azure AD 中檢視您的角色](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="start-using-the-service"></a>開始使用服務
 Microsoft 威脅防護彙總資料從各種的整合式服務。 它會處理程序，並儲存資料集中以識別新的深入資訊，並讓集中式的回應系統工作流程。
 
-開啟服務之前，請在 Microsoft 365 安全性中心 ([security.microsoft.com](https://security.microsoft.com)) 不會顯示**事件**和**重要訊息中心**選項功能窗格中。
+開啟服務之前，請在 Microsoft 365 安全性中心 ([security.microsoft.com](https://security.microsoft.com)) 當您從功能窗格中選取 [**事件**]、 [**重要訊息中心**] 或 [**狩獵**，就會顯示 Microsoft 威脅防護歡迎使用] 頁面。 這些導覽選項不會顯示是否您不可以使用 Microsoft Threat Protection。
 
-![Microsoft 365 安全性中心沒有 Microsoft 威脅防護功能的導覽窗格影像](../../media/mtp-off.png)
-*Microsoft 365 安全中心與 Microsoft Threat Protection 關閉*
+![顯示 Microsoft 威脅防護是否尚未開啟的 Microsoft 威脅防護歡迎頁面的影像](../../media/mtp-welcome.png)
+*Microsoft 威脅防護歡迎使用 Microsoft 365 安全性中心] 頁面*
 
-若要開啟 Microsoft 威脅防護，請選取 [在功能窗格中的**設定**。 在**[設定] 頁面](https://security.microsoft.com/settings)** 上，移至**Microsoft 威脅防護** > **加入 / 退出**。
+若要開啟 Microsoft 威脅防護，只要完成從 [歡迎] 頁面上的程序。 您也可以開啟 Microsoft 威脅防護，功能窗格中存取**的設定**([security.microsoft.com/settings](https://security.microsoft.com/settings))，然後選取**Microsoft Threat Protection**。
 
 >[!NOTE]
 >如果您沒有看到**設定**功能窗格中，或無法存取] 頁面上，檢查您的權限和授權。
@@ -63,7 +66,7 @@ Microsoft 威脅防護彙總資料從各種的整合式服務。 它會處理程
 
 - [事件管理](incidents-overview.md)
 - 用於管理[自動化調查和回應](mtp-autoir.md)的重要訊息中心
-- 現有 [搜捕]**** 頁面的[進階搜捕](advanced-hunting-overview.md)功能
+- [進階狩獵](advanced-hunting-overview.md)功能
 
 ![Microsoft 365 安全性中心與 Microsoft Threat Protection 功能的導覽窗格影像](../../media/mtp-on.png)
 *Microsoft 365 安全性中心事件管理和其他 Microsoft 威脅防護功能*
@@ -75,7 +78,7 @@ Microsoft 威脅防護彙總資料從各種的整合式服務。 它會處理程
 ## <a name="turn-off-microsoft-threat-protection"></a>關閉 Microsoft 威脅防護
 若要停止使用 Microsoft 威脅防護，請移至 Microsoft 365 安全性中心的 [設定]****  >  [Microsoft 威脅防護]****  >  [選擇加入/選擇退出]****。 取消選取 [開啟 Microsoft 威脅防護]**** 並儲存變更。
 
-資料將會永久刪除和對應的功能將會移除在 Microsoft 365 安全性中心。
+對應的功能將會移除在 Microsoft 365 安全性中心。
 
 ## <a name="get-assistance"></a>取得協助
 
@@ -85,6 +88,7 @@ Microsoft 支援人員可以幫助佈建或 deprovision 之服務與相關的資
 
 - [Microsoft 威脅防護更新概觀](microsoft-threat-protection.md)
 - [授權需求和其他必要條件](prerequisites.md)
+- [部署支援的服務](deploy-supported-services.md)
 - [Microsoft Defender ATP 概觀](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Office 365 ATP 概觀](../office-365-security/office-365-atp.md)
 - [Microsoft Cloud App Security 概觀](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)

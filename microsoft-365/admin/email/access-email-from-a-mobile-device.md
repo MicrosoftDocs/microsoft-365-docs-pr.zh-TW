@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何從您的行動裝置存取電子郵件。
-ms.openlocfilehash: b50b6986fe44cb19119831774b4357c6efd543d9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 880044ddd13226c819167fb200f9f61550559944
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251715"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362388"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>從行動裝置存取電子郵件選項
 
@@ -35,7 +35,7 @@ Android 版 Outlook 和 Outlook for iOS 行動應用程式專為您的工作或�
   
 您的組織需要您使用 Android 版 Outlook 或 Outlook for iOS 行動應用程式存取公司電子郵件、 行事曆和連絡人。 您的資料將會啟動同步處理一旦您下載並安裝 Android 版 Outlook 或 Outlook for iOS。
   
-![若要使用 Outlook 來同步處理電子郵件的範例電子郵件](../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
+![若要使用 Outlook 來同步處理電子郵件的範例電子郵件](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
   
 請參閱[最佳化您的 iOS 或 Android 手機的 Outlook 行動應用程式](https://support.office.com/article/de075b19-b73c-4d8a-841b-459982c7e890.aspx)的更多的 Outlook 功能。 然後移至[Outlook for iOS 和 Android 說明中心](https://support.office.com/article/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6.aspx)，如果您遇到任何問題。 
   

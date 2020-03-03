@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 了解 Office 365 設定精靈及 [設定] 頁面之間的差異。
-ms.openlocfilehash: 3aecfc14071bda7948c24a2e161461558f8efd8d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0873e37b849785feb7c70271b97b148f3cea8bd9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252367"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360454"
 ---
 # <a name="difference-between-the-office-365-setup-wizard-and-the-setup-page"></a>Office 365 設定精靈安裝] 頁面上的差異
 
@@ -39,7 +39,7 @@ Office 365 提供兩個安裝體驗：
 
 若要設定您的帳戶，移至[系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)在左側的導覽窗格中，選取 [**安裝程式**，然後選取 [**設定**] 頁面上的 [ **「 引導式安裝程式**。
 
-![啟動 Office 365 商務版安裝精靈](../media/o365b-guided-setup.png)
+![啟動 Office 365 商務版安裝精靈](../../media/o365b-guided-setup.png)
 
 安裝精靈會引導您完成下列步驟：
 
@@ -57,7 +57,7 @@ Office 365 提供兩個安裝體驗：
 
 您會看到排列邏輯類別，包括您完成安裝程式精靈] 中的設定工作的完整清單。
 
-![Office 365 商務版安裝] 頁面上](../media/o365b-setup-page.png)
+![Office 365 商務版安裝] 頁面上](../../media/o365b-setup-page.png)
 
 選擇 [**檢視**的任何工作，以取得在快速資訊，例如工作描述、 使用者的影響、 必要條件、 努力來實作，以及安全性和採用率統計資料可協助您了解後果並再繼續執行會影響。
 
@@ -67,4 +67,4 @@ Office 365 提供兩個安裝體驗：
 
 當您準備好完成工作時，請選取 [**開始**設定程序會引導。 一旦您完成工作時，[**開始**] 按鈕會變為**管理**] 按鈕，可讓您管理工作，視需要。
 
-![任務檢視，以顯示在快速資訊](../media/o365b-at-a-glance.png)
+![任務檢視，以顯示在快速資訊](../../media/o365b-at-a-glance.png)

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 更新您系統管理員電話號碼和電子郵件地址在系統管理中心。 如果您想要重設自己的系統管理員密碼，您將需要這項資訊。
-ms.openlocfilehash: 56b2011b3a871ba862fc9bd1c635ab84c9ca90d2
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 255c1d72ae032b0ebaf0606e0731e9bbe8a1b40d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251586"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361668"
 ---
 # <a name="update-your-admin-phone-number-and-email-address-in-office-365"></a>更新 Office 365 中系統管理員電話號碼和電子郵件地址
 

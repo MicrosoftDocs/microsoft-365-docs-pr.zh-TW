@@ -2,9 +2,9 @@
 title: 偵測並修復 Office 365 中的非法同意授權
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyp
+manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何識別並修正在 Office 365 中的非法同意授權。
-ms.openlocfilehash: 0ff16d01c3fe0f150e5a39cec574bc80aead9661
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: e11518b0b16b7ee922f18b0ef771d36f608e41b7
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957148"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42363049"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>偵測並修復 Office 365 中的非法同意授權
 
@@ -79,7 +79,7 @@ ms.locfileid: "41957148"
 
 5. 選取 [應用程式]****。
 
-這會顯示指派給使用者的應用程式，以及應用程式所擁有的權限。
+如此將會顯示指派給使用者和功能的應用程式的應用程式的權限。
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>請您的使用者列舉其應用程式存取權的步驟
 
@@ -102,7 +102,7 @@ ms.locfileid: "41957148"
 
 1. 使用本機系統管理員權限登入您將執行指令碼的電腦。
 
-2. 從 GitHub 下載或複製 [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) 指令碼到您要在其中執行指令碼的資料夾。 此資料夾與寫入輸出「permissions.csv」檔案的資料夾是同一個。
+2. 下載或從 GitHub [Get AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)指令碼複製到您要從中執行指令碼的資料夾。 此資料夾與寫入輸出「permissions.csv」檔案的資料夾是同一個。
 
 3. 以系統管理員身分開啟 PowerShell 執行個體，然後開啟您要儲存指令碼的資料夾。
 

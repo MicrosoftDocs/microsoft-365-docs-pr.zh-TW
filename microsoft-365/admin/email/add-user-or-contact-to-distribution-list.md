@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: 了解如何將 Office 365 使用者或連絡人至通訊群組。 例如，您可以將員工、 合作夥伴或廠商新增至您的電子郵件通訊群組。
-ms.openlocfilehash: ef9721a8620044a07909dd329dd42a01b2c700e8
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2a6ee1336f738b57740469d6d74b461a69d7fc8c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251712"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362368"
 ---
 # <a name="add-a-user-or-contact-to-an-office-365-distribution-group"></a>新增使用者或連絡人至 Office 365 通訊群組
 
@@ -45,7 +45,7 @@ ms.locfileid: "42251712"
 
 4. 在 [**檢視成員**] 頁面上，選取 [**新增成員**，並選取使用者或連絡人您想要新增至通訊群組。 
     
-    ![將成員新增至通訊群組](../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
+    ![將成員新增至通訊群組](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. 選取**儲存**，然後**關閉**。
 
@@ -61,7 +61,7 @@ ms.locfileid: "42251712"
   
 4. 在 [**檢視成員**] 頁面上，選取 [**新增成員**，並選取使用者或連絡人您想要新增至通訊群組。 
     
-    ![將成員新增至通訊群組](../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
+    ![將成員新增至通訊群組](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. 選取**儲存**，然後**關閉**。
     
@@ -79,7 +79,7 @@ ms.locfileid: "42251712"
   
 4. 在 [**檢視成員**] 頁面上，選取 [**新增成員**，並選取使用者或連絡人您想要新增至通訊群組。 
     
-    ![將成員新增至通訊群組](../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
+    ![將成員新增至通訊群組](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. 選取**儲存**，然後**關閉**。
     

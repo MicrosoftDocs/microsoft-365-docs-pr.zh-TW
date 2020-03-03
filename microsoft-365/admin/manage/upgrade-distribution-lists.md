@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 了解如何將一或多個通訊群組清單升級至 Office 365 群組，在 Outlook 中，及如何使用 PowerShell 來升級多個通訊群組清單同時。
-ms.openlocfilehash: 9e6867a5ccdb97586e3d58784a49312e078ae659
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7337d450cf1e9b249b2b9dc2ab66f32f5b1577e0
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251584"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361708"
 ---
 # <a name="upgrade-distribution-lists-to-office-365-groups-in-outlook"></a>在 Outlook 中將通訊群組清單升級至 Office 365 群組
 
@@ -38,11 +38,11 @@ ms.locfileid: "42251584"
 
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>。
 
-2. 在 Exchange 系統管理中心中，前往 [**收件者** \> **群組**。<br/>您會看到指出您有 （也稱為**通訊群組**） 合格升級至 Office 365 群組的通訊群組清單的通知。<br/> ![選取要開始使用] 按鈕](../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. 在 Exchange 系統管理中心中，前往 [**收件者** \> **群組**。<br/>您會看到指出您有 （也稱為**通訊群組**） 合格升級至 Office 365 群組的通訊群組清單的通知。<br/> ![選取要開始使用] 按鈕](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
-3. 選取一或多個通訊群組清單 （也稱為**通訊群組**） 從 [**群組**] 頁面。<br/>![選取一個通訊群組](../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
+3. 選取一或多個通訊群組清單 （也稱為**通訊群組**） 從 [**群組**] 頁面。<br/>![選取一個通訊群組](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-4. 選取 [升級] 圖示。<br/>![升級至 Office 365 群組圖示](../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+4. 選取 [升級] 圖示。<br/>![升級至 Office 365 群組圖示](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
 5. 在 [資訊] 對話方塊中，選取 **[是]** 以確認升級。 會立即開始處理程序。 根據大小和數目您正在升級的通訊群組清單中，則過程會需要分鐘或數小時。<br/>如果通訊群組清單無法升級，對話方塊會隨即出現說這樣。 請參閱[無法升級通訊群組清單？](#which-distribution-lists-cannot-be-upgraded)。
 

@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: '了解如何變更 Office 365 的預設佈景主題，然後進行自訂以符合您的公司標誌或色彩。 '
-ms.openlocfilehash: 729f029f58a19ed819b194deff526fc9b44757c5
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 9d83abb919cfb9f6ea3c804d9c5d934614f35285
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280181"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360634"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>自訂您組織的 Office 365 佈景主題
 
 了解如何自訂您的 Microsoft 365 系統管理中心中的佈景主題。 身為商務用 Office 365 訂閱的系統管理員，您可以變更貴組織每個使用者的上方瀏覽列中所顯示的預設佈景主題。 您可以新增公司標誌和變更以符合您的品牌的其餘部分的色彩。 您甚至可以新增使用者選取您的標誌時，瀏覽至的目的地] 的連結。 您可以在這裡看到的預設佈景主題和 Office 365 中的自訂佈景主題結果。
   
-![預設 Office 365 佈景主題及自訂 Office 365](../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
+![預設 Office 365 佈景主題及自訂 Office 365](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
   
 ## <a name="customize-your-theme-in-the-admin-center"></a>自訂佈景主題在系統管理中心
 
@@ -62,7 +62,7 @@ ms.locfileid: "42280181"
       
   - **顯示使用者名稱**： 選擇是否要顯示使用者的完整名稱的進入點，在頂端的帳戶管理員] 頁面的右當使用者登入。 根據預設，使用者會看到其相片或其縮寫如果尚未已上傳相片。
     
-4. 選取 [**儲存變更**。
+4. 選取 [儲存變更]****。
     
 您會看到您新的佈景主題在系統管理中心立即和簡短的延遲之後，您會看到它整個 Office 365，包括 Outlook 和 SharePoint 頁面。 您可以隨時移除自訂圖示或自訂色彩。 僅需返回佈景主題] 頁面，並選取 [**移除自訂佈景主題**。
   

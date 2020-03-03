@@ -218,8 +218,9 @@
     - name: 管理資訊控管
       href: manage-information-governance.md
     - name: 匯入資料
-      href: importing-pst-files-to-office-365.md
       items:
+        - name: 匯入 PST 檔案的概觀
+          href: importing-pst-files-to-office-365.md
         - name: 使用網路上傳來匯入 PST 檔案
           href: use-network-upload-to-import-pst-files.md
         - name: 使用磁碟機運送來匯入 PST 檔案
@@ -231,8 +232,9 @@
         - name: 匯入 PST 檔案的常見問題集
           href: faqimporting-pst-files-to-office-365.md
     - name: 封存協力廠商資料
-      href: archiving-third-party-data.md
       items:
+        - name: 封存協力廠商資料概觀
+          href: archiving-third-party-data.md
         - name: 設定連接器來封存 Facebook 資料
           href: archive-facebook-data-with-sample-connector.md
         - name: 設定連接器來封存 Twitter 資料
@@ -276,8 +278,9 @@
     - name: 處置資料
       href: disposition-reviews.md
     - name: 管理非使用中的信箱
-      href: inactive-mailboxes-in-office-365.md
       items:
+        - name: 非使用中信箱的概觀
+          href: inactive-mailboxes-in-office-365.md
         - name: 建立和管理非使用中信箱
           href: create-and-manage-inactive-mailboxes.md
         - name: 變更非作用中信箱的保留持續時間
@@ -320,7 +323,7 @@
               href: view-label-activity-for-documents.md
             - name: 檢視資料控管報告
               href: view-the-data-governance-reports.md
-        - name: 事件
+        - name: Events
           items:
             - name: 事件型保留
               href: event-driven-retention.md
@@ -718,10 +721,13 @@
     - name: 信箱稽核
       href: enable-mailbox-auditing.md
     - name: 進階的稽核
-      href: advanced-audit.md
       items:
+        - name: 進階稽核的概觀
+          href: advanced-audit.md
         - name: 管理稽核記錄保留原則
           href: audit-log-retention-policies.md
+        - name: 使用進階稽核調查遭入侵的帳戶
+          href: mailitemsaccessed-forensics-investigations.md
     - name: 警示原則
       href: alert-policies.md
 - name: 管理合規性風險
@@ -1001,7 +1007,7 @@
               href: offering-gxp.md
             - name: TISAX (德國)
               href: offering-tisax-germany.md
-        - name: 媒體業
+        - name: 媒體
           items:
             - name: CDSA
               href: offering-cdsa.md

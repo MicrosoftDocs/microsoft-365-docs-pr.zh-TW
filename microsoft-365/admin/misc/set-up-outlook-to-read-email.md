@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: 了解如何設定在 Outlook 中的電子郵件帳戶，Windows 和 Mac，以及安裝 Office 應用程式和存取線上電子郵件。
-ms.openlocfilehash: 87a1bd45f763b4a802b083eb4936d67c50a92df3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f5be456c845381a07c380e4d480e03a39c42f0ed
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254256"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361234"
 ---
 # <a name="set-up-outlook-to-read-email"></a>設定 Outlook 以讀取電子郵件
 
@@ -64,7 +64,7 @@ Office 365 訂閱隨附網頁型 Outlook 中，但如果您的訂閱包含 Offic
 
 您登入 Office 365 之後，請選取 [ **Outlook**]。
   
-![Office 365 首頁上，以反白顯示的 Outlook 應用程式](../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![Office 365 首頁上，以反白顯示的 Outlook 應用程式](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
 找不到您要的 App 嗎？請從應用程式啟動器選取 [所有 App]**** 以查看依字母順序排序的可用 Office 365 App 清單。您可從該處搜尋特定的 App。 
   

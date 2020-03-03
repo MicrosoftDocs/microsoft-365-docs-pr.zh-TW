@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: eef600b2fc325454ad7a4d36019a4e762409c8b9
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 74e84fc00e5fe633f0d70315cea9ad1329e2f639
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179214"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372011"
 ---
 # <a name="insider-risk-management-alerts"></a>測試人員風險管理提醒
 
@@ -35,6 +35,9 @@ ms.locfileid: "42179214"
     - 若要解決低嚴重性提醒、 小時、 數天或每個月所列的平均時間。
 
 ![測試人員風險管理警示儀表板](../media/insider-risk-alerts-dashboard.png)
+
+>[!NOTE]
+>測試人員風險管理使用內建的警示節流可協助保護和最佳化風險調查並檢閱體驗。 此節流避免發生可能導致多載的原則會發出警示，例如設定錯誤的資料連接器或 DLP 原則的問題。 因此，有可能會延遲中顯示新使用者的提醒。
 
 ## <a name="alert-status-and-severity"></a>警示的狀態和嚴重性
 

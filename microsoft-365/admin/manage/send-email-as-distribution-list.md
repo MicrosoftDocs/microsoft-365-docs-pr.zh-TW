@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: 了解如何在 Office 365 中以通訊群組清單的形式傳送電子郵件 (機器翻譯)。
-ms.openlocfilehash: f165279cf6cfbedda4f122f453c2321c16f412d3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 076405b54f2a1521e0d9a1fc54c734b172eb82e8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251594"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361738"
 ---
 # <a name="send-email-as-a-distribution-list-in-office-365"></a>為 Office 365 中的通訊群組清單傳送電子郵件
 
@@ -43,10 +43,10 @@ ms.locfileid: "42251594"
     
 3. 選取 [**回覆**]。 
     
-4. 在郵件的底部，選取 [**更多** \> **顯示的**。<br/> ![選取 [其他]，然後選擇 [顯示從](../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
+4. 在郵件的底部，選取 [**更多** \> **顯示的**。<br/> ![選取 [其他]，然後選擇 [顯示從](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. 以滑鼠右鍵按一下來源地址-例如`Ina@weewalter.me`-選擇 [**移除**。<br/> ![移除 FROM 別名](../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. 以滑鼠右鍵按一下來源地址-例如`Ina@weewalter.me`-選擇 [**移除**。<br/> ![移除 FROM 別名](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
-6. 然後輸入通訊群組清單地址，例如 support@contoso.com，然後傳送郵件。 下次您回覆從通訊群組清單，其地址會顯示為 [**從**] 清單中的選項。<br/>![共用信箱的別名出現](../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+6. 然後輸入通訊群組清單地址，例如 support@contoso.com，然後傳送郵件。 下次您回覆從通訊群組清單，其地址會顯示為 [**從**] 清單中的選項。<br/>![共用信箱的別名出現](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
   
 

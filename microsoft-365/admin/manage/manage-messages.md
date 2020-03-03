@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: 了解如何管理訊息中心郵件，以協助進行變更管理。
-ms.openlocfilehash: f2c7c5324fe77d1d3dc13a235d7a2f391b09a603
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5b1772eb86acb937d532990830f9220f197c1c00
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251618"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361928"
 ---
 # <a name="manage-messages-in-message-center"></a>管理訊息中心中的郵件
 
@@ -51,7 +51,7 @@ ms.locfileid: "42251618"
 
 您可以選取任何欄標題以排序的遞增或遞減順序中的郵件。 例如，在此圖表中的郵件會**法案依**日期排序。
 
-![訊息中心] 檢視法案依日期排序](../media/message-center-filter-act-by.png)
+![訊息中心] 檢視法案依日期排序](../../media/message-center-filter-act-by.png)
 
 ::: moniker-end
 
@@ -61,7 +61,7 @@ ms.locfileid: "42251618"
  
 您可以選取任何欄標題以排序的遞增或遞減順序中的郵件。 比方說，在此圖中的郵件會**法案依**日期排序。
 
-![訊息中心] 檢視法案依日期排序](../media/message-center-old-admin-center1.png)
+![訊息中心] 檢視法案依日期排序](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 
@@ -71,7 +71,7 @@ ms.locfileid: "42251618"
  
 您可以選取任何欄標題以排序的遞增或遞減順序中的郵件。 比方說，在此圖中的郵件會**法案依**日期排序。
 
-![訊息中心] 檢視法案依日期排序](../media/message-center-old-admin-center1.png)
+![訊息中心] 檢視法案依日期排序](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 

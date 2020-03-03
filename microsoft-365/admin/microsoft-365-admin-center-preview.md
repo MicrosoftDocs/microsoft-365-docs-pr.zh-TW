@@ -18,12 +18,12 @@ search.appverid:
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: 了解新的 Microsoft 365 系統管理中心。
-ms.openlocfilehash: 1506dc63c2ba1e7e8926985b3c5e1cd7d6a11b52
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3cd2fcff839213d843d6474ba826d06c5f2bf504
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254340"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361598"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>關於新的 Microsoft 365 系統管理中心
 
@@ -50,9 +50,9 @@ ms.locfileid: "42254340"
     
 ### <a name="switch-to-the-new-admin-center-and-back-again"></a>切換至新的系統管理中心和回去
 
-- 您可以使用新的 Microsoft 365 系統管理中心時，您可以選擇在藉由選取位於頂端的 [首頁] 頁面上**嘗試在新版系統管理中心**的切換。 如果您登出在系統管理中心時，我們將請記得在選取項目，並將登入至新的系統管理中心。 <br/><br/>![新的系統管理員中心切換從舊版系統管理中心](media/admin-center-toggle-off.png) 
+- 您可以使用新的 Microsoft 365 系統管理中心時，您可以選擇在藉由選取位於頂端的 [首頁] 頁面上**嘗試在新版系統管理中心**的切換。 如果您登出在系統管理中心時，我們將請記得在選取項目，並將登入至新的系統管理中心。 <br/><br/>![新的系統管理員中心切換從舊版系統管理中心](../media/admin-center-toggle-off.png) 
   
-- 切換回舊的系統管理中心從首頁藉由將開關切換為 [**關閉**。 <br/><br/>![開啟新的系統管理員中心切換](media/admin-center-toggle-on.png)
+- 切換回舊的系統管理中心從首頁藉由將開關切換為 [**關閉**。 <br/><br/>![開啟新的系統管理員中心切換](../media/admin-center-toggle-on.png)
 
 在新版系統管理中心中，您可以提供 Microsoft 意見反應關於您的使用經驗藉由選取 [下一步] 來**提供意見反應**右**需要協助嗎？** 底部的每一頁] 按鈕。 告訴我們什麼您想與我們的無法執行更有效率。 此外，您可能會取得快顯問卷從時間-時間提出您的整體曝光或新發行的特定體驗。 您也可以藉由選取提供本文結尾處的意見反應**這項資訊是否有幫助？**
   

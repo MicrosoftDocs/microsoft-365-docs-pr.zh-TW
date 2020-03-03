@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: '建立您的電子郵件、 文件、 應用程式、 SharePoint 網站、 外部網站及其他資源的快速連結應用程式啟動器中新增自訂磚。 '
-ms.openlocfilehash: ad6ef53a4a75f6ab8eb8bb66af4858c80fbc4596
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 65c8da7aa0cdb68f4bf32a52b21140413a38a69a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251628"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361978"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>新增自訂磚至 App 啟動器
 
@@ -33,7 +33,7 @@ ms.locfileid: "42251628"
   
 您還可以在 App 啟動器上，加入自己的自訂磚，讓它們指向 SharePoint 網站、外部網站、舊版 App 等。 自訂磚會出現在應用程式啟動器的**所有**應用程式] 下，但您可以釘選到**首頁**應用程式，並指示使用者執行同樣的動作。 這麼一來，您就可以輕鬆尋找相關的網站、App 和資源來完成您的工作。 在下面這個範例中，名為「Contoso 入口網站」的磚，就是用來存取組織 SharePoint 內部網路網站的自訂磚。 
   
-![Office 365 應用程式啟動器](../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
+![Office 365 應用程式啟動器](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>在 App 啟動器上新增自訂磚
 

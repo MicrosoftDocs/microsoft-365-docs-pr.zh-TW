@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 了解如何在 Microsoft 365 系統管理中心中設定新的產品與功能更新發行選項。
-ms.openlocfilehash: 2d4940003c791e50926eff46aaf6a299e60fb9aa
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d6c2eab340f4401fb31e4d9e814fbd326573569a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251613"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361798"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options-in-office-365"></a>在 Office 365 中設定標準或已設定目標發行選項
 
@@ -39,7 +39,7 @@ ms.locfileid: "42251613"
 
 第一次測試及驗證由功能小組進行，然後由整個 Office 365 功能小組進行，後面接著所有 Microsoft 的任何新的版本。 內部測試和驗證之後, 的下一個步驟是**已設定目標發行**（先前稱為初次發行計劃） 選擇加入的客戶。 在每個發行週期，Microsoft 都會收集意見反應，並透過監視關鍵使用計量，進一步驗證品質。 這樣一系列的漸進式驗證，都是為了確保全球發行能夠盡可能完善。 下圖是發行的圖片說明： 
   
-![驗證週期版 Office 365](../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![驗證週期版 Office 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
 針對重大更新，Office 客戶一開始會由[Microsoft 365 藍圖](https://products.office.com/business/office-365-roadmap)獲得通知。 當更新變得更接近推出，它會傳達透過[Office 365 訊息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)。
 

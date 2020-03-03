@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解安全性威脅保護您的小型企業的簡單方法。
-ms.openlocfilehash: 5407a64967f1a43d068fe560586d0cb40e053779
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a3923731e93962d1976d0cd163db4f97a07aaed2
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240290"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360774"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>適用於小型企業的安全性資訊圖形
 
@@ -28,6 +28,6 @@ ms.locfileid: "42240290"
 
 以 PowerPoint 和 PDF 以下連結可以下載並列印 tabloid 格式 (也稱為 ledger 11 x 17 或 A3)。
 
-![影像以保護您的小型企業版資訊圖形](media/smbthreatprotectioninfographic-thumbnail.png)
+![影像以保護您的小型企業版資訊圖形](../media/smbthreatprotectioninfographic-thumbnail.png)
 
 [PDF](downloads/smbthreatprotection-infographic.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/admin/downloads/smbthreatprotection-infographic.pptx)

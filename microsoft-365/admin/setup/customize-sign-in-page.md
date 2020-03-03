@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: 使用 Azure Active Directory，以自訂的 Office 365 登入頁面。 您可以將圖例、 標誌和文字新增至 [登入] 頁面上。
-ms.openlocfilehash: 7db1271cd3d009bdbf1a26166f95a99d44087421
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 97d1d1c7dcb5a31395c98295a250913bb8ab69f5
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240251"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360644"
 ---
 # <a name="add-your-company-branding-to-office-365-sign-in-page"></a>將公司商標新增至 Office 365 登入頁面
 
@@ -36,7 +36,7 @@ ms.locfileid: "42240251"
   
 下圖顯示您能在 Azure 中修改登入頁面的哪部分。
   
-![Office 365 登入] 頁面上，您可以自訂的區域。](../media/screenshotbranding.png)
+![Office 365 登入] 頁面上，您可以自訂的區域。](../../media/screenshotbranding.png)
   
 1. 大型插圖及/或其背景色彩
     

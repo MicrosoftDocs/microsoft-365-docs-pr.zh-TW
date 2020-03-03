@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何連絡您的國家或地區的客戶支援。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f4fa03ce204f43b4034fcac2bb33a99b52ac6fc7
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 441f66975a2a9203c63e7493940ef8731d4dafa7
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252324"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360424"
 ---
 # <a name="contact-support-for-aland-islands"></a>連絡支援人員的奧蘭群島
 

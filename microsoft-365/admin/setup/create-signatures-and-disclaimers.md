@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 了解如何新增進入或離開貴組織的所有電子郵件訊息的電子郵件簽名、 法律免責聲明或保密聲明。
-ms.openlocfilehash: 3d95e92c4994a99ab3426133580d70453a2f83eb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a63f21dff90c70d39e3709d4c34b53d99a315a59
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252384"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360664"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>建立整個組織的簽章及免責聲明
 
@@ -62,7 +62,7 @@ ms.locfileid: "42252384"
 
 ::: moniker-end
 
-1. 選取 app 啟動器![Office 365 中的應用程式啟動器圖示](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)，然後選取 [**系統管理員**。
+1. 選取 app 啟動器![Office 365 中的應用程式啟動器圖示](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)，然後選取 [**系統管理員**。
    
     找不到您要的 App 嗎？請從應用程式啟動器選取 [所有 App]**** 以查看依字母順序排序的可用 Office 365 App 清單。您可從該處搜尋特定的 App。 
     

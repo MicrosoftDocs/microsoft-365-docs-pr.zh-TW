@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: '了解如何成為系統管理員，並取得 Office 365 訂用帳戶為您的組織。 '
-ms.openlocfilehash: 6fd85f79b32d0a51a5069cfbb55ca58e7cdb1b36
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d646b2e0ead1a4d911b4c9335660e2998ab5292a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254329"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361548"
 ---
 # <a name="become-the-admin-and-purchase-office-365-for-your-organization"></a>成為系統管理員，並為貴組織購買 Office 365
 
@@ -55,16 +55,16 @@ Microsoft 提供生產力工具與服務的方式相當便捷，貴組織內部�
   
 ## <a name="overview-of-the-steps"></a>步驟概觀
 
-![成為管理員及購買 Office 365 之各階段的高層級檢視。](../media/1ee46aff-dccb-4bfd-abb3-811a616009af.png)
+![成為管理員及購買 Office 365 之各階段的高層級檢視。](../../media/1ee46aff-dccb-4bfd-abb3-811a616009af.png)
   
 精靈會引導您完成程序，以下是每個步驟的摘要。
   
 |||
 |:-----|:-----|
-|![粉紅色圓圈中的數字 1](../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**註冊** 成為系統管理員前，您必須先使用公司電子郵件地址完成 Skype 會議 的註冊程序。  <br/> |
-|![粉紅色圓圈中的數字 2。](../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**執行精靈** 註冊後，您即可遵循以下其中一個步驟來執行精靈：  <br/>  執行選取 app 啟動器中的**系統**之後顯示的 [**成為管理員**精靈。  <br/>  OR  <br/>  選擇 [Skype 會議中的 [**升級到 Office 365** ，然後選取 [您想要升級至 Office 365 訂閱。  <br/> |
-|![粉紅色圓圈中的數字 3。](../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**驗證網域擁有權** 接下來，您將向 Office 365 驗證您擁有或管理與貴組織電子郵件地址相關聯的網域名稱 (例如 contoso.com)。只有網域名稱擁有者有權執行此動作。  <br/> |
-|![粉紅色圓圈中的數字 4。](../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**購買授權** 在精靈中的最後一個步驟，您將為所有使用公司電子郵件註冊 Skype 會議的貴組織使用者購買 Office 365 授權。  <br/> 舉例來說，如果有兩位使用者使用自己的公司電子郵件註冊 Skype 會議，您就需要購買兩份授權，以分配給個別使用者使用。  <br/> > [!NOTE]> 您必須購買授權才能管理 Office 365。           |
+|![粉紅色圓圈中的數字 1](../../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**註冊** 成為系統管理員前，您必須先使用公司電子郵件地址完成 Skype 會議 的註冊程序。  <br/> |
+|![粉紅色圓圈中的數字 2。](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**執行精靈** 註冊後，您即可遵循以下其中一個步驟來執行精靈：  <br/>  執行選取 app 啟動器中的**系統**之後顯示的 [**成為管理員**精靈。  <br/>  OR  <br/>  選擇 [Skype 會議中的 [**升級到 Office 365** ，然後選取 [您想要升級至 Office 365 訂閱。  <br/> |
+|![粉紅色圓圈中的數字 3。](../../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**驗證網域擁有權** 接下來，您將向 Office 365 驗證您擁有或管理與貴組織電子郵件地址相關聯的網域名稱 (例如 contoso.com)。只有網域名稱擁有者有權執行此動作。  <br/> |
+|![粉紅色圓圈中的數字 4。](../../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**購買授權** 在精靈中的最後一個步驟，您將為所有使用公司電子郵件註冊 Skype 會議的貴組織使用者購買 Office 365 授權。  <br/> 舉例來說，如果有兩位使用者使用自己的公司電子郵件註冊 Skype 會議，您就需要購買兩份授權，以分配給個別使用者使用。  <br/> > [!NOTE]> 您必須購買授權才能管理 Office 365。           |
 
 ## <a name="your-office-365-subscription"></a>您的 Office 365 訂閱
 

@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: c29d38b5-53a6-4bd9-b7aa-ce12c902da83
 description: 檢視您帳單陳述式或電子發票有關您在中國使用 21vianet 運作的 Office 365。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 280f95b89294e46ee8d1bd0f3f5b06303ed84554
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7e11f2f597382651b58ca0ee6ba1ff5c513b80be
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254130"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360764"
 ---
 # <a name="view-your-bill-or-get-a-fapiao-in-office-365-operated-by-21vianet"></a>檢視您的帳單或取得發票由 21Vianet 運作的 Office 365 中
 

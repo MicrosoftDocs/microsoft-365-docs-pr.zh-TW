@@ -1,7 +1,7 @@
 ---
 title: Microsoft 威脅防護先決條件
 description: 了解 Microsoft 威脅防護的相關授權、硬體和軟體需求，以及其他組態設定
-keywords: 需求、 必要條件、 硬體、 軟體、 瀏覽器中，具有 mtp 之、 M365，授權
+keywords: 需求、 必要條件、 硬體、 軟體、 瀏覽器中，具有 mtp 之、 M365、 授權、 購買 E5、 A5、 EMS
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,19 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c99ef0634c5858e458b9aa4aa622a7ab55c32088
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: ef26a2ebc25d7f55e7dc22347d85767dab970536
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288541"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372051"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威脅防護先決條件
 
 **適用範圍：**
 - Microsoft 威脅防護
-
-
 
 了解授權、 硬體及軟體需求及其他組態設定，以佈建並使用 Microsoft 威脅防護。
 
@@ -41,8 +39,13 @@ ms.locfileid: "42288541"
 - Microsoft 365 E5
 - Microsoft 365 E5 安全性
 - Office 365 E5 和 「 Enterprise Mobility + Security E5 (EMS E5) 」 和 Windows E5
+- Microsoft 365 A5
+- Microsoft 365 A5 安全性
+- Office 365 A5 及 「 企業行動力 + 安全性 A5 (EMS A5) 」 和 Windows A5
 
-[檢視 Microsoft 365 企業版服務計劃](https://www.microsoft.com/en-us/licensing/product-licensing/microsoft-365-enterprise)
+如需詳細資訊，[檢視 Microsoft 365 企業版服務計劃](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
+
+> 沒有授權尚未？ [試用或購買 Microsoft 365 訂用帳戶](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
 
 ### <a name="check-your-existing--licenses"></a>檢查您現有的授權
 移至 Microsoft 365 系統管理中心 ([admin.microsoft.com](https://admin.microsoft.com/)) 來檢視現有的授權。 在系統管理中心中，移至 **[帳單]** >  **[授權]**。

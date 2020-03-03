@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 322cd0aa8b72ea2c81792b36614e87d97db87d7c
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: f499cacd0ec63f9a192e2773b3604473d2153545
+ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179104"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42370492"
 ---
 # <a name="insider-risk-management-users"></a>測試人員風險管理使用者
 
@@ -30,6 +30,9 @@ ms.locfileid: "42179104"
 - **案例**： 使用者目前作用中的案例。
 
 ![測試人員風險管理使用者儀表板](../media/insider-risk-users-dashboard.png)
+
+>[!NOTE]
+>顯示使用者儀表板上的使用者人數可能會限制在某些情況下，根據作用中警示和相符的原則數量而定。 當就會產生警示，且可能會有少數情況下達到顯示使用者的數目上限時，會顯示使用作用中警示的使用者。 如果發生這種情況，將使用者儀表板新增具有不會顯示作用中警示的使用者，為提醒會進行分級的現有使用者。
 
 ## <a name="view-user-details"></a>檢視使用者的詳細資料
 
