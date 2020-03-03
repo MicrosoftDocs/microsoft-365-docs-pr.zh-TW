@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: 了解如何建立 Office 365 群組命名原則。
-ms.openlocfilehash: 50ea076e22680a444cb9acf04466a7e7d052bb7a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 11e2907462d325e4ad421914ae5a0deb5013e695
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239226"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352714"
 ---
 # <a name="office-365-groups-naming-policy"></a>Office 365 群組命名原則
 
@@ -125,7 +125,7 @@ ms.locfileid: "42239226"
 5. 選擇**屬性**和**字串**之間每一行，然後指定 [屬性] 或 [字串。
 6. 當您已新增首碼和尾碼後，您需要時請按一下 [**儲存**]。
 
-![群組命名原則 」 設定 Azure Active Directory 中的螢幕擷取畫面](../media/groups-naming-policy-azure.png)
+![群組命名原則 」 設定 Azure Active Directory 中的螢幕擷取畫面](../../media/groups-naming-policy-azure.png)
 
 ## <a name="naming-policy-experiences-across-office-365-apps"></a>不同 Office 365 應用程式的命名原則體驗
 
@@ -135,7 +135,7 @@ ms.locfileid: "42239226"
 
 當使用者輸入群組名稱或群組的別名 （先前稱為 Outlook Web App 或 OWA） 網頁型 outlook 會顯示命名裝飾的原則名稱。 當使用者輸入自訂的封鎖的 word 時，錯誤訊息所示的封鎖的字以及 UI，讓使用者可以將它移除。 Outlook web 體驗快照集如下所示。
 
-![並排檢視的群組命名原則在 Office 365 群組](../media/1a21657a-c542-4d9e-ac7d-887ac542a9d9.png)
+![並排檢視的群組命名原則在 Office 365 群組](../../media/1a21657a-c542-4d9e-ac7d-887ac542a9d9.png)
 
 ## <a name="outlook-desktop"></a>Outlook 桌面
 
@@ -145,19 +145,19 @@ ms.locfileid: "42239226"
 
 使用者輸入的小組名稱時，Microsoft Teams 會顯示命名裝飾的原則名稱。 當使用者輸入自訂的封鎖的 word 時，會顯示錯誤訊息以及封鎖的字，讓使用者可以將它移除。
 
-![Microsoft Teams 中的群組命名原則封鎖範例](../media/7c904546-5853-4642-949a-a55dbb004eca.png)
+![Microsoft Teams 中的群組命名原則封鎖範例](../../media/7c904546-5853-4642-949a-a55dbb004eca.png)
 
 ## <a name="sharepoint"></a>SharePoint
 
 當使用者所輸入網站的名稱或群組電子郵件地址，SharePoint 會顯示命名的原則名稱。 當使用者在輸入自訂的封鎖的 word，錯誤訊息會顯示，以及封鎖 word，讓使用者可以將它移除。
 
-![群組命名原則-SharePoint 網站封鎖名稱](../media/cf0d6158-fd32-4a93-ac24-2e037102c42c.png)
+![群組命名原則-SharePoint 網站封鎖名稱](../../media/cf0d6158-fd32-4a93-ac24-2e037102c42c.png)
 
 ## <a name="microsoft-stream"></a>Microsoft Stream
 
 使用者輸入群組名稱或群組電子郵件別名時，Microsoft Stream 顯示命名裝飾的原則名稱。 當使用者輸入自訂的封鎖的 word 時，錯誤訊息會顯示的已封鎖的字，讓使用者可以將它移除。
 
-![群組命名原則會封鎖 Microsoft Stream 範例](../media/9748f52a-3814-41a6-9ac1-4e8cd4c91011.png)
+![群組命名原則會封鎖 Microsoft Stream 範例](../../media/9748f52a-3814-41a6-9ac1-4e8cd4c91011.png)
 
 ## <a name="outlook-ios-and-android-app"></a>Outlook iOS 和 Android 應用程式
 
@@ -167,13 +167,13 @@ ms.locfileid: "42239226"
 
 Planner 已符合命名原則。 規劃顯示命名原則預覽時輸入計劃名稱。 當使用者輸入自訂的封鎖的 word 時，會顯示一則錯誤訊息建立計劃，讓使用者可以移除封鎖的單字。
 
-![群組命名原則： 建立新的已封鎖的規劃範例](../media/ea692b44-3a56-4e6d-bcb8-8444fe5bbc4f.png)
+![群組命名原則： 建立新的已封鎖的規劃範例](../../media/ea692b44-3a56-4e6d-bcb8-8444fe5bbc4f.png)
 
 ## <a name="dynamics-365-for-customer-engagement"></a>Dynamics 365 for Customer Engagement
 
 Dynamics 365 for Customer Engagement 是相容命名原則。 Dynamics 365 顯示命名裝飾的原則名稱，當使用者輸入群組名稱或群組電子郵件別名。 當使用者輸入自訂的封鎖的 word 時，錯誤訊息會顯示的已封鎖的字，讓使用者可以將它移除。
 
-![Dynamics 365](../media/8190331c-6779-42bd-a6b3-f7007428c8ae.png)
+![Dynamics 365](../../media/8190331c-6779-42bd-a6b3-f7007428c8ae.png)
 
 ## <a name="school-data-sync-sds"></a>學校資料同步 (SDS)
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何連絡您的國家或地區的客戶支援。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5f69a7ee91f9d142a22970036099164ac4bbac18
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 9b6f2b16dbe61ac1f5289858bf9dae1839fe6057
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240078"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42356754"
 ---
 # <a name="contact-support-for-russia"></a>俄羅斯的連絡客戶支援
 

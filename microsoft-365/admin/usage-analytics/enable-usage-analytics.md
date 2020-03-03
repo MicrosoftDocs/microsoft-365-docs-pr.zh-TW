@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 了解如何開始使用 Power BI 中的 Microsoft 365 使用情況分析範本應用程式租用戶收集資料。
-ms.openlocfilehash: 651a820916f65a1695b7300772b1d2ce8aee92bb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 249fadce15ca2e4c979d6e1930ff0d14ccd9bc08
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240039"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355004"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>啟用 Microsoft 365 使用情況分析
 
@@ -70,7 +70,7 @@ Microsoft 365 使用情況分析也適用於 Microsoft 365 美國政府社群。
   
 3. 在 [**應用程式**] 索引標籤中，輸入 [搜尋] 方塊中的 Microsoft 365，然後選取 [ **Microsoft 365 使用情況分析** \> **取得它現在**。
 
-    [![選取 [立即取得](../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
+    [![選取 [立即取得](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     
 4.  一旦安裝應用程式。 按一下 [上] 磚以開啟它。
 
@@ -80,7 +80,7 @@ Microsoft 365 使用情況分析也適用於 Microsoft 365 美國政府社群。
     
 7. 在下一個畫面上，選取**oAuth2**作為**驗證方法** \> **登入**。 如果您選擇任何其他驗證方法，將會失敗的範本應用程式的連線。
     
-    ![Choose oAuth2 as authentication method](../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
+    ![Choose oAuth2 as authentication method](../../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
   
 8. 一旦具現化範本應用程式的 Microsoft 365 流量分析儀表板將可在 Power BI 網頁。 儀表板的初始載入需要 2 到 30 分鐘。
   
@@ -94,4 +94,4 @@ Microsoft 365 使用情況分析也適用於 Microsoft 365 美國政府社群。
     
 2. 選取 [**報告**]，然後再選擇**顯示匿名識別碼**。 使用狀況報告以及範本應用程式，取得套用此設定。
   
-3. 選取 [**儲存變更**。
+3. 選取 [儲存變更]****。

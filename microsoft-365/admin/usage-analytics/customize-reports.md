@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: 了解如何自訂報告中的瀏覽器和 Power BI Desktop。
-ms.openlocfilehash: 5fc3b399638b2f1e9b1b2726fbf58e22eda33e01
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 6e4bb6cf977607ca6e3b3f57240ac89dbd530e4f
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240426"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355154"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>自訂 Microsoft 365 使用情況分析中的報告
 
@@ -42,19 +42,19 @@ Microsoft 365 使用情況分析提供提供深入了解使用者如何採用及
   
 1. 內 [**啟用/授權**] 報告中，按一下 [**啟用**] 索引標籤。
     
-2. 輸入的編輯模式]，即可透過頂端的 [**編輯**] 按鈕![Power BI 中更多的 [頁面] 按鈕](../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)] 按鈕。 
+2. 輸入的編輯模式]，即可透過頂端的 [**編輯**] 按鈕![Power BI 中更多的 [頁面] 按鈕](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)] 按鈕。 
     
-    ![按一下 [編輯報表上最右邊的功能](../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
+    ![按一下 [編輯報表上最右邊的功能](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
 3. 在右上方，按一下 [**複製此頁面**。
     
-    ![選擇 [複製此頁面](../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
+    ![選擇 [複製此頁面](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
   
 4. 在右底端，按一下 [顯示例如 Android、 iOS、 Mac OS 為基礎的使用者啟用計數橫條任何的圖等等。
     
 5. 在 [**視覺效果**區域右邊，才能移除 visual **Mac 計數**，請按一下在其旁邊的**X** 。
 
-    ![移除 Mac 計數](../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
+    ![移除 Mac 計數](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
     
 ### <a name="create-a-new-visual"></a>建立新的視覺
 
@@ -62,13 +62,13 @@ Microsoft 365 使用情況分析提供提供深入了解使用者如何採用及
   
 1. 移至**產品使用情況**報表使用左側的導覽中，按一下 [ **Yammer** ] 索引標籤上。
     
-2. 切換至編輯模式]，即可在![Power BI 中更多的 [頁面] 按鈕](../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)及**編輯**。 
+2. 切換至編輯模式]，即可在![Power BI 中更多的 [頁面] 按鈕](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)及**編輯**。 
     
-3. 在頁面底部，按一下 [ ![Power BI 中的 [新增頁面] 按鈕](../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 若要建立新的頁面。
+3. 在頁面底部，按一下 [ ![Power BI 中的 [新增頁面] 按鈕](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 若要建立新的頁面。
   
 4. 在右側的 [**視覺效果**] 區域中，按一下 [**堆疊橫條圖**（上方的列，第一次從左）。
 
-    ![選取橫條圖](../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
+    ![選取橫條圖](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
     
 5. 按一下 [右下方的視覺效果，然後拖曳以使其變大。
 
@@ -76,7 +76,7 @@ Microsoft 365 使用情況分析提供提供深入了解使用者如何採用及
 
 7. 將**MonthName**拖曳至 [欄位] 區域中，正下方的**視覺效果**區域中的**座標軸**標題。
  
-    ![拖曳的月份名稱](../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
+    ![拖曳的月份名稱](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
     
 8. 在右邊**欄位**] 區域中，展開 [ **TenantProductUsage**資料表。
 
@@ -86,9 +86,9 @@ Microsoft 365 使用情況分析提供提供深入了解使用者如何採用及
 
 11. 在出現 [**篩選器類型**] 區域中，選取 [ **Yammer** ] 核取方塊。
 
-    ![選取 [Yammer] 核取方塊](../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![選取 [Yammer] 核取方塊](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. 正下方的視覺效果清單中，按一下 [**格式**] 圖示![Power BI Visualizaions 中的 [格式] 圖示](../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)。
+12. 正下方的視覺效果清單中，按一下 [**格式**] 圖示![Power BI Visualizaions 中的 [格式] 圖示](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)。
 
 13. 展開標題及**每月**的第一次 Yammer 使用者變更的**標題文字**值。
     
@@ -112,7 +112,7 @@ Microsoft 365 使用情況分析提供提供深入了解使用者如何採用及
     
     **附註：** 報表 Api 是在預覽中並受限於變更，直到使用者移至實際執行環境。 
   
-    ![OData 摘要的 Power BI desktop URL](../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
+    ![OData 摘要的 Power BI desktop URL](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
   
 3. 輸入您 Microsoft 365 （公司或學校） 系統管理員的認證來驗證 Microsoft 365 出現提示時。
     
@@ -124,7 +124,7 @@ Microsoft 365 使用情況分析提供提供深入了解使用者如何採用及
     
     這會下載資料至 Power BI 桌面上。 儲存檔案，然後您就可以開始建立所需的報表。
     
-    ![可用的報告 API 中的 ODATA 值](../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
+    ![可用的報告 API 中的 ODATA 值](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
   
 ### <a name="use-the-microsoft-365-usage-analytics-template"></a>使用 Microsoft 365 流量分析範本
 
@@ -136,7 +136,7 @@ Microsoft 365 使用情況分析提供提供深入了解使用者如何採用及
     
 2. 在對話方塊中輸入您的租用戶識別碼值。
     
-    ![輸入您的租用戶識別碼，若要開啟的 pbit 檔案](../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
+    ![輸入您的租用戶識別碼，若要開啟的 pbit 檔案](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
   
 3. 輸入您的系統管理員認證來驗證 Microsoft 365 出現提示時。
     

@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: 了解如何解譯費、 帳單和 Office 365 的商務發票付款資訊，以及如何變更購買訂單號碼。
-ms.openlocfilehash: 2cb95b49136c186158d3b8ba3fe868d2c863e0de
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 624480cdc810d5e764cad2a8e569ca60d14dc3ea
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239760"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354684"
 ---
 # <a name="understand-your-invoice-for-office-365-for-business"></a>了解商務用 Office 365 發票
 
@@ -37,11 +37,11 @@ ms.locfileid: "42239760"
   
 您的帳單包含兩頁。 第 1 頁是帳單摘要，且包含有關帳單、 訂單、 應付金額、 付款，以及如何連絡技術支援的一般資訊。
   
-![第 1 頁的帳單。](../../admin/media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
+![第 1 頁的帳單。](../../media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
   
 第 2 頁包含每個訂閱的帳單活動詳細資料。
   
-![第 2 頁的帳單。](../../admin/media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
+![第 2 頁的帳單。](../../media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
   
 如需包含在您的發票的字詞與欄位的說明，請參閱本文稍後的[帳單欄位詞彙](#invoice-field-glossary)。
   
@@ -66,7 +66,7 @@ ms.locfileid: "42239760"
 > [!NOTE]
 > 依銀行帳戶付款不適用於某些國家/地區或區域。
   
-|**Name**|**描述**|
+|**名稱**|**描述**|
 |:-----|:-----|
 |每年的價格|訂單每月或每年。 如果您選擇額度年計費，每年的授權價格會反映在帳單上。 如果您想要變更計費頻率，您必須取消訂閱，並建立新的計費頻率訂單。|
 |計費期間|計費期間是上次帳單日期之後的時間週期。 服務期間是期間您負責使用服務的時間週期。|

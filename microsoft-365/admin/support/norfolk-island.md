@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何連絡您的國家或地區的客戶支援。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 35964aa575478e1a4e278b5db5856071fb920770
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b33c84b40efbc7235ba6d277f11767bff6df4c12
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240591"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42357134"
 ---
 # <a name="contact-support-for-norfolk-island"></a>連絡支援人員的諾福克島
 

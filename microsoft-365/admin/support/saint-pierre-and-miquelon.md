@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何連絡您的國家或地區的客戶支援。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 71b145a42d873c7c6b2345a7da31d072493e7594
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4710e4ecdb8e17f3601cd375db461e8357a4aded
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240523"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42356674"
 ---
 # <a name="contact-support-for-saint-pierre-and-miquelon"></a>連絡支援人員的聖皮埃與密克隆群島
 

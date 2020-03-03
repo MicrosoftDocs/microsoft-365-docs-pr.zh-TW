@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: '了解如何購買另一個 Office 365 商務版訂閱，為您的組織，當您已經有訂用帳戶。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 5f134d69c83e3c3fbb62dbb794e40e22d544ad1f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1a322be8ee76e37259d4a2cddf9ed2d75c379576
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239753"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354644"
 ---
 # <a name="buy-another-office-365-for-business-subscription"></a>購買另一個商務用 Office 365 訂閱
 
@@ -66,11 +66,11 @@ ms.locfileid: "42239753"
 
     您會看到已可供貴組織的訂閱。 任何已購買的訂閱已識別像這樣。
 
-    ![顯示訂閱此組織中已經已購買的橫幅。](../admin/media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
+    ![顯示訂閱此組織中已經已購買的橫幅。](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
 3. 滑鼠移過或點選您想要購買的訂閱，然後選取 [**立即購買]**。
 
-    ![立即購買] 連結的 Microsoft 365 系統管理中心 [購買服務] 頁面上。](../admin/media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
+    ![立即購買] 連結的 Microsoft 365 系統管理中心 [購買服務] 頁面上。](../media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
   
 4. 輸入數字的使用者您需要的授權選擇是否要支付每月或按年，，然後選取 [**新增至購物車**。
 
@@ -92,11 +92,11 @@ ms.locfileid: "42239753"
 
     您會看到已可供貴組織的訂閱。 任何已購買的訂閱已識別像這樣。
 
-    ![顯示訂閱此組織中已經已購買的橫幅。](../admin/media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
+    ![顯示訂閱此組織中已經已購買的橫幅。](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
 3. 滑鼠移過或點選您想要購買的訂閱，然後選取 [**立即購買]**。
 
-    ![立即購買] 連結的 Microsoft 365 系統管理中心 [購買服務] 頁面上。](../admin/media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
+    ![立即購買] 連結的 Microsoft 365 系統管理中心 [購買服務] 頁面上。](../media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
   
 4. 輸入數字的使用者您需要的授權選擇是否要支付每月或按年，，然後選取 [**新增至購物車**。
 

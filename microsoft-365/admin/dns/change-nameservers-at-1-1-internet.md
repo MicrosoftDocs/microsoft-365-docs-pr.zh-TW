@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: 了解如何設定由 21Vianet 運作的 Office 365 來管理您的 DNS 記錄，當 1&1 網際網路是 DNS 主機服務提供者。
-ms.openlocfilehash: 907e4fe097634d28ad44e4d44ba8c6ff2da9164d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3678d5372b9edd8e9333ad78862694b450abe53a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239887"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352564"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-11-ionos"></a>變更名稱伺服器以設定 Office 365 1&1 IONOS
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 如果您希望讓 Office 365 來管理您的 Office 365 DNS 記錄，請遵循下列指示。 (如果您想要的話，您可以[1 管理所有的 Office 365 DNS 記錄&1 IONOS](create-dns-records-at-1-1-internet.md)。) 
   
@@ -62,7 +62,7 @@ ms.locfileid: "42239887"
 ||||
 |:-----|:-----|:-----|
 |**類型** <br/> |**Prefix** <br/> |**Name Value** <br/> |
-|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **附註**： 這是範例。 Use your specific **Destination or Points to Address** value here, from the table in Office 365. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **附註**： 這是範例。 在這裡請使用您自己的 **[目的地或指向位址]** 值，請參閱 Office 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 7. 選取 [**儲存**]，然後**儲存**一次。 
@@ -71,20 +71,20 @@ ms.locfileid: "42239887"
     
 9. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+現在您已在網域註冊機構網站新增記錄，請返回 Office 365 並要求 Office 365 尋找該記錄。
   
-When Office 365 finds the correct TXT record, your domain is verified.
+在 Office 365 找到正確的 TXT 記錄後，您的網域就完成驗證了。
   
-1. 在系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
     
-2. 在 [**網域**] 頁面上，選取您要驗證的網域。 
+2. 在 **[網域]** 頁面上，選取您要驗證的網域。 
     
-3. 在 [**安裝**] 頁面上，選取 [**啟動安裝程式**。
+3. 在 **[設定]** 頁面上，選取 **[開始設定]**。
     
-4. 在 [**驗證網域**] 頁面上，選取 [**驗證**]。
+4. 在 [驗證網域]**** 頁面上，選取 [驗證]****。
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. 如果您遇到與郵件流程或其他問題新增 DNS 記錄之後，請參閱[尋找並修正新增網域或 Office 365 中的 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正在 Office 365 中新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>變更您網域的名稱伺服器 (NS) 記錄
 
@@ -124,11 +124,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
 |:-----|:-----|
 |**名稱伺服器 1** <br/> |ns1.bdm.microsoftonline.com  <br/> |
    
-   ![在 [名稱伺服器 1] 方塊中輸入值](../media/34509935-461f-427f-9796-c3cf840bd9be.png)
+   ![在 [名稱伺服器 1] 方塊中輸入值](../../media/34509935-461f-427f-9796-c3cf840bd9be.png)
   
 2. 在**其他名稱伺服器**] 下拉式清單中，選擇 [**我的次要名稱伺服器**]。
     
-    ![Choosing My secondary name servers in the list](../media/7eb14856-86da-45c2-910c-c72312250a18.png)
+    ![Choosing My secondary name servers in the list](../../media/7eb14856-86da-45c2-910c-c72312250a18.png)
   
 3. 在 [**名稱伺服器 2、 3 和 4** ] 方塊中，輸入或複製並貼上下表中的值。 
     
@@ -138,15 +138,15 @@ When Office 365 finds the correct TXT record, your domain is verified.
 |**Name server 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Name server 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-    ![Entering name server values](../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
+    ![Entering name server values](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
     
-    ![在 [名稱伺服器設定] 頁面上選取儲存](../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
+    ![在 [名稱伺服器設定] 頁面上選取儲存](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
 5. 在 [**編輯 DNS 設定**] 對話方塊中，選取 [**是**]。
     
-    ![在 [編輯 DNS 設定] 對話方塊中選取儲存](../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
+    ![在 [編輯 DNS 設定] 對話方塊中選取儲存](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
 > 您的名稱伺服器記錄更新可能需要數小時的時間，才能更新到整個網際網路的 DNS 系統。接著，您的 Office 365 電子郵件和其他服務就能搭配您的網域順利運作。 
@@ -158,7 +158,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
   
 1. 如果有 」 名稱伺服器列在 [**名稱伺服器**] 方塊中，刪除每個選取它，然後按鍵盤上的**Delete**鍵。 
     
-    ![Deleting name servers](../media/af0a68cc-b058-4925-b3b1-52dfded003c1.png)
+    ![Deleting name servers](../../media/af0a68cc-b058-4925-b3b1-52dfded003c1.png)
   
 2. 在 [**名稱伺服器 1、 2、 3 和 4** ] 方塊中，輸入或複製並貼上下表中的值。 
     
@@ -169,15 +169,15 @@ When Office 365 finds the correct TXT record, your domain is verified.
 |**Name server 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Name server 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![輸入名稱伺服器值](../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
+   ![輸入名稱伺服器值](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
-3. 選取 **[儲存]**。
+3. 選取 [儲存]****。
     
-    ![在 [名稱伺服器設定] 頁面上選取儲存](../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
+    ![在 [名稱伺服器設定] 頁面上選取儲存](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   
 4. 在 [**編輯 DNS 設定**] 對話方塊中，選取 [**是**]。
     
-    ![在 [編輯 DNS 設定] 對話方塊中選取儲存](../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
+    ![在 [編輯 DNS 設定] 對話方塊中選取儲存](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
 > 您的名稱伺服器記錄更新可能需要數小時的時間，才能更新到整個網際網路的 DNS 系統。接著，您的 Office 365 電子郵件和其他服務就能搭配您的網域順利運作。 

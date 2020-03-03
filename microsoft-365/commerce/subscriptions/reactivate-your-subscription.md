@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: 了解如何重新啟動您的 Office 365 訂閱，它到期時，或 Microsoft 會停用，或您取消在中間。
-ms.openlocfilehash: 7b902e210e39f41f6753958c5b6453c85a242f6c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4bd5a0b9c8013117b07c69ad222447bdfd56af3a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239555"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354604"
 ---
 # <a name="reactivate-your-subscription"></a>重新啟動您的訂閱
 
@@ -67,7 +67,7 @@ ms.locfileid: "42239555"
 
 2. 尋找您想要重新啟用，該訂閱，然後選取 [**重新啟用**。
 
-    ![表示已停用的訂閱卡片特寫並降低與重新啟用] 按鈕的功能。](../../admin/media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+    ![表示已停用的訂閱卡片特寫並降低與重新啟用] 按鈕的功能。](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
     如果您沒有看到**重新啟用**為可用的動作，以重新啟動您的訂閱[連絡支援人員](../../admin/contact-support-for-business-products.md)。
 
@@ -88,7 +88,7 @@ ms.locfileid: "42239555"
 
 2. 尋找您想要重新啟用，該訂閱，然後選取 [**重新啟用**。
 
-    ![表示已停用的訂閱卡片特寫並降低與重新啟用] 按鈕的功能。](../../admin/media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+    ![表示已停用的訂閱卡片特寫並降低與重新啟用] 按鈕的功能。](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
     如果您沒有看到**重新啟用**為可用的動作，以重新啟動您的訂閱[連絡支援人員](../../admin/contact-support-for-business-products.md)。
 

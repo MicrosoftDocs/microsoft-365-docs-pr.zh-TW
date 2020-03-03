@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何連絡您的國家或地區的客戶支援。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f4ba71b7a1bba44f99769c30f5ff901e019af031
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b35fd62739a367937cffd35a426a19be8fc270ca
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240643"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42357774"
 ---
 # <a name="contact-support-for-mali"></a>針對馬利連絡客戶支援
 

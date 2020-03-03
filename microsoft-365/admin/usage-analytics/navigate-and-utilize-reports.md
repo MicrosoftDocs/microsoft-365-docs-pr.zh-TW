@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: 了解如何檢視使用 [瀏覽索引標籤及篩選報告。
-ms.openlocfilehash: abd3cdf478f5a17d11af99428ec71bddd7eb339a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3abbd2362cb6216d5dd561c7792fa41588daac66
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251734"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355104"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>導覽和運用 Microsoft 365 使用情況分析中的報告
 
@@ -34,35 +34,35 @@ ms.locfileid: "42251734"
 
 - 使用瀏覽索引標籤左邊或相關的度量單位，在**Executive Summary** ] 頁面上，瀏覽至每個最高層級的報表。
 
-    ![顯示在左側瀏覽索引標籤](../media/navigate-usage-analytics1.png)
+    ![顯示在左側瀏覽索引標籤](../../media/navigate-usage-analytics1.png)
 
 - 使用頂端的每個最高層級的報表的瀏覽索引標籤，瀏覽至該階層內的不同報告。
 
-    ![顯示在每個報告的頂端瀏覽索引標籤](../media/navigate-usage-analytics2.png)
+    ![顯示在每個報告的頂端瀏覽索引標籤](../../media/navigate-usage-analytics2.png)
 
 - 許多報表都包含交叉分析篩選器，您可以篩選產品，AAD 屬性，或您想要檢視的活動。 這些可以是單選或複選。
 
-    ![顯示交叉分析篩選器](../media/navigate-usage-analytics3.png)
+    ![顯示交叉分析篩選器](../../media/navigate-usage-analytics3.png)
 
-    ![顯示交叉分析篩選器](../media/navigate-usage-analytics4.png)
+    ![顯示交叉分析篩選器](../../media/navigate-usage-analytics4.png)
 
 
 - 將游標暫留在資料點上可檢視包含詳細資料的註標。
 
-    ![顯示範例將游標暫留](../media/navigate-usage-analytics6.png)
+    ![顯示範例將游標暫留](../../media/navigate-usage-analytics6.png)
 
 具現化範本應用程式的使用者必須能夠自訂報表以符合其需求。 若要自訂的範本應用程式：
 
 - 選取 [**編輯報表**上方的報告]。
 
-    ![顯示編輯報表](../media/navigate-usage-analytics7.png)
+    ![顯示編輯報表](../../media/navigate-usage-analytics7.png)
 
 
 - 使用基礎的[資料集](usage-analytics-data-model.md)，建立您自己的視覺效果。
 
 - 使用 PowerBI Desktop 匯入您自己的資料來源。
 
-若要共用報表，只要選取 [共用] 按鈕 ![Power BI Share icon](../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) 在頁面頂端。
+若要共用報表，只要選取 [共用] 按鈕 ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) 在頁面頂端。
 
 若要了解如何自訂報表，請參閱[自訂 Microsoft 365 使用情況分析中的報告](customize-reports.md)。
 

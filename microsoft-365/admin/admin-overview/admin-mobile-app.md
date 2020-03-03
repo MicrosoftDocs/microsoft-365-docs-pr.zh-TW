@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: 取得 Microsoft 365 系統管理應用程式及了解如何管理線上組織從手機或平板電腦。
-ms.openlocfilehash: 6f81da66ff8d60f1adc249c1e21542b0174050d6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fc1be50c10ba5158c335d9c9b9dd1e69079ac2c1
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239334"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353034"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>有關 Microsoft 365 admin 行動應用程式
 
 您是系統管理員隨時隨地通常是？ 然後嗎？ 請查看[Microsoft 365 Admin app](https://go.microsoft.com/fwlink/?LinkID=627216)。 您可以使用該應用程式來管理線上組織從手機或平板電腦。 從 Apple Store 和 Google Play，您可以取得應用程式。 <br> 
 
-![Admin 行動應用程式的首頁上，顯示搜尋、 郵件、 健康情況及快速連結的螢幕擷取畫面。](../media/admin-mobile-app-darkbg.png)
+![Admin 行動應用程式的首頁上，顯示搜尋、 郵件、 健康情況及快速連結的螢幕擷取畫面。](../../media/admin-mobile-app-darkbg.png)
 
 系統管理應用程式是具備豐富功能的應用程式，具有超過 80 個功能，可協助您管理貴組織，當您不能取得的電腦。 以下是只是一些您可以從應用程式執行的工作清單：
 

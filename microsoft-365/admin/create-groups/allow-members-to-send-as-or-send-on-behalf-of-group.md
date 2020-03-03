@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: 了解如何讓成員為 Office 365 群組傳送電子郵件] 或 [代理 Office 365 群組傳送電子郵件。
-ms.openlocfilehash: c0dca3a3bbed6617874d9dfbca06a4ec5d6b4ebc
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0179dbd2e3093ce80929f6c5f9e689aece845a40
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239246"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352754"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允許成員傳送為 」 或 「 代理群組傳送
 
@@ -47,17 +47,17 @@ ms.locfileid: "42239246"
   
 1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>中，前往 [**收件者** \> **群組**。
     
-2. 選取 [**編輯**  ![編輯群組圖示](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png)上您想要允許使用者傳送為群組。 
+2. 選取 [**編輯**  ![編輯群組圖示](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png)上您想要允許使用者傳送為群組。 
     
 3. 選取 [**群組委派**]。
     
 4. 在 [以下列**傳送**] 區段中，選取 [**+** 新增您想要傳送做為群組的使用者登入。 
     
-    ![選取加號，以新增您想要傳送做為 Office 365 群組的使用者](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![選取加號，以新增您想要傳送做為 Office 365 群組的使用者](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. 輸入要搜尋或挑選清單中的使用者。 選取 [**確定**] 和 [**儲存**]。
     
-    ![輸入要搜尋或挑選清單中的使用者](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![輸入要搜尋或挑選清單中的使用者](../../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
   
 ## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>允許成員代理群組傳送電子郵件
 
@@ -65,17 +65,17 @@ ms.locfileid: "42239246"
   
 1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>中，前往 [**收件者** \> **群組**。
     
-2. 選取 [**編輯**![編輯群組圖示](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png)上您想要允許使用者傳送為群組。 
+2. 選取 [**編輯**![編輯群組圖示](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png)上您想要允許使用者傳送為群組。 
     
 3. 選取 [**群組委派**]。
     
 4. 在代理傳送者] 區段中，選取 [**+** 以新增您想要傳送做為群組的使用者登入。 
     
-    ![選取加號，以新增您想要傳送做為 Office 365 群組的使用者](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![選取加號，以新增您想要傳送做為 Office 365 群組的使用者](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. 輸入要搜尋或挑選清單中的使用者。 選取 [**確定**] 和 [**儲存**]。
     
-    ![輸入要搜尋或挑選清單中的使用者](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![輸入要搜尋或挑選清單中的使用者](../../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>相關文章
 

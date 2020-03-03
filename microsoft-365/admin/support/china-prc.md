@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何連絡您的國家或地區的客戶支援。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6184dc81d3a8c0c2b09bef94cc4e95e48337a9b9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f9ab7cfa33781f5227831b9809a2099bc8eea2b9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252243"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359484"
 ---
 # <a name="contact-support-for-china-prc"></a>連絡客戶支援中國 （中華人民共和國）
 
@@ -42,7 +42,7 @@ ms.locfileid: "42252243"
 替代電話號碼： 400 920 0365 （行動電話）
 
 ## <a name="follow-us-on-wechat"></a>在 WeChat 上關注我們
-![WeChat 的 QR 碼](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![WeChat 的 QR 碼](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ## <a name="contact-support-for-office-365-operated-by-21vianet-only"></a>由僅 21Vianet 運作的 Office 365 連絡客戶支援
 ## <a name="phone-number"></a>電話號碼

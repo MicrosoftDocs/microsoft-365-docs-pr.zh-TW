@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: '了解如何更新您的 Office 365 商務版訂閱使用產品金鑰，並開啟或關閉週期性的帳單。 '
-ms.openlocfilehash: f9b80fa6cc28edbea955575016824532239ec2f9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: bef43359b2a073339488648466adaf4603a12c43
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254371"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354574"
 ---
 # <a name="renew-office-365-for-business"></a>更新 Office 365 for business
 
@@ -80,7 +80,7 @@ ms.locfileid: "42254371"
  
 3. 若要開啟**週期性帳單**上，將開關切換到**上**。
 
-    ![已開啟的週期性帳單訂閱卡可以放大。](../../admin/media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![已開啟的週期性帳單訂閱卡可以放大。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
     您可以關閉**週期性計費**，只要將開關切換為 [**關閉**。
 
@@ -103,7 +103,7 @@ ms.locfileid: "42254371"
  
 3. 若要開啟**週期性帳單**上，將開關切換到**上**。
 
-    ![已開啟的週期性帳單訂閱卡可以放大。](../../admin/media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![已開啟的週期性帳單訂閱卡可以放大。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
     您可以關閉**週期性計費**，只要將開關切換為 [**關閉**。
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: 了解若要確認您的組織已移至 [訂閱] 頁面上的訂閱。
 ms.custom: okr_SMB
-ms.openlocfilehash: e8871e5d10d86f7e0f45dc34dd824bae6fb2c007
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1a63b0b17333ad12846ba8bac2c83b2d8dfc67a8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239291"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352824"
 ---
 # <a name="what-subscription-do-i-have"></a>我有何種訂閱？
 
@@ -52,13 +52,13 @@ ms.locfileid: "42239291"
 
 2. 如果您有只有一個訂閱，它會顯示在 [**訂閱**] 頁面上，連同訂閱名稱、 訂閱，以及其狀態的相關資訊。 在下列的螢幕擷取畫面中，您可以看到我擁有 Office 365 商務版訂閱。
 
-    ![The Subscriptions page that shows which subscription you have as well as its status.](../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
+    ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
 3. 如果您有多個訂閱，您會看到訂閱詳細資訊旁有一欄，列出已購買的訂閱和所有試用版訂閱。根據預設，系統會自動選取清單頂端列出的訂閱，並顯示該訂閱的詳細資訊。
 
     如果您有多個訂閱，選擇您想要查看詳細的資訊。 系統會使用該訂閱的相關資訊來更新訂閱卡。
 
-    ![顯示多個訂閱依據其狀態的清單在系統管理中心的 [訂閱] 頁面。](../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
+    ![顯示多個訂閱依據其狀態的清單在系統管理中心的 [訂閱] 頁面。](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
   
     > [!NOTE]
     > 如果您有訂閱已到期或停用，系統就會依據訂閱的目前狀態列出。
@@ -71,13 +71,13 @@ ms.locfileid: "42239291"
 
 2. 如果您有只有一個訂閱，它會顯示在 [**訂閱**] 頁面上，連同訂閱名稱、 訂閱，以及其狀態的相關資訊。 在下列的螢幕擷取畫面中，您可以看到我擁有 Office 365 商務版訂閱。
 
-    ![The Subscriptions page that shows which subscription you have as well as its status.](../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
+    ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
 3. 如果您有多個訂閱，您會看到訂閱詳細資訊旁有一欄，列出已購買的訂閱和所有試用版訂閱。根據預設，系統會自動選取清單頂端列出的訂閱，並顯示該訂閱的詳細資訊。
 
     如果您有多個訂閱，選擇您想要查看詳細的資訊。 系統會使用該訂閱的相關資訊來更新訂閱卡。
 
-    ![顯示多個訂閱依據其狀態的清單在系統管理中心的 [訂閱] 頁面。](../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
+    ![顯示多個訂閱依據其狀態的清單在系統管理中心的 [訂閱] 頁面。](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
   
     > [!NOTE]
     > 如果您有訂閱已到期或停用，系統就會依據訂閱的目前狀態列出。

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何連絡您的國家或地區的客戶支援。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f4c7e033eb5c792feeb0b2f96001e7e3f91ab891
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 6401b5aaaea4ebeac73e1379efaa0811c5223b0d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251758"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42356314"
 ---
 # <a name="contact-support-for-south-georgia-and-south-sandwich-islands"></a>連絡支援南喬治亞與南三明治群島
 

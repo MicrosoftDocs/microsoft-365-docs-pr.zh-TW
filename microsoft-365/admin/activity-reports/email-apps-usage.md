@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: 了解如何取得電子郵件 app 使用情況報告來了解電子郵件應用程式連線到 Exchange Online，而且所使用的 Outlook 版本使用者。
-ms.openlocfilehash: 3fc0d0ce29e38bc2b7f30b6bf15909f9a736de30
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: bb75b28e41de37d4f21acedd4705db71f6c2c303
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239166"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353784"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>在管理中心中的電子郵件 app 使用情況的 Microsoft 365 報告
 
@@ -43,7 +43,7 @@ Microsoft 365**報告**儀表板顯示您的活動概觀跨組織中的產品。
 
 您可以透過檢視電子郵件 app 活動查看 [**使用者**] 和 [**用戶端**圖表。 
   
-![電子郵件用戶端使用情況](../media/2a775e46-750f-4fa6-8197-de4b24614bd7.png)
+![電子郵件用戶端使用情況](../../media/2a775e46-750f-4fa6-8197-de4b24614bd7.png)
   
 |||
 |:-----|:-----|
@@ -53,9 +53,9 @@ Microsoft 365**報告**儀表板顯示您的活動概觀跨組織中的產品。
 |4.  <br/> |**應用程式**檢視您的唯一使用者數目會依據 app 顯示在選取的時間期間。  <br/> |
 |5.  <br/> |[**版本**] 檢視您的每個版本的 Outlook 的唯一使用者數目視窗中顯示。  <br/> |
 |6.  <br/> | 在 [**使用者**] 圖表中，Y 軸是連結到 app 的報表期間任何一天的單獨使用者數總計。  <br/>  在 [**使用者**] 圖表上，X 軸是數字的應用程式用於報表期間內的單獨使用者。  <br/>  在 [ **App** ] 圖表中，Y 軸是在報告期間內使用特定 app 的唯一使用者總數。  <br/>  在 [ **App** ] 圖表中，X 軸是您的組織中的應用程式清單。  <br/>  在 [**版本**] 圖表中，Y 軸是使用特定電腦版 Outlook 的唯一使用者總數。 若報表無法解析 Outlook 的版本號碼，數量將顯示為「未定」。  <br/>  [**版本**] 圖表上的 X 軸是您的組織中的應用程式清單。  <br/> |
-|7.  <br/> |您可以篩選圖表 selectingan 項目在圖例中所見的數列。 例如，在 [**使用者**] 圖表中，選取 [ **Mac 郵件**] 或 [ **Outlook** ![電子郵件用戶端的清單。 選取 [電子郵件用戶端的用戶端上取得更多報告資料。](../media/19b9da1b-7b69-4a04-8527-38349f859e84.png) ，以查看只與各類別相關的資訊。 變更此區段不會變更格線表格中的資訊。 Mac 郵件、Mac 版 Outlook、Outlook Mobile、電腦版 Outlook 與 Outlook 網頁版都是您組織中可能擁有的電子郵件 App 範例。  <br/> |
+|7.  <br/> |您可以篩選圖表 selectingan 項目在圖例中所見的數列。 例如，在 [**使用者**] 圖表中，選取 [ **Mac 郵件**] 或 [ **Outlook** ![電子郵件用戶端的清單。 選取 [電子郵件用戶端的用戶端上取得更多報告資料。](../../media/19b9da1b-7b69-4a04-8527-38349f859e84.png) ，以查看只與各類別相關的資訊。 變更此區段不會變更格線表格中的資訊。 Mac 郵件、Mac 版 Outlook、Outlook Mobile、電腦版 Outlook 與 Outlook 網頁版都是您組織中可能擁有的電子郵件 App 範例。  <br/> |
 |8.  <br/> | 您可能無法在欄中看到下方清單中的所有項目，直到您新增那些項目之後才會出現。<br/> **Username**是電子郵件應用程式的擁有者的名稱。  <br/> **[上次活動日期**是使用者讀取或傳送電子郵件訊息的最晚日期。  <br/> **Mac 郵件**、 **Mac Outlook**與**Outlook**、 **Outlook mobile**和**outlook 網頁版**是您組織中可能擁有的電子郵件應用程式的範例。  <br/>  如果貴組織的原則防止您檢視可識別之使用者資訊的報告，您可以變更所有這類報告的隱私權設定。 請參閱**如何隱藏使用者層級的詳細資訊？** ] 區段中[的 Microsoft 365 系統管理中心的活動報告](activity-reports.md)中。  <br/> |
-|9.  <br/> |選取 [**管理欄]** 來新增或移除報告中的欄。  <br/> ![電子郵件 app 使用情況報告-選擇欄](../media/c17b2a5c-db41-474a-8334-0e5a621b2f16.png)|
+|9.  <br/> |選取 [**管理欄]** 來新增或移除報告中的欄。  <br/> ![電子郵件 app 使用情況報告-選擇欄](../../media/c17b2a5c-db41-474a-8334-0e5a621b2f16.png)|
 |10.  <br/> |您可以也報告資料匯出到 Excel.csv 檔案，藉由選取 [**匯出**] 連結。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。  <br/> |
 |||
    

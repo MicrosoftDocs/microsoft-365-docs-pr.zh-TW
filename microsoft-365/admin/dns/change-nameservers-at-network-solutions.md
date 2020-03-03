@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: '了解如何設定 Office 365 使用 Network Solutions 自訂網域，如果您希望 Office 365 來管理您的 DNS 記錄。 '
-ms.openlocfilehash: c9465da507e6b4dea35f9ead50b5bc7c14a1b38f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5eae7561baa6e0efb4436e6758d3fd972a2700cc
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239807"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42351754"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-network-solutions"></a>使用 Network Solutions 變更名稱伺服器以設定 Office 365
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。
   
 如果要讓 Office 365 為您管理 Office 365 DNS 記錄，請按照下列指示進行 (您可視需要[在 Network Solutions 管理所有 Office 365 DNS 記錄](create-dns-records-at-network-solutions.md))。
   
@@ -48,61 +48,61 @@ ms.locfileid: "42239807"
     > [!IMPORTANT]
     > 您選取 [**登入**] 按鈕之前，請先選擇 [**管理我的網域名稱**中**登入至：** 下拉式清單。
   
-    ![選擇 [管理我的網域名稱]，然後登入 Network Solutions](../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
+    ![選擇 [管理我的網域名稱]，然後登入 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
 2. 選取您要修改之網域名稱旁的核取方塊。
     
-    ![針對您的網域選取核取方塊](../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
+    ![針對您的網域選取核取方塊](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
 3. 選取 [**編輯 DNS**]。
     
-    ![選取 [編輯 DNS](../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![選取 [編輯 DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. 選取 [**管理進階的 DNS 記錄**]。
     
     (You may have to scroll down.)
     
-    ![選取 [管理進階的 DNS 記錄](../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![選取 [管理進階的 DNS 記錄](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
 5. 向下的**文字 （TXT 記錄）** 區段中，捲動，然後選取 [**編輯 TXT 記錄**。
     
-    ![選取 [編輯 TXT 記錄](../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
+    ![選取 [編輯 TXT 記錄](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
 6. In the boxes for the new record, type or copy and paste the values in the following table.
     
-|**Host (主機)**|**TTL**|**Text**|
+|**Host** (主機)|**TTL**|**Text**|
 |:-----|:-----|:-----|
-|@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **附註**： 這是範例。 Use your specific **Destination or Points to Address** value here, from the table in Office 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)
+|@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **附註**： 這是範例。 在這裡請使用您自己的 **[目的地或指向位址]** 值，請參閱 Office 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)
    
     
-   ![輸入或貼於新記錄的方塊中的值](../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
+   ![輸入或貼於新記錄的方塊中的值](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
 7. 選取 [**繼續**]。
     
-    ![選取 [繼續]](../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
+    ![選取 [繼續]](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
 8. 選取 [**儲存變更**。
     
-    ![選取 [儲存的變更](../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
+    ![選取 [儲存的變更](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
   
 9. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+現在您已在網域註冊機構網站新增記錄，請返回 Office 365 並要求 Office 365 尋找該記錄。
   
-When Office 365 finds the correct TXT record, your domain is verified.
+在 Office 365 找到正確的 TXT 記錄後，您的網域就完成驗證了。
   
-1. 在系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
 
     
-2. 在 [**網域**] 頁面上，選取您要驗證的網域。 
+2. 在 **[網域]** 頁面上，選取您要驗證的網域。 
     
     
   
-3. 在 [**安裝**] 頁面上，選取 [**啟動安裝程式**。
+3. 在 **[設定]** 頁面上，選取 **[開始設定]**。
     
     
   
-4. 在 [**驗證網域**] 頁面上，選取 [**驗證**]。
+4. 在 **[驗證網域]** 頁面上，選取 **[驗證]**。
     
     
   
@@ -126,19 +126,19 @@ When Office 365 finds the correct TXT record, your domain is verified.
     > [!IMPORTANT]
     > 您選取 [**登入**] 按鈕之前，請先選擇 [**管理我的網域名稱**中**登入至：** 下拉式清單。 
   
-    ![選擇 [管理我的網域名稱]，然後登入 Network Solutions](../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
+    ![選擇 [管理我的網域名稱]，然後登入 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
 2. 選取您要修改之網域名稱旁的核取方塊。
     
-    ![針對您的網域選取核取方塊](../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
+    ![針對您的網域選取核取方塊](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
 3. 選取 [**編輯 DNS**]。
     
-    ![選取 [編輯 DNS](../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![選取 [編輯 DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. 選取 [**移動 DNS**]。
     
-    ![NetworkSolutionsBP-重新委派-1-1](../media/e57a30f3-63d5-4bcb-84c6-c8be21c261a2.png)
+    ![NetworkSolutionsBP-重新委派-1-1](../../media/e57a30f3-63d5-4bcb-84c6-c8be21c261a2.png)
   
 5. 請根據現在顯示頁面上是否列出名稱伺服器，來選擇下列兩個程序其中一項繼續︰
     
@@ -150,7 +150,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 
 1. 在 [**網域**] 頁面上，在 [**指定網域名稱伺服器**] 區段中，選取**新增更多名稱伺服器**。
     
-    ![NetworkSolutionsBP-重新委派-1-2-1](../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
+    ![NetworkSolutionsBP-重新委派-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
 2. 在 [**網域名稱**] 頁面中，輸入或複製並貼上下表中的名稱伺服器值。 
     
@@ -162,15 +162,15 @@ When Office 365 finds the correct TXT record, your domain is verified.
 |**Name Server 2 (名稱伺服器 2)** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
     
-![NetworkSolutionsBP-重新委派-1-2-2](../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
+![NetworkSolutionsBP-重新委派-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
   
 3. 選取 [**移動 DNS**]。
     
-    ![NetworkSolutionsBP-重新委派-1-2-3](../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
+    ![NetworkSolutionsBP-重新委派-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
   
 4. 選取 [**儲存變更**。
     
-    ![NetworkSolutionsBP-重新委派-1-2-4](../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
+    ![NetworkSolutionsBP-重新委派-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
   
 > [!NOTE]
 > 您的名稱伺服器記錄更新可能需要數小時的時間，才能更新到整個網際網路的 DNS 系統。接著，您的 Office 365 電子郵件和其他服務就能搭配您的網域順利運作。 
@@ -182,11 +182,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
   
 1. 如果有任何其他列出的名稱伺服器，請逐一選取它，然後按鍵盤上的**Delete**鍵。
     
-    ![NetworkSolutions-DYN-BP-CONFIGURE-1-重新委派-1-5](../media/eeb8ad22-bf4a-43a8-b97a-f09c3654d89b.png)
+    ![NetworkSolutions-DYN-BP-CONFIGURE-1-重新委派-1-5](../../media/eeb8ad22-bf4a-43a8-b97a-f09c3654d89b.png)
   
 2. 選取 [**新增更多名稱伺服器**]。
     
-    ![NetworkSolutionsBP-重新委派-1-2-1](../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
+    ![NetworkSolutionsBP-重新委派-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
 3. 在 [**網域名稱**] 頁面中，輸入或複製並貼上下表中的名稱伺服器值。
  
@@ -199,15 +199,15 @@ When Office 365 finds the correct TXT record, your domain is verified.
 |**Name Server 4 (名稱伺服器 4)** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
     
-![NetworkSolutionsBP-重新委派-1-2-2](../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
+![NetworkSolutionsBP-重新委派-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
   
 4. 選取 [**移動 DNS**]。
     
-    ![NetworkSolutionsBP-重新委派-1-2-3](../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
+    ![NetworkSolutionsBP-重新委派-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
   
 5. 選取 [**儲存變更。**
     
-    ![NetworkSolutionsBP-重新委派-1-2-4](../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
+    ![NetworkSolutionsBP-重新委派-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
   
 > [!NOTE]
 > 您的名稱伺服器記錄更新可能需要數小時的時間，才能更新到整個網際網路的 DNS 系統。接著，您的 Office 365 電子郵件和其他服務就能搭配您的網域順利運作。

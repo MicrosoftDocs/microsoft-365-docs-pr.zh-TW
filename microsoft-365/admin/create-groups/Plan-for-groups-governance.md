@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 - BSA160
 description: 了解如何規劃的 Office 365 群組控管。
-ms.openlocfilehash: 33c6562e85e98570e9f04e7b7ccb6d0fa882669d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b79da69995446aa7e61eea4d836e322743a7d2bb
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239263"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352904"
 ---
 # <a name="plan-for-governance-in-office-365-groups"></a>Office 365 群組中的控管規劃
 
 Office 365 群組具有一組豐富的工具來實作您的組織可能需要任何控管功能。 本文將引導到提出正確的問題來判斷其需求的控管，以及如何符合其根據其組織設定檔的 IT 專業人員。
 
 ## <a name="why-office-365-groups"></a>為什麼 Office 365 群組？
-![影像 desc](../media/01.png)
+![影像 desc](../../media/01.png)
 
 我們知道，組織目前正在使用各種工具組。 沒有使用小組聊天，傳送電子郵件，並透過企業社交連線在整個組織 executives 的開發人員小組。 多個共同作業工具都在使用，因為每個群組都是唯一的而且有其專屬功能的需求和。 時其他人將 live 主要在聊天中，部分將會使用僅電子郵件。 
 
@@ -71,7 +71,7 @@ Office 365 群組讓使用者，並藉由許多共同作業所需的工具提供
 ## <a name="where-to-start-a-conversation"></a>要從何處開始交談
 有多個位置進行 Office 365 內的對話。 了解要從何處開始交談，可協助組織定義的策略來進行通訊。
 
-![影像 desc](../media/02.png)
+![影像 desc](../../media/02.png)
 
 - Teams： 聊天型工作區 （高速度共同作業） – 內部迴圈
    - 內建與您處理每日的人員的共同作業
@@ -92,7 +92,7 @@ Office 365 群組讓使用者，並藉由許多共同作業所需的工具提供
   - 共用內容、 建立自訂的頁面及製作最新消息
   - [Connect](https://docs.microsoft.com/sharepoint/dev/features/groupify/groupify-overview)現有 SharePoint 小組網站到新的 Office 365 群組
 
-![影像 desc](../media/03.png)
+![影像 desc](../../media/03.png)
 
 ##  <a name="managing-and-governing-office-365-at-scale"></a>管理及管理 Office 365 規模
 
@@ -111,7 +111,7 @@ Office 365 群組具有一組豐富的工具來實作您的組織可能需要任
 ### <a name="control-who-can-create-office-365-groups"></a>控制能建立 Office 365 群組
 從多個端點的使用者可以建立群組包括 Outlook、 SharePoint、 Microsoft Teams 和其他環境。
 
-![影像 desc](../media/04.png)
+![影像 desc](../../media/04.png)
 > [!Tip]
 >- 我們強烈建議考慮自助讓群組擁有者。
 >- 文件並進行通訊操作要求一個群組。
@@ -131,8 +131,8 @@ Office 365 群組具有一組豐富的工具來實作您的組織可能需要任
 
 |         |         |         |
 |---------|---------|---------|
-|![影像 desc](../media/decision_point.png)|決策點|<ul><li>哪一個佈建的模型適合您組織的需求？</li><li>您的組織需要限制系統管理員建立的群組？</li><li>您的組織需要限制安全性群組成員的群組建立嗎？</li><li>您的組織是否需要一些群組，以建立動態地根據使用者屬性，例如部門？</li></ul>|
-|![影像 desc](../media/next_steps.png)|後續步驟|<ul><li>文件群組和小組建立您的組織的需求。</li><li>規劃如何實作這些需求，作為您群組首度發行的一部分。</li><li>通訊及發佈您的原則，以通知使用者他們可以預期的行為</li><li>若要實作動態成員資格適用的方案。</li></ul>|
+|![影像 desc](../../media/decision_point.png)|決策點|<ul><li>哪一個佈建的模型適合您組織的需求？</li><li>您的組織需要限制系統管理員建立的群組？</li><li>您的組織需要限制安全性群組成員的群組建立嗎？</li><li>您的組織是否需要一些群組，以建立動態地根據使用者屬性，例如部門？</li></ul>|
+|![影像 desc](../../media/next_steps.png)|後續步驟|<ul><li>文件群組和小組建立您的組織的需求。</li><li>規劃如何實作這些需求，作為您群組首度發行的一部分。</li><li>通訊及發佈您的原則，以通知使用者他們可以預期的行為</li><li>若要實作動態成員資格適用的方案。</li></ul>|
 
 > [!Important]
 > 限制群組及小組建立可以降低使用者生產力，因為許多 Office 365 服務都需要群組會建立的服務才會運作。 若要深入了解，請參閱[控制誰能建立 Office 365 群組？](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups?view=o365-worldwide%23why-control-who-creates-office-365-groups)
@@ -153,8 +153,8 @@ Office 365 群組具有一組豐富的工具來實作您的組織可能需要任
 
 |         |         |         |
 |---------|---------|---------|
-|![影像 desc](../media/decision_point.png)|決策點|<ul><li>您是否需要封存長期存放區的某些資產？</li><li>您是否為您的組織有特定保留需求？</li></ul>|
-|![影像 desc](../media/next_steps.png)|後續步驟|<ul><li>通訊並發佈刪除並還原原則，以通知使用者他們可以預期的行為 </li><li> 記錄您的組織需求來監視已刪除的群組。</li><li>若要實作這些需求一部分您群組首度發行計劃。</li></ul>|
+|![影像 desc](../../media/decision_point.png)|決策點|<ul><li>您是否需要封存長期存放區的某些資產？</li><li>您是否為您的組織有特定保留需求？</li></ul>|
+|![影像 desc](../../media/next_steps.png)|後續步驟|<ul><li>通訊並發佈刪除並還原原則，以通知使用者他們可以預期的行為 </li><li> 記錄您的組織需求來監視已刪除的群組。</li><li>若要實作這些需求一部分您群組首度發行計劃。</li></ul>|
 
 > [!Important]
 >在「虛刪除」期間，如果使用者嘗試存取網站，則會看到 403 禁止訊息。 在此期間之後，如果使用者嘗試存取網站，則會看到 404 找不到訊息。
@@ -176,8 +176,8 @@ Office 365 群組具有一組豐富的工具來實作您的組織可能需要任
 
 |         |         |         |
 |---------|---------|---------|
-|![影像 desc](../media/decision_point.png)|決策點|<ul><li>您的組織需要特定的命名慣例為群組？</li><li>您的組織需要的命名慣例跨所有的工作負載？</li><li>您的組織是否有您想要防止使用者使用的特定字詞？</li></ul>|
-|![影像 desc](../media/next_steps.png)|後續步驟|<ul><li>文件的命名群組貴組織的需求。 </li><li> 若要實作這些需求一部分您群組首度發行計劃。</li><li> 通訊，並發佈命名的原則和標準來通知使用者。</li></ul>|
+|![影像 desc](../../media/decision_point.png)|決策點|<ul><li>您的組織需要特定的命名慣例為群組？</li><li>您的組織需要的命名慣例跨所有的工作負載？</li><li>您的組織是否有您想要防止使用者使用的特定字詞？</li></ul>|
+|![影像 desc](../../media/next_steps.png)|後續步驟|<ul><li>文件的命名群組貴組織的需求。 </li><li> 若要實作這些需求一部分您群組首度發行計劃。</li><li> 通訊，並發佈命名的原則和標準來通知使用者。</li></ul>|
 
 > [!Important]
 >命名原則會套用至跨所有群組工作負載 （例如 Outlook、 Microsoft Teams、 SharePoint、 規劃、 Yammer、 等等） 所建立的群組。 它會套用到的群組名稱和群組的別名。 它會取得套用當使用者建立的群組和群組名稱或別名時為編輯現有的群組。
@@ -206,8 +206,8 @@ Office 365 群組具有一組豐富的工具來實作您的組織可能需要任
 
 |         |         |         |
 |---------|---------|---------|
-|![影像 desc](../media/decision_point.png)|決策點|<ul><li>您的組織是否需要指定小組的到期日？</li><li>決定策略以因應孤立的群組？</li></ul>|
-|![影像 desc](../media/next_steps.png)|後續步驟|<ul><li>文件的群組到期、 資料保留和封存貴組織的需求。</li><li>若要實作這些需求一部分您群組首度發行計劃。</li><li>規劃如何實作自訂的工作報告上有單一的擁有者或 ownerless 的群組。 </li></ul>|
+|![影像 desc](../../media/decision_point.png)|決策點|<ul><li>您的組織是否需要指定小組的到期日？</li><li>決定策略以因應孤立的群組？</li></ul>|
+|![影像 desc](../../media/next_steps.png)|後續步驟|<ul><li>文件的群組到期、 資料保留和封存貴組織的需求。</li><li>若要實作這些需求一部分您群組首度發行計劃。</li><li>規劃如何實作自訂的工作報告上有單一的擁有者或 ownerless 的群組。 </li></ul>|
 
 > [!Important]
 >當您變更的到期原則時，此服務會重新計算每個群組的到期日。 它一律會開始算起群組時已建立，且然後將套用的新的到期原則。
@@ -225,8 +225,8 @@ Office 365 群組具有一組豐富的工具來實作您的組織可能需要任
 
 |         |         |         |
 |---------|---------|---------|
-|![影像 desc](../media/decision_point.png)|決策點|<ul><li>您需要限制能夠將來賓加入至每個群組為基礎的 teams 嗎？</li><li> 您的組織需要呈現的法律或法規遵循相關免責聲明嗎？</li><li>您的組織是否有需要減少管理逾越標頭的新增和移除使用者？</li><li>您的組織是否預期來賓/外部存取的稽核控制項？</li></ul>|
-|![影像 desc](../media/next_steps.png)|後續步驟|<ul><li>文件來賓/外部存取的需求特定包括保留期間，然後找到分類群組。</li><li>文件的群組將會需要使用規定和存取檢閱組織的需求。 </li><li>執行評論有效率地管理內部及來賓使用者的群組成員資格。</li></ul>|
+|![影像 desc](../../media/decision_point.png)|決策點|<ul><li>您需要限制能夠將來賓加入至每個群組為基礎的 teams 嗎？</li><li> 您的組織需要呈現的法律或法規遵循相關免責聲明嗎？</li><li>您的組織是否有需要減少管理逾越標頭的新增和移除使用者？</li><li>您的組織是否預期來賓/外部存取的稽核控制項？</li></ul>|
+|![影像 desc](../../media/next_steps.png)|後續步驟|<ul><li>文件來賓/外部存取的需求特定包括保留期間，然後找到分類群組。</li><li>文件的群組將會需要使用規定和存取檢閱組織的需求。 </li><li>執行評論有效率地管理內部及來賓使用者的群組成員資格。</li></ul>|
 
 
 #### <a name="resources"></a>*資源*
@@ -248,8 +248,8 @@ Office 365 群組為基礎的 Office 365 進階安全性與合規性功能，並
 
 |         |         |         |
 |---------|---------|---------|
-|![影像 desc](../media/decision_point.png)|決策點|<ul><li>您的組織是否有需要傳達給所有使用者的特定需求？</li><li>您的組織需要所有內容的分類嗎？</li><li>您的組織是否需要保留特定的一段時間的內容？</li><li>您的組織是否需要特定的資料保留原則是 ap plied 群組？</li><li>您的組織是否預計需要封存非使用中的群組，以保留內容的能力？</li><li>群組建立者需要能夠將組織專屬分類指派給小組嗎？</li></ul>|
-|![影像 desc](../media/next_steps.png)|後續步驟|<ul><li>群組記錄您的組織使用指導方針</li><li>文件的分類貴組織的需求。</li><li>決定要強制執行原則根據分類例如敏感度，保留的來賓存取</li><li>定義您的組織以及哪些保護設定要關聯的敏感度標籤。</li><li>定義哪些使用者和群組看到這些標籤的控制項標籤原則。</li><li>設定[群組敏感度標籤預覽](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)並啟動來分類您的組織中的群組。</li><li>規劃如何實作這些需求，作為您群組首度發行的一部分。</li></ul>|
+|![影像 desc](../../media/decision_point.png)|決策點|<ul><li>您的組織是否有需要傳達給所有使用者的特定需求？</li><li>您的組織需要所有內容的分類嗎？</li><li>您的組織是否需要保留特定的一段時間的內容？</li><li>您的組織是否需要特定的資料保留原則是 ap plied 群組？</li><li>您的組織是否預計需要封存非使用中的群組，以保留內容的能力？</li><li>群組建立者需要能夠將組織專屬分類指派給小組嗎？</li></ul>|
+|![影像 desc](../../media/next_steps.png)|後續步驟|<ul><li>群組記錄您的組織使用指導方針</li><li>文件的分類貴組織的需求。</li><li>決定要強制執行原則根據分類例如敏感度，保留的來賓存取</li><li>定義您的組織以及哪些保護設定要關聯的敏感度標籤。</li><li>定義哪些使用者和群組看到這些標籤的控制項標籤原則。</li><li>設定[群組敏感度標籤預覽](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)並啟動來分類您的組織中的群組。</li><li>規劃如何實作這些需求，作為您群組首度發行的一部分。</li></ul>|
 
 
 #### <a name="resources"></a>*資源*
@@ -274,8 +274,8 @@ Office 365 群組為基礎的 Office 365 進階安全性與合規性功能，並
 
 |         |         |         |
 |---------|---------|---------|
-|![影像 desc](../media/decision_point.png)|決策點|<ul><li>您的組織是否有[不合格](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists#how-do-i-check-which-dls-are-eligible-for-upgrade)的升級通訊群組清單？<li>決定哪種類型的群組最佳的通訊群組清單移轉至嗎？</li></ul>|
-|![影像 desc](../media/next_steps.png)|後續步驟|<ul><li>識別哪些通訊群組清單就是候選升級至 Office 365 群組。</li><li>分析現有的 SharePoint 小組網站，以查看哪些網站已準備好要群組連接。</li><li>可讓公司內其他小組知道您升級您的通訊群組，以及哪些步驟所需進行成功 ！</li></ul>|
+|![影像 desc](../../media/decision_point.png)|決策點|<ul><li>您的組織是否有[不合格](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists#how-do-i-check-which-dls-are-eligible-for-upgrade)的升級通訊群組清單？<li>決定哪種類型的群組最佳的通訊群組清單移轉至嗎？</li></ul>|
+|![影像 desc](../../media/next_steps.png)|後續步驟|<ul><li>識別哪些通訊群組清單就是候選升級至 Office 365 群組。</li><li>分析現有的 SharePoint 小組網站，以查看哪些網站已準備好要群組連接。</li><li>可讓公司內其他小組知道您升級您的通訊群組，以及哪些步驟所需進行成功 ！</li></ul>|
 
 
 #### <a name="resources"></a>*資源*
@@ -299,8 +299,8 @@ Office 365 [報告] 儀表板會顯示組織中各個 Office 365 產品的活動
 
 |         |         |         |
 |---------|---------|---------|
-|![影像 desc](../media/decision_point.png)|決策點|<ul><li>您的組織是否需要定期報告來了解 Office 365 群組的使用方式？<li>您的組織需要報告都有外部的成員的所有群組？</li></ul>|
-|![影像 desc](../media/next_steps.png)|後續步驟|<ul><li>文件的定期檢閱群組活動報告的貴組織的需求。</li></ul>|
+|![影像 desc](../../media/decision_point.png)|決策點|<ul><li>您的組織是否需要定期報告來了解 Office 365 群組的使用方式？<li>您的組織需要報告都有外部的成員的所有群組？</li></ul>|
+|![影像 desc](../../media/next_steps.png)|後續步驟|<ul><li>文件的定期檢閱群組活動報告的貴組織的需求。</li></ul>|
 
 
 #### <a name="resources"></a>*資源*

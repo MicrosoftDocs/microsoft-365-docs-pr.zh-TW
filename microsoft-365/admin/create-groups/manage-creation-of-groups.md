@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 了解如何控制哪些使用者可以建立 Office 365 群組。
-ms.openlocfilehash: a211cb3b69348a4d4a401a3c318fe019d8fd257f
-ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
+ms.openlocfilehash: a6016f6406b211aae216702910a696be50e1b82c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42277190"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352634"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>管理能建立 Office 365 群組的使用者
 
@@ -119,7 +119,7 @@ As a best practice, we recommend  *always*  staying current: uninstall the old A
     
 2. 在**Windows PowerShell**上按一下滑鼠右鍵，然後選取 [**以管理員身分執行**。
     
-    ![以「以系統管理員身分執行」方式開啟 PowerShell。](../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
+    ![以「以系統管理員身分執行」方式開啟 PowerShell。](../../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
     
 3. 使用[Set-executionpolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)RemoteSigned 之中設定原則。
     
@@ -205,7 +205,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 指令碼的最後一行會顯示更新的設定：
 
-![This is what your settings will look like when you're done.](../media/952cd982-5139-4080-9add-24bafca0830c.png)
+![This is what your settings will look like when you're done.](../../media/952cd982-5139-4080-9add-24bafca0830c.png)
 
 如果在未來您想要變更所用的 [安全性] 群組，您可以重新執行指令碼以新的 [安全性] 群組的名稱。
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Office 365 群組到期原則。
-ms.openlocfilehash: 5a7a9f9a67e8436a8d4120551e306a68a015bcb9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c4c2f7b98247cc81b3fadc561f92084f9bd39c96
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239182"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352584"
 ---
 # <a name="office-365-group-expiration-policy"></a>Office 365 群組到期原則
 
@@ -66,7 +66,7 @@ ms.locfileid: "42239182"
 
 您可以將原則設定的所有群組，僅選取群組，或將它關閉完全藉由選取 [**無**。 請注意，目前您不能有不同的群組不同的原則。
 
-![在 Azure Active Directory 中的螢幕擷取畫面的群組到期日設定](../media/azure-groups-expiration-settings.png)
+![在 Azure Active Directory 中的螢幕擷取畫面的群組到期日設定](../../media/azure-groups-expiration-settings.png)
 
 ## <a name="how-expiry-works-with-the-retention-policy"></a>到期與保留原則的運作方式
 

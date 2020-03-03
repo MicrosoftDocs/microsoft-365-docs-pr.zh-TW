@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何連絡您的國家或地區的客戶支援。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b40edea959cb2f12160269dd49244da6498ad1ff
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fbb56a23ee188f1bc2cae15cb4547d28f18ab1b1
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252192"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42358884"
 ---
 # <a name="contact-support-for-french-guiana"></a>法屬蓋亞那連絡支援
 

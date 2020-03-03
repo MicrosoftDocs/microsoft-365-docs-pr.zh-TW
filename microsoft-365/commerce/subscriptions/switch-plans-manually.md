@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: 切換 Office 365 商務版訂閱，以手動方式所購買新訂閱，以確保這兩個訂閱的列和作用。
-ms.openlocfilehash: 5fe50cbc0a11c4fe9976be07bfb0ab752bae5bba
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 19efd94f320fcf5dc54f44b70b436f713a663a40
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254364"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354705"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>手動切換商務用 Office 365 方案
 
@@ -74,7 +74,7 @@ ms.locfileid: "42254364"
 
    **新 Office 365 商務版訂閱與可用的授權**
 
-    ![[訂閱] 頁面上顯示的新訂閱的授權數。](../../admin/media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
+    ![[訂閱] 頁面上顯示的新訂閱的授權數。](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
 3. **檢查您有足夠的每位使用者的授權**
 
@@ -115,7 +115,7 @@ ms.locfileid: "42254364"
     > [!TIP]
     > 若要限制哪些服務會提供給使用者，將開關切換到您要移除該使用者的服務**關閉**位置。 例如，如果您想商務擁有存取權，Skype 以外的所有可用服務的使用者，您可以將開關切換 skype for Business Online service 到 [**關閉**] 位置。
   
-    ![設定使用者的授權指派。](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![設定使用者的授權指派。](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 5. 將開關切換到此使用者不再需要的授權的 [**關閉**] 位置。
 
@@ -141,7 +141,7 @@ ms.locfileid: "42254364"
     > - 若要限制哪些服務會提供給使用者，切換至切換到您要移除該使用者的服務**關閉**位置。 例如，如果您想商務擁有存取權，Skype 以外的所有可用服務的使用者，您可以將開關切換 skype for Business Online service 到 [**關閉**] 位置。
     > - 將移除任何先前指派給所選使用者的授權。
   
-    ![設定使用者的授權指派。](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![設定使用者的授權指派。](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 6. 在 **[取代現有產品]** 窗格中，選取 **[取代]** \> **[關閉]**。
 

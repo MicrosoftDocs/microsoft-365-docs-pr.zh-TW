@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何連絡您的國家或地區的客戶支援。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: de7cb13b8f023540ea46aa0e2fbce0b3f3961a57
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 197b911407eb14eb8ce3301113d85099eb7e40da
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240042"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355554"
 ---
 # <a name="contact-support-for-wallis-and-futuna"></a>瓦利斯和富圖納連絡客戶支援
 

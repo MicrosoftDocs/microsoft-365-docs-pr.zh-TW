@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以建立及使用範本來節省時間和標準化的設定，當您新增多位使用者。
-ms.openlocfilehash: a81b9c6673503c0c7aaec9b804f8e1357a7b6c5f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 340d0ae3329b441c2b9773ba06e4f9e69be88526
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239395"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353244"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>建立並使用範本來新增使用者
 
