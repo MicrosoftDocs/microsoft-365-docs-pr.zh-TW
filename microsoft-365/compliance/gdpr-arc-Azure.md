@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7c3be3d13e40c3a758edeb224aa2b8383908dd1f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef8a7695e3e54acda069f73eea88fd54b292ba8a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594524"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353934"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>符合 GDPR 的 Azure 責任整備程度檢查清單
 
@@ -145,7 +145,7 @@ ms.locfileid: "41594524"
 | 12 <a name="12"> </a> | [SOC 2 Type 2 稽核報告 [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure (全部版本) ISO/IEC 27001:2013 ISMS 適用性聲明](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 14 <a name="14"> </a> | [Microsoft 信任中心合規性供應項目](offering-home.md)  |
-| 15 <a name="15"> </a> | [Intune 中的隱私權和個人資料](https://review.docs.microsoft.com/intune/privacy-personal-data) |
+| 15 <a name="15"> </a> | [Intune 中的隱私權和個人資料](https://docs.microsoft.com/intune/privacy-personal-data) |
 | 16 <a name="16"> </a> | [完成可下載 Azure GDPR 控制集](https://aka.ms/GDPRControls)或透過[合規性分數](compliance-score.md) |
 | 17 <a name="17"> </a> | [Microsoft DPO 資訊](https://aka.ms/GDPRDPO) |
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: '了解如何為貴組織的所有或特定使用者設定焦點收件匣。 '
-ms.openlocfilehash: 6762bf4e81254e962171ddc80027273542288f34
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 29f412b82121b8955c2ddabb5d152bbe6b2255e0
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254131"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360874"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>為組織中的每個人設定焦點收件匣
 
@@ -52,7 +52,7 @@ Get-OrganizationConfig
 
 4. 尋找 **FocusedInboxOn** 以檢視其目前的設定： 
     
-    ![處於焦點收件匣狀態時的 PowerShell 回應。](../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
+    ![處於焦點收件匣狀態時的 PowerShell 回應。](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. 執行下列 Cmdlet 關閉焦點收件匣。
     
@@ -74,11 +74,11 @@ Get-OrganizationConfig
 
 當使用者關閉並重新啟動 Outlook 之後，只會看到 [焦點] 檢視。當他們重新啟動 Outlook 後，就會在 Outlook 使用者介面看見一則提示，提供他們使用新焦點收件匣的選項。
   
-![使用者第一次開啟 Outlook 網頁版時的焦點收件匣外觀影像。](../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
+![使用者第一次開啟 Outlook 網頁版時的焦點收件匣外觀影像。](../../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
   
 如果您從 [待過濾郵件] 切換至 [焦點收件匣]，他們能決定要啟用 ([試用]) 或是關閉該功能。如果使用者有多個 (受支援的) 用戶端，他們能個別啟用/停用其 [焦點收件匣]。提示看起來像這樣：
   
-![向使用者推出焦點收件匣以及重新開啟 Outlook 時，焦點收件匣外觀的影像。](../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
+![向使用者推出焦點收件匣以及重新開啟 Outlook 時，焦點收件匣外觀的影像。](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
 當使用者決定要開始使用 [焦點收件匣] 時，[待過濾郵件] 便會自動停用。該 [待過濾郵件] 資料夾會轉換成一般的資料夾，讓使用者能重新命名或刪除。
   
@@ -98,7 +98,7 @@ Get-OrganizationConfig
 
 4. 尋找 FocusedInboxOn 以檢視其目前的設定：
     
-    ![處於焦點收件匣狀態時的 PowerShell 回應。](../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
+    ![處於焦點收件匣狀態時的 PowerShell 回應。](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. 執行下列 Cmdlet 關閉焦點收件匣：
     
@@ -116,13 +116,13 @@ Get-OrganizationConfig
 
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>。
     
-2. 瀏覽至 **[郵件流程]** \> **[規則]**。 選取 ![[EAC 新增] 圖示](../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif)，然後選取 **[建立新的規則...]**。 
+2. 瀏覽至 **[郵件流程]** \> **[規則]**。 選取 ![[EAC 新增] 圖示](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif)，然後選取 **[建立新的規則...]**。 
     
 3. 建立新的規則完成後，選取 **[儲存]** 以啟動規則。 
     
     下列影像顯示讓來自「薪資部門」的所有郵件傳送到焦點收件匣的範例。
     
-    ![focusedinbox 薪資](../media/focusedinbox-transport-rule.PNG)
+    ![focusedinbox 薪資](../../media/focusedinbox-transport-rule.PNG)
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>使用 PowerShell 建立傳輸規則，將電子郵件導向至所有使用者的 [焦點] 檢視
 

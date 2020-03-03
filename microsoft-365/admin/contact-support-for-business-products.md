@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: 使用您的地區或區域所列電話號碼，或提交線上服務要求，或造訪 Microsoft 網上商店以取得技術和帳單支援。
 feedback_system: None
-ms.openlocfilehash: 72644e1e55f3432fd9027a5964022f4d989a05da
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7fdd2f1232fe20d55ef54f72333d35ff6de8d41e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239283"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352944"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>連絡商務產品的客戶支援 - 系統管理說明
 
@@ -230,7 +230,7 @@ ms.locfileid: "42239283"
 
 掃描此 QR 碼，在 WeChat 上關注我們，並取得由 21Vianet 運作的 Office 365 的最新更新。
 
-![由 21Vianet 運作的 Office 365 的更新 QR 碼](media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![由 21Vianet 運作的 Office 365 的更新 QR 碼](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ::: moniker-end
 

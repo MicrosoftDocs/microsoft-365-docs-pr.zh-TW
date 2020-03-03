@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 取得關於組織中的人員使用 Office 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
-ms.openlocfilehash: 6962d8ed9632ae2e819f1ea1d0e0950d82ef7ad7
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 490f7722d0bb8eb93d0d6e0ff18b7364cca5185c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239086"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353964"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的活動報告
 
@@ -58,7 +58,7 @@ ms.locfileid: "42239086"
 ::: moniker-end
 
    
-2. 選取儀表板頂端的 **[選取報告]**，從所有可用報告的清單中選擇所需報告。 或者您也可以選取單個服務 (電子郵件、OneDrive 等等) 的概覽活動小工具以查看詳細資訊。 <br/>![Office 365 使用量儀表板](../media/usage-report-dashboard.png)
+2. 選取儀表板頂端的 **[選取報告]**，從所有可用報告的清單中選擇所需報告。 或者您也可以選取單個服務 (電子郵件、OneDrive 等等) 的概覽活動小工具以查看詳細資訊。 <br/>![Office 365 使用量儀表板](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>誰可以查看報告
 
@@ -164,7 +164,7 @@ ms.locfileid: "42239086"
   
 您的使用者清單看起來像這樣：
   
-![Office 365 報表 - 匿名使用者清單](../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Office 365 報表 - 匿名使用者清單](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 這些在報告儀表板中的報告變更，需要幾分鐘後才會生效。此設定也適用於報告 API。
   

@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: 了解如何設定 Office 365 商務進階版、Office 365 商務基本版、Office 365 商務或 Office 365 教育版訂閱。
-ms.openlocfilehash: 28847b1b2773a0f725a5ac1a99dfc2a807f66b82
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 303e736bb3296eba5ddb7ca7e9da8f86ebdc0217
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240227"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360444"
 ---
 # <a name="set-up-office-365-for-business"></a>設定商務用 Office 365
 
@@ -168,7 +168,7 @@ Office 365 不包含貴公司的公用網站。 如果您想要設立一個，�
 
 1. 選取 [郵件]****。
 
-2. 在 Outlook 瀏覽列上，選取 [設定]**** > [設定：更新您的設定檔、安裝軟體，並將其連線至雲端] ![](../media/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png) \> [選項]****。
+2. 在 Outlook 瀏覽列上，選取 [設定]**** > [設定：更新您的設定檔、安裝軟體，並將其連線至雲端] ![](../../media/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png) \> [選項]****。
 
 3. 在左窗格中，選取 [郵件]****，再選取 [帳戶]**** 下的 [連結帳戶]****。
 

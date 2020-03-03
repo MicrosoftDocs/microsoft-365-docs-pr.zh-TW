@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fe40e4a972d205470474c6bcd137712e031b065b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f1abc4d885a1d9a1d915bdf5492e3492dc4318a6
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602000"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42363019"
 ---
 # <a name="web-content-accessibility-guidelines"></a>網頁內容協助工具指導方針
 
@@ -51,7 +51,7 @@ Microsoft 發行了 WCAG 報告，其中反映了完整產品或服務。 其通
 
 ## <a name="microsoft-accessibility-conformance-reports"></a>Microsoft 協助工具一致性報告
 
-參閱針對 [我們所有產品和服務](https://go.microsoft.com/fwlink/p/?linkid=205097)的 WCAG 報告。
+參閱針對 [我們所有產品和服務](https://cloudblogs.microsoft.com/industry-blog/government/2018/09/11/accessibility-conformance-reports/)的 WCAG 報告。
 
 ## <a name="resources"></a>資源
 

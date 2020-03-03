@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9982191d-ed79-46a9-b2e7-317d1a3a9867
 description: 了解如何在 Office 365 的 [我的網域] 中驗證網域，並為電子郵件、商務用 Skype Online和其他服務設定 DNS 記錄。
-ms.openlocfilehash: 5a935ea456175f6d63926c9aa33280c4ec113abd
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c85c04d369add95d3aaa815229257fe90a24fb28
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240995"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42349861"
 ---
 # <a name="create-dns-records-at-mydomain-for-office-365"></a>在 MyDomain 建立 Office 365 的 DNS 記錄
 
@@ -68,7 +68,7 @@ ms.locfileid: "42240995"
     ||
     |:-----|
     |**內容** <br/> |
-    |MS=ms *XXXXXXXX*  <br/> **注意：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. 選取 [新增]****。
     
@@ -78,11 +78,11 @@ ms.locfileid: "42240995"
   
 在 Office 365 找到正確的 TXT 記錄後，您的網域就完成驗證了。
   
-1. 在系統管理中心中，移至 [設定]**** \> [網域]<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
     
-2. 在 [網域]**** 頁面上，選取您要驗證的網域。 
+2. 在 **[網域]** 頁面上，選取您要驗證的網域。 
     
-3. 在 [設定]**** 頁面上，選取 [開始設定]****。
+3. 在 **[設定]** 頁面上，選取 **[開始設定]**。
     
 4. 在 [驗證網域]**** 頁面上，選取 [驗證]****。
     
@@ -92,7 +92,7 @@ ms.locfileid: "42240995"
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>新增 MX 記錄，以將寄往您網域的電子郵件轉至 Office 365
 <a name="BKMK_add_MX"> </a>
 
-1. 首先，請用[此連結](https://www.mydomain.com/controlpanel)移至您在 MyDomain 的網域頁面。 系統會提示您先登入。
+1. 首先，請用[此連結](https://www.mydomain.com/controlpanel)移至您在 MyDomain 的網域頁面。系統會提示您先登入。
     
 2. 在 [我的最愛]**** 區段中，選取 [網域中央]****。
     
@@ -102,7 +102,7 @@ ms.locfileid: "42240995"
     
 5. 在 [Modify] (修改)**** 下拉式清單中，選擇 [MX Record] (MX 記錄)****。
     
-    ![MyDomain-BP-Configure-2-1](../media/bbfba978-8c53-471b-8c9e-8ae62e559d15.png)
+    ![MyDomain-BP-Configure-2-1](../../media/bbfba978-8c53-471b-8c9e-8ae62e559d15.png)
   
 6. 在新記錄的方塊中，輸入或複製並貼上下表中的值。
     
@@ -110,24 +110,24 @@ ms.locfileid: "42240995"
     |:-----|:-----|:-----|
     |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |@  <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **注意：** 從您的 Office 365 帳戶取得您的\<*網域金鑰*\>。 > [如何找到這項資訊？](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![MyDomain-BP-Configure-2-2](../media/3e19cec3-7f3b-493d-81f7-cda30ba007d5.png)
+    ![MyDomain-BP-Configure-2-2](../../media/3e19cec3-7f3b-493d-81f7-cda30ba007d5.png)
   
 7. 選取 [新增]****。
     
-    ![MyDomain-BP-Configure-2-3](../media/1a1951a8-11d7-405d-bef5-285bbb053ce8.png)
+    ![MyDomain-BP-Configure-2-3](../../media/1a1951a8-11d7-405d-bef5-285bbb053ce8.png)
   
 8. 如果有任何其他現有的 MX 記錄，請針對每一筆記錄，選取 [Actions] (動作)**** 欄中的 [Remove] (移除)****，將它刪除。 
     
-    ![MyDomain-BP-Configure-2-4](../media/42576149-e056-4a81-a5fd-2c5dfac44e2e.png)
+    ![MyDomain-BP-Configure-2-4](../../media/42576149-e056-4a81-a5fd-2c5dfac44e2e.png)
   
 9. 選取 [確定]****。
     
-    ![MyDomain-BP-Configure-2-5](../media/d6b70eb7-b79c-499e-82ff-ecef2e300368.png)
+    ![MyDomain-BP-Configure-2-5](../../media/d6b70eb7-b79c-499e-82ff-ecef2e300368.png)
   
 ## <a name="add-the-cname-records-that-are-required-for-office-365"></a>新增 Office 365 所需的 CNAME 記錄
 <a name="BKMK_add_CNAME"> </a>
 
-1. 首先，請用[此連結](https://www.mydomain.com/controlpanel)移至您在 MyDomain 的網域頁面。 系統會提示您先登入。
+1. 首先，請用[此連結](https://www.mydomain.com/controlpanel)移至您在 MyDomain 的網域頁面。系統會提示您先登入。
     
 2. 在 [我的最愛]**** 區段中，選取 [網域中央]****。
     
@@ -137,7 +137,7 @@ ms.locfileid: "42240995"
     
 5. 在 [Modify] (修改)**** 下拉式清單中，選取 [CNAME Alias] (CNAME 別名)****。
     
-    ![MyDomain-BP-Configure-3-1](../media/628267fc-d37b-42ef-bb92-265284e339ac.png)
+    ![MyDomain-BP-Configure-3-1](../../media/628267fc-d37b-42ef-bb92-265284e339ac.png)
   
 6. 新增第一筆 CNAME 記錄。
     
@@ -151,11 +151,11 @@ ms.locfileid: "42240995"
     |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![MyDomain-BP-Configure-3-2](../media/3c8660b3-40bb-453d-8b99-4d22032bc4b3.png)
+    ![MyDomain-BP-Configure-3-2](../../media/3c8660b3-40bb-453d-8b99-4d22032bc4b3.png)
   
 7. 選取 [新增]**** 以新增第一筆記錄。 
     
-    ![MyDomain-BP-Configure-3-3](../media/103a1d99-70da-4fdf-9291-7dd058ec6c4a.png)
+    ![MyDomain-BP-Configure-3-3](../../media/103a1d99-70da-4fdf-9291-7dd058ec6c4a.png)
   
 8. 新增第二筆 CNAME 記錄。
     
@@ -169,7 +169,7 @@ ms.locfileid: "42240995"
 > [!IMPORTANT]
 > 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 If you already have an SPF record for your domain, don't create a new one for Office 365. 而是，請將必要的 Office 365 值新增至目前的記錄，以便擁有包含這兩組值的單一 SPF 記錄。 需要範例？ 請參閱這些 [Office 365 的外部網域名稱系統記錄](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords)。 若要驗證您的 SPF 記錄，您可以使用其中一種 [SPF 驗證工具](../setup/domains-faq.md)。 
   
-1. 首先，請用[此連結](https://www.mydomain.com/controlpanel)移至您在 MyDomain 的網域頁面。 系統會提示您先登入。
+1. 首先，請用[此連結](https://www.mydomain.com/controlpanel)移至您在 MyDomain 的網域頁面。系統會提示您先登入。
     
 2. 在 [我的最愛]**** 區段中，選取 [網域中央]****。
     
@@ -179,7 +179,7 @@ ms.locfileid: "42240995"
     
 5. 從 [修改]**** 下拉式清單中，選擇 [TXT/SPF 記錄]****。
     
-    ![MyDomain-BP-Configure-4-1](../media/c461c762-52e6-4fde-b5bc-4dd5e5d62ed3.png)
+    ![MyDomain-BP-Configure-4-1](../../media/c461c762-52e6-4fde-b5bc-4dd5e5d62ed3.png)
   
 6. 在 [內容] 底下，於新記錄的方塊中，輸入或複製並貼上下表中的值。
     
@@ -187,11 +187,11 @@ ms.locfileid: "42240995"
     |:-----|
     |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
-    ![MyDomain-BP-Configure-4-2](../media/17d43106-88e6-47e5-aeba-0f18484acf3e.png)
+    ![MyDomain-BP-Configure-4-2](../../media/17d43106-88e6-47e5-aeba-0f18484acf3e.png)
   
 7. 選取 [新增]****。
     
-    ![MyDomain-BP-Configure-4-3](../media/b3670563-b620-470c-a42b-2c77888981f8.png)
+    ![MyDomain-BP-Configure-4-3](../../media/b3670563-b620-470c-a42b-2c77888981f8.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>新增兩筆 Office 365 所需的 SRV 記錄
 <a name="BKMK_add_SRV"> </a>

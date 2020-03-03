@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 了解如何加強貴組織對密碼攻擊的防護，以及為何應禁用常見密碼並啟用以風險為根據的多重要素驗證。
-ms.openlocfilehash: 0d18605559cc58dd23b91446f2ef13dc28d144cb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7136243aa0a358a59e4be6c348f53ca459e8a65d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240338"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361324"
 ---
 # <a name="password-policy-recommendations-for-office-365"></a>Office 365 密碼原則建議
  

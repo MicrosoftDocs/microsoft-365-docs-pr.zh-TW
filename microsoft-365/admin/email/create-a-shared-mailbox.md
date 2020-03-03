@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 建立共用信箱讓組織中的多位使用者共同負責讀取及回覆傳送到某個地址的電子郵件。
-ms.openlocfilehash: 270894da77d9ddf2b35187d8409cd2fd878b0e6d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2ceec37928eafab0c4f02382dd24aa3fa91aa9cd
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251695"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362298"
 ---
 # <a name="create-a-shared-mailbox"></a>建立共用信箱 
 
@@ -64,17 +64,17 @@ ms.locfileid: "42251695"
     
 3. 在 **[共用信箱]** 頁面上，選取 **[+ 新增信箱]**。 輸入共用信箱的名稱。 精靈會隨後選擇電子郵件地址，但您可再自行編輯。
     
-    ![為您的共用信箱命名。](../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
+    ![為您的共用信箱命名。](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
 4. 選取 **[新增]**。 您可能需要等待幾分鐘之後才能開始新增成員。
 
 5. 在 **[後續步驟]** 底下選取 **[將成員新增到此信箱]**。 成員是指能檢視此共用信箱的內送郵件以及外寄回覆的人員。
 
-   ![選取 [新增成員]](../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
+   ![選取 [新增成員]](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
 6. 選取 **[+ 新增成員]** 按鈕。 選取您要讓他們使用此共用信箱人員旁邊的核取記號，然後選取 **[儲存]**。
 
-   ![將成員指派至共用信箱](../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
+   ![將成員指派至共用信箱](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. 選取 **[關閉]**。
 
@@ -95,7 +95,7 @@ ms.locfileid: "42251695"
 
 2. 在使用者帳戶清單中，找出共用信箱的帳戶 (例如，將篩選變更為 **[未授權的使用者]**)。
 
-3. 選取 [使用者] 以開啟其 [內容] 窗格，然後選取 **[封鎖此使用者]** 圖示![封鎖此使用者圖示的螢幕擷取畫面](../media/block-user-icon.png)。
+3. 選取 [使用者] 以開啟其 [內容] 窗格，然後選取 **[封鎖此使用者]** 圖示![封鎖此使用者圖示的螢幕擷取畫面](../../media/block-user-icon.png)。
 
    **附註**：如果該帳戶已封鎖，**[封鎖登入]** 將會顯示在頂端，且圖示上會顯示 **[解除封鎖此使用者]**。
 

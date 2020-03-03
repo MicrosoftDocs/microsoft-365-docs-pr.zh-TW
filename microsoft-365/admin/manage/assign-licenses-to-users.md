@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 997596b5-4173-4627-b915-36abac6786dc
 description: 了解如何指派授權給使用者，或將使用者移至新的訂閱。
-ms.openlocfilehash: c0fc92870d11ef199f37f15f8be34bba9c9fa3ed
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: ab8a54db77ea022cbd3aec7b3c30e8a988ff7853
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251646"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362058"
 ---
 # <a name="assign-licenses-to-users"></a>將授權指派給使用者
 
