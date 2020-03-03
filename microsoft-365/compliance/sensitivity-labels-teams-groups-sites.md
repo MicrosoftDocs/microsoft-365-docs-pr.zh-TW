@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以將標籤套用至 Microsoft Teams、Office 365 群組和 SharePoint 網站。
-ms.openlocfilehash: 477b168435d36170a1506adff021ee4cb5ab5162
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.openlocfilehash: 1e08df688a62d6c15ef0100b5379e62482ed7b50
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42333710"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372031"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>對 Microsoft Teams、Office 365 群組和 SharePoint 網站使用敏感度標籤 (公開預覽)
 
@@ -52,15 +52,20 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
 
 1. 由於此功能使用 Azure AD 功能，請依照 Azure AD 文件中的指示來啟用預覽：[將敏感度標籤指派到 Azure Active Directory 中的 Office 365 群組 (預覽)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels) (英文版)。
 
-2. 在 PowerShell 工作階段中，使用具備全域系統管理員權限的公司或學校帳戶連線至安全性與合規性中心。 如需指示，請參閱[連線到 Office 365 安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
-
-3. 執行下列命令以將您的標籤同步處理到 Azure AD，以便與 Office 365 群組搭配使用：
+2. 在 PowerShell 工作階段中，使用具備全域系統管理員權限的公司或學校帳戶連線至安全性與合規性中心。 例如：
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session -DisableNameChecking
+    ```
+    
+    如需完整指示，請參閱[連線到 Office 365 安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+
+3. 執行下列命令以將您的敏感度標籤同步處理到 Azure AD，以便與 Office 365 群組搭配使用：
+    
+    ```powershell
     Execute-AzureAdLabelSync
     ```
 
