@@ -85,8 +85,6 @@
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: 進階搜捕
               items:
-                - name: 在 Microsoft 365 中搜尋
-                  href: mtp/hunting.md
                 - name: 進階搜捕概觀
                   href: mtp/advanced-hunting-overview.md
                 - name: 了解查詢語言
