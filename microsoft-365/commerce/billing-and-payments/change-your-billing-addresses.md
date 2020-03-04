@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: 了解如何在商務用 Office 365 更新帳單地址。 您也可以更新用來接收帳單通知的電子郵件地址。
 ms.custom: okr_SMB
-ms.openlocfilehash: 8cf7a8a8ac3414e8c40a1642b33e36f9b5cdf1a9
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: aa696be3fd541fb98bc29c65c1285e2b2e967726
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354751"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409638"
 ---
 # <a name="change-your-billing-addresses-for-office-365-for-business"></a>變更商務用 Office 365 的帳單地址
 
@@ -195,5 +195,4 @@ ms.locfileid: "42354751"
 
 [支付 yoursubscription](pay-for-your-subscription.md)
 
-[訂閱及計費-系統管理說明](../subscriptions-and-billing.md)
-
+[訂閱及計費-系統管理說明](../index.yml)

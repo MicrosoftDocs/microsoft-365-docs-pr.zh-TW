@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: '原則提示是通知或其他人正在使用的內容與 DLP 原則衝突時，會出現的警告。 您可以使用電子郵件通知和原則提示來增加知悉的變更，並協助教育人員需貴組織的原則。 您也可以的讓人員選擇覆寫原則，以便他們不會封鎖如果他們有有效的商務需要或原則會偵測誤判。 '
-ms.openlocfilehash: 676581a5cfdf7308cf6c5cd71083dedae34836fb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: adf9d41fd528b2146ae3b3ee6f61390d61deaabe
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083981"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409578"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>針對 DLP 原則傳送電子郵件通知並顯示原則提示
 
@@ -50,7 +50,7 @@ ms.locfileid: "42083981"
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>新增至 DLP 原則的使用者通知
 
-當您建立的 DLP 原則時，電子郵件通知和原則提示是**使用者通知**] 區段中的一部分。 
+當您建立的 DLP 原則時，您可以啟用**使用者通知**。 啟用時，Microsoft 365 傳送電子郵件通知和原則提示。 您可以自訂誰通知電子郵件傳送至電子郵件的文字，原則提示文字。
   
 1. 請移至 [https://protection.office.com](https://protection.office.com)。
     

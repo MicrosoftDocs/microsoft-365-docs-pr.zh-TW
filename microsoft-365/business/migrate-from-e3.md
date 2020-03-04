@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何將業務移至 Microsoft 365 商務版中，從 Office 365 E3。
-ms.openlocfilehash: 54320ed60825a28147542094b19761889a70ae9f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b86a163792aa71f0bca115ab918e0800acc0427d
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065577"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409678"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>從 Office 365 E3 移轉至 Microsoft 365 商務版 
 
@@ -38,27 +38,27 @@ Microsoft 365 商務版具有您需要為您的小型企業，簡單的裝置管
 
 此表說明 Microsoft 365 商務版和 Office 365 E3 之間的差異。
 
-| 功能   | 支援在 Microsoft 365 商務版 | 支援 office 365 E3 | 
+| 功能    | 支援在 Microsoft 365 商務版    | 支援 office 365 E3 | 
 |:-------|:-----|:-----|
-| **內部部署**       | | | 
-| Office 應用程式<sup>1</sup>   | Office 365 商務版   | Office 365 專業增強版 | 
-| **雲端生產力應用程式**       | | | 
-| Exchange Online 和 Outlook   | 每個信箱和 unlimited Exchange Online Archiving 50 GB 儲存空間限制   | 每個信箱並無限制 Exchange Online 封存的 100 GB 儲存空間上限 | 
-| Teams | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)  | ![隨附於 Office 365 E3](../media/check-mark.png) | 
-| 商務用 OneDrive | 每個使用者 1 TB 的儲存量限制   | 無限制 | 
-| Yammer，SharePoint Online，規劃中，資料流    | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)  | ![隨附於 Office 365 E3](../media/check-mark.png) | 
-| StaffHub  | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)  | ![隨附於 Office 365 E3](../media/check-mark.png) | 
-| Outlook Customer Manager、 MileIQ  | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)  | | 
-| **威脅防護**     | | | 
-| Office 365 進階的威脅防護 (ATP) 計劃 1 | ![隨附於 Microsoft 365 商務版](../media/check-mark.png) | 不包含在內，但是可以加上 | 
-| **身分識別管理**       | | | 
-| 自助密碼重設為混合式 Azure Active Directory (Azure AD) 帳戶，Azure 多重要素驗證 (MFA)、 條件式存取，適用於內部部署身分識別的密碼回寫|    ![隨附於 Microsoft 365 商務版](../media/check-mark.png)    |  | 
-| **裝置和應用程式管理**     | | |
-| Microsoft Intune、 Windows AutoPilot|  ![隨附於 Microsoft 365 商務版](../media/check-mark.png)    |  |
-| 共用電腦啟用|   ![隨附於 Microsoft 365 商務版](../media/check-mark.png)    | ![隨附於 Office 365 E3](../media/check-mark.png)| 
+| **內部部署**        | | | 
+| Office 應用程式<sup>1</sup>    | Office 365 商務版    | Office 365 專業增強版 | 
+| **雲端生產力應用程式**        | | | 
+| Exchange Online 和 Outlook    | 每個信箱和 unlimited Exchange Online Archiving 50 GB 儲存空間限制    | 每個信箱並無限制 Exchange Online 封存的 100 GB 儲存空間上限 | 
+| Teams    | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)    | ![隨附於 Office 365 E3](../media/check-mark.png) | 
+| 商務用 OneDrive    | 每個使用者 1 TB 的儲存量限制    | 無限制 | 
+| Yammer，SharePoint Online，規劃中，資料流    | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)    | ![隨附於 Office 365 E3](../media/check-mark.png) | 
+| StaffHub    | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)    | ![隨附於 Office 365 E3](../media/check-mark.png) | 
+| Outlook Customer Manager、 MileIQ    | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)    | | 
+| **威脅防護**        | | | 
+| Office 365 進階的威脅防護 (ATP) 計劃 1 | ![隨附於 Microsoft 365 商務版](../media/check-mark.png)    | 不包含在內，但是可以加上 | 
+| **身分識別管理**        | | | 
+| 自助密碼重設為混合式 Azure Active Directory (Azure AD) 帳戶，Azure 多重要素驗證 (MFA)、 條件式存取，適用於內部部署身分識別的密碼回寫|     ![隨附於 Microsoft 365 商務版](../media/check-mark.png)    |  | 
+| **裝置和應用程式管理**        | | |
+| Microsoft Intune、 Windows AutoPilot|     ![隨附於 Microsoft 365 商務版](../media/check-mark.png)    |  |
+| 共用電腦啟用|     ![隨附於 Microsoft 365 商務版](../media/check-mark.png)    | ![隨附於 Office 365 E3](../media/check-mark.png)| 
 | 升級到 Windows 10 專業版的權限，從 Win 7/8.1 專業版的授權|     ![隨附於 Microsoft 365 商務版](../media/check-mark.png)    || 
 | **資訊保護**        | | |
-|Office 365 資料外洩防護|   ![隨附於 Microsoft 365 商務版](../media/check-mark.png)|![隨附於 Office 365 E3](../media/check-mark.png)|
+|Office 365 資料外洩防護|    ![隨附於 Microsoft 365 商務版](../media/check-mark.png)|![隨附於 Office 365 E3](../media/check-mark.png)|
 |Azure 資訊保護方案 1，Bitlocker 強制執行|![隨附於 Microsoft 365 商務版](../media/check-mark.png)||
 |Azure 資訊保護方案 1，敏感度標籤|![隨附於 Microsoft 365 商務版](../media/check-mark.png)||
 |**用戶端存取使用權 （CAL 權限）**|||
@@ -68,7 +68,7 @@ Microsoft 365 商務版具有您需要為您的小型企業，簡單的裝置管
 
 ## <a name="migration"></a>移轉
 
-若要移轉您的訂閱，請參閱指示[以手動方式切換至不同的計劃](https://docs.microsoft.com/office365/admin/misc/switch-plans-manually)如果您想要將少數使用者移至 Microsoft 365 商務版。 您也可以[自動升級所有人](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan)，或可以使用，將您的 E3 訂閱和授權移至 Microsoft 365 商務版訂閱的合作夥伴。
+若要移轉您的訂閱，請參閱[手動變更計劃](../commerce/subscriptions/change-plans-manually.md)指示如果您想要將少數使用者移至 Microsoft 365 商務版。 您也可以[自動升級所有人](../commerce/subscriptions/upgrade-to-different-plan.md)，或與合作夥伴移到 Microsoft 365 商務版訂閱版 E3 訂閱和授權工作。
 下列各節說明您需要進行，如果有的話，所做的變更，您可以在移轉後執行的動作。
 
 ### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365 E3 訂閱設定與資料

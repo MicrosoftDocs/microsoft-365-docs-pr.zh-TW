@@ -16,16 +16,25 @@ search.appverid:
 - MOE150
 - MET150
 description: 內容總管可讓您本機檢視已套用標籤的項目。
-ms.openlocfilehash: 2d9be42c00940bf9d37d1fdeb9b15b071aa412ac
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 205ec6b4f2049e18ee95f25505d8a58d7eb7ac77
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076423"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409688"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>使用資料分類內容總管 (預覽)
 
 資料分類內容總管可讓您本機檢視概觀頁面中摘要的項目。
+
+## <a name="prerequisites"></a>必要條件
+
+每個存取並使用活動總管的帳戶，都必須有從下列其中一個訂閱中指派的授權：
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- 進階合規性 (E5) 附加元件
+- 進階威脅情報 (E5) 附加元件
 
 ## <a name="content-explorer"></a>內容總管
 
@@ -58,6 +67,8 @@ SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資�
 您用來存取內容瀏覽器的帳戶必須屬於其中一個或兩個角色群組。 這些是獨立的角色群組，不會累計。 例如，如果您想要授與某個帳戶只能檢視項目及其位置的權限，請授與「內容瀏覽器清單檢視器」權限。 如果您想要讓該相同帳戶也能夠檢視清單中項目的內容，也請授與「內容瀏覽器內容檢視器」權限。
 
 您也可以將一個或兩個角色指派給自訂角色群組，以量身打造內容瀏覽器的存取權。
+
+全域系統管理員、合規性系統管理員或資料系統管理員可以指派必要的內容總管清單檢視器和內容總管內容檢視器角色群組成員資格。
 
 ### <a name="how-to-use-content-explorer"></a>如何使用內容總管
 
