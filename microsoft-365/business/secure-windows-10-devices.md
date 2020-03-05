@@ -19,18 +19,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: '了解預設及其他設定，以保護 Windows 10 裝置。 '
-ms.openlocfilehash: 9560bb4e299dba8f92d435a64670261b0e7e0290
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 了解設定的任何 Windows 10 裝置將會收到於其公司或學校帳戶登入的預設裝置原則設定。
+ms.openlocfilehash: 6c9dcd308db2fa41bad5f907b3c5a35577ac61f1
+ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593438"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417239"
 ---
 # <a name="secure-windows-10-devices"></a>保護 Windows 10 裝置
 
@@ -42,7 +43,7 @@ ms.locfileid: "41593438"
   
 |||
 |:-----|:-----|
-|設定  <br/> |描述  <br/> |
+|設定  <br/> |說明  <br/> |
 |使用 Windows Defender 防毒軟體來協助保護電腦免於遭受病毒與其他威脅的侵害  <br/> |需要開啟 Windows Defender 防毒軟體，以保護電腦免於遭受連接至網際網路時的安全威脅。  <br/> |
 |協助保護電腦免於遭受 Microsoft Edge 中的網路安全威脅  <br/> |開啟 Microsoft Edge 中的設定，以協助保護使用者免受惡意網站與下載檔案的威脅。  <br/> |
 |閒置這段時間之後關閉裝置螢幕  <br/> |確保使用者閒置時，公司資料已受到保護。使用者可能會在咖啡館等公共場所工作，當使用者暫時離開或是分心時，他們的裝置就容易受到他人任意窺伺。此設定能讓您控制螢幕將於使用者閒置多久之後關閉。  <br/> |
