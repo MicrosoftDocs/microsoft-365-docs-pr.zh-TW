@@ -18,17 +18,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何為 Microsoft 365 行銷活動設定條件式存取原則。
-ms.openlocfilehash: 1ef90bd77da43ded624d85cef9c7a33beec74345
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何設定 Microsoft 365 行銷活動來增加大量額外的安全性條件式存取原則。
+ms.openlocfilehash: be3ca0da3d27e3ec49f1227e4482cfd7fcaae8cb
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42064596"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550070"
 ---
 # <a name="set-up-conditional-access-policies"></a>設定條件式存取原則
 

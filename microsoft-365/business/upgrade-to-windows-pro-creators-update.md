@@ -1,5 +1,7 @@
 ---
 title: 將 Windows 裝置升級到 Windows 10 專業版
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -17,17 +19,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
-description: '了解如何將 Windows 裝置升級到 Windows 10 專業版。 '
-ms.openlocfilehash: 3457b35c5f9e313e176664ca088e64ce5dd4f881
-ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
+description: 探索您可以將您的 Windows 裝置升級到 Windows 10 專業版利用更進階的安全性和商業網路功能的方式。
+ms.openlocfilehash: 541169571fb9f58c7f75f610546ec250ffd40afb
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41265851"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549930"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>將 Windows 裝置升級到 Windows 10 專業版
 
@@ -56,6 +59,6 @@ ms.locfileid: "41265851"
   
 完成設定 Android 和 iOS 裝置，請參閱[為 Microsoft 365 商務版使用者的行動裝置上的設定](set-up-mobile-devices.md)。 
   
-## <a name="see-also"></a>另請參閱
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>如需設定和使用 Microsoft 365 商務版
 
 [Microsoft 365 商務版訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

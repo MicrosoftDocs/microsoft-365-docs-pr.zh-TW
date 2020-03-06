@@ -16,20 +16,21 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
-description: 設定符合性功能，以防止資料遺失和標籤敏感資料。
-ms.openlocfilehash: d569ff8d84faf82881035f0ed54e5d175605776f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 設定符合性功能，以防止資料遺失，並協助保護您和您客戶的敏感資訊的安全。
+ms.openlocfilehash: 4c8efc4ca96f2db7bc4d1592ad3fdc85dfb6b3b5
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42064691"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550050"
 ---
 # <a name="set-up-compliance-features"></a>設定合規性功能
 
-Microsoft 365 商務版隨附功能來保護您的資料和裝置，並協助您保護其他與您的客戶敏感資訊的安全。
+Microsoft 365 商務版隨附於保護您的資料和裝置，並協助您保護您和您客戶的敏感資訊安全性的功能。
 
 ## <a name="set-up-dlp-features"></a>設定 DLP 功能
 

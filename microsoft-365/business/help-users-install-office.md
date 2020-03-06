@@ -20,17 +20,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: 協助您安裝 Office 應用程式的使用者。
-ms.openlocfilehash: 7497be6b0796fdd28156d8c9a6018b05e3dcfe75
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 協助使用者在 Windows 10 裝置上安裝 Office app 並輕鬆地從 Microsoft 365 商務版系統管理中心的 Windows 10 Pc 上安裝 Office。
+ms.openlocfilehash: 5df9a1a8236942a34031daf06e38acbe923339e4
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065710"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550370"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>協助您在 Windows 10 裝置上安裝 Office 的使用者
 
@@ -61,6 +62,6 @@ ms.locfileid: "42065710"
     
       :::image type="content" source="../media/sendemailtousers.png" alt-text="選取的使用者傳送電子郵件與 Office 下載連結。":::
 
-## <a name="see-also"></a>另請參閱
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>如需設定和使用 Microsoft 365 商務版
 
 [Microsoft 365 商務版訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

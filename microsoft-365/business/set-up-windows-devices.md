@@ -19,21 +19,22 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: '了解如何為 Microsoft 365 商務版使用者執行 Windows 10 專業版的 Windows 裝置上設定。 '
-ms.openlocfilehash: 427e1c25b5c6ad52ab280502133a0e2808bb48b1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何設定 Windows 裝置執行 Windows 10 專業版 Microsoft 365 商務版使用者，啟用集中式的管理和安全性控制。
+ms.openlocfilehash: 62d909b1e5658131f9381d1a800a70fad6e16cab
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42090624"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550010"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>為 Microsoft 365 商務版使用者設定 Windows 裝置
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-users"></a>設定為 Microsoft 365 商務版使用者的 Windows 裝置的必要條件
 
 請先確認所有 Windows 裝置皆執行 Windows 10 專業版的版本 1703 (Creators Update)，才能為 Microsoft 365 商務版使用者設定 Windows 裝置。Windows 10 專業版是部署 Windows 10 商務版的先決條件，它是一套加強 Windows 10 專業版的雲端服務和裝置管理功能，而且可支援 Microsoft 365 商務版的集中管理和安全性控制。
   
@@ -125,6 +126,6 @@ ms.locfileid: "42090624"
 
 若要設定行動裝置，請參閱[為 Microsoft 365 商務版使用者設定行動裝置](set-up-mobile-devices.md)。若要設定裝置保護或 App 保護原則，請參閱[管理 Microsoft 365 商務版](manage.md)。
   
-## <a name="see-also"></a>另請參閱
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>如需設定和使用 Microsoft 365 商務版
 
 [Microsoft 365 商務版訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

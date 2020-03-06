@@ -20,18 +20,19 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
-description: 了解如何重設或清除透過保護原則受管理的裝置。
-ms.openlocfilehash: b022d9076b60b0d29771b2ba8f7afc0435bda096
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 了解如何移除的公司資料從裝置透過保護原則來管理，以及 Windows 10 裝置重設成出廠預設值。
+ms.openlocfilehash: f5c9bba6004632964ca01ba2f65e88dafb0ed719
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593834"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550330"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business"></a>使用 Microsoft 365 商務版管理受保護的裝置
 

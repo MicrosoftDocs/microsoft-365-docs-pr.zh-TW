@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: 購買 Office 365 商務版訂閱。 您可以購買相同類型的訂用帳戶，您企圖或不同的計劃。
-ms.openlocfilehash: fcd38783082f9b86c4e1b99b1eec06d948e8e4b4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: faac769a89824964315c84da507adcf18d8cfeac
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239754"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549800"
 ---
 # <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>從免費試用版轉而購買商務用 Office 365 訂閱
 
@@ -41,14 +41,14 @@ ms.locfileid: "42239754"
 - [購買與試用版相同的方案](#buy-the-same-plan-as-your-trial)
 - [購買與試用版不同的方案](#buy-a-different-plan-than-your-trial)
 
+> [!NOTE]
+> 在您的免費試用版期間結束時，您試用版訂閱會自動將轉換到付費訂閱。 已付費的訂閱會預設為您目前已設定的計劃。 您仍然可以購買不同的計劃遵循[購買與試用版不同的方案](#buy-a-different-plan-than-your-trial)下一節中的步驟。
+
 ## <a name="buy-the-same-plan-as-your-trial"></a>購買與試用版相同的方案
 
 步驟相當簡單，而且若您之後要購買與試用版相同的訂閱類型，便不必擔心會遺失資料、帳戶及設定。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
 1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
 
@@ -94,7 +94,7 @@ ms.locfileid: "42239754"
 
 ## <a name="buy-a-different-plan-than-your-trial"></a>購買與試用版不同的方案
 
-如果購買的訂閱類型與試用版不同，您就必須在試用版方案到期後的 90 天寬限期內，將使用者授權從試用版方案重新指派到新方案中，以保留您的資料、帳戶和設定。
+如果您購買與試用版的不同類型的訂閱，您必須重新指派至新方案您使用者的授權從您的試用版計劃 （之前您 90 天寬限期結束後您試用版的計劃到期） 以保留您的資料，帳戶、 和組態。
 
 ::: moniker range="o365-worldwide"
 

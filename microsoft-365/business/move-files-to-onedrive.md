@@ -17,17 +17,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
-description: 了解如何將檔案移動到 OneDrive。
-ms.openlocfilehash: 85ff7ad2ecab3646eeb196a380f85983b1403f7a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何移動您個人的工作和公司機密檔案至商務用 OneDrive 中只需要幾個簡單的步驟。
+ms.openlocfilehash: 837ec8bb01ed78e7a13ee802afaf845c80544f5d
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065198"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550260"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>將檔案移至商務用 OneDrive
 
@@ -50,6 +51,6 @@ ms.locfileid: "42065198"
     
 若要傳輸使用者個人資料和重要檔案，您也可以使用協力廠商工具，例如 ForensiT。此外，您也必須將產生的檔案上傳至商務用 OneDrive。
   
-## <a name="see-also"></a>另請參閱
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>如需設定和使用 Microsoft 365 商務版
 
 [Microsoft 365 商務版訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

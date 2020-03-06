@@ -1,5 +1,7 @@
 ---
 title: 使用 Microsoft 365 商務版的裝置上的資料保護的必要條件
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -13,23 +15,24 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
-description: 了解設定您的組織使用 Microsoft 365 商務版的必要條件。
-ms.openlocfilehash: 874a85859e315ef17e10fdd8094860e1e6bf2560
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+description: 了解貴組織使用 Microsoft 365 商務版設定和保護您的使用者裝置上的公司資料的需求。
+ms.openlocfilehash: 9e35e3b1cd4f0df1c5852b0fec407a99c9bcf4f4
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640534"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550180"
 ---
 # <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>使用 Microsoft 365 商務版的裝置上的資料保護的必要條件
 
 使用 Microsoft 365 商務版貴組織設定的第一個步驟是確認您可以符合必要條件。
   
-## <a name="prerequisites"></a>必要條件
+## <a name="requirements-for-setting-up-your-organization-with-microsoft-365-business"></a>設定 Microsoft 365 商務版貴組織的需求
 
 - Windows 裝置必須執行 Windows 7 專業版、 Windows 8 專業版或 Windows 8.1 專業版。
     
