@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
 ms.openlocfilehash: 6c461cd049cb89a2de0dbfc4cb1a5f8ea28c3ea6
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106856"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543119"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -63,11 +63,11 @@ ms.locfileid: "42106856"
 |建立及發佈將協助保護我的組織資料的敏感度標籤|[建立及設定敏感度標籤及其原則](create-sensitivity-labels.md)|
 |使用敏感度標籤加密文件和電子郵件，並限制能夠存取該內容的人員以及使用方式 |[使用敏感度標籤來套用加密以限制存取內容](encryption-sensitivity-labels.md)|
 |在 SharePoint (和 OneDrive) 中針對具有加密標籤的文件啟用共同作業功能 | [對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤 (公開預覽)](sensitivity-labels-sharepoint-onedrive-files.md)
-|管理 Office 應用程式的敏感度標籤，讓內容標示為已建立 |[在 Office 應用程式使用敏感度標籤](sensitivity-labels-office-apps.md)|
+|管理 Office 應用程式的敏感度標籤，讓內容標示為已建立 |[在 Office 應用程式中使用敏感度標籤](sensitivity-labels-office-apps.md)|
 |建立內容時自動套用敏感度標籤或向使用者建議標籤 | [自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)|
 |使用敏感度標籤來保護 Teams 和 SharePoint 中的內容 |[對 Microsoft Teams、Office 365 群組和 SharePoint 網站使用敏感度標籤 (公開預覽)](sensitivity-labels-teams-groups-sites.md)|
 |探索、標記和保護儲存在內部部署資料存放區中的檔案 |[部署 Azure 資訊保護掃描器以自動分類和保護檔案](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
-|探索、標記和保護儲存在雲端的資料存放區中的檔案|[探索、分類、標記及保護儲存在雲端的管制資料及敏感性資料](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|探索、標記和保護儲存在雲端的資料存放區中的檔案|[探索、分類、標記和保護儲存在雲端中的控管和敏感性資料](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |將敏感度標籤的使用情況視覺化，以報告部署狀態和微調標籤組態|[利用標籤分析檢視標籤使用量](label-analytics.md)|
 
 
