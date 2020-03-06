@@ -43,6 +43,8 @@
               href: mtp/microsoft-threat-protection.md
             - name: Microsoft 威脅防護的新增功能
               href: mtp/whats-new.md
+            - name: 預覽功能
+              href: mtp/preview.md
             - name: Microsoft 365 安全性中心
               href: mtp/overview-security-center.md
             - name: 必要條件

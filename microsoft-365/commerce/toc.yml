@@ -36,10 +36,8 @@
           href: subscriptions/manage-self-service-purchases-admins.md
     - name: 管理授權
       items:
-        - name: 購買授權
+        - name: 管理訂閱授權
           href: licenses/buy-licenses.md
-        - name: 從訂閱中移除授權
-          href: licenses/remove-licenses-from-subscription.md
         - name: 將授權指派給使用者
           href: ../admin/manage/assign-licenses-to-users.md
         - name: 取消指派給使用者的授權
