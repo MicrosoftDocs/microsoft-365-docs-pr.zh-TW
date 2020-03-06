@@ -130,6 +130,7 @@
 ## 由 21Vianet 運作的 Office 365
 ### [關於由 21Vianet 運作的 Office 365](services-in-china/services-in-china.md)
 ### [購買或試用訂閱](services-in-china/buy-or-try-subscriptions.md)
+### [下載由 21Vianet 營運的 Android 版 Office 365 Office 應用程式](services-in-china/download-office-app-for-Android.md)
 ### [下載由 21Vianet 營運的 iOS 版 Office 365 Office 應用程式](services-in-china/download-office-app-for-iOS.md)
 ### [檢視您的帳單或取得發票](services-in-china/view-your-bill-or-get-a-fapiao.md)
 ### [申請發票](services-in-china/apply-for-a-fapiao.md)
