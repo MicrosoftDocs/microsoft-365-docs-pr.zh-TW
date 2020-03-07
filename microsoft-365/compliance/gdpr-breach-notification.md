@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e419dd362ec42f7f2acb8cda03688afe3ade37be
-ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
+ms.openlocfilehash: 4cf6bb62034708b6ba21fb060949de6f1ac19066
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41916918"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558083"
 ---
 # <a name="gdpr-breach-notification"></a>GDPR 外洩通知
 
@@ -82,4 +82,4 @@ Microsoft 很認真看待其在一般資料保護規定 (GDPR) 下所需承擔�
 
 ## <a name="learn-more"></a>深入了解
 
-- [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft 信任中心](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

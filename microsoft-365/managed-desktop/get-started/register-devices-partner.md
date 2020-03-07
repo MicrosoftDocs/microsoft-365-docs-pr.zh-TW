@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: a9a2a0ccb1e0830d674f4b1b1ef5495fafb38ca3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dc446281e8a791b59a9ac97592ff6a53dcde310c
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596550"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557561"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>讓合作夥伴註冊裝置的步驟
 
@@ -27,7 +27,7 @@ ms.locfileid: "41596550"
 若要完成註冊您的客戶，請先建立 CSV 檔案。
 
 >[!NOTE]
->以方便您使用，您可以下載[範例 CSV 檔](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.csv)此*協力廠商版本*。
+>以方便您使用，您可以下載[範例 CSV 檔](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.csv)此*協力廠商版本*。
 
 您的檔案必須包含**完全相同的欄標題**作為範例一 (製造商、型號等)，但您自己的資料適用於其他列。 如果您使用範本，請在記事本這類的文字編輯工具中開啟範本，然後不妨將列 1 的所有資料維持原狀，只在列 2 以下輸入資料。 
     

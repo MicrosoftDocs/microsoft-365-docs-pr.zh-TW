@@ -1,5 +1,7 @@
 ---
 title: 在 Office 365 進階電子文件探索中匯出案例資料
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
 description: '了解匯出 eDiscovery 案例資料及使用 Office 365 進階電子文件探索中匯出程序的檢閱結果的準則。  '
-ms.openlocfilehash: 22713d38bf93f32a59646d6b0105f6c0cece69bd
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ced09e872ab1cf7f3f5a798a916357cb8016b797
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805806"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558214"
 ---
-# <a name="export-case-data-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中匯出案例資料
+# <a name="export-case-data-in-advanced-ediscovery-classic"></a>在 [進階電子文件 （傳統） 匯出案例資料
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -35,9 +37,9 @@ ms.locfileid: "40805806"
     
 - 將大量資料匯出至資料庫，可能會造成重大影響必要的資料庫的大小和進階電子文件資料庫的必要的組態。
     
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [匯出結果](export-results-in-advanced-ediscovery.md)
   

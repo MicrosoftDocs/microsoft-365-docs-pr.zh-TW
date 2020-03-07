@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: '了解如何尋找 Office 365 進階電子文件探索，包括任務狀態和處理程序摘要中執行的處理序模組結果。  '
-ms.openlocfilehash: 95e5e8f5ddc24bf0b8bf38800289abd233c655ad
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 76619d5899171e8ec105c359cefdb4b8689a8d8a
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068829"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557601"
 ---
-# <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中檢視處理序模組結果
+# <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>在進階電子文件 （傳統） 中檢視處理序模組結果
 
 在**準備**之後\>初始化**程序**，您可以檢視進度和結果。 
   
@@ -108,9 +108,9 @@ Panes 呈現匯入的檔案統計資料的圖形顯示，如下所示：
   
 ![處理序模組錯誤](../media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [執行處理序模組及載入資料](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

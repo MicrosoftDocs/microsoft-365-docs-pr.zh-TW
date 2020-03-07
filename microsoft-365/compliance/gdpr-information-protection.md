@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 0bd09751ae3da311b753906b9c341a52a93b14f6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2b8bfa67a8af8686627e239b06c1025c3e8f3137
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596380"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557943"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>使用 Microsoft 365 功能實現 GDPR 資訊保護
 
@@ -60,4 +60,5 @@ Microsoft 提供下列建議設定，可作為起點設定：
 - [Windows 威脅防護](https://docs.microsoft.com/windows/security/threat-protection/)。深入了解 Windows Defender 進階威脅防護與 Windows 10 的其他功能。
 
 ## <a name="learn-more"></a>深入了解
-[Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+
+[Microsoft 信任中心](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

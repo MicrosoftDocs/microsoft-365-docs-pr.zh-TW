@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: '了解標記的步驟，然後會使用 Office 365 進階電子文件探索的相關性訓練階段期間的訓練樣本的 40 個檔案。  '
-ms.openlocfilehash: 0565fa29f79a5269631539939c749a9ad93a029c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6362aef6f4e0e17b39429dfeebca796d58d2d13e
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069559"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557713"
 ---
-# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>標記與相關性訓練中 Office 365 進階電子文件探索
+# <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>標記與相關性訓練中進階電子文件 （傳統）
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -98,9 +98,9 @@ ms.locfileid: "42069559"
     
     瀏覽至最後一個範例中的檔案： Shift + Ctrl +\>
     
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [了解相關性評估](assessment-in-relevance-in-advanced-ediscovery.md)
   

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 安全性入口網站和系統管理中心
 description: 尋找正確的 Microsoft 系統管理中心或入口網站管理 Microsoft 365 安全性相關的各項服務
-keywords: 安全性、 入口網站，Microsoft 365、 M365、 安全性中心]、 [系統管理中心中，URL 連結，具有 mtp 之、 Azure ATP、 Office 365 ATP、 MCAS、 WDSI、 SCC、 Intune、 MDM、 記憶體、 ASC、 OATP、 AATP
+keywords: 安全性、 入口網站，Microsoft 365、 M365、 安全性中心]、 [系統管理中心中，URL 連結，具有 mtp 之 Microsoft Defender ATP、 Microsoft defender 資訊安全中心、 Azure ATP、 Office 365 ATP、 MCAS、 WDSI、 SCC、 Intune、 MDM、 記憶體、 ASC、 OATP、 AATP、 Cloud App Security，Azure AD、 安全性 & 合規性中心
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 24bfd07b4b7baf9082ef99691fb1048e1f0b655e
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.openlocfilehash: 98bfa8da792bfc5b75d1a2532492c2de6071f1b1
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42336910"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558234"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft 安全性入口網站和系統管理中心
-雖然[Microsoft 365 安全中心](overview-security-center.md)來監控和管理安全性不同身分識別、 資料、 裝置、 應用程式的新 [首頁，您將需要存取各種入口網站的某些特殊工作。
+雖然[Microsoft 365 安全中心](overview-security-center.md)來監控和管理安全性不同身分識別、 資料、 裝置和應用程式的新 [首頁，您將需要存取各種入口網站的某些特殊工作。
 
 > [!TIP] 
 > 若要從 Microsoft 365 安全性中心存取各種相關的入口網站，選取 [在功能窗格中的**更多的資源**。

@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: 說明在進階電子文件的匯出報告中包含的所有欄位。
-ms.openlocfilehash: facd93422bbe41a9dc8c5f252cf08eab7fb308f2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8c932dac9218e2020bfcd57d21483728325e488f
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594614"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558204"
 ---
-# <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中匯出報告欄位
+# <a name="export-report-fields-in-advanced-ediscovery-classic"></a>在 [進階電子文件 （傳統） 匯出報告欄位
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -137,7 +137,7 @@ ms.locfileid: "41594614"
    
 ## <a name="related-topics"></a>相關主題
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [使用進階電子文件的匯出案例資料](export-case-data-in-advanced-ediscovery.md)
   

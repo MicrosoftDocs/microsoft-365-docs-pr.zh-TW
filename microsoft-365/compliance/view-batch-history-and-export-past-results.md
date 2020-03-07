@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: '了解如何檢視選取的匯出批次工作階段的詳細的資訊，以及如何復原在 Office 365 進階電子文件探索中的最後一個匯出工作階段。  '
-ms.openlocfilehash: a13faf7a0c81eb22498239b5ac9f26cce52387f6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: de7366e1eb43c276899ecf35339c0443fad4879d
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069108"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557611"
 ---
-# <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>檢視批次歷程記錄及匯出過去的 Office 365 進階電子文件探索中的結果
+# <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>檢視批次歷程記錄及匯出過去的進階電子文件 （傳統） 中的結果
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -60,9 +60,9 @@ ms.locfileid: "42069108"
     
 3. 按一下 **[開始]**。 匯出的檔案下載至本機電腦。 
     
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [匯出結果](export-results-in-advanced-ediscovery.md)
 

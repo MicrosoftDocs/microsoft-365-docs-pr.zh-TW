@@ -16,19 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: '了解如何使用 Microsoft 365 安全性&amp;合規性中心，以準備與 Office 365 進階電子文件探索分析的 Office 365 的資料。 '
-ms.openlocfilehash: 028cdb48e5ece2509d175a363c19beb6c2fafa19
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 44ccb6250e28e0fa75f6d1a037236a100fca102c
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071030"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557863"
 ---
-# <a name="prepare-data-for-office-365-advanced-ediscovery"></a>準備資料以供 Office 365 進階電子文件探索
+# <a name="prepare-data-for-advanced-ediscovery-classic"></a>準備資料以供進階電子文件 （傳統）
 
-本主題說明如何載入至進階電子文件中的案例中的內容搜尋的結果。 
+本主題說明如何載入至進階電子文件 （傳統） 中的案例中的內容搜尋的結果。 
   
 > [!IMPORTANT]
-> 隨著我們繼續投資於更新版本的進階電子文件探索，我們現在宣布停用 Office 365 進階文件探索 (也稱為*進階文件探索 1.0 版*)。 如果您仍在使用進階電子文件探索 1.0 版，請盡快轉換為[進階電子文件探索 2.0 版](overview-ediscovery-20.md) (*在Microsoft 365 中也稱為進階電子文件探索解決方案*)。 進階電子文件探索 2.0 中包含可在進階電子文件探索 1.0 版中找到的類似功能，但同時也提供許多新的功能，例如監管人管理、通訊管理和檢閱集。 若要深入了解進階電子文件探索 1.0 版的停用，請參閱[舊版電子文件探索工具的停用](legacy-ediscovery-retirement.md#advanced-ediscovery-v10) (部分機器翻譯)。  
+> 當我們繼續投入在較新版本的進階電子文件中，我們已宣佈 Office 365 進階電子文件探索，也稱為*進階電子文件 （傳統）* 或*進階電子文件 v1.0*淘汰的網站。 如果您仍在使用進階電子文件探索 1.0 版，請盡快轉換為[進階電子文件探索 2.0 版](overview-ediscovery-20.md) (*在Microsoft 365 中也稱為進階電子文件探索解決方案*)。 進階電子文件探索 2.0 中包含可在進階電子文件探索 1.0 版中找到的類似功能，但同時也提供許多新的功能，例如監管人管理、通訊管理和檢閱集。 若要深入了解進階電子文件探索 1.0 版的停用，請參閱[舊版電子文件探索工具的停用](legacy-ediscovery-retirement.md#advanced-ediscovery-v10) (部分機器翻譯)。  
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>步驟 1： 準備 Office 365 資料以供進階電子文件
 
@@ -65,9 +65,9 @@ ms.locfileid: "42071030"
     
 從安全性搜尋結果之後&amp;合規性中心會新增至進階電子文件探索中的情況下一步是在進階電子文件中使用的工具來分析並 cull 與案件相關的資料。 
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [設定使用者和案例](set-up-users-and-cases-in-advanced-ediscovery.md)
   

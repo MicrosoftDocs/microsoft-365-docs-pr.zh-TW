@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: '檢閱文件相似性值，最低的層級的兩個檔案被視為接近重複，跟在 Office 365 進階電子文件探索中的運作方式。 '
-ms.openlocfilehash: b5c777579e876e54032ce5872291a2791e2c3b09
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e15eb119a569c7cd296f9d3546969848808652da
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080764"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557663"
 ---
-# <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>了解在 Office 365 進階電子文件探索中的文件相似性
+# <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>了解在進階電子文件 （傳統） 中的文件相似性
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -55,9 +55,9 @@ Near-複本 (ND) 在集內，可能會有的跟低於相似性閾值等級的文
   
 合併設定之後，新文件加入至集合時，可以變更樞紐分析表文件。 
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [設定分析選項](set-analyze-options-in-advanced-ediscovery.md)
   

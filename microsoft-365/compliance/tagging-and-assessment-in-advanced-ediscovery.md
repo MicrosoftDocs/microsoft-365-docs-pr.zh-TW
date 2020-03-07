@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: '檢閱執行評估訓練，包括標記檔案，並檢閱在 Office 365 進階電子文件探索中的評估結果的步驟。 '
-ms.openlocfilehash: 93780d42cd42ced692a81f5cfd739bcd8713c2c2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 04f88a5efbd48c222c8c7033d94ae41634a06d99
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081025"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557723"
 ---
-# <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>標記與 Office 365 進階電子文件探索中的評估
+# <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>標記與評估在進階電子文件 （傳統）
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -123,9 +123,9 @@ ms.locfileid: "42081025"
 > [!TIP]
 > 在**相關性\>追蹤**索引標籤上，展開此問題： 顯示、 可用的檢視選項如下: > 建議的下一個步驟，例如：**下一步： 標記**可以藉由按一下其右側的 [**修改**] 按鈕，並在**下一個步驟**中選取不同的步驟略過 （每個問題）。 當尚未完成評估進度列指示器時，評估就會是 [下一步] 建議的選項，以標記更多的評估檔案，並提高統計資料的正確性。 您可以變更錯誤邊界，並評估其影響中，按一下 [**修改]**，和**評量層級] 對話方塊**，變更**目標錯誤邊界的重新叫用來估計**，然後按一下 [**更新值**的 # A0。 此外，該對話方塊中，您可以檢視進階的選項]，按一下 [**進階]**。 您可以藉由按一下 [**檢視]** 檢視其他評量層級的統計資料和其影響 # A0。 在 [顯示詳細資料結果對話方塊統計資料時，可每個問題，有至少 500 標記的評估檔案，且至少 18 檔案標示為相關的問題。 
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [了解相關性評估](assessment-in-relevance-in-advanced-ediscovery.md)
   

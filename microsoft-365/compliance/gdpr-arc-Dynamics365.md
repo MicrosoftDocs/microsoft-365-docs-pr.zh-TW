@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ea6f4561a17acc81653e711d81d5c362c959f3ae
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5c8cd9e29b663c79d44a97d039bfdb5975e5d225
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073880"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558154"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>符合 GDPR 的 Dynamics 365 責任整備程度檢查清單
 
@@ -152,5 +152,5 @@ ms.locfileid: "42073880"
 
 ## <a name="learn-more"></a>深入了解
 
-- [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft 信任中心](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 - [安全信任入口網站](https://aka.ms/gdprgetstarted)

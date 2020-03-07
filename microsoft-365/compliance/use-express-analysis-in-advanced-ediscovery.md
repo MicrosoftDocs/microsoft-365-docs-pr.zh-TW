@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: 了解如何執行 Office 365 進階電子文件探索的快速分析模式
-ms.openlocfilehash: 49e8f04b893f0a15563cf091c728352a97c4141f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d4b8e1fa5e8251f5ede2d9a3003c756decac3b45
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080727"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557641"
 ---
-# <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中使用快速分析
+# <a name="use-express-analysis-in-advanced-ediscovery-classic"></a>在進階電子文件 （傳統） 中使用快速分析 
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -129,8 +129,8 @@ ms.locfileid: "42080727"
     
 選擇 **[確定]** 以儲存 [進階] 設定，**還原成預設值**使用預設值，或 [**取消**] 取消 [設定進階的設定。 
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 <a name="BK_AdvancedSettings"> </a>
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
 

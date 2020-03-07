@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 474f66b51fc5d6b1c13479c5f01b7807589e8934
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a24c7542468e27835e058ff29585782774e96ed4
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073870"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558113"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>GDPR 規定的 Dynamics 365 和外洩通知
 
@@ -106,4 +106,4 @@ Microsoft Dynamics 365 小組也可以選擇通知客服 (CSS) 和客戶專案�
 
 ## <a name="learn-more"></a>深入了解
 
-- [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft 信任中心](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

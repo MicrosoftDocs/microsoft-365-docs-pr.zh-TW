@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: '了解標籤、 跨模組，以及您可以在 Office 365 進階電子文件探索案例層級定義的租用戶設定。  '
-ms.openlocfilehash: 2d482c7409c546042488ba4f0c7cc74571152e86
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3f206feaa48f13db48552fb7d1be1445609edeae
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595370"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556941"
 ---
-# <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中定義案例與租用戶設定
+# <a name="define-case-and-tenant-settings-in-advanced-ediscovery-classic"></a>在進階電子文件 （傳統） 中定義案例與租用戶設定
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -52,7 +52,7 @@ ms.locfileid: "41595370"
     
   - **案例] 頁面**
     
-3. 按一下 [儲存]****。
+3. 按一下 **[儲存]**。
     
 ## <a name="tenant-settings"></a>租用戶設定
 
@@ -88,9 +88,9 @@ ms.locfileid: "41595370"
     
 顯示可更新的租用戶資訊下方的 [**重新整理**] 圖示，即可。 
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [使用公用程式](use-advanced-ediscovery-utilities.md)
 

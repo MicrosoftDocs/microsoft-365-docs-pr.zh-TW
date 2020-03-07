@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: 取得評估階段和在 Office 365 進階電子文件探索中的相關性訓練期間判斷問題的豐富性其角色的概觀。
-ms.openlocfilehash: 87da6fa480d272819894d439ba69081b0d8928d2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 46aef7300a6021e603edb8708ae01d8147b02722
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595980"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556791"
 ---
-# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中瞭解相關性評估
+# <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>中瞭解相關性評估在進階電子文件 （傳統）
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -53,9 +53,9 @@ ms.locfileid: "41595980"
 > [!NOTE]
 > 評估階段可以略過，在**相關性\>追蹤**中有問題，清除 [**評估**] 核取方塊每個問題，然後針對 「 所有問題 」 的擴充檢視] 索引標籤。 不過，因此，會有這個問題沒有統計資料。 清除 [**評估**] 核取方塊 > 只能執行評估之前執行。 在多個問題存在於案例中，核取方塊已清除的每一項問題時，才將略過評估 
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [標記與評估](tagging-and-assessment-in-advanced-ediscovery.md)
   

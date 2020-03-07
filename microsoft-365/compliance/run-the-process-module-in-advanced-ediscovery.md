@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: '了解做準備案例的 Office 365 資料的檔案與 Office 365 進階電子文件探索分析的準則。  '
-ms.openlocfilehash: 779f9ae4f93933063139b2d7d65deb2500b263e1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: eb608eeac33e0d5d06dce9d0c35cd86f4e0bc280
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597580"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557813"
 ---
-# <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中執行處理序模組
+# <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>執行進階電子文件中的處理序模組 （傳統）
 
 Case 檔案載入至進階電子文件**準備**期間\>**程序**。 
   
@@ -72,9 +72,9 @@ Case 檔案載入至進階電子文件**準備**期間\>**程序**。
 
 使用者定義的標籤可以是一組檔案以排除處理程序或其他工作相關聯。 每個程序工作階段相關聯的批次識別碼。 雖然批次識別碼是看不到最高]，在 [相關性，如此可以使用搜尋公用程式，藉由將目前的批次的篩選器，標記所有適當的檔案有使用者定義的標籤。 
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [執行處理序模組及載入資料](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
   

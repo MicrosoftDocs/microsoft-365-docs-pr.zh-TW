@@ -1,6 +1,6 @@
 - name: Microsoft 365 合規性
   href: index.yml
-- name: 開始使用
+- name: 入門
   items:
     - name: 合規性中心的新功能
       href: whats-new.md
@@ -92,7 +92,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: 對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: 在 Office 應用程式使用敏感度標籤
+        - name: 在 Office 應用程式中使用敏感度標籤
           href: sensitivity-labels-office-apps.md
     - name: 資料外洩防護 (DLP)
       href: data-loss-prevention-policies.md
@@ -123,7 +123,7 @@
               href: form-a-query-to-find-sensitive-data-stored-on-sites.md
             - name: DLP 如何在安全性與合規性中心和 Exchange 系統管理中心之間工作
               href: how-dlp-works-between-admin-centers.md
-    - name: 敏感資訊類型
+    - name: 敏感性資訊類型
       items:
         - name: 敏感性資訊類型所尋找的項目
           href: what-the-sensitive-information-types-look-for.md
@@ -335,76 +335,105 @@
           items:
             - name: 觀看有關記錄管理的影片
               href: 'https://go.microsoft.com/fwlink/?linkid=867039'
-- name: 搜尋內容
-  href: search-for-content.md
+- name: 管理 eDiscovery
   items:
-    - name: 使用內容搜尋
-      href: content-search.md
+    - name: 內容搜尋
       items:
-        - name: 內容搜尋的關鍵字查詢和搜尋條件
-          href: keyword-queries-and-search-conditions.md
-        - name: 檢視內容搜尋結果的關鍵字統計資料
-          href: view-keyword-statistics-for-content-search.md
-        - name: 匯出內容搜尋結果
-          href: export-search-results.md
-        - name: 匯出內容搜尋報告
-          href: export-a-content-search-report.md
-        - name: 搜尋並刪除電子郵件訊息
-          href: search-for-and-delete-messages-in-your-organization.md
-        - name: 搜尋 Office 365 中內部部署使用者的雲端式信箱
-          href: search-cloud-based-mailboxes-for-on-premises-users.md
-        - name: 大量編輯多個內容搜尋
-          href: bulk-edit-content-searches.md
-        - name: 準備識別碼清單內容搜尋的 CSV 檔案
-          href: csv-file-for-an-id-list-content-search.md
-        - name: 使用內容搜尋來搜尋協力廠商資料
-          href: use-content-search-to-search-third-party-data-that-was-imported.md
-        - name: 檢查您的內容搜尋查詢是否有錯誤
-          href: check-your-content-search-query-for-errors.md
-        - name: 重試失敗的內容搜尋
-          href: retry-failed-content-search.md
-        - name: 為內容搜尋保留密件副本收件者
-          href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
-    - name: 了解內容搜尋
+        - name: 內容搜尋的概觀
+          href: search-for-content.md
+        - name: 使用內容搜尋
+          href: content-search.md
+          items:
+            - name: 關鍵字查詢和搜尋條件
+              href: keyword-queries-and-search-conditions.md
+            - name: 檢視搜尋結果的關鍵字統計資料
+              href: view-keyword-statistics-for-content-search.md
+            - name: 匯出搜尋結果
+              href: export-search-results.md
+            - name: 匯出搜尋報告
+              href: export-a-content-search-report.md
+            - name: 搜尋並刪除電子郵件訊息
+              href: search-for-and-delete-messages-in-your-organization.md
+            - name: 搜尋內部部署使用者的雲端式信箱
+              href: search-cloud-based-mailboxes-for-on-premises-users.md
+            - name: 大量編輯多個內容搜尋
+              href: bulk-edit-content-searches.md
+            - name: 準備識別碼清單中搜尋的 CSV 檔案
+              href: csv-file-for-an-id-list-content-search.md
+            - name: 搜尋協力廠商資料
+              href: use-content-search-to-search-third-party-data-that-was-imported.md
+            - name: 請檢查您的搜尋查詢有錯誤
+              href: check-your-content-search-query-for-errors.md
+            - name: 疑難排解常見的電子文件探索問題
+              href: ediscovery-troubleshooting-common-issues.md
+            - name: 重試失敗的搜尋
+              href: retry-failed-content-search.md
+            - name: 保留密件副本收件者進行搜尋
+              href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+        - name: 設定內容搜尋
+          items:
+            - name: 設定內容搜尋的權限篩選
+              href: permissions-filtering-for-content-search.md
+            - name: 匯出搜尋結果時，增加的下載速度
+              href: increase-download-speeds-when-exporting-ediscovery-results.md
+            - name: 匯出搜尋結果時變更 PST 檔案的大小
+              href: change-the-size-of-pst-files-when-exporting-results.md
+            - name: 當您匯出搜尋結果時停用報告
+              href: disable-reports-when-you-export-content-search-results.md
+        - name: 了解內容搜尋
+          items:
+            - name: 內容搜尋限制
+              href: limits-for-content-search.md
+            - name: 部分編製索引的項目
+              href: partially-indexed-items-in-content-search.md
+            - name: 調查已局部編製索引的項目
+              href: investigating-partially-indexed-items-in-ediscovery.md
+            - name: 在搜尋結果中的重複資料刪除
+              href: de-duplication-in-ediscovery-search-results.md
+            - name: 估計與實際搜尋結果之間的差異
+              href: differences-between-estimated-and-actual-ediscovery-search-results.md
+        - name: 執行內容搜尋 PowerShell 指令碼
+          items:
+            - name: 使用對目標集合的內容搜尋
+              href: use-content-search-for-targeted-collections.md
+            - name: 搜尋的信箱和 OneDrive 帳戶的使用者清單
+              href: search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md
+            - name: 建立、 回報及刪除多個搜尋
+              href: create-report-on-and-delete-multiple-content-searches.md
+            - name: 複製搜尋
+              href: clone-a-content-search.md
+    - name: 核心 eDiscovery
       items:
-        - name: 內容搜尋的限制
-          href: limits-for-content-search.md
-        - name: 內容搜尋中已局部編製索引的項目
-          href: partially-indexed-items-in-content-search.md
-        - name: 調查已局部編製索引的項目
-          href: investigating-partially-indexed-items-in-ediscovery.md
-        - name: 電子文件探索搜尋結果中的重複資料刪除
-          href: de-duplication-in-ediscovery-search-results.md
-        - name: 估計與實際內容搜尋結果之間的差異
-          href: differences-between-estimated-and-actual-ediscovery-search-results.md
-    - name: 設定內容搜尋
+        - name: 管理電子文件探索案例
+          href: ediscovery-cases.md
+        - name: 核心 eDiscovery 參考
+          items:
+            - name: 指派電子文件探索權限
+              href: assign-ediscovery-permissions.md
+            - name: 關鍵字查詢和搜尋條件
+              href: keyword-queries-and-search-conditions.md
+            - name: 設定搜尋權限篩選
+              href: permissions-filtering-for-content-search.md
+            - name: 設定合規性界限
+              href: set-up-compliance-boundaries.md
+            - name: 使用指令碼將使用者新增至 eDiscovery 保留
+              href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
+            - name: 在 eDiscovery 保留建立報表
+              href: create-a-report-on-holds-in-ediscovery-cases.md
+            - name: 搜尋及清除溢出資料
+              href: data-spillage-scenariosearch-and-purge.md
+            - name: 保留密件副本收件者進行搜尋
+              href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            - name: 疑難排解常見的電子文件探索問題
+              href: ediscovery-troubleshooting-common-issues.md
+            - name: 重試失敗的搜尋
+              href: retry-failed-content-search.md
+    - name: 進階電子文件探索
       items:
-        - name: 設定內容搜尋的權限篩選
-          href: permissions-filtering-for-content-search.md
-        - name: 增加匯出內容搜尋結果時的下載速度
-          href: increase-download-speeds-when-exporting-ediscovery-results.md
-        - name: 變更匯出內容搜尋結果時的 PST 檔案大小
-          href: change-the-size-of-pst-files-when-exporting-results.md
-        - name: 當您匯出內容搜尋結果時停用報告
-          href: disable-reports-when-you-export-content-search-results.md
-    - name: 使用內容搜尋 PowerShell 指令碼
-      items:
-        - name: 對目標集合使用內容搜尋
-          href: use-content-search-for-targeted-collections.md
-        - name: 使用內容搜尋來搜尋信箱與商務用 OneDrive 網站的使用者清單
-          href: search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md
-        - name: 建立、報告及刪除多個內容搜尋
-          href: create-report-on-and-delete-multiple-content-searches.md
-        - name: 複製內容搜尋
-          href: clone-a-content-search.md
-- name: 管理法律調查
-  href: manage-legal-investigations.md
-  items:
-    - name: Microsoft 365 中的進階電子文件探索解決方案
-      href: overview-ediscovery-20.md
-      items:
-        - name: 建立新案例
-          href: create-new-ediscovery-case.md
+        - name: 進階電子文件探索的概觀
+          href: overview-ediscovery-20.md
+        - name: 開始使用進階電子文件
+          href: get-started-with-advanced-ediscovery.md
         - name: 與監管人合作
           href: managing-custodians.md
           items:
@@ -443,6 +472,8 @@
               href: create-search-to-collect-data.md
             - name: 建立搜尋查詢
               href: building-search-queries.md
+            - name: 關鍵字查詢和搜尋條件
+              href: keyword-queries-and-search-conditions.md
             - name: 搜尋統計資料
               href: search-statistics.md
             - name: 將搜尋結果新增至檢閱集
@@ -496,9 +527,7 @@
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
         - name: 進階電子文件探索參考資料
           items:
-            - name: 版本資訊
-              href: release-notes-ediscovery20.md
-            - name: 進階電子文件探索的限制
+            - name: 進階電子文件限制
               href: limits-ediscovery20.md
             - name: 支援的檔案類型
               href: supported-filetypes-ediscovery20.md
@@ -508,121 +537,101 @@
               href: attorney-privilege-detection.md
             - name: 交談檢閱集
               href: conversation-review-sets.md
+            - name: 指派電子文件探索權限
+              href: assign-ediscovery-permissions.md
+            - name: 關鍵字查詢和搜尋條件
+              href: keyword-queries-and-search-conditions.md
+            - name: 設定搜尋權限篩選
+              href: permissions-filtering-for-content-search.md
+            - name: 設定合規性界限
+              href: set-up-compliance-boundaries.md
             - name: 進階電子文件報告 （預覽）
               href: advanced-ediscovery-reports.md
             - name: 疑難排解 AzCopy
               href: troubleshooting-azcopy.md
-    - name: 管理電子文件探索案例
-      href: ediscovery-cases.md
+    - name: 進階電子文件 （傳統）
       items:
-        - name: Office 365 進階電子文件探索
+        - name: 進階電子文件 （傳統） 的概觀
           href: office-365-advanced-ediscovery.md
+        - name: 開始使用進階電子文件 （傳統）
+          href: quick-setup-for-advanced-ediscovery.md
+        - name: 設定案例
+          href: set-up-users-and-cases-in-advanced-ediscovery.md
           items:
-            - name: 開始使用進階電子文件探索
-              href: quick-setup-for-advanced-ediscovery.md
-            - name: 設定案例
-              href: set-up-users-and-cases-in-advanced-ediscovery.md
-              items:
-                - name: 定義案例的問題
-                  href: define-issues-and-assign-users.md
-            - name: 收集案例資料
-              items:
-                - name: 準備進階電子文件探索的搜尋結果
-                  href: prepare-search-results-for-advanced-ediscovery.md
-                - name: 將資料載入進階電子文件探索
-                  href: prepare-data-for-advanced-ediscovery.md
-                - name: 將非 Office 365 的內容匯入至案例
-                  href: import-non-office-365-data-into-advanced-ediscovery.md
-            - name: 處理案例資料
-              href: run-the-process-module-in-advanced-ediscovery.md
-              items:
-                - name: 執行處理程序模組及載入資料
-                  href: run-the-process-module-and-load-data-in-advanced-ediscovery.md
-                - name: 檢視處理序模組結果
-                  href: view-process-module-results-in-advanced-ediscovery.md
-            - name: 檢閱案例資料
-              items:
-                - name: 搜尋並標記案例資料
-                  href: search-and-tagging.md
-                - name: 有關檢閱集的決策
-                  href: decision-based-on-the-results-in-advanced-ediscovery.md
-            - name: 分析案例資料
-              href: analyze-case-data-with-advanced-ediscovery.md
-              items:
-                - name: 執行快速分析
-                  href: use-express-analysis-in-advanced-ediscovery.md
-                - name: 文件相似性 (近似重複項) 概觀
-                  href: understand-document-similarity-in-advanced-ediscovery.md
-                - name: 檢視分析結果
-                  href: view-analyze-results-in-advanced-ediscovery.md
-            - name: 使用相關性模組
-              href: use-relevance-in-advanced-ediscovery.md
-              items:
-                - name: 相關性評量的概觀
-                  href: assessment-in-relevance-in-advanced-ediscovery.md
-                - name: 執行相關性評量和標記
-                  href: tagging-and-assessment-in-advanced-ediscovery.md
-                - name: 設定相關性訓練
-                  href: manage-relevance-setup-in-advanced-ediscovery.md
-                - name: 執行相關性訓練和標記
-                  href: tagging-and-relevance-training-in-advanced-ediscovery.md
-                - name: 追蹤相關性訓練程序
-                  href: track-relevance-analysis-in-advanced-ediscovery.md
-                - name: 測試相關性分析的結果
-                  href: test-relevance-analysis-in-advanced-ediscovery.md
-                - name: 載入相關性訓練的其他資料
-                  href: set-up-loads-to-add-imported-files.md
-            - name: 匯出案例資料
-              href: export-case-data-in-advanced-ediscovery.md
-              items:
-                - name: 匯出資料
-                  href: export-results-in-advanced-ediscovery.md
-                - name: 匯出報告欄位
-                  href: export-report-fields-in-advanced-ediscovery.md
-                - name: 檢視批次歷程記錄及匯出過去的結果
-                  href: view-batch-history-and-export-past-results.md
-            - name: 設定進階電子文件探索
-              items:
-                - name: 設定案例和組織設定
-                  href: define-case-and-tenant-settings-in-advanced-ediscovery.md
-                - name: 設定分析設定
-                  href: set-analyze-options-in-advanced-ediscovery.md
-                - name: 設定忽略文字設定
-                  href: set-ignore-text-in-advanced-ediscovery.md
-                - name: 設定醒目提示的關鍵字和其他相關性設定
-                  href: define-highlighted-keywords-and-advanced-options.md
-            - name: 進階電子文件探索參考資料
-              items:
-                - name: 使用進階電子文件探索公用程式
-                  href: use-advanced-ediscovery-utilities.md
-                - name: 執行報告
-                  href: run-reports-in-advanced-ediscovery.md
-        - name: 使用指令碼將使用者新增至電子文件探索案例中的保留
-          href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
-        - name: 在電子文件探索案例中的保留建立報表
-          href: create-a-report-on-holds-in-ediscovery-cases.md
-    - name: 指派電子文件探索權限
-      href: assign-ediscovery-permissions.md
-    - name: 設定 Office 365 中電子文件探索調查的合規性界限
-      href: set-up-compliance-boundaries.md
-    - name: 電子文件探索解決方案系列 - 資料外洩案例 - 搜尋及清除
-      href: data-spillage-scenariosearch-and-purge.md
-    - name: 疑難排解常見的電子文件探索問題
-      href: ediscovery-troubleshooting-common-issues.md
-    - name: 管理保留
-      items:
-        - name: 建立電子文件探索保留
-          href: 'ediscovery-cases.md#step-4-place-content-locations-on-hold'
-        - name: 建立訴訟資料暫留
-          href: create-a-litigation-hold.md
-        - name: 刪除雲端式信箱中可復原的項目資料夾中的保留項目
-          href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
-        - name: 增加保留信箱的可復原項目配額
-          href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
-        - name: 如何找出位於 Exchange Online 信箱的保留類型
-          href: identify-a-hold-on-an-exchange-online-mailbox.md
-        - name: 保留密件副本與展開的通訊群組收件者
-          href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            - name: 定義案例的問題
+              href: define-issues-and-assign-users.md
+        - name: 收集案例資料
+          items:
+            - name: 準備搜尋結果
+              href: prepare-search-results-for-advanced-ediscovery.md
+            - name: 將資料載入案例
+              href: prepare-data-for-advanced-ediscovery.md
+            - name: 非 Office 365 內容匯入至案例
+              href: import-non-office-365-data-into-advanced-ediscovery.md
+        - name: 處理案例資料
+          href: run-the-process-module-in-advanced-ediscovery.md
+          items:
+            - name: 執行處理程序模組及載入資料
+              href: run-the-process-module-and-load-data-in-advanced-ediscovery.md
+            - name: 檢視處理序模組結果
+              href: view-process-module-results-in-advanced-ediscovery.md
+        - name: 檢閱案例資料
+          items:
+            - name: 搜尋並標記案例資料
+              href: search-and-tagging.md
+            - name: 有關檢閱集的決策
+              href: decision-based-on-the-results-in-advanced-ediscovery.md
+        - name: 分析案例資料
+          href: analyze-case-data-with-advanced-ediscovery.md
+          items:
+            - name: 執行快速分析
+              href: use-express-analysis-in-advanced-ediscovery.md
+            - name: 文件相似性 (近似重複項) 概觀
+              href: understand-document-similarity-in-advanced-ediscovery.md
+            - name: 檢視分析結果
+              href: view-analyze-results-in-advanced-ediscovery.md
+        - name: 使用相關性模組
+          href: use-relevance-in-advanced-ediscovery.md
+          items:
+            - name: 相關性評量的概觀
+              href: assessment-in-relevance-in-advanced-ediscovery.md
+            - name: 執行相關性評量和標記
+              href: tagging-and-assessment-in-advanced-ediscovery.md
+            - name: 設定相關性訓練
+              href: manage-relevance-setup-in-advanced-ediscovery.md
+            - name: 執行相關性訓練和標記
+              href: tagging-and-relevance-training-in-advanced-ediscovery.md
+            - name: 追蹤相關性訓練程序
+              href: track-relevance-analysis-in-advanced-ediscovery.md
+            - name: 測試相關性分析的結果
+              href: test-relevance-analysis-in-advanced-ediscovery.md
+            - name: 載入相關性訓練的其他資料
+              href: set-up-loads-to-add-imported-files.md
+        - name: 匯出案例資料
+          href: export-case-data-in-advanced-ediscovery.md
+          items:
+            - name: 匯出資料
+              href: export-results-in-advanced-ediscovery.md
+            - name: 匯出報告欄位
+              href: export-report-fields-in-advanced-ediscovery.md
+            - name: 檢視批次歷程記錄及匯出過去的結果
+              href: view-batch-history-and-export-past-results.md
+        - name: 設定進階電子文件 （傳統）
+          items:
+            - name: 設定案例和組織設定
+              href: define-case-and-tenant-settings-in-advanced-ediscovery.md
+            - name: 設定分析設定
+              href: set-analyze-options-in-advanced-ediscovery.md
+            - name: 設定忽略文字設定
+              href: set-ignore-text-in-advanced-ediscovery.md
+            - name: 設定醒目提示的關鍵字和其他相關性設定
+              href: define-highlighted-keywords-and-advanced-options.md
+        - name: 進階電子文件 （傳統） 參考
+          items:
+            - name: 使用進階電子文件 （傳統） 公用程式
+              href: use-advanced-ediscovery-utilities.md
+            - name: 執行報告
+              href: run-reports-in-advanced-ediscovery.md
 - name: 管理資料調查
   items:
     - name: 資料調查的概觀
@@ -700,6 +709,18 @@
           href: document-metadata-fields.md
         - name: 管理工作
           href: manage-jobs.md
+- name: 管理保留
+  items:
+    - name: 如何識別的保留類型放在信箱上
+      href: identify-a-hold-on-an-exchange-online-mailbox.md
+    - name: 建立訴訟資料暫留
+      href: create-a-litigation-hold.md
+    - name: '刪除 [可復原的項目] 資料夾中的信箱保留的項目'
+      href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
+    - name: 增加保留信箱的可復原項目配額
+      href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: 保留密件副本與展開的通訊群組收件者
+      href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: 管理稽核和警示原則
   items:
     - name: 整合的稽核
@@ -726,7 +747,7 @@
           href: advanced-audit.md
         - name: 管理稽核記錄保留原則
           href: audit-log-retention-policies.md
-        - name: 使用進階稽核調查遭入侵的帳戶
+        - name: 使用進階稽核調查遭入侵帳戶
           href: mailitemsaccessed-forensics-investigations.md
     - name: 警示原則
       href: alert-policies.md

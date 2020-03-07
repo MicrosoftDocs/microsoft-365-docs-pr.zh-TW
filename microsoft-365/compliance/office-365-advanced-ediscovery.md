@@ -15,17 +15,17 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: 了解 Office 365 進階電子文件探索如何協助您分析 Office 365 內的資料、 簡化文件檢閱，以及進行決策有效率 ediscovery （英文）。
-ms.openlocfilehash: a3a6291459005d60defe61a8bca40ce382b6d052
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2e84ada8c6ca004c0f3c50a79fa6908148770955
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597890"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557873"
 ---
-# <a name="office-365-advanced-ediscovery"></a>Office 365 進階電子文件探索
+# <a name="advanced-ediscovery-classic"></a>進階電子文件 （傳統）
 
 > [!IMPORTANT]
-> 當我們繼續投入在較新版本的進階電子文件中，我們已宣佈淘汰網站的 Office 365 進階電子文件探索 (也稱為*進階電子文件 v1.0*)。 如果您仍在使用進階電子文件 v1.0，請轉換至[進階電子文件 v2.0](overview-ediscovery-20.md) （也就是*在 Microsoft 365 進階電子文件方案*） 儘速。 進階電子文件探索 2.0 包含進階電子文件 v1.0 中找到的類似功能，但管理、 通訊管理及檢閱設定，也提供了許多新功能，例如 custodian。 若要深入了解的進階電子文件 v1.0 淘汰網站，請參閱[退休的舊版電子文件探索工具](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。 
+> 當我們繼續投入在較新版本的進階電子文件中，我們已宣佈 Office 365 進階電子文件探索，也稱為*進階電子文件 （傳統）* 或*進階電子文件 v1.0*淘汰的網站。 如果您仍在使用進階電子文件探索 1.0 版，請盡快轉換為[進階電子文件探索 2.0 版](overview-ediscovery-20.md) (*在Microsoft 365 中也稱為進階電子文件探索解決方案*)。 進階電子文件探索 2.0 中包含可在進階電子文件探索 1.0 版中找到的類似功能，但同時也提供許多新的功能，例如監管人管理、通訊管理和檢閱集。 若要深入了解進階電子文件探索 1.0 版的停用，請參閱[舊版電子文件探索工具的停用](legacy-ediscovery-retirement.md#advanced-ediscovery-v10) (部分機器翻譯)。 
   
 使用進階電子文件，您可以更妥善地了解您 Office 365 的資料，並降低 eDiscovery 成本。 進階電子文件可協助您分析 Office 365 內的非結構化的資料、 執行更有效率的文件檢閱，以及進行決策來減少資料 ediscovery （英文）。 您可以使用儲存在 Exchange Online、 SharePoint Online、 商務用 OneDrive、 Skype for Business、 Office 365 群組和 Microsoft Teams 的資料。 您可以執行 eDiscovery 搜尋中的安全性和合規性中心來搜尋的內容群組、 個別信箱及站台，然後分析搜尋結果與進階電子文件。 當您準備進階 eDiscovery 中分析的搜尋結果時，光學字元辨識可讓與映像的文字擷取。 這項功能可讓強大的文字的進階電子文件套用至影像檔案的分析功能。
   
@@ -36,7 +36,7 @@ ms.locfileid: "41597890"
 > [!NOTE]
 > 進階電子文件為您的組織需要與進階合規性附加元件或 E5 訂閱 Office 365 E3。 如果您不具有該計劃，並想要再試進階電子文件，您可以[註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 大小寫。 減少的資料集供進一步檢閱然後匯出登出 Office 365。 
   
-## <a name="get-started"></a>開始使用
+## <a name="get-started"></a>入門
 
 若要開始使用進階電子文件最快的方法是建立案例和準備搜尋結果安全性 & 合規性中心中的，載入進階電子文件，在這些結果，然後執行 Express 分析，以分析案例資料，然後將匯出的結果進行外部檢閱。
   

@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: '了解如何定義從 Office 365 進階電子文件探索，包括指定參數匯出批次的程序中匯出結果的選項。 '
-ms.openlocfilehash: 9194bc9dc44587fb03798c2107c408d2afb2ae70
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e439753b427a4e4a90e219912f8d3c1fcf4cfff3
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074284"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558194"
 ---
-# <a name="export-results-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中匯出結果
+# <a name="export-results-in-advanced-ediscovery-classic"></a>匯出進階電子文件 （傳統） 中的結果
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -192,9 +192,9 @@ EDiscovery 匯出工具用來從進階電子文件的搜尋結果匯出到本機
 |載入檔案  <br/> |csv  <br/> |其他應用程式中載入的 csv 格式匯出的檔案中繼資料。 若要匯出的範本使用者選取會根據檔案中的欄位。  <br/> |
 |成功指示器  <br/> |txt  <br/> |匯出至第 3 方 Azure blob 時，才建立。 如果完全成功匯出，將會建立檔案。 如果失敗，或部分將不會建立成功檔案。 會在根資料夾中，讓上不同匯出批次/工作階段狀態的自動化的追蹤建立檔案。 這是空的檔案。 它的名稱： TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime.txt。  <br/> |
    
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [檢視批次歷程記錄及匯出過去的結果](view-batch-history-and-export-past-results.md)
   

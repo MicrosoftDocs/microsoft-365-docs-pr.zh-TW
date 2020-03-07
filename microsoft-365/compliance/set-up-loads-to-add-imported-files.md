@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: '檢閱步驟將匯入的檔案新增至最後一個定義的負載或檔案，再執行 Office 365 進階電子文件探索中的相關性訓練的批次。  '
-ms.openlocfilehash: e9179878d085840fcfb93dacc79ac3f776f1f041
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3dd302e107b10726dd0110dfcb19bf59a3703add
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081092"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557763"
 ---
-# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>設定載入要在 Office 365 進階電子文件探索中新增匯入的檔案
+# <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>設定載入要在進階電子文件 （傳統） 中新增匯入的檔案
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -136,9 +136,9 @@ ms.locfileid: "42081092"
     
 3. 按一下 [**繼續訓練**。
     
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [定義問題並指派使用者](define-issues-and-assign-users.md)
   

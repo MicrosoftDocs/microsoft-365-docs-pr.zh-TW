@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: '了解要檢視 Office 365 進階電子文件探索，包括顯示的工作選項的定義中的分析處理的結果。  '
-ms.openlocfilehash: bac173beebe2fdf3d07122bfca04cbaaee6410e6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: adee00d2b7826827cc14f4ca945952f4892511a1
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069176"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557621"
 ---
-# <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中檢視分析結果
+# <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>在進階電子文件 （傳統） 中檢視分析結果
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -75,9 +75,9 @@ ms.locfileid: "42069176"
   
 ![近似重複項目和電子郵件執行緒](../media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [了解文件相似性](understand-document-similarity-in-advanced-ediscovery.md)
   

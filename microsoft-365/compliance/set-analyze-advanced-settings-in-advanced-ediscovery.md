@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: '了解如何設定進階的設定，包括近似重複項目、 電子郵件執行緒和佈景主題，Office 365 進階 eDiscovery 中分析處理程序。 '
-ms.openlocfilehash: f2f882f5c5b2bbaf3144d3979455387a4471280c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: effb573165abea0d4f9939fbf7c367cbdf333f57
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081263"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557793"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>設定分析進階設定 Office 365 進階電子文件中
 
@@ -48,7 +48,7 @@ ms.locfileid: "42081263"
     
 ## <a name="see-also"></a>另請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [了解文件相似性](understand-document-similarity-in-advanced-ediscovery.md)
   

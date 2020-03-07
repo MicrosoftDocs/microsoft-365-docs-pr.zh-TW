@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ea6cc92fe84cc39502e3db97361ff9d294fdfca2
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: adb6423d5c014b5f02fc272f9653abebc14cf543
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112657"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557571"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的應用程式
 
@@ -23,7 +23,7 @@ ms.locfileid: "41112657"
 
 Microsoft 包含特定索引鍵的應用程式，以及參與 Microsoft 受管理的電腦所需的 Microsoft 365 E3 或 E5 授權。 不過，即使我們將提供這些應用程式，您仍會有特定的職責和動作，以完成。
 
-您也可以部署其他非 Microsoft 應用程式至您的使用者透過公司入口網站或所需的背景安裝的自助，所有使用 Microsoft Intune 部署管線。 如果您有您可以移轉您需要自行; 這些應用程式的專業知識如果沒有 Microsoft 諮詢服務 (MCS) 或非 Microsoft 廠商將樂於以協助您進行封裝和移轉的專案。 如需使用 MCS 的詳細資訊，請參閱[Working with Microsoft 諮詢服務](apps-MCS.md)。
+您也可以部署其他非 Microsoft 應用程式至您的使用者透過公司入口網站或所需的背景安裝的自助，所有使用 Microsoft Intune 部署管線。 如果您有專業知識，您可以移轉您需要自行; 這些應用程式或者，Microsoft 諮詢服務 (MCS) 或非 Microsoft 廠商將會是不悅以協助您進行封裝和移轉的專案。 如需使用 MCS 的詳細資訊，請參閱[Working with Microsoft 諮詢服務](apps-MCS.md)。
 
 
 ## <a name="apps-provided-by-microsoft"></a>Microsoft 所提供的應用程式
@@ -44,7 +44,7 @@ Microsoft 會提供包含 Office 365 專業增強版應用程式的部署、 更
 
 ## <a name="apps-you-provide"></a>您提供的應用程式
 
-當然，您可能有其他您需要的企業營運的應用程式的數量。 這些可以可以只部署至 Microsoft 受管理的電腦裝置使用 Microsoft Intune 部署管線。 如果應用程式需要它可以讓他們封裝廠商 （這可能是在非 Microsoft 供應商或 Microsoft 諮詢服務 (MCS)），或如果您有方法，您可以封裝他們自己。 然後將這些套件新增至 Microsoft 受管理電腦入口網站，並將它們指派給 Azure Active Directory 群組，以觸發部署。 
+當然，您可能有其他您需要的企業營運的應用程式的數量。 這些可以只部署至 Microsoft 受管理的電腦裝置使用 Microsoft Intune 部署管線。 如果應用程式需要它可以讓他們封裝廠商 （這可能是在非 Microsoft 供應商或 Microsoft 諮詢服務 (MCS)），或如果您有方法，您可以封裝他們自己。 然後將這些套件新增至 Microsoft 受管理電腦入口網站，並將它們指派給 Azure Active Directory 群組，以觸發部署。 
 
 您用來評估您的應用程式和探索哪些項目查詢準備好讓移轉至 Microsoft Intune 和哪些項目可能需要一些，如果您目前使用 Microsoft 端點 Configuration Manager 部署您的應用程式，可提供 Microsoft 受管理的電腦調整。
 

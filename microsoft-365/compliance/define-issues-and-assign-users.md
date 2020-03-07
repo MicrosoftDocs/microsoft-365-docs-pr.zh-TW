@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: 了解如何新增或編輯的問題，包括將使用者指派給它，或刪除此問題： 在 Office 365 進階電子文件探索中 eDiscovery 案例。
-ms.openlocfilehash: d0777f6829944a6f64c71bda805edd1b5d55de4b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5c7c15b765a0c129e8a58533951b6569b8766b45
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075885"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556971"
 ---
-# <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>定義問題及指派 Office 365 進階電子文件探索中的使用者
+# <a name="define-issues-and-assign-users-in-advanced-ediscovery-classic"></a>定義問題及指派進階電子文件 （傳統） 中的使用者
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -76,7 +76,7 @@ ms.locfileid: "42075885"
     
 ## <a name="see-also"></a>另請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [設定負載以新增匯入的檔案](set-up-loads-to-add-imported-files.md)
   

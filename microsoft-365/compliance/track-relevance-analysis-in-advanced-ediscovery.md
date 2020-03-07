@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: '了解如何檢視，並解譯結果在 Office 365 進階電子文件探索案例問題與相關性訓練狀態。  '
-ms.openlocfilehash: 224a817e662462d0c51650e7bd364e717dbfbd62
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9c15bd285848d1906243137bfba451b19900b28e
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069482"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557673"
 ---
-# <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中追蹤相關性分析
+# <a name="track-relevance-analysis-in-advanced-ediscovery-classic"></a>追蹤進階電子文件 （傳統） 中的相關性分析
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -170,9 +170,9 @@ ms.locfileid: "42069482"
     
 - **由相關性分數的通訊群組**： 檔案在暗灰色向左顯示如下的截止分數。 工具提示顯示的相關性分數，以及相關的檔案百分比檢閱檔案中設定關聯的總檔案中。
     
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [了解相關性評估](assessment-in-relevance-in-advanced-ediscovery.md)
   

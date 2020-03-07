@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: 如何步驟以匯入內容，不會儲存在 O365 到 Azure blob，讓它可以與 AeD 分析
-ms.openlocfilehash: 7a06bff3abe70e58ab08edcc456bc167229b05f2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 529eb21117ed2cdfbb7f02caf058dbc6863d2d9b
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072980"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557893"
 ---
-# <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>匯入非 Office 365 進階電子文件探索分析內容
+# <a name="import-non-office-365-content-for-advanced-ediscovery-classic-analysis"></a>匯入非 Office 365 進階電子文件 （傳統） 分析內容
 
 並非所有文件，您可能需要與 Office 365 進階電子文件探索分析會存在於 Office 365 中。 使用非 Office 365 內容匯入您可以上傳文件，不到案例的連結、 Azure 儲存體 blob live （除了 PST 檔案） 的 Office 365 中並分析其與進階電子文件的進階電子文件中的功能。 此程序將示範如何將非 Office 365 文件移入進階電子文件探索進行分析。
   

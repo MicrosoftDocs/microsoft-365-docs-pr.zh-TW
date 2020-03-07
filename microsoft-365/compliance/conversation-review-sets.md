@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 01f2e6f9ceccd1903f62e8661f2cfc8f4cc2b47e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ca8389bf6a7622d4db98bdf7422aea85942e8978
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078115"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556771"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>檢閱在進階電子文件中的交談 
 
@@ -39,7 +39,7 @@ ms.locfileid: "42078115"
 
 - 匯出個別郵件或執行緒的交談
 
-## <a name="terminology"></a>術語
+## <a name="terminology"></a>詞彙
 
 以下是一些定義，以協助您開始使用交談重建。
 
@@ -79,8 +79,6 @@ ms.locfileid: "42078115"
   
 3. 項目已新增至檢閱設定之後，您可以檢閱來自*CRC1*的所有個別郵件。 
 
-
-
 若要啟用交談擷取：
   
 1. 進階電子文件探索案例的 [**搜尋**] 索引標籤上選擇 [搜尋]，，然後按一下彈出式頁面上的 [**新增]，檢閱設定**。
@@ -91,7 +89,7 @@ ms.locfileid: "42078115"
   
 4. 在 [**工作**] 索引標籤上的 [**新增]，檢閱設定**工作已完成之後，您可以開始檢閱交談。
 
-## <a name="step-4-review-conversations-in-the-review-set"></a>步驟 4： 檢閱檢閱組中的交談
+## <a name="step-4-review-and-export-conversations-in-a-review-set"></a>步驟 4： 檢閱和匯出檢閱集合中的交談
 
 已處理並新增至檢閱組內容之後，您可以開始檢閱檢閱集中的資料。 檢閱功能會根據是否內容已新增至標準檢閱組或交談檢閱集不同。 
 
@@ -129,7 +127,6 @@ ms.locfileid: "42078115"
 
 - **重新執行交談轉換：** 當郵件新增至交談檢閱設定時，轉換執行作業時自動建立執行緒的摘要，並加上註解的檢視。 如果交談重建作業失敗時，您可以檢閱集合中的 [**巨集指令 > 建立交談 Pdf**重新執行此工作。
 
-
 #### <a name="exporting-conversations"></a>匯出的交談
 
 在交談中檢閱設定，您可以設定下列選項來匯出交談：
@@ -161,7 +158,7 @@ c. 其他選項
 
 若要深入了解如何檢閱進階電子文件中的案例資料，請參閱下列文章：
 
-- [檢視案例資料](view-documents-in-review-set.md) 
+- [檢視案例資料](view-documents-in-review-set.md)
 
 - [分析案例資料](analyzing-data-in-review-set.md)
 

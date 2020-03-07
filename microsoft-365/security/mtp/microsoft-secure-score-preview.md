@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1039232750e52b3c03cbe7c8190498382c795708
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d4c71b2f3c575f21ee2693c3d371c263813c2324
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087566"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558244"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft 安全分數 （預覽）
 
@@ -92,11 +92,11 @@ Microsoft 安全分數是具有較高的數字，表示所採取的多個改進�
 
 為了協助您更快速地需要的資訊，Microsoft 改進動作會組織成群組：
 
-* 身分識別 （Azure AD 帳戶 & 角色與 Azure ATP 即將推出）
+* 身分識別 （Azure AD 帳戶 & 角色）
 * 資料 (Microsoft Information Protection)
-* 裝置 （Microsoft Defender ATP 裝置）
+* 裝置 （現在沒有改進動作）
 * 應用程式 （電子郵件和雲端應用程式，包括 Office 365 和 Microsoft Cloud App Security）
-* 基礎結構 （Azure 的資源）
+* 基礎結構 （現在沒有改進動作）
 
 在 [Microsoft 安全分數概觀] 頁面中，您可以看到點分割的方式這些群組與何種點可用之間。 [概觀] 頁面上也是以取得總分基準比較，與您安全分數的歷史趨勢的全面檢視的位置，並可以採取來改善您的分數的改進動作的優先順序。
 

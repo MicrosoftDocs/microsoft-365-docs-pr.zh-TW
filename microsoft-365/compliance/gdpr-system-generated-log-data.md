@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ea13a44a6d4da54b83ee1ddccb2bd8c46f82c943
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35ce6cfc42bc6cedcccdd1a2d066e1a67ccd5928
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596360"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557933"
 ---
 # <a name="additional-steps-to-export-system-generated-log-data"></a>匯出系統所產生記錄資料的其他步驟
 
@@ -35,6 +35,6 @@ ms.locfileid: "41596360"
 
 ## <a name="learn-more"></a>深入了解
 
-[Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+[Microsoft 信任中心](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 
 

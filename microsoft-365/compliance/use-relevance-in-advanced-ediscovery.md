@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: '了解 Office 365 進階電子文件探索，包括工作流程和指導方針和訓練與檔案的檢閱步驟中的相關性模組。  '
-ms.openlocfilehash: 0b160a5b251f4be7d23ef24a79164b824fe65b7f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5cb20d140e9369d6eccccb6936740030e6b5ca41
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080710"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557631"
 ---
-# <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>在 Office 365 進階電子文件探索中使用相關性模組
+# <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>在進階電子文件 （傳統） 中使用相關性模組
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -131,9 +131,9 @@ ms.locfileid: "42080710"
 > [!NOTE]
 > 某些選項可能都維持在已停用之後解除鎖定為不受支援之程序中使用點。 
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [了解相關性評估](assessment-in-relevance-in-advanced-ediscovery.md)
   

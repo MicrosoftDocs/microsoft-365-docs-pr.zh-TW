@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我們持續正在新增至 Microsoft 365 合規性中心的新功能、 修正的問題我們了解，並變更根據您的意見反應。 了解我們已經被最本月多。
-ms.openlocfilehash: 042e95d19ef44eef8dfdfef24a996606c9d0e00c
-ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
+ms.openlocfilehash: 1f92267e9f0e7ed720983ebe58e524485a130506
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42552033"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557584"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>What's new in Microsoft 365 合規性中心
 
@@ -36,7 +36,7 @@ ms.locfileid: "42552033"
 
 ### <a name="insider-risk-management-is-officially-released"></a>正式發行測試人員風險管理
 
-請擊鼓，請...]測試人員風險管理是現在可具有下列訂閱的組織：
+請擊鼓，請...]<br>測試人員風險管理是現在可具有下列訂閱的組織：
 
 - [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) （付費或試用版）
 - Microsoft 365 企業版 E3 訂用帳戶包含[Microsoft E5 合規性的附加元件](https://go.microsoft.com/fwlink/?linkid=2120432)
@@ -47,7 +47,7 @@ ms.locfileid: "42552033"
 
 ### <a name="records-management"></a>記錄管理
 
-將所有的記錄管理功能帶下單一雨傘這個新的解決方案。 重點包括的記錄 SharePoint 和 OneDrive 的版本設定簡介及證明的記錄處置。
+這個新的解決方案會帶所有記錄管理功能，在單一雨傘之下。 重點包括的記錄 SharePoint 和 OneDrive 的版本設定簡介及證明的記錄處置。
 
 ![在 Microsoft 365 合規性中心中的記錄管理] 頁面](../media/mcc-records-management-page.png)
 
@@ -55,7 +55,7 @@ ms.locfileid: "42552033"
 
 ### <a name="solution-spotlight-data-connectors-for-facebook-and-twitter"></a>解決方案焦點： Facebook 和 Twitter 資料連接器
 
-資料連接器[發行上個月](#just-launched)，我們要尋找您測試下列連接器來驗證其運作如預期般出中的協助。
+資料連接器[發行上個月](#just-launched)，我們要尋找您測試出下列連接器中的協助。
 
 - [Facebook 商務頁面](archive-facebook-data-with-sample-connector.md)。 匯入和封存 Facebook 商務頁面至 Microsoft 365 的資料。 有所幫助例如記錄管理和 eDiscovery 的合規性解決方案。
 - [Twitter](archive-twitter-data-with-sample-connector.md)。 匯入和封存 Twitter 至 Microsoft 365 的資料。 有所幫助例如記錄管理和 eDiscovery 的合規性解決方案。

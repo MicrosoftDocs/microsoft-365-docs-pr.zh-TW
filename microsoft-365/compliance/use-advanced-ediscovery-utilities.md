@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
 description: '了解 Office 365 進階電子文件探索，包括大小寫的記錄檔中的公用程式、 清除資料、 處理錯誤，修改相關性和透明度分析。  '
-ms.openlocfilehash: 3952d1ec58b3f55f997079cec16f16ddb301ed89
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ce8eb00382bd6ff0514dfef99d18a8e4b2679cec
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601330"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557653"
 ---
-# <a name="use-office-365-advanced-ediscovery-utilities"></a>使用 Office 365 進階電子文件探索公用程式
+# <a name="use-advanced-ediscovery-classic-utilities"></a>使用進階電子文件 （傳統） 公用程式
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -107,9 +107,9 @@ ms.locfileid: "41601330"
     
 5. 按一下 [**透明度分析**。 完成時，會顯示檔案的透明度分析報告，它會顯示特別標示的關鍵字色彩與整體的相關性分數的相互關聯。
     
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [定義案例與租用戶設定](define-case-and-tenant-settings-in-advanced-ediscovery.md)
 

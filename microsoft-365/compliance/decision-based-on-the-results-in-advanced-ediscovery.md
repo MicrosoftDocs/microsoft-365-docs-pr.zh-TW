@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: '了解如何在 Office 365 進階電子文件探索中的決定] 索引標籤提供資料，可協助您決定正確的檢閱一組案例檔案大小。 '
-ms.openlocfilehash: b0dd68c294b4555bcf7c9b2cb1c6db455af32e7d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6d515305b01b0273bb2acffaad19c497fc5c82d2
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076242"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557541"
 ---
-# <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Office 365 進階電子文件探索中的結果為基礎的決策
+# <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>進階電子文件 （傳統） 中的結果為基礎的決策
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -53,9 +53,9 @@ ms.locfileid: "42076242"
     
 展開 [詳細資料] 窗格會顯示其他詳細資料。 集合圖表目錄中的檔案不包括空白或不是很明確的檔案。 家庭檔案數字代表不載入相關性，但仍會計算在內系列的一部分的檔案。
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Office 365 進階電子文件探索](office-365-advanced-ediscovery.md)
+[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
   
 [了解相關性評估](assessment-in-relevance-in-advanced-ediscovery.md)
   
