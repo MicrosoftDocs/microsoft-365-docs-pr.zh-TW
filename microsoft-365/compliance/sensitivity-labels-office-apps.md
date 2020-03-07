@@ -1,5 +1,5 @@
 ---
-title: 在 Office 應用程式使用敏感度標籤
+title: 在 Office 應用程式中使用敏感度標籤
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解使用者如何使用桌面、 Office 應用程式的行動電話，以及網頁的 Office 應用程式的 Office 應用程式中使用敏感度標籤運作。 了解哪些應用程式支援敏感度標籤。
-ms.openlocfilehash: 5ca3d7b68f931b7596bc61a587d5e4199aa5f70f
-ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
+ms.openlocfilehash: 759c944bc72c39d1fd118dcb1b3515b5ede79687
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42225501"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42548182"
 ---
-# <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式使用敏感度標籤
+# <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
 當您從 Microsoft 365 合規性中心或對等標示中心[發佈](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)敏感度標籤時，便會開始來分類及保護資料，建立或編輯使用者的 Office 應用程式中會出現。
 
@@ -66,7 +66,7 @@ ms.locfileid: "42225501"
 |[提供自訂的技術] 頁面上的 [說明] 連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[標記內容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 預覽： 在[Office 測試人員](https://office.com/insider)            | 預覽： 在[Office 測試人員](https://office.com/insider)        | 在 [檢閱] 下   | 在 [檢閱] 下         | 在 [檢閱] 下                                                        |
+|[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 預覽： 在[每月通道 （已設定目標）](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus)            | 預覽： 在[Office 測試人員](https://office.com/insider)        | 在 [檢閱] 下   | 在 [檢閱] 下         | 在 [檢閱] 下                                                        |
 |系統管理員[檢視標籤使用狀況與標籤分析](label-analytics.md)並傳送資料                      | 在 [檢閱] 下            | 在 [檢閱] 下        | 在 [檢閱] 下   | 在 [檢閱] 下         | 在 [檢閱] 下                                                        |
 |[要求使用者將標籤套用至電子郵件和文件](sensitivity-labels.md#what-label-policies-can-do)   | 在 [檢閱] 下            | 在 [檢閱] 下        | 在 [檢閱] 下   | 在 [檢閱] 下         | 在 [檢閱] 下                                                        |
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 預覽： 在[Office 測試人員](https://office.com/insider)                                  | 在 [檢閱] 下 | 在 [檢閱] 下 | 在 [檢閱] 下 | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |

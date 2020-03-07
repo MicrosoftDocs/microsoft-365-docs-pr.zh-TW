@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: 我們持續正在新增至 Microsoft 365 合規性中心的新功能、 修正的問題我們了解，並變更根據您的意見反應。 了解我們已經被最本月多。
-ms.openlocfilehash: 2140b2b529ccec9a4d081a2e7b6ea1fdb7fb900f
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.openlocfilehash: 042e95d19ef44eef8dfdfef24a996606c9d0e00c
+ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106806"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42552033"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>What's new in Microsoft 365 合規性中心
 
@@ -31,6 +31,36 @@ ms.locfileid: "42106806"
 > [!TIP]
 > 感興趣其他系統管理中心中運作？ 請參閱下列文章：<br>[What's new in Microsoft 365 系統管理中心](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[什麼是 SharePoint 系統管理中心新增](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
 請造訪[Microsoft 365 藍圖](https://www.microsoft.com/en-us/microsoft-365/roadmap)以了解 Microsoft 365 功能已啟動、 已推出、 開發中、 已取消或先前發行。
+
+## <a name="february-2020"></a>2020 年 2 月
+
+### <a name="insider-risk-management-is-officially-released"></a>正式發行測試人員風險管理
+
+請擊鼓，請...]測試人員風險管理是現在可具有下列訂閱的組織：
+
+- [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) （付費或試用版）
+- Microsoft 365 企業版 E3 訂用帳戶包含[Microsoft E5 合規性的附加元件](https://go.microsoft.com/fwlink/?linkid=2120432)
+
+設定的標題我們在自預覽版本中，包括[新的角色群組](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)和[整個解決方案的設定](insider-risk-management-configure.md#step-4-required-configure-insider-risk-settings)後所進行的一些加強功能。
+
+當然，請提供意見反應當您使用解決方案，讓我們才能繼續改進。
+
+### <a name="records-management"></a>記錄管理
+
+將所有的記錄管理功能帶下單一雨傘這個新的解決方案。 重點包括的記錄 SharePoint 和 OneDrive 的版本設定簡介及證明的記錄處置。
+
+![在 Microsoft 365 合規性中心中的記錄管理] 頁面](../media/mcc-records-management-page.png)
+
+[深入了解記錄管理](records-management.md)
+
+### <a name="solution-spotlight-data-connectors-for-facebook-and-twitter"></a>解決方案焦點： Facebook 和 Twitter 資料連接器
+
+資料連接器[發行上個月](#just-launched)，我們要尋找您測試下列連接器來驗證其運作如預期般出中的協助。
+
+- [Facebook 商務頁面](archive-facebook-data-with-sample-connector.md)。 匯入和封存 Facebook 商務頁面至 Microsoft 365 的資料。 有所幫助例如記錄管理和 eDiscovery 的合規性解決方案。
+- [Twitter](archive-twitter-data-with-sample-connector.md)。 匯入和封存 Twitter 至 Microsoft 365 的資料。 有所幫助例如記錄管理和 eDiscovery 的合規性解決方案。
+
+在您設定並驗證這些連接器之後，請提供意見反應與我們連絡相關功能順利，哪些沒有，我們可以怎麼做以改善的經驗。
 
 ## <a name="january-2020"></a>2020 年 1 月
 
@@ -140,7 +170,7 @@ ms.locfileid: "42106806"
 |資料外洩防護|資料外洩防護 <br/> https://protection.office.com/datalossprevention |資料外洩防護 <br/> https://compliance.microsoft.com/datalossprevention |[資料外洩防護概觀](data-loss-prevention-policies.md)|
 |資料主體要求 |資料隱私權 > 資料主體要求 <br/> https://protection.office.com/dsrcases |資料主體要求 <br/> https://compliance.microsoft.com/datasubjectrequest |[管理 GDPR 資料主體要求使用 DSR 案例工具](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |電子文件探索|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery # A0 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理電子文件探索案例](ediscovery-cases.md) |
-|事件|記錄管理 # A0 事件 <br/> https://protection.office.com/events |記錄管理 > 事件] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[事件導向保留的概觀](event-driven-retention.md)|
+|Events|記錄管理 # A0 事件 <br/> https://protection.office.com/events |記錄管理 > 事件] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[事件導向保留的概觀](event-driven-retention.md)|
 |檔案計畫|記錄管理 > 檔案計劃 <br/> https://protection.office.com/fileplan |記錄管理 > 檔案計劃] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[檔案計劃管理員的概觀](file-plan-manager.md)|
 |匯入 PST 檔案|資訊控管 > 匯入 PST 檔案 <br/> https://protection.office.com/importV2 |資訊控管 > 匯入] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[匯入組織的 PST 檔案的概觀](importing-pst-files-to-office-365.md)|
 |標籤活動總管|資訊控管 > 標籤活動總管 <br/> https://protection.office.com/labelexplorer |資料分類 > 活動總管] 索引標籤 <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[檢視套用標籤的內容上的活動 (預覽)](data-classification-activity-explorer.md)|
