@@ -1,9 +1,11 @@
 ---
 title: 轉換 Microsoft 365 商務版雲端解決方案提供者訂閱 
-description: 了解如何將 Microsoft 365 商務版雲端解決方案提供者訂閱從預覽轉換到 GA。 
+description: 了解如何轉換上市 (GA) 的 Microsoft 365 商務版雲端解決方案提供者訂閱從預覽。
 author: jasongroce
 f1.keywords:
 - NOCSH
+ms.custom:
+- seo-marvel-mar
 ms.author: jasgro
 ms.topic: article 
 ms.prod: microsoft-365-business
@@ -11,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商務版, Microsoft 365, SMB, 轉換雲端解決方案提供者訂閱
 ms.date: 11/01/2017
-ms.openlocfilehash: 7d8e04a0136f86d3c4bb51208081fd1dcbecf59d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 77b7b474a5ad17db58e283ea61b074c959905d1b
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42057165"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42560773"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>轉換 Microsoft 365 商務版雲端解決方案提供者訂閱
 

@@ -18,19 +18,19 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
 description: 了解 Microsoft 365 商務版將使用者的裝置遺失或遭竊時保護工作檔案中可用的設定。
-ms.openlocfilehash: 244e4773f1efa9548dd2126e03a007aefb840b40
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 4371acd53da902aa4dea93e7b8bd087d1cf27100
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42550160"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42561643"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>在行動裝置遺失或遭竊時保護工作檔案
 
@@ -42,7 +42,7 @@ ms.locfileid: "42550160"
   
 |||
 |:-----|:-----|
-|設定  <br/> |說明  <br/> |
+|設定  <br/> |描述  <br/> |
 |在下列天數之後刪除非作用中裝置上的工作檔案  <br/> |如果裝置不會用於您在此處指定的天數，儲存在裝置上的任何工作檔案會自動刪除。  <br/> |
 |強制使用者將所有工作檔案儲存到商務用 OneDrive  <br/> |如果**開啟**此設定時，只可以使用儲存的工作檔案的位置是商務用 OneDrive。  <br/> |
 |加密工作檔案  <br/> |保持**在**此設定，以便透過加密功能保護工作檔案。 即使裝置遺失或遭竊，任何人可以讀取您的公司資料。  <br/> |

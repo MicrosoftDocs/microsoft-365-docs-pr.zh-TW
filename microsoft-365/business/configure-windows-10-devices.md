@@ -20,19 +20,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
 description: 了解設定套用至所有使用者在您組織中，確定它們連線的安全方式的 Windows 10 裝置原則。
-ms.openlocfilehash: 9b690d34df6270731ea08bca1e59483d697b04d5
-ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
+ms.openlocfilehash: 1d25e51b1f61f67ca2ebe6180d6c280c23facaa5
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42417259"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42560633"
 ---
 # <a name="configure-windows-10-devices"></a>設定 Windows 10 裝置
 

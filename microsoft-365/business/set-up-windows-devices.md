@@ -19,18 +19,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 了解如何設定 Windows 裝置執行 Windows 10 專業版 Microsoft 365 商務版使用者，啟用集中式的管理和安全性控制。
-ms.openlocfilehash: 62d909b1e5658131f9381d1a800a70fad6e16cab
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 6ecc45f825a783d9d47c4b069a6021143d96597c
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42550010"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42561153"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>為 Microsoft 365 商務版使用者設定 Windows 裝置
 

@@ -19,19 +19,19 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
 description: 了解可讓您管理使用者如何存取 Office 應用程式保護原則，以及工作從行動裝置的檔案。
-ms.openlocfilehash: 21e83114664d06aaeb27b08d9f4e2153eea02030
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 870706103a6c05e2e193c80f7a586eab529bb1e7
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42550310"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42561493"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>管理使用者如何在行動裝置上存取 Office 文件
 
@@ -43,7 +43,7 @@ ms.locfileid: "42550310"
   
 |||
 |:-----|:-----|
-|設定  <br/> |說明  <br/> |
+|設定  <br/> |描述  <br/> |
 |需要 PIN 或指紋才能存取 Office App  <br/> |如果**開啟**此設定時，使用者必須提供另一種形式的驗證，除了使用者名稱和密碼，才能在其行動裝置上使用 Office 應用程式。  <br/> |
 |在登入失敗達下列次數時重設 PIN  <br/> |為了避免未經授權的使用者隨機猜測 PIN，當達到您指定的輸入錯誤次數時將會重設 PIN。  <br/> |
 |在 Office App 閒置下列時間之後要求使用者重新登入  <br/> |此設定可決定多久使用者可閒置之前提示這些再次登入。  <br/> |

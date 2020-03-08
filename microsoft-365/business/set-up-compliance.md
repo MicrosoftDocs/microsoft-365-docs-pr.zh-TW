@@ -16,17 +16,17 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 description: 設定符合性功能，以防止資料遺失，並協助保護您和您客戶的敏感資訊的安全。
-ms.openlocfilehash: 4c8efc4ca96f2db7bc4d1592ad3fdc85dfb6b3b5
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 6f4520b052c2e7acb8748d3c9d6e26777cb56d4b
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42550050"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42561233"
 ---
 # <a name="set-up-compliance-features"></a>設定合規性功能
 

@@ -17,18 +17,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: 了解如何使用 Microsoft 365 商務版來管理，它們還原成原來的設定在購買 Windows 10 裝置的原廠重設。
-ms.openlocfilehash: bbdd5c4a4ba2d7deb11c4171db68bdb052546a17
-ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
+ms.openlocfilehash: 3705448602cdc22e9fb5843c46d5bdc1c4dbdb2e
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42547784"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42561293"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>將 Windows 10 裝置重設成出廠預設值
 
