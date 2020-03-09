@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 中的進階稽核提供新的稽核功能，以協助組織進行鑑識與合規性調查。
-ms.openlocfilehash: 7d672dd8a84107d8d4561ae8982114abc4e01af9
-ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
+ms.openlocfilehash: bdde2552d2c5ccd790740e1f9077e5d26391e920
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42370482"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42551826"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 中的進階稽核
 
 Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and-compliance.md)，可讓組織深入了解 Microsoft 365 中多種不同服務的多個類型的稽核活動。 現在隨著 Microsoft 365 中進階稽核的推出，我們會加入新的稽核功能，以協助組織進行鑑識與合規性調查。
 
 > [!NOTE]
-> 進階稽核可供具有 Office 365 或 Microsoft 365 企業版 E5 訂閱的組織使用。 此外，當進階稽核功能需要使用每個使用者授權時，您可以將 Microsoft 365 E5 合規性附加元件訂閱指派給使用者，針對稽核記錄和存取調查重要事件的長期保留也是如此。
+> 進階稽核可供具有 Office 365 E5 或 Microsoft 365 企業版 E5 訂閱的組織使用。 此外，當進階稽核功能需要針對每位使用者進行授權時，您可以將 Microsoft 365 E5 合規性附加元件授權指派給使用者，而針對稽核記錄和存取重要調查事件的長期保留也是如此。
 
 本文提供這些進階稽核功能的概觀。
 
