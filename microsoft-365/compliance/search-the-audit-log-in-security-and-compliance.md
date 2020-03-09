@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 0dc9173c03d93ebe79544f8d417842b407025054
-ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
+ms.openlocfilehash: 6d83b9af94ecb086d933cd00476ca84e87d6db2e
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42277220"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42562068"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -79,14 +79,14 @@ ms.locfileid: "42277220"
   > [!IMPORTANT]
   > 如果您在安全性與合規性中心的 [權限]**** 頁面上，將 [僅限檢視稽核記錄] 或 [稽核記錄] 角色指派給使用者，使用者將無法搜尋 Office 365 稽核記錄。 您必須在 Exchange Online 中指派權限。 這是因為用來搜尋稽核記錄的基礎 Cmdlet 是 Exchange Online Cmdlet。
 
-- 當使用者或系統管理員執行稽核的活動時，稽核記錄會隨即產生，並儲存在您組織的 Office 365 稽核記錄中。 稽核記錄的保留時間及可在稽核記錄中搜尋的時間長度，取決於您的 Office 365 或 Microsoft 365 訂閱，具體來說，取決於指派給特定使用者的授權類型。
+- 當使用者或系統管理員執行稽核的活動時，稽核記錄會隨即產生，並儲存在您組織的 Office 365 稽核記錄中。 稽核記錄的保留時間及可在稽核記錄中搜尋的時間長度，取決於您的 Office 365 或 Microsoft 365 企業版訂閱，具體來說，取決於指派給特定使用者的授權類型。
 
-  - **Office 365 和 Microsoft 365 E3：** 稽核記錄會保留 90 天。 這表示您可以搜尋稽核記錄來尋找過去 90 天中執行的活動。
+  - **Office 365 E3 或 Microsoft 365 E3：** 稽核記錄會保留 90 天。 這表示您可以搜尋稽核記錄來尋找過去 90 天中執行的活動。
 
     > [!NOTE]
     > 即使信箱稽核預設為開啟，您可能會發現某些使用者的信箱稽核事件在安全性與合規性中心的稽核記錄搜尋或透過 Office 365 管理活動 API 找不到。 如需詳細資訊，請參閱[信箱稽核記錄的相關資訊](enable-mailbox-auditing.md#more-information)。
 
-  - **Office 365 或 Microsoft 365 E5 或擁有 Microsoft 365 E5 合規性附加元件授權的使用者：** Azure Active Directory、Exchange 和 SharePoint 活動的稽核記錄依預設會保留一年。 組織也可建立稽核記錄保留原則，以保留其他服務中的活動稽核記錄，最長一年。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md)。
+  - **Office 365 E5 或 Microsoft 365 E5 或擁有 Microsoft 365 E5 合規性附加元件授權的使用者：** Azure Active Directory、Exchange 和 SharePoint 活動的稽核記錄依預設會保留一年。 組織也可建立稽核記錄保留原則，以保留其他服務中的活動稽核記錄，最長一年。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md)。
 
     > [!NOTE]
     > 如果您的組織有參與一年期稽核記錄保留的私人預覽計畫，則將不會重設一般發行日期之前產生的稽核記錄保留期間。
@@ -340,7 +340,7 @@ ms.locfileid: "42277220"
 |(無)|FileModifiedExtended|這與「已修改檔案」(FileModified) 活動相關聯。 當相同人員持續修改某個檔案一段時間 (最多 3 小時)，便會記錄 FileModifiedExtended 事件。 <br/><br/> 記錄 FileModifiedExtended 事件的目的在於減少持續修改某個檔案時，記錄 FileModified 事件的數目。 這有助於減少多個 FileModified 記錄的干擾，以了解哪些基本上是同樣的使用者活動，並讓您專注在初始 (且更重要的) FileModified 事件。|
 |已移動檔案|FileMoved|使用者將文件從它在網站上目前的位置移動至新的位置。|
 |(無)|FilePreviewed|使用者預覽 SharePoint 或商務用 OneDrive 網站上的檔案。 這些事件通常發生在單一活動中有龐大數量時，例如檢視影像資源庫。|
-|已執行的搜尋查詢|SearchQueryPerformed|使用者或系統帳戶在 SharePoint 或商務用 OneDrive 中執行搜尋。 在服務帳戶執行搜尋查詢的一些常見案例，包含將電子文件探索保留或保留原則套用至網站和 OneDrive 帳戶，以及將保留或敏感度標籤自動套用至網站內容的時刻。 在這些情況下，記錄在稽核記錄 [使用者] 欄位中的服務帳戶名稱為 **app\@sharepoint**。 </br></br> **提示：**[已執行的搜尋查詢] 活動稽核記錄中的 [ApplicationDisplayName] 和 [EventData] 欄位可協助您識別觸發此事件的案例或服務。|
+|已執行的搜尋查詢|SearchQueryPerformed|使用者或系統帳戶在 SharePoint 或商務用 OneDrive 中執行搜尋。 在服務帳戶執行搜尋查詢的一些常見案例，包含將電子文件探索保留和保留原則套用至網站和 OneDrive 帳戶，以及將保留或敏感度標籤自動套用至網站內容。|
 |已回收所有檔案次要版本|FileVersionsAllMinorsRecycled|使用者從檔案的版本歷程記錄中刪除所有的次要版本。 已刪除的版本會移至網站資源回收筒。|
 |已回收所有檔案版本|FileVersionsAllRecycled|使用者從檔案版本歷程記錄中刪除所有版本。 已刪除的版本會移至網站資源回收筒。|
 |已回收檔案版本|FileVersionRecycled|使用者從檔案版本歷程記錄中刪除版本。 已刪除的版本會移至網站資源回收筒。|
@@ -350,13 +350,28 @@ ms.locfileid: "42277220"
 |已檢視頁面|PageViewed|使用者檢視網站上的檔案。 這不包括使用網頁瀏覽器檢視文件庫中的檔案。|
 |(無)|PageViewedExtended|這與「已檢視頁面」(PageViewed) 活動相關聯。 當相同人員持續檢視某個網頁一段時間 (最多 3 小時)，便會記錄 PageViewedExtended 事件。 <br/><br/> 記錄 PageViewedExtended 事件的目的在於減少持續檢視某個頁面時，記錄 PageViewed 事件的數目。 這有助於減少多個 PageViewed 記錄的干擾，以了解哪些基本上是同樣的使用者活動，並讓您專注在初始 (且更重要的) PageViewed 事件。|
 |用戶端發出的檢視訊號|ClientViewSignaled|使用者的用戶端 (例如網站或行動應用程式) 已發出訊號，指出使用者已檢視指示的頁面。 此活動通常會在頁面的 PagePrefetched 事件之後進行記錄。 <br/><br/>**請注意**：由於 ClientViewSignaled 事件會由用戶端發出訊號，而不是由伺服器，所以伺服器可能不會記錄事件，因此事件可能也不會出現在稽核記錄中。 稽核記錄中的資訊也可能不可靠。 不過，因為用來建立訊號的權杖會驗證使用者的身分識別，因此對應稽核記錄中所列的使用者身分識別會是正確的。 |
-|(無)|PagePrefetched|使用者的用戶端 (例如網站或行動應用程式) 已要求指定頁面在使用者瀏覽至此時，協助改善效能。 記錄此事件的目的是指出頁面內容已對使用者用戶端提供服務。 此事件並非明確指示使用者已瀏覽到此頁面。 <br/><br/> 當用戶端處理頁面內容時 (根據使用者的要求)，ClientViewSignaled 事件應該會隨即產生。 並非所有用戶端都支援指出預先擷取活動，因此某些預先擷取的活動可能會記錄為 PageViewed 事件。|
+|(無)|PagePrefetched|使用者的用戶端 (例如網站或行動應用程式) 已要求指示的頁面在使用者瀏覽至此時，協助改善效能。 記錄此事件的目的是指出頁面內容已對使用者的用戶端提供服務。 此事件並非明確指示使用者已瀏覽到此頁面。 <br/><br/> 當用戶端呈現頁面內容時 (根據使用者的要求)，應該會隨即產生 ClientViewSignaled 事件。 並非所有用戶端都支援指出預先擷取活動，因此某些預先擷取的活動可能會記錄為 PageViewed 事件。|
 ||||
 
+#### <a name="the-appsharepoint-user-in-audit-records"></a>稽核記錄中的 app\@sharepoint 使用者
+
+在部分檔案活動 (以及其他 SharePoint 相關活動) 的稽核記錄中，您可能會注意到執行活動的使用者 ([User] 和 [UserId] 欄位中識別) 為 app@sharepoint。 這表示執行活動的「使用者」是應用程式。 在此情況下，應用程式會獲授與 SharePoint 中的權限，以代表使用者、系統管理員或服務執行整個組織的動作 (例如搜尋 SharePoint 網站或 OneDrive 帳戶)。 這種將權限授與應用程式的程序稱為*僅限 SharePoint 應用程式*存取權。 這表示向 SharePoint 呈現，可執行動作的驗證是由應用程式 (而不是使用者) 所建立。 這就是在特定稽核記錄中識別 app@sharepoint 使用者的原因。 如需詳細資訊，請參閱[授與使用僅限 SharePoint 應用程式的存取權](https://docs.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azureacs) \(英文\)。
+
+例如，app@sharepoint 通常會標示為「執行搜尋查詢」和「存取檔案」事件的使用者。 這是因為當您將保留原則套用至網站和 OneDrive 帳戶時，組織中擁有僅限 SharePoint 應用程式存取權的應用程式會執行搜尋查詢和存取檔案。
+
+以下是一些其他案例，其中 app@sharepoint 在稽核記錄中可能會識別為執行活動的使用者：
+
+- Office 365 群組。 當使用者或系統管理員建立新群組時，系統會產生稽核記錄，以建立網站集合、更新清單，以及將成員新增至 SharePoint 群組。 這些工作是應用程式代表建立群組的使用者執行的。
+
+- Microsoft Teams。 與 Office 365 群組類似，建立新小組時，系統會產生稽核記錄，以建立網站集合、更新清單，以及將成員新增至 SharePoint 群組。
+
+- 合規性功能。 當系統管理員實作合規性功能時，例如保留原則、電子文件探索保留及自動套用靈敏度標籤。
+
+在這些及其他案例中，您也會注意到以 app@sharepoint 作為指定之使用者的稽核記錄是在非常短的時間內建立的，彼此之間的間隔通常為幾秒鐘。 這也表示這些稽核記錄可能是由相同使用者啟動的工作所觸發。 此外，稽核記錄中的 [ApplicationDisplayName] 和 [EventData] 欄位可協助您識別觸發此事件的案例或應用程式。
 
 ### <a name="folder-activities"></a>資料夾活動
 
-下表說明 SharePoint Online 和商務用 OneDrive 的資料夾活動。
+下表說明 SharePoint Online 和商務用 OneDrive 的資料夾活動。 如先前所述，某些 SharePoint 活動的稽核記錄將會指出 app@sharepoint 使用者代表啟動動作的使用者或系統管理員執行了動作。 如需詳細資訊，請參閱[稽核記錄中的 app\@sharepoint 使用者](#the-appsharepoint-user-in-audit-records)。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
@@ -373,7 +388,7 @@ ms.locfileid: "42277220"
 
 ### <a name="sharepoint-list-activities"></a>SharePoint 清單活動
 
-下表說明使用者在 SharePoint Online 中與清單和清單項目互動時的相關活動。
+下表說明使用者在 SharePoint Online 中與清單和清單項目互動時的相關活動。 如先前所述，某些 SharePoint 活動的稽核記錄將會指出 app@sharepoint 使用者代表啟動動作的使用者或系統管理員執行了動作。 如需詳細資訊，請參閱[稽核記錄中的 app\@sharepoint 使用者](#the-appsharepoint-user-in-audit-records)。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
@@ -451,7 +466,7 @@ ms.locfileid: "42277220"
 
 ### <a name="site-permissions-activities"></a>網站權限活動
 
-下表列出在 SharePoint 中指派權限及使用群組提供 (及撤銷) 網站存取權的相關事件。
+下表列出在 SharePoint 中指派權限及使用群組提供 (及撤銷) 網站存取權的相關事件。 如先前所述，某些 SharePoint 活動的稽核記錄將會指出 app@sharepoint 使用者代表啟動動作的使用者或系統管理員執行了動作。 如需詳細資訊，請參閱[稽核記錄中的 app\@sharepoint 使用者](#the-appsharepoint-user-in-audit-records)。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
@@ -475,7 +490,7 @@ ms.locfileid: "42277220"
 
 ### <a name="site-administration-activities"></a>網站管理活動
 
-下表列出 SharePoint Online 中的網站管理工作所產生的事件。
+下表列出 SharePoint Online 中的網站管理工作所產生的事件。 如先前所述，某些 SharePoint 活動的稽核記錄將會指出 app@sharepoint 使用者代表啟動動作的使用者或系統管理員執行了動作。 如需詳細資訊，請參閱[稽核記錄中的 app\@sharepoint 使用者](#the-appsharepoint-user-in-audit-records)。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
@@ -728,10 +743,10 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 |已新增連接器|ConnectorAdded|使用者在頻道中新增連接器。|
 |已新增成員|MemberAdded|小組擁有者將成員新增至小組、頻道或群組聊天。|
 |已新增索引標籤|TabAdded|使用者在頻道中新增索引標籤。|
-|已變更的頻道設定|ChannelSettingChanged|小組成員執行下列活動時會記錄 ChannelSettingChanged 作業。 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>• 變更小組頻道名稱 (**頻道名稱**)。 <br/><br/>• 變更小組頻道描述 (**頻道描述**)。|
-|已變更的組織設定|TeamsTenantSettingChanged|當全域系統管理員 (使用 Microsoft 365 系統管理員中心) 執行下列活動時，系統會將 TeamsTenantSettingChanged 作業記錄下來；請注意，這些活動會影響整個組織的 Microsoft Teams 設定。 如需詳細資訊，請參閱 [Microsoft Teams 的系統管理員設定](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2)。 <br/> 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>• 啟用或停用組織的 Microsoft Teams (**Microsoft Teams**)。 <br/><br/>• 啟用或停用組織中 Microsoft Teams 與商務用 Skype 之間的互通性 (**商務用 Skype 互通性**)。 <br/><br/>• 啟用或停用 Microsoft Teams 用戶端的組織圖檢視 (組織圖檢視 **)。<br/><br/>• 啟用或停用小組成員排程私人會議的能力 (** 私人會議排程 **)。<br/><br/>• 啟用或停用小組成員排程頻道會議的能力 (頻道會議排程**)。 <br/><br/>• 啟用或停用小組會議中的視訊通話 (Skype 視訊會議 **)。<br/><br/>• 啟用或停用組織中 Microsoft Teams 會議中的螢幕共用 (** Skype 會議的螢幕共用 **)。<br/><br/>• 啟用或停用將動畫影像 (稱為 Giphy) 新增至小組交談的能力 (動畫影像**)。 <br/><br/>• 變更組織的內容評等設定 (**評等設定**)。 內容分級會限制交談中可以顯示的動畫影像類型。 <br/><br/>• 啟用或停用小組成員將自訂影像 (稱為自訂 Meme) 從網際網路新增至小組交談的能力 (來自網際網路的自訂影像 **)。<br/><br/>• 啟用或停用小組成員將可編輯影像 (稱為 Sticker) 新增至小組交談的能力 (** 可編輯的影像 **)。<br/><br/>• 啟用或停用小組成員可在 Microsoft Teams 聊天和頻道中使用 Bot 的能力 (整個組織中的 Bot**)。 <br/><br/>• 啟用 Microsoft Teams 的特定 Bot。 這不包括 T-Bot，也就是當組織啟用 Bot 功能時可用的 Teams 說明 Bot (**個人 Bot**)。 <br/><br/>• 啟用或停用小組成員新增擴充功能或分頁的能力 (**擴充功能或分頁**)。 <br/><br/>• 啟用或停用 Microsoft Teams 專屬機器人的側載功能 (**Bot 側載**)。 <br/><br/>• 啟用或停用使用者傳送電子郵件至 Microsoft Teams 頻道的能力 (**頻道電子郵件**)。|
+|已變更的頻道設定|ChannelSettingChanged|小組成員執行下列活動時會記錄 ChannelSettingChanged 作業。 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>* 變更小組頻道名稱 (**頻道名稱**)。 <br/><br/>* 變更小組頻道描述 (**頻道描述**)。|
+|已變更的組織設定|TeamsTenantSettingChanged|當全域系統管理員 (使用 Microsoft 365 系統管理員中心) 執行下列活動時，系統會將 TeamsTenantSettingChanged 作業記錄下來；請注意，這些活動會影響整個組織的 Microsoft Teams 設定。 如需詳細資訊，請參閱 [Microsoft Teams 的系統管理員設定](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2)。 <br/> 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>* 啟用或停用組織的 Microsoft Teams (**Microsoft Teams**)。 <br/><br/>* 啟用或停用組織中 Microsoft Teams 與商務用 Skype 之間的互通性 (**商務用 Skype 互通性**)。 <br/><br/>* 啟用或停用 Microsoft Teams 用戶端的組織圖檢視 (組織圖檢視**)。<br/><br/>* 啟用或停用小組成員排程私人會議的功能 (**私人會議排程**)。<br/><br/>* 啟用或停用小組成員排程頻道會議的功能 (頻道會議排程**)。<br/><br/>* 啟用或停用 Teams 會議中的視訊通話 (Skype 視訊會議**)。<br/><br/>* 啟用或停用組織中 Microsoft Teams 會議中的螢幕共用 (**Skype 會議的螢幕共用**)。 <br/><br/>* 啟用或停用將動畫影像 (稱為 Giphy) 新增至 Teams 交談的功能 (動畫影像**)。<br/><br/>* 變更組織的內容分級設定 (**內容分級**)。內容分級會限制交談中可以顯示的動畫影像類型。<br/><br/>* 啟用或停用小組成員將自訂影像 (稱為自訂 Meme) 從網際網路新增至小組交談的功能 (來自網際網路的自訂影像**)。<br/><br/>* 啟用或停用小組成員將可編輯影像 (稱為 Sticker) 新增至小組交談的功能 (**可編輯的影像**)。<br/><br/>* 啟用或停用小組成員可在 Microsoft Teams 聊天和頻道中使用 Bot 的功能 (整個組織中的 Bot**)。<br/><br/>* 啟用 Microsoft Teams 的特定 Bot。這不包括 T-Bot，也就是當組織啟用 Bot 功能時可用的 Teams 說明 Bot (**個人 Bot**)。<br/><br/>* 啟用或停用小組成員新增擴充功能或分頁的能 (**擴充功能或分頁**)。 <br/><br/>* 啟用或停用 Microsoft Teams 專屬 Bot 的側載功能 (**Bot 側載**)。 <br/><br/>* 啟用或停用使用者傳送電子郵件至 Microsoft Teams 頻道的功能 (**頻道電子郵件**)。|
 |小組中已變更的成員角色|MemberRoleChanged|小組擁有者在小組中變更成員角色。 下列值指出已指派使用者的角色類型。 <br/><br/> **1** - 代表「擁有者」角色。<br/>**2** - 代表「成員」角色。 <br/>**3** - 代表「來賓」角色。 <br/><br/> 成員屬性也會包含貴組織名稱與成員的電子郵件。|
-|已變更的小組設定|TeamSettingChanged|小組擁有者執行下列活動時會記錄 TeamSettingChanged 作業。 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>• 變更小組存取類型。 您可以將小組設定為 [私人] 或 [公開] (**小組存取類型**)。 當小組設為私人時 (此為預設設定)，使用者僅能透過受邀的方式存取該小組。 當小組設為公開時，任何人都可以找到該小組。 <br/><br/>• 變更小組的資訊分類 (**小組分類**)。 <br/> 例如，小組資料可以分類為高業務衝擊、中業務衝擊或低業務衝擊。<br/><br/>• 變更小組名稱 (**小組名稱**)。 <br/><br/>• 變更小組描述 (小組描述**)。 <br/><br/>• 對小組設定所做的任何變更。 小組擁有者只要以滑鼠右鍵按一下按一下所需小組，然後依序按一下 [管理小組]**** 和 [設定]**** 索引標籤，就能在 Teams 用戶端中存取這些設定。稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動顯示所變更設定的名稱。|
+|已變更的小組設定|TeamSettingChanged|小組擁有者執行下列活動時會記錄 TeamSettingChanged 作業。 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>* 變更小組存取類型。 您可以將小組設定為 [私人] 或 [公開] (**小組存取類型**)。 當小組設為私人時 (此為預設設定)，使用者僅能透過受邀的方式存取該小組。 當小組設為公開時，任何人都可以找到該小組。 <br/><br/>* 變更小組的資訊分類 (**小組分類**)。 <br/> 例如，小組資料可以分類為高業務衝擊、中業務衝擊或低業務衝擊。<br/><br/>* 變更小組名稱 (**小組名稱**)。 <br/><br/>* 變更小組描述 (小組描述**)。<br/><br/>* 對小組設定所做的任何變更。 小組擁有者只要以滑鼠右鍵按一下按一下所需小組，然後依序按一下 [管理小組]**** 和 [設定]**** 索引標籤，就能在 Teams 用戶端中存取這些設定。稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動顯示所變更設定的名稱。|
 |已建立小組|TeamCreated|使用者建立小組。|
 |已刪除頻道|ChannelDeleted|使用者從小組中刪除頻道。|
 |已刪除小組|TeamDeleted|小組擁有者刪除小組。|
@@ -902,11 +917,11 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
 
 **稽核記錄可保留多久時間？**
 
-如先前所述，稽核記錄的保留期取決於您組織的 Office 365 或 Microsoft 訂閱。
+如先前所述，稽核記錄的保留期取決於您組織的 Office 365 或 Microsoft 365 企業版訂閱。
 
-  - **Office 365 和 Microsoft 365 E3：** 稽核記錄會保留 90 天。 這表示您可以搜尋稽核記錄來尋找過去 90 天中執行的活動。
+  - **Office 365 E3 和 Microsoft 365 E3：** 稽核記錄會保留 90 天。 這表示您可以搜尋稽核記錄來尋找過去 90 天中執行的活動。
 
-  - **Office 365 或 Microsoft 365 E5 或擁有 Microsoft 365 E5 合規性附加元件授權的使用者：** Azure Active Directory、Exchange 和 SharePoint 活動的稽核記錄依預設會保留一年。 組織也可建立稽核記錄保留原則，以保留其他服務中的活動稽核記錄，最長一年。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md)。
+  - **Office 365 E5 和 Microsoft 365 E5 或擁有 Microsoft 365 E5 合規性附加元件授權的使用者：** Azure Active Directory、Exchange 和 SharePoint 活動的稽核記錄依預設會保留一年。 組織也可建立稽核記錄保留原則，以保留其他服務中的活動稽核記錄，最長一年。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md)。
 
 此外請注意，稽核記錄保留期的時間長度會根據每位使用者的授權而定。 例如，如果您組織中的使用者獲派 Office 365 E3 授權，則該使用者執行的活動稽核記錄會保留 90 天。
 
