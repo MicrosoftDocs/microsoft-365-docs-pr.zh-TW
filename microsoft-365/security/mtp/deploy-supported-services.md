@@ -1,7 +1,7 @@
 ---
 title: 部署 Microsoft 威脅防護所支援的服務
-description: 了解可由 Microsoft 威脅防護、 其授權需求，以及部署程序整合的 Microsoft 安全性服務
-keywords: 部署、 授權、 支援的服務，佈建，設定 Microsoft 威脅防護，M365，授權資格，Microsoft Defender ATP、 MDATP、 Office 365 ATP、 Azure ATP、 Microsoft Cloud App Security、 MCAS，進階威脅防護，E5、 A5、 EMS
+description: 深入瞭解可透過 Microsoft 威脅防護、其授權需求和部署程式整合的 Microsoft 安全性服務
+keywords: 部署，授權，支援的服務，布建，設定 Microsoft 威脅防護，M365，授權資格，Microsoft Defender ATP，MDATP，Office 365 ATP，Azure ATP，Microsoft Cloud App Security，MCAS，advanced 威脅防護，E5，A5，EMS
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b19907517f94cc8b6dbf041cccf56f1d8e232f2f
-ms.sourcegitcommit: 0df099d2e1028bbba8b6371dc5fcd021dddc902b
+ms.openlocfilehash: 2b0e033bb80fd73d5b5194bd59ab9c9f14a644b3
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42374201"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42569040"
 ---
 # <a name="deploy-supported-services"></a>部署支援服務
 
@@ -33,50 +33,50 @@ ms.locfileid: "42374201"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-[Microsoft 威脅防護](microsoft-threat-protection.md)整合不同的 Microsoft 安全性服務，以提供集中式的偵測、 預防和複雜的攻擊的調查功能。 本文說明支援的服務，其授權需求、 的優點與限制與部署方式您可以完全予以部署個別的一或多個服務，以及連結相關聯。
+[Microsoft 威脅防護](microsoft-threat-protection.md)會整合各種 Microsoft 安全性服務，以提供集中式偵測、防護和調查功能，以防禦複雜的攻擊。 本文說明支援的服務、其授權需求、與部署一或多項服務相關的優點與限制，以及您可以個別完全部署這些服務的方式連結。
 
 ## <a name="supported-services"></a>支援的服務
-[Microsoft 365 E5、 E5 安全性、 A5，或 A5 安全性或有效的授權組合](prerequisites.md#licensing-requirements)提供下列存取支援的服務和賦與您在 Microsoft 365 安全性中心中使用 Microsoft 威脅防護。
+[Microsoft 365 E5，E5 Security，Or A5 授權或有效的授權組合](prerequisites.md#licensing-requirements)，可提供下列支援服務的存取權，以及您在 microsoft 365 安全性中心使用 Microsoft 威脅防護所享有的許可權。
 
-| 支援的服務 | 說明 |
+| 支援的服務 | 描述 |
 | ------ | ------ |
-| Microsoft Defender ATP | 內建功能強大的行為感應、 雲端分析和威脅情報周圍的端點保護套件 |
-| Office 365 ATP | 進階的保護您的應用程式和 Office 365，包括電子郵件和其他協同作業工具中的資料 |
-| Azure ATP | 針對進階的威脅、 遭入侵的身分識別及惡意內部人員使用的防護措施相互關聯的 Active Directory 訊號 |
-| Microsoft Cloud App Security | 識別並 combats cyberthreats 跨 Microsoft 和協力廠商雲端服務 |
+| Microsoft Defender ATP | 以強大行為感應器、雲端分析和威脅智慧為基礎的 Endpoint protection 套件 |
+| Office 365 ATP | Office 365 中的應用程式和資料的高級保護，包括電子郵件和其他共同作業工具 |
+| Azure ATP | 抵禦使用相關 Active Directory 信號的高級威脅、受損身分識別和惡意預覽 |
+| Microsoft Cloud App Security | 在您的 Microsoft 和協力廠商雲端服務中識別及 combats cyberthreats |
 
 ## <a name="deployed-services-and-functionality"></a>部署的服務和功能
-您在部署更多支援的服務時，Microsoft 威脅防護會提供較佳的可見性、 相互關聯及修復。
+當您部署更支援的服務時，Microsoft 威脅防護可提供更佳的可見度、關聯性和修正功能。
 
 ### <a name="benefits-of-full-deployment"></a>完整部署的優點
-若要取得 Microsoft 威脅防護的完整優點，我們建議部署支援的所有服務。 以下是一些完整部署的主要優點：
-- 識別並相互關聯為基礎的警告與從所有可用的感應器與特定服務的分析功能事件訊號事件
-- 自動化調查並修復 （空調） playbooks 套用不同的實體類型，包括裝置、 信箱及使用者帳戶
-- 更多進階的狩獵結構描述可以查詢事件及實體資料從裝置、 信箱及其他實體
+若要取得 Microsoft 威脅防護的完整優點，建議您部署所有支援的服務。 以下是完整部署的一些重要優點：
+- 事件會根據所有可用的感應器及服務特有的分析功能，以警示和事件信號進行識別和關聯。
+- 自動化調查和修正（AIR）行動裝置適用于各種實體類型，包括裝置、信箱和使用者帳戶
+- 可查詢更完整的高級搜尋架構，以取得來自裝置、信箱及其他實體的事件和實體資料
 
 ### <a name="limited-deployment-scenarios"></a>有限的部署案例
-每個支援的服務，您將部署提供極豐富的未經處理信號，以及相關的資訊。 雖然有限的部署不會造成 Microsoft 威脅防護功能關閉，會影響其能夠跨端點、 應用程式、 資料和身分識別提供完整的可見性。 在此同時，任何修復功能僅適用於您已部署的服務可管理的實體。
+您部署的每個支援服務都會提供一組極其豐富的原始信號，以及相關的資訊。 雖然有限的部署不會造成 Microsoft 威脅防護功能關閉，但在端點、應用程式、資料及身分識別等範圍內，其提供完整可視性的能力也會受到影響。 同時，任何修正功能都只適用于您已部署之服務可管理的實體。
 
-下表列出每個支援的服務如何提供額外的資料，相互關聯的資料，並更好的補救和回應功能，以取得額外的深入解析的機會。
+下表列出每個支援的服務如何提供額外的資料、關聯資料，以及更好的修復與回應功能，以取得額外的洞察力。
 
-| 服務 | 資料 （訊號 & 相互關聯的資訊） | 修復 & 回應範圍 |
+| 服務 | 資料（信號 & 相關的資訊） | 修正 & 回應範圍 |
 | ------ | ------ | ------ |
-| Microsoft Defender ATP | -端點狀態和未經處理的事件<br />-端點偵測及警示，包括防毒軟體，EDR，來進行攻擊縮減<br />-檔案和觀察到的端點上其他實體資訊 | 端點 |
-| Office 365 ATP | 對郵件的信箱狀態和未經處理的事件<br />-電子郵件附件，並將連結偵測 | 信箱<br />-Office 365 帳戶 |
-| Azure ATP | -Active Directory 訊號，包括驗證事件<br />-身分識別相關的行為偵測 | 身分識別 |
-| Microsoft Cloud App Security | -偵測的 unsanctioned 的雲端應用程式 & 服務 （陰影 IT）<br />-洩露到雲端的應用程式的資料<br />-威脅活動相關聯的雲端應用程式 | 雲端應用程式 |
+| Microsoft Defender ATP | -端點狀態和原始事件<br />-端點偵測和警示，包含防毒程式、EDR、攻擊面降低<br />-在端點上觀察到的檔案及其他實體的資訊 | 端點 |
+| Office 365 ATP | -郵件和信箱狀態和原始事件<br />-電子郵件、附件及連結偵測 | -信箱<br />-Office 365 帳戶 |
+| Azure ATP | -Active Directory 信號，包括驗證事件<br />-身分識別相關的行為偵測 | 身分識別 |
+| Microsoft Cloud App Security | -偵測 unsanctioned cloud app & 服務（陰影 IT）<br />-向雲端應用程式公開資料<br />-關聯 cloud app 的威脅活動 | 雲端應用程式 |
 
 ## <a name="deploy-the-services"></a>部署服務
-部署每個服務通常需要對您的租用戶與某些初始設定佈建。 請參閱下表以了解每個這些服務的部署方式。
+部署每個服務時，通常需要為您的租使用者和某些初始設定提供布建。 請參閱下表以瞭解各項服務的部署方式。
 
-| 服務 | 佈建的指示 | 初始設定 |
+| 服務 | 布建指示 | 初始設定 |
 | ------ | ------ | ------ |
-| Microsoft Defender ATP | [驗證授權佈建和設定的設定完成 Microsoft Defender atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/licensing) | *請參閱佈建指示* |
-| Office 365 ATP | *無使用 Office 365 佈建* | [設定 ATP 原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
-| Azure ATP | [快速入門： 建立您的 Azure ATP 執行個體](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *請參閱佈建指示* |
-| Microsoft Cloud App Security | *無* | [快速入門： 開始使用 Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
+| Microsoft Defender ATP | [驗證授權布建及完整設定 Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/licensing) | *請參閱布建指示* |
+| Office 365 ATP | *無，使用 Office 365 布建* | [設定 ATP 原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
+| Azure ATP | [快速入門：建立您的 Azure ATP 實例](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *請參閱布建指示* |
+| Microsoft Cloud App Security | *無* | [快速入門： Microsoft Cloud App Security 快速入門](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
 
-一旦您已部署支援的服務，[開啟 [Microsoft Threat Protection](mtp-enable.md)。
+部署支援的服務後，[開啟 Microsoft 威脅防護](mtp-enable.md)。
 
 ## <a name="related-topics"></a>相關主題
 

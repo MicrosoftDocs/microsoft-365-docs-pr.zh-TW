@@ -1,7 +1,7 @@
 ---
 title: Microsoft 威脅防護的新增功能
-description: 列出的新功能和 Microsoft 威脅防護中的功能
-keywords: what's new in microsoft 威脅防護，ga，通常可用功能，可以使用新
+description: 列出 Microsoft 威脅防護中的新功能與功能
+keywords: microsoft 威脅防護中的新功能，ga，一般可用，功能，可用，新
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,24 +15,26 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 165225f225380caf0131205ec19f5320dab1d278
-ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
+ms.openlocfilehash: d95879816193eb00881835b63f2aae3e232ddfb7
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409960"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42569067"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Microsoft 威脅防護的新增功能
 
-下列功能通常可以使用 (GA) 位於最新版的 Microsoft 威脅防護中。
+在最新版本的 Microsoft 威脅防護中，通常會提供下列功能（GA）。
+
+RSS 摘要：將下列 URL 複製並貼到您的摘要讀取器時，獲得此頁面的通知：`https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us`
 
 ## <a name="february-2020"></a>2020 年 2 月
-- [事件](incidents-overview.md) <br> 了解完全其中攻擊啟動及其他詳細資料] 來協助您查看攻擊的程度。
+- [事件](incidents-overview.md) <br> 確切知道攻擊已啟動的位置，以及可協助您瞭解攻擊程度的其他詳細資料。
 - [自動調查及回應](mtp-autoir.md) <br> AIR 可讓您的安全性作業小組大幅增加貴組織處理安全性警示和事件的能力。
-- [進階搜尋增強功能](advanced-hunting-overview.md) <br> 主動搜尋威脅跨 Kusto 查詢語言與安全性最佳化結構描述的現代化工作區。
+- [高級搜尋增強功能](advanced-hunting-overview.md) <br> 使用 Kusto 查詢語言和安全性優化架構，主動搜尋整個現代 workspace 中的威脅。
 
 ## <a name="march-2019"></a>2019 年 3 月
 
-- 進階搜捕 <br> 登陸頁面以各種狩獵功能可讓您主動尋找威脅影響之電子郵件和資料、 裝置及身分識別。
-- [Microsoft 安全分數](microsoft-secure-score.md) <br> 組織的安全性狀態的度量單位具有較高的數字，表示所採取的多個改進動作。 下列建議的安全分數可以防止潛在威脅組織。 
-- [報告](monitoring-and-reporting.md) <br>  功能的卡片涵蓋各種安全性分析師和系統管理員追蹤其日常作業的一部分的區域的主機。
+- 進階搜捕 <br> 可讓您主動找到影響電子郵件和資料、裝置和身分識別之威脅的各種搜尋功能的登陸頁面。
+- [Microsoft 安全分數](microsoft-secure-score.md) <br> 度量組織的安全性狀況，其值越高，表示採取的改善動作越多。 遵循安全性分數建議可保護您的組織免受威脅。 
+- [報告](monitoring-and-reporting.md) <br>  可提供一系列的功能，涵蓋安全分析員和系統管理員在日常作業中所追蹤的各種區域。
