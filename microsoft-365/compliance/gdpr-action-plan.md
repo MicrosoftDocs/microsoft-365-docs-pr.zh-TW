@@ -5,6 +5,8 @@ keywords: Microsoft 365、Microsoft 365 教育版, Microsoft 365 文件, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 0c0e5b64742b56d950702d67c26b61e1784ac37e
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 6bafb00e879831a21fa80a8005e53fff0e5d95f4
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558050"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558174"
 ---
 # <a name="microsoft-365-gdpr-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 GDPR 行動計畫 — 前 30 天、90 天及過後的首要工作
 
@@ -43,7 +45,7 @@ GDPR 引入新的規則，供向歐盟 (EU) 人員提供產品及服務，或收
 |**適用範圍**|**工作**|
 |:-----|:-----|
 | **了解您的 GDPR 需求，並且考慮與 Microsoft GDPR 諮詢合作夥伴配合。** |• 使用 [Microsoft GDPR 評定工具](https://discover.microsoft.com/gdpr-readiness-assessment)私下評定您的整備，並且取得後續步驟的建議。<br>• 藉由在 [Microsoft 服務信任入口網站](https://support.office.com/article/get-started-with-the-microsoft-service-trust-portal-f30e2353-0bd6-41ed-8347-eea1fb8d2662) (STP) 內使用 [Microsoft 合規性分數](compliance-score.md)，評定和管理您的合規性風險，以執行貴組織的 GDPR 評定。<br>• 與您的 [Microsoft GDPR 諮詢合作夥伴](https://blogs.partner.microsoft.com/mpn/gdpr-leaders-needed-help-customers-navigate-gdpr-journey/)合作，以建立回應資料主體要求 (DSR) 及從 DSR 排除的內部指導方針。<br>• 與您的 Microsoft GDPR 諮詢合作夥伴合作，為貴組織執行 GDPR 合規性的差距分析，並且發展規劃您的 GDPR 合規性旅程的藍圖。<br>• 深入了解如何使用 Microsoft 365 合規性中心的 [GDPR 儀表板和資料主體要求功能](https://support.office.com/article/manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c) (部分機器翻譯)。 |
-| **開始探索您儲存的個人資料類型及其所在位置，以符合 DSR。** |• 使用[內容搜尋](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)和[電子文件探索案例](https://support.office.com/article/eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-8dd335ab-29d0-41c3-8dd8-9f7c7481e60c) (部分機器翻譯)，輕易地在信箱、公用資料夾、Office 365 群組、Microsoft Teams、SharePoint Online 網站、商務用 One Drive 網站及商務用 Skype 交談之間搜尋。 了解如何使用[敏感性資訊類型](https://docs.microsoft.com/office365/enterprise/search-for-and-find-personal-data)來尋找歐盟居民的個人資料<br>• 使用大量內容時，以 [Office 365 進階電子文件探索](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4) 快速地識別與特定主體 (例如合規性調查) 相關的文件，這個功能由機器學習技術提供動力，相較於傳統關鍵字搜尋，具有更佳的準確度。<br>• 使用 Office 365 安全性與合規性中心，預覽搜尋結果、取得一或多個搜尋的關鍵字統計資料、大量編輯內容搜尋，以及[匯出結果](https://support.office.com/article/export-content-search-results-from-the-office-365-security-compliance-center-ed48d448-3714-4c42-85f5-10f75f6a4278) (部分機器翻譯)。|
+| **開始探索您儲存的個人資料類型及其所在位置，以符合 DSR。** |• 使用[內容搜尋](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)和[電子文件探索案例](https://support.office.com/article/eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-8dd335ab-29d0-41c3-8dd8-9f7c7481e60c) (部分機器翻譯)，輕易地在信箱、公用資料夾、Office 365 群組、Microsoft Teams、SharePoint Online 網站、商務用 One Drive 網站及商務用 Skype 交談之間搜尋。 了解如何使用[敏感性資訊類型](https://docs.microsoft.com/office365/enterprise/search-for-and-find-personal-data)來尋找歐盟居民的個人資料<br>• 使用大量內容時，以[進階電子文件探索 (傳統版)](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4) 快速地識別與特定主體 (例如合規性調查) 相關的文件，這項功能採用機器學習技術，相較於傳統關鍵字搜尋，具有更佳的準確度。<br>• 使用 Office 365 安全性與合規性中心，預覽搜尋結果、取得一或多個搜尋的關鍵字統計資料、大量編輯內容搜尋，以及[匯出結果](https://support.office.com/article/export-content-search-results-from-the-office-365-security-compliance-center-ed48d448-3714-4c42-85f5-10f75f6a4278) (部分機器翻譯)。|
 
 ## <a name="90-days--enhanced-protections"></a>90 天 - 加強的保護
 
@@ -68,4 +70,4 @@ GDPR 引入新的規則，供向歐盟 (EU) 人員提供產品及服務，或收
 - 英國資訊專員辦公室的[一般資料保護規定 (GDPR) 指南](https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/)
 - 英國資訊專員辦公室的[適用於小型組織的一般資料保護規定 (GDPR) 常見問題集](https://ico.org.uk/for-organisations/business/guide-to-the-general-data-protection-regulation-gdpr-faqs/)
 - [Microsoft.com/GDPR](https://www.microsoft.com/trustcenter/Privacy/GDPR)
-- [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft 信任中心](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
