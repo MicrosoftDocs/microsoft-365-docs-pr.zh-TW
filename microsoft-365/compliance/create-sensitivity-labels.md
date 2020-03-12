@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 資訊保護解決方案的需求：建立、設定及發佈敏感度標籤，以便分類及保護貴組織的文件和電子郵件。
-ms.openlocfilehash: d2300a54583c0b2d12de86e3dbb5f3116daf6460
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: b3f998ec7f52403c4b3676fb08976aacdc1f7d0f
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543127"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583130"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>建立及設定敏感度標籤及其原則
 
@@ -154,6 +154,23 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 
 您也可以使用此 Cmdlet 往返標籤原則來新增和移除標籤。
 
+## <a name="removing-and-deleting-labels"></a>移除並刪除標籤
+
+在生產環境中，您不太可能需要從標籤原則移除敏感度標籤，或刪除敏感度標籤。 在初始測試階段，您可能需要執行下列其中一項動作。 請務必了解當您執行這些動作時，會發生什麼情況。
+
+從標籤原則移除標籤比刪除標籤的風險小，您可以在日後需要時，隨時將它新增回標籤原則：
+
+- 當您從標籤原則中移除標籤以使該標籤不再發佈給最初指定的使用者時，下次重新整理標籤原則時，使用者將不會在 Office 應用程序中看到要選取的標籤。 不過，如果您已將標籤套用至文件或電子郵件，則不會從該內容移除標籤。 標籤所套用的任何加密都會保留，而基礎保護範本仍然會發佈。 
+
+- 針對已移除但之前已套用至內容的標籤，使用 Word、Excel 和 PowerPoint 的內建標籤的使用者仍會在狀態列上看到已套用的標籤名稱。 同樣，已刪除且已套用至 SharePoint 網站的標籤仍會在 [敏感度]**** 欄中顯示標籤名稱。
+
+相比之下，當您刪除標籤時：
+
+- 如果標籤已套用加密，則會封存基礎保護範本，以便仍可開啟先前受保護的內容。 由於此已封存保護範本，您將無法使用相同名稱建立新標籤。 雖然您可以使用 [PowerShell](https://docs.microsoft.com/powershell/module/aipservice/remove-aipservicetemplate) 來刪除保護範本，但請不要這麼做，除非您確定不需要開啟使用封存範本加密的內容。
+
+- 針對桌面應用程式：中繼資料中的標籤資訊會保留，但由於無法再將標籤識別碼標示為名稱，使用者就不會看到已套用的標籤名稱 (例如，在狀態列上)，因此使用者會假設內容未加上標籤。 如果標籤已套用加密，則會保留加密，而在內容開啟時使用者仍可看到目前封存保護範本的名稱與描述。
+
+- 針對 Office 網頁版：使用者在狀態列或 [敏感度]**** 欄中不會看到標籤名稱。 只有當標籤未套用加密時，中繼資料中的標籤資訊才會保留。 如果標籤已套用加密，而且您已啟用 SharePoint 和 Onedrive 的 [敏感度標籤][](sensitivity-labels-sharepoint-onedrive-files.md)，則會移除中繼資料中的標籤資訊，並將加密移除。 
 
 ## <a name="next-steps"></a>後續步驟
 

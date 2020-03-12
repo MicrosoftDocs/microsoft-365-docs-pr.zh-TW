@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 3/05/2020
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: 3e9dd5c02b3502eab2d3abfe5d65b5baebe18cda
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: 6707a61ae2fd9f7dddb7aa63927a53f1795b5127
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "42569172"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583120"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -55,6 +55,9 @@ ms.locfileid: "42569172"
 除了使用角色以外，您可以建立新的角色群組，並將 [敏感度標籤系統管理員]**** 或 [組織組態]**** 角色新增至此群組。 如需相關指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
 
 只有建立及設定敏感度標籤及其標籤原則時，才需要這些權限。 您不需要在應用程式或服務中套用這些標籤。
+
+> [!NOTE]
+> **敏感度標籤讀者**是一個新的角色，目前正在推出給租用戶使用，一開始會支援 PowerShell 標籤 Cmdlet，之後則會支援系統管理標籤中心。
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>敏感度標籤的常見案例
 

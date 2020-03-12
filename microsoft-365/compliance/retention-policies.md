@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: 9ecc74610c0d150dd511a8e24fb66037768587a4
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: f373accc35684c055af8d58907e39aa7a0f4b4f4
+ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280201"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42586723"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -94,7 +94,8 @@ ms.locfileid: "42280201"
     > [!NOTE]
     > 我們最近已變更從保留文件庫中刪除內容的方式。 為了防止意外的資料遺失，我們不再永久刪除保留文件庫中的內容。 相反地，我們只會從資源回收筒中永久刪除內容。因此，來自保留文件庫的所有內容，現在將會移至第二階段資源回收筒。
     
-2. 若內容在保留期間**未修改或刪除**，在保留期間結束時會將內容移至第一階段資源回收筒。 如果使用者從此處刪除內容，或清空此資源回收筒 (也就是清除)，則會將文件移至第二階段資源回收筒。 93 天保留期間涵蓋了第一和第二階段資源回收筒。93 天結束時，則會從文件所在的任何位置永久刪除文件 (無論是第一或第二階段資源回收筒)。 資源回收筒未編製索引，因此搜尋在此處找不到內容。 也就是說，電子文件探索保留在資源回收筒中找不到可保留的任何內容。 
+2. 若內容在保留期間**未修改或刪除**，在保留期間結束時會將內容移至第一階段資源回收筒。 如果使用者從此處刪除內容，或清空此資源回收筒 (也就是清除)，則會將文件移至第二階段資源回收筒。 93 天保留期間涵蓋了第一和第二階段資源回收筒。93 天結束時，則會從文件所在的任何位置永久刪除文件 (無論是第一或第二階段資源回收筒)。 資源回收筒未編製索引， 
+3. 因此搜尋在此處找不到內容。 也就是說，電子文件探索保留在資源回收筒中找不到可保留的任何內容。 
     
 ### <a name="content-in-mailboxes-and-public-folders"></a>信箱與公用資料夾中的內容
 
@@ -106,8 +107,6 @@ ms.locfileid: "42280201"
   
 當有人嘗試變更信箱項目的特定內容時 (例如主旨、內文、附件、寄件者和收件者，或是傳送或接收郵件的日期)，在認可變更之前，會先將原始項目的複本儲存至 [可復原的項目] 資料夾。 後續每次變更都會執行此動作。 在保留期間結束時，系統會永久刪除 [可復原的項目] 資料夾中的複本。
   
-如果使用者離職，且其信箱包含在保留原則中，則一旦刪除使用者的 Office 365 帳戶，信箱就會變成非作用中信箱。非作用中信箱的內容仍受限於信箱在變成非作用中之前放置在其上的任何保留原則，而且 eDiscovery 可搜尋此內容。如需詳細資訊，請參閱 [Exchange Online 中的非作用中信箱](inactive-mailboxes-in-office-365.md)。
-  
 將保留原則指派給信箱或公用資料夾之後，內容可以依循下列兩個途徑之一：
 
 ![電子郵件和公用資料夾中的保留流程圖](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
@@ -115,7 +114,21 @@ ms.locfileid: "42280201"
 1. 在保留期間，**如果使用者已永久修改或刪除項目** (按 SHIFT+DELETE 或從 [刪除的郵件] 中刪除)，則項目會移至 (或在編輯的情況下複製到) [可復原的項目] 資料夾。在那裡，此程序會定期執行，並識別其保留期間已過期的項目，而且會在保留期間結束後的 14 天內永久刪除這些項目。請注意，14 天是預設設定，但它最多可設為 30 天。
     
 2. 若未在保留期間**修改或刪除項目**，即會在信箱中的所有資料夾上定期執行相同程序，找到保留期間已過期的項目，並在保留期間結束的 14 天內永久刪除這些項目。 請注意，14 天是預設的設定，最多可設定為 30 天。 
-    
+
+### <a name="when-a-user-leaves-the-organization"></a>當使用者離開組織時
+
+**Exchange** 
+
+如果組織中的使用者離職，且保留原則中包含使用者的信箱，在刪除使用者的 Office 365 帳戶後，信箱會變成非作用中的信箱。 在變成非作用的狀態之前，非作用中信箱的內容仍受限於信箱上所設之任何保留原則，且內容可供 eDiscovery 搜尋。 如需詳細資訊，請參閱 [Exchange Online 中的非作用中信箱](inactive-mailboxes-in-office-365.md)。
+
+**OneDrive**
+
+如果組織中的使用者離職，任何受保留原則管制或含有保留標籤的檔案，在原則或標籤的保留期間內都會予以保留。 在此期間，所有的共用存取權都持續有效。 當保留期間到期時，內容會移至 [網站集合資源回收筒] 中，且除了系統管理員以外的任何人都無法存取。如果保留原則將文件將標記為記錄，在保留期間結束前，不會刪除文件，保留期間結束後則會永久刪除。
+
+**SharePoint**
+
+如果組織中的使用者離職，該使用者建立的任何內容將不受到影響，因為 SharePoint 被視為共同作業環境，與使用者的信箱或 OneDrive 帳戶不同。
+
 ## <a name="how-a-retention-policy-works-with-document-versions-in-a-site-collection"></a>保留原則如何使用網站集合中的文件版本
 
 版本設定是 SharePoint Online 和商務用 OneDrive 中所有文件庫的功能。 根據預設，版本設定會最少保留 500 個主要版本，不過您可以增加此限制。 如需詳細資訊，請參閱[啟用和設定清單或文件庫的版本設定](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)。
@@ -240,6 +253,16 @@ ms.locfileid: "42280201"
   
 請注意，**交談歷程記錄** (Outlook 中的資料夾) 是與 Skype 封存無關的功能。使用者可以關閉**交談歷程記錄**，但會執行 Skype 的封存，方法為將 Skype 交談的複本儲存在使用者無法存取但 eDiscovery 可以使用的隱藏資料夾中。
 
+### <a name="sharepoint-locations"></a>SharePoint 位置
+
+您的保留原則可以保留 SharePoint 通訊網站中的內容、未透過 Office 365 群組所連線的小組網站以及傳統網站。 此選項不支援由 Office 365 群組所連線的小組網站，而是改用 **Office 365 群組**位置。
+
+如果您指定不受支援的網站，保留原則會忽略這些網站。
+
+當您為 SharePoint 網站指定位置時，您不需要存取網站的權限，而在 [編輯位置]**** 頁面上指定 URL 時也不會進行驗證。 不過，網站必須編制索引，而在精靈結尾將會檢查您指定的網站是否存在。
+
+如果此檢查失敗，您會看到一則訊息，指出您輸入的 URL 驗證失敗，且精靈不會建立保留原則，直到驗證檢查通過為止。 如果您看到這則訊息，請返回精靈變更 URL 或移除網站。
+
 ### <a name="teams-locations"></a>Teams 位置
 
 您可以使用保留原則來保留 Teams 中的聊天和通道訊息。Teams 聊天儲存在涉及聊天的每個使用者之信箱的隱藏資料夾中，而 Teams 通道訊息則儲存在團隊的群組信箱中類似的隱藏資料夾中。不過，請務必了解 Teams 會使用 Azure 提供的聊天服務，其中也會儲存此資料，而且根據預設這項服務會永遠儲存該資料。基於這個原因，我們強烈建議您使用 Teams 位置來保留和刪除 Teams 資料。使用 Teams 位置會同時從 Exchange 信箱和基礎 Azure 提供的聊天服務中永久刪除資料。如需詳細資訊，請參閱 [Microsoft Teams 中的安全性及合規性概觀](https://go.microsoft.com/fwlink/?linkid=871258)。
@@ -293,7 +316,7 @@ ms.locfileid: "42280201"
 ## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>從保留原則中排除特定類型的 Exchange 項目
 您可以使用 PowerShell，從保留原則中排除特定類型的 Exchange 項目。例如，您可以排除語音信箱訊息、 IM 交談，以及信箱中的其他 商務用 Skype Online 內容。您也可以排除行事曆、附註和工作項目。僅使用 PowerShell 才能提供此功能；建立保留原則時，無法在 UI 中提供它。
   
-若要這麼做，請使用 `New-RetentionComplianceRule` 和 `Set-RetentionComplianceRule` Cmdlet 中的 `ExcludedItemClasses` 參數。如需 PowerShell 的詳細資訊，請參閱下節[尋找保留原則的 PowerShell Cmdlet](#find-the-powershell-cmdlets-for-retention-policies)。
+若要使用此功能，請使用 `New-RetentionComplianceRule` 和 `Set-RetentionComplianceRule` Cmdlet 的 `ExcludedItemClasses` 參數。
 
 ## <a name="locking-a-retention-policy"></a>鎖定保留原則
 有些組織可能需要遵守由監管機構定義的法規，例如證券交易委員會 (SEC) 法規 17a-4，要求在保留原則開啟之後，不能關閉或執行較不嚴格的限制。使用「保留鎖定」，您可以鎖定原則，讓任何人 (包括系統管理員) 均無法關閉原則或執行較不嚴格的限制。
@@ -314,7 +337,7 @@ ms.locfileid: "42280201"
 
 第三，若要在保留原則上放置保留鎖定，請執行 `Set-RetentionCompliancePolicy` 時將 `RestrictiveRetention` 參數設為 True。 例如：
 
-`Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
+`Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true`
 
 ![PowerShell 中的 RestrictiveRetention 參數](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
 
@@ -324,7 +347,7 @@ ms.locfileid: "42280201"
 
 保留鎖定現在放置於保留原則上。 如果您執行 `Get-RetentionCompliancePolicy`，`RestrictiveRetention` 參數會設為 true。 例如：
 
-`Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
+`Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl`
 
 ![PowerShell 中顯示所有參數的鎖定原則](../media/retention-policy-preservation-lock-locked-policy.PNG)
   
@@ -405,15 +428,7 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
 如需詳細資訊，請參閱[授與使用者存取 Office 365 安全性與合規性中心的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center) (部分機器翻譯)。 
 
 需要這些權限才能建立及套用保留原則。原則強制執行不需要內容的存取權。
-  
-## <a name="find-the-powershell-cmdlets-for-retention-policies"></a>尋找保留原則的 PowerShell Cmdlet
 
-若要使用保留原則 Cmdlet，您需要：
-  
-1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
-    
-2. 使用這些 [Office 365 安全性與合規性中心 Cmdlet](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
-    
 ## <a name="more-information"></a>詳細資訊
 
 - [標籤概觀](labels.md)

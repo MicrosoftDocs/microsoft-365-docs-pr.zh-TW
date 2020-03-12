@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 若要在您的 Office 365 或 Microsoft 組織中執行記錄管理策略，請使用保留標籤將內容宣告為記錄。 然後發佈或自動套用保留記錄標籤。
-ms.openlocfilehash: 87bed90f4c9bf27eb960a2018b6a641ff3e06993
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e92ec8be90d27696538f46e5609f6dc039200136
+ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081654"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42586722"
 ---
 # <a name="overview-of-records"></a>記錄概觀
 
@@ -70,7 +70,7 @@ ms.locfileid: "42081654"
 
 ## <a name="using-retention-labels-to-declare-records"></a>使用 [保留標籤] 宣告記錄
 
-當您建立保留標籤時，可以選擇使用保留標籤將內容分類為記錄。 若要將內容宣告為記錄，您必須執行下列動作：
+當您建立保留標籤時，可以選擇使用保留標籤將內容分類為記錄。 若要將內容聲明為記錄，請遵循下列步驟：
 
 1. 建立保留標籤。 在 Microsoft 365 合規性中心中，移至 [記錄管理]**** \> [檔案計畫]****。 在 [檔案計畫]**** 頁面上，按一下 [建立標籤]****。
 
@@ -115,7 +115,7 @@ ms.locfileid: "42081654"
 
 ### <a name="locking-and-unlocking-a-record"></a>鎖定和解除鎖定記錄
 
-當您將記錄標籤指派給文件之後，預設 [成員] 群組 ([參與] 權限等級) 中的任何使用者都可以解除鎖定記錄或鎖定已解鎖的記錄。
+當您將記錄標籤指派給文件之後，具有 [參與] 權限或更低權限等級的所有使用者都可以解除鎖定記錄或鎖定已解鎖的記錄。
 <br/><br/>
 
 ![記錄狀態顯示記錄文件已解鎖](../media/recordversioning9.png)
