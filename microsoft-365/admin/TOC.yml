@@ -1,0 +1,291 @@
+- name: 系統管理首頁
+  href: admin-home.md
+  items:
+    - name: 概觀
+      items:
+        - name: 系統管理概觀
+          href: admin-overview/admin-overview.md
+        - name: 註冊 Office 365
+          href: admin-overview/sign-up-for-office-365.md
+        - name: 影片訓練課程
+          href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)'
+        - name: 關於系統管理中心
+          href: admin-overview/about-the-admin-center.md
+        - name: 我有何種訂閱？
+          href: admin-overview/what-subscription-do-i-have.md
+        - name: 了解 Office 365 Germany
+          href: admin-overview/learn-about-office-365-germany.md
+        - name: 系統管理行動應用程式
+          href: admin-overview/admin-mobile-app.md
+    - name: 設定
+      items:
+        - name: 規劃您的設定
+          href: setup/plan-your-setup.md
+        - name: 設定 Office 365
+          href: setup/setup.md
+        - name: 安裝精靈和設定頁面之間的差異
+          href: setup/o365-setup-wizard-and-setup-page.md
+        - name: 新增網域
+          href: setup/add-domain.md
+        - name: 網域常見問題集
+          href: setup/domains-faq.md
+        - name: 安裝應用程式
+          href: setup/install-applications.md
+        - name: 移轉電子郵件和連絡人
+          href: setup/migrate-email-and-contacts-admin.md
+        - name: 推出 Teams
+          href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
+        - name: 設定檔案儲存與共用
+          href: setup/set-up-file-storage-and-sharing.md
+        - name: 自訂小組網站
+          href: setup/customize-team-site.md
+        - name: 將使用者升級至最新的 Office 用戶端
+          href: setup/upgrade-users-to-latest-office-client.md
+        - name: 自訂登入頁面
+          href: setup/customize-sign-in-page.md
+        - name: 建立通訊群組
+          href: setup/create-distribution-lists.md
+        - name: 自訂組織的佈景主題
+          href: setup/customize-your-organization-theme.md
+    - name: 使用者與角色
+      items:
+        - name: 新增使用者
+          href: add-users/add-users.md
+        - name: 建立並使用範本來新增使用者
+          href: add-users/create-and-use-a-template-to-add-users.md
+        - name: 刪除使用者
+          href: add-users/delete-a-user.md
+        - name: 還原使用者
+          href: add-users/restore-user.md
+        - name: 重設密碼
+          href: add-users/reset-passwords.md
+        - name: 將密碼設定為永遠不過期
+          href: add-users/set-password-to-never-expire.md
+        - name: 讓使用者重設密碼
+          href: add-users/let-users-reset-passwords.md
+        - name: 重新傳送使用者密碼
+          href: add-users/resend-user-password.md
+        - name: 將信箱權限授與其他使用者
+          href: add-users/give-mailbox-permissions-to-another-user.md
+        - name: 變更使用名稱和電子郵件地址
+          href: add-users/change-a-user-name-and-email-address.md
+        - name: 建立、編輯或刪除自訂使用者檢視
+          href: add-users/create-edit-or-delete-a-custom-user-view.md
+        - name: 新增新進員工
+          href: add-users/add-new-employee.md
+        - name: 移除離職員工
+          href: add-users/remove-former-employee.md
+        - name: 存取及備份離職使用者的資料
+          href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
+        - name: 關於系統管理員角色
+          href: add-users/about-admin-roles.md
+        - name: 指派系統管理員角色
+          href: add-users/assign-admin-roles.md
+        - name: 關於 Exchange Online 系統管理員角色
+          href: add-users/about-exchange-online-admin-role.md
+    - name: 電子郵件
+      items:
+        - name: Office 365 中的電子郵件
+          href: email/email.md
+        - name: Office 365 使用者電子郵件設定
+          href: email/office-365-user-email-settings.md
+        - name: 為使用者新增另一個電子郵件別名
+          href: email/add-another-email-alias-for-a-user.md
+        - name: 共用信箱
+          items:
+            - name: 關於共用信箱
+              href: email/about-shared-mailboxes.md
+            - name: 建立共用信箱
+              href: email/create-a-shared-mailbox.md
+            - name: 設定共用信箱
+              href: email/configure-a-shared-mailbox.md
+            - name: 將使用者信箱轉換為共用信箱
+              href: email/convert-user-mailbox-to-shared-mailbox.md
+            - name: 從共用信箱中移除授權
+              href: email/remove-license-from-shared-mailbox.md
+            - name: 解決共用信箱的問題
+              href: email/resolve-issues-with-shared-mailboxes.md
+        - name: 變更電子郵件地址
+          href: email/change-email-address.md
+        - name: 設定焦點收件匣
+          href: setup/configure-focused-inbox.md
+        - name: 建立簽章及免責聲明
+          href: setup/create-signatures-and-disclaimers.md
+        - name: 建立、編輯或刪除安全性群組
+          href: email/create-edit-or-delete-a-security-group.md
+        - name: 設定電子郵件轉寄
+          href: email/configure-email-forwarding.md
+        - name: 電子郵件共同作業
+          href: email/email-collaboration.md
+        - name: 將使用者或連絡人新增至通訊群組
+          href: email/add-user-or-contact-to-distribution-list.md
+        - name: 設定待過濾郵件
+          href: email/configure-clutter.md
+    - name: 保護您的商務資料
+      items:
+        - name: 保護您的資料的前 10 大方式
+          href: security-and-compliance/secure-your-business-data.md
+        - name: 設定多重要素驗證
+          href: security-and-compliance/set-up-multi-factor-authentication.md
+        - name: 設定多重要素驗證 (搭配 Office 2013)
+          href: security-and-compliance/enable-modern-authentication.md
+        - name: GDPR 規範
+          href: security-and-compliance/gdpr-compliance.md
+    - name: 系統管理中心的活動報告
+      href: activity-reports/activity-reports.md
+    - name: Power BI 使用狀況分析
+      items:
+        - name: 流量分析
+          href: usage-analytics/usage-analytics.md
+        - name: 啟用流量分析
+          href: usage-analytics/enable-usage-analytics.md
+        - name: 取得最新版本的流量分析
+          href: usage-analytics/get-the-latest-version-of-usage-analytics.md
+        - name: 瀏覽並使用報告
+          href: usage-analytics/navigate-and-utilize-reports.md
+        - name: 使用量報告中的作用中使用者
+          href: usage-analytics/active-user-in-usage-reports.md
+        - name: 自訂報告
+          href: usage-analytics/customize-reports.md
+        - name: 流量分析資料模型
+          href: usage-analytics/usage-analytics-data-model.md
+        - name: 使用分析錯誤
+          href: usage-analytics/usage-analytics-errors.md
+    - name: 管理
+      items:
+        - name: 管理 Office 365
+          href: manage/manage.md
+        - name: 變更連絡人喜好設定
+          href: manage/change-contact-preferences.md
+        - name: 變更地址、連絡人及其他資訊
+          href: manage/change-address-contact-and-more.md
+        - name: 更新電話號碼與電子郵件地址
+          href: manage/update-phone-number-and-email-address.md
+        - name: 設定密碼到期原則
+          href: manage/set-password-expiration-policy.md
+        - name: 自訂應用程式啟動器
+          href: manage/customize-the-app-launcher.md
+        - name: 集中式部署的必要條件
+          href: manage/centralized-deployment-of-add-ins.md
+        - name: 使用集中式部署來部署增益集
+          href: manage/manage-deployment-of-add-ins.md
+        - name: 尋找您的合作夥伴或轉銷商
+          href: manage/find-your-partner-or-reseller.md
+        - name: 會議室和設備信箱
+          href: manage/room-and-equipment-mailboxes.md
+        - name: 傳送電子郵件作為通訊群組清單
+          href: manage/send-email-as-distribution-list.md
+        - name: 升級通訊群組清單
+          href: manage/upgrade-distribution-lists.md
+        - name: 共用外部網站和檔案
+          href: manage/share-sites-with-external-users.md
+        - name: 與外部使用者共用行事曆
+          href: manage/share-calendars-with-external-users.md
+        - name: 將授權指派給使用者
+          href: manage/assign-licenses-to-users.md
+        - name: 從使用者取消指派授權
+          href: manage/remove-licenses-from-users.md
+        - name: 解決授權衝突
+          href: manage/resolve-license-conflicts.md)
+        - name: 管理訊息中心中的訊息
+          href: manage/manage-messages.md)
+    - name: 訂閱與計費
+      items:
+        - name: 管理您的訂閱
+          href: ../commerce/index.yml
+        - name: 查看您的發票
+          href: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
+        - name: 管理付款方式
+          href: ../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+        - name: 取消您的訂閱
+          href: ../commerce/subscriptions/cancel-your-subscription.md
+    - name: 網域
+      items:
+        - name: Office 365 中的網域
+          href: get-help-with-domains/get-help-with-domains.md
+        - name: 何謂網域？
+          href: get-help-with-domains/what-is-a-domain.md
+        - name: 購買網域名稱
+          href: get-help-with-domains/buy-a-domain-name.md
+        - name: 尋找您的網域註冊機構
+          href: get-help-with-domains/find-your-domain-registrar.md
+        - name: DNS 基本知識
+          href: get-help-with-domains/dns-basics.md
+        - name: DNS 記錄的資訊
+          href: get-help-with-domains/information-for-dns-records.md
+        - name: 找出並修正問題
+          href: get-help-with-domains/find-and-fix-issues.md
+        - name: 網域連線
+          href: get-help-with-domains/domain-connect.md
+        - name: 設定您的網域 (主機專用指示)
+          href: get-help-with-domains/set-up-your-domain-host-specific-instructions.md
+        - name: 在任何網域註冊機構變更名稱伺服器
+          href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
+        - name: 在任一 DNS 主機服務提供者建立 DNS 記錄
+          href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
+        - name: 移除網域
+          href: get-help-with-domains/remove-a-domain.md
+        - name: 手動傳送資料
+          href: get-help-with-domains/transfer-data-manually.md
+    - name: 群組
+      items:
+        - name: 群組概觀
+          href: create-groups/office-365-groups.md
+        - name: 比較群組
+          href: create-groups/compare-groups.md
+        - name: 建立 Office 365 群組
+          href: create-groups/create-groups.md
+        - name: 管理 Office 365 群組
+          href: create-groups/manage-groups.md
+        - name: Office 365 群組中的控管規劃
+          href: create-groups/plan-for-groups-governance.md
+        - name: 管理群組的建立
+          href: create-groups/manage-creation-of-groups.md
+        - name: 選擇要建立群組的網域
+          href: create-groups/choose-domain-to-create-groups.md
+        - name: 群組命名原則
+          href: create-groups/groups-naming-policy.md
+        - name: 允許成員使用群組「傳送為」或「代理傳送者」功能
+          href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
+        - name: 從群組新增或移除成員
+          href: create-groups/add-or-remove-members-from-groups.md
+        - name: Office 365 群組到期原則
+          href: create-groups/office-365-groups-expiration-policy.md
+        - name: 還原已刪除的群組
+          href: create-groups/restore-deleted-group.md
+        - name: 在群組中管理來賓存取
+          href: create-groups/manage-guest-access-in-groups.md
+        - name: 敏感度標籤與群組一起使用
+          href: 'https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?toc=/office365/admin/toc.json'
+    - name: 由 21Vianet 運作的 Office 365
+      items:
+        - name: 關於由 21Vianet 運作的 Office 365
+          href: services-in-china/services-in-china.md
+        - name: 購買或試用訂閱
+          href: services-in-china/buy-or-try-subscriptions.md
+        - name: 下載由 21Vianet 營運的 Android 版 Office 365 Office 應用程式
+          href: services-in-china/download-office-app-for-Android.md
+        - name: 下載由 21Vianet 營運的 iOS 版 Office 365 Office 應用程式
+          href: services-in-china/download-office-app-for-iOS.md
+        - name: 檢視您的帳單或取得發票
+          href: services-in-china/view-your-bill-or-get-a-fapiao.md
+        - name: 申請發票
+          href: services-in-china/apply-for-a-fapiao.md
+        - name: Azure 資訊保護同位檢查
+          href: services-in-china/parity-between-azure-information-protection.md
+    - name: 取得新功能
+      items:
+        - name: 關於新系統管理中心
+          href: microsoft-365-admin-center-preview.md
+        - name: 新系統管理中心的新功能
+          href: whats-new-in-preview.md
+        - name: 隨時掌握變更
+          href: manage/stay-on-top-of-updates.md
+        - name: Office 365 的發行選項
+          href: manage/release-options-in-office-365.md
+        - name: 訊息中心
+          href: manage/message-center.md
+        - name: 試用或購買 Microsoft 365
+          href: ../commerce/try-or-buy-microsoft-365.md
+    - name: 連絡商務產品的客戶支援
+      href: contact-support-for-business-products.md
