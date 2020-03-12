@@ -1,5 +1,5 @@
 ---
-title: 了解可用性金鑰的 Office 365 客戶金鑰
+title: 瞭解 Office 365 客戶機碼的可用性金鑰
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -10,203 +10,201 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: 了解用來復原遺失的 Office 365 客戶金鑰的可用性金鑰。
-ms.openlocfilehash: 86f602a59f436a6ce42df583c88c0403eb17e5ae
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 瞭解用於復原遺失的 Office 365 客戶機碼的可用性金鑰。
+ms.openlocfilehash: cb5284f46245db1d00506ab0e178244aac53a21f
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076944"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604170"
 ---
-# <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>了解可用性金鑰的 Office 365 客戶金鑰
+# <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>瞭解 Office 365 客戶機碼的可用性金鑰
 
-可用性機碼是根機碼會自動產生並佈建當您建立的資料加密原則。 Office 365 會儲存並保護可用性機碼。 可用性機碼具有相同的作用就像使用客戶金鑰服務加密您提供兩個根機碼。 可用性機碼中自動換列的較低的機碼一層的金鑰階層。 不同於您提供並管理 Azure 金鑰保存庫中的機碼，您無法直接存取可用性機碼。 自動化 office 365 服務管理的可用性金鑰使用 PowerShell cmdlet。 這些指令程式起始的永遠不相關的直接存取權的可用性機碼自動化的作業。
+可用性機碼是當您建立資料加密原則時，會自動產生及布建的根機碼。 Office 365 儲存及保護可用性金鑰。 可用性機碼的功能類似于您用來提供服務加密的兩個根機碼與客戶金鑰。 可用性金鑰會將金鑰階層中的機碼一個層級向下回繞。 不同于您在 Azure Key Vault 中提供和管理的金鑰，您無法直接存取可用性金鑰。 Office 365 自動化服務會以程式設計方式管理可用性金鑰。 這些服務會啟動永不包括直接存取可用性機碼的自動作業。
 
-可用性按鍵的主要用途是提供從您管理的根機碼未預期遺失的復原能力。 遺失可能引發爭議性或惡意巨集指令的結果。 如果您遺失根機碼的控制，連絡 Microsoft 支援服務與 Microsoft 將協助您透過使用可用性金鑰復原的程序。 您將使用的可用性機碼移轉至新的資料加密原則與您佈建的新根機碼。
+可用性機碼的主要用途是從所管理的根機碼的未預期遺失中提供復原功能。 遺失可能是 mismanagement 或惡意動作的結果。 如果您喪失根機碼的控制權，請聯繫 Microsoft 支援人員和 Microsoft，以協助您使用可用性金鑰進行復原。 您將使用可用性金鑰，透過您布建的新根機碼遷移至新的資料加密原則。
 
-儲存區和可用性機碼的控制是刻意不同的三個原因的 Azure Key Vault 機碼：
+可用性機碼的儲存和控制會因下列三個原因而特意不同于 Azure 金鑰保存庫機碼：
 
-- 可用性機碼會提供復原、 」 符號玻璃 」 功能，如果這兩個 Azure Key Vault 機碼控制會遺失。
-- 邏輯控制項及安全存放裝置位置的區隔提供深度防禦，並提供保護，避免遺失所有索引鍵和您的資料，從單一攻擊或失敗點。
-- 如果 Office 365 服務無法到達因暫時性錯誤而裝載於 Azure 金鑰保存庫中的機碼，可用性機碼會提供高可用性功能。 此規則僅適用於 Exchange Online 與 Skype for Business 服務加密。 SharePoint Online、 商務用 OneDrive，以及小組檔案永遠不會使用可用性金鑰] 除非您明確指示 Microsoft，以啟動復原程序。
+- 如果同時控制所有 Azure 金鑰保存庫機碼，可用性金鑰會提供復原「中斷玻璃」功能。
+- 邏輯控制項與安全儲存位置的分離，可提供深入防護，並防止所有金鑰和您的資料遺失，也就是從單一攻擊或失敗點。
+- 如果 Office 365 服務因暫時性錯誤而無法到達 Azure Key Vault 中主控的金鑰，可用性金鑰會提供高可用性的功能。 此規則只適用于 Exchange Online 和商務用 Skype 服務加密。 SharePoint Online、商務 OneDrive，以及小組檔案永遠不會使用可用性金鑰，除非您明確指示 Microsoft 啟動復原程式。
 
-共用來保護您的資料，使用不同的保護和處理程序的金鑰管理責任最終可降低風險，所有金鑰 （，因此您的資料） 將會永久遺失或損毀。 Microsoft 為您提供權力透過停用或損毀的可用性索引鍵時保留該服務。 根據設計，在 Microsoft 沒有其他有可用性機碼權限： 這不是藉由 Office 365 服務的程式碼。
+共用責任若要保護您的資料，使用各種金鑰管理的保護和程式，最終會降低所有按鍵（因而您的資料）永久遺失或損毀的風險。 當您離開服務時，Microsoft 會為您提供停用或銷毀可用性機碼的唯一授權。 根據設計，Microsoft 沒有任何人能夠存取可用性金鑰：只有 Office 365 服務程式代碼可以存取它。
 
-請參閱[Microsoft 信任中心](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data)的我們如何保護機碼的詳細資訊。
+如需如何保護金鑰的詳細資訊，請參閱[Microsoft 信任中心](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data)。
   
-## <a name="availability-key-uses"></a>可用性機碼使用
+## <a name="availability-key-uses"></a>可用性金鑰使用
 
-可用性金鑰提供在此案例的復原功能外部因此或惡意的測試人員竊取您金鑰保存庫，或是當不慎引發爭議性會導致遺失根機碼的控制項。 所有 Office 365 服務使用客戶金鑰相容適都用於此復原功能。 個別服務以不同方式使用可用性鍵。 Office 365 只會使用可用性機碼如下所述的方式。
+可用性機碼針對主要 vault 的外部 malefactor 或惡意擁有人員竊取控制權，或當不慎 mismanagement 導致根機碼遺失時，提供復原功能。 這項修復功能適用于所有與客戶金鑰相容的 Office 365 服務。 個別服務使用可用性金鑰的方式不同。 Office 365 只會以下文所述的方式使用可用性金鑰。
 
-### <a name="exchange-online-and-skype-for-business-uses"></a>Exchange Online 和商務用 Skype
+### <a name="exchange-online-and-skype-for-business-uses"></a>Exchange Online 和商務用 Skype 使用
 
-除了復原功能，Exchange Online 和商務用 Skype 會使用可用性鍵以確保資料可用性期間暫時性或斷斷續續作業相關的問題，存取根機碼的服務。 當服務無法達到您在 Azure 金鑰保存庫中的客戶金鑰任一因為暫時性錯誤時，服務會自動使用可用性機碼。 服務永遠不會直接移至可用性機碼。
+除了復原能力之外，Exchange Online 和商務用 Skype 也會使用可用性金鑰，以確保暫時性或間歇運作問題（與存取根機碼的服務相關）中的資料可用性。 當服務因暫時性錯誤而無法到達 Azure Key Vault 中的任何客戶金鑰時，服務會自動使用可用性金鑰。 服務永不直接直接移到可用性金鑰。
 
-在 Exchange Online 組織和 Skype 的公司可能使用期間暫時性錯誤可用性金鑰來支援自動化後端服務，例如防毒、 e-探索、 資料外洩防護，信箱移動，自動化的系統和編製索引的資料。
+Exchange Online 中的自動系統和商務用 Skype 可在暫時性錯誤期間使用可用性金鑰，以支援自動化的後端服務，例如防病毒、電子探索、資料遺失防護、信箱移動和資料索引。
 
-### <a name="sharepointonlineonedriveforbusinessandteamsfiles-uses"></a>SharePoint Online、 商務用 OneDrive，以及小組檔案使用
+### <a name="sharepointonlineonedriveforbusinessandteamsfiles-uses"></a>SharePoint 線上、商務 OneDrive 及小組檔案使用
 
-SharePoint online、 商務用 OneDrive 和小組檔案，可用性的重點是永不使用復原功能之外，和客戶必須明確地指示 Microsoft，以啟動期間復原案例中使用可用性機碼。 自動化作業完全依賴您 Azure 金鑰保存庫中的客戶金鑰的服務。 深入的金鑰階層的這些服務的運作方式的詳細資訊，請參閱[如何 SharePoint Online、 商務用 OneDrive 和小組檔案所使用的可用性金鑰](#how-sharepoint-online-onedrive-for-business-and-teams-files-use-the-availability-key)。
+針對 SharePoint 線上 OneDrive、商務及小組檔案，可用性機碼永遠不會在復原能力之外使用，而且客戶必須明確指示 Microsoft 在復原案例中開始使用可用性金鑰。 自動化服務作業完全依賴您在 Azure Key vault 中的客戶金鑰。 如需有關這些服務之重要階層如何運作的深入資訊，請參閱[SharePoint 線上、商務 OneDrive 和團隊檔案如何使用可用性金鑰](#how-sharepoint-online-onedrive-for-business-and-teams-files-use-the-availability-key)。
 
-## <a name="availability-key-security"></a>可用性主要的安全性
+## <a name="availability-key-security"></a>可用性金鑰安全性
 
-Microsoft 與您共用資料保護的責任，以執行個體化的可用性機碼和廣泛的措施，以保護它。 Microsoft 不會公開給客戶的可用性金鑰直接控制。 例如，您可以只復原 （旋轉） 您所擁有的機碼 Azure 金鑰保存庫中。 如需詳細資訊，請參閱[復原或旋轉客戶金鑰或可用性機碼](customer-key-availability-key-roll.md)。
+Microsoft 會以您的方式具現化可用性金鑰並採取大量措施加以保護，分享資料保護的責任。 Microsoft 不會公開對客戶可用性機碼的直接控制權。 例如，您可以在 Azure Key Vault 中只擲出（旋轉）您擁有的金鑰。 如需詳細資訊，請參閱[滾或輪替客戶金鑰或可用性金鑰](customer-key-availability-key-roll.md)。
 
-### <a name="availability-key-secret-stores"></a>可用性金鑰秘密存放區
+### <a name="availability-key-secret-stores"></a>可用性金鑰密碼存放區
 
-Microsoft 會保護在類似客戶使用 Azure 金鑰保存庫的存取控制 」、 「 內部秘密存放區中的可用性機碼。 我們實作存取控制，以防止 Microsoft 系統管理員無法直接存取中包含機密資料。 密碼儲存作業，包括關鍵旋轉、 刪除及擷取發生透過自動化永遠不會牽涉到的直接存取權的可用性機碼的命令。 調整這些命令的存取限制在特定工程師，且需要透過內部的工具，加密箱的權限提升。 權限提升需要管理員核准及之前要授與的正當理由。 Lockbox 可確保存取繫結與自動存取撤銷時的時間到期或工程師登出的時間。
+Microsoft 會在存取控制的內部機密存放區中，像客戶對向的 Azure 重要存放庫，保護可用性金鑰。 我們會執行存取控制，以防止 Microsoft 系統管理員直接存取中所含的機密。 機密儲存區作業（包括金鑰輪替和刪除）會透過自動化命令進行，而這些命令永遠不會包含對可用性金鑰的直接存取權。 機密存放區管理作業會限制在特定的工程師，並且需要透過內部工具（密碼箱）進行許可權提升。 許可權提升需要管理員核准和理由才能授與。 密碼箱可確保在時間到期或工程師登出時，存取受限於自動存取撤銷。
 
-**Exchange Online 和商務用 Skype**可用性機碼會儲存在 Active Directory 密碼存放區。 Exchange Online 的 Active Directory 是由將流量路由傳送的管理樹系並內含的物件、 身分識別和資料容量樹系所組成。 容量的樹系是由帳戶樹系和資源樹系所組成。 帳戶樹系具有多個容量網域控制站與另一個同步處理的。 可用性機碼是安全地儲存於這些容量網域控制站。 此安全存放裝置位置是個別而獨立的 SharePoint Online、 商務用 OneDrive，以及小組檔案秘密存放區。
+**Exchange online 和商務用 Skype**可用性金鑰儲存在 Exchange Online Active Directory 機密存放區中。 可用性機碼會安全地儲存在 Active Directory 網域控制站內租使用者特定容器內。 這種安全的儲存位置與「SharePoint 線上」、「商務 OneDrive」和「小組檔案機密」存放區分開和隔離。
 
-**SharePoint Online、 商務用 OneDrive 和小組檔案**可用性機碼儲存在由服務小組內部秘密存放區。 這安全，機密資料儲存服務應用程式端點與 SQL 資料庫後端作為前端伺服器。 可用性機碼會儲存在 SQL 資料庫，並會進行三重包裝 （加密） 所用的 AES 256 和 HMAC 組合來加密靜態的可用性索引鍵的秘密 store 加密金鑰。 秘密 store 加密金鑰會儲存在相同的 SQL 資料庫的邏輯隔離元件，並進一步加密具有內含受管理的 Microsoft 憑證授權單位 (CA) 的憑證中的 RSA 2048 索引鍵。 這些憑證會儲存在資料庫執行作業的秘密存放區前端伺服器。
+**SharePoint 線上、商務 OneDrive 及小組**檔案可用性機碼會儲存在由服務小組所管理的內部機密存放區中。 這種安全的機密儲存體服務具有前端伺服器的應用程式端點和 SQL 資料庫作為後端伺服器。 可用性機碼是儲存在 SQL 資料庫中，而且會以機密存放區加密金鑰進行包裝（加密），以使用 AES-256 和 HMAC 的組合來加密靜態的可用性金鑰。 機密儲存區加密機碼會儲存在相同 SQL 資料庫的邏輯隔離元件中，而且會以 Microsoft 憑證授權單位單位（CA）所管理之憑證中包含的 RSA-2048 機碼進一步加密。 這些憑證會儲存在針對資料庫執行作業的機密存放區前端伺服器中。
 
-### <a name="defense-in-depth"></a>深度防禦
+### <a name="defense-in-depth"></a>深入防護
 
-Microsoft 會採用防禦縱深策略以防止惡意的動作項目影響的機密性、 完整性或儲存在 Microsoft Cloud 中的客戶資料的可用性。 特定的預防性和偵查控制項所實作，以保護密碼儲存區和可用性金鑰做些安全性策略的一部分。
+Microsoft 採用縱深防禦策略，防止惡意參與者影響儲存在 Microsoft 雲端中的客戶資料的機密性、完整性或可用性。 實施特定的預防和偵探控制措施，以保護機密存放區和可用性機碼，作為總體安全性策略的一部分。
 
-Office 365 內建以預防不當使用可用性機碼。 應用程式層級是透過此機碼，包括可用性機碼，可以用來加密及解密資料的唯一方法。 只有 Office 365 服務的程式碼有解譯及周遊加密和解密活動的金鑰階層的能力。 如果是惡意的 Microsoft 系統管理員來防止從秘密存放區擷取可用性機碼的控制項，機碼都無法使用存取客戶資料。 客戶金鑰、 可用性機碼，其他階層式金鑰和客戶資料的存放位置之間存在邏輯隔離。 事件中一或多個位置遭到洩漏，這項隔離會減少資料的風險的風險。 在階層中的每個圖層具有內建於 24 x 7 入侵偵測功能來保護資料及機密資料存放區。
+Office 365 的建立是為了避免濫用可用性金鑰。 應用層是唯一一種方法，可讓您用來加密及解密資料的索引鍵（包括可用性金鑰）。 只有 Office 365 服務程式代碼能夠轉譯及遍歷金鑰階層，以進行加密和解密活動。 客戶金鑰、可用性機碼、其他階層機碼和客戶資料的儲存位置之間存在邏輯隔離。 這項隔離可降低事件中的一個或多個位置遭到破壞時，資料洩密的風險。 階層中的每一層都有內建的「全天候入侵偵測」功能，以保護儲存的資料和機密。
 
-若要避免未經授權的存取包括可用性金鑰秘密存放區的內部系統實作存取控制。 Microsoft 工程師不需要的可用性金鑰秘密存放區的直接存取。 存取控制項上的其他詳細資訊，請先檢閱[Office 365 中的系統管理存取控制](https://docs.microsoft.com/Office365/securitycompliance/office-365-administrative-access-controls-overview)。
+會執行存取控制，以防止對內部系統進行未經授權的存取，包括可用性金鑰機密存放區。 Microsoft 工程師無法直接存取可用性金鑰機密存放區。 如需存取控制的其他詳細資訊，請參閱[Office 365 中的系統管理存取控制](https://docs.microsoft.com/Office365/securitycompliance/office-365-administrative-access-controls-overview)。
 
-技術控制項登入高度為最低權限服務帳戶，可能用攻擊者模擬 Office 365 服務，以防止 Microsoft 人員。 例如，這些控制項防止互動式登入。
+技術控制措施可防止 Microsoft 人員登入高許可權的服務帳戶，而攻擊者可能會使用這些帳戶來模擬 Office 365 服務。 例如，這些控制措施會防止互動式登入。
 
-安全性記錄及監視功能控制項是另一位深度防禦實作可保護減輕 Microsoft 服務和資料的風險。 Microsoft 服務小組已部署作用中的監視解決方案所產生的警示和稽核記錄。 所有服務小組會將其記錄檔都上載至集中存放庫的記錄檔彙總，而處理。 內部工具會自動檢查記錄，以確認服務運作正常最佳、 彈性，且安全的狀態。 不尋常的活動會標示為進一步檢閱。
+安全性記錄和監視控制項是另一個防禦防護的防禦措施，可降低 Microsoft 服務和資料的風險。 Microsoft 服務小組已部署使用中監控解決方案，以產生警示和審核記錄。 所有服務小組都會將其記錄上傳至中央存放庫，其中記錄會進行匯總和處理。 內部工具會自動檢查記錄，以確認服務是否以最佳、具彈性且安全的狀態運作。 已標記不尋常的活動以進一步複查。
 
-任何記錄事件，表示潛在的 Microsoft 安全性原則違規情形會立即被帶到注意的 Microsoft 安全性小組。 Office 365 安全性已設定的警示，以偵測嘗試的存取可用性金鑰秘密存放區。 如果 Microsoft 人員嘗試互動式登入服務帳戶，也就是禁止受保護的存取控制，也會產生警示。 Office 365 安全性也會偵測並在偏差從標準基準線上操作的 Office 365 服務時，系統會通知。 Malefactors 嘗試誤用 Office 365 服務會觸發警示產生冒犯者的收回 Microsoft 雲端環境中。
+任何指出可能違反 Microsoft 安全原則的記錄事件，都會立即進入 Microsoft 安全小組的注意力。 Office 365 安全性已設定警示，以偵測嘗試存取可用性金鑰機密存放區。 如果 Microsoft 人員嘗試以互動式方式登入服務帳戶，而這是由存取控制所禁止和保護的，也會產生警示。 Office 365 的安全性也會在 Office 365 服務偏離一般基準作業時，偵測和警示。 Malefactors 嘗試濫用 Office 365 服務會觸發警示，導致罪犯從 Microsoft cloud 環境逐出。
 
-## <a name="use-the-availability-key-to-recover-from-key-loss"></a>使用復原金鑰遺失的可用性索引鍵
+## <a name="use-the-availability-key-to-recover-from-key-loss"></a>使用可用性金鑰從金鑰遺失中復原
 
-如果您遺失的客戶金鑰控制，可用性機碼會提供您復原，並重新加密資料的能力。
+如果您喪失客戶機碼的控制權，可用性金鑰可讓您復原和重新加密您的資料。
 
-### <a name="recovery-procedure-for-exchange-online-and-skype-for-business"></a>Exchange Online 和商務用 Skype 的復原程序
+### <a name="recovery-procedure-for-exchange-online-and-skype-for-business"></a>Exchange Online 和商務用 Skype 的復原程式
 
-如果您遺失的客戶金鑰控制，可用性機碼可讓您以復原資料，並使受影響的 Office 365 資源回復上線的功能。 可用性機碼會繼續以保護您的資料，雖然您復原。在高的層級，若要完全復原按鍵而造成遺失，您需要建立新的 DEP 和受影響的資源移至新的原則。
+如果您喪失客戶機碼的控制權，可用性金鑰可讓您復原資料，並將受影響的 Office 365 資源傳回線上。 當您復原時，可用性機碼會繼續保護您的資料。在高層次上，若要完全從金鑰遺失中復原，您必須建立新的 DEP，並將受影響的資源移至新的原則。
 
-若要使用新的客戶金鑰來加密資料，在 Azure 金鑰保存庫中建立新的機碼，建立新的 DEP 使用新的客戶金鑰，然後將新的 DEP 指派給目前使用其機碼已遺失或洩漏先前 DEP 加密的信箱。
+若要使用新的客戶金鑰來加密您的資料，請在 Azure Key Vault 中建立新的金鑰，使用新的客戶機碼建立新的 DEP，然後將新的 DEP 指派給目前使用舊 DEP （金鑰已遺失或損毀）加密的信箱。
 
-此重新加密程序可能需要長達 72 小時。 這是當您變更相依性的標準持續時間
+這種重新加密處理常式可能需要長達72小時。 當您變更 DEP 時，這是標準持續時間。
   
-### <a name="recovery-procedure-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>復原程序的 SharePoint Online、 商務用 OneDrive 和小組檔案
+### <a name="recovery-procedure-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>SharePoint 線上、商務 OneDrive 及小組檔案的復原程式
 
-SharePoint online、 商務用 OneDrive 和小組檔案可用性機碼是永不使用復原功能之外。 您必須明確地指示 Microsoft，以啟動期間復原案例中使用可用性機碼。 若要啟動的復原程序，請連絡 Microsoft，以啟用可用性金鑰。 一旦啟動，可用性索引鍵是自動用來解密您讓您可使用新建立的 DEP 關聯至新的客戶金鑰來加密資料的資料。  
+針對 SharePoint 線上、商務用 OneDrive 與小組檔案，可用性機碼永遠不會在復原能力以外使用。 您必須明確指示 Microsoft 在復原案例中開始使用可用性金鑰。 若要啟動修復程式，請與 Microsoft 聯繫以啟用可用性金鑰。 一旦啟用，可用性金鑰即會自動用於解密您的資料，讓您可以使用新建立的 DEP （與新的客戶機碼相關聯）來加密資料。  
 
-這項作業是在您的組織中的網站數目成正比。 一旦您呼叫 Microsoft，以使用可用性機碼，您應該會完全在線上約四個小時內。
+此作業與您組織中的網站數目成正比。 一旦您呼叫 Microsoft 使用可用性金鑰，您應該在大約四小時內完全線上。
 
-## <a name="how-exchange-online-and-skype-for-business-use-the-availability-key"></a>Exchange Online 和商務用 Skype 如何使用可用性機碼
+## <a name="how-exchange-online-and-skype-for-business-use-the-availability-key"></a>Exchange Online 和商務用 Skype 如何使用可用性金鑰
 
-當您建立 DEP 使用客戶金鑰時，Office 365 會產生該 DEP 相關聯的資料加密原則金鑰 （DEP 索引鍵） 此服務會將 DEP 金鑰加密三次： 一次每個客戶金鑰與一次對可用性機碼。 儲存僅限 DEP 金鑰加密的版本，並只可以使用客戶金鑰或可用性金鑰解密 DEP 金鑰。 DEP 鍵然後用來加密信箱金鑰，加密個別的信箱。
+當您使用客戶金鑰建立 DEP 時，Office 365 會產生與該 DEP 相關聯的資料加密原則機碼（DEP 金鑰）。 服務會將 DEP 機碼加密三次：一次使用每個客戶機碼，然後使用可用性金鑰。 只會儲存加密版本的 DEP 機碼，而且 DEP 機碼只能使用客戶機碼或可用性金鑰解密。 然後，使用 DEP 機碼加密個別信箱的信箱金鑰。
   
-Office 365 會遵循此程序來解密，客戶會使用服務時提供資料：
+當客戶使用此服務時，Office 365 會遵循此程式來解密及提供資料：
   
-1. 使用客戶金鑰 DEP 金鑰解密。
+1. 使用客戶金鑰解密 DEP 金鑰。
 
 2. 使用解密的 DEP 金鑰來解密信箱金鑰。
 
-3. 使用已解密的信箱金鑰來解密信箱本身，讓您存取信箱內的資料。
+3. 使用解密的信箱金鑰來解密信箱本身，讓您可以存取信箱內的資料。
 
-Office 365 會發出兩個解密要求至 Azure Key Vault，稍微偏移解密 DEP 機碼。 若要完成的第一個提供結果，取消其他要求。
+## <a name="how-sharepoint-online-onedrive-for-business-and-teams-files-use-the-availability-key"></a>SharePoint 線上、商務 OneDrive 及小組檔如何使用可用性金鑰
 
-## <a name="how-sharepoint-online-onedrive-for-business-and-teams-files-use-the-availability-key"></a>如何在 SharePoint Online、 商務用 OneDrive，以及小組檔案使用的可用性機碼
-
-SharePoint Online 和 OneDrive for Business 架構、 實作客戶金鑰及可用性的機碼是不同於 Exchange Online 和商務用 Skype。
+SharePoint 線上和商務 OneDrive 客戶金鑰和可用性金鑰的實施，與 Exchange Online 和商務用 Skype 不同。
   
-當組織移至客戶管理機碼時，Office 365 會建立租用戶特定中繼機碼 (TIK)。 Office 365 加密 TIK 兩次，一次使用每個客戶金鑰，並將儲存兩個 TIK 加密的版本。 儲存 TIK 的加密的版本，以及 TIK 只能使用客戶金鑰解密。 TIK 然後用來加密網站金鑰，然後用來加密 blob 機碼 （也稱為檔案區塊機碼）。 根據檔案大小，該服務可能檔案分割成多個檔案的區塊每個具有唯一索引鍵。 Blob （檔案的區塊） 本身的 blob 機碼會使用加密且儲存在 Microsoft Azure Blob 儲存體服務。
+當組織移至客戶管理的金鑰時，Office 365 會建立租使用者特定的中間機碼（TIK）。 Office 365 會將 TIK 加密兩次（使用每個客戶機碼一次），然後儲存 TIK 的兩個加密版本。 只會儲存 TIK 的加密版本，且只能使用客戶機碼解密 TIK。 然後，TIK 用來加密網站機碼，然後用來加密 blob 金鑰（也稱為「檔案區塊金鑰」）。 根據檔案大小，服務可以使用唯一金鑰將檔案分割成多個檔區塊。 Blob （檔區塊）本身會以 blob 金鑰加密，並儲存在 Microsoft Azure Blob 儲存服務中。
   
-Office 365 會遵循此程序來解密，客戶會使用服務時提供客戶檔案：
+當客戶使用此服務時，Office 365 會遵循此程式來解密及提供客戶檔案：
 
-1. 解密使用客戶金鑰 TIK。
+1. 使用客戶金鑰組 TIK 進行解密。
 
-2. 使用解密的 TIK 網站金鑰解密。
+2. 使用解密的 TIK 來解密網站金鑰。
 
 3. 使用解密的網站金鑰來解密 blob 金鑰。
 
 4. 使用解密的 blob 金鑰來解密 blob。
 
-Office 365 解密 TIK 發出兩個解密要求至 Azure Key Vault，稍微偏移。 若要完成的第一個提供結果，取消其他要求。
+Office 365 會以輕微位移的方式發出兩個解密要求到 Azure Key Vault，解密 TIK。 Furnishes 結果的第一個，請取消其他要求。
   
-以防您會失去存取至您的客戶金鑰，Office 365 也使用可用性金鑰加密 TIK，並將此儲存以及與每個客戶金鑰加密 TIKs。 使用可用性金鑰加密 TIK 只適用於客戶會呼叫 Microsoft 編列復原路徑時遭到惡意或不小心，它們有其機碼，遺失存取。
+當您喪失客戶金鑰的存取權時，Office 365 也會使用可用性金鑰來加密 TIK，並將其與使用每個客戶金鑰加密的 TIKs 一起儲存。 只有當客戶呼叫 Microsoft 以在存取其機碼失敗時（惡意或無意）存取其金鑰時，才會使用以可用性金鑰加密的 TIK。
   
-對於可用性和規模原因，已解密的 TIKs 快取時間限制記憶體快取中。 兩個小時才能 TIK 快取設為過期，Office 365 會嘗試解密每個 TIK。 解密 TIKs 延伸的快取的存留期。 如果 TIK 解密失敗相當長的時間，Office 365 就會產生通知的快取到期時間之前工程警示。 只有當客戶會呼叫 Microsoft Office 365 會起始復原作業，其中包括解密 TIK 和一組新的 Microsoft 秘密存放區和上架再次使用 [解密租用戶中儲存與可用性機碼 TIK 嗎客戶提供 Azure Key Vault 鍵。
+出於可用性與縮放原因，已解密的 TIKs 會在一個時段有限的記憶體快取中快取。 在 TIK 快取設定為過期前的兩個小時，Office 365 會嘗試解密每個 TIK。 解密 TIKs 會延伸快取的存留期。 如果 TIK 解密失敗很長一段時間，Office 365 會產生警示，以在快取到期之前通知工程。 只有在客戶撥打 Microsoft 時，Office 365 才會啟動復原作業，此作業需要使用儲存在 Microsoft 機密存放區中的可用性金鑰來解密 TIK，然後再使用解密的 TIK 及一組新的客戶提供的 Azure 金鑰保存庫金鑰。
   
-截至今天，客戶金鑰涉及儲存在 Azure blob 存放區，但不是 SharePoint Online 的清單項目或中繼資料儲存在 SQL 資料庫中的 SharePoint Online 檔案資料的加密和解密鏈結。 Office 365 不會不使用可用性鍵用於 Exchange Online、 Skype 商務、 SharePoint Online、 商務用 OneDrive 和小組以外的案例上述，為客戶起始的檔案。 客戶資料的人性化存取受保護的客戶加密箱。
+到目前為止，客戶金鑰會包含在 Azure blob 儲存區中儲存的 SharePoint 線上檔案資料的加密和解密鏈，但不會 SharePoint 線上清單專案或儲存在 SQL 資料庫中的中繼資料。 Office 365 不會將可用性金鑰用於 Exchange Online、商務用 Skype、SharePoint Online、商務用 OneDrive，而不是上述案例所述（由客戶發起）。 客戶資料的人員存取受到客戶資料箱的保護。
 
-## <a name="availability-key-triggers"></a>可用性金鑰觸發程序
+## <a name="availability-key-triggers"></a>可用性機碼觸發器
 
-Office 365 會觸發只在特定情況下的可用性索引鍵。 這些情況下會有所不同由服務。
+Office 365 只會在特定情況下觸發可用性金鑰。 這些情況會因服務而有所不同。
 
-### <a name="triggers-for-exchange-online-and-skype-for-business"></a>觸發程序的 Exchange Online 和商務用 Skype
+### <a name="triggers-for-exchange-online-and-skype-for-business"></a>Exchange Online 和商務用 Skype 的觸發器
   
-1. Office 365 會讀取信箱來判斷 Azure 金鑰保存庫中的兩個客戶機碼位置指派 DEP。
+1. Office 365 會讀取信箱所指派的 DEP，以便決定 Azure Key Vault 中的兩個客戶機碼的位置。
 
-2. Office 365 隨機選擇下列其中一個兩個客戶金鑰從 DEP，然後將要求傳送至 Azure 金鑰保存庫解除包裝使用客戶金鑰 DEP 機碼。
+2. Office 365 會隨機從 DEP 選擇兩個客戶機碼的其中一個，並將要求傳送至 Azure 金鑰 Vault，以使用客戶金鑰解對 DEP 金鑰。
 
-3. 若要解除包裝使用客戶金鑰 DEP 機碼的要求失敗，Office 365 第二個將要求傳送至 Azure Key Vault，此時指示 」，以使用替代 （秒） 的客戶金鑰。
+3. 如果使用客戶金鑰解包 DEP 金鑰的要求失敗，Office 365 會傳送第二個要求到 Azure Key Vault，這次是用來指示其使用備用（第二）客戶金鑰。
 
-4. 若要解除包裝使用客戶金鑰 DEP 機碼的第二個要求失敗，Office 365 會檢查這兩個要求的結果。
+4. 如果第二個要求使用客戶機碼解對 DEP 機碼的要求失敗，Office 365 會檢查這兩個要求的結果。
 
-    - 如果檢查判斷要求失敗傳回系統錯誤：
+    - 如果檢查會判斷傳回系統錯誤失敗的要求：
 
-       - Office 365 會觸發可用性金鑰來解密 DEP 金鑰。
+       - Office 365 會觸發可用性金鑰來解密 DEP 機碼。
 
-       - Office 365 然後使用 DEP 金鑰來解密信箱金鑰並完成使用者要求。 
+       - 然後，Office 365 會使用 DEP 金鑰來解密信箱機碼，並完成使用者要求。 
 
-       - 在此情況下，Azure 金鑰保存庫是無法回應或無法存取之因為暫時性錯誤。
+       - 在此情況下，Azure Key Vault 可能由於暫時性錯誤而無法回應或無法存取。
 
-    - 如果檢查判斷要求失敗傳回 「 拒絕存取 」:
+    - 如果考試判斷傳回拒絕存取失敗的要求：
 
-       - 這表示故意、 不慎或惡意巨集指令已採取來轉譯客戶金鑰無法使用 （例如，在過程資料清除一部分離開服務）。
+       - 這表示故意、無意或惡意的動作可將客戶機碼轉譯成不可用（例如，在離開服務的情況下，在資料清除程式期間）。
 
-       - 在此情況下，將不會使用可用性金鑰、 使用者要求失敗，及使用者會收到錯誤訊息。
+       - 在此情況下，可用性金鑰只會用於系統動作，而不適用於使用者動作，使用者要求會失敗，且使用者會收到錯誤訊息。
 
 >[!IMPORTANT]
->Office 365 服務的程式碼一定會具有隨手的有效登入 token 優先提供的值新增雲端服務的客戶資料。 因此，直到可用性金鑰已遭刪除，它可用於做為後援動作，起始，或是內部、 建立或移動信箱 Exchange Online 與 Skype for Business，例如搜尋編製索引。 這適用於這兩種暫時性錯誤，以及 Azure Key Vault 拒絕存取要求。
+>Office 365 服務程式代碼永遠都具有有效的登入權杖，以用於透過客戶資料提供增值雲端服務。 因此，在刪除可用性機碼之前，可將其當作 Exchange Online 及內部的 Exchange Online 和商務用 Skype （如搜尋索引建立或移動信箱）所啟動的動作，用作 fallback。 這同時適用于暫時性錯誤和存取 Azure Key Vault 的拒絕要求。
 
-### <a name="triggers-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>SharePoint online、 商務用 OneDrive，以及小組會觸發檔案
+### <a name="triggers-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>SharePoint 線上、商務 OneDrive 及小組檔案的觸發器
 
-SharePoint online、 商務用 OneDrive 和小組檔案，可用性的重點是永不使用復原功能之外，和客戶必須明確地指示 Microsoft，以啟動期間復原案例中使用可用性機碼。
+針對 SharePoint 線上 OneDrive、商務及小組檔案，可用性機碼永遠不會在復原能力之外使用，而且客戶必須明確指示 Microsoft 在復原案例中開始使用可用性金鑰。
 
-## <a name="audit-logs-and-the-availability-key"></a>稽核記錄和可用性機碼
+## <a name="audit-logs-and-the-availability-key"></a>審核記錄和可用性金鑰
 
-自動化 Office 365 程序中的系統的所有資料在流過系統，以提供雲端服務，例如防毒、 e-探索、 資料遺失防護，資料編製索引。 Office 365 並不會產生執行活動的客戶顯示記錄檔。 此外，Microsoft 人員不存取您的資料，這些一般系統作業的一部分。
+Office 365 中的自動化系統處理所有的資料，以提供雲端服務（例如，反病毒、電子探索、資料遺失防護和資料索引）。 Office 365 不會產生此活動的客戶可見記錄檔。 此外，Microsoft 人員不會在這些一般系統作業中存取您的資料。
 
-### <a name="exchange-online-and-skype-for-business-availability-key-logging"></a>Exchange Online 與 Skype for Business 可用性索引鍵記錄
+### <a name="exchange-online-and-skype-for-business-availability-key-logging"></a>Exchange Online 和商務用 Skype 可用性機碼記錄
 
-Exchange Online 和商務用 Skype 會自動在暫時性錯誤期間使用的可用性機碼。 這個後援發生時，Office 365 會發佈客戶顯示記錄檔可存取的安全性與合規性中心。 可用性金鑰作業的稽核記錄檔記錄就會產生這些服務會使用可用性金鑰每次。 新的記錄類型，呼叫活動類型 「 後援到可用性的金鑰 」 與 「 客戶金鑰服務加密 」 可讓系統管理員來篩選[整合的稽核記錄](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)搜尋結果，以檢視可用性索引鍵記錄。 可用性索引鍵記錄取得產生只有當客戶金鑰可用來存取資料時，不能用於 Microsoft 服務受管理的機碼。
+當 Exchange Online 和商務用 Skype 存取可用性機碼以提供服務時，office 365 會發佈可從安全與合規性中心存取之用戶端可見記錄。 每當服務使用可用性金鑰時，就會產生可用性機碼作業的審計記錄記錄。 名為 "Customer Key Service Encryption" 的新記錄類型，其 activity type "Fallback to Availability Key" 可讓系統管理員篩選[整合的審計記錄](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)搜尋結果，以查看可用性機碼記錄。
 
-記錄包含屬性，例如日期、 時間、 活動、 組織識別碼，以及資料加密原則識別碼。 記錄會提供 Office 365 整合的稽核記錄的一部分且可存取 [Office 365 安全性與合規性中心的稽核記錄搜尋] 索引標籤。
+記錄檔包含諸如日期、時間、活動、組織識別碼及資料加密原則識別碼等屬性。 該記錄可作為 Office 365 整合的審計記錄檔的一部分，且可從 Office 365 安全性與合規性中心的 [審核記錄檔搜尋] 索引標籤進行存取。
 
-![稽核記錄搜尋可用性重要事件](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
+![可用性機碼事件的審計記錄搜尋](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
 
-Exchange Online 與 Skype 商務可用性索引鍵記錄使用與 Office 365 管理活動[常見的結構描述](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)新增自訂的參數： 原則識別碼、 範圍金鑰版本 Id 及要求 id。
+Exchange Online 和商務用 Skype 可用性機碼記錄使用具有新增自訂參數的 Office 365 管理活動[通用架構](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)： Policy Id、範圍鍵版本識別碼和要求識別碼。
 
-![可用性金鑰的自訂參數](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
+![可用性機碼自訂參數](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
 
-### <a name="sharepoint-online-onedrive-for-business-and-teams-files-availability-key-logging"></a>SharePoint Online、 商務用 OneDrive，以及小組檔案可用性索引鍵記錄
+### <a name="sharepoint-online-onedrive-for-business-and-teams-files-availability-key-logging"></a>SharePoint 線上、商務 OneDrive 和團隊檔案可用性機碼記錄
 
-可用性索引鍵記錄並未提供這些服務的尚未。 SharePoint Online、 商務用 OneDrive 和小組檔案，可用性時，用於復原用途另外指示機碼僅 Microsoft，以啟動。 因此，您已知道每個可用性機碼用於這些服務的事件。
+可用性機碼記錄尚未提供這些服務。 針對 SharePoint 線上、商務及小組檔案的 OneDrive，可用性機碼只會在由您指示時由 Microsoft 啟動，以供復原之用。 因此，您已知道每個可用於這些服務之可用性金鑰的事件。
 
-## <a name="availability-key-in-the-customer-key-hierarchy"></a>客戶金鑰階層中的可用性機碼
+## <a name="availability-key-in-the-customer-key-hierarchy"></a>客戶金鑰階層中的可用性金鑰
   
-Office 365 會使用可用性金鑰來為客戶金鑰服務加密所建立的金鑰階層中包裝的機碼較低層。 服務之間有不同的金鑰階層。 可用性機碼和其他金鑰階層中的每個適用的服務之間的演算法也不同。 不同服務所使用的可用性演算法如下所示：
+Office 365 會使用可用性金鑰來包裝為客戶金鑰服務加密所建立之金鑰階層中的小按鍵層級。 服務之間存在不同的主要階層。 金鑰演算法也會在每個適用服務階層中的可用性機碼和其他機碼之間有所不同。 不同服務使用的可用性金鑰演算法如下：
 
-- Exchange Online 與 Skype for Business 可用性機碼使用 AES 256。
+- Exchange Online 和商務用 Skype 可用性金鑰使用 AES-256。
 
-- SharePoint Online、 商務用 OneDrive，以及小組檔案可用性機碼使用 RSA 2048。
+- SharePoint 線上、商務 OneDrive 和團隊檔案可用性機碼使用 RSA-2048。
 
-### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>加密 cipher 用來加密金鑰，Exchange Online 和商務用 Skype
+### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>加密密碼，用來加密 Exchange Online 和商務用 Skype 的金鑰
 
-![Exchange Online 客戶金鑰加密 cipher](../media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Exchange Online 客戶機碼的加密密碼](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
-### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-and-onedrive-for-business"></a>用來加密金鑰，SharePoint Online 和商務用 OneDrive 加密 cipher
+### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-and-onedrive-for-business"></a>用來加密 SharePoint 線上和商務 OneDrive 的金鑰的加密密碼
 
-![SharePoint Online 客戶金鑰加密 cipher](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![SharePoint Online 客戶機碼的加密密碼](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>相關文章
 
-- [Office 365 使用客戶金鑰服務加密](customer-key-overview.md)
+- [使用 Office 365 的客戶金鑰服務加密](customer-key-overview.md)
 
-- [設定 Office 365 客戶金鑰](customer-key-set-up.md)
+- [設定 Office 365 的客戶金鑰](customer-key-set-up.md)
 
-- [管理 office 365 的客戶金鑰](customer-key-manage.md)
+- [管理 Office 365 的客戶金鑰](customer-key-manage.md)
 
-- [展開或旋轉客戶金鑰或可用性機碼](customer-key-availability-key-roll.md)
+- [滾動或輪替客戶金鑰或可用性金鑰](customer-key-availability-key-roll.md)

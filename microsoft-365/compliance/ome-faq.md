@@ -1,9 +1,11 @@
 ---
 title: Office 365 郵件加密常見問題集
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 02/11/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -11,133 +13,172 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
-description: 对 Office 365 中的新邮件保护功能如何工作有疑问？ 在此处查看答案。
-ms.openlocfilehash: 1625ecd3f2c7991e2726539bcfa0c772d1ffea59
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 有關 Office 365 中的新郵件保護功能如何運作的問題嗎？ 在這裡檢查答案。
+ms.openlocfilehash: 8d0b65ad60365154f8a35c5afe0b71b5a50d29a8
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077844"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42605321"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 郵件加密常見問題集
 
-对 Office 365 中的新邮件保护功能如何工作有疑问？ 在此处查看答案。 此外，请查看 Azure[信息保护中有关数据保护的常见问题，](https://docs.microsoft.com/information-protection/get-started/faqs-rms)了解 Azure 信息保护中有关数据保护服务 Azure 权限管理的问题。
+有關 Office 365 中的新郵件保護功能如何運作的問題嗎？ 在這裡檢查答案。 此外，請參閱[Azure 資訊保護中有關資料](https://docs.microsoft.com/information-protection/get-started/faqs-rms)保護的常見問題解答，以取得 Azure 資訊保護中有關資料保護服務（Azure 版權管理）問題的答案。
 
-||
-|:-----|
-|本文是关于 Office 365 消息加密的较大系列文章的一部分。 本文面向管理员和 ITPros。 如果您只想查找有关发送或接收加密邮件的信息，请参阅[Office 365 邮件加密 （OME）](ome.md)中的文章列表，并找到最适合您需求的文章。 |
-||
+## <a name="what-is-office-365-message-encryption-ome"></a>何謂 Office 365 郵件加密（OME）？
+
+OME 結合電子郵件加密和版權管理功能。 Rights management 功能由 Azure 資訊保護供電。
   
-## <a name="what-is-office-365-message-encryption-ome"></a>什么是 Office 365 邮件加密 （OME）？
+## <a name="who-can-use-ome"></a>誰可以使用 OME？
 
-OME 结合了电子邮件加密和权限管理功能。 权限管理功能由 Azure 信息保护提供支持。
+在下列情況下，您可以使用 OME 的新功能：
   
-## <a name="who-can-use-ome"></a>谁可以使用 OME？
+- 如果您從未在 Office 365 中設定 Exchange Online 的 OME 或 IRM。
 
-您可以在以下条件下使用 OME 的新功能：
+- 如果您已設定 OME 和 IRM，則當您從 Azure 資訊保護使用 Azure Rights Management 服務時，您可以使用這些步驟。
+
+- 如果您使用的是 Active Directory Rights Management service （AD RMS）的 Exchange Online，您就無法立即啟用這些新功能。 相反地，您必須先將[AD RMS 遷移到 Azure 資訊保護](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)。 當您完成遷移時，您可以成功設定 OME。
+
+  如果您選擇繼續搭配使用內部部署 AD RMS 與 Exchange Online，而不是遷移至 Azure 資訊保護，您將無法使用這些新功能。
+
+## <a name="what-subscriptions-do-i-need-to-use-the-new-ome-capabilities"></a>我需要哪些訂閱才能使用新的 OME 功能？
+
+若要使用新的 OME 功能，您需要下列其中一個計畫：
   
-- 如果您从未在 Office 365 中设置 OME 或 IRM 进行联机交换。
+- Office 365 郵件加密是以 Office 365 企業版 E3 和 E5 為一部分提供，Microsoft 企業版 E3 和 E5、Microsoft 365 Business、Office 365 A1、A3 和 A5，以及 Office 365 政府 G3 和 G5。 客戶不需要其他授權，即可接收 Azure 資訊保護所支援的新保護功能。
 
-- 如果已设置 OME 和 IRM，则可以使用 Azure 信息保护中的 Azure 权限管理服务，可以使用这些步骤。
+- 您也可以將 Azure 資訊保護方案1新增至下列方案，以接收新的 Office 365 郵件加密功能： Exchange Online Plan 1、Exchange Online Plan 2、Office 365 F1、Office 365 商務基本版、Office 365 商務津貼或Office 365 Enterprise E1。
 
-- 如果您使用"在线交换"与活动目录权限管理服务 （AD RMS）一起使用，则不能直接启用这些新功能。 相反，您需要首先[将 AD RMS 迁移到 Azure 信息保护。](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) 完成迁移后，可以成功设置 OME。
+- 每個使用者從 Office 365 郵件加密中所受益的使用者，都必須經過授權才能享受功能。
 
-    如果选择继续使用本地 AD RMS 与 Exchange Online 一起使用，而不是迁移到 Azure 信息保护，您将无法使用这些新功能。
+- 如需完整清單，請參閱 Office 365 郵件加密的[Exchange Online 服務說明](https://technet.microsoft.com/library/exchange-online-service-description.aspx)。
 
-## <a name="what-subscriptions-do-i-need-to-use-the-new-ome-capabilities"></a>使用新的 OME 功能需要哪些订阅？
+## <a name="can-i-use-exchange-online-with-bring-your-own-key-byok-in-azure-information-protection"></a>我是否可以在 Azure 資訊保護中使用 Exchange Online，並帶您自己的金鑰（BYOK）？
 
-要使用新的 OME 功能，您需要以下计划之一：
+是的！ Microsoft 建議您完成設定 BYOK 之前設定 OME 的步驟。
   
-- Office 365 邮件加密是 Office 365 企业版 E3 和 E5、微软企业 E3 和 E5、微软 365 企业版、Office 365 A1、A3 和 A5 以及 Office 365 政府 G3 和 G5 的一部分。 客户不需要其他许可证来接收由 Azure 信息保护支持的新保护功能。
-
-- 您还可以将 Azure 信息保护计划 1 添加到以下计划中，以接收新的 Office 365 邮件加密功能：交换联机计划 1、交换联机计划 2、Office 365 F1、Office 365 业务要点、Office 365 业务高级版，或Office 365 企业版 E1。
-
-- 从 Office 365 消息加密中受益的每个用户都需要获得该功能的许可。
-
-- 有关完整列表，请参阅 Office 365 邮件加密的[Exchange 联机服务说明。](https://technet.microsoft.com/library/exchange-online-service-description.aspx)
-
-## <a name="can-i-use-exchange-online-with-bring-your-own-key-byok-in-azure-information-protection"></a>是否可以在 Azure 信息保护中使用"联机交换"并携带自己的密钥 （BYOK）？
-
-是的！ Microsoft 建议您在设置 OME 之前完成设置 BYOK 的步骤。
+如需 BYOK 的詳細資訊，請參閱[規劃及執行 Azure 資訊保護租使用者金鑰](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key)。
   
-有关 BYOK 的详细信息，请参阅[规划和实现 Azure 信息保护租户密钥](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key)。
-  
-## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>具有 Azure 信息保护功能的 OME 和 BYOK 会更改 Microsoft 处理第三方数据请求（如传票）的方法吗？
+## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>使用 Azure 資訊保護執行 OME 和 BYOK 變更 Microsoft 對協力廠商資料要求的處理方式，例如 subpoenas？
 
-否。 OME 和提供和控制您自己的加密密钥（称为 BYOK）的选项来自 Azure 信息保护，其设计不是响应执法传票。 OME 与用于 Azure 信息保护的 BYOK 一起专为注重合规性的客户而设计。 微软非常重视第三方对客户数据的请求。 作为云服务提供商，我们始终倡导客户数据的隐私。 如果我们收到传票，我们总是试图将第三方重定向到客户以获取信息。 （请阅读布拉德·史密斯的博客：[保护客户数据免受政府窥探）。](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) 我们会定期发布我们收到的请求的详细信息。 有关第三方数据请求的详细信息，请参阅响应政府和执法部门访问 Microsoft 信任中心[上的客户数据的请求。](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data) 此外，请参阅[在线服务条款 （OST）](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)中的"客户数据泄露"。
+否。 OME 和提供和控制您自己的加密金鑰（稱為 BYOK）的選項，Azure 資訊保護並非設計用來回應法律強制執行 subpoenas。 OME （搭配 BYOK for Azure 資訊保護）是專為以規範為重點的客戶而設計。 Microsoft 會非常認真地對客戶資料採取協力廠商要求。 作為雲端服務提供者，我們永遠提倡客戶資料的隱私權。 當我們取得傳票時，我們一定會嘗試將協力廠商重新導向至客戶以取得資訊。 （請閱讀 Brad Smith 的博客：[保護客戶資料免受政府窺探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)）。 我們會定期發佈我們所收到之要求的詳細資訊。 如需協力廠商資料要求的詳細資訊，請參閱[回應政府和法律強制要求，以](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)在 Microsoft 信任中心存取客戶資料。 此外，請參閱[線上服務條款（OST）](https://www.microsoft.com/Licensing/product-licensing/products.aspx)中的「客戶資料洩漏」。
   
-## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>此功能与旧版 Office 365 邮件加密 （OME） 和信息权限管理 （IRM） 功能的关系如何？
+## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>這項功能與舊版 Office 365 郵件加密（OME）和資訊版權管理（IRM）功能的關聯程度如何？
 
-Office 365 消息加密的新功能是现有 IRM 和旧版 OME 解决方案的演变。 下表提供了更多详细信息。
+Office 365 郵件加密的新功能是現有 IRM 和舊版 OME 解決方案的演變。 下表提供更多詳細資料。
   
-**比较旧版 OME、IRM 和新的 OME 功能**
+**傳統 OME、IRM 及新 OME 功能的比較**
 
-|**功能**|**OME 的早期版本**|**IRM**|**新的 OME 功能**|
+|**功能**|**舊版本的 OME**|**IRM**|**新的 OME 功能**|
 |:-----|:-----|:-----|:-----|
-|**发送加密电子邮件**|只能通过 Exchange 邮件流规则|最终用户从 PC Outlook、Mac Outlook 或 Web 上的 Outlook 启动;或通过 Exchange 邮件流规则|最终用户从 PC Outlook、Mac Outlook 或 Web 上的 Outlook 启动;或通过邮件流规则|
-|**权限管理**|-|不转发选项和自定义模板|不转发选项、仅加密选项、默认模板和自定义模板|
-|**支持的收件人类型**|仅限外部收件人|仅限内部收件人|内部和外部收件人|
-|**收件人的经验**|外部收件人收到一条 HTML 消息，该邮件在浏览器或下载的移动应用中下载并打开。|内部收件人仅在 Outlook 的 PC、Mac Outlook 和 Web 上的 Outlook 中收到加密电子邮件。|内部和外部收件人在 PC Outlook、Mac Outlook、Web Outlook、Android Outlook 和 iOS Outlook 中接收电子邮件，或者通过 Web 门户接收电子邮件，无论他们是否在同一 Office 365 组织或任何 Office 365 中组织。 OME 门户不需要单独下载。|
-|**自带密钥支持**|無|無| BYOK 支持|
+|**傳送加密的電子郵件**|僅透過 Exchange 郵件流程規則|使用者從 Outlook for Windows、Outlook for Mac 或網頁型 Outlook 啟動;或透過 Exchange 郵件流程規則|使用者從 Outlook for Windows、Outlook for Mac 或網頁型 Outlook 啟動;或透過郵件流程規則|
+|**版權管理**|-|[不要轉寄] 選項及自訂範本|[不要轉寄] 選項、[僅限加密] 選項、預設和自訂範本|
+|**支援的收件者類型**|僅限外部收件者|僅限內部收件者|內部和外部收件者|
+|**收件者的經驗**|外部收件者接收到的 HTML 郵件會在瀏覽器或下載的行動裝置應用程式中下載及開啟。|內部收件者只會接收 Outlook for Windows、Outlook for Mac 和網頁上的 outlook 中的加密電子郵件。|內部和外部收件者接收電子郵件的 Outlook for Windows、Mac 版 Outlook、outlook on outlook、outlook for Android 和 Outlook for iOS，不論他們位於相同的 Office 365 組織或任何 Office 365 中組織。 OME 入口網站不需要個別下載。|
+|**讓您擁有自己的主要支援**|無|無| 支援 BYOK|
 
-## <a name="how-do-i-enable-the-new-ome-capabilities-for-my-organization"></a>如何为我的组织启用新的 OME 功能？
+## <a name="how-do-i-enable-the-new-ome-capabilities-for-my-organization"></a>如何為組織啟用新的 OME 功能？
 
-请参阅[设置新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)。
+請參閱[設定新的 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)。
   
-## <a name="will-the-previous-version-of-ome-be-deprecated"></a>以前的 OME 版本是否会被弃用？
+## <a name="will-the-previous-version-of-ome-be-deprecated"></a>舊版本的 OME 是否會被取代？
 
-您仍可以使用早期版本的 OME，此时不会弃用它。 但是，我们强烈建议组织使用新的和改进的 OME 解决方案。 尚未部署 OME 的客户无法设置早期版本的 OME 的新部署。
+您仍然可以使用舊版的 OME，它現在不會被取代。 不過，我們強烈鼓勵組織使用新的和改良的 OME 解決方案。 尚未部署 OME 的客戶無法設定舊版本 OME 的新部署。
   
-## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>我的组织使用活动目录权限管理，我可以使用此功能吗？
+## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>我的組織使用 Active Directory Rights Management，是否可以使用此功能？
 
-否。 如果您使用"在线交换"与活动目录权限管理服务 （AD RMS）一起使用，则不能直接启用这些新功能。 相反，您需要首先[将 AD RMS 迁移到 Azure 信息保护。](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) 
+否。 如果您使用的是 Active Directory Rights Management service （AD RMS）的 Exchange Online，您就無法立即啟用這些新功能。 相反地，您必須先將[AD RMS 遷移到 Azure 資訊保護](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)。
   
-## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>我的组织具有 Exchange 混合部署。 我可以使用此功能吗？
+## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>我的組織有 Exchange 混合式部署。 我可以使用此功能嗎？
 
-本地用户可以使用 Exchange 联机邮件流规则发送加密邮件。 为此，您需要通过 Exchange Online 路由电子邮件。 有关详细信息，请参阅第[2 部分：将邮件配置为从电子邮件服务器流向 Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)。
+內部部署使用者可以使用 Exchange Online 郵件流程規則傳送加密郵件。 為了達到此目的，您需要透過 Exchange Online 路由傳送電子郵件。 如需詳細資訊，請參閱[第2部分：將郵件設定為從您的電子郵件伺服器流向 Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)。
   
-## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>要创建 OME 加密邮件，我需要使用哪些电子邮件客户端？ 哪些应用程序支持发送受保护的消息？
+## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>我需要使用哪些電子郵件客戶程式才能建立 OME 加密郵件？ 傳送受保護的郵件支援哪些應用程式？
 
-您可以为 PC 和 Mac 创建 Outlook 2016 和 Outlook 2013 以及 Web 上的 Outlook 中受保护的邮件。
+您可以從 Outlook 2016 和 Outlook 2013 for Windows 和 Mac，以及從網頁上的 Outlook 建立受保護的郵件。
   
-## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>支持哪些电子邮件客户端阅读和回复受保护的电子邮件？
+## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>支援哪些電子郵件客戶程式來讀取及回復受保護的電子郵件？
 
-如果您是 Office 365 用户，则可以从 PC 和 Mac Outlook（2013 和 2016）、Web Outlook 和 Outlook 移动版（Android 和 iOS）中阅读和响应。 如果您的组织允许，也可以使用 iOS 本机邮件客户端。 如果您是非 Office 365 用户，则可以通过 Web 浏览器读取和回复 Web 上的加密邮件。
+Office 365 使用者可以從 Outlook for Windows 和 Mac （2013和2016）、網頁上的 Outlook 以及 Outlook mobile （Android 和 iOS）讀取和回應。 您也可以使用 iOS 原生郵件用戶端（如果您的組織允許的話）。 如果您是非 Office 365 使用者，您可以透過網頁瀏覽器閱讀和回復網頁上的加密郵件。
   
-## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>受保护电子邮件中的附件支持哪些文件类型？ 附件是否可以继承与受保护电子邮件关联的保护策略？
+## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>受保護電子郵件中的附件支援何種檔案類型？ 附件是否繼承與受保護的電子郵件相關聯的保護原則？
 
-您可以将任何文件类型附加到受保护的邮件，但保护策略仅适用于[此处](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)提及的文件格式。 
+您可以將任何檔案類型附加到受保護的郵件，但是只會對[這裡](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)提及的檔案格式套用保護原則。
   
-如果支持文件格式（如 Word、Excel 或 PowerPoint 文件），则即使收件人下载了附件后，该文件也始终受到保护。 例如，如果附件受"不转发"保护，并且原始收件人下载附件并将其转发到新收件人，则新收件人将无法打开受保护的文件。
+如果支援檔案格式（例如 Word、Excel 或 PowerPoint 檔案），檔案會永遠受到保護，即使收件者已下載附件也是一樣。 例如，如果附件是以不轉寄的方式保護，且原始收件者下載並將附件轉寄給新的收件者，則新的收件者將無法開啟受保護的檔案。
   
-## <a name="are-pdf-file-attachments-supported"></a>PDF 文件附件受支持吗？
+## <a name="are-pdf-file-attachments-supported"></a>是否支援 PDF 檔案附件？
 
-如果将 PDF 文件附加到受保护的邮件，邮件本身将受到保护，但在收件人收到 PDF 文件后，不会对该文件应用额外的保护。 这意味着收件人可以保存为、转发、复制和打印 PDF 文件。
+是的！ 您可以為 Office 365 組織啟用 PDF 附件的加密。 若要啟用 PDF 附件的加密，請在[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)中執行下列命令：
+
+```powershell
+Set-IRMConfiguration -EnablePdfEncryption $true
+```
+
+PDF 加密可讓您透過安全通訊或安全共同作業來保護機密 PDF 檔。 針對所有 Outlook 用戶端，郵件和未受保護的 PDF 附件會繼承 Exchange Online 中的資料遺失防護（DLP）原則或郵件流程規則的 OME 保護。 此外，如果 web 使用者上的 Outlook 附加了未保護的 PDF 檔，並對郵件套用保護，郵件便會繼承郵件的保護。 使用者只能在支援受保護的 Pdf 的應用程式中開啟加密的附件（例如，OME 入口網站和 Azure 資訊保護檢視器）。
+
   
-## <a name="are-onedrive-for-business-attachments-supported"></a>支持 OneDrive 业务附件吗？
+## <a name="are-onedrive-for-business-attachments-supported"></a>是否 OneDrive 支援商務附件？
 
-Not yet. 不支持 OneDrive 业务附件，最终用户无法加密包含云 OneDrive 业务附件的邮件。
+Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務附件雲端 OneDrive 的郵件。
   
-## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>我可以通过设置策略自动加密邮件吗？
+## <a name="what-email-clients-support-preview-of-encrypted-attachments-in-protected-emails"></a>哪些電子郵件客戶程式支援在受保護的電子郵件中預覽加密附件？
 
-是。 使用 Exchange Online 中的邮件流规则根据特定条件自动加密邮件。 例如，您可以创建基于收件人 ID、收件人域或邮件正文或主题中的内容的策略。 请参阅[定义邮件流规则以加密 Office 365 中的电子邮件。](define-mail-flow-rules-to-encrypt-email.md)
+當使用受保護的郵件保護附件時，Outlook 用戶端可讓您直接預覽檔的功能。 Outlook 支援 Office 檔的預覽（.docx、.xlsx、.pptx、doc、xls、ppt）。 網頁上的 Outlook 支援 Office 檔的預覽（.docx、.xlsx、.pptx）和 PDF。  
+
+## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>我是否可以透過設定原則自動加密郵件？
+
+是。 使用 Exchange Online 中的郵件流程規則，根據特定條件自動加密郵件。 例如，您可以建立以收件者識別碼、收件者網域或郵件內文或主旨的內容為基礎的原則。 請參閱[定義郵件流程規則，以加密 Office 365 中的電子郵件](define-mail-flow-rules-to-encrypt-email.md)。
   
-## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>我能否通过安全&amp;合规性中心在数据丢失防护 （DLP） 中设置策略来自动加密邮件？
+## <a name="can-i-automatically-remove-encryption-on-incoming-and-outgoing-mail"></a>我可以自動移除傳入和傳出郵件的加密嗎？
 
-是的！ 您可以在 Exchange 联机中设置邮件流规则，也可以在安全&amp;合规性中心使用 DLP 设置邮件流规则。
+系統管理員可以設定郵件流程規則，以移除外寄郵件的加密。 您無法設定規則來移除傳入郵件的加密。
+
+## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>是否可以透過安全性&amp;與合規性中心設定資料遺失防護（DLP）中的原則，自動加密郵件？
+
+是的！ 您可以在 Exchange Online 中設定郵件流程規則，或在安全性&amp;與合規性中心使用 DLP。
   
-## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>我可以打开发送到共享邮箱的加密邮件吗？
+## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>我可以使用公司品牌來自訂加密郵件嗎？
 
-共享邮箱当前不支持加密的邮件。
-
-## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>我能否使用公司品牌自定义加密邮件？
-
-是的！ 有关自定义电子邮件和 OME 门户的信息，请参阅将组织的品牌添加到加密邮件中。 请参阅[将组织的品牌添加到加密邮件。](add-your-organization-brand-to-encrypted-messages.md)
+是的！ 如需自訂電子郵件訊息與 OME 入口網站的詳細資訊，請參閱將組織的品牌新增至加密的郵件。 請參閱[將貴組織的品牌新增至加密的郵件](add-your-organization-brand-to-encrypted-messages.md)。
   
-## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>加密电子邮件是否有任何报告功能或见解？
+## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>是否有任何報告功能或加密電子郵件的洞察力？
 
-安全和合规性中心中有一个加密报告。 请参阅[查看安全&合规性中心中的电子邮件安全报告。](view-email-security-reports.md)
+在安全性與合規性中心有一個加密報告。 請參閱[在安全性 & 規範中心中查看電子郵件安全性報告](../security/office-365-security/view-email-security-reports.md)。
   
-## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>我能否将邮件加密与合规性功能（如电子数据展示）一起使用？
+## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>是否可以使用郵件加密搭配電子檔探索等相容性功能？
 
-是。 所有加密的电子邮件都可以通过 Office 365 合规性功能发现。
+是。 所有加密的電子郵件都可透過 Office 365 規範功能探索。
+
+## <a name="can-i-remove-encryption-from-email"></a>我可以從電子郵件移除加密嗎？
+
+系統管理員可以設定郵件流程規則，以從外寄郵件中移除加密。 您無法使用傳入郵件的郵件流程規則來移除加密。
+
+## <a name="is-delegated-access-supported"></a>是否支援委派存取？
+
+不是在這個時候。
+
+## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>我可以開啟已傳送至共用信箱的加密郵件嗎？
+
+是的！ 共用信箱支援加密郵件。
+
+- 使用者可以在共用信箱中，以通訊群組的一部分，在共用信箱中開啟受保護的郵件。
+
+- 使用者可以在使用 Outlook for Windows、Mac 版 Outlook 和網頁版 Outlook 時，查看繼承電子郵件保護的附件。
+
+下表列出共用信箱支援的用戶端。
+
+| 平台 | 讀取郵件 | 查看電子郵件附件 |
+|----------|-----------|------------------------|
+| Outlook 網頁版 | 是 | 是                |
+|  Outlook for Windows| 是 | 是                |
+| Mac 版 Outlook    | 是 | 是                |
+| Outlook for Android| 是 | 否                 |
+| iOS 版 Outlook    | 是 | 否                 |
+|
+
+目前有兩個已知的限制：
+
+- 僅支援直接使用者指派至共用信箱的存取權。 我們不支援使用啟用電子郵件功能的安全性群組的工作分派。
+
+- 您無法使用 Outlook mobile 開啟您在行動裝置上接收的電子郵件附件。

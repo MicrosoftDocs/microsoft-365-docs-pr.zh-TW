@@ -1,5 +1,8 @@
 ---
-title: 為您的組織設定監督原則
+title: 設定監督原則
+description: 設定 Office 365 的通訊監督
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,77 +18,77 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: 设置监督审核策略，以捕获员工通信以进行审核。
-ms.openlocfilehash: ccbc5897ef8c6fb6018793ff7e3fe7731ee14710
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+titleSuffix: Office 365 Compliance
+ms.openlocfilehash: e2880679c8520480aeffd640a26730defc298490
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076612"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604190"
 ---
-# <a name="configure-supervision-policies-for-your-organization"></a>為您的組織設定監督原則
+# <a name="configure-supervision-policies-in-office-365"></a>在 Office 365 中設定監督原則
 
-使用监督策略捕获员工通信，供内部或外部审阅者检查。 有关监督策略如何帮助您监视组织中的通信的详细信息，请参阅[Office 365 中的"监督策略"。](supervision-policies.md)
+>[!IMPORTANT]
+>本主題適用于設定 Office 365 訂閱中的監察原則。 如果您想要為 Microsoft 365 訂閱設定通訊相容性，請參閱[設定 microsoft 365 中的通訊法規遵從性](communication-compliance-configure.md)。
 
-> [!NOTE]
-> 受监督策略监视的用户必须具有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或者包含在 Office 365 企业版 E5 订阅中。
-> 如果您没有现有的企业 E5 计划，并且想要尝试监督，则可以注册 Office [365 企业版 E5 的试用版。](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+使用監督原則來捕獲員工通訊，以供內部或外部的檢閱者檢查。 如需監督原則如何協助您監視組織中通訊的詳細資訊，請參閱[Office 365 中的監管原則](supervision-policies.md)。
+
+>[!NOTE]
+>監控原則所監控的使用者，必須具備 Microsoft 365 E5 相容性授權、具有高級合規性附加元件的 Office 365 企業版 E3 授權，或是包含在 Office 365 企業版 E5 訂閱中，或包含在 Microsoft 365 E5 中。訂閱。
+>如果您沒有現有的企業版 E5 計畫，而且想要嘗試監督，您可以[註冊 Office 365 Enterprise e5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
   
-按照以下步骤在 Office 365 组织中设置和使用监督：
+請遵循下列步驟，在您的 Office 365 組織中設定與使用監督：
   
-- **第 1 步（可选）：**[设置监督组](#step-1-set-up-groups-for-supervision-optional) 
+- **步驟1（選用）**：[設定監督群組](#step-1-set-up-groups-for-supervision-optional)
 
-    在开始使用监督之前，请确定谁需要审核通信以及谁执行审核。 如果你想开始与几个用户，看看监督是如何工作的，你可以跳过设置组现在。
+    開始使用監察原則之前，請先決定誰需要檢查通訊，以及誰會執行評論。 如果您想要開始使用少數使用者來查看監管的運作方式，您可以略過設定 [群組] 立即。
 
-- **第 2 步（必需）：**[在组织中提供监督](#step-2-make-supervision-available-in-your-organization-required)
+- **步驟2（必要）**：[讓監管可用於您的組織](#step-2-make-supervision-available-in-your-organization-required)
 
-    将自己添加到"监督审核"角色组，以便可以设置策略。 分配了此角色的任何人都可以访问合规中心**中的"监督"** 页面。 如果可审阅的电子邮件托管在 Exchange 在线上，则每个审阅者必须具有[对 Exchange 在线的远程 PowerShell 访问权限。](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)
+    將您本人新增至主管審查角色群組，讓您可以設定原則。 指派此角色的任何人都可以存取 Office 365 安全性與合規性中心內的**監管**頁面。 如果 reviewable 電子郵件主控于 Exchange Online，則每個檢閱者都必須有[Exchange online 的遠端 PowerShell 存取權](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
 
-- **步骤 3（可选）：**[创建自定义敏感信息类型和自定义关键字字典](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
+- **步驟3（選用）**：[建立自訂機密資訊類型及自訂關鍵字字典](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
-    如果您需要自定义敏感信息类型或自定义关键字字典作为监督策略，则需要在启动监督向导之前创建它。
+    如果您需要監管原則的自訂敏感資訊類型或自訂關鍵字字典，您必須在啟動監管嚮導之前加以建立。
 
-- **第 4 步（必）：**[设置监督政策](#step-4-set-up-a-supervision-policy-required)
+- **步驟4（必要）**：[設定監督原則](#step-4-set-up-a-supervision-policy-required)
 
-    您可以在合规中心创建监督策略。 这些策略定义组织中哪些通信需要审核，并指定执行审核的人员。 通信包括电子邮件和 Microsoft 团队通信以及第三方平台通信（如 Facebook、Twitter 等）
+    您可以在 Office 365 安全性與合規性中心建立監督原則。 這些原則定義哪些通訊會在您的組織中進行檢查，並指定誰會執行評論。 通訊包括電子郵件和 Microsoft 小組通訊，以及協力廠商平臺通訊（如 Facebook、Twitter 等）。 在 Microsoft 365 訂閱中，Office 365 組織中所建立的監督原則不受支援。
 
-- **第 5 步（可选）：**[测试您的监督策略](#step-5-test-your-supervision-policy-optional)
+- **步驟5（選用）**：[測試通訊監督原則](#step-5-test-your-supervision-policy-optional)
 
-    测试您的监督策略，以确保其按预期运行。 请务必确保您的合规战略符合您的标准。
+    測試您的監督原則，確定其運作正常。 務必確定您的規範策略符合您的標準。
 
-- **步骤 6（可选）：**[为不想使用 Office 365 监督仪表板的审阅者配置 Outlook 以审阅受监督的通信](#step-6-configure-outlook-for-reviewers-optional)
+## <a name="step-1-set-up-groups-for-supervision-optional"></a>步驟1：設定監督群組（選用）
 
-    配置 Outlook 以允许审阅者访问 Outlook 客户端中的监督功能，以便他们可以评估和分类每个项目。
+ 當您建立監督原則時，您會定義哪些人員已掃描其通訊，以及誰會執行評論。 在原則中，您將使用電子郵件地址來識別個人或人員群組。 若要簡化您的設定，您可以為使用者建立群組，讓他們能夠掃描和群組其通訊。 如果您正在使用群組，可能需要數個。 例如，您想要監視兩個不同的使用者群組之間的通訊，或是想要指定不會受到監督的群組。
 
-## <a name="step-1-set-up-groups-for-supervision-optional"></a>第 1 步：设置监督组（可选）
+使用下列圖表可協助您設定組織中的通訊監管原則的群組：
 
- 创建监督策略时，您可以定义谁审阅了他们的通信，谁执行审核。 在策略中，您将使用电子邮件地址来标识个人或组。 为了简化您的设置，您可以为审核其通信的人员创建组，并为审阅这些通信的人员创建组。 如果您使用的是组，则可能需要多个组。 例如，您希望监视两个不同的人员组之间的通信，或者如果要指定一个不受监督的组。
-
-使用以下图表帮助您在组织中配置组以进行监督策略：
-
-| **政策成员** | **支持的组** | **不支持的组** |
+| **原則成員** | **支援的群組** | **不支援的群組** |
 |:-----|:-----|:-----|
-|受监督的用户 <br> 非监督用户 | 通訊群組 <br> Office 365 群組 | 動態通訊群組 |
+|監督的使用者 <br> 非監督的使用者 | 通訊群組 <br> Office 365 群組 | 動態通訊群組 |
 | 檢閱者 | 擁有郵件功能的安全性群組  | 通訊群組 <br> 動態通訊群組 |
   
-当您为受监督的用户选择 Office 365 组时，策略将监视共享 Office 365 邮箱和与该组关联的 Microsoft Teams 通道的内容。 选择通讯组列表时，策略将监视各个用户邮箱。
+當您為監督的使用者選取 Office 365 群組時，該原則會監控共用 Office 365 信箱的內容，以及與群組相關聯的 Microsoft 小組頻道。 當您選取通訊群組清單時，該原則會監控個別的使用者信箱。
 
-要管理大型企业组织中受监督的用户，您可能需要监视大型组中的所有用户。 您可以使用 PowerShell 为分配的组配置全局监督策略的通讯组。 这使您能够使用单个策略监视数千个用户，并在新员工加入您的组织时更新监督策略。
+若要管理大型企業組織中的監督使用者，您可能需要跨大型群組監控所有使用者。 您可以使用 PowerShell 為指派的群組設定全域監督原則的通訊群組。 這可讓您以單一原則監控成千上萬的使用者，並在新員工加入您的組織時，維持監督原則的更新。
 
-1. 使用以下属性为全局监督策略创建专用[通讯组：](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)确保此通讯组未用于其他目的或其他 Office 365 服务。
+1. 使用下列屬性，為全域監督原則建立專屬的[通訊群組](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)：請確定此通訊群組並未用於其他用途或其他 Office 365 服務。
 
-    - **成员分类限制 = 已关闭**。 确保用户无法从通讯组中删除自己。
-    - **成员联接限制 = 已关闭**。 确保用户无法将自己添加到通讯组。
-    - **启用调节 = True**。 确保发送到此组的所有邮件都需获得批准，并且该组不用于在监督策略配置之外进行通信。
+    - **MemberDepartRestriction = 封閉式**。 確保使用者無法從通訊群組中移除自己。
+    - **MemberJoinRestriction = 封閉式**。 確保使用者無法將自己新增至通訊群組。
+    - **ModerationEnabled = True**。 確定所有傳送至此群組的郵件都會受到核准，而且此群組並未用來在監督原則設定外進行通訊。
 
-    ```
+    ```PowerShell
     New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
     ```
-2. 选择未使用的[Exchange 自定义属性](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww)以跟踪添加到组织中监督策略的用户。
 
-3. 定期运行以下 PowerShell 脚本，将用户添加到监督策略：
+2. 選取未使用的[Exchange 自訂屬性](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww)，追蹤新增至組織中監管原則的使用者。
 
-    ```
+3. 在週期性排程上執行下列 PowerShell 腳本，將使用者新增至監管原則：
+
+    ```PowerShell
     $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
     $i = 0
     ForEach ($M in $Mbx) 
@@ -98,164 +101,91 @@ ms.locfileid: "37076612"
     Write-Host $i "Mailboxes added to supervisory review distribution group."
     ```
 
-有关设置组的详细信息，请参阅：
+如需設定群組的詳細資訊，請參閱：
 
 - [建立並管理通訊群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [管理啟用郵件功能的安全性群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
-- [Office 365 组概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+- [Office 365 群組的概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## <a name="step-2-make-supervision-available-in-your-organization-required"></a>第 2 步：在组织中提供监督（必需）
+## <a name="step-2-make-supervision-available-in-your-organization-required"></a>步驟2：讓監管可用於您的組織（必要）
 
-要使"**监督"** 在合规中心中作为菜单选项可用，您必须分配监督审核管理员角色。
+若要讓**監察**功能成為 Office 365 安全性與合規性中心的功能表選項，您必須獲指派主管審查系統管理員角色。
   
-为此，您可以将自己添加为"监督审核"角色组的成员，也可以创建角色组。
+若要這麼做，您可以將自己新增為主管審查角色群組的成員，也可以建立角色群組。
   
-### <a name="add-members-to-the-supervisory-review-role-group"></a>将成员添加到监督审核角色组
+### <a name="add-members-to-the-supervisory-review-role-group"></a>新增成員至主管審查角色群組
 
-1. 使用[https://protection.office.com](https://protection.office.com)Office 365 组织中的管理员帐户的凭据登录。
+1. 在您[https://protection.office.com](https://protection.office.com)的 Office 365 組織中，登入使用系統管理員帳戶的認證。
 
-2. 在合规中心，**转到"权限"。**
+2. 在 Office 365 的 [安全性與合規性中心] 中，移至 [**許可權**]。
 
-3. 选择"**监督审阅"** 角色组，然后单击"编辑"图标。
+3. 選取 [**主管審查**] 角色群組，然後按一下 [編輯] 圖示。
 
-4. 在"**成员"** 部分中，添加要管理组织监督的人员。
+4. 在 [**成員**] 區段中，新增您要管理組織之通訊監督的人員。
 
-### <a name="create-a-new-role-group"></a>创建新角色组
+### <a name="create-a-new-role-group"></a>建立新的角色群組
 
-1. 使用[https://protection.office.com](https://protection.office.com)Office 365 组织中的管理员帐户的凭据登录。
+1. 在您[https://protection.office.com/permissions](https://protection.office.com/permissions)的 Office 365 組織中，登入使用系統管理員帳戶的認證。
 
-2. 在合规性中心中，**转到"权限"，** 然后单击"添加**+**（ ）。
+2. 在 Office 365 的 [安全性與合規性中心] **Permissions**中，移至 [許可權**+**]，然後按一下 [新增] （）。
 
-3. 在"**角色"** 部分中，单击"添加 （**+**）"并向下滚动**到"监督审阅管理员"。** 将此角色添加到角色组。
+3. 在 [**角色**] 區段中，按一下**+**[新增] （），然後向下滾動至「**主管審查管理員**」。 將此角色新增至角色群組。
 
-4. 在"**成员"** 部分中，添加要管理组织监督的人员。
+4. 在 [**成員**] 區段中，新增您要管理組織之通訊監督的人員。
 
-有关角色组和权限的详细信息，请参阅[合规性中心的权限。](../security/office-365-security/protect-against-threats.md)
+如需角色群組和權限的詳細資訊，請參閱[規範中心的權限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
-### <a name="enable-remote-powershell-access-for-reviewers-if-email-is-hosted-on-exchange-online"></a>为审阅者启用远程 PowerShell 访问权限（如果电子邮件托管在 Exchange 在线上）
+### <a name="enable-remote-powershell-access-for-reviewers-if-email-is-hosted-on-exchange-online"></a>啟用檢閱者的遠端 PowerShell 存取（電子郵件主控于 Exchange Online）
 
-1. [按照"启用"或"禁用对 Exchange 在线电源外壳 "中的访问权限](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)中的指导操作。
+1. 遵循[啟用或停用 Exchange Online PowerShell 存取](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)的指導方針。
 
-## <a name="step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>步骤 3：创建自定义敏感信息类型和自定义关键字字典（可选）
+## <a name="step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>步驟3：建立自訂機密資訊類型及自訂關鍵字字典（選用）
 
-为了从监管策略向导中现有的自定义敏感信息类型或自定义关键字字典中进行选择，首先需要根据需要创建这些项目。
+若要在監督原則嚮導中挑選現有的自訂敏感資訊類型或自訂關鍵字字典，您必須視需要建立這些專案。
 
-### <a name="create-custom-keyword-dictionarylexicon-optional"></a>创建自定义关键字词典/词典（可选）
+### <a name="create-custom-keyword-dictionarylexicon-optional"></a>建立自訂關鍵字字典/詞典（選用）
 
-使用文本编辑器（如记事本）创建包含要在监督策略中监视的关键字字词的文件。 确保每个术语都位于单独的行上，并将文件以**Unicode/UTF-16（小 Endian）** 格式保存。
+使用文字編輯器（例如記事本）來建立檔案，該檔案包含您想要在監管原則中監視的關鍵字字詞。 請確定每個字詞都位於個別的一行，並以**Unicode/UTF-16 （小 Endian）** 格式儲存檔案。
 
-### <a name="create-custom-sensitive-information-types"></a>创建自定义敏感信息类型
+### <a name="create-custom-sensitive-information-types"></a>建立自訂機密資訊類型
 
-1. 创建新的敏感信息类型，并在 Office 365 安全&合规性中心中添加自定义词典。 导航到**分类**\>**敏感信息类型，** 并**按照"新建敏感信息类型"向导**中的步骤操作。 在这里，您将：
+1. 建立新的敏感資訊類型，並將您的自訂字典加入 Office 365 安全性 & 規範中心。 流覽至 [**分類** \> **機密資訊類型**]，然後依照**新增的敏感資訊類型嚮導**中的步驟進行。 您將在這裡：
 
-    - 定义敏感信息类型的名称和说明
-    - 定义邻近度、置信度和主要模式元素
-    - 将自定义字典作为匹配元素的要求导入
-    - 查看您的选择并创建敏感信息类型
+    - 定義敏感資訊類型的名稱和描述
+    - 定義鄰近性、信賴等級及主要模式元素
+    - 將您的自訂字典當作符合元素的需求匯入
+    - 檢查您的選擇並建立機密資訊類型
 
-    有关详细信息，请参阅[创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)和[创建关键字字典](create-a-keyword-dictionary.md)
+    如需詳細資訊，請參閱[建立自訂機密資訊類型](create-a-custom-sensitive-information-type.md)及[建立關鍵字字典](create-a-keyword-dictionary.md)
 
-    创建自定义词典/词典后，您可以使用[Get-DlpKeyword](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary)字典 cmdlet 查看已配置的关键字，或使用[Set-DlpKeyword 字典](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary)cmdlet 添加和删除术语。
+    在建立自訂字典/詞典之後，您可以使用[DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary)指令程式來查看已設定的關鍵字，或是使用[DlpKeywordDictionary 指令程式](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary)來新增及移除字詞。
 
-## <a name="step-4-set-up-a-supervision-policy-required"></a>第 4 步：设置监督策略（必需）
+## <a name="step-4-set-up-a-supervision-policy-required"></a>步驟4：設定監督原則（必要）
   
-1. 使用[https://protection.office.com](https://protection.office.com)Office 365 组织中的管理员帐户的凭据登录。
+1. 在您[https://protection.office.com](https://protection.office.com)的 Office 365 組織中，登入使用系統管理員帳戶的認證。
 
-2. 在合规中心中，**选择"监督"。**
+2. 在 Office 365 的 [安全性與合規性中心] 中，選取 [**監督**]。
   
-3. **选择"创建"** 并按照向导设置策略配置。 使用向导，您将：
+3. 選取 [**建立**]，然後依照嚮導設定原則設定。 使用此嚮導，您可以：
 
-    - 为策略指定名称和说明。
-    - 选择要监督的用户或组，包括选择要排除的用户或组。
-    - 定义监督政策[条件。](supervision-policies.md#ConditionalSettings) 您可以从消息地址、关键字、文件类型和大小匹配条件中进行选择。
-    - 选择是否希望包含敏感信息类型。 您可以在其中选择默认和自定义敏感信息类型。
-    - 选择是否要启用攻击性语言模型。 这将检测电子邮件正文中发送或接收的不当语言。
-    - 定义要审阅的通信的百分比。
-    - 选择策略的审阅者。 审阅者可以是单个用户或[已启用邮件的安全组。](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group) 所有审阅者都必须在 Exchange 联机上托管邮箱。
-    - 查看策略选择并创建策略。
+    - 將原則命名為 [名稱] 和 [描述]。
+    - 選擇要監督的使用者或群組，包括選擇您想要排除的使用者或群組。
+    - 定義監督原則[條件](supervision-policies.md#ConditionalSettings)。 您可以選擇 [郵寄地址]、[關鍵字]、[檔案類型] 和 [大小相符] 條件。
+    - 選擇是否要包含機密資訊類型。 您可以在此選擇預設和自訂的機密資訊類型。
+    - 選擇是否要啟用冒犯性語言模型。 這會偵測到電子郵件內送出或接收到不適當的語言。
+    - 定義要複查的通訊百分比。
+    - 選擇原則的檢閱者。 檢閱者可以是個別的使用者或擁有[郵件功能的安全性群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)。 所有檢閱者都必須在 Exchange Online 上主控信箱。
+    - 檢查您的原則選擇並建立原則。
 
-## <a name="step-5-test-your-supervision-policy-optional"></a>第 5 步：测试您的监督策略（可选）
+## <a name="step-5-test-your-supervision-policy-optional"></a>步驟5：測試您的監管原則（選用）
 
-创建监督策略后，最好进行测试，以确保策略正确执行所定义的条件。 如果监管策略包含敏感信息类型，您可能还需要[测试数据丢失防护 （DLP） 策略。](create-test-tune-dlp-policy.md) 请按照以下步骤测试您的监督策略：
+在您建立通訊監督原則之後，建議您測試，以確定原則已正確地強制執行您所定義的條件。 您也可以在您的監管原則包括機密資訊類型時，[測試您的資料遺失防護（DLP）原則](create-test-tune-dlp-policy.md)。 請遵循下列步驟來測試您的監管原則：
 
-1. 打开电子邮件客户端或 Microsoft Teams 以要测试的策略中定义的受监督用户身份登录。
-2. 发送电子邮件或 Microsoft 团队聊天，满足您在监督策略中定义的条件。 这可以是关键字、附件大小、域等。请确保确定策略中配置的条件设置是否过于严格或过于宽松。
+1. 開啟以您想要測試之原則中所定義之監督使用者的身分登入電子郵件客戶程式或 Microsoft 團隊。
+2. 傳送電子郵件或 Microsoft 小組聊天，其符合您在監管原則中所定義的準則。 這可以是關鍵字、附件大小、網域等等。確定您決定原則中設定的設定條件設定過於嚴格，還是過於 lenient。
 
-    > [!Note]
-    > 受定义策略约束的电子邮件将近乎实时地处理，并在策略配置后立即进行测试。 Microsoft Teams 中的聊天最多可能需要 24 小时才能在策略中完全处理。 
+    >[!NOTE]
+    >已定義原則的電子郵件會在近期即時處理，而且在設定原則之後可立即進行測試。 Microsoft 小組中的聊天可能需要長達24小時才能完全處理原則。 
 
-3. 作为监督策略中指定的审阅者登录到 Office 365 租户。 导航**到"监督** > *自定义策略* > **打开"** 以查看策略的报告。
+3. 以通訊監管原則中指定的檢閱者登入 Office 365 租使用者。 流覽至 [**監察** > ]*您的自訂原則* > **開啟**以查看原則的報告。
 
-## <a name="step-6-configure-outlook-for-reviewers-optional"></a>步骤 6：为审阅者配置 Outlook（可选）
-
-想要使用 Outlook 而不是 Office 365 中的"监督"仪表板来审阅通信的审阅者必须配置其 Outlook 客户端。
-
-### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>第 1 步：复制监督邮箱的地址
-
-要配置 Outlook 桌面的审阅，您需要作为监督策略设置的一部分创建的监督邮箱的地址。
-  
-> [!NOTE]
-> 如果其他人创建了该策略，则需要从他们那里获得此地址才能安装外接程序。
-
-**查找监督邮箱地址**
-  
-1. 使用组织中管理员帐户的凭据登录到[合规性中心。](https://compliance.microsoft.com)
-
-2. 转到**监督**。
-
-3. 为要查看的通信选择监督策略。
-
-4. 在策略详细信息弹出窗口中，**在"监督邮箱"** 下，复制地址。<br/>![监督政策详细信息的"监督邮箱"部分弹出窗口显示突出显示的监督邮箱地址](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
-  
-### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>第 2 步：为 Outlook 访问配置监督邮箱
-
-接下来，审阅者需要运行几个 Exchange 联机 PowerShell 命令，以便他们可以将 Outlook 连接到监督邮箱。
-  
-1. 連線至 Exchange Online PowerShell。 [該怎麼做？](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
-
-2. 运行以下命令，*其中SupervisoryReview{GUID}@domain.onmicrosoft.com*是您在上述步骤 1 中复制的地址，*而"用户"* 是将连接到步骤 3 中的监督邮箱的审阅者的名称。
-
-    ```Add-MailboxPermission "SupervisoryReview{GUID}@domain.onmicrosoft.com" -User <alias or email address of the account that has reviewer permissions to the supervision mailbox> -AccessRights FullAccess```
-
-    ```Set-Mailbox "<SupervisoryReview{GUID}@domain.onmicrosoft.com>" -HiddenFromAddressListsEnabled: $false```
-
-3. 请等待至少一个小时，然后再继续执行步骤 3。
-
-### <a name="step-3-create-an-outlook-profile-to-connect-to-the-supervision-mailbox"></a>步骤 3：创建 Outlook 配置文件以连接到监督邮箱
-
-对于最后一步，审阅者需要创建 Outlook 配置文件以连接到监督邮箱。
-
-> [!NOTE]
-> 要创建新的 Outlook 配置文件，您将在 Windows 控制面板中使用"邮件"设置。 您访问这些设置的路径可能取决于您使用的 Windows 操作系统（Windows 7、Windows 8 或 Windows 10）以及安装的 Outlook 版本。
-  
-1. 打开控制面板。 在窗口顶部**的"搜索"** 框中，**键入"邮件"。**<br/>（不确定如何进入控制面板？ 请参阅[控制面板在哪里？）](https://support.microsoft.com/help/13764/windows-where-is-control-panel)
-  
-2. 打开"**邮件"** 应用。
-
-3. 在**邮件设置 - Outlook**中，**单击"显示配置文件"。**<br/>![突出显示"显示配置文件"按钮的"邮件设置 - Outlook"对话框](media/28b5dae9-d10c-4f2b-926a-294c857d555c.jpg)
-  
-4. **在"邮件"** 中，**单击"添加"。** 然后，**在新配置文件**中，输入监督邮箱的名称（如**监督**）。<br/>!["配置文件名称"框中显示名称"新配置文件"对话框](media/d02ae181-b541-4ec6-8f51-698f30033204.jpg)
-  
-5. 在**将 Outlook 连接到 Office 365**中，**单击"连接到其他帐户"。**<br/>![突出显示"将 Outlook 连接到 Office 365"消息，并突出显示"连接到其他帐户"链接](media/fac49ff8-a7f0-4e82-a271-9ec045a95de1.jpg)
-  
-6. **在"自动帐户设置"** 中，**选择"手动设置"或其他服务器类型，** 然后单击"**下一步"。**
-
-7. **在"选择帐户类型"** 中，选择**Office 365**。 然后，**在"电子邮件地址"** 框中输入以前复制的监督邮箱的地址。<br/>![Outlook 中的"添加帐户"对话框中的"选择帐户类型"页面突出显示了"电子邮件地址"框。](media/4f601236-9f69-4cf6-a58c-0b91204aa8cb.jpg)
-  
-8. 当出现提示时，请输入 Office 365 凭据。
-
-9. 如果成功，则"**监督\<"\>策略名称**文件夹将列在 Outlook 中的"文件夹列表"视图中。
-
-## <a name="powershell-reference"></a>电源外壳参考
-
-如果需要，您可以使用以下 PowerShell cmdlet 创建和管理监督策略：
-
-- [新监督审查政策V2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2?view=exchange-ps)
-- [获取监督审查策略V2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2?view=exchange-ps)
-- [设置-监督审查策略V2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2?view=exchange-ps)
-- [删除-监督审查策略V2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2?view=exchange-ps)
-- [新监督审查规则](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule?view=exchange-ps)
-- [设置-监督审查规则](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule?view=exchange-ps)
-- [获取监督审查活动](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity)
-- [获取监督审查总体进度报告](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewoverallprogressreport)
-- [获取监督审查顶级案例报告](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewtopcasesreport)

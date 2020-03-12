@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 深入瞭解使用者如何使用 Office 應用程式中的敏感度標籤、適用于行動裝置的 Office 應用程式，以及適用于 web 的 Office 應用程式。 瞭解哪些應用程式支援靈敏度標籤。
-ms.openlocfilehash: 41d4231b163d85b55ed0cd68ffb551f67d30827a
-ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
+ms.openlocfilehash: 858d2be23dcb3c3f2b0794e735ed8ca61d67b74d
+ms.sourcegitcommit: 794f2f416a258157cb44d962b5be6a348ee20fea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583150"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42594003"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -123,7 +123,7 @@ Office 內建的標籤用戶端會從下列系統管理中心下載敏感度標�
 
 您設定用來套用加密的敏感度標籤，可移除使用者的複雜性，以指定自己的加密設定。 在許多 Office 應用程式中，使用者仍然可以使用資訊版權管理（IRM）選項手動設定這些個別的加密設定。 例如，針對 Windows 應用程式：
 
-- 對於檔：檔案**** > **資訊** > **保護** > 檔**限制存取權**
+- 對於檔：檔案**File** > **資訊** > **保護** > 檔**限制存取權**
 - 電子郵件：從 [**選項**] 索引標籤中 >**加密** 
   
 當使用者最初標記檔或電子郵件時，他們會永遠使用自己的加密設定覆寫標籤設定設定。 例如：
@@ -136,7 +136,7 @@ Office 內建的標籤用戶端會從下列系統管理中心下載敏感度標�
 
 如果已標記檔或電子郵件，如果內容尚未加密，使用者就可以執行這些動作中的任何一項，或是[使用許可權是直接](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)匯出或完全控制的。 
 
-為了獲得具有有意義報告的一致標籤體驗，請提供適當的標籤和指引，以供使用者獨佔套用標籤。 例如：
+為了獲得具有有意義報告的一致標籤體驗，請提供適當的標籤和指引，讓使用者只套用標籤來保護檔。 例如：
 
 - 針對使用者必須指派其許可權的例外狀況，請提供可[讓使用者指派自己許可權](encryption-sensitivity-labels.md#let-users-assign-permissions)的標籤。 
 
