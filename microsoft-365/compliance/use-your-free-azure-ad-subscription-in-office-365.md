@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: 了解如何存取 Azure Active Directory，其隨附於貴組織的 Office 365 的付費訂閱。
-ms.openlocfilehash: b8487b245001ffc73b975ed8f756b83e7093b1e7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fe3829d349e5721ebdcf0688c1f5b2bd3c9f7f45
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069213"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604090"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>使用 Office 365 中免費的 Azure Active Directory 訂閱
 
@@ -29,7 +29,7 @@ ms.locfileid: "42069213"
 
 ## <a name="before-you-begin"></a>開始之前
 
-使用私人瀏覽工作階段 (不是一般工作階段) 來存取 Azure 入口網站 (下面步驟 1)，因為這會防止您目前登入所用的認證傳遞至 Azure。若要在 Internet Explorer 開啟 InPrivate 瀏覽工作階段，或在 Mozilla FireFox 開啟私人瀏覽工作階段，只需按 CTRL+SHIFT+P。若要在 Google Chrome (稱為無痕視窗) 中開啟私人瀏覽工作階段，請按 CTRL+SHIFT+N。
+使用私人瀏覽工作階段 (不是一般工作階段) 來存取 Azure 入口網站 (下面步驟 1)，因為這會防止您目前登入所用的認證傳遞至 Azure。若要在 Microsoft Edge、Internet Explorer 或 Mozilla FireFox 中開啟 InPrivate 瀏覽工作階段，只需按 CTRL+SHIFT+P。若要在 Google Chrome (稱為無痕視窗) 中開啟私人瀏覽工作階段，請按 CTRL+SHIFT+N。
 
 ## <a name="access-azure-active-directory"></a>存取 Azure Active Directory
 
