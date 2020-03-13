@@ -1,5 +1,7 @@
 ---
-title: Create a search
+title: 建立搜尋
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,29 +16,31 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1aa4ce6e406e4b3a3b72b9d93f651416b1fc65f9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 47d30cb2da91eff1260ffcf07838bd066917b4a1
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076460"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610640"
 ---
-# <a name="create-a-search"></a>Create a search
+# <a name="create-a-search"></a>建立搜尋
 
-在案例中的"**搜索"** 选项卡上，可以通过**单击"新建"** 搜索并遵循向导创建新搜索。
+在您案例中的 [**搜尋**] 索引標籤上，您可以按一下 [**新增搜尋**] 並遵循該嚮導來建立新的搜尋。
 
-## <a name="name-your-search-and-give-it-a-description"></a>命名您的搜索并给它一个描述
+![高級 eDiscovery 案例中的搜尋嚮導](../media/AeDSearch1.png)
 
-每个带有案例的搜索都应具有唯一的名称。 您可以选择提供搜索的说明。 
+## <a name="name-the-search-and-give-it-a-description"></a>命名搜尋並為其提供描述
 
-## <a name="define-your-search-query-and-conditions"></a>定义搜索查询和条件
+每個含案例的搜尋都應該有唯一的名稱。 您可以選擇提供搜尋的描述。 
 
-您可以使用预构建的条件卡或使用关键字查询语言 （KQL） 定义关键字查询和搜索的任何条件。 有关详细信息，请参阅[生成搜索查询](building-search-queries.md)。
+## <a name="choose-the-custodians-and-custodial-locations-to-search"></a>選擇要搜尋的保管人和 custodial 位置
 
-## <a name="choose-the-custodians-to-search-from"></a>选择要从中搜索的保管人
+透過指定您已新增至案例的保管人，選擇 [保管人內容位置] 進行搜尋。 透過選取保管人，您將針對所有對應至保管人的資料來源執行搜尋。 您也可以選擇將搜尋縮小為每位管理員所選取的資料來源。 如需如何新增保管人和管理其資料來源的詳細資訊，請參閱[使用保管人](managing-custodians.md)。
 
-定义条件后，需要选择要搜索的位置。 一种方法是指定已添加到要搜索的案例中的保管人。 通过选择保管人，您将对映射到保管人的所有数据源运行搜索。 有关如何将保管人添加到您的案例并管理其数据源的详细信息，请参阅[与保管人合作。](managing-custodians.md)
+## <a name="choose-non-custodial-locations"></a>選擇非 custodial 位置
 
-## <a name="choose-non-custodial-locations"></a>选择非托管地点
+在某些情況下，您可能會想要搜尋與保管人不相關聯的資料來源。 在此情況下，您可以指定您想要搜尋的位置，或選擇搜尋特定 Office 365 服務的所有內容位置（例如搜尋所有 Exchange 信箱或所有 SharePoint 網站和 OneDrive 帳戶）。
 
-在某些情况下，您可能希望搜索未映射到保管人的数据源。 在这种情况下，您可以指定要搜索的位置，或选择搜索特定 Office 365 服务的所有内容位置（例如搜索所有 Exchange 邮箱或所有 SharePoint 和 OneDrive 业务网站）。
+## <a name="define-the-search-query-and-conditions"></a>定義搜尋查詢和條件
+
+您可以使用預先建立的條件卡或使用關鍵字查詢語言（KQL）來定義關鍵字查詢和搜尋的任何條件。 如需詳細資訊，請參閱[建立搜尋查詢](building-search-queries.md)。

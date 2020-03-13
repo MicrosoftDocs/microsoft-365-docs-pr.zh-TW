@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2b0e033bb80fd73d5b5194bd59ab9c9f14a644b3
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: 1c06562cc0ff8cdc43efb3a8f62924c435883408
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42569040"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610560"
 ---
 # <a name="deploy-supported-services"></a>部署支援服務
 
@@ -71,7 +71,7 @@ ms.locfileid: "42569040"
 
 | 服務 | 布建指示 | 初始設定 |
 | ------ | ------ | ------ |
-| Microsoft Defender ATP | [驗證授權布建及完整設定 Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/licensing) | *請參閱布建指示* |
+| Microsoft Defender ATP | [Microsoft Defender ATP 部署指南](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *請參閱布建指示* |
 | Office 365 ATP | *無，使用 Office 365 布建* | [設定 ATP 原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
 | Azure ATP | [快速入門：建立您的 Azure ATP 實例](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *請參閱布建指示* |
 | Microsoft Cloud App Security | *無* | [快速入門： Microsoft Cloud App Security 快速入門](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |

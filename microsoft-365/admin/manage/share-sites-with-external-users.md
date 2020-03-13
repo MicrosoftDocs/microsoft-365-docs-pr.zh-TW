@@ -1,7 +1,6 @@
 ---
 title: 共用外部網站和檔案
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: twerner
 author: twernermsft
 manager: scotv
@@ -21,20 +20,20 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: '瞭解如何與組織外部的人員共用網站和檔案。 '
-ms.openlocfilehash: 83b111153389bf75a92bcc32af9563bf7432bf8a
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: a0a98c9ead997e4748804e4f8a87533a9943ec4f
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603990"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610570"
 ---
 # <a name="share-sites-and-files-externally"></a>共用外部網站和檔案
 
 若要與組織外部的人員進行共同作業，您可以在外部共用整個網站或特定檔案。 如果您想要直接設定共用，請選擇您要啟用的案例：
 
-- [在文件上與來賓共同作業](https://docs.microsoft.com/Office365/Enterprise/collaborate-on-documents)
-- [在網站中與來賓共同作業](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-site)
-- [在小組中與來賓共同作業](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-team)
+- [在文件上與來賓共同作業](../../solutions/collaborate-on-documents.md)
+- [在網站中與來賓共同作業](../../solutions/collaborate-in-site.md)
+- [在小組中與來賓共同作業](../../solutions/collaborate-as-team.md)
   
 ## <a name="deciding-how-to-share-your-content"></a>決定共用內容的方式
 

@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: 檢查資訊保護型服務和基礎結構的準則，確定您的設定符合 Microsoft 365 企業版的需求。
 ms.openlocfilehash: 28eff02ea870dcfca7e2e32580ed6a3a9e8a9484
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067110"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42544162"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>資訊保護基礎結構的允出準則
 

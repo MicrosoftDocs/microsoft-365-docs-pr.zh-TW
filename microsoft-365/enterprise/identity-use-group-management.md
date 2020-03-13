@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: 您可以使用群組來自動管理某些系統管理工作。
 ms.openlocfilehash: 215bb84cbb0cedc2f1320372ba8239cd51d07c98
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067270"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42544042"
 ---
 # <a name="step-5-use-groups-for-management"></a>步驟 5：使用群組進行管理
 

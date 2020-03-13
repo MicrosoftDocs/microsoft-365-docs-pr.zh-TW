@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 瞭解如何將來賓新增至 Office 365 群組、查看來賓使用者，以及使用 PowerShell 來控制來賓存取。
-ms.openlocfilehash: e4d71919fa5ebfb97a6bab8013fc6bc54ac071a4
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 3314746e4d12c318eaae8fbfa34c2ed0b4d31aed
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604000"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610610"
 ---
 # <a name="manage-guest-access-in-office-365-groups"></a>管理 Office 365 群組中的來賓存取
 
@@ -43,8 +43,8 @@ ms.locfileid: "42604000"
 
 群組中的來賓存取通常是用來包括 SharePoint 或小組的更廣泛案例的一部分。 這些服務有自己的來賓共用設定。 如需設定各群組、SharePoint 及小組之來賓共用的完整指示，請參閱：
 
-- [在網站中與來賓共同作業](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-site)
-- [在小組中與來賓共同作業](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-team)
+- [在網站中與來賓共同作業](../../solutions/collaborate-in-site.md)
+- [在小組中與來賓共同作業](../../solutions/collaborate-as-team.md)
 
 ## <a name="manage-groups-guest-access"></a>管理群組來賓存取
 
