@@ -394,7 +394,7 @@
               href: ./office-365-security/atp-safe-links-warning-pages.md
             - name: 使用威脅追蹤工具
               href: ./office-365-security/threat-trackers.md
-            - name: Office 365 中的攻擊模擬器
+            - name: Office 365 ATP 中的攻擊模擬器
               href: ./office-365-security/attack-simulator.md
             - name: Office 365 ATP 中的安全文件
               href: ./office-365-security/safe-docs.md
