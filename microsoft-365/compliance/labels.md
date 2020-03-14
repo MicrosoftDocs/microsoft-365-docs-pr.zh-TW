@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留標籤可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Microsoft 365 中實作記錄管理解決方案。
-ms.openlocfilehash: 5dcd97400067645c48f02a31061721644bae553c
-ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
+ms.openlocfilehash: 4052cf691e9123e3d840d5fa6759ff7f032b67c2
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42277440"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634301"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -58,9 +58,6 @@ ms.locfileid: "42277440"
     
    - 使用者不再需要了解資料控管原則，就可以專心工作。
 
-  > [!NOTE]
-  > 自動套用標籤的功能要求有權編輯網站或信箱中已選取要自動標記內容的每位使用者均至少擁有 Office 365 企業版 E5 授權。 使用者若只需要內容的唯讀存取權或回覆加標籤的電子郵件，就不需要此授權。
-      
 - **在 Office 365 中實作記錄管理**，包括電子郵件和文件。您可以使用保留標籤將內容分類成記錄。在這種情況下，無法變更或移除標籤，且不能編輯或刪除內容。 
 
 - **將預設保留標籤套用至 SharePoint 中的文件庫、資料夾或文件集**，以便該位置中的所有文件都繼承預設保留標籤。  
@@ -268,8 +265,6 @@ Exchange 公用資料夾和 Skype 不支援標籤。
     
 ![自動套用標籤的選擇條件頁面](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
-已針對前兩個選項設定的自動套用保留標籤需要 Office 365 企業版 E5 訂閱。 如果您使用用於可訓練分類器的選項，則此功能具有[額外的授權需求](classifier-getting-started-with.md#licensing-requirements)。
-
 將自動套用保留標籤套用到符合您設定之條件的所有內容，最多可能需要 7 天的時間。
   
 > [!TIP]
@@ -318,7 +313,9 @@ Exchange 公用資料夾和 Skype 不支援標籤。
 
 ### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>使用可訓練分類器自動將標籤套用至內容
 
-選擇用於可訓練分類器的選項時，可以選取其中一個內建分類器或自訂分類器。 內建分類器包括 [粗穢言語]****、[履歷]****、[原始程式碼]****、[騷擾]****、[粗話]**** 和 [威脅]****。
+選擇用於可訓練分類器的選項時，可以選取其中一個內建分類器或自訂分類器。 內建分類器包括 [粗穢言語]****、[履歷]****、[原始程式碼]****、[針對性騷擾]****、[粗話]**** 和 [威脅]****：
+
+![選擇可訓練分類器](../media/retention-label-classifers.png)
 
 若要使用此選項自動套用標籤，SharePoint Online 網站和信箱必須有至少 10 MB 的資料。
 
@@ -328,9 +325,9 @@ Exchange 公用資料夾和 Skype 不支援標籤。
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>將預設保留標籤套用至 SharePoint 文件庫、資料夾或文件集中的所有內容
 
-除了讓使用者將保留標籤套用至個別文件，您也可以將預設保留標籤套用到 SharePoint 文件庫、資料夾或文件集，讓該位置的所有文件套用預設保留標籤 (預設標籤是一個 E5 功能)。
+除了讓使用者將保留標籤套用至個別文件，您也可以將預設保留標籤套用到 SharePoint 文件庫、資料夾或文件集，讓該位置的所有文件套用預設保留標籤。
   
-若為文件庫，您可以在文件庫的 [文件庫設定]**** 頁面中進行這個動作。 當您選擇預設保留標籤時，也可以選擇將該標籤套用至文件庫中的現有項目。 
+若為文件庫，您可以在文件庫的 **[文件庫設定]** 頁面中進行這個動作。 當您選擇預設保留標籤時，也可以選擇將該標籤套用至文件庫中的現有項目。 
   
 例如，如果您有一個行銷資料的標籤，而且您知道某個文件庫只包含這個類型的內容，就能將「行銷資料」標籤設為該文件庫中所有文件的預設標籤。
   

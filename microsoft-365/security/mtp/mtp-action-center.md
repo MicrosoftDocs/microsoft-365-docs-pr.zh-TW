@@ -19,18 +19,18 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.openlocfilehash: a8f4cd9d3b970d6216e05fa6ff78699558c82600
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42262020"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633981"
 ---
 # <a name="the-action-center"></a>重要訊息中心
 
 **適用於：**
 - Microsoft 威脅防護
 
-使用重要訊息中心查看組織的裝置和信箱目前和過去的調查結果。 根據威脅及產生 verdict 的類型，[修復動作](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions)會發生自動] 或 [核准由貴組織的安全性作業小組。 所有補救動作 (無論是等待核准或已核准) 皆合併在重要訊息中心。 
+使用重要訊息中心查看組織的裝置和信箱目前和過去的調查結果。 根據威脅類型和產生的判定，您的組織的安全性運作小組會自動或核准執行[修正動作](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions)。 所有補救動作 (無論是等待核准或已核准) 皆合併在重要訊息中心。 
 
 ![重要訊息中心](../../media/air-actioncenter.png)
 
@@ -64,7 +64,7 @@ ms.locfileid: "42262020"
     - 如果調查涉及裝置，便會在安全中心 ([https://security.microsoft.com](https://security.microsoft.com)) 開啟調查詳細資料。 
 
 > [!TIP]
-> 如果您認為某個項目已未接或錯誤偵測到的自動化的調查和 Microsoft 威脅防護中的回應功能，讓我們知道 ！ 請參閱[How to 報告中自動進行調查並 Microsoft 威脅防護中的回應 （空調） 功能，則為 false positive/負號](mtp-autoir-report-false-positives-negatives.md)。
+> 如果您認為 Microsoft 威脅防護中的自動調查和回應功能已錯過或錯誤地偵測到某項功能，請告訴我們！ 請參閱[如何在 Microsoft 威脅防護中，以自動化調查和回應（AIR）功能來報告誤報/負片](mtp-autoir-report-false-positives-negatives.md)。
 
 ## <a name="required-permissions-for-action-center-tasks"></a>重要訊息中心的必要權限
 

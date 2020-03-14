@@ -12,60 +12,60 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: 提供 Microsoft 365 企業版元件、 計劃及部署路徑的簡介。
+description: 提供 Microsoft 365 for enterprise 的元件、方案及部署路徑的簡介。
 ms.openlocfilehash: 035c7bc2086b4f70dacc31c3489a4a8adc8fb3dd
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066884"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633301"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企業版概觀
 
-Microsoft 365 企業版是完整的智慧型解決方案，讓所有人發揮創意並安全地合作。 
+適用于企業的 Microsoft 365 是完整的智慧解決方案，可讓每個人都有創造性且安全地協同運作。 
 
-雖然專為大型組織，那麼 Microsoft 365 企業版可以也用於中型和小型企業所需的最進階的安全性和生產力功能。 
+雖然適用于大型組織，但 Microsoft 365 for enterprise 也可用於需要最高級安全性和生產力功能的中型和小型企業。 
 
 ## <a name="components"></a>零件
 
-Microsoft 365 企業版所組成：
+適用于企業的 Microsoft 365 包括：
 
 |||
 |:-------|:-----|
-| 本機和以雲端為基礎的應用程式和生產力服務 | 包含 Office 365 專業增強版、最新的 PC 與 Mac 版 Office 應用程式（如 Word、Excel、PowerPoint、Outlook 和其他人），以及一組完整的電子郵件、檔案儲存空間和共同作業、會議和其他的線上服務。 |
-| Windows 10 企業版 | 解決大型且中型組織中，為使用者提供與最具生產力且安全的 Windows 版本的需求和 IT 專業人員更完整的部署、 裝置和應用程式管理。 |
-| 裝置管理和進階的安全性的服務 | 包含 Microsoft Intune，也就是雲端式企業行動力管理 (EMM) 服務，可協助讓您同時將保持公司資料保護提高生產力的工作人員。 |
+| 本機和雲端架構應用程式與生產力服務 | 包含 Office 365 專業增強版、最新的 PC 與 Mac 版 Office 應用程式（如 Word、Excel、PowerPoint、Outlook 和其他人），以及一組完整的電子郵件、檔案儲存空間和共同作業、會議和其他的線上服務。 |
+| Windows 10 企業版 | 同時滿足大型和中型組織的需求，為使用者提供最具生產力且安全的 Windows 和 IT 專業人員，具有全面的部署、裝置和應用程式管理。 |
+| 裝置管理和高級安全性服務 | 包含 Microsoft Intune，也就是雲端式企業行動管理（EMM）服務，可協助讓您的員工在保持公司資料保護的情況下成為生產力。 |
 |||
 
 ## <a name="plans"></a>方案
 
-在三種計劃中使用 Microsoft 365 企業版。
+適用于企業的 Microsoft 365 可在三個方案中取得。
 
 |||
 |:-------|:-----|
-| E3 | 存取核心產品與安全地增強工作場所生產力和磁碟機創新能力，Microsoft 365 內的功能。 |
-| E5 | 存取最新的產品和 Microsoft 365 內的功能，包括進階威脅防護、 安全性和共同作業工具. 包含所有的 E3 的功能以及進階的安全性、 語音及資料分析工具。 |
-| F1 | 與第一線透過特殊用途的工具和資源，以允許他們盡善盡美連線。 |
+| E3 | 存取 Microsoft 365 中的核心產品和功能，以加強工作場所生產力，並安全地推動創新。 |
+| E5 | 存取 Microsoft 365 內最新的產品和功能，包括「高級威脅防護」、「安全性與共同作業」工具。。 包含所有的 E3's 功能，以及高級安全性、語音及資料分析工具。 |
+| F1 | 透過專門構建的工具和資源，與您的 Firstline 工作者進行連線，讓他們可以進行最佳的工作。 |
 |||
 
-如果您有 Microsoft 365 E3，您也可以取得這些[供應項目](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)：
+如果您有 Microsoft 365 E3，您也可以取得下列[產品](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)：
 
 - 身分識別 & 威脅防護
-- 資訊保護 & 合規性
+- 資訊保護 & 法規遵從性
 
-這些供應項目包含隨附於 Microsoft 365 E5 的其他功能。
+這些產品包含 Microsoft 365 E5 隨附的其他功能。
 
-如需詳細資訊，請參閱[每個計劃的功能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
+如需詳細資訊，請參閱[每個方案的功能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
 
 ## <a name="get-the-big-picture"></a>取得大圖片
 
-[Microsoft 365 企業版海報](../media/m365-poster/Microsoft365Enterprise.pdf)是中央位置，讓您檢視：
+適用于[企業海報的 Microsoft 365](../media/m365-poster/Microsoft365Enterprise.pdf)是一個集中位置，供您查看：
 
-- 之優點的 Microsoft 365 企業版和應用程式和服務如何對應至其值要點
-- Microsoft 365 企業版方案，而且其中包含哪些元件 
-- 現代化工作場所，可讓 Microsoft 365 企業版的主要元件
-- [Microsoft 365 生產力文件庫](https://www.microsoft.com/microsoft-365/success/)及一些常見的組織部門的代表性案例
-- Microsoft 365 企業版[部署指南](deploy-microsoft-365-enterprise.md)的重點在於說明採用藍圖
+- Microsoft 365 for enterprise 的優點，以及應用程式和服務對應到其價值支柱的優點
+- 適用于企業方案的 Microsoft 365，及其包含的元件 
+- Microsoft 365 enterprise 啟用的現代工作場所重要元件
+- 適用于某些常見組織部門的[Microsoft 365 生產力庫](https://www.microsoft.com/microsoft-365/success/)和代表性案例
+- 重點介紹 Microsoft 365 for enterprise[部署指南](deploy-microsoft-365-enterprise.md)的採用藍圖
 
 [![Microsoft 365 企業版海報的影像](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
@@ -74,7 +74,7 @@ Microsoft 365 企業版所組成：
 
 ## <a name="transition-your-entire-organization"></a>轉換整個組織
 
-若要取得較佳的圖片的如何將整個組織移至產品和服務在 Microsoft 365 企業版，請下載[轉換海報](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
+若要深入瞭解如何將整個組織移至 Microsoft 365 for enterprise 中的產品和服務，請下載[轉換海報](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
 
 [![轉換至 Microsoft 365 海報的影像](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
@@ -82,13 +82,13 @@ Microsoft 365 企業版所組成：
 
 您也可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
-## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>避免結尾的 Windows 7 和 Office 2010 用戶端與伺服器支援
+## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>避免 Windows 7 和 Office 2010 用戶端和伺服器的支援終止
 
-下列產品達到結尾**2020 年 1 月 14，** 支援：
+下列產品會在**2020 年1月14日**到達支援的結尾：
 
 - [Windows 7](https://aka.ms/win7upgrade)
 
-下列產品達到結尾**2020 年 10 月 13，** 支援：
+下列產品已于**2020 年10月13日**在支援結束：
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
@@ -98,31 +98,31 @@ Microsoft 365 企業版所組成：
 
 [![Office 2010 用戶端與伺服器和 Windows 7 終止支援海報的影像](../media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
-這一頁海報是支援的了解若要防止 Windows 7 和 Office 2010 用戶端和伺服器產品達到結尾的慣用的路徑與反白顯示的企業版 Microsoft 365 中支援，可採取的各種路徑的快速方法。
+這個單頁標牌是一種快速瞭解可讓您採取的各種途徑，以防止 Windows 7 和 Office 2010 用戶端和伺服器產品達到支援的狀態，並在 Microsoft 365 for enterprise 中以偏好的方式顯示。
 
 您也可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
 ## <a name="deploy"></a>部署
 
-有三種方式可以部署產品、 功能及的 Microsoft 365 企業版的元件：
+有三種方法可以部署 Microsoft 365 for enterprise 的產品、功能和元件：
 
-1. 與 FastTrack
+1. 與 FastTrack 合作
   
-   使用 FastTrack，Microsoft 工程師協助您移動到您自己的步調雲端。 請參閱[適用於 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365)。
+   透過 FastTrack，Microsoft 工程師可協助您以您自己的速度移至雲端。 請參閱[適用於 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365)。
   
-2. Microsoft 諮詢服務或[Microsoft 合作夥伴](https://partner.microsoft.com/)的協助。
+2. 請使用説明 Microsoft 諮詢服務或[microsoft 合作夥伴](https://partner.microsoft.com/)。
 
-   顧問可以分析您目前的基礎結構，並協助您開發以納入所有軟體與服務的 Microsoft 365 企業版計劃。
+   顧問可以分析您目前的基礎結構，並協助您開發一個計畫，以整合 Microsoft 365 for enterprise 的所有軟體和服務。
 
-3. 自行執行此工作
+3. 自行動手
 
-   [Microsoft 365 企業版部署指南](deploy-microsoft-365-enterprise.md)會帶您逐步透過建置基礎結構和生產力工作負載。 
+   [Microsoft 365 for enterprise deployment guide](deploy-microsoft-365-enterprise.md)會逐步引導您建立基礎結構和生產力工作負載。 
 
-如需部署資訊，請參閱如何：
+如需更多部署資訊，請參閱 how：
 
-- [客戶](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-for-enterprise)使用 Microsoft 365 企業版。
-- [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-for-enterprise)會採用 Microsoft 365 企業版。
-- [Contoso Corporation](contoso-overview.md)，虛構但有代表性的跨國企業，已部署 Microsoft 365 企業版。
+- [客戶](deploy-microsoft-365-enterprise.md#how-customers-use-microsoft-365-for-enterprise)使用 Microsoft 365 for enterprise。
+- [Microsoft](deploy-microsoft-365-enterprise.md#how-microsoft-uses-microsoft-365-for-enterprise)使用 microsoft 365 for enterprise。
+- [Contoso Corporation](contoso-overview.md)（虛構但具有代表性的跨國組織）已部署 Microsoft 365 for enterprise。
 
 ## <a name="additional-microsoft-365-solutions"></a>其他 Microsoft 365 解決方案
 
@@ -136,20 +136,20 @@ Microsoft 365 企業版所組成：
 
 - [Microsoft 365 政府版](https://www.microsoft.com/microsoft-365/government)
  
-  讓美國公共部門員工在一起，安全地運作。
+  讓美國公用部門員工可以安全地一起運作。
 
-## <a name="microsoft-365-training"></a>Microsoft 365 教育訓練
+## <a name="microsoft-365-training"></a>Microsoft 365 訓練
 
 |||
 |:-------|:-----|
-![Microsoft 365 基本概念訓練](../media/m365-poster/m365-fundamentals.svg)| 取得自行訓練，並向 Microsoft 365 憑證運作。 <BR> 開始使用[Microsoft 365 基本概念](https://docs.microsoft.com/learn/paths/m365-fundamentals/)。
+![Microsoft 365 基礎知識訓練](../media/m365-poster/m365-fundamentals.svg)| 取得您的訓練有素，並向 Microsoft 365 認證工作。 <BR> 開始使用[Microsoft 365 基礎](https://docs.microsoft.com/learn/paths/m365-fundamentals/)。
 |||
 
 
 ## <a name="next-step"></a>下一步
 
-如果您正在自行進行部署，來啟動您的[Microsoft 365 企業版部署的作業過程](deploy-microsoft-365-enterprise.md)。
+如果您是自行進行部署，請啟動您[的 Microsoft 365，以進行企業部署旅程](deploy-microsoft-365-enterprise.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-[Microsoft 365 企業版產品頁面](https://www.microsoft.com/microsoft-365/enterprise)
+[適用于企業產品的 Microsoft 365 頁面](https://www.microsoft.com/microsoft-365/enterprise)

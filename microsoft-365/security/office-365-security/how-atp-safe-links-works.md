@@ -13,62 +13,62 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 「安全連結」可在 Office 文件和電子郵件訊息中提供點擊超連結時即進行驗證的功能。 閱讀本篇文章以了解 ATP 安全連結的運作方式。
+description: 「安全連結」可在 Office 文件和電子郵件訊息中提供點擊超連結時即進行驗證的功能。 請閱讀本文以瞭解 ATP 安全連結的運作方式。
 ms.openlocfilehash: c87eef2afbb3a694d9906de0c6c43bfeb576782b
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42333680"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633971"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Office 365 ATP 安全連結的運作方式
 > [!IMPORTANT] 
-> 針對 Office 365 ATP Safe Links 才能正確運作，所有 Office 365 服務必須在相同的版本。
+> 為了讓 Office 365 ATP 安全連結正確運作，所有的 Office 365 服務都必須在相同版本。
          
-## <a name="how-atp-safe-links-works-with-urls-in-email"></a>ATP 安全連結的運作方式與 Url 以電子郵件
+## <a name="how-atp-safe-links-works-with-urls-in-email"></a>ATP 安全連結如何與 URLs 在電子郵件中運作
 
-在高的層級，以下是[ATP 安全連結](atp-safe-links.md)保護中的運作方式的 Url （裝載於 Office 365，不在內部） 的電子郵件：
+在高層次上，以下是[ATP 安全連結](atp-safe-links.md)保護如何針對電子郵件中的 URLs 運作（主控于 Office 365，而非內部部署）：
   
-1. 人員會收到電子郵件訊息，其中有些包含的 Url。
+1. 人員會收到電子郵件訊息，有些包含 URLs。
     
-2. 所有電子郵件通過 Exchange Online Protection，其中網際網路通訊協定 (IP) 及信封篩選，簽章型惡意程式碼防護，反垃圾郵件和反惡意軟體篩選器。 
+2. 所有電子郵件都會經歷 Exchange Online Protection，其中會套用到網際網路通訊協定（IP）和信封篩選器、簽名型惡意程式碼防護、反垃圾郵件和反惡意程式碼篩選器。 
     
-3. 電子郵件會送達人民收件匣。
+3. 電子郵件會送達人員的收件匣。
     
-4. 使用者登入 Office 365，並移至其電子郵件收件匣。
+4. 使用者登入 Office 365，並進入電子郵件收件匣。
     
-5. 使用者開啟電子郵件訊息，並按一下電子郵件訊息中的 URL。
+5. 使用者開啟電子郵件訊息，然後按一下電子郵件訊息中的 URL。
     
-6. ATP 安全連結功能立即檢查才能開啟之網站的 URL。 URL 被識別為惡意，/ 安全封鎖。
+6. ATP 安全連結功能會在開啟網站之前立即檢查 URL。 URL 被識別為封鎖、惡意或安全。
         
-   - 組織[自訂封鎖的 Url 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)中包含的網站 URL 時，會開啟[警告] 頁面](atp-safe-links-warning-pages.md)。 
+   - 如果 URL 是在組織的 [[自訂封鎖 URLs] 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)中所包含的網站上，則會開啟 [[警告] 頁面](atp-safe-links-warning-pages.md)。 
     
-   - 已判定為惡意的網站 URL 時，會開啟[警告] 頁面](atp-safe-links-warning-pages.md)。 
+   - 如果 URL 指向已確定為惡意的網站，則會開啟 [警告][頁面](atp-safe-links-warning-pages.md)。 
     
-   - 如果 URL 會前往可下載的檔案，且貴組織的[ATP 安全連結原則](set-up-atp-safe-links-policies.md)設定可掃描這類內容，會檢查可下載的檔案。 
+   - 若 URL 移至可下載的檔案，且您組織的[ATP 安全連結原則](set-up-atp-safe-links-policies.md)已設定為掃描這類內容，便會檢查可下載的檔案。 
     
-   - 如果 URL 會決定為了安全起見，網站會隨即開啟。
+   - 如果此 URL 確定為安全，網站會開啟。
     
-## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>ATP 安全連結的運作方式與 Url 中的 Office 文件 
+## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>ATP 安全連結如何與 Office 檔中的 URLs 搭配使用 
 
-在高層級，此處的[ATP 安全連結](atp-safe-links.md)保護中的運作方式 Url 的 Office 365 專業增強版或商務進階版的應用程式 （目前版本的 Word、 Excel 及 PowerPoint 在 Windows、 Mac，或在瀏覽器、 Office 應用程式，在 iOS 或 Android 裝置，Visio 在 Windows 上的、 在瀏覽器中的 OneNote）：
+在高層次上，以下是在 Office 365 ProPlus 或商務精品應用程式（Windows、Mac 上的目前版本 Word、Excel 及 PowerPoint 中的 Office iOS 應用程式、在 Windows 上的 Visio，OneNote 于瀏覽器中）的 URLs 的[ATP 安全連結](atp-safe-links.md)保護如何運作：
   
-1. 人員擁有其電腦、 智慧型手機或平板電腦上安裝 Office 365 專業增強版或商務進階版。 （或是在其瀏覽器中使用 Office]）。
+1. 使用者已在其電腦、smartphone 或平板電腦上安裝 Office 365 ProPlus 或商務版。 （或者，他們會在其瀏覽器中使用 Office。）
     
-2. 使用者 （在桌面上），開啟 Word、 Excel、 PowerPoint、 OneNote （在瀏覽器中） 或 Visio，並為 Office 365 企業版使用其公司或學校帳戶登入。 文件中包含的 Url。
+2. 使用者開啟 Word、Excel、PowerPoint、OneNote （在瀏覽器中）或 Visio （在桌面上），並使用公司或學校帳戶登入 Office 365 Enterprise。 檔包含 URLs。
     
-3. 當使用者在 [文件中的 URL 時，連結會檢查 ATP 安全連結服務。
+3. 當使用者按一下檔中的 URL 時，ATP 安全連結服務便會檢查此連結。
     
-   - URL 是包含在組織的[自訂封鎖的 Url 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)的網站，如果使用者不會採取至[警告頁面](atp-safe-links-warning-pages.md)。
+   - 如果 URL 是在組織的[自訂封鎖 URLs] 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)中所包含的網站上，則會移至 [[警告] 頁面](atp-safe-links-warning-pages.md)。
     
-   - 如果已決定為惡意的網站 URL，使用者會採取至[警告頁面](atp-safe-links-warning-pages.md)。
+   - 如果 URL 指向已確定為惡意的網站，則會將使用者移至 [[警告] 頁面](atp-safe-links-warning-pages.md)。
     
-   - 如果 URL 會前往可下載的檔案，且[ATP 安全連結原則](set-up-atp-safe-links-policies.md)設定可掃描這類的下載項目，會檢查可下載的檔案。 
+   - 若 URL 移至可下載的檔案，且已設定[ATP 安全連結原則](set-up-atp-safe-links-policies.md)來掃描這類下載，便會檢查可下載的檔案。 
     
-   - URL 會被視為安全，如果使用者不會採取至網站。
+   - 如果此 URL 被視為安全的，使用者會進入網站。
       
-   - 如果 URL 檢查失敗，將不會觸發安全連結保護。 在桌面用戶端中，將會繼續透過站台之前警告使用者。
+   - 如果 URL 檢查失敗，安全連結的保護將不會觸發。 在桌面用戶端上，系統會先提醒使用者，然後再繼續進行網站。
       
 > [!NOTE]
-> 可能需要幾秒的每個工作階段開頭，若要確認使用者已啟用的 Office 的 ATP 安全連結。 
+> 在每個會話開始時可能需要幾秒鐘，以確認使用者已啟用 Office 的 ATP 安全連結。 
       

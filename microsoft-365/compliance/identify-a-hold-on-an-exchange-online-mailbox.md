@@ -1,5 +1,7 @@
 ---
 title: 如何找出位於 Exchange Online 信箱的保留類型
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,202 +14,233 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
-description: 了解如何标识可放置在 Office 365 邮箱上的不同类型的保留。 这些类型的保留包括诉讼保留、电子数据展示保留和 Office 365 保留策略。 您还可以确定用户是否已被从组织范围的保留策略中排除
-ms.openlocfilehash: 47e7ffff1703c0de94f014dc18e249cc9775e3e2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 瞭解如何識別可放在 Office 365 信箱上的不同保留類型。 這些保留類型包括訴訟暫止、eDiscovery 保留及 Office 365 保留原則。 您也可以判斷使用者是否已從整個組織的保留原則中排除
+ms.openlocfilehash: f45310547d41d8ec1092a3fecfaa0b50c4439559
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076288"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634861"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何找出位於 Exchange Online 信箱的保留類型
 
-本文介绍如何识别放在 Office 365 中的 Exchange 联机邮箱上的保留。
+本文說明如何識別放在 Office 365 中 Exchange Online 信箱上的「保留」。
 
-Office 365 提供了多种方法，您的组织可以防止邮箱内容被永久删除。 这使您的组织能够保留内容以满足合规性法规，或在法律和其他类型的调查期间。 下面是 Office 365 中的保留功能（也称为*保留）* 的列表：
+Office 365 提供數種方式，讓您的組織可以防止信箱內容遭到永久刪除。 這可讓您的組織保留內容，以符合合規性法規或法律和其他調查類型。 以下是 Office 365 中的保留功能（也稱為*保留*）清單：
 
-- **[诉讼保留](create-a-litigation-hold.md)：** 应用于联机交换中的用户邮箱的保留。
+- **[訴訟暫](create-a-litigation-hold.md)止：** 適用于 Exchange Online 中使用者信箱的保留。
 
-- **[电子数据展示持有](ediscovery-cases.md#step-4-place-content-locations-on-hold)：** 与安全和合规性中心中的电子数据展示案例关联的保留。 电子数据展示保留可应用于用户邮箱和 Office 365 组和 Microsoft 团队的相应邮箱。
+- ** [eDiscovery 保留](ediscovery-cases.md#step-4-place-content-locations-on-hold)：** 與安全性與合規性中心中的 eDiscovery 案例相關聯的保留。 eDiscovery 保留可以套用到使用者信箱，以及 Office 365 群組和 Microsoft 小組對應的信箱。
 
-- **[就地保持](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds)：** 使用 Exchange 管理中心中的 Exchange 管理中心中的"就地"电子数据&保留工具应用于用户邮箱的保留。
+- **[保留 In-Place](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds)：** 在 Exchange Online 中使用 Exchange 系統管理中心的「In-Place eDiscovery & 保留」工具，將套用至使用者信箱的保留。
 
-- ** [Office 365 保留策略](retention-policies.md)：** 可以配置为在 Exchange 联机用户邮箱中以及 Office 365 组和 Microsoft 团队的相应邮箱中保留（或保留和删除）用户邮箱中的内容。 您还可以创建保留策略以保留存储在用户邮箱中的 Skype 业务对话。
+- ** [Office 365 保留原則](retention-policies.md)：** 可以設定為保留（或保留然後刪除） Exchange Online 中使用者信箱的內容，以及 Office 365 群組和 Microsoft 小組對應的信箱中的內容。 您也可以建立保留原則，以保留儲存在使用者信箱中的商務用 Skype 交談。
 
-  可以分配给邮箱的 Office 365 保留策略有两种类型。
+  有兩種類型的 Office 365 保留原則可指派給信箱。
 
-    - **特定位置保留策略：** 这些是分配给特定用户的内容位置的策略。 您可以使用 Exchange 在线 PowerShell 中的**获取邮箱**cmdlet 获取有关分配给特定邮箱的保留策略的信息。
+    - **特定位置保留原則：** 這些是指派給特定使用者之內容位置的原則。 您可以在 Exchange Online PowerShell 中使用**Get-Mailbox** Cmdlet，以取得指派給特定信箱之保留原則的相關資訊。
 
-    - **组织范围的保留策略：** 这些是分配给组织中所有内容位置的策略。 您可以使用 Exchange 在线 PowerShell 中的**获取组织 Config** cmdlet 来获取有关组织范围保留策略的信息。
-  有关详细信息，请参阅[Office 365 保留策略概述](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)中的"将保留策略应用于整个组织或特定位置"部分。
+    - **整個組織保留原則：** 這些是指派給組織中所有內容位置的原則。 您可以在 Exchange Online PowerShell 中使用**Get-OrganizationConfig** Cmdlet，以取得整個組織保留原則的資訊。
+  如需詳細資訊，請參閱[Office 365 保留原則](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)中的「將保留原則套用至整個組織或特定位置」一節。
 
-- **[Office 365 保留标签：](labels.md)** 如果用户将 Office 365 保留标签（配置为保留内容或保留内容，然后删除内容）*应用于其*邮箱中的任何文件夹或项目，则会在邮箱上放置保留，就像邮箱是置于诉讼保留或分配给 Office 365 保留策略。 有关详细信息，请参阅[保留中的标识邮箱，因为保留标签已应用于本文中的文件夹或项目](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item)部分。
+- **[Office 365 保留標籤](labels.md)：** 如果使用者將 Office 365 保留標籤（已設定為保留內容或保留，然後刪除內容）套用至其信箱中的*任何*資料夾或專案，則會在信箱上保留信箱，就像該信箱是放在訴訟暫止狀態或指派給 Office 365 保留原則。 如需詳細資訊，請參閱「保留中的信箱」，[因為保留標籤已套用至本文中的資料夾或專案](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item)一節。
 
-要管理保留邮箱，您可能需要标识放置在邮箱上的保留类型，以便可以执行诸如更改保留持续时间、临时或永久删除保留或从 Office 365 保留策略中排除邮箱等任务。 在这些情况下，第一步是标识放置在邮箱上的保留类型。 由于可以将多个保留（和不同类型的保留）放置在单个邮箱上，因此如果要删除或更改保留，必须标识放置在邮箱上的所有保留。
+若要管理保留的信箱，您可能必須識別放在信箱上的保留類型，以便執行工作，例如變更保留期間、暫時或永久移除保留，或排除來自 Office 365 保留原則的信箱。 在這些情況下，第一步是識別放在信箱上的保留類型。 而且，由於多個保留（和不同類型的保留）可以放在單一信箱上，因此，如果您想要移除或變更保留，您必須識別位於信箱上的所有保留。
 
-## <a name="step-1-obtain-the-guid-for-holds-placed-on-a-mailbox"></a>步骤 1：获取放置在邮箱上的保留的 GUID
+## <a name="step-1-obtain-the-guid-for-holds-placed-on-a-mailbox"></a>步驟1：取得放在信箱上之保留的 GUID
 
-您可以在 Exchange 在线 PowerShell 中运行以下两个 cmdlet，以获取放置在邮箱上的保留的 GUID。 获取 GUID 后，可以使用它来标识步骤 2 中的特定保留。 GUID 未识别诉讼保留。 对于邮箱启用或禁用诉讼保留。
+您可以在 Exchange Online PowerShell 中執行下列兩個 Cmdlet，以取得信箱中所放置之保留的 GUID。 在取得 GUID 之後，您可以使用它來識別步驟2中的特定保留。 GUID 未識別訴訟暫止。 已啟用或停用信箱的訴訟資料暫留。
 
-- **获取邮箱：** 使用此 cmdlet 可确定是否已为邮箱启用诉讼保留，并获取电子数据展示保留、就地保留和 Office 365 保留策略的 GUID，这些策略专门分配给邮箱。 此 cmdlet 的输出还将指示邮箱是否已显式从组织范围的保留策略中排除。
+- **Get-Mailbox：** 使用此 Cmdlet 可判斷是否已啟用信箱的訴訟資料暫留，以及是否要取得 eDiscovery 保留的 Guid、In-Place 保留，以及專門指派給信箱的 Office 365 保留原則。 此 Cmdlet 的輸出也會指出是否已明確從整個組織的保留原則中排除信箱。
 
-- **获取组织配置：** 使用此 cmdlet 获取组织范围保留策略的 GUID。
+- **Get-OrganizationConfig：** 使用此 Cmdlet 取得整個組織保留原則的 Guid。
 
 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
 
 ### <a name="get-mailbox"></a>Get-Mailbox
 
-运行以下命令以获取有关应用于邮箱的保留和 Office 365 保留策略的信息。
+執行下列命令，以取得適用于信箱之保留和 Office 365 保留原則的資訊。
 
-```
+```powershell
 Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 ```
 
 > [!TIP]
-> 如果 InPlaceHolds 属性中的值太多，并且并非所有值都显示，则可以运行该`Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds`命令以在单独的行上显示每个 GUID。
+> 如果 InPlaceHolds 屬性中的值太多，而且不是所有的值都顯示出來，您可以執行`Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds`此命令，將每個 GUID 顯示在不同的行上。
 
-下表介绍在运行**Get-Mailbox** cmdlet 时，如何根据*InPlaceHolds*属性中的值识别不同类型的保留。
+下表說明當您執行**Get-Mailbox** Cmdlet 時，如何根據*InPlaceHolds*屬性中的值來識別不同類型的保留。
 
 
-|保持类型  |範例值  |如何识别保持  |
+|保留類型  |範例值  |如何識別保留  |
 |---------|---------|---------|
-|诉讼保留     |    `True`     |     *当"诉讼保留"* 属性设置为`True`时，将启用邮箱的"诉讼保留"。    |
-|电子数据展示保留     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   *InPlaceHolds 属性*包含与安全和合规性中心中的电子数据展示案例关联的任何保留的 GUID。 可以判断这是一个电子数据展示保留，因为 GUID 以`UniH`前缀开头（表示统一保留）。      |
-|原有範圍暫止     |     `c0ba3ce811b6432a8751430937152491` <br/> 或 <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     *InPlaceHolds*属性包含放置在邮箱上的就地保持的 GUID。 您可以判断这是一个就地保留，因为 GUID 要么不以前缀开头，要么以`cld`前缀开头。     |
-|专门应用于邮箱的 Office 365 保留策略     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> 或 <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     InPlaceHolds 属性包含应用于邮箱的任何特定位置保留策略的 GUID。 您可以标识保留策略，因为 GUID 以`mbx`或`skp`前缀开头。 前`skp`缀表示保留策略应用于用户邮箱中的 Skype 业务对话。    |
-|从组织范围的 Office 365 保留策略中排除     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     如果邮箱从组织范围的 Office 365 保留策略中排除，则邮箱从中删除的保留策略的 GUID 将显示在 InPlaceHolds 属性中，并由`-mbx`前缀标识。    |
+|訴訟暫止     |    `True`     |     當*LitigationHoldEnabled*屬性設定為`True`時，信箱的訴訟資料暫留已啟用。    |
+|eDiscovery 保留     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   *InPlaceHolds 屬性*包含與安全性與合規性中心中的 eDiscovery 案例相關聯之任何保留的 GUID。 您可以告訴這是 eDiscovery 封存，因為 GUID 是以`UniH`前置詞開頭（表示整合保留）。      |
+|原有範圍暫止     |     `c0ba3ce811b6432a8751430937152491` <br/> 或 <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     *InPlaceHolds*屬性包含放在信箱上的 IN-PLACE 保留 GUID。 您可以告知這是 In-Place 保留，因為 GUID 不是以前置詞開頭，也不是以`cld`前置詞開頭。     |
+|專用於信箱的 Office 365 保留原則     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> 或 <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     InPlaceHolds 屬性包含套用至信箱之任何特定位置保留原則的 Guid。 您可以識別保留原則，因為 GUID 是以`mbx`或`skp`前置詞開頭。 `skp`前置詞表示將保留原則套用至使用者信箱中的商務用 Skype 交談。    |
+|從全組織的 Office 365 保留原則中排除     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     如果信箱是從全組織的 Office 365 保留原則中排除，則會在 InPlaceHolds 屬性中顯示信箱所排除的保留原則 GUID，並以`-mbx`前置詞加以識別。    |
 
-### <a name="get-organizationconfig"></a>获取组织配置
-如果在运行**Get-Mailbox** cmdlet*时，InPlaceHolds*属性为空，则仍有一个或多个组织范围的 Office 365 保留策略应用于邮箱。 在 Exchange 在线 PowerShell 中运行以下命令，以获取组织范围 Office 365 保留策略的 GUID 列表。
+### <a name="get-organizationconfig"></a>Get-OrganizationConfig
+當您執行**Get-Mailbox** Cmdlet 時，如果*InPlaceHolds*屬性是空的，則仍有一或多個組織內的 Office 365 保留原則會套用至信箱。 在 Exchange Online PowerShell 中執行下列命令，以取得組織內的 Office 365 保留原則的 Guid 清單。
 
-```
+```powershell
 Get-OrganizationConfig | FL InPlaceHolds
 ```
 
 > [!TIP]
-> 如果 InPlaceHolds 属性中的值太多，并且并非所有值都显示，则可以运行该`Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds`命令以在单独的行上显示每个 GUID。
+> 如果 InPlaceHolds 屬性中的值太多，而且不是所有的值都顯示出來，您可以執行`Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds`此命令，將每個 GUID 顯示在不同的行上。
 
-下表描述了不同类型的组织范围保留，以及如何在运行**Get-组织 Config** cmdlet 时根据*InPlaceHolds*属性中包含的 GUID 标识每种类型。
+下表說明組織範圍的不同類型，以及如何在您執行**Get-OrganizationConfig** Cmdlet 時，根據*InPlaceHolds*屬性所包含的 guid 來識別每個類型。
 
 
-|保持类型  |範例值  |描述  |
+|保留類型  |範例值  |說明  |
 |---------|---------|---------|
-|Office 365 保留策略应用于 Exchange 邮箱、Exchange 公用文件夹和团队聊天    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   应用于 Exchange 邮箱、Exchange 公用文件夹和 Microsoft 团队中的 1xN 聊天的组织范围保留策略由以`mbx`前缀开头的 GUID 标识。 注意 1xN 聊天存储在各个聊天参与者的邮箱中。      |
-|Office 365 保留策略应用于 Office 365 组和 Teams 频道邮件     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    应用于 Office 365 组和 Microsoft 团队中的渠道消息的组织范围保留策略由以`grp`前缀开头的 GUID 标识。 注意通道邮件存储在与 Microsoft 团队关联的组邮箱中。     |
+|套用至 Exchange 信箱、Exchange 公用資料夾及小組聊天的 Office 365 保留原則    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   套用至 Exchange 信箱、Exchange 公用資料夾和1xN 聊天室的組織內的保留原則，都是由以`mbx`前置詞開頭的 guid 來識別。 附注1xN 聊天會儲存在個別聊天參與者的信箱中。      |
+|套用至 Office 365 群組和團隊通道郵件的 office 365 保留原則     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    在 Microsoft 小組中套用至 Office 365 群組和通道郵件的全組織保留原則，會由以前置詞開頭`grp`的 guid 來識別。 附注通道郵件會儲存在與 Microsoft 小組相關聯的群組信箱中。     |
 
-有关应用于 Microsoft 团队的详细信息保留策略，请参阅[保留策略的"](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)团队位置"部分概述 。
+如需適用于 Microsoft 小組的詳細資訊保留原則，請參閱[保留原則](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)的「小組位置」一節。
 
-### <a name="understanding-the-format-of-the-inplaceholds-value-for-retention-policies"></a>了解保留策略的 InPlace 保留值的格式
+### <a name="understanding-the-format-of-the-inplaceholds-value-for-retention-policies"></a>瞭解保留原則的 InPlaceHolds 值格式
 
-除了前缀（mbx、skp 或 grp）将 InPlaceHolds 属性中的项标识为 Office 365 保留策略之外，该值还包含一个后缀，用于标识为策略配置的保留操作的类型。 例如，以下示例中以粗体突出显示操作后缀：
+除了將 InPlaceHolds 屬性中的專案識別為 Office 365 保留原則的首碼（mbx、skp 或 grp）之外，此值還包含一個尾碼，識別針對原則所設定的保留動作類型。 例如，下列範例中的動作尾碼會以粗體反白顯示：
 
-   `skp127d7cf1076947929bf136b7a2a8c36f`**:1**
+   `skp127d7cf1076947929bf136b7a2a8c36f`**：1**
 
-   `mbx7cfb30345d454ac0a989ab3041051209`**:2**
+   `mbx7cfb30345d454ac0a989ab3041051209`**：2**
 
-   `grp1a0a132ee8944501a4bb6a452ec31171`**:3**
+   `grp1a0a132ee8944501a4bb6a452ec31171`**：3**
 
-下表定义了三种可能的保留操作：
+下表定義三種可能的保留動作：
 
 |值  |描述  |
 |---------|---------|
-|**1**     | 指示保留策略配置为删除项目。 策略不保留项目。        |
-|**2**    |    指示保留策略配置为保留物料。 保留期到期后，策略不会删除项目。     |
-|**3**     |   指示保留策略配置为保留项目，然后在保留期到期后将其删除。      |
+|**1**     | 表示保留原則已設定為刪除專案。 原則不會保留專案。        |
+|**第**    |    表示保留原則設定為保留專案。 原則不會在保留期間到期之後刪除專案。     |
+|**個**     |   表示保留原則已設定為保留專案，然後在保留期間到期時加以刪除。      |
 
-有关保留操作的详细信息，请参阅[保留策略概述](retention-policies.md#retaining-content-for-a-specific-period-of-time)中的"保留特定时间段的内容"部分。
+如需有關保留動作的詳細資訊，請參閱[保留原則](retention-policies.md#retaining-content-for-a-specific-period-of-time)一節中的「在特定時段保留內容」一節。
    
-## <a name="step-2-use-the-guid-to-identify-the-hold"></a>步骤 2：使用 GUID 标识保持
+## <a name="step-2-use-the-guid-to-identify-the-hold"></a>步驟2：使用 GUID 識別保留
 
-获取应用于邮箱的保留的 GUID 后，下一步是使用该 GUID 标识保留。 以下各节演示如何使用保留 GUID 标识保留的名称（和其他信息）。
+在您取得套用至信箱之保留的 GUID 之後，下一步是使用該 GUID 來識別保留。 下列各節說明如何使用保留 GUID 識別保留（及其他資訊）的名稱。
 
-### <a name="ediscovery-holds"></a>电子数据展示保留
+### <a name="ediscovery-holds"></a>eDiscovery 保留
 
-在安全&合规性中心 PowerShell 中运行以下命令，以标识应用于邮箱的电子数据展示保留。 使用 GUID（不包括 UniH 前缀）执行您在步骤 1 中标识的"电子数据展示"保留。 第一个命令创建一个变量，其中包含有关保留的信息。 此变量用于其他命令。 第二个命令显示保留关联的电子数据展示案例的名称。 第三个命令显示保留的名称和保留应用于的邮箱的列表。
+在安全性 & 規範中心 PowerShell 中執行下列命令，以找出套用至信箱的 eDiscovery 暫止狀態。 使用您在步驟1中識別的 eDiscovery 暫止的 GUID （不包括 UniH 前置詞）。 第一個命令會建立包含保留相關資訊的變數。 在其他命令中使用此變數。 第二個命令會顯示與該保留相關聯的 eDiscovery 案例名稱。 第三個命令會顯示保留的名稱，以及保留所套用的信箱清單。
 
-```
+```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
 ```
 
-```
+```powershell
 Get-ComplianceCase $CaseHold.CaseId | FL Name
 ```
 
-```
+```powershell
 $CaseHold | FL Name,ExchangeLocation
 ```
 
-要连接到安全&合规性中心 PowerShell，请参阅[连接到安全&合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+若要連線至安全性 & 合規性中心 PowerShell，請參閱[connect To security & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
 
 ### <a name="in-place-holds"></a>就地保留
 
-在 Exchange 联机 PowerShell 中运行以下命令，以标识应用于邮箱的就地保留。 使用 GUID 进行步骤 1 中标识的就地保持。 该命令显示保留的名称和保留应用于的邮箱的列表。
+在 Exchange Online PowerShell 中執行下列命令，以識別套用至信箱的 In-Place 保留。 使用您在步驟1中識別的 In-Place 保留 GUID。 此命令會顯示保留專案的名稱，以及保留所套用的信箱清單。
 
-```
+```powershell
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 ```
-如果就地保留的 GUID 以`cld`前缀开头，请确保在运行上一个命令时包含前缀。
 
-### <a name="office-365-retention-policies"></a>Office 365 保留策略
+如果 In-Place 保留的 GUID 是以`cld`前置詞開頭，請務必在執行先前的命令時包含首碼。
 
-在"安全&合规性中心 PowerShell 中运行以下命令，以标识应用于邮箱的 Office 365 保留策略（组织范围或特定位置）。 使用您在步骤 1 中标识的 GUID（不包括 mbx、skp 或 grp 前缀或操作后缀）。
+> [!IMPORTANT]
+> 當我們繼續以保留信箱內容的不同方式投資時，我們宣佈在 Exchange 系統管理中心（EAC）中封存 In-Place 的退休。 從2020年4月1日起，您將無法在 Exchange Online 中建立新的 In-Place 保留。 不過，您仍然可以管理 EAC 中的 In-Place，或是使用 Exchange Online PowerShell 中的**Set-MailboxSearch** Cmdlet 來管理。 不過，從2020年7月1日起，您將無法管理 In-Place 保留。 您只會在 EAC 中或使用**Remove-MailboxSearch** Cmdlet 中移除它們。 如需停用 In-Place 保留的詳細資訊，請參閱[舊版 eDiscovery tools 的退休](legacy-ediscovery-retirement.md)。
 
-```
+### <a name="office-365-retention-policies"></a>Office 365 保留原則
+
+在 [安全性 & 規範 PowerShell 中心] 中執行下列命令，以身分識別套用至信箱的 Office 365 保留原則（組織範圍或特定位置）。 使用您在步驟1中所識別的 GUID （不包括 mbx、skp 或 grp 的首碼或動作尾碼）。
+
+```powershell
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
 
-## <a name="identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item"></a>标识保留邮箱，因为保留标签已应用于文件夹或项目
+## <a name="identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item"></a>因為保留標籤已套用至資料夾或專案，因此識別保留的信箱
 
-每当用户应用配置为保留内容或保留内容，然后将内容删除到其邮箱中的任何文件夹或项目时，*符合性标记应用*邮箱属性将设置为**True**。 发生这种情况时，邮箱将被视为处于保留状态，就像邮箱被置于诉讼保留或分配给 Office 365 保留策略一样。 当*符合性标记应用*属性设置为**True**时，可能会出现以下情况：
+每當使用者套用設定為保留內容或保留的保留標籤，然後將內容刪除至其信箱中的任何資料夾或專案時， *ComplianceTagHoldApplied*信箱屬性都會設為**True**。 當發生這種情況時，信箱會被視為保留，就像是設定為訴訟暫止或指派給 Office 365 保留原則一樣。 當*ComplianceTagHoldApplied*屬性設定為**True**時，可能會發生下列情況：
 
-- 如果邮箱或用户的 Office 365 用户帐户被删除，则邮箱将成为[非活动邮箱](inactive-mailboxes-in-office-365.md)。
-- 无法禁用邮箱（主邮箱或存档邮箱（如果已启用）。
-- 邮箱中的项目保留时间可能比预期长。 这是因为邮箱处于保留状态，因此不会永久删除（清除）任何项目。
+- 如果信箱或使用者的 Office 365 使用者帳戶已刪除，則信箱會變成非使用中的[信箱](inactive-mailboxes-in-office-365.md)。
+- 您無法停用信箱（主要信箱或封存信箱，如果已啟用）。
+- 信箱中的專案可以保留的時間超過預期。 這是因為信箱處於保留狀態，因此不會永久刪除（清除）的專案。
 
-要查看*符合性标记应用*属性的值，在 Exchange 在线 PowerShell 中运行以下命令：
+若要查看*ComplianceTagHoldApplied*屬性的值，請在 Exchange Online 中執行下列命令 PowerShell:
 
-```
+```powershell
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-有关保留标签的详细信息，请参阅[Office 365 保留标签概述](labels.md)。
+如需保留標籤的詳細資訊，請參閱[Office 365 保留標籤](labels.md)。
 
-## <a name="managing-mailboxes-on-delay-hold"></a>管理延迟保留的邮箱
+## <a name="managing-mailboxes-on-delay-hold"></a>管理延遲暫止的信箱
 
-从邮箱中删除任何类型的保留*后，DelayHold 应用*邮箱属性的值将设置为**True**。 下次托管文件夹助理处理邮箱并检测到保留已被删除时，将发生这种情况。 这称为*延迟保留，* 这意味着实际删除保留将延迟 30 天，以防止数据从邮箱永久删除（清除）。 这使管理员有机会搜索或恢复在删除保留后将清除的邮箱项目。 在邮箱上放置延迟保留时，邮箱仍被视为无限期处于保留状态，就像邮箱处于诉讼保留状态一样。 30 天后，延迟保留将过期，Office 365 将自动尝试删除延迟保留（通过将*DelayHold 应用*属性设置为**False），** 以便删除保留。 在"*延迟应用"* 属性为**False**后，在托管文件夹助理下一次处理邮箱时，将清除标记为要删除的项目。
+從信箱移除任何類型的保留後，會套用*延遲保留*。 這表示實際刪除保留的時間延遲30天，以防止資料從信箱中永久刪除（清除）。 這可讓系統管理員在移除保留後，搜尋或復原將會清除的信箱專案。 [延遲保留] 會在下一次受管理的資料夾助理處理信箱，並偵測已移除保留時，放在信箱上。 具體說來，當受管理的資料夾助理將下列其中一個信箱屬性設定為**True**時，會將延遲保留套用至信箱：
 
-要查看邮箱的*DelayHold 应用*属性的值，在 Exchange 联机 PowerShell 中运行以下命令。
+- **DelayHoldApplied：** 此屬性適用于儲存在使用者信箱中的電子郵件相關內容（由使用 Outlook 和 Outlook 網頁版的人員所產生）。
 
-```
-Get-Mailbox <username> | FL DelayHoldApplied
-```
-
-要在延迟过期之前删除延迟保留，可以在 Exchange 在线 PowerShell 中运行以下命令： 
+- **DelayReleaseHoldApplied：** 此屬性適用于以雲端為基礎的內容（由非 Outlook 應用程式（如 Microsoft 團隊、Microsoft Forms 及 Microsoft Yammer）所產生，該內容儲存在使用者的信箱中。 Microsoft app 所產生的雲端資料通常會儲存在使用者信箱中的隱藏資料夾中。
  
+ 將延遲保留放在信箱上時（如果上述任一屬性設定為**True**），信箱仍會被視為無限期保留期間（如同信箱處於訴訟暫止狀態時）。 30天后，延遲保留到期，Office 365 會自動嘗試移除延遲保留（透過將 DelayHoldApplied 或 DelayReleaseHoldApplied 屬性設為**False**），以移除 [保留]。 在上述任一屬性設定為**False**之後，在下一次受管理的資料夾助理處理信箱時，會清除標示為待移除的對應專案。
+
+若要查看信箱的 DelayHoldApplied 和 DelayReleaseHoldApplied 屬性的值，請在 Exchange Online PowerShell 中執行下列命令。
+
+```powershell
+Get-Mailbox <username> | FL *HoldApplied*
 ```
+
+若要在到期之前移除延遲保留，您可以在 Exchange Online PowerShell 中執行下列命令（或兩者），視您要變更的屬性而定： 
+ 
+```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
-您必须在联机交换中分配"法律保留"角色才能*使用"删除延迟应用"* 参数 
 
-要删除非活动邮箱的延迟保留，请运行 Exchange 在线 PowerShell 中的以下命令：
-
+或者
+ 
+```powershell
+Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
 ```
+
+您必須在 Exchange Online 中指派合法保留角色，才能使用*RemoveDelayHoldApplied*或*RemoveDelayReleaseHoldApplied*參數。 
+
+若要移除非使用中信箱的延遲保留，請在 Exchange Online 中執行下列其中一個命令 PowerShell:
+
+```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
+或者
+
+```powershell
+Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
+```
+
 > [!TIP]
-> 在前面的命令中指定非活动邮箱的最佳方法是使用其可分辨名称或 Exchange GUID 值。 使用这些值之一有助于防止意外指定错误的邮箱。 
+> 在上一個命令中指定非使用中信箱的最佳方式是使用其辨別名稱或 Exchange GUID 值。 使用其中一個值可協助避免意外指定錯誤的信箱。 
+
+如需使用這些參數管理延遲保留的詳細資訊，請參閱[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)。
+
+在 [延遲保留] 中管理信箱時，請牢記下列事項：
+
+- 如果 DelayHoldApplied 或 DelayReleaseHoldApplied 屬性設定為**True** ，且已刪除信箱（或對應的 Office 365 使用者帳戶），則信箱會變成非使用中的信箱。 這是因為如果其中一個屬性設定為**True**，並刪除保留的信箱導致非使用中的信箱，信箱會被視為保留。 若要刪除信箱，但未將其設為非使用中的信箱，您必須將這兩個屬性設定為**False**。
+
+- 如先前所述，如果 DelayHoldApplied 或 DelayReleaseHoldApplied 屬性設定為**True**，信箱會被視為無限制保留期間的保留期間。 不過，這並不表示保留信箱中的*所有*內容。 它會根據設定為每個屬性的值而定。 例如，假設這兩個屬性都設定為**True** ，因為保留已從信箱中移除。 然後，只會移除套用至非 Outlook 雲端資料的延遲保留（使用*RemoveDelayReleaseHoldApplied*參數）。 在下一次受管理的資料夾助理處理信箱時，會清除標示為待移除的非 Outlook 專案。 因為 DelayHoldApplied 屬性仍設定為**True**，所以不會清除任何標為待移除的 Outlook 專案。 相反的情況也是真：如果 DelayHoldApplied 設定為**False** ，而 DelayReleaseHoldApplied 設定為**true**，則只會清除標示為待移除的 Outlook 專案。
 
 ## <a name="next-steps"></a>後續步驟
 
-标识应用于邮箱的保留后，可以执行诸如更改保留持续时间、临时或永久删除保留或从 Office 365 保留策略中排除非活动邮箱等任务。 有关执行与保留相关的任务的详细信息，请参阅以下主题之一：
+在您識別套用至信箱的保留後，您可以執行工作，例如變更保留期間、暫時或永久移除保留，或排除 Office 365 保留原則中非使用中的信箱。 如需執行與保留相關之工作的詳細資訊，請參閱下列其中一個主題：
 
-- 在安全&合规性中心 PowerShell 中[运行"\<设置保留合规性策略 - 添加ExchangeLocationException 用户邮箱>"](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Set-RetentionCompliancePolicy?view=exchange-ps)命令，以从组织范围的 Office 365 保留策略中排除邮箱。 此命令只能用于*ExchangeLocation*属性的值等于 的`All`保留策略。
+- 在 [安全性 & 規範中心] 中執行[Set-RetentionCompliancePolicy AddExchangeLocationException \<使用者信箱>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Set-RetentionCompliancePolicy?view=exchange-ps)命令，PowerShell 從組織內的 Office 365 保留原則中排除信箱。 這個命令僅可用於*ExchangeLocation*屬性值等於`All`的保留原則。
 
-- 在 Exchange Online PowerShell 中[运行"设置邮箱 - 排除 FromOrgHolds"\<保留 GUID，不带前缀或后缀>](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps)命令，以便从组织范围的 Office 365 保留策略中排除非活动邮箱。
+- 在 Exchange Online PowerShell 中執行[Set-Mailbox ExcludeFromOrgHolds \<保留 GUID （不含首碼或尾碼>](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps)命令），以從組織的 Office 365 保留原則中排除非作用中的信箱。
 
-- [更改 Office 365 中非活动邮箱的保留持续时间](change-the-hold-duration-for-an-inactive-mailbox.md)
+- [變更 Office 365 中非使用中信箱的保留期間](change-the-hold-duration-for-an-inactive-mailbox.md)
 
-- [删除 Office 365 中的非活动邮箱](delete-an-inactive-mailbox.md)
+- [在 Office 365 中刪除非作用中的信箱](delete-an-inactive-mailbox.md)
 
 - [刪除雲端式信箱中可復原的項目資料夾中的保留項目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)

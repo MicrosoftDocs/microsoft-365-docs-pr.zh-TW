@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: 直接在雲端中，或透過與內部部署目錄同步處理來新增使用者帳戶和群組。
 ms.openlocfilehash: 324d4662f868a4a92693b43c6bc0f75c11f20519
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544002"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633101"
 ---
 # <a name="step-4-add-your-user-accounts"></a>步驟 4：新增使用者帳戶
 

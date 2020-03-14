@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: 了解並設定 Azure AD 租用戶的身分識別治理。
 ms.openlocfilehash: 5b7b1c91735611046133a0247ae028ed090106fd
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543992"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633581"
 ---
 # <a name="step-6-configure-identity-governance"></a>步驟 6：設定身分識別治理
 

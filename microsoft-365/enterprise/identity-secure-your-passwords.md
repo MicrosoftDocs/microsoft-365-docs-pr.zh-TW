@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: 您必須在組織中強化且易於管理您的密碼。
 ms.openlocfilehash: c0ad9e2ad86cb803484e3d350fe112580610f509
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42544052"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633091"
 ---
 # <a name="step-2-secure-your-passwords"></a>步驟 2：保護您的密碼
 

@@ -1,5 +1,7 @@
 ---
 title: 內容搜尋的關鍵字查詢和搜尋條件
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,409 +14,413 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
-description: '使用安全&合规中心的内容搜索工具，了解可在 Exchange 在线邮箱和 SharePoint 或 OneDrive 中搜索的业务网站的电子邮件和文件属性。  '
-ms.openlocfilehash: 5b3438537e2936fa140052c6869f84937e103746
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: '深入瞭解您可以使用安全性 & 合規性中心的內容搜尋工具，在 Exchange Online 信箱中，以及使用 SharePoint 或 OneDrive 進行商務網站的或中搜尋的電子郵件和檔案屬性。  '
+ms.openlocfilehash: aad4ff401ee66db2f88bf5476cfaab8fce4ad821
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076289"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634361"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>內容搜尋的關鍵字查詢和搜尋條件
 
-本主题介绍可以使用安全&合规中心的内容搜索功能在 Exchange Online 中的电子邮件项目中搜索的电子邮件和文档属性，以及存储在 SharePoint 和 OneDrive 业务网站上的文档的电子邮件和文档属性。 您还可以使用**\*-合规性搜索**cmdlet 中的安全&合规性中心 PowerShell 来搜索这些属性。 本主题还介绍了：   
+本主題說明電子郵件和檔內容，您可以使用安全性 & 合規性中心的內容搜尋功能，在 Exchange Online 中搜尋電子郵件專案，以及儲存在 SharePoint 和 OneDrive 供商務網站使用的檔。 您也可以在安全性 & 規範中心 PowerShell 中使用** \*-new-compliancesearch** Cmdlet 來搜尋這些屬性。 本主題也會說明下列事項：   
   
-- 使用布尔搜索运算符、搜索条件和其他搜索查询技术来优化搜索结果。
+- 使用布林值搜尋運算子、搜尋條件及其他搜尋查詢技術來精煉搜尋結果。
     
-- 在 SharePoint 和 OneDrive 中搜索敏感数据类型和自定义敏感数据类型。
+- 在 SharePoint 和商務 OneDrive 中搜尋敏感資料類型和自訂敏感資料類型。
     
-- 搜索与组织外部用户共享的网站内容
+- 搜尋與組織外部使用者共用的網站內容
     
-有关如何创建内容搜索的分步说明，请参阅[Office 365 中的内容搜索。](content-search.md)
+如需如何建立內容搜尋的逐步指示，請參閱[內容搜尋 In Office 365](content-search.md)。
 
   
 > [!NOTE]
-> 安全&合规性中心的内容搜索以及相应的**\*-合规性搜索**cmdlet 在安全&合规中心 PowerShell 中使用关键字查询语言 （KQL）。 有关详细信息，请参阅[关键字查询语言语法参考](https://go.microsoft.com/fwlink/?LinkId=269603)。 
+> 安全性 & 合規性中心的內容搜尋，以及安全性 & 規範中心的對應** \*new-compliancesearch** Cmdlet PowerShell 使用關鍵字查詢語言（KQL）。 如需詳細資訊，請參閱[關鍵字查詢語言語法參考](https://go.microsoft.com/fwlink/?LinkId=269603)。 
   
 ## <a name="searchable-email-properties"></a>可搜尋的電子郵件屬性
 
-下表列出了可以使用安全&合规性中心的内容搜索功能**或使用"新合规性搜索"****或"设置合规性**搜索"cmdlet 进行搜索的电子邮件属性。 该表包含_属性：value_语法示例，以及示例返回的搜索结果的说明。 您可以在内容搜索的`property:value`关键字框中键入这些对。 
+下表列出透過安全性 & 規範中心或使用**New-ComplianceSearch**或**Set-ComplianceSearch**指令程式，可搜尋的電子郵件內容屬性。 此表格包含每個屬性的_值_語法的範例，以及範例所傳回之搜尋結果的描述。 您可以在 [ `property:value`關鍵字] 方塊中輸入這些配對內容搜尋。 
 
 > [!NOTE]
-> 搜索电子邮件属性时，无法搜索指定属性为空或为空的项目。 例如，使用*属性：value*对**subject："来**搜索具有空主题行的电子邮件将返回零结果。 这也适用于搜索站点和联系人属性。
+> 在搜尋電子郵件屬性時，不可能搜尋指定屬性為空白或空白的專案。 例如，使用 [*屬性：值*一對主旨 **： "]** 搜尋具有空白主旨行的電子郵件會傳回零結果。 這也適用于搜尋網站和連絡人屬性。
   
-|**屬性**|**屬性描述**|**範例**|**示例返回的搜索结果**|
+|**屬性**|**屬性描述**|**範例**|**範例所傳回的搜尋結果**|
 |:-----|:-----|:-----|:-----|
-|附件名称|附加到电子邮件的文件的名称。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*`|具有名为年报表.ppt 的附加文件的邮件。 在第二个示例中，使用通配符返回附件文件名中带有单词"年"的消息。|
-|密件副本|电子邮件的密件抄送字段。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|所有示例返回包含密件抄送字段中的 Pilar Pinilla 的消息。|
-|類別| 要搜索的类别。 用户可以在 Web 上使用 Outlook 或 Outlook（以前称为 Outlook Web 应用）来定义类别。 可能的值如下：  <br/><br/>  蓝色  <br/>  绿色  <br/>  橙  <br/>  紫色  <br/>  红  <br/>  黄色|`category:"Red Category"`|已在源邮箱中分配红色类别的邮件。|
-|副本|电子邮件的 Cc 字段。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|在这两个示例中，在 Cc 字段中指定了 Pilar Pinilla 的消息。|
-|文件夹|特定邮箱文件夹的文件夹 ID （GUID）。 如果使用此属性，请确保搜索指定文件夹所在的邮箱。 将仅搜索指定的文件夹。 不会搜索文件夹中的任何子文件夹。 要搜索子文件夹，您需要为要搜索的子文件夹使用 Folderid 属性。  <br/> 有关搜索 Folderid 属性和使用脚本获取特定邮箱的文件夹 ID 的详细信息，请参阅[在 Office 365 中使用目标集合的内容搜索。](use-content-search-for-targeted-collections.md)|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|第一个示例返回指定邮箱文件夹中的所有项目。 第二个示例返回指定邮箱文件夹中由garthf@contoso.com发送或接收的所有项目。|
-|寄件者|电子邮件的发件人。<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|由指定用户发送或从指定域发送的消息。|
-|HasAttachment|指示邮件是否具有附件。 使用值**为真**或**假**。|`from:pilar@contoso.com AND hasattachment:true`|具有附件的指定用户发送的邮件。|
-|Importance|电子邮件的重要性，发件人在发送邮件时可以指定该重要性。 默认情况下，邮件以正常重要性发送，除非发件人将重要性设置为**高**或**低。**|`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|标记为高重要性、中等重要性或低重要性的消息。|
-|IsRead|指示邮件是否已读取。 使用值**为真**或**假**。|`isread:true`  <br/> `isread:false`|第一个示例返回 IsRead 属性设置为**True**的消息。 第二个示例返回 IsRead 属性设置为**False**的消息。|
-|项目类|使用此属性可搜索您的组织导入 Office 365 的特定第三方数据类型。 对此属性使用以下语法：`itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|第一个示例返回在"主题"属性中包含单词"contoso"的 Facebook 项目。 第二个示例返回由 Ann Beebe 发布的 Twitter 项目，这些项目包含关键字短语"北风交易者"。  <br/> 有关用于 ItemClass 属性的第三方数据类型的完整值列表，请参阅[使用内容搜索搜索已导入 Office 365 的第三方数据。](use-content-search-to-search-third-party-data-that-was-imported.md)|
-|類型| 要搜索的电子邮件的类型。 可能的值：  <br/>  接触  <br/>  文档  <br/>  email  <br/>  外部数据  <br/>  传真  <br/>  我  <br/>  期刊  <br/>  会议  <br/>  微软团队（从 Microsoft 团队中的聊天、会议和呼叫中返回项目）  <br/>  笔记  <br/>  职位  <br/>  rssfeed  <br/>  任务  <br/>  语音 信箱|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|第一个示例返回符合搜索条件的电子邮件。 第二个示例返回电子邮件、即时消息对话（包括 Skype 业务对话和 Microsoft Teams 中的聊天）以及符合搜索条件的语音邮件。 第三个示例返回从第三方数据源（如 Twitter、Facebook 和思科 Jabber）导入到 Office 365 中邮箱的符合搜索条件的项目。 有关详细信息，请参阅在[Office 365 中存档第三方数据。](https://go.microsoft.com/fwlink/p/?linkid=716918)|
-|参与者|所有人员都出现在电子邮件中。 这些字段是"来自、到"、抄送和密件抄送<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|发送或发送到garthf@contoso.com的消息。 第二个示例返回由contoso.com域中的用户发送或发送给用户的所有消息。|
-|Received|收件人收到电子邮件的日期。|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|2016 年 4 月 15 日收到的消息。 第二个示例返回 2016 年 1 月 1 日至 2016 年 3 月 31 日期间收到的所有消息。|
-|收件者|电子邮件中的所有收件人字段。 这些字段为"到"、抄送和密件抄送<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|发送到garthf@contoso.com的消息。 第二个示例返回发送到contoso.com域中的任何收件人的邮件。|
-|寄件日期|发件人发送电子邮件的日期。|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|在指定日期发送或在指定日期范围内发送的消息。|
-|大小|项目的大小（以字节为单位）。|`size>26214400`  <br/> `size:1..1048567`|大于 25？M b。 第二个示例返回大小为 1 到 1，048，567 字节（1 MB）的消息。|
-|主旨|电子邮件主题行中的文本。  <br/> **注意：** 在查询中使用 Subject 属性时，搜索将返回主题行包含要搜索的文本的所有消息。 换句话说，查询不会只返回完全匹配的消息。 例如，如果您搜索`subject:"Quarterly Financials"`，则搜索结果将包括主题为"2018 年季度财务"的消息。|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|包含主题行文本中任意位置的短语"季度财务"的邮件。 第二个示例返回主题行中包含单词"北风"的所有消息。|
-|收件者|电子邮件的"结束"字段。<sup>1</sup>|`to:annb@contoso.com`  <br/> `to:annb ` <br/> `to:"Ann Beebe"`|所有示例返回在"归："行中指定 Ann Beebe 的消息。|
+|AttachmentNames|附加至電子郵件的檔案名稱。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames： .pptx|具有名為 annualreport 的附加檔案的郵件。 在第二個範例中，使用萬用字元會傳回附件的檔案名中包含 "年曆" 一詞的郵件。 第三個範例會傳回所有包含 .pptx 副檔名的附件。|
+|密件副本|電子郵件訊息的 [密件副本] 欄位。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|所有範例都傳回具有 Pilar Pinilla 的郵件，包含在 [密件副本] 欄位中。|
+|類別| 要搜尋的類別。 使用者可以使用 Outlook 或 Outlook 網頁版（以前稱為 Outlook Web App）定義類別。 可能的值如下：  <br/><br/>  藍色  <br/>  綠色  <br/>  橙  <br/>  紫色  <br/>  紅  <br/>  黃色|`category:"Red Category"`|來源信箱中已指派紅色類別的郵件。|
+|副本|電子郵件訊息的 [副本] 欄位。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|在這兩個範例中，在 [副本] 欄位中指定 Pilar Pinilla 的郵件。|
+|Folderid|特定信箱資料夾的資料夾識別碼（GUID）。 如果您使用此屬性，請務必搜尋指定資料夾所在的信箱。 只會搜尋指定的資料夾。 不會搜尋資料夾中的任何子資料夾。 若要搜尋子資料夾，您必須使用 Folderid 屬性做為您想要搜尋的子資料夾。  <br/> 如需搜尋 Folderid 屬性和使用腳本來取得特定信箱之資料夾 IDs 的詳細資訊，請參閱[在 Office 365 中使用內容搜尋來尋找目標集合](use-content-search-for-targeted-collections.md)。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|第一個範例會傳回指定之信箱資料夾中的所有專案。 第二個範例會傳回 garthf@contoso.com 所傳送或接收的指定信箱資料夾中的所有專案。|
+|寄件者|電子郵件的寄件者。<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|指定的使用者所傳送或從指定的網域傳送的郵件。|
+|HasAttachment|會指出郵件是否有附件。 使用值**true**或**false**。|`from:pilar@contoso.com AND hasattachment:true`|指定使用者所傳送的具有附件的郵件。|
+|Importance|電子郵件訊息的重要性，寄件者可在傳送郵件時指定。 根據預設，郵件會以一般重要性傳送，除非寄件者將重要性設定為**高**或**低**。|`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|標示為高重要性、中度重要性或低重要性的郵件。|
+|IsRead|會指出是否已讀取郵件。 使用值**true**或**false**。|`isread:true`  <br/> `isread:false`|第一個範例會傳回 IsRead 屬性設定為**True**的郵件。 第二個範例會傳回 IsRead 屬性設定為**False**的郵件。|
+|ItemClass|使用此屬性可搜尋您的組織匯入 Office 365 的特定協力廠商資料類型。 請對此屬性使用下列語法：`itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|第一個範例會傳回 Facebook 專案，包含在 Subject 屬性中包含 "contoso" 一詞。 第二個範例會傳回由王小姐 Beebe （包含關鍵字片語 "Northwind 商貿"）所張貼的 Twitter 專案。  <br/> 如需使用 ItemClass 屬性之協力廠商資料類型的完整值清單，請參閱[使用內容搜尋來搜尋匯入至 Office 365 的協力廠商資料](use-content-search-to-search-third-party-data-that-was-imported.md)。|
+|類型| 要搜尋的電子郵件類型。 可能的值：  <br/>  接觸  <br/>  文檔  <br/>  email  <br/>  externaldata  <br/>  傳真  <br/>  我  <br/>  期刊  <br/>  會議  <br/>  microsoftteams （從 Microsoft 團隊中的研討、會議及通話傳回專案）  <br/>  筆記  <br/>  職位  <br/>  rssfeeds  <br/>  任務  <br/>  語音 信箱|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|第一個範例會傳回符合搜尋準則的電子郵件訊息。 第二個範例會傳回電子郵件、立即訊息交談（包括 Microsoft 小組中的商務用 Skype 交談和聊天），以及符合搜尋準則的語音訊息。 第三個範例會傳回從協力廠商資料來源（如 Twitter、Facebook 和 Cisco Jabber)）匯入到 Office 365 中信箱的專案，這些專案會符合搜尋準則。 如需詳細資訊，請參閱在[Office 365 中封存協力廠商資料](https://go.microsoft.com/fwlink/p/?linkid=716918)。|
+|參與者|電子郵件訊息中的所有 [人員] 欄位。 這些欄位是寄件者、To、Cc 和 Bcc。<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|傳送或傳送至 garthf@contoso.com 的郵件。 第二個範例會傳回 contoso.com 網域中的使用者所傳送或傳送的所有郵件。|
+|Received|收件者接收到電子郵件的日期。|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|2016年4月15日收到的郵件。 第二個範例會傳回所有在2016年1月1日（2016年3月31日）收到的郵件。|
+|收件者|電子郵件訊息中的所有收件者欄位。 這些欄位是 To、Cc 和 Bcc。<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|傳送至 garthf@contoso.com 的郵件。 第二個範例會傳回傳送至 contoso.com 網域中的任何收件者的郵件。|
+|寄件日期|寄件者傳送電子郵件的日期。|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|在指定日期或指定的日期範圍內傳送的郵件。|
+|大小|專案的大小（以位元組為單位）。|`size>26214400`  <br/> `size:1..1048567`|郵件大於25？？M b。 第二個範例會傳回介於1到1048567位元組（1 MB）大小的郵件。|
+|主旨|電子郵件主題行中的文字。  <br/> **附注：** 當您在查詢中使用 Subject 屬性時，搜尋會傳回主旨行中包含您要搜尋之文字的所有郵件。 換句話說，查詢不會傳回只有完全相符的郵件。 例如，如果您搜尋`subject:"Quarterly Financials"`，您的結果將會包含主題為 "季度財務 2018" 的郵件。|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|在主旨行文字的任何地方包含片語 "季度財務" 的郵件。 第二個範例會傳回所有包含主旨行中的「northwind word」的郵件。|
+|收件者|電子郵件訊息的 [至] 欄位。<sup>1</sup>|`to:annb@contoso.com`  <br/> `to:annb ` <br/> `to:"Ann Beebe"`|所有範例會傳回在 [To：] 行中指定王 Beebe 的郵件。|
 |||||
    
 > [!NOTE]
-> <sup>1</sup>对于收件人属性的值，可以使用电子邮件地址（也称为*用户主体名称*或 UPN）、显示名称或别名来指定用户。 例如，您可以使用annb@contoso.com、annb 或"Ann Beebe"来指定用户 Ann Beebe。<br/><br/>在搜索任何收件人属性（来自、收件人、密件、密件抄送、参与者和收件人）时，Office 365 会尝试通过在 Azure 活动目录中查找每个用户的标识来扩展这些属性。  如果在 Azure 活动目录中找到该用户，则查询将展开以包括用户的电子邮件地址（或 UPN）、别名、显示名称和旧版ExchangeDN。<br/><br/>例如，查询（如`participants:ronnie@contoso.com`）将扩展到`participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`。<br/><br/>为了防止收件人扩展，可以在搜索查询中向电子邮件地址的末尾添加通配符（星号）;例如， `participants:ronnie@contoso.com*`.
+> <sup>1</sup>當收件者屬性的值，您可以使用電子郵件地址（也稱為*使用者主體名稱*或 UPN）、顯示名稱或別名指定使用者。 例如，您可以使用 annb@contoso.com、annb 或 "王 Beebe" 來指定使用者王小姐 Beebe。<br/><br/>當您搜尋任何收件者屬性（寄件者、收件者、抄送、Bcc、參與者和收件者）時，Office 365 會嘗試在 Azure Active Directory 中查看每位使用者的身分識別。  如果使用者在 Azure Active Directory 中找到，該查詢會展開以包含使用者的電子郵件地址（或 UPN）、別名、顯示名稱和 LegacyExchangeDN。<br/><br/>例如， `participants:ronnie@contoso.com`展開 to `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`的查詢。<br/><br/>若要防止收件者展開，您可以在搜尋查詢中的電子郵件地址結尾新增萬用字元（星號）。例如， `participants:ronnie@contoso.com*`。
 
-## <a name="searchable-site-properties"></a>可搜索网站属性
+## <a name="searchable-site-properties"></a>可搜尋的網站屬性
 
-下表列出了一些"共享点"和"一个业务"属性，这些属性可以通过使用安全&合规性中心的内容搜索功能**或使用"新合规性搜索"****或"设置合规性搜索"进行搜索**cmdlet. 该表包含_属性：value_语法示例，以及示例返回的搜索结果的说明。 
+下表列出商務屬性的一些 SharePoint 和 OneDrive，可使用安全性 & 規範中心的內容搜尋功能，或使用**New-ComplianceSearch**或**Set-ComplianceSearch**指令程式來搜尋。 此表格包含每個屬性的_值_語法的範例，以及範例所傳回之搜尋結果的描述。 
   
-有关可搜索的 SharePoint 属性的完整列表，请参阅[SharePoint 中已爬网和托管属性的概述。](https://go.microsoft.com/fwlink/p/?LinkId=331599) 可以搜索"**可查询"** 列中**标记为"是"** 的属性。 
+如需可搜尋的 SharePoint 屬性完整清單，請參閱[SharePoint 中的編目和 managed 屬性的概述](https://go.microsoft.com/fwlink/p/?LinkId=331599)。 您可以在可**查詢**的資料行中，以 [**是]** 標示的屬性進行搜尋。 
   
-|**屬性**|**屬性描述**|**範例**|**示例返回的搜索结果**|
+|**屬性**|**屬性描述**|**範例**|**範例所傳回的搜尋結果**|
 |:-----|:-----|:-----|:-----|
-|作者|Office 文档中的作者字段，如果复制文档，该文档将保持不变。 例如，如果用户创建文档并将其通过电子邮件发送给其他人，然后将其上载到 SharePoint，则文档仍将保留原始作者。 请确保为此属性使用用户的显示名称。|`author:"Garth Fort"`|所有由加思堡创作的文档。|
-|内容类型|项目的 SharePoint 内容类型，如项目、文档或视频。|`contenttype:document`|所有文件都将返回。|
-|建立時間|创建项目的日期。|`created\>=06/01/2016`|2016 年 6 月 1 日或之后创建的所有项目。|
-|CreatedBy|创建或上载项目的人员。 请确保为此属性使用用户的显示名称。|`createdby:"Garth Fort"`|加思堡创建或上传的所有项目。|
-|检测到的语言|项的语言。|`detectedlanguage:english`|所有英语项目。|
-|文档链接|SharePoint 或一个业务站点上特定文件夹的路径 （URL）。 如果使用此属性，请确保搜索指定文件夹所在的站点。  <br/> 要返回位于为文档链接属性指定的文件夹子文件夹中的项目，必须将 /\*添加到指定文件夹的 URL;因此，必须将 /添加到指定文件夹的 URL 中。例如，`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>有关搜索文档链接属性和使用脚本获取特定网站上文件夹的文档链接 URL 的详细信息，请参阅[在 Office 365 中使用目标集合的内容搜索。](use-content-search-for-targeted-collections.md)|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|第一个示例返回指定的 OneDrive for Business 文件夹中的所有项目。 第二个示例返回指定站点文件夹中的文档（和所有子文件夹），这些文件文件中包含单词"机密"。|
-|文件扩展|文件的扩展名;例如，docx、1、pptx 或 xlsx。|`fileextension:xlsx`|所有 Excel 文件（Excel 2007 及更高版本）|
-|FileName|文件的名称。|`filename:"marketing plan"`  <br/> `filename:estimate`|第一个示例返回标题中"营销计划"的确切短语的文件。 第二个示例返回文件名中带有单词"估计"的文件。|
-|上次修改时间|上次更改项目的日期。|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|第一个示例返回在 2016 年 5 月 1 日或之后更改的项。 第二个示例返回 2016 年 5 月 1 日至 2016 年 6 月 1 日期间更改的项目。|
-|ModifiedBy|上次更改项目的人员。 请确保为此属性使用用户的显示名称。|`modifiedby:"Garth Fort"`|加思堡上次更改的所有项目。|
-|路徑|SharePoint 或一个业务站点中特定站点的路径 （URL）。  <br/> 要返回位于为路径属性指定的站点文件夹中的项目，必须将 /\*添加到指定站点的 URL;因此，必须将 /添加到指定站点的 URL 中。例如，`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注意：** 使用`Path`属性搜索 OneDrive 位置不会返回搜索结果中的媒体文件，如 .png、.tiff 或 .wav 文件。 在搜索查询中使用其他站点属性在 OneDrive 文件夹中搜索媒体文件。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一个示例返回指定的 OneDrive 业务站点中的所有项目。 第二个示例返回指定站点（和站点中的文件夹）中包含文件名中"机密"一词的文档。|
-|与用户共享|已与指定用户共享并显示在用户 OneDrive 业务网站中的"**与我共享"** 页上的文档。 这些是组织中其他人已显式与指定用户共享的文档。 当您导出与使用 SharedWithUsersOWSUser 属性的搜索查询匹配的文档时，文档将从与指定用户共享文档的人员的原始内容位置导出。 有关详细信息，请参阅[搜索组织中共享的网站内容。](#searching-for-site-content-shared-within-your-organization)|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|这两个示例都返回与 Garth Fort 明确共享的所有内部文档，这些文档显示在 Garth Fort 的 OneDrive 商业帐户**中的"与我共享"** 页上。|
-|網站|组织中网站或网站组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户的 OneDrive 业务站点中的项目。 第二个示例返回来自所有团队站点的项目。|
-|大小|项目的大小（以字节为单位）。|`size>=1`  <br/> `size:1..10000`|第一个示例返回大于 1 字节的项目。 第二个示例返回大小为 1 到 10，000 字节的项。|
-|標題|文档的标题。 "标题"属性是在 Microsoft Office 文档中指定的元数据。 它与文档的文件名不同。|`title:"communication plan"`|在 Office 文档的 Title 元数据属性中包含短语"通信计划"的任何文档。|
+|作者|Office 檔中的 author 欄位，該欄位會在複製檔時保留。 例如，如果使用者建立檔，並將它的電子郵件給其他人，然後再將其上傳至 SharePoint，該檔仍會保留原來的作者。 請務必使用此屬性的使用者顯示名稱。|`author:"Garth Fort"`|所有由 Garth Fort 撰寫的檔。|
+|ContentType|專案的 SharePoint 內容類型，例如專案、檔或影片。|`contenttype:document`|會傳回所有檔。|
+|建立時間|建立專案的日期。|`created\>=06/01/2016`|在2016年6月1日或之後建立的所有專案。|
+|CreatedBy|建立或上傳專案的人員。 請務必使用此屬性的使用者顯示名稱。|`createdby:"Garth Fort"`|由 Garth Fort 建立或上傳的所有專案。|
+|DetectedLanguage|專案的語言。|`detectedlanguage:english`|以英文顯示所有專案。|
+|DocumentLink|SharePoint 或商務用 OneDrive 上之特定資料夾的路徑（URL）。 如果您使用此屬性，請務必搜尋指定資料夾所在的網站。  <br/> 若要傳回位於為 documentlink 屬性指定之資料夾的子資料夾中的專案，您必須新增/\*至指定資料夾的 URL。例如，`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>如需搜尋 documentlink 屬性和使用腳本來取得特定網站上資料夾的 documentlink URLs 的詳細資訊，請參閱[在 Office 365 中使用內容搜尋來尋找目標集合](use-content-search-for-targeted-collections.md)。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|第一個範例會傳回 Business folder 的指定 OneDrive 中的所有專案。 第二個範例會傳回檔案名中包含「機密」一詞的指定網站資料夾（和所有子資料夾）中的檔。|
+|FileExtension|檔的副檔名;例如，.docx、one、.pptx 或 .xlsx。|`fileextension:xlsx`|所有 Excel 檔案（Excel 2007 和更新版本）|
+|FileName|檔案的名稱。|`filename:"marketing plan"`  <br/> `filename:estimate`|第一個範例會傳回標題中具有精確片語 "行銷 plan" 的檔案。 第二個範例會傳回檔案名中包含 "預估" 一字的檔案。|
+|LastModifiedTime|上次變更專案的日期。|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|第一個範例會傳回在2016年5月1日或之後變更的專案。 第二個範例會傳回在5月1日、2016和6月1日（2016）之間變更的專案。|
+|ModifiedBy|上次變更專案的人員。 請務必使用此屬性的使用者顯示名稱。|`modifiedby:"Garth Fort"`|由 Garth Fort 最後變更的所有專案。|
+|路徑|SharePoint 中的特定網站或商務用 OneDrive 的網站路徑（URL）。  <br/> 若要傳回位於您為 path 屬性指定之網站的資料夾中的專案，您必須新增/\*至指定之網站的 URL。例如，`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **附注：** 使用此`Path`屬性來搜尋 OneDrive 位置，不會在搜尋結果中傳回媒體檔案，例如 .png、tiff 或 .wav 檔案。 在搜尋查詢中使用不同的 site 屬性可搜尋 OneDrive 資料夾中的媒體檔案。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一個範例會傳回 Business site 的指定 OneDrive 中的所有專案。 第二個範例會傳回指定網站（及網站中的資料夾）中的檔，其中包含檔案名中的「機密」一詞。|
+|SharedWithUsersOWSUser|已與指定的使用者共用，並顯示在使用者的 OneDrive 商務版網站 **] 頁面上**的檔。 這些是組織中其他人員與指定的使用者明確共用的檔。 當您匯出符合使用 SharedWithUsersOWSUser 屬性之搜尋查詢的檔時，檔會從與指定使用者共用檔之人員的原始內容位置匯出。 如需詳細資訊，請參閱[搜尋組織內共用的網站內容](#searching-for-site-content-shared-within-your-organization)。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|這兩個範例會傳回與 Garth Fort 明確共用的所有內部檔，並顯示在 Garth Fort 的 Business account OneDrive 中的 [**與我共用**] 頁面上。|
+|網站|組織中的網站或網站群組的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一個範例會傳回組織中所有使用者之商務網站的 OneDrive 的專案。 第二個範例會傳回所有小組網站中的專案。|
+|大小|專案的大小（以位元組為單位）。|`size>=1`  <br/> `size:1..10000`|第一個範例會傳回大於1個位元組的專案。 第二個範例會傳回大小介於1到10000位元組的專案。|
+|職稱|檔的標題。 Title 屬性是 Microsoft Office 檔中所指定的中繼資料。 它與檔的檔案名不同。|`title:"communication plan"`|在 Office 檔的 Title metadata 屬性中包含 "communication plan" 片語的任何檔。|
 |||||
    
-## <a name="searchable-contact-properties"></a>可搜索的联系人属性
+## <a name="searchable-contact-properties"></a>可搜尋連絡人屬性
 
-下表列出了已编制索引的联系人属性，您可以使用内容搜索进行搜索。 这些属性可供用户为位于用户邮箱的个人通讯簿中的联系人（也称为个人联系人）配置。 要搜索联系人，可以选择要搜索的邮箱，然后在关键字查询中使用一个或多个联系人属性。
+下表列出已編制索引的連絡人內容，以及您可以搜尋使用內容搜尋的屬性。 這些是可讓使用者為位於使用者信箱之個人通訊錄中的連絡人（也稱為「個人連絡人」）設定的屬性。 若要搜尋連絡人，您可以選取要搜尋的信箱，然後使用關鍵字查詢中的一或多個連絡人屬性。
   
 > [!TIP]
-> 要搜索包含空格或特殊字符的值，请使用双引号 （""） 来包含短语;否则，使用双引号 （""） "例如， `businessaddress:"123 Main Street"`. 
+> 若要搜尋包含空格或特殊字元的值，請使用雙引號（""）來包含片語; 否則請使用雙引號（""）。例如， `businessaddress:"123 Main Street"`。 
   
 |**屬性**|**屬性描述**|
 |:-----|:-----|
-|BusinessAddress|"**企业地址"** 属性中的地址。 属性也称为联系人属性页上**的工作**地址。|
-|商务电话|**任何"商业电话号码"** 属性中的电话号码。|
-|CompanyName|**公司**属性中的名称。|
-|部門|**部门**属性中的名称。|
-|DisplayName|联系人的显示名称。 这是联系人**的全名**属性中的名称。|
-|EmailAddress|联系人的任何电子邮件地址属性的地址。 用户可以为联系人添加多个电子邮件地址。 使用此属性将返回与联系人的任何电子邮件地址匹配的联系人。|
-|FileAs|**文件作为**属性。 此属性用于指定联系人在用户联系人列表中的列出方式。 例如，联系人可以*列为"姓名"、姓氏*或*姓氏。"*|
-|给定名称|"**名字"** 属性中的名称。|
-|HomeAddress|任何**家庭**地址属性中的地址。|
-|家庭电话|任何**家庭**电话号码属性中的电话号码。|
-|IMAddress|IM 地址属性，通常是用于即时消息的电子邮件地址。|
-|MiddleName|**中间名**属性中的名称。|
-|手机|"**移动**电话号码"属性中的电话号码。|
-|暱稱|**"昵称"** 属性中的名称。|
-|OfficeLocation|**"办公室"** 或"**办公室"位置**属性中的值。|
-|OtherAddress|"**其他**地址"属性的值。|
-|姓|"**姓氏"** 属性中的名称。|
-|標題|"**作业标题"** 属性中的标题。|
+|BusinessAddress|[**商務位址**] 屬性中的位址。 在連絡人的 [內容] 頁面上，此屬性也稱為「**工作**位址」。|
+|BusinessPhone|任何**商務電話**號碼內容中的電話號碼。|
+|CompanyName|**Company**屬性中的名稱。|
+|部門|**部門**屬性中的名稱。|
+|DisplayName|連絡人的顯示名稱。 這是連絡人的 [**全名**] 屬性中的名稱。|
+|EmailAddress|連絡人的任何電子郵件地址屬性的位址。 使用者可以新增多個連絡人的電子郵件地址。 使用此屬性會傳回符合任何連絡人電子郵件地址的連絡人。|
+|FileAs|**File as**屬性。 此屬性可用來指定連絡人在使用者的連絡人清單中列出的方式。 例如，連絡人可以列為*FirstName、LastName*或*LastName FirstName*。|
+|GivenName|**第一個 name**屬性的名稱。|
+|HomeAddress|任何「**住宅**位址屬性的位址。|
+|HomePhone|任何**住宅**電話號碼內容中的電話號碼。|
+|IMAddress|IM 位址屬性，通常是用於立即訊息的電子郵件地址。|
+|MiddleName|**中間**名屬性中的名稱。|
+|MobilePhone|在 [**移動**電話號碼] 屬性中的電話號碼。|
+|暱稱|**昵稱**屬性中的名稱。|
+|OfficeLocation|**Office**或**office location**屬性值。|
+|OtherAddress|**其他**位址屬性的值。|
+|姓|**Last** name 屬性中的名稱。|
+|職稱|職稱**屬性中的標題**。|
 |||||
 
-## <a name="searchable-sensitive-data-types"></a>可搜索的敏感数据类型
+## <a name="searchable-sensitive-data-types"></a>可搜尋的敏感資料類型
 
-您可以使用安全和合规性中心中的内容搜索功能来搜索存储在 SharePoint 和 OneDrive 商业网站上的文档中的敏感数据，如信用卡号或社会保险号。 可以通过在关键字查询中使用 属性`SensitiveType`和敏感信息类型的名称来执行此操作。 例如，查询`SensitiveType:"Credit Card Number"`返回包含信用卡号的文档。 查询`SensitiveType:"U.S. Social Security Number (SSN)"`返回包含美国社会保险号的文档。 要查看可搜索的敏感数据类型的列表，请访问安全&合规性中心的**分类**\>**敏感信息类型。** 或者，您可以使用安全&合规中心 PowerShell 中的**Get-Dlp 敏感信息类型**cmdlet 来显示敏感信息类型的列表。 
+您可以使用 [安全性與合規性中心] 中的 [內容搜尋] 功能，搜尋儲存在 SharePoint 的檔或商務網站 OneDrive 的機密資料，例如信用卡號碼或社會保險號碼。 您可以使用關鍵字查詢中的`SensitiveType`屬性和機密資訊類型的名稱來執行此動作。 例如，查詢`SensitiveType:"Credit Card Number"`會傳回包含信用卡號碼的檔。 查詢`SensitiveType:"U.S. Social Security Number (SSN)"`會傳回包含 U.S. 社會保險號碼的檔。 若要查看您可以搜尋的敏感資料類型清單，請移至安全性 & 規範中心的**分類** \> **機密資訊類型**。 或者，您可以在安全性 & 規範中心 PowerShell 中使用**DlpSensitiveInformationType** Cmdlet，以顯示敏感資訊類型的清單。 
   
-您还可以使用 属性`SensitiveType`搜索您（或其他管理员）为您的组织创建的自定义敏感信息类型的名称。 您可以使用"安全&合规性中心"（或 PowerShell 中的**Publisher**属性）**中的"敏感信息类型"** 页上**的"发布者"** 列来区分内置和自定义敏感信息类型。 有关详细信息，请参阅[创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)。
+您也可以使用此`SensitiveType`屬性來搜尋您（或其他系統管理員）為組織建立的自訂機密資訊類型的名稱。 您可以使用「安全性 & 規範中心」（或 PowerShell 中的**發行者**屬性）中 [**敏感資訊類型**] 頁面上的 [**發行者]** 欄位，以區分內建和自訂的機密資訊類型。 如需詳細資訊，請參閱[建立自訂機密資訊類型](create-a-custom-sensitive-information-type.md)。
   
-有关使用 属性`SensitiveType`创建查询的详细信息，请参阅[形成查询以查找存储在站点上的敏感数据。](form-a-query-to-find-sensitive-data-stored-on-sites.md)
+如需使用`SensitiveType`屬性建立查詢的詳細資訊，請參閱[表單 a 查詢以尋找儲存在網站上的敏感性資料](form-a-query-to-find-sensitive-data-stored-on-sites.md)。
 
 > [!NOTE]
-> 不能使用敏感数据类型和`SensitiveType`搜索属性在 Exchange 联机邮箱中搜索处于静止状态的敏感数据。 但是，您可以使用数据丢失防护 （DLP） 策略来保护传输中的敏感电子邮件数据。 有关详细信息，请参阅[数据丢失防护策略概述](data-loss-prevention-policies.md)以及[搜索和查找个人数据。](search-for-and-find-personal-data.md)
+> 您無法使用敏感資料類型和`SensitiveType`搜尋屬性來搜尋位於 Exchange Online 信箱中的機密資料。 不過，您可以使用資料遺失防護（DLP）原則來保護傳輸中的機密 emaill 資料。 如需詳細資訊，請參閱[資料遺失防護原則](data-loss-prevention-policies.md)及[搜尋及尋找個人資料](search-for-and-find-personal-data.md)的概述。
   
-## <a name="search-operators"></a>搜索运算符
+## <a name="search-operators"></a>搜尋運算子
 
-布尔搜索运算符（如**AND、OR**和**NOT**）通过在搜索查询中包含或排除特定单词来帮助定义更精确的搜索。 **** 其他技术（如使用属性运算符（如\>+ 或 ..）、引号、括号和通配符）可帮助您优化搜索查询。 下表列出了可用于缩小或扩大搜索结果的运算符。 
+布林值搜尋運算子（例如**AND**、 **OR**、 **NOT**）可協助您在搜尋查詢中包含或排除特定的字詞，以定義更為精確的搜尋。 其他技術（如使用屬性運算子（例如\>= 或 ...）、引號、括弧及萬用字元，可協助您精煉搜尋查詢。 下表列出您可以用來縮小或拓寬搜尋結果的運算子。 
   
 |**Operator**|**Usage**|**描述**|
 |:-----|:-----|:-----|
-|AND|关键字1 和关键字2|返回包含所有指定关键字或`property:value`表达式的项目。 例如，`from:"Ann Beebe" AND subject:northwind`将返回 Ann Beebe 发送的所有消息，其中包含主题行中的"北风"一词。 <sup>2</sup>|
-|+|关键字1 = 关键字2 + 关键字3|返回*包含*`keyword2``keyword3`*或*的项，以及也`keyword1`包含 的项。   因此，此示例等效于查询`(keyword2 OR keyword3) AND keyword1`。  <br/> 查询（`keyword1 + keyword2`**+** 符号后有空格）与使用 _ AND = 运算符不同。 此查询将等效于`"keyword1 + keyword2"`并返回具有精确阶段`"keyword1 + keyword2"`项的项目。|
-|或|关键字1 OR关键字2|返回包含一个或多个指定关键字或`property:value`表达式的项目。 <sup>2</sup>|
-|不|关键字1 not 关键字2  <br/> 不是来自："安比比"  <br/> 不种类：im|排除由关键字或`property:value`表达式指定的项。 在第二个示例中，排除 Ann Beebe 发送的消息。 第三个示例排除任何即时消息对话，例如保存到"对话历史记录"邮箱文件夹中的业务对话 Skype。 <sup>2</sup>|
-|-|关键字1 -关键字2|与**NOT**运算符相同。 因此，此查询返回包含`keyword1`和 将排除包含`keyword2`的项的项。|
-|附近|关键字1 NEAR（n） 关键字2|返回彼此靠近的单词的项目，其中 n 等于单词数分开。 例如，`best NEAR(5) worst`返回"最差"一词在"最佳"五个单词内的任何项。 如果未指定数字，则默认距离为 8 个单词。 <sup>2</sup>|
-|ONEAR|关键字1 ONEAR（n） 关键字2|与**NEAR**类似，但返回的项中按指定顺序彼此靠近的单词。 例如，`best ONEAR(5) worst`返回在单词"最差"之前出现"最佳"一词且两个单词彼此在五个单词内的任何项。 如果未指定数字，则默认距离为 8 个单词。 <sup>2</sup> <br/> > [!NOTE]> 搜索邮箱时不支持**ONEAR**运算符。 它仅在搜索业务网站的 SharePoint 和 OneDrive 时有效。 如果要在同一搜索中搜索邮箱和网站，并且查询包括**ONEAR**运算符，则搜索返回邮箱项目，就像使用**NEAR**运算符一样。 换句话说，无论单词的发生顺序如何，搜索都会返回指定单词彼此靠近的项目。|
-|:|属性：值|冒号（:)在`property:value`语法中指定要搜索的属性的值包含指定的值。 例如，`recipients:garthf@contoso.com`返回发送到garthf@contoso.com的任何消息。|
-|=|属性_值|与 相同的 **：** 运算符。|
-|\<|属性\<值|表示要搜索的属性小于指定值。 <sup>1</sup>|
-|\>|属性\>值|表示要搜索的属性大于指定值。<sup>1</sup>|
-|\<=|属性\<= 值|表示要搜索的属性小于或等于特定值。<sup>1</sup>|
-|\>=|属性\>= 值|表示要搜索的属性大于或等于特定值。<sup>1</sup>|
-|..|属性：值1.值2|表示要搜索的属性大于或等于值 1，小于或等于值 2。<sup>1</sup>|
-|"  "|"公允价值"  <br/> subject:"Quarterly Financials"|使用双引号 （""） 在关键字和`property:value`搜索查询中搜索确切的短语或术语。|
-|\*|猫\*  <br/> 主题：集\*|前缀通配符搜索（其中星号位于单词末尾）与关键字或`property:value`查询中的零个或多个字符匹配。 例如，`title:set*`返回文档标题中包含单词集、设置和设置（以及以"set"开头的其他单词）的文档。  <br/><br/> **注意：** 只能使用前缀通配符搜索;例如，**\*猫**或**设置。\*** 不支持后缀搜索**\***（ 猫 ）， infix 搜索 （**\*c t**） 和子字符串搜索 （**\*猫\***）.|
-|(  )|（公平或免费）和（来自：contoso.com）  <br/> （IPO 或初始）和（股票或股票）  <br/> （季度财务）|括号将布尔词短语、`property:value`项目和关键字组合在一起。 例如，`(quarterly financials)`返回包含"季度"和"财务"等单词的物料。|
+|AND|keyword1 與 keyword2|會傳回包含所有指定關鍵字或`property:value`運算式的專案。 例如， `from:"Ann Beebe" AND subject:northwind`會傳回 Beebe 中，包含主旨行中的「northwind」一詞的所有郵件。 <sup>第</sup>|
+|+|keyword1 + keyword2 + keyword3|會傳回*and* `keyword1`包含`keyword2` `keyword3`或*同時包含的*專案。   因此，此範例相當於查詢`(keyword2 OR keyword3) AND keyword1`。  <br/> 查詢`keyword1 + keyword2` （ **+** 符號後面有空格）與使用**AND**運算子不同。 此查詢相當於`"keyword1 + keyword2"`並傳回精確階段`"keyword1 + keyword2"`的專案。|
+|OR|keyword1 或 keyword2|會傳回包含一或多個指定關鍵字或`property:value`運算式的專案。 <sup>第</sup>|
+|不|keyword1 未 keyword2  <br/> 不是來自： "王 Beebe"  <br/> 非類型： im|排除關鍵字或`property:value`運算式所指定的專案。 在第二個範例中，排除王小姐 Beebe 所傳送的郵件。 第三個範例會排除任何立即訊息交談，例如儲存至 [交談歷程記錄] 信箱資料夾的商務用 Skype 交談。 <sup>第</sup>|
+|-|keyword1 -keyword2|與**NOT**運算子相同。 所以此查詢會傳回包含`keyword1`的專案，並將包含`keyword2`的專案排除。|
+|附近|keyword1 NEAR （n） keyword2|會傳回彼此接近的字詞，其中 n 等於文字相隔的專案數。 例如， `best NEAR(5) worst`傳回任何文字 "惡化" 位於5字 "最佳" 以內的專案。 若未指定數值，則預設的距離為八個字。 <sup>第</sup>|
+|ONEAR|keyword1 ONEAR （n） keyword2|類似**接近**，但會傳回以指定順序接近彼此的單字專案。 例如， `best ONEAR(5) worst`會傳回任何文字 "the 最佳" 出現在 "最壞字" 和這兩個字之間的五個字以上的專案。 若未指定數值，則預設的距離為八個字。 <sup>第</sup> <br/> **附注：** 搜尋信箱時，不支援**ONEAR**運算子。 它只有在搜尋商務網站的 SharePoint 和 OneDrive 時才有效。 如果您要在相同的搜尋中搜尋信箱和網站，且查詢包含**ONEAR**操作員，則搜尋會傳回信箱專案，就像您使用的是**NEAR**運算子。 換句話說，不論字詞的出現順序為何，搜尋會傳回彼此接近每個專案的專案。|
+|:|屬性：值|冒號（:)`property:value`語法中指定要搜尋的屬性值包含指定的值。 例如， `recipients:garthf@contoso.com`會傳回傳送至 garthf@contoso.com 的任何郵件。|
+|=|property = 值|與 **：** 運算子相同。|
+|\<|屬性\<值|表示所搜尋的屬性小於指定的值。 <sup>1</sup>|
+|\>|屬性\>值|表示所搜尋的屬性大於指定的值。<sup>1</sup>|
+|\<=|property\<= 值|表示所搜尋的屬性小於或等於特定值。<sup>1</sup>|
+|\>=|property\>= 值|表示所搜尋的屬性大於或等於特定值。<sup>1</sup>|
+|..|屬性： value1。value2|表示所搜尋的屬性大於或等於 value1 且小於或等於 value2。<sup>1</sup>|
+|"  "|"公平值"  <br/> subject:"Quarterly Financials"|使用雙引號（""）來搜尋關鍵字和`property:value`搜尋查詢中的確切片語或字詞。|
+|\*|貓\*  <br/> subject： set\*|首碼萬用字元搜尋（星號放在單字結尾的地方）符合零個或多個字元的關鍵字或`property:value`查詢。 例如， `title:set*`傳回檔標題中包含 word set、setup 及 set （以及以 "set" 開頭的其他文字）的檔。  <br/><br/> **附注：** 您只能使用首碼萬用字元搜尋;例如， **cat\* **或**set\***。 尾碼搜尋（**\*cat** ）、中綴搜尋 **（\*c t**）和子字串搜尋**\*（\*cat**）都不受支援。|
+|(  )|（公平或免費）和（從:contoso）  <br/> （IPO 或初始）和（股票或股）  <br/> （季度財務）|括弧群組組成 Boolean 片語、 `property:value` items 和關鍵字。 例如， `(quarterly financials)`傳回包含文字季度和財務的專案。|
 |||||
    
 > [!NOTE]
-> <sup>1</sup>对于具有日期或数值的属性，使用此运算符。<br/> <sup>2</sup>布尔搜索运算符必须大写;**例如，AND**。 如果使用小写运算符（如**和），** 它将在搜索查询中被视为关键字。 
+> <sup>1</sup>對具有日期或數值的屬性使用這個運算子。<br/> <sup>2</sup>布林值搜尋運算子必須是大寫字母;例如**和**。 如果您使用小寫運算子，例如**和**，它會被視為搜尋查詢中的關鍵字。 
   
 ## <a name="search-conditions"></a>搜尋條件
 
-您可以向搜索查询添加条件以缩小搜索范围并返回更精细的结果集。 每個條件會將一個子句新增至 KQL 搜尋查詢，當您啟動搜尋時便會建立並執行。
+您可以將條件新增至搜尋查詢，以縮小搜尋範圍，並傳回更精緻的結果集。 每個條件會將一個子句新增至 KQL 搜尋查詢，當您啟動搜尋時便會建立並執行。
   
-[公共属性的条件](#conditions-for-common-properties)
+[一般屬性的條件](#conditions-for-common-properties)
 
-[邮件属性的条件](#conditions-for-mail-properties)
+[郵件屬性的條件](#conditions-for-mail-properties)
 
-[文档属性的条件](#conditions-for-document-properties)
+[檔案屬性的條件](#conditions-for-document-properties)
 
-[与条件一起使用的运算符](#operators-used-with-conditions)
+[與條件搭配使用的運算子](#operators-used-with-conditions)
 
-[使用条件的指南](#guidelines-for-using-conditions)
+[使用條件的指導方針](#guidelines-for-using-conditions)
 
-[在搜索查询中使用条件的示例](#examples-of-using-conditions-in-search-queries)
+[在搜尋查詢中使用條件的範例](#examples-of-using-conditions-in-search-queries)
   
-### <a name="conditions-for-common-properties"></a>公共属性的条件
+### <a name="conditions-for-common-properties"></a>一般屬性的條件
 
-在同一搜索中搜索邮箱和网站时，使用公共属性创建条件。 下表列出了添加条件时要使用的可用属性。
-  
-|**條件**|**描述**|
-|:-----|:-----|
-|日期|对于电子邮件，收件人接收或发件人发送邮件的日期。 对于文档，文档上次修改的日期。|
-|发件人/作者|对于电子邮件，发送消息的人员。 对于文档，作者字段中引用的人员来自 Office 文档。 可以键入多个名称，用逗号分隔。 两个或多个值由**OR**运算符逻辑连接。|
-|大小（以字节为单位）|对于电子邮件和文档，项目的大小（以字节为单位）。|
-|主题/标题|对于电子邮件，邮件主题行中的文本。 对于文档，文档的标题。 如前所述，"标题"属性是在 Microsoft Office 文档中指定的元数据。 您可以键入多个主题/标题的名称，用逗号分隔。 两个或多个值由**OR**运算符逻辑连接。|
-|合規性標籤|对于电子邮件和文档，通过用户手动分配的标签策略或标签自动分配给邮件和文档的标签。 标签用于对电子邮件和文档进行分类，以便进行数据治理，并根据标签定义的分类强制实施保留规则。 您可以键入标签名称的一部分并使用通配符或键入完整的标签名称。 有关详细信息，请参阅[Office 365 中的标签概述。](labels.md)|
-|||
-  
-### <a name="conditions-for-mail-properties"></a>邮件属性的条件
-
-在搜索邮箱或公用文件夹时使用邮件属性创建条件。 下表列出了可用于条件的电子邮件属性。 这些属性是前面描述的电子邮件属性的子集。 为了您的方便，这些描述重复出现。
+在相同搜尋中搜尋信箱和網站時，使用通用屬性建立條件。 下表列出新增條件時所使用的可用屬性。
   
 |**條件**|**描述**|
 |:-----|:-----|
-|消息类型| 要搜索的消息类型。 这是与 Kind 电子邮件属性相同的属性。 可能的值：  <br/><br/>  接触  <br/>  文档  <br/>  email  <br/>  外部数据  <br/>  传真  <br/>  我  <br/>  期刊  <br/>  会议  <br/>  微软团队  <br/>  笔记  <br/>  职位  <br/>  rssfeed  <br/>  任务  <br/>  语音 信箱|
-|参与者|所有人员都出现在电子邮件中。 这些字段是"来自、到"、抄送和密件抄送。|
-|Type|电子邮件项的消息类属性。 这是与 ItemClass 电子邮件属性相同的属性。 这也是一个多值条件。 因此，要选择多个消息类，请按住**CTRL**键，然后单击要添加到条件的下拉列表中的两个或多个消息类。 在列表中选择的每个消息类将由**OR**运算符在相应的搜索查询中逻辑连接。  <br/> 有关 Exchange 使用的消息类（及其相应的消息类 ID）的列表，**您可以在"消息类"** 列表中选择，[请参阅"项类型"和"消息类"。](https://go.microsoft.com/fwlink/?linkid=848143)|
-|Received|收件人收到电子邮件的日期。 这是与"接收的电子邮件"属性相同的属性。|
-|收件者|电子邮件中的所有收件人字段。 这些字段为"到"、抄送和密件抄送。|
-|寄件者|电子邮件的发件人。|
-|寄件日期|发件人发送电子邮件的日期。 这是与"已发送的电子邮件"属性相同的属性。|
-|主旨|电子邮件主题行中的文本。|
-|收件者|"收件人"字段中电子邮件的收件人。|
+|日期|電子郵件，是由收件者接收或傳送給寄件者的郵件。 對於檔，是上次修改檔的日期。|
+|寄件者/作者|電子郵件，是指傳送訊息的人員。 對於檔，為 [author] 欄位中的 Office 檔中所述的人員。 您可以輸入一個以上的名稱，以逗號分隔。 **Or**運算子會以邏輯方式連接兩個或多個值。|
+|大小（位元組）|針對電子郵件和檔，為專案的大小（以位元組為單位）。|
+|主旨/職稱|電子郵件，郵件的主旨行中的文字。 檔的標題。 如先前所述，Title 屬性是 Microsoft Office 檔中指定的中繼資料。 您可以輸入多個主體/標題的名稱，以逗號分隔。 **Or**運算子會以邏輯方式連接兩個或多個值。|
+|規範標籤|針對電子郵件和檔，保留標籤，可由使用者手動指派的標籤原則或保留標籤自動指派給郵件和檔。 保留標籤可用來分類電子郵件和檔以進行資訊控管，並根據標籤定義的設定來強制執行保留規則。 您可以輸入部分保留標籤名稱，並使用萬用字元或輸入完整的標籤名稱。 如需詳細資訊，請參閱[保留標籤簡介](labels.md)。|
 |||
   
-### <a name="conditions-for-document-properties"></a>文档属性的条件
+### <a name="conditions-for-mail-properties"></a>郵件屬性的條件
 
-在 SharePoint 和 OneDrive 上搜索业务站点的文档时，使用文档属性创建条件。 下表列出了可用于条件的文档属性。 这些属性是前面描述的站点属性的子集。 为了您的方便，这些描述重复出现。
+在搜尋信箱或公用資料夾時，使用郵件屬性建立條件。 下表列出您可以用於條件的電子郵件屬性。 這些屬性是先前所述的電子郵件屬性的子集。 為了方便您，您可以重複這些描述。
   
 |**條件**|**描述**|
 |:-----|:-----|
-|作者|Office 文档中的作者字段，如果复制文档，该文档将保持不变。 例如，如果用户创建文档并将其通过电子邮件发送给其他人，然后将其上载到 SharePoint，则文档仍将保留原始作者。|
-|標題|文档的标题。 "Title"属性是在 Office 文档中指定的元数据。 它与文档的文件名不同。|
-|建立時間|创建文档的日期。|
-|上次修改日期|上次更改文档的日期。|
-|檔案類型|文件的扩展名;例如，docx、1、pptx 或 xlsx。 这是与 File 分机网站属性相同的属性。|
+|郵件類型| 要搜尋的郵件類型。 此屬性與 Kind 電子郵件屬性相同。 可能的值：  <br/><br/>  接觸  <br/>  文檔  <br/>  email  <br/>  externaldata  <br/>  傳真  <br/>  我  <br/>  期刊  <br/>  會議  <br/>  microsoftteams  <br/>  筆記  <br/>  職位  <br/>  rssfeeds  <br/>  任務  <br/>  語音 信箱|
+|參與者|電子郵件訊息中的所有 [人員] 欄位。 這些欄位是從、To、Cc 和 Bcc。|
+|Type|電子郵件專案的郵件類別屬性。 這是 ItemClass 電子郵件屬性的相同屬性。 也是多值的條件。 因此，若要選取多個郵件類別，請按住**CTRL**鍵，然後在下拉式清單中，按一下您要新增至條件的兩個或多個郵件類別。 您在清單中選取的每個郵件類別將會在對應的搜尋查詢中以**OR**運算子邏輯連接。  <br/> 如需 Exchange 使用之郵件類別（及其對應的郵件類別識別碼）的清單，而您可以在**郵件類別**清單中選取，請參閱[專案類型和郵件類別](https://go.microsoft.com/fwlink/?linkid=848143)。|
+|Received|收件者接收到電子郵件的日期。 此屬性與接收的電子郵件屬性相同。|
+|收件者|電子郵件訊息中的所有收件者欄位。 這些欄位是 To、Cc 和 Bcc。|
+|寄件者|電子郵件的寄件者。|
+|寄件日期|寄件者傳送電子郵件的日期。 此屬性與已傳送的電子郵件屬性相同。|
+|主旨|電子郵件主題行中的文字。|
+|收件者|[收件者] 欄位中的電子郵件收件者。|
 |||
   
-### <a name="operators-used-with-conditions"></a>与条件一起使用的运算符
+### <a name="conditions-for-document-properties"></a>檔案屬性的條件
 
-添加条件时，可以选择与条件的属性类型相关的运算符。 下表描述了与条件一起使用的运算符，并列出了搜索查询中使用的等效项。
+在 SharePoint 和 OneDrive 商務網站上搜尋檔時，使用檔案屬性建立條件。 下表列出您可以用於條件的檔案屬性。 這些屬性是先前所述之網站屬性的子集。 為了方便您，您可以重複這些描述。
   
-|**Operator**|**查询等效项**|**描述**|
+|**條件**|**描述**|
+|:-----|:-----|
+|作者|Office 檔中的 author 欄位，該欄位會在複製檔時保留。 例如，如果使用者建立檔，並將它的電子郵件給其他人，然後再將其上傳至 SharePoint，該檔仍會保留原來的作者。|
+|職稱|檔的標題。 Title 屬性是 Office 檔中所指定的中繼資料。 它與檔的檔案名不同。|
+|建立時間|建立檔的日期。|
+|上次修改日期|上次變更檔的日期。|
+|檔案類型|檔的副檔名;例如，.docx、one、.pptx 或 .xlsx。 此屬性與 FileExtension 網站屬性相同。|
+|||
+  
+### <a name="operators-used-with-conditions"></a>與條件搭配使用的運算子
+
+當您新增條件時，您可以選取與條件的屬性類型相關的運算子。 下表說明用於條件的運算子，並列出搜尋查詢中所使用的對等運算子。
+  
+|**Operator**|**查詢對等**|**描述**|
 |:-----|:-----|:-----|
-|之後|`property>date`|与日期条件一起使用。 返回在指定日期之后发送、接收或修改的项目。|
-|之前|`property<date`|与日期条件一起使用。 返回在指定日期之前发送、接收或修改的项。|
-|之间|`date..date`|与日期和大小条件一起使用。 当与日期条件一起使用时，返回在指定日期范围内发送、接收或修改的项目。 当与大小条件一起使用时，返回大小在指定范围内的项。|
-|包含任何|`(property:value) OR (property:value)`|与指定字符串值的属性的条件一起使用。 返回包含一个或多个指定字符串值的任何部分的项。|
-|不包含任何|`-property:value`  <br/> `NOT property:value`|与指定字符串值的属性的条件一起使用。 返回不包含指定字符串值任何部分的项。|
-|不等于任何|`-property=value`  <br/> `NOT property=value`|与指定字符串值的属性的条件一起使用。 返回不包含特定字符串的项。|
-|等于|`size=value`|返回等于指定大小的项。<sup>1</sup>|
-|等于任何|`(property=value) OR (property=value)`|与指定字符串值的属性的条件一起使用。 返回与一个或多个指定字符串值完全匹配的项。|
-|大|`size>value`|返回指定属性大于指定值的项。<sup>1</sup>|
-|大或等|`size>=value`|返回指定属性大于或等于指定值的项。<sup>1</sup>|
-|少|`size<value`|返回大于或等于特定值的项。<sup>1</sup>|
-|小于或相等|`size<=value`|返回大于或等于特定值的项。<sup>1</sup>|
-|不等於|`size<>value`|返回不等于指定大小的项。<sup>1</sup>|
+|之後|`property>date`|搭配日期條件使用。 會傳回在指定的日期之後所傳送、接收或修改的專案。|
+|之前|`property<date`|搭配日期條件使用。 會傳回在指定日期之前已傳送、接收或修改的專案。|
+|之間|`date..date`|搭配日期和大小條件使用。 使用日期條件時，會傳回在指定的日期範圍內已傳送、接收或修改的專案。 使用大小條件時，會傳回大小位於指定範圍內的專案。|
+|包含任何|`(property:value) OR (property:value)`|搭配用於指定字串值之屬性的條件。 傳回包含一或多個指定字串值之任何部分的專案。|
+|不包含任何|`-property:value`  <br/> `NOT property:value`|搭配用於指定字串值之屬性的條件。 傳回不包含任何部分指定的字串值的專案。|
+|不等於任何|`-property=value`  <br/> `NOT property=value`|搭配用於指定字串值之屬性的條件。 傳回不包含特定字串的專案。|
+|等於|`size=value`|傳回與指定大小相等的專案。<sup>1</sup>|
+|等於任何|`(property=value) OR (property=value)`|搭配用於指定字串值之屬性的條件。 傳回與一個或多個指定的字串值完全相符的專案。|
+|大|`size>value`|傳回指定屬性大於指定值的專案。<sup>1</sup>|
+|大於或等於|`size>=value`|傳回指定的屬性大於或等於指定值的專案。<sup>1</sup>|
+|少|`size<value`|傳回大於或等於特定值的專案。<sup>1</sup>|
+|小於或等於|`size<=value`|傳回大於或等於特定值的專案。<sup>1</sup>|
+|不等於|`size<>value`|傳回與指定大小不相等的專案。<sup>1</sup>|
 |||
    
 > [!NOTE]
-> <sup>1</sup>此运算符仅适用于使用 Size 属性的条件。 
+> <sup>1</sup>此運算子僅適用于使用 Size 屬性的條件。 
   
-### <a name="guidelines-for-using-conditions"></a>使用条件的指南
+### <a name="guidelines-for-using-conditions"></a>使用條件的指導方針
 
-使用搜索条件时，请记住以下事项。
+使用搜尋條件時，請牢記下列幾點。
   
 - 條件會以 **AND** 運算子的邏輯方式連接至關鍵字查詢 (在關鍵字方塊中指定)。 這表示結果中包含的項目必須同時滿足關鍵字查詢與條件。 這就是條件如何協助您縮小搜尋結果。 
     
-- 如果向搜索查询添加两个或多个唯一条件（指定不同属性的条件），则这些条件由**AND**运算符在逻辑上连接。 这意味着仅返回满足所有条件的项目（除了任何关键字查询）。 
+- 如果您將兩個或多個唯一條件新增至搜尋查詢（指定不同屬性的條件），這些條件會以**AND**運算子在邏輯上連接。 這表示只會傳回滿足所有條件的專案（除了任何關鍵字查詢之外）。 
     
-- 如果为同一属性添加多个条件，则**OR**运算符会以逻辑方式连接这些条件。 这意味着将返回满足关键字查询和任一条件的项目。 因此，相同条件的组由**OR**运算符相互连接，然后**AND**运算符连接一组唯一条件。 
+- 如果您為同一個屬性新增多個條件，這些條件會由**OR**運算子邏輯連接。 這表示滿足關鍵字查詢的專案，以及任何一個條件會傳回。 因此，依**OR**運算子將相同條件的群組連線到對方，然後由**and**運算子所連接的唯一條件集。 
     
-- 如果将多个值（用逗号或分号分隔）添加到单个条件，则 OR**运算符将**连接这些值。 这意味着如果项包含条件中属性的任何指定值，则返回项。 
+- 如果您將多個值（以逗號或分號分隔）新增至單一條件，則這些值是由**or**運算子所連接。 這表示如果專案包含條件中屬性的任何指定值，則會傳回專案。 
     
-- 使用关键字框和条件创建的搜索查询将显示在所选搜索的详细信息窗格**中的"搜索"** 页上。 在查询中，符号`(c:c)`右侧的所有内容都指示添加到查询的条件。 
+- 使用 [關鍵字] 方塊和 [條件] 所建立的搜尋查詢會顯示在 [**搜尋**] 頁面上選取之搜尋的 [詳細資料] 窗格中。 在查詢中，標記法`(c:c)`右邊的各項都會指出新增至查詢的條件。 
     
-- 条件仅向搜索查询添加属性;不添加运算符。 这就是为什么详细信息窗格中显示的查询不显示在`(c:c)`符号右侧的运算符。 KQL 在执行查询时添加逻辑运算符（根据前面解释的规则）。 
+- 條件只會將屬性新增至搜尋查詢;不要新增運算子。 這就是在詳細資料窗格中顯示的查詢不會顯示在`(c:c)`標記法右邊的運算子。 在執行查詢時，KQL 會新增邏輯運算子（依照先前所述的規則）。 
     
-- 您可以使用拖放控件重新排列条件的顺序。 单击某个条件的控件并将其向上或向下移动。
+- 您可以使用拖放控制項來 resequence 條件的順序。 按一下控制項上的條件，然後上下移動。
     
-- 如前所述，某些条件属性允许您键入多个值。 每个值都由**OR**运算符逻辑连接。 这将导致与具有相同条件的多个实例相同的逻辑，其中每个实例都有一个值。 下图显示了具有多个值的单个条件的示例，以及具有单个值的多个条件（对于同一属性）的示例。 两个示例都会导致相同的查询：`(filetype="docx") OR (filetype="pptx") OR (filetype="xlsx")`
+- 如先前所述，有些 condition 屬性可讓您輸入多個值。 每個值都是由**OR**運算子以邏輯方式連接。 這會產生與多個相同條件實例的相同邏輯，每個實例都有單一值。 下列圖例顯示具有多個值的單一條件的範例，以及具有單一值之多個條件的範例（適用于相同屬性）。 這兩個範例會產生相同的查詢：`(filetype="docx") OR (filetype="pptx") OR (filetype="xlsx")`
     
-    ![郵件必須符合規則中的所有條件。如果您需要符合一個條件或另一個條件，請對每一個條件使用不同的規則。例如，如果要對附件和內容符合特定模式的郵件加入相同的免責聲明，請為每一個條件建立一個規則。您可以輕易地複製規則。](media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
+    ![具有多個值的一個條件](../media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
   
-    ![相同屬性的多重搜尋條件](media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
+    ![相同屬性的多重搜尋條件](../media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
   
 > [!TIP]
-> 如果条件接受多个值，我们建议您使用单个条件并指定多个值（用逗号或分号分隔）。 这有助于确保所应用的查询逻辑是您所想要的。 
+> 如果條件接受多個值，建議您使用單一條件，並指定多個值（以逗號或分號分隔）。 這有助於確定所套用的查詢邏輯是您想要的。 
   
-### <a name="examples-of-using-conditions-in-search-queries"></a>在搜索查询中使用条件的示例
+### <a name="examples-of-using-conditions-in-search-queries"></a>在搜尋查詢中使用條件的範例
 
-以下示例显示具有条件的搜索查询的基于 GUI 的版本、所选搜索的详细信息窗格中显示的搜索查询语法（该语法也由**获取合规性搜索**cmdlet 返回），以及相应的 KQL 查询。 
+下列範例會顯示以 GUI 為基礎之搜尋查詢的版本，包含條件、搜尋查詢語法，顯示在選取搜尋的詳細資料窗格中（也由**Get-ComplianceSearch**指令程式傳回），以及對應之 KQL 查詢的邏輯。 
   
 #### <a name="example-1"></a>範例 1
 
-本示例返回 SharePoint 和 OneDrive 商业站点上的文档，这些文档包含信用卡号，最后一次修改是在 2016 年 1 月 1 日之前。
+本範例會傳回商務網站的 SharePoint 和 OneDrive 上的檔，這些網站包含信用卡號碼，最後在2016年1月1日之前修改。
   
  **GUI**
   
-![搜尋條件的第一個範例](media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
+![搜尋條件的第一個範例](../media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
   
- **搜索查询语法**
+ **搜尋查詢語法**
   
  `SensitiveType:"Credit Card Number(c:c)(lastmodifiedtime<2016-01-01)`
   
- **搜索查询逻辑**
+ **搜尋查詢邏輯**
   
  `SensitiveType:"Credit Card Number" AND (lastmodifiedtime<2016-01-01)`
   
 #### <a name="example-2"></a>範例 2
 
-本示例返回包含关键字"Report"的电子邮件项目或文档，这些项目或文档是在 2105 年 4 月 1 日之前发送或创建的，并且在电子邮件的主题字段或文档的标题属性中包含单词"北风"。 查询不包括满足其他搜索条件的网页。
+此範例會傳回包含關鍵字 "report" 的電子郵件專案或檔，該關鍵字是在2105年4月1日之前所傳送或建立，而且在電子郵件的主旨欄位或檔的 title 屬性中包含 "northwind" 一詞。 查詢會排除符合其他搜尋準則的網頁。
   
  **GUI**
   
-![搜尋條件的第二個範例](media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
+![搜尋條件的第二個範例](../media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
   
- **搜索查询语法**
+ **搜尋查詢語法**
   
  `report(c:c)(date<2016-04-01)(subjecttitle:"northwind")(-filetype="aspx")`
   
- **搜索查询逻辑**
+ **搜尋查詢邏輯**
   
  `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype="aspx")`
   
 #### <a name="example-3"></a>範例 3
-<a name="conditionexamples"> </a>
 
-本示例返回在 2016 年 12 月 1 日至 2016 年 11 月 30 日之间发送的电子邮件或日历会议，其中包含以"电话"或"智能手机"开头的单词。
+本範例會傳回在12/1/2016 和11/30/2016 之間傳送且包含開頭為 "phone" 或 "smartphone" 文字的電子郵件訊息或行事曆會議。
   
  **GUI**
   
-![搜尋條件的第三個範例](media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
+![搜尋條件的第三個範例](../media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
   
- **搜索查询语法**
+ **搜尋查詢語法**
   
  `phone* OR smartphone*(c:c)(sent=2016-12-01..2016-11-30)(kind="email")(kind="meetings")`
   
- **搜索查询逻辑**
+ **搜尋查詢邏輯**
   
  `phone* OR smartphone* AND (sent=2016-12-01..2016-11-30) AND ((kind="email") OR (kind="meetings"))`
   
+## <a name="special-characters"></a>特殊字元
+
+有些特殊字元不會包含在搜尋索引中，因此無法進行搜尋。 這也包含在搜尋查詢中代表搜尋運算子的特殊字元。 以下是特殊字元的清單，這些字元是由實際搜尋查詢中的空格取代，或是導致搜尋錯誤。
+
+`+ - = : ! @ # % ^ & ; _ / ? ( ) [ ] { }`
+
 ## <a name="searching-for-site-content-shared-with-external-users"></a>搜尋與外部使用者共用的網站內容
 
-您还可以使用"安全&合规性中心"中的内容搜索功能来搜索存储在 SharePoint 和 OneDrive 上与组织外部人员共享的业务网站的文档。 这可以帮助您识别在组织外部共享的敏感或专有信息。 可以通过在关键字查询中使用 属性`ViewableByExternalUsers`来执行此操作。 此属性返回使用以下共享方法之一与外部用户共享的文档或网站： 
+您也可以使用安全性 & 合規性中心內的「內容搜尋」功能，搜尋儲存在 SharePoint 上的檔，以及與組織外部人員共用的商務網站 OneDrive。 這可協助您識別在組織外共用的敏感或專有資訊。 您可以使用關鍵字查詢中的`ViewableByExternalUsers`屬性來執行此動作。 此屬性會傳回使用下列共用方法之一，與外部使用者共用的檔或網站： 
   
-- 需要用户以经过身份验证的用户身份登录到组织的共享邀请。
+- 共用邀請，需要使用者登入您的組織成為已驗證的使用者。
     
-- 匿名来宾链接，允许具有此链接的任何人访问资源，而无需经过身份验证。
+- 匿名來賓連結，可讓具有此連結的任何人存取資源，而不需要進行驗證。
     
 以下為一些範例：
   
-- 查询`ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"`返回与组织外部人员共享并包含信用卡号的所有项目。 
+- 查詢`ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"`會傳回所有與組織外部人員共用的專案，並包含信用卡號碼。 
     
-- 查询`ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"`返回组织中与外部用户共享的所有工作组网站上的文档列表。 
+- 查詢`ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"`會傳回組織中所有與外部使用者共用之小組網站上的檔案清單。 
     
 > [!TIP]
-> 搜索查询（如`ViewableByExternalUsers:true AND ContentType:document`）可能会在搜索结果中返回大量 .aspx 文件。 要消除这些（或其他类型的文件），可以使用 属性来排除特定的`FileExtension`文件类型;否则，可以使用 该属性。例如`ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx`. 
+> 搜尋結果中的搜尋`ViewableByExternalUsers:true AND ContentType:document`查詢可能會傳回許多 .aspx 檔案。 若要消除這些（或其他類型的檔案），您可以使用`FileExtension`此屬性排除特定的檔案類型;例如`ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx`。 
   
-与组织外部人员共享的内容是什么？ 组织的 SharePoint 和 OneDrive 业务网站中的文档，这些文档通过发送共享邀请共享或在公共场所共享。 例如，以下用户活动会导致外部用户可查看的内容：
+與組織外部人員共用的內容為何？ 您組織中的檔，可透過傳送共用邀請或在公用位置中共用的方式，在組織的 SharePoint 和 OneDrive 中共用。 例如，下列使用者活動會產生外部使用者可查看的內容：
   
-- 用户与组织外部的人员共享文件或文件夹。
+- 使用者與組織外部的人員共用檔案或資料夾。
     
-- 用户创建共享文件并将链接发送给组织外部的人员。 此链接允许外部用户查看（或编辑）文件。
+- 使用者建立共用檔案的連結並傳送給組織外部的人員。 此連結可讓外部使用者查看（或編輯）檔。
     
-- 用户向组织外部的人员发送共享邀请或来宾链接，以查看（或编辑）共享文件。
+- 使用者將共用邀請或來賓連結傳送給組織外部的人員，以查看（或編輯）共用檔案。
     
-### <a name="issues-using-the-viewablebyexternalusers-property"></a>使用"外部用户可查看"属性的问题
+### <a name="issues-using-the-viewablebyexternalusers-property"></a>使用 ViewableByExternalUsers 屬性的問題
 
-虽然该`ViewableByExternalUsers`属性表示文档或网站是否与外部用户共享的状态，但此属性的作用和反映存在一些注意事项。 在以下方案中，不会更新`ViewableByExternalUsers`该属性的值，并且使用此属性的内容搜索查询的结果可能不准确。 
+雖然此`ViewableByExternalUsers`屬性代表的是檔或網站與外部使用者共用的狀態，但是此屬性的功能和不會反映的注意事項。 在下列案例中， `ViewableByExternalUsers`屬性值將不會更新，而且使用此屬性的內容搜尋查詢結果可能不准確。 
   
-- 对共享策略的更改，例如关闭站点或组织的外部共享。 即使外部访问可能已被吊销，该属性仍将显示以前共享的文档是外部可访问的。
+- 對共用原則所做的變更，例如關閉網站或組織的外部共用。 即使已撤銷外部存取，屬性仍然會將先前的共用檔顯示為外部可存取的。
     
-- 对组成员身份的更改，例如将外部用户添加到 Office 365 组或 Office 365 安全组。 对于组有权访问的项目，该属性不会自动更新。
+- 群組成員資格的變更，例如新增或移除外部使用者至 Office 365 群組或 Office 365 安全性群組。 此屬性不會自動更新為群組具有存取權的專案。
     
-- 向收件人尚未接受邀请且因此尚未访问内容的外部用户发送共享邀请。
+- 將共用邀請傳送給沒有收件者接受邀請的外部使用者，因此還沒有內容的存取權。
     
-在这些情况下，在`ViewableByExternalUsers`重新爬网并重新编制文档库索引之前，属性不会反映当前共享状态。 
+在這些情況下， `ViewableByExternalUsers`除非網站或文件庫是重新編目和重新編制索引，否則屬性不會反映目前的共用狀態。 
 
-## <a name="searching-for-site-content-shared-within-your-organization"></a>搜索组织内共享的网站内容
+## <a name="searching-for-site-content-shared-within-your-organization"></a>搜尋組織內共用的網站內容
 
-如前所述，您可以使用 属性，`SharedWithUsersOWSUser`以便搜索组织中人员之间共享的文档。 当某人与组织内的其他用户共享文件（或文件夹）时，共享文件的链接将显示在与该文件共享的人员的 OneDrive 业务帐户中的"**与我共享"** 页上。 例如，要搜索与 Sara Davis 共享的文档，可以使用 查询`SharedWithUsersOWSUser:"sarad@contoso.com"`。 如果导出此搜索的结果，将下载原始文档（位于与 Sara 共享文档的人员的内容位置）。
+如先前所述，您可以使用`SharedWithUsersOWSUser`屬性來搜尋組織中的人員間共用的檔。 當人員與組織內的其他使用者共用檔案（或資料夾）時，共用檔案的連結會出現在共用該檔案之人員的 OneDrive 商務帳戶中的 [**與我共用**] 頁面上。 例如，若要搜尋已與 Sara Davis 共用的檔，您可以使用查詢`SharedWithUsersOWSUser:"sarad@contoso.com"`。 如果您匯出此搜尋的結果，則會下載原始檔案（位於共用檔與 Sara 之人員的內容位置）。
   
-使用 属性`SharedWithUsersOWSUser`时，必须与特定用户显式共享文档，才能在搜索结果中返回。 例如，当某人在其 OneDrive 帐户中共享文档时，他们可以选择与任何人（组织内部或外部）共享该文档，仅与组织内部的人员共享该文档，或与特定人员共享该文档。 下面是 OneDrive**中的"共享"** 窗口的屏幕截图，其中显示了三个共享选项。 
+使用`SharedWithUsersOWSUser`屬性時，必須與特定使用者明確共用檔，以在搜尋結果中傳回。 例如，當人員在其 OneDrive 帳戶中共用檔時，他們可以選擇與任何人（組織內部或外部的人員）共用該檔，或與特定人員共用該檔。 以下是 OneDrive 中 [**共用**] 視窗的螢幕擷取畫面，顯示三個共用選項。 
   
-![只有与特定人员共享的文件才会由使用"共享与用户OWSUser"属性的搜索查询返回](media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
+![使用 SharedWithUsersOWSUser 屬性的搜尋查詢會傳回與特定人員共用的檔案](../media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
   
-只有使用第三个选项共享的文档（与**特定人员**共享）将由使用 属性`SharedWithUsersOWSUser`的搜索查询返回。 
+使用此`SharedWithUsersOWSUser`屬性的搜尋查詢會傳回使用第三個選項（與**特定人員**共用）所共用的檔。 
 
-## <a name="searching-for-skype-for-business-conversations"></a>搜索 Skype 的业务对话
+## <a name="searching-for-skype-for-business-conversations"></a>搜尋商務用 Skype 交談
 
-您可以使用以下关键字查询专门搜索 Skype 业务对话中的内容：
+您可以使用下列關鍵字查詢，在商務用 Skype 交談中特別搜尋內容：
 
-```
+```powershell
 kind:im
 ```
 
-以前的搜索查询还返回来自 Microsoft Teams 的聊天。 为了防止这种情况，可以使用以下关键字查询缩小搜索结果范围，以仅包括 Skype 商务对话：
+先前的搜尋查詢也會從 Microsoft 小組傳回聊天。 若要避免這種情況，您可以縮小搜尋結果，以包含使用下列關鍵字查詢的商務用 Skype 交談：
 
-```
+```powershell
 kind:im AND subject:conversation
 ```
 
-前面的关键字查询不包括 Microsoft Teams 中的聊天，因为 Skype 商务对话将保存为以单词"对话"开头的主题行的电子邮件。
+上一個關鍵字查詢不包括 Microsoft 團隊中的研討，因為商務用 Skype 交談是以電子郵件形式儲存，而主題行會以「交談」一詞開頭。
 
-要搜索在特定日期范围内发生的业务对话的 Skype，请使用以下关键字查询：
+若要搜尋在特定日期範圍內發生的商務用 Skype 交談，請使用下列關鍵字查詢：
 
-```
+```powershell
 kind:im AND subject:conversation AND (received=startdate..enddate)
 ```
 
-## <a name="search-tips-and-tricks"></a>搜索提示和技巧
+## <a name="search-tips-and-tricks"></a>搜尋秘訣與技巧
 
-- 关键字搜索不区分大小写。 **例如，cat**和**CAT**返回相同的结果。 
-    
-- 布尔运算符**和，****或，****不，NEAR****和ONEAR**必须是大写。 **** 
-    
-- 两个关键字或两`property:value`个表达式之间的空格与使用**AND**相同。 例如，`from:"Sara Davis" subject:reorganization`返回 Sara Davis 发送的所有消息，其中包含主题行中的单词"重组"。 
-    
-- 使用与格式匹配的`property:value`语法。 值不区分大小写，并且它们不能在运算符之后有空格。 如果有空格，则预期值将是全文搜索。 例如，`to: pilarp`搜索"pilarp"作为关键字，而不是发送到 pilarp 的邮件。 
-    
-- 搜索收件人属性（如收件人、从、抄送或收件人）时，可以使用 SMTP 地址、别名或显示名称来表示收件人。 例如，您可以使用pilarp@contoso.com、皮拉普或"皮拉尔皮尼拉"。
-    
-- 只能使用前缀通配符搜索;例如，**\*猫**或**设置。\*** 不支持后缀搜索**\***（ 猫 ）， infix 搜索 （**\*c t**） 和子字符串搜索 （**\*猫\***）. 
-    
-- 搜索属性时，如果搜索值由多个单词组成，请使用双引号 （""）。 例如，`subject:budget Q1`返回在主题行中包含**预算**并在消息中的任何位置或任何消息属性中包含**Q1**的消息。 使用`subject:"budget Q1"`返回在主题行中的任何位置包含**预算 Q1**的所有消息。 
-    
-- 要从搜索结果中排除标有特定属性值的内容，请在此属性名称之前放置一个减号 （-）。 例如，`-from:"Sara Davis"`排除 Sara Davis 发送的任何邮件。
+- 關鍵字搜尋不區分大小寫。 例如， **cat**和**cat**會傳回相同的結果。 
 
-- 某些特殊字符不包括在搜索索引中，因此不可搜索，这些字符包括搜索运算符（+ - = :)和以下字符，要么被$null替换，要么可能导致错误，如果搜索！ [ % ] & ;_ / ?
+- 布林運算子**AND**、 **OR**、 **NOT**、 **NEAR**和**ONEAR**必須是大寫。 
 
-- 您可以根据邮件类型导出项目。 例如，要在 Microsoft Teams 中导出 Skype 对话和聊天，请使用 语法`kind:im`。 要仅返回电子邮件，请使用`kind:email`。 要在 Microsoft Teams 中返回聊天、会议和呼叫，`kind:microsoftteams`请使用 。
+- 兩個關鍵字之間的空格或`property:value`兩個運算式與使用**AND**相同。 例如， `from:"Sara Davis" subject:reorganization`傳回所有由 Sara Davis 所傳送，包含主旨行中的 word 重新組織的郵件。 
+
+- 使用符合格式的`property:value`語法。 值不區分大小寫，而且在運算子之後不能有空格。 如果有空格，您的預期值將會是全文檢索。 例如`to: pilarp` ，搜尋 "pilarp" 做為關鍵字，而不是傳送給 pilarp 的郵件。 
+
+- 搜尋收件者屬性（例如 To、From、Cc 或收件者）時，您可以使用 SMTP 位址、別名或顯示名稱來表示收件者。 例如，您可以使用 pilarp@contoso.com、pilarp 或 "Pilar Pinilla"。
+
+- 您只能使用首碼萬用字元搜尋;例如， **cat\* **或**set\***。 尾碼搜尋（**\*cat**）、中綴搜尋 **（\*c t**）和子字串搜尋**\*（\*cat**）都不受支援。
+
+- 搜尋屬性時，如果搜尋值是由多個字組成，則使用雙引號（""）。 例如`subject:budget Q1` ，傳回在主旨行中包含**預算**的郵件，或在郵件中或任何郵件內容中包含**Q1**的郵件。 使用`subject:"budget Q1"`會傳回所有包含「**預算 Q1** 」主題行中的郵件。
+
+- 若要從搜尋結果中排除以特定屬性值標示的內容，請在屬性名稱前面加上減號（-）。 例如， `-from:"Sara Davis"`排除在 Sara Davis 所傳送的任何郵件。
+
+- 您可以根據郵件類型匯出專案。 例如，若要在 Microsoft 小組中匯出 Skype 交談和聊天，請使用`kind:im`語法。 若只要傳回電子郵件訊息，您會`kind:email`使用。 若要傳回 Microsoft 小組中的研討、會議及通話， `kind:microsoftteams`請使用。

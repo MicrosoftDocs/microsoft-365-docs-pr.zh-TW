@@ -1,5 +1,7 @@
 ---
-title: 处理调查数据时的错误修正
+title: 處理調查的資料時的錯誤修正
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,88 +16,88 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 614397a81fd898975e5163c669fb8693fcdfe77c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 524378ecb7ec7cd8285e7d1ccda5667aa6081f30
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077074"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634891"
 ---
-# <a name="error-remediation-when-processing-data-for-an-investigation"></a>处理调查数据时的错误修正
+# <a name="error-remediation-when-processing-data-for-an-investigation"></a>處理調查的資料時的錯誤修正
 
-错误修正使调查人员能够纠正阻止数据调查（预览）正确处理内容的数据问题。 例如，由于文件已被锁定或加密，因此无法处理受密码保护的文件。 使用错误修正，调查人员可以下载包含此类错误的文件、删除密码保护并上载修复的文件。
+錯誤修正功能可讓調查人員修正資料問題，以防止資料調查（預覽）正確地處理內容。 例如，因為檔案遭到鎖定或加密，所以無法處理受密碼保護的檔案。 使用錯誤修正，調查人員可以下載具有這類錯誤的檔案、移除密碼保護，並上傳補救的檔案。
 
-使用以下工作流修复数据调查（预览）案例中的错误的文件。
+使用下列工作流程修正資料調查（預覽）案例中發生錯誤的檔案。
 
-## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>创建错误修正会话以修复具有处理错误的文件
+## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>建立錯誤修正會話，以修正具有處理錯誤的檔案
 
 >[!NOTE]
->如果错误修正向导在以下过程中随时关闭，则可以**通过在"查看"** 下拉菜单**中选择"错误修正"** 从"**处理"** 选项卡返回到错误修正会话。
+>如果在下列程式中隨時關閉錯誤修正嚮導，您可以在 [ **View** ] 下拉式功能表中選取 [**錯誤 remediations** ]，從 [**處理**] 索引標籤回到錯誤修正會話。
 
-1. 在数据调查中**的"处理"** 选项卡上，在"**查看"** 下拉菜单**中选择"错误"。**
+1. 在 [資料調查] 中的 [**處理**] 索引標籤上，于 [ **View** ] 下拉式功能表中選取 [**錯誤**]。
 
-2. 通过单击错误类型或文件类型旁边的单选按钮，选择要修复的错误。  在下面的示例中，我们正在修复受密码保护的文件。
+2. 按一下 [錯誤類型] 或 [檔案類型] 旁邊的選項按鈕，以選取您要修正的錯誤。  在下列範例中，我們正在修正受密碼保護的檔案。
 
-3. 单击 **" 新建错误修正**。
+3. 按一下 [ **+ 新增錯誤修正**]。
 
-    ![错误修正](media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+    ![錯誤修正](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    错误修正会话从准备阶段开始，其中错误文件将复制到安全的 Azure 位置，以便可以下载它们。
+    「錯誤修正」會話開始，從準備階段開始，其中含有錯誤的檔案會複製到安全的 Azure 位置，以供下載。
 
-    ![准备错误补救](media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+    ![準備錯誤修正](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
-4. 准备完成后，**单击"下一步：下载文件"** 以继续下载。
+4. 準備完成後，請按 **[下一步：下載檔案]** 以繼續下載。
 
-    ![下载文件](media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![下載檔案](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. 要下载文件，请指定**要下载的目标路径。** 这是本地计算机上的路径，应在此路径中下载文件。  默认路径%USERPROFILE%_下载_错误指向登录用户的下载文件夹;这可以根据需要进行更改。
+5. 若要下載檔案，請指定要**下載的目的地路徑**。 這是您的本機電腦上應下載檔案的路徑。  預設路徑%USERPROFILE%\Downloads\errors，指向登入使用者的 [下載] 資料夾;這可以視需要變更。
 
     >[!NOTE]
-    >我们建议您使用本地文件路径而不是远程网络路径来获得最佳性能。
+    >建議您使用本機檔路徑取代遠端網路路徑，以取得最佳效能。
 
     > [!NOTE]
-    > 如果您尚未安装 AzCopy，则可以从这里安装它：https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+    > 若尚未安裝 AzCopy，您可以從下列位置進行安裝：https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
 
-6. 通过单击"**复制到剪贴板"** 复制预定义的命令。 启动 windows 命令提示，粘贴命令，然后按**Enter。**  
+6. 按一下 [**複製到剪貼**簿]，複製預先定義的命令。 啟動 windows 命令提示字元，貼上命令，然後按**enter**鍵。  
 
-    文件将被下载。
+    將會下載檔案。
 
-    ![准备错误补救](media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![準備錯誤修正](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
-    > 如果在运行此命令时遇到问题，请参阅[高级电子数据展示中的"疑难解答"AzCopy。](troubleshooting-azcopy.md)
+    > 如果您在執行此命令時有問題，請參閱[Advanced eDiscovery 中的疑難排解 AzCopy](troubleshooting-azcopy.md)。
 
-7. 下载文件后，您可以使用适当的工具进行修复。 对于受密码保护的文件，可以使用多种密码破解工具。 如果您知道这些文件的密码，则可以打开这些文件并删除密码保护。
+7. 下載檔案之後，您可以使用適當的工具加以修復。 針對受密碼保護的檔案，您可以使用數種密碼破譯工具。 如果您知道檔案的密碼，您可以開啟檔案並移除密碼保護。
     
    > [!NOTE]
-    > 保留修复文件的目录结构和文件名非常重要。 下载的文件和文件夹的路径名称使得可以将修复的文件与原始文件相关联。  如果目录结构或文件名发生更改，您将收到以下错误： `Cannot apply Error Remediation to the current Evidenceset`。
+    > 您必須保留已修正檔案的目錄結構及檔案名，這一點很重要。 已下載的檔案和資料夾的路徑名稱，可讓修正的檔案與原始檔案產生關聯。  如果目錄結構或檔案名已變更，您會收到下列錯誤： `Cannot apply Error Remediation to the current Evidenceset`。
 
-8. 现在，返回到数据调查（预览），**然后单击"下一步：上传文件"。**  这将移动到下一步，您现在可以上传文件。
+8. 現在，回到 [資料調查（預覽）]，然後按 **[下一步：上傳檔案]**。  這會移至下一個您現在可以上傳檔案的步驟。
 
-    ![上传文件](media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![上傳檔案](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. 在"**文件位置路径"** 文本框中指定已修复文件的位置，然后单击"**复制到剪贴板"。**
+9. 在 [檔案**位置**] 文字方塊中指定已修正檔案的位置，然後按一下 [**複製到剪貼**簿]。
 
-10. 将命令粘贴到 Windows 命令提示符中，然后按**Enter**上载文件。
+10. 將命令貼到 Windows 命令提示字元，然後按**enter**上傳檔案。
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6 .png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
-11. 最后，返回到数据调查（预览），**然后单击"下一步：处理文件"。**
+11. 最後，回到 [資料調查（預覽）]，然後按 **[下一步：處理檔案]**。
 
-12. 处理完成后。  您可以返回到工作集并查看修复的文件。
+12. 處理完成時。  您可以回到工作集，並查看修正的檔案。
 
-## <a name="what-happens-when-files-are-remediated"></a>修复文件时会发生什么情况
+## <a name="what-happens-when-files-are-remediated"></a>修正檔案時會發生什麼情況
 
-上载修复的文件时，原始元数据将保留，但以下字段除外： 
+在上傳補救的檔案時，除了下欄欄位之外，仍會保留原始的中繼資料： 
 
-- 提取的文本大小
+- ExtractedTextSize
 - HasText
-- 误位修正
-- 加载 Id
-- 处理错误消息
-- 处理状态
-- Text
-- 字数
-- 工作集Id
+- IsErrorRemediate
+- LoadId
+- ProcessingErrorMessage
+- ProcessingStatus
+- 文字
+- WordCount
+- WorkingsetId
 
-有关数据调查（预览）中所有文档元数据字段的定义，请参阅[文档元数据字段](document-metadata-fields.md)。
+如需資料調查（預覽）中所有檔元資料欄位的定義，請參閱[檔元資料欄位](document-metadata-fields.md)。

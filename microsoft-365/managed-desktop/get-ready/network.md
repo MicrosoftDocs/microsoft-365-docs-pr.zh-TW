@@ -1,5 +1,5 @@
 ---
-title: Microsoft 受管理電腦的網路組態
+title: Microsoft 受管理電腦的網路設定
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
@@ -10,55 +10,55 @@ ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 141bd55a0619fb2f007b5f9173310a1e2fe5bab1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596560"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633151"
 ---
-#  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的網路組態
+#  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的網路設定
 
 <!--Proxy config -->
 
 
-## <a name="proxy-configuration"></a>Proxy 組態
+## <a name="proxy-configuration"></a>Proxy 設定
 
-Microsoft 受管理的電腦是雲端管理的服務。 有一群 Microsoft 受管理的電腦服務能夠連接時所需的端點。 此章節將列出需要允許 Microsoft 受管理的電腦服務的各種層面的端點。 
+Microsoft 受管理的桌面為雲端管理的服務。 Microsoft 受管理的桌面服務必須能夠達到一組端點。 本節列出 Microsoft 受管理桌面服務各部分必須允許的端點。 
 
-客戶可以藉由傳送所有受信任直接透過其防火牆或 proxy 的 Microsoft 365 網路要求、 略過驗證及所有其他的封包層級檢查或處理，以最佳化其網路。 這可減少延遲與周邊容量需求。 
+客戶可以透過防火牆或 proxy 直接傳送所有受信任的 Microsoft 365 網路要求，以優化其網路，略過驗證及所有其他的封包層級檢查或處理。 這可減少延遲和周邊容量需求。 
 
-此外，若要最佳化 Microsoft 受管理電腦雲端式服務的效能，這些端點需要特別處理 [客戶用戶端瀏覽器和邊緣網路內的裝置。 這些裝置包括防火牆、 SSL 會自動換行和檢查、 封包檢查裝置，以及資料外洩防護系統。
+此外，為了優化 Microsoft 受管理的桌面雲端服務的效能，這些端點需要用戶端瀏覽器和其 edge 網路中的裝置進行特殊處理。 這些裝置包括防火牆、SSL 中斷及檢查、資料包檢查裝置和資料遺失防護系統。
 
 ### <a name="proxy-requirement"></a>Proxy 需求
 
 Proxy 或防火牆必須支援 TLS 1.2。 否則，您可能必須停用通訊協定偵測。
 
-### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>允許端點-Microsoft 受管理電腦的特定
+### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Microsoft 受管理的桌上型電腦允許的端點-專用
 
-Microsoft 受管理的電腦使用 Azure 入口網站來裝載其 web 主控台。 下表中的下列 Url 必須在您的 proxy 和防火牆允許清單，讓 Microsoft 受管理的電腦裝置可與 Microsoft 服務通訊。  
+Microsoft 受管理的桌面使用 Azure 入口網站來主控其網頁主控台。 下表中的下列 URLs 必須位於 proxy 和防火牆的允許清單上，以便 Microsoft 受管理的桌面裝置可以與 Microsoft 服務通訊。  
 
-請注意，Microsoft 受管理的桌上型電腦下列 URL 會用於上客戶 API，我們的服務執行的任何項目。 您必須確定此 URL 會永遠可在公司網路上存取。
+請注意，下列 Microsoft Managed 桌面 URL 是用於在客戶 API 上執行的任何服務。 您必須確定您的公司網路一定可以存取此 URL。
 
-Microsoft 服務  | Url 上需要允許清單 
+Microsoft 服務  | 允許清單上的 URLs 必要專案 
 --- | --- | ---
-Microsoft 受管理的電腦 | prod-ag3 mwaas-服務 customerapi.azurewebsites.net
-取得說明 | \*。 support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-ag3 mwaas-服務 customerapi.azurewebsites.net
-「 快速助手 」 | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*。 lync.com
+Microsoft 受管理的電腦 | prod-mwaas-services-customerapi.azurewebsites.net
+取得說明 | \*。 support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
+快速協助 | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*。 lync.com
 適用於 Office 365 的 Microsoft 支援及修復小幫手 | \*。 apibasic.diagnostics.office.com  <br>\*。 api.diagnostics.office.com
  
 
-### <a name="endpoints-allowed---other-microsoft-products"></a>允許-其他 Microsoft 產品的端點
+### <a name="endpoints-allowed---other-microsoft-products"></a>允許端點-其他 Microsoft 產品
 
-從數個 Microsoft 產品必須在允許的清單，讓 Microsoft 受管理的電腦裝置可以與彼此那些 Microsoft 服務有 Url。 若要查看每個產品的完整清單使用的連結。 
+有來自數個 Microsoft 產品的 URLs 需要位於允許的清單中，以便 Microsoft 受管理的桌面裝置可以與這些 Microsoft 服務進行通訊。 使用連結查看每個產品的完整清單。 
 
-Microsoft 服務 | 文件來源的 Url 上需要允許清單
+Microsoft 服務 | 檔來源-允許清單上的 URLs 必要專案
 --- | ---
-Windows 10 企業版包括商務用 Windows Update | [利用適用於 Windows 10，版本 1803年管理連線端點](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[利用適用於 Windows 10，版本 1809年管理連線端點](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[利用適用於 Windows 10，版本 1903年管理連線端點](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>time.windows.com
-傳遞最佳化 | [設定傳遞最佳化適用於 Windows 10 更新](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
-Office 365 | [Office 365 URL 和 IP 位址範圍](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
-Azure Active Directory | [混合式身分識別所需的連接埠和通訊協定](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)和[Active Directory 和 Active Directory 網域服務的連接埠需求](https://aka.ms/AA26ygm) 
-Microsoft Intune | [Intune 網路組態需求](https://docs.microsoft.com/intune/network-bandwidth-use)
-Microsoft Defender 進階威脅防護 (ATP) | [Microsoft Defender ATP 端點](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Windows 10 企業版，包含 Windows 更新（商務） | [管理 Windows 10 版本1803的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理 Windows 10 版本1809的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理 Windows 10 版本1903的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>time.windows.com
+傳遞優化 | [設定 Windows 10 更新的傳遞優化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
+Office 365 | [Office 365 URL 與 IP 位址範圍](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Azure Active Directory | [混合式識別所需的埠和通訊協定](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)和 Active Directory[網域服務埠需求](https://aka.ms/AA26ygm) 
+Microsoft Intune | [Intune 網路設定需求](https://docs.microsoft.com/intune/network-bandwidth-use)
+Microsoft Defender 高級威脅防護（ATP） | [Microsoft Defender ATP 端點](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

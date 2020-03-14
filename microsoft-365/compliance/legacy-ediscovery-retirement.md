@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Exchange Online 中的 In-Place eDiscovery 和 In-Place 保留（以及對應的 PowerShell Cmdlet）會在2020的上半年內淘汰。 Search-Mailbox Cmdlet 和 Office 365 Advanced eDiscovery 1.0 1.0 也會在相同的時段內淘汰。
 ms.openlocfilehash: 92b6648b603286871956db64631d334df2384112
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42605280"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634831"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>舊的 eDiscovery 工具退休
 
@@ -71,7 +71,7 @@ ms.locfileid: "42605280"
 
 - Office 365 和 Microsoft 365 政府組織;這包括 GCC、GCC High 和 DoD
 
-- Office 365 德國
+- Office 365 Germany
 
 ### <a name="timeline-for-retirement"></a>退休的時程表
 
@@ -168,7 +168,7 @@ Microsoft 365 規範中心也會使用[規範界限](set-up-compliance-boundarie
 
 - Office 365 和 Microsoft 365 政府組織;這包括 GCC、GCC High 和 DoD
 
-- Office 365 德國
+- Office 365 Germany
 
 ### <a name="timeline"></a>時間表
 
@@ -242,7 +242,7 @@ Exchange Online PowerShell 中的**Search-Mailbox** Cmdlet 會在 [正在撤銷]
 
 - Office 365 和 Microsoft 365 政府組織;這包括 GCC、GCC High 和 DoD
 
-- Office 365 德國
+- Office 365 Germany
 
 ### <a name="timeline"></a>時間表
 
@@ -304,7 +304,7 @@ Exchange Online PowerShell 中的**Search-Mailbox** Cmdlet 會在 [正在撤銷]
 
 - Office 365 和 Microsoft 365 政府組織;這包括 GCC、GCC High 和 DoD
 
-- Office 365 德國
+- Office 365 Germany
 
 ### <a name="timeline"></a>時間表
 
@@ -324,7 +324,7 @@ Microsoft 365 （也稱為「 *Advanced ediscovery 2.0 2.0*」）中新的 [edis
 
 - Office 365 和 Microsoft 365 教育組織
 
-- Office 365 德國
+- Office 365 Germany
 
 ### <a name="timeline"></a>時間表
 

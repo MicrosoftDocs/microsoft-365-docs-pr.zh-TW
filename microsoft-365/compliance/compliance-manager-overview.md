@@ -1,5 +1,5 @@
 ---
-title: Microsoft Compliance Manager 概觀
+title: Microsoft 合規性管理員概述
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,49 +13,49 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Compliance Manager 是在 Microsoft 服務信任入口網站中的可用工作流程為基礎的風險評估工具。 合規性管理員可讓您追蹤、 指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。
+description: Microsoft 合規性管理員是 Microsoft 服務信任入口網站中免費的工作流程型風險評估工具。 合規性管理員可讓您追蹤、指派及驗證與 Microsoft 雲端服務相關的法規遵從性活動。
 ms.openlocfilehash: 4d79b0480462510927f0b1b4c8b5da7132cffec8
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078663"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42635151"
 ---
-# <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance Manager （預覽）
+# <a name="microsoft-compliance-manager-preview"></a>Microsoft 合規性管理員（預覽）
 
 > [!IMPORTANT]
 > 合規性管理員無法使用 21Vianet 運作的 Office 365、Office 365 德國、Office 365 U.S. Government Community High (GCC High)，或 Office 365 美國國防部。
 
-[Microsoft Compliance Manager （預覽）](https://servicetrust.microsoft.com/ComplianceManager)是與 Microsoft 雲端服務相關的屬性可讓您追蹤、 指派，並確認法規合規性活動可用工作流程為基礎的風險評定工具。 您的 Microsoft 365 的一部分、 Office 365 或 Azure Active Directory 訂閱，合規性管理員可協助您管理內共同分擔 Microsoft 雲端服務的法規合規性。 合規性管理員提供集中式的儀表板檢視標準、 法規和控制項實作詳細資料和 Microsoft 服務評估的測試結果。 它還包含可讓您管理自訂控制項實作與追蹤特定給貴組織的合規性的工具。
+[Microsoft 合規性管理員（預覽）](https://servicetrust.microsoft.com/ComplianceManager)是免費的工作流程型風險評估工具，可讓您追蹤、指派及驗證 Microsoft cloud services 相關的規章遵循活動。 在 365 365 Microsoft 雲端服務的共用責任模式內，合規性管理員會協助您管理法規遵從性，以協助您在 microsoft 雲端服務的共用責任模式內管理法規遵從性。 合規性管理員提供集中式儀表板，以查看 Microsoft service 評估的標準、法規及控制執行詳細資料和測試結果。 此外，它也包含一些工具，可讓您管理組織特有的自訂控制項實施和合規性追蹤。
 
-使用合規性管理員中，您的組織可以：
+您的組織可以使用合規性管理員：
   
-- 結合 Microsoft 提供給稽核者及管理者與您合規性自我評估其雲端服務相關的標準與法規適用，為您的組織的合規性詳細的資訊。 這些包括標準與法規所述的國際標準組織 (ISO)、 National Institute of Standards 和技術 (NIST)、 健康保險流通與責任法案 (HIPAA)，一般資料保護規定 (GDPR) 和其他許多。
-- 可讓您指派、 追蹤及記錄合規性與評估相關的活動，可協助貴組織跨小組障礙，達成您的合規性目標。
-- 提供可協助您追蹤進度，並排定優先順序稽核控制項，可協助降低您的組織暴露於風險合規性分數。
-- 提供安全存放庫，為您要上傳並管理辨識項，以及您合規性活動相關的其他成品。
-- 產生豐富的 Microsoft Excel 報告執行由 Microsoft 和您的組織稽核員、 管理者，以及其他規範檢閱者的文件合規性活動。
+- 將針對您的組織適用之標準及規章的相容性自我評估，結合 Microsoft 提供給審計員和監管者的詳細規範資訊。 這包括國際標準組織（ISO）的標準和規章，全國標準和技術研究院（NIST），「健康保險流通與責任法案（HIPAA）」（一般資料）保護規定（GDPR）及許多其他。
+- 可讓您指派、追蹤及記錄合規性與評估相關的活動，從而協助貴組織跨小組障礙，達成您的合規性目標。
+- 提供符合性分數，以協助您追蹤進度，並設定審核控制的優先順序，以協助降低組織面臨風險的風險。
+- 為您提供安全的存放庫，以上傳和管理與您的合規性活動相關的證據及其他專案。
+- 產生詳盡的 Microsoft Excel 報告，記錄由 Microsoft 和您組織的審計員、管制及其他法規遵從性審查程式所執行的相容性活動。
 
 > [!NOTE]
-> 提供合規性管理員中的客戶動作是建議;它是由您的組織來評估在其各自的法規環境之前實作這些建議的有效性。 找到合規性管理員中的建議不應該解譯成保證郵件可以合規性。
+> 合規性管理員中提供的客戶動作為建議。在實施之前，您的組織可以評估這些建議在其各項法規環境中的效能。 在合規性管理員中找到的建議不得加以轉譯以保證法規遵從性。
 
-## <a name="compliance-manager-relationships"></a>合規性管理員中的關聯
+## <a name="compliance-manager-relationships"></a>合規性管理員關係
 
-合規性管理員會使用數個元件，協助您符合您的合規性管理活動。 這些元件可以搭配使用，以提供完整的管理工作流程及簡明的合規性的稽核員 」 報告。
+合規性管理員會使用多個元件，協助您進行相容性管理活動。 這些元件可共同運作，為審計員提供完整的管理工作流程和無障礙的符合性報告。
 
-此圖顯示的合規性管理員中的主要元件之間的關係：
+此圖表顯示合規性管理員主要元件之間的關係：
 
-![合規性管理員第 3 版中的關聯性](../media/compliance-manager-relationships.png)
+![合規性管理員第3版中的關係](../media/compliance-manager-relationships.png)
 
 ## <a name="groups"></a>群組
 
-[群組](working-with-compliance-manager.md#groups)是可讓您組織的評估及共用一般的資訊和之間具有相同或相關客戶管理控制項的 「 評估 」 的工作流程工作的容器。 當兩個不同的 「 評估 」 在相同的群組共用客戶管理控制項時，完成實作詳細資料、 測試和控制項的狀態的自動同步處理至群組中的任何其他評估中的同一個控制項。 此群組間統一指派的動作項目，每個控制項，並減少複製工作。 您也可以選擇要用來組織的群組。 評估年、 區域、 合規性標準，或其他群組，以協助您組織您的合規性工作。
+[群組](working-with-compliance-manager.md#groups)是容器，可讓您組織評估，並在具有相同或相關客戶管理控制措施的評估之間共用一般資訊和工作流程工作。 當同一個群組中的兩個不同評估共用客戶管理控制項時，控制項的執行詳細資料、測試及狀態會自動同步處理至群組中任何其他評估中的相同控制項。 這會為群組中的每個控制項統一所指派的動作專案，並減少重複的工作。 您也可以選擇使用群組進行組織。 依年、區域、規範標準或其他群組進行評估，以協助組織符合性工作。
 
-## <a name="assessments"></a>「 評估 」
+## <a name="assessments"></a>評估
 
-[「 評估 」](working-with-compliance-manager.md#assessments)是可讓您組織根據 Microsoft 和您的組織評估雲端服務安全性與合規性風險之間共用的責任的控制項的容器。 評估可協助您實作合規性標準和適用的資料保護標準、 法令或法律所指定的資料保護保護措施。 它們可協助您辨識針對選取的業界標準的所選的 Microsoft 雲端服務，您的資料保護和合規性狀態。 評估完成所實作的評估中包含對應至標準憑證的控制項。
+[評估](working-with-compliance-manager.md#assessments)是容器，可讓您根據 Microsoft 和您的組織在評估雲端服務安全性和合規性風險的組織之間的責任來組織控制。 評估可協助您執行符合標準及適用的資料保護標準、法規或法律所指定的資料保護保護措施。 其可協助您針對選取的 Microsoft 雲端服務，針對所選的工業標準來辨別您的資料保護和合規性狀況。 評估是透過對應至憑證標準的評估中所包含的控制項實施來完成。
 
-根據預設，合規性管理員會建立組織的下列 「 評估 」:
+根據預設，合規性管理員會為您的組織建立下列評估：
 
 - Office 365 ISO 27001
 - Office 365 NIST 800-53
@@ -63,110 +63,110 @@ ms.locfileid: "42078663"
 
 評估包含數個元件：
   
-- **範圍內的服務**： 每個評估適用於一組特定的 Microsoft 服務。
-- **Microsoft 管理控制措施**： 每個雲端服務，Microsoft 會實作和管理一組適用的標準與法規符合性控制項。
-- **客戶管理控制**： 這是由您的組織實作時採取動作的每個控制項, 的控制項的集合。
-- **評估分數**： 評估中的 [客戶管理控制措施的總可能分數的百分比。 這可協助您追蹤實作的指派給每個控制項的動作。
+- **範圍內的服務**：每個評估適用于一組特定的 Microsoft 服務。
+- **Microsoft 受管理的控制項**：針對每個雲端服務，Microsoft 會針對適用的標準和法規，針對每個雲端服務實施和管理一組符合性控制。
+- **客戶管理的控制項**：這是當您為每個控制項採取動作時，您的組織所執行的控制項集合。
+- **評估分數**：評估中客戶管理控制項的總可能分數百分比。 這可協助您追蹤指派給每個控制項的動作的實施。
 
 ## <a name="controls"></a>控制項
 
-[控制項](working-with-compliance-manager.md#controls-and-actions)是定義您要如何管理合規性活動的合規性程序容器合規性管理員中。 這些控制項分為對應認證或規定的評估結構與對齊的控制項系列。
+[控制項](working-with-compliance-manager.md#controls-and-actions)是合規性管理員中的合規性程式容器，可定義您管理符合性活動的方式。 這些控制項會組織成與對應憑證或法規之評估架構相符的控制系列。
 
-- **控制項 ID**： 從對應認證或規定所選控制項的名稱。
-- **控制項標題**： 所對應憑證或規定的標題的控制項識別碼。
-- **發行項識別碼**： 此欄位僅適用於 GDPR 評估，並指定對應的 GDPR 文章編號。
-- **描述**： 從對應認證或規定的控制項的文字。 由於著作權限制的相關資訊的連結列 ISO 標準。
+- **控制項識別碼**：從對應的認證或法規選取的控制項名稱。
+- **控制項標題**：對應之憑證或規定中的控制項識別碼的標題。
+- **文章識別碼**：此欄位只適用于 GDPR 評估，並指定對應的 GDPR 文章編號。
+- **描述**：對應之憑證或規定中的控制項文字。 由於著作許可權制，ISO 標準會列出相關資訊的連結。
 
-![合規性管理員第 3 版中的控制項](../media/compliance-manager-controls.png)
+![合規性管理員第3版中的控制項](../media/compliance-manager-controls.png)
 
-有三種類型的合規性管理員中， **Microsoft 管理控制措施**，**客戶管理控制措施**和**共用管理控制項**中的控制項
+合規性管理員中有三種類型的控制項、 **Microsoft 管理的控制項**、**客戶管理的控制項**和**共用管理控制項**
 
-### <a name="microsoft-managed-controls"></a>Microsoft 管理控制措施
+### <a name="microsoft-managed-controls"></a>Microsoft 管理的控制項
 
-每個雲端服務，Microsoft 實作及管理 Microsoft 與各種標準與法規的合規性的一部分的一組控制項。 每個控制項提供 Microsoft 如何實作控制項，及如何及何時該實作已測試及驗證由 Microsoft 和/或獨立第三方稽核的詳細資訊。
+針對每個雲端服務，Microsoft 會執行並管理一組控制項，成為 Microsoft 遵循各種標準和法規的一部分。 每個控制項都提供 Microsoft 如何執行控制項的相關詳細資訊，以及該執行的方式和方式，以及由 Microsoft 和/或獨立協力廠商審計員進行測試及驗證的方式和方式。
 
-### <a name="customer-managed-controls"></a>客戶管理控制措施
+### <a name="customer-managed-controls"></a>客戶管理的控制項
 
-這是由您的組織管理控制項的集合。 您的組織負責客戶管理控制項實作特定的標準或法規合規性程序的一部分。 客戶管理控制措施分成控制項系列的對應認證或規定。 使用客戶管理控制措施來實作建議的動作，microsoft 建議您合規性活動的一部分。 您的組織可以使用管理的實作和評估程序，為該控制項，每個客戶管理控制項中的規定指導和建議的客戶動作。
+這是您的組織所管理的控制項集合。 您的組織負責客戶管理的控制執行，做為指定標準或法規的規範程式的一部分。 客戶管理的控制項會組織成對應的認證或法規的控制系列。 使用客戶管理的控制項，以執行 Microsoft 建議的建議動作做為您的合規性活動的一部分。 您的組織可以在每個客戶管理控制項中使用規範性指南和建議的客戶動作，以管理該控制項的實施和評估程式。
 
-客戶管理控制項評估中的也有內建工作流程管理功能，可用於管理與追蹤您向評估完成的進度。 此工作流程功能，您可以進行下列作業：
+評估中的客戶管理控制項也有內建工作流程管理功能，您可以用來管理和追蹤評估完成的進度。 使用此工作流程功能，您可以：
 
-- 指派每個控制項動作項目
-- 追蹤指派動作項目
-- 上傳實作的控制項的辨識項
-- 文件的測試和驗證控制項
-- 動作項目標示為已實作和測試
+- 指派每個控制項的動作專案
+- 追蹤指派的動作專案
+- 上傳控制項的實現證據
+- 記錄控制項的測試及驗證
+- 將交辦事項標示為已執行和測試
 
-例如，法務人員在組織中指派動作項目 IT 系統管理員與責任和執行建議的動作的必要權限。 IT 系統管理員上傳證據的實作工作 （設定] 或 [原則設定的螢幕擷取畫面），並指派動作項目回至法務完成。 法務評估收集的證據、 測試實作的控制項，並記錄合規性管理員中實作日期和測試結果。
+例如，您組織中的合規性監察官會為 IT 管理員指派交辦事項，具有執行建議動作的責任及必要許可權。 IT 系統管理員會上傳執行工作的證據（設定或原則設定的螢幕擷取畫面），並在完成時將交辦事項指派回合規性監察官。 規範監察官會評估收集的證據、測試控制項的實施，並在合規性管理員中記錄執行日期和測試結果。
 
-### <a name="shared-management-controls"></a>共用管理控制
+### <a name="shared-management-controls"></a>共用管理控制項
 
-共用的控制項是指 Microsoft 與客戶共用實作的責任的任意控制項。 例如，過濾的人員、 帳戶及密碼管理和加密相關的控制項需要由 Microsoft 和客戶的動作。
+共用控制項是指任何 Microsoft 和客戶都共用執行責任的控制項。 例如，與個人篩選、帳戶和密碼管理及加密相關的控制項，都需要由 Microsoft 和客戶執行動作。
 
 ## <a name="action-items"></a>動作項目
 
-[動作項目](working-with-compliance-manager.md#controls-and-actions)會包含在客戶管理控制措施，為您可用來管理及追蹤進度評估完成向內建工作流程管理功能的一部分。
+[動作專案](working-with-compliance-manager.md#controls-and-actions)會包含在內建工作流程管理功能的一部分內，以供您用來管理和追蹤評估完成的進度。
 
-您組織中的人員可以使用合規性管理員來檢閱從他們所指派的所有評定的客戶管理控制項。 當使用者登入「合規性管理員」並開啟 [動作項目]**** 儀表板時，會顯示指派給他們的 [動作項目] 清單。 視使用者獲派的合規性管理員角色而定，他們可以提供實作或測試詳細資料、更新狀態，或是指派動作項目。
+您組織中的人員可以使用合規性管理員來從其所指派的所有評估中查看客戶管理的控制項。 當使用者登入「合規性管理員」並開啟 [動作項目]**** 儀表板時，會顯示指派給他們的 [動作項目] 清單。 視使用者獲派的合規性管理員角色而定，他們可以提供實作或測試詳細資料、更新狀態，或是指派動作項目。
 
-憑證控制項通常是由一位人員實作和測試另一個。 例如，最初指派給一位人員實作的動作項目都完成之後，這些動作項目指派給下一個人來測試及上傳證據。 具有足夠的權限控制工作分派的任何使用者可以指派，並重新指派動作項目。 這可讓控制項的工作分派的中央管理，而且分散 implementors 和測試人員之間路由的動作項目。
+認證控制項通常是由一個人實施，並由另一個人測試。 例如，在最初指派給某一人員進行實施時，會將這些動作專案指派給下一個人員，以測試及上傳證據。 任何具有足夠許可權控制指派許可權的使用者都可以指派及重新指派動作專案。 這可讓您集中管理控制項指派，以及在 implementors 與測試人員之間分散的動作專案路由。
 
 ## <a name="permissions"></a>權限
 
-合規性管理員使用以角色為基礎的存取控制權限模型。 只有獲指派使用者角色的使用者才能存取合規性管理員，而每位使用者所允許的動作會受角色類型限制。 [檢視表格](working-with-compliance-manager.md#permissions)顯示每個權限所允許的動作。
+合規性管理員使用以角色為基礎的存取控制權限模型。 只有獲指派使用者角色的使用者才能存取合規性管理員，而每位使用者所允許的動作會受角色類型限制。 [查看](working-with-compliance-manager.md#permissions)顯示每個許可權的允許動作的表格。
 
-入口網站管理員合規性管理員可以設定其他使用者在合規性管理員中的權限，遵循下列步驟：
+合規性管理員的入口網站管理員可以遵循下列步驟，在合規性管理員內設定其他使用者的許可權：
 
-1. 從頂端**多個**下拉式] 功能表中，選取 [**系統**]，然後**設定**]。
-2. 從這裡開始，選取您想要指派，的角色，然後新增您想要指派給該角色的員工。 使用者能執行某些動作。
+1. 從 **[最大**值] 下拉式功能表中，選取 [**管理員**]，然後選取 [**設定**]。
+2. 從這裡，選取您要指派的角色，然後新增您要指派給該角色的員工。 然後，使用者將能夠執行某些動作。
 
-此外，[在 Azure Active Directory (Azure AD) 中的全域讀者角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)所指派的使用者必須存取合規性管理員中的唯讀權限。 不過，他們無法編輯資料，或執行合規性管理員中的任何動作。
+此外，在[Azure Active Directory （AZURE AD）中被指派全域讀卡機角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)的使用者，具有存取合規性管理員的唯讀許可權。 不過，他們無法在合規性管理員內編輯資料或執行任何動作。
 
-不再是預設**的來賓存取**角色。 每個使用者都必須獲指派角色，才能在合規性管理員中存取及作業。
+不再有預設**來賓存取**角色。 每個使用者都必須獲指派角色，才能在合規性管理員中存取及作業。
   
-## <a name="manage-evidence"></a>管理辨識項
+## <a name="manage-evidence"></a>管理證據
 
-合規性管理員中可以儲存的周圍測試您實作工作的辨識項和客戶管理控制措施的驗證。 辨識項包含文件、 試算表、 螢幕擷取畫面，影像、 指令碼、 指令碼輸出檔及其他檔案。 合規性管理員也會自動接收遙測，並建立辨識項記錄的動作項目與安全分數整合。 任何以作為證據到合規性管理員上傳的資料會儲存在美國境內 Microsoft Cloud Storage 網站上。 此資料會複寫跨 Azure 位於東南亞及西歐的區域。
+合規性管理員可以在測試及驗證客戶管理的控制項時，儲存您的執行工作證據。 證據包括檔、試算表、螢幕擷取畫面、圖像、腳本、腳本輸出檔及其他檔案。 合規性管理員也會自動接收遙測，並為與安全分數整合的動作專案建立證據記錄。 任何上傳到合規性管理員的資料，都是儲存在 Microsoft Cloud Storage sites 的美國地區。 此資料會複製到位於東南亞和西歐的 Azure 地區。
 
 ## <a name="templates"></a>範本
 
-合規性管理員評估提供預先設定的[範本](working-with-compliance-manager.md#templates)，並可讓您建立的客戶管理控制您的法務遵循需求的自訂的範本。 新範本所建立的控制項資訊從檔案匯入 Excel，或者您可以從現有範本的複本建立範本。
+合規性管理員提供預先設定的[範本](working-with-compliance-manager.md#templates)進行評估，並可讓您針對符合性需求為客戶管理的控制項建立自訂的範本。 新的範本是透過從 Excel 檔案中匯入控制項資訊來建立，或是您可以從現有範本的複本建立範本。
 
-是包含與合規性管理員中預先設定的範本：
+合規性管理員隨附的預先設定的範本包括：
 
-1. [ISO 27001: 2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+1. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
 2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
 3. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
-4. [NIST 800-53 修訂 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+4. [NIST 800-53 Rev 4](https://go.microsoft.com/fwlink/?linkid=2109075)
 5. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-6. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-7. [雲端安全聯盟 (CSA) 雲端控制項矩陣 (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
-8. [聯邦金融機構檢查委員會 (FFIEC) 的資訊安全性手冊](https://go.microsoft.com/fwlink/?linkid=2109077) 
-9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
-10. [FedRAMP 中度](https://go.microsoft.com/fwlink/?linkid=2108869)
+6. [NIST Cybersecurity Framework （CSF）](https://go.microsoft.com/fwlink/?linkid=2108868)
+7. [雲端安全性同盟（CSA） Cloud Controls 矩陣（CCM）3.0。1](https://go.microsoft.com/fwlink/?linkid=2109076)
+8. [聯邦金融機構檢查委員會（FFIEC）資訊安全性手冊](https://go.microsoft.com/fwlink/?linkid=2109077) 
+9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / 高[科技](https://go.microsoft.com/fwlink/?linkid=2109079)
+10. [FedRAMP 適中](https://go.microsoft.com/fwlink/?linkid=2108869)
 11. [歐盟 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
-12. [加州消費者隱私權法案 (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) （預覽）
-13. [次](https://go.microsoft.com/fwlink/?linkid=2113709) / [澳洲政府 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) （預覽）
-14. [Microsoft 365 的資料保護基準](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+12. [加州消費者隱私權法案（CCPA）](https://go.microsoft.com/fwlink/?linkid=2108871) （預覽）
+13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [澳大利亞政府版 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) （預覽）
+14. [Microsoft 365 資料保護基準](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
 ## <a name="compliance-score"></a>合規性分數
 
-[Microsoft 合規性分數 （預覽）](compliance-score.md)是協助您了解貴組織的合規性狀態 Microsoft 365 合規性中心中的功能。 它會計算測量中完成協助減少資料保護和法規的標準周圍的風險的動作您進行風險分數。 了解整體合規性分數可協助您了解並管理合規性的組織。 了解[您的合規性分數的計算方式](compliance-score-methodology.md)。
+[Microsoft 規範分數（預覽）](compliance-score.md)是 microsoft 365 規範中心中的一項功能，可協助您瞭解組織的合規性狀況。 它會計算以風險為基礎的分數，用以衡量您在完成動作方面的進展，以協助降低資料保護和法規標準的風險。 知道您的整體合規性分數可協助您的組織瞭解和管理法規遵從性。 瞭解[如何計算您的合規性分數](compliance-score-methodology.md)。
   
 > [!IMPORTANT]
-> 合規性分數不 express 與任何特定的標準或法規的組織符合性絕對量值。 它來表示您要採用的個人資料和個人隱私權降低風險的控制項的程度。 您已符合標準或法規，和合規性分數不應該解譯成保證郵件可以以任何方法，可確保沒有任何服務。
+> 合規性分數不會明確組織符合任何特定標準或法規的絕對度量。 它表示您已採用控制的程度，可降低個人資料和個別隱私權的風險。 沒有任何服務可以保證您符合標準或法規，而且合規性分數不應該以任何方式轉譯為保證。
 
 ## <a name="secure-score-integration"></a>安全分數整合
 
-[Microsoft 安全分數](../security/mtp/microsoft-secure-score.md)的同步處理的動作項目，自動將安全分數信用套用至合規性分數被整合合規性管理員。 這是全域，可設定個別的動作項目或所有的動作，並從安全分數提供更新。
+合規性管理員已與[Microsoft 安全評分](../security/mtp/microsoft-secure-score.md)整合，以自動將安全分數信用用於同步處理動作專案的合規性分數。 這可為個別動作專案或全域動作進行設定，並提供安全分數的更新。
 
-例如，您有相關的安全性需求來規範相關動作項目也適用於您組織中啟用 Azure Rights Management。 當 Azure 版權管理為啟動並且處理安全分數時，合規性管理員接收通知的更新，並巨集指令的項目分數會自動更新完成信用。
+例如，您有在組織中啟用 Azure 版權管理的安全相關需求，也適用于與規範相關的動作專案。 當 Azure Rights Management 以安全分數方式啟動並處理時，合規性管理員會收到更新通知，且措施專案的分數會自動更新為完成信用。
 
 ## <a name="ready-to-get-started"></a>準備好開始使用了嗎？
 
-開始[使用與合規性管理員](working-with-compliance-manager.md)管理組織的法規合規性活動。
+開始[使用合規性管理員](working-with-compliance-manager.md)來管理組織的法規遵從性活動。
 
 ## <a name="resources"></a>資源
 
-- [互動式指南： 評估和增強資料保護控制項與合規性管理員](https://content.cloudguides.com/guides/Compliance%20Manager)
-- [Microsoft 安全性、 隱私權和規範技術社群](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/ct-p/SecurityPrivacyCompliance)
+- [互動式指南：使用合規性管理員評估及增強您的資料保護控制](https://content.cloudguides.com/guides/Compliance%20Manager)
+- [Microsoft 安全性、隱私權和規範技術社區](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/ct-p/SecurityPrivacyCompliance)

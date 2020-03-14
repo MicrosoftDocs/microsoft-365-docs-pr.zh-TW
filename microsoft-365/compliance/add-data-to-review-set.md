@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: 新增與高級 eDiscovery 案例相關的搜尋結果。 從原始位置複製專案，並將其複製到 Microsoft 提供的 Azure 儲存位置。 專案也會重新編制索引，而高級 eDiscovery 將會在圖像檔案上執行光學字元辨識（OCR），並上傳圖像文本以供複查和分析。
 ms.openlocfilehash: 5e4eaa5e83bbca3a80abe0026f3880ce8d3c85c4
-ms.sourcegitcommit: 0b2c41dad19da5f0513097c36a4ff32a5868836c
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42588816"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634561"
 ---
 # <a name="add-search-results-to-a-review-set"></a>將搜尋結果新增至檢閱集
 

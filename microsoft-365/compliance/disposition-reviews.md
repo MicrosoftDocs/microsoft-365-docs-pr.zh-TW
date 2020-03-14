@@ -1,7 +1,9 @@
 ---
-title: 处置审查概述
-ms.author: stephow
-author: stephow-MSFT
+title: 進行處置檢查的概覽
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -13,123 +15,131 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 创建在 Microsoft 365 中保留内容的保留标签时，可以选择在保留期结束时触发处置审核。
-ms.openlocfilehash: 22079fc92cabc902cd7afee7e187b7e186aa2328
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 當您建立保留標籤以保留 Microsoft 365 中的內容時，您可以選擇在保留期間結束時觸發處置檢查。
+ms.openlocfilehash: ee9ea34ee8527558af4d249364b539d3fa1f2fdd
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076328"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634971"
 ---
-# <a name="overview-of-disposition-reviews"></a>处置审查概述
+# <a name="overview-of-disposition-reviews"></a>進行處置檢查的概覽
 
-当内容达到其保留期结束时，您可能需要查看该内容以决定是否可以安全地删除（"已释放"）的原因有多种。 例如，您可能需要：
+當內容到達保留期間結束時，可能會有幾個原因會讓您複查內容，以決定是否可以安全地刪除（「已處置」）。 例如，您可能需要：
   
-- 在发生诉讼或审计时，暂停删除（"处置"）相关内容。
+- 在訴訟或審計事件中，封存相關內容的刪除（「處置」）。
     
-- 如果内容具有研究或历史价值，请从处置列表中删除以将其存储在存档中的内容。
+- 若內容有調研或歷史值，請將內容從處置清單中移除儲存在封存中。
     
-- 如果原始策略是临时或临时解决方案，则为内容分配不同的保留期。
+- 若原始原則為暫存檔或臨時方案，請為內容指派不同的保留期間。
     
-- 将内容返回给客户端或将其传输到其他组织。
+- 將內容傳回給用戶端或轉接至另一個組織。
     
-当您在 Microsoft 365 合规性中心、Microsoft 365 安全中心或 Office 365 安全&合规性中心创建保留标签时，可以选择在保留期结束时触发处置审核。 在处置审查中：
+當您在 Microsoft 365 規範中心、Microsoft 365 安全性中心或 Office 365 安全性 & 合規性中心建立保留標籤時，您可以選擇在保留期間結束時觸發處置檢查。 在處置評審中：
   
-- 您选择的人员会收到一封电子邮件通知，告知他们具有要查看的内容。 这些审阅者可以是单个用户、分发或安全组，也可以是 Office 365 组。 请注意，通知每周发送一次。
+- 您選擇的人員會收到電子郵件通知，告知他們具有要審閱的內容。 請注意，每週會傳送通知。
     
-- 审阅者转到安全&amp;合规性**中心的"处置"** 页以审阅内容。 审阅者可以看到每个保留标签等待处置的项目数，然后选择保留标签以查看带有该标签的所有内容。
+- 檢閱者會移至**Disposition**安全性&amp;與合規性中心的「處置」頁面，以查看內容。 檢閱者可以查看每個保留標籤的專案數目等候處理，然後選取保留標籤以查看具有該標籤的所有內容。
     
-- 对于每份文档或电子邮件，审阅者可以：
+- 對於每個檔或電子郵件，檢閱者可以：
     
-  - 应用其他保留标签。
+  - 套用其他保留標籤。
     
-  - 延长其保留期。
+  - 延長保留期間。
     
-  - 永久删除它。
+  - 永久刪除它。
     
-- 审阅者可以查看挂起或已完成的处置，并将该列表导出为 .csv 文件。
+- 檢閱者可以查看擱置中或已完成的處理，並將該清單匯出為 .csv 檔案。
 
 > [!NOTE]
-> 处置审核需要 Office 365 企业版 E5 订阅。
+> 處置評審需要 Office 365 企業版 E5 訂閱。
   
-处置审核可以包括 Exchange 邮箱、SharePoint 网站、OneDrive 帐户和 Office 365 组中的内容。 只有在审阅者选择永久删除内容后，才会删除这些位置等待处置审核的内容。
+處置評審可將內容包含在 Exchange 信箱、SharePoint 網站、OneDrive 帳戶和 Office 365 群組中。 只有在檢閱者選擇永久刪除內容之後，才會刪除等候在這些位置中進行處置檢查的內容。
   
-![安全和合规中心中的处置页面](media/Retention-Dispositions-v2-page.png)
+![安全性與合規性中心中的「處置」頁面](../media/Retention-Dispositions-v2-page.png)
 
-## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>通过创建保留标签设置处置审核
 
-这是设置处置审核的基本工作流。 请注意，此流显示正在发布并由用户手动应用的保留标签;因此，将发布保留标签。或者，可以自动将触发处置审核的保留标签应用于内容。
-  
-![显示处置流程流程的图表](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
-  
-在 Office 365 中创建保留标签时，处置审核是一个选项。 请注意，此选项在保留策略中不可用，但仅在配置为保留内容的保留标签中可用。
-  
-有关保留标签的详细信息，请参阅[保留标签概述](labels.md)。
-  
-![标签的保留设置](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
-  
-## <a name="disposing-content"></a>释放内容
+## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>建立保留標籤來設定處置評審
 
-当审阅者通过电子邮件收到内容已准备好审阅的通知时，他们可以转到安全&amp;合规性**中心的"处置"** 页。 审阅者可以看到每个保留标签等待处置的项目数，然后选择保留标签以查看带有该标签的所有内容。
-
-选择保留标签后，下一页将显示该标签的所有待处理项。
-
-![处置选项](media/Retention-Disposition-options-v2.png)
-
-然后，审阅者可以： 
+這是設定處置評審的基本工作流程。 請注意，此流程會顯示已發佈的保留標籤，然後由使用者手動套用;另外，也可以將觸發處置檢查的保留標籤自動套用至內容。
   
-- 应用其他保留标签。
+![顯示處置運作方式之流程的圖表](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+  
+當您在 Office 365 中建立保留標籤時，會有一個選項可供進行處置檢查。 在保留原則中無法使用此選項，只是設定為保留內容的保留標籤。
+  
+如需保留標籤的詳細資訊，請參閱[保留標籤](labels.md)。
+  
+![標籤的保留設定](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
+ 
+> [!NOTE]
+> 當您指定選項時，**當專案準備好可供複查時通知人員**，請指定使用者。 此選項不支援 Office 365 群組。
+
+## <a name="disposing-content"></a>處置內容
+
+當檢閱者透過電子郵件通知出內容可供審閱時，他們可以前往安全性&amp;與合規性中心的「**處置**」頁面。 檢閱者可以查看每個保留標籤的專案數目等候處理，然後選取保留標籤以查看具有該標籤的所有內容。
+
+在您選取保留標籤之後，下一個頁面會顯示該標籤的所有擱置的可處置。
+
+![處置選項](../media/Retention-Disposition-options-v2.png)
+
+然後，檢閱者可以： 
+  
+- 套用其他保留標籤。
     
-- 延长保留期。
+- 擴充保留期間。
     
-- 永久删除该项目。
+- 永久刪除專案。
 
-请注意，审阅者可以选择多个项目并同时释放它们。
+請注意，檢閱者可以選取多個專案並同時加以處置。
     
-如果审阅者具有该位置的权限，则审阅者还可以使用该链接在其原始位置查看文档。 在处置审核期间，内容永远不会从其原始位置移动，并且直到审阅者选择这样做才会删除。
+如果檢閱者具有該位置的許可權，則檢閱者也可以使用連結來查看其原始位置的檔。 在處置檢查期間，內容永遠不會從其原始位置移動，永遠不會刪除，除非檢閱者選擇這麼做。
   
-请注意，电子邮件通知每周自动发送给审阅者。 因此，当内容达到其保留期结束时，审阅者最多可能需要 7 天才能收到内容正在等待处置的电子邮件通知。
+請注意，電子郵件通知會以每週為單位自動傳送給檢閱者。 因此，當內容到達保留期間結束時，最多可能需要7天的時間，檢閱者收到內容正等待處置的電子郵件通知。
   
-另请注意，所有处置操作都经过审核。 为了确保这一点，您必须在第一次处置操作之前至少一天打开审核 - 有关详细信息，请参阅[在 Office 365&amp;安全合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。 
+另外請注意，所有的處理動作都會經過審核。 為了確保這一點，您必須在第一次處理動作之前至少開啟一天的審計-如需詳細資訊，請參閱[Search the audit log In Office &amp; 365 Security 規章遵循中心](search-the-audit-log-in-security-and-compliance.md)。 
   
-## <a name="permissions-for-disposition"></a>处置权限
+## <a name="permissions-for-disposition"></a>進行處置的許可權
 
-要**访问"处置"** 页，审阅者**必须是"处置管理"** 角色**和"仅查看审核日志"** 角色的成员。 我们建议创建一个名为"处置审阅者"的新角色组，将这两个角色添加到该角色组，然后将成员添加到角色组。 
-  
-有关详细信息，请参阅[向用户授予对 Office 365 安全&amp;合规性中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
-  
-## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>永久删除已释放内容的时间
+若要存取「**部署**」頁面，必須將「**處置管理**」角色和「 **View-Only 審計記錄**」角色指派給檢閱者。 [查看](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)指派角色的指示。
 
-只有在审阅者选择永久删除内容后，才会删除等待处置审核的内容。 当审阅者选择此选项时，SharePoint 网站或 OneDrive 帐户中的内容将有资格享受本节中描述的标准清理过程：[保留策略如何处理内容。](retention-policies.md#how-a-retention-policy-works-with-content-in-place)
-  
-这意味着：
-  
-- 文档库中的内容将在处置后的**7 天内**移动到第一阶段回收站，然后在**93 天后**永久删除。 回收站不按搜索编制索引，因此其内容不适用于电子数据展示保留。
+特定于**View-Only 的審計記錄**角色：
 
-- 保留保留库中的内容将在处置后的**7 天内**永久删除。
+- 因為用於搜尋審核記錄的基準指令程式是 Exchange Online Cmdlet，所以您必須使用[Exchange online 中的 exchange 系統管理中心](https://docs.microsoft.com/Exchange/exchange-admin-center)，而不是使用安全性 & 規範中心中的 [**許可權**] 頁面，指派此角色的使用者。 如需相關指示，請參閱[Manage role groups In Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
 
-- 交换邮箱中的项目将在处置后的**14 天内**永久删除。 （请注意，14 天是默认设置，但最多可配置 30 天。
+- 此角色不支援 Office 365 群組。 請改為指派使用者信箱或郵件使用者。
+  
+## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>永久刪除處置內容之前的時間
+
+只有在檢閱者選擇永久刪除內容之後，才會刪除等候進行處置檢查的內容。 當檢閱者選擇此選項時，SharePoint 網站或 OneDrive 帳戶中的內容會符合本節所述的標準清理程式：[保留原則如何使用內容就地運作](retention-policies.md#how-a-retention-policy-works-with-content-in-place)。
+  
+這表示：
+  
+- 文件庫中的內容將會移到第一階段回收站中的**7 天內**，然後在該範圍後永久刪除**93 天**。 回收站不是由搜尋編制索引，因此其內容無法用於 eDiscovery 暫止保留。
+
+- 在處理的**7 天內**，將會永久刪除保留的保留文件庫中的內容。
+
+- Exchange 信箱中的專案會在處理的**14 天內**永久刪除。 （請注意，預設設定為14天，但可以設定為30天。）
     
-## <a name="view-pending-dispositions-and-disposed-items"></a>查看待处理处置和已处置项目
+## <a name="view-pending-dispositions-and-disposed-items"></a>查看暫止的處理及已釋放的專案
 
-在"**待处理处置"** 页上，您可以查看特定保留标签的待处理和已完成处置： 
+在 [**暫**止的處理] 頁面上，您可以查看特定保留標籤的擱置和完成的處理方式： 
   
-- **待处理显示**已达到其保留期末尾且需要处置审核的项目。 查看每个项目后，决定是否要对其应用不同的保留标签、延长其保留期或永久删除它。 您可以选择多个项目。
+- **擱置的處理**會顯示已到達保留期間結束並需要進行處置評審的專案。 檢查每個專案之後，決定是否要將不同的保留標籤套用至該專案、擴充保留期間或永久刪除。 您可以選取多個專案。
     
-- "**已处置项目"** 选项卡显示处置在处置审核期间已批准删除，目前正在永久删除的过程中。 应用了不同的保留标签或延长其保留期作为审核的一部分的项目不会在此处显示。
+- [已**釋放的專案**] 索引標籤會顯示已透過處置檢查的永久刪除專案。 它們會顯示在這裡，因為永久刪除程式可能需要數天的時間，如上一節所述。 套用不同保留標籤的專案，或將其保留期間擴充為審閱的一部分，不會出現在這裡。
 
-![处置选项卡](media/Retention-Disposition-tabs.png)
+![處置索引標籤](../media/Retention-Disposition-tabs.png)
     
-### <a name="filter-the-disposition-views"></a>筛选处置视图
+### <a name="filter-the-disposition-views"></a>篩選處置視圖
 
-您可以按保留标签或时间范围筛选这些视图。 对于待处理，时间范围基于到期日期。 对于已处置的项目，时间范围基于删除日期。
+您可以依保留標籤或時間範圍來篩選這些視圖。 針對暫止的處理，時間範圍是以到期日為基礎。 若為已處置的專案，時間範圍會根據刪除日期。
   
-![处置过滤器选项](media/Retention-filter-options.png)
+![處置篩選選項](../media/Retention-filter-options.png)
 
-### <a name="export-the-disposition-items"></a>导出处置项目
+### <a name="export-the-disposition-items"></a>匯出處置專案
 
-此外，您可以将任一视图中的项目导出为可在 Excel 中打开的 .csv 文件。
+此外，您可以將其中一個視圖中的專案匯出為您可以在 Excel 中開啟的 .csv 檔案。
   
-![Excel 中导出的处置数据](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
+![在 Excel 中匯出的處置資料](../media/08e3bc09-b132-47b4-a051-a590b697e725.png)
   
 

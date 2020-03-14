@@ -1,5 +1,5 @@
 ---
-title: 自動調查及回應 Office 365 中的威脅
+title: Office 365 中的自動化調查和回應（AIR）
 keywords: AIR, autoIR, ATP, 自動化, 調查, 回應, 修正, 威脅, 進階, 威脅, 保護
 f1.keywords:
 - NOCSH
@@ -15,109 +15,63 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 開始使用 Office 365 進階威脅防護方案 2 中的自動化調查及回應功能
-ms.openlocfilehash: d45141ce671a4615cb4fd550e36bc7215cd38d51
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: air
+ms.openlocfilehash: c06874ea5d55334d9049d6c5d9d5c55a499dae06
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088312"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634021"
 ---
-# <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>自動調查及回應 Office 365 中的威脅
+# <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自動化調查和回應（AIR）
 
-## <a name="overview"></a>概觀
+[Office 365 高級威脅防護](office-365-atp.md)方案2包含強大的自動化調查和回應（空氣）功能，可儲存您的安全性運作小組時間和工作。 觸發特定警示時，會啟動一或多個安全性行動手冊，並且自動調查過程開始。 這可讓您的安全性運作小組專注于高優先順序的工作，而不會失去所觸發之警示的視線。 
 
-視您的訂閱而定，[Office 365 進階威脅防護](office-365-atp.md)可以包括自動化調查和回應 (AIR) 功能，可節省您的安全性作業小組時間和處理警示和威脅的精力。
+## <a name="the-overall-flow-of-air"></a>空氣的整體流動
 
-- 若要開始使用 Office 365 中的自動化調查及回應功能，請使用本文章。 
-- 若要取得其運作方式的概觀，請參閱 [Office 365 中的自動化調查及回應](automated-investigation-response-office.md)。
+會觸發警示，並會啟動安全性行動手冊，以啟動自動調查。 或者，安全性分析員會在使用威脅瀏覽器時觸發自動調查。 自動調查會執行，通常會識別某些修正動作。 這些動作會透過安全性作業小組進行審閱和核准，而且調查完成。 
 
-> [!TIP]
-> 您有 Microsoft 365 E5 或 Microsoft 365 E3 以及身分識別與威脅防護產品？ 考量嘗試 [Microsoft 威脅防護中的自動化調查及回應 (AIR)](../mtp/mtp-autoir.md)
+下表逐步逐步整個氣流流程：
 
-使用自動化調查及回應功能，當觸發特定警示時，會起始一或多個安全性劇本，並且開始自動化調查程序。 在自動化調查程序期間及之後，您的安全性小組可以執行下列動作：
-
-- [檢視調查的詳細資料](#view-details-of-an-investigation)
-- [根據調查的結果檢閱和核准動作](#review-and-approve-actions) 
-- [檢視與調查相關警示的詳細資料](#view-details-about-an-alert-related-to-an-investigation)
-
-> [!IMPORTANT]
-> 若要執行本文所述的工作，您必須獲指派適當的權限。 請參閱[使用 AIR 功能所需的權限](automated-investigation-response-office.md#required-permissions-to-use-air-capabilities)。
-
-## <a name="view-details-of-an-investigation"></a>檢視調查的詳細資料
-
-1. 移至 [https://protection.office.com](https://protection.office.com) 並登入。 這樣會帶您前往安全性與合規性中心。
-
-2. 執行下列其中一項動作：
-
-    - 移至 [威脅管理]****  >  [儀表板]**** 這樣會帶您前往[安全性儀表板](security-dashboard.md)。 您的 AIR 小工具會顯示在[安全性儀表板](security-dashboard.md)上方。 選取小工具，例如**調查摘要**。
-
-    - 移至 [威脅管理]****  >  [調查]****。 
-
-    這兩種方法都會帶您前往調查清單。
-
-    ![AIR 的主要調查頁面](../../media/air-maininvestigationpage.png) 
-
-3. 在調查清單中，選取 [識別碼]**** 欄中的項目。 這樣會開啟調查詳細資料頁面，從檢視中的調查圖形開始。
-
-    ![AIR 調查圖形頁面](../../media/air-investigationgraphpage.png)
-
-4. 使用各個索引標籤深入了解調查。
-
-## <a name="review-and-approve-actions"></a>檢閱和核准動作
-
-在 Office 365 中，自動化調查通常會導致一或多個建議的動作。 不過，在安全性操作小組核准之前，不會採取任何動作。 使用下列程序來檢閱和核准動作。
-
-1. 移至 [https://protection.office.com](https://protection.office.com) 並登入。 
-
-2. 移至 [威脅管理]****  >  [調查]****。
-
-3. 在調查清單中，選取 [識別碼]**** 欄中的項目。 
-
-3. 在調查詳細資料檢視上，選取 [動作]**** 索引標籤。以下列出等候核准的任何動作。
-
-4. 選取清單中的項目。
-
-5. 選取 [核准]**** 以採取建議的動作 (或選取 [拒絕]**** 關閉調查而不採取動作)。
-
-## <a name="view-details-about-an-alert-related-to-an-investigation"></a>檢視與調查相關警示的詳細資料
-
-某些類型的警示會在 Office 365 中觸發自動化調查。 若要深入了解，請參閱[警示](automated-investigation-response-office.md#alerts)。 使用下列程序來檢視與自動化調查相關聯警示的詳細資料。
-
-1. 移至 [https://protection.office.com](https://protection.office.com) 並登入。 這樣會帶您前往安全性與合規性中心。
-
-2. 移至 [威脅管理]****  >  [調查]****。
-
-3. 在調查清單中，選取 [識別碼]**** 欄中的項目。 
-
-4. 開啟調查詳細資料時，選取 [警示]**** 索引標籤。觸發調查的任何警示都會列在此處。
-
-5. 選取清單中的項目。 隨即開啟一個飛出視窗，其中包含警示的詳細資料以及其他資訊和動作的連結。
-
-6. 檢閱飛出視窗中的資訊，並視特定警示採取動作，例如**解決**、**隱藏**，或**通知使用者**。 
-
-    - **解決**等同於關閉警示
-    
-    - **隱藏**會導致原則在指定時段不觸發警示
-    
-    - **通知使用者**會啟動電子郵件，並且已輸入使用者的電子郵件地址，讓您的安全性操作小組輸入要給這些使用者的訊息。 (這類似於使用[威脅總管](threat-explorer.md)將訊息傳送給收件者。)  
-
-## <a name="use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>針對自訂或第三方報告解決方案使用 Office 365 管理活動 API
-
-如果貴組織使用自訂或第三方報告解決方案，您可以使用 Office 365 管理活動 API 來檢視該解決方案中自動化調查的資訊。
-
-使用下列資源進行設定：
-
-|資源  |描述  |
+|步驟  |會發生什麼事  |
 |---------|---------|
-|[Office 365 Management API 概觀](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview) (英文)     |Office 365 管理活動 API 提供 Office 365 和 Azure Active Directory 活動記錄中各種使用者、系統管理員、系統和原則動作及事件的相關資訊。         |
-|[開始使用 Office 365 管理 API](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis) (英文)     |Office 365 管理 API 使用 Azure AD 來為您的應用程式提供驗證服務，以存取 Office 365 資料。 請依照本文中的步驟進行設定。          |
-|[Office 365 管理活動 API 參考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) (英文)     |您可以使用 Office 365 管理活動 API，從 Office 365 和 Azure AD 活動記錄中擷取使用者、系統管理員、系統和原則動作及事件的相關資訊。 請閱讀本文以深入了解其運作方式。        |
-|[Office 365 管理活動 API 架構](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema) (英文)     |取得[常見架構](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) (英文) 和 [Office 365 ATP 和威脅調查和回應架構](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (英文) 的概觀，以深入了解 Office 365 管理活動 API 中可用的特定類型資料。         |
+|1      |由 Office 事件觸發的警示和[安全性行動手冊](automated-investigation-response-office.md#security-playbooks)會為選取的提醒開始自動調查。 <br/><br/>或者，安全性分析員可以在使用[威脅瀏覽器](threat-explorer.md)時[觸發自動調查](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。        |
+|2      |當自動調查執行時，它會收集有關電子郵件和與該電子郵件相關之實體的其他資料–檔案、URLs 及收件者。  調查的範圍可能會增加，因為會觸發新的相關警示。         |
+|3      |在自動調查的期間和之後，都可以查看[詳細資料和結果](air-view-investigation-results.md)。 結果包括可以採取以回應和修正任何找到之威脅的[建議動作](air-remediation-actions.md)。 此外，也可以使用[行動手冊記錄](air-view-investigation-results.md#playbook-log)來追蹤所有調查活動。<br/><br/>如果您的組織使用自訂報告解決方案或協力廠商解決方案，您可以[使用 Office 365 管理活動 API](air-custom-reporting.md)來查看有關自動化調查和威脅的資訊。         |
+|4      |您的安全性運作小組會檢查[調查結果和建議](air-view-investigation-results.md)，並[核准修正動作](air-remediation-actions.md#approve-or-reject-pending-actions)。 在 Office 365 中，不會自動採取任何動作。 只有組織的安全小組核准時，才會採取補救措施。         |
 
-## <a name="next-steps"></a>後續步驟
+在自動化調查程序期間及之後，您的安全性小組可以執行下列動作：
 
-- [了解如何取得 AIR 及查看所需權限](automated-investigation-response-office.md#how-to-get-air)
-- [深入了解警示](../../compliance/alert-policies.md)
-- [手動尋找並調查在 Office 365 中傳送的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)
-- [了解 Microsoft Defender ATP 中的 AIR](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) (部分機器翻譯)
-- [造訪 Microsoft 365 藍圖，查看即將推出的功能](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [檢視與調查相關警示的詳細資料](air-view-investigation-results.md#view-details-about-an-alert-related-to-an-investigation)
+- [查看調查的結果詳細資料](air-view-investigation-results.md#view-details-of-an-investigation)
+- [根據調查的結果檢閱和核准動作](air-remediation-actions.md#approve-or-reject-pending-actions)
+
+若要深入瞭解，請參閱[AIR 的運作方式](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)。
+
+## <a name="how-to-get-air"></a>如何取得空中
+
+Office 365 AIR 現在包含在以下訂閱中：
+
+- Microsoft 365 E5
+- Office 365 E5
+- Microsoft 威脅防護
+- Office 365 進階威脅防護方案 2
+
+如果您沒有上述任何訂閱，請[啟動免費試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US)。
+
+若要深入瞭解功能可用性，請流覽[各種高級威脅防護（ATP）方案中的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+
+## <a name="required-permissions-to-use-air-capabilities"></a>使用 AIR 功能所需的許可權
+
+許可權是透過特定角色授與的，如下表所述： 
+
+|工作 |需要角色 |
+|--|--|
+|設定 AIR 功能 |下列其中一個角色： <br/>- **全域管理員**<br/>- **安全性管理員** <br/>您可以在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)或[Office 365 Security & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)指派這些角色。 |
+|核准或拒絕建議的動作|在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)或[Office 365 Security & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)中指派的下列其中一個角色：<br/>- **全域管理員** <br/>- **安全性管理員**<br/>- **安全性讀取器** <br/>--- 且 ---<br/>- **搜尋和清除**（此角色只會指派在[Office 365 安全性 & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。 您可能需要建立新的角色群組，並將搜尋和清除角色新增至該新的角色群組。）
+
+## <a name="related-articles"></a>相關文章
+
+- [Microsoft 威脅防護的自動化調查及回應](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+
+- [Microsoft Defender 高級威脅防護中的自動化調查和修復](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)

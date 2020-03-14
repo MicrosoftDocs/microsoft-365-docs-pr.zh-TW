@@ -1,7 +1,7 @@
 ---
 title: Microsoft 安全分數
-description: 說明 Microsoft 安全分數 Microsoft 365 安全性中心、 詳細資料的計算方式，以及安全性系統管理員可以預期。
-keywords: 安全性、 惡意程式碼、 Microsoft 365、 M365，安全分數資訊安全中心、 改進動作
+description: 說明 microsoft 365 security center 中的 Microsoft Secure 得分、如何計算詳細資料，以及安全性管理員可以預期的情況。
+keywords: 安全性、惡意程式碼、Microsoft 365、M365、安全分數、安全性中心、改進動作
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -17,206 +17,206 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b19c48161d5d0f43c2beb207dd0ee2db8bfb1470
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: ea91fc29a0fa768113ff3ca8d8129a0ee56ab5f5
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372021"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633991"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
-Microsoft 安全分數是具有較高的數字，表示所採取的多個改進動作的組織的安全性狀態，度量單位。 下列建議的安全分數可以防止潛在威脅組織。 從 Microsoft 365 安全性中心集中式儀表板，組織可以監視，並在其 Microsoft 365 身分識別、 資料、 app、 裝置和基礎結構的安全性上運作。
+Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目，表示執行的改善動作越多。 遵循安全性分數建議可保護您的組織免受威脅。 透過 Microsoft 365 security center 中的集中式儀表板，組織可以監視及處理其 Microsoft 365 身分識別、資料、應用程式、裝置和基礎結構的安全性。
 
-安全分數可幫助組織：
+安全分數可協助組織：
 
-* 在組織的安全性狀態的目前狀態報告。
-* 提供可測知性、 可見性、 指導以及控制項，以提高其安全性狀態。  
-* 比較基準，並建立關鍵效能指標 (Kpi)。
+* 報告組織安全狀況的目前狀態。
+* 提供探索性、可見度、指導方針和控制，以提升安全性狀況。  
+* 與基準進行比較，並建立關鍵效能指標（KPIs）。
 
-組織存取的評量和趨勢，與其他 Microsoft 產品整合、 分數比較與類似的組織，以及執行更多功能強大的視覺效果。 分數也可反映協力廠商解決方案時解決建議的動作。
+組織可以存取穩定的衡量方式和趨勢、與其他 Microsoft 產品的整合、與類似組織的分數比較，以及更多。 分數也可以反映協力廠商的解決方案如何解決建議的動作。
 
-此外，您可以存取您的建議，以及分數透過[Microsoft Graph API](https://www.microsoft.com/security/partnerships/graph-security-api)。 了解[安全分數資源類型](https://go.microsoft.com/fwlink/?linkid=2092996)。
+此外，您可以透過[Microsoft GRAPH API](https://www.microsoft.com/security/partnerships/graph-security-api)來存取您的建議和評分。 深入瞭解[安全分數資源類型](https://go.microsoft.com/fwlink/?linkid=2092996)。
 
 ## <a name="how-it-works"></a>運作方式
 
-您所設定的特定點建議的安全性功能，執行與安全性相關的工作 （例如檢視報表），或解決與協力廠商應用程式或軟體的改進巨集指令。 一些改進動作只提供點完全完成時，和某些授與部分點為單位，如果他們使用某些裝置或使用者完成。
+您可以在設定建議的安全性功能、執行安全性相關工作（如查看報告），或使用協力廠商應用程式或軟體解決改進動作的情況下，取得點數。 有些改進動作只會在完全完成時給予點，有些的動作會在某些裝置或使用者完成時提供部分分數。
 
-我們示範整組可能的改進功能，無論授權，因此您可以了解安全性最佳做法，並改善您的分數。 安全分數，無論哪項產品授權您的組織相同擁有哪些保持代表您的絕對的安全性狀態。 請記住，應取得平衡安全性與可用性，並不是每個建議才能為您的環境。
+不管授權為何，我們都會向您顯示一組完整的可能改進功能，讓您瞭解安全性的最佳作法，並提升您的分數。 您的絕對安全性狀態是以安全分數表示，不論貴組織擁有的產品授權為何都會保持不變。 請記住，安全性應該與可用性進行平衡，而不是每個建議都適用于您的環境。
 
-您的分數會更新以反映視覺效果和改進動作頁面中所呈現的資訊的即時。 安全分數也每天同步處理以接收關於每個動作您達成點為單位的系統資料。
+您的分數會即時更新，以反映 [視覺化效果] 和 [改進動作] 頁面中顯示的資訊。 安全分數也會每天同步處理每個動作的取得點數的系統資料。
 
-### <a name="how-improvement-actions-are-scored"></a>如何改進動作，就會獲得
+### <a name="how-improvement-actions-are-scored"></a>如何計分改進動作
 
-二進位的方式，就會獲得最-如果您實作的改進巨集指令，如建立新的原則，或開啟的特定設定，您會收到的資料點的 100%。 其他改進的動作，點都指定的百分比的總組態。 例如，如果改進巨集指令會指出您取得 30 點保護您的所有使用者以多重要素驗證和您只需要 100 個受保護的總使用者 5，會提供您大約 2 點的部分分數 (受保護的 5 / 100 總 * 30 的最大點數 = 2 點數部分分數)。
+大多數會以二進位方式計分：若您執行改進動作（如建立新原則或開啟特定設定），您會收到100% 的點數。 在其他改進動作中，點會指定為總設定的百分比。 例如，如果改進的動作指出您使用多重要素驗證來保護所有使用者時取得30點，而且您只會保護 100 5% 以上的使用者，則會得到大約2點的部分分數（5個 protected/100 總計 * 30 最大值 = 2 pt 部分分數）。
 
 ### <a name="products-included-in-secure-score"></a>安全分數中包含的產品
 
-目前有 Office 365 （包括 SharePoint Online、 Exchange Online、 OneDrive for Business、 Microsoft 資訊保護和更多），建議 Azure AD 和 Cloud App Security。 建議的其他安全性產品，例如 Azure ATP 和 Microsoft Defender ATP 即將推出。 建議將涵蓋每個產品相關聯的所有受攻擊面，但它們是不錯的比較基準。 您也可以將標示改進動作為所涵蓋的協力廠商。
+目前有 Office 365 的建議（包括 SharePoint Online、Exchange Online、商務 OneDrive、Microsoft 資訊保護等等）、Azure AD 和 Cloud App Security。 即將推出其他安全性產品（如 Azure ATP 和 Microsoft Defender ATP）的建議。 建議不會涵蓋與各項產品相關聯的所有攻擊面，但也是一個很好的基準。 您也可以將改進動作標示為協力廠商所涵蓋的範圍。
 
 ## <a name="required-permissions"></a>必要的權限
 
-若要存取 Microsoft 安全分數的權限，您必須獲指派其中一個 Azure Active Directory 中的下列角色。
+若要具有存取 Microsoft Secure 得分的許可權，您必須在 Azure Active Directory 中為下列其中一個角色指派。
 
 ### <a name="read-and-write-roles"></a>讀取和寫入角色
 
-讀取與寫入權限，您可以進行的變更，並直接互動安全分數。 您也可以指派給其他使用者的唯讀權限。
+透過讀取和寫入權限，您可以進行變更，並直接與安全分數互動。 您也可以將唯讀許可權指派給其他使用者。
 
 * 全域管理員
 * 安全性系統管理員
 * Exchange 系統管理員
 * SharePoint 系統管理員
 
-### <a name="read-only-roles"></a>唯讀的角色
+### <a name="read-only-roles"></a>唯讀角色
 
-具有唯讀存取權，您不能編輯狀態] 或 [備忘稿改進巨集指令、 編輯分數區域，或編輯自訂比較。
+若具有唯讀許可權，您就無法編輯 [改進動作]、[編輯計分區域] 或 [編輯自訂比較] 的狀態或附注。
 
-* 服務台管理員
+* 説明台管理員
 * 使用者管理員
 * 服務管理員
 * 安全性讀取者
 * 安全性操作員
 * 全域讀取者
 
-### <a name="graph-api"></a>Graph API
+### <a name="graph-api"></a>圖形 API
 
-若要存取 Graph API，您需要有下列其中一個角色除了下列範圍：
+若要存取 Graph API，除了 role 之外，您還必須具有下列其中一個範圍：
 
-* SecurityEvents.Read.All （適用於唯讀角色）
-* SecurityEvents.ReadWrite.All (針對讀取和寫入角色)
+* SecurityEvents Read。 All （唯讀角色）
+* ReadWrite SecurityEvents （適用于讀取和寫入角色）
 
-## <a name="gain-visibility-into-your-security-posture"></a>取得您的安全性狀態的可視性
+## <a name="gain-visibility-into-your-security-posture"></a>深入瞭解您的安全性狀況
 
-為了協助您更快速地需要的資訊，Microsoft 改進動作會組織成群組：
+為了協助您更快速地取得所需資訊，Microsoft 改進的動作會組織成群組：
 
-* 身分識別 （Azure AD 帳戶 & 角色與 Azure ATP 即將推出）
-* 資料 (Microsoft Information Protection)
-* 裝置 （Microsoft Defender ATP 裝置，即將推出）
-* 應用程式 （電子郵件和雲端應用程式，包括 Office 365 和 Microsoft Cloud App Security）
-* 基礎結構 （Azure 的資源）
+* Identity （Azure AD 帳戶 & 角色）
+* 資料（Microsoft 資訊保護）
+* 裝置（現在沒有任何改進動作）
+* 應用程式（電子郵件和雲端應用程式，包括 Office 365 和 Microsoft Cloud App Security）
+* 基礎結構（現在沒有任何改進動作）
 
-在 [Microsoft 安全分數概觀] 頁面中，您可以看到點分割的方式這些群組與何種點可用之間。 [概觀] 頁面上也是以取得總分基準比較，與您安全分數的歷史趨勢的全面檢視的位置，並可以採取來改善您的分數的改進動作的優先順序。
+在 [Microsoft Secure 得分一覽] 頁面中，您可以看到各群組之間的點數如何分割，以及哪些點可供使用。 [一覽表] 頁面也是取得整體總分、您的安全分數與基準比較之歷史趨勢的完整視圖，以及可以採取以改善評分的優先改進動作的位置。
 
-![安全分數首頁](../../media/secure-score/homepage-original.png)
-*圖 1: Microsoft 安全分數概觀] 頁面上*
+![安全分數主頁](../../media/secure-score/homepage-original.png)
+*圖1： Microsoft Secure 得分一覽頁面*
 
-## <a name="take-action-to-improve-your-score"></a>採取動作來改善您的分數
+## <a name="take-action-to-improve-your-score"></a>採取動作以提升您的分數
 
-改進動作] 索引標籤列出的安全性建議該位址可能受攻擊面，以及其狀態 （完成、 沒有完成、 解析透過協力廠商，而且會略過）。 您可以搜尋、 篩選和群組改進的所有動作。
+[改進動作] 索引標籤會列出解決可能攻擊面的安全性建議，及其狀態（已完成，尚未完成，已透過協力廠商解決，且被忽略）。 您可以搜尋、篩選和群組所有的「改進」動作。
 
 ### <a name="ranking"></a>排名
 
-排名根據由左到達成，實作困難，使用者的影響和複雜性的其餘點的數目。 最高排名的改進動作有大量的剩餘低困難、 使用者的影響，與複雜性的點。
+排名是根據剩下的剩餘點數、實施難度、使用者影響和複雜性而定。 最高排名的「改進」動作具有很大的分數，但有低難度、使用者影響和複雜性。
 
 ### <a name="actions"></a>動作
 
-標示為 [不計分] 動作並不會追蹤由 Microsoft 安全分數。 您仍然可以採取的動作，但完成它們不會影響您的分數。 如果巨集指令會變成在未來追蹤由 Microsoft 安全分數，而且您已經完成它，您的安全分數會自動反映出變更。
+標為 [未評分] 的動作不會由 Microsoft 安全分數追蹤。 您仍然可以採取動作，但完成這些動作不會影響您的分數。 如果您未來的動作成為 Microsoft 安全得分，而且您已完成，您的安全分數會自動反映變更。
 
-當您選取特定的改進巨集指令時，會出現飛入]。 若要完成此動作，您有幾個選項：
+當您選取特定的 [改進] 動作時，會出現 [飛出]。 若要完成此動作，您有幾個選項：
 
-1. 選取 [**檢視設定**回到 [設定] 畫面，並進行變更。 然後，您會取得的動作是值得，可見的飛出視窗頂端的點。點可能需要 24 小時的時間來更新。
+1. 選取 [**查看設定**] 以進入設定畫面，然後進行變更。 然後，您可以在飛出的最上方看到所要採取動作的點。最多可能需要24小時才能更新點數。
 
-2. 因為由協力廠商應用程式或軟體已處理過的改進巨集指令，請選取 [**解決透過協力廠商**]。 讓您安全分數更妥善地反映您的整體安全性狀態，您會獲得值得了巨集指令的點。 如果協力廠商不再涵蓋控制項，您可以將標示為未完成的改進巨集指令。 請記住，Microsoft 已不可見性是否分數需求已符合如果改進巨集指令會標示為透過協力廠商解決。
+2. 選取 [**透過協力廠商解決**]，因為改進動作已經由協力廠商應用程式或軟體所定址。 您可以取得行動的價值，讓您的安全分數更好地反映整體的安全性狀況。 如果協力廠商不再涵蓋該控制項，您可以將 [改進] 動作標示為 [未完成]。 請記住，如果改進動作標示為透過協力廠商解決，則 Microsoft 無法查看是否符合評分需求。
 
-3. 因為您已決定要接受的風險，並不制訂的改進巨集指令，請選取 [**略過**]。 一旦您略過改進巨集指令，總數安全分數點就能得到會減少。 您可以檢視歷程記錄中的此巨集指令或復原在任何時間。
+3. 選取 [**略**過]，因為您已決定接受風險，而不會制定「改進」動作。 一旦您忽略 [改進] 動作，您可以達到的安全分數點總數即會減少。 您可以在歷史記錄中查看此動作，也可以隨時復原。
 
-4. 因為改進巨集指令會要求您定期檢閱您的環境以取得，並保留點的一部分，請選取 [**檢閱**]。 例如，信箱轉寄規則應檢閱以確定資料尚未進行挾帶出去，從您的網路以每週為基礎。 您不需要進行任何變更，但需要要執行巨集指令。 若您定期檢閱規則時，您會收到資料點。 如果不是，減少分數。
+4. 選取 [**檢查**]，因為改進動作需要您定期檢查環境的一部分，以取得及保留點數。 例如，應每週複查信箱轉寄規則，以確保資料未從您的網路挾帶。 您不需要進行任何變更，但必須執行動作。 如果您定期檢查規則，您會收到點數。 如果不是，則會降低分數。
 
-![安全分數改進巨集指令範例](../../media/secure-score/secure-score1x450.png) ![安全分數檢閱改進巨集指令範例](../../media/secure-score/secure-score2x450.png)
+![安全分數改進動作範例](../../media/secure-score/secure-score1x450.png) ![安全分數評審改進動作範例](../../media/secure-score/secure-score2x450.png)
 
-*圖表 2 & 3： 改進巨集指令延伸顯示*
+*圖 2 & 3：改善動作 flyouts*
 
-## <a name="monitor-improvements-over-time"></a>經過一段時間的監視器增強功能
+## <a name="monitor-improvements-over-time"></a>監視隨時間的改進
 
-您可以檢視圖表，貴組織的分數經過一段時間**歷程記錄**中的圖形下方] 索引標籤所採取的所選的時間範圍和其屬性，例如產生點及類別中的所有動作的清單。 您可以依類別自訂日期範圍與篩選器。
+您可以在 [**記錄**] 索引標籤中，在一段時間內，查看組織的分數圖表。在圖形下方會列出所選取時間範圍內所執行的所有動作，以及其屬性，例如結果點和類別。 您可以自訂日期範圍及依類別篩選。
 
 ## <a name="risk-awareness"></a>風險認知
 
-Microsoft 安全分數是數字摘要根據系統設定、 使用者行為及其他安全性相關的度量值; 您安全性狀態。它不是絕對的度量單位的方式可能會破壞您的系統或資料。 相反地，它表示要採用的安全性控制 Microsoft 環境中可協助位移正在外洩的風險的程度。 沒有線上服務已完全免於安全性弱點，以及安全分數不應該解譯成保證郵件可以針對任何方式的安全性漏洞。
+Microsoft Secure 得分是根據系統設定、使用者行為和其他安全性相關度量的安全性狀態的數值摘要;這不是系統或資料被破壞的可能性的絕對度量。 相反地，它代表您已在 Microsoft 環境中採用安全性控制的程度，可協助抵消遭破壞的風險。 沒有任何線上服務完全避免安全缺口，安全分數不得以任何方式轉譯為保證安全性破壞。
 
-## <a name="whats-new"></a>新功能？
+## <a name="whats-new"></a>新功能
 
-若要讓 Microsoft 安全分數較佳的安全性狀態代表我們已進行一些變更。
+若要讓 Microsoft 安全評分為您安全性狀況的更好代表，我們進行了一些變更。
 
-若要深入了計劃變更資訊，請參閱[項目即將 Microsoft 安全分數？](microsoft-secure-score-whats-coming.md)
+若要深入瞭解規劃的變更，請參閱[Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)
 
-### <a name="removed-not-scored-improvement-actions"></a>已移除 「 不計分 」 改進動作
+### <a name="removed-not-scored-improvement-actions"></a>移除「未計分」的改進動作
 
-之一的安全分數原則是分數應依照標準化預定且更容易與相關。 具有不是可以測量或可採取行動的改進動作具有已造成混淆。 Microsoft 安全分數僅合理時的每個建議有清除影響分數。 不計分改進動作不是可以測量的。  
+安全分數的原則之一是，分數應該是標準化的，且與的功能非常輕鬆。 具有不具可度量或具可操作性的改進動作已導致混淆。 只有在每個建議都會對分數有明確影響時，Microsoft 安全評分才有意義。 不計分的改善動作不可度量。  
 
-基於這些理由，已被移除已不會被記錄的所有改進動作。 在您的組件上不需要採取任何動作。
+基於這些原因，已移除所有未計分的改善動作。 您的元件不需要任何動作。
 
-### <a name="removed-device-improvement-actions"></a>移除的裝置改進動作
+### <a name="removed-device-improvement-actions"></a>移除裝置改進動作
 
-Microsoft 安全分數裝置類別的改進動作的評估之後, 被判定那些動作目前評估原則狀態並不裝置的組態狀態。 因為組態直接繫結至安全性狀態，現有的裝置動作已決定不完全代表組織的狀態。  我們將會移除目前的動作裝置類別中為我們可以使用，以提供一組建議直接使用更完整代表裝置安全性狀態的 [診斷資料。
+評估 [改進動作] 的 Microsoft Secure 得分裝置類別之後，它決定這些動作目前評估原則狀態，而不是裝置的設定狀態。 因為設定會直接與安全性狀況相關聯，所以現有的裝置動作決定不完全代表組織狀況。  當我們運作時，將會移除裝置類別中目前的動作，以提供一組建議，以直接使用診斷資料，以更完整地代表裝置安全狀況。
 
 已移除下列改進動作：
 
 - 啟用 Microsoft Intune 行動裝置管理
-- Android 版建立 Microsoft Intune 合規性原則
-- 建立工作 Android 版的 Microsoft Intune 合規性原則
-- Android 版建立 Microsoft Intune 應用程式防護原則
-- 建立 iOS 版 Microsoft Intune 應用程式保護原則
-- 標記裝置與指定為不符合任何 Microsoft Intune 合規性原則
-- 建立 iOS 版 Microsoft Intune 合規性原則
-- 建立 macOS Microsoft Intune 合規性原則
-- 建立 Windows 的 Microsoft Intune 合規性原則
-- Android 版建立 Microsoft Intune 設定設定檔
-- 建立工作 Android 版的 Microsoft Intune 設定設定檔
-- 建立 macOS 的 Microsoft Intune 設定設定檔
-- 建立 iOS 版 Microsoft Intune 設定設定檔
-- 建立 Windows 的 Microsoft Intune 設定設定檔
-- 啟用 Microsoft Intune 中的增強型的 jailbreak 偵測
-- 需要修正的所有裝置、 防毒和防火牆啟用
+- 建立適用于 Android 的 Microsoft Intune 符合性原則
+- 建立適用于 Android 的 Microsoft Intune 符合性原則
+- 建立適用于 Android 的 Microsoft Intune 應用程式保護原則
+- 為 iOS 建立 Microsoft Intune 應用程式保護原則
+- 標示未指派為不相容的 Microsoft Intune 符合性原則的裝置
+- 為 iOS 建立 Microsoft Intune 符合性原則
+- 為 macOS 建立 Microsoft Intune 符合性原則
+- 建立適用于 Windows 的 Microsoft Intune 符合性原則
+- 建立適用于 Android 的 Microsoft Intune 設定檔
+- 建立適用于 Android 的 Microsoft Intune 設定檔
+- 為 macOS 建立 Microsoft Intune 設定檔
+- 為 iOS 建立 Microsoft Intune 設定檔
+- 建立 Windows 的 Microsoft Intune 設定檔
+- 在 Microsoft Intune 中啟用增強型 jailbreak 偵測
+- 需要修補所有裝置，並已啟用防病毒及防火牆
 - 啟用 Windows Defender ATP 整合至 Microsoft Intune
 - 建立 Microsoft Intune Windows 資訊保護原則
-- 需要有進階安全性設定的所有裝置
-- 每週檢閱封鎖的裝置報告
+- 要求所有裝置都具有高級安全性設定
+- 每週複查封鎖的裝置報告
 
-### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>移除不符合預期可靠的度量單位的改進動作
+### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>移除不符合可靠度量期望的改善動作
 
-若要確保 Microsoft 安全分數才有意義，以及改進的每一個動作是可以測量且可靠，我們已移除下列改進動作：
+為了確保 Microsoft 安全分數有意義，且每個改進動作都有意義而且可靠，我們已移除下列改進動作：
 
-- 開啟稽核資料記錄
-- 探索風險並不相容的陰影 IT 應用程式
-- 檢閱權限 & 封鎖風險 OAuth 應用程式連線至您的環境
-- 在 SharePoint online 的文件庫設定版本設定
+- 開啟審計資料記錄
+- 探索危險且不相容的陰影 IT 應用程式
+- 檢查許可權 & 會封鎖連接至您環境的危險 OAuth 應用程式
+- 設定 SharePoint 線上文件庫的版本設定
 
 ### <a name="mfa-improvement-action-updates"></a>MFA 改進動作更新
 
-若要反映適用於企業以確保 upmost 安全性時，套用原則可搭配其業務需求，Microsoft 安全分數已移除以多重要素驗證，為主的三個改進動作，並新增兩個。
+為了反映公司在套用與業務搭配運作的原則時，是否需要確保 upmost 安全性，Microsoft 安全分數已移除三個改進動作（圍繞多重要素驗證），並新增兩個動作。
 
-已移除的改進動作：
+已移除改進動作：
 
-- 登錄所有使用者的多重要素驗證
-- 需要 MFA 的所有使用者
-- 需要 MFA 的 Azure AD 特殊權限角色
+- 為多重要素驗證註冊所有使用者
+- 需要對所有使用者進行 MFA
+- Azure AD 特權角色需要 MFA
 
-新增的改進動作：
+新增改進動作：
 
-- 確定所有的使用者可以完成的安全存取多重要素驗證
-- 需要 MFA 的系統管理角色
+- 確定所有使用者均可完成安全存取的多重要素驗證
+- 需要對管理角色進行 MFA
 
- 這些新的改進動作需要透過您的目錄中註冊您的使用者或系統管理員針對多重要素驗證 (MFA)，以及建立正確的一組原則符合貴組織的需求。 主要目標是有彈性，同時確保所有使用者和系統管理員可以驗證與多重因素或風險式身分識別驗證提示。 可能需要的表單具有多個範圍的決策或設定安全性的預設值 （即將年 3 月 16），可讓 Microsoft 決定何時 MFA 的挑戰使用者套用的原則。
+ 這些新的改進動作需要在您的目錄上登錄使用者或系統管理員以進行多重要素驗證（MFA），並建立符合組織需求的適當原則集合。 主要目標具有彈性，可確保所有使用者和系統管理員都能使用多個因素或以風險為基礎的身分識別驗證提示進行驗證。 這可以採取多種原則套用範圍決策，或設定安全性預設值（即將推出3月16日），讓 Microsoft 決定何時對使用者進行 MFA 的質詢。
 
-### <a name="removed-review-improvement-actions"></a>已移除 「 檢閱 」 改進動作
+### <a name="removed-review-improvement-actions"></a>已移除「複查」改進動作
 
-之一的安全分數原則是分數應依照標準化預定且更容易與相關。 具有不是可以測量或可採取行動的改進動作具有已造成混淆。 一個 Microsoft 安全分數僅合理時的每個建議有清除影響分數。 檢閱改進動作不會測量至其他改進動作為相同的標準。  
+安全分數的原則之一是，分數應該是標準化的，且與的功能非常輕鬆。 具有不具可度量或具可操作性的改進動作已導致混淆。 只有在每個建議都會對分數有明確影響時，其中一個 Microsoft 安全評分才有意義。 「審閱改進」動作與其他 [改進動作] 的標準不是度量。  
 
-基於這些理由，已被暫時移除所有需要檢閱頻率的改進動作。 在您的組件上不需要採取任何動作。
+基於這些原因，所有需要審閱節奏的改進動作都會暫時移除。 您的元件不需要任何動作。
 
 ### <a name="preview-features"></a>預覽功能
 
-[預覽版本](microsoft-secure-score-preview.md)中，將會包含下列功能：
+[預覽版本](microsoft-secure-score-preview.md)中會包含下列功能：
 
-* 首席資訊安全長的所有新評量和趨勢檢視，而且會導致層級的討論區
-* 追蹤及基準測試您的分數的新方法
-* 更有效率的追蹤和監控分數衰退
-* 篩選、 標記、 搜尋及群組改進動作
-* 管理向您未來的目標，使用分數估算和計劃的動作
-* 簡化的點為單位系統
-* 還有更多 ！
+* CISO 和潛在客戶層級討論的所有新的計量和趨勢視圖
+* 追蹤和基準成績的新方法
+* 更好地追蹤和監控分數回歸
+* 篩選、標記、搜尋及群組您的改善動作
+* 使用分數預測和規劃的動作來管理您的未來目標
+* 簡化點數系統
+* 還有更多！
 
-## <a name="we-want-to-hear-from-you"></a>我們想要從您聽到
+## <a name="we-want-to-hear-from-you"></a>我們想要聽到您的來信
 
-如果您有任何問題，請讓我們知道[安全性、 隱私權 & 合規性](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy)社群中的張貼。 我們正在監視社群，並將提供的說明。
+如果您有任何問題，請在[安全性、隱私權 & 合規性](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy)社區中公佈，以告知我們。 我們正在監視社區，並會提供協助。

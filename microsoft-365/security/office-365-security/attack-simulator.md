@@ -16,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: 使用攻擊模擬器，在您的 Office 365 E5 或 ATP 方案2組織中執行模擬網路釣魚和密碼攻擊，這可協助您識別遭到攻擊的使用者，在實際的攻擊擊中您的業務之前。
-ms.openlocfilehash: 5e924ebe43a6d7fd1af460b304e862207baffb61
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: 95b7af302a5dcc1987040c23a7dde867e2d09292
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612633"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637336"
 ---
 # <a name="attack-simulator-in-office-365-atp"></a>Office 365 ATP 中的攻擊模擬器
 
@@ -186,7 +186,7 @@ Office 365 中的攻擊模擬器高級威脅防護方案2（ATP 方案2）可讓
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>所有的 URLs 都是特意 HTTP，而不是 HTTPs。</li><li>URL 信譽服務可識別一或多個 URLs 為不安全的。 在網路釣魚活動中使用 URL 之前，請先檢查支援的網頁瀏覽器中的 URL 可用性。</li><li>您必須選取 URL。 針對**Spear 網路釣魚（附件）** 活動，您可以在下一個步驟中移除郵件本文中的連結（否則，郵件會同時包含連結**和**附件）。</li></ul>
+     > <ul><li>所有的 URLs 都是特意 HTTP，而不是 HTTPs。</li><li>URL 信譽服務可識別一或多個 URLs 為不安全的。 在網路釣魚活動中使用 URL 之前，請先檢查支援的網頁瀏覽器中的 URL 可用性。</li><li>您必須選取 URL。 針對<b>Spear 網路釣魚（附件）</b>活動，您可以在下一個步驟中移除郵件本文中的連結（否則，郵件會同時包含連結<b>和</b>附件）。</li></ul>
 
    - **附件類型**：此設定僅適用于**Spear 網路釣魚（附件）** 活動。 按一下下拉式清單，然後選取 **。.DOCX**或 **。PDF**中的清單。
 
@@ -220,7 +220,7 @@ Office 365 中的攻擊模擬器高級威脅防護方案2（ATP 方案2）可讓
 
 在攻擊模擬器中，有兩種不同類型的密碼攻擊活動可供您測試使用者密碼的複雜性：
 
-- **強力密碼（字典攻擊）**：*強力強制** 或*字典*攻擊會在使用者帳戶上使用大量的密碼字典檔案，讓您能夠使用其中一種密碼，這樣一來，您就可以使用其中一個，而不是一個帳戶的密碼。 不正確的密碼鎖定有助於封鎖強力密碼攻擊。
+- **強力密碼（字典攻擊）**：*強力強制*或*字典*攻擊會在使用者帳戶上使用大量的密碼字典檔案，讓您可以使用其中一種密碼，這樣一來，您就可以使用其中一個，而不是一個帳戶的密碼。 不正確的密碼鎖定有助於封鎖強力密碼攻擊。
 
   針對字典攻擊，您可以指定一或多個密碼以嘗試（手動輸入或上傳的檔案），也可以指定一或多個使用者。
 

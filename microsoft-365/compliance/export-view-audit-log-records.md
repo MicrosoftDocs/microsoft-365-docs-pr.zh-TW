@@ -1,5 +1,7 @@
 ---
-title: 导出、配置和查看审核日志记录
+title: 匯出、 設定及檢視稽核記錄檔的記錄
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,118 +16,118 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 将 Office 365 审核日志搜索的结果导出并下载到 CSV 文件后，可以使用 Excel 中的 Power 查询编辑器中的 JSON 转换功能将 AuditData 列中的 JSON 对象中的每个属性拆分为自己的列。 这可以帮助您快速找到要查找的特定审核数据。
-ms.openlocfilehash: 7dac373e8f25ead38dddbe2663e521b35b3153ef
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 將 Office 365 審核記錄搜尋的結果匯出並下載到 CSV 檔案之後，您可以在 Excel 的 Power Query 編輯器中使用 JSON 轉換功能，將 AuditData 欄中的每個屬性分割成自己的資料行。 這可協助您快速找到您要尋找的特定審核資料。
+ms.openlocfilehash: 00e89d0834461e73ee0bd8a238e3ff7480de118e
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077032"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634921"
 ---
-# <a name="export-configure-and-view-audit-log-records"></a>导出、配置和查看审核日志记录
+# <a name="export-configure-and-view-audit-log-records"></a>匯出、 設定及檢視稽核記錄檔的記錄
 
-搜索 Office 365 审核日志并将搜索结果下载到 CSV 文件后，该文件包含一个名为**AuditData**的列，其中包含有关每个事件的其他信息。 此列中的数据被格式化为 JSON 对象，其中包含配置为*属性的多个属性：* 用逗号分隔的值对。 您可以使用 Excel 中的电源查询编辑器中的 JSON 转换功能将**AuditData**列中 JSON 对象中的每个属性拆分为多个列，以便每个属性都有自己的列。 这使您可以对这些属性中的一个或多个进行排序和筛选，这有助于快速查找要查找的特定审核数据。
+在您搜尋 Office 365 審計記錄檔並將搜尋結果下載至 CSV 檔案之後，該檔案會包含一個名為**AuditData**的欄，其中包含每個事件的詳細資訊。 此欄中的資料已格式化為 JSON 物件，包含多個屬性設定為*property：值*組合，以逗號分隔。 您可以在 Excel 的 Power Query 編輯器中使用 JSON 轉換功能，將**AuditData**欄中 JSON 物件的每個屬性分割成多個欄，使每個屬性都有自己的資料行。 這可讓您在一個或多個屬性上進行排序和篩選，這可協助您快速找到所要尋找的特定審核資料。
 
-## <a name="step-1-export-audit-log-search-results"></a>步骤 1：导出审核日志搜索结果
+## <a name="step-1-export-audit-log-search-results"></a>步驟1：匯出審計記錄搜尋結果
 
-第一步是搜索审核日志，然后将逗号分隔值 （CSV） 文件中的结果导出到本地计算机。
+第一步是搜尋審核記錄檔，然後將結果以逗號分隔值（CSV）檔案匯出到您的本機電腦。
   
-1. 运行[审核日志搜索](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log)并在必要时修改搜索条件，直到获得所需的结果。
+1. 如有需要，請執行[審計記錄搜尋](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log)並修正搜尋準則，直到您有需要的結果為止。
     
-2. **单击"导出结果"** 并**选择"下载所有结果"。** 
+2. 按一下 [**匯出結果**]，然後選取 [**下載所有結果**]。 
     
-   ![单击下载所有结果](media/ExportAuditSearchResults.png)
+   ![按一下 [下載所有結果]](../media/ExportAuditSearchResults.png)
 
-   此选项用于从步骤 1 中运行的审核日志搜索导出所有审核记录，并将原始数据从审核日志下载到 CSV 文件。 
+   此選項可從您在步驟1中執行的審計記錄搜尋中匯出所有的審計記錄，並將原始資料從審核記錄檔下載到 CSV 檔案。 
 
-   窗口底部会显示一条消息，提示您打开或保存 CSV 文件。 
+   會在視窗底部顯示一則訊息，提示您開啟或儲存 CSV 檔案。 
 
-3. **单击"保存>另存为**CSV 文件并将其保存到本地计算机。 下载许多搜索结果需要一段时间。 在搜索所有活动或宽日期范围时，通常会出现这种情况。 CSV 文件完成下载后，窗口底部将显示一条消息。
+3. 按一下 [**儲存 > 另存**新檔]，然後將 CSV 檔案儲存至本機電腦。 下載許多搜尋結果需要一段時間。 這通常是搜尋所有活動或廣泛的日期範圍時的情況。 當 CSV 檔案下載完畢後，就會顯示視窗底部的訊息。
  
-   ![CSV 文件下载完成后显示的消息](media/ExportAuditSearchResultsFinish.png)
+   ![當 CSV 檔案下載完成時所顯示的訊息](../media/ExportAuditSearchResultsFinish.png)
 
 > [!NOTE]
-  > 从单个审核日志搜索中最多可以将 50，000 个条目下载到 CSV 文件。 如果将 50，000 个条目下载到 CSV 文件，则可以假定有超过 50，000 个事件符合搜索条件。 要导出超过此限制，请尝试使用日期范围来减少审核日志记录的数量。 您可能需要运行多个日期范围较小的搜索才能导出超过 50，000 个条目。
+  > 您可以從單一稽核記錄搜尋下載最多 50,000 個項目至 CSV 檔案。 如果已下載 50,000 個項目至 CSV 檔案，您可能可以假設有超過 50,000 個符合搜尋準則的事件。 若要匯出超過此限制，請嘗試使用日期範圍來減少審計記錄檔的數量。 您可能需要使用較小的日期範圍執行多次搜尋，以匯出 50,000 個以上的項目。
 
-## <a name="step-2-format-the-exported-audit-log-using-the-power-query-editor"></a>步骤 2：使用电源查询编辑器格式化导出的审核日志
+## <a name="step-2-format-the-exported-audit-log-using-the-power-query-editor"></a>步驟2：使用 Power Query 編輯器格式化匯出的審計記錄檔
 
-下一步是使用 Excel 中的电源查询编辑器中的 JSON 转换功能将**AuditData**列中的 JSON 对象中的每个属性拆分为自己的列。 然后筛选列以根据特定属性的值查看记录。 这可以帮助您快速找到要查找的特定审核数据。
+下一步是在 Excel 的 Power Query 編輯器中使用 JSON 轉換功能，將**AuditData**欄中 JSON 物件中的每個屬性分割成自己的資料行。 然後，根據特定屬性的值，篩選欄以查看記錄。 這可協助您快速找到您要尋找的特定審核資料。
 
-1. 在 Office 365、Excel 2019 或 Excel 2016 的 Excel 中打开空白工作簿。
+1. 在 Excel 中開啟空白活頁簿，以供 Office 365、Excel 2019 或 Excel 2016 使用。
     
-2.  在"**数据"** 选项卡上，**在"获取&转换数据**功能区"组中，**单击"从文本/CSV**"。
+2.  在 [**資料**] 索引標籤的 [**取得 & 轉換資料**] 功能區群組中，按一下 [**從文字/CSV**]。
 
-    ![在"数据"选项卡上，单击"从文本/CSV"](media/JSONTransformOpenCSVFile.png)
+    ![在 [資料] 索引標籤上，按一下 [從文字/CSV]](../media/JSONTransformOpenCSVFile.png)
 
-3. 打开您在步骤 1 中下载的 CSV 文件。
+3. 開啟您在步驟1中下載的 CSV 檔案。
     
-4. 在显示的窗口中，**单击"转换数据"。**
+4. 在顯示的視窗中，按一下 [**轉換資料**]。
 
-   ![单击转换数据](media/JSONOpenPowerQuery.png)
+   ![按一下 [轉換資料]](../media/JSONOpenPowerQuery.png)
 
-CSV 文件在**查询编辑器**中打开。 有四列：**创建日期、****用户Id、****操作**和**审核数据。** **审核数据**列是包含多个属性的 JSON 对象。 下一步是为 JSON 对象中的每个属性创建一个列。
+CSV 檔案會在**查詢編輯器**中開啟。 有四個欄： **CreationDate**、 **UserIds**、**作業**及**AuditData**。 **AuditData**欄是包含多個屬性的 JSON 物件。 下一步是為 JSON 物件中的每個屬性建立欄。
     
-5. 右键**单击"审核数据"** 列中的标题，**单击"转换"，****然后单击"JSON**"。 
+5. 以滑鼠右鍵按一下 [ **AuditData** ] 欄中的標題，按一下 [**轉換**]，然後按一下 [ **JSON**]。 
  
-   ![右键单击"审核数据"列，单击"转换"，然后选择"JSON"](media/JSONTransform.png)
+   ![以滑鼠右鍵按一下 [AuditData] 欄，按一下 [轉換]，然後選取 [JSON]。](../media/JSONTransform.png)
 
-6. **在"审核数据"** 列的右上角，单击展开图标。
+6. 在 [ **AuditData** ] 欄的右上角，按一下展開圖示。
     
-   ![在"审核数据"列中，单击展开图标](media/JSONTransformExpandIcon.png)
+   ![在 [AuditData] 欄中，按一下展開圖示](../media/JSONTransformExpandIcon.png)
 
-   将显示**AuditData**列中 JSON 对象中属性的部分列表。
+   隨即會顯示 [ **AuditData** ] 欄中 JSON 物件的屬性部分清單。
 
-7. **单击"加载更多"** 以**在"审核数据"** 列中显示 JSON 对象中的所有属性。
+7. 按一下 [**載入更多**]，以在 [ **AuditData** ] 欄中顯示 JSON 物件中的所有屬性。
 
-   ![单击"加载更多"以显示 JSON 对象中的所有属性](media/JSONTransformLoadJSONProperties.png)
+   ![按一下 [載入更多] 以顯示 JSON 物件中的所有屬性](../media/JSONTransformLoadJSONProperties.png)
 
-   您可以取消选中不想包含的任何属性旁边的复选框。 删除对调查没有用处的列是减少审核日志中显示的数据量的好方法。 
+   您可以取消選取不想要包含的任何屬性旁的核取方塊。 消除對調查沒有用的資料行，是減少審核記錄中所顯示之資料量的好方法。 
 
    > [!NOTE]
-   > 上一个屏幕截图中显示的 JSON 属性（在**单击"加载更多"** 之后）基于在 CSV 文件中前 1，000 行中的**AuditData**列中找到的属性。 如果前 1，000 行之后记录中存在不同的 JSON 属性，则当**AuditData**列拆分为多列时，这些属性（和相应的列）将不会包括在内。 为了帮助防止这种情况，请考虑重新运行审核日志搜索并缩小搜索条件，以便返回更少的记录。 另一种解决方法是**筛选"操作"** 列中的项，以减少**在"审核数据"** 列中转换 JSON 对象之前（在执行上述步骤 5 之前）行数。
+   > 先前的螢幕擷取畫面所顯示的 JSON 屬性（按一下 [**載入更多**]）是以 CSV 檔案中前1000列的**AuditData** ] 欄中找到的屬性為基礎。 如果在第一個1000列之後的記錄中有不同的 JSON 屬性，當**AuditData**欄分割成多個欄時，將不會包含這些屬性（和對應的資料行）。 為了協助避免這種情況，請考慮重新執行審核記錄搜尋並縮小搜尋準則，以減少傳回的記錄。 另一個解決方法是在 [**作業**] 欄中篩選項目，以減少列數（先執行上述步驟5之前），再轉換**AuditData** ] 欄中的 JSON 物件。
 
-8. 执行以下操作之一，为所选的每个 JSON 属性添加的列的标题设置格式。
+8. 請執行下列其中一項動作，以格式化所選取的每個 JSON 屬性所新增的欄標題。
 
-    - 取消选择"**使用原始列名称作为前缀"** 复选框，将 JSON 属性的名称用作列名称;例如，**记录类型**或**源文件名称**。
+    - 取消選取 [**使用原始欄名稱做為前置**詞] 核取方塊，以使用 JSON 屬性的名稱做為欄名稱;例如， **RecordType**或**SourceFileName**。
     
-   - 保留选中"**使用原始列名称作为前缀"** 复选框，以将 AuditData 前缀添加到列名称中;例如，**审核数据.记录类型**或**审核数据.源文件名称**。
+   - 選取 [**使用原始欄名稱做為前置**詞] 核取方塊，以將 AuditData 前置詞加入欄名稱中;例如， **AuditData。 RecordType**或**AuditData SourceFileName**。
 
 9. 按一下 [確定]****。
     
-    "**审核数据"** 列被拆分为多列。 每个新列对应于 AuditData JSON 对象中的属性。 列中的每一行都包含属性的值。 如果属性不包含值，则显示*空*值。 在 Excel 中，具有 null 值的单元格为空。
+    **AuditData**欄會分割成多個欄。 每個新欄會對應至 AuditData JSON 物件中的屬性。 資料行中的每一列都包含屬性的值。 如果此屬性不包含值，則會顯示*null*值。 在 Excel 中，具有 null 值的儲存格是空白的。
   
-10. 在"**主页"** 选项卡上，**单击"关闭&加载"** 以关闭电源查询编辑器，并在 Excel 工作簿中打开转换后的 CSV 文件。 
+10. 在 [**常用**] 索引標籤上，按一下 [**關閉 & 載入**]，關閉 Power Query 編輯器，並在 Excel 活頁簿中開啟轉換後的 CSV 檔案。 
 
-## <a name="tips-for-exporting-and-viewing-the-audit-log"></a>导出和查看审核日志的提示
+## <a name="tips-for-exporting-and-viewing-the-audit-log"></a>匯出及查看審核記錄的秘訣
 
-以下是在使用 JSON 转换功能将**AuditData**列拆分为多个列之前和之后导出和查看审核日志的一些提示和示例。
+以下是在您使用 JSON 轉換功能將**AuditData**欄分割成多個欄之前和之後，匯出及查看審核記錄的一些秘訣和範例。
 
-- 筛选"**记录类型"** 列以仅显示来自特定 Office 365 服务或功能区域的记录。 例如，要显示与 SharePoint 共享相关的事件，请选择**14（SharePoint**共享活动触发的记录的枚举值）。 有关与**RecordType**列中显示的枚举值对应的 Office 365 服务的列表，请参阅[Office 365 审核日志中的详细信息。](detailed-properties-in-the-office-365-audit-log.md)
+- 篩選**RecordType**欄，只顯示特定 Office 365 服務或功能區域中的記錄。 例如，若要顯示與 SharePoint 共用相關的事件，您可以選取 [ **14** ] （由 SharePoint 共用活動所觸發之記錄的列舉值）。 如需與**RecordType** ] 欄中所顯示之列舉值相對應的 Office 365 服務清單，請參閱[Office 365 audit Log 中的詳細](detailed-properties-in-the-office-365-audit-log.md)內容。
 
-- 筛选"**操作"** 列以显示特定活动的记录。 有关与安全&合规中心中的审核日志搜索工具中的可搜索活动对应的大多数操作的列表，请参阅[在"安全&合规中心"中搜索审核日志中的"](search-the-audit-log-in-security-and-compliance.md#audited-activities)已审核活动"部分。
+- 篩選 [**作業**] 欄，以顯示特定活動的記錄。 如需與安全性 & 規範中心的「審核記錄」搜尋工具中的可搜尋活動相對應的大部分作業清單，請參閱[安全性 & 規範中心的「搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md#audited-activities)」一節中的「審核的活動」一節。
 
-- 您可以使用 Exchange 在线电源外壳中的[搜索统一审核日志](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog)cmdlet 将 Office 365 审核日志搜索的结果导出到 CSV 文件，而不是使用安全&合规性中心的审核日志搜索工具。 然后，您可以按照步骤 2 中描述的相同过程，使用 Power 查询编辑器格式化审核日志。 使用 PowerShell cmdlet 的一个优点是，您可以使用*RecordType*参数搜索特定 Office 365 服务中的事件。 下面是使用 PowerShell 将审核记录导出到 CSV 文件的几个示例，因此您可以使用 Power 查询编辑器转换**AuditData**列中的 JSON 对象，如步骤 2 中所述。
+- 您可以在 Exchange Online Powershell 中使用[Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) Cmdlet，將 Office 365 審核記錄搜尋的結果匯出至 CSV 檔案，而不是使用安全性 & 合規性中心的「審核記錄搜尋」工具。 接著，您可以遵循步驟2所述的相同程式，以使用 Power Query 編輯器來格式化審核記錄檔。 使用 PowerShell Cmdlet 的其中一個優點是，您可以使用*RecordType*參數，從特定 Office 365 服務搜尋事件。 以下是一些使用 PowerShell 將審核記錄匯出至 CSV 檔案的範例，因此您可以使用 Power Query 編輯器，依步驟2所述，在**AuditData**欄中轉換 JSON 物件。
 
-   在此示例中，运行以下命令以返回与 SharePoint 共享操作相关的所有记录。 
+   在此範例中，執行下列命令以傳回與 SharePoint 共用作業相關的所有記錄。 
    
-   ```
+   ```powershell
    $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointSharingOperation
    ```
 
-   ```
+   ```powershell
    $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
    ```
 
-   - 搜索结果将导出到名为*PowerShellAuditlog*的 CSV 文件，该文件包含四列：创建日期、用户 Id、记录类型、审核数据）。
+   - 搜尋結果會匯出至名為*PowerShellAuditlog*的 CSV 檔案，該檔案包含四個欄： CreationDate、UserIds、RecordType、AuditData）。
 
-   - 可以使用记录类型的名称或枚举值作为*RecordType*参数的值。 有关记录类型名称及其相应的枚举值的列表，请参阅[Office 365 管理活动 API 架构](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)中的*AuditLogRecordType 类型*表。
+   - 您可以使用 record 類型的 name 或 enum 值做為*RecordType*參數的值。 如需記錄類型名稱及其對應列舉值的清單，請參閱[Office 365 管理活動 API 架構](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)中的*AuditLogRecordType*表格。
    
-   - 只能包含此参数的单个值。 要搜索其他记录类型的审核记录，必须再次运行前两个命令以指定不同的记录类型并将这些结果追加到原始 CSV 文件中。 例如，您将运行这两个命令，将同一日期范围内的 SharePoint 文件活动添加到 PowerShellAuditlog.csv 文件中。
+   - 此參數僅能包含單一值。 若要搜尋其他記錄類型的審計記錄，您必須再次執行這兩個先前的命令，以指定不同的記錄類型，並將這些結果附加至原始 CSV 檔案。 例如，您可以執行下列兩個命令，將相同日期範圍的 SharePoint 檔案活動新增至 PowerShellAuditlog 檔案名。
 
-       ```
-      $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
-      ```
+          ```powershell
+          $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
+          ```
 
-      ```
-      $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Append -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
-      ```
+          ```powershell
+          $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Append -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
+          ```

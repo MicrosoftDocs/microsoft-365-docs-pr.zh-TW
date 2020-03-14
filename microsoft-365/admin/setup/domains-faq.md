@@ -20,161 +20,161 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: 深入了解 Office 365 中的網域的常見問題集中尋找您的問題的答案。
+description: 若要深入瞭解 Office 365 中的一些問題，請參閱常見問題的答案。
 ms.custom: okr_smb
 ms.openlocfilehash: f3c72f1ce772e3021d79aa4568dbfdb700400803
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252379"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633181"
 ---
 # <a name="domains-faq"></a>網域常見問題集
 
-本文包含有關在 Office 365 中的網域的常見問題集解答。
+本文包含有關 Office 365 中的網域的常見問題解答。
 
 如果您找不到問題的答案，請留言讓我們知道，我們會將它新增至清單。
     
 ## <a name="what-is-mx-priority"></a>什麼是 MX 優先順序？
 
-郵件傳遞到郵件 exchange 伺服器與最低的喜好設定編號 （最高優先順序），所以您使用的郵件路由 MX 記錄應具備的最低的喜好設定編號，通常是 0 或*高*優先順序。 
+郵件會以最低喜好設定值（最高優先順序）傳遞到郵件 exchange 伺服器，因此用於郵件路由的 MX 記錄應該具有最低的喜好設定值，通常是0或*高*優先順序。 
   
-- 當您建立 MX 記錄時，大部分的 DNS 主機服務提供者需要您設定喜好設定編號。
+- 當您建立 MX 記錄時，大部分的 DNS 主機服務提供者要求您設定偏好設定號碼。
     
-- 某些標籤] 方塊中的 [*喜好設定*中，並將一些標籤其*優先順序*。 
+- 某些標籤的方塊*偏好*，有些標籤*優先順序*。 
     
-- 某些需要一個數字，和某些要求您選取 [*低*、*中*或*高*。 
+- 有些需要數位，有些會要求您選取 [*低*]、[*中*] 或 [*高*]。 
     
-- 如果您只有一個 MX 記錄，任何值會是好的優先順序或喜好設定。
+- 如果您只有一個 MX 記錄，則優先順序或喜好設定的任何值都很好。
     
-- 如果您有多個的話，請確定郵件路由的 MX 記錄是一種可以用來驗證您擁有該網域的較高優先順序。
+- 如果您有一個以上的，請確定郵件路由的 MX 記錄的優先順序高於用於驗證您擁有該網域的 MX 記錄。
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>如何驗證我的網域的 SPF 記錄？
 
-請務必您擁有或建立**只有一個 SPF TXT 記錄**。 如果您已經有 SPF 記錄，您應該附加到文件的新的 Office 365 值，而不是建立一個新。 您已新增或更新您的 Office 365 電子郵件的 SPF 記錄之後，您應先確認語法不正確的其中一種工具： 
+您必須具有或建立**一個 SPF 的 TXT 記錄**，這一點很重要。 如果您已經有 SPF 記錄，您應該將新的 Office 365 值附加到它，而不是建立新的記錄。 在您新增或更新 Office 365 電子郵件的 SPF 記錄之後，您應該檢查下列其中一項工具，以確定其語法是否正確： 
   
-- [SPF 記錄測試工具](http://www.kitterman.com/spf/validate.html)
+- [SPF 記錄測試控管](http://www.kitterman.com/spf/validate.html)
     
 - [SPF Surveyor](https://dmarcian.com/spf-survey/)
     
-- [深入了 web 介面](http://digwebinterface.com/)
+- [挖出 web 介面](http://digwebinterface.com/)
     
 ## <a name="how-does-office-365-manage-my-dns-records"></a>Office 365 如何管理我的 DNS 記錄？
 
-有兩個選項可使用 Office 365 的 DNS 管理：
+使用 Office 365 的 DNS 管理有兩個選項：
   
-1. 變更名稱伺服器 (NS) 記錄，並再 Office 365 的所有特定服務的記錄，例如電子郵件的 MX 記錄設定。 **（建議使用）**
+1. 您可以變更名稱伺服器（NS）記錄，然後 Office 365 會處理所有服務特有的記錄，例如設定電子郵件的 MX 記錄。 **推薦**
     
-2. 您的電子郵件和其他 Office 365 服務的 DNS 記錄在您的 DNS 主機將自己新增。 **（專家只）**
+2. 您可以在 DNS 主機自行新增電子郵件和其他 Office 365 服務的 DNS 記錄。 **（僅限專家）**
     
-### <a name="office-365-creates-and-hosts-the-dns-records"></a>Office 365 建立和主控的 DNS 記錄 
+### <a name="office-365-creates-and-hosts-the-dns-records"></a>Office 365 會建立及裝載 DNS 記錄 
 **優點** 
-- 您不必擔心犯錯在您輸入的 Office 365 服務的 DNS 記錄的值。  
-- 您選擇的網域註冊機構和 DNS 主機中有更大的彈性。 
-- 可讓您變更名稱伺服器記錄任何提供者將會運作，即使提供者不支援所有必要的記錄類型。   
-- 當 Office 365 會新增新的 DNS 記錄時，您不需要進行更新。  
+- 您不需要擔心您為 Office 365 服務的 DNS 記錄輸入的值錯誤。  
+- 您選擇的網域註冊機構和 DNS 主機具有較大的彈性。 
+- 任何可讓您變更名稱伺服器記錄的提供者都會運作，即使提供者不支援所有必要的記錄類型。   
+- 當 Office 365 新增 DNS 記錄時，您不需要進行更新。  
 
 #### <a name="disadvantages"></a>缺點 
-- 您無法變更您的 DNS 記錄到 Office 365 外部的主機電子郵件。 
-- 如果您已使用的公用網站與您的網域，請在其地址，例如 www.fourthcoffee.com，您必須將重新導向人員至該地址從 Office 365。 
-- 設定重新導向需要不一定容易取得的公用網站的靜態 IP 位址。 -如果您目前的網域註冊機構不允許您變更您的網域名稱伺服器記錄，您必須切換到不同的註冊機構，才能使用此 DNS 管理選項。  
+- 您無法變更您的 DNS 記錄以主控 Office 365 以外的電子郵件。 
+- 如果您已在網域上使用公用網站的位址（如 www.fourthcoffee.com），您必須將人員重新導向至 Office 365 的該位址。 
+- 設定重新導向需要靜態 IP 位址，但不一定能輕易用於公用網站。 -如果您目前的網域註冊機構不允許您變更網域的名稱伺服器記錄，您必須切換至不同的註冊機構，才能使用此 DNS 管理選項。  
 
- ### <a name="you-manage-the-dns-records-yourself"></a>您的 DNS 記錄自行管理 
+ ### <a name="you-manage-the-dns-records-yourself"></a>您自行管理 DNS 記錄 
  #### <a name="advantages"></a>優點
 - 您可以控制 Office 365 服務的 DNS 記錄。   
-- 如果您有一個公用網站與您的網域，其地址，例如 www.fourthcoffee.com，您不必擔心使用重新導向若要確保人員還是可以至您的網站後您設定 Office 365 中的網域。    
-- 您有其他地方，例如與內部部署 Exchange server 的主機電子郵件的彈性。  
+- 如果您擁有網域的公用網站的位址（如 www.fourthcoffee.com），您不需要擔心在您設定 Office 365 中的網域後，使用者仍可進入您的網站。    
+- 您可以靈活地在其他地方主控電子郵件，例如使用內部部署 Exchange 伺服器。  
  
 #### <a name="disadvantages"></a>缺點
-您必須設定 Office 365 服務的 DNS 記錄自行 （除非您有 GoDaddy 網域）。 
--  如果您目前的 DNS 主機不支援所有必要的記錄類型的 Office 365，某些 Office 365 的功能將無法使用，而且您可能需要切換至不同的 DNS 主機。 
-- 當 Office 365 變更 DNS 記錄的需求，或新增新的服務時，您必須自行進行更新，在您的 DNS 主機。 
+您必須自行設定 Office 365 服務的 DNS 記錄（除非您有 GoDaddy 網域）。 
+-  如果目前的 DNS 主機不支援 Office 365 的所有必要記錄類型，有些 Office 365 功能將無法使用，您可能需要切換至不同的 DNS 主機。 
+- 當 Office 365 變更 DNS 記錄的需求，或加入新的服務時，您必須自行在您的 DNS 主機上進行更新。 
    
-## <a name="what-is-a-domain-name"></a>什麼是網域名稱？
+## <a name="what-is-a-domain-name"></a>何謂功能變數名稱？
 
 
-網域是在電子郵件地址的 **@** 符號後，以及網址的 **www.** 後出現的唯一名稱。 它通常採用的表單貴組織的名稱和標準網際網路尾碼組成，例如*yourbusiness.com*或*stateuniversity.edu。* 
+網域是在電子郵件地址的 **@** 符號後，以及網址的 **www.** 後出現的唯一名稱。 它通常採用組織名稱和標準 Internet 尾碼的形式，例如*yourbusiness.com*或*stateuniversity.edu。* 
   
-使用自訂的網域，例如 「**rob\@contoso.com**」 與 Office 365 可協助建立信譽及辨識您的品牌。 
+使用自訂網域（例如「可信性**\@contoso.com**」）與 Office 365，可協助您建立品牌的信譽及認可。 
   
-您可以[購買 Office 365 中的網域，我們將它自動設定](../get-help-with-domains/buy-a-domain-name.md)，或者您可以購買或帶您已擁有一個向網域註冊機構。
+您可以[在 Office 365 購買網域，我們會自動加以設定](../get-help-with-domains/buy-a-domain-name.md)，或者您可以從網域註冊機構購買或為您提供自己的現有功能。
   
-## <a name="can-i-transfer-a-domain-i-purchased-from-microsoft-to-another-provider"></a>可以轉移我向 Microsoft 購買其他提供者的網域嗎？
+## <a name="can-i-transfer-a-domain-i-purchased-from-microsoft-to-another-provider"></a>我可以將從 Microsoft 購買的網域轉移至其他提供者嗎？
 
-是的但您無法 Office 365 網域轉移至另一個登錄器直到 60 天後您購買 Office 365。
+是的，但是您無法將 Office 365 網域轉接至其他註冊機構，直到您購買 Office 365 的60天之後。
 
-請注意*Whois*查詢將會顯示為多西網域 LLC Office 365 購買的網域註冊機構。 不過，只有 Office 365 應該連絡有關您購買的 Office 365 的網域。
+請注意， *Whois*查詢會將 Office 365 購買的網域註冊機構顯示為通配的 WEST 網域 LLC。 不過，請只針對您的 Office 365 購買的網域，請與 Office 365 取得聯繫。
   
-請遵循下列步驟來取得 Office 365 程式碼，然後移至其他網域註冊機構的網站，以設定您的網域名稱傳送至該登錄器。
+請遵循下列步驟，取得 Office 365 的程式碼，然後移至另一個網域註冊機構的網站，設定將您的功能變數名稱轉移到該註冊機構。
   
-1. 在系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
     
-    如果您使用 Office 365 Germany，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">的網域</a>頁面。 
+    如果您使用的是 Office 365 德國，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">網域</a>頁面。 
     
-    如果您使用 21vianet 運作的 Office 365，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">的網域</a>頁面。
+    如果您使用的是由世紀運作的 Office 365，請移至 [<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">網域</a>] 頁面。
     
-2. 在 [**網域**] 頁面上，選取您想要轉接至其他網域註冊機構，Office 365 網域，然後選取 [**網域傳輸** > **啟用網域傳輸**。
+2. 在 [**網域**] 頁面上，選取您要傳送至其他網域註冊機構的 Office 365 網域，然後選取 [**網域傳輸** > **啟用網域傳輸**]。
        
-4. 請依照下列步驟來準備轉移您的網域。
+4. 遵循步驟來準備轉移您的網域。
     
-5. 取得程式碼之後，移至的網域註冊機構網站您想要用來管理您接下來的網域名稱，並遵循指示其轉送的網域 （在他們網站上的協助搜尋）。
+5. 在您取得程式碼之後，請移至網域註冊機構的網站，以供您用來管理功能變數名稱的位置，並遵循傳送網域（搜尋其網站上的說明）的指導。
     
-6. 如果您要一次，請參閱程式碼，在 Office 365 中的 [**網域設定**] 頁面上選取 [**網域傳輸時必須使用檢視授權程式碼**。
+6. 如果您需要重新查看此程式碼，請在 Office 365 的 [**網域設定**] 頁面上，選取 [ **View the domain transfer 的授權碼**]。
     
-7. 傳輸完成之後，您將會更新您的網域，在新的網域註冊機構。
+7. 完成傳輸後，您將會在新的網域註冊機構中更新您的網域。
     
-8. 若要完成程序，回到系統管理中心**的網域**] 頁面上，選取 [**完整網域傳送**。 
+8. 若要完成此程式，請回到管理中心的 [**網域**] 頁面，並選取 [**完整網域傳輸**]。 
 
-*附註： 請注意，Office 365 購買網域是不合格的名稱伺服器變更或 Office 365 租用戶間轉送網域。 如果兩者所需，網域註冊必須轉接至另一個登錄器。*
+*附注：請注意，Office 365 購買的網域不適用於名稱伺服器變更，或無法在 Office 365 承租人間傳輸網域。 若有任何一項是必要的，則必須將網域註冊轉給另一個註冊機構。*
     
 ## <a name="how-do-i-change-how-my-dns-records-are-managed-in-office-365"></a>如何變更我的 DNS 記錄在 Office 365 中的管理方式？
 
-### <a name="change-dns-management-to-a-dns-host-outside-office-365"></a>變更為外部 Office 365 的 DNS 主機的 DNS 管理
+### <a name="change-dns-management-to-a-dns-host-outside-office-365"></a>將 DNS 管理變更為 Office 365 以外的 DNS 主機
    
-1. 登入您的網域的網域註冊機構。
+1. 登入網域的網域註冊機構。
     
-2. 尋找您更新名稱伺服器記錄，其中的註冊機構的網站上的區域，並更新為指向您的網域的 DNS 主機的名稱伺服器。 （的 DNS 主機通常是網域註冊機構）。
+2. 在註冊機構網站上尋找您更新名稱伺服器記錄的區域，並更新名稱伺服器以指向您網域的 DNS 主機。 （DNS 主機通常是網域註冊機構。）
     
-3. 請依照下列連結，前往 [網域設定精靈：
+3. 遵循連結移至網域安裝精靈：
     
-4. 在系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+4. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
     
-    如果您使用 Office 365 Germany，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">的網域</a>頁面。 
+    如果您使用的是 Office 365 德國，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">網域</a>頁面。 
     
-    如果您使用 21vianet 運作的 Office 365，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">的網域</a>頁面。
+    如果您使用的是由世紀運作的 Office 365，請移至 [<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">網域</a>] 頁面。
     
-5. 在 [**網域**] 頁面上選取的網域扣款，並選取 [ **DNS 管理**]。
+5. 在 [**網域**] 頁面上，選取您要切換的網域，然後選取 [ **DNS 管理**]。
     
-6. 在 [網域設定精靈，在 [**設定您的線上服務**] 頁面上，選取 [**我會管理自己的 DNS 記錄**，，然後選取 [**下一步**。
+6. 在 [網域安裝精靈] 中，在 [**設定您的線上服務**] 頁面上，選取 [**我要管理自己的 DNS 記錄**]，然後選取 **[下一步]**。
     
-7. 新增至您的註冊機構網站的 [**更新 DNS 設定**] 頁面上的精靈所建議之 DNS 記錄。 
+7. 在 [**更新 dns 設定**] 頁面上，將嚮導建議的 DNS 記錄新增至您的註冊機構網站。 
     
-8. 您已新增記錄之後，回到 Office 365，並選取 [**驗證**。
+8. 在您新增記錄後，請回到 Office 365 並選取 [**驗證**]。
     
 
 ### <a name="change-dns-management-to-office-365"></a>將 DNS 管理變更為 Office 365
   
-1. 在系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
     
-    如果您使用 Office 365 Germany，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">的網域</a>頁面。 
+    如果您使用的是 Office 365 德國，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">網域</a>頁面。 
     
-    如果您使用 21vianet 運作的 Office 365，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">的網域</a>頁面。
+    如果您使用的是由世紀運作的 Office 365，請移至 [<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">網域</a>] 頁面。
     
-2. 在 [**網域**] 頁面上選取的網域扣款，並選取 [ **DNS 管理**]。
+2. 在 [**網域**] 頁面上，選取您要切換的網域，然後選取 [ **DNS 管理**]。
     
-3. 在 [網域設定精靈，在 [**設定您的線上服務**] 頁面上，選取 [ **Set up my 為我的線上服務。（建議使用）**，然後選取 [**下一步**。
+3. 在 [網域安裝精靈] 中，在 [**設定您的線上服務**] 頁面上，選取 [**設定我的線上服務給我]。（建議）**，然後選取 **[下一步]**。
     
-4. 如果您還沒有尚未驗證網域，請遵循先執行的步驟。
+4. 如果您還沒有驗證網域，請遵循執行第一步的步驟。
     
-5. 在 [ **Update DNS 設定**] 頁面中，我們會列出名稱伺服器的 Office 365。 移至您的網域的網域註冊機構，並更新至 Office 365 名稱伺服器的名稱伺服器。 
+5. 在 [**更新 DNS 設定**] 頁面上，列出 Office 365 的名稱伺服器。 移至網域的網域註冊機構，並將名稱伺服器更新為 Office 365 名稱伺服器。 
     
-4. 之後您已更新名稱伺服器，**請等候至少一小時**。 然後，回到 [Office 365 中的精靈，選取 [**驗證**。
+4. 更新名稱伺服器後，請**至少等候一小時**。 然後，回到 Office 365 的嚮導中，選取 [**驗證**]。
     
 ## <a name="what-happens-if-my-dns-provider-doesnt-support-certain-record-types"></a>如果我的 DNS 提供者不支援某些記錄類型，會發生什麼事？
 
-如果您管理 DNS 記錄，而且您的 DNS 主機不支援 Office 365 所需的所有 DNS 記錄，某些 Office 365 功能將無法使用。 我們建議您將網域移轉到註冊機構的支援所有必要的 DNS 記錄。
+如果您管理自己的 DNS 記錄，而且 DNS 主機不支援 Office 365 所需的所有 DNS 記錄，有些 Office 365 功能將無法運作。 建議您將網域轉接至支援所有必要 DNS 記錄的註冊機構。
   
-支援所有必要的 DNS 記錄的提供者：
+支援所有必要 DNS 記錄的提供者：
   
 - Dynadot
     
@@ -184,13 +184,13 @@ ms.locfileid: "42252379"
     
 - GoDaddy
     
-- 將游標暫留
+- 懸停
     
 - MyHosting.com
     
 - Name.com
     
-- 幾乎空閒語音
+- 幾乎自由語音
     
 - Nettica
     
@@ -200,255 +200,255 @@ ms.locfileid: "42252379"
     
 - Register.com
     
- **不支援如果 SRV 記錄**，Office 365 不的可用功能如下： 
+ **如果不支援 SRV 記錄**，則無法使用下列 Office 365 功能： 
   
-- 商務用 Skype 商務 Online IM 和目前狀態整合與 Outlook Web App
+- 商務用 Skype Online IM 和目前狀態與 Outlook Web App 的整合
     
-- 外部通訊 （同盟） 與 Skype 商務 Online 其他組織中的使用者。
+- 與其他組織中商務用 Skype Online 使用者的外部通訊（同盟）。
     
-- 與 Skype for Business Online 使用者的公用網際網路連線能力 (PIC) 登入 Microsoft 帳戶 （以前稱為 Windows Live ID）。
+- 公用網際網路連線（PIC）與商務用 Skype Online 使用者使用 Microsoft 帳戶登入（以前稱為 Windows Live ID）。
     
- **如果不支援多個 CNAME 記錄，** 您必須選擇商務用 Skype 的下列功能： 
+ **如果不支援多個 CNAME 記錄，** 您必須為商務用 Skype Online 選擇下列功能： 
   
-- 電子郵件桌面用戶端和行動用戶端可以使用自動探索來自動尋找 Exchange Online 服務，以便使用者可以登入，而不必輸入伺服器名稱。
+- 電子郵件桌面用戶端和行動用戶端可以使用自動探索自動尋找 Exchange Online 服務，讓使用者不必輸入伺服器名稱即可登入。
     
-- Skype 商務 Online 桌面用戶端可用於自動探索自動尋找 Skype 商務 Online 服務，讓使用者可以登入，而不必輸入伺服器名稱。
+- 商務用 skype Online 桌面用戶端可以使用自動探索，自動尋找商務用 Skype Online 服務，讓使用者不必輸入伺服器名稱即可登入。
     
-- Skype 商務 Online 行動用戶端可用於自動探索自動尋找 Skype 商務 Online 服務，讓使用者可以登入，而不必輸入伺服器名稱。
+- 商務用 skype Online 行動用戶端可以使用自動探索，自動尋找商務用 Skype Online 服務，讓使用者不必輸入伺服器名稱即可登入。
     
- **如果 SPF/TXT 記錄不受支援**，其他人可能無法使用您的網域來傳送垃圾郵件或其他惡意電子郵件。 SPF 記錄運作識別來自您網域傳送電子郵件會獲授權的伺服器。 
+ **如果不支援 SPF/TXT 記錄**，其他人可能會使用您的網域來傳送垃圾郵件或其他惡意的電子郵件。 SPF 記錄會透過識別從您的網域傳送電子郵件的授權伺服器運作。 
   
-## <a name="how-do-i-set-or-change-the-default-domain-in-office-365"></a>如何設定或變更 Office 365 中的預設網域？
+## <a name="how-do-i-set-or-change-the-default-domain-in-office-365"></a>如何在 Office 365 中設定或變更預設網域？
 
-您必須至少一個自訂的網域，您可以選擇預設網域之前，已新增至 Office 365。
+您必須至少有一個自訂網域新增至 Office 365，您才能選擇預設網域。
   
-1. 在系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
     
-    如果您使用 Office 365 Germany，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">的網域</a>頁面。 
+    如果您使用的是 Office 365 德國，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">網域</a>頁面。 
     
-    如果您使用 21vianet 運作的 Office 365，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">的網域</a>頁面。
+    如果您使用的是由世紀運作的 Office 365，請移至 [<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">網域</a>] 頁面。
     
-2. 在 [**網域**] 頁面上，選取您想要設定為預設值為新的電子郵件地址的網域。 
+2. 在 [**網域**] 頁面上，選取您要設定為新電子郵件地址的預設網域。 
     
-3. 選取 [**設成預設值**。
+3. 選取 [**設成預設值**]。
     
 ::: moniker range="o365-worldwide"
 
-您無法變更自己的初始名稱 *。 onmicrosoft.com*網域。 
+您無法變更*onmicrosoft.com*網域的名稱。 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-您無法變更自己的初始名稱 *。 onmicrosoft.de*網域。 
+您無法變更*onmicrosoft.de*網域的名稱。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-您無法變更自己的初始名稱 *。 partner.onmschina.cn*網域。 
+您無法變更*partner.onmschina.cn*網域的名稱。 
 
 ::: moniker-end
 
-## <a name="can-i-add-custom-subdomains-or-multiple-domains-to-office-365"></a>新增自訂的子網域或多個網域到 Office 365？
+## <a name="can-i-add-custom-subdomains-or-multiple-domains-to-office-365"></a>我可以將自訂子域或多個網域新增至 Office 365 嗎？
 
 ::: moniker range="o365-worldwide"
 
-Yes ！ 若要新增子網域，您必須管理自己的 DNS 設定，在您的註冊機構網站。 如果您要讓 Microsoft 管理您的 DNS 設定 NS 記錄，或如果您向 Microsoft 購買網域，您無法新增子網域。
+是的！ 若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。 如果您要讓 Microsoft 使用 NS 記錄來管理您的 DNS 設定，或者您購買的是 Microsoft 的網域，您就無法新增子域。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Yes ！ 若要新增子網域，您必須管理自己的 DNS 設定，在您的註冊機構網站。 如果您要讓 Microsoft 管理您的 DNS 設定 NS 記錄，或如果您向 Microsoft 購買網域，您無法新增子網域。
+是的！ 若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。 如果您要讓 Microsoft 使用 NS 記錄來管理您的 DNS 設定，或者您購買的是 Microsoft 的網域，您就無法新增子域。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Yes ！ 若要新增子網域，您必須管理自己的 DNS 設定，在您的註冊機構網站。 如果您要讓 21Vianet 管理您的 NS 記錄的 DNS 設定，您無法新增子網域。
+是的！ 若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。 如果您是讓世紀以 NS 記錄來管理您的 DNS 設定，就無法新增子域。
 
 ::: moniker-end
 
-一般而言，您可以新增多達 900 個網域到 Office 365 訂閱。
+一般來說，您最多可以將900個網域新增至 Office 365 訂閱。
   
-例如，您無法新增網域 contoso.com 和 contosomarketing.com，，然後再新增子網域 www.contoso.com、 www.partners.contoso.com、 www.partners.marketing.contoso.com，依此類推。
+例如，您可以新增網域 contoso.com 及 contosomarketing.com，然後新增子域 www.contoso.com、www.partners.contoso.com、www.partners.marketing.contoso.com 等等。
   
-當您新增子網域時，會自動驗證並已確認父系網域為基礎。
+當您新增子域時，會根據所驗證的父系網域，自動驗證。
   
-當您將多個網域新增至 Office 365 時，您可以在任何已新增的網域上裝載任何服務 （例如電子郵件）。  *當您變更您的電子郵件到 Office 365，藉由更新網域的 MX 記錄時，傳送至該網域的所有電子郵件都會開始送往 Office 365。* 
+當您將多個網域新增至 Office 365 時，您可以在您已新增的任何網域上裝載任何服務（如電子郵件）。  *當您將電子郵件變更為 Office 365 時，更新網域的 MX 記錄，所有傳送至該網域的電子郵件都會開始進入 Office 365。* 
  
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> 如果您已新增 contoso.com 網域至 Office 365 租用戶，您也可以新增子網域 xyz.contoso.com 到另一個 Office 365 租用戶。 當新增子網域，系統將提示您 DNS 主機服務提供者中新增 TXT 記錄。
+> 如果您已將 contoso.com 網域新增至 Office 365 租使用者，您也可以將子域 xyz.contoso.com 新增至另一個 Office 365 租使用者。 新增子域時，系統會提示您在 DNS 主機服務提供者中新增 TXT 記錄。
 
-## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>為什麼有 「 onmicrosoft.com"網域？
+## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>為什麼我有「onmicrosoft.com」網域？
 
-Office 365 網域為您建立，例如*contoso.onmicrosoft.com*，當您註冊的服務。 當您註冊您建立的使用者識別碼包含的網域，例如*alan@contoso.onmicrosoft.com*。 
+當您註冊服務時，Office 365 會為您建立網域，例如*contoso.onmicrosoft.com*。 您註冊時所建立的使用者識別碼包含網域，如*alan@contoso.onmicrosoft.com*。 
   
- **如果您想要有您的電子郵件看起來像*alan\@contoso.com*:** [購買網域](../get-help-with-domains/buy-a-domain-name.md)，或如果您已擁有只是依照中[新增您的使用者與網域至 Office 365](add-domain.md)的步驟。 
+ **如果您想要讓您的電子郵件看起來像是*alan\@contoso.com*：** [購買網域，](../get-help-with-domains/buy-a-domain-name.md)或是只要您已擁有您的使用者和網域，請依照將您的[使用者與網域新增至 Office 365](add-domain.md)中的步驟進行。 
   
-- **您無法重新命名後的 onmicrosoft 網域註冊。** 例如，如果您選擇的初始網域 fourthcoffee.onmicrosoft.com，您無法變更其設為 fabrikam.onmicrosoft.com。 若要使用不同的 onmicrosoft.com 網域，您必須使用 Office 365 中開始新的訂閱。 
+- **您無法在註冊後重新命名 name.onmicrosoft.com17 網域。** 例如，如果您所選擇的初始網域是 fourthcoffee.onmicrosoft.com，您就無法將它變更為 fabrikam.onmicrosoft.com。 若要使用不同的 onmicrosoft.com 網域，您必須開始使用 Office 365 的新訂閱。 
     
-- **您無法重新命名您的小組網站 URL。** 您的小組網站 URL 根據您的 onmicrosoft.com 網域名稱。 不幸的是，因為 SharePoint Online 的架構的運作方式，您無法重新命名小組網站。 
+- **您無法重新命名您的小組網站 URL。** 您的小組網站 URL 是以您的 onmicrosoft.com 功能變數名稱為基礎。 不幸的是，由於 SharePoint 線上架構的運作方式，您無法重新命名小組網站。 
     
-- **您無法移除 onmicrosoft 網域。** Office 365 需要保留其周圍，因為它在幕後用於您的訂閱。 但您不需要使用網域自行後您已新增自訂的網域。 
+- **您無法移除您的 name.onmicrosoft.com17 網域。** Office 365 需要保留它，因為它是用於您訂閱的幕後。 不過，您不需要在新增自訂網域之後，自行使用網域。 
     
-您可以繼續使用初始的 onmicrosoft.com 網域即使之後新增您的網域。 它仍適用於電子郵件和其他服務，因此您可以選擇。
+您可以繼續使用初始 onmicrosoft.com 網域，即使是在您新增網域之後。 它仍適用于電子郵件和其他服務，所以是您的選擇。
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>為什麼有 「 onmicrosoft.de 」 網域？
+## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>為什麼我有「onmicrosoft.de」網域？
 
-Office 365 網域為您建立，例如*contoso.onmicrosoft.de*，當您註冊的服務。 當您註冊您建立的使用者識別碼包含的網域，例如*alan@contoso.onmicrosoft.de*。 
+當您註冊服務時，Office 365 會為您建立網域，例如*contoso.onmicrosoft.de*。 您註冊時所建立的使用者識別碼包含網域，如*alan@contoso.onmicrosoft.de*。 
   
- **如果您想要有您的電子郵件看起來像*alan@contoso.de*:** [購買網域](../get-help-with-domains/buy-a-domain-name.md)，或如果您已擁有只是依照中[新增您的使用者與網域至 Office 365](add-domain.md)的步驟。 
+ **如果您想要讓您的電子郵件看起來像是*alan@contoso.de*：** [購買網域](../get-help-with-domains/buy-a-domain-name.md)，或是只要[將您的使用者與網域新增至 Office 365](add-domain.md) ，也請依照下列步驟進行。 
   
-- **您無法重新命名後的 onmicrosoft 網域註冊。** 例如，如果您選擇的初始網域 fourthcoffee.onmicrosoft.de，您無法變更它 fabrikam.onmicrosoft.de。 若要使用不同的 onmicrosoft.de 網域，您必須使用 Office 365 中開始新的訂閱。 
+- **您無法在註冊後重新命名 name.onmicrosoft.com17 網域。** 例如，如果您所選擇的初始網域是 fourthcoffee.onmicrosoft.de，您就無法將它變更為 fabrikam.onmicrosoft.de。 若要使用不同的 onmicrosoft.de 網域，您必須開始使用 Office 365 的新訂閱。 
     
-- **您無法重新命名您的小組網站 URL。** 您的小組網站 URL 根據您的 onmicrosoft.de 網域名稱。不幸的是，因為 SharePoint Online 的架構的運作方式，您無法重新命名小組網站。 
+- **您無法重新命名您的小組網站 URL。** 您的小組網站 URL 是以您的 onmicrosoft.de 功能變數名稱為基礎。不幸的是，由於 SharePoint 線上架構的運作方式，您無法重新命名小組網站。 
     
-- **您無法移除 onmicrosoft 網域。** Office 365 需要保留其周圍，因為它在幕後用於您的訂閱。 但您不需要使用網域自行後您已新增自訂的網域。 
+- **您無法移除您的 name.onmicrosoft.com17 網域。** Office 365 需要保留它，因為它是用於您訂閱的幕後。 不過，您不需要在新增自訂網域之後，自行使用網域。 
     
-您可以繼續使用初始 onmicrosoft.de 網域即使之後新增您的網域。 它仍適用於電子郵件和其他服務，因此您可以選擇。
+您可以繼續使用初始 onmicrosoft.de 網域，即使是在您新增網域之後。 它仍適用于電子郵件和其他服務，所以是您的選擇。
   
 ::: moniker-end
 
-## <a name="how-do-i-verify-my-nonprofit-or-education-status"></a>如何確認我非營利組織版或教育版的狀態？
+## <a name="how-do-i-verify-my-nonprofit-or-education-status"></a>如何驗證我的非盈利性或教育狀態？
 
-1. 在[系統管理中心](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx)來啟動精靈，請選取 [**安裝**]。 （請務必先登入 Office 365）。 
+1. 在系統[管理中心](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx)選取 [**安裝**] 以啟動嚮導。 （請務必先登入 Office 365。） 
     
-2. 若要成為系統管理員為您的學校，選取 [**成為系統管理員**選項在 Office 365 中。 
+2. 若要成為 school 的系統管理員，請選取 [成為 Office 365 的系統**管理員**] 選項。 
     
-3. 系統會提示您在您網域的 DNS 主機網站上新增 TXT DNS 記錄。 為什麼？ 因為在 DNS 主機登入，並新增您的網域的記錄，您證明到 Office 365 您擁有的網域名稱。
+3. 系統會提示您在網域的 DNS 主機網站上新增 TXT DNS 記錄。 為什麼？ 由於是在 DNS 主機登入，並為您的網域新增記錄，因此您可以為 Office 365 證明您擁有該功能變數名稱。
     
-4. 新增記錄之後，您會回到 Office 365 入口網站，並確認您已新增它，因此可以檢查 Office 365。
+4. 在您新增記錄後，您會回到 Office 365 入口網站，並確認您已新增該記錄，因此 Office 365 可以進行檢查。
     
-有非營利組織版，且想要取得 Office 365？ [請確定您的組織符合要求](https://www.microsoft.com/en-us/nonprofits/eligibility)，然後註冊服務。 
+是否有非贏利且想要取得 Office 365？ [請確定您的組織符合資格](https://www.microsoft.com/en-us/nonprofits/eligibility)，然後註冊服務。 
   
-想要深入了解成為您學校的系統管理員嗎？ [解它](https://docs.microsoft.com/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education
+想要深入瞭解如何成為您的學校管理員？ [深入瞭解](https://docs.microsoft.com/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education
 )。
   
-## <a name="can-i-pilot-office-365-with-just-a-few-email-addresses-from-my-custom-domain"></a>可以我試驗 Office 365 與幾電子郵件地址從我的自訂網域？
+## <a name="can-i-pilot-office-365-with-just-a-few-email-addresses-from-my-custom-domain"></a>我可以使用來自自訂網域的一些電子郵件地址試驗 Office 365 嗎？
 
-您可以但有一些限制：
+您可以，但有一些限制：
   
-- 您目前的電子郵件提供者必須提供電子郵件轉寄功能。
+- 您目前的電子郵件提供者必須提供電子郵件轉接功能。
     
-- 管理您的 Office 365 相關的 DNS 記錄，在 DNS 主機服務提供者，所需，而不是具有 Office 365 為您管理這些記錄。 若要了解這項功能的需要，請參閱新增網域至 Office 365 時您想要管理自己的 DNS 記錄。
+- 您需要在您的 DNS 主機服務提供者管理與 Office 365 相關的 DNS 記錄，而不是讓 Office 365 為您管理這些記錄。 若要瞭解這需要做什麼，請參閱將您的網域新增至 Office 365，以管理您自己的 DNS 記錄。
     
-- 某些 Office 365 的功能將無法使用：
-- 使用者將無法看到其他電子郵件提供者上使用者的空閒/忙碌資訊。
-- 系統管理員將無法從一個地方管理所有人的帳戶。
+- 有些 Office 365 功能無法使用：
+- 使用者將無法查看位於其他電子郵件提供者上之使用者的空閒/忙碌資訊。
+- 系統管理員無法從單一位置管理所有人的帳戶。
 - 使用者可能無法使用 Office 365 垃圾郵件篩選
 
-### <a name="how-to-set-up-an-office-365-pilot"></a>如何設定 Office 365 試驗部署
+### <a name="how-to-set-up-an-office-365-pilot"></a>如何設定 Office 365 試驗
     
 1. 登入 Microsoft 365 系統管理中心
     
     1. 使用您的公司或學校帳戶登入 Office 365。
         
-    2. 移至 [**設定** \> **網域**。 
+    2. 移至 [**設定** \> ] [**網域**]。 
     
-2. 驗證您擁有您想要使用的網域
+2. 確認您擁有要使用的網域
     
-    1. 在 [**網域**] 頁面上選取 [**新增網域**]。 
+    1. 在 [**網域**] 頁面上，選取 [**新增網域**]。 
         
-    2. 在面板中，輸入網域，在此範例 cohowinery.com，，然後選取 [**下一步**。 
+    2. 在面板中，輸入網域，在此範例中 cohowinery.com，然後選取 **[下一步]**。 
         
-    3. 在**驗證**網域] 頁面上，依照逐步指示。 
+    3. 在 [**驗證**網域] 頁面上，遵循逐步指示。 
         
-    4. 在下拉式清單中，選取 [DNS 主機服務提供者，並遵循指示來顯示您擁有該網域。
+    4. 在下拉式清單中，選取您的 DNS 主機服務提供者，然後依照指示，顯示您擁有該網域。
         
-    5. 選取 [**驗證**]。 花幾分鐘的時間和 72 小時，才會生效的 DNS 變更之間。 
+    5. 選取 [**驗證**]。 DNS 變更會在幾分鐘和72小時之間生效。 
         
     6. 驗證成功時，系統會要求您修改您的 DNS 記錄。
     
-3. 標記為 Exchange Online 中共用的網域
+3. 在 Exchange Online 中將網域標示為「共用」
     
-    1. 移至**Exchange 系統管理中心**(EAC)。 
+    1. 移至**Exchange 系統管理中心**（EAC）。 
         
-    2. 在 [**郵件流程**] 區段中，選取 **[公認的網域**。 
+    2. 在 [**郵件流程**] 區段中，選取 [**公認的網域**]。 
         
     3. 按兩下您要修改的網域。
         
-    4. 在開啟視窗中，選取 [**內部轉送**]。 
+    4. 在開啟的視窗中，選取 [**內部轉送**]。 
         
-    5. 選取 **[儲存]**。 此設定可能需要幾分鐘的時間才會生效。 
+    5. 選取 [儲存]****。 此設定可能需要幾分鐘才會生效。 
     
-4. （選用） 解除封鎖在現有的電子郵件伺服器
+4. （選用）解除封鎖現有的電子郵件伺服器
     
-    1. Office 365 會使用 Exchange Online Protection (EOP) 的垃圾郵件保護。 如果 EOP 偵測到大量垃圾郵件轉寄您目前的郵件伺服器，可能會封鎖，以防止轉寄功能無法運作。 如果您有自信與垃圾郵件保護您電子郵件提供者使用，您可以 whitelist 他們在 Office 365 中的伺服器。 不過，這也可讓送達您原始的伺服器到 Office 365 信箱、 來自透過任何垃圾郵件，而且您將無法評估 Office 365 如何防止垃圾郵件。
+    1. Office 365 使用 Exchange Online Protection （EOP）進行垃圾郵件保護。 如果 EOP 偵測到您目前的郵件伺服器轉寄大量的垃圾郵件，可能會封鎖垃圾郵件，這樣會使轉接無法運作。 如果您確信其他電子郵件提供者所用的垃圾郵件保護，您可以在 Office 365 中白名單其伺服器。 不過，這也會讓透過您原始伺服器到達的任何垃圾郵件都進入 Office 365 信箱，而且您將無法評估 Office 365 如何防止垃圾郵件。
     
-    2. 移至 Exchange 系統管理中心 (EAC)。
+    2. 移至 Exchange 系統管理中心（EAC）。
         
-    3. 在 EAC 中，選取 [**保護**]，然後選取**連線篩選器**。 
+    3. 在 EAC 中，選取 [**保護**]，然後選取 [連線**篩選**]。 
         
-    4. 在**IP 允許清單**中，選取 [ **+**，並新增您可以從目前的電子郵件提供者取得的郵件伺服器 IP 位址。 
+    4. 在 [ **IP 允許] 清單**中**+**，選取，並新增您可以從目前的電子郵件提供者取得的郵件伺服器 IP 位址。 
     
-5. 建立使用者帳戶，並設定主要 (回覆-to) 地址
+5. 建立使用者帳戶並設定主要（回復）位址
     
     1. 移至 Microsoft 365 系統管理中心。
         
-    2. 在左的導覽列中，選取 [**使用者** \> **作用中的使用者**。 
+    2. 在左導覽列中，選取 [**使用者** \>作用中**使用者**]。 
         
     3. 建立使用者帳戶。
         
-    4. 每個帳戶選取 **+ （新增）**，並填寫所需的資訊。 
+    4. 針對每個帳戶選取 **[+] （新增）**，並填寫必要的資訊。 
         
-    5. 若要保留使用者的電子郵件相同為它目前正被，**使用者名稱**] 欄位應完全使用者的現有電子郵件地址相同。 
+    5. 若要讓使用者的電子郵件與其目前相同，[**使用者名稱**] 欄位應該與使用者的現有電子郵件地址完全相同。 
         
-    6. 使用者名稱] 旁邊，從下拉式清單中選取您的自訂網域名稱。
+    6. 在 [使用者名稱] 旁，從下拉式清單中選取您的自訂功能變數名稱。
         
-    7. 選取 [**建立** \> **關閉**。 
+    7. 選取 [**建立** \> **關閉**]。 
         
-6. 更新 DNS 主機服務提供者的 DNS 記錄
+6. 在您的 DNS 主機服務提供者更新 DNS 記錄
     
-    1. 登入您 DNS 主機服務提供者的網站，並遵循[Office 365 步驟任何 DNS 主機服務提供者處建立 DNS 記錄](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。 **進行下列例外：**
+    1. 登入您的 DNS 主機服務提供者的網站，並遵循在[任何 dns 主機服務提供者上為 Office 365 步驟建立 dns 記錄](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。 **請進行下列例外狀況：**
     
         1. 請勿建立新的 MX 記錄或變更現有的 MX 記錄。
             
-        2. 如果您已為您舊的電子郵件提供者的寄件者原則架構 (SPF) 記錄，而不是建立新的 SPF (TXT) 記錄的 Exchange Online 中，剛加入 「 include: spf.protection.outlook.com 「 目前的 TXT 記錄。 例如，「 v = spf1 mx include:adatum.com include: spf.protection.outlook.com ~ 所有 」。
+        2. 如果您先前的電子郵件提供者已具備寄件者原則架構（SPF）記錄，而不是為 Exchange Online 建立新的 SPF （TXT）記錄，請直接在目前的 TXT 記錄中新增「包含: spf.protection.outlook.com .com」。 例如，"v = spf1 mx 包含:adatum 包含: spf.protection.outlook.com. .com ~ all"。
             
-        3. 如果您不具備 SPF 記錄，修改，故 Office 365 所要包含您目前的電子郵件提供者，再加上 spf.protection.outlook.com 的網域。 這會授與來自這兩個電子郵件系統的外寄郵件。
+        3. 如果您還沒有 SPF 記錄，請修改 Office 365 建議的一個，以包含目前電子郵件提供者的網域，加上 spf.protection.outlook.com。 這會從兩個電子郵件系統中授權外寄郵件。
             
-7. 設定在您目前的提供者的電子郵件轉寄
+7. 在您目前的提供者設定電子郵件轉寄
     
-    1. 在您目前的電子郵件提供者，設定為您的使用者轉接至您的 onmicrosoft.com 網域的電子郵件帳戶：
+    1. 在您目前的電子郵件提供者中，將您的使用者電子郵件帳戶的轉寄功能設定為您的 onmicrosoft.com 網域：
         
-    2. 使用者 A 的信箱應轉寄給 usera@yourcompany.onmicrosoft.com
+    2. 使用者 A 的信箱應該轉寄至 usera@yourcompany.onmicrosoft.com
         
-    3. 使用者 B 的信箱應轉寄給 userb@yourcompany.onmicrosoft.com
+    3. 使用者 B 的信箱應該轉寄至 userb@yourcompany.onmicrosoft.com
         
     4. 當您完成此步驟：
         
-    5. 所有傳送到 usera@yourcompany.com 和 userb@yourcompany.com 郵件則可在 Office 365。
+    5. 所有傳送至 usera@yourcompany.com 和 userb@yourcompany.com 的郵件都會出現在 Office 365。
     
     6. 附註：
         
-        - 如需設定轉寄的確切步驟連絡您目前的電子郵件提供者。
+        - 如需設定轉接的確切步驟，請與您目前的電子郵件提供者聯繫。
             
-        - 您不需要保留在目前的電子郵件提供者的郵件的副本。
+        - 您不需要在目前的電子郵件提供者中保留郵件複本。
             
-        - 大部分提供者轉寄電子郵件離開寄件者的回覆地址不變，以便回覆移至原始寄件者。
+        - 大部分提供者會轉寄電子郵件，讓寄件者的回復位址保持不變，因此回復會移至原始寄件者。
     
 8. 測試郵件流程
     
-    1. 登入 Outlook Web App 使用者 A 的認證。
+    1. 使用使用者 A 的認證登入 Outlook Web App。
         
-    2. 執行下列測試：
+    2. 請執行下列測試：
         
-    3. 測試本機的 Office 365 電子郵件。 例如，傳送電子郵件給使用者 b。應該會立即傳遞這封電子郵件。 在此案例中，郵件將不會路由傳送到原始的伺服器上的使用者 B 的信箱因為 Office 365 會為本機看到該信箱。
+    3. 測試本機 Office 365 電子郵件。 例如，傳送電子郵件給使用者 B。這封電子郵件應該會立即傳遞。 在此情況下，郵件將不會路由傳送至原始伺服器上的使用者 B 信箱，因為 Office 365 會將信箱視為本機。
         
-    4. 測試電子郵件給其他電子郵件系統上的任何人。 例如，傳送電子郵件給使用者 c。這封電子郵件應該傳遞至原始的郵件伺服器上的 C 使用者的信箱。
+    4. 測試電子郵件給其他電子郵件系統上的某人。 例如，傳送電子郵件給使用者 C。這封電子郵件應該傳送至原始郵件伺服器上的使用者 C 信箱。
         
-    5. 從外部的帳戶，或從其他電子郵件系統上的員工的電子郵件帳戶，請確認轉寄已正確設定，其他電子郵件系統上。 例如，從使用者 C origninal 伺服器帳戶或 Hotmail 帳戶，使用者傳送的電子郵件，並確認它送達使用者 A 的 Office 365 信箱。
+    5. 從外部帳戶，或是從其他電子郵件系統上某員工的電子郵件帳戶，確認已在其他電子郵件系統上正確設定轉寄功能。 例如，從使用者 C 的 origninal server 帳戶或 Hotmail 帳戶傳送使用者 A 電子郵件，並確認其送達使用者 A 的 Office 365 信箱。
         
 9. 移動信箱內容
     
-    1. 由於有移動，只有兩位使用者，因為使用者 A 和 B 使用者都使用 Outlook 已可以藉由開啟舊移動電子郵件。在 [新的 Outlook 設定檔並複製郵件、 行事曆項目、 連絡人、 等，從 Outlook 資料檔 (.pst) 匯入 Outlook 項目中所示的 PST 檔案。 一旦組織中的 Office 365 信箱中的適當位置、 項目所有可從任何裝置，任何地方。
+    1. 由於只有兩位使用者可以移動，而且由於使用者 A 和使用者 B 都使用 Outlook，因此可以開啟舊的電子郵件來移動電子郵件。PST 檔案，並複製郵件、行事曆專案、連絡人等，如從 Outlook 資料檔（.pst）匯入 Outlook 專案中所示。 在 Office 365 信箱中的適當位置進行組織時，這些專案就可以從任何裝置從任何地方存取。
         
-    2. 當涉及多個信箱時，或員工您尚未使用 Outlook，您可以使用可用的移轉工具在 Exchange 系統管理中心。 若要開始，移至 Exchange 系統管理中心，並按照指示中遷移電子郵件從 IMAP 伺服器至 Exchange Online 信箱。
+    2. 當涉及更多信箱，或如果員工尚未使用 Outlook，您可以使用 Exchange 系統管理中心提供的遷移工具。 若要開始使用，請移至 Exchange 系統管理中心，並遵循將電子郵件從 IMAP 伺服器遷移至 Exchange Online 信箱的指示。
     

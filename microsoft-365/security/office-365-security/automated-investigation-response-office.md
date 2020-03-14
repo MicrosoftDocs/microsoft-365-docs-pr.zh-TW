@@ -1,5 +1,5 @@
 ---
-title: 自動化的調查和 Office 365 中的回應 （空調）
+title: Office 365 中的自動化調查和回應（AIR）
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -13,127 +13,127 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: 在 Office 365 進階威脅防護計劃 2 中，取得自動化調查及回應能力的概觀。
+description: 深入瞭解 Office 365 高級威脅防護方案2中的自動化調查和回應功能。
 ms.custom: air
 ms.openlocfilehash: 341d950f81d0d74deab901f0e5af24a559c0f342
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288501"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633821"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>自動化的調查和 Office 365 中的回應 （空調）
+# <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自動化調查和回應（AIR）
 
-為會觸發安全性警訊，它會高達您查看這些提醒，並採取步驟來保護您的組織的安全性作業小組。 有時候，安全性作業小組可以覺得負荷量，便會觸發警示。 自動化的調查和 Office 365 中的回應 （空調） 功能可協助。 空調可讓您操作更有效率的安全性作業小組。 空調功能在今日的熟知威脅的回應中包含自動化的調查程序。 適當的補救動作等候核准，讓您回應偵測到的威脅的安全性作業小組。 
+在觸發安全性警示時，您的安全性運作小組會檢查這些警示，並採取步驟來保護您的組織。 在某些情況下，安全性作業小組可能感覺到所觸發的警示數量所淹沒。 Office 365 中的自動化調查和回應（AIR）功能可能會有所説明。 AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括自動調查處理程式，以回應目前存在的已知威脅。 適當的修正動作等待核准，讓您的安全性作業小組能夠回應偵測到的威脅。 
 
-本文提供空調的概觀。 當您準備好要開始使用空調時，請參閱[自動調查及回應 Office 365 中的威脅](office-365-air.md)。
+本文提供空中的概覽。 當您準備好開始使用 AIR 時，請參閱[自動調查和回應 Office 365 中的威脅](office-365-air.md)。
 
 ## <a name="at-a-high-level"></a>在高層級
 
-為會觸發警訊，安全性 playbooks 會進入效果。 根據情況而異，就可以開始[自動的調查程序](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 期間和之後自動調查，被建議的[修復動作](air-remediation-actions.md)。 Office 365 進階威脅防護中自動不採取任何動作。 您的安全性操作小組評論，然後再[核准或拒絕每個修復動作](air-remediation-actions.md#approve-or-reject-pending-actions)，並完成時，每個調查完成。 所有這些活動追蹤和檢視位於 Office 365 安全性 & 合規性中心 （請參閱[檢視調查的詳細資料](air-view-investigation-results.md#view-details-of-an-investigation)）。
+當觸發警示時，安全性行動行動會生效。 根據情況而定，可以開始進行[自動化調查過程](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 在自動調查期間和之後，建議進行[修正動作](air-remediation-actions.md)。 Office 365 的 [高級威脅防護] 中不會自動採取任何動作。 您的安全性運作小組會進行審閱，然後[核准或拒絕每項修復動作](air-remediation-actions.md#approve-or-reject-pending-actions)，當執行完畢時，每項調查都會完成。 所有這些活動都會在 Office 365 安全性 & 規範中心中追蹤和查看（請參閱[查看調查的詳細資料](air-view-investigation-results.md#view-details-of-an-investigation)）。
 
-下列各節提供更多詳細資訊提醒、 安全性 playbooks 和空調的巨集指令中的範例。
+下列各節提供有關警示、安全性行動手冊及動作中的空氣範例的詳細資訊。
 
 ## <a name="alerts"></a>警示
 
-[提醒](../../compliance/alert-policies.md#viewing-alerts)代表觸發程序適用於安全性事件回應作業小組工作流程。 排列優先順序的調查，同時確保沒有威脅 unaddressed 提醒右組是一項挑戰。 時以手動方式執行提醒到調查，安全性作業小組必須搜尋，並與相互關聯實體 （例如內容、 裝置及使用者） 威脅的風險。 這類任務及工作流程可很耗時及牽涉到多個工具和系統。 空調、 調查與 Office 365 安全性事件回應會自動完成察覺主要的安全性與威脅管理警報自動觸發安全性回應 playbooks。 
+[警示](../../compliance/alert-policies.md#viewing-alerts)代表事件回應的安全性作業小組工作流程的觸發器。 決定要調查的適當一組提醒，同時確保沒有威脅 unaddressed 面臨挑戰。 當手動調查何時執行警示時，安全性作業小組必須搜尋實體（例如內容、裝置和使用者），並與威脅相關聯。 這類工作和工作流程可能非常耗時且包含多個工具和系統。 透過利用關鍵安全性和威脅管理提醒自動觸發安全性回應行動手冊，透過 AIR、調查和 Office 365 安全性事件的回應可自動進行。 
 
-目前的空調，從下列幾種類型的警示原則中產生警示，可自動調查：  
+目前對於 AIR，會自動調查從下列類型的報警原則產生的警示：  
 
-- 偵測到有潛在的惡意 URL 點擊
-- 報告的釣魚程式 * 作為使用者的電子郵件
-- 電子郵件包含惡意程式碼傳遞 * 後移除
-- 電子郵件訊息包含傳遞 * 後移除的釣魚程式 Url
-- 傳送模式偵測到可疑的電子郵件#
-- 使用者限制而無法傳送電子郵件#
-
-> [!NOTE]
-> 以星號 （*） 標記的警示關閉的電子郵件通知與指派安全性 & 合規性中心，各自的警示原則*提示資訊*嚴重性。 電子郵件通知可以開啟透過[警示原則設定](../../compliance/alert-policies.md#alert-policy-settings)。 以雜湊 （#） 標記的提醒是通常可公開預覽 playbooks 相關聯的提醒。
-
-若要檢視提醒，安全性 & 合規性中心中，選擇 [**提醒** > **檢視警示**。 選取警示若要檢視其詳細資料，並從該處，使用的**檢視調查**連結移至對應的[調查](air-view-investigation-results.md#investigation-graph)。  
+- 偵測到可能的惡意 URL 按一下
+- 以使用者身分舉報為網路釣魚的電子郵件 *
+- 傳遞後移除惡意程式碼的電子郵件訊息 *
+- 傳遞後移除包含網路釣魚 URLs 的電子郵件 *
+- 偵測到電子郵件傳送模式#
+- 使用者限制傳送電子郵件#
 
 > [!NOTE]
-> 預設為 [警示] 檢視中隱藏資訊警示。 若要查看它們，請變更篩選功能，包括資訊警示的警示。
+> 以星號（*）標示的警示會在安全性 & 合規性中心內的各項警示原則中指派*資訊*嚴重性，並關閉電子郵件通知。 您可以透過[報警原則](../../compliance/alert-policies.md#alert-policy-settings)設定開啟電子郵件通知。 使用雜湊（#）標示的警示，通常是與公共預覽行動手冊相關聯的警示。
 
-如果您的組織管理您的安全性提醒透過警示管理系統、 服務管理系統或安全性資訊和事件管理 (SIEM) 的系統，您可以透過 [電子郵件通知，或是透過[Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)該系統傳送 Office 365 警示。 透過電子郵件或 API 調查警示通知包含連結來存取安全性 & 合規性中心，啟用快速瀏覽到調查指派的安全性系統管理員中的警示。
+若要在安全性 & 規範中心中查看提醒，請選擇 [**提醒** > ] [**查看提醒**]。 選取警示以查看其詳細資料，然後從那裡使用「**查看調查**」連結，以移至對應的[調查](air-view-investigation-results.md#investigation-graph)。  
 
-![連結至調查的提醒](../../media/air-alerts-page-details.png) 
+> [!NOTE]
+> 預設會在提醒視圖中隱藏資訊警示。 若要查看，請變更警示篩選，以包含資訊性警示。
 
-## <a name="security-playbooks"></a>安全性 playbooks
+如果您的組織透過警示管理系統、服務管理系統或安全性資訊和事件管理（SIEM）系統來管理安全性警示，您可以透過電子郵件通知或透過[office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)，將 Office 365 警示傳送給該系統。 透過電子郵件或 API 的調查警示通知包含在安全性 & 規範中心中存取警示的連結，讓指派的安全性系統管理員可以快速流覽調查。
 
-安全性 playbooks 所面臨的自動化 Office 進階威脅防護和 Microsoft 威脅防護中的核心的後端原則。 根據常見的真實世界的安全性案例 playbooks 空調中所提供且開發安全性為基礎的意見反應安全性作業小組。 當組織內會觸發特定的警示時，就會自動啟動安全性 playbook。 之後會觸發警示，相關聯的 playbook 執行自動化調查及回應 （空調） 系統。 調查步驟透過分析根據該特定警示 playbook，查看所有關聯的中繼資料 （包括電子郵件、 使用者、 主旨、 寄件者等等） 的提醒。 根據調查 playbook 的結果，空調建議一組的動作，貴組織的安全性小組可以採取控制項，並降低威脅。 
+![連結至調查的警示](../../media/air-alerts-page-details.png) 
 
-您會看到與空調安全性 playbooks 被設計來處理最常見的威脅組織遇到今天的電子郵件。 他們根據安全性作業和事件回應小組，包括協助防禦 Microsoft 和我們的客戶資產的輸入。
+## <a name="security-playbooks"></a>安全性行動手冊
 
-### <a name="security-playbooks-are-rolling-out-in-phases"></a>安全性 playbooks 已推出階段
+安全性行動行動是以 Office 高級威脅防護和 Microsoft 威脅防護為自動化的後端原則。 AIR 中所提供的安全性行動技巧是以常見的實際安全性案例為依據，並根據安全性運作小組的意見來開發。 當您的組織內觸發特定警示時，會自動啟動安全性行動手冊。 警示觸發後，會自動調查和回應（AIR）系統執行相關聯的行動手冊。 調查步驟：透過該特定警示行動手冊分析提醒，查看所有相關聯的中繼資料（包括電子郵件訊息、使用者、主題、寄件者等）。 根據調查行動手冊的結果，AIR 建議您的組織安全小組可以採取的一組動作來控制及緩解威脅。 
 
-航空的一部分，安全性 playbooks 已推出階段。 階段 1 是現在可使用，並包含數個 playbooks 提供建議的安全性系統管理員可以檢閱和核准的動作：
-- 使用者報告的釣魚程式訊息
-- URL 按一下 verdict 變更
-- 偵測到的惡意程式碼後傳遞 （惡意程式碼時能量光束）
-- 釣魚程式偵測到後續傳遞 ZAP （Phish 時能量光束）
+您可以使用 AIR 的安全性行動方式，來處理目前的組織使用電子郵件所遇到的最常見威脅。 它們是以安全性作業和事件回應小組的輸入為基礎，包含的人員可協助保護 Microsoft 和我們客戶的資產。
 
-階段 1 也包含觸發的系統管理員的電子郵件調查 （使用[威脅總管](threat-explorer.md)） 的支援。
+### <a name="security-playbooks-are-rolling-out-in-phases"></a>安全性行動行動是分階段推出
 
-階段 2 現在是與**公開預覽**中提供建議的動作，並在調查問題達到安全性管理員下列 playbooks 的進度：
-- 使用者回報為遭入侵 （公用預覽）
+在飛機的一部分中，安全性行動行動是在階段中推出。 階段1現在已可供使用，且包含數個行動手冊，可提供安全性管理員可審查及核准的動作建議：
+- 使用者報告的網路釣魚郵件
+- URL 按一下判定變更
+- 惡意程式碼偵測到傳遞後（惡意程式碼 ZAP）
+- 網路釣魚偵測到傳遞傳遞（網路釣魚 ZAP）
 
-將發行進一步 playbooks，因為它們已完成。 請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)請參閱什麼是計劃的及接下來推出。
+階段1也包含對管理員觸發電子郵件調查的支援（使用[威脅瀏覽器](threat-explorer.md)）。
 
-### <a name="playbooks-include-investigation-and-recommendations"></a>Playbooks 包括調查與建議
+第2階段現在的進度是**公開預覽**中的下列行動手冊，提供動作和 aiding 安全性管理員調查問題的建議：
+- 使用者舉報為已遭破壞（公開預覽）
 
-在空調，每個安全性 playbook 包括： 
-- 根調查的電子郵件的實體 （檔案、 Url、 收件者、 IP 位址等等。），
-- 進一步四處尋找類似組織所接收的電子郵件 
-- 識別並對應其他潛在威脅，所採取的步驟和 
+進一步的行動手冊將在完成後發行。 請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)，以查看已計畫及即將推出的內容。
+
+### <a name="playbooks-include-investigation-and-recommendations"></a>行動行動包括調查和建議
+
+在 AIR 中，每個安全性行動手冊包括： 
+- 電子郵件實體的根調查（檔案、URLs、收件者、IP 位址等）
+- 進一步搜尋組織所收到的類似電子郵件 
+- 識別和關聯其他潛在威脅所採取的步驟，以及 
 - 建議的威脅修復動作。
 
-每個高階步驟皆包含一些 substeps 執行提供深層、 詳細又詳盡回應威脅。
+每個高階步驟都包含一些執行的子步驟，以提供對威脅的深入、詳盡及詳盡的回應。
 
-## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>範例： 使用者回報的釣魚程式訊息啟動調查 playbook
+## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>範例：使用者報告的網路釣魚郵件啟動調查行動手冊
 
-當您組織中的使用者送出的電子郵件訊息和報告至 Microsoft，請使用[報告訊息增益集以進行 Outlook 或 Outlook Web App](enable-the-report-message-add-in.md)，報告也會傳送到您的系統，且使用者報告檢視中顯示在檔案總管。 此使用者回報郵件現在會觸發系統架構資訊警示，這會自動啟動 [調查 playbook。
+當您組織中的使用者使用[Outlook 或 Outlook Web App 的報告訊息增益集](enable-the-report-message-add-in.md)提交電子郵件，並將它報告給 Microsoft 時，該報告也會傳送至您的系統，而且會顯示在瀏覽器的使用者報告的視圖中。 這位使用者報告的訊息現在會觸發以系統為基礎的資訊性警示，這會自動啟動調查行動手冊。
 
-在根調查階段中，會評估的電子郵件的各個層面。 包括：
-- 可能需有哪些類型的威脅它決定;
-- 寄件者; 它
-- 其中電子郵件寄件地 （傳送基礎結構）;
-- 電子郵件的其他執行個體是否已傳遞或封鎖;
-- 從我們分析師; 評估
-- 是否任何已知的行銷活動; 相關聯的電子郵件
+在根調查階段中，會評估電子郵件的各個層面。 包括：
+- 決定可能的威脅類型;
+- 誰送出;
+- 電子郵件傳送來源的位置（傳送基礎結構）;
+- 電子郵件的其他實例是否已傳遞或封鎖;
+- 我們分析員的評估;
+- 電子郵件是否與任何已知的市場活動相關聯;
 - 等等。
 
-根調查完成後，playbook 會提供建議的動作，才會在原始的電子郵件和與它相關聯的實體清單。
+完成根調查之後，「行動手冊」會提供建議執行的動作清單，以供原始電子郵件和與其相關聯的實體使用。
   
-接下來，數個威脅調查並狩獵步驟執行：
+接下來，會執行數個威脅調查和搜尋步驟：
 
-- 透過電子郵件叢集搜尋識別類似的電子郵件訊息。
-- 其他平台，例如[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)可共用接收的訊號。
-- 決定在任何使用者是否按下可疑的電子郵件訊息中任何前往惡意連結。
-- 檢查完成跨 Office 365 Exchange Online Protection ([EOP](exchange-online-protection-eop.md)) 和 Office 365 進階威脅防護 ([ATP](office-365-atp.md))，以查看是否有任何其他類似的訊息報告的使用者。
-- 若要查看是否使用者已遭洩露完成查核。 這項檢查跨 Office 365、 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)和[Azure Active Directory](https://docs.microsoft.com/azure/active-directory)，相互關聯任何相關的使用者活動異常運用訊號。 
+- 類似的電子郵件會透過電子郵件聚簇搜尋加以識別。
+- 此信號是與其他平臺（例如[Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)）共用。
+- 決定是否任何使用者已透過可疑電子郵件訊息中的任何惡意連結進行按一下。
+- 您可以透過 Office 365 Exchange Online Protection （[EOP](exchange-online-protection-eop.md)）和 Office 365 高級威脅防護（[ATP](office-365-atp.md)）進行檢查，以查看使用者是否會報告其他類似的訊息。
+- 會執行檢查以查看使用者是否遭到破壞。 這種檢查會利用跨 Office 365、 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)和[Azure Active Directory](https://docs.microsoft.com/azure/active-directory)的信號，以關聯任何相關的使用者活動異常。 
 
-狩獵階段風險和威脅指派給各種狩獵步驟。 
+在搜尋階段中，會將風險和威脅指派給各種搜尋步驟。 
 
-修復為 playbook 的最後一個階段。 在這個階段，採取補救步驟為止，根據調查和狩獵階段。 
+修正是行動手冊的最後階段。 在此階段中，會根據調查和搜尋階段採取補救措施。 
 
-## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>範例： 安全性系統管理員會觸發從威脅總管調查
+## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>範例：安全性管理員會觸發來自威脅瀏覽器的調查
 
-除了警示所觸發的自動調查，貴組織的安全性作業小組可以觸發自動進行調查，從[威脅總管](threat-explorer.md)] 中檢視。
+除了警示所觸發的自動調查之外，您的組織的安全性運作小組也可在[威脅瀏覽器](threat-explorer.md)的視圖中觸發自動調查。
 
-例如，假設您正在檢視的資料在檔案總管中關於使用者報告的郵件。 您可以在結果清單中選取項目，然後按一下 [從 （假設您具備適當的補救權限） 的 [動作] 功能表的 [**調查]** 。
+例如，假設您在瀏覽器中查看的是使用者報告的訊息的資料。 您可以選取結果清單中的專案，然後按一下 [動作] 功能表中的 [**調查**] （假設您有適當的修正許可權）。
 
-![使用者報告中的郵件檔案總管與調查] 按鈕](../../media/Explorer-UserReported-Investigate.png)
+![瀏覽器中使用調查按鈕的使用者報告訊息](../../media/Explorer-UserReported-Investigate.png)
 
-另一個範例，假設您正在檢視包含惡意程式碼，偵測到的電子郵件的相關資料，並有幾個偵測為包含惡意程式碼的電子郵件訊息。 您可以選取 [**電子郵件**] 索引標籤，選取一或多個電子郵件訊息，然後在 [**動作**] 功能表上選取 [**調查]**。 
+在另一個範例中，假設您要查看偵測到包含惡意程式碼之電子郵件的資料，且有數個電子郵件偵測到包含惡意程式碼。 您可以選取 [**電子郵件**] 索引標籤，選取一或多封電子郵件，然後在 [**動作**] 功能表上選取 [**調查**]。 
 
-![在檔案總管中開始進行調查，惡意程式碼](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
+![在瀏覽器中開始調查惡意程式碼](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
-類似於 playbooks 觸發警示的通知，會觸發從瀏覽器中檢視的自動調查包含根目錄和調查]，以找出並相互關聯的威脅，步驟及建議的動作來減輕這些威脅。
+類似于警示所觸發的行動行動方式，從瀏覽器中的視圖觸發的自動調查包括根調查、識別和關聯威脅的步驟，以及緩解這些威脅的建議動作。
 
 ## <a name="next-steps"></a>後續步驟
 
-- [開始使用 Office 365 中的空調](office-365-air.md)
+- [開始使用 Office 365 中的 AIR](office-365-air.md)
 
 - [造訪 Microsoft 365 藍圖，查看即將推出的功能](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 

@@ -1,5 +1,7 @@
 ---
-title: 设置连接器以在 Office 365 中存档即时彭博数据
+title: 設定連接器來封存 Instant Bloomberg 資料
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -9,118 +11,114 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理员可以设置本机连接器，将数据从即时彭博聊天工具导入 Office 365。 这样，您就可以在 Office 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如法律保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: eda68a0fdc887a2042a78683eaef0693264d0684
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 管理員可以設定原生連接器，將資料從立即 Bloomberg 聊天室工具匯入 Microsoft 365。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
+ms.openlocfilehash: 81cfa29bf3db101a87a0827985fb59af187d985e
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076705"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632872"
 ---
-# <a name="set-up-a-connector-to-archive-instant-bloomberg-data-in-office-365"></a>设置连接器以在 Office 365 中存档即时彭博数据
+# <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>設定連接器來封存 Instant Bloomberg 資料
 
-在 Office 365 的安全&合规性中心中使用本机连接器从[即时彭博](https://www.bloomberg.com/professional/product/collaboration/)协作工具导入和存档金融服务聊天数据。 设置和配置连接器后，它每天连接到组织的彭博安全 FTP 站点 （SFTP） 一次，将聊天邮件的内容转换为电子邮件格式，然后将这些项目导入 Office 365 中的邮箱。
+使用 Microsoft 365 規範中心內的原生連接器，從[立即 Bloomberg](https://www.bloomberg.com/professional/product/collaboration/)共同作業工具匯入及封存金融服務聊天資料。 在您設定及設定連接器之後，它每天會連線到您組織的 Bloomberg 安全 FTP 網站（SFTP），將聊天訊息的內容轉換成電子郵件訊息格式，然後將這些專案匯入至 Microsoft 365 中的信箱。
 
-将即时彭博数据存储在用户邮箱中后，您可以将 Office 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核和 Office 365 保留策略）应用于即时彭博数据。 例如，您可以使用内容搜索搜索"即时彭博聊天邮件"，或者将包含"即时彭博"数据的邮箱与高级电子数据展示案例中的保管人相关联。 使用即时彭博连接器在 Office 365 中导入和存档数据可帮助您的组织遵守政府和监管政策。
+立即 Bloomberg 資料儲存在使用者信箱之後，您可以將 Microsoft 365 規範功能（例如訴訟暫止、內容搜尋、In-Place 封存、審核、通訊法規遵從性及 Microsoft 365 保留原則）套用至立即。Bloomberg 資料。 例如，您可以使用內容搜尋來搜尋立即 Bloomberg 聊天室訊息，或將包含立即 Bloomberg 資料的信箱與高級 eDiscovery 案例中的保管人建立關聯。 使用立即 Bloomberg 連接器匯入和封存 Microsoft 365 中的資料，可協助您的組織遵守政府和法規原則。
 
-## <a name="overview-of-archiving-instant-bloomberg-data"></a>存档即时彭博数据概述
+## <a name="overview-of-archiving-instant-bloomberg-data"></a>封存立即 Bloomberg 資料一覽
 
-以下概述说明了使用连接器在 Office 365 中存档即时彭博聊天数据的过程。 
+下列概要說明如何使用連接器在 Microsoft 365 中封存立即 Bloomberg 聊天室資料。 
 
-![即时彭博导入和存档流程](media/InstantBloombergDataArchiving.png)
+![立即 Bloomberg 匯入與封存處理常式](../media/InstantBloombergDataArchiving.png)
 
-1. 您的组织与彭博社合作，建立一个彭博SFTP网站。 您还将与彭博社合作，配置即时彭博将聊天消息复制到您的彭博SFTP网站。
+1. 您的組織與 Bloomberg 搭配使用，以設定 Bloomberg SFTP 網站。 您也可以使用 Bloomberg 來設定立即 Bloomberg，將聊天訊息複製到 Bloomberg SFTP 網站。
 
-2. 每24小时一次，来自即时彭博的聊天消息被复制到彭博SFTP网站。
+2. 每隔24小時，便會將來自立即 Bloomberg 的聊天訊息複製到 Bloomberg SFTP 網站。
     
-3. 您在安全&合规性中心创建的即时彭博连接器每天连接到彭博 SFTP 站点，并将聊天消息从以前的 24 小时传输到 Microsoft 云中的安全 Azure 存储区域。 连接器还将聊天按摩的内容转换为电子邮件格式。
+3. 您在 Microsoft 365 規範中心建立的立即 Bloomberg 連接器會連線至 Bloomberg SFTP 網站，並將前24小時的聊天訊息傳送至 Microsoft 雲端中的 secure Azure Storage 區域。 連接器也會將聊天室 massage 的內容轉換為電子郵件訊息格式。
     
-4. 连接器将聊天邮件项目导入特定用户的邮箱或备用邮箱。 连接器通过使用*公司电子邮件地址*属性的值进行。 每个聊天消息都包含此属性，该属性填充了聊天消息的每个参与者的电子邮件地址。 项目是导入到特定用户邮箱还是替代邮箱，基于以下条件：
-    
-    a. **在"公司电子邮件地址"属性中具有对应于 Office 365 用户帐户的值的项目：** 如果连接器*可以将"公司电子邮件地址"* 属性中的电子邮件地址与 Office 365 中的特定用户帐户相关联，则该项目将复制到用户的 Office 365 邮箱中的收件箱文件夹。
-    
-    b. **"公司电子邮件地址"属性中的值与 Office 365 用户帐户不对应的项目：** 如果连接器无法*将"公司电子邮件地址"* 属性中的电子邮件地址与 Office 365 中的特定用户帐户相关联，则该项目将复制到 Office 365 中替代的"全部捕获"邮箱的收件箱文件夹。
+4. 連接器會將聊天訊息專案匯入特定使用者的信箱。 會在特定使用者的信箱中建立名為 InstantBloomberg 的新資料夾，並將這些專案匯入該資料夾。 連接器會使用*CorporateEmailAddress*屬性的值。 每個聊天訊息都包含此內容，該屬性會填入聊天訊息每一位參與者的電子郵件地址。 除了使用*CorporateEmailAddress*屬性的值進行自動使用者對應之外，您也可以透過上載 CSV 對應檔來定義自訂對應。 這個對應檔案應該包含每個使用者的 Bloomberg UUID 和對應的 Microsoft 365 信箱位址。 如果您為每個聊天室專案啟用自動使用者對應並提供自訂對應，連接器會先查看自訂對應檔案。 如果找不到對應至使用者 Bloomberg UUID 的有效 Microsoft 365 使用者，連接器會使用聊天室專案的*CorporateEmailAddress*屬性。 如果連接器在自訂對應檔案或聊天室專案的*CorporateEmailAddress*屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
 
 ## <a name="before-you-begin"></a>開始之前
 
-存档即时彭博数据所需的许多实施步骤都位于 Office 365 外部，必须在安全&合规性中心中创建连接器之前完成。
+封存立即 Bloomberg 資料所需的許多執行步驟都是 Microsoft 365 的外部，必須先完成，您才能在規範中心建立連接器。
 
-- 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 要同意此请求，请转到[此页面，](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)使用 Office 365 全局管理员的凭据登录，然后接受该请求。 您必须完成此步骤，然后才能在步骤 3 中成功创建即时彭博连接器。
+- 您的組織必須同意允許 Office 365 匯入服務存取您組織中的信箱資料。 若要同意此要求，請移至[此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Office 365 全域管理員的認證登入，然後接受要求。 您必須完成此步驟，才可在步驟3中成功建立立即 Bloomberg 連接器。
 
-- [订阅彭博任何地方。](https://www.bloomberg.com/professional/product/remote-access/?bbgsum-page=DG-WS-PROF-PROD-BBA) 这是必要的，以便您可以登录到彭博任何地方访问彭博SFTP网站，你必须设置和配置。
+- 訂閱[Bloomberg Anywhere](https://www.bloomberg.com/professional/product/remote-access/?bbgsum-page=DG-WS-PROF-PROD-BBA)。 這是必要的，讓您可以登入 Bloomberg 無所不在，以存取您必須設定及設定的 Bloomberg SFTP 網站。
 
-- 设置彭博 SFTP（安全文件传输协议）站点。 在与彭博社合作建立SFTP网站后，来自即时彭博的数据每天都会上传到SFTP网站。 您在步骤 2 中创建的连接器连接到此 SFTP 站点，并将聊天数据传输到 Office 365 邮箱。 SFTP 还加密在传输过程中发送到 Office 365 邮箱的即时彭博聊天数据。
+- 設定 Bloomberg SFTP （安全檔案傳輸通訊協定）網站。 使用 Bloomberg 來設定 SFTP 網站之後，立即 Bloomberg 中的資料會上傳至 SFTP 網站（每天）。 您在步驟2中建立的連接器會連接到此 SFTP 網站，並將聊天資料傳送至 Microsoft 365 信箱。 SFTP 也會加密在傳輸過程中傳送至信箱的立即 Bloomberg 聊天室資料。
 
-    有关彭博 SFTP 的信息（也称为*BB-SFTP*）：
+    如需 Bloomberg SFTP （也稱為*BB-SFTP*）的詳細資訊：
 
-    - 请参阅[彭博支持](https://www.bloomberg.com/professional/support/documentation/)公司的"SFTP 连接标准"文档。
+    - 請參閱[Bloomberg 支援部門](https://www.bloomberg.com/professional/support/documentation/)的「SFTP Connectivity 標準」檔。
     
-    - 联系[彭博客户支持。](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc)
+    - 請與[Bloomberg 客戶支援](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc)人員聯繫。
 
-    与彭博社合作建立SFTP网站后，在您回复彭博实施电子邮件后，彭博将为您提供一些信息。 保存以下信息的副本。 您可以使用它在步骤 3 中设置连接器。
+    當您使用 Bloomberg 設定 SFTP 網站後，Bloomberg 會在您回應 Bloomberg 的實施電子郵件訊息之後，為您提供一些資訊。 儲存下列資訊的複本。 您可以使用它在步驟3中設定連接器。
 
-    - 公司代码，它是组织的 ID，用于登录到彭博 SFTP 网站。
+    - 公司的程式碼，也就是您組織的識別碼，用來登入 Bloomberg SFTP 網站。
 
-    - 您的彭博SFTP网站的密码
+    - Bloomberg SFTP 網站的密碼
 
-    - 彭博 SFTP 网站的 URL（例如，sftp.bloomberg.com）
+    - Bloomberg SFTP 網站的 URL （例如，sftp.bloomberg.com）
 
-    - 彭博 SFTP 站点的端口号
+    - Bloomberg SFTP 網站的埠號碼
 
-- 在步骤 3 中创建即时彭博连接器的用户（并在步骤 1 中下载公钥和 IP 地址）必须在 Exchange 联机中分配邮箱导入导出角色。 这是访问安全&合规中心中的**存档第三方数据**页所必需的。 默认情况下，此角色不会分配给 Exchange 联机中的任何角色组。 您可以将邮箱导入导出角色添加到"联机交换"中的组织管理角色组。 或者，您可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在联机交换中管理角色组"一文[中的"创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)或[修改角色组"](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)部分。
+- 您必須在 Exchange Online 中指派「信箱匯入匯出」角色，才能在步驟3中建立立即 Bloomberg 連接器（以及在步驟1中下載公開金鑰及 IP 位址的使用者）。 在 Microsoft 365 規範中心的 [**資料連線器**] 頁面中新增連接器時，這是必要的。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [[建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)或[修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)] 區段。
 
-## <a name="step-1-obtain-ssh-and-pgp-public-keys"></a>步骤 1：获取 SSH 和 PGP 公钥
+## <a name="step-1-obtain-ssh-and-pgp-public-keys"></a>步驟1：取得 SSH 和 PGP 公開金鑰
 
-第一步是获取安全外壳 （SSH） 和良好隐私 （PGP） 的公钥的副本。 在步骤 2 中使用这些键来配置 Bloomberg SFTP 站点，以允许连接器（在步骤 3 中创建）连接到 SFTP 站点并将即时彭博聊天数据传输到 Office 365 邮箱。 在此步骤中，您还可以获得一个 IP 地址，在配置彭博 SFTP 站点时可以使用该 IP 地址。
+第一步是取得安全命令介面（SSH）和非常好的隱私權（PGP）的公開金鑰複本。 您可以在步驟2中使用這些機碼來設定 Bloomberg SFTP 網站，以允許連接器（您在步驟3中建立）連線到 SFTP 網站，並將立即 Bloomberg 聊天室資料傳送至 Microsoft 365 信箱。 您也可以在此步驟中取得 IP 位址，當您設定 Bloomberg SFTP 網站時，您可以使用此位址。
 
-1. <https://protection.office.com>转到，**然后单击"数据治理\>导入"，****然后单击"存档第三方数据"。**
+1. 移至<https://compliance.microsoft.com> ，然後按一下 [**資料連線器** > **立即 Bloomberg**]。
 
-2. 在"**存档第三方数据"** 页上，**单击"添加连接器"，****然后单击"即时彭博"。**
+2. 在 [**立即 Bloomberg**產品描述] 頁面上，按一下 [**新增連接器**]
 
-3. 在"**服务条款"** 页上，单击"**接受"。**
+3. 在 [**服務條款**] 頁面上，按一下 [**接受**]。
 
-4. 在步骤 1**下的"为彭博 SFTP 网站添加凭据"** 上，**单击"下载 SSH 密钥、****下载 PGP 密钥"****和"下载 IP 地址"** 链接，将每个文件的副本保存到本地计算机。 这些文件包含用于在步骤 2 中配置彭博 SFTP 站点的以下项目：
+4. 在 [步驟 1] 底下的 [**新增 BLOOMBERG SFTP 網站認證**] 中，按一下 [**下載 SSH 金鑰**]、[**下載 PGP 金鑰**] 和 [**下載 IP 位址**] 連結，將每個檔案的副本儲存到本機電腦。 這些檔案包含下列專案，可用來設定步驟2中的 Bloomberg SFTP 網站：
 
-   - SSH 公钥：此密钥用于配置安全外壳 （SSH），以便在连接器连接到 Bloomberg SFTP 站点时启用安全远程登录。
+   - SSH 公開金鑰：此機碼用於設定安全命令介面（SSH），以在連接器連線至 Bloomberg SFTP 網站時，啟用安全的遠端登入。
 
-   - PGP 公钥：此密钥用于配置从彭博 SFTP 站点传输到 Office 365 的数据的加密。
+   - PGP 公開金鑰：此機碼是用來設定從 Bloomberg SFTP 網站傳輸至 Microsoft 365 的資料加密。
 
-   - IP 地址：彭博 SFTP 站点配置为仅接受来自此 IP 地址的连接请求，该 IP 地址由您在步骤 3 中创建的即时彭博连接器使用。 
+   - IP 位址： Bloomberg SFTP 網站已設定為只接受來自此 IP 位址的連線要求，該要求是由您在步驟3中建立的立即 Bloomberg 連接器所使用。 
 
-5. **单击"取消"** 以关闭向导。 返回步骤 3 中的此向导以创建连接器。
+5. 按一下 [**取消**] 關閉嚮導。 您會回到步驟3中的這個嚮導，以建立連接器。
 
-## <a name="step-2-configure-the-bloomberg-sftp-site"></a>第 2 步：配置彭博 SFTP 站点
+## <a name="step-2-configure-the-bloomberg-sftp-site"></a>步驟2：設定 Bloomberg SFTP 網站
 
-下一步是使用 SSH 和 PGP 公钥以及您在步骤 1 中获得的 IP 地址为彭博 SFTP 站点配置 SSH 身份验证和 PGP 加密。 这样，您在步骤 3 中创建的即时彭博连接器将连接到彭博 SFTP 站点，并将即时彭博数据传输到 Office 365。 您需要与彭博客户支持合作，建立您的彭博 SFTP 网站。 请联系[彭博客户支持](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc)寻求帮助。 
+下一步是使用 SSH 和 PGP 公開金鑰和您在步驟1中取得的 IP 位址，為 Bloomberg SFTP 網站設定 SSH 驗證和 PGP 加密。 這可讓您在步驟3中建立的立即 Bloomberg 連接器連線至 Bloomberg SFTP 網站，並將立即 Bloomberg 資料傳送至 Microsoft 365。 您需要與 Bloomberg 客戶支援合作，以設定 Bloomberg SFTP 網站。 請與[Bloomberg 客戶支援](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc)部門聯繫以取得協助。 
 
 > [!IMPORTANT]
-> Bloomberg 建议您在步骤 1 中下载的三个文件附加到电子邮件中，并在与客户支持团队合作设置彭博 SFTP 网站时将其发送给他们。
+> Bloomberg 建議您將您在步驟1中下載的三個檔案附加到電子郵件訊息，並將其傳送給他們的客戶支援小組，以設定 Bloomberg SFTP 網站時使用這些檔案。
 
-## <a name="step-3-create-an-instant-bloomberg-connector"></a>第 3 步：创建即时彭博连接器
+## <a name="step-3-create-an-instant-bloomberg-connector"></a>步驟3：建立立即 Bloomberg 連接器
 
-最后一步是在安全&合规中心创建即时彭博连接器。 连接器使用您提供的信息连接到 Bloomberg SFTP 站点并将聊天邮件传输到 Office 365 中的相应用户邮箱框。 
+最後一個步驟是在 Microsoft 365 規範中心建立立即 Bloomberg 連接器。 連接器會使用您提供的資訊來連線至 Bloomberg SFTP 網站，並將聊天訊息傳送至 Microsoft 365 中對應的使用者信箱方塊。 
 
-1. <https://protection.office.com>转到，**然后单击"数据治理\>导入"，****然后单击"存档第三方数据"。**
+1. 移至<https://compliance.microsoft.com> ，然後按一下 [**資料連線器** > **立即 Bloomberg**]。
 
-2. 在"**存档第三方数据"** 页上，**单击"添加连接器"，****然后单击"即时彭博"。**
+2. 在 [**立即 Bloomberg**產品描述] 頁面上，按一下 [**新增連接器**]
 
-3. 在"**服务条款"** 页上，单击"**接受"。**
+3. 在 [**服務條款**] 頁面上，按一下 [**接受**]。
 
-4. 在"**为彭博 SFTP 网站添加凭据"页上**的步骤 3 中，在以下框中输入所需信息，然后单击"**下一步"。**
+4. 在 [**新增 BLOOMBERG SFTP 網站的認證**] 頁面的 [步驟 3] 下，于下列方塊中輸入必要的資訊，然後按 **[下一步]**。
 
-    - **公司代码：** 您组织的 ID，用作彭博 SFTP 站点的用户名。
+    - **確認程式碼：** 組織的識別碼，用作 Bloomberg SFTP 網站的使用者名稱。
 
-    - **密码：** 彭博SFTP网站的密码
+    - **密碼：** Bloomberg SFTP 網站的密碼。
 
-    - **SFTP URL：** 彭博 SFTP 站点的 URL（例如，sftp.bloomberg.com）。
+    - **SFTP URL:** Bloomberg SFTP 網站的 URL （例如，sftp.bloomberg.com）。
 
-    - **SFTP 端口：** 彭博 SFTP 站点的端口号。 连接器使用它连接到 SFTP 站点。
+    - **SFTP 埠：** Bloomberg SFTP 網站的埠號碼。 連接器會使用此埠連接到 SFTP 網站。
 
-5. 在"**替代邮箱"** 页上，键入用于存储来自 Instant Bloomberg 的聊天邮件的邮箱的电子邮件地址，这些邮件与组织中的用户邮箱无关。
+5. 在 [**使用者對應**] 頁面上，啟用自動使用者對應，並視需要提供自訂使用者對應
 
    > [!NOTE]
-   > Instant Bloomberg 中每个对话中的每个聊天消息都包含一*个名为"公司电子邮件地址"* 的属性，其中包含您组织的聊天参与者的电子邮件地址。 在导入过程中，连接器尝试将聊天邮件导入 Office 365 中的用户邮箱，该用户邮箱的电子邮件地址*与"公司电子邮件地址"* 属性中的电子邮件地址相同。 如果 Office 365 邮箱的地址*与"公司电子邮件地址"* 属性中的邮箱相同，则连接器会将聊天邮件导入到您在此页上指定的备用邮箱。 此时，Office 365 中存档的即时彭博聊天邮件不受 Office 365 中的监督策略监视。
+   > 連接器會將聊天訊息專案匯入特定使用者的信箱。 會在特定使用者的信箱中建立名為**InstantBloomberg**的新資料夾，並將這些專案匯入該資料夾。 連接器會使用*CorporateEmailAddress*屬性的值。 每個聊天訊息都包含此屬性，且該屬性會填入聊天訊息每一位參與者的電子郵件地址。 除了使用*CorporateEmailAddress*屬性的值進行自動使用者對應之外，您也可以透過上載 CSV 對應檔來定義自訂對應。 對應檔案應該包含每個使用者的 Bloomberg UUID 和對應的 Microsoft 365 信箱位址。 如果您啟用自動使用者對應，並提供自訂對應對應，則每個聊天室專案連接器都會先查看自訂對應檔案。 如果找不到對應至使用者 Bloomberg UUID 的有效 Microsoft 365 使用者，連接器會使用聊天室專案的*CorporateEmailAddress*屬性。 如果連接器在自訂對應檔案或聊天室專案的*CorporateEmailAddress*屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
 
-6. **单击"下一步"，** 查看设置，**然后单击"准备"** 以创建连接器。
+6. 按 **[下一步]**，複查您的設定，然後按一下 [**準備**] 以建立連接器。
 
-7. **转到"存档第三方数据"** 页，查看新连接器的导入过程。
+7. 移至 [**資料連線器**] 頁面，查看新連接器的匯入程式的進度。

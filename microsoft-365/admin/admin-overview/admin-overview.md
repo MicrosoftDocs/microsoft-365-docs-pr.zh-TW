@@ -18,40 +18,40 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
-description: 了解 Microsoft 365 系統管理中心： 如何登入，您的系統管理員是誰，並觀賞影片介紹其相關資訊。
+description: 深入瞭解 Microsoft 365 系統管理中心：如何登入、您的系統管理員是誰，以及觀看影片的相關簡介。
 ms.openlocfilehash: 5f2727b582fcae2b4e001be1ec355747c96e9084
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239327"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633461"
 ---
 # <a name="office-365-admin-overview"></a>Office 365 系統管理概觀 
 
   
-當您購買[Office 365 商務版方案](https://go.microsoft.com/fwlink/?linkid=856886)或[Microsoft 365 商務版方案](https://www.microsoft.com/microsoft-365/business)時，我們提供您的特殊的帳戶具有系統管理員權限。 此帳戶會呼叫系統管理員帳戶。
+當您購買[Office 365 商務方案](https://go.microsoft.com/fwlink/?linkid=856886)或[Microsoft 365 for business 方案](https://www.microsoft.com/microsoft-365/business)時，我們提供了具有系統管理員許可權的特殊帳戶。 這個帳戶稱為系統管理員帳戶。
   
-與此帳戶可以存取 Microsoft 365 系統管理中心來管理您的公司： 新增使用者、 管理訂閱、 重設密碼等等。 試試看吧！
+您可以使用此帳戶存取 Microsoft 365 系統管理中心，以管理您的業務：新增使用者、管理訂閱、重設密碼等等。 試試看吧！
   
 ::: moniker range="o365-worldwide"
 
- **使用您的系統管理員帳戶登入<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>。**
+ **使用您的系統管理員帳戶登<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>入。**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-**使用您在 Office 365 germany 的系統管理員帳戶登入<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>。**
+**使用您的系統管理員帳戶登入 Office 365 德國<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>at。**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-**使用您在 21vianet 運作的 Office 365 的系統管理員帳戶登入<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>。**
+**使用您的系統管理員帳戶登入由世紀運作的 Office <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>365。**
 
 ::: moniker-end
 
-如果您收到 「**您沒有存取此頁面或執行此動作的權限**」 郵件，您不是系統管理員。
+如果您收到「您沒有**存取此頁面或執行此動作的許可權**」的訊息，表示您不是系統管理員。
 <br><br>    
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/3a4e19ee-1a2a-473f-8995-06de0052c169?autoplay=false]
   
@@ -60,7 +60,7 @@ ms.locfileid: "42239327"
 
 當您尋找系統管理員以便要求對方重設密碼、刪除帳戶或執行其他工作時，請與以下人員連絡：
   
-- **大學與學校** ：請與您的技術支援小組連絡。 一般來說，您可以在大學網站上找到相關連結。 在較小型的學校，可能有幾個人擁有系統管理員權限。 
+- **大學與學校** ：請與您的技術支援小組連絡。 一般來說，您可以在大學網站上找到相關連結。 在較小的學校中，可能只有少數個人具有系統管理員許可權。 
     
 - **大型企業** ：請與內部技術服務人員/技術支援人員連絡。 
     
@@ -68,4 +68,4 @@ ms.locfileid: "42239327"
     
 根據預設，註冊並購買商務用 Office 365 訂閱的人員會獲得系統管理員權限。該人員可將系統管理員權限指派給其他人員，以協助管理其組織的 Office 365。
   
-如果您不知道誰連絡公司或學校的說明，請嘗試詢問人員提供給您的使用者帳戶和密碼。
+如果您不知道您的工作或學校要取得協助，請嘗試詢問您的使用者帳戶和密碼的人員。
