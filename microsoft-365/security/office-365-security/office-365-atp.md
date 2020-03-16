@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 進階威脅防護包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
-ms.openlocfilehash: 712fdf6935fa69bfb2079858d6384eee270776e6
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.openlocfilehash: aac4cb43386577851d74e424d6435d0c15762bab
+ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42261030"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42612603"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
@@ -98,7 +98,7 @@ Office 365 ATP 方案 2 中包含業界最佳[威脅調查及回應工具](offic
 
 - **[威脅總管 (或即時偵測)](threat-explorer.md)** (也稱為檔案總管) 是即時的報告，可讓您識別並分析最近的威脅。 您可以設定檔案總管來顯示自訂期間的資料。
 
-- **[攻擊模擬器](attack-simulator.md)** 可讓您在組織中執行真實化攻擊案例以找出漏洞。 目前攻擊類型的模擬可供使用，包括[憑證竊取魚叉式網路釣魚攻擊](attack-simulator.md#credential-harvest-spear-phishing-attack)、[密碼噴濺攻擊](attack-simulator.md#password-spray-attack)、[暴力密碼破解攻擊](attack-simulator.md#brute-force-password-attack)等。
+- **[攻擊模擬器](attack-simulator.md)** 可讓您在組織中執行真實化攻擊案例以找出漏洞。 目前攻擊類型的模擬已可供使用，包括魚叉式網路釣魚憑證竊取和附件攻擊，以及密碼噴濺和暴力密碼破解攻擊等。
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>利用自動調查及回應節省時間
 

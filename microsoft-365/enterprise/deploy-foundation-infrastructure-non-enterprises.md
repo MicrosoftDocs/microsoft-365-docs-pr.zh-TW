@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 提供非企業組織逐步執行 Microsoft 365 企業版底層基礎結構的簡化階段。
-ms.openlocfilehash: 2620b210c40d5c838cf1a4be4fcd67bf3de03d29
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0d372578539ff05fcd2cadaa45c554921ee68f71
+ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068086"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42612643"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>適用於非企業的 Microsoft 365 企業版底層基礎結構
 
@@ -77,7 +77,7 @@ ms.locfileid: "42068086"
 
 | 安全性層級 | 描述 | 範例 |
 |:-------|:-----|:-----|
-| 基準 | 這是保護資料，以及保護存取資料的身分識別和裝置的最低和預設標準。 <BR><BR> 這通常是由大部分使用者管理的大部分組織資料。 | 第一線員工 (例如銷售、行銷、客戶服務、管理和製造) 的群組。 |
+| 基準 | 這是保護資料，以及保護存取資料的身分識別和裝置的最低和預設標準。 <BR><BR> 這通常是由大部分使用者管理的大多數組織資料。 | 第一線員工 (例如銷售、行銷、客戶服務、管理和製造) 的群組。 |
 | 敏感性 | 這可以額外保護必須以超過基準層級保護的資料子集。 這些群組包含的使用者可以使用和建立特定部門的敏感性資料，以及並非每個人都能取得的專案敏感性資料。 | 正在開發新產品的產品團隊或行銷團隊 |
 | 高管制 | 這是最高層級的保護，一般適用於高度機密、被視為智慧財產或商業機密的少量資料，或是必須遵守安全性規範的資料。 |  研究、法律及財務團隊，或儲存或使用客戶或合作夥伴資料的團隊。 |
 ||||
@@ -371,7 +371,7 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
 
 您可以將使用者帳戶新增到 Microsoft 365 系統管理中心的多個 Azure AD 群組。 從使用者帳戶的內容，按一下 [管理群組] > [新增成員資格]****。
 
-如果您想要使用 PowerShell，請查看這個[可下載的 Excel 活頁簿](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx)，它會根據指定的使用者帳戶和選取的群組名稱產生 PowerShell 命令。
+如果您想要使用 PowerShell，請查看這個[可下載的 Excel 活頁簿](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure-non-enterprises/Group-License-Mgmt-PowerShell.xlsx)，它會根據指定的使用者帳戶和選取的群組名稱產生 PowerShell 命令。
 
 ### <a name="new-employee-with-a-cloud-only-user-account"></a>有僅雲端使用者帳戶的新進員工
 
