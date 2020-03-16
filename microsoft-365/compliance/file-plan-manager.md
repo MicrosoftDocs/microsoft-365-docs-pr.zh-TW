@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 檔案計劃管理員提供對於保留標籤、保留標籤原則的進階管理功能，並且提供整合的方式讓標籤和標籤至內容活動周遊整個內容生命週期 – 從建立、共同作業、記錄宣告、保留，到最終的處置。
-ms.openlocfilehash: bad2e592359cb3e1f63e3fa020914ad49a65a471
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 26c34d40359d00b540b30e0f6e3ddf3878e80f9a
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074151"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634421"
 ---
 # <a name="overview-of-file-plan-manager"></a>檔案計劃管理員的概觀
 
@@ -144,7 +144,7 @@ ms.locfileid: "42074151"
    |RetentionAction|字串|此屬性指定由 RetentionDuration 屬性指定的值過期之後所要採取的動作。 有效值為：</br>**Delete**：刪除早於 RetentionDuration 屬性指定值的項目。</br>**Keep**：保留由 RetentionDuration 屬性指定期間內的項目，然後在期間到期時不執行任何動作。 </br>**KeepAndDelete**：保留由 RetentionDuration 屬性指定期間內的項目，然後在期間到期時將之刪除。   |
    |RetentionDuration|字串|此屬性會指定要保留內容的天數。 有效值為：</br>**無限制**：系統會無限期保留這些項目。 </br>***n***：正整數；例如 **365**。 
    |RetentionType|字串|此屬性會指定保留期限是否從內容建立日期、事件日期、標籤 (標記) 日期或上次修改日期開始算起。 有效值為：</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
-   |ReviewerEmail|SmtpAddress|填入此屬性時，系統會在保留期間到期時觸發處置檢閱。 此屬性會指定 **Delete** 和 **KeepAndDelete** 保留動作檢閱者的電子郵件地址。 您可以包含個別使用者、通訊群組或安全性群組，或 Office 365 群組的電子郵件地址。 您可以指定以逗號隔開的多個電子郵件地址。|
+   |ReviewerEmail|SmtpAddress|填入此屬性時，系統會在保留期間到期時觸發處置檢閱。 此屬性會指定 **Delete** 和 **KeepAndDelete** 保留動作檢閱者的電子郵件地址。 您可以包含個別使用者、通訊群組或安全性群組的電子郵件地址。 您可以使用分號指定多個電子郵件地址。|
    |ReferenceId|字串|此屬性指定在 **[參考識別碼]** 檔案計劃描述元中顯示的值。| 
    |Departmentname|字串|此屬性指定在 **[功能/部門]** 檔案計劃描述元中顯示的值。|
    |類別|字串|此屬性指定在 **[類別]** 檔案計劃描述元中顯示的值。|
