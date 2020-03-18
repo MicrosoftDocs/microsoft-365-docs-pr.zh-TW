@@ -1,5 +1,7 @@
 ---
-title: 信息障碍概述
+title: 深入瞭解資訊障礙
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -10,78 +12,77 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: 使用信息障碍确保在组织内使用 Microsoft 团队确保通信合规性。
-ms.openlocfilehash: c4a9213e74129126da0cbc41b7bc210a10b34db2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 使用資訊障礙，以確保您的組織內的 Microsoft 小組能夠進行通訊法規遵從性。
+ms.openlocfilehash: 8bee0f368edc91b6f926eb6cb3e0a2f8dad81e9b
+ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077130"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42692650"
 ---
-# <a name="information-barriers"></a>信息障碍
+# <a name="learn-about-information-barriers"></a>深入瞭解資訊障礙
 
 ## <a name="overview"></a>概觀
 
-Microsoft 云服务包括强大的通信和协作功能。 但是，假设您要限制两个组之间的通信，以避免在组织中发生利益冲突。 或者，您可能希望限制组织内某些人员之间的通信，以保护内部信息。 Microsoft 365 支持跨组和组织之间的通信和协作，因此是否有方法在必要时限制特定用户组之间的通信？ 有了信息障碍，你可以！ 
+Microsoft 雲端服務包含強大的通訊和協同作業功能。 不過，假設您想要限制兩個群組之間的通訊，以避免組織中發生利益衝突。 或者，您可能想要限制組織內特定人員之間的通訊，以保護內部資訊。 Microsoft 365 可跨群組和組織進行通訊及共同作業，所以有沒有方法可以限制特定使用者群組之間的通訊（必要時）？ 透過資訊障礙，您可以！ 
 
-信息障碍正在推出，从微软团队开始。 假设[您的订阅](#required-licenses-and-permissions)包含信息障碍，合规性管理员或信息障碍管理员可以定义策略以允许或阻止 Microsoft Teams 中的用户组之间的通信。 信息屏障策略可用于以下情况：
+立即開始從 Microsoft 小組開始的資訊壁壘。 假設您的[訂閱](#required-licenses-and-permissions)包含資訊障礙，合規性管理員或資訊屏障管理員可以定義原則，以允許或防止 Microsoft 小組中的使用者群組之間的通訊。 資訊屏障原則可以用於下列情況：
 
-- 日交易者不能呼叫营销团队中的某个人
-- 处理公司机密信息的财务人员无法接收组织内某些团体的电话
-- 具有商业机密材料的内部团队无法与组织内某些组中的人在线通话或聊天
-- 研究团队只能与产品开发团队在线通话或聊天
+- 天 trader 無法呼叫行銷小組的人員
+- 從事機密公司資訊的融資人員無法從組織內的特定群組接收通話
+- 內部團隊使用交易機密材料時，無法與組織內特定群組的人員線上通話或聊天
+- 調查小組只能呼叫或與產品開發小組線上交談
 
-对于所有这些示例方案（以及更多），可以定义信息屏障策略，以防止或允许 Microsoft 团队中的通信。 此类策略可以防止人们呼叫或聊天，或阻止人们与 Microsoft Teams 中的特定组通信。 在信息障碍策略生效后，每当受这些策略保护的用户尝试与 Microsoft Teams 中的其他人通信时，都会进行检查以阻止（或允许）通信（由信息屏障策略定义）。 要了解有关具有信息障碍的用户体验的详细信息，请参阅[Microsoft 团队中的信息障碍](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
+針對上述所有範例案例（等等），您可以定義資訊屏障原則，以防止或允許 Microsoft 小組中的通訊。 這類原則可以防止使用者不應該來電或與其聊天，或讓使用者只能與 Microsoft 小組中的特定群組進行通訊。 透過資訊屏障原則，只要這些原則所涵蓋的使用者嘗試與 Microsoft 小組中的其他使用者通訊，便會進行檢查，以防止（或允許）通訊（如資訊屏障原則所定義）。 若要深入瞭解使用者對資訊障礙的經驗，請參閱[Microsoft 小組中的資訊障礙](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
 
 > [!IMPORTANT]
-> 目前，信息障碍不适用于电子邮件通信或通过 SharePoint 在线或 OneDrive 进行文件共享。 此外，信息障碍独立于[合规性边界。](tagging-and-assessment-in-advanced-ediscovery.md)<p>在定义和应用信息障碍策略之前，请确保您的组织没有有效的[Exchange 通讯簿策略。](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/address-book-policies) （信息障碍基于通讯簿策略。 
+> 目前，資訊障礙不會套用到電子郵件通訊或透過 SharePoint 線上或 OneDrive 共用檔案。 此外，資訊障礙獨立于[規範界限](set-up-compliance-boundaries.md)。<p>在您定義及套用資訊屏障原則之前，請確定您的組織沒有有效的[Exchange 通訊錄原則](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies)。 （資訊障礙是以通訊錄原則為基礎）。 
 
-## <a name="what-happens-with-information-barriers"></a>信息障碍会发生什么情况
+## <a name="what-happens-with-information-barriers"></a>資訊障礙發生什麼事
 
-当信息障碍策略到位时，不应与其他特定用户通信的用户将无法查找、选择、聊天或呼叫这些用户。 在存在信息障碍时，会进行检查，以防止未经授权的通信。
+當資訊屏障原則到位時，不應與其他特定使用者通訊的使用者將無法找到、選取、聊天或呼叫這些使用者。 透過資訊障礙，檢查功能已到位，可防止未經授權的通訊。
 
-最初，信息障碍仅适用于 Microsoft 团队聊天和渠道。 在 Microsoft 团队中，信息障碍策略确定并防止以下类型的未经授权的通信：
-- 搜索用户
-- 将成员添加到团队
-- 与某人启动聊天会话
-- 开始群聊
-- 邀请某人加入会议
-- 共享屏幕
-- 拨打电话 
+資訊障礙最初隻適用于 Microsoft 小組聊天與通道。 在 Microsoft 小組中，資訊障礙原則決定並防止下列未授權的通訊類型：
+- 搜尋使用者
+- 新增成員至團隊
+- 與某人開始聊天會話
+- 開始群組聊天
+- 邀請某人加入會議
+- 共用畫面
+- 撥打電話 
 
-如果相关人员包含在信息屏障策略中以防止活动，则他们将无法继续。 此外，信息障碍策略中包含的每个人可能会被阻止与 Microsoft 团队中的其他人通信。 当受信息障碍策略影响的人员属于同一团队或群聊时，他们可能会从这些聊天会话中删除，并且可能不允许与群组进一步通信。
+如果納入資訊屏障原則中的人員可防止活動，他們將無法繼續進行。 此外，包含在資訊屏障原則中的每一位使用者都有可能封鎖為與 Microsoft 小組中的其他人員進行通訊。 當以資訊障礙原則影響的人員屬於同一個小組或群組聊天時，可能會從這些聊天會話中移除，並且可能不允許與群組進一步通訊。
 
-要了解有关具有信息障碍的用户体验的详细信息，请参阅[Microsoft 团队中的信息障碍](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
+若要深入瞭解使用者對資訊障礙的經驗，請參閱[Microsoft 小組中的資訊障礙](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
 
-## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
+## <a name="required-licenses-and-permissions"></a>必要的授權和權限
 
-信息障碍正在推出，并包含在订阅中，例如：
+資訊壁壘現在正在推出，並包含在訂閱中，例如：
 
 - Microsoft 365 E5
-- 办公室 365 E5
+- Office 365 E5
 - Office 365 進階合規性
-- 微软 365 E5 信息保护和合规性
+- Microsoft 365 E5 資訊保護和合規性
 
-有关详细信息，请参阅[合规性解决方案](https://products.office.com/business/security-and-compliance/compliance-solutions)。
+如需詳細資訊，請參閱[規範解決方案](https://products.office.com/business/security-and-compliance/compliance-solutions)。
 
-要[定义或编辑信息障碍策略，](information-barriers-policies.md)必须为您分配以下角色之一：
+若要[定義或編輯資訊障礙原則](information-barriers-policies.md)，您必須被指派下列其中一個角色：
 
-- 微软 365 全球管理员
+- Microsoft 365 全域系統管理員
 - Office 365 全域系統管理員
-- 合規性系統管理員
-- IB 合规管理（这是一个新角色！
+- 合規性管理員
+- IB 相容性管理（這是新的角色！）
 
-（要了解有关角色和权限的列表，请参阅[Office 365 安全&合规性中心的权限。](../security/office-365-security/protect-against-threats.md)
+（若要深入瞭解角色和許可權，請參閱[Office 365 Security & 合規性中心的許可權](../security/office-365-security/protect-against-threats.md)。）
 
-您必须熟悉 PowerShell cmdlet，才能定义、验证或编辑信息屏障策略。 尽管我们[在"工作方式"一文](information-barriers-policies.md)中提供了几个 PowerShell cmdlet 示例，但您需要了解组织的其他详细信息（如参数）。
+您必須熟悉 PowerShell Cmdlet，才能定義、驗證或編輯資訊障礙原則。 雖然我們在操作[方法文章](information-barriers-policies.md)中提供了幾個 PowerShell Cmdlet 範例，但您將需要知道組織的其他詳細資料，例如參數。
 
 ## <a name="next-steps"></a>後續步驟
 
-- [了解有关 Microsoft 团队中信息障碍的详细信息](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [深入瞭解 Microsoft 小組中的資訊障礙](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 
-- [查看可用于信息屏障策略的属性](information-barriers-attributes.md)
+- [請參閱可用於資訊障礙原則的屬性](information-barriers-attributes.md)
 
-- [定义信息障碍的策略](information-barriers-policies.md)
+- [定義資訊障礙的原則](information-barriers-policies.md)
 
-- [编辑（或删除）信息屏障策略](information-barriers-edit-segments-policies.md.md) 
-
+- [編輯（或移除）資訊屏障原則](information-barriers-edit-segments-policies.md) 

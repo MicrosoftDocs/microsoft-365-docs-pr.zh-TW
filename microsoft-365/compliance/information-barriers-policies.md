@@ -1,5 +1,7 @@
 ---
-title: 定义信息屏障策略
+title: 定義資訊屏障原則
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -10,74 +12,74 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: 了解如何定义 Microsoft 团队中的信息障碍策略。
-ms.openlocfilehash: 8ad6dd5e098438de0904fb511c631afbc761ff5b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 瞭解如何在 Microsoft 小組中定義資訊障礙的原則。
+ms.openlocfilehash: 3dc59a78d25045f3816b48705b5427141a1caea7
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077136"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710502"
 ---
-# <a name="define-policies-for-information-barriers"></a>定义信息障碍的策略
+# <a name="define-information-barrier-policies"></a>定義資訊屏障原則
 
 ## <a name="overview"></a>概觀
 
-使用信息障碍，您可以定义旨在防止某些用户段相互通信的策略，或允许特定段仅与某些其他段通信。 信息障碍策略可帮助您的组织保持对相关行业标准和法规的合规性，并避免潜在的利益冲突。 要了解更多信息，请参阅[信息障碍](information-barriers.md)。 
+透過資訊障礙，您可以定義原則，以防止某些使用者區段進行通訊，或允許特定的區段只與特定其他的區段進行通訊。 資訊屏障原則可協助您的組織維持相關的行業標準與法規的遵從性，並避免潛在的利益衝突。 若要深入瞭解，請參閱[資訊障礙](information-barriers.md)。 
 
-本文介绍如何规划、定义、实施和管理信息屏障策略。 涉及几个步骤，工作流分为几个部分。 在开始定义（或编辑）信息障碍策略之前，请确保通读[先决条件](#prerequisites)和整个过程。
+本文說明如何規劃、定義、實施及管理資訊屏障原則。 包含數個步驟，且工作流程分為數個部分。 在您開始定義（或編輯）資訊屏障原則之前，請務必通讀[必要條件](#prerequisites)和整個程式。
 
 > [!TIP]
-> 本文包括一个[示例方案和](#example-contosos-departments-segments-and-policies)[可下载的 Excel 工作簿，](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)可帮助您规划和定义信息屏障策略。
+> 本文包含[範例案例](#example-contosos-departments-segments-and-policies)和[可下載的 Excel 活頁簿](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)，可協助您規劃及定義資訊障礙原則。
 
-## <a name="concepts-of-information-barrier-policies"></a>信息屏障政策的概念
+## <a name="concepts-of-information-barrier-policies"></a>資訊屏障原則的概念
 
-定义信息障碍策略时，您将使用用户帐户属性、细分、"块"和/或"允许"策略以及策略应用程序。
+當您定義資訊障礙的原則時，您會使用使用者帳戶屬性、區段、「封鎖」和/或「允許」原則，以及原則應用程式。
 
-- **用户帐户属性**在 Azure 活动目录（或联机交换）中定义。 这些属性可以包括部门、职务、位置、团队名称和其他作业配置文件详细信息。 
+- 在 Azure Active Directory （或 Exchange Online）中定義使用者帳戶屬性。 這些屬性可包含部門、職稱、位置、小組名稱及其他工作設定檔詳細資料。 
 
-- **段**是使用所选**用户帐户属性**在 Office 365 安全&合规性中心中定义的用户集。 （请参阅[支持的属性列表。](information-barriers-attributes.md) 
+- 「區段」是 Office 365 Security & 合規性中心使用選取的**使用者帳戶] 屬性**定義的使用者集合。 （請參閱[支援的屬性清單](information-barriers-attributes.md)）。 
 
-- **信息障碍策略**确定通信限制或限制。 定义信息屏障策略时，可以从两种策略中进行选择：
-    - "阻止"策略阻止一个段与另一个段通信。
-    - "允许"策略允许一个段仅与某些其他段通信。
+- 資訊屏障原則決定通訊限制或限制。 當您定義資訊屏障原則時，可以選擇兩種原則：
+    - 「封鎖」原則防止一個區段與另一個區段通訊。
+    - 「允許」原則允許一個區段只與特定其他的區段進行通訊。
 
-- **策略应用程序**在定义所有信息障碍策略后完成，并且已准备好在组织中应用它们。
+- 原則應用程式是在定義所有資訊屏障原則之後完成，您準備好將它們套用到您的組織中。
 
-## <a name="the-work-flow-at-a-glance"></a>工作流程一览
+## <a name="the-work-flow-at-a-glance"></a>工作流程概覽
 
-|階段    |所涉及的内容  |
+|階段    |涉及的內容  |
 |---------|---------|
-|[确保满足先决条件](#prerequisites)     |- 验证您是否拥有[所需的许可证和权限](information-barriers.md#required-licenses-and-permissions)<br/>- 验证您的目录是否包含用于分段用户的数据<br/>- 为微软团队启用范围目录搜索<br/>- 确保已打开审核日志记录<br/>- 确保没有 Exchange 通讯簿策略<br/>- 使用电源外壳（提供示例）<br/>- 为微软团队提供管理员同意（包括步骤）          |
-|[第 1 部分：组织中的细分用户](#part-1-segment-users)     |- 确定需要哪些策略<br/>- 制作要定义的段列表<br/>- 确定要使用的属性<br/>- 在策略筛选器方面定义细分        |
-|[第 2 部分：定义信息屏障策略](#part-2-define-information-barrier-policies)     |- 定义您的策略（尚不适用）<br/>- 从两种选择（块或允许） |
-|[第 3 部分：应用信息屏障策略](#part-3-apply-information-barrier-policies)     |- 将策略设置为活动状态<br/>- 运行策略应用程序<br/>- 查看策略状态         |
-|（根据需要）[编辑段或策略](information-barriers-edit-segments-policies.md.md)    |- 编辑线段<br/>- 编辑或删除策略<br/>- 重新运行策略应用程序<br/>- 查看策略状态         |
-|（根据需要）[故障排除](information-barriers-troubleshooting.md)|- 当事情不按预期工作时采取行动|
+|[請確定符合先決條件](#prerequisites)     |-確認您具備必要的[授權和許可權](information-barriers.md#required-licenses-and-permissions)<br/>-確認您的目錄包含分割使用者的資料<br/>-針對 Microsoft 團隊啟用範圍型目錄搜尋<br/>-請確定已開啟審核記錄<br/>-確定沒有 Exchange 通訊錄原則已就緒<br/>-使用 PowerShell （提供範例）<br/>-提供 Microsoft 小組的系統管理員同意（包括步驟）          |
+|[第1部分：分割組織中的使用者](#part-1-segment-users)     |-決定所需的原則<br/>-建立區段清單以定義<br/>-識別要使用的屬性<br/>-以原則篩選的條款定義區段        |
+|[第2部分：定義資訊障礙原則](#part-2-define-information-barrier-policies)     |-定義您的原則（尚不適用）<br/>-從兩個種類（封鎖或允許）選擇 |
+|[第3部分：套用資訊障礙原則](#part-3-apply-information-barrier-policies)     |-將原則設為主動狀態<br/>-執行原則應用程式<br/>-查看原則狀態         |
+|（視需要）[編輯區段或原則](information-barriers-edit-segments-policies.md)    |-編輯區段<br/>-編輯或移除原則<br/>-重新執行原則應用程式<br/>-查看原則狀態         |
+|（視需要）[疑難排解](information-barriers-troubleshooting.md)|-當事情沒有如預期的運作時採取動作|
 
 ## <a name="prerequisites"></a>必要條件
 
-除了[所需的许可证和权限](information-barriers.md#required-licenses-and-permissions)外，请确保满足以下要求： 
+除了[必要的授權和許可權](information-barriers.md#required-licenses-and-permissions)之外，請確定符合下列需求： 
      
-- **目录数据**。 确保组织的结构反映在目录数据中。 为此，请确保用户帐户属性（如组成员身份、部门名称等）在 Azure 活动目录（或联机交换）中正确填充。 要了解更多信息，请参阅以下资源：
-  - [信息屏障策略的属性](information-barriers-attributes.md)
-  - [使用 Azure 活动目录添加或更新用户的配置文件信息](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+- 目錄資料-確保您的組織結構反映在目錄資料中。 若要這麼做，請確定在 Azure Active Directory （或 Exchange Online）中正確填入使用者帳戶屬性（如群組成員資格、部門名稱等）。 若要深入了解，請參閱下列資源：
+  - [資訊屏障原則的屬性](information-barriers-attributes.md)
+  - [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [使用 Office 365 PowerShell 中設定使用者帳戶屬性](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
 
-- **范围目录搜索**。 在定义组织的第一个信息屏障策略之前，必须在 Microsoft [Teams 中启用范围目录搜索。](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search) 在启用范围目录搜索后至少等待 24 小时，然后再设置或定义信息屏障策略。
+- 範圍型目錄搜尋-在您定義組織的第一個資訊障礙原則之前，您必須[在 Microsoft 小組中啟用範圍型目錄搜尋](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search)。 在您設定或定義資訊屏障原則之前，請先等候至少24小時後，再啟用範圍目錄搜尋。
 
-- **审核日志记录**. 为了查找策略应用程序的状态，必须打开审核日志记录。 我们建议您在开始定义细分或策略之前执行此操作。 要了解更多信息，请参阅[打开或关闭 Office 365 审核日志搜索。](turn-audit-log-search-on-or-off.md)
+- 審核記錄-為了查詢原則應用程式的狀態，必須開啟審核記錄。 在您開始定義區段或原則之前，我們建議您這麼做。 若要深入瞭解，請參閱[開啟或關閉 Office 365 審核記錄搜尋](turn-audit-log-search-on-or-off.md)。
 
-- **没有通讯簿策略。** 在定义和应用信息障碍策略之前，请确保没有 Exchange 通讯簿策略。 （信息障碍基于通讯簿策略，但这两种策略不可互换。如果确实有此类策略，请确保首先[删除通讯簿策略。](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)
+- 無通訊錄原則-在您定義及套用資訊屏障原則之前，請確定沒有任何 Exchange 通訊錄原則存在到位。 資訊障礙是以通訊錄原則為基礎，但這兩種原則不相容。 如果您有這類原則，請務必先[移除您的通訊錄原則](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)。 一旦資訊障礙原則已啟用，且已啟用階層式通訊錄，所有***未包含***在資訊屏障區段中的使用者，都會在 Exchange online 中看到[階層式通訊錄](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books)。
 
-- **电源外壳**. 目前，使用 PowerShell cmdlet 在 Office 365 安全&合规性中心定义和管理信息屏障策略。 尽管本文提供了几个示例，但您需要熟悉 PowerShell cmdlet 和参数。 您还需要 AzureRM 模块。
+- 目前 PowerShell 中，資訊屏障原則是在 Office 365 安全性 & 規範中心使用 PowerShell Cmdlet 來定義及管理。 雖然本文提供了數個範例，但您需要熟悉 PowerShell Cmdlet 及參數。 您也會需要 AzureRM 模組。
     - [連接到 Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
-    - [安装 Azure 电源外壳模块](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
+    - [安裝 Azure PowerShell 模組](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
-- **管理员同意微软团队中的信息障碍。** 策略到位后，信息障碍会将不应参与的聊天会话中删除。 这有助于确保您的组织始终遵守策略和法规。 使用以下过程使信息屏障策略在 Microsoft 团队中按预期工作。 
+- 管理員對 Microsoft 小組資訊障礙的同意-當您的原則就緒時，資訊障礙可以從聊天會話中移除人員。 這可協助確保您的組織符合原則及規定。 使用下列程式可讓資訊障礙原則在 Microsoft 小組中如預期的方式運作。 
 
-   1. 运行以下 PowerShell cmdlet：
+   1. 執行下列 PowerShell Cmdlet：
 
-      ```
+      ```powershell
       Login-AzureRmAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
@@ -85,237 +87,247 @@ ms.locfileid: "37077136"
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
-   2. 当出现提示时，请使用 Office 365 的工作或学校帐户登录。
+   2. 出現提示時，使用您的公司或學校帳戶登入 Office 365。
 
-   3. 在"**请求的权限"** 对话框中，查看信息，然后选择"**接受"。**
+   3. 在 [**要求的許可權**] 對話方塊中，複查資訊，然後選擇 [**接受**]。
 
-满足所有先决条件后，继续下一节。
+當滿足所有必要條件時，請繼續進行下一節。
 
 > [!TIP]
-> 为了帮助您准备计划，本文中包含一个示例方案。 [请参阅 Contoso 的部门、部门和政策](#example-contosos-departments-segments-and-policies)。<p>此外，还提供可下载的 Excel 工作簿，帮助您规划和定义细分和策略（并创建 PowerShell cmdlet）。 [获取工作簿](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)。 
+> 為了協助您準備方案，本文包含範例案例。 [請參閱 Contoso 的部門、區段和原則](#example-contosos-departments-segments-and-policies)。<p>此外，也可以使用可下載的 Excel 活頁簿，協助您規劃及定義您的區段和原則（並建立您的 PowerShell Cmdlet）。 [取得活頁簿](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)。 
 
-## <a name="part-1-segment-users"></a>第 1 部分：细分用户
+## <a name="part-1-segment-users"></a>第1部分：區段使用者
 
-在此阶段，您可以确定需要哪些信息屏障策略，列出要定义的段，然后定义细分。
+在此階段中，您可以決定所需的資訊屏障原則、建立區段清單以加以定義，然後定義您的區段。
 
-### <a name="determine-what-policies-are-needed"></a>确定需要哪些策略
+### <a name="determine-what-policies-are-needed"></a>決定所需的原則
 
-考虑到法律和行业法规，您的组织中的哪些群体需要信息屏障策略？ 制作一个列表。 是否有任何组应被阻止与其他组通信？ 是否有任何组应允许仅与一个或两个其他组通信？ 考虑您需要的策略，因为策略属于两个组之一：
-- "阻止"策略阻止一个组与另一个组通信。
-- "允许"策略允许组仅与某些其他特定组通信。
+考慮法律和行業法規，誰是組織內需要資訊屏障原則的群組？ 建立清單。 是否有任何群組應該禁止與另一個群組進行通訊？ 是否有任何群組應該允許只與一或兩個其他群組進行通訊？ 請考慮您需要的原則屬於兩個群組中的其中一個：
+- 「封鎖」原則防止一個群組與另一個群組進行通訊。
+- 「允許」原則允許群組只與特定其他特定群組進行通訊。
 
-当您拥有组和策略的初始列表时，请继续确定所需的细分。 
+當您擁有群組和原則的初始清單時，請繼續識別您所需的區段。 
 
-### <a name="identify-segments"></a>识别细分市场
+### <a name="identify-segments"></a>識別區段
 
-除了策略的初始列表之外，还为您的组织列出细分。 将包含在信息屏障策略中的用户应属于一个段，并且任何用户都不应属于两个或多个段。 每个段只能应用一个信息屏障策略。 
-
-确定将用来定义段的组织目录数据中的哪些属性。 *您可以使用"部门、**成员"* 或任何受支持的属性。 请确保为用户选择的属性中具有值。 [有关信息障碍，请参阅支持的属性列表。](information-barriers-attributes.md)
+除了您的初始原則清單之外，還請為您的組織製作一個段落清單。 將包含在資訊屏障原則中的使用者應屬於某個區段。 小心規劃您的區段，因為使用者只能在一個段落內。 每個區段只能套用一個資訊障礙原則。
 
 > [!IMPORTANT]
-> **在继续下一节之前，请确保目录数据具有可用于定义段 的属性值。** 如果目录数据没有要使用的属性的值，则必须更新用户帐户以包括该信息，然后才能继续设置信息障碍。 要获取有关此的帮助，请参阅以下资源：<br/>- [使用 Office 365 PowerShell 配置用户帐户属性](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [使用 Azure 活动目录添加或更新用户的配置文件信息](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> 使用者只能在一段內。
 
-### <a name="define-segments-using-powershell"></a>使用 PowerShell 定义段
+決定您的組織目錄資料中所要用來定義段落的屬性。 您可以使用*部門*、 *MemberOf*或任何支援的屬性。 請確定您為使用者選取的屬性中有值。 [請參閱資訊障礙的支援屬性清單](information-barriers-attributes.md)。
 
-定义段不会影响用户;它只是为信息屏障策略的界定和应用提供了舞台。
+> [!IMPORTANT]
+> **繼續進行下一節之前，請確定您的目錄資料具有可用於定義區段之屬性的值**。 如果您的目錄資料沒有您想要使用的屬性值，則必須更新使用者帳戶，以包含該資訊，然後再繼續進行資訊障礙。 若要取得這項協助，請參閱下列資源：<br/>- [使用 Office 365 PowerShell 設定使用者帳戶屬性](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
-1. 将"**新组织分段**cmdlet"与用户**组筛选器**参数一起使用，该参数对应于要使用的[属性。](information-barriers-attributes.md)
+### <a name="define-segments-using-powershell"></a>使用 PowerShell 定義線段
+
+定義區段不會影響使用者;它只會針對要定義並套用的資訊屏障原則，設定階段。
+
+1. 使用**OrganizationSegment 指令程式**搭配**UserGroupFilter**參數，該參數會對應至您想要使用的[屬性](information-barriers-attributes.md)。
 
     |語法   |範例  |
     |---------|---------|
-    |`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`     |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>在此示例中，使用*HR*定义名为*HR*的段，这是*部门*属性中的值。 cmdlet 的 **-eq**部分表示"相等"。 （或者，您可以使用 **-ne**表示"不相等"。 请参阅[在段定义中使用"等"和"不等于"。](#using-equals-and-not-equals-in-segment-definitions)        |
+    |`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`     |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>在此範例中，稱為*hr*的區段是使用*hr*，以 [*部門*] 屬性中的值來定義。 Cmdlet 的 **-eq**部分參照 "equals"。 （此外，您也可以使用 **-ne**表示 "not 等於"。 請參閱[片段定義中的 Using "equals" 和 "not equals"](#using-equals-and-not-equals-in-segment-definitions)。        |
 
-    运行每个 cmdlet 后，应看到有关新段的详细信息列表。 详细信息包括段的类型、创建或上次修改该段的人员等。 
+    在您執行每個 Cmdlet 後，您應該會看到有關新區段的詳細資料清單。 詳細資料包含區段的類型、建立或上次修改者的類型等等。 
 
-2. 对要定义的每个段重复此过程。
+2. 針對您要定義的每個區段重複此程式。
 
     > [!IMPORTANT]
-    > **确保您的段不重叠。** 受信息障碍影响的每个用户应属于一个（且只有一个）细分。 任何用户都不应属于两个或多个段。 （请参阅[示例：本文中康托索定义的段。](#contosos-defined-segments)
+    > **請確定您的區段沒有重迭**。 由資訊障礙影響的每位使用者應屬於一個（且只有一個）區段。 任何使用者都不應屬於兩個以上的區段。 （請參閱： Contoso 在本文中[定義的區段](#contosos-defined-segments)）。
 
 
-定义细分后，继续[定义信息屏障策略](#part-2-define-information-barrier-policies)。
+在您定義好資料段後，請繼續[定義資訊障礙原則](#part-2-define-information-barrier-policies)。
 
-### <a name="using-equals-and-not-equals-in-segment-definitions"></a>在段定义中使用"等"和"不等于"
+### <a name="using-equals-and-not-equals-in-segment-definitions"></a>在段落定義中使用 "equals" 和 "not ="
 
-在下面的示例中，我们定义一个细分，即"部门等于 HR"。 
+在下列範例中，我們定義的是 "部門等於 HR" 的區段。 
 
 |範例  |
 |---------|
-|`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>请注意，在此示例中，段定义包括一个"等"参数，表示为 **-eq**。 
+|`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>請注意，在此範例中，線段定義包含表示為 **-eq**的 "equals" 參數。 
   |
 
-您还可以使用"不等于"参数定义段，表示为 **-ne，** 如下表所示：
+您也可以使用 "not equals" 參數定義線段，以表示為 **-ne**，如下表所示：
 
 |語法  |範例  |
 |---------|---------|
-|`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`    |`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` <p>在此示例中，我们定义了一*个名为"不销售"* 的细分，该细分包括不在*销售*中的每个人。 cmdlet 的 **-ne**部分表示"不相等"。  |
+|`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`   | <p>在此範例中，我們會定義一個稱為*NotSales*的區段，其中包含不在*銷售*人員的任何人。 Cmdlet 的 **-ne**部分參照 "not equals"。  |
 
-除了使用"等"或"不等于"定义段外，还可以同时使用"等"和"不等于"参数定义段。
+除了使用 "equals" 或 "not equals" 定義區段之外，您還可以使用 "equals" 和 "not equals" 參數定義區段。 您也可以使用邏輯*AND*和*OR*運算子定義複雜的群組篩選。
 
-|範例  |
-|---------|
-|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"` <p>在此示例中，我们定义了一个名为*LocalFTE*的段，该段包括位于本地且其位置未列为*临时*的人员。    |
+
+|語法    |範例  |
+|---------|---------|
+|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` |<p>在此範例中，我們會定義一個稱為*LocalFTE*的區段，其中包含位於本機的使用者，且其位置並未列出為*暫時*的。    |
+ |`New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`|  <p>在此範例中，我們會定義一個稱為*Segment1*的區段，其中包含 group1@contoso.com 成員的人員，而不是 group3@contoso.com 的成員。
+|`New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com'' -or MemberOf -ne 'group3@contoso.com'"` | 在此範例中，我們會定義一個稱為*Segment2*的區段，其中包含 group2@contoso.com 成員的人員，而不是 group3@contoso.com 的成員。
+|`New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`|  在此範例中，我們會定義一個稱為*Segment1and2*的區段，其中包含 group1@contoso.com 和 group2@contoso.com 的人員，而不是 group3@contoso.com 的成員。
+
 
 > [!TIP]
-> 如果可能，请使用包含"-eq"或"-ne"的段定义。 尽量不要定义复杂的段定义。 
+> 如果可能的話，請使用包含 "-eq" 或 "-ne" 的區段定義。 請不要定義複雜的區段定義。
 
-## <a name="part-2-define-information-barrier-policies"></a>第 2 部分：定义信息屏障策略
+## <a name="part-2-define-information-barrier-policies"></a>第2部分：定義資訊障礙原則
 
-确定是否需要阻止特定段之间的通信，还是将通信限制到某些段。 理想情况下，您将使用最少数量的策略来确保您的组织符合法律和行业要求。
+決定您是否需要防止某些區段之間的通訊，或限制對特定的區段進行通訊。 理想狀況下，您會使用最低原則數目，以確保您的組織符合法律和行業的需求。
 
-使用要定义的用户细分列表和信息障碍策略，选择方案，然后按照步骤操作。 
+在您的使用者區段清單和您想要定義的資訊屏障原則中，選取案例，然後依照步驟執行。 
 
-- [方案 1：阻止段之间的通信](#scenario-1-block-communications-between-segments)
-- [方案 2：允许段仅与另一个段通信](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
+- [案例1：封鎖區段之間的通訊](#scenario-1-block-communications-between-segments)
+- [案例2：允許區段只與其他一個段落通訊](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
 
 > [!IMPORTANT]
-> **请确保在定义策略时，不会为段分配多个策略。** 例如，如果为名为"*销售"* 的细分市场定义一个策略，则不为*Sales*定义其他策略。<p>此外，在定义信息障碍策略时，请确保将这些策略设置为非活动状态，直到准备好应用它们。 在将策略设置为活动状态然后应用之前，定义（或编辑）策略不会影响用户。
+> 請**務必在定義原則時，不要將多個原則指派給一個段落**。 例如，如果您為一個稱為*sales*的區段定義一個原則，請勿為*sales*定義其他原則。<p>此外，在您定義資訊屏障原則時，請務必將這些原則設為非使用中狀態，直到您準備好套用這些原則為止。 定義（或編輯）原則不會影響使用者，除非這些原則設為 [使用中狀態]，然後套用。
 
-（请参阅本文中[的示例：Contoso 的信息屏障策略。](#contosos-information-barrier-policies)
+（請參閱： Contoso 在本文中[的資訊屏障原則](#contosos-information-barrier-policies)。）
 
-### <a name="scenario-1-block-communications-between-segments"></a>方案 1：阻止段之间的通信
+### <a name="scenario-1-block-communications-between-segments"></a>案例1：封鎖區段之間的通訊
 
-当您想要阻止段相互通信时，可以定义两个策略：每个方向一个策略。 每个策略仅以单向方式阻止通信。
+當您想要封鎖彼此之間的通訊時，您會定義兩個原則：每個方向一個。 每個原則只會封鎖單向通訊。
 
-例如，假设您要阻止段 A 和段 B 之间的通信。在这种情况下，定义一个策略，阻止段 A 与段 B 通信，然后定义第二个策略以防止段 B 与段 A 通信。
+例如，假設您想要封鎖段 A 與區段 B 之間的通訊。在此情況下，您會定義一個原則，讓區段 A 無法與段落 B 通訊，然後定義第二個原則，以防止 A 欄位 B 與 A 欄位進行通訊。
 
-1. 要定义第一个阻止策略，请使用**带有"段阻止"** 参数**的新信息阻止策略**cmdlet。 
+1. 若要定義您的第一個封鎖原則，請使用具有**SegmentsBlocked**參數的**InformationBarrierPolicy** Cmdlet。 
 
     |語法  |範例  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"`     |`New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p>    在此示例中，我们为一个细分市场定义了*名为"销售-研究"* 的策略。 ** 当激活和应用时，此策略会阻止*销售人员**与名为*Research 的细分市场中的人员进行通信。         |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"`     |`New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p>    在此範例中，我們為稱為*sales*的區段定義名為「*銷售調研*」的原則。 使用中並套用此原則，可防止*銷售*人員與稱為「*調研*」區段中的人員進行通訊。         |
 
-2. 要定义第二个阻塞段，请再次使用**带有"段阻止"** 参数**的新信息策略**cmdlet，这一次段将反转。
+2. 若要定義第二個封鎖段，請再次使用具有**SegmentsBlocked**參數的**InformationBarrierPolicy 指令程式**，這次會將段落顛倒。
 
     |範例  |
     |---------|
-    |`New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p>    在此示例中，我们定义了*名为"研究-销售"* 的策略，以防止*Research*与*销售部*通信。     |
+    |`New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p>    在此範例中，我們會定義稱為「*調查銷售*」的原則，以防止「*調查*」與「*銷售*」通訊。     |
 
-2. 继续以下操作之一：
+2. 請繼續執行下列其中一項動作：
 
-   - （如果需要）[定义策略以允许段仅与其他段通信](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment) 
-   - （定义所有策略后）[应用信息屏障策略](#part-3-apply-information-barrier-policies)
+   - （如有需要）[定義原則以允許區段只與其他一個段落通訊](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment) 
+   - （定義所有原則之後）套用[資訊屏障原則](#part-3-apply-information-barrier-policies)
 
-### <a name="scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment"></a>方案 2：允许段仅与另一个段通信
+### <a name="scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment"></a>案例2：允許區段只與其他一個段落通訊
 
-1. 要允许一个段仅与另一个段通信，请使用**带有"段允许"** 参数**的新信息策略**cmdlet。 
-
-    |語法  |範例  |
-    |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR" -State Inactive` <p>    在此示例中，我们为一个*称为"制造"* 的细分市场定义了*名为"制造-HR"* 的策略。 当激活和应用时，此策略允许*制造*人员仅与称为*HR*的细分市场中的人员进行通信。 （在这种情况下，*制造*部门无法与不属于*HR*的用户通信。         |
-
-    **如果需要，可以使用此 cmdlet 指定多个段，如以下示例所示。**
+1. 若要允許一個區段只與一個其他的區段進行通訊，請使用具有**SegmentsAllowed**參數的**InformationBarrierPolicy** Cmdlet。 
 
     |語法  |範例  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>在此示例中，我们定义了一个策略，允许*研究*部门仅与*HR*和*制造*部门进行通信。        |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR" -State Inactive` <p>    在此範例中，我們為稱為「*製造*」的區段定義稱為「*製造業-HR* 」的原則。 使用中並套用此原則時，可讓*製造業*中的人員只與稱為*HR*的區段中的人員進行通訊。 （在此情況下，*製造*無法與不屬於*HR*的使用者進行通訊。）         |
 
-    对要定义的每个策略重复此步骤，以允许特定段仅与特定特定段通信。
-
-2. 继续以下操作之一：
-
-   - （如果需要）[定义策略以阻止段之间的通信](#scenario-1-block-communications-between-segments) 
-   - （定义所有策略后）[应用信息屏障策略](#part-3-apply-information-barrier-policies)
-
-## <a name="part-3-apply-information-barrier-policies"></a>第 3 部分：应用信息屏障策略
-
-信息障碍策略在将策略设置为活动状态，然后应用策略之前不会生效。
-
-1. 使用**获取信息障碍策略**cmdlet 查看已定义的策略列表。 请注意每个策略的状态和标识 （GUID）。
-
-    语法：`Get-InformationBarrierPolicy`
-
-2. 要将策略设置为活动状态，请使用具有**标识**参数**的"设置信息策略**cmdlet"和"**状态"** 参数**设置为"活动"。** 
+    **如有需要，您可以使用此 Cmdlet 來指定多個區段，如下列範例所示。**
 
     |語法  |範例  |
     |---------|---------|
-    |`Set-InformationBarrierPolicy -Identity GUID -State Active`     |`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -State Active` <p>    在此示例中，我们设置了一个信息屏障策略，该策略将 GUID *43c37853-ea10-4b90-a23d-ab8c93772471*设置为活动状态。   |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>在此範例中，我們定義了一個原則，可讓*調查*區段只與*HR*和*製造業*通訊。        |
 
-    为每个策略根据需要重复此步骤。
+    針對您要定義的每個原則重複此步驟，以允許特定的區段只與特定的特定區段進行通訊。
 
-3. 完成将信息屏障策略设置为活动状态后，请使用 Office 365 安全&合规性**中心的"启动-信息障碍策略应用程序**cmdlet"。
+2. 請繼續執行下列其中一項動作：
 
-    语法：`Start-InformationBarrierPoliciesApplication`
+   - （如有需要）[定義原則以封鎖區段之間的通訊](#scenario-1-block-communications-between-segments) 
+   - （定義所有原則之後）套用[資訊屏障原則](#part-3-apply-information-barrier-policies)
 
-    大约半小时后，按用户为您的组织应用策略。 如果您的组织很大，则此过程可能需要 24 小时（或更长时间）才能完成。 （作为一般准则，处理 5，000 个用户帐户大约需要一个小时。
+## <a name="part-3-apply-information-barrier-policies"></a>第3部分：套用資訊障礙原則
 
-## <a name="view-status-of-user-accounts-segments-policies-or-policy-application"></a>查看用户帐户、细分、策略或策略应用程序的状态
+資訊屏障原則除非您將其設定為 [使用中] 狀態，然後再套用原則，否則不會生效。
 
-使用 PowerShell，您可以查看用户帐户、细分、策略和策略应用程序的状态，如下表中列出的。
+1. 使用**InformationBarrierPolicy 指令程式**來查看已定義的原則清單。 記下每個原則的狀態和身分識別（GUID）。
 
-|要查看此  |執行  |
+    語法：`Get-InformationBarrierPolicy`
+
+2. 若要將原則設定為作用中狀態，請使用**InformationBarrierPolicy**指令程式搭配**Identity**參數，並將**State**參數設定為**active**。 
+
+    |語法  |範例  |
+    |---------|---------|
+    |`Set-InformationBarrierPolicy -Identity GUID -State Active`     |`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -State Active` <p>    在此範例中，我們會設定具有 GUID *43c37853-ea10-4b90-a23d-ab8c93772471*為 [使用中] 狀態的資訊屏障原則。   |
+
+    請視需要針對每個原則重複此步驟。
+
+3. 當您完成將資訊屏障原則設定為 [使用中狀態] 時，請使用 Office 365 安全性 & 規範中心中的**InformationBarrierPoliciesApplication** Cmdlet。
+
+    語法：`Start-InformationBarrierPoliciesApplication`
+
+    大約半小時之後，就會為您的組織套用使用者原則。 如果您的組織很大，可能需要24小時（或更多）才能完成此程式。 （一般的指導方針是花一個小時來處理5000使用者帳戶。）
+
+## <a name="view-status-of-user-accounts-segments-policies-or-policy-application"></a>查看使用者帳戶、區段、原則或原則應用程式的狀態
+
+透過 PowerShell，您可以查看使用者帳戶、區段、原則及原則應用程式的狀態，如下表所列。
+
+|若要查看此  |執行此動作  |
 |---------|---------|
-|使用者帳戶     |使用具有标识参数**的获取信息标识接收状态**cmdlet。 <p>语法：`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>您可以使用唯一标识每个用户的任何值，例如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p>範例： `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>在此示例中，我们在 Office 365 中提到了两个用户帐户：*梅根*的*meganb*和*Alexw*的*Alexw。* <p>（您也可以将此 cmdlet 用于单个用户： `Get-InformationBarrierRecipientStatus -Identity <value>` <p>此 cmdlet 返回有关用户的信息，例如属性值和应用的任何信息屏障策略。|
-|段     |使用**获取组织段**cmdlet。<p>语法：`Get-OrganizationSegment` <p>这将显示为您的组织定义的所有细分的列表。         |
-|信息屏障策略     |使用**获取信息保护策略**cmdlet。 <p> 语法：`Get-InformationBarrierPolicy` <p>这将显示已定义的信息障碍策略及其状态的列表。       |
-|最新的信息屏障策略应用程序     | 使用**获取信息策略应用状态**cmdlet。 <p>语法：`Get-InformationBarrierPoliciesApplicationStatus`<p>    这将显示有关策略应用程序是否已完成、失败或正在进行的信息。       |
-|所有信息屏障策略应用程序|使用`Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>这将显示有关策略应用程序是否已完成、失败或正在进行的信息。|
+|使用者帳戶     |使用具有 Identity 參數的**InformationBarrierRecipientStatus** Cmdlet。 <p>語法：`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>您可以使用唯一識別每個使用者的任何值，例如名稱、別名、辨別名稱、正常化功能變數名稱、電子郵件地址或 GUID。 <p>範例： `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>在此範例中，我們會參考 Office 365 中的兩個使用者帳戶： *meganb* for *Megan*和*alexw* for *Alex*。 <p>（您也可以將此 Cmdlet 用於單一使用者： `Get-InformationBarrierRecipientStatus -Identity <value>`） <p>此 Cmdlet 會傳回使用者的相關資訊，例如屬性值以及所套用的任何資訊屏障原則。|
+|段     |使用**OrganizationSegment** Cmdlet。<p>語法：`Get-OrganizationSegment` <p>這會顯示針對您組織所定義的所有區段清單。         |
+|資訊屏障原則     |使用**InformationBarrierPolicy** Cmdlet。 <p> 語法：`Get-InformationBarrierPolicy` <p>這會顯示已定義的資訊屏障原則清單，及其狀態。       |
+|最新的資訊屏障原則應用程式     | 使用**InformationBarrierPoliciesApplicationStatus** Cmdlet。 <p>語法：`Get-InformationBarrierPoliciesApplicationStatus`<p>    這會顯示原則應用程式已完成、失敗或進行中的相關資訊。       |
+|所有資訊屏障原則應用程式|使用`Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>這會顯示原則應用程式已完成、失敗或進行中的相關資訊。|
 
-## <a name="what-if-i-need-to-remove-or-change-policies"></a>如果我需要删除或更改策略，该怎么办？
+<!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 
-资源可帮助您管理信息屏障策略。
+## <a name="what-if-i-need-to-remove-or-change-policies"></a>如果我需要移除或變更原則，該怎麼辦？
 
-- 如果信息障碍出现问题，请参阅[疑难解答信息障碍](information-barriers-troubleshooting.md)。
+資源可協助您管理資訊屏障原則。
 
-- 要停止应用策略，请参阅[停止策略应用程序](information-barriers-edit-segments-policies.md.md#stop-a-policy-application)。
+- 如果發生資訊障礙問題，請參閱[疑難排解資訊障礙](information-barriers-troubleshooting.md)。
 
-- 要删除信息障碍策略，请参阅[删除策略](information-barriers-edit-segments-policies.md.md#remove-a-policy)。
+- 若要停止套用原則，請參閱[停止原則應用程式](information-barriers-edit-segments-policies.md#stop-a-policy-application)。
 
-- 要更改细分或策略，请参阅[编辑（或删除）信息障碍策略](information-barriers-edit-segments-policies.md.md)。
+- 若要移除資訊障礙原則，請參閱[移除原則](information-barriers-edit-segments-policies.md#remove-a-policy)。
 
-## <a name="example-contosos-departments-segments-and-policies"></a>示例：Contoso 的部门、部门和政策
+- 若要變更區段或原則，請參閱[編輯（或移除）資訊屏障原則](information-barriers-edit-segments-policies.md)。
 
-要查看组织如何定义细分和策略，请考虑以下示例。
+## <a name="example-contosos-departments-segments-and-policies"></a>範例： Contoso 的部門、區段和原則
 
-### <a name="contosos-departments-and-plan"></a>康托索的部门和计划
+若要查看組織如何使用定義區段和原則的方法，請考慮下列範例。
 
-Contoso 有五个部门：人力资源、销售、营销、研究和制造。 为了保持行业法规，某些部门的人不应与其他部门沟通，如下表所列：
+### <a name="contosos-departments-and-plan"></a>Contoso 的部門與計畫
 
-|段  |可以交谈  |无法与  |
+Contoso 有五個部門： HR、Sales、Marketing、Research 及製造業。 為了維持與業界法規的相容性，某些部門中的人員不應該與其他部門通訊，如下表所列：
+
+|段  |可以交談  |無法交談  |
 |---------|---------|---------|
-|人力资源     |所有人         |（没有限制）         |
-|销售     |人力资源、市场营销、制造         |參考資料         |
-|营销     |所有人         |（没有限制）         |
-|參考資料     |人力资源、市场营销、制造        |销售     |
-|製造 |人力资源，市场营销 |人力资源或市场营销以外的任何人 |
+|人力資源     |所有人         |（無限制）         |
+|銷售     |HR、行銷、製造業         |參考資料         |
+|行銷     |所有人         |（無限制）         |
+|參考資料     |HR、行銷、製造業        |銷售     |
+|製造業 |人力資源、行銷 |HR 或 Marketing 以外的任何人員 |
 
-考虑到这一点，Contoso 的计划包括三个信息屏障策略：
+考慮到這一點，Contoso 的計畫包括三項資訊障礙原則：
 
-1. 旨在防止销售人员与研究部通信的策略（以及阻止研究与销售人员沟通的另一项策略）
-2. 旨在允许制造部门仅与人力资源和营销部门沟通的策略 
+1. 一種原則設計，可防止銷售人員與調研進行通訊（和另一個原則，以防止調查與銷售通訊）
+2. 原則設計，只允許製造業與 HR 和 Marketing 進行通訊 
 
-无需为人力资源或市场营销制定政策。
+不需要為 HR 或 Marketing 定義原則。
 
-### <a name="contosos-defined-segments"></a>康托索定义的段
+### <a name="contosos-defined-segments"></a>Contoso 的定義區段
 
-Contoso 将使用 Azure 活动目录中的"部门"属性来定义段，如下所示：
+Contoso 會使用 Azure Active Directory 中的部門屬性定義區段，如下所示：
 
-|部門  |段定义  |
+|部門  |段定義  |
 |---------|---------|
-|人力资源     | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`        |
-|销售     | `New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"`        |
-|营销     | `New-OrganizationSegment -Name "Marketing" -UserGroupFilter "Department -eq 'Marketing'"`        |
+|人力資源     | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`        |
+|銷售     | `New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"`        |
+|行銷     | `New-OrganizationSegment -Name "Marketing" -UserGroupFilter "Department -eq 'Marketing'"`        |
 |參考資料     | `New-OrganizationSegment -Name "Research" -UserGroupFilter "Department -eq 'Research'"`        |
-|製造     | `New-OrganizationSegment -Name "Manufacturing" -UserGroupFilter "Department -eq 'Manufacturing'"`        |
+|製造業     | `New-OrganizationSegment -Name "Manufacturing" -UserGroupFilter "Department -eq 'Manufacturing'"`        |
 
-定义段后，Contoso 继续定义策略。 
+在定義的區段中，Contoso 會繼續定義原則。 
 
-### <a name="contosos-information-barrier-policies"></a>康托索的信息屏障政策
+### <a name="contosos-information-barrier-policies"></a>Contoso 的資訊屏障原則
 
-Contoso 定义了三个策略，如下表所述：
+Contoso 定義三個原則，如下表所述：
 
 |原則  |原則定義  |
 |---------|---------|
-|政策 1：防止销售人员与研究部沟通     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> 在此示例中，信息障碍策略*称为"销售研究"。* 当此策略处于活动状态并应用时，它有助于防止处于"销售"细分的用户与"研究"部分中的用户通信。 这是一个单向策略;这不会阻止 Research 与销售人员沟通。 为此，需要政策 2。      |
-|政策 2：阻止研究与销售人员沟通     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> 在此示例中，信息障碍策略*称为"研究-销售"。* 当此策略处于活动状态并应用时，它有助于防止"研究"部分中的用户与"销售"段中的用户通信。       |
-|政策 3：允许制造部门仅与人力资源和营销部门沟通     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing" -State Inactive` <p>在这种情况下，信息屏障策略称为*制造-人力资源营销*。 当此策略处于活动状态并应用时，制造部门只能与人力资源和市场营销部门进行沟通。 请注意，人力资源和营销部不受与其他细分市场沟通的限制。 |
+|原則1：防止銷售人員與調查進行通訊     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> 在此範例中，資訊屏障原則稱為「*銷售-調研*」。 當您使用並套用此原則時，會協助避免銷售資料段中的使用者與研究資料段中的使用者進行通訊。 這是單向原則;它不會防止「調查」與銷售進行通訊。 針對此，需要原則2。      |
+|原則2：防止調查與銷售通訊     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> 在此範例中，資訊屏障原則稱為「*調研-銷售*」。 當您使用並套用此原則時，它會協助避免使用調查區段中的使用者與銷售部門中的使用者進行通訊。       |
+|原則3：允許製造業只與 HR 和 Marketing 通訊     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing" -State Inactive` <p>在此情況下，資訊屏障原則稱為「*製造-HRMarketing*。 當您使用並套用此原則時，製造只能與 HR 和 Marketing 進行通訊。 請注意，HR 和 Marketing 不會受到限制，無法與其他的區段進行通訊。 |
 
-在定义段和策略后，Contoso 通过**运行"开始信息策略应用程序**cmdlet"来应用策略。 
+在定義的區段和原則中，Contoso 會執行**InformationBarrierPoliciesApplication** Cmdlet 來套用原則。 
 
-完成后，Contoso 符合法律和行业要求。
+當該完成時，Contoso 符合法律和行業的需求。
 
 ## <a name="related-articles"></a>相關文章
 
-- [获取信息障碍概述](information-barriers.md)
+- [取得資訊障礙的概覽](information-barriers.md)
 
-- [微软团队中的信息障碍](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Microsoft 小組的資訊障礙](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)

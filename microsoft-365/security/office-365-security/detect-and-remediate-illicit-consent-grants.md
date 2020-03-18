@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何識別並修正在 Office 365 中的非法同意授權。
-ms.openlocfilehash: e11518b0b16b7ee922f18b0ef771d36f608e41b7
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 171dbf586a869e9c85bb1e10b6beb7a2f4e5f425
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42363049"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710522"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>偵測並修復 Office 365 中的非法同意授權
 
@@ -29,7 +29,12 @@ ms.locfileid: "42363049"
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>什麼是 Office 365 中的非法同意授權攻擊？
 
-在非法同意授權攻擊中，攻擊者會建立已註冊 Azure 的應用程式，要求存取連絡人資訊、電子郵件或文件等資料。 然後，攻擊者誘騙使用者授權該應用程式同意透過網路釣魚攻擊，或透過插入非法程式碼到信任的網站，來存取其資料。 在非法應用程式獲得授權之後，就擁有資料的帳戶層級存取權，而不需要組織帳戶。 一般補救步驟，例如重設遭入侵帳戶的密碼或要求帳戶的多重要素驗證 (MFA)，對這類型攻擊是無效的，因為這些是第三方應用程式，而且在組織外部。 這些攻擊採用一種互動模型，這種模型會假正在呼叫資訊的實體是自動化，而不是人。
+在非法同意授權攻擊中，攻擊者會建立已註冊 Azure 的應用程式，要求存取連絡人資訊、電子郵件或文件等資料。 然後，攻擊者誘騙使用者授權該應用程式同意透過網路釣魚攻擊，或透過插入非法程式碼到信任的網站，來存取其資料。 在非法應用程式獲得授權之後，就擁有資料的帳戶層級存取權，而不需要組織帳戶。 一般補救步驟，例如重設遭入侵帳戶的密碼或要求帳戶的多重要素驗證 (MFA)，對這類型攻擊是無效的，因為這些是第三方應用程式，而且在組織外部。 
+
+這些攻擊採用一種互動模型，這種模型會假正在呼叫資訊的實體是自動化，而不是人。
+
+> [!IMPORTANT]
+> 您是否懷疑遇到違法的同意問題-從應用程式授與的許可權？ Microsoft Cloud App Security （MCAS）具有一些工具，可偵測、調查和修正您的 OAuth 應用程式。 此 MCAS 文章包含的教學課程，說明如何[調查 OAuth 應用程式的風險](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth)。 您也可以設定[OAuth 的應用程式原則](https://docs.microsoft.com/cloud-app-security/app-permission-policy)，以調查應用程式要求的許可權，這些許可權是使用者授權這些應用程式，並廣泛核准或禁止這些許可權要求。
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Office 365 中的非法同意授權攻擊的外觀如何？
 
@@ -39,16 +44,16 @@ ms.locfileid: "42363049"
 
 1. 在您的 Office 365 租用戶中開啟 [安全性與合規性中心]****。
 
-2. 瀏覽至**搜尋**，然後選取 [**稽核記錄搜尋**。
+2. 流覽至 [**搜尋**]，然後選取 [**審核記錄搜尋**]。
 
-3. 搜尋 （所有活動和所有的使用者），然後輸入開始日期和結束日期若需要，然後按一下 [**搜尋**。 
+3. 搜尋（所有活動和所有使用者）並輸入開始日期和結束日期（如有需要），然後按一下 [**搜尋**]。 
 
-4. 應用程式，並新增 OAuth2PermissionGrant 同意篩選結果。
+4. 篩選結果以取得應用程式的同意，並新增 OAuth2PermissionGrant。
 
-5. 按一下以檢視活動的詳細資料的結果。 按一下 [若要取得的活動詳細資料的**其他相關資訊**。 請檢查 IsAdminContent 是否設為 True。
+5. 按一下結果以查看活動的詳細資料。 按一下 [**詳細資訊**] 以取得活動的詳細資料。 請檢查 IsAdminContent 是否設定為 True。
 
 > [!NOTE]
-> • 發生事件後，對應的稽核記錄項目最多可能需要 30 分鐘或 24 小時才會顯示在搜尋結果中。<br/><br/> • 稽核記錄的保留時間及可在稽核記錄中搜尋的時間長度，取決於您的 Office 365 訂閱，具體來說，取決於指派給特定使用者的授權類型。 如需詳細資訊，請參閱[稽核記錄](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
+> * 在發生事件後，可在搜尋結果中顯示對應的審計記錄專案，最多可花30分鐘到24小時的時間。 <br/><br/> 在審核記錄中保留及可搜尋的審計記錄的時間長度取決於您的 Office 365 訂閱，並特別是指派給特定使用者的授權類型。 如需詳細資訊，請參閱[稽核記錄](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
 如果這個值為 true，表示擁有全域系統管理員存取權的人員可能已獲得資料的廣泛存取權。 如果這是未預期的，請採取步驟以[確認攻擊](#how-to-confirm-an-attack)。
 
 ## <a name="how-to-confirm-an-attack"></a>如何確認攻擊
@@ -79,7 +84,7 @@ ms.locfileid: "42363049"
 
 5. 選取 [應用程式]****。
 
-如此將會顯示指派給使用者和功能的應用程式的應用程式的權限。
+這會顯示指派給使用者的應用程式，以及應用程式的許可權。
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>請您的使用者列舉其應用程式存取權的步驟
 
@@ -98,11 +103,11 @@ ms.locfileid: "42363049"
 - 將執行指令碼的電腦上的本機系統管理員。
 
 > [!IMPORTANT]
-> 我們強烈建議您針對您的系統管理帳戶要求進行多重要素驗證。 此指令碼支援 MFA 驗證。
+> ***強烈建議***您在您的管理帳戶上需要多重要素驗證。 此指令碼支援 MFA 驗證。
 
 1. 使用本機系統管理員權限登入您將執行指令碼的電腦。
 
-2. 下載或從 GitHub [Get AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)指令碼複製到您要從中執行指令碼的資料夾。 此資料夾與寫入輸出「permissions.csv」檔案的資料夾是同一個。
+2. 將[Get-AzureADPSPermissions](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)腳本從 GitHub 下載或複製到要執行腳本的資料夾。 此資料夾與寫入輸出「permissions.csv」檔案的資料夾是同一個。
 
 3. 以系統管理員身分開啟 PowerShell 執行個體，然後開啟您要儲存指令碼的資料夾。
 
@@ -116,7 +121,7 @@ ms.locfileid: "42363049"
 
 指令碼會產生一個名為「Permissions.csv」的檔案。 依照下列步驟尋找非法應用程式權限授權：
 
-1. 在 [ConsentType] 欄 (欄 G) 中，搜尋值「AllPrinciples」。 AllPrincipals 權限可讓用戶端應用程式存取租用戶中的每個人的內容。 原生的 Office 365 應用程式需要此權限才能正常運作。 必須仔細檢閱具有此權限的每一個非 Microsoft 應用程式。
+1. 在 [ConsentType] 欄 (欄 G) 中，搜尋值「AllPrinciples」。 AllPrincipals 許可權可讓用戶端應用程式存取租使用者的所有人內容。 原生的 Office 365 應用程式需要此權限才能正常運作。 必須仔細檢閱具有此權限的每一個非 Microsoft 應用程式。
 
 2. 在 [Permission] 欄 (欄 F) 中，檢閱每個委派的應用程式對內容所擁有的權限。 尋找「Read」和「Write」權限或「*.All」權限，並仔細加以檢閱，因為它們可能不適當。
 
