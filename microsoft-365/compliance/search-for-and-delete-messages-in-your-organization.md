@@ -17,27 +17,27 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用 Office 365 中安全性與合規性中心的搜尋和清除功能，可搜尋並刪除組織中所有信箱的電子郵件訊息。
-ms.openlocfilehash: 27340bf832feee0dc7b5222f187816b0dfa1bb59
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 9e3825fbbe3c058e6f8fff48511e4e450b3e54e9
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634161"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710512"
 ---
-# <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>搜尋並刪除 Office 365 組織中的電子郵件
+# <a name="search-for-and-delete-email-messages"></a>搜尋並刪除電子郵件訊息
 
 **本文適用於系統管理員。您正嘗試在信箱中尋找要刪除的項目嗎？請參閱[使用立即搜尋尋找郵件或項目](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
    
 您可以使用 Office365 中的內容搜尋功能來搜尋並刪除組織中所有信箱的電子郵件。 這可幫助您找出並移除可能有害或高風險的電子郵件，例如：
   
 - 含有危險附件或病毒的郵件
-    
+
 - 網路釣魚郵件
-    
+
 - 包含敏感資料的郵件
-    
+
 > [!CAUTION]
-> 搜尋和清除是一個強大的功能，可讓獲指派必要權限的任何人刪除組織信箱的電子郵件。 
+> 搜尋和清除是一個強大的功能，可讓獲指派必要權限的任何人刪除組織信箱的電子郵件。
   
 ## <a name="before-you-begin"></a>開始之前
 
