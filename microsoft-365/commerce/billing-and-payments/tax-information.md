@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: '瞭解不同地區的商務用 Office 365 訂閱需要支付多少稅金。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 88997eb69cbbee1b7ec4520773c167609434e0a4
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: f437e2f58797f3cc092b50611f34ecb2ce9cf3b0
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710554"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826310"
 ---
 # <a name="tax-information"></a>稅務資訊
 
@@ -90,7 +90,7 @@ ms.locfileid: "42710554"
 
 ## <a name="what-tax-will-i-be-charged"></a>我需要支付哪些稅金？
 
-查看下列地區收取的稅金。您也可以提供適當的文件給支援人員以[申請免稅資格](apply-for-tax-exempt-status.md)。
+查看下列地區收取的稅金。您也可以提供適當的文件給支援人員以[申請免稅資格](tax-information.md#apply-for-tax-exempt-status)。
   
 ### <a name="europe-the-middle-east-and-africa-emea"></a>歐洲、中東及非洲 (EMEA)
 

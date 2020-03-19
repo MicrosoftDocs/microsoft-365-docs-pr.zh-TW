@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 深入瞭解 Office 365 高級威脅防護方案2中的自動化調查和回應功能。
 ms.custom: air
-ms.openlocfilehash: 341d950f81d0d74deab901f0e5af24a559c0f342
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 420143a6a2888900cdc128b22f7b0bcb05adad27
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633821"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826400"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自動化調查和回應（AIR）
 
@@ -30,7 +30,7 @@ ms.locfileid: "42633821"
 
 ## <a name="at-a-high-level"></a>在高層級
 
-當觸發警示時，安全性行動行動會生效。 根據情況而定，可以開始進行[自動化調查過程](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 在自動調查期間和之後，建議進行[修正動作](air-remediation-actions.md)。 Office 365 的 [高級威脅防護] 中不會自動採取任何動作。 您的安全性運作小組會進行審閱，然後[核准或拒絕每項修復動作](air-remediation-actions.md#approve-or-reject-pending-actions)，當執行完畢時，每項調查都會完成。 所有這些活動都會在 Office 365 安全性 & 規範中心中追蹤和查看（請參閱[查看調查的詳細資料](air-view-investigation-results.md#view-details-of-an-investigation)）。
+當觸發警示時，安全性行動行動會生效。 根據情況而定，可以開始進行[自動化調查過程](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 在自動調查期間和之後，建議進行[修正動作](air-remediation-actions.md)。 Office 365 的 [高級威脅防護] 中不會自動採取任何動作。 您的安全性運作小組會進行審閱，然後[核准或拒絕每項修復動作](air-review-approve-pending-completed-actions.md)，當執行完畢時，每項調查都會完成。 所有這些活動都會在 Office 365 安全性 & 規範中心中追蹤和查看（請參閱[查看調查的詳細資料](air-view-investigation-results.md#view-details-of-an-investigation)）。
 
 下列各節提供有關警示、安全性行動手冊及動作中的空氣範例的詳細資訊。
 

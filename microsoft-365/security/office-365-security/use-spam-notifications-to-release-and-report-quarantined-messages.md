@@ -1,11 +1,11 @@
 ---
-title: 利用 Office 365 中的使用者垃圾郵件通知來釋放並回報被隔離的郵件
+title: Office 36 中的使用者垃圾郵件通知
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 03/14/2019
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,39 +17,33 @@ search.appverid:
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
-description: 如果您的系統管理員可讓使用者的通知，您會收到通知訊息，其中列出傳送至您的信箱已識別為垃圾郵件、 大量或網路釣魚郵件提交之郵件。 您可以釋出或回報郵件之後收到通知。
-ms.openlocfilehash: 51fcdefc08987b153d045994927f56df3b670fd0
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+description: 當系統管理員在反垃圾郵件原則中啟用使用者垃圾郵件通知時，郵件收件者會收到有關隔離郵件的定期通知。
+ms.openlocfilehash: 67dbf311c37ae61c007b78110522033d79c0b161
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722034"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857142"
 ---
-# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>利用 Office 365 中的使用者垃圾郵件通知來釋放並回報被隔離的郵件
+# <a name="end-user-spam-notifications-in-office-365"></a>Office 365 中的使用者垃圾郵件通知
 
-如果您的系統管理員可讓使用者的垃圾郵件通知，您會收到通知訊息，列出寄送至您信箱的已識別為垃圾郵件、 大量或釣魚程式而遭到隔離的郵件。
+在沒有 Exchange Online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）組織中，隔離區會在 Office 365 組織中包含可能有害或有害的郵件。 如需詳細資訊，請參閱[Office 365 中的隔離](quarantine-email-messages.md)。
 
-> [!TIP]
-> 如果您是系統管理員且想来啟用此功能，您可以選擇選項時您[修改預設的反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+根據預設，會停用反垃圾郵件原則中的使用者垃圾郵件通知。 當系統管理員[啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md)時，郵件收件者會收到有關其郵件的定期通知，其郵件是以垃圾郵件、大量電子郵件，或（截止至四月，2020）網路釣魚進行隔離。
 
-您收到的訊息包括清單中的垃圾郵件隔離的郵件，您有的日期和時間 （全球定位時間或 UTC） 的最後一則訊息數目。 清單會包含每一封郵件的下列項目：
+> [!NOTE]
+> 在10月2019，我們移除直接從使用者垃圾郵件通知來釋放隔離郵件的功能。 相反地，使用者現在可以移至 Office 365 的安全性 & 合規性中心，以釋放隔離的郵件（直接或透過按一下通知中的 [**複查**]）。 如需詳細資訊，請參閱 [以 Office 365 使用者身分尋找並釋出被隔離的郵件](find-and-release-quarantined-messages-as-a-user.md)。 <br/><br/> 以高可信度網路釣魚、惡意程式碼或郵件流程規則（也稱為傳輸規則）隔離的郵件只適用于系統管理員。 如需詳細資訊，請參閱[在 Office 365 中尋找及發行隔離的郵件為系統管理員](find-and-release-quarantined-messages-as-an-administrator.md)。
 
-- **寄件者**傳送名稱和電子郵件地址將隔離的郵件。
+使用者垃圾郵件通知包含每個隔離郵件的下列資訊：
 
-- **主旨** 隔離之郵件的主旨行文字。
+- **寄件者**：隔離郵件的傳送名稱和電子郵件地址。
 
-- **日期** 郵件遭隔離時的日期和時間 (UTC)。
+- **Subject**：隔離郵件的主旨行文字。
 
-以下是您可以對隔離的郵件採取的動作：
+- **日期**：郵件被隔離的日期和時間（UTC）。
 
-- **封鎖寄件者**如果您希望 Office 365 將寄件者新增至封鎖的寄件者清單。
+- **封鎖寄件者**：按一下此連結可將寄件者新增至您的封鎖寄件者清單。
 
-- **版本**如果郵件不是垃圾郵件，而且您希望 Office 365 將郵件傳送至您的信箱。
+- **檢查**：按一下此連結以移至安全性 & 規範中心的隔離區，您可以在此發行、刪除或報告隔離的郵件。
 
-- 如果您想要採取其他動作，例如預覽或版本，瀏覽至隔離區入口網站的安全性與合規性中心內的**檢閱**。
-
-請注意下列事項：
-
-- 惡意程式碼和高信賴度網路釣魚郵件，因為它們符合郵件流程規則遭到隔離的郵件不會包含在使用者垃圾郵件通知中。 
-
-- 您只能釋出郵件並將其報告為誤判 (非垃圾郵件)   一次。
+![最終使用者垃圾郵件通知範例](../../media/end-user-spam-notification.png)

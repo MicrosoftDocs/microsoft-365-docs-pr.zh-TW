@@ -1,0 +1,109 @@
+### YamlMime:Landing
+title: Office 365 管理 documation
+summary: Office 365 最常用的系統管理工作之快速連結。
+metadata:
+  title: Office 365 管理 documation
+  description: Office 365 最常用的系統管理工作之快速連結。
+  ms.service: o365-administration
+  ms.topic: landing-page
+  ms.collection:
+  - Adm_O365
+  - Adm_TOC
+  author: wingtofree
+  ms.author: v-qingao
+  ms.date: 03/06/2020
+  ms.openlocfilehash: 47d5fa7ffb64b8af8d3bde2a126e153768654fa2
+  ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 03/19/2020
+  ms.locfileid: "42857538"
+landingContent:
+- title: Microsoft Teams
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Microsoft 小組的概述
+      url: https://go.microsoft.com/fwlink/p/?linkid=863169
+    - text: Microsoft Teams
+      url: https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams
+    - text: 商務用 Skype Online 系統管理員
+      url: https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online
+  - linkListType: how-to-guide
+    links:
+    - text: 允許使用者連絡外部商務用 Skype 使用者
+      url: https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-skype-for-business-online/allow-users-to-contact-external-skype-for-business-users
+    - text: 讓商務用 Skype 使用者新增 Skype 連絡人
+      url: https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-skype-for-business-online/let-skype-for-business-users-add-skype-contacts
+    - text: 設定商務用 Skype Online
+      url: https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-skype-for-business-online/set-up-skype-for-business-online
+    - text: 在電腦上安裝商務用 Skype
+      url: https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb
+    - text: 疑難排解
+      url: https://docs.microsoft.com/SkypeForBusiness/set-up-skype-for-business-online/troubleshoot-problems-with-skype-for-business-online
+- title: SharePoint
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: SharePoint Online
+      url: https://docs.microsoft.com/sharepoint/sharepoint-online
+  - linkListType: how-to-guide
+    links:
+    - text: 開啟或關閉 SharePoint Online 的外部共用
+      url: https://docs.microsoft.com/sharepoint/turn-external-sharing-on-or-off
+    - text: 建立及管理網站
+      url: https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center
+    - text: 內部網路規劃指南
+      url: https://docs.microsoft.com/sharepoint/planning-hub-sites
+    - text: 管理網站建立
+      url: https://docs.microsoft.com/sharepoint/manage-site-creation
+    - text: 自訂搜尋體驗
+      url: https://docs.microsoft.com/sharepoint/overview-of-search
+- title: 電子郵件
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 商務用 Office 365 中的電子郵件
+      url: https://docs.microsoft.com/en-us/microsoft-365/admin/email/email?view=o365-worldwide
+  - linkListType: how-to-guide
+    links:
+    - text: 新增員工
+      url: https://docs.microsoft.com/en-us/microsoft-365/admin/add-users/add-users?view=o365-worldwide
+    - text: 修正無法傳送的電子郵件訊息
+      url: https://support.office.com/article/97748418-bbd5-4743-a05b-581f22a466dd
+    - text: 疑難排解
+      url: https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues
+- title: Yammer
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Yammer 系統管理協助
+      url: https://docs.microsoft.com/yammer/yammer-landing-page
+  - linkListType: how-to-guide
+    links:
+    - text: 使用 Office 365 登入 Yammer
+      url: https://docs.microsoft.com/yammer/manage-yammer-users/office-365-sign-in
+    - text: 從 Office 365 管理 Yammer 使用者
+      url: https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle
+    - text: 針對 Yammer 使用者強制執行 Office 365 身分識別
+      url: https://docs.microsoft.com/yammer/configure-your-yammer-network/enforce-office-365-identity
+    - text: 將 Yammer 摘要內嵌至 SharePoint 網站
+      url: https://docs.microsoft.com/yammer/integrate-yammer-with-other-apps/embed-a-feed-into-a-sharepoint-site
+- title: OneDrive
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Office 365 中的 OneDrive
+      url: https://support.office.com/article/3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb
+  - linkListType: how-to-guide
+    links:
+    - text: 取得 OneDrive 同步處理用戶端與行動裝置 App
+      url: https://go.microsoft.com/fwlink/p/?LinkId=798319
+    - text: 在 Windows 中開始使用 OneDrive 同步處理用戶端同步處理檔案
+      url: https://support.office.com/article/615391c4-2bd3-4aae-a42a-858262e42a49
+    - text: 管理 OneDrive 和 SharePoint 中的共用
+      url: https://docs.microsoft.com/onedrive/manage-sharing
+    - text: 設定 OneDrive 使用者的預設儲存空間 (機器翻譯)
+      url: https://docs.microsoft.com/onedrive/set-default-storage-space
+    - text: 修正 OneDrive 同步處理問題
+      url: https://support.office.com/article/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2

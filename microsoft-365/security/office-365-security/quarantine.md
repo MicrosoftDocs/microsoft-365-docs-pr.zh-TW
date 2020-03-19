@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
 ms.collection:
 - M365-security-compliance
-description: 了解託管隔離區的 Exchange Online 和 Exchange Online Protection。
-ms.openlocfilehash: bcbd0db1c05834882c464fa28012b82a13929d7f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 深入瞭解 Exchange Online 和 Exchange Online Protection 的主控隔離。
+ms.openlocfilehash: ea803a4681a12647f57cf17839d26fb391222364
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598650"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42856878"
 ---
 # <a name="quarantine"></a>隔離
 
@@ -29,9 +29,9 @@ ms.locfileid: "41598650"
 
 - [隔離常見問題集](quarantine-faq.md) - 為系統管理員和使用者提供隔離區的一般問題與解答
 
-- [找到並釋放被隔離的郵件，身為系統管理員](find-and-release-quarantined-messages-as-an-administrator.md)： 說明如何系統管理員可以尋找和釋出位於隔離區，在 Exchange 系統管理中心 (EAC) 中，任何郵件並選擇性地其報告為誤判 （非垃圾郵件） 的郵件給 Microsoft。
+- [在 Office 365 中以系統管理員身分管理隔離的郵件和](manage-quarantined-messages-and-files.md)檔案：說明系統管理員如何在 Exchange 系統管理中心（EAC）中尋找並放開位於隔離區中的任何郵件，並選擇性地將其報告為誤報（非垃圾郵件）郵件給 Microsoft。
 
-- [找到並釋放被隔離的郵件，以在 Office 365 中的使用者](find-and-release-quarantined-messages-as-a-user.md)： 說明如何使用者可以尋找和釋出自己被當成垃圾郵件隔離的郵件在垃圾郵件隔離使用者介面中，並向 Microsoft 報告這些郵件不是垃圾郵件。
+- [以 Office 365 中的使用者身分找到並釋放被隔離的郵件](find-and-release-quarantined-messages-as-a-user.md)：說明使用者如何在垃圾郵件隔離使用者介面中尋找和放開自己的垃圾隔離郵件，並向 Microsoft 報告這些郵件不是垃圾郵件。
 
   > [!IMPORTANT]
   > 若要存取使用者垃圾郵件隔離區，使用者必須具有有效的 Office 365 使用者識別碼和密碼。 保護內部部署信箱的 EOP 客戶必須是透過目錄同步處理或 EAC 建立的有效電子郵件使用者。 如需管理使用者的詳細資訊，EOP 系統管理員可以參閱[在 EOP 中管理郵件使用者](manage-mail-users-in-eop.md)。 對於 EOP 獨立客戶，則建議使用目錄同步處理並啟用目錄架構邊緣封鎖；如需詳細資訊，請參閱[使用目錄架構邊緣封鎖以拒絕傳送至無效收件者的郵件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。

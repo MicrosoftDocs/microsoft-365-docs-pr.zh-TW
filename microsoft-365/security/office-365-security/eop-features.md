@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供可在 Exchange Online Protection (EOP) 託管式電子郵件篩選服務中使用的功能清單。
-ms.openlocfilehash: 9422330cb4999e4391f92e39807e2d2367366972
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 505487e079ea198c6575fd76e2e59a60ead19940
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599370"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857342"
 ---
 # <a name="eop-features"></a>EOP 功能
 
@@ -48,9 +48,9 @@ ms.locfileid: "41599370"
 |透過 Outlook 網頁版垃圾郵件回報提交垃圾郵件和非垃圾郵件|您可以透過 Outlook 網頁版垃圾郵件回報提交垃圾郵件和非垃圾郵件給 Microsoft。 如需詳細資訊，請參閱[在 Outlook 網頁版中回報垃圾郵件與網路釣魚詐騙](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。  <br/><br/> 這項功能目前適用於要由 EOP 篩選其 Exchange Server 2013 SP1 或更新版本之信箱的 Outlook 網頁版客戶。 Exchange Online Outlook 網頁版客戶在不久的將來也會有這項功能。|
 |使用者垃圾郵件隔離通知|使用者可以釋出其自己的垃圾隔離郵件，並選擇性透過使用者垃圾郵件通知郵件來回報這些郵件不是垃圾郵件。 這些通知電子郵件必須由系統管理員設定並啟用，如[在 Exchange Online 中設定使用者垃圾郵件通知](configure-end-user-spam-notifications-in-exchange-online.md)或[在 EOP 中設定使用者垃圾郵件通知](configure-end-user-spam-notifications-in-eop.md)中所述。|
 |使用者垃圾郵件隔離通知頻率|此頻率預設為 3 天，可設定為 1 到 15 天。|
-|讓系統管理員設定使用者垃圾郵件隔離通知語言的功能|此功能適用於使用者及系統管理員。 如需詳細資訊，請參閱[以系統管理員身分找到並釋出被隔離的郵件](find-and-release-quarantined-messages-as-an-administrator.md)或[以使用者身分找到並釋出被隔離的郵件](find-and-release-quarantined-messages-as-a-user.md)。|
-|透過網頁存取和管理隔離區中的郵件|此功能適用於使用者及系統管理員。 如需詳細資訊，請參閱[以系統管理員身分找到並釋出被隔離的郵件](find-and-release-quarantined-messages-as-an-administrator.md)或[以使用者身分找到並釋出被隔離的郵件](find-and-release-quarantined-messages-as-a-user.md)。|
-|搜尋隔離的功能|在隔離區中搜尋特定垃圾郵件的功能，適用於系統管理員和使用者。 如需詳細資訊，請參閱[以系統管理員身分找到並釋出被隔離的郵件](find-and-release-quarantined-messages-as-an-administrator.md)或[以使用者身分找到並釋出被隔離的郵件](find-and-release-quarantined-messages-as-a-user.md)。|
+|讓系統管理員設定使用者垃圾郵件隔離通知語言的功能|此功能適用於使用者及系統管理員。 如需詳細資訊，請參閱[在 Office 365 中管理被隔離的郵件和檔案為系統管理員](manage-quarantined-messages-and-files.md)，或[尋找並釋放被隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。|
+|透過網頁存取和管理隔離區中的郵件|此功能適用於使用者及系統管理員。 如需詳細資訊，請參閱[在 Office 365 中管理被隔離的郵件和檔案為系統管理員](manage-quarantined-messages-and-files.md)，或[尋找並釋放被隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。|
+|搜尋隔離的功能|在隔離區中搜尋特定垃圾郵件的功能，適用於系統管理員和使用者。 如需詳細資訊，請參閱[在 Office 365 中管理被隔離的郵件和檔案為系統管理員](manage-quarantined-messages-and-files.md)，或[尋找並釋放被隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。|
 |從 Exchange 系統管理中心檢視垃圾郵件隔離郵件標頭|檢視隔離中的郵件標題之後，您也可以複製郵件標頭文字並將它貼到[郵件標頭分析器](https://testconnectivity.microsoft.com/?tabid=mha)，可提供資訊說明郵件發生了什麼事。|
 |**Anti-malware protection**||
 |多重引擎反惡意程式碼保護|多重的反惡意程式碼引擎可協助隨時自動保護我們的客戶。|
@@ -95,5 +95,5 @@ ms.locfileid: "41599370"
 |電話和 web 技術支援，每天 24 小時，每週七天|如需 EOP 協助和支援選項的詳細資訊，請參閱 [EOP 的說明和支援](help-and-support-for-eop.md)。|
 |**其他功能**||
 |異地備援的伺服器全域網路|EOP 執行於資料中心的全球性網路，這些資料中心的設計目的是協助提供最佳的可用性。如需詳細資訊，請參閱 [Exchange Online Protection 概觀](exchange-online-protection-overview.md) 中的「EOP 資料中心」一節。  |
-|內部部署伺服器無法接收郵件時，將郵件加入佇列|延期的郵件保留在我們佇列中的一天。郵件重試次數乃是根據我們得到從收件者的郵件系統的錯誤。平均而言，郵件會重試每隔 5 分鐘。如需詳細資訊，請參閱[EOP 排入佇列、 延後和退回的訊息常見問題集](eop-queued-deferred-and-bounced-messages-faq.md)。|
+|內部部署伺服器無法接收郵件時，將郵件加入佇列|延期的郵件會在一天內保留在佇列中。郵件重試嘗試會根據我們從收件者的郵件系統傳回的錯誤而定。一般會每5分鐘重試一次郵件。如需詳細資訊，請參閱[EOP 佇列、延期及退回的訊息常見問題](eop-queued-deferred-and-bounced-messages-faq.md)。|
 |Office 365 郵件加密可以作為附加元件服務使用|如需詳細資訊，請參閱 [Office 365 中的加密](https://docs.microsoft.com/office365/securitycompliance/encryption)。|

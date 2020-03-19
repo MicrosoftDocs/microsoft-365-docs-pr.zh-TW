@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: '瞭解如何變更 Office 365 的預設主題，並加以自訂，使其符合您公司的徽標或色彩。 '
-ms.openlocfilehash: fc50519190abe1b827bd3a5f93a6a82f8c22f0b6
-ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
+ms.openlocfilehash: c553e5254246bd81d435b4ebc2be2e975dd80a9d
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42640025"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826324"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>自訂您組織的 Office 365 佈景主題
 
@@ -64,9 +64,9 @@ ms.locfileid: "42640025"
     
 4. 選取 [儲存變更]****。
     
-您會在 [系統管理中心] 中立即看到新的主題，並在一段短暫的延遲之後看到，您會在 Office 365 （包括 Outlook 中的頁面、SharePoint，以及 SharePoint iOS 和 Android 的行動應用程式）中看到新的主題。 下列影像會強調您可以針對 Sharepoint 行動應用程式自訂的主題元素。
+您會立即在系統管理中心看到新的主題，並在一段短暫的延遲之後看到365它，包括 Outlook 中的頁面、SharePoint、SharePoint 行動[應用程式 iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)，以及[SharePoint 適用于 Android 的行動應用程式](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)。 請參閱下圖，取得您從系統管理中心自訂主題變更的範例。
 
-![預設的 Office 365 主題和自訂 Office 365 主題，適用于 SharePoint 行動應用程式]()
+![m365-系統管理員-租使用者-主題-概念](../../media/m365-admin-tenant-theme-conceptual.png)
 
 您可以隨時移除自訂圖示或自訂色彩。 只需回到 [主題] 頁面，然後選取 [**移除自訂主題**]。
   

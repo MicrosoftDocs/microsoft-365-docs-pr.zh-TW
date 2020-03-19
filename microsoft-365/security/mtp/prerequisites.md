@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2b653575e9e79ffe3448f622ca5be2cef37999dd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c482e46cf51cbf11960c02663221df0c136b067c
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633951"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857176"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威脅防護先決條件
 
@@ -34,12 +34,20 @@ ms.locfileid: "42633951"
 瞭解授權、硬體和軟體需求，以及其他設定，以提供和使用 Microsoft 威脅防護。
 
 ## <a name="licensing-requirements"></a>授權需求
-若要使用 Microsoft 威脅防護，您需要下列*其中一個*授權或授權組合：
+若要使用 Microsoft 威脅防護，您必須是單一授權或授權組合。
 
-- Microsoft 365 E5
-- Microsoft 365 E5 安全性
-- Office 365 E5 和「Enterprise 可移動性 + Security E5 （EMS E5）」和 Windows E5
-- Microsoft 365 A5
+### <a name="single-license"></a>單一授權
+您可以使用下列*其中一個*授權：
+
+- Microsoft 365 E5 或 A5
+- Microsoft 365 E5 Security 或 A5 Security
+
+### <a name="combination-of-licenses"></a>授權組合
+您也可以在 Office 365、 *Enterprise 可移動性 + Security （EMS）* 和 Windows 中使用代表 E5 或 A5 訂閱的授權組合。 授權組合必須包含下列*所有*授權：
+
+- Office 365 E5 或 A5
+- *企業行動 + 安全性（EMS）* E5 或 A5
+- Windows E5 或 A5
 
 如需詳細資訊，請[查看 Microsoft 365 企業版服務方案](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
 
