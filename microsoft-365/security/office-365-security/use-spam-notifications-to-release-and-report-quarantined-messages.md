@@ -1,11 +1,11 @@
 ---
-title: 利用 Office 365 中的使用者垃圾郵件通知來釋放並回報被隔離的郵件
+title: Office 36 中的使用者垃圾郵件通知
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 03/14/2019
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,39 +17,33 @@ search.appverid:
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
-description: 如果您的系統管理員可讓使用者的通知，您會收到通知訊息，其中列出傳送至您的信箱已識別為垃圾郵件、 大量或網路釣魚郵件提交之郵件。 您可以釋出或回報郵件之後收到通知。
-ms.openlocfilehash: 51fcdefc08987b153d045994927f56df3b670fd0
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+description: 當系統管理員在反垃圾郵件原則中啟用使用者垃圾郵件通知時，郵件收件者會收到有關隔離郵件的定期通知。
+ms.openlocfilehash: 67dbf311c37ae61c007b78110522033d79c0b161
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722034"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857142"
 ---
-# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a><span data-ttu-id="471ac-104">利用 Office 365 中的使用者垃圾郵件通知來釋放並回報被隔離的郵件</span><span class="sxs-lookup"><span data-stu-id="471ac-104">Use user spam notifications to release and report quarantined messages in Office 365</span></span>
+# <a name="end-user-spam-notifications-in-office-365"></a><span data-ttu-id="aabfb-103">Office 365 中的使用者垃圾郵件通知</span><span class="sxs-lookup"><span data-stu-id="aabfb-103">End-user spam notifications in Office 365</span></span>
 
-<span data-ttu-id="471ac-105">如果您的系統管理員可讓使用者的垃圾郵件通知，您會收到通知訊息，列出寄送至您信箱的已識別為垃圾郵件、 大量或釣魚程式而遭到隔離的郵件。</span><span class="sxs-lookup"><span data-stu-id="471ac-105">If your admin enables spam notifications for users, you'll receive a notification message that lists messages addressed to your mailbox that were identified as spam, bulk, or phish and quarantined instead.</span></span>
+<span data-ttu-id="aabfb-104">在沒有 Exchange Online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）組織中，隔離區會在 Office 365 組織中包含可能有害或有害的郵件。</span><span class="sxs-lookup"><span data-stu-id="aabfb-104">Quarantine holds potentially dangerous or unwanted messages in Office 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.</span></span> <span data-ttu-id="aabfb-105">如需詳細資訊，請參閱[Office 365 中的隔離](quarantine-email-messages.md)。</span><span class="sxs-lookup"><span data-stu-id="aabfb-105">For more information, see [Quarantine in Office 365](quarantine-email-messages.md).</span></span>
 
-> [!TIP]
-> <span data-ttu-id="471ac-106">如果您是系統管理員且想来啟用此功能，您可以選擇選項時您[修改預設的反垃圾郵件原則](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="471ac-106">If you're an administrator and want to enable this feature, you can choose the option when you [modify a default anti-spam policy](configure-your-spam-filter-policies.md).</span></span>
+<span data-ttu-id="aabfb-106">根據預設，會停用反垃圾郵件原則中的使用者垃圾郵件通知。</span><span class="sxs-lookup"><span data-stu-id="aabfb-106">By default, end-user spam notifications are disabled in anti-spam policies.</span></span> <span data-ttu-id="aabfb-107">當系統管理員[啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md)時，郵件收件者會收到有關其郵件的定期通知，其郵件是以垃圾郵件、大量電子郵件，或（截止至四月，2020）網路釣魚進行隔離。</span><span class="sxs-lookup"><span data-stu-id="aabfb-107">When an admin [enables end-user spam notifications](configure-your-spam-filter-policies.md), message recipients will receive periodic notifications about their messages that were quarantined as spam, bulk email, or (as of April, 2020) phishing.</span></span>
 
-<span data-ttu-id="471ac-107">您收到的訊息包括清單中的垃圾郵件隔離的郵件，您有的日期和時間 （全球定位時間或 UTC） 的最後一則訊息數目。</span><span class="sxs-lookup"><span data-stu-id="471ac-107">The message you receive includes the number of spam-quarantined messages you have, and the date and time (in Universal Coordinated Time or UTC) of the last message in the list.</span></span> <span data-ttu-id="471ac-108">清單會包含每一封郵件的下列項目：</span><span class="sxs-lookup"><span data-stu-id="471ac-108">The list includes the following for each message:</span></span>
+> [!NOTE]
+> <span data-ttu-id="aabfb-108">在10月2019，我們移除直接從使用者垃圾郵件通知來釋放隔離郵件的功能。</span><span class="sxs-lookup"><span data-stu-id="aabfb-108">In October 2019, we removed the ability to release quarantined messages directly from end-user spam notifications.</span></span> <span data-ttu-id="aabfb-109">相反地，使用者現在可以移至 Office 365 的安全性 & 合規性中心，以釋放隔離的郵件（直接或透過按一下通知中的 [**複查**]）。</span><span class="sxs-lookup"><span data-stu-id="aabfb-109">Instead, users can now go to the Office 365 Security & Compliance Center to release their quarantined messages (either directly, or by clicking **Review** in the notification).</span></span> <span data-ttu-id="aabfb-110">如需詳細資訊，請參閱 [以 Office 365 使用者身分尋找並釋出被隔離的郵件](find-and-release-quarantined-messages-as-a-user.md)。</span><span class="sxs-lookup"><span data-stu-id="aabfb-110">For more information, see [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md).</span></span> <br/><br/> <span data-ttu-id="aabfb-111">以高可信度網路釣魚、惡意程式碼或郵件流程規則（也稱為傳輸規則）隔離的郵件只適用于系統管理員。</span><span class="sxs-lookup"><span data-stu-id="aabfb-111">Messages that were quarantined as high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins.</span></span> <span data-ttu-id="aabfb-112">如需詳細資訊，請參閱[在 Office 365 中尋找及發行隔離的郵件為系統管理員](find-and-release-quarantined-messages-as-an-administrator.md)。</span><span class="sxs-lookup"><span data-stu-id="aabfb-112">For more information, see [Find and release quarantined messages as an admin in Office 365](find-and-release-quarantined-messages-as-an-administrator.md).</span></span>
 
-- <span data-ttu-id="471ac-109">**寄件者**傳送名稱和電子郵件地址將隔離的郵件。</span><span class="sxs-lookup"><span data-stu-id="471ac-109">**Sender** The send name and email address of the quarantined message.</span></span>
+<span data-ttu-id="aabfb-113">使用者垃圾郵件通知包含每個隔離郵件的下列資訊：</span><span class="sxs-lookup"><span data-stu-id="aabfb-113">An end-user spam notification contains the following information for each quarantined message:</span></span>
 
-- <span data-ttu-id="471ac-110">**主旨** 隔離之郵件的主旨行文字。</span><span class="sxs-lookup"><span data-stu-id="471ac-110">**Subject** The subject line text of the quarantined message.</span></span>
+- <span data-ttu-id="aabfb-114">**寄件者**：隔離郵件的傳送名稱和電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="aabfb-114">**Sender**: The send name and email address of the quarantined message.</span></span>
 
-- <span data-ttu-id="471ac-111">**日期** 郵件遭隔離時的日期和時間 (UTC)。</span><span class="sxs-lookup"><span data-stu-id="471ac-111">**Date** The date and time (in UTC) that the message was quarantined.</span></span>
+- <span data-ttu-id="aabfb-115">**Subject**：隔離郵件的主旨行文字。</span><span class="sxs-lookup"><span data-stu-id="aabfb-115">**Subject**: The subject line text of the quarantined message.</span></span>
 
-<span data-ttu-id="471ac-112">以下是您可以對隔離的郵件採取的動作：</span><span class="sxs-lookup"><span data-stu-id="471ac-112">These are the actions that you can take with a quarantined message:</span></span>
+- <span data-ttu-id="aabfb-116">**日期**：郵件被隔離的日期和時間（UTC）。</span><span class="sxs-lookup"><span data-stu-id="aabfb-116">**Date**: The date and time (in UTC) that the message was quarantined.</span></span>
 
-- <span data-ttu-id="471ac-113">**封鎖寄件者**如果您希望 Office 365 將寄件者新增至封鎖的寄件者清單。</span><span class="sxs-lookup"><span data-stu-id="471ac-113">**Block Sender** if you want Office 365 to add the sender to your blocked senders list.</span></span>
+- <span data-ttu-id="aabfb-117">**封鎖寄件者**：按一下此連結可將寄件者新增至您的封鎖寄件者清單。</span><span class="sxs-lookup"><span data-stu-id="aabfb-117">**Block Sender**: Click this link to add the sender to your Blocked Senders list.</span></span>
 
-- <span data-ttu-id="471ac-114">**版本**如果郵件不是垃圾郵件，而且您希望 Office 365 將郵件傳送至您的信箱。</span><span class="sxs-lookup"><span data-stu-id="471ac-114">**Release** if the message isn't spam and you want Office 365 to send the message to your mailbox.</span></span>
+- <span data-ttu-id="aabfb-118">**檢查**：按一下此連結以移至安全性 & 規範中心的隔離區，您可以在此發行、刪除或報告隔離的郵件。</span><span class="sxs-lookup"><span data-stu-id="aabfb-118">**Review**: Click this link to go the the Quarantine in the Security & Compliance Center, where you can release, delete or report your quarantined messages.</span></span>
 
-- <span data-ttu-id="471ac-115">如果您想要採取其他動作，例如預覽或版本，瀏覽至隔離區入口網站的安全性與合規性中心內的**檢閱**。</span><span class="sxs-lookup"><span data-stu-id="471ac-115">**Review** to navigate to the Quarantine Portal within the Security and Compliance Center if you want to take other actions, such as Preview or Release.</span></span>
-
-<span data-ttu-id="471ac-116">請注意下列事項：</span><span class="sxs-lookup"><span data-stu-id="471ac-116">Be aware of the following:</span></span>
-
-- <span data-ttu-id="471ac-117">惡意程式碼和高信賴度網路釣魚郵件，因為它們符合郵件流程規則遭到隔離的郵件不會包含在使用者垃圾郵件通知中。</span><span class="sxs-lookup"><span data-stu-id="471ac-117">Malware and high confidence phishing messages and messages that are quarantined because they matched a mail flow rule are not included in user spam notifications.</span></span> 
-
-- <span data-ttu-id="471ac-118">您只能釋出郵件並將其報告為誤判 (非垃圾郵件)   一次。</span><span class="sxs-lookup"><span data-stu-id="471ac-118">You can only release a message and report it as a false positive (not junk) once.</span></span>
+![最終使用者垃圾郵件通知範例](../../media/end-user-spam-notification.png)
