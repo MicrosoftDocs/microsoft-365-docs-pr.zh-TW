@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
-description: '了解如何成為系統管理員，並取得 Office 365 訂用帳戶為您的組織。 '
-ms.openlocfilehash: d646b2e0ead1a4d911b4c9335660e2998ab5292a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: '瞭解如何成為系統管理員，以及如何為您的組織取得 Office 365 訂閱。 '
+ms.openlocfilehash: 7b213d2a2e987a4e12cb410372e540ca715528a1
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361548"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857412"
 ---
 # <a name="become-the-admin-and-purchase-office-365-for-your-organization"></a>成為系統管理員，並為貴組織購買 Office 365
 
@@ -47,7 +47,7 @@ Microsoft 提供生產力工具與服務的方式相當便捷，貴組織內部�
 > [!NOTE]
 > 在這過程中，您會成為系統管理員，並完成升級到 Office 365 的設定。您必須先成為第一位系統管理員，才能繼續升級作業，而且您必須同樣升級到 Office 365，才能以系統管理員的身分管理服務。 
   
- **為什麼我們要求您證明自己擁有該網域？** 因為系統會根據使用者所註冊的電子郵件地址網域名稱，將電子郵件地址位於相同網域的所有使用者分為同一組 (例如 rob@contoso.com 和 sara@contoso.com)。 我們決定的群組的每位人員屬於由他們的電子郵件地址 （例如 contoso.com) 的網域部分，讓人員從相同的組織可一起運作。 因為他們都屬於同一個群組，就能與彼此共同作業。
+ **為什麼我們要求您證明自己擁有該網域？** 因為系統會根據使用者所註冊的電子郵件地址網域名稱，將電子郵件地址位於相同網域的所有使用者分為同一組 (例如 rob@contoso.com 和 sara@contoso.com)。 我們決定每個人屬於哪個群組的電子郵件地址的網域部分（如 contoso.com），讓來自相同組織的人員可以一起運作。 因為他們都屬於同一個群組，就能與彼此共同作業。
   
 若要成為該群組的系統管理員，請驗證您擁有貴組織使用者群組所屬的網域。如果您擁有授權權限，可證明自己的網域擁有權 (方法是登入網域受管的位置)，即可為該網域使用者合理管理 Office 365 服務。
   
@@ -62,7 +62,7 @@ Microsoft 提供生產力工具與服務的方式相當便捷，貴組織內部�
 |||
 |:-----|:-----|
 |![粉紅色圓圈中的數字 1](../../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**註冊** 成為系統管理員前，您必須先使用公司電子郵件地址完成 Skype 會議 的註冊程序。  <br/> |
-|![粉紅色圓圈中的數字 2。](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**執行精靈** 註冊後，您即可遵循以下其中一個步驟來執行精靈：  <br/>  執行選取 app 啟動器中的**系統**之後顯示的 [**成為管理員**精靈。  <br/>  OR  <br/>  選擇 [Skype 會議中的 [**升級到 Office 365** ，然後選取 [您想要升級至 Office 365 訂閱。  <br/> |
+|![粉紅色圓圈中的數字 2。](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**執行精靈** 註冊後，您即可遵循以下其中一個步驟來執行精靈：  <br/>  執行在應用程式啟動器中選取 [系統**管理員**] 之後所顯示**的 [管理員**] 嚮導。  <br/>  OR  <br/>  選擇升級為 Skype 會議中的**office 365** ，然後選取您要升級的 office 365 訂閱。  <br/> |
 |![粉紅色圓圈中的數字 3。](../../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**驗證網域擁有權** 接下來，您將向 Office 365 驗證您擁有或管理與貴組織電子郵件地址相關聯的網域名稱 (例如 contoso.com)。只有網域名稱擁有者有權執行此動作。  <br/> |
 |![粉紅色圓圈中的數字 4。](../../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**購買授權** 在精靈中的最後一個步驟，您將為所有使用公司電子郵件註冊 Skype 會議的貴組織使用者購買 Office 365 授權。  <br/> 舉例來說，如果有兩位使用者使用自己的公司電子郵件註冊 Skype 會議，您就需要購買兩份授權，以分配給個別使用者使用。  <br/> > [!NOTE]> 您必須購買授權才能管理 Office 365。           |
 
@@ -80,15 +80,15 @@ Microsoft 提供生產力工具與服務的方式相當便捷，貴組織內部�
    
 ## <a name="whats-next"></a>下一步是什麼？
 
-現在，您是系統管理員，您可能想要執行下列動作：
+現在您是系統管理員，您可能想要執行下列作業：
   
 |****工作****|****詳細資料****|
 |:-----|:-----|
-|新增或移除授權  <br/> |您可以[新增更多授權](../../commerce/licenses/buy-licenses.md)尚未，不使用 Office 365 的使用者或[移除之授權的使用者](../manage/remove-licenses-from-users.md)，您不想使用貴組織的 Office 365 訂用帳戶。  <br/> |
+|新增或移除授權  <br/> |您可以針對尚未使用 Office 365 的使用者[新增更多授權](../../commerce/licenses/buy-licenses.md)，或從不想要使用組織之 office 365 訂閱的[使用者中移除授權](../manage/remove-licenses-from-users.md)。  <br/> |
 |連絡已註冊的使用者  <br/> |Reach out to the other users and let them know that you're managing their Office 365 subscription and that they've been upgraded. [Follow these steps](../add-users/add-users.md) to see a list of **Active Users** and their email addresses.  <br/> |
 |開始使用 Office 365  <br/> |請造訪 [Office 365 學習中心](https://support.office.com/learn/office365-for-business) 並了解如何登入、檢查電子郵件、共用文件等。您和您的使用者可利用這個網站開始使用 Office 365。  <br/> |
-|管理您的 Office 365 訂閱  <br/> |請造訪[Office 365 系統管理員說明中心](../admin-home.md)並了解一般系統管理工作，例如新增和移除使用者、 重設密碼，以及設定行動裝置。  <br/> |
+|管理您的 Office 365 訂閱  <br/> |請造訪[Office 365 系統管理中心協助中心](../admin-home.yml)，瞭解常見的系統管理工作，例如新增及移除使用者、重設密碼及設定行動裝置。  <br/> |
 
 ## <a name="still-need-help"></a>仍需要協助嗎？
 
-[連絡 Microsoft 支援服務](../contact-support-for-business-products.md)
+[撥打 Microsoft 支援服務](../contact-support-for-business-products.md)

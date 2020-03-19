@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: a8f4cd9d3b970d6216e05fa6ff78699558c82600
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: a42646c423c08298a619e8bd559cd819ba3c47db
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633981"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857460"
 ---
 # <a name="the-action-center"></a>重要訊息中心
 
@@ -47,9 +47,9 @@ ms.locfileid: "42633981"
 
 1. 移至 [https://security.microsoft.com](https://security.microsoft.com) 並登入。 
 
-2. 在功能窗格中，選擇 **[重要訊息中心]**。 
+2. 在功能窗格中，選擇 [控制中心]****。 
 
-3. 您會在重要訊息中心看到兩個索引標籤：**[擱置中]** 和 **[歷史記錄]**。
+3. 在 [操作中心] 中，您會看到兩個索引標籤：**擱置**和**記錄**。
 
     - **[擱置中]** 索引標籤會列出安全作業小組人員需要檢閱及核准才能繼續的調查。 請務必檢閱您在這裡看到的擱置中項目並採取行動。
 
@@ -72,11 +72,11 @@ ms.locfileid: "42633981"
 
 |補救動作 |必要角色和權限 |
 |--|----|
-|Microsoft Defender ATP 補救 (裝置) |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 指派**安全性系統管理員**角色<br/>--- 或 ---<br/>在 Microsoft Defender ATP 中指派**作用中補救動作**角色 <br/> <br/> 若要深入了解，請參閱下列資源： <br/>- [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [建立及管理角色型存取控制的角色 (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
-|Office 365 ATP 補救 (Office 內容和電子郵件)  |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 指派**安全性系統管理員**角色<br/>--- 且 --- <br/>在 Office 365 安全性與合規性中心指派 ([https://protection.office.com](https://protection.office.com)) **搜尋和清除**角色 <br/><br/>**重要**：如果您只在 Office 365 安全性與合規性中心指派安全性系統管理員角色，便無法存取重要訊息中心或 Microsoft 威脅防護功能。 您必須在 Azure Active Directory 或 Microsoft 365 系統管理中心指派安全性系統管理員角色。 <br/><br/>若要深入了解，請參閱下列資源： <br/>- [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Office 365 安全性與合規性中心中的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender ATP 補救 (裝置) |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 指派安全性系統管理員角色<br/>--- 或 ---<br/>在 Microsoft Defender ATP 中指派作用中補救動作角色 <br/> <br/> 若要深入了解，請參閱下列資源： <br/>- [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [建立及管理角色型存取控制的角色 (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
+|Office 365 ATP 補救 (Office 內容和電子郵件)  |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 指派安全性系統管理員角色<br/>--- 且 --- <br/>在 Office 365 安全性與合規性中心指派 ([https://protection.office.com](https://protection.office.com)) 搜尋和清除角色 <br/><br/>**重要**：如果您只在 Office 365 安全性與合規性中心指派安全性系統管理員角色，便無法存取重要訊息中心或 Microsoft 威脅防護功能。 您必須在 Azure Active Directory 或 Microsoft 365 系統管理中心指派安全性系統管理員角色。 <br/><br/>若要深入了解，請參閱下列資源： <br/>- [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Office 365 安全性與合規性中心中的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!NOTE]
-> 在 Azure Active Directory 中指派為**全域管理員**角色的使用者可核准或拒絕重要訊息中心的任何擱置中動作。 不過，最佳做法是貴組織限制指派為全域管理員角色的人員人數。 我們建議您針對重要訊息中心權限使用**安全性系統管理員**、**作用中補救動作**，以及上述 **「搜尋」和「清除」角色**。
+> 在 Azure Active Directory 中指派為全域管理員角色的使用者可核准或拒絕重要訊息中心的任何擱置中動作。 不過，最佳做法是貴組織限制指派為全域管理員角色的人員人數。 我們建議您針對重要訊息中心權限使用安全性系統管理員、作用中補救動作，以及上述「搜尋」和「清除」角色。
 
 ## <a name="next-steps"></a>後續步驟 
 

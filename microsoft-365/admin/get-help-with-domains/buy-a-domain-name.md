@@ -20,44 +20,44 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
-description: 了解如何購買 Office 365 中的網域名稱。
+description: 瞭解如何在 Office 365 中購買功能變數名稱。
 ms.custom: okr_smb
-ms.openlocfilehash: 8b2b23e2e699723d54ecb7ca2807296641178664
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1982ac054ca64f2442e108b457553a58ebcb234c
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251672"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857436"
 ---
 # <a name="buy-a-domain-name-in-office-365"></a>在 Office 365 中購買網域名稱
 
- *要新增、 修改或移除您**必須**是**全域系統管理員**的[商務或企業方案](https://products.office.com/business/office)的網域。這些變更會影響整個租用戶*自訂系統管理員*或*一般使用者*將無法進行這些變更。*  
+ *若要新增、修改或移除網域，您**必須**是[企業或企業方案](https://products.office.com/business/office)的**全域系統管理員**。這些變更會影響整個承租人、*自訂*的系統管理員或*一般使用者*無法進行這些變更。*  
 
  若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
   
-### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>登入並移至 [設定\>網域\>購買的網域
+### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>登入並前往設定\>網域\>購買網域
 
-1. 在系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
     
-3. 在 [**網域**] 頁面上選取 [**購買網域**]。
+3. 在 [**網域**] 頁面上，選取 [**購買網域**]。
     
 您可以從下列頂層網域選擇您要的網域。
   
-- .biz
+- 。 .biz
     
 - .com
     
-- .info
+- 。資訊
     
-- .me
+- 。 me
     
 - .mobi
     
 - .net
     
-- .org
+- org
     
-- .tv
+- 。電視
     
 - 。 co.uk
     
@@ -65,16 +65,16 @@ ms.locfileid: "42251672"
     
 
 > [!NOTE]
-> 當您選取 [**購買網域**時，您可能會被重新導向至您的 Microsoft 合作夥伴網站如果租用戶是透過 Microsoft 合作夥伴購買/管理。
+> 當您選取 [**購買網域**] 時，當租使用者透過 Microsoft 合作夥伴購買/管理時，可能會重新導向至您的 Microsoft 合作夥伴網站。
 
 ### <a name="domain-privacy"></a>網域隱私權
-我們提供免費網域隱私權訂用帳戶包含網域購買。 這會保留您附加至您的網域與私人 numbers，ICANN 註冊的連絡資訊。 [瞭解更多。](https://whois.icann.org/en/privacy-and-proxy-services)
+在購買網域時，我們會提供免費的網域隱私權訂閱。 這可讓您的連絡人資訊以 ICANN 私人的方式註冊您的網域。 [瞭解更多資訊。](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>向其他網域註冊機構購買網域
-如果您想要從[GoDaddy](https://www.godaddy.com)以外網域註冊機構購買網域，建議您使用其中一個下列支援自動安裝程式 （網域連線）。 
+如果您想要從[GoDaddy](https://www.godaddy.com)以外的網域註冊機構購買網域，我們建議您在下列其中一個支援自動安裝的產品（網域連接）。 
   
 - [1&amp;1 IONOS](https://www.1and1.com/)
-- [WordPress](https://www.wordpress.com) 
+- [Wordpress](https://www.wordpress.com) 
 
    
 ### <a name="transfer-your-domain-to-a-different-domain-registrar"></a>將網域移轉到其他網域註冊機構
@@ -117,8 +117,8 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 ## <a name="related-articles"></a>相關文章
 
-[將網域新增至 Office 365](../setup/add-domain.md)
+[新增網域至 Office 365](../setup/add-domain.md)
 
 [網域常見問題集](../setup/domains-faq.md)
 
-[取得 Office 365 網域的說明](get-help-with-domains.md)
+[取得 Office 365 網域的說明](get-help-with-domains.yml)
