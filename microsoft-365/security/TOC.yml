@@ -372,15 +372,15 @@
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: 行銷活動檢視
               href: ./office-365-security/campaigns.md
-            - name: 使用威脅分析了解最新的攻擊
-              href: ./mtp/latest-attack-campaigns.md
             - name: 自動調查及回應
               items:
                 - name: AIR 概觀
                   href: ./office-365-security/office-365-air.md
+                - name: 補救動作
+                  href: ./office-365-security/air-remediation-actions.md
                 - name: 檢視自動調查的詳細資料和結果
                   href: ./office-365-security/air-view-investigation-results.md
-                - name: 核准或拒絕擱置動作
+                - name: 檢閱和核准 (或拒絕) 擱置動作
                   href: ./office-365-security/air-remediation-actions.md
                 - name: 整合 AIR 與自訂解決方案或協力廠商解決方案
                   href: ./office-365-security/air-custom-reporting.md
@@ -390,6 +390,8 @@
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: 檢視並閱讀 ATP 報告
               href: ./office-365-security/view-reports-for-atp.md
+            - name: 使用威脅分析了解最新的攻擊
+              href: ./mtp/latest-attack-campaigns.md
             - name: ATP 安全連結警告頁面的意義
               href: ./office-365-security/atp-safe-links-warning-pages.md
             - name: 使用威脅追蹤工具
