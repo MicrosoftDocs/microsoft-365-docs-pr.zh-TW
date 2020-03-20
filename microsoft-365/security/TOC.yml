@@ -381,7 +381,7 @@
                 - name: 檢視自動調查的詳細資料和結果
                   href: ./office-365-security/air-view-investigation-results.md
                 - name: 檢閱和核准 (或拒絕) 擱置動作
-                  href: ./office-365-security/air-remediation-actions.md
+                  href: ./office-365-security/air-review-approve-pending-completed-actions.md
                 - name: 整合 AIR 與自訂解決方案或協力廠商解決方案
                   href: ./office-365-security/air-custom-reporting.md
             - name: 快速偵測和處理受影響的使用者帳戶
