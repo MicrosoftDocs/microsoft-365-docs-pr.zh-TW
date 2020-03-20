@@ -47,12 +47,14 @@
           href: get-ready/prerequisites.md
         - name: 準備網路
           href: get-ready/network.md
-        - name: 為 Microsoft 受管理的電腦準備備內部部署資源存取權
+        - name: 準備內部部署資源存取
           href: get-ready/authentication.md
-        - name: 為 Microsoft 受管理的電腦準備對應磁碟機
+        - name: 準備對應磁碟機
           href: get-ready/mapped-drives.md
-        - name: 為 Microsoft 受管理的電腦準備認證和網路設定檔
+        - name: 準備憑證和網路設定檔
           href: get-ready/certs-wifi-lan.md
+        - name: 準備列印資源
+          href: get-ready/printing.md
         - name: 準備應用程式
           href: get-ready/apps.md
           items:
