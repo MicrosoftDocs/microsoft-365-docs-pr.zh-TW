@@ -1,9 +1,9 @@
 ---
-title: 使用郵件流程規則來設定 Exchange Online Protection 中篩選大量電子郵件
+title: 使用郵件流程規則來篩選 Office 365 中的大量電子郵件
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -14,134 +14,162 @@ search.appverid:
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
-description: 系統管理員可以了解如何使用 Exchange Online Protection 中的郵件流程規則的大量電子郵件篩選。
-ms.openlocfilehash: 81b0f4cc58d712c3a1c1e09dab02d1c6f56cb69d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 系統管理員可以瞭解如何使用 Exchange Online Protection 中的郵件流程規則，以進行大量電子郵件篩選。
+ms.openlocfilehash: 2ac81d798af957f23f95b92f633b93bdda677991
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081814"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895044"
 ---
-# <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a><span data-ttu-id="19a5c-103">使用郵件流程規則來設定 Exchange Online Protection 中篩選大量電子郵件</span><span class="sxs-lookup"><span data-stu-id="19a5c-103">Use mail flow rules to configure bulk email filtering in Exchange Online Protection</span></span>
+# <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a><span data-ttu-id="030d4-103">使用郵件流程規則來篩選 Office 365 中的大量電子郵件</span><span class="sxs-lookup"><span data-stu-id="030d4-103">Use mail flow rules to filter bulk email in Office 365</span></span>
 
-<span data-ttu-id="19a5c-104">您可以設定全公司內容篩選的垃圾郵件和大量電子郵件使用的預設垃圾郵件內容篩選器原則。</span><span class="sxs-lookup"><span data-stu-id="19a5c-104">You can set company-wide content filters for spam and bulk email using the default spam content-filter policies.</span></span> <span data-ttu-id="19a5c-105">請參閱[設定垃圾郵件篩選器原則](configure-your-spam-filter-policies.md)and [Set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy)有關如何設定內容篩選原則。</span><span class="sxs-lookup"><span data-stu-id="19a5c-105">Check out [Configure your spam filter policies](configure-your-spam-filter-policies.md) and [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy) on how to set the content filter policies.</span></span>
+<span data-ttu-id="030d4-104">如果您是 Office 365 客戶的信箱位於 Exchange Online 或獨立 Exchange Online Protection （EOP）客戶但沒有 Exchange Online 信箱，EOP 會使用反垃圾郵件原則（也稱為垃圾郵件篩選原則或內容篩選原則）來掃描垃圾郵件和大宗郵件（也稱為灰色郵件）的輸入郵件。</span><span class="sxs-lookup"><span data-stu-id="030d4-104">If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, EOP uses anti-spam policies (also known as spam filter policies or content filter policies) to scan inbound messages for spam and bulk mail (also known as gray mail).</span></span> <span data-ttu-id="030d4-105">如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="030d4-105">For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).</span></span>
 
-<span data-ttu-id="19a5c-106">如果您想要更多選項] 來篩選大量郵件，您可以建立要搜尋的文字模式或經常大量電子郵件中找到的片語的郵件流程規則 （也稱為傳輸規則）。</span><span class="sxs-lookup"><span data-stu-id="19a5c-106">If you want to more options to filter bulk messages, you can create mail flow rules (also known as transport rules) to search for text patterns or phrases frequently found in bulk emails.</span></span> <span data-ttu-id="19a5c-107">任何包含這些特性的郵件會被標示為垃圾郵件。</span><span class="sxs-lookup"><span data-stu-id="19a5c-107">Any message containing these characteristics will be marked as spam.</span></span> <span data-ttu-id="19a5c-108">使用這些規則有助於減少貴組織接收到的不想要的大量電子郵件數量。</span><span class="sxs-lookup"><span data-stu-id="19a5c-108">Using these rules can help reduce the amount of unwanted bulk email your organization receives.</span></span>
+<span data-ttu-id="030d4-106">如果您想要更多的選項來篩選大宗郵件，您可以建立郵件流程規則（也稱為傳輸規則），以搜尋大宗郵件中經常找到的文字模式或片語，並將這些郵件標示為垃圾郵件。</span><span class="sxs-lookup"><span data-stu-id="030d4-106">If you want more options to filter bulk mail, you can create mail flow rules (also known as transport rules) to search for text patterns or phrases that are frequently found in bulk mail, and mark those messages as spam.</span></span> <span data-ttu-id="030d4-107">如需大宗郵件的詳細資訊，請參閱 Office 365 中的[垃圾郵件和大量電子郵件](what-s-the-difference-between-junk-email-and-bulk-email.md)以及[大量投訴（BCL）](bulk-complaint-level-values.md)之間的差異。</span><span class="sxs-lookup"><span data-stu-id="030d4-107">For more information about bulk mail, see [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md) and [Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md).</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="19a5c-109">建立郵件流程規則記載本主題之前，建議您先閱讀[垃圾郵件和大量電子郵件之間的差異為何？](what-s-the-difference-between-junk-email-and-bulk-email.md)和[大量抱怨層級的值](bulk-complaint-level-values.md)。</span><span class="sxs-lookup"><span data-stu-id="19a5c-109">Before creating the mail flow rules documented this topic, we recommend that you first read [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md) and [Bulk Complaint Level values](bulk-complaint-level-values.md).</span></span><br>
-> <span data-ttu-id="19a5c-110">下列程序會針對您整個組織將郵件標記為垃圾郵件。</span><span class="sxs-lookup"><span data-stu-id="19a5c-110">The following procedures mark a message as spam for your entire organization.</span></span> <span data-ttu-id="19a5c-111">不過，您可以新增另一項條件，只將這些規則套用至貴組織中的特定收件者。</span><span class="sxs-lookup"><span data-stu-id="19a5c-111">However, you can add another condition to apply these rules only to specific recipients in your organization.</span></span> <span data-ttu-id="19a5c-112">如此一來，積極的大量電子郵件篩選設定可以套用至高目標的幾個使用者在您的使用者 （大部分取得他們註冊的帶正負號的大量電子郵件） 的其餘部分時不會受到影響。</span><span class="sxs-lookup"><span data-stu-id="19a5c-112">This way, the aggressive bulk email filtering settings can apply to a few users who are highly targeted, while the rest of your users (who mostly get the bulk email they signed up for) aren't impacted.</span></span>
+<span data-ttu-id="030d4-108">本主題說明如何在 Exchange 系統管理中心（EAC）和 PowerShell （Office 365 客戶的 Exchange Online PowerShell 中建立這些郵件流程規則;Exchange Online Protection PowerShell 適用于獨立 EOP 客戶）。</span><span class="sxs-lookup"><span data-stu-id="030d4-108">This topic explains how create these mail flow rules in the Exchange admin center (EAC) and PowerShell (Exchange Online PowerShell for Office 365 customers; Exchange Online Protection PowerShell for standalone EOP customers).</span></span>
 
-## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a><span data-ttu-id="19a5c-113">建立郵件流程規則，以篩選大量電子郵件根據文字模式</span><span class="sxs-lookup"><span data-stu-id="19a5c-113">Create a mail flow rule to filter bulk email messages based on text patterns</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="030d4-109">開始之前有哪些須知？</span><span class="sxs-lookup"><span data-stu-id="030d4-109">What do you need to know before you begin?</span></span>
 
-1. <span data-ttu-id="19a5c-114">在 Exchange 系統管理中心 (EAC) 中，移至 **[郵件流程]** \> **[規則]**。</span><span class="sxs-lookup"><span data-stu-id="19a5c-114">In the Exchange admin center (EAC), go to **Mail flow** \> **Rules**.</span></span>
+- <span data-ttu-id="030d4-110">您必須先在 Exchange Online 中指派許可權，才能執行這些程式。</span><span class="sxs-lookup"><span data-stu-id="030d4-110">You need to be assigned permissions in Exchange Online before you can do these procedures.</span></span> <span data-ttu-id="030d4-111">具體而言，您必須被指派**傳輸規則**角色，預設會指派給**組織管理**、**規範管理**及**記錄管理**角色。</span><span class="sxs-lookup"><span data-stu-id="030d4-111">Specifically, you need to be assigned the **Transport Rules** role, which is assigned to the **Organization Management**, **Compliance Management**, and **Records Management** roles by default.</span></span> <span data-ttu-id="030d4-112">如需詳細資訊，請參閱[管理 Exchange Online 中的角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。</span><span class="sxs-lookup"><span data-stu-id="030d4-112">For more information, see [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).</span></span>
 
-2. <span data-ttu-id="19a5c-115">按一下 [**新增**![加入圖示](../../media/ITPro-EAC-AddIcon.gif)]，然後選取 [**建立新的規則**。</span><span class="sxs-lookup"><span data-stu-id="19a5c-115">Click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.</span></span>
+- <span data-ttu-id="030d4-113">若要在 Exchange Online 中開啟 EAC，請參閱 exchange [online 中的 exchange admin center](https://docs.microsoft.com/Exchange/exchange-admin-center)。</span><span class="sxs-lookup"><span data-stu-id="030d4-113">To open the EAC in Exchange Online, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).</span></span>
 
-3. <span data-ttu-id="19a5c-116">指定規則的名稱。</span><span class="sxs-lookup"><span data-stu-id="19a5c-116">Specify a name for the rule.</span></span>
+- <span data-ttu-id="030d4-114">若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。</span><span class="sxs-lookup"><span data-stu-id="030d4-114">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span> <span data-ttu-id="030d4-115">若要連線到獨立的 Exchange Online Protection PowerShell，請參閱[connect To Exchange Online protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。</span><span class="sxs-lookup"><span data-stu-id="030d4-115">To connect to standalone Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).</span></span>
 
-4. <span data-ttu-id="19a5c-117">按一下 [**更多選項**![更多選項圖示](../../media/ITPro-EAC-MoreOptionsIcon.png)。</span><span class="sxs-lookup"><span data-stu-id="19a5c-117">Click **More options** ![More options icon](../../media/ITPro-EAC-MoreOptionsIcon.png).</span></span> <span data-ttu-id="19a5c-118">在**套用此規則情況**] 下選取 [**主旨或本文** \> **主旨或內文符合這些文字模式**。</span><span class="sxs-lookup"><span data-stu-id="19a5c-118">Under **Apply this rule if**, select **The subject or body** \> **subject or body matches these text patterns**.</span></span>
+- <span data-ttu-id="030d4-116">如需 Exchange Online 和獨立 EOP 中郵件流程規則的相關資訊，請參閱下列主題：</span><span class="sxs-lookup"><span data-stu-id="030d4-116">For more information about mail flow rules in Exchange Online and standalone EOP, see the following topics:</span></span>
 
-5. <span data-ttu-id="19a5c-119">在 [**指定單字或片語**] 對話方塊中，新增下列規則運算式通常位於大量電子郵件，一次，然後完成後，按一下 [**確定]** :</span><span class="sxs-lookup"><span data-stu-id="19a5c-119">In the **specify words or phrases** dialog box, add the following regular expressions commonly found in bulk emails, one at a time, and click **OK** when you're done:</span></span>
+  - [<span data-ttu-id="030d4-117">Exchange Online 中的郵件流程規則 (傳輸規則)</span><span class="sxs-lookup"><span data-stu-id="030d4-117">Mail flow rules (transport rules) in Exchange Online</span></span>](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-   - `If you are unable to view the content of this email\, please`
+  - [<span data-ttu-id="030d4-118">Exchange Online 中的郵件流程規則條件和例外狀況 (述詞)</span><span class="sxs-lookup"><span data-stu-id="030d4-118">Mail flow rule conditions and exceptions (predicates) in Exchange Online</span></span>](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-   - `\>(safe )?unsubscribe( here)?\</a\>`
+  - [<span data-ttu-id="030d4-119">Exchange Online 中的郵件流程規則動作</span><span class="sxs-lookup"><span data-stu-id="030d4-119">Mail flow rule actions in Exchange Online</span></span>](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-   - `If you do not wish to receive further communications like this\, please`
+- <span data-ttu-id="030d4-120">在範例中用來識別大宗郵件的單字和文字模式清單並不詳盡;您可以視需要新增及移除專案。</span><span class="sxs-lookup"><span data-stu-id="030d4-120">The list of words and text patterns that are used to identify bulk mail in the examples aren't exhaustive; you can add and remove entries as necessary.</span></span> <span data-ttu-id="030d4-121">不過，它們是一個很好的起點。</span><span class="sxs-lookup"><span data-stu-id="030d4-121">However, they are a good starting point.</span></span>
 
-   - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
+- <span data-ttu-id="030d4-p106">在主旨或郵件的其他標頭欄位中搜尋字詞或文字模式，會發生在郵件已從 MIME 內容傳輸編碼方法進行解碼*之後*，該編碼方法用來在 SMTP 伺服器之間傳送 ASCII 文字二進位訊息。您無法使用條件或例外狀況來搜尋主旨或郵件中其他標頭欄位的原始 (通常是 Base64) 編碼值。</span><span class="sxs-lookup"><span data-stu-id="030d4-p106">The search for words or text patterns in the subject or other header fields in the message occurs *after* the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text. You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages.</span></span>
 
-   - `To stop receiving these+emails\:http\://`
+- <span data-ttu-id="030d4-124">下列程式會將大宗郵件標記為您整個組織的垃圾郵件。</span><span class="sxs-lookup"><span data-stu-id="030d4-124">The following procedures mark a bulk message as spam for your entire organization.</span></span> <span data-ttu-id="030d4-125">不過，您可以新增另一個條件，只將這些規則套用至特定的收件者，這樣您就可以在一些高度目標的使用者上使用嚴格篩選，而其餘的使用者（大部分已註冊的大量電子郵件）不會受到影響。</span><span class="sxs-lookup"><span data-stu-id="030d4-125">However, you can add another condition to apply these rules only to specific recipients, so you can use aggressive filtering on a few, highly targeted users, while the rest of your users (who mostly get the bulk email they signed up for) aren't impacted.</span></span>
 
-   - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
+## <a name="use-the-eac-to-create-mail-flow-rules-that-filter-bulk-email"></a><span data-ttu-id="030d4-126">使用 EAC 來建立郵件流程規則，以篩選大量電子郵件</span><span class="sxs-lookup"><span data-stu-id="030d4-126">Use the EAC to create mail flow rules that filter bulk email</span></span>
 
-   - `no longer (wish )?(to )?(be sent|receive) w+ email`
+1. <span data-ttu-id="030d4-127">在 EAC 中，移至 [郵件流程]\*\*\*\* \> [規則]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="030d4-127">In the EAC, go to **Mail flow** \> **Rules**.</span></span>
 
-   - `If you are unable to view the content of this email\, please click here`
+2. <span data-ttu-id="030d4-128">按一下 [**新增** ![加入](../../media/ITPro-EAC-AddIcon.png)圖示]，然後選取 [**建立新的規則**]。</span><span class="sxs-lookup"><span data-stu-id="030d4-128">Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.</span></span>
 
-   - `To ensure you receive (your daily deals|our e-?mails)\, add`
+3. <span data-ttu-id="030d4-129">在開啟的 [**新增規則**] 頁面中，設定下列設定：</span><span class="sxs-lookup"><span data-stu-id="030d4-129">In the **New rule** page that opens, configure the following settings:</span></span>
 
-   - `If you no longer wish to receive these emails`
+   - <span data-ttu-id="030d4-130">**名稱**：輸入規則的唯一描述性名稱。</span><span class="sxs-lookup"><span data-stu-id="030d4-130">**Name**: Enter a unique, descriptive name for the rule.</span></span>
 
-   - `to change your (subscription preferences|preferences or unsubscribe)`
+   - <span data-ttu-id="030d4-131">按一下 [**更多選項**]。</span><span class="sxs-lookup"><span data-stu-id="030d4-131">Click **More Options**.</span></span>
 
-   - `click (here to|the) unsubscribe`
+   - <span data-ttu-id="030d4-132">**在下列情況中套用此規則**：設定下列其中一個設定，以使用正則運算式（RegEx）或字詞或片語來尋找郵件中的內容：</span><span class="sxs-lookup"><span data-stu-id="030d4-132">**Apply this rule if**: Configure one of the following settings to look for content in messages using regular expressions (RegEx) or words or phrases:</span></span>
 
-   <span data-ttu-id="19a5c-120">上面的清單並未常見於大量電子郵件; 中的規則運算式可以新增或移除視需要更多。</span><span class="sxs-lookup"><span data-stu-id="19a5c-120">The above list isn't an exhaustive set of regular expressions found in bulk emails; more can be added or removed as needed.</span></span> <span data-ttu-id="19a5c-121">不過，它是不錯的起點。</span><span class="sxs-lookup"><span data-stu-id="19a5c-121">However, it's a good starting point.</span></span>
+     - <span data-ttu-id="030d4-133">主旨**或** \>本文的主旨或內文**符合這些文字模式**：在出現的 [**指定字詞或片語**] 對話方塊中，輸入下列其中一個值，按一下 [](../../media/ITPro-EAC-AddIcon.png)**新增** ![] 圖示，然後視需要重複任意次數。</span><span class="sxs-lookup"><span data-stu-id="030d4-133">**The subject or body** \> **subject or body matches these text patterns**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat as many times as necessary.</span></span>
 
-   <span data-ttu-id="19a5c-p106">在主旨或郵件的其他標頭欄位中搜尋字詞或文字模式，會發生在郵件已從 MIME 內容傳輸編碼方法進行解碼*之後*，該編碼方法用來在 SMTP 伺服器之間傳送 ASCII 文字二進位訊息。您無法使用條件或例外狀況來搜尋主旨或郵件中其他標頭欄位的原始 (通常是 Base64) 編碼值。</span><span class="sxs-lookup"><span data-stu-id="19a5c-p106">The search for words or text patterns in the subject or other header fields in the message occurs *after* the message has been decoded from the MIME content transfer encoding method that was used to transmit the binary message between SMTP servers in ASCII text. You can't use conditions or exceptions to search for the raw (typically, Base64) encoded values of the subject or other header fields in messages.</span></span>
+       - `If you are unable to view the content of this email\, please`
 
-6. <span data-ttu-id="19a5c-124">在 [**執行下列動作**，選取 [**修改訊息屬性** \> **設定垃圾郵件信賴等級 (SCL)**。</span><span class="sxs-lookup"><span data-stu-id="19a5c-124">Under **Do the following**, select **Modify the message properties** \> **set the spam confidence level (SCL)**.</span></span>
+       - `\>(safe )?unsubscribe( here)?\</a\>`
 
-7. <span data-ttu-id="19a5c-125">在 **[指定 SCL]** 對話方塊中，將 SCL 設定為 **5**、**6** 或 **9**，然後按一下 **[確定]**。</span><span class="sxs-lookup"><span data-stu-id="19a5c-125">In the **specify SCL** dialog box, set the SCL to **5**, **6**, or **9**, and click **ok**.</span></span>
+       - `If you do not wish to receive further communications like this\, please`
 
-   <span data-ttu-id="19a5c-126">將 SCL 設為 5 或 6 會採取 **[垃圾郵件]** 動作，將 SCL 設為 9 會採取 **[高信賴度的垃圾郵件]** 動作 (在內容篩選原則中設定)。</span><span class="sxs-lookup"><span data-stu-id="19a5c-126">Setting the SCL to 5 or 6 takes the **Spam** action, while setting the SCL to 9 takes the **High confidence spam** action, as configured in the content filter policy.</span></span> <span data-ttu-id="19a5c-127">服務將執行內容篩選原則中所設定的動作。</span><span class="sxs-lookup"><span data-stu-id="19a5c-127">The service will perform the action set in the content filter policy.</span></span> <span data-ttu-id="19a5c-128">預設動作是要將郵件傳遞至收件者的垃圾郵件] 資料夾，但是可以設定不同的動作，如所述[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="19a5c-128">The default action is to deliver the message to the recipients' Junk Email folder, but different actions can be configured as described in [Configure your spam filter policies](configure-your-spam-filter-policies.md).</span></span>
+       - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
 
-   <span data-ttu-id="19a5c-129">如果您設定的動作是要隔離郵件，而不是將它傳送給收件者的垃圾郵件] 資料夾，就會傳送訊息至管理員隔離區為郵件流程規則比對，且已將無法使用使用者垃圾郵件隔離區中或透過使用者垃圾郵件通知。</span><span class="sxs-lookup"><span data-stu-id="19a5c-129">If your configured action is to quarantine the message rather than send it to the recipients' Junk Email folder, the message will be sent to the administrator quarantine as a mail flow rule match, and it will not be available in the end user spam quarantine or via end-user spam notifications.</span></span>
+       - `To stop receiving these+emails\:http\://`
 
-   <span data-ttu-id="19a5c-130">如需服務中各 SCL 值的詳細資訊，請參閱[垃圾郵件信賴等級](spam-confidence-levels.md)。</span><span class="sxs-lookup"><span data-stu-id="19a5c-130">For more information about SCL values in the service, see [Spam confidence levels](spam-confidence-levels.md).</span></span>
+       - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
 
-8. <span data-ttu-id="19a5c-131">儲存規則。</span><span class="sxs-lookup"><span data-stu-id="19a5c-131">Save the rule.</span></span>
+       - `no longer (wish )?(to )?(be sent|receive) w+ email`
 
-## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-phrases"></a><span data-ttu-id="19a5c-132">建立郵件流程規則，以篩選器片語為基礎的大量電子郵件</span><span class="sxs-lookup"><span data-stu-id="19a5c-132">Create a mail flow rule to filter bulk email messages based on phrases</span></span>
+       - `If you are unable to view the content of this email\, please click here`
 
-1. <span data-ttu-id="19a5c-133">在 EAC 中，移至 [郵件流程]\*\*\*\* \> [規則]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="19a5c-133">In the EAC, go to **Mail flow** \> **Rules**.</span></span>
+       - `To ensure you receive (your daily deals|our e-?mails)\, add`
 
-2. <span data-ttu-id="19a5c-134">按一下 [**新增**![加入圖示](../../media/ITPro-EAC-AddIcon.gif)]，然後選取 [**建立新的規則**。</span><span class="sxs-lookup"><span data-stu-id="19a5c-134">Click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.</span></span>
+       - `If you no longer wish to receive these emails`
 
-3. <span data-ttu-id="19a5c-135">指定規則的名稱。</span><span class="sxs-lookup"><span data-stu-id="19a5c-135">Specify a name for the rule.</span></span>
+       - `to change your (subscription preferences|preferences or unsubscribe)`
 
-4. <span data-ttu-id="19a5c-136">按一下 [更多選項]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="19a5c-136">Click **More options**.</span></span> <span data-ttu-id="19a5c-137">在**套用此規則情況**] 下選取 [**主旨或本文** \> **主旨或內文包含任何這些字詞**。</span><span class="sxs-lookup"><span data-stu-id="19a5c-137">Under **Apply this rule if**, select **The subject or body** \> **subject or body includes any of these words**.</span></span>
+       - `click (here to|the) unsubscribe`
 
-5. <span data-ttu-id="19a5c-138">在 [**指定單字或片語**] 對話方塊中，新增下列常見於大量電子郵件，一次中然後當您完成時按一下 [**確定]** :</span><span class="sxs-lookup"><span data-stu-id="19a5c-138">In the **specify words or phrases** dialog box, add the following phrases commonly found in bulk emails, one at a time, and click **ok** when you're done:</span></span>
+      <span data-ttu-id="030d4-134">若要編輯專案，請選取它， **Edit** ![然後按一下 [](../../media/ITPro-EAC-EditIcon.png)編輯編輯圖示]。</span><span class="sxs-lookup"><span data-stu-id="030d4-134">To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).</span></span> <span data-ttu-id="030d4-135">若要移除專案，請選取它， **Remove** ![然後按一下 [](../../media/ITPro-EAC-DeleteIcon.png)移除移除圖示]。</span><span class="sxs-lookup"><span data-stu-id="030d4-135">To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).</span></span>
 
-   - `to change your preferences or unsubscribe`
+       <span data-ttu-id="030d4-136">完成後，按一下 [確定]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="030d4-136">When you're finished, click **OK**.</span></span>
 
-   - `Modify email preferences or unsubscribe`
+     - <span data-ttu-id="030d4-137">主旨**或** \>內文的主旨或內文**包含下列任何文字**：在出現的 [**指定字詞或片語**] 對話方塊中，輸入下列其中一個值，按一下 [](../../media/ITPro-EAC-AddIcon.png)**新增** ![] 圖示，然後視需要重複任意次數。</span><span class="sxs-lookup"><span data-stu-id="030d4-137">**The subject or body** \> **subject or body includes any of these words**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat as many times as necessary.</span></span>
 
-   - `This is a promotional email`
+       - `to change your preferences or unsubscribe`
 
-   - `You are receiving this email because you requested a subscription`
+       - `Modify email preferences or unsubscribe`
 
-   - `click here to unsubscribe`
+       - `This is a promotional email`
 
-   - `You have received this email because you are subscribed`
+       - `You are receiving this email because you requested a subscription`
 
-   - `If you no longer wish to receive our email newsletter`
+       - `click here to unsubscribe`
 
-   - `to unsubscribe from this newsletter`
+       - `You have received this email because you are subscribed`
 
-   - `If you have trouble viewing this email`
+       - `If you no longer wish to receive our email newsletter`
 
-   - `This is an advertisement`
+       - `to unsubscribe from this newsletter`
 
-   - `you would like to unsubscribe or change your`
+       - `If you have trouble viewing this email`
 
-   - `view this email as a webpage`
+       - `This is an advertisement`
 
-   - `You are receiving this email because you are subscribed`
+       - `you would like to unsubscribe or change your`
 
-   <span data-ttu-id="19a5c-139">這份清單並非常見於大量電子郵件; 中的片語可以新增或移除視需要更多。</span><span class="sxs-lookup"><span data-stu-id="19a5c-139">This list isn't an exhaustive set of phrases found in bulk emails; more can be added or removed as needed.</span></span> <span data-ttu-id="19a5c-140">不過，它是不錯的起點。</span><span class="sxs-lookup"><span data-stu-id="19a5c-140">However, it's a good starting point.</span></span>
+       - `view this email as a webpage`
 
-6. <span data-ttu-id="19a5c-141">在 [**執行下列動作**，選取 [**修改訊息屬性** \> **設定垃圾郵件信賴等級 (SCL)**。</span><span class="sxs-lookup"><span data-stu-id="19a5c-141">Under **Do the following**, select **Modify the message properties** \> **set the spam confidence level (SCL)**.</span></span>
+       - `You are receiving this email because you are subscribed`
 
-7. <span data-ttu-id="19a5c-142">在 **[指定 SCL]** 對話方塊中，將 SCL 設定為 **5**、**6** 或 **9**，然後按一下 **[確定]**。</span><span class="sxs-lookup"><span data-stu-id="19a5c-142">In the **specify SCL** dialog box, set the SCL to **5**, **6**, or **9**, and click **ok**.</span></span>
+      <span data-ttu-id="030d4-138">若要編輯專案，請選取它， **Edit** ![然後按一下 [](../../media/ITPro-EAC-EditIcon.png)編輯編輯圖示]。</span><span class="sxs-lookup"><span data-stu-id="030d4-138">To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).</span></span> <span data-ttu-id="030d4-139">若要移除專案，請選取它， **Remove** ![然後按一下 [](../../media/ITPro-EAC-DeleteIcon.png)移除移除圖示]。</span><span class="sxs-lookup"><span data-stu-id="030d4-139">To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).</span></span>
 
-   <span data-ttu-id="19a5c-143">將 SCL 設為 5 或 6 會採取 **[垃圾郵件]** 動作，將 SCL 設為 9 會採取 **[高信賴度的垃圾郵件]** 動作 (在內容篩選原則中設定)。</span><span class="sxs-lookup"><span data-stu-id="19a5c-143">Setting the SCL to 5 or 6 takes the **Spam** action, while setting the SCL to 9 takes the **High confidence spam** action, as configured in the content filter policy.</span></span> <span data-ttu-id="19a5c-144">服務將執行內容篩選原則中所設定的動作。</span><span class="sxs-lookup"><span data-stu-id="19a5c-144">The service will perform the action set in the content filter policy.</span></span> <span data-ttu-id="19a5c-145">預設動作是要將郵件傳遞至收件者的垃圾郵件] 資料夾，但是可以設定不同的動作，如所述[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="19a5c-145">The default action is to deliver the message to the recipients' Junk Email folder, but different actions can be configured as described in [Configure your spam filter policies](configure-your-spam-filter-policies.md).</span></span>
+       <span data-ttu-id="030d4-140">完成後，按一下 [確定]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="030d4-140">When you're finished, click **OK**.</span></span>
 
-   <span data-ttu-id="19a5c-146">如果您設定的動作是要隔離郵件，而不是將它傳送給收件者的垃圾郵件] 資料夾，就會傳送訊息至管理員隔離區為郵件流程規則比對，且已將無法使用使用者垃圾郵件隔離區中或透過使用者垃圾郵件通知。</span><span class="sxs-lookup"><span data-stu-id="19a5c-146">If your configured action is to quarantine the message rather than send it to the recipients' Junk Email folder, the message will be sent to the administrator quarantine as a mail flow rule match, and it will not be available in the end user spam quarantine or via end-user spam notifications.</span></span>
+   - <span data-ttu-id="030d4-141">**請執行下列**動作：選取 [**修改郵件屬性** \> ]**設定垃圾郵件信賴等級（SCL）**。</span><span class="sxs-lookup"><span data-stu-id="030d4-141">**Do the following**: Select **Modify the message properties** \> **set the spam confidence level (SCL)**.</span></span> <span data-ttu-id="030d4-142">在出現的 [**指定 SCL** ] 對話方塊中，設定下列其中一個設定：</span><span class="sxs-lookup"><span data-stu-id="030d4-142">In the **Specify SCL** dialog that appears, configure one of the following settings:</span></span>
 
-   <span data-ttu-id="19a5c-147">如需服務中各 SCL 值的詳細資訊，請參閱[垃圾郵件信賴等級](spam-confidence-levels.md)。</span><span class="sxs-lookup"><span data-stu-id="19a5c-147">For more information about SCL values in the service, see [Spam confidence levels](spam-confidence-levels.md).</span></span>
+     - <span data-ttu-id="030d4-143">若要將郵件標示為**垃圾**郵件，請選取 [ **6**]。</span><span class="sxs-lookup"><span data-stu-id="030d4-143">To mark messages as **Spam**, select **6**.</span></span> <span data-ttu-id="030d4-144">您為反垃圾郵件原則中的**垃圾**郵件篩選 verdicts 設定的動作會套用至郵件（預設值為 [**將郵件移至垃圾郵件資料夾**]）。</span><span class="sxs-lookup"><span data-stu-id="030d4-144">The action that you've configured for **Spam** filtering verdicts in your anti-spam policies is applied to the messages (the default value is **Move message to Junk Email folder**).</span></span>
 
-8. <span data-ttu-id="19a5c-148">儲存規則。</span><span class="sxs-lookup"><span data-stu-id="19a5c-148">Save the rule.</span></span>
+     - <span data-ttu-id="030d4-145">將郵件標示為**高信賴度垃圾郵件**選取**9**。</span><span class="sxs-lookup"><span data-stu-id="030d4-145">To mark messages as **High confidence spam** select **9**.</span></span> <span data-ttu-id="030d4-146">您為反垃圾郵件原則中已設定**高信賴度垃圾郵件**篩選 verdicts 的動作會套用至郵件（預設值為 [**將郵件移至垃圾郵件資料夾**]）。</span><span class="sxs-lookup"><span data-stu-id="030d4-146">The action that you've configured for **High confidence spam** filtering verdicts in your anti-spam policies is applied to the messages (the default value is **Move message to Junk Email folder**).</span></span>
 
-## <a name="for-more-information"></a><span data-ttu-id="19a5c-149">相關資訊</span><span class="sxs-lookup"><span data-stu-id="19a5c-149">For more information</span></span>
+    <span data-ttu-id="030d4-147">如需 SCL 值的詳細資訊，請參閱[Office 365 中的垃圾郵件信賴等級（SCL）](spam-confidence-levels.md)。</span><span class="sxs-lookup"><span data-stu-id="030d4-147">For more information about SCL values, see [Spam confidence level (SCL) in Office 365](spam-confidence-levels.md).</span></span>
 
-[<span data-ttu-id="19a5c-150">垃圾郵件和大量電子郵件有什麼不同？</span><span class="sxs-lookup"><span data-stu-id="19a5c-150">What's the difference between junk email and bulk email?</span></span>](what-s-the-difference-between-junk-email-and-bulk-email.md)
+   <span data-ttu-id="030d4-148">完成後，請按一下 [儲存]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="030d4-148">When you're finished, click **Save**</span></span>
 
-[<span data-ttu-id="19a5c-151">大量相容層級值</span><span class="sxs-lookup"><span data-stu-id="19a5c-151">Bulk Complaint Level values</span></span>](bulk-complaint-level-values.md)
+## <a name="use-powershell-to-create-a-mail-flow-rules-that-filter-bulk-email"></a><span data-ttu-id="030d4-149">使用 PowerShell 建立郵件流程規則，以篩選大量電子郵件</span><span class="sxs-lookup"><span data-stu-id="030d4-149">Use PowerShell to create a mail flow rules that filter bulk email</span></span>
 
-[<span data-ttu-id="19a5c-152">設定您的垃圾郵件篩選原則</span><span class="sxs-lookup"><span data-stu-id="19a5c-152">Configure your spam filter policies</span></span>](configure-your-spam-filter-policies.md)
+<span data-ttu-id="030d4-150">使用下列語法來建立一或兩個郵件流程規則（正則運算式與字）：</span><span class="sxs-lookup"><span data-stu-id="030d4-150">Use the following syntax to create one or both of the mail flow rules (regular expressions vs. words):</span></span>
 
-[<span data-ttu-id="19a5c-153">進階垃圾郵件篩選選項</span><span class="sxs-lookup"><span data-stu-id="19a5c-153">Advanced spam filtering  options</span></span>](advanced-spam-filtering-asf-options.md)
+```powershell
+New-TransportRule -Name "<UniqueName>" [-SubjectOrBodyMatchesPatterns "<RegEx1>","<RegEx2>"...] [-SubjectOrBodyContainsWords "<WordOrPrhase1>","<WordOrPhrase2>"...] -SetSCL <6 | 9>
+```
+
+<span data-ttu-id="030d4-151">本範例會建立名為「大量電子郵件篩選-RegEx」的新規則，該規則使用主題中早期的正則運算式清單，將郵件設定為**垃圾**郵件。</span><span class="sxs-lookup"><span data-stu-id="030d4-151">This example creates a new rule named "Bulk email filtering - RegEx" that uses the same list of regular expressions from earlier in the topic to set messages as **Spam**.</span></span>
+
+```powershell
+New-TransportRule -Name "Bulk email filtering - RegEx" -SubjectOrBodyMatchesPatterns "If you are unable to view the content of this email\, please","\>(safe )?unsubscribe( here)?\</a\>","If you do not wish to receive further communications like this\, please","\<img height\="?1"? width\="?1"? sr\c=.?http\://","To stop receiving these+emails\:http\://","To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)","no longer (wish )?(to )?(be sent|receive) w+ email","If you are unable to view the content of this email\, please click here","To ensure you receive (your daily deals|our e-?mails)\, add","If you no longer wish to receive these emails","to change your (subscription preferences|preferences or unsubscribe)","click (here to|the) unsubscribe"... -SetSCL 6
+```
+
+<span data-ttu-id="030d4-152">本範例會建立名為「大量電子郵件篩選-字」的新規則，該規則使用主題中相同的單字清單，將郵件設定為**高信賴的垃圾郵件**。</span><span class="sxs-lookup"><span data-stu-id="030d4-152">This example creates a new rule named "Bulk email filtering - Words" that uses the same list of words from earlier in the topic to set messages as **High confidence spam**.</span></span>
+
+```powershell
+New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWords "to change your preferences or unsubscribe","Modify email preferences or unsubscribe","This is a promotional email","You are receiving this email because you requested a subscription","click here to unsubscribe","You have received this email because you are subscribed","If you no longer wish to receive our email newsletter","to unsubscribe from this newsletter","If you have trouble viewing this email","This is an advertisement","you would like to unsubscribe or change your","view this email as a webpage","You are receiving this email because you are subscribed" -SetSCL 9
+```
+
+<span data-ttu-id="030d4-153">如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule)。</span><span class="sxs-lookup"><span data-stu-id="030d4-153">For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).</span></span>
+
+## <a name="how-do-you-know-this-worked"></a><span data-ttu-id="030d4-154">如何知道這是否正常運作？</span><span class="sxs-lookup"><span data-stu-id="030d4-154">How do you know this worked?</span></span>
+
+<span data-ttu-id="030d4-155">若要驗證您是否已設定郵件流程規則以篩選大量電子郵件，請執行下列任一步驟：</span><span class="sxs-lookup"><span data-stu-id="030d4-155">To verify that you've configured mail flow rules to filter bulk email, do any of the following steps:</span></span>
+
+- <span data-ttu-id="030d4-156">在 EAC 中，移至 [**郵件流程** \> **規則** \> ] 選取\>規則，然後按一下](../../media/ITPro-EAC-EditIcon.png)[**編輯** ![編輯圖示]，然後驗證設定。</span><span class="sxs-lookup"><span data-stu-id="030d4-156">In the EAC, go to **Mail flow** \> **Rules** \> select the rule \> click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png), and verify the settings.</span></span>
+
+- <span data-ttu-id="030d4-157">在 PowerShell 中， \<以規則\>名稱取代規則名稱，並執行下列命令來確認設定：</span><span class="sxs-lookup"><span data-stu-id="030d4-157">In PowerShell, replace \<Rule Name\> with the name of the rule, and run the following command to verify the settings:</span></span>
+
+  ```powershell
+  Get-TransportRule -Identity "<Rule Name>" | Format-List
+  ```
+
+- <span data-ttu-id="030d4-158">從外部帳戶，傳送測試郵件至受影響的收件者，其中包含其中一個短語或文字模式，並確認結果。</span><span class="sxs-lookup"><span data-stu-id="030d4-158">From an external account, send a test messages to an affected recipient that contains one of the phrases or text patterns, and verify the results.</span></span>

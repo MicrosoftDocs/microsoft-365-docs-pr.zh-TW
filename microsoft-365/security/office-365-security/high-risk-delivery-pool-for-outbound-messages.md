@@ -2,10 +2,10 @@
 title: 輸出郵件的高風險傳遞集區
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 8/24/2016
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,42 +15,41 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: 當客戶的電子郵件系統已經受到惡意程式碼或惡意垃圾郵件攻擊，且它傳送到託管的篩選服務的輸出垃圾郵件時，這可能導致各別列出協力廠商區塊上的 Office 365 資料中心伺服器的 IP 位址列出。
-ms.openlocfilehash: 19987ae74b9c78a796ddb5f13cf8291a5ed269ad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 瞭解高風險傳遞集區如何用來保護 Office 365 資料中心的電子郵件伺服器信譽。
+ms.openlocfilehash: 5d1bd2b14eb17ed74ee1cf1e44967f660f4595b8
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599230"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895356"
 ---
-# <a name="high-risk-delivery-pool-for-outbound-messages"></a><span data-ttu-id="8a0df-103">輸出郵件的高風險傳遞集區</span><span class="sxs-lookup"><span data-stu-id="8a0df-103">High-risk delivery pool for outbound messages</span></span>
+# <a name="high-risk-delivery-pool-for-outbound-messages-in-office-365"></a><span data-ttu-id="85f1a-103">Office 365 中輸出郵件的高風險傳遞集區</span><span class="sxs-lookup"><span data-stu-id="85f1a-103">High-risk delivery pool for outbound messages in Office 365</span></span>
 
-<span data-ttu-id="8a0df-104">當客戶的電子郵件系統已經受到惡意程式碼或惡意垃圾郵件攻擊，且它傳送到託管的篩選服務的輸出垃圾郵件時，這可能導致各別列出協力廠商區塊上的 Office 365 資料中心伺服器的 IP 位址列出。</span><span class="sxs-lookup"><span data-stu-id="8a0df-104">When a customer's email system has been compromised by malware or a malicious spam attack, and it's sending outbound spam through the hosted filtering service, this can result in the IP addresses of the Office 365 data center servers being listed on third-party block lists.</span></span> <span data-ttu-id="8a0df-105">執行動作的目的伺服器不使用託管的篩選服務，但不要使用這些封鎖清單，拒絕從任何已新增至這些清單託管篩選 IP 位址傳送的所有電子郵件。</span><span class="sxs-lookup"><span data-stu-id="8a0df-105">Destination servers that do not use the hosted filtering service, but do use these block lists, reject all email sent from any of the hosted filtering IP addresses that have been added to those lists.</span></span> <span data-ttu-id="8a0df-106">為避免這種情況，超出垃圾郵件閾值的所有外寄郵件傳送到高風險傳遞集區。</span><span class="sxs-lookup"><span data-stu-id="8a0df-106">To prevent this, all outbound messages that exceed the spam threshold are sent through a high-risk delivery pool.</span></span> <span data-ttu-id="8a0df-107">此次要的外寄電子郵件集區只能用來傳送郵件，可能的低品質。</span><span class="sxs-lookup"><span data-stu-id="8a0df-107">This secondary outbound email pool is only used to send messages that may be of low quality.</span></span> <span data-ttu-id="8a0df-108">這有助於防止其餘的網路傳送更有可能導致傳送的 IP 位址遭到封鎖的郵件。</span><span class="sxs-lookup"><span data-stu-id="8a0df-108">This helps to protect the rest of the network from sending messages that are more likely to result in the sending IP address being blocked.</span></span>
-  
-<span data-ttu-id="8a0df-109">使用專用的高風險傳遞集區可協助確保標準輸出集區僅傳送已知的高品質的郵件。</span><span class="sxs-lookup"><span data-stu-id="8a0df-109">The use of a dedicated high-risk delivery pool helps ensure that the normal outbound pool is only sending messages that are known to be of a high-quality.</span></span> <span data-ttu-id="8a0df-110">使用此次要 IP 集區可協助降低新增至封鎖清單的一般的輸出 IP 集區的機率。</span><span class="sxs-lookup"><span data-stu-id="8a0df-110">Using this secondary IP pool helps to reduce the probability of the normal outbound-IP pool being added to a blocked list.</span></span> <span data-ttu-id="8a0df-111">要放在封鎖清單上的高風險傳遞集區的可能性會維持風險。</span><span class="sxs-lookup"><span data-stu-id="8a0df-111">The possibility of the high-risk delivery pool being placed on a blocked list remains a risk.</span></span> <span data-ttu-id="8a0df-112">原先的設計就是如此。</span><span class="sxs-lookup"><span data-stu-id="8a0df-112">This is by design.</span></span>
-  
-<span data-ttu-id="8a0df-113">在傳送網域出具有任何地址記錄 （A 記錄），可讓您網域的 IP 位址和任何 MX 記錄，可將郵件導向至 DNS 中應收到特別網域之郵件伺服器，郵件會一律透過路由傳送無論其垃圾郵件處理高風險傳遞集區。</span><span class="sxs-lookup"><span data-stu-id="8a0df-113">Messages where the sending domain has no address record (A record), which gives you the IP address of the domain, and no MX record, which helps direct mail to the servers that should receive the mail for a particular domain in the DNS, are always routed through the high-risk delivery pool regardless of their spam disposition.</span></span>
-  
-## <a name="understanding-delivery-status-notification-dsn-messages"></a><span data-ttu-id="8a0df-114">了解傳遞狀態通知 (DSN) 郵件</span><span class="sxs-lookup"><span data-stu-id="8a0df-114">Understanding Delivery Status Notification (DSN) messages</span></span>
+<span data-ttu-id="85f1a-104">Office 365 資料中心的電子郵件伺服器可能會暫時 guilty 寄送垃圾郵件。</span><span class="sxs-lookup"><span data-stu-id="85f1a-104">Email servers in the Office 365 datacenters might be temporarily guilty of sending spam.</span></span> <span data-ttu-id="85f1a-105">例如，在內部部署電子郵件組織中的惡意程式碼或惡意垃圾郵件攻擊，會透過 Office 365 傳送輸出郵件，或在 Office 365 帳戶中傳送輸出郵件。</span><span class="sxs-lookup"><span data-stu-id="85f1a-105">For example, a malware or malicious spam attack in an on-premises email organization that sends outbound mail through Office 365, or compromised Office 365 accounts.</span></span> <span data-ttu-id="85f1a-106">這些案例會產生出現在協力廠商封鎖清單上受影響的 Office 365 資料中心伺服器的 IP 位址。</span><span class="sxs-lookup"><span data-stu-id="85f1a-106">These scenarios can result in the IP address of the affected Office 365 datacenter servers appearing on third-party block lists.</span></span> <span data-ttu-id="85f1a-107">使用這些封鎖清單的目的地電子郵件組織會拒絕來自這些郵件來源的電子郵件。</span><span class="sxs-lookup"><span data-stu-id="85f1a-107">Destination email organizations that use these block lists will reject email from those messages sources.</span></span>
 
-<span data-ttu-id="8a0df-115">讓輸出的高風險傳遞集區可管理所有 「 被退回 」 或 「 失敗 」 (DSN) 郵件的傳遞。</span><span class="sxs-lookup"><span data-stu-id="8a0df-115">The outbound high-risk delivery pool manages the delivery for all "bounced" or "failed" (DSN) messages.</span></span>
-  
-<span data-ttu-id="8a0df-116">DSN 郵件激增的可能原因包括下列：</span><span class="sxs-lookup"><span data-stu-id="8a0df-116">Possible causes for a surge in DSN messages include the following:</span></span>
-  
-- <span data-ttu-id="8a0df-117">詐騙活動影響到使用服務的其中一位客戶</span><span class="sxs-lookup"><span data-stu-id="8a0df-117">A spoofing campaign affecting one of the customers using the service</span></span>
-    
-- <span data-ttu-id="8a0df-118">目錄搜集攻擊</span><span class="sxs-lookup"><span data-stu-id="8a0df-118">A directory harvest attack</span></span>
-    
-- <span data-ttu-id="8a0df-119">垃圾郵件攻擊</span><span class="sxs-lookup"><span data-stu-id="8a0df-119">A spam attack</span></span>
-    
-- <span data-ttu-id="8a0df-120">惡意 SMTP 伺服器</span><span class="sxs-lookup"><span data-stu-id="8a0df-120">A rogue SMTP server</span></span>
-    
-<span data-ttu-id="8a0df-121">所有這些問題都可能導致服務處理的 DSN 郵件數量突然增多。</span><span class="sxs-lookup"><span data-stu-id="8a0df-121">All of these issues can result in a sudden increase in the number of DSN messages being processed by the service.</span></span> <span data-ttu-id="8a0df-122">許多時候，這些 DSN 郵件看起來會對其他電子郵件伺服器和服務的垃圾郵件。</span><span class="sxs-lookup"><span data-stu-id="8a0df-122">Many times, these DSN messages appear to be spam to other email servers and services.</span></span>
-  
-## <a name="for-more-information"></a><span data-ttu-id="8a0df-123">相關資訊</span><span class="sxs-lookup"><span data-stu-id="8a0df-123">For more information</span></span>
+<span data-ttu-id="85f1a-108">若要防止這種情況，所有來自決定是垃圾郵件或超過[服務](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)傳送限制之 Office 365 datacenter server 的所有輸出郵件，[都是透過](configure-the-outbound-spam-policy.md)_高風險傳遞集_區傳送。</span><span class="sxs-lookup"><span data-stu-id="85f1a-108">To prevent this, all outbound messages from Office 365 datacenter servers that's determined to be spam or that exceeds the sending limits of [the service](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) or [outbound spam policies](configure-the-outbound-spam-policy.md) are sent through the _high-risk delivery pool_.</span></span>
 
-[<span data-ttu-id="8a0df-124">設定輸出垃圾郵件原則</span><span class="sxs-lookup"><span data-stu-id="8a0df-124">Configure the outbound spam policy</span></span>](configure-the-outbound-spam-policy.md)
-  
-[<span data-ttu-id="8a0df-125">反垃圾郵件保護常見問題集</span><span class="sxs-lookup"><span data-stu-id="8a0df-125">Anti-spam protection FAQ</span></span>](anti-spam-protection-faq.md)
-  
+<span data-ttu-id="85f1a-109">「高風險傳遞集區」是僅用於傳送「低品質」郵件（例如，垃圾郵件和[退信攻擊](backscatter-messages-and-eop.md)）的外寄電子郵件的次要 IP 位址集區。</span><span class="sxs-lookup"><span data-stu-id="85f1a-109">The high risk delivery pool is a secondary IP address pool for outbound email that's only used to send "low quality" messages (for example, spam and [backscatter](backscatter-messages-and-eop.md)).</span></span> <span data-ttu-id="85f1a-110">使用 [高風險傳遞集區]，可防止輸出電子郵件的一般 IP 位址集區傳送垃圾郵件。</span><span class="sxs-lookup"><span data-stu-id="85f1a-110">Using the high risk delivery pool helps prevent the normal IP address pool for outbound email from sending spam.</span></span> <span data-ttu-id="85f1a-111">外寄電子郵件的一般 IP 位址集區維持「高品質」郵件的信譽，這會降低這些 IP 位址會出現在 IP 封鎖清單上的可能性。</span><span class="sxs-lookup"><span data-stu-id="85f1a-111">The normal IP address pool for outbound email maintains the reputation sending "high quality" messages, which reduces the likelihood that these IP address will appear on IP block lists.</span></span>
 
+<span data-ttu-id="85f1a-112">在此情況下，高風險傳遞集區中的 IP 位址會保留在 IP 封鎖清單上，但這是由設計所組成。</span><span class="sxs-lookup"><span data-stu-id="85f1a-112">The very real possibility that IP addresses in the high-risk delivery pool will be placed on IP block lists remains, but this is by design.</span></span> <span data-ttu-id="85f1a-113">不會保證傳遞給預定的收件者，因為許多電子郵件組織不會接受高風險傳遞集區中的郵件。</span><span class="sxs-lookup"><span data-stu-id="85f1a-113">Delivery to the intended recipients isn't guaranteed, because many email organizations won't accept messages from the high risk delivery pool.</span></span>
+
+<span data-ttu-id="85f1a-114">如需詳細資訊，請參閱[控制 Office 365 中的外寄垃圾郵件](outbound-spam-controls.md)。</span><span class="sxs-lookup"><span data-stu-id="85f1a-114">For more information, see [Control outbound spam in Office 365](outbound-spam-controls.md).</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="85f1a-115">來源電子郵件網域沒有記錄，而且公用 DNS 中未定義任何 MX 記錄的郵件，無論其垃圾郵件或傳送限制，都永遠都透過高風險傳遞集區路由傳送。</span><span class="sxs-lookup"><span data-stu-id="85f1a-115">Messages where the source email domain has no A record and no MX record defined in public DNS are always routed through the high-risk delivery pool, regardless of their spam or sending limit disposition.</span></span>
+
+## <a name="bounce-messages"></a><span data-ttu-id="85f1a-116">退回郵件</span><span class="sxs-lookup"><span data-stu-id="85f1a-116">Bounce messages</span></span>
+
+<span data-ttu-id="85f1a-117">輸出的高風險傳遞集區可管理所有未傳遞回報的傳遞（也稱為 NDRs、退回郵件、傳遞狀態通知或 DSNs）。</span><span class="sxs-lookup"><span data-stu-id="85f1a-117">The outbound high-risk delivery pool manages the delivery for all non-delivery reports (also known as NDRs, bounce messages, delivery status notifications, or DSNs).</span></span>
+
+<span data-ttu-id="85f1a-118">NDRs 中的電湧可能原因包括：</span><span class="sxs-lookup"><span data-stu-id="85f1a-118">Possible causes for a surge in NDRs include:</span></span>
+
+- <span data-ttu-id="85f1a-119">會影響使用服務之客戶之一的電子欺騙活動。</span><span class="sxs-lookup"><span data-stu-id="85f1a-119">A spoofing campaign that affects one of the customers using the service.</span></span>
+
+- <span data-ttu-id="85f1a-120">目錄收集攻擊。</span><span class="sxs-lookup"><span data-stu-id="85f1a-120">A directory harvest attack.</span></span>
+
+- <span data-ttu-id="85f1a-121">垃圾郵件攻擊。</span><span class="sxs-lookup"><span data-stu-id="85f1a-121">A spam attack.</span></span>
+
+- <span data-ttu-id="85f1a-122">欺詐的電子郵件伺服器。</span><span class="sxs-lookup"><span data-stu-id="85f1a-122">A rogue email server.</span></span>
+
+<span data-ttu-id="85f1a-123">所有這些問題都會造成服務處理的 NDRs 數量突然增加。</span><span class="sxs-lookup"><span data-stu-id="85f1a-123">All of these issues can result in a sudden increase in the number of NDRs being processed by the service.</span></span> <span data-ttu-id="85f1a-124">許多情況下，這些 NDRs 似乎是對其他電子郵件伺服器和服務（也稱為_[退信攻擊](backscatter-messages-and-eop.md)_）的垃圾郵件。</span><span class="sxs-lookup"><span data-stu-id="85f1a-124">Many times, these NDRs appear to be spam to other email servers and services (also known as _[backscatter](backscatter-messages-and-eop.md)_).</span></span>
