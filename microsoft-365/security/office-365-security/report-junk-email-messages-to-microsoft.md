@@ -16,12 +16,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 「Microsoft Office Outlook 的 Microsoft 垃圾郵件回報增益集」提供多種方式回報垃圾郵件：
-ms.openlocfilehash: 3f8d07a2499fa3c8690393aa444e018b83c632b1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b1ed918e4b954cc7b2d79e52abd6f58a99eda0f0
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088241"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895176"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>向 Microsoft 回報垃圾郵件
 
@@ -33,12 +33,12 @@ ms.locfileid: "42088241"
 
 - 從開啟的電子郵件內
 
-垃圾電子郵件回報增益集可以幫助您提交報告給 Microsoft Exchange Online Protection (EOP) 服務。 如果此服務不保護您的信箱，您的垃圾電子郵件報告提交不會影響您的垃圾郵件篩選器。 系統管理員可以了解更多適用於在[如何防止良好的電子郵件被標示為在 Office 365 中的垃圾郵件](prevent-email-from-being-marked-as-spam.md)或[如何減少 Office 365 中的垃圾郵件](reduce-spam-email.md)的整個組織的垃圾郵件設定。 如果您有系統管理員層級的控制權，且您想要避免誤判或漏報，這些內容很有幫助。
+垃圾電子郵件回報增益集可以幫助您提交報告給 Microsoft Exchange Online Protection (EOP) 服務。 如果此服務不保護您的信箱，您的垃圾電子郵件報告提交不會影響您的垃圾郵件篩選器。 管理員可以深入瞭解適用于整個組織的垃圾郵件設定，在[office 365 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)，並在[Office 365 中建立封鎖的寄件者清單](create-block-sender-lists-in-office-365.md)。 如果您有系統管理員層級的控制權，且您想要避免誤判或漏報，這些內容很有幫助。
 
 > [!TIP]
-> 您也可以使用[not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com)電子郵件地址，提交垃圾郵件給 Microsoft，請使用[junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)電子郵件地址，直接和誤判 （非垃圾郵件） 郵件。 如需詳細資訊，請參閱[將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
+> 您也可以使用[junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)電子郵件地址，將垃圾郵件直接提交至 Microsoft，以及使用[not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com)電子郵件地址的 false 肯定（非垃圾郵件）郵件。 如需詳細資訊，請參閱[將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
 
-### <a name="to-report-junk-email-messages-from-outlook"></a>從 Outlook 的垃圾郵件回報
+### <a name="to-report-junk-email-messages-from-outlook"></a>從 Outlook 報告垃圾郵件
 
 [使用報告訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
 
@@ -59,7 +59,7 @@ ms.locfileid: "42088241"
 
 ### <a name="to-report-a-junk-email-message-from-within-an-opened-message"></a>從已開啟的郵件內回報垃圾郵件
 
-1. 在開啟的郵件內，按一下郵件功能區上的 **[回報垃圾郵件]** 按鈕。 例如，按一下 [**垃圾郵件** \> **回報垃圾郵件**![垃圾從訊息內回報電子郵件](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
+1. 在開啟的郵件內，按一下郵件功能區上的 **[回報垃圾郵件]** 按鈕。 例如，按一下 [**垃圾** \> **報告垃圾** ![報告中的垃圾郵件] 中的郵件](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
 
 2. [ **Microsoft 垃圾電子郵件回報增益集**] 會隨即開啟。 如果您確定要提交您選取為垃圾郵件的郵件，請按一下 [ **是**]。
     ![確認報告為垃圾郵件](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
@@ -68,13 +68,3 @@ ms.locfileid: "42088241"
     > 如果您不想在提交垃圾郵件時看見此確認訊息，請勾選 [ **不要再顯示此訊息**]。
 
 選取的郵件會傳送至 Microsoft 進行分析，然後移至 [垃圾郵件] 資料夾。若要確認郵件已提交，請開啟 **[寄件備份]** 資料夾，以檢視已提交的郵件。
-
-## <a name="for-more-information"></a>如需詳細資訊
-
-[啟用報告訊息增益集](enable-the-report-message-add-in.md)
-
-[疑難排解與支援資訊](troubleshooting-and-support-information.md)
-
-[如何在 Office 365 中防止好的電子郵件被標示為垃圾郵件](prevent-email-from-being-marked-as-spam.md)
-
-[如何減少 Office 365 中的垃圾郵件](reduce-spam-email.md)

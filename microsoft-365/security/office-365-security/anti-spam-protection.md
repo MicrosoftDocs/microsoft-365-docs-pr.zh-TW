@@ -1,11 +1,11 @@
 ---
-title: Office 365 電子郵件的反垃圾郵件保護
+title: 反垃圾郵件保護
 f1.keywords:
 - NOCSH
-ms.author: krowley
-author: kccross
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -16,79 +16,99 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: 瞭解可協助您防止 Exchange Online 和 Office 365 中垃圾郵件的反垃圾郵件設定和篩選器。 在 Office 365 中取得太多垃圾郵件？ 您可以自訂垃圾郵件篩選器和反垃圾郵件原則設定。
-ms.openlocfilehash: b7ffb29d09a357cc0a2e407d1a66f29273fc950f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: 瞭解可協助您防止 Exchange Online 和 Office 365 中垃圾郵件的反垃圾郵件設定和篩選器。 在 Office 365 中取得太多垃圾郵件？ 您可以自訂垃圾郵件篩選器和反垃圾郵件設定。
+ms.openlocfilehash: 5558bfa29427df4df12a83bc8b30adaf6001b9c3
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633831"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894067"
 ---
-# <a name="office-365-email-anti-spam-protection"></a>Office 365 電子郵件的反垃圾郵件保護
-
-您是否擔心 Office 365 中有太多垃圾郵件？ 我們已在您的 Office 365 或 Exchange Online Protection （EOP）服務中建立多個垃圾郵件篩選器，因此您的電子郵件會從您接收到第一封郵件的時刻開始保護。 為了協助防止 Office 365 中的垃圾郵件，您可能想變更保護設定，以處理組織中的特定問題，例如，您收到大量來自特定寄件者的垃圾郵件，或是只是微調您的設定，以便專為符合您組織的需求而量身定制。 若要這麼做，您可以在 Office 365 安全性&amp;與合規性中心變更反垃圾郵件設定。
-
-本文適用于 Office 365 系統管理員。 如果您不是系統管理員，但您是 Office 365 使用者，而您想要瞭解如何處理您收到的垃圾郵件，這不是您要尋找的文章。 相反地，如果您使用 Outlook 的 PC 或 Outlook for Mac，請從 [[垃圾郵件篩選](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)] 開始。 如果您使用 Outlook 網頁版，請從[瞭解垃圾郵件和網路釣魚](https://support.office.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)開始。
-
-## <a name="these-options-help-you-prevent-spam-in-office-365"></a>這些選項可協助您防止 Office 365 中的垃圾郵件
-
- 連線**篩選**：當您使用連線篩選時，Office 365 會檢查寄件者的信譽，再允許郵件透過。 您可以建立允許清單或安全寄件者清單，以確保您收到從特定 IP 位址或 IP 位址範圍傳送給您的每封郵件。 您也可以建立用來封鎖郵件的 IP 位址清單，稱為封鎖清單。 如需詳細資訊，請參閱[設定連線篩選原則](configure-the-connection-filter-policy.md)。 如果您擔心 Office 365 中的垃圾郵件，請使用連線篩選協助防止垃圾郵件。
-
-針對具有 Office 365 企業版 E5 或已購買高級威脅防護（ATP）授權的客戶，哄騙智慧會使用連線篩選，來建立允許和封鎖的寄件者清單，以欺騙您的網域。 如需詳細資訊，請參閱[深入瞭解欺騙智慧](learn-about-spoof-intelligence.md)。
-
- **垃圾郵件篩選**：使用垃圾郵件篩選功能，Office 365 會檢查郵件特性與垃圾郵件的一致性。 您可以在識別為垃圾郵件的郵件上變更採取的動作，並選擇是否要篩選以特定語言撰寫的郵件，或是從特定國家或地區傳送的郵件。 您也可以開啟高級垃圾郵件篩選選項，如果您想要採用嚴格的垃圾郵件篩選方法。 此外，您可以設定使用者垃圾郵件通知，以告知使用者何時將其傳送至隔離區。 （傳送郵件至隔離區是其中一個可設定的動作。）在這些通知中，使用者可以發行誤報，並向 Microsoft 報告以進行分析。 如需詳細資訊，請參閱[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)。 為了協助防止 Office 365 中的垃圾郵件，請使用垃圾郵件篩選（如果您擔心 Office 365 中有太多垃圾郵件），請使用連線篩選協助防止垃圾郵件。
+# <a name="anti-spam-protection-in-office-365"></a>Office 365 中的反垃圾郵件保護
 
 > [!NOTE]
-> 針對 EOP 單機客戶：依預設，EOP 垃圾郵件篩選器會將偵測到的垃圾郵件傳送給每個收件者的 [垃圾郵件] 資料夾。 不過，為了確保 [**將郵件移至垃圾郵件資料夾**] 動作可用於內部部署信箱，您必須在內部部署伺服器上設定兩個 Exchange 郵件流程規則（也稱為傳輸規則），以偵測 EOP 新增的垃圾郵件頭。 如需詳細資料，請參閱[確定垃圾郵件路由傳送至每一個使用者的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+> 本主題適用于 Office 365 系統管理員。 如需使用者的主題，請參閱[垃圾郵件篩選程式的 [概述](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)]，並[瞭解垃圾郵件和網路釣魚](https://support.office.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)。
 
-## <a name="extra-information-if-you-receive-too-much-spam-in-office-365"></a>如果您在 Office 365 收到太多垃圾郵件，則會有額外資訊
+如果您是 Office 365 客戶，其信箱位於 Exchange Online 或獨立 Exchange Online Protection （EOP）客戶（沒有 Exchange Online 信箱），則您的電子郵件會透過 EOP 自動抵禦垃圾郵件（垃圾郵件）。
 
-下列影片概要說明如何在 EOP 中設定垃圾郵件篩選。
+Microsoft 的電子郵件安全藍圖包含一種無與倫比的跨產品方式。 EOP 反垃圾郵件和反網路釣魚技術是透過電子郵件平臺進行套用，以在整個網路中為使用者提供最新的反垃圾郵件和反網路釣魚工具和革新功能。 EOP 的目標是提供綜合且可用的電子郵件服務，以協助偵測和保護使用者免受垃圾郵件、欺詐電子郵件威脅（網路釣魚）和惡意程式碼的攻擊。
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
+隨著電子郵件使用方式成長，電子郵件濫用。 未受監控的垃圾郵件可能會堵塞收件匣和網路、影響使用者滿意度，並影響合法電子郵件通訊的效能。 這就是 Microsoft 繼續投資反垃圾郵件技術的原因。 簡而言之，它會以包含並篩選垃圾郵件的方式開始。
 
-如需詳細資訊，請參閱[設定垃圾郵件篩選原則](configure-your-spam-filter-policies.md)主題。
+## <a name="anti-spam-technologies-in-eop"></a>EOP 中的反垃圾郵件技術
 
-## <a name="check-your-outgoing-messages-to-prevent-spam-in-office-365"></a>檢查您的外寄郵件，以防止 Office 365 中的垃圾郵件
+為了協助減少垃圾郵件，EOP 包含垃圾郵件保護，使用專有的垃圾郵件篩選技術來識別和分隔垃圾郵件與合法的電子郵件。 EOP 垃圾郵件篩選從我們的消費者平臺（Outlook.com）獲知來自已知垃圾郵件和網路釣魚威脅和使用者意見反應。 來自垃圾郵件分類計畫中 EOP 使用者的持續反應，可協助確保 EOP 技術不斷訓練有素並改進。
 
- **輸出篩選**： Office 365 也會進行檢查，確定您的使用者不會傳送垃圾郵件。 例如，使用者的電腦可能會受到惡意程式碼的感染，使其無法傳送垃圾郵件，因此我們會針對所謂的*輸出篩選*建立保護。 您無法關閉輸出篩選，但您可以設定設定[輸出垃圾郵件原則](configure-the-outbound-spam-policy.md)中所述的設定。 如果您擔心 Office 365 中有太多垃圾郵件，請使用輸出篩選，以協助防止 Exchange Online 中的垃圾郵件。
+EOP 中的反垃圾郵件設定是由下列技術所組成：
 
-## <a name="beyond-the-basics-more-ways-to-prevent-spam-in-office-365"></a>除了基本知識之外，還有其他方式可防止 Office 365 中的垃圾郵件
+- 連線**篩選**：透過 Ip 允許清單、Ip 封鎖清單和*安全清單*（由 Microsoft 維護的受信任寄件者的動態但不可編輯清單）及早在輸入電子郵件連線中識別良好和不良的電子郵件來源伺服器。 您可以在連線篩選原則中設定這些設定。 若要深入瞭解，請參閱[Configure connection 篩選 In Office 365](configure-the-connection-filter-policy.md)。
 
- **郵件流程規則**：如果您想要超越內建的垃圾郵件篩選功能，並根據您的商務原則建立自訂規則，_[郵件流程規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)_（也稱為_傳輸規則_）是另一個篩選，可協助您防止 Office 365 中的垃圾郵件。 例如，您可以使用郵件流程規則，設定符合特定條件的郵件的垃圾郵件信賴等級（SCL）值，如[使用郵件流程規則設定郵件中的垃圾郵件信賴等級（scl）](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)所述。
+  > [!NOTE]
+  > 哄騙情報會使用連線篩選來建立允許和封鎖的寄件者的名單，以哄騙您的電子郵件網域。 如需詳細資訊，請參閱[深入瞭解 Office 365 中的欺騙智慧](learn-about-spoof-intelligence.md)。
 
- **電子郵件驗證**：使用網域名稱系統（DNS）將可驗證資訊新增至有關電子郵件寄件者的電子郵件的技術，稱為電子郵件驗證。 更高級的 Office 365 系統管理員可以使用這些電子郵件驗證方法：
+- **垃圾郵件篩選（內容篩選）**： EOP 使用垃圾郵件篩選 verdicts**垃圾**郵件、**高可信度垃圾郵件**、**大量電子郵件**、**網路釣魚電子**郵件和**高可信度網路釣魚電子郵件**來分類郵件。 您可以根據這些 verdicts 設定要採取的動作，而且可以針對隔離而非傳遞的郵件，設定使用者通知選項。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-- **寄件者原則架構（SPF）**： SPF 會驗證寄件者的 IP 位址，以驗證傳送網域的寄件者的 IP 位址，以驗證電子郵件的來源。 如需 SPF 的快速簡介並快速設定，請參閱[在 Office 365 中設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 如需更深入了解 Office 365 如何使用 SPF 或是進行疑難排解或非標準的部署 (例如混合式部署)，請先參閱 [Office 365 如何使用寄件者原則架構 (SPF) 防止詐騙](how-office-365-uses-spf-to-prevent-spoofing.md)。
+  > [!NOTE]
+  > 根據預設，垃圾郵件篩選會設定為將標記為垃圾郵件的郵件傳送至收件者的 [垃圾郵件] 資料夾。 不過，在 EOP 保護內部部署 Exchange 信箱的混合式環境中，您必須在內部部署 Exchange 組織中設定兩個郵件流程規則（也稱為傳輸規則），以辨識新增至郵件的 EOP 垃圾郵件頭。 如需詳細資訊，請參閱[Configure 獨立 EOP 以將垃圾郵件傳送至混合式環境中的 [垃圾郵件] 資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
 
-- **DomainKeys 識別的郵件（DKIM）**： DKIM 可讓您在所傳送電子郵件的郵件頭中，將數位簽章附加到電子郵件。 接收來自您網域之電子郵件的電子郵件系統，可以使用此數位簽章來判斷所接收的內送電子郵件是否合法。 如需 DKIM 和 Office 365 的詳細資訊，請參閱[使用 DKIM 驗證從您的自訂網域傳送的外寄電子郵件（Office 365](use-dkim-to-validate-outbound-email.md)）。
+- **輸出垃圾郵件篩選**： EOP 也會檢查，確定您的使用者不會在輸出郵件內容中或超過輸出郵件限制傳送垃圾郵件。 如需詳細資訊，請參閱[設定 Office 365 中的外寄垃圾郵件篩選](configure-the-outbound-spam-policy.md)。
 
-- 以**網域為基礎的郵件驗證、報告和符合性（DMARC）**： DMARC 可協助接收郵件系統判斷如何處理失敗的 SPF 或 DKIM 檢查的郵件，並為您的電子郵件合作夥伴提供另一個信任層級。 如需設定 DMARC 的相關資訊，請參閱[在 Office 365 中使用 DMARC 來驗證電子郵件](use-dmarc-to-validate-email.md)。
+- **哄騙情報**：如需詳細資訊，請參閱[深入瞭解 Office 365 中的欺騙智慧](learn-about-spoof-intelligence.md)。
 
-如果您擔心 Office 365 中的垃圾郵件、網路釣魚和詐騙，請使用 SPF、DKIM 及 DMARC，以協助防止垃圾郵件和不需要的欺騙。
+## <a name="manage-errors-in-spam-filtering"></a>在垃圾郵件篩選中管理錯誤
 
- **使用者管理設定**：如果您要尋找使用者如何管理自己的垃圾郵件設定的相關資訊，請參閱[垃圾郵件篩選器](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)（適用于 Microsoft Outlook 使用者）或[深入瞭解垃圾郵件和網路釣魚](https://support.microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)（適用于網頁使用者的 Outlook）。 如果您是使用 EOP 來保護內部部署信箱，請務必使用目錄同步處理，以確保這些設定已同步處理至服務。 若需設定目錄同步作業的詳細資訊，請參閱 [管理 EOP 中的郵件使用者](manage-mail-users-in-eop.md) 中的「使用目錄同步作業來管理郵件使用者」。
+良好的郵件可能會被識別為垃圾郵件（也稱為誤報），也可以將垃圾郵件傳遞至 [收件匣]。 您可以使用下列各節中的建議來找出發生的狀況，並協助避免未來發生。
 
-## <a name="for-more-information"></a>如需詳細資訊
+以下是適用于任一案例的一些最佳作法：
 
-[博客：垃圾郵件和網路釣魚如何透過 Office 365？](https://blogs.msdn.microsoft.com/tzink/2014/09/12/why-does-spam-and-phishing-get-through-office-365-and-what-can-be-done-about-it/)
+- 永遠將 misclassified 郵件提交給 Microsoft。 系統管理員可以使用[提交的 Explorer 瀏覽器](admin-submission.md)，或使用者可以使用 [[使用報告訊息] 增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)來報告訊息。
 
-[反垃圾郵件保護常見問題集](anti-spam-protection-faq.md)
+- **檢查反垃圾郵件訊息標頭**：這些值會告訴您郵件為何被標示為垃圾郵件，或為何略過垃圾郵件篩選。 如需詳細資訊，請參閱＜[反垃圾郵件訊息標頭](anti-spam-message-headers.md)＞。
 
-[使用安全清單或其他技術防止誤判電子郵件標示為垃圾郵件](prevent-email-from-being-marked-as-spam.md)
+- 將**您的 MX 記錄指向 Office 365**：為了讓 EOP 能夠提供最佳保護，我們一定會建議您先將電子郵件傳遞至 office 365。 如需相關指示，請參閱[在任何 dns 主機服務提供者處建立 dns 記錄（適用于 Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)）。
 
-[如何設定 Office 365 垃圾郵件篩選，以協助封鎖垃圾郵件](reduce-spam-email.md)
+  如果 MX 記錄指向其他位置（例如，協力廠商反垃圾郵件解決方案或裝置），則 EOP 很難提供正確的垃圾郵件篩選。 在此案例中，您需要設定連接器的增強篩選功能（也稱為_略過清單_）。 如需相關指示，請參閱[在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
-[垃圾郵件和大量電子郵件有什麼不同？](what-s-the-difference-between-junk-email-and-bulk-email.md)
+- **使用電子郵件驗證**：如果您擁有電子郵件網域，您可以使用 DNS 來協助確保來自該網域中寄件者的郵件合法。 若要協助防止垃圾郵件和 EOP 中有害的欺騙性，請使用下列所有電子郵件驗證方法：
 
-[反垃圾郵件訊息標頭](anti-spam-message-headers.md)
+  - **SPF**：寄件者原則框架會驗證郵件的來源 IP 位址是否與傳送網域的擁有者相對應。 如需 SPF 的快速簡介並快速設定，請參閱[在 Office 365 中設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 如需更深入了解 Office 365 如何使用 SPF 或是進行疑難排解或非標準的部署 (例如混合式部署)，請先參閱 [Office 365 如何使用寄件者原則架構 (SPF) 防止詐騙](how-office-365-uses-spf-to-prevent-spoofing.md)。
 
-[非法回應郵件與 EOP](backscatter-messages-and-eop.md)
+  - **DKIM**： DomainKeys 已識別的郵件會將數位簽章新增至您的網域所傳送之郵件的郵件頭。 如需相關資訊，請參閱[在 Office 365 中使用 DKIM 驗證從自訂網域傳送的外寄電子郵件](use-dkim-to-validate-outbound-email.md)。
 
-## <a name="more-resources"></a>其他資源
+  - **DMARC**：以網域為基礎的郵件驗證、報告及符合性，可協助目的地電子郵件系統判斷如何處理因 SPF 或 DKIM 檢查失敗的郵件，並為您的電子郵件合作夥伴提供另一個信任層級。 如需詳細資訊，請參閱[USE DMARC to validate email In Office 365](use-dmarc-to-validate-email.md)。
 
-[從 Office 365 社群論壇獲得協助](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+- **確認您的大量電子郵件設定**：您在反垃圾郵件原則中設定的大量相容層級（BCL）臨界值會決定是否要將大量電子郵件（也稱為_灰色郵件_）標示為垃圾郵件。 預設的 PowerShell 設定_MarkAsSpamBulkMail_也會對結果產生貢獻。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-[管理員：登入及建立服務要求](https://portal.office.com/AdminPortal/Home?ref=support)
+### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>避免將垃圾郵件傳遞至收件匣
 
-[商務產品的 AContact 支援-系統管理說明](https://docs.microsoft.com/Office365/Admin/contact-support-for-business-products)
+- **驗證您的組織設定：請**留意允許郵件略過垃圾郵件篩選的設定（例如，如果您將自己的網域新增至反垃圾郵件原則中的允許網域清單）。 如需建議的設定，請參閱[EOP 和 office 365 ATP security 的建議設定](recommended-settings-for-eop-and-office365-atp.md)，並[在 Office 365 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。
+
+- **確認使用者信箱中已啟用垃圾郵件規則**：此規則預設為啟用，但是如果不是標記為垃圾郵件的郵件，就無法移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[在 Office 365 中設定 Exchange Online 信箱上的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
+
+- **使用可用的封鎖寄件者清單**：如需詳細資訊，請參閱[在 Office 365 中建立封鎖的寄件者清單](create-block-sender-lists-in-office-365.md)。
+
+- **從大量電子郵件取消訂閱**如果郵件是使用者已註冊的專案（電子報、產品宣告等），且包含知名來源的取消訂閱連結，請考慮要求他們只取消訂閱。
+
+- **獨立 EOP：在內部部署 exchange 中建立郵件流程規則以進行 EOP 垃圾郵件篩選 verdicts**：在 EOP 保護內部部署 exchange 信箱的獨立 EOP 環境中，您必須在內部部署 exchange 中設定郵件流程規則（也稱為傳輸規則），以轉譯 EOP 垃圾郵件篩選判定，使垃圾郵件規則可以將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[Configure 獨立 EOP 以將垃圾郵件傳送至混合式環境中的 [垃圾郵件] 資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+
+### <a name="prevent-good-email-from-being-identified-as-spam"></a>防止令人滿意的電子郵件被識別為垃圾郵件
+
+以下是您可以採取以協助避免誤報的一些步驟：
+
+- **驗證使用者的 Outlook 垃圾郵件篩選器設定**：
+
+  - **確認已停用 Outlook 垃圾郵件篩選器**：當 Outlook 垃圾郵件篩選器設定為預設值**無自動篩選**時，Outlook 不會嘗試將 massages 分類為垃圾郵件。  設為 [**低**] 或 [**高**] 時，Outlook 垃圾郵件篩選程式會使用自己的 SmartScreen 篩選技術來識別及移動垃圾郵件至 [垃圾郵件] 資料夾，這樣您就可以取得誤報。 請注意，Microsoft 已停止在2016年11月，對 Exchange 和 Outlook 中的 SmartScreen 篩選器產生垃圾郵件定義更新。 現有的 SmartScreen 垃圾郵件定義會保留，但其效果可能會隨著時間降低。
+
+  - **確認已停用 Outlook 的 [僅限安全清單] 設定**：啟用此設定時，只有來自使用者安全寄件者清單或安全收件者清單中寄件者的郵件會傳遞至 [收件匣];來自其他人的電子郵件會自動移至 [垃圾郵件] 資料夾。
+
+  如需這些設定的詳細資訊，請參閱[在 Office 365 中設定 Exchange Online 信箱上的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
+
+- **使用可用的安全寄件者清單**：如需詳細資訊，請參閱[Create safe Sender lists in Office 365](create-safe-sender-lists-in-office-365.md)。
+
+- **驗證使用者在傳送和接收限制內**，如 Exchange Online 服務描述中的[接收及傳送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)所述。
+
+- **獨立 EOP：使用目錄同步**處理：如果您使用獨立 EOP 來協助保護內部部署 Exchange 組織，則應該使用目錄同步處理，將使用者設定與服務同步。 這樣做可確保 EOP 信任您使用者的 [安全寄件者] 清單。 如需詳細資訊，請參閱[使用目錄同步處理來管理郵件使用者](manage-mail-users-in-eop.md#use-directory-synchronization-to-manage-mail-users)。
+
+## <a name="anti-spam-legislation"></a>反垃圾郵件法律
+
+在 Microsoft，我們相信新技術和自我規章的開發必須支援有效的政府原則和法律架構。 全球的垃圾郵件劇增已 spurred 眾多的法律團體，以控制商業電子郵件。 許多國家/地區現在有適當的垃圾郵件法。 美國雙方都有規定垃圾郵件的聯邦和州法律，此互補的方法是協助 curtail 垃圾郵件，同時啟用合法電子商務以 prosper。 「CAN-垃圾郵件」法案會展開可用來 curbing 欺詐電子郵件和欺騙性電子郵件的工具。

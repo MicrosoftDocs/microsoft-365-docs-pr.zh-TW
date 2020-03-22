@@ -1,7 +1,6 @@
 ---
 title: 管理能建立 Office 365 群組的使用者
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
 author: MikePlumleyMSFT
@@ -21,20 +20,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
-description: 了解如何控制哪些使用者可以建立 Office 365 群組。
-ms.openlocfilehash: a6016f6406b211aae216702910a696be50e1b82c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 瞭解如何控制可建立 Office 365 群組的使用者。
+ms.openlocfilehash: 0da8aded4b7a55975a9327cc4f29ff8679b3ccf2
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352634"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894548"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>管理能建立 Office 365 群組的使用者
 
   
-因為它是很容易建立 Office 365 群組的使用者，您不許多與其建立代表其他人的要求。 根據您的業務，不過，您可能想要控制誰可以建立群組的能力。
+由於很容易讓使用者建立 Office 365 群組，所以您不會淹沒在要求中，您必須代表其他人員建立這些群組。 不過，您可能想要控制哪些人員可以建立群組，這取決於您的公司。
   
-本文說明如何停用建立群組 **，使用群組的所有 Office 365 服務中**的功能： 
+本文說明如何停用在所有使用群組的 Office 365 服務中建立群組的能力，包括：
   
 - Outlook
     
@@ -54,124 +53,83 @@ ms.locfileid: "42352634"
 
 - 藍圖
     
-您可以限制 Office 365 群組建立特定的安全性群組的成員。 若要設定此，您可以使用 Windows PowerShell。 本文會引導您所需的步驟。
+您可以將 Office 365 群組建立限制在特定安全性群組的成員。 若要設定此，您可以使用 Windows PowerShell。 本文將引導您完成必要的步驟。
   
-本文中的步驟，將不會阻止特定角色的成員建立群組。 Office 365 全域系統管理員可以透過任何方法，例如 Microsoft 365 系統管理中心、 規劃、 microsoft Teams、 Exchange 和 SharePoint Online 中建立群組。 其他角色可以建立透過有限表示，以下列出的群組。
+本文中的步驟不會防止某些角色的成員建立群組。 Office 365 全域系統管理員可以透過任何方式建立群組，例如 Microsoft 365 系統管理中心、Planner、小組、Exchange 及 SharePoint 線上。 其他角色可以透過有限的方式建立群組，如下所列。
         
-  - Exchange 系統管理員： Exchange 系統管理中心，Azure AD
+  - Exchange 管理員： Exchange Admin center，Azure AD
     
-  - 合作夥伴第 1 層支援： Microsoft 365 系統管理中心、 Exchange 系統管理中心中，Azure AD
+  - 合作夥伴第1層支援： Microsoft 365 系統管理中心、Exchange 系統管理中心、Azure AD
     
-  - 合作夥伴第 2 層支援： Microsoft 365 系統管理中心、 Exchange 系統管理中心中，Azure AD
+  - 合作夥伴第2層支援： Microsoft 365 系統管理中心、Exchange 系統管理中心、Azure AD
     
-  - 目錄作者： Azure AD
+  - 目錄編寫者： Azure AD
 
-  - SharePoint 系統管理員： SharePoint 系統管理中心內，Azure AD
+  - SharePoint 管理員： SharePoint Admin center，Azure AD
   
-  - Teams 服務系統管理員： Teams 系統管理中心，Azure AD
+  - 小組服務管理員：小組系統管理中心，Azure AD
   
-  - 使用者管理系統管理員： Microsoft 365 系統管理中心，Yammer，Azure AD
+  - 使用者管理系統管理員： Microsoft 365 Admin center、Yammer、Azure AD
      
-如果您是上述角色成員，即可為受限的使用者建立 Office 365 群組，然後將指派使用者為群組的擁有者。 將此角色的使用者都能建立連線的群組中 Yammer，不論可能會禁止建立任何 PowerShell 設定。
+如果您是上述角色成員，即可為受限的使用者建立 Office 365 群組，然後將指派使用者為群組的擁有者。 具有此角色的使用者可以在 Yammer 中建立連線的群組，不論可能禁止建立的任何 PowerShell 設定。
 
 ## <a name="licensing-requirements"></a>授權需求
 
-若要管理誰能建立群組，下列人員會需要 Azure AD Premium 授權或指派給他們的 Azure AD 基本教育授權：
+若要管理群組的建立者，下列人員必須已指派 Azure AD Premium 授權或 Azure AD 基本 EDU 授權：
 
-- 系統管理員設定這些群組建立設定
-- 可以建立群組的 [安全性] 群組成員
+- 設定這些群組建立設定的系統管理員
+- 允許建立群組的安全性群組成員
 
-下列人員不需要指派給他們的 Azure AD Premium 或 Azure AD 基本教育授權：
+下列人員不需要有指派給它們的 Azure AD Premium 或 Azure AD 基本 EDU 授權：
 
-- 人員誰是 Office 365 群組的成員，以及沒有建立其他群組的能力。
+- 屬於 Office 365 群組成員的人員，以及沒有建立其他群組的能力。
 
 ## <a name="step-1-create-a-security-group-for-users-who-need-to-create-office-365-groups"></a>步驟 1：為需要建立 Office 365 群組的使用者建立安全性群組
 
-在您的組織中只能有一個安全性群組可用來控制誰是能夠建立群組。 不過，您可以以巢狀方式內嵌其他安全性群組，做為此群組的成員。 例如，名為「Allow Group Creation」的群組即為指定的安全性群組，而名為「Microsoft Planner Users and Exchange Online Users」的群組則屬於該群組成員。
+您組織中只有一個安全性群組可用於控制誰可以建立群組。 不過，您可以以巢狀方式內嵌其他安全性群組，做為此群組的成員。 例如，名為「Allow Group Creation」的群組即為指定的安全性群組，而名為「Microsoft Planner Users and Exchange Online Users」的群組則屬於該群組成員。
 
-在上面所列的角色的系統管理員不需要是此群組的成員： 它們會保留其能夠建立群組。
+以上所列角色中的系統管理員不需要是此群組的成員：他們保留其建立群組的能力。
 
 > [!IMPORTANT]
-> 請務必使用**安全性群組**來限制誰可以建立群組。 如果您嘗試使用 Office 365 群組，則成員將因 SharePoint 的安全性群組檢查而無法在當中建立群組。 
+> 請務必使用**安全性群組**來限制誰可以建立群組。 如果您嘗試使用 Office 365 群組，成員將無法從 SharePoint 建立群組，因為它會檢查安全性群組。 
     
-1. 在系統管理中心，移至 [**群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>] 頁面。
+1. 在系統管理中心中，移至 [**群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>] 頁面。
 
 2. 按一下 [**新增群組**]。
 
-3. 做為群組類型，請選擇 [**安全性**]。 請記下群組名稱！ 以便後續步驟使用。
+3. 選擇 [**安全性**] 做為「群組類型」。 請記下群組名稱！ 以便後續步驟使用。
   
-4. 完成 [安全性] 群組中，新增人員或其他安全性群組您想要能夠貴組織中建立群組的設定
+4. 完成設定安全性群組，新增您想要在您的組織中建立群組的人員或其他安全性群組。
     
-如需詳細指示，請參閱[建立、 編輯或刪除安全性群組在 Microsoft 365 系統管理中心](../email/create-edit-or-delete-a-security-group.md)。
-  
-## <a name="step-2-install-the-preview-version-of-the-azure-active-directory-powershell-for-graph"></a>步驟 2： 安裝預覽版的 Azure Active Directory PowerShell 的圖表
+如需詳細指示，請參閱[建立、編輯或刪除 Microsoft 365 admin center 中的安全性群組](../email/create-edit-or-delete-a-security-group.md)。
+ 
+## <a name="step-2-run-powershell-commands"></a>步驟 2：執行 PowerShell 命令
 
-這些程序需要 Azure Active Directory PowerShell 的預覽版本的圖表。 GA 版本將無法運作。
+您必須使用預覽版本的 [ [Azure Active Directory PowerShell For Graph （AzureAD）](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) （模組名稱**AzureADPreview**）以變更群組層級來賓存取設定：
+
+- 如果您之前尚未安裝任何版本的 Azure AD PowerShell 模組，請參閱[安裝 Azure AD 模組](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module)，並遵循指示來安裝公開預覽版本。
+
+- 如果您已安裝 Azure AD PowerShell 模組(AzureAD) 的通用版本 2.0，您必須先在 PowerShell 工作階段中執行 `Uninstall-Module AzureAD` 將其解除安裝，然後執行 `Install-Module AzureADPreview` 來安裝預覽版本。
+
+- 如果您已安裝預覽版本，請執行 `Install-Module AzureADPreview` 以確定這是本模組的最新版本。
 
 
-> [!IMPORTANT]
-> 您無法在同一部電腦上安裝預覽版和 GA 版本，在同一時間。 您可以在 Windows 10、 Windows Server 2016 上安裝此模組。
 
-  
-As a best practice, we recommend  *always*  staying current: uninstall the old AzureADPreview or old AzureAD version and get the latest one. 
-  
-1. 在搜尋列中，輸入 Windows PowerShell。
-    
-2. 在**Windows PowerShell**上按一下滑鼠右鍵，然後選取 [**以管理員身分執行**。
-    
-    ![以「以系統管理員身分執行」方式開啟 PowerShell。](../../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
-    
-3. 使用[Set-executionpolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)RemoteSigned 之中設定原則。
-    
-    ```
-    Set-ExecutionPolicy RemoteSigned
-    ```
-  
-4. 檢查已安裝的模組：
-    
-    ```
-    Get-InstalledModule -Name "AzureAD*"
-    ```
+將下列腳本複製到文字編輯器（例如記事本）或[Windows POWERSHELL ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)。
 
-5. 若要解除安裝舊版 AzureADPreview 或 AzureAD，請執行此命令：
-  
-    ```
-    Uninstall-Module AzureADPreview
-    ```
-
-    或
-  
-    ```
-    Uninstall-Module AzureAD
-    ```
-
-6. To install the latest version of AzureADPreview, run this command:
-  
-    ```
-    Install-Module AzureADPreview
-    ```
-
-    At the message about an untrusted repository, type **Y**. It will take a minute or so for the new module to install. 
-
-離開的 PowerShell 中的步驟 3 中，開啟下方的視窗。
-  
-## <a name="step-3-run-powershell-commands"></a>步驟 3： 執行 PowerShell 命令
-
-將下列指令碼複製到文字編輯器，例如 [記事本] 或[Windows PowerShell ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)。
-
-取代*\<SecurityGroupName\>* 您建立的 [安全性] 群組的名稱。 例如：
+以您建立的安全性群組名稱取代* \<SecurityGroupName\> * 。 例如：
 
 `$GroupName = "Group Creators"`
 
-將檔案儲存為 GroupCreators.ps1。 
+將檔案儲存為 GroupCreators。 
 
-在 PowerShell 視窗中，瀏覽至您儲存檔案的所在位置 (型別 」 CD <FileLocation>")。
+在 [PowerShell] 視窗中，流覽至您儲存檔案的位置（輸入 " <FileLocation>CD"）。
 
-執行指令碼中輸入：
+輸入下列命令以執行腳本：
 
 `.\GroupCreators.ps1`
 
-並[使用您系統管理員帳戶登入](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#step-2-connect-to-azure-ad-for-your-office-365-subscription)提示時。
+系統提示時，請[使用系統管理員帳戶登入](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#step-2-connect-to-azure-ad-for-your-office-365-subscription)。
 
 ```PowerShell
 $GroupName = "<SecurityGroupName>"
@@ -203,35 +161,35 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 (Get-AzureADDirectorySetting -Id $settingsObjectID).Values
 ```
 
-指令碼的最後一行會顯示更新的設定：
+腳本的最後一行會顯示更新的設定：
 
 ![This is what your settings will look like when you're done.](../../media/952cd982-5139-4080-9add-24bafca0830c.png)
 
-如果在未來您想要變更所用的 [安全性] 群組，您可以重新執行指令碼以新的 [安全性] 群組的名稱。
+如果您想要變更使用的安全性群組，您可以使用新安全性群組的名稱重新執行腳本。
 
-如果您想要關閉群組建立限制，並再次允許建立群組的所有使用者，將 $GroupName 設定為 「 」 為"True"$AllowGroupCreation 並重新執行指令碼。
+如果您想關閉群組建立限制，並再次允許所有使用者建立群組，請將 $GroupName 設定為 ""，並 $AllowGroupCreation 為 "True"，然後重新執行腳本。
     
-## <a name="step-4-verify-that-it-works"></a>步驟 4： 確認其運作方式
+## <a name="step-4-verify-that-it-works"></a>步驟4：確認其運作正常
 
-1. 請使用不具備群組建立能力的使用者帳戶登入 Office 365。 也就是說，它們不為您建立的 [安全性] 群組的成員或系統管理員。
+1. 請使用不具備群組建立能力的使用者帳戶登入 Office 365。 也就是說，它們不是您所建立之安全性群組的成員，或是管理員的成員。
     
-2. 選取 [ **planner]** 磚。 
+2. 選取 [ **Planner** ] 磚。 
     
-3. 在 Planner 中，選取 [建立計劃的左方導覽中的**新方案**。 
+3. 在 Planner 中，選取左側導覽中的 [**新增方案**]，以建立計畫。 
   
-4. 您應該取得規劃及群組建立已停用郵件。
+4. 您應該會收到一則停用計畫和群組建立的訊息。
 
-重試相同的程序的 [安全性] 群組的成員。
+請使用安全性群組的成員嘗試相同的程式。
 
 > [!NOTE]
-> 如果 [安全性] 群組的成員不能建立群組，請檢查它們不在透過其[OWA 信箱原則](https://go.microsoft.com/fwlink/?linkid=852135)遭到封鎖。
+> 如果安全性群組的成員無法建立群組，請檢查他們未透過[OWA 信箱原則](https://go.microsoft.com/fwlink/?linkid=852135)封鎖。
     
 ## <a name="related-articles"></a>相關文章
 
 [開始使用 Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=808033)
 
-[設定 Azure Active Directory 中的自助群組管理](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-self-service-management)
+[在 Azure Active Directory 中設定自助群組管理](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-self-service-management)
 
 [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
-[設定群組設定 azure Active Directory cmdlet](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets)
+[用於設定群組設定的 Azure Active Directory Cmdlet](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets)

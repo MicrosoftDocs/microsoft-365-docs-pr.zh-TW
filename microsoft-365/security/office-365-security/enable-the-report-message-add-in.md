@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何為個別使用者或整個組織啟用 Outlook 和 Outlook 網頁版的 [報告訊息] 增益集。
-ms.openlocfilehash: 94dbe7d9dcd5cf3dc8bd5874550880d813f879f5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 32b4ab318237ca220b63c87bd4a664cfb69d0b45
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086325"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893751"
 ---
 # <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 
@@ -30,22 +30,22 @@ ms.locfileid: "42086325"
 
 ## <a name="overview"></a>概觀
 
-報告訊息增益集以進行 Outlook 和 Outlook 網頁 （原先稱為 Outlook Web App） 讓人員能輕鬆地報告誤分類的電子郵件，是否安全或惡意，Microsoft 並分析其關係企業。 Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 此外，如果貴組織使用 [Office 365 進階威脅防護方案 1](office-365-atp.md) 或[方案 2](office-365-ti.md)，則 [報告訊息] 增益集會向貴組織的安全性小組提供實用資訊，以便用於檢閱及更新安全性原則。
+Outlook 和網頁型 Outlook （先前稱為 Outlook Web App）的報告訊息增益集可讓使用者輕鬆地向 Microsoft 及其子公司報告 misclassified 電子郵件，以進行分析。 Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 此外，如果貴組織使用 [Office 365 進階威脅防護方案 1](office-365-atp.md) 或[方案 2](office-365-ti.md)，則 [報告訊息] 增益集會向貴組織的安全性小組提供實用資訊，以便用於檢閱及更新安全性原則。
 
-例如，假設使用者將大量訊息回報為網路釣魚。 此資訊會顯示在[安全性儀表板](security-dashboard.md)及其他報告中。 貴組織的安全性小組可以使用此資訊來表示可能需要更新防網路釣魚原則。 或者，如果有人使用 [報告訊息] 增益集，回報大量被標示為垃圾郵件的訊息，則貴組織的安全性小組可能需要調整[反垃圾郵件原則](configure-the-anti-spam-policies.md)。
+例如，假設使用者將大量訊息回報為網路釣魚。 此資訊會顯示在[安全性儀表板](security-dashboard.md)及其他報告中。 貴組織的安全性小組可以使用此資訊來表示可能需要更新防網路釣魚原則。 或者，如果有人使用 [報告訊息] 增益集，回報大量被標示為垃圾郵件的訊息，則貴組織的安全性小組可能需要調整[反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-報告訊息增益集的運作方式與大多數的 Office 365 訂閱和下列產品：
+報告訊息增益集可搭配大多數 Office 365 訂閱及下列產品運作：
 
- - Outlook 網頁版
- - Outlook 2013 SP1
- - Outlook 2016
- - Mac 版 Outlook 2016
- - Office 365 專業增強版隨附的 Outlook
+- Outlook 網頁版
+- Outlook 2013 SP1
+- Outlook 2016
+- Mac 版 Outlook 2016
+- Office 365 專業增強版隨附的 Outlook
 
-報告訊息增益集目前不是適用於：
+報告郵件增益集目前不適用於下列專案：
 
- - 在內部部署 Exchange 組織中的信箱
- - GCC、 GCC 高，或 DoD 訂閱
+- 內部部署 Exchange 組織中的信箱
+- GCC、GCC 高階或 DoD 訂閱
 
 您現有的網頁瀏覽器應足以讓 [報告訊息] 增益集運作。不過，如果您發現增益集無法使用或無法如預期般運作，請嘗試使用不同的瀏覽器。
 

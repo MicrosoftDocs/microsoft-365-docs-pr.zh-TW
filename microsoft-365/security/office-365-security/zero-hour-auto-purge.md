@@ -1,11 +1,11 @@
 ---
-title: 零時差自動清除 - 防範垃圾郵件和惡意程式碼
+title: 零小時自動清除（ZAP）-retroactive 防護垃圾郵件、惡意程式碼和網路釣魚。
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 11/21/2019
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,117 +18,96 @@ search.appverid:
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
-description: 零時差自動清除 (ZAP) 是一種電子郵件防護功能，可偵測含垃圾郵件或惡意程式碼且已傳遞到使用者收件匣的郵件，然後將惡意內容呈現為無害。 ZAP 執行此作業的方式取決於偵測到的惡意內容類型。
-ms.openlocfilehash: 6616281a98487c7edd7ca7721ade9a8510f6a21f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 零小時自動清除（ZAP）是 Office 365 中的電子郵件保護功能，可偵測已傳遞至 Exchange Online 的垃圾郵件、惡意程式碼或網路釣魚郵件。 ZAP 執行此作業的方式取決於偵測到的惡意內容類型。
+ms.openlocfilehash: 7cce0c15d861ee43d5704f3fc4da5a6dccb9d5d4
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597953"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895008"
 ---
-# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>零時差自動清除 - 防範垃圾郵件和惡意程式碼
+# <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-office-365"></a>零小時自動清除（ZAP）-防護 Office 365 中的垃圾郵件和惡意程式碼
 
 ## <a name="overview"></a>概觀
 
-零時差自動清除 (ZAP) 是一種電子郵件防護功能，可偵測含網路釣魚、垃圾郵件或惡意程式碼且已傳遞到使用者收件匣的郵件，然後將惡意內容呈現為無害。 ZAP 執行此作業的方式取決於偵測到的惡意內容類型。 郵件可能會因為郵件內容、URL 或附件而遭到 ZAP 處理。
+零小時自動清除（ZAP）是 Office 365 中的電子郵件保護功能，retroactively 偵測並 neutralizes 已傳遞至 Exchange Online 信箱的惡意網路釣魚、垃圾郵件或惡意程式碼郵件。
 
-任何包含 Exchange Online 信箱的 Office 365 訂用帳戶都會隨附預設 Exchange Online Protection，在其中即可取得 ZAP。
+您可以使用包含 Exchange Online 信箱之任何 Office 365 訂閱隨附的預設 Exchange Online Protection （EOP）的 ZAP。 在會保護內部部署 Exchange 信箱的獨立 EOP 環境中，ZAP 無法運作。
 
 ## <a name="how-zap-works"></a>ZAP 的運作方式
 
-Office 365 每天都會即時更新反垃圾郵件引擎和惡意程式碼簽章。 不過，使用者仍可能因為各種原因而收到傳遞至其收件匣的惡意郵件，原因包括內容是否在傳遞給使用者後具攻擊性。 ZAP 可透過持續監視 Office 365 垃圾郵件和惡意程式碼簽章的更新，解決這種情況。 ZAP 可以尋找及移除已在使用者收件匣中的先前傳遞郵件。
+Office 365 每天都會即時更新垃圾郵件和惡意程式碼簽名。 不過，使用者仍然可以接收惡意郵件，但有各種原因，包括在傳遞給使用者後 weaponized 內容。 在不斷監控 Office 365 垃圾郵件和惡意程式碼簽名的更新時，ZAP 會解決此問題。 ZAP 可以尋找及移除已在使用者信箱中的郵件。
 
-ZAP 動作對信箱使用者而言很順暢；但如果電子郵件遭到移動，使用者就不會收到通知。 
+對使用者而言，ZAP 動作是無縫的;如果偵測到郵件並加以移動，不會通知他們。
 
-允許清單、[郵件流程規則](use-transport-rules-to-configure-bulk-email-filtering.md) (也稱為傳輸規則)，以及使用者規則或其他優先於 ZAP 的篩選條件。
+[安全寄件者清單](create-safe-sender-lists-in-office-365.md)、郵件流程規則（也稱為傳輸規則）、收件匣規則或其他篩選器優先于 ZAP。
 
 ### <a name="malware-zap"></a>惡意程式碼 ZAP
 
-對於新偵測的惡意程式碼，ZAP 會將整個郵件 (包括其附件) 移至惡意程式碼隔離區。 無論郵件的讀取狀態為何，都會移動郵件。 如果我們在動態傳遞掃描的過程中收到郵件的惡意程式碼訊號，ZAP 就會對郵件採取 [移至垃圾郵件] 動作。 然後允許動態傳遞完成傳遞掃描時間，並採取適當的動作。
+若為傳遞之後發現包含惡意程式碼的**讀取或未讀取郵件**，ZAP 會隔離包含惡意程式碼附件的郵件。 只有系統管理員可以從隔離區中查看和管理惡意程式碼郵件。
 
-在惡意程式碼原則中，預設會啟用惡意程式碼 ZAP。 您可以在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的 [Set-MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy) Cmdlet 上，使用 *ZapEnabled* 參數來停用惡意程式碼 ZAP。 在安全性與合規性中心編輯惡意程式碼原則，也可以啟用或停用惡意程式碼 ZAP。
+在反惡意程式碼原則中，預設會啟用惡意程式碼 ZAP。 如需詳細資訊，請參閱[Configure In Office 365 的反惡意程式碼原則](configure-anti-malware-policies.md)。
 
 ### <a name="phish-zap"></a>網路釣魚 ZAP
 
-對於在傳遞後被識別為網路釣魚的郵件，ZAP 會根據涵蓋特定使用者的垃圾郵件原則採取行動，而不管郵件的讀取狀態為何。 如果網路釣魚動作原則設定為「不要」** 採取任何動作 (新增 X-header、修改主旨、不執行任何動作)，則 ZAP 將不會對郵件採取任何動作。 如果網路釣魚活動設定為 [移至垃圾郵件]，則 ZAP 會將郵件移到使用者收件匣的 [垃圾郵件] 資料夾。 **對於任何其他網路釣魚動作 (重新導向、刪除、隔離)，ZAP 會將郵件移到網路釣魚隔離區**。 請參閱下面的設定需求與排除項目。 深入了解如何[設定您的垃圾郵件篩選原則](https://docs.microsoft.com//office365/securitycompliance/configure-your-spam-filter-policies)。
+針對傳送後識別為網路釣魚的**讀取或未讀取郵件**，ZAP 結果取決於針對網路釣魚電子郵件原則中設定的**網路釣魚電子**郵件篩選的動作。 下列清單說明網路釣魚和其可能的 ZAP 結果的可用篩選判定動作：
 
-在垃圾郵件原則中，預設會啟用網路釣魚 ZAP。 使用 [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy) (一個 EOP Cmdlet) 的 PhishZapEnabled** 參數可以停用網路釣魚 ZAP。
+- **新增 X-Header**，**並將主旨行前置文字**： ZAP 不會對郵件採取任何動作。
+
+- **將郵件移至垃圾郵件**：只要信箱上啟用垃圾郵件規則（預設為啟用），ZAP 就會將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[在 Office 365 中設定 Exchange Online 信箱上的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
+
+- **將郵件重新導向至電子郵件地址**、**刪除郵件**、**隔離訊息**： ZAP 會隔離郵件。 只有系統管理員可以查看和管理網路釣魚隔離的郵件。
+
+根據預設，反垃圾郵件原則中已啟用網路釣魚 ZAP，**網路釣魚電子郵件**篩選決定的預設動作為**隔離訊息**，這表示網路釣魚網站預設會隔離郵件。
+
+如需設定垃圾郵件篩選 verdicts 的詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 ### <a name="spam-zap"></a>垃圾郵件 ZAP
 
-對於在傳遞後被識別為垃圾郵件的郵件，ZAP 會根據涵蓋特定使用者的垃圾郵件原則採取行動 (但僅限於未讀取郵件時)。  如果原則垃圾郵件動作設定為「不要」採取任何動作 (新增 X-header、修改主旨、不執行任何動作)，則 ZAP 將不會對郵件採取任何動作。 如果垃圾郵件活動設定為 [移至垃圾郵件]，則 ZAP 會將郵件移到使用者收件匣的 [垃圾郵件] 資料夾。 **對於任何其他垃圾郵件動作 (重新導向、刪除、隔離)，ZAP 會將郵件移垃圾郵件隔離區**。 請參閱下面的設定需求與排除項目。 深入了解如何[設定您的垃圾郵件篩選原則](https://docs.microsoft.com//office365/securitycompliance/configure-your-spam-filter-policies)。
+針對傳送後被識別為垃圾郵件的**未讀取郵件**，ZAP 結果取決於針對**垃圾**郵件篩選決定在適用的反垃圾郵件原則中所設定的動作。 下列清單說明了垃圾郵件及其可能的 ZAP 結果的可用篩選：
 
-在垃圾郵件原則中，預設會啟用垃圾郵件 ZAP。 您可以在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中使用 [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy)Cmdlet 的 SpamZapEnabled** 參數來停用垃圾郵件 ZAP。
+- **新增 X-Header**，**並將主旨行前置文字**： ZAP 不會對郵件採取任何動作。
 
-### <a name="phish-and-spam-zap-requirements-exclusions-and-notices"></a>網路釣魚和垃圾郵件 ZAP 需求、排除項目和通知
+- **將郵件移至垃圾郵件**：只要信箱上啟用垃圾郵件規則（預設為啟用），ZAP 就會將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[在 Office 365 中設定 Exchange Online 信箱上的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-> [!IMPORTANT]
-> 先前用於控制網路釣魚和垃圾郵件 ZAP 的 ZapEnabled** Cmdlet 參數，將於 **2020 年 2 月 1 日淘汰**。 如果您已撰寫使用 ZapEnabled 參數的任何指令碼，我們建議將其更新為使用 SpamZapEnabled 和 PhishZapEnabled。 在過渡時期，將透過 Cmdlet 提供 3 個參數 (ZapEnabled、PhishZapEnabled 和 SpamZapEnabled)。 直到透過 UI 或 PowerShell 明確設定後，PhishZapEnabled 和 SpamZapEnabled 才會顯示來自 ZapEnabled 參數的繼承值。 一旦設定新參數，就不會再從 ZapEnabled 參數繼承。 在其被取代之後，設定 ZapEnabled 不會對 PhishZapEnabled 或 SpamZapEnabled 屬性造成任何影響，ZapEnabled 將會從 Cmdlet 的參數清單中移除。
+- **將郵件重新導向至電子郵件地址**、**刪除郵件**、**隔離訊息**： ZAP 會隔離郵件。 使用者可以查看和管理自己的垃圾郵件隔離郵件。
 
-ZAP 不會將任何郵件移到正在進行動態傳遞掃描或已經有惡意程式碼裁決 (含已取代的附件) 的隔離區。 如果收到這些郵件類型的網路釣魚或垃圾郵件訊號，且垃圾郵件原則/網路釣魚動作已設定為採取某種動作 (移至垃圾郵件、重新導向、刪除、隔離)，則 ZAP 會預設為「移至垃圾郵件」動作。 若要讓 ZAP 對郵件採取「移至垃圾郵件」動作，使用者必須啟用其垃圾郵件防護，並使用預設垃圾郵件設定。 (如需 Outlook 使用者選項的詳細資料，請參閱[變更垃圾郵件篩選工具中的防護層級](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b)。)
+根據預設，反垃圾郵件原則中已啟用垃圾郵件 ZAP，**垃圾**郵件篩選判定的預設動作是**將郵件移至垃圾郵件資料夾**，這表示垃圾郵件 ZAP 預設會將**未讀取**的郵件移至 [垃圾郵件] 資料夾。
+
+如需設定垃圾郵件篩選 verdicts 的詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+
+### <a name="zap-considerations-for-office-365-advanced-threat-protection-atp"></a>Office 365 高級威脅防護（ATP）的 ZAP 考慮
+
+在[動態傳遞](dynamic-delivery-and-previewing.md)掃描的處理常式中，或惡意程式碼篩選已使用**惡意程式碼警示文字 .txt**檔取代附件的情況下，ZAP 將不會隔離任何郵件。 如果針對這些類型的郵件接收網路釣魚或垃圾郵件信號，而且反垃圾郵件原則中的篩選判定會設定為對郵件採取某些動作（移至 [垃圾郵件]、[重新導向]、[刪除] 隔離），則 ZAP 會預設為「移至垃圾郵件」動作。
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>如何查看 ZAP 是否已移動您的郵件
 
-若要判斷 ZAP 是否已移動您的郵件，您可以使用[威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)或[威脅總管 (及即時偵測)](threat-explorer.md)。 請注意，系統巨集指令，為 ZAP 是未記錄在 exchange 信箱稽核記錄。 
- 
-## <a name="disable-zap"></a>停用 ZAP
+若要判斷 ZAP 是否已移動您的郵件，您可以使用[威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)或[威脅總管 (及即時偵測)](threat-explorer.md)。 請注意，在系統動作中，不會在 Exchange 信箱審計記錄檔中記錄 ZAP。
 
-若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連接至 Exchange Online Protection PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+## <a name="zap-faq"></a>ZAP FAQ
 
-### <a name="disable-malware-zap"></a>停用惡意程式碼 ZAP**
+### <a name="q-what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>問：如果合法的郵件移至 [垃圾郵件] 資料夾，會發生什麼情況？
 
-您可以在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的 [Set-MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy) Cmdlet 上，透過 *ZapEnabled* 參數停用惡意程式碼 ZAP。 在安全性與合規性中心編輯惡意程式碼原則，也可以啟用或停用惡意程式碼 ZAP。
+A：您應該遵循正常的報告過程[誤報](report-junk-email-messages-to-microsoft.md)。 郵件會從 [收件匣] 移至 [垃圾郵件] 資料夾，其唯一原因是服務已判斷郵件是垃圾郵件或惡意的。
 
-此範例會在名為「Test」的惡意程式碼篩選原則中停用 ZAP。
+### <a name="q-what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>問：我使用 Office 365 隔離而非 [垃圾郵件] 資料夾的情況為何？
 
-```Powershell
-Set-MalwareFilterPolicy -Identity Test -ZapEnabled $false
-```
+A：根據本主題稍早所述的設定反垃圾郵件原則，ZAP 會對郵件採取動作。
 
-如需詳細的語法及參數資訊，請參閱 [Set-MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy)。
+### <a name="q-what-if-im-using-mail-flow-rules-or-allowedblocked-sender-lists"></a>問：如果我使用郵件流程規則或允許/封鎖的寄件者清單，該怎麼辦？
 
-### <a name="disable-phish-zap-and-spam-zap"></a>停用網路釣魚 ZAP 和垃圾郵件 ZAP
+A：郵件流程規則或封鎖及允許組織設定優先。 這些郵件會從 ZAP 中排除。
 
-若要停用 O365 租用戶或一組使用者的網路釣魚和垃圾資料 ZAP，請使用 [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy) (一個 EOP Cmdlet) 的 PhishZapEnabled** 和 SpamZapEnabled** 參數。
+### <a name="q-what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>問：郵件會移至另一個資料夾（例如 [收件匣規則]）？
 
-在下列範例中，已針對名為「Test」的內容篩選原則停用網路釣魚和垃圾郵件 ZAP。
+A：只要郵件尚未刪除或移至 [垃圾郵件] 資料夾，則該郵件仍可運作。
 
-```Powershell
-Set-HostedContentFilterPolicy -Identity Test -PhishZapEnabled $false -SpamZapEnabled $false
-```
+### <a name="q-does-zap-change-the-message-header"></a>問： ZAP 是否會變更郵件頭？
 
-如需詳細的語法及參數資訊，請參閱 [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy)。
+A： ZAP 動作不會對郵件頭進行任何變更。
 
-## <a name="faq"></a>常見問題集
+### <a name="q-how-does-zap-affect-mailboxes-on-hold"></a>問： ZAP 如何影響信箱的保留狀態？
 
-### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>如果合法郵件移至垃圾郵件資料夾，則會發生什麼情況？
+A： ZAP 不會隔離保留信箱中的郵件。 根據為反垃圾郵件原則中的垃圾郵件或網路釣魚所設定的動作，ZAP 可以將郵件移至 [垃圾郵件] 資料夾。
 
-您應依照[誤報](prevent-email-from-being-marked-as-spam.md)的正常報告程序進行。 郵件會從 [收件匣] 移至 [垃圾郵件] 資料夾的唯一原因，是因為服務已判定郵件是垃圾郵件或惡意郵件。
-
-### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>如果我使用 Office 365 隔離區，而不是垃圾郵件資料夾，該怎麼辦？
-
-ZAP 會根據反垃圾郵件原則中的網路釣魚和垃圾郵件動作設定採取動作。 如需有關惡意程式碼、網路釣魚和垃圾郵件 ZAP 的詳細資訊，請參閱上面內容。
-
-### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>如果我有自訂郵件流程規則 (封鎖/允許規則)，該怎麼辦？
-
-由系統管理員 (郵件流程規則) 或封鎖和允許規則建立的規則優先。 這類郵件會從特徵準則中排除，所以郵件流程會遵循規則動作 (封鎖/允許規則)。
-
-### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>如果郵件移到另一個資料夾 (例如收件匣規則)，該怎麼辦？
-
-除非郵件已遭刪除或位於垃圾郵件中，否則在此情況下，ZAP 仍可運作。
-
-### <a name="does-zap-change-the-email-header"></a>ZAP 會變更的電子郵件標頭嗎？
-
-ZAP 巨集指令不會以電子郵件的標頭進行任何變更。
-
-### <a name="how-does-zap-affect-mailboxes-on-hold"></a>ZAP 如何影響保留的信箱？
-
-ZAP 不會從保留的信箱移除郵件，因此將不會移動到隔離的郵件] 動作。 仍會將郵件移至 [垃圾郵件] 資料夾，如果原則所指定。 
-
-[如需信箱保留的詳細資訊，請按一下這裡。](https://docs.microsoft.com/exchange/policy-and-compliance/holds/holds?view=exchserver-2019)
-
-## <a name="related-topics"></a>相關主題
-
-[Office 365 電子郵件的反垃圾郵件保護](anti-spam-protection.md)
-
-[利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件，以避免誤判問題](reduce-spam-email.md)
+如需 Exchange Online 中的保留的詳細資訊，請參閱[Exchange online 中的 In-Place 保留和訴訟暫](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds)止。

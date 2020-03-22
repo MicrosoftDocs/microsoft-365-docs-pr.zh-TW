@@ -1,8 +1,7 @@
 ---
 title: 允許成員傳送為或代表群組傳送
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -20,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: 瞭解如何允許成員以 Office 365 群組形式傳送電子郵件，或代表 Office 365 群組傳送電子郵件。
-ms.openlocfilehash: 0179dbd2e3093ce80929f6c5f9e689aece845a40
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 41e8bd34ed7ba28cdaa736bf8f4c88433f56a47e
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633781"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894654"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允許成員傳送為或代表群組傳送
 
-已被授與「**代理傳送**」或「**代理傳送**者」許可權的 Office 365 群組成員現在可以使用群組或代表群組傳送電子郵件。 本主題說明管理員如何設定這些許可權。
+已被授與「**代理傳送**」或「**代理傳送**者」許可權的 Office 365 群組成員可以傳送電子郵件給群組，或代表群組傳送電子郵件。 本主題說明管理員如何設定這些許可權。
   
 例如，如果 Megan Bowen 是**訓練**Office 365 群組的一部分，且具有群組的 [以該群組**傳送**] 許可權，則當她傳送電子郵件做為群組時，它看起來就像是**訓練**群組傳送電子郵件。 
   
@@ -39,7 +38,7 @@ ms.locfileid: "42633781"
 > 您可以為特定使用者設定「**傳送為**」或「**傳送代理**」，但不能同時為這兩者。 如果您同時設定兩者，則預設會**傳送為**。
 
 > [!TIP]
-> 請參閱[代表 Office 365 群組傳送電子郵件](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)的步驟，以瞭解如何使用 Outlook 和 outlook 網頁版以從群組傳送電子郵件。
+> 請參閱[代表 Office 365 群組傳送電子郵件](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)，以瞭解如何使用 Outlook 和 outlook 網頁版以從群組傳送電子郵件。
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>允許成員以群組形式傳送電子郵件
 

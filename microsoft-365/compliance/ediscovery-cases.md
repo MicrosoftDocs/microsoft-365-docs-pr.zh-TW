@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: 使用安全性 & 規範中心，在組織中建立及管理 eDiscovery 案例。 您可以指派成員至案例、將內容位置置於保留狀態、執行與案例相關聯的內容搜尋，以及匯出搜尋結果。 您也可以準備案例資料，以供深入分析 Office 365 Advanced eDiscovery。
-ms.openlocfilehash: 92894e430faaf9d5c1a758f81c5abfeb5236e643
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 471dd99d6e21afbb4db1a05cd5609cda9e97346c
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634951"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894962"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>在安全性 & 規範中心管理 eDiscovery 案例
 
@@ -53,7 +53,7 @@ EDiscovery 案例可讓您將成員新增至案例、控制特定案例成員可
 
 [選步驟10：重新開啟已關閉的案例](#optional-step-10-re-open-a-closed-case)
 
-[其他資訊](#more-information)
+[詳細資訊](#more-information)
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>步驟1：將 eDiscovery 許可權指派給潛在的案例成員
 
@@ -551,7 +551,14 @@ EDiscovery 案例可讓您將成員新增至案例、控制特定案例成員可
   |組織的案例保留數目上限  <br/> |10,000  <br/> |
   |單一案例保留中的信箱數目上限  <br/> |1,000  <br/> |
   |單一案例保留中的商務網站 SharePoint 和 OneDrive 數目上限  <br/> |100  <br/> |
-   
+  |在 eDiscovery 首頁顯示的案例數目上限，以及在案例中的 [保留]、[搜尋] 和 [匯出] 索引標籤上顯示的專案數上限。 <sup>1</sup> |1,000|
+  |||
+
+   > [!NOTE]
+   > <sup>1</sup>若要查看超過1000案例、保留、搜尋或匯出的清單，您可以使用對應的 Office 365 安全性 & 合規性 PowerShell Cmdlet：<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction)
+
+
+
 - **在 [高級 eDiscovery] 的「案例管理」頁面上建立案例的情況為何？** 您可以按一下 [安全性 & 規範中心] 中「 **eDiscovery** 」頁面底部的連結，存取舊版的高級 eDiscovery 案例清單。 不過，若要在舊版案例中執行任何工作，您必須聯繫 Office 365 支援，並要求將案例移至安全性 & 合規性中心的新 eDiscovery 案例。 
     
 - **為什麼要建立 eDiscovery 管理員？** 如先前所述，eDiscovery 系統管理員是 eDiscovery 管理員角色群組的成員，可在您的組織中查看和存取所有 eDiscovery 案例。 存取所有 eDiscovery 案例的能力有兩個重要的目的：

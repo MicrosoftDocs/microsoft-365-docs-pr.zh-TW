@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 7ab3f63008c65fca1a99128cc6f11f83bc86b2b4
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 1dfb567c8e6b8573397d503ae27c0aceb447c916
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857550"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895460"
 ---
 # <a name="machine-profile-page"></a>電腦設定檔頁面面
 
@@ -29,9 +29,7 @@ Microsoft 365 安全性入口網站為您提供電腦設定檔頁面面，因此
 
 ## <a name="navigating-the-machine-profile-page"></a>流覽 [機器設定檔] 頁面
 
-您可以直接選取 [機器] 清單上的裝置名稱，或選擇 [電腦清單] 浮出控制項上的 [**開啟機器] 頁面**，即可存取 [機器設定檔] 頁面。
-
-當您開啟頁面後，就會發現它會分成三個區段。
+[機器設定檔] 頁面分為三個區段。
 
 ![具有（1）索引標籤區域（2）邊欄及（3）個動作以紅色反白顯示的機器設定檔頁面面的圖像](../../media/mtp-machine-profile/mtp-machine-profile-all.png)
 

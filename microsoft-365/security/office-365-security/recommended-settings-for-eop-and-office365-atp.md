@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高級威脅防護（ATP）安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用高級威脅防護（ATP），您也可以取得哪些額外功能？
-ms.openlocfilehash: b7c98fe4b362a5be72be9e103a2602cd4954e028
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b68c10eccfdacd7782f402b5712a808ff278254d
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632941"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895224"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建議設定
 
@@ -30,7 +30,7 @@ ms.locfileid: "42632941"
 雖然我們可讓安全性管理員自訂其安全性設定，但我們建議的 EOP 和 Office 365 ATP 有兩個安全性層級： **Standard**和**Strict**。 每個客戶的環境和需求各不相同，但我們相信這些等級的郵件篩選設定可協助避免不想要的郵件在大多數情況下抵達員工的收件匣。
 
 > [!IMPORTANT]
-> 必須在信箱上啟用垃圾郵件設定，篩選才能正確運作。 預設會啟用此功能，但如果篩選似乎不在運作中，則應該加以檢查。 請閱讀[Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration)以瞭解詳細資訊。 
+> 必須在信箱上啟用垃圾郵件規則，篩選才能正常運作。 它預設為啟用，但是如果篩選似乎不在運作中，您應該加以檢查。 如需詳細資訊，請參閱[在 Office 365 中設定 Exchange Online 信箱上的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
 本主題說明這些 Microsoft 建議的設定，以協助保護您的 Office 365 使用者。
 
@@ -43,64 +43,80 @@ ms.locfileid: "42632941"
 
 ### <a name="eop-anti-spam-policy-settings"></a>EOP 反垃圾郵件原則設定
 
-|安全性功能名稱|標準|嚴格|留言|
-|---------|---------|---------|---------|
-|垃圾郵件偵測動作|將郵件移至 [垃圾郵件] 資料夾|隔離郵件||
-|高信賴的垃圾郵件偵測動作|隔離郵件|隔離郵件||
-|網路釣魚電子郵件偵測動作|隔離郵件|隔離郵件||
-|高信賴網路釣魚電子郵件偵測動作|隔離郵件|隔離郵件||
-|大量電子郵件偵測動作|將郵件移至 [垃圾郵件] 資料夾|隔離郵件||
-|將大量電子郵件閾值設定為|6 |4 |預設值是目前的7，但建議您將其變更為6。 如需詳細資訊，請參閱[大量投訴層級值](bulk-complaint-level-values.md)。|
-|隔離保留期間|30 天|30 天||
-|安全性秘訣|開啟|開啟||
-|允許的寄件者|無|無||
-|允許的寄件者網域|無|無|不需要將您擁有的網域（也稱為「_公認的網域_」）新增至允許的寄件者清單。 實際上，它會被認為是高風險，因為它會為不良的演員帶來機會，以傳送您本來會加以篩選的郵件。在 [**反垃圾郵件設定**] 頁面上，使用 [安全性 & 規範中心] 中的 [[哄騙情報](learn-about-spoof-intelligence.md)]，檢查所有哄騙為組織中的網域或欺騙外部網域的寄件者。|
-|封鎖的寄件者|無|無||
-|封鎖的寄件者網域|無|無||
-|使用者的垃圾郵件通知頻率|已啟用|已啟用|3天|
-|自動清除零小時|開啟|開啟|針對垃圾郵件和網路釣魚 ZAP|
-|MarkAsSpamBulkMail|開啟|開啟|此設定僅適用于 PowerShell|
+若要建立及設定反垃圾郵件原則，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-反垃圾郵件原則（稱為「高級垃圾郵件篩選（ASF）」）中有其他幾個參數正在被取代。 有關這些功能之折舊時程表的詳細資訊，將在本主題外傳遞。
+|||||
+|---|---|---|---|
+|**安全性功能名稱**|**Standard**|**嚴格**|**Comment**|
+|**垃圾郵件**偵測動作 <br/><br/> _SpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
+|**高信賴的垃圾郵件**偵測動作 <br/><br/> _HighConfidenceSpamAction_|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
+|**網路釣魚電子郵件**偵測動作 <br/><br/> _PhishSpamAction_|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
+|**高信賴網路釣魚電子郵件**偵測動作 <br/><br/> _HighConfidencePhishAction_|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
+|**大量電子郵件**偵測動作 <br/><br/> _BulkSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
+|大量電子郵件閾值 <br/><br/> _BulkThreshold_|6 |4 |預設值是目前的7，但建議您將其變更為6。 如需詳細資訊，請參閱[Office 365 中的大量投訴等級（BCL）](bulk-complaint-level-values.md)。|
+|隔離保留期間 <br/><br/> _QuarantineRetentionPeriod_|30 天|30 天||
+|**安全性秘訣** <br/><br/> _InlineSafetyTipsEnabled_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
+|允許的寄件者 <br/><br/> _AllowedSenders_|無|無||
+|允許的寄件者網域 <br/><br/> _AllowedSenderDomains_|無|無|不需要將您擁有的網域（也稱為「_公認的網域_」）新增至允許的寄件者清單。 實際上，它會被認為是高風險，因為它會為不良的演員帶來機會，以傳送您本來會加以篩選的郵件。在 [**反垃圾郵件設定**] 頁面上，使用 [安全性 & 規範中心] 中的 [[哄騙情報](learn-about-spoof-intelligence.md)]，檢查所有哄騙為組織中的網域或欺騙外部網域的寄件者。|
+|封鎖的寄件者 <br/><br/> _BlockedSenders_|無|無||
+|封鎖的寄件者網域 <br/><br/> _BlockedSenderDomains_|無|無||
+|**啟用使用者垃圾郵件通知** <br/><br/> _EnableEndUserSpamNotifications_|已啟用 <br/><br/> `$true`|已啟用 <br/><br/> `$true`||
+|**傳送使用者垃圾郵件通知頻率（天）** <br/><br/> _EndUserSpamNotificationFrequency_|3天|3天||
+|**垃圾郵件 ZAP** <br/><br/> _SpamZapEnabled_|已啟用 <br/><br/> `$true`|已啟用 <br/><br/> `$true`||
+|**網路釣魚 ZAP** <br/><br/> _PhishZapEnabled_|已啟用 <br/><br/> `$true`|已啟用 <br/><br/> `$true`||
+|_MarkAsSpamBulkMail_|開啟|開啟|此設定僅適用于 PowerShell。|
+|
 
-建議您為標準和嚴格的層次 **，關閉這些**設定：
+反垃圾郵件原則中有其他幾個高級垃圾郵件篩選器（ASF）設定已被取代。 有關這些功能之折舊時程表的詳細資訊，將在本主題外傳遞。
 
-|安全性功能名稱|註解|
-|---------|---------|
-|IncreaseScoreWithImageLinks||
-|IncreaseScoreWithNumericIps||
-|IncreaseScoreWithRedirectToOtherPort||
-|IncreaseScoreWithBizOrInfoUrls||
-|MarkAsSpamEmptyMessages||
-|MarkAsSpamJavaScriptInHtml||
-|MarkAsSpamFramesInHtml||
-|MarkAsSpamObjectTagsInHtml||
-|MarkAsSpamEmbedTagsInHtml||
-|MarkAsSpamFormTagsInHtml||
-|MarkAsSpamWebBugsInHtml||
-|MarkAsSpamSensitiveWordList||
-|MarkAsSpamFromAddressAuthFail||
-|MarkAsSpamNdrBackscatter||
-|MarkAsSpamSpfRecordHardFail||
+建議您為**標準**和**嚴格**的層次 **，關閉這些**ASF 設定。 如需 ASF 設定的詳細資訊，請參閱[Office 365 中的高級垃圾郵件篩選器（ASF）設定](advanced-spam-filtering-asf-options.md)。
 
-#### <a name="eop-outbound-spam-filter-policy-settings"></a>EOP 輸出垃圾郵件篩選原則設定
+|||
+|----|---|
+|**安全性功能名稱**|**註解**|
+|**遠端網站的影像連結**（_IncreaseScoreWithImageLinks_）||
+|**URL 中的數位 IP 位址**（_IncreaseScoreWithNumericIps_）||
+|**UL 重新導向至其他埠**（_IncreaseScoreWithRedirectToOtherPort_）||
+|**.Biz 或. 資訊網站的 URL** （_IncreaseScoreWithBizOrInfoUrls_）||
+|**空白郵件**（_MarkAsSpamEmptyMessages_）||
+|**HTML 中的 JavaScript 或 VBScript** （_MarkAsSpamJavaScriptInHtml_）||
+|**HTML 中的框架或 IFrame 標記**（_MarkAsSpamFramesInHtml_）||
+|**HTML 中的物件標記**（_MarkAsSpamObjectTagsInHtml_）||
+|**在 HTML 中嵌入標記**（_MarkAsSpamEmbedTagsInHtml_）||
+|HTML （_MarkAsSpamFormTagsInHtml_）**中的表單標記**||
+|**HTML 中的 Web 臭蟲**（_MarkAsSpamWebBugsInHtml_）||
+|套用**敏感字清單**（_MarkAsSpamSensitiveWordList_）||
+|**SPF 記錄： hard fail** （_MarkAsSpamSpfRecordHardFail_）||
+|**條件式寄件者識別碼篩選： hard fail** （_MarkAsSpamFromAddressAuthFail_）||
+|**NDR 退信攻擊**（_MarkAsSpamNdrBackscatter_）||
+|
 
-|安全性功能名稱|標準|嚴格|留言|
-|---------|---------|---------|---------|
-|輸出垃圾郵件原則收件者限制-外部每小時限制|500|400||
-|輸出垃圾郵件原則收件者限制-內部小時限制|1000|800||
-|輸出垃圾郵件原則收件者限制-每日限制|1000|800||
-|使用者超過限制時的動作|限制使用者傳送郵件|限制使用者傳送郵件||
+#### <a name="eop-outbound-spam-policy-settings"></a>EOP 輸出垃圾郵件原則設定
+
+若要建立及設定輸出垃圾郵件原則，請參閱[在 Office 365 中設定輸出垃圾郵件篩選](configure-the-outbound-spam-policy.md)。
+
+||||
+|---|---|---|---|
+|**安全性功能名稱**|**Standard**|**嚴格**|**Comment**|
+|**每位使用者的收件者數目上限：外部每小時限制** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
+|**每位使用者的收件者數目上限：每小時內部的限制** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
+|**每位使用者的收件者數目上限：每日限制** <br/><br/> _RecipientLimitPerDay_|1000|800||
+|**使用者超過限制時的動作** <br/><br/> _ActionWhenThresholdReached_|**限制使用者傳送郵件** <br/><br/> `BlockUser`|**限制使用者傳送郵件** <br/><br/> `BlockUser`||
+|
 
 ### <a name="eop-anti-malware-policy-settings"></a>EOP 反惡意程式碼原則設定
 
-|安全性功能名稱|標準|嚴格|留言|
-|---------|---------|---------|---------|
-|惡意程式碼偵測回應|否|否|如果在電子郵件附件中偵測到惡意程式碼，將會隔離郵件，而且只能由系統管理員加以發行。|
-|「通用附件類型篩選」，用於封鎖可疑檔案類型|開啟|開啟||
-|惡意程式碼零小時自動清除|開啟|開啟||
-|通知未傳遞郵件的內部寄件者|停用|停用||
-|通知未傳遞郵件的外部寄件者|停用|停用||
+若要建立及設定反惡意程式碼原則，請參閱[在 Office 365 中設定反惡意程式碼原則](configure-anti-malware-policies.md)。
+
+|||||
+|---|---|---|---|
+|**安全性功能名稱**|**Standard**|**嚴格**|**Comment**|
+|**您是否要在郵件被隔離時通知收件者？** <br/><br/> _動作_|否 <br/><br/> _DeleteMessage_|否 <br/><br/> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
+|**常見附件類型篩選** <br/><br/> _EnableFileFilter_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|此設定會隔離包含以檔案類型為基礎的可執行附件的郵件，不論附件內容為何。|
+|**惡意程式碼零小時自動清除** <br/><br/> _ZapEnabled_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
+|通知未傳遞郵件的**內部寄件者** <br/><br/> _EnableInternalSenderNotifications_|停用 <br/><br/> `$false`|停用 <br/><br/> `$false`||
+|通知未傳遞郵件的**外部寄件者** <br/><br/> _EnableExternalSenderNotifications_|停用 <br/><br/> `$false`|停用 <br/><br/> `$false`||
+|
 
 ### <a name="eop-anti-phishing-policy-settings"></a>EOP 反網路釣魚原則設定
 

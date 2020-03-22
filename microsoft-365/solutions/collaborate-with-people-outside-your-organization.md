@@ -10,14 +10,23 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解如何設定 Microsoft 365，以與組織外部的人員共同作業。
-ms.openlocfilehash: eb6bbdc4dd0520f240edbdebde6851ec917cd0d9
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 80b5aacbf73a7845913acdcc6ada2321e49f77cd
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604454"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894950"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>與組織外部人員合作
+
+Microsoft 365 中的外部共用功能可讓您組織中的人員與合作夥伴、廠商、客戶及其他使用者共同作業，而非您的目錄中的帳戶。 您可以與組織外部的人員或只與個別的檔案共用整個小組或網站。
+
+與組織外部的人員合作，包含兩個主要元件：
+
+- **啟用共用**-透過 Azure Active Directory、小組、Office 365 群組和 SharePoint 設定共用控制，以允許您的組織所需的共用層級。
+- **啟用其他安全性**-雖然基本共用功能可設定為要求組織外部的人員進行驗證，但 Microsoft 365 提供許多額外的安全性和合規性功能，可協助您保護您的資料，並在外部共用時維護您的管理原則。
+
+## <a name="enable-sharing"></a>啟用共用
 
 根據預設，在 Microsoft 365 中，與組織外部的人員共用已啟用 SharePoint 和 OneDrive，但對小組停用。 許多 SharePoint 和 OneDrive 外部共用案例沒有進一步設定便可運作。 若要確認您所使用之案例的設定，或是啟用新案例，請從下列選項中選擇：
 
@@ -27,7 +36,7 @@ ms.locfileid: "42604454"
 
 如需跨 Microsoft 365 提供之來賓共用設定的完整資訊，請參閱[microsoft 365 來賓共用設定參考](microsoft-365-guest-settings.md)。
 
-## <a name="secure-your-environment"></a>保護您的環境
+## <a name="enable-additional-security"></a>啟用其他安全性
 
 一旦您已啟用要用來與組織外部人員共用的案例，請考慮其他保護措施，以避免意外或故意不當共用的內容。
 

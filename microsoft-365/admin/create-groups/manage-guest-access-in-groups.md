@@ -1,12 +1,10 @@
 ---
 title: 管理 Office 365 群組中的來賓存取
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 12/18/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 瞭解如何將來賓新增至 Office 365 群組、查看來賓使用者，以及使用 PowerShell 來控制來賓存取。
-ms.openlocfilehash: 3314746e4d12c318eaae8fbfa34c2ed0b4d31aed
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: e76718ccb20843b252c939be48653c61c7c1f0a9
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610610"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894500"
 ---
 # <a name="manage-guest-access-in-office-365-groups"></a>管理 Office 365 群組中的來賓存取
 
@@ -50,11 +48,9 @@ ms.locfileid: "42610610"
 
 如果您想要啟用或停用群組中的「來賓存取」，您可以在 Microsoft 365 系統管理中心進行。
 
-1. 在系統管理中心中，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">服務] & 增益集</a>] 頁面。
-
-2. 選取 [ **Office 365 群組**]。
+1. 在系統管理中心中，移至 [**設定** \> ] **[設定]，然後選取**[ **Office 365 群組**]。
   
-3. 在 [ **Office 365 群組**] 頁面上，選擇您是否要讓組織外部人員存取群組資源，或讓群組擁有者將組織外部人員新增至群組。
+2. 在 [ **Office 365 群組**] 頁面上，選擇您是否要讓組織外部人員存取群組資源，或讓群組擁有者將組織外部人員新增至群組。
 
 ## <a name="add-guests-to-an-office-365-group-from-the-admin-center"></a>從系統管理中心新增來賓至 Office 365 群組
 
@@ -62,7 +58,7 @@ ms.locfileid: "42610610"
   
 1. 在系統管理中心中，移至 [**群組** > **群組**] 頁面。
   
-2. 選取您要新增來賓的群組，然後選取 [**成員**] 索引標籤上的 [**全部查看] 和 [管理成員**]。 
+2. 按一下您要新增來賓的群組，然後選取 [**成員**] 索引標籤上的 [**全部查看] 和 [管理成員**]。 
   
 4. 選取 [**新增成員**]，然後選擇您要新增的客人名稱。
     
@@ -76,7 +72,7 @@ ms.locfileid: "42610610"
 
 如果您想要允許來賓存取大多數群組，但要讓某些地方禁止來賓存取，您可以使用 Microsoft PowerShell 封鎖個別群組的 guest 存取。
 
-您必須使用預覽版本的 [ [Azure Active Directory PowerShell For Graph （AzureAD）](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) （模組名稱**AzureADPreview**）以變更群組層級來賓存取設定：
+您必須使用預覽版本的 [ [Azure Active Directory PowerShell For Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) （模組名稱**AzureADPreview**）來變更群組層級來賓存取設定：
 
 - 如果您之前尚未安裝任何版本的 Azure AD PowerShell 模組，請參閱[安裝 Azure AD 模組](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module)，並遵循指示來安裝公開預覽版本。
 

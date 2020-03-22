@@ -16,12 +16,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: '您和您的使用者可以將假的否定和誤報垃圾郵件提交給 Microsoft 進行分析。 '
-ms.openlocfilehash: 7b53f74be78bc1203189815c6a7adf3337decd21
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 27e0698d1ad7d05adfa69e18e9b5b21edb74b1eb
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42856866"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893643"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析
 
@@ -36,7 +36,7 @@ ms.locfileid: "42856866"
 
 如果您收到的郵件是透過垃圾郵件篩選器傳遞，而且應歸類為垃圾郵件篩選器或網路釣魚詐騙，您可以視需要將 "假否定" 郵件提交至 Microsoft 垃圾郵件分析和 Microsoft 網路釣魚分析小組。 分析員會檢查郵件，並將其新增至全服務篩選準則（如果符合分類準則）。
 
-如需適用于整個組織的垃圾郵件設定，請參閱[使用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件，以避免誤報負面問題](reduce-spam-email.md)。 本文包含協助避免誤報的秘訣。
+如需適用于整個組織的垃圾郵件設定，請參閱[Office 365 中的反垃圾郵件保護](anti-spam-protection.md)。 本文包含協助避免誤報的秘訣。
 
 您可以透過下列方式提交垃圾郵件：
 
@@ -59,16 +59,16 @@ ms.locfileid: "42856866"
 3. 將垃圾郵件或網路釣魚詐騙郵件複製並貼到新郵件中以附件形式傳送。
 
    > [!NOTE]
-   > •您可以在新郵件中附加多封郵件。 請確定所有郵件都是相同類型：網路釣魚詐騙郵件或垃圾郵件。 <br/><br/>•將新郵件的本文保留空白。 <br/><br/>•使用 .msg （預設 Outlook 格式）或 .eml （預設 Outlook 網頁格式）格式的附加郵件。
+   > * 您可以在新郵件中附加多封郵件。 請確定所有郵件都是相同類型：網路釣魚詐騙郵件或垃圾郵件。 <br/><br/>* 將新郵件的本文保留空白。 <br/><br/>* 使用 .msg （預設 Outlook 格式）或 .eml （預設 Outlook 網頁格式）格式的附加郵件。
 
 4. 按一下 **[傳送]**。
 
 ## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>提交已標記為垃圾郵件的郵件，但應該允許透過
 
 如果郵件被錯誤地識別為垃圾郵件，您可以將 "誤報" 郵件提交給 Microsoft 垃圾郵件分析小組。 分析員會評估和分析郵件。 我們可以根據分析的結果調整全服務的垃圾郵件內容篩選規則，以便允許郵件通行。
-  
-管理員可以查看更多垃圾郵件設定資訊，以套用至整個組織。 請參閱操作[方法：協助確保郵件不會標示為垃圾](prevent-email-from-being-marked-as-spam.md)郵件。 如果您有系統管理員層級的控制，而您想要避免誤報，則此資訊非常有用。
-  
+
+管理員可以查看更多垃圾郵件設定資訊，以套用至整個組織。 請參閱[在 Office 365 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。 如果您有系統管理員層級的控制，而您想要避免誤報，則此資訊非常有用。
+
 您可以透過下列方式提交非垃圾郵件：
 
 - 如果您在設定內容篩選器時使用 [**將郵件移至垃圾郵件資料夾**] 動作（這是預設動作），使用者可以在其 Outlook 或 outlook 網頁版（先前稱為 Outlook web App）的 [垃圾郵件] 資料夾中，放開誤報郵件。
@@ -114,14 +114,3 @@ ms.locfileid: "42856866"
 [Microsoft Exchange 垃圾郵件小組影片](https://youtu.be/-TpX_-GMC7o?hd=1)
 
 垃圾郵件評估是一種持續執行的程式，不論原始語言或字元集為何都會套用。 因為垃圾郵件可能會含糊含糊或甚至缺乏主旨或郵件內文中的文字，所以垃圾郵件小組會依靠其他郵件特性來執行篩選。 這表示，當垃圾郵件小組將提供的郵件標示為垃圾郵件，並且對規則基礎進行必要變更之後，該郵件將來便會遭到封鎖，除非其特性又被修改到足可避開我們的篩選器。 我們會不斷地部署新的垃圾郵件規則。 個別報送之規則的時間範圍視報送的數量和品質而有所不同。 因為新的垃圾郵件規則是針對所有客戶進行全域設定，所以並非個別的垃圾郵件提交會產生新的垃圾郵件規則。
-
-## <a name="for-more-information"></a>相關資訊
-
-[反垃圾郵件和反惡意程式碼防護](anti-spam-and-anti-malware-protection.md)
-  
-[如何協助確保郵件不會標示為垃圾郵件](prevent-email-from-being-marked-as-spam.md)
-  
-[利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件以避免誤判正常](reduce-spam-email.md)
-  
-
-[利用 Office 365 垃圾郵件篩選器封鎖電子郵件垃圾郵件，以避免誤判問題](reduce-spam-email.md)

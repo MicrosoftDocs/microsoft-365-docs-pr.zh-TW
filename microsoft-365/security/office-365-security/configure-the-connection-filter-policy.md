@@ -1,11 +1,11 @@
 ---
-title: 設定連線篩選原則、允許清單、封鎖清單
+title: 設定預設連線篩選原則、IP 允許清單、IP 封鎖清單、啟用或停用安全清單
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 8/27/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,150 +15,179 @@ search.appverid:
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
-description: 若要確定您信任的人所傳送的電子郵件並未遭到封鎖，可以使用連線篩選原則，對於您信任的 IP 位址建立允許清單 (也稱為安全寄件者清單)。 您也可以建立封鎖寄件者清單。
-ms.openlocfilehash: db0d7acc6189f29b247c1dc4004311d2843d139b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 若要確保從您信任的人員寄送的電子郵件未遭到封鎖，您可以使用連線篩選原則來建立您信任的 IP 位址的允許清單。 您也可以建立封鎖的寄件者的 IP 封鎖清單。
+ms.openlocfilehash: bc0f99102daa422cefe5a7c9cb3e0e5476237f63
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086282"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893995"
 ---
-# <a name="configure-the-connection-filter-policy"></a>設定連線篩選原則
+# <a name="configure-connection-filtering-in-office-365"></a>在 Office 365 中設定連線篩選
 
-大多數的人都有信任的朋友和企業夥伴。 發現這些人寄送的電子郵件出現在垃圾郵件資料夾或甚至遭到垃圾郵件篩選器整個封鎖，會令人感覺不便。 如果您想要確定您信任的人所傳送的電子郵件並未遭到封鎖，可以使用連線篩選原則，對於您信任的 IP 位址建立允許清單 (也稱為安全寄件者清單)。 您也可以建立不想收到電子郵件的封鎖寄件者清單，其中列出一般來自已知濫發垃圾郵件者的 IP 位址。
+如果您是 Office 365 客戶的信箱位於 Exchange Online 或獨立 Exchange Online Protection （EOP）客戶但沒有 Exchange Online 信箱，您可以在 EOP （特別是預設連線篩選原則）中使用連線篩選來識別正確或不良來源電子郵件伺服器的 IP 位址。 預設連線篩選原則的主要元件包括：
 
-- 當考慮[允許清單](create-safe-sender-lists-in-office-365.md)** 時，請牢記連線篩選原則本身與篩選「允許的信任帳戶」** 有關。 這項功能可讓您更準確地篩選較不信任或不信任的郵件程式，並同時保留您所需的資訊。 連線篩選原則允許清單是關於從更大的帳戶和 IP 集區，篩選到少數信任的 IP，並確保您信任的郵件程式能更輕鬆地存取。
+- **IP 允許清單**：針對來自您透過 ip 位址或 ip 位址範圍所指定之來源電子郵件伺服器的所有傳入郵件，略過垃圾郵件篩選。 針對來自這些來源之郵件的垃圾郵件篩選可能仍會發生的情況，請參閱本主題稍後的[篩選來自 IP 允許清單來源的郵件](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered)。 如需 IP 允許清單應如何符合整體安全寄件者策略的詳細資訊，請參閱[在 Office 365 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。
 
-- 可將建立封鎖清單的連線篩選原則視為在篩選器中捕捉較少或不信任的帳戶。
+- **IP 封鎖清單**：從您透過 ip 位址或 ip 位址範圍所指定之來源電子郵件伺服器封鎖所有傳入的郵件。 內送郵件會遭到拒絕，不會標示為垃圾郵件，也不會發生其他篩選。如需 IP 封鎖清單應如何符合整體封鎖的寄件者策略的詳細資訊，請參閱[在 Office 365 中建立封鎖寄件者清單](create-block-sender-lists-in-office-365.md)。
 
- 如需適用於整個組織的垃圾郵件設定，請參閱[如何在 Office 365 中防止好的電子郵件被標示為垃圾郵件](prevent-email-from-being-marked-as-spam.md)或[如何減少 Office 365 中的垃圾郵件](reduce-spam-email.md)。 如果您有系統管理員層級的控制權，且您想要避免誤判或漏報，這些內容很有幫助。
+- **安全清單**：*安全清單*是 Microsoft datacenter 中的動態允許清單，不需要客戶設定。 Microsoft 會識別這些信任的電子郵件來源，以訂閱各種協力廠商清單。 啟用或停用 [安全清單] 的使用。您無法在 [安全清單] 上設定來源電子郵件伺服器。 在 [安全清單] 上的電子郵件伺服器上，會略過傳入郵件的垃圾郵件篩選。
 
-> [!TIP]
-> 您可能想要暫停並了解如何建立[允許 (或安全寄件者) 清單](create-safe-sender-lists-in-office-365.md)和[封鎖清單](create-block-sender-lists-in-office-365.md)。
+本主題說明如何設定 Office 365 Security & 合規性中心或 PowerShell （Office 365 客戶的 Exchange Online PowerShell 中的預設連線篩選原則）。Exchange Online Protection PowerShell 適用于獨立 EOP 客戶）。 如需 EOP 如何使用連線篩選的詳細資訊，請參閱您組織的整體反垃圾郵件設定的一部分，請參閱[在 Office 365 中的反垃圾郵件保護](anti-spam-protection.md)。
 
-下列影片顯示連線篩選原則的組態步驟：
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
+> [!NOTE]
+> IP 允許清單、安全清單和 IP 封鎖清單是整體策略的一部分，可允許或封鎖您組織中的電子郵件。 如需詳細資訊，請參閱[在 office 365 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)及[在 Office 365 中建立封鎖的寄件者清單](create-block-sender-lists-in-office-365.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 預估完成時間：15 分鐘
+- 您可以在<https://protection.office.com/>中開啟安全性 & 規範中心。 若要直接移至 [**反垃圾郵件設定**] 頁面<https://protection.office.com/antispam>，請使用。
 
-- 您必須已獲指派權限，才能執行此程序或這些程序。 若要查看您需要的權限，請參閱 [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions) (部分機器翻譯) 主題中的「反垃圾郵件」項目。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連線到獨立的 Exchange Online Protection PowerShell，請參閱[connect To Exchange Online protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
-- 若要取得寄件者的 IP 位址以允許或封鎖其郵件，您可以檢查郵件的 Internet 標頭。 如＜[反垃圾郵件訊息標頭](anti-spam-message-headers.md)＞所述尋找 CIP 標頭。 如需如何在各種電子郵件用戶端中檢視郵件標頭的詳細資訊，請參閱[在 Outlook 中查看網際網路郵件標題](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)。
+- 您必須已獲指派權限，才能執行這些程序。 若要修改預設連線篩選原則，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要對預設連線篩選原則進行唯讀存取，您必須是**Security Reader**角色群組的成員。 如需安全性 & 規範中心中角色群組的詳細資訊，請參閱[Office 365 安全性 & 規範中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
-- 從 IP 封鎖清單上的 IP 位址傳送的電子郵件訊息會遭到拒絕，不會標示為垃圾郵件，也不會發生額外的篩選。
+- 若要尋找您要允許或封鎖之電子郵件伺服器（寄件者）的來源 IP 位址，您可以檢查郵件頭中的 [連接 IP （**CIP**）標頭] 欄位。 若要在不同的電子郵件客戶程式中查看郵件頭，請參閱在[Outlook 中查看網際網路郵件頭](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)。
 
-- 下列連線篩選程序也可以透過遠端 PowerShell 執行。 使用 [Get-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedconnectionfilterpolicy) Cmdlet 來檢閱您的設定，以及使用 [Set-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedconnectionfilterpolicy) 來編輯您的連線篩選原則設定。 若要了解如何使用 Windows PowerShell 來連接至 Exchange Online Protection，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell) (部分機器翻譯)。 若要了解如何使用 Windows PowerShell 連線到 Exchange Online，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+- IP 允許清單優先于 IP 封鎖清單（這兩個清單上的位址未遭到封鎖）。
 
-## <a name="use-the-eac-to-edit-the-default-connection-filter-policy"></a>使用 EAC 編輯預設連線篩選原則
+- IP 允許清單和 IP 封鎖清單都支援最多1273個專案，其中一個專案是單一 IP 位址、IP 位址範圍或無類別網域間路由選擇（CIDR） IP。
 
-您可以在 Exchange 系統管理中心 (EAC) 編輯連線篩選原則，以建立 IP 允許清單或 IP 封鎖清單。連線篩選原則設定僅適用於輸入郵件。
+## <a name="use-the-security--compliance-center-to-modify-the-default-connection-filter-policy"></a>使用安全性 & 規範中心來修改預設連線篩選原則
 
-1. 在 Exchange 系統管理中心 (EAC)，瀏覽至 **[保護]** \> **[連線篩選器]**，然後連按兩下預設原則。
+1. 在安全性 & 合規性中心，然後移至**威脅管理** \> **原則** \> **Anti-Spam**。
 
-2. Click the **Connection filtering** menu item and then create the lists you want: an IP Allow list, an IP Block list, or both.
+2. 在 [**反垃圾郵件設定**] 頁面上， ![按一下 [展開圖示](../../media/scc-expand-icon.png)]，然後按一下 [**編輯原則**]，展開 [連線**篩選原則**]。
 
-   若要建立這些清單，請按一下![加入圖示](../../media/ITPro-EAC-AddIcon.gif)。在後續對話方塊中，指定 IP 位址或位址範圍，然後按一下 **[確定]**。重複此程序來新增其他位址。(新增 IP 位址後，您也可以編輯或移除 IP 位址。)
+3. 在出現的**預設**浮出視窗中，設定下列任一設定：
 
-   以 nnn.nnn.nnn.nnn 格式 (其中 nnn 是從 0 到 255 的數字) 來指定 IPV4 IP 位址。 您也可以用 nnn.nnn.nnn.nnn/rr 格式來指定無類別網域間路由選擇 (CIDR) 範圍，其中 rr 是 24 到 32 的數字。 若要指定 24 到 32 以外的範圍，請參閱下一節：[設定 IP 允許清單時的其他考量](#additional-considerations-when-configuring-ip-allow-lists)。
+   - **描述**：輸入選用的描述文字。
 
-   > [!NOTE]
-   > 如果將 IP 位址新增到兩個清單中，則允許從該 IP 位址傳送的電子郵件。<br/><br/> 您最多可以指定 1273 個項目，一個項目就是單一 IP 位址，或 IP 位址從 /24 至 /32 的 CIDR 範圍。 <br/><br/> 如果您正在傳送 TLS 加密訊息，則 IPv6 位址與位址範圍不受支援。
+   - **IP 允許清單**：按一下 [**編輯**]。 在出現的 [ **IP 允許] 清單**快顯視窗中，使用下列語法，在 [**位址] 或 [位址範圍**] 方塊中輸入 IPV4 位址：
 
-3. 或者，選取 **[啟用安全清單]** 核取方塊避免某些已知寄件者的電子郵件遺失。 怎麼做？ Microsoft 會訂閱協力廠商來源的信任寄件者。 使用這份安全清單表示不會將信任的寄件者錯誤標記為垃圾郵件。 我們建議您選取這個選項，因為它應該會減少您收到的誤判 (好的郵件被分類為垃圾郵件)。
+     - 單一 IP：例如，192.168.1.1。
 
-4. 按一下 **[儲存]**。預設原則設定的摘要隨即出現在右側窗格中。
+     - IP 範圍：例如，192.168.0.1-192.168.0.254。
 
-## <a name="additional-considerations-when-configuring-ip-allow-lists"></a>設定 IP 允許清單時的其他考量
+     - CIDR IP：例如 192.168.0.1/25。 有效的網路遮罩值為/24 到/32。 若要略過 CIDR IP 遮罩值的垃圾郵件篩選，/1 到/23，請參閱本主題稍後的 [[略過垃圾郵件篩選] （適用于可用範圍區段之外的 CIDR ip](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) ）。
 
-以下是設定 IP 允許清單時需要考慮或應該注意的其他事項。
+     若要新增 IP 位址或位址範圍，請**Add** ![按一下 [新增](../../media/ITPro-EAC-AddIcon.png)加入圖示]。 若要移除專案，請選取 [**允許的 IP 位址**] 中的專案，](../../media/scc-remove-icon.png)然後按一下 [**移除** ![]。 完成後，請按一下 **[儲存]**。
 
-### <a name="specifying-a-cidr-range-that-falls-outside-of-the-recommended-range"></a>指定超出建議範圍的 CIDR 範圍
+   - **IP 封鎖清單**：按一下 [**編輯**]。 在出現的 [ **Ip 封鎖**] 快顯視窗中，在 [ **ip 允許清單**] 設定中先前所述的 [**位址] 或 [位址範圍**] 方塊中輸入單一 IP、ip 範圍或 CIDR IP。
 
-若要指定 /1 到 /23 的 CIDR IP 位址範圍，您必須建立在該 IP 位置範圍上運作的傳輸規則，並使該規則將垃圾郵件信賴等級 (SCL) 設為 [略過垃圾郵件篩選]**** (表示將接收自此 IP 位址範圍的所有郵件都設為「不是垃圾郵件」，且服務不會執行其他篩選)。 However, if any of these IP addresses appear on any of Microsoft's proprietary block lists or on any of our third-party block lists, these messages will still be blocked. 因此，強烈建議您使用 /24 到 /32 IP 位址範圍。
+     若要新增 IP 位址或位址範圍，請**Add** ![按一下 [新增](../../media/ITPro-EAC-AddIcon.png)加入圖示]。 若要移除專案，請選取 [**封鎖的 IP 位址**] 中的專案，](../../media/scc-remove-icon.png)然後按一下 [**移除** ![]。 完成後，請按一下 **[儲存]**。
 
-若要建立此郵件流程規則，請執行下列步驟。
+   - **開啟安全清單**：啟用或停用安全清單的使用，以找出將會略過垃圾郵件篩選的已知的良好寄件者。
 
-1. 在 EAC 中，瀏覽至 **[郵件流程]** \> **[規則]**。
+4. 完成後，請按一下 **[儲存]**。
 
-2. 按一下 ![加入圖示](../../media/ITPro-EAC-AddIcon.gif)，然後選取 **[建立新的規則]**。
+## <a name="use-the-security--compliance-center-to-view-the-default-connection-filter-policy"></a>使用安全性 & 規範中心來查看預設連線篩選原則
 
-3. 命名規則，然後按一下 **[更多選項]**。
+1. 在安全性 & 合規性中心，然後移至**威脅管理** \> **原則** \> **Anti-Spam**。
 
-4. 在 **[套用此規則情況]** 下，選取 **[寄件者]**，然後選擇 **[IP 位址在任何這些範圍中或完全符合]**。
+2. 在 [**反垃圾郵件設定**] 頁面上，按一下名為**Connection filter policy**之預設原則旁的下拉式清單。
 
-5. 在 [指定 IP 位址]**** 方塊中，指定 IP 位址範圍，按一下 [新增]**** ![新增圖示](../../media/ITPro-EAC-AddIcon.gif)，然後按一下 [確定]****。
+3. 原則設定會顯示在開啟的下拉式功能表中。
 
-6. 在 **[執行下列動作]** 方塊下，選擇 **[修改訊息屬性]**，再選擇 **[設定垃圾郵件信賴等級 (SCL)]** 來設定動作。在 **[指定 SCL]** 方塊中，選取 **[略過垃圾郵件篩選]**，然後按一下 **[確定]**。
+## <a name="use-exchange-online-powershell-or-standalone-exchange-online-protection-powershell-to-modify-the-default-connection-filter-policy"></a>使用 Exchange Online PowerShell 或獨立 Exchange Online Protection PowerShell 修改預設連線篩選原則
 
-7. 您也可以視需要選取稽核規則、測試規則、在特定期間啟動規則等等選項。 施行規則之前，建議先測試規則一段時間。 [Exchange Server 中的郵件流程規則](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) (部分機器翻譯) 包含這些選項的詳細資訊。
+請使用下列語法：
 
-8. 按一下 [儲存]**** 儲存規則。 規則會顯示在您的規則清單中。
+```powershell
+Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional Comment">] [-EnableSafeList <$true | $false>] [-IPAllowList <IPAddressOrRange1,IPAddressOrRange2...>] [-IPBlockList <IPAddressOrRange1,IPAddressOrRange2...>]
+```
 
-當您建立並強制執行規則之後，服務會針對您指定的 IP 位址範圍略過垃圾郵件篩選。
+**附註**：
 
-### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>針對特定網域設定 IP 允許清單例外狀況
+- 有效的 IP 位址或位址範圍值包括：
 
-一般而言，建議將您認為安全的所有網域的 IP 位址 (或 IP 位址範圍) 新增至 IP 允許清單。 不過，如果不要將 IP 允許清單項目套用至所有網域，您可以建立排除特定網域的郵件流程規則 (也稱為傳輸規則)。
+  - 單一 IP：例如，192.168.1.1。
 
-例如，假設您有三個網域：ContosoA.com、ContosoB.com 和 ContosoC.com，而您想要新增 IP 位址 (為了簡單起見，我們用 1.2.3.4)，並僅針對網域 ContosoB.com 來略過篩選。 您可以建立 1.2.3.4 的 IP 允許清單，以針對所有網域將垃圾郵件信賴等級 (SCL) 設定為 -1 (表示歸類為非垃圾郵件)。 接著，您可以建立一個郵件流程規則，以針對 ContosoB.com 以外的所有網域將 SCL 設定為 0。 這會導致針對與此 IP 位址相關聯的所有網域 (在規則中列為例外的 ContosoB.com 除外) 來重新掃描郵件。 ContosoB.com 的 SCL 仍為 -1 (表示略過篩選)，然而 ContosoA.com 和 ContosoC.com 的 SCL 為 0 (表示將由內容篩選器進行重複掃描)。
+  - IP 範圍：例如，192.168.0.1-192.168.0.254。
 
-若要執行此動作，請執行下列步驟：
+  - CIDR IP：例如 192.168.0.1/25。 有效的網路遮罩值為/24 到/32。
 
-1. 在 EAC 中，瀏覽至 **[郵件流程]** \> **[規則]**。
+- 若要使用您指定的值*覆寫*任何現有的專案，請使用`IPAddressOrRange1,IPAddressOrRange2,...,IPAddressOrRangeN`下列語法：。
 
-2. 按一下 ![加入圖示](../../media/ITPro-EAC-AddIcon.gif)，然後選取 **[建立新的規則]**。
+- 若要*新增或移除*IP 位址或位址範圍，而不影響其他現有的專案，請`@{Add="IPAddressOrRange1","IPAddressOrRange2",...,"IPAddressOrRangeN";Remove="IPAddressOrRange3","IPAddressOrRange4",...,"IPAddressOrRangeN"}`使用下列語法：。
 
-3. 命名規則，然後按一下 **[更多選項]**。
+- 若要清空 IP 允許清單或 IP 封鎖清單，請使用值`$null`。
 
-4. 在 **[套用此規則情況]** 下，選取 **[寄件者]**，然後選擇 **[IP 位址在任何這些範圍中或完全符合]**。
+這個範例會設定 IP 允許清單和 IP 封鎖清單，其中包含指定的 IP 位址和位址範圍。
 
-5. 在 [指定 IP 位址]**** 方塊中，指定您在 IP 允許清單中輸入的 IP 位址或 IP 位址範圍，按一下 [新增]**** ![新增圖示](../../media/ITPro-EAC-AddIcon.gif)，然後按一下 [確定]****。
+```powershell
+Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList 192.168.1.10,192.168.1.23 -IPBlockList 10.10.10.0/25,172.17.17.0/24
+```
 
-6. 在 [執行下列動作]**** 下，選擇 [修改訊息屬性]****，再選擇 [設定垃圾郵件信賴等級 (SCL)]**** 來設定動作。 在 [指定 SCL]**** 方塊中，選取 [0]****，然後按一下 [確定]****。
+本範例會從 IP 允許清單中新增及移除指定的 IP 位址和位址範圍。
 
-7. 按一下 [新增例外狀況]****，在 [除非]**** 下，選取 [寄件者]****，然後選擇 [網域是]****。
+```powershell
+Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2.10","192.169.3.0/24","192.168.4.1-192.168.4.5";Remove="192.168.1.10"}
+```
 
-8. 在 [指定網域]**** 方塊中，輸入您要略過垃圾郵件篩選的網域，例如 **contosob.com**。 按一下 [新增]**** ![新增圖示](../../media/ITPro-EAC-AddIcon.gif)，將它移至片語清單。 如果要新增其他網域當作例外狀況，請重複此步驟，完成時按一下 **[確定]**。
+如需詳細的語法及參數資訊，請參閱[Set-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedconnectionfilterpolicy)。
 
-9. 您也可以視需要選取稽核規則、測試規則、在特定期間啟動規則等等選項。 施行規則之前，建議先測試規則一段時間。 [Exchange Server 中的郵件流程規則](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) (部分機器翻譯) 包含這些選項的詳細資訊。
+## <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 
-10. 按一下 [儲存]**** 儲存規則。 規則會顯示在您的規則清單中。
+若要確認您是否已成功修改預設連線篩選原則，請執行下列任一步驟：
 
-建立並強制執行規則後，系統就只會針對您輸入的例外網域，對您指定的 IP 位址或 IP 位址範圍略過垃圾郵件篩選。
+- 在 [安全性 & 規範中心] 中，移至 [**威脅管理** \> **原則** \> ] **Anti-Spam** \>按一下 [連線**篩選原則（永不開啟**）] 旁的下拉式清單，然後驗證設定。
 
-### <a name="scenarios-where-allowed-ip-addresses-are-still-filtered"></a>仍然篩選允許 IP 位址的案例
+- 在 Exchange Online PowerShell 或獨立 Exchange Online Protection PowerShell 中，執行下列命令並確認設定：
 
-在下列案例中，來自您在連線篩選原則中所設定允許 IP 位址的郵件，仍然受限於垃圾郵件篩選：
+  ```powershell
+  Get-HostedConnectionFilterPolicy -Identity Default
+  ```
 
-- 連線篩選原則中的來源 IP 位址也是在內部部署、以 IP 為主的輸入連接器、「任何」** 租用戶 (讓我們將其稱為租用戶 A) 中設定，**而且**租用戶 A 和第一次在 Office 365 中遇到郵件的 Exchange Online Protection 伺服器都是在 Microsoft 資料中心的相同 Active Directory 樹系。 在這種情況下，**IPV:CAL** 會新增至郵件的[反垃圾郵件標頭](anti-spam-message-headers.md) (表示郵件略過垃圾郵件篩選)，但是郵件仍受限於垃圾郵件篩選。
+- 從 IP 允許清單中的專案傳送測試郵件。
 
-- 您的租用戶 (您已設定連線篩選原則) 和 Exchange Online Protection 伺服器 (在 Office 365 中第一次遇到郵件)，出現在 Microsoft 資料中心的不同 Active Directory 樹系中。 在這個案例中，**IPV:CAL** 不會新增至郵件標頭，因此郵件仍受限於垃圾郵件篩選。
+## <a name="additional-considerations-for-the-ip-allow-list"></a>IP 允許清單的其他考慮
 
-如果您遇到下列其中一種情況，您可以在 EAC 中建立郵件流程規則，並 (至少) 使用下列設定，以確保來自 IP 位址的郵件略過垃圾郵件篩選：
+下列各節會指出當您設定 IP 允許清單時，需要瞭解的其他專案。
+
+### <a name="skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range"></a>略過可用範圍外的 CIDR IP 的垃圾郵件篩選
+
+如本主題稍早所述，您只能在 IP 允許清單中使用具有 network mask/24 to/32 的 CIDR IP。 若要在/1 到/23 範圍內略過來自來源電子郵件伺服器的郵件篩選，您必須使用 Exchange 郵件流程規則（也稱為傳輸規則）。 不過，如果可能的話，建議您不要這麼做，因為在任何 Microsoft 的專屬或協力廠商封鎖清單中，如果有/1 to/23 CIDR IP 範圍的 IP 位址會出現，則郵件會遭到封鎖。
+
+現在，您完全知道潛在的問題，您可以使用下列設定建立郵件流程規則（至少），以確保來自這些 IP 位址的郵件會略過垃圾郵件篩選：
+
+- 規則條件：**如果** \> **寄件者** \>的**IP 位址在任何這些範圍中，或完全符合** \> ，請套用此規則。請輸入含 a/1 to/23 網路遮罩的 CIDR IP。
+
+- 規則動作：**修改郵件屬性** \> **設定垃圾郵件信賴等級 (SCL)** \> **略過垃圾郵件篩選**。
+
+您可以審核規則、測試規則、在特定時間期間啟動規則，以及進行其他選擇。 施行規則之前，建議先測試規則一段時間。 如需詳細資訊，請參閱[在 Exchange Online 中管理郵件流程規則](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。
+
+### <a name="skip-spam-filtering-on-selective-email-domains-from-the-same-source"></a>略過來自相同來源之選擇性電子郵件網域的垃圾郵件篩選
+
+一般來說，將 IP 位址或位址範圍新增至 IP 允許清單表示您信任來自該電子郵件來源的所有傳入郵件。 不過，如果該來源從多個網域傳送電子郵件，而您想要略過某些網域的垃圾郵件篩選功能，則該怎麼辦？ 您無法只使用 IP 允許清單來執行這項作業，但是您可以搭配郵件流程規則使用 [IP 允許] 清單。
+
+例如，來源電子郵件伺服器192.168.1.25 會從網域 contoso.com、fabrikam.com 和 tailspintoys.com 傳送電子郵件，但您只想要對來自 fabrikam.com 中寄件者的郵件略過垃圾郵件篩選。 若要這麼做，請使用下列步驟：
+
+1. 將192.168.1.25 新增至 IP 允許清單。
+
+2. 設定具有下列設定的郵件流程規則（至少）：
+
+   - 規則條件：**如果** \> **寄件者** \>的**IP 位址在任何這些範圍中，或完全符合** \> 192.168.1.25 （您在上一個步驟中新增至 ip 允許清單的相同 IP 位址或位址範圍），請套用此規則。
+
+   - 規則動作：**修改郵件屬性** \> **設定垃圾郵件信賴等級（SCL）** \> **0**。
+
+   - 規則例外：**寄件者** \> **網域為** \> fabrikam.com （只是您想要略過垃圾郵件篩選的網域）。
+
+### <a name="scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered"></a>仍然篩選來自 IP 允許清單來源之郵件的案例
+
+來自 IP 允許清單中的電子郵件伺服器的郵件，在下列情況下仍會受到垃圾郵件篩選：
+
+- 您的 IP 允許清單中的 IP 位址也是在 Office 365 （讓我們呼叫此租使用者 A）的*任何*租使用者中，在內部部署、以 IP 為基礎的輸入連接器中設定，**而**在 office 365 中首次遇到郵件的承租人 a 和 EOP Server 都會發生在 Microsoft 資料中心*的相同*Active Directory 樹系中。 在此案例中， **IPV： CAL** *會*新增至郵件的[反垃圾郵件郵件頭](anti-spam-message-headers.md)（指出郵件略過垃圾郵件篩選），但郵件仍受垃圾郵件篩選。
+
+- 您的租使用者包含 IP 允許清單，以及第一次在 Office 365 中遇到郵件的 EOP 伺服器，都會發生在 Microsoft 資料中心的*不同*Active Directory 樹系中。 在此案例中， **IPV： CAL** *不*會新增至郵件頭，所以郵件仍會受到垃圾郵件篩選。
+
+如果您遇到這兩種情況，您可以使用下列設定建立郵件流程規則（至少），以確保來自有問題之 IP 位址的郵件會略過垃圾郵件篩選：
 
 - 規則條件：**若為以下情況，套用這個規則** \> **寄件者** \> **IP 位址在任何這些範圍中或完全符合** \> (您的 IP 位址)。
 
 - 規則動作：**修改郵件屬性** \> **設定垃圾郵件信賴等級 (SCL)** \> **略過垃圾郵件篩選**。
-
-基本上是與上一個[針對特定網域設定 IP 允許清單例外狀況](#scoping-an-ip-allow-list-exception-for-a-specific-domain)區段的規則建立程序相同。
 
 ## <a name="new-to-office-365"></a>初次使用 Office 365 嗎？
 
 ||
 |:-----|
 |![LinkedIn Learning 的短圖示](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **初次使用 Office 365？** 探索 LinkedIn Learning 提供的 **Office 365 admins and IT pros** 免費影片課程。|
-
-## <a name="for-more-information"></a>如需詳細資訊
-
-[Exchange Online 中的安全寄件者和封鎖寄件者清單](safe-sender-and-blocked-sender-lists-faq.md)
-
-[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)
-
-[設定輸出垃圾郵件原則](configure-the-outbound-spam-policy.md)
-
-[如何在 Office 365 中防止好的電子郵件被標示為垃圾郵件](prevent-email-from-being-marked-as-spam.md)
-
-[如何減少 Office 365 中的垃圾郵件](reduce-spam-email.md)

@@ -19,12 +19,12 @@ ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
 description: 即使您打算將部分或所有信箱裝載在內部部署，您仍然可以使用 Exchange Online Protection (EOP) 保護信箱。 若要設定連接器，您的帳戶必須是 Office 365 全域系統管理員或 Exchange 公司管理員 (組織管理角色群組)。 如需 Office 365 權限與 Exchange 權限之關係的相關資訊，請參閱由 21Vianet 營運的 Office 365 中指派系統管理員角色。 如果您的 Exchange 信箱均為內部部署，請遵循以下步驟以設定 EOP 服務。
-ms.openlocfilehash: 714b5267bf89370885697701fc2b857d71224aa8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8ff2e28100a748e34b8f079292d937cc9b3857e8
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598801"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895284"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>使用 Exchange Online Protection 保護內部部署的信箱
 
@@ -61,9 +61,9 @@ ms.locfileid: "41598801"
 > [!TIP]
 > 將 SMTP 伺服器的連線時間設定設為超過 60 秒。此設定適用於大部分情況，例如在傳送具有大型附件的郵件時可稍許延遲。
 
-## <a name="step-5-use-the-shell-to-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>步驟 5：使用命令介面確保垃圾郵件路由傳送至每個使用者的垃圾電子郵件資料夾
+## <a name="step-5-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>步驟5：確定垃圾郵件路由傳送至每個使用者的 [垃圾郵件] 資料夾
 
-為了確保垃圾電子郵件正確地路由傳送至每個使用者的 [垃圾郵件] 資料夾，您必須執行幾個設定步驟。 相關步驟請參閱＜[確保垃圾郵件路由傳送至每個使用者的垃圾電子郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)＞ (英文)。 如果不要將郵件移至每個使用者的 [垃圾郵件] 資料夾，您可以在 Exchange 系統管理中心編輯內容篩選原則，以選擇其他動作。 如需詳細資訊，請參閱[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)。
+為了確保垃圾電子郵件正確地路由傳送至每個使用者的 [垃圾郵件] 資料夾，您必須執行幾個設定步驟。 [設定獨立 EOP 中的步驟，將垃圾郵件傳遞至混合式環境中的 [垃圾郵件] 資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 如果不要將郵件移至每個使用者的 [垃圾郵件] 資料夾，您可以在 Exchange 系統管理中心編輯內容篩選原則，以選擇其他動作。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>步驟 6：使用 Microsoft 365 系統管理中心將您的 MX 記錄指向 EOP
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 預設會在 Office 365 （也稱為「預設信箱審核」或「信箱審核」預設）中開啟信箱審核記錄。 這表示信箱擁有者、代理人和系統管理員所執行的某些動作會自動記錄在信箱審核記錄檔中，您可以在此搜尋在信箱上執行的活動。
-ms.openlocfilehash: 6a1c435ca3be16ef2f4926cce56afe180c576f15
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2b69d63e63e049566c9827f08d2ead592b918684
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634961"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894918"
 ---
 # <a name="manage-mailbox-auditing"></a>管理信箱稽核
 
@@ -107,7 +107,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**AddFolderPermissions**|**附注**：雖然此值接受為信箱動作，但它已包含在**UpdateFolderPermissions**動作中，而且不會個別進行審核。 換句話說，請勿使用此值。||||
 |**ApplyRecord**|專案標示為記錄。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Copy**|郵件已複製到另一個資料夾。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
-|**Create**|在信箱的 [行事曆]、[連絡人]、[記事] 或 [任務] 資料夾中建立專案（例如，建立新的會議要求）。 請注意，不會審核建立、傳送或接收郵件。 此外，建立信箱資料夾的動作也不會受到稽核。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Create**|在信箱的 [行事曆]、[連絡人]、[記事] 或 [任務] 資料夾中建立專案（例如，建立新的會議要求）。 建立、傳送或接收郵件的動作並不會受到稽核。 此外，建立信箱資料夾的動作也不會受到稽核。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**預設值**||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**FolderBind**|已存取信箱資料夾。 當系統管理員或代理人開啟信箱時，也會記錄此動作。 <br/><br/> **附注**：合併委派所執行之資料夾系結動作的審計記錄。 在24小時內，會為個別資料夾存取產生一個審計記錄。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|已從 [可復原的專案] 資料夾中清除郵件。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
@@ -141,7 +141,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 |**信箱動作**|**描述**|**Admin**|**委託**|**Owner**|
 |:---------|:---------|:---------:|:---------:|:---------:|
-|**Create**|建立行事曆專案。 請注意，不會審核建立、傳送或接收郵件。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**Create**|建立行事曆專案。 建立、傳送或接收郵件的動作並不會受到稽核。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
 |**HardDelete**|已從 [可復原的專案] 資料夾中清除郵件。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MoveToDeletedItems**|郵件已遭刪除並移至 [刪除的郵件] 資料夾。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**SendAs**|已使用 [傳送為] 權限傳送郵件。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
@@ -167,7 +167,7 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 
 此值`Admin, Delegate, Owner`表示：
 
-- 所有三種登入類型的預設信箱動作都會進行審核。 請注意，這是您可以在 Office 365 群組信箱上看到的唯一值。
+- 所有三種登入類型的預設信箱動作都會進行審核。 這是您可以在 Office 365 群組信箱上看到的唯一值。
 
 - *管理員尚未*變更使用者信箱或共用信箱上任何登入類型的已審核信箱動作。 附注：這是預設會在您的組織中開啟信箱審核之後的預設狀態。
 
@@ -343,8 +343,11 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
   若要取得沒有 E5 授權之使用者的信箱審計記錄專案，您可以：
 
-  - 手動啟用個別信箱的信箱審核**後**，請在安全性 & 合規性中心或透過 Office 365 管理活動 API 中使用審核記錄搜尋。
-
+  - 手動啟用個別信箱的信箱審核（執行命令`Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`）。 執行這項作業之後，您可以在安全性 & 合規性中心或透過 Office 365 管理活動 API 中使用審核記錄搜尋。
+  
+    > [!NOTE]
+    > 如果信箱審核似乎已在信箱上啟用，但是您的搜尋未傳回任何結果，請將_AuditEnabled_參數的值變更為`$false`後再移回來`$true`。
+  
   - 在 Exchange Online 中使用下列 Cmdlet PowerShell:
 
     - [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog)搜尋特定使用者的信箱審核記錄。
@@ -361,7 +364,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
   如果您增加保留天數，您必須在 Exchange Online 中使用[Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog)指令程式 PowerShell 來搜尋使用者的信箱審核記錄中超過90天的記錄。
 
-- 如果您已在信箱審核之前將信箱的*AuditLogAgeLimit*屬性變更為已開啟組織的預設值，則信箱的現有審核記錄保留時間限制不會變更。 換句話說，依預設，信箱審核不會影響信箱審核記錄的目前保留限制。
+- 如果您已在信箱審核之前將信箱的*AuditLogAgeLimit*屬性變更為已開啟組織的預設值，則信箱的現有審核記錄保留時間限制不會變更。 換句話說，依預設，信箱審計不會影響信箱審計記錄的目前保留限制。
 
 - 若要變更 Office 365 群組信箱上的*AuditLogAgeLimit*值，您必須在**Set-Mailbox**命令`-GroupMailbox`中包含該參數。
 
@@ -387,3 +390,5 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
     - 您無法直接存取 [可復原的專案] 資料夾中的審計記錄記錄;相反地，您可以使用**Search-MailboxAuditLog** Cmdlet 或搜尋 Office 365 的審計記錄檔，以尋找及查看信箱審計記錄。
 
 - 如果信箱處於暫止狀態或指派給規範中心內的保留原則，則在信箱的*AuditLogAgeLimit*屬性（預設值為90天）定義的期間內仍會保留審核記錄記錄。 若要保留長期保留信箱的審計記錄檔，您需要增加信箱的*AuditLogAgeLimit*值。
+
+- 在多地理位置環境中，不支援跨地理位置信箱審核。 例如，如果使用者被指派訪問不同地理位置中共用信箱的許可權，該使用者執行的信箱審核記錄不會登入共用信箱的信箱審核記錄。

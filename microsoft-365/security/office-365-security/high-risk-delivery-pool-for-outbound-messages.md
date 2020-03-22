@@ -2,10 +2,10 @@
 title: 輸出郵件的高風險傳遞集區
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 8/24/2016
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,42 +15,41 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: 當客戶的電子郵件系統已經受到惡意程式碼或惡意垃圾郵件攻擊，且它傳送到託管的篩選服務的輸出垃圾郵件時，這可能導致各別列出協力廠商區塊上的 Office 365 資料中心伺服器的 IP 位址列出。
-ms.openlocfilehash: 19987ae74b9c78a796ddb5f13cf8291a5ed269ad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 瞭解高風險傳遞集區如何用來保護 Office 365 資料中心的電子郵件伺服器信譽。
+ms.openlocfilehash: 5d1bd2b14eb17ed74ee1cf1e44967f660f4595b8
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599230"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895356"
 ---
-# <a name="high-risk-delivery-pool-for-outbound-messages"></a>輸出郵件的高風險傳遞集區
+# <a name="high-risk-delivery-pool-for-outbound-messages-in-office-365"></a>Office 365 中輸出郵件的高風險傳遞集區
 
-當客戶的電子郵件系統已經受到惡意程式碼或惡意垃圾郵件攻擊，且它傳送到託管的篩選服務的輸出垃圾郵件時，這可能導致各別列出協力廠商區塊上的 Office 365 資料中心伺服器的 IP 位址列出。 執行動作的目的伺服器不使用託管的篩選服務，但不要使用這些封鎖清單，拒絕從任何已新增至這些清單託管篩選 IP 位址傳送的所有電子郵件。 為避免這種情況，超出垃圾郵件閾值的所有外寄郵件傳送到高風險傳遞集區。 此次要的外寄電子郵件集區只能用來傳送郵件，可能的低品質。 這有助於防止其餘的網路傳送更有可能導致傳送的 IP 位址遭到封鎖的郵件。
-  
-使用專用的高風險傳遞集區可協助確保標準輸出集區僅傳送已知的高品質的郵件。 使用此次要 IP 集區可協助降低新增至封鎖清單的一般的輸出 IP 集區的機率。 要放在封鎖清單上的高風險傳遞集區的可能性會維持風險。 原先的設計就是如此。
-  
-在傳送網域出具有任何地址記錄 （A 記錄），可讓您網域的 IP 位址和任何 MX 記錄，可將郵件導向至 DNS 中應收到特別網域之郵件伺服器，郵件會一律透過路由傳送無論其垃圾郵件處理高風險傳遞集區。
-  
-## <a name="understanding-delivery-status-notification-dsn-messages"></a>了解傳遞狀態通知 (DSN) 郵件
+Office 365 資料中心的電子郵件伺服器可能會暫時 guilty 寄送垃圾郵件。 例如，在內部部署電子郵件組織中的惡意程式碼或惡意垃圾郵件攻擊，會透過 Office 365 傳送輸出郵件，或在 Office 365 帳戶中傳送輸出郵件。 這些案例會產生出現在協力廠商封鎖清單上受影響的 Office 365 資料中心伺服器的 IP 位址。 使用這些封鎖清單的目的地電子郵件組織會拒絕來自這些郵件來源的電子郵件。
 
-讓輸出的高風險傳遞集區可管理所有 「 被退回 」 或 「 失敗 」 (DSN) 郵件的傳遞。
-  
-DSN 郵件激增的可能原因包括下列：
-  
-- 詐騙活動影響到使用服務的其中一位客戶
-    
-- 目錄搜集攻擊
-    
-- 垃圾郵件攻擊
-    
-- 惡意 SMTP 伺服器
-    
-所有這些問題都可能導致服務處理的 DSN 郵件數量突然增多。 許多時候，這些 DSN 郵件看起來會對其他電子郵件伺服器和服務的垃圾郵件。
-  
-## <a name="for-more-information"></a>相關資訊
+若要防止這種情況，所有來自決定是垃圾郵件或超過[服務](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)傳送限制之 Office 365 datacenter server 的所有輸出郵件，[都是透過](configure-the-outbound-spam-policy.md)_高風險傳遞集_區傳送。
 
-[設定輸出垃圾郵件原則](configure-the-outbound-spam-policy.md)
-  
-[反垃圾郵件保護常見問題集](anti-spam-protection-faq.md)
-  
+「高風險傳遞集區」是僅用於傳送「低品質」郵件（例如，垃圾郵件和[退信攻擊](backscatter-messages-and-eop.md)）的外寄電子郵件的次要 IP 位址集區。 使用 [高風險傳遞集區]，可防止輸出電子郵件的一般 IP 位址集區傳送垃圾郵件。 外寄電子郵件的一般 IP 位址集區維持「高品質」郵件的信譽，這會降低這些 IP 位址會出現在 IP 封鎖清單上的可能性。
 
+在此情況下，高風險傳遞集區中的 IP 位址會保留在 IP 封鎖清單上，但這是由設計所組成。 不會保證傳遞給預定的收件者，因為許多電子郵件組織不會接受高風險傳遞集區中的郵件。
+
+如需詳細資訊，請參閱[控制 Office 365 中的外寄垃圾郵件](outbound-spam-controls.md)。
+
+> [!NOTE]
+> 來源電子郵件網域沒有記錄，而且公用 DNS 中未定義任何 MX 記錄的郵件，無論其垃圾郵件或傳送限制，都永遠都透過高風險傳遞集區路由傳送。
+
+## <a name="bounce-messages"></a>退回郵件
+
+輸出的高風險傳遞集區可管理所有未傳遞回報的傳遞（也稱為 NDRs、退回郵件、傳遞狀態通知或 DSNs）。
+
+NDRs 中的電湧可能原因包括：
+
+- 會影響使用服務之客戶之一的電子欺騙活動。
+
+- 目錄收集攻擊。
+
+- 垃圾郵件攻擊。
+
+- 欺詐的電子郵件伺服器。
+
+所有這些問題都會造成服務處理的 NDRs 數量突然增加。 許多情況下，這些 NDRs 似乎是對其他電子郵件伺服器和服務（也稱為_[退信攻擊](backscatter-messages-and-eop.md)_）的垃圾郵件。

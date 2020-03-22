@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ea91fc29a0fa768113ff3ca8d8129a0ee56ab5f5
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5fe9be7e85288e720b2ba3e5854cf34ec2263ee7
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633991"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895426"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -140,13 +140,41 @@ Microsoft Secure 得分是根據系統設定、使用者行為和其他安全性
 
 若要深入瞭解規劃的變更，請參閱[Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)
 
-### <a name="removed-not-scored-improvement-actions"></a>移除「未計分」的改進動作
+### <a name="march-2020"></a>2020 年 3 月
+
+#### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>支援 Azure AD 改進動作的安全性預設值
+
+Microsoft Secure 得分會更新改進動作，以支援[AZURE AD 中的安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)，如此可讓您的組織使用預先設定的常見攻擊安全性設定，以協助保護您的組織。
+
+這會影響下列改進動作：
+
+- 確定所有使用者均可完成安全存取的多重要素驗證
+- 需要對管理角色進行 MFA
+- 啟用原則以封鎖舊版驗證
+
+#### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>移除不符合可靠度量期望的改進動作，或沒有提供安全狀況的有用標記法
+
+為了確保 Microsoft 安全分數有意義，且每個改進動作都有意義且可靠，我們正在移除下列改進動作。
+
+- 將使用者檔儲存在商務 OneDrive 中
+- 設定 Office 365 ATP 安全附件原則
+- 設定 Office 365 安全連結以驗證 URLs
+- 不允許信箱委派
+- 允許網站和檔的匿名來賓共用連結
+- 開啟 Cloud App Security 主控台
+- 設定外部共用連結的到期時間
+- 開啟審計資料記錄
+- 探索危險且不相容的陰影 IT 應用程式
+- 檢查許可權 & 會封鎖連接至您環境的危險 OAuth 應用程式
+- 設定 SharePoint 線上文件庫的版本設定
+
+#### <a name="removed-not-scored-improvement-actions"></a>移除「未計分」的改進動作
 
 安全分數的原則之一是，分數應該是標準化的，且與的功能非常輕鬆。 具有不具可度量或具可操作性的改進動作已導致混淆。 只有在每個建議都會對分數有明確影響時，Microsoft 安全評分才有意義。 不計分的改善動作不可度量。  
 
 基於這些原因，已移除所有未計分的改善動作。 您的元件不需要任何動作。
 
-### <a name="removed-device-improvement-actions"></a>移除裝置改進動作
+#### <a name="removed-device-improvement-actions"></a>移除裝置改進動作
 
 評估 [改進動作] 的 Microsoft Secure 得分裝置類別之後，它決定這些動作目前評估原則狀態，而不是裝置的設定狀態。 因為設定會直接與安全性狀況相關聯，所以現有的裝置動作決定不完全代表組織狀況。  當我們運作時，將會移除裝置類別中目前的動作，以提供一組建議，以直接使用診斷資料，以更完整地代表裝置安全狀況。
 
@@ -173,16 +201,7 @@ Microsoft Secure 得分是根據系統設定、使用者行為和其他安全性
 - 要求所有裝置都具有高級安全性設定
 - 每週複查封鎖的裝置報告
 
-### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>移除不符合可靠度量期望的改善動作
-
-為了確保 Microsoft 安全分數有意義，且每個改進動作都有意義而且可靠，我們已移除下列改進動作：
-
-- 開啟審計資料記錄
-- 探索危險且不相容的陰影 IT 應用程式
-- 檢查許可權 & 會封鎖連接至您環境的危險 OAuth 應用程式
-- 設定 SharePoint 線上文件庫的版本設定
-
-### <a name="mfa-improvement-action-updates"></a>MFA 改進動作更新
+#### <a name="mfa-improvement-action-updates"></a>MFA 改進動作更新
 
 為了反映公司在套用與業務搭配運作的原則時，是否需要確保 upmost 安全性，Microsoft 安全分數已移除三個改進動作（圍繞多重要素驗證），並新增兩個動作。
 
@@ -199,7 +218,7 @@ Microsoft Secure 得分是根據系統設定、使用者行為和其他安全性
 
  這些新的改進動作需要在您的目錄上登錄使用者或系統管理員以進行多重要素驗證（MFA），並建立符合組織需求的適當原則集合。 主要目標具有彈性，可確保所有使用者和系統管理員都能使用多個因素或以風險為基礎的身分識別驗證提示進行驗證。 這可以採取多種原則套用範圍決策，或設定安全性預設值（即將推出3月16日），讓 Microsoft 決定何時對使用者進行 MFA 的質詢。
 
-### <a name="removed-review-improvement-actions"></a>已移除「複查」改進動作
+#### <a name="removed-review-improvement-actions"></a>已移除「複查」改進動作
 
 安全分數的原則之一是，分數應該是標準化的，且與的功能非常輕鬆。 具有不具可度量或具可操作性的改進動作已導致混淆。 只有在每個建議都會對分數有明確影響時，其中一個 Microsoft 安全評分才有意義。 「審閱改進」動作與其他 [改進動作] 的標準不是度量。  
 

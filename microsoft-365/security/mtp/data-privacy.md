@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b715cd2dcbc41e2aa5a4ae829677dfe250394346
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 04e60128512d5e9b65a06e158efa95228a53619a
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235132"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894261"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Microsoft 威脅防護資料安全性與隱私權
 
@@ -33,12 +33,9 @@ ms.locfileid: "42235132"
 
 
 
-若使用 Microsoft 威脅防護預覽，即表示您同意下列條款：
+使用 Microsoft 威脅防護時，您同意下列條款：
 
-您的適用客戶資料 (如線上服務條款 ("OST") 中所定義) 將會從其他 Microsoft 服務轉移到 Microsoft 威脅防護，以及從 Microsoft 威脅防護轉移回適用的 Microsoft 服務。 在此預覽期間，在 Microsoft 威脅防護中使用客戶資料，將會遵循 Microsoft Defender 進階威脅防護 (Microsoft Defender ATP) 的資料處理標準和承諾。 您認可此類承諾可能與轉移客戶資料的服務不同。 此外，儲存在 Microsoft 威脅防護中的客戶資料，將會在您所選用於儲存您的 Microsoft Defender ATP 客戶資料的地理位置中儲存待用，這可能會與您對其他服務所選取的相關地區有所不同。 Microsoft 不會將客戶資料傳送到這類地區以外的地方，[Microsoft 信任中心](https://www.microsoft.com/trust-center)的 Microsoft 信任中心之「資料位置」一節中所述除外。
-
-此外，當您判斷哪些使用者可以存取 Microsoft 威脅防護時，Microsoft 威脅防護目前不允許使用角色型存取控制 ("RBAC")。 您認可在 Microsoft 威脅防護從支援 RBAC 的 Microsoft 服務接收資料的情況下，該服務中的存取層級將不會套用至 Microsoft 威脅防護。
-
+開啟 Microsoft 威脅防護（MTP）後，您同意下列條款。 線上服務條款（OST）中所定義的適當客戶資料將會從其他 Microsoft 服務傳輸至 MTP。 使用 MTP 中的客戶資料，將遵循 Microsoft Defender 高級威脅防護（Microsoft Defender ATP）的資料處理標準及承諾。 您認可此類承諾可能與轉移客戶資料的服務不同。 此外，在您選取用於儲存 MDATP 客戶資料的地理位置中，儲存在 MTP 中的客戶資料會儲存在 rest 上，這可能會與您在其他服務中所選取的地理位置不同。 Microsoft 不會在這類 Geo 之外轉接客戶資料，除非[Microsoft 信任中心](https://www.microsoft.com/trust-center)的 [資料位置] 區段中所述。
 
 如需有關特定產品的資料儲存與隱私權資訊的詳細資訊，請參閱：
 - [Microsoft Defender ATP 資料儲存與隱私權](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

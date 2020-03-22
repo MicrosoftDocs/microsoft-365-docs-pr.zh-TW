@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 027189a10e34687833e6a266d5fe4382a1e14e3a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5f105912c5163b69368683cd4c6eaebf96250e3c
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632894"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894828"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>設定 Microsoft 365 中的通訊合規性
 
@@ -83,7 +83,7 @@ ms.locfileid: "42632894"
 | **原則成員** | **支援的群組** | **不支援的群組** |
 |:-----|:-----|:-----|
 |監督的使用者 <br> 非監督的使用者 | 通訊群組 <br> Office 365 群組 | 動態通訊群組 |
-| 檢閱者 | 擁有郵件功能的安全性群組  | 通訊群組 <br> 動態通訊群組 |
+| 檢閱者 | 無 | 通訊群組 <br> 動態通訊群組 <br> 擁有郵件功能的安全性群組 |
   
 當您為監督的使用者選取 Office 365 群組時，該原則會監控共用 Office 365 信箱的內容，以及與群組相關聯的 Microsoft 小組頻道。 當您選取通訊群組清單時，該原則會監控個別的使用者信箱。
 

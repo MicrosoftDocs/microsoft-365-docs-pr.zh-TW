@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 在這裡，我們將回答有關於 Microsoft Exchange Online Protection (EOP) 雲端電子郵件篩選服務的最常見一般問題。如需其他常見問題集 (FAQ) 主題，請前往下列連結：
-ms.openlocfilehash: 03fb070b2a40ad1e363138124eb0225e64fd5702
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 842f022edbba9d1a790a26987982c3bd508e9d5e
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599380"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893679"
 ---
 # <a name="eop-general-faq"></a>EOP 一般常見問題集
 
@@ -28,8 +28,6 @@ ms.locfileid: "41599380"
 - [委派管理常見問題集](delegated-administration-faq.md)
 
 - [反垃圾郵件保護常見問題集](anti-spam-protection-faq.md)
-
-- [Exchange Online 中的安全寄件者和封鎖寄件者清單](safe-sender-and-blocked-sender-lists-faq.md)
 
 - [隔離常見問題集](quarantine-faq.md)
 
@@ -63,9 +61,9 @@ ms.locfileid: "41599380"
 
 **問：EOP 是否有通訊入口網站可讓我了解已知問題和預期的解決方案？有哪些新功能？**
 
-答： 在 Microsoft 365 系統管理中心會有一些這項資訊。 如果您受影響的服務層級事件接著您應該會看到通訊警示 （通常伴隨著鈴鐺圖示） 之後登入 Microsoft 365 系統管理中心。 建議您詳讀內容並採取適當的行動。
+答： Microsoft 365 系統管理中心將會包含這項資訊。 如果您受到服務等級事件的影響，您應該會在登入 Microsoft 365 系統管理中心後，看到一則通訊警示（通常伴隨鈴聲圖示）。 建議您詳讀內容並採取適當的行動。
 
-關於新的 EOP 功能，[商務用 Office 365 導覽圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)是很好的資源，可以在其中尋找新功能的相關資訊。 我們也會張貼至[Microsoft 365 部落格](https://www.microsoft.com/microsoft-365/blog/)網站的新功能的部落格文章。
+關於新的 EOP 功能，[商務用 Office 365 導覽圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)是很好的資源，可以在其中尋找新功能的相關資訊。 我們也會將有關新功能的博客文章張貼至[Microsoft 365 博客](https://www.microsoft.com/microsoft-365/blog/)網站。
 
 **問：此服務可與舊版 Exchange (例如 Exchange Server 2010) 和非 Exchange 環境搭配使用嗎？**
 
@@ -87,6 +85,6 @@ ms.locfileid: "41599380"
 
 答：是。如需 EOP 限制的詳細資訊，請參閱＜[Exchange Online Protection 限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)＞。
 
-**問： EOP 支援 PowerShell 嗎？**
+**問： EOP 是否支援 PowerShell？**
 
-答： 是，完整的 EOP 功能是透過 PowerShell 可使用。 如需詳細資訊，請參閱 [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell)。
+答： 是的，可透過 PowerShell 取得完整的 EOP 功能。 如需詳細資訊，請參閱 [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell)。

@@ -2,10 +2,10 @@
 title: 垃圾郵件信賴等級
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/02/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,30 +15,35 @@ search.appverid:
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
-description: 當電子郵件通過垃圾郵件篩選會指派的垃圾郵件計分。 該分數是對應至個別的垃圾郵件信賴等級 (SCL) 分級，並在 X 標頭中加上戳記。 服務採取動作時取決於垃圾郵件信賴解譯的 SCL 分級的郵件。 下表顯示由篩選以及對每個分級的輸入郵件採取的預設動作如何解譯不同 SCL 分級。
-ms.openlocfilehash: 65b6f51199e6d8f6ce17a05b28c5bad15d9d1760
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 系統管理員可以瞭解垃圾郵件信賴等級（SCL）如何決定郵件為垃圾郵件的可能性和可能性，以及垃圾郵件篩選依據 SCL 的郵件所採取的預設動作。
+ms.openlocfilehash: b8f194f9aecc31896fb816433e71d1b26de708f7
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084755"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893691"
 ---
-# <a name="spam-confidence-levels"></a>垃圾郵件信賴等級
+# <a name="spam-confidence-level-scl-in-office-365"></a>Office 365 中的垃圾郵件信賴等級（SCL）
 
-當電子郵件通過垃圾郵件篩選會指派的垃圾郵件計分。 該分數是對應至個別的垃圾郵件信賴等級 (SCL) 分級，並在 X 標頭中加上戳記。 服務採取動作時取決於垃圾郵件信賴解譯的 SCL 分級的郵件。 下表顯示由篩選以及對每個分級的輸入郵件採取的預設動作如何解譯不同 SCL 分級。
-  
-|**SCL 分級**|**垃圾郵件信賴解譯**|**預設動作**|
-|:-----|:-----|:-----|
-|-1|非垃圾郵件來自 [安全寄件者，安全的收件者或安全列 （信任的合作夥伴） 的 IP 位址。|將郵件傳遞至收件者的收件匣。|
-|0、1|非垃圾郵件因為已掃描郵件，並判定為初始狀態。|將郵件傳遞至收件者的收件匣。|
-|5、 6|垃圾郵件|將郵件傳遞至收件者的垃圾郵件] 資料夾。|
-|7、 8、 9|高信賴度的垃圾郵件|將郵件傳遞至收件者的垃圾郵件] 資料夾。|
-   
-> [!TIP]
-> SCL 分級的 2、 3、 4、 7 和 8 不是由服務設定。 SCL 分級為 5 或 6 會被視為可疑的垃圾郵件，也就是較不一定要大於 SCL 分級為 9，這會被視為特定垃圾郵件的垃圾郵件。 垃圾郵件和高信賴度垃圾郵件的不同動作可以透過您在 Exchange 系統管理中心中的內容篩選原則設定。 如需詳細資訊，請參閱[設定您的垃圾郵件篩選原則](configure-your-spam-filter-policies.md)。 您也可以設定為 > 中所述[來設定垃圾郵件信賴等級 (SCL) 郵件中的使用郵件流程規則](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)使用郵件流程規則 （也稱為傳輸規則），符合特定條件的郵件的 SCL 分級。 如果您使用郵件流程規則來設定的 scl 值為 7、 8 或 9 郵件會被視為高信賴度垃圾郵件。 
-  
+當 Office 365 （Exchange Online 或獨立 Exchange online Protection （EOP）（沒有 Exchange Online 信箱）收到輸入電子郵件訊息時，郵件會透過垃圾郵件篩選功能，並被指派垃圾郵件分數。 該分數對應于個別垃圾郵件信賴等級（SCL），它會新增至 X 標頭中的郵件。 較高的 SCL 表示郵件可能是垃圾郵件。 服務會根據 SCL 的郵件採取動作。
+
+下表說明 SCL 的含義和郵件所採取的預設動作。 如需根據垃圾郵件篩選判定，可對郵件採取之動作的詳細資訊，請參閱 Configure the anti-spam[原則 In Office 365](configure-your-spam-filter-policies.md)。
+
+||||
+|:---:|---|---|
+|**SCL**|**定義**|**預設動作**|
+|-1|郵件略過垃圾郵件篩選。 例如，郵件來自安全寄件者、傳送至安全收件者，或是來自 IP 允許清單上的電子郵件來源伺服器。 如需詳細資訊，請參閱[在 Office 365 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。|將郵件傳遞至收件者的收件匣。|
+|0、1|垃圾郵件篩選決定郵件不是垃圾郵件。|將郵件傳遞至收件者的收件匣。|
+|5，6|垃圾郵件篩選標示郵件為**垃圾**郵件|將郵件傳遞至收件者的 [垃圾郵件] 資料夾。|
+|9 |垃圾郵件篩選標示郵件為**高信賴垃圾郵件**|將郵件傳遞至收件者的 [垃圾郵件] 資料夾。|
+|
+
+您會注意到 SCL 2、3、4、7和8不是由垃圾郵件篩選使用。
+
+您可以使用郵件流程規則（也稱為傳輸規則）來標記郵件上的 SCL。 如果您使用郵件流程規則來設定 SCL，則值5或6會觸發垃圾郵件的垃圾郵件篩選**動作，而**值7、8或9會觸發垃圾郵件篩選動作，以取得**高信賴的垃圾郵件**。 如需詳細資訊，請參閱[使用郵件流程規則在郵件中設定垃圾郵件信賴等級 (SCL)](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
+
+類似 SCL，大量投訴層級（BCL）會識別錯誤的大量大量電子郵件（也稱為_灰色郵件_）。 較高的 BCL 表示大宗郵件訊息很可能會產生抱怨（因此可能是垃圾郵件）。 您可以在反垃圾郵件原則中設定 BCL 閾值。 如需詳細資訊，請參閱設定 office 365 中的[反垃圾郵件原則](configure-your-spam-filter-policies.md)、[大量投訴層級（BCL）中的 office 365）](bulk-complaint-level-values.md)，以及[垃圾郵件和大量電子郵件有什麼不同？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
+
 ||
 |:-----|
 |![LinkedIn Learning 的短圖示](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **初次使用 Office 365？**         探索 LinkedIn Learning 提供的 **Office 365 admins and IT pros** 免費影片課程。|
-   
-

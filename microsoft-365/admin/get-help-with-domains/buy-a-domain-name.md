@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 瞭解如何在 Office 365 中購買功能變數名稱。
 ms.custom: okr_smb
-ms.openlocfilehash: 1982ac054ca64f2442e108b457553a58ebcb234c
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 5ffb5f9268dcd8b38245e0b85c7d790b46628766
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857436"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894464"
 ---
 # <a name="buy-a-domain-name-in-office-365"></a>在 Office 365 中購買網域名稱
 
@@ -121,4 +121,6 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 [網域常見問題集](../setup/domains-faq.md)
 
-[取得 Office 365 網域的說明](get-help-with-domains.yml)
+[取得 Office 365 網域的說明](get-help-with-domains.md)
+
+[更新 DNS 記錄以保留您的網站與目前的主機服務提供者](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider) 

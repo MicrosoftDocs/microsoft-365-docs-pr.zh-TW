@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: 288f70ccfcd7852102dc5261e225e9e84182b365
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 840087be38c6e50244437fea63de655d8cd9363e
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826212"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894294"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤 (公開預覽)
 
@@ -124,12 +124,15 @@ ms.locfileid: "42826212"
 若要啟用預覽，請使用 Set-SPOTenant Cmdlet：
 
 1. 在 Office 365 中使用具有全域系統管理員或 SharePoint 系統管理員許可權的工作或學校帳戶，連接至 SharePoint。 若要了解如何進行，請參閱[開始使用 SharePoint Online 管理命令介面](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
+    
+    附注：如果您有 Office 365 多地理位置，請搭配使用-Url 參數和[Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)，並為其中一個地理位置指定 SharePoint Online Administration CENTER 網站 Url。
 
 2. 執行下列命令：
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
+3. 針對 Office 365 多地理位置：對餘下的地理位置重複步驟1和2。
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>在您建立或變更靈敏度標籤之後排程部署
 
