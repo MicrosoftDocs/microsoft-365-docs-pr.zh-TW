@@ -2,10 +2,10 @@
 title: 以 Office 365 使用者身分尋找及釋出隔離的郵件
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 05/19/2018
+ms.date: ''
 audience: Consumer/IW
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,104 +16,164 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: 身為 Office 365 使用者，您可以使用下列兩種方法之一，來管理您已隔離垃圾郵件的訊息：直接回覆傳送給您的垃圾郵件通知 (如果您的系統管理員設定了此功能的話)，或者使用安全性與合規性中心的垃圾郵件隔離功能。
-ms.openlocfilehash: 277af18d2061e8bd13386ab96e37d982d68e0b52
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 身為 Office 365 使用者，您可以檢視、釋出及刪除隔離郵件 (收件者是您，且經垃圾郵件篩選功能認為是垃圾郵件或大量電子郵件而加以隔離的郵件)。 您可以在「安全性與合規性中心」檢視和管理隔離郵件。
+ms.openlocfilehash: e74358d57b96c8655fbf6a3f7f0b6eedb5e65ede
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599290"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857330"
 ---
-# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a><span data-ttu-id="ae101-103">以 Office 365 使用者身分尋找及釋出隔離的郵件</span><span class="sxs-lookup"><span data-stu-id="ae101-103">Find and release quarantined messages as a user in Office 365</span></span>
+# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a><span data-ttu-id="69dcb-104">以 Office 365 使用者身分尋找及釋出隔離的郵件</span><span class="sxs-lookup"><span data-stu-id="69dcb-104">Find and release quarantined messages as a user in Office 365</span></span>
 
-<span data-ttu-id="ae101-104">身為 Office 365 使用者，您可以使用下列兩種方法之一，來管理應該要傳送給您卻傳送至隔離的郵件：[直接回覆傳送給您的垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md) (如果您的系統管理員設定了此功能的話)，或者使用安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="ae101-104">As an Office 365 user, you can manage messages that were sent to quarantine instead of sent to you in one of two ways: by [responding to spam notifications sent to you directly](use-spam-notifications-to-release-and-report-quarantined-messages.md) (if your admin has set this up), or by using the Security &amp; Compliance Center.</span></span>
+<span data-ttu-id="69dcb-105">在擁有 Exchange Online 信箱的 Office 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，隔離區會保存可能有害或不想要的郵件。</span><span class="sxs-lookup"><span data-stu-id="69dcb-105">Quarantine holds potentially dangerous or unwanted messages in Office 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.</span></span> <span data-ttu-id="69dcb-106">如需詳細資訊，請參閱 [Office 365 中的隔離區](quarantine-email-messages.md)。</span><span class="sxs-lookup"><span data-stu-id="69dcb-106">For more information, see [Quarantine in Office 365](quarantine-email-messages.md).</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="ae101-105">如果您是系統管理員，您可以為組織中的其他人[管理隔離的郵件](manage-quarantined-messages-and-files.md)。</span><span class="sxs-lookup"><span data-stu-id="ae101-105">If you're an admin, you can [manage quarantined messages](manage-quarantined-messages-and-files.md) for other people in your organization.</span></span>
+<span data-ttu-id="69dcb-107">身為使用者，您可以檢視、釋出及刪除收件者是您的隔離郵件，郵件之所以會遭到隔離，是因為系統認為這些郵件是垃圾郵件、大量電子郵件或 (2020 年 4 月起) 網路釣魚。</span><span class="sxs-lookup"><span data-stu-id="69dcb-107">As a user, you can view, release, and delete quarantined messages where you are a recipient, and the message was quarantined as spam, bulk email, or (as of April, 2020) phishing.</span></span> <span data-ttu-id="69dcb-108">您也可以向 Microsoft 回報誤判的郵件。</span><span class="sxs-lookup"><span data-stu-id="69dcb-108">You can also report false positives to Microsoft.</span></span>
 
-## <a name="view-messages-that-were-sent-to-quarantine-instead-of-to-you"></a><span data-ttu-id="ae101-106">檢視傳送至隔離區而非傳送給您的郵件</span><span class="sxs-lookup"><span data-stu-id="ae101-106">View messages that were sent to quarantine instead of to you</span></span>
+<span data-ttu-id="69dcb-109">您可以在「安全性與合規性中心」檢視和管理隔離郵件。</span><span class="sxs-lookup"><span data-stu-id="69dcb-109">You view and manage your quarantined messages in the Security & Compliance Center.</span></span>
 
-1. <span data-ttu-id="ae101-107">使用您的公司或學校帳戶登入 Office 365，並[移至安全性與合規性中心](../../compliance/go-to-the-securitycompliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="ae101-107">Sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md) using your work or school account.</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="69dcb-110">開始之前有哪些須知？</span><span class="sxs-lookup"><span data-stu-id="69dcb-110">What do you need to know before you begin?</span></span>
 
-2. <span data-ttu-id="ae101-108">展開左側的 [威脅管理]\*\*\*\*，依序選擇 [檢閱]\*\*\*\* 與 [隔離]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="ae101-108">On the left, expand **Threat Management**, choose **Review**, and then choose **Quarantine**.</span></span>
+- <span data-ttu-id="69dcb-111">若要開啟 Office 365 的「安全性與合規性中心」，請移至 <https://protection.office.com>。</span><span class="sxs-lookup"><span data-stu-id="69dcb-111">To open the Office 365 Security & Compliance Center, go to <https://protection.office.com>.</span></span> <span data-ttu-id="69dcb-112">若要直接開啟 [隔離區] 頁面，請移至 <https://protection.office.com/quarantine>。</span><span class="sxs-lookup"><span data-stu-id="69dcb-112">To open the Quarantine page directly, go to <https://protection.office.com/quarantine>.</span></span>
 
-    > [!TIP]
-    > <span data-ttu-id="ae101-109">若要直接移至安全性 &amp; 合規性中心的 [隔離]\*\*\*\* 頁面，請使用這個 URL：[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)</span><span class="sxs-lookup"><span data-stu-id="ae101-109">To go directly to the **Quarantine** page in the Security &amp; Compliance Center, use this URL: [https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)</span></span>
+- <span data-ttu-id="69dcb-113">系統管理員可以設定郵件要先保留在隔離區中多久，然後才永久刪除 (反垃圾郵件原則)。</span><span class="sxs-lookup"><span data-stu-id="69dcb-113">Admins can configure how long messages are kept in quarantine before they're permanently deleted (anti-spam policies).</span></span> <span data-ttu-id="69dcb-114">已在隔離區中到期的郵件將無法還原。</span><span class="sxs-lookup"><span data-stu-id="69dcb-114">Messages that have expired from quarantine are unrecoverable.</span></span> <span data-ttu-id="69dcb-115">如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="69dcb-115">For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).</span></span>
 
-<span data-ttu-id="ae101-110">根據預設，安全性與合規性中心會顯示所有因被視為垃圾郵件而遭到隔離的電子郵件訊息。</span><span class="sxs-lookup"><span data-stu-id="ae101-110">By default, the Security &amp; Compliance Center displays all email messages that have been quarantined as spam.</span></span> <span data-ttu-id="ae101-111">郵件會依據接收的 [日期]\*\*\*\*，從最新排到最舊。</span><span class="sxs-lookup"><span data-stu-id="ae101-111">The messages are sorted from newest to oldest based on the **Date** the message was received.</span></span> <span data-ttu-id="ae101-112">系統也會顯示每封郵件的 [寄件者]\*\*\*\*、[主旨]\*\*\*\* 與到期日 (位於 [到期]\*\*\*\* 底下)。</span><span class="sxs-lookup"><span data-stu-id="ae101-112">**Sender**, **Subject**, and the expiration date (under **Expires** ) are also displayed for each message.</span></span> <span data-ttu-id="ae101-113">您可以按一下對應的欄標題來依該欄位排序；再按一下欄標題則可將排序順序倒轉。</span><span class="sxs-lookup"><span data-stu-id="ae101-113">You can sort on a field by clicking the corresponding column header; click a column header a second time to reverse the sort order.</span></span>
+- <span data-ttu-id="69dcb-116">系統管理員也可以在反垃圾郵件原則中[啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="69dcb-116">Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md) in anti-spam policies.</span></span> <span data-ttu-id="69dcb-117">2019 年 10 月起，您已無法再從這些通知中直接釋出隔離郵件。</span><span class="sxs-lookup"><span data-stu-id="69dcb-117">As of October 2019, you can no longer release quarantined messages directly from these notifications.</span></span> <span data-ttu-id="69dcb-118">您可以在通知中按一下 [檢閱]\*\*\*\*，以前往「安全性與合規性中心」內的隔離區。</span><span class="sxs-lookup"><span data-stu-id="69dcb-118">You can click **Review** in the notification, which will take you to Quarantine in the Security & Compliance Center.</span></span> <span data-ttu-id="69dcb-119">如需詳細資訊，請參閱 [Office 365 中的使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。</span><span class="sxs-lookup"><span data-stu-id="69dcb-119">For more information, see [End-user spam notifications in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).</span></span>
 
-<span data-ttu-id="ae101-114">您可以檢視含有所有隔離郵件的清單，或者使用篩選來搜尋特定郵件。</span><span class="sxs-lookup"><span data-stu-id="ae101-114">You can view a list of all quarantined messages, or you can search for specific messages by filtering.</span></span> <span data-ttu-id="ae101-115">您只能夠對最多 100 封郵件執行大量作業；如果您擁有的郵件超過 100 封，進行篩選也有助於減少結果集。</span><span class="sxs-lookup"><span data-stu-id="ae101-115">You can only do bulk operations on up to 100 items, so filtering can also help reduce your result set if you have more than that.</span></span> <span data-ttu-id="ae101-116">您可以選擇下拉式清單中的選項，根據單一隔離原因快速篩選郵件。</span><span class="sxs-lookup"><span data-stu-id="ae101-116">You can quickly filter messages for a single quarantine reason by choosing an option from the drop-down list.</span></span> <span data-ttu-id="ae101-117">選項包括：</span><span class="sxs-lookup"><span data-stu-id="ae101-117">Options include:</span></span>
+- <span data-ttu-id="69dcb-120">經系統或郵件流程規則 (又稱為傳輸規則) 認為是高可信度網路釣魚或惡意程式碼而遭到隔離的郵件，只會交給系統管理員處理。</span><span class="sxs-lookup"><span data-stu-id="69dcb-120">Messages that were quarantined for high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins.</span></span> <span data-ttu-id="69dcb-121">如需詳細資訊，請參閱[以 Office 365 系統管理員身分尋找及釋出隔離的郵件](find-and-release-quarantined-messages-as-an-administrator.md)。</span><span class="sxs-lookup"><span data-stu-id="69dcb-121">For more information, see [Find and release quarantined messages as an admin in Office 365](find-and-release-quarantined-messages-as-an-administrator.md).</span></span>
 
-- <span data-ttu-id="ae101-118">識別為垃圾郵件的郵件。</span><span class="sxs-lookup"><span data-stu-id="ae101-118">Mail identified as spam.</span></span> <span data-ttu-id="ae101-119">系統會根據預設顯示這些受隔離郵件。</span><span class="sxs-lookup"><span data-stu-id="ae101-119">These quarantined messages are shown by default.</span></span>
+- <span data-ttu-id="69dcb-122">您只能釋出郵件並將其報告為誤判 (非垃圾郵件) 一次。</span><span class="sxs-lookup"><span data-stu-id="69dcb-122">You can only release a message and report it as a false positive (not junk) once.</span></span>
 
-- <span data-ttu-id="ae101-120">識別為大宗郵件的郵件。</span><span class="sxs-lookup"><span data-stu-id="ae101-120">Mail identified as bulk mail.</span></span>
+## <a name="view-your-quarantined-messages"></a><span data-ttu-id="69dcb-123">檢視隔離郵件</span><span class="sxs-lookup"><span data-stu-id="69dcb-123">View your quarantined messages</span></span>
 
-<span data-ttu-id="ae101-121">當您找到特定隔離郵件後，請按一下郵件來檢視其詳細資料並採取動作。</span><span class="sxs-lookup"><span data-stu-id="ae101-121">After you find a specific quarantined message, click the message to view details about it, and take actions.</span></span> <span data-ttu-id="ae101-122">您可以將郵件釋出至您的信箱、預覽郵件、下載郵件，或是從隔離中立即刪除郵件。</span><span class="sxs-lookup"><span data-stu-id="ae101-122">You can release the message to your mailbox, preview the message, download the message, or delete the message from quarantine immediately.</span></span>
+1. <span data-ttu-id="69dcb-124">在「安全性與合規性中心」內，移至 [威脅管理]\*\*\*\* \> [檢閱]\*\*\*\* \> [隔離]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="69dcb-124">In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="ae101-123">您必須在 Office 365 中擁有系統管理員權限，才能處理傳送給其他使用者的隔離郵件。</span><span class="sxs-lookup"><span data-stu-id="ae101-123">You must have admin permissions in Office 365 to work with quarantined messages that were sent to other users.</span></span>
+2. <span data-ttu-id="69dcb-125">您可以按一下可用的資料行標題來排序結果。</span><span class="sxs-lookup"><span data-stu-id="69dcb-125">You can sort the results by clicking on an available column header.</span></span> <span data-ttu-id="69dcb-126">按一下 [修改資料行]\*\*\*\* 可顯示最多七個資料行。</span><span class="sxs-lookup"><span data-stu-id="69dcb-126">Click **Modify columns** to show a maximum of seven columns.</span></span> <span data-ttu-id="69dcb-127">預設值會標上星號 (<sup>\*</sup>)：</span><span class="sxs-lookup"><span data-stu-id="69dcb-127">The default values are marked with an asterisk (<sup>\*</sup>):</span></span>
 
-## <a name="to-filter-and-find-quarantined-messages"></a><span data-ttu-id="ae101-124">篩選並尋找隔離的郵件</span><span class="sxs-lookup"><span data-stu-id="ae101-124">To filter and find quarantined messages</span></span>
+   - <span data-ttu-id="69dcb-128">**收到日期**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="69dcb-128">**Received**<sup>\*</sup></span></span>
 
-<span data-ttu-id="ae101-125">如果您擁有很多隔離的項目，您可以透過篩選，將數量減少至可管理的狀態。</span><span class="sxs-lookup"><span data-stu-id="ae101-125">If you have a lot of quarantined items, you can reduce the number to a manageable set by filtering them.</span></span>
+   - <span data-ttu-id="69dcb-129">**寄件者**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="69dcb-129">**Sender**<sup>\*</sup></span></span>
 
-1. <span data-ttu-id="ae101-126">在 [隔離]\*\*\*\* 頁面上，選擇您想要檢視 [垃圾郵件]\*\*\*\* 或 [大宗郵件]\*\*\*\* 的受隔離郵件。</span><span class="sxs-lookup"><span data-stu-id="ae101-126">On the **Quarantine** page, choose whether you want to view **spam** or **bulk** quarantined messages.</span></span>
+   - <span data-ttu-id="69dcb-130">**主旨**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="69dcb-130">**Subject**<sup>\*</sup></span></span>
 
-2. <span data-ttu-id="ae101-127">在 [結果排序依據]\*\*\*\* 底下，透過設定一或多個合適篩選來選擇任何條件組合 (您無法在此時使用萬用字元)。</span><span class="sxs-lookup"><span data-stu-id="ae101-127">Under **Sort results by**, choose any combination of conditions by setting the appropriate filter or filters (you can't use wildcards at this time).</span></span> <span data-ttu-id="ae101-128">有數種條件可供您選擇，包括下列項目：</span><span class="sxs-lookup"><span data-stu-id="ae101-128">There are several conditions you can choose, including the following:</span></span>
+   - <span data-ttu-id="69dcb-131">**隔離原因**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="69dcb-131">**Quarantine reason**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="ae101-129">**郵件識別碼**：當您知道郵件識別碼時，使用這個選項來選取特定郵件。</span><span class="sxs-lookup"><span data-stu-id="ae101-129">**Message ID**: Use this to select a specific message when you know the message ID.</span></span>
+   - <span data-ttu-id="69dcb-132">**已釋出？**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="69dcb-132">**Released?**<sup>\*</sup></span></span>
 
-     <span data-ttu-id="ae101-130">例如，如果組織中的某位使用者傳送了特定郵件或者他是郵件的預定收件者，但郵件未到達目的地，則您可使用郵件追蹤功能搜尋郵件 (請參閱[安全性與合規性中心內的郵件追蹤](message-trace-scc.md))(英文版)。</span><span class="sxs-lookup"><span data-stu-id="ae101-130">For example, if a specific message is sent by, or intended for, a user in your organization, but it never reached its destination, you can search for the message by using a message trace (see [Message trace in the Security & Compliance Center](message-trace-scc.md)).</span></span> <span data-ttu-id="ae101-131">如果您發現郵件已傳送到隔離區 (或許因為該郵件符合了某個郵件流程規則或被視為垃圾郵件)，指定其郵件識別碼，即可在隔離區中輕鬆找到此郵件。</span><span class="sxs-lookup"><span data-stu-id="ae101-131">If you discover that the message was sent to quarantine, perhaps because it matched a mail flow rule or was identified as spam, you can then easily find this message in quarantine by specifying its Message ID.</span></span> <span data-ttu-id="ae101-132">務必包括完整的郵件識別碼字串。</span><span class="sxs-lookup"><span data-stu-id="ae101-132">Be sure to include the full Message ID string.</span></span> <span data-ttu-id="ae101-133">這可能包括角括號 (\<\>)，例如：</span><span class="sxs-lookup"><span data-stu-id="ae101-133">This might include angle brackets (\<\>), for example:</span></span>
+   - <span data-ttu-id="69dcb-133">**原則類型**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="69dcb-133">**Policy type**<sup>\*</sup></span></span>
 
-     `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`
+   - <span data-ttu-id="69dcb-134">**到期**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="69dcb-134">**Expires**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="ae101-134">**寄件者電子郵件地址**：選擇依單一寄件者電子郵件地址來篩選。</span><span class="sxs-lookup"><span data-stu-id="ae101-134">**Sender email address**: Choose to filter by a single sender email address.</span></span>
+   - <span data-ttu-id="69dcb-135">**收件者**</span><span class="sxs-lookup"><span data-stu-id="69dcb-135">**Recipient**</span></span>
 
-   - <span data-ttu-id="ae101-135">**收件者電子郵件地址**：選擇做為篩選依據的單一收件者電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="ae101-135">**Recipient email address**: Choose to filter by a single recipient email address.</span></span>
+   - <span data-ttu-id="69dcb-136">**郵件識別碼**</span><span class="sxs-lookup"><span data-stu-id="69dcb-136">**Message ID**</span></span>
 
-   - <span data-ttu-id="ae101-136">**主旨**：輸入您要尋找之電子郵件地址的主旨。</span><span class="sxs-lookup"><span data-stu-id="ae101-136">**Subject**: Enter the subject of an email address you want to find.</span></span>
+   - <span data-ttu-id="69dcb-137">**原則名稱**</span><span class="sxs-lookup"><span data-stu-id="69dcb-137">**Policy name**</span></span>
 
-   - <span data-ttu-id="ae101-137">**日期範圍**：您可以選擇根據郵件受到隔離的日期來進行篩選。</span><span class="sxs-lookup"><span data-stu-id="ae101-137">**Date range**: You can choose to filter by the date the message was sent to quarantine.</span></span> <span data-ttu-id="ae101-138">您可以指定某個日期或一個日期範圍，包括時間。</span><span class="sxs-lookup"><span data-stu-id="ae101-138">You can specify the date or a date range, including the time.</span></span>
+   - <span data-ttu-id="69dcb-138">**大小**</span><span class="sxs-lookup"><span data-stu-id="69dcb-138">**Size**</span></span>
 
-   - <span data-ttu-id="ae101-139">**到期日**：若要依到期日篩選，請選擇 **[進階篩選]**。</span><span class="sxs-lookup"><span data-stu-id="ae101-139">**Expiration date**: To filter by expiration date, choose **Advanced filter**.</span></span> <span data-ttu-id="ae101-140">您可以選取將於未來 24 小時 ([今天]\*\*\*\*)、未來 48 小時 ([未來 2 天]\*\*\*\*)、未來一週 ([未來 7 天]\*\*\*\*) 內從隔離刪除的郵件，或者，您可以選取自訂的時間間隔。</span><span class="sxs-lookup"><span data-stu-id="ae101-140">You can select messages that will be deleted from quarantine within the next 24 hours ( **Today**), within the next 48 hours ( **Next 2 days**), within the next week ( **Next 7 days**), or you can select a custom time interval.</span></span>
+   - <span data-ttu-id="69dcb-139">**方向**</span><span class="sxs-lookup"><span data-stu-id="69dcb-139">**Direction**</span></span>
 
-     > [!IMPORTANT]
-     > <span data-ttu-id="ae101-141">根據預設，垃圾郵件與大宗郵件會在隔離中保留 30 天。</span><span class="sxs-lookup"><span data-stu-id="ae101-141">By default, spam and bulk messages are kept in quarantine for 30 days.</span></span> <span data-ttu-id="ae101-142">不過您可以設定此時間，而您的系統管理員可能也已經設定了不同的隔離保留期間。</span><span class="sxs-lookup"><span data-stu-id="ae101-142">However, this time period is configurable and your admin might have set a different quarantine retention period.</span></span> <span data-ttu-id="ae101-143">當 Office 365 從隔離中刪除某封郵件後，您就無法復原該郵件。</span><span class="sxs-lookup"><span data-stu-id="ae101-143">When Office 365 deletes a message from quarantine, you can't get it back.</span></span>
+   <span data-ttu-id="69dcb-140">完成時，請按一下 [儲存]\*\*\*\*，或按一下 [設為預設值]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="69dcb-140">When you're finished, click **Save**, or click **Set to default**.</span></span>
 
-## <a name="view-details-for-a-specific-message"></a><span data-ttu-id="ae101-144">檢視特定郵件的詳細資料</span><span class="sxs-lookup"><span data-stu-id="ae101-144">View details for a specific message</span></span>
+3. <span data-ttu-id="69dcb-141">若要篩選結果，請按一下 [篩選]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="69dcb-141">To filter the results, click **Filter**.</span></span> <span data-ttu-id="69dcb-142">可用的篩選條件如下：</span><span class="sxs-lookup"><span data-stu-id="69dcb-142">The available filters are:</span></span>
 
-<span data-ttu-id="ae101-145">選取郵件後，您會在頁面右側的窗格中看到該郵件屬性的摘要。</span><span class="sxs-lookup"><span data-stu-id="ae101-145">After you select a message, you'll see a summary of the message properties in a pane on the right side of the page.</span></span>
+   - <span data-ttu-id="69dcb-143">**到期時間**：依郵件將於隔離區中到期的時間進行篩選：</span><span class="sxs-lookup"><span data-stu-id="69dcb-143">**Expires time**: Filter messages by when they will expire from quarantine:</span></span>
 
-- <span data-ttu-id="ae101-146">**郵件識別碼**：郵件的唯一識別碼。</span><span class="sxs-lookup"><span data-stu-id="ae101-146">**Message ID**: The unique identifier for the message.</span></span>
+     - <span data-ttu-id="69dcb-144">**今天**</span><span class="sxs-lookup"><span data-stu-id="69dcb-144">**Today**</span></span>
 
-- <span data-ttu-id="ae101-147">**寄件者地址**：傳送郵件的寄件者。</span><span class="sxs-lookup"><span data-stu-id="ae101-147">**Sender Address**: Who sent the message.</span></span>
+     - <span data-ttu-id="69dcb-145">**未來 2 天**</span><span class="sxs-lookup"><span data-stu-id="69dcb-145">**Next 2 days**</span></span>
 
-- <span data-ttu-id="ae101-148">**接收時間**：收到郵件的日期。</span><span class="sxs-lookup"><span data-stu-id="ae101-148">**Received**: The date the message was received.</span></span>
+     - <span data-ttu-id="69dcb-146">**未來 7 天**</span><span class="sxs-lookup"><span data-stu-id="69dcb-146">**Next 7 days**</span></span>
 
-- <span data-ttu-id="ae101-149">**主旨**：郵件 [主旨] 列中的文字。</span><span class="sxs-lookup"><span data-stu-id="ae101-149">**Subject**: The text of the Subject line in the message.</span></span>
+     - <span data-ttu-id="69dcb-147">**自訂**：輸入 [開始日期]\*\*\*\* 和 [結束日期]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="69dcb-147">**Custom**: Enter a **Start date** and **End date**.</span></span>
 
-- <span data-ttu-id="ae101-150">**隔離原因**：顯示是否將郵件識別為 **[垃圾郵件]** 或 **[大量]**。</span><span class="sxs-lookup"><span data-stu-id="ae101-150">**Quarantine reason**: Shows if a message has been identified as **Spam** or **Bulk**.</span></span>
+   - <span data-ttu-id="69dcb-148">**接收時間**：輸入 [開始日期]\*\*\*\* 和 [結束日期]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="69dcb-148">**Received time**: Enter a **Start date** and **End date**.</span></span>
 
-- <span data-ttu-id="ae101-151">**到期**：將從隔離刪除此郵件的日期。</span><span class="sxs-lookup"><span data-stu-id="ae101-151">**Expires**: The date when the message will be deleted from quarantine.</span></span>
+   - <span data-ttu-id="69dcb-149">**隔離原因**：</span><span class="sxs-lookup"><span data-stu-id="69dcb-149">**Quarantine reason**:</span></span>
 
-- <span data-ttu-id="ae101-152">**已釋出給**：該封郵件曾釋出至的所有電子郵件地址 (如果有的話)。</span><span class="sxs-lookup"><span data-stu-id="ae101-152">**Released to**: All email addresses (if any) to which the message has been released.</span></span>
+     - <span data-ttu-id="69dcb-150">**大量郵件**</span><span class="sxs-lookup"><span data-stu-id="69dcb-150">**Bulk**</span></span>
 
-- <span data-ttu-id="ae101-153">**尚未釋出給：** 該封郵件尚未釋出至的所有電子郵件地址 (如果有的話)。</span><span class="sxs-lookup"><span data-stu-id="ae101-153">**Not yet released to**: All email addresses (if any) to which the message has not been released.</span></span> <span data-ttu-id="ae101-154">如果想要將郵件釋出到您的信箱，您可以選擇 [釋出]\*\*\*\* (下一節將詳細說明如何釋出郵件)。</span><span class="sxs-lookup"><span data-stu-id="ae101-154">You can choose **Release** if you want to release the message to your mailbox (more about releasing messages in the next section).</span></span>
+     - <span data-ttu-id="69dcb-151">**垃圾郵件**</span><span class="sxs-lookup"><span data-stu-id="69dcb-151">**Spam**</span></span>
 
-<span data-ttu-id="ae101-155">您可以選擇下列其中一個選項，以取得有關郵件的更多詳細資料：</span><span class="sxs-lookup"><span data-stu-id="ae101-155">You can get even more details about the message by choosing one of the following options:</span></span>
+     - <span data-ttu-id="69dcb-152">**網路釣魚** (2020 年 4 月起)</span><span class="sxs-lookup"><span data-stu-id="69dcb-152">**Phish** (As of April, 2020)</span></span>
 
-- <span data-ttu-id="ae101-156">**檢視郵件標頭**：選擇此項目來查看郵件標頭文字。</span><span class="sxs-lookup"><span data-stu-id="ae101-156">**View message header**: Choose this to see the message header text.</span></span> <span data-ttu-id="ae101-157">若要深入分析標頭，請將郵件標頭文字複製到您的剪貼簿，然後選擇 [Microsoft 郵件標頭分析器]\*\*\*\* 來移至遠端連線分析程式 (如果您想在不離開 Office 365 的情況下完成這項工作，請按一下滑鼠右鍵並選擇 [在新索引標籤中開啟])。</span><span class="sxs-lookup"><span data-stu-id="ae101-157">To analyze the header in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose Open in a new tab if you don't want to leave Office 365 to complete this task).</span></span> <span data-ttu-id="ae101-158">將郵件標頭貼至 [郵件標頭分析器] 區段的頁面上，並選擇 [分析標頭]。</span><span class="sxs-lookup"><span data-stu-id="ae101-158">Paste the message header onto the page in the Message Header Analyzer section, and choose Analyze headers.</span></span>
+   <span data-ttu-id="69dcb-153">若要清除篩選，請按一下 [清除]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="69dcb-153">To clear the filter, click **Clear**.</span></span> <span data-ttu-id="69dcb-154">若要隱藏 [篩選] 飛出視窗，請再按一下 [篩選]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="69dcb-154">To hide the filter flyout, click **Filter** again.</span></span>
 
-- <span data-ttu-id="ae101-159">**預覽郵件**：讓您查看郵件內文文字的原始版本或 HTML 版本。</span><span class="sxs-lookup"><span data-stu-id="ae101-159">**Preview message**: Lets you see raw or HTML versions of the message body text.</span></span> <span data-ttu-id="ae101-160">在 HTML 檢視中會停用連結。</span><span class="sxs-lookup"><span data-stu-id="ae101-160">In the HTML view, links are disabled.</span></span>
+4. <span data-ttu-id="69dcb-155">使用 [結果排序依據]\*\*\*\* (預設為 [郵件識別碼]\*\*\*\* 按鈕) 和對應值來尋找特定郵件。</span><span class="sxs-lookup"><span data-stu-id="69dcb-155">Use **Sort results by** (the **Message ID** button by default) and a corresponding value to find specific messages.</span></span> <span data-ttu-id="69dcb-156">不支援萬用字元。</span><span class="sxs-lookup"><span data-stu-id="69dcb-156">Wildcards aren't supported.</span></span> <span data-ttu-id="69dcb-157">您可以依下列值進行搜尋：</span><span class="sxs-lookup"><span data-stu-id="69dcb-157">You can search by the following values:</span></span>
 
-## <a name="manage-your-quarantined-messages"></a><span data-ttu-id="ae101-161">管理隔離的郵件</span><span class="sxs-lookup"><span data-stu-id="ae101-161">Manage your quarantined messages</span></span>
+   - <span data-ttu-id="69dcb-158">**郵件識別碼**：郵件的全域唯一識別碼。</span><span class="sxs-lookup"><span data-stu-id="69dcb-158">**Message ID**: The globally unique identifier of the message.</span></span> <span data-ttu-id="69dcb-159">如果您在清單中選取某個郵件，出現的 [詳細資料]\*\*\*\* 飛出窗格中就會出現 [郵件識別碼]\*\*\*\* 值。</span><span class="sxs-lookup"><span data-stu-id="69dcb-159">If you select a message in the list, the **Message ID** value appears in the **Details** flyout pane that appears.</span></span> <span data-ttu-id="69dcb-160">系統管理員可以使用 [郵件追蹤][](message-trace-scc.md) 來尋找郵件及其對應的郵件識別碼值。</span><span class="sxs-lookup"><span data-stu-id="69dcb-160">Admins can use [message trace](message-trace-scc.md) to find messages and their corresponding Message ID values.</span></span>
 
-<span data-ttu-id="ae101-162">選取了單一郵件或一組郵件後，您會有多種方式可以管理受到隔離的郵件。</span><span class="sxs-lookup"><span data-stu-id="ae101-162">After you select a message or group of messages, you have several options for managing messages in quarantine.</span></span>
+   - <span data-ttu-id="69dcb-161">**寄件者電子郵件地址**：單一寄件者的電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="69dcb-161">**Sender email address**: A single sender's email address.</span></span>
 
-- <span data-ttu-id="ae101-163">不執行任何動作。</span><span class="sxs-lookup"><span data-stu-id="ae101-163">Do nothing.</span></span> <span data-ttu-id="ae101-164">如果您選擇不執行任何動作，該郵件會在到期後由 Office 365 自動刪除。</span><span class="sxs-lookup"><span data-stu-id="ae101-164">If you choose to do nothing, the message will be deleted by Office 365 automatically upon expiration.</span></span> <span data-ttu-id="ae101-165">請記得，當 Office 365 從隔離中刪除某封郵件後，您就無法復原該郵件。</span><span class="sxs-lookup"><span data-stu-id="ae101-165">Remember, when Office 365 deletes a message from quarantine, you can't get it back.</span></span>
+   - <span data-ttu-id="69dcb-162">**收件者電子郵件地址**：單一收件者的電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="69dcb-162">**Recipient email address**: A single recipient's email address.</span></span>
 
-- <span data-ttu-id="ae101-166">**釋出郵件**：釋出隔離的郵件 (或一組郵件)，將郵件傳送到您的信箱。</span><span class="sxs-lookup"><span data-stu-id="ae101-166">**Release message**: Release a quarantined message (or set of messages) so that the message is sent to your mailbox.</span></span> <span data-ttu-id="ae101-167">釋出郵件時，您可以選擇是否要將該郵件回報給 Microsoft 進行分析。</span><span class="sxs-lookup"><span data-stu-id="ae101-167">When you release a message, you have the option to report the message to Microsoft for analysis.</span></span>
+   - <span data-ttu-id="69dcb-163">**主旨**：使用郵件的完整主旨。</span><span class="sxs-lookup"><span data-stu-id="69dcb-163">**Subject**: Use the entire subject of the message.</span></span> <span data-ttu-id="69dcb-164">搜尋時不會區分大小寫。</span><span class="sxs-lookup"><span data-stu-id="69dcb-164">The search is not case-sensitive.</span></span>
 
-    <span data-ttu-id="ae101-168">選擇回報郵件時 (也稱為將郵件回報為誤判)，系統會將該郵件回報給 Microsoft 垃圾郵件分析小組。</span><span class="sxs-lookup"><span data-stu-id="ae101-168">When you choose to report a message, also called reporting a message as a false positive, the message is reported to the Microsoft Spam Analysis Team.</span></span> <span data-ttu-id="ae101-169">該小組會評估並分析誤判的郵件，且根據分析結果，可能會調整適用於全服務的垃圾郵件內容篩選規則，以允許這些郵件通過。</span><span class="sxs-lookup"><span data-stu-id="ae101-169">The team evaluates and analyzes false positive messages, and, depending on the results of the analysis, the service-wide spam content filter rules may be adjusted to allow these messages through.</span></span>
+   <span data-ttu-id="69dcb-165">輸入搜尋準則後，請按一下 ![[重新整理] 按鈕](../media/scc-quarantine-refresh.png) [重新整理]\*\*\*\* 來篩選結果。</span><span class="sxs-lookup"><span data-stu-id="69dcb-165">After you've entered the search criteria, click ![Refresh button](../media/scc-quarantine-refresh.png) **Refresh** to filter the results.</span></span>
 
-- <span data-ttu-id="ae101-170">**從隔離中移除**：立即將郵件從隔離中刪除而不釋出到信箱。</span><span class="sxs-lookup"><span data-stu-id="ae101-170">**Remove from quarantine**: Deletes the message immediately from quarantine without releasing the message to your mailbox.</span></span>
+<span data-ttu-id="69dcb-166">當您找到特定隔離郵件後，選取該郵件即可檢視其詳細資料，並對其採取動作 (例如檢視、釋出、下載或刪除郵件)。</span><span class="sxs-lookup"><span data-stu-id="69dcb-166">After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).</span></span>
+
+### <a name="export-message-results"></a><span data-ttu-id="69dcb-167">匯出郵件結果</span><span class="sxs-lookup"><span data-stu-id="69dcb-167">Export message results</span></span>
+
+1. <span data-ttu-id="69dcb-168">選取您感興趣的郵件，然後按一下 [匯出結果]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="69dcb-168">Select the messages you're interested in, and click **Export results**.</span></span>
+
+2. <span data-ttu-id="69dcb-169">在提醒您讓瀏覽器視窗保持開啟的確認訊息中，按一下 [是]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="69dcb-169">Click **Yes** in the confirmation message that warns you to keep the browser window open.</span></span>
+
+3. <span data-ttu-id="69dcb-170">匯出作業準備就緒時，便可為 .csv 檔案命名並選擇下載位置。</span><span class="sxs-lookup"><span data-stu-id="69dcb-170">When your export is ready, you can name and choose the download location for the .csv file.</span></span>
+
+### <a name="view-quarantined-message-details"></a><span data-ttu-id="69dcb-171">檢視隔離郵件詳細資料</span><span class="sxs-lookup"><span data-stu-id="69dcb-171">View quarantined message details</span></span>
+
+<span data-ttu-id="69dcb-172">當您選取清單中的電子郵件訊息時，[詳細資料]\*\*\*\* 飛出窗格中會出現下列郵件詳細資料：</span><span class="sxs-lookup"><span data-stu-id="69dcb-172">When you select an email message in the list, the following message details appear in the **Details** flyout pane:</span></span>
+
+- <span data-ttu-id="69dcb-173">**郵件識別碼**：郵件的全域唯一識別碼。</span><span class="sxs-lookup"><span data-stu-id="69dcb-173">**Message ID**: The globally unique identifier for the message.</span></span>
+
+- <span data-ttu-id="69dcb-174">**寄件者位址**</span><span class="sxs-lookup"><span data-stu-id="69dcb-174">**Sender address**</span></span>
+
+- <span data-ttu-id="69dcb-175">**收到日期**：收到郵件的日期/時間。</span><span class="sxs-lookup"><span data-stu-id="69dcb-175">**Received**: The date/time when the message was received.</span></span>
+
+- <span data-ttu-id="69dcb-176">**主旨**</span><span class="sxs-lookup"><span data-stu-id="69dcb-176">**Subject**</span></span>
+
+- <span data-ttu-id="69dcb-177">**隔離原因**：顯示是否已將郵件視為**垃圾郵件**、**大量郵件**或 (2020 年 4 月起) **網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="69dcb-177">**Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk** or (as of April, 2020) **Phish**.</span></span>
+
+- <span data-ttu-id="69dcb-178">**收件者**：如果郵件包含多個收件者，則必須按一下 [預覽郵件]\*\*\*\* 或 [檢視郵件標頭]\*\*\*\* 以查看完整的收件者清單。</span><span class="sxs-lookup"><span data-stu-id="69dcb-178">**Recipients**: If the message contains multiple recipients, you need to click **Preview message** or **View message header** to see the complete list of recipients.</span></span>
+
+- <span data-ttu-id="69dcb-179">**到期**：郵件會自動從隔離區永久刪除的日期/時間。</span><span class="sxs-lookup"><span data-stu-id="69dcb-179">**Expires**: The date/time when the message will be automatically and permanently deleted from quarantine.</span></span>
+
+- <span data-ttu-id="69dcb-180">**已釋出給**：該封郵件曾釋出至的所有電子郵件地址 (如果有的話)。</span><span class="sxs-lookup"><span data-stu-id="69dcb-180">**Released to**: All email addresses (if any) to which the message has been released.</span></span>
+
+- <span data-ttu-id="69dcb-181">**尚未釋出給**：該封郵件尚未釋出至的所有電子郵件地址 (如果有的話)。</span><span class="sxs-lookup"><span data-stu-id="69dcb-181">**Not yet released to**: All email addresses (if any) to which the message has not yet been released.</span></span>
+
+### <a name="take-action-on-quarantined-email"></a><span data-ttu-id="69dcb-182">對隔離的電子郵件採取動作</span><span class="sxs-lookup"><span data-stu-id="69dcb-182">Take action on quarantined email</span></span>
+
+<span data-ttu-id="69dcb-183">選取郵件之後，便可以在 [詳細資料]\*\*\*\* 飛出窗格中選擇要如何處理郵件：</span><span class="sxs-lookup"><span data-stu-id="69dcb-183">After you select a message, you have options for what to do with the messages in the **Details** flyout pane:</span></span>
+
+- <span data-ttu-id="69dcb-184">**釋出郵件**：在出現的飛出窗格中，選擇是否要 [向 Microsoft 回報郵件以便分析]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="69dcb-184">**Release message**: In the flyout pane that appears, choose whether to **Report messages to Microsoft for analysis**.</span></span> <span data-ttu-id="69dcb-185">預設會選取此選項，並向 Microsoft 回報錯誤隔離的郵件屬於誤判。</span><span class="sxs-lookup"><span data-stu-id="69dcb-185">This is selected by default, and reports the erroneously quarantined message to Microsoft as a false positive.</span></span>
+
+  <span data-ttu-id="69dcb-186">完成時，請按一下 [釋出郵件]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="69dcb-186">When you're finished, click **Release messages**.</span></span>
+
+- <span data-ttu-id="69dcb-187">**檢視郵件標頭**：選擇此連結來查看郵件標頭文字。</span><span class="sxs-lookup"><span data-stu-id="69dcb-187">**View message header**: Choose this link to see the message header text.</span></span> <span data-ttu-id="69dcb-188">若要深入分析標頭欄位和值，請將郵件標頭文字複製到您的剪貼簿，然後選擇 [Microsoft 郵件標頭分析器]\*\*\*\* 來移至遠端連線分析程式 (如果您想在不離開 Office 365 的情況下完成這項工作，請按一下滑鼠右鍵並選擇 [在新索引標籤中開啟]\*\*\*\*)。</span><span class="sxs-lookup"><span data-stu-id="69dcb-188">To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Office 365 to complete this task).</span></span> <span data-ttu-id="69dcb-189">將郵件標頭貼至 [郵件標頭分析器] 區段的頁面上，並選擇 [分析標頭]\*\*\*\*：</span><span class="sxs-lookup"><span data-stu-id="69dcb-189">Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:</span></span>
+
+- <span data-ttu-id="69dcb-190">**預覽郵件**：在出現的飛出窗格中，選擇下列其中一個選項：</span><span class="sxs-lookup"><span data-stu-id="69dcb-190">**Preview message**: In the flyout pane that appears, choose one of the following options:</span></span>
+
+  - <span data-ttu-id="69dcb-191">**原始碼檢視**：顯示已停用所有連結的郵件內文 HTML 版本。</span><span class="sxs-lookup"><span data-stu-id="69dcb-191">**Source view**: Shows the HTML version of the message body with all links disabled.</span></span>
+  
+  - <span data-ttu-id="69dcb-192">**文字檢視**：以純文字顯示郵件內文。</span><span class="sxs-lookup"><span data-stu-id="69dcb-192">**Text view**: Shows the message body in plain text.</span></span>
+
+- <span data-ttu-id="69dcb-193">**下載郵件**：在出現的飛出窗格中，選取 [我了解下載此郵件的風險]\*\*\*\* 以使用 .eml 格式儲存郵件的本機複本。</span><span class="sxs-lookup"><span data-stu-id="69dcb-193">**Download message**: In the flyout pane that appears, select **I understand the risks from downloading this message** to save a local copy of the message in .eml format.</span></span>
+
+- <span data-ttu-id="69dcb-194">**從隔離區中移除**：當您在出現的警告中按一下 [是]\*\*\*\* 之後，郵件就會立即遭到刪除。</span><span class="sxs-lookup"><span data-stu-id="69dcb-194">**Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted.</span></span>
+
+<span data-ttu-id="69dcb-195">完成時，請按一下 [關閉]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="69dcb-195">When you're finished, click **Close**.</span></span>
+
+<span data-ttu-id="69dcb-196">如果您未釋出或移除郵件，則郵件會在預設的隔離保留期間到期後遭到刪除。</span><span class="sxs-lookup"><span data-stu-id="69dcb-196">If you don't release or remove the message, it will be deleted after the default quarantine retention period expires.</span></span>
+
+#### <a name="take-action-on-multiple-quarantined-email-messages"></a><span data-ttu-id="69dcb-197">對多個隔離的電子郵件訊息採取動作</span><span class="sxs-lookup"><span data-stu-id="69dcb-197">Take action on multiple quarantined email messages</span></span>
+
+<span data-ttu-id="69dcb-198">當您選取清單中的多個隔離郵件 (最多 100 個) 時，隨即會出現 [大量動作]\*\*\*\* 飛出窗格供您採取下列動作：</span><span class="sxs-lookup"><span data-stu-id="69dcb-198">When you select multiple quarantined messages in the list (up to 100), the **Bulk actions** flyout pane appears where you can take the following actions:</span></span>
+
+- <span data-ttu-id="69dcb-199">**釋出郵件**：這些選項與您釋出單一郵件時的選項相同，差別只在您無法選取 [將郵件釋出給特定收件者]\*\*\*\*；您只能選取 [將郵件釋出給所有收件者]\*\*\*\* 或 [將郵件釋出給其他人]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="69dcb-199">**Release messages**: The options are the same as when you release a single message, except you can't select **Release messages to specific recipients**; you can only select **Release message to all recipients** or **Release messages to other people**.</span></span>
+
+- <span data-ttu-id="69dcb-200">**刪除郵件**：在出現的警告中按一下 [是]\*\*\*\* 之後，郵件就會立即遭到刪除，而不會傳送給原始收件者。</span><span class="sxs-lookup"><span data-stu-id="69dcb-200">**Delete messages**:  After you click **Yes** in the warning that appears, the message are immediately deleted without being sent to the original recipients.</span></span>
+
+<span data-ttu-id="69dcb-201">完成時，請按一下 [關閉]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="69dcb-201">When you're finished, click **Close**.</span></span>
