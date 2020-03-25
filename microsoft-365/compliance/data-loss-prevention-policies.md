@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 透過安全性與合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監控及自動保護整個 Office 365 的敏感性資訊。
-ms.openlocfilehash: 722afcb7bdebb6004d9a7ab365ac6038fe1d31a4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 574a3376aa54311db3edc581e0a3e602cb1ac383
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635091"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826288"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -179,6 +179,8 @@ DLP 原則在尋找信用卡號碼等敏感性資訊類型時，並不只是尋�
 規則相符時，您可以將含有事件詳細資料的事件報告傳送給您的法務人員 (或是您選擇的任何人)。 這份報告包含相符項目的相關資訊、符合規則的實際內容，以及上次修改內容的人員名稱。 若是電子郵件訊息，報告則會以附件的方式提供與 DLP 原則相符的原始郵件。
   
 ![設定事件報告的頁面](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
+
+DLP 掃描電子郵件的方式不同於 SharePoint Online 或商務用 OneDrive 中的項目。 在 SharePoint Online 和商務用 OneDrive 中，DLP 會掃描現有項目以及新的項目，並在發現相符項目時產生事件報告。 在 Exchange Online 中，DLP 僅會掃描新的電子郵件訊息，並在原則相符時產生報告。 DLP ***不會***掃描或比對信箱或封存內儲存的既有電子郵件項目。
   
 ## <a name="grouping-and-logical-operators"></a>群組和邏輯運算子
 

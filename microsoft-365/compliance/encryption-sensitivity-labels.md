@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 當建立敏感度標籤時，您可以限制標籤將套用至其中之內容的存取。敏感度標籤可以使用加密來保護內容。
-ms.openlocfilehash: a8418a85c6d936fbe49deb2f11caacf67a2ce407
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3f59a6038da8600923f5fcc0d18f1de5ab5dc06c
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634911"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826234"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容 
 
@@ -59,7 +59,7 @@ ms.locfileid: "42634911"
 - **移除**：如果文件或電子郵件已加密，則會移除加密。
 
 > [!NOTE]
-> 只有 Azure 資訊保護整合標籤用戶端才支援 [移除]**** 選項。 當您使用內建的標籤時，具有此選項的標籤會在 Office 應用程式中顯示，並且若已選取該選項，則加密行為會與 [無]**** 相同。
+> 只有 Azure 資訊保護整合標籤用戶端才支援 [移除]**** 選項。 當您使用內建標籤時，具有此選項的標籤會在 Office 應用程式和服務中顯示，並且若已選取該選項，則加密行為會與 [無]**** 相同。
 
 設定加密選項：
 

@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本的垃圾郵件篩選設定，包括識別為垃圾郵件所採取的選取郵件動作。
-ms.openlocfilehash: 6cf4d84b72e774f734f198b09285bba2c68bc4df
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0fa597887a75ff71d768d4df0b1ac4f17fe9ef13
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086272"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857354"
 ---
 # <a name="configure-your-spam-filter-policies"></a>設定您的垃圾郵件篩選原則
 垃圾郵件篩選設定，包括識別為垃圾郵件所採取的選取郵件動作。 垃圾郵件篩選原則設定只會套用於內送郵件，並且有兩種類型：
@@ -83,7 +83,7 @@ ms.locfileid: "42086272"
    - **隔離郵件：** 將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 這是網路釣魚的預設動作。 If you select this option, in the **Retain spam for (days)** input box, specify the number of days during which the spam message will be quarantined. (時間過去之後會自動刪除。 預設值是 30 天，這也是最大值。 最小值為 1 天。)
 
      > [!TIP]
-     > 如需系統管理員如何管理位於隔離信箱的電子郵件的相關資訊，請參閱[隔離](quarantine.md)和[以系統管理員身分尋找及釋出被隔離的郵件](find-and-release-quarantined-messages-as-an-administrator.md)。 <br/><br/> 如需如何為使用者設定垃圾郵件通知訊息的相關資訊，請參閱[在 EOP 中設定使用者垃圾郵件通知](configure-end-user-spam-notifications-in-eop.md)或[在 Exchange Online 中設定使用者垃圾郵件通知](configure-end-user-spam-notifications-in-exchange-online.md)。
+     > 如需系統管理員要如何管理隔離區內電子郵件訊息的相關資訊，請參閱[隔離](quarantine.md)和[在 Office 365 中以系統管理員身分管理隔離的郵件和檔案](manage-quarantined-messages-and-files.md)。 <br/><br/> 如需如何為使用者設定垃圾郵件通知訊息的相關資訊，請參閱[在 EOP 中設定使用者垃圾郵件通知](configure-end-user-spam-notifications-in-eop.md)或[在 Exchange Online 中設定使用者垃圾郵件通知](configure-end-user-spam-notifications-in-exchange-online.md)。
 
    - 設定 **[選取閾值]** 來判斷根據郵件的大量抱怨層級 (BCL)，要將大量電子郵件視為垃圾郵件的方法。 您可以選擇 1 - 9 的閾值設定，其中 1 將最大量的電子郵件表示為垃圾郵件，而 9 允許傳遞最大量的電子郵件。 服務則會執行已設定的動作 (例如將郵件傳送至收件者的 [垃圾郵件] 資料夾)。 如需詳細資訊，請參閱 [大量抱怨層級值](bulk-complaint-level-values.md) 和[垃圾郵件和大量電子郵件有什麼不同?](what-s-the-difference-between-junk-email-and-bulk-email.md)。
 
