@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留標籤可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Microsoft 365 中實作記錄管理解決方案。
-ms.openlocfilehash: 4052cf691e9123e3d840d5fa6759ff7f032b67c2
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3bcaee41ab178ae79b1f2ef46871dadb107f3f5b
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634301"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929447"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -261,7 +261,7 @@ Exchange 公用資料夾和 Skype 不支援標籤。
     
 - [符合您所建立查詢的特定關鍵字](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
-- [可訓練分類器的符合項目](#auto-apply-labels-to-content-by-using-trainable-classifers)
+- [可訓練分類器的符合項目](#auto-apply-labels-to-content-by-using-trainable-classifiers)
     
 ![自動套用標籤的選擇條件頁面](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
@@ -311,9 +311,9 @@ Exchange 公用資料夾和 Skype 不支援標籤。
 ![查詢編輯器](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
 
-### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>使用可訓練分類器自動將標籤套用至內容
+### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>使用可訓練分類器自動將標籤套用至內容
 
-選擇用於可訓練分類器的選項時，可以選取其中一個內建分類器或自訂分類器。 內建分類器包括 [粗穢言語]****、[履歷]****、[原始程式碼]****、[針對性騷擾]****、[粗話]**** 和 [威脅]****：
+選擇用於可訓練分類器的選項時，可以選取其中一個內建分類器或自訂分類器。 內建分類器包括 **[粗穢言語]**、**[履歷]**、**[原始程式碼]**、**[針對性騷擾]**、**[粗話]** 和 **[威脅]**：
 
 ![選擇可訓練分類器](../media/retention-label-classifers.png)
 

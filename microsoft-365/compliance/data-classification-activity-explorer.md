@@ -1,5 +1,5 @@
 ---
-title: 使用資料分類活動總管
+title: 開始使用活動總管 (預覽)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 活動總管透過讓您查看和篩選使用者對套用標籤的內容執行的操作，來完善資料分類功能。
-ms.openlocfilehash: f80ce94433028b2434d442a364c336060b730d94
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 68304bc75d33c993db52895828ec49e3b5203a4c
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076756"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929457"
 ---
-# <a name="view-activity-on-your-labeled-content-preview"></a>檢視套用標籤的內容上的活動 (預覽)
+# <a name="get-started-with-activity-explorer-preview"></a>開始使用活動總管 (預覽)
 
 資料分類概觀和內容總管索引標籤可讓您查看已探索和套用標籤的內容，以及內容的位置。 活動總管透過讓您監視對已套用標籤的內容執行的工作，從而完善此功能套件。 活動總管提供歷程記錄的檢視。
 
