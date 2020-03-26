@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Office 365 群組中的內容。
-ms.openlocfilehash: b1bac1cbe094a1e56c05dd7fd1aa5377f0a85ce5
-ms.sourcegitcommit: 62eac95c27295ba285e28cec5acf815314fbfd00
+ms.openlocfilehash: 67fe4892a980748699bb17c0a41299ed741cf417
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42601350"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952063"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>使用敏感度標籤來保護 Microsoft Teams、Office 365 群組和 SharePoint 網站中的內容 (公開預覽)
 
@@ -52,7 +52,7 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
 
 1. 由於此功能使用 Azure AD 功能，請依照 Azure AD 文件中的指示來啟用預覽：[將敏感度標籤指派到 Azure Active Directory 中的 Office 365 群組 (預覽)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)。
 
-2. 在 PowerShell 工作階段中，使用具備全域系統管理員權限的公司或學校帳戶連線至安全性與合規性中心。 例如：
+2. 開啟具有 **[以系統管理員​​身分執行]​​** 選項的 PowerShell 工作階段，使用具備全域系統管理員權限的公司或學校帳戶連線至安全性與合規性中心。 例如：
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -183,7 +183,7 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
 
 每當您變更標籤的網站和群組設定時，您必須執行下列 PowerShell 命令，以便您的小組、網站和群組可以使用新的設定。 最佳做法是，不要在將標籤套用至數個小組、群組或網站之後，變更網站和群組設定。
 
-1. 執行下列命令以連線至 Office 365 安全性與合規性中心 PowerShell，並取得敏感度標籤及其 GUID 清單。
+1. 在您開啟之具有 **[以系統管理員​​身分執行]** 選項的 PowerShell 工作階段中，執行下列命令以連線至 Office 365 安全性與合規性中心 PowerShell，並取得敏感度標籤及其 GUID 清單。
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -198,7 +198,6 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
 3. 現在連線到 Exchange Online PowerShell 並執行 Set-unifiedgroup Cmdlet，然後指定您的標籤 GUID 來取代 "e48058ea-98e8-4940-8db0-ba1310fd955e" 的 GUID 範例： 
     
     ```powershell
-    Set-ExecutionPolicy RemoteSigned
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session

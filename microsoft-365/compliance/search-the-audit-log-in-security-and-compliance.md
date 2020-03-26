@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 6d83b9af94ecb086d933cd00476ca84e87d6db2e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 66e75561084c3f3e8e67303e1cd359ef01c6b01a
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634751"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955682"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -311,7 +311,8 @@ ms.locfileid: "42634751"
 |[進階電子文件探索活動](#advanced-ediscovery-activities)|[Power BI 活動](#power-bi-activities)|[Microsoft 工作場所分析](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams 活動](#microsoft-teams-activities)|[Microsoft Teams 醫療保健活動](#microsoft-teams-healthcare-activities)|[Yammer 活動](#yammer-activities)|
 |[Microsoft Power Automate 活動](#microsoft-power-automate-activities)|[Microsoft Power Apps 活動](#microsoft-power-apps-activities)|[Microsoft Stream 活動](#microsoft-stream-activities)|
-|[Microsoft Teams 活動](#microsoft-forms-activities)|[敏感度標籤活動](#sensitivity-label-activities)|[Exchange 系統管理員活動](#exchange-admin-audit-log)||
+|[內容總管活動](#content-explorer-activities)|[隔離活動](#quarantine-activities)|[Microsoft Teams 活動](#microsoft-forms-activities)
+|[敏感度標籤活動](#sensitivity-label-activities)|[Exchange 系統管理員活動](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>檔案和頁面活動
@@ -802,7 +803,29 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream 活動
 
-您可以在 Microsoft Stream 中搜尋活動的稽核記錄。 這些活動包括使用者執行的視訊活動、群組頻道活動及系統管理員活動，例如管理使用者、管理組織設定及匯出報告。 如需這些活動的說明，請在 [Microsoft Stream 中的稽核記錄](https://docs.microsoft.com/stream/audit-logs)中參閱＜Microsoft Stream 中記錄的活動＞一節。
+您可以在 Microsoft Stream 中搜尋活動的稽核記錄。 這些活動包括使用者執行的視訊活動、群組頻道活動及系統管理員活動，例如管理使用者、管理組織設定及匯出報告。 如需這些活動的說明，請參閱 [Microsoft Stream 中的稽核記錄](https://docs.microsoft.com/stream/audit-logs#actions-logged-in-stream) (英文) 中的「Stream 中記錄的動作」一節。
+
+### <a name="content-explorer-activities"></a>內容總管活動
+
+下表列出 Office 365 稽核記錄中記錄的內容總管活動。 內容總管可從 Microsoft 365 合規性中心的資料分類工具中存取。 如需詳細資訊，請參閱[使用資料分類內容總管](data-classification-content-explorer.md)。
+
+|**易記名稱**|**作業**|**描述**|
+|:-----|:-----|:-----|
+|已存取的項目|LabelContentExplorerAccessedItem|系統管理員 (或身為內容總管內容檢視器角色群組成員的使用者) 可使用內容總管來檢視電子郵件訊息或 SharePoint/OneDrive 文件。|
+||||
+
+### <a name="quarantine-activities"></a>隔離活動
+
+以下表格列出您可以在稽核記錄中搜尋的隔離活動。 如需關於隔離的詳細資訊，請參閱[在 Office 365 中隔離電子郵件](../security/office-365-security/quarantine-email-messages.md)。
+
+|**易記名稱**|**作業**|**描述**|
+|:-----|:-----|:-----|
+|刪除隔離郵件|QuarantineDelete|使用者已刪除了被視為有害的電子郵件。|
+|已匯出的隔離郵件|QuarantineExport|使用者已匯出了被視為有害的電子郵件。|
+|預覽隔離郵件|QuarantinePreview|使用者已預覽了被視為有害的電子郵件。|
+|已釋放隔離郵件|QuarantineRelease|使用者已釋放了被視為有害的電子郵件。|
+|已檢視隔離郵件標題|QuarantineViewHeader|使用者已檢視了被視為有害電子郵件的標題。|
+||||
 
 ### <a name="microsoft-forms-activities"></a>Microsoft Teams 活動
 
