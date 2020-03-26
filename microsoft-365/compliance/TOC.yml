@@ -201,13 +201,13 @@
     - name: 了解資料分類 (預覽)
       href: data-classification-overview.md
       items:
-        - name: 檢視已套用標籤的內容 (預覽)
+        - name: 開始使用內容瀏覽器（預覽）
           href: data-classification-content-explorer.md
-        - name: 查看標籤活動 (預覽)
+        - name: 開始使用活動總管 (預覽)
           href: data-classification-activity-explorer.md
         - name: 資料分類公開預覽版本資訊 (預覽)
           href: data-classification-pub-preview-relnotes.md
-        - name: 開始使用可訓練的分類器 (預覽)
+        - name: 開始使用 trainable 的分類器（預覽）
           href: classifier-getting-started-with.md
         - name: 使用內建的分類器（預覽）
           href: classifier-using-a-ready-to-use-classifier.md
@@ -243,6 +243,8 @@
           href: archive-linkedin-data.md
         - name: 設定連接器來封存 Instant Bloomberg 資料
           href: archive-instant-bloomberg-data.md
+        - name: 設定連接器以封存冰激淩聊天資料（預覽）
+          href: archive-icechat-data.md
         - name: 設定連接器以匯入 HR 資料
           href: import-hr-data.md
         - name: 與合作夥伴配合來封存第三方資料
@@ -816,6 +818,10 @@
           href: gdpr-for-office-online-server.md
         - name: 適用於內部部署 Windows Server 檔案共用的 GDPR
           href: gdpr-for-on-premises-file-shares.md
+    - name: 行業特有的指導方針
+      items:
+        - name: 金融服務安全性和合規性
+          href: ../solutions/financial-services-secure-collaboration.md
 - name: 法規合規性行動計劃
   items:
     - name: ISO - 建議使用的行動計劃
