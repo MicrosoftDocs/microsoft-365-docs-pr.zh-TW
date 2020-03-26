@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 資料分類儀表板可讓您深入了解貴組織所發現及分類的敏感性資料。
-ms.openlocfilehash: bec44dea9059c779a567a3ff222cc41360de9321
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: d16167f33be1858733173026b09f268d9cf67d62
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175797"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929415"
 ---
 # <a name="know-your-data---data-classification-overview-preview"></a>了解您的資料 - 資料分類概觀 (預覽)
 
@@ -62,7 +62,7 @@ Microsoft 365 隨附許多敏感性資訊類型的定義，例如包含社會安
 
 如需敏感度標籤的詳細資訊，請參閱[了解敏感度標籤](sensitivity-labels.md)。
 
-SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資料分類頁面中顯示對應資料。 如需詳細資訊，請參閱[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤 (公開預覽)](sensitivity-labels-sharepoint-onedrive-files.md) (英文版)。
+SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資料分類頁面中顯示對應資料。 如需詳細資訊，請參閱[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤 (公開預覽)](sensitivity-labels-sharepoint-onedrive-files.md)。
 
 敏感度標籤卡片會依敏感度等級顯示項目數量 (電子郵件或文件)。
 

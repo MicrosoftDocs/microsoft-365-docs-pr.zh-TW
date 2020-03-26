@@ -1,5 +1,5 @@
 ---
-title: 使用資料分類內容總管 (預覽)
+title: 開始使用內容總管 (預覽)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 內容總管可讓您本機檢視已套用標籤的項目。
-ms.openlocfilehash: 205ec6b4f2049e18ee95f25505d8a58d7eb7ac77
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 91246a701e1c5a030f4c9c53e25e56c137e7569b
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409688"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929405"
 ---
-# <a name="using-data-classification-content-explorer-preview"></a>使用資料分類內容總管 (預覽)
+# <a name="get-started-with-content-explorer-preview"></a>開始使用內容總管 (預覽)
 
 資料分類內容總管可讓您本機檢視概觀頁面中摘要的項目。
 
@@ -48,7 +48,7 @@ ms.locfileid: "42409688"
 
 [敏感度標籤](sensitivity-labels.md)只是一個標記，指出您組織的項目值。 可手動或自動套用。 一旦套用，即會將它內嵌在文件中，並在所有的位置追蹤。 敏感性標籤會啟用各種防護行為，例如強制浮水印或加密。 啟用端點保護後，您甚至可以防止項目離開組織控制。
 
-SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資料分類頁面中顯示對應資料。 如需詳細資訊，請參閱[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤 (公開預覽)](sensitivity-labels-sharepoint-onedrive-files.md) (英文版)。
+SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資料分類頁面中顯示對應資料。 如需詳細資訊，請參閱[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤 (公開預覽)](sensitivity-labels-sharepoint-onedrive-files.md)。
 
 ### <a name="retention-labels"></a>保留標籤
 
