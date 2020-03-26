@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員向 Microsoft 開啟支援票證。
 ms.custom: okr_smb
-ms.openlocfilehash: 446af9ad49649487f4df1982613f8e84fdf39910
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 22693bbf8acdf8872b621ae214dd8d7a62b98b40
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857188"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929547"
 ---
 # <a name="about-admin-roles"></a>關於系統管理員角色
 
@@ -119,6 +119,7 @@ Microsoft 365 系統管理中心可讓您管理超過 30 個 Azure AD 角色。 
 |Power BI 系統管理員    |   完全存取 Power Bl 管理工作、管理服務要求及監視服務健康情況。   |
 |Power 平台系統管理員     |    完全存取 Microsoft Dynamics 365、PowerApps、資料外洩防護原則和 Microsoft Flow。     |
 |特殊權限角色系統管理員     |    管理 Privileged Identity Management 的角色指派和所有存取控制功能。     |
+|特殊權限驗證系統管理員     |    重設密碼、更新非密碼認證、強制使用以登出及監視服務健康情況，以及管理服務要求。     |
 |報告讀取者     |   從報告儀表板、PowerBI 採用內容套件、登入報告和 Microsoft Graph 報告 API 讀取使用量報告資料。      |
 |搜尋系統管理員     |    完全存取 Microsoft Search、指派搜尋系統管理員和搜尋編輯者角色、管理編輯內容、監視服務健康情況，以及建立服務要求。     |
 |搜尋編輯者     |    只能建立、編輯及刪除 Microsoft Search 的內容，例如書籤、問與答和位置。     |
