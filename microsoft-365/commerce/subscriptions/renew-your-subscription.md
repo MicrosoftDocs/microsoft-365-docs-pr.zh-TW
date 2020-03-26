@@ -24,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: '瞭解如何使用產品金鑰來更新您的商務用 Office 365 訂閱，並開啟或關閉定期計費。 '
-ms.openlocfilehash: bef43359b2a073339488648466adaf4603a12c43
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 777f60ae40e72a6762015b24ffe1a1f0fed055ba
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633701"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959213"
 ---
 # <a name="renew-office-365-for-business"></a>更新商務用 Office 365
 
 本文適用于大部分付費的 Office 365 for business 訂閱。
   
-若要使用您從零售商店或 Office 365 合作夥伴購買的產品金鑰來更新，請參閱[EFind 並輸入您的產品金鑰](../enter-your-product-key.md)。
+若要使用您從零售商店或 Office 365 合作夥伴購買的產品金鑰來更新，請參閱[尋找並輸入您的產品金鑰](../enter-your-product-key.md)。
 
 > [!NOTE]
 > 在某些國家或地區無法使用銀行帳戶付款。
@@ -70,7 +70,7 @@ ms.locfileid: "42633701"
 
 ::: moniker range="o365-germany"
   
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">訂閱</a>] 頁面。
+1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
 
     如果您使用的是 Office 365 Germany，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>頁面。
 
@@ -93,7 +93,7 @@ ms.locfileid: "42633701"
 
 ::: moniker range="o365-21vianet"
   
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">訂閱</a>] 頁面。
+1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
 
     如果您使用的是 Office 365 Germany，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>頁面。
 
@@ -109,7 +109,7 @@ ms.locfileid: "42633701"
 
     > [!NOTE]
     > - 您只可以變更使用中訂閱的**重複計費**設定。 如果您的訂閱已到期或已停用，您必須先將[其重新](reactivate-your-subscription.md)啟用，然後才能開啟或關閉**定期計費**。
-    > - 當**週期性記帳**關閉時，不會立即取消訂閱。 它會保持作用中直到到期為止。 您可以在訂閱卡片上查看到期日
+    > - 當**週期性記帳**關閉時，不會立即取消訂閱。 它會保持作用中直到到期為止。 您可以在訂閱卡片上查看到期日。
     > - 若要瞭解如何立即取消訂閱，請參閱[取消我的訂閱](cancel-your-subscription.md)。
 
 ::: moniker-end
@@ -120,7 +120,7 @@ ms.locfileid: "42633701"
   
 [新增、更新或移除信用卡或銀行帳戶](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
   
-[當 mysubscription 結束時，我的資料與存取權會發生什麼情況？](what-if-my-subscription-expires.md)
+[當訂閱結束時，我的資料與存取權會發生什麼情況？](what-if-my-subscription-expires.md)
 
 [新增、更新或移除支付方式](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 

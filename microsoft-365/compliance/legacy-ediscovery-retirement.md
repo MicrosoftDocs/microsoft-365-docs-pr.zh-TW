@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Exchange Online 中的 In-Place eDiscovery 和 In-Place 保留（以及對應的 PowerShell Cmdlet）會在2020的上半年內淘汰。 Search-Mailbox Cmdlet 和 Office 365 Advanced eDiscovery 1.0 1.0 也會在相同的時段內淘汰。
-ms.openlocfilehash: a3e19580def43c894e13c58eeaa28af498ad1399
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f5ca92dc12fae102cef8e7dc5aa3c4c07785cd96
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894850"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955542"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>舊的 eDiscovery 工具退休
 
@@ -135,7 +135,13 @@ ms.locfileid: "42894850"
 <p>
 <p>或者，您可以將搜尋結果匯出至 PST 檔案，然後使用 Microsoft 365 匯入服務將 Pst 匯入探索信箱。 如需逐步指示，請參閱<a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">使用網路上傳將 PST 檔案匯入 Office 365</a>。
 </tr>
-<tr class="even">
+<tr class=even>
+  <td>將郵件從一個信箱複製到不同的信箱</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">指派許可權給信箱</a></td>
+  <td>若要讓人員能夠存取另一個使用者的電子郵件（例如，當員工離開您的組織，而您需要讓另一個人存取該離職員工的電子郵件）時，建議您指派該人員的許可權來存取離職員工的郵箱。 因此，不要將信箱專案複製到另一個使用者信箱或共用信箱，只需指派使用者的許可權即可存取來源信箱。</td>
+  
+  </tr>
+<tr class="odd">
 <td>從 [可復原的專案] 資料夾還原專案</td>
   <td><a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Restore-RecoverableItems">Restore-RecoverableItems</td>
   <td>您可以還原信箱中永久刪除的專案（也稱為虛<i>刪除的</i>專案），只要專案的刪除專案保留期間尚未過期。 如需詳細資訊，請參閱<a href="https://docs.microsoft.com/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">Exchange Online 中</a>的 [可復原的專案] 資料夾。</td>
@@ -216,6 +222,13 @@ Microsoft 365 規範中心也會使用[規範界限](set-up-compliance-boundarie
 <td>無</td>
 <td>這種功能沒有直接取代，因為它沒有提供所有 Microsoft 365 服務的存取權。 請參閱下列常見問題，以取得其他解決方案。</td>
 </tr>
+  <tr class=even>
+  <td>將郵件從一個信箱複製到不同的信箱</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">指派許可權給信箱</a></td>
+  <td>若要讓人員能夠存取另一個使用者的電子郵件（例如，當員工離開您的組織，而您需要讓另一個人存取該離職員工的電子郵件）時，建議您指派該人員的許可權來存取離職員工的郵箱。 因此，不要將信箱專案複製到另一個使用者信箱或共用信箱，只需指派使用者的許可權即可存取來源信箱。</td>
+  
+  </tr>
+
 </tbody>
 </table>
 

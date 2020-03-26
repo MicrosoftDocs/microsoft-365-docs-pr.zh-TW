@@ -2,8 +2,8 @@
 title: 威脅總管和即時偵測, 威脅總管新功能, 威脅總管變更, Office 365 新功能, 安全性, 雲端安全性, ATP 安全性新功能, ATP 新功能
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性與合規性中心的總管和即時偵測。
-ms.openlocfilehash: 3ddcaf4dc457ead7a203e00d71d0d18c23ee6557
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 47dd871a385613c08ad5b4c02a7be8701e4b93a8
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082095"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955600"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
 
@@ -65,7 +65,7 @@ ms.locfileid: "42082095"
 
 |已傳遞  |已標示為垃圾郵件  |已封鎖  |已取代  |
 |---------|---------|---------|---------|
-|電子郵件已傳遞至使用者的收件匣或其他資料夾，使用者可以直接存取。    | 電子郵件已傳送至使用者的垃圾郵件資料夾或刪除的郵件] 資料夾中，且使用者可以存取電子郵件訊息在這些資料夾中。       | 任何已隔離、傳遞失敗或已捨棄的電子郵件，使用者均無法存取。     | 以 .txt 檔案替換為惡意附件的任何電子郵件訊息，均指出附件是惡意的。     |
+|電子郵件已傳遞至使用者的收件匣或其他資料夾，使用者可以直接存取。    | 電子郵件會傳送至使用者的垃圾郵件資料夾或已刪除的資料夾，而且使用者可以存取這些資料夾中的電子郵件。       | 任何已隔離、傳遞失敗或已捨棄的電子郵件，使用者均無法存取。     | 以 .txt 檔案替換為惡意附件的任何電子郵件訊息，均指出附件是惡意的。     |
 
 以下是使用者可以查看及無法查看的內容：
 
@@ -77,10 +77,10 @@ ms.locfileid: "42082095"
 傳遞位置顯示原則和執行傳遞後偵測的結果。 其連結到「傳遞動作」。 已新增此欄位，以深入了解找到問題電子郵件時所採取的動作。 以下是傳遞位置可能的值：
 
 - **收件匣或資料夾**：電子郵件位於收件匣或資料夾中 (根據您的電子郵件規則)。
-- **在內部或外部**： 信箱不存在於雲端上，但會在內部。
+- **部署或外部**：信箱不存在於雲端上，但為內部部署。
 - **垃圾郵件資料夾**：電子郵件位於使用者的 [垃圾郵件] 資料夾中。
 - **刪除的郵件資料夾**：電子郵件位於使用者的 [刪除的郵件] 資料夾中。
-- **隔離**： 隔離中的電子郵件以及不在使用者的信箱。
+- **隔離**：隔離中的電子郵件，而不是使用者信箱中的電子郵件。
 - **失敗**；電子郵件無法傳遞至信箱。
 - **已捨棄**：電子郵件在郵件流程的某處遺失。
 
@@ -139,7 +139,7 @@ ms.locfileid: "42082095"
 
    - **[熱門 URL]** 為已篩選的郵件中的 URL，而電子郵件傳送動作會計算每個 URL。 在網路釣魚電子郵件檢視中，此清單通常會包含合法的 URL。 攻擊者會在這些郵件中混雜善意和惡意的 URL，以試圖傳遞這些郵件，但他們會讓惡意連結看起來更加有趣，以誘使使用者點擊。 URL 表格是依電子郵件總數量排序 (注意：為了簡化檢視，不會顯示此欄)。
 
-   - **[熱門點擊]** 為點擊過的包含在安全連結中的 URL，並依總點擊數排序 (為了簡化檢視，此欄也不會顯示)。 依資料行的總計數表示每個點擊過的 URL 的安全連結按一下結果計數。 在網路釣魚電子郵件檢視中，這些通常是可疑或惡意的 URL，但可能包含網路釣魚郵件中的無害 URL。 已開啟的連結 URL 點擊不會顯示在這裡。
+   - **[熱門點擊]** 為點擊過的包含在安全連結中的 URL，並依總點擊數排序 (為了簡化檢視，此欄也不會顯示)。 依資料行的總計數表示每個點擊過的 URL 的安全連結按一下結果計數。 在網路釣魚電子郵件視圖中，這些都很經常是可疑或惡意的 URLs，但可能包含不具威脅但位於網路釣魚郵件中的 URLs。 已開啟的連結 URL 點擊不會顯示在這裡。
    
    兩個 URL 表格依傳遞動作和位置顯示網路釣魚電子郵件訊息熱門 URL，並顯示已封鎖的 URL 點擊 (或儘管已警告卻仍造訪的 URL)，讓您了解使用者接收到及互動的潛在惡意連結。 您可以從這裡進行進一步分析。 例如，在圖表的下方，您可以查看貴組織環境中封鎖的電子郵件訊息熱門 URL。
    
@@ -202,7 +202,7 @@ ms.locfileid: "42082095"
 - [Office 365 安全性與合規性中心權限](permissions-in-the-security-and-compliance-center.md)
 - [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
-## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>某些威脅總管和即時偵測之間的差異
+## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>威脅瀏覽器與即時偵測的某些差異
 
  - Office 365 ATP 方案 1 提供**即時偵測**報告，而 Office 365 ATP 方案 2 提供**威脅總管**。
  - **即時偵測**報告可讓您即時檢視偵測。 **威脅總管**也有這個功能，但也能讓您檢視特定攻擊的其他詳細資料。

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 深入瞭解 Office 365 高級威脅防護方案2中的自動化調查和回應功能。
 ms.custom: air
-ms.openlocfilehash: 420143a6a2888900cdc128b22f7b0bcb05adad27
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: f6bbad82f3dce7080aca079a5f750dfc1fea068b
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826400"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955566"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自動化調查和回應（AIR）
 
@@ -92,7 +92,7 @@ ms.locfileid: "42826400"
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>範例：使用者報告的網路釣魚郵件啟動調查行動手冊
 
-當您組織中的使用者使用[Outlook 或 Outlook Web App 的報告訊息增益集](enable-the-report-message-add-in.md)提交電子郵件，並將它報告給 Microsoft 時，該報告也會傳送至您的系統，而且會顯示在瀏覽器的使用者報告的視圖中。 這位使用者報告的訊息現在會觸發以系統為基礎的資訊性警示，這會自動啟動調查行動手冊。
+假設組織中的使用者收到他們認為是網路釣魚企圖的電子郵件。 已訓練有素，可報告這類郵件的使用者，會使用[outlook 或 Outlook Web App 的報告訊息增益集](enable-the-report-message-add-in.md)，將其傳送至 Microsoft 進行分析。 提交也會傳送給您的系統，而且會顯示在**提交**視圖（先前稱為**使用者報告**的查看）的 [Explorer] 中。 此外，使用者報告的訊息現在會觸發以系統為基礎的資訊性警示，這會自動啟動調查行動手冊。
 
 在根調查階段中，會評估電子郵件的各個層面。 包括：
 - 決定可能的威脅類型;
@@ -121,13 +121,13 @@ ms.locfileid: "42826400"
 
 除了警示所觸發的自動調查之外，您的組織的安全性運作小組也可在[威脅瀏覽器](threat-explorer.md)的視圖中觸發自動調查。
 
-例如，假設您在瀏覽器中查看的是使用者報告的訊息的資料。 您可以選取結果清單中的專案，然後按一下 [動作] 功能表中的 [**調查**] （假設您有適當的修正許可權）。
+例如，假設您在威脅瀏覽器中使用**惡意**代碼視圖。 您可以使用圖表下方的索引標籤，選取 [**電子郵件**] 索引標籤。如果您選取清單中的一或多個專案，則會啟動 **+ 動作**按鈕。 
 
-![瀏覽器中使用調查按鈕的使用者報告訊息](../../media/Explorer-UserReported-Investigate.png)
+:::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="具有選取郵件的 Explorer":::
 
-在另一個範例中，假設您要查看偵測到包含惡意程式碼之電子郵件的資料，且有數個電子郵件偵測到包含惡意程式碼。 您可以選取 [**電子郵件**] 索引標籤，選取一或多封電子郵件，然後在 [**動作**] 功能表上選取 [**調查**]。 
+您可以使用 [**動作**] 功能表，選取 [**觸發調查**]。
 
-![在瀏覽器中開始調查惡意程式碼](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
+:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="選取郵件的動作功能表":::
 
 類似于警示所觸發的行動行動方式，從瀏覽器中的視圖觸發的自動調查包括根調查、識別和關聯威脅的步驟，以及緩解這些威脅的建議動作。
 

@@ -593,6 +593,6 @@
         - name: Office 365 企業版
           href: 'https://docs.microsoft.com/office-365-security/Enterprise'
         - name: 商務用 Office 365
-          href: 'https://docs.microsoft.com/office-365-security/admin/admin-home'
+          href: 'https://docs.microsoft.com/microsoft-365/admin/admin-home'
     - name: Microsoft 365 合規性
       href: 'https://docs.microsoft.com/microsoft-365/compliance/'
