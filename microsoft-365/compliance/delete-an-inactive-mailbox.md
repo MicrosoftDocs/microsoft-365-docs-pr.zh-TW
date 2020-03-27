@@ -1,5 +1,7 @@
 ---
-title: 删除 Office 365 中的非活动邮箱
+title: 在 Office 365 中刪除非作用中的信箱
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,46 +15,46 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
-description: 当您不再需要保留 Office 365 非活动邮箱的内容时，可以通过删除保留来永久删除非活动邮箱。 删除保留后，非活动邮箱将被标记为删除，并在处理后永久删除。
-ms.openlocfilehash: b6cea7284ccb930ef10ec96c082291acb9f66f2f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 當您不再需要保留 Office 365 非使用中信箱的內容時，您可以移除 [保留]，以永久刪除非使用中的信箱。 移除保留後，非作用中的信箱會標示為待刪除，並且會在處理完後永久刪除。
+ms.openlocfilehash: 69628a0e3c39a0a842b2efa58c34b75c7663c728
+ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070624"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978253"
 ---
-# <a name="delete-an-inactive-mailbox-in-office-365"></a>删除 Office 365 中的非活动邮箱
+# <a name="delete-an-inactive-mailbox-in-office-365"></a>在 Office 365 中刪除非作用中的信箱
 
-在前任員工離開您的組織之後，可透過非使用中信箱來保留其電子郵件。 当您不再需要保留非活动邮箱的内容时，可以通过删除保留来永久删除非活动邮箱。 此外，有可能在非活动邮箱上放置多个保留。 例如，非活动邮箱可能放在诉讼保留和一个或多个就地保留上。 此外，Office 365 保留策略（在 Office 365 或 Microsoft 365 中的安全和合规性中心创建）可能应用于非活动邮箱。 您必须从非活动邮箱中删除所有保留和 Office 365 保留策略才能将其删除。 删除保留和保留策略后，非活动邮箱将被标记为删除，并在处理后永久删除。
+在前任員工離開您的組織之後，可透過非使用中信箱來保留其電子郵件。 當您不再需要保留非使用中信箱的內容時，您可以移除 [保留]，以永久刪除非使用中的信箱。 此外，可能會在非使用中的信箱上放置多個保留。 例如，非使用中的信箱可能處於訴訟暫止狀態，且有一或多個 In-Place 保留。 此外，Office 365 保留原則（在 Office 365 或 Microsoft 365 中的安全性與合規性中心建立）可能會套用到非使用中的信箱。 您必須移除非使用中信箱的所有保留和 Office 365 保留原則，才能加以刪除。 移除保留和保留原則之後，非作用中的信箱會標示為待刪除，並且會在處理完後永久刪除。
   
 > [!IMPORTANT]
-> 我們已將 2017 年 7 月 1 日的期限延後，以建立新的「就地保留」來建立非使用中的信箱。但到今年年底或明年年初，您將無法在 Exchange Online 中建立新的「就地保留」。到時，只有「訴訟資料暫留」和 Office 365 保留原則可以用來建立非使用中的信箱。不過，仍會支援「就地保留」上現有的非使用中信箱，並且您可以繼續管理非使用信箱上的「就地保留」。這包括變更「就地保留」期間，以及透過移除「就地保留」永久刪除非使用中的信箱。 
+> 當我們繼續以保留信箱內容的不同方式投資時，我們宣佈在 Exchange 系統管理中心中封存 In-Place 的退休。 這表示您應該使用訴訟保留和 Office 365 保留原則來建立非使用中的信箱。 從2020年7月1日起，您將無法在 Exchange Online 中建立新的 In-Place 保留。 不過，您仍然可以變更置於非使用中信箱的 In-Place 保留期間。 不過，從2020年10月1日開始，您將無法變更保留期間。 您只能移除 In-Place 保留才能刪除非使用中的信箱。 在移除保留之前，仍會保留位於 In-Place 暫止的現有非作用中信箱。 如需停用 In-Place 保留的詳細資訊，請參閱[舊版 eDiscovery tools 的退休](legacy-ediscovery-retirement.md)。
   
-有关从非活动邮箱中删除保留后发生的情况的说明，[请参阅"详细信息"](#more-information)部分。 
+請參閱[詳細資訊](#more-information)一節，以取得從非使用中的信箱移除保留專案之後所發生狀況的描述。
   
 ## <a name="before-you-begin"></a>開始之前
 
-- 您必须使用 Exchange 在线 PowerShell 从非活动邮箱中删除诉讼保留。 不能使用 Exchange 管理中心 （EAC）。 有关分步说明，请参阅[连接到交换在线 PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。 您可以使用 Exchange 在线电源外壳或 EAC 从非活动邮箱中删除就地保留。 
+- 您必須使用 Exchange Online PowerShell 移除非使用中信箱的訴訟暫止狀態。 您無法使用 Exchange 系統管理中心（EAC）。 如需逐步指示，請參閱[Connect To Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。 您可以使用 Exchange Online PowerShell 或 EAC 從非使用中的信箱移除 In-Place 保留。 
     
-- 在删除保留并删除非活动邮箱之前，可以将非活动邮箱的内容复制到其他邮箱。 有关详细信息，请参阅[在 Office 365 中还原非活动邮箱。](restore-an-inactive-mailbox.md)
+- 您可以將非使用中信箱的內容複寫到另一個信箱，然後再移除保留和刪除非使用中的信箱。 如需詳細資訊，請參閱[Restore a 非使用中的信箱在 Office 365](restore-an-inactive-mailbox.md)。
     
-- 如果从非活动邮箱中删除保留或 Office 365 保留策略，并且邮箱的软删除邮箱保留期已过期，则邮箱将被永久删除。 删除后，无法恢复。 在删除保留之前，请确保不再需要邮箱中的内容。 如果要重新激活非活动邮箱，可以恢复它。 有关详细信息，请参阅[在 Office 365 中恢复非活动邮箱。](recover-an-inactive-mailbox.md)
+- 如果您移除非使用中信箱的保留原則或 Office 365 保留原則，且該信箱的虛刪除信箱保留期間已過期，則會永久刪除該信箱。 刪除後，便無法復原。 在您移除保留之前，請確定您不再需要信箱中的內容。 如果您想要重新啟用非使用中的信箱，可以進行復原。 如需詳細資訊，請參閱[復原 Office 365 中的非使用中信箱](recover-an-inactive-mailbox.md)。
     
-- 有关非活动邮箱的详细信息，请参阅 Office [365 中的非活动邮箱。](inactive-mailboxes-in-office-365.md)
+- 如需非使用中信箱的相關資訊，請參閱[Office 365 中的非使用中信箱](inactive-mailboxes-in-office-365.md)。
     
-## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>步骤 1：识别非活动邮箱上的保留
+## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>步驟1：識別非使用中信箱上的封存
 
-如前所述，诉讼保留、就地保留或 Office 365 保留策略可能放置在非活动邮箱中。 第一步是标识非活动邮箱上的保留。
+如先前所述，訴訟暫止、In-Place 保留或 Office 365 保留原則可能會放在非使用中的信箱上。 第一步是在非使用中的信箱上識別保留。
   
-运行以下命令以显示组织中所有非活动邮箱的保留信息。
+執行下列命令，以顯示組織中所有非使用中信箱的保留資訊。
   
-```
+```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,InPlaceHolds
 ```
 
-**诉讼保留**属性的**True**值表示非活动邮箱处于诉讼保留状态。 如果将就地保留放在非活动邮箱上，则保留的 GUID 将显示为**InPlaceHolds**属性的值。 例如，两个非活动邮箱的以下结果显示，在 Ann Beebe 上放置了诉讼保留，在 Pilar Pinilla 上放置了两个就地保留。 
+**True**的**LitigationHoldEnabled**屬性值表示非使用中的信箱處於訴訟暫止狀態。 如果將 In-Place 定格放在非使用中的信箱上，則保留的 GUID 會顯示為**InPlaceHolds**屬性的值。 例如，下列兩個非使用中信箱的結果會顯示對王 Beebe 進行訴訟暫止，並將兩個 In-Place 保留置於 Pilar Pinilla。 
   
-```
+```text
 DisplayName           : Ann Beebe
 Name                  : annb
 IsInactiveMailbox     : True
@@ -67,153 +69,153 @@ InPlaceHolds          : {c0ba3ce811b6432a8751430937152491, ba6f4ba25b62490aaaa25
 ```
 
 > [!TIP]
-> 如果将大量就地保留放在非活动邮箱上，则并非所有就地保留 GUID 都会显示。 可以运行以下命令以显示所有就地保持 GUID：`Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds`
+> 如果有大量的 In-Place 保留在非使用中的信箱上，則不會顯示所有 In-Place 保留 Guid。 您可以執行下列命令來顯示所有 In-Place 保留的 Guid：`Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds`
   
-## <a name="step-2-remove-a-hold-from-an-inactive-mailbox"></a>步骤 2：从非活动邮箱中删除保留
+## <a name="step-2-remove-a-hold-from-an-inactive-mailbox"></a>步驟2：移除非使用中信箱的保留
 
-确定非活动邮箱上放置的保留类型（以及是否存在多个保留）后，下一步是删除邮箱上的保留。 如前所述，您必须删除所有保留才能永久删除非活动邮箱。 
+在您識別在非使用中的信箱上放置的保留類型（以及是否有多個保留）之後，下一步是移除信箱上的保留。 如先前所述，您必須移除所有保留以永久刪除非使用中的信箱。 
   
-### <a name="remove-a-litigation-hold"></a>删除诉讼保留
+### <a name="remove-a-litigation-hold"></a>移除訴訟暫止
 
-如前所述，您必须使用 Windows PowerShell 从非活动邮箱中删除诉讼保留。 不能使用 EAC。 运行以下命令以删除诉讼保留。
+如先前所述，您必須使用 Windows PowerShell 移除非使用中信箱的訴訟暫止狀態。 您無法使用 EAC。 執行下列命令，以移除訴訟暫止狀態。
   
-```
+```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldEnabled $false
 ```
 
 > [!TIP]
-> 标识非活动邮箱的最佳方法是使用其可分辨名称或 Exchange GUID 值。 使用这些值之一有助于防止意外指定错误的邮箱。 
+> 識別非使用中信箱的最佳方式是使用其辨別名稱或 Exchange GUID 值。 使用其中一個值可協助避免意外指定錯誤的信箱。 
   
-### <a name="remove-in-place-holds"></a>移除就地保留
+### <a name="remove-in-place-holds"></a>移除 In-Place 保留
 
- 有两种方法可以从非活动邮箱中删除就地保留： 
+ 有兩種方式可以移除非使用中信箱的 In-Place 保留： 
   
-- **删除就地保留对象**如果要永久删除的非活动邮箱是就地保留的唯一源邮箱，则只需删除就地保留对象即可。 
+- **刪除 In-Place 保留物件**如果您想要永久刪除的非作用中信箱是唯一的 In-Place 保留來源信箱，您只需刪除 In-Place 保留物件即可。 
     
     > [!NOTE]
-    > 您必须禁用保留，然后才能删除就地保留对象。 如果尝试删除启用了保留的就地保留对象，您将收到一条错误消息。 
+    > 您必須先停用保留，才能刪除 In-Place 保留物件。 如果您嘗試刪除已啟用保留的 In-Place 保留物件，您會收到錯誤訊息。 
   
-- **将非活动邮箱作为就地保留的源邮箱删除**如果要保留其他源邮箱以进行就地保留，可以从源邮箱列表中删除非活动邮箱，并保留就地保留对象。 
+- **移除非使用中的信箱做為 In-Place 保留的來源信箱**如果您想要保留其他來源信箱以供 In-Place 保留，您可以從來源信箱清單中移除非使用中的信箱，並保留 In-Place 保留物件。 
     
-#### <a name="use-the-eac-to-delete-an-in-place-hold"></a>使用 EAC 删除就地保留
+#### <a name="use-the-eac-to-delete-an-in-place-hold"></a>使用 EAC 來刪除 In-Place 暫止
 
-1. 如果您知道要删除的就地保留的名称，则可以转到下一步。 否则，请运行以下命令以获取放置在要永久删除的非活动邮箱上的就地保留的名称。 使用您在步骤 1 中获取的就地保留[GUID：识别非活动邮箱上的保留。](#step-1-identify-the-holds-on-an-inactive-mailbox)
+1. 如果您知道要刪除的 In-Place 保留名稱，您可以移至下一個步驟。 否則，請執行下列命令，以取得放在您要永久刪除之非使用中信箱上的 In-Place 保留名稱。 使用您在步驟1中取得的 In-Place 保留 GUID [：識別非使用中信箱上的保留](#step-1-identify-the-holds-on-an-inactive-mailbox)。
     
-```
-  Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
-```
+   ```powershell
+   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
+   ```
 
-2. 在 EAC 中，转到**合规管理**\>**就地电子数据&amp;展示保留**。
+2. 在 EAC 中，移至 [**規範管理** \> **] &amp; In-Place eDiscovery 保留**]。
     
-3. 选择要删除的就地保持，然后单击"**编辑**![编辑"图标](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)。
+3. 選取您要刪除的 In-Place 保留，然後按一下 [**編輯** ![編輯圖示](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)]。
     
-4. 在"**就地"电子数据&amp;展示保留**属性页上，**单击"就地保留"，** 取消选中与**所选邮箱中的搜索查询匹配的"保留"框中的"放置内容"，****然后单击"保存"。**
+4. 在 [ **In-Place eDiscovery &amp;暫**止屬性] 頁面上，按一下 [ **In-Place 保留**]，取消選取 [**將符合搜尋查詢的內容放入保留的所選信箱**] 方塊，然後按一下 [**儲存**]。
     
-5. 在**就地电子&amp;数据展示保留**页上，再次选择就地保持，然后单击"**删除"**![图标](media/87565fbb-5147-4f22-9ed7-1c18ce664392.png)。
+5. 在 [ **In-Place eDiscovery &amp;保留**] 頁面上，再次選取 In-Place [保留]，然後按一下 [](../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png)**刪除**![刪除圖示]。
     
-6. 在警告中，单击"**是"** 以删除就地保留。 
+6. 在警告中，按一下 **[是]** 以刪除 In-Place 保留。 
     
-#### <a name="use-exchange-online-powershell-to-delete-an-in-place-hold"></a>使用 Exchange 在线电源外壳删除就地保留
+#### <a name="use-exchange-online-powershell-to-delete-an-in-place-hold"></a>使用 Exchange Online PowerShell 刪除 In-Place 保留
 
-1. 创建一个变量，其中包含要删除的就地保留的属性。 使用您在步骤 1 中获取的就地保留[GUID：识别非活动邮箱上的保留。](#step-1-identify-the-holds-on-an-inactive-mailbox)
+1. 建立包含您要刪除之 In-Place 保留之屬性的變數。 使用您在步驟1中取得的 In-Place 保留 GUID [：識別非使用中信箱上的保留](#step-1-identify-the-holds-on-an-inactive-mailbox)。
     
-```
-  $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
-```
+   ```powershell
+   $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
+   ```
 
-2. 禁用就地保留。
+2. 停用 In-Place 暫止的保留。
     
-```
-  Set-MailboxSearch $InPlaceHold.Name -InPlaceHoldEnabled $false
-```
+   ```powershell
+   Set-MailboxSearch $InPlaceHold.Name -InPlaceHoldEnabled $false
+   ```
 
-3. 删除就地保留。
+3. 刪除 In-Place 保留。
     
-```
-  Remove-MailboxSearch $InPlaceHold.Name
-```
+   ```powershell
+   Remove-MailboxSearch $InPlaceHold.Name
+   ```
 
-#### <a name="use-the-eac-to-remove-an-inactive-mailbox-from-an-in-place-hold"></a>使用 EAC 从就地保留中删除非活动邮箱
+#### <a name="use-the-eac-to-remove-an-inactive-mailbox-from-an-in-place-hold"></a>使用 EAC 從 In-Place 保留中移除非使用中的信箱
 
-1. 如果您知道放置在非活动邮箱上的就地保留的名称，则可以转到下一步。 否则，运行以下命令以获取放置在邮箱上的就地保留的名称。 使用您在步骤 1 中获取的就地保留[GUID：识别非活动邮箱上的保留。](#step-1-identify-the-holds-on-an-inactive-mailbox)
+1. 如果您知道放在非使用中信箱上的 In-Place 保留名稱，您可以移至下一個步驟。 否則，請執行下列命令，以取得信箱上所放置的 In-Place 暫止名稱。 使用您在步驟1中取得的 In-Place 保留 GUID [：識別非使用中信箱上的保留](#step-1-identify-the-holds-on-an-inactive-mailbox)。
     
-```
-  Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
-```
+   ```powershell
+   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
+   ```
 
-2. 在 EAC 中，转到**合规管理**\>**就地电子数据&amp;展示保留**。
+2. 在 EAC 中，移至 [**規範管理** \> **] &amp; In-Place eDiscovery 保留**]。
     
-3. 选择放置在非活动邮箱上的就地保持，然后单击"**编辑**![编辑"图标](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)。
+3. 選取非使用中信箱上的 In-Place 保留，然後按一下 [**編輯** ![編輯圖示](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)]。
     
-4. 在**就地电子数据展示&amp;保留**属性页上，单击"**源"。**
+4. 在 [ **In-Place eDiscovery &amp;暫**止屬性] 頁面上，按一下 [**來源**]。
     
-5. 在源邮箱列表中，单击要删除的非活动邮箱的名称，然后单击"**删除"**![图标](media/adf01106-cc79-475c-8673-065371c1897b.gif)。
+5. 在來源信箱清單中，按一下您要移除之非使用中信箱的名稱，然後按一下 [**移除**![移除圖示](../media/adf01106-cc79-475c-8673-065371c1897b.gif)]。
     
-6. **单击"保存"** 以保存更改。 将显示一条消息，指出操作已成功完成。 
+6. 按一下 [**儲存**] 以儲存變更。 隨即顯示一則訊息，指出作業已成功完成。 
     
-7. 重复步骤 1 到 6 以删除放置在非活动邮箱上的其他就地保留。
+7. 重複步驟1到6，以移除非使用中信箱上的其他 In-Place 保留。
     
-#### <a name="use-exchange-online-powershell-to-remove-an-inactive-mailbox-from-an-in-place-hold"></a>使用 Exchange 在线 PowerShell 从就地保留中删除非活动邮箱
+#### <a name="use-exchange-online-powershell-to-remove-an-inactive-mailbox-from-an-in-place-hold"></a>使用 Exchange Online PowerShell 從 In-Place 保留中移除非使用中的信箱
 
-如果就地保留包含大量源邮箱，则非活动邮箱可能不会列在 EAC**中的"源"** 页上。 编辑就地保留时，"**源"** 页上最多显示 3，000 个邮箱。 **如果"源"** 页上未列出非活动邮箱，则可以使用 Exchange 在线 PowerShell 将其从就地保留中删除。 
+如果 In-Place 保留包含大量的來源信箱，則可能是非使用中的信箱不會列在 EAC 的 [**來源**] 頁面上。 當您編輯 In-Place 保留時，[**來源**] 頁面上最多可顯示3000個信箱。 如果「**來源**」頁面沒有列出非使用中的信箱，您可以使用 Exchange Online PowerShell 將其從 In-Place 保留中移除。 
   
-1. 创建一个变量，其中包含放置在非活动邮箱上的就地保留的属性。 使用您在步骤 1 中获取的就地保留[GUID：识别非活动邮箱上的保留。](#step-1-identify-the-holds-on-an-inactive-mailbox)
+1. 建立包含非使用中信箱上的 In-Place 保留屬性的變數。 使用您在步驟1中取得的 In-Place 保留 GUID [：識別非使用中信箱上的保留](#step-1-identify-the-holds-on-an-inactive-mailbox)。
     
-```
-  $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
-```
+    ```powershell
+    $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
+    ```
 
-2. 验证非活动邮箱是否列为就地保留的源邮箱。 
+2. 確認非使用中的信箱已列為 In-Place 保留的來源信箱。 
     
-```
-  $InPlaceHold.Sources
-```
+   ```powershell
+   $InPlaceHold.Sources
+   ```
 
-   **注意：**"就地保留"的*源*属性通过*源 ExchangeDN*属性标识源邮箱。 由于此属性唯一标识非活动邮箱，因此使用"就地保留"中的*源*属性有助于防止删除错误的邮箱。 如果两个邮箱具有相同的别名或 SMTP 地址，这也有助于避免出现问题。 
+   **附注：** In-Place 保留的 source 屬性會依其*LegacyExchangeDN*屬性*識別來源信箱*。 由於此屬性唯一識別非使用中的信箱，因此使用 In-Place 保留中的*來源*屬性可協助避免移除錯誤的信箱。 如果兩個信箱具有相同的別名或 SMTP 位址，也有助於避免發生問題。 
    
-3. 从变量中的源邮箱列表中删除非活动邮箱。 请确保使用上一步中命令返回的非活动邮箱的**LegacyExchangeDN。** 
+3. 從變數中的來源信箱清單中移除非使用中的信箱。 請務必使用上一個步驟中命令所傳回的非使用中信箱的**LegacyExchangeDN** 。 
     
-```
-  $InPlaceHold.Sources.Remove("<LegacyExchangeDN of the inactive mailbox>")
-```
+    ```powershell
+    $InPlaceHold.Sources.Remove("<LegacyExchangeDN of the inactive mailbox>")
+    ```
 
-    For example, the following command removes the inactive mailbox for Pilar Pinilla.
+    例如，下列命令會移除 Pilar Pinilla 的非使用中信箱。
     
-  ```
-  $InPlaceHold.Sources.Remove("/o=contoso/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=9c8dfff651ec4908950f5df60cbbda06-pilarp")
-  ```
+    ```powershell
+    $InPlaceHold.Sources.Remove("/o=contoso/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/ cn=9c8dfff651ec4908950f5df60cbbda06-pilarp")
+    ```
 
-4. 验证非活动邮箱是否从变量中的源邮箱列表中删除。
+4. 確認非使用中信箱已從變數中的來源信箱清單中移除。
     
-```
-  $InPlaceHold.Sources
-```
+   ```powershell
+   $InPlaceHold.Sources
+   ```
 
-5. 使用更新的源邮箱列表修改就地保留，该列表不包括非活动邮箱。
+5. 使用更新的來源信箱清單（不含非使用中的信箱）修改 In-Place 保留。
     
-```
-  Set-MailboxSearch $InPlaceHold.Name -SourceMailboxes $InPlaceHold.Sources
-```
+   ```powershell
+   Set-MailboxSearch $InPlaceHold.Name -SourceMailboxes $InPlaceHold.Sources
+   ```
 
-6. 验证非活动邮箱是否已从就地保留的源邮箱列表中删除。
+6. 確認已從 In-Place 保留的來源信箱清單中移除非使用中信箱。
     
-```
-  Get-MailboxSearch $InPlaceHold.Name | FL Sources
-```
+   ```powershell
+   Get-MailboxSearch $InPlaceHold.Name | FL Sources
+   ```
 
 ## <a name="more-information"></a>詳細資訊
 
-- **非活动邮箱是软删除邮箱的类型。** 在 Exchange Online 中，软删除邮箱是已删除但可在特定保留期内恢复的邮箱。 Exchange 联机中的软删除邮箱保留期为 30 天。 这意味着邮箱可以在软删除后的 30 天内恢复。 30 天后，软删除邮箱被标记为永久删除，无法恢复。 
+- **非使用中的信箱是虛刪除信箱的類型。** 在 Exchange Online 中，虛刪除的信箱是已刪除但可在特定保留期間內復原的信箱。 Exchange Online 中的虛刪除信箱保留期間是30天。 這表示信箱可在虛刪除的30天內復原。 30天后，虛刪除的信箱會標示為永久刪除，且無法復原。 
     
-- **删除非活动邮箱上的保留后会发生什么情况？** 该邮箱被视为其他软删除邮箱，并在 30 天软删除邮箱保留期到期后标记为永久删除。 此保留期从首次使邮箱处于非活动状态的日期开始。 此日期称为软删除日期，即相应的 Office 365 用户帐户被删除的日期，或**使用"删除**邮箱"cmdlet 删除 Exchange Online 邮箱的日期。 软删除日期不是您删除保留的日期。 
+- **移除非使用中信箱的保留後，會發生什麼情況？** 信箱會被視為其他虛刪除的信箱，並在30天的虛刪除信箱保留期間到期後標示為永久刪除。 此保留期間會在信箱最初變為非使用中的日期開始。 此日期稱為虛刪除日期，也就是在刪除對應的 Office 365 使用者帳戶，或是使用**Remove-Mailbox** Cmdlet 刪除 Exchange Online 信箱時的日期。 [虛刪除] 日期不是移除保留的日期。 
     
-- **在删除保留后，非活动邮箱是否立即永久删除？** 如果非活动邮箱的软删除日期超过 30 天，则删除保留后不会永久删除该邮箱。 该邮箱将被标记为永久删除，并在下次处理时将其删除。 
+- **移除保留後，是否會永久刪除非作用中的信箱？** 如果非使用中信箱的虛刪除日期超過30天，則在您移除保留後，就不會永久刪除該信箱。 信箱將會標示為永久刪除，而且會在下一次處理時刪除。 
     
-- **软删除邮箱保留期如何影响非活动邮箱？** 如果非活动邮箱的软删除日期比删除保留的日期早 30 天，则邮箱将被标记为永久删除。 但是，如果非活动邮箱在过去 30 天内具有软删除日期，而您删除了保留，则可以恢复邮箱，直到软删除邮箱保留期到期。 有关详细信息，请参阅[联机交换中删除或还原用户邮箱。](https://go.microsoft.com/fwlink/?linkid=856835) 软删除邮箱保留期到期后，您已按照恢复非活动邮箱的过程。 有关详细信息，请参阅[在 Office 365 中恢复非活动邮箱。](recover-an-inactive-mailbox.md)
+- **虛刪除信箱保留期間對非使用中信箱的影響如何？** 如果非使用中信箱的虛刪除日期超過超過30天，則在刪除保留的日期之前，會將信箱標記為永久刪除。 不過，如果非使用中的信箱在過去30天內有虛刪除的日期，而且您移除保留，您可以將信箱復原，直到虛刪除的信箱保留期間到期為止。 如需詳細資訊，請參閱[刪除或還原 Exchange Online 中的使用者信箱](https://go.microsoft.com/fwlink/?linkid=856835)。 當虛刪除的信箱保留期間到期後，您必須遵循復原非使用中信箱的程式。 如需詳細資訊，請參閱[復原 Office 365 中的非使用中信箱](recover-an-inactive-mailbox.md)。
     
-- **删除保留后，如何显示有关非活动邮箱的信息？** 删除保留并将非活动邮箱还原回软删除邮箱后，不会使用"*非活动邮箱"* 参数与**Get-邮箱**cmdlet 一起返回。 但是，您可以使用**获取邮箱 -软删除邮箱**命令显示有关邮箱的信息。 例如： 
+- **移除保留後，如何顯示非使用中信箱的相關資訊？** 在移除保留，且非作用中的信箱回復回虛刪除信箱之後，就不會使用*InactiveMailboxOnly*參數搭配**Get-Mailbox** Cmdlet 來傳回。 不過，您可以使用**Get-Mailbox-SoftDeletedMailbox**命令來顯示信箱的相關資訊。 例如： 
     
-```
+  ```text
   Get-Mailbox -SoftDeletedMailbox -Identity pilarp | FL Name,Identity,LitigationHoldEnabled,In
   Placeholds,WhenSoftDeleted,IsInactiveMailbox
   Name                   : pilarp
@@ -222,7 +224,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   InPlaceHolds           : {}
   WhenSoftDeleted        : 10/30/2014 1:19:04 AM
   IsInactiveMailbox      : False
-```
-  
-在上面的*示例中，WhenSoftDeletedd*属性标识软删除日期，在此示例中为 2014 年 10 月 30 日。 如果此软删除邮箱以前是已为其删除保留的非活动邮箱，则将在*WhenSoftDeleteds*属性的值后 30 天永久删除该邮箱。 在这种情况下，邮箱在 2014 年 11 月 30 日之后将永久删除。
+  ```
+
+  在上述範例中， *WhenSoftDeleted*屬性會識別虛刪除的日期，在此範例中為2014年10月30日。 如果此虛刪除信箱先前為已移除保留的非使用中信箱，則會在*WhenSoftDeleted*屬性值後的30天內永久刪除該信箱。 在此情況下，信箱會在2014年11月30日之後永久刪除。
 

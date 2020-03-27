@@ -11,14 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Exchange Online 中的 In-Place eDiscovery 和 In-Place 保留（以及對應的 PowerShell Cmdlet）會在2020的上半年內淘汰。 Search-Mailbox Cmdlet 和 Office 365 Advanced eDiscovery 1.0 1.0 也會在相同的時段內淘汰。
-ms.openlocfilehash: f5ca92dc12fae102cef8e7dc5aa3c4c07785cd96
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 5ee588b2c05241628242e8660f10c23dba809bf8
+ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955542"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978163"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>舊的 eDiscovery 工具退休
+
+> [!IMPORTANT]
+> Microsoft 已評估公開健康情況，我們瞭解這對客戶造成的影響。 我們想要成為強大的合作夥伴和負責的全球公民。 若要減少您面臨的眾多負擔之一，我們將會延遲下列三個月的舊版 eDiscovery 工具的排程退休。 **更新後的退休日期會反映在下方。**
 
 在幾年中，Microsoft 提供了 eDiscovery 工具，可讓您從 Exchange Online 搜尋、預覽及匯出電子郵件內容。 不過，這些工具不再提供有效的方式，可在其他 Office 365 服務中搜尋非 Exchange 內容，例如 SharePoint 線上和 Office 365 群組。 為了解決此情況，Microsoft 提供了其他 eDiscovery 工具，可協助您搜尋各種各樣的 Office 365 內容。 而且我們致力於在[Microsoft 365 規範中心](https://compliance.microsoft.com)內整合最新和功能強大的 eDiscovery 功能。 這可讓組織對許多 Office 365 服務（包括 Exchange Online）的內容，回應法律、內部及其他檔要求。
 
@@ -78,9 +81,9 @@ ms.locfileid: "42955542"
 
 ### <a name="timeline-for-retirement"></a>退休的時程表
 
-- 2020年4月1日：您將無法建立新的搜尋和保留，但是您仍然可以自行承擔執行、編輯和刪除現有的搜尋。 Microsoft 支援將不會再 In-Place EAC 中的 eDiscovery & 保留。
+- 2020年7月1日：您將無法建立新的搜尋和保留，但是您仍然可以自行承擔執行、編輯和刪除現有的搜尋。 Microsoft 支援將不會再 In-Place EAC 中的 eDiscovery & 保留。
 
-- 2020年7月1日： In-Place eDiscovery & 保留 EAC 中的功能將會置於唯讀模式。 這表示您只可以移除現有的搜尋和保留。
+- 2020年10月1日： In-Place eDiscovery & 保留 EAC 中的功能將置於唯讀模式。 這表示您只可以移除現有的搜尋和保留。
 
 ### <a name="alternative-tools"></a>替代工具
 
@@ -181,9 +184,9 @@ Microsoft 365 規範中心也會使用[規範界限](set-up-compliance-boundarie
 
 ### <a name="timeline"></a>時間表
 
-- 2020年4月1日：您將無法使用**New-MailboxSearch**來建立新的 In-Place eDiscovery 搜尋和 In-Place 保留，但是您仍然可以使用 Cmdlet 來執行、編輯和刪除現有的搜尋，並以您自己的風險加以保留。 Microsoft 支援人員將不再為這些類型的搜尋和保留提供協助。
+- 2020年7月1日：您將無法使用**New-MailboxSearch**來建立新的 In-Place eDiscovery 搜尋和 In-Place 保留，但是您仍然可以使用 Cmdlet 來執行、編輯和刪除現有的搜尋，並以您自己的風險進行。 Microsoft 支援人員將不再為這些類型的搜尋和保留提供協助。
 
-- 2020年7月1日：如先前所述，將 EAC 中的 In-Place eDiscovery & 保留功能會置於唯讀模式。 這也表示您將無法使用**New-MailboxSearch**、 **Start-MailboxSearch**或**Set-MailboxSearch** Cmdlet。 您只可以取得及移除現有的搜尋和保留。
+- 2020年10月1日：如先前所述，將 EAC 中的 In-Place eDiscovery & 保留功能會置於唯讀模式。 這也表示您將無法使用**New-MailboxSearch**、 **Start-MailboxSearch**或**Set-MailboxSearch** Cmdlet。 您只可以取得及移除現有的搜尋和保留。
 
 ### <a name="alternative-tools"></a>替代工具
 
@@ -262,7 +265,7 @@ Exchange Online PowerShell 中的**Search-Mailbox** Cmdlet 會在 [正在撤銷]
 
 ### <a name="timeline"></a>時間表
 
--  2020年4月1日：將無法再使用**Search-Mailbox** Cmdlet，而且 Microsoft 支援將不再提供協助。
+-  2020年7月1日：將無法再使用**Search-Mailbox** Cmdlet，Microsoft 支援人員將不再提供協助。
 
 ### <a name="alternative-tools"></a>替代工具
 
@@ -324,7 +327,7 @@ Exchange 系統管理中心的 In-Place eDiscovery & 保留功能，以及 excha
 
 ### <a name="timeline"></a>時間表
 
-- 2020年4月1日：將不再提供 GetSearchableMailboxes、SearchMailboxes、SetHoldOnMailboxes 和 GetHoldOnMailboxes 作業，而且 Microsoft 支援將不再提供協助。
+- 2020年7月1日：將不再提供 GetSearchableMailboxes、SearchMailboxes、SetHoldOnMailboxes 和 GetHoldOnMailboxes 作業，而且 Microsoft 支援將不再提供協助。
 
 ## <a name="advanced-ediscovery-v10"></a>Advanced eDiscovery v 1。0
 
@@ -332,7 +335,7 @@ Advanced ediscovery 1.0 版，這是 eDiscovery 案例中的高級 eDiscovery �
 
 Microsoft 365 （也稱為「 *Advanced ediscovery 2.0 2.0*」）中新的 [ediscovery 解決方案] 提供了原始解決方案的所有功能，但現在包含以保管人為基礎的方法，可識別其他 Microsoft 365 服務中的內容、收集該內容，然後將其新增至審閱集，以供檢閱者使用 fast search 查詢、標記和分析功能，協助挑選相關的檔。 「高級 eDiscovery」現在包括 Microsoft 和非 Microsoft 檔案類型的增強的處理和原生檢視器、[這裡](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20)是檔案類型的完整清單，以及支援的元資料欄位在[這裡](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)。 此外，新的高級 eDiscovery 解決方案提供功能強大的保管人功能，可讓您將保留套用至不同服務中的內容、通知使用者保留，以及追蹤保管人回應，全部都是在高級 eDiscovery 案例內。
 
-此時，我們建議您開始將 eDiscovery 工作流程轉換為新的高級 eDiscovery 功能。 雖然您仍然可以存取現有案例中的 Advanced eDiscovery 1.0 版，但 Microsoft 支援不會在2020年7月1日之後提供支援。 如需詳細資訊，請參閱下列時程表。
+此時，我們建議您開始將 eDiscovery 工作流程轉換為新的高級 eDiscovery 功能。 雖然您仍然可以存取現有案例中的 Advanced eDiscovery 1.0 版，但 Microsoft 支援不會在2020年10月1日之後提供支援。 如需詳細資訊，請參閱下列時程表。
 
 ### <a name="scope-of-affected-organizations"></a>受影響組織的範圍
     
@@ -344,9 +347,9 @@ Microsoft 365 （也稱為「 *Advanced ediscovery 2.0 2.0*」）中新的 [edis
 
 ### <a name="timeline"></a>時間表
 
-- 2020年4月1日：您將無法建立新的高級 eDiscovery 1.0 案例。
+- 2020年7月1日：您將無法建立新的高級 eDiscovery 1.0 案例。
 
-- 2020年7月1日：您將無法在任何情況下新增資料（為高級 eDiscovery 準備搜尋結果）。 您將能夠繼續使用現有案例中的資料，必須自行承擔。 Microsoft 支援將不再提供協助。 
+- 2020年10月1日：您將無法在任何情況下新增資料（為高級 eDiscovery 準備搜尋結果）。 您將能夠繼續使用現有案例中的資料，必須自行承擔。 Microsoft 支援將不再提供協助。 
 
 ### <a name="alternative-tools"></a>替代工具
 
