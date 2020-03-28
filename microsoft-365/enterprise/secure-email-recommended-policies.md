@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 8370744d244ce424fa21e496e8dfd4f470de88e6
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: dd35bf0d7439a19d7b1562e7a0d0681679b34c36
+ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959179"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43035108"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>保護電子郵件的原則建議
 
@@ -42,8 +42,8 @@ ms.locfileid: "42959179"
 |:---------------|:-------|:----------------|
 |**Baseline**|[當登入風險為*中*或*高*時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲應用程式的指派中包含 Exchange Online|
 |        |[封鎖不支援新式驗證的用戶端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在雲應用程式的指派中包含 Exchange Online|
-|        |[定義應用程式保護原則](identity-access-policies.md#high-risk-users-must-change-password)|請確定 Outlook 已包含在應用程式清單中。 請務必更新每個平臺的原則（iOS、Android、Windows）|
-|        |[需要支援 Intune 應用程式保護原則的應用程式](identity-access-policies.md#require-apps-that-support-intune-app-protection-policies)|在雲端應用程式清單中包含 Exchange Online|
+|        |[套用應用程式資料保護原則](identity-access-policies.md#apply-app-data-protection-policies)|請確定 Outlook 已包含在應用程式清單中。 請務必更新每個平臺的原則（iOS、Android、Windows）|
+|        |[需要核准的應用程式和應用程式保護](identity-access-policies.md#require-approved-apps-and-app-protection)|在雲端應用程式清單中包含 Exchange Online|
 |        |[需要相容的電腦](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在雲端 app 清單中包含 Exchange Online|
 |        |[封鎖 ActiveSync 用戶端](#block-activesync-clients)|新增此新原則| 
 |**敏感性**|[當登入風險為*低*、*中*或*高*時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| 在雲應用程式的指派中包含 Exchange Online|
