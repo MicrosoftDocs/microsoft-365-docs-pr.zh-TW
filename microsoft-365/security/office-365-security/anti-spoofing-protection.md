@@ -2,8 +2,8 @@
 title: Office 365 的反詐騙保護
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTtracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 本文說明 Office 365 如何減少使用偽造寄件者網域的網路釣魚攻擊，即詐騙網域。 其達成目的的方式是透過分析郵件，和封鎖無法使用標準電子郵件驗證方法或其他寄件者信譽技術來進行驗證的郵件。 採用此項變更是為了減少 Office 365 中的組織所暴露的網路釣魚攻擊數量。
-ms.openlocfilehash: 007686f8d210124948a42b2c254fc58332cdd3de
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a81c22d83e0a476657aa89823e52d3eb6afc4514
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087047"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033479"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 
@@ -89,10 +89,9 @@ Microsoft 的反詐騙技術最初部署在具有 Office 365 企業版 E5 訂閱
 
 雖然 SPF、DKIM 和 DMARC 本身是很有幫助，但是如果郵件沒有明確驗證記錄，它們不會傳達足夠的驗證狀態。 因此，Microsoft 開發了一種演算法，將多個訊號組合成一個稱為「複合驗證」的單一值，或簡稱為 compauth。 系統會在 Office 365 客戶的郵件標頭的 *Authentication-Results* 標頭中，註記 compauth 值。
 
-```
+```text
 Authentication-Results:
   compauth=<fail|pass|softpass|none> reason=<yyy>
-
 ```
 
 |**CompAuth 結果**|**描述**|
@@ -259,7 +258,7 @@ To: someone@fabrikam.com
 
 ### <a name="changing-your-anti-spoofing-settings"></a>變更您的反詐騙設定
 
-若要建立或更新 (跨網域) 反詐騙設定，請瀏覽至 [安全性與合規性中心] 中的 [威脅管理] \> [原則] 索引標籤下的 [防網路釣魚] \>[反詐騙] 設定。 如果您之前從未建立過任何防網路釣魚設定，您必須建立一個新：
+若要建立或更新 (跨網域) 反詐騙設定，請瀏覽至 [安全性與合規性中心] 中的 [威脅管理] \> [原則] 索引標籤下的 [防網路釣魚] \> [反詐騙] 設定。 如果您之前從未建立過任何防網路釣魚設定，您必須建立一個新：
 
 ![防網路釣魚 - 建立新原則](../../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
 
@@ -632,7 +631,7 @@ Microsoft 的反詐騙技術最初部署在具有 Office 365 企業版 E5 訂閱
 
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>如何向 Microsoft 回報垃圾郵件或非垃圾郵件？
 
-您可以使用 [Outlook 的回報郵件增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)，如果未安裝 Outlook，則可[將垃圾郵件，非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
+請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>我是網域系統管理員，但我不認識所有寄件者！
 
@@ -650,9 +649,11 @@ Microsoft 的反詐騙技術最初部署在具有 Office 365 企業版 E5 訂閱
 
 幾乎所有的大型的電子郵件接收者都採用傳統的 SPF、DKIM 和 DMARC。 有些接收者會進行比這些標準更嚴格的其他檢查，但很少會像Office 365 一樣能阻止未經驗證的電子郵件並將其視為詐騙郵件。 不過，因為網路釣魚的問題，大部分產業對於這類特殊電子郵件的控制越來越嚴格。
 
-### <a name="do-i-still-need-the-advanced-spam-filtering-option-enabled-for-spf-hard-fail-if-i-enable-anti-spoofing"></a>如果已啟用反詐騙功能，是否仍需要為「SPF 驗證失敗」啟用進階垃圾郵件篩選選項？
+### <a name="do-i-still-need-to-enable-the-advanced-spam-filter-asf-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>如果我啟用反詐騙功能，是否仍需要啟用進階垃圾郵件篩選 (ASF) 設定「SPF 記錄：驗證失敗」(_MarkAsSpamSpfRecordHardFail_)？
 
-不用，因為反詐騙功能不僅會考慮SPF 驗證失敗，還會考慮更廣泛的標準，所以不需再使用此選項。 如果同時啟用反詐騙功能和 SPF 驗證失敗選項，則可能會發生更多誤判。 我們建議您停用這項功能，因為它幾乎不會增加垃圾郵件或網路釣魚郵件的捕獲率，反而會產生更多誤判。
+不用，因為反詐騙功能不僅會考慮SPF 驗證失敗，還會考慮更廣泛的標準，所以不需再使用此選項。 如果您已啟用反詐騙功能，並且開啟 **SPF 記錄：驗證失敗** (_MarkAsSpamSpfRecordHardFail_)，則可能會發生更多誤判。
+
+我們建議您停用這項功能，因為此功能幾乎不會增加垃圾郵件或網路釣魚郵件的捕獲率，反而會產生更多誤判。 如需詳細資訊，請參閱 [Office 365 中的進階垃圾郵件篩選 (ASF) 設定](advanced-spam-filtering-asf-options.md)。
 
 ### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>寄件者重寫機制 (SRS) 是否有助於修復轉寄的電子郵件？
 
