@@ -1,10 +1,10 @@
 ---
-title: 建立報表排程安全性&amp;合規性中心
+title: 在安全性&amp;與合規性中心建立報表的排程
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 08/28/2018
 audience: ITPro
 ms.topic: article
@@ -16,67 +16,68 @@ search.appverid:
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
-description: 了解如何設定在 [安全性報表排程&amp;合規性中心。
-ms.openlocfilehash: 5a7a4d0b6bef3f800a53e4f980ccd689e011a9ea
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 瞭解如何在安全性&amp;與合規性中心設定報表的排程。
+ms.openlocfilehash: 3e09dee36e14ca1e25f6ea20c8f2b5843dc7edaa
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083458"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030161"
 ---
-# <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a><span data-ttu-id="5ac09-103">建立報表排程安全性&amp;合規性中心</span><span class="sxs-lookup"><span data-stu-id="5ac09-103">Create a schedule for a report in the Security &amp; Compliance Center</span></span>
+# <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a><span data-ttu-id="66d0b-103">在安全性&amp;與合規性中心建立報表的排程</span><span class="sxs-lookup"><span data-stu-id="66d0b-103">Create a schedule for a report in the Security &amp; Compliance Center</span></span>
 
-<span data-ttu-id="5ac09-104">安全性&amp;合規性中心，有幾項[報表和深入解析](reports-and-insights-in-security-and-compliance.md)可用以協助貴組織的安全性小組減輕並解決貴組織的威脅。</span><span class="sxs-lookup"><span data-stu-id="5ac09-104">In the Security &amp; Compliance Center, several [reports and insights](reports-and-insights-in-security-and-compliance.md) are available to help your organization's security team mitigate and address threats to your organization.</span></span> <span data-ttu-id="5ac09-105">如果您是貴組織的安全性小組的成員，您可以建立報表的排程。</span><span class="sxs-lookup"><span data-stu-id="5ac09-105">If you're a member of your organization's security team, you can create a schedule for a report.</span></span> <span data-ttu-id="5ac09-106">您建立的排程可以包含自訂日期範圍，以符合您的組織。</span><span class="sxs-lookup"><span data-stu-id="5ac09-106">The schedule you create can include a custom date ranges to suit your organization.</span></span> 
+<span data-ttu-id="66d0b-104">在安全性&amp;與合規性中心中，有數個[報告和洞察力](reports-and-insights-in-security-and-compliance.md)可協助您的組織的安全性小組緩解並解決組織面臨的威脅。</span><span class="sxs-lookup"><span data-stu-id="66d0b-104">In the Security &amp; Compliance Center, several [reports and insights](reports-and-insights-in-security-and-compliance.md) are available to help your organization's security team mitigate and address threats to your organization.</span></span> <span data-ttu-id="66d0b-105">如果您是組織的安全性小組成員，則可以建立報表的排程。</span><span class="sxs-lookup"><span data-stu-id="66d0b-105">If you're a member of your organization's security team, you can create a schedule for a report.</span></span> <span data-ttu-id="66d0b-106">您建立的排程可以包含自訂日期範圍，以符合您的組織。</span><span class="sxs-lookup"><span data-stu-id="66d0b-106">The schedule you create can include a custom date ranges to suit your organization.</span></span> 
   
-## <a name="create-a-schedule-for-a-report"></a><span data-ttu-id="5ac09-107">建立報告排程</span><span class="sxs-lookup"><span data-stu-id="5ac09-107">Create a schedule for a report</span></span>
+## <a name="create-a-schedule-for-a-report"></a><span data-ttu-id="66d0b-107">建立報告排程</span><span class="sxs-lookup"><span data-stu-id="66d0b-107">Create a schedule for a report</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="5ac09-108">請確定您有執行這項工作的必要權限。</span><span class="sxs-lookup"><span data-stu-id="5ac09-108">Make sure that you have the necessary permissions to perform this task.</span></span> <span data-ttu-id="5ac09-109">一般而言，Office 365 全域系統管理員、 安全性管理員和安全性讀取者可以存取報告安全性&amp;合規性中心。</span><span class="sxs-lookup"><span data-stu-id="5ac09-109">In general, Office 365 global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center.</span></span> <span data-ttu-id="5ac09-110">若要深入了解權限，請參閱[中 Office 365 安全性權限&amp;合規性中心](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="5ac09-110">To learn more about permissions, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+> <span data-ttu-id="66d0b-108">請確認您具備執行此工作的必要許可權。</span><span class="sxs-lookup"><span data-stu-id="66d0b-108">Make sure that you have the necessary permissions to perform this task.</span></span> <span data-ttu-id="66d0b-109">一般說來，Office 365 全域管理員、安全性管理員及安全性讀者可以存取安全&amp;規範中心內的報告。</span><span class="sxs-lookup"><span data-stu-id="66d0b-109">In general, Office 365 global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center.</span></span> <span data-ttu-id="66d0b-110">若要深入瞭解許可權，請參閱[Office 365 安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="66d0b-110">To learn more about permissions, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
   
-1. <span data-ttu-id="5ac09-111">在[安全性&amp;合規性中心](https://protection.office.com)，請移至**報表** \> **儀表板**。</span><span class="sxs-lookup"><span data-stu-id="5ac09-111">In the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard**.</span></span>
+1. <span data-ttu-id="66d0b-111">在[安全性&amp;與合規性中心](https://protection.office.com)，移至 [**報告** \> ]**儀表板**。</span><span class="sxs-lookup"><span data-stu-id="66d0b-111">In the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard**.</span></span>
     
-2. <span data-ttu-id="5ac09-112">選擇下列其中一個下列報告：</span><span class="sxs-lookup"><span data-stu-id="5ac09-112">Choose one of the following reports:</span></span> 
+2. <span data-ttu-id="66d0b-112">選擇下列其中一個報告：</span><span class="sxs-lookup"><span data-stu-id="66d0b-112">Choose one of the following reports:</span></span> 
 
-    - <span data-ttu-id="5ac09-113">DLP 原則相符項目</span><span class="sxs-lookup"><span data-stu-id="5ac09-113">DLP policy matches</span></span>
-    - <span data-ttu-id="5ac09-114">Exchange 傳輸規則</span><span class="sxs-lookup"><span data-stu-id="5ac09-114">Exchange Transport Rule</span></span>
-    - <span data-ttu-id="5ac09-115">DLP 誤判和覆寫</span><span class="sxs-lookup"><span data-stu-id="5ac09-115">DLP false positives and overrides</span></span>
-    - <span data-ttu-id="5ac09-116">Office 365 ATP 檔案類型</span><span class="sxs-lookup"><span data-stu-id="5ac09-116">Office 365 ATP file types</span></span>
-    - <span data-ttu-id="5ac09-117">Office 365 ATP 郵件處理</span><span class="sxs-lookup"><span data-stu-id="5ac09-117">Office 365 ATP message disposition</span></span>
-    - <span data-ttu-id="5ac09-118">電子郵件中偵測到的惡意程式碼</span><span class="sxs-lookup"><span data-stu-id="5ac09-118">Malware detected in email</span></span>
-    - <span data-ttu-id="5ac09-119">上方的惡意程式碼</span><span class="sxs-lookup"><span data-stu-id="5ac09-119">Top malware</span></span>
-    - <span data-ttu-id="5ac09-120">排名最前面的寄件者及收件者</span><span class="sxs-lookup"><span data-stu-id="5ac09-120">Top senders and recipients</span></span>
-    - <span data-ttu-id="5ac09-121">詐騙偵測</span><span class="sxs-lookup"><span data-stu-id="5ac09-121">Spoof detections</span></span>
-    - <span data-ttu-id="5ac09-122">垃圾郵件偵測</span><span class="sxs-lookup"><span data-stu-id="5ac09-122">Spam detections</span></span>
-    - <span data-ttu-id="5ac09-123">傳送和接收電子郵件</span><span class="sxs-lookup"><span data-stu-id="5ac09-123">Sent and received email</span></span>
-    - <span data-ttu-id="5ac09-124">DLP 事件</span><span class="sxs-lookup"><span data-stu-id="5ac09-124">DLP incidents</span></span>
-    - <span data-ttu-id="5ac09-125">加密報表</span><span class="sxs-lookup"><span data-stu-id="5ac09-125">Encryption report</span></span>
+    - <span data-ttu-id="66d0b-113">DLP 原則相符專案</span><span class="sxs-lookup"><span data-stu-id="66d0b-113">DLP policy matches</span></span>
+    - <span data-ttu-id="66d0b-114">Exchange 傳輸規則</span><span class="sxs-lookup"><span data-stu-id="66d0b-114">Exchange Transport Rule</span></span>
+    - <span data-ttu-id="66d0b-115">DLP 錯誤正值和 overrides</span><span class="sxs-lookup"><span data-stu-id="66d0b-115">DLP false positives and overrides</span></span>
+    - <span data-ttu-id="66d0b-116">Office 365 ATP 檔案類型</span><span class="sxs-lookup"><span data-stu-id="66d0b-116">Office 365 ATP file types</span></span>
+    - <span data-ttu-id="66d0b-117">Office 365 ATP 郵件處置</span><span class="sxs-lookup"><span data-stu-id="66d0b-117">Office 365 ATP message disposition</span></span>
+    - <span data-ttu-id="66d0b-118">電子郵件中偵測到惡意程式碼</span><span class="sxs-lookup"><span data-stu-id="66d0b-118">Malware detected in email</span></span>
+    - <span data-ttu-id="66d0b-119">主要惡意程式碼</span><span class="sxs-lookup"><span data-stu-id="66d0b-119">Top malware</span></span>
+    - <span data-ttu-id="66d0b-120">排名最前面的寄件者及收件者</span><span class="sxs-lookup"><span data-stu-id="66d0b-120">Top senders and recipients</span></span>
+    - <span data-ttu-id="66d0b-121">欺騙偵測</span><span class="sxs-lookup"><span data-stu-id="66d0b-121">Spoof detections</span></span>
+    - <span data-ttu-id="66d0b-122">垃圾郵件偵測</span><span class="sxs-lookup"><span data-stu-id="66d0b-122">Spam detections</span></span>
+    - <span data-ttu-id="66d0b-123">傳送和接收的電子郵件</span><span class="sxs-lookup"><span data-stu-id="66d0b-123">Sent and received email</span></span>
+    - <span data-ttu-id="66d0b-124">DLP 事件</span><span class="sxs-lookup"><span data-stu-id="66d0b-124">DLP incidents</span></span>
+    - <span data-ttu-id="66d0b-125">加密報告</span><span class="sxs-lookup"><span data-stu-id="66d0b-125">Encryption report</span></span>
 
-    <span data-ttu-id="5ac09-126">此範例而言，我們將選擇的進階威脅防護的檔案類型報表。</span><span class="sxs-lookup"><span data-stu-id="5ac09-126">For this example, we'll choose the Advanced Threat Protection File Types report.</span></span>
+    <span data-ttu-id="66d0b-126">在此範例中，我們會選擇「高級威脅防護檔案類型」報告。</span><span class="sxs-lookup"><span data-stu-id="66d0b-126">For this example, we'll choose the Advanced Threat Protection File Types report.</span></span>
     
-3. <span data-ttu-id="5ac09-127">在報表的左上角，選擇 [ **+ 建立排程**]。</span><span class="sxs-lookup"><span data-stu-id="5ac09-127">In the upper left corner of the report, choose **+ Create schedule**.</span></span> 
+3. <span data-ttu-id="66d0b-127">在報表的左上角，選擇 [ **+ 建立排程**]。</span><span class="sxs-lookup"><span data-stu-id="66d0b-127">In the upper left corner of the report, choose **+ Create schedule**.</span></span> 
     
-    ![若要建立排程](../../media/atpfiletypes-createschedule.png)
+    ![建立排程](../../media/atpfiletypes-createschedule.png)
 
-    <span data-ttu-id="5ac09-129">(請注意： 並非所有報表都有 [ **+ 建立排程**] 按鈕。)</span><span class="sxs-lookup"><span data-stu-id="5ac09-129">(NOTE: Not all reports have the **+ Create schedule** button.)</span></span>
+    > [!NOTE]
+    > <span data-ttu-id="66d0b-129">並非所有的報表都有 [**建立排程**] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="66d0b-129">Not all reports have the **+ Create schedule** button.</span></span>
   
-    <span data-ttu-id="5ac09-130">[**建立排程**] 對話方塊隨即開啟。</span><span class="sxs-lookup"><span data-stu-id="5ac09-130">The **Create schedule** dialog box opens.</span></span> 
+    <span data-ttu-id="66d0b-130">[**建立排程**] 對話方塊隨即開啟。</span><span class="sxs-lookup"><span data-stu-id="66d0b-130">The **Create schedule** dialog box opens.</span></span> 
     
-4. <span data-ttu-id="5ac09-131">保留預設設定並選擇 [**建立排程**，或選擇 [**自訂排程**。</span><span class="sxs-lookup"><span data-stu-id="5ac09-131">Keep the default settings and choose **Create schedule**, or choose **Customize schedule**.</span></span>
+4. <span data-ttu-id="66d0b-131">保留預設設定，然後選擇 [**建立排程**]，或選擇 [**自訂排程**]。</span><span class="sxs-lookup"><span data-stu-id="66d0b-131">Keep the default settings and choose **Create schedule**, or choose **Customize schedule**.</span></span>
     
-    ![您可以使用的預設設定，或自訂的報表排程](../../media/04fac327-8f73-4711-8319-58c11880fd96.png)
+    ![您可以使用預設設定或自訂報告排程](../../media/04fac327-8f73-4711-8319-58c11880fd96.png)
   
-    <span data-ttu-id="5ac09-133">如果您選擇自訂報表排程，您可以指定報表的頻率、 寄件者的電子郵件地址，以及收件者的電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="5ac09-133">If you choose to customize your report schedule, you can specify the report's frequency, a sender's email address, and a recipient's email address.</span></span> 
+    <span data-ttu-id="66d0b-133">如果您選擇自訂報告排程，您可以指定報告的頻率、寄件者的電子郵件地址，以及收件者的電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="66d0b-133">If you choose to customize your report schedule, you can specify the report's frequency, a sender's email address, and a recipient's email address.</span></span> 
     
-<span data-ttu-id="5ac09-134">一旦您建立的報表，報表就會透過傳遞至收件者的電子郵件地址的電子郵件自動排程。</span><span class="sxs-lookup"><span data-stu-id="5ac09-134">Once you have created a schedule for a report, that report will be delivered via email to recipients' email addresses automatically.</span></span> 
+<span data-ttu-id="66d0b-134">當您建立報表的排程後，該報告將會自動透過電子郵件傳送至收件者的電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="66d0b-134">Once you have created a schedule for a report, that report will be delivered via email to recipients' email addresses automatically.</span></span> 
   
-## <a name="related-topics"></a><span data-ttu-id="5ac09-135">相關主題</span><span class="sxs-lookup"><span data-stu-id="5ac09-135">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="66d0b-135">相關主題</span><span class="sxs-lookup"><span data-stu-id="66d0b-135">Related topics</span></span>
 
-[<span data-ttu-id="5ac09-136">報告和 Office 365 安全性的深入解析&amp;合規性中心</span><span class="sxs-lookup"><span data-stu-id="5ac09-136">Reports and insights in the Office 365 Security &amp; Compliance Center</span></span>](reports-and-insights-in-security-and-compliance.md)
+[<span data-ttu-id="66d0b-136">Office 365 安全性&amp;與合規性中心內的報告與深入瞭解</span><span class="sxs-lookup"><span data-stu-id="66d0b-136">Reports and insights in the Office 365 Security &amp; Compliance Center</span></span>](reports-and-insights-in-security-and-compliance.md)
   
-[<span data-ttu-id="5ac09-137">管理安全性的報表排程&amp;合規性中心</span><span class="sxs-lookup"><span data-stu-id="5ac09-137">Manage schedules for reports in the Security &amp; Compliance Center</span></span>](manage-schedules-for-multiple-reports.md)
+[<span data-ttu-id="66d0b-137">在安全性&amp;與合規性中心管理報告的計畫</span><span class="sxs-lookup"><span data-stu-id="66d0b-137">Manage schedules for reports in the Security &amp; Compliance Center</span></span>](manage-schedules-for-multiple-reports.md)
   
-[<span data-ttu-id="5ac09-138">下載現有的報表安全性&amp;合規性中心</span><span class="sxs-lookup"><span data-stu-id="5ac09-138">Download existing reports in the Security &amp; Compliance Center</span></span>](download-existing-reports.md)
+[<span data-ttu-id="66d0b-138">在安全性&amp;與合規性中心下載現有報告</span><span class="sxs-lookup"><span data-stu-id="66d0b-138">Download existing reports in the Security &amp; Compliance Center</span></span>](download-existing-reports.md)
   
-[<span data-ttu-id="5ac09-139">下載自訂報告中的安全性&amp;合規性中心</span><span class="sxs-lookup"><span data-stu-id="5ac09-139">Download a custom report in the Security &amp; Compliance Center</span></span>](set-up-and-download-a-custom-report.md)
+[<span data-ttu-id="66d0b-139">在安全性&amp;與合規性中心下載自訂報告</span><span class="sxs-lookup"><span data-stu-id="66d0b-139">Download a custom report in the Security &amp; Compliance Center</span></span>](set-up-and-download-a-custom-report.md)
   
 
