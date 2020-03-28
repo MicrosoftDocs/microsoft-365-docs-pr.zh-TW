@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 取得關於組織中的人員使用 Office 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
-ms.openlocfilehash: 490f7722d0bb8eb93d0d6e0ff18b7364cca5185c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: af6817471224e5747849b6020df3c56b64e29fed
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353964"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029857"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的活動報告
 
@@ -75,6 +75,10 @@ ms.locfileid: "42353964"
 - 全域讀取者
     
 - 報告讀取者
+
+- Teams 服務管理員
+
+- Teams 通訊系統管理員
     
 若要深入了解，請參閱[關於系統管理員角色](../add-users/about-admin-roles.md)和[指派系統管理員角色](../add-users/assign-admin-roles.md)。
   

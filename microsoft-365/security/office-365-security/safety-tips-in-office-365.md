@@ -17,12 +17,12 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: 針對 EOP 和 Office 365 垃圾郵件篩選器所篩選的電子郵件，引進安全性秘訣。
-ms.openlocfilehash: bd493fba7a41f9452f915ff456c9483f48e299f5
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 3e4e645c6ac0285d9d6fff43b301f1f5c61a90e3
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895188"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032813"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Office 365 電子郵件的安全提示
 
@@ -60,4 +60,4 @@ Exchange Online Protection （EOP）和 Office 365 會保護您的垃圾郵件�
 
 即使並非每封郵件都會收到，安全性秘訣還是會針對網頁上的 Outlook 一直啟用。 Office 365 系統管理員可以關閉其他電子郵件客戶程式（例如 Outlook）的安全性秘訣。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-如果您不同意如何將 Office 365 和 EOP 歸類為郵件（也就是垃圾郵件或是不合法），您可以提交郵件進行分析，以協助改善您的體驗。 如需詳細資訊，請參閱[在 Outlook 網頁版中回報垃圾郵件與網路釣魚詐騙](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。 您也可以按一下安全提示中的 [意見反應] 連結，直接向 Microsoft 提交批註，以協助我們進行改進。
+如果您不同意 EOP 對郵件進行分類的方式（也就是說，郵件不是垃圾郵件或是已標示為垃圾郵件），您可以將郵件提交給 Microsoft 進行分析，以協助改善您的體驗。 如需相關指示，請參閱[將訊息和檔案報告給 Microsoft](report-junk-email-messages-to-microsoft.md)。 您也可以按一下安全提示中的 [意見反應] 連結，直接向 Microsoft 提交批註，以協助我們進行改進。

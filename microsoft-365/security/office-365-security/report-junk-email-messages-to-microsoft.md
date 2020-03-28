@@ -1,5 +1,5 @@
 ---
-title: 向 Microsoft 回報垃圾郵件
+title: 將垃圾郵件、非垃圾郵件和網路釣魚郵件報告給 Microsoft
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,55 +16,25 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 「Microsoft Office Outlook 的 Microsoft 垃圾郵件回報增益集」提供多種方式回報垃圾郵件：
-ms.openlocfilehash: b1ed918e4b954cc7b2d79e52abd6f58a99eda0f0
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: b7e7ed56f171ee3b74b36ed7c10c46286fb1e570
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895176"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033659"
 ---
-# <a name="report-junk-email-messages-to-microsoft"></a>向 Microsoft 回報垃圾郵件
+# <a name="report-messages-and-files-to-microsoft"></a>將郵件和檔案報告給 Microsoft
 
-「Microsoft Office Outlook 的 Microsoft 垃圾郵件回報增益集」提供多種方式回報垃圾郵件：
+Office 365 組織中的使用者和系統管理員（包含 Exchange Online 中的信箱）或獨立 Exchange Online Protection （EOP）組織（沒有 Exchange Online 信箱）來提交電子郵件訊息具有多種不同的方式來報告郵件和檔至 Microsoft。
 
-- 從 Outlook 功能區
+|||
+|---|---|
+|**方法**|**描述**|
+|[使用系統管理員提交將可疑的垃圾郵件、網路釣魚、URLs 和檔案提交給 Microsoft](admin-submission.md)|在具有 Exchange Online 信箱的組織中，系統管理員建議使用此報告方法（在獨立 EOP 中無法使用）。|
+|[啟用 Office 365 中的報告訊息增益集](enable-the-report-message-add-in.md)|可與 Outlook、outlook for Mac 和 web 上的 Outlook 搭配使用。 這是建議的增益集。 <br/><br/> 視您的授權而定，在[自動調查和回應（AIR）結果](air-view-investigation-results.md)中，[使用者報告的訊息報告](view-email-security-reports.md#user-reported-messages-report)和[威脅瀏覽器](threat-explorer-views.md#email--submissions)都會提供報告的訊息。|
+|[在 Office 365 中安裝及使用 Microsoft Outlook 的垃圾郵件回報增益集](junk-email-reporting-add-in-for-microsoft-outlook.md)|只能在 Outlook 中運作。|
+|[在 Office 365 的 Outlook 網頁版中報告垃圾郵件和網路釣魚電子郵件](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|在適用于 Exchange Online 信箱的組織網頁上，使用 Outlook 網頁版內建的功能（在獨立 EOP 中無法使用）。|
+|[將惡意程式碼和非惡意程式碼提交給 Microsoft 進行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|使用 Microsoft 安全性情報網站送出附件及其他檔案。|
+|
 
-- 從收件匣
-
-- 從開啟的電子郵件內
-
-垃圾電子郵件回報增益集可以幫助您提交報告給 Microsoft Exchange Online Protection (EOP) 服務。 如果此服務不保護您的信箱，您的垃圾電子郵件報告提交不會影響您的垃圾郵件篩選器。 管理員可以深入瞭解適用于整個組織的垃圾郵件設定，在[office 365 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)，並在[Office 365 中建立封鎖的寄件者清單](create-block-sender-lists-in-office-365.md)。 如果您有系統管理員層級的控制權，且您想要避免誤判或漏報，這些內容很有幫助。
-
-> [!TIP]
-> 您也可以使用[junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)電子郵件地址，將垃圾郵件直接提交至 Microsoft，以及使用[not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com)電子郵件地址的 false 肯定（非垃圾郵件）郵件。 如需詳細資訊，請參閱[將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。
-
-### <a name="to-report-junk-email-messages-from-outlook"></a>從 Outlook 報告垃圾郵件
-
-[使用報告訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
-
-### <a name="to-report-junk-email-messages-from-your-inbox"></a>從收件匣回報垃圾郵件
-
-1. 以滑鼠右鍵按一下郵件或要回報為垃圾郵件的郵件。
-
-2. 選取 **[垃圾郵件]**，然後按一下 **[回報垃圾郵件]**。
-    ![從收件匣回報垃圾郵件訊息](../../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
-
-3. [ **Microsoft 垃圾電子郵件回報增益集**] 會隨即開啟。 如果您確定要提交您選取為垃圾郵件的郵件，請按一下 [ **是**]。
-    ![確認報告為垃圾郵件](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
-
-    > [!NOTE]
-    > 如果您不想在提交垃圾郵件時看見此確認訊息，請勾選 [ **不要再顯示此訊息**]。
-
-選取的郵件會傳送至 Microsoft 進行分析，然後移至 [垃圾郵件] 資料夾。若要確認郵件已提交，請開啟 **[寄件備份]** 資料夾，以檢視已提交的郵件。
-
-### <a name="to-report-a-junk-email-message-from-within-an-opened-message"></a>從已開啟的郵件內回報垃圾郵件
-
-1. 在開啟的郵件內，按一下郵件功能區上的 **[回報垃圾郵件]** 按鈕。 例如，按一下 [**垃圾** \> **報告垃圾** ![報告中的垃圾郵件] 中的郵件](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
-
-2. [ **Microsoft 垃圾電子郵件回報增益集**] 會隨即開啟。 如果您確定要提交您選取為垃圾郵件的郵件，請按一下 [ **是**]。
-    ![確認報告為垃圾郵件](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
-
-    > [!NOTE]
-    > 如果您不想在提交垃圾郵件時看見此確認訊息，請勾選 [ **不要再顯示此訊息**]。
-
-選取的郵件會傳送至 Microsoft 進行分析，然後移至 [垃圾郵件] 資料夾。若要確認郵件已提交，請開啟 **[寄件備份]** 資料夾，以檢視已提交的郵件。
+如果已隔離垃圾郵件或網路釣魚郵件，而不是傳遞，使用者可以從 Office 365 Security & 合規性中心的隔離入口網站向 Microsoft 報告郵件。 如需詳細資訊，請參閱[在 Office 365 中尋找及發行隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 深入瞭解使用者如何使用 Office 應用程式中的敏感度標籤、適用于行動裝置的 Office 應用程式，以及適用于 web 的 Office 應用程式。 瞭解哪些應用程式支援靈敏度標籤。
-ms.openlocfilehash: 8c37ea146447a7b38b10224db94f9995fd985e6e
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 2b77d273cdc589409506dc709669536fcea6c006
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826173"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030117"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -68,7 +68,7 @@ Office 內建的標籤用戶端支援具有 Office 訂閱版本的靈敏度標�
 |[提供自訂 [説明] 頁面的 [說明] 連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[標記內容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 預覽：[每月通道（已設定目標）](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus)            | 預覽：在[Office 有問必答](https://office.com/insider)        | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
+|[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 推出[每月通道](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus)（2003 +） | 推出[每月通道](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus)（16.35 +）   | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
 |使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 在 [複查] 下            | 在 [複查] 下        | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
 |[要求使用者將標籤套用至電子郵件和檔](sensitivity-labels.md#what-label-policies-can-do)   | 在 [複查] 下            | 在 [複查] 下        | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 預覽：在[Office 有問必答](https://office.com/insider)                                  | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -91,7 +91,7 @@ Office 內建的標籤用戶端支援具有 Office 訂閱版本的靈敏度標�
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 預覽：向[Office 有問必答](https://office.com/insider)推出                       | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 是 |
 |
 
-## <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 內建標籤用戶端和 Azure 資訊保護用戶端
+## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office 內建標籤用戶端和其他標記解決方案
 
 Office 內建的標籤用戶端會從下列系統管理中心下載敏感度標籤和敏感度標籤原則設定：
 
@@ -99,19 +99,25 @@ Office 內建的標籤用戶端會從下列系統管理中心下載敏感度標�
 - Microsoft 365 安全性中心
 - Office 365 安全性與合規性中心
 
-若要使用 Office 內建的標籤用戶端，您必須將一個或多個[標籤原則發佈給已](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)列出系統管理中心之一的使用者。
+若要使用 Office 內建的標籤用戶端，您必須將一個或多個[標籤原則發佈給已](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)列出系統管理中心的使用者，以及[支援的 Office 版本](#support-for-sensitivity-label-capabilities-in-apps)。
 
-不過，如果使用者已安裝其中一個 Azure 資訊保護用戶端（已整合的卷[標用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)或[傳統用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)），則預設會在其 Office 應用程式中關閉內建的標籤用戶端。 若要使用內建的標記，而不是 Azure 資訊保護用戶端的 Office 應用程式，請停用或卸載 Azure 資訊保護的 Office 增益集：
+如果同時滿足這兩種條件，但您需要關閉 Office 內建標籤用戶端，請使用下列群組原則設定：
 
-1. 完成下列其中一個選項：
-    
-    - **針對多部電腦：** 設定 [ **使用 Office 中的靈敏度功能來套用及查看敏感度標籤**] 群組原則設定。 在 [使用者設定 **/系統管理範本/Microsoft Office 2016/安全性設定**] 底下找到此設定。 透過群組原則或使用[Office 雲端原則服務](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)，部署此設定。
-    
-    - **針對單一電腦：** 如需如何在單一電腦上[永久停用或移除](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)Azure 資訊保護增益集的相關資訊，請參閱「在 Office 程式中查看、管理及安裝增益集」。
+1. 流覽至**使用者設定/系統管理範本/Microsoft Office 2016/安全性設定**
 
-2. 重新啟動所有 Office 應用程式。
+2. Set**使用 Office 中的靈敏度功能，套用敏感度標籤並將其顯示**為**0**。 
+ 
+使用群組原則或使用[Office 雲端原則服務](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)，部署此設定。 設定會在 Office 應用程式重新開機時生效。
 
-當您停用或卸載此 Office 增益集時，Azure 資訊保護用戶端仍會保持安裝，這樣您就可以繼續在 Office app 以外的標籤上進行標記。 例如，使用檔案瀏覽器或 PowerShell。
+### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 內建標籤用戶端和 Azure 資訊保護用戶端
+
+如果使用者已安裝其中一個 Azure 資訊保護用戶端（[[統一標籤] 用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)或 [[傳統用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)]），預設會在其 Office 應用程式中關閉內建的標記用戶端。 
+
+若要使用內建的標記，而不是 Azure 資訊保護用戶端的 Office 應用程式，請使用上一節中的指示，但設定群組原則設定**使用 Office 中的靈敏度功能，將敏感度標籤**套用至**1**。 
+
+或者，停用或移除 Office 增益集（ **Azure 資訊保護**）。 這種方法適用于單一電腦和特殊的測試。 如需相關指示，請參閱[在 Office 程式中查看、管理及安裝增益集](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)。 
+
+當您停用或移除此 Office 增益集時，Azure 資訊保護用戶端仍會保持安裝，這樣您就可以繼續在 Office app 以外的標籤上進行標記。 例如，使用檔案瀏覽器或 PowerShell。
 
 如需 Azure 資訊保護用戶端和 Office 內建標籤用戶端支援哪些功能的相關資訊，請參閱選擇從 Azure 資訊保護檔[使用 Windows 電腦的標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)。
 

@@ -15,12 +15,12 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何使用 Exchange Online Protection 中的郵件流程規則，以進行大量電子郵件篩選。
-ms.openlocfilehash: 2ac81d798af957f23f95b92f633b93bdda677991
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: b08edfdd88f6f522d3bf212b209ee4b293d7198a
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895044"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033635"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a>使用郵件流程規則來篩選 Office 365 中的大量電子郵件
 
@@ -66,7 +66,7 @@ ms.locfileid: "42895044"
 
    - **在下列情況中套用此規則**：設定下列其中一個設定，以使用正則運算式（RegEx）或字詞或片語來尋找郵件中的內容：
 
-     - 主旨**或** \>本文的主旨或內文**符合這些文字模式**：在出現的 [**指定字詞或片語**] 對話方塊中，輸入下列其中一個值，按一下 [](../../media/ITPro-EAC-AddIcon.png)**新增** ![] 圖示，然後視需要重複任意次數。
+     - 主旨**或** \>本文的主旨或內文**符合這些文字模式**：在出現的 [**指定字詞或片語**] 對話方塊中，輸入下列其中一個值，按一下 [](../../media/ITPro-EAC-AddIcon.png)**新增** ![] 圖示，然後重複，直到您輸入所有值為止。
 
        - `If you are unable to view the content of this email\, please`
 
@@ -96,7 +96,7 @@ ms.locfileid: "42895044"
 
        完成後，按一下 [確定]****。
 
-     - 主旨**或** \>內文的主旨或內文**包含下列任何文字**：在出現的 [**指定字詞或片語**] 對話方塊中，輸入下列其中一個值，按一下 [](../../media/ITPro-EAC-AddIcon.png)**新增** ![] 圖示，然後視需要重複任意次數。
+     - 主旨**或** \>本文的主旨或內文**包含下列任何文字**：在出現的 [**指定字詞或片語**] 對話方塊中，輸入下列其中一個值，按一下 [**新增** ![] 圖示](../../media/ITPro-EAC-AddIcon.png)，然後重複，直到您輸入所有值為止。
 
        - `to change your preferences or unsubscribe`
 
@@ -138,7 +138,7 @@ ms.locfileid: "42895044"
 
    完成後，請按一下 [儲存]****。
 
-## <a name="use-powershell-to-create-a-mail-flow-rules-that-filter-bulk-email"></a>使用 PowerShell 建立郵件流程規則，以篩選大量電子郵件
+## <a name="use-powershell-to-create-mail-flow-rules-that-filter-bulk-email"></a>使用 PowerShell 建立郵件流程規則，以篩選大量電子郵件
 
 使用下列語法來建立一或兩個郵件流程規則（正則運算式與字）：
 

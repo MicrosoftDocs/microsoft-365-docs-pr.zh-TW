@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: cfeef08c087d826d3e6f90bd1bb87bd852859a7c
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: b6e10757c3a4370c83b6ee0c1fb6c818a13089ea
+ms.sourcegitcommit: 7eaecb91c7cb1f8679f99882563f5c1149175992
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978263"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43022918"
 ---
 # <a name="common-identity-and-device-access-policies"></a>一般身分識別與裝置存取原則
 本文說明保護雲端服務存取權的常見建議原則，包括使用 Azure AD 應用程式 Proxy 發佈的內部部署應用程式。 
@@ -225,18 +225,22 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 ## <a name="define-device-compliance-policies"></a>定義裝置合規性原則
 
-裝置合規性原則定義裝置必須遵循的需求，才能標示為相容。 從 Azure 入口網站中建立 Intune 裝置相容性原則。 
+裝置合規性原則定義裝置必須遵循的需求，才能標示為相容。 從 Microsoft 端點管理員管理中心建立 Intune 裝置規範原則。
 
 建立每個平臺的原則：
-- Android
+- Android 裝置管理員
 - Android 企業版
-- iOS
+- iOS/iPadOS
 - macOS
 - 此設定適用於下列類型的裝置：
 - Windows 8.1 和更新版本
 - Windows 10 和更新版本
 
-若要建立裝置相容性原則，請使用您的管理認證登入 Microsoft Azure 入口網站，然後流覽至**Intune > 裝置相容性**。 選取 [建立原則]****。
+若要建立裝置相容性原則，請使用您的系統管理員認證登入[Microsoft 端點](https://go.microsoft.com/fwlink/?linkid=2109431)管理員系統管理中心，然後**流覽裝置** > **合規性原則** > **原則**。 選取 [**建立原則**]。
+
+若要部署裝置規範原則，必須將其指派給使用者群組。 您可以在建立並儲存原則之後加以指派。 在系統管理中心中，選取原則，然後選取 [**工作分派**]。 選取您想要接收原則的群組之後，請選取 [**儲存**] 以儲存該群組指派並部署原則。
+
+如需在 Intune 中建立相容性原則的逐步指引，請參閱在 Intune 檔中[建立 Microsoft Intune 中的符合性原則](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)。
 
 Windows 10 建議使用下列設定。
 
@@ -255,8 +259,6 @@ Windows 10 建議使用下列設定。
 |:---|:---------|:-----|:----|
 |作業系統版本|全部|尚未設定||
 
-針對所有要視為已部署的上述原則，必須將它們的目標設為使用者群組。 若要執行此動作，請在 [**原則**] 區段中，選取 [**管理部署**] （與 [新增] 的等級相同），以建立原則（儲存時）或更新版本。
-
 **系統安全性**
 
 |類型|屬性|值|附註|
@@ -273,9 +275,9 @@ Windows 10 建議使用下列設定。
 |裝置安全性|防火牆|需要||
 ||防毒|需要||
 ||間諜|需要|此設定需要使用 Windows Security Center 註冊的反間諜軟體方案|
-|後衛|Windows Defender 反惡意程式碼|需要||
-||Windows Defender 反惡意軟體最低版本||僅支援 Windows 10 desktop。 Microsoft 建議的版本不會超過最新版本五個以上的版本|
-||最新的 Windows Defender 反惡意軟體簽名|需要||
+|後衛|Microsoft Defender 反惡意軟體|需要||
+||Microsoft Defender 反惡意軟體最低版本||僅支援 Windows 10 desktop。 Microsoft 建議的版本不會超過最新版本五個以上的版本|
+||最新的 Microsoft Defender 反惡意軟體簽名|需要||
 ||即時保護|需要|僅支援 Windows 10 desktop|
 
 **Microsoft Defender ATP**
@@ -283,6 +285,7 @@ Windows 10 建議使用下列設定。
 |類型|屬性|值|附註|
 |:---|:---------|:-----|:----|
 |Microsoft Defender 高級威脅防護規則|需要裝置位於或低於機器風險分數|中||
+
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>需要相容的電腦（但不符合相容的電話和平板電腦）
 在新增要要求相容的電腦的原則之前，請務必在 Intune 中註冊要管理的裝置。 建議您先使用多重要素驗證，再將裝置登記到 Intune 中，以確保裝置已擁有預定的使用者。 

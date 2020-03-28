@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 瞭解如何在 Microsoft 小組中定義資訊障礙的原則。
-ms.openlocfilehash: 3dc59a78d25045f3816b48705b5427141a1caea7
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: efce9a1c9827ddc904d6942ff9e1005850acfe8c
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710502"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029879"
 ---
 # <a name="define-information-barrier-policies"></a>定義資訊屏障原則
 
@@ -247,7 +247,7 @@ ms.locfileid: "42710502"
 
     語法：`Start-InformationBarrierPoliciesApplication`
 
-    大約半小時之後，就會為您的組織套用使用者原則。 如果您的組織很大，可能需要24小時（或更多）才能完成此程式。 （一般的指導方針是花一個小時來處理5000使用者帳戶。）
+    在您執行`Start-InformationBarrierPoliciesApplication`允許30分鐘之後，系統才開始套用原則。 系統會將原則使用者套用至使用者。 一般系統處理每小時大約5000的使用者帳戶。
 
 ## <a name="view-status-of-user-accounts-segments-policies-or-policy-application"></a>查看使用者帳戶、區段、原則或原則應用程式的狀態
 

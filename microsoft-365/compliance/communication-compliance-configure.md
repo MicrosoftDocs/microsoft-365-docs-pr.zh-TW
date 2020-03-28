@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a179a3ccfc28b16aaa500d9222f69660bbc4c4df
-ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
+ms.openlocfilehash: 87be266fe9c117afdaf68b66db5d4cf4c7a3d94e
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982036"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029889"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>設定 Microsoft 365 中的通訊合規性
 
@@ -73,7 +73,6 @@ ms.locfileid: "42982036"
 
 如需開啟審核的逐步指示，請參閱[開啟或關閉 Office 365 審核記錄搜尋](turn-audit-log-search-on-or-off.md)。 在您開啟審核後，會顯示一則訊息，指出已準備好審核記錄，而且您可以在準備完成後數小時執行搜尋。 您只需執行這項動作一次。 如需使用審核記錄的詳細資訊，請參閱[搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。
 
-
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>步驟3（選用）：設定通訊相容性群組
 
  當您建立通訊相容性原則時，您會定義誰會檢查其通訊，以及誰會執行評論。 在原則中，您將使用電子郵件地址來識別個人或人員群組。 若要簡化您的設定，您可以為進行通訊檢查的使用者建立群組，並為審查這些通訊的使用者群組建立群組。 如果您正在使用群組，可能需要數個。 例如，如果您想要監視兩個不同的使用者群組之間的通訊，或是想要指定不會受到監督的群組。
@@ -90,11 +89,13 @@ ms.locfileid: "42982036"
 如需設定群組的詳細資訊，請參閱：
 
 - [建立並管理通訊群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [管理啟用郵件功能的安全性群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Office 365 群組的概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
 ## <a name="step-4-required-create-a-communication-compliance-policy"></a>步驟4（必要）：建立通訊相容性原則
   
+>[!Important]
+>不支援使用 PowerShell 建立及管理通訊相容性原則。 若要建立及管理這些原則，您必須使用[Microsoft 365 通訊規範解決方案](https://compliance.microsoft.com/supervisoryreview)中的原則管理控制項。
+
 1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://compliance.microsoft.com](https://compliance.microsoft.com)。
 
 2. 在 [Microsoft 365 規範中心] 中，選取 [**通訊符合性**]。
@@ -107,14 +108,14 @@ ms.locfileid: "42982036"
 
     - 確認或更新原則名稱。 建立原則之後，便無法變更原則名稱。
     - 選擇要監督的使用者或群組，包括選擇您想要排除的使用者或群組。
-    - 選擇原則的檢閱者。 檢閱者可以是個別的使用者或擁有[郵件功能的安全性群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)。 所有檢閱者都必須在 Exchange Online 上主控信箱。 在此新增的檢閱者是在調查和修正工作流程中升級提醒時，可選擇的檢閱者。
+    - 選擇原則的檢閱者。 「檢閱者」是個別的使用者，而且所有檢閱者都必須在 Exchange Online 上主控信箱。 在此新增的檢閱者是在調查和修正工作流程中升級提醒時，可選擇的檢閱者。
     - 選擇 [有限條件] 欄位，通常是要套用至原則的敏感資訊類型或關鍵字字典。
 
     如果您選擇使用原則嚮導建立自訂原則，您可以：
 
     - 將原則命名為 [名稱] 和 [描述]。 建立原則之後，便無法變更原則名稱。
     - 選擇要監督的使用者或群組，包括您組織中的所有使用者、特定使用者和群組，或是您想要排除的其他使用者和群組。
-    - 選擇原則的檢閱者。 檢閱者可以是個別的使用者或擁有[郵件功能的安全性群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)。 所有檢閱者都必須在 Exchange Online 上主控信箱。
+    - 選擇原則的檢閱者。 「檢閱者」是個別的使用者，而且所有檢閱者都必須在 Exchange Online 上主控信箱。
     - 選擇要掃描的通訊通道，包括 Exchange、Microsoft 團隊或商務用 Skype。 如果您已在 Microsoft 365 中設定連接器，您也會選擇掃描協力廠商來源。
     - 選擇要監視的通訊方向，包括輸入、輸出或內部通訊。
     - 定義通訊相容性原則[條件](communication-compliance-feature-reference.md#ConditionalSettings)。 您可以選擇 [郵寄地址]、[關鍵字]、[檔案類型] 和 [大小相符] 條件。

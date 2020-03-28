@@ -11,17 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Exchange Online 中的 In-Place eDiscovery 和 In-Place 保留（以及對應的 PowerShell Cmdlet）會在2020的上半年內淘汰。 Search-Mailbox Cmdlet 和 Office 365 Advanced eDiscovery 1.0 1.0 也會在相同的時段內淘汰。
-ms.openlocfilehash: 5ee588b2c05241628242e8660f10c23dba809bf8
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: d0d9856a30d905e73ba31abc9af92bbe060c0ec4
+ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978163"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43024353"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>舊的 eDiscovery 工具退休
 
 > [!IMPORTANT]
-> Microsoft 已評估公開健康情況，我們瞭解這對客戶造成的影響。 我們想要成為強大的合作夥伴和負責的全球公民。 若要減少您面臨的眾多負擔之一，我們將會延遲下列三個月的舊版 eDiscovery 工具的排程退休。 **更新後的退休日期會反映在下方。**
+> Microsoft 已評估公開健康情況，我們瞭解這對客戶造成的影響。 我們想要成為強大的合作夥伴和負責的全球公民。 為了簡化您面臨的眾多工作之一，我們會將本文所述之舊版 eDiscovery 工具的計畫停用延遲為三個月。 **更新後的退休日期會反映在下方。**
 
 在幾年中，Microsoft 提供了 eDiscovery 工具，可讓您從 Exchange Online 搜尋、預覽及匯出電子郵件內容。 不過，這些工具不再提供有效的方式，可在其他 Office 365 服務中搜尋非 Exchange 內容，例如 SharePoint 線上和 Office 365 群組。 為了解決此情況，Microsoft 提供了其他 eDiscovery 工具，可協助您搜尋各種各樣的 Office 365 內容。 而且我們致力於在[Microsoft 365 規範中心](https://compliance.microsoft.com)內整合最新和功能強大的 eDiscovery 功能。 這可讓組織對許多 Office 365 服務（包括 Exchange Online）的內容，回應法律、內部及其他檔要求。
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: 系統管理員可以深入瞭解 Office 365 和 EOP 中可用的選項，以封鎖輸入郵件。
-ms.openlocfilehash: a588c9c869dae39ab60fc7ad68b6496f57ae015a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 0bfab3024bc781e53600092ebc88fae25c5f4afc
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893859"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033419"
 ---
 # <a name="create-blocked-sender-lists-in-office-365"></a>在 Office 365 中建立封鎖的寄件者清單
 
@@ -30,12 +30,12 @@ ms.locfileid: "42893859"
 
 2. 封鎖的寄件者清單或封鎖的網域清單（反垃圾郵件原則）
 
-3. Mai 流程規則
+3. 郵件流程規則
 
 4. IP 封鎖清單（連線篩選）
 
 > [!NOTE]
-> 雖然您可以使用全組織的封鎖設定來處理虛假的否定（未接的垃圾郵件），您也應該將這些郵件提交給 Microsoft 進行分析。 使用封鎖清單來管理 false 負片會大幅增加您的管理額外負荷。 如果您使用封鎖清單來轉移未接的垃圾郵件，您必須在準備時保留將[垃圾郵件、非垃圾郵件和網路釣魚詐騙郵件提交給 Microsoft 進行分析](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis)的主題。
+> 雖然您可以使用全組織的封鎖設定來處理虛假的否定（未接的垃圾郵件），您也應該將這些郵件提交給 Microsoft 進行分析。 使用封鎖清單來管理 false 負片會大幅增加您的管理額外負荷。 如果您使用封鎖清單來轉移未接的垃圾郵件，您必須在準備時讓主題向[Microsoft 報告訊息和](report-junk-email-messages-to-microsoft.md)檔案。
 
 相比之下，您也可以使用_安全寄件者清單_，讓您有數個選項永遠允許來自特定來源的電子郵件。 如需詳細資訊，請參閱[在 Office 365 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。
 

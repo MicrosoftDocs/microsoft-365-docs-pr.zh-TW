@@ -13,14 +13,15 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
+- remotework
 ms.custom: ''
 description: 了解當雲端服務成為您的 IT 產品的一部分時，在規劃和實現業務連續性上會有何不同。
-ms.openlocfilehash: 2236304647275f5e2b7ddde3af1804ba749254b0
-ms.sourcegitcommit: 0b2c41dad19da5f0513097c36a4ff32a5868836c
+ms.openlocfilehash: bb9f3f1367b376c63b8779f3ff62f05b0312ef55
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42588716"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030103"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>企業業務連續性管理 (EBCM) 與雲端服務
 

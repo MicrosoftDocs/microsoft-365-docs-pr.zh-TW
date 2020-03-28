@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Office 365 系統管理員可以瞭解如何從勒索軟體的攻擊復原。
-ms.openlocfilehash: aa606ea3bf3f549645fe26a4aa95066568132243
-ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
+ms.openlocfilehash: 6d57142bac6dad22d38cc26a9353b528a9f8eb10
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42640015"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032873"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>從 Office 365 復原勒索軟體攻擊
 
@@ -122,7 +122,7 @@ ms.locfileid: "42640015"
 
 ### <a name="submit-email-messages-to-microsoft"></a>將電子郵件提交至 Microsoft
 
-您可以遵循[提交垃圾郵件、非垃圾郵件和網路釣魚詐騙訊息中的指示，向 Microsoft](https://docs.microsoft.com/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis)報告包含勒索軟體的網路釣魚郵件，以進行分析。
+您可以使用下列其中一種方法，報告包含勒索軟體的網路釣魚郵件。 如需詳細資訊，請參閱[將郵件和檔案報告給 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="see-also"></a>另請參閱
 

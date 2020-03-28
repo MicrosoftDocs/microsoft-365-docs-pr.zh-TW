@@ -245,8 +245,6 @@
           href: archive-linkedin-data.md
         - name: 設定連接器來封存 Instant Bloomberg 資料
           href: archive-instant-bloomberg-data.md
-        - name: 設定連接器以封存冰激淩聊天資料（預覽）
-          href: archive-icechat-data.md
         - name: 設定連接器以匯入 HR 資料
           href: import-hr-data.md
         - name: 與合作夥伴配合來封存第三方資料

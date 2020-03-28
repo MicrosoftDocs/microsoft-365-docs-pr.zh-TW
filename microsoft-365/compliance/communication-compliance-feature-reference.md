@@ -18,16 +18,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c1279b0258047ed4653e0bb3d4d95333b28af643
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 6f3019c57d35e6ac54a9f1a2cd0dbede22601ec1
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894818"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029847"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
 ## <a name="policies"></a>原則
+
+>[!Important]
+>不支援使用 PowerShell 建立及管理通訊相容性原則。 若要建立及管理這些原則，您必須使用[Microsoft 365 通訊規範解決方案](https://compliance.microsoft.com/supervisoryreview)中的原則管理控制項。
 
 您可以在 Microsoft 365 規範中心建立 Microsoft 365 組織的通訊相容性原則。 如果您有 Office 365 組織，您會在 Office 365 安全性 & 規範中心[設定監督原則](configure-supervision-policies.md)。 通訊相容性原則定義哪些通訊和使用者在您的組織中有權複查、定義通訊必須符合的自訂條件，以及指定誰應該進行評論。 「**主管審查系統管理員**」角色群組中包含的使用者可以設定原則，以及已指派此角色的任何人都可以存取 Microsoft 365 規範中心內的**通訊合規性**頁面。 如有需要，您可以將對原則的修改記錄匯出至 .csv 檔案，該檔案也包含待處理的提醒狀態、已呈報的專案，以及已解析的專案。 無法重新命名原則，而且無法在不再需要時加以刪除。
 
@@ -111,7 +114,7 @@ ms.locfileid: "42894818"
 - **輸出**：若您想要檢查從您選擇進行監督**之**人員所傳送的通訊，您可以選擇 [**輸出**]。
 - **Internal**：您可以選擇 [**內部**]，以查看您在原則中所識別之人員**之間**傳送的通訊。
 
-### <a name="sensitive-information-types"></a>敏感資訊類型
+### <a name="sensitive-information-types"></a>敏感性資訊類型
 
 您可以選擇將敏感資訊類型包含在您的通訊合規性原則中。 敏感資訊類型是預先定義或自訂的資料類型，可協助識別及保護信用卡號碼、銀行帳戶號碼、護照號碼等等。 在 Office 365[資料遺失防護（DLP）](data-loss-prevention-policies.md)中，敏感資訊設定可使用模式、字元鄰近性、信賴等級，甚至是自訂資料類型，協助識別及標記可能機密的內容。 預設的機密資訊類型包括：
 
@@ -196,7 +199,7 @@ ms.locfileid: "42894818"
 |**範本名稱** | 是 | 您將在修正期間于通知工作流程中選取之公告範本的易記名稱，會支援文字字元。 |
 | **寄件者位址** | 是 | 一或多個使用者或群組的位址，會將郵件傳送給具有原則相符的該員工，並從 Active Directory 中為您的訂閱選取。 |
 | **抄送和 BCC 位址** | 否 | 選取的使用者或群組，以取得您訂閱之 Active Directory 的原則相符的通知。 |
-| **Subject** | 是 | 顯示在郵件主旨行中的資訊，支援文字字元。 |
+| **主旨** | 是 | 顯示在郵件主旨行中的資訊，支援文字字元。 |
 | **郵件內文** | 是 | 出現在郵件內文中的資訊支援文字或 HTML 值。 |
 
 ### <a name="html-for-notices"></a>用於通知的 HTML

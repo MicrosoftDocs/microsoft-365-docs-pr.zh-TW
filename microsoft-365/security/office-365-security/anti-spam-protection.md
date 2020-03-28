@@ -17,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: 瞭解可協助您防止 Exchange Online 和 Office 365 中垃圾郵件的反垃圾郵件設定和篩選器。 在 Office 365 中取得太多垃圾郵件？ 您可以自訂垃圾郵件篩選器和反垃圾郵件設定。
-ms.openlocfilehash: 5558bfa29427df4df12a83bc8b30adaf6001b9c3
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: bb2b714273af5177d8c69c4b89b0daec87c31650
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894067"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033467"
 ---
 # <a name="anti-spam-protection-in-office-365"></a>Office 365 中的反垃圾郵件保護
 
@@ -61,7 +61,7 @@ EOP 中的反垃圾郵件設定是由下列技術所組成：
 
 以下是適用于任一案例的一些最佳作法：
 
-- 永遠將 misclassified 郵件提交給 Microsoft。 系統管理員可以使用[提交的 Explorer 瀏覽器](admin-submission.md)，或使用者可以使用 [[使用報告訊息] 增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)來報告訊息。
+- 永遠將 misclassified 郵件提交給 Microsoft。 如需詳細資訊，請參閱[將郵件和檔案報告給 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
 - **檢查反垃圾郵件訊息標頭**：這些值會告訴您郵件為何被標示為垃圾郵件，或為何略過垃圾郵件篩選。 如需詳細資訊，請參閱＜[反垃圾郵件訊息標頭](anti-spam-message-headers.md)＞。
 

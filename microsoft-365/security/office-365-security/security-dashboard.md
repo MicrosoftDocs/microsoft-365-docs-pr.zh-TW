@@ -1,5 +1,5 @@
 ---
-title: 安全性儀表板概觀
+title: 安全性儀表板概述
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,118 +15,118 @@ search.appverid:
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
-description: 使用新的安全性儀表板來檢閱 Office 365 威脅保護狀態，並檢視，然後對安全性提醒。
-ms.openlocfilehash: 85c616c717a85f9a6a47e63a48621a8703b487aa
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 使用新的安全性儀表板來查看 Office 365 威脅防護狀態，並查看並處理安全性警示。
+ms.openlocfilehash: 1ef61f2a5e59db5c45a37bd9f8995b8c70675f30
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088173"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032837"
 ---
 # <a name="security-dashboard"></a>安全性儀表板
 
 ## <a name="overview"></a>概觀
 
-[安全性&amp;合規性中心](../../compliance/go-to-the-securitycompliance-center.md)可讓您的組織管理的資料保護和合規性。 安全性儀表板假設您具備必要權限，可讓您檢閱您威脅保護的狀態，以及檢視並處理安全性提醒。 
-  
-請觀看影片，概略了解，然後閱讀本篇文章以了解更多。
-  
+[安全性 & 合規性中心](../../compliance/go-to-the-securitycompliance-center.md)可讓您的組織管理資料保護和符合性。 假設您有必要的許可權，安全性儀表板可讓您檢查威脅防護狀態，以及查看和處理安全性警示。
+
+觀賞影片以取得概要，然後閱讀本文以深入瞭解。
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
-  
-根據貴組織的 Office 365 訂用帳戶包含內容，安全性儀表板包含數個 widget，例如威脅管理摘要、 威脅保護狀態、 全域每週的威脅偵測、 惡意程式碼，以及更多]，如所述下列各節。
-  
-若要檢視中的 [安全性儀表板， [Office 365 安全性&amp;合規性中心](../../compliance/go-to-the-securitycompliance-center.md)，請移至**威脅管理** \> **儀表板**。
-  
+
+根據您組織的 Office 365 訂閱所包含的內容，安全性儀表板包含數個小元件，例如威脅管理摘要、威脅防護狀態、全域每週威脅偵測、惡意程式碼等等，如本文所述。下列章節。
+
+若要查看安全性儀表板，請在[Office 365 安全性 & 合規性中心](../../compliance/go-to-the-securitycompliance-center.md)，移至 [**威脅管理** \> **儀表板**]。
+
 > [!NOTE]
-> 您必須是 Office 365 全域系統管理員、 安全性系統管理員或安全性讀取者若要檢視安全性儀表板。 某些 widget 需要其他權限才能檢視。 若要深入了解，請參閱[中 Office 365 安全性權限&amp;合規性中心](permissions-in-the-security-and-compliance-center.md)。 
-  
+> 您必須是 Office 365 全域系統管理員、安全性管理員或安全性讀者，才可查看安全性儀表板。 有些小元件需要其他許可權才能進行查看。 若要深入了解，請參閱 [Office 365 安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+
 ## <a name="threat-management-summary"></a>威脅管理摘要
 
-威脅管理摘要] 小工具會告訴您一眼防止威脅保護您的組織已方式，過去七 （7） 天。
+「威脅管理」摘要構件會告訴您組織如何抵禦過去七天（7）天的威脅。
 
-![安全性儀表板-威脅管理摘要] 小工具](../../media/SecDash-ThreatMgmtSummary.png)
+![安全性儀表板-威脅管理摘要構件](../../media/SecDash-ThreatMgmtSummary.png)
 
-您會看到的威脅管理摘要中的資訊取決於您的訂閱所包含的內容。 下表說明會包含 Office 365 E3 和 Office 365 E5 哪些資訊。
+威脅管理摘要中所看到的資訊取決於您訂閱所包含的內容。 下表說明 Office 365 E3 和 Office 365 E5 所包含的資訊。
+|||
+|---|---|
+|**Office 365 E3**|**Office 365 E5**|
+|封鎖惡意程式碼郵件<br/>封鎖網路釣魚郵件<br>使用者所報告的郵件<br><br><br><br>|封鎖惡意程式碼郵件<br>封鎖網路釣魚郵件<br>使用者所報告的郵件<br>已封鎖零天惡意程式碼<br>偵測到的高級網路釣魚郵件<br>封鎖惡意 URLs|
+|
 
+若要查看或存取威脅管理摘要小工具，您必須具有查看高級威脅防護報告的許可權。 若要深入瞭解，請參閱[查看 ATP 報表所需的許可權為何？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。
 
-|Office 365 E3  |Office 365 E5  |
-|---------|---------|
-|已封鎖的惡意程式碼訊息<br/>封鎖的網路釣魚郵件<br>由使用者報告的郵件<br><br><br><br> |已封鎖的惡意程式碼訊息<br>封鎖的網路釣魚郵件<br>由使用者報告的郵件<br>零時差惡意程式碼遭到封鎖<br>偵測到的進階網路釣魚郵件<br>惡意 Url 封鎖 |
+## <a name="threat-protection-status"></a>威脅防護狀態
 
-若要檢視或存取威脅管理摘要] 小工具，您必須檢視進階威脅防護報告的權限。 若要深入了解，請參閱[檢視 ATP 報告需要哪些權限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。 
+「威脅防護狀態」構件會透過網路釣魚和惡意程式碼的趨勢和詳細觀點，顯示威脅防護的有效性。
 
-## <a name="threat-protection-status"></a>威脅保護狀態
+![威脅防護狀態構件](../../media/tpswidget.png)
 
-威脅保護狀態] 小工具顯示與趨勢和詳細資料檢視的釣魚程式和惡意程式碼威脅保護效率。 
+詳細資料取決於您的 Office 365 訂閱是否包含[Exchange Online Protection](exchange-online-protection-eop.md) （EOP），具有或沒有[Office 365 的高級威脅防護](office-365-atp.md)（ATP）。
 
-![威脅保護狀態] 小工具](../../media/tpswidget.png)
+|||
+|---|---|
+|**如果您的訂閱包括 .。。**|**您將會看到這些詳細資料**|
+|EOP，但不是 Office 365 ATP|EOP 所偵測到並封鎖的惡意電子郵件。<br><br> 請參閱[威脅防護狀態報表（EOP）](view-email-security-reports.md#threat-protection-status-report)。|
+|Office 365 ATP|EOP 和 Office 365 ATP 偵測到並封鎖的惡意內容和惡意電子郵件<br><br>反惡意程式碼引擎、[零小時自動清除](zero-hour-auto-purge.md)和 atp 功能（包括[安全連結](atp-safe-links.md)、[安全附件](atp-safe-attachments.md)及[atp 反網路釣魚](atp-anti-phishing.md)）封鎖的獨特電子郵件的匯總計數。<br><br>請參閱[威脅防護狀態報表（ATP）](view-reports-for-atp.md#threat-protection-status-report)。|
+|
 
-詳細資料取決於您的 Office 365 訂閱是否包含[Exchange Online Protection](exchange-online-protection-eop.md) (EOP)，或者沒有[Office 365 進階威脅防護](office-365-atp.md)(ATP)。
+若要查看或存取威脅防護狀態構件，您必須具有查看「高級威脅防護」報告的許可權。 若要深入瞭解，請參閱[查看 ATP 報表所需的許可權為何？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。
 
+## <a name="global-weekly-threat-detections"></a>全球每週威脅偵測
 
-|如果您的訂閱包含...] |您會看到這些詳細資料 |
-|---------|---------|
-|EOP，但不是 Office 365 ATP     |偵測到並由 EOP 封鎖惡意電子郵件<br> 請參閱[威脅保護狀態報表 (EOP)](view-email-security-reports.md#threat-protection-status-report)。| 
-|Office 365 ATP |惡意內容和惡意電子郵件偵測並封鎖由 EOP 和 Office 365 ATP<br>彙總的數唯一的電子郵件與反惡意程式碼引擎、[零時差自動清除](zero-hour-auto-purge.md)，並 ATP 功能 （包括[安全連結](atp-safe-links.md)、[安全附件](atp-safe-attachments.md)及[ATP 防網路釣魚](atp-anti-phishing.md)） 封鎖惡意內容的詳細資訊。<br>請參閱[威脅保護狀態報表 (ATP)](view-reports-for-atp.md#threat-protection-status-report)。 | 
+「全球每週威脅偵測」構件會顯示電子郵件中偵測到超過7天的威脅數目。
 
-若要檢視或存取威脅保護狀態] 小工具，您必須檢視進階威脅防護報告的權限。 若要深入了解，請參閱[檢視 ATP 報告需要哪些權限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。 
+![全球每週威脅偵測小工具](../../media/globalweeklythreatdetections.png)
 
-## <a name="global-weekly-threat-detections"></a>全域每週的威脅偵測
- 
-全域每週的威脅偵測] 小工具顯示多少威脅所電子郵件中偵測到過去七 （7） 天。
+度量單位如下表所述進行計算：
 
-![全域每週威脅偵測小工具](../../media/globalweeklythreatdetections.png)
-
-下表所述，會計算度量資訊：
-
-|評量  |計算方式  |
-|---------|---------|
-|已掃描的郵件 |掃描電子郵件數量乘以收件者數目 |
-|停止的威脅  |電子郵件被識別為包含惡意程式碼收件者數目乘以數目 |
-|封鎖的[ATP](office-365-atp.md) |封鎖的 ATP 乘上的收件者的電子郵件訊息的數目 |
-|在傳遞後移除 |移除[零時差自動清除](zero-hour-auto-purge.md)乘上的收件者的郵件數目 |
+|||
+|---|---|
+|**度量**|**計算方式**|
+|掃描的郵件|已掃描的電子郵件數目乘以收件者數目|
+|威脅已停止|識別為包含惡意軟體的電子郵件數目乘以收件者數目|
+|由[ATP](office-365-atp.md)封鎖|ATP 所封鎖的電子郵件數目乘以收件者數目|
+|傳遞後移除|以[零小時自動清除](zero-hour-auto-purge.md)乘以的收件者人數所移除的郵件數目|
+|
 
 ## <a name="malware"></a>惡意程式碼
 
-惡意程式碼 widget 過去七 （7） 天顯示有關惡意程式碼趨勢和惡意程式碼家庭類型的詳細資料。
+惡意程式碼小元件會顯示過去七（7）天內惡意程式碼趨勢和惡意程式碼系列類型的詳細資料。
 
-![惡意程式碼趨勢和家庭類型](../../media/malwarewidgetatpe5.png)
- 
+![惡意程式碼趨勢及系列類型](../../media/malwarewidgetatpe5.png)
+
 ## <a name="insights"></a>深入資訊
 
-深入了解不僅呈現關鍵問題，您應檢閱，它們也包含要考慮的建議與動作。 
+不只是深入瞭解應該檢查的 surface key 問題，也包括要考慮的建議和動作。
 
-![智慧深入解析](../../media/smartinsights.png)
+![Smart insights](../../media/smartinsights.png)
 
-例如，您可能會看到網路釣魚電子郵件會被傳遞，因為某些使用者已停用其垃圾郵件] 選項。 若要深入了解觀點的運作方式，請參閱[報表和深入了解 Office 365 安全性&amp;合規性中心](reports-and-insights-in-security-and-compliance.md)。
-  
+例如，您可能會發現網路釣魚電子郵件已傳遞，因為某些使用者已停用其垃圾郵件選項。 若要深入瞭解真知灼見的運作方式，請參閱[Office 365 Security & 合規性中心中的報告與深入](reports-and-insights-in-security-and-compliance.md)瞭解。
+
 ## <a name="threat-investigation-and-response"></a>威脅調查及回應
 
-如果您的組織訂閱包含[Office 365 進階威脅防護計劃 2](office-365-ti.md)，安全性儀表板會有一個區段，包括進階的威脅調查及回應工具。 貴組織的安全性小組可以了解新興行銷活動、 調查威脅及管理事件，以使用本節中的資訊。 
-  
-![威脅情報可協助您了解財經貴組織的攻擊](../../media/threatintelwidget.png)
-  
-  
+如果貴組織的訂閱包含[Office 365 Advanced 威脅防護方案 2](office-365-ti.md)，則您的安全性儀表板中有一個區段，其中包含高級威脅調查和回應工具。 組織的安全性小組可以使用本節中的資訊來瞭解新興的活動、調查威脅及管理事件。
+
+![威脅智慧可協助您瞭解組織所針對的攻擊](../../media/threatintelwidget.png)
+
 ## <a name="trends"></a>趨勢
 
-安全性儀表板底部附近會摘要說明您組織的電子郵件流程趨勢**趨勢**] 區段。 報表會提供電子郵件分類為垃圾郵件、 惡意程式碼、 網路釣魚企圖和良好的電子郵件的相關資訊。 按一下 [在報告中檢視的詳細的資訊的磚。 
-  
-![趨勢節摘要列出組織的電子郵件流程趨勢](../../media/trends.png)
-  
-和，如果貴組織的 Office 365 訂用帳戶包含[Office 365 進階威脅防護計劃 2](office-365-ti.md)，您也必須**最近的威脅管理通知**報告可讓您檢視及對高優先順序安全性警示採取動作的安全性小組本章節中。 
+靠近安全性儀表板底部的趨勢區段是一個**趨勢**區段，它會摘要組織的電子郵件流程趨勢。 報告提供有關歸類為垃圾郵件、惡意程式碼、網路釣魚企圖及良好電子郵件的電子郵件資訊。 按一下拼貼，以查看報告中的詳細資訊。
 
-若要檢視或存取已傳送和接收電子郵件] 小工具，您必須檢視進階威脅防護報告的權限。 若要深入了解，請參閱[檢視 ATP 報告需要哪些權限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。 
+![趨勢區段會摘要組織的電子郵件流程趨勢](../../media/trends.png)
 
-若要檢視或存取最近的威脅管理通知] 小工具，您必須檢視警示的權限。 若要深入了解，請參閱[檢視警示所需的 RBAC 權限](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts)。
-  
+此外，如果您組織的 Office 365 訂閱包含[office 365 高級威脅防護方案 2](office-365-ti.md)，您也會在此區段中有一個**最近的威脅管理警示**報告，讓安全性小組能夠查看並對高優先順序的安全性警示採取行動。
+
+若要查看或存取已傳送及已接收的電子郵件小工具，您必須具有查看高級威脅防護報告的許可權。 若要深入瞭解，請參閱[查看 ATP 報表所需的許可權為何？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。
+
+若要查看或存取最近的威脅管理提醒小工具，您必須具有查看提醒的許可權。 若要深入瞭解，請參閱[查看提醒所需的 RBAC 許可權](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts)。
+
 ## <a name="related-topics"></a>相關主題
 
 [檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md)
-  
-[檢視 Office 365 進階威脅防護的報告](view-reports-for-atp.md)
-  
-[Office 365 進階威脅防護](office-365-atp.md)
-  
-[Office 365 威脅調查及回應](office-365-ti.md)
-  
 
+[檢視 Office 365 進階威脅防護的報告](view-reports-for-atp.md)
+
+[Office 365 進階威脅防護](office-365-atp.md)
+
+[Office 365 威脅調查和回應](office-365-ti.md)

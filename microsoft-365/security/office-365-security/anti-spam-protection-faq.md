@@ -16,12 +16,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: 本主題提供有關反垃圾郵件保護的常見問題與解答。這些解答適用於 Microsoft Exchange Online 及 Exchange Online Protection (EOP) 客戶。
-ms.openlocfilehash: daabb84115f1f993fd01891bcef74c23f0391bb4
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 47970cd2f67873b3c8b1fbfa70b7e1754fc8359c
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894055"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033491"
 ---
 # <a name="anti-spam-protection-in-office-365-faq"></a>Office 365 中的反垃圾郵件保護常見問題
 
@@ -42,7 +42,9 @@ ms.locfileid: "42894055"
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>問：我收到的電子郵件有我不熟悉的附件。 哪一天是垃圾郵件變種，服務是如何處理的？
 
-答： 零天垃圾郵件變種是一種最近產生的垃圾郵件變種，永遠不會被捕獲或分析，所以反垃圾郵件篩選器還沒有任何可供您偵測的資訊。 在垃圾郵件分析員取得並分析零天的垃圾郵件樣本（如果它符合垃圾郵件分類準則）之後，我們會更新反垃圾郵件篩選器以偵測它，而且不會再視為「零一天」。 （**附注：** 如果您收到的郵件可能是零天的垃圾郵件變種，為了協助我們改善服務，請使用[提交垃圾郵件、非垃圾郵件和網路釣魚詐騙郵件](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)中所述的其中一種方法，將郵件提交給 microsoft 進行分析。）
+答： 零天垃圾郵件變種是一種最近產生的垃圾郵件變種，永遠不會被捕獲或分析，所以反垃圾郵件篩選器還沒有任何可供您偵測的資訊。 在垃圾郵件分析員取得並分析零天的垃圾郵件樣本（如果它符合垃圾郵件分類準則）之後，我們會更新反垃圾郵件篩選器以偵測它，而且不會再視為「零一天」。
+
+**附注：** 如果您收到的郵件可能是零天的垃圾郵件變種，為了協助我們改善服務，請使用[報表訊息和](report-junk-email-messages-to-microsoft.md)檔案中所述的其中一種方法，將郵件提交給 microsoft。
 
 ## <a name="q-do-i-need-to-configure-the-service-to-provide-anti-spam-protection"></a>問：我收到的電子郵件有我不熟悉的附件。 是否需要設定服務以提供反垃圾郵件保護？
 
@@ -72,7 +74,7 @@ ms.locfileid: "42894055"
 
 ## <a name="q-how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>問：我收到的電子郵件有我不熟悉的附件。 客戶如何使用服務將否定的否定（垃圾郵件）和誤報（非垃圾郵件）郵件傳送給 Microsoft？
 
-答： 客戶可以透過多種方式將垃圾郵件與非垃圾郵件提交給 Microsoft 以進行分析。 如需詳細資訊，請參閱[將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md) (英文)。
+答： 客戶可以透過多種方式將垃圾郵件與非垃圾郵件提交給 Microsoft 以進行分析。 如需詳細資訊，請參閱[將郵件和檔案報告給 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="q-can-i-get-spam-reports"></a>問：我收到的電子郵件有我不熟悉的附件。 我是否可以取得垃圾郵件報告？
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 系統管理員可以深入瞭解 Office 365 和 EOP 中可用的選項，讓輸入郵件可以略過垃圾郵件篩選。
-ms.openlocfilehash: 2b7463165bb376655fd7f63ac0bdd79a8eccb617
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f9178dae93f8eb33996d05034d27fceed66edd39
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893847"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033407"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>在 Office 365 中建立安全的寄件者清單
 
@@ -38,7 +38,7 @@ ms.locfileid: "42893847"
 郵件流程規則允許最大的彈性，以確保只允許正確的郵件。 反垃圾郵件原則中的允許寄件者與允許的網域清單不如 IP 允許清單安全，因為寄件者的電子郵件網域很容易遭到欺騙。 不過，IP 允許清單也會帶來風險，因為從該 IP 位址傳送的_任何_網域的電子郵件都會略過垃圾郵件篩選。
 
 > [!IMPORTANT]
-> <ul><li>請小心，並*監視使用*安全寄件者清單的垃圾郵件篩選例外狀況。</li><li>雖然您可以使用安全寄件者清單來協助誤報（良好的電子郵件標示為垃圾郵件），但您應考慮使用安全寄件者清單做為暫時的解決方案，以盡可能避免使用。 建議您不要使用安全寄件者清單來管理誤報，因為垃圾郵件篩選例外會開啟您的組織，以進行欺騙和其他攻擊。 如果您堅持使用安全寄件者清單來管理誤報，您必須時刻警惕，並保留將[垃圾郵件、非垃圾郵件和網路釣魚郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)的主題。</li><li>若要允許網域傳送未驗證的電子郵件（略過反欺騙保護），但不略過反垃圾郵件和反惡意程式碼檢查，您可以將它新增至[AllowedToSpoof 安全寄件者清單](walkthrough-spoof-intelligence-insight.md)</li><li>EOP 和 Outlook 會檢查不同的郵件內容，以判斷郵件的寄件者。 如需詳細資訊，請參閱本主題稍後的「[大量電子郵件](#considerations-for-bulk-email)」一節的考慮。</li></ul>
+> <ul><li>請小心，並*監視使用*安全寄件者清單的垃圾郵件篩選例外狀況。</li><li>雖然您可以使用安全寄件者清單來協助誤報（良好的電子郵件標示為垃圾郵件），但您應考慮使用安全寄件者清單做為暫時的解決方案，以盡可能避免使用。 建議您不要使用安全寄件者清單來管理誤報，因為垃圾郵件篩選例外會開啟您的組織，以進行欺騙和其他攻擊。 如果您堅持使用安全寄件者清單來管理誤報，您必須時刻警惕，讓主題在準備好時，讓主題[向 Microsoft 報告訊息和](report-junk-email-messages-to-microsoft.md)檔案。</li><li>若要允許網域傳送未驗證的電子郵件（略過反欺騙保護），但不略過反垃圾郵件和反惡意程式碼檢查，您可以將它新增至[AllowedToSpoof 安全寄件者清單](walkthrough-spoof-intelligence-insight.md)</li><li>EOP 和 Outlook 會檢查不同的郵件內容，以判斷郵件的寄件者。 如需詳細資訊，請參閱本主題稍後的「[大量電子郵件](#considerations-for-bulk-email)」一節的考慮。</li></ul>
 
 相比之下，您也有數個選項可以封鎖使用_封鎖的寄件者清單_來自特定來源的電子郵件。 如需詳細資訊，請參閱[在 Office 365 中建立封鎖寄件者清單](create-block-sender-lists-in-office-365.md)。
 

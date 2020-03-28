@@ -1,5 +1,5 @@
 ---
-title: 案例研究-Contoso 會快速設定冒犯性語言原則
+title: 案例研究-Contoso 會快速設定適用于 Microsoft 小組和 Exchange 通訊的冒犯性語言原則
 description: Contoso 的案例研究，以及如何快速設定通訊相容性原則，以監視 Microsoft 團隊和 Exchange Online 通訊中的冒犯性語言
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6b5ce3b9ca738ddf94edbb035daeb730f5e3f96a
-ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
+ms.openlocfilehash: 6f23bece83f0c0fc25ddb26b8ceddcb1c956bc5e
+ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982355"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43024343"
 ---
-# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy"></a>案例研究-Contoso 會快速設定冒犯性語言原則
+# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>案例研究-Contoso 會快速設定適用于 Microsoft 小組和 Exchange 通訊的冒犯性語言原則
 
 Microsoft 365 中的通訊法規遵從性，可協助您針對組織中的不適當郵件偵測、捕獲和採取補救措施，以盡可能降低通訊風險。 預先定義和自訂原則可讓您掃描內部及外部通訊的原則符合，以供指定的檢閱者檢查。 檢閱者可以調查組織中已掃描的電子郵件、Microsoft 小組或協力廠商通訊，並採取適當的修正動作，以確保它們符合您組織的郵件標準。
 

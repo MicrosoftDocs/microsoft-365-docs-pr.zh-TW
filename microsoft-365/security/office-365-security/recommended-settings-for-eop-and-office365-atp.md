@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高級威脅防護（ATP）安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用高級威脅防護（ATP），您也可以取得哪些額外功能？
-ms.openlocfilehash: b68c10eccfdacd7782f402b5712a808ff278254d
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 9ddf704f767dfa5ff5c93888e51b91b2079a6c43
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895224"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032849"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建議設定
 
@@ -190,12 +190,11 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但是 Office 365 A
 |在偵測時重新導向附件|已啟用|已啟用|重新導向安全系統管理員的電子郵件地址，以瞭解如何判斷附件是否為惡意程式碼|
 |當惡意程式碼掃描附件超時或發生錯誤時，ATP 安全附件回應|已啟用|已啟用||
 
-
 ## <a name="related-topics"></a>相關主題
 
 - 您在尋找**Exchange 郵件流程/Exchange 傳輸規則**的最佳作法嗎？ 如需詳細資訊，請參閱[本文](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop)。
 
-- 將可疑的郵件、可疑的垃圾郵件、網路釣魚詐騙或 URLs 傳送給 Microsoft 進行掃描。 請使用[本文](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)中的系統**管理報送**方向。
+- 系統管理員和使用者可以將誤報（良好的電子郵件標記為壞）和誤報（允許的錯誤電子郵件）提交給 Microsoft 進行分析。 如需詳細資訊，請參閱[將郵件和檔案報告給 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
 - 使用下列連結可取得如何設定[EOP 服務](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)的**資訊，以及****設定** [Office 365 的高級威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)。 （請不要忘記「防禦[Office 365 中的威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)」中有説明的指示。）
 

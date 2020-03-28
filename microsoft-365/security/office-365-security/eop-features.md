@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供可在 Exchange Online Protection (EOP) 託管式電子郵件篩選服務中使用的功能清單。
-ms.openlocfilehash: 857c2c4dd62f036cda78cd9fee61e2ce464d35cc
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f8a9165cd377549d355a72da5428b777e7c1a505
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893703"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032885"
 ---
 # <a name="eop-features"></a>EOP 功能
 
@@ -27,7 +27,7 @@ ms.locfileid: "42893703"
 > [適用於商務藍圖的 Office 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) 是很好的資源，可找出即將推出之新功能的相關資訊。如需深入了解不同的 EOP 訂閱方案可提供什麼功能，請參閱 [Exchange Online Protection 服務描述](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
 
 |||
-|:-----|:-----|
+|---|---|
 |**功能**|**描述**|
 |**反垃圾郵件保護**||
 |輸入垃圾郵件偵測|輸入反垃圾郵件保護永遠啟用，而且無法停用。您可以透過連線篩選和內容篩選原則來進行自訂設定。  <br/><br/> 若為 EOP 獨立版客戶：EOP 內容篩選預設會將偵測到的垃圾郵件傳送至每位收件者的 [垃圾郵件] 資料夾。 不過，為了協助確保 **[將郵件移至垃圾郵件資料夾]** 動作能夠在內部部署信箱中運作，您必須在內部部署伺服器上設定兩項 Exchange 流程規則 (也稱為傳輸規則)，以偵測由 EOP 新增的垃圾郵件標頭。 如需詳細資訊，請參閱[Configure 獨立 EOP 以將垃圾郵件傳送至混合式環境中的 [垃圾郵件] 資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。|
@@ -43,15 +43,10 @@ ms.locfileid: "42893703"
 |設定進行嚴苛垃圾郵件篩選之進階選項的功能|如需詳細資訊，請參閱在 office [365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)（您可以在這裡設定）和[高級垃圾郵件篩選（ASF）365設定](advanced-spam-filtering-asf-options.md)（提供每個選項的特定詳細資料）。|
 |國際垃圾郵件篩選|您可以將 EOP 設定為篩選以特定語言撰寫的郵件，或是從特定國家或地區傳送的電子郵件。 您可以設定高達 86 種不同語言和 250 個不同地區。 此服務會對高信賴度垃圾郵件套用設定的動作。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。|
 |透過 Outlook 或 Outlook 網頁版 (先前為 Outlook Web 應用程式) 管理垃圾郵件|系統管理員和使用者可以建立安全的寄件者清單以及封鎖的寄件者清單。 如需詳細資訊: <br/>* **網頁上的 Outlook**：請參閱[封鎖或允許（垃圾郵件設定）](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)。  <br/>* **Outlook**：查看[垃圾郵件篩選器的概述](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。 <br/><br/> 如果您正在使用 EOP 來協助保護內部部署信箱，請務必使用目錄同步作業協助確保這些設定會同步到服務。 若需設定目錄同步作業的詳細資訊，請參閱 [管理 EOP 中的郵件使用者](manage-mail-users-in-eop.md) 中的「使用目錄同步作業來管理郵件使用者」。|
-|透過 Microsoft Office Outlook 的垃圾郵件回報增益集提交垃圾郵件|您可以下載增益集到 Outlook，讓您提交垃圾郵件給 Microsoft 進行分析。 如需下載和使用此工具的相關資訊，請參閱[啟用報告訊息增益集](enable-the-report-message-add-in.md)。 <br/><br/> 如果您使用具有 EOP 的 Exchange Server 2013 或更新版本，您也可以用滑鼠右鍵按一下 Outlook 網頁版以提交垃圾郵件，如[在 Outlook 網頁版中回報垃圾郵件與網路釣魚詐騙](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中所述。|
-|透過電子郵件別名提交垃圾郵件和非垃圾郵件|您可以透過電子郵件提交垃圾郵件 (垃圾) 和非垃圾郵件 (非垃圾) 給 Microsoft。 如需詳細資訊，請參閱[將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)。|
-|透過 Outlook 網頁版垃圾郵件回報提交垃圾郵件和非垃圾郵件|您可以透過 Outlook 網頁版垃圾郵件回報提交垃圾郵件和非垃圾郵件給 Microsoft。 如需詳細資訊，請參閱[在 Outlook 網頁版中回報垃圾郵件與網路釣魚詐騙](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)。  <br/><br/> 這項功能目前適用於要由 EOP 篩選其 Exchange Server 2013 SP1 或更新版本之信箱的 Outlook 網頁版客戶。 Exchange Online Outlook 網頁版客戶在不久的將來也會有這項功能。|
-|使用者垃圾郵件隔離通知|如需 mor 資訊，請參閱[Office 365 中的使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。|
-|使用者垃圾郵件隔離通知頻率|此頻率預設為 3 天，可設定為 1 到 15 天。|
-|讓系統管理員設定使用者垃圾郵件隔離通知語言的功能|此功能適用於使用者及系統管理員。 如需詳細資訊，請參閱[在 Office 365 中管理被隔離的郵件和檔案為系統管理員](manage-quarantined-messages-and-files.md)，或[尋找並釋放被隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。|
-|透過網頁存取和管理隔離區中的郵件|此功能適用於使用者及系統管理員。 如需詳細資訊，請參閱[在 Office 365 中管理被隔離的郵件和檔案為系統管理員](manage-quarantined-messages-and-files.md)，或[尋找並釋放被隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。|
-|搜尋隔離的功能|在隔離區中搜尋特定垃圾郵件的功能，適用於系統管理員和使用者。 如需詳細資訊，請參閱[在 Office 365 中管理被隔離的郵件和檔案為系統管理員](manage-quarantined-messages-and-files.md)，或[尋找並釋放被隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。|
-|從 Exchange 系統管理中心檢視垃圾郵件隔離郵件標頭|檢視隔離中的郵件標題之後，您也可以複製郵件標頭文字並將它貼到[郵件標頭分析器](https://testconnectivity.microsoft.com/?tabid=mha)，可提供資訊說明郵件發生了什麼事。|
+|將誤報（良好的電子郵件標示為壞）和 false 負片（允許的電子郵件不正確）報告給 Microsoft。|如需詳細資訊，請參閱[將郵件和檔案報告給 Microsoft](report-junk-email-messages-to-microsoft.md)。|
+|使用者垃圾郵件隔離通知|如需詳細資訊，請參閱[Office 365 中的使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)和[設定使用者垃圾郵件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)。|
+|透過網頁查看、尋找及管理隔離中的郵件|此功能適用於使用者及系統管理員。 如需詳細資訊，請參閱[在 Office 365 中管理被隔離的郵件和檔案為系統管理員](manage-quarantined-messages-and-files.md)，或[尋找並釋放被隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。|
+|查看垃圾郵件隔離的郵件頭|在您查看隔離區中的郵件頭之後，您也可以將標頭文字複製並 pate 到[郵件頭分析器](https://mha.azurewebsites.net/)，以查看郵件發生問題的相關資訊。|
 |**Anti-malware protection**||
 |多重引擎反惡意程式碼保護|多重的反惡意程式碼引擎可協助隨時自動保護我們的客戶。|
 |停用惡意程式碼篩選的選項|您無法停用惡意程式碼篩選，因為我們會對透過服務來路由傳送的所有電子郵件強制進行反惡意程式碼掃描。我們相信，所有客戶協助提供一致且嚴密的保護層級，是協助保護您電子郵件環境時所需的深度防禦策略中很重要的一部份。因此，系統會自動為所有客戶啟用惡意程式碼篩選。|

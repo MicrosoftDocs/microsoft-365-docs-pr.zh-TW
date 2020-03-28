@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用資訊障礙，以確保您的組織內的 Microsoft 小組能夠進行通訊法規遵從性。
-ms.openlocfilehash: 8bee0f368edc91b6f926eb6cb3e0a2f8dad81e9b
-ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
+ms.openlocfilehash: 5d3abe41680a8399600fdea51df6f3b85fbd6b94
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42692650"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029837"
 ---
 # <a name="learn-about-information-barriers"></a>深入瞭解資訊障礙
 
@@ -28,10 +28,13 @@ Microsoft 雲端服務包含強大的通訊和協同作業功能。 不過，假
 
 立即開始從 Microsoft 小組開始的資訊壁壘。 假設您的[訂閱](#required-licenses-and-permissions)包含資訊障礙，合規性管理員或資訊屏障管理員可以定義原則，以允許或防止 Microsoft 小組中的使用者群組之間的通訊。 資訊屏障原則可以用於下列情況：
 
-- 天 trader 無法呼叫行銷小組的人員
-- 從事機密公司資訊的融資人員無法從組織內的特定群組接收通話
-- 內部團隊使用交易機密材料時，無法與組織內特定群組的人員線上通話或聊天
-- 調查小組只能呼叫或與產品開發小組線上交談
+- Day trader 群組中的使用者不應該與行銷小組通訊
+- 工作機密公司資訊的融資人員不應該與組織內的某些群組進行通訊
+- 內部團隊使用貿易秘訣材料時，不應與組織內特定群組的人員線上通話或聊天
+- 調查小組應只通話或與產品開發小組線上交談
+
+> [!IMPORTANT]
+> 資訊障礙***只支援***兩種方式限制。 一種方式限制，例如「行銷」可以與日商貿通訊，但無法與行銷進行***通訊。***
 
 針對上述所有範例案例（等等），您可以定義資訊屏障原則，以防止或允許 Microsoft 小組中的通訊。 這類原則可以防止使用者不應該來電或與其聊天，或讓使用者只能與 Microsoft 小組中的特定群組進行通訊。 透過資訊屏障原則，只要這些原則所涵蓋的使用者嘗試與 Microsoft 小組中的其他使用者通訊，便會進行檢查，以防止（或允許）通訊（如資訊屏障原則所定義）。 若要深入瞭解使用者對資訊障礙的經驗，請參閱[Microsoft 小組中的資訊障礙](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
 

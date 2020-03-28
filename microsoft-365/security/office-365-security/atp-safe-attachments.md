@@ -17,12 +17,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: '[安全附件] 功能可提供電子郵件附件的點擊時驗證。 使用安全附件可保護貴組織不受他人在電子郵件中傳送或接收惡意檔案的危害。'
-ms.openlocfilehash: c95287b3dd05cce28bad6761ca7e69ce9cc2f914
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 60a5a95af846fe6dbe8c2c7aa6dced9deaae1a2d
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599810"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033455"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP 安全附件
 
@@ -68,4 +68,4 @@ ATP 保護也會延伸到 SharePoint Online、商務用 OneDrive 和 Microsoft T
 
 - 如果您想要對收到的檔案要求 Microsoft 進行分析，請造訪[提交檔案以進行惡意程式碼分析](https://aka.ms/wdsi/submit) (英文)。
 
-- 如果您想要將收到的電子郵件訊息 (包含或不含附件) 提交給 Microsoft 進行分析，請使用[報告訊息增益集](enable-the-report-message-add-in.md)。
+- 如果您收到的電子郵件（包含或不含附件）您想要提交給 Microsoft 進行分析，請參閱[將郵件和檔案報告給 microsoft](report-junk-email-messages-to-microsoft.md)。
