@@ -1,8 +1,10 @@
 - name: Microsoft 365 安全性
   href: index.yml
   items:
-    - name: 入門
+    - name: 開始使用
       items:
+        - name: 支援在家工作的主要工作
+          href: top-security-tasks-for-remote-work.md
         - name: 適用於 BDM 的 Microsoft 365 安全性
           href: Microsoft-365-security-for-bdm.md
         - name: 資訊安全長 (CISO) 研討會訓練
@@ -212,8 +214,6 @@
                       href: ./office-365-security/anti-malware-protection-faq-eop.md
                     - name: 設定反惡意程式碼原則
                       href: ./office-365-security/configure-anti-malware-policies.md
-                    - name: 將惡意程式碼與非惡意程式碼提交給 Microsoft 進行分析
-                      href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                     - name: 從勒索軟體的攻擊中復原
                       href: ./office-365-security/recover-from-ransomware.md
                     - name: SharePoint Online 中的病毒偵測
@@ -235,16 +235,14 @@
                       href: ./office-365-security/spam-confidence-levels.md
                     - name: 大量抱怨層級 (SCL)
                       href: ./office-365-security/bulk-complaint-level-values.md
+                    - name: 垃圾郵件和大量電子郵件有什麼不同?
+                      href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
                     - name: 設定 Exchange Online 信箱上的垃圾郵件設定
                       href: ./office-365-security/configure-junk-email-settings-on-exo-mailboxes.md
-                    - name: 使用者垃圾郵件通知
-                      href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
                     - name: 使用郵件流程規則設定郵件中的 SCL
                       href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
                     - name: 進階垃圾郵件篩選 (ASF) 設定
                       href: ./office-365-security/advanced-spam-filtering-asf-options.md
-                    - name: '設定獨立 EOP 以將垃圾郵件傳送至 [垃圾郵件] 資料夾'
-                      href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
                 - name: 輸出垃圾郵件保護
                   href: ./office-365-security/outbound-spam-controls.md
                   items:
@@ -252,8 +250,21 @@
                       href: ./office-365-security/configure-the-outbound-spam-policy.md
                     - name: 輸出郵件的高風險傳遞集區
                       href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
-                    - name: 從受限制的使用者入口網站中移除封鎖的使用者
+                    - name: '從 [受限使用者] 入口網站中移除封鎖的使用者'
                       href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
+                - name: 回報訊息和檔案至 Microsoft。
+                  href: ./office-365-security/report-junk-email-messages-to-microsoft.md
+                  items:
+                    - name: 使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
+                      href: ./office-365-security/admin-submission.md
+                    - name: 啟用報告訊息增益集
+                      href: ./office-365-security/enable-the-report-message-add-in.md
+                    - name: 安裝及使用垃圾郵件回報增益集
+                      href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
+                    - name: 將郵件手動提交給 Microsoft
+                      href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
+                    - name: 將惡意程式碼與非惡意程式碼提交給 Microsoft
+                      href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: 反垃圾郵件訊息標頭
                   href: ./office-365-security/anti-spam-message-headers.md
                 - name: 原則和防護的組合方式
@@ -262,12 +273,6 @@
                   href: ./office-365-security/zero-hour-auto-purge.md
                 - name: 電子郵件訊息的安全提示
                   href: ./office-365-security/safety-tips-in-office-365.md
-                - name: 向 Microsoft 回報垃圾郵件訊息
-                  href: ./office-365-security/report-junk-email-messages-to-microsoft.md
-                - name: 將垃圾郵件、非垃圾郵件與網路釣魚詐騙郵件提交給 Microsoft 進行分析
-                  href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
-                - name: Office 365 的系統管理員提交
-                  href: ./office-365-security/admin-submission.md
                 - name: 使用取消列出入口網站，將您自己從 Office 365 封鎖寄件者清單中移除
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
             - name: Office 365 的防網路釣魚保護
@@ -290,23 +295,6 @@
                   href: ./office-365-security/walkthrough-spoof-intelligence-insight.md
                 - name: 在 Outlook.com 和 Outlook 網頁版中找出可疑的郵件
                   href: ./office-365-security/unverified-sender-feature.md
-            - name: EOP 是什麼？
-              href: ./office-365-security/what-is-eop.md
-              items:
-                - name: 支援透過 IPv6 的匿名輸入電子郵件
-                  href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
-                - name: 在 EOP 獨立版中封鎖垃圾郵件
-                  href: ./office-365-security/block-email-spam-in-EOPStandalone.md
-                - name: 在 Outlook 網頁版中回報垃圾郵件與網路釣魚詐騙
-                  href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
-                - name: 使用 Exchange Online Protection 保護內部部署的信箱
-                  href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
-                - name: 安裝 Microsoft Outlook 的垃圾郵件回報增益集
-                  href: ./office-365-security/install-the-junk-email-reporting-add-in-for-microsoft-outlook.md
-                - name: 關閉 Outlook 網頁版中的垃圾郵件報告
-                  href: ./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md
-                - name: 垃圾郵件和大量電子郵件有什麼不同?
-                  href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
             - name: 隔離
               href: ./office-365-security/quarantine-email-messages.md
               items:
@@ -316,6 +304,8 @@
                   href: ./office-365-security/manage-quarantined-messages-and-files.md
                 - name: 以使用者身分找到並釋放被隔離的郵件
                   href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
+                - name: 使用者垃圾郵件通知
+                  href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
             - name: 電子郵件驗證
               items:
                 - name: Office 365 如何使用 SPF 來防範詐騙
@@ -350,6 +340,17 @@
                       href: ./office-365-security/download-existing-reports.md
                 - name: 檢視惡意檔案的相關資訊
                   href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
+            - name: EOP 是什麼？
+              href: ./office-365-security/what-is-eop.md
+              items:
+                - name: 支援透過 IPv6 的匿名輸入電子郵件
+                  href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
+                - name: 在 EOP 獨立版中封鎖垃圾郵件
+                  href: ./office-365-security/block-email-spam-in-EOPStandalone.md
+                - name: 使用 Exchange Online Protection 保護內部部署的信箱
+                  href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
+                - name: 設定獨立 EOP 以將垃圾郵件傳送至垃圾郵件資料夾
+                  href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
         - name: 進階威脅防護
           href: ./office-365-security/office-365-atp.md
           items:
@@ -440,8 +441,6 @@
               href: ./office-365-security/responding-to-a-compromised-email-account.md
         - name: 郵件流程
           items:
-            - name: 啟用報告訊息增益集
-              href: ./office-365-security/enable-the-report-message-add-in.md
             - name: 安全性與合規性中心內的郵件追蹤
               href: ./office-365-security/message-trace-scc.md
             - name: 檢視安全性與合規性中心內的電子郵件安全性報告
@@ -547,16 +546,13 @@
                       href: ./office-365-security/mail-flow-rules-transport-rules-0.md
                     - name: 使用郵件流程規則來設定大量電子郵件篩選
                       href: ./office-365-security/use-transport-rules-to-configure-bulk-email-filtering.md
-                    - name: 使用郵件流程規則來查看您的使用者報告給 Microsoft 哪些內容
-                      href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
                     - name: 透過檔案附件封鎖來降低惡意程式碼威脅
                       href: ./office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
                     - name: 報告和郵件追蹤
                       href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
                     - name: Office 365 中的郵件流程情報
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
-                - name: 疑難排解和支援資訊
-                  href: ./office-365-security/troubleshooting-and-support-information.md
+                - name: EOP 的疑難排解與支援
                   items:
                     - name: 將疑難排解郵件傳送至 Office 365
                       href: ./office-365-security/troubleshooting-mail-sent-to-office-365.md
