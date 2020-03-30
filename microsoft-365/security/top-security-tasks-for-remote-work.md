@@ -1,5 +1,5 @@
 ---
-title: 適用于安全小組的前12個工作，以支援在家工作
+title: 最常見的12個任務，可供安全性小組用來支援在家運作
 f1.keywords:
 - CSH
 ms.author: bcarter
@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: '保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。 '
-ms.openlocfilehash: 73f2ae19a7424d392bb365d7a24a83532a1950bf
-ms.sourcegitcommit: 37f17c918208b83fc04ba92e986e0a7548d4c38d
+ms.openlocfilehash: b675f8abc5487dcb08324795fb1d6cc3b91592a1
+ms.sourcegitcommit: 71612ef8f2f93063c2a070e8a079506362f54c58
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/29/2020
-ms.locfileid: "43036379"
+ms.locfileid: "43037473"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>最常見的12個任務，可供安全性小組用來支援在家運作
 
@@ -116,7 +116,7 @@ Office 365 ATP：
 現在，您已設定 Office 365 ATP 和 Azure ATP，您可以在一個儀表板中查看這些功能的合併信號。 [Microsoft 威脅防護](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)（MTP）彙集了警示、事件、自動化調查和回應，以及跨工作負載（Azure ATP、OFFICE 365 Atp、MICROSOFT Defender ATP 和 Microsoft Cloud App Security）的高級搜尋，放入單一窗格的[security.microsoft.com](https://security.microsoft.com)。 
 <br>
 
-![MTP 儀表板圖例](../media/top-10-security-remote-work-mtp-dashboard.png)
+![MTP 儀表板圖例](../media/top-ten-security-remote-work-mtp-dashboard.png)
 <br><br>
 在您設定一或多個高級威脅防護服務後，開啟 MTP。 新功能會持續新增至 MTP;請考慮改為接收預覽功能。
 
