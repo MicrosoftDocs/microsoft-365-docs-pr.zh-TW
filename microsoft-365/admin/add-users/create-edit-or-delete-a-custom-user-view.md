@@ -2,8 +2,8 @@
 title: 在 Office 365 中建立、編輯或刪除自訂使用者視圖
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: 瞭解如何在 Office 365 中使用篩選來建立、編輯或刪除自訂使用者視圖。
-ms.openlocfilehash: ba03d3da3e8bfdc4f2a661d1dc59845a8a22609f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: ae12675afd47434ac6dd12dae683c79aae64be1f
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632951"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047056"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>在 Office 365 中建立、編輯或刪除自訂使用者視圖
 
@@ -89,6 +89,13 @@ ms.locfileid: "42632951"
 - **未經許可的使用者**選取此方塊，以尋找未獲指派授權的所有使用者。 此視圖的結果也可以包含具有 Exchange 信箱，但沒有授權的使用者。 若要特別追蹤這些使用者，請使用篩選**未經授權的使用者與 Exchange 信箱或檔案**。 此視圖的結果也可以包含有 Exchange 封存，但沒有授權的使用者。
     
 - **具有 Exchange 信箱或封存的未授權使用者**選取此方塊以顯示在 Exchange Online 中建立且具有 Exchange 信箱，但未獲指派 Office 365 授權的使用者帳戶。 此篩選的結果包括已被指派 Exchange 封存的使用者。 
+
+> [!NOTE]
+> **具有 Exchange 信箱的未經許可使用者**可在下列情況中運作：
+1. 信箱最近從**共用**轉換為**使用者**，而且沒有授權。
+2. 信箱最近已遷移至 Office 365，但尚未指派授權。
+3. 信箱已使用 PowerShell 建立，尚未指派授權。
+4. 會為使用者布建已使用 New-RemoteMailbox Cmdlet 建立內部部署的新信箱。
     
 > [!TIP]
 > 如果您建立的自訂視圖傳回超過2000的使用者，則不會排序所產生的使用者清單。 在此情況下，請使用搜尋方塊尋找使用者或編輯您的自訂視圖，以精煉搜尋。 
@@ -170,4 +177,3 @@ ms.locfileid: "42632951"
 
 
      
-
