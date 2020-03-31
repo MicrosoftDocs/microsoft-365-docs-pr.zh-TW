@@ -1,11 +1,11 @@
 ---
-title: 傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者
+title: 從 [受限使用者] 入口網站中移除封鎖的使用者
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 07/10/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -17,39 +17,39 @@ search.appverid:
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
-description: 如果使用者持續從 Office 365 傳送被歸類為垃圾郵件的電子郵件，使用者將遭到限制而無法再傳送任何郵件。
-ms.openlocfilehash: 6fad4b9d3554228bdbf474bce2b4b2d0f29f7e2b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 系統管理員可以從 Office 365 中的 [受限使用者] 入口網站瞭解如何移除使用者。 傳送輸出垃圾郵件 (通常是因為「帳戶洩露」) 的使用者會被新增至 [受限使用者] 入口網站。
+ms.openlocfilehash: f1f869a81ef5b01733bf9060117cf3706094b961
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598580"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895200"
 ---
-# <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>傳送垃圾電子郵件之後，從限制的使用者入口網站移除使用者
+# <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>從 Office 365 中的 [受限使用者] 入口網站移除封鎖的使用者
 
-如果使用者持續從 Office 365 傳送被歸類為垃圾郵件的電子郵件，使用者將遭到限制而無法傳送任何電子郵件，但仍可以收到電子郵件。 使用者會列在服務中，做為錯誤的外寄寄件者，並將會收到未傳遞回報 (NDR)，指出：
+如果使用者超過[服務限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)或[輸出垃圾郵件](configure-the-outbound-spam-policy.md)原則中所指定的輸出傳送限制之一，系統就會限制使用者傳送電子郵件，但他們仍可接收電子郵件。
 
-> 「因為您不是認可的有效寄件者，所以無法傳遞您的郵件。 最有可能發生此狀況的原因是您的電子郵件地址有傳送垃圾郵件的嫌疑，因此系統已不允許此電子郵件地址傳送電子郵件。  請連絡您的電子郵件系統管理員以取得協助。 遠端伺服器傳回「550 5.1.8 存取被拒，錯誤的外寄寄件者。」
+使用者會被新增至 Office 365 安全性 與合規性中心的 [受限使用者] 入口網站。 當他們嘗試傳送電子郵件時，系統會以未傳遞回報 (又稱為 NDR 或退回的郵件) 傳回郵件，並包含錯誤碼 [5.1.8](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) 和下列文字：
+
+> 「因為您不是認可的有效寄件者，所以無法傳遞您的郵件。 最有可能發生此狀況的原因是您的電子郵件地址有傳送垃圾郵件的嫌疑，因此系統已不允許此電子郵件地址傳送電子郵件。  請連絡您的電子郵件系統管理員以取得協助。 遠端伺服器傳回 ‘550 5.1.8 存取被拒，錯誤的外寄寄件者。’」
+
+系統管理員可以從安全性與合規性中心移除使用者，或用 Exchange Online PowerShell 移除使用者。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
-<a name="sectionSection0"> </a>
 
-預估完成時間：5 分鐘
+- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [受限使用者]**** 頁面，請使用 <https://protection.office.com/restrictedusers>。
 
-您必須已獲指派權限，才能執行此程序或這些程序。 若要查看您需要的權限，請參閱 [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)主題中的＜反垃圾郵件＞項目。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
-下列程序也可以透過遠端 PowerShell 執行。 使用 Get-BlockedSenderAddress Cmdlet 來取得受限制使用者的清單，以及使用 Remove-BlockedSenderAddress 來移除限制。 若要了解如何使用 Windows PowerShell 連線到 Exchange Online，請參閱[連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+- 您必須已獲指派權限，才能執行這些程序。 若要移除 [受限使用者] 入口網站中的使用者，您必須是**組織管理**或**安全性系統管理員**角色群組的成員。 若要以唯讀方式存取 [受限使用者] 入口網站，您必須是**安全性讀取者**角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱 [Office 365 安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
-## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>移除封鎖的 Office 365 電子郵件帳戶的限制
+- 超過輸出郵件限制的寄件者是帳戶洩露的指標。 從 [受限使用者] 入口網站移除使用者之前，請務必遵循所需的步驟重新取得該帳戶的控制權。 如需詳細資訊，請參閱[針對 Office 365 電子郵件帳戶洩露的對策](responding-to-a-compromised-email-account.md)。
 
-您可以在安全性與合規性中心 (SCC) 完成此工作。 如需 SCC 的詳細資訊，請[移至安全性與合規性中心](../../compliance/go-to-the-securitycompliance-center.md)。 您必須在**組織管理**或**安全性系統管理員**角色群組，才能執行這些功能。 如需 SCC 角色群組的詳細資訊，請[移至安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)。
+## <a name="use-the-security--compliance-center-to-remove-a-user-from-the-restricted-users-list"></a>使用安全性與合規性中心移除 [受限使用者] 清單中的使用者。
 
-1. 使用具備 Office 365 全域系統管理員權限的公司或學校帳戶登入 Office 365 安全性與合規性中心，並在左側清單中，展開 [威脅管理]****，選擇 [檢閱]****，然後選擇 [限制的使用者]****。
+1. 在安全性與合規性中心，移至 [威脅管理]**** \> [檢閱]**** \> [受限使用者]****。
 
-    > [!TIP]
-    > 若要直接前往安全性 &amp; 合規性中心中的 [限制的使用者]**** 頁面 (先前稱為重要訊息中心)，請使用此 URL：[https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
-
-2. 此頁面會包含已遭封鎖而無法傳送電子郵件的使用者清單。  尋找您想要移除限制的使用者，並選取 [解除封鎖]****。
+2. 尋找並選取您要解除封鎖的使用者。 在 [動作]**** 資料行中，按一下 [解除封鎖]****。
 
 3. 隨即會出現飛出視窗，內含帳戶的傳送受到限制的詳細資料。 您必須逐一查看建議，以確保帳戶實際上遭到入侵時，您會採取適當的動作。 完成時，按 [下一步]****。
 
@@ -57,36 +57,56 @@ ms.locfileid: "41598580"
 
 5. 按一下 [是]**** 以確認變更。
 
-    > [!NOTE]
-    > 可能需要 30 分鐘以上的時間，才能移除限制。
+   > [!NOTE]
+   > 可能需要 30 分鐘以上的時間，才能移除限制。
 
-## <a name="making-sure-admins-are-alerted-when-this-happens"></a>確認發生此情況時系統管理員會收到警示
+## <a name="verify-the-alert-settings-for-restricted-users"></a>確認受限使用者的提醒設定
 
-「無法傳送電子郵件的受限制使用者」警示以原則的形式於 [Office 365 安全性與合規性警示] 原則頁面下提供。 這原先是輸出垃圾郵件原則，但現在是 Office 365 警示平台的原生部分。 如需警示的詳細資訊，請移至[安全性與合規性中心的警示原則](../../compliance/alert-policies.md)。
+當系統封鎖使用者傳送電子郵件時，預設的警示原則**無法傳送電子郵件的受限使用者**會自動通知系統管理員。 您可以確認這些設定，並新增其他要通知的使用者。 如需有關警示原則的詳細資訊，請參閱[安全性與合規性中心中的警示原則](../../compliance/alert-policies.md)。
 
 > [!IMPORTANT]
 > 若要讓警示運作，必須開啟稽核記錄搜尋。 如需詳細資訊，請參閱[開啟或關閉 Office 365 稽核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)。
 
-此警示的原則是預設值，都每個 Office 365 租用戶都會隨附，因此不需要進行設定。 它會被視為高嚴重性警示，並且會每次使用者遭限制無法傳送郵件而引發警示時，寄送電子郵件給所設定的 TenantAdmins 群組。 系統管理員可以更新發生此警示所通知的群組，方法是移至警示，其位於 SCC 入口網站 > [警示] > [警示原則] > [使用者受限制無法傳送電子郵件]。
+1. 在安全性與合規性中心，移至 [警示]**** \> [警示原則]****。
 
-您可以編輯警示，以便：
-- 開啟/關閉電子郵件通知
-- 傳送電子郵件給需要的收件者
-- 限制您每天收到的通知
+2. 尋找並選取 [無法傳送電子郵件的受限使用者]**** 警示。
 
-## <a name="checking-for-and-removing-restrictions-using-powershell"></a>使用 PowerShell 檢查並移除限制
-用於限制的使用者的 PowerShell 命令為：
-- `Get-BlockedSenderAddress`：執行以擷取受限制而無法傳送電子郵件的使用者清單
-- `Remove-BlockedSenderAddress`：執行可從限制中移除使用者
+3. 在隨即出現的飛出視窗中，確認或設定如下設定：
 
-## <a name="for-more-information"></a>相關資訊
+   - **狀態**：確認已開啟警示 ![打開](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)。
 
-[回應遭入侵的電子郵件帳戶](responding-to-a-compromised-email-account.md)
+   - **電子郵件收件者**：按一下 [編輯]****，在 [編輯收件者]**** 飛出視窗中確認或設定如下列設定：
 
-[了解「無法傳送電子郵件的受限制使用者」警示](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
+     - **傳送電子郵件通知**：確認已選取核取方塊 ([開啟]****)。
 
-[輸出郵件的高風險傳遞集區](high-risk-delivery-pool-for-outbound-messages.md)
+     - **電子郵件收件者**：預設值是 **TenantAdmins** (表示 **全域系統管理員**成員)。 若要新增其他收件者，按一下方塊中的空白處。 收件者清單隨即顯示，您可以輸入名稱開始篩選，然後選取收件者。 若要移除方塊中的現有收件者，只要按一下其名稱旁的移除圖示![](../../media/scc-remove-icon.png)即可。
 
-[安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)
+     - **每日通知限制**：預設值是 [無限制]****，但您可以選取每天的通知數量上限。
 
-[安全性與合規性中心的警示原則](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
+     完成後，按一下 [儲存]****。
+
+4. 返回 [限制使用者傳送電子郵件]**** 飛出視窗中，按一下 [關閉]****。
+
+## <a name="use-exchange-online-powershell-to-view-and-remove-users-from-the-restricted-users-list"></a>使用 Exchange Online PowerShell 杦檢視和移除受限使用者清單中的使用者
+
+若要檢視限制傳送電子郵件的使用者清單，請執行下列命令：
+
+```powershell
+Get-BlockedSenderAddress
+```
+
+若要檢視特定使用者的詳細資料，請執行下列命令並以其電子郵件地址取代 \<emailaddress\>：
+
+```powershell
+Get-BlockedSenderAddress -SenderAddress <emailaddress>
+```
+
+如需詳細的語法及參數資訊，請參閱 [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-blockedsenderaddress)。
+
+若要從 [受限使用者] 清單中移除使用者，請執行下列命令並以其電子郵件地址取代 \<emailaddress\>：
+
+```powershell
+Remove-BlockedSenderAddress -SenderAddress <emailaddress>
+```
+
+如需詳細的語法及參數資訊，請參閱 [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-blockedsenderaddress)。

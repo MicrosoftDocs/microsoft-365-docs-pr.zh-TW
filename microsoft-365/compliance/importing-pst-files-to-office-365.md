@@ -18,12 +18,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 適用於系統管理員：了解在安全性與合規性中心使用「匯入」服務來將電子郵件資料 (PST 檔案) 大量匯入至 Exchange Online 的使用者信箱。 本主題提供常見問題集，並說明 PST 匯入程序的運作方式。
-ms.openlocfilehash: 94681af376d7c9ae32bdd2cbbb2a28da464712c1
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: 2d28889f6cba782b5b9ee70b0fb17cff6ca911a2
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170543"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058936"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>將組織的 PST 檔案匯入至 Office 365 概觀
 
@@ -174,6 +174,10 @@ Using network upload to import PST files is free.
   
 如果不同的 PST 檔案需匯入到不同的目標信箱，匯入程序會同時進行；換句話說，系統會同時匯入每個 PST/信箱組合。 同樣地，如果多個 PST 檔案匯入到相同的信箱，則會同時匯入。
   
+ PST 匯入處理程序如何處理重複的電子郵件項目?****
+
+PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標信箱或目標封存中已有相同項目，則不會將資料從 PST 檔案複製到信箱或封存。 如果您重新匯入同一個 PST 檔案，並指定與前一個匯入工作指定之資料夾為不同的目標資料夾 (使用 PST 匯入對應檔案中的 TargetRootFolder 屬性)，則所有 PST 檔案中的項目將會重新匯入。
+ 
  **匯入 PST 檔案時，是否有郵件大小限制？**
   
 是。 如果 PST 檔案包含大於 150 MB 的信箱項目，該項目會在匯入程序執行時略過。
@@ -271,6 +275,10 @@ PST 檔案上傳到 Azure 儲存體區域之後，Office 365 會以安全的方�
   
 是。 如果 PST 檔案包含大於 150 MB 的信箱項目，該項目會在匯入程序執行時略過。
   
+  PST 匯入處理程序如何處理重複的電子郵件項目?****
+
+PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標信箱或目標封存中已有相同項目，則不會將資料從 PST 檔案複製到信箱或封存。 如果您重新匯入同一個 PST 檔案，並指定與前一個匯入工作指定之資料夾為不同的目標資料夾 (使用 PST 匯入對應檔案中的 TargetRootFolder 屬性)，則所有 PST 檔案中的項目將會重新匯入。
+ 
  **PST 檔案匯入 Office 365 信箱時是否會保留訊息內容 (例如訊息的傳送或接收時間、收件者清單等等)？**
   
 是。 匯入程序不會變更任何原始的訊息中繼資料

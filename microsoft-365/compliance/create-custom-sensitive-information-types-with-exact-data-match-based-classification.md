@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
-ms.openlocfilehash: 044801416c7db4ddec8936a496862c432a63acde
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f4ebd34104cd4f3c5b3976a10e8bf64da990342c
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077595"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894940"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -76,49 +76,49 @@ ms.locfileid: "42077595"
 
 3. 以 .xml 格式定義用於敏感性資訊資料庫的結構描述 (類似以下的範例)。 將此結構描述檔案命名為  **edm.xml**，然後進行設定，讓資料庫中的每一個資料行都會有使用下列語法的行： 
 
-`\<Field name="" searchable=""/\>`.
+      `\<Field name="" searchable=""/\>`。
 
-- 使用資料行名稱作為 *欄位名稱* 值。
-- 對您想讓它可供搜尋最多 5 個欄位的欄位，使用 *searchable="true"* 。 您必須至少將一個欄位指定為可搜尋。
+      - 使用資料行名稱作為 *欄位名稱* 值。
+      - 對您想讓它可供搜尋最多 5 個欄位的欄位，使用 *searchable="true"* 。 您必須至少將一個欄位指定為可搜尋。
 
-例如，下列 .xml 檔會為病患記錄資料庫定義結構描述，並將五個欄位指定為可搜尋： *PatientID*、 *MRN*、 *SSN*、 *Phone* 以及  *DOB* 
+      例如，下列 .xml 檔會為病患記錄資料庫定義結構描述，並將五個欄位指定為可搜尋： *PatientID*、 *MRN*、 *SSN*、 *Phone* 以及  *DOB* 
 
-(您可以複製、修改及使用我們的範例)。
+      (您可以複製、修改及使用我們的範例)。
 
- ```xml
-<EdmSchema xmlns="https://schemas.microsoft.com/office/2018/edm">
-      <DataStore name="PatientRecords" description="Schema for patient records" version="1">
-            <Field name="PatientID" searchable="true" />
-            <Field name="MRN" searchable="true" />
-            <Field name="FirstName" />
-            <Field name="LastName" />
-            <Field name="SSN" searchable="true" />
-            <Field name="Phone" searchable="true" />
-            <Field name="DOB" searchable="true" />
-            <Field name="Gender" />
-            <Field name="Address" />
-      </DataStore>
-</EdmSchema>
-```
+      ```xml
+      <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+            <DataStore name="PatientRecords" description="Schema for patient records" version="1">
+                  <Field name="PatientID" searchable="true" />
+                  <Field name="MRN" searchable="true" />
+                  <Field name="FirstName" />
+                  <Field name="LastName" />
+                  <Field name="SSN" searchable="true" />
+                  <Field name="Phone" searchable="true" />
+                  <Field name="DOB" searchable="true" />
+                  <Field name="Gender" />
+                  <Field name="Address" />
+            </DataStore>
+      </EdmSchema>
+      ```
 
 4. [連線至 Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
 
 5. 若要上傳資料庫結構描述，請執行下列 Cmdlet，一次一個：
 
-```powershell
-$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
-New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
-```
+      ```powershell
+      $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
+      New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
+      ```
 
-系統會提示您確認，如下所示：
+      系統會提示您確認，如下所示：
 
-> 確認
->
-> 是否確定要執行此動作？
->
-> 將匯入資料存放區 'patientrecords' 的新 EDM 結構描述。
->
-> \[Y\] 是 \[A\] 全部皆是 \[N\] 否 \[L\] 全部皆否 \[?\] 說明 (預設值為 "Y")：
+      > 確認
+      >
+      > 是否確定要執行此動作？
+      >
+      > 將匯入資料存放區 'patientrecords' 的新 EDM 結構描述。
+      >
+      > \[Y\] 是 \[A\] 全部皆是 \[N\] 否 \[L\] 全部皆否 \[?\] 說明 (預設值為 "Y")：
 
 > [!TIP]
 > 若要不確認即變更，請在步驟 5 中改用此 Cmdlet：New-DlpEdmSchema -FileData $edmSchemaXml
@@ -138,26 +138,26 @@ New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
 
 3. 若要更新資料庫結構描述，請執行下列 Cmdlet，一次一個：
 
-```powershell
-$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
-Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
-```
+      ```powershell
+      $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
+      Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
+      ```
 
-系統會提示您確認，如下所示：
+      系統會提示您確認，如下所示：
 
-> 確認
->
-> 是否確定要執行此動作？
->
-> 將更新資料存放區 'patientrecords' 的 EDM 結構描述。
->
-> \[Y\] 是 \[A\] 全部皆是 \[N\] 否 \[L\] 全部皆否 \[?\] 說明 (預設值為 "Y")：
+      > 確認
+      >
+      > 是否確定要執行此動作？
+      >
+      > 將更新資料存放區 'patientrecords' 的 EDM 結構描述。
+      >
+      > \[Y\] 是 \[A\] 全部皆是 \[N\] 否 \[L\] 全部皆否 \[?\] 說明 (預設值為 "Y")：
 
-> [!TIP]
-> 若要不確認即變更，請在步驟 3 中改用此 Cmdlet：Set-DlpEdmSchema -FileData $edmSchemaXml
+      > [!TIP]
+      > 若要不確認即變更，請在步驟 3 中改用此 Cmdlet：Set-DlpEdmSchema -FileData $edmSchemaXml
 
-> [!NOTE]
-> 這可能要花 10 到 60 分鐘的時間，才能將 EDMSchema 更新為新增項目。 在您執行使用新增項目的步驟之前，必須先完成更新。
+      > [!NOTE]
+      > 這可能要花 10 到 60 分鐘的時間，才能將 EDMSchema 更新為新增項目。 在您執行使用新增項目的步驟之前，必須先完成更新。
 
 ## <a name="removing-the-schema-for-edm-based-classification"></a>移除以 EDM 為基礎的分類的結構描述
 
@@ -167,89 +167,89 @@ Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
 
 2. 執行下列 PowerShell Cmdlet，將 "patientrecords" 的資料存放區名稱取代為您要移除的資料存放區名稱：
 
-```powershell
-Remove-DlpEdmSchema -Identity patientrecords
-```
+      ```powershell
+      Remove-DlpEdmSchema -Identity patientrecords
+      ```
 
-系統會提示您確認，如下所示：
+      系統會提示您確認，如下所示：
 
-> 確認
->
-> 是否確定要執行此動作？
->
-> 將移除資料存放區 'patientrecords' 的 EDM 結構描述。
->
-> \[Y\] 是 \[A\] 全部皆是 \[N\] 否 \[L\] 全部皆否 \[?\] 說明 (預設值為 "Y")：
+      > 確認
+      >
+      > 是否確定要執行此動作？
+      >
+      > 將移除資料存放區 'patientrecords' 的 EDM 結構描述。
+      >
+      > \[Y\] 是 \[A\] 全部皆是 \[N\] 否 \[L\] 全部皆否 \[?\] 說明 (預設值為 "Y")：
 
-> [!TIP]
->  若要不確認即變更，請在步驟 2 中改用此 Cmdlet：Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
+      > [!TIP]
+      >  若要不確認即變更，請在步驟 2 中改用此 Cmdlet：Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
 
 ### <a name="set-up-a-rule-package"></a>設定規則套件
 
 1. 以 .xml 格式建立規則套件 (使用 Unicode 編碼方式)，類似下列範例。 (您可以複製、修改及使用我們的範例)。
 
-當您設定規則套件時，請務必正確參照您的 .csv 檔案和 **edm.xml** 檔案。 您可以複製、修改及使用我們的範例。 在此範例 xml 中，必須自訂下列欄位，才能建立您的 EDM 敏感性類型：
+      當您設定規則套件時，請務必正確參照您的 .csv 檔案和 **edm.xml** 檔案。 您可以複製、修改及使用我們的範例。 在此範例 xml 中，必須自訂下列欄位，才能建立您的 EDM 敏感性類型：
 
-- **RulePack id 與 ExactMatch id**：使用 [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 產生 GUID。
+      - **RulePack id 與 ExactMatch id**：使用 [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 產生 GUID。
 
-- **資料存放區**：此欄位會指定要使用的 EDM 查閱資料存放區。 您要提供已設定之 EDM 結構描述的資料來源名稱。
+      - **資料存放區**：此欄位會指定要使用的 EDM 查閱資料存放區。 您要提供已設定之 EDM 結構描述的資料來源名稱。
 
-- **idMatch**：此欄位會指向 EDM 的主要元素。
-  - 相符項目：指定要在完全查閱中使用的欄位。 您要在資料存放區的 EDM 結構描述中，提供可搜尋的欄位名稱。
-  - 分類：此欄位會指定可觸發 EDM 查閱的敏感性類型符合項目。 您可以提供現有內建或自訂分類的名稱或 GUID。
+      - **idMatch**：此欄位會指向 EDM 的主要元素。
+        - 相符項目：指定要在完全查閱中使用的欄位。 您要在資料存放區的 EDM 結構描述中，提供可搜尋的欄位名稱。
+        - 分類：此欄位會指定可觸發 EDM 查閱的敏感性類型符合項目。 您可以提供現有內建或自訂分類的名稱或 GUID。
 
-- **相符項目：** 此欄位會指向 idMatch 鄰近位置的其他辨識項。
-  - 相符項目：您要在資料存放區的 EDM 結構描述中，提供任何欄位名稱。
-- **資源：** 此區段會在多個地區設定中，指定敏感性類型的名稱和描述。
-  - idRef：您要提供 ExactMatch id 的 GUID。
-  - 編輯結構描述名稱與描述：視需要自訂。
+      - **相符項目：** 此欄位會指向 idMatch 鄰近位置的其他辨識項。
+        - 相符項目：您要在資料存放區的 EDM 結構描述中，提供任何欄位名稱。
+      - **資源：** 此區段會在多個地區設定中，指定敏感性類型的名稱和描述。
+        - idRef：您要提供 ExactMatch ID 的 GUID。
+        - 名稱與描述：視需要自訂。
 
-```xml
-<RulePackage xmlns="https://schemas.microsoft.com/office/2018/edm">
-  <RulePack id="fd098e03-1796-41a5-8ab6-198c93c62b11">
-    <Version build="0" major="2" minor="0" revision="0" />
-    <Publisher id="eb553734-8306-44b4-9ad5-c388ad970528" />
-    <Details defaultLangCode="en-us">
-      <LocalizedDetails langcode="en-us">
-        <PublisherName>IP DLP</PublisherName>
-        <Name>Health Care EDM Rulepack</Name>
-        <Description>This rule package contains the EDM sensitive type for health care sensitive types.</Description>
-      </LocalizedDetails>
-    </Details>
-  </RulePack>
-  <Rules>
-    <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
-      <Pattern confidenceLevel="65">
-        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-      </Pattern>
-      <Pattern confidenceLevel="75">
-        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-        <Any minMatches ="3" maxMatches ="100">
-          <match matches="PatientID" />
-          <match matches="MRN"/>
-          <match matches="FirstName"/>
-          <match matches="LastName"/>
-          <match matches="Phone"/>
-          <match matches="DOB"/>
-        </Any>
-      </Pattern>
-    </ExactMatch>
-    <LocalizedStrings>
-      <Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB371">
-        <Name default="true" langcode="en-us">Patient SSN Exact Match.</Name>
-        <Description default="true" langcode="en-us">EDM Sensitive type for detecting Patient SSN.</Description>
-      </Resource>
-    </LocalizedStrings>
-  </Rules>
-</RulePackage>
-```
+      ```xml
+      <RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
+        <RulePack id="fd098e03-1796-41a5-8ab6-198c93c62b11">
+          <Version build="0" major="2" minor="0" revision="0" />
+          <Publisher id="eb553734-8306-44b4-9ad5-c388ad970528" />
+          <Details defaultLangCode="en-us">
+            <LocalizedDetails langcode="en-us">
+              <PublisherName>IP DLP</PublisherName>
+              <Name>Health Care EDM Rulepack</Name>
+              <Description>This rule package contains the EDM sensitive type for health care sensitive types.</Description>
+            </LocalizedDetails>
+          </Details>
+        </RulePack>
+        <Rules>
+          <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
+            <Pattern confidenceLevel="65">
+              <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+            </Pattern>
+            <Pattern confidenceLevel="75">
+              <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+              <Any minMatches ="3" maxMatches ="100">
+                <match matches="PatientID" />
+                <match matches="MRN"/>
+                <match matches="FirstName"/>
+                <match matches="LastName"/>
+                <match matches="Phone"/>
+                <match matches="DOB"/>
+              </Any>
+            </Pattern>
+          </ExactMatch>
+          <LocalizedStrings>
+            <Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB371">
+              <Name default="true" langcode="en-us">Patient SSN Exact Match.</Name>
+              <Description default="true" langcode="en-us">EDM Sensitive type for detecting Patient SSN.</Description>
+            </Resource>
+          </LocalizedStrings>
+        </Rules>
+      </RulePackage>
+      ```
 
 1. 執行下列 PowerShell Cmdlet 以上傳規則套件，一次一個：
 
-```powershell
-$rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
-New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
-```
+      ```powershell
+      $rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
+      New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
+      ```
 
 此時，您已設定以 EDM 為基礎的分類。 下一個步驟是要對敏感性資料編製索引，然後上傳已編製索引的資料。
 
@@ -304,8 +304,8 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 1. 下載並安裝 [EDM 上傳代理程式](https://go.microsoft.com/fwlink/?linkid=2088639)。 根據預設，安裝位置應該是  **C:\\Program Files\\Microsoft\\EdmUploadAgent**。
 
-> [!TIP]
-> 若要取得所支援命令參數的清單，請執行 agent no 無引數。 例如 'EdmUploadAgent.exe'。
+      > [!TIP]
+      > 若要取得所支援命令參數的清單，請執行 agent no 無引數。 例如 'EdmUploadAgent.exe'。
 
 2. 若要授權 EDM 上傳代理程式，請開啟 Windows 命令提示字元 (以系統管理員身分)，然後執行下列命令：
 
@@ -331,7 +331,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
-例如，
+例如：
 
 > **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
 
@@ -339,7 +339,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
-例如， 
+例如：
 
 > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
@@ -361,16 +361,16 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 2. 將敏感性資料重新匯出至應用程式，例如 Microsoft Excel，並將檔案儲存為 .csv 格式。 當您遵循 [編製索引及上傳敏感性資料](#index-and-upload-the-sensitive-data)中所述的步驟時，請保留所使用的相同檔案名稱和位置。
 
-> [!NOTE]
-> 如果 .csv 檔案的結構 (欄位名稱) 沒有任何變更，重新整理資料時，您不需要對資料庫結構描述檔案進行任何變更。 但如果您必須進行變更，請務必相應地編輯資料庫結構描述和規則套件。
+      > [!NOTE]
+      > 如果 .csv 檔案的結構 (欄位名稱) 沒有任何變更，重新整理資料時，您不需要對資料庫結構描述檔案進行任何變更。 但如果您必須進行變更，請務必相應地編輯資料庫結構描述和規則套件。
 
 3. 使用 [工作排程器](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) 將 [編製索引及上傳敏感性資料](#index-and-upload-the-sensitive-data) 程序中的步驟 2 和 3 自動化。 您可以使用數個方法來排程工作：
 
-| **方法**             | **處理方式**                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Windows PowerShell     | 請參閱 [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) 文件，以及本文中的 [範例 PowerShell 指令碼](#example-powershell-script-for-task-scheduler)  |
-| 工作排程器 API     | 請參閱 [工作排程器](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler) 文件                                                                                                                                                                                                                                                                                |
-| Windows 使用者介面 | 在 Windows 中，按一下 [開始] ****，然後輸入工作排程器。 接著，在結果清單中，以滑鼠右鍵按一下 [工作排程器] ****，然後選擇 [以系統管理員身分執行] ****。                                                                                                                                                                                                                                                                           |
+      | **方法**             | **處理方式**                                                                                                                                                                                                                                                                                                                                                                                                                     |
+      | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+      | Windows PowerShell     | 請參閱 [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) 文件，以及本文中的 [範例 PowerShell 指令碼](#example-powershell-script-for-task-scheduler)  |
+      | 工作排程器 API     | 請參閱 [工作排程器](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler) 文件                                                                                                                                                                                                                                                                                |
+      | Windows 使用者介面 | 在 Windows 中，按一下 [開始] ****，然後輸入工作排程器。 接著，在結果清單中，以滑鼠右鍵按一下 [工作排程器] ****，然後選擇 [以系統管理員身分執行] ****。                                                                                                                                                                                                                                                                           |
 
 #### <a name="example-powershell-script-for-task-scheduler"></a>工作排程器的範例 PowerShell 指令碼
 
@@ -473,7 +473,9 @@ Exchange Online 用 Office 365 DLP (電子郵件)、商務用 OneDrive (檔案)�
 
 9. 在 [名稱] **** 區段中，指定規則的名稱和描述。
 
-10. 在 [條件] **** 區段的 [+ 新增條件] **** 清單中，選擇 [內容包含敏感性類型] ****。<br/>![內容包含敏感性資訊類型](../media/edm-dlp-newrule-conditions.png)<br/>
+10. 在 [條件] **** 區段的 [+ 新增條件] **** 清單中，選擇 [內容包含敏感性類型] ****。
+
+      ![內容包含敏感性資訊類型](../media/edm-dlp-newrule-conditions.png)
 
 11. 搜尋您設定規則套件時建立的敏感性資訊類型，然後選擇 [+ 新增] ****。  
     接著，選擇 [完成] ****。

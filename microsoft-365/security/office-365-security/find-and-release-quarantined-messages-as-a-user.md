@@ -16,19 +16,19 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: 身為 Office 365 使用者，您可以檢視、釋出及刪除隔離郵件 (收件者是您，且經垃圾郵件篩選功能認為是垃圾郵件或大量電子郵件而加以隔離的郵件)。 您可以在「安全性與合規性中心」檢視和管理隔離郵件。
-ms.openlocfilehash: e74358d57b96c8655fbf6a3f7f0b6eedb5e65ede
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+description: 身為 Office 365 使用者，您可以檢視、釋出、刪除隔離郵件 (收件者是您，且經垃圾郵件篩選功能認為是垃圾郵件或大量電子郵件而加以隔離的郵件)。 您可以在「安全性與合規性中心」檢視和管理隔離郵件。
+ms.openlocfilehash: 04f04cfddb123bf176f3c71568789c77d225a601
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857330"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893667"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>以 Office 365 使用者身分尋找及釋出隔離的郵件
 
 在擁有 Exchange Online 信箱的 Office 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，隔離區會保存可能有害或不想要的郵件。 如需詳細資訊，請參閱 [Office 365 中的隔離區](quarantine-email-messages.md)。
 
-身為使用者，您可以檢視、釋出及刪除收件者是您的隔離郵件，郵件之所以會遭到隔離，是因為系統認為這些郵件是垃圾郵件、大量電子郵件或 (2020 年 4 月起) 網路釣魚。 您也可以向 Microsoft 回報誤判的郵件。
+身為使用者，您可以檢視、釋出、刪除收件者是您的隔離郵件，郵件之所以會遭到隔離，是因為系統認為這些郵件是垃圾郵件、大量電子郵件或 (2020 年 4 月起) 網路釣魚。 您也可以向 Microsoft 回報誤判的郵件。
 
 您可以在「安全性與合規性中心」檢視和管理隔離郵件。
 
@@ -38,17 +38,17 @@ ms.locfileid: "42857330"
 
 - 系統管理員可以設定郵件要先保留在隔離區中多久，然後才永久刪除 (反垃圾郵件原則)。 已在隔離區中到期的郵件將無法還原。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-- 系統管理員也可以在反垃圾郵件原則中[啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md)。 2019 年 10 月起，您已無法再從這些通知中直接釋出隔離郵件。 您可以在通知中按一下 [檢閱]****，以前往「安全性與合規性中心」內的隔離區。 如需詳細資訊，請參閱 [Office 365 中的使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
+- 系統管理員也可以在反垃圾郵件原則中[啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)。 2019 年 10 月起，您已無法再從這些通知中直接釋出隔離郵件。 您可以按一下通知中的 [檢閱]****，以前往「安全性與合規性中心」內的隔離區。 如需有關通知的詳細資訊，請參閱 [Office 365 中的使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
-- 經系統或郵件流程規則 (又稱為傳輸規則) 認為是高可信度網路釣魚或惡意程式碼而遭到隔離的郵件，只會交給系統管理員處理。 如需詳細資訊，請參閱[以 Office 365 系統管理員身分尋找及釋出隔離的郵件](find-and-release-quarantined-messages-as-an-administrator.md)。
+- 經系統或郵件流程規則 (又稱為傳輸規則) 認為是高信賴度網路釣魚或惡意程式碼而遭到隔離的郵件，只會交給系統管理員處理。 如需詳細資訊，請參閱[以 Office 365 系統管理員身分管理隔離的郵件和檔案](manage-quarantined-messages-and-files.md)。
 
 - 您只能釋出郵件並將其報告為誤判 (非垃圾郵件) 一次。
 
-## <a name="view-your-quarantined-messages"></a>檢視隔離郵件
+## <a name="view-your-quarantined-messages"></a>檢視隔離的郵件
 
 1. 在「安全性與合規性中心」內，移至 [威脅管理]**** \> [檢閱]**** \> [隔離]****。
 
-2. 您可以按一下可用的資料行標題來排序結果。 按一下 [修改資料行]**** 可顯示最多七個資料行。 預設值會標上星號 (<sup>\*</sup>)：
+2. 您可以按一下可用資料行標題來排序結果。 按一下 [修改資料行]**** 可顯示最多七個資料行。 預設值會標上星號 (<sup>\*</sup>)：
 
    - **收到日期**<sup>\*</sup>
 
@@ -88,7 +88,7 @@ ms.locfileid: "42857330"
 
      - **自訂**：輸入 [開始日期]**** 和 [結束日期]****。
 
-   - **接收時間**：輸入 [開始日期]**** 和 [結束日期]****。
+   - **收到時間**：輸入 [開始日期]**** 和 [結束日期]****。
 
    - **隔離原因**：
 
@@ -98,7 +98,7 @@ ms.locfileid: "42857330"
 
      - **網路釣魚** (2020 年 4 月起)
 
-   若要清除篩選，請按一下 [清除]****。 若要隱藏 [篩選] 飛出視窗，請再按一下 [篩選]****。
+   若要清除篩選，按一下 [清除]****。 若要隱藏 [篩選] 飛出視窗，再按一下 [篩選]****。
 
 4. 使用 [結果排序依據]**** (預設為 [郵件識別碼]**** 按鈕) 和對應值來尋找特定郵件。 不支援萬用字元。 您可以依下列值進行搜尋：
 
@@ -110,7 +110,7 @@ ms.locfileid: "42857330"
 
    - **主旨**：使用郵件的完整主旨。 搜尋時不會區分大小寫。
 
-   輸入搜尋準則後，請按一下 ![[重新整理] 按鈕](../media/scc-quarantine-refresh.png) [重新整理]**** 來篩選結果。
+   輸入搜尋準則後，請按一下![重新整理按鈕](../media/scc-quarantine-refresh.png) [重新整理]**** 來篩選結果。
 
 當您找到特定隔離郵件後，選取該郵件即可檢視其詳細資料，並對其採取動作 (例如檢視、釋出、下載或刪除郵件)。
 
@@ -168,7 +168,7 @@ ms.locfileid: "42857330"
 
 如果您未釋出或移除郵件，則郵件會在預設的隔離保留期間到期後遭到刪除。
 
-#### <a name="take-action-on-multiple-quarantined-email-messages"></a>對多個隔離的電子郵件訊息採取動作
+#### <a name="take-action-on-multiple-quarantined-email-messages"></a>對多個隔離的電子郵件採取動作
 
 當您選取清單中的多個隔離郵件 (最多 100 個) 時，隨即會出現 [大量動作]**** 飛出窗格供您採取下列動作：
 

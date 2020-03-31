@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 透過安全性與合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監控及自動保護整個 Office 365 的敏感性資訊。
-ms.openlocfilehash: 574a3376aa54311db3edc581e0a3e602cb1ac383
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 9a7b31f779982381fcc0eea7e8aa051f4fa2dafc
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826288"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894884"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -88,6 +88,9 @@ DLP 原則包含一些基本事項：
 如果您選擇包含或排除特定 SharePoint 網站或 OneDrive 帳戶，則 DLP 原則只能包含不超過 100 項此類包含或排除。 雖然有這個限制，但您可以套用全組織原則或套用到整個位置的原則來超過這些限制。
   
 ### <a name="rules"></a>規則
+
+> [!NOTE]
+> 沒有設定警報時，DLP 原則的預設行為是不會警示或觸發。 這僅適用於預設資訊類型。 對於自訂資訊類型，即使原則中未定義任何動作，系統仍會發出警示。
 
 用來對貴組織內容強制執行您的商務需求的，就是規則。 一項原則包含一或多個規則，而每個規則是由條件和動作所組成。 對每個規則而言，條件符合時，就會自動採取動作。 規則會依序執行，從每個原則中最高優先順序的規則開始。
   
@@ -423,16 +426,16 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
 2. **移至測試模式並顯示通知和原則提示**，以便您開始教導使用者相關規範原則及熟悉即將套用的規則。在這個階段，您也可以要求使用者回報誤判，以便您進一步調整規則。 
     
 3. **開始完整強制執行原則**，以便套用規則中的動作，並保護內容。 繼續監視 DLP 報告以及任何事件報告或通知，確保得到您想要的結果。 
-    
-![使用測試模式和開啟原則的選項](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
-  
-您可以隨時關閉 DLP 原則，關閉會影響原則中的所有規則。 不過，也可以藉由在規則編輯器中切換每個規則的狀態來個別關閉規則。
-  
-![在原則中關閉規則的選項](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
-您也可以變更原則中多個規則的優先順序。 若要這樣做，請開啟原則進行編輯。 在規則列中，選擇省略符號 (**...**)，然後選擇一個選項，例如 **[下移]** 或 **[移至最後]**。
+    ![使用測試模式和開啟原則的選項](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
-![設定規則優先順序](../media/dlp-set-rule-priority.png)
+    您可以隨時關閉 DLP 原則，關閉會影響原則中的所有規則。 不過，也可以藉由在規則編輯器中切換每個規則的狀態來個別關閉規則。
+
+    ![在原則中關閉規則的選項](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+
+    您也可以變更原則中多個規則的優先順序。 若要這樣做，請開啟原則進行編輯。 在規則列中，選擇省略符號 (**...**)，然後選擇一個選項，例如 **[下移]** 或 **[移至最後]**。
+
+    ![設定規則優先順序](../media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>DLP 報告
 
@@ -534,9 +537,9 @@ Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容�
     
 2. 為 DLP 報告使用下列任何 Cmdlet：
     
-  - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
-    
-  - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
+    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
+
+    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>詳細資訊
 
@@ -554,4 +557,3 @@ Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容�
     
 - [建立自訂的敏感性資訊類型](create-a-custom-sensitive-information-type.md)
     
-
