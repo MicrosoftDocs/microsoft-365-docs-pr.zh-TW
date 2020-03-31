@@ -2,8 +2,8 @@
 title: 啟用報告訊息增益集
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: article
@@ -16,185 +16,143 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何為個別使用者或整個組織啟用 Outlook 和 Outlook 網頁版的 [報告訊息] 增益集。
-ms.openlocfilehash: 32b4ab318237ca220b63c87bd4a664cfb69d0b45
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: c160e928c9a46dd4dc360c5e61d70ca401430378
+ms.sourcegitcommit: a86787b62cec95a392ff2b933f5dc44334ceb7e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893751"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43061725"
 ---
-# <a name="enable-the-report-message-add-in"></a><span data-ttu-id="d94ff-103">啟用報告訊息增益集</span><span class="sxs-lookup"><span data-stu-id="d94ff-103">Enable the Report Message add-in</span></span>
+# <a name="enable-the-report-message-add-in-in-office-365"></a><span data-ttu-id="c0fe0-103">啟用 Office 365 中的報告訊息增益集</span><span class="sxs-lookup"><span data-stu-id="c0fe0-103">Enable the Report Message add-in in Office 365</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d94ff-104">Outlook 和 Outlook 網頁版的 [報告訊息] 增益集與 [Outlook 垃圾郵件篩選工具](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)並不完全相同，但兩者皆可用來將電子郵件標示為垃圾郵件、非垃圾郵件或網路釣魚。</span><span class="sxs-lookup"><span data-stu-id="d94ff-104">The Report Message add-in for Outlook and Outlook on the web is not exactly the same thing as the [Outlook Junk Email Filter](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), although both can be used to mark email as junk, not junk, or a phishing attempt.</span></span> <span data-ttu-id="d94ff-105">差異在於 Outlook 和 Outlook 網頁版的 [報告訊息] 增益集會通知 Microsoft 有關分類錯誤的電子郵件，而 Outlook 垃圾郵件篩選工具則用來組織使用者信箱中的電子郵件。</span><span class="sxs-lookup"><span data-stu-id="d94ff-105">The difference is, the Report Message add-in for Outlook and Outlook on the web notifies Microsoft about misclassified email, whereas the Outlook Junk Email Filter is used to organize email messages in a user's mailbox.</span></span>
+> <span data-ttu-id="c0fe0-104">如果您是 Office 365 組織中 Exchange Online 信箱的系統管理員，建議您在 Office 365 安全性 & 規範中心使用提交入口網站。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-104">If you're an admin in an Office 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Office 365 Security & Compliance Center.</span></span> <span data-ttu-id="c0fe0-105">如需詳細資訊，請參閱[使用系統管理員提交將可疑的垃圾郵件、網路釣魚、URLs 和檔案提交給 Microsoft](admin-submission.md)。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-105">For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).</span></span>
 
-## <a name="overview"></a><span data-ttu-id="d94ff-106">概觀</span><span class="sxs-lookup"><span data-stu-id="d94ff-106">Overview</span></span>
+<span data-ttu-id="c0fe0-106">Outlook 和網頁型 Outlook （先前稱為 Outlook Web App）的報告訊息增益集可讓使用者輕鬆地將誤報（良好的電子郵件標記為壞的電子郵件）或 "漏報（不正確的電子郵件）] 報告給 Microsoft 及其子公司進行分析。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-106">The Report Message add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.</span></span> <span data-ttu-id="c0fe0-107">Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-107">Microsoft uses these submissions to improve the effectiveness of email protection technologies.</span></span>
 
-<span data-ttu-id="d94ff-107">Outlook 和網頁型 Outlook （先前稱為 Outlook Web App）的報告訊息增益集可讓使用者輕鬆地向 Microsoft 及其子公司報告 misclassified 電子郵件，以進行分析。</span><span class="sxs-lookup"><span data-stu-id="d94ff-107">The Report Message add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report misclassified email, whether safe or malicious, to Microsoft and its affiliates for analysis.</span></span> <span data-ttu-id="d94ff-108">Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。</span><span class="sxs-lookup"><span data-stu-id="d94ff-108">Microsoft uses these submissions to improve the effectiveness of email protection technologies.</span></span> <span data-ttu-id="d94ff-109">此外，如果貴組織使用 [Office 365 進階威脅防護方案 1](office-365-atp.md) 或[方案 2](office-365-ti.md)，則 [報告訊息] 增益集會向貴組織的安全性小組提供實用資訊，以便用於檢閱及更新安全性原則。</span><span class="sxs-lookup"><span data-stu-id="d94ff-109">In addition, if your organization is using [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) or [Plan 2](office-365-ti.md), the Report Message add-in provides your organization's security team with useful information they can use to review and update security policies.</span></span>
+<span data-ttu-id="c0fe0-108">例如，假設使用者將大量訊息回報為網路釣魚。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-108">For example, suppose that people are reporting a lot of messages as phishing.</span></span> <span data-ttu-id="c0fe0-109">此資訊會顯示在[安全性儀表板](security-dashboard.md)及其他報告中。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-109">This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports.</span></span> <span data-ttu-id="c0fe0-110">貴組織的安全性小組可以使用此資訊來表示可能需要更新防網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-110">Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.</span></span> <span data-ttu-id="c0fe0-111">或者，如果有人使用 [報告訊息] 增益集，回報大量被標示為垃圾郵件的訊息，則貴組織的安全性小組可能需要調整[反垃圾郵件原則](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-111">Or, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-your-spam-filter-policies.md).</span></span>
 
-<span data-ttu-id="d94ff-110">例如，假設使用者將大量訊息回報為網路釣魚。</span><span class="sxs-lookup"><span data-stu-id="d94ff-110">For example, suppose that people are reporting a lot of messages as phishing.</span></span> <span data-ttu-id="d94ff-111">此資訊會顯示在[安全性儀表板](security-dashboard.md)及其他報告中。</span><span class="sxs-lookup"><span data-stu-id="d94ff-111">This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports.</span></span> <span data-ttu-id="d94ff-112">貴組織的安全性小組可以使用此資訊來表示可能需要更新防網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="d94ff-112">Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.</span></span> <span data-ttu-id="d94ff-113">或者，如果有人使用 [報告訊息] 增益集，回報大量被標示為垃圾郵件的訊息，則貴組織的安全性小組可能需要調整[反垃圾郵件原則](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="d94ff-113">Or, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-your-spam-filter-policies.md).</span></span>
+<span data-ttu-id="c0fe0-112">此外，如果貴組織使用 [Office 365 進階威脅防護方案 1](office-365-atp.md) 或[方案 2](office-365-ti.md)，則 [報告訊息] 增益集會向貴組織的安全性小組提供實用資訊，以便用於檢閱及更新安全性原則。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-112">In addition, if your organization is using [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) or [Plan 2](office-365-ti.md), the Report Message add-in provides your organization's security team with useful information they can use to review and update security policies.</span></span>
 
-<span data-ttu-id="d94ff-114">報告訊息增益集可搭配大多數 Office 365 訂閱及下列產品運作：</span><span class="sxs-lookup"><span data-stu-id="d94ff-114">The Report Message add-in works with most Office 365 subscriptions and the following products:</span></span>
+<span data-ttu-id="c0fe0-113">系統管理員可以為組織啟用「報告訊息增益集」，個別使用者可以自行自行安裝。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-113">Admins can enable the Report Message add-in for the organization, and individual users can install it for themselves.</span></span>
 
-- <span data-ttu-id="d94ff-115">Outlook 網頁版</span><span class="sxs-lookup"><span data-stu-id="d94ff-115">Outlook on the web</span></span>
-- <span data-ttu-id="d94ff-116">Outlook 2013 SP1</span><span class="sxs-lookup"><span data-stu-id="d94ff-116">Outlook 2013 SP1</span></span>
-- <span data-ttu-id="d94ff-117">Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d94ff-117">Outlook 2016</span></span>
-- <span data-ttu-id="d94ff-118">Mac 版 Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d94ff-118">Outlook 2016 for Mac</span></span>
-- <span data-ttu-id="d94ff-119">Office 365 專業增強版隨附的 Outlook</span><span class="sxs-lookup"><span data-stu-id="d94ff-119">Outlook included with Office 365 ProPlus</span></span>
+<span data-ttu-id="c0fe0-114">如果您是個人使用者，您可以[自行啟用 [報告訊息] 增益集](#get-the-report-message-add-in-for-yourself)。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-114">If you're an individual user, you can [enable the Report Message add-in for yourself](#get-the-report-message-add-in-for-yourself).</span></span>
 
-<span data-ttu-id="d94ff-120">報告郵件增益集目前不適用於下列專案：</span><span class="sxs-lookup"><span data-stu-id="d94ff-120">The Report Message add-in is currently not available for:</span></span>
+<span data-ttu-id="c0fe0-115">如果您是 Office 365 全域系統管理員或 Exchange Online 系統管理員，且 Exchange 已設定為使用 OAuth 驗證，您可以[為貴組織啟用 [報告訊息] 增益集](#get-and-enable-the-report-message-add-in-for-your-organization)。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-115">If you're an Office 365 global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Message add-in for your organization](#get-and-enable-the-report-message-add-in-for-your-organization).</span></span> <span data-ttu-id="c0fe0-116">[報告訊息] 增益集現可透過[集中式部署](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)提供。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-116">The Report Message Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
 
-- <span data-ttu-id="d94ff-121">內部部署 Exchange 組織中的信箱</span><span class="sxs-lookup"><span data-stu-id="d94ff-121">Mailboxes in on-premises Exchange organizations</span></span>
-- <span data-ttu-id="d94ff-122">GCC、GCC 高階或 DoD 訂閱</span><span class="sxs-lookup"><span data-stu-id="d94ff-122">GCC, GCC HIGH, or DoD subscriptions</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="c0fe0-117">開始之前有哪些須知？</span><span class="sxs-lookup"><span data-stu-id="c0fe0-117">What do you need to know before you begin?</span></span>
 
-<span data-ttu-id="d94ff-123">您現有的網頁瀏覽器應足以讓 [報告訊息] 增益集運作。不過，如果您發現增益集無法使用或無法如預期般運作，請嘗試使用不同的瀏覽器。</span><span class="sxs-lookup"><span data-stu-id="d94ff-123">Your existing web browser should suffice for the Report Message add-in to work; however, if you notice the add-in is not available or not working as expected, try a different browser.</span></span>
+- <span data-ttu-id="c0fe0-118">報告訊息增益集可搭配大多數 Office 365 訂閱及下列產品運作：</span><span class="sxs-lookup"><span data-stu-id="c0fe0-118">The Report Message add-in works with most Office 365 subscriptions and the following products:</span></span>
 
-<span data-ttu-id="d94ff-124">如果您是個人使用者，您可以[自行啟用 [報告訊息] 增益集](#get-the-report-message-add-in-for-yourself)。</span><span class="sxs-lookup"><span data-stu-id="d94ff-124">If you're an individual user, you can [enable the Report Message add-in for yourself](#get-the-report-message-add-in-for-yourself).</span></span>
+  - <span data-ttu-id="c0fe0-119">Outlook 網頁版</span><span class="sxs-lookup"><span data-stu-id="c0fe0-119">Outlook on the web</span></span>
+  - <span data-ttu-id="c0fe0-120">Outlook 2013 SP1 或更新版本</span><span class="sxs-lookup"><span data-stu-id="c0fe0-120">Outlook 2013 SP1 or later</span></span>
+  - <span data-ttu-id="c0fe0-121">Mac 版 Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c0fe0-121">Outlook 2016 for Mac</span></span>
+  - <span data-ttu-id="c0fe0-122">Office 365 專業增強版隨附的 Outlook</span><span class="sxs-lookup"><span data-stu-id="c0fe0-122">Outlook included with Office 365 ProPlus</span></span>
 
-<span data-ttu-id="d94ff-125">如果您是 Office 365 全域系統管理員或 Exchange Online 系統管理員，且 Exchange 已設定為使用 OAuth 驗證，您可以[為貴組織啟用 [報告訊息] 增益集](#get-and-enable-the-report-message-add-in-for-your-organization)。</span><span class="sxs-lookup"><span data-stu-id="d94ff-125">If you're an Office 365 global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Message add-in for your organization](#get-and-enable-the-report-message-add-in-for-your-organization).</span></span> <span data-ttu-id="d94ff-126">[報告訊息] 增益集現可透過[集中式部署](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)提供。</span><span class="sxs-lookup"><span data-stu-id="d94ff-126">The Report Message Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
+- <span data-ttu-id="c0fe0-123">報告郵件增益集目前不適用於下列專案：</span><span class="sxs-lookup"><span data-stu-id="c0fe0-123">The Report Message add-in is currently not available for:</span></span>
 
-## <a name="get-the-report-message-add-in-for-yourself"></a><span data-ttu-id="d94ff-127">自行取得報告訊息增益集</span><span class="sxs-lookup"><span data-stu-id="d94ff-127">Get the Report Message add-in for yourself</span></span>
+  - <span data-ttu-id="c0fe0-124">內部部署 Exchange 組織中的信箱</span><span class="sxs-lookup"><span data-stu-id="c0fe0-124">Mailboxes in on-premises Exchange organizations</span></span>
+  - <span data-ttu-id="c0fe0-125">GCC、GCC 高階或 DoD 訂閱</span><span class="sxs-lookup"><span data-stu-id="c0fe0-125">GCC, GCC HIGH, or DoD subscriptions</span></span>
 
-1. <span data-ttu-id="d94ff-128">在 [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps) 中，搜尋[報告訊息增益集](https://appsource.microsoft.com/product/office/wa104381180)。</span><span class="sxs-lookup"><span data-stu-id="d94ff-128">In [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps), search for the [Report Message add-in](https://appsource.microsoft.com/product/office/wa104381180).</span></span>
+- <span data-ttu-id="c0fe0-126">您的現有網頁瀏覽器應該使用報表訊息增益集。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-126">Your existing web browser should work with the Report Message add-in.</span></span> <span data-ttu-id="c0fe0-127">不過，如果您注意到增益集無法使用或如預期般運作，請嘗試其他瀏覽器。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-127">But, if you notice the add-in is not available or not working as expected, try a different browser.</span></span>
 
-2. <span data-ttu-id="d94ff-129">選擇 [立即取得]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-129">Choose **GET IT NOW**.</span></span>
+- <span data-ttu-id="c0fe0-128">若為組織安裝，必須設定組織使用 OAuth 驗證。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-128">For organizational installs, the organization needs to be configured to use OAuth authentication.</span></span> <span data-ttu-id="c0fe0-129">如需詳細資訊，請參閱[判斷是否集中式部署的增益集可為您的組織運作](../../admin/manage/centralized-deployment-of-add-ins.md)。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-129">For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).</span></span>
+
+- <span data-ttu-id="c0fe0-130">管理員必須是全域系統管理員角色群組的成員。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-130">Admins need to be a member of the Global admins role group.</span></span> <span data-ttu-id="c0fe0-131">如需詳細資訊，請參閱[Office 365 Security & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-131">For more information, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+
+## <a name="get-the-report-message-add-in-for-yourself"></a><span data-ttu-id="c0fe0-132">自行取得報告訊息增益集</span><span class="sxs-lookup"><span data-stu-id="c0fe0-132">Get the Report Message add-in for yourself</span></span>
+
+1. <span data-ttu-id="c0fe0-133">移至 Microsoft AppSource <https://appsource.microsoft.com/marketplace/apps> ，並搜尋報告訊息增益集。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-133">Go to the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps> and search for the Report Message add-in.</span></span> <span data-ttu-id="c0fe0-134">若要直接移至報告訊息增益集，請移至<https://appsource.microsoft.com/product/office/wa104381180>。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-134">To go directly to the Report Message add-in, go to <https://appsource.microsoft.com/product/office/wa104381180>.</span></span>
+
+2. <span data-ttu-id="c0fe0-135">按一下 [**立即取得**]。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-135">Click **GET IT NOW**.</span></span>
 
    ![報告訊息 - 立即取得](../../media/ReportMessageGETITNOW.png)
 
-3. <span data-ttu-id="d94ff-131">檢閱使用條款和隱私權原則。</span><span class="sxs-lookup"><span data-stu-id="d94ff-131">Review the terms of use and privacy policy.</span></span> <span data-ttu-id="d94ff-132">然後選擇 [繼續]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-132">Then choose **Continue**.</span></span>
+3. <span data-ttu-id="c0fe0-137">在出現的對話方塊中，複查使用條款和隱私權原則，然後按一下 [**繼續**]。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-137">In the dialog that appears, review the terms of use and privacy policy, and then click **Continue**.</span></span>
 
-4. <span data-ttu-id="d94ff-133">使用您的公司或學校帳戶 (商務用途) 或您的 Microsoft 帳戶 (個人用途) 登入 Office 365。</span><span class="sxs-lookup"><span data-stu-id="d94ff-133">Sign in to Office 365 using your work or school account (for business use) or your Microsoft account (for personal use).</span></span>
+4. <span data-ttu-id="c0fe0-138">使用您的公司或學校帳戶 (商務用途) 或您的 Microsoft 帳戶 (個人用途) 登入 Office 365。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-138">Sign in to Office 365 using your work or school account (for business use) or your Microsoft account (for personal use).</span></span>
 
-<span data-ttu-id="d94ff-134">安裝並啟用增益集之後，您會看到下列圖示：</span><span class="sxs-lookup"><span data-stu-id="d94ff-134">After the add-in is installed and enabled, you'll see the following icons:</span></span>
+<span data-ttu-id="c0fe0-139">安裝並啟用增益集之後，您會看到下列圖示：</span><span class="sxs-lookup"><span data-stu-id="c0fe0-139">After the add-in is installed and enabled, you'll see the following icons:</span></span>
 
-- <span data-ttu-id="d94ff-135">在 Outlook 中，圖示如下所示：</span><span class="sxs-lookup"><span data-stu-id="d94ff-135">In Outlook, the icon looks like this:</span></span>
-
-  ![Outlook 的報告訊息增益集圖示](../../media/OutlookReportMessageIcon.png)
-
-- <span data-ttu-id="d94ff-137">在 Outlook 網頁版 (先前為 Outlook Web 應用程式) 中，圖示如下所示：</span><span class="sxs-lookup"><span data-stu-id="d94ff-137">In Outlook on the web (formerly known as Outlook Web App), the icon looks like this:</span></span>
-
-  ![Outlook 的網頁報告訊息增益集圖示](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
-
-> [!TIP]
-> <span data-ttu-id="d94ff-139">在下一個步驟中，了解如何[使用報告訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。</span><span class="sxs-lookup"><span data-stu-id="d94ff-139">As a next step, learn how to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
-
-## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a><span data-ttu-id="d94ff-140">為貴組織取得和啟用報告訊息增益集</span><span class="sxs-lookup"><span data-stu-id="d94ff-140">Get and enable the Report Message add-in for your organization</span></span>
-
-> [!IMPORTANT]
-> <span data-ttu-id="d94ff-141">您必須是 Office 365 全域系統管理員或 Exchange Online 系統管理員才能完成此工作。</span><span class="sxs-lookup"><span data-stu-id="d94ff-141">You must be an Office 365 global administrator or an Exchange Online Administrator to complete this task.</span></span> <span data-ttu-id="d94ff-142">此外，Exchange 必須設定為使用 OAuth 驗證。若要深入了解，請參閱 [Exchange 需求 (增益集的集中式部署)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)。</span><span class="sxs-lookup"><span data-stu-id="d94ff-142">In addition, Exchange must be configured to use OAuth authentication To learn more, see [Exchange requirements (Centralized Deployment of add-ins)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).</span></span>
-
-1. <span data-ttu-id="d94ff-143">移至 Microsoft 365 系統管理中心的[服務與增益集頁面](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)。</span><span class="sxs-lookup"><span data-stu-id="d94ff-143">Go to the [Services & add-ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) in the Microsoft 365 admin center.</span></span>
-
-   ![新 Microsoft 365 系統管理中心的服務和增益集頁面](../../media/ServicesAddInsPageNewM365AdminCenter.png)
-
-2. <span data-ttu-id="d94ff-145">選擇 [+ 部署增益集]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-145">Choose **+ Deploy Add-in**.</span></span>
-
-   ![選擇部署增益集](../../media/ServicesAddIns-ChooseDeployAddIn.png)
-
-3. <span data-ttu-id="d94ff-147">在 [新增增益集]\*\*\*\* 畫面中，檢閱資訊，然後選擇 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-147">In the **New Add-In** screen, review the information, and then choose **Next**.</span></span>
-
-   ![新增增益集詳細資料](../../media/NewAddInScreen1.png)
-
-4. <span data-ttu-id="d94ff-149">選取 [我想要從 Office 市集新增增益集]\*\*\*\*，然後選擇 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-149">Select **I want to add an Add-In from the Office Store**, and then choose **Next**.</span></span>
-
-   ![我想要新增增益集](../../media/NewAddInScreen2.png)
-
-5. <span data-ttu-id="d94ff-151">搜尋 [報告訊息]\*\*\*\*，然後在結果清單中，選擇 [報告訊息增益集]\*\*\*\* 旁邊的 [新增]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-151">Search for **Report Message**, and in the list of results, next to the **Report Message Add-In**, choose **Add**.</span></span>
-
-   ![搜尋 [報告訊息]，然後選擇 [新增]](../../media/NewAddInScreen3.png)
-
-6. <span data-ttu-id="d94ff-153">在 [報告訊息]\*\*\*\* 畫面上，檢閱資訊，然後選擇 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-153">On the **Report Message** screen, review the information, and then choose **Next**.</span></span>
-
-   ![報告訊息詳細資料](../../media/ReportMessageAdd-InNewScreen4.png)
-
-7. <span data-ttu-id="d94ff-155">指定 Outlook 的使用者預設設定，然後 選擇 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-155">Specify the user default settings for Outlook, and  then choose **Next**.</span></span>
-
-   ![Outlook 的 [報告訊息] 預設設定](../../media/ReportMessageOptionsScreen5.png)
-
-8. <span data-ttu-id="d94ff-157">指定誰可取得 [報告訊息] 增益集，然後選擇 [儲存]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-157">Specify who gets the Report Message Add-in, and then choose **Save**.</span></span>
-
-   ![誰可取得 [報告訊息] 增益集](../../media/ReportMessageOptionsScreen6.png)
-
-> [!TIP]
-> <span data-ttu-id="d94ff-159">我們建議[設定規則，以取得由使用者所報告的電子郵件複本](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users)。</span><span class="sxs-lookup"><span data-stu-id="d94ff-159">We recommend [setting up a rule to get a copy of email messages reported by your users](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users).</span></span>
-
-<span data-ttu-id="d94ff-160">視您在設定增益集時 (上面步驟 7-8) 所選取的內容而定，貴組織中的人員將擁有[報告訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。</span><span class="sxs-lookup"><span data-stu-id="d94ff-160">Depending on what you selected when you set up the add-in (steps 7-8 above), people in your organization will have the [Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) available.</span></span> <span data-ttu-id="d94ff-161">貴組織中的人員會看到下列圖示：</span><span class="sxs-lookup"><span data-stu-id="d94ff-161">People in your organization will see the following icons:</span></span>
-
-- <span data-ttu-id="d94ff-162">在 Outlook 中，圖示如下所示：</span><span class="sxs-lookup"><span data-stu-id="d94ff-162">In Outlook, the icon looks like this:</span></span>
+- <span data-ttu-id="c0fe0-140">在 Outlook 中，圖示如下所示：</span><span class="sxs-lookup"><span data-stu-id="c0fe0-140">In Outlook, the icon looks like this:</span></span>
 
   ![Outlook 的報告訊息增益集圖示](../../media/OutlookReportMessageIcon.png)
 
-- <span data-ttu-id="d94ff-164">在 Outlook 網頁版中，圖示如下所示：</span><span class="sxs-lookup"><span data-stu-id="d94ff-164">In Outlook on the web, the icon looks like this:</span></span>
+- <span data-ttu-id="c0fe0-142">在 Outlook 網頁版中，圖示如下所示：</span><span class="sxs-lookup"><span data-stu-id="c0fe0-142">In Outlook on the web, the icon looks like this:</span></span>
 
   ![Outlook 的網頁報告訊息增益集圖示](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-> [!TIP]
-> <span data-ttu-id="d94ff-166">當您通知使用者關於 [報告訊息] 增益集時，請包含[使用報告訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)的連結。</span><span class="sxs-lookup"><span data-stu-id="d94ff-166">When you notify users about the Report Message add-in, include a link to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+<span data-ttu-id="c0fe0-144">若要瞭解如何使用增益集，請參閱[use The Report Message 增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-144">To learn how to use the add-in, see [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
 
-## <a name="set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users"></a><span data-ttu-id="d94ff-167">設定規則，以取得由您的使用者所報告的電子郵件複本</span><span class="sxs-lookup"><span data-stu-id="d94ff-167">Set up a rule to get a copy of email messages reported by your users</span></span>
+## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a><span data-ttu-id="c0fe0-145">為貴組織取得和啟用報告訊息增益集</span><span class="sxs-lookup"><span data-stu-id="c0fe0-145">Get and enable the Report Message add-in for your organization</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="d94ff-168">您必須是 Exchange Online 系統管理員才能執行此工作。</span><span class="sxs-lookup"><span data-stu-id="d94ff-168">You must be an Exchange Online Administrator to perform this task.</span></span>
+> [!NOTE]
+> <span data-ttu-id="c0fe0-146">在您的組織中顯示增益集可能需要長達12小時。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-146">It could take up to 12 hours for the add-in to appear in your organization.</span></span>
 
-<span data-ttu-id="d94ff-169">您可以設定規則，以取得貴組織中的使用者所報告的電子郵件複本。</span><span class="sxs-lookup"><span data-stu-id="d94ff-169">You can set up a rule to get a copy of email messages reported by users in your organization.</span></span> <span data-ttu-id="d94ff-170">為貴組織下載並啟用 [報告訊息] 增益集之後，您就會這麼做。</span><span class="sxs-lookup"><span data-stu-id="d94ff-170">You do this after you have downloaded and enabled the Report Message add-in for your organization.</span></span>
+1. <span data-ttu-id="c0fe0-147">在 Microsoft 365 系統管理中心中，移至的 [**服務] & 增益集**] <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>頁面上，然後按一下 [**部署 Add-In**]。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-147">In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>, and then click **Deploy Add-In**.</span></span>
 
-1. <span data-ttu-id="d94ff-171">在 Exchange 系統管理中心，選擇 [郵件流程]\*\*\*\* \> [規則]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-171">In the Exchange admin center, choose **mail flow** \> **rules**.</span></span>
+   ![Microsoft 365 系統管理中心的 [服務和增益集] 頁面](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. <span data-ttu-id="d94ff-172">選擇 **+** \> [建立新的規則]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-172">Choose **+** \> **Create a new rule**.</span></span>
+2. <span data-ttu-id="c0fe0-149">在出現的**新增益集**浮出視窗中，複查資訊，然後按 **[下一步]**。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-149">In the **Deploy a new add-in** flyout that appears, review the information, and then click **Next**.</span></span>
 
-3. <span data-ttu-id="d94ff-173">在 [名稱]\*\*\*\* 方塊中，鍵入名稱，例如 [提交]。</span><span class="sxs-lookup"><span data-stu-id="d94ff-173">In the **Name** box, type a name, such as Submissions.</span></span>
+3. <span data-ttu-id="c0fe0-150">在下一個頁面上，按一下 **[從儲存區選擇**]。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-150">On the next page, click **Choose from the Store**.</span></span>
 
-4. <span data-ttu-id="d94ff-174">在 [如果出現下列情況，請套用這個規則]\*\*\*\* 清單中，請選擇 [收件者位址包含...]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-174">In the **Apply this rule if** list, choose **The recipient address includes...**.</span></span>
+   ![部署新的增益集頁面](../../media/NewAddInScreen2.png)
 
-5. <span data-ttu-id="d94ff-175">在 [指定字詞或片語]\*\*\*\* 畫面中，新增 `junk@office365.microsoft.com` 和 `phish@office365.microsoft.com`，然後選擇 [確定]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-175">In the **specify words or phrases** screen, add `junk@office365.microsoft.com` and `phish@office365.microsoft.com`, and then choose **OK**.</span></span>
+4. <span data-ttu-id="c0fe0-152">在出現的 [**選取增益集**] 頁面上，按一下 [**搜尋**] 方塊，輸入**報告訊息**，然後按一下 [**搜尋** ![搜尋](../../media/search-icon.png)] 圖示。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-152">In the **Select add-in** page that appears, click in the **Search** box, enter **Report Message**, and then click **Search** ![Search icon](../../media/search-icon.png).</span></span> <span data-ttu-id="c0fe0-153">在結果清單中，尋找 [**報告訊息**]，然後按一下 [**新增**]。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-153">In the list of results, find **Report Message** and then click **Add**.</span></span>
 
-   ![針對此規則指定垃圾郵件和網路釣魚電子郵件地址](../../media/018c1833-f336-4333-a45c-f2e8b75cd698.png)
+   ![選取增益集搜尋結果](../../media/NewAddInScreen3.png)
 
-6. <span data-ttu-id="d94ff-177">在 [執行下列動作...]\*\*\*\* 清單中，選擇 [將此郵件以密件副本傳送到…]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-177">In the **Do the following...** list, choose **Bcc the message to...**.</span></span>
+5. <span data-ttu-id="c0fe0-155">在出現的對話方塊中，複查授權和隱私權資訊，然後按一下 [**繼續**]。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-155">In the dialog that appears, review the licensing and privacy information, and then click **Continue**.</span></span>
 
-7. <span data-ttu-id="d94ff-178">新增全域系統管理員、安全性系統管理員和/或安全性讀者，他們應會收到人員向 Microsoft 回報告的每封電子郵件複本，然後選擇 [確定]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-178">Add a global administrator, security administrator, and/or security reader who should receive a copy of each email message that people report to Microsoft, and then choose **OK**.</span></span>
+6. <span data-ttu-id="c0fe0-156">在出現的 [**設定增益集**] 頁面中，設定下列設定：</span><span class="sxs-lookup"><span data-stu-id="c0fe0-156">In the **Configure add-in** page that appears, configure the following settings:</span></span>
 
-   ![新增全域或安全性系統管理員，以接收每個報告郵件的複本](../../media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)
+   - <span data-ttu-id="c0fe0-157">**指派的使用者**：選取下列其中一個值：</span><span class="sxs-lookup"><span data-stu-id="c0fe0-157">**Assigned users**: Select one of the following values:</span></span>
 
-8. <span data-ttu-id="d94ff-180">選取 [以嚴重性等級稽核此規則]\*\*\*\*，然後選擇 [中]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-180">Select **Audit this rule with severity level**, and choose **Medium**.</span></span>
+     - <span data-ttu-id="c0fe0-158">**所有人**（預設值）</span><span class="sxs-lookup"><span data-stu-id="c0fe0-158">**Everyone** (default)</span></span>
+     - <span data-ttu-id="c0fe0-159">**特定使用者/群組**</span><span class="sxs-lookup"><span data-stu-id="c0fe0-159">**Specific users / groups**</span></span>
+     - <span data-ttu-id="c0fe0-160">**就我自己**</span><span class="sxs-lookup"><span data-stu-id="c0fe0-160">**Just me**</span></span>
 
-9. <span data-ttu-id="d94ff-181">在 [選擇此規則的模式]\*\*\*\* 底下，選擇 [強制執行]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-181">Under **Choose a mode for this rule**, choose **Enforce**.</span></span>
+   - <span data-ttu-id="c0fe0-161">**部署方法**：選取下列其中一個值：</span><span class="sxs-lookup"><span data-stu-id="c0fe0-161">**Deployment method**: Select one of the following values:</span></span>
 
-   ![設定規則以取得每個報告的訊息複本](../../media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)
+     - <span data-ttu-id="c0fe0-162">**Fixed （預設值）**：增益集會自動部署至指定的使用者，且無法加以移除。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-162">**Fixed (Default)**: The add-in is automatically deployed to the specified users and they can't remove it.</span></span>
+     - <span data-ttu-id="c0fe0-163">**可用**：使用者可以在**Home** \> **Get 增益集** \> **管理管理**的位置安裝增益集。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-163">**Available**: Users can install the add-in at **Home** \> **Get add-ins** \> **Admin-managed**.</span></span>
+     - <span data-ttu-id="c0fe0-164">**選用**：增益集會自動部署至指定的使用者，但是可以選擇加以移除。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-164">**Optional**: The add-in is automatically deployed to the specified users, but they can choose to remove it.</span></span>
 
-10. <span data-ttu-id="d94ff-183">選擇 [儲存]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="d94ff-183">Choose **Save**.</span></span>
+   ![設定增益集頁面](../../media/configure-add-in.png)
 
-<span data-ttu-id="d94ff-184">備妥此規則後，每當貴組織中的人員使用 [報告訊息] 增益集來報告電子郵件時，您的全域系統管理員、安全性系統管理員和/或安全性讀者將會收到該郵件的複本。</span><span class="sxs-lookup"><span data-stu-id="d94ff-184">With this rule in place, whenever someone in your organization reports an email message using the Report Message add-in, your global administrator, security administrator, and/or security reader will receive a copy of that message.</span></span> <span data-ttu-id="d94ff-185">此資訊可讓您設定或調整原則，例如 [Office 365 ATP 安全連結](atp-safe-links.md)原則，或[反垃圾郵件](anti-spam-protection.md)設定。</span><span class="sxs-lookup"><span data-stu-id="d94ff-185">This information can enable you to set up or adjust policies, such as [Office 365 ATP Safe Links](atp-safe-links.md) policies, or your [anti-spam](anti-spam-protection.md) settings.</span></span>
+   <span data-ttu-id="c0fe0-166">當您完成時，按一下 [**部署**]。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-166">When you're finished, click **Deploy**.</span></span>
 
-## <a name="learn-how-to-use-the-report-message-add-in"></a><span data-ttu-id="d94ff-186">了解如何使用報告訊息增益集</span><span class="sxs-lookup"><span data-stu-id="d94ff-186">Learn how to use the Report Message add-in</span></span>
+7. <span data-ttu-id="c0fe0-167">在出現的 [**部署報告郵件**] 頁面中，您會看到進度報告，接著會出現部署增益集的確認。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-167">In the **Deploy Report Message** page that appears, you'll see a progress report followed by a confirmation that the add-in was deployed.</span></span> <span data-ttu-id="c0fe0-168">閱讀資訊後，請按 **[下一步]**。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-168">After you read the information, click **Next**.</span></span>
 
-<span data-ttu-id="d94ff-187">請參閱[使用報告訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。</span><span class="sxs-lookup"><span data-stu-id="d94ff-187">See [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+   ![部署報告郵件頁面](../../media/deploy-report-message-page.png)
 
-## <a name="review-or-edit-settings-for-the-report-message-add-in"></a><span data-ttu-id="d94ff-188">檢閱或編輯報告訊息增益集的設定</span><span class="sxs-lookup"><span data-stu-id="d94ff-188">Review or edit settings for the Report Message add-in</span></span>
+8. <span data-ttu-id="c0fe0-170">在出現的**宣告增益集**頁面上，複查資訊，然後按一下 [**關閉**]。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-170">On the **Announce add-in** page that appears, review the information, and then click **Close**.</span></span>
 
-<span data-ttu-id="d94ff-189">您可以在[服務與增益集頁面](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)上檢閱及編輯 [報告訊息] 增益集的預設設定。</span><span class="sxs-lookup"><span data-stu-id="d94ff-189">You can review and edit the default settings for the Report Message add-in on the [Services & Add-Ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns).</span></span>
+   ![宣告增益集頁面](../../media/announce-add-in-page.png)
 
-> [!IMPORTANT]
-> <span data-ttu-id="d94ff-190">您必須是 Office 365 全域系統管理員或 Exchange Online 系統管理員才能完成此工作。</span><span class="sxs-lookup"><span data-stu-id="d94ff-190">You must be an Office 365 global administrator or an Exchange Online Administrator to complete this task.</span></span>
+### <a name="learn-how-to-use-the-report-message-add-in"></a><span data-ttu-id="c0fe0-172">了解如何使用報告訊息增益集</span><span class="sxs-lookup"><span data-stu-id="c0fe0-172">Learn how to use the Report Message add-in</span></span>
 
-1. <span data-ttu-id="d94ff-191">移至 Microsoft 365 系統管理中心的[服務與增益集頁面](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)。</span><span class="sxs-lookup"><span data-stu-id="d94ff-191">Go to the [Services & add-ins page](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) in the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="c0fe0-173">已指派增益集的人員會看到下列圖示：</span><span class="sxs-lookup"><span data-stu-id="c0fe0-173">People who have the add-in assigned to them will see the following icons:</span></span>
+
+- <span data-ttu-id="c0fe0-174">在 Outlook 中，圖示如下所示：</span><span class="sxs-lookup"><span data-stu-id="c0fe0-174">In Outlook, the icon looks like this:</span></span>
+
+  ![Outlook 的報告訊息增益集圖示](../../media/OutlookReportMessageIcon.png)
+
+- <span data-ttu-id="c0fe0-176">在 Outlook 網頁版中，圖示如下所示：</span><span class="sxs-lookup"><span data-stu-id="c0fe0-176">In Outlook on the web, the icon looks like this:</span></span>
+
+  ![Outlook 的網頁報告訊息增益集圖示](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+
+<span data-ttu-id="c0fe0-178">當您通知使用者關於 [報告訊息] 增益集時，請包含[使用報告訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)的連結。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-178">When you notify users about the Report Message add-in, include a link to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+
+### <a name="review-or-edit-settings-for-the-report-message-add-in"></a><span data-ttu-id="c0fe0-179">檢閱或編輯報告訊息增益集的設定</span><span class="sxs-lookup"><span data-stu-id="c0fe0-179">Review or edit settings for the Report Message add-in</span></span>
+
+1. <span data-ttu-id="c0fe0-180">在 Microsoft 365 系統管理中心中，移至上<https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>的 [服務] **& 增益集**] 頁面。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-180">In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.</span></span>
 
    ![新 Microsoft 365 系統管理中心的服務和增益集頁面](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. <span data-ttu-id="d94ff-193">尋找並選取報告訊息增益集。</span><span class="sxs-lookup"><span data-stu-id="d94ff-193">Find and select the Report Message add-in.</span></span>
+2. <span data-ttu-id="c0fe0-182">尋找並選取**報告訊息**增益集。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-182">Find and select the **Report Message** add-in.</span></span>
 
-   ![尋找並選取報告訊息增益集](../../media/FindReportMessageAddIn.png)
-
-3. <span data-ttu-id="d94ff-195">在 [報告訊息] 畫面上，檢閱及編輯您組織的相關設定。</span><span class="sxs-lookup"><span data-stu-id="d94ff-195">On the Report Message screen, review and edit settings as appropriate for your organization.</span></span>
+3. <span data-ttu-id="c0fe0-183">在顯示的 [**編輯報告訊息**] 浮出視窗中，視組織的需要複查及編輯設定。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-183">In the **Edit Report Message** flyout that appears, review and edit settings as appropriate for your organization.</span></span> <span data-ttu-id="c0fe0-184">完成後，請按一下 **[儲存]**。</span><span class="sxs-lookup"><span data-stu-id="c0fe0-184">When you're finished, click **Save**.</span></span>
 
    ![報告訊息增益集的設定](../../media/EditReportMessageAddIn.png)
-
-## <a name="related-topics"></a><span data-ttu-id="d94ff-197">相關主題</span><span class="sxs-lookup"><span data-stu-id="d94ff-197">Related topics</span></span>
-
-[<span data-ttu-id="d94ff-198">使用報告訊息增益集</span><span class="sxs-lookup"><span data-stu-id="d94ff-198">Use the Report Message add-in</span></span>](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
-
-[<span data-ttu-id="d94ff-199">檢視安全性與合規性中心內的電子郵件安全性報告</span><span class="sxs-lookup"><span data-stu-id="d94ff-199">View email security reports in the Security &amp; Compliance Center</span></span>](view-email-security-reports.md)
-
-[<span data-ttu-id="d94ff-200">檢視 Office 365 進階威脅防護的報告</span><span class="sxs-lookup"><span data-stu-id="d94ff-200">View reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
-
-[<span data-ttu-id="d94ff-201">使用安全性與合規性中心的總管</span><span class="sxs-lookup"><span data-stu-id="d94ff-201">Use Explorer in the Security &amp; Compliance Center</span></span>](threat-explorer.md)
