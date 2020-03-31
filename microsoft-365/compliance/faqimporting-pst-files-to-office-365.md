@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: '有關使用 Office 365 Import Service 將組織的 PST 檔案匯入 Office 365 信箱之系統管理員的常見問題。 '
-ms.openlocfilehash: 31df33ffe2c69478f0304bd27b49254995d8b89c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 439a321c3890d85f7ca0f7da0074af80f6b7fed5
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634431"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058914"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>將 PST 檔案匯入 Office 365 的常見問題
 
@@ -79,6 +79,10 @@ Using network upload to import PST files is free.
   
 如果不同的 PST 檔案需匯入到不同的目標信箱，匯入程序會同時進行；換句話說，系統會同時匯入每個 PST/信箱組合。 同樣地，如果多個 PST 檔案匯入到相同的信箱，則會同時匯入。
   
+ **PST 匯入處理如何處理重複的電子郵件專案？**
+
+PST 匯入程式會檢查重複的專案，並且不會將專案從 PST 檔案複製到信箱或封存（如果目標信箱或目標封存中的目的檔案夾中有相符的專案的話）。 如果您重新匯入同一個 PST 檔案，並指定不同的目的檔案夾（使用 PST 匯入對應檔案中的 TargetRootFolder 屬性），則會 reimported PST 檔案中的所有專案。
+
  **匯入 PST 檔案時，是否有郵件大小限制？**
   
 是。 如果 PST 檔案包含大於 150 MB 的信箱項目，該項目會在匯入程序執行時略過。
@@ -178,6 +182,10 @@ PST 檔案上傳到 Azure 儲存體區域之後，Office 365 會以安全的方�
   
 是。 如果 PST 檔案包含大於 150 MB 的信箱項目，該項目會在匯入程序執行時略過。
   
+  **PST 匯入處理如何處理重複的電子郵件專案？**
+
+PST 匯入程式會檢查重複的專案，並且不會將專案從 PST 檔案複製到信箱或封存（如果目標信箱或目標封存中的目的檔案夾中有相符的專案的話）。 如果您重新匯入同一個 PST 檔案，並指定不同的目的檔案夾（使用 PST 匯入對應檔案中的 TargetRootFolder 屬性），則會 reimported PST 檔案中的所有專案。
+ 
  **PST 檔案匯入 Office 365 信箱時是否會保留訊息內容 (例如訊息的傳送或接收時間、收件者清單等等)？**
   
 是。 匯入程序不會變更任何原始的訊息中繼資料
