@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供 Microsoft 365 for enterprise 的元件、方案及部署路徑的簡介。
-ms.openlocfilehash: 01c5eac2c1ad90bfaa189c26fa4997a1bd2fc10e
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 1e902d1ca0eb80a7588a9b4060a41183f5a5db24
+ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951991"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43053092"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -72,7 +72,7 @@ ms.locfileid: "42951991"
 若要下載此海報的副本，請按一下[這裡](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/m365-poster/Microsoft365Enterprise.pdf)。
 
 
-## <a name="transition-your-entire-organization"></a>轉換您的整個組織
+## <a name="transition-your-entire-organization"></a>轉換整個組織
 
 若要深入瞭解如何將整個組織移至 Microsoft 365 for enterprise 中的產品和服務，請下載[轉換海報](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
 
@@ -84,11 +84,11 @@ ms.locfileid: "42951991"
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>避免 Windows 7 和 Office 2010 用戶端和伺服器的支援終止
 
-下列產品會在**2020 年1月14日**到達支援的結尾：
+下列產品已于**2020 年1月14日**到達支援的結尾：
 
 - [Windows 7](https://aka.ms/win7upgrade)
 
-下列產品已于**2020 年10月13日**在支援結束：
+下列產品會在**2020 年10月13日**到達支援終止：
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)

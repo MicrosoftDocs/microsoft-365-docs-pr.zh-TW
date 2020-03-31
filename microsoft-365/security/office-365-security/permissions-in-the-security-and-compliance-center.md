@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 系統管理員可以了解 Office 365 安全性與合規性中心中可用的權限。
-ms.openlocfilehash: e45a9b369e127ca29de23f308f2d28808571cc42
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: b74537dfdbb7447b29d7ad0c0e0d8f8ff3e15c08
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42569057"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058924"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Office 365 安全性與合規性中心中的權限
 
@@ -42,8 +42,6 @@ Office 365 安全性與合規性中心可讓您將權限授與執行規範工作
 
 ![圖表顯示角色和成員的角色群組關聯性](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
-您可以編輯或刪除現有的角色群組，但我們不建議您這麼做。 除了編輯預設角色群組之外，您還可以複製、修改預設角色群組，然後將其儲存為不同名稱的角色群組。
-
 ## <a name="permissions-needed-to-use-features-in-the-security--compliance-center"></a>在安全性與合規性中心使用功能的必要權限
 
 下表列出安全性與合規性中心可用的預設角色群組，以及預設指派給角色群組的角色。 若要將執行規範工作的權限授與使用者，請將使用者新增至適當的安全性與合規性中心角色群組。
@@ -54,7 +52,7 @@ Office 365 安全性與合規性中心可讓您將權限授與執行規範工作
 
 |**角色群組**|**描述**|**已指派預設角色**|
 |:-----|:-----|:-----|
-|**合規性系統管理員**<sup>1</sup>|成員可以管理裝置管理、資料外洩防護、報告和保留的設定。|案例管理 <br/><br/> 合規性系統管理員 <br/><br/> 合規性搜尋 <br/><br/> DLP 合規性管理 <br/><br/> 裝置管理 <br/><br/> 處置管理 <br/><br/> 保留 <br/><br/> IB 合規性管理 <br/><br/> 管理警示 <br/><br/> 組織組態 <br/><br/> RecordManagement <br/><br/> 保留管理 <br/><br/> 僅限檢視稽核記錄 <br/><br/> 僅限檢視保留管理 <br/><br/> 僅限檢視 DLP 合規性管理 <br/><br/> 僅限檢視裝置管理 <br/><br/> 僅限檢視 IB 合規性管理 <br/><br/> 僅限檢視管理警示 <br/><br/> 僅限檢視收件者 <br/><br/> 僅限檢視記錄管理|
+|**合規性系統管理員**<sup>1</sup>|成員可以管理裝置管理、資料外洩防護、報告和保留的設定。|案例管理 <br/><br/> 合規性系統管理員 <br/><br/> 合規性搜尋 <br/><br/> DLP 合規性管理 <br/><br/> 裝置管理 <br/><br/> 處置管理 <br/><br/> Hold <br/><br/> IB 合規性管理 <br/><br/> 管理警示 <br/><br/> 組織組態 <br/><br/> RecordManagement <br/><br/> 保留管理 <br/><br/> 僅限檢視稽核記錄 <br/><br/> 僅限檢視保留管理 <br/><br/> 僅限檢視 DLP 合規性管理 <br/><br/> 僅限檢視裝置管理 <br/><br/> 僅限檢視 IB 合規性管理 <br/><br/> 僅限檢視管理警示 <br/><br/> 僅限檢視收件者 <br/><br/> 僅限檢視記錄管理|
 |**合規性資料系統管理員**|成員可以管理裝置管理、資料保護、資料外洩防護、報告和保留的設定。|合規性系統管理員 <br/><br/> 合規性搜尋 <br/><br/> DLP 合規性管理 <br/><br/> 裝置管理 <br/><br/> 處置管理 <br/><br/> IB 合規性管理 <br/><br/> 管理警示 <br/><br/> 組織組態 <br/><br/> RecordManagement <br/><br/> 保留管理 <br/><br/> 敏感度標籤系統管理員 <br/><br/> 僅限檢視稽核記錄 <br/><br/> 僅限檢視 DLP 合規性管理 <br/><br/> 僅限檢視裝置管理 <br/><br/> 僅限檢視 IB 合規性管理 <br/><br/> 僅限檢視管理警示 <br/><br/> 僅限檢視收件者 <br/><br/> 僅限檢視記錄管理 <br/><br/> 僅限檢視保留管理|
 |**資料調查人員**|成員可以在信箱、SharePoint 網站和 OneDrive 帳戶上執行搜尋。|通訊 <br/><br/> 合規性搜尋 <br/><br/> 監管人 <br/><br/> 資料調查管理 <br/><br/> 匯出<br/><br/> 預覽 <br/><br/> RMS 解密 <br/><br/> 檢閱<br/><br/> 搜尋和清除|
 |**電子文件探索管理員**|這類成員可以執行搜尋及暫時停用信箱、SharePoint Online 網站和商務用 OneDrive 位置。 這類成員還可以建立及管理電子文件探索案例、新增及移除案例成員、建立及編輯與案例關聯的內容搜尋，以及存取 Office 365 進階電子文件探索中的案例資料。 <br/><br/> 電子文件探索系統管理員是獲派額外權限的電子文件探索管理員角色群組成員。 除了電子文件探索管理員可以執行的工作以外，電子文件探索系統管理員可以： <br/>* 查看組織中的所有 eDiscovery 案例。 <br/>* 將任何 eDiscovery 案例新增為案例成員之後，再加以管理。 <br/><br/> 電子文件探索管理員與電子文件探索系統管理員之間的主要差異在於，電子文件探索系統管理員可以在安全性與合規性中心，存取列在**電子文件探索案例**頁面上的所有案例。 電子文件探索管理員只能存取他們所建立的案例，或是他們所屬的案例。 如需將使用者設為電子文件探索系統管理員的詳細資訊，請參閱[在 Office 365 安全性與合規性中心指派電子文件探索權限](../../compliance/assign-ediscovery-permissions.md)。|案例管理 <br/><br/> 通訊 <br/><br/> 合規性搜尋 <br/><br/> 監管人 <br/><br/> 匯出 <br/><br/> 保留 <br/><br/> 預覽 <br/><br/> RMS 解密 <br/><br/> 檢閱|
