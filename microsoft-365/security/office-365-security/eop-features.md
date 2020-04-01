@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供可在 Exchange Online Protection (EOP) 託管式電子郵件篩選服務中使用的功能清單。
-ms.openlocfilehash: f8a9165cd377549d355a72da5428b777e7c1a505
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 1bab584c62114c74c0eb4d9937acef4f17b89073
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032885"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081445"
 ---
 # <a name="eop-features"></a>EOP 功能
 
@@ -30,7 +30,7 @@ ms.locfileid: "43032885"
 |---|---|
 |**功能**|**描述**|
 |**反垃圾郵件保護**||
-|輸入垃圾郵件偵測|輸入反垃圾郵件保護永遠啟用，而且無法停用。您可以透過連線篩選和內容篩選原則來進行自訂設定。  <br/><br/> 若為 EOP 獨立版客戶：EOP 內容篩選預設會將偵測到的垃圾郵件傳送至每位收件者的 [垃圾郵件] 資料夾。 不過，為了協助確保 **[將郵件移至垃圾郵件資料夾]** 動作能夠在內部部署信箱中運作，您必須在內部部署伺服器上設定兩項 Exchange 流程規則 (也稱為傳輸規則)，以偵測由 EOP 新增的垃圾郵件標頭。 如需詳細資訊，請參閱[Configure 獨立 EOP 以將垃圾郵件傳送至混合式環境中的 [垃圾郵件] 資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。|
+|輸入垃圾郵件偵測|輸入反垃圾郵件保護永遠啟用，而且無法停用。您可以透過連線篩選和內容篩選原則來進行自訂設定。  <br/><br/> 若為 EOP 獨立版客戶：EOP 內容篩選預設會將偵測到的垃圾郵件傳送至每位收件者的 [垃圾郵件] 資料夾。 不過，為了協助確保 **[將郵件移至垃圾郵件資料夾]** 動作能夠在內部部署信箱中運作，您必須在內部部署伺服器上設定兩項 Exchange 流程規則 (也稱為傳輸規則)，以偵測由 EOP 新增的垃圾郵件標頭。 如需詳細資訊，請參閱[設定獨立版 EOP 將垃圾郵件傳送到混合式環境中的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。|
 |輸出垃圾郵件偵測|如果您使用服務傳送輸出電子郵件，藉此幫助保護使用服務的組織和其預期的收件者，一定會啟用輸出反垃圾郵件保護。 和輸入篩選相似，輸出垃圾郵件篩選由連線篩選和內容篩選組成。 輸出垃圾郵件篩選設定無法進行設定，但是有輸出垃圾郵件原則，可讓您用來設定可疑和已封鎖輸出郵件的系統管理員通知。 如需詳細資訊，請參閱[設定輸出垃圾郵件原則](configure-the-outbound-spam-policy.md)。|
 |NDR 退信攻擊保護|如需 NDR 退信攻擊的詳細資訊，請參閱[Office 365 中的高級垃圾郵件篩選（ASF）設定](advanced-spam-filtering-asf-options.md)中的 [NDR 退信攻擊] 設定，以及[退信攻擊郵件和 EOP](backscatter-messages-and-eop.md)。|
 |大宗郵件篩選|EOP 已經增強偵測方法來識別大宗的電子郵件。 您可以透過使用者介面將服務設定為標記大宗電子郵件。 您也可以建立郵件流程規則，以更積極地藉由搜尋大量郵件標頭戳記來篩選大量郵件。 如需有關大宗電子郵件的詳細資訊，請參閱[垃圾郵件和大量電子郵件有什麼不同？](what-s-the-difference-between-junk-email-and-bulk-email.md) 和相關聯的副主題。|
@@ -91,4 +91,4 @@ ms.locfileid: "43032885"
 |**其他功能**||
 |異地備援的伺服器全域網路|EOP 執行於資料中心的全球性網路，這些資料中心的設計目的是協助提供最佳的可用性。如需詳細資訊，請參閱 [Exchange Online Protection 概觀](exchange-online-protection-overview.md) 中的「EOP 資料中心」一節。  |
 |內部部署伺服器無法接收郵件時，將郵件加入佇列|延期的郵件會在一天內保留在佇列中。 郵件重試次數乃是根據我們從收件者的郵件系統所取回的錯誤。 平均而言，郵件會每隔 5 分鐘重試一次。 如需詳細資訊，請參閱 [EOP 排入佇列、延後和退回的訊息常見問題集](eop-queued-deferred-and-bounced-messages-faq.md)。|
-|Office 365 郵件加密可以作為附加元件服務使用|如需詳細資訊，請參閱 [Office 365 中的加密](https://docs.microsoft.com/office365/securitycompliance/encryption)。|
+|Office 365 郵件加密可以作為附加元件服務使用|如需詳細資訊，請參閱 [Office 365 中的加密](../../compliance/encryption.md)。|

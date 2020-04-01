@@ -16,90 +16,90 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: 請參閱 < 新的詐騙智慧深入了解的運作方式。
-ms.openlocfilehash: 940203bc86339e4cc749565be355d717be9e914d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 請參閱新的欺騙性智慧洞察力的運作方式。
+ms.openlocfilehash: 797cbc07fd068ae80edc6cea699f78b2304a8f6c
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084348"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081409"
 ---
-# <a name="walkthrough-spoof-intelligence-insight"></a>逐步解說： 詐騙智慧深入解析
+# <a name="walkthrough-spoof-intelligence-insight"></a>逐步解說：欺騙性智慧洞察力
 
-藉由使用詐騙智慧深入見解，您可以快速地判斷哪一個寄件者合法傳送未驗證電子郵件。 藉由允許他們傳送冒名的郵件，您可以降低風險的任何誤判移至您的使用者。
-  
-此外，您也可以使用詐騙智慧監視及管理允許的網域-配對，以提供額外的安全性層級，並防止不安全的郵件抵達您組織中。
-  
-您可以使用詐騙智慧深入了解安全性&amp;合規性中心，如果您的公司或學校帳戶具有 Office 365 全域系統管理員、 安全性系統管理員或安全性讀取權限。 如需詳細資訊，請參閱[中 Office 365 安全性權限&amp;合規性中心](permissions-in-the-security-and-compliance-center.md)。
-  
-如果您是初次使用[報表和深入了解 Office 365 安全性&amp;合規性中心](reports-and-insights-in-security-and-compliance.md)，它可能會說明若要查看如何您可以輕鬆地瀏覽從儀表板到深入見解和建議的動作。
-  
-您可以檢視從多個儀表板詐騙智慧深入了解安全性&amp;合規性中心。 不論您正在尋找在哪一個儀表板，深入了解提供相同的詳細資訊，並可讓您快速地執行相同工作。
-  
-這是下列其中一個安全性的幾個逐步解說&amp;合規性中心。 若要瀏覽報表和深入資訊，請參閱 [相關的主題] 區段中的逐步解說。
-  
-## <a name="getting-to-the-spoof-intelligence-insight-in-the-security-amp-compliance-center"></a>易於存取安全性詐騙智慧深入見解&amp;合規性中心
+透過使用哄騙智慧洞察力，您可以快速判斷哪些寄件者可合法傳送您未驗證的電子郵件。 透過允許他們傳送哄騙郵件，您可以降低任何誤報給使用者的風險。
 
-1. 若要開始，您將需要[移至安全性&amp;合規性中心](../../compliance/go-to-the-securitycompliance-center.md)。
-    
-2. 安全性&amp;合規性中心，移至**威脅管理** \> **儀表板。**
-    
-3. 在 [**深入了解**] 列中，尋找詐騙智慧深入解析。 如果您已啟用詐騙智慧，然後深入解析為授權**Spoofed 網域，在過去 30 天的驗證失敗**。 如果您未啟用詐騙保護，然後深入了解會提示您若要這麼做所使用的標題**啟用詐騙保護**。 
-    
-## <a name="about-the-insight-on-the-dashboard"></a>關於儀表板上深入解析
+此外，您也可以使用 [偽造智慧監視器] 和 [管理允許的網域對]，以提供額外的安全性層級，並防止不安全的郵件到達您的組織中。
 
-深入了解儀表板上的會顯示如下的資訊。
-  
-![詐騙智慧深入了解的螢幕擷取畫面](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
-  
-此深入了解有兩種模式：
-  
- **深入了解模式**。 如果您有啟用任何詐騙原則，然後深入了解顯示多少郵件已由我們詐騙智慧功能影響過去 30 天。 
-  
- **如果模式**。 如果您沒有任何已啟用的詐騙原則，然後深入了解顯示多少留言可能*會*有已受到我們詐騙智慧功能過去 30 天。 
-  
-無論如何，深入了解中顯示的詐騙的網域分成兩個類別;可疑網域配對和非可疑網域配對。 這些類別會進一步細分為三個不同的 bucket，供您檢閱。 
-  
-*網域配對*是組合 」 從: 「 地址和傳送基礎結構。 
-  
-- 「 從 」 地址是由您的郵件應用程式顯示自地址的地址。 此地址可識別電子郵件的作者。 也就是負責撰寫郵件的使用者或系統信箱。 這有時稱為 5322.From 地址。
-    
-- 傳送基礎結構或寄件者是組織網域的傳送端 IP 位址的 PTR 記錄。 如果傳送 IP 位址不有任何的 PTR 記錄，則寄件者會用來識別所傳送的 IP 255.255.255.0 CIDR 標記法的子網路遮罩 （/ 24）。 例如，如果 IP 位址是 192.168.100.100 完成 IP 位址的寄件者則 192.168.100.100/24。
-    
- **可疑網域組**包括： 
-  
-- **高信賴度詐騙**。 Office 365 收到強式訊號這些網域所可疑，根據歷史傳送模式和網域信譽分數。 Office 365 是高度以內的網域詐騙並從這些網域傳送的訊息是較不可能是合法。 
-    
-- **中度信賴詐騙**。 Office 365 收到中等訊號這些網域所可疑，根據歷史傳送模式和網域信譽分數。 Office 365 是普通以內的網域詐騙和是合法的寄件者這些網域的郵件。 此 bucket 有更多機會包含 false positive (Fp) 比高信賴度詐騙 bucket。 
-    
- **非可疑網域組**包括**人詐騙**。 救回的詐騙都有失敗的明確的驗證檢查 ( [SPF](https://docs.microsoft.com/office365/SecurityCompliance/how-office-365-uses-spf-to-prevent-spoofing)， [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)、 [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email))，但傳遞我們延伸的驗證檢查的網域。 由於此，Office 365 人代替您郵件和反詐騙採取任何動作已在郵件上。 
-  
-## <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>檢視從詐騙智慧深入了解可疑網域組的詳細的資訊
+如果您的工作或學校帳戶已具備 Office &amp; 365 全域系統管理員、安全性管理員或安全性讀取者的許可權，您可以使用安全規範中心中的欺騙智慧洞察力。 如需詳細資訊，請參閱[Office 365 安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
-1. 詐騙智慧深入見解，在按一下任何網域組 （高、 中或救回）。
-  
-**詐騙智慧深入了解**頁面隨即出現顯示未經驗證的郵件傳送到組織的寄件者的清單。 在此頁面上的資訊可協助您判斷是否與否，會獲授權冒名的郵件，或如果您需要採取進一步的動作。 您可以排序資訊訊息計數，偵測上次到詐騙，日期等等。 （按一下欄標題，例如**郵件計數**或**最後一次看到**，例如）。 
-    
-2. 表格，開啟包含相關的網域組豐富資訊的詳細資料] 窗格中選取項目，包括為什麼我們攔截這，您需要做些什麼，網域摘要、 WhoIs 有關寄件者和我們討論過寄件者相同租用戶中的類似電子郵件。 從這裡開始，您也可以選擇新增或移除**AllowedToSpoof**安全寄件者清單中的網域組。 
-  
-![詐騙智慧深入了解詳細資料窗格中的網域的螢幕擷取畫面](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
-  
-## <a name="add-or-remove-a-domain-from-the-allowedtospoof-safe-sender-list"></a>新增或移除 AllowedToSpoof 安全寄件者清單中的網域
+如果您是[Office 365 安全性&amp;與合規性中心內的報表和洞察力的](reports-and-insights-in-security-and-compliance.md)最新資訊，它可能會協助您瞭解如何輕鬆從儀表板流覽至真知灼見及建議的動作。
 
-您新增或移除 AllowedToSpoof 安全寄件者清單中的網域，同時檢閱詳細資料窗格中的網域組的詐騙智慧深入解析。 只要據此設定將開關切換。
-  
-這會修改唯一的網域配對結合詐騙的網域與傳送基礎結構，而不提供涵蓋範圍整個詐騙的網域或隔離中的傳送基礎結構。 例如，如果您將下列網域組新增至 'AllowedToSpoof' 寄件者允許清單：*詐騙網域*」 gmail.com 」 和*傳送基礎結構*」 tms *。 mx.com 」，* 然後只從該網域配對的郵件仍可詐騙。 其他的寄件者嘗試詐騙 」 gmail.com 」 與 「 tms.mx.com 」 嘗試詐騙會繼續受保護的詐騙智慧其他網域。 
-  
+您可以在安全性&amp;與合規性中心的多個儀表板上查看哄騙智慧洞察力。 不論您所看到的儀表板為何，真知灼見都會提供相同的詳細資料，並可讓您快速執行相同的工作。
+
+這是安全性&amp;與合規性中心的幾個演練中的其中一個。 若要瞭解如何導覽報表和真知灼見，請參閱相關主題區段中的演練。
+
+## <a name="getting-to-the-spoof-intelligence-insight-in-the-security-amp-compliance-center"></a>取得安全性&amp;與合規性中心的欺騙智慧洞察力
+
+1. 若要開始，您需要[移至安全性&amp;與合規性中心](../../compliance/go-to-the-securitycompliance-center.md)。
+
+2. 在安全性&amp;與合規性中心，移至 [**威脅管理** \> **儀表板]。**
+
+3. 在 [**洞察力**] 列中，尋找 [偽造智慧洞察力]。 如果您已啟用欺騙情報，則真知灼見會有權**驗證過去30天內驗證失敗的欺騙性網域**。 如果您尚未啟用欺騙保護，則真知灼見會提示您使用標題 [**啟用欺騙防護**] 來執行此動作。
+
+## <a name="about-the-insight-on-the-dashboard"></a>關於儀表板上的洞察力
+
+儀表板上的洞察力顯示如下所示的資訊。
+
+![欺騙智慧洞察力的螢幕擷取畫面](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+
+這兩種洞察力分為兩種模式：
+
+ **洞察力模式**。 如果您已啟用任何欺騙原則，則真知灼見會顯示過去30天內，我們的欺騙智慧功能會影響的郵件數目。
+
+ **If 模式**。 如果您未啟用任何欺騙原則，則真知灼見會顯示過去30天內，我們的欺騙智慧功能*會*影響的郵件數目。
+
+無論是哪種方式，顯示在真知灼見中的冒牌網域都會分為兩類;可疑的網域配對和非可疑的網域配對。 這些類別會進一步細分為三個不同的桶，供您審閱。 
+
+*網域對*是 [寄件者：] 位址和傳送基礎結構的組合。 
+
+- 「寄件者」位址是您的郵件應用程式顯示為 [寄件者] 位址的位址。 此地址可識別電子郵件的作者。 也就是負責撰寫郵件的使用者或系統信箱。 這有時稱為 5322.From 地址。
+
+- 傳送基礎結構（或寄件者）是寄件者 IP 位址之 PTR 記錄的組織網域。 如果傳送 IP 位址沒有 PTR 記錄，則寄件者會透過以 CIDR 標記法（/24）的255.255.255.0 子網路遮罩傳送 IP 加以識別。 例如，如果 IP 位址是192.168.100.100，則寄件者的完整 IP 位址是 192.168.100.100/24。
+
+ **可疑的網域配對**包括：
+
+- **高度信賴欺騙**。 Office 365 收到強信號，指出這些網域是可疑的，根據歷史傳送模式和網域的信譽分數而定。 Office 365 非常確信網域是哄騙的，而從這些網域傳送的郵件則不太可能合法。 
+
+- **適中置信欺騙**。 Office 365 收到適中的信號，這些網域會根據歷史傳送模式和網域的信譽分數，來表示這些網域是可疑的。 Office 365 適度相信網域是哄騙的，而從這些網域傳送的郵件是合法的。 此 bucket 有更多的可能性包含誤報（FPs）的高可信度。
+
+ **非可疑的網域配對**包括**rescued 欺騙**。 Rescued 欺騙是指失敗明確驗證檢查[SPF](how-office-365-uses-spf-to-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)、 [DMARC](use-dmarc-to-validate-email.md)）的網域，但傳遞的是延伸驗證檢查。 因此，Office 365 會以您的身分 rescued 郵件，而且不會對郵件採取任何反欺詐動作。
+
+## <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>從哄騙情報洞察力中查看有關可疑網域配對的詳細資訊。
+
+1. 在 [偽造智慧洞察力] 中，按一下 [任何網域配對] （high、適中或 rescued）。
+
+隨即會出現 [**哄騙智慧真知灼見**] 頁面，顯示將未驗證郵件傳送至組織的寄件者清單。 此頁面上的資訊可協助您判斷是否已授權哄騙郵件，或者您是否需要進一步採取動作。 您可以依郵件計數、上一次偵測欺騙的日期等等來排序資訊。 （例如，按一下 [**郵件計數**] 或 [**最後一個看到**的列標題]）。
+
+2. 選取表格中的專案，以開啟包含有關網域對之豐富資訊的詳細資訊窗格，包括以下的原因：我們所做的，您需要做的是，您需要做的是，一個網域摘要，WhoIs 有關寄件者的相關電子郵件，以及我們在您的租使用者中所看到的類似電子郵件。 在這裡，您也可以選擇從**AllowedToSpoof**安全寄件者清單中新增或移除網域對。
+
+![欺騙智慧洞察力詳細資料窗格中的網域螢幕擷取畫面](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+
+## <a name="add-or-remove-a-domain-from-the-allowedtospoof-safe-sender-list"></a>從 AllowedToSpoof 安全寄件者清單中新增或移除網域
+
+您可以從 AllowedToSpoof 安全的寄件者清單中新增或移除網域，在 [欺騙性智慧洞察力] 的 [詳細資料] 窗格中檢查網域對。 只會據此設定切換。
+
+這會修改欺騙性網域和傳送基礎結構的唯一網域組合，不會對整個冒牌網域或獨立傳送基礎結構提供覆蓋範圍。 例如，如果您將下列網域對新增至 ' AllowedToSpoof ' 寄件者允許清單：*冒牌網域*"gmail.com"，並傳送*基礎結構*" *mx.com"，* 則只有該網域對中的郵件才會遭到欺騙。 其他企圖哄騙 "gmail.com" 的寄件者，以及其他「tms.mx.com」嘗試欺騙的網域，會繼續受到欺騙智慧的保護。
+
 ## <a name="related-topics"></a>相關主題
 
 [深入了解詐騙情報](learn-about-spoof-intelligence.md)
-  
+
 [Office 365 的反詐騙保護](anti-spoofing-protection.md)
-  
+
 [逐步解說 - 從儀表板到深入解析](from-a-dashboard-to-an-insight.md)
-  
+
 [逐步解說 - 從詳細報告到深入解析](from-a-detailed-report-to-an-insight.md)
-  
+
 [逐步解說 - 從深入解析到詳細報告](from-an-insight-to-a-detailed-report.md)
-  
+
 

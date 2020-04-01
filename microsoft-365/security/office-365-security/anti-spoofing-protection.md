@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 本文說明 Office 365 如何減少使用偽造寄件者網域的網路釣魚攻擊，即詐騙網域。 其達成目的的方式是透過分析郵件，和封鎖無法使用標準電子郵件驗證方法或其他寄件者信譽技術來進行驗證的郵件。 採用此項變更是為了減少 Office 365 中的組織所暴露的網路釣魚攻擊數量。
-ms.openlocfilehash: a81c22d83e0a476657aa89823e52d3eb6afc4514
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 5d4b9f0c94a68d457aa59b768444746627dffb9d
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033479"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081361"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
 
@@ -61,7 +61,7 @@ Microsoft 的反詐騙技術最初部署在具有 Office 365 企業版 E5 訂閱
 
 上述郵件確實是來自 Microsoft，但使用者仍然還是會收到誘騙使用者按下連結並給予其憑證，下載惡意程式碼或回覆具有敏感內容的網路釣魚郵件。 因為分辨真實密碼重設郵件與假冒郵件有其難度，許多使用者會略過這些郵件、將它們回報為垃圾郵件或在不應該的情況下，將這些郵件回報給 Microsoft 為遺漏的網路釣魚詐騙。
 
-為了阻止詐騙郵件，電子郵件篩選產業已開發出諸如 [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)、[DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email) 和 [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) 等電子郵件驗證通訊協定。 DMARC 透過檢查郵件的寄件者來防止偽造。 也就是使用者在其電子郵件用戶端中看到的寄件者 (在以上範例中，它是 service.outlook.com、outlook.com 和 accountprotection.microsoft.com)。 此外，使用者也可以看到網域已通過 SPF 或 DKIM，這表示網域已驗證，因此不是偽造的。 如需完整討論內容，請參閱本文稍後的*了解為什麼電子郵件驗證不一定能夠阻止詐騙*一節。
+為了阻止詐騙郵件，電子郵件篩選產業已開發出諸如 [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、[DKIM](use-dkim-to-validate-outbound-email.md) 和 [DMARC](use-dmarc-to-validate-email.md) 等電子郵件驗證通訊協定。 DMARC 透過檢查郵件的寄件者來防止偽造。 也就是使用者在其電子郵件用戶端中看到的寄件者 (在以上範例中，它是 service.outlook.com、outlook.com 和 accountprotection.microsoft.com)。 此外，使用者也可以看到網域已通過 SPF 或 DKIM，這表示網域已驗證，因此不是偽造的。 如需完整討論內容，請參閱本文稍後的*了解為什麼電子郵件驗證不一定能夠阻止詐騙*一節。
 
 不過，問題在於電子郵件驗證記錄並非強制必要的。 因此，雖然採用強式驗證原則的網域 (如 microsoft.com 和 skype.com) 可防止詐騙，但是發佈較弱的驗證原則、或甚至完全未採用任何原則的網域就成了詐騙目標。 截至 2018 年 3 月，在財富雜誌前 500 大公司的網域中，只有 9% 發佈強式的電子郵件驗證原則。 剩下 91% 則可能受網路釣魚者的詐騙，且可能傳送郵件到使用者端來欺騙使用者，除非電子郵件篩選器使用另外的原則進行偵測：
 
@@ -248,7 +248,7 @@ To: someone@fabrikam.com
 
 這可能會導致之前標示為垃圾郵件的某些郵件仍被標示為垃圾郵件，但現在還會顯示紅色安全提示；在其他情況下，之前標示為非垃圾郵件的郵件將開始被標示垃圾郵件 (CAT:SPOOF)，並新增紅色安全提示。 在其他情況下，將所有垃圾郵件和網路釣魚郵件移到隔離區的客戶現在會看到這些郵件轉到 [垃圾郵件] 資料夾 (此行為可變更，請參閱[變更您的反詐騙設定](#changing-your-anti-spoofing-settings))。
 
-假冒郵件有多種不同的方式 (請參閱本文稍早所述的的[區分不同類型的詐騙](#differentiating-between-different-types-of-spoofing))，但是截至 2018 年 3 月，Office 365 處理這些郵件的方式尚未統一。 下表快速摘要跨網域詐騙防護這個新行為：
+假冒郵件有多種不同的方式 (請參閱本文稍早所述的[區分不同類型的詐騙](#differentiating-between-different-types-of-spoofing))，但是截至 2018 年 3 月，Office 365 處理這些郵件的方式尚未統一。 下表快速摘要跨網域詐騙防護這個新行為：
 
 |**詐騙類型**|**類別**|**是否新增安全提示？**|**適用對象**|
 |:-----|:-----|:-----|:-----|

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 本主題說明如何設定 Microsoft Exchange Online Protection (EOP)。 如果您從 Office 365 網域精靈進入這裡，而您不希望使用 Exchange Online Protection 的話，請回到 Office 365 網域精靈。 如果您正在尋找如何設定連接器的詳細資訊，請參閱＜使用 Office 365 中的連接器設定郵件流程＞。
-ms.openlocfilehash: 5a28bc606b22b044515e737bf1ddf8250452f250
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 6686e95f343a116a53991957e7746ef841e858ba
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895140"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081229"
 ---
 # <a name="set-up-your-eop-service"></a>設定 EOP 服務
 
@@ -62,8 +62,7 @@ ms.locfileid: "42895140"
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>步驟 4：允許輸入連接埠 25 SMTP 存取
 
-設定連接器之後，請等待 72 小時以允許傳播 DNS 記錄更新。接著限制防火牆或郵件伺服器上的通訊埠 25 SMTP 流量，以僅接受來自 EOP 資料中心的郵件 (尤其是來自 [Exchange Online Protection IP 位址](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges
-) 所列 IP 位址的郵件)。這會限制您可接收的輸入郵件範圍，以保護內部部署環境的安全。此外，若您在郵件伺服器上進行設定，以控制允許連線執行郵件轉送的 IP 位址，請一併更新這些設定。
+設定連接器之後，請等待 72 小時以允許傳播 DNS 記錄更新。接著限制防火牆或郵件伺服器上的通訊埠 25 SMTP 流量，以僅接受來自 EOP 資料中心的郵件 (尤其是來自 [Exchange Online Protection IP 位址](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges) 所列 IP 位址的郵件)。這會限制您可接收的輸入郵件範圍，以保護內部部署環境的安全。此外，若您在郵件伺服器上進行設定，以控制允許連線執行郵件轉送的 IP 位址，請一併更新這些設定。
 
 > [!TIP]
 > 將 SMTP 伺服器的連線時間設定設為超過 60 秒。 此設定適用於大部分情況，例如，在傳送具有大型附件的郵件時可稍許延遲。

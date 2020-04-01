@@ -11,13 +11,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+- remotework
 description: '保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。 '
-ms.openlocfilehash: b675f8abc5487dcb08324795fb1d6cc3b91592a1
-ms.sourcegitcommit: 71612ef8f2f93063c2a070e8a079506362f54c58
+ms.openlocfilehash: 3bbd5951ac6005f20584d53e17ac55927acd4c89
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "43037473"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081301"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>最常見的12個任務，可供安全性小組用來支援在家運作
 
@@ -165,8 +166,8 @@ Microsoft Intune 行動應用程式管理（MAM）可讓您在不管理這些裝
 - [使用 apple Business Manager （ABM）中的 Apple 公司裝置註冊功能，在 Intune 中登記 iOS/iPadOS 裝置](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
 註冊裝置後，請使用一般身分[識別和裝置存取原則](../enterprise/identity-access-policies.md)中的指導方針來建立下列原則：
-- [定義裝置合規性原則](../enterprise/identity-access-policies.md#define-device-compliance-policies)
-- [需要相容的電腦](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)（條件式存取規則）
+- [定義裝置相容性原則](../enterprise/identity-access-policies.md#define-device-compliance-policies)-Windows 10 的建議設定包括要求病毒防護。 如果您有 Microsoft 365 E5，請使用 Microsoft Defender 高級威脅防護來監視員工裝置的健康情況。 請確定其他作業系統的相容性原則包括防防毒保護和端點保護軟體。 
+- [需要相容的電腦](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)-這是 Azure AD 中強制執行裝置合規性原則的條件式存取規則。
 
 只有一個組織可以管理裝置，因此請務必從 Azure AD 中的條件式存取規則中排除來賓帳戶。 如果您未從需要裝置規範的原則中排除來賓和外部使用者，這些原則將會封鎖這些使用者。 如需詳細資訊，請參閱[更新共同原則以允許及保護來賓和外部存取](../enterprise/identity-access-policies-guest-access.md)。
 
@@ -174,7 +175,7 @@ Microsoft Intune 行動應用程式管理（MAM）可讓您在不管理這些裝
 
 如果您要快速讓員工大量員工運作，這種突然的連線模式交換器可能會對公司網路基礎結構產生重大影響。 在採用雲端服務之前，許多網路都已經過縮放及設計。 在許多情況下，網路可容忍遠端工作者，但未設計為同時供所有使用者遠端使用。
 
-網路元素（如 VPN 集中式）、中央網路出口裝置（例如 proxy 和資料遺失防護裝置）、中央網際網路頻寬、backhaul MPLS 電路、NAT 功能等等，突然因負載不足而受到大量的壓力使用他們的整個公司。 最終結果是不良效能和生產力，以及對在家工作進行調整的使用者不佳的使用者經驗。
+網路元素（如 VPN 集中式、中央網路出口裝置（例如 proxy 和資料遺失防護裝置）、中央網際網路頻寬、backhaul MPLS 電路、NAT 功能等等，突然因使用它們的整個商務負載而受到大量的壓力影響。 最終結果是不良效能和生產力，以及對在家工作進行調整的使用者不佳的使用者經驗。
 
 使用者所存取的雲端應用程式會提供傳統中透過公司網路傳送流量的某些保護。 如果您已在本文中達成這項步驟，您已針對 Microsoft 365 服務和資料執行一組複雜的雲端安全性控制。 使用這些控制措施後，您可以準備將遠端使用者的流量直接路由傳送至 Office 365。 如果您仍需要 VPN 連結才能存取其他應用程式，您可以執行分割隧道，以大幅改善效能和使用者體驗。 當您在 oganization 中達成合約後，就能在一天內由適當的網路小組完成。
 

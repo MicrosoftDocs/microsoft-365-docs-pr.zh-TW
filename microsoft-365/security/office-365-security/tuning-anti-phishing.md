@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 系統管理員可以瞭解如何知道網路釣魚郵件的取得原因，以及如何防止未來的更多網路釣魚郵件。
-ms.openlocfilehash: 56baf39335837158cd061b4cbaede25a81c484ee
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 37d1e8bbf91bc6f0a1c8e9b5aa97fe460e8b5c82
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033647"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081205"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>調整 Office 365 中的反網路釣魚保護
 
@@ -45,7 +45,7 @@ ms.locfileid: "43033647"
 
 您可以檢查網路釣魚郵件的標頭，以查看是否有任何可以執行的動作，以防止更多網路釣魚郵件進入。 換句話說，檢查郵件頭可協助您識別組織中負責允許網路釣魚郵件的任何設定。
 
-具體而言，您應該檢查郵件頭中的**X-Forefront-Antispam-Report**標頭欄位，以瞭解在垃圾郵件篩選判定（SFV）值中略過的垃圾郵件或網路釣魚篩選跡象。 略過篩選的郵件會有輸入`SCL:-1`，這表示您的其中一個設定是透過覆寫由服務所決定的垃圾郵件或網路釣魚 verdicts，允許這封郵件。 如需如何取得郵件頭及所有可用反垃圾郵件和反網路釣魚郵件標題之完整清單的詳細資訊，請參閱[anti-spam message](https://docs.microsoft.com/office365/SecurityCompliance/anti-spam-message-headers)頁首。
+具體而言，您應該檢查郵件頭中的**X-Forefront-Antispam-Report**標頭欄位，以瞭解在垃圾郵件篩選判定（SFV）值中略過的垃圾郵件或網路釣魚篩選跡象。 略過篩選的郵件會有輸入`SCL:-1`，這表示您的其中一個設定是透過覆寫由服務所決定的垃圾郵件或網路釣魚 verdicts，允許這封郵件。 如需如何取得郵件頭及所有可用反垃圾郵件和反網路釣魚郵件標題之完整清單的詳細資訊，請參閱[Office 365 中的反垃圾郵件郵件頭](anti-spam-message-headers.md)。
 
 ## <a name="best-practices-to-stay-protected"></a>保持受保護狀態的最佳作法
 
@@ -61,7 +61,7 @@ ms.locfileid: "43033647"
 
   - 確認您的 SPF 記錄識別出您網域中寄件者的_所有_電子郵件來源（請勿忘記協力廠商服務！）。
 
-  - 使用 hard fail （\-）以確保已設定為執行此作業的電子郵件系統拒絕未授權的寄件者。 您可以使用[哄騙情報](https://docs.microsoft.com/office365/securitycompliance/learn-about-spoof-intelligence)來協助識別使用您網域的寄件者，這樣您就可以在 SPF 記錄中包含授權的協力廠商寄件者。
+  - 使用 hard fail （\-）以確保已設定為執行此作業的電子郵件系統拒絕未授權的寄件者。 您可以使用[哄騙情報](learn-about-spoof-intelligence.md)來協助識別使用您網域的寄件者，這樣您就可以在 SPF 記錄中包含授權的協力廠商寄件者。
 
   如需設定指示，請參閱：
   
@@ -71,8 +71,8 @@ ms.locfileid: "43033647"
 
   - [在 Office 365 中使用 DMARC 來驗證電子郵件](use-dmarc-to-validate-email.md)
 
-- 建議您盡可能將網域的電子郵件直接傳送到 Office 365。 換句話說，請將您的 Office 365 網域的 MX 記錄指向 Office 365。 Exchange Online Protection （EOP）可在您的使用者郵件直接傳遞至 Office 365 時，為您的雲端使用者提供最佳的保護。 如果您必須在 EOP 前使用協力廠商的電子郵件清潔系統，請確定您已遵循[這裡](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud)的指導方針。
+- 建議您盡可能將網域的電子郵件直接傳送到 Office 365。 換句話說，請將您的 Office 365 網域的 MX 記錄指向 Office 365。 Exchange Online Protection （EOP）可在您的使用者郵件直接傳遞至 Office 365 時，為您的雲端使用者提供最佳的保護。 如果您必須在 EOP 前使用協力廠商的電子郵件清潔系統，請使用增強型介面篩選功能。 如需相關指示，請參閱[在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
-- 多重要素驗證（MFA）是一種避免受損帳戶的最佳方式。 您應強烈考慮為您的所有使用者啟用 MFA。 針對分段的方法，在您為所有人啟用 MFA 之前，先為您最機密的使用者（系統管理員、行政人員等等）啟用 MFA，以開始執行。 如需相關指示，請參閱[設定多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。
+- 多重要素驗證（MFA）是一種避免受損帳戶的最佳方式。 您應強烈考慮為您的所有使用者啟用 MFA。 針對分段的方法，在您為所有人啟用 MFA 之前，先為您最機密的使用者（系統管理員、行政人員等等）啟用 MFA，以開始執行。 如需相關指示，請參閱[設定多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
 
 - 將規則轉寄給外部收件者通常是被攻擊者用來提取資料。 使用[Microsoft Secure 得分](../mtp/microsoft-secure-score.md)中的 [**複查信箱轉寄規則**] 資訊，尋找甚至避免將轉寄規則轉接給外部收件者。 如需詳細資訊，請參閱[含有安全分數的用戶端外部轉寄降低風險規則](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/) (英文)。
