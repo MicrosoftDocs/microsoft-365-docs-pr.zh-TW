@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留標籤可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Microsoft 365 中實作記錄管理解決方案。
-ms.openlocfilehash: 3bcaee41ab178ae79b1f2ef46871dadb107f3f5b
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: e41c71a1f8bc0175b179ecd760dac7098551bc91
+ms.sourcegitcommit: 6b7eecad7162c065af80721204fbabdd2e31e42b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929447"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43065639"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -74,7 +74,7 @@ ms.locfileid: "42929447"
   
 ![標籤、標籤原則和位置圖表](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. 當您發佈保留標籤時，會將它們納入保留標籤原則。 請注意，保留標籤的名稱是固定的，且建立後即無法進行編輯。
+1. 當您發佈保留標籤時，會將它們納入保留標籤原則。 保留標籤名稱是不可改變的，表示在建立之後無法編輯它們。
 
 
 2. 單一保留標籤可納入多個保留標籤原則。
@@ -97,7 +97,7 @@ ms.locfileid: "42929447"
     
 手動指派標籤為明確指派，自動套用標籤為隱含指派。明確保留標籤的優先順序高於隱含標籤。如需詳細資訊，請參閱之後的[保留原則，哪一個優先？](#the-principles-of-retention-or-what-takes-precedence)小節。
 
-本節中所有的資訊僅適用於保留標籤。請注意，除了一個保留標籤之外，也可以將一個區分大小寫的標籤套用至內容的項目。
+本節中所有的資訊僅適用於保留標籤。請注意，除了一個保留標籤之外，也可以將一個敏感度標籤套用至內容的項目。
   
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>保留標籤要多久才會生效
 
@@ -416,7 +416,19 @@ Exchange 公用資料夾和 Skype 不支援標籤。
 了解保留原則從上到下的仲裁流程：如果所有原則或標籤套用的規則都在同一個層級，則流程會移到下一個層級來決定套用規則的優先順序。
   
 最後，保留原則或標籤無法永久刪除 eDiscovery 保留的任何內容。保留解除時，這些內容便再度符合上述的清理程序。
-  
+
+### <a name="precedence-for-auto-labeling-with-trainable-classifiers"></a>使用可訓練分類器自動加上標籤的優先順序
+
+系統會同時評估所有針對可訓練分類器設定的保留標籤。 如果有多個可訓練分類器偵測到某個項目，則會使用下列準則來決定要套用哪個保留標籤：
+
+1. 設定為僅限保留或保留後刪除的保留標籤，優先順序高於設定為僅限刪除的保留標籤。
+
+2. 針對設定為僅限保留或保留後刪除的保留標籤，保留標籤設定為最長保留期間的優先。
+
+3. 針對設定為僅限刪除的保留標籤，設定為最短期間的保留標籤優先。
+
+4. 相同動作和相同期間的保留標籤會導致保留標籤的選取不具有決定性。
+
 ## <a name="use-retention-labels-instead-of-these-features"></a>使用保留標籤而非這些功能
 
 您可以輕鬆將保留標籤運用在整個組織及其 Office 365 內容，包括 Exchange、SharePoint、OneDrive、Office 365 群組。若您需要在 Office 365 任何地方分類內容或管理記錄，建議您使用保留標籤。
