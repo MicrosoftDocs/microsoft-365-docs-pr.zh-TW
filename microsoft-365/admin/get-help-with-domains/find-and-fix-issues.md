@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
-description: 了解如何追蹤您藉由確認 DNS 記錄設定正確設定自訂的網域時遇到任何問題。
-ms.openlocfilehash: 277e87ad6b06db0b1ef3b3cb5eaaa45a2e77ed6f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 在設定自訂網域時，請確定已正確設定 DNS 記錄，以追蹤在設定自訂網域時所執行的任何問題。
+ms.openlocfilehash: a93318d54b950b908319fe50a0cfedefe8586036
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251666"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43115967"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records-in-office-365"></a>尋找並修正在 Office 365 中新增網域或 DNS 記錄之後所發生的問題
 
@@ -35,21 +35,21 @@ ms.locfileid: "42251666"
 設定您的網域與 Office 365 搭配運作可能不太容易。使用 DNS 系統的限制頗多，而且您網域的 DNS 設定也會影響到重要的商務活動，例如電子郵件！
 
 > [!NOTE]
-> 您可以透過檢查其狀態檢查您的網域的問題。 移至 [**設定** > **網域**並檢視 [**狀態**] 欄中的通知。 如果您看到此問題，請選取 [更多動作 （三個點），然後選擇 [**檢查健康情況**。 會開啟窗格將描述與您的網域發生的任何問題。
+> 您可以檢查您的網域的狀態，以查看其是否存在問題。 移至 [**安裝** > **網域**]，然後在 [**狀態**] 欄中查看通知。 如果您看到問題，請選取 [其他動作（三個點）]，然後選擇 [**檢查健康情況**]。 隨即開啟的窗格會描述您的網域所發生的任何問題。
   
 ## <a name="whats-going-on"></a>What's going on?
 
-- [無法驗證您的網域嗎？](#cant-verify-your-domain)
+- [無法驗證您的網域？](#cant-verify-your-domain)
     
-- [Outlook 無法運作嗎？](#outlook-isnt-working)
+- [Outlook 無法運作？](#outlook-isnt-working)
     
-- [所有人的電子郵件 got 切換到 Office 365 和您只想要切換電子郵件？](#everyones-email-got-switched-to-office-365-and-you-only-wanted-your-email-to-switch)
+- [所有人的電子郵件都已切換至 Office 365，您只需要切換您的電子郵件？](#everyones-email-got-switched-to-office-365-and-you-only-wanted-your-email-to-switch)
 
-- [無法確認非營利機構或學校帳戶狀態？](#cant-confirm-non-profit-or-school-account-status)
+- [無法確認非盈利或學校帳戶狀態？](#cant-confirm-non-profit-or-school-account-status)
 
-- [無法使用您的網域服務？](#services-not-working-with-your-domain)
+- [服務無法與您的網域搭配運作？](#services-not-working-with-your-domain)
     
-- [存取您的網站無法運作嗎？](#accessing-your-website-isnt-working)
+- [存取您的網站無法運作？](#accessing-your-website-isnt-working)
 
 ## <a name="cant-verify-your-domain"></a>無法驗證您的網域嗎？
 <a name="BKMK_verify"> </a>
@@ -60,26 +60,26 @@ ms.locfileid: "42251666"
     
 2. **尚未儲存記錄。** 在某些 DNS 主機中，您還需要額外採取一個步驟來儲存區域檔案 (DNS 記錄的儲存位置)，以便在網際網路上更新該檔案。請確定已儲存您的變更，如此 Office 365 才可以看到並驗證記錄。 
     
-3. **記錄尚未在網際網路上更新。** 它通常只需幾分鐘，我們會看到新的記錄，但有時可能需要長達幾個小時。 
+3. **尚未在網際網路上更新記錄。** 這通常只需要幾分鐘的時間，我們才能看到新的記錄，但是有時候它可能需要數小時的時間。 
     
 ## <a name="outlook-isnt-working"></a>Outlook 無法運作嗎？
 <a name="BKMK_OutlookBroken"> </a>
 
 如果您已為網域設定正確的 MX 記錄及其他 DNS 記錄，但是郵件無法運作，請讓我們協助您 [修正 Outlook 問題](https://support.office.com/article/b3e740b9-171d-4179-bcd1-e279a363fa75.aspx)。
   
-## <a name="everyones-email-got-switched-to-office-365-and-you-only-wanted-your-email-to-switch"></a>所有人的電子郵件 got 切換到 Office 365 和您只想要切換電子郵件？
+## <a name="everyones-email-got-switched-to-office-365-and-you-only-wanted-your-email-to-switch"></a>所有人的電子郵件都已切換至 Office 365，您只需要切換您的電子郵件？
 <a name="BKMK_EmailSwitched"> </a>
 
-當您新增網域至 Office 365 時，通常您網域的 MX 記錄被更新 （依您或 Office 365） 以指向 Office 365，並傳送至該網域的所有電子郵件都會開始送往 Office 365。 請確定您已建立信箱 Office 365 中的每一位使用者變更 MX 記錄之前，您的網域上具有電子郵件。
+當您將網域新增至 Office 365 時，通常會365更新您網域的 MX 記錄以指向 Office 365，而且所有傳送至該網域的電子郵件都會開始進入 Office 365。 在您變更 MX 記錄之前，請確定您已在 Office 365 中建立信箱，供每個擁有電子郵件的人在您的網域中建立。
   
-如果不想要移動電子郵件的每個人都在您的網域至 Office 365？ 您可以執行下列步驟，[僅使用一小部分的電子郵件地址試驗 Office 365](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx)。
+如果您不想將您網域中的每一個人的電子郵件移至 Office 365，該怎麼辦？ 您可以執行下列步驟，[僅使用一小部分的電子郵件地址試驗 Office 365](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx)。
   
-## <a name="cant-confirm-non-profit-or-school-account-status"></a>無法確認非營利機構或學校帳戶狀態？
+## <a name="cant-confirm-non-profit-or-school-account-status"></a>無法確認非盈利或學校帳戶狀態？
 <a name="BKMK_validateAcct"> </a>
 
-當您只需要確認貴組織的網域和未設定任何服務時，有幾個案例。 例如，若要證明您的組織是否符合要求學校訂用帳戶的 Office 365。
+您只需要驗證組織的網域，而不會設定任何服務時，會有幾種案例。 例如，若要證明您的組織符合學校訂閱的 Office 365。
   
-請參閱[驗證您的 Office 365 網域證明所有權、 非營利組織版或教育版狀態，或啟動 Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590) ，確定您已完成所有必要的步驟中的指引。 它是有點不同的每一種狀況。 
+請參閱[驗證您的 Office 365 網域中的指南，以證明擁有權、非盈利性或教育狀態，或啟動 Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590)以確定您已完成所有必要步驟。 這對於每種情況都有些不同。 
   
 ## <a name="services-not-working-with-your-domain"></a>您的網域無法使用服務嗎？
 <a name="BKMK_Test"> </a>
