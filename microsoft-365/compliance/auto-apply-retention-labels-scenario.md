@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 本解決方案案例說明如何使用 Office 365 保留標籤來管理儲存在 SharePoint Online 的產品相關文件的生命週期。 方法是使用文件中繼資料來分類內容，具體做法是並自動套用 Office 365 保留標籤及設定以事件為基礎的保留。
-ms.openlocfilehash: aa73feecbfaa830b2297a5c64f653c4da4d4b325
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bccfb7d20bfcca6476ce5fa971a2ab0c455824a5
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079377"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106035"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>使用保留標籤管理 SharePoint 文件的生命週期
+
+>*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
 本文將說明如何使用 Office 365 保留標籤來管理儲存在 SharePoint Online 的產品相關文件的生命週期，具體做法是自動套用標籤及設定以事件為基礎的保留。 自動套用功能會透過使用 SharePoint 中繼資料來運用文件分類。 本文中的案例是以與產品相關的文件為基礎，但是相同的概念也可用於其他案例。 例如，在石油與天然氣產業，您可以管理與石油平台、鑽井記錄或生產授權等實體資產相關的文件生命週期。 在金融服務產業，您可以管理與銀行帳戶、貸款或保險合約相關的文件。 在公共部門，您可以管理與施工許可證或稅務表單相關的文件。
 

@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 從 Microsoft 資訊保護架構使用敏感度標籤來分類及保護組織的資料，同時確保使用者生產效率和共同作業能力不受影響。 這些標籤可套用保護設定以包含加密視覺標記，如頁尾和浮水印。
-ms.openlocfilehash: 7593774b4cb0786cc82988442bbca522ce534cc8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: a67d71c16f93cf8872646c5bbeb072f8b5f07935
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634641"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106151"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
+
+>*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
 為了完成其工作，組織中的人員會與組織內外的其他人員共同合作。這表示內容不會停留在防火牆後，它會漫遊在裝置、應用程式和服務的各處。而您希望內容以符合組織的商務及合規性原則的安全、受保護的方式漫遊。
 
