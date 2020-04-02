@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 當您建立保留標籤以保留 Microsoft 365 中的內容時，您可以選擇在保留期間結束時觸發處置檢查。
-ms.openlocfilehash: ee9ea34ee8527558af4d249364b539d3fa1f2fdd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 333e1a2f14c553cbd1d116e23795ba80175df125
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634971"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105660"
 ---
 # <a name="overview-of-disposition-reviews"></a>進行處置檢查的概覽
+
+>*[安全性 & 符合性的 Microsoft 365 授權指南](https://aka.ms/ComplianceSD)。*
 
 當內容到達保留期間結束時，可能會有幾個原因會讓您複查內容，以決定是否可以安全地刪除（「已處置」）。 例如，您可能需要：
   
@@ -51,9 +53,6 @@ ms.locfileid: "42634971"
     
 - 檢閱者可以查看擱置中或已完成的處理，並將該清單匯出為 .csv 檔案。
 
-> [!NOTE]
-> 處置評審需要 Office 365 企業版 E5 訂閱。
-  
 處置評審可將內容包含在 Exchange 信箱、SharePoint 網站、OneDrive 帳戶和 Office 365 群組中。 只有在檢閱者選擇永久刪除內容之後，才會刪除等候在這些位置中進行處置檢查的內容。
   
 ![安全性與合規性中心中的「處置」頁面](../media/Retention-Dispositions-v2-page.png)

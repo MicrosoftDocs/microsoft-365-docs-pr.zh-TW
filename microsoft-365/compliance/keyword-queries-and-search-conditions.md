@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '深入瞭解您可以使用安全性 & 合規性中心的內容搜尋工具，在 Exchange Online 信箱中，以及使用 SharePoint 或 OneDrive 進行商務網站的或中搜尋的電子郵件和檔案屬性。  '
-ms.openlocfilehash: aad4ff401ee66db2f88bf5476cfaab8fce4ad821
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 83cd28ba45de027cb899fa6d84369dae9dfc50fc
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634361"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105995"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>內容搜尋的關鍵字查詢和搜尋條件
 
@@ -292,7 +292,7 @@ ms.locfileid: "42634361"
   
  **搜尋查詢語法**
   
- `SensitiveType:"Credit Card Number(c:c)(lastmodifiedtime<2016-01-01)`
+ `SensitiveType:"Credit Card Number"(c:c)(lastmodifiedtime<2016-01-01)`
   
  **搜尋查詢邏輯**
   

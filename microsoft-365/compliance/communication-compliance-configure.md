@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 87be266fe9c117afdaf68b66db5d4cf4c7a3d94e
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 6d60693e8e67ba91341e01c80a213b75e821721b
+ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029889"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43100876"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>設定 Microsoft 365 中的通訊合規性
 
@@ -34,11 +34,23 @@ ms.locfileid: "43029889"
 
 ## <a name="before-you-begin"></a>開始之前
 
-在您開始進行通訊相容性之前，您應該先確認您的 Microsoft 365 訂閱。 通訊相容性原則中所含的使用者必須具備 Microsoft 365 E5 相容性授權、具有高級合規性附加元件的 Office 365 企業版 E3 授權，或是包含在 Office 365 企業版 E5 訂閱中，或包含在 Microsoft365 E5 訂閱。
+在您開始進行通訊相容性之前，您應該先確認您的[Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何附加元件。 若要存取及使用通訊相容性，您的組織必須具備下列其中一項訂閱或附加元件：
+
+- Microsoft 365 E5 訂閱（付費或試用版）
+- Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
+- Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」
+- Microsoft 365 A5 訂閱（付費或試用版）
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
+- Office 365 企業版 E5 訂閱（付費或試用版）
+- Office 365 企業版 E3 訂閱 + Office 365 Advanced 合規性附加元件
+
+通訊符合性原則中所含的使用者必須指派上述其中一個授權。
+
+>[!IMPORTANT]
+>Office 365 Advanced 合規性不再銷售為獨立訂閱。 當目前的訂閱到期時，客戶應轉換至上述其中一個訂閱，其中包含相同或其他的符合性功能。
 
 如果您沒有 Microsoft 365 企業版 E5 方案，且想要試用測試人員風險管理，您可以[將 Microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)至現有的 Office 365 訂閱，或[註冊 Microsoft 365 企業版 E5 的試用版](https://www.microsoft.com/microsoft-365/enterprise)。
-  
-完成下列步驟，以在您的 Microsoft 365 組織中設定與使用通訊合規性：
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步驟1（必要）：啟用通訊相容性的許可權
 

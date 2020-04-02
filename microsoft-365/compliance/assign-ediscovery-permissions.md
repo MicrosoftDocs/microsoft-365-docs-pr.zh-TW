@@ -1,5 +1,7 @@
 ---
-title: 在安全&合规中心分配电子数据展示权限
+title: 在安全性 & 規範中心指派 eDiscovery 許可權
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,142 +16,143 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: 使用安全&合规性中心分配执行电子数据展示相关任务所需的权限。
-ms.openlocfilehash: 5a9036908d97a62897b7d52b875a46008a7a337c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 使用安全性 & 合規性中心，指派執行 eDiscovery 相關工作所需的許可權。
+ms.openlocfilehash: 30d1a288236678c3daef0a9aaa134d49fea127af
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076685"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097206"
 ---
-# <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全&合规中心分配电子数据展示权限
+# <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全性 & 規範中心指派 eDiscovery 許可權
 
-如果您希望用户使用 Office 365 中安全&合规性中心中的任何与电子数据展示相关的工具，您必须为其分配适当的权限。 最简单的方法是在"安全&合规中心**的权限"页上**向此人添加相应的角色组。 本主题介绍使用安全&合规性中心执行电子数据展示和内容搜索相关任务所需的权限。 
+如果您想要讓使用者在 Office 365 或 Microsoft 365 規範中心的安全性 & 合規性中心使用任何 eDiscovery 相關工具，您必須指派適當的許可權。 若要執行此動作，最簡單的方法是在安全性 & 合規性中心的 [**許可權**] 頁面上，加入適當的角色群組。 本主題說明使用安全性 & 合規性中心執行 eDiscovery 和內容搜尋相關工作所需的許可權。 
   
-安全&合规中心中与电子数据展示相关的主要角色组**称为"电子数据展示管理器"。** 此角色组中有两个子组。 
+安全性 & 規範中心內主要 eDiscovery 相關角色群組稱為**EDiscovery 管理員**。 這個角色群組中有兩個子群組。 
   
-- **电子数据展示管理器**- 电子数据展示经理可以使用安全&合规性中心中的内容搜索工具搜索组织中的内容位置，并执行各种搜索相关操作，如预览和导出搜索结果。 成员还可以创建和管理电子数据展示案例、向案例添加和删除成员、创建案例保留和运行与案例关联的内容搜索，以及访问 Office 365 高级电子数据展示中的案例数据。  电子数据展示经理只能访问和管理他们创建的案件。 他们无法访问或管理由其他电子数据展示管理器创建的案件。 
+- **Ediscovery 管理員**-ediscovery 管理員可以使用安全性 & 合規性中心的內容搜尋工具來搜尋組織中的內容位置，並執行各種與搜尋相關的動作，例如預覽及匯出搜尋結果。 成員也可以建立及管理 eDiscovery 案例和高級 eDiscovery 案例、新增及移除成員至案例、建立案例保留、執行與案例相關聯的搜尋，以及存取案例資料。 eDiscovery 管理員只可存取及管理他們建立的案例。 他們無法存取或管理其他 eDiscovery 管理員所建立的案例。
     
-- **电子数据展示管理员**- 电子数据展示管理员是电子数据展示管理器角色组的成员，可以执行与电子数据展示管理器可以执行的相同内容搜索和案例管理相关任务。 此外，电子数据展示管理员可以： 
+- **Ediscovery 管理員**-Ediscovery 系統管理員是 ediscovery 管理員角色群組的成員，可執行 ediscovery 管理員可執行檔相同內容搜尋與案例管理相關工作。 此外，電子檔探索管理員也可以：
     
-  - 访问安全&合规中心**电子数据展示案例**页面上列出的所有案例。 
+  - 存取安全性 & 合規性中心的**ediscovery**和**Advanced ediscovery**頁面上列出的所有案例。 
 
-  - 访问"高级电子数据展示"中的案例数据，以用于组织中的任何案例。
+  - 針對組織中的任何案例，存取高級 eDiscovery 中的案例資料。
     
-  - 将自身添加为案例成员后，管理任何电子数据展示案例。
+  - 在將自我新增為案例成員後，管理任何 eDiscovery 案例。
   
-  有关组织中可能需要电子数据展示管理员的原因，[请参阅"详细信息"](#more-information)部分。 
+  請參閱[詳細資訊](#more-information)一節，瞭解您可能想要組織中的 EDiscovery 系統管理員的原因。
 
 > [!NOTE]
-> 要使用高级电子数据展示分析用户的数据，必须为该用户（数据的保管人）分配 Office 365 E5 许可证。 或者，可以为具有 Office 365 E1 或 E3 许可证的用户分配高级电子数据展示独立许可证。 分配给案例并使用高级电子数据展示分析数据的管理员和合规官不需要 E5 许可证。  
+> 若要使用高級電子檔探索來分析使用者的資料，則必須將 Office 365 E5 或 Microsoft E5 授權指派給使用者（資料的保管人）。 或者，具有 E1 或 E3 授權的使用者可以獲指派 E5 附加元件授權。 指派給案例的系統管理員、規範監察官或法務人員，以及使用高級 eDiscovery 收集、查看和分析資料不需要 E5 授權。 如需授權的相關資訊，請參閱[Microsoft 365 授權指南以取得安全性 & 符合性](https://aka.ms/complianceSD)。
   
 ## <a name="before-you-begin"></a>開始之前
 
-- 您必须是组织管理角色组的成员（或被分配角色管理角色），才能在"安全&合规性中心"中分配电子数据展示权限。
+- 您必須是「組織管理」角色群組的成員，或被指派角色管理角色，才能在安全性 & 規範中心內指派 eDiscovery 許可權。
     
-- 您可以使用"安全&合规性中心 PowerShell 中的[Add-RoleGroup 成员](https://technet.microsoft.com/en-us/library/dd638207%28v=exchg.160%29.aspx)cmdlet"将启用邮件的安全组添加为电子数据展示管理器角色组中电子数据展示管理器子组的成员。 但是，您无法将启用邮件的安全组添加到电子数据展示管理员子组。 有关详细信息，请参阅[详细信息](#more-information)部分。 
+- 您可以使用安全性 & 規範中心 PowerShell 中的[Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember)指令程式，將擁有郵件功能的安全性群組新增為 ediscovery 管理員角色群組中的 ediscovery 管理員子群組成員。 不過，您無法將擁有郵件功能的安全性群組新增至 eDiscovery Administrators 子群組。 如需詳細資訊，請參閱[More information](#more-information)一節。 
     
-## <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全&合规中心分配电子数据展示权限
+## <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全性 & 規範中心指派 eDiscovery 許可權
 
-1. 移至 [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
 2. 使用公司或學校帳戶登入 Office 365。
     
-3. 在安全和合规性中心的左侧窗格中，单击"**权限"，****然后单击"电子数据展示管理器**"旁边的复选框。
+3. 在安全性與合規性中心的左窗格中，選取 [**許可權**]，然後選取 [ **eDiscovery 管理員**] 旁邊的核取方塊。
     
-4. 在"**电子数据展示管理器"** 弹出窗口页上，根据要分配的"电子数据展示"权限执行以下操作之一。 
-    
-  - **使用户成为电子数据展示管理器****在"电子数据展示管理器"** 旁边，**单击"编辑"。** **在"选定的电子数据展示管理器"** 下，**单击"编辑"，**![然后单击"添加图标](media/ITPro-EAC-AddIcon.gif)**添加"。** 选择要作为电子数据展示管理器添加的用户（或用户），然后单击"**添加"。** 添加完用户后，单击"**完成"。** 然后，**在"编辑选择电子数据展示管理器"** 弹出窗口页上，**单击"保存"** 以将更改保存到电子数据展示管理器成员身份。 
-    
-  - **使用户成为电子数据展示管理员****在"电子数据展示"管理员**旁边，**单击"编辑"。** **在"选定的电子数据展示管理员"** 下，**单击"编辑"，**![然后单击"添加图标](media/ITPro-EAC-AddIcon.gif)**添加"。** 选择要添加为电子数据展示管理员的用户（或用户），然后单击"**添加"。** 添加完用户后，单击"**完成"。** 然后，**在"编辑选择电子数据展示管理员"** 弹出窗口页上，**单击"保存"** 以将更改保存到电子数据展示管理员成员身份。 
-    
-> [!NOTE]
-> 您还可以使用**Add-eDiscoveryCaseAdmin** cmdlet 使用户成为电子数据展示管理员。 但是，必须先为用户分配案例管理角色，然后才能使用此 cmdlet 使其成为电子数据展示管理员。 有关详细信息，请参阅[添加电子数据展示案例管理员](https://go.microsoft.com/fwlink/p/?LinkID=798217)。 
+4. 在 [ **EDiscovery 管理員**飛出] 頁面上，根據您想要指派的 eDiscovery 許可權，執行下列其中一項作業。 
   
-在"安全&合规性中心**的权限"** 页上，还可以向用户分配与电子数据展示相关的权限，将其添加到合规性管理员、组织管理和审阅者角色组。 有关分配给每个角色组的与电子数据展示相关的 RBAC 角色的说明，请参阅[与电子数据展示相关的 RBAC 角色](#rbac-roles-related-to-ediscovery)部分。 
+    **讓使用者成為 EDiscovery 管理員：** 在 [ **EDiscovery 管理員**] 旁，選取 [**編輯**]。 在 [**選擇 ediscovery 管理員**] 區段中，選取 [**選擇 ediscovery 管理員**超連結] ![，然後](../media/ITPro-EAC-AddIcon.gif)選取 [新增圖示] [**新增**]。 選取您要新增為 eDiscovery 管理員的使用者（或使用者），然後選取 [**新增**]。 完成新增使用者的作業後，請選取 [**完成**]。 然後，在 [**編輯選擇 EDiscovery 管理員**飛出] 頁面上，選取 [**儲存**]，將變更儲存至 eDiscovery 管理員成員資格。
+  
+    **讓使用者成為 EDiscovery 管理員：** 在 [ **EDiscovery 管理員**] 旁，選取 [**編輯**]。 在 [**選擇 ediscovery 管理員**] 區段的 **[ediscovery Administrators**] 底下，選取 **[選擇 ediscovery 系統管理員**]， ![選取 [](../media/ITPro-EAC-AddIcon.gif) **編輯**]，然後選取 [新增圖示] [**新增**]。 選取您要新增為**EDiscovery 管理員**的使用者（或使用者），然後再**新增**。 完成新增使用者的作業後，請選取 [**完成**]。 然後，在 [**編輯選擇 EDiscovery 管理員**飛出] 頁面上，選取 [**儲存**]，將變更儲存至 eDiscovery 管理員成員資格。
+      
+> [!NOTE]
+> 您也可以使用**eDiscoveryCaseAdmin** Cmdlet，讓使用者成為 EDiscovery 系統管理員。 不過，在您可以使用此 Cmdlet 將其設為 eDiscovery 系統管理員之前，必須將該使用者指派為案例管理角色。 如需詳細資訊，請參閱[Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217)。 
+  
+在 [安全性 & 規範中心] 的 [**許可權**] 頁面上，您也可以將使用者新增至合規性管理員、組織管理和檢閱者角色群組，將其指派給使用者 eDiscovery 相關的許可權。 如需指派給每個角色群組的 eDiscovery 相關 RBAC 角色的說明，請參閱 eDiscovery 各節[相關的 rbac 角色](#rbac-roles-related-to-ediscovery)。 
 
-## <a name="rbac-roles-related-to-ediscovery"></a>与电子数据展示相关的 RBAC 角色
+## <a name="rbac-roles-related-to-ediscovery"></a>EDiscovery 相關的 RBAC 角色
 
-下表列出了安全&合规性中心中与电子数据展示相关的 RBAC 角色，并指示默认情况下为每个角色分配到的内置角色组。 
+下表列出安全性 & 規範中心內的 eDiscovery 相關 RBAC 角色，並指出預設會指派每個角色的內建角色群組。 
     
-|**Role**|**合规性管理员**|**电子数据展示管理器&管理员**|**組織管理**|**檢閱者**|
+|**角色**|**合規性系統管理員**|**eDiscovery 管理員 & 管理員**|**組織管理**|**檢閱者**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|案例管理 <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|合規性搜尋 <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|匯出 <br/> | <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|保持 <br/>  |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|預覽 <br/>  | <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|檢閱 <br/>  | <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
-|RMS 解密 <br/>  ||![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
-|搜索和清除 <br/> | <br/> | <br/> |![核取記號](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
+|案例管理 <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|合規性搜尋 <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|匯出 <br/> | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
+|Hold <br/>  |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|預覽 <br/>  | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
+|Review <br/>  | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
+|RMS 解密 <br/>  ||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
+|搜尋和清除 <br/> | <br/> | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
 ||||
   
-以下各节介绍上表中列出的每个与电子数据展示相关的 RBAC 角色。
+下列各節將說明上表列出的每個 eDiscovery 相關 RBAC 角色。
 
 ### <a name="case-management"></a>案例管理
 
-此角色允许用户在安全&合规中心创建、编辑、删除和控制对电子数据展示案例的访问。 有关详细信息，请参阅[安全&合规中心中的"管理电子数据展示"案例。](manage-ediscovery-cases.md) 如前所述，必须先为用户分配案例管理角色，然后才能使用**Add-eDiscoveryCaseAdmin** cmdlet 使用户成为电子数据展示管理员。 
+此角色可讓使用者在安全性 & 規範中心內建立、編輯、刪除和控制 eDiscovery 和高級 eDiscovery 案例的存取。 如先前所述，必須先將案例管理角色指派給使用者，才能使用**eDiscoveryCaseAdmin**指令程式，讓他們成為 eDiscovery 管理員。 
 
 ### <a name="compliance-search"></a>合規性搜尋
 
-此角色允许用户在"安全&合规性中心"中运行内容搜索工具，以搜索邮箱和公用文件夹、SharePoint 联机网站、企业网站的 OneDrive、业务对话的 Skype、Office 365 组和 Microsoft 团队。 此角色允许用户获取搜索结果的估计值并创建导出报告，但需要其他角色才能启动内容搜索操作，如预览、导出或删除搜索结果。
+此角色可讓使用者在安全性 & 合規性中心內執行「內容搜尋」工具，以搜尋信箱和公用資料夾、SharePoint 線上網站 OneDrive、商務用 Skype、商務用 Skype 交談、Office 365 群組和 Microsoft 團隊，以及 Yammer 群組。 此角色可讓使用者取得搜尋結果的預估，並建立匯出報告，但需要其他角色才能啟動內容搜尋動作，例如預覽、匯出或刪除搜尋結果。
 
-请注意，分配了符合性搜索角色但没有预览角色的用户可以预览由分配预览角色的用户启动预览操作的搜索结果。 没有预览角色的用户可以在创建初始预览操作后最多 2 周内预览结果。
+獲指派符合性搜尋角色但沒有「預覽」角色的使用者可以預覽已被指派「預覽」角色的使用者在其中啟動預覽動作的搜尋結果。 沒有「預覽」角色的使用者可以在建立初始預覽動作後的兩周內預覽結果。
 
-同样，分配了符合性搜索角色但没有导出角色的用户可以下载由分配导出角色的用户发起的导出操作的搜索结果。 没有导出角色的用户可以在创建初始导出操作后下载最多 2 周的搜索结果。 之后，除非具有"导出"角色的人员重新启动导出，否则他们将无法下载结果。
+同樣地，已獲指派符合性搜尋角色，但沒有匯出角色的使用者，可以下載已獲指派「匯出」角色之使用者在其中啟動匯出動作的搜尋結果。 不含「匯出」角色的使用者可以在建立初始匯出動作後，下載兩周的搜尋結果。 之後，除非使用「匯出」角色的人重新開機匯出，否則他們無法下載結果。
 
-有关详细信息，请参阅[Office 365 中的内容搜索](content-search.md)。 
+如需詳細資訊，請參閱[內容搜尋 In Office 365](content-search.md)。 
 
 ### <a name="export"></a>匯出
 
-该角色允许用户将内容搜索的结果导出到本地计算机。 它还允许他们准备搜索结果以在高级电子数据展示中进行分析。 
+角色可讓使用者將內容搜尋的結果匯出至本機電腦。 它也可讓他們在 Advanced eDiscovery 中準備用於分析的搜尋結果。 
 
-有关导出搜索结果的详细信息，请参阅[从"安全&合规性中心导出搜索结果"。](export-search-results.md)
+如需匯出搜尋結果的詳細資訊，請參閱[從安全性 & 合規性中心匯出搜尋結果](export-search-results.md)。
 
-### <a name="hold"></a>保持
+### <a name="hold"></a>Hold
 
-此角色允许用户将内容放在邮箱、公用文件夹、网站、Skype 业务对话和 Office 365 组处于保留状态。 当内容处于保留状态时，内容所有者仍可以修改或删除原始内容，但内容将保留，直到删除保留或保留持续时间到期。 
+此角色可讓使用者將內容保留在信箱、公用資料夾、網站、商務用 Skype 交談和 Office 365 群組中。 內容處於保留狀態時，內容擁有者仍可修改或刪除原始內容，但是會保留內容直到移除保留或保留期間到期為止。 
 
-有关保留的详细信息，请参阅：
+如需有關保留的詳細資訊，請參閱：
 
-- [电子数据展示案例](ediscovery-cases.md) 
-- [保留原則概觀](retention-policies.md)
+- [電子文件探索案例](ediscovery-cases.md) 
+
+- [進階 eDiscovery](add-custodians-to-case.md#step-4-place-custodians-on-hold)
 
 ### <a name="preview"></a>預覽
 
-此角色允许用户查看从内容搜索返回的项目的列表。 他们还能够打开和查看列表中的每个项目以查看其内容。
+此角色可讓使用者查看內容搜尋所傳回的專案清單。 他們也可以開啟並查看清單中的每個專案，以查看其內容。
 
-### <a name="review"></a>檢閱
+### <a name="review"></a>Review
 
-此角色允许用户访问 Office 365 高级电子数据展示中的案例数据。 此角色的主要目的是向用户提供对高级电子数据展示的访问权限。 分配此角色的用户可以查看并打开他们所&安全&合规中心中的电子数据展示页面上的案例列表。 用户在安全&合规中心访问案例后，可以**单击"切换到高级电子数据展示"** 来访问和分析高级电子数据展示中的案例数据。 此角色不允许用户预览与案例关联的内容搜索结果或执行其他内容搜索或案例管理任务。
+此角色可讓使用者在[高級 ediscovery （古典）](office-365-advanced-ediscovery.md) （也稱為「*高級 ediscovery v1*」）中存取案例資料。 此角色的主要目的是讓使用者能夠存取高級 eDiscovery （古典）。 獲指派此角色的使用者可以在其成員的安全性 & 規範中心內，查看並開啟「 **eDiscovery** 」頁面上的案例清單。 使用者在安全性 & 規範中心存取案例後，可選取 [**切換至高級 ediscovery** ] 以存取及分析 advanced ediscovery （古典）中的案例資料。 此角色不允許使用者預覽與案例相關聯的內容搜尋結果，或是進行其他內容搜尋或案例管理工作。
+
+> [!NOTE]
+> 此時，已被指派「審閱」角色（或「檢閱者」角色群組的成員）的使用者無法存取 Microsoft 365 （也稱為「*高級 ediscovery v2*」）中的「[高級 ediscovery ediscovery」中](overview-ediscovery-20.md)的資料。 若要在高級 eDiscovery v2 中新增成員至案例，讓他們可以查看案例資料，使用者必須是 eDiscovery 管理員角色群組的成員。
 
 ### <a name="rms-decrypt"></a>RMS 解密
 
-此角色允许用户在导出搜索结果或准备搜索结果以在高级电子数据展示中进行分析时解密 RMS 加密的电子邮件。 有关在导出期间解密搜索结果的详细信息，请参阅[导出内容搜索结果](export-search-results.md)。
+當您匯出搜尋結果或在高級 eDiscovery 中準備搜尋結果以進行分析時，此角色可讓使用者解密受版權保護的電子郵件。 如需匯出時對搜尋結果進行解密的詳細資訊，請參閱[匯出內容搜尋結果](export-search-results.md)。
 
-### <a name="search-and-purge"></a>搜索和清除
+### <a name="search-and-purge"></a>搜尋和清除
 
-此角色允许用户执行批量删除与内容搜索条件匹配的数据。 有关详细信息，请参阅[搜索和删除 Office 365 组织中的电子邮件。](search-for-and-delete-messages-in-your-organization.md) 
-
+此角色可讓使用者批量移除符合內容搜尋準則的資料。 如需詳細資訊，請參閱[在 Office 365 組織中搜尋並刪除電子郵件訊息](search-for-and-delete-messages-in-your-organization.md)。 
 
 ## <a name="more-information"></a>詳細資訊
 
-- **為什麼要建立 eDiscovery 管理員？** 如前所述，电子数据展示管理员是电子数据展示管理器角色组的成员，可以查看和访问组织中的所有电子数据展示案例。 这种访问所有电子数据展示案例的能力有两个重要目的： 
+- **為什麼要建立 eDiscovery 管理員？** 如先前所述，eDiscovery 系統管理員是 eDiscovery 管理員角色群組的成員，可在您的組織中查看和存取所有 eDiscovery 案例。 存取所有 eDiscovery 案例的能力有兩個重要的目的： 
     
-  - 如果身為 eDiscovery 案例唯一成員的人員離開您的組織，沒有任何人 (包括「組織管理」角色群組的成員或「eDiscovery 管理員」角色群組的其他成員) 可以存取該 eDiscovery 案例，因為他們不是案例的成員。 在此情況下，完全無法存取案例的資料。 但是，由于电子数据展示管理员可以访问组织中的所有电子数据展示案例，因此他们可以查看案例并将自己或其他电子数据展示管理器添加为案例的成员。
+  - 如果身為 eDiscovery 案例唯一成員的人員離開您的組織，沒有任何人 (包括「組織管理」角色群組的成員或「eDiscovery 管理員」角色群組的其他成員) 可以存取該 eDiscovery 案例，因為他們不是案例的成員。 在此情況下，完全無法存取案例的資料。 不過，因為 eDiscovery 管理員可以存取組織中的所有 eDiscovery 案例，所以他們可以查看案例，並將自己或其他 eDiscovery 管理員新增為案例的成員。
     
-  - 由于电子数据展示管理员可以查看和访问所有电子数据展示案例，因此他们可以审核和监督所有案例和相关合规性搜索。 这有助于防止任何滥用合规性搜索或电子数据展示案例的情况。 由于电子数据展示管理员可以访问合规性搜索结果中的潜在敏感信息，因此应限制电子数据展示管理员的人数。
+  - 因為 eDiscovery 管理員可以查看和存取所有的 eDiscovery 和高級 eDiscovery 案例，所以他們可以審核和監控所有案例和相關聯的符合性搜尋。 這可協助避免任何濫用法規遵從性搜尋或 eDiscovery 案例。 而且，由於 eDiscovery 管理員可以存取符合性搜尋結果中可能的敏感資訊，因此您應該限制 eDiscovery 系統管理員的人數。
     
-    此外，电子数据展示管理员会自动添加为高级电子数据展示中的管理员。 这意味着人员必须是电子数据展示管理员才能在高级电子数据展示中执行管理任务，例如设置用户、创建案例和将数据导入到案例中。
+- **我可以將群組新增為 eDiscovery 管理員角色群組的成員嗎？** 如先前所述，您可以使用安全性 & 規範中心 PowerShell 中的**Add-RoleGroupMember** Cmdlet，將擁有郵件功能的安全性群組新增為 ediscovery 管理員角色群組中的 ediscovery 管理員子群組成員。 例如，您可以執行下列命令，將擁有郵件功能的安全性群組新增至 eDiscovery 管理員角色群組。 
     
-- **我可以将组添加为电子数据展示管理器角色组的成员吗？** 如前所述，您可以使用安全&合规中心 PowerShell 中的**Add-RoleGroup 成员**cmdlet 在电子数据展示管理器角色组中添加已启用邮件的安全组作为电子数据展示管理器子组的成员。 例如，可以运行以下命令，将启用邮件的安全组添加到电子数据展示管理器角色组。 
-    
-  ```
+  ```powershell
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    请注意，Exchange 通讯组或 Office 365 组不受支持。 您必须使用已启用邮件的安全组，可以使用 命令` New-DistributionGroup -Type Security `在 Exchange 联机 PowerShell 中创建该安全组。 您还可以在 Exchange 管理中心或 Microsoft 365 管理中心创建已启用邮件的安全组（和添加成员）。 请注意，创建该安全后，最多可能需要 60 分钟才能将启用邮件的新安全性添加到电子数据展示管理器角色组中。 
+    不支援 Exchange 通訊群組和 Office 365 群組。 您必須使用擁有郵件功能的安全性群組，您可以使用`New-DistributionGroup -Type Security`命令在 Exchange Online PowerShell 中建立。 您也可以在 Exchange 系統管理中心或 Microsoft 365 系統管理中心中，建立已啟用郵件功能的安全性群組（及新增成員）。 在您建立新的已啟用郵件功能的安全性後，可能需要長達60分鐘，才可將其新增至 eDiscovery 管理員角色群組。 
     
-    此外，如前所述，您无法使用安全&合规中心 PowerShell 中的**Add-eDiscoveryCaseadmin** cmdlet，使启用邮件的安全组成为电子数据展示管理员。 您只能将单个用户添加为电子数据展示管理员。 
+    也如先前所述，您無法使用安全性 & 合規性中心 PowerShell 中的**載入 eDiscoveryCaseAdmin**指令程式，讓 eDiscovery 管理員成為啟用郵件功能的安全性群組。 您只可以將個別使用者新增為 eDiscovery 管理員。 
     
-    请注意，您也不能将启用邮件的安全组添加为案例的成员。
+    您也無法將擁有郵件功能的安全性群組新增為案例的成員。

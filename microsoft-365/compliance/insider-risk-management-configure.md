@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4b8bd0f8d540434410d9ebc2365789a669f455e1
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: e4f0f90ff7089ba72f7e8b452842d670d45a49f8
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634771"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097187"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用「內幕風險管理」
 
@@ -30,12 +30,14 @@ ms.locfileid: "42634771"
 
 ## <a name="before-you-begin"></a>開始之前
 
-開始使用「內幕風險管理」之前，您應該先確認您的[Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。 若要存取及使用「有問必答風險管理」，您的組織必須具備下列其中一項訂閱：
+開始使用「內幕風險管理」之前，您應該先確認您的[Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何附加元件。 若要存取及使用「內幕風險管理」，您的組織必須具備下列其中一項訂閱或附加元件：
 
 - Microsoft 365 E5 訂閱（付費或試用版）
-- Microsoft 365 Enterprise E3 訂閱與[Microsoft E5 合規性附加](https://signup.microsoft.com/signup/?offerid=57806d24-4357-4eff-b0a3-4054ebdf2abe&DL=INFORMATION_PROTECTION_COMPLIANCE&ali=1)元件
+- Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
+- Microsoft 365 A5 訂閱（付費或試用版）
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
 
-測試人員風險管理原則中包含的使用者必須擁有 Microsoft 365 E5 合規性授權或包含在 Microsoft 365 E5 訂閱中。
+包含在內幕風險管理原則中的使用者必須被指派上述其中一個授權。
 
 如果您沒有 Microsoft 365 企業版 E5 方案，且想要試用測試人員風險管理，您可以[將 Microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)至現有的 Office 365 訂閱，或[註冊 Microsoft 365 企業版 E5 的試用版](https://www.microsoft.com/microsoft-365/enterprise)。
 
@@ -56,7 +58,7 @@ ms.locfileid: "42634771"
 
 完成下列步驟，以將使用者新增至「內部使用者風險管理」角色群組：
 
-1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://protection.office.com/permissions](https://protection.office.com/permissions)。
+1. 在 Microsoft [https://protection.office.com/permissions](https://protection.office.com/permissions) 365 組織中登入使用系統管理員帳戶的認證。 "" "" "" ""
 
 2. 在 Microsoft Office 365 安全性與合規合規性中心，移至 **[權限]**。 選取連結，以在 Office 365 中檢視及管理角色。
 
@@ -87,17 +89,17 @@ ms.locfileid: "42634771"
 如需為貴組織設定 Microsoft 365 HR 連接器的逐步指示，請參閱[設定連接器以匯入 HR 資料](import-hr-data.md)主題。 設定 HR 連接器後，請返回這些設定步驟。
 
 >[!IMPORTANT]
->如果您使用「*盜竊員工資料竊取*」範本來設定原則，則必須設定 HR 連接器，以使用原則範本的完整信號偵測功能。 如果您為貴組織設定多個 HR 連接器，測試人員風險管理將會自動從所有 HR 連接器提取指標。
+>如果您使用「 *emplo'ee 資料竊取*」範本設定 p'licy，則需要將 HR 連接器設定為使用原則範本的完整信號偵測功能。 如果您為貴組織設定多個 HR 連接器，測試人員風險管理將會自動從所有 HR 連接器提取指標。
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>設定資料遺失防護（DLP）原則
 
-測試人員風險管理支援使用 DLP 原則，以協助您識別蓄意或意外將敏感性資訊暴露給不適當的對象。 使用*資料外洩*範本設定測試人員風險管理原則時，您必須將特定 DLP 原則指派給原則。 此原則可協助推動敏感性資訊的警示指標，且是在組織中設定完整風險管理覆蓋範圍的重要部分。
+有問必答風險 man'gement 支援使用 DLP 原則，協助識別敏感資訊的故意或意外暴露給不需要的各方。 使用*資料外洩*範本設定測試人員風險管理原則時，您必須將特定 DLP 原則指派給原則。 此原則可協助推動敏感性資訊的警示指標，且是在組織中設定完整風險管理覆蓋範圍的重要部分。
 
-如需為貴組織設定 DLP 原則的逐步指示，請參閱[建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)主題。 設定 DLP 原則後，請返回這些設定步驟。
+如需為貴組織設定 DLP 原則的逐步指示，請參閱[建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)主題。 在您設定 DLP 原則之後，請回到下列設定的 config "ration 步驟"。 "" "" "" "" ""
 
 >[!IMPORTANT]
 >如果您使用*資料洩漏*範本來設定原則，則必須至少設定一個 DLP 原則，才能使用原則範本的完整信號偵測功能。 如果您為貴組織設定多個 DLP 原則，您必須為每個 DLP 原則指派測試人員風險管理原則。
-
+""""""""
 ## <a name="step-4-required-configure-insider-risk-settings"></a>步驟4（必要）：設定有問必答風險設定
 
 「[內部使用者風險」設定](insider-risk-management-policies.md#policy-settings)會套用至所有的內幕風險管理原則，不論您在建立原則時所選擇的範本為何。 設定是使用「**內幕風險設定**」控制項設定，其位於所有「內幕人員風險管理」索引標籤的頂端。 這些設定會控制隱私權、指示器、監控視窗和智慧偵測。
