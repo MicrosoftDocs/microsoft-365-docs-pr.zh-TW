@@ -1,6 +1,6 @@
 - name: Microsoft 365 合規性
   href: index.yml
-- name: 入門
+- name: 開始使用
   items:
     - name: 合規性中心的新功能
       href: whats-new.md
@@ -495,14 +495,14 @@
               href: manage-load-sets-in-advanced-ediscovery.md
         - name: 檢閱案例資料
           items:
+            - name: 使用審閱集合儀表板（預覽）
+              href: advanced-ediscovery-dashboard.md
             - name: 檢視檢閱集中的文件
               href: view-documents-in-review-set.md
             - name: 查詢檢視集中的資料
               href: review-set-search.md
             - name: 標記檢閱集中的文件
               href: tagging-documents.md
-            - name: 使用審閱集合儀表板（預覽）
-              href: advanced-ediscovery-dashboard.md
         - name: 分析案例資料
           href: analyzing-data-in-review-set.md
           items:
