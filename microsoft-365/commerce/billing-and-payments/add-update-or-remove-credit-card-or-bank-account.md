@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: 瞭解如何在 Microsoft 365 系統管理中心中管理您的支付方式。
-ms.openlocfilehash: 47635f5fe5ffd37fbd33c258ab1df729dfc13399
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: be03d4b779c0592d47b23c4cf1fd491b7c8f455e
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952003"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106045"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>新增、更新或移除支付方式
 
@@ -234,7 +234,7 @@ ms.locfileid: "42952003"
   
 4. 視需要更新您的信用卡或銀行帳戶資訊 (信用卡或銀行帳戶上的姓名、帳單地址、 [電話號碼] 或 [到期日] （如有需要），然後選取 [**提交**]。
 
-5. 確認訊息會隨即顯示。 如果沒有，請參閱[疑難排解信用卡或銀行帳戶](#troubleshooting-credit-cards-and-bank-accounts)。
+5. 確認訊息會隨即顯示。 如果不是，請參閱本文稍後的「疑難排解信用卡和銀行帳戶」。
 
     ![確認訊息：「成功更新您的支付方式」。](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
@@ -262,7 +262,7 @@ ms.locfileid: "42952003"
   
 4. 視需要更新您的信用卡或銀行帳戶資訊 (信用卡或銀行帳戶上的姓名、帳單地址、 [電話號碼] 或 [到期日] （如有需要），然後選取 [**提交**]。
 
-5. 確認訊息會隨即顯示。 如果沒有，請參閱[疑難排解信用卡或銀行帳戶](#troubleshooting-credit-cards-and-bank-accounts)。
+5. 確認訊息會隨即顯示。 如果不是，請參閱本文稍後的「疑難排解信用卡和銀行帳戶」。
 
     ![確認訊息：「成功更新您的支付方式」。](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 

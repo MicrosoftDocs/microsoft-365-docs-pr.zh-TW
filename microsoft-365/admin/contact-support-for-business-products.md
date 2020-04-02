@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: 使用您的地區或區域所列電話號碼，或提交線上服務要求，或造訪 Microsoft 網上商店以取得技術和帳單支援。
 feedback_system: None
-ms.openlocfilehash: 7fdd2f1232fe20d55ef54f72333d35ff6de8d41e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b77f08b8e0734cfa7629a5c5d61f22d63ef6328c
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352944"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106057"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>連絡商務產品的客戶支援 - 系統管理說明
 
@@ -95,7 +95,7 @@ ms.locfileid: "42352944"
 
 ### <a name="community-and-self-service-support-options"></a>社群和自助支援選項
 
-自助支援適用於所有由 21Vianet 運作的 Office 365 使用者，且包括疑難排解工具和影片、說明文章和影片，以及 [Office 365 社群](https://go.microsoft.com/fwlink/p/?linkid=842838)中的論壇和 Wiki。如需更多自助資源，請參閱[了解由 21Vianet 運作的 Office 365](/services-in-china/services-in-china.md)。
+自助支援適用於所有由 21Vianet 運作的 Office 365 使用者，且包括疑難排解工具和影片、說明文章和影片，以及 [Office 365 社群](https://go.microsoft.com/fwlink/p/?linkid=842838)中的論壇和 Wiki。如需更多自助資源，請參閱[了解由 21Vianet 運作的 Office 365](services-in-china/services-in-china.md)。
 
 ### <a name="pre-sales-support"></a>售前支援
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供 Microsoft 365 for enterprise 的元件、方案及部署路徑的簡介。
-ms.openlocfilehash: 1e902d1ca0eb80a7588a9b4060a41183f5a5db24
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: c66fb5e4d8cd0d24ec20a50ca2ead3f3b9e0851d
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053092"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113514"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -72,9 +72,9 @@ ms.locfileid: "43053092"
 若要下載此海報的副本，請按一下[這裡](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/m365-poster/Microsoft365Enterprise.pdf)。
 
 
-## <a name="transition-your-entire-organization"></a>轉換整個組織
+## <a name="transition-your-entire-organization"></a>轉換您的整個組織
 
-若要深入瞭解如何將整個組織移至 Microsoft 365 for enterprise 中的產品和服務，請下載[轉換海報](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
+若要進一步瞭解如何將整個組織移至 Microsoft 365 for enterprise 中的產品和服務，請參閱[轉換海報](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
 
 [![轉換至 Microsoft 365 海報的影像](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
