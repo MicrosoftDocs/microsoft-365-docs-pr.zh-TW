@@ -1,7 +1,9 @@
 ---
 title: Office 365 客戶加密箱要求
-ms.author: robmazz
-author: robmazz
+f1.keywords:
+- NOCSH
+ms.author: krowley
+author: kccross
 manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
@@ -14,278 +16,265 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解客户密码箱请求，这些请求允许您控制 Microsoft 支持工程师在遇到问题时如何访问您的数据。
-ms.openlocfilehash: 2cbf19ad3c648373704c379794e24590fcb6d290
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 深入瞭解客戶密碼箱要求，可讓您控制當您遇到問題時，Microsoft 支援工程師可如何存取您的資料。
+ms.openlocfilehash: 254479f7c07b74abf04802a7e2e591a2ac375e59
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076423"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113560"
 ---
-# <a name="customer-lockbox-in-office-365"></a>Office 365 中的客户密码箱
+# <a name="customer-lockbox-in-office-365"></a>Office 365 中的客戶加密箱
 
-> [!NOTE]
-> 本文提供当前仅适用于具有 Microsoft 365 E5、Office 365 E5、信息保护和合规性或高级合规性加载项订阅的组织的功能的部署和配置指南。
+本文提供客戶加密箱的部署和設定指導。 客戶加密箱支援存取 Exchange Online 中的資料、SharePoint 線上和商務 OneDrive 的要求。 若要建議支援其他 Office 365 服務，請提交[office 365 UserVoice](https://office365.uservoice.com/)的要求。
 
-客户密码箱可确保 Microsoft 在未经您明确批准的情况下无法访问您的内容以执行服务操作。 客户密码箱将您带入审批工作流，以便请求访问您的内容。
+若要查看授權您的使用者受益于 Microsoft 365 規範服務（包含這項服務）2020的選項，請參閱 [microsoft 365 授權指南以取得安全性 & 合規性](https://aka.ms/ComplianceSD)。
 
-有时，Microsoft 工程师会帮助排除故障并修复支持过程中的客户报告的问题。 通常，问题通过 Microsoft 为其服务准备的大量遥测和调试工具得到解决。 但是，在某些情况下，需要 Microsoft 工程师访问客户内容以确定根本原因并解决问题。 客户密码箱要求工程师请求客户访问，作为审批工作流的最后一步。 这为组织提供了批准或拒绝这些请求的选项，并为客户提供直接访问控制。
+客戶加密箱可確保 Microsoft 無法存取您的內容，即可在未明確核准的情況下執行服務作業。 客戶加密箱會將您帶入核准工作流程，以取得存取內容的要求。
 
-### <a name="customer-lockbox-overview-video"></a>客户密码箱概述视频
+在某些情況下，Microsoft 工程師會協助疑難排解並修正支援流程中的客戶報告問題。 通常，您可以透過 Microsoft 已針對其服務所具備的大量遙測和調試工具，修正問題。 不過，某些案例需要 Microsoft 工程師存取客戶內容，以判斷根本原因並修正問題。 客戶加密箱會要求工程師在核准工作流程的最後一個步驟向客戶要求存取。 這可讓組織選擇核准或拒絕這些要求，並為客戶提供直接存取控制。
+
+### <a name="customer-lockbox-overview-video"></a>客戶加密箱概述影片
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/8fecf10b-1f03-4849-8b67-76d3d2a43f26?autoplay=false]
 
-> [!NOTE]
-> 客户密码箱支持访问 Exchange 在线、共享点联机和 OneDrive 中的数据的请求。 要推荐对其他 Office 365 服务的支持，请在[Office 365 用户语音](https://office365.uservoice.com/)中提交请求。
+## <a name="customer-lockbox-workflow"></a>客戶加密箱工作流程
 
-## <a name="customer-lockbox-workflow"></a>客户密码箱工作流
+當 Microsoft 工程師初始化客戶加密箱要求時，下列步驟會概括一般的工作流程：
 
-以下步骤概述了由 Microsoft 工程师启动客户密码箱请求时的典型工作流：
+1. 組織中的某人遇到 Office 365 信箱的問題。
 
-1. 组织中的某个人对其 Office 365 邮箱有问题。
+2. 在使用者診斷問題，但無法修正時，他們會以 Microsoft 支援服務開啟支援要求。
 
-2. 用户解决问题但无法修复后，他们将使用 Microsoft 支持打开支持请求。
+3. Microsoft 支援工程師會檢查服務要求，並決定是否需要存取組織的承租人，以在 Exchange Online 中修復問題。
 
-3. 支持工程师审核服务请求并确定需要访问客户的 Exchange 在线内容来修复问题。
+4. Microsoft 支援工程師會登入客戶加密箱要求工具，並進行資料存取要求，其中包含組織的租使用者名稱、服務要求號碼，以及工程師需要存取資料的預估時間。
 
-4. 支持工程师登录到客户密码箱请求工具，并通过指定客户的租户名称、服务请求编号以及需要访问数据的估计持续时间来发出数据访问请求。
+5. Microsoft 支援管理員核准要求後，客戶加密箱會傳送組織中指定的核准者的電子郵件通知，告知 Microsoft 的未決存取要求。
 
-5. 在 Microsoft 支持经理批准请求后，客户密码箱会向客户组织的指定审批人发送有关 Microsoft 挂起的访问请求的电子邮件通知。
+    ![客戶加密箱電子郵件通知範例](../media/CustomerLockbox1.png)
 
-    ![客户密码箱电子邮件通知示例](media/CustomerLockbox1.png)
+   在 Microsoft 365 系統管理中心中指派[客戶密碼箱存取核准者](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)系統管理員角色的任何人，都可以核准客戶加密箱要求。
 
-   > [!NOTE]
-   > 在 Microsoft 365 管理中心中分配了[客户密码箱访问审批者管理员](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)角色的任何人都可以批准客户密码箱请求。
+6. 核准者會登入 Microsoft 365 系統管理中心，並核准要求。 此步驟可讓您搜尋 Office 365 審計記錄檔，以觸發建立可供使用的審計記錄。 如需詳細資訊，請參閱[審核客戶密碼箱要求](#auditing-customer-lockbox-requests)。
 
-7. 审批者登录到 Microsoft 365 管理中心并批准该请求。 此步骤通过搜索 Office 365 审核日志触发可用的审核记录的创建。 有关详细信息，请参阅[审核客户密码箱请求](#auditing-customer-lockbox-requests)部分。
-
-   如果客户拒绝该请求或在 12 小时内未批准请求，则请求将过期，并且不授予 Microsoft 工程师访问权限。
+   如果客戶拒絕要求，或未在12小時內核准要求，要求就會到期，而且不會授與 Microsoft 工程師的存取權。
 
    > [!IMPORTANT]
-   > Microsoft 在要求您登录到 Office 365 的客户密码箱电子邮件通知中不包含任何链接。
+   > Microsoft 不會在客戶密碼箱的電子郵件通知中包含任何需要您登入 Office 365 的連結。
 
-8. 客户批准请求后，Microsoft 工程师会收到批准消息，登录到 Exchange Online 并修复客户的问题。 Microsoft 工程师具有请求的持续时间来修复问题，之后将自动撤消访问权限。
-
-> [!NOTE]
-> Microsoft 工程师执行的所有操作都记录在 Office 365 审核日志中。 您可以搜索和查看这些审核记录，并可以搜索和查看。
-
-## <a name="turn-customer-lockbox-requests-on-or-off"></a>打开或关闭客户密码箱请求
-
-Office 365 管理员可以在 Microsoft 365 管理中心打开客户密码箱控件。 启用客户锁定盒后，Microsoft 需要获得组织的批准，然后才能访问其任何内容。
+7. 組織中的核准者核准要求之後，Microsoft 工程師會收到核准訊息，登入 Exchange Online 中的租使用者，並修正客戶的問題。 Microsoft 工程師已要求期間修正問題，之後將自動撤銷存取權。
 
 > [!NOTE]
-> 要执行以下过程，您必须是 Microsoft 365 或 Office 365 组织的全局管理员，或者被分配客户**密码箱访问审批者**管理员角色。
+> Microsoft 工程師所執行的所有動作都會記錄在 Office 365 審核記錄中。 您可以搜尋並複查這些審計記錄。
 
-1. 转到[https://admin.microsoft.com](https://admin.microsoft.com)并登录您的工作或学校帐户。
+## <a name="turn-customer-lockbox-requests-on-or-off"></a>開啟或關閉客戶加密箱要求
 
-2. **单击"设置>&隐私。**
+您可以在 Microsoft 365 系統管理中心中開啟客戶密碼箱控制項。 當您開啟客戶密碼箱時，Microsoft 必須先取得您的組織核准，才能存取任何租使用者的內容。
 
-    ![在管理中心编辑客户密码箱设置](media/CustomerLockbox2.png)
+1. 使用指派有全域管理員或**客戶密碼箱存取核准者**角色的工作或學校帳戶，移至[https://admin.microsoft.com](https://admin.microsoft.com)並登入。
 
-3. 在"**客户锁定箱"** 磁贴上，**单击"编辑"，** 然后将切换**移动到"打开"** 或"**关闭"** 以打开或关闭要素。
+2. 選擇 [**設定] > 安全性 & 隱私權**。
 
-    ![Require approval for Customer Lockbox](media/CustomerLockbox4.png)
+    ![編輯系統管理中心的客戶密碼箱設定](../media/CustomerLockbox2.png)
 
-## <a name="approve-or-deny-a-customer-lockbox-request"></a>批准或拒绝客户密码箱请求
+3. 在**客戶加密箱**磚上，選擇 [**編輯**]，然後將開關移至 [**開啟**] 或 [**關閉**]，以開啟或關閉該功能。
 
-> [!NOTE]
-> 要执行以下过程，您必须是 Microsoft 365 或 Office 365 组织的全局管理员，或者被分配客户**密码箱访问审批者**管理员角色。
+    ![Require approval for Customer Lockbox](../media/CustomerLockbox4.png)
 
-1. 转到[https://admin.microsoft.com](https://admin.microsoft.com)并登录您的工作或学校帐户。
+## <a name="approve-or-deny-a-customer-lockbox-request"></a>核准或拒絕客戶加密箱要求
 
-2. **单击"支持>客户密码箱请求**。
+1. 使用指派有全域管理員或**客戶密碼箱存取核准者**角色的工作或學校帳戶，移至[https://admin.microsoft.com](https://admin.microsoft.com)並登入。
 
-    ![单击"支持"，然后单击"客户锁定框请求"](media/CustomerLockbox5.png)
+2. 選擇 [**支援 > 客戶加密箱要求**。
 
-    将显示客户密码箱请求的列表。
+    ![按一下 [支援]，然後按一下 [客戶密碼箱要求]](../media/CustomerLockbox5.png)
 
-    ![客户密码箱请求列表](media/CustomerLockbox6.png)
+    客戶加密箱要求的清單隨即顯示。
 
-3. 选择客户锁定箱请求，然后单击"**批准"** 或"**拒绝"。**
+    ![客戶加密箱要求的清單](../media/CustomerLockbox6.png)
 
-    ![批准或拒绝客户密码箱请求](media/CustomerLockbox7.png)
+3. 選取客戶加密箱要求，然後選擇 [**核准**] 或 [**拒絕**]。
 
-    将显示有关客户密码箱请求的审批确认消息。
+    ![核准或拒絕客戶加密箱要求](../media/CustomerLockbox7.png)
 
-    ![批准或拒绝客户密码箱请求](media/CustomerLockbox8.png)
+    會顯示客戶加密箱要求之核准的確認訊息。
 
-## <a name="auditing-customer-lockbox-requests"></a>审核客户密码箱请求 
+    ![核准或拒絕客戶加密箱要求](../media/CustomerLockbox8.png)
 
-与客户密码箱请求对应的审核记录记录记录在 Office 365 审核日志中，可以使用 Office 365 安全&合规性中心的[审核日志搜索工具](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)进行访问。 与客户接受或拒绝客户密码箱请求相关的操作以及 Microsoft 工程师执行的操作（当访问请求获得批准时）将记录在 Office 365 审核日志中。 您可以搜索和查看这些审核记录。
+## <a name="auditing-customer-lockbox-requests"></a>審核客戶加密箱要求
 
-> [!NOTE]
-> 您必须在 Exchange Online 中分配"仅查看审核日志"角色才能搜索 Office 365 审核日志。 有关详细信息，请参阅在[Office 365 安全&合规性中心中搜索审核日志](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin)。
+對應至客戶密碼箱要求的審計記錄會記錄在 Office 365 審核記錄檔中。 您可以使用 Office 365 安全性 & 規範中心中的「[審核記錄搜尋」工具](search-the-audit-log-in-security-and-compliance.md)，存取這些記錄檔。 有關接受或拒絕客戶加密箱要求的動作，以及 Microsoft 工程師所執行的動作（當存取要求得到核准時）也會記錄在 Office 365 審核記錄檔中。 您可以搜尋並複查這些審計記錄。
 
-### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>搜索审核日志，查找与客户密码箱请求相关的活动
+### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>在審計記錄檔中搜尋與客戶加密箱要求相關的活動
 
-下面有关如何创建审核日志搜索查询以返回与客户密码箱相关的审核记录：
+在您可以使用「審核」記錄檔追蹤客戶的要求之後，您必須採取一些步驟來設定審核記錄。 如需詳細資訊，請參閱[在 Office 365 安全性與合規性中心搜尋稽核記錄](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin)。 完成安裝後，請使用下列步驟來建立審核記錄搜尋查詢，以傳回與客戶密碼箱相關的審計記錄：
 
-1. 移至 [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
   
 2. 使用公司或學校帳戶登入 Office 365。
 
-3. 在"安全&合规中心"的左侧窗格中，单击"**搜索&调查** > **审核日志搜索**。
+3. 在安全性 & 規範中心的左窗格中，選擇 [**搜尋 & 調查** > **審核記錄搜尋**]。
 
-    将显示**审核日志搜索**页。
+    [**審計記錄檔搜尋**] 頁面隨即顯示。
 
-    ![审核日志搜索页](media/auditlogsearch1.png)
+    ![審核記錄搜尋頁面](../media/auditlogsearch1.png)
   
-4. 配置以下搜索条件：
+4. 設定下列搜尋準則：
 
-    a. **活动**- 将此字段留空，以便搜索返回所有活动的审核记录。 这是返回与客户密码箱请求和 Microsoft 工程师执行的相应活动相关的任何审核记录所必需的。
+    a. **活動**-將此欄位保留空白，讓搜尋傳回所有活動的審計記錄。 若要傳回與 Microsoft 工程師所執行之客戶加密箱要求和對應活動相關的任何審計記錄，必須這麼做。
 
-    b. **开始日期**和**结束日期**- 选择日期和时间范围以显示该时间段内发生的事件。
+    b. **開始日期**和**結束日期**-選取日期和時間範圍，以顯示在該期間內發生的事件。
 
-    c. **用户**- 将此字段留空。
+    c. **使用者**-將此欄位保留空白。
 
-    d. **文件、文件夹或站点**- 将此字段留空。
+    d. **檔、資料夾或網站**-將此欄位保留空白。
 
-5. **单击"搜索"** 以使用搜索条件运行搜索。 
+5. 按一下 [搜尋]**** 以使用您的搜尋準則執行搜尋。
 
-    搜索结果将加载，几分钟后，它们**将显示在"审核日志搜索"** 页上**的"结果"** 下。
+    搜尋結果會經過載入，然後在 [**審計記錄檔搜尋**] 頁面的 [**結果**] 底下出現一段時間。
 
-6. 单击搜索结果页上**的"筛选结果"，** 然后执行以下操作之一：
+6. 按一下搜尋結果頁面上的 [**篩選結果**]，然後執行下列其中一項動作：
 
-   - 要显示与组织中批准或拒绝客户密码箱请求的审批人相关的审核记录：**在"活动"** 列下的框中，**键入"设置访问到客户数据请求**"。
+   - 若要顯示與組織中核准或拒絕客戶加密箱要求相關之核准的審計記錄：在 [**活動**] 欄下方的方塊中，輸入**AccessToCustomerDataRequest**。
 
-   - 要显示与 Microsoft 工程师执行响应已批准的客户密码箱请求的操作相关的审核记录：**在"用户"** 列下的框中，键入**Microsoft 操作员**。 请注意，工程师执行的操作**显示在"活动"** 列中。
+   - 顯示與 Microsoft 工程師相關的審計記錄，以回應核准的客戶加密箱要求：在 [**使用者**] 欄下方的方塊中，輸入**Microsoft 接線員**。 [**活動**] 欄會顯示工程師所執行的動作。
 
-      ![筛选"微软操作员"以显示审核记录](media/CustomerLockbox10.png)
+      ![在 "Microsoft 接線員" 上篩選以顯示審計記錄](../media/CustomerLockbox10.png)
 
-7. 在结果列表中，单击审核记录以显示它。
+7. 在結果清單中，按一下要顯示的審計記錄。
 
-### <a name="audit-record-for-a-customer-lockbox-access-request"></a>客户密码箱访问请求的审核记录
+### <a name="audit-record-for-a-customer-lockbox-access-request"></a>客戶加密箱存取要求的審計記錄
 
-当组织中的人员批准或拒绝客户密码箱请求时，审核记录将记录在 Office 365 审核日志中。 此记录包含以下信息。 
+當您組織中的人員核准或拒絕客戶加密箱要求時，會在 Office 365 審計記錄檔中記錄審計記錄。 此記錄包含下列資訊。
 
-| 审核记录属性| 描述|
+| Audit record 屬性| 描述|
 |:---------- |:----------|
-| 日期       | 批准或拒绝客户密码箱请求的日期和时间。
-| IP 位址 | 批准者用于批准或拒绝请求的计算机的 IP 地址。 |
-| 使用者       | 服务帐户 BOXServiceAccount_\[客户\]林 .prod.outlook.com。            |
-| 活動   | 设置访问到客户数据请求;这是批准或拒绝客户密码箱请求时记录的审核活动。                                |
-| 項目       | 客户密码箱请求的 Guid                             |
+| 日期       | 客戶加密箱要求核准或拒絕的日期和時間。
+| IP 位址 | 核准者用來核准或拒絕要求之電腦的 IP 位址。 |
+| 使用者       | 服務帳戶 BOXServiceAccount@\[customerforest\]。 prod.outlook.com。            |
+| 活動   | Set-AccessToCustomerDataRequest;這是當您核准或拒絕客戶加密箱要求時所記錄的審計活動。                                |
+| 項目       | 客戶加密箱要求的 Guid                             |
 
-以下屏幕截图显示了与已批准的客户密码箱请求对应的审核日志记录的示例。 如果客户密码箱请求被拒绝，则**批准决策**参数的值**将为"拒绝"。**
+下列螢幕擷取畫面顯示對應至已核准客戶加密箱要求的審計記錄檔範例。 如果客戶加密箱要求遭到拒絕，則**ApprovalDecision**參數的值將會是**Deny**。
 
-![已批准的客户密码箱请求的审核记录](media/CustomerLockbox9.png)
+![核准客戶加密箱要求的審計記錄](../media/CustomerLockbox9.png)
 
 > [!TIP]
-> 要在审核记录中显示更多详细信息，请单击"**更多信息"。**
+> 若要在審計記錄中顯示更詳細的資訊，請按一下 [**詳細資訊**]。
 
-### <a name="audit-record-for-an-action-performed-by-a-microsoft-engineer"></a>微软工程师执行的操作的审核记录
+### <a name="audit-record-for-an-action-performed-by-a-microsoft-engineer"></a>Microsoft 工程師所執行動作的審計記錄
 
-如前所述，Microsoft 工程师在客户密码箱请求获得批准后执行的操作（并可能导致访问客户内容）将记录在审核日志中。 这些记录包含以下信息。
+客戶加密箱要求經過核准（而且可能會導致存取客戶內容）之後，Microsoft 工程師所執行的動作會記錄在審核記錄中。 這些記錄包含下列資訊。
 
-| 审核记录属性| 描述|
+| Audit record 屬性| 描述|
 |:---------- |:----------|
-| 日期       | 执行操作的日期时间。 请注意，执行此操作的时间将在客户密码箱请求获得批准后的 4 小时内执行。              |
-| IP 位址 | 微软工程师使用的机器的 IP 地址。 |
-| 使用者       | 微软运营商;此值指示此记录与客户密码箱请求相关。                                  |
-| 活動   | 由 Microsoft 工程师执行的活动的名称。|
+| 日期       | 執行動作的日期時間。 請注意，此動作執行的時間會在客戶加密箱要求核准的4小時內。              |
+| IP 位址 | Microsoft 工程師使用的電腦 IP 位址。 |
+| 使用者       | Microsoft 操作員;此值表示此記錄與客戶加密箱要求相關。                                  |
+| 活動   | Microsoft 工程師所執行的活動名稱。|
 | 項目       | \<空\>                                             |
-
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-#### <a name="which-office-365-services-does-customer-lockbox-apply-to"></a>客户密码箱适用于哪些 Office 365 服务？
+#### <a name="which-office-365-services-does-customer-lockbox-apply-to"></a>客戶加密箱適用于哪些 Office 365 服務？
 
-客户锁定盒当前受"Exchange 联机"""共享点联机"和"企业一个驱动器"支持。
+客戶加密箱目前在 Exchange Online 中支援，SharePoint 線上，且 OneDrive 商務。
 
-#### <a name="is-customer-lockbox-available-to-all-office-365-customers"></a>客户密码箱是否对所有 Office 365 客户可用？
+#### <a name="is-customer-lockbox-available-to-all-office-365-customers"></a>客戶加密箱是否可供所有 Office 365 客戶使用？
 
-客户锁定盒包含在 Microsoft 365 或 Office 365 E5 订阅中，并可添加到具有信息保护和合规性或高级合规性加载项订阅的其他计划中。 有关详细信息，请参阅 [计划和定价。](https://products.office.com/business/office-365-enterprise-e5-business-software) 
+客戶加密箱隨附于 Microsoft 365 或 Office 365 E5 訂閱中，而且可以新增至具有資訊保護和合規性的其他計畫，也可以新增至其他計畫。 如需詳細資訊，請參閱 [方案和價格](https://products.office.com/business/office-365-enterprise-e5-business-software) 。
 
-#### <a name="what-is-customer-content"></a>什么是客户内容？
+#### <a name="what-is-customer-content"></a>何謂客戶內容？
 
-客户内容是 Office 365 服务和应用程序的用户创建的数据。 客户内容的示例包括：
+客戶內容是由 Office 365 服務和應用程式的使用者所建立的資料。 客戶內容的範例包括：
 
-- 电子邮件正文或电子邮件附件
+- 電子郵件內文或電子郵件附件
 
-- SharePoint 网站内容
+- SharePoint 網站內容
 
-- SharePoint 文件正文中的信息
+- SharePoint 檔本文中的資訊
 
-- Skype 业务演示文稿文件正文
+- 商務用 Skype 簡報檔內文
 
-- 即时消息 （IM） 或语音对话
+- 立即訊息（IM）或語音交談
 
-- 客户生成的 Blob 或结构化存储数据（例如，SQL 容器）
+- 客戶產生的 blob 或結構化儲存資料（例如 SQL 容器）
 
-- 客户拥有的安全信息（例如，证书、加密密钥和密码）
+- 客戶擁有的安全性資訊（例如憑證、加密金鑰和密碼）
 
-- 如果客户内容仍然存在，则推断和所有后续推断
+- 推斷及所有後續的推斷，如果客戶內容仍然存在
 
-有关 Office 365 中客户内容的其他信息，请参阅[Office 365 信任中心](https://products.office.com/en-US/business/office-365-trust-center-privacy/)。
+如需 Office 365 中客戶內容的詳細資訊，請參閱[Office 365 信任中心](https://products.office.com/business/office-365-trust-center-privacy/)。
 
-#### <a name="who-is-notified-when-there-is-a-request-to-access-my-content"></a>当有访问我的内容的请求时，会通知谁？
+#### <a name="who-is-notified-when-there-is-a-request-to-access-my-content"></a>要求存取我的內容時，誰會收到通知？
 
-将通知全局管理员和分配客户密码箱访问审批人管理员角色的任何人。 这些用户也可以批准客户密码箱请求。
+全域管理員及已指派客戶密碼箱存取核准者系統管理員角色的任何人都會收到通知。 這些使用者也是可核准客戶加密箱要求的使用者。
 
-#### <a name="who-can-approve-or-reject-these-requests-in-my-organization"></a>谁可以在我的组织中批准或拒绝这些请求？
+#### <a name="who-can-approve-or-reject-these-requests-in-my-organization"></a>誰可以核准或拒絕組織中的這些要求？
 
-全局管理员和分配客户密码箱访问审批者管理员角色的任何人都可以批准客户密码箱请求。 客户在其组织中控制这些角色分配。
+全域系統管理員和任何獲指派客戶密碼箱存取權管理員角色的人員，都可以核准客戶加密箱要求。 客戶在其組織中控制這些角色指派。
 
-#### <a name="how-do-i-opt-in-to-customer-lockbox"></a>如何选择加入客户密码箱？
+#### <a name="how-do-i-opt-in-to-customer-lockbox"></a>如何加入宣告客戶密碼箱？
 
-全局管理员可以在 Microsoft 365 或 Microsoft 365 管理中心启用和配置客户锁定盒。
+全域管理員可以在 Microsoft 365 或 Microsoft 365 系統管理中心內啟用和設定客戶加密箱。
 
-#### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>如果我批准客户密码箱请求，工程师可以做什么，我如何知道 Microsoft 工程师做了什么？
+#### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>如果我核准客戶加密箱要求，工程師可以做什麼，如何知道我的 Microsoft 工程師會怎麼做？
 
-批准客户密码箱请求后，Microsoft 工程师授予这些必要的权限，以便使用预先批准的 cmdlet 访问客户内容。 Microsoft 工程师针对客户密码箱请求执行的操作将记录在 Office 365 安全&合规性中心的审核日志中。
+核准客戶加密箱要求之後，Microsoft 工程師會授與這些必要的許可權，以使用預先核准的 Cmdlet 存取客戶內容。 Microsoft 工程師在回應客戶加密箱要求時所採取的動作，會在 Office 365 Security & 合規性中心的審計記錄檔中記錄和存取。
 
-#### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>我如何知道 Microsoft 遵循审批流程？
+#### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>如何知道 Microsoft 遵循核准程式？
 
-您可以使用 Microsoft 365 管理中心中的客户密码箱请求历史记录对发送给组织中管理员和审批者的电子邮件审批通知进行交叉引用。
+您可以使用 Microsoft 365 系統管理中心內的客戶加密箱要求記錄，在組織中相互參照傳送給系統管理員和核准者的電子郵件核准通知。
 
-客户密码箱包含在最新的[SOC 1 SSAE 16 审核报告中。](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=91592749-e86a-43ac-801e-121382614681&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports) 有关详细信息，可以在[Microsoft 服务信任门户](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=91592749-e86a-43ac-801e-121382614681&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports)中找到最新的报告。
+客戶加密箱包含在最新的[SOC 1 SSAE 16 審核報告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=91592749-e86a-43ac-801e-121382614681&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports)中。 如需詳細資訊，您可以在[Microsoft 服務信任入口網站](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=91592749-e86a-43ac-801e-121382614681&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports)中尋找最新的報告。
 
-#### <a name="can-microsoft-modify-the-list-of-approvers-for-my-tenant-if-not-how-is-it-prevented"></a>Microsoft 是否可以修改租户的审批人列表？ 如果没有，它是如何防止的？
+#### <a name="can-microsoft-modify-the-list-of-approvers-for-my-tenant-if-not-how-is-it-prevented"></a>Microsoft 是否可以修改我租使用者的核准者清單？ 如果不是，它會如何避免？
 
-只有组织中的全球管理员才能指定谁可以批准客户密码箱请求。 这意味着只有 Azure 活动目录中的全局管理员组的成员才能指定谁可以批准请求。 Azure 活动目录中全局管理员组的成员身份仅由组织管理。
+只有組織中的全域管理員可以指定誰可以核准客戶加密箱要求。 這表示只有 Azure Active Directory 中全域管理員群組的成員可以指定誰可以核准要求。 Azure Active Directory 中全域管理員群組的成員資格只由您的組織管理。
 
-#### <a name="what-if-i-need-more-information-about-a-content-access-request-to-approve-it"></a>如果我需要有关内容访问请求的更多信息来批准它，该怎么办？
+#### <a name="what-if-i-need-more-information-about-a-content-access-request-to-approve-it"></a>如果我需要內容存取要求的詳細資訊來核准它，該怎麼辦？
 
-每个客户密码箱请求都包含 Office 365 服务请求编号。 您可以联系 Microsoft 支持并参考此服务号码以获取有关请求的详细信息。
+每個客戶加密箱要求都包含 Office 365 服務要求號碼。 您可以聯繫 Microsoft 支援部門並參考此服務號碼，以取得有關要求的詳細資訊。
 
-#### <a name="when-a-customer-lockbox-request-is-approved-how-long-are-the-permissions-valid"></a>批准客户密码箱请求后，权限有效多长时间？
+#### <a name="when-a-customer-lockbox-request-is-approved-how-long-are-the-permissions-valid"></a>客戶加密箱要求獲批准時，許可權的有效期是多久？
 
-目前，授予 Microsoft 工程师的访问权限的最长期限为 4 小时。 微软工程师也可以请求较短的周期。
+目前，授與 Microsoft 工程師之存取權限的最長期限是4小時。 Microsoft 工程師也可以要求較短的期間。
 
-#### <a name="how-can-i-get-a-history-of-all-customer-lockbox-requests"></a>如何获取所有客户密码箱请求的历史记录？
+#### <a name="how-can-i-get-a-history-of-all-customer-lockbox-requests"></a>如何取得所有客戶加密箱要求的歷史記錄？
 
-所有客户密码箱请求都在 Microsoft 365 管理中心查看。
+所有客戶加密箱要求都是在 Microsoft 365 系統管理中心中查看。
 
-#### <a name="how-do-i-correlate-the-content-access-requests-with-the-related-audit-logs"></a>如何将内容访问请求与相关的审核日志相关联？
+#### <a name="how-do-i-correlate-the-content-access-requests-with-the-related-audit-logs"></a>如何將內容存取要求與相關的審計記錄檔關聯？
 
-合规中心活动源包含客户密码箱的日志活动。 客户可以根据收到的电子邮件请求从活动源中交叉引用客户密码箱日志活动。
+「規範中心」活動摘要包含客戶密碼箱的記錄活動。 客戶可以對照接收的電子郵件要求，從活動摘要中，對客戶加密箱記錄活動進行互交。
 
-#### <a name="what-happens-when-a-customer-doesnt-respond-to-a-customer-lockbox-request"></a>如果客户未响应客户密码箱请求，会发生什么情况？
+#### <a name="what-happens-when-a-customer-doesnt-respond-to-a-customer-lockbox-request"></a>當客戶未回應客戶加密箱要求時，會發生什麼情況？
 
-客户密码箱请求的默认持续时间为 12 小时。 如果您在 12 小时内未回复请求，则该请求将过期。
+客戶加密箱要求的預設工期為12小時。 如果您未在12小時內回應要求，要求就會到期。
 
-#### <a name="what-does-microsoft-do-when-a-customer-rejects-a-customer-lockbox-request"></a>当客户拒绝客户密码箱请求时，Microsoft 会执行什么操作？
+#### <a name="what-does-microsoft-do-when-a-customer-rejects-a-customer-lockbox-request"></a>當客戶拒絕客戶加密箱要求時，Microsoft 會執行什麼動作？
 
-如果客户拒绝客户密码箱请求，则无法访问客户内容。 如果组织中的用户继续遇到需要 Microsoft 访问客户内容以解决此问题的服务问题，则服务问题可能会仍然存在，Microsoft 将通知用户。
+如果客戶拒絕客戶加密箱要求，就不會發生客戶內容的存取權。 如果您組織中的使用者繼續遇到服務問題，而要求 Microsoft 存取客戶內容以解決問題，則服務問題可能會繼續，而 Microsoft 會通知使用者這一點。
 
-#### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>客户密码箱是否可防止执法机构或其他第三方的数据请求？
+#### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>客戶加密箱是否要防範法律強制執行機構或其他協力廠商的資料要求？
 
-否。 微软认真对待第三方对客户数据的请求。 作为云服务提供商，Microsoft 始终倡导客户数据的隐私。 如果我们收到传票，Microsoft 总是尝试将第三方重定向到客户以获取信息。 （阅读布拉德·史密斯的博客：[保护客户数据免受政府窥探）。](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) 我们会定期发布有关 Microsoft 收到的执法请求[的详细信息。](https://www.microsoft.com/en-us/corporate-responsibility/lerr)
+否。 Microsoft 會認真對待客戶資料的協力廠商要求。 身為雲端服務提供者，Microsoft 總支援客戶資料的隱私權。 在我們取得傳票的情況下，Microsoft 一定會嘗試將協力廠商重新導向至客戶以取得資訊。 （閱讀 Brad Smith 的博客：[保護客戶資料免受政府窺探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)）。 我們會定期發佈 Microsoft 所收到之法律強制要求的[詳細資訊](https://www.microsoft.com/corporate-responsibility/lerr)。
 
-有关详细信息，请参阅[Microsoft 信任中心（](https://www.microsoft.com/en-us/trustcenter/default.aspx)有关第三方数据请求）和[在线服务条款](https://www.microsoft.com/Licensing/product-licensing/products.aspx)中的"披露客户数据"部分。
+如需詳細資訊，請參閱有關協力廠商資料要求和[線上服務條款](https://www.microsoft.com/Licensing/product-licensing/products.aspx)中「客戶資料的洩漏」一節的[Microsoft 信任中心](https://www.microsoft.com/trustcenter/default.aspx)。
 
-#### <a name="how-does-microsoft-ensure-that-a-member-of-its-staff-doesnt-have-standing-access-to-customer-content-in-office-365-applications"></a>Microsoft 如何确保其员工在 Office 365 应用程序中没有长期访问客户内容的访问权限？
+#### <a name="how-does-microsoft-ensure-that-a-member-of-its-staff-doesnt-have-standing-access-to-customer-content-in-office-365-applications"></a>Microsoft 如何確保其員工的成員無法存取 Office 365 應用程式中的客戶內容？
 
-Microsoft 通过访问控制系统和检测措施实施广泛的预防措施，以识别和解决规避这些访问控制系统的企图。 Office 365 使用最小特权和实时访问的原则运行。 因此，任何 Microsoft 人员都无权持续访问客户内容。 如果授予权限，则其持续时间有限。 
+Microsoft 透過存取控制系統來執行大量的預防措施，以及偵探措施來識別並處理繞過這些存取控制系統的企圖。 Office 365 的運作方式是最低許可權和即時存取的原則。 因此，任何 Microsoft 人員都沒有任何可讓您不斷存取客戶內容的許可權。 如果授與許可權，它會在有限期限內。 
 
-Office 365 使用名为*Lockbox*的访问控制系统来处理权限请求，这些请求授予在服务中执行操作和管理功能的能力。 操作员必须使用 Lockbox 请求访问客户内容，然后要求第二个人对请求执行操作（例如，批准该请求），然后才能授予访问权限。 该第二个人不能是请求者，必须指定该人员来批准对客户内容的访问。 仅当请求获得批准时，操作员才会获得对客户内容的临时访问权限。 提升期到期后，锁箱将撤消访问权限。
+Office 365 使用稱為「*密碼箱*」的存取控制系統，處理授與服務中執行作業和系統管理功能之許可權的要求。 操作員必須使用密碼箱要求存取客戶內容，然後再要求第二個人採取要求的動作（例如，核准它），再授與存取權。 第二個人不能是要求者，必須指定以核准客戶內容的存取權。 只有在核准要求時，操作員才能取得客戶內容的暫時存取權。 提升期限到期後，密碼箱會撤銷存取權。
 
-有关 Microsoft 常规安全实践的更多详细信息，请参阅[在线服务条款。](https://www.microsoft.com/licensing/product-licensing/products)
+請參閱[線上服務條款](https://www.microsoft.com/licensing/product-licensing/products)，以取得 Microsoft 一般安全性作法的詳細資料。
 
-#### <a name="under-what-circumstances-do-microsoft-engineers-need-access-to-my-content"></a>在什么情况下，Microsoft 工程师需要访问我的内容？
+#### <a name="under-what-circumstances-do-microsoft-engineers-need-access-to-my-content"></a>在哪些情況下，Microsoft 工程師需要存取我的內容？
 
-Microsoft 工程师需要访问客户内容的最常见情况是，客户发出需要访问以进行故障排除的支持请求。 Office 365 的一项基本原则是，该服务在不使用 Microsoft 访问客户内容的情况下运行。 Microsoft 执行的几乎所有服务操作都是完全自动化的，人工参与受到高度控制，并且从客户内容中抽象出来。 Office 365 的目标是在客户批准 Microsoft 访问的特定请求之前，不需要访问客户内容来支持服务。
+最常見的情形是 Microsoft 工程師需要存取客戶內容的情形是，當客戶進行支援的支援要求時，需要存取權。 Office 365 的基礎原則是服務的運作方式，不需要 Microsoft 存取客戶內容。 Microsoft 所執行的所有服務作業幾乎都是完全自動化的，人工干預是高度控制的，而且會從客戶內容中進一步抽象出來。 Office 365 的目標是存取客戶內容以支援服務，直到客戶核准特定的 Microsoft access 要求為止。
 
-#### <a name="i-already-thought-my-data-was-secure-with-the-microsoft-cloud-so-why-do-i-need-customer-lockbox"></a>我已经认为我的数据在 Microsoft 云中是安全的，那么为什么我需要客户密码箱？
+#### <a name="i-already-thought-my-data-was-secure-with-the-microsoft-cloud-so-why-do-i-need-customer-lockbox"></a>我已將我的資料設為與 Microsoft 雲端的安全性，所以我為何需要客戶密碼箱？
 
-客户密码箱通过为客户提供为服务操作提供显式访问授权的能力，提供了额外的控制层。 通过证明是明确的数据访问授权程序已经到位，客户密码箱还帮助客户履行某些合规义务，如 HIPAA 和 FEDRAMP。
+客戶加密箱為客戶提供服務作業的明確存取授權功能，提供額外的控制層級。 透過示範明確資料存取授權的程式，客戶加密箱也可協助客戶符合特定合規性義務，例如 HIPAA 和 FEDRAMP。

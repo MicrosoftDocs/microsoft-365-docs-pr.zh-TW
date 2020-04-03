@@ -17,18 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: e6e13ef14ed9ed3e60f2918df0c25c0601d0225e
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d0496a194cc734304f8ba6f09e6497c8d4f233bc
+ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106099"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43126020"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤 (公開預覽)
 
->*[安全性 & 符合性的 Microsoft 365 授權指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-在此預覽之前，當您套用對儲存在 SharePoint 和 OneDrive 中的 Office 檔案所加入的靈敏度標籤時，服務無法處理這些檔案的內容。 在這些情況下，合著、eDiscovery、資料遺失防護、搜尋、Delve 及其他協同功能無法運作。 此預覽可針對已套用敏感度標籤（包含以雲端為基礎的金鑰進行加密）的新檔和變更的檔案，啟用這些功能：
+在此預覽之前，您無法將您的[靈敏度標籤](sensitivity-labels.md)套用至網頁上的 Office。 您沒有在功能區上看到 [**敏感性**] 選項，或狀態列上已套用的標籤名稱。 此外，如果您使用桌面應用程式來標示您的檔案，然後將檔案儲存在 SharePoint 或 Onedrive 上，如果標籤已套用加密，服務就無法處理這些檔案的內容。 在這些情況下，合著、eDiscovery、資料遺失防護、搜尋、Delve 及其他協同功能無法運作。 
+
+此預覽可啟用所有這些功能。 除了為使用者顯示敏感度標籤之外，針對已套用敏感度標籤（包含以雲端為基礎的金鑰進行加密）的新檔和變更的檔案：
 
 - SharePoint 會辨識套用至 Word、Excel 及 PowerPoint 檔案中 SharePoint 及 OneDrive 的敏感度標籤：當檔案儲存在 SharePoint 中時，會移除來自 Azure 資訊保護的加密，以便處理檔案內容。 如需如何在 SharePoint 儲存檔時保護檔的相關資訊，請參閱[OneDrive For Business and SharePoint Online 中的資料加密](data-encryption-in-odb-and-spo.md)。
 
@@ -40,23 +42,21 @@ ms.locfileid: "43106099"
 
 - Office 365 eDiscovery 支援這些檔案的全文搜尋。 資料遺失防護（DLP）原則涵蓋這些檔案中的內容。
 
-- 有三個新的[審計事件](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)可供使用網頁上的 Office 來監視敏感度標籤：
-  - **已將敏感度標籤套用到檔案**
-  - **已變更套用到檔案的敏感度標籤**
-  - **已將敏感度標籤從檔案移除**
-
 > [!NOTE]
-> 若尚未使用雲端型金鑰（內部部署金鑰）套用加密，則主要的管理拓撲通常稱為「保留您自己的金鑰」（HYOK），SharePoint 行為不會隨此預覽而變更。
+> 若尚未使用雲端式金鑰（內部部署金鑰）套用加密，通常稱為「保留您自己的金鑰」（HYOK）的金鑰管理拓撲，處理檔內容的 SharePoint 行為不會隨此預覽而變更。
 >
 > 在您啟用預覽之前，SharePoint 行為也不會針對 SharePoint 中的現有標籤和加密檔變更。 若要讓這些檔案受益于新功能，必須下載並上傳這些檔案，或在啟用預覽之後加以編輯。 例如，他們會在搜尋和 eDiscovery 結果中傳回。
 
-現在您也可以將敏感度標籤套用至 Microsoft 團隊、Office 365 群組和 SharePoint 網站。 如需此個別預覽的詳細資訊，請參閱[使用敏感度標籤與 Microsoft 團隊、Office 365 群組和 SharePoint 網站（公開預覽）](sensitivity-labels-teams-groups-sites.md)。
-
-您隨時都可以選擇自願退出此預覽。
+當您啟用此預覽時，會有三個新的[審計事件](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)可供使用網頁上的 Office 來監視敏感度標籤：
+- **已將敏感度標籤套用到檔案**
+- **已變更套用到檔案的敏感度標籤**
+- **已將敏感度標籤從檔案移除**
 
 觀賞下列影片（無音訊）以查看這些新功能的動作：
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
+
+您隨時都可以選擇自願退出此預覽。
 
 ## <a name="requirements"></a>需求
 
@@ -66,7 +66,9 @@ ms.locfileid: "43106099"
 
 ## <a name="limitations"></a>限制
 
-- 當您啟用此預覽時，在 OneDrive 同步處理資料夾中的檔案上變更標籤的使用者，可能無法儲存對檔案所做的其他變更。  使用者看到[紅色圓圈時出現白色的交叉圖示錯誤](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)，並且要求您將新的變更儲存為個別的副本。  除了使用者所初始化的標籤變更之外，如果系統管理員變更已套用至使用者同步處理用戶端之檔案的已發行標籤設定，就會發生相同的行為。
+- 當您啟用此預覽時，在 OneDrive 同步處理資料夾中的檔案上變更標籤的使用者，可能無法儲存對檔案所做的其他變更。 此案例適用于以加密標示標籤的檔案，也就是從沒有套用加密標籤的標籤所做的標籤變更時。 使用者看到[紅色圓圈時出現白色的交叉圖示錯誤](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)，並且要求您將新的變更儲存為個別的副本。  
+    
+    除了使用者所初始化的標籤變更之外，如果系統管理員變更已套用至使用者同步處理用戶端之檔案的已發行標籤設定，就會發生相同的行為。
     
     若要避免這些案例中的工作遺失，請執行下列其中一項動作：
     - 若要套用標籤，請使用 web 版本的 Office 應用程式。
@@ -88,7 +90,7 @@ ms.locfileid: "43106099"
 
 - 不支援 Azure 資訊保護檔追蹤網站。
 
-- Office 桌面應用程式和行動應用程式不支援共同撰寫。 相反地，這些應用程式會繼續以獨佔編輯模式開啟檔案。
+- Office 桌面應用程式和行動應用程式不支援共同撰寫以加密標示的檔案。 這些應用程式會繼續以獨佔編輯模式開啟標籤和加密的檔案。
 
 - 如果已標示的檔上傳至 SharePoint，而標籤是使用服務主體名稱中的帳戶來套用加密，則無法在網頁上的 Office 中開啟該檔。 範例案例包括 Microsoft Cloud App Security，以及透過電子郵件傳送給小組的檔案。
 

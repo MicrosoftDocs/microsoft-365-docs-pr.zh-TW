@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6d60693e8e67ba91341e01c80a213b75e821721b
-ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
+ms.openlocfilehash: 31444d677e7cd775f5364796c6821cb82b6dc654
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43100876"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113570"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>設定 Microsoft 365 中的通訊合規性
 
@@ -42,8 +42,11 @@ ms.locfileid: "43100876"
 - Microsoft 365 A5 訂閱（付費或試用版）
 - Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
 - Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
+- Microsoft 365 G5 訂閱（付費或試用版）
+- Microsoft 365 G5 訂閱 + Microsoft 365 G5 合規性附加元件
+- Microsoft 365 G5 訂閱 + Microsoft 365 G5 有問必答風險管理附加元件
 - Office 365 企業版 E5 訂閱（付費或試用版）
-- Office 365 企業版 E3 訂閱 + Office 365 Advanced 合規性附加元件
+- Office 365 企業版 E3 訂閱 + Office 365 Advanced 合規性附加元件（已無法再供新訂閱使用，請參閱記事）
 
 通訊符合性原則中所含的使用者必須指派上述其中一個授權。
 
