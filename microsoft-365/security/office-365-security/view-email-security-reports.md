@@ -17,12 +17,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在安全性&amp;與規範中心中取得。
-ms.openlocfilehash: fba10207fe0b7a8e02aa96f9c8513e1e5b2cd61f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b6c4e737d0bcc9f7373a669e8dcd20661733b294
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634061"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142704"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
@@ -31,7 +31,8 @@ ms.locfileid: "42634061"
 ![您可以在其中看到高級威脅防護運作方式的儀表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 您的電子郵件安全性報告包含下列專案：
-- [受損使用者報告（**新！**）](#compromised-users-report-new)
+- [URL 威脅防護報告](#url-threat-protection-report-new)（**新！**）
+- [已遭破壞的使用者報告](#compromised-users-report)
 - [加密報告](#encryption-report)
 - [威脅防護狀態報告](#threat-protection-status-report) 
 - [惡意程式碼檢測報告](#malware-detections-report) 
@@ -43,9 +44,30 @@ ms.locfileid: "42634061"
 - [使用者報告的訊息報告](#user-reported-messages-report)
 
 
-## <a name="compromised-users-report-new"></a>受損使用者報告（**新！**） 
+## <a name="url-threat-protection-report-new"></a>URL 威脅防護報告（**新！**）
 
-使用 Exchange Online Protection 的任何人都可以使用此報告，顯示標示為可疑或限制使用者的使用者帳戶數目，當帳戶進入指出使用者帳戶可能有問題的狀態時，資料特別有用，甚至是妥協。 在經常使用的情況下，已遭破壞的使用者報告可以發現具有可疑或限制狀態之帳戶中的波峰峰值，甚至是趨勢，也就是您租使用者的安全性和 wellness 可能會發生問題。
+具有下列專案的任何人都可以使用 URL 威脅防護報告：
+
+- Exchange Online Protection*和*高級威脅防護附加元件（方案 1*或*計畫2） 
+- Microsoft 365 E5 訂閱
+
+這是以「按一下中心」的報表，具有兩個匯總的視圖。
+ 
+1. 第一個視圖是透過*url 按一下保護動作*，其重點是顯示使用者在租使用者中的 URL 按一下數目，以及按一下的結果。 A 按下會指出使用者已透過封鎖頁面按一下至惡意網站（這可以由系統管理員在安全連結原則中停用）。
+ 
+2. 第二個 view 是*由應用程式按一下 URL*，它會顯示在目前支援安全連結的不同應用程式中，例如在電子郵件客戶程式或 Microsoft Word 中，URLs 按一下的數目。 兩個匯總視圖中的資料都會每4小時重新整理一次。
+
+「URL 威脅防護」報告的詳細資料表格可提供租使用者內所有按一下作業的近乎即時的視圖，其中包含諸如使用者*名稱*、 *URL*、*網路訊息識別碼*（如果 URL 已按一下電子郵件）的調查資訊，以及其他重要資訊，以供調查和分析使用。  
+
+根據預設，報告只會顯示由安全連結所封鎖 URLs 所按一下的資料，但也可以查看所有 URL 按一下的資訊，在篩選器中選取 [*允許的 URLs* ] 核取方塊。  
+
+如果已套用安全連結原則的使用者已選取 [*不追蹤使用者點擊*] 選項，則此報告將不會有按一下的資料。
+
+![動作中的 URL 威脅防護報告圖形。](../../media/tp-URLThreatProRpt1.PNG)
+
+## <a name="compromised-users-report"></a>已遭破壞的使用者報告 
+
+這份報告可供任何使用 Exchange Online Protection 的使用者，顯示標示為可疑或受限制使用者的使用者帳戶數目，當帳戶進入指出使用者帳戶可能有問題或甚至遭到破壞的狀態時，資料特別有用。 在經常使用的情況下，已遭破壞的使用者報告可以發現具有可疑或限制狀態之帳戶中的波峰峰值，甚至是趨勢，也就是您租使用者的安全性和 wellness 可能會發生問題。
 
 ![已遭破壞的使用者會在 Office 365 中報告。](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
