@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: 瞭解如何取消商務用 Office 365 或 Microsoft 365 試用版或付費訂閱。
-ms.openlocfilehash: 47b4ae3e027a218f7d830bb6af24a39ca33a4abb
-ms.sourcegitcommit: 3d1abd7c06d316d6e6586e4bdcd5703291ac1ab0
+ms.openlocfilehash: d58ad1b18c8834740984f0ff47b7983a6797e108
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43117941"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142160"
 ---
 # <a name="cancel-your-subscription"></a>取消您的訂閱
 
@@ -42,9 +42,6 @@ ms.locfileid: "43117941"
 如果您已新增您自己的功能變數名稱以用於訂閱，則必須先移除網域，再取消您的訂閱。 如需詳細資訊，請參閱[從 Office 365 移除網域](../../admin/get-help-with-domains/remove-a-domain.md)。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 [試用新的系統管理中心] **** 開關將它開啟。
 
 1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
 

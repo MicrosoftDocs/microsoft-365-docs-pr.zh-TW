@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 若要深入瞭解 Office 365 中的一些問題，請參閱常見問題的答案。
 ms.custom: okr_smb
-ms.openlocfilehash: f3c72f1ce772e3021d79aa4568dbfdb700400803
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3e1d5dce6de41e28ad4c04104cf0212c2b657615
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633181"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142500"
 ---
 # <a name="domains-faq"></a>網域常見問題集
 
@@ -230,7 +230,7 @@ ms.locfileid: "42633181"
     
 2. 在 [**網域**] 頁面上，選取您要設定為新電子郵件地址的預設網域。 
     
-3. 選取 [**設成預設值**]。
+3. 選取 [設定成預設值]****。
     
 ::: moniker range="o365-worldwide"
 
@@ -285,9 +285,9 @@ ms.locfileid: "42633181"
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>為什麼我有「onmicrosoft.com」網域？
 
-當您註冊服務時，Office 365 會為您建立網域，例如*contoso.onmicrosoft.com*。 您註冊時所建立的使用者識別碼包含網域，如*alan@contoso.onmicrosoft.com*。 
+當您註冊服務時，Office 365 會為您建立網域，例如_contoso.onmicrosoft.com_。 當您註冊時所建立的使用者識別碼包含網域，例如_alan\@contoso.onmicrosoft.com_。 
   
- **如果您想要讓您的電子郵件看起來像是*alan\@contoso.com*：** [購買網域，](../get-help-with-domains/buy-a-domain-name.md)或是只要您已擁有您的使用者和網域，請依照將您的[使用者與網域新增至 Office 365](add-domain.md)中的步驟進行。 
+ __如果您想要讓您的電子郵件看起來像是_alan\@contoso.com_：__ [購買網域，](../get-help-with-domains/buy-a-domain-name.md)或是只要您已擁有您的使用者和網域，請依照將您的[使用者與網域新增至 Office 365](add-domain.md)中的步驟進行。 
   
 - **您無法在註冊後重新命名 name.onmicrosoft.com17 網域。** 例如，如果您所選擇的初始網域是 fourthcoffee.onmicrosoft.com，您就無法將它變更為 fabrikam.onmicrosoft.com。 若要使用不同的 onmicrosoft.com 網域，您必須開始使用 Office 365 的新訂閱。 
     
@@ -300,11 +300,12 @@ ms.locfileid: "42633181"
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>為什麼我有「onmicrosoft.de」網域？
 
-當您註冊服務時，Office 365 會為您建立網域，例如*contoso.onmicrosoft.de*。 您註冊時所建立的使用者識別碼包含網域，如*alan@contoso.onmicrosoft.de*。 
+當您註冊服務時，Office 365 會為您建立網域，例如*contoso.onmicrosoft.de*。 您註冊時所建立的使用者識別碼包含網域，例如 "alan@contoso.onmicrosoft.de"。 
   
- **如果您想要讓您的電子郵件看起來像是*alan@contoso.de*：** [購買網域](../get-help-with-domains/buy-a-domain-name.md)，或是只要[將您的使用者與網域新增至 Office 365](add-domain.md) ，也請依照下列步驟進行。 
+如果您想要讓您的電子郵件看起來像是 "alan@contoso.de"，請[購買網域](../get-help-with-domains/buy-a-domain-name.md)或執行 [[將使用者和網域新增至 Office 365](add-domain.md) ] 中的步驟（如果您已擁有）。 
   
 - **您無法在註冊後重新命名 name.onmicrosoft.com17 網域。** 例如，如果您所選擇的初始網域是 fourthcoffee.onmicrosoft.de，您就無法將它變更為 fabrikam.onmicrosoft.de。 若要使用不同的 onmicrosoft.de 網域，您必須開始使用 Office 365 的新訂閱。 
     
@@ -444,7 +445,7 @@ ms.locfileid: "42633181"
         
     4. 測試電子郵件給其他電子郵件系統上的某人。 例如，傳送電子郵件給使用者 C。這封電子郵件應該傳送至原始郵件伺服器上的使用者 C 信箱。
         
-    5. 從外部帳戶，或是從其他電子郵件系統上某員工的電子郵件帳戶，確認已在其他電子郵件系統上正確設定轉寄功能。 例如，從使用者 C 的 origninal server 帳戶或 Hotmail 帳戶傳送使用者 A 電子郵件，並確認其送達使用者 A 的 Office 365 信箱。
+    5. 從外部帳戶，或是從其他電子郵件系統上某員工的電子郵件帳戶，確認已在其他電子郵件系統上正確設定轉寄功能。 例如，從使用者 C 的原始伺服器帳戶或 Hotmail 帳戶傳送使用者 A 電子郵件，並確認其送達使用者 A 的 Office 365 信箱。
         
 9. 移動信箱內容
     

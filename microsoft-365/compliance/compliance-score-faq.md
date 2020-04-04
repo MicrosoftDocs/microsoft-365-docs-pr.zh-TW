@@ -1,5 +1,5 @@
 ---
-title: Microsoft 合規性分數常見問題集
+title: Microsoft 合規性分數常見問題
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,66 +13,74 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 尋找關於 Microsoft 合規性分數，可協助組織常見問題的答案簡化和自動化風險評定。
-ms.openlocfilehash: 9a71abba7b38bcf1e39073133f82abaedfc0d270
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 尋找 Microsoft 合規性分數的常見問題解答，協助組織簡化及自動化風險評估。
+ms.openlocfilehash: 942de8f8cc9eeb958cb7f8e96c9e7038447ce3f1
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078640"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141558"
 ---
-# <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Microsoft 合規性分數 （預覽） 的常見問題集
+# <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Microsoft 合規性分數（預覽）常見的常見問題
 
-## <a name="what-is-compliance-score"></a>合規性分數是什麼？
+## <a name="what-is-compliance-score"></a>合規性分數為何？
 
-Microsoft 合規性分數是在[Microsoft 365 合規性中心](microsoft-365-compliance-center.md)，可協助您了解貴組織的合規性狀態的預覽功能。 它會計算測量中完成協助減少資料保護和法規的標準周圍的風險的動作您進行風險分數。 它也會提供協助連線常見的控制項之間金鑰法規和標準，所以您可能需要一個動作來滿足多個需求在此同時，並更妥善地調整您的合規性程式的內建控制項對應。
+Microsoft 合規性分數是[microsoft 365 規範中心](microsoft-365-compliance-center.md)的預覽功能，可協助您瞭解組織的合規性狀況。 它會計算以風險為基礎的分數，用以衡量您在完成動作方面的進展，以協助降低資料保護和法規標準的風險。 合規性分數提供內建的控制項對應，可協助在重要的規章和標準之間連接一般控制項，因此您可以採取一個動作來同時滿足多種需求，以及更好地擴充您的合規性計畫。
 
 ## <a name="how-do-i-access-compliance-score"></a>如何存取合規性分數？
 
-移至[Microsoft 365 合規性中心](https://compliance.microsoft.com/)和**登入**與 Microsoft 365 全域系統管理員、 符合性系統管理員或規範資料的系統管理員角色。 左側的導覽窗格上，選取 [**合規性分數**。 您應該會看到您的[合規性分數儀表板與您的分數](compliance-score-setup.md#understand-the-compliance-score-dashboard)。 如果您沒有適當的角色存取權，貴組織的全域系統管理員可以授與您的權限。
+請移至[microsoft 365 規範中心](https://compliance.microsoft.com/)，並以 microsoft 365 全域管理員、合規性管理員或合規性資料系統管理員角色登**入**。 在左導覽窗格上選取 [**合規性分數**]。 您應該會看到您[的評分分數儀表板與您的分數](compliance-score-setup.md#understand-the-compliance-score-dashboard)。 如果您沒有適當的角色存取權，您組織的全域系統管理員可以授與您的許可權。
 
-## <a name="what-roles-or-permissions-are-needed-to-use-compliance-score"></a>使用合規性分數所需的角色或權限為何？
+## <a name="what-roles-or-permissions-are-needed-to-use-compliance-score"></a>使用合規性分數所需的角色或許可權為何？
 
-合規性分數使用角色型存取控制 (RBAC) 權限模型，以及您可以執行的動作取決於角色指派給您的類型。 貴組織的 Microsoft 365 全域系統管理員是可以執行安裝程式功能並管理中合規性分數角色的人員。 在最低限度下，使用者會需要**Azure AD 全域讀者**角色，才能讀取資料合規性分數。 深入了解權限、 角色和[合規性分數安裝程式](compliance-score-setup.md)在安裝程序。
+合規性分數使用以角色為基礎的存取控制（RBAC）許可權模型，您可以執行的動作取決於指派給您的角色類型。 貴組織的 Microsoft 365 全域系統管理員是可以執行安裝程式功能，並在合規性分數中管理角色的人員。 使用者至少需要**AZURE AD 全域讀卡機**角色，才能以合規性分數讀取資料。 若要深入瞭解，請參閱[相容性分數設定](compliance-score-setup.md)的許可權、角色及設定程式。
 
 ## <a name="what-is-the-difference-between-compliance-score-and-compliance-manager"></a>合規性分數和合規性管理員之間的差異為何？
 
-合規性分數和合規性管理員共用相同的後端]，但可在兩個不同的位置 （合規性分數是在 Microsoft 365 合規性中心，而合規性管理員在 Microsoft 服務信任入口網站）。 合規性分數視為簡化的合規性管理員版本，讓您更完整檢視您的組織目前合規性狀態並改善其時可採取的步驟。 雖然您可以執行許多動作，直接在合規性分數，某些功能會現在位於合規性管理員中。 閱讀的有關[合規性分數和合規性管理員之間的關聯性](compliance-score.md#relationship-to-compliance-manager)的詳細資訊。
+合規性分數和合規性管理員共用相同的後端，但是它們位於兩個不同的位置（合規性分數是在 Microsoft 365 規範中心內，而合規性管理員是在 Microsoft 服務信任入口網站中）。 請將合規性分數視為合規性管理員簡化版本，讓您能更完整地瞭解組織目前的相容性狀況，以及您可以採取的步驟加以改善。 雖然您可以直接在合規性分數內執行許多動作，但現在仍存在合規性管理員中的部分功能。 閱讀相關的[相容性分數和合規性管理員之間的關係](compliance-score.md#relationship-to-compliance-manager)。
 
-## <a name="who-should-use-compliance-score-and-who-should-use-compliance-manager"></a>誰應使用合規性分數，以及誰應使用合規性管理員？
+## <a name="who-should-use-compliance-score-and-who-should-use-compliance-manager"></a>誰應該使用合規性評分，誰應該使用合規性管理員？
 
-合規性分數是適合貴組織使用者所扮演的角色監視合規性和 save 為了遵守法規標準活動中的每個人。 使用合規性分數，您不需要先熟悉法規和標準，可協助改善貴組織的資料保護。 合規性分數是最佳的起始位置的所有使用者。 從這裡開始，您可以看到您的合規性分數，了解哪些建議的動作可協助降低風險，並在許多情況下，啟動從右到解決方案來執行這些動作。
+合規性分數適用于組織中扮演監控規範中角色的所有人員，並採取行動以協助遵守法規標準。 遵循合規性分數，您不需要熟悉法規和標準，以協助改善組織的資料保護。 合規性分數是所有使用者的最佳開始位置。 在這裡，您可以看到您的相容性分數，瞭解哪些建議動作可協助將風險降至最低，在許多情況下，請從正確啟動至解決方案以採取這些動作。
 
-現在，合規性管理員是讓使用者可以管理評估及建立自訂範本，以建立 「 評估 」 的位置。 深入了解[哪些動作支援僅由合規性管理員](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)期間公開預覽。
+現在，「合規性管理員」是使用者可管理評估及建立自訂範本以建立評估的位置。 深入瞭解在公開預覽期間，[只有合規性管理員才能支援哪些動作](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)。
 
-## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>如果我有較高的分數，意思我已經完全相容？
+## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>如果我有高分，是否表示我完全相容？
 
-否。 合規性分數測量您在完成建議的動作，協助減少資料保護和法規的標準周圍的風險的進度。 它不會不 express 與任何特定的標準或法規的組織符合性絕對量值。 合規性分數不應該解譯成保證郵件可以以任何方式。
+否。 您的相容性分數會衡量您在完成建議的動作時所進行的進展，以協助降低資料保護和法規標準的風險。 它不會表達組織符合任何特定標準或法規的絕對度量。 合規性分數不應以任何方式轉譯為保證。
 
-## <a name="what-regulations-and-standards-does-compliance-score-monitor"></a>哪些法規和標準沒有合規性分數監視？
+## <a name="what-regulations-and-standards-does-compliance-score-monitor"></a>合規性分數監控的規章和標準為何？
 
-合規性分數可讓您根據 Microsoft 365 的資料保護基準，這是一組控制項包含一般產業法規及標準初始分數。 此基準線繪製元素，主要是從 NIST CSF （National Institute of Standards 和技術 Cybersecurity Framework） 和 ISO （國際標準組織），以及從 FedRAMP （聯邦風險與授權管理程式） 和 GDPR （歐盟地區的一般資料保護規定）。
+合規性分數可讓您根據 Microsoft 365 資料保護基準（包括常見的行業法規和標準的一組控制項），為您提供初始分數。 此基準主要是從 NIST CSF （國家標準和技術協會 Cybersecurity Framework）和 ISO （國際標準組織的標準化 FedRAMP）和 GDPR （歐盟的一般資料保護法規）和（一般資料保護法規）中的專案來繪製要素。
 
-組織可以建立並新增至其組織更相關的自訂評估。 您可以使用下列其中一個合規性分數[的方塊出範本](compliance-score.md#templates)來建立評估特定標準，或[建立自己的範本](working-with-compliance-manager.md#create-a-template-1)。
+組織可以建立及新增與其組織更相關的自訂評估。 使用合規性分數的[預先設定的範本](compliance-score.md#templates)之一、使用您自己的控制項和動作自訂 Microsoft 範本，或建立您自己的範本。 閱讀有關如何[使用範本的](working-with-compliance-manager.md#templates)詳細資料。
 
-閱讀的有關[合規性分數的分數的計算方式](compliance-score-methodology.md)的詳細資訊。
+瞭解[相容性分數如何計算您的分數](compliance-score-methodology.md)。
 
-## <a name="what-is-the-difference-between-compliance-score-and-secure-score"></a>合規性分數和安全分數之間的差異為何？
+## <a name="what-is-the-difference-between-compliance-score-and-secure-score"></a>合規性分數與安全評分之間的差異為何？
 
-合規性分數提供廣泛的檢視貴組織的資料保護和合規性狀態。 合規性分數也提供內建工作流程的工具;它可讓組織將工作指派給使用者、 追蹤控制項實作和測試狀態，並上傳的辨識項，並建立稽核報告。
+合規性分數提供組織的資料保護和合規性狀況的廣泛觀點。 合規性分數也提供內建工作流程工具;它可讓組織將工作指派給使用者、追蹤控制項的實施和測試狀態，以及上傳證據及建立審核報告。
 
-Microsoft 安全分數是協助了解您的安全性狀態安全性分析工具。 [解更多關於安全分數，以及如何運作](../security/mtp/microsoft-secure-score.md)。
+Microsoft Secure 得分是一種安全分析工具，可協助您瞭解安全性狀況。 [深入瞭解安全性分數及其運作方式](../security/mtp/microsoft-secure-score.md)。
 
-## <a name="which-cloud-services-are-covered-by-compliance-score"></a>合規性分數所涵蓋的雲端服務？
+## <a name="which-cloud-services-are-covered-by-compliance-score"></a>合規性分數涵蓋了哪些雲端服務？
 
-合規性分數目前提供 Office 365 和 Intune 的評估。 展開的涵蓋範圍在未來版本中，為預期中，將述[合規性分數版本資訊](compliance-score-release-notes.md)。
+合規性分數目前提供 Office 365 和 Intune 的評估。 未來的版本中預期已展開的覆蓋範圍，並將在「[合規性分數版本附注](compliance-score-release-notes.md)」中注明。
 
-## <a name="can-i-use-compliance-score-for-non-microsoft-products"></a>可以使用合規性分數非 Microsoft 產品？
+## <a name="can-i-use-compliance-score-for-non-microsoft-products"></a>我是否可以使用非 Microsoft 產品的相容性分數？
 
-雖然合規性分數提供持續監視，以及建議的動作僅適用於 Microsoft 雲端服務，您可以新增自訂的評估合規性管理員中您內部部署，第三方服務。 如此一來，您可以使用 Microsoft 合規性分數為 SaaS 規範管理工具，可協助您透過您的數位資產管理的所有控制項。
+雖然合規性分數只會針對 Microsoft 雲端服務提供連續監控和建議的動作，但您可以在內部部署、協力廠商服務的合規性管理員中新增自訂評估。 如此一來，您可以使用 Microsoft 合規性分數做為 SaaS 合規性管理工具，協助您管理數位資產中的所有控制項。
 
-您可以使用下列其中一個合規性分數[的方塊出範本](compliance-score.md#templates)來建立評估特定標準，或[建立自己的範本](working-with-compliance-manager.md#create-a-template-1)。
+您可以使用合規性分數的[預先設定的範本](compliance-score.md#templates)之一來建立特定標準的評估，或[建立您自己的範本](working-with-compliance-manager.md#create-a-template)。
 
-## <a name="how-do-i-delete-a-template-or-assessment-i-no-longer-need"></a>如何刪除的範本或不再需要的評定？
+## <a name="how-do-i-delete-a-template-or-assessment-i-no-longer-need"></a>如何刪除不再需要的範本或評估？
 
-您無法刪除評估或範本，但您可以將它們隱藏從檢視。 檢閱[隱藏 「 評估 」 的指示](working-with-compliance-manager.md#hide-a-template-or-an-assessment)。
+您無法刪除評估或範本，但可將其從您的視圖中隱藏。 查看[隱藏評估的指示](working-with-compliance-manager.md#hide-a-template-or-an-assessment)。
+
+## <a name="what-test-procedures-does-microsoft-follow-for-controls"></a>Microsoft 針對控制項所遵循的測試程式為何？
+
+Microsoft 參與每年的控制項審核。 您可以從可從[Microsoft 服務信任入口網站](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3)下載的審計員複查審計報告。
+
+## <a name="why-are-some-controls-tested-annually-and-others-tested-every-three-years"></a>為何有些控制項每年都會經過測試，而其他每三年會進行測試？
+
+FedRAMP 評估是案例原因的範例。 每年執行一次，並測試主要控制系列之間的控制項橫截面。 FedRAMP 將控制項分類為**核心**，當其非常重要，需要年度測試時。 指定為非核心的控制項每三年測試一次。 每年會測試橫跨所有主要控制系列的控制項子集。 如此一來，每年的審計都會查看整個董事會的案例，以確保解決方案的健全。 如需詳細資訊，請參閱[FedRAMP 年度評估流程](https://www.fedramp.gov/annual-assessment-guidance/)。

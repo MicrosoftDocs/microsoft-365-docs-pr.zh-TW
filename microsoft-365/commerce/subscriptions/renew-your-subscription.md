@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: '瞭解如何使用產品金鑰來更新您的商務用 Office 365 訂閱，並開啟或關閉定期計費。 '
-ms.openlocfilehash: 777f60ae40e72a6762015b24ffe1a1f0fed055ba
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: acf5c81fae60fcce272dcee470de0588da3c4a97
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959213"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142112"
 ---
 # <a name="renew-office-365-for-business"></a>更新商務用 Office 365
 
@@ -47,9 +47,6 @@ ms.locfileid: "42959213"
 如果您使用產品金鑰預付訂閱，您的訂閱會在訂閱期限結束時到期。 您可以開啟**定期計費**，並提供信用卡或銀行帳戶資訊，讓您訂閱在您訂閱的當日每年繼續計費。 您也可以選擇每月支付，或在前支付全年款項。 您的初始訂閱期限到期後，才會支付您的信用卡或銀行帳戶。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
 1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
 
@@ -117,12 +114,10 @@ ms.locfileid: "42959213"
 ## <a name="related-articles"></a>相關文章
 
 [重新啟動您的訂閱](reactivate-your-subscription.md)
-  
-[新增、更新或移除信用卡或銀行帳戶](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
-  
+
 [當訂閱結束時，我的資料與存取權會發生什麼情況？](what-if-my-subscription-expires.md)
 
-[新增、更新或移除支付方式](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+[新增、更新或移除付款方式](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 
 [變更您的付款方式](../billing-and-payments/change-payment-method.md)
   

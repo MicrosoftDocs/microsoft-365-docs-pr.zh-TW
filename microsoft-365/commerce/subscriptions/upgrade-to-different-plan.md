@@ -1,5 +1,5 @@
 ---
-title: 升級至不同的業務計劃
+title: 升級至不同的商務方案
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -22,158 +22,155 @@ search.appverid:
 - MOE150
 - BEA160
 - GEA150
-description: 了解如何升級至新的訂閱。
+description: 瞭解如何升級為新的訂閱。
 monikerRange: o365-worldwide
-ms.openlocfilehash: f12dcdd653c8b12bc4a254063c6eda01138325ee
-ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
+ms.openlocfilehash: dbeba16a23490ab756c8ed30ce4856217819e80a
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42415598"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142076"
 ---
-# <a name="upgrade-to-a-different-plan"></a>升級成不同的計劃 
+# <a name="upgrade-to-a-different-plan"></a>升級成不同的計劃
 
-當您公司的變更，或您需要更多的功能時，您可以升級計劃。 最簡單的方法若要這麼做是在系統管理中心中使用 [**升級**] 索引標籤。 不過，使用 [**升級**] 索引標籤中，不支援所有的情況。 在某些情況下，您可能無法以手動方式變更計劃。
-
-> [!NOTE]
-> 本文適用於在新版系統管理中心。 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。 關於舊版系統管理中心檢視 > 的文章，請參閱[切換到不同的 Office 365 商務版方案](switch-to-a-different-plan.md)。
+當您的公司變更或需要更多功能時，您可以升級計畫。 若要執行此作業，最簡單的方法是使用系統管理中心的 [**升級**] 索引標籤。 不過，並非所有情況都支援使用 [**升級**] 索引標籤。 在某些情況下，您可能可以手動變更方案。
 
 ## <a name="use-the-upgrade-tab"></a>使用 [升級] 索引標籤
 
-當您使用 [**升級**] 索引標籤時，您正在 led 透過購買新方案的程序。 所有使用者會自動都指派授權中新的計劃，並為您的舊方案會取消此事件。
+當您使用 [**升級**] 索引標籤時，您會逐步完成購買新的計畫。 所有使用者會自動指派新方案中的授權，而且舊的計畫會為您取消。
 
-1. 在 [系統管理中心中，移至**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品 & 服務</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品 & 服務</a>] 頁面。
 
 2. 選取您要升級的訂閱。
 
-3. 在訂閱詳細資料] 頁面上，選取 [**升級**]。
+3. 在 [訂閱詳細資料] 頁面上，選取 [**升級**]。
 
-4. 尋找您要升級，計的劃，然後選取 [**升級**] 按鈕。
+4. 找到您要升級的計畫，然後選取 [**升級**] 按鈕。
 
-5. 輸入數字的授權，您需要選擇是否要支付每月或按年，然後選取 [**移至取出**。
+5. 輸入您需要的授權數目、選擇是否要按月付款或按年付款，然後選取 [**移至結帳**]。
 
     > [!NOTE]
-    > 請確定您購買足夠的授權，以涵蓋所有使用者。
+    > 請務必購買足夠的授權，以涵蓋所有的使用者。
 
-6. 在 [下一步] 頁面上，確認**若要購買人**地址、**至 Billed**的詳細資訊，**依此順序中的項目**。 您可以變更預設的付款方法，在此步驟。 如果您需要進行任何變更，請選取 [適用的區段旁的 [**變更**]。
+6. 在下一個頁面上，驗證**銷售**的位址、**收取**的資訊及專案的**訂單**。 在此步驟中，您可以變更預設支付方式。 如果您需要進行任何變更，請選取 [適用] 區段旁的 [**變更**]。
 
-7. 當您完成時，選取 [**下單**。
+7. 當您完成時，請選取 [**下單**]。
 
-當您完成簽出時，可能需要數分鐘才能完成升級。 您可以開始使用新訂閱立即。 選取 [**檢查升級狀態**] 以查看升級的進度。 升級完成時，您就會收到通知。 在**產品 & 服務**] 頁面的 [新訂閱旁會顯示通知。
+當您完成結帳時，可能需要幾分鐘的時間來完成升級。 您可以立即開始使用新的訂閱。 選取 [**檢查升級狀態**]，檢查升級的進度。 升級完成後，您將會收到通知。 通知會顯示在 [**產品 & 服務**] 頁面上的新訂閱旁邊。
 
-## <a name="the-upgrade-tab-is-empty"></a>是空的 [升級] 索引標籤
+## <a name="the-upgrade-tab-is-empty"></a>[升級] 索引標籤是空的
 
-如果 [**升級**] 索引標籤是空的您會看到您無法升級在此階段的說明。 您可以嘗試[以手動方式變更方案](change-plans-manually.md)或[連絡支援人員](../../admin/contact-support-for-business-products.md)。 如需詳細資訊，請參閱[為何無法升級計劃？](#why-cant-i-upgrade-plans))。
+如果 [**升級**] 索引標籤為空，您會看到有關為何您此時無法升級的說明。 您可以嘗試[手動變更計畫](change-plans-manually.md)或[致電支援人員](../../admin/contact-support-for-business-products.md)。 如需詳細資訊，請參閱[為何無法升級計畫？](#why-cant-i-upgrade-plans)）。
 
-## <a name="i-dont-see-the-plan-i-want"></a>看不到我想要的計劃
+## <a name="i-dont-see-the-plan-i-want"></a>我看不到想要的計畫
 
-當您使用 [**升級**] 索引標籤時的計劃，您可以升級至顯示服務的基礎您目前方案。 您只可以使用 [**升級**] 索引標籤來移至具有相同的資料相關服務，計劃或更高版本。 這可確保使用者不會遺失與這些服務相關變更期間的資料。
+當您使用 [**升級**] 索引標籤時，您可以升級的計畫會根據您目前計畫中的服務來顯示。 您只能使用 [**升級**] 索引標籤移至具有相同資料相關服務的計畫，或移至較高的版本。 這可確保在變更期間，使用者不會失去與這些服務相關的資料。
 
-如果您想要將移至較少的服務與計劃，您可以[手動變更方案](change-plans-manually.md)或[連絡支援](../../admin/contact-support-for-business-products.md)的說明。
+如果您想要以較少的服務移至方案，您可以[手動變更計畫](change-plans-manually.md)，或[致電支援人員](../../admin/contact-support-for-business-products.md)以取得協助。
 
-## <a name="why-some-changes-take-longer"></a>為什麼有些變更需要花費更多
+## <a name="why-some-changes-take-longer"></a>為何有些變更需要一些時間
 
-**指派的使用者數目：** 如果您有大量的指派的使用者，它需要較長的時間執行升級作業，將它們移至新方案。
+**指派使用者數目：** 如果您有大量指派的使用者，將需要較長的時間進行升級，將其移至新的計畫。
 
-**進行信用查核時變更計劃：** 如果您以發票付款，或達到一定程度的成本，可能會需要信用查核。 信用查核，可能需要最多兩個工作天。 您將它們移至新方案之前，使用者仍擁有完整存取權其目前的計劃。 如果需要信用查核，您會收到通知。
+**變更計畫時的信用檢查：** 如果您是以發票支付，或是達到某項成本水準，則可能需要信用檢查。 信用檢查可長達兩天的工作。 使用者將可以完全存取其目前的計畫，直到將它們移至新的計畫為止。 如果需要信用檢查，您將會收到通知。
 
-## <a name="why-cant-i-upgrade-plans"></a>為什麼無法升級計劃？
+## <a name="why-cant-i-upgrade-plans"></a>為什麼我無法升級計畫？
 
-如果您沒有看到任何計劃在 [**升級**] 索引標籤上，就表示您的計劃無法自動升級。 在某些情況下，您可能無法解決問題，以便您可以檢視計劃可用的升級程序，或您或許可以升級或計劃手動變更，改為。
+如果您沒有在 [**升級**] 索引標籤上看到任何計畫，這表示您的計畫無法自動升級。 在某些情況下，您可能能夠解決問題，讓您能夠查看可供升級的計畫，或者您也可以手動升級或變更方案。
 
- ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>為什麼有列出升級不計劃？
+### <a name="why-are-there-no-plans-listed-to-upgrade"></a>為什麼沒有列出要升級的計畫？
 
-#### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>因為您有多個使用者數量超過授權數量，您無法升級訂用帳戶。
+#### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>您的使用者數目超過授權，所以您現在無法升級訂閱。
 
-若要自動升級計劃，您的所有使用者必須被指派的有效授權。 如果您已指派比您已購買更多授權，您會看到警示指出您有需要解決授權衝突 [<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面上。 [了解如何解決授權衝突](../../admin/manage/resolve-license-conflicts.md)。 您已解決授權衝突之後，您應該會看到 [**升級**] 索引標籤上列出的計劃。如果不是，您可以[手動變更方案](change-plans-manually.md)或[連絡支援人員](../../admin/contact-support-for-business-products.md)。
+若要自動升級計畫，您必須為您的所有使用者指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">解決的授權</a>衝突。 [深入瞭解如何解決授權衝突](../../admin/manage/resolve-license-conflicts.md)。 解決任何授權衝突後，您應該會看到 [**升級**] 索引標籤上所列的計畫。如果不是，您可以[手動變更計畫](change-plans-manually.md)，或[致電支援人員](../../admin/contact-support-for-business-products.md)。
 
-#### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>因為這個訂閱尚未完成設定，或服務無法使用，您無法現在升級訂用帳戶。
+#### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>您現在無法升級訂閱，因為此訂閱未完全設定或服務無法使用。
 
-例如，如果其中一個服務已意外事件，您將無法升級等到所有服務都都狀況良好。 若要查看是否那里佈建或服務健康情況問題，請在系統管理中心中，移至 [**健康情況** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">服務健康情況</a>] 頁面。
+例如，如果其中一個服務有事件，您將無法升級，直到所有服務都健全為止。 若要查看是否有提供或服務健康情況問題，請移至 [**狀況** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">服務健康</a>情況] 頁面。
 
-如果您發現有服務尚未佈建完畢，或是有服務健康情況的問題，請稍候數小時，待服務正常提供後再試。 如果您仍有問題，請[連絡支援人員](../../admin/contact-support-for-business-products.md)。
+如果您發現有服務尚未佈建完畢，或是有服務健康情況的問題，請稍候數小時，待服務正常提供後再試。 如果仍有問題，請[致電支援人員](../../admin/contact-support-for-business-products.md)。
 
-#### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>因為另一個方案正在升級或正在等待信用查核，您無法升級計劃。
+#### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>您無法升級計畫，因為另一個計畫正處於升級或擱置信用支票的處理過程中。
 
-請等到信用查核完成再升級計劃。 信用查核最多可能需要花費兩個工作天。
+請稍候，直到信用支票已完成，再升級方案。 信用查核最多可能需要花費兩個工作天。
 
-#### <a name="currently-this-subscription-is-not-eligible-to-upgrade"></a>目前，此訂閱是不合格升級。
+#### <a name="currently-this-subscription-is-not-eligible-to-upgrade"></a>目前這個訂閱不符合升級的資格。
 
-您可以[手動變更方案](change-plans-manually.md)或[連絡支援人員](../../admin/contact-support-for-business-products.md)。
+您可以[手動變更計畫](change-plans-manually.md)或[致電支援人員](../../admin/contact-support-for-business-products.md)。
 
 #### <a name="i-see-a-different-message-than-whats-listed-here"></a>我看到的訊息與此處所列的都不一樣。
 
-您可以[手動變更方案](change-plans-manually.md)或[連絡支援人員](../../admin/contact-support-for-business-products.md)。
+您可以[手動變更計畫](change-plans-manually.md)或[致電支援人員](../../admin/contact-support-for-business-products.md)。
 
-### <a name="additional-reasons-you-cant-upgrade"></a>您無法將升級的其他原因
+### <a name="additional-reasons-you-cant-upgrade"></a>您無法升級的其他原因
 
-#### <a name="you-have-two-or-more-plans-for-the-same-product"></a>您有兩個或多個計劃的同一個產品
+#### <a name="you-have-two-or-more-plans-for-the-same-product"></a>您有兩個或多個相同產品的計畫
 
-如果所有的使用者訂閱相同的方案，您只可以使用 [**升級**] 索引標籤。 例如，如果您有兩個 Office 365 商務進階版方案，您無法自動升級其中至其他方案。
+只有在所有使用者都訂閱相同計畫時，才可以使用 [**升級**] 索引標籤。 例如，如果您有兩個 Office 365 商務版特優方案，您就無法將其中一個計畫自動升級為另一個計畫。
 
 #### <a name="you-have-a-prepaid-plan"></a>您有預付方案。
 
-如果您已支付訂閱，您可能無法[以手動方式變更計劃](change-plans-manually.md)。 不過，您不會收到信用留在您目前訂閱，如果您目前方案過期前升級計劃的未使用時間。
+如果您已事先為訂閱付費，您可能可以[手動變更方案](change-plans-manually.md)。 不過，如果您在目前的計畫到期之前升級計畫，您也不會收到目前訂閱中未使用時間的信用。
 
-您也可以[連絡支援](../../admin/contact-support-for-business-products.md)的說明。
+您也可以尋求協助的[支援](../../admin/contact-support-for-business-products.md)。
 
 #### <a name="you-have-a-government-or-non-profit-plan"></a>您具備的是政府或非營利機構方案
 
-如果您是政府或非營利機構方案，您可以[手動變更方案](change-plans-manually.md)或[連絡支援](../../admin/contact-support-for-business-products.md)的說明。
+如果您有政府或非盈利計畫，您可以[手動變更計畫](change-plans-manually.md)，或[致電支援人員](../../admin/contact-support-for-business-products.md)以取得協助。
 
-#### <a name="the-subscription-that-you-want-to-upgrade-from-has-a-temporary-issue"></a>您想要從升級訂閱都有的暫時問題
+#### <a name="the-subscription-that-you-want-to-upgrade-from-has-a-temporary-issue"></a>您要從其升級的訂閱存在暫時性問題
 
-因為服務正在升級大量方案，可能無法在 [**升級**] 索引標籤上看到任何計劃。 請在第一次嘗試後大約等候一個小時再試。
+您可能無法在 [**升級**] 索引標籤上看到任何計畫，因為服務正在升級大量的計畫。 請在第一次嘗試後大約等候一個小時再試。
 
-#### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>您想要升級至方案不支援的選項
+#### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>您要升級為的計畫不是支援的選項
 
-當您升級計劃時，可讓您用來顯示升級的方案服務的基礎您目前方案。 您只可以升級，具有相同資料相關服務，例如 Exchange Online 或 SharePoint Online 的計劃或更新版本的它們。 這可確保該使用者 don\'t 在升級期間與這些服務相關的資料遺失。
+當您升級計畫時，可供您升級的計畫，會根據您目前計畫中的服務來顯示。 您只能升級至具有相同資料相關服務的計畫，例如 Exchange Online 或 SharePoint 線上，或更高版本的服務。 這可確保在升級\'期間，使用者不會丟失與這些服務相關的資料。
 
-如果您計劃不合格自動升級計劃，您可能無法[以手動方式變更計劃](change-plans-manually.md)，請改為。 您也可以[連絡支援](../../admin/contact-support-for-business-products.md)的說明。
+如果您的計畫不符合自動升級計畫，您可以改為[手動變更方案](change-plans-manually.md)。 您也可以尋求協助的[支援](../../admin/contact-support-for-business-products.md)。
 
-#### <a name="your-subscription-has-an-add-on"></a>您的訂閱有附加元件
+#### <a name="your-subscription-has-an-add-on"></a>您的訂閱具有附加元件
 
-如果您有附加元件訂閱，您可以[手動變更計劃](change-plans-manually.md)。
+如果您有訂閱的附加元件，您可以[手動變更方案](change-plans-manually.md)。
 
-#### <a name="your-subscription-has-an-unpaid-balance"></a>您的訂閱有不支薪達到負載平衡
+#### <a name="your-subscription-has-an-unpaid-balance"></a>您的訂閱有未付款的餘額
 
-若要解決此問題，在<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品 & 服務</a>] 頁面上，尋找該訂閱，然後 [**計費**] 區段中選取 [**立即付款**] 連結。 付款後不遺餘力，再次檢查 [**升級**] 索引標籤。
+若要解決此問題，請在 [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品 & 服務</a>] 頁面上找到訂閱，然後選取 [**帳單**] 區段中的 [**立即付款**] 連結。 進行付款之後，請再次檢查 [**升級**] 索引標籤。
 
-## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>升級計劃的作用為何我的服務與計費？
+## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>升級方案對我的服務和計費有何作用？
 
-當使用 [**切換方案**] 按鈕 （或 [在新版系統管理中心的 [**升級**] 索引標籤） 中自動升級計劃時，會影響您的服務與計費。
+當您使用系統管理中心的 [**升級**] 索引標籤自動升級計畫時，您的服務和帳單會受到影響。
 
 ### <a name="access-to-services"></a>存取服務
 
- **系統管理員**將無法使用系統管理中心時正在升級計劃。 This can take up to an hour.
-  
- **Users** will experience no interruption of service. 它們會繼續擁有現有的服務，直到完全完成升級。
+在計畫升級時，系統**管理員**將無法使用系統管理中心。 This can take up to an hour.
+
+**Users** will experience no interruption of service. 他們將繼續擁有現有的服務，直到升級完全完成為止。
   
 ### <a name="users-and-licenses"></a>使用者與授權
 
 舊有訂閱的使用者會自動移至新的訂閱。
   
-如果您的舊訂閱包含多個服務，且如果您已變更這項服務指派給您的使用者，您可能想要記下此之前，讓您可以先重新建立這些變更，升級計劃。 在新的訂閱中，所有使用者將能夠存取所有的服務。 例如，如果您先前為所有 100 個使用者，購買 Office 365 企業版 E3，但未分派資源的 SharePoint Online 服務從這些 50，這項變更會保持在您升級計劃之後。
+如果您的舊訂閱包含多項服務，而且您已變更您的使用者所指派的服務類型，您可能需要在升級計畫之前記下這一點，以便以後可以重新建立這些變更。 在新的訂閱中，所有使用者將能夠存取所有的服務。 例如，如果您先前針對100所有的使用者購買 Office 365 企業版 E3，但未指派該 SharePoint 線上服務的50，則在您升級方案後，就不會保留這項變更。
   
-如果您有多個訂閱，再升級計劃，並有使用者指派授權給多個訂閱，此工作分派模式中仍保留儘可能在新的訂閱。
+如果您在升級計畫之前有一個以上的訂閱，並且使用者已將授權指派給一個以上的訂閱，則此指派模式在新的訂閱中將盡可能保留最大的狀態。
   
-所有使用者資料仍會都保留在升級期間，包括 Exchange 信箱和 SharePoint Online 的文件、 清單及其他資訊。
+升級期間會保留所有使用者資料，包括 Exchange 信箱和 SharePoint 線上檔、清單及其他資訊。
   
 ### <a name="billing"></a>帳單
 
-一天您計劃，升級即完成上您的舊訂閱帳單將會關閉，新訂閱上的帳單開啟。 您會收到依比例的信用舊有訂閱任何未使用服務。 您會收到新的發票，其中包含將升級至新的訂閱的 30 天內您舊訂閱的信用卡。
+您的規劃升級已完成，您的舊訂閱上的帳單將會關閉，而新訂閱上的帳單便會開啟。 您將取得對舊訂閱上任何未使用之服務的按比例貸項。 在升級至新訂閱的30天內，您會收到包含舊訂閱信用額的新發票。
   
 > [!NOTE]
-> 實際向您的付款帳戶收費所需的時間長短，視用於訂閱的付款方式而定。 
-  
- **升級從預付訂閱到期之前？** 如果您的新訂閱價值大於或等於預付訂閱的剩餘價值，就不會損失任何預付的時間。 在結帳頁面上，您會看到未使用時間的時間額度。 不過，如果新訂閱總成本低於您目前預付訂閱的剩餘價值，您就會損失一些未使用時間。 您會收到通知您取出之前，您可以等到較接近您的預付的訂閱到期之前升級。
+> 實際向您的付款帳戶收費所需的時間長短，視用於訂閱的付款方式而定。
 
-## <a name="call-support-to-help-you-upgrade-plans"></a>連絡支援服務以協助您升級計劃
+**從預付訂閱升級後，它會過期嗎？** 如果您的新訂閱價值大於或等於預付訂閱的剩餘價值，就不會損失任何預付的時間。 在結帳頁面上，您會看到未使用時間的時間額度。 不過，如果新訂閱總成本低於您目前預付訂閱的剩餘價值，您就會損失一些未使用時間。 您會在結帳之前通知您，您可以等候升級，直到接近您的預付訂閱到期日為止。
 
-[連絡 Microsoft 支援服務](../../admin/contact-support-for-business-products.md)
+## <a name="call-support-to-help-you-upgrade-plans"></a>協助您升級方案的電話支援
+
+[撥打 Microsoft 支援服務](../../admin/contact-support-for-business-products.md)
 
 ## <a name="related-articles"></a>相關文章
 
-[以手動方式變更計劃](change-plans-manually.md)
+[手動變更計畫](change-plans-manually.md)
 
-[切換到 Office 365 for business 方案前先備份資料](back-up-data-before-switching-plans.md)
+[切換 Office 365 for business 方案之前備份資料](back-up-data-before-switching-plans.md)

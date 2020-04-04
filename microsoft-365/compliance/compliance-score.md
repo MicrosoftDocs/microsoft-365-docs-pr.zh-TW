@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性分數可協助組織簡化及自動化風險評估，並建議採取建議的動作以協助解決風險。
-ms.openlocfilehash: dff5e6c057df37c076e328d5203a1eb4e4b3207a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 77650747e28096fc05c4a9b30bc92545b6f2bc29
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635111"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141568"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft 合規性分數（預覽）
 
-Microsoft 合規性分數可協助您簡化管理法規遵從性的方式，並透過方便使用的經驗降低法規遵從性風險。 合規性分數現在適用于[Microsoft 365 規範中心](microsoft-365-compliance-center.md)內的公開預覽。
+[Microsoft 合規性分數](https://compliance.microsoft.com/compliancescore)可協助您簡化管理法規遵從性的方式，並透過方便使用的經驗降低法規遵從性風險。 [Microsoft 365 規範中心](microsoft-365-compliance-center.md)內的公開預覽適用的合規性分數。
 
 **本文內容：** 請閱讀本文，以瞭解哪些相容性分數，以及如何為您的組織設定。
 
-**深入瞭解更新：** 請移至「[合規性分數版本](compliance-score-release-notes.md)資訊」，以查看「預覽」版本的合規性分數的新功能和已知問題。
+**深入瞭解更新：** 我們已于2020年4月發佈數個更新。 請造訪「[合規性分數版本](compliance-score-release-notes.md)資訊」，以查看「預覽」版本的合規性分數的新功能和已知問題。
 
 ## <a name="what-is-compliance-score"></a>合規性分數為何
 
@@ -58,7 +58,7 @@ Microsoft 合規性分數是 Microsoft 365 規範中心的預覽功能，可協�
 
 合規性分數與合規性管理員共用相同的後端，所以合規性管理員中您可能已具備的任何資料都會以相容性分數顯示。
 
-在公開預覽期間，有些功能會維持在合規性管理員內，例如管理評估和建立範本。 建議您在合規性分數中開始所有符合性管理活動。 當您前往合規性管理員所處理的功能時，系統會引導您進入該工具。 基於此原因，本文中的一些檔會將您導向合規性管理員主題。
+在公開預覽期間，有些功能會維持在合規性管理員內，例如管理評估和建立範本。 建議您在合規性分數中開始所有符合性管理活動。 當您接觸合規性管理員所處理的功能時，系統會將您導向該工具。 基於此原因，本文中的一些檔會將您導向合規性管理員主題。
 
 深入瞭解[合規性分數版本附注](compliance-score-release-notes.md)中的合規性分數和合規性管理員之間的關係。
 
@@ -73,24 +73,22 @@ Microsoft 合規性分數是 Microsoft 365 規範中心的預覽功能，可協�
 
 ## <a name="key-components-controls-assessments-templates-groups"></a>主要元件：控制項、評估、範本、群組
 
-合規性分數使用多個元件，協助您管理相容性活動。 當您使用相容性分數指派、測試及監視合規性活動時，對這些重要元件有基本瞭解會很有説明。 此圖顯示兩者之間的關係：
-
-![合規性管理員第3版中的關係](../media/compliance-manager-relationships.png "合規性分陣列件")
+合規性分數使用多個元件，協助您管理相容性活動。 當您使用相容性分數指派、測試及監視合規性活動時，對重要元件有基本的瞭解是很有説明的：控制項、評估、範本和群組。
 
 ### <a name="controls"></a>控制項
 
-控制項定義如何評估和管理系統設定、組織程式和人員責任，以符合法規、標準或內部原則的特定需求。
+控制項定義如何評估和管理系統設定、組織程式，以及負責滿足法規、標準或內部原則的特定需求的人員。
 
 合規性分數追蹤兩種類型的控制項：
 
 1. **Microsoft 受管理的控制項**： microsoft cloud services 的控制項，microsoft 負責執行這種服務
-2. **客戶管理的控制項**：由您的組織管理的控制項，您負責執行這些控制項。
+2. **客戶管理的控制項**：由您的組織管理的控制項，由您負責執行
  
 ### <a name="assessments"></a>評估
 
 評估是一項範本評估，可對您的組織發起計分程式。 評估群組符合標準、法規或法律需求所需的動作。 例如，您可能會有一個評估，當您完成其中的所有動作時，您的 Office 365 設定會以 ISO 27001 的需求為依據。
 
-根據預設，相容性分數會為您的組織提供以 Microsoft 365 資料保護基準進行評估的建議，以降低資料保護和合規性風險的建議（[深入瞭解](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)）。
+合規性分數為您的組織提供以 Microsoft 365 資料保護基準為基礎的初始評估。 這種評估是降低資料保護和合規性風險的建議（[深入瞭解](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)）。
 
 評估包含數個元件：
 
@@ -102,13 +100,11 @@ Microsoft 合規性分數是 Microsoft 365 規範中心的預覽功能，可協�
 > [!NOTE]
 > 合規性分數會顯示您的評估，以及它們如何影響您的整體分數。 不過，在公開預覽期間，系統會將您導向合規性管理員以管理評估。
 
-[在合規性管理員中](working-with-compliance-manager.md#assessments)查看使用評估的詳細指示。
+[在合規性管理員中查看管理評估](working-with-compliance-manager.md#assessments)的詳細指示。
 
 ### <a name="templates"></a>範本
 
-合規性分數可提供預先設定的範本進行評估。 合規性分數也可讓您建立自己評估的範本，以符合您的需求。 例如，您可以為商務程式控制建立範本，或為區域資料保護或符合性標準（其中一個預先設定的範本尚未涵蓋）建立範本。  透過建立您自己的範本，您可以建立自訂評估，以確保合規性分數不僅追蹤 Microsoft 雲端評估，也追蹤組織範圍內的任何其他風險評估。
-
-您可以複製現有的範本或從 Excel 檔案中匯入控制項資訊，來建立新的範本。 查看[在合規性管理員中建立範本](working-with-compliance-manager.md#templates)的詳細指示。
+合規性分數可提供預先設定的範本進行評估。 您也可以新增您自己的控制項和動作，以自訂預先設定的範本。 例如，您可以為商務程式控制建立範本，或為區域資料保護或符合性標準（其中一個預先設定的範本尚未涵蓋）建立範本。 透過將您自己的範本引入合規性分數，您不僅可以追蹤 Microsoft 雲端評估，還可以追蹤組織範圍內任何其他風險評估。
 
 符合性分數的預先設定範本如下：
 
@@ -130,14 +126,13 @@ Microsoft 合規性分數是 Microsoft 365 規範中心的預覽功能，可協�
 16. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
 17. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
-> [!NOTE]
-> 在公開預覽期間，請移至 [合規性管理員] 以建立及管理您的範本。
+針對在合規性管理員中所進行的範本，查看[建立範本的詳細指示](working-with-compliance-manager.md#templates)。
 
 ### <a name="groups"></a>群組
 
 群組可讓您以合理的方式組織評估。 例如，您可以選擇依年、符合標準、服務、組織內的小組或其他方式來群組評估。
 
-當相同群組中的兩個不同評估共用客戶管理的動作時，一個評估中的動作的執行詳細資料、測試及狀態，會自動同步處理至群組中任何其他評估中的相同動作。 這會將指派的「改進」動作統一到群組中，並減少重複的工作。
+當同一個群組中的兩個不同評估共用客戶管理的動作時，在一個評估中對該動作執行詳細資料、測試及狀態所做的更新，會自動同步處理至群組中任何其他評估中的相同動作。 以這種方式同步處理動作會使指派的「改進」動作統一整個群組，並減少重複的工作。
 
 瞭解如何[在合規性管理員中建立群組](working-with-compliance-manager.md#groups)。 一旦您建立群組，您就可以[篩選「合規性分數」儀表板](compliance-score-setup.md#filtering-your-dashboard-view)，以查看一或多個群組的分數。
 

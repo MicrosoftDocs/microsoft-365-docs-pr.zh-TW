@@ -2,8 +2,8 @@
 title: 新增自訂磚至 App 啟動器
 f1.keywords:
 - CSH
-ms.author: twerner
-author: twernermsft
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: '透過將自訂麻將牌新增至應用程式啟動器，建立電子郵件、檔、應用程式、SharePoint 網站、外部網站及其他資源的快速連結。 '
-ms.openlocfilehash: e52bad5cdd1809e8aa0d97c681b69daa5143d3fd
-ms.sourcegitcommit: 4b73f070747a66874c03fdf670ffdf16f736585a
+ms.openlocfilehash: fff65c7263e40bf376f53e5f150daea7a24ff55d
+ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43103072"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131528"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>新增自訂磚至 App 啟動器
 

@@ -14,23 +14,29 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員是 Microsoft 服務信任入口網站中免費的工作流程型風險評估工具。 合規性管理員可讓您追蹤、指派及驗證與 Microsoft 雲端服務相關的法規遵從性活動。
-ms.openlocfilehash: 4d79b0480462510927f0b1b4c8b5da7132cffec8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 7fd8e4e99edd976085cf9fd6fb3b9a0d88debf89
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635151"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141610"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合規性管理員（預覽）
 
 > [!IMPORTANT]
 > 合規性管理員無法使用 21Vianet 運作的 Office 365、Office 365 德國、Office 365 U.S. Government Community High (GCC High)，或 Office 365 美國國防部。
 
-[Microsoft 合規性管理員（預覽）](https://servicetrust.microsoft.com/ComplianceManager)是免費的工作流程型風險評估工具，可讓您追蹤、指派及驗證 Microsoft cloud services 相關的規章遵循活動。 在 365 365 Microsoft 雲端服務的共用責任模式內，合規性管理員會協助您管理法規遵從性，以協助您在 microsoft 雲端服務的共用責任模式內管理法規遵從性。 合規性管理員提供集中式儀表板，以查看 Microsoft service 評估的標準、法規及控制執行詳細資料和測試結果。 此外，它也包含一些工具，可讓您管理組織特有的自訂控制項實施和合規性追蹤。
+**本文**內容：請閱讀本文以瞭解什麼是合規性管理員，並瞭解其主要元件。
+
+**瞭解更新**：我們已于四月2020公開預覽發行中發佈數個更新。 請造訪[合規性管理員版本](compliance-manager-release-notes.md)資訊，以查看最近更新和已知問題。
+
+## <a name="what-is-compliance-manager"></a>何謂合規性管理員
+
+[Microsoft 合規性管理員（預覽）](https://servicetrust.microsoft.com/ComplianceManager)是 Microsoft 服務信任入口網站中的免費工作流程型風險評估工具，用來管理與 Microsoft 雲端服務相關的規章遵循活動。 在 365 365 Microsoft 雲端服務的共用責任模式內，合規性管理員會協助您管理法規遵從性，以協助您在 microsoft 雲端服務的共用責任模式內管理法規遵從性。
 
 您的組織可以使用合規性管理員：
   
-- 將針對您的組織適用之標準及規章的相容性自我評估，結合 Microsoft 提供給審計員和監管者的詳細規範資訊。 這包括國際標準組織（ISO）的標準和規章，全國標準和技術研究院（NIST），「健康保險流通與責任法案（HIPAA）」（一般資料）保護規定（GDPR）及許多其他。
+- 將針對您的組織適用之標準及規章的相容性自我評估，結合 Microsoft 提供給審計員和監管者的詳細規範資訊。 這些包括國際標準組織（ISO）、全國研究院（NIST）、健康保險流通與責任法案（HIPAA）、一般資料保護規定（GDPR）及其他許多人員所概括的標準和規章。
 - 可讓您指派、追蹤及記錄合規性與評估相關的活動，從而協助貴組織跨小組障礙，達成您的合規性目標。
 - 提供符合性分數，以協助您追蹤進度，並設定審核控制的優先順序，以協助降低組織面臨風險的風險。
 - 為您提供安全的存放庫，以上傳和管理與您的合規性活動相關的證據及其他專案。
@@ -39,7 +45,16 @@ ms.locfileid: "42635151"
 > [!NOTE]
 > 合規性管理員中提供的客戶動作為建議。在實施之前，您的組織可以評估這些建議在其各項法規環境中的效能。 在合規性管理員中找到的建議不得加以轉譯以保證法規遵從性。
 
-## <a name="compliance-manager-relationships"></a>合規性管理員關係
+## <a name="relationship-to-compliance-score"></a>與合規性分數的關係
+
+[Microsoft 規範分數（預覽）](compliance-score.md)是 microsoft 365 規範中心中的一項功能，可提供組織的相容性狀況的最上層視圖。 它會計算以風險為基礎的分數，用以衡量您在完成動作方面的進展，以協助降低資料保護和法規標準的風險。 知道您的整體合規性分數可協助您的組織瞭解和管理法規遵從性。 瞭解[如何計算您的合規性分數](compliance-score-methodology.md)。
+
+合規性管理員會與合規性分數共用相同的後端。 在這兩個工具的公開預覽階段中，合規性管理員是您管理評估和自訂控制項實施的所在位置。 深入瞭解[合規性分數和合規性管理員之間的關係](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)。
+  
+> [!IMPORTANT]
+> 合規性分數不會明確組織符合任何特定標準或法規的絕對度量。 它表示您已採用控制的程度，可降低個人資料和個別隱私權的風險。 沒有任何服務可以保證您符合標準或法規，而且合規性分數不應該以任何方式轉譯為保證。
+
+## <a name="compliance-manager-components"></a>合規性管理員元件
 
 合規性管理員會使用多個元件，協助您進行相容性管理活動。 這些元件可共同運作，為審計員提供完整的管理工作流程和無障礙的符合性報告。
 
@@ -65,7 +80,7 @@ ms.locfileid: "42635151"
   
 - **範圍內的服務**：每個評估適用于一組特定的 Microsoft 服務。
 - **Microsoft 受管理的控制項**：針對每個雲端服務，Microsoft 會針對適用的標準和法規，針對每個雲端服務實施和管理一組符合性控制。
-- **客戶管理的控制項**：這是當您為每個控制項採取動作時，您的組織所執行的控制項集合。
+- **客戶管理的控制項**：當您針對每個控制項採取動作時，您的組織會執行這些控制項。
 - **評估分數**：評估中客戶管理控制項的總可能分數百分比。 這可協助您追蹤指派給每個控制項的動作的實施。
 
 ## <a name="controls"></a>控制項
@@ -79,7 +94,7 @@ ms.locfileid: "42635151"
 
 ![合規性管理員第3版中的控制項](../media/compliance-manager-controls.png)
 
-合規性管理員中有三種類型的控制項、 **Microsoft 管理的控制項**、**客戶管理的控制項**和**共用管理控制項**
+合規性管理員、 **Microsoft 管理**的控制項、**客戶管理的**控制項和**共用管理控制項**有三種類型的控制項。
 
 ### <a name="microsoft-managed-controls"></a>Microsoft 管理的控制項
 
@@ -87,7 +102,7 @@ ms.locfileid: "42635151"
 
 ### <a name="customer-managed-controls"></a>客戶管理的控制項
 
-這是您的組織所管理的控制項集合。 您的組織負責客戶管理的控制執行，做為指定標準或法規的規範程式的一部分。 客戶管理的控制項會組織成對應的認證或法規的控制系列。 使用客戶管理的控制項，以執行 Microsoft 建議的建議動作做為您的合規性活動的一部分。 您的組織可以在每個客戶管理控制項中使用規範性指南和建議的客戶動作，以管理該控制項的實施和評估程式。
+客戶管理的控制項是由您的組織管理。 您的組織負責客戶管理的控制執行，做為指定標準或法規的規範程式的一部分。 客戶管理的控制項會組織成對應的認證或法規的控制系列。 使用客戶管理的控制項，以執行 Microsoft 建議的建議動作做為您的合規性活動的一部分。 您的組織可以在每個客戶管理控制項中使用規範性指南和建議的客戶動作，以管理該控制項的實施和評估程式。
 
 評估中的客戶管理控制項也有內建工作流程管理功能，您可以用來管理和追蹤評估完成的進度。 使用此工作流程功能，您可以：
 
@@ -109,7 +124,9 @@ ms.locfileid: "42635151"
 
 您組織中的人員可以使用合規性管理員來從其所指派的所有評估中查看客戶管理的控制項。 當使用者登入「合規性管理員」並開啟 [動作項目]**** 儀表板時，會顯示指派給他們的 [動作項目] 清單。 視使用者獲派的合規性管理員角色而定，他們可以提供實作或測試詳細資料、更新狀態，或是指派動作項目。
 
-認證控制項通常是由一個人實施，並由另一個人測試。 例如，在最初指派給某一人員進行實施時，會將這些動作專案指派給下一個人員，以測試及上傳證據。 任何具有足夠許可權控制指派許可權的使用者都可以指派及重新指派動作專案。 這可讓您集中管理控制項指派，以及在 implementors 與測試人員之間分散的動作專案路由。
+認證控制項通常是由一個人執行，並由另一個人測試。 例如，在最初指派給某一人員進行實施時，會將這些動作專案指派給下一個人員，以測試及上傳證據。 任何具有足夠許可權控制指派許可權的使用者都可以指派及重新指派動作專案。 這可讓您集中管理控制項指派，以及在 implementors 與測試人員之間分散的動作專案路由。
+
+請注意，合規性分數中的**改進動作**相當於合規性管理員中的**動作專案**。
 
 ## <a name="permissions"></a>權限
 
@@ -120,7 +137,7 @@ ms.locfileid: "42635151"
 1. 從 **[最大**值] 下拉式功能表中，選取 [**管理員**]，然後選取 [**設定**]。
 2. 從這裡，選取您要指派的角色，然後新增您要指派給該角色的員工。 然後，使用者將能夠執行某些動作。
 
-此外，在[Azure Active Directory （AZURE AD）中被指派全域讀卡機角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)的使用者，具有存取合規性管理員的唯讀許可權。 不過，他們無法在合規性管理員內編輯資料或執行任何動作。
+[在 Azure Active Directory （AZURE AD）中被指派全域讀取器角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)的使用者，具有存取合規性管理員的唯讀許可權。 不過，他們無法在合規性管理員內編輯資料或執行任何動作。
 
 不再有預設**來賓存取**角色。 每個使用者都必須獲指派角色，才能在合規性管理員中存取及作業。
   
@@ -148,13 +165,6 @@ ms.locfileid: "42635151"
 12. [加州消費者隱私權法案（CCPA）](https://go.microsoft.com/fwlink/?linkid=2108871) （預覽）
 13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [澳大利亞政府版 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) （預覽）
 14. [Microsoft 365 資料保護基準](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
-
-## <a name="compliance-score"></a>合規性分數
-
-[Microsoft 規範分數（預覽）](compliance-score.md)是 microsoft 365 規範中心中的一項功能，可協助您瞭解組織的合規性狀況。 它會計算以風險為基礎的分數，用以衡量您在完成動作方面的進展，以協助降低資料保護和法規標準的風險。 知道您的整體合規性分數可協助您的組織瞭解和管理法規遵從性。 瞭解[如何計算您的合規性分數](compliance-score-methodology.md)。
-  
-> [!IMPORTANT]
-> 合規性分數不會明確組織符合任何特定標準或法規的絕對度量。 它表示您已採用控制的程度，可降低個人資料和個別隱私權的風險。 沒有任何服務可以保證您符合標準或法規，而且合規性分數不應該以任何方式轉譯為保證。
 
 ## <a name="secure-score-integration"></a>安全分數整合
 

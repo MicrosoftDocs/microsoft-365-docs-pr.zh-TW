@@ -24,34 +24,37 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: 瞭解如何切換至新的商務用 Office 365 訂閱。
-ms.openlocfilehash: f341222945d4af6d35c00ee26c3a2645fabf98f8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: e851ebaa89719f7dae62ed99bf72e2e2a4f361a2
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633401"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142088"
 ---
 # <a name="switch-to-a-different-office-365-for-business-plan"></a>切換到其他商務用 Office 365 方案
 
 當您的業務變更時，或需要更多功能時，您可以切換方案。  
 
-切換方案最簡單的方式，就是使用系統管理中心的 [**切換方案**] 按鈕。 不過，並非所有情況都支援使用 [**切換方案**] 按鈕。 在某些情況下，您可能可以手動切換方案。
+切換方案最簡單的方法是使用系統管理中心中的 **[切換方案]** 按鈕。 不過，並非所有情況都支援使用 [**切換方案**] 按鈕。 在某些情況下，您可能可以手動切換方案。
 
 ::: moniker range="o365-worldwide"
+
 > [!NOTE]
-> 本文適用于舊版系統管理中心。 若要查看有關新系統管理中心的文章，請參閱[升級至其他計畫](upgrade-to-different-plan.md)。 新的系統管理中心可供所有 Microsoft 365 系統管理員使用，您可以選取 [**嘗試新**的系統管理中心] 切換（位於首頁頂端）來加入宣告。 如需詳細資訊，請參閱[關於新的 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md) 
+> 本文適用于舊版系統管理中心。 若要查看有關新系統管理中心的文章，請參閱[升級至其他計畫](upgrade-to-different-plan.md)。 新版系統管理中心可供所有 Microsoft 365 系統管理員使用。 如需詳細資訊，請參閱[關於新的 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md)。
+
 ::: moniker-end
 
 **需要其他內容嗎？**
+
 - [取消訂閱](cancel-your-subscription.md)
 - [升級 Office 365 以供家用訂閱商務訂閱](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [連絡 Microsoft 支援服務](../../admin/contact-support-for-business-products.md)
 
 ## <a name="use-the-switch-plans-button"></a>使用 [切換方案] 按鈕
 
-當您使用 [**切換方案**] 按鈕時，會逐步完成購買新方案的程式，您可以將目前的計畫切換成，所有使用者都會自動在新方案中指派授權，而且舊的計畫會為您取消。 
+當您使用 [**切換方案**] 按鈕時，會逐步完成購買新方案的程式，您可以將目前的計畫切換成，所有使用者都會自動在新方案中指派授權，而且舊的計畫會為您取消。
   
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">訂閱</a>] 頁面。
+1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
 
     如果您使用的是 Office 365 Germany，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>頁面。
 
@@ -95,4 +98,4 @@ ms.locfileid: "42633401"
   
 ## <a name="call-support-to-help-you-switch-plans"></a>連絡支援服務以協助切換方案
 
-![](../../media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png)通話[支援](../../admin/contact-support-for-business-products.md)
+[電話支援](../../admin/contact-support-for-business-products.md)

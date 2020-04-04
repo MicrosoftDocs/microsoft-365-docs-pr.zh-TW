@@ -14,35 +14,54 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員是 Microsoft 服務信任入口網站中免費的工作流程型風險評估工具。 合規性管理員可讓您追蹤、指派及驗證與 Microsoft 雲端服務相關的法規遵從性活動。
-ms.openlocfilehash: 3fc16e92e912676d7aedc861ffe8306d68388c95
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: de69d4c7e5938d8bfd3fed74b9ae44288e48019c
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635141"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141538"
 ---
-# <a name="release-notes-for-compliance-manager-preview"></a>合規性管理員的版本附注（預覽）
+# <a name="microsoft-compliance-manager-preview-release-notes"></a>Microsoft 合規性管理員（預覽）發行附注
 
-合規性管理員的公開預覽可讓您及早存取即將推出的功能和更新。
+合規性管理員的公開預覽可讓您及早存取即將推出的功能和更新。 此頁面包含目前版本的新功能、改進功能和已知問題的更新。
 
-您可以在[服務信任入口網站](https://servicetrust.microsoft.com)上使用更新的[合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)工具，以追蹤、指派及驗證與 Microsoft 雲端服務相關的法規遵從性活動。
+您可以在[服務信任入口網站](https://servicetrust.microsoft.com)上使用[合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)工具，以追蹤、指派及驗證與 Microsoft 雲端服務相關的法規遵從性活動。
 
-## <a name="whats-new-in-compliance-manager-preview"></a>合規性管理員的新功能（預覽）
+## <a name="improved-template-creation-and-update-process"></a>改進範本的建立和更新程式
 
-- **以角色為基礎的訪問合規性管理員：** 已移除預設**來賓存取**角色。 若要讓使用者存取合規性管理員，全域管理員必須[將許可權指派給每位使用者](compliance-manager-overview.md#permissions)。
+我們已更新用來匯入、匯出及修改評估範本的程式。 新的簡化體驗可讓您更輕鬆地將自己的評估帶入您的工作流程中並保持更新。
 
-- **更新的合規性分數**：符合性分數現在包括 Microsoft 管理的動作分數。 結果會使您的分數增加。
+### <a name="the-old-process"></a>舊進程
 
-- **Actions 專案：** 動作專案現在是個別專案，許多包括來自 Microsoft 安全分數圖形 API 的遙測集合。 您可以盡可能使用技術動作建議，以連結至 Office 365 服務中適用的設定頁面。
+在合規性管理員中建立範本的方式有兩種。 您可以複製現有的範本，或將範本資料從 Excel 試算表匯入新的範本。 您可以從 [**範本**] 頁面中，選取 [**新增範本**]，以建立全新的範本，方法是輸入名稱、選取 [維度]，並上傳具有特定格式及架構的 Excel 檔案。 或者，您可以選取 [**從現有範本複製**] 方塊中，選取要複製的範本，然後驗證維度。 設計自訂您的範本需要執行多步驟程式，方法是在建立範本後選取 [**新增自訂控制項**]。
 
-- **承租人管理：** 在合規性管理員中管理新資料元素的新介面（預覽）：
-    - **維度：** View、新增及自訂範本、評估和動作專案的中繼資料，可讓您建立自訂的篩選器。
-    - **擁有者：** 指定每個即席專案的擁有者。
-    - **客戶動作：** 管理合規性管理員（預覽）中包含的完整動作專案清單，並啟用/停用以安全得分整合之動作專案的安全評分監控。
+### <a name="the-new-process"></a>新進程
+
+我們使您建立新的範本變得更容易。 在單一步驟**擴充**過程中，您可以將動作和控制項的試算表新增至現有的 Microsoft 範本，以製作您自己的自訂版本。 在 [合規性管理員] 的 [**範本**] 頁面上，選取 [ **+ 新增範本**]。 在 [**範本**] 飛入窗格上，選取 [**從通用範本建立副檔名**] 核取方塊。 您可以使用比上一個複雜的新 Excel 格式，新增自訂。 這個新程式會取代**現有範本**的先前副本，並**新增自訂控制項**函數。
+
+每次使用下列所述的版本設定程式更新原始評估時，您的自訂評估會繼承這些更新，並保留您的自訂控制項。
+
+此外，您也可以輕鬆修改您自己的現有範本。 您可以匯出範本，在相同的活頁簿中進行變更，然後使用儲存的編輯匯入。
+
+查看使用此新程式[建立範本](working-with-compliance-manager.md#templates)的詳細指示。
+
+## <a name="versioning-notice-and-control"></a>版本設定通知和控制
+
+您的組織已于2020年4月發行的合規性管理員中收到更新的評估，以協助您對齊認證和法規更新。 向前發展，我們將為您提供一種方法，讓您瞭解並透過版本設定**警示**接受所有未來的更新。
+
+每當可用於評估範本或改進動作的更新時，提醒圖示會通知您已準備好更新。 當您按一下該圖示時，會快顯視窗來說明更新，並提示您接受。 選取警示圖示會顯示彈出窗格，說明更新並提示您接受。 深入瞭解[接受評估的更新](working-with-compliance-manager.md#versioning-alerts-for-assessment-updates)。
+
+## <a name="common-actions-will-synch-status-across-groups"></a>一般動作會在群組間同步處理狀態
+
+如果您的組織有多個評估群組，**技術**動作的行為（也就是影響整個組織的動作）已變更。 群組間的任何重複動作都已合併成一個單一動作。 單一巨集指令包含重複版本的所有上傳的記事及證據。 使用此變更，技術動作現在會如同屬於相同群組時的行為。 在一個群組或評估中對動作所做的任何變更現在都會反映在所有的實例中。 「**實施」狀態**、「**實施日期**」、「**測試狀態**」及「**測試日期**」會反映最新的更新。
+
+## <a name="language-support"></a>語言支援
+
+合規性管理員現在可用於下列語言，除了英文：中文（簡體）、中文（繁體）、法文、德文、義大利文、日文、韓文、葡萄牙文（巴西）、俄文及西班牙文。
 
 ## <a name="known-issues-in-compliance-manager-preview"></a>合規性管理員中的已知問題（預覽）
 
-下列各節涵蓋合規性管理員即將推出的版本中解決的已知問題。
+下列章節涵蓋合規性管理員目前版本中的已知問題。
 
 ### <a name="compliance-score"></a>合規性分數
 
@@ -58,26 +77,6 @@ ms.locfileid: "42635141"
 - 當建立新的評估時，會自動包含 Microsoft 受管理的控制分數和安全分數整合。
 - 安全分數整合不支援的任何動作都可以手動實施。 手動執行將會考慮該動作群組的分數。
 
-### <a name="microsoft-managed-controls"></a>Microsoft 管理的控制項
-
-- Microsoft 管理控制項的測試日期不會出現在 UI 中，甚至會包含在評估中。 若要查看測試日期資訊，您必須匯出評估。
-
-### <a name="customization"></a>自訂
-
-- 新增自訂控制項可將新控制項新增至現有的控制項系列，但不允許您新增新的控制項系列。
-- 此版本不支援連結動作專案，或新增動作專案或控制項給評估。
-- 如果您建立自訂動作，便無法進行編輯或刪除。
-
-### <a name="control-families-not-shown-in-assessments"></a>控制評估中未顯示的系列
-
-- 當您匯入範本時，以該範本為基礎的所有評估會反映屬於該範本的所有控制系列。 不過，如果您將新的控制項系列新增至範本，任何現有評估將不會反映所做的變更。 只有已更新的範本所建立的新評估會反映這些變更。
-
-### <a name="templates"></a>範本
-
-- 建立範本時，您必須同時包含**產品**和憑證的維度 **，以**確保您的範本會以合規性分數顯示。
-- 封存的範本是可編輯的，不應是可編輯的。
-- 鎖定的範本允許評估建立。 鎖定範本的目的是為了避免使用它來建立評估。
-
 ### <a name="export"></a>匯出
 
 - 當範本的狀態設定為 [匯**入**] 或 [**待處理核准**] 時，範本匯出至 JSON 失敗。
@@ -92,7 +91,3 @@ ms.locfileid: "42635141"
 ### <a name="session-timeout"></a>會話超時
 
 - 當會話超時時，可能會出現「發生錯誤」錯誤。 若要解決此問題，請移至 [[合規性管理員](https://servicetrust.microsoft.com/ComplianceManager)]，然後再登入。
- 
-### <a name="language-support"></a>語言支援
-
-- 所有語言都不支援所有的網頁。 如果不支援您的本機語言，請以美國英文查看。

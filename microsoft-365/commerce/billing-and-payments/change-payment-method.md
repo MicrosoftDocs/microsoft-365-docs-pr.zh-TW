@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: 瞭解如何變更商務用訂閱的付款條件。
-ms.openlocfilehash: c3833b656eb00eeb5a8c5e78fbdb7ae4ff9c2321
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 8b9ae2a8396ff984b8468cf364c1112cb2ef6b13
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633411"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142594"
 ---
 # <a name="change-your-payment-method"></a>變更您的付款方式
 
@@ -87,8 +87,6 @@ ms.locfileid: "42633411"
   
 當您變更為以信用卡或銀行帳戶付款的方式支付發票時，系統會自動為您建立新的訂閱、將使用者移至新的訂閱，然後停用舊的訂閱。 別擔心，您的使用者不會看到中斷服務的情況，而且其所有資訊都會透過新的訂閱使用。
 
-### <a name="use-the-new-admin-center-to-change-from-invoice-to-credit-card-or-bank-account"></a>使用新的系統管理中心從發票變更為信用卡或銀行帳戶
-
 1. 在系統管理中心中，移至 [**帳單**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品 & 服務</a>] 頁面。
 
 2. 如果您是在**表格**視圖中，請選取 [**卡片**]。
@@ -102,28 +100,6 @@ ms.locfileid: "42633411"
 6. 如果您新增付款條件，請輸入名片或帳戶詳細資料，然後選取 [**儲存**]。
   
 7. 請確認選取的支付方式正確，然後選取 [**儲存**]。
-
-### <a name="use-the-old-admin-center-to-change-from-invoice-to-credit-card-or-bank-account"></a>使用舊系統管理中心從發票變更為信用卡或銀行帳戶
-
-1. 在系統管理中心中，移至 [**帳單**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">訂閱</a>] 頁面。
-
-2. 尋找您要變更的訂閱。 在 [**付款詳細資料**] 區段中，選取 [**變更付款明細**]。
-  
-3. 在 [**變更付款明細**] 窗格中，選取 [**變更您的付款條件**]。
-  
-4. 在 [**變更您的支付方式**] 對話方塊中，選取 [**繼續**]。
-  
-5. 在 [**這種情況如何？** ] 頁面上，您可以選擇性地增加此訂閱所需的授權數目。 若要繼續，請選取 **[下一步]**。
-
-6. 有些訂閱可讓您選擇每月或年度履約承諾。 如果您在 [**您想要支付的方式**] 頁面上看到您要按年或月支付的選擇，請選擇您想要支付多少頻率。
-  
-7. 在 [**付款條件**] 清單中，選擇 [**現有卡**]、[**新信用卡**] 或 [**新銀行帳戶**]。
-  
-8. 如果您選擇 [**新信用卡**] 或 [**新銀行帳戶**] 選項，請填寫其餘的付款資訊。
-
-9. 當您填寫表單時，請選取 [**下**一步]。
-
-當您回到 [**訂閱**] 頁面時，您會看到標為 [**已停用**] 的舊訂閱，**以及標示為**[使用中] 的新訂閱 您可以將舊訂閱放到過期。
 
 ::: moniker-end
 
@@ -164,8 +140,6 @@ ms.locfileid: "42633411"
 
 如果您的訂單數量太高，則可能需要信用支票。 如果是的話，您會看到 [無法變更為發票的訊息]。 您的訂單需要信用支票。 在此情況下，您會改為以手動方式支付發票。 使用下列步驟完成手動變更。
 
-若不需要信用檢查，請使用使用新系統管理中心的步驟，將[信用卡或銀行帳戶變更為 [發票](#use-the-new-admin-center-to-change-from-credit-card-or-bank-account-to-invoice)]。
-
 1. 移至<a href="https://Office365.com" target="_blank">Office365.com</a> ，並購買與您目前擁有的訂閱相同的訂閱。 在取出時，選擇要依發票付款的選項。
 
 > [!IMPORTANT]
@@ -173,7 +147,7 @@ ms.locfileid: "42633411"
 
 2. 購買完成後，請取消原始訂閱。 您的使用者會自動移至新的訂閱。
 
-### <a name="use-the-new-admin-center-to-change-from-credit-card-or-bank-account-to-invoice"></a>使用新的系統管理中心從信用卡或銀行帳戶變更為 [發票]
+若不需要信用檢查，請使用下列步驟變更為按發票付款。
 
 1. 在系統管理中心中，移至 [**帳單**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品 & 服務</a>] 頁面。
 
@@ -190,23 +164,6 @@ ms.locfileid: "42633411"
 7. 當您完成時，請選取 [**儲存**]。
 
 8. 請確認選取的支付方式正確，然後選取 [**儲存**]。
-
-### <a name="use-the-old-admin-center-to-change-from-credit-card-or-bank-account-to-invoice"></a>使用舊系統管理中心從信用卡或銀行帳戶變更為發票
-
-1. 在系統管理中心中，移至 [**帳單**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">訂閱</a>] 頁面。
-
-2. 尋找您要變更的訂閱。 在 [**支付方式**] 區段中，選取 [**變更付款明細**]。
-
-    ![The Payment method section of a Subscription card for a subscription that pays by credit card.](../../media/6c9d9cae-6086-4687-a979-bb971f35f1b4.png)
-  
-3. 在 [**變更付款明細**] 窗格中，選取 [**變更您的付款條件**]。
-
-    > [!TIP]
-    > 如果 [**變更您的付款條件**] 連結未顯示，則表示您無法將信用卡或銀行帳戶變更為 [發票]，因為該預訂不符合透過發票付款所需的最低成本金額。 最小成本金額因地理位置而異。
-  
-4. 在 [**變更您的支付方式**] 對話方塊中，選取 [**繼續**]。
-  
-5. 請選取 **[確定]** 以回到系統管理中心。
 
 ::: moniker-end
 
@@ -236,20 +193,9 @@ ms.locfileid: "42633411"
 
 您可以使用下列步驟隨時驗證已針對訂閱設定的付款方式。
 
-> [!NOTE]
-> 如果您目前未使用新的 Microsoft 365 系統管理中心，必須先將其開啟。 若要將其開啟，請選取位於首頁頂端的 [**嘗試新**的系統管理中心] 切換。
-
-### <a name="use-the-new-admin-center-to-verify-which-payment-method-is-configured"></a>使用新的系統管理中心確認已設定的支付方式
-
 1. 在系統管理中心中，移至 [**帳單**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品 & 服務</a>] 頁面。
 
 2. 找到您要驗證的訂閱。 為訂閱設定的支付方式會顯示在 [**帳單**] 區段中。
-
-### <a name="use-the-old-admin-center-to-verify-which-payment-method-is-configured"></a>使用舊的系統管理中心，確認設定了哪種付款條件
-
-1. 在系統管理中心中，移至 [**帳單**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">訂閱</a>] 頁面。
-
-2. 找到您要驗證的訂閱。 為訂閱設定的支付方式會顯示在 [**付款條件**] 底下。
 
 ::: moniker-end
 

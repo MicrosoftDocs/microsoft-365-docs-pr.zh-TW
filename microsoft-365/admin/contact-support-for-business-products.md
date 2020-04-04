@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: 使用您的地區或區域所列電話號碼，或提交線上服務要求，或造訪 Microsoft 網上商店以取得技術和帳單支援。
 feedback_system: None
-ms.openlocfilehash: b77f08b8e0734cfa7629a5c5d61f22d63ef6328c
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 4bb35f6d8c2895ec7adf37c6b4e149962fb616bc
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106057"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142548"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>連絡商務產品的客戶支援 - 系統管理說明
 
@@ -39,9 +39,6 @@ ms.locfileid: "43106057"
 ## <a name="online-support"></a>[線上支援](#tab/online)
 
 啟動線上服務要求，以節省時間。我們會協助您找出解決方案，或是為您洽詢專家，專家會再以電子郵件或電話連絡您。[了解初始支援回應時間](https://go.microsoft.com/fwlink/p/?LinkId=518251)。
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 [試用新的系統管理中心] **** 開關將它開啟。
 
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。 如果您收到訊息說明您沒有權限存取此頁面或執行此動作，則您不是系統管理員。[誰擁有公司的系統管理員權限？](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
 
@@ -80,8 +77,6 @@ ms.locfileid: "43106057"
 2. 輸入您的所在地點，然後搜尋來尋找您附近的 Microsoft Store。
 
 3. 選擇商店，然後選取 [立刻排程服務預約]****。
-
----
 
 ::: moniker-end
 
