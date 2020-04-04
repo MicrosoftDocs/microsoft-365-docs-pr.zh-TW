@@ -149,6 +149,8 @@
           href: document-fingerprinting.md
         - name: 敏感性資訊的 DLP 函數
           href: what-the-dlp-functions-look-for.md
+    - name: M365 中的加密
+      href: encryption.md
     - name: 客戶金鑰
       items:
         - name: Office 365 中的客戶機碼服務加密
@@ -200,6 +202,8 @@
               href: legacy-information-for-message-encryption.md
             - name: 設定舊版 Office 365 郵件加密的 Azure 版權管理
               href: set-up-azure-rms-for-previous-version-message-encryption.md
+    - name: 在 SharePoint 系統管理中心中設定 IRM
+      href: set-up-irm-in-sp-admin-center.md
     - name: 了解資料分類 (預覽)
       href: data-classification-overview.md
       items:
@@ -765,26 +769,26 @@
       href: get-started-with-service-trust-portal.md
     - name: 合規性分數和合規性管理員
       items:
-        - name: 合規性分數 (預覽)
+        - name: 合規性分數（預覽）
           href: compliance-score.md
-        - name: 設定合規性分數 (預覽)
+        - name: 設定合規性分數（預覽）
           href: compliance-score-setup.md
-        - name: 使用合規性分數 (預覽)
+        - name: 使用合規性分數（預覽）
           href: working-with-compliance-score.md
-        - name: 合規性分數計算 (預覽)
+        - name: 合規性分數計算（預覽）
           href: compliance-score-methodology.md
-        - name: 合規性分數版本資訊 (預覽)
+        - name: 合規性分數發行附注（預覽）
           href: compliance-score-release-notes.md
         - name: 合規性分數常見問題（預覽）
           href: compliance-score-faq.md
-        - name: 合規性管理員 (預覽版)
+        - name: 合規性管理員（預覽）
           href: compliance-manager-overview.md
           items:
-            - name: 合規性管理員的新增功能 (預覽版)
+            - name: 合規性管理員（預覽）發行附注
               href: compliance-manager-release-notes.md
-            - name: 使用合規性管理員 (預覽版)
+            - name: 使用合規性管理員（預覽）
               href: working-with-compliance-manager.md
-            - name: 合規性管理員（經典）
+            - name: 合規性管理員 (傳統)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: GDPR 資料主體要求工具
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
