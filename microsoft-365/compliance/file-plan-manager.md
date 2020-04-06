@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 檔案計劃管理員提供對於保留標籤、保留標籤原則的進階管理功能，並且提供整合的方式讓標籤和標籤至內容活動周遊整個內容生命週期 – 從建立、共同作業、記錄宣告、保留，到最終的處置。
-ms.openlocfilehash: 26c34d40359d00b540b30e0f6e3ddf3878e80f9a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 23aa0e242464ebd450a0930bcda4274c026c7535
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634421"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105640"
 ---
 # <a name="overview-of-file-plan-manager"></a>檔案計劃管理員的概觀
+
+>*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
 檔案計劃管理員提供對於保留標籤、保留標籤原則的進階管理功能，並且提供整合的方式讓標籤和標籤至內容活動周遊整個內容生命週期 – 從建立、共同作業、記錄宣告、保留，到最終的處置。 
 
@@ -33,11 +35,7 @@ ms.locfileid: "42634421"
 
 ## <a name="accessing-file-plan-manager"></a>存取檔案計劃管理員
 
-存取檔案計劃管理員有兩個需求，需求如下：
-
-- Office 365 企業版 E5 訂閱。
-
-- 使用者已獲指派安全性與合規性中心的下列其中一個角色：
+若要存取檔案規劃管理員，必須擁有下列其中一種系統管理員角色：
     
     - 保留管理員
     

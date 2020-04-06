@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何移轉使用者檔案和設定。
-ms.openlocfilehash: 9332542e5b87de3e3c237f969a3842545eb03dc4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f17b11efe889359f97087ac5d96ffa968ca8cd88
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085284"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113538"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>步驟 4：使用者檔案和設定移轉
 
@@ -49,7 +49,7 @@ ms.locfileid: "42085284"
 
 這對您的組織是否可行取決於您規劃的移轉規模。很明顯地，對於直接與使用者合作、了解使用者需求、將檔案複製到其新的或剛更新的電腦，這會受限於時間和實際情況。
 
-如果您選擇手動移轉，可能需要評估是否能在 2020 年 1 月前完成工作，屆時 Windows 7 的支援將會終止。如果不確定，請使用下列其中一個自動化選項，或是尋求其他人的協助。
+如果您選擇手動移轉，請考慮使用下列一個自動選項，或要求更多人員協助。
 
 ## <a name="automated-migration-using-usmt"></a>使用 USMT 自動化移轉 
 
@@ -89,8 +89,8 @@ Windows 10 包含許多實用的內建應用程式作為標準安裝，但您可
 
 ## <a name="next-step"></a>下一步
 
-## <a name="step-5-security-and-compliance-considerationshttpsakamsmdd5"></a>[步驟 5：安全性與相容性考量事項](https://aka.ms/mdd5)
+## <a name="step-5-security-and-compliance-considerations"></a>[步驟 5：安全性與相容性考量事項](https://aka.ms/mdd5)
 
 ## <a name="previous-step"></a>上一步
 
-## <a name="step-3-office-and-lob-app-deliveryhttpsakamsmdd3"></a>[步驟 3：Office 和 LOB 應用程式傳遞](https://aka.ms/mdd3)
+## <a name="step-3-office-and-lob-app-delivery"></a>[步驟 3：Office 和 LOB 應用程式傳遞](https://aka.ms/mdd3)

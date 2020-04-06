@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 適用於大型組織的 Windows 7 至 Windows 10 自動升級
-ms.openlocfilehash: 727f165dc941eeb429e865fc8321499af6f23512
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f9ba1022b4c7f702f6cb9b815deee59047c4b704
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085616"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113478"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>適用於大型組織的 Windows 7 至 Windows 10 自動就地升級
 
-自 2020 年 1 月 14 日起，我們不再提供適用於執行 Windows 7 電腦的安全性更新或支援。 從 Windows 7 升級至 Windows 10 的時間只剩幾個月，卻還有許多選項需要進行部署，因此 IT 社群內最常見的問題便是「從 Windows 7 移至 Windows 10 的最快方法是什麼？」 簡單來說，答案就是針對現有的電腦執行就地升級，這樣做的好處是可以減少對桌面部署程序幾個層面的關注。
+自 2020 年 1 月 14 日起，我們不再提供執行 Windows 7 電腦的安全性更新或支援。 從 Windows 7 移轉至具有多種部署選項的 Windows 10，IT 社群內最常見的問題是「從 Windows 7 移至 Windows 10 的最快方法是什麼？」 簡單來說，答案就是針對現有的電腦執行就地升級，這樣做的好處是可以減少對桌面部署程序幾個層面的關注。
 
 <center><img src="../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
@@ -38,7 +38,7 @@ ms.locfileid: "42085616"
 
 ## <a name="in-place-upgrade-reliability-safeguards-and-scale"></a>就地升級的可靠性、保護措施和規模
 
-就地升級至 Windows 10 是可靠的方法，可以將現有執行 Windows 7 或更新版裝置移至 Windows 10，而且不需要移轉檔案或重新安裝應用程式。 就地升級之後，使用者的檔案、設定以及可使用的應用程式會與先前的 Windows 7 安裝一致。 您可能想要趁這個機會清理現有的應用程式或設定，然而實際上，由於我們已越來越接近 2020 年 1 月 Windows 7 支援終止的時間，時間上已不容許我們尋求其他的選項。 若是類似架構之間的移動 (32 位元移至 32 位元，或 64 位元移至 64 位元) 以及 Windows 類似版本之間的移動 (Professional 移至專業版，或企業版移至企業版)，這類的升級同樣也適用。
+就地升級至 Windows 10 是可靠的方法，可以將現有執行 Windows 7 或更新版裝置移至 Windows 10，而且不需要移轉檔案或重新安裝應用程式。 就地升級之後，使用者的檔案、設定以及可使用的應用程式會與先前的 Windows 7 安裝一致。 若是類似架構之間的移動 (32 位元移至 32 位元，或 64 位元移至 64 位元) 以及 Windows 類似版本之間的移動 (Professional 移至專業版，或企業版移至企業版)，這類的升級同樣也適用。
 
 依預設，升級程序會備份您先前的 Windows 安裝作為升級的一部分，因此發生升級失敗，或是如果裝置或應用程式在升級後無法正常運作時，電腦可以回復至 Windows 7。 已升級的電腦依預設有 10 天的期限，因此您可以在需要時手動啟動 Windows 7 的回復。
 

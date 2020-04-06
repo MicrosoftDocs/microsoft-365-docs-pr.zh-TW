@@ -16,12 +16,12 @@ ms.collection:
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: 了解 Microsoft 365 系統管理員可使用的資源。
 ms.custom: okr_smb
-ms.openlocfilehash: cafb63d53178a2cc21448643ba9fd78773265aa8
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: b087007d99c16f06cfdacaf8021e32a9566da5d5
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046912"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105690"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Microsoft 365 系統管理說明中心
 
@@ -41,11 +41,11 @@ ms.locfileid: "43046912"
                         <h3>Office 365 將變成 Microsoft 365</h3>
                         <p>我們正在變更部分 Office 365 和 Microsoft 365 訂閱名稱。 您不需要執行任何動作。 您的服務、App 和功能，以及訂閱價格都會保持相同。 您的訂閱名稱會在 Microsoft 365 系統管理中心自動更新，而帳單將於 2020 年 4 月 21 日開始更新。</p>
                         <ul>
-                            <li><p>Office 365 商務基本版現在是 Microsoft 365 商務基本版</p></li>
-                            <li><p>Office 365 商務進階版現在是 Microsoft 365 商務標準版</p></li>
-                            <li><p>Microsoft 365 商務版現在是 Microsoft 365 商務進階版</p></li>
-                            <li><p>Office 365 商務版現在是商務用 Microsoft 365 應用程式</p></li>
-                            <li><p>Office 365 專業增強版現在是企業用 Microsoft 365 應用程式</p></li>
+                            <li><p><b>Office 365 商務基本版</b>現在是 <b>Microsoft 365 商務基本版</b>。</p></li>
+                            <li><p><b>Office 365 商務進階版</b>現在是 <b>Microsoft 365 商務標準版</b>。</p></li>
+                            <li><p><b>Microsoft 365 商務版</b>現在是 <b>Microsoft 365 商務進階版</b>。</p></li>
+                            <li><p><b>Office 365 商務版</b>現在是<b>商務用 Microsoft 365 應用程式</b>。</p></li>
+                            <li><p><b>Office 365 專業增強版</b>現在是<b>企業用 Microsoft 365 應用程式</b>。</p></li>
                         </ul>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=2120533">深入了解</a></p>
                     </div>
@@ -149,7 +149,7 @@ ms.locfileid: "43046912"
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/microsoft-365/#pivot=home&panel=home-all">
+        <a href="https://docs.microsoft.com/microsoft-365">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

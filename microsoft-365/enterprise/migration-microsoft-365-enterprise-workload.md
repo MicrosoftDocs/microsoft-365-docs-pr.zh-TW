@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 在整個組織中逐步執行將 Microsoft Office、Office 伺服器及 Windows 的各版本移轉為 Microsoft 365 企業版的程序。
-ms.openlocfilehash: 7506d374391e05202be685d8ebfe8a04e8d62761
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 76396ea3eb4622bb27455938f5c645dd1240003a
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053080"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113492"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>移轉至 Microsoft 365 企業版
 
@@ -171,7 +171,7 @@ Windows 7 已於 **2020 年 1 月 14 日**終止支援。 若要移轉執行 Win
 
 ## <a name="transition-your-entire-organization"></a>轉換您的整個組織
 
-若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請下載[轉換海報](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
+若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請參閱[轉換海報](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)。
 
 [![轉換至 Microsoft 365 海報的影像](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 

@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: 6707a61ae2fd9f7dddb7aa63927a53f1795b5127
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 4d3f2f84daf1415e7a5f48d66f1fb9d86c612d67
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634451"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105985"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
+
+>*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
 如需敏感度標籤為何及其如何可協助您保護組織資料的相關資訊，請參閱[了解敏感度標籤](sensitivity-labels.md)。
 
@@ -45,6 +47,12 @@ ms.locfileid: "42634451"
 部署及套用敏感度標籤的基本流程：
 
 ![顯示敏感度標籤的工作流程圖](../media/Sensitivity-label-flow.png)
+
+## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>敏感度標籤的訂閱和授權需求
+
+許多不同的訂閱都支援敏感度標籤，以及使用者的授權需求取決於您所使用的功能。
+
+若要查看自 2020 年 4 月 1 日起授權使用者使用 Microsoft 365 合規性功能的選項，請參閱 [Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。 如需敏感度標籤，請參閱[資訊保護](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)一節及相關的 PDF 下載。
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>建立和管理敏感度標籤所需的權限
 

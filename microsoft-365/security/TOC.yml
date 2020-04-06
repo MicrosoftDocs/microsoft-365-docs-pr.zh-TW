@@ -185,6 +185,8 @@
                   href: mtp/mtp-permissions.md
                 - name: 設定時區
                   href: mtp/mtp-time-zone.md
+            - name: 提供意見反應
+              href: mtp/feedback.md
             - name: 透過 ServiceNow 管理票證
               href: ./mtp/tickets.md
     - name: Office 365 安全性
@@ -345,13 +347,11 @@
             - name: EOP 是什麼？
               href: ./office-365-security/what-is-eop.md
               items:
-                - name: 支援透過 IPv6 的匿名輸入電子郵件
-                  href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
                 - name: 在 EOP 獨立版中封鎖垃圾郵件
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
                 - name: 使用 Exchange Online Protection 保護內部部署的信箱
                   href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
-                - name: 設定獨立 EOP 以將垃圾郵件傳送至垃圾郵件資料夾
+                - name: '設定獨立 EOP 以將垃圾郵件傳送至 [垃圾郵件] 資料夾'
                   href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
         - name: 進階威脅防護
           href: ./office-365-security/office-365-atp.md
@@ -445,6 +445,8 @@
           items:
             - name: 安全性與合規性中心內的郵件追蹤
               href: ./office-365-security/message-trace-scc.md
+            - name: 新增透過 IPv6 支援匿名輸入電子郵件
+              href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: 檢視安全性與合規性中心內的電子郵件安全性報告
               href: ./office-365-security/view-email-security-reports.md
             - name: 安全性與合規性中心內的郵件流程深入解析
