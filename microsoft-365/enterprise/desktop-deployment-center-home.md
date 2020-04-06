@@ -16,17 +16,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 桌面部署中心概觀。
-ms.openlocfilehash: 8e5c76595bb5f2f00e5a167be5a88bfbbd70d740
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 540f0d50ef8adc292fc1fbd4ef13bb12556d596c
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067877"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113526"
 ---
 # <a name="desktop-deployment-center"></a>桌面部署中心
 
 <strong>從 Windows 7 升級到 Windows 10</strong>
-<p>Windows 7 的延伸支援服務在 2020 年 1 月 14 日結束。 從 Windows 7 就地升級到 Windows 10 是最快的部署方法。 您可以<a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">升級一部電腦</a>或<a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">使用 Microsoft Endpoint Configuration Manager 升級上千台電腦</a>。 您不需要專注於應用程式傳遞、檔案移轉、自訂影像，或啟用就地升級的雲端服務。 您可以使用已有的工具升級現有的電腦，並專注於下列的升級部署步驟： </p>
+<p>Windows 7 的延伸支援服務已於 2020 年 1 月 14 日結束。 從 Windows 7 就地升級到 Windows 10 是最快的部署方法。 您可以<a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">升級一部電腦</a>或<a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">使用 Microsoft Endpoint Configuration Manager 升級上千台電腦</a>。 您不需要專注於應用程式傳遞、檔案移轉、自訂影像，或啟用就地升級的雲端服務。 您可以使用已有的工具升級現有的電腦，並專注於下列的升級部署步驟： </p>
 
 <p>
 </p>
