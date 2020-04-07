@@ -10,6 +10,8 @@
           href: intro/technologies.md
         - name: Microsoft 受管理的電腦和 ITIL
           href: MMD-and-ITSM.md
+        - name: 合規性
+          href: intro/compliance.md
     - name: Microsoft 受管理的電腦服務描述
       href: service-description/index.md
       items:
