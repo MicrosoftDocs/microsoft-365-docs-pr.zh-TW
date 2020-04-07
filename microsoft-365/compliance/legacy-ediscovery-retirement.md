@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Exchange Online 中的 In-Place eDiscovery 和 In-Place 保留（以及對應的 PowerShell Cmdlet）會在2020的上半年內淘汰。 Search-Mailbox Cmdlet 和 Office 365 Advanced eDiscovery 1.0 1.0 也會在相同的時段內淘汰。
-ms.openlocfilehash: d0d9856a30d905e73ba31abc9af92bbe060c0ec4
-ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
+ms.openlocfilehash: 2d1f319986d761135e2c22b1d5882797f90f910c
+ms.sourcegitcommit: 9ba28b255640c7b22f627613430dc69191bfaede
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43024353"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43158434"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>舊的 eDiscovery 工具退休
 
@@ -53,10 +53,8 @@ ms.locfileid: "43024353"
    - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
 
    - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
-   
 
-
-- [Office 365 Advanced ediscovery 1.0](office-365-advanced-ediscovery.md)版，也就是透過 Office 365 安全性 & 合規性中心的 eDiscovery 案例所存取的第一版的高級 ediscovery。
+- [Office 365 Advanced ediscovery 1.0](office-365-advanced-ediscovery.md)版，也就是透過 Office 365 安全性 & 合規性中心的核心 eDiscovery 案例所存取的第一個版本。 停用高級 eDiscovery 1.0 版不會影響您建立及管理核心 eDiscovery 案例的能力。
 
 > [!NOTE]
 > 即將淘汰的 eDiscovery 功能僅適用于雲端式版本的 Microsoft 365 和 Office 365。 在內部部署 Exchange 和 SharePoint 版本中的 eDiscovery 功能仍會受到支援，直到進一步通知為止。
@@ -141,7 +139,7 @@ ms.locfileid: "43024353"
 <tr class=even>
   <td>將郵件從一個信箱複製到不同的信箱</td>
   <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">指派許可權給信箱</a></td>
-  <td>若要讓人員能夠存取另一個使用者的電子郵件（例如，當員工離開您的組織，而您需要讓另一個人存取該離職員工的電子郵件）時，建議您指派該人員的許可權來存取離職員工的郵箱。 因此，不要將信箱專案複製到另一個使用者信箱或共用信箱，只需指派使用者的許可權即可存取來源信箱。</td>
+  <td>若要讓人員能夠存取另一個使用者的電子郵件（例如，當員工離開您的組織，而您需要讓其他人存取先前員工的電子郵件），建議您指派該人員存取先前員工的信箱。 因此，不要將信箱專案複製到另一個使用者信箱或共用信箱，只需指派使用者的許可權即可存取來源信箱。</td>
   
   </tr>
 <tr class="odd">
@@ -228,7 +226,7 @@ Microsoft 365 規範中心也會使用[規範界限](set-up-compliance-boundarie
   <tr class=even>
   <td>將郵件從一個信箱複製到不同的信箱</td>
   <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">指派許可權給信箱</a></td>
-  <td>若要讓人員能夠存取另一個使用者的電子郵件（例如，當員工離開您的組織，而您需要讓另一個人存取該離職員工的電子郵件）時，建議您指派該人員的許可權來存取離職員工的郵箱。 因此，不要將信箱專案複製到另一個使用者信箱或共用信箱，只需指派使用者的許可權即可存取來源信箱。</td>
+  <td>若要讓人員能夠存取另一個使用者的電子郵件（例如，當員工離開您的組織，而您需要讓其他人存取先前員工的電子郵件），建議您指派該人員存取先前員工的信箱。 因此，不要將信箱專案複製到另一個使用者信箱或共用信箱，只需指派使用者的許可權即可存取來源信箱。</td>
   
   </tr>
 
@@ -331,14 +329,28 @@ Exchange 系統管理中心的 In-Place eDiscovery & 保留功能，以及 excha
 
 ## <a name="advanced-ediscovery-v10"></a>Advanced eDiscovery v 1。0
 
-Advanced ediscovery 1.0 版，這是 eDiscovery 案例中的高級 eDiscovery 版本，可透過按一下 [**切換至高級 ediscovery** ] 進行撤銷。 其功能已由 Microsoft 365 規範中心內的新「[高級 eDiscovery」解決方案](https://aka.ms/edisco)所取代。
+Advanced ediscovery 1.0 版，也就是在核心 eDiscovery 案例中，您可以按一下 [**切換至高級 ediscovery**]，將會停用此版本的高級 ediscovery。 其功能已由 Microsoft 365 規範中心內的新「[高級 eDiscovery」解決方案](https://aka.ms/edisco)所取代。
+
+若要判斷您的組織是否使用 Advanced eDiscovery 1.0 版：
+
+1. 移至[Office 365 的安全性 & 規範中心](https://protection.office.com)。
+
+2. 在安全性 & 規範中心的左功能窗格中，按一下 [ **ediscovery > ediscovery**，然後開啟核心 eDiscovery 案例。
+
+3. 如果您看到 [**切換至「高級 ediscovery** 」按鈕，請按一下此按鈕將會帶您的1.0 版本的高級 ediscovery （即將淘汰）。 在核心 eDiscovery 中建立及管理案例的功能將不會受到影響。 只有在高級 eDiscovery 1.0 （按一下 [**切換成 Advanced eDiscovery**]）中新增及分析案例資料的功能，才會停用。
 
 Microsoft 365 （也稱為「 *Advanced ediscovery 2.0 2.0*」）中新的 [ediscovery 解決方案] 提供了原始解決方案的所有功能，但現在包含以保管人為基礎的方法，可識別其他 Microsoft 365 服務中的內容、收集該內容，然後將其新增至審閱集，以供檢閱者使用 fast search 查詢、標記和分析功能，協助挑選相關的檔。 「高級 eDiscovery」現在包括 Microsoft 和非 Microsoft 檔案類型的增強的處理和原生檢視器、[這裡](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20)是檔案類型的完整清單，以及支援的元資料欄位在[這裡](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)。 此外，新的高級 eDiscovery 解決方案提供功能強大的保管人功能，可讓您將保留套用至不同服務中的內容、通知使用者保留，以及追蹤保管人回應，全部都是在高級 eDiscovery 案例內。
+
+存取高級 eDiscovery 2.0：
+
+1. 移至[Microsoft 365 規範中心](https://compliance.microsoft.com)。
+
+2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [**全部顯示**]，然後按一下 [ **eDiscovery > Advanced**]。
 
 此時，我們建議您開始將 eDiscovery 工作流程轉換為新的高級 eDiscovery 功能。 雖然您仍然可以存取現有案例中的 Advanced eDiscovery 1.0 版，但 Microsoft 支援不會在2020年10月1日之後提供支援。 如需詳細資訊，請參閱下列時程表。
 
 ### <a name="scope-of-affected-organizations"></a>受影響組織的範圍
-    
+
 - Office 365 和 Microsoft 365 企業組織
 
 - Office 365 和 Microsoft 365 教育組織

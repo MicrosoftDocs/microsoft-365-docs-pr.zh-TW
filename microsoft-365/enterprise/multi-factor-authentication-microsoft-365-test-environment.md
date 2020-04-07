@@ -15,18 +15,18 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用在 Microsoft 365 企業版測試環境中傳送至 smart phone 的文字訊息，設定多重要素驗證。
-ms.openlocfilehash: ea2041a463b224781df101251dab0f4d9f0e8753
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b17c6b3b39bebaff2737ea5e9bb198beef00844c
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633191"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153877"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企業版測試環境的多重要素驗證
 
 *這個測試實驗室指南可用於 Microsoft 365 企業版和 Office 365 企業版兩種測試環境。*
 
-若要獲得其他安全性，以登入 Microsoft 365 或任何服務或應用程式使用您訂閱的 Azure AD 租使用者，您可以啟用 Azure 多重要素驗證，它只需要使用者名稱和密碼，即可驗證帳戶。 
+若要取得其他安全性，以供登入 Microsoft 365 或任何服務或應用程式使用您訂閱的 Azure AD 租使用者，您可以啟用 Azure 多重要素驗證，它只需要使用者名稱和密碼，即可驗證帳戶。 
 
 使用多重要素驗證時，使用者必須認可電話、輸入短信中傳送的驗證碼，或是在正確輸入密碼後，在智慧型電話上指定應用程式密碼。 只有在滿足這個第二次驗證要素之後，他們才可以登入。 
   
@@ -82,7 +82,7 @@ ms.locfileid: "42633191"
     
 2. 移至 Office 365 入口網站（[https://portal.office.com](https://portal.office.com)），並使用使用者2帳戶名稱和密碼登入。
     
-3. 登入後，系統會提示您設定帳戶以取得詳細資訊。 按 [下一步]****。
+3. 登入後，系統會提示您設定帳戶以取得詳細資訊。 按 **[下一步]**。
     
 4. 在 [**其他安全性驗證**] 頁面上：
     
@@ -92,7 +92,7 @@ ms.locfileid: "42633191"
     
    - 在**方法**中，按一下 [以**文字訊息傳送程式碼**]。
     
-5. 按 [下一步]****。
+5. 按 **[下一步]**。
     
 6. 從 smart phone 上收到的文字訊息中輸入驗證碼，然後按一下 [**驗證**]。
     

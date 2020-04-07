@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: 瞭解如何使用 Microsoft 365 系統管理中心的 [Microsoft 365 報告] 儀表板來取得 Microsoft Forms 活動報告。
-ms.openlocfilehash: c836644f88fe635bfe608f57e015f06e9f815862
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 28520bf931df9f909a933be19800ee45fd863cd6
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046936"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151414"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>系統管理中心的 Microsoft 365 報告-表單活動
 
@@ -41,9 +41,9 @@ Microsoft 365**報告**儀表板會向您顯示組織中各產品的活動概況
     
 2. 從 [**選取報告**] 下拉式清單中，選取 [**表單** \> **活動**]。
 
-## <a name="interpret-the-email-activity-report"></a>解讀電子郵件活動報告
+## <a name="interpret-the-forms-activity-report"></a>轉譯表單活動報告
 
-您可以查看 [**活動**] 和 [**使用者**] 圖表，以瞭解使用者的電子郵件活動。 
+您可以查看 [**活動**] 和 [**使用者**] 圖表，以取得使用者的表單活動。 
 
 ![表單活動報告](../../media/adminformsactivity.png)
 

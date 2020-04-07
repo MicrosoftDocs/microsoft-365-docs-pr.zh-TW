@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 若要在您的 Office 365 或 Microsoft 組織中執行記錄管理策略，請使用保留標籤將內容宣告為記錄。 然後發佈或自動套用保留記錄標籤。
-ms.openlocfilehash: ba69c9705c14c2f836f67c8747d30ee2280c6d99
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d497f3e536a54226ad9e7b5bb9a399f66774c25e
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106141"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153831"
 ---
 # <a name="overview-of-records"></a>記錄概觀
 
@@ -107,9 +107,6 @@ ms.locfileid: "43106141"
 <br/><br/>
 
 ![標記為記錄之文件的 [記錄狀態] 內容](../media/recordversioning8.png)
-
-> [!NOTE]
-> 記錄版本設定要求每位有權編輯在 SharePoint 網站或 OneDrive 帳戶中被宣告為記錄的內容的使用者，都必須獲得 Office 365 Enterprise E5 授權。 具有唯讀存取權的使用者不需要此授權。
 
 ### <a name="locking-and-unlocking-a-record"></a>鎖定和解除鎖定記錄
 

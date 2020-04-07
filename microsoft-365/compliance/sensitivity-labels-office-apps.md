@@ -15,20 +15,26 @@ search.appverid:
 - MOE150
 - MET150
 description: 深入瞭解使用者如何使用 Office 應用程式中的敏感度標籤、適用于行動裝置的 Office 應用程式，以及適用于 web 的 Office 應用程式。 瞭解哪些應用程式支援靈敏度標籤。
-ms.openlocfilehash: 595381984390321ed810af61f6234428f31551f3
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 4cb08f79bd45199b443332fc80b1d595ee3f17cb
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106089"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151404"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
->*[安全性 & 符合性的 Microsoft 365 授權指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
 當您從 Microsoft 365 規範中心或同等標籤中心[發行](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)敏感度標籤時，會開始出現在 Office 應用程式中，讓使用者在建立或編輯資料時進行分類及保護。
 
 使用本文中的資訊，協助您在 Office app 中成功管理敏感度標籤。 例如，識別支援內建標籤所需的應用程式最少版本，並瞭解與 Azure 資訊保護整合標籤用戶端的互動，以及與其他應用程式和服務的相容性。
+
+## <a name="labeling-client-for-desktop-apps"></a>用於桌面應用程式的標籤用戶端
+
+若要使用內置於 Windows 和 Mac Office 桌面應用程式的敏感度標籤，您必須使用 Office 的訂閱版本。 這項標籤用戶端不支援獨立版本的 Office，例如 Office 2016 或 Office 2019。
+
+若要在 Windows 電腦上使用具有這些獨立版本 Office 的靈敏度標籤，請安裝[Azure 資訊保護統一的標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)。
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>支援應用程式中的靈敏度標籤功能
 

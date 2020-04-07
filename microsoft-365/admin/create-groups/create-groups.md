@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 瞭解如何建立及刪除 Office 365 群組、新增及移除群組成員，以及自訂群組的運作方式。
-ms.openlocfilehash: 59a7cec5fb6822ecb622bf4abe4cebd859b6f206
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 8b9580fd37581de96d3dc35170a1a61640cc697d
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894608"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153541"
 ---
 # <a name="create-an-office-365-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 admin center 中建立 Office 365 群組
   
-當使用者可以從 Outlook 或其他應用程式（以系統管理員的身分）建立 Office 365 群組時，您可能需要建立或刪除群組、新增或移除成員，並自訂其運作方式。 Microsoft 365 系統管理中心是執行這項作業的地方。 
+當使用者可以從 Outlook 或其他應用程式（以系統管理員的身分）建立 Office 365 群組時，您可能需要建立或刪除群組、新增或移除成員，並自訂其運作方式。 如果您是全域系統管理員或群組管理員，您可以在 Microsoft 365 系統管理中心中執行此動作。 
 
 > [!TIP]
 > 您必須在 Yammer 中建立 Office 365 連線的 Yammer 群組，但可以在 Microsoft 365 系統管理中心（如其他 Office 365 群組）進行管理。 若要深入瞭解，請參閱[Yammer 和 Office 365 群組](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx)。 
@@ -115,7 +115,7 @@ ms.locfileid: "42894608"
 
 ## <a name="next-step-manage-your-group"></a>後續步驟：管理您的群組
 
-在建立新群組並新增成員之後，您可以進一步設定群組，例如編輯群組名稱或描述、變更擁有者或成員，以及指定外部寄件者是否可以電子郵件群組，以及是否要傳送群組的副本成員的交談。 如需詳細資訊，請參閱[管理 Office 365 群組](manage-groups.md)。
+在建立新群組並新增成員之後，您可以進一步設定群組，例如編輯群組名稱或描述、變更擁有者或成員，以及指定外部寄件者是否可以電子郵件群組，以及是否要將群組交談的複本傳送給成員。 如需詳細資訊，請參閱[管理 Office 365 群組](manage-groups.md)。
 
 ## <a name="related-articles"></a>相關文章
 

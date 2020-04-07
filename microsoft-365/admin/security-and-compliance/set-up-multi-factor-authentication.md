@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何使用安全性預設來設定 Office 365 使用者的多重要素驗證。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 914d01bf2f045c6752aba4f2df3a204c6a21d09c
-ms.sourcegitcommit: 4d4d27a49eb258dc560439ca4baf61ebb9c1eff3
+ms.openlocfilehash: 331552a4de21198fe7fbc9980e89bfcd87449ffa
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43075605"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153553"
 ---
 # <a name="set-up-multi-factor-authentication"></a>設定多重要素驗證
   
 > [!IMPORTANT]
-> 如果您在2019年10月21日之後購買訂閱或試用版，且意外提示您進行 MFA，[安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)會自動為您的訂閱啟用。
+> 如果您在2019年10月21日後購買訂閱或試用版，且意外提示您進行多重要素驗證（MFA），則會自動為您的訂閱啟用[安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
 
-每個新的商務用 Office 365 或 Microsoft 365 商務版訂閱都會自動開啟安全性預設。 這表示每位使用者都必須設定多重要素驗證 (MFA)，並在其行動裝置上安裝 Authenticator 應用程式。 如需詳細資訊，請參閱[設定 Office 365 的雙步驟驗證](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14)。  
+每個新的商務用 Office 365 或 Microsoft 365 商務版訂閱都會自動開啟安全性預設。 這表示每位使用者都必須在其行動裝置上設定 MFA，並安裝 Microsoft 驗證應用程式。 如需詳細資訊，請參閱[設定 Office 365 的雙步驟驗證](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14)。  
 
 每次登入時，需要使用下列九個系統管理員角色來執行其他驗證：
 - 全域系統管理員
@@ -50,10 +50,10 @@ ms.locfileid: "43075605"
 將會在需要時向所有其他使用者要求執行其他驗證。 如需詳細資訊，請參閱[什麼是安全性預設？](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 > [!NOTE]
-> 您必須是 Office 365 全域系統管理員，才能設定或修改多重要素驗證。 <br><br>
+> 您必須是 Office 365 全域系統管理員，才能設定或修改 MFA。 <br><br>
 > 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 [試用新的系統管理中心] **** 開關將它開啟。
 
-如果您先前已使用基準原則設定 MFA，[您必須將其關閉並開啟安全性預設](#move-from-baseline-policies-to-security-defaults)。 不過，如果您有 Microsoft 365 商務版或您的訂閱包含 [Azure Active Directory Premium 1 或 Azure Active Directory Premium 2](https://azure.microsoft.com/pricing/details/active-directory/)，您也可以設定[條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)原則。 若要使用條件式存取原則，您必須確定已啟用[新式驗證](#enable-modern-authentication-for-your-organization)。
+如果您先前已使用基準原則設定 MFA，[您必須將其關閉並開啟安全性預設](#move-from-baseline-policies-to-security-defaults)。 不過，如果您有 Microsoft 365 商務或您的訂閱包含[Azure Active Directory Premium P1 或 Azure Active Directory Premium P2](https://azure.microsoft.com/pricing/details/active-directory/)，您也可以設定[條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)原則。 若要使用條件式存取原則，您必須確定已啟用[新式驗證](#enable-modern-authentication-for-your-organization)。
 
 > [!TIP]
 > 若要向使用者說明如何設定 Authenticator 應用程式，請造訪[搭配 Office 365 使用 Microsoft Authenticator](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411?ui=en-US&rs=en-US&ad=US#ID0EAADAAA=_Step_1)。
@@ -64,7 +64,7 @@ ms.locfileid: "43075605"
 2. 移至 [Azure Active Directory 屬性](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。
 
 3. 在頁面底部，選擇 [管理安全性預設]****。
-4. 選擇 [是]**** 可啟用安全性預設，以及 [否]**** 可停用安全性預設。
+4. 選擇 **[是]** 啟用安全性預設值，或按一下 [**否**] 以停用安全性預設值，然後選擇 [**儲存**]。
 
 ## <a name="move-from-baseline-policies-to-security-defaults"></a>從基準原則移至安全性預設
 

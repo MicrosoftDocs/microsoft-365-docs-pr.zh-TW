@@ -13,16 +13,42 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用資訊障礙，以確保您的組織內的 Microsoft 小組能夠進行通訊法規遵從性。
-ms.openlocfilehash: 5d3abe41680a8399600fdea51df6f3b85fbd6b94
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: f063a18dcadf5de74b43b2efeba3910f65e40102
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029837"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153495"
 ---
-# <a name="learn-about-information-barriers"></a>深入瞭解資訊障礙
+# <a name="information-barriers"></a>資訊屏障
 
 ## <a name="overview"></a>概觀
+
+<!--
+
+# Information barriers (click-through test)
+
+## Overview
+
+
+
+ [![Click-Through for Information Barriers](./media/information-barriers/clickthrough-information-barriers-thumbnail.png)](./media/information-barriers/clickthrough-information-barriers.pdf)
+
+
+Click through an overview of Information Barriers: [PDF](./media/information-barriers/clickthrough-information-barriers.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/Click-Through-Test/microsoft-365/compliance/media/information-barriers/Clickthrough-Information-Barriers.pptx)
+
+OLD: Move comment field here
+
+ [![Click-Through for Information Barriers](./media/information-barriers/Clickthrough_InformationBarriers_Thumbnail.png)](./media/information-barriers/Clickthrough_InformationBarriers.pdf)
+
+For the PowerPoint slide of this Click-Through, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/Click-Through-Test/microsoft-365/compliance/media/information-barriers/InfoBarriersExample.pptx).
+
+>[!Tip]
+>Try this new [Click-Through on information barriers](media/information-barriers/Clickthrough_InformationBarriers.pdf) for a quick overview of the essential facts.
+>
+
+--> 
+
 
 Microsoft 雲端服務包含強大的通訊和協同作業功能。 不過，假設您想要限制兩個群組之間的通訊，以避免組織中發生利益衝突。 或者，您可能想要限制組織內特定人員之間的通訊，以保護內部資訊。 Microsoft 365 可跨群組和組織進行通訊及共同作業，所以有沒有方法可以限制特定使用者群組之間的通訊（必要時）？ 透過資訊障礙，您可以！ 
 

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6ffe912cd9926585181af54cc85c144aef4ce866
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f44d7cd5b919fb06ffb10c39e632956005231e01
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142668"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153747"
 ---
 # <a name="compliance"></a>合規性
 
@@ -33,7 +33,7 @@ Microsoft 受管理的桌面已達到下列認證：
 - [服務組織控制（SOC）1、2、3](../../compliance/offering-SOC.md)
 - [支付卡行業 (PCI) 資料安全標準 (DSS)](../../compliance/offering-PCI-DSS.md)
 
-## <a name="auditor-reports-and-client-certificates"></a>審計員報告和用戶端憑證
+## <a name="auditor-reports-and-compliance-certificates"></a>審計員報告和合規性憑證
 
 您可以在[服務信任入口網站（STP）](https://servicetrust.microsoft.com/)中，找到相關的資訊，包括控制項和技術需求，以取得 Microsoft 雲端服務產品的相關資訊的中央存放庫。 您可以從 STP 的「[審核報告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)」區段下載審計員報告、符合性憑證等等。
 
