@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4a119e0ec082893d393d1b43af76b41dc93c76a1
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 834fb37eba578ff87477fd376cd5d33c8612e1b0
+ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053070"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43165932"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>案例研究-Contoso 會快速設定適用于 Microsoft 小組和 Exchange 通訊的冒犯性語言原則
 
@@ -41,7 +41,7 @@ Contoso Corporation 是一種虛構的組織，需要快速設定用來監視冒
 
 ## <a name="step-1---planning-for-communication-compliance"></a>步驟 1-規劃通訊合規性
 
-Contoso IT 系統管理員和合規性專家會參加線上網路研討會365中有關法規遵從性解決方案的相關資訊，決定通訊合規性原則可協助他們符合更新的公司原則需求，以減少工作場所騷擾。 共同運作，他們已開發好一種計畫，用以為 Exchange Online 中傳送的電子郵件訊息，建立及啟用通訊相容性原則，以監視 Microsoft 小組中所傳送的攻擊性語言。 其計畫包含識別：
+Contoso IT 系統管理員和合規性專家會參加線上網路研討會365中有關法規遵從性解決方案的相關資訊，決定通訊法規遵從性原則可協助他們符合減少工作地點騷擾的更新公司原則需求。 共同運作，他們已開發好一種計畫，用以為 Exchange Online 中傳送的電子郵件訊息，建立及啟用通訊相容性原則，以監視 Microsoft 小組中所傳送的攻擊性語言。 其計畫包含識別：
 
 - 需要存取通訊規範功能的 IT 管理員。
 - 需要建立及管理通訊原則的規範專家。
@@ -53,10 +53,21 @@ Contoso IT 系統管理員和合規性專家會參加線上網路研討會365中
 第一步是確認 Contoso 的 Microsoft 365 授權包含對通訊規範解決方案的支援。 若要存取和使用通訊法規遵從性，Contoso IT 管理員必須確認 Contoso 是否具備下列其中一項：
 
 - Microsoft 365 E5 訂閱（付費或試用版）
-- Office 365 Enterprise E3 授權與高級規範附加元件
+- Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
+- Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」
+- Microsoft 365 A5 訂閱（付費或試用版）
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
+- Microsoft 365 G5 訂閱（付費或試用版）
+- Microsoft 365 G5 訂閱 + Microsoft 365 G5 合規性附加元件
+- Microsoft 365 G5 訂閱 + Microsoft 365 G5 有問必答風險管理附加元件
 - Office 365 企業版 E5 訂閱（付費或試用版）
+- Office 365 企業版 E3 訂閱 + Office 365 Advanced 合規性附加元件（已無法再供新訂閱使用，請參閱記事）
 
-他們也必須確認已包含在通訊合規性原則中的使用者，必須指派給上述其中一個授權。
+他們也必須確認已包含在通訊合規性原則中的使用者，必須已獲指派上述其中一個授權。
+
+>[!IMPORTANT]
+>Office 365 Advanced 合規性不再銷售為獨立訂閱。 當目前的訂閱到期時，客戶應轉換至上述其中一個訂閱，其中包含相同或其他的符合性功能。
 
 Contoso IT 管理員請採取下列步驟，確認 Contoso 的授權支援：
 

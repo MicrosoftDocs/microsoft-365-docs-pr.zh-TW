@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理員可以設定原生連接器，將資料從立即 Bloomberg 聊天室工具匯入 Microsoft 365。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 81cfa29bf3db101a87a0827985fb59af187d985e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 6d267959f9086830282e9d1f018e4e58f90bc830
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632872"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42941255"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>設定連接器來封存 Instant Bloomberg 資料
 
 使用 Microsoft 365 規範中心內的原生連接器，從[立即 Bloomberg](https://www.bloomberg.com/professional/product/collaboration/)共同作業工具匯入及封存金融服務聊天資料。 在您設定及設定連接器之後，它每天會連線到您組織的 Bloomberg 安全 FTP 網站（SFTP），將聊天訊息的內容轉換成電子郵件訊息格式，然後將這些專案匯入至 Microsoft 365 中的信箱。
 
-立即 Bloomberg 資料儲存在使用者信箱之後，您可以將 Microsoft 365 規範功能（例如訴訟暫止、內容搜尋、In-Place 封存、審核、通訊法規遵從性及 Microsoft 365 保留原則）套用至立即。Bloomberg 資料。 例如，您可以使用內容搜尋來搜尋立即 Bloomberg 聊天室訊息，或將包含立即 Bloomberg 資料的信箱與高級 eDiscovery 案例中的保管人建立關聯。 使用立即 Bloomberg 連接器匯入和封存 Microsoft 365 中的資料，可協助您的組織遵守政府和法規原則。
+立即 Bloomberg 資料儲存在使用者信箱之後，您可以將 Microsoft 365 規範功能（例如訴訟暫止、內容搜尋、In-Place 封存、審核、通訊法規遵從性）和 Microsoft 365 保留原則套用至立即 Bloomberg 資料。 例如，您可以使用內容搜尋來搜尋立即 Bloomberg 聊天室訊息，或將包含立即 Bloomberg 資料的信箱與高級 eDiscovery 案例中的保管人建立關聯。 使用立即 Bloomberg 連接器匯入和封存 Microsoft 365 中的資料，可協助您的組織遵守政府和法規原則。
 
 ## <a name="overview-of-archiving-instant-bloomberg-data"></a>封存立即 Bloomberg 資料一覽
 
@@ -37,7 +37,7 @@ ms.locfileid: "42632872"
     
 3. 您在 Microsoft 365 規範中心建立的立即 Bloomberg 連接器會連線至 Bloomberg SFTP 網站，並將前24小時的聊天訊息傳送至 Microsoft 雲端中的 secure Azure Storage 區域。 連接器也會將聊天室 massage 的內容轉換為電子郵件訊息格式。
     
-4. 連接器會將聊天訊息專案匯入特定使用者的信箱。 會在特定使用者的信箱中建立名為 InstantBloomberg 的新資料夾，並將這些專案匯入該資料夾。 連接器會使用*CorporateEmailAddress*屬性的值。 每個聊天訊息都包含此內容，該屬性會填入聊天訊息每一位參與者的電子郵件地址。 除了使用*CorporateEmailAddress*屬性的值進行自動使用者對應之外，您也可以透過上載 CSV 對應檔來定義自訂對應。 這個對應檔案應該包含每個使用者的 Bloomberg UUID 和對應的 Microsoft 365 信箱位址。 如果您為每個聊天室專案啟用自動使用者對應並提供自訂對應，連接器會先查看自訂對應檔案。 如果找不到對應至使用者 Bloomberg UUID 的有效 Microsoft 365 使用者，連接器會使用聊天室專案的*CorporateEmailAddress*屬性。 如果連接器在自訂對應檔案或聊天室專案的*CorporateEmailAddress*屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
+4. 連接器會將聊天訊息專案匯入特定使用者的信箱。 會在特定使用者的信箱中建立名為 InstantBloomberg 的新資料夾，並將這些專案匯入該資料夾。 連接器會使用*CorporateEmailAddress*屬性的值來執行此動作。 每個聊天訊息都包含此內容，該屬性會填入聊天訊息每一位參與者的電子郵件地址。 除了使用*CorporateEmailAddress*屬性的值進行自動使用者對應之外，您也可以透過上載 CSV 對應檔來定義自訂對應。 這個對應檔案應該包含每個使用者的 Bloomberg UUID 和對應的 Microsoft 365 信箱位址。 如果您為每個聊天室專案啟用自動使用者對應並提供自訂對應，連接器會先查看自訂對應檔案。 如果找不到對應至使用者 Bloomberg UUID 的有效 Microsoft 365 使用者，連接器會使用聊天室專案的*CorporateEmailAddress*屬性。 如果連接器在自訂對應檔案或聊天室專案的*CorporateEmailAddress*屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
 
 ## <a name="before-you-begin"></a>開始之前
 

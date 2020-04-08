@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 31444d677e7cd775f5364796c6821cb82b6dc654
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: d4a98383e88634f1e87606df5bcd1d066254081f
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113570"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170927"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>設定 Microsoft 365 中的通訊合規性
 
@@ -48,7 +48,7 @@ ms.locfileid: "43113570"
 - Office 365 企業版 E5 訂閱（付費或試用版）
 - Office 365 企業版 E3 訂閱 + Office 365 Advanced 合規性附加元件（已無法再供新訂閱使用，請參閱記事）
 
-通訊符合性原則中所含的使用者必須指派上述其中一個授權。
+必須將上述其中一個授權指派給通訊符合性原則中所含的使用者。
 
 >[!IMPORTANT]
 >Office 365 Advanced 合規性不再銷售為獨立訂閱。 當目前的訂閱到期時，客戶應轉換至上述其中一個訂閱，其中包含相同或其他的符合性功能。

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文針對 Microsoft 365 的「高級 eDiscovery」中的案例，定義了審查集內檔的元資料欄位。
-ms.openlocfilehash: 78cfba97c14259ec40abc17e17676263b37fcedf
-ms.sourcegitcommit: 9231cbea48374fca3aeeb1f267dcdcd270fd9f42
+ms.openlocfilehash: f53a754fce482ddc0944d84059b1e346e93f5067
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "42651837"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42941235"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>在高級 eDiscovery 中記錄元資料欄位
 
@@ -34,6 +34,9 @@ ms.locfileid: "42651837"
 - **匯出的功能變數名稱：** 匯出檔時包含的元資料欄位名稱。  空白儲存格表示欄位不會包含在匯出的中繼資料中。
 
 - **描述：** 元資料欄位的描述。
+
+> [!NOTE]
+> 「[複查設定搜尋](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)使用關鍵字查詢語言（KQL）中的**關鍵字**] 欄位。 「可搜尋**欄位名稱**」欄中所列的欄位可用於審閱集搜尋中的 [**關鍵字**] 欄位，以形成複雜的查詢，而不需要使用「查詢建立器」。 如需 KQL 的詳細資訊，請參閱[關鍵字查詢語言語法參考](https://go.microsoft.com/fwlink/?LinkId=269603)。
 
 |**功能變數名稱和****顯示欄位名稱**|**可搜尋的功能變數名稱**|**匯出的功能變數名稱**|**描述**|
 |:-----|:-----|:-----|:-----|
