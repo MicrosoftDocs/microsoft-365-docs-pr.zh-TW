@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 從 Microsoft 365 系統管理中心，回顧有關集中式部署的常見問題解答。
-ms.openlocfilehash: d63158f70e3f905b0ee1acf994cbef207f1ab4f1
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: 313e1dd7481ccdd8bbf7531d5b7433f8bbd54e38
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43166484"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43188962"
 ---
 # <a name="centralized-deployment-faq"></a>集中式部署常見問題
 
@@ -33,7 +33,7 @@ ms.locfileid: "43166484"
 
 [！注意] 增益集的集中式部署需要使用者使用 Office 365 ProPlus （而且使用組織登入身分驗證登入 Office）和 Exchange Online 信箱。 您的訂閱目錄必須是在 Azure Active Directory 中或同盟至 Azure Active Directory。  
  
-僅支援 Outlook Online 信箱的集中式部署。 它不支援部署至內部部署 Exchange 信箱。
+僅支援線上信箱的集中式部署。 它不支援部署至內部部署 Exchange 信箱。
  
 您可以使用[Office 365 集中式部署相容性檢查](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker) 程式，判斷您的訂閱是否符合資格。 
   
@@ -47,7 +47,7 @@ ms.locfileid: "43166484"
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>增益集需要多長時間才能顯示給所有使用者？  
 
-增益集最多可以花12小時來顯示所有使用者。 增益集更新、從開啟或關閉或增益集移除的變更所需的時間也相同。 
+增益集最多可能需要24小時才能顯示所有使用者。 增益集更新、從開啟或關閉或增益集移除的變更所需的時間也相同。 
   
 ## <a name="as-an-administrator-how-do-i-manage-the-user-access-to-add-ins-for-my-organization"></a>身為系統管理員，如何管理使用者對組織增益集的存取權？
 
