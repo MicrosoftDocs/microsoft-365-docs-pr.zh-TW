@@ -1,9 +1,9 @@
 ### YamlMime:Hub
-title: Microsoft 365 商務版資源
-summary: Microsoft 365 商務版是一項訂閱服務，其中包含 Office 365 的生產力工具加上來協助保護您的商業針對 cyberthreats、 保護您的資料，並管理裝置的進階的功能。
+title: Microsoft 365 商務資源
+summary: Microsoft 365 Business 是一種訂閱服務，包含 Office 365 生產力工具和高級功能，以協助保護您的商務 cyberthreats、保護您的資料，以及管理裝置。
 brand: m365
 metadata:
-  title: Microsoft 365 商務版資源
+  title: Microsoft 365 商務資源
   description: 描述
   ms.service: o365-administration
   ms.topic: hub-page
@@ -11,12 +11,27 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 238c4cd0c74854def600af876f93c52e6480ebb5
-  ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+  ms.openlocfilehash: 9741932fcde29d2b64156c600f1bad1b309d5f66
+  ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 01/18/2020
-  ms.locfileid: "41233664"
+  ms.lasthandoff: 04/07/2020
+  ms.locfileid: "43165908"
+productDirectory:
+  title: 使用 Microsoft 365 商務進行安全的遠端工作
+  items:
+  - title: 新功能
+    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+    summary: Azure AD Premium P1 即將參加 Microsoft 365 商務版！
+    url: https://aka.ms/aadp1smbblog
+  - title: 觀賞合作夥伴網路研討會
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: 在您的 SMB 客戶處理 COVID-19 時加以保護。
+    url: https://aka.ms/M365v253PAL-Register
+  - title: 買
+    imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+    summary: 按一下連結以購買或聯繫您的合作夥伴。
+    url: https://aka.ms/m365bweb
 conceptualContent:
   items:
   - title: 什麼是 Microsoft 365 商務版？
@@ -26,10 +41,10 @@ conceptualContent:
       text: 概觀
     - url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
       itemType: video
-      text: Microsoft 365 商務版訓練
+      text: Microsoft 365 商務訓練
     - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
       itemType: overview
-      text: 比較計劃
+      text: 比較計畫
     - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
       itemType: reference
       text: 服務描述
@@ -40,27 +55,27 @@ conceptualContent:
     links:
     - url: set-up.md
       itemType: how-to-guide
-      text: 1. 執行設定精靈
+      text: 1. 執行安裝精靈
     - url: secure-win-10-pcs.md
       itemType: how-to-guide
       text: 2. 保護您的電腦
     - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
       itemType: video
-      text: 3. 設定 microsoft Teams
+      text: 3. 設定小組
     - url: https://support.office.com/article/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
       itemType: get-started
       text: 4. 我有其他問題
-  - title: 合作夥伴 （僅提供英文版） 的資源
+  - title: 合作夥伴的資源（僅限英文版）
     links:
     - url: https://www.microsoft.com/microsoft-365/partners/business
       itemType: overview
-      text: 協力廠商] 頁面
+      text: 合作夥伴頁面
     - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx
       itemType: download
-      text: 形艙面的 （客戶焦點）
+      text: 音調卡片（客戶聚焦）
     - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx
       itemType: download
-      text: 形艙面的 （合作夥伴焦點）
+      text: 音調組（夥伴焦點）
     - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
       itemType: download
       text: 技術基礎
@@ -74,7 +89,7 @@ conceptualContent:
       text: 移除使用者
     - url: https://docs.microsoft.com/office365/admin/add-users/reset-passwords
       itemType: how-to-guide
-      text: 重設其他人的密碼
+      text: 重設某人的密碼
     footerLink:
       url: https://docs.microsoft.com/office365/admin/admin-home
       text: 查看更多
@@ -88,7 +103,7 @@ conceptualContent:
       text: 設定 MFA
     - url: https://docs.microsoft.com/microsoft-365/business/increase-threat-protection#protect-against-ransomware
       itemType: how-to-guide
-      text: 勒索軟體防護
+      text: 防護勒索軟體
     - url: https://docs.microsoft.com/azure/active-directory/conditional-access/overview
       itemType: overview
       text: 條件式存取
@@ -116,22 +131,22 @@ conceptualContent:
     links:
     - url: view-policies-and-devices.md
       itemType: how-to-guide
-      text: PC & 行動裝置
+      text: 電腦 & 行動裝置
     - url: remove-company-data.md
       itemType: how-to-guide
       text: 移除公司資料
     - url: reset-devices-to-factory-settings.md
       itemType: how-to-guide
-      text: 抹除及重設
+      text: 擦除和重設
     - url: https://docs.microsoft.com/intune/index
       itemType: overview
       text: Intune
     - url: manage-windows-devices.md
       itemType: how-to-guide
-      text: 設定混合式 Azure AD 加入
+      text: 設定混合式 Azure AD 聯結
     - url: access-resources.md
       itemType: how-to-guide
-      text: 設定 Azure AD 加入
+      text: 設定 Azure AD join
     - url: https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot
       text: Windows Autopilot
       itemType: overview
@@ -148,11 +163,11 @@ conceptualContent:
       text: Intune 應用程式保護原則報告
     - url: https://docs.microsoft.com/office365/enterprise/view-service-health
       itemType: how-to-guide
-      text: 狀況監視提醒
+      text: 狀況監視警示
     footerLink:
       url: https://docs.microsoft.com/microsoft-365/security/
       text: 查看更多
-  - title: 支援與社群
+  - title: 支援和社區
     links:
     - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
       itemType: whats-new
@@ -165,7 +180,7 @@ conceptualContent:
       text: 傳送意見反應
     - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
       itemType: overview
-      text: 小型和中型企業技術社群
+      text: 中小企業技術社區
   - title: 我要如何...
     links:
     - url: sign-up.md
@@ -179,7 +194,7 @@ conceptualContent:
       text: 從 Office 365 E3 移轉
     - url: migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md
       itemType: how-to-guide
-      text: 移轉至 Microsoft 365 企業版 E3
+      text: 遷移至 Microsoft 365 企業版 E3
     footerLink:
       url: microsoft-365-business-overview.md
       text: 查看更多
