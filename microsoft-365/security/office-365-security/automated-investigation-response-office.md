@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 深入瞭解 Office 365 高級威脅防護方案2中的自動化調查和回應功能。
 ms.custom: air
-ms.openlocfilehash: e8e10160da4ddb43b47ecf41e2184dc1b8953941
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 1fa99d7676a16ccd83319e5fbf3a6fedb72aec12
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033443"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170949"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自動化調查和回應（AIR）
 
@@ -75,7 +75,7 @@ ms.locfileid: "43033443"
 
 階段1也包含對管理員觸發電子郵件調查的支援（使用[威脅瀏覽器](threat-explorer.md)）。
 
-第2階段現在的進度是**公開預覽**中的下列行動手冊，提供動作和 aiding 安全性管理員調查問題的建議：
+階段2現在正在進行**公開預覽**中的下列行動手冊，提供動作和 aiding 安全性管理員調查問題的建議：
 - 使用者舉報為已遭破壞（公開預覽）
 
 進一步的行動手冊將在完成後發行。 請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)，以查看已計畫及即將推出的內容。

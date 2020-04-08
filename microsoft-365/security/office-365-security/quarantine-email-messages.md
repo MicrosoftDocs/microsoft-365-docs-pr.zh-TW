@@ -1,9 +1,9 @@
 ---
-title: Office 365 中的隔離
+title: Office 365 中的隔離區
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: Admin
@@ -18,14 +18,14 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: Office 365 中的隔離會包含潛在危險或不需要的郵件。 系統管理員和使用者可以存取隔離區。
-ms.openlocfilehash: 29f9fcbed83e9019118bb8b37c19cad1199c4c45
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: a11b4a0d86cfc5f74636d3a9f89cf598320d1ebf
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895296"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42940954"
 ---
-# <a name="quarantine-in-office-365"></a>Office 365 中的隔離
+# <a name="quarantine-in-office-365"></a>Office 365 中的隔離區
 
 如果您是 Office 365 客戶的信箱位於 Exchange Online 或獨立 Exchange Online Protection （EOP）客戶，但沒有 Exchange Online 信箱，則隔離可用於保留潛在危險或不需要的郵件。
 
@@ -35,7 +35,7 @@ ms.locfileid: "42895296"
 
 使用者和系統管理員都可以處理隔離的郵件：
 
-- 系統管理員可以使用所有類型的隔離郵件來處理所有使用者。 只有系統管理員可以處理被隔離為惡意程式碼、高可信度網路釣魚或郵件流程規則（也稱為傳輸規則）結果的郵件。 如需詳細資訊，請參閱[在 Office 365 中以系統管理員身分管理隔離的郵件和](manage-quarantined-messages-and-files.md)檔案。
+- 系統管理員可以使用所有類型的隔離郵件來處理所有使用者。 只有系統管理員可以處理被隔離為惡意程式碼、高可信度網路釣魚或郵件流程規則（也稱為傳輸規則）結果的郵件。 如需詳細資訊，請參閱[以 Office 365 系統管理員身分管理隔離的郵件和檔案](manage-quarantined-messages-and-files.md)。
 
 - 如果郵件被隔離為垃圾郵件、大量電子郵件，或（從2020）網路釣魚，使用者可以使用隔離的郵件，而這些郵件是收件者。 如需詳細資訊，請參閱 [以 Office 365 使用者身分尋找並釋出被隔離的郵件](find-and-release-quarantined-messages-as-a-user.md)。
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 04/07/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供 Microsoft 365 for enterprise 的元件、方案及部署路徑的簡介。
-ms.openlocfilehash: c66fb5e4d8cd0d24ec20a50ca2ead3f3b9e0851d
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 043953ddfd38a9ef5119546ec5672dd46e8acb53
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113514"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43175187"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -45,7 +45,7 @@ ms.locfileid: "43113514"
 |:-------|:-----|
 | E3 | 存取 Microsoft 365 中的核心產品和功能，以加強工作場所生產力，並安全地推動創新。 |
 | E5 | 存取 Microsoft 365 內最新的產品和功能，包括「高級威脅防護」、「安全性與共同作業」工具。。 包含所有的 E3's 功能，以及高級安全性、語音及資料分析工具。 |
-| F1 | 透過專門構建的工具和資源，與您的 Firstline 工作者進行連線，讓他們可以進行最佳的工作。 |
+| F3 | 透過專門構建的工具和資源，與您的 Firstline 工作者進行連線，讓他們可以進行最佳的工作。 |
 |||
 
 如果您有 Microsoft 365 E3，您也可以取得下列[產品](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)：
@@ -55,7 +55,7 @@ ms.locfileid: "43113514"
 
 這些產品包含 Microsoft 365 E5 隨附的其他功能。
 
-如需詳細資訊，請參閱[每個方案的功能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
+如需每個計畫包含專案的詳細資訊，請參閱[使用 Microsoft 365 轉換您的企業](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans)。
 
 ## <a name="get-the-big-picture"></a>取得大圖片
 
@@ -150,6 +150,6 @@ ms.locfileid: "43113514"
 
 如果您是自行進行部署，請啟動您[的 Microsoft 365，以進行企業部署旅程](deploy-microsoft-365-enterprise.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [適用于企業產品的 Microsoft 365 頁面](https://www.microsoft.com/microsoft-365/enterprise)

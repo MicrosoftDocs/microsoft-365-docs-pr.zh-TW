@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 深入瞭解您的組織如何採用 Microsoft 365 服務來進行通訊及共同作業。
-ms.openlocfilehash: 0481f894a4841488b20af90cd7c00619d2ad5c98
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: c9e2b9e6b814ac9245222f5da670862e308d1ab4
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826378"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170915"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情況分析
----
-Microsoft 365 美國政府社區尚無可用的 microsoft 365 使用方式分析功能。
+
+Microsoft 365 使用方式分析目前不適用於 Power BI 政府客戶。
  
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Microsoft 365 使用情況分析概觀
 

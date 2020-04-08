@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 深入瞭解 Office 365 中的多重要素驗證，以及設定所需遵循的步驟。
-ms.openlocfilehash: e3886387740fe904b9c9458f7b1abf736c3ef83f
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: be3b355f4487e2df5c2e20c9911c3bb421d5f7e1
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153565"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170937"
 ---
 # <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Office 365 部署多重要素驗證方案
 
@@ -65,7 +65,7 @@ Office 365 使用多重要素驗證，協助提供額外的安全性，並從 Mi
 |混合設定、受管理的內部部署  <br/> | 如果您透過內部部署管理使用者身分識別，您有下列選擇：  <br/>  實體或虛擬智慧卡（使用 AD FS 時）  <br/> [Azure Multi-Factor 驗證](https://go.microsoft.com/fwlink/p/?LinkId=526677)（AD FS 的模組）  <br/>  Azure Active Directory （Azure AD） Multi-Factor 驗證  <br/> |
    
   
-下圖顯示更新的 Office 2013 裝置 App (Windows 版) 如何讓使用者能夠使用 MFA 登入。Office 2013 裝置 App 透過使用 [Active Directory Authentication Library (ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=526684) 支援多重要素驗證。Azure AD 託管使用者可以登入的網頁。身分識別提供者可以是 Azure AD 或 AD FS 等同盟身分識別提供者。同盟使用者的驗證按下列步驟進行：
+下圖顯示更新的 Office 2013 裝置 App (Windows 版) 如何讓使用者能夠使用 MFA 登入。 Office 2013 裝置應用程式透過使用[Active Directory 驗證程式庫（ADAL）](https://go.microsoft.com/fwlink/p/?LinkId=526684)來支援多重要素驗證。 Azure AD 託管使用者可以登入的網頁。 身分識別提供者可以是 Azure AD 或 AD FS 等同盟身分識別提供者。 同盟使用者的驗證按下列步驟進行：
   
 1. Azure AD 將使用者重新導向到由 Office 365 租用戶的記錄之身分識別提供者託管的登入網頁。身分識別提供者取決於使用者登入名稱中指定的網域。
     
