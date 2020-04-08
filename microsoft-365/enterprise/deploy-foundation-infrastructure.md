@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解貴組織中部署企業用 Microsoft 365 底層基礎結構的主要階段，也稱為核心部署。
-ms.openlocfilehash: 966fa8ad26d54328bf4d2e95c95b497e5d283e52
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 6c2784d22e236880b87ece9e04e11fb0502667dd
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951955"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153841"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>企業用 Microsoft 365 底層基礎結構
 

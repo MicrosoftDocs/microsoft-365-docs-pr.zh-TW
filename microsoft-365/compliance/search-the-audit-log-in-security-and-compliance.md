@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 66e75561084c3f3e8e67303e1cd359ef01c6b01a
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 9fb37cba0e7e9774b4de5c559b7bc0636b599776
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955682"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151438"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -118,7 +118,7 @@ ms.locfileid: "42955682"
   |進階威脅防護和威脅情報|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (使用者登入活動)||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Azure Active Directory (系統管理員活動)||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |資料遺失防護|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |資料外洩防護|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Dynamics 365 CRM||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |電子文件探索|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Exchange Online|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -588,9 +588,9 @@ ms.locfileid: "42955682"
 |:-----|:-----|:-----|
 |已新增使用者|新增使用者|已建立 Office 365 使用者帳戶。|
 |已變更使用者授權|變更使用者授權|指派給使用者的授權已變更。 若要查看哪些授權已變更，請參閱對應的 [更新的使用者]** ** 活動。|
-|已變更使用者密碼|變更使用者密碼|系統管理員已變更使用者的密碼。|
+|已變更使用者密碼|變更使用者密碼|使用者變更其密碼。 為了讓使用者能夠重設自己的密碼，您必須為組織中的所有或選取的使用者啟用自助式密碼重設。 您也可以追蹤 Azure Active Directory 中的自助式密碼重設活動。 如需詳細資訊，請參閱 [Azure AD 密碼管理的報告選項](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting)。
 |已刪除使用者|刪除使用者|已刪除 Office 365 使用者帳戶。|
-|重設使用者密碼|重設使用者密碼|系統管理員已重設使用者的密碼。|
+|重設使用者密碼|重設使用者密碼|系統管理員重設使用者的密碼。|
 |已設定強制使用者變更密碼的屬性|設定強制變更使用者密碼|系統管理員已設定強制使用者在使用者下次登入 Office 365 時變更密碼的屬性。|
 |設定授權屬性|設定授權屬性|系統管理員修改已指派給使用者的授權屬性。|
 |已更新使用者|更新使用者|系統管理員變更使用者帳戶的一個或多個屬性。 如需可更新的使用者屬性清單，請參閱 [Azure Active Directory 稽核報告事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)中的＜更新使用者屬性＞一節。|

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 檔案計劃管理員提供對於保留標籤、保留標籤原則的進階管理功能，並且提供整合的方式讓標籤和標籤至內容活動周遊整個內容生命週期 – 從建立、共同作業、記錄宣告、保留，到最終的處置。
-ms.openlocfilehash: 23aa0e242464ebd450a0930bcda4274c026c7535
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: c4b1ddfaf3191a282a67917c2b2d257712a10802
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105640"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151458"
 ---
 # <a name="overview-of-file-plan-manager"></a>檔案計劃管理員的概觀
 
@@ -37,9 +37,9 @@ ms.locfileid: "43105640"
 
 若要存取檔案規劃管理員，必須擁有下列其中一種系統管理員角色：
     
-    - 保留管理員
-    
-    - 僅檢視保留管理員
+- 保留管理員
+
+- 僅檢視保留管理員
 
 ## <a name="default-retention-labels-and-label-policy"></a>預設保留標籤和標籤原則
 
