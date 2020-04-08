@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7419bc37b40bb7e2b9b2726c4672d7d8d481ab8b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f80e9ab25fda70ae723b844691dc129d0b604921
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597910"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42313778"
 ---
 # <a name="personal-data-protection-act-pdpa-argentina"></a>個人資料保護法 (PDPA) 阿根廷
 
 ## <a name="about-the-pdpa"></a>關於 PDPA
 
-經阿根廷國家憲法同意，[個人資料保護法第 25.326 號](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDPA) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) 於 2000 年生效，旨在協助保護個人資料的隱私權，並允許個人存取儲存在公用資料庫和私人資料庫和註冊機構中的任何資訊。 由內閣長官管轄的阿根廷公開資訊存取機關 ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip)，AAIP)，負責強制執行這項法律。
+經阿根廷國家憲法同意，[個人資料保護法第 25.326 號](http://www.jus.gob.ar/media/3201023/personal_data_protection_act25326.pdf) (PDPA) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) 於 2000 年生效，旨在協助保護個人資料的隱私權，並允許個人存取儲存在公用資料庫和私人資料庫和註冊機構中的任何資訊。 由內閣長官管轄的阿根廷公開資訊存取機關 ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip)，AAIP)，負責強制執行這項法律。
 
 PDPA 與保護資料隱私權的歐洲立法模式相符，阿根廷是拉丁美洲第一個獲得「充分」資格可從歐盟進行資料傳輸的國家。
 
