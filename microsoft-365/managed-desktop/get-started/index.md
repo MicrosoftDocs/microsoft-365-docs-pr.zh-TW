@@ -1,21 +1,29 @@
 ---
 title: 開始使用 Microsoft 受管理的電腦
-description: ''
-keywords: Microsoft 受管理的電腦，Microsoft 365 服務，文件
+description: 設定裝置及設定 Azure 功能搭配服務使用的步驟
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 7d007329fbb53da2604e688623621eec86f93f5e
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 1c5edfd096694324082bdd4fcb70b85b0dd1f5f0
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37595579"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "38020396"
 ---
-# <a name="get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="e9647-103">開始使用 Microsoft 受管理的電腦</span><span class="sxs-lookup"><span data-stu-id="e9647-103">Get started with Microsoft Managed Desktop</span></span>
+# <a name="get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="31037-104">開始使用 Microsoft 受管理的電腦</span><span class="sxs-lookup"><span data-stu-id="31037-104">Get started with Microsoft Managed Desktop</span></span>
 
-<span data-ttu-id="e9647-104">一旦您已準備好註冊服務中，此區段會包含要遵循實際加入服務、 取得和設定裝置、 準備您的使用者，以及部署應用程式的步驟。</span><span class="sxs-lookup"><span data-stu-id="e9647-104">Once you're ready to enroll in the service, this section includes the steps to follow to actually join the service, obtain and set up devices, prep your end users, and deploy apps.</span></span>
+<span data-ttu-id="31037-105">現在，您已註冊服務，請遵循下列步驟來確認系統管理員連絡人、調整條件式存取設定、將授權指派給使用者、啟用企業狀態漫遊、取得及設定裝置、準備使用者，以及將應用程式部署至裝置。</span><span class="sxs-lookup"><span data-stu-id="31037-105">Now that you've enrolled in the service, follow these steps to confirm admin contacts, adjust conditional access settings, assign licences to users, enable Enterprise State Roaming,  obtain and set up devices, prepare users, and deploy apps to devices.</span></span>
 
-- [<span data-ttu-id="e9647-105">Microsoft 受管理的桌上型電腦管理入口網站中新增系統管理連絡人</span><span class="sxs-lookup"><span data-stu-id="e9647-105">Add Admin contacts in Microsoft Managed Desktop Admin portal</span></span>](add-admin-contacts.md)
-- [<span data-ttu-id="e9647-106">Microsoft 受管理的電腦裝置上設定</span><span class="sxs-lookup"><span data-stu-id="e9647-106">Set up Microsoft Managed Desktop devices</span></span>](set-up-devices.md)
-- [<span data-ttu-id="e9647-107">將應用程式部署至 Microsoft 受管理的電腦裝置</span><span class="sxs-lookup"><span data-stu-id="e9647-107">Deploy apps to Microsoft Managed Desktop devices</span></span>](deploy-apps.md)
+> [!NOTE]
+> <span data-ttu-id="31037-106">建議遵循這種順序，但在順序中有一些彈性。</span><span class="sxs-lookup"><span data-stu-id="31037-106">This is the recommended order to follow, but you do have some flexibility in the sequence.</span></span>
+
+1. [<span data-ttu-id="31037-107">在系統管理入口網站中新增和驗證系統管理員連絡人</span><span class="sxs-lookup"><span data-stu-id="31037-107">Add and verify admin contacts in the Admin portal</span></span>](add-admin-contacts.md)
+2. [<span data-ttu-id="31037-108">調整條件式存取</span><span class="sxs-lookup"><span data-stu-id="31037-108">Adjust conditional access</span></span>](conditional-access.md)
+3. [<span data-ttu-id="31037-109">指派授權</span><span class="sxs-lookup"><span data-stu-id="31037-109">Assign licenses</span></span>](assign-licenses.md)
+4. [<span data-ttu-id="31037-110">部署 Intune 公司入口網站</span><span class="sxs-lookup"><span data-stu-id="31037-110">Deploy Intune Company Portal</span></span>](company-portal.md)
+5. [<span data-ttu-id="31037-111">啟用企業狀態漫遊</span><span class="sxs-lookup"><span data-stu-id="31037-111">Enable Enterprise State Roaming</span></span>](enterprise-state-roaming.md)
+6. [<span data-ttu-id="31037-112">設定裝置</span><span class="sxs-lookup"><span data-stu-id="31037-112">Set up devices</span></span>](set-up-devices.md)
+7. [<span data-ttu-id="31037-113">讓您的使用者準備好使用裝置</span><span class="sxs-lookup"><span data-stu-id="31037-113">Get your users ready to use devices</span></span>](get-started-devices.md)
+8. [<span data-ttu-id="31037-114">部署應用程式</span><span class="sxs-lookup"><span data-stu-id="31037-114">Deploy apps</span></span>](deploy-apps.md)
