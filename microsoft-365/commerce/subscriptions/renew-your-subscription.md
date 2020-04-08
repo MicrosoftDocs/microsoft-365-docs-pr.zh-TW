@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: '瞭解如何使用產品金鑰來更新您的商務用 Office 365 訂閱，並開啟或關閉定期計費。 '
-ms.openlocfilehash: acf5c81fae60fcce272dcee470de0588da3c4a97
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: a382a2c4767f9dac4ee276c050d077d854b99084
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142112"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43175199"
 ---
 # <a name="renew-office-365-for-business"></a>更新商務用 Office 365
 
@@ -67,11 +67,7 @@ ms.locfileid: "43142112"
 
 ::: moniker range="o365-germany"
   
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
-
-    如果您使用的是 Office 365 Germany，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>頁面。
-
-    如果您使用的是由 21Vianet 提供的 Office 365，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>頁面。
+1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
 
 2. 選擇您想要管理週期性帳單的訂閱。
  
@@ -90,11 +86,7 @@ ms.locfileid: "43142112"
 
 ::: moniker range="o365-21vianet"
   
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
-
-    如果您使用的是 Office 365 Germany，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>頁面。
-
-    如果您使用的是由 21Vianet 提供的 Office 365，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>頁面。
+1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
 
 2. 選擇您想要管理週期性帳單的訂閱。
  
