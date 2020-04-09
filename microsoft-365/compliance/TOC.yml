@@ -151,6 +151,8 @@
           href: what-the-dlp-functions-look-for.md
     - name: M365 中的加密
       href: encryption.md
+    - name: Office 365 服務加密
+      href: office-365-service-encryption.md
     - name: 客戶金鑰
       items:
         - name: Office 365 中的客戶機碼服務加密
