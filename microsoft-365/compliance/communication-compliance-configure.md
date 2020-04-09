@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d4a98383e88634f1e87606df5bcd1d066254081f
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: e9e13c4bb9a950326a5fc718be26f93d046776e7
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170927"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193511"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>設定 Microsoft 365 中的通訊合規性
 
@@ -119,7 +119,7 @@ ms.locfileid: "43170927"
 
 4. 選取 [**建立原則**]，以從範本建立及設定新原則，或建立及設定自訂原則。
 
-    如果您選擇原則範本以建立原則，您可以：
+    如果您選擇內建原則範本以建立原則，您可以：
 
     - 確認或更新原則名稱。 建立原則之後，便無法變更原則名稱。
     - 選擇要監督的使用者或群組，包括選擇您想要排除的使用者或群組。
@@ -135,7 +135,11 @@ ms.locfileid: "43170927"
     - 選擇要監視的通訊方向，包括輸入、輸出或內部通訊。
     - 定義通訊相容性原則[條件](communication-compliance-feature-reference.md#ConditionalSettings)。 您可以選擇 [郵寄地址]、[關鍵字]、[檔案類型] 和 [大小相符] 條件。
     - 選擇是否要包含機密資訊類型。 在這個步驟中，您可以選取預設和自訂的機密資訊類型。 在 [通訊合規性原則] 中，從現有的自訂敏感資訊類型或自訂關鍵字字典中挑選。 如有需要，您可以在執行該嚮導之前建立這些專案。 您也可以從通訊合規性原則嚮導中建立新的敏感資訊類型。
-    - 選擇是否要啟用冒犯性語言分類器。 此分類器會偵測到電子郵件內送出或接收到不適當的語言。
+    - 選擇是否要啟用分類器。 分類器可以偵測電子郵件訊息或其他類型的文字中傳送或接收的不適當語言。
+
+    >[!CAUTION]
+    >我們正在取代**冒犯性語言**內建的分類符，因為它所產生的是大量的誤報。 請勿使用它，如果您目前使用它，您應該將商務程式移出它。 建議您改為使用**威脅**、**猥褻**和**騷擾**內建的分類符。
+
     - 定義要複查的通訊百分比。
     - 檢查您的原則選擇並建立原則。
 

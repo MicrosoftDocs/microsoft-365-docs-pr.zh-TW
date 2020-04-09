@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留標籤可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Microsoft 365 中實作記錄管理解決方案。
-ms.openlocfilehash: 59adebd9b61761f05156247bbb6c4cb27b42c52b
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 720a5b0b2fca16701dd4c2a752ac31b81e2233ab
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106005"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189068"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -373,7 +373,7 @@ Exchange 公用資料夾和 Skype 不支援標籤。
 
 保留標籤可強制執行保留內容的動作。此外，您也可以使用保留標籤作為資料外洩防護 (DLP) 原則的條件。DLP 原則可以對包含特定標籤的內容強制執行其他動作，例如限制存取。 
   
-如需詳細資訊，請參閱[使用標籤做為條件的 DLP 原則](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy)。
+如需詳細資訊，請參閱[使用標籤做為條件的 DLP 原則](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
   
 ## <a name="monitor-retention-labels"></a>監控保留標籤
 

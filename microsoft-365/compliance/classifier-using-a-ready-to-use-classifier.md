@@ -14,18 +14,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 隨附許多內建的分類符，您可以用來識別及標記整個組織中的內容。 本主題將告訴您如何準備使用這些分類器。
-ms.openlocfilehash: b8e4b51300bee86682924245bbf530e1e954b483
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 2bd36ac42278cfe7b015d03caf2d9e1958908f8f
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826244"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193501"
 ---
 # <a name="using-a-built-in-classifier-preview"></a>使用內建的分類器（預覽）
 
-Microsoft 已使用極大的範例資料集訓練及測試了許多分類器，可協助識別特定的內容類別別。 請參閱[trainable 類元的快速入門（預覽）](classifier-getting-started-with.md)。 這些分類器預設會顯示`Ready to use`在群組中。
+Microsoft 已使用極大的範例資料集訓練及測試了五個分類符，可協助識別特定的內容類別別。 請參閱[trainable 類元的快速入門（預覽）](classifier-getting-started-with.md)。 這些分類器預設會顯示`Ready to use`在群組中。
 
-- **冒犯性語言**：偵測包含 profanities、slurs、taunts 及偽裝運算式（也就是具有更具冒犯性字詞之意義的運算式）的文字專案。
+Microsoft 365 隨附了五個建議的內建分類器：
+
+> [!CAUTION]
+> 我們正在取代**冒犯性語言**內建的分類符，因為它所產生的是大量的誤報。 請勿使用它，如果您目前使用它，您應該將商務程式移出它。 建議您改為使用**威脅**、**猥褻**和**騷擾**內建的分類符。
+
 - **簡歷**：偵測屬於申請人個人、教育、專業資格、工作經驗及其他個人識別資訊的文字帳戶的專案。
 - **原始程式碼**：偵測包含一組指令和語句的專案，這些專案是以前25種使用電腦程式設計語言的 GitHub 上所撰寫。
 
@@ -45,7 +49,7 @@ Microsoft 已使用極大的範例資料集訓練及測試了許多分類器，�
 > 在您的分類和標籤工作流程中使用內建的分類器之前，您應該針對組織內容的範例進行測試，以確認類別的分類預測符合您的預期。
 
 > [!IMPORTANT]
-> 請注意，冒犯性語言、騷擾、猥褻和威脅分類器只會使用可搜尋文字，並非完整或完整。 此外，語言和文化標準也會不斷變更，但在這些現實中，Microsoft 保留以其判斷來更新這些分類器的權利。 雖然分類程式可協助您的組織監控冒犯性及其他使用的語言，但是分類程式不會解決這類語言的影響，而且不是為了提供組織的唯一監視或回應使用的方式這類語言。 您的組織，而不是 Microsoft 或其子公司，仍然負責所有與監控、強制執行、封鎖、移除及保留預先訓練的分類器所識別的內容相關的決策。
+> 請注意，冒犯性語言、騷擾、猥褻和威脅分類器只會使用可搜尋文字，並非完整或完整。 此外，語言和文化標準也會不斷變更，但在這些現實中，Microsoft 保留以其判斷來更新這些分類器的權利。 雖然分類程式可協助您的組織監控冒犯性和其他語言，但分類程式不會解決這類語言的影響，而且不是為了提供組織的唯一監視或回應這類語言的使用方式。 您的組織，而不是 Microsoft 或其子公司，仍然負責所有與監控、強制執行、封鎖、移除及保留預先訓練的分類器所識別的內容相關的決策。
 
 ## <a name="how-to-prepare-for-and-use-a-built-in-classifier"></a>如何準備及使用內建的分類器
 

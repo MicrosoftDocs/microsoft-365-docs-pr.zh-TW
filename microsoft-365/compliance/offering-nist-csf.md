@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 65578f8105d52c87eb74cba57a215682f92bd02d
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: 5d30073d611edf60ced4d926fdae0708d555cb6f
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170905"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43188984"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>國家標準和技術研究院（NIST） Cybersecurity Framework （CSF）
 
@@ -35,10 +35,7 @@ FICIC 參照以全域方式辨識的標準，其中包含 NIST SP 800-53，可�
 
 NIST Cybersecurity Framework （CSF）是一種自願架構，由標準、指導方針和最佳作法組成，以管理 Cybersecurity 相關的風險。 Microsoft 雲端服務已經過獨立，協力廠商 FedRAMP 適度和高基準審核，且已依照 FedRAMP 標準進行驗證。 此外，透過 HITRUST 執行的已驗證評估，主要的安全性和隱私權標準的開發和資格鑒定組織，會針對 NIST CSF 中指定的目標，認證 Office 365。
 
-瞭解如何使用合規性分數和我們的 Azure 安全性與合規性藍圖，加速您的 NIST Cybersecurity Framework 部署：
-
-- [下載 Azure 安全性和合規性藍圖-NIST CSF 風險評估檢查清單](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy?command=Download&downloadType=Document&downloadId=89ec5635-be07-4a5d-87d3-51783e4d3002)
-- [深入瞭解 Office 365 的 NIST CSF 評估（遵循合規性分數）](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
+[瞭解如何](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)使用合規性分數加速 NIST Cybersecurity Framework 部署：
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -54,9 +51,10 @@ Office 365 的 NIST CSF 認證為兩年有效。
 
 ## <a name="quickly-build-nist-csf-solutions-on-azure"></a>在 Azure 上快速建立 NIST CSF 解決方案
 
-NIST Cybersecurity Framework （CSF） standard 可能是雲端的挑戰性。 幸運的是，使用 Azure，您將擁有「Azure 安全性和合規性 NIST CSF 藍圖」的頭部。 此藍圖提供的工具和指引，可讓您立即開始建立 NIST CSF 相容的解決方案。
+NIST Cybersecurity Framework （CSF） standard 可能是雲端的挑戰性。 目前，您可以將新的藍圖範例用於 FedRAMP 適中或 FedRAMP 高，以協助您開始使用。 新的 NIST CSF 控制項是從這些 FedRAMP 基線中的控制項開發。
 
-- [開始使用 Azure NIST CSF 藍圖](https://aka.ms/Azure-Blueprint-DoD-NIST)
+- [FedRAMP 中等藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/fedramp-m/)
+- [FedRAMP 高藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/fedramp-h/)
 
 ## <a name="perform-risk-assessment-on-office-365-using-nist-csf-in-compliance-score"></a>使用 NIST CSF 在合規性分數中執行 Office 365 的風險評估
 
@@ -99,7 +97,7 @@ Microsoft 提供最全面的選項，與其他雲端服務提供者相較。 為
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
 
-[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 [設定合規性分數](compliance-score-setup.md)後，請從**範本**下拉式功能表中選取預先設定的[NIST CSF 範本](https://go.microsoft.com/fwlink/?linkid=2117917)，以協助您的組織符合此法規的需求。
+[Microsoft 合規性分數](compliance-score.md)是[microsoft 365 規範中心](microsoft-365-compliance-center.md)的預覽功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 [設定合規性分數](compliance-score-setup.md)後，請從**範本**下拉式功能表中選取預先設定的[NIST CSF 範本](https://go.microsoft.com/fwlink/?linkid=2117917)，以協助您的組織符合此法規的需求。
 
 ## <a name="resources"></a>資源
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 61da6df18a8e41a609ae8aea7ff57c2f53f92d84
-ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
+ms.openlocfilehash: 13b19079e52a390e8be3372939619541aa3b7294
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982046"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193469"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通訊法規遵從性
 
@@ -121,10 +121,10 @@ Microsoft 365 中的通訊法規遵從性建立于[Office 365 中的監察原則
 
 您可以從下列 Microsoft 365 規範中心的原則範本中選擇：
 
-- **冒犯性語言和反騷擾**：使用此範本可快速建立使用內建分類器的原則，以自動偵測可能被視為濫用或攻擊性的內容。
+- **冒犯性語言和反騷擾**：使用此範本可快速建立使用內建威脅、猥褻和騷擾分類程式的原則，以自動偵測可能被視為濫用或攻擊性的內容。
 - **機密資訊**：使用此範本可建立一個原則，用以掃描包含定義的敏感資訊類型或關鍵字的通訊，以協助確保重要的資料不會與不應該存取的人員共用。
 - **規章遵循**：使用此範本可建立原則來掃描通訊，以查看與法規標準相關的標準財務術語參考。
-- **自訂原則**：使用此範本來設定特定通訊通道、個別偵測條件，以及要在組織中進行監督的內容數量。
+- **自訂原則**：使用此範本，設定組織中的特定通訊通道、分類程式、個別偵測條件，以及要查看的內容數量。
 
 ### <a name="investigate"></a>調查
 

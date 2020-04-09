@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6f3019c57d35e6ac54a9f1a2cd0dbede22601ec1
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 40e8be29c585c0490b93e81c27728085d59c5146
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029847"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193449"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -43,7 +43,7 @@ ms.locfileid: "43029847"
 
 |**適用範圍**|**原則範本**|**詳細資料**|
 |:-----|:-----|:-----|
-| **冒犯性語言和反騷擾** | 監視冒犯性語言的通訊 | -位置： Exchange、小組、商務用 Skype <br> -Direction:Inbound、輸出、內部 <br> -審閱百分比：100% <br> -條件：冒犯性語言分類程式 |
+| **冒犯性語言和反騷擾** | 監視冒犯性語言的通訊 | -位置： Exchange、小組、商務用 Skype <br> -Direction:Inbound、輸出、內部 <br> -審閱百分比：100% <br> -條件：威脅、猥褻和騷擾語言分類程式 |
 | **敏感資訊** | 監視敏感資訊的通訊 | -位置： Exchange、小組、商務用 Skype <br> -Direction:Inbound、輸出、內部 <br> -審閱百分比：10% <br> -條件：機密資訊、現成的內容模式和類型、自訂字典選項、大於 1 MB 的附件 |
 | **法規遵從性** | 監視與金融法規合規性相關的資訊的通訊 | -位置： Exchange、小組、商務用 Skype <br> -Direction:Inbound、輸出 <br> -審閱百分比：10% <br> -條件：自訂字典選項，大於 1 MB 的附件 |
 
@@ -133,7 +133,7 @@ ms.locfileid: "43029847"
 
 內建的分類程式會針對不同類型的相容性問題，在組織中的所有通訊通道上，掃描傳送或接收的郵件。 分類器使用人工智慧和關鍵字的組合，識別可能違反反騷擾原則的郵件中的語言。 內建的分類器目前只支援電子郵件中的英文關鍵字。
 
-通訊相容性內建的分類程式會掃描下列語言類型的字詞和 sentiment 的通訊：
+通訊相容性使用內建的分類程式，掃描下列語言類型的術語和 sentiment 的通訊：
 
 - **威脅**：掃描對人員或財產認可暴力或實體傷害的威脅。
 - **騷擾**：掃描針對種族、color、宗教、全國原產地的攻擊性行為。

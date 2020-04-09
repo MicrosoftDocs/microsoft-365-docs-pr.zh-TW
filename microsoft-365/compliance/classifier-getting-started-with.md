@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，方法是將它肯定和否定的範例，以查看。 在訓練分類器之後，請確認其結果是否正確。 然後，您可以使用它來搜尋組織的內容，並將其分類，以套用保留或敏感度標籤，或將其包含在資料遺失防護（DLP）或保留原則中。
-ms.openlocfilehash: 6706fe25194191d57ffd91f07f13d22fe5ec6cfd
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 4d11fcf4e1437641cb73510d341d299ce3695938
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826254"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193521"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>開始使用可訓練的分類器 (預覽)
 
@@ -63,9 +63,11 @@ Trainable 分類器是 Microsoft 365 E5 或 E5 規範功能。 您必須具有�
 
 ### <a name="understanding-built-in-classifiers"></a>瞭解內建的分類器
 
-Microsoft 365 隨附六個內建的分類器：
+Microsoft 365 隨附了五個建議的內建分類器：
 
-- **冒犯性語言**：偵測包含 profanities、slurs、taunts 及偽裝運算式（也就是具有更具冒犯性字詞之意義的運算式）的文字專案。
+> [!CAUTION]
+> 我們正在取代**冒犯性語言**內建的分類符，因為它所產生的是大量的誤報。 請勿使用它，如果您目前使用它，您應該將商務程式移出它。 建議您改為使用**威脅**、**猥褻**和**騷擾**內建的分類符。
+
 - **簡歷**：偵測屬於申請人個人、教育、專業資格、工作經驗及其他個人識別資訊的文字帳戶的專案。
 - **原始程式碼**：偵測包含一組指令和語句的專案，這些專案是以前25種使用電腦程式設計語言的 GitHub 上所撰寫。
 
@@ -87,7 +89,7 @@ Microsoft 365 隨附六個內建的分類器：
 ![分類器-可供使用-分類器](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
-> 請注意，冒犯性語言、騷擾、猥褻和威脅分類器只會使用可搜尋文字，並非完整或完整。  此外，語言和文化標準也會不斷變更，但在這些現實中，Microsoft 保留以其判斷來更新這些分類器的權利。 雖然分類程式可協助您的組織監控冒犯性及其他使用的語言，但是分類程式不會解決這類語言的影響，而且不是為了提供組織的唯一監視或回應使用的方式這類語言。 您的組織，而不是 Microsoft 或其子公司，仍然負責所有與監控、強制執行、封鎖、移除及保留預先訓練的分類器所識別的內容相關的決策。
+> 請注意，冒犯性語言、騷擾、猥褻和威脅分類器只會使用可搜尋文字，並非完整或完整。  此外，語言和文化標準也會不斷變更，但在這些現實中，Microsoft 保留以其判斷來更新這些分類器的權利。 雖然分類程式可協助您的組織監控冒犯性和其他語言，但分類程式不會解決這類語言的影響，而且不是為了提供組織的唯一監視或回應這類語言的使用方式。 您的組織，而不是 Microsoft 或其子公司，仍然負責所有與監控、強制執行、封鎖、移除及保留預先訓練的分類器所識別的內容相關的決策。
 
 #### <a name="process-flow-for-using-built-in-classifiers"></a>使用內建分類器的處理流程
 
@@ -108,7 +110,7 @@ Microsoft 365 隨附六個內建的分類器：
 
 ![處理流程 trainable 分類器](../media/classifier-trainable-classifier-flow.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [保留標籤](labels.md)
 - [保留原則](retention-policies.md)

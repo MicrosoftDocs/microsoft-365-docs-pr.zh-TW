@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性與合規性中心的總管和即時偵測。
-ms.openlocfilehash: 2db16773b305e2e5f929e96fb3ca0e7bfe541990
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: e882f89a0020cacd30cb6d85917e78a965ad5cde
+ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081265"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43198380"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
 
@@ -173,7 +173,7 @@ ms.locfileid: "43081265"
 
 1. 在安全性與合規性中心 ([https://protection.office.com](https://protection.office.com)) 選擇 **[威脅管理]** > **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
 
-2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[提交]**。
+2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[提交]**。 （以前稱為「**使用者報告**」）。
 
    ![總管的檢視功能表](../../media/ExplorerViewMenuEmailUserReported.png)
 
@@ -234,3 +234,7 @@ ms.locfileid: "43081265"
 
 - Office 365 ATP 方案 1 提供**即時偵測**報告，而 Office 365 ATP 方案 2 提供**威脅總管**。
 - **即時偵測**報告可讓您即時檢視偵測。 **威脅總管**也有這個功能，但也能讓您檢視特定攻擊的其他詳細資料。
+- **所有的電子郵件**view 都可用於**威脅瀏覽器**（而不是**即時**的偵測報告中）。
+- **威脅瀏覽器**中包含更多篩選功能和可用的動作。
+
+如需詳細資訊，請參閱[Office 365 ATP 服務說明：各高級威脅防護（ATP）方案中的功能可用性](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
