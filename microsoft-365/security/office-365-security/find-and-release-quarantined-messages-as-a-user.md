@@ -17,20 +17,18 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: 身為 Office 365 使用者，您可以檢視、釋出、刪除隔離郵件 (收件者是您，且經垃圾郵件篩選功能認為是垃圾郵件或大量電子郵件而加以隔離的郵件)。 您可以在「安全性與合規性中心」檢視和管理隔離郵件。
-ms.openlocfilehash: 04f04cfddb123bf176f3c71568789c77d225a601
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 03c7ce474119ae5ff130b987b58d5130d53c33d6
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893667"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42941402"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>以 Office 365 使用者身分尋找及釋出隔離的郵件
 
 在擁有 Exchange Online 信箱的 Office 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，隔離區會保存可能有害或不想要的郵件。 如需詳細資訊，請參閱 [Office 365 中的隔離區](quarantine-email-messages.md)。
 
-身為使用者，您可以檢視、釋出、刪除收件者是您的隔離郵件，郵件之所以會遭到隔離，是因為系統認為這些郵件是垃圾郵件、大量電子郵件或 (2020 年 4 月起) 網路釣魚。 您也可以向 Microsoft 回報誤判的郵件。
-
-您可以在「安全性與合規性中心」檢視和管理隔離郵件。
+身為使用者，您可以檢視、釋出、刪除收件者是您的隔離郵件，郵件之所以會遭到隔離，是因為系統認為這些郵件是垃圾郵件、大量電子郵件或 (2020 年 4 月起) 網路釣魚。 您可以在安全性與合規性中心 (如果系統管理員已設定) 或[使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)中查看和管理您的隔離郵件。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -38,7 +36,7 @@ ms.locfileid: "42893667"
 
 - 系統管理員可以設定郵件要先保留在隔離區中多久，然後才永久刪除 (反垃圾郵件原則)。 已在隔離區中到期的郵件將無法還原。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-- 系統管理員也可以在反垃圾郵件原則中[啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)。 2019 年 10 月起，您已無法再從這些通知中直接釋出隔離郵件。 您可以按一下通知中的 [檢閱]****，以前往「安全性與合規性中心」內的隔離區。 如需有關通知的詳細資訊，請參閱 [Office 365 中的使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
+- 系統管理員也可以在反垃圾郵件原則中[啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)。 使用者可以直接從這些通知釋出垃圾郵件隔離郵件，但無法釋出網路釣魚隔離郵件。 如需詳細資訊，請參閱 [Office 365 中的使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
 - 經系統或郵件流程規則 (又稱為傳輸規則) 認為是高信賴度網路釣魚或惡意程式碼而遭到隔離的郵件，只會交給系統管理員處理。 如需詳細資訊，請參閱[以 Office 365 系統管理員身分管理隔離的郵件和檔案](manage-quarantined-messages-and-files.md)。
 

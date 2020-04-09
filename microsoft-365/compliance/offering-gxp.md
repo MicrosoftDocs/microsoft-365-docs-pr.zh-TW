@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6a3379043108340391764781f52b6a1bc3e05cf3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b4699ca9fda4f8d5364dff0fdabd868b886540b3
+ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601930"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43165898"
 ---
 # <a name="good-clinical-laboratory-and-manufacturing-practices-gxp"></a>優良臨床、實驗室和製造規範 (GxP)
 
@@ -40,9 +40,9 @@ Microsoft 能協助處理生命科學產品和服務的研究、臨床研究、�
 
 雖然這些標準和最佳規範並不會特別專注於 GxP 法規合規性，但其目的和目標卻是類似的，有助於確保儲存在 Microsoft 雲端服務中的資料機密性、完整性和可用性。
 
-Microsoft 聘請 [Montrium](https://www.montrium.com/) (專門從事生命科學產業的品質保證和法規 GxP 合規性的獨立組織) 為 Microsoft 進行 GxP 資格審查。 產生的資格指導方針 ([Azure](https://aka.ms/gxpcompliance) 和 [Office 365](https://aka.ms/o365-qualification-guideline)) 適用於規劃使用這些雲服務來代管和支援 GxP 監管之電腦化系統的生命科學組織。 這個指導方針確認了 Microsoft 和其客戶在符合 GxP 要求方面的共同責任，以及建議使用範圍內 Microsoft 雲端服務的客戶可建立的活動和控制措施，來維護對 GxP 電腦化系統的控管。
+Microsoft 聘請 [Montrium](https://www.montrium.com/) (專門從事生命科學產業的品質保證和法規 GxP 合規性的獨立組織) 為 Microsoft 進行 GxP 資格審查。 產生的資格指導方針 ([Azure](https://aka.ms/gxpcompliance) 和 [Office 365](https://resources.techcommunity.microsoft.com/wp-content/uploads/2019/05/Microsoft-Office-365-GxP-Guidelines.pdf)) 適用於規劃使用這些雲服務來代管和支援 GxP 監管之電腦化系統的生命科學組織。 這個指導方針確認了 Microsoft 和其客戶在符合 GxP 要求方面的共同責任，以及建議使用範圍內 Microsoft 雲端服務的客戶可建立的活動和控制措施，來維護對 GxP 電腦化系統的控管。
 
-在 Azure 和 Office 365 上建立 GxP 解決方案的生命科學組織可利用雲端的效益，同時也能保護病患安全、產品品質和資料完整性。 客戶也能受益於安全性與控管技術、操作規範和合規性原則的多個層面，強制執行特定層級的資料隱私權和完整性。
+在 Azure 和 Office 365 上建置 GxP 解決方案的生命科學組織可利用雲端的效益，同時也能保護病患安全、產品品質和資料完整性。 客戶也能受益於安全性與控管技術、操作規範和合規性原則的多個層面，強制執行特定層級的資料隱私權和完整性。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -53,11 +53,11 @@ Microsoft 聘請 [Montrium](https://www.montrium.com/) (專門從事生命科學
 
 - [Azure GxP 指導方針](https://aka.ms/gxpcompliance)：使用 Azure 同時遵守 GxP 最佳規範和法規的全方位工具組。
 - [使用 Azure 搭配 GxP 系統](https://aka.ms/GXP-Azure-Strategies)：協助生命科學組織建立用於建置 GxP 應用程式的策略。
-- FDA 第 21 章第 11 節指南：協助建立用於電子記錄且符合 FDA 指導方針的 [Azure](https://aka.ms/Azure-FDA-Guidelines) 和 [Office 365](https://aka.ms/o365-qualification-guideline) 資格策略。
+- FDA 第 21 章第 11 節指南：協助建立用於電子記錄且符合 FDA 指導方針的 [Azure](https://aka.ms/Azure-FDA-Guidelines) 和 [Office 365](https://resources.techcommunity.microsoft.com/wp-content/uploads/2019/05/Microsoft-Office-365-GxP-Guidelines.pdf) 資格策略。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-**我是否可以在組織的 GxP 合規性成效中使用 Microsoft GxP 合規性？**
+**我是否可以在組織的 GxP 合規性工作中使用 Microsoft GxP 合規性？**
 
 在 Azure 上部署應用程式的客戶應該根據預期使用來決定適用於其電腦化系統的 GxP 要求，然後依照控管資格和驗證程序的內部流程，以證明他們已符合這些要求。
 
