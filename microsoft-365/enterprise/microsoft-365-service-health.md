@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft 365 服務健全狀態
-ms.openlocfilehash: 8acbd54f8b1d635fa1ba1d02d7c255484fb24758
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 16621bc266684397da5fa92e953067e1e8342b4e
+ms.sourcegitcommit: 8959701cf009068b40da2757b4a61da61d5c166b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189102"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43207160"
 ---
 # <a name="microsoft-365-network-health-status"></a>Microsoft 365 網路健全狀態
 
@@ -37,12 +37,12 @@ _此頁面更新可能會有延遲。我們會手動更新，並同時建立更�
 
 | 位置 | 問題類型 | 詳細資料 |
 | --- | --- | --- |
-| **目前沒有問題** |  |  |
+| **目前沒有問題**  |  |  |
 
 ## <a name="recommendations-to-improve-network-experience"></a>改善網路經驗的建議事項
 
 使用這些資源改善您的 Microsoft 服務網路使用量。
 
-- [使用 VPN 分割通道最佳化遠端使用者的 Office 365 連線](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)
+- [使用 VPN 分割通道將遠端使用者的 Office 365 連線能力最佳化](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)
 - [Office 365 的網路連線原則](https://aka.ms/pnc)
 - [使用 Azure 網路服務遠端工作](https://docs.microsoft.com/azure/networking/working-remotely-support)
