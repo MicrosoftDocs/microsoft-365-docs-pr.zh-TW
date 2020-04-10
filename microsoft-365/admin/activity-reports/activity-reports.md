@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 取得關於組織中的人員使用 Office 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
-ms.openlocfilehash: da62d934b295916a7f0fc952cc9cbe94b8384246
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: fc9416445fec7a873ae7d09e1af366f029f51ed1
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151426"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204053"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的活動報告
 
@@ -87,6 +87,7 @@ ms.locfileid: "43151426"
 視您的訂閱而定，可能有以下幾種報告可用。
   
 - [電子郵件活動](email-activity.md)
+- [表單活動](forms-activity.md)
     
 - [信箱使用量](mailbox-usage.md)
     
@@ -101,6 +102,7 @@ ms.locfileid: "43151426"
 - [商務用 OneDrive 使用者活動](onedrive-for-business-activity.md)
   
 - [商務用 OneDrive 使用量](onedrive-for-business-usage.md)
+- [專業增強版使用量](microsoft365-apps-usage.md)
   
 - [SharePoint 網站使用量](sharepoint-site-usage.md)
   

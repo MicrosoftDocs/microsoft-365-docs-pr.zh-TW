@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本的垃圾郵件篩選設定，包括識別為垃圾郵件所採取的選取郵件動作。
-ms.openlocfilehash: a497dc4cbce877c0aa6113e32223235ffebbfd41
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f77a4f52e045c96a0538b140022ebee846cb1996
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894203"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204097"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>設定 Office 365 的反垃圾郵件原則
 
@@ -75,7 +75,7 @@ EOP 中反垃圾郵件原則的基本元素有：
 
 - 您必須已獲指派權限，才能執行這些程序。 若要新增、修改、刪除反垃圾郵件原則，您必須是**組織管理**或**安全性系統管理員**角色群組的成員。 若要唯讀存取反垃圾郵件原則，您必須是**安全性讀取者**角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱 [Office 365 安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
-- 如需反惡意程式碼原則的建議設定，請參閱 [EOP 反垃圾郵件原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
+- 如需反垃圾郵件原則的建議設定，請參閱 [EOP 反垃圾郵件原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings) (英文)。
 
 ## <a name="use-the-security--compliance-center-to-create-anti-spam-policies"></a>使用安全性與合規性中心來建立反垃圾郵件原則
 
