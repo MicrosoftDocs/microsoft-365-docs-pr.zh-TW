@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: af00a516-dd39-4eda-af3e-1eaf686c8dc9
 description: '瞭解如何在 Office 365 中編輯或新增自訂的 DNS 記錄。 '
-ms.openlocfilehash: 4cdfe98a38dd870dcf5d745438e8d81afa1fc934
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: c2495e4b7e85361d89404526e2467a08f2259567
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857104"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212518"
 ---
 # <a name="add-or-edit-custom-dns-records-in-office-365"></a>在 Office 365 中新增或編輯自訂 DNS 記錄
 
@@ -42,7 +42,7 @@ ms.locfileid: "42857104"
 
 5. 選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。
     
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
 
 ## <a name="related-articles"></a>相關文章
 
@@ -50,6 +50,6 @@ ms.locfileid: "42857104"
 
 [DNS 基本概念](../get-help-with-domains/dns-basics.md)
 
-[取得 Office 365 網域的說明](../get-help-with-domains/get-help-with-domains.yml)
+[取得 Office 365 網域的說明](../get-help-with-domains/get-help-with-domains.md)
 
 

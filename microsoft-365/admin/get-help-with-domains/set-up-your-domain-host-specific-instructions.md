@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,25 +19,25 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
-description: 了解如何管理 DNS 記錄，或讓您管理 DNS 記錄為您的 Office 365。
+description: 瞭解如何管理您自己的 DNS 記錄，或讓 Office 365 為您管理您的 DNS 記錄。
 ms.custom: okr_smb
-ms.openlocfilehash: dbd9dda6f84803732777ac75163f031b50419732
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 7a5bcf6bb39497a37cbec4e2cd9b7efad0fc6724
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362138"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210353"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>設定您的網域 (主機專用指示)
 
-若要開始使用 Office 365 中的自訂網域 (contoso.com)，您需要確認您的網域，以及設定您的網域 DNS 記錄。 
+若要開始使用 Office 365 的自訂網域（contoso.com），您必須驗證您的網域，並設定網域的 DNS 記錄。 
   
-您可以新增和管理 DNS 記錄使用系統管理工具]，在您網域的主機，或讓 Office 365 控制的您網域的記錄，我們將以為您設定它們。
+您可以使用網域主機上的系統管理工具來新增及管理 DNS 記錄，或對您的網域記錄提供 Office 365 控制，我們會為您加以設定。
   
-選取您的網域主機下方的確切的步驟。 如果您不確定您的主機是誰，請參閱[尋找您的網域註冊機構](find-your-domain-registrar.md)。
+請選取下列您的網域主機，以取得確切的步驟。 如果您不確定您的主機是誰，請參閱[尋找您的網域註冊機構](find-your-domain-registrar.md)。
   
 
-## <a name="let-office-365-manage-your-dns-records"></a>可讓 Office 365 管理您的 DNS 記錄
+## <a name="let-office-365-manage-your-dns-records"></a>讓 Office 365 管理您的 DNS 記錄
 
 ||
 |---|---|
@@ -50,27 +50,27 @@ ms.locfileid: "42362138"
 |[Namecheap](../dns/change-nameservers-at-namecheap.md)|
 |[Network Solutions](../dns/change-nameservers-at-network-solutions.md) |  
 
-或者，了解如何[變更名稱伺服器以設定 Office 365 運用任何網域註冊機構](change-nameservers-at-any-domain-registrar.md)。
+或者，瞭解如何[使用任何網域註冊機構變更名稱伺服器以設定 Office 365](change-nameservers-at-any-domain-registrar.md)。
 
-## <a name="manage-your-own-dns-records"></a>管理 DNS 記錄
+## <a name="manage-your-own-dns-records"></a>管理您自己的 DNS 記錄
 
 |                           |                          |
 |---------------------------|--------------------------|
-| [1&1 IONOS](../dns/create-dns-records-at-1-1-internet.md) | [將游標暫留](../dns/create-dns-records-at-hover.md) |
-| [123-reg.co.uk](../dns/create-dns-records-at-123-reg-co-uk.md) | [由 Google (eNom) 管理](../dns/create-dns-records-for-domain-managed-by-google-enom.md)|
+| [1&1 IONOS](../dns/create-dns-records-at-1-1-internet.md) | [懸停](../dns/create-dns-records-at-hover.md) |
+| [123-reg.co.uk](../dns/create-dns-records-at-123-reg-co-uk.md) | [由 Google 管理（eNom）](../dns/create-dns-records-for-domain-managed-by-google-enom.md)|
 | [Amazon Web Services (AWS)](../dns/create-dns-records-at-aws.md) | [MyDomain](../dns/create-dns-records-at-mydomain.md) |
 | [Azure DNS 區域](../dns/create-dns-records-for-azure-dns-zones.md) | [name.com](../dns/create-dns-records-at-name-com.md) |
 | [Bluehost](../dns/create-dns-records-at-bluehost.md) | [Namecheap](../dns/create-dns-records-at-namecheap.md)|
 | [Cloudflare](../dns/create-dns-records-at-cloudflare.md)| [Names.co.uk](../dns/create-dns-records-at-names-co-uk.md) |
 |  [Crazy Domains](../dns/create-dns-records-at-crazy-domains.md)| [Netregistry](../dns/create-dns-records-at-netregistry.md) |
-|[DNSMadeEasy](../dns/create-dns-records-at-dnsmadeeasy.md) | [Network Solutions](../dns/create-dns-records-at-network-solutions.md) |
-|[Dreamhost](../dns/create-dns-records-at-dreamhost.md)  | [OVH](../dns/create-dns-records-at-ovh.md) |
+|[DNSMadeEasy](../dns/create-dns-records-at-dnsmadeeasy.md) | [網路解決方案](../dns/create-dns-records-at-network-solutions.md) |
+|[Dreamhost](../dns/create-dns-records-at-dreamhost.md)  | [Ovh](../dns/create-dns-records-at-ovh.md) |
 |  [Dyn.com](../dns/create-dns-records-at-dyn-com.md) | [Register.com](../dns/create-dns-records-at-register-com.md) |
-| [eNomCentral](../dns/create-dns-records-at-enomcentral.md)| [Office 365 Register365](../dns/create-dns-records-at-register365.md)  |
+| [eNomCentral](../dns/create-dns-records-at-enomcentral.md)| [適用于 Office 365 的 Register365](../dns/create-dns-records-at-register365.md)  |
 | [Freenom](../dns/create-dns-records-at-freenom.md) | [web.com](../dns/create-dns-records-at-web-com.md)|
 |[GoDaddy](../dns/create-dns-records-at-godaddy.md)|[Windows 型 DNS](../dns/create-dns-records-using-windows-based-dns.md)   |
 | [Google 網域](../dns/create-dns-records-at-google-domains.md) |[Wix](../dns/create-dns-records-at-wix.md) |
-|[Hostgator](../dns/create-dns-records-at-hostgator.md)  | [Yahoo ！  小型企業版](../dns/create-dns-records-at-yahoo-small-business.md)  |
+|[Hostgator](../dns/create-dns-records-at-hostgator.md)  | [雅虎！  小型企業](../dns/create-dns-records-at-yahoo-small-business.md)  |
 
-[我需要的一般指示，因為我的網域主機不在此清單上。](create-dns-records-at-any-dns-hosting-provider.md)
+[我需要一般指示，因為我的網域主機未出現在此清單中。](create-dns-records-at-any-dns-hosting-provider.md)
    

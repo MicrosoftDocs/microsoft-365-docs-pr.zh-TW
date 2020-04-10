@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 34e57a00-2a7d-469c-beec-089423f18369
-description: 了解如何驗證您的網域和設定 Office 365 的電子郵件、 商務用 Skype 線上商務和 dyn.com 其他服務的 DNS 記錄。
-ms.openlocfilehash: a09ba409b1788432c5cd5c060252bb76b6903342
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Office 365 Dyn.com。
+ms.openlocfilehash: d25d4d9712dcd2e2a171c6ad0eac70b8c01e75ab
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42349344"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211772"
 ---
 # <a name="create-dns-records-at-dyncom-for-office-365"></a>在 Dyn.com 建立 Office 365 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 Dyn.com 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
  
@@ -45,9 +45,9 @@ ms.locfileid: "42349344"
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. 在 [**層級服務**] 頁面上，選取您想要編輯的網域**Dyn 標準 DNS 服務**。 
+2. 在 [**區域等級服務**] 頁面上，針對您想要編輯的網域，選取 [ **Dyn Standard DNS 服務**]。 
     
-3. 在您網域的**DNS** ] 頁面上，選取 [**喜好設定**]。
+3. 在您網域的 [ **DNS** ] 頁面上，選取 [**喜好**設定]。
     
 4. 選取 [**啟用專家介面**]。
     
@@ -55,11 +55,11 @@ ms.locfileid: "42349344"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Host** (主機)|**TTL**|**類型**|**資料**|
+    |**Host**|**TTL**|**類型**|**資料**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |600 個  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |(Leave this field empty.)  <br/> |600  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
        
-   ![Dyn-DYN-BP-CONFIGURE-1-確認-1-1](../../media/b3730b15-a313-4b4c-b91e-646eebb649e8.png)
+   ![Dyn-BP-Verify-1-1](../../media/b3730b15-a313-4b4c-b91e-646eebb649e8.png)
   
 6. 選取 [**建立記錄**]。
     
@@ -96,9 +96,9 @@ ms.locfileid: "42349344"
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. 在 [**層級服務**] 頁面上，選取您想要編輯的網域**Dyn 標準 DNS 服務**。 
+2. 在 [**區域等級服務**] 頁面上，針對您想要編輯的網域，選取 [ **Dyn Standard DNS 服務**]。 
     
-3. 在您網域的 DNS] 頁面上，選取 [**喜好設定**]。
+3. 在您網域的 [DNS] 頁面上，選取 [**喜好**設定]。
     
 4. 選取 [**啟用專家介面**]。
     
@@ -106,21 +106,21 @@ ms.locfileid: "42349344"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Host** (主機)|**TTL**|**類型**|**資料**|
+    |**Host**|**TTL**|**類型**|**資料**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |600 個  <br/> |MX  <br/> |10  *\<網域金鑰\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **10**是指 MX 優先順序值。 請將它新增到 MX 值的開頭，並以空格分隔該值的其餘部分。  <br/> **附註：** 取得您*\<網域金鑰\>* 從您的 Office 365 帳戶。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)      <br>    For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
+    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |10  *\<網域金鑰\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **10**是 MX 優先順序值。 請將它新增到 MX 值的開頭，並以空格分隔該值的其餘部分。  <br/> **附注：** 從您的 Office 365 帳戶取得您* \<的網域金鑰\> * 。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)      <br>    For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
    
-    ![Dyn-DYN-BP-CONFIGURE-1-設定-2-1](../../media/62ac77b7-c84d-426d-9ec4-a28d6479ad04.png)
+    ![Dyn-BP-Configure-2-1](../../media/62ac77b7-c84d-426d-9ec4-a28d6479ad04.png)
   
 6. 選取 [**建立記錄**]。
     
     ![Dyn-BP-Configure-2-2](../../media/e84e2cca-75e3-4584-8a98-f2f89cb71bd3.png)
   
-7. 如果有任何其他 MX 記錄，請將它們移除藉由選取 [**刪除**] 欄中的每個核取方塊。 
+7. 如果有任何其他 MX 記錄，請選取 [**刪除**] 欄中的每一個核取方塊加以移除。 
     
     ![Dyn-BP-Configure-2-3](../../media/f24f02cc-c0b7-42cf-a2ff-4d0fc203e4de.png)
   
-8. 選取 [**套用變更**]。
+8. 選取 [套用**變更**]。
     
     ![Dyn-BP-Configure-2-4](../../media/0cc23c2b-b6f2-4f58-af20-4c6506de7b43.png)
   
@@ -131,27 +131,27 @@ ms.locfileid: "42349344"
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. 在 [**層級服務**] 頁面上，選取您想要編輯的網域**Dyn 標準 DNS 服務**。 
+2. 在 [**區域等級服務**] 頁面上，針對您想要編輯的網域，選取 [ **Dyn Standard DNS 服務**]。 
     
-3. 在您網域的**DNS** ] 頁面上，選取 [**喜好設定**]。
+3. 在您網域的 [ **DNS** ] 頁面上，選取 [**喜好**設定]。
     
 4. 選取 [**啟用專家介面**]。
     
 5. 新增六筆 CNAME 記錄的第一筆。
     
-    在 [ **Add DNS Record** ] 區段，於新記錄的方塊中輸入或複製並貼上下表第一列的值。 
+    在 [新增**DNS 記錄**] 區段的新記錄方塊中，輸入或複製並貼上下表第一列中的值。 
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Host** (主機)|**TTL**|**類型**|**資料**|
+    |**Host**|**TTL**|**類型**|**資料**|
     |:-----|:-----|:-----|:-----|
-    |autodiscover (自動探索)  <br/> |600 個  <br/> |CNAME  <br/> |autodiscover.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |sip  <br/> |600 個  <br/> |CNAME  <br/> |sipdir.online.lync.com>。  <br/> **This value MUST end with a period (.)** <br/> |
-    |lyncdiscover  <br/> |600 個  <br/> |CNAME  <br/> |webdir.online.lync.com>。  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseregistration  <br/> |600 個  <br/> |CNAME  <br/> |enterpriseregistration.windows.net>。  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseenrollment  <br/> |600 個  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **This value MUST end with a period (.)** <br/> |
+    |autodiscover (自動探索)  <br/> |600  <br/> |CNAME  <br/> |autodiscover.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> |
+    |sip  <br/> |600  <br/> |CNAME  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
+    |lyncdiscover  <br/> |600  <br/> |CNAME  <br/> |webdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
+    |enterpriseregistration  <br/> |600  <br/> |CNAME  <br/> |enterpriseregistration.windows.net。  <br/> **This value MUST end with a period (.)** <br/> |
+    |enterpriseenrollment  <br/> |600  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **This value MUST end with a period (.)** <br/> |
    
-    ![Dyn-DYN-BP-CONFIGURE-1-設定-3-1](../../media/1fd80695-d3d7-4298-9ebe-97a69f46f1b2.png)
+    ![Dyn-BP-Configure-3-1](../../media/1fd80695-d3d7-4298-9ebe-97a69f46f1b2.png)
   
 6. 選取 [**建立記錄**]。
     
@@ -159,7 +159,7 @@ ms.locfileid: "42349344"
   
 7. 新增剩餘的五筆 CNAME 記錄。
     
-    在 [ **Add DNS Record** ] 區段中，在表格中，使用下一列的值來建立記錄，然後再次選擇 [**建立記錄**，以完成該筆記錄。 
+    在 [**新增 DNS 記錄**] 區段中，使用表格中下一列的值來建立記錄，然後再選取 [**建立記錄**] 以完成記錄。 
     
     重複這個程序，直到六筆 CNAME 記錄全部建立完畢。
     
@@ -173,9 +173,9 @@ ms.locfileid: "42349344"
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. 在 [**層級服務**] 頁面上，選取您想要編輯的網域**Dyn 標準 DNS 服務**。 
+2. 在 [**區域等級服務**] 頁面上，針對您想要編輯的網域，選取 [ **Dyn Standard DNS 服務**]。 
     
-3. 在您網域的**DNS** ] 頁面上，選取 [**喜好設定**]。
+3. 在您網域的 [ **DNS** ] 頁面上，選取 [**喜好**設定]。
     
 4. 選取 [**啟用專家介面**]。
     
@@ -183,11 +183,11 @@ ms.locfileid: "42349344"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Host** (主機)|**TTL**|**類型**|**資料**|
+    |**Host**|**TTL**|**類型**|**資料**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |600 個  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |(Leave this field empty.)  <br/> |600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
-    ![Dyn-DYN-BP-CONFIGURE-1-設定-4-1](../../media/f8511349-3ea2-40c3-9853-98e1a58a91b5.png)
+    ![Dyn-BP-Configure-4-1](../../media/f8511349-3ea2-40c3-9853-98e1a58a91b5.png)
   
 6. 選取 [**建立記錄**]。
     
@@ -200,24 +200,24 @@ ms.locfileid: "42349344"
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. 在 [**層級服務**] 頁面上，選取您想要編輯的網域**Dyn 標準 DNS 服務**。 
+2. 在 [**區域等級服務**] 頁面上，針對您想要編輯的網域，選取 [ **Dyn Standard DNS 服務**]。 
     
-3. 在您網域的**DNS** ] 頁面上，選取 [**喜好設定**]。
+3. 在您網域的 [ **DNS** ] 頁面上，選取 [**喜好**設定]。
     
 4. 選取 [**啟用專家介面**]。
     
 5. 新增兩筆 SRV 記錄中的第一筆。
     
-    在 [ **Add DNS Record** ] 區段，於新記錄的方塊中輸入或複製並貼上下表第一列的值。 
+    在 [新增**DNS 記錄**] 區段的新記錄方塊中，輸入或複製並貼上下表第一列中的值。 
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Host** (主機)|**TTL**|**類型**|**資料**|
+    |**Host**|**TTL**|**類型**|**資料**|
     |:-----|:-----|:-----|:-----|
-    |_sip._tls|600 個|SRV|100 1 443 sipdir.online.lync.com>。 **This value MUST end with a period (.)**<br>**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
-    |_sipfederationtls._tcp|600 個|SRV|100 1 5061 sipfed.online.lync.com>。 **This value MUST end with a period (.)**<br> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |_sip。 _tls|600|SRV|100 1 443 sipdir.online.lync.com。 **This value MUST end with a period (.)**<br>**注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |_sipfederationtls。 _tcp|600|SRV|100 1 5061 sipfed.online.lync.com。 **This value MUST end with a period (.)**<br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
-    ![Dyn-DYN-BP-CONFIGURE-1-設定-5-1](../../media/a6873411-f4ce-4327-9145-02d435930976.png)
+    ![Dyn-BP-Configure-5-1](../../media/a6873411-f4ce-4327-9145-02d435930976.png)
   
 6. 選取 [**建立記錄**]。
     
@@ -225,7 +225,7 @@ ms.locfileid: "42349344"
   
 7. 新增另一筆 SRV 記錄。
     
-    在 [ **Add DNS Record** ] 區段中的使用中表格中，第二列的值建立記錄，然後再次選擇 [**建立記錄**，以完成該筆記錄。 
+    在 [**新增 DNS 記錄**] 區段中，使用表格中第二列的值來建立記錄，然後再選取 [**建立記錄**] 以完成記錄。 
     
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 

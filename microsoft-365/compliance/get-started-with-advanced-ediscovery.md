@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文說明如何開始使用 Microsoft 365 中的「高級 eDiscovery」。 完成一些快速步驟之後，就可以使用「高級 eDiscovery」工具。 第一步是建立案例，然後開始使用 Advanced eDiscovery 的功能和功能。
-ms.openlocfilehash: 1f3eb78ab9f9e96eaa95dbfbc7e087fa1514b836
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: a43bfd94fcf0a2563a184a3a87d96c64bd8eb619
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43100866"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204043"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>使用高級電子檔快速入門
 
@@ -173,4 +173,4 @@ EDiscovery 管理員角色群組中有兩個子群組。 這些子群組之間�
 
    - [分析案例資料](analyzing-data-in-review-set.md)。 高級 eDiscovery 的分析功能非常強大。 在複查集中的資料執行分析之後，我們會執行分析，例如接近重複偵測、電子郵件執行緒和主題，可協助減少您必須查看的檔數量。 我們也會產生分析報告，以匯總執行分析的結果。 如先前所述，執行分析也會執行[律師-用戶端許可權偵測模型](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)。
 
-5. **匯出及下載案例資料**。 收集、複查及分析案例資料的最後一個步驟是，將其匯出至「高級 eDiscovery」以供外部檢查，或由調查小組以外的人員進行審閱。 匯出資料的過程分為兩個步驟。 第一步是將審閱集[匯出](export-documents-from-review-set.md)至不同的 Azure 存放位置（由 Microsoft 提供，或由您的組織管理的一個位置）。 然後，您使用 Azure Storage Explorer 將資料[下載](download-export-jobs.md)到本機電腦。 除了匯出的資料檔案之外，匯出套件也包含匯出報告、摘要報告及錯誤報表。
+5. **匯出及下載案例資料**。 收集、複查及分析案例資料的最後一個步驟是，將其匯出至「高級 eDiscovery」以供外部檢查，或由調查小組以外的人員進行審閱。 匯出資料的過程分為兩個步驟。 第一步是將資料[匯出](export-documents-from-review-set.md)到審閱集，並將它複製到不同的 Azure 存放位置（一個是由 Microsoft 提供，或是由您的組織管理的位置）。 然後，您使用 Azure Storage Explorer 將資料[下載](download-export-jobs.md)到本機電腦。 除了匯出的資料檔案之外，匯出套件也包含匯出報告、摘要報告及錯誤報表。

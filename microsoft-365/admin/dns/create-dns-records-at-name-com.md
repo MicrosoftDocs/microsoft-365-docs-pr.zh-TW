@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
-description: 了解如何驗證您的網域和設定 Office 365 電子郵件、 Skype for Business Online，與在 name.com 其他服務的 DNS 記錄。
-ms.openlocfilehash: f21a40f543ff3a9faffe6ffba98f4d541b2a7a7b
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Office 365 name.com。
+ms.openlocfilehash: f39cf9f241851e555ea23ca7b63453796a5f471b
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42349972"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211652"
 ---
 # <a name="create-dns-records-at-namecom-for-office-365"></a>在 name.com 建立 Office 365 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 name.com 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
   
@@ -52,11 +52,11 @@ ms.locfileid: "42349972"
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. [**我的網域**] 中，選取您要修改的網域名稱。
+2. 在 [**我的網域**] 底下，選取您要修改的網功能變數名稱稱。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. 在 [**詳細資料**] 欄中，選取 [* * DNS 記錄 * *。 
+3. 在 [**詳細資料**] 欄中，選取 [* DNS 記錄] * *。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -69,7 +69,7 @@ ms.locfileid: "42349972"
     |**類型** <br/> |**主機** <br/> |**答案** <br/> |**TTL** <br/> |
     |TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |
    
-    ![名稱-DYN-BP-CONFIGURE-1-確認-1-1](../../media/0c352fd3-cf84-439f-a481-0705e225cc54.png)
+    ![Name-BP-Verify-1-1](../../media/0c352fd3-cf84-439f-a481-0705e225cc54.png)
   
 5. 選取 [**新增記錄**]。
     
@@ -105,7 +105,7 @@ ms.locfileid: "42349972"
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. [**我的網域**] 中，選取您要修改的網域名稱。
+2. 在 [**我的網域**] 底下，選取您要修改的網功能變數名稱稱。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -119,9 +119,9 @@ ms.locfileid: "42349972"
     
     |**類型**|**主機**|**答案**|**TTL**|**Prio (優先順序)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(將此欄位保留空白。)  <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附註：** 取得您*\<網域金鑰\>* 從您的 Office 365 帳戶。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
+    |MX  <br/> |(將此欄位保留空白。)  <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附注：** 從您的 Office 365 帳戶取得您* \<的網域金鑰\> * 。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
    
-   ![名稱-DYN-BP-CONFIGURE-1-設定-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
+   ![Name-BP-Configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   
 5. 選取 [**新增記錄**]。
     
@@ -129,11 +129,11 @@ ms.locfileid: "42349972"
   
 6. 如果有任何其他 MX 記錄，請透過下列雙步驟程序刪除每個記錄︰
     
-    針對其他 MX 記錄，選取 [**動作**] 欄中的 [**刪除**]。 
+    針對其他每個 MX 記錄，請選取 [**動作**] 欄中的 [**刪除**]。 
     
     ![名稱-BP-設定-2-3](../../media/16734a98-31c4-4023-a2a5-10b7c95bc58e.png)
   
-    若要確認每個刪除，請選取 [**刪除**[**動作**] 欄中一次。 
+    若要確認每個刪除，請再次選取 [**動作**] 欄中的 [**刪除**]。 
     
     ![名稱-BP-設定-2-4](../../media/409c21c5-51f4-4244-bb84-5d32084224b2.png)
   
@@ -146,7 +146,7 @@ ms.locfileid: "42349972"
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. [**我的網域**] 中，選取您要修改的網域名稱。
+2. 在 [**我的網域**] 底下，選取您要修改的網功能變數名稱稱。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -168,15 +168,15 @@ ms.locfileid: "42349972"
     |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |使用預設值 (300)。  <br/> |
     |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |使用預設值 (300)。  <br/> |
    
-   ![名稱-DYN-BP-CONFIGURE-1-設定-3-1](../../media/4e34caaf-b418-40ec-abfa-fe62175a87c2.png)
+   ![Name-BP-Configure-3-1](../../media/4e34caaf-b418-40ec-abfa-fe62175a87c2.png)
   
-5. 選取 [**新增記錄**，以新增第一筆記錄。 
+5. 選取 [ **Add record** ] （新增）以新增第一筆記錄。 
     
     ![名稱-BP-設定-3-2](../../media/1053c2a7-07c3-4c1b-b54a-1c02881fb0ec.png)
   
 6. 新增第二筆 CNAME 記錄。
     
-    使用上述，表格中第二列的值，然後選取 [**新增記錄**，以新增第二筆記錄。 
+    使用上表中第二列的值，然後選取 [**新增記錄**] 以新增第二筆記錄。 
     
     以此類推，使用表格中第三、四、五、六列的值新增其他記錄。
     
@@ -190,7 +190,7 @@ ms.locfileid: "42349972"
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. [**我的網域**] 中，選取您要修改的網域名稱。
+2. 在 [**我的網域**] 底下，選取您要修改的網功能變數名稱稱。
 
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -204,9 +204,9 @@ ms.locfileid: "42349972"
     
     |**類型**|**主機**|**答案**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |Use the default value (300).  <br/> |
+    |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |Use the default value (300).  <br/> |
    
-   ![名稱-DYN-BP-CONFIGURE-1-設定-4-1](../../media/cbbfc071-840a-4ffa-a59e-0dfce03063cc.png)
+   ![Name-BP-Configure-4-1](../../media/cbbfc071-840a-4ffa-a59e-0dfce03063cc.png)
   
 5. 選取 [**新增記錄**]。
     
@@ -219,11 +219,11 @@ ms.locfileid: "42349972"
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. [**我的網域**] 中，選取您要修改的網域名稱。
+2. 在 [**我的網域**] 底下，選取您要修改的網功能變數名稱稱。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. 在 [**詳細資料**] 欄中，選取 [ **DNS 記錄 +**。 
+3. 在 [**詳細資料**] 欄中，選取 [ **DNS 記錄 +**]。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -233,12 +233,12 @@ ms.locfileid: "42349972"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**類型**|**Service** (服務)|**Weight** (權數)|**TTL**|**Prio (優先順序)**|**Protocol** (通訊協定)|**Port** (連接埠)|**Target** (目標)|
+    |**類型**|**服務**|**Weight** (權數)|**TTL**|**Prio (優先順序)**|**Protocol** (通訊協定)|**Port** (連接埠)|**Target** (目標)|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|1|使用預設值 (300)。|100|tls|443|sipdir.online.lync.com <br> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
-    |SRV|sipfederationtls|1|使用預設值 (300)。|100|tcp|5061|sipfed.online.lync.com <br>**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |SRV|sip|1 |使用預設值 (300)。|100|tls|443|sipdir.online.lync.com <br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |SRV|sipfederationtls|1 |使用預設值 (300)。|100|tcp|5061|sipfed.online.lync.com <br>**注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
-   ![名稱-DYN-BP-CONFIGURE-1-設定-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
+   ![Name-BP-Configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   
 5. 選取 [**新增記錄**]。
 
@@ -246,7 +246,7 @@ ms.locfileid: "42349972"
   
 6. 新增第二筆 SRV 記錄：
 
-使用上述，表格中下一列的值，然後選取 [**新增記錄**，以新增第二筆記錄。
+使用上表中的下一列的值，然後選取 [**新增記錄**] 以新增第二筆記錄。
 
 >[!NOTE]
 >DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。

@@ -7,7 +7,7 @@ author: pebaum
 manager: mnirkhe
 ms.date: 2/14/2018
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: '瞭解如何成為系統管理員，以及如何為您的組織取得 Office 365 訂閱。 '
-ms.openlocfilehash: 7b213d2a2e987a4e12cb410372e540ca715528a1
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: de7528d79353ec5e674c349e328dd81c32725669
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857412"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212254"
 ---
 # <a name="become-the-admin-and-purchase-office-365-for-your-organization"></a>成為系統管理員，並為貴組織購買 Office 365
 
@@ -87,7 +87,7 @@ Microsoft 提供生產力工具與服務的方式相當便捷，貴組織內部�
 |新增或移除授權  <br/> |您可以針對尚未使用 Office 365 的使用者[新增更多授權](../../commerce/licenses/buy-licenses.md)，或從不想要使用組織之 office 365 訂閱的[使用者中移除授權](../manage/remove-licenses-from-users.md)。  <br/> |
 |連絡已註冊的使用者  <br/> |Reach out to the other users and let them know that you're managing their Office 365 subscription and that they've been upgraded. [Follow these steps](../add-users/add-users.md) to see a list of **Active Users** and their email addresses.  <br/> |
 |開始使用 Office 365  <br/> |請造訪 [Office 365 學習中心](https://support.office.com/learn/office365-for-business) 並了解如何登入、檢查電子郵件、共用文件等。您和您的使用者可利用這個網站開始使用 Office 365。  <br/> |
-|管理您的 Office 365 訂閱  <br/> |請造訪[Office 365 系統管理中心協助中心](../admin-home.yml)，瞭解常見的系統管理工作，例如新增及移除使用者、重設密碼及設定行動裝置。  <br/> |
+|管理您的 Office 365 訂閱  <br/> |請造訪[Office 365 系統管理中心協助中心](../admin-home.md)，瞭解常見的系統管理工作，例如新增及移除使用者、重設密碼及設定行動裝置。  <br/> |
 
 ## <a name="still-need-help"></a>仍需要協助嗎？
 

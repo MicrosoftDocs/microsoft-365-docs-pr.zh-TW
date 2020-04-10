@@ -14,22 +14,22 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要：瞭解 Microsoft Office 365 的服務層級資料加密。
-ms.openlocfilehash: a8faded033ade013924eeeab269aa213840430b4
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: fb6bf87fbd51bcb4383e9eb595ef11f081989d86
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193459"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211940"
 ---
 # <a name="office-365-service-encryption"></a>Office 365 服務加密
 
 除了使用 BitLocker 用於大量加密、Exchange Online、商務用 Skype、SharePoint Online、OneDrive 商務用，以及小組也會使用服務加密來加密客戶資料。 服務加密允許兩個主要的管理選項：
 
-- Microsoft 管理所有的加密金鑰。 此選項目前可用於 SharePoint 線上 OneDrive、商務用 Skype、商務用 Skype 和團隊聊天。 根據預設，您的資料會以 Microsoft 受管理的金鑰加密。
+- Microsoft 管理所有的加密金鑰。 此選項目前可用於 SharePoint 線上 OneDrive、商務用 Skype、商務用 Skype 和團隊聊天。 根據預設，您的資料會以 Microsoft 管理的金鑰加密。
 
 - 您的組織提供根機碼。 您可以使用 Azure Key Vault 管理這些金鑰。 此選項稱為「客戶金鑰」。 客戶金鑰目前適用于 Exchange Online、SharePoint 線上 OneDrive、商務用 Skype、商務用 Skype 及小組檔案。 如果您使用客戶金鑰，這些金鑰會取代 Microsoft 受管理的金鑰來加密您的資料。
 
-不管您選擇哪個選項，服務加密都會提供多項好處：
+不論選擇哪個選項，服務加密都會提供多項優點：
 
 - 強制進行使用者驗證，以取得及解密已授權使用者要求的資料。
 

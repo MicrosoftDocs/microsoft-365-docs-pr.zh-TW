@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c5f6140a-4a12-401b-9bbd-7dfb0d6b0ba3
-description: 了解如何設定 Office 365 來管理您在 MyDomain 的自訂網域的 DNS 記錄。
-ms.openlocfilehash: 90f1469bdf2f281be14e2a9e15a9fe7ac4a8cbee
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 瞭解如何設定 Office 365，以管理位於 MyDomain 的自訂網域的 DNS 記錄。
+ms.openlocfilehash: f88f0528caf2229441fd3e5364b53864b923099f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351614"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212042"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-mydomain"></a>使用 MyDomain 變更名稱伺服器以設定 Office 365
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。
+ 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。
   
 如果您希望讓 Office 365 來管理您的 Office 365 DNS 記錄，請遵循下列指示。(如果您想要的話，可以[在 MyDomain 管理所有的 Office 365 DNS 記錄](create-dns-records-at-mydomain.md)。)
   
@@ -55,7 +55,7 @@ ms.locfileid: "42351614"
 ||
 |:-----|
 |**內容** <br/> |
-|MS=ms *XXXXXXXX*  <br/> **附註**： 這是範例。 在這裡請使用您自己的 **[目的地或指向位址]** 值，請參閱 Office 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+|MS=ms *XXXXXXXX*  <br/> **請注意**：這是一個範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. 選取 [新增]****。
     
@@ -82,7 +82,7 @@ ms.locfileid: "42351614"
 如要完成網域設定以用於 Office 365，請在您的網域註冊機構更改網域的 NS 記錄，使它指向 Office 365 主要和次要名稱伺服器。這樣就會設定並讓 Office 365 為您更新網域的 DNS 記錄。我們會新增所有記錄，好讓電子郵件、商務用 Skype Online 和您的公用網站都能使用您的網域，為您做好一切準備。
   
 > [!CAUTION]
-> 當您變更網域的 NS 記錄以指向 Office 365 名稱伺服器時，所有目前與您網域相關聯的服務都會受到影響。 例如，所有的電子郵件傳送至您的網域 (例如 rob @ *your_domain。* com) 都會開始送往 Office 365 之後進行這項變更。 
+> 當您變更網域的 NS 記錄以指向 Office 365 名稱伺服器時，所有目前與您網域相關聯的服務都會受到影響。 例如，所有傳送至您網域的電子郵件（如 rob@ *your_domain。* com）在您進行此變更後，會開始進入 Office 365。 
   
 > [!IMPORTANT]
 > The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the correct nameservers if they are not already in the list. <br/> When you have completed the steps in this section, the only nameservers that should be listed are these four:
@@ -93,34 +93,34 @@ ms.locfileid: "42351614"
     
 3. 在 [網域]**** 下方，選取要編輯的網域名稱。
     
-4. 在 [**概觀**] 列中，選取 [**名稱**]。
+4. 在 [**一覽**] 列中，選取 [**名稱伺服器**]。
     
-    ![MyDomain-DYN-BP-CONFIGURE-1-重新委派-1-1](../../media/49e91235-44b5-46d6-a82e-8f11329db3d6.png)
+    ![MyDomain-重新委派-1-1](../../media/49e91235-44b5-46d6-a82e-8f11329db3d6.png)
   
-5. 在 [**更新名稱伺服器**] 區段中，選取 [**使用不同的名稱伺服器**。
+5. 在 [**更新名稱伺服器**] 區段中，選取 [**使用不同的名稱伺服器**]。
     
-    ![MyDomain-BP-Redelegate-1-2-1](../../media/f869fb26-54dc-4b66-8378-a78a79b582bd.png)
+    ![MyDomain-重新委派-1-2-1](../../media/f869fb26-54dc-4b66-8378-a78a79b582bd.png)
   
-6. 請根據是否已經現在顯示頁面上列出名稱伺服器，繼續進行下列其中一個兩個程序。
+6. 請根據現在顯示頁面上是否列出名稱伺服器，繼續執行下列兩個程式中的其中一項。
     
 ### <a name="if-the-correct-nameservers-are-already-listed"></a>如果列表上「有」正確的名稱伺服器
 
 - 如果列表上有正確的名稱伺服器，您可以跳過此步驟。
     
-    ![MyDomain-BP-Redelegate-1-2-2](../../media/601f6a46-15bd-4a92-b792-ac628ff86628.png)
+    ![MyDomain-重新委派-1-2-2](../../media/601f6a46-15bd-4a92-b792-ac628ff86628.png)
   
 ### <a name="if-the-correct-nameservers-are-not-already-listed"></a>如果列表上「沒有」正確的名稱伺服器
 
 > [!CAUTION]
-> Follow these steps only if you have existing nameservers other than the four correct nameservers. (也就是刪除只是任何目前的名稱*未*命名為**ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或**ns4.bdm.microsoftonline.com**。) 
+> Follow these steps only if you have existing nameservers other than the four correct nameservers. （也就是說，只刪除所有*未*命名為**ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或**ns4.bdm.microsoftonline.com**的目前名稱伺服器。） 
   
-1. 選取中的每個項目來刪除現有名稱伺服器**Nameserver:** 欄位，並在鍵盤上按**Delete**鍵。 
+1. 選取 [名稱伺服器 **：** ] 欄位中的每個專案，然後按下鍵盤上的**Delete**鍵，以刪除現有的名稱伺服器。 
     
-    ![MyDomain-BP-Redelegate-1-3-1](../../media/5024cd27-a2b1-42a2-99e4-5ceb5e6eddb9.png)
+    ![MyDomain-重新委派-1-3-1](../../media/5024cd27-a2b1-42a2-99e4-5ceb5e6eddb9.png)
   
-2. 選取 [**新增其他**兩次，以新增兩個新的名稱伺服器列。 
+2. 選取 [**增加其他**兩項]，以新增兩個新的名稱伺服器列。 
     
-    ![MyDomain-BP-Redelegate-1-3-2](../../media/19307893-2f73-4e4d-9221-a5870e09ab48.png)
+    ![MyDomain-重新委派-1-3-2](../../media/19307893-2f73-4e4d-9221-a5870e09ab48.png)
   
 3. 在記錄的方塊中，輸入或複製並貼上下表中名稱伺服器的值。
     
@@ -131,11 +131,11 @@ ms.locfileid: "42351614"
 |**Nameserver 3 (名稱伺服器 3)** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Nameserver 4 (名稱伺服器 4)** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![MyDomain-DYN-BP-CONFIGURE-1-重新委派-1-4](../../media/7427e99c-49c7-4a2e-a5bf-66fc46900cd1.png)
+   ![MyDomain-重新委派-1-4](../../media/7427e99c-49c7-4a2e-a5bf-66fc46900cd1.png)
   
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
     
-    ![MyDomain-DYN-BP-CONFIGURE-1-重新委派-1-5](../../media/48473816-b881-47f0-9344-74622efa3bf8.png)
+    ![MyDomain-重新委派-1-5](../../media/48473816-b881-47f0-9344-74622efa3bf8.png)
   
 > [!NOTE]
 > 您的名稱伺服器記錄更新可能需要數小時的時間，才能更新到整個網際網路的 DNS 系統。接著，您的 Office 365 電子郵件和其他服務就能搭配您的網域順利運作。 

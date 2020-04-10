@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Office 365 群組到期原則。
-ms.openlocfilehash: 40b0b56507c46f2a658126627d5f8794848bde27
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 92e472ac56128cc847471b51930aa73dc6598711
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894512"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212054"
 ---
 # <a name="office-365-group-expiration-policy"></a>Office 365 群組到期原則
 
@@ -38,7 +38,7 @@ ms.locfileid: "42894512"
 主動使用中的群組會自動更新。 下列任何動作都會自動更新群組：
 - SharePoint-查看、編輯、下載、移動、共用或上傳檔案。
 - Outlook-加入群組、讀取或寫入群組的郵件，以及類似郵件（Outlook 網頁版）。
-- 團隊-來訪小組頻道。
+- 團隊-造訪團隊 channe '。
 
 > [!IMPORTANT]
 > 當您變更到期原則時，服務會重新計算每個群組的到期日。 它永遠從建立群組的日期開始計數，然後套用新的到期原則。
@@ -53,7 +53,7 @@ ms.locfileid: "42894512"
 |角色|可以執行的動作|
 |---------|---------|
 |Office 365 全域管理員（在 Azure、公司管理員）、使用者管理員|建立、讀取、更新或刪除 Office 365 群組到期原則設定。|
-|User|更新或[還原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)擁有的 Office 365 群組|
+|使用者|更新或[還原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)擁有的 Office 365 群組|
 
 ## <a name="how-to-set-the-expiration-policy"></a>如何設定到期原則
 
@@ -85,4 +85,4 @@ ms.locfileid: "42894512"
 
 [指派新擁有者給孤立的群組](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[設定 Office 365 群組到期](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+[設定 Office 365 群組到期](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)'

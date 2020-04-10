@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,28 +21,28 @@ search.appverid:
 - GEU150
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
-description: 了解如何新增及設定 Office 365 中的網域，以便服務電子郵件與 Skype for Business Online 使用您自己的網域名稱。
+description: 瞭解如何在 Office 365 中新增及設定您的網域，如此一來，諸如電子郵件和商務用 Skype Online 等服務也會使用您自己的功能變數名稱。
 ms.custom: okr_smb
-ms.openlocfilehash: 3030fc33a6d528fd6cb4e97c27cdbb7c251e9a97
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 838025002443ec35787ea91775c60d3829545af4
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251670"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210489"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-any-domain-registrar"></a>運用任何網域註冊機構變更名稱伺服器以設定 Office 365
 
  若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
   
-[設定您的網域 （主機專用指示）](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)先檢查以查看是否有您的註冊機構的指示。 
+請先檢查[[設定您的網域（主機專用指示）](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) ]，以查看是否有註冊機構的指示。 
   
-您可以依照這些指示，在 Office 365 新增並設定網域，好讓電子郵件和商務用 Skype Online 等服務能夠使用您自己的網域名稱。 做法是驗證您的網域，然後將網域的名稱伺服器改為 Office 365，以便設定正確的 DNS 記錄。 如果下列陳述式描述您的情況，請遵循下列步驟：
+您可以依照這些指示，在 Office 365 新增並設定網域，好讓電子郵件和商務用 Skype Online 等服務能夠使用您自己的網域名稱。 做法是驗證您的網域，然後將網域的名稱伺服器改為 Office 365，以便設定正確的 DNS 記錄。 如果下列語句描述您的情況，請遵循下列步驟：
   
 - 您有自己的網域，而且希望將它設定為搭配 Office 365 使用。
     
 - 您要讓 Office 365 為您管理 DNS 記錄 (您可以視需要[管理自己的 DNS 記錄](../setup/add-domain.md))。
     
-## <a name="add-a-txt-or-mx-record-for-verification"></a>新增 TXT 或 MX 記錄以供驗證
+## <a name="add-a-txt-or-mx-record-for-verification"></a>新增 TXT 或 MX 記錄以進行驗證
 <a name="BKMK_verify"> </a>
 
 > [!NOTE]
@@ -78,25 +78,25 @@ ms.locfileid: "42251670"
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Record Type** (記錄類型)|**Alias** (別名) 或 **Host Name** (主機名稱)|**Value** (值)|**Priority** (優先順序)|**TTL**|
-|MX|輸入 **@** 或您的網域名稱。 |MS=ms *XXXXXXXX* > [!NOTE]> This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |**優先順序**，以避免發生衝突，以用於郵件流程的 MX 記錄，使用比優先順序較低的優先順序的任何現有的 MX 記錄。 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.md#what-is-mx-priority) |將此值設為 **1 hour** (1 小時)，或設為等同的分鐘數 ( **60** )、秒數 ( **3600** ) 等。 |
+|MX|輸入 **@** 或您的網域名稱。 |MS=ms *XXXXXXXX* > [!NOTE]> This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |針對 **[Priority]** (優先順序)，為避免跟用於郵件流程的 MX 記錄發生衝突，請使用比任一現有 MX 記錄更低的優先順序。 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.md#what-is-mx-priority) |將此值設為 **1 hour** (1 小時)，或設為等同的分鐘數 ( **60** )、秒數 ( **3600** ) 等。 |
    
 ### <a name="save-the-record"></a>儲存記錄
 
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+現在您已在網域註冊機構網站新增記錄，請返回 Office 365 並要求 Office 365 尋找該記錄。
   
-When Office 365 finds the correct TXT record, your domain is verified.
+在 Office 365 找到正確的 TXT 記錄後，您的網域就完成驗證了。
   
 
-1. 在系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
     
-2. 在 [**網域**] 頁面上，選取您要驗證的網域。 
+2. 在 **[網域]** 頁面上，選取您要驗證的網域。 
     
   
-3. 在 [**安裝**] 頁面上，選取 [**啟動安裝程式**。
+3. 在 **[設定]** 頁面上，選取 **[開始設定]**。
  
     
   
-4. 在 [**驗證網域**] 頁面上，選取 [**驗證**]。
+4. 在 **[驗證網域]** 頁面上，選取 **[驗證]**。
     
     
   
@@ -122,7 +122,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 |Second nameserver (第二個名稱伺服器)  <br/> |ns2.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
-   > 您應該使用至少兩個名稱伺服器記錄。 如果沒有列出任何其他名稱伺服器，您可以刪除，或將它們變更為**ns3.bdm.microsoftonline.com**和**ns4.bdm.microsoftonline.com**。 
+   > 您應該使用至少兩個名稱伺服器記錄。 如果有列出任何其他名稱伺服器，您可以將其刪除，或將其變更為**ns3.bdm.microsoftonline.com**和**ns4.bdm.microsoftonline.com**。 
   
 3. 儲存變更。
     
@@ -143,12 +143,12 @@ When Office 365 finds the correct TXT record, your domain is verified.
 |Second nameserver (第二個名稱伺服器)  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
    
    > [!TIP]
-   > 您應該使用至少兩個名稱伺服器記錄。 如果沒有列出任何其他名稱伺服器，您可以刪除，或將它們變更為**ns3.dns.partner.microsoftonline.cn**和**ns4.dns.partner.microsoftonline.cn**。 
+   > 您應該使用至少兩個名稱伺服器記錄。 如果有列出任何其他名稱伺服器，您可以將其刪除，或將其變更為**ns3.dns.partner.microsoftonline.cn**和**ns4.dns.partner.microsoftonline.cn**。 
   
 3. 儲存變更。
     
 > [!CAUTION]
-> 當您變更您網域的 NS 記錄改為指向 Office 365 operated by 21Vianet 名稱伺服器時，會影響所有目前與您的網域相關聯的服務。 如果您跳過精靈的任一步驟 (例如新增電子郵件地址)，或者如果您將網域用於部落格、購物車或其他服務，就必須額外採取其他步驟才行。 否則這項變更可能會使服務停擺 (例如，無法存取電子郵件或是您的目前網站)。 
+> 當您變更網域的 NS 記錄，使其指向由世紀名稱伺服器運作的 Office 365 時，所有目前與您網域相關聯的服務都會受到影響。 如果您跳過精靈的任一步驟 (例如新增電子郵件地址)，或者如果您將網域用於部落格、購物車或其他服務，就必須額外採取其他步驟才行。 否則這項變更可能會使服務停擺 (例如，無法存取電子郵件或是您的目前網站)。 
 
 ::: moniker-end
   
@@ -156,15 +156,15 @@ When Office 365 finds the correct TXT record, your domain is verified.
   
 - 在變更名稱伺服器 (NS) 記錄之前，將所有使用您網域的電子郵件地址全部移到 Office 365。
     
-- 您要新增一個目前搭配網站位址 (例如 www.fourthcoffee.com) 使用的網域嗎？ 當您新增網域，以保留其主控網站主控現在讓您變更網域的 NS 記錄改為指向 Office 365 之後人員還可以對網站取得的網站時，您可以採取以下步驟。
+- 您要新增一個目前搭配網站位址 (例如 www.fourthcoffee.com) 使用的網域嗎？ 您可以採取下列步驟，當您新增網域以保留網站主控位置的網站，以便在您將網域的 NS 記錄變更為指向 Office 365 之後，使用者仍可進入網站。
 
-1. 在系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
 
 3. 在 [網域] 頁面上，選取網域。
 
-4. **DNS 設定**] 下選取 [**自訂記錄**，，，然後選擇 [**新增自訂記錄**。
+4. 在 [ **DNS 設定**] 底下，選取 [**自訂記錄**]，然後選擇 [**新增自訂記錄**]。
 
-5. 選取您想要新增的 DNS 記錄類型，然後輸入新記錄的資訊。
+5. 選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。
 
 6. 選取 **[儲存]**。
     

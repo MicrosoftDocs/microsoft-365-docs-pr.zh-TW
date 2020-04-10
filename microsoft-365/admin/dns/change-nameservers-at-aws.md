@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0ddbe33c-81ea-4c02-8db9-e71d3810c0ec
-description: '了解如何設定 Office 365 來管理您的 DNS 記錄在 Amazon Web Services (AWS)。 '
-ms.openlocfilehash: 9500522478c22277c57772ef64b4d0a4b87e8c44
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: '瞭解如何設定 Office 365，以管理 Amazon Web 服務（AWS）上的 DNS 記錄。 '
+ms.openlocfilehash: a7125cf0add8200fe152c426f47e7f27a8f6226c
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352484"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212350"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-amazon-web-services-aws"></a>變更名稱伺服器以使用 Amazon Web Services (AWS) 設定 Office 365
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
   
 如果您希望讓 Office 365 來管理您的 Office 365 DNS 記錄，請遵循下列指示。(如果您想要的話，可以[在 AWS 管理所有的 Office 365 DNS 記錄](create-dns-records-at-aws.md)。)
   
@@ -43,11 +43,11 @@ ms.locfileid: "42352484"
   
 1. 首先請用[這個連結](https://console.aws.amazon.com/route53/home)移至 AWS 上您的網域頁面。系統會提示您先登入。
     
-2. 在 [**資源**] 頁面上，選取 [**託管區域**]。
+2. 在 [**資源**] 頁面上，選取 [**主控區域**]。
     
-3. 在 [**託管區域**] 頁面上，在**網域名稱**] 欄中，選取您想要編輯的網域名稱。 
+3. 在 [**主控區域**] 頁面上的 [**功能變數名稱**] 欄中，選取您要編輯的網功能變數名稱稱。 
     
-4. 選取 [**建立記錄集**。
+4. 選取 [**建立記錄集**]。
     
 5. In the **Create Record Set** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -59,7 +59,7 @@ ms.locfileid: "42352484"
 |||||||
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |**名稱** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**值** <br/> |**Routing Policy** <br/> |
-|（此欄位請保留空白）  <br/> |TXT - Text  <br/> |否  <br/> |300  <br/> |MS=ms *XXXXXXXX* <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)  <br/>  |簡易 <br/> |
+|（將此欄位保留空白）  <br/> |TXT - Text  <br/> |否  <br/> |300  <br/> |MS=ms *XXXXXXXX* <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)  <br/>  |簡易 <br/> |
    
 6. 選取 [建立]****。
     
@@ -89,33 +89,33 @@ ms.locfileid: "42352484"
 > 當您變更網域的 NS 記錄以指向 Office 365 名稱伺服器時，所有目前與您網域相關聯的服務都會受到影響。例如，在您完成這項變更之後，凡是傳送到您的網域 (例如 rob@ *your_domain*  .com) 的電子郵件都將開始傳送到 Office 365。 
   
 > [!IMPORTANT]
->  下列程序將告訴您如何從清單中，刪除任何其他不想要的名稱以及 how to： 新增如果他們沒有 」 列出正確的名稱伺服器。 當您完成在此區段中，應該會列出的唯一名稱伺服器的步驟 > 是這四個: > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
+>  下列程式將告訴您如何刪除清單中的任何其他、不想要的名稱伺服器，以及如何新增正確的名稱伺服器（如果尚未列出）。 > 完成本節中的步驟之後，應該會列出的唯一名稱伺服器為下列四種： > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
   
 1. 首先請用[這個連結](https://console.aws.amazon.com/route53/home)移至 AWS 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**資源**] 頁面上，選取 [**託管區域**]。
+2. 在 [**資源**] 頁面上，選取 [**主控區域**]。
     
-3. 在 [**託管區域**] 頁面上，在**網域名稱**] 欄中，選取您想要編輯的網域名稱。 
+3. 在 [**主控區域**] 頁面上的 [**功能變數名稱**] 欄中，選取您要編輯的網功能變數名稱稱。 
     
-4. 選取**名稱伺服器**記錄集。 
+4. 選取 [**名稱**伺服器] 記錄集。 
     
     ![Select the recordset](../../media/24e618e4-0a16-43a2-9886-f4f5dac79374.png)
   
-5. **NS-名稱伺服器**記錄中**的值**] 方塊中設定，刪除所有名稱伺服器選取全部，然後按鍵盤上的**Delete**鍵。 
+5. 在 [**值**] 方塊的 [ **NS-名稱伺服器**] 記錄集中，選取所有的名稱伺服器，然後按下鍵盤上的**delete**鍵來刪除所有。 
     
     > [!CAUTION]
-    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (也就是刪除只是任何目前的名稱*未*命名為**ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或**ns4.bdm.microsoftonline.com**。) 
+    > Follow these steps only if you have existing nameservers other than the four correct nameservers. （也就是說，只刪除所有*未*命名為**ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或**ns4.bdm.microsoftonline.com**的目前名稱伺服器。） 
   
     ![Select and delete all of the nameservers in the Value box](../../media/ecf1e897-fa7d-4abc-b00b-bf55b8ed2139.png)
   
-6. 在 [ **TTL （秒）：** ] 區域中，選取 [ **1h]** （1 小時）。 
+6. 在 [ **TTL （秒）：** ] 區域中，選取 [ **1H** （1小時）]。 
     
-    ![選取一小時 1h]](../../media/c70070e1-4bde-41a7-b271-9d22c475edf6.png)
+    ![選取1H 一小時](../../media/c70070e1-4bde-41a7-b271-9d22c475edf6.png)
   
-7. 仍在**NS-名稱伺服器**記錄設定，請在 [**值**] 方塊中，輸入或複製貼上下表中，**第一行**值，然後按**Enter**鍵上您的鍵盤並輸入或複製並貼上的下一個**行**值。 
+7. 仍在**NS 名稱伺服器**記錄集中的 [**值**] 方塊中，輸入或複製並貼上下表中的**第一個行**值，然後按下鍵盤上的**Enter**鍵，然後輸入或複製並貼上下**一行**的值。 
     
     > [!IMPORTANT]
-    > 每個名稱伺服器值，*必須*是自己 [**值**] 方塊內的個別行上，如下圖所示。 
+    > 每個名稱伺服器值都*必須*在 [**值**] 方塊中各自的個別行上，如下圖所示。 
   
 |||
 |:-----|:-----|
@@ -124,11 +124,11 @@ ms.locfileid: "42352484"
 |**第三行** <br/> |ns3.bdm.microsoftonline.com。  <br/> **This value MUST end with a period (.)** <br/> |
 |**第四行** <br/> |ns4.bdm.microsoftonline.com。  <br/> **This value MUST end with a period (.)** <br/> |
    
-   ![鍵入或貼上值] 方塊中的第一個行值](../../media/b63f41e0-51ef-4ab2-a4b8-ee7380e5ab35.png)
+   ![在 [值] 方塊中，輸入或貼上第一個行的值](../../media/b63f41e0-51ef-4ab2-a4b8-ee7380e5ab35.png)
   
-8. 選取 [**儲存記錄集**。
+8. 選取 [**儲存記錄集**]。
     
-    ![選取 [儲存記錄集](../../media/ab3c0558-bb7c-41e4-871e-ea82f1553476.png)
+    ![選取儲存記錄集](../../media/ab3c0558-bb7c-41e4-871e-ea82f1553476.png)
   
 > [!NOTE]
 > 您的名稱伺服器記錄更新可能需要數小時的時間，才能更新到整個網際網路的 DNS 系統。接著，您的 Office 365 電子郵件和其他服務就能搭配您的網域順利運作。 

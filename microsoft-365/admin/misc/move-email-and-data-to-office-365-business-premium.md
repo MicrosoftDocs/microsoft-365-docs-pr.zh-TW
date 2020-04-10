@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
-description: 了解如何將資料移至新的商務身分識別。
-ms.openlocfilehash: 878d4b66907cc6419ff23cbb61e56e32c7c601bc
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 瞭解如何將資料移至新的商務身分識別。
+ms.openlocfilehash: fc0df5e919370395480cdafbaaee10b0d844f088
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254268"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43209673"
 ---
 # <a name="move-email-and-data-to-office-365-business-premium"></a>將電子郵件和資料移至 Office 365 商務進階版
 
-當您升級至 Office 365 商務進階版時，我們提供全新*的商務身分識別*。 You get a new email account, and a separate OneDrive account for your business data. 
+當您升級至 Office 365 商務版 Premium 時，我們會為您提供一個全新的*商務身分識別*。 You get a new email account, and a separate OneDrive account for your business data. 
   
 如果您想要將某些個人資料移至新的商務身分識別中，請遵循下列指示：
   
@@ -39,21 +39,21 @@ ms.locfileid: "42254268"
  **複製您的 OneDrive 資料**
 1. 在您的硬碟上建立暫存資料夾，以便暫時存放要移轉至商務用 Office 365 的檔案。
     
-2. 移至 [[https://onedrive.live.com/](https://onedrive.live.com/)並使用您用來存取 Office 365 家用版訂閱的 Microsoft 帳戶登入。 
+2. 移至[https://onedrive.live.com/](https://onedrive.live.com/)並使用您用來存取 Office 365 的 Microsoft 帳戶登入，以供家用訂閱使用。 
     
 3. 將您要在商務用 Office 365 中使用的檔案複製到您在步驟 1 建立的本機資料夾。
     
  **將 OneDrive 檔案匯入商務用 Office 365**
-1. 移至[admin.microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877)並使用您的 Office 365 商務版使用者名稱和密碼登入。 
+1. 移至[admin.microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877) ，並使用您的 Office 365 商務使用者名稱和密碼登入。 
     
-2. 選取左上角的**應用程式啟動器**圖示，然後選擇 [ **OneDrive**。
+2. 選取左上角的**應用程式啟動器**圖示，然後選擇 [ **OneDrive**]。
   
     > [!TIP]
-    > 首次開啟商務用 OneDrive 時，您必須設定 OneDrive。 如果發生這種情況，在 [**歡迎使用商務用 OneDrive** ] 頁面上，選取 [**下一步**]。 OneDrive 設定後，請選取**您的 OneDrive 已準備好**。 
+    > 首次開啟商務用 OneDrive 時，您必須設定 OneDrive。 如果發生這種情況，在 [**歡迎使用商務用 OneDrive** ] 頁面上，選取 **[下一步]**。 在設定 OneDrive 後，請選取**您的 OneDrive 準備就緒**。 
   
-3. 您會進入空白的 OneDrive 資料夾。 如果您想要建立子資料夾，選取 [**新增** \> **資料夾**。
+3. 您會進入空白的 OneDrive 資料夾。 如果您想要建立子資料夾，請選取 [**新增** \> **資料夾**]。
 
-4. 選取 [將檔案複製從您的硬碟您複製 OneDrive 檔案**上傳**]。 
+4. 選取 **[上傳**]，將檔案從您複製 OneDrive 檔案的硬碟上複製。 
   
     > [!NOTE]
     >  您可以上傳個別檔案，也可以一次上傳一組檔案 (例如特定資料夾中的所有檔案)，但您無法將資料夾複製到商務用 OneDrive。您必須改為在商務用 OneDrive 中建立需要的資料夾結構。 >  如果您想將檔案複製到步驟 4 中建立的資料夾，請在上傳檔案前開啟該資料夾，否則檔案將會上傳到根資料夾。上傳檔案之後，您也可以在商務用 OneDrive 中的資料夾之間移動檔案。 

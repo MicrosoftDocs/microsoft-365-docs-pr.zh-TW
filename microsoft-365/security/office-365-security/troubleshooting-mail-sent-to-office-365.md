@@ -16,12 +16,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: 本文提供嘗試將電子郵件傳送至 Office 365 收件匣時，寄件者發生問題的疑難排解資訊，以及大量郵遞至 Office 365 客戶的最佳作法。
-ms.openlocfilehash: 72dd0360038e58c2501728d9032fef95f81d90c2
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 7c5d355f1037df94d856ffff7080d4a12d22f709
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604060"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211904"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>將疑難排解郵件傳送至 Office 365
 
@@ -136,7 +136,7 @@ EOP 篩選技術的設計是為了提供 Microsoft Office 365 的反垃圾郵件
 
  `This email was sent to example@contoso.com by sender@fabrikam.com.`
 
- `Update Profile/Email Address | Instant removal with SafeUnsubscribe™ | Privacy Policy`
+ `Update Profile/Email Address | Instant removal with SafeUnsubscribe&trade; | Privacy Policy`
 
 某些寄件者包含此選項的方式是要求收件者將電子郵件傳送至使用中「退訂」的特定別名。 以上的按一下範例並不可取。 如果您選擇要求收件者傳送郵件，請確定當他們按一下此連結時，會預先填入所有必要的欄位。
 
@@ -144,7 +144,7 @@ EOP 篩選技術的設計是為了提供 Microsoft Office 365 的反垃圾郵件
 
 如果您的公司需要或鼓勵使用者註冊其連絡人資訊，以便存取您的產品或服務，建議採用這種行業最佳作法。 有些公司使其在註冊過程中自動為其使用者註冊行銷電子郵件或電子新聞稿，但這會被視為電子郵件篩選世界的可疑行銷作法。
 
-在註冊過程中，如果「是，請傳送您的簡報」或「是，請傳送我的特殊產品」核取方塊預設為選取狀態。預設會選取 [您要傳送我的特殊產品] 核取方塊。未進行密切注意的使用者可能會無意間註冊行銷電子郵件或電子報不想要接收。
+在註冊過程中，如果「是，請傳送您的簡報」或「是，請傳送我的特價產品」核取方塊預設為選取狀態。預設會選取 [您要傳送給我的特殊產品] 核取方塊。
 
  建議您改為使用雙重加入宣告選項，也就是說預設會取消選取 [行銷電子郵件或電子報] 的核取方塊。 此外，在提交註冊表單之後，會透過 URL 將驗證電子郵件傳送給使用者，以允許使用者確認他們接收行銷電子郵件的決策。
 

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: 了解如何在 Office 365 的任一 DNS 主機服務提供者上驗證您的網域並建立 DNS 記錄。
 ms.custom: okr_smb
-ms.openlocfilehash: 2d3c726f70ffb4588f7ae2fc8b53bf8f0c60e258
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 28df13d0ebe78d055df556d71c7a753d3434b030
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251671"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210477"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider-for-office-365"></a>在Office 365 的任一 DNS 主機服務提供者上建立 DNS 記錄
 
@@ -347,7 +347,7 @@ ms.locfileid: "42251671"
 |SRV (Service) (SRV (服務))  <br/> |@  <br/> (如果不允許使用 @，則保留空白)  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 小時  <br/> |
    
   > [!NOTE]
-  >  **[Name]** (名稱)：如果您的 DNS 主機不允許將此設定為 **@**，請保留空白。 只有** 當您的 DNS 主機的服務和通訊協定值有不同的欄位時，才能使用此方法。 否則，請參閱下列服務和通訊協定附註。 
+  >  **[Name]** (名稱)：如果您的 DNS 主機不允許將此設定為 **@**，請保留空白。 ** 只有當您的 DNS 主機的服務和通訊協定值有不同的欄位時，才能使用此方法。 否則，請參閱下列服務和通訊協定附註。 
 
 >  **[Service]** (服務) 和 **[Protocol]** (通訊協定)：如果您的 DNS 主機不提供這些用於 SRV 記錄的欄位，您必須指定 **[Service]** (服務) 和 **[Protocol]** (通訊協定) 值做為記錄的 **[Name]** (名稱) 值。 (附註：視您的 DNS 主機而定，**[Name]** (名稱) 欄位可能會是其他名稱，例如：**[Host]** (主機)、**[Hostname]** (主機名稱) 或 **[Subdomain]** (子網域)。) 若要設定合併值，您需建立一個字串，並用點分隔值。  例如：**Name**: _sip._tls 
 

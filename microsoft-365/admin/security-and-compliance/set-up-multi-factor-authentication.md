@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何使用安全性預設來設定 Office 365 使用者的多重要素驗證。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 331552a4de21198fe7fbc9980e89bfcd87449ffa
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 5f468f040ca88ab4ab2bc198d0d7550bf2e7f4af
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153553"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204019"
 ---
 # <a name="set-up-multi-factor-authentication"></a>設定多重要素驗證
   
@@ -68,11 +68,11 @@ ms.locfileid: "43153553"
 
 ## <a name="move-from-baseline-policies-to-security-defaults"></a>從基準原則移至安全性預設
 
-1. 在[系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=834822)中選取 [設定]****。
+1. 在系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=834822)中，選取 [**全部顯示**]，然後在 [系統**管理中心**] 底下的 [ **Azure Active Directory** ]。
 
-2. 在 [登入與安全性]**** 旁，於 [讓登入更安全]**** 下選取 [檢視]****。
+2. 在**azure active directory admin center**中，選擇 [ **Azure active directory** > **安全性**]。
 
-3. 在 [讓登入更安全]**** 下，選取 [管理]****。 
+3. 在 [**安全性 |[快速**入門] 頁面上，選擇 [**條件式存取**]。 
 
 4. 在 [Azure 入口網站條件式存取原則]**** 頁面上，選擇 [開啟]**** 的每個基準原則，然後將它們設定為 [關閉]****。
 5. 移至 [Azure Active Directory 屬性](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)頁面。

@@ -6,7 +6,7 @@ ms.author: kwekua
 author: kwekua
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 瞭解如何將系統管理員角色指派給您公司中的使用者或多位使用者，以便他們可以在系統管理中心執行特定工作。
-ms.openlocfilehash: 9c10ef7d6dade3d826c9c291e58b3e8e2a58f2a6
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 3f22ef22571dd04dd3364a95ed860f53b8ff207b
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151370"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211916"
 ---
 # <a name="assign-admin-roles"></a>指派系統管理員角色
 
@@ -50,7 +50,7 @@ ms.locfileid: "43151370"
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 [試用新的系統管理中心] **** 開關將它開啟。
+> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
 ::: moniker-end
 
@@ -84,7 +84,7 @@ ms.locfileid: "43151370"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
 
 2. 在 [作用中**使用者**] 頁面上，選取您要變更其系統管理員角色的使用者。 在彈出窗格中，選取 [**角色**] 旁的 [**編輯**]。 
 
@@ -96,7 +96,7 @@ ms.locfileid: "43151370"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
 
 2. 在 [作用中**使用者**] 頁面上，選取您要變更其系統管理員角色的使用者。 在彈出窗格中，選取 [**角色**] 旁的 [**編輯**]。 
 

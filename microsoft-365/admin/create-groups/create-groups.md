@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 瞭解如何建立及刪除 Office 365 群組、新增及移除群組成員，以及自訂群組的運作方式。
-ms.openlocfilehash: 8b9580fd37581de96d3dc35170a1a61640cc697d
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 088ef54531bc42cf563659c460cbf7d2e64c4cfe
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153541"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212090"
 ---
 # <a name="create-an-office-365-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 admin center 中建立 Office 365 群組
   
@@ -124,3 +124,4 @@ ms.locfileid: "43153541"
 [選擇建立 Office 365 群組時要使用的網域](choose-domain-to-create-groups.md)
 
 [將通訊群組清單升級至 Office 365 群組](../manage/upgrade-distribution-lists.md)
+        

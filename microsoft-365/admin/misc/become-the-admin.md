@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: 瞭解如何驗證您的電子郵件和網域擁有權，以在 Office 365 中接管未受管理的租使用者
-ms.openlocfilehash: 0f7932b9ba727db62f81ac15b99a5f5ca276f09f
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 3c732d55c533c72983aaa59e39e7bb8ff130f280
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857400"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212242"
 ---
 # <a name="perform-an-internal-admin-takeover-in-office-365"></a>在 Office 365 中執行內部系統管理員接管
 
@@ -71,7 +71,7 @@ Youtube：[接管 Power BI 和 Office 365 IT 系統管理員的 3 個步驟](htt
 
 [Azure AD 中的系統管理接管](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[取得 Office 365 網域的說明](../get-help-with-domains/get-help-with-domains.yml)
+[取得 Office 365 網域的說明](../get-help-with-domains/get-help-with-domains.md)
 
 [在您的組織中使用自助註冊](self-service-sign-up.md)
   

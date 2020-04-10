@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 透過安全性與合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監控及自動保護整個 Office 365 的敏感性資訊。
-ms.openlocfilehash: 9a7b31f779982381fcc0eea7e8aa051f4fa2dafc
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f61d6c13a66b7f1d93c7bdc1404265e8567e2fb7
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894884"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189069"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -112,7 +112,7 @@ DLP 原則包含一些基本事項：
   
 - 內容是否包含機密資訊。
     
-- 內容是否包含標籤。 如需詳細資訊，請參閱下節的[將標籤做為 DLP 原則的條件](#using-a-label-as-a-condition-in-a-dlp-policy)。
+- 內容是否包含標籤。 如需詳細資訊，請參閱下一節的[將保留標籤做為 DLP 原則的條件](#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
     
 - 內容是否與組織外部或內部人員共用。
 
@@ -327,35 +327,23 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
     
 - 任何介於中間的信賴等級則通常是一個稍高於最低信賴等級，到稍低於最高信賴等級之間的範圍。
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>使用標籤做為 DLP 原則的條件
+## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>使用保留標籤作為 DLP 原則的條件
 
-您可以建立標籤，然後：
-<!-- what kind of label? -->
-  
-- **發佈**標籤，以便使用者查看並手動將它套用到內容。 
-    
-- **自動將它套用**到與您所選條件相符的內容。 
-    
-如需標籤的詳細資訊，請參閱[保留標籤概觀](labels.md)。
-  
-建立標籤後，就可以將標籤做為 DLP 原則的條件。 
+當您在 DLP 原則中使用先前建立及發佈的[保留標籤](labels.md)做為條件時，請注意下列事項：
+
+- 您必須具有先前建立、發佈並套用的保留標籤，然後才能嘗試將它用做為 DLP 原則中的條件。
+- 建立並發佈保留標籤之後，最多需要一天的時間來進行同步，以及最多需要七天的時間來自動套用。 如需詳細資訊，請參閱[保留標籤要多久才會生效](labels.md#how-long-it-takes-for-retention-labels-to-take-effect)。
+- ***僅 SharePoint Online 和商務用 OneDrive 中的項目***才支援在原則中使用保留標籤。
+
 
 ![做為條件的標籤](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-例如，您可能會因為下列理由而執行這個動作：
-  
-- 您已發佈名稱為 **「機密」** 的標籤，因此組織的員工可以手動將此標籤套用到含有機密資訊的電子郵件和文件。 如果將這個標籤做為 DLP 原則的條件，就可以限制設有 **「機密」** 標籤的內容不得與組織外部人員共用。 
-    
-- 您已為名稱為 **「高山房屋」** 的專案建立同名的標籤，並將該標籤自動套用到包含關鍵字「高山房屋」的內容。 如果將這個標籤做為 DLP 原則的條件，就可以在使用者要與組織外部人員共用這項內容時，向使用者顯示原則提示。 
-    
-- 您已發佈名稱為 **「稅務記錄」** 的標籤，讓記錄管理員可以手動將該標籤套用到必須歸類為記錄的內容。 如果將這個標籤做為 DLP 原則的條件，就可以找出設有這個標籤和含有 ITIN 或 SSN 等其他類型敏感性資訊的內容、針對設有 **「稅務記錄」** 標籤的內容執行保護動作，以及從 DLP 報告和稽核記錄資料中取得詳細的 DLP 原則活動報告。 
-    
-- 您已將名稱為 **「主管階層團隊 - 機密」** 的標籤發佈到一群主管的 Exchange 信箱和 OneDrive 帳戶。 如果將這個標籤做為 DLP 原則的條件，就可以針對相同內容和使用者子集來強制執行保留和保護動作。 
-    
-如果將標籤做為 DLP 規則的條件，就可以針對一組特定的內容、位置或使用者來選擇性強制執行保護動作。 
+如果您的項目受保留與處置的限制，且您也想要對這些項目套用其他控制，則可以在 DLP 原則中使用保留標籤，例如：
 
-> [!NOTE]
-> 如果您指定保留標籤做為 DLP 原則的條件，且將 Exchange 和/或 Teams 包含為位置，您將會收到下列錯誤：「電子郵件和團隊郵件中已套用標籤的內容不支援保護。 請移除下方標籤或關閉將 Exchange 和 Teams 做為位置。」 這是因為 Exchange 傳輸不會在提交與傳遞郵件期間評估標籤中繼資料。 
+- 您發佈了一個名為 **2018 年稅務**的保留標籤，該保留標籤會套用至儲存在 SharePoint 中 2018 年的稅務文件，保留 10 年，然後加以處置。 您也不想要在組織外共用這些項目，則可以使用 DLP 原則執行此動作。
+
+> [!IMPORTANT]
+> 如果您指定保留標籤做為 DLP 原則的條件，且也將 Exchange 和/或 Teams 包含為位置，您會遇到此錯誤：**「不支援保護電子郵件與小組訊息內套用標籤的內容。請移除下列標籤或關閉 Exchange 與 Teams 做為位置。」** 這是因為 Exchange 傳輸不會在提交與傳遞郵件期間評估標籤中繼資料。 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>敏感度標籤的支援即將推出
 

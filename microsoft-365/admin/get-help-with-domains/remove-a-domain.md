@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 瞭解如何從 Office 365 移除舊的網域，以及將使用者和群組移至另一個網域。
-ms.openlocfilehash: efbd49daa28b5d15989e1531929cb2d9355aeb8f
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 621b50384b39a21bc0bf5256841c703b3ee0f74a
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857424"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210365"
 ---
 # <a name="remove-a-domain-from-office-365"></a>從 Office 365 移除網域
 
@@ -229,7 +229,7 @@ ms.locfileid: "42857424"
 
 [網域常見問題集](../setup/domains-faq.md)
 
-[取得 Office 365 網域的說明](get-help-with-domains.yml)
+[取得 Office 365 網域的說明](get-help-with-domains.md)
 
 [切換到其他商務用 Office 365 方案](../../commerce/subscriptions/switch-to-a-different-plan.md)
 

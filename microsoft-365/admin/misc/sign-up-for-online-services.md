@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,15 +18,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
-description: '了解如何註冊 Microsoft online 服務而不涉及透過 IT 部門使用公司或學校電子郵件。 '
-ms.openlocfilehash: c12f379dadd6a3f0bab16f6b49ff462c3becbd75
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: '瞭解如何使用工作或學校電子郵件來註冊 Microsoft online 服務，而不需納入其 IT 部門。 '
+ms.openlocfilehash: 261e1344455602cdf36f38ba647408078bd8dd09
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240330"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43209685"
 ---
-# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>如果其他人與它註冊您的網域可能正在使用中
+# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>您的網域可能正在使用中（如果其他人已簽署）
 
 使用公司或學校電子郵件的使用者，不需透過 IT 部門就可以[註冊一些 Microsoft 線上服務](self-service-sign-up.md)。 例如，Office 365、Power BI 和 Rights Management Services 等服務。 藉由提供公司或學校電子郵件地址完成自助式註冊之後，使用者即可存取該服務所包含的功能，但他們不能管理服務 (如新增使用者、新增授權、管理網域等)。 
   

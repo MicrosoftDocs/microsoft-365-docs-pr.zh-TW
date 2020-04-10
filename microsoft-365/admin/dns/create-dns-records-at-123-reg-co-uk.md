@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
-description: 了解如何驗證您的網域和設定 Office 365 的電子郵件、 商務用 Skype 線上商務和 123-reg.co.uk 其他服務的 DNS 記錄。
-ms.openlocfilehash: 327f55dcedfda6eef31d56af1833a5c5438af2a6
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Office 365 123-reg.co.uk。
+ms.openlocfilehash: 521426f039ac02e8c4566f5901fee49679de4e70
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351374"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211856"
 ---
 # <a name="create-dns-records-at-123-regcouk-for-office-365"></a>在 123-reg.co.uk 建立 Office 365 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 123-reg.co.uk 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並設定電子郵件與商務用 Skype Online 等項目的 DNS 記錄。
   
@@ -54,7 +54,7 @@ ms.locfileid: "42351374"
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. 在 [**管理 DNS** ] 頁面上，選取 [**進階 DNS** ] 索引標籤。 
+4. 在 [**管理您的 DNS** ] 頁面上，選取 [**高級 DNS** ] 索引標籤。 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -62,7 +62,7 @@ ms.locfileid: "42351374"
     
     ||||
     |:-----|:-----|:-----|
-    |**主機名稱** <br/> |**類型** <br/> |**Destination TXT/SPF** <br/> |
+    |**主機 名** <br/> |**類型** <br/> |**Destination TXT/SPF** <br/> |
     |@  <br/> |TXT/SPF  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
 6. 選取 [新增]****。
@@ -94,25 +94,25 @@ ms.locfileid: "42351374"
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. 在 [**管理 DNS** ] 頁面上，選取 [**進階 DNS** ] 索引標籤。 
+4. 在 [**管理您的 DNS** ] 頁面上，選取 [**高級 DNS** ] 索引標籤。 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**主機名稱**|**類型**|**Priority** (優先順序)|**Destination MX (目的地 MX)**|
+    |**主機 名**|**類型**|**優先順序**|**Destination MX (目的地 MX)**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **注意：** 從您的 Office 365 帳戶取得您的\<網域金鑰\>。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **注意：** 從您的 Office 365 帳戶取得您的\<網域金鑰\>。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![複製並貼上資料表中的值](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
+    ![複製並貼上表格中的值](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
 6. 選取 **[新增]**。
     
     ![選取 [新增]](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
   
-7. 如果有任何其他 MX 記錄，移除每個選擇該記錄的**刪除 （垃圾桶）** 圖示。 
+7. 如果有任何其他的 MX 記錄，請選擇該記錄的**刪除（垃圾桶）** 圖示以逐一移除。 
     
-    ![選取 [刪除 （垃圾桶可圖示）](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
+    ![選取 [刪除] （垃圾桶圖示）](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
   
 ## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a>新增 Office 365 所需的六筆 CNAME 記錄
 <a name="BKMK_add_CNAME"> </a>
@@ -123,7 +123,7 @@ ms.locfileid: "42351374"
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. 在 [**管理 DNS** ] 頁面上，選取 [**進階 DNS** ] 索引標籤。 
+4. 在 [**管理您的 DNS** ] 頁面上，選取 [**高級 DNS** ] 索引標籤。 
     
 5. 新增六筆 CNAME 記錄的第一筆。
     
@@ -131,12 +131,12 @@ ms.locfileid: "42351374"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**主機名稱**|**類型**|**Destination CNAME (目的地 CNAME)**|
+    |**主機 名**|**類型**|**Destination CNAME (目的地 CNAME)**|
     |:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com>。  <br/> **This value MUST end with a period (.)** <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com>。  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net>。  <br/> **This value MUST end with a period (.)** <br/> |
+    |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
+    |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
+    |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net。  <br/> **This value MUST end with a period (.)** <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **This value MUST end with a period (.)** <br/> |
    
     ![複製並貼上表格中的值](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
@@ -147,7 +147,7 @@ ms.locfileid: "42351374"
   
 7. 新增其他五筆 CNAME 記錄。
     
-    在 [**進階 DNS** ] 區段中，在表格中，使用 [下一步] 列中的值建立記錄，然後再次選擇 [**新增**] 以完成該筆記錄。 
+    在 [ **ADVANCED DNS** ] 區段中，使用表格中下一列的值建立記錄，然後再選取 [**新增**] 以完成記錄。 
     
     重複這個程序，直到六筆 CNAME 記錄全部建立完畢。
     
@@ -163,17 +163,17 @@ ms.locfileid: "42351374"
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. 在 [**管理 DNS** ] 頁面上，選取 [**進階 DNS** ] 索引標籤。 
+4. 在 [**管理您的 DNS** ] 頁面上，選取 [**高級 DNS** ] 索引標籤。 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**主機名稱**|**類型**|**Destination TXT/SPF**|
+    |**主機 名**|**類型**|**Destination TXT/SPF**|
     |:-----|:-----|:-----|
-    |@  <br/> |TXT/SPF  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |@  <br/> |TXT/SPF  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
-    ![123Reg-DYN-BP-CONFIGURE-1-設定-4-1](../../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
+    ![123Reg-BP-Configure-4-1](../../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
   
 6. 選取 **[新增]**。
     
@@ -188,7 +188,7 @@ ms.locfileid: "42351374"
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. 在 [**管理 DNS** ] 頁面上，選取 [**進階 DNS** ] 索引標籤。 
+4. 在 [**管理您的 DNS** ] 頁面上，選取 [**高級 DNS** ] 索引標籤。 
     
 5. 新增兩筆 SRV 記錄的第一筆：
     
@@ -199,8 +199,8 @@ ms.locfileid: "42351374"
     ||||||
     |:-----|:-----|:-----|:-----|:-----|
     |主機名稱|Type (類型)|Priority (優先順序)|TTL|Destination SRV (目的 SRV)|
-    |_sip._tls|SRV|100|3600|1 443 sipdir.online.lync.com>。 **This value MUST end with a period (.)**<br> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
-    |_sipfederationtls._tcp|SRV|100|3600|1 5061 sipfed.online.lync.com>。 **This value MUST end with a period (.)** <br> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |_sip。 _tls|SRV|100|3600|1 443 sipdir.online.lync.com。 **This value MUST end with a period (.)**<br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |_sipfederationtls。 _tcp|SRV|100|3600|1 5061 sipfed.online.lync.com。 **This value MUST end with a period (.)** <br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
     ![複製並貼上表格中的值](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
   
@@ -210,7 +210,7 @@ ms.locfileid: "42351374"
   
 7. 新增另一筆 SRV 記錄：
     
-    在 [**進階 DNS** ] 區段中，在表格中，使用第二列的值來建立記錄，然後再次選擇 [**新增**] 以完成該筆記錄。 
+    在 [ **ADVANCED DNS** ] 區段中，使用表格中第二列的值來建立記錄，然後再選取 [**新增**] 以完成記錄。 
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正在 Office 365 中新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 

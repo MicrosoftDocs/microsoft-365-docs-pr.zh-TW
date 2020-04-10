@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
-description: 了解如何驗證您的網域和設定 Office 365 的電子郵件、 商務用 Skype 線上商務和 register365 其他服務的 DNS 記錄。
-ms.openlocfilehash: 7f9398e14ea5280948829b263d4cd66d61fab682
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Office 365 Register365。
+ms.openlocfilehash: 66c5c29d533b6897280ff99c449988c160022cf8
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362848"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211083"
 ---
 # <a name="create-dns-records-at-register365-for-office-365"></a>在 Register365 建立 Office 365 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 Register365 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。 
   
@@ -64,17 +64,17 @@ ms.locfileid: "42362848"
     
     ![[控制台] 登入頁面](../../media/d7ec9791-d03f-45dd-b080-8aaae5d19ea6.png)
   
-2. 在 [**儀表板**] 頁面上，尋找您要更新的網域名稱，然後從下拉式清單中選擇 [ **DNS 設定**。 
+2. 在 [**儀表板**] 頁面上，找到您要更新的功能變數名稱，然後從下拉式清單中選擇 [ **DNS 設定**]。 
     
     (You may have to scroll down.)
     
-    ![選取清單中的 [DNS 設定](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
+    ![選取清單中的 DNS 設定](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
     (Choose the **Type** value from the drop-down list.) 
     
-    (如果您需要新增一列，請選取 [**新增 a/cname 記錄 （+）**)。
+    （如果您需要新增一列，請選取 **[新增 A/CNAME 記錄] （+）**。）
     
     (You may have to scroll down.)
     
@@ -82,9 +82,9 @@ ms.locfileid: "42362848"
     |:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![在 [新增/修改 DNS 區域] 頁面上輸入值](../../media/22326005-de95-464d-8e33-08ea31a89b2d.png)
+    ![在 [Add/Modify DNS 區域] 頁面上輸入值](../../media/22326005-de95-464d-8e33-08ea31a89b2d.png)
   
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
     
     (You may have to scroll down.)
     
@@ -120,33 +120,33 @@ ms.locfileid: "42362848"
     
     ![[控制台] 登入頁面](../../media/d7ec9791-d03f-45dd-b080-8aaae5d19ea6.png)
   
-2. 在 [**儀表板**] 頁面上，尋找您要更新的網域名稱，然後從下拉式清單中選擇 [ **DNS 設定**。 
+2. 在 [**儀表板**] 頁面上，找到您要更新的功能變數名稱，然後從下拉式清單中選擇 [ **DNS 設定**]。 
     
     (You may have to scroll down.)
     
-    ![選取清單中的 [DNS 設定](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
+    ![選取清單中的 DNS 設定](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
-3. 在 [**新增/修改 DNS 區域**] 頁面中**的郵件交換記錄**] 區段中，於新記錄的方塊中輸入或複製並貼上下表中的值。 
+3. 在 [ **ADD/MODIFY DNS 區域**] 頁面的 [**郵件交換記錄**] 區段中，于新記錄的方塊中，輸入或複製並貼上下表中的值。 
     
     (You may have to scroll down.)
     
-    |**主機名稱**|**Priority** (優先順序)|**結果**|
+    |**主機名稱**|**優先順序**|**結果**|
     |:-----|:-----|:-----|
-    |(將此欄位保留空白。)  <br/> |1  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附註：** 取得您*\<網域金鑰\>* 從您的 Office 365 帳戶。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)     |
+    |(將此欄位保留空白。)  <br/> |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附注：** 從您的 Office 365 帳戶取得您* \<的網域金鑰\> * 。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)     |
    
-    ![在 [新增/修改 DNS 區域] 頁面上輸入值](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
+    ![在 [Add/Modify DNS 區域] 頁面上輸入值](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
     
     (You may have to scroll down.)
     
     ![選取 [儲存]](../../media/0e565fb0-a126-4a48-8ff7-2c2d79d4af32.png)
   
-5. 如果 [ **Mail exchange records** ] 區段中有任何其他 MX 記錄，刪除每個選取它，然後按鍵盤上的**Delete**鍵。 
+5. 如果 [**郵件交換記錄**] 區段中有任何其他 MX 記錄，請選取它，然後按鍵盤上的**delete**鍵，逐一刪除。 
     
     ![Deleting records in the Mail exchange records section](../../media/8cc37e4f-2e85-4242-af0e-78149434167f.png)
   
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
     (You may have to scroll down.)
     
@@ -159,21 +159,21 @@ ms.locfileid: "42362848"
     
     ![[控制台] 登入頁面](../../media/d7ec9791-d03f-45dd-b080-8aaae5d19ea6.png)
   
-2. 在 [**儀表板**] 頁面上，尋找您要更新的網域名稱，然後從下拉式清單中選擇 [ **DNS 設定**。 
+2. 在 [**儀表板**] 頁面上，找到您要更新的功能變數名稱，然後從下拉式清單中選擇 [ **DNS 設定**]。 
     
     (You may have to scroll down.)
     
-    ![選取清單中的 [DNS 設定](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
+    ![選取清單中的 DNS 設定](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
-3. 在 [**新增/修改 DNS 區域**] 頁面中 **，CNAME、 AAAA、 TXT 及 NS 記錄**] 區段中，於新記錄的方塊中輸入或複製並貼上下表中的值。 
+3. 在 [ **ADD/MODIFY DNS 區域**] 頁面的 [ **A，CNAME，AAAA，TXT 和 NS 記錄**] 區段中，于新記錄的方塊中，輸入或複製並貼上下表中的值。 
     
     (Choose the **Type** value from the drop-down list.) 
     
-    (如果您需要新增一列，請選取 [**新增 a/cname 記錄 （+）**)。
+    （如果您需要新增一列，請選取 **[新增 A/CNAME 記錄] （+）**。）
     
     (You may have to scroll down.)
     
-    |主機名稱 * * *|類型 * * *|結果 * * *|
+    |主機名稱 * * * *|類型 * * * *|Result * * * *|
     |:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> |
@@ -181,9 +181,9 @@ ms.locfileid: "42362848"
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![在 [新增/修改 DNS 區域] 頁面上輸入值](../../media/3b79f0de-9cab-4c98-8fa8-c92b35241e8b.png)
+    ![在 [Add/Modify DNS 區域] 頁面上輸入值](../../media/3b79f0de-9cab-4c98-8fa8-c92b35241e8b.png)
   
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
     
     ![選取 [儲存]](../../media/8ded6428-af97-4fd8-9104-477fa22a5586.png)
   
@@ -197,27 +197,27 @@ ms.locfileid: "42362848"
     
     ![[控制台] 登入頁面](../../media/d7ec9791-d03f-45dd-b080-8aaae5d19ea6.png)
   
-2. 在 [**儀表板**] 頁面上，尋找您要更新的網域名稱，然後從下拉式清單中選擇 [ **DNS 設定**。 
+2. 在 [**儀表板**] 頁面上，找到您要更新的功能變數名稱，然後從下拉式清單中選擇 [ **DNS 設定**]。 
     
     (You may have to scroll down.)
     
-    ![選取清單中的 [DNS 設定](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
+    ![選取清單中的 DNS 設定](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
     (Choose the **Type** value from the drop-down list.) 
     
-    (如果您需要新增一列，請選取 [**新增 a/cname 記錄 （+）**)。
+    （如果您需要新增一列，請選取 **[新增 A/CNAME 記錄] （+）**。）
     
     (You may have to scroll down.)
     
     |**主機名稱**|**類型**|**結果**|
     |:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
-    ![在 [新增/修改 DNS 區域] 頁面上輸入值](../../media/33976398-da8a-439b-8e3d-534503b20ee0.png)
+    ![在 [Add/Modify DNS 區域] 頁面上輸入值](../../media/33976398-da8a-439b-8e3d-534503b20ee0.png)
   
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
     
     (You may have to scroll down.)
     
@@ -230,24 +230,24 @@ ms.locfileid: "42362848"
     
     ![[控制台] 登入頁面](../../media/d7ec9791-d03f-45dd-b080-8aaae5d19ea6.png)
   
-2. 在 [**儀表板**] 頁面上，尋找您要更新的網域名稱，然後從下拉式清單中選擇 [ **DNS 設定**。 
+2. 在 [**儀表板**] 頁面上，找到您要更新的功能變數名稱，然後從下拉式清單中選擇 [ **DNS 設定**]。 
     
     (You may have to scroll down.)
     
-    ![選取清單中的 [DNS 設定](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
+    ![選取清單中的 DNS 設定](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
-3. 在 [**新增/修改 DNS 區域**] 頁面中**服務記錄**] 區段中，於新記錄的方塊中輸入或複製並貼上下表中的值。 
+3. 在 [ **ADD/MODIFY DNS 區域**] 頁面上的 [**服務記錄**] 區段中，于新記錄的方塊中，輸入或複製並貼上下表中的值。 
     
     (You may have to scroll down.)
     
     |**名稱**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**結果**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip。 _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls。 _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![在 [服務記錄] 區段中輸入值](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
     
     (You may have to scroll down.)
     

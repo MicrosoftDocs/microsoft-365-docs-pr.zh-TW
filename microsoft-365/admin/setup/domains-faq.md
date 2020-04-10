@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 若要深入瞭解 Office 365 中的一些問題，請參閱常見問題的答案。
 ms.custom: okr_smb
-ms.openlocfilehash: 3e1d5dce6de41e28ad4c04104cf0212c2b657615
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 5579cacaa789ca91d68616ffb89e37586f6a062f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142500"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212194"
 ---
 # <a name="domains-faq"></a>網域常見問題集
 
@@ -377,7 +377,7 @@ ms.locfileid: "43142500"
         
     4. 在開啟的視窗中，選取 [**內部轉送**]。 
         
-    5. 選取 [儲存]****。 此設定可能需要幾分鐘才會生效。 
+    5. 選取 **[儲存]**。 此設定可能需要幾分鐘才會生效。 
     
 4. （選用）解除封鎖現有的電子郵件伺服器
     

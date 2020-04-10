@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: 了解如何設定 Office 365 商務進階版、Office 365 商務基本版、Office 365 商務或 Office 365 教育版訂閱。
-ms.openlocfilehash: 303e736bb3296eba5ddb7ca7e9da8f86ebdc0217
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: f862eb2042da329e70c7cc1658a5c1a037b56faa
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360444"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212170"
 ---
 # <a name="set-up-office-365-for-business"></a>設定商務用 Office 365
 

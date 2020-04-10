@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 46ab4b10-6857-44b1-b08d-d1b5f45a69c6
-description: 了解如何驗證您的網域及設定電子郵件、 商務用 Skype 線上商務和其他服務 hover 運作的 Office 365 的 DNS 記錄。
-ms.openlocfilehash: 72df2d98f3446087a1e9796cd616293a91003ad9
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以便在 Office 365 上懸停。
+ms.openlocfilehash: 7884038dcd1ebc7b13bbed44d98f0d5172015cc1
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42350104"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211700"
 ---
 # <a name="create-dns-records-at-hover-for-office-365"></a>在 Hover 建立 Office 365 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 Hover 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
      
@@ -54,7 +54,7 @@ ms.locfileid: "42350104"
     
     ![登入](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
-2. 在**管理您的網域**] 中，選取您想要編輯的網域名稱。
+2. 在 [**管理您的網域**] 底下，選取您要編輯的網功能變數名稱稱。
     
     ![選取網域](../../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
   
@@ -64,7 +64,7 @@ ms.locfileid: "42350104"
   
 4. 選取 [**新增**]。
     
-    ![選取 [新增](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
+    ![選取 [新增]](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
   
 5. In the boxes for the new record, select **TXT** for the **Record Type**, and then type or copy and paste the values from the following table.
     
@@ -73,9 +73,9 @@ ms.locfileid: "42350104"
     |主機名稱  <br/> |記錄類型  <br/> |值  <br/> |
     |@  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![輸入或複製並貼入 DNS 值](../../media/3b0d19f9-4138-47a7-aab2-137ad120ded6.png)
+    ![輸入或複製並貼上 DNS 值](../../media/3b0d19f9-4138-47a7-aab2-137ad120ded6.png)
   
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
     ![選取 [儲存]](../../media/07dcf68e-34be-47dc-999e-0216de68cc9c.png)
   
@@ -111,7 +111,7 @@ ms.locfileid: "42350104"
     
     ![登入](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
-2. 在**管理您的網域**] 中，選取您想要編輯的網域名稱。
+2. 在 [**管理您的網域**] 底下，選取您要編輯的網功能變數名稱稱。
     
     ![選取網域](../../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
   
@@ -121,29 +121,29 @@ ms.locfileid: "42350104"
   
 4. 選取 [**新增**]。
     
-    ![選取 [新增](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
+    ![選取 [新增]](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
   
-5. 在新記錄方塊中，針對**記錄類型**]，選取 [ **MX** ，然後輸入或複製並貼上下表中的值。
+5. 在新記錄的方塊中，針對**記錄類型**選取 [ **MX** ]，然後輸入或複製並貼上下清單格中的值。
     
-    |**主機名稱**|**Record Type** (記錄類型)|**Priority** (優先順序)|**主機名稱**|
+    |**主機 名**|**Record Type** (記錄類型)|**優先順序**|**主機 名**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附註：** 取得您*\<網域金鑰\>* 從您的 Office 365 帳戶。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附注：** 從您的 Office 365 帳戶取得您* \<的網域金鑰\> * 。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![輸入或複製並貼入 DNS 值](../../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
+    ![輸入或複製並貼上 DNS 值](../../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
   
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
     ![選取 [儲存]](../../media/266c30a4-6703-48fb-a919-b510ed966193.png)
   
 7. 如果有任何其他 MX 記錄，請使用下列兩個步驟的處理程序來逐一移除：
     
-    首先，選取 [**刪除**] 將滑鼠移至您要移除的記錄。
+    首先，上方您要移除的記錄，然後選取 [**刪除**]。
     
-    ![滑鼠移過，並選取 [刪除]](../../media/2ddf4902-8cd2-4969-a418-2cb592741e86.png)
+    ![滑鼠移過並選取 [刪除]](../../media/2ddf4902-8cd2-4969-a418-2cb592741e86.png)
   
     其次，選取 **[是]** 以確認每個刪除。 
     
-    ![選取 [是] 確認刪除](../../media/48756bd5-0205-4c4d-9803-9246795dbf4a.png)
+    ![選取 [是] 以確認刪除](../../media/48756bd5-0205-4c4d-9803-9246795dbf4a.png)
   
     重複本處理程序，直到您已刪除所有 MX 記錄為止 (除了您稍早在本程序中新增的那一筆記錄以外)。
     
@@ -156,7 +156,7 @@ ms.locfileid: "42350104"
     
     ![登入](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
-2. 在**管理您的網域**] 中，選取您想要編輯的網域名稱。
+2. 在 [**管理您的網域**] 底下，選取您要編輯的網功能變數名稱稱。
     
     ![選取網域](../../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
   
@@ -168,11 +168,11 @@ ms.locfileid: "42350104"
     
     選取 [**新增**]。
     
-    ![選取 [新增](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
+    ![選取 [新增]](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
   
-5. 在空白的新記錄方塊中，**記錄類型**，請選取 [ **CNAME** ，然後輸入或複製並貼下表中第一列的值。
+5. 在新記錄的空白方塊中，針對**記錄類型**選取 [ **CNAME** ]，然後輸入或複製並貼上下表中第一列的值。
     
-    |**主機名稱**|**Record Type** (記錄類型)|**Target Host (目標主機)**|
+    |**主機 名**|**Record Type** (記錄類型)|**Target Host (目標主機)**|
     |:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> |
@@ -180,9 +180,9 @@ ms.locfileid: "42350104"
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![輸入或複製並貼入 DNS 值](../../media/6ae607f8-d26e-47f0-a0f2-3487d37e8c7f.png)
+    ![輸入或複製並貼上 DNS 值](../../media/6ae607f8-d26e-47f0-a0f2-3487d37e8c7f.png)
   
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
     ![選取 [儲存]](../../media/69aa3546-32de-4c17-a2e2-8c0cd133efaa.png)
   
@@ -200,7 +200,7 @@ ms.locfileid: "42350104"
     
     ![登入](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
-2. 在**管理您的網域**] 中，選取您想要編輯的網域名稱。
+2. 在 [**管理您的網域**] 底下，選取您要編輯的網功能變數名稱稱。
     
     ![選取網域](../../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
   
@@ -210,17 +210,17 @@ ms.locfileid: "42350104"
   
 4. 選取 [**新增**]。
     
-    ![選取 [新增](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
+    ![選取 [新增]](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
   
 5. In the boxes for the new record, select **TXT** for the **Record Type**, and then type or copy and paste the values from the following table.
     
-    |**主機名稱**|**Record Type** (記錄類型)|**值**|
+    |**主機 名**|**Record Type** (記錄類型)|**值**|
     |:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |@  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
-    ![輸入或複製並貼入 DNS 值](../../media/ed36b9e0-aaa9-45fb-804d-7d4e82ba0c7f.png)
+    ![輸入或複製並貼上 DNS 值](../../media/ed36b9e0-aaa9-45fb-804d-7d4e82ba0c7f.png)
   
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
     ![選取 [儲存]](../../media/13a395b9-e0e8-4393-b568-5f99b2da39da.png)
   
@@ -233,7 +233,7 @@ ms.locfileid: "42350104"
     
     ![登入](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
-2. 在**管理您的網域**] 中，選取您想要編輯的網域名稱。
+2. 在 [**管理您的網域**] 底下，選取您要編輯的網功能變數名稱稱。
     
     ![選取網域](../../media/ae7c1c46-7ad5-467a-b41c-077c90018989.png)
   
@@ -245,18 +245,18 @@ ms.locfileid: "42350104"
     
     選取 [**新增**]。
     
-    ![選取 [新增](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
+    ![選取 [新增]](../../media/66d6b2c9-741e-40e0-a096-6e7e204d655d.png)
   
-5. 在空白的新記錄方塊中，針對**記錄類型**]，選取 [ **SRV** ，然後輸入或複製並貼下表中第一列的值。
+5. 在新記錄的空白方塊中，為**記錄類型**選取 [ **SRV** ]，然後輸入或複製並貼上下表中第一列的值。
     
-    |**主機名稱**|**Record Type** (記錄類型)|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|
+    |**主機 名**|**Record Type** (記錄類型)|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls._tcp  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip。 _tls  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls。 _tcp  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
-    ![輸入或複製並貼入 DNS 值](../../media/67562cd6-c598-4c37-af53-626f153c0197.png)
+    ![輸入或複製並貼上 DNS 值](../../media/67562cd6-c598-4c37-af53-626f153c0197.png)
   
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
     ![選取 [儲存]](../../media/0d7ec216-9277-4709-b637-e94c8662730f.png)
   

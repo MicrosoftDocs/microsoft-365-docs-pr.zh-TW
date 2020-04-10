@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
-description: 了解如何設定 Office 365 來管理您在 Google Domains 的自訂網域的 DNS 記錄。
-ms.openlocfilehash: f6faaa4a7b6540086752e88da2051a73450f4455
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 瞭解如何設定 Office 365，以管理 Google 網域的自訂網域的 DNS 記錄。
+ms.openlocfilehash: 86dd1745fdc85c9837e5c20844427768d4c74a81
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351964"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211928"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-google-domains"></a>使用 Google Domains 變更名稱伺服器以設定 Office 365
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
   
 如果要讓 Office 365 為您管理 Office 365 DNS 記錄，請按照下列指示進行 (您可視需要[在 Google Domains 管理所有 Office 365 DNS 記錄](create-dns-records-at-google-domains.md))。
   
@@ -41,13 +41,13 @@ ms.locfileid: "42351964"
 > [!NOTE]
 >  這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
   
-1. 若要開始，透過[這個連結](https://domains.google.com/registrar)移至 Google Domains 上您的網域頁面。 You'll be prompted to sign in. To do so:
+1. 若要開始，請透過[此連結](https://domains.google.com/registrar)移至 Google 網域上的 [網域] 頁面。 You'll be prompted to sign in. To do so:
     
-1. 選取 [**登入**]。
+1. 選取 [登**入**]。
     
-2. 輸入您的登入認證，然後再選取 [**登入**]。
+2. 輸入您的登入認證，然後再次選取 [登**入**]。
     
-2. 在 [**網域**] 頁面上，在 [**網域**] 區段中，選取**設定 DNS**針對您想要編輯的網域。 
+2. 在 [**網域**] 頁面上的 [**網域**] 區段中，針對您要編輯的網域選取 [**設定 DNS** ]。 
     
 3. In the **Custom resource records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -58,7 +58,7 @@ ms.locfileid: "42351964"
 |||||
 |:-----|:-----|:-----|:-----|
 |**名稱** <br/> |**Type** <br/> |**TTL** <br/> |**資料** <br/> |
-|@  <br/> |TXT  <br/> |1H]  <br/> |MS=ms *XXXXXXXX* <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
+|@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX* <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
    
 4. 選取 [新增]****。
     
@@ -85,55 +85,55 @@ ms.locfileid: "42351964"
 如要完成網域設定以用於 Office 365，請在您的網域註冊機構更改網域的 NS 記錄，使它指向 Office 365 主要和次要名稱伺服器。這樣就會設定並讓 Office 365 為您更新網域的 DNS 記錄。我們會新增所有記錄，好讓電子郵件、商務用 Skype Online 和您的公用網站都能使用您的網域，為您做好一切準備。
   
 > [!CAUTION]
-> 當您變更網域的 NS 記錄以指向 Office 365 名稱伺服器時，所有目前與您網域相關聯的服務都會受到影響。 例如，所有的電子郵件傳送至您的網域 (例如 rob @ *your_domain。*  com) 都會開始送往 Office 365 之後進行這項變更。 
+> 當您變更網域的 NS 記錄以指向 Office 365 名稱伺服器時，所有目前與您網域相關聯的服務都會受到影響。 例如，所有傳送至您網域的電子郵件（如 rob@ *your_domain。*  com）在您進行此變更後，會開始進入 Office 365。 
   
 > [!IMPORTANT]
-> The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the correct nameservers if they are not already in the list. 這四個 > 當您完成在此區段中，應該會列出的唯一名稱伺服器的步驟︰ 
+> The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the correct nameservers if they are not already in the list. > 完成本節中的步驟之後，唯一應該會列出的名稱伺服器為下列四種： 
   
 1. 首先請用[這個連結](https://domains.google.com/registrar)移至 Google Domains 上您的網域頁面。系統會提示您登入。若要執行此作業，請執行下列動作：
     
-1. 選取 [**登入**]。
+1. 選取 [登**入**]。
     
-2. 輸入您的登入認證，然後再選取 [**登入**。
+2. 輸入您的登入認證，然後再選取 [登**入**]。
     
-2. 在 [**網域**] 頁面上，在 [**網域**] 區段中，選取**設定 DNS**針對您想要編輯的網域。 
+2. 在 [**網域**] 頁面上的 [**網域**] 區段中，針對您要編輯的網域選取 [**設定 DNS** ]。 
     
-3. 在 [**網域**] 頁面上**Name servers** ] 區段中，選取**使用自訂名稱伺服器**。
+3. 在 [**網域**] 頁面上，選取 [**名稱伺服器**] 區段中的 [**使用自訂名稱伺服器**]。
     
     ![Google-網域-BP-重新委派-1-1](../../media/e264bc05-5a56-4962-bcaf-e2d999f62278.png)
   
 4. 請根據現在顯示頁面上是否列出名稱伺服器，來選擇下列兩個程序其中一項繼續︰
     
-  - 如果有**無**列 」 名稱伺服器，[如果有列出名稱伺服器](#if-there-are-no-nameservers-already-listed)。
+  - 如果沒有列出**任何**名稱伺服器，[則未列出任何名稱伺服器](#if-there-are-no-nameservers-already-listed)。
     
-  - 如果**是**那里 」 列出名稱伺服器，[如果有列出名稱伺服器](#if-there-are-nameservers-already-listed)。
+  - 如果已**列出名稱伺服器，** 如果已[列出名稱伺服器](#if-there-are-nameservers-already-listed)。
     
 ### <a name="if-there-are-no-nameservers-already-listed"></a>如果列表上「沒有」名稱伺服器
 
 1. 新增第一個名稱伺服器。
     
-    在 [**名稱伺服器**] 區段的 [**名稱伺服器**] 方塊中，輸入或複製並貼上下表中的第一個值。 
+    在 [**名稱**伺服器] 區段的 [**名稱伺服器**] 方塊中，輸入或複製並貼上下清單格中的第一個值。 
     
 |||
 |:-----|:-----|
 |**第一個名稱伺服器** <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |**第二個名稱伺服器** <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|**第三個名稱伺服器** <br/> |ns3.bdm.microsoftonline.com  <br/> |
-|**第四個名稱伺服器** <br/> |ns4.bdm.microsoftonline.com  <br/> |
+|**第三名稱伺服器** <br/> |ns3.bdm.microsoftonline.com  <br/> |
+|**第四名稱伺服器** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Google-Domains-BP-Redelegate-1-2](../../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
+   ![Google-網域-BP-重新委派-1-2](../../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
   
-2. 選取 **+ （新增）** 的控制項來建立空白的列。 
+2. 選取 [ **+] （新增）** 控制項來建立空白列。 
     
     ![Google-網域-BP-重新委派-1-3](../../media/ea23e5fc-07e1-4ffc-b8cf-8526867b752d.png)
   
 3. 新增其他三個名稱伺服器記錄。
     
-    在 [**使用自訂名稱伺服器**] 區段中，在表格中，使用下一列的值來建立記錄，然後選取 **+ （新增）** 的控制項，以新增另一個資料列。 
+    在 [**使用自訂名稱伺服器**] 區段中，使用表格中下一列的值來建立記錄，然後選取 [ **+] （新增）** 控制項以新增另一列。 
     
     重複這個程序，直到四筆名稱伺服器記錄全部建立完畢。
     
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
     
     ![Google-網域-BP-重新委派-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
@@ -142,39 +142,39 @@ ms.locfileid: "42351964"
   
 ### <a name="if-there-are-nameservers-already-listed"></a>如果列表上「有」名稱伺服器
 
-1. 如果有任何其他列出的名稱伺服器，請選取 [**編輯**]。
+1. 如果有列出任何其他名稱伺服器，請選取 [**編輯**]。
     
     > [!CAUTION]
-    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (也就是刪除只是任何目前的名稱*未*命名為**ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或**ns4.bdm.microsoftonline.com**。) 
+    > Follow these steps only if you have existing nameservers other than the four correct nameservers. （也就是說，只刪除所有*未*命名為**ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或**ns4.bdm.microsoftonline.com**的目前名稱伺服器。） 
   
     ![Google-Domains-BP-Redelegate-1-6-1](../../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
   
-2. 刪除每個選取它，，然後按鍵盤上的**Delete**鍵。 
+2. 選取它，然後按鍵盤上的**Delete**鍵，逐一刪除。 
     
     ![Google-Domains-BP-Redelegate-1-6-2](../../media/524e64ad-56e6-4254-8a64-e4a4c3230f89.png)
   
-3. 同樣在 [**名稱伺服器**] 區段的**名稱伺服器**列中，輸入或複製並貼上下表中的值。 
+3. 在 [**名稱**伺服器] 區段的 [名稱**伺服器**] 列中，輸入或複製並貼上下清單格中的值。 
     
 |||
 |:-----|:-----|
 |**第一個名稱伺服器** <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |**第二個名稱伺服器** <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|**第三個名稱伺服器** <br/> |ns3.bdm.microsoftonline.com  <br/> |
-|**第四個名稱伺服器** <br/> |ns4.bdm.microsoftonline.com  <br/> |
+|**第三名稱伺服器** <br/> |ns3.bdm.microsoftonline.com  <br/> |
+|**第四名稱伺服器** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Google-Domains-BP-Redelegate-1-7](../../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
+   ![Google-網域-BP-重新委派-1-7](../../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
   
-4. 選取 **+(add)** 控制項來建立空白的列。 
+4. 選取 [ **+] （新增）** 控制項來建立空白列。 
     
     ![Google-Domains-BP-Redelegate-1-8](../../media/6ce40b1e-8464-443f-a64a-825dc8764590.png)
   
 5. 新增其他兩筆名稱伺服器記錄。
     
-    在 [**使用自訂名稱伺服器**] 區段中，在表格中，使用下一列的值來建立記錄，然後選取 **+(add)** 控制項以新增另一個資料列。 
+    在 [**使用自訂名稱伺服器**] 區段中，使用表格中下一列的值來建立記錄，然後選取 [ **+] （新增）** 控制項以新增另一列。 
     
     重複這個程序，直到四筆名稱伺服器記錄全部建立完畢。
     
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
     ![Google-網域-BP-重新委派-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   

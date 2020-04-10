@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: 瞭解如何使用 InterNIC 搜尋來尋找您的網域註冊機構和 DNS 主機服務提供者。
-ms.openlocfilehash: 058eb4468e073b6929fbc763b3d9bdb189063213
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 71af74a0f94f2cdc251dab78fd59e9bdd90da5ce
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251665"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210389"
 ---
 # <a name="find-your-domain-registrar-for-office-365"></a>尋找您的 Office 365 網域註冊機構
 

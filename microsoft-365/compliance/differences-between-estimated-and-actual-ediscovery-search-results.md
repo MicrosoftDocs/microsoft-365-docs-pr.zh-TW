@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/13/2017
+ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -18,18 +18,19 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: '瞭解在 Office 365 中使用 eDiscovery 工具進行搜尋時，預估和實際搜尋結果可能會有所不同的原因。 '
-ms.openlocfilehash: 1024a99ffa358e56783d562062f158e71f5e7ddc
-ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
+ms.openlocfilehash: 9ee24cc0e7b85d39480149d65897b303e23c0adb
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/09/2020
-ms.locfileid: "43198370"
+ms.locfileid: "43204065"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Office 365 中預估和實際 eDiscovery 搜尋結果之間的差異
 
 本主題適用于您可以使用下列其中一個 Microsoft eDiscovery 工具執行的搜尋： 
 
 - 安全性 & 規範中心的內容搜尋  <br/>  
+- 與核心 eDiscovery 案例相關聯的搜尋
 - 在 Exchange 系統管理中心（EAC）中 In-Place eDiscovery  <br/>  
 - SharePoint Online 中的 eDiscovery 中心  <br/> 
    
@@ -83,5 +84,3 @@ ms.locfileid: "43198370"
   
 > [!NOTE]
 > 如果您未選取 [**包括已加密的專案] 或 [未辨識的格式**] 選項，當您匯出搜尋結果或只下載報告時，就會下載索引錯誤報表，但沒有任何專案。 這並不表示沒有任何索引錯誤。 這只表示匯出中不包含未編制索引的專案。 
-  
-

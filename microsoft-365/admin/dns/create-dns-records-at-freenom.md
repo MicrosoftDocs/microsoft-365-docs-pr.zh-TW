@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,22 +19,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
-description: 了解如何驗證您的網域和設定 Office 365 的電子郵件、 Skype for Business Online，並在 Freenom 其他服務的 DNS 記錄。
-ms.openlocfilehash: 16348eb03a6507e15d31d5c183bd91125d0236f6
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Office 365 Freenom。
+ms.openlocfilehash: d8c33df611a0ef1be95d32026f5d6b99808258f6
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42350664"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211748"
 ---
 # <a name="create-dns-records-at-freenom-for-office-365"></a>在 Freenom 建立 Office 365 的 DNS 記錄
 
-[檢查網域常見問題集](../setup/domains-faq.md)找不到您要尋找。 
+如果您找不到所需的專案，[請檢查網域常見問題](../setup/domains-faq.md)。 
   
 > [!CAUTION]
-> 在 Freenom 網站不支援 SRV 記錄，這表示幾個 Skype for Business Online 和 Outlook Web App 功能將無法運作。 不論您使用哪一個 Office 365 方案，有重大服務限制，以及您可能想要切換至不同的 DNS 主機服務提供者。 
+> Freenom 網站不支援 SRV 記錄，這表示有幾部商務用 Skype Online 和 Outlook Web App 功能將無法運作。 不論使用哪一種 Office 365 方案，都有重大的服務限制，您可能想要切換至不同的 DNS 主機服務提供者。 
   
-儘管服務的限制，如果您選擇 [管理 Office 365 DNS 記錄，在 Freenom，請遵循本文以驗證您的網域及設定電子郵件和其他服務的 DNS 記錄中的步驟。
+不論服務限制，您可以選擇在 Freenom 管理您自己的 Office 365 DNS 記錄，請遵循本文中的步驟來驗證您的網域，並設定電子郵件和其他服務的 DNS 記錄。
   
 若要了解使用 Office 365 網站的虛擬主機和 DNS，請參閱[搭配 Office 365 使用公用網站](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx)。
   
@@ -49,37 +49,37 @@ ms.locfileid: "42350664"
 > [!NOTE]
 > 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
   
-1. 若要開始，使用[此連結](https://my.freenom.com/)移至您在 Freenom 中的網域頁面。 You'll be prompted to log in.
+1. 若要開始使用，請使用[此連結](https://my.freenom.com/)移至 Freenom 中您的網域頁面。 You'll be prompted to log in.
     
     ![Freenom 登入](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. 選取 [**服務**]，然後選取 [**我的網域**。
+2. 選取 [**服務**]，然後選取 [**我的網域**]。
     
     ![Freenom 選取服務和我的網域](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. 針對您想要編輯的網域，選取 [**管理網域**]。
+3. 針對您要編輯的網域，選取 [**管理網域**]。
     
-    ![Freenom 選取 [管理網域](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
+    ![Freenom 選取管理網域](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. 選取 [**管理 Freenom DNS**]。
+4. 選取 [**管理 FREENOM DNS**]。
     
     ![Freenom 管理 Freenom DNS](../../media/9854a511-27e3-4658-8903-34b3d425096d.png)
   
-5. [**新增記錄**，在 [**類型**] 欄中， **TXT**從功能表中選擇。 
+5. 在 [**新增記錄**] 底下的 [**類型**] 欄中，選擇功能表中的 [ **TXT** ]。 
     
-    ![Freenom 新增記錄類型 TXT](../../media/7f0e85e7-844f-4962-815e-5d80d9e6efa0.png)
+    ![Freenom Add Record type TXT](../../media/7f0e85e7-844f-4962-815e-5d80d9e6efa0.png)
   
 6. 在新記錄的方塊中，輸入或複製並貼上下表中的值。 
     
     |**名稱**|**Type**|**TTL**|**Target** (目標)|
     |:-----|:-----|:-----|:-----|
-    |(保留空白)  <br/> |TXT  <br/> |3600 （秒）  <br/> |MS = msXXXXXXXX  <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |(保留空白)  <br/> |TXT  <br/> |3600（秒）  <br/> |MS=msXXXXXXXX  <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![Freenom TXT 值，以供驗證](../../media/650098df-b3aa-47e5-9763-7fde24e34c3f.png)
+    ![Freenom 用於驗證的 TXT 值](../../media/650098df-b3aa-47e5-9763-7fde24e34c3f.png)
   
-7. 選取 [**儲存變更**。
+7. 選取 [**儲存變更**]。
     
-    ![Freenom TXT 記錄儲存的變更](../../media/b1a63f9a-4578-491a-9554-c40f73b37e09.png)
+    ![Freenom TXT 記錄儲存變更](../../media/b1a63f9a-4578-491a-9554-c40f73b37e09.png)
   
 8. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
@@ -108,68 +108,68 @@ ms.locfileid: "42350664"
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>新增 MX 記錄，以將寄往您網域的電子郵件轉至 Office 365
 <a name="bkmk_mx"> </a>
 
-1. 若要開始，使用[此連結](https://my.freenom.com/)移至您在 Freenom 中的網域頁面。 You'll be prompted to log in.
+1. 若要開始使用，請使用[此連結](https://my.freenom.com/)移至 Freenom 中您的網域頁面。 You'll be prompted to log in.
     
     ![Freenom 登入](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. 選取 [**服務**]，然後選取 [**我的網域**。
+2. 選取 [**服務**]，然後選取 [**我的網域**]。
     
     ![Freenom 選取服務和我的網域](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. 針對您想要編輯的網域，選取 [**管理網域**]。
+3. 針對您要編輯的網域，選取 [**管理網域**]。
     
-    ![Freenom 選取 [管理網域](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
+    ![Freenom 選取管理網域](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. 設定您的網域名稱做為預設 Freenom 名稱伺服器。 選取 [**管理工具**]，然後選取 [**名稱伺服器**。
+4. 將您的網域的名稱設為預設的 Freenom 名稱伺服器。 選取 [**管理工具**]，然後選取 [**名稱伺服器**]。
     
     ![Freenom 名稱伺服器設定](../../media/a6ae877a-c248-42b9-bae9-210a80cd01e7.png)
   
-5. 請確定已選取 [**使用預設名稱伺服器**，，然後選取 [**變更名稱伺服器**。
+5. 請確認已選取 [**使用預設名稱伺服器**]，然後選取 [**變更名稱伺服器**]。
     
     ![Freenom 變更名稱伺服器](../../media/0ef90d84-c0a0-4ef9-9e4c-43ef0aac3a2e.png)
   
-6. 選取 [**管理 Freenom DNS**]。
+6. 選取 [**管理 FREENOM DNS**]。
     
-    ![Freenom 選取管理 Freenom DNS](../../media/f55a8053-2411-45da-a357-776c6699f721.png)
+    ![Freenom select Manage Freenom DNS](../../media/f55a8053-2411-45da-a357-776c6699f721.png)
   
-7. [**新增記錄**，在 [**類型**] 欄中， **MX**從功能表中選擇。 
+7. 在 [**新增記錄**] 底下的 [**類型**] 欄中，從功能表選擇 [ **MX** ]。 
     
     ![Freenom 新增記錄類型 MX](../../media/c728c6ee-786c-4f6a-8ad5-1d9914a5bfcf.png)
   
 8. 在每一筆新記錄的方塊中，輸入或複製並貼上下表第一列中的值。 
     
-    |**名稱**|**Type**|**TTL**|**Target** (目標)|**Priority** (優先順序)|
+    |**名稱**|**Type**|**TTL**|**Target** (目標)|**優先順序**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(保留空白)  <br/> |MX (郵件交換程式)  <br/> |3600 （秒）  <br/> |\<網域金鑰\>。 mail.protection.outlook.com  <br/> **附註：** 取得您*\<網域金鑰\>* 從您的 Office 365 帳戶。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9) <br/> |
+    |(保留空白)  <br/> |MX (郵件交換程式)  <br/> |3600（秒）  <br/> |\<網域金鑰\>。 mail.protection.outlook.com  <br/> **附注：** 從您的 Office 365 帳戶取得您* \<的網域金鑰\> * 。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9) <br/> |
    
    ![Freenom MX 記錄](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
-9. 選取 [**儲存變更**。
+9. 選取 [**儲存變更**]。
     
-    ![Freenom MX 記錄儲存的變更](../../media/7aa0a464-d136-417f-be40-48d3f728eeb7.png)
+    ![Freenom MX 記錄儲存變更](../../media/7aa0a464-d136-417f-be40-48d3f728eeb7.png)
   
-10. 如果有任何其他 MX 記錄，請將它們全數刪除。 每一筆記錄中，選取 [**刪除**]。 當郵件**您真的要移除此項目？** 出現，請選取 **[確定]**。
+10. 如果有任何其他 MX 記錄，請全部刪除。 針對每筆記錄，選取 [**刪除**]。 當郵件**確實要移除此專案時？** 隨即出現，請選取 **[確定]**。
     
 ## <a name="add-the-cname-records-that-are-required-for-office-365"></a>新增 Office 365 所需的 CNAME 記錄
 <a name="bkmk_cname"> </a>
 
-1. 若要開始，使用[此連結](https://my.freenom.com/)移至您在 Freenom 中的網域頁面。 You'll be prompted to log in.
+1. 若要開始使用，請使用[此連結](https://my.freenom.com/)移至 Freenom 中您的網域頁面。 You'll be prompted to log in.
     
     ![Freenom 登入](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. 選取 [**服務**]，然後選取 [**我的網域**。
+2. 選取 [**服務**]，然後選取 [**我的網域**]。
     
     ![Freenom 選取服務和我的網域](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. 針對您想要編輯的網域，選取 [**管理網域**]。
+3. 針對您要編輯的網域，選取 [**管理網域**]。
     
-    ![Freenom 選取 [管理網域](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
+    ![Freenom 選取管理網域](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. 選取 [**管理 Freenom DNS**]。
+4. 選取 [**管理 FREENOM DNS**]。
     
-    ![Freenom 選取管理 Freenom DNS](../../media/5e7bc3a7-0d5e-431b-bb27-da3b0f316d01.png)
+    ![Freenom select Manage Freenom DNS](../../media/5e7bc3a7-0d5e-431b-bb27-da3b0f316d01.png)
   
-5. [**新增記錄**，在 [**類型**] 欄中， **CNAME**從功能表中選擇。 
+5. 在 [**新增記錄**] 底下的 [**類型**] 欄中，從功能表選擇 [ **CNAME** ]。 
     
     ![Freenom 新增記錄類型 CNAME](../../media/9b204755-ca2a-46d2-bce2-030d82fd1f9e.png)
   
@@ -177,21 +177,21 @@ ms.locfileid: "42350664"
     
     |**名稱**|**記錄類型**|**TTL**|**Target** (目標)|
     |:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |3600 （秒）  <br/> |autodiscover.outlook.com  <br/> |
-    |sip  <br/> |CNAME  <br/> |3600 （秒）  <br/> |sipdir.online.lync.com  <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |3600 （秒）  <br/> |webdir.online.lync.com  <br/> |
-    |enterpriseregistration  <br/> |CNAME  <br/> |3600 （秒）  <br/> |enterpriseregistration.windows.net  <br/> |
-    |enterpriseenrollment  <br/> |CNAME  <br/> |3600 （秒）  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+    |autodiscover  <br/> |CNAME  <br/> |3600（秒）  <br/> |autodiscover.outlook.com  <br/> |
+    |sip  <br/> |CNAME  <br/> |3600（秒）  <br/> |sipdir.online.lync.com  <br/> |
+    |lyncdiscover  <br/> |CNAME  <br/> |3600（秒）  <br/> |webdir.online.lync.com  <br/> |
+    |enterpriseregistration  <br/> |CNAME  <br/> |3600（秒）  <br/> |enterpriseregistration.windows.net  <br/> |
+    |enterpriseenrollment  <br/> |CNAME  <br/> |3600（秒）  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
     ![Freenom CNAME 值](../../media/752fc682-e3f2-4b9c-9253-bf1ba2d414e9.png)
   
-7. 選取 [**儲存變更**。
+7. 選取 [**儲存變更**]。
     
-    ![儲存變更的 Freenom CNAME](../../media/68103fd2-0f5f-4aac-a875-25157c6bbdd2.png)
+    ![Freenom CNAME 儲存變更](../../media/68103fd2-0f5f-4aac-a875-25157c6bbdd2.png)
   
-8. 重複上述步驟建立其他五筆 CNAME 記錄。 
+8. 重複上述步驟，以建立其他五筆 CNAME 記錄。 
     
-    每一筆記錄，輸入或複製並貼入該記錄的方塊中的表格中下一列中的值。
+    針對每個記錄，輸入或複製並貼上表格中下一列的值，然後將其貼到該記錄的方塊中。
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>新增 SPF 的 TXT 記錄以協助防範垃圾郵件
 <a name="bkmk_spf"> </a>
@@ -199,36 +199,36 @@ ms.locfileid: "42350664"
 > [!IMPORTANT]
 > 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Office 365 建立一個新的記錄。 而是，請將必要的 Office 365 值新增到目前的記錄，以便擁有包含這兩組值的*單一* SPF 記錄。 
 
-1. 若要開始，使用[此連結](https://my.freenom.com/)移至您在 Freenom 中的網域頁面。 You'll be prompted to log in.
+1. 若要開始使用，請使用[此連結](https://my.freenom.com/)移至 Freenom 中您的網域頁面。 You'll be prompted to log in.
     
     ![Freenom 登入](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. 選取 [**服務**]，然後選取 [**我的網域**。
+2. 選取 [**服務**]，然後選取 [**我的網域**]。
     
     ![Freenom 選取服務和我的網域](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. 針對您想要編輯的網域，選取 [**管理網域**]。
+3. 針對您要編輯的網域，選取 [**管理網域**]。
     
-    ![Freenom 選取 [管理網域](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
+    ![Freenom 選取管理網域](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. 選取 [**管理 Freenom DNS**]。
+4. 選取 [**管理 FREENOM DNS**]。
     
-    ![Freenom 選取管理 Freenom DNS](../../media/94809955-0315-409c-a15d-703a2fe4c4ed.png)
+    ![Freenom select Manage Freenom DNS](../../media/94809955-0315-409c-a15d-703a2fe4c4ed.png)
   
-5. [**新增記錄**，在 [**類型**] 欄中， **TXT**從功能表中選擇。 
+5. 在 [**新增記錄**] 底下的 [**類型**] 欄中，選擇功能表中的 [ **TXT** ]。 
     
-    ![Freenom 新增記錄類型 TXT](../../media/d8854285-c4ae-416c-a072-72a11ba1cd9a.png)
+    ![Freenom Add Record type TXT](../../media/d8854285-c4ae-416c-a072-72a11ba1cd9a.png)
   
 6. In the boxes for the new record, type or copy and paste the following values. 
     
     |**名稱**|**記錄類型**|**TTL**|**Target** (目標)|
     |:-----|:-----|:-----|:-----|
-    |(保留空白)  <br/> |TXT  <br/> |3600 （秒）  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |(保留空白)  <br/> |TXT  <br/> |3600（秒）  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
-    ![Spf Freenom TXT 值](../../media/1b3b1199-9104-4ca1-acdb-786d139c21ac.png)
+    ![Freenom SPF 的 TXT 值](../../media/1b3b1199-9104-4ca1-acdb-786d139c21ac.png)
   
-7. 選取 [**儲存變更**。
+7. 選取 [**儲存變更**]。
     
-    ![Freenom TXT 記錄以 SPF 儲存變更](../../media/e2fc52b1-0dcb-4595-9a4c-fca5e2ef9f97.png)
+    ![Freenom SPF 儲存變更的 TXT 記錄](../../media/e2fc52b1-0dcb-4595-9a4c-fca5e2ef9f97.png)
   
 

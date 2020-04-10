@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
-description: 了解如何驗證您的網域和設定 Office 365 的電子郵件、 商務用 Skype 線上商務和 bluehost 其他服務的 DNS 記錄。
-ms.openlocfilehash: 0e64ed8787dca9822e71a63c57de7a7a3e2b3fe4
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Office 365 Bluehost。
+ms.openlocfilehash: 8d8217aa3b87e103f37063248899467d79b6cf18
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42350954"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211832"
 ---
 # <a name="create-dns-records-at-bluehost-for-office-365"></a>在 Bluehost 建立 Office 365 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 Bluehost 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
   
@@ -50,13 +50,13 @@ ms.locfileid: "42350954"
   
 1. 首先請用[這個連結](https://my.bluehost.com/cgi/dm)移至 Bluehost 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**網域**] 頁面上，在 [**網域**] 區域中，尋找您要變更，網域列，然後選取該網域的核取方塊。 
+2. 在 [**網域**] 頁面的 [**網域**] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
     
     (You may have to scroll down.)
     
-3. 在***domain_name***區域中，在 [ **DNS 區域編輯器**] 列中，選取 [**管理 DNS 記錄**]。
+3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器**] 列中，選取 [**管理 DNS 記錄**]。
     
-4. 在 * * DNS 區域編輯器 * *] 頁面上，在 [ **Add DNS Record** ] 區域中，於新記錄，輸入或複製的方塊中，並貼上下表中的值。 
+4. 在 [DNS 區域編輯器] 頁面的 [**新增 Dns 記錄**] 區域，于新記錄的方塊中，輸入或複製並貼上下表中的值。 
     
     (Choose the **Type** value from the drop-down list.) 
     
@@ -90,33 +90,33 @@ ms.locfileid: "42350954"
 
 1. 首先請用[這個連結](https://my.bluehost.com/cgi/dm)移至 Bluehost 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**網域**] 頁面上，在 [**網域**] 區域中，尋找您要變更，網域列，然後選取該網域的核取方塊。 
+2. 在 [**網域**] 頁面的 [**網域**] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
     
     (You may have to scroll down.)
     
-3. 在***domain_name***區域中，在 [ **DNS 區域編輯器**] 列中，選取 [**管理 DNS 記錄**]。
+3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器**] 列中，選取 [**管理 DNS 記錄**]。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Host Record**|**TTL**|**類型**|**Points To**|**Priority** (優先順序)|
+    |**Host Record**|**TTL**|**類型**|**指向**|**優先順序**|
     |:-----|:-----|:-----|:-----|:-----|
     |@  <br/> |14400  <br/> |MX  <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/>**注意：** 從您的 Office 365 帳戶取得您的\<*網域金鑰*\>。 [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
    
-   ![從下拉式清單中選擇類型](../../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
+   ![從下拉式清單中選擇 [類型]](../../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
   
 5. 選取 [**新增記錄**]。
     
-    ![選取 [新增記錄](../../media/c7ef9733-1665-4dbf-accc-caadf1574abc.png)
+    ![選取 [新增記錄]](../../media/c7ef9733-1665-4dbf-accc-caadf1574abc.png)
   
-6. 如果 [ **MX （郵件交換程式）** ] 區段中有任何其他 MX 記錄，逐一刪除。 
+6. 如果**mx （郵件交換器）** 區段中有任何其他 MX 記錄，請將其刪除。 
     
-    第一筆 MX 記錄中，選取 [**刪除。**
+    若為其他其中一個 MX 記錄，請選取 [**刪除]。**
     
-    ![選取 [刪除]，請針對每個其他的 MX 記錄](../../media/6be17f54-3f33-47af-a9db-4689141530c2.png)
+    ![針對每個額外的 MX 記錄選取 [刪除]](../../media/6be17f54-3f33-47af-a9db-4689141530c2.png)
   
-7. 在 [確認] 對話方塊中，選取 **[確定]**。
+7. 在 [確認] 對話方塊中，選取 **[確定**]。
     
     ![選取 [確定]](../../media/a50df7a3-2906-4cc0-87d4-1231ab234230.png)
   
@@ -127,16 +127,16 @@ ms.locfileid: "42350954"
 
 1. 首先請用[這個連結](https://my.bluehost.com/cgi/dm)移至 Bluehost 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**網域**] 頁面上，在 [**網域**] 區域中，尋找您要變更，網域列，然後選取該網域的核取方塊。 
+2. 在 [**網域**] 頁面的 [**網域**] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
     
     (You may have to scroll down.)
     
-3. 在***domain_name***區域中，在 [ **DNS 區域編輯器**] 列中，選取 [**管理 DNS 記錄**]。
+3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器**] 列中，選取 [**管理 DNS 記錄**]。
     
-4. 在 [ **A （主機）** 記錄] 區段中，尋找**自動探索**記錄的資料列，然後選取該列中的 [**刪除**。 
+4. 在 [ **A （主機）** 記錄] 區段中，找到**自動**探索記錄的列，然後針對該列選取 [**刪除**]。 
     
     > [!IMPORTANT]
-    > 您必須刪除現有**自動探索**記錄*之前*新增為 Office 365 所需的**自動探索**記錄。 Bluehost 不允許您同時維護兩個的**自動探索**記錄。 
+    > 在新增 Office 365 所需的**自動**探索記錄之前，您必須*先*刪除現有的**自動**探索記錄。 Bluehost 不允許您同時維護兩個**自動**探索記錄。 
   
     ![選取 [刪除]](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
   
@@ -146,11 +146,11 @@ ms.locfileid: "42350954"
   
 6. 建立六筆 CNAME 記錄的第一筆。
     
-    在 [ **DNS 區域編輯器**] 頁面中**新增 DNS 記錄**] 區域中，於新記錄的方塊中輸入或複製並貼下表中第一列的值。 
+    在 [ **DNS 區域編輯器**] 頁面的 [**新增 DNS 記錄**] 區域，于新記錄的方塊中，輸入或複製並貼上下表中第一列的值。 
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Host Record**|**TTL**|**類型**|**Points To**|
+    |**Host Record**|**TTL**|**類型**|**指向**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |14400  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |14400  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> |
@@ -158,15 +158,15 @@ ms.locfileid: "42350954"
     |enterpriseregistration  <br/> |14400  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |14400  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![建立的第一筆 CNAME 記錄](../../media/4f12e9b1-9dec-4bc2-aa15-8bffa71fe131.png)
+    ![建立第一個 CNAME 記錄](../../media/4f12e9b1-9dec-4bc2-aa15-8bffa71fe131.png)
   
 7. 選取 [**新增記錄**]。
     
-    ![選取 [新增記錄](../../media/c2782250-a9a6-4aee-bb15-f57cb0008587.png)
+    ![選取 [新增記錄]](../../media/c2782250-a9a6-4aee-bb15-f57cb0008587.png)
   
 8. 逐一新增其餘五筆 CNAME 記錄。
     
-    同樣在 [ **Add DNS Record** ] 區段中，在表格中，使用下一列的值來建立記錄，然後再次選擇 [**新增記錄**以完成該筆記錄。 
+    仍然在 [**新增 DNS 記錄**] 區段中，使用表格中下一列的值來建立記錄，然後再選取 [**新增記錄**] 以完成記錄。 
     
     重複這個程序，直到六筆 CNAME 記錄全部建立完畢。
     
@@ -174,15 +174,15 @@ ms.locfileid: "42350954"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Office 365 建立一個新的記錄。 而是，請將必要的 Office 365 值新增到目前的記錄，以便擁有包含這兩組值的*單一* SPF 記錄。 需要範例？ 請參閱這些 [Office 365 的外部網域名稱系統記錄](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0)。 若要驗證您的 SPF 記錄，您可以使用其中一種[SPF 驗證工具](../setup/domains-faq.md)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Office 365 建立一個新的記錄。 而是，請將必要的 Office 365 值新增到目前的記錄，以便擁有包含這兩組值的*單一* SPF 記錄。 需要範例？ 請參閱這些 [Office 365 的外部網域名稱系統記錄](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.md)。 
   
 1. 首先請用[這個連結](https://my.bluehost.com/cgi/dm)移至 Bluehost 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**網域**] 頁面上，在 [**網域**] 區域中，尋找您要變更，網域列，然後選取該網域的核取方塊。 
+2. 在 [**網域**] 頁面的 [**網域**] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
     
     (You may have to scroll down.)
     
-3. 在***domain_name***區域中，在 [ **DNS 區域編輯器**] 列中，選取 [**管理 DNS 記錄**]。
+3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器**] 列中，選取 [**管理 DNS 記錄**]。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -190,45 +190,45 @@ ms.locfileid: "42350954"
         
     |**Host Record**|**TTL**|**類型**|**TXT Value**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |14400  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |@  <br/> |14400  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
     ![複製 TXT 值](../../media/b2dabd7a-ee3d-4209-aa1e-0233eb8cf3b9.png)
   
 5. 選取 [**新增記錄**]。
     
-    ![選取 [新增記錄](../../media/c050e9a2-2274-4640-8f0f-6752d382df5d.png)
+    ![選取 [新增記錄]](../../media/c050e9a2-2274-4640-8f0f-6752d382df5d.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>新增兩筆 Office 365 所需的 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
 
 1. 首先請用[這個連結](https://my.bluehost.com/cgi/dm)移至 Bluehost 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**網域**] 頁面上，在 [**網域**] 區域中，尋找您要變更，網域列，然後選取該網域的核取方塊。 
+2. 在 [**網域**] 頁面的 [**網域**] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
     
     (You may have to scroll down.)
     
-3. 在***domain_name***區域中，在 [ **DNS 區域編輯器**] 列中，選取 [**管理 DNS 記錄**]。
+3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器**] 列中，選取 [**管理 DNS 記錄**]。
     
 4. 建立兩筆 SRV 記錄的第一筆。
     
-    在 [ **DNS 區域編輯器**] 頁面中**新增 DNS 記錄**] 區域中，於新記錄的方塊中輸入或複製並貼下表中第一列的值。 
+    在 [ **DNS 區域編輯器**] 頁面的 [**新增 DNS 記錄**] 區域，于新記錄的方塊中，輸入或複製並貼上下表中第一列的值。 
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Service** (服務)|**Protocol** (通訊協定)|**Host** (主機)|**TTL**|**類型**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Points To**|
+    |**服務**|**Protocol** (通訊協定)|**Host**|**TTL**|**類型**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**指向**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![複製新記錄的值](../../media/e2911bca-c00b-4b8a-837f-f1d438c474c4.png)
   
 5. 選取 [**新增記錄**]。
     
-    ![選取 [新增記錄](../../media/0fd6a587-03fd-4bce-8321-b14e6ad21f5c.png)
+    ![選取 [新增記錄]](../../media/0fd6a587-03fd-4bce-8321-b14e6ad21f5c.png)
   
 6. 新增另一筆 SRV 記錄。
     
-    同樣在 [ **Add DNS Record** ] 區段中，在表格中，使用另一列的值來建立記錄，然後再次選擇 [**新增記錄**以完成該筆記錄。 
+    仍然在 [**新增 DNS 記錄**] 區段中，使用資料表中另一列的值來建立記錄，然後再選取 [**新增記錄**] 以完成記錄。 
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正在 Office 365 中新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 

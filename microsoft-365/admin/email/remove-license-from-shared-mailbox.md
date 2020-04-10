@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: scotv
 audience: Admin
-ms.topic: troubleshooting
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,17 +20,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
-description: '從共用信箱將其指派給另一位使用者移除授權。 '
-ms.openlocfilehash: 90ec29681aa5b15dd04895df2b48b2b1619b521d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: '從共用信箱中移除授權，將其指派給其他使用者。 '
+ms.openlocfilehash: 02c98570a1742d710373c6711d2621a0a9ebe818
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362218"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210525"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>從共用信箱中移除授權
 
-共用的信箱不需要授權，除非信箱也有超過 50 GB 的資料。 請遵循這些指示來移除授權從共用信箱，以便您可以將它指派給使用者，或傳回授權，這樣您就不用支付您不需要授權。
+除非信箱具有超過50GB 的資料，否則共用信箱不需要授權。 請遵循下列指示，從共用信箱中移除授權，以便將其指派給使用者或傳回授權，這樣您就不會支付您不需要的授權。
   
 ## <a name="remove-the-license"></a>移除授權
 
@@ -42,55 +42,55 @@ ms.locfileid: "42362218"
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
    > [!NOTE]
-   > 您要移除 [作用中使用者] 頁面上的授權。 您無法從共用信箱] 頁面上移除授權，因為授權的使用者設定。 
+   > 您必須從 [作用中使用者] 頁面中移除授權。 您無法從共用信箱頁面移除授權，因為授權是使用者設定。 
   
-2. 選取 [共用的信箱。
+2. 選取共用信箱。
 
-3. 其中一個**授權和應用程式**] 索引標籤上，依序展開 [**授權**及取消核取方塊，您想要移除授權。
+3. 一個 [**授權與應用程式**] 索引標籤，展開 [**授權**]，然後取消選取您要移除之授權的方塊。
 
 4. 選取 [儲存變更]****。
 
-5. 當您返回 [**作用中使用者**] 頁面上時，共用信箱的狀態會是**未授權**。
+5. 當您回到 [作用中**使用者**] 頁面時，共用信箱的狀態將會是 [未**授權**]。
 
-6. 您仍要支付授權。 若要停止支付相關費用[的授權從您的訂閱中移除](../../commerce/licenses/remove-licenses-from-subscription.md)。
+6. 您仍在支付授權。 若要停止付費，請[從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
 
    > [!NOTE]
-   > 您要移除 [作用中使用者] 頁面上的授權。 您無法從共用信箱] 頁面上移除授權，因為授權的使用者設定。
+   > 您必須從 [作用中使用者] 頁面中移除授權。 您無法從共用信箱頁面移除授權，因為授權是使用者設定。
 
-2. 選取共用的信箱]，然後選取 [旁的 [**編輯****產品授權**。
+2. 選取 [共用信箱]，然後選取 [**產品授權**] 旁的 [**編輯**]。
 
-3. 其中一個 [**產品授權**] 頁面上，設定將開關切換為 [**關閉**您想要移除授權。
+3. [**產品授權**] 頁面上，針對您想要移除的授權，將切換設定為 [**關閉**]。
 
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
 
-5. 當您返回 [**作用中使用者**] 頁面上時，共用信箱的狀態會是**未授權**。
+5. 當您回到 [作用中**使用者**] 頁面時，共用信箱的狀態將會是 [未**授權**]。
 
-6. 您仍要支付授權。 若要停止支付相關費用[的授權從您的訂閱中移除](../../commerce/licenses/remove-licenses-from-subscription.md)。
+6. 您仍在支付授權。 若要停止付費，請[從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
 
    > [!NOTE]
-   > 您要移除 [作用中使用者] 頁面上的授權。 您無法從共用信箱] 頁面上移除授權，因為授權的使用者設定。
+   > 您必須從 [作用中使用者] 頁面中移除授權。 您無法從共用信箱頁面移除授權，因為授權是使用者設定。
 
-2. 選取共用的信箱]，然後選取 [旁的 [**編輯****產品授權**。
+2. 選取 [共用信箱]，然後選取 [**產品授權**] 旁的 [**編輯**]。
 
-3. 其中一個 [**產品授權**] 頁面上，設定將開關切換為 [**關閉**您想要移除授權。
+3. [**產品授權**] 頁面上，針對您想要移除的授權，將切換設定為 [**關閉**]。
 
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
 
-5. 當您返回 [**作用中使用者**] 頁面上時，共用信箱的狀態會是**未授權**。
+5. 當您回到 [作用中**使用者**] 頁面時，共用信箱的狀態將會是 [未**授權**]。
 
-6. 您仍要支付授權。 若要停止支付相關費用[的授權從您的訂閱中移除](../../commerce/licenses/remove-licenses-from-subscription.md)。
+6. 您仍在支付授權。 若要停止付費，請[從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md)。
 
 ::: moniker-end 
 

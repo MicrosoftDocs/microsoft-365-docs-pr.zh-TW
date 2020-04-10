@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: troubleshooting
+ms.topic: article
 f1_keywords:
 - ZTDTroubleshootDeviceErrors
 - O365E_ZTDTroubleshootDeviceErrors
@@ -26,25 +26,25 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
-description: 了解如何疑難排解您可能會看到使用 Microsoft 365 商務版中的自動駕駛裝置檔案時的錯誤。
-ms.openlocfilehash: dc1abd508156c8525859f6ca7e291ab38fc8859c
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: 瞭解如何疑難排解在使用 Microsoft 365 商務版中的 AutoPilot 裝置檔案時，可能會看到的錯誤。
+ms.openlocfilehash: 8b99e848fa040711785b921d12548f16dadb09af
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560693"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212126"
 ---
 # <a name="troubleshoot-autopilot-device-errors"></a>AutoPilot 裝置錯誤疑難排解
 
-## <a name="device-file-error-messages"></a>裝置檔案錯誤訊息
+## <a name="device-file-error-messages"></a>裝置檔錯誤訊息
 
-在某些錯誤的以下資訊您可能會看到時使用 Microsoft 365 商務版中的自動駕駛裝置檔案。 
+以下是在使用 Microsoft 365 商務版中的 AutoPilot 裝置檔案時，可能會看到的一些錯誤的相關資訊。 
   
-|**錯誤碼**|**若要嘗試修正**|
+|**錯誤碼**|**修正以嘗試**|
 |:-----|:-----|
-|無效的要求本體  <br/> |應該很少，會發生此錯誤如果您看到這項錯誤，請再操作一次。  <br/> |
-|裝置硬體雜湊值不正確。  <br/> |如果您看到這項錯誤，就表示您提供的一部裝置硬體雜湊 CSV 檔案中的值不正確。 首先，確認已正確輸入值。 如果您認為的值正確，但仍然發生此錯誤，請將您的硬體廠商尋求協助。  <br/> |
-|指派給另一個租用戶的裝置  <br/> |如果您看到這項錯誤，就表示您所提供的序號或產品金鑰的一或多個裝置 CSV 檔案中的值不正確。 首先，確認已正確輸入值。 如果您認為的值正確，但仍然發生此錯誤，請將您的硬體廠商尋求協助。  <br/> |
-|CSV 檔案包含無效的序號或產品金鑰  <br/> |如果您看到這項錯誤，就表示您嘗試註冊的裝置已登錄的另一個組織。 若要修正此錯誤，請將您的硬體廠商尋求協助。  <br/> |
-|使用 AutoPilot 設定不是支援此裝置  <br/> | 這個錯誤表示裝置不符合 AutoPilot 部署需求。 裝置必須符合這些需求：  <br/>  Windows 10 版本 1703 或更新版本。  <br/>  新裝置尚未透過 Windows 現成可用的體驗。  <br/> |
-|找不到裝置  <br/> |這個錯誤表示您的 CSV 檔案中的一或多個裝置未登錄至您的組織。 若要修正此問題，請將您的硬體廠商尋求協助。  <br/> |
+|不正確要求體  <br/> |這種錯誤應該很少發生，如果您看到此錯誤，請重試此作業。  <br/> |
+|裝置的硬體雜湊值不正確。  <br/> |如果您看到此錯誤，表示您在 CSV 檔案中為一個裝置的硬體雜湊所提供的值不正確。 首先，請確認輸入的值正確。 如果您認為此值是正確的，但是此錯誤仍會發生，請向您的硬體廠商尋求協助。  <br/> |
+|指派給其他租使用者的裝置  <br/> |如果您看到此錯誤，表示您在 CSV 檔案中所提供的數值是一或多個裝置的序號碼或產品金鑰不正確。 首先，請確認輸入的值正確。 如果您認為此值是正確的，但是此錯誤仍會發生，請向您的硬體廠商尋求協助。  <br/> |
+|CSV 檔案包含不正確序號碼或產品金鑰  <br/> |如果您看到此錯誤，表示您嘗試註冊的裝置已由另一個組織註冊。 若要修正此錯誤，請向您的硬體廠商尋求協助。  <br/> |
+|此裝置不支援使用 AutoPilot 設定  <br/> | 此錯誤表示裝置不符合 AutoPilot 部署需求。 裝置必須符合這些需求：  <br/>  Windows 10 版本 1703 或更新版本。  <br/>  尚未透過 Windows 全新體驗的新裝置。  <br/> |
+|找不到裝置  <br/> |此錯誤表示您的 CSV 檔案中的一或多個裝置並未註冊至您的組織。 若要修正此問題，請向您的硬體廠商尋求協助。  <br/> |

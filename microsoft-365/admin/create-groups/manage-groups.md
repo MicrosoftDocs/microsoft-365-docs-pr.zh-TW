@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 瞭解如何管理 Office 365 群組，包括新增移除群組成員、編輯電子郵件地址、組名或描述，以及自訂群組的運作方式。
-ms.openlocfilehash: 189a41c5049110100b548ca6f906b1324aeb1431
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 34682d3d06babca04a9b2541e3f33ec79d934f50
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894524"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212066"
 ---
 # <a name="manage-an-office-365-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 admin center 中管理 Office 365 群組
 
@@ -122,7 +122,7 @@ ms.locfileid: "42894524"
 
 3. 在 [**設定**] 索引標籤上，如果您想要讓成員在自己的收件匣接收群組郵件和行事曆專案的副本，請選取 [**將群組交談和事件的副本傳送至群組成員**]
 
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -134,7 +134,7 @@ ms.locfileid: "42894524"
 
 3. 如果您想要讓成員在自己的收件匣中接收群組郵件和行事曆專案的副本，請將 [**群組交談和事件的副本**]**轉換為 [** 群組] 的 [收件者]。
 
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -146,7 +146,7 @@ ms.locfileid: "42894524"
 
 3. 如果您想要讓成員在自己的收件匣中接收群組郵件和行事曆專案的副本，請將 [**群組交談和事件的副本**]**轉換為 [** 群組] 的 [收件者]。
 
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -162,7 +162,7 @@ ms.locfileid: "42894524"
 
 3. 在 [系統管理中心群組] 清單中，選取您要變更之群組的名稱，然後在 [**設定**] 索引標籤上，選取 [**允許外部寄件者以電子郵件傳送此群組**]。
     
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ ms.locfileid: "42894524"
     
 3. 設定**讓組織外部的人員可將群組**切換為 [**開啟**]。
     
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ ms.locfileid: "42894524"
     
 3. 設定**讓組織外部的人員可將群組**切換為 [**開啟**]。
     
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
 
 ::: moniker-end
 

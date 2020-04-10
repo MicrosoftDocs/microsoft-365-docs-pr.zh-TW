@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
-description: 了解如何驗證您的網域和設定 Office 365 的電子郵件、 商務用 Skype 線上商務和其他服務在 Amazon Web Services (AWS) DNS 記錄。
-ms.openlocfilehash: baba7bb7275303604d241166f4dc1d2af77b3f17
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以用於 Office 365 的 Amazon Web 服務（AWS）。
+ms.openlocfilehash: f71e6fa5ce69d789cc7695d30e6447ae281a0e3f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351474"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211844"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-office-365"></a>在 Amazon Web Services (AWS) 針對 Office 365 建立 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
   
-如果 AWS 是您 DNS 主機服務提供者，請遵循步驟本篇文章以驗證您的網域和設定 DNS 記錄的電子郵件、 Skype 線上商務，依此類推。
+如果 AWS 是您的 DNS 主機服務提供者，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、商務用 Skype Online 等的 DNS 記錄。
   
 在 AWS 新增這些記錄之後，您的網域就會設定為搭配 Office 365 服務使用。
   
@@ -50,11 +50,11 @@ ms.locfileid: "42351474"
   
 1. 首先請用[這個連結](https://console.aws.amazon.com/route53/home)移至 AWS 上您的網域頁面。系統會提示您先登入。
     
-2. 在 [**資源**] 頁面上，選取 [**託管區域**]。
+2. 在 [**資源**] 頁面上，選取 [**主控區域**]。
     
-3. 在 * * 託管區域 * *] 頁面上，在**網域名稱**] 欄中，選取您想要編輯的網域名稱。 
+3. 在 [主控區域 * *] 頁面上的 [**功能變數名稱**] 欄中，選取您要編輯的網功能變數名稱稱。 
     
-4. 選取 [**建立記錄集**。
+4. 選取 [**建立記錄集**]。
     
 5. In the **Create Record Set** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -93,11 +93,11 @@ ms.locfileid: "42351474"
 
 1. 首先請用[這個連結](https://console.aws.amazon.com/route53/home)移至 AWS 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**資源**] 頁面上，選取 [**託管區域**]。
+2. 在 [**資源**] 頁面上，選取 [**主控區域**]。
     
-3. 在 [**託管區域**] 頁面上，在**網域名稱**] 欄中，選取您想要編輯的網域名稱。 
+3. 在 [**主控區域**] 頁面上的 [**功能變數名稱**] 欄中，選取您要編輯的網功能變數名稱稱。 
     
-4. 選取 [**建立記錄集**。
+4. 選取 [**建立記錄集**]。
     
 5. In the **Create Record Set** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -107,7 +107,7 @@ ms.locfileid: "42351474"
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |(將此欄位保留空白。)  <br/> |MX - 郵件交換  <br/> |否  <br/> |300  <br/> |0  *\<網域金鑰\>*  .mail.protection.outlook.com.  <br/> 0 是指 MX 優先順序值。將它新增到 MX 值的開頭，以空格分隔該值的其餘部分。  <br/> **This value MUST end with a period (.)** <br/> **注意：** 從您的 Office 365 帳戶取得您的\<*網域金鑰*\>。 [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |簡易  <br/> |
        
-    ![AWS-DYN-BP-CONFIGURE-1-設定-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
+    ![AWS-BP-Configure-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
 6. 選取 [建立]****。
     
@@ -116,46 +116,46 @@ ms.locfileid: "42351474"
 7. 如果有任何其他的 MX 記錄，請移除它們。
     
     > [!IMPORTANT]
-    > AWS 會將 MX 記錄儲存為一組可以包含多個記錄的集合。 **請勿**選取 [**刪除資料錄集**，這將會刪除所有 MX 記錄，包括您剛才新增一個。 請改為依照下列指示操作。 
+    > AWS 會將 MX 記錄儲存為一組可以包含多個記錄的集合。 **不要**選取 [**刪除記錄集**]，因為這會刪除所有的 MX 記錄，包括剛才新增的記錄。 請改為依照下列指示操作。 
   
-    首先，選取 [MX 記錄設定。
+    首先，選取 MX 記錄集。
     
     ![AWS-BP-設定-2-3](../../media/9d9388cb-e2d0-43b7-928c-e1d07e519c6f.png)
   
-    接下來，在**編輯記錄集**] 區域中，刪除每個過時的 MX 記錄**值**] 方塊中選取項目，然後按鍵盤上的**Delete**鍵。 
+    接下來，在 [**編輯記錄集**] 區域中，選取 [**值**] 方塊中的專案，然後按鍵盤上的**delete**鍵，以刪除每個過時的 MX 記錄。 
     
     ![AWS-BP-設定-2-4](../../media/c3b0c1bc-21ab-44cc-84b7-f504725c5540.png)
   
-8. 選取 [**儲存記錄集**。
+8. 選取 [**儲存記錄集**]。
     
     ![AWS-BP-設定-2-5](../../media/86f0998d-f5d4-4750-a93d-ac13b318c40b.png)
   
-## <a name="add-the-five-cname-records-that-are-required-for-office-365"></a>新增 Office 365 所需的五筆 CNAME 記錄
+## <a name="add-the-five-cname-records-that-are-required-for-office-365"></a>新增 Office 365 所需的五個 CNAME 記錄
 <a name="BKMK_add_CNAME"> </a>
 
 1. 首先請用[這個連結](https://console.aws.amazon.com/route53/home)移至 AWS 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**資源**] 頁面上，選取 [**託管區域**]。
+2. 在 [**資源**] 頁面上，選取 [**主控區域**]。
     
-3. 在 [**託管區域**] 頁面上，在**網域名稱**] 欄中，選取您想要編輯的網域名稱。 
+3. 在 [**主控區域**] 頁面上的 [**功能變數名稱**] 欄中，選取您要編輯的網功能變數名稱稱。 
     
-4. 選取 [**建立記錄集**。
+4. 選取 [**建立記錄集**]。
     
 5. 新增第一筆 CNAME 記錄。
     
-    在 [**建立記錄集**] 區域中，於新記錄的方塊中輸入或複製並貼下表中第一列的值。 
+    在 [**建立記錄集**] 區域的新記錄方塊中，輸入或複製並貼上下表中第一列的值。 
     
     (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
     
     |**名稱**|**Type**|**Alias**|**TTL (Seconds)**|**值**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |autodiscover.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> |簡單  <br/> |
-    |sip  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |sipdir.online.lync.com>。  <br/> **This value MUST end with a period (.)** <br/> |簡單  <br/> |
-    |lyncdiscover  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |webdir.online.lync.com>。  <br/> **This value MUST end with a period (.)** <br/> |簡單  <br/> |
-    |enterpriseregistration  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |enterpriseregistration.windows.net>。  <br/> **This value MUST end with a period (.)** <br/> |簡易  <br/> |
+    |sip  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |簡單  <br/> |
+    |lyncdiscover  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |webdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |簡單  <br/> |
+    |enterpriseregistration  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |enterpriseregistration.windows.net。  <br/> **This value MUST end with a period (.)** <br/> |簡易  <br/> |
     |enterpriseenrollment  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **This value MUST end with a period (.)** <br/> |簡單  <br/> |
    
-    ![AWS-DYN-BP-CONFIGURE-1-設定-3-1](../../media/895c71bd-0e3a-425e-9681-98c1c67e714b.png)
+    ![AWS-BP-Configure-3-1](../../media/895c71bd-0e3a-425e-9681-98c1c67e714b.png)
   
 6. 選取 [建立]****。
     
@@ -163,35 +163,35 @@ ms.locfileid: "42351474"
   
 7. 新增其他四筆 CNAME 記錄。
     
-    在 [**託管區域**] 頁面上，選取 [**建立記錄集**在表格中，使用 [下一步] 列中的值建立記錄，然後再次選擇 [**建立**] 以完成該筆記錄。 
+    在 [**主控區域**] 頁面中，選取 [**建立記錄集**]，使用表格中下一列的值建立記錄，然後再選取 [**建立**] 以完成記錄。 
     
-    重複此程序，直到五筆 CNAME 記錄全部建立完畢。
+    重複此程式，直到您已建立全部五筆 CNAME 記錄為止。
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>新增 SPF 的 TXT 記錄以協助防範垃圾郵件
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Office 365 建立一個新的記錄。 而是，請將必要的 Office 365 值新增到目前的記錄，以便擁有包含這兩組值的*單一* SPF 記錄。 需要範例？ 請參閱這些 [Office 365 的外部網域名稱系統記錄](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0)。 若要驗證您的 SPF 記錄，您可以使用其中一種[SPF 驗證工具](../setup/domains-faq.md)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Office 365 建立一個新的記錄。 而是，請將必要的 Office 365 值新增到目前的記錄，以便擁有包含這兩組值的*單一* SPF 記錄。 需要範例？ 請參閱這些 [Office 365 的外部網域名稱系統記錄](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.md)。 
   
 1. 首先請用[這個連結](https://console.aws.amazon.com/route53/home)移至 AWS 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**資源**] 頁面上，選取 [**託管區域**]。
+2. 在 [**資源**] 頁面上，選取 [**主控區域**]。
     
-3. 在 [**託管區域**] 頁面上，在**網域名稱**] 欄中，選取您想要編輯的網域名稱。 
+3. 在 [**主控區域**] 頁面上的 [**功能變數名稱**] 欄中，選取您要編輯的網功能變數名稱稱。 
     
-4. 選取 [ **TXT**記錄集。 
+4. 選取**TXT**記錄集。 
     
     ![AWS-BP-設定-4-1](../../media/0310fa66-c016-4987-80df-930f1c8f3c39.png)
   
-5. 在 [**編輯記錄集**] 區域中的目前項目結尾處**值：** 方塊針對現有的記錄，按下鍵盤上的 Enter 鍵來建立新的一行;然後在新該行 （在現有的值），輸入或複製並貼上下表中的值。 （您可以查看在圖例中的表格下方範例）。 
+5. 在 [**編輯記錄集**] 區域中，于現有記錄的 [**值：** ] 方塊中的目前專案的結尾，按下鍵盤上的 enter，以建立新行;然後，在該行（現有的值下方）輸入或複製並貼上下清單格中的值。 （您可以在表格下方的圖例中看到範例）。 
     
-    |**值：**|
+    |**價值：**|
     |:-----|
-    |v=spf1 include:spf.protection.outlook.com -all  <br/> (系統會自動提供畫面上指示所需的引號。您不需要手動輸入。)  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |v=spf1 include:spf.protection.outlook.com -all  <br/> (系統會自動提供畫面上指示所需的引號。您不需要手動輸入。)  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
-    ![AWS-DYN-BP-CONFIGURE-1-設定-4-2](../../media/beb3c086-eaf8-4245-9860-18512a3ff72e.png)
+    ![AWS-BP-Configure-4-2](../../media/beb3c086-eaf8-4245-9860-18512a3ff72e.png)
   
-6. 選取 [**儲存記錄集**。
+6. 選取 [**儲存記錄集**]。
     
     ![AWS-BP-設定-4-3](../../media/94b9306c-bdc9-4f84-ad6f-6d12edbfde90.png)
   
@@ -200,24 +200,24 @@ ms.locfileid: "42351474"
 
 1. 首先請用[這個連結](https://console.aws.amazon.com/route53/home)移至 AWS 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**資源**] 頁面上，選取 [**託管區域**]。
+2. 在 [**資源**] 頁面上，選取 [**主控區域**]。
     
-3. 在 [**託管區域**] 頁面上，在**網域名稱**] 欄中，選取您想要編輯的網域名稱。 
+3. 在 [**主控區域**] 頁面上的 [**功能變數名稱**] 欄中，選取您要編輯的網功能變數名稱稱。 
     
-4. 選取 [**建立記錄集**。
+4. 選取 [**建立記錄集**]。
     
 5. 新增第一筆 SRV 記錄：
     
-    在 [**建立記錄集**] 區域中，於新記錄的方塊中輸入或複製並貼下表中第一列的值。 
+    在 [**建立記錄集**] 區域的新記錄方塊中，輸入或複製並貼上下表中第一列的值。 
     
     (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
     
     |**名稱**|**Type**|**Alias**|**TTL (Seconds)**|**值**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls|SRV - 服務定位器|無|300|100 1 443 sipdir.online.lync.com>。 **此值必須以英文句點 （.） 結尾。**><br> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |簡易|
-    |_sipfederationtls._tcp|SRV - 服務定位器|無|300|100 1 5061 sipfed.online.lync.com>。 **This value MUST end with a period (.)**<br> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |簡單|
+    |_sip。 _tls|SRV - 服務定位器|無|300|100 1 443 sipdir.online.lync.com。 **此值必須以句點（.）結尾**><br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |簡易|
+    |_sipfederationtls。 _tcp|SRV - 服務定位器|無|300|100 1 5061 sipfed.online.lync.com。 **This value MUST end with a period (.)**<br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |簡單|
    
-    ![AWS-DYN-BP-CONFIGURE-1-設定-5-1](../../media/c3f841d3-6076-428f-bb04-e71cc5f392fa.png)
+    ![AWS-BP-Configure-5-1](../../media/c3f841d3-6076-428f-bb04-e71cc5f392fa.png)
   
 6. 選取 [建立]****。
     
@@ -225,7 +225,7 @@ ms.locfileid: "42351474"
   
 7. 新增另一筆 SRV 記錄：
     
-    在 [**託管區域**] 頁面上，選取 [**建立記錄集**在表格中，使用 [下一步] 列中的值建立記錄，然後再次選擇 [**建立**] 以完成該筆記錄。 
+    在 [**主控區域**] 頁面中，選取 [**建立記錄集**]，使用表格中下一列的值建立記錄，然後再選取 [**建立**] 以完成記錄。 
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正在 Office 365 中新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
