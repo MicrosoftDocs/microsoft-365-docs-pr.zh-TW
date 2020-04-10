@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,35 +21,35 @@ search.appverid:
 - GEA150
 ms.assetid: af00a516-dd39-4eda-af3e-1eaf686c8dc9
 description: '瞭解如何在 Office 365 中編輯或新增自訂的 DNS 記錄。 '
-ms.openlocfilehash: 4cdfe98a38dd870dcf5d745438e8d81afa1fc934
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: c2495e4b7e85361d89404526e2467a08f2259567
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857104"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212518"
 ---
-# <a name="add-or-edit-custom-dns-records-in-office-365"></a><span data-ttu-id="5f64b-103">在 Office 365 中新增或編輯自訂 DNS 記錄</span><span class="sxs-lookup"><span data-stu-id="5f64b-103">Add or edit custom DNS records in Office 365</span></span>
+# <a name="add-or-edit-custom-dns-records-in-office-365"></a><span data-ttu-id="f1139-103">在 Office 365 中新增或編輯自訂 DNS 記錄</span><span class="sxs-lookup"><span data-stu-id="f1139-103">Add or edit custom DNS records in Office 365</span></span>
 
- <span data-ttu-id="5f64b-104">若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。</span><span class="sxs-lookup"><span data-stu-id="5f64b-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span> 
+ <span data-ttu-id="f1139-104">若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。</span><span class="sxs-lookup"><span data-stu-id="f1139-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span> 
 
-1. <span data-ttu-id="5f64b-105">登入 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="5f64b-105">Sign in to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>   
+1. <span data-ttu-id="f1139-105">登入 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="f1139-105">Sign in to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.</span></span>   
 
-2. <span data-ttu-id="5f64b-106">移至 [**設定** \> **網域**] 頁面。</span><span class="sxs-lookup"><span data-stu-id="5f64b-106">Go to the **Settings** \> **Domains** page.</span></span>
+2. <span data-ttu-id="f1139-106">移至 [**設定** \> **網域**] 頁面。</span><span class="sxs-lookup"><span data-stu-id="f1139-106">Go to the **Settings** \> **Domains** page.</span></span>
 
-3. <span data-ttu-id="5f64b-107">在 [**網域**] 頁面上，選取網域。</span><span class="sxs-lookup"><span data-stu-id="5f64b-107">On the **Domains** page, select a domain.</span></span> 
+3. <span data-ttu-id="f1139-107">在 [**網域**] 頁面上，選取網域。</span><span class="sxs-lookup"><span data-stu-id="f1139-107">On the **Domains** page, select a domain.</span></span> 
     
-4. <span data-ttu-id="5f64b-108">在 [ **DNS 設定**] 底下，選取 [**自訂記錄**]，然後選取 [**新增自訂記錄**]。</span><span class="sxs-lookup"><span data-stu-id="5f64b-108">Under **DNS settings**, select **Custom Records**; then select **New custom record**.</span></span>
+4. <span data-ttu-id="f1139-108">在 [ **DNS 設定**] 底下，選取 [**自訂記錄**]，然後選取 [**新增自訂記錄**]。</span><span class="sxs-lookup"><span data-stu-id="f1139-108">Under **DNS settings**, select **Custom Records**; then select **New custom record**.</span></span>
 
-5. <span data-ttu-id="5f64b-109">選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。</span><span class="sxs-lookup"><span data-stu-id="5f64b-109">Select the type of DNS record you want to add and type the information for the new record.</span></span>
+5. <span data-ttu-id="f1139-109">選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。</span><span class="sxs-lookup"><span data-stu-id="f1139-109">Select the type of DNS record you want to add and type the information for the new record.</span></span>
     
-6. <span data-ttu-id="5f64b-110">選取 [儲存]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="5f64b-110">Select **Save**.</span></span>
+6. <span data-ttu-id="f1139-110">選取 **[儲存]**。</span><span class="sxs-lookup"><span data-stu-id="f1139-110">Select **Save**.</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="5f64b-111">相關文章</span><span class="sxs-lookup"><span data-stu-id="5f64b-111">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="f1139-111">相關文章</span><span class="sxs-lookup"><span data-stu-id="f1139-111">Related articles</span></span>
 
-[<span data-ttu-id="5f64b-112">收集建立 Office 365 DNS 記錄所需的資訊</span><span class="sxs-lookup"><span data-stu-id="5f64b-112">Gather the information you need to create Office 365 DNS records</span></span>](../get-help-with-domains/information-for-dns-records.md)
+[<span data-ttu-id="f1139-112">收集建立 Office 365 DNS 記錄所需的資訊</span><span class="sxs-lookup"><span data-stu-id="f1139-112">Gather the information you need to create Office 365 DNS records</span></span>](../get-help-with-domains/information-for-dns-records.md)
 
-[<span data-ttu-id="5f64b-113">DNS 基本概念</span><span class="sxs-lookup"><span data-stu-id="5f64b-113">DNS basics</span></span>](../get-help-with-domains/dns-basics.md)
+[<span data-ttu-id="f1139-113">DNS 基本概念</span><span class="sxs-lookup"><span data-stu-id="f1139-113">DNS basics</span></span>](../get-help-with-domains/dns-basics.md)
 
-[<span data-ttu-id="5f64b-114">取得 Office 365 網域的說明</span><span class="sxs-lookup"><span data-stu-id="5f64b-114">Get help with Office 365 domains</span></span>](../get-help-with-domains/get-help-with-domains.yml)
+[<span data-ttu-id="f1139-114">取得 Office 365 網域的說明</span><span class="sxs-lookup"><span data-stu-id="f1139-114">Get help with Office 365 domains</span></span>](../get-help-with-domains/get-help-with-domains.md)
 
 
