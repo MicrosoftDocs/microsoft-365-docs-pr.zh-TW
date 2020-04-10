@@ -64,6 +64,8 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: 第二號支付服務指令和加強客戶驗證
       href: billing-and-payments/psd2.md
+    - name: 稅務資訊
+      href: billing-and-payments/tax-information.md
 - name: 帳單帳戶
   items:
     - name: 管理帳單帳戶
