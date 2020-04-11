@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Office 365 群組到期原則。
-ms.openlocfilehash: 92e472ac56128cc847471b51930aa73dc6598711
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 58eadf3f5899a69fda261c34a5911af22220bd85
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212054"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225916"
 ---
 # <a name="office-365-group-expiration-policy"></a>Office 365 群組到期原則
 
@@ -38,7 +38,7 @@ ms.locfileid: "43212054"
 主動使用中的群組會自動更新。 下列任何動作都會自動更新群組：
 - SharePoint-查看、編輯、下載、移動、共用或上傳檔案。
 - Outlook-加入群組、讀取或寫入群組的郵件，以及類似郵件（Outlook 網頁版）。
-- 團隊-造訪團隊 channe '。
+- 團隊-來訪小組頻道。
 
 > [!IMPORTANT]
 > 當您變更到期原則時，服務會重新計算每個群組的到期日。 它永遠從建立群組的日期開始計數，然後套用新的到期原則。

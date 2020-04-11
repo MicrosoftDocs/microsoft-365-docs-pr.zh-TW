@@ -15,20 +15,38 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 在 Office 365 的自動調查期間和之後，您可以查看結果和重要結果。
-ms.openlocfilehash: 6db1c6a999a7791e8fb7bf728a9ee0a33733eeaf
-ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
+ms.openlocfilehash: e19669f48047f1800d2a904c6ef5565d8db94dd9
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43163907"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225972"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Office 365 中自動調查的詳細資料和結果
 
 當[Office 365 的「高級威脅防護](office-365-atp.md)」會進行[自動調查](office-365-air.md)時，系統會在自動化調查程式期間和之後使用該調查的詳細資料。 如果您擁有必要權限，您可以在調查詳細資料檢視中查看這些詳細資料。 調查詳細資料檢視可提供您最新的狀態，以及核准任何待核准動作的能力。 
 
+## <a name="investigation-status"></a>調查狀態
+
+調查狀態會指出分析和動作的進度。 調查執行時，會變更狀態，以指出是否發現威脅，以及是否已核准動作。 
+
+|狀態  |含義  |
+|---------|---------|
+|啟動中 | 調查已觸發並等候開始執行。  |
+|正在執行 | 調查過程已開始且正在進行中。 當[待定的動作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)獲得批准時，也會發生此狀態。 |
+|找不到威脅 | 調查已完成且沒有發現任何威脅（使用者帳戶、電子郵件訊息、URL 或檔案）。 <br/><br/>**提示**：如果您懷疑某項未錯過（例如，為 false），您可以使用[威脅 Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)採取動作。 |
+|發現威脅 |自動調查發現問題，但沒有任何特定的修正動作可解決這些問題。<br/><br/> 發現某些類型的使用者活動時，可能會發生威脅已發現狀態，但沒有清除動作可供使用。 範例包括下列任何使用者活動： <br/>-[資料遺失防護](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies)（DLP）事件 <br/>-傳送反常的電子郵件 <br/>-傳送惡意程式碼 <br/>-傳送網路釣魚<br/>調查發現沒有惡意的 URLs、檔案或電子郵件訊息要修正，而且沒有要修正的信箱活動，例如關閉轉移規則或委派。 <br/><br/>**提示**：如果您懷疑某項未錯過（例如，為 false），您可以使用[威脅 Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)進行調查和採取動作。 |
+|由系統終止 | 調查已停止。 調查可能會因下列幾點原因而停止：<br/>-調查的擱置中動作已過期。 等候一周的核准，待處理的動作超時。 <br/>-動作太多。 例如，如果有太多使用者點擊惡意的 URLs，它可能會超出調查的執行所有分析器的能力，所以調查會暫停。 <br/><br/>**提示**：如果調查在採取動作之前暫停，請嘗試使用[威脅瀏覽器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)來尋找並處理威脅。  |
+|擱置的動作 | 調查發現威脅，例如惡意電子郵件、惡意 URL 或風險信箱設定，以及修正威脅等候[核准](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)的動作。<br/><br/>當找到具有對應動作的任何威脅時，就會觸發擱置的動作狀態。 不過，擱置中的動作清單會隨著調查的執行而增加。 檢查[調查記錄](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log)檔，查看是否有其他專案仍待完成。 |
+|修復 | 調查已完成且所有動作均已核准（已完全修正）。<br/><br/>**附注**：核准的修復動作可能會有錯誤，導致無法採取動作。 不論是否成功完成修正動作，調查狀態不會變更。 檢查[調查記錄](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)檔中的詳細結果。 |
+|部分修正 | 調查產生修正動作，有些已經過核准和完成。 其他動作仍[有待處理](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)。 |
+|失敗 | 至少有一個調查分析器遇到問題，導致無法正確完成。 <br/><br/>**附注**：如果在已核准修正動作後，調查失敗，修正動作可能仍然會成功。 檢查[調查記錄](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)檔中的詳細結果。 |
+|依節流佇列 | 在佇列中保存調查。 當其他調查完成時，佇列調查便會開始。 節流可協助避免服務效能不良。 <br/><br/>**提示**：擱置的動作可能會限制可執行檔新調查數目。 請務必[核准（或拒絕）暫](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)止的動作。 |
+|由節流終止 | 如果佇列中的調查保持過長，它就會停止。 <br/><br/>**提示**：您可以[從威脅瀏覽器開始調查](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。 |
+
 ## <a name="view-details-of-an-investigation"></a>檢視調查的詳細資料
 
-1. 移至 [https://protection.office.com](https://protection.office.com) 並登入。 這樣會帶您前往安全性與合規性中心。
+1. 移至 Office 365 的安全性 & 規範中心（[https://protection.office.com](https://protection.office.com)）並登入。
 
 2. 執行下列其中一項動作：
 
@@ -50,7 +68,7 @@ ms.locfileid: "43163907"
 
 某些類型的警示會在 Office 365 中觸發自動化調查。 若要深入了解，請參閱[警示](automated-investigation-response-office.md#alerts)。 使用下列程序來檢視與自動化調查相關聯警示的詳細資料。
 
-1. 移至 [https://protection.office.com](https://protection.office.com) 並登入。 這樣會帶您前往安全性與合規性中心。
+1. 移至 Office 365 的安全性 & 規範中心（[https://protection.office.com](https://protection.office.com)）並登入。 
 
 2. 移至 [威脅管理]****  >  [調查]****。
 
@@ -83,20 +101,6 @@ ms.locfileid: "43163907"
 - 套用篩選器。 您可以選擇**調查類型**、**時間範圍**、**狀態**或兩者的組合。
 - 將資料匯出至 .csv 檔案。
 
-調查狀態會指出分析和動作的進度。 調查執行時，會變更狀態，以指出是否發現威脅，以及是否已核准動作。 
-
-|狀態  |含義  |
-|---------|---------|
-|啟動中 | 調查已觸發並等候開始執行。 這是第一個步驟。 |
-|正在執行 | 調查過程已開始且正在進行中。 當[待定的動作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)獲得批准時，也會發生此狀態。 |
-|找不到威脅 | 調查已完成且沒有發現任何威脅（使用者帳戶、電子郵件訊息、URL 或檔案）。 <br/><br/>**提示**：如果您懷疑某項未錯過（例如，為 false），您可以使用[威脅 Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)採取動作。 |
-|由系統終止 | 調查已停止。 這可能是由於多種原因所造成。 以下是兩個最常見的原因：<br/>-調查的擱置中動作已過期。 等候一周的核准，待處理的動作超時。 <br/>-動作太多。 例如，如果有太多使用者點擊惡意的 URLs，它可能會超出調查的執行所有分析器的能力，所以調查會暫停。 <br/><br/>**提示**：如果調查在採取動作之前暫停，請嘗試使用[威脅瀏覽器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)來尋找並處理威脅。  |
-|擱置的動作 | 調查發現威脅，例如惡意電子郵件、惡意 URL 或風險信箱設定，以及修正威脅等候[核准](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)的動作。<br/><br/>當找到對應動作的任何威脅時，就會觸發擱置動作狀態;不過，請注意，調查可能尚未完全完成。  檢查[調查記錄](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log)檔，查看是否有其他專案仍待完成。 |
-|修復 | 調查已完成且所有動作均已核准（已完全修正）。<br/><br/>**附注**：核准的修復動作可能會有錯誤，導致無法採取動作。 這不會變更調查狀態。 檢查[調查記錄](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)檔中的詳細結果。 |
-|部分修正 | 調查產生修正動作，有些已經過核准和完成。 其他動作仍[有待處理](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)。 |
-|失敗 | 至少有一個調查分析器遇到問題，導致無法正確完成。 <br/><br/>**附注**：如果在已核准修正動作後，調查失敗，修正動作可能仍然會成功。 檢查[調查記錄](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)檔中的詳細結果。 |
-|依節流佇列 | 在佇列中保存調查。 當其他調查完成時，佇列調查便會開始。 這有助於避免服務效能不良。 <br/><br/>**提示**：擱置的動作可能會限制可執行檔新調查數目。 請務必[核准（或拒絕）暫](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)止的動作。 |
-|由節流終止 | 如果佇列中的調查保留太長，它會停止。 <br/><br/>**提示**：您可以[從威脅瀏覽器開始調查](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。 |
 
 ### <a name="investigation-graph"></a>調查圖表
 
@@ -112,7 +116,7 @@ ms.locfileid: "43163907"
 
 ### <a name="alert-investigation"></a>警示調查
 
-在調查的 [**提醒**] 索引標籤上，您可以看到與調查相關的警示。 詳細資料包括觸發調查的警示，以及與調查相關的其他相關警示（如危險登入、DLP 原則違規等等）。 在此頁面中，安全性分析員也可以查看個別警示的其他詳細資料。
+在調查的 [**提醒**] 索引標籤上，您可以看到與調查相關的警示。 詳細資料包括觸發調查的警示，以及與調查相關的其他相關警示（如危險登入、 [DLP 原則](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies)違規等等）。 在此頁面中，安全性分析員也可以查看個別警示的其他詳細資料。
 
 ![空氣提醒頁面](../../media/air-investigationalertspage.png)
 
@@ -209,7 +213,7 @@ ms.locfileid: "43163907"
 - 將結果匯出至 CSV 檔案。
 - 篩選視圖。
 
-|分析儀 | 說明 |
+|分析儀 | 描述 |
 |-----|-----|
 |DLP 違規調查 |調查[Office 365 資料遺失防護](../../compliance/data-loss-prevention-policies.md)（DLP）偵測到的任何衝突 |
 |電子郵件指示器解壓縮 |從電子郵件的標頭、本文和內容提取指示器，以進行調查 |
