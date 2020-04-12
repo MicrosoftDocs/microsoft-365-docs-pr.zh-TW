@@ -830,6 +830,8 @@
       items:
         - name: 金融服務安全性和合規性
           href: ../solutions/financial-services-secure-collaboration.md
+        - name: 能源服務安全性和合規性
+          href: ../solutions/energy-secure-collaboration.md
 - name: 法規合規性行動計劃
   items:
     - name: ISO - 建議使用的行動計劃
