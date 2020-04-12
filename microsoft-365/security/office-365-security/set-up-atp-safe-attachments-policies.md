@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: 定義安全附件原則，避免您的組織受到電子郵件中惡意檔案的危害。
-ms.openlocfilehash: c5001823979c19ec68cd15a10bf7c2d7e54cae1d
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+ms.openlocfilehash: 860e733bda8f16eff8e36e42055c7ea7fa88e343
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637316"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230965"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
 
@@ -47,7 +47,7 @@ ms.locfileid: "42637316"
 
   |||
   |---|---|
-  |**角色**|**指派位置/條件**|
+  |**Role**|**指派位置/條件**|
   |Office 365 全域系統管理員 |註冊購買 Office 365 的人會預設為為全域系統管理員。 (請參閱[關於 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以深入了解。)|
   |安全性系統管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
   |Exchange Online 組織管理，Exchange Online 的清理管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
@@ -83,7 +83,7 @@ ms.locfileid: "42637316"
 
 6. 選擇 [儲存]****。
 
-考慮為您的組織設定多個 ATP 安全附件原則。 這些原則會按照其在 **ATP 安全附件**頁面中的順序套用。 在定義或編輯原則之後，至少需 30 分鐘的時間，原則才能在整個 Microsoft 資料中心內生效。
+考慮為您的組織設定多個 ATP 安全附件原則。 這些原則會按照其在 **ATP 安全附件**頁面中的順序套用。 在定義或編輯原則之後，至少要有30分鐘的時間讓原則生效于整個 Microsoft 資料中心。
 
 ## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>步驟 3：了解 ATP 安全附件原則選項
 
