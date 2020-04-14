@@ -14,20 +14,20 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 80ee396d5a9862dd335118d8d4e8018214035f20
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 7cb065bb63bc30c4704abd3d4239fd80bca6d21e
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222045"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225906"
 ---
 # <a name="service-organization-controls-soc"></a>服務組織控制 (SOC)
 
 ## <a name="soc-1-2-and-3-reports-overview"></a>SOC 1、2 和 3 報告概觀
 
-越來越多企業將基本功能 (例如資料儲存空間和應用程式存取權) 外包給雲端服務提供者 (CSP) 和其他服務組織。 對此，美國會計師協會 (AICPA) 開發了服務組織控制 (SOC) 架構，這是一種可保護在雲端儲存及處理的資訊機密性和隱私權的控制標準。 這與國際服務組織的報告標準《國際鑑證業務準則》(ISAE) 相符。
+越來越多企業將基本功能 (例如資料儲存空間和應用程式存取權) 外包給雲端服務提供者 (CSP) 和其他服務組織。 對此，美國會計師協會 (AICPA) 開發了服務組織控制 (SOC) 架構，這是一種可保護在雲端儲存及處理的資訊機密性和隱私權的控制標準。 此架構與國際服務組織的報告標準《國際鑑證業務準則》(ISAE) 相符。
 
-以 SOC 架構為基礎的服務稽核分為兩個類別：SOC 1 和 SOC 2，適用於範圍內的 Microsoft 雲端服務。
+以 SOC 架構為基礎的服務稽核分為 SOC 1 和 SOC 2 類別，適用於範圍內的 Microsoft 雲端服務。
 
 SOC 1 稽核 (適用於稽核財務報表的 CPA 公司) 評估影響使用提供者雲端服務的客戶財務報告的 CSP 內部控制效能。 《簽證服務準則公報第18 號》(SSAE 18) 和《國際鑑證業務準則第 3402 號》 (ISAE 3402) 是執行稽核的標準，而且是 SOC 1 報告的基礎。
 
@@ -115,7 +115,7 @@ Microsoft 雲端服務針對 SOC 1 (SSAE18，ISAE 3402) 和 SOC 2 (AT 第 101 �
 
 **Azure SOC 報告多久發行一次？**
 
-Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、串流和 Microsoft 資料中心的 SOC 報告皆以 12 個月執行 (稽核期間) 為基礎，且每半年季發行新報告 (期間結束於 3 月 31 日與 9 月 30 日)。 橋接信件會在 1 月發行，以涵蓋 10/1 – 12/31 期間，並於 7 月發行以涵蓋 4/1 – 6/30 的期間。 客戶可以從服務信任入口網站[下載](https://aka.ms/stp)最新報告。
+Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、串流和 Microsoft 資料中心的 SOC 報告皆以 12 個月執行 (稽核期間) 為基礎，且每半年季發行新報告 (期間結束於 3 月 31 日與 9 月 30 日)。 橋接字母會每季發行 (通常是每季結束後當月的第一週)。 客戶可以從服務信任入口網站[下載](https://aka.ms/stp)最新報告。
 
 **我是否需要自行執行 Microsoft 資料中心的稽核？**
 

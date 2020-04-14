@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 基本的垃圾郵件篩選設定，包括識別為垃圾郵件所採取的選取郵件動作。
-ms.openlocfilehash: f77a4f52e045c96a0538b140022ebee846cb1996
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+ms.openlocfilehash: 39532db121bb4a9ca5b73ef129b2b0e74e46c69a
+ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204097"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216920"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>設定 Office 365 的反垃圾郵件原則
 
@@ -280,7 +280,7 @@ EOP 中反垃圾郵件原則的基本元素有：
 
 3. 按一下 [編輯原則]****。
 
-若是自訂的反垃圾郵件原則，隨即出現的飛出視窗中顯示的設定會和[使用安全性與合規性中心來建立反垃圾郵件原則](#use-the-security--compliance-center-to-create-anti-spam-policies)一節所述的完全相同。
+在飛出視窗中顯示的設定會和[使用安全性與合規性中心來建立反垃圾郵件原則](#use-the-security--compliance-center-to-create-anti-spam-policies)一節可用的設定完全相同。
 
 若是名為**預設的垃圾郵件篩選原則**的預設反垃圾郵件原則，則無法使用 [套用至]**** 區段 (原則套用至每個人)，而且您無法重新命名原則。
 
@@ -460,7 +460,7 @@ Get-HostedContentFilterPolicy -Identity "Executives" | Format-List
 若要檢視現有的垃圾郵件篩選規則，請使用下列語法：
 
 ```PowerShell
-Get-HostedContentFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
+Get-HostedContentFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled]
 ```
 
 若要傳回所有垃圾郵件篩選規則的摘要清單，請執行下列命令：

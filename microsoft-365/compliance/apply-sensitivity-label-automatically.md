@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: a37e1ec6b342e8003427c0e90c2493ffa2952fe4
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 0558709c729a0ca941124ac3e72762f4b973432d
+ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189089"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216884"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -57,8 +57,8 @@ ms.locfileid: "43189089"
     如需設定指示，請參閱此頁面上的[如何設定 SharePoint、OneDrive 和 Exchange 的自動套用標籤原則](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)。
     
     SharePoint 和 OneDrive 自動套用標籤專屬限制：
-    - 您的租用戶中每天 25,000 個檔案上限 (Word、PowerPoint 或 Excel)
-        - 每位授權使用者每天 5 個檔案的上限
+    - 租用戶中每天最多 25,000 個自動套用標籤的檔案 (Word、PowerPoint 或 Excel)
+        - 每個授權使用者每日最多 5 個自動套用標籤的檔案
     - 所有原則之間 10 個網站集合的上限
     - 您的租用戶之間 10 個原則的上限
 
