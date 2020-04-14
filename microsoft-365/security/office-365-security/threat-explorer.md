@@ -16,16 +16,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性與合規性中心的總管和即時偵測。
-ms.openlocfilehash: e882f89a0020cacd30cb6d85917e78a965ad5cde
-ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
+ms.openlocfilehash: c854021eaf6c5d252f36961fde427c5532ba1ef6
+ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43198380"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43284247"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
 
-如果貴組織具有 [Office 365 進階威脅防護](office-365-atp.md) (Office 365 ATP)，而且您具有[必要的權限](#required-licenses-and-permissions)，您具有**總管**或**即時偵測** (先前的*即時報告* — [查看新增功能](#new-features-in-threat-explorer-and-real-time-detections)！)。 在安全性與合規性中心， 移至**威脅管理**，然後選擇**總管**或**即時偵測**。
+如果貴組織具有 [Office 365 進階威脅防護](office-365-atp.md) (Office 365 ATP)，而且您具有[必要的權限](#required-licenses-and-permissions)，您具有**總管**或**即時偵測** (先前的*即時報告* — [查看新增功能](#new-features-in-threat-explorer-and-real-time-detections)！)。 在 [安全性 & 規範中心] 中，移至 [**威脅管理**]，然後選擇 [ **Explorer** ]_或_[**即時**偵測]。
 
 |||
 |---|---|
@@ -157,7 +157,7 @@ ms.locfileid: "43198380"
 
     報告會重新整理以在報告下的 [URL] 索引標籤上顯示兩個不同的 URL 表格：
 
-   - **[熱門 URL]** 為已篩選的郵件中的 URL，而電子郵件傳送動作會計算每個 URL。 在網路釣魚電子郵件檢視中，此清單通常會包含合法的 URL。 攻擊者會在這些郵件中混雜善意和惡意的 URL，以試圖傳遞這些郵件，但他們會讓惡意連結看起來更加有趣，以誘使使用者點擊。 URL 表格是依電子郵件總數量排序 (注意：為了簡化檢視，不會顯示此欄)。
+   - **[熱門 URL]** 為已篩選的郵件中的 URL，而電子郵件傳送動作會計算每個 URL。 在網路釣魚電子郵件檢視中，此清單通常會包含合法的 URL。 攻擊者會在這些郵件中混雜善意和惡意的 URL，以試圖傳遞這些郵件，但他們會讓惡意連結看起來更加有趣，以誘使使用者點擊。 URLs 的表格依電子郵件總數排序（不過請注意，此欄會隱藏以簡化視圖）。
 
    - **[熱門點擊]** 為點擊過的包含在安全連結中的 URL，並依總點擊數排序 (為了簡化檢視，此欄也不會顯示)。 依資料行的總計數表示每個點擊過的 URL 的安全連結按一下結果計數。 在網路釣魚電子郵件視圖中，這些都很經常是可疑或惡意的 URLs，但可能包含不具威脅但位於網路釣魚郵件中的 URLs。 已開啟的連結 URL 點擊不會顯示在這裡。
 
@@ -165,7 +165,10 @@ ms.locfileid: "43198380"
 
    ![已封鎖的總管 URL](../../media/ExplorerPhishClickVerdictURLs.png)
 
-   選取 URL 以檢視更多詳細資訊。 **請注意**：URL 飛出對話方塊中，電子郵件篩選已移除，以讓您完整檢視暴露於環境中的 URL。 這能讓您在總管中篩選出擔心的電子郵件訊息，找出具有潛在威脅的特定 URL，然後了解暴露於環境 (經由 URL 詳細資料對話方塊) 中的 URL，而不需要將 URL 篩選新增至總管檢視本身。
+   選取 URL 以檢視更多詳細資訊。
+   
+   > [!NOTE]
+   > 在 [URL 飛入] 對話方塊中，會移除電子郵件上的篩選，以顯示您環境中 URL 公開的完整視圖。 這能讓您在總管中篩選出擔心的電子郵件訊息，找出具有潛在威脅的特定 URL，然後了解暴露於環境 (經由 URL 詳細資料對話方塊) 中的 URL，而不需要將 URL 篩選新增至總管檢視本身。
 
 ## <a name="review-email-messages-reported-by-users"></a>檢閱使用者回報的電子郵件訊息
 
@@ -175,7 +178,7 @@ ms.locfileid: "43198380"
 
 2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[提交]**。 （以前稱為「**使用者報告**」）。
 
-   ![總管的檢視功能表](../../media/ExplorerViewMenuEmailUserReported.png)
+   ![總管的檢視功能表](../../media/explorer-view-menu-email-user-reported.png)
 
 3. 按一下 **[寄件者]**，然後選擇 **[基本]** > **[回報類型]**。
 
@@ -237,4 +240,4 @@ ms.locfileid: "43198380"
 - **所有的電子郵件**view 都可用於**威脅瀏覽器**（而不是**即時**的偵測報告中）。
 - **威脅瀏覽器**中包含更多篩選功能和可用的動作。
 
-如需詳細資訊，請參閱[Office 365 ATP 服務說明：各高級威脅防護（ATP）方案中的功能可用性](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
+如需詳細資訊，請參閱[Office 365 ATP 服務說明：各高級威脅防護（ATP）方案中的功能可用性](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。

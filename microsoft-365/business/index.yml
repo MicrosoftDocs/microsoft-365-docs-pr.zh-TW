@@ -11,12 +11,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 9741932fcde29d2b64156c600f1bad1b309d5f66
-  ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+  ms.openlocfilehash: 10a49d657fcef00c589c3150f93ea0471d9522a6
+  ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 04/07/2020
-  ms.locfileid: "43165908"
+  ms.lasthandoff: 04/14/2020
+  ms.locfileid: "43284202"
 productDirectory:
   title: 使用 Microsoft 365 商務進行安全的遠端工作
   items:
@@ -27,11 +27,11 @@ productDirectory:
   - title: 觀賞合作夥伴網路研討會
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
     summary: 在您的 SMB 客戶處理 COVID-19 時加以保護。
-    url: https://aka.ms/M365v253PAL-Register
-  - title: 買
+    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
+  - title: 讀取
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: 按一下連結以購買或聯繫您的合作夥伴。
-    url: https://aka.ms/m365bweb
+    summary: 使用 Microsoft 365 商務來啟用安全遠端工作的最佳方式。
+    url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
 conceptualContent:
   items:
   - title: 什麼是 Microsoft 365 商務版？
@@ -114,7 +114,7 @@ conceptualContent:
     links:
     - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
       itemType: overview
-      text: 資料遺失防護
+      text: 資料外洩防護
     - url: https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980
       itemType: how-to-guide
       text: 傳送加密的電子郵件

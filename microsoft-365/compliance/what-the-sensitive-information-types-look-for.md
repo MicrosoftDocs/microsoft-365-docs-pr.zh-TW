@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 安全性&amp;與合規性中心的資料遺失防護（DLP）包括可供您在 DLP 原則中使用的80機密資訊類型。 本主題列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: bd74551b7e8b2d659724a1222e115a479db76ec8
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: aa3a08961ccad92c9986db16c1d8180d9b0cd17e
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894297"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240278"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>敏感資訊類型在找什麼
 
@@ -2838,12 +2838,32 @@ OR
    
 ## <a name="finland-passport-number"></a>芬蘭護照號碼
 
-設定九個字母和數位的組合，九個字母和數位的組合：兩個字母（不區分大小寫）七位數校驗和無定義 DLP 原則在下列情況下，偵測到這種敏感資訊的置信量是75%300個字元的鄰近性：正則運算式 Regex_finland_passport_number 找到符合模式的內容。
-會找到來自 Keyword_finland_passport_number 的關鍵字。
+### <a name="format"></a>格式
+九個字母和數位的組合
+
+### <a name="pattern"></a>模式
+九個字母和數位的組合：兩個字母（不區分大小寫）七位數
+
+### <a name="checksum"></a>校驗
+否
+
+### <a name="definition"></a>定義
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
+- 正則運算式 Regex_finland_passport_number 找到符合模式的內容。
+- 會找到來自 Keyword_finland_passport_number 的關鍵字。
 <!-- Finland Passport Number -->
-<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern>
+```xml
+<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_finland_passport_number"/>
+     <Match idRef="Keyword_finland_passport_number"/>
+  </Pattern>
 </Entity>
-Keyword_finland_passport_number Passport Passi 的關鍵字
+```
+### <a name="keywords"></a>關鍵字
+- Keyword_finland_passport_number
+- 護照
+- Passi
    
 ## <a name="france-drivers-license-number"></a>法國駕照編號
 
@@ -3618,7 +3638,7 @@ bnationalit
 
 每個國家/地區的格式稍有不同。 IBAN 敏感資訊類型涵蓋下列60個國家/地區：
 
-ad，ae，al，at，az，ba，是，bg，bh，ch，cr，cy，cz，de，深色，do，ee，es，fi，，gl，fr，gb，中，hu，，il，），it，kw，kz，lb，li，fr，mu，，nl-nl，no，pl，pt，ro，rs，sa，se，si，sk，sm，tn，tr，vg
+ad，ae，al，at，az，ba，a，bg，bh，ch，cr，cy，cz，de，深色，do，ee，es，es，fo，fr，gb，ge，gi，gl，gr，hr，hu，ie，il，為，it，kw，kz，lb，li，lt，lu，lv，mt，mu，nl-nl，no，pl，mt，ro，rs-232c，tn，tr，vg
 
 ### <a name="checksum"></a>校驗
 
