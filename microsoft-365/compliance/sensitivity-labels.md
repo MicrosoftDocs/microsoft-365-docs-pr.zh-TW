@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 從 Microsoft 資訊保護架構使用敏感度標籤來分類及保護組織的資料，同時確保使用者生產效率和共同作業能力不受影響。 這些標籤可套用保護設定以包含加密視覺標記，如頁尾和浮水印。
-ms.openlocfilehash: a67d71c16f93cf8872646c5bbeb072f8b5f07935
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 27accc57bce0b5597836e7683cf5b28d0fa9b942
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106151"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240308"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-為了完成其工作，組織中的人員會與組織內外的其他人員共同合作。這表示內容不會停留在防火牆後，它會漫遊在裝置、應用程式和服務的各處。而您希望內容以符合組織的商務及合規性原則的安全、受保護的方式漫遊。
+為了完成其工作，組織中的人員會與組織內外的其他人員共同合作。這表示內容不會停留在防火牆後，它會漫遊在裝置、應用程式和服務的各處。而您希望內容以符合組織的商務及合規性原則的安全、受保護的方式進行漫遊。
 
 來自 Microsoft 資訊保護架構的敏感度標籤可讓您分類及保護組織的資料，同時確保使用者生產效率和共同作業能力不受影響。
 
@@ -48,8 +48,6 @@ ms.locfileid: "43106151"
 - **在標記的內容上強制執行保護設定，例如加密或浮水印。** 例如，使用者可以將「機密」標籤套用至文件或電子郵件，該標籤即可加密內容，並套用「機密」浮水印。
 
 - **保護不同平台和裝置之間 Office 應用程式中的內容。** 如需受支援應用程式的清單，請參閱[在 Office 應用程式中使用敏感度標籤](sensitivity-labels-office-apps.md)。
-
-- 藉由在 Microsoft Intune 中使用端點保護，來**防止敏感內容從組織內執行 Windows 的裝置上流出**。 敏感度標籤套用至位於 Windows 裝置上的內容後，端點保護可以防止該內容複製到第三方應用程式，例如 Twitter 或 Gmail。 或複製到卸除式儲存空間，如 USB 磁碟機。
 
 - 使用 Microsoft Cloud App Security **保護第三方應用程式和服務中的內容**。 使用 Cloud App Security，您可以偵測、分類、標記並保護協力廠商應用程式和服務中的內容，例如 SalesForce、Box 或 DropBox，即使協力廠商應用程式或服務無法讀取或支援敏感度標籤亦然。
 
@@ -98,9 +96,6 @@ ms.locfileid: "43106151"
     
     字串長度：浮水印限制為 255 個字元。 頁首和頁尾均受限於 1024 個字元，但 Excel 除外。 對於頁首及頁尾，Excel 的總限制為 255 個字元，但此限制包含看不見的字元，例如格式代碼。 如果達到該限制，您輸入的字串就不會顯示在 Excel 中。
 
-- 在 Intune 中開啟端點保護，**防止資料外洩**。 如果已下載敏感性內容，您可以協助防止 Windows 裝置的資料遺失。 例如，您無法將標籤的內容複製到 Dropbox、Gmail 或 USB 磁碟機。 在敏感度標籤能夠使用 Windows 資訊保護 (WIP) 之前，您必須先在 Azure 入口網站中建立應用程式保護原則。 
-    
-    如需有關當您建立或編輯敏感度標籤 (包括重要的先決條件) 時**端點資料外洩防護**設定的詳細資訊，請參閱 [Windows 資訊保護如何使用敏感度標籤保護檔案](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)。
 
 - 當您加入預覽以[在 Microsoft Teams、Office 365 群組和 SharePoint 網站 (公開預覽版) 中搭配使用敏感度標籤時](sensitivity-labels-teams-groups-sites.md)，**保護容器中的內容，例如網站和群組**。
     
@@ -128,7 +123,7 @@ ms.locfileid: "43106151"
 
 子標籤是以邏輯群組方式向使用者呈現標籤的一個簡單方式。 子標籤不繼承其上層標籤的任何設定。 當您發佈使用者的子標籤時，該使用者就可以將該子標籤套用到內容，但不能只套用上層標籤。
 
-請勿選擇上層標籤作為預設標籤，或將上層標籤設定為自動套用或建議的選項，因為上層標籤無法套用至使用 Azure 資訊保護整合標籤用戶端的 Office 應用程式中的內容。
+請勿將上層籤選為預設標籤，或將上層標籤設定為自動套用 (或建議使用)。 如果這麼做，系統就不會將上層標籤套用至內容。
 
 子標籤如何對使用者顯示的範例：
 
@@ -138,7 +133,7 @@ ms.locfileid: "43106151"
 
 如果您從系統管理中心刪除敏感度標籤，此標籤並未從內容中自動移除，且所有保護設定都會繼續在套用該標籤的內容上強制執行。
 
-如果您編輯敏感度標籤，則會對內容強制執行當初套用至內容的標籤版本。
+如果您編輯敏感度標籤，則當初套用至內容的標籤版本會在內容上強制執行。
 
 ## <a name="what-label-policies-can-do"></a>標籤原則的功能
 
@@ -161,7 +156,7 @@ ms.locfileid: "43106151"
     > [!NOTE]
     > 強制標籤需要具備 Azure 資訊保護訂閱。 若要使用此功能，您必須安裝 [Azure 資訊保護整合標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)。 此用戶端僅能在 Windows 上執行，因此 Mac、iOS 和 Android 上尚不支援此功能。
 
-- **提供自訂說明頁面的說明連結。** 如果使用者不確定敏感度標籤代表的意義或使用方式，您可以提供「深入了解」URL，其顯示在 Office 應用程式中 [敏感度標籤]**** 功能表的底部：
+- **提供自訂說明頁面的說明連結。** 如果使用者不確定敏感度標籤代表的意義或使用方式，您可以提供顯示在 Office 應用程式中 **[敏感度標籤]** 功能表底部的 [深入了解] URL：
 
     ![功能區中 [敏感度] 按鈕上的「深入了解」連結](../media/Sensitivity-label-learn-more.png)
 
