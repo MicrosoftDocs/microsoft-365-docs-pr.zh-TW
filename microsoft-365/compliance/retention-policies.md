@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: ffbc8026b8a0b1f85916c7697625bfa0935e275f
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: d06ad19ab247384f800b3b38c561ad8eb33d4066
+ms.sourcegitcommit: 9cea48e1b26e0465c00f8d053080cba1143970c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189055"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43237640"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -301,7 +301,7 @@ ms.locfileid: "43189055"
 套用至 Exchange 或 Office 365 群組位置內使用者或群組信箱的保留原則不會影響 Teams 聊天與頻道訊息。 即使 Teams 聊天與頻道訊息會儲存在 Exchange 中，也只會受到套用至 Teams 位置的保留原則影響。
 
 > [!NOTE]
-> 如果使用者包含在保留 Teams 資料之使用中的保留原則，則不允許刪除這類使用者的信箱，因為資料的儲存必須保留。 若要刪除這類使用者的信箱，系統管理員必須先從保留原則中將該使用者排除。
+> 如果使用者包含在保留 Teams 資料的作用中保留原則中，且您刪除了包含在此原則中使用者的信箱，若要保留此資料，該信箱會轉換成[非作用中信箱](inactive-mailboxes-in-office-365.md)。 如果您不需要為使用者保留這個資料，請在刪除其信箱之前先將該使用者從保留原則排除。
   
 將保留原則指派給團隊之後，交談和頻道訊息可以依循下列兩個途徑之一：
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 0558709c729a0ca941124ac3e72762f4b973432d
-ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
+ms.openlocfilehash: 4ce9e06bb98fb391bb9eb5ffa01491e0c85eba1f
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216884"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240298"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -57,7 +57,7 @@ ms.locfileid: "43216884"
     如需設定指示，請參閱此頁面上的[如何設定 SharePoint、OneDrive 和 Exchange 的自動套用標籤原則](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)。
     
     SharePoint 和 OneDrive 自動套用標籤專屬限制：
-    - 租用戶中每天最多 25,000 個自動套用標籤的檔案 (Word、PowerPoint 或 Excel)
+    - 租用戶中每日最多 25,000 個自動套用標籤的檔案 (Word、PowerPoint 或 Excel)
         - 每個授權使用者每日最多 5 個自動套用標籤的檔案
     - 所有原則之間 10 個網站集合的上限
     - 您的租用戶之間 10 個原則的上限
@@ -95,7 +95,11 @@ ms.locfileid: "43216884"
 
 ## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>請勿設定將上層標籤設定為自動套用或建議選項
 
-請記得，您無法將上層標籤 (具有子標籤的標籤) 套用至內容。 請確定未將上層標籤設定為自動套用或建議選項，因為上層標籤無法套用到使用 Azure 資訊保護統一標籤用戶端的 Office 應用程式中的內容。 如需上層標籤和子標籤的詳細資訊，請參閱[子標籤 (分組標籤)](sensitivity-labels.md#sublabels-grouping-labels)。
+請記得，您無法將上層標籤 (具有子標籤的標籤) 套用至內容。 請確認您沒有設定在 Office 應用程式中自動套用或推薦的上層標籤，且沒有為自動標籤原則選取上層標籤。 如果這麼做，系統就不會將上層標籤套用至內容。
+
+若要搭配子標籤使用上層標籤標籤，請務必同時發佈上層標籤和子標籤。
+
+如需上層標籤和子標籤的詳細資訊，請參閱[子標籤 (分組標籤)](sensitivity-labels.md#sublabels-grouping-labels)。
 
 ## <a name="how-to-configure-auto-labeling-for-office-apps"></a>如何設定適用於 Office 應用程式的自動套用標籤
 

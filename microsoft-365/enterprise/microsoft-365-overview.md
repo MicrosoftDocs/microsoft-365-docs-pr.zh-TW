@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供 Microsoft 365 for enterprise 的元件、方案及部署路徑的簡介。
-ms.openlocfilehash: 043953ddfd38a9ef5119546ec5672dd46e8acb53
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 6b8d2aa7fd8455acde1d49a6ed7f7c93c5235652
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43175187"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504088"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -84,15 +84,14 @@ ms.locfileid: "43175187"
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>避免 Windows 7 和 Office 2010 用戶端和伺服器的支援終止
 
-下列產品已于**2020 年1月14日**到達支援的結尾：
-
-- [Windows 7](https://aka.ms/win7upgrade)
+[Windows 7](https://aka.ms/win7upgrade)已于**2020 年1月14日**到達支援的結尾。
 
 下列產品會在**2020 年10月13日**到達支援終止：
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+
+2010**年4月 13 2021 日** [SharePoint Server](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)將會到達支援終止。
 
 如需適用於這些產品的升級、移轉和移至雲端選項的視覺摘要，請參閱[終止支援海報](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)。
 
@@ -150,6 +149,6 @@ ms.locfileid: "43175187"
 
 如果您是自行進行部署，請啟動您[的 Microsoft 365，以進行企業部署旅程](deploy-microsoft-365-enterprise.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [適用于企業產品的 Microsoft 365 頁面](https://www.microsoft.com/microsoft-365/enterprise)

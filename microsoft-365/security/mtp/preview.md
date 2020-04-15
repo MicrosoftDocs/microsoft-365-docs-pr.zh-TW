@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f04d2e587a55a680a65425b34a88896466e09be3
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: c4facaac82ff8486c0c3a846e4f577c7888a3161
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113456"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503980"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威脅防護預覽功能
 
@@ -50,12 +50,13 @@ Microsoft 威脅防護服務會不斷更新，以包含新功能增強功能及�
 
 3. 選取 [**預覽功能** > ]**開啟預覽功能**。 
 
-3. 選取 [儲存]****。
+3. 選取 **[儲存]**。
 
 當您看到已選取 [**開啟預覽功能**] 核取方塊時，您會知道已開啟預覽功能。 
 
-
-
 ## <a name="preview-features"></a>預覽功能
-本節會以預覽中的功能清單進行更新，因為您可以嘗試使用這些功能。 
+下列是目前可供預覽的功能和增強功能：
 
+- **[自訂](custom-detections-overview.md)** 偵測-使用高級搜尋查詢來建立規則，以定期搜尋侵犯行為和其他感興趣的專案。 符合查詢觸發警示和您指定的回應動作。
+
+- 身分**[識別和應用程式表格](advanced-hunting-schema-tables.md)**--在高級搜尋架構中深入瞭解驗證事件、Active Directory 查詢和應用程式相關的活動與[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)、 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)和[AppFileEvents](advanced-hunting-appfileevents-table.md)表格。
