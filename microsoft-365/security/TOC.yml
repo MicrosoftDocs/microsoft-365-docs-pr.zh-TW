@@ -199,8 +199,10 @@
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
             - name: 新的 Microsoft 365 安全性中心
               href: ./mtp/overview-security-center.md
-            - name: 安全性與合規性中心中的權限
+            - name: Office 365 安全性與合規性中心中的權限
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
+            - name: Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的權限
+              href: ./office-365-security/permissions-microsoft-365-compliance-security.md
             - name: 讓使用者能夠存取安全性中心
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
         - name: 防範威脅
