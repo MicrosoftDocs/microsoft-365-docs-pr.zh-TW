@@ -19,12 +19,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: 零小時自動清除（ZAP）是 Office 365 中的電子郵件保護功能，可偵測已傳遞至 Exchange Online 的垃圾郵件、惡意程式碼或網路釣魚郵件。 ZAP 執行此作業的方式取決於偵測到的惡意內容類型。
-ms.openlocfilehash: 7cce0c15d861ee43d5704f3fc4da5a6dccb9d5d4
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 44bdab5d37863bc543d953a89ac3129b3530437d
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895008"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516770"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-office-365"></a>零小時自動清除（ZAP）-防護 Office 365 中的垃圾郵件和惡意程式碼
 
@@ -54,7 +54,7 @@ Office 365 每天都會即時更新垃圾郵件和惡意程式碼簽名。 不�
 
 - **新增 X-Header**，**並將主旨行前置文字**： ZAP 不會對郵件採取任何動作。
 
-- **將郵件移至垃圾郵件**：只要信箱上啟用垃圾郵件規則（預設為啟用），ZAP 就會將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[在 Office 365 中設定 Exchange Online 信箱上的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
+- **將郵件移至垃圾郵件**：只要信箱上啟用垃圾郵件規則（預設為啟用），ZAP 就會將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[在 Office 365中設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
 - **將郵件重新導向至電子郵件地址**、**刪除郵件**、**隔離訊息**： ZAP 會隔離郵件。 只有系統管理員可以查看和管理網路釣魚隔離的郵件。
 
@@ -68,7 +68,7 @@ Office 365 每天都會即時更新垃圾郵件和惡意程式碼簽名。 不�
 
 - **新增 X-Header**，**並將主旨行前置文字**： ZAP 不會對郵件採取任何動作。
 
-- **將郵件移至垃圾郵件**：只要信箱上啟用垃圾郵件規則（預設為啟用），ZAP 就會將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[在 Office 365 中設定 Exchange Online 信箱上的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
+- **將郵件移至垃圾郵件**：只要信箱上啟用垃圾郵件規則（預設為啟用），ZAP 就會將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[在 Office 365中設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
 - **將郵件重新導向至電子郵件地址**、**刪除郵件**、**隔離訊息**： ZAP 會隔離郵件。 使用者可以查看和管理自己的垃圾郵件隔離郵件。
 
@@ -100,7 +100,7 @@ A：郵件流程規則或封鎖及允許組織設定優先。 這些郵件會從
 
 ### <a name="q-what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>問：郵件會移至另一個資料夾（例如 [收件匣規則]）？
 
-A：只要郵件尚未刪除或移至 [垃圾郵件] 資料夾，則該郵件仍可運作。
+當郵件尚未刪除，或是只要相同或更強的動作尚未套用，則該郵件仍可運作。 例如，如果網路釣魚原則設定為 [隔離]，而且使用者或系統管理員已經 junked 電子郵件，則隔離會採取動作隔離檔案。
 
 ### <a name="q-does-zap-change-the-message-header"></a>問： ZAP 是否會變更郵件頭？
 

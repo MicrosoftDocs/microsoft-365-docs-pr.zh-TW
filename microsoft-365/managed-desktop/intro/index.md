@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Micr
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0d144e05091eafa2a6314c65869642b4b7ecd233
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: e8729e8533fd2f01e893d805199027ae166586f1
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43142680"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516806"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什麼是 Microsoft 受管理的電腦？
 
@@ -65,7 +65,7 @@ Microsoft 受管理的桌面會承擔管理已登錄裝置及其所用 Microsoft
 
 
 ## <a name="need-more-details"></a>需要更多詳細資料？
-如需 Microsoft 受管理電腦的值（包括客戶案例）的詳細資訊，請參閱[Microsoft Managed desktop](https://aka.ms/mmd)。 深入瞭解入門的場所是[藍圖](https://aka.ms/AA6jiam)及可供下載的[單頁摘要](https://aka.ms/AA6ob3h)。 您可以在 Microsoft 管理的桌面[博客](https://aka.ms/AA6l2dd)中尋找最新的新聞。
+如需 Microsoft 受管理電腦的值（包括客戶案例）的詳細資訊，請參閱[Microsoft Managed desktop](https://aka.ms/mmd)。 深入瞭解入門的場所是[藍圖](https://aka.ms/AA6jiam)、 [Forrester 總的經濟影響案例研究](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)，以及可下載的[單頁摘要](https://aka.ms/AA6ob3h)。 您可以在 Microsoft 管理的桌面[博客](https://aka.ms/AA6l2dd)中尋找最新的新聞。
 
 如果 Microsoft 受管理的桌面對您的組織似乎是正確的，您可以深入瞭解有關該服務的詳細資訊，以及如何準備您的組織進行註冊，如何開始使用服務，以及在此後進行作業，包括您和您的使用者可以在必要時輕鬆取得協助的方式。 如果您已準備好開始使用，請從與您當地的[帳戶小組](https://pages.email.office.com/contactmmd/)聯繫。
 

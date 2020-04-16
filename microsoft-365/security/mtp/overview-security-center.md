@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 22c602bcc49ce2a81e511d79f4de23f7a60e657f
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+ms.openlocfilehash: d25ecb72ebdd9415c6745910f9e3fb04d6f078dc
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058902"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516908"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全性中心概述
 
@@ -60,6 +60,7 @@ Microsoft 365 安全性中心包含：
 - 透過[事件](incident-queue.md)連接警示上的點
 - 使用[自動調查和修正](mtp-autoir.md)自動修復威脅
 - 使用 [Microsoft 安全分數](microsoft-secure-score.md)評審及改善您的安全性狀況 holistically
+- 在您的網路上查看[裝置](device-profile.md)
 - [報告](monitoring-and-reporting.md)您的身分識別、資料、裝置、應用程式和基礎結構的狀態
 - [主動搜尋](advanced-hunting-overview.md)入侵嘗試的威脅，以及影響電子郵件、資料、裝置和帳戶的破壞活動
 - [瞭解最新的攻擊活動](latest-attack-campaigns.md)和使用威脅分析的技術

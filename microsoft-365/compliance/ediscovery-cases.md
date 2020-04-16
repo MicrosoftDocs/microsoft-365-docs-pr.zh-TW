@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: 使用安全性 & 規範中心，在組織中建立及管理 eDiscovery 案例。 您可以指派成員至案例、將內容位置置於保留狀態、執行與案例相關聯的內容搜尋，以及匯出搜尋結果。 您也可以準備案例資料，以供深入分析 Office 365 Advanced eDiscovery。
-ms.openlocfilehash: 471dd99d6e21afbb4db1a05cd5609cda9e97346c
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f6484fb43b1d117856ba78bb918289b28776b021
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894962"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521519"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>在安全性 & 規範中心管理 eDiscovery 案例
 
@@ -178,7 +178,7 @@ EDiscovery 案例可讓您將成員新增至案例、控制特定案例成員可
   
 6. 選在 [**描述**] 方塊中，新增保留的描述。 
     
-7. 按 [下一步]****。
+7. 按 **[下一步]**。
     
 8. 選擇您要保留的內容位置。 您可以將信箱、網站和公用資料夾放入暫止狀態。
     
@@ -194,7 +194,7 @@ EDiscovery 案例可讓您將成員新增至案例、控制特定案例成員可
     請參閱[詳細資訊](#more-information)一節，以取得 Microsoft 團隊、Yammer 群組和 Office 365 群組暫止的秘訣。 
     
     > [!NOTE]
-    > 在極少的情況下，使用者的使用者主要名稱（UPN）變更時，其 OneDrive 帳戶的 URL 也會變更，以加入新的 UPN。 如果發生這種情況，您必須新增使用者的新 OneDrive URL 並移除舊的 URL 來修改保留。 
+    > 在極少的情況下，使用者的使用者主要名稱（UPN）變更時，其 OneDrive 帳戶的 URL 也會變更，以加入新的 UPN。 如果發生這種情況，您必須新增使用者的新 OneDrive URL 並移除舊的 URL 來修改保留。 如需詳細資訊，請參閱[UPN 變更對 ONEDRIVE URL 的影響](https://docs.microsoft.com/onedrive/upn-changes)。
   
    c. **Exchange 公用資料夾。** 將切換切換![切換控制項](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)移至 [**全部**] 位置，將 Exchange Online 組織中的所有公用資料夾保留。 您無法選擇要保留的特定公用資料夾。 如果您不想要保留公用資料夾，請將切換參數設為 [**無**]。
     
@@ -270,7 +270,7 @@ EDiscovery 案例可讓您將成員新增至案例、控制特定案例成員可
     
     ![位置，保留位置](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-    - **所有位置**-選取此選項，可搜尋組織中的所有內容位置。 當您選取此選項時，您可以選擇搜尋所有的 Exchange 信箱（包括所有 Microsoft 小組、Yammer 群組和 Office 365 群組的信箱），所有的 SharePoint 和 OneDrive 商務網站（包括所有 Microsoft 的網站）。團隊、Yammer 群組和 Office 365 群組）及所有公用資料夾。
+    - **所有位置**-選取此選項，可搜尋組織中的所有內容位置。 當您選取此選項時，您可以選擇搜尋所有的 Exchange 信箱（包括所有 Microsoft 小組、Yammer 群組和 Office 365 群組的信箱），所有的 SharePoint 和 OneDrive 商務網站（包括所有 Microsoft 團隊、Yammer 群組和 Office 365 群組的網站）和所有公用資料夾。
     
     - **保留所有位置。** 選取此選項，可搜尋案例中已設定保留的所有內容位置。 若案例中包含多個保留，當您選取此選項時，就會搜尋所有保留的內容位置。 此外，如果內容位置是放在查詢型保留中，當您執行您在此步驟中建立的內容搜尋時，只會搜尋保留的專案。 例如，如果使用者已設定為以查詢為基礎的案例保留，可保留在特定日期之前已傳送或建立的專案，則只會使用內容搜尋的搜尋準則來搜尋這些專案。 這是透過以**and**運算子連接案例保留查詢和內容搜尋查詢來完成。 如需搜尋案例內容的詳細資訊，請參閱本文最後的[詳細資訊](#more-information)一節。 
     
@@ -367,7 +367,7 @@ EDiscovery 案例可讓您將成員新增至案例、控制特定案例成員可
     匯出與案例相關聯之多個內容搜尋結果的工作流程，與匯出單一搜尋的搜尋結果相同。 如需逐步指示，請參閱[匯出內容搜尋結果](export-search-results.md)。
     
     > [!NOTE]
-    > 當您從多個與案例相關聯的搜尋中匯出搜尋結果時，您也可以選擇啟用重復資料刪除，這樣一來，只會匯出電子郵件的一個副本，即使在在一或多個搜尋中搜尋的信箱。 如需有關重復資料刪除以及如何識別重複專案的詳細資訊，請參閱[eDiscovery 搜尋結果中的重復資料](de-duplication-in-ediscovery-search-results.md)刪除。 
+    > 當您從多個與案例相關聯的搜尋中匯出搜尋結果時，您也可以選擇啟用重復資料刪除，這樣一來，即使在一或多個搜尋中所搜尋的信箱中找到多個相同郵件的實例，也只會匯出一個電子郵件的副本。 如需有關重復資料刪除以及如何識別重複專案的詳細資訊，請參閱[eDiscovery 搜尋結果中的重復資料](de-duplication-in-ediscovery-search-results.md)刪除。 
   
 8. 在您開始匯出後，按一下 [**匯出**] 索引標籤，以顯示該案例的匯出工作清單。 
     

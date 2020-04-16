@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c2798238f0e3cb10edab7f98bf096474a80fa006
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 1441790bfa0c587c4abceb87eb1e4daae6e4d157
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857472"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521477"
 ---
 # <a name="deploy-supported-services"></a>部署支援服務
 
@@ -42,8 +42,8 @@ Microsoft 365 E5，E5 Security，A5，or A5 安全性授權或有效的授權組
 | ------ | ------ |
 | Microsoft Defender ATP | 以強大行為感應器、雲端分析和威脅智慧為基礎的 Endpoint protection 套件 |
 | Office 365 ATP | Office 365 中的應用程式和資料的高級保護，包括電子郵件和其他共同作業工具 |
-| Azure ATP | 抵禦使用相關 Active Directory 信號的高級威脅、受損身分識別和惡意預覽 |
-| Microsoft Cloud App Security | 在您的 Microsoft 和協力廠商雲端服務中識別及 combats cyberthreats |
+| Azure ATP | 使用關聯的 Active Directory 信號，防禦高級威脅、遭到破壞的身分識別，以及惡意內幕用。 |
+| Microsoft Cloud App Security | 在您的 Microsoft 和協力廠商雲端服務之間識別及打擊 cyberthreats |
 
 ## <a name="deployed-services-and-functionality"></a>部署的服務和功能
 當您部署更支援的服務時，Microsoft 威脅防護可提供更佳的可見度、關聯性和修正功能。
@@ -64,7 +64,7 @@ Microsoft 365 E5，E5 Security，A5，or A5 安全性授權或有效的授權組
 | Microsoft Defender ATP | -端點狀態和原始事件<br />-端點偵測和警示，包含防毒程式、EDR、攻擊面降低<br />-在端點上觀察到的檔案及其他實體的資訊 | 端點 |
 | Office 365 ATP | -郵件和信箱狀態和原始事件<br />-電子郵件、附件及連結偵測 | -信箱<br />-Office 365 帳戶 |
 | Azure ATP | -Active Directory 信號，包括驗證事件<br />-身分識別相關的行為偵測 | 身分識別 |
-| Microsoft Cloud App Security | -偵測 unsanctioned cloud app & 服務（陰影 IT）<br />-向雲端應用程式公開資料<br />-關聯 cloud app 的威脅活動 | 雲端應用程式 |
+| Microsoft Cloud App Security | -偵測 unsanctioned cloud apps and service （shadow）<br />-向雲端應用程式公開資料<br />-Cloud app 相關聯的威脅活動 | 雲端應用程式 |
 
 ## <a name="deploy-the-services"></a>部署服務
 部署每個服務時，通常需要為您的租使用者和某些初始設定提供布建。 請參閱下表以瞭解各項服務的部署方式。
