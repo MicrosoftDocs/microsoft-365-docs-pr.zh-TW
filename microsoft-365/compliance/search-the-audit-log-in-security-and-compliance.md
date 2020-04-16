@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 9fb37cba0e7e9774b4de5c559b7bc0636b599776
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: f1fcfd883cb8becea861b6fcebcf59d61b104750
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151438"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521489"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -694,7 +694,7 @@ ms.locfileid: "43151438"
 |已刪除檢閱集搜尋|DeleteWorkingSetSearch|使用者已刪除檢閱集中的搜尋查詢。|
 |已刪除標籤|DeleteTag|使用者已在檢閱集中刪除標籤或標籤群組。|
 |已下載文件|DownloadDocument|使用者已從檢閱集下載文件。|
-|已編輯標籤|DownloadDocument|使用者已變更檢閱集中的標籤。|
+|已編輯標籤|UpdateTag|使用者已變更檢閱集中的標籤。|
 |已從檢閱集匯出文件|ExportJob|使用者已從檢閱集匯出文件。|
 |已修改案例設定|UpdateCaseSettings|使用者已修改案例的設定。 案例設定包括案例資訊、存取權限及控制搜尋和分析行為的設定。|
 |已修改檢閱集搜尋|UpdateWorkingSetSearch|使用者已編輯檢閱集中的搜尋查詢。|
@@ -891,9 +891,9 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 |:-----|:-----|:-----|
 |已將敏感度標籤套用到網站|SensitivityLabelApplied|已將敏感度標籤套用到 SharePoint 或 Teams 網站。|
 |已將敏感度標籤從網站移除|SensitivityLabelRemoved|已將敏感度標籤從 SharePoint 或 Teams 網站移除。|
-|已將敏感度標籤套用到檔案|FileSensitivityLabelApplied|已使用 Office 網頁版將敏感度標籤套用到文件。|
-|已變更套用到檔案的敏感度標籤|FileSensitivityLabelChanged|已使用 Office 網頁版將不同的敏感度標籤套用到文件。|
-|已將敏感度標籤從檔案移除|FileSensitivityLabelRemoved|已使用 Office 網頁版將敏感度標籤從文件移除。|
+|已將敏感度標籤套用到檔案|FileSensitivityLabelApplied|已使用 Office 網頁版或自動標籤原則將敏感度標籤套用到文件。|
+|已變更套用到檔案的敏感度標籤|FileSensitivityLabelChanged|已使用 Office 網頁版或自動標籤原則將不同的敏感度標籤套用到文件。|
+|已將敏感度標籤從檔案移除|FileSensitivityLabelRemoved|已使用 Office 網頁版或自動標籤原則將敏感度標籤從文件移除。|
 ||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 系統管理員稽核記錄

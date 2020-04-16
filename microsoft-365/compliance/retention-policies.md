@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: d06ad19ab247384f800b3b38c561ad8eb33d4066
-ms.sourcegitcommit: 9cea48e1b26e0465c00f8d053080cba1143970c2
+ms.openlocfilehash: df2e89e26de2baab21cb334c1852cb261e1b8c98
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43237640"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521509"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -261,13 +261,17 @@ ms.locfileid: "43237640"
 
 您也可以將保留原則套用至特定使用者、Office 365 群組或網站。若要這麼做，請將該位置的 [狀態]**** 切換為開啟，然後使用連結來包含或排除特定使用者、Office 365 群組或網站。 
   
-不過請注意，包含或排除超過 1,000 個特定位置的保留原則有下列限制：
+不過請注意，當設定包含或排除超過 1,000 個特定位置的保留原則時有下列限制：
   
-- 這類保留原則最多可包含 1,000 個信箱和 100 個網站集合。
-    
+- 保留原則的數目上限：
+    - 1000 個信箱
+    - 1000 個 Office 365 群組
+    - 1000 個 Teams 私人聊天使用者
+    - 100 個網站 (OneDrive 或 SharePoint)
+
 - 一個租用戶最多可包含 10,000 個保留原則。
     
-雖然有這些限制，但請了解您可以套用全組織原則或套用到整個位置的原則來超過這些限制。
+雖然有這些限制，您可以套用全組織原則或套用到整個位置的原則來超過這些限制。
   
 ### <a name="skype-locations"></a>Skype 位置
 
