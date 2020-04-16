@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft 365 合規性文件
-summary: 如果您的組織需要遵守法律或法規的標準時，請從這裡開始若要了解 Microsoft 365 的合規性。
+summary: 如果您的組織需要遵守法律或法規標準，請從這裡開始了解 Microsoft 365 中的合規性。
 metadata:
   title: Microsoft 365 合規性文件
-  description: Microsoft 365 合規性功能的文件
+  description: Microsoft 365 合規性功能文件
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: d6f24a93754c60227e668bb8d0ec42776a519dbc
   ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-TW
   ms.lasthandoff: 02/27/2020
   ms.locfileid: "42322528"
@@ -28,7 +28,7 @@ landingContent:
       url: sensitivity-labels.md
     - text: 資料外洩防護 (DLP)
       url: data-loss-prevention-policies.md
-    - text: 敏感資訊類型
+    - text: 敏感性資訊類型
       url: custom-sensitive-info-types.md
     - text: 電子郵件加密
       url: email-encryption.md
@@ -74,25 +74,25 @@ landingContent:
     links:
     - text: 進階電子文件探索
       url: overview-ediscovery-20.md
-    - text: 核心 eDiscovery
+    - text: 核心電子文件探索
       url: ediscovery-cases.md
     - text: 內容搜尋
       url: search-for-content.md
-    - text: 資料調查 （預覽）
+    - text: 資料調查 (預覽)
       url: overview-data-investigations.md
     - text: 稽核
       url: search-the-audit-log-in-security-and-compliance.md
-- title: 開始使用法規合規性
+- title: 法規遵循入門
   linkLists:
   - linkListType: get-started
     links:
     - text: 合規性分數
       url: compliance-score.md
-    - text: GDPR 合規性的行動計劃
+    - text: GDPR 合規性行動計畫
       url: gdpr-action-plan.md
     - text: GDPR 的資訊保護
       url: office-365-info-protection-for-gdpr-overview.md
-    - text: ISO 合規性的行動計劃
+    - text: ISO 合規性行動計畫
       url: iso-action-plan.md
-    - text: NIST 合規性的行動計劃
+    - text: NIST 合規性行動計畫
       url: nist-action-plan.md
