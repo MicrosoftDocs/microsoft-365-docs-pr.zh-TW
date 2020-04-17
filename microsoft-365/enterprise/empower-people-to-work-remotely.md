@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: 設定基礎結構和安全性，讓您的員工隨時隨地都能遠端工作。
-ms.openlocfilehash: 3932c293ca6be8ba4397b27591acfc3f7d024e1a
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 8bbbe4853805c506ee511ecdef684f407166aca0
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053104"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504120"
 ---
 # <a name="empower-remote-workers"></a>強化遠端工作人員
 
@@ -99,9 +99,9 @@ ms.locfileid: "43053104"
 
 ![遠端工作人員的身分識別元素](../media/empower-people-to-work-remotely/remote-workers-id-phase.png)
  
-[階段 3：Windows 10 企業版](windows10-infrastructure.md)部署：
+針對[階段 3：Windows 10 企業版](windows10-infrastructure.md)：
 
-- 使用 Windows 10 企業版部署新裝置以及將您的 Windows 7 或 Windows 8.1 裝置升級到 Windows 10 企業版的基礎結構
+- 部署基礎結構以使用 Windows 10 企業版部署新裝置，以及將您的 Windows 7 或 Windows 8.1 裝置升級到 Windows 10 企業版
 - 為身分識別、威脅和資訊保護啟用全面的安全性功能
 
 以下是使用 Windows 10 企業版裝置所產生的組態。
@@ -206,6 +206,12 @@ ms.locfileid: "43053104"
 ### <a name="user-adoption-results"></a>使用者採用結果
 
 您的遠端工作人員可以使用其 Windows 10 企業版或其他裝置與 Office 365 專業增強版，在安全的環境中存取和使用共用的 Microsoft 365 企業版雲端服務和資源，並即時開會、建立和共同作業。
+
+## <a name="additional-microsoft-features-to-support-remote-workers"></a>支援遠端工作人員的其他 Microsoft 功能
+
+您可以使用 [Azure 點對站 VPN 連線](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about)，將遠端工作人員連線至在 Azure 虛擬網路中執行的伺服器。
+
+您可以將 [Windows 虛擬桌面](https://docs.microsoft.com/azure/virtual-desktop/overview)用於 Azure 託管的桌面和應用程式虛擬化。
 
 ## <a name="see-also"></a>請參閱
 

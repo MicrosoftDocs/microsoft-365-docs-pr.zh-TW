@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並為信任的 Office 365 位置的流量旁路設定 Web 瀏覽器和邊緣裝置。
-ms.openlocfilehash: 71f62c5e245962f3514c49477e3cdeda17cb6397
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b04e16b249dccf8f2461189b8b47abdd252a75d8
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066682"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504076"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>步驟 4：設定流量旁路
 
@@ -54,8 +54,15 @@ Microsoft 建議您：
 
 請注意，您只對 Microsoft 365 最佳化和允許類別端點的流量略過一般 Proxy 和網路安全性處理。所有其他一般網際網路流量將會透過 Proxy 進行，並受制於您的現有網路安全性處理。
 
+## <a name="optimizing-traffic-for-remote-workers-that-use-vpn-connections"></a>針對使用 VPN 連線的遠端工作人員將流量最佳化
 
-作為過渡期的檢查點，您可以看到此步驟的[允出準則](networking-exit-criteria.md#crit-networking-step4)。
+遠端工作人員通常會使用虛擬私人網路 (VPN) 連線來存取組織內部網路中的資源。 傳統的 VPN 連線會將所有流量 (包括網際網路流量) 路由到組織內部網路。 網際網路流量會路由到組織的邊緣網路和封包處理裝置。 這項流量會受到移動和處理延遲的影響，可能會大幅降低效能並影響遠端工作人員的生產力。 
+
+分割通道是 VPN 連線在網際網路上路由指定流量的功能，而不是透過 VPN 連線將其傳送到內部網路的功能。 若要讓遠端工作人員獲得關鍵 Microsoft 365 服務 (例如 Teams、SharePoint Online 和 Exchange Online) 的最佳效能，請設定分割通道 VPN 連線，直接透過網際網路將流量傳送到最佳化類別的 Office 365 端點。 
+
+如需詳細資訊，請參閱[使用 VPN 分割通道將遠端使用者的 Office 365 連線能力最佳化](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)。
+
+做為過渡期的檢查點，您可以看到此步驟的[允出準則](networking-exit-criteria.md#crit-networking-step4)。
 
 ## <a name="next-step"></a>下一步
 
