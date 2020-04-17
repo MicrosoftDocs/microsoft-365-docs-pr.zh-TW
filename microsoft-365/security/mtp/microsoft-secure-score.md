@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2094549e63be0a8e3c2bbc7997de13475c19bb0c
-ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
+ms.openlocfilehash: f70d2f601dfb697d8affa8bb47148f6e454c5d8e
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43163895"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43541092"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -168,6 +168,8 @@ Microsoft Secure 得分會更新改進動作，以支援[AZURE AD 中的安全�
 - 探索危險且不相容的陰影 IT 應用程式
 - 檢查許可權 & 會封鎖連接至您環境的危險 OAuth 應用程式
 - 設定 SharePoint 線上文件庫的版本設定
+- 刪除/封鎖過去30天內未使用的帳戶
+- 指定少於5個全域系統管理員
 
 #### <a name="removed-not-scored-improvement-actions"></a>移除「未計分」的改進動作
 

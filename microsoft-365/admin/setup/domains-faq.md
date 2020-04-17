@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 若要深入瞭解 Office 365 中的一些問題，請參閱常見問題的答案。
 ms.custom: okr_smb
-ms.openlocfilehash: 5579cacaa789ca91d68616ffb89e37586f6a062f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 5d5b921494ba59b78dec53047a31215a8e755f4c
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212194"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540864"
 ---
 # <a name="domains-faq"></a>網域常見問題集
 
@@ -106,12 +106,24 @@ ms.locfileid: "43212194"
 請注意， *Whois*查詢會將 Office 365 購買的網域註冊機構顯示為通配的 WEST 網域 LLC。 不過，請只針對您的 Office 365 購買的網域，請與 Office 365 取得聯繫。
   
 請遵循下列步驟，取得 Office 365 的程式碼，然後移至另一個網域註冊機構的網站，設定將您的功能變數名稱轉移到該註冊機構。
-  
+
+::: moniker range="o365-worldwide"
+
 1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
-    
-    如果您使用的是 Office 365 德國，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">網域</a>頁面。 
-    
-    如果您使用的是由世紀運作的 Office 365，請移至 [<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">網域</a>] 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統管理中心中，移至 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[網域]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統管理中心中，移至 [**設定** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">授權</a>] 頁面。
+
+::: moniker-end
     
 2. 在 [**網域**] 頁面上，選取您要傳送至其他網域註冊機構的 Office 365 網域，然後選取 [**網域傳輸** > **啟用網域傳輸**]。
        
@@ -136,12 +148,24 @@ ms.locfileid: "43212194"
 2. 在註冊機構網站上尋找您更新名稱伺服器記錄的區域，並更新名稱伺服器以指向您網域的 DNS 主機。 （DNS 主機通常是網域註冊機構。）
     
 3. 遵循連結移至網域安裝精靈：
-    
+
+::: moniker range="o365-worldwide"
+
 4. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
-    
-    如果您使用的是 Office 365 德國，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">網域</a>頁面。 
-    
-    如果您使用的是由世紀運作的 Office 365，請移至 [<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">網域</a>] 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+4. 在系統管理中心中，移至 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[網域]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+4. 在系統管理中心中，移至 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">[網域]</a> 頁面。
+
+::: moniker-end
     
 5. 在 [**網域**] 頁面上，選取您要切換的網域，然後選取 [ **DNS 管理**]。
     
@@ -153,12 +177,24 @@ ms.locfileid: "43212194"
     
 
 ### <a name="change-dns-management-to-office-365"></a>將 DNS 管理變更為 Office 365
-  
-1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
-    
-    如果您使用的是 Office 365 德國，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">網域</a>頁面。 
-    
-    如果您使用的是由世紀運作的 Office 365，請移至 [<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">網域</a>] 頁面。
+
+::: moniker range="o365-worldwide"
+
+1. 在系統管理中心中，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統管理中心中，移至 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[網域]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統管理中心中，移至 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">[網域]</a> 頁面。
+
+::: moniker-end
     
 2. 在 [**網域**] 頁面上，選取您要切換的網域，然後選取 [ **DNS 管理**]。
     
@@ -221,12 +257,24 @@ ms.locfileid: "43212194"
 ## <a name="how-do-i-set-or-change-the-default-domain-in-office-365"></a>如何在 Office 365 中設定或變更預設網域？
 
 您必須至少有一個自訂網域新增至 Office 365，您才能選擇預設網域。
-  
+
+::: moniker range="o365-worldwide"
+
 1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
-    
-    如果您使用的是 Office 365 德國，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">網域</a>頁面。 
-    
-    如果您使用的是由世紀運作的 Office 365，請移至 [<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">網域</a>] 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統管理中心中，移至 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[網域]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統管理中心中，移至 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">[網域]</a> 頁面。
+
+::: moniker-end
     
 2. 在 [**網域**] 頁面上，選取您要設定為新電子郵件地址的預設網域。 
     

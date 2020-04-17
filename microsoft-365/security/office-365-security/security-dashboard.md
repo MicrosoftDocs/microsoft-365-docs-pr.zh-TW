@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 使用新的安全性儀表板來查看 Office 365 威脅防護狀態，並查看並處理安全性警示。
-ms.openlocfilehash: 1ef61f2a5e59db5c45a37bd9f8995b8c70675f30
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: bade9f1a0060fcd08458bd28eb276a0543f5d815
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032837"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537398"
 ---
 # <a name="security-dashboard"></a>安全性儀表板
 
@@ -33,7 +33,7 @@ ms.locfileid: "43032837"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
 
-根據您組織的 Office 365 訂閱所包含的內容，安全性儀表板包含數個小元件，例如威脅管理摘要、威脅防護狀態、全域每週威脅偵測、惡意程式碼等等，如本文所述。下列章節。
+根據您組織的 Office 365 訂閱所包含的內容，安全性儀表板包含數個小元件，例如威脅管理摘要、威脅防護狀態、全球每週威脅偵測、惡意程式碼等等，如下列各節所述。
 
 若要查看安全性儀表板，請在[Office 365 安全性 & 合規性中心](../../compliance/go-to-the-securitycompliance-center.md)，移至 [**威脅管理** \> **儀表板**]。
 
@@ -67,7 +67,7 @@ ms.locfileid: "43032837"
 |---|---|
 |**如果您的訂閱包括 .。。**|**您將會看到這些詳細資料**|
 |EOP，但不是 Office 365 ATP|EOP 所偵測到並封鎖的惡意電子郵件。<br><br> 請參閱[威脅防護狀態報表（EOP）](view-email-security-reports.md#threat-protection-status-report)。|
-|Office 365 ATP|EOP 和 Office 365 ATP 偵測到並封鎖的惡意內容和惡意電子郵件<br><br>反惡意程式碼引擎、[零小時自動清除](zero-hour-auto-purge.md)和 atp 功能（包括[安全連結](atp-safe-links.md)、[安全附件](atp-safe-attachments.md)及[atp 反網路釣魚](atp-anti-phishing.md)）封鎖的獨特電子郵件的匯總計數。<br><br>請參閱[威脅防護狀態報表（ATP）](view-reports-for-atp.md#threat-protection-status-report)。|
+|Office 365 ATP|EOP 和 Office 365 ATP 偵測到並封鎖的惡意內容和惡意電子郵件<br><br>反惡意程式碼引擎、[零小時自動清除](zero-hour-auto-purge.md)和 atp 功能（包括[安全連結](atp-safe-links.md)、[安全附件](atp-safe-attachments.md)及[atp 反網路釣魚](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)）封鎖的獨特電子郵件的匯總計數。<br><br>請參閱[威脅防護狀態報表（ATP）](view-reports-for-atp.md#threat-protection-status-report)。|
 |
 
 若要查看或存取威脅防護狀態構件，您必須具有查看「高級威脅防護」報告的許可權。 若要深入瞭解，請參閱[查看 ATP 報表所需的許可權為何？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。

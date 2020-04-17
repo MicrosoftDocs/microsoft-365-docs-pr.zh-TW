@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 遵循下列 Exchange Online Protection (EOP) 最佳作法建議，以成功完成設定並避免發生常見組態錯誤。
-ms.openlocfilehash: fd0baf81b516c30e2cee3b702e2ca0be560e9f4d
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 9bddb736d41b4fd56790b8bbe9dbb00d07e75553
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033431"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528614"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>設定 EOP 和 Office 365 ATP 的最佳作法
 
@@ -53,7 +53,7 @@ ms.locfileid: "43033431"
 |將 SMTP 驗證提交至信箱|停用|停用||
 |EWS 至信箱的連接|停用|停用||
 |[PowerShell 連線能力](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|停用|停用|可用於信箱使用者或郵件使用者（ [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user) Cmdlet 所傳回的使用者物件）。|
-|盡可能使用哄騙智慧白名單寄件者|是|是||
+|盡可能使用[哄騙智慧](learn-about-spoof-intelligence.md)白名單寄件者|是|是||
 |以目錄為基礎的邊緣封鎖（DBEB）|已啟用|已啟用|網欄位型別 = 權威性|
 |[設定所有系統管理員帳戶的多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|已啟用|已啟用||
 

@@ -2,8 +2,8 @@
 title: 手動將郵件提交給 Microsoft 進行分析
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -16,12 +16,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: '您和您的使用者可以將假的否定和誤報垃圾郵件提交給 Microsoft 進行分析。 '
-ms.openlocfilehash: 13b2e42f749b54e0c2b71fe095c077992560ea8c
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 77807f710743d98dc2e1564f804b6a67add67def
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032801"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43529046"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手動將郵件提交給 Microsoft 進行分析
 
@@ -51,7 +51,7 @@ ms.locfileid: "43032801"
 2. 將垃圾郵件或網路釣魚郵件拖放到新郵件中。 這會將垃圾郵件或網路釣魚郵件儲存為新郵件中的附件。 請勿複製及貼上郵件內容或轉寄郵件（我們需要原始郵件，才能檢查郵件頭）。
 
    > [!NOTE]
-   > <ul><li>您可以在新郵件中附加多封郵件。 請確定所有郵件都是相同類型：網路釣魚詐騙郵件或垃圾郵件。</li><li>將新郵件的內文保留空白。<li></li>使用 .msg （預設 Outlook 格式）或 .eml （預設 Outlook 網頁格式）格式的附加郵件。</li></ul>
+   > <ul><li>您可以在新郵件中附加多封郵件。 請確定所有郵件都是相同類型：網路釣魚詐騙郵件或垃圾郵件。</li><li>將新郵件的內文保留空白。</li><li>使用 .msg （預設 Outlook 格式）或 .eml （預設 Outlook 網頁格式）格式的附加郵件。</li></ul>
 
 3. 當您完成時，按一下 [**傳送**]。
 
@@ -70,7 +70,7 @@ ms.locfileid: "43032801"
 2. 將 misidentified 郵件拖曳並放入新的郵件。 這會將 misidentified 郵件儲存為新郵件中的附件。 請勿複製及貼上郵件內容或轉寄郵件（我們需要原始郵件，才能檢查郵件頭）。
 
    > [!NOTE]
-   > <ul><li>您可以在新郵件中附加多封郵件。 請確定所有郵件都是相同類型：網路釣魚詐騙郵件或垃圾郵件。</li><li>將新郵件的內文保留空白。<li></li>使用 .msg （預設 Outlook 格式）或 .eml （預設 Outlook 網頁格式）格式的附加郵件。</li></ul>
+   > <ul><li>您可以在新郵件中附加多封郵件。 請確定所有郵件都是相同類型：網路釣魚郵件或垃圾郵件。</li><li>將新郵件的內文保留空白。</li><li>使用 .msg （預設 Outlook 格式）或 .eml （預設 Outlook 網頁格式）格式的附加郵件。</li></ul>
 
 3. 當您完成時，按一下 [**傳送**]。
 
@@ -89,7 +89,7 @@ ms.locfileid: "43032801"
 
 - 若要在 Exchange Online 中開啟 EAC，請參閱 exchange [online 中的 exchange admin center](https://docs.microsoft.com/Exchange/exchange-admin-center)。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連線到獨立的 Exchange Online Protection PowerShell，請參閱[connect To Exchange Online protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連接至獨立版 Exchange Online Protection PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
 - 如需 Exchange Online 和獨立 EOP 中郵件流程規則的相關資訊，請參閱下列主題：
 
@@ -126,7 +126,7 @@ ms.locfileid: "43032801"
 
 4. 您可以進行其他選擇來審核規則、測試規則、在特定時間週期內啟動規則，以及其他設定。 建議您先測試規則，再加以強制執行。
 
-5. 完成後，請按一下 **[儲存]**。
+5. 完成後，按一下 [儲存]****。
 
 ### <a name="use-powershell-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>使用 PowerShell 建立郵件流程規則，以接收報告訊息的副本
 

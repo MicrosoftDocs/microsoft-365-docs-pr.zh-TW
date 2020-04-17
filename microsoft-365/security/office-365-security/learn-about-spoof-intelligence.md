@@ -1,11 +1,11 @@
 ---
-title: 深入了解詐騙情報
+title: 設定假冒情報
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/22/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,135 +16,216 @@ search.appverid:
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
-description: 請在 [反垃圾郵件設定] 頁面上的安全性與合規性中心使用詐騙情報，以檢閱欺騙貴組織網域或欺騙外部網域的所有寄件者。 在 Office 365 企業版 E5 中可取得詐騙情報，也可在進階威脅防護和 EExchange Online Protection 中分開取得。
-ms.openlocfilehash: a58f98852f321791615c5f0064b69e8510aadbe5
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+description: 系統管理員可以瞭解如何設定欺騙寄件者，以允許或不允許，以及其他在 Exchange Online 和 Exchange Online Protection （EOP）中的欺騙智慧設定。
+ms.openlocfilehash: 96a1442c893444108aaf6814484bc4e4d55aa731
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081457"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528734"
 ---
-# <a name="learn-more-about-spoof-intelligence"></a>深入了解詐騙情報
+# <a name="configure-spoof-intelligence-in-office-365"></a>在 Office 365 中設定假冒情報
 
-請在 [反垃圾郵件設定]**** 頁面上的安全性與合規性中心使用詐騙情報，以檢閱欺騙貴組織網域或欺騙外部網域的所有寄件者。 在 Office 365 企業版 E5 中可取得詐騙情報，也可在進階威脅防護和 (從 2018 年 10 月起) Exchange Online Protection (EOP) 中分開取得。
+如果您是 Office 365 客戶，其信箱位於 Exchange Online 或獨立 Exchange Online Protection （EOP）客戶，但沒有 Exchange Online 信箱，輸入的電子郵件會在10月2018時自動受到 EOP 的欺騙。 EOP 會使用哄騙情報做為組織對網路釣魚的整體防護的一部分。 如需詳細資訊，請參閱[Office 365 中的反欺詐防護](anti-spoofing-protection.md)。
 
-## <a name="what-types-of-email-spoofing-can-i-review-and-which-should-i-protect-against-with-spoof-intelligence"></a>我可檢閱哪些類型的電子郵件，以及我應使用詐騙情報保護什麼？
+當寄件者欺騙電子郵件地址時，他們似乎是組織網域之一中的使用者，或是將電子郵件傳送至您組織的外部網域中的使用者。 欺騙寄件者以傳送垃圾郵件或網路釣魚電子郵件的攻擊者必須封鎖。 但在某些情況下，合法寄件者是哄騙。 例如：
 
-對於您擁有的網域，您可以檢閱欺騙您網域的所有寄件者，然後選擇允許寄件者繼續或封鎖寄件者。 對於外部網域，您可以允許與傳送基礎結構合併的寄件者網域，但不是個別的傳送電子郵件地址。
+- 欺騙內部網域的合法案例：
 
-當寄件者偽造電子郵件地址時，他們似乎會代表貴組織的某個網域內一或多個使用者帳戶傳送郵件，或代表外部網域將郵件傳送給貴組織。 令人驚訝的是，詐騙竟然有一些正當的商業理由。 例如，在下列情況下，您不會阻止寄件者欺騙您的網域：
+  - 協力廠商寄件者使用您的網域將大宗郵件傳送給您自己的員工，以進行公司投票。
 
-- 有第三方寄件者使用您的網域，將大量郵件傳送給您自己的員工進行公司民調。
+  - 外部公司代表您產生及傳送廣告或產品更新。
 
-- 您聘用了一家外部公司，代表您產生並送出廣告或產品更新。
+  - 助理定期需要在組織內傳送其他人員的電子郵件。
 
-- 經常需要傳送電子郵件給貴組織內另一個人的助理。
+  - 內部應用程式會傳送電子郵件通知。
 
-- 已設定要欺騙其組織的應用程式，以便透過電子郵件傳送內部通知。
+- 欺騙外部網域的合法案例：
 
-外部網域會經常傳送偽造的電子郵件，且其中很多都有正當的理由。 例如，以下是當外部寄件者傳送偽造的電子郵件時的一些合法案例：
+  - 寄件者位於郵寄清單（也稱為討論清單），而郵寄清單會將來自原始寄件者的電子郵件轉送至郵寄清單上的所有參與者。
 
-- 寄件者在討論郵寄清單中，而郵寄清單將來自原始寄件者的電子郵件轉送給郵寄清單上的所有參與者。
+  - 外部公司代表另一家公司傳送電子郵件（例如，自動化的報告或軟體即服務公司）。
 
-- 外部公司代表另一家公司傳送電子郵件 (例如自動報告，或軟體即服務公司)。
+哄騙情報，特別是預設（而且只是）哄騙智慧原則，可協助確保合法寄件者所傳送的欺騙電子郵件不會陷入 Office 365 或外部電子郵件系統的垃圾郵件篩選器中，同時也會保護您的使用者免受垃圾郵件或網路釣魚攻擊。
 
-您需要一種方法來確保合法詐騙者所傳送的郵件不會遭到 Office 365 或外部電子郵件系統中的垃圾郵件篩選器攔截。 Office 365 通常會將這些電子郵件視為垃圾郵件。 如果您是 Office 365 系統管理員，您可以在安全性與合規性中心設定詐騙篩選條件來避免此種情況。 如果您擁有該網域，可以設定 SPF、DKIM 和 DMARC 來允許這些寄件者。
+您可以在 Office 365 Security & 合規性中心或 PowerShell （Office 365 客戶的 Exchange Online PowerShell 中）管理欺騙情報;Exchange Online Protection PowerShell 適用于獨立 EOP 客戶）。
 
-另一方面，必須封鎖惡意詐騙者、欺騙您網域的寄件者，或要傳送垃圾郵件或網路釣魚電子郵件的外部網域。 詐騙也是網路釣魚者取得使用者認證的常見方式。 Office 365 具有內建詐騙防護功能，可協助保護貴組織免於遭受這些惡意電子郵件的寄件者攻擊。 貴組織網域的詐騙防護一律會針對所有的 Office 365 客戶開啟，而外部網域詐騙防護則預設會針對進階威脅防護客戶和 (從 2018 年 10 月起) EOP 客戶開啟。 若要進一步加強這項防護，請告知我們哪些寄件者已獲得授權偽造貴組織的網域並可代表您傳送電子郵件，以及是否允許任何外部網域進行偽造。 未經您授權的寄件者所傳送的任何電子郵件，都會被 Office 365 視為垃圾郵件或詐騙。 請留意欺騙您網域的寄件者，並使用安全性與合規性中心來協助我們改善詐騙情報。
+## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-## <a name="managing-spoof-intelligence-in-the-security-amp-compliance-center"></a>在安全性與合規性中心管理詐騙情報
-<a name="Managespooflist"> </a>
+- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [反垃圾郵件設定]**** 頁面，請使用 <https://protection.office.com/antispam>。 若要直接移至 [**反網路釣魚**] 頁面<https://protection.office.com/antiphishing>，請使用。
 
-Office 365 一律會強制執行您設定的詐騙情報原則。 您無法將該原則停用，但可以選擇您要主動進行管理的程度。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連接至獨立版 Exchange Online Protection PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
-您可以檢閱正在欺騙您的網域或外部網域的寄件者，然後使用安全性與合規性中心來決定是否允許每個寄件者這麼做。 對於您的網域或外部網域中寄件者所偽造的每個偽裝使用者帳戶，您可以檢視下表中的資訊。
+- 您必須已獲指派權限，才能執行這些程序。 若要修改欺騙性智慧原則或啟用或停用欺騙智慧，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要取得欺騙智慧原則的唯讀存取權，您必須是「**安全性讀者**」角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱 [Office 365 安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
-|**參數**|**描述**|
-|:-----|:-----|
-|寄件者  <br/> |也稱為真實寄件者。 這通常是詐騙電子郵件源自的網域。 Office 365 會針對偽裝貴組織的傳送 IP 位址，判斷其指標 (PTR) DNS 記錄的網域。 如果找不到任何網域，報告會改為顯示寄件者的 IP 位址。  <br/> |
-|偽裝的使用者  <br/> |遭到寄件者偽造的使用者帳戶。  <br/> 僅限 [內部]**** 索引標籤。 此欄位包含單一電子郵件地址，或者如果寄件者正在偽造多個使用者帳戶，則包含**不只一個**電子郵件地址。  <br/> 僅限 [外部]**** 索引標籤。 外部網域只包含傳送網域，但不包含完整的電子郵件地址。  <br/> **秘訣！適用於系統管理員。** 偽裝的使用者是寄件者 (5322.From) 位址，也就是由郵件用戶端顯示為 [寄件者] 位址的位址。 這有時稱為 header.from 地址。 SPF 不會檢查此位址的有效性。           |
-|郵件數目  <br/> |在過去 30 天內，由寄件者代表所識別偽裝寄件者傳送給貴組織的郵件數目。  <br/> |
-|使用者抱怨數  <br/> |在過去 30 天內，由使用者針對此寄件者所提出的抱怨。 抱怨的形式通常為對 Microsoft 的垃圾郵件提交。  <br/> |
-|驗證結果  <br/> |如果寄件者通過 Exchange Online Protection (EOP) 寄件者驗證檢查 (例如 SPF 或 DKIM)，此值為 [已通過]****，如果寄件者未通過 EOP 寄件者驗證檢查，此值為 [未通過]****，或者如果這些檢查的結果不明，則此值為 [未知]****。  <br/> |
-|決定者  <br/> |顯示 Office 365 系統管理員或詐騙情報原則是否決定允許寄件者偽裝使用者。  <br/> |
-|上次查看  <br/> |此寄件者代表此偽裝的使用者接收郵件的最後日期。  <br/> |
-|是否已允許偽裝?  <br/> | 顯示是否允許此寄件者代表偽裝的使用者傳送電子郵件。 可能的值包括：  <br/> **是**：將允許來自此詐騙寄件者的所有偽造地址欺騙您的組織。  <br/> **否**：不允許來自此詐騙寄件者的偽造地址欺騙您的組織。 而來自此寄件者的郵件將會被 Office 365 標示為垃圾郵件。  <br/> **部分使用者**：如果寄件者正在偽裝多個使用者，則會允許此寄件者的部分偽造地址欺騙貴組織，而其餘的地址將會被標示為垃圾郵件。 使用 [詳細]**** 索引標籤來查看特定地址。  <br/> |
-|詐騙類型  <br/> |如果網域是貴組織的其中一個佈建網域，則此值為 [內部]****，否則為 [外部]****。  <br/> |
+- 如需適用于哄騙情報的建議設定，請[EOP 預設的反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。
 
- **使用安全性與合規性中心來管理欺騙您網域的寄件者**
+## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>使用安全性 & 規範中心管理欺騙寄件者
 
-1. 前往[安全性與合規性中心](https://protection.office.com)。
+> [!NOTE]
+> 如果您有 Office 365 企業版 E5 訂閱或是個別購買及高級威脅防護（ATP）附加元件，您也可以管理透過[欺騙智慧洞察力](walkthrough-spoof-intelligence-insight.md)欺騙您網域的寄件者。
 
-2. 使用您的公司或學校帳戶登入 Office 365。 您的帳戶必須具備您的 Office 365 組織中的系統管理員認證。
+1. 在安全性與合規性中心，移至 [威脅管理]**** \> [原則]**** \> [反垃圾郵件]****。
 
-3. 在安全性與合規性中心，展開 [威脅管理]**** \> [原則]**** \> [反垃圾郵件]****。
+2. 在 [**反垃圾郵件設定**] 頁面上![，按一下](../../media/scc-expand-icon.png) [展開圖示] 以展開 [**欺騙智慧原則**]。
 
-    ![顯示存取反垃圾郵件頁面的螢幕擷取畫面](../../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
+   ![選取哄騙智慧原則](../../media/anti-spam-settings-spoof-intelligence-policy.png)
 
-4. 在右窗格的 [**反垃圾郵件設定**] 頁面上，向下滾動並展開 [**哄騙智慧原則**]。
+3. 進行下列其中一項選擇：
 
-    ![惡搞](https://user-images.githubusercontent.com/41186174/71801032-6228f100-3062-11ea-8461-682b910418c2.png)
+   - **審閱新寄件者**
+   - **顯示已經過審閱的寄件者**
 
-5. 若要檢視欺騙您網域的寄件者清單，請選擇 [檢閱新的寄件者]****，然後選取 [您的網域]**** 索引標籤。
+4. 在 [**決定是否允許這些寄件者哄騙您**顯示的使用者] 浮出項目時，選取下列其中一個索引標籤：
 
-    如果您已經檢閱寄件者，而且想要變更先前的某些選擇，您可改為選擇 [顯示我已經檢閱的寄件者]****。 在任一種情況下，下列面板都會出現。
+   - **您的網域**：寄件者哄騙您內部網域中的使用者。
+   - **外部網域**：寄件者哄騙外部網域中的使用者。
 
-    ![顯示存取偽裝的寄件者索引標籤的螢幕擷取畫面](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
+5. 按一下![[](../../media/scc-expand-icon.png) **允許欺騙？** ] 欄中的展開圖示。 選擇 **[是]** 允許冒牌寄件者，或選擇 [**否**] 將郵件標示為欺騙。 此動作是由預設的反網路釣魚原則或自訂 ATP 反網路釣魚原則所控制（預設值為 [**將郵件移至垃圾郵件資料夾**]）。 如需詳細資訊，請參閱[反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。
 
-    每個偽裝的使用者都會顯示在個別的列中，以便您選擇要允許或阻止寄件者個別地偽裝每位使用者。
+   ![顯示欺騙寄件者飛出的螢幕擷取畫面，以及是否允許寄件者哄騙](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
-    若要將寄件者新增至使用者的允許清單，請從 [是否已允許偽裝]**** 欄中選取 [是]****。 若要將寄件者新增至使用者的封鎖清單，請選擇 [否]****。
+   下列清單說明您所看到的欄和值：
 
-    若要設定不屬於您網域的原則，請選取 [外部網域]**** 索引標籤。將寄件者的 [是否已允許偽裝]**** 欄變更為 [是]****，可允許該寄件者將未經驗證的電子郵件傳送到貴組織。 或者，如果您認為 Office 365 在允許寄件者傳送偽造的電子郵件時犯了錯誤，請將 [是否已允許偽裝]**** 欄變更為 [否]****。
+   - **欺騙使用者**：已欺騙的使用者帳戶。 這是電子郵件客戶程式中所顯示寄件者位址（ `5322.From`也稱為位址）中的郵件寄件者。 SPF 不會檢查此位址的有效性。
 
-    ![顯示是否允許寄件者偽裝的螢幕擷取畫面](../../media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
+     - 在 [**您的網域**] 索引標籤上，此值會包含單一電子郵件地址，或如果來源電子郵件伺服器是哄騙多個使用者帳戶，它會包含**一個以上**的使用者帳戶。
 
-6. 選擇 [儲存]**** 以儲存所有變更。
+     - 在 [**外部網域**] 索引標籤上，此值包含欺騙使用者的網域，而非完整的電子郵件地址。
 
-如果您有 Office 365 企業版 E5 訂閱，或是個別購買了高級威脅防護做為附加元件，您也可以透過[欺騙性智慧洞察力](walkthrough-spoof-intelligence-insight.md)來管理欺騙您網域的寄件者。
+   - 傳送**基礎結構**：在來源電子郵件伺服器的 IP 位址的反向 DNS 查找（PTR 記錄）中找到的網域，如果來源沒有 PTR 記錄，則為 IP 位址。
 
-## <a name="configuring-the-anti-spoofing-policy"></a>設定反詐騙原則
-<a name="Managespooflist"> </a>
+     如需郵件來源和郵件寄件者的詳細資訊，請參閱[電子郵件標準的概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
 
-除了允許或封鎖特定寄件者將偽造的電子郵件傳送到貴組織之外，您也可以設定篩選條件的嚴格程度，以及在發現詐騙郵件時所要採取的動作。
+   - **郵件**數目：在過去30天內，來自組織的傳送基礎結構中包含指定的欺騙寄件者或寄件者的郵件數目。
 
-反詐騙防護會套用到來自您的 Office 365 組織外部網域寄件者的電子郵件。 您可以將原則套用到其信箱獲得 Office 365 企業版 E5、進階威脅防護及 (從 2018 年 10 月起) EOP 客戶授權的收件者。 您可管理反詐騙原則及其他反網路釣魚設定。 如需反網路釣魚設定的詳細資訊，請參閱[設定 Office 365 ATP 防網路釣魚功能及防網路釣魚原則](set-up-anti-phishing-policies.md)。
+   - **使用者抱怨**：過去30天內，使用者對此寄件者所進行的投訴。 抱怨的形式通常為對 Microsoft 的垃圾郵件提交。
 
-Office 365 包括一律會執行的預設反詐騙防護。 此預設防護不會顯示於安全性與合規性中心，也無法透過 Windows PowerShell Cmdlet 擷取。 您無法修改預設反詐騙防護。 然而，您可設定 Office 365 在您所建立的每個反網路釣魚原則中強制執行反欺騙防護的嚴格程序。
+   - **驗證結果**：下列其中一個值：
 
-即使反詐騙原則顯示在安全性與合規性中心的反網路釣魚原則底下，也不會從反垃圾郵件設定之下的現有網路釣魚設定繼承其預設行為。 如果在 [反垃圾郵件]**** \> [網路釣魚]**** 之下有要針對反詐騙複寫的設定，您就需要建立反網路釣魚策略，然後編輯反網路釣魚原則的詐騙部分來反映您的詐騙設定 (如下一節所述)，而不是接受在背景中執行的預設設定。
+      - **傳遞**：寄件者傳送寄件者電子郵件驗證檢查（SPF 或 DKIM）。
+      - **失敗**：寄件者失敗 EOP 寄件者驗證檢查。
+      - **未知**：這些檢查的結果是未知的。
 
- **使用安全性與合規性中心來設定反網路釣魚原則內的反詐騙防護**
+   - **決策設定依據**：顯示誰決定了傳送基礎結構是否允許哄騙使用者：
 
-1. 前往[安全性與合規性中心](https://protection.office.com)。
+       - **欺騙智慧原則**（自動）
+       - 系統**管理員**（手動）
 
-2. 使用您的公司或學校帳戶登入 Office 365。 您的帳戶必須具備您的 Office 365 組織中的系統管理員認證。
+   - **上次看到**：從包含欺騙使用者之傳送基礎結構接收郵件的最後日期。
 
-3. 在安全性與合規性中心，展開 [威脅管理]**** \> [原則]**** \> [反網路釣魚]****。
+   - 是否**允許哄騙？**：您在這裡看到的值包括：
 
-4. 在右側窗格的 [反網路釣魚]**** 頁面上，選取您要設定的反網路釣魚原則。
+     - **Yes**：允許虛假使用者和傳送基礎結構組合的郵件，也不會被視為欺騙電子郵件。
 
-5. 在出現的頁面上，於 [詐騙]**** 列中，選擇 [編輯]****。
+     - **No**：來自欺騙使用者和傳送基礎結構的郵件會標示為欺騙。 此動作是由預設的反網路釣魚原則或自訂 ATP 反網路釣魚原則所控制（預設值為 [**將郵件移至垃圾郵件資料夾**]）。 如需詳細資訊，請參閱下一節。
 
-6. 接下來，設定在偵測到跨網域詐騙的郵件時所要採取的動作。 預設行為是將郵件移至收件者的垃圾郵件資料夾。 另一個選項是將郵件傳送至隔離區。 如需管理傳送至隔離區的郵件的詳細資訊，請參閱[在 Office 365 中隔離電子郵件](quarantine-email-messages.md)。
+     - **部分使用者**（僅限**您的網域**索引標籤）：傳送基礎結構是哄騙多個使用者，而某些欺騙使用者則不允許，有些則是。 使用 [詳細]**** 索引標籤來查看特定地址。
 
-    ![顯示反詐騙原則編輯選項的螢幕擷取畫面](../../media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
+6. 在頁面底部，按一下 [**儲存**]。
 
-7. 進行選擇，然後選擇 [儲存]****。
+## <a name="use-powershell-to-manage-spoofed-senders"></a>使用 PowerShell 管理欺騙寄件者
 
-## <a name="other-ways-to-manage-spoofing-and-phishing-with-office-365"></a>使用 Office 365 管理詐騙和網路釣魚的其他方法
-<a name="Managespooflist"> </a>
+若要在哄騙情報中查看允許和封鎖的寄件者，請使用下列語法：
+
+```powershell
+Get-PhishFilterPolicy [-AllowedToSpoof <Yes | No | Partial>] [-ConfidenceLevel <Low | High>] [-DecisionBy <Admin | SpoofProtection>] [-Detailed] [-SpoofType <Internal | External>]
+```
+
+此範例會傳回所有允許哄騙您網域中使用者之寄件者的詳細資訊。
+
+```powershell
+Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
+```
+
+如需詳細的語法及參數資訊，請參閱[Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-phishfilterpolicy)。
+
+若要在欺騙智慧中設定允許和封鎖的寄件者，請遵循下列步驟：
+
+1. 將**Get-PhishFilterPolicy** Cmdlet 的輸出寫入 CSV 檔案，以捕獲目前偵測到之寄件者的清單：
+
+   ```powershell
+   Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
+   ```
+
+2. 編輯 CSV 檔案，以新增或修改**SpoofedUser** （電子郵件地址）和**AllowedToSpoof** （是或否）值。 儲存檔案，閱讀檔案，並將內容儲存為名為`$UpdateSpoofedSenders`的變數：
+
+   ```powershell
+   $UpdateSpoofedSenders = Get-Content -Raw "C:\My Documents\Spoofed Senders.csv"
+   ```
+
+3. 使用`$UpdateSpoofedSenders`變數來設定欺騙智慧原則：
+
+   ```powershell
+   Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
+   ```
+
+如需詳細的語法及參數資訊，請參閱[Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy)。
+
+## <a name="use-the-security--compliance-center-to-configure-spoof-intelligence"></a>使用安全性 & 規範中心設定假冒情報
+
+欺騙性情報的設定選項會在[反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)中說明。
+
+您可用的選項取決於您的訂閱：
+
+- 沒有 Exchange Online 信箱的獨立 EOP 組織無法設定欺騙智慧設定。
+
+- 使用 Exchange Online 信箱的 Office 365 組織，可在預設（且唯一）的反網路釣魚原則中設定欺騙智慧設定。 如需相關指示，請參閱[Configure the DEFAULT EOP in the default 反網路釣魚 policy in](configure-anti-phishing-policies-eop.md)。
+
+- 具有 ATP 的 Office 365 組織可以在預設的 ATP 反網路釣魚原則中設定欺騙智慧設定，也可以在自訂 ATP 反網路釣魚原則中設定。 如需相關指示，請參閱[CONFIGURE ATP 反網路釣魚原則 In Office 365](configure-atp-anti-phishing-policies.md)。
+
+## <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
+
+若要確認您已設定欺騙智慧與允許和不允許哄騙的寄件者，以及您已設定欺騙性智慧設定，請使用下列任何一項步驟：
+
+- 在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **反垃圾郵件** \>展開**欺騙性智慧原則** \>選取 [顯示我\> **已複查的寄件者**] 選取 [**您的網域**] 或 [**外部網域**] 索引標籤，然後確認寄件者的 [**允許欺騙？** ] 值。
+
+- 在 PowerShell 中，執行下列命令，以查看允許和不允許哄騙的寄件者：
+
+  ```powershell
+  Get-PhishFilter -AllowedToSpoof Yes -SpoofType Internal
+  Get-PhishFilter -AllowedToSpoof No -SpoofType Internal
+  Get-PhishFilter -AllowedToSpoof Yes -SpoofType External
+  Get-PhishFilter -AllowedToSpoof No -SpoofType External
+  ```
+
+- 在 PowerShell 中，執行下列命令，將所有冒牌寄件者的清單匯出至 CSV 檔案：
+
+   ```powershell
+   Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
+   ```
+
+- 在包含 Exchange Online 信箱的 Office 365 組織中，執行下列其中一個步驟：
+
+  - 在 [安全性 & 規範中心] 中，移至**威脅管理** \> **原則** \> **反網路釣魚** \>按一下 [**預設原則**]，然後查看快顯視窗中的詳細資料。
+
+  - 在 Exchange Online PowerShell 中，執行下列命令並確認設定：
+
+    ```PowerShell
+    Get-AntiPhishPolicy -Identity "Office365 AntiPhish Default"
+    ```
+
+- 在 Office 365 ATP 組織中，執行下列其中一個步驟：
+
+  - 在 [安全性 & 規範中心] 中，移至 [**威脅管理** \> **原則** \> **ATP 反網路釣魚**]，並執行下列其中一個步驟：
+
+    - 從清單中選取原則。 在出現的快顯視窗中，確認 [**哄騙**] 區段中的值。
+    - 按一下 [**預設原則**]。 在出現的快顯視窗中，確認 [**哄騙**] 區段中的值。
+
+  - 在 Exchange Online PowerShell 中， \<以\> Office365 AntiPhish 預設值取代名稱] 的預設值，或自訂 ATP 反網路釣魚原則的名稱，然後執行下列命令並確認設定：
+
+    ```PowerShell
+    Get-AntiPhishPolicy -Identity "<Name>"
+    ```
+
+## <a name="other-ways-to-manage-spoofing-and-phishing"></a>其他管理哄騙和網路釣魚的方式
 
 勤於進行詐騙和網路釣魚防護。 以下是檢查欺騙您網域的寄件者並協助防止他們破壞貴組織的相關方式：
 
-- 在例行工作中檢查 Exchange Online Protection 詐騙郵件報告。 您通常可使用此報告來檢視及協助管理偽裝的寄件者。 如需相關資訊，請參閱[使用 Office 365 的郵件保護報告以檢視有關惡意程式碼、垃圾郵件和規則偵測的資訊](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)中的 [詐騙郵件報告]****。
-
-如需更多進階 Office 365 系統管理，您也可以完成下列檢查：
+- 檢查**冒名郵件報告**。 您通常可使用此報告來檢視及協助管理偽裝的寄件者。 如需詳細資訊，請參閱[欺騙偵測報告](view-email-security-reports.md#spoof-detections-report)。
 
 - 檢閱寄件者原則架構 (SPF) 設定。 如需 SPF 的快速簡介並快速設定，請參閱[在 Office 365 中設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 如需更深入了解 Office 365 如何使用 SPF 或是進行疑難排解或非標準的部署 (例如混合式部署)，請先參閱 [Office 365 如何使用寄件者原則架構 (SPF) 防止詐騙](how-office-365-uses-spf-to-prevent-spoofing.md)。
 
-- 檢閱您的網域金鑰識別郵件 (DKIM) 設定。 除了 SPF 和 DMARC 以外，您也應使用 DKIM，以避免詐騙程式傳送看似來自您的網域的郵件。 DKIM 可讓您在郵件標頭中將數位簽章新增到電子郵件。 如需相關資訊，請參閱[在 Office 365 中使用 DKIM 驗證從自訂網域傳送的外寄電子郵件](use-dkim-to-validate-outbound-email.md)。
+- 檢閱您的網域金鑰識別郵件 (DKIM) 設定。 除了 SPF 和 DMARC 之外，您還應該使用 DKIM，以協助防止攻擊者傳送看似來自您網域的郵件。 DKIM 可讓您在郵件標頭中將數位簽章新增到電子郵件。 如需相關資訊，請參閱[在 Office 365 中使用 DKIM 驗證從自訂網域傳送的外寄電子郵件](use-dkim-to-validate-outbound-email.md)。
 
 - 檢閱以網域為基礎的訊息認證、報告與一致性 (DMARC) 設定。 搭配 SPF 和 DKIM 來實作 DMARC 可提供額外保護，防範詐騙和網路釣魚電子郵件。 DMARC 可協助接收方郵件系統決定如何處理未通過 SPF 或 DKIM 檢查的您網域傳送的郵件。 如需相關資訊，請參閱[在 Office 365 中使用 DMARC 來驗證電子郵件](use-dmarc-to-validate-email.md)。
-
-- 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中使用 [Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-phishfilterpolicy) Cmdlet，收集偽裝的寄件者詳細資料、產生允許和封鎖清單，以及協助您判斷如何產生更完整的 SPF、DKIM 和 DMARC DNS 記錄，而不會讓合法的電子郵件遭到外部垃圾郵件篩選器攔截。 如需詳細資訊，請參閱 [Office 365 中反詐騙防護的運作方式](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/)。

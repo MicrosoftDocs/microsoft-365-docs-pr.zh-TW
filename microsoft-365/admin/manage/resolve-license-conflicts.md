@@ -20,12 +20,12 @@ search.appverid:
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
 description: 瞭解如何解決與商務用 Office 365 訂閱的授權衝突。
-ms.openlocfilehash: 9dbd483b01566039cb227cd3d2f086c3f6e34be5
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: de0a6c988b9ca2ae033a24c012b7f36bc1db58a3
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212290"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540912"
 ---
 # <a name="resolve-license-conflicts-in-office-365-for-business"></a>解決商務用 Office 365 中的授權衝突
 
@@ -33,11 +33,24 @@ ms.locfileid: "43212290"
   
 ## <a name="how-do-i-view-license-conflicts"></a>如何查看授權衝突？
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。
+::: moniker range="o365-worldwide"
 
-    如果您使用的是 Office 365 德國，請移至 [<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">授權</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。
 
-    如果您使用的是由世紀運作的 Office 365，請移至 [<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">授權</a>] 頁面。
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">授權</a>] 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">授權</a>] 頁面。
+
+::: moniker-end
+
 
 2. 檢查 [**狀態**] 欄，以取得與衝突相關的資訊。 如果發生衝突，您會看到一則警告訊息，指出一或多個使用者需要有效的授權。
 

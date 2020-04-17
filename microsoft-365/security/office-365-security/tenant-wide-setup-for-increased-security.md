@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: 逐步引導您完成會影響 Office 365 環境安全性的全租用戶建議設定。 您的安全性需求可能會高於或低於建議設定， 請使用這些建議做為調整的起始點。
-ms.openlocfilehash: 737a58c21811bf4d798c18f000c0e477b5667cef
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 56b2dad90b15c1d084edaa4477301e8ac4d4442d
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081253"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43529010"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>設定 Office 365 租用戶以提高安全性
 
@@ -39,7 +39,7 @@ Microsoft 365 安全性中心包含的功能能夠保護您的環境。 同時�
 ||||
 |---|---|---|
 |**適用範圍**|**包含預設原則**|**建議**|
-|**防網路釣魚**|是| 如果您擁有自訂網域，請建立防網路釣魚原則來保護您最有價值之使用者 (例如 CEO) 的電子郵件帳戶，也保護您的網域。 請檢閱[設定防網路釣魚原則](set-up-anti-phishing-policies.md)，並以範例為指南來建立原則：「範例：保護使用者與網域的防網路釣魚原則。」|
+|**防網路釣魚**|是|如果您有自訂網域，請設定預設的反網路釣魚原則，以保護您最有價值之使用者的電子郵件帳戶，例如 CEO，並保護您的網域。 [在 office 365 中查看反網路釣魚原則](set-up-anti-phishing-policies.md)，並參閱[設定 EOP 中的預設反網路釣魚原則](configure-anti-phishing-policies-eop.md)，或[設定 Office 365 中的 ATP 反網路釣魚](configure-atp-anti-phishing-policies.md)原則。|
 |**反惡意程式碼引擎**|是| 編輯預設原則： <br/> &ensp;&ensp;* 常見附件類型篩選—選取 [開啟] <br/><br/> 您也可以建立自訂的惡意程式碼篩選原則，並將其套用至貴組織中的指定使用者、群組或網域。 <br/><br/> 詳細資訊： <br/> &ensp;&ensp;* [反惡意程式碼保護](anti-malware-protection.md) <br/> &ensp;&ensp;* [設定反惡意程式碼原則](configure-anti-malware-policies.md)|
 |**ATP 安全附件**|否| 在 [安全附件] 的主要頁面上，透過核取方塊來保護 SharePoint、OneDrive 和 Microsoft 小組中的檔案： <br/> &ensp;&ensp;* 開啟 SharePoint、OneDrive 和 Microsoft 小組的 ATP <br/><br/> 使用這些設定來新增新的安全附件原則： <br/> &ensp;&ensp;* 封鎖-封鎖目前和未來的電子郵件和附件偵測到的惡意程式碼（選擇此選項） <br/> &ensp;&ensp;* 啟用重新導向-（請選取此方塊並輸入電子郵件地址，例如系統管理員或隔離帳戶） <br/> &ensp;&ensp;* 如果惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍（核取方塊）。 <br/> &ensp;&ensp;* 適用于-收件者網域是（選取您的網域） <br/><br/>詳細資訊：[設定 Office 365 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)|
 |**ATP 安全連結**|是| 新增此設定至整個組織的預設原則： <br/> &ensp;&ensp;* 使用下列的安全連結： Office 365 ProPlus，Office for iOS 和 Android （選取此選項）。 <br/><br/>特定收件者的建議原則： <br/> &ensp;&ensp;URLs * 當使用者按一下連結時，將會重新寫入並檢查已知惡意連結的清單（選取此選項）。 <br/> &ensp;&ensp;* 使用安全附件掃描可下載的內容（核取方塊）。 <br/> &ensp;&ensp;* 適用于-收件者網域是（選取您的網域）。 <br/><br/> 詳細資訊： [Office 365 ATP 安全連結](atp-safe-links.md)。|

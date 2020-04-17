@@ -1,11 +1,10 @@
 ---
-title: Office 365 中的反垃圾郵件保護常見問題
+title: 反垃圾郵件保護常見問題集
 f1.keywords:
 - NOCSH
-ms.author: krowley
-author: kccross
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/9/2016
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,15 +14,15 @@ search.appverid:
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
-description: 本主題提供有關反垃圾郵件保護的常見問題與解答。這些解答適用於 Microsoft Exchange Online 及 Exchange Online Protection (EOP) 客戶。
-ms.openlocfilehash: 47970cd2f67873b3c8b1fbfa70b7e1754fc8359c
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: 在 Exchange Online 和獨立 Exchange Online Protection （EOP）中，系統管理員有關反垃圾郵件保護的常見問題與解答。
+ms.openlocfilehash: 30ab9ceb7d2e9e4a264311ff43343485a57d622c
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033491"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528310"
 ---
-# <a name="anti-spam-protection-in-office-365-faq"></a>Office 365 中的反垃圾郵件保護常見問題
+# <a name="anti-spam-protection-faq-in-office-365"></a>Office 365 中的反垃圾郵件保護常見問題
 
 本主題針對沒有 Exchange Online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）客戶中的信箱，提供 Office 365 客戶的反垃圾郵件保護的常見問題與解答。
 
@@ -31,14 +30,16 @@ ms.locfileid: "43033491"
 
 如需有關反惡意程式碼保護的問題和解答，請參閱[反惡意程式碼保護常見問題](anti-malware-protection-faq-eop.md)。
 
+如需反欺騙保護的相關問題和解答，請參閱[反欺騙保護常見問題](anti-spoofing-protection-faq.md)。
+
 ## <a name="q-by-default-what-happens-to-a-spam-detected-message"></a>問：我收到的電子郵件有我不熟悉的附件。 依預設，偵測到垃圾郵件會發生什麼情況？
 
-答： 若**為輸入郵件：** 大部分的垃圾郵件是透過連線篩選刪除，這是根據來源電子郵件伺服器的 IP 位址。 反垃圾郵件原則（也稱為垃圾郵件篩選原則或內容篩選原則）會以垃圾郵件、大量或網路釣魚形式檢查郵件，並將郵件分類。 依預設，歸類為垃圾郵件或大量的郵件會傳遞至收件者的 [垃圾郵件] 資料夾，並會隔離分類為網路釣魚的郵件。 您可以修改預設反垃圾郵件原則（適用于所有收件者），也可以以更嚴格的使用者群組設定來建立自訂反垃圾郵件原則（例如，您可以隔離傳送給主管的垃圾郵件）。 如需詳細資訊，請參閱[設定 Office 365 中的反垃圾郵件原則](configure-your-spam-filter-policies.md)和[建議的反垃圾郵件原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
+答： 若**為輸入郵件**：大多數垃圾郵件會透過連線篩選來刪除，該篩選是根據來源電子郵件伺服器的 IP 位址。 反垃圾郵件原則（也稱為垃圾郵件篩選原則或內容篩選原則）會以垃圾郵件、大量或網路釣魚形式檢查郵件，並將郵件分類。 依預設，歸類為垃圾郵件或大量的郵件會傳遞至收件者的 [垃圾郵件] 資料夾，並會隔離分類為網路釣魚的郵件。 您可以修改預設反垃圾郵件原則（適用于所有收件者），也可以以更嚴格的使用者群組設定來建立自訂反垃圾郵件原則（例如，您可以隔離傳送給主管的垃圾郵件）。 如需詳細資訊，請參閱[設定 Office 365 中的反垃圾郵件原則](configure-your-spam-filter-policies.md)和[建議的反垃圾郵件原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
 
 > [!IMPORTANT]
-> 在 EOP 保護內部部署信箱的混合部署中，您必須在內部部署 Exchange 組織中設定兩個 Exchange 郵件流程規則（也稱為傳輸規則），以偵測新增至郵件的 EOP 垃圾郵件篩選標頭。 如需詳細資訊，請參閱[Configure 獨立 EOP 以將垃圾郵件傳送至混合式環境中的 [垃圾郵件] 資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+> 在 EOP 保護內部部署信箱的混合部署中，您必須在內部部署 Exchange 組織中設定兩個 Exchange 郵件流程規則（也稱為傳輸規則），以偵測新增至郵件的 EOP 垃圾郵件篩選標頭。 如需詳細資訊，請參閱[設定獨立版 EOP 將垃圾郵件傳送到混合式環境中的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
 
- **輸出郵件：** 郵件是透過[高風險傳遞集](high-risk-delivery-pool-for-outbound-messages.md)區路由傳送，或是傳回給寄件者的未傳遞回報（也稱為 NDR 或退回的郵件）。 如需輸出垃圾郵件保護的詳細資訊，請參閱[Office 365 中的輸出垃圾郵件控制](outbound-spam-controls.md)。
+ **對於輸出郵件**：郵件是透過[高風險傳遞集](high-risk-delivery-pool-for-outbound-messages.md)區路由傳送，或是傳回給寄件者的未傳遞回報（也稱為 NDR 或退回的郵件）。 如需輸出垃圾郵件保護的詳細資訊，請參閱[Office 365 中的輸出垃圾郵件控制](outbound-spam-controls.md)。
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>問：我收到的電子郵件有我不熟悉的附件。 哪一天是垃圾郵件變種，服務是如何處理的？
 
@@ -56,7 +57,7 @@ ms.locfileid: "43033491"
 
 [設定反原則](configure-the-connection-filter-policy.md)
 
-[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)
+[設定 Office 365 的反垃圾郵件原則](configure-your-spam-filter-policies.md)
 
 [設定輸出垃圾郵件原則](configure-the-outbound-spam-policy.md)
 

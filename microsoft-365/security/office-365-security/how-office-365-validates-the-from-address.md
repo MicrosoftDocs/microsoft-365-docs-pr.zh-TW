@@ -1,11 +1,11 @@
 ---
-title: Office 365 如何驗證寄地址以防止網路釣魚
+title: Office 365 如何驗證寄件者位址，以防止網路釣魚
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/11/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,217 +16,115 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: 若要協助防止詐騙，Office 365 和 Outlook.com 現在需要 RFC 規範從： 地址。
-ms.openlocfilehash: 6459faa22f29017568747b84bbd2935aad6763d1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Lear Office 365 中輸入郵件的電子郵件地址需求。 從2017年11月開始，服務現在需要 RFC 相容性位址，以協助防止欺騙。
+ms.openlocfilehash: 4df073cfff3c36f60a013237d95548cb48fa7b5f
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599180"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528998"
 ---
-# <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 如何驗證寄地址以防止網路釣魚
+# <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 如何驗證寄件者位址，以防止網路釣魚
 
-Office 365 和 Outlook.com 電子郵件帳戶會收到越來越多大量的網路釣魚攻擊。 網路釣客使用的其中一種技術是要傳送郵件，值的 [從： 不符合[RFC 5322](https://tools.ietf.org/html/rfc5322)的地址。 [從： 地址也稱為 5322.From 地址。 若要協助避免這種類型的網路釣魚，Office 365 和 Outlook.com 需要加入 RFC 不相容服務接收到的郵件從： 解決這篇文章所述。
+Office 365 電子郵件帳戶會收到日益大量的網路釣魚攻擊。 除了使用[冒牌（偽造）寄件者電子郵件地址](anti-spoofing-protection.md)，攻擊者通常會使用來自于網際網路標準的「寄件者」位址值。 為了協助防止此類型的網路釣魚，Office 365 和 Outlook.com 現在要求輸入郵件包含與 RFC 相容的「來源位址」（如本主題所述）。 此強制已于2017年11月啟用。
 
-> [!NOTE]
-> 本文中的資訊必須要有基本了解一般的電子郵件地址格式。 如需詳細資訊，請參閱[RFC 5322](https://tools.ietf.org/html/rfc5322) （尤其是各節 3.2.3、 3.4、 和 3.4.1）、 [RFC 5321](https://tools.ietf.org/html/rfc5321)，以及[RFC 3696](https://tools.ietf.org/html/rfc3696)。 這篇文章是有關針對 5322.From 地址原則強制執行。 本文不需 5321.MailFrom 地址。
+**附註**：
 
-不幸的是，仍有一些舊版的電子郵件伺服器在網際網路上繼續傳送 「 合法 」 的電子郵件有遺失的郵件或從格式錯誤： 地址。 如果您定期從組織而言，使用這些舊版的系統接收電子郵件，鼓勵這些組織更新以符合新式的安全性標準其郵件伺服器。
+- 如果您定期收到的電子郵件來自具有本主題所述位址格式錯誤的組織，請鼓勵這些組織更新其電子郵件伺服器，以遵守新式安全性標準。
 
-Microsoft 將會啟動推出於 2017 年 11 月 9 日本文中所述的原則強制執行。
+- [相關寄件者] 欄位（由「代理傳送者」和「郵寄清單」使用）不會受到這些需求的影響。 如需詳細資訊，請參閱下列博客文章：[當我們參考電子郵件的「寄件者」時，這是什麼意思？](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)。
 
-## <a name="how-office-365-enforces-the-use-of-a-valid-from-address-to-prevent-phishing-attacks"></a>Office 365 如何強制從有效使用： 地址以防止網路釣魚攻擊
+## <a name="an-overview-of-email-message-standards"></a>電子郵件訊息標準的概覽
 
-Office 365 的方式，它會強制使用的 [寄件者變更： 該函數會收到以更有效率的郵件中的地址會將您防止網路釣魚攻擊。 本文內容：
+標準 SMTP 電子郵件由「郵件信封」**(Message Envelope) 和郵件內容組成。 郵件信封包含在 SMTP 伺服器之間傳輸及傳遞郵件所需的資訊。 郵件內容包含統稱為 (「郵件標頭」**) 的郵件標頭欄位和郵件內容。 [Rfc 5321](https://tools.ietf.org/html/rfc5321)會說明郵件信封，而[rfc 5322](https://tools.ietf.org/html/rfc5322)中說明郵件頭。 收件者永遠不會看到實際的郵件信封，因為它是由郵件傳輸程式所產生，而且實際上不是郵件的一部分。
 
-- [所有郵件必須都包含有效的從： 地址](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
+- `5321.MailFrom`位址（也稱為「**郵件發**件人位址」、「P1 寄件者」或「信封寄件者」）是郵件 SMTP 傳輸中所用的電子郵件地址。 這個電子郵件地址通常會記錄在郵件頭的 [傳回**路徑**標頭] 欄位中（不過，寄件者可以指定不同的**回郵路徑**電子郵件地址）。
 
-- [[從的格式： 地址如果您未包含的顯示名稱](how-office-365-validates-the-from-address.md#FormatNoDisplayName)
+- `5322.From` （也稱為 from Address 或 P2 寄件者）是 [**發**件人] 標頭欄位中的電子郵件地址，也就是顯示在電子郵件客戶程式中的寄件者電子郵件地址。 「寄件者位址」是本主題中需求的重點。
 
-- [[從的格式： 地址如果加上的顯示名稱](how-office-365-validates-the-from-address.md#FormatDisplayName)
+「寄件者」位址會在多個 Rfc 中詳細定義（例如 RFC 5322 區段3.2.3、3.4 及3.4.1，以及[rfc 3696](https://tools.ietf.org/html/rfc3696)）。 定址的情況有許多變化，且被視為有效或無效。 為了簡化，我們建議您遵循下列格式及定義：
 
-- [其他的有效及無效的範例： 地址](how-office-365-validates-the-from-address.md#Examples)
+`From: "Display Name" <EmailAddress>`
 
-- [隱藏的自動回覆給您的自訂網域，而不中斷 From： 原則](how-office-365-validates-the-from-address.md#SuppressAutoReply)
+- **顯示名稱**：說明電子郵件地址擁有者的選用片語。
 
-- [Office 365 從覆寫： 地址強制執行原則](how-office-365-validates-the-from-address.md#Override)
+  - 建議您將顯示名稱永遠以雙引號（"）括住，如圖所示。 如果顯示名稱包含逗號，則_必須_在每個 RFC 5322 的雙引號內加上單引號。
+  - 如果 [寄件者] 位址包含顯示名稱，則 EmailAddress 值必須括在角括弧（< >）中（如圖所示）。
+  - Microsoft 強烈建議您在顯示名稱和電子郵件地址之間插入空格。
 
-- [防止，並防止 cybercrimes Office 365 中的其他方法](how-office-365-validates-the-from-address.md#OtherProtection)
+- **EmailAddress**：電子郵件地址使用下列格式`local-part@domain`：
 
-傳送代理另一個使用者不會影響這項變更，如需詳細資訊，請閱讀 Terry Zink 部落格 「[意味著什麼當我們將 「 寄件者 」 的電子郵件？](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)"。
+  - **本機部分**：識別與位址相關聯之信箱的字串。 此值在網域內是唯一的。 通常會使用信箱擁有人的使用者名稱或 GUID。
+  - **domain**：主控電子郵件地址的本機部分所識別之信箱的電子郵件伺服器的完整功能變數名稱（FQDN）。
 
-### <a name="all-messages-must-include-a-valid-from-address"></a>所有郵件必須都包含有效的從： 地址
-<a name="MustIncludeFromAddress"> </a>
+  以下是 EmailAddress 值的一些額外考慮：
 
-某些自動化的郵件未包含 From： 地址時便會被傳送。 在過去，當 Office 365 或 Outlook.com 接收到郵件，但 From 不： 地址，該服務新增從下列預設值： 為了將可傳送作業訊息的地址：
+  - 只有一個電子郵件地址。
+  - 建議您不要以空格分隔角括弧。
+  - 不要在電子郵件地址後包含其他文字。
 
-```
-From: <>
-```
+## <a name="examples-of-valid-and-invalid-from-addresses"></a>有效和無效寄件者位址的範例
 
-啟動 2017 年 11 月 9 日，Office 365 將會推行變更其資料中心及郵件伺服器會強制執行新的規則可其中沒有 From 郵件： 地址不再可接受的 Office 365 或 Outlook.com。 相反地，Office 365 所接收的所有郵件必須已經都包含有效的從： 地址。 否則，郵件會傳送到 Outlook.com 和 Office 365 中的垃圾電子郵件] 或 [刪除的項目資料夾。
+下列寄件者的電子郵件地址是有效的：
 
-### <a name="syntax-overview-valid-format-for-the-from-address-for-office-365"></a>語法概觀： 有效的格式為 [從： Office 365 的地址
-<a name="SyntaxOverviewFromAddress"> </a>
+- `From: sender@contoso.com`
 
-從值的格式： 地址在詳細資料中定義跨多個 Rfc。 有許多變化定址和功能可能會視為有效或無效。 若要讓它保持簡單的 Microsoft 建議您使用下列格式和定義：
+- `From: <sender@contoso.com>`
 
-```
-From: "displayname " <emailaddress >
-```
+- `From: < sender@contoso.com >`（不建議使用，因為角括弧和電子郵件地址之間有空格。）
 
-其中：
+- `From: "Sender, Example" <sender.example@contoso.com>`
 
-- （選用） *displayname*是說明擁有者的電子郵件地址的片語。 例如，這可能會更易記的名稱來描述名稱以外，信箱的寄件者。 使用的顯示名稱是選擇性的。 不過，如果您選擇要使用的顯示名稱，Microsoft 建議您，您一律將其括住引號內所示。
+- `From: "Office 365" <sender@contoso.com>`
 
-- （必要） *emailaddress*組成：
+- `From: Office 365 <sender@contoso.com>`（不建議使用，因為顯示名稱並未以雙引號括住）。
 
-  ```
-  local-part @domain
-  ```
+下列寄件者電子郵件地址無效：
 
-    其中：
+- **沒有寄件者位址**：部分自動化郵件不包含寄件者位址。 過去，當 Office 365 或 Outlook.com 收到沒有寄件者位址的郵件時，此服務會新增下列預設值： address，使郵件可傳送：
 
-  - （必要） *本機組件*是 string，識別會與位址相關聯的信箱。 這是唯一的網域內。 通常，信箱擁有者的使用者名稱或 GUID 用於值為本機組件。
+  `From: <>`
 
-  - （必要） *網域*是主控信箱的電子郵件地址本機部分所識別郵件伺服器的完整網域名稱 (FQDN)。
+  現在，已不再接受來自位址為空白的郵件。
 
-### <a name="format-of-the-from-address-if-you-dont-include-a-display-name"></a>[從的格式： 地址如果您未包含的顯示名稱
-<a name="FormatNoDisplayName"> </a>
+- `From: Office 365 sender@contoso.com`（顯示名稱已存在，但是電子郵件地址不是以角括弧括住）。
 
-從正確格式化 A： 不會納入的顯示名稱的地址包含只有單一電子郵件地址包含或不含角括弧。 Microsoft 建議您不要以空格分開角括弧。 此外，不包含任何項目後的電子郵件地址。
+- `From: "Office 365" <sender@contoso.com> (Sent by a process)`（電子郵件地址之後的文字。）
 
-下列範例是有效的：
+- `From: Sender, Example <sender.example@contoso.com>`（顯示名稱包含逗號，但未以雙引號括住）。
 
-```
-From: sender@contoso.com
-```
+- `From: "Office 365 <sender@contoso.com>"`（會錯誤地將整個值放在雙引號內。）
 
-```
-From: <sender@contoso.com>
-```
+- `From: "Office 365 <sender@contoso.com>" sender@contoso.com`（顯示名稱已存在，但是電子郵件地址不是以角括弧括住）。
 
-下列範例是有效但不是建議這麼做，因為它包含角括弧和電子郵件地址之間的空格：
+- `From: Office 365<sender@contoso.com>`（顯示名稱和左邊的角括弧之間沒有間距）。
 
-```
-From: < sender@contoso.com >
-```
+- `From: "Office 365"<sender@contoso.com>`（右雙引號和左邊的角括弧之間沒有間距）。
 
-下列範例會無效，因為它會包含文字後的電子郵件地址：
+## <a name="suppress-auto-replies-to-your-custom-domain"></a>抑制您的自訂網域的自動回復
 
-```
-From: "Office 365" <sender@contoso.com> (Sent by a process)
+您無法使用此值`From: <>`來抑制自動回復。 相反地，您必須為您的自訂網域設定空的 MX 記錄。 自動回復（和所有回復）都會以自然抑制，因為回應伺服器無法傳送郵件的發行位址。
+
+- 選擇無法接收電子郵件的電子郵件網域。 例如，如果您的主要網域是 contoso.com，您可以選擇 [noreply.contoso.com]。
+
+- 此網域的 null MX 記錄是由單一句點所組成。
+
+例如：
+
+```text
+noreply.contoso.com IN MX .
 ```
 
-### <a name="format-of-the-from-address-if-you-include-a-display-name"></a>[從的格式： 地址如果加上的顯示名稱
-<a name="FormatDisplayName"> </a>
+如需設定 MX 記錄的詳細資訊，請參閱[在 Office 365 的任何 DNS 主機服務提供者中建立 dns 記錄](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
 
-針對從： 地址包含顯示名稱的值，適用下列規則：
+如需有關發佈 null MX 的詳細資訊，請參閱[RFC 7505](https://tools.ietf.org/html/rfc7505)。
 
-- 如果寄件者地址包含顯示名稱，並顯示名稱包含逗點，顯示名稱必須在引號括住。 例如：
+## <a name="override-from-address-enforcement"></a>從位址強制覆寫
 
-    下列範例是有效的：
+若要略過輸入電子郵件的寄件者位址需求，您可以使用 IP 允許清單（連線篩選）或郵件流程規則（也稱為傳輸規則），如在[Office 365 中建立安全寄件者清單中](create-safe-sender-lists-in-office-365.md)所述。
 
-  ```
-  From: "Sender, Example" <sender.example@contoso.com>
-  ```
+您無法覆寫從 Office 365 傳送的輸出電子郵件的寄件者位址需求。 此外，Outlook.com 將不允許任何類型的覆寫（甚至是透過支援）。
 
-    下列範例不是有效的：
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a>其他防範和防止在 Office 365 中 cybercrimes 的方式
 
-  ```
-  From: Sender, Example <sender.example@contoso.com>
-  ```
-
-    不圍繞引號括住的顯示名稱，如果該顯示名稱中包含逗點是根據 RFC 5322 無效的。
-
-    最佳作法是，不論的顯示名稱前後的放入的引號是否是逗號內的顯示名稱。
-
-- 如果寄件者地址中包含的顯示名稱、 電子郵件地址必須內角括弧括住。
-
-    最佳作法是，Microsoft 強烈建議您插入的顯示名稱和電子郵件地址之間的空間。
-
-### <a name="additional-examples-of-valid-and-invalid-from-addresses"></a>其他的有效及無效的範例： 地址
-<a name="Examples"> </a>
-
-- 有效：
-
-  ```
-  From: "Office 365" <sender@contoso.com>
-  ```
-
-- 無效。 電子郵件地址不是以角括弧括住：
-
-  ```
-  From: Office 365 sender@contoso.com
-  ```
-
-- 有效的但不是建議使用。 顯示名稱不是引號括住。 最佳作法是一律用引號括住顯示名稱：
-
-  ```
-  From: Office 365 <sender@contoso.com>
-  ```
-
-- 無效。 每個項目括有引號，而不只顯示名稱：
-
-  ```
-  From: "Office 365 <sender@contoso.com>"
-  ```
-
-- 無效。 有任何電子郵件地址上角括號：
-
-  ```
-  From: "Office 365 <sender@contoso.com>" sender@contoso.com
-  ```
-
-- 無效。 沒有之間的顯示名稱和左的角括弧空間：
-
-  ```
-  From: Office 365<sender@contoso.com>
-  ```
-
-- 無效。 沒有顯示名稱前後關閉 quotation mark 和左的角括弧之間的空間。
-
-  ```
-  From: "Office 365"<sender@contoso.com>
-  ```
-
-### <a name="suppress-auto-replies-to-your-custom-domain-without-breaking-the-from-policy"></a>隱藏的自動回覆給您的自訂網域，而不中斷 From： 原則
-<a name="SuppressAutoReply"> </a>
-
-以新從： 原則強制執行 >，您不能再使用從： \< \>抑制自動回覆。 相反地，您必須設定為 null 的 MX 記錄的自訂網域。
-
-郵件交換程式 (MX) 記錄會以識別接收網域的郵件的郵件伺服器的 DNS 記錄的資源。 因為沒有回應的伺服器可以將郵件傳送未發佈的位址，所以，將自然地被抑制自動回覆 （與所有回覆）。
-
-當您設定為 null 的 MX 記錄的自訂網域：
-
-- 選擇從網域來傳送郵件，不會接受 （接收） 電子郵件。 例如，如果您主要的網域是 contoso.com，您可能會選擇 noreply.contoso.com。
-
-- 設定您的網域的 null MX 記錄。 Null 的 MX 記錄所組成單一點，例如：
-
-  ```
-  noreply.contoso.com IN MX .
-  ```
-
-如需發佈 null MX 的詳細資訊，請參閱[RFC 7505](https://tools.ietf.org/html/rfc7505)。
-
-### <a name="overriding-the-office-365-from-address-enforcement-policy"></a>Office 365 從覆寫： 地址強制執行原則
-<a name="Override"> </a>
-
-推出新原則完成後，您可以只略過此原則的內送郵件，您收到來自 Office 365 使用下列方法之一：
-
-- IP 允許清單
-
-- Exchange Online 的郵件流程規則
-
-Microsoft 強烈建議您針對覆寫強制使用 [從： 原則。 覆寫此原則可以增加的曝光度垃圾郵件、 網路釣魚及其他 cybercrimes 貴組織的風險。
-
-您不能覆寫此原則，針對您在 Office 365 中傳送的外寄郵件。 此外，Outlook.com 不允許覆寫任何種類，甚至是透過支援。
-
-### <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a>防止，並防止 cybercrimes Office 365 中的其他方法
-<a name="OtherProtection"> </a>
-
-如需有關如何在您可增強您的組織抵禦網路釣魚像 cybercrimes 的詳細資訊，濫發垃圾郵件、 資料外洩，以及其他威脅，請參閱[Office 365 的安全性最佳做法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)。
-
-## <a name="related-topics"></a>相關主題
-
-[非法回應郵件與 EOP](backscatter-messages-and-eop.md)
+如需如何強化組織抵禦網路釣魚、垃圾郵件、資料違例及其他威脅的詳細資訊，請參閱[保護 Office 365 和 Microsoft 365 商務方案的十大方式](../../admin/security-and-compliance/secure-your-business-data.md)。

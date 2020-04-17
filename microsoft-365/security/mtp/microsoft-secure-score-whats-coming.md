@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 61f066b2fff2798e78e6379bbca46e48e93ff017
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1a5c5ae702f16bbf47be83837cf244cdd64278cd
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895438"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43541104"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Microsoft 安全分數的情況為何？
 
@@ -36,15 +36,15 @@ ms.locfileid: "42895438"
 
 為了確保 Microsoft 安全分數有意義，且每個改進動作都有意義且可靠，我們正在移除下列改進動作。
 
-- 刪除/封鎖過去30天內未使用的帳戶
-- 指定少於5個全域系統管理員
 - 將 IRM 保護套用至檔
 - 套用資料遺失防護原則
 
-### <a name="adding-additional-control-support-in-the-preview-version"></a>新增預覽版本中的其他控制項支援
+### <a name="adding-azure-ad-improvement-action-in-the-preview-version"></a>在預覽版本中新增 Azure AD 改進動作
+
 - 不允許使用者將同意授與未受管理的應用程式（目前已發行版本本中提供）
 
-#### <a name="support-for-additional-microsoft-cloud-app-security-improvement-actions"></a>支援其他 Microsoft Cloud App 安全性改進動作
+### <a name="adding-azure-atp-improvement-actions-in-the-preview-version"></a>在預覽版本中新增 Azure ATP 改進動作
+
 - 停用網域控制站上的幕後列印程式服務
 - 修改不安全的 Kerberos 委派以防止模仿
 - 使用 Microsoft LAPS 保護和管理本機系統管理員密碼
@@ -56,5 +56,6 @@ ms.locfileid: "42895438"
 - 停止舊版通訊協定通訊
 - 停止弱密碼使用
 
-#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>支援 Microsoft Defender ATP 威脅 & 漏洞管理（TVM）安全性建議
+### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations-in-the-preview-version"></a>支援 Microsoft Defender ATP 威脅 & 漏洞管理（TVM）預覽版本中的安全性建議
+
 - TVM 所提供的所有發行安全性建議現在也會在 Microsoft 安全分數中提供。
