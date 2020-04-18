@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 瞭解如何還原已刪除的 Office 365 群組。
-ms.openlocfilehash: 31d6481f87d7da219e042eefa8f004425caee133
-ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
+ms.openlocfilehash: 2efd8c35286d224c6a3ed185043c82ab4b8e954e
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583160"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547529"
 ---
 # <a name="restore-a-deleted-office-365-group"></a>還原刪除的 Office 365 群組
 
@@ -59,9 +59,9 @@ ms.locfileid: "42583160"
 
 ## <a name="restore-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中還原群組
 
-如果您是全域系統管理員或群組管理員，則可在 Microsoft 365 系統管理中心還原刪除的群組：
+如果您是全域系統管理員或群組管理員，您可以在 Microsoft 365 系統管理中心還原刪除的群組：
 
-1. 移至位於 [https://admin.microsoft.com](Go to the admin center at https://admin.microsoft.com) 的系統管理中心。
+1. 移至系統[管理中心](https://admin.microsoft.com)。
 2. 展開 [**群組**]，然後按一下 [**刪除的群組**]。
 3. 選取您要還原的群組，然後按一下 [**還原群組**]。
   

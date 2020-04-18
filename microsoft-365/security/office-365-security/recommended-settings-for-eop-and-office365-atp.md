@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高級威脅防護（ATP）安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用高級威脅防護（ATP），您也可以取得哪些額外功能？
-ms.openlocfilehash: 1f20c8c09f3e690cc65e494ec6a372c95ac7171b
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 0d5d626da8f8bdcdc234f578145db0dfde2c06a5
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537434"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547605"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建議設定
 
@@ -45,9 +45,8 @@ ms.locfileid: "43537434"
 
 若要建立及設定反垃圾郵件原則，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-|||||
+| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
 |---|---|---|---|
-|**安全性功能名稱**|**Standard**|**嚴格**|**Comment**|
 |**垃圾郵件**偵測動作 <br/><br/> _SpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
 |**高信賴的垃圾郵件**偵測動作 <br/><br/> _HighConfidenceSpamAction_|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
 |**網路釣魚電子郵件**偵測動作 <br/><br/> _PhishSpamAction_|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
@@ -65,15 +64,13 @@ ms.locfileid: "43537434"
 |**垃圾郵件 ZAP** <br/><br/> _SpamZapEnabled_|已啟用 <br/><br/> `$true`|已啟用 <br/><br/> `$true`||
 |**網路釣魚 ZAP** <br/><br/> _PhishZapEnabled_|已啟用 <br/><br/> `$true`|已啟用 <br/><br/> `$true`||
 |_MarkAsSpamBulkMail_|開啟|開啟|此設定僅適用于 PowerShell。|
-|
 
 反垃圾郵件原則中有其他幾個高級垃圾郵件篩選器（ASF）設定已被取代。 有關這些功能之折舊時程表的詳細資訊，將在本主題外傳遞。
 
 建議您為**標準**和**嚴格**的層次 **，關閉這些**ASF 設定。 如需 ASF 設定的詳細資訊，請參閱[Office 365 中的高級垃圾郵件篩選器（ASF）設定](advanced-spam-filtering-asf-options.md)。
 
-|||
+| 安全性功能名稱 | 註解 |
 |----|---|
-|**安全性功能名稱**|**註解**|
 |**遠端網站的影像連結**（_IncreaseScoreWithImageLinks_）||
 |**URL 中的數位 IP 位址**（_IncreaseScoreWithNumericIps_）||
 |**UL 重新導向至其他埠**（_IncreaseScoreWithRedirectToOtherPort_）||
@@ -89,46 +86,39 @@ ms.locfileid: "43537434"
 |**SPF 記錄： hard fail** （_MarkAsSpamSpfRecordHardFail_）||
 |**條件式寄件者識別碼篩選： hard fail** （_MarkAsSpamFromAddressAuthFail_）||
 |**NDR 退信攻擊**（_MarkAsSpamNdrBackscatter_）||
-|
 
 #### <a name="eop-outbound-spam-policy-settings"></a>EOP 輸出垃圾郵件原則設定
 
 若要建立及設定輸出垃圾郵件原則，請參閱[在 Office 365 中設定輸出垃圾郵件篩選](configure-the-outbound-spam-policy.md)。
 
-||||
+| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
 |---|---|---|---|
-|**安全性功能名稱**|**Standard**|**嚴格**|**Comment**|
 |**每位使用者的收件者數目上限：外部每小時限制** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
 |**每位使用者的收件者數目上限：每小時內部的限制** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
 |**每位使用者的收件者數目上限：每日限制** <br/><br/> _RecipientLimitPerDay_|1000|800||
 |**使用者超過限制時的動作** <br/><br/> _ActionWhenThresholdReached_|**限制使用者傳送郵件** <br/><br/> `BlockUser`|**限制使用者傳送郵件** <br/><br/> `BlockUser`||
-|
 
 ### <a name="eop-anti-malware-policy-settings"></a>EOP 反惡意程式碼原則設定
 
 若要建立及設定反惡意程式碼原則，請參閱[在 Office 365 中設定反惡意程式碼原則](configure-anti-malware-policies.md)。
 
-|||||
+| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
 |---|---|---|---|
-|**安全性功能名稱**|**Standard**|**嚴格**|**Comment**|
 |**您是否要在郵件被隔離時通知收件者？** <br/><br/> _動作_|否 <br/><br/> _DeleteMessage_|否 <br/><br/> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
 |**常見附件類型篩選** <br/><br/> _EnableFileFilter_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|此設定會隔離包含以檔案類型為基礎的可執行附件的郵件，不論附件內容為何。|
 |**惡意程式碼零小時自動清除** <br/><br/> _ZapEnabled_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
 |通知未傳遞郵件的**內部寄件者** <br/><br/> _EnableInternalSenderNotifications_|停用 <br/><br/> `$false`|停用 <br/><br/> `$false`||
 |通知未傳遞郵件的**外部寄件者** <br/><br/> _EnableExternalSenderNotifications_|停用 <br/><br/> `$false`|停用 <br/><br/> `$false`||
-|
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>EOP 預設的反網路釣魚原則設定
 
 您只能在 Office 365 組織中使用 Exchange Online 信箱來設定這些設定。 若要設定這些設定，請參閱[在 EOP 中設定預設的反網路釣魚原則](configure-anti-phishing-policies-eop.md)。
 
-|||||
+| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
 |---|---|---|---|
-|**安全性功能名稱**|**Standard**|**嚴格**|**Comment**|
 |**啟用反欺騙保護** <br/><br/> _EnableAntispoofEnforcement_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
 |**啟用未經驗證的寄件者** <br/><br/> _EnableUnauthenticatedSender_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|將問號（？）新增至 Outlook 中的寄件者相片，以取得未識別的欺騙寄件者。 如需詳細資訊，請參閱[反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。|
 |**如果電子郵件是由不允許哄騙您網域的人所傳送** <br/><br/> _AuthenticationFailAction_|**將郵件移至收件者的 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件** <br/><br/> `Quarantine`|這適用于[哄騙情報](learn-about-spoof-intelligence.md)中已封鎖的寄件者。|
-|
 
 ## <a name="office-365-advanced-threat-protection-security"></a>Office 365 高級威脅防護安全性
 
@@ -145,11 +135,31 @@ Office 365 ATP 包含安全附件和安全連結原則，可防止電子郵件�
 
 EOP 客戶如先前所述，取得基本的反網路釣魚，但是 Office 365 ATP 包含更多的功能和控制，可協助防範、偵測和修正攻擊。 若要建立及設定這些原則，請參閱[在 Office 365 中設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
+|類比安全性功能名稱|標準|嚴格|留言|
+|---------|---------|---------|---------|
+|（編輯類比原則）新增要保護的使用者|開啟|開啟|取決於您的組織，但建議您在重要角色中新增使用者。 在內部，這些可能是您 CEO、CFO 和其他資深領導人。 您可以在外部加入委員會成員或董事會。|
+|（編輯類比原則）自動包含我擁有的網域|開啟|開啟||
+|（編輯類比原則）包含自訂網域|開啟|開啟|取決於您的組織，但建議您新增您不擁有的網域。|
+|如果您指定的模仿使用者傳送電子郵件|隔離郵件|隔離郵件||
+|如果您指定的模仿網域傳送電子郵件|隔離郵件|隔離郵件||
+|顯示類比使用者的秘訣|開啟|開啟||
+|顯示類比網域的秘訣|開啟|開啟||
+|顯示不尋常字元的秘訣|開啟|開啟||
+|啟用信箱智慧|開啟|開啟||
+|啟用信箱智慧型類比保護|開啟|開啟||
+|如果由信箱智慧保護的類比使用者傳送電子郵件|將郵件移至收件者的 [垃圾郵件] 資料夾|隔離郵件||
+|（編輯類比原則）新增信任的寄件者和網域|無|無|取決於您的組織，但建議您新增不正確地將其標記為網路釣魚網路的使用者或網域，因為它只會類比而非其他篩選器。|
+
+|欺騙安全性功能名稱|標準|嚴格|留言|
+|---------|---------|---------|---------|
+|啟用反欺騙保護|開啟|開啟||
+|啟用未經驗證的寄件者（標記）|開啟|開啟||
+|如果電子郵件是由不允許哄騙您網域的人所傳送|將郵件移至收件者的 [垃圾郵件] 資料夾|隔離郵件||
+
 #### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>ATP 反網路釣魚原則中的類比設定
 
-|||||
+| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
 |---|---|---|---|
-|**安全性功能名稱**|**Standard**|**嚴格**|**Comment**|
 |受保護的使用者：**新增要保護的使用者** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|開啟 <br/><br/> `$true` <br/><br/> \<使用者清單\>|開啟 <br/><br/> `$true` <br/><br/> \<使用者清單\>|取決於您的組織，但建議您在重要角色中新增使用者。 在內部，這些可能是您 CEO、CFO 和其他資深領導人。 您可以在外部加入委員會成員或董事會。|
 |受保護的網域：**自動包含我擁有的網域** <br/><br/> _EnableOrganizationDomainsProtection_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
 |受保護的網域：**包括自訂網域** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|開啟 <br/><br/> `$true` <br/><br/> \<網域清單\>|開啟 <br/><br/> `$true` <br/><br/> \<網域清單\>|取決於您的組織，但建議您新增您經常與其互動的網域。|
@@ -163,27 +173,22 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但是 Office 365 A
 |**如果由信箱智慧保護的類比使用者傳送電子郵件** <br/><br/> _MailboxIntelligenceProtectionAction_|**將郵件移至收件者的 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件** <br/><br/> `Quarantine`||
 |**受信任的寄件者** <br/><br/> _ExcludedSenders_|無|無|視您的組織而定，我們建議新增因模擬而不正確地標示為網路釣魚網路的使用者，而不是其他篩選器。|
 |**信任的網域** <br/><br/> _ExcludedDomains_|無|無|視您的組織而定，我們建議新增因模擬而不正確地標示為網路釣魚網路的網域，而不是其他篩選器。|
-|
 
 #### <a name="spoof-settings-in-atp-anti-phishing-policies"></a>ATP 反網路釣魚原則中的欺騙設定
 
 請注意，這些是[EOP 中的反垃圾郵件原則設定](#eop-anti-spam-policy-settings)中所提供的相同設定。
 
-|||||
+| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
 |---|---|---|---|
-|**安全性功能名稱**|**Standard**|**嚴格**|**Comment**|
 |**啟用反欺騙保護** <br/><br/> _EnableAntispoofEnforcement_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
 |**啟用未經驗證的寄件者** <br/><br/> _EnableUnauthenticatedSender_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|將問號（？）新增至 Outlook 中的寄件者相片，以取得未識別的欺騙寄件者。 如需詳細資訊，請參閱[反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。|
 |**如果電子郵件是由不允許哄騙您網域的人所傳送** <br/><br/> _AuthenticationFailAction_|**將郵件移至收件者的 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件** <br/><br/> `Quarantine`|這適用于[哄騙情報](learn-about-spoof-intelligence.md)中已封鎖的寄件者。|
-|
 
 #### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>ATP 反網路釣魚原則中的高級設定
 
-|||||
+| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
 |---|---|---|---|
-|**安全性功能名稱**|**Standard**|**嚴格**|**Comment**|
 |**高級網路釣魚臨界值** <br/><br/> _PhishThresholdLevel_|**2-嚴格** <br/><br/> `2`|**3-更嚴格** <br/><br/> `3`||
-|
 
 ### <a name="safe-links-settings"></a>安全連結設定
 

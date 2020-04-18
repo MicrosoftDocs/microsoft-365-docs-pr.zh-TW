@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Office 365 群組。
-ms.openlocfilehash: f5a0b72737a360a4bfe4cdd8fee4a08b7a7ff236
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: c45c78a26d421c5c16e6ca0769e8adc7ba6e79a8
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212530"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547541"
 ---
 # <a name="overview-of-office-365-groups-for-administrators"></a>管理員的 Office 365 群組概述
 
@@ -33,6 +33,7 @@ Office 365 群組是一種基礎成員資格服務，可促進整個 Microsoft 3
 - 共用行事曆
 - SharePoint 文件庫
 - Planner
+- OneNote 筆記本
 - Power BI
 - Yammer （如果群組是由 Yammer 建立）
 - 小組（如果群組是從小組建立）

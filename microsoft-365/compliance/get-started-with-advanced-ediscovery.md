@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文說明如何開始使用 Microsoft 365 中的「高級 eDiscovery」。 完成一些快速步驟之後，就可以使用「高級 eDiscovery」工具。 第一步是建立案例，然後開始使用 Advanced eDiscovery 的功能和功能。
-ms.openlocfilehash: a43bfd94fcf0a2563a184a3a87d96c64bd8eb619
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+ms.openlocfilehash: 4aae93e250365fc7225fe2f21fe25cd01e5f8cc0
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204043"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551124"
 ---
-# <a name="get-started-with-advanced-ediscovery"></a>使用高級電子檔快速入門
+# <a name="get-started-with-advanced-ediscovery"></a>開始使用進階電子文件探索
 
 Microsoft 365 中的「高級 eDiscovery」提供端對端工作流程，可保留、收集、審查、分析和匯出回應組織內部和外部調查的資料。 不需要部署高級 eDiscovery，但是必須先執行一些必要的工作，IT 系統管理員和 eDiscovery 管理員必須完成，您的組織才可以開始建立及使用高級 eDiscovery 案例來管理調查。
 
@@ -56,7 +56,7 @@ Microsoft 365 中的「高級 eDiscovery」提供端對端工作流程，可保�
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>步驟2：指派 eDiscovery 許可權
 
-若要存取高級 eDiscovery 或新增為高級 eDiscovery 案例的成員，必須對使用者指派適當的許可權。 具體而言，使用者必須新增為 Office 365 安全性 & 合規性中心內的 eDiscovery 管理員角色群組成員。 這個角色群組的成員可以建立及管理高級 eDiscovery 案例。 他們可以新增及移除成員、將保管人和內容位置置於保留狀態、管理合法保留通知、建立及編輯案例中相關聯的搜尋、將搜尋結果新增至審閱集、分析複查集中的資料，以及從高級 eDiscovery 案例匯出及下載。
+若要存取高級 eDiscovery 或新增為高級 eDiscovery 案例的成員，必須為使用者指派適當的許可權。 具體而言，使用者必須新增為 Office 365 安全性 & 合規性中心內的 eDiscovery 管理員角色群組成員。 這個角色群組的成員可以建立及管理高級 eDiscovery 案例。 他們可以新增及移除成員、將保管人和內容位置置於保留狀態、管理合法保留通知、建立及編輯案例中相關聯的搜尋、將搜尋結果新增至審閱集、分析複查集中的資料，以及從高級 eDiscovery 案例匯出及下載。
 
 完成下列步驟，將使用者新增至 eDiscovery 管理員角色群組：
 
@@ -90,7 +90,7 @@ EDiscovery 管理員角色群組中有兩個子群組。 這些子群組之間�
 
   因為存取範圍廣泛，所以組織應該只有少數管理員是 eDiscovery Administrators 子群組的成員。
 
-如需有關 eDiscovery 許可權的詳細資訊，以及指派給 eDiscovery 管理員角色群組之每個角色的說明，請參閱在[安全性 & 規範中心指派 eDiscovery 許可權](assign-ediscovery-permissions.md)。
+如需有關 eDiscovery 許可權的詳細資訊，以及指派給 eDiscovery 管理員角色群組之每個角色的說明，請參閱[指派 eDiscovery 許可權](assign-ediscovery-permissions.md)。
 
 ## <a name="step-3-configure-global-settings-for-advanced-ediscovery"></a>步驟3：設定高級電子檔探索的全域設定
 
@@ -107,7 +107,7 @@ EDiscovery 管理員角色群組中有兩個子群組。 這些子群組之間�
 
 1. 移至[https://compliance.microsoft.com](https://compliance.microsoft.com)並登入使用已獲指派適當 eDiscovery 許可權之使用者帳戶的認證。 組織管理角色群組的成員也可以建立高級 eDiscovery 案例。
 
-2. 在 Microsoft 365 規範中心的左 nave 中，按一下 [**全部顯示**]，然後按一下 [ **eDiscovery > Advanced**]。
+2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [**全部顯示**]，然後按一下 [ **eDiscovery > Advanced**]。
 
 3. 在 [**高級 eDiscovery** ] 頁面上，按一下 [**案例**] 索引標籤，然後按一下 [**建立案例**]。
 

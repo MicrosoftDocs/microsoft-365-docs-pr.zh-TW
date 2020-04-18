@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -14,66 +14,76 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
-description: Office 365 提供許多不同的 eDiscovery 工具可以用來搜尋並保留在不同的位置，例如 Exchange 信箱、 SharePoint 和 OneDrive for Business 網站、 Office 365 群組與 Skype for Business 交談中找到的內容。
-ms.openlocfilehash: d0f687e490b2a0b9452de820ddfe76a9d36b1805
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Microsoft 365 提供許多不同的 eDiscovery 工具，可供您用來搜尋及存放位於不同位置的內容，例如 Exchange 信箱、SharePoint 和 OneDrive 商務網站、Office 365 群組和商務用 Skype 交談。
+ms.openlocfilehash: 19076941d2ff5b908071c779558b2cbe8b15bb54
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074790"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551214"
 ---
-# <a name="ediscovery-in-office-365"></a>Office 365 中的 eDiscovery
+# <a name="ediscovery-in-microsoft-365"></a>Microsoft 365 中的 eDiscovery
 
-電子搜索 (eDiscovery) 是識別與傳遞電子資訊的程序，而且此類資訊可在法律案件中做為呈堂證據。 您可以使用 Office 365 中的 eDiscovery 搜尋的內容在 Exchange Online 信箱，Office 365 群組、 Microsoft Teams、 SharePoint Online 和 OneDrive for Business 網站與 Skype for Business 交談。 您可以在相同的 eDiscovery 搜尋中搜尋信箱和站台，安全 & 合規性中心內使用 「 內容搜尋 」 工具。 您可以使用 eDiscovery 案例中安全性 & 規範中心來識別、 保留、 和匯出信箱和網站中找到的內容。 如果您的組織有 Office 365 E5 訂閱，您可以進一步分析內容，藉由使用 Microsoft 365 進階電子文件方案。
+電子搜索 (eDiscovery) 是識別與傳遞電子資訊的程序，而且此類資訊可在法律案件中做為呈堂證據。 您可以使用 Microsoft 365 中的 eDiscovery 工具，搜尋 Exchange Online 信箱、Office 365 群組、Microsoft 小組、SharePoint 線上 OneDrive 和商務用 Skype，以及商務用 Skype 交談和 Yammer 小組中的內容。 您可以使用內容搜尋工具，在相同 eDiscovery 搜尋中搜尋信箱和網站。 您也可以使用核心 eDiscovery 案例來識別、保留及匯出信箱和網站中的內容。 如果您的組織有 Office 365 E5 或 Microsoft 365 E5 訂閱（或相關的 E5 附加元件訂閱），您可以使用 Microsoft 365 中的高級 eDiscovery 解決方案，進一步管理保管人及分析內容。
   
-Office 365 提供下列的 eDiscovery 工具：
+Microsoft 365 提供下列 eDiscovery 工具：
   
-- [在安全性 & 合規性中心中的內容搜尋](#content-search-in-the-security--compliance-center)
-    
-- [安全性 & 合規性中心中的 eDiscovery 案例](#ediscovery-cases-in-the-security--compliance-center)
-    
-- [Microsoft 365 中的進階電子文件探索解決方案](#advanced-ediscovery-solution-in-microsoft-365)
-    
-## <a name="content-search-in-the-security--compliance-center"></a>在安全性 & 合規性中心中的內容搜尋
+- [內容搜尋](#content-search)
 
-下表包含可協助您使用內容搜尋工具安全性 & 合規性中心中的主題連結。
+- [核心電子文件探索](#core-ediscovery)
+
+- [進階 eDiscovery](#advanced-ediscovery)
+
+> [!NOTE]
+> Advanced ediscovery （傳統型）（也稱為「*高級 ediscovery 1.0*版」），也就是在核心 ediscovery 案例中，您可以按一下 [**切換至高級 ediscovery**]，將會停用該版本的高級 ediscovery。 其功能已由 Microsoft 365 中的高級 eDiscovery 解決方案所取代。 如需停用高級 eDiscovery 1.0 版的相關資訊，請參閱[舊版 eDiscovery tools 的退休](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。
+
+## <a name="content-search"></a>內容搜尋
+
+下表包含主題的連結，這些主題可協助您使用內容搜尋工具。
   
 |**主題**|**描述**|
 |:-----|:-----|
-|[執行內容搜尋](content-search.md) <br/> |了解如何使用內容搜尋工具來搜尋信箱、 公用資料夾，Office 365 群組、 Microsoft Teams、 SharePoint Online 網站，One Drive for Business 的位置，與 Skype for Business 交談中 Office 365 組織在單一搜尋中。  <br/> |
-|[內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md) <br/> |了解電子郵件和檔案的屬性和搜尋條件，您可以用來搜尋信箱中的內容和 Office 365 組織中的網站。  <br/> |
-|[檢視內容搜尋結果的關鍵字統計資料](view-keyword-statistics-for-content-search.md) <br/> |了解如何使用搜尋統計資料，來顯示和比較一或多個內容搜尋的統計資料，並設定新的和現有的搜尋，以在搜尋查詢中傳回的每個關鍵字統計資料。  <br/> |
-|[大量編輯安全性 & 合規性中心中的內容搜尋](bulk-edit-content-searches.md) <br/> |搜尋查詢與一或多個內容搜尋的內容位置，請了解如何大量編輯。  <br/> |
-|[從安全性 & 合規性中心匯出搜尋結果](export-search-results.md) <br/> |了解如何匯出內容搜尋的結果。  <br/> |
-|[匯出 eDiscovery 搜尋結果從 Office 365 時，增加的下載速度](increase-download-speeds-when-exporting-ediscovery-results.md) <br/> |了解如何設定 Windows 登錄來增加與匯出內容搜尋結果的下載速度您電腦上。  <br/> |
-|[匯出內容搜尋報告](export-a-content-search-report.md) <br/> |了解如何下載 [匯出] 報告，而不必將匯出的實際搜尋結果。  <br/> |
-|[在安全性 & 合規性中心的內容搜尋的限制](limits-for-content-search.md) <br/> |了解內容搜尋工具，例如，您可以一次執行搜尋的最大數目的限制。  <br/> |
-|[內容搜尋中未編製索引項目](partially-indexed-items-in-content-search.md) <br/> |了解 Exchange 和執行搜尋時，可以包含預估的搜尋結果的統計資料中的 SharePoint 中的未編製索引項目。 當您匯出搜尋結果時，您也可以包含未編製索引的項目。  <br/> |
-|[估計與實際的 eDiscovery 搜尋結果中 Office 365 之間的差異](differences-between-estimated-and-actual-ediscovery-search-results.md) <br/> |了解原因為何可能會有差異預估的搜尋結果數目，都要匯出的實際項的目數。  <br/> |
-|[電子文件探索搜尋結果中的重複資料刪除](de-duplication-in-ediscovery-search-results.md) <br/> |了解當您匯出內容搜尋結果的 Exchange 電子郵件時，您可以啟用選擇性重複資料刪除功能。  <br/> |
-|[搜尋並刪除 Office 365 組織中的電子郵件](search-for-and-delete-messages-in-your-organization.md) <br/> |了解如何使用內容搜尋來搜尋並刪除電子郵件從貴組織中的*所有*信箱。 這可協助您尋找並移除可能有害或高風險的電子郵件。  <br/> |
-|[使用內容搜尋來搜尋信箱與商務用 OneDrive 網站的使用者清單](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) <br/> |了解如何使用指令碼來搜尋信箱和一個 for Business 網站的一群使用者的磁碟機。 使用[步驟 2： 產生使用者的清單](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users)本主題，以快速產生的電子郵件地址，當您建立，並在步驟 3 中執行搜尋，您可以使用來源內容位置的清單中。  <br/> |
-|[建立、回報及刪除多個內容搜尋](create-report-on-and-delete-multiple-content-searches.md) <br/> |了解如何使用指令碼來建立多個內容搜尋，執行報告，以取得預估的結果的每個搜尋，然後刪除搜尋。 這可協助您快速且更有效地識別及 cull 搜尋資料。  <br/> |
-|[複製安全性 & 合規性中心的內容搜尋](clone-a-content-search.md) <br/> |了解如何使用 Windows PowerShell 指令碼本文中，快速地複製現有的內容搜尋。 這可協助您比較不同的關鍵字搜尋查詢執行相同的內容位置或節省時間，因為您不必重新輸入大量內容的位置，當您建立新的搜尋結果。  <br/> |
-|[設定內容搜尋的權限篩選](permissions-filtering-for-content-search.md) <br/> |了解如何使用篩選，以讓 Office 365 組織中搜尋的信箱和站台子集 eDiscovery 管理員的權限。  <br/> |
-|[準備 CSV 檔案的目標內容搜尋](csv-file-for-an-id-list-content-search.md) <br/> |了解如何使用 Results.csv 檔案或未編製索引的 Items.csv 檔案 (這兩種可包含的內容搜尋結果的相關資訊) 來建立目標的搜尋特定的信箱項目。  <br/> |
-|[在 Office 365 中使用內容搜尋，對目標集合](use-content-search-for-targeted-collections.md) <br/> |了解如何在本文中使用 Windows PowerShell 指令碼來執行目標的集合使用內容搜尋。 目標的集合表示您想要搜尋特定的資料夾，因為您確信回應的情況下 （或特殊權限項目） 的項目位於該資料夾。 使用本文中的指令碼，以取得資料夾識別碼或您想要搜尋的特定信箱或網站資料夾的路徑。  <br/> |
-|[使用內容搜尋來搜尋協力廠商資料匯入至 Office 365](use-content-search-to-search-third-party-data-that-was-imported.md) <br/> |了解如何使用`kind`和`itemclass`郵件若要搜尋您匯入到 Office 365 的協力廠商資料的內容。  <br/> |
+|[執行內容搜尋](content-search.md) <br/> |瞭解如何使用內容搜尋工具，在單一搜尋中搜尋信箱、公用資料夾、Office 365 群組、Microsoft 小組、SharePoint 線上網站、商務位置的一個磁碟機，以及 Office 365 組織中的商務用 Skype 交談。  <br/> |
+|[內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md) <br/> |深入瞭解您可以用來搜尋 Office 365 組織中信箱和網站內容的電子郵件和檔案屬性和搜尋條件。  <br/> |
+|[檢視內容搜尋結果的關鍵字統計資料](view-keyword-statistics-for-content-search.md) <br/> |瞭解如何使用搜尋統計資料來顯示及比較一或多個內容搜尋的統計資料，以及設定新的和現有的搜尋，以傳回搜尋查詢中每個關鍵字的統計資料。  <br/> |
+|[匯出搜尋結果](export-search-results.md) <br/> |瞭解如何匯出內容搜尋的結果。  <br/> |
+|[設定內容搜尋的權限篩選](permissions-filtering-for-content-search.md) <br/> |瞭解如何使用許可權篩選，讓 eDiscovery 管理員只搜尋組織中信箱和網站的子集。  <br/> |
+|[匯出內容搜尋報告](export-a-content-search-report.md) <br/> |瞭解如何下載匯出報告，而不必匯出實際的搜尋結果。  <br/> |
+|[內容搜尋限制](limits-for-content-search.md) <br/> |瞭解內容搜尋工具的限制，例如，您可以一次執行的最大搜尋數目。  <br/> |
+|[內容搜尋中未編制索引的專案](partially-indexed-items-in-content-search.md) <br/> |瞭解 Exchange 和 SharePoint 中未編制索引的專案，當您執行搜尋時，您可以在預估搜尋結果統計資料中包含這些專案。 您也可以在匯出搜尋結果時包含未編制索引的專案。  <br/> |
+|[搜尋並刪除電子郵件訊息](search-for-and-delete-messages-in-your-organization.md) <br/> |瞭解如何使用內容搜尋來搜尋和刪除組織中*所有*信箱的電子郵件訊息。 這可協助您尋找及移除可能有害或高風險的電子郵件。  <br/> |
+|[使用內容搜尋來搜尋信箱，並 OneDrive 帳戶的使用者清單](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) <br/> |瞭解如何使用腳本來搜尋信箱，以及一組使用者的商務用網站。 請參閱[建立所有 OneDrive 位置的清單](https://docs.microsoft.com/onedrive/list-onedrive-urls)，以取得如何快速產生您建立及執行內容搜尋時可用於來源內容位置的電子郵件地址清單的步驟。  <br/> |
+|[對目標集合使用內容搜尋](use-content-search-for-targeted-collections.md) <br/> |瞭解如何使用本文中的 Windows PowerShell 腳本，使用內容搜尋來執行目標集合。 目標集合表示您想要搜尋特定的資料夾，因為您確信回應某一案例的專案（或特權專案）位於該資料夾中。 使用本文中的腳本，取得您要搜尋之特定信箱或網站資料夾的資料夾識別碼或路徑。  <br/> |
+|||
   
-## <a name="ediscovery-cases-in-the-security--compliance-center"></a>安全性 & 合規性中心中的 eDiscovery 案例
+## <a name="core-ediscovery"></a>核心電子文件探索
 
-下表包含可協助您安全 & 與規範中心使用 eDiscovery 案例的主題連結。 使用情況下新增小組成員，可以存取這種情況，保留內容的位置與案件相關、 多個內容搜尋關聯的案例，以及從案例中匯出搜尋結果。
+下表包含主題的連結，這些主題可協助您使用核心 eDiscovery 案例。 您可以使用核心 eDiscovery 案例來新增可以存取案例的 eDiscovery 管理員、在與案例相關的內容位置上放置 eDiscovery 暫止功能、搜尋內容，以及從案例中匯出搜尋結果。
   
 |**主題**|**描述**|
 |:-----|:-----|
-|[管理安全性 & 合規性中心中的 eDiscovery 案例](ediscovery-cases.md) <br/> |了解如何建立及管理安全性 & 合規性中心中的 eDiscovery 案例。  <br/> |
-|[指派 Office 365 安全性 & 合規性中心的 eDiscovery 權限](assign-ediscovery-permissions.md) <br/> |了解如何指派 eDiscovery 權限安全性 & 合規性中心。 您可以指派權限可讓使用者建立 eDiscovery 案例、 建立保留 eDiscovery 案例相關聯、 執行內容搜尋、 預覽搜尋結果，以及匯出搜尋結果。  <br/> |
-|[在 Office 365 中的 eDiscovery 案例中的保留建立報表](create-a-report-on-holds-in-ediscovery-cases.md) <br/> |了解如何使用本文中的 Windows PowerShell 指令碼，來產生報告，其中包含與安全性 & 合規性中心中的 eDiscovery 案例相關聯的所有保留的相關資訊。  <br/> |
-|[使用指令碼將使用者新增至 eDiscovery 案例中安全性 & 合規性中心中的保留](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) <br/> |了解如何使用本文中的 Windows PowerShell 指令碼，可快速將新增的信箱和 OneDrive for Business 網站的使用者清單至新的保留與安全性 & 規範中心的 eDiscovery 案例相關聯。  <br/> |
-|[搜尋 Office 365 稽核記錄中的 eDiscovery 活動](search-for-ediscovery-activities-in-the-audit-log.md) <br/> |了解如何建立及管理 eDiscovery 案例] 和 [內容搜尋與相關活動，Office 365 稽核記錄檔中搜尋。  <br/> |
+|[開始使用核心電子檔探索](get-started-core-ediscovery.md) |瞭解如何指派 eDiscovery 許可權，以及建立核心 eDiscovery 案例。 本主題也提供核心 eDiscovery 工作流程的概述。<br/> |
+|[建立電子文件探索保留](create-ediscovery-holds.md)|瞭解如何建立與核心 eDiscovery 案例相關聯的 eDiscovery 保留，以保留與您正在調查之案例相關的內容。|
+|[在核心 eDiscovery 案例中搜尋內容](search-for-content-in-core-ediscovery.md)|瞭解如何搜尋與案例相關的內容。 您可以快速建立搜尋，搜尋保留的內容位置。|
+|[從核心 eDiscovery 案例匯出內容](export-content-in-core-ediscovery.md)|瞭解如何從核心 eDiscovery 案例中匯出及下載內容。|
+|[關閉、重新開啟和刪除核心 eDiscovery 案例](close-reopen-delete-core-ediscovery-cases.md)|瞭解如何管理核心 eDiscovery 案例的生命週期。|
+|[指派電子文件權限](assign-ediscovery-permissions.md)|瞭解如何將許可權指派給使用者，讓他們能夠搜尋內容、將內容位置保留，以及執行其他 eDiscovery 相關的任務。|
+|[設定核心電子檔探索的規範界限](set-up-compliance-boundaries.md)|瞭解如何使用規範界限，在組織中建立邏輯界限，以控制 eDiscovery 管理員可搜尋的內容位置。|
+|||
   
-## <a name="advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 中的進階電子文件探索解決方案
+## <a name="advanced-ediscovery"></a>進階電子文件探索
 
-在 Microsoft 365 進階電子文件方案為基礎的現有的 eDiscovery 和 Office 365 中的分析功能。 這個新的解決方案，名為*Advanced eDiscovery*，提供的端對端工作流程，以保留、 收集、 檢閱、 分析和匯出回應您的組織內部和外部調查的內容。 它也可讓管理整個合法持有通知工作流程與 custodians 參與案例進行通訊的法律小組。 
+Microsoft 365 （也稱為「 *Advanced ediscovery 2.0 2.0*」）中的「高級 ediscovery 解決方案」是以 Office 365 中現有的 ediscovery 和分析功能為基礎。 這種 eDiscovery 解決方案提供了端對端工作流程，可保留、收集、審閱、分析和匯出以回應組織內部和外部調查的內容。 它也可讓法律團隊管理保管人和整個法律封存通知工作流程，以與案例相關的保管人進行通訊。
 
-如需詳細資訊，請參閱 [Microsoft 365 中的進階電子文件探索解決方案概觀](overview-ediscovery-20.md)。
+|**主題**|**描述**|
+|:-----|:-----|
+|[進階電子文件探索概觀](overview-ediscovery-20.md)|本文將介紹「Advanced eDiscovery 2.0」，並提供高級 eDiscovery 內建工作流程的高層次概述，以及如何將其對應至電子化探索參考模型所述的 eDiscovery 程式|.
+|[開始使用進階電子文件探索](get-started-with-advanced-ediscovery.md)|瞭解如何開始使用「高級 eDiscovery」（包括必要的授權和必要的 eDiscovery 許可權）。 本文說明如何建立高級 eDiscovery 案例，並提供高級 eDiscovery 工作流程的逐步講解。|
+|[與監管人共同作業](managing-custodians.md)|瞭解如何在高級 eDiscovery 中使用保管人。 本主題連結至逐步指示，將保管人新增至案例、在案例中管理保管人，以及透過搜尋審核記錄檔來查看 Microsoft 365 中的保管人活動。|
+|[使用通訊](managing-custodian-communications.md)|瞭解如何在「高級 eDiscovery」中管理合法保留通知程式。 這包括建立及自動化通知工作流程，以及使用者如何認可保留通知。
+|[使用處理錯誤](processing-data-for-case.md)|深入瞭解高級索引，以及如何從 custodial 和非 custodial 內容位置（例如 Exchange 信箱、SharePoint 網站和 OneDrive 帳戶）修復內容中的索引錯誤。 您可以大量修正錯誤，然後將修正的檔案上傳至複查集，或修正檢查集內的個別處理錯誤。|
+|[收集適用於案例的資料](collecting-data-for-ediscovery.md)|瞭解如何在 custodial 內容位置搜尋內容，然後將相關案例資料新增至審閱集。 當您將內容複寫到審閱集時，會將資料從原始內容位置複製到 Microsoft 提供的 Azure 儲存位置。 這為審閱程式提供一組靜態檔。|
+|[管理檢閱集](managing-review-sets.md)|瞭解如何在審閱集中查看案例資料。 這包括查看、查詢、篩選及標記審閱集中的檔。
+|[分析審閱集中的資料](analyzing-data-in-review-set.md)|瞭解如何對審閱集中的檔執行分析。 執行分析的結果包括近期重複偵測、電子郵件執行緒及主題識別。|
+|[匯出案例資料](exporting-data-ediscover20.md)|瞭解從案例中匯出資料以供外部複查。|
+|||

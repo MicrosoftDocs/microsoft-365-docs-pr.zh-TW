@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 瞭解如何識別可放在 Office 365 信箱上的不同保留類型。 這些保留類型包括訴訟暫止、eDiscovery 保留及 Office 365 保留原則。 您也可以判斷使用者是否已從整個組織的保留原則中排除
-ms.openlocfilehash: 29d212f0ba16c7ae414c3a47707cfcd0f95420c7
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: 4063128e368b19b156fbf42173fb2d4725c3e7ab
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978223"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551134"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何找出位於 Exchange Online 信箱的保留類型
 
@@ -30,7 +30,7 @@ Office 365 提供數種方式，讓您的組織可以防止信箱內容遭到永
 
 - **[訴訟暫](create-a-litigation-hold.md)止：** 適用于 Exchange Online 中使用者信箱的保留。
 
-- ** [eDiscovery 保留](ediscovery-cases.md#step-4-place-content-locations-on-hold)：** 與安全性與合規性中心中的 eDiscovery 案例相關聯的保留。 eDiscovery 保留可以套用到使用者信箱，以及 Office 365 群組和 Microsoft 小組對應的信箱。
+- ** [eDiscovery 保留](create-ediscovery-holds.md)：** 與安全性與合規性中心中的 eDiscovery 案例相關聯的保留。 eDiscovery 保留可以套用到使用者信箱，以及 Office 365 群組和 Microsoft 小組對應的信箱。
 
 - **[保留 In-Place](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds)：** 在 Exchange Online 中使用 Exchange 系統管理中心的「In-Place eDiscovery & 保留」工具，將套用至使用者信箱的保留。
 
@@ -92,7 +92,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 下表說明組織範圍的不同類型，以及如何在您執行**Get-OrganizationConfig** Cmdlet 時，根據*InPlaceHolds*屬性所包含的 guid 來識別每個類型。
 
 
-|保留類型  |範例值  |說明  |
+|保留類型  |範例值  |描述  |
 |---------|---------|---------|
 |套用至 Exchange 信箱、Exchange 公用資料夾及小組聊天的 Office 365 保留原則    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   套用至 Exchange 信箱、Exchange 公用資料夾和1xN 聊天室的組織內的保留原則，都是由以`mbx`前置詞開頭的 guid 來識別。 附注1xN 聊天會儲存在個別聊天參與者的信箱中。      |
 |套用至 Office 365 群組和團隊通道郵件的 office 365 保留原則     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    在 Microsoft 小組中套用至 Office 365 群組和通道郵件的全組織保留原則，會由以前置詞開頭`grp`的 guid 來識別。 附注通道郵件會儲存在與 Microsoft 小組相關聯的群組信箱中。     |
