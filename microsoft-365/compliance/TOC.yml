@@ -345,6 +345,8 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=867039'
 - name: 管理電子文件探索
   items:
+    - name: Microsoft 365 中的 eDiscovery
+      href: ediscovery.md
     - name: 內容搜尋
       items:
         - name: 內容搜尋概觀
@@ -414,8 +416,16 @@
               href: clone-a-content-search.md
     - name: 核心電子文件探索
       items:
-        - name: 管理電子文件探索案例
-          href: ediscovery-cases.md
+        - name: 開始使用核心電子文件探索
+          href: get-started-core-ediscovery.md
+        - name: 建立電子文件探索保留
+          href: create-ediscovery-holds.md
+        - name: 在案例中搜尋內容
+          href: search-for-content-in-core-ediscovery.md
+        - name: 從案例匯出內容
+          href: export-content-in-core-ediscovery.md
+        - name: 關閉、重新開啟及刪除案例
+          href: close-reopen-delete-core-ediscovery-cases.md
         - name: 核心電子文件探索參考資料
           items:
             - name: 指派電子文件探索權限
@@ -430,6 +440,12 @@
               href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
             - name: 在電子文件探索的保留建立報表
               href: create-a-report-on-holds-in-ediscovery-cases.md
+            - name: 匯出搜尋報告
+              href: export-a-content-search-report.md
+            - name: 檢視搜尋結果的關鍵字統計資料
+              href: view-keyword-statistics-for-content-search.md
+            - name: 準備進階電子文件探索 (傳統版) 的搜尋結果
+              href: prepare-search-results-for-advanced-ediscovery.md
             - name: 搜尋和清除溢出的資料
               href: data-spillage-scenariosearch-and-purge.md
             - name: 為搜尋保留密件副本收件者
