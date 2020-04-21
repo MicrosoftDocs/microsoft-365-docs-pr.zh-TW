@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f70d2f601dfb697d8affa8bb47148f6e454c5d8e
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: e7274ff196d5b822d146378752d66c9707fc9f19
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43541092"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583378"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -137,11 +137,9 @@ Microsoft Secure 得分是根據系統設定、使用者行為和其他安全性
 
 ## <a name="whats-new"></a>新功能
 
-若要讓 Microsoft 安全評分為您安全性狀況的更好代表，我們進行了一些變更。
+若要讓 Microsoft 安全評分為您安全性狀況的更好代表，我們進行了一些變更。 若要深入瞭解規劃的變更，請參閱[Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)
 
-若要深入瞭解規劃的變更，請參閱[Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)
-
-### <a name="march-2020"></a>2020 年 3 月
+### <a name="january---march-2020"></a>一月份-2020 年3月
 
 #### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>支援 Azure AD 改進動作的安全性預設值
 

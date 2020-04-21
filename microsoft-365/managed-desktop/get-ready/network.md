@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 141bd55a0619fb2f007b5f9173310a1e2fe5bab1
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 48da8a0e6629ff64b42c413d4959fb440b77aae3
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633151"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583330"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的網路設定
 
@@ -57,7 +57,7 @@ Windows 10 企業版，包含 Windows 更新（商務） | [管理 Windows 10 �
 傳遞優化 | [設定 Windows 10 更新的傳遞優化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Office 365 | [Office 365 URL 與 IP 位址範圍](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [混合式識別所需的埠和通訊協定](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)和 Active Directory[網域服務埠需求](https://aka.ms/AA26ygm) 
-Microsoft Intune | [Intune 網路設定需求](https://docs.microsoft.com/intune/network-bandwidth-use)
+Microsoft Intune | [Intune 網路設定需求](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Microsoft Intune 的網路端點](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
 Microsoft Defender 高級威脅防護（ATP） | [Microsoft Defender ATP 端點](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---

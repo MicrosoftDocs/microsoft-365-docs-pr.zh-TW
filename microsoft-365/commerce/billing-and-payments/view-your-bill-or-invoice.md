@@ -25,12 +25,12 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: 在 Microsoft 365 系統管理中心尋找您的發票或帳單。 您也可以儲存及列印帳單複本。
-ms.openlocfilehash: 5982e65ce9720b85d29126986cfcb8123b4aef5f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fa3809e588bca50ae0ffd7e5dfc060bbc91a4bd6
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251891"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540852"
 ---
 # <a name="view-your-bill-or-invoice"></a>檢視帳單
 
@@ -50,10 +50,23 @@ ms.locfileid: "42251891"
   
 ## <a name="view-a-bill-or-invoice"></a>檢視帳單或發票
 
+::: moniker range="o365-worldwide"
 
 1. 在系統管理中心中，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">[帳單與付款]</a> 頁面。
 
-    如果您使用的是 Office 365 Germany，請移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">[帳單與付款]</a> 頁面。
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在系統管理中心中，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">[帳單與付款]</a> 頁面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在系統管理中心中，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">[帳單與付款]</a> 頁面。
+
+::: moniker-end
 
 2. 從下拉式清單中選取日期範圍，然後選擇您想要檢視的順序。
 
