@@ -1,5 +1,5 @@
 ---
-title: 自訂您組織的 Office 365 佈景主題
+title: 自訂群組織的主題
 f1.keywords:
 - CSH
 ms.author: twerner
@@ -18,19 +18,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: '瞭解如何變更 Office 365 的預設主題，並加以自訂，使其符合您公司的徽標或色彩。 '
-ms.openlocfilehash: c553e5254246bd81d435b4ebc2be2e975dd80a9d
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+description: '瞭解如何變更 Microsoft 365 的預設主題，並加以自訂，使其符合您公司的徽標或色彩。 '
+ms.openlocfilehash: 6a689c6da967bf3f62699bb9df287f7c5fc42e6a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826324"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627603"
 ---
-# <a name="customize-the-office-365-theme-for-your-organization"></a>自訂您組織的 Office 365 佈景主題
+# <a name="customize-the-theme-for-your-organization"></a>自訂群組織的主題
 
-瞭解如何在 Microsoft 365 系統管理中心中自訂您的主題。 身為商務用 Office 365 訂閱的系統管理員，您可以變更貴組織每個使用者的上方瀏覽列中所顯示的預設佈景主題。 您可以新增公司的徽標並變更色彩，使其符合其他品牌的色彩。 您甚至可以新增目的地連結供使用者選取您的徽標時流覽到。 您可以在這裡看到 Office 365 的預設主題和自訂主題結果。
+瞭解如何在 Microsoft 365 系統管理中心中自訂您的主題。 做為 Microsoft 商務用 Microsoft 365 訂閱的系統管理員，您可以變更顯示在組織中所有人員的上方導覽列中的預設主題。 您可以新增公司的徽標並變更色彩，使其符合其他品牌的色彩。 您甚至可以新增目的地連結供使用者選取您的徽標時流覽到。 您可以在這裡看到預設主題和自訂主題結果 Microsoft 365。
   
-![預設 Office 365 主題和自訂 Office 365 主題](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
+![預設的 Microsoft 365 主題和自訂的 Microsoft 365 主題](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
   
 ## <a name="customize-your-theme-in-the-admin-center"></a>在系統管理中心自訂您的主題
 
@@ -64,7 +64,7 @@ ms.locfileid: "42826324"
     
 4. 選取 [儲存變更]****。
     
-您會立即在系統管理中心看到新的主題，並在一段短暫的延遲之後看到365它，包括 Outlook 中的頁面、SharePoint、SharePoint 行動[應用程式 iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)，以及[SharePoint 適用于 Android 的行動應用程式](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)。 請參閱下圖，取得您從系統管理中心自訂主題變更的範例。
+您會立即在系統管理中心看到新的主題，您會在一段短暫的延遲之後看到365它，包括 Outlook、SharePoint [SharePoint 行動應用程式中 iOS 的](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)網頁，以及[適用于 Android 的行動應用程式 SharePoint](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)。 請參閱下圖，取得您從系統管理中心自訂主題變更的範例。
 
 ![m365-系統管理員-租使用者-主題-概念](../../media/m365-admin-tenant-theme-conceptual.png)
 
@@ -80,7 +80,7 @@ ms.locfileid: "42826324"
   
 文字、圖示或按鈕色彩及背景色彩之間的建議對比比率為4.5：1。
 
-以下是簡單的流程圖，可協助您快速設定組織的視覺衝擊力自訂 Office 365 主題：
+以下是簡單的流程圖，可協助您快速設定組織的視覺衝擊力自訂 Microsoft 365 主題：
   - 我想要使用的是彩色版本的標誌。
     - 建議下列設定：
       - **標誌圖像**：您的組織的色彩標誌。

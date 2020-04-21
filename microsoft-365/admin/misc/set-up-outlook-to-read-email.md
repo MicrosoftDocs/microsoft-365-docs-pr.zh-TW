@@ -1,5 +1,5 @@
 ---
-title: 設定 Outlook 以讀取電子郵件
+title: 設定 Outlook 讀取電子郵件
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,62 +18,62 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
-description: 了解如何設定在 Outlook 中的電子郵件帳戶，Windows 和 Mac，以及安裝 Office 應用程式和存取線上電子郵件。
-ms.openlocfilehash: f5be456c845381a07c380e4d480e03a39c42f0ed
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 瞭解如何在 Outlook 中為 Windows 和 Mac 設定電子郵件帳戶，以及如何在線上安裝 Office 應用程式和存取電子郵件。
+ms.openlocfilehash: 6f256a9b528c5ee51490007f388b8d3bd5a92f02
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361234"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627785"
 ---
-# <a name="set-up-outlook-to-read-email"></a>設定 Outlook 以讀取電子郵件
+# <a name="set-up-outlook-to-read-email"></a>設定 Outlook 讀取電子郵件
 
-Office 365 訂閱隨附網頁型 Outlook 中，但如果您的訂閱包含 Office 用戶端應用程式，您也會收到您可以在您的個人電腦或裝置安裝的 Outlook。
+您的 Microsoft 365 訂閱隨附網路型 Outlook，但是如果您的訂閱包含 Office 用戶端應用程式，您也會收到可在您的個人電腦或裝置上安裝的 Outlook。
   
-## <a name="set-up-an-email-account-in-outlook"></a>設定在 Outlook 中的電子郵件帳戶
+## <a name="set-up-an-email-account-in-outlook"></a>在 Outlook 中設定電子郵件帳戶
 
-開啟 Outlook，第一次自動帳戶精靈隨即開啟。 如果沒看到，請選擇 [**檔案**，然後**新增帳戶**]。
+您第一次開啟 Outlook 時，會開啟自動帳戶嚮導。 如果不是，**請選擇 [** 檔案] [**新增帳戶**]。
   
-1. 在 [**電子郵件帳戶**] 頁面上，選擇 [**下一步** \> **新增帳戶**。
+1. 在 [**電子郵件帳戶**] 頁面上，選擇 **[下一步** \> **新增帳戶**]。
     
-2. 在 [**自動帳戶設定**] 頁面上，輸入您的名稱、 電子郵件地址和密碼，，然後選擇 [**下一步** \> **完成**。
+2. 在 [**自動帳戶設定**] 頁面上，輸入您的姓名、電子郵件地址和密碼，然後選擇 [**下一步] [下一步** \> **]**。
     
-閱讀[完整的文章](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)。
+閱讀[整篇文章](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)。
   
-## <a name="how-do-i-install-the-office-apps-including-outlook"></a>如何安裝 Office 應用程式，包括 Outlook？
+## <a name="how-do-i-install-the-office-apps-including-outlook"></a>如何安裝 Office 應用程式（包括 Outlook）？
 
 1. 移至[admin.microsoft.com/OLS/MySoftware](https://admin.microsoft.com/OLS/MySoftware.aspx)。
     
 2. 使用公司或學校帳戶登入。
     
-3. 在 [管理安裝上選取 [**安裝**]。
+3. 在 [管理安裝] 中，選取 [**安裝**]。
     
-## <a name="set-up-an-email-account-in-outlook-2016-for-mac"></a>Mac 版 Outlook 2016 中的電子郵件帳戶設定
+## <a name="set-up-an-email-account-in-outlook-2016-for-mac"></a>在 Outlook 2016 for Mac 中設定電子郵件帳戶
 
-開啟 Outlook app 中，第一次設定我的收件匣] 精靈隨即開啟。 在精靈中： 
+當您第一次開啟 Outlook app 時，請設定 [收件匣] 嚮導隨即開啟。 在 [嚮導] 中： 
   
-1. 在 [**設定我的收件匣**] 頁面上，選取 [**新增帳戶**]。
+1. 在 [**設定我的收件**匣] 頁面上，選取 [**新增帳戶**]。
     
-2. 在 [**帳戶**] 頁面上，選取 [ **Exchange 或 Office 365**。
+2. 在 [**帳戶**] 頁面上，選取 [ **Exchange] 或 [Office 365**]。
     
-3. 在 [**輸入您的 Exchange 帳戶資訊**] 頁面上輸入您的名稱、 電子郵件地址和密碼，，，然後選取 [**新增帳戶**。
+3. 在 [**輸入您的 Exchange 帳戶資訊**] 頁面上，輸入您的姓名、電子郵件地址和密碼，然後選取 [**新增帳戶**]。
     
-閱讀[完整的文章](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac)。 
+閱讀[整篇文章](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac)。 
   
-## <a name="how-do-i-access-my-mail-online"></a>如何存取線上我的郵件？
+## <a name="how-do-i-access-my-mail-online"></a>如何線上存取我的郵件？
 
-您登入 Office 365 之後，請選取 [ **Outlook**]。
+登入 Microsoft 365 後，請選取 [ **Outlook**]。
   
-![Office 365 首頁上，以反白顯示的 Outlook 應用程式](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![Outlook 應用程式已反白顯示的 Microsoft 365 首頁](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
-找不到您要的 App 嗎？請從應用程式啟動器選取 [所有 App]**** 以查看依字母順序排序的可用 Office 365 App 清單。您可從該處搜尋特定的 App。 
+Can't find the app you're looking for? 從應用程式啟動器中，選取 [**所有應用程式**]，以查看您可以使用的 Microsoft 365 應用程式的字母順序清單。 From there, you can search for a specific app. 
   
 ## <a name="how-do-i-know-if-my-subscription-includes-office-apps"></a>如何知道我的訂閱是否包含 Office 應用程式？
 
-Office 365 商務進階版和 Office 365 商務版包含 Office 應用程式。 如需詳細資訊，請參閱[Office 365 商務版方案](https://go.microsoft.com/fwlink/p/?LinkId=723731)或[Office 365 企業版方案](https://go.microsoft.com/fwlink/p/?LinkId=800029)。
+Microsoft 365 商務版和 Microsoft 365 應用程式包含 Office 應用程式。 如需詳細資訊，請參閱[Microsoft 365 for business 方案](https://go.microsoft.com/fwlink/p/?LinkId=723731)或[Office 365 企業版方案](https://go.microsoft.com/fwlink/p/?LinkId=800029)。
   
-## <a name="how-do-i-determine-what-subscription-i-have"></a>如何判斷我有何種訂閱？
+## <a name="how-do-i-determine-what-subscription-i-have"></a>如何判斷我有哪些訂閱？
 
-若要判斷您的訂閱，請參閱[我有何種訂閱？](../admin-overview/what-subscription-do-i-have.md)
+若要判斷您的訂閱，請參閱[我有哪些訂閱？](../admin-overview/what-subscription-do-i-have.md)
   
 

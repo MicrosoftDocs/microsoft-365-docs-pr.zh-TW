@@ -18,25 +18,25 @@ search.appverid:
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
-description: 零小時自動清除（ZAP）是 Office 365 中的電子郵件保護功能，可偵測已傳遞至 Exchange Online 的垃圾郵件、惡意程式碼或網路釣魚郵件。 ZAP 執行此作業的方式取決於偵測到的惡意內容類型。
-ms.openlocfilehash: 44bdab5d37863bc543d953a89ac3129b3530437d
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+description: 零小時自動清除（ZAP）是 Microsoft 365 中的電子郵件保護功能，可偵測已傳遞至 Exchange Online 的垃圾郵件、惡意程式碼或網路釣魚郵件。 ZAP 執行此作業的方式取決於偵測到的惡意內容類型。
+ms.openlocfilehash: a819269d8596f12e76cbd17b5d1302cd56837f14
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516770"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630806"
 ---
-# <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-office-365"></a>零小時自動清除（ZAP）-防護 Office 365 中的垃圾郵件和惡意程式碼
+# <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>零小時自動清除（ZAP）-防護 Microsoft 365 中的垃圾郵件和惡意程式碼
 
 ## <a name="overview"></a>概觀
 
-零小時自動清除（ZAP）是 Office 365 中的電子郵件保護功能，retroactively 偵測並 neutralizes 已傳遞至 Exchange Online 信箱的惡意網路釣魚、垃圾郵件或惡意程式碼郵件。
+零小時自動清除（ZAP）是 Microsoft 365 中的電子郵件保護功能，retroactively 偵測並 neutralizes 已傳遞至 Exchange Online 信箱的惡意網路釣魚、垃圾郵件或惡意程式碼郵件。
 
-您可以使用包含 Exchange Online 信箱之任何 Office 365 訂閱隨附的預設 Exchange Online Protection （EOP）的 ZAP。 在會保護內部部署 Exchange 信箱的獨立 EOP 環境中，ZAP 無法運作。
+您可以使用包含 Exchange Online 信箱之任何 Microsoft 365 訂閱隨附的預設 Exchange Online Protection （EOP）的 ZAP。 在會保護內部部署 Exchange 信箱的獨立 EOP 環境中，ZAP 無法運作。
 
 ## <a name="how-zap-works"></a>ZAP 的運作方式
 
-Office 365 每天都會即時更新垃圾郵件和惡意程式碼簽名。 不過，使用者仍然可以接收惡意郵件，但有各種原因，包括在傳遞給使用者後 weaponized 內容。 在不斷監控 Office 365 垃圾郵件和惡意程式碼簽名的更新時，ZAP 會解決此問題。 ZAP 可以尋找及移除已在使用者信箱中的郵件。
+Microsoft 365 每天都會即時更新垃圾郵件和惡意程式碼簽名。 不過，使用者仍然可以接收惡意郵件，但有各種原因，包括在傳遞給使用者後 weaponized 內容。 ZAP 會持續監控 Microsfot 365 垃圾郵件和惡意程式碼簽章的更新，以解決此問題。 ZAP 可以尋找及移除已在使用者信箱中的郵件。
 
 對使用者而言，ZAP 動作是無縫的;如果偵測到郵件並加以移動，不會通知他們。
 
@@ -46,7 +46,7 @@ Office 365 每天都會即時更新垃圾郵件和惡意程式碼簽名。 不�
 
 若為傳遞之後發現包含惡意程式碼的**讀取或未讀取郵件**，ZAP 會隔離包含惡意程式碼附件的郵件。 只有系統管理員可以從隔離區中查看和管理惡意程式碼郵件。
 
-在反惡意程式碼原則中，預設會啟用惡意程式碼 ZAP。 如需詳細資訊，請參閱[Configure In Office 365 的反惡意程式碼原則](configure-anti-malware-policies.md)。
+在反惡意程式碼原則中，預設會啟用惡意程式碼 ZAP。 如需詳細資訊，請參閱[在 Microsoft 365 中設定反惡意程式碼原則](configure-anti-malware-policies.md)。
 
 ### <a name="phish-zap"></a>網路釣魚 ZAP
 
@@ -54,13 +54,13 @@ Office 365 每天都會即時更新垃圾郵件和惡意程式碼簽名。 不�
 
 - **新增 X-Header**，**並將主旨行前置文字**： ZAP 不會對郵件採取任何動作。
 
-- **將郵件移至垃圾郵件**：只要信箱上啟用垃圾郵件規則（預設為啟用），ZAP 就會將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[在 Office 365中設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
+- **將郵件移至垃圾郵件**：只要信箱上啟用垃圾郵件規則（預設為啟用），ZAP 就會將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[在 Microsoft 365 中的 Exchange Online 信箱上設定垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
 - **將郵件重新導向至電子郵件地址**、**刪除郵件**、**隔離訊息**： ZAP 會隔離郵件。 只有系統管理員可以查看和管理網路釣魚隔離的郵件。
 
 根據預設，反垃圾郵件原則中已啟用網路釣魚 ZAP，**網路釣魚電子郵件**篩選決定的預設動作為**隔離訊息**，這表示網路釣魚網站預設會隔離郵件。
 
-如需設定垃圾郵件篩選 verdicts 的詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+如需設定垃圾郵件篩選 verdicts 的詳細資訊，請參閱[在 Microsoft 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 ### <a name="spam-zap"></a>垃圾郵件 ZAP
 
@@ -68,13 +68,13 @@ Office 365 每天都會即時更新垃圾郵件和惡意程式碼簽名。 不�
 
 - **新增 X-Header**，**並將主旨行前置文字**： ZAP 不會對郵件採取任何動作。
 
-- **將郵件移至垃圾郵件**：只要信箱上啟用垃圾郵件規則（預設為啟用），ZAP 就會將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[在 Office 365中設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
+- **將郵件移至垃圾郵件**：只要信箱上啟用垃圾郵件規則（預設為啟用），ZAP 就會將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[在 Microsoft 365 中的 Exchange Online 信箱上設定垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
 - **將郵件重新導向至電子郵件地址**、**刪除郵件**、**隔離訊息**： ZAP 會隔離郵件。 使用者可以查看和管理自己的垃圾郵件隔離郵件。
 
 根據預設，反垃圾郵件原則中已啟用垃圾郵件 ZAP，**垃圾**郵件篩選判定的預設動作是**將郵件移至垃圾郵件資料夾**，這表示垃圾郵件 ZAP 預設會將**未讀取**的郵件移至 [垃圾郵件] 資料夾。
 
-如需設定垃圾郵件篩選 verdicts 的詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+如需設定垃圾郵件篩選 verdicts 的詳細資訊，請參閱[在 Microsoft 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 ### <a name="zap-considerations-for-office-365-advanced-threat-protection-atp"></a>Office 365 高級威脅防護（ATP）的 ZAP 考慮
 
@@ -90,7 +90,7 @@ Office 365 每天都會即時更新垃圾郵件和惡意程式碼簽名。 不�
 
 A：您應該遵循正常的報告過程[誤報](report-junk-email-messages-to-microsoft.md)。 郵件會從 [收件匣] 移至 [垃圾郵件] 資料夾，其唯一原因是服務已判斷郵件是垃圾郵件或惡意的。
 
-### <a name="q-what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>問：我使用 Office 365 隔離而非 [垃圾郵件] 資料夾的情況為何？
+### <a name="q-what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>問：如果我使用隔離資料夾而非 [垃圾郵件] 資料夾，該怎麼辦？
 
 A：根據本主題稍早所述的設定反垃圾郵件原則，ZAP 會對郵件採取動作。
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Outlook 中將通訊群組清單升級至 Office 365 群組
+title: 將通訊群組清單升級至 Outlook 中的 Microsoft 365 群組
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,31 +18,31 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
-description: 瞭解如何將一或多個通訊群組清單升級至 Outlook 中的 Office 365 群組，以及如何使用 PowerShell 同時升級多個通訊群組清單。
-ms.openlocfilehash: c3acf1d47a37d79d666b1b951bea704c273ccf09
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 瞭解如何將一或多個通訊群組清單升級至 Outlook 中的 Microsoft 365 群組，以及如何使用 PowerShell 同時升級多個通訊群組清單。
+ms.openlocfilehash: 14eeedcc898c13c31362731699f575bc06f96878
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212278"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627989"
 ---
-# <a name="upgrade-distribution-lists-to-office-365-groups-in-outlook"></a>在 Outlook 中將通訊群組清單升級至 Office 365 群組
+# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>將通訊群組清單升級至 Outlook 中的 Microsoft 365 群組
 
-您可以使用 Outlook 將通訊群組清單升級至 Office 365 群組。 這是一種極好的方法，可讓貴組織的通訊組列出 Office 365 群組的所有功能和功能。 [為什麼您應該將 Outlook 中的通訊群組清單升級成群組](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+您可以使用 Outlook 將通訊群組清單升級至 Microsoft 365 群組。 這是一種極好的方法，可讓貴組織的通訊組列出 Microsoft 365 群組的所有功能和功能。 [為什麼您應該將 Outlook 中的通訊群組清單升級成群組](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
 
 您可以一次升級一個 DLs，也可以同時升級多個。
 
-## <a name="upgrade-one-or-many-distribution-lists-to-office-365-groups-in-outlook"></a>將一或多個通訊群組清單升級至 Outlook 中的 Office 365 群組
+## <a name="upgrade-one-or-many-distribution-lists-to-microsoft-365-groups-in-outlook"></a>將一或多個通訊群組清單升級至 Outlook 中的 Microsoft 365 群組
 
-您必須是 Office 365 全域管理員或 Exchange 系統管理員，才可升級通訊群組清單。 若要升級至 Office 365 群組，通訊群組必須擁有信箱的擁有者。 
+您必須是全域系統管理員或 Exchange 系統管理員，才可升級通訊群組清單。 若要升級為 Microsoft 365 群組，通訊群組必須擁有信箱的擁有者。 
 
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>。
 
-2. 在 Exchange 系統管理中心中，**移至** \> [收件者**群組**]。<br/>您會看到一則通知，指出您有資格升級至 Office 365 群組的通訊群組清單（也稱為**通訊群組**）。<br/> ![選取 [快速入門] 按鈕](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. 在 Exchange 系統管理中心中，**移至** \> [收件者**群組**]。<br/>您會看到一則通知，指出您有資格升級為 Microsoft 365 群組的通訊群組清單（也稱為**通訊群組**）。<br/> ![選取 [快速入門] 按鈕](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
 3. 從 [**群組**] 頁面中選取一或多個通訊群組清單（也稱為**通訊群組**）。<br/>![選取通訊群組](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-4. 選取 [升級] 圖示。<br/>![升級至 Office 365 群組圖示](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+4. 選取 [升級] 圖示。<br/>![升級至 Microsoft 365 群組圖示](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
 5. 在 [資訊] 對話方塊中，選取 **[是]** 以確認升級。 會立即開始處理常式。 視您所升級的 DLs 大小和數目而定，此程式可能需要數分鐘或數小時的時間。<br/>如果無法升級通訊群組清單，就會顯示一個對話方塊。 查看[哪些通訊群組清單無法升級？](#which-distribution-lists-cannot-be-upgraded)。
 
@@ -77,7 +77,7 @@ ms.locfileid: "43212278"
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
 
 > [!NOTE]
-> 您也可以使用[set-unifiedgroup](https://go.microsoft.com/fwlink/?LinkID=786379) PowerShell Cmdlet，將單一通訊群組清單升級至 Office 365 群組。
+> 您也可以使用[set-unifiedgroup](https://go.microsoft.com/fwlink/?LinkID=786379) PowerShell Cmdlet，將單一通訊群組清單升級至 Microsoft 365 群組。
 
 ### <a name="upgrade-multiple-dls-in-a-batch"></a>在批次中升級多個 DLs
 
@@ -116,7 +116,7 @@ Get-DistributionGroup| Foreach-Object{
 }
 ```
 
-## <a name="faq-about-upgrading-distribution-lists-to-office-365-groups-in-outlook"></a>在 Outlook 中將通訊群組清單升級至 Office 365 群組的常見問題
+## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>將通訊群組清單升級至 Outlook 中 Microsoft 365 群組的常見問題
 
 ### <a name="which-distribution-lists-cannot-be-upgraded"></a>哪些通訊群組清單無法升級？
 
@@ -149,11 +149,11 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="who-can-run-the-upgrade-scripts"></a>誰可以執行升級腳本？
 
-具有 Office 365 全域管理員或 Exchange 系統管理員許可權的人員。
+具有全域管理員或 Exchange 系統管理員許可權的人員。
 
 ### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-a-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>為什麼連絡人卡片仍顯示通訊群組清單？ 若要防止已升級的通訊群組清單顯示在我的自動建議清單中，該怎麼辦？
 
-- 對於 Outlook：當有人嘗試在遷移後輸入 Office 365 組名稱時，在 Outlook 中嘗試傳送電子郵件時，收件者將會解析為通訊群組清單，而不是群組。 收件者的連絡人卡片將會是通訊群組清單連絡人卡片。 這是因為 Outlook 中的收件者緩存或 nick 名稱快取。 電子郵件會順利傳送至群組，但是可能會造成對寄件者的混淆。<br/>您可以執行本主題中的步驟， [[Outlook AutoComplete] 清單的相關資訊](https://go.microsoft.com/fwlink/?LinkID=798736)可重設快取，以修正此問題。
+- 若為 Outlook：當有人嘗試在遷移後輸入 Microsoft 365 群組名稱時，在 Outlook 中嘗試傳送電子郵件時，收件者將會解析為通訊群組清單，而不是群組。 收件者的連絡人卡片將會是通訊群組清單連絡人卡片。 這是因為 Outlook 中的收件者緩存或 nick 名稱快取。 電子郵件會順利傳送至群組，但是可能會造成對寄件者的混淆。<br/>您可以執行本主題中的步驟， [[Outlook AutoComplete] 清單的相關資訊](https://go.microsoft.com/fwlink/?LinkID=798736)可重設快取，以修正此問題。
 
 - 針對網頁上的 Outlook：在 Outlook 網頁版中，通訊群組清單收件者仍會保留在快取中。 您可以依照「[從自動完成」清單中移除建議的名稱或電子郵件地址](https://support.office.com/article/9E1419D9-E88F-445B-B07F-F558B8A37C58.aspx)中的步驟進行，以重新整理快取，以查看群組連絡人卡片。
 

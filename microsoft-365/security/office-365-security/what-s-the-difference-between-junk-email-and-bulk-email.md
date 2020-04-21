@@ -16,16 +16,16 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: 本主題說明垃圾郵件（垃圾郵件）和大量電子郵件之間的差異，以及 Office 365 中的相關控制項。
-ms.openlocfilehash: 41dedd02febc40b73dc585961487f89bbc6db54a
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 15ca00b007ef0b8470e1b30608a695a90bd638b2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43230953"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630830"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>垃圾郵件和大量電子郵件有什麼不同?
 
-Office 365 客戶在 Exchange Online 或獨立 Exchange Online Protection （EOP）中擁有信箱的客戶有時候會問：「垃圾郵件和大量電子郵件有什麼不同？」 本主題說明 EOP 中可用的控制項的差異和描述。
+在 Exchange Online 或獨立 Exchange Online Protection （EOP）中擁有信箱的 Microsoft 365 客戶有時會問：「垃圾郵件和大量電子郵件有什麼不同？」。 本主題說明 EOP 中可用的控制項的差異和描述。
 
 - **垃圾郵件**為垃圾郵件，也就是垃圾郵件，也就是已正確識別的垃圾郵件。 根據預設，EOP 會根據來源電子郵件伺服器的信譽拒絕垃圾郵件。 如果郵件通過來源 IP 檢查，它會傳送至垃圾郵件篩選。 如果郵件是由垃圾郵件篩選歸類為垃圾郵件，則郵件預設會傳送給預定收件者，並移至其 [垃圾郵件] 資料夾。
 

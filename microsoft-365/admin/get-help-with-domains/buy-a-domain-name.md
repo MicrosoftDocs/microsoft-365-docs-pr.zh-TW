@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中購買網域名稱
+title: 購買網域名稱
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
-description: 瞭解如何在 Office 365 中購買功能變數名稱。
+description: 瞭解如何在 Microsoft 365 中購買功能變數名稱。
 ms.custom: okr_smb
-ms.openlocfilehash: 89bc24683cd98d2c9f420d1470a864eef857c9b4
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 3df4ec9014e2e65288cb30fd9203db4a11708369
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211143"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628587"
 ---
-# <a name="buy-a-domain-name-in-office-365"></a>在 Office 365 中購買網域名稱
+# <a name="buy-a-domain-name"></a>購買網域名稱
 
  *若要新增、修改或移除網域，您**必須**是[企業或企業方案](https://products.office.com/business/office)的**全域系統管理員**。這些變更會影響整個承租人、*自訂*的系統管理員或*一般使用者*無法進行這些變更。*  
 
@@ -93,17 +93,17 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 如果您還沒有自己的網域，您可以輕鬆地在線上向網域名稱註冊機構、網域轉售商，甚至是目前的網際網路提供者購買網域。您註冊 由 21Vianet 提供的 Office 365 時即會獲得網域名稱，例如 contoso.partner.onmschina.cn，但您可能會想要使用自訂網域名稱，例如 fourthcoffee.com。
   
-如要在 Office 365 中設定網域名稱，您必須擁有網域，而且必須變更網域的幾個 DNS 記錄。
+若要在 Microsoft 365 中設定網域，您必須擁有網域，並變更您網域的一些 DNS 記錄。
   
 > [!CAUTION]
-> 部分網域註冊機構或 DNS 主機服務提供者不允許建立 Office 365 所需的所有 DNS 記錄。下列主機服務提供者則支援所有必要的記錄。如果您想使用其他的主機服務提供者，請[Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)。 
+> 有些網域註冊機構或 DNS 主機服務提供者不允許建立 Microsoft 365 所需的所有 DNS 記錄。 下列主機服務提供者則支援所有必要的記錄。 如果您想使用其他的主機服務提供者，請[Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)。 
   
-(在網域註冊機構) 註冊好您的網域後，請以系統管理員身分登入 Office 365 並設定網域，以將它用於電子郵件地址及其他服務。
+在您註冊網域（在網域註冊機構）之後，請以系統管理員身分登入 Microsoft 365，並設定您的網域，這樣您就可以使用電子郵件地址和其他服務。
   
 > [!NOTE]
-> The SharePoint Online Public Website information in this article only applies if your organization purchased Office 365 prior to March 9, 2015. 
+> 本文中 SharePoint Online 公用網站資訊僅適用于您的組織在365年3月 9 2015 日之前購買 Microsoft。 
 
-## <a name="domain-registrars-that-support-all-dns-records-required-for-office-365"></a>支援 Office 365 所需之所有 DNS 記錄的網域註冊機構
+## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>支援 Microsoft 365 所需之所有 DNS 記錄的網域註冊機構
 
 - [Oray](https://oray.com/)
     
@@ -117,10 +117,10 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 ## <a name="related-articles"></a>相關文章
 
-[新增網域至 Office 365](../setup/add-domain.md)
+[新增網域至 Microsoft 365](../setup/add-domain.md)
 
 [網域常見問題集](../setup/domains-faq.md)
 
-[取得 Office 365 網域的說明](get-help-with-domains.md)
+[取得網域的說明](get-help-with-domains.md)
 
-[更新 DNS 記錄以保留您的網站與目前的主機服務提供者](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider) 
+[更新 DNS 記錄以將您的網站保留在目前的主機服務提供者](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider)。

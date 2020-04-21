@@ -1,5 +1,5 @@
 ---
-title: 在 Network Solutions 建立 Office 365 的DNS 記錄
+title: 在 Microsoft 的網路解決方案中建立 DNS 記錄
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
-description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以用於 Office 365 的網路解決方案。
-ms.openlocfilehash: 6bbe954f763e0cb06e9bf32b991e60da34393c57
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 瞭解如何驗證您的網域，並在 Microsoft 的網路解決方案中設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄。
+ms.openlocfilehash: e7ce1dd633aa916643f3dcbf7900fa7831608e78
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211119"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629296"
 ---
-# <a name="create-dns-records-at-network-solutions-for-office-365"></a>在 Network Solutions 建立 Office 365 的DNS 記錄
+# <a name="create-dns-records-at-network-solutions-for-microsoft"></a>在 Microsoft 的網路解決方案中建立 DNS 記錄
 
  若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
   
@@ -37,17 +37,17 @@ ms.locfileid: "43211119"
   
 - [新增 TXT 記錄以供驗證](#add-a-txt-record-for-verification)
     
-- [新增 MX 記錄，以將寄往您網域的電子郵件轉至 Office 365](#add-an-mx-record-so-email-for-your-domain-will-come-to-office-365)
+- [新增 MX 記錄，使您網域的電子郵件將會傳送給 Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
-- [新增 Office 365 所需的 CNAME 記錄](#add-the-cname-records-that-are-required-for-office-365)
+- [新增 Microsoft 所需的 CNAME 記錄](#add-the-cname-records-that-are-required-for-microsoft)
     
 - [新增 SPF 的 TXT 記錄以協助防範垃圾郵件](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [新增兩筆 Office 365 所需的 SRV 記錄](#add-the-two-srv-records-that-are-required-for-office-365)
+- [新增 Microsoft 所需的兩筆 SRV 記錄](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-在 Network Solutions 新增這些記錄之後，您的網域就會設定為搭配 Office 365 服務使用。
+在 [網路方案] 中新增這些記錄之後，您的網域就會設定為與 Microsoft 服務搭配使用。
   
-若要了解使用 Office 365 網站的虛擬主機和 DNS，請參閱[搭配 Office 365 使用公用網站](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)。
+若要深入瞭解 Microsoft 的網站的主控和 DNS，請參閱搭配[Microsoft 使用公用網站](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)。
   
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
@@ -55,7 +55,7 @@ ms.locfileid: "43211119"
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 <a name="BKMK_verify"> </a>
 
-在您將自己的網域用於 Office 365 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Office 365 就能確信您擁有該網域。
+在將您的網域與 Microsoft 搭配使用之前，我們必須先確認您擁有該網域。 您能夠在您的網域註冊機構登入您的帳戶，並為您擁有網域的 Microsoft 建立 DNS 記錄證明。
   
 > [!NOTE]
 > 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
@@ -91,7 +91,7 @@ ms.locfileid: "43211119"
     
     |**Host**|**TTL**|**Text**|
     |:-----|:-----|:-----|
-    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)   |
+    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 從表格中，使用您的特定**目的地或指向位址**值。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)   |
        
     ![在新記錄的方塊中輸入或貼上值](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
@@ -105,9 +105,9 @@ ms.locfileid: "43211119"
   
 9. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
-現在您已在網域註冊機構網站新增記錄，請返回 Office 365 並要求 Office 365 尋找該記錄。
+現在，您已在網域註冊機構的網站上新增記錄，您會回到 Microsoft 並要求記錄。
   
-在 Office 365 找到正確的 TXT 記錄後，您的網域就完成驗證了。
+當 Microsoft 找到正確的 TXT 記錄後，您的網域就會經過驗證。
 
 1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
     
@@ -126,7 +126,7 @@ ms.locfileid: "43211119"
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>新增 MX 記錄，以將寄往您網域的電子郵件轉至 Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，使您網域的電子郵件將會傳送給 Microsoft
 <a name="BKMK_add_MX"> </a>
 
 請依照下列步驟操作或[觀看影片 (從 3:51 處開始)](https://support.office.com/article/Video-Create-DNS-records-at-Network-Solutions-for-Office-365-c49698c2-6991-47fb-b5ac-18e49a505099?ui=en-US&amp;rs=en-US&amp;ad=US)。
@@ -160,7 +160,7 @@ ms.locfileid: "43211119"
     
     |**優先順序**|**TTL**|**Mail server (郵件伺服器)**|
     |:-----|:-----|:-----|
-    |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |3600  <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **附注：** 從您的 Office 365 帳戶取得您* \<的網域金鑰\> * 。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |3600  <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![在新記錄的方塊中輸入或貼上值](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
@@ -184,7 +184,7 @@ ms.locfileid: "43211119"
     
     ![選取 [儲存變更]](../../media/24432ec6-666b-4612-9488-37c06437959b.png)
   
-## <a name="add-the-cname-records-that-are-required-for-office-365"></a>新增 Office 365 所需的 CNAME 記錄
+## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的 CNAME 記錄
 <a name="BKMK_add_CNAME"> </a>
 
 請依照下列步驟操作或[觀看影片 (從 4:43 處開始)](https://support.office.com/article/Video-Create-DNS-records-at-Network-Solutions-for-Office-365-c49698c2-6991-47fb-b5ac-18e49a505099?ui=en-US&amp;rs=en-US&amp;ad=US)。
@@ -238,7 +238,7 @@ ms.locfileid: "43211119"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Office 365 建立一個新的記錄。 而是，請將必要的 Office 365 值新增到目前的記錄，以便擁有包含這兩組值的*單一* SPF 記錄。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果您已有網域的 SPF 記錄，請不要為 Microsoft 建立新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 
   
 請依照下列步驟操作或[觀看影片 (從 5:35 處開始)](https://support.office.com/article/Video-Create-DNS-records-at-Network-Solutions-for-Office-365-c49698c2-6991-47fb-b5ac-18e49a505099?ui=en-US&amp;rs=en-US&amp;ad=US)。
   
@@ -283,7 +283,7 @@ ms.locfileid: "43211119"
     
     ![選取 [儲存變更]](../../media/600b8c6d-184f-4213-a50e-8f119ebf3ff0.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>新增兩筆 Office 365 所需的 SRV 記錄
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的兩筆 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
 
 請依照下列步驟操作或[觀看影片 (從 6:18 處開始)](https://support.office.com/article/Video-Create-DNS-records-at-Network-Solutions-for-Office-365-c49698c2-6991-47fb-b5ac-18e49a505099?ui=en-US&amp;rs=en-US&amp;ad=US)。
@@ -317,7 +317,7 @@ ms.locfileid: "43211119"
     
     （從下拉式清單中選擇 [**服務**] 和 [**通訊協定**] 值。） 
     
-    |**服務**|**Protocol** (通訊協定)|**TTL**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|
+    |**Service** (服務)|**Protocol** (通訊協定)|**TTL**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
     |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |

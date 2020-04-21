@@ -19,22 +19,22 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: 瞭解如何將流量路由傳送至 Office 365 外部所主控的現有公用網站（如果您已將 Office 365 設定為管理自訂網域的 DNS 記錄）。
-ms.openlocfilehash: 3e71925f9b50e5520bd383aa5318db513202f6ec
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: 瞭解如何將流量路由傳送至 Microsoft 所主控的現有公用網站（如果您已將 Microsoft 設定為管理自訂網域的 DNS 記錄）。
+ms.openlocfilehash: 08a4e505f4e2a50b3e92cae00b62415e6d02551f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142536"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629116"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>更新 DNS 記錄以便向目前的主機服務提供者保留網站
 
- 在**您的 DNS 主機服務提供者處管理網域的 Office 365 記錄**時，您不需要擔心本主題中的步驟。 您的網站會留在原處，使用者仍然可以存取。 
+ [！附注]**如果您在 DNS 主機服務提供者管理您網域的 Microsoft 記錄**，您不需要擔心本主題中的步驟。 您的網站會留在原處，使用者仍然可以存取。 
   
- **如果 office 365 管理您的 DNS 記錄**，若要將流量路由傳送至 office 365 以外所主控的現有公用網站，請在將您的網域新增至 office 365 後，執行下列動作： 
+ **如果 microsoft 管理您的 DNS 記錄**，若要將流量路由傳送至 microsoft 所主控的現有公用網站，將您的網域新增至 microsoft 之後，請執行下列操作： 
   
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心更新 DNS 記錄
-1. 在系統管理中心中，移至 [**安裝** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
 
 2. 在 [**網域**] 頁面的 [網域] 清單中，選取您要用於網站的網域，然後選取 [管理] 窗格中的 [ **DNS 設定**]。 
     
@@ -48,7 +48,7 @@ ms.locfileid: "43142536"
     
     This must be a  *static*  IP address for the website, not a  *dynamic*  IP address. Check with site where your website is hosted to make sure you can get a static IP address for your public website. 
     
-3. 選取 [儲存]****。 
+3. 選取 **[儲存]**。 
     
 此外，您還可以建立 CNAME 記錄，協助客戶找到您的網站。
   
@@ -60,11 +60,11 @@ ms.locfileid: "43142536"
     
   - 在 [**指向位址**] 中，輸入您網站的完整功能變數名稱（FQDN）（例如，contoso.com）。 
     
-2. 選取 [儲存]****。 
+2. 選取 **[儲存]**。 
     
 最後，請執行下列動作：
   
-[更新網域的 NS 記錄](https://support.office.com/article/a46bec33-2c78-4f45-a96c-b64b2a5bae22.aspx)，使它指向 Office 365。 
+[更新您網域的 NS 記錄](https://support.office.com/article/a46bec33-2c78-4f45-a96c-b64b2a5bae22.aspx)，以指向 Microsoft。 
   
-當 NS 記錄已更新成指向 Office 365 時，表示您的網域已經準備就緒。電子郵件會轉至 Office 365，而您網址的流量會繼續流向您目前的網站主機。
+當 NS 記錄更新為指向 Microsoft 時，您的網域就會全部設定。 電子郵件會路由傳送至 Microsoft，而您的網站位址的流量將繼續前往您目前的網站主機。
  

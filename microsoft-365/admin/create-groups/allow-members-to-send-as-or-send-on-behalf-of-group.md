@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: article
+ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,27 +18,27 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: 瞭解如何允許成員以 Office 365 群組形式傳送電子郵件，或代表 Office 365 群組傳送電子郵件。
-ms.openlocfilehash: b85b0318587058f1c3eb4d681086ccfcad7f1d8d
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 瞭解如何允許成員以 Microsoft 365 群組形式傳送電子郵件，或代表 Microsoft 365 群組傳送電子郵件。
+ms.openlocfilehash: 4492c929fbd30ad77d9ddb23c37299e8734162df
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212102"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630666"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允許成員傳送為或代表群組傳送
 
-已被授與「**代理傳送**」或「**代理傳送**者」許可權的 Office 365 群組成員可以傳送電子郵件給群組，或代表群組傳送電子郵件。 本主題說明管理員如何設定這些許可權。
+「以「**代理傳送**」或「**代理傳送**者」許可權授與之 Microsoft 365 群組的成員可以傳送電子郵件給群組，或代表群組傳送電子郵件。 本主題說明管理員如何設定這些許可權。
   
-例如，如果 Megan Bowen 是**訓練**Office 365 群組的一部分，且具有群組的 [以該群組**傳送**] 許可權，則當她傳送電子郵件做為群組時，它看起來就像是**訓練**群組傳送電子郵件。 
+例如，如果 Megan Bowen 是**訓練**Microsoft 365 群組的一部分，且具有群組的 [以該群組**傳送**] 許可權，則當她傳送電子郵件做為群組時，它看起來就像是**訓練**群組傳送電子郵件。 
   
-「**代理傳送**者」許可權可讓使用者代表 Office 365 群組傳送電子郵件。 例如，如果 Alex Wilber 是「**行銷**Office 365 群組」的一部分，且具有「**代理傳送**者」許可權並傳送電子郵件做為群組，則電子郵件看起來就像是由**Alex Wilber 代表 Marketing**傳送。
+「**代理傳送**者」許可權可讓使用者代表 Microsoft 365 群組傳送電子郵件。 例如，如果 Alex Wilber 是**行銷**Microsoft 365 群組的一部分，且具有「**代理傳送**者」許可權並傳送電子郵件做為群組，則電子郵件看起來就像是由**Alex Wilber 代表 Marketing**所傳送。
 
 > [!IMPORTANT]
 > 您可以為特定使用者設定「**傳送為**」或「**傳送代理**」，但不能同時為這兩者。 如果您同時設定兩者，則預設會**傳送為**。
 
 > [!TIP]
-> 請參閱[代表 Office 365 群組傳送電子郵件](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)，以瞭解如何使用 Outlook 和 outlook 網頁版以從群組傳送電子郵件。
+> 請參閱[代表 Microsoft 365 群組傳送電子郵件](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)，以瞭解如何使用 Outlook 和 outlook 網頁版以從群組傳送電子郵件。
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>允許成員以群組形式傳送電子郵件
 
@@ -52,7 +52,7 @@ ms.locfileid: "43212102"
     
 4. 在 [**傳送方式**] 區段中， **+** 選取要新增為群組傳送之使用者的符號。 
     
-    ![選取加號，以新增您要以 Office 365 群組傳送的使用者。](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![選取加號，以新增您要以 Microsoft 365 群組形式傳送的使用者。](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. 若要從清單中搜尋或挑選使用者的類型。 選取 **[確定]** 並**儲存**。
     
@@ -70,7 +70,7 @@ ms.locfileid: "43212102"
     
 4. 在 [代理傳送者] 區段中， **+** 選取要新增為群組傳送之使用者的符號。 
     
-    ![選取加號，以新增您要以 Office 365 群組傳送的使用者。](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![選取加號，以新增您要以 Microsoft 365 群組形式傳送的使用者。](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. 若要從清單中搜尋或挑選使用者的類型。 選取 **[確定]** 並**儲存**。
     
@@ -78,7 +78,7 @@ ms.locfileid: "43212102"
 
 ## <a name="related-articles"></a>相關文章
 
-[深入瞭解 Office 365 群組](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
+[深入瞭解 Microsoft 365 群組](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
 
 [Add-RecipientPermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
 

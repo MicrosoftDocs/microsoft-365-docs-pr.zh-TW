@@ -1,5 +1,5 @@
 ---
-title: 為您的組織設定待過濾郵件
+title: 為您的組織設定混亂
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,90 +18,90 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
-description: '了解如何啟用或停用待過濾郵件功能的所有或使用 Exchange PowerShell 中您的組織，特定的使用者。 '
-ms.openlocfilehash: 65aa614095ecbebaad3d7eb38af1e74166ce20ac
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: '瞭解如何使用 Exchange PowerShell 來啟用或停用組織中所有或特定使用者的雜亂功能。 '
+ms.openlocfilehash: b71fe20133c78974dc7d1c97a061121eded9f221
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251703"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628924"
 ---
-# <a name="configure-clutter-for-your-organization"></a>為您的組織設定待過濾郵件
+# <a name="configure-clutter-for-your-organization"></a>為您的組織設定混亂
 
 > [!TIP]
-> [焦點收件匣](../setup/configure-focused-inbox.md)將要取代待過濾郵件。 了解更多：[焦點收件匣和待過濾郵件我們計劃的更新](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
+> [焦點收件](../setup/configure-focused-inbox.md)匣即將取代雜亂的收件匣。 深入瞭解：[更新焦點收件匣和待過濾的計畫](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-身為系統管理員，您可能要管理 Office 365 中的 [待過濾郵件] 功能。 若要開啟開啟/關閉待過濾郵件功能的使用者在組織中，您必須使用 Exchange PowerShell。 (個人可以將它開啟開/關使用這些指示：[關閉/使用待過濾郵件在 Outlook 中開啟](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)。) 
+身為系統管理員，您可能需要管理 Microsoft 365 中的雜亂功能。 若要開啟/關閉組織中使用者的雜亂功能，您必須使用 Exchange PowerShell。 （個人可以使用這些指示將其開啟/關閉）：在[Outlook 中關閉/開啟雜亂功能](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)。 
   
-如需使用 Exchange PowerShell 的詳細資訊請參閱[Using PowerShell with Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831)和[Exchange Online PowerShell 連線到](https://go.microsoft.com/fwlink/?LinkID=722415)。 您必須擁有帳戶至少具備 Exchange 服務系統管理員角色和能夠連線至 Exchange Online powershell。 
+請參閱[使用 PowerShell 搭配 Exchange online](https://go.microsoft.com/fwlink/?LinkID=402831)並聯機[至 exchange online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415)以取得使用 exchange PowerShell 的詳細資料。 您必須具有至少具有 Exchange 服務系統管理員角色的帳戶，以及使用 PowerShell 連線至 Exchange Online 的許可權。 
   
-## <a name="turn-clutter-on-using-exchange-powershell"></a>使用 Exchange PowerShell 在開啟待過濾郵件
+## <a name="turn-clutter-on-using-exchange-powershell"></a>使用 Exchange PowerShell 開啟雜亂
 
-您可以啟用待過濾郵件手動信箱透過執行[Set-clutter](https://go.microsoft.com/fwlink/?LinkID=834446) cmdlet。 您也可以執行[Get-clutter](https://go.microsoft.com/fwlink/?LinkID=834759) cmdlet，來檢視您組織中的信箱的待過濾郵件設定。 
+您可以執行[Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) Cmdlet，手動為信箱啟用雜亂功能。 您也可以執行[Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) Cmdlet，以查看組織中信箱的雜亂設定。 
   
-開啟單一使用者名稱為 Allie Bellew 待過濾郵件
+針對名為 Allie 的單一使用者開啟雜亂 Bellew
     
 `Set-Clutter -Identity "Allie Bellew" -Enable $true`
 
 
-## <a name="turn-clutter-off-using-exchange-powershell"></a>關閉待過濾郵件使用 Exchange PowerShell
+## <a name="turn-clutter-off-using-exchange-powershell"></a>使用 Exchange PowerShell 來關閉雜亂功能
 
-您可以停用待過濾郵件手動信箱執行[Set-clutter](https://go.microsoft.com/fwlink/?LinkID=834446) cmdlet。 您也可以執行[Get-clutter](https://go.microsoft.com/fwlink/?LinkID=834759) cmdlet，來檢視您組織中的信箱的**待過濾郵件**設定。 
+您可以執行[Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) Cmdlet，手動停用信箱的雜亂。 您也可以執行[Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) Cmdlet，以查看組織中信箱的**雜亂**設定。 
   
-關閉單一使用者名稱為 Allie Bellew 待過濾郵件：
+針對名為 Allie Bellew 的單一使用者關閉雜亂：
     
 `Set-Clutter -Identity "Allie Bellew" -Enable $false`
 
-如果您使用 PowerShell 大量建立您的使用者，則您必須先執行[Set-clutter](https://go.microsoft.com/fwlink/?LinkID=834446)針對管理待過濾郵件的每位使用者的信箱。 
+如果您使用 PowerShell 大量建立使用者，則必須針對每個使用者的信箱執行[Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) ，以管理雜亂。 
   
-## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>開啟/關閉切換待過濾郵件時顯示在網頁型 Outlook 中的使用者？
+## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>何時會對網頁上的 Outlook 中的使用者顯示雜亂的「開/關」參數？
 <a name="bkmk_onoff"> </a>
 
-身為系統管理員，您可以重新啟用待過濾郵件使用 Exchange PowerShell。 完成之後，將會關閉焦點收件匣和待過濾郵件是作用中一次。 
+身為系統管理員，您可以使用 Exchange PowerShell 重新啟用雜亂功能。 完成此動作後，焦點收件匣會關閉，而雜亂的功能將會重新成為作用中。 
   
- **如果您使用網頁型 Outlook 與 Office 365 商務版訂閱：**
+ **如果您使用的是 Microsoft 365 商務版 Premium 訂閱的 Outlook 網頁版：**
   
-- 如果使用者目前已啟用的待過濾郵件： 
+- 如果使用者目前已啟用雜亂功能： 
     
-  - 會顯示待過濾郵件設定
+  - 會出現雜亂設定
     
-- 如果使用者目前是否有焦點收件匣啟用： 
+- 如果使用者目前已啟用焦點收件匣： 
     
-  - 將不會出現待過濾郵件設定
+  - 不會出現雜亂設定
     
-- 如果已啟用未待過濾郵件或焦點收件匣： 
+- 如果沒有啟用雜亂或焦點收件匣： 
     
-  - 待過濾郵件與焦點收件匣會顯示為使用者的郵件設定] 中的選項
+  - 雜亂及焦點收件匣會顯示為使用者郵件設定中的選項
     
- **如果您使用 Outlook.com:**
+ **如果您使用的是 Outlook.com：**
   
-- 如果使用者目前已啟用的待過濾郵件： 
+- 如果使用者目前已啟用雜亂功能： 
     
-  - 會顯示待過濾郵件設定
+  - 會出現雜亂設定
     
-- 如果使用者目前是否有焦點收件匣啟用： 
+- 如果使用者目前已啟用焦點收件匣： 
     
-  - 將不會出現待過濾郵件設定
+  - 不會出現雜亂設定
     
-- 如果已啟用未待過濾郵件或焦點收件匣： 
+- 如果沒有啟用雜亂或焦點收件匣： 
     
-  - 待過濾郵件與焦點收件匣會顯示為使用者的郵件設定] 中的選項
+  - 雜亂及焦點收件匣會顯示為使用者郵件設定中的選項
     
-- 如果使用者在過去中有些時候啟用焦點收件匣：
+- 如果使用者在過去某點啟用焦點收件匣：
     
-  - 永遠不會出現待過濾郵件設定
+  - 將永遠不會出現雜亂設定
     
-    否則， 
+    否則 
     
-  - 將會出現待過濾郵件設定
+  - 會出現雜亂設定
     
 ## <a name="related-articles"></a>相關文章
 <a name="bkmk_onoff"> </a>
 
-[若要排序低優先順序的郵件，在 Outlook 中使用待過濾郵件](https://support.office.com/article/7755ebf5-4585-469b-b1ab-8b12425c6b6b.aspx)
+[使用雜亂排序 Outlook 中的低優先順序郵件](https://support.office.com/article/7755ebf5-4585-469b-b1ab-8b12425c6b6b.aspx)
     
-[用來排序低優先順序的郵件，在 OWA 中的待過濾郵件](https://support.office.com/article/fe4d64ca-bf73-48f1-91b4-9a659e008bce.aspx)
+[使用雜亂將 OWA 中的低優先順序郵件排序](https://support.office.com/article/fe4d64ca-bf73-48f1-91b4-9a659e008bce.aspx)
     
-[關閉 Outlook 中的待過濾郵件](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)
+[關閉 Outlook 中的雜亂功能](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)
     
 

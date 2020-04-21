@@ -1,5 +1,5 @@
 ---
-title: 設定 Office 365 檔案儲存與共用
+title: 設定檔案儲存與共用
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -27,24 +27,24 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 瞭解如何使用 OneDrive 和小組網站進行檔案儲存與共享。
-ms.openlocfilehash: 6494207518f919a3d984be7e7932740d82e9ea11
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 56057bc33adaf92a415c443bfb7bf89c10f8d646
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209733"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627555"
 ---
-# <a name="set-up-office-365-file-storage-and-sharing"></a>設定 Office 365 檔案儲存與共用
+# <a name="set-up-file-storage-and-sharing"></a>設定檔案儲存與共用
 
 為您的公司設定檔案存放區與共享的其中一個最佳方法，就是使用 OneDrive 和小組網站一起使用。 如果您擁有少數員工的小型企業，這是理想的方式。
 
-觀賞有關在 Office 365 中儲存檔案的簡短影片。<br><br>
+觀賞有關在 Microsoft 365 中儲存檔案的簡短影片。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
 如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-## <a name="where-you-can-store-documents-in-office-365"></a>您可以在 Office 365 中儲存文件的位置
+## <a name="where-you-can-store-documents-in-microsoft-365"></a>您可以在 Microsoft 365 中儲存檔的位置
 
 - OneDrive 是專為個別用途所設計，且有偶然的檔案共用。 
 
@@ -52,7 +52,7 @@ ms.locfileid: "43209733"
 
 OneDrive 和小組網站都為您和您的員工提供隨處存取。
   
-![顯示 Office 365 產品如何使用 OneDrive 或小組網站的圖表](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![顯示 Microsoft 365 產品如何使用 OneDrive 或小組網站的圖表](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 以下是當您同時使用 OneDrive 和小組網站時，在每個位置中儲存內容的建議：
   
@@ -60,7 +60,7 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
 |:-----|:-----|:-----|
 |**儲存位置** <br/> |**功能** <br/> |**在這裡儲存的專案** <br/> |
 |**OneDrive** <br/> |將內容儲存在 OneDrive 中，就像是在您的電腦上儲存檔案;任何人都無法輕易存取。  <br/> 如需詳細資訊，請參閱[什麼是商務 OneDrive？](https://support.office.com/article/187f90af-056f-47c0-9656-cc0ddca7fdc2.aspx) <br/> |其他小組成員不需要定期共同作業或存取的商務檔。  <br/> |
-|**SharePoint 小組網站** <br/> |協作。 當您建立 Office 365 群組時（例如，在 Microsoft 365 系統管理中心、Outlook 中，或在 Microsoft 小組中建立小組）時，會為該群組建立 SharePoint 小組網站。 同樣地，當您從 SharePoint 首頁或新的 SharePoint 系統管理中心建立新的 SharePoint 小組網站時，也會建立 Office 365 群組。 如需詳細資訊，請參閱[什麼是 SharePoint 小組網站？](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)並[在 Online SharePoint 中建立小組網站](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx)。  <br/> |具有共用擁有權的檔案。 建議您組織中每個工作單位使用不同的小組網站。 例如，若要將個人和財務檔存放在小型小組，請建立個別小組網站。  <br/> |
+|**SharePoint 小組網站** <br/> |協作。 當您建立 Microsoft 365 群組時（例如，在 Microsoft 365 系統管理中心、Outlook 中，或在 Microsoft 小組中建立小組），會為該群組建立 SharePoint 小組網站。 同樣地，當您從 SharePoint 首頁或新的 SharePoint 系統管理中心建立新的 SharePoint 小組網站時，也會建立 Microsoft 365 群組。 如需詳細資訊，請參閱[什麼是 SharePoint 小組網站？](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)並[在 Online SharePoint 中建立小組網站](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx)。  <br/> |具有共用擁有權的檔案。 建議您組織中每個工作單位使用不同的小組網站。 例如，若要將個人和財務檔存放在小型小組，請建立個別小組網站。  <br/> |
 
 > [!NOTE]
 > SharePoint 也有其他類型的網站可供商務使用。 您可以使用內部網路中的[通訊網站](https://support.office.com/article/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb.aspx)來發佈廣泛使用者的資訊。 您也可以使用集線網站，連接內部[網路](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx)中的網站。
@@ -69,13 +69,13 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
 
 ### <a name="team-members-can-store-their-own-files-in-onedrive"></a>小組成員可以將自己的檔案儲存在 OneDrive
 
-您公司中的每個人都已指派 Office 365 授權（和 SharePoint 線上）。會取得 OneDrive 雲端儲存空間。 他們可以在這裡儲存商務相關檔案，以供任何裝置存取，而且只有該使用者可以使用這些檔案。 例如，他們可能會儲存草稿提案、其會議筆記或即將交付之示範的腳本。
+您公司中的每位人員（已指派 Microsoft 365 授權（和 SharePoint Online）都會取得 OneDrive 雲端儲存空間。 他們可以在這裡儲存商務相關檔案，以供任何裝置存取，而且只有該使用者可以使用這些檔案。 例如，他們可能會儲存草稿提案、其會議筆記或即將交付之示範的腳本。
   
 員工也可以共用 OneDrive 檔案和資料夾。 如果員工休假或離開公司，則其他人可以存取儲存在 OneDrive 中的共用檔案。
   
 以下是團隊中每個人如何設定 OneDrive 及共用檔案。
 
-1. 請移至<a href="https://portal.office.com/ " target="_blank">Office 365 入口網站</a>，並使用您的使用者名稱和密碼登入。
+1. 移至<a href="https://portal.office.com/ " target="_blank">Microsoft 365 入口網站</a>，然後使用您的使用者名稱和密碼登入。
 
 2. 在應用程式啟動器中，選取 [ **OneDrive**]。
 
@@ -107,7 +107,7 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
   
 1. 在小組網站的首頁上，選擇左側流覽功能表中的 [**檔**]。 這將會帶您前往您的**文件庫**。
   
-2. 當您仍然登入 Office 365 時，請從工作列或其他位置開啟 Windows 檔案**瀏覽器**。 移至您要上傳到小組網站的檔案。
+2. 當您仍然登入 Microsoft 365 時，請從工作列或其他位置開啟 Windows 檔案**資源管理器**。 移至您要上傳到小組網站的檔案。
 
 3. 選取您要上傳到小組網站的檔案，然後將其拖曳至**文件庫**。
   
@@ -166,7 +166,7 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
 
 當您將檔案儲存在 OneDrive，除非您與其他人共用，否則您只能存取它。 當您共用檔時，可以選擇建立可以轉寄的連結，或只與特定人員共用。 您也可以在 OneDrive 中建立個別的資料夾，以用於不同的目的，例如，公用、個人或個別專案。 每個資料夾都可以與不同的人員或群組共用，或者根本沒有任何人。
   
-如需共用的詳細資訊，另請參閱[與 Office 365 共用檔案和資料夾](https://support.office.com/article/72f26d6c-bf9e-432c-8b96-e3c2437f5b65.aspx)。
+如需共用的詳細資訊，請參閱[與 Microsoft 365 共用檔案和資料夾](https://support.office.com/article/72f26d6c-bf9e-432c-8b96-e3c2437f5b65.aspx)。
   
 ### <a name="track-how-much-space-you-have-left"></a>追蹤留下多少空間
 
@@ -178,7 +178,7 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
   
 ### <a name="enable-or-disable-third-party-storage-services"></a>啟用或停用協力廠商儲存體服務
 
-您可以在 Office 365 中為您的使用者啟用協力廠商儲存體，讓他們可以使用收存箱（包括 OneDrive 和小組網站）來儲存和共用檔。 如果您想提供使用者可能已在使用或想要用於商務專案的服務，這可說是很好的方法。 如果您不想讓組織中的人員使用 Office 開啟協力廠商服務中的檔案，請遵循下列步驟加以關閉。
+您可以在 Microsoft 365 中啟用使用者的協力廠商儲存空間，讓他們可以使用 Dropbox 等服務，以及 OneDrive 和小組網站等方式，儲存及共用檔。 如果您想提供使用者可能已在使用或想要用於商務專案的服務，這可說是很好的方法。 如果您不想讓組織中的人員使用 Office 開啟協力廠商服務中的檔案，請遵循下列步驟加以關閉。
   
 > [!IMPORTANT]
 > 預設會啟用協力廠商儲存區，因此如果您不想讓使用者使用這些步驟，您必須立即執行這些步驟。
@@ -197,8 +197,8 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
 
 - **在平板電腦與手機上設定 Office App 。** 您必須這麼做，您就可以在平板電腦或手機上**編輯**儲存在 OneDrive 和小組網站上的檔案。 如果您沒有安裝平板電腦或手機的 Office 應用程式，則可以查看檔案但不能進行編輯。
 
-  - [在 Android 裝置上安裝 Office 應用程式及設定 Office 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+  - [使用 Microsoft 365 在 Android 上安裝及設定 Office](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
 
-  - [在 iPhone 或 iPad 上安裝 Office 應用程式及設定 Office 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+  - [在 iPhone 或 iPad 上使用 Microsoft 365 安裝和設定 Office](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
 
-  - [在 Windows Phone 上設定 Office 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [在 Windows Phone 上使用 Microsoft 365 設定 Office](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)

@@ -10,16 +10,16 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解如何與 SharePoint 網站中的客人共同作業。
-ms.openlocfilehash: 3a7c14cc4cd31961b0d4c1054f88b5ed276b3b1a
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 5a8bc5da55f3582a7e298dab97ec4d6b3d147b60
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604530"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630734"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在網站中與來賓共同作業
 
-如果您需要跨檔、資料和清單共同處理來賓，您可以使用 SharePoint 網站。 新式 SharePoint 網站會連線至可管理網站成員資格的 Office 365 群組，並提供其他共同作業工具，例如共用信箱和行事曆。
+如果您需要跨檔、資料和清單共同處理來賓，您可以使用 SharePoint 網站。 新式 SharePoint 網站會連線至 Microsoft 365 群組，並可管理網站成員資格，並提供其他共同作業工具，例如共用信箱和行事曆。
 
 在本文中，我們將逐步完成設定 SharePoint 網站與來賓共同作業所需的 Microsoft 365 設定步驟。
 
@@ -48,17 +48,17 @@ Microsoft 365 中的共用可透過 Azure Active Directory 中的組織關聯設
 
 請記下 [**協同限制**] 區段中的設定。 確定您要與之來賓進行共同作業的網域不會遭到封鎖。
 
-## <a name="office-365-groups-guest-settings"></a>Office 365 群組來賓設定
+## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 群組來賓設定
 
-新式 SharePoint 網站使用 Office 365 群組來控制網站存取。 為了讓 SharePoint 網站中的來賓存取能夠運作，Office 365 群組來賓設定必須開啟。
+新式 SharePoint 網站使用 Microsoft 365 群組來控制網站存取。 為了讓 SharePoint 網站中的來賓存取能夠運作，必須開啟 Microsoft 365 群組來賓設定。
 
-![Microsoft 365 系統管理中心中 Office 365 群組來賓設定的螢幕擷取畫面](../media/office-365-groups-guest-settings.png)
+![Microsoft 365 admin center 中 Microsoft 365 群組來賓設定的螢幕擷取畫面](../media/office-365-groups-guest-settings.png)
 
-設定 Office 365 群組來賓設定
+設定 Microsoft 365 群組來賓設定
 
 1. 在 Microsoft 365 系統管理中心的左側流覽窗格中，展開 [**設定**]。
 2. 按一下 [**服務] & 增益集**。
-3. 在清單中，按一下 [ **Office 365 群組**]。
+3. 在清單中，按一下 [ **Microsoft 365 群組**]。
 4. 確定 [**讓組織外部的成員存取群組內容**] 和 [**允許群組擁有者將組織外部人員新增至群組**] 核取方塊皆已勾選。
 5. 如果您進行變更，請按一下 [**儲存變更**]。
 
@@ -113,7 +113,7 @@ Microsoft 365 中的共用可透過 Azure Active Directory 中的組織關聯設
 
 ## <a name="invite-users"></a>邀請使用者
 
-現在已設定來賓共用設定，因此您可以開始將內部使用者和來賓新增至您的網站。 網站存取是透過相關聯的 Office 365 群組來控制，因此我們將會在那裡新增使用者。
+現在已設定來賓共用設定，因此您可以開始將內部使用者和來賓新增至您的網站。 網站存取是透過相關的 Microsoft 365 群組來控制，因此我們將會在那裡新增使用者。
 
 邀請內部使用者加入群組
 1. 流覽至您要新增使用者的網站。

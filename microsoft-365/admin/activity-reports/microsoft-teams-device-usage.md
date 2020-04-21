@@ -1,5 +1,5 @@
 ---
-title: Admin center 中的 Office 365 報告-Microsoft 團隊裝置使用量
+title: 系統管理中心的 microsoft 365 報告-Microsoft 團隊裝置使用量
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 917b3e1d-203e-4439-8539-634e80196687
-description: 透過從 Office 365 報告取得 Microsoft 團隊應用程式使用方式報告，深入瞭解組織中所使用的 Microsoft 團隊應用程式。
-ms.openlocfilehash: b0937e4366f1b10b0908ee8764986f2ded2999ec
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+description: 從 Microsoft 365 報告取得 Microsoft 團隊應用程式使用方式報告，深入瞭解組織中所使用的 Microsoft 團隊應用程式。
+ms.openlocfilehash: 9c79f83d90905470c56fd62489f1439b3383841f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046960"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621207"
 ---
-# <a name="office-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Admin center 中的 Office 365 報告-Microsoft 團隊裝置使用量
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>系統管理中心的 microsoft 365 報告-Microsoft 團隊裝置使用量
 
-「Office 365**報告**」儀表板會顯示您組織中產品的活動概況。 此功能可讓您深入了解個別產品層級報表，更加深入解析各產品內的活動。 請參閱[報告概觀主題](activity-reports.md)。 在 Microsoft Teams App 使用情況報告，您能夠深入了解組織中的 Microsoft Teams App 使用情形。
+Microsoft 365**報告**儀表板會向您顯示組織中各產品的活動概況。 此功能可讓您深入了解個別產品層級報表，更加深入解析各產品內的活動。 請參閱[報告概觀主題](activity-reports.md)。 在 Microsoft Teams App 使用情況報告，您能夠深入了解組織中的 Microsoft Teams App 使用情形。
   
 > [!NOTE]
 > 您必須是 Microsoft 365 中的全域系統管理員、全域讀取者或報告讀取器、Exchange、SharePoint、小組服務、小組通訊或商務用 Skype 系統管理員，才能查看報告。  
@@ -45,7 +45,7 @@ ms.locfileid: "43046960"
 
 您可以查看 [**使用者**] 和 [**通訊**群組] 圖表，以查看 Microsoft 團隊應用程式使用方式。 
   
-![Office 365 reports - Microsoft Teams app usage](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
+![Microsoft 365 報告-Microsoft 小組應用程式使用方式](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
   
 |||
 |:-----|:-----|

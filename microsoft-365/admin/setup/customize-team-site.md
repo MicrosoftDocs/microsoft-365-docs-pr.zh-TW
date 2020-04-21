@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: 瞭解如何自訂、組織和管理小組網站。
-ms.openlocfilehash: b35064209f26ad8b312bdf486c1f9b9bcb1b3e58
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: e3f2773e72a1b86cc3bae53ee6bbdbcb33d465b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212206"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627615"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自訂您的小組網站以進行檔案儲存與共享
 
-如果您有少數員工的小型企業，設定及協助檔案共用和線上共同作業的最佳方法之一，就是一起使用 OneDrive 和 SharePoint 小組網站。 我們建議您建立連線到 Office 365 群組的小組網站。 如果您想要使用聊天，您可以在 Microsoft 小組建立小組，以建立此網站。 如需小組的詳細資訊，請參閱[影片：什麼是 Microsoft 團隊？](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx)。 如果您不想要使用小組，您可以從 SharePoint 開始] 頁面建立小組網站。 
+如果您有少數員工的小型企業，設定及協助檔案共用和線上共同作業的最佳方法之一，就是一起使用 OneDrive 和 SharePoint 小組網站。 我們建議您建立連接至 Microsoft 365 群組的小組網站。 如果您想要使用聊天，您可以在 Microsoft 小組建立小組，以建立此網站。 如需小組的詳細資訊，請參閱[影片：什麼是 Microsoft 團隊？](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx)。 如果您不想要使用小組，您可以從 SharePoint 開始] 頁面建立小組網站。 
   
 [什麼是 SharePoint 小組網站？](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)
   
@@ -76,7 +76,7 @@ SharePoint 包含許多您可以新增至網站的清單範本，例如連結清
   
 如果您要將大量資料儲存在清單中，請參閱[在 SharePoint 中管理大型清單和文件庫](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx)。
   
-View a 錄影若要將行事曆新增至您的網站，請參閱[Create a shared calendar In Office 365](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx)。
+View a 錄影若要將行事曆新增至您的網站，請參閱[建立共用的行事曆](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx)。
 
 ## <a name="organize-sites-into-hubs"></a>將網站組織成中樞
 
@@ -92,7 +92,7 @@ View a 錄影若要將行事曆新增至您的網站，請參閱[Create a shared
 
 當儲存區和組織開始時，與您的小組和外部用戶端共用也很重要。 以下是一些主題的連結，可協助您管理使用者及共用您的資料。 
   
-如需與小組共用檔案，請參閱[Share SharePoint files or folders In Office 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx)。
+如需與您的小組共用檔案，請參閱[Share SharePoint files or folders In Microsoft 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx)。
   
 若要瞭解小組外共用，請參閱[外部共用一覽](/sharepoint/external-sharing-overview)。
   
@@ -102,7 +102,7 @@ View a 錄影若要將行事曆新增至您的網站，請參閱[Create a shared
   
 透過[瞭解和管理群組](https://support.office.com/article/9c1037b7-de0b-41cd-b8f0-79a95aac854d.aspx)的群組來查看影片。 
   
-若要將使用者新增至 Office 365 群組，請參閱[個別或大量新增使用者至 office 365-系統管理](../add-users/add-users.md)說明。
+若要將使用者新增至 Microsoft 365 群組，請參閱[個別或大量新增使用者至 microsoft 365-系統管理](../add-users/add-users.md)說明。
   
 瞭解如何處理[設定和管理存取要求](https://support.office.com/article/94B26E0B-2822-49D4-929A-8455698654B3.aspx)的存取要求。
   
@@ -110,11 +110,11 @@ View a 錄影若要將行事曆新增至您的網站，請參閱[Create a shared
 
 - **在平板電腦和手機上設定 Office 應用程式**。 您必須執行此操作，才能在平板電腦或手機上編輯儲存在小組網站上的檔案。 如果您的平板電腦或手機尚未安裝 Office App，則您只能檢視小組網站上的檔案，而無法編輯。 
     
-  - [在 Android 裝置上安裝 Office 應用程式及設定 Office 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+  - [使用 Microsoft 365 在 Android 上安裝及設定 Office](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
     
-  - [在 iPhone 或 iPad 上安裝 Office 應用程式及設定 Office 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+  - [在 iPhone 或 iPad 上使用 Microsoft 365 安裝和設定 Office](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
     
-  - [在 Windows Phone 上設定 Office 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [在 Windows Phone 上使用 Microsoft 365 設定 Office](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
     
 - [深入了解如何使用 OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458)。
     

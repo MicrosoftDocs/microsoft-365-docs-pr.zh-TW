@@ -1,5 +1,5 @@
 ---
-title: 將電子郵件和連絡人移轉到 Office 365
+title: 將電子郵件和連絡人遷移至 Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -25,25 +25,25 @@ search.appverid:
 - MOL140
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
-description: '瞭解如何將連絡人、行事曆、來自 Gmail 的電子郵件，或其他電子郵件提供者匯入 Office 365。 '
-ms.openlocfilehash: 6decee3fd45d11ed1e71e71e0cf7191ccec6aa3d
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: '瞭解如何將連絡人、行事曆、來自 Gmail 的電子郵件，或其他電子郵件提供者匯入 Microsoft 365。 '
+ms.openlocfilehash: ff81eed73a4bf5d7e58316e61212fd799de6d11c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212182"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627579"
 ---
-# <a name="migrate-email-and-contacts-to-office-365"></a>將電子郵件和連絡人移轉到 Office 365
+# <a name="migrate-email-and-contacts-to-microsoft-365"></a>將電子郵件和連絡人遷移至 Microsoft 365
 
-將電子郵件從 Gmail 或其他電子郵件提供者匯入或複製到 Office 365。
+將電子郵件從 Gmail 或其他電子郵件提供者匯入或複製到 Microsoft 365。
   
- **需要協助做什麼？**  [連絡商務用 Office 365 支援人員](../contact-support-for-business-products.md) 。 
+ **需要協助做什麼？**  [與 Microsoft 365 聯繫以取得商務支援](../contact-support-for-business-products.md)。 
   
-您必須使用安裝在桌面上的 Outlook 版本來執行這項工作。 Outlook 包含大部分的 Office 365[方案](https://go.microsoft.com/fwlink/p/?LinkId=723731)。
+您必須使用安裝在桌面上的 Outlook 版本來執行這項工作。 Outlook 包含大部分的 Microsoft 365[方案](https://go.microsoft.com/fwlink/p/?LinkId=723731)。
   
 ### <a name="import-from-gmail"></a>從 Gmail 匯入
 
-請遵循下列步驟，將電子郵件、連絡人及行事曆從 Gmail 匯入 Outlook 與 Office 365：
+請遵循下列步驟，使用 Microsoft 365 將電子郵件、連絡人及行事曆從 Gmail 匯入 Outlook：
   
 - [將 Gmail 匯入至 Outlook](https://support.office.com/article/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7.aspx)
     
@@ -53,9 +53,9 @@ ms.locfileid: "43212182"
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
-### <a name="import-from-outlook-desktop"></a>從 Outlook （桌面） ' 匯入
+### <a name="import-from-outlook-desktop"></a>從 Outlook 匯入（桌面）
 
-Fol'ow 這些步驟，將電子郵件、連絡人及行事曆從 Outlook 匯出到 .pst 檔案，然後將該檔案匯入至使用 Office 365 的 Outlook：
+請遵循下列步驟，將電子郵件、連絡人及行事曆從 Outlook 匯出到 .pst 檔案，然後將該檔案匯入至使用 Microsoft 365 的 Outlook：
   
 1. [匯出電子郵件、連絡人及行事曆](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)
     
@@ -73,7 +73,7 @@ Fol'ow 這些步驟，將電子郵件、連絡人及行事曆從 Outlook 匯出�
   
 ## <a name="see-other-email-accounts-in-outlook"></a>在 Outlook 中查看其他電子郵件帳戶
 
-想要在 Outlook 中看到其他提供者（如 Gmail、Yahoo 或 Live.com）的電子郵件嗎？ 不需要匯入或遷移。 您可以設定 Outlook 或 Outlook Web App，這樣您就可以從 Office 365 信箱的相同位置存取其他帳戶，以及傳送、接收及讀取傳送至這些帳戶的電子郵件。
+想要在 Outlook 中看到其他提供者（如 Gmail、Yahoo 或 Live.com）的電子郵件嗎？ 不需要匯入或遷移。 您可以設定 Outlook 或 Outlook Web App，使您可以從 Microsoft 365 信箱的相同位置存取其他帳戶，以及傳送、接收及讀取傳送至這些帳戶的電子郵件。
   
 ### <a name="outlook-desktop"></a>Outlook （桌面）
 
@@ -85,8 +85,8 @@ Fol'ow 這些步驟，將電子郵件、連絡人及行事曆從 Outlook 匯出�
   
 [![顯示 backstage 視圖中 Outlook 帳戶資訊頁面的螢幕擷取畫面。](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
   
-## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-office-365"></a>多個信箱：系統管理員可以大量將電子郵件、連絡人及行事曆匯入 Office 365
+## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>多個信箱：系統管理員可以大量將電子郵件、連絡人及行事曆匯入 Microsoft 365
 
-視您的來源電子郵件系統而定，您可以選擇數種大量遷移方法。 將[多個電子郵件帳戶遷移至 Office 365](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842)的閱讀方式，決定哪種方法適用于您。 
+視您的來源電子郵件系統而定，您可以選擇數種大量遷移方法。 將[多個電子郵件帳戶遷移至 Microsoft 365](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842)的閱讀方式，以決定哪種方法適用于您。 
   
 

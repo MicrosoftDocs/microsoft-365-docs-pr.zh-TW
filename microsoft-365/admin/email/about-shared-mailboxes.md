@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 當多人需要存取相同的信箱時，會使用共用信箱。 深入瞭解建立共用信箱之前所需注意的事項。
-ms.openlocfilehash: 8e9e4b1ae0235886a9dbb5b39ad4c0f78c27b53f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: fcdbb591e5b8f9b2c5490435b68e543c17a035a0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210537"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629104"
 ---
 # <a name="about-shared-mailboxes"></a>關於共用信箱
 
@@ -39,7 +39,7 @@ ms.locfileid: "43210537"
 
 - **使用者權限：** 您必須授與使用者許可權（成員資格），才能使用共用信箱。 僅限貴組織內部的人員可以使用共用信箱。
 
-- **外部使用者：** 您無法將您的公司外部人員（例如，具有 Gmail 帳戶的人員）存取權給您的共用信箱。 如果您想這麼做，請考慮改為建立 Outlook 群組。 若要深入了解，請參閱[在系統管理中心建立 Office 365 群組](../create-groups/create-groups.md)。
+- **外部使用者：** 您無法將您的公司外部人員（例如，具有 Gmail 帳戶的人員）存取權給您的共用信箱。 如果您想這麼做，請考慮改為建立 Outlook 群組。 若要深入瞭解，請參閱[Create a Microsoft 365 group in admin center](../create-groups/create-groups.md)。
 
 -  **與 Outlook 搭配使用：** 除了透過瀏覽器使用網頁上的 Outlook 來存取共用信箱之外，您也可以使用 Outlook 來 iOS 應用程式或適用于 Android 應用程式的 Outlook。 若要深入瞭解，請參閱<a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">將共用信箱新增至 Outlook mobile</a>。 另一個選項是建立共用信箱的群組。 若要深入瞭解，請參閱[比較群組](../create-groups/compare-groups.md)。  
 
@@ -49,13 +49,13 @@ ms.locfileid: "43210537"
 
 - 系統**管理員角色：** 具有全域管理員或 Exchange 系統管理員角色的使用者可以建立共用信箱。
 
-- **訂閱需求：** 若要建立共用信箱，您必須訂閱包含電子郵件（Exchange Online 服務）的商務用 Office 365 方案。 Office 365 商務版訂閱不包含電子郵件;Office 365 商務版功能。
+- **訂閱需求：** 若要建立共用信箱，您必須訂閱包含電子郵件（Exchange Online 服務）的 Microsoft 365 for business 方案。 Microsoft 365 商務應用程式訂閱不包含電子郵件;Microsoft 365 商務標準版。
 
 - 登**入：** 共用信箱不是由其相關聯的使用者帳戶用於直接登入。 您應該永遠封鎖共用信箱帳戶的登入，並將它封鎖。
 
-- **太多使用者：** 當同時存取共用信箱的指定使用者太多時，他們可能會間歇無法連線到此信箱。 在此情況下，您可以考慮減少使用者數目或使用不同的工作負載，例如 Office 365 group 或 Public folder。
+- **太多使用者：** 當同時存取共用信箱的指定使用者太多時，他們可能會間歇無法連線到此信箱。 在此情況下，您可以考慮減少使用者數目或使用不同的工作負載，例如 Microsoft 365 群組或公用資料夾。
 
-- **刪除郵件：** 不幸的是，您無法防止人員刪除共用信箱中的郵件。 此問題的唯一因應措施，便是建立 Office 365 群組來取代共用信箱。 Outlook 中的群組就像是共用信箱。 如需兩者的比較，請參閱[比較群組](../create-groups/compare-groups.md)。 若要深入瞭解群組，請參閱[深入瞭解群組](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+- **刪除郵件：** 不幸的是，您無法防止人員刪除共用信箱中的郵件。 這項工作的唯一方法是建立 Microsoft 365 群組，而不是共用信箱。 Outlook 中的群組就像是共用信箱。 如需兩者的比較，請參閱[比較群組](../create-groups/compare-groups.md)。 若要深入瞭解群組，請參閱[深入瞭解群組](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 
 ## <a name="related-articles"></a>相關文章
 

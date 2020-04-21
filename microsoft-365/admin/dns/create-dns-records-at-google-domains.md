@@ -1,5 +1,5 @@
 ---
-title: 在 Google Domains 建立 Office 365 的 DNS 記錄
+title: 在 Google 網域上建立 Microsoft 的 DNS 記錄
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,31 +19,31 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
-description: 瞭解如何驗證您的網域，以及如何設定適用于 Office 365 之 Google 網域的電子郵件、Lync 及其他服務的 DNS 記錄。
-ms.openlocfilehash: f0a9a42127fc5b722679013b899255f77840d670
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 瞭解如何驗證您的網域，並為 Microsoft 的 Google 網域上的電子郵件、Lync 及其他服務設定 DNS 記錄。
+ms.openlocfilehash: 20a3ba9baefcdb26936d2d0a5fda7ed1b5db971e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211724"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629536"
 ---
-# <a name="create-dns-records-at-google-domains-for-office-365"></a>在 Google Domains 建立 Office 365 的 DNS 記錄
+# <a name="create-dns-records-at-google-domains-for-microsoft"></a>在 Google 網域上建立 Microsoft 的 DNS 記錄
 
  若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 Google Domains 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並設定電子郵件與 Lync 等項目的 DNS 記錄。
   
-在 Google Domains 新增這些記錄之後，您的網域就會設定為搭配 Office 365 服務使用。
+在 Google 網域新增這些記錄之後，您的網域就會設定為與 Microsoft 服務搭配使用。
   
-若要了解使用 Office 365 網站的虛擬主機和 DNS，請參閱[搭配 Office 365 使用公用網站](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)。
+若要深入瞭解 Microsoft 的網站的主控和 DNS，請參閱搭配[Microsoft 使用公用網站](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)。
   
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正在 Office 365 中新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 如果您在新增 DNS 記錄後遇到郵件流程或其他問題的問題，請參閱[尋找並修正在 Microsoft 中新增您的網域或 DNS 記錄之後](../get-help-with-domains/find-and-fix-issues.md)所發生的問題。 
   
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 <a name="BKMK_verify"> </a>
 
-在您將自己的網域用於 Office 365 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Office 365 就能確信您擁有該網域。
+在將您的網域與 Microsoft 搭配使用之前，我們必須先確認您擁有該網域。 您能夠在您的網域註冊機構登入您的帳戶，並為您擁有網域的 Microsoft 建立 DNS 記錄證明。
   
 > [!NOTE]
 > 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
@@ -54,7 +54,7 @@ ms.locfileid: "43211724"
     
 2. 輸入您的登入認證，然後再選取 [登**入**]。
     
-2. 在 [**我的網域**] 頁面上，尋找您要與 Office 365 搭配使用的網域，然後選取它旁邊的 [**管理**] 連結。 在左側導覽中，選取 [ **DNS**]。
+2. 在 [**我的網域**] 頁面上，尋找您要與 Microsoft 搭配使用的網域，然後選取它旁邊的 [**管理**] 連結。 在左側導覽中，選取 [ **DNS**]。
     
 3. 在 [自訂資源記錄] （*）區段的新記錄方塊中，輸入或複製並貼上下表中的值。 
     
@@ -65,17 +65,17 @@ ms.locfileid: "43211724"
     |||||
     |:-----|:-----|:-----|:-----|
     |**名稱** <br/> |**Type** <br/> |**TTL** <br/> |**資料** <br/> |
-    |@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 從表格中，使用您的特定**目的地或指向位址**值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. 選取 [新增]****。
     
 5. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
-現在您已在網域註冊機構網站新增記錄，請返回 Office 365 並要求 Office 365 尋找該記錄。
+現在，您已在網域註冊機構的網站上新增記錄，您會回到 Microsoft 並要求記錄。
   
-在 Office 365 找到正確的 TXT 記錄後，您的網域就完成驗證了。
+當 Microsoft 找到正確的 TXT 記錄後，您的網域就會經過驗證。
   
-1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
+1. 在 Microsoft 系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
 
     
 2. 在 **[網域]** 頁面上，選取您要驗證的網域。 
@@ -85,10 +85,10 @@ ms.locfileid: "43211724"
 4. 在 [驗證網域]**** 頁面上，選取 [驗證]****。
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正在 Office 365 中新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 如果您在新增 DNS 記錄後遇到郵件流程或其他問題的問題，請參閱[尋找並修正新增您的網域或 DNS 記錄後的問題](../get-help-with-domains/find-and-fix-issues.md)。 
 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>新增 MX 記錄，以將寄往您網域的電子郵件轉至 Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，使您網域的電子郵件將會傳送給 Microsoft
 <a name="BKMK_add_MX"> </a>
 
 1. 首先請用[這個連結](https://domains.google.com/registrar)移至 Google Domains 上您的網域頁面。系統會提示您登入。若要執行此作業，請執行下列動作：
@@ -99,7 +99,7 @@ ms.locfileid: "43211724"
 4. 在 [**網域**] 頁面上的 [**網域**] 區段中，針對您要編輯的網域選取 [**設定 DNS** ]。
     
     > [!IMPORTANT]
-    > 如果您擁有 G Suite 電子郵件帳戶，則必須先刪除與該帳戶相關聯的 MX 記錄。G Suite 的 MX 記錄會使您無法新增其他 MX 記錄，包括 Office 365 所需的記錄。請注意，刪除 G Suite 記錄並不會刪除您的 G Suite 帳戶。若要刪除您的 G Suite MX 記錄，請依照下列步驟操作。 
+    > 如果您擁有 G Suite 電子郵件帳戶，則必須先刪除與該帳戶相關聯的 MX 記錄。 G Suite MX 記錄會使您無法新增其他任何 MX 記錄，包括 Microsoft 所需的記錄。 請注意，刪除 G Suite 記錄並不會刪除您的 G Suite 帳戶。 若要刪除您的 G Suite MX 記錄，請依照下列步驟操作。 
   
 5. 在 [**綜合記錄**] 區段的 [ **G Suite** ] 區域中，選取 [**刪除**]。
     
@@ -119,11 +119,11 @@ ms.locfileid: "43211724"
     
     |**名稱**|**Type**|**TTL**|**資料**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1H  <br/> |0  *\<網域金鑰\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **0**是 MX 優先順序值。 請將它新增到 MX 值的開頭，並以空格分隔該值的其餘部分。  <br/> **注意：** 從您的 Office 365 帳戶取得您的\<*網域金鑰*\>。  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
+    |@  <br/> |MX  <br/> |1H  <br/> |0  *\<網域金鑰\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **0**是 MX 優先順序值。 請將它新增到 MX 值的開頭，並以空格分隔該值的其餘部分。  <br/> **附注：** 從您\<的 Microsoft 帳戶取得您的*網域金鑰*\> 。  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
    
     ![在自訂資源記錄區段中輸入或貼上值](../../media/b660ca9e-984d-449f-ae59-a65fe4e2c6bd.png)
   
-5. 選取 **[新增]**。
+5. 選取 [新增]****。
     
     ![選取 [新增]](../../media/32f8f23c-0b80-48da-b08e-4e04052971af.png)
   
@@ -143,7 +143,7 @@ ms.locfileid: "43211724"
     
     ![選取 [儲存]](../../media/bf496d01-ccbe-4800-95f4-7b2283f2e5f6.png)
   
-## <a name="add-the-five-cname-records-that-are-required-for-office-365"></a>新增 Office 365 所需的五個 CNAME 記錄
+## <a name="add-the-five-cname-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的五個 CNAME 記錄
 
 1. 若要開始，請移至 [Google 網域] 頁面]https://domains.google.com/registrar) （並登入。
     
@@ -167,7 +167,7 @@ ms.locfileid: "43211724"
    
     ![在自訂資源記錄區段中輸入或貼上值](../../media/cff9832a-6d57-421f-a183-55320974ed87.png)
   
-4. 選取 **[新增]**。
+4. 選取 [新增]****。
     
     ![選取 [新增]](../../media/4a78080a-e0b2-4582-9696-3fe4fea41e91.png)
   
@@ -180,7 +180,7 @@ ms.locfileid: "43211724"
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>新增 SPF 的 TXT 記錄以協助防範垃圾郵件
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 If you already have an SPF record for your domain, don't create a new one for Office 365. 而是，請將必要的 Office 365 值新增至目前的記錄，以便擁有包含這兩組值的單一 SPF 記錄。 需要範例？ 請參閱這些 [Office 365 的外部網域名稱系統記錄](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords)。 若要驗證您的 SPF 記錄，您可以使用其中一種 [SPF 驗證工具](../setup/domains-faq.md)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果您已有網域的 SPF 記錄，請不要為 Microsoft 建立新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的單一 SPF 記錄。 需要範例？ 請參閱[Microsoft 的這些外部網域名稱系統記錄](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords)。 To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
   
 1. 首先請用[這個連結](https://domains.google.com/registrar)移至 Google Domains 上您的網域頁面。系統會提示您登入。若要執行此作業，請執行下列動作：
     
@@ -218,7 +218,7 @@ ms.locfileid: "43211724"
     
     ![選取 [儲存]](../../media/20c4c926-f062-4048-9265-bf752be54e0c.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>新增兩筆 Office 365 所需的 SRV 記錄
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的兩筆 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
 
 1. 首先請用[這個連結](https://domains.google.com/registrar)移至 Google Domains 上您的網域頁面。系統會提示您登入。若要執行此作業，請執行下列動作：
@@ -246,7 +246,7 @@ ms.locfileid: "43211724"
    
     ![在自訂資源記錄區段中輸入或貼上值](../../media/429d06a9-c0af-4961-b7d2-7a8dea6db37e.png)
   
-6. 選取 **[新增]**。
+6. 選取 [新增]****。
     
     ![選取 [新增]](../../media/89df6efd-e641-4441-baa2-d9a890424569.png)
   
@@ -255,5 +255,5 @@ ms.locfileid: "43211724"
     在 [**自訂資源記錄**] 區段中，使用表格中第二列的值來建立記錄，然後再選取 [**新增**] 以完成該記錄。 
     
     > [!NOTE]
-    > Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正在 Office 365 中新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
+    > Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 如果您在新增 DNS 記錄後遇到郵件流程或其他問題的問題，請參閱[尋找並修正新增您的網域或 DNS 記錄後的問題](../get-help-with-domains/find-and-fix-issues.md)。 
   

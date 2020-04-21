@@ -1,5 +1,5 @@
 ---
-title: 選擇建立 Office 365 群組時要使用的網域
+title: 選擇建立 Microsoft 365 群組時要使用的網域
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,21 +18,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
-description: '透過設定電子郵件地址原則使用 PowerShell，瞭解如何選擇建立 Office 365 群組時所使用的網域。 '
-ms.openlocfilehash: 8bca0e3c33d5cb523fc075d1d2d5b04b6506b256
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: '透過設定電子郵件地址原則使用 PowerShell，瞭解如何選擇建立 Microsoft 365 群組時所使用的網域。 '
+ms.openlocfilehash: 1bc8a160ffc368bc4c66a5ac17ffcb203dc678f5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894642"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630620"
 ---
-# <a name="choose-the-domain-to-use-when-creating-office-365-groups"></a>選擇建立 Office 365 群組時要使用的網域
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>選擇建立 Microsoft 365 群組時要使用的網域
 
- 有些組織會使用不同的電子郵件網域來將業務區隔為不同部分。當您的使用者要建立 Office 365 群組時，您可以指定應使用哪一個網域。
+ 有些組織會使用不同的電子郵件網域來將業務區隔為不同部分。 您可以指定當使用者建立 Microsoft 365 群組時，應使用的網域。
   
 如果您的組織需要使用者在公司預設的公認網域以外的其他網域中建立他們的群組，您可以使用 PowerShell 來設定電子郵件地址原則（EAPs），以允許做到這一點。
   
-在您可以執行 PowerShell Cmdlet 之前，請下載並安裝可讓您與 Office 365 組織交談的模組。 [使用遠端 PowerShell 查看 [連線至 Exchange Online]](https://go.microsoft.com/fwlink/p/?LinkId=785881)。
+在您可以執行 PowerShell Cmdlet 之前，請下載並安裝可讓您與組織交談的模組。 [使用遠端 PowerShell 查看 [連線至 Exchange Online]](https://go.microsoft.com/fwlink/p/?LinkId=785881)。
   
 ## <a name="example-scenarios"></a>範例案例
 
@@ -51,7 +51,7 @@ ms.locfileid: "42894642"
   
 ### <a name="scenario-1"></a>案例 1
 
-下列範例顯示如何在 groups.contoso.com 網域中布建組織中的所有 Office 365 群組。
+下列範例顯示如何在 groups.contoso.com 網域中布建組織中的所有 Microsoft 365 群組。
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -59,7 +59,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>案例 2
 
-假設您想要控制要在其中建立哪些子域 Office 365 群組。 你想要：
+假設您想要控制哪些子域中建立的 Microsoft 365 群組。 你想要：
   
 - 在 students.groups.contoso.com 網域中，由學生（已將**部門**設定為**學生**的使用者）所建立的群組。 請使用下列命令：
     
@@ -102,7 +102,7 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
   
 ## <a name="hybrid-requirements"></a>混合需求
 
-如果您的組織是在混合案例中設定，請參閱[Configure The office 365 Groups with 內部部署 Exchange 混合](https://go.microsoft.com/fwlink/p/?LinkId=785430)式，確定您的組織符合建立 Office 365 群組的需求。 
+如果您的組織是在混合案例中設定，請參閱[使用內部部署 Exchange 混合式設定 Microsoft 365 群組](https://go.microsoft.com/fwlink/p/?LinkId=785430)，以確保您的組織符合建立 Microsoft 365 群組的需求。 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>使用電子郵件地址原則群組的其他資訊：
 
@@ -122,4 +122,4 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
     
 ## <a name="related-articles"></a>相關文章
 
-[在系統管理中心建立 Office 365 群組](create-groups.md)
+[在系統管理中心建立 Microsoft 365 群組](create-groups.md)

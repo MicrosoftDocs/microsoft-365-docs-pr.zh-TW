@@ -1,5 +1,5 @@
 ---
-title: 從 Office 365 移除網域
+title: 移除網域
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: 瞭解如何從 Office 365 移除舊的網域，以及將使用者和群組移至另一個網域。
-ms.openlocfilehash: 621b50384b39a21bc0bf5256841c703b3ee0f74a
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 瞭解如何從 Microsoft 365 移除舊的網域，以及將使用者和群組移至另一個網域。
+ms.openlocfilehash: 21b2b17e5cab022f67c71c0d3858f8a03b45899b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210365"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628431"
 ---
-# <a name="remove-a-domain-from-office-365"></a>從 Office 365 移除網域
+# <a name="remove-a-domain"></a>移除網域
 
 投稿人：[![Peter Baumgartner](../../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
   
  **[檢查網域的常見問題集](../setup/domains-faq.md)** ：供您在找不到所需功能時參考。 
   
-您移除網域是因為想要將它加入到其他 Office 365 訂閱方案嗎？還是您只想取消訂閱？您可以[變更您的方案或訂閱](../../commerce/subscriptions/switch-to-a-different-plan.md)或[取消您的訂閱](../../commerce/subscriptions/cancel-your-subscription.md)。
+您移除的是您的網域，因為您想要將它新增至不同的 Microsoft 365 訂閱計畫嗎？ 還是您只想取消訂閱？ 您可以[變更您的方案或訂閱](../../commerce/subscriptions/switch-to-a-different-plan.md)或[取消您的訂閱](../../commerce/subscriptions/cancel-your-subscription.md)。
   
 ### <a name="step-1-move-users-to-another-domain"></a>步驟1：將使用者移至另一個網域
 
@@ -210,7 +210,7 @@ ms.locfileid: "43210365"
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>移除網域需要多久的時間？
 
-如果不是在許多地方（如安全性群組、通訊群組清單、使用者和 Office 365 群組）上加以參考，則 Office 365 會花無5分鐘的時間來移除網域。 如果有許多參照都使用此網域，就會花費數小時 (一天) 的時間才能將網域移除。
+如果不是在許多地方（如安全性群組、通訊群組清單、使用者和 Microsoft 365 群組）上加以參考，則 Microsoft 365 可能只需要5分鐘的時間來移除網域。 如果有許多參照都使用此網域，就會花費數小時 (一天) 的時間才能將網域移除。
   
 如果您有數百名或數千名使用者，請使用 PowerShell 來查詢所有使用者，然後將他們移到另一個網域。否則，UI 中很可能會遺失一些使用者，當您隨後想移除此網域時，將無法執行且不知道原因為何。如需詳細資訊，請參閱 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) (英文)。若要設定預設網域，請使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) (英文)。
   
@@ -231,6 +231,6 @@ ms.locfileid: "43210365"
 
 [取得 Office 365 網域的說明](get-help-with-domains.md)
 
-[切換到其他商務用 Office 365 方案](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[切換至不同的 Microsoft 365 for business 方案](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
 [取消訂閱](../../commerce/subscriptions/cancel-your-subscription.md)

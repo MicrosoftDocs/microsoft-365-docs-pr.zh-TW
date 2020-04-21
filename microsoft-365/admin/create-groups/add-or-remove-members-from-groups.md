@@ -1,5 +1,5 @@
 ---
-title: 新增或移除 Office 365 群組中的成員
+title: 新增或移除 Microsoft 365 群組中的成員
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -20,16 +20,16 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: 瞭解如何將成員新增至群組、從群組中移除成員及管理 Microsoft 365 系統管理中心中的群組擁有者狀態。
-ms.openlocfilehash: 5c708b88f2e4a2b4aa1aa84fd7d7700ab6545f87
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 9191f9a29f9d4c1589feda66c9ca482180229bd6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894708"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631310"
 ---
-# <a name="add-or-remove-members-from-office-365-groups-using-the-admin-center"></a>使用系統管理中心新增或移除 Office 365 群組中的成員
+# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>使用系統管理中心新增或移除 Microsoft 365 群組中的成員
 
-在 Office 365 中，群組成員通常會建立自己的群組、將自己新增至他們想要加入的群組，或由群組擁有者邀請。 如果群組擁有權變更，或者您決定要新增或移除成員，您也可以在系統管理員進行變更。 只有全域系統管理員、Exchange 系統管理員、群組管理員或使用者管理員可以進行這些變更。 [何謂 Office 365 群組？](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+在 Microsoft 365 中，群組成員通常會建立自己的群組、將自己新增至他們想要加入的群組，或由群組擁有者邀請。 如果群組擁有權變更，或者您決定要新增或移除成員，您也可以在系統管理員進行變更。 只有全域系統管理員、Exchange 系統管理員、群組管理員或使用者管理員可以進行這些變更。 [何謂 Microsoft 365 群組？](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 
 > [!TIP]
 > 如果您不是系統管理員，則可以[使用 Outlook 來新增或移除成員](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx)。 
@@ -46,7 +46,7 @@ ms.locfileid: "42894708"
       
 4. 搜尋或選取要新增的成員名稱。
     
-5. 選取 [儲存]****。
+5. 選取 **[儲存]**。
     
 ::: moniker-end
 
@@ -60,7 +60,7 @@ ms.locfileid: "42894708"
       
 4. 搜尋或選取要新增的成員名稱。
     
-5. 選取 [儲存]****。
+5. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ ms.locfileid: "42894708"
       
 4. 搜尋或選取要新增的成員名稱。
     
-5. 選取 [儲存]****。
+5. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ ms.locfileid: "42894708"
       
 4. 搜尋或選取您想要新增的群組名稱。
     
-5. 選取 [儲存]****。
+5. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -237,7 +237,7 @@ ms.locfileid: "42894708"
     
 5. 選取擁有者名稱旁邊的 X。 
     
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
 ::: moniker-end
 
@@ -251,7 +251,7 @@ ms.locfileid: "42894708"
     
 5. 選取擁有者名稱旁邊的 X。 
     
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -265,7 +265,7 @@ ms.locfileid: "42894708"
     
 5. 選取擁有者名稱旁邊的 X。 
     
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -280,12 +280,12 @@ ms.locfileid: "42894708"
     
 ## <a name="articles-about-managing-groups"></a>管理群組的相關文章
     
-- [在 Outlook 中將通訊群組清單升級至 Office 365 群組](../manage/upgrade-distribution-lists.md)
+- [將通訊群組清單升級至 Outlook 中的 Microsoft 365 群組](../manage/upgrade-distribution-lists.md)
     
 - [為什麼您應該將 Outlook 中的通訊群組清單升級成群組](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
 
-[管理 Office 365 群組中的來賓存取](manage-guest-access-in-groups.md)    
+- [在 Microsoft 365 群組中管理來賓存取](manage-guest-access-in-groups.md)    
     
-- [使用 PowerShell 管理 Office 365 群組](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540) ：本文將向您介紹重要的 Cmdlet 並提供範例
+- [使用 PowerShell 管理 Microsoft 365 群組](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)：本文介紹重要 Cmdlet，並提供範例
     
-- [Office 365 群組命名原則](groups-naming-policy.md)
+- [Microsoft 365 群組命名原則](groups-naming-policy.md)

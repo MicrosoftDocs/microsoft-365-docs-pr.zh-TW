@@ -1,5 +1,5 @@
 ---
-title: 將更多使用者新增至 Microsoft 365 商務版
+title: 新增更多使用者
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -25,36 +25,36 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
-description: 了解輕鬆地將新使用者新增、 保護他們的裝置，並將 Microsoft 365 商務版中的角色指派的步驟。
-ms.openlocfilehash: 8181254aa56345e99e648c59474f4d7f8fa94990
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: 深入瞭解在 Microsoft 365 商務版 Premium 中輕鬆新增新使用者、保護其裝置及指派角色的步驟。
+ms.openlocfilehash: d57f7470d53a6c80e04872726c634f67f091fb0d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561553"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627467"
 ---
-# <a name="add-more-users-to-microsoft-365-business"></a>將更多使用者新增至 Microsoft 365 商務版
+# <a name="add-more-users"></a>新增更多使用者
 
 ## <a name="add-new-users"></a>新增使用者
 
-觀看短片，需新增使用者。 <br><br>
+觀賞有關新增使用者的簡短影片。 <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN] 
 
 如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-若要新增的使用者：
+若要新增使用者：
 
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。 
-2. 在左側的導覽窗格中，選擇 [**使用者** \> **作用中的使用者**。
-3. 在 **[作用中使用者**] 頁面上，選擇 [**新增使用者**]。
-4. 在 [**新增使用者**] 面板中，輸入所需的資訊。 
+2. 在左功能窗格中，選擇 [**使用者** \> ] [作用中**使用者**]。
+3. 在 [作用中**使用者**] 頁面上，選擇 [**新增使用者**]。
+4. 在 [**新增使用者**] 窗格中，輸入必要的資訊。 
   
-    您可以輸入 [**連絡人資訊**的詳細資訊，選擇您設定在 [**密碼**] 設定下, 密碼及其指派**角色**下的角色。
+    您可以在 [連絡人資訊] 的 [**連絡人資訊**] 下，選擇您在 [**密碼**] 設定下設定密碼的方式，以及在 [**角色**] 底下指派角色
       
     ![Enter user information in the New user card](../media/f04d39ca-48be-4868-8330-8552a4754c8b.png)
       
-    在 [產品授權] 區段中，設定**Microsoft 365 商務版**產品授權設定為 [**開啟**。
+    在 [產品授權] 區段中，將 [ **Microsoft 365 商務特優**產品許可證] 設定設為 [**開啟**]。
       
     ![Set the license setting to On position](../media/7404f7f7-93bc-44a3-9ffb-4208b5b17402.png)
   

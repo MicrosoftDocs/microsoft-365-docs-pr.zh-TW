@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生產力分數的概覽。
-ms.openlocfilehash: 06c1bb5d5e5edfd21fa9224846d584cbe6678d07
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 3e85ef40513593b7fcd66269671128c1233d10f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516862"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627749"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft 生產力評分（預覽）
 
@@ -64,7 +64,7 @@ Microsoft 365 提供生產力解決方案，可讓您的組織達到其業務目
 
 ## <a name="access-and-required-permissions"></a>存取權及必要許可權 
 
-針對員工經驗，您必須訂閱 Office 365 for business plan 或具有多位使用者的 Microsoft 365 商務方案。 
+針對員工經驗，您必須訂閱與多位使用者搭配使用的 Microsoft 365 for business 方案。 
 
 若要具有存取 Microsoft 生產力分數的許可權，您必須具備下列角色： 
 
@@ -136,7 +136,7 @@ Microsoft 365 提供生產力解決方案，可讓您的組織達到其業務目
 
 ![工作 anywhere 頁面。](../../media/psflexibility.png)
 
-[工作中的地方] 頁面會為使用者計算至少一個在兩個或更多平臺（即桌面機、行動裝置及 web）上具有一個生產力應用程式的使用者人數（以百分比和絕對值為值）。 使用者在使用更多應用程式和平臺時，獲得更高的評分。 被視為的應用程式包括 Outlook、小組、Word、Excel、PowerPoint、OneNote、Yammer、Skype。 真知灼見的基礎是針對 Office 365 ProPlus、Exchange、Yammer、Skype 或小組啟用的使用者。
+[工作中的地方] 頁面會為使用者計算至少一個在兩個或更多平臺（即桌面機、行動裝置及 web）上具有一個生產力應用程式的使用者人數（以百分比和絕對值為值）。 使用者在使用更多應用程式和平臺時，獲得更高的評分。 被視為的應用程式包括 Outlook、小組、Word、Excel、PowerPoint、OneNote、Yammer、Skype。 真知灼見的基礎是針對企業、Exchange、Yammer、Skype 或小組啟用 Microsoft 365 應用程式的使用者。
 
 1. **為什麼很重要的一點**是從多個平臺的「資訊檢索」連結使用的摘要，到較高的生產力。 請**閱讀 Forrester 中的「調研**」，以提供更多關於如何在如何 conducive 工作以提升生產力的內容的資訊。
 1. 支援**電子郵件**的深入瞭解在 outlook 中，透過使用 outlook 的使用者，在您組織中使用 outlook 的使用者人數。

@@ -1,5 +1,5 @@
 ---
-title: 在系統管理中心中管理 Office 365 增益集的部署
+title: 管理系統管理中心內增益集的部署
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用系統管理中心的集中式部署，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: d0818a0f318ea260d8e39b6e3d76c1cd4efd7a88
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 440cb55f318ac2aa43af5a24fa8ca80753aa03ac
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212006"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628157"
 ---
-# <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中管理 Office 365 增益集的部署
+# <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中管理增益集的部署
 
 Office 增益集可以協助您將文件個人化，也可以簡化您存取網路資訊的方式 (請參閱[開始使用 Office 增益集](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx))。 作為系統管理員，您可以為組織中的使用者部署 Office 增益集。 您可以使用 Microsoft 365 系統管理中心的 [集中式部署] 功能來執行此動作。
   
-若要將增益集部署至組織內的使用者和群組，[集中式部署] 是建議和功能最豐富的方法。 如需有關如何判斷貴組織是否可支援 [集中式部署] 的詳細資訊，請參閱[判斷您的 Office 365 組織是否適合使用 [集中式部署] 來部署增益集](centralized-deployment-of-add-ins.md)。
+若要將增益集部署至組織內的使用者和群組，[集中式部署] 是建議和功能最豐富的方法。 如需如何判斷您的組織是否可支援集中式部署的詳細資訊，請參閱判斷您的組織是否可使用[集中式部署增益集](centralized-deployment-of-add-ins.md)。
   
 [集中式部署] 提供下列優點：
   
@@ -41,7 +41,7 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
 - 如果系統管理員關閉或刪除增益集，或從 Azure Active Directory 或指派給的群組中移除該使用者，就不再顯示使用者的增益集。
     
 > [!NOTE]
->  Word、Excel 及 PowerPoint 會使用[SharePoint 應用程式目錄](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)，將增益集部署至內部部署環境中的使用者，但不連接至 Office 365 和/或支援 SharePoint 增益集。 >  針對 Outlook，請使用 Exchange 控制台來在未連線到 Office 365 的內部部署環境中進行部署。 > 
+>  Word、Excel 及 PowerPoint 會使用[SharePoint 應用程式目錄](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)，將增益集部署至內部部署環境中的使用者，但不連接至 Microsoft 365 和/或支援所需 SharePoint 增益集。 > Outlook 使用 Exchange 控制台，在內部部署環境中部署，但不連接至 Microsoft 365。 > 
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>部署 Office 增益集的建議方式
 
@@ -57,10 +57,10 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
   
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>使用系統管理中心部署 Office 增益集
 
-開始之前，請參閱[判斷您的 Office 365 組織是否適合使用 [集中式部署] 來部署增益集](centralized-deployment-of-add-ins.md)。
+開始之前，請參閱[判斷集中式部署的增益集是否適用于您的組織](centralized-deployment-of-add-ins.md)。
 
   
-1. 在 Microsoft 365 系統管理中心中，移至 [**設定** > **增益集**] 頁面。
+1. 在系統管理中心中，移至 [**設定** \> **增益集**] 頁面。
     
 2. 在頁面頂端，選取 [**部署增益集**]。 在 [概覽] 頁面上，選取 **[下一步]**。
     
@@ -75,13 +75,13 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
 7. 部署增益集時，會出現綠色的勾選標記。 您可以依照頁面上的指示測試增益集是否已成功部署。
 
 > [!NOTE]
-> 使用者可能需要重新開機 Office，才能看到增益集圖示出現在應用程式的功能區上。 Outlook 增益集最多可能需要24小時才能出現在使用者的功能區上。
+> 使用者可能需要重新開機 Office，才能看到增益集圖示出現在應用程式的功能區上。 在使用者的功能區上顯示 Outlook 增益集時，最多可能需要12小時。
     
 8. 完成時，選取 **[下一步]**。 如果您只是自行部署，您可以選取 [**變更擁有增益集的存取**權]，以部署至其他使用者。
 
 
 
-如果您已將增益集部署至組織的成員以外的成員，請遵循顯示的指示，以有效宣告增益集的部署。 <br/>您現在會在 Office 365 中看見您的增益集以及其他 App。
+如果您已將增益集部署至組織的成員以外的成員，請遵循顯示的指示，以有效宣告增益集的部署。 <br/>現在，您可以在 Microsoft 365 中看到增益集和其他應用程式。
   
 將增益集部署到使用者和群組後，建議您告知他們，這樣他們才會知道已經可以使用增益集。 請考慮傳送電子郵件給他們，說明使用增益集的時機與方法，並解說增益集對於提升工作效率有何幫助。 包含或連結至相關的說明內容或 FAQs，可協助使用者是否有任何問題增益集。
   
@@ -101,19 +101,12 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
   
 ### <a name="add-in-states"></a>增益集狀態
 
-系統管理員可以開啟或關閉其為所有使用者從 Microsoft 365 系統管理中心部署的增益集。
-
-1.    在系統管理中心中，移至 [ **設定** > **增益集**] 頁面。 
-2.    選取部署的增益集。 
-3.    按一下**狀態**切換以**開啟或****關閉**增益集。 
-4.    儲存變更。  
-
-也可以使用三個增益集狀態的其中一種。
- 
+增益集可以處於 [**開啟**] 或 [**關閉**] 狀態。
+  
 |**State**|**狀態如何發生**|**影響**|
 |:-----|:-----|:-----|
 |**Active**  <br/> |系統管理員上載增益集，並將其指派給使用者或群組。  <br/> |被指派增益集的使用者和群組會在相關用戶端中看見增益集。  <br/> |
-|**已關閉**  <br/> |系統管理員已關閉增益集。  <br/> |被指派增益集的使用者和群組無法再存取增益集。  <br/> 若增益集狀態變更為 [**使用中]，使用者**和群組將可再次存取它。  <br/> |
+|**已關閉**  <br/> |系統管理員已關閉增益集。  <br/> |被指派增益集的使用者和群組無法再存取增益集。  <br/> 如果增益集狀態已變更為 [使用中]，使用者和群組將可再次存取增益集。  <br/> |
 |**Deleted**  <br/> |系統管理員已刪除增益集。  <br/> |被指派增益集的使用者和群組無法再存取增益集。  <br/> |
    
 如果沒有人再使用增益集，請考慮刪除增益集。 如果只有在一年的某些特殊時段需要使用增益集，關閉增益集可能會是比較合理的做法。
@@ -182,9 +175,9 @@ Office 增益集會與內含部分增益集中繼資料的 XML 資訊清單檔�
     
 - 從**AppSource**中開始的購置
     
-- Office 365 中的增益集
+- Microsoft 365 中的增益集
     
-嘗試存取儲存區的使用者會看到下列訊息：**對不起，Office 365 已設定為防止個別購買 Office store 增益集。**
+嘗試存取儲存區的使用者會看到下列訊息：**對不起，Microsoft 365 已設定為防止個別購買 Office store 增益集。**
   
 下列版本提供支援關閉 Office 書店的功能：
   
@@ -241,7 +234,7 @@ Office 增益集會與內含部分增益集中繼資料的 XML 資訊清單檔�
   
 如果已啟用 Active Directory 驗證程式庫（ADAL），Windows 的 Word、Excel 及 PowerPoint 2013 會支援相同的次要檢查。 規範有兩個選項，如接下來所述。
   
-- **啟用 ADAL**。 本文說明如何啟用 ADAL for Office 2013：搭配 office[用戶端使用 office 365 新式驗證](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)。<br/>您也需要將登錄機碼設定為啟用 ADAL，如在[Windows 裝置上啟用 Office 2013 新式驗證](../security-and-compliance/enable-modern-authentication.md)中所述。<br/>此外，您必須安裝下列 Office 2013 的四月更新：
+- **啟用 ADAL**。 本文說明如何啟用 ADAL for Office 2013：搭配[使用 Microsoft 365 新式驗證與 office 用戶端](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)。<br/>您也需要將登錄機碼設定為啟用 ADAL，如在[Windows 裝置上啟用 Office 2013 新式驗證](../security-and-compliance/enable-modern-authentication.md)中所述。<br/>此外，您必須安裝下列 Office 2013 的四月更新：
     
   - [Office 2013 的安全性更新說明：4月10日（2018）](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     

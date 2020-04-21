@@ -18,43 +18,43 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: 瞭解如何使用 Microsoft 365 系統管理中心的 [Microsoft 365 報告] 儀表板，取得使用狀況報告的 ProPlus。
-ms.openlocfilehash: f697b6bcf0ae53c028ce2f13a97b1e11134a6112
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+ms.openlocfilehash: 7f15a409f2df11f8d00c3d5a732d1d6ded615fa4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204075"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618941"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---proplus-usage"></a>系統管理中心的 Microsoft 365 報告-ProPlus 使用狀況
 
 Microsoft 365**報告**儀表板會向您顯示組織中各產品的活動概況。 此功能可讓您深入了解個別產品層級報表，更加深入解析各產品內的活動。 請參閱[報告概觀主題](activity-reports.md)。
-  
-例如，您可以查看每位使用者的活動，以供每個使用者使用 ProPlus 應用程式，方法是查看他們在應用程式中的活動，以及如何在各平臺之間使用它們。  
-  
-> [!NOTE]
-> 您必須是 Microsoft 365 或 Exchange、SharePoint 或商務用 Skype 系統管理員的全域系統管理員、全域讀取器或報告讀取器，才能查看報告。 
+
+ 例如，您可以查看每位使用者的活動，以供每個使用者使用 ProPlus 應用程式，方法是查看他們在應用程式中的活動，以及如何在各平臺之間使用它們。
+
+
+ > [!NOTE]
+ > 您必須是 Microsoft 365 或 Exchange、SharePoint 或商務用 Skype 系統管理員的全域系統管理員、全域讀取器或報告讀取器，才能查看報告。
 
 ## <a name="how-to-get-to-the-proplus-usage-report"></a>如何取得 ProPlus 使用狀況報告
 
 1. 在系統管理中心中，移至 **[報告]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">[使用量]</a> 頁面。
 
-    
-2. 從 [**選取報告**] 下拉式清單中，選取 [ **Office 365** \> **ProPlus 使用狀況**]。
+ 2. 從 [**選取報告**] 下拉式清單中，選取 [ **Office 365** \> **ProPlus 使用狀況**]。
 
 ## <a name="interpret-the-proplus-usage-report"></a>解讀 ProPlus 使用狀況報告
 
-您可以查看 [**使用者**] 和 [**平臺**] 圖表，以查看使用者的 ProPlus 活動。 
+您可以查看 [**使用者**] 和 [**平臺**] 圖表，以查看使用者的 ProPlus 活動。
 
 ![ProPlus 使用方式報告](../../media/proplususagenumbers.png)
 
 |||
-|:-----|:-----|
-|1.  <br/> |您可以針對過去7天、30天、90天或180天的趨勢，查看**ProPlus 使用狀況**報告。 不過，如果您在報告中選取某一天，表格（7）將會從目前的日期顯示最多28天的資料（不是報告產生的日期）。  <br/> |
-|2.  <br/> |每個報告中的資料通常會涵蓋過去24到48小時。  <br/> |
-|3.  <br/> |[**使用者**view iew] 會顯示每個應用程式的作用中使用者數目的趨勢-Outlook、Word、Excel、PowerPoint、OneNote 和團隊。 「作用中使用者」是指任何在這些應用程式中執行任何故意動作的使用者。  <br/> |
-|4.  <br/> |[**平臺**] 視圖會顯示每個平臺（Windows、Mac、Web 及行動裝置）上的每個應用程式中使用中使用者的趨勢。 <br/> |
-|5.<br/>|在 [**使用者**] 圖表上，Y 軸是個別應用程式的唯一作用中使用者數目。 在 [ **平臺** ] 圖表上，Y 軸是個別平臺的唯一使用者數目。 這兩張圖表的 X 軸都是在指定的平臺上使用應用程式的日期。 rm。<br/>|
-|6.<br/>|您可以選取圖例中的專案，以篩選您在圖表上看到的數列。 例如，在 [**使用者**] 圖表上，選取 [Outlook]、[Word]、[PowerPoint Excel]、[OneDrive] 或 [小組]，以查看只與各項相關的資訊。 變更此選取專案並不會變更下方格線表格中的資訊。|
-|7.<br/>|表格顯示每個使用者層級的資料明細。 您可以新增或移除表格中的欄位。 <br/><br/>**Username**是在 Microsoft app 上執行活動之使用者的電子郵件地址。<br><br/>**[上次啟用日期（UTC）** ] 是使用者啟用其 ProPlus 訂閱的最晚日期。<br/><br/>**[上次活動日期（UTC）** ] 是指使用者有意執行活動的最晚日期。 若要查看特定日期發生的活動，請直接選取圖表中的日期。<br/><br/>對應至每個應用程式的下列各欄，識別使用者在該應用程式中所選期間內是否為作用中：<br> <br>**Outlook** <br>**Word** <br>**Excel**<br>**PowerPoint** <br>**OneNote**<br><br> 下列對應于每個平臺的各欄，識別所選期間內的任何應用程式在該平臺上是否為使用中的使用者（ProPlus）：<br><br>**Outlook （Windows）**<br>**Outlook （Mac）**<br>**Outlook （Web）** <br>**Outlook （Mobile）**<br> **Word （Windows）**<br> **Word （Mac）**<br> **Word （Web）**<br> **Word （Mobile）**<br> **Excel （Windows）**<br> **Excel （Mac）**<br> **Excel （Web）**<br> **Excel （Mobile）**<br> **PowerPoint （Windows）**<br> **PowerPoint （Mac）**<br>**PowerPoint （Web）**<br> **PowerPoint （行動裝置）**<br> **OneNote （Windows）**<br> **OneNote （Mac）**<br> **OneNote （Web）**<br>**OneNote （行動裝置）**<br> **小組（Windows）**<br> **小組（Mac）**<br> **小組（Web）**<br>**小組（行動裝置）** |
-|8.<br/>|選取 [**管理欄**] 圖示，以新增或移除報告中的欄。|
-|9.<br/>|您也可以選取 [**匯出**] 連結，將報告資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的匯總、排序及篩選，以進行進一步的分析。 如果您的使用者少於100，您可以在報表本身的資料表中進行排序和篩選。 如果您有超過100的使用者，為了進行篩選和排序，您將需要匯出資料。|
+ |:-----|:-----|
+ |1. <br/> |您可以針對過去7天、30天、90天或180天的趨勢，查看**ProPlus 使用狀況**報告。 不過，如果您在報告中選取某一天，表格（7）將會從目前的日期顯示最多28天的資料（不是報告產生的日期）。 <br/> |
+ |2. <br/> |每個報告中的資料通常會涵蓋過去24到48小時。 <br/> |
+ |3. <br/> |[**使用者**view iew] 會顯示每個應用程式的作用中使用者數目的趨勢-Outlook、Word、Excel、PowerPoint、OneNote 和團隊。 「作用中使用者」是指任何在這些應用程式中執行任何故意動作的使用者。 <br/> |
+ |4. <br/> |[**平臺**] 視圖會顯示每個平臺（Windows、Mac、Web 及行動裝置）上的每個應用程式中使用中使用者的趨勢。 <br/> |
+ |5.<br/>|在 [**使用者**] 圖表上，Y 軸是個別應用程式的唯一作用中使用者數目。 在 [ **平臺** ] 圖表上，Y 軸是個別平臺的唯一使用者數目。 這兩張圖表的 X 軸都是在指定的平臺上使用應用程式的日期。 rm。<br/>|
+ 6.<br/>|您可以選取圖例中的專案，以篩選您在圖表上看到的數列。 例如，在 [**使用者**] 圖表上，選取 [Outlook]、[Word]、[PowerPoint Excel]、[OneDrive] 或 [小組]，以查看只與各項相關的資訊。 變更此選取專案並不會變更下方格線表格中的資訊。|
+ |7.<br/>|表格顯示每個使用者層級的資料明細。 您可以新增或移除表格中的欄位。 <br/><br/>**Username**是在 Microsoft app 上執行活動之使用者的電子郵件地址。<br><br/>**[上次啟用日期（UTC）** ] 是使用者啟用其 ProPlus 訂閱的最晚日期。<br/><br/>**[上次活動日期（UTC）** ] 是指使用者有意執行活動的最晚日期。 若要查看特定日期發生的活動，請直接選取圖表中的日期。<br/><br/>對應至每個應用程式的下列各欄，識別使用者在該應用程式中所選期間內是否為作用中：<br> <br>**Outlook** <br>**Word** <br>**Excel**<br>**PowerPoint** <br>**OneNote**<br><br> 下列對應于每個平臺的各欄，識別所選期間內的任何應用程式在該平臺上是否為使用中的使用者（ProPlus）：<br><br>**Outlook （Windows）**<br>**Outlook （Mac）**<br>**Outlook （Web）** <br>**Outlook （Mobile）**<br> **Word （Windows）**<br> **Word （Mac）**<br> **Word （Web）**<br> **Word （Mobile）**<br> **Excel （Windows）**<br> **Excel （Mac）**<br> **Excel （Web）**<br> **Excel （Mobile）**<br> **PowerPoint （Windows）**<br> **PowerPoint （Mac）**<br>**PowerPoint （Web）**<br> **PowerPoint （行動裝置）**<br> **OneNote （Windows）**<br> **OneNote （Mac）**<br> **OneNote （Web）**<br>**OneNote （行動裝置）**<br> **小組（Windows）**<br> **小組（Mac）**<br> **小組（Web）**<br>**小組（行動裝置）** |
+ |8.<br/>|選取 [**管理欄**] 圖示，以新增或移除報告中的欄。|
+ |9.<br/>|您也可以選取 [**匯出**] 連結，將報告資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的匯總、排序及篩選，以進行進一步的分析。 如果您的使用者少於100，您可以在報表本身的資料表中進行排序和篩選。 如果您有超過100的使用者，為了進行篩選和排序，您將需要匯出資料。|

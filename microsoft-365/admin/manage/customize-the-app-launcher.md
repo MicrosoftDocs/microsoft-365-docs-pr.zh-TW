@@ -2,8 +2,8 @@
 title: 新增自訂磚至 App 啟動器
 f1.keywords:
 - CSH
-ms.author: kwekua
-author: kwekua
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,20 +20,20 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: '透過將自訂麻將牌新增至應用程式啟動器，建立電子郵件、檔、應用程式、SharePoint 網站、外部網站及其他資源的快速連結。 '
-ms.openlocfilehash: fff65c7263e40bf376f53e5f150daea7a24ff55d
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 705d45a2c26d3bd5e2d45d6d8f5a7c998c449f8d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131528"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628193"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>新增自訂磚至 App 啟動器
 
-在 Office 365 中使用 Office 365 App 啟動器，可讓您輕鬆快速地存取電子郵件、行事曆、文件和 App ([深入了解](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a.aspx))。這些是 Office 365 中提供給您的 App，以及您從 [SharePoint 市集](https://support.office.com/article/dd98e50e-d3db-4ecb-9bb7-82b189822d43.aspx)或 [Azure AD](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher) 新增的自訂 App。
+在 Microsoft 365 中，您可以使用 App 啟動器快速且輕鬆地取得您的電子郵件、行事曆、檔及應用程式（[深入瞭解](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a.aspx)）。 這些是您從 Microsoft 365 取得的應用程式，以及您從[SharePoint Store](https://support.office.com/article/dd98e50e-d3db-4ecb-9bb7-82b189822d43.aspx)或[Azure AD](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher)新增的自訂應用程式。
   
 您還可以在 App 啟動器上，加入自己的自訂磚，讓它們指向 SharePoint 網站、外部網站、舊版 App 等。 自訂圖格會出現在應用程式啟動器的**所有**應用程式下方，但您可以將其固定至**Home**應用程式，並指示使用者執行相同的作業。 這麼一來，您就可以輕鬆尋找相關的網站、App 和資源來完成您的工作。 在下面這個範例中，名為「Contoso 入口網站」的磚，就是用來存取組織 SharePoint 內部網路網站的自訂磚。 
   
-![Office 365 應用程式啟動器](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
+![應用程式啟動器](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>在 App 啟動器上新增自訂磚
 
@@ -62,7 +62,7 @@ ms.locfileid: "43131528"
 2. 尋找應用程式的新麻將牌，選取省略號，然後選擇 [**固定至啟動器**]。
   
     > [!NOTE]
-    > 如果您在之前的步驟看不到已建立的 [自訂磚]，請確認 Exchange Online 信箱已指派給您，且至少登入您的信箱一次。這些是在 Office 365 中自訂磚時的必要步驟。 
+    > 如果您在之前的步驟看不到已建立的 [自訂磚]，請確認 Exchange Online 信箱已指派給您，且至少登入您的信箱一次。 Microsoft 365 中的自訂圖格必須執行這些步驟。 
   
 > [!IMPORTANT]
 > 您和您的使用者都必須執行這些步驟，才能將自訂磚從 [我的 App] 頁面升階到 App 啟動器。 
@@ -81,6 +81,6 @@ ms.locfileid: "43131528"
   
 ## <a name="whats-next"></a>下一步是什麼？
 
-除了在 App 啟動器中新增磚之外，您還可以在 Office 365 導覽列中，新增 App 啟動器磚 ([深入了解](https://support.office.com/article/d536512c-b0f7-49fd-b8db-a8a967e23f23.aspx))。若要配合貴組織的品牌，自訂 Office 365 的外觀與風格，請參閱[自訂 Office 365 佈景主題](../setup/customize-your-organization-theme.md)。
+除了將磚新增至應用程式啟動器之外，您還可以將應用程式啟動器磚新增至導覽列（[深入瞭解](https://support.office.com/article/d536512c-b0f7-49fd-b8db-a8a967e23f23.aspx)）。 若要自訂 Microsoft 365 的外觀與風格，使其符合您組織的品牌，請參閱[自訂 microsoft 365 主題](../setup/customize-your-organization-theme.md)。
   
 

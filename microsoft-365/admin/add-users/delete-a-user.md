@@ -23,22 +23,22 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: 瞭解如何刪除使用者帳戶。 決定要如何處理使用者的電子郵件、OneDrive 內容，以及是否要保留產品授權或停止付款。
-ms.openlocfilehash: 59d06a075b5badeda410b4b25d60fa135b9ce5f7
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: 1d529627841c648684c8a9fe217a761b29749150
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608116"
+ms.locfileid: "43617245"
 ---
 # <a name="delete-a-user-from-your-organization"></a>刪除貴組織中的使用者
   
 ||
 |:-----|
-|**想知道如何刪除您在工作或學校使用*的 Office 365*使用者帳戶嗎？請聯繫您工作或學校的技術支援人員，為您執行這些步驟。**|
+|**想要如何刪除您在工作或學校使用的*自己*的 Microsoft 365 使用者帳戶？請聯繫您工作或學校的技術支援人員，為您執行這些步驟。**|
    
 ## <a name="what-you-need-to-know-about-deleting-users"></a>刪除使用者的注意事項
 
-- 只有公司或學校具備 [Office 365 全域系統管理員](about-admin-roles.md)或使用者管理權限的人員才能刪除使用者帳戶。 
+- 只有擁有公司或學校之[Microsoft 365 全域系統管理員](about-admin-roles.md)或使用者管理許可權的人員才能刪除使用者帳戶。 
     
 - 在永久刪除使用者資料之前，您有 30 天的期限可以[還原](restore-user.md)帳戶。 
     
@@ -46,7 +46,7 @@ ms.locfileid: "43608116"
     
 - 如果您想要保留使用者的電子郵件，請在刪除帳戶 **之前** ，將電子郵件移到不同的位置。如果您已刪除帳戶：如果尚未經過 30 天，則您可以還原帳戶、移動電子郵件資料，然後再刪除帳戶。請參閱 [存取及備份離職使用者的資料](get-access-to-and-back-up-a-former-user-s-data.md) (機器翻譯)。
     
-- 如果您的企業訂閱如 Office 365 Enterprise E3，您可以將已刪除之 Office 365 使用者帳戶的信箱資料，將其變成非使用中的*信箱*，以加以保留。 To learn more, see [Manage inactive mailboxes in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
+- 如果您的企業訂閱如 Office 365 企業版 E3，您可以將已刪除之使用者帳戶的信箱資料，將其變成非使用中的*信箱*，以加以保留。 To learn more, see [Manage inactive mailboxes in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 
 ## <a name="global-admin-delete-a-user-stop-paying-for-their-license-and-choose-what-to-do-with-their-email-and-onedrive-content"></a>全域管理員：刪除使用者、停止支付其授權，並選擇要如何處理他們的電子郵件和 OneDrive 內容。
@@ -65,7 +65,7 @@ ms.locfileid: "43608116"
 |電子郵件  <br/> | 授與另一個使用者對已刪除使用者之電子郵件的存取權，會將刪除的使用者信箱轉換成共用信箱。 然後新的信箱擁有者可以存取信箱，並監視新的電子郵件。 您也會有下列選項：  <br/>  <br/>變更顯示名稱-建議您變更顯示名稱，以便在作用中使用者清單中識別共用信箱。  <br/>  開啟自動回復-我們已經為您撰寫了禮貌的自動回復。 您可以將不同的自動回復傳送給組織內的人員，以及組織外的人員。  <br/> <br/> 清除別名-別名是使用者的其他電子郵件地址。 有些組織並未使用它們，否則您不需要在這裡做任何其他事情。 如果使用者確實有別名，我們建議您將其移除，這樣您就可以重複使用這些電子郵件地址。 否則，您無法重複使用這些電子郵件地址，直到已刪除信箱的保留期間已經過去為止。 根據預設，已刪除的信箱可復原30天。 如需詳細資訊，請參閱[刪除或還原 Exchange Online 中的使用者信箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox)。 <br/> |
 |Active Directory  <br/> |如果您的公司使用與 Azure AD 同步處理的 **Active Directory** ，您必須從 Active Directory 中刪除使用者帳戶。 您無法透過 Office 365 執行這個動作。 如需相關指示，請參閱[刪除使用者帳戶](https://go.microsoft.com/fwlink/p/?linkid=841808)。  <br/> |
    
-### <a name="get-started"></a>開始使用
+### <a name="get-started"></a>入門
 
 ::: moniker range="o365-worldwide"
 
@@ -176,13 +176,13 @@ ms.locfileid: "43608116"
   
 - **您會收到錯誤訊息，指出無法刪除使用者行。請稍後再試一次。」** Doublecheck 帳戶是否已設定電子郵件轉寄功能，或是否已轉換成共用信箱。 這兩種情況都會導致該錯誤。 若帳戶有電子郵件轉寄或已轉換成共用信箱，請勿刪除帳戶。
 
-- **您沒有適當的權限可刪除使用者** 。 只有[Office 365 全域系統管理員或使用者管理系統管理員](about-admin-roles.md)可以刪除使用者。 這通常需要您的學校或公司提供技術支援。
+- **您沒有適當的權限可刪除使用者** 。 只有[Microsoft 365 全域系統管理員或使用者管理系統管理員](about-admin-roles.md)可以刪除使用者。 這通常需要您的學校或公司提供技術支援。
 
 - **您刪除了某個使用者，但對方的名稱仍在您的全域通訊錄中出現** 。如果公司使用 Active Directory，就會發生這個問題。您必須從 Active Directory 刪除使用者帳戶。如需相關指示，請參閱這篇 TechNet 文章︰ [刪除使用者帳戶](https://go.microsoft.com/fwlink/p/?linkid=841808)。
 
 ||
 |:-----|
-|**您是否要刪除電腦中的 Office 365？請移至[取消您的訂閱](../../commerce/subscriptions/cancel-your-subscription.md)。**|
+|**您想要從您的電腦刪除 Microsoft 365 嗎？移至 [[取消您的訂閱](../../commerce/subscriptions/cancel-your-subscription.md)]。**|
    
 ## <a name="related-articles"></a>相關文章
 

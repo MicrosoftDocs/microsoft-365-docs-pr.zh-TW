@@ -1,5 +1,5 @@
 ---
-title: 在 Yahoo! Small Business 建立 Office 365 的 DNS 記錄
+title: 在 Yahoo! 適用于 Microsoft 的小型企業
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
-description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務 Yahoo！的 DNS 記錄 Office 365 的小型企業版。
-ms.openlocfilehash: 7b0d0b25a2895101e2f9a259a82fb18e9447441f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務 Yahoo！的 DNS 記錄 適用于 Microsoft 的小型企業。
+ms.openlocfilehash: 12efa8f7056f0d06cbf78b2486ea67dc85d2e705
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211035"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629152"
 ---
-# <a name="create-dns-records-at-yahoo-small-business-for-office-365"></a>在 Yahoo! Small Business 建立 Office 365 的 DNS 記錄
+# <a name="create-dns-records-at-yahoo-small-business-for-microsoft"></a>在 Yahoo! 適用于 Microsoft 的小型企業
 
  若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
   
@@ -89,5 +89,5 @@ ms.locfileid: "43211035"
     
     ![The sign-in page for Aabaco Small Business](../../media/4ef3cfc3-26da-4e03-932b-9346ef217848.png)
   
-現在您已建立 Aabaco 帳戶，接著可以[在 Aabaco Small Business for Office 365 建立 DNS記錄](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
+現在您已建立 Aabaco 帳戶，您可以[在 Microsoft Aabaco Small Business 建立 DNS 記錄](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
   

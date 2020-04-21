@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
-description: 了解如何設定登錄機碼，以啟用新式驗證已安裝的 Microsoft Office 2013 的裝置。
-ms.openlocfilehash: f1264affa5be93b19e564a0edea00bfb78f452f1
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 瞭解如何設定登錄機碼，以便為已安裝 Microsoft Office 2013 的裝置啟用新式驗證。
+ms.openlocfilehash: 8dec8174d5f39d8fecd6b2a7340d69dbcd421357
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42240311"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627725"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>為 Windows 裝置上的 Office 2013 啟用新式驗證
 
@@ -39,10 +39,10 @@ ms.locfileid: "42240311"
   
 |**登錄機碼**|**類型**|**Value** |
 |:-------|:------:|--------:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
    
-登錄機碼設定完成後，您即可設定 Office 2013 裝置 App 為 Office 365 搭配使用[多重要素驗證 (MFA)](set-up-multi-factor-authentication.md)。 
+設定登錄機碼之後，您可以將 Office 2013 裝置應用程式設定為使用[多重要素驗證（MFA）](set-up-multi-factor-authentication.md)與 Microsoft 365。 
   
 如果您目前使用任何用戶端 App 登入，您就必須在登出後再次登入，變更才會生效。否則，在 ADAL 識別建立之前，您將無法使用 MRU 和漫遊設定。
   

@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中設定標準或已設定目標發行選項
+title: 設定標準或目標發行選項
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -20,38 +20,38 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
-description: 了解如何在 Microsoft 365 系統管理中心中設定新的產品與功能更新發行選項。
-ms.openlocfilehash: d6c2eab340f4401fb31e4d9e814fbd326573569a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 瞭解如何在 Microsoft 365 系統管理中心中，設定新產品及功能更新的發行選項。
+ms.openlocfilehash: 11672e46acb3124c8fd840ab19ee683cfd6af94f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361798"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628109"
 ---
-# <a name="set-up-the-standard-or-targeted-release-options-in-office-365"></a>在 Office 365 中設定標準或已設定目標發行選項
+# <a name="set-up-the-standard-or-targeted-release-options"></a>設定標準或目標發行選項
 
-有了 Office 365，您就可以在新的產品更新及功能推出時收到這些更新，而不必每幾年進行所費不貲的更新。您可以管理組織收到這些更新的方式。例如，您可以註冊以在早期取得發行的更新，讓您的組織率先收到更新。您可以指定僅特定人員收到這些更新。或者，您可以維持預設的發行排程，於稍後收到更新。本文說明不同的發行選項，以及您可以如何將它運用於您的組織。
+使用 Microsoft 365 時，您會在新的產品更新及功能可供使用時收到，而不是每隔幾年執行昂貴的更新。 您可以管理組織收到這些更新的方式。 例如，您可以註冊以在早期取得發行的更新，讓您的組織率先收到更新。 您可以指定僅特定人員收到這些更新。 或者，您可以維持預設的發行排程，於稍後收到更新。 本文說明不同的發行選項，以及您可以如何將它運用於您的組織。
   
 > [!IMPORTANT]
-> 本文中所描述的 Office 365 更新適用於 Office 365、SharePoint Online 和 Exchange Online。這些不適用於商務用 Skype 及相關服務。這些發行選項是有特定對象，並且是發佈 Office 365 變更的最佳方式，但無法保證永遠適用所有更新。 
+> 本文所述的 Microsoft 365 更新適用于 Microsoft 365、SharePoint Online 和 Exchange Online。 這些不適用於商務用 Skype 及相關服務。 這些版本選項是針對目標的，將變更發佈至 Microsoft 365 的最佳操作方式，但在任何時間或所有更新皆無法保證。 
   
 ## <a name="how-it-works---release-validation"></a>發行驗證如何運作
 
-第一次測試及驗證由功能小組進行，然後由整個 Office 365 功能小組進行，後面接著所有 Microsoft 的任何新的版本。 內部測試和驗證之後, 的下一個步驟是**已設定目標發行**（先前稱為初次發行計劃） 選擇加入的客戶。 在每個發行週期，Microsoft 都會收集意見反應，並透過監視關鍵使用計量，進一步驗證品質。 這樣一系列的漸進式驗證，都是為了確保全球發行能夠盡可能完善。 下圖是發行的圖片說明： 
+任何新的版本都會先由功能小組進行測試及驗證，再由整個 Microsoft 365 功能小組進行測試及驗證，最後是所有 Microsoft。 在內部測試及驗證之後，下一步是針對加入宣告的客戶，將**目標發行**（先前稱為第一版）。 在每個發行週期，Microsoft 都會收集意見反應，並透過監視關鍵使用計量，進一步驗證品質。 這樣一系列的漸進式驗證，都是為了確保全球發行能夠盡可能完善。 下圖是發行的圖片說明： 
   
-![驗證週期版 Office 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Microsoft 365 的版本驗證鈴聲](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-針對重大更新，Office 客戶一開始會由[Microsoft 365 藍圖](https://products.office.com/business/office-365-roadmap)獲得通知。 當更新變得更接近推出，它會傳達透過[Office 365 訊息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)。
+對於重要的更新，Office 客戶最初是由[Microsoft 365 藍圖](https://products.office.com/business/office-365-roadmap)通知。 隨著更新變得更接近，它會透過您的[Microsoft 365 訊息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)進行傳遞。
 
 > [!NOTE]
-> 您必須透過[系統管理中心](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)存取您的訊息中心 Office 365 或 Azure AD 帳戶。 Office 365 家用版方案的使用者沒有系統管理中心。
+> 您必須使用 Microsoft 365 或 Azure AD 帳戶，透過系統[管理中心](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)存取您的郵件中心。 Microsoft 365 家用方案使用者沒有系統管理員中心。
 
 
 ## <a name="standard-release"></a>標準發行
 
-這是預設選項： 您和您的使用者收到最新的更新時正在廣泛發行給所有客戶。
+這是預設選項，當您和您的使用者廣泛發佈給所有客戶時，您就會收到最新的更新。
   
-很好的作法是將大部分使用者在**標準發行**和 IT 專業人員和電源中的使用者來評估新功能，並準備小組**已設定目標發行**至支援商務使用者和主管。 
+好的做法是讓大部分的使用者都是在**標準發行**中，也可以讓 IT 專業人員和超級使用者在**目標版本**中，評估新功能，並準備小組以支援商務使用者和主管人員。 
   
 > [!NOTE]
 > 如果您從已設定目標發行切換回標準發行，您的使用者可能無法存取尚未到達標準發行的功能。 
@@ -65,15 +65,15 @@ ms.locfileid: "42361798"
   
 ### <a name="targeted-release-for-entire-organization"></a>適用於整個組織的已設定目標發行
 
-如果您[在系統管理中心的 [版本] 選項設定](#set-up-the-release-option-in-the-admin-center)此選項，您所有的使用者會收到已設定目標發行 」 體驗。 針對超過 300 個使用者的組織，建議您針對此選項使用測試訂閱。 如需測試訂閱資訊，請連絡您的 Microsoft 連絡人。 
+如果您為此選項[設定系統管理中心的 [發行] 選項](#set-up-the-release-option-in-the-admin-center)，所有的使用者都將取得目標的發行體驗。 針對超過 300 個使用者的組織，建議您針對此選項使用測試訂閱。 如需測試訂閱資訊，請連絡您的 Microsoft 連絡人。 
   
 ### <a name="targeted-release-for-selected-users"></a>適用於已選取使用者的已設定目標發行
 
-如果您[在系統管理中心的 [版本] 選項設定](#set-up-the-release-option-in-the-admin-center)此選項，您可以定義特定使用者，通常是電源，以接收搶先特色與功能。 
+如果您為此選項[設定系統管理中心的 [發行] 選項](#set-up-the-release-option-in-the-admin-center)，您可以定義特定使用者（通常為 [超級使用者]）以接收可及早存取功能。 
   
 ## <a name="benefits-of-targeted-release"></a>已設定目標發行的優點
 
-已設定目標發行可讓系統管理員、變更管理員，或者任何負責 Office 365 更新的人員為即將到來的變更做好準備，方法是：
+目標版本可讓系統管理員、變更管理員或其他人負責 Microsoft 365 更新，以準備即將進行的變更，其方式如下：
   
 - 在新的更新發行給組織中的所有使用者之前，對更新進行測試與驗證。
     
@@ -85,31 +85,31 @@ ms.locfileid: "42361798"
     
 - 使用功能控制項 (如果適用的話) 來控制發行給使用者的更新。
     
-## <a name="set-up-the-release-option-in-the-admin-center"></a>在系統管理中心中設定發行選項
+## <a name="set-up-the-release-option-in-the-admin-center"></a>設定系統管理中心的 [發行] 選項
 
-您可以依照下列步驟，變更您的組織收到 Office 365 更新的方式。您必須是 Office 365 中的全域系統管理員才能加入。
+您可以遵循下列步驟，變更您的組織接收 Microsoft 365 更新的方式。 您必須是 Microsoft 365 中的全域系統管理員，才能加入宣告。
   
 > [!IMPORTANT]
-> 以下變更可能需要 24 小時的時間，才能在 Office 365 中生效。如果您在啟用已設定目標發行後選擇退出，使用者可能會無法存取尚未到達排定發行的功能。 
+> 在下列情況下，最多可能需要24小時的時間，才會在 Microsoft 365 中生效。 如果您在啟用已設定目標發行後選擇退出，使用者可能會無法存取尚未到達排定發行的功能。 
   
-1. 在系統管理中心，移至 [**設定** > **設定**，並在 [**組織設定檔**] 索引標籤上，選擇 [**發行喜好設定**。
+1. 在系統管理中心中，移至 [**設定** > ] 設定，然後選擇 [**組織設定檔**] 索引標籤下的 [**發行喜好****設定**]。
 
-5. 若要停用已設定目標的發行，請選取 [**標準發行**，然後選取 [**儲存變更**。 
+5. 若要停用目標版本，請選取 [**標準版本**]，然後選取 [**儲存變更**]。 
     
-6. 若要啟用已設定目標的發行您的組織中的所有使用者，請選取 [**已設定目標發行的所有人**，然後選取 [**儲存變更**。 
+6. 若要為組織中的所有使用者啟用目標版本，請為 [所有人] 選取 [**目標版本**]，然後選取 [**儲存變更**]。 
     
-7. 若要啟用已設定目標的發行的部分人員在組織中，選取**所選使用者的已設定目標發行**，然後選取 [**儲存變更**。 
+7. 若要為組織中的某些人員啟用目標版本，請選取 [**目標的版本] 選取的使用者**，然後選取 [**儲存變更**]。 
     
-8. 若要新增一位使用者在時間，或將它們新增大量**上傳的使用者**，選擇 [**選取使用者**。
+8. 選擇 [**選取使用者**]，一次新增一個使用者，或**上傳使用者**以大量新增使用者。
     
-9. 當您新增完使用者後，請選取 [**儲存變更**。
+9. 當您新增使用者後，請選取 [**儲存變更**]。
 
 
 
-## <a name="get-the-targeted-release-version-of-office"></a>取得 Office 已設定目標發行版本
+## <a name="get-the-targeted-release-version-of-office"></a>取得 Office 的目標發行版本本
 
 若要安裝 Office 已設定目標發行組建，[請遵循以下步驟](https://support.office.com/article/4dd8ba40-73c0-4468-b778-c7b744d03ead)。完成後您就能夠提早使用 Windows 傳統型 Office 2016 新功能。
   
 ## <a name="learn-more"></a>深入了解
 
-探索如何取得有關即將來臨的 Office 365 更新和發行的通知您[Office 365 訊息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)中的 [[管理的郵件](https://docs.microsoft.com/office365/admin/manage/message-center)。
+探索如何在[microsoft 365 訊息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)[管理郵件](https://docs.microsoft.com/office365/admin/manage/message-center)，以取得即將推出之 microsoft 365 更新及發行的通知。

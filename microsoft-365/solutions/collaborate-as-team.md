@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解如何與小組中的客人共同作業。
-ms.openlocfilehash: 54bf52eebc77e1cce8e1c05a708572d7d1e7fdae
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 4b395f0086198c6226d720c38fc4ea13b1a9d887
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604522"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630746"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在小組中與來賓共同作業
 
@@ -68,17 +68,17 @@ Microsoft 365 中的共用可透過 Azure Active Directory 中的組織關聯設
 > [!NOTE]
 > 在您將「小組訪客」設定為作用中後，可能需要長達24小時的時間才會變成作用中。
 
-## <a name="office-365-groups-guest-settings"></a>Office 365 群組來賓設定
+## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 群組來賓設定
 
-小組使用 Office 365 群組做為小組成員資格。 為了讓小組中的來賓存取能夠運作，必須開啟 Office 365 群組來賓設定。
+小組會使用 Microsoft 365 群組做為小組成員資格。 為了讓小組中的來賓存取能夠運作，必須開啟 Microsoft 365 群組來賓設定。
 
-![Microsoft 365 系統管理中心中 Office 365 群組來賓設定的螢幕擷取畫面](../media/office-365-groups-guest-settings.png)
+![Microsoft 365 admin center 中 Microsoft 365 群組來賓設定的螢幕擷取畫面](../media/office-365-groups-guest-settings.png)
 
-設定 Office 365 群組來賓設定
+設定 Microsoft 365 群組來賓設定
 
 1. 在 Microsoft 365 系統管理中心的左側流覽窗格中，展開 [**設定**]。
 2. 按一下 [**服務] & 增益集**。
-3. 在清單中，按一下 [ **Office 365 群組**]。
+3. 在清單中，按一下 [ **Microsoft 365 群組**]。
 4. 確定 [**讓組織外部的成員存取群組內容**] 和 [**允許群組擁有者將組織外部人員新增至群組**] 核取方塊皆已勾選。
 5. 如果您進行變更，請按一下 [**儲存變更**]。
 

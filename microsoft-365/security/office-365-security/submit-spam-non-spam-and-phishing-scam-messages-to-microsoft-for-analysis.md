@@ -16,17 +16,17 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: '您和您的使用者可以將假的否定和誤報垃圾郵件提交給 Microsoft 進行分析。 '
-ms.openlocfilehash: 77807f710743d98dc2e1564f804b6a67add67def
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: f6dbd808fac54ae273c21773bf8caeabce09b7fb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529046"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631238"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手動將郵件提交給 Microsoft 進行分析
 
 > [!NOTE]
-> 如果您是 Office 365 組織中 Exchange Online 信箱的系統管理員，建議您在 Office 365 安全性 & 規範中心使用提交入口網站。 如需詳細資訊，請參閱[使用系統管理員提交將可疑的垃圾郵件、網路釣魚、URLs 和檔案提交給 Microsoft](admin-submission.md)。
+> 如果您是使用 Exchange Online 信箱的 Microsoft 365 組織中的系統管理員，建議您在安全性 & 合規性中心使用提交入口網站。 如需詳細資訊，請參閱[使用系統管理員提交將可疑的垃圾郵件、網路釣魚、URLs 和檔案提交給 Microsoft](admin-submission.md)。
 
 當您組織中的使用者在其收件匣中收到垃圾郵件（垃圾郵件）或網路釣魚郵件時，或是因為郵件標示為垃圾郵件而未收到合法電子郵件時，可能會令人感到沮喪。 我們不斷微調垃圾郵件篩選器，使其更準確。
 
@@ -81,7 +81,7 @@ ms.locfileid: "43529046"
 
 您可以建立郵件流程規則（也稱為傳輸規則），以使用本主題中所述的方法來尋找向 Microsoft 報告的電子郵件訊息，而且您可以設定密件副本收件者接收這些報告的郵件副本。
 
-您可以在 Exchange 系統管理中心（EAC）和 PowerShell （Office 365 客戶的 Exchange Online PowerShell 中建立郵件流程規則;Exchange Online Protection PowerShell 適用于獨立 EOP 客戶）。
+您可以在 Exchange 系統管理中心（EAC）和 PowerShell （Microsoft 365 客戶的 Exchange Online PowerShell 中建立郵件流程規則;Exchange Online Protection PowerShell 適用于獨立 EOP 客戶）。
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 

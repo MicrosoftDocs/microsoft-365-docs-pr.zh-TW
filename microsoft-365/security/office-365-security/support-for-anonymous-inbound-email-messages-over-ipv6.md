@@ -1,5 +1,5 @@
 ---
-title: 新增對 IPv6 匿名輸入電子郵件的支援
+title: 新增透過 IPv6 支援匿名輸入電子郵件
 f1.keywords:
 - NOCSH
 author: chrisda
@@ -15,16 +15,16 @@ ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Exchange Online 和 Exchange Online Protection 的 IPv6 來源中設定匿名輸入電子郵件的支援。
-ms.openlocfilehash: 414c10f3387138ed7e62f2de4e8549e45d128d2e
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 86de431f8f46af1c5ddae8ecc91f326c6e3280e6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131516"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631214"
 ---
-# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-office-365"></a>在 Office 365 中新增對 IPv6 匿名輸入電子郵件的支援
+# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>在 Microsoft 365 中新增對 IPv6 匿名輸入電子郵件的支援
 
-Office 365 組織若有 Exchange Online 信箱和獨立 Exchange Online Protection （EOP）組織，但沒有 Exchange Online 信箱的電子郵件支援透過 IPv6 的匿名輸入電子郵件。 來源 IPv6 電子郵件伺服器必須符合下列兩項需求：
+Microsoft 365 組織若有 Exchange Online 信箱和獨立 Exchange Online Protection （EOP）組織，但沒有 Exchange Online 信箱的電子郵件支援透過 IPv6 的匿名輸入電子郵件。 來源 IPv6 電子郵件伺服器必須符合下列兩項需求：
 
 - 來源 IPv6 位址必須具有有效的反向 DNS 查詢（PTR）記錄，允許目的地從 IPv6 位址中尋找功能變數名稱。
 

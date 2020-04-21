@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 如果您遇到共用信箱的問題，請嘗試這些解決方案。
-ms.openlocfilehash: 138bcee155652e84ab6ee16cf6a9acab310edde9
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 52aac8ab6936dfeba2ae4b5b7a80c45029ec6105
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210513"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628744"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>解決共用信箱的問題
 
@@ -36,7 +36,7 @@ ms.locfileid: "43210513"
 
 如果您看到錯誤訊息，**表示 proxy 位址 "smtp： <共用信箱名稱\>" 已由 "\<name>" 的 proxy 位址或 LegacyExchangeDN 使用。請選擇另一個 proxy 位址**，這表示您嘗試將已在使用中的名稱提供給共用信箱。 舉例來說，假設您想將共用信箱命名為 info@domain1 和 info@domain2。 方法有兩種：
 
-  - 使用 Windows PowerShell。 如需相關指示，請參閱此部落格文章：[在 Office 365 中建立別名相同但網域不同的共用信箱](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+  - 使用 Windows PowerShell。 如需相關指示，請參閱這篇博客文章：[在不同的網域建立具有相同別名的共用信箱](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
   - 將第二個共用信箱命名為不同于「開始」以避免錯誤的地方。 然後在系統管理中心，將共用信箱重新命名為您想要的內容。
 
@@ -46,7 +46,7 @@ ms.locfileid: "43210513"
 
 **無法傳送此郵件。您沒有代表指定使用者傳送郵件的許可權。**
 
-當 Office 365 遇到複寫延遲問題時，就會出現此訊息。 當您在所有的資料中心之間複寫新共用信箱（或新增使用者）的相關資訊時，它應該會在一小時內消失。 請等候一小時後再試一次，再傳送一封郵件。
+當 Microsoft 365 遇到複寫延遲問題時，就會出現此訊息。 當您在所有的資料中心之間複寫新共用信箱（或新增使用者）的相關資訊時，它應該會在一小時內消失。 請等候一小時後再試一次，再傳送一封郵件。
 
 ## <a name="related-articles"></a>相關文章
 

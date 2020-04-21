@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 建立共用信箱之後，您會想要設定其使用者的某些設定，例如電子郵件轉寄及自動回復。 稍後，您可能想要變更其他設定，例如信箱名稱或成員。
-ms.openlocfilehash: fc2995dc448c7cb28c13c10d78b57e7141963539
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 63d3d0a5867875344ff4635071bbbad69e02eadc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212018"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629044"
 ---
 # <a name="configure-a-shared-mailbox"></a>設定共用信箱
 
@@ -122,7 +122,7 @@ ms.locfileid: "43212018"
 如果您想要允許所有人查看已傳送的電子郵件，請在系統管理中心中編輯共用信箱設定，然後選取 [**已傳送的專案** \> ] [**編輯**]。
 
 
-## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-office-365-email"></a>選擇共用信箱可用於存取 Office 365 電子郵件的應用程式
+## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>選擇共用信箱可用於存取 Microsoft 電子郵件的應用程式
 
 ::: moniker range="o365-worldwide"
 

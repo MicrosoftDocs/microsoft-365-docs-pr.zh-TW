@@ -1,5 +1,5 @@
 ---
-title: 讓使用者在 Office 365 中自行重設密碼
+title: 讓使用者重設自己的密碼
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 瞭解如何使用自助密碼重設工具來重設密碼。
-ms.openlocfilehash: 666d3843f7917cf9bd5718c0ce29f87f93d6effe
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: beffbcac997806f0c13347dfba42a1ab0ec65c1d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211892"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617143"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>讓使用者重設自己的密碼
 
@@ -36,7 +36,7 @@ ms.locfileid: "43211892"
   
 以下是一些您需要知道的事項：
   
-- 您可以使用任何 Office 365 商務、教育或非盈利性收費方案 **，為雲端**使用者取得自助密碼重設。 此工具無法搭配 Office 365 試用版。 
+- 您可以使用任何 Microsoft 365 商務版、教育版或非**盈利性的收費**方案，為雲端使用者取得自助密碼重設。 它不會與 Microsoft 365 試用版搭配使用。 
     
 - 該工具會使用 Azure。 當您執行這些步驟時，您將會在 Azure 中自動**免費**取得此項功能。 如果您不使用其他的 Azure 功能，開啟自助密碼重設不會花費您任何費用。 
     

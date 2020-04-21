@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中執行內部系統管理員接管
+title: 執行內部系統管理員接管
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -18,15 +18,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: 瞭解如何驗證您的電子郵件和網域擁有權，以在 Office 365 中接管未受管理的租使用者
-ms.openlocfilehash: 3c732d55c533c72983aaa59e39e7bb8ff130f280
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 瞭解如何驗證您的電子郵件和網域擁有權，以在 Microsoft 365 中接管未受管理的租使用者
+ms.openlocfilehash: 1772ba9929433c87603d4b9d7027419063fd2fca
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212242"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627941"
 ---
-# <a name="perform-an-internal-admin-takeover-in-office-365"></a>在 Office 365 中執行內部系統管理員接管
+# <a name="perform-an-internal-admin-takeover"></a>執行內部系統管理員接管
 
  若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
 
@@ -67,11 +67,11 @@ ms.locfileid: "43212242"
   
 ## <a name="related-articles"></a>相關文章
 
-Youtube：[接管 Power BI 和 Office 365 IT 系統管理員的 3 個步驟](https://www.youtube.com/watch?v=xt5EsrQBZZk) (英文)
+YouTube：對[POWER BI 和 Microsoft 365 執行 IT 系統管理員的3個步驟](https://www.youtube.com/watch?v=xt5EsrQBZZk)
 
 [Azure AD 中的系統管理接管](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[取得 Office 365 網域的說明](../get-help-with-domains/get-help-with-domains.md)
+[取得網域的說明](../get-help-with-domains/get-help-with-domains.md)
 
 [在您的組織中使用自助註冊](self-service-sign-up.md)
   

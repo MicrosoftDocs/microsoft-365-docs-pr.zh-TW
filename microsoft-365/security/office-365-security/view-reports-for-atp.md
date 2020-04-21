@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: 在安全性&amp;與合規性中心尋找及使用 Office 365 的「高級威脅防護」報告。
-ms.openlocfilehash: b91fb8d000b610439618be687e36dabc787ebb58
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: cca2729918239eee7d27973cd28be16a534e461b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528974"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631058"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>檢視 Office 365 進階威脅防護的報告
 
@@ -107,9 +107,9 @@ ATP 報告包含下列專案：
 若要查看此報告，請[在&amp;安全性與合規性中心](https://protection.office.com)，移至 [**報告** \> ]**儀表板** \> **ATP 檔案類型**。
 
 ![ATP 檔案類型報告](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
-
-當您將游標移到某一天時，您可以在 Office 365 中看到由[ATP 安全附件](atp-safe-attachments.md)和[ &amp;反垃圾郵件反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)所偵測到之惡意檔案類型的細目。
-
+  
+當您將游標移到某一天時，您可以看到[ATP 安全附件](atp-safe-attachments.md)和[ &amp;反垃圾郵件反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)偵測到的惡意檔案類型細目。
+  
 ![ATP 檔案類型一天的報告資料](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
 
 ## <a name="atp-message-disposition-report"></a>ATP 郵件處置報告
@@ -158,7 +158,7 @@ ATP 報告包含下列專案：
 
 若要深入了解，請參閱下列資源：
 
-- [Office 365 安全性與合規性中心權限](permissions-in-the-security-and-compliance-center.md)
+- [安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)
 
 - [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
@@ -168,8 +168,8 @@ ATP 報告包含下列專案：
 
 ## <a name="related-topics"></a>相關主題
 
-[Office 365 安全性&amp;與合規性中心內的報告與深入瞭解](reports-and-insights-in-security-and-compliance.md)
-
+[安全性&amp;與合規性中心內的報告與深入瞭解](reports-and-insights-in-security-and-compliance.md)
+  
 [在安全性&amp;與合規性中心建立報表的排程](create-a-schedule-for-a-report.md)
 
 [在安全性&amp;與合規性中心內設定及下載自訂報告](set-up-and-download-a-custom-report.md)

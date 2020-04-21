@@ -13,19 +13,19 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: '保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。 '
-ms.openlocfilehash: d42760f0dbf38b72fe530a5670f3515bf3ba2f94
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: 0730f4df4f6e9e72f024b35729909df309826625
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225950"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630794"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>最常見的12個任務，可供安全性小組用來支援在家運作
 
 如果您喜歡[Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) ，並突然找到您一開始支援主要的工作力員工，我們需要協助您確保您的組織盡可能安全地運作。 這篇文章會將工作加以劃分，以協助安全小組盡可能快地執行最重要的安全性功能。 
 
 如果您是使用 Microsoft 商務版方案中的小型組織或大中型組織，請參閱下列資源：
-- [保護 Office 365 和 Microsoft 365 商務方案的前 10 個最佳方法](../admin/security-and-compliance/secure-your-business-data.md) 
+- [保護 Office 365 和 Microsoft 365 for business 方案的前10種方式](../admin/security-and-compliance/secure-your-business-data.md) 
 - [市場活動的 Microsoft 365](https://docs.microsoft.com/microsoft-365/campaigns/?view=o365-worldwide) （包括 Microsoft 365 Business 的建議安全性設定）
 
   
@@ -36,7 +36,7 @@ ms.locfileid: "43225950"
 ||**工作**| 所有 Office 365 企業版方案|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
 |1       |[啟用 Azure Multi-Factor 驗證（MFA）](#1-enable-azure-multi-factor-authentication-mfa)   |   ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|2      | [保護 Office 365 中的威脅](#2-protect-against-threats-in-office-365) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|2      | [防範威脅](#2-protect-against-threats) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |3       |  [設定 Office 365 的高級威脅防護](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4       | [設定 Azure 高級威脅防護（ATP）](#4-configure-azure-advanced-threat-protection)   |   |      |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |5      |   [開啟 Microsoft 高級威脅防護](#5-turn-on-microsoft-advanced-threat-protection)  |  |      | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
@@ -45,7 +45,7 @@ ms.locfileid: "43225950"
 |8       |  [將電腦登記到裝置管理並要求相容的電腦](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9       | [針對 cloud connectivity 優化網路](#9-optimize-your-network-for-cloud-connectivity)  |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |10    | [訓練使用者](#10-train-users) |    ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|11  |[開始使用 Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |   |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|11  |[開始使用 Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
 |12 |[監視威脅並採取動作](#12-monitor-for-threats-and-take-action) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 
@@ -63,21 +63,21 @@ ms.locfileid: "43225950"
 套用這些原則只需要數分鐘，但準備好在今後數天內為您的使用者提供支援。  
 
 
-|方案  |建議  |
+|規劃  |建議  |
 |---------|---------|
-|Office 365 方案（沒有 Azure AD P1 或 P2）     |[啟用 AZURE AD 中的安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性預設值包括針對使用者和系統管理員的 MFA。   |
+|Microsoft 365 方案（沒有 Azure AD P1 或 P2）     |[啟用 AZURE AD 中的安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性預設值包括針對使用者和系統管理員的 MFA。   |
 |Microsoft 365 E3 （搭配 Azure AD P1）     | 使用[一般條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)來設定下列原則： <br>- [需要對系統管理員進行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [需要對所有使用者進行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [封鎖舊版驗證](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 （包含 Azure AD P2）     | 使用 Azure AD 身分識別保護，請先建立下列兩個原則，以執行 Microsoft[建議的條件式存取和相關原則的組合](../enterprise/identity-access-policies.md)：<br> - [當登入風險為中或高時，需要 MFA](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [封鎖不支援新式驗證的用戶端](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [高風險使用者必須變更密碼](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 
   
-## <a name="2-protect-against-threats-in-office-365"></a>2：防範 Office 365 中的威脅
+## <a name="2-protect-against-threats"></a>2：防禦威脅
 
-所有 Office 365 方案包含各種威脅防護功能。 Bumping 這些功能的保護只需要數分鐘的時間。
+所有 Microsoft 365 方案包含各種威脅防護功能。 Bumping 這些功能的保護只需要數分鐘的時間。
 - 反惡意程式碼保護
 - 保護惡意 URLs 和檔案
-- 反網路釣魚保護
+- 防網路釣魚保護
 - 反垃圾郵件保護
 
 請參閱[防禦 Office 365 中的威脅](office-365-security/protect-against-threats.md)以取得您可以做為起點的指導方針。
@@ -181,11 +181,11 @@ Microsoft Intune 行動應用程式管理（MAM）可讓您在不管理這些裝
 
 
 如需詳細資訊，請參閱這些檔上的資源：
-- [概述：使用 VPN 分割隧道為遠端使用者優化 Office 365 連線能力](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
+- [概述：使用 VPN 分割隧道為遠端使用者優化連線能力](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
 - [實作 Office 365 的 VPN 分割通道](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 本主題最近的博客文章：
-- [如何快速優化 Office 365 流量以取得遠端員工 & 減少基礎結構的負載](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
+- [如何快速優化遠端員工的流量 & 減少基礎結構的負載](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
 - [安全性專業人員的替代方法，可在當今獨特的遠端工作案例中取得新式的安全性控制措施](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
 

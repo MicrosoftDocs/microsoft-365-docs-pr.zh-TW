@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解如何設定 Microsoft 365，以與組織外部的人員共同作業。
-ms.openlocfilehash: 80b5aacbf73a7845913acdcc6ada2321e49f77cd
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1b2a15312dcaacc398bb521f3ecfb6e7453f66bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894950"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630722"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>與組織外部人員合作
 
@@ -23,7 +23,7 @@ Microsoft 365 中的外部共用功能可讓您組織中的人員與合作夥伴
 
 與組織外部的人員合作，包含兩個主要元件：
 
-- **啟用共用**-透過 Azure Active Directory、小組、Office 365 群組和 SharePoint 設定共用控制，以允許您的組織所需的共用層級。
+- **啟用共用**-透過 Azure Active Directory、小組、Microsoft 365 群組和 SharePoint 設定共用控制，以允許您的組織所需的共用層級。
 - **啟用其他安全性**-雖然基本共用功能可設定為要求組織外部的人員進行驗證，但 Microsoft 365 提供許多額外的安全性和合規性功能，可協助您保護您的資料，並在外部共用時維護您的管理原則。
 
 ## <a name="enable-sharing"></a>啟用共用
@@ -46,7 +46,7 @@ Microsoft 365 中的外部共用功能可讓您組織中的人員與合作夥伴
 
 ## <a name="collaborate-with-partner-companies"></a>與合作夥伴公司共同作業
 
-當您在需要其他組織之許多來賓的大型專案中工作時，或者如果您有來賓經常變更的現行廠商關聯，您可以在 Azure Active Directory 中使用「權利管理」來簡化來賓管理並允許夥伴公司在該責任中分享。 如需詳細資訊，請參閱[Create a B2B extranet with managed guests](b2b-extranet.md) 。
+當您在需要其他組織之許多來賓的大型專案中工作時，或是當來賓經常變更的情況下，您可以使用 Azure Active Directory 中的權利管理，以簡化來賓管理，並允許夥伴公司在該責任中共用。 如需詳細資訊，請參閱[Create a B2B extranet with managed guests](b2b-extranet.md) 。
 
 ## <a name="limit-sharing"></a>限制共用
 

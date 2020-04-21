@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 深入瞭解您的組織如何採用 Microsoft 365 服務來進行通訊及共同作業。
-ms.openlocfilehash: c9e2b9e6b814ac9245222f5da670862e308d1ab4
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: 783b2c599a5f3a31446855450029859e6dfd9f65
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170915"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626931"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情況分析
-
-Microsoft 365 使用方式分析目前不適用於 Power BI 政府客戶。
+---
+Microsoft 365 美國政府社區尚無可用的 microsoft 365 使用方式分析功能。
  
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Microsoft 365 使用情況分析概觀
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中新增或編輯自訂 DNS 記錄
+title: 在 Microsoft 中新增或編輯自訂 DNS 記錄
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: af00a516-dd39-4eda-af3e-1eaf686c8dc9
-description: '瞭解如何在 Office 365 中編輯或新增自訂的 DNS 記錄。 '
-ms.openlocfilehash: c2495e4b7e85361d89404526e2467a08f2259567
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: '瞭解如何在 Microsoft 中編輯或新增自訂的 DNS 記錄。 '
+ms.openlocfilehash: d7084913e2439b126232735fe2e6abe853c03ddf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212518"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630016"
 ---
-# <a name="add-or-edit-custom-dns-records-in-office-365"></a>在 Office 365 中新增或編輯自訂 DNS 記錄
+# <a name="add-or-edit-custom-dns-records-in-microsoft"></a>在 Microsoft 中新增或編輯自訂 DNS 記錄
 
  若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
 
-1. 登入 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。   
+1. 登入 Microsoft 系統管理中心，網址<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>為。   
 
-2. 移至 [**設定** \> **網域**] 頁面。
+2. 移至 [**設定**  > **網域**] 頁面。
 
 3. 在 [**網域**] 頁面上，選取網域。 
     
@@ -46,10 +46,10 @@ ms.locfileid: "43212518"
 
 ## <a name="related-articles"></a>相關文章
 
-[收集建立 Office 365 DNS 記錄所需的資訊](../get-help-with-domains/information-for-dns-records.md)
+[收集建立 Microsoft DNS 記錄所需的資訊](../get-help-with-domains/information-for-dns-records.md)
 
 [DNS 基本概念](../get-help-with-domains/dns-basics.md)
 
-[取得 Office 365 網域的說明](../get-help-with-domains/get-help-with-domains.md)
+[取得網域的說明](../get-help-with-domains/get-help-with-domains.md)
 
 

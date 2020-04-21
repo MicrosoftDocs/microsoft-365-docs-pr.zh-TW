@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 瞭解如何使用 Windows PowerShell 將部分個人的使用者密碼設為永不過期。
-ms.openlocfilehash: 2645e6d5f307a5e5ce8fab5f3a848bf4a539b031
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 66c4901d171f5ed2e07d7a9f5cccbf141dc3d04d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540888"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43624031"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>設定個別使用者的密碼永不過期
 
@@ -40,7 +40,7 @@ ms.locfileid: "43540888"
 
 Microsoft cloud service 的全域系統管理員可以使用 [ [Azure Active Directory PowerShell For Graph]](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) ，將密碼設為不會到期的特定使用者。 您也可以使用[AzureAD](https://docs.microsoft.com/powershell/module/Azuread) Cmdlet 來移除永不過期的設定，或查看哪些使用者密碼設定為永不過期。
 
-本指南適用于其他提供者，例如 Intune 和 Office 365，也就是針對身分識別及目錄服務，也依賴 Azure AD。 [密碼到期] 是原則中唯一可以變更的部分。
+本指南適用于其他提供者，例如 Intune 和 Microsoft 365，也就是針對身分識別及目錄服務，也依賴 Azure AD。 [密碼到期] 是原則中唯一可以變更的部分。
 
 如需有關圖形之 Azure AD PowerShell 的詳細資訊，請參閱[Azure Active Directory PowerShell For graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)。
 

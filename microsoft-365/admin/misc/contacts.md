@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: 瞭解如何在系統管理中心建立連絡人，以及如何管理您的全域通訊清單。
-ms.openlocfilehash: 44bd7319a369da84b8855c5d640b2797a173689e
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: fe402fd5d90147caa7c6ee2f3632749255c672b3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857388"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627917"
 ---
 # <a name="quick-help-contacts"></a>快速說明：連絡人
 
@@ -45,7 +45,7 @@ ms.locfileid: "42857388"
   
 ## <a name="how-does-everyone-get-to-the-contacts-i-created-in-the-admin-center"></a>其他人要如何取得我在系統管理中心建立的連絡人？
 
- 他們可以前往 Office 365 中的**人員**，展開 [**目錄**]，然後選取 [**所有連絡人**]。 他們可以在此檢視每個連絡人以及其資訊。
+ 他們可以前往 Microsoft 365 中的**人員**，展開 [**目錄**]，然後選取 [**所有連絡人**]。 他們可以在此檢視每個連絡人以及其資訊。
   
 ## <a name="can-anyone-create-and-edit-these-organizational-contacts"></a>任何人都可以建立和編輯這些組織的連絡人嗎？
 
@@ -53,7 +53,7 @@ ms.locfileid: "42857388"
   
 ## <a name="can-i-use-this-to-manage-my-business-clients"></a>我可以用它來管理公司客戶嗎？
 
-您可以使用您喜歡的 Office 365 連絡人，但有一些限制。 深入了解[管理連絡人的其他方法](ways-to-manage-contacts.md)
+您可以使用 Microsoft 365 連絡人，但您可以喜歡，但有一些限制。 深入了解[管理連絡人的其他方法](ways-to-manage-contacts.md)
   
 ## <a name="how-do-i-bulk-import-organizational-contacts"></a>如何大量匯入組織的連絡人？
 
@@ -61,4 +61,4 @@ ms.locfileid: "42857388"
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a>如果仍沒有回答到我的問題該怎麼辦？
 
-請瀏覽我們[系統管理說明](../admin-home.yml)的其他部分，或在下方給予您的意見反應。
+請瀏覽我們[系統管理說明](../admin-home.md)的其他部分，或在下方給予您的意見反應。

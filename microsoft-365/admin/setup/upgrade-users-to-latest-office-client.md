@@ -1,5 +1,5 @@
 ---
-title: 將 Office 365 for business 使用者升級至最新的 Office 用戶端
+title: 將您的 Microsoft 365 for business 使用者升級至最新的 Office 用戶端
 f1.keywords:
 - NOCSH
 ms.author: kwekuako
@@ -19,14 +19,14 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 瞭解如何將使用者升級至最新的 Office 用戶端。
-ms.openlocfilehash: 18200184ed8d7eb15ee4eef3903ac9d8e08b9854
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: 148069011784b822c5ce366190afd60bf278772f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521456"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627531"
 ---
-# <a name="upgrade-your-office-365-for-business-users-to-the-latest-office-client"></a>將 Office 365 for business 使用者升級至最新的 Office 用戶端
+# <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>將您的 Microsoft 365 for business 使用者升級至最新的 Office 用戶端
 
 ## <a name="office-2010-reaches-end-of-support"></a>Office 2010 到達支援終止
 
@@ -42,9 +42,9 @@ Office 2010 會在10月13日在2020上達到其支援的終止。 當 Office 201
 
  **這個主題是正確的嗎？**
   
- 如果您是負責組織中商務用 Office 365 訂閱的系統管理員，您就是在正確的位置。 系統管理員通常負責管理使用者、重設密碼、管理 Office 安裝及新增或移除授權等工作。
+ 如果您是負責組織中商務用 Microsoft 365 訂閱的系統管理員，您會處在正確的位置。 系統管理員通常負責管理使用者、重設密碼、管理 Office 安裝及新增或移除授權等工作。
 
- [！附注] 如果您不是系統管理員，且擁有[office 的家用](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans)產品，請參閱[如何升級 office](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx)以取得有關升級舊版 office 的資訊。
+ [！附注] 如果您不是系統管理員，且有[Microsoft 365 系列](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans)產品，請參閱[如何升級 office](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx)以取得有關升級舊版 Office 的資訊。
 
 ## <a name="get-ready-to-upgrade"></a>準備升級
 
@@ -71,9 +71,9 @@ Office 2010 會在10月13日在2020上達到其支援的終止。 當 Office 201
   
 ## <a name="step-2---check-your-existing-subscription-plan"></a>步驟 2-檢查您現有的訂閱計畫
 
-部分 Office 365 方案不包含 Office 的完整桌上出版本，若您的方案不包含 Office，升級步驟會有所不同。
+有些 Microsoft 365 方案不包含 Office 的完整桌上出版本，若您的方案不包含 Office，升級步驟會有所不同。
   
-不確定您有哪一種訂閱計畫嗎？ 請參閱[商務用 Office 365 訂閱有哪些功能？](../admin-overview/what-subscription-do-i-have.md)
+不確定您有哪一種訂閱計畫嗎？ 請參閱[我有哪些 Microsoft 365 for business 訂閱？](../admin-overview/what-subscription-do-i-have.md)
   
 如果您現有的計畫包含 Office，請移至[步驟 3-卸載 office](#step-3---uninstall-office)。
   
@@ -83,7 +83,7 @@ Office 2010 會在10月13日在2020上達到其支援的終止。 當 Office 201
 
  **選項1：切換 Office 訂閱**
 
-切換至包含 Office 的訂閱。 請參閱[切換為其他商務用 Office 365 方案](../../commerce/subscriptions/switch-to-a-different-plan.md)。
+切換至包含 Office 的訂閱。 請參閱[切換至其他 Microsoft 365 for business 方案](../../commerce/subscriptions/switch-to-a-different-plan.md)。
 
 **選項2：購買 Office 的個別購買一次，或透過大量授權購買 Office**
 
@@ -111,13 +111,13 @@ Office 2010 會在10月13日在2020上達到其支援的終止。 當 Office 201
 
  **電腦上預先安裝的 Office**如果您沒有光碟或產品金鑰（如果 Office 隨附的話），您將無法重新安裝。
 
- **不支援的 Office 365 訂閱**如果您的 Office 副本是透過廢止的訂閱（例如 Office 365 Small Business Premium 或 Office 365 中型企業）取得，除非您擁有訂閱隨附的產品金鑰，否則您將無法安裝舊版的 Office。
+ **不支援的訂閱**如果您的 Office 副本是透過廢止的訂閱（例如 Office 365 Small Business Premium 或 Office 365 中型企業）取得，除非您擁有訂閱隨附的產品金鑰，否則您將無法安裝舊版的 Office。
 
 如果您想要以最新版本的方式安裝舊版的 Office，您可以在[相同的電腦上，安裝及使用不同版本的 office](https://support.office.com/article/6ebb44ce-18a3-43f9-a187-b78c513788bf.aspx)，以查看其中支援這項功能的版本清單。 如果您已安裝與舊版 Office 搭配使用的協力廠商增益集，且尚未確定這些增益集與最新版本相容，則並列安裝可能是您的正確選擇。
 
 ## <a name="step-4---assign-office-licenses-to-users"></a>步驟 4-將 Office 授權指派給使用者
 
-若尚未執行此動作，請將授權指派給組織中需要安裝 Office 的任何使用者，請參閱[在商務用 Office 365 中指派授權給使用者](../manage/assign-licenses-to-users.md)。
+若尚未執行此動作，請將授權指派給組織中需要安裝 Office 的任何使用者，請參閱[在 Microsoft 365 for business 中指派授權給使用者](../manage/assign-licenses-to-users.md)。
   
 ## <a name="step-5---install-office"></a>步驟 5-安裝 Office
 

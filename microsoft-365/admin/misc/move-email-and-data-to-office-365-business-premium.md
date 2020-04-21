@@ -1,5 +1,5 @@
 ---
-title: 將電子郵件和資料移至 Office 365 商務進階版
+title: 將電子郵件和資料移至 Microsoft 365 商務標準
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -21,30 +21,30 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: 瞭解如何將資料移至新的商務身分識別。
-ms.openlocfilehash: fc0df5e919370395480cdafbaaee10b0d844f088
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 674b5e1fc8128656733b9586d9bab607df621954
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209673"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627833"
 ---
-# <a name="move-email-and-data-to-office-365-business-premium"></a>將電子郵件和資料移至 Office 365 商務進階版
+# <a name="move-email-and-data-to-microsoft-365-business-standard"></a>將電子郵件和資料移至 Microsoft 365 商務標準
 
-當您升級至 Office 365 商務版 Premium 時，我們會為您提供一個全新的*商務身分識別*。 You get a new email account, and a separate OneDrive account for your business data. 
+當您升級至 Microsoft 365 商務標準時，我們會為您提供一種新的*商業身分識別*。 You get a new email account, and a separate OneDrive account for your business data. 
   
 如果您想要將某些個人資料移至新的商務身分識別中，請遵循下列指示：
   
 ## <a name="onedrive"></a>[OneDrive](#tab/OneDrive)
   
  **複製您的 OneDrive 資料**
-1. 在您的硬碟上建立暫存資料夾，以便暫時存放要移轉至商務用 Office 365 的檔案。
+1. 在您的硬碟上建立暫存資料夾，以暫時存放您要遷移至 Microsoft 365 for business 的檔案。
     
-2. 移至[https://onedrive.live.com/](https://onedrive.live.com/)並使用您用來存取 Office 365 的 Microsoft 帳戶登入，以供家用訂閱使用。 
+2. 移至[https://onedrive.live.com/](https://onedrive.live.com/)並使用您用來存取 Microsoft 365 家族訂閱的 Microsoft 帳戶登入。 
     
-3. 將您要在商務用 Office 365 中使用的檔案複製到您在步驟 1 建立的本機資料夾。
+3. 將您想要用於商務用 Microsoft 365 的檔案複製到您在步驟1中建立的本機資料夾。
     
- **將 OneDrive 檔案匯入商務用 Office 365**
-1. 移至[admin.microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877) ，並使用您的 Office 365 商務使用者名稱和密碼登入。 
+ **將 OneDrive 檔案匯入至 Microsoft 365 for business**
+1. 移至[admin.microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877) ，並使用您的 Microsoft 365 應用程式的使用者名稱和密碼登入。 
     
 2. 選取左上角的**應用程式啟動器**圖示，然後選擇 [ **OneDrive**]。
   
@@ -66,14 +66,14 @@ ms.locfileid: "43209673"
 2. 每個使用者都需要完成[將電子郵件、連絡人及行事曆匯出或備份為 Outlook.pst 檔案](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)中的步驟。
     
  **在 Outlook 中設定新的電子郵件帳戶**
-1. 每個使用者都必須設定商務用 Office 365 訂閱隨附的新電子郵件帳戶。若要進行這項作業，他們必須具備新電子郵件帳戶的地址。每個使用者的電子郵件帳戶與他們用來登入商務用 Office 365 的使用者名稱相同，看起來像是 sue@contoso.onmicrosoft.com 或 david@contoso.com。
+1. 每個使用者都必須設定其新的電子郵件帳戶隨附于 Microsoft 365 for business 訂閱。 若要這麼做，他們將需要其新電子郵件帳戶的位址。 每個使用者的電子郵件帳戶與用來登入 Microsoft 365 for business 的使用者名稱相同。 它看起來會類似 sue@contoso.onmicrosoft.com 或 david@contoso.com。
     
 2. 要求每個使用者在 Outlook 中新增自己的電子郵件帳戶。若要了解如何進行這項作業，請參閱[在 Windows 版 Outlook 中設定電子郵件](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)或[在 Mac 版 Outlook 2011 中設定電子郵件](https://support.office.com/article/d7b404a0-6e18-4d95-bed8-2de7661563ca.aspx)。
     
  **從 Outlook 資料檔匯入資訊**
-1. 這會將儲存在 PST 檔案中的電子郵件、行事曆、工作和連絡人合併到您的商務用 Office 365 電子郵件帳戶。
+1. 這會將儲存在 PST 檔案中的電子郵件、行事曆、工作和連絡人，合併成您的商務用 Microsoft 365 電子郵件帳戶。
     
-2. 若要將儲存在 PST 檔案中的資訊匯入商務用 Office 365 電子郵件帳戶中，請要求每個使用者完成[從 Outlook .pst 檔案匯入電子郵件、連絡人和行事曆](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac.aspx)中的步驟。
+2. 若要將儲存在 PST 檔案中的資訊匯入至 Microsoft 365 的商務電子郵件帳戶，請讓每位使用者完成[從 Outlook .pst 檔案匯入電子郵件、連絡人和行事曆](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac.aspx)中的步驟。
     
 ---
 

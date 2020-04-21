@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
 description: 瞭解網域的定義，以及如何購買網域，或使用貴公司的預設網域。
 ms.custom: okr_smb
-ms.openlocfilehash: 65eae949ccc29e92821afc75e90781f7827442dd
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 1e92247deaabf292fa82024d6654aefda7a73f6e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209721"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628253"
 ---
 # <a name="what-is-a-domain"></a>何謂網域？
 
@@ -33,17 +33,17 @@ ms.locfileid: "43209721"
   
 網域是在電子郵件地址的 **@** 符號後，以及網址的 **www.** 後出現的唯一名稱。 它通常採用組織名稱和標準 Internet 尾碼（如 yourbusiness）的形式 *。<span>com*或*stateuniversity。<span>edu*。 
   
-使用像 rob@contoso 的自訂網域 *。<span>* 使用 Office 365 的 com 可協助您建立品牌的信譽及認可。 
+使用像 rob@contoso 的自訂網域 *。<span>* 使用 Microsoft 365 的 com 可協助您建立品牌的信譽及認可。 
   
 ## <a name="choose-the-experience-thats-best-for-you"></a>選擇最符合您需求的體驗︰
 
  **購買新的網域：**
   
-使用 Office 365 購買新的網域-我們將設定所有的功能。 [瞭解更多資訊。](buy-a-domain-name.md)
+使用 Microsoft 365 購買新的網域-我們將設定所有功能。 [瞭解更多資訊。](buy-a-domain-name.md)
   
  **使用您已擁有的網域︰**
   
-如果您已經擁有類似 you@yourcompany 的網域 *。<span>com*您可以新增它，並立即開始使用 OneDrive 和 Office 應用程式。 設定郵件與商務用 Skype 需要幾分鐘的時間。 
+如果您已經擁有類似 you@yourcompany 的網域 *。<span>com*您可以新增它，並立即開始使用 OneDrive 和 Microsoft 應用程式。 設定郵件與商務用 Skype 需要幾分鐘的時間。 
   
 > [!TIP]
 > 不確定您在哪裡註冊網域註？- [協助您找到網域註冊機構](find-your-domain-registrar.md)
@@ -54,6 +54,6 @@ ms.locfileid: "43209721"
   
 ## <a name="feeling-stuck"></a>無法順利進行設定嗎？
 
-連絡 Office 365 支援人員 - [協助您進行 Office 365 的網域設定](../contact-support-for-business-products.md)
+撥打 Microsoft 支援服務-[取得協助設定網域](../contact-support-for-business-products.md)
   
 

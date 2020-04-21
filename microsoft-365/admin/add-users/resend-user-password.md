@@ -1,5 +1,5 @@
 ---
-title: 重新傳送使用者的密碼，在 Office 365-系統管理說明
+title: 重發使用者密碼-系統管理說明
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,19 +18,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: '了解如何重設密碼，並傳送通知電子郵件給新的 Office 365 使用者。 '
-ms.openlocfilehash: 64b3b4c805cfc81b10050e2e2e5c74290c68d760
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: '瞭解如何重設密碼，並將通知電子郵件傳送至新的 Microsoft 365 使用者。 '
+ms.openlocfilehash: fcf5fb53c2468930e68929a9bf38b634d7e67404
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239351"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43624109"
 ---
-# <a name="resend-a-users-password-in-office-365---admin-help"></a>重新傳送使用者的密碼，在 Office 365-系統管理說明
+# <a name="resend-a-users-password---admin-help"></a>重發使用者密碼-系統管理說明
 
-本文說明如何重新通知電子郵件傳送給 Office 365 中新的使用者。 要這麼做，方法是重設使用者的密碼。
+本文說明如何將通知電子郵件重新傳送給 Office 365 中的新使用者。 若要執行此動作，請重設使用者的密碼。
   
-您必須是[全域系統管理員或密碼系統管理員](about-admin-roles.md)才能執行這些步驟。 
+您必須是[全域系統管理員或密碼系統管理員](about-admin-roles.md)，才可執行這些步驟。 
   
 ::: moniker range="o365-worldwide"  
   
@@ -50,11 +50,10 @@ ms.locfileid: "42239351"
 
 ::: moniker-end
 
-2. 在 [**作用中使用者**] 頁面上選取的使用者，然後選取 [**重設密碼**。
+2. 在 [作用中**使用者**] 頁面上，選取使用者，然後選取 [**重設密碼**]。
     
-3. 自動產生新密碼的使用者或建立一個用於，，然後選取 [**重設****重設密碼**頁面上，請遵循指示。  
+3. 依照「**重設密碼**」頁面上的指示，為使用者自動產生新密碼或為使用者建立新密碼，然後選取 [**重設**]。  
     
-4. 輸入使用者能讓他們收到新的密碼，並使用，以確保它們 got 待電子郵件地址。
+4. 輸入使用者可以取得的電子郵件地址，讓他們接收新密碼，並追蹤以確保他們知道。
     
   
-

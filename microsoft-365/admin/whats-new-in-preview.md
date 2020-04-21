@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 系統管理中心-深入瞭解本月新增的功能。
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 06cc7519cae2b71581f0f50e9e8eec15fe77e568
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 35a08b7c5ebdfd85a66fd28c46eb601d16298f96
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43171009"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627519"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的新功能
 
@@ -36,59 +36,10 @@ ms.locfileid: "43171009"
 > **「傳統」系統管理員中心于三月份開始退休**<br><br>
 當您登入 admin.microsoft.com 時，您將會在每次進入新的系統管理中心。 在三月份，我們將開始停用切換回傳統系統管理中心的功能。 現在，您仍然可以切換回來，但在新的系統管理中心有同位（而且超過它），我們會關閉所有組織的參數。 <br><br> *上次更新：2020年3月2日*
 
-此外，如果您對其他 Microsoft 雲端服務的新功能感興趣：
+此外，如果您對其他系統管理中心的新功能感興趣：
 
-- [Exchange Online 的新功能](https://go.microsoft.com/fwlink/?linkid=2119714)
-- [Microsoft Intune 的新功能](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Microsoft 365 規範中心的新功能](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
-- [Office 更新](https://docs.microsoft.com/OfficeUpdates/)
-
-## <a name="march-2020"></a>2020 年 3 月
-
-### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>特別推薦的反應修正：改善授權的「新增使用者」可靠性
-
-我們收到許多來自系統管理員的意見，可供系統管理員在新增使用者時，將授權指派給他們的困難程度。 我們已對此修正進行第一次更新，我們已遷移至較可靠的幕後服務，以處理這些要求。 如果發生錯誤，您現在會收到錯誤訊息，可讓您再試一次。
-
-:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="新增錯誤的使用者確認頁面。":::
-
-### <a name="microsoft-teams-home-page-card"></a>Microsoft 小組首頁頁面卡片
-
-透過 uptick 在小組的使用中，有些組織 emc 會取得一個固定的儀表板卡，讓小組開啟更容易探索。 這張卡片也具有訓練及檔的連結，可協助您的組織轉換至遠端工作。 請移至**首頁**以查看新的卡片。
-
-:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Microsoft 小組首頁頁面卡片":::
-
-### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>自訂群組織的 SharePoint 行動應用程式主題
-
-您可以使用 Microsoft 365 系統管理中心，在 SharePoint 行動應用程式中自訂群組織的主題，以進行 iOS 和 SharePoint 適用于 Android 的行動應用程式。 這項功能可輕鬆提供行動內部網路應用程式經驗，可讓員工在旅途中符合您的 SharePoint 線上。 主題自訂包括您的徽標影像、導覽列色彩、文字和圖示色彩，以及強調色彩的難易色彩。
-
-:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="圖表將系統管理中心設定對應至行動應用程式。":::
-
-:::image-end:::
-
-### <a name="improvements-to-the-add-a-group-wizard"></a>「新增群組」嚮導的增強功能
-
-當系統管理員建立新的群組，並將其指派給一個小組時，他們就可以指派沒有包含小組之授權的擁有者。 而且這會產生一些麻煩。 我們已更新嚮導流程，以驗證擁有者是否擁有小組授權，以及是否未停用將群組轉換為小組的選項。
-
-### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>適用于中小型企業的 Microsoft 365 產品
-
-我們知道這是下個月的宣告，但我們想要確保您已做好準備。
-
-從365年4月21日起，我們將與 Office 訂閱相關的變更，用於中小企業和 Office 365 ProPlus。 這些產品現在會使用 Microsoft 365 品牌。
-
-新的產品名稱會在2020年4月21日生效。 這只是對產品名稱所做的變更，目前沒有任何定價或功能變更。
-
-|目前名稱 |新名稱  |
-|---------|---------|
-|Office 365 商務基本版     |   Microsoft 365 商務基本版      |
-|Office 365 商務進階版     |    Microsoft 365 商務標準版     |
-|Microsoft 365 商務版     |    Microsoft 365 商務版 Premium     |
-|Office 365 商務版     |    Microsoft 365 商務應用程式       | 
-|Office 365 專業增強版    |   適用于企業的 Microsoft 365 應用程式      |
-
-### <a name="videos-training-and-docs"></a>影片、訓練及檔
-
-[Microsoft 365 web 系列的新](https://go.microsoft.com/fwlink/p/?linkid=2118096)功能：在這個月的劇集中，我們會強調 microsoft 小組的3年周年紀念，並涵蓋新功能，包括線上會議中增強的音訊品質、firstline 管理員的目標通訊，以及倒班應用程式、小組和 Skype 使用者互通性等等。
 
 ## <a name="february-2020"></a>2020 年 2 月
 
@@ -111,7 +62,7 @@ ms.locfileid: "43171009"
 在 [群組] 區域中的兩個變更：
 
 - **依群組名稱排序**：您可以選取 [**組名**] 欄，依字母順序排序群組清單。
-- **還原已刪除的 office 365 群組**：您不再需要移至 Exchange 系統管理中心，即可還原已刪除的 office 365 群組。 移至**Microsoft 365 系統管理中心** \> **群組** \> **已刪除的群組** \> （從清單中選取群組\> ）**還原群組**。 它會將群組還原回**群組**清單，並還原群組的電子郵件、交談、筆記本、檔案和行事曆。
+- **還原已刪除的 microsoft 365 群組**：您不需要移至 Exchange 系統管理中心，即可還原已刪除的 microsoft 365 群組。 移至**Microsoft 365 系統管理中心** \> **群組** \> **已刪除的群組** \> （從清單中選取群組\> ）**還原群組**。 它會將群組還原回**群組**清單，並還原群組的電子郵件、交談、筆記本、檔案和行事曆。
 
 ### <a name="videos-training-and-docs"></a>影片、訓練及檔
 
@@ -199,7 +150,7 @@ Howdy，合作夥伴！ （無法幫您自己。）我們也為您提供這一�
 
 - [Microsoft 365 基礎](https://docs.microsoft.com/learn/paths/m365-fundamentals/)
 - [擴充 Office 基礎](https://docs.microsoft.com/learn/paths/extend-office-fundamentals/)
-- [Microsoft 365 - 透過 Windows 10 和 Office 365 專業增強版現代化您的企業部署](https://docs.microsoft.com/learn/paths/m365-getmodern/)
+- [Microsoft 365-使用 Windows 10 和 Microsoft 365 應用程式進行企業部署現代化](https://docs.microsoft.com/learn/paths/m365-getmodern/)
 - [使用 Microsoft 365 管理企業部署](https://docs.microsoft.com/learn/paths/manage-enterprise-deployment-m365/)
 - [為 IT 部門大規模升級 Microsoft Office](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
 - [使用 Windows 虛擬桌面從 Azure 傳遞遠端桌面和應用程式](https://docs.microsoft.com/learn/paths/m365-wvd/)
@@ -320,7 +271,7 @@ Howdy，合作夥伴！ （無法幫您自己。）我們也為您提供這一�
 
 我們有一些令人興奮的變更，可協助您設定組織。 首先，讓我們討論**安裝程式**與**安裝程式頁面**之間的差異。 **安裝程式**是指您用來連線至 Microsoft 線上服務的初始安裝精靈。 這通常包含三個特定步驟：連線**網域**、**新增使用者**和**下載 Office 應用程式**。 [**安裝程式] 頁面**是系統管理中心中的頁面，建議您設定工作，以確保您可以讓訂閱獲得最大的功能，例如開啟您購買授權的功能。
 
-- **安裝**程式-初始安裝精靈已更新為**商務用 Office 365**訂閱。 這種新設計將協助新的組織更快地透過嚮導執行，並獲得更大的成功。
+- **安裝**程式-初始安裝精靈已針對商務用**Microsoft 365**訂閱進行更新。 這種新設計將協助新的組織更快地透過嚮導執行，並獲得更大的成功。
 - **安裝程式頁面**-[**設定**] 頁面可協助您完成設定並保護您的訂閱所附帶的服務。 您也可以在 [**設定**] 頁面上看到任何已解除的建議。 若要查看是否可用於您的訂閱，請移至**Microsoft 365 系統管理中心** > **設定**。
 
 ### <a name="billing--subscriptions"></a>帳單 & 訂閱
@@ -414,7 +365,7 @@ Howdy，合作夥伴！ （無法幫您自己。）我們也為您提供這一�
 
 - 在**首頁**上有一個新的安裝橫幅，您會看到您是否尚未完成設定步驟，例如新增網域、新增使用者和下載 Office 應用程式。
 - [**群組**] 清單和 [詳細資料] 窗格已更新為新的樣式。 移至 [**群組** > ]**群組**，以查看變更。
-  - 在 [群組] 中，我們也新增了 [ **Microsoft 小組**] 索引標籤至 [群組詳細資料] 窗格，您可以在其中將任何 Office 365 群組變成小組。 若要將群組從清單中365選取 [teamify] 群組，請選取 [ **Microsoft 小組**] 索引標籤，然後**建立小組**。 如果群組已經是小組，您會收到從**小組**系統管理的連結。
+  - 在說的群組中，我們也新增了**Microsoft 小組**] 索引標籤至 [群組詳細資料] 窗格，您可以在其中將任何 Microsoft 365 群組變成小組。 若要從清單中365選取 [teamify] 群組，請選取 [ **Microsoft 小組**] 索引標籤，然後**建立小組**。 如果群組已經是小組，您會收到從**小組**系統管理的連結。
   - 最後，您可以將**小組狀態**新增至 [**群組**] 清單。 在欄標題上，選取 **[選擇欄** > **小組狀態** > **儲存**]。
 - **新的有限系統管理員角色**-我們已發行一些新的系統管理員角色，因此您只能為使用者提供其所需的存取權。
   - **Kaizala admin**：此角色中的使用者具有執行 Microsoft Kaizala 中所有管理工作的許可權，包括在 Kaizala 目錄中建立及管理使用者、管理 Kaizala 群組、管理動作卡和連接器，以及建立服務要求。

@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: '瞭解如何與組織外部的人員共用網站和檔案。 '
-ms.openlocfilehash: a0a98c9ead997e4748804e4f8a87533a9943ec4f
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: c11526ee199cf097053489bb4ab8060dcb2c6bc9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610570"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628025"
 ---
 # <a name="share-sites-and-files-externally"></a>共用外部網站和檔案
 
@@ -54,7 +54,7 @@ ms.locfileid: "42610570"
 |共用檔，但不需要驗證。  <br/> |與組織外部人員共用非機密文件的連結，以便其檢視文件，或以意見反應更新文件。 這些人員不需要存取網站上的內容。  <br/> |
    
 > [!IMPORTANT]
-> 當您停用外部共用時，目前具有存取權的組織外部人員將無法再存取。 如果您稍後重新開啟外部共用，將會為這些人員還原存取權。 若要防止使用者存取共用內容，請[將其從 Office 365 群組中移除](/office365/admin/create-groups/add-or-remove-members-from-groups)，從網站移除其許可權，或[停止與其共用檔或資料夾](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)。 
+> 當您停用外部共用時，目前具有存取權的組織外部人員將無法再存取。 如果您稍後重新開啟外部共用，將會為這些人員還原存取權。 若要防止使用者存取共用內容，請[將其從 Microsoft 365 群組中移除](/office365/admin/create-groups/add-or-remove-members-from-groups)，從網站移除其許可權，或[停止與其共用檔案或資料夾](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)。 
   
 ## <a name="enable-external-sharing-at-the-organization-level"></a>在組織層級啟用外部共用
 
@@ -67,7 +67,7 @@ ms.locfileid: "42610570"
   
 2. 在開啟的頁面上，選擇使用者是否可以只與現有來賓共用、新的和現有的來賓或任何人共用。 
     
-3. 選取 [儲存]****。
+3. 選取 **[儲存]**。
     
 在組織層級啟用外部共用之後，您可以微調共用設定，以停用特定網站的外部共用。 如需詳細資訊，請參閱[開啟或關閉網站的外部共用](/sharepoint/change-external-sharing-site)。
   

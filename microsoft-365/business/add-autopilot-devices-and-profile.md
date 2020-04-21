@@ -1,5 +1,7 @@
 ---
 title: 使用逐步指南新增 Autopilot 裝置和設定檔
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -15,78 +17,77 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: 了解如何使用 Windows AutoPilot 為貴公司的新 Windows 10 裝置上設定。
-ms.openlocfilehash: d028ea3e902965d55c445dc3b3a02aa315201b25
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: 瞭解如何使用 Windows AutoPilot 為您的公司設定新的 Windows 10 裝置，以供員工使用。
+ms.openlocfilehash: 98a2bfc721ce86c81ebd89e8f41603e619b31546
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574781"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627487"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用逐步指南新增 Autopilot 裝置和設定檔
 
-您可以使用 Windows AutoPilot 來讓裝置備妥用於工作生產，為您提供給您的員工貴公司設定**新**的 Windows 10 裝置上。
+您可以使用 Windows AutoPilot 為您的公司設定**新**的 Windows 10 裝置，以便在您將其提供給員工時可供使用。
   
 ## <a name="device-requirements"></a>裝置需求
 
-裝置必須符合這些需求：
+裝置必須符合下列需求：
   
-- Windows 10 版本 1703 或更新版本。
+- Windows 10，版本1703或更新版本
     
-- 新裝置尚未執行過 Windows 全新體驗設定。
+- 尚未透過 Windows 現成體驗的新裝置
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>使用設定指南建立裝置和設定檔
 
-[![標籤，讓您知道變更在系統管理中心，然後您可以在 aka.ms/aboutM365preview 尋找更多詳細資料。](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![[標籤] 可讓您知道系統管理中心正在變更，您可以在 aka.ms/aboutM365preview 取得更多詳細資料。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-如果您尚未建立裝置群組或設定檔，最佳的開始使用方式是使用逐步指南，但您也可以[新增裝置](create-and-edit-autopilot-devices.md)及[指派設定檔](create-and-edit-autopilot-profiles.md)給裝置，而不使用指南。 
+若尚未建立裝置群組或設定檔，最好的入門方式是使用逐步指南。 您也可以[新增裝置](create-and-edit-autopilot-devices.md)，並[將設定檔指派](create-and-edit-autopilot-profiles.md)給它們，而不需使用輔助線。 
   
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。
 
-2. 在左側導覽中選擇 [**裝置** \> **AutoPilot**。
+2. 在左功能窗格中，選擇 [**裝置** \> ] **AutoPilot**。
 
-    ![在系統管理中心選擇 [裝置，然後自動駕駛。](media/AutoPilot.png)
+    ![在系統管理中心中，選擇 [裝置]，然後 AutoPilot]。](../media/AutoPilot.png)
   
-2. 在**自動駕駛**頁面上，按一下或點選 [**開始指南**。
+2. 在 [ **AutoPilot** ] 頁面上，按一下或點擊 [**開始指南**]。
     
-    ![Click Start guide for step-by-step instructions for Autopilot.](media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
+    ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. 在 [**上傳裝置清單的.csv 檔案**] 頁面上，瀏覽到您已準備好位置。CSV 檔案，然後**開啟** \> **下一步**。 檔案應該會有三個標題：
+3. 在 [**上傳含裝置清單的 .csv**檔案] 頁面上，流覽至您準備好的位置。CSV 檔案，然後**開啟** \> **[下一步]**。 檔案必須有三個標頭：
     
-  - 欄 A：裝置序號
+    - 欄 A：裝置序號
     
-  - 欄 B：Windows 產品識別碼
+    - 欄 B：Windows 產品識別碼
     
-  - 欄 C：硬體雜湊
+    - 欄 C：硬體雜湊
     
-    您可以從硬體廠商取得這項資訊，或是使用可產生 CSV 檔案的 [Get-WindowsAutoPilotInfo PowerShell 指令碼](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) (英文)。 
+    您可以從硬體廠商取得此資訊，也可以使用[Get-WindowsAutoPilotInfo PowerShell 腳本](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)來產生 CSV 檔案。 
     
-    如需詳細資訊，請參閱[裝置清單 CSV 檔案](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e)。 您也可以下載範例檔案**上傳裝置清單的.csv 檔案**] 頁面上。 
+    如需詳細資訊，請參閱[裝置清單 CSV 檔案](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e)。 您也可以在 [**上傳含裝置清單的 .csv**檔案] 頁面上，下載範例檔案。 
     
-4. 在**指派設定檔**] 頁面中，您可以挑選現有設定檔，或建立一個新。 如果您還沒有設定檔，您將看到建立設定檔的提示。 
+4. 在 [**指派設定檔**] 頁面上，您可以挑選現有的設定檔或建立新的設定檔。 如果您還沒有，系統會提示您建立一個。 
     
     設定檔是可套用到單一裝置或一組裝置的設定集合。
     
-    預設功能是必要的，而且會自動設定。預設功能包括：
+    預設功能是必要的，且會自動設定。 預設功能包括：
     
-  - 略過 Cortana、OneDrive 及 OEM 註冊。
+    - 略過 Cortana、OneDrive 及 OEM 註冊。
     
-  - 使用公司品牌建立登入體驗。
+    - 使用公司品牌建立登入體驗。
     
-  - 裝置即將連線到 Azure Active Directory 帳戶，而且會自動註冊為受 Microsoft 365 商務版管理。
+    - 將裝置連線到 Azure Active Directory 帳戶，並自動將其註冊為由 Microsoft 365 商務版 Premium 管理。
     
-    如需詳細資訊，請參閱
+    如需詳細資訊，請參閱[關於 AutoPilot 設定檔設定](autopilot-profile-settings.md)。 
     
-    [關於 AutoPilot 設定檔的設定](autopilot-profile-settings.md) 。 
-    
-5. 其他設定，而**略過的隱私權設定****不會讓使用者成為本機系統管理員**。這些都設定為**Off**預設。 
+5. 其他設定則**略過隱私權設定**，而**不允許使用者成為本機系統管理員**。這些皆預設會設為**Off** 。 
     
     選擇 [下一步]****。
     
-6. **大功告成**] 頁面會指出您建立 （或選擇） 的設定檔將會套用至您建立所上傳裝置清單的裝置群組。 這些設定會在裝置使用者下次登入時生效。 選擇 [**關閉**]。
+6. **您已完成**表示您已建立（或選擇）的設定檔將套用到您透過上傳裝置清單所建立的裝置群組。 當裝置使用者下一次登入時，設定就會生效。 選擇 [**關閉**]。
     

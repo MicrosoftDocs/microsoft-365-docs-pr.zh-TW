@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: c1af88f489072490777cc6f2c7edfc66fd038bdf
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 99a124ff57816481cde92dd79c3058a2e7b72d31
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633601"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625203"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>實施身分識別與裝置存取原則的必要條件工作
 
@@ -32,7 +32,7 @@ ms.locfileid: "42633601"
 在執行建議的身分識別和裝置存取原則之前，您的組織必須符合一些必要條件。 下表詳細說明適用于您環境的必要條件。 
 
 
-| 組態 | 僅限雲端 | 具有密碼雜湊同步處理的 Active Directory |  傳遞驗證 |  與 AD FS 的同盟 |
+| 設定 | 僅限雲端 | 具有密碼雜湊同步處理的 Active Directory |  傳遞驗證 |  與 AD FS 的同盟 |
 | :------------- | :-----------: | :--------------: | :------------: | :------------: |
 |  [設定密碼雜湊同步](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization)處理。這必須啟用以偵測已洩漏的認證，並針對風險型條件式存取採取行動。 **附注：** 不論您的組織是否使用受管理的驗證（如傳遞驗證（PTA）或同盟驗證），都是必要的。 |    | 是 | 是 | 是 |
 | [啟用無縫單一登入](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso)，當使用者位於連接至公司網路的公司裝置時，自動簽署使用者。 |  | 是 | 是 |  |
@@ -93,11 +93,11 @@ ms.locfileid: "42633601"
 
 <sup>*</sup>深入瞭解對[OneDrive 同步處理用戶端](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e)使用條件式存取。
 
-### <a name="office-365-client-support"></a>Office 365 用戶端支援
-如需有關 Office 365 用戶端支援的詳細資訊，請參閱下列文章：
-- [Office 365 用戶端應用程式支援-條件式存取](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
-- [Office 365 用戶端應用程式的支援-行動應用程式管理](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
-- [Office 365 用戶端應用程式支援-新式驗證](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
+### <a name="microsoft-365-client-support"></a>Microsoft 365 用戶端支援
+如需用戶端支援的詳細資訊，請參閱下列文章：
+- [Microsoft 365 用戶端應用程式支援-條件式存取](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
+- [Microsoft 365 用戶端應用程式支援-行動應用程式管理](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
+- [Microsoft 365 用戶端應用程式支援-新式驗證](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
 
 ## <a name="protecting-administrator-accounts"></a>保護系統管理員帳戶
 Azure AD 為您提供一種簡單的方法，讓您能夠使用預先設定的條件式存取原則來開始保護系統管理員存取。 在 Azure AD 中，移至 [**條件式存取**]，並尋找此原則-**基準原則：需要 MFA for admins （預覽）**。 選取 [這個原則]，然後選取 [**立即使用原則**]。 
@@ -114,7 +114,7 @@ Azure AD 為您提供一種簡單的方法，讓您能夠使用預先設定的�
 其他建議包括下列專案：
 - 使用 Azure AD Privileged Identity Management 減少持續性系統管理帳戶數目。 請參閱[Start USING PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)。 
 - [使用 Office 365 中](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)的「特殊設定存取管理」，保護您的組織不會因可能使用現有的許可權系統管理員帳戶存取機密資料或存取重要的設定設定而遭到破壞。 
-- 僅使用管理員帳戶進行管理。 系統管理員應該要有個別的使用者帳戶，才能進行定期非系統管理，且只有在必要時才使用其系統管理帳戶，才可完成與工作職能相關聯的工作。 [Office 365 系統管理員](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)角色與 Office 365 服務的許可權完全相同。
+- 僅使用管理員帳戶進行管理。 系統管理員應該要有個別的使用者帳戶，才能進行定期非系統管理，且只有在必要時才使用其系統管理帳戶，才可完成與工作職能相關聯的工作。 [Microsoft 365 系統管理員](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)角色所擁有的許可權，會比 Microsoft 365 服務多。
 - 依照[本文](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices)所述，遵循 Azure AD 中的許可權來保護許可權帳戶的最佳作法。
 
 ## <a name="next-steps"></a>後續步驟

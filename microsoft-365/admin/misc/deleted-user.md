@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
-description: 了解如何刪除或還原使用者的 Office 365 帳戶。
-ms.openlocfilehash: 35245a0f9cbe78f6758c7071adea30053f7b8737
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 瞭解如何刪除或還原使用者的 Microsoft 365 帳戶。
+ms.openlocfilehash: 7c6ab070db2821d914a26277b7f5c19043abe39b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254304"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627881"
 ---
 # <a name="quick-help-deleted-user"></a>快速說明：已刪除使用者
 
@@ -40,9 +40,9 @@ ms.locfileid: "42254304"
   
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
-2. 選取使用者，並再清單上方的使用者選取 [**更多選項]** （**...**），然後選擇 [**刪除的使用者**。
+2. 選取使用者，然後在使用者清單上選取 [**更多選項**] （**...**），然後選擇 [**刪除使用者**]。
   
-3. 在 [刪除確認] 窗格中，選取 [**刪除使用者**]。 <br/>[讀取完整的文章。](../add-users/delete-a-user.md)
+3. 在 [刪除確認] 窗格中，選取 [**刪除使用者**]。 <br/>[閱讀整篇文章。](../add-users/delete-a-user.md)
   
 ::: moniker-end
 
@@ -50,9 +50,9 @@ ms.locfileid: "42254304"
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。  
 
-2. 選取使用者，然後清單上方的使用者選擇 [**更多** > **刪除使用者**。
+2. 選取使用者，然後在使用者清單上選擇 [**更多** > **刪除使用者**]。
   
-3. 在 [刪除確認] 窗格中，選取 [**刪除使用者**]。 <br/>[讀取完整的文章。](../add-users/delete-a-user.md)
+3. 在 [刪除確認] 窗格中，選取 [**刪除使用者**]。 <br/>[閱讀整篇文章。](../add-users/delete-a-user.md)
 
 ::: moniker-end
 
@@ -60,24 +60,24 @@ ms.locfileid: "42254304"
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。 
 
-2. 選取使用者，然後清單上方的使用者選擇 [**更多** > **刪除使用者**。
+2. 選取使用者，然後在使用者清單上選擇 [**更多** > **刪除使用者**]。
   
-3. 在 [刪除確認] 窗格中，選取 [**刪除使用者**]。 <br/>[讀取完整的文章。](../add-users/delete-a-user.md)
+3. 在 [刪除確認] 窗格中，選取 [**刪除使用者**]。 <br/>[閱讀整篇文章。](../add-users/delete-a-user.md)
 
 ::: moniker-end
 
   
 ## <a name="restore-a-user"></a>還原使用者
 
-您可以還原使用者，藉由搜尋在首頁上的 [**刪除**並在結果中，選擇 [**刪除的使用者**或從左側導覽中移至 [**刪除的郵件使用者**] 頁面上，選擇 [使用者想要還原。 [讀取完整的文章](../add-users/delete-a-user.md)。
+您可以在首頁上搜尋 [**已刪除**的使用者]，然後在結果中選擇已刪除的**使用者**，或是移至左側流覽的 [**已**刪除的使用者] 頁面，然後選擇您要還原的使用者，以還原使用者。 [閱讀整篇文章](../add-users/delete-a-user.md)。
   
 ## <a name="what-are-deleted-users"></a>什麼是刪除的使用者？
 
 刪除的[使用者](../add-users/add-users.md) 是指您從組織中刪除的公司或學校帳戶。 
   
-## <a name="does-deleting-a-user-free-up-their-office-365-license"></a>刪除使用者是否會釋出其 Office 365 授權？
+## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>刪除使用者是否要釋放其 Microsoft 365 授權？
 
-是的，刪除使用者會釋出指派給該使用者的 Office 365 授權。您之後可以將該授權指派給另一位使用者。[閱讀完整的文章](../../commerce/licenses/remove-licenses-from-subscription.md)。
+是的，刪除使用者時，會釋放指派給該使用者的 Microsoft 365 授權。 然後，您即可指派該授權給其他使用者。 [閱讀整篇文章](../../commerce/licenses/remove-licenses-from-subscription.md)。
   
 ## <a name="i-had-a-deleted-user-listed-in-deleted-users-and-then-it-disappeared-what-happened"></a>我在 [刪除的使用者] 中有一位列出的已刪除使用者，但之後消失了。 該怎麼辦？
 
@@ -93,6 +93,6 @@ ms.locfileid: "42254304"
   
 ## <a name="how-do-i-restore-a-user"></a>如何還原使用者？
 
-您可以還原使用者，藉由搜尋在首頁上的 [**刪除**並在結果中，選擇 [**刪除的使用者**或從左側導覽中移至 [**刪除的郵件使用者**] 頁面上，選擇 [使用者想要還原。 [讀取完整的文章](../add-users/delete-a-user.md)。
+您可以在首頁上搜尋 [**已刪除**的使用者]，然後在結果中選擇已刪除的**使用者**，或是移至左側流覽的 [**已**刪除的使用者] 頁面，然後選擇您要還原的使用者，以還原使用者。 [閱讀整篇文章](../add-users/delete-a-user.md)。
   
 

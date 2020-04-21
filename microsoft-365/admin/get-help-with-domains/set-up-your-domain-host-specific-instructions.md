@@ -19,20 +19,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
-description: 瞭解如何管理您自己的 DNS 記錄，或讓 Office 365 為您管理您的 DNS 記錄。
+description: 瞭解如何管理您自己的 DNS 記錄，或讓 Microsoft 為您管理您的 DNS 記錄。
 ms.custom: okr_smb
-ms.openlocfilehash: 7a5bcf6bb39497a37cbec4e2cd9b7efad0fc6724
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: ea3a62c048706f36cd7b1590851d8b372e0a1677
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210353"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628419"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>設定您的網域 (主機專用指示)
 
 若要開始使用 Office 365 的自訂網域（contoso.com），您必須驗證您的網域，並設定網域的 DNS 記錄。 
   
-您可以使用網域主機上的系統管理工具來新增及管理 DNS 記錄，或對您的網域記錄提供 Office 365 控制，我們會為您加以設定。
+您可以使用網域主機上的系統管理工具來新增及管理 DNS 記錄，或對您的網域記錄提供 Microsoft 控制，我們會為您設定這些記錄。
   
 請選取下列您的網域主機，以取得確切的步驟。 如果您不確定您的主機是誰，請參閱[尋找您的網域註冊機構](find-your-domain-registrar.md)。
   

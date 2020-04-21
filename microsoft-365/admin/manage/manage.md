@@ -14,17 +14,17 @@ layout: LandingPage
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9f818d7a-78b5-4490-b36c-e3bfe328dfc3
-description: Office 365 最常用的系統管理工作之快速連結。
-ms.openlocfilehash: 3c69d24af04567531ea4228202e5ec16cdd39522
-ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
+description: Microsoft 365 中最常見系統管理工作的快速連結。
+ms.openlocfilehash: 876652b932579718cb1d1313bca6b98bad2b92c1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125996"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628133"
 ---
 # <a name="manage"></a>管理
 
-Office 365 最常用的系統管理工作之快速連結。
+Microsoft 365 中最常見系統管理工作的快速連結。
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -112,7 +112,7 @@ Office 365 最常用的系統管理工作之快速連結。
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>取消您的訂閱</h3>
+                        <h3>取消訂閱</h3>
                     </div>
                 </div>
             </div>
@@ -152,7 +152,7 @@ Office 365 最常用的系統管理工作之快速連結。
                         <h3>電子郵件</h3>
                             <p><a href="../add-users/add-users.md">新增員工</a></p>
                             <p><a href="https://support.office.com/article/97748418-bbd5-4743-a05b-581f22a466dd">修正無法傳送的電子郵件訊息</a></p>
-                            <p><b>其他工作：</b> <a href="../email/email.md">商務用 Office 365 中的電子郵件</a></p>
+                            <p><b>其他工作：</b> <a href="../email/email.md">Microsoft 365 中的電子郵件</a></p>
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@ Office 365 最常用的系統管理工作之快速連結。
                             <p><a href="https://docs.microsoft.com/onedrive/manage-sharing">管理 OneDrive 和 SharePoint 中的共用</a> (機器翻譯)</p>
                             <p><a href="https://docs.microsoft.com/onedrive/set-default-storage-space">設定 OneDrive 使用者的預設儲存空間</a> (機器翻譯)</p>
                             <p><a href="https://support.office.com/article/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2">修正 OneDrive 同步處理問題</a></p>
-                            <p><b>其他工作：</b> <a href="https://docs.microsoft.com/onedrive/onedrive">Office 365 中的 OneDrive</a></p>
+                            <p><b>其他工作：</b> <a href="https://docs.microsoft.com/onedrive/onedrive">Microsoft 365 中的 OneDrive</a></p>
                     </div>
                 </div>
             </div>
@@ -198,9 +198,9 @@ Office 365 最常用的系統管理工作之快速連結。
                 <div class="card">
                     <div class="cardText">
                         <h3>Yammer</h3>
-                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/office-365-sign-in">使用 Office 365 登入 Yammer</a></p>
-                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle">從 Office 365 管理 Yammer 使用者</a></p>
-                            <p><a href="https://docs.microsoft.com/yammer/configure-your-yammer-network/enforce-office-365-identity">針對 Yammer 使用者強制執行 Office 365 身分識別</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/office-365-sign-in">Yammer 的 Microsoft 365 登入</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle">從 Microsoft 365 管理 Yammer 使用者</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/configure-your-yammer-network/enforce-office-365-identity">為 Yammer 使用者強制執行 Microsoft 365 身分識別</a></p>
                             <p><a href="https://docs.microsoft.com/yammer/integrate-yammer-with-other-apps/embed-a-feed-into-a-sharepoint-site">將 Yammer 摘要內嵌至 SharePoint 網站</a></p>
                             <p><b>其他工作：</b> <a href="https://docs.microsoft.com/yammer/yammer-landing-page">YAMMER 系統管理協助</a></p>
                     </div>

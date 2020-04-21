@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -17,87 +17,87 @@ search.appverid:
 - MOE150
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
-description: 了解新的 Microsoft 365 系統管理中心。
-ms.openlocfilehash: 3cd2fcff839213d843d6474ba826d06c5f2bf504
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 深入瞭解新的 Microsoft 365 系統管理中心。
+ms.openlocfilehash: d1267194385d62d176d71a54fea38aab710313f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361598"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627977"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>關於新的 Microsoft 365 系統管理中心
 
-在新的 Microsoft 365 系統管理中心的 IT 小組內建的簡化的方式來管理 Microsoft 365 和 Office 365 服務。 在系統管理中心提供角色或組織獨特的需求為基礎的量身訂做的體驗提升效能的日常工作，並提供洞察力，協助您進行資料驅動決策，以提供更好您的使用者經驗。
+新的 Microsoft 365 系統管理中心是專為 IT 小組建立，以簡化 Microsoft 365 服務的管理方式。 系統管理中心會根據您角色或組織的獨特需求，提供量身定制的經驗，提高日常工作的效率，並提供可行動的觀點，以協助您進行資料導向，以提供更佳的使用者體驗。
   
-在 Microsoft 365 系統管理中心是常見的進入點，用於所有的 Microsoft 365 系統管理員，並且可以存取在[https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)。 專家工作區，例如安全性或裝置管理，允許更細微的控制項。 如需有關如何系統管理中心會共同運作的詳細資訊，請參閱[IT 角色與安全性、 裝置管理或 Exchange 等其他工作區的特定類型呢？](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange)本文稍後。 
+Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般進入點，可供存取[https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)。 專業工作區（如安全性或裝置管理），允許更細微的控制。 如需系統管理中心如何一起運作的詳細資訊，請參閱本文稍後[的特定類型的 IT 角色及其他工作區（如安全性、裝置管理或 Exchange）](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) 。 
   
-為新功能可供 Microsoft 365 系統管理中心中，您可以選擇在新版系統管理中心及 Microsoft 與共用您的意見反應，如此我們才能繼續改進的管理經驗。 如果您選擇中，將不會影響您的使用者，以及您可以隨時切換回舊的系統管理中心。
-[What's new in 在新的 Microsoft 365 系統管理中心](whats-new-in-preview.md)。
-  
-> [!NOTE]
-> 已設定目標的發行系統管理員會有新功能的第一次存取。 新功能會再推行至所有的系統管理員。 這表示您可能不會看到新的系統管理中心中，或看起來可能與說明文章中所述的不同。 若要在第一筆若要查看新的功能之間，請參閱下列的新系統管理中心中，參與。 
-    
-## <a name="participate-in-the-new-admin-center"></a>參與新版系統管理中心
-我們很樂於即可參與在新的 Microsoft 365 系統管理中心，因此您可以準備進行變更，並提供意見反應。
-
-### <a name="turn-on-targeted-release"></a>開啟已設定目標發行
-
-1. 在[admin.microsoft.com](https://admin.microsoft.com)登入，請瀏覽窗格選取 [**設定** \> **組織設定檔**。
-    
-2. 移至 [**發行喜好設定**] 卡片，然後選取 [**編輯**。 
-    
-3.  選取 [**已設定目標發行的所有人**] 或 [**已設定目標發行的所選的使用者**。 如果您選擇所選使用者的已設定目標發行，請確定將您的系統管理員帳戶 （和任何其他的系統管理員在您的組織想要參與） 新增至所選使用者的清單。
-    
-### <a name="switch-to-the-new-admin-center-and-back-again"></a>切換至新的系統管理中心和回去
-
-- 您可以使用新的 Microsoft 365 系統管理中心時，您可以選擇在藉由選取位於頂端的 [首頁] 頁面上**嘗試在新版系統管理中心**的切換。 如果您登出在系統管理中心時，我們將請記得在選取項目，並將登入至新的系統管理中心。 <br/><br/>![新的系統管理員中心切換從舊版系統管理中心](../media/admin-center-toggle-off.png) 
-  
-- 切換回舊的系統管理中心從首頁藉由將開關切換為 [**關閉**。 <br/><br/>![開啟新的系統管理員中心切換](../media/admin-center-toggle-on.png)
-
-在新版系統管理中心中，您可以提供 Microsoft 意見反應關於您的使用經驗藉由選取 [下一步] 來**提供意見反應**右**需要協助嗎？** 底部的每一頁] 按鈕。 告訴我們什麼您想與我們的無法執行更有效率。 此外，您可能會取得快顯問卷從時間-時間提出您的整體曝光或新發行的特定體驗。 您也可以藉由選取提供本文結尾處的意見反應**這項資訊是否有幫助？**
-  
-如果您想要在新版系統管理中心早期採納者，您需要開啟已設定目標發行，然後使用新版系統管理中心時您可以切換到其簽出，並提供意見反應。
+當 Microsoft 365 系統管理中心提供新功能時，您就可以加入宣告新的系統管理中心，並與 Microsoft 共用您的意見反應，讓我們能夠繼續改進系統管理體驗。 如果您加入宣告，對您的使用者將不會有任何影響，您也可以隨時切換回舊版系統管理中心。
+[新 Microsoft 365 系統管理中心的新功能](whats-new-in-preview.md)。
   
 > [!NOTE]
-> 在新版系統管理中心存取會導入，用於所有的 Microsoft 365 系統管理員。 系統管理員在組織中已設定目標發行群組將會取得新版系統管理中心第一個。 會出現在已設定目標發行並不保證您會看到切換立即，但您將會更快速地比標準版本中取得。 
+> 目標版本系統管理員會先存取新功能。 新功能將會向所有系統管理員推出。 這表示您可能看不到新的系統管理中心，也可能與說明文章中所述的有所不同。 若要在第一個查看新功能的情況下，請參閱下面的 [加入新的系統管理中心]。 
+    
+## <a name="participate-in-the-new-admin-center"></a>加入新的系統管理中心
+我們十分樂意參加新的 Microsoft 365 系統管理中心，讓您準備變更，並提供意見反應給我們。
+
+### <a name="turn-on-targeted-release"></a>開啟目標版本
+
+1. 在[admin.microsoft.com](https://admin.microsoft.com)中登入，移至功能窗格，然後選取 [**設定** \> **組織設定檔**]。
+    
+2. 移至 [**發行偏好**設定卡]，然後選取 [**編輯**]。 
+    
+3.  **為所選使用者**選取 [所有人] 或 [目標版本]**的 [目標版本**]。 如果您為選取的使用者選擇 [目標版本]，請確定您將系統管理員帳戶（以及您組織中要加入的任何其他系統管理員）新增至選取的使用者清單。
+    
+### <a name="switch-to-the-new-admin-center-and-back-again"></a>切換至新的系統管理中心，然後再切換回來
+
+- 當您可以使用新的 Microsoft 365 系統管理中心時，您可以選取 [**嘗試新**的系統管理中心] 切換（位於首頁頂端）。 如果您登出系統管理中心，我們會記下您的選取範圍，並將您登入新的系統管理中心。 <br/><br/>![新的系統管理中心切換自舊系統管理中心](../media/admin-center-toggle-off.png) 
+  
+- 開啟切換為 [**關閉**]，從首頁切換回舊的系統管理中心。 <br/><br/>![開啟新的系統管理中心切換](../media/admin-center-toggle-on.png)
+
+在新的系統管理中心，您可以在每一頁底部的 [**需要協助 ...** ] 按鈕旁，選擇 [**提供意見**反應]，以提供 Microsoft 對您經驗的意見反應。 請告訴我們您喜歡的專案，以及我們能夠做什麼。 此外，您還可以從向下取得整體印象或新發佈之特定經驗的時間，取得彈出的調查。 您也可以在本文結束時提供意見反應，請選取 [**此資訊是否有説明？**
+  
+如果您想要成為新系統管理中心的早期採用者，您必須開啟目標版本，然後在新的系統管理中心可供使用時，您可以切換到該中心以進行查看，並提供意見反應。
+  
+> [!NOTE]
+> 存取新的系統管理中心將會向所有 Microsoft 365 系統管理員推出。 組織中目標版本群組的系統管理員會先取得新的系統管理中心。 在目標發行時，並不保證您會立即看到切換，但您會比標準版的版本更快。 
   
 
    
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-看不到您此處的問題嗎？ 移至**這項資訊是否有幫助？** 底部的這] 頁面上，並要求您的問題。 
+您不會在這裡看到您的問題答案？ 請移至此頁面底部的 [**此資訊是否有用？** ]，並詢問您的問題。 
   
-## <a name="can-i-do-everything-in-the-new-admin-center-that-i-can-do-in-the-old-admin-center"></a>我可以做我可以在舊版系統管理中心中執行新版系統管理中心內的所有項目？
+## <a name="can-i-do-everything-in-the-new-admin-center-that-i-can-do-in-the-old-admin-center"></a>我可以在新的系統管理中心執行所有可執行檔系統管理中心嗎？
 
-是。 在新版系統管理中心是完全正常運作，且舊版系統管理中心的所有功能。
+是。 新的系統管理中心完全正常運作，且具有舊版系統管理中心的所有功能。
   
-## <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>試用版或購買哪些 Microsoft 365 計劃可用？
+## <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>哪些 Microsoft 365 方案可供試用或購買？
 
-Microsoft 365 是完整的智慧型解決方案，其中包含 Office 365、 Windows 10 和 Enterprise Mobility + Security，讓所有人發揮創意並安全地，在一起。 下列的 Microsoft 365 訂閱可用在系統管理中心中，以嘗試或立即購買]:
+Microsoft 365 是完整的智慧解決方案，包括 Office 365、Windows 10 和企業行動性 + 安全性，可讓每個人都有創造性且安全地協同運作。 您可以在系統管理中心使用下列 Microsoft 365 訂閱，讓您立即嘗試或購買：
   
-- Microsoft 365 商務版
+- 商務用 Microsoft 365
 - Microsoft 365 企業版 E3
 - Microsoft 365 企業版 E5
     
-如需詳細資訊，請參閱[試用或購買 Microsoft 365 訂用帳戶](../commerce/try-or-buy-microsoft-365.md)。
+如需詳細資訊，請參閱[嘗試或購買 Microsoft 365 訂閱](../commerce/try-or-buy-microsoft-365.md)。
   
-## <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>我發現錯誤或我想要要求功能增強功能。 如何讓 Microsoft 知道？
+## <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>我發現 bug 或我想要要求功能增強功能。 如何讓 Microsoft 知道？
 
-我們告訴您 ！ 報告的錯誤和共用的意見反應可協助我們改善進行 Microsoft 365 系統管理中心。 若要提供意見反應，選取頁面底部的 [**意見反應**] 按鈕，並使用表單來傳送，告訴我們您的想法。 選取核取方塊，並確認您的電子郵件地址，如果您想讓他人從 Microsoft 365 系統管理中心小組，以在您的註解待。 我們無法保證待每份意見反應，但我們會嘗試 ！ 
+我們喜歡聽到您的來信！ 報告錯誤和共用意見反應可協助我們改善 Microsoft 365 系統管理中心。 若要提供意見反應，請選取頁面底部的 [**意見**反應] 按鈕，並使用表單將您的想法傳送給我們。 如果您希望 Microsoft 365 系統管理中心小組的人員追蹤您的意見，請選取核取方塊，並確認您的電子郵件地址。 我們無法承諾跟進每一項意見反應，但我們要嘗試！ 
   
-您也可以以外的我們 UserVoice 論壇在系統管理中心提供的意見反應。 您可以使用此頁面上進行功能可以由其他論壇使用者投票的建議：[在新版系統管理中心的 UserVoice 論壇](https://go.microsoft.com/fwlink/?linkid=2024994)。
+您也可以從系統管理中心以外的 UserVoice 論壇中提供意見反應。 您可以使用此頁面來進行其他論壇使用者可投票的功能建議：[新系統管理中心的 UserVoice 論壇](https://go.microsoft.com/fwlink/?linkid=2024994)。
   
-## <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>特定類型的 IT 角色與安全性、 裝置管理或 Exchange 等其他工作區呢？
+## <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>IT 角色的特定類型及其他工作區（如安全性、裝置管理或 Exchange）的情況為何？
 
-在 Microsoft 365 系統管理中心是常見的進入點，針對所有小組與管理 Microsoft 365 的角色。 體驗、 資訊和控制項所量身訂做且可自訂的每個系統管理員和角色。 此外，專家工作區允許更深、 細微的控制項。 這些專家工作區包含 SharePoint，Teams &amp; Skype、 Exchange、 安全性、 規範、 裝置管理和 Azure Active Directory。 您可以專家從功能窗格中的工作區中找到 Microsoft 365 系統管理中心， [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)。
+Microsoft 365 系統管理中心是所有用來管理 Microsoft 365 的團隊和角色的一般進入點。 您可以針對每個系統管理員和角色，量身定制和自訂經驗、資訊和控制項。 此外，專業工作區允許深度、精細的控制。 這些專家工作區包括 SharePoint、 &amp;小組 Skype、Exchange、安全性、規範、裝置管理和 Azure Active Directory。 您可以從 Microsoft 365 系統管理中心的流覽窗格中，找到專家工作區[https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)。
   
-更新所有系統管理員中心，即可獲得一致的體驗需要一段時間，但您可以深入了解我們已開始美容至系統管理中心：
+更新所有系統管理中心以取得一致的經驗，但您可以深入瞭解已開始 makeover 的系統管理中心：
   
-- [開始使用新的 SharePoint 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2024186)
+- [開始使用新 SharePoint 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2024186)
     
-- [對新的 Microsoft Teams 在轉換期間管理小組&amp;Skype 商務版系統管理中心](https://go.microsoft.com/fwlink/?linkid=2024308)
+- [在轉換至新的 Microsoft 團隊&amp;商務用 Skype 系統管理中心時管理團隊](https://go.microsoft.com/fwlink/?linkid=2024308)
     
-- [Microsoft 365 裝置管理概觀](https://go.microsoft.com/fwlink/?linkid=2006262)
+- [Microsoft 365 裝置管理的概述](https://go.microsoft.com/fwlink/?linkid=2006262)
     
 - [介紹 Microsoft 365 安全性與合規性中心](https://go.microsoft.com/fwlink/?linkid=2025413)
     

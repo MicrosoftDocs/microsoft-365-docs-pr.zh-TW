@@ -16,21 +16,21 @@ ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何設定其內部部署 Exchange 環境，以將垃圾郵件路由傳送至內部部署使用者的垃圾郵件資料夾，如果他們在混合式環境中使用獨立 Exchange Online Protection （EOP）。
-ms.openlocfilehash: 8a3887d1cc7390e75b7708d2167372e976923e01
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f2964324c6d9104719fc79ff31f14b4b94c627cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893715"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621279"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>設定獨立 EOP，將垃圾郵件傳遞至混合式環境中的 [垃圾郵件] 資料夾
 
 > [!IMPORTANT]
-> 本主題僅適用于混合式環境中的獨立 EOP 客戶。 本主題不適用於含 Exchange Online 信箱的 Office 365 客戶。
+> 本主題僅適用于混合式環境中的獨立 EOP 客戶。 本主題不適用於含 Exchange Online 信箱的 Microsoft 365 客戶。
 
-如果您是混合式環境中的獨立 Exchange Online Protection （EOP）客戶，您必須設定內部部署 Exchange 組織，以辨識及翻譯 EOP 的垃圾郵件篩選 verdicts，使內部部署信箱中的垃圾郵件規則可以將郵件移至 [垃圾郵件] 資料夾。
+如果您是混合式環境中的獨立 Exchange Online Protection （EOP）客戶，您必須設定內部部署 Exchange 組織，以辨識及翻譯 EOP 的垃圾郵件篩選 verdicts，讓內部部署信箱中的垃圾郵件規則可以將郵件移至 [垃圾郵件] 資料夾。
 
-具體而言，您必須在內部部署 Exchange 組織中建立郵件流程規則（也稱為傳輸規則），條件是使用下列任何 EOP 反垃圾郵件標頭和值，以及設定垃圾郵件信賴等級的動作來尋找郵件。SCL）的郵件至6：
+具體說來，您必須在內部部署 Exchange 組織中建立郵件流程規則（也稱為傳輸規則），並提供條件，以尋找具有下列任何 EOP 反垃圾郵件標頭和值的郵件，以及將這些郵件的垃圾郵件信賴等級（SCL）設定為6的動作：
 
 - `X-Forefront-Antispam-Report: SFV:SPM`（透過垃圾郵件篩選標示為垃圾郵件）
 
@@ -139,7 +139,7 @@ New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-F
   Get-TransportRule -Identity "<RuleName>" | Format-List
   ```
 
-- 在**沒有掃描輸出郵件的**外部電子郵件系統中，請將未經授權的大量電子郵件（GTUBE）郵件的一般測試傳送至受影響的收件者，並確認郵件已傳遞至其 [垃圾郵件] 資料夾。 GTUBE 訊息類似用來測試惡意程式碼設定的《電腦防病毒調查（EICAR.TXT）」文字檔的歐洲研究院。
+- 在**沒有掃描輸出郵件的**外部電子郵件系統中，請將未經授權的大量電子郵件（GTUBE）郵件的一般測試傳送至受影響的收件者，並確認郵件已傳遞至其 [垃圾郵件] 資料夾。 GTUBE 訊息類似於歐洲反電腦病毒協會 (EICAR) 用於測試惡意程式碼設定的文字檔。
 
   若要傳送 GTUBE 訊息，請在電子郵件的本文中包含下列文字，但不含任何空格或分行符號：
 

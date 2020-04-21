@@ -20,14 +20,14 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: 若要深入瞭解 Office 365 中的一些問題，請參閱常見問題的答案。
+description: 在 FAQ 中尋找問題的答案以深入瞭解網域。
 ms.custom: okr_smb
-ms.openlocfilehash: 5d5b921494ba59b78dec53047a31215a8e755f4c
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 4ece90306f37b6f07e34ce93423a76f084d50b6f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540864"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627591"
 ---
 # <a name="domains-faq"></a>網域常見問題集
 
@@ -51,7 +51,7 @@ ms.locfileid: "43540864"
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>如何驗證我的網域的 SPF 記錄？
 
-您必須具有或建立**一個 SPF 的 TXT 記錄**，這一點很重要。 如果您已經有 SPF 記錄，您應該將新的 Office 365 值附加到它，而不是建立新的記錄。 在您新增或更新 Office 365 電子郵件的 SPF 記錄之後，您應該檢查下列其中一項工具，以確定其語法是否正確： 
+您必須具有或建立**一個 SPF 的 TXT 記錄**，這一點很重要。 如果您已經有 SPF 記錄，您應該將新的 Office 365 值附加到它，而不是建立新的記錄。 在您新增或更新 Microsoft 電子郵件的 SPF 記錄之後，您應該檢查下列其中一項工具，確定語法是否正確： 
   
 - [SPF 記錄測試控管](http://www.kitterman.com/spf/validate.html)
     
@@ -63,7 +63,7 @@ ms.locfileid: "43540864"
 
 使用 Office 365 的 DNS 管理有兩個選項：
   
-1. 您可以變更名稱伺服器（NS）記錄，然後 Office 365 會處理所有服務特有的記錄，例如設定電子郵件的 MX 記錄。 **推薦**
+1. 您變更了名稱伺服器（NS）記錄，然後 Microsoft 會處理所有服務特有的記錄，例如設定電子郵件的 MX 記錄。 **推薦**
     
 2. 您可以在 DNS 主機自行新增電子郵件和其他 Office 365 服務的 DNS 記錄。 **（僅限專家）**
     
@@ -87,7 +87,7 @@ ms.locfileid: "43540864"
  
 #### <a name="disadvantages"></a>缺點
 您必須自行設定 Office 365 服務的 DNS 記錄（除非您有 GoDaddy 網域）。 
--  如果目前的 DNS 主機不支援 Office 365 的所有必要記錄類型，有些 Office 365 功能將無法使用，您可能需要切換至不同的 DNS 主機。 
+-  如果目前的 DNS 主機不支援 Microsoft 365 的所有必要記錄類型，有些功能將無法使用，您可能需要切換至不同的 DNS 主機。 
 - 當 Office 365 變更 DNS 記錄的需求，或加入新的服務時，您必須自行在您的 DNS 主機上進行更新。 
    
 ## <a name="what-is-a-domain-name"></a>何謂功能變數名稱？
@@ -333,9 +333,9 @@ ms.locfileid: "43540864"
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>為什麼我有「onmicrosoft.com」網域？
 
-當您註冊服務時，Office 365 會為您建立網域，例如_contoso.onmicrosoft.com_。 當您註冊時所建立的使用者識別碼包含網域，例如_alan\@contoso.onmicrosoft.com_。 
+當您註冊服務時，Office 365 會為您建立網域，例如*contoso.onmicrosoft.com*。 您註冊時所建立的使用者識別碼包含網域，如*alan@contoso.onmicrosoft.com*。 
   
- __如果您想要讓您的電子郵件看起來像是_alan\@contoso.com_：__ [購買網域，](../get-help-with-domains/buy-a-domain-name.md)或是只要您已擁有您的使用者和網域，請依照將您的[使用者與網域新增至 Office 365](add-domain.md)中的步驟進行。 
+ **如果您想要讓您的電子郵件看起來像是*alan\@contoso.com*：** [購買網域，](../get-help-with-domains/buy-a-domain-name.md)或是只要您已擁有您的使用者和網域，請依照將您的[使用者與網域新增至 Office 365](add-domain.md)中的步驟進行。 
   
 - **您無法在註冊後重新命名 name.onmicrosoft.com17 網域。** 例如，如果您所選擇的初始網域是 fourthcoffee.onmicrosoft.com，您就無法將它變更為 fabrikam.onmicrosoft.com。 若要使用不同的 onmicrosoft.com 網域，您必須開始使用 Office 365 的新訂閱。 
     
@@ -348,12 +348,11 @@ ms.locfileid: "43540864"
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>為什麼我有「onmicrosoft.de」網域？
 
-當您註冊服務時，Office 365 會為您建立網域，例如*contoso.onmicrosoft.de*。 您註冊時所建立的使用者識別碼包含網域，例如 "alan@contoso.onmicrosoft.de"。 
+當您註冊服務時，Office 365 會為您建立網域，例如*contoso.onmicrosoft.de*。 您註冊時所建立的使用者識別碼包含網域，如*alan@contoso.onmicrosoft.de*。 
   
-如果您想要讓您的電子郵件看起來像是 "alan@contoso.de"，請[購買網域](../get-help-with-domains/buy-a-domain-name.md)或執行 [[將使用者和網域新增至 Office 365](add-domain.md) ] 中的步驟（如果您已擁有）。 
+ **如果您想要讓您的電子郵件看起來像是*alan@contoso.de*：** [購買網域](../get-help-with-domains/buy-a-domain-name.md)，或是只要[將您的使用者與網域新增至 Office 365](add-domain.md) ，也請依照下列步驟進行。 
   
 - **您無法在註冊後重新命名 name.onmicrosoft.com17 網域。** 例如，如果您所選擇的初始網域是 fourthcoffee.onmicrosoft.de，您就無法將它變更為 fabrikam.onmicrosoft.de。 若要使用不同的 onmicrosoft.de 網域，您必須開始使用 Office 365 的新訂閱。 
     
@@ -489,11 +488,11 @@ ms.locfileid: "43540864"
         
     2. 請執行下列測試：
         
-    3. 測試本機 Office 365 電子郵件。 例如，傳送電子郵件給使用者 B。這封電子郵件應該會立即傳遞。 在此情況下，郵件將不會路由傳送至原始伺服器上的使用者 B 信箱，因為 Office 365 會將信箱視為本機。
+    3. 測試本機 Microsoft 電子郵件。 例如，傳送電子郵件給使用者 B。這封電子郵件應該會立即傳遞。 在此情況下，郵件將不會路由傳送至原始伺服器上的使用者 B 信箱，因為 Office 365 會將信箱視為本機。
         
     4. 測試電子郵件給其他電子郵件系統上的某人。 例如，傳送電子郵件給使用者 C。這封電子郵件應該傳送至原始郵件伺服器上的使用者 C 信箱。
         
-    5. 從外部帳戶，或是從其他電子郵件系統上某員工的電子郵件帳戶，確認已在其他電子郵件系統上正確設定轉寄功能。 例如，從使用者 C 的原始伺服器帳戶或 Hotmail 帳戶傳送使用者 A 電子郵件，並確認其送達使用者 A 的 Office 365 信箱。
+    5. 從外部帳戶，或是從其他電子郵件系統上某員工的電子郵件帳戶，確認已在其他電子郵件系統上正確設定轉寄功能。 例如，從使用者 C 的 origninal server 帳戶或 Hotmail 帳戶傳送使用者 A 電子郵件，並確認其送達使用者 A 的 Office 365 信箱。
         
 9. 移動信箱內容
     

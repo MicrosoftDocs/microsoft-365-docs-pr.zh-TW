@@ -17,18 +17,18 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: 請參閱 Office 365 的 [高級威脅防護] 中的欺騙智慧洞察力的運作方式。
-ms.openlocfilehash: 92e922bf3045e98de16b07a47113effd9dc6ccdd
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 4ad3de8812e09b73018c02232e3e66e4bec9d041
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537482"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630926"
 ---
-# <a name="walkthrough---atp-spoof-intelligence-insight-in-office-365"></a>逐步解說-在 Office 365 中的 ATP 欺騙智慧洞察力
+# <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>逐步解說-在 Microsoft 365 中的 ATP 欺騙智慧洞察力
 
-在使用高級威脅防護（ATP）的 Office 365 組織中，您可以使用哄騙智慧真知灼見，快速判斷哪些寄件者可合法傳送您未驗證的電子郵件。 透過允許他們傳送哄騙郵件，您可以降低任何誤報給使用者的風險。 您也可以使用 [偽造智慧洞察力] 來監視和管理允許的網域對，以提供額外的安全性層級，並防止不安全的郵件到達您的組織中。
+在使用高級威脅防護（ATP）的 Microsoft 365 組織中，您可以使用哄騙智慧真知灼見，快速判斷哪些寄件者可合法傳送您未驗證的電子郵件。 透過允許他們傳送哄騙郵件，您可以降低任何誤報給使用者的風險。 您也可以使用 [偽造智慧洞察力] 來監視和管理允許的網域對，以提供額外的安全性層級，並防止不安全的郵件到達您的組織中。
 
-如果您是[Office 365 安全性 & 規範中心內的報表和深入](reports-and-insights-in-security-and-compliance.md)瞭解，可以協助您瞭解如何輕鬆從儀表板流覽至真知灼見及建議的動作。
+如果您不熟悉[安全性 & 規範中心的報表和洞察力](reports-and-insights-in-security-and-compliance.md)，它可能會協助您瞭解如何輕鬆從儀表板流覽至真知灼見及建議的動作。
 
 此逐步解說是安全性 & 規範中心的其中一項。 若要瞭解如何導覽報表和真知灼見，請參閱相關主題區段中的演練。
 
@@ -38,11 +38,11 @@ ms.locfileid: "43537482"
 
   您可以在安全性 & 合規性中心的多個儀表板上查看哄騙智慧洞察力。 不論您所看到的儀表板為何，真知灼見都會提供相同的詳細資料，並可讓您快速執行相同的工作。
 
-- 您必須已獲指派權限，才能執行這些程序。 若要使用欺騙性智慧洞察力，您必須是「**組織管理**」、「**安全性管理員**」或「**安全性讀者**」角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱 [Office 365 安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
+- 您必須已獲指派權限，才能執行這些程序。 若要使用欺騙性智慧洞察力，您必須是「**組織管理**」、「**安全性管理員**」或「**安全性讀者**」角色群組的成員。 如需安全性 & 規範中心中角色群組的詳細資訊，請參閱[安全性 & 規範中心中的許可權](permissions-in-the-security-and-compliance-center.md)。
 
-- 您可以在 ATP 反網路釣魚原則中啟用和停用欺騙智慧。 如需詳細資訊，請參閱[在 Office 365 中設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
+- 您可以在 ATP 反網路釣魚原則中啟用和停用欺騙智慧。 如需詳細資訊，請參閱[在 Microsoft 365 中設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
-- 在包含 Exchange Online 信箱的 Office 365 組織中，且在獨立 Exchange Online Protection （EOP）中，如果沒有 Exchange Online 信箱，您可以使用欺騙性智慧來監視及管理您要傳送未驗證郵件的寄件者。 如需詳細資訊，請參閱[Configure 哄騙情報 In Office 365](learn-about-spoof-intelligence.md)。
+- 在包含 Exchange Online 信箱和獨立 Exchange Online Protection （EOP）的 Microsoft 365 組織中，如果沒有 Exchange Online 信箱，您可以使用哄騙智慧來監視和管理您傳送未驗證郵件的寄件者。 如需詳細資訊，請參閱[Configure 哄騙情報 In Microsoft 365](learn-about-spoof-intelligence.md)。
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心開啟欺騙性智慧洞察力
 
@@ -74,11 +74,11 @@ ms.locfileid: "43537482"
 
    **可疑的網域配對**包括：
 
-   - **高度信賴的哄騙**： Office 365 收到強信號，指出這些網域是可疑的，根據歷史傳送模式和網域的信譽分數而定。 Office 365 非常確信網域是哄騙的，而從這些網域傳送的郵件則不太可能合法。
+   - **高度信賴的哄騙**： Microsoft 365 收到強信號，表示這些網域是可疑的，根據歷史傳送模式和網域的信譽得分。 Microsoft 365 非常確信網域是哄騙的，而從這些網域傳送的郵件不太可能合法。
 
-   - 「**置信十足**詐騙」： Office 365 收到的是這些網域是可疑的，根據歷史傳送模式和網域的信譽分數。 Office 365 適度相信網域是哄騙的，而從這些網域傳送的郵件是合法的。 此 bucket 有更多的可能性包含誤報（FPs）的高可信度。
+   - 「**可信哄騙**」： Microsoft 365 收到的是這些網域是可疑的，根據歷史傳送模式和網域的信譽分數。 Office 365 適度相信網域是哄騙的，而從這些網域傳送的郵件是合法的。 此 bucket 有更多的可能性包含誤報（FPs）的高可信度。
 
-   - **非可疑的網域配對**（包括**rescued 欺騙**）： rescued 欺騙指的是未通過明確驗證檢查[SPF](how-office-365-uses-spf-to-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)、 [DMARC](use-dmarc-to-validate-email.md)）的網域，但已通過我們的隱含電子郵件驗證檢查（[複合驗證](email-validation-and-authentication.md#composite-authentication)）。 因此，Office 365 會以您的身分 rescued 郵件，而且不會對郵件採取任何反欺詐動作。
+   - **非可疑的網域配對**（包括**rescued 欺騙**）： rescued 欺騙指的是未通過明確驗證檢查[SPF](how-office-365-uses-spf-to-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)、 [DMARC](use-dmarc-to-validate-email.md)）的網域，但已通過我們的隱含電子郵件驗證檢查（[複合驗證](email-validation-and-authentication.md#composite-authentication)）。 因此，Microsoft 365 會代表您 rescued 郵件，而且不會對郵件採取任何反欺詐動作。
 
 ### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>從哄騙情報洞察力中查看有關可疑網域配對的詳細資訊。
 
@@ -100,7 +100,7 @@ ms.locfileid: "43537482"
 
 ## <a name="related-topics"></a>相關主題
 
-[Office 365 的反詐騙保護](anti-spoofing-protection.md)
+[Microsoft 365 中的反欺騙保護](anti-spoofing-protection.md)
 
 [逐步解說 - 從儀表板到深入解析](from-a-dashboard-to-an-insight.md)
 

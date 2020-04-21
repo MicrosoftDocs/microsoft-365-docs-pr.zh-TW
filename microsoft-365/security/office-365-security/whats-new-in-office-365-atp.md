@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 1507a88a37591c43ce612f3c18d946403a85f41f
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: b48f106e500673da0858aa4e190462dd3d01fad1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106181"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630818"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新增功能
 
@@ -44,9 +44,9 @@ ms.locfileid: "43106181"
     - Advanced NOT 篩選（這些是包含不含包含的高級篩選選項，不包含等等）。
     - 細微時間篩選（日、小時、半小時） 
 
-- [**事件**] 小工具現在是「**動作中心**」小工具。 （若要查看您的安全性小元件，請在 Office 365 安全性 & 合規性中心，移至 [**威脅管理** > ] [**檢查**]）。
+- [**事件**] 小工具現在是「**動作中心**」小工具。 （若要查看您的安全性小元件，請在安全性 & 合規性中心內，移至 [**威脅管理** > ] [**檢查**]。）
 
-- [Office 365 中的安全檔](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **（預覽）**
+- [Microsoft 365 中的安全檔](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **（預覽）**
 
 ## <a name="december-2019"></a>2019 年 12 月
 
@@ -60,7 +60,7 @@ ms.locfileid: "43106181"
 
 ## <a name="september-2019"></a>2019 年 9 月
 
-- [使用 office 365 中的自動化調查和回應功能](automated-investigation-response-office.md)（OFFICE 365 ATP 方案2）
+- [使用自動調查和回應功能](automated-investigation-response-office.md)（OFFICE 365 ATP 方案2）
 
 - [使用 office 365 管理活動 API 與 office 365 ATP 自動化調查和回應事件](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)（OFFICE 365 ATP 方案2）進行整合
 
@@ -82,7 +82,7 @@ ms.locfileid: "43106181"
 
 您知道 Office 365 ATP 提供兩種方案嗎？ [深入瞭解每個方案包含的內容](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 

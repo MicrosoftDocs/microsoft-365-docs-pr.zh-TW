@@ -23,21 +23,21 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: '將您的初始電子郵件地址變更為類似 tom@fourthcoffee.com 的易記電子郵件地址。 若要這麼做，您必須購買功能變數名稱，並將其新增至 Office 365。 '
-ms.openlocfilehash: dc0ab64003b48eec50bf34e60d8a6df463b4fe89
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: '將您的初始電子郵件地址變更為類似 tom@fourthcoffee.com 的易記電子郵件地址。 若要這麼做，您必須購買功能變數名稱，並將其新增至 Microsoft 365。 '
+ms.openlocfilehash: d419521210740cfa76a911cf0d66e7826ee8e626
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212030"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629056"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>變更電子郵件地址以使用您的自訂網域
 
- **[檢查網域的常見問題集](../setup/domains-faq.md)** ：供您在找不到所需功能時參考。 
+ 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
   
 ::: moniker range="o365-worldwide"
 
-您在 Office 365 中的初始電子郵件地址包括 .onMicrosoft.com，例如 tom@fourthcoffee.onMicrosoft.com。您可以將它改成更好記的位址，例如 tom@fourthcoffee.com。您必須先有自己的網域名稱，例如 fourthcoffee.com。如果您已經有了，那很好！如果還沒有，則可以了解如何[向網域註冊機構購買](../get-help-with-domains/buy-a-domain-name.md)。
+您的 Microsoft 365 中的初始電子郵件地址包括 onmicrosoft.com，例如 tom@fourthcoffee.onmicrosoft.com。 您可以將它改成更好記的位址，例如 tom@fourthcoffee.com。 您必須先有自己的網域名稱，例如 fourthcoffee.com。 如果您已經有了，那很好！ 如果還沒有，則可以了解如何[向網域註冊機構購買](../get-help-with-domains/buy-a-domain-name.md)。
 
 ::: moniker-end
 
@@ -53,7 +53,7 @@ ms.locfileid: "43212030"
 
 ::: moniker-end
 
-如果您在設定期間更新網域的 MX 記錄，藉此將網域的電子郵件變更為寄送至 Office 365，寄送至該網域的「所有」電子郵件將開始寄送至 Office 365。請確定您已經先在 Office 365 中為在您網域上有電子郵件的每個人新增使用者並建立信箱，然後再變更 MX 記錄。假如不想將您網域上每個人的電子郵件都移動到 Office 365，可以採取相關步驟[改為只使用幾個電子郵件地址來試驗 Office 365](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx)。
+當您將網域的電子郵件變更為 Microsoft 365 時，當您在設定期間更新您網域的 MX 記錄時，所有傳送至該網域的電子郵件都會開始使用 Microsoft 365。 在您變更 MX 記錄之前，請確定已在 Microsoft 365 中新增使用者，並為已在您的網域上擁有電子郵件的所有人新增信箱。 不想將您網域中的每一個人的電子郵件移至 Microsoft 365 嗎？ 您可以[只使用一些電子郵件地址試驗 Microsoft 365 的](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx)步驟。
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 系統管理中心變更您的電子郵件地址以使用您的自訂網域
 
@@ -83,12 +83,12 @@ ms.locfileid: "43212030"
     
 4. 遵循步驟操作，確認您擁有該網域並變更您的電子郵件地址。
     
-系統將引導您完成在 Office 365 正確設定您的網域的所有操作。
+您將會引導您使用 Microsoft 365 中您的網域正確設定所有專案。
 
 > [!NOTE]
-> 如果您不是使用 Exchange 授權，則無法使用網域從 Office 365 租使用者傳送或接收電子郵件。
+> 如果您不是使用 Exchange 授權，則無法使用網域從 Microsoft 365 租使用者傳送或接收電子郵件。
   
 ## <a name="related-articles"></a>相關文章
 
-[購買使用 Office 365 的自訂網域](../get-help-with-domains/buy-a-domain-name.md)
+[使用 Microsoft 365 購買自訂網域](../get-help-with-domains/buy-a-domain-name.md)
  

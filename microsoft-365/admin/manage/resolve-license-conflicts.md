@@ -1,5 +1,5 @@
 ---
-title: 解決商務用 Office 365 中的授權衝突
+title: 解決授權衝突
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
-description: 瞭解如何解決與商務用 Office 365 訂閱的授權衝突。
-ms.openlocfilehash: de0a6c988b9ca2ae033a24c012b7f36bc1db58a3
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: 瞭解如何解決與 Microsoft 365 for business 訂閱的授權衝突。
+ms.openlocfilehash: 51f87c055402d9e6e3bd732a99abf2c155887290
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540912"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628085"
 ---
-# <a name="resolve-license-conflicts-in-office-365-for-business"></a>解決商務用 Office 365 中的授權衝突
+# <a name="resolve-license-conflicts"></a>解決授權衝突
 
 建議您先購買訂閱所需的授權，再建立新的使用者。 如此一來，就能在建立使用者帳戶時，將授權指派給新的使用者。 如果您已經將所有授權指派給使用者，但其中有部分授權已過期，或是您嘗試移除已經指派給某位使用者的授權，將會發生授權衝突。 如需詳細資訊，請參閱[從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md)。
   

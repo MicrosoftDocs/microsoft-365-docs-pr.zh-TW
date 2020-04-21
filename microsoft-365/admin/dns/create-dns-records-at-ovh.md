@@ -1,5 +1,5 @@
 ---
-title: 在 OVH 建立 Office 365 的 DNS 記錄
+title: 在 OVH 建立 Microsoft 的 DNS 記錄
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
-description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Office 365 OVH。
-ms.openlocfilehash: 3ba4e61c875f74a0a6cf76c8b7cd82ea88e0221b
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft OVH。
+ms.openlocfilehash: 01c455f54a7ee2efc6114dba1c01170b97ea5f71
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211107"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629284"
 ---
-# <a name="create-dns-records-at-ovh-for-office-365"></a>在 OVH 建立 Office 365 的 DNS 記錄
+# <a name="create-dns-records-at-ovh-for-microsoft"></a>在 OVH 建立 Microsoft 的 DNS 記錄
 
 [檢查網域的常見問題集](../setup/domains-faq.md) ：供您在找不到所需功能時參考。 
   
@@ -35,19 +35,19 @@ ms.locfileid: "43211107"
   
 以下是要新增的主要記錄。 
   
-- [在 OVH 建立 Office 365 的 DNS 記錄](#create-dns-records-at-ovh-for-office-365)
+- [在 OVH 建立 Microsoft 的 DNS 記錄](#create-dns-records-at-ovh-for-microsoft)
     
-- [新增 MX 記錄，以將寄往您網域的電子郵件轉至 Office 365](#add-an-mx-record-so-email-for-your-domain-will-come-to-office-365)
+- [新增 MX 記錄，使您網域的電子郵件將會傳送給 Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
-- [新增 Office 365 所需的 CNAME 記錄](#add-the-cname-records-that-are-required-for-office-365)
+- [新增 Microsoft 所需的 CNAME 記錄](#add-the-cname-records-that-are-required-for-microsoft)
     
 - [新增 SPF 的 TXT 記錄以協助防範垃圾郵件](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [新增兩筆 Office 365 所需的 SRV 記錄](#add-the-two-srv-records-that-are-required-for-office-365)
+- [新增 Microsoft 所需的兩筆 SRV 記錄](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-在 OVH 新增這些記錄之後，您的網域就會設定為搭配 Office 365 服務使用。
+在 OVH 新增這些記錄之後，您的網域就會設定為與 Microsoft 服務搭配使用。
   
-若要了解使用 Office 365 網站的虛擬主機和 DNS，請參閱[搭配 Office 365 使用公用網站](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx)。
+若要深入瞭解 Microsoft 的網站的主控和 DNS，請參閱搭配[Microsoft 使用公用網站](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx)。
   
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
@@ -55,7 +55,7 @@ ms.locfileid: "43211107"
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 <a name="bkmk_txt"> </a>
 
-在您將自己的網域用於 Office 365 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Office 365 就能確信您擁有該網域。
+在將您的網域與 Microsoft 搭配使用之前，我們必須先確認您擁有該網域。 您能夠在您的網域註冊機構登入您的帳戶，並為您擁有網域的 Microsoft 建立 DNS 記錄證明。
   
 > [!NOTE]
 > 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
@@ -84,7 +84,7 @@ ms.locfileid: "43211107"
     
     |**記錄類型**|**子域**|**TTL**|**值**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |(保留空白)  <br/> |3600（秒）  <br/> |MS= msxxxxxxxx  <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |TXT  <br/> |(保留空白)  <br/> |3600（秒）  <br/> |MS= msxxxxxxxx  <br/> **附註：** 這是範例。 從表格中，使用您的特定**目的地或指向位址**值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. 選取 [**確認**]。 
     
@@ -92,9 +92,9 @@ ms.locfileid: "43211107"
   
 8. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
-現在您已在網域註冊機構網站新增記錄，請返回 Office 365 並要求 Office 365 尋找該記錄。
+現在，您已在網域註冊機構的網站上新增記錄，您會回到 Microsoft 並要求記錄。
   
-在 Office 365 找到正確的 TXT 記錄後，您的網域就完成驗證了。
+當 Microsoft 找到正確的 TXT 記錄後，您的網域就會經過驗證。
   
 1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
     
@@ -113,7 +113,7 @@ ms.locfileid: "43211107"
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>新增 MX 記錄，以將寄往您網域的電子郵件轉至 Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，使您網域的電子郵件將會傳送給 Microsoft
 <a name="bkmk_mx"> </a>
 
 1. 若要開始使用，請使用[此連結](https://www.ovh.com/manager/)移至 OVH 中您的網域頁面。 You'll be prompted to log in.
@@ -143,7 +143,7 @@ ms.locfileid: "43211107"
   
     |**記錄類型**|**子域**|**TTL**|**優先順序**|**Target** (目標)|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(保留空白)  <br/> |3600（秒）  <br/> |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |\<網域金鑰\>。 mail.protection.outlook.com  <br/> **附注：** 從您的 Office 365 帳戶取得您* \<的網域金鑰\> * 。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(保留空白)  <br/> |3600（秒）  <br/> |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |\<網域金鑰\>。 mail.protection.outlook.com  <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![郵件的 OVH MX 記錄](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -161,7 +161,7 @@ ms.locfileid: "43211107"
   
 10. 選取 [**確認**]。
     
-## <a name="add-the-cname-records-that-are-required-for-office-365"></a>新增 Office 365 所需的 CNAME 記錄
+## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的 CNAME 記錄
 <a name="bkmk_cname"> </a>
 
 1. 若要開始使用，請使用[此連結](https://www.ovh.com/manager/)移至 OVH 中您的網域頁面。 You'll be prompted to log in.
@@ -212,7 +212,7 @@ ms.locfileid: "43211107"
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Office 365 建立一個新的記錄。 而是，請將必要的 Office 365 值新增到目前的記錄，以便擁有包含這兩組值的*單一* SPF 記錄。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果您已有網域的 SPF 記錄，請不要為 Microsoft 建立新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 
   
 1. 若要開始使用，請使用[此連結](https://www.ovh.com/manager/)移至 OVH 中您的網域頁面。 You'll be prompted to log in.
     
@@ -248,7 +248,7 @@ ms.locfileid: "43211107"
     
     ![OVH 新增 SPF 及確認的 TXT 記錄](../../media/649eefeb-3227-49e3-98a0-1ce19c42fa54.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>新增兩筆 Office 365 所需的 SRV 記錄
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的兩筆 SRV 記錄
 <a name="bkmk_srv"> </a>
 
 1. 若要開始使用，請使用[此連結](https://www.ovh.com/manager/)移至 OVH 中您的網域頁面。 You'll be prompted to log in.

@@ -15,20 +15,20 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何使用 Exchange Online Protection 中的郵件流程規則，以進行大量電子郵件篩選。
-ms.openlocfilehash: b08edfdd88f6f522d3bf212b209ee4b293d7198a
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 229a66658e041be737efbc4cbb7c36ba667d3aed
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033635"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631070"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a>使用郵件流程規則來篩選 Office 365 中的大量電子郵件
 
-如果您是 Office 365 客戶的信箱位於 Exchange Online 或獨立 Exchange Online Protection （EOP）客戶但沒有 Exchange Online 信箱，EOP 會使用反垃圾郵件原則（也稱為垃圾郵件篩選原則或內容篩選原則）來掃描垃圾郵件和大宗郵件（也稱為灰色郵件）的輸入郵件。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+如果您是使用 Exchange Online 中的信箱或獨立 Exchange Online Protection （EOP）客戶但沒有 Exchange Online 信箱的 Microsoft 365 客戶，EOP 會使用反垃圾郵件原則（也稱為垃圾郵件篩選原則或內容篩選原則）來掃描輸入郵件中的垃圾郵件和大宗郵件（也稱為灰色郵件）。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 如果您想要更多的選項來篩選大宗郵件，您可以建立郵件流程規則（也稱為傳輸規則），以搜尋大宗郵件中經常找到的文字模式或片語，並將這些郵件標示為垃圾郵件。 如需大宗郵件的詳細資訊，請參閱 Office 365 中的[垃圾郵件和大量電子郵件](what-s-the-difference-between-junk-email-and-bulk-email.md)以及[大量投訴（BCL）](bulk-complaint-level-values.md)之間的差異。
 
-本主題說明如何在 Exchange 系統管理中心（EAC）和 PowerShell （Office 365 客戶的 Exchange Online PowerShell 中建立這些郵件流程規則;Exchange Online Protection PowerShell 適用于獨立 EOP 客戶）。
+本主題說明如何在 Exchange 系統管理中心（EAC）和 PowerShell （Microsoft 365 客戶的 Exchange Online PowerShell 中建立這些郵件流程規則;Exchange Online Protection PowerShell 適用于獨立 EOP 客戶）。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -36,7 +36,7 @@ ms.locfileid: "43033635"
 
 - 若要在 Exchange Online 中開啟 EAC，請參閱 exchange [online 中的 exchange admin center](https://docs.microsoft.com/Exchange/exchange-admin-center)。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連線到獨立的 Exchange Online Protection PowerShell，請參閱[connect To Exchange Online protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連接至獨立版 Exchange Online Protection PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
 - 如需 Exchange Online 和獨立 EOP 中郵件流程規則的相關資訊，請參閱下列主題：
 

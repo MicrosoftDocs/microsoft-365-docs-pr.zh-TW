@@ -1,5 +1,7 @@
 ---
 title: 建立及編輯 AutoPilot 設定檔
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -17,18 +19,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: 了解如何建立、 編輯、 刪除或移除 AutoPilot 設定檔。
-ms.openlocfilehash: 4305340a2fc5df8202cf4d85f9e2541690bf9ed0
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: 瞭解如何建立 AutoPilot 設定檔，並將其套用至裝置，以及編輯或刪除設定檔，或從裝置移除設定檔。
+ms.openlocfilehash: a6e02ab56faeb08718a9831657b55cff0356a4ec
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574711"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627367"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>建立及編輯 AutoPilot 設定檔
 
@@ -36,23 +39,23 @@ ms.locfileid: "37574711"
 
 設定檔適用於單一裝置或一組裝置。
   
-1. 在 Microsoft 365 商務版系統管理中心中，選擇 [**裝置**] \> **AutoPilot**。
+1. 在 Microsoft 365 系統管理中心，選擇 [**裝置** \> ] **AutoPilot**。
   
-2. 在**自動駕駛**頁面上，選擇 [**設定檔**] 索引標籤\>**建立設定檔**。
+2. 在 [ **AutoPilot** ] 頁面上，選擇 [ \> **設定檔**] 索引標籤**建立設定檔**。
     
-3. 在 [**建立設定檔**] 頁面上，輸入可協助您識別，例如行銷，開啟您想要 （如需詳細資訊，請參閱[關於 AutoPilot 設定檔設定](autopilot-profile-settings.md)，） 的設定，然後選擇 [**儲存**設定檔的名稱。
+3. 在 [**建立設定檔**] 頁面上，輸入設定檔的名稱，以協助您識別，例如「行銷」。 開啟您想要的設定，然後選擇 [**儲存**]。 如需 AutoPilot 設定檔設定的詳細資訊，請參閱[關於 AutoPilot 設定檔設定](autopilot-profile-settings.md)。
     
-    ![Enter name and turn on settings in the Create profile panel.](media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
+    ![Enter name and turn on settings in the Create profile panel.](../media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
 ### <a name="apply-profile-to-a-device"></a>將設定檔套用到裝置
 
-建立設定檔之後，您可以將它套用到單一裝置或一組裝置。您可以在[逐步指南](add-autopilot-devices-and-profile.md)中挑選現有設定檔、可以將設定檔套用到新裝置，或者也可以取代單一裝置或一組裝置的現有設定檔。 
+在您建立設定檔之後，您可以將它套用至裝置或裝置群組。 您可以在[逐步指南](add-autopilot-devices-and-profile.md)中挑選現有的設定檔，並將其套用至新裝置，或取代裝置或裝置群組的現有設定檔。 
   
 1. 在 [**準備 Windows** ] 頁面上，選擇 [**裝置**] 索引標籤。 
     
-2. 按一下核取方塊，裝置名稱旁邊，然後在 [**裝置**] 面板中，從**指派的設定檔**下拉式清單中選擇設定檔\>**儲存**。
+2. 選取裝置名稱旁邊的核取方塊，然後在 [**裝置**] 面板中，從 [**已指派的設定檔**] \> **下拉式清單中**選擇設定檔。
     
-    ![In the Device panel, select an Assigned profile to apply it.](media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
+    ![In the Device panel, select an Assigned profile to apply it.](../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
 ## <a name="edit-delete-or-remove-a-profile"></a>編輯、刪除或移除設定檔
 
@@ -62,7 +65,7 @@ ms.locfileid: "37574711"
 
 1. 在 [**準備 Windows** ] 頁面上，選擇 [**設定檔**] 索引標籤。 
     
-2. 按一下裝置名稱旁邊的核取方塊，並在 [**設定檔**] 面板更新任何可用設定\>**儲存**。
+2. 選取裝置名稱旁邊的核取方塊，然後在 [**設定檔**] 面板中，更新任何可用的設定\> **儲存**。
     
     如果您在使用者將裝置連線到網際網路之前這麼做，設定檔則會套用到設定程序。
     
@@ -70,7 +73,7 @@ ms.locfileid: "37574711"
 
 1. 在 [**準備 Windows** ] 頁面上，選擇 [**設定檔**] 索引標籤。 
     
-2. 按一下裝置名稱旁邊的核取方塊，然後在 [**設定檔**] 面板中按一下 [**刪除設定檔** \> **儲存**。
+2. 選取裝置名稱旁邊的核取方塊，然後在 [**設定檔**] 面板中，選取 [**刪除設定檔** \> **儲存**]。
     
     當您刪除設定檔時，會移除單一裝置或一組裝置中的獲派設定檔。
     
@@ -78,5 +81,5 @@ ms.locfileid: "37574711"
 
 1. 在 [**準備 Windows** ] 頁面上，選擇 [**裝置**] 索引標籤。 
     
-2. 按一下核取方塊，裝置名稱旁邊，然後在 [**裝置**] 面板中，從**指派的設定檔**下拉式清單選擇 [**無** \> **儲存**。
+2. 選取裝置名稱旁邊的核取方塊，然後在 [**裝置**] 面板中，從 [**已指派的設定檔**] \> **下拉式清單中**選擇 [**無**]。
     

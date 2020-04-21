@@ -18,18 +18,18 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: 瞭解如何取得 Office 啟用報告，以瞭解哪些使用者已啟用其 Office 訂閱，以及識別可能需要其他説明的使用者。
-ms.openlocfilehash: 7a26928b654c222a2eef05371ff9b220cf59cfe4
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 632973c8d50dffd50725c46163e0af874c64b0c6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046972"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621219"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Admin center 中的 microsoft 365 報告-Microsoft Office 啟用
 
 Microsoft 365**報告**儀表板會向您顯示組織中各產品的活動概況。 此功能可讓您深入了解個別產品層級報表，更加深入解析各產品內的活動。 請參閱[報告概觀主題](activity-reports.md)。
   
-您可從 [Office 啟用] 報告中檢視哪些使用者至少已在一部裝置上啟用其 Office 訂閱。它提供 Office 365 專業增強版、Project 及 Visio Pro for Office 365 訂閱啟用的明細，以及各桌上型電腦和裝置的啟用明細。此報告有助您找出可能需要額外協助的使用者，並支援他們啟用其 Office 訂閱。
+您可從 [Office 啟用] 報告中檢視哪些使用者至少已在一部裝置上啟用其 Office 訂閱。 它可提供 Microsoft 365 應用程式（適用于企業、Project 和 Visio Pro for Office 365 訂閱）的細目分類，以及在桌面和裝置上進行的啟動細分。 此報告有助您找出可能需要額外協助的使用者，並支援他們啟用其 Office 訂閱。
   
 > [!NOTE]
 > 您必須是 Microsoft 365 中的全域系統管理員、全域讀取者或報告讀取器、Exchange、SharePoint、小組服務、小組通訊或商務用 Skype 系統管理員，才能查看報告。  

@@ -1,5 +1,5 @@
 ---
-title: 使用 Namecheap 變更名稱伺服器以設定 Office 365
+title: 使用 Namecheap 變更名稱伺服器以設定 Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84f467f6-28cf-40f0-94d0-a2a27ddfc2e7
-description: '若要讓 Office 365 管理您的 DNS 記錄，請瞭解如何使用 Namecheap 設定 Office 365 自訂網域。 '
-ms.openlocfilehash: 1130f8aca0f2d014d73f5a1b2e2edb2785a7c6b8
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: '若要讓 Microsoft 管理您的 DNS 記錄，請瞭解如何使用 Namecheap 設定您的 Microsoft 自訂網域。 '
+ms.openlocfilehash: 6fdec37e837c74666ada82af81d43faaa0a6d589
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212314"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629776"
 ---
-# <a name="change-nameservers-to-set-up-office-365-with-namecheap"></a>使用 Namecheap 變更名稱伺服器以設定 Office 365
+# <a name="change-nameservers-to-set-up-microsoft-with-namecheap"></a>使用 Namecheap 變更名稱伺服器以設定 Microsoft
 
  若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。
   
-如果您希望讓 Office 365 來管理您的 Office 365 DNS 記錄，請遵循下列指示。 （如果您願意，您可以[在 Namecheap 管理所有的 Office 365 DNS 記錄](create-dns-records-at-namecheap.md)。）
+如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。 （如果您願意，您可以[在 Namecheap 管理所有的 MICROSOFT DNS 記錄](create-dns-records-at-namecheap.md)。）
   
     
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
@@ -69,7 +69,7 @@ ms.locfileid: "43212314"
     
 |**類型**|**主機**|**Value** (值)|**TTL**|
 |:-----|:-----|:-----|:-----|
-|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **請注意**：這是一個範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |30分鐘  <br/> |
+|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **請注意**：這是一個範例。 從表格中，使用您的特定**目的地或指向位址**值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |30分鐘  <br/> |
    
    ![Namecheap-BP-Verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
@@ -79,9 +79,9 @@ ms.locfileid: "43212314"
   
 9. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
-現在您已在網域註冊機構網站新增記錄，請返回 Office 365 並要求 Office 365 尋找該記錄。
+現在，您已在網域註冊機構的網站上新增記錄，您會回到 Microsoft 並要求搜尋該記錄。
   
-在 Office 365 找到正確的 TXT 記錄後，您的網域就完成驗證了。
+當 Microsoft 找到正確的 TXT 記錄後，您的網域就會經過驗證。
   
 1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
 
@@ -103,10 +103,10 @@ ms.locfileid: "43212314"
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>變更您網域的名稱伺服器 (NS) 記錄
 
-如要完成網域設定以用於 Office 365，請在您的網域註冊機構更改網域的 NS 記錄，使它指向 Office 365 主要和次要名稱伺服器。這樣就會設定並讓 Office 365 為您更新網域的 DNS 記錄。我們會新增所有記錄，好讓電子郵件、商務用 Skype Online 和您的公用網站都能使用您的網域，為您做好一切準備。
+若要使用 Microsoft 設定您的網域，請在您的網域註冊機構變更網域的 NS 記錄，以指向 Microsoft 主要和次要名稱伺服器。 這會將 Microsoft 設定為您為您更新網域的 DNS 記錄。 我們會新增所有記錄，好讓電子郵件、商務用 Skype Online 和您的公用網站都能使用您的網域，為您做好一切準備。
   
 > [!CAUTION]
-> 當您變更網域的 NS 記錄以指向 Office 365 名稱伺服器時，所有目前與您網域相關聯的服務都會受到影響。例如，在您完成這項變更之後，凡是傳送到您的網域 (例如 rob@ *your_domain*  .com) 的電子郵件都將開始傳送到 Office 365。 
+> 當您將網域的 NS 記錄變更為指向 Microsoft 名稱伺服器時，所有目前與您網域相關聯的服務都會受到影響。 例如，在您進行此變更之後，所有傳送至您網域的電子郵件（如 rob@ *your_domain* .com）都會開始向 Microsoft。 
   
 > [!IMPORTANT]
 >  When you have completed the steps in this section, the  *only*  nameservers that should be listed are these four: >  ns1.bdm.microsoftonline.com >  ns2.bdm.microsoftonline.com >  ns3.bdm.microsoftonline.com >  ns4.bdm.microsoftonline.com >  The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the  *correct*  nameservers if they are not already in the list. 
@@ -156,7 +156,7 @@ ms.locfileid: "43212314"
     ![Namecheap-BP-重新委派-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
 > [!NOTE]
-> 您的名稱伺服器記錄更新可能需要數小時的時間，才能更新到整個網際網路的 DNS 系統。接著，您的 Office 365 電子郵件和其他服務就能搭配您的網域順利運作。 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. 然後，您的 Microsoft 電子郵件和其他服務將全部設定為與您的網域搭配使用。 
   
 ### <a name="if-there-are-nameservers-already-listed"></a>如果列表上「有」名稱伺服器
 
@@ -188,4 +188,4 @@ ms.locfileid: "43212314"
     ![Namecheap-BP-重新委派-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
 > [!NOTE]
-> 您的名稱伺服器記錄更新可能需要數小時的時間，才能更新到整個網際網路的 DNS 系統。接著，您的 Office 365 電子郵件和其他服務就能搭配您的網域順利運作。
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. 然後，您的 Microsoft 電子郵件和其他服務將全部設定為與您的網域搭配使用。

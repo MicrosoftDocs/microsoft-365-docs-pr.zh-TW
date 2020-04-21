@@ -1,5 +1,5 @@
 ---
-title: 在 Amazon Web Services (AWS) 針對 Office 365 建立 DNS 記錄
+title: 在 Microsoft 的 Amazon Web 服務（AWS）上建立 DNS 記錄
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,31 +19,31 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
-description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以用於 Office 365 的 Amazon Web 服務（AWS）。
-ms.openlocfilehash: f71e6fa5ce69d789cc7695d30e6447ae281a0e3f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以用於 Microsoft 的 Amazon Web 服務（AWS）。
+ms.openlocfilehash: 086a5d7210d2c722aeda701dc62a699ca0eaec87
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211844"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629728"
 ---
-# <a name="create-dns-records-at-amazon-web-services-aws-for-office-365"></a>在 Amazon Web Services (AWS) 針對 Office 365 建立 DNS 記錄
+# <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>在 Microsoft 的 Amazon Web 服務（AWS）上建立 DNS 記錄
 
  若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 AWS 是您的 DNS 主機服務提供者，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、商務用 Skype Online 等的 DNS 記錄。
   
-在 AWS 新增這些記錄之後，您的網域就會設定為搭配 Office 365 服務使用。
+在 AWS 新增這些記錄之後，您的網域就會設定為與 Microsoft 服務搭配使用。
   
-若要了解使用 Office 365 網站的虛擬主機和 DNS，請參閱[搭配 Office 365 使用公用網站](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)。
+若要深入瞭解具有 Microsfot 之網站的主控和 DNS，請參閱搭配[Microsoft 使用公用網站](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)。
   
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正在 Office 365 中新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 如果您在新增 DNS 記錄後遇到郵件流程或其他問題的問題，請參閱[尋找並修正新增您的網域或 DNS 記錄後的問題](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 <a name="BKMK_verify"> </a>
 
-在您將自己的網域用於 Office 365 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Office 365 就能確信您擁有該網域。
+在將您的網域與 Microsoft 搭配使用之前，我們必須先確認您擁有該網域。 您能夠在您的網域註冊機構登入您的帳戶，並為您擁有網域的 Microsoft 建立 DNS 記錄證明。
   
 > [!NOTE]
 > 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
@@ -66,17 +66,17 @@ ms.locfileid: "43211844"
     |||||||
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |**名稱** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**值** <br/> |**Routing Policy** <br/> |
-    |(Leave this field empty.)  <br/> |TXT - Text  <br/> |否  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |簡易  <br/> |
+    |(Leave this field empty.)  <br/> |TXT - Text  <br/> |否  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**附註：** 這是範例。 從 Microsoft 365 的表格中，使用您的特定**目的地或指向位址**值。 [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |簡易  <br/> |
    
 6. 選取 [建立]****。
     
 7. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
-現在您已在網域註冊機構網站新增記錄，請返回 Office 365 並要求 Office 365 尋找該記錄。
+現在，您已在網域註冊機構的網站上新增記錄，您會回到 Microsoft 並要求搜尋該記錄。
   
-在 Office 365 找到正確的 TXT 記錄後，您的網域就完成驗證了。
+當 Microsoft 找到正確的 TXT 記錄後，您的網域就會經過驗證。
   
-1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
+1. 在 Microsoft 系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
 
     
 2. 在 **[網域]** 頁面上，選取您要驗證的網域。 
@@ -86,9 +86,9 @@ ms.locfileid: "43211844"
 4. 在 [驗證網域]**** 頁面上，選取 [驗證]****。
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正在 Office 365 中新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 如果您在新增 DNS 記錄後遇到郵件流程或其他問題的問題，請參閱[尋找並修正新增您的網域或 DNS 記錄後的問題](../get-help-with-domains/find-and-fix-issues.md)。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>新增 MX 記錄，以將寄往您網域的電子郵件轉至 Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft-365"></a>新增 MX 記錄，使您網域的電子郵件將會傳送至 Microsoft 365
 <a name="BKMK_add_MX"> </a>
 
 1. 首先請用[這個連結](https://console.aws.amazon.com/route53/home)移至 AWS 上您的網域頁面。 系統會提示您先登入。
@@ -105,7 +105,7 @@ ms.locfileid: "43211844"
     
     |**名稱**|**Type**|**Alias**|**TTL (Seconds)**|**值**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |(將此欄位保留空白。)  <br/> |MX - 郵件交換  <br/> |否  <br/> |300  <br/> |0  *\<網域金鑰\>*  .mail.protection.outlook.com.  <br/> 0 是指 MX 優先順序值。將它新增到 MX 值的開頭，以空格分隔該值的其餘部分。  <br/> **This value MUST end with a period (.)** <br/> **注意：** 從您的 Office 365 帳戶取得您的\<*網域金鑰*\>。 [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |簡易  <br/> |
+    |(將此欄位保留空白。)  <br/> |MX - 郵件交換  <br/> |否  <br/> |300  <br/> |0  *\<網域金鑰\>*  .mail.protection.outlook.com.  <br/> 0 是指 MX 優先順序值。將它新增到 MX 值的開頭，以空格分隔該值的其餘部分。  <br/> **This value MUST end with a period (.)** <br/> **附注：** 從 Microsoft \<365 帳戶取得您的*網域金鑰*\> 。 [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |簡易  <br/> |
        
     ![AWS-BP-Configure-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
@@ -130,7 +130,7 @@ ms.locfileid: "43211844"
     
     ![AWS-BP-設定-2-5](../../media/86f0998d-f5d4-4750-a93d-ac13b318c40b.png)
   
-## <a name="add-the-five-cname-records-that-are-required-for-office-365"></a>新增 Office 365 所需的五個 CNAME 記錄
+## <a name="add-the-five-cname-records-that-are-required-for-microsoft-365"></a>新增 Microsoft 365 所需的五個 CNAME 記錄
 <a name="BKMK_add_CNAME"> </a>
 
 1. 首先請用[這個連結](https://console.aws.amazon.com/route53/home)移至 AWS 上您的網域頁面。 系統會提示您先登入。
@@ -151,9 +151,9 @@ ms.locfileid: "43211844"
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |autodiscover.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> |簡單  <br/> |
     |sip  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |簡單  <br/> |
-    |lyncdiscover  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |webdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |簡單  <br/> |
-    |enterpriseregistration  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |enterpriseregistration.windows.net。  <br/> **This value MUST end with a period (.)** <br/> |簡易  <br/> |
-    |enterpriseenrollment  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **This value MUST end with a period (.)** <br/> |簡單  <br/> |
+    |lyncdiscover  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |webdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |簡易  <br/> |
+    |enterpriseregistration  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |enterpriseregistration.windows.net。  <br/> **This value MUST end with a period (.)** <br/> |簡單  <br/> |
+    |enterpriseenrollment  <br/> |CNAME - 正式名稱  <br/> |否  <br/> |300  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **This value MUST end with a period (.)** <br/> |簡單  <br/> |
    
     ![AWS-BP-Configure-3-1](../../media/895c71bd-0e3a-425e-9681-98c1c67e714b.png)
   
@@ -171,7 +171,7 @@ ms.locfileid: "43211844"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Office 365 建立一個新的記錄。 而是，請將必要的 Office 365 值新增到目前的記錄，以便擁有包含這兩組值的*單一* SPF 記錄。 需要範例？ 請參閱這些 [Office 365 的外部網域名稱系統記錄](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.md)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果您已有網域的 SPF 記錄，請不要為 Microsoft 建立新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 需要範例？ 請參閱[Microsoft 的這些外部網域名稱系統記錄](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.md)。 
   
 1. 首先請用[這個連結](https://console.aws.amazon.com/route53/home)移至 AWS 上您的網域頁面。 系統會提示您先登入。
     
@@ -195,7 +195,7 @@ ms.locfileid: "43211844"
     
     ![AWS-BP-設定-4-3](../../media/94b9306c-bdc9-4f84-ad6f-6d12edbfde90.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>新增兩筆 Office 365 所需的 SRV 記錄
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft-365"></a>新增 Microsoft 365 所需的兩筆 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
 
 1. 首先請用[這個連結](https://console.aws.amazon.com/route53/home)移至 AWS 上您的網域頁面。 系統會提示您先登入。
@@ -228,5 +228,5 @@ ms.locfileid: "43211844"
     在 [**主控區域**] 頁面中，選取 [**建立記錄集**]，使用表格中下一列的值建立記錄，然後再選取 [**建立**] 以完成記錄。 
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正在 Office 365 中新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 如果您在新增 DNS 記錄後遇到郵件流程或其他問題的問題，請參閱[尋找並修正新增您的網域或 DNS 記錄後的問題](../get-help-with-domains/find-and-fix-issues.md)。 
   

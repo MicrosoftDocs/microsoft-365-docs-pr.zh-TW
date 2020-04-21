@@ -1,5 +1,5 @@
 ---
-title: Admin center 中的 Office 365 報告-Yammer 活動報告
+title: Admin center 中的 Microsoft 365 報告-Yammer 活動報告
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: 取得 Yammer 活動報告，並深入瞭解使用 Yammer 發佈、贊或讀取郵件的使用者人數。
-ms.openlocfilehash: de62ef0ceed54da76ead64274923ac646240ce44
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: bd128e17b8d435b8d5c6b06f16ff37fea11a6ce3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047020"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618953"
 ---
-# <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>Admin center 中的 Office 365 報告-Yammer 活動報告
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Admin center 中的 Microsoft 365 報告-Yammer 活動報告
 
 如 Microsoft 365 admin，「**報告**」儀表板會顯示您組織內產品使用狀況的資料。 請參閱系統[管理中心的活動報告](activity-reports.md)。 透過**Yammer 活動報告**，您可以查看使用 yammer 發佈的獨特使用者人數，例如或讀取郵件，以及整個組織產生的活動數量，以瞭解您的組織對 yammer 的參與程度。 
   
@@ -80,9 +80,9 @@ ms.locfileid: "43047020"
   
     您也可以新增和移除欄位。 可用的欄位如下︰
     
-  - [使用者**名稱**] 是使用者的電子郵件地址。 您可以顯示實際的電子郵件地址，也可以讓此欄位匿名。 
+  - [使用者**名稱**] 是使用者的電子郵件地址。 您可以顯示實際的名稱，也可以讓此欄位匿名。 
     
-    此格線會顯示使用 Office 365 帳戶登入 Yammer 的使用者，或使用單一登入功能登入網路的使用者。
+    這個格線會顯示使用 Microsoft 365 帳戶登入 Yammer 的使用者，或使用單一登入登入網路的使用者。
     
   - [**顯示名稱**] 是使用者的完整名稱。 您可以顯示實際的名稱，也可以讓此欄位匿名。 
     
@@ -112,6 +112,6 @@ ms.locfileid: "43047020"
     
 - **無外部網路資料**這些報告中不包含外部網路資料。 
     
-- **啟用的網路**這些報告會顯示 Yammer 網路的資料，該網路屬於 Office 365 訂閱。 圖表會彙總所有登入 Yammer 網路的使用者使用情況，不論他們使用 Office 365 還是 Yammer 登入。 
+- **啟用的網路**這些報告會顯示屬於 Microsoft 365 訂閱之 Yammer 網路的資料。 圖表會匯總登入 Yammer 網路之所有使用者的使用狀況，不論他們使用的是 Microsoft 365 或 Yammer 登入。 
     
 

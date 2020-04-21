@@ -1,5 +1,5 @@
 ---
-title: 兩個 Office 365 帳戶之間手動傳送資料
+title: 在兩個帳戶間手動傳輸資料
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,91 +17,91 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
-description: 尋找如何在兩個 Office 365 帳戶時變更計劃] 或 [公司名稱，或結合成一個多個訂閱之間手動傳送資料。
-ms.openlocfilehash: 91f9d7b17a0296931393a89ff95d70628400c61a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 尋找當您變更計畫或公司名稱時，如何在兩部 Microsoft 365 帳戶之間手動傳輸資料，或將多個訂閱組合為一個。
+ms.openlocfilehash: c0cb6531518c18e8cdc5b5829dc05a5b9b375291
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362148"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628372"
 ---
-# <a name="transfer-data-manually-between-two-office-365-accounts"></a>兩個 Office 365 帳戶之間手動傳送資料
+# <a name="transfer-data-manually-between-two-accounts"></a>在兩個帳戶間手動傳輸資料
 
-準備袖子及封鎖時間行事曆中的一串： 兩個 Office 365 帳戶之間傳輸資料是手動、 複雜，且耗時的程序。 這不是自動化或支援處理程序。 我們將協助您開始。
+準備逐步 sleeves，並在行事曆中封鎖時間區塊：在兩個 Microsoft 365 帳戶之間傳輸資料是手動、複雜且耗時的處理常式。 這不是自動化或支援的處理常式。 我們將開始著手。
   
 > [!CAUTION]
-> 將會有停機時間期間，將不會在電子郵件、 商務用 Skype 和裝載於 Office 365 公用網站的程序。 使用者會收到新的使用者名稱和密碼，以及他們將需要設定 Outlook 重設。
+> 在處理電子郵件、商務用 Skype 和主控于 Microsoft 365 的公用網站時，會發生停機時間。 使用者將會收到新的使用者名稱和密碼，並將需要重設 Outlook。
 
-**僅限傳輸資料以手動方式使用下列其中一項適用於本主題中的指示：**
+**若有下列其中一項適用，請僅使用本主題中的指示手動傳送資料：**
   
-- 您要變更為不同的服務系列中的計劃。
+- 您必須變更為不同服務系列中的計畫。
 
-- 您的公司名稱變更，而您決定建立新的訂閱，然後移轉您的資料，因為您想要使用不同的初始網域名稱。
+- 您的公司名稱已變更，您決定建立新的訂閱並遷移您的資料，因為您想要使用不同的初始功能變數名稱。
 
-- 您必須合併到一個新的多個訂閱。
+- 您需要將多個訂閱合併成一個新的訂閱。
 
 > [!IMPORTANT]
-> 如果您需要[變更您訂閱計劃](../../commerce/subscriptions/switch-to-a-different-plan.md)，並可以使用切換方案精靈，或如果您需要移轉至新訂閱計劃在相同的訂閱系列，即使切換方案精靈無法運作，您不需要以手動方式傳送您的資料，且沒有任何停機時間。
+> 如果您需要[變更您的訂閱計畫](../../commerce/subscriptions/switch-to-a-different-plan.md)，而且可以使用 [切換方案] 嚮導; 或者，如果您需要在相同訂閱系列中轉移至新的訂閱計畫，即使 [切換方案] 嚮導無法運作，您不需要手動傳輸資料，也沒有停機時間。
 
 |**Tasks**|**Steps**|
 |:-----|:-----|
-|購買您想要將移至的計劃。  <br/> |當您註冊時，您會指定要使用的初始網域名稱中的公司名稱： *yourcompany* 。 onmicrosoft.com、 *yourcompany* -public.sharepoint.com 和*yourcompany* 。 sharepoint.com。 您需要使用不同的*yourcompany*名稱比您沒有任何現有的訂閱。  <br/> > [!NOTE]它通常採用之後取消訂閱發行的初始網域名稱，使用*yourcompany*從我們系統的幾個月內至少要有 # C0。 即使您計劃以儲存您的所有資料從您舊的 Office 365 訂閱，並取消該訂閱，舊的*yourcompany*值不是立即適用於新訂閱。           |
-|從舊的 Office 365 訂閱中移除您的自訂網域。  <br/> | 請依照下列[所需的步驟，然後再移除網域](remove-a-domain.md)來移除使用者電子郵件地址的網域名稱，並移除電子郵件的 DNS 記錄和 Lync for 自訂的網域。 如果您裝載於 Office 365 公用網站，您也需要移除指向它的 CNAME 記錄。  <br/> > [!IMPORTANT]> 之後移除路由電子郵件到這個自訂的網域、 電子郵件，將會停止工作，直到您新增網域至您的新帳戶，MX 記錄設定新的 MX 記錄，並設定您的使用者。 當您移除的 DNS 記錄 lync 時，Lync 會停止運作。 與您移除的 CNAME 記錄，指向您的公用網站之後，它將無法使用。           [移除網域](remove-a-domain.md)。  <br/> |
-|設定自訂網域用於新訂閱，並設定您的使用者。  <br/> | 設定新訂閱，包括建立必要的 DNS 記錄的自訂網域。  <br/>  建立您的使用者，您的自訂網域的電子郵件地址。  <br/> |
-|將資料從您的舊訂閱傳輸至新訂閱。  <br/> | 登入這兩個不同的瀏覽器視窗中的帳戶：  <br/>  以滑鼠右鍵按一下 [Internet Explorer] 圖示，並開啟兩個 InPrivate 瀏覽器視窗。 您可以使用兩個視窗中的不同的認證來登入這兩個帳戶。  <br/> [訂閱之間傳送的系統管理設定](#email) <br/> [小組網站結構與資料傳輸](#transfer-team-site-structure-and-data) <br/> [訂閱之間傳送的公用網站](#transfer-a-public-website-between-subscriptions) <br/> [訂閱之間傳送的系統管理設定](#email) <br/> |
-|您必須取消訂閱大功告成與藉由呼叫 Microsoft 支援服務運作的 Office 365 計劃。  <br/> | 確認您的新訂閱正常運作，且已傳送的所有資料。  <br/>  取消舊訂閱請[連絡客戶支援](../contact-support-for-business-products.md)。  <br/> |
+|購買您想要移至的計畫。  <br/> |當您註冊時，您可以指定要在初始功能變數名稱中使用的公司名稱： *yourcompany* onmicrosoft.com、 *yourcompany* -public.sharepoint.com 及*yourcompany* 。 您需要使用與任何現有訂閱相同的*yourcompany*名稱。  <br/> > [!NOTE]> 取消訂閱以發行從我們系統中使用*yourcompany*的初始功能變數名稱後，一般至少需要數個月。 即使您計畫將所有資料儲存在舊的 Microsoft 365 訂閱中，並取消該訂閱，舊的*yourcompany*值不會立即可用於新的訂閱。           |
+|從舊的 Microsoft 365 訂閱中移除您的自訂網域。  <br/> | 在[您移除網域](remove-a-domain.md)以從使用者電子郵件地址中移除功能變數名稱和移除自訂網域的電子郵件和 LYNC 的 DNS 記錄之前，請遵循必要的步驟。 如果您在 Microsoft 365 上主控公用網站，您也需要移除指向該網站的 CNAME 記錄。  <br/> > [!IMPORTANT]> 在您移除將電子郵件路由傳送至此自訂網域的 MX 記錄後，電子郵件將停止運作，直到您將網域新增至您的新帳戶、設定新的 MX 記錄，並設定您的使用者。 當您移除 Lync 的 DNS 記錄時，Lync 將停止運作。 移除指向您公用網站的 CNAME 記錄之後，將無法使用此記錄。           [移除網域](remove-a-domain.md)。  <br/> |
+|為您的新訂閱設定您的自訂網域，並設定您的使用者。  <br/> | 設定您的新訂閱，包括為您的自訂網域建立所需的 DNS 記錄。  <br/>  建立您的使用者，並在自訂網域上使用電子郵件地址。  <br/> |
+|將舊訂閱中的資料傳送至新的訂閱。  <br/> | 在不同的瀏覽器視窗中登入這兩個帳戶：  <br/>  以滑鼠右鍵按一下 [Internet Explorer] 圖示，然後開啟兩個 InPrivate 瀏覽器視窗。 您可以在兩個 windows 中使用不同的認證來登入這兩個帳戶。  <br/> [在訂閱間傳輸系統管理設定](#email) <br/> [傳輸小組網站結構和資料](#transfer-team-site-structure-and-data) <br/> [在訂閱間傳輸公用網站](#transfer-a-public-website-between-subscriptions) <br/> [在訂閱間傳輸系統管理設定](#email) <br/> |
+|呼叫 Microsoft Support for Microsoft 365，以取消所做計畫的訂閱。  <br/> | 請確認您的新訂閱是否正常運作，且所有資料都已傳輸。  <br/>  [請與客戶支援部門聯繫](../contact-support-for-business-products.md)以取消舊的訂閱。  <br/> |
 
-## <a name="transfer-administrative-settings-between-subscriptions"></a>訂閱之間傳送的系統管理設定
+## <a name="transfer-administrative-settings-between-subscriptions"></a>在訂閱間傳輸系統管理設定
 
-移至下列頁面上每個帳戶，and set up 舊的帳戶設定為基礎的新帳戶。
+移至每個帳戶的下列頁面，並根據舊帳戶的設定，設定新帳戶。
   
-如果您傳送的資料從 Office 365 Office 365 中型企業版或 Office 365 企業版，會以不同方式結構化的系統管理頁面。 監看[影片： 介紹 Office 365 企業版](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx)，並移至下列位置，查看 [系統設定。
+如果您要將資料從 Microsoft 365 轉接至 Microsoft 365 中型企業或 Microsoft 365 企業版，系統管理員頁面會以不同的方式結構化。 觀賞[影片：介紹 Microsoft 365 Enterprise](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx)，然後移至下列位置，以查看系統管理設定。
   
-Office 365 企業版和 Office 365 中型企業版：
-  
-|**位置**|**用途**|
-|:-----|:-----|
-|**系統管理員** \> **Office 365** \> **服務設定** <br/> |選取郵件、 網站、 Lync、 使用者軟體、 密碼、 社群、 版權管理和行動裝置設定每個索引標籤。  <br/> |
-|**系統管理員** \> **Exchange** <br/> | Exchange Online 設定  <br/> |
-|**系統管理員** \> **SharePoint** <br/> | SharePoint Online 設定  <br/> |
-|**系統管理員** \> **商務用 Skype** <br/> |業務設定其他商務用 Skype  <br/> |
-
-適用於 Office 365 小型企業
+Microsoft 365 企業版和 Microsoft 365 中型企業版：
   
 |**位置**|**用途**|
 |:-----|:-----|
-|**系統管理員** \> **管理整個組織的設定** <br/> |系統管理設定  <br/> |
+|**Admin** \> **Microsoft 365** \> **服務設定** <br/> |選取每個索引標籤，以查看郵件、網站、Lync、使用者軟體、密碼、群組、版權管理及行動裝置的設定。  <br/> |
+|系統**管理員** \> **Exchange** <br/> | Exchange Online 設定  <br/> |
+|系統**管理員** \> **SharePoint** <br/> | SharePoint 線上設定  <br/> |
+|**管理** \> **商務用 Skype** <br/> |其他商務用 Skype 設定  <br/> |
 
-## <a name="transfer-a-public-website-between-subscriptions"></a>訂閱之間傳送的公用網站
+適用于 Microsoft 365 Small Business
+  
+|**位置**|**用途**|
+|:-----|:-----|
+|系統**管理員** \> **管理整個組織的設定** <br/> |管理設定  <br/> |
 
-如果您有裝載於 Office 365 公用網站，您需要將它儲存及重新建立新的訂閱。
+## <a name="transfer-a-public-website-between-subscriptions"></a>在訂閱間傳輸公用網站
+
+如果您的公用網站主控于 Microsoft 365，您必須加以儲存，並在新的訂閱上重新建立。
   
 > [!NOTE]
-> 如果您的公用網站架設在 DNS 主機服務提供者，不不需要任何變更。 它將不會受到轉換。
+> 如果您的公用網站主控于 DNS 主機服務提供者，則不需要進行任何變更。 您的轉換不會影響此方式。
   
-若要從 SharePoint Online 環境儲存文件庫或清單內容的檔案共用或本機電腦，請參閱[手動移轉的 SharePoint Online 的內容](https://go.microsoft.com/fwlink/p/?LinkId=402910)。
+若要將文件庫或清單內容從 SharePoint 線上環境儲存至檔案共用或本機電腦，請參閱[手動遷移 SharePoint 線上內容](https://go.microsoft.com/fwlink/p/?LinkId=402910)。
   
 > [!NOTE]
-> 公用網站移轉應用程式不能將資料傳送至不同的訂閱。
+> 公用網站遷移應用程式無法將資料傳輸至不同的訂閱。
   
-## <a name="transfer-team-site-structure-and-data"></a>小組網站結構與資料傳輸
+## <a name="transfer-team-site-structure-and-data"></a>傳輸小組網站結構和資料
 
-有幾種方式可以儲存資料或傳輸小組網站：
+有幾種方式可以儲存或轉接小組網站資料：
   
-- 您可以儲存舊網站為範本，並將此範本匯入新的網站。
+- 您可以將舊網站儲存為範本，然後將範本匯入新的網站。
 
-- 若要傳輸文件，先手動重新建立您階層，新的網站。 然後您可以同時開啟這兩個 SharePoint 小組網站、 使用 Windows 檔案總管] 中，開啟這兩個文件庫和複製並貼文件。 請參閱[影片： 複製或移動文件庫檔案使用檔案總管中開啟](https://support.office.com/article/c27bc6f3-7b38-4c29-b947-5d00c7153384.aspx)。
+- 若要傳輸檔，請先在新網站上手動重新建立階層。 然後，您可以同時開啟這兩個 SharePoint 小組網站、使用 Windows Explorer 開啟文件庫，以及複製及貼上檔。 請參閱[影片：使用 [以瀏覽器開啟] 複製或移動文件庫](https://support.office.com/article/c27bc6f3-7b38-4c29-b947-5d00c7153384.aspx)檔案。
 
-- 若要傳輸清單資料，將[清單範本](https://support.office.com/article/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393.aspx)，儲存並使用儲存的範本重新建立新的網站上的清單。
+- 若要傳輸清單資料、儲存[清單範本](https://support.office.com/article/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393.aspx)，然後使用儲存的範本在新網站上重新建立清單。
 
-- 若要儲存文件庫或清單內容從 SharePoint Online 環境 (商務用 OneDrive 或小組網站)，檔案共用或本機電腦，請參閱[手動移轉的 SharePoint Online 內容的相關資訊](https://support.microsoft.com/kb/2783484)。
+- 若要將文件庫或清單內容從 SharePoint 線上環境（商務用 OneDrive 或小組網站）儲存至檔案共用或本機電腦，請參閱[手動遷移 SharePoint 線上內容的相關資訊](https://support.microsoft.com/kb/2783484)。
 
-## <a name="transfer-users-data-between-subscriptions"></a>訂閱之間傳送使用者的資料
+## <a name="transfer-users-data-between-subscriptions"></a>在訂閱間傳輸使用者資料
 
 ### <a name="email"></a>電子郵件：
 
-設定新訂閱之後，請要求使用者將[移動他們的電子郵件、 連絡人、 工作和行事曆資訊](https://support.office.com/article/0996ece3-57c6-49bc-977b-0d1892e2aacc.aspx)。 他們可以使用其初始的使用者名稱，例如 sue@contoso.onmicrosoft.com 取得其舊的電子郵件。
+在您設定新訂閱後，請使用者[移動電子郵件、連絡人、工作及行事曆資訊](https://support.office.com/article/0996ece3-57c6-49bc-977b-0d1892e2aacc.aspx)。 他們可以使用初始的使用者名稱（例如 sue@contoso.onmicrosoft.com）來取得舊的電子郵件。
   
-### <a name="onedrive-for-business-data"></a>商務用 OneDrive 的資料：
+### <a name="onedrive-for-business-data"></a>商務資料的 OneDrive：
 
-要求使用者在複製/同步處理[商務用 OneDrive 內容至其電腦](https://support.office.com/article/59b1de2b-519e-4d3a-8f45-51647cf291cd.aspx)，並再將其新增至其新的訂閱。
+要求使用者將[商務內容的 OneDrive](https://support.office.com/article/59b1de2b-519e-4d3a-8f45-51647cf291cd.aspx)複製/同步處理至其電腦，然後將其新增回其新訂閱。

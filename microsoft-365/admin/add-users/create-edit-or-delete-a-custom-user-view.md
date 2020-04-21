@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中建立、編輯或刪除自訂使用者視圖
+title: 建立、編輯或刪除自訂使用者檢視
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
-description: 瞭解如何在 Office 365 中使用篩選來建立、編輯或刪除自訂使用者視圖。
-ms.openlocfilehash: ae12675afd47434ac6dd12dae683c79aae64be1f
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+description: 瞭解如何使用篩選器，在 Microsoft 365 中建立、編輯或刪除自訂使用者視圖。
+ms.openlocfilehash: 94a9ad7de8bc8e0692d97fda56200cf668b1e5f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047056"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617257"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>在 Office 365 中建立、編輯或刪除自訂使用者視圖
 
@@ -63,7 +63,7 @@ ms.locfileid: "43047056"
 有關標準視圖的注意事項幾點： 
 
 - 如果清單中的使用者超過2000，部分標準視圖會顯示未排序的清單。 若要在清單中尋找特定的使用者，請使用搜尋方塊。 
-- 如果您未從 Microsoft 購買 Office 365，**計費系統管理員**不會出現在 [標準視圖] 清單中。 For more information, see [Assigning admin roles](assign-admin-roles.md). 
+- 如果您未從 Microsoft 購買 Microsoft 365，**計費系統管理員**不會出現在 [標準視圖] 清單中。 For more information, see [Assigning admin roles](assign-admin-roles.md). 
   
 ## <a name="choose-the-filters-for-your-custom-user-view"></a>選擇自訂使用者視圖的篩選
 
@@ -88,12 +88,12 @@ ms.locfileid: "43047056"
     
 - **未經許可的使用者**選取此方塊，以尋找未獲指派授權的所有使用者。 此視圖的結果也可以包含具有 Exchange 信箱，但沒有授權的使用者。 若要特別追蹤這些使用者，請使用篩選**未經授權的使用者與 Exchange 信箱或檔案**。 此視圖的結果也可以包含有 Exchange 封存，但沒有授權的使用者。
     
-- **具有 Exchange 信箱或封存的未授權使用者**選取此方塊以顯示在 Exchange Online 中建立且具有 Exchange 信箱，但未獲指派 Office 365 授權的使用者帳戶。 此篩選的結果包括已被指派 Exchange 封存的使用者。 
+- **具有 Exchange 信箱或封存的未授權使用者**選取此方塊以顯示 Exchange Online 中所建立的使用者帳戶，並有 Exchange 信箱，但未獲指派 Microsoft 365 授權。 此篩選的結果包括已被指派 Exchange 封存的使用者。 
 
 > [!NOTE]
 > **具有 Exchange 信箱的未經許可使用者**可在下列情況中運作：
 1. 信箱最近從**共用**轉換為**使用者**，而且沒有授權。
-2. 信箱最近已遷移至 Office 365，但尚未指派授權。
+2. 信箱最近已遷移至 Microsoft 365，但是尚未指派授權。
 3. 信箱已使用 PowerShell 建立，尚未指派授權。
 4. 會為使用者布建已使用 New-RemoteMailbox Cmdlet 建立內部部署的新信箱。
     

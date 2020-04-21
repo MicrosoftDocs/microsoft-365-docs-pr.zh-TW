@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 8b5cb7d8d8b16fea1c1bef44e477dfd43a79a3d8
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: a91488b9bfa126b1419af7697c0ae8510ddbc149
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081316"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625263"
 ---
 # <a name="common-identity-and-device-access-policies"></a>一般身分識別與裝置存取原則
 本文說明保護雲端服務存取權的常見建議原則，包括使用 Azure AD 應用程式 Proxy 發佈的內部部署應用程式。 
@@ -67,9 +67,9 @@ ms.locfileid: "43081316"
 
 在插圖中，「主要機密專案 X 小組」已被指派一個條件式存取原則，需要*一定*要進行 MFA。 對使用者套用較高級別的保護時請務必合理。 在每次登入時，此專案小組的成員必須提供兩種形式的驗證，即使他們不會查看高管制內容也是一樣。  
 
-在這些建議中建立的所有 Azure AD 群組都必須建立為 Office 365 群組。 在 SharePoint Online 中保護文件時，這對於部署 Azure 資訊保護 (AIP) 特別重要。
+在這些建議中建立的所有 Azure AD 群組都必須建立為 Microsoft 365 群組。 在 SharePoint Online 中保護文件時，這對於部署 Azure 資訊保護 (AIP) 特別重要。
 
-![用於建立 Office 365 群組的螢幕截圖](../media/identity-device-AAD-groups.png)
+![用於建立 Microsoft 365 群組的螢幕截圖](../media/identity-device-AAD-groups.png)
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>需要根據登入風險進行 MFA
@@ -95,7 +95,7 @@ ms.locfileid: "43081316"
 |:---|:---------|:-----|:----|
 |使用者和群組|Include|選取使用者和群組 - 選取包含目標使用者的特定安全性群組|從包含試驗使用者的安全性群組開始|
 ||排除|例外狀況安全性群組；服務帳戶 (應用程式身分識別)|在需要的暫存基礎上修改成員資格|
-|雲端應用程式|Include|選取您要套用此規則的應用程式。 例如，選取 Office 365 Exchange Online||
+|雲端應用程式|Include|選取您要套用此規則的應用程式。 例如，選取 [Exchange Online]||
 |條件|已設定|是|進行您環境和需求的特定設定|
 |登入風險|風險層級||請參閱下表中的指南。|
 
@@ -142,7 +142,7 @@ ms.locfileid: "43081316"
 |:---|:---------|:-----|:----|
 |使用者和群組|Include|選取使用者和群組 - 選取包含目標使用者的特定安全性群組|從包含試驗使用者的安全性群組開始|
 ||排除|例外狀況安全性群組；服務帳戶 (應用程式身分識別)|視需要暫時修改成員資格|
-|雲端應用程式|Include|選取您要套用此規則的應用程式。 例如，選取 Office 365 Exchange Online||
+|雲端應用程式|Include|選取您要套用此規則的應用程式。 例如，選取 [Exchange Online]||
 |條件|已設定|是|設定用戶端應用程式|
 |用戶端應用程式|已設定|是|行動裝置應用程式和桌面用戶端，其他用戶端（同時選取兩者）|
 
@@ -215,7 +215,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 強制執行應用程式保護原則需要[使用應用程式保護原則，以具備條件式存取權存取雲端應用](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)程式的原則。 這些原則都包含在此建議的身分識別和存取設定原則組中。
 
-若要建立需要核准的應用程式和應用程式保護的條件式存取規則，請在 [步驟1：設定 Office 365 的 Azure AD 條件式存取原則] 中，遵循[應用程式保護原則 365](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)中的「步驟1：設定 Azure AD 條件存取原則」，以允許 Outlook IOS 和 Android，但封鎖 OAuth 功能的 exchange ActiveSync 用戶端無法連線至 Exchange Online。
+若要建立需要經核准的應用程式和應用程式保護的條件式存取規則365，請在[案例1： microsoft 365 應用程式需要已核准的應用程式搭配應用程式保護原則](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)，以允許 Outlook IOS 和 Android，但封鎖 OAuth 功能的 Exchange ActiveSync 用戶端無法連線至 Exchange Online。
 
    > [!NOTE]
    > 這種原則可確保行動使用者可以使用適用的應用程式來存取所有 Office 端點。
@@ -229,7 +229,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 <!---
 With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several conditional access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Office 365" in [Scenario 1: Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
+1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 1: Microsoft 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
 
    > [!NOTE]
    > This policy ensures mobile users can access all Office endpoints using the applicable apps.
@@ -322,7 +322,7 @@ Windows 10 建議使用下列設定。
 
 6. 選擇 [雲端應用程式]。
 
-7. 選擇 [**選取應用程式**]，從 [**雲端應用程式**] 清單中選取所需的應用程式。 例如，選取 [Office 365 Exchange Online]。 選擇 [**選取**並**完成**]。
+7. 選擇 [**選取應用程式**]，從 [**雲端應用程式**] 清單中選取所需的應用程式。 例如，選取 [Exchange Online]。 選擇 [**選取**並**完成**]。
 
 8. 若要要求相容的電腦，但不相容的電話和平板電腦，請選擇 [**條件**] 和 [**裝置平臺**]。 選擇 [**選取裝置平臺**]，然後選取 [ **Windows**和**macOS**]。
 
@@ -350,7 +350,7 @@ Windows 10 建議使用下列設定。
 
 6. 選擇 [雲端應用程式]。
 
-7. 選擇 [**選取應用程式**]，從 [**雲端應用程式**] 清單中選取所需的應用程式。 例如，選取 [Office 365 Exchange Online]。 選擇 [**選取**並**完成**]。
+7. 選擇 [**選取應用程式**]，從 [**雲端應用程式**] 清單中選取所需的應用程式。 例如，選取 [Exchange Online]。 選擇 [**選取**並**完成**]。
 
 8. 選擇 [存取控制] 區段中的 [授與]。
 

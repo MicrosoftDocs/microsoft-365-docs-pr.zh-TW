@@ -17,16 +17,16 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在安全性 & 規範中心中取得。
-ms.openlocfilehash: d99186e4f3a2831eb794d31a33fa4d56af2cc7a4
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: b65dd6479262b97f08e34420d9a88ee2a327a73b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529070"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631082"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
-[安全性 & 合規性中心](https://protection.office.com)提供各種報告，可協助您查看 Office 365 中的電子郵件安全性功能（例如，反垃圾郵件、反惡意程式碼和加密功能）是如何保護您的組織。 如果您有[必要的許可權](#what-permissions-are-needed-to-view-these-reports)，您可以移至 [**報表** \> ]**儀表板**，在安全性 & 規範中心中查看這些報告。
+[安全性 & 合規性中心](https://protection.office.com)提供各種報告，可協助您觀察電子郵件安全性功能（例如，反垃圾郵件、反惡意程式碼，以及 Microsoft 365 中的加密功能）如何保護您的組織。 如果您有[必要的許可權](#what-permissions-are-needed-to-view-these-reports)，您可以移至 [**報表** \> ]**儀表板**，在安全性 & 規範中心中查看這些報告。
 
 ![安全性 & 規範中心內的報告儀表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -69,7 +69,7 @@ ms.locfileid: "43529070"
 
 這份報告可供任何使用 Exchange Online Protection 的使用者，顯示標示為可疑或受限制使用者的使用者帳戶數目，當帳戶進入指出使用者帳戶可能有問題或甚至遭到破壞的狀態時，資料特別有用。 在經常使用的情況下，已遭破壞的使用者報告可以發現具有可疑或限制狀態之帳戶中的波峰峰值，甚至是趨勢，也就是您租使用者的安全性和 wellness 可能會發生問題。
 
-![已遭破壞的使用者會在 Office 365 中報告。](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+![已遭破壞的使用者會在 Microsoft 365 中報告。](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
 ## <a name="encryption-report"></a>加密報告
 
@@ -91,9 +91,9 @@ ms.locfileid: "43529070"
 
 ![加密報告依功能表查看資料](../../media/encryptionreport-viewdataby.png)
 
-使用新加密報告的彈性，您可以查看趨勢並採取適當的動作。 例如，如果您看到大量的電子郵件是由使用者加密，您可能會想要新增加密原則，以自動化某些使用案例的加密。 （若要取得此相關說明，請參閱[定義郵件流程規則以在 Office 365 中加密電子郵件訊息](../../compliance/define-mail-flow-rules-to-encrypt-email.md)。）在另一個範例中，如果您有許多可供使用的加密範本，但沒有人正在使用這些範本，則可以考察使用者是否需要對該功能進行訓練。
+使用新加密報告的彈性，您可以查看趨勢並採取適當的動作。 例如，如果您看到大量的電子郵件是由使用者加密，您可能會想要新增加密原則，以自動化某些使用案例的加密。 （若要取得此相關說明，請參閱[定義郵件流程規則，以加密 Microsoft 365 中的電子郵件](../../compliance/define-mail-flow-rules-to-encrypt-email.md)。）在另一個範例中，如果您有許多可供使用的加密範本，但沒有人正在使用這些範本，則可以考察使用者是否需要對該功能進行訓練。
 
-使用此報告可讓貴組織的安全性與合規性小組監視郵件加密的使用方式，以及是否需要進一步的動作。 若要深入瞭解加密，請參閱[Office 365 中的電子郵件加密](../../compliance/email-encryption.md)。
+使用此報告可讓貴組織的安全性與合規性小組監視郵件加密的使用方式，以及是否需要進一步的動作。 若要深入瞭解加密，請參閱[Microsoft 365 中的電子郵件加密](../../compliance/email-encryption.md)。
 
 ## <a name="threat-protection-status-report"></a>威脅防護狀態報告
 
@@ -170,7 +170,7 @@ ms.locfileid: "43529070"
 
 當您將游標移到圖表中的某一天時，您可以看到有多少偽造的電子郵件訊息。
 
-按一下（或點擊）報表，以在新的瀏覽器視窗中開啟它，您可以在其中取得更詳細的報表檢視。 若要深入瞭解反欺騙防護，請參閱[Office 365 中的反欺騙保護](anti-spoofing-protection.md)。
+按一下（或點擊）報表，以在新的瀏覽器視窗中開啟它，您可以在其中取得更詳細的報表檢視。 若要深入瞭解反欺騙保護，請參閱[Microsoft 365 中的反欺騙保護](anti-spoofing-protection.md)。
 
 ## <a name="spam-detections-report"></a>垃圾郵件偵測報告
 
@@ -208,7 +208,7 @@ ms.locfileid: "43529070"
 
 ![這個報告可告訴您反惡意程式碼、反垃圾郵件和其他郵件偵測](../../media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
 
-若要深入瞭解電子郵件智慧，請參閱[Office 365 中的郵件流程智慧](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365)。
+若要深入瞭解電子郵件智慧，請參閱[郵件流程智慧中的 Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365)。
 
 ## <a name="user-reported-messages-report"></a>使用者報告的訊息報告
 
@@ -227,7 +227,7 @@ ms.locfileid: "43529070"
 ![在 [安全性 & 規範中心] 中，選擇\> [ \>威脅管理] [使用者報告的郵件]](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
 > [!IMPORTANT]
-> 為了讓使用者報告的郵件報告正確運作，您必須為您的 Office 365 環境**開啟審核記錄**。 這項工作通常是由在 Exchange Online 中獲派稽核記錄角色的人員完成。 如需詳細資訊，請參閱[開啟或關閉 Office 365 稽核記錄搜尋](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)。
+> 為了讓使用者報告的郵件報告正確運作，您必須為您的 Office 365 環境**開啟審核記錄**。 這項工作通常是由在 Exchange Online 中獲派稽核記錄角色的人員完成。 如需詳細資訊，請參閱[開啟或關閉 Microsoft 365 審核記錄搜尋](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)。
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>查看這些報表所需的許可權為何？
 
@@ -243,19 +243,19 @@ ms.locfileid: "43529070"
 
 若要深入了解，請參閱下列資源：
 
-- [Office 365 安全性與合規性中心中的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
-
+- [安全性與合規性中心的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+ 
 - [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果報告未顯示資料，該怎麼辦？
 
-如果您未看到報表中的資料，請仔細檢查您的原則設定是否正確。 若要深入了解，請參閱[防範 Office 365 中的威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)。
+如果您未看到報表中的資料，請仔細檢查您的原則設定是否正確。 若要深入瞭解，請參閱[防範 Microsoft 365 中的威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)。
 
 ## <a name="related-topics"></a>相關主題
 
-[Office 365 電子郵件的反垃圾郵件保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
+[Microsoft 365 電子郵件 Anti-Spam 保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
 
-[Office 365 安全性 & 規範中心內的報告與深入瞭解](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
+[安全性 & 規範中心內的報告和洞察力](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
 
 [在安全性 & 規範中心建立報表的排程](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-a-schedule-for-a-report)
 
