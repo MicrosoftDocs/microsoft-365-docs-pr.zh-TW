@@ -16,12 +16,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 如果您使用該服務來傳送輸出電子郵件，便會一律啟用輸出垃圾郵件篩選功能，從而保護使用該服務的組織及其預期的收件者。
-ms.openlocfilehash: 3ac85776db5d990d46b858294acf8ef66c7f26bc
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 699de94a300ac8625e92d2c467edd461d72c7d2f
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43231001"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608171"
 ---
 # <a name="configure-outbound-spam-filtering-in-office-365"></a>在 Office 365 中設定輸出垃圾郵件篩選
 
@@ -140,7 +140,11 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
      若要停用此設定，請清除核取方塊。
 
-5. 選展開 [**收件者限制**] 區段，以設定可疑輸出電子郵件訊息的限制和動作：]
+5. 選展開 [**收件者限制**] 區段，以設定可疑輸出電子郵件訊息的限制和動作：
+
+   > [!NOTE]
+   > 這些設定只適用于雲端架構信箱。
+     
    - **每位使用者的收件者數目上限**
 
      有效的值為0到10000。 預設值為0，這表示使用服務預設值。 如需詳細資訊，請參閱[在 Office 365 選項](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)中傳送限制。

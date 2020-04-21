@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: 系統管理員可以深入瞭解 Office 365 和 EOP 中可用的選項，以封鎖輸入郵件。
-ms.openlocfilehash: 0bfab3024bc781e53600092ebc88fae25c5f4afc
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 9d53f49862bd69a846cb80ef584226a0940d2b22
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033419"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608112"
 ---
 # <a name="create-blocked-sender-lists-in-office-365"></a>在 Office 365 中建立封鎖的寄件者清單
 
@@ -52,7 +52,7 @@ ms.locfileid: "43033419"
 
 當多個使用者受到影響時，範圍會變寬，所以下一個最佳選項是反垃圾郵件原則中的封鎖寄件者清單或封鎖的網域清單。 來自清單寄件者的郵件會標示為**垃圾**郵件，而您針對**垃圾郵件**篩選判定所設定的動作會針對郵件採取。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-這兩個清單的上限大約是1000個專案;不過，您只可以將30個專案輸入入口網站。 您必須使用 PowerShell 來新增超過30個專案。
+這兩個清單的上限大約是1000個專案。
 
 ## <a name="use-mail-flow-rules"></a>使用郵件流程規則
 

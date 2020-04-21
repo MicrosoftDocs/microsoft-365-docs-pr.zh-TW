@@ -3,7 +3,7 @@ title: Microsoft 365 服務健全狀態
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/8/2020
+ms.date: 04/19/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft 365 服務健全狀態
-ms.openlocfilehash: c1b938a91b4f0e43e51595ec877e57e7654c5232
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 26a9983528072054606cc399ad871d0f99fd22fb
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540806"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583354"
 ---
 # <a name="microsoft-365-network-health-status"></a>Microsoft 365 網路健全狀態
 
@@ -37,7 +37,7 @@ _此頁面更新可能會有延遲。我們會手動更新，並同時建立更�
 
 | 位置 | 問題類型 | 詳細資料 |
 | --- | --- | --- |
-| 墨西哥 | ISP 基礎結構 (外部) | 在墨西哥的網際網路服務提供者基礎結構中偵測到的可用性問題，可能會導致 Microsoft 365 使用者體驗欠佳。 如需詳細資訊，請參閱「服務健康情況」儀表板。 |
+| 目前沒有問題 | | |
 
 ## <a name="recommendations-to-improve-network-experience"></a>改善網路經驗的建議事項
 

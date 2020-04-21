@@ -188,6 +188,8 @@
           href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
     - name: Microsoft 365 企業版部署內容的變更
       href: microsoft-365-deploment-guide-changes.md
+    - name: Microsoft 365 服務健全狀態
+      href: microsoft-365-service-health.md
 - name: 桌面部署中心
   href: desktop-deployment-center-home.md
   items:

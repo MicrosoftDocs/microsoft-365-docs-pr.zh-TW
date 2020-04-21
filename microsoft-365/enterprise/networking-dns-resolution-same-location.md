@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 04/20/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並設定 DNS 解析以提升效能。
-ms.openlocfilehash: 8b4302c06e75c59a1b99eb60399c9df897ad17ea
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bc1460ec40cda26d4784c7af5e909e4dca3c1f24
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066654"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583434"
 ---
 # <a name="step-2-configure-local-internet-connections-for-each-office"></a>步驟 2：設定每個辦公室的當地網際網路連線
 
@@ -56,6 +56,8 @@ Microsoft 全域網路包含*分散式 Front Door* 基礎結構，這是一種�
 - 每個當地網際網路連線應該使用當地 DNS 伺服器，以從該位置傳送連出網際網路流量。
 
 如需詳細資訊，請參閱[在本機上輸出網路連線](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#egress-network-connections-locally)。 
+
+若要測試您與 Microsoft 全球網路進入點有多接近，以及您與組織網路連線至 ISP 的點有多接近，請使用 [Office 365 網路上線工具](https://connectivity.office.com/)。
 
 做為過渡期的檢查點，您可以看到此步驟的[允出準則](networking-exit-criteria.md#crit-networking-step2)。
 
