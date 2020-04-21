@@ -1,5 +1,5 @@
 ---
-title: 選擇建立 Office 365 群組時要使用的網域
+title: 選擇建立 Microsoft 365 群組時要使用的網域
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,108 +18,108 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
-description: '透過設定電子郵件地址原則使用 PowerShell，瞭解如何選擇建立 Office 365 群組時所使用的網域。 '
-ms.openlocfilehash: 8bca0e3c33d5cb523fc075d1d2d5b04b6506b256
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: '透過設定電子郵件地址原則使用 PowerShell，瞭解如何選擇建立 Microsoft 365 群組時所使用的網域。 '
+ms.openlocfilehash: 1bc8a160ffc368bc4c66a5ac17ffcb203dc678f5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894642"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630620"
 ---
-# <a name="choose-the-domain-to-use-when-creating-office-365-groups"></a><span data-ttu-id="db287-103">選擇建立 Office 365 群組時要使用的網域</span><span class="sxs-lookup"><span data-stu-id="db287-103">Choose the domain to use when creating Office 365 Groups</span></span>
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a><span data-ttu-id="ae5d2-103">選擇建立 Microsoft 365 群組時要使用的網域</span><span class="sxs-lookup"><span data-stu-id="ae5d2-103">Choose the domain to use when creating Microsoft 365 groups</span></span>
 
- <span data-ttu-id="db287-p101">有些組織會使用不同的電子郵件網域來將業務區隔為不同部分。當您的使用者要建立 Office 365 群組時，您可以指定應使用哪一個網域。</span><span class="sxs-lookup"><span data-stu-id="db287-p101">Some organizations use separate email domains to segment different parts of their businesses. You can specify which domain should be used when your users create Office 365 groups.</span></span>
+ <span data-ttu-id="ae5d2-104">有些組織會使用不同的電子郵件網域來將業務區隔為不同部分。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-104">Some organizations use separate email domains to segment different parts of their businesses.</span></span> <span data-ttu-id="ae5d2-105">您可以指定當使用者建立 Microsoft 365 群組時，應使用的網域。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-105">You can specify which domain should be used when your users create Microsoft 365 groups.</span></span>
   
-<span data-ttu-id="db287-106">如果您的組織需要使用者在公司預設的公認網域以外的其他網域中建立他們的群組，您可以使用 PowerShell 來設定電子郵件地址原則（EAPs），以允許做到這一點。</span><span class="sxs-lookup"><span data-stu-id="db287-106">If your organization needs users to create their groups in domains other than the default accepted domain of your business, you can allow this by configuring email address policies (EAPs) using PowerShell.</span></span>
+<span data-ttu-id="ae5d2-106">如果您的組織需要使用者在公司預設的公認網域以外的其他網域中建立他們的群組，您可以使用 PowerShell 來設定電子郵件地址原則（EAPs），以允許做到這一點。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-106">If your organization needs users to create their groups in domains other than the default accepted domain of your business, you can allow this by configuring email address policies (EAPs) using PowerShell.</span></span>
   
-<span data-ttu-id="db287-107">在您可以執行 PowerShell Cmdlet 之前，請下載並安裝可讓您與 Office 365 組織交談的模組。</span><span class="sxs-lookup"><span data-stu-id="db287-107">Before you can run the PowerShell cmdlets, download and install a module that will let you talk to your Office 365 organization.</span></span> <span data-ttu-id="db287-108">[使用遠端 PowerShell 查看 [連線至 Exchange Online]](https://go.microsoft.com/fwlink/p/?LinkId=785881)。</span><span class="sxs-lookup"><span data-stu-id="db287-108">Check out [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).</span></span>
+<span data-ttu-id="ae5d2-107">在您可以執行 PowerShell Cmdlet 之前，請下載並安裝可讓您與組織交談的模組。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-107">Before you can run the PowerShell cmdlets, download and install a module that will let you talk to your organization.</span></span> <span data-ttu-id="ae5d2-108">[使用遠端 PowerShell 查看 [連線至 Exchange Online]](https://go.microsoft.com/fwlink/p/?LinkId=785881)。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-108">Check out [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).</span></span>
   
-## <a name="example-scenarios"></a><span data-ttu-id="db287-109">範例案例</span><span class="sxs-lookup"><span data-stu-id="db287-109">Example scenarios</span></span>
+## <a name="example-scenarios"></a><span data-ttu-id="ae5d2-109">範例案例</span><span class="sxs-lookup"><span data-stu-id="ae5d2-109">Example scenarios</span></span>
 
-<span data-ttu-id="db287-110">假設您公司的主要網域是 Contoso.com。</span><span class="sxs-lookup"><span data-stu-id="db287-110">Let's say your business's main domain is Contoso.com.</span></span> <span data-ttu-id="db287-111">不過，您組織的預設公認網域是 service.contoso.com。</span><span class="sxs-lookup"><span data-stu-id="db287-111">But your organization's default accepted domain is service.contoso.com.</span></span> <span data-ttu-id="db287-112">這表示將會在 service.contoso.com 中建立群組（例如，jimsteam@service.contoso.com）。</span><span class="sxs-lookup"><span data-stu-id="db287-112">This means groups will be created in service.contoso.com (for example, jimsteam@service.contoso.com).</span></span>
+<span data-ttu-id="ae5d2-110">假設您公司的主要網域是 Contoso.com。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-110">Let's say your business's main domain is Contoso.com.</span></span> <span data-ttu-id="ae5d2-111">不過，您組織的預設公認網域是 service.contoso.com。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-111">But your organization's default accepted domain is service.contoso.com.</span></span> <span data-ttu-id="ae5d2-112">這表示將會在 service.contoso.com 中建立群組（例如，jimsteam@service.contoso.com）。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-112">This means groups will be created in service.contoso.com (for example, jimsteam@service.contoso.com).</span></span>
   
-<span data-ttu-id="db287-113">假設您的組織中也有設定子域。</span><span class="sxs-lookup"><span data-stu-id="db287-113">Let's say you also have sub-domains configured in your organization.</span></span> <span data-ttu-id="db287-114">您也想要在這些網域中建立群組：</span><span class="sxs-lookup"><span data-stu-id="db287-114">You want groups to be created in these domains, too:</span></span>
+<span data-ttu-id="ae5d2-113">假設您的組織中也有設定子域。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-113">Let's say you also have sub-domains configured in your organization.</span></span> <span data-ttu-id="ae5d2-114">您也想要在這些網域中建立群組：</span><span class="sxs-lookup"><span data-stu-id="ae5d2-114">You want groups to be created in these domains, too:</span></span>
   
-- <span data-ttu-id="db287-115">學生 students.contoso.com</span><span class="sxs-lookup"><span data-stu-id="db287-115">students.contoso.com for students</span></span>
+- <span data-ttu-id="ae5d2-115">學生 students.contoso.com</span><span class="sxs-lookup"><span data-stu-id="ae5d2-115">students.contoso.com for students</span></span>
     
-- <span data-ttu-id="db287-116">教職員 faculty.contoso.com</span><span class="sxs-lookup"><span data-stu-id="db287-116">faculty.contoso.com for faculty members</span></span>
+- <span data-ttu-id="ae5d2-116">教職員 faculty.contoso.com</span><span class="sxs-lookup"><span data-stu-id="ae5d2-116">faculty.contoso.com for faculty members</span></span>
     
-<span data-ttu-id="db287-117">下列兩個案例會說明如何完成此作業。</span><span class="sxs-lookup"><span data-stu-id="db287-117">The following two scenarios explain how you would accomplish this.</span></span>
+<span data-ttu-id="ae5d2-117">下列兩個案例會說明如何完成此作業。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-117">The following two scenarios explain how you would accomplish this.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="db287-118">當您有多個 EAPs 時，會以優先順序的順序評估。</span><span class="sxs-lookup"><span data-stu-id="db287-118">When you have mulitple EAPs, they are evaluated in the order of priority.</span></span> <span data-ttu-id="db287-119">值為1表示最高優先順序。</span><span class="sxs-lookup"><span data-stu-id="db287-119">A value of 1 means the highest priority.</span></span> <span data-ttu-id="db287-120">EAP 符合後，就不會再評估任何 EAP，而且在群組上加蓋標記的位址，都是根據相符的 EAP。</span><span class="sxs-lookup"><span data-stu-id="db287-120">Once an EAP matches, no further EAP is evaluated and addresses that gets stamped on the group are as per the matched EAP.</span></span> <span data-ttu-id="db287-121">> 如果沒有 EAPs 符合指定的準則，群組便會在組織的預設公認網域中布建。</span><span class="sxs-lookup"><span data-stu-id="db287-121">> If no EAPs match the specified criteria, then the group gets provisioned in the organization's default accepted domain.</span></span> <span data-ttu-id="db287-122">請參閱[管理 Exchange Online 中公認的網域](https://go.microsoft.com/fwlink/p/?LinkId=785428)，以取得如何新增公認的網域的詳細資料。</span><span class="sxs-lookup"><span data-stu-id="db287-122">Check out [Manage accepted domains in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=785428) for details on how to add an accepted domain.</span></span> 
+> <span data-ttu-id="ae5d2-118">當您有多個 EAPs 時，會以優先順序的順序評估。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-118">When you have mulitple EAPs, they are evaluated in the order of priority.</span></span> <span data-ttu-id="ae5d2-119">值為1表示最高優先順序。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-119">A value of 1 means the highest priority.</span></span> <span data-ttu-id="ae5d2-120">EAP 符合後，就不會再評估任何 EAP，而且在群組上加蓋標記的位址，都是根據相符的 EAP。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-120">Once an EAP matches, no further EAP is evaluated and addresses that gets stamped on the group are as per the matched EAP.</span></span> <span data-ttu-id="ae5d2-121">> 如果沒有 EAPs 符合指定的準則，群組便會在組織的預設公認網域中布建。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-121">> If no EAPs match the specified criteria, then the group gets provisioned in the organization's default accepted domain.</span></span> <span data-ttu-id="ae5d2-122">請參閱[管理 Exchange Online 中公認的網域](https://go.microsoft.com/fwlink/p/?LinkId=785428)，以取得如何新增公認的網域的詳細資料。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-122">Check out [Manage accepted domains in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=785428) for details on how to add an accepted domain.</span></span> 
   
-### <a name="scenario-1"></a><span data-ttu-id="db287-123">案例 1</span><span class="sxs-lookup"><span data-stu-id="db287-123">Scenario 1</span></span>
+### <a name="scenario-1"></a><span data-ttu-id="ae5d2-123">案例 1</span><span class="sxs-lookup"><span data-stu-id="ae5d2-123">Scenario 1</span></span>
 
-<span data-ttu-id="db287-124">下列範例顯示如何在 groups.contoso.com 網域中布建組織中的所有 Office 365 群組。</span><span class="sxs-lookup"><span data-stu-id="db287-124">The following example shows you how to provision all Office 365 groups in your organization in the groups.contoso.com domain.</span></span>
+<span data-ttu-id="ae5d2-124">下列範例顯示如何在 groups.contoso.com 網域中布建組織中的所有 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-124">The following example shows you how to provision all Microsoft 365 groups in your organization in the groups.contoso.com domain.</span></span>
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
 ```
 
-### <a name="scenario-2"></a><span data-ttu-id="db287-125">案例 2</span><span class="sxs-lookup"><span data-stu-id="db287-125">Scenario 2</span></span>
+### <a name="scenario-2"></a><span data-ttu-id="ae5d2-125">案例 2</span><span class="sxs-lookup"><span data-stu-id="ae5d2-125">Scenario 2</span></span>
 
-<span data-ttu-id="db287-126">假設您想要控制要在其中建立哪些子域 Office 365 群組。</span><span class="sxs-lookup"><span data-stu-id="db287-126">Let's say you want to control what sub-domains Office 365 groups are created in.</span></span> <span data-ttu-id="db287-127">你想要：</span><span class="sxs-lookup"><span data-stu-id="db287-127">You want:</span></span>
+<span data-ttu-id="ae5d2-126">假設您想要控制哪些子域中建立的 Microsoft 365 群組。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-126">Let's say you want to control what sub-domains Microsoft 365 groups are created in.</span></span> <span data-ttu-id="ae5d2-127">你想要：</span><span class="sxs-lookup"><span data-stu-id="ae5d2-127">You want:</span></span>
   
-- <span data-ttu-id="db287-128">在 students.groups.contoso.com 網域中，由學生（已將**部門**設定為**學生**的使用者）所建立的群組。</span><span class="sxs-lookup"><span data-stu-id="db287-128">Groups created by students (users which have **Department** set to **Students**) in the students.groups.contoso.com domain.</span></span> <span data-ttu-id="db287-129">請使用下列命令：</span><span class="sxs-lookup"><span data-stu-id="db287-129">Use this command:</span></span>
+- <span data-ttu-id="ae5d2-128">在 students.groups.contoso.com 網域中，由學生（已將**部門**設定為**學生**的使用者）所建立的群組。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-128">Groups created by students (users which have **Department** set to **Students**) in the students.groups.contoso.com domain.</span></span> <span data-ttu-id="ae5d2-129">請使用下列命令：</span><span class="sxs-lookup"><span data-stu-id="ae5d2-129">Use this command:</span></span>
     
   ```
   New-EmailAddressPolicy -Name StudentsGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Students'} -Priority 1
   ```
 
-- <span data-ttu-id="db287-130">Faculty.groups.contoso.com 網域中由教職員 **（已設定**為**教職員或電子郵件地址**的使用者）所建立的群組。</span><span class="sxs-lookup"><span data-stu-id="db287-130">Groups created by faculty members (users which have **Department** set to **Faculty or email address contains faculty.contoso.com)**) in the faculty.groups.contoso.com domain.</span></span> <span data-ttu-id="db287-131">請使用下列命令：</span><span class="sxs-lookup"><span data-stu-id="db287-131">Use this command:</span></span>
+- <span data-ttu-id="ae5d2-130">Faculty.groups.contoso.com 網域中由教職員 **（已設定**為**教職員或電子郵件地址**的使用者）所建立的群組。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-130">Groups created by faculty members (users which have **Department** set to **Faculty or email address contains faculty.contoso.com)**) in the faculty.groups.contoso.com domain.</span></span> <span data-ttu-id="ae5d2-131">請使用下列命令：</span><span class="sxs-lookup"><span data-stu-id="ae5d2-131">Use this command:</span></span>
     
   ```
   New-EmailAddressPolicy -Name FacultyGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@faculty.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Faculty' -or EmailAddresses -like "*faculty.contoso.com*"} -Priority 2
   ```
 
-- <span data-ttu-id="db287-132">Groups.contoso.com 網域中的所有其他使用者。</span><span class="sxs-lookup"><span data-stu-id="db287-132">All other users in the groups.contoso.com domain.</span></span> <span data-ttu-id="db287-133">請使用下列命令：</span><span class="sxs-lookup"><span data-stu-id="db287-133">Use this command:</span></span>
+- <span data-ttu-id="ae5d2-132">Groups.contoso.com 網域中的所有其他使用者。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-132">All other users in the groups.contoso.com domain.</span></span> <span data-ttu-id="ae5d2-133">請使用下列命令：</span><span class="sxs-lookup"><span data-stu-id="ae5d2-133">Use this command:</span></span>
     
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3
   ```
 
-## <a name="change-email-address-policies"></a><span data-ttu-id="db287-134">變更電子郵件地址原則</span><span class="sxs-lookup"><span data-stu-id="db287-134">Change email address policies</span></span>
+## <a name="change-email-address-policies"></a><span data-ttu-id="ae5d2-134">變更電子郵件地址原則</span><span class="sxs-lookup"><span data-stu-id="ae5d2-134">Change email address policies</span></span>
 
-<span data-ttu-id="db287-135">若要變更現有 EAP 的優先順序或電子郵件地址範本，請使用 Set-EmailAddressPolicy Cmdlet。</span><span class="sxs-lookup"><span data-stu-id="db287-135">To change the priority or email address templates for an existing EAP, use the Set-EmailAddressPolicy cmdlet.</span></span>
+<span data-ttu-id="ae5d2-135">若要變更現有 EAP 的優先順序或電子郵件地址範本，請使用 Set-EmailAddressPolicy Cmdlet。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-135">To change the priority or email address templates for an existing EAP, use the Set-EmailAddressPolicy cmdlet.</span></span>
   
 ```
 Set-EmailAddressPolicy -Name StudentsGroups -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com", "smtp:@students.contoso.com" ManagedByFilter {Department -eq 'Students'} -Priority 2
 
 ```
 
-<span data-ttu-id="db287-136">變更 EAP 不會影響已布建的群組。</span><span class="sxs-lookup"><span data-stu-id="db287-136">Changing an EAP has no impact on the groups that have already been provisioned.</span></span>
+<span data-ttu-id="ae5d2-136">變更 EAP 不會影響已布建的群組。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-136">Changing an EAP has no impact on the groups that have already been provisioned.</span></span>
   
-## <a name="delete-email-address-policies"></a><span data-ttu-id="db287-137">刪除電子郵件地址原則</span><span class="sxs-lookup"><span data-stu-id="db287-137">Delete email address policies</span></span>
+## <a name="delete-email-address-policies"></a><span data-ttu-id="ae5d2-137">刪除電子郵件地址原則</span><span class="sxs-lookup"><span data-stu-id="ae5d2-137">Delete email address policies</span></span>
 
-<span data-ttu-id="db287-138">若要刪除 EAP，請使用 Remove-EmailAddressPolicy Cmdlet。</span><span class="sxs-lookup"><span data-stu-id="db287-138">To delete an EAP, use the Remove-EmailAddressPolicy cmdlet.</span></span>
+<span data-ttu-id="ae5d2-138">若要刪除 EAP，請使用 Remove-EmailAddressPolicy Cmdlet。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-138">To delete an EAP, use the Remove-EmailAddressPolicy cmdlet.</span></span>
   
 ```
 Remove-EmailAddressPolicy -Identity StudentsGroups
 ```
 
-<span data-ttu-id="db287-139">變更 EAP 不會影響已布建的群組。</span><span class="sxs-lookup"><span data-stu-id="db287-139">Changing an EAP has no impact on the groups that have already been provisioned.</span></span>
+<span data-ttu-id="ae5d2-139">變更 EAP 不會影響已布建的群組。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-139">Changing an EAP has no impact on the groups that have already been provisioned.</span></span>
   
-## <a name="hybrid-requirements"></a><span data-ttu-id="db287-140">混合需求</span><span class="sxs-lookup"><span data-stu-id="db287-140">Hybrid requirements</span></span>
+## <a name="hybrid-requirements"></a><span data-ttu-id="ae5d2-140">混合需求</span><span class="sxs-lookup"><span data-stu-id="ae5d2-140">Hybrid requirements</span></span>
 
-<span data-ttu-id="db287-141">如果您的組織是在混合案例中設定，請參閱[Configure The office 365 Groups with 內部部署 Exchange 混合](https://go.microsoft.com/fwlink/p/?LinkId=785430)式，確定您的組織符合建立 Office 365 群組的需求。</span><span class="sxs-lookup"><span data-stu-id="db287-141">If your organization is configured in a hybrid scenario, check out [Configure Office 365 Groups with on-premises Exchange hybrid](https://go.microsoft.com/fwlink/p/?LinkId=785430) to make sure your organization meets the requirements for creating Office 365 groups.</span></span> 
+<span data-ttu-id="ae5d2-141">如果您的組織是在混合案例中設定，請參閱[使用內部部署 Exchange 混合式設定 Microsoft 365 群組](https://go.microsoft.com/fwlink/p/?LinkId=785430)，以確保您的組織符合建立 Microsoft 365 群組的需求。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-141">If your organization is configured in a hybrid scenario, check out [Configure Microsoft 365 groups with on-premises Exchange hybrid](https://go.microsoft.com/fwlink/p/?LinkId=785430) to make sure your organization meets the requirements for creating Microsoft 365 groups.</span></span> 
   
-## <a name="additional-info-about-using-email-address-policies-groups"></a><span data-ttu-id="db287-142">使用電子郵件地址原則群組的其他資訊：</span><span class="sxs-lookup"><span data-stu-id="db287-142">Additional info about using email address policies groups:</span></span>
+## <a name="additional-info-about-using-email-address-policies-groups"></a><span data-ttu-id="ae5d2-142">使用電子郵件地址原則群組的其他資訊：</span><span class="sxs-lookup"><span data-stu-id="ae5d2-142">Additional info about using email address policies groups:</span></span>
 
-<span data-ttu-id="db287-143">還有其他一些事項需要注意：</span><span class="sxs-lookup"><span data-stu-id="db287-143">There are a few more things to know:</span></span>
+<span data-ttu-id="ae5d2-143">還有其他一些事項需要注意：</span><span class="sxs-lookup"><span data-stu-id="ae5d2-143">There are a few more things to know:</span></span>
   
-- <span data-ttu-id="db287-144">建立的速度群組取決於您組織中設定的 EAPs 數目。</span><span class="sxs-lookup"><span data-stu-id="db287-144">How fast groups are created depends on the number of EAPs configured in your organization.</span></span>
+- <span data-ttu-id="ae5d2-144">建立的速度群組取決於您組織中設定的 EAPs 數目。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-144">How fast groups are created depends on the number of EAPs configured in your organization.</span></span>
     
-- <span data-ttu-id="db287-145">管理員和使用者也可以在建立群組時修改網域。</span><span class="sxs-lookup"><span data-stu-id="db287-145">Admins and users can also modify domains when they create groups.</span></span>
+- <span data-ttu-id="ae5d2-145">管理員和使用者也可以在建立群組時修改網域。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-145">Admins and users can also modify domains when they create groups.</span></span>
     
-- <span data-ttu-id="db287-146">使用者群組是使用已有的標準查詢（使用者屬性）決定。</span><span class="sxs-lookup"><span data-stu-id="db287-146">Group of users is determined using the standard queries (User properties) that are already available.</span></span> <span data-ttu-id="db287-147">請查看[-RecipientFilter 參數](https://go.microsoft.com/fwlink/p/?LinkId=785918)的可篩選內容，以取得支援的可篩選屬性。</span><span class="sxs-lookup"><span data-stu-id="db287-147">Check out [Filterable properties for the -RecipientFilter parameter](https://go.microsoft.com/fwlink/p/?LinkId=785918) for supported filterable properties.</span></span> 
+- <span data-ttu-id="ae5d2-146">使用者群組是使用已有的標準查詢（使用者屬性）決定。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-146">Group of users is determined using the standard queries (User properties) that are already available.</span></span> <span data-ttu-id="ae5d2-147">請查看[-RecipientFilter 參數](https://go.microsoft.com/fwlink/p/?LinkId=785918)的可篩選內容，以取得支援的可篩選屬性。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-147">Check out [Filterable properties for the -RecipientFilter parameter](https://go.microsoft.com/fwlink/p/?LinkId=785918) for supported filterable properties.</span></span> 
     
-- <span data-ttu-id="db287-148">如果您未設定群組的任何 EAPs，則會選取預設的公認網域以建立群組。</span><span class="sxs-lookup"><span data-stu-id="db287-148">If you don't configure any EAPs for groups, then the default accepted domain is selected for group creation.</span></span>
+- <span data-ttu-id="ae5d2-148">如果您未設定群組的任何 EAPs，則會選取預設的公認網域以建立群組。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-148">If you don't configure any EAPs for groups, then the default accepted domain is selected for group creation.</span></span>
     
-- <span data-ttu-id="db287-149">如果您移除公認的網域，您應該先更新 EAPs，否則將會影響群組布建。</span><span class="sxs-lookup"><span data-stu-id="db287-149">If you remove an accepted domain, you should update the EAPs first, otherwise, group provisioning will be impacted.</span></span>
+- <span data-ttu-id="ae5d2-149">如果您移除公認的網域，您應該先更新 EAPs，否則將會影響群組布建。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-149">If you remove an accepted domain, you should update the EAPs first, otherwise, group provisioning will be impacted.</span></span>
     
-- <span data-ttu-id="db287-150">您可以為組織設定100電子郵件地址原則的上限。</span><span class="sxs-lookup"><span data-stu-id="db287-150">A maximum limit of 100 email address policies can be configured for an organization.</span></span>
+- <span data-ttu-id="ae5d2-150">您可以為組織設定100電子郵件地址原則的上限。</span><span class="sxs-lookup"><span data-stu-id="ae5d2-150">A maximum limit of 100 email address policies can be configured for an organization.</span></span>
     
-## <a name="related-articles"></a><span data-ttu-id="db287-151">相關文章</span><span class="sxs-lookup"><span data-stu-id="db287-151">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="ae5d2-151">相關文章</span><span class="sxs-lookup"><span data-stu-id="ae5d2-151">Related articles</span></span>
 
-[<span data-ttu-id="db287-152">在系統管理中心建立 Office 365 群組</span><span class="sxs-lookup"><span data-stu-id="db287-152">Create an Office 365 group in the admin center</span></span>](create-groups.md)
+[<span data-ttu-id="ae5d2-152">在系統管理中心建立 Microsoft 365 群組</span><span class="sxs-lookup"><span data-stu-id="ae5d2-152">Create an Microsoft 365 group in the admin center</span></span>](create-groups.md)

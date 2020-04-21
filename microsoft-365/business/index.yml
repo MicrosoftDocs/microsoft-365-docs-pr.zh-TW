@@ -1,9 +1,9 @@
 ### YamlMime:Hub
-title: Microsoft 365 商務資源
-summary: Microsoft 365 Business 是一種訂閱服務，包含 Office 365 生產力工具和高級功能，以協助保護您的商務 cyberthreats、保護您的資料，以及管理裝置。
+title: Microsoft 365 商務版 Premium 資源
+summary: Microsoft 365 商務版是一種訂閱服務，包含 Office 365 生產力工具和高級功能，以協助保護您的業務，避免 cyberthreats、保護您的資料，以及管理裝置。
 brand: m365
 metadata:
-  title: Microsoft 365 商務資源
+  title: Microsoft 365 商務版 Premium 資源
   description: 描述
   ms.service: o365-administration
   ms.topic: hub-page
@@ -11,18 +11,18 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: bf50c985029587ec063e2933d137d6a9b115fa6c
-  ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+  ms.openlocfilehash: 29504ca22db443c504a5f3265ca2e8fcba0f737e
+  ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 04/15/2020
-  ms.locfileid: "43516838"
+  ms.lasthandoff: 04/21/2020
+  ms.locfileid: "43627107"
 productDirectory:
-  title: 使用 Microsoft 365 商務進行安全的遠端工作
+  title: 使用 Microsoft 365 商務版加強遠端工作
   items:
   - title: 新功能
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Azure AD Premium P1 即將參加 Microsoft 365 商務版！
+    summary: Azure AD Premium P1 已進入 Microsoft 365 商務版 Premium！
     url: https://aka.ms/aadp1smbblog
   - title: 觀賞合作夥伴網路研討會
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
@@ -30,18 +30,18 @@ productDirectory:
     url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
   - title: 讀取
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: 使用 Microsoft 365 商務啟用安全的遠端作業的最佳方式。
+    summary: 使用 Microsoft 365 for business 來啟用安全遠端作業的最佳方式。
     url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
 conceptualContent:
   items:
-  - title: 什麼是 Microsoft 365 商務版？
+  - title: 何謂 Microsoft 365 商務版？
     links:
     - url: microsoft-365-business-overview.md
       itemType: overview
       text: 概觀
     - url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
       itemType: video
-      text: Microsoft 365 商務訓練
+      text: Microsoft 365 商務特優訓練
     - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
       itemType: overview
       text: 比較計畫
@@ -51,7 +51,7 @@ conceptualContent:
     - url: support/microsoft-365-business-faqs.md
       itemType: reference
       text: 常見問題集
-  - title: 設定 Microsoft 365 商務版
+  - title: 設定 Microsoft 365 商務版 Premium
     links:
     - url: set-up.md
       itemType: how-to-guide
@@ -97,7 +97,7 @@ conceptualContent:
     links:
     - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp
       itemType: overview
-      text: Office 365 進階威脅防護
+      text: 進階威脅防護
     - url: set-up-mfa.md
       itemType: how-to-guide
       text: 設定 MFA
@@ -185,10 +185,10 @@ conceptualContent:
     links:
     - url: sign-up.md
       itemType: get-started
-      text: 註冊 Microsoft 365 商務版
+      text: 註冊 Microsoft 365 商務版 Premium
     - url: migrate-to-microsoft-365-business.md
       itemType: how-to-guide
-      text: 從 Office 365 商務進階版移轉
+      text: 從 Microsoft 365 商務標準遷移
     - url: migrate-from-e3.md
       itemType: how-to-guide
       text: 從 Office 365 E3 移轉

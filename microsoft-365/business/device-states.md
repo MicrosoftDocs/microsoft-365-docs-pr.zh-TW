@@ -24,32 +24,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: 了解在裝置動作] 清單中系統管理員首頁 Microsoft 365 商務版中的各種裝置狀態。
-ms.openlocfilehash: bed1610814ca0d60adb4b4b3d0018e3e7e6d763f
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: 深入瞭解 Microsoft 365 for business 中的 [系統管理] 主裝置的 [裝置動作] 清單中的各種裝置狀態。
+ms.openlocfilehash: 1a66e76dd3a74428923292427b01551db2449e48
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560813"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627239"
 ---
-# <a name="device-states"></a><span data-ttu-id="2dc19-103">裝置狀態</span><span class="sxs-lookup"><span data-stu-id="2dc19-103">Device states</span></span>
+# <a name="device-states"></a><span data-ttu-id="d8a5d-103">裝置狀態</span><span class="sxs-lookup"><span data-stu-id="d8a5d-103">Device states</span></span>
 
-<span data-ttu-id="2dc19-104">Devices in the **Device actions** list (Admin home \> **Device actions**) can have the following states.</span><span class="sxs-lookup"><span data-stu-id="2dc19-104">Devices in the **Device actions** list (Admin home \> **Device actions**) can have the following states.</span></span>
+<span data-ttu-id="d8a5d-104">Devices in the **Device actions** list (Admin home \> **Device actions**) can have the following states.</span><span class="sxs-lookup"><span data-stu-id="d8a5d-104">Devices in the **Device actions** list (Admin home \> **Device actions**) can have the following states.</span></span>
   
 ![In the Device actions list, you can see the Devices states.](../media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
   
-|<span data-ttu-id="2dc19-106">**狀態**</span><span class="sxs-lookup"><span data-stu-id="2dc19-106">**Status**</span></span>|<span data-ttu-id="2dc19-107">**描述**</span><span class="sxs-lookup"><span data-stu-id="2dc19-107">**Description**</span></span>|
+|<span data-ttu-id="d8a5d-106">**狀態**</span><span class="sxs-lookup"><span data-stu-id="d8a5d-106">**Status**</span></span>|<span data-ttu-id="d8a5d-107">**描述**</span><span class="sxs-lookup"><span data-stu-id="d8a5d-107">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="2dc19-108">由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="2dc19-108">Managed by Intune</span></span>  <br/> |<span data-ttu-id="2dc19-109">由 Microsoft 365 商務版 管理。</span><span class="sxs-lookup"><span data-stu-id="2dc19-109">Managed by Microsoft 365 Business.</span></span>  <br/> |
-|<span data-ttu-id="2dc19-110">淘汰擱置中</span><span class="sxs-lookup"><span data-stu-id="2dc19-110">Retire pending</span></span>  <br/> |<span data-ttu-id="2dc19-111">Microsoft 365 商務版 準備好要從裝置移除公司資料。</span><span class="sxs-lookup"><span data-stu-id="2dc19-111">Microsoft 365 Business is getting ready to remove company data from the device.</span></span>  <br/> |
-|<span data-ttu-id="2dc19-112">淘汰進行中</span><span class="sxs-lookup"><span data-stu-id="2dc19-112">Retire in progress</span></span>  <br/> |<span data-ttu-id="2dc19-113">Microsoft 365 商務版 目前正在從裝置移除公司資料。</span><span class="sxs-lookup"><span data-stu-id="2dc19-113">Microsoft 365 Business is currently removing company data from the device.</span></span>  <br/> |
-|<span data-ttu-id="2dc19-114">淘汰失敗</span><span class="sxs-lookup"><span data-stu-id="2dc19-114">Retire failed</span></span>  <br/> | <span data-ttu-id="2dc19-115">移除公司資料的動作失敗。</span><span class="sxs-lookup"><span data-stu-id="2dc19-115">Remove company data action failed.</span></span>  <br/> |
-|<span data-ttu-id="2dc19-116">已取消淘汰</span><span class="sxs-lookup"><span data-stu-id="2dc19-116">Retire canceled</span></span>  <br/> |<span data-ttu-id="2dc19-117">淘汰已取消的動作。</span><span class="sxs-lookup"><span data-stu-id="2dc19-117">Retire action was canceled.</span></span>  <br/> |
-|<span data-ttu-id="2dc19-118">抹除擱置中</span><span class="sxs-lookup"><span data-stu-id="2dc19-118">Wipe pending</span></span>  <br/> |<span data-ttu-id="2dc19-119">等待開始重設成出廠預設值。</span><span class="sxs-lookup"><span data-stu-id="2dc19-119">Waiting for factory reset to start.</span></span>  <br/> |
-|<span data-ttu-id="2dc19-120">抹除進行中</span><span class="sxs-lookup"><span data-stu-id="2dc19-120">Wipe in progress</span></span>  <br/> |<span data-ttu-id="2dc19-121">已發出重設成出廠預設值。</span><span class="sxs-lookup"><span data-stu-id="2dc19-121">Factory reset has been issued.</span></span>  <br/> |
-|<span data-ttu-id="2dc19-122">抹除失敗</span><span class="sxs-lookup"><span data-stu-id="2dc19-122">Wipe failed</span></span>  <br/> |<span data-ttu-id="2dc19-123">無法執行原廠重設。</span><span class="sxs-lookup"><span data-stu-id="2dc19-123">Couldn't do factory reset.</span></span>  <br/> |
-|<span data-ttu-id="2dc19-124">已取消抹除</span><span class="sxs-lookup"><span data-stu-id="2dc19-124">Wipe canceled</span></span>  <br/> |<span data-ttu-id="2dc19-125">出廠已取消此事件。</span><span class="sxs-lookup"><span data-stu-id="2dc19-125">Factory wipe was canceled.</span></span>  <br/> |
-|<span data-ttu-id="2dc19-126">狀況不良</span><span class="sxs-lookup"><span data-stu-id="2dc19-126">Unhealthy</span></span>  <br/> |<span data-ttu-id="2dc19-127">動作擱置中 （或進行中），但裝置尚未超過 30 天未曾簽入。</span><span class="sxs-lookup"><span data-stu-id="2dc19-127">An action is pending (or in progress), but the device hasn't checked in for 30+ days.</span></span>  <br/> |
-|<span data-ttu-id="2dc19-128">刪除擱置中</span><span class="sxs-lookup"><span data-stu-id="2dc19-128">Delete pending</span></span>  <br/> |<span data-ttu-id="2dc19-129">刪除動作擱置中。</span><span class="sxs-lookup"><span data-stu-id="2dc19-129">Delete action is pending.</span></span>  <br/> |
-|<span data-ttu-id="2dc19-130">已探索</span><span class="sxs-lookup"><span data-stu-id="2dc19-130">Discovered</span></span>  <br/> |<span data-ttu-id="2dc19-131">Microsoft 365 商務版 偵測到裝置。</span><span class="sxs-lookup"><span data-stu-id="2dc19-131">Microsoft 365 Business has detected the device.</span></span>  <br/> |
+|<span data-ttu-id="d8a5d-108">由 Intune 管理</span><span class="sxs-lookup"><span data-stu-id="d8a5d-108">Managed by Intune</span></span>  <br/> |<span data-ttu-id="d8a5d-109">由 Microsoft 365 商務版 Premium 所管理。</span><span class="sxs-lookup"><span data-stu-id="d8a5d-109">Managed by Microsoft 365 Business Premium.</span></span>  <br/> |
+|<span data-ttu-id="d8a5d-110">淘汰擱置中</span><span class="sxs-lookup"><span data-stu-id="d8a5d-110">Retire pending</span></span>  <br/> |<span data-ttu-id="d8a5d-111">Microsoft 365 商務版功能即將準備好從裝置中移除公司資料。</span><span class="sxs-lookup"><span data-stu-id="d8a5d-111">Microsoft 365 Business Premium is getting ready to remove company data from the device.</span></span>  <br/> |
+|<span data-ttu-id="d8a5d-112">淘汰進行中</span><span class="sxs-lookup"><span data-stu-id="d8a5d-112">Retire in progress</span></span>  <br/> |<span data-ttu-id="d8a5d-113">Microsoft 365 商務版 Premium 目前從裝置移除公司資料。</span><span class="sxs-lookup"><span data-stu-id="d8a5d-113">Microsoft 365 Business Premium is currently removing company data from the device.</span></span>  <br/> |
+|<span data-ttu-id="d8a5d-114">淘汰失敗</span><span class="sxs-lookup"><span data-stu-id="d8a5d-114">Retire failed</span></span>  <br/> | <span data-ttu-id="d8a5d-115">移除公司資料的動作失敗。</span><span class="sxs-lookup"><span data-stu-id="d8a5d-115">Remove company data action failed.</span></span>  <br/> |
+|<span data-ttu-id="d8a5d-116">取消停用</span><span class="sxs-lookup"><span data-stu-id="d8a5d-116">Retire canceled</span></span>  <br/> |<span data-ttu-id="d8a5d-117">取消停用動作。</span><span class="sxs-lookup"><span data-stu-id="d8a5d-117">Retire action was canceled.</span></span>  <br/> |
+|<span data-ttu-id="d8a5d-118">抹除擱置中</span><span class="sxs-lookup"><span data-stu-id="d8a5d-118">Wipe pending</span></span>  <br/> |<span data-ttu-id="d8a5d-119">等待開始重設成出廠預設值。</span><span class="sxs-lookup"><span data-stu-id="d8a5d-119">Waiting for factory reset to start.</span></span>  <br/> |
+|<span data-ttu-id="d8a5d-120">抹除進行中</span><span class="sxs-lookup"><span data-stu-id="d8a5d-120">Wipe in progress</span></span>  <br/> |<span data-ttu-id="d8a5d-121">已發出重設成出廠預設值。</span><span class="sxs-lookup"><span data-stu-id="d8a5d-121">Factory reset has been issued.</span></span>  <br/> |
+|<span data-ttu-id="d8a5d-122">抹除失敗</span><span class="sxs-lookup"><span data-stu-id="d8a5d-122">Wipe failed</span></span>  <br/> |<span data-ttu-id="d8a5d-123">無法進行原始重設。</span><span class="sxs-lookup"><span data-stu-id="d8a5d-123">Couldn't do factory reset.</span></span>  <br/> |
+|<span data-ttu-id="d8a5d-124">取消擦除</span><span class="sxs-lookup"><span data-stu-id="d8a5d-124">Wipe canceled</span></span>  <br/> |<span data-ttu-id="d8a5d-125">已取消工廠清除。</span><span class="sxs-lookup"><span data-stu-id="d8a5d-125">Factory wipe was canceled.</span></span>  <br/> |
+|<span data-ttu-id="d8a5d-126">狀況不良</span><span class="sxs-lookup"><span data-stu-id="d8a5d-126">Unhealthy</span></span>  <br/> |<span data-ttu-id="d8a5d-127">動作暫止（或進行中），但裝置尚未簽入時30天。</span><span class="sxs-lookup"><span data-stu-id="d8a5d-127">An action is pending (or in progress), but the device hasn't checked in for 30+ days.</span></span>  <br/> |
+|<span data-ttu-id="d8a5d-128">刪除擱置中</span><span class="sxs-lookup"><span data-stu-id="d8a5d-128">Delete pending</span></span>  <br/> |<span data-ttu-id="d8a5d-129">刪除動作擱置中。</span><span class="sxs-lookup"><span data-stu-id="d8a5d-129">Delete action is pending.</span></span>  <br/> |
+|<span data-ttu-id="d8a5d-130">已探索</span><span class="sxs-lookup"><span data-stu-id="d8a5d-130">Discovered</span></span>  <br/> |<span data-ttu-id="d8a5d-131">Microsoft 365 商務版 Premium 已偵測到裝置。</span><span class="sxs-lookup"><span data-stu-id="d8a5d-131">Microsoft 365 Business Premium has detected the device.</span></span>  <br/> |
    
