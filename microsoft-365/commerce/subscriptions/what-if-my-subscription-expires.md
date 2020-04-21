@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 瞭解當您的商務用 Office 365 訂閱到期、停用或取消時，您的資料會發生什麼事。
-ms.openlocfilehash: 2529d5027305a9ceaf71033b4de52a867b9fa9fb
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: f3be5a84cc29b2f7fd4d2bbe3e6ba611c6459ea6
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955670"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43584006"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-office-365-for-business-subscription-ends"></a>當商務用 Office 365 訂閱結束時，我的資料和存取會發生什麼情況？
 
@@ -44,7 +44,7 @@ ms.locfileid: "42955670"
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *所有可存取的資料*                                               | *所有可存取的資料*                                                     | *僅限系統管理員可存取的資料*                                             | **資料刪除<br/>的 Azure Active Directory 已移除，如果其他服務未使用該 Active Directory** |
 | 使用者可以正常存取 Office 365、資料和 Office 應用程式  | 使用者具備 Office 365、檔案及應用程式的一般存取權              | 使用者無法存取 Office 365、檔或應用程式                        | 使用者無法存取 Office 365、檔或應用程式                                     |
-| 系統管理員可以正常存取 Office 365、資料和 Office 應用程式 | 系統管理員可以存取系統管理中心，但無法將授權指派給使用者   | 系統管理員可以存取系統管理中心，但無法將授權指派給使用者       | 系統管理員可以存取系統管理中心，以購買及管理其他訂閱             |
+| 系統管理員可以正常存取 Office 365、資料和 Office 應用程式 | 系統管理員可以存取系統管理中心   | 系統管理員可以存取系統管理中心，但無法將授權指派給使用者       | 系統管理員可以存取系統管理中心，以購買及管理其他訂閱             |
 |                                                                        | 全域或計費系統管理員可以在系統管理中心重新啟用訂閱 | 全域或計費系統管理員可以在系統管理中心重新啟用訂閱 |                                                                                           |
 
 * 大部分的國家和地區中的產品。
@@ -143,7 +143,7 @@ ms.locfileid: "42955670"
 
 在此狀態下，使用者可以正常存取 Office 365 入口網站、Office 應用程式，以及電子郵件和 SharePoint 線上等服務。
   
-做為系統管理員，您仍然可以存取系統管理中心，但無法將授權指派給使用者。 全域或計費系統管理員可以[重新開機訂閱](reactivate-your-subscription.md)，並繼續使用 Office 365。 如果您未重新啟用，請務必[備份您的資料](back-up-data-before-switching-plans.md)。
+做為系統管理員，您仍然可以存取系統管理員中心。 全域或計費系統管理員可以[重新開機訂閱](reactivate-your-subscription.md)，並繼續使用 Office 365。 如果您未重新啟用，請務必[備份您的資料](back-up-data-before-switching-plans.md)。
   
 ### <a name="state-disabled"></a>狀態：已停用
   

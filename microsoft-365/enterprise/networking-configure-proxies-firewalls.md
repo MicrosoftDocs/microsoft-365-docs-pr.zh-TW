@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 04/20/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並為信任的 Office 365 位置的流量旁路設定 Web 瀏覽器和邊緣裝置。
-ms.openlocfilehash: b04e16b249dccf8f2461189b8b47abdd252a75d8
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 68e8f7868e0b0f7b3da80bd5f19b18f261b1b05c
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504076"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583390"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>步驟 4：設定流量旁路
 
@@ -61,6 +61,8 @@ Microsoft 建議您：
 分割通道是 VPN 連線在網際網路上路由指定流量的功能，而不是透過 VPN 連線將其傳送到內部網路的功能。 若要讓遠端工作人員獲得關鍵 Microsoft 365 服務 (例如 Teams、SharePoint Online 和 Exchange Online) 的最佳效能，請設定分割通道 VPN 連線，直接透過網際網路將流量傳送到最佳化類別的 Office 365 端點。 
 
 如需詳細資訊，請參閱[使用 VPN 分割通道將遠端使用者的 Office 365 連線能力最佳化](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)。
+
+若要測試您與 Microsoft 全球網路進入點有多接近，以及您與組織網路連線至 ISP 的點有多接近，請使用 [Office 365 網路上線工具](https://connectivity.office.com/)。
 
 做為過渡期的檢查點，您可以看到此步驟的[允出準則](networking-exit-criteria.md#crit-networking-step4)。
 
