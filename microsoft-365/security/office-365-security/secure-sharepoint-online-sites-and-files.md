@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：在 SharePoint Online 和 Office 365 中保護檔案的設定建議。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 542cf1c899b0eee21b458cd8e9dd5fb8363cf1e9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: aa6739caa3d3bce97750f0af1faa7e040f84ab7e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082288"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637837"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>保護 SharePoint Online 網站與檔案
 
@@ -63,9 +63,9 @@ ms.locfileid: "42082288"
 
 - 系統會針對「敏感性」和「高度機密」的保留標籤設定[資料外洩防護](../../compliance/data-loss-prevention-policies.md) (DLP) 原則，以在使用者嘗試將這類檔案傳送到組織外部時，對他們發出警告或阻止此動作。
 
-- 如果在您的案例中有需要，您可以使用[敏感度標籤](../../compliance/sensitivity-labels.md)以使用加密與權限來保護高度機密檔案。 針對 Azure 資訊保護客戶，您可以使用 Microsoft 365 合規性中心的 Azure 資訊保護標籤，而如果您選擇執行額外或進階組態，標籤就會與 Azure 入口網站同步處理。 Azure 資訊保護標籤與 Office 365 敏感度標籤完全彼此相容。 這表示，例如，如果您有使用 Azure 資訊保護加上標籤的內容，則不需將內容重新分類或重新加上標籤。 並非所有客戶都需要此層級的保護。
+- 如果在您的案例中有需要，您可以使用[敏感度標籤](../../compliance/sensitivity-labels.md)以使用加密與權限來保護高度機密檔案。 針對 Azure 資訊保護客戶，您可以使用 Microsoft 365 合規性中心的 Azure 資訊保護標籤，而如果您選擇執行額外或進階組態，標籤就會與 Azure 入口網站同步處理。 Azure 資訊保護標籤與敏感度標籤完全彼此相容。 這表示，例如，如果您有使用 Azure 資訊保護加上標籤的內容，則不需將內容重新分類或重新加上標籤。 並非所有客戶都需要此層級的保護。
 
-## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 和商務用 OneDrive 的租用戶整體設定
+## <a name="organization-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 和商務用 OneDrive 的全組織設定
 
 SharePoint Online 和商務用 OneDrive 包含的租用戶整體設定會影響所有網站與使用者。 其中某些設定可以於網站層級進行調整，使其更加嚴格 (但不能更寬鬆)。 本節說明會影響安全性與共同作業的租用戶整體設定。
 
@@ -125,11 +125,11 @@ SharePoint Online 和商務用 OneDrive 的裝置存取設定可讓您決定要�
 |網站層級的裝置存取控制|無額外控制。|無額外控制。|防止使用者下載檔案到不相容或非加入網域的裝置。如此一來，所有其他裝置僅可進行瀏覽器存取。|封鎖將檔案下載至不相容或非加入網域的裝置。|
 |保留標籤|內部公用|Private|敏感性|高度機密|
 |DLP 原則|||當使用者將標記為「敏感性」的檔案傳送到組織外部時，會對其發出警告。 <br/> 若要封鎖敏感性資料類型的外部共用，例如信用卡號碼或其他個人資料，您可以為這些資料類型 (包括您設定的自訂資料類型) 設定額外的 DLP 原則。|封鎖使用者，使其無法將標示為高度機密的檔案傳送到組織外部。 允許使用者提供理由來覆寫這項預設，包括共用檔案的對象。|
-|敏感度標籤||||使用敏感度標籤可自動加密並授與檔案權限。 這項保護會與檔案一起移動，以免檔案外洩。 <br/> Office 365 無法讀取以敏感度標籤加密的檔案。 此外，DLP 原則僅會使用中繼資料 (包括標籤)，而不會使用這些檔案的內容 (例如檔案中的信用卡號碼)。|
+|敏感度標籤||||使用敏感度標籤可自動加密並授與檔案權限。 這項保護會與檔案一起移動，以免檔案外洩。 <br/> Microsoft 365 無法讀取以敏感度標籤加密的檔案。 此外，DLP 原則僅會使用中繼資料 (包括標籤)，而不會使用這些檔案的內容 (例如檔案中的信用卡號碼)。|
 
 如需此解決方案中這四種不同類型 SharePoint Online 小組網站的部署步驟，請參閱[部署三層保護的 SharePoint Online 網站](../../compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)。
 
-## <a name="office-365-retention-labels"></a>Office 365 保留標籤
+##  <a name="retention-labels"></a>保留標籤
 
 若環境含有敏感性和高度機密資料，建議使用保留標籤。 設定並發佈保留標籤之後：
 
@@ -139,7 +139,7 @@ SharePoint Online 和商務用 OneDrive 的裝置存取設定可讓您決定要�
 
 - 您可以套用以保留標籤為基礎的 DLP 原則。
 
-- 組織的人員可以手動套用標籤至 Outlook 網頁版、Outlook 2010 及更新版本、商務用 OneDrive、SharePoint Online 以及 Office 365 群組中的內容。使用者通常最清楚自己使用的內容類型，因此可以對其分類並套用適當的 DLP 原則。
+- 組織的人員可以手動套用標籤至 Outlook 網頁版、Outlook 2010 及更新版本、商務用 OneDrive、SharePoint Online 以及 Microsoft 365 群組中的內容。使用者通常最清楚自己使用的內容類型，因此可以對其分類並套用適當的 DLP 原則。
 
 ![SharePoint 網站的建議設定](../../media/7fed0126-ab4a-4480-922c-681970642339.png)
 

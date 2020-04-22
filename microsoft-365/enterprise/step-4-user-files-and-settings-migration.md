@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何移轉使用者檔案和設定。
-ms.openlocfilehash: f17b11efe889359f97087ac5d96ffa968ca8cd88
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 7904c9035ac87424f361e9ff4d6fb20596e335de
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113538"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636781"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>步驟 4：使用者檔案和設定移轉
 
@@ -38,7 +38,7 @@ ms.locfileid: "43113538"
 </table>
 
 >[!NOTE]
->儘管您可以繼續使用過去使用過的移轉程序，但在移轉至 Office 365 專業增強版時，建議您使用 OneDrive「已知資料夾移動」(如下所示)。 若要查看完整的桌面部署程序，請瀏覽[桌面部署中心](https://aka.ms/HowToShift)。
+>儘管您可以繼續使用過去使用過的移轉程序，但在移轉至 Microsoft 365 Apps 企業版時，建議您使用 OneDrive「已知資料夾移動」(如下所示)。 若要查看完整的桌面部署程序，請瀏覽[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
 大型部署中最棘手且通常最需手動執行的其中一項工作就是移轉使用者的檔案和設定。本文將討論您可以使用的選項，以便將使用者移轉至新的、重新整理及影像重新處理的電腦。

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 摘要：在開發/測試環境中建立敏感性及高度機密的 SharePoint Online 小組網站。
-ms.openlocfilehash: 6294daa943c3815b86a9e12154901ed0b58d5e8d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 016fd99423305e0d11272f3d25115dcffe29ecae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088105"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631986"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>在開發/測試環境中保護 SharePoint Online 網站
 
@@ -66,7 +66,7 @@ ms.locfileid: "42088105"
 
 6. 針對名為「行銷人員」**** 的新群組，重複步驟 3-5。
 
-接下來，設定自動授權，讓群組成員自動獲指派 Office 365 和 EMS 訂閱的授權。
+接下來，設定自動授權，讓群組成員自動獲指派 Microsoft 365 和 EMS 訂閱的授權。
 
 1. 在 Azure 入口網站中，按一下 [Azure Active Directory] > [授權] > [所有產品]****。
 
@@ -125,7 +125,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 4. 在列出 **CEO** 使用者帳戶內容的窗格中，確認已獲指派 [Microsoft 365 企業版 E5]**** 授權 (在 [產品授權]**** 中)。
 
-## <a name="phase-3-create-office-365-retention-labels"></a>階段 3：Office 365 保留標籤
+## <a name="phase-3-create-retention-labels"></a>階段 3：建立保留標籤
 
 在此階段中為 SharePoint 小組網站的文件，建立保留標籤。
 

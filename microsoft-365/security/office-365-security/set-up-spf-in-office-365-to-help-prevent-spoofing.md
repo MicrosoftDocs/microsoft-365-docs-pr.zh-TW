@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中設定 SPF 以協助防止詐騙
+title: 設定 SPF 以協助防止詐騙
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文說明如何更新網域名稱服務 (DNS) 記錄，使您可以在 Office 365 內的自訂網域中使用寄件者原則架構 (SPF)。 使用 SPF 協助驗證自您自訂網域傳送的輸出電子郵件。
-ms.openlocfilehash: 0480e23d00671f0fdfc4795f3844047e02a69122
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c1424ed9da6a36128d9f4502aadb475068ad029b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598330"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638317"
 ---
-# <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>在 Office 365 中設定 SPF 以協助防止詐騙
+# <a name="set-up-spf-to-help-prevent-spoofing"></a>設定 SPF 以協助防止詐騙
 
  **摘要：** 本文說明如何更新網域名稱服務 (DNS) 記錄，使您可以在 Office 365 內的自訂網域中使用寄件者原則架構 (SPF)。使用 SPF 協助驗證自您自訂網域傳送的輸出電子郵件。
 
@@ -59,7 +59,7 @@ ms.locfileid: "41598330"
 
 1. 請確定您熟悉下表中的 SFP 語法。
 
-   ||**如果您正在使用...**|**對 Office 365 客戶通用？**|**新增此...**|
+   ||**如果您正在使用...**|**對客戶通用？**|**新增此...**|
    |:-----|:-----|:-----|:-----|
    |1|任何電子郵件系統 (必要項)|通用。以此值開頭的所有 SPF TXT 記錄|v=spf1|
    |2|Exchange Online|通用|include:spf.protection.outlook.com|
@@ -75,7 +75,7 @@ ms.locfileid: "41598330"
 
    `v=spf1 include:spf.protection.outlook.com -all`
 
-   這是最通用的 Office 365 SPF TXT 記錄。 這筆記錄可供絕大部分人使用，無論您的 Office 365 資料中心是設於美國、歐洲 (包括德國) 或其他地方。
+   這是最通用的 SPF TXT 記錄。 這筆記錄可供絕大部分人使用，無論您的 Microsoft 資料中心是設於美國、歐洲 (包括德國) 或其他地方。
 
    不過，如果您已購買 Microsoft Office 365 Germany (為 Microsoft Cloud Germany 德國的一部分)，您應該使用第 4 行所包含的陳述式，而不是第 2 行。 例如，如果您已經完全裝載於 Office 365 Germany，也就是您沒有內部部署郵件伺服器，您的 SPF TXT 記錄會包含 1、4 和 7 的資料列，並且看起來如下：
 
