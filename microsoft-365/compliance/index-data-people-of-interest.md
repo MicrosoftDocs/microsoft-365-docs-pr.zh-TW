@@ -1,5 +1,7 @@
 ---
-title: 用于调查的数据的高级索引
+title: 調查的高級資料索引
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,36 +16,36 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3d562dbc1fc696b1e6d2acccc92f69385da49510
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 278985aa93f8802f78bd632a5fc90dd6be846b21
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076255"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637905"
 ---
-# <a name="advanced-indexing-of-data-for-an-investigation"></a><span data-ttu-id="f75fe-102">用于调查的数据的高级索引</span><span class="sxs-lookup"><span data-stu-id="f75fe-102">Advanced indexing of data for an investigation</span></span>
+# <a name="advanced-indexing-of-data-for-an-investigation"></a><span data-ttu-id="a03f2-102">調查的高級資料索引</span><span class="sxs-lookup"><span data-stu-id="a03f2-102">Advanced indexing of data for an investigation</span></span>
 
-<span data-ttu-id="f75fe-103">由于多种原因，包括存在图像、不支持的文件类型或遇到索引文件大小限制时，实时系统中的内容可以部分编制索引。</span><span class="sxs-lookup"><span data-stu-id="f75fe-103">Content in the live system can be partially indexed for a number of reasons including the existence of images, unsupported file types or when indexing file size limits are encountered.</span></span> <span data-ttu-id="f75fe-104">在处理高风险数据溢出时，需要确保搜索捕获要调查的所有数据。</span><span class="sxs-lookup"><span data-stu-id="f75fe-104">When you are dealing with high risk data spill, you want to make sure that your search captured all data that you want to investigate.</span></span> <span data-ttu-id="f75fe-105">将感兴趣的人员添加到数据调查时，将重新处理 Office 365 中被视为部分索引的任何内容，使其完全可搜索。</span><span class="sxs-lookup"><span data-stu-id="f75fe-105">When a person of interest is added to a Data investigation, any content in Office 365 that was deemed as partially indexed is re-processed to make it fully searchable.</span></span> <span data-ttu-id="f75fe-106">此过程称为*高级索引。*</span><span class="sxs-lookup"><span data-stu-id="f75fe-106">This process is called *Advanced indexing*.</span></span> 
+<span data-ttu-id="a03f2-103">即時系統中的內容可以部分編制索引，原因很多，包括影像存在、不支援的檔案類型，或是在遇到索引檔案大小限制時。</span><span class="sxs-lookup"><span data-stu-id="a03f2-103">Content in the live system can be partially indexed for a number of reasons including the existence of images, unsupported file types or when indexing file size limits are encountered.</span></span> <span data-ttu-id="a03f2-104">當您處理高風險資料溢出時，您想要確保搜尋已捕獲所有想要調查的資料。</span><span class="sxs-lookup"><span data-stu-id="a03f2-104">When you are dealing with high risk data spill, you want to make sure that your search captured all data that you want to investigate.</span></span> <span data-ttu-id="a03f2-105">當相關人員加入資料調查時，會重新處理被視為部分索引的任何內容，使其完全可供搜尋。</span><span class="sxs-lookup"><span data-stu-id="a03f2-105">When a person of interest is added to a Data investigation, any content that was deemed as partially indexed is re-processed to make it fully searchable.</span></span> <span data-ttu-id="a03f2-106">此處理程式稱為「*高級索引*」。</span><span class="sxs-lookup"><span data-stu-id="a03f2-106">This process is called *Advanced indexing*.</span></span> 
 
-<span data-ttu-id="f75fe-107">要了解有关 Office 365 和部分索引项中的处理支持的更多内容，请参阅：</span><span class="sxs-lookup"><span data-stu-id="f75fe-107">To learn more about processing support in Office 365 and partially indexed items, see:</span></span>
+<span data-ttu-id="a03f2-107">若要深入瞭解處理支援和部分索引項目目的詳細資訊，請參閱：</span><span class="sxs-lookup"><span data-stu-id="a03f2-107">To learn more about processing support and partially indexed items, see:</span></span>
 
-- [<span data-ttu-id="f75fe-108">数据调查中支持的文件类型</span><span class="sxs-lookup"><span data-stu-id="f75fe-108">Supported file types in Data Investigations</span></span>](supported-filetypes-datainvestigations.md)
+- [<span data-ttu-id="a03f2-108">資料調查中支援的檔案類型</span><span class="sxs-lookup"><span data-stu-id="a03f2-108">Supported file types in Data Investigations</span></span>](supported-filetypes-datainvestigations.md)
 
-- [<span data-ttu-id="f75fe-109">位於 Office 365 中內容搜尋的已局部編製索引項目</span><span class="sxs-lookup"><span data-stu-id="f75fe-109">Partially indexed items in Content Search in Office 365</span></span>](partially-indexed-items-in-content-search.md)
+- [<span data-ttu-id="a03f2-109">位於 Office 365 中內容搜尋的已局部編製索引項目</span><span class="sxs-lookup"><span data-stu-id="a03f2-109">Partially indexed items in Content Search in Office 365</span></span>](partially-indexed-items-in-content-search.md)
 
-- [<span data-ttu-id="f75fe-110">Exchange 搜尋編製索引的檔案格式</span><span class="sxs-lookup"><span data-stu-id="f75fe-110">File formats indexed by Exchange Search</span></span>](https://docs.microsoft.com/en-us/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+- [<span data-ttu-id="a03f2-110">Exchange 搜尋編製索引的檔案格式</span><span class="sxs-lookup"><span data-stu-id="a03f2-110">File formats indexed by Exchange Search</span></span>](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
-- [<span data-ttu-id="f75fe-111">SharePoint Server 中預設編目的檔案副檔名及剖析的檔案類型</span><span class="sxs-lookup"><span data-stu-id="f75fe-111">Default crawled file name extensions and parsed file types in SharePoint Server</span></span>](https://docs.microsoft.com/en-us/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [<span data-ttu-id="a03f2-111">SharePoint Server 中預設編目的檔案副檔名及剖析的檔案類型</span><span class="sxs-lookup"><span data-stu-id="a03f2-111">Default crawled file name extensions and parsed file types in SharePoint Server</span></span>](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
-## <a name="viewing-advanced-indexing-results"></a><span data-ttu-id="f75fe-112">查看高级索引结果</span><span class="sxs-lookup"><span data-stu-id="f75fe-112">Viewing Advanced indexing results</span></span>
+## <a name="viewing-advanced-indexing-results"></a><span data-ttu-id="a03f2-112">查看高級索引結果</span><span class="sxs-lookup"><span data-stu-id="a03f2-112">Viewing Advanced indexing results</span></span>
 
-<span data-ttu-id="f75fe-113">完成高级索引过程后，您可以了解重新处理的有效性。</span><span class="sxs-lookup"><span data-stu-id="f75fe-113">After the Advanced indexing process is completed, you can get an understanding of the effectiveness of re-processing.</span></span>  <span data-ttu-id="f75fe-114">在"感兴趣的人"索引视图中，该图列出了添加到*混合索引*中的所有项。</span><span class="sxs-lookup"><span data-stu-id="f75fe-114">In the People of interest indexing view, the graph lists all items added to the *hybrid index*.</span></span>  <span data-ttu-id="f75fe-115">混合索引是数据调查（预览）存储重新处理的内容的位置。</span><span class="sxs-lookup"><span data-stu-id="f75fe-115">The hybrid index is where Data Investigations (Preview) stores the re-processed content.</span></span>
+<span data-ttu-id="a03f2-113">在高級索引處理常式完成之後，您就可以深入瞭解重新處理的有效性。</span><span class="sxs-lookup"><span data-stu-id="a03f2-113">After the Advanced indexing process is completed, you can get an understanding of the effectiveness of re-processing.</span></span>  <span data-ttu-id="a03f2-114">在重要的 [索引視圖人員] 中，圖表會列出新增至*混合索引*的所有專案。</span><span class="sxs-lookup"><span data-stu-id="a03f2-114">In the People of interest indexing view, the graph lists all items added to the *hybrid index*.</span></span>  <span data-ttu-id="a03f2-115">混合索引是資料調查（預覽）儲存重新處理內容的所在位置。</span><span class="sxs-lookup"><span data-stu-id="a03f2-115">The hybrid index is where Data Investigations (Preview) stores the re-processed content.</span></span>
 
-<span data-ttu-id="f75fe-116">该图还包括需要修正的项数以及按文件类型划分的另一个错误图表。</span><span class="sxs-lookup"><span data-stu-id="f75fe-116">The graph also includes the number of items that require remediation and another graph of errors by file type.</span></span> <span data-ttu-id="f75fe-117">有关详细信息，请参阅[处理数据时的错误修正。](error-remediation.md)</span><span class="sxs-lookup"><span data-stu-id="f75fe-117">For more information, see [Error remediation when processing data](error-remediation.md).</span></span>
+<span data-ttu-id="a03f2-116">此圖也包含需要修正的專案數，以及另一個依檔案類型的錯誤圖表。</span><span class="sxs-lookup"><span data-stu-id="a03f2-116">The graph also includes the number of items that require remediation and another graph of errors by file type.</span></span> <span data-ttu-id="a03f2-117">如需詳細資訊，請參閱[在處理資料時進行錯誤修正](error-remediation.md)。</span><span class="sxs-lookup"><span data-stu-id="a03f2-117">For more information, see [Error remediation when processing data](error-remediation.md).</span></span>
 
-## <a name="updating-advanced-indexes-for-people-of-interest"></a><span data-ttu-id="f75fe-118">为感兴趣的人更新高级索引</span><span class="sxs-lookup"><span data-stu-id="f75fe-118">Updating Advanced indexes for people of interest</span></span>
+## <a name="updating-advanced-indexes-for-people-of-interest"></a><span data-ttu-id="a03f2-118">更新感興趣人員的高級索引</span><span class="sxs-lookup"><span data-stu-id="a03f2-118">Updating Advanced indexes for people of interest</span></span>
 
-<span data-ttu-id="f75fe-119">将感兴趣的人员添加到数据调查时，将重新处理所有部分索引的项目。</span><span class="sxs-lookup"><span data-stu-id="f75fe-119">When a person of interest is added to a data investigation, all partially indexed items are re-processed.</span></span> <span data-ttu-id="f75fe-120">但是，随着时间的推移，可能会将更多部分索引的项目添加到用户的邮箱或 OneDrive 帐户中。</span><span class="sxs-lookup"><span data-stu-id="f75fe-120">However, as time passes, more partially indexed items may be added to a user's mailbox or OneDrive account.</span></span>  <span data-ttu-id="f75fe-121">如果需要，可以更新索引。</span><span class="sxs-lookup"><span data-stu-id="f75fe-121">When needed, you can update the indexes.</span></span>
+<span data-ttu-id="a03f2-119">當相關人員加入資料調查時，會重新處理所有部分索引項目目。</span><span class="sxs-lookup"><span data-stu-id="a03f2-119">When a person of interest is added to a data investigation, all partially indexed items are re-processed.</span></span> <span data-ttu-id="a03f2-120">不過，隨著時間的推移，可將更多的索引項目目新增至使用者的信箱或 OneDrive 帳戶。</span><span class="sxs-lookup"><span data-stu-id="a03f2-120">However, as time passes, more partially indexed items may be added to a user's mailbox or OneDrive account.</span></span>  <span data-ttu-id="a03f2-121">如有需要，您可以更新索引。</span><span class="sxs-lookup"><span data-stu-id="a03f2-121">When needed, you can update the indexes.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="f75fe-122">更新感兴趣的人员索引是一个长时间运行的过程。</span><span class="sxs-lookup"><span data-stu-id="f75fe-122">Updating people of interest indexes is a long running process.</span></span> <span data-ttu-id="f75fe-123">建议您在调查中每天更新索引多次。</span><span class="sxs-lookup"><span data-stu-id="f75fe-123">It's recommended that you don't update indexes more than once per day in an investigation.</span></span>
+> <span data-ttu-id="a03f2-122">更新感興趣的索引人員會執行很長的處理常式。</span><span class="sxs-lookup"><span data-stu-id="a03f2-122">Updating people of interest indexes is a long running process.</span></span> <span data-ttu-id="a03f2-123">建議您不要在調查中每日更新一次以上的索引。</span><span class="sxs-lookup"><span data-stu-id="a03f2-123">It's recommended that you don't update indexes more than once per day in an investigation.</span></span>

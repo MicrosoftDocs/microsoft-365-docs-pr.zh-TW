@@ -1,5 +1,5 @@
 ---
-title: Office 365 服務加密
+title: 服務加密
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -8,43 +8,52 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.date: 4/8/2020
+ms.date: 10/3/2019
 localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: 摘要：瞭解 Microsoft Office 365 的服務層級資料加密。
-ms.openlocfilehash: fb6bf87fbd51bcb4383e9eb595ef11f081989d86
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 摘要：瞭解 Microsoft Office 365 中的資料恢復能力。
+ms.openlocfilehash: 1c31c0d5524370fd417460fbacf3695df4fa0102
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211940"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632238"
 ---
-# <a name="office-365-service-encryption"></a><span data-ttu-id="0c250-103">Office 365 服務加密</span><span class="sxs-lookup"><span data-stu-id="0c250-103">Office 365 Service Encryption</span></span>
+# <a name="service-encryption"></a><span data-ttu-id="c304c-103">服務加密</span><span class="sxs-lookup"><span data-stu-id="c304c-103">Service Encryption</span></span>
 
-<span data-ttu-id="0c250-104">除了使用 BitLocker 用於大量加密、Exchange Online、商務用 Skype、SharePoint Online、OneDrive 商務用，以及小組也會使用服務加密來加密客戶資料。</span><span class="sxs-lookup"><span data-stu-id="0c250-104">In addition to using BitLocker for volume-level encryption, Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams also use Service Encryption to encrypt customer data.</span></span> <span data-ttu-id="0c250-105">服務加密允許兩個主要的管理選項：</span><span class="sxs-lookup"><span data-stu-id="0c250-105">Service Encryption allows for two key management options:</span></span>
+<span data-ttu-id="c304c-104">除了使用大量的加密、Exchange Online、商務用 Skype、SharePoint 線上和 OneDrive 商務用，也會使用服務加密來加密客戶資料。</span><span class="sxs-lookup"><span data-stu-id="c304c-104">In addition to using volume-level encryption, Exchange Online, Skype for Business, SharePoint Online, and OneDrive for Business also use Service Encryption to encrypt customer data.</span></span> <span data-ttu-id="c304c-105">服務加密允許兩個主要的管理選項：</span><span class="sxs-lookup"><span data-stu-id="c304c-105">Service Encryption allows for two key management options:</span></span>
 
-- <span data-ttu-id="0c250-106">Microsoft 管理所有的加密金鑰。</span><span class="sxs-lookup"><span data-stu-id="0c250-106">Microsoft manages all cryptographic keys.</span></span> <span data-ttu-id="0c250-107">此選項目前可用於 SharePoint 線上 OneDrive、商務用 Skype、商務用 Skype 和團隊聊天。</span><span class="sxs-lookup"><span data-stu-id="0c250-107">This option is currently available in SharePoint Online, OneDrive for Business, Skype for Business, and Teams chats.</span></span> <span data-ttu-id="0c250-108">根據預設，您的資料會以 Microsoft 管理的金鑰加密。</span><span class="sxs-lookup"><span data-stu-id="0c250-108">Your data is encrypted by default with Microsoft-managed keys.</span></span>
+- <span data-ttu-id="c304c-106">Microsoft 管理所有的加密金鑰。</span><span class="sxs-lookup"><span data-stu-id="c304c-106">Microsoft manages all cryptographic keys.</span></span> <span data-ttu-id="c304c-107">（目前 SharePoint 線上 OneDrive、商務用 Skype 和商務用 Skype 等此選項。）</span><span class="sxs-lookup"><span data-stu-id="c304c-107">(This option is currently available in SharePoint Online, OneDrive for Business, and Skype for Business.)</span></span>
 
-- <span data-ttu-id="0c250-109">您的組織提供根機碼。</span><span class="sxs-lookup"><span data-stu-id="0c250-109">Your organization supplies the root keys.</span></span> <span data-ttu-id="0c250-110">您可以使用 Azure Key Vault 管理這些金鑰。</span><span class="sxs-lookup"><span data-stu-id="0c250-110">You manage these keys using Azure Key Vault.</span></span> <span data-ttu-id="0c250-111">此選項稱為「客戶金鑰」。</span><span class="sxs-lookup"><span data-stu-id="0c250-111">This option is called Customer Key.</span></span> <span data-ttu-id="0c250-112">客戶金鑰目前適用于 Exchange Online、SharePoint 線上 OneDrive、商務用 Skype、商務用 Skype 及小組檔案。</span><span class="sxs-lookup"><span data-stu-id="0c250-112">Customer Key is currently available for Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, and Teams files.</span></span> <span data-ttu-id="0c250-113">如果您使用客戶金鑰，這些金鑰會取代 Microsoft 受管理的金鑰來加密您的資料。</span><span class="sxs-lookup"><span data-stu-id="0c250-113">If you use Customer Key, these keys replace Microsoft-managed keys to encrypt your data.</span></span>
+- <span data-ttu-id="c304c-108">您的組織提供根機碼。</span><span class="sxs-lookup"><span data-stu-id="c304c-108">Your organization supplies the root keys.</span></span> <span data-ttu-id="c304c-109">您可以使用 Azure Key Vault 管理這些金鑰。</span><span class="sxs-lookup"><span data-stu-id="c304c-109">You manage these keys using Azure Key Vault.</span></span> <span data-ttu-id="c304c-110">此選項稱為「客戶金鑰」。</span><span class="sxs-lookup"><span data-stu-id="c304c-110">This option is called Customer Key.</span></span> <span data-ttu-id="c304c-111">客戶金鑰目前適用于 Exchange Online、SharePoint 線上 OneDrive、商務用 Skype、商務用 Skype 及小組檔案。</span><span class="sxs-lookup"><span data-stu-id="c304c-111">Customer Key is currently available for Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, and Teams files.</span></span> <span data-ttu-id="c304c-112">如果您使用客戶金鑰，這些金鑰會取代 Microsoft 受管理的金鑰來加密您的資料。</span><span class="sxs-lookup"><span data-stu-id="c304c-112">If you use Customer Key, these keys replace Microsoft-managed keys to encrypt your data.</span></span>
 
-<span data-ttu-id="0c250-114">不論選擇哪個選項，服務加密都會提供多項優點：</span><span class="sxs-lookup"><span data-stu-id="0c250-114">Whatever option you choose, service encryption provides multiple benefits:</span></span>
+<span data-ttu-id="c304c-113">服務加密可提供多項優點。</span><span class="sxs-lookup"><span data-stu-id="c304c-113">Service encryption provides multiple benefits.</span></span> <span data-ttu-id="c304c-114">例如，客戶金鑰：</span><span class="sxs-lookup"><span data-stu-id="c304c-114">For example, Customer Key:</span></span>
 
-- <span data-ttu-id="0c250-115">強制進行使用者驗證，以取得及解密已授權使用者要求的資料。</span><span class="sxs-lookup"><span data-stu-id="0c250-115">Enforces user authentication to retrieve and decrypt data requested by an authorized user.</span></span>
+- <span data-ttu-id="c304c-115">在增強式加密保護之上提供版權保護和管理功能。</span><span class="sxs-lookup"><span data-stu-id="c304c-115">Provides rights protection and management features on top of strong encryption protection.</span></span>
 
-- <span data-ttu-id="0c250-116">讓 Windows 作業系統管理員分開存取作業系統所儲存或處理的客戶資料。</span><span class="sxs-lookup"><span data-stu-id="0c250-116">Provides separation of Windows operating system administrators from access to customer data stored or processed by the operating system.</span></span>
+- <span data-ttu-id="c304c-116">包含客戶金鑰選項，可讓多租使用者服務提供每個租使用者金鑰管理的服務。</span><span class="sxs-lookup"><span data-stu-id="c304c-116">Includes a Customer Key option that enables multi-tenant services to provide per-tenant key management.</span></span>
 
-- <span data-ttu-id="0c250-117">增強 Office 365 的功能，以符合具有加密之相容性需求之客戶的需求。</span><span class="sxs-lookup"><span data-stu-id="0c250-117">Enhances the ability of Office 365 to meet the demands of customers that have compliance requirements regarding encryption.</span></span>
+- <span data-ttu-id="c304c-117">讓 Windows 作業系統管理員分開存取作業系統所儲存或處理的客戶資料。</span><span class="sxs-lookup"><span data-stu-id="c304c-117">Provides separation of Windows operating system administrators from access to customer data stored or processed by the operating system.</span></span>
 
-<span data-ttu-id="0c250-118">若要瞭解如何設定適用于 Exchange Online、商務用 Skype、SharePoint 線上、商務 OneDrive 或小組檔案的 Office 365 客戶金鑰，請參閱下列文章：</span><span class="sxs-lookup"><span data-stu-id="0c250-118">To learn how to set up Customer Key for Office 365 for Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams files, see these articles:</span></span>
+- <span data-ttu-id="c304c-118">增強 Microsoft 365 的功能，以滿足具有加密之相容性需求的客戶的需求。</span><span class="sxs-lookup"><span data-stu-id="c304c-118">Enhances the ability of Microsoft 365 to meet the demands of customers that have compliance requirements regarding encryption.</span></span>
 
-- [<span data-ttu-id="0c250-119">Office 365 中的客戶機碼服務加密</span><span class="sxs-lookup"><span data-stu-id="0c250-119">Service encryption with Customer Key in Office 365</span></span>](customer-key-overview.md)
+## <a name="customer-key"></a><span data-ttu-id="c304c-119">客戶金鑰</span><span class="sxs-lookup"><span data-stu-id="c304c-119">Customer Key</span></span>
 
-- [<span data-ttu-id="0c250-120">設定 Office 365 的客戶金鑰</span><span class="sxs-lookup"><span data-stu-id="0c250-120">Set up Customer Key for Office 365</span></span>](customer-key-set-up.md)
+<span data-ttu-id="c304c-120">使用客戶金鑰，您可以使用內部部署硬體服務模組（HSM）或 Azure Key Vault （AKV）來產生您自己的加密金鑰。</span><span class="sxs-lookup"><span data-stu-id="c304c-120">Using Customer Key, you can generate your own cryptographic keys using either an on-premises Hardware Service Module (HSM) or Azure Key Vault (AKV).</span></span> <span data-ttu-id="c304c-121">不論您產生金鑰的方式為何，您可以使用 AKV 來控制和管理 Office 365 所使用的加密金鑰。</span><span class="sxs-lookup"><span data-stu-id="c304c-121">Regardless of how you generate the key, you use AKV to control and manage the cryptographic keys used by Office 365.</span></span> <span data-ttu-id="c304c-122">當您的金鑰儲存在 AKV 中之後，即可將其當作用來加密您的信箱資料或檔案之其中一個 keychains 的根。</span><span class="sxs-lookup"><span data-stu-id="c304c-122">Once your keys are stored in AKV, they can be used as the root of one of the keychains that encrypts your mailbox data or files.</span></span>
 
-- [<span data-ttu-id="0c250-121">管理 Office 365 的客戶金鑰</span><span class="sxs-lookup"><span data-stu-id="0c250-121">Manage Customer Key for Office 365</span></span>](customer-key-manage.md)
+<span data-ttu-id="c304c-123">客戶金鑰的另一個好處是，您可以透過 Microsoft 處理資料的能力來控制。</span><span class="sxs-lookup"><span data-stu-id="c304c-123">Another benefit of Customer Key is the control you have over the ability of Microsoft to process your data.</span></span> <span data-ttu-id="c304c-124">如果您想要從 Office 365 中移除資料，例如，如果您想要使用 Microsoft 來終止服務，或移除儲存在雲端中的部分資料，您可以這麼做，並使用客戶金鑰做為技術控制。</span><span class="sxs-lookup"><span data-stu-id="c304c-124">If you want to remove data from Office 365, such as if you want to terminate service with Microsoft or remove a portion of your data stored in the cloud, you can do so and use Customer Key as a technical control.</span></span> <span data-ttu-id="c304c-125">這可確保任何人（包括 Microsoft）都無法存取或處理資料。</span><span class="sxs-lookup"><span data-stu-id="c304c-125">This ensures that no one, including Microsoft, can access or process the data.</span></span> <span data-ttu-id="c304c-126">客戶金鑰補充及補充客戶密碼箱，您可以用來控制 Microsoft 人員對資料的存取。</span><span class="sxs-lookup"><span data-stu-id="c304c-126">Customer Key is in addition and complementary to Customer Lockbox that you use to control access to your data by Microsoft personnel.</span></span>
 
-- [<span data-ttu-id="0c250-122">滾動或輪替客戶金鑰或可用性金鑰</span><span class="sxs-lookup"><span data-stu-id="0c250-122">Roll or rotate a customer key or an availability key</span></span>](customer-key-availability-key-roll.md)
+<span data-ttu-id="c304c-127">若要瞭解如何設定適用于 Exchange Online、商務用 Skype、SharePoint Online （包括小組網站）和商務 OneDrive 的 Microsoft 365 的客戶金鑰，請參閱下列文章：</span><span class="sxs-lookup"><span data-stu-id="c304c-127">To learn how to set up Customer Key for Microsoft 365 for Exchange Online, Skype for Business, SharePoint Online, including Team Sites, and OneDrive for Business, see these articles:</span></span>
 
-- [<span data-ttu-id="0c250-123">瞭解可用性金鑰</span><span class="sxs-lookup"><span data-stu-id="0c250-123">Understand the availability key</span></span>](customer-key-availability-key-understand.md)
+- [<span data-ttu-id="c304c-128">使用客戶金鑰的服務加密</span><span class="sxs-lookup"><span data-stu-id="c304c-128">Service encryption with Customer Key</span></span>](customer-key-overview.md)
+
+- [<span data-ttu-id="c304c-129">設定客戶金鑰</span><span class="sxs-lookup"><span data-stu-id="c304c-129">Set up Customer Key</span></span>](customer-key-set-up.md)
+
+- [<span data-ttu-id="c304c-130">管理客戶金鑰</span><span class="sxs-lookup"><span data-stu-id="c304c-130">Manage Customer Key</span></span>](customer-key-manage.md)
+
+- [<span data-ttu-id="c304c-131">滾動或輪替客戶金鑰或可用性金鑰</span><span class="sxs-lookup"><span data-stu-id="c304c-131">Roll or rotate a customer key or an availability key</span></span>](customer-key-availability-key-roll.md)
+
+- [<span data-ttu-id="c304c-132">瞭解可用性金鑰</span><span class="sxs-lookup"><span data-stu-id="c304c-132">Understand the availability key</span></span>](customer-key-availability-key-understand.md)
+ 
