@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 商務版的增加威脅防護
+title: 增強 Microsoft 365 商務版的威脅防護
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,57 +20,57 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 設定符合性功能，以防止資料遺失，並協助保護您和您客戶的敏感資訊的安全。
-ms.openlocfilehash: 6f4520b052c2e7acb8748d3c9d6e26777cb56d4b
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: 設定規范功能以避免資料遺失，並協助保護您的和客戶的敏感資訊。
+ms.openlocfilehash: e0d853223c7e6f455cba6e68ad173b137992d863
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561233"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635117"
 ---
 # <a name="set-up-compliance-features"></a>設定合規性功能
 
-Microsoft 365 商務版隨附於保護您的資料和裝置，並協助您保護您和您客戶的敏感資訊安全性的功能。
+您的 Microsoft 365 商務版特優隨附功能可保護您的資料和裝置，並可協助您保護您的和客戶的敏感資訊。
 
 ## <a name="set-up-dlp-features"></a>設定 DLP 功能
 
-如需有關如何設定的原則，以防止個人識別資訊 (PII) 的範例，請參閱[建立 DLP 原則範本中](https://support.office.com/article/59414438-99f5-488b-975c-5023f2254369)。 
+請參閱[從範本建立 DLP 原則](https://support.office.com/article/59414438-99f5-488b-975c-5023f2254369)，以取得如何設定原則以防範個人身分識別資訊（PII）的範例。 
   
-DLP 隨附許多不同的地區設定的許多準備-使用原則範本。 例如，澳洲財務資料、 加拿大個人資訊法案、 美國財務資料，依此類推。 如需完整清單，請參閱[什麼的 DLP 原則範本包含](https://support.office.com/article/c2e588d3-8f4f-4937-a286-8c399f28953a)。 所有這些範本可啟用類似 PII 範本範例。 
+DLP 隨附許多可用於許多不同地區設定的現成原則範本。 例如，澳大利亞財務資料、加拿大個人資訊法案、美國財務資料等等。 如需完整清單，請參閱[DLP 原則範本包含哪些內容](https://support.office.com/article/c2e588d3-8f4f-4937-a286-8c399f28953a)。 您可以啟用上述所有範本，類似 PII 範本範例。 
   
-## <a name="set-up-email-retention-with-exchange-online-archiving"></a>設定搭配 Exchange Online Archiving 的電子郵件保留
+## <a name="set-up-email-retention-with-exchange-online-archiving"></a>設定 Exchange Online 封存的電子郵件保留
 
- **Exchange Online Archiving**授權功能可協助維護合規性和法規的標準來保留電子郵件內容 ediscovery （英文）。 它也可協助降低風險，如果沒有進行處分為止，並提供方法來復原資料安全性漏洞之後，或當您要復原刪除的項目。 您可以使用訴訟暫止來保留的所有使用者的內容，或使用自訂您要保留的保留原則。
+ **Exchange Online**封存授權功能可透過保存 eDiscovery 的電子郵件內容，協助維護法規遵從性和法規標準。 如果有訴訟，也會在安全性破壞或需要復原已刪除的專案時，提供復原資料的方法。 您可以使用訴訟暫止以保留使用者的所有內容，或使用保留原則自訂您想要保留的專案。
   
-**訴訟資料暫留：** 您可以保留所有信箱內容，包括已刪除的項目依據] 將使用者的整個信箱放置於訴訟保留。 
+**訴訟暫止：** 您可以將使用者的整個信箱置於訴訟暫止狀態，以保留包括已刪除專案的所有信箱內容。 
     
-若要將信箱置於訴訟暫止，在系統管理中心：
+若要將信箱設為訴訟暫止狀態，請在系統管理中心：
     
-1. 在左側導覽中，移至 [**使用者** \> **作用中的使用者**。
+1. 在左側導覽中，移至 [**使用者** \> ] [作用中**使用者**]。
     
-2. 選取您想要置於 [訴訟暫止的信箱保留的使用者。 在使用者窗格中，展開 [**郵件設定**]，旁邊**其他設定**，選擇 [**編輯 Exchange 屬性**。
+2. 選取您要對其信箱進行訴訟暫止的使用者。 在 [使用者] 窗格中，展開 [**郵件設定**]，然後按一下 [**其他設定**] 旁的 [**編輯 Exchange 屬性**]。
     
-3. 在使用者信箱] 頁面上，選擇 [* * 信箱功能 * * 在左側導覽中，然後選擇 [在 [**訴訟暫止**] 下的 [**啟用**] 連結。
+3. 在使用者的 [信箱] 頁面上，選擇左側流覽上的 [*] [信箱功能] * *，然後選擇 [**訴訟暫**止] 下的 [**啟用**] 連結。
     
-4. 在 [**訴訟暫止**] 對話方塊中，您可以指定為訴訟暫止持續時間在 [**訴訟暫止持續時間**] 欄位。 保留欄位空白如果您想要放置無限期的保留。 您也可以新增備忘稿，並指示您可能要提供更多有關訴訟暫止的網站信箱擁有者。 \>[**儲存**]。
+4. 在 [**訴訟**暫止] 對話方塊中，您可以在 [**訴訟暫止持續時間**] 欄位中指定訴訟暫止持續時間。 如果您想要進行無限保留，請將此欄位保留空白。 您也可以新增附注，並將信箱擁有者導向至網站，您可能需要進一步說明訴訟暫止。 \>**儲存**。
     
-**保留：** 您可以啟用自訂的保留原則，例如，若要保留經過一段時間，或在保留期間結束永久刪除內容。 若要深入了解，請參閱[保留原則的概觀](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)。
+**保留：** 例如，您可以啟用自訂的保留原則，以在保留期間結束時保留特定時間量或永久刪除內容。 若要深入瞭解，請參閱[保留原則一覽](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)。
 
-## <a name="set-up-sensitivity-labels"></a>敏感度標籤設定
+## <a name="set-up-sensitivity-labels"></a>設定敏感度標籤
 
-敏感度標籤來自與 Azure 資訊保護 (AIP) 計劃 1，並協助您分類，並選擇性地套用標籤，以保護您的文件和電子郵件。 定義規則和條件的系統管理員，以手動方式的使用者，或使用組合提供使用者的建議，可自動套用標籤。
+敏感度標籤隨附 Azure 資訊保護（AIP）方案1，並可套用標籤，協助您分類，並選擇性地保護您的檔和電子郵件。 系統管理員可以自動套用標籤，以定義規則和條件、手動由使用者手動套用，或是使用使用者提供建議的組合來套用。
 
-若要設定敏感度標籤，檢視[建立及管理敏感度標籤](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)的影片。
+若要設定敏感度標籤，請 view[建立及管理敏感度標籤](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)影片。
 
 
 
-### <a name="install-the-azure-information-protection-client-manually"></a>以手動方式安裝 Azure 資訊保護用戶端
+### <a name="install-the-azure-information-protection-client-manually"></a>手動安裝 Azure 資訊保護用戶端
 
 若要手動安裝 AIP 用戶端：
 
-1. 從[Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=53018)下載**AzinfoProtection_UL.exe** 。
+1. 從[Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=53018)下載**AzinfoProtection_UL** 。
  
-2. 您可以確認安裝成功可以檢視 Word 文件，以確定可在 [**首頁**] 索引標籤上 [**敏感度**] 選項。
-<br/>![保護索引標籤下拉式清單中的 Word 文件。](../media/word-sensitivity.png)
+2. 您可以透過查看 Word 檔來驗證安裝是否正常運作，並確定 [**首頁**] 索引標籤上有 [**敏感度**] 選項。
+<br/>![在 Word 檔中下拉式清單中的 [保護] 索引標籤。](../media/word-sensitivity.png)
 
 如需詳細資訊，請參閱[安裝用戶端](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)。

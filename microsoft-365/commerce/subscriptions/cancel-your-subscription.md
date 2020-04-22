@@ -1,5 +1,5 @@
 ---
-title: 取消您的訂閱
+title: 取消訂閱
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
-description: 瞭解如何取消商務用 Office 365 或 Microsoft 365 試用版或付費訂閱。
-ms.openlocfilehash: d58ad1b18c8834740984f0ff47b7983a6797e108
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: 瞭解如何取消 Microsoft 365 for business 或 Microsoft 365 試用版或付費訂閱。
+ms.openlocfilehash: 23a43b3a152844090cbbdf5baef29a7b8f992778
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142160"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636592"
 ---
-# <a name="cancel-your-subscription"></a>取消您的訂閱
+# <a name="cancel-your-subscription"></a>取消訂閱
 
-*資格：* 如果您指派給使用者的授權不足25個，您可以隨時在系統管理中心取消商務用 Office 365 試用或付費訂閱。 如果您有超過25個授權指派給使用者，請[致電支援部門以取消您的訂閱](../../admin/contact-support-for-business-products.md)。
+*資格：* 如果您指派給使用者的授權不足25個，您可以隨時取消系統管理中心的 Microsoft 365 for business 試用或付費訂閱。 如果您有超過25個授權指派給使用者，請[致電支援部門以取消您的訂閱](../../admin/contact-support-for-business-products.md)。
 
 *退款：* 在下一個計費週期內，任何按比例支付的信用都會傳回給您。
 
@@ -43,13 +43,14 @@ ms.locfileid: "43142160"
 
 ::: moniker range="o365-worldwide"
 
+
 1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
 
 2. 找到您要取消的訂閱，然後在 [**設定] & 動作**] 下，選取 [**取消訂閱**]。
 
 3. 查看重要的日期，提供您取消原因的意見反應，然後選取 [**取消訂閱**]。
 
-    您的訂閱現在會以**停用**狀態顯示，而且在刪除之前已降低功能。 如需取消付費的 Office 365 for business 訂閱時可預期的詳細資訊，請參閱[當我的商務用 office 365 結束時，我的資料和存取會發生什麼事？](what-if-my-subscription-expires.md)
+    您的訂閱現在會以**停用**狀態顯示，而且在刪除之前已降低功能。 如需在已收費的 Microsoft 365 for business 訂閱已取消時可預期的詳細資訊，請參閱[當我的 microsoft 365 for business 訂閱結束時，我的資料和存取會發生什麼事？](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -65,7 +66,7 @@ ms.locfileid: "43142160"
 
 4. 查看重要的日期，提供您取消原因的意見反應，然後選取 [**取消訂閱**]。
 
-    您的訂閱現在會以**停用**狀態顯示，而且在刪除之前已降低功能。 如需取消付費的 Office 365 for business 訂閱時可預期的詳細資訊，請參閱[當我的商務用 office 365 結束時，我的資料和存取會發生什麼事？](what-if-my-subscription-expires.md)
+    您的訂閱現在會以**停用**狀態顯示，而且在刪除之前已降低功能。 如需在已收費的 Microsoft 365 for business 訂閱已取消時可預期的詳細資訊，請參閱[當我的 microsoft 365 for business 訂閱結束時，我的資料和存取會發生什麼事？](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -81,7 +82,7 @@ ms.locfileid: "43142160"
 
 4. 查看重要的日期，提供您取消原因的意見反應，然後選取 [**取消訂閱**]。
 
-    您的訂閱現在會以**停用**狀態顯示，而且在刪除之前已降低功能。 如需取消付費的 Office 365 for business 訂閱時可預期的詳細資訊，請參閱[當我的商務用 office 365 結束時，我的資料和存取會發生什麼事？](what-if-my-subscription-expires.md)
+    您的訂閱現在會以**停用**狀態顯示，而且在刪除之前已降低功能。 如需在已收費的 Microsoft 365 for business 訂閱已取消時可預期的詳細資訊，請參閱[當我的 microsoft 365 for business 訂閱結束時，我的資料和存取會發生什麼事？](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -110,11 +111,11 @@ ms.locfileid: "43142160"
 
 如果您設定了自訂網域，您會新增 DNS 記錄，讓網域能夠搭配 Office 365 服務運作。 在您移除網域之前，請務必在您的 DNS 主機上更新 DNS 記錄（例如您的網域 MX 記錄）。
 
-例如，變更您 DNS 主機上的 MX 記錄。 傳送到您網域的電子郵件會停止進入您的 Office 365 位址，而是移至新的電子郵件提供者。 （MX 記錄會決定傳送網域電子郵件的位置。）
+例如，變更您 DNS 主機上的 MX 記錄。 傳送到您網域的電子郵件會停止傳送至您的 Microsoft 位址，而是移至新的電子郵件提供者。 （MX 記錄會決定傳送網域電子郵件的位置。）
 
 - 如果您的名稱伺服器（NS）記錄[指向 Office 365 名稱伺服器](../../admin/setup/add-domain.md)，除非您將 NS 記錄變更為指向新的 DNS 主機，否則 MX 記錄的變更才會生效（請參閱步驟2）。
 
-- 在您更新 MX 記錄之前，請讓您的使用者知道您計畫要用來切換電子郵件的日期，以及您計畫使用的新電子郵件提供者。 此外，如果您的使用者想要將其現有的 Office 365 電子郵件移至新的提供者，則必須採取額外的步驟。
+- 在您更新 MX 記錄之前，請讓您的使用者知道您計畫要用來切換電子郵件的日期，以及您計畫使用的新電子郵件提供者。 此外，如果您的使用者想要將其現有的 Microsoft 電子郵件移至新的提供者，則必須採取額外的步驟。
 
 - 在您變更 MX 記錄的當天，請依照本文中所述的其餘步驟進行。
 

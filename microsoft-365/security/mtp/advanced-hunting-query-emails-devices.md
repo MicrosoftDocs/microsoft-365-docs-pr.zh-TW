@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8310a9a57c8dc7406c0b1d56b20009b6400abcb1
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: ec7f9083401fdf7a2114d99ddd2dcc009411e34b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928981"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633504"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>搜捕所有裝置和電子郵件的威脅
 
@@ -31,7 +31,7 @@ ms.locfileid: "42928981"
 
 
 
-Microsoft 威脅防護的[進階搜捕](advanced-hunting-overview.md)能讓您主動搜捕 Windows 裝置和 Office 365 電子郵件的威脅。 以下是一些搜捕案例和範例查詢，可協助您探索如何建立涵蓋裝置和電子郵件的查詢。
+Microsoft 威脅防護中的[高級搜尋](advanced-hunting-overview.md)可讓您主動搜尋您的 Windows 裝置和 Microsoft 電子郵件中的威脅。 以下是一些搜捕案例和範例查詢，可協助您探索如何建立涵蓋裝置和電子郵件的查詢。
 
 ## <a name="obtain-user-accounts-from-email-addresses"></a>從電子郵件地址取得使用者帳戶
 在[涵蓋裝置和電子郵件的表格](advanced-hunting-schema-tables.md)建立查詢時，您可能需要取得寄件者或收件者電子郵件地址的使用者帳戶名稱。 若要這麼做，請使用電子郵件地址的*本機主機*：

@@ -1,5 +1,5 @@
 ---
-title: Office 365 如何驗證寄件者位址，以防止網路釣魚
+title: Microsoft 365 如何驗證寄件者位址，以防止網路釣魚
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Lear Office 365 中輸入郵件的電子郵件地址需求。 從2017年11月開始，服務現在需要 RFC 相容性位址，以協助防止欺騙。
-ms.openlocfilehash: 4df073cfff3c36f60a013237d95548cb48fa7b5f
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: Lear Microsoft 365 中輸入郵件的電子郵件地址需求。 從2017年11月開始，服務現在需要 RFC 相容性位址，以協助防止欺騙。
+ms.openlocfilehash: 876ede087b37c381b9e9b557268057122e0987c0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528998"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633975"
 ---
-# <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 如何驗證寄件者位址，以防止網路釣魚
+# <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Microsoft 365 如何驗證寄件者位址，以防止網路釣魚
 
-Office 365 電子郵件帳戶會收到日益大量的網路釣魚攻擊。 除了使用[冒牌（偽造）寄件者電子郵件地址](anti-spoofing-protection.md)，攻擊者通常會使用來自于網際網路標準的「寄件者」位址值。 為了協助防止此類型的網路釣魚，Office 365 和 Outlook.com 現在要求輸入郵件包含與 RFC 相容的「來源位址」（如本主題所述）。 此強制已于2017年11月啟用。
+Microsoft 365 電子郵件帳戶會收到日益大量的網路釣魚攻擊。 除了使用[冒牌（偽造）寄件者電子郵件地址](anti-spoofing-protection.md)，攻擊者通常會使用來自于網際網路標準的「寄件者」位址值。 為了協助防止此類型的網路釣魚，Microsoft 365 和 Outlook.com 現在要求輸入郵件包含與 RFC 相容的「來源位址」（如本主題所述）。 此強制已于2017年11月啟用。
 
 **附註**：
 
@@ -75,31 +75,31 @@ Office 365 電子郵件帳戶會收到日益大量的網路釣魚攻擊。 除�
 
 - `From: "Sender, Example" <sender.example@contoso.com>`
 
-- `From: "Office 365" <sender@contoso.com>`
+- `From: "Microsoft 365" <sender@contoso.com>`
 
-- `From: Office 365 <sender@contoso.com>`（不建議使用，因為顯示名稱並未以雙引號括住）。
+- `From: Microsoft 365 <sender@contoso.com>`（不建議使用，因為顯示名稱並未以雙引號括住）。
 
 下列寄件者電子郵件地址無效：
 
-- **沒有寄件者位址**：部分自動化郵件不包含寄件者位址。 過去，當 Office 365 或 Outlook.com 收到沒有寄件者位址的郵件時，此服務會新增下列預設值： address，使郵件可傳送：
+- **沒有寄件者位址**：部分自動化郵件不包含寄件者位址。 過去，當 Microsoft 365 或 Outlook.com 收到沒有寄件者位址的郵件時，此服務會新增下列預設值： address，使郵件可傳送：
 
   `From: <>`
 
   現在，已不再接受來自位址為空白的郵件。
 
-- `From: Office 365 sender@contoso.com`（顯示名稱已存在，但是電子郵件地址不是以角括弧括住）。
+- `From: Microsoft 365 sender@contoso.com`（顯示名稱已存在，但是電子郵件地址不是以角括弧括住）。
 
-- `From: "Office 365" <sender@contoso.com> (Sent by a process)`（電子郵件地址之後的文字。）
+- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)`（電子郵件地址之後的文字。）
 
 - `From: Sender, Example <sender.example@contoso.com>`（顯示名稱包含逗號，但未以雙引號括住）。
 
-- `From: "Office 365 <sender@contoso.com>"`（會錯誤地將整個值放在雙引號內。）
+- `From: "Microsoft 365 <sender@contoso.com>"`（會錯誤地將整個值放在雙引號內。）
 
-- `From: "Office 365 <sender@contoso.com>" sender@contoso.com`（顯示名稱已存在，但是電子郵件地址不是以角括弧括住）。
+- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com`（顯示名稱已存在，但是電子郵件地址不是以角括弧括住）。
 
-- `From: Office 365<sender@contoso.com>`（顯示名稱和左邊的角括弧之間沒有間距）。
+- `From: Microsoft 365<sender@contoso.com>`（顯示名稱和左邊的角括弧之間沒有間距）。
 
-- `From: "Office 365"<sender@contoso.com>`（右雙引號和左邊的角括弧之間沒有間距）。
+- `From: "Microsoft 365"<sender@contoso.com>`（右雙引號和左邊的角括弧之間沒有間距）。
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>抑制您的自訂網域的自動回復
 
@@ -115,16 +115,16 @@ Office 365 電子郵件帳戶會收到日益大量的網路釣魚攻擊。 除�
 noreply.contoso.com IN MX .
 ```
 
-如需設定 MX 記錄的詳細資訊，請參閱[在 Office 365 的任何 DNS 主機服務提供者中建立 dns 記錄](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
+如需設定 MX 記錄的詳細資訊，請參閱[在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
 
 如需有關發佈 null MX 的詳細資訊，請參閱[RFC 7505](https://tools.ietf.org/html/rfc7505)。
 
 ## <a name="override-from-address-enforcement"></a>從位址強制覆寫
 
-若要略過輸入電子郵件的寄件者位址需求，您可以使用 IP 允許清單（連線篩選）或郵件流程規則（也稱為傳輸規則），如在[Office 365 中建立安全寄件者清單中](create-safe-sender-lists-in-office-365.md)所述。
+若要略過輸入電子郵件的寄件者位址需求，您可以使用 IP 允許清單（連線篩選）或郵件流程規則（也稱為傳輸規則），如在[Microsoft 365 中建立安全寄件者清單中](create-safe-sender-lists-in-office-365.md)所述。
 
-您無法覆寫從 Office 365 傳送的輸出電子郵件的寄件者位址需求。 此外，Outlook.com 將不允許任何類型的覆寫（甚至是透過支援）。
+您無法覆寫從 Microsoft 365 傳送的輸出電子郵件的寄件者位址需求。 此外，Outlook.com 將不允許任何類型的覆寫（甚至是透過支援）。
 
-## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a>其他防範和防止在 Office 365 中 cybercrimes 的方式
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>在 Microsoft 365 中防止及防禦 cybercrimes 的其他方式
 
-如需如何強化組織抵禦網路釣魚、垃圾郵件、資料違例及其他威脅的詳細資訊，請參閱[保護 Office 365 和 Microsoft 365 商務方案的十大方式](../../admin/security-and-compliance/secure-your-business-data.md)。
+如需如何強化組織抵禦網路釣魚、垃圾郵件、資料違例及其他威脅的詳細資訊，請參閱[保護 Microsoft 365 for business 方案的前10種方式](../../admin/security-and-compliance/secure-your-business-data.md)。

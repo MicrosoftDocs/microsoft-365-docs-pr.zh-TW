@@ -1,5 +1,5 @@
 ---
-title: Office 365 ATP 中的行銷活動檢視
+title: ATP 中的市場即時檢視
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,16 +17,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 進階威脅防護中的行銷活動檢視。
-ms.openlocfilehash: 40eab14dff8d0c51a35bfbc7a04365a5a025e207
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+ms.openlocfilehash: 69b11319ffb033b628e59abac931b6a3f30d082c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637326"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637815"
 ---
-# <a name="campaign-views-in-office-365-atp"></a>Office 365 ATP 中的行銷活動檢視
+# <a name="campaign-views-in-atp"></a>ATP 中的即時檢視
 
-行銷活動檢視是 Office 365 安全性與合規性中心中進階威脅防護 (ATP) 的一項功能，可識別和分類服務中的網路釣魚攻擊。 行銷活動檢視可協助您：
+[活動] 視圖是「安全性 & 規範中心」中的高級威脅防護（ATP）中的一項功能，可用於識別和分類服務中的網路釣魚攻擊。 行銷活動檢視可協助您：
 
 - 更有效率地調查和回應網路釣魚攻擊。
 
@@ -40,7 +40,7 @@ ms.locfileid: "42637326"
 
 行銷活動是針對一或多個組織的協調式電子郵件攻擊。 竊取認證及公司資料的電子郵件攻擊是一種大型且 lucrative 的行業。 隨著技術不斷增加以停止攻擊的努力，攻擊者會修改其方法，以確保持續成功。
 
-Microsoft 會利用整個 Office 365 服務中大量的反網路釣魚、反垃圾郵件和反惡意程式碼資料，協助識別市場活動。 我們會根據數個因素來分析和分類攻擊資訊。 例如：
+Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和反惡意程式碼資料，協助識別市場活動。 我們會根據數個因素來分析和分類攻擊資訊。 例如：
 
 - **攻擊來源**：來源 IP 位址和寄件者電子郵件網域。
 
@@ -52,7 +52,7 @@ Microsoft 會利用整個 Office 365 服務中大量的反網路釣魚、反垃�
 
 市場活動可能會短期，或可能跨越數天、數周或數天，具有有效和非使用中的期間。 您的特定組織可能會發起一個市場活動，否則您的組織可能會是多個公司的較大活動的一部分。
 
-## <a name="campaign-views-the-office-365-security--compliance-center"></a>Office 365 安全性與合規性中心行銷活動檢視
+## <a name="campaign-views-the-security--compliance-center"></a>即時檢視安全性 & 規範中心
 
 在**威脅管理** \> **活動**中，[安全性 & 合規性中心](https://protection.office.com)提供即時檢視。
 
@@ -131,7 +131,7 @@ Microsoft 會利用整個 Office 365 服務中大量的反網路釣魚、反垃�
   |:-----|:-----|:-----|
   | **允許**|`SFV:SKN` <br/><br/> `SFV:SKI`|垃圾郵件篩選功能（例如郵件流程規則，也稱為傳輸規則）進行評估之前，郵件會標示為非垃圾郵件和/或略過的篩選。<br/><br/>郵件因其他原因而略過垃圾郵件篩選（例如，寄件者和收件者似乎位於相同組織中）。|
   |**已封鎖**|`SFV:SKS`|垃圾郵件篩選功能（例如，依郵件流程規則）進行評估之前，郵件已標示為垃圾郵件。|
-  |**已偵測**|`SFV:SPM`|郵件是由垃圾郵件篩選功能標示為垃圾郵件。|
+  |**已偵測**|`SFV:SPM`|垃圾郵件篩選已將郵件標記為垃圾郵件。|
   |**未偵測到**|`SFV:NSPM`|郵件已由垃圾郵件篩選標示為非垃圾郵件。|
   |**釋放**|`SFV:SKQ`|郵件因從隔離區發行而略過垃圾郵件篩選。|
   |**承租人允許**<sup>\*</sup>|`SFV:SKA`|由於反垃圾郵件原則設定，郵件會略過垃圾郵件篩選（例如，寄件者位於允許的寄件者清單或允許的網域清單中）。|

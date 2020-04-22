@@ -1,5 +1,5 @@
 ---
-title: 將疑難排解郵件傳送至 Office 365
+title: 疑難排解傳送至 Microsoft 365 的郵件
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
-description: 本文提供嘗試將電子郵件傳送至 Office 365 收件匣時，寄件者發生問題的疑難排解資訊，以及大量郵遞至 Office 365 客戶的最佳作法。
-ms.openlocfilehash: 7c5d355f1037df94d856ffff7080d4a12d22f709
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 本文提供嘗試將電子郵件傳送至 Microsoft 365 收件匣的寄件者疑難排解資訊，以及大量郵遞至客戶的最佳作法。
+ms.openlocfilehash: 89fd6d11cca0d7689203948922b27e46ae2c602a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211904"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631142"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>將疑難排解郵件傳送至 Office 365
 
-本文提供嘗試將電子郵件傳送至 Office 365 收件匣時，寄件者發生問題的疑難排解資訊，以及大量郵遞至 Office 365 客戶的最佳作法。
+本文提供嘗試將電子郵件傳送至 Microsoft 365 收件匣的寄件者疑難排解資訊，以及大量郵遞至客戶的最佳作法。
 
 ## <a name="troubleshooting-common-problems-with-mail-delivery-to-office-365"></a>疑難排解常見的郵件傳遞至 Office 365 的問題
 
@@ -47,7 +47,7 @@ ms.locfileid: "43211904"
 
 ### <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>您是否正在管理您的 IP 和網域的傳送信譽？
 
-EOP 篩選技術的設計是為了提供 Microsoft Office 365 的反垃圾郵件保護，以及其他 Microsoft 產品（如 Exchange Server、Microsoft Office Outlook 和 Windows Live Mail）。 我們也會利用 SPF、DKIM 及 DMARC;電子郵件驗證技術，可協助您驗證傳送電子郵件的網域是否獲得授權，以解決哄騙和網路釣魚問題。 EOP 篩選會受到許多與傳送 IP、網域、驗證、清單準確性、投訴率、內容等等相關的因素所影響。 其中一個主要因素是降低寄件者的信譽，並提供電子郵件的能力為垃圾郵件的投訴率。
+EOP 篩選技術的設計是為了提供 Microsoft 365 的反垃圾郵件保護，以及其他 Microsoft 產品（如 Exchange Server、Microsoft Office Outlook 和 Windows Live Mail）。 我們也會利用 SPF、DKIM 及 DMARC;電子郵件驗證技術，可協助您驗證傳送電子郵件的網域是否獲得授權，以解決哄騙和網路釣魚問題。 EOP 篩選會受到許多與傳送 IP、網域、驗證、清單準確性、投訴率、內容等等相關的因素所影響。 其中一個主要因素是降低寄件者的信譽，並提供電子郵件的能力為垃圾郵件的投訴率。
 
 ### <a name="are-you-sending-email-from-new-ip-addresses"></a>您從新的 IP 位址送出電子郵件嗎？
 
@@ -79,7 +79,7 @@ EOP 篩選技術的設計是為了提供 Microsoft Office 365 的反垃圾郵件
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
-若要從清單中要求移除，您可以[使用取消列出入口網站，將您自己從 Office 365 封鎖的寄件者清單中移除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
+若要從此清單要求移除，您可以[使用取消列出入口網站，將您自己從 [封鎖的寄件者] 清單中移除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
 
 ### <a name="my-email-landed-in-the-recipients-junk-folder-in-eop"></a>進入在 EOP 中收件者的 [垃圾郵件] 資料夾中的電子郵件
 
@@ -112,9 +112,9 @@ EOP 篩選技術的設計是為了提供 Microsoft Office 365 的反垃圾郵件
 
  若要從我們的使用者接收郵件，請確定您的網路允許來自 EOP 在我們資料中心使用的 IP 位址的連線。 如需詳細資訊，請參閱[Exchange Online PROTECTION IP 位址](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)。
 
-## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>大量電子郵件至 Office 365 使用者的最佳作法
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>大量電子郵件至 Microsoft 365 使用者的最佳作法
 
-如果您經常對 Office 365 使用者執行大量電子郵件行銷活動，並想確保您的電子郵件能夠以安全且及時的方式送達，請遵循本節中的秘訣。
+如果您經常對 Microsoft 365 使用者執行大量電子郵件行銷活動，並想確保您的電子郵件能夠以安全且及時的方式送達，請遵循本節中的秘訣。
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>確定 [寄件者：] 名稱會反映郵件的寄件者
 

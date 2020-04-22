@@ -24,16 +24,19 @@ search.appverid:
 - GEA150
 description: 瞭解如何升級為新的訂閱。
 monikerRange: o365-worldwide
-ms.openlocfilehash: dbeba16a23490ab756c8ed30ce4856217819e80a
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 8f792cad90b7e153c025a869970a54d36cdd8cbe
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142076"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636507"
 ---
-# <a name="upgrade-to-a-different-plan"></a>升級成不同的計劃
+# <a name="upgrade-to-a-different-plan"></a>升級至不同的方案 
 
 當您的公司變更或需要更多功能時，您可以升級計畫。 若要執行此作業，最簡單的方法是使用系統管理中心的 [**升級**] 索引標籤。 不過，並非所有情況都支援使用 [**升級**] 索引標籤。 在某些情況下，您可能可以手動變更方案。
+
+> [!NOTE]
+> 本文適用于新的系統管理中心。 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。 若要查看有關舊系統管理中心的文章，請參閱[切換至其他 Microsoft 365 for business 方案](switch-to-a-different-plan.md)。
 
 ## <a name="use-the-upgrade-tab"></a>使用 [升級] 索引標籤
 
@@ -78,7 +81,7 @@ ms.locfileid: "43142076"
 
 如果您沒有在 [**升級**] 索引標籤上看到任何計畫，這表示您的計畫無法自動升級。 在某些情況下，您可能能夠解決問題，讓您能夠查看可供升級的計畫，或者您也可以手動升級或變更方案。
 
-### <a name="why-are-there-no-plans-listed-to-upgrade"></a>為什麼沒有列出要升級的計畫？
+ ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>為什麼沒有列出要升級的計畫？
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>您的使用者數目超過授權，所以您現在無法升級訂閱。
 
@@ -106,7 +109,7 @@ ms.locfileid: "43142076"
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>您有兩個或多個相同產品的計畫
 
-只有在所有使用者都訂閱相同計畫時，才可以使用 [**升級**] 索引標籤。 例如，如果您有兩個 Office 365 商務版特優方案，您就無法將其中一個計畫自動升級為另一個計畫。
+只有在所有使用者都訂閱相同計畫時，才可以使用 [**升級**] 索引標籤。 例如，如果您有兩個 Microsoft 365 商務標準方案，您就無法將其中一個計畫自動升級為另一個計畫。
 
 #### <a name="you-have-a-prepaid-plan"></a>您有預付方案。
 
@@ -138,13 +141,13 @@ ms.locfileid: "43142076"
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>升級方案對我的服務和計費有何作用？
 
-當您使用系統管理中心的 [**升級**] 索引標籤自動升級計畫時，您的服務和帳單會受到影響。
+當您使用 [**切換方案**] 按鈕（或新系統管理中心的 [**升級**] 索引標籤）自動升級計畫時，您的服務和計費會受到影響。
 
 ### <a name="access-to-services"></a>存取服務
 
-在計畫升級時，系統**管理員**將無法使用系統管理中心。 This can take up to an hour.
-
-**Users** will experience no interruption of service. 他們將繼續擁有現有的服務，直到升級完全完成為止。
+ 在計畫升級時，系統**管理員**將無法使用系統管理中心。 This can take up to an hour.
+  
+ **Users** will experience no interruption of service. 他們將繼續擁有現有的服務，直到升級完全完成為止。
   
 ### <a name="users-and-licenses"></a>使用者與授權
 
@@ -156,14 +159,14 @@ ms.locfileid: "43142076"
   
 升級期間會保留所有使用者資料，包括 Exchange 信箱和 SharePoint 線上檔、清單及其他資訊。
   
-### <a name="billing"></a>帳單
+### <a name="billing"></a>計費
 
 您的規劃升級已完成，您的舊訂閱上的帳單將會關閉，而新訂閱上的帳單便會開啟。 您將取得對舊訂閱上任何未使用之服務的按比例貸項。 在升級至新訂閱的30天內，您會收到包含舊訂閱信用額的新發票。
   
 > [!NOTE]
-> 實際向您的付款帳戶收費所需的時間長短，視用於訂閱的付款方式而定。
-
-**從預付訂閱升級後，它會過期嗎？** 如果您的新訂閱價值大於或等於預付訂閱的剩餘價值，就不會損失任何預付的時間。 在結帳頁面上，您會看到未使用時間的時間額度。 不過，如果新訂閱總成本低於您目前預付訂閱的剩餘價值，您就會損失一些未使用時間。 您會在結帳之前通知您，您可以等候升級，直到接近您的預付訂閱到期日為止。
+> 實際向您的付款帳戶收費所需的時間長短，視用於訂閱的付款方式而定。 
+  
+ **從預付訂閱升級後，它會過期嗎？** 如果您的新訂閱價值大於或等於預付訂閱的剩餘價值，就不會損失任何預付的時間。 在結帳頁面上，您會看到未使用時間的時間額度。 不過，如果新訂閱總成本低於您目前預付訂閱的剩餘價值，您就會損失一些未使用時間。 您會在結帳之前通知您，您可以等候升級，直到接近您的預付訂閱到期日為止。
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>協助您升級方案的電話支援
 
@@ -173,4 +176,4 @@ ms.locfileid: "43142076"
 
 [手動變更計畫](change-plans-manually.md)
 
-[切換 Office 365 for business 方案之前備份資料](back-up-data-before-switching-plans.md)
+[切換 Microsoft 365 for business 方案之前備份資料](back-up-data-before-switching-plans.md)

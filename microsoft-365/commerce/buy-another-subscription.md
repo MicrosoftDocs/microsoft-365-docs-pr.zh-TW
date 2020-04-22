@@ -1,5 +1,5 @@
 ---
-title: 購買另一個商務用 Office 365 訂閱
+title: 購買其他 Microsoft 365 for business 訂閱
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,26 +20,27 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
-description: '瞭解當您已有訂閱時，如何為您的組織購買其他商務用 Office 365 訂閱。 '
+description: '瞭解當您已有訂閱時，如何為您的組織購買其他 Microsoft 365 for business 訂閱。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 785080003a8abfac823239bd708eb2e442aa768f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: fe07ea5bcb977b867fe02cc69706595f3ff5064e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142260"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634929"
 ---
-# <a name="buy-another-office-365-for-business-subscription"></a>購買另一個商務用 Office 365 訂閱
+# <a name="buy-another-microsoft-365-for-business-subscription"></a>購買其他 Microsoft 365 for business 訂閱
 
-如果您已有商務用 Office 365 訂閱，而且想要為組織購買其他訂閱，最好的方法是透過系統管理中心。 如果您尚未購買組織的第一個商務用 Office 365 訂閱，請移至[這裡](https://products.office.com/business/compare-office-365-for-business-plans)選擇方案。
+如果您已具備商務用 Microsoft 365 訂閱，而且想要為您的組織購買其他訂閱，最好的方法是透過系統管理中心。 如果您尚未購買組織的第一部 Microsoft 365 for business 訂閱，請移至[這裡](https://products.office.com/business/compare-office-365-for-business-plans)選擇方案。
   
 當您透過系統管理中心購買其他訂閱時，系統會保證新的訂閱會與現有訂閱產生關聯的相同組織（功能變數名稱空間）。 這可讓您更容易在訂閱間移動組織內的使用者，或為他們指派所需之其他訂閱的使用者授權。
   
-購買新訂閱後，您必須將您要使用該訂閱的使用者指派給該訂閱的使用者授權。 若要深入瞭解，請參閱[在商務用 Office 365 中指派授權給使用者](../admin/manage/assign-licenses-to-users.md)。
+購買新訂閱後，您必須將您要使用該訂閱的使用者指派給該訂閱的使用者授權。 若要深入瞭解，請參閱[在 Microsoft 365 for business 中指派授權給使用者](../admin/manage/assign-licenses-to-users.md)。
   
 ## <a name="buy-another-subscription"></a>購買其他訂閱
 
 ::: moniker range="o365-worldwide"
+
 
 1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a>] 頁面。
 

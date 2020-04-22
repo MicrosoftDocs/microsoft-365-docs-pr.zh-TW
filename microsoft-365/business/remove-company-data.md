@@ -22,13 +22,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: 瞭解如何使用 Microsoft 365 商務版移除您的使用者必須在他們的裝置或 Windows 電腦的公司資料。
-ms.openlocfilehash: 1cfcf836f71cb81015d28a848611678252731b9c
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: 探索如何使用 Microsoft 365 for business 移除使用者在其裝置或 Windows 電腦上的公司資料。
+ms.openlocfilehash: 80997a48bb3924ab20f16a454120d24caf76e1e7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561313"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634841"
 ---
 # <a name="remove-company-data-from-devices"></a>從裝置移除公司資料
 
@@ -36,19 +36,19 @@ ms.locfileid: "42561313"
 
 ## <a name="remove-company-data"></a>移除公司資料
 
-您可以使用 Microsoft 365 商務版來移除使用者在[裝置](app-protection-settings-for-android-and-ios.md)，或由 Microsoft 365 保護之 [Windows PC](protection-settings-for-windows-10-devices.md) 上安裝的公司資料。 **如果您移除公司資料從裝置中，便無法還原更新版本**。 
+您可以使用 Microsoft 365 for business 來移除您的使用者在其[裝置](app-protection-settings-for-android-and-ios.md)或[Windows 電腦](protection-settings-for-windows-10-devices.md)上，且由 Microsoft 365 保護的公司資料。 **如果您從裝置移除公司資料，以後便無法還原**。 
   
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。
     
-2. 在左側導覽中，選擇 [**裝置**\> **管理**。  
+2. 在左側導覽上，選擇 [**裝置**\> **管理**]。  
   
-3. 在 [**管理**] 頁面上，選擇或搜尋使用者誰具有您要移除，並選擇其名稱的資料。 
+3. 在 [**管理**] 頁面上，選擇或搜尋您要移除其資料的使用者，然後選擇名稱。 
     
-4. 在下一步] 窗格中，請從**裝置**清單中選取的裝置。 在開啟 [裝置] 窗格中，您可以選擇將裝置重設成出廠預設值設定或移除公司資料，根據裝置類型而定。 
+4. 在下一個窗格中，選取 [**裝置**] 清單中的裝置或裝置。 在開啟的裝置窗格上，您可以選擇將裝置重設為出廠設定或移除公司資料（取決於裝置類型）。 
     
-    ![在 [移除公司資料] 窗格中，選取您要移除的資料的裝置。](../media/resetorremove.png)
+    ![在 [移除公司資料] 窗格中，選取您要從中移除資料的裝置。](../media/resetorremove.png)
   
-5. 在 [確認] 窗格中，選擇 [ **Confirm** \> **關閉**。
+5. 在 [確認] 窗格中，選擇 [**確認** \> **關閉**]。
     
 
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft 受管理電腦中更新的處理方式
-description: 保持最新 Microsoft 受管理的電腦是權衡方式速度與穩定性。
+title: 如何在 Microsoft 受管理的電腦中處理更新
+description: 將 Microsoft 管理的桌面保持在最新狀態，可平衡速度和穩定性。
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
@@ -9,47 +9,47 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0acbb82001d8856639f5b67daa99323f333e26ad
-ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
+ms.openlocfilehash: 763a9f3c7c517a5d093b9691310720468053bf24
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42284374"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636471"
 ---
-# <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中更新的處理方式
+# <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>如何在 Microsoft 受管理的電腦中處理更新
 
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/update-rings); do not delete.-->
 
 <!--Update management -->
 
-Microsoft 受管理的電腦會將所有的裝置連接到新式的基於雲端的基礎結構。 保持 Windows、 Office、 驅動程式、 韌體和 Microsoft 網上商店商務應用程式的最新狀態是權衡方式速度與穩定性。 部署群組將會用來確保作業系統更新，原則會導入安全的方式。 如需有關此的詳細資訊，請參閱視訊[Microsoft 受管理的桌上型電腦變更及版本處理程序](https://www.microsoft.com/videoplayer/embed/RE4mWqP)。
+Microsoft 受管理的桌面會將所有裝置連接至新式雲端架構基礎結構。 保持最新的 Windows、Office、驅動程式、固件及 Microsoft Store for Business 應用程式是速度和穩定性的平衡。 部署群組將用來確保作業系統更新及原則以安全的方式推出。 如需詳細資訊，請參閱影片[Microsoft 受管理的桌面變更和發行處理](https://www.microsoft.com/videoplayer/embed/RE4mWqP)程式。
 
-由 Microsoft 發行的更新是累加的並可分類為 「 品質] 或 [功能更新。
-如需詳細資訊，請參閱[適用於企業的 Windows 更新： 更新類型](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types)。 
+Microsoft 所發行的更新會累計，而且會分類為品質或功能更新。
+如需詳細資訊，請參閱[Windows update For Business： Update types](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types)。 
 
 ## <a name="update-groups"></a>更新群組
 
-Microsoft 受管理的電腦使用四個 Azure AD 群組管理更新：
+Microsoft 受管理的桌面會使用四個 Azure AD 群組來管理更新：
 
-- **測試**： 用來驗證 Microsoft 受管理電腦原則變更，作業系統系統更新功能更新，以及其他變更推送至租用戶。 不應該放置在測試群組中任何使用者。 測試群組是免除任何已建立的服務等級協定和使用者支援。 此群組適用於驗證的新原則] 或 [作業系統變更應用程式的相容性。  
-- **第一個**： 包含早期軟體採納者和可能受到搶鮮版更新的裝置。 如果有程式以測試環狀測試期間未深入涵蓋的案例，此群組中的裝置可能會遇到中斷。
-- **Fast**： 來透過穩定性的優先順序速度。 適用於偵測品質問題，其提供給廣泛群組之前。 此群組做為下一個圖層的驗證，但通常更穩定，比測試與第一個群組。 
-- **廣泛**： 有可用的功能和品質更新的最後一個群組。 此群組包含大多數的租用戶中的使用者，並因此偏好穩定性使用透過部署中的速度。 應執行的應用程式的測試環境是最穩定在這裡。 
+- **測試**：用於驗證 Microsoft 受管理的桌面原則變更、作業系統更新、功能更新和其他已推入租使用者的變更。 不應該有任何使用者放置在測試群組中。 測試群組免除任何已建立的服務等級協定和使用者支援。 此群組可用於驗證應用程式與新原則或作業系統變更的相容性。  
+- **First**：包含早期的軟體採納者和裝置，其可能會受發行前更新的制約。 如果有測試環中測試期間未涵蓋的情況，則此群組中的裝置可能會遇到中斷問題。
+- **Fast**：優先執行速度高於穩定性。 用於偵測品質問題，再將其提供給廣泛的群組。 這個群組是做為下一個驗證層，但通常比測試和第一個群組更穩定。 
+- **廣泛**：上一個群組可提供功能和品質更新。 此群組包含租使用者中大部分的使用者，因此在部署時比速度更有利於穩定性。 在環境最穩定的情況時，應該在這裡進行應用程式的測試。 
 
 > [!NOTE]
-> 如果您需要將使用者移至不同的更新群組，提交支援要求。 如需提交支援要求的詳細資訊，請參閱[Microsoft 受管理電腦的支援](support.md)。 如果您自行移動使用者，將還原移動。
+> 如果您需要將使用者移至不同的更新群組，請提交支援要求。 如需提交支援要求的詳細資訊，請參閱[Microsoft Managed Desktop 的支援](support.md)。 如果您自行移動使用者，移動將會還原。
 
-如需詳細資訊的角色與責任與這些部署群組，請參閱[Microsoft 受管理的桌上型電腦角色和責任](../intro/roles-and-responsibilities.md)
+如需這些部署群組的詳細資訊，請參閱[Microsoft 受管理的桌面角色和責任](../intro/roles-and-responsibilities.md)
 
-如何更新部署的運作：
-- Microsoft 受管理電腦部署根據以下指定的排程的新功能或品質更新。
-- 部署期間，Microsoft 受管理的電腦會監視的失敗或中斷 （根據診斷資料和使用者支援系統）。 如果任何偵測到，會立即暫停部署，以目前和未來的所有群組。
-    - 範例： 如果發現問題時，同時部署品質更新的第一個群組，然後更新部署至名字]、 [Fast 和 [廣泛將所有暫停，直到問題解決為止。
-    - 可由 Microsoft 受管理的桌上型電腦系統管理入口網站中歸檔票證報告相容性問題。
-- 功能和品質更新獨立暫停。 暫停是作用中的預設值，為 35 天但是可以降低或根據是否已修復此問題： 延伸。
-- 一旦群組未暫停，部署會繼續根據下列的排程。
-- 此部署程序適用於功能和品質更新，但是時間表而異每個。
+更新部署的運作方式：
+- Microsoft 受管理的桌面會根據下列指定的排程，部署新的功能或品質更新。
+- 在部署期間，Microsoft 受管理的桌面監視器會針對失敗或中斷的跡象（根據診斷資料和使用者支援系統）進行標記。 如果偵測到任何，則會立即暫停部署至所有目前和未來的群組。
+    - 範例：如果在部署第一個群組的品質更新時會發現問題，則在解決問題之前，先將部署更新為第一個、快速和廣泛的部署。
+    - 您可以在 Microsoft Managed Desktop Admin 入口網站中將票證歸檔，以報告相容性問題。
+- 會獨立暫停功能和品質更新。 預設情況下，Pause 會生效于35天，但可根據問題是否已修正，加以縮短或擴充。
+- 當群組未暫停時，部署會依照下列排程繼續進行。
+- 此部署程式會同時適用于功能和品質更新，不過每個階段的時程表各有不同。
 
 
 
@@ -57,28 +57,28 @@ Microsoft 受管理的電腦使用四個 Azure AD 群組管理更新：
 <table>
 <tr><th colspan="5">更新部署設定</th></tr>
 <tr><th>更新類型</th><th>測試</th><th>名字</th><th>快速</th><th>廣泛</th></tr>
-<tr><td>作業系統的品質更新</td><td>0 天</td><td>0 天</td><td>0 天</td><td>3 天</td></tr>
-<tr><td>作業系統功能更新</td><td>0 天</td><td>30 天</td><td>60 天</td><td>90 天</td></tr>
-<tr><td>驅動程式/韌體</td><td colspan="4">遵循品質更新的排程</td></tr>
-<tr><td>防毒定義</td><td colspan="4">更新每個掃描</td></tr>
-<tr><td>Office 365 專業增強版</td><td colspan="4">採用 Office 的每月通道
+<tr><td>作業系統的品質更新</td><td>0天</td><td>0天</td><td>0天</td><td>3天</td></tr>
+<tr><td>作業系統的功能更新</td><td>0天</td><td>30 天</td><td>60 天</td><td>90 天</td></tr>
+<tr><td>驅動程式/固件</td><td colspan="4">遵循品質更新的排程</td></tr>
+<tr><td>防病毒定義</td><td colspan="4">更新每個掃描</td></tr>
+<tr><td>適用于企業的 Microsoft 365 應用程式</td><td colspan="4">遵循 Office 的每月通道
 </table>
 
-Office 365 專業增強版每月通道的相關資訊，請參閱[Office 365 專業增強版更新通道的概觀](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus)。
+如需適用于企業的 Microsoft 365 應用程式每月通道的詳細資訊，請參閱[適用于企業的 microsoft 365 應用程式更新通道](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus)。
 
 >[!NOTE]
->這些延期期間刻意為了確保高的安全性和效能標準的所有使用者。 此外，跨所有 Microsoft 受管理的電腦裝置和不同範圍及更新的影響所收集的資料為基礎，Microsoft 受管理的電腦會保留彈性，可修改 ad 上的任何及所有部署群組的上述延期期間的長度特別為基礎。
+>這些延期期間是特意設計，以確保所有使用者的高安全性和效能標準。 此外，根據在所有 Microsoft 受管理的桌面裝置上收集的資料，以及更新的範圍和影響，Microsoft 受管理的桌面保留可靈活修改任何和所有部署群組的上述延遲週期長度。
 >
->Microsoft 受管理的電腦進行獨立評估的每個要評估其和實用性至其受管理的租用戶的 Windows 功能版本。 因此，Microsoft 受管理的電腦可能或可能不會部署所有的 Windows 功能更新。 
+>Microsoft 受管理的桌面會針對每個 Windows 功能版本執行獨立評估，以評估其必要和對其受管理承租人的有用性。 因此，Microsoft 受管理的桌面可能會或不會部署所有 Windows 功能更新。 
 
 ## <a name="windows-insider-program"></a>Windows 測試人員計畫
 
-Microsoft 受管理的電腦不支援 Windows 測試人員計畫的一部分的裝置。 Windows 測試人員計畫用來驗證搶鮮版 Windows 軟體，僅適用於不重要的裝置。 雖然這是很重要的 Microsoft 計劃，但它不是實際執行環境中的廣泛部署。 
+Microsoft 受管理的桌面不支援屬於 Windows 預覽體驗計畫的裝置。 Windows 有問必答計畫是用來驗證預先發行的 Windows 軟體，其適用于並非要徑任務的裝置。 雖然這是一個重要的 Microsoft 倡議，但不是要在實際執行環境中進行廣泛的部署。 
 
-與 Windows 測試人員組建找到任何裝置可能會放入測試群組，而且會是免除更新的服務等級協定及從 Microsoft 受管理電腦的使用者支援。
+任何找到 Windows 測試人員組建的裝置，都可能會放入測試群組，且不會從 Microsoft Managed Desktop 的更新服務等級協定和使用者支援中免除。
 
 ## <a name="bandwidth-management"></a>頻寬管理
 
-我們所有的作業系統和驅動程式更新使用[傳遞最佳化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)。 這將最小化的搜尋從公司網路內的對等的更新從 Windows Update 服務的下載大小。
+我們使用[傳遞優化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)來進行所有作業系統及驅動程式更新。 這可透過從公司網路中的對等機器尋找更新，將 Windows Update service 的下載大小降到最低。
 
 

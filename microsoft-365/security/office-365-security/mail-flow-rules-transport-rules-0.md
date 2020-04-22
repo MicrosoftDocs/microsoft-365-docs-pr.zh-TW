@@ -11,23 +11,23 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: 您可以使用郵件流程規則 (傳輸規則)，找出經過 Office 365 組織的郵件並採取相應動作。
-ms.openlocfilehash: 4332399ce7b3724a7bd23c761eec4328afe5e2a9
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+description: 您可以使用郵件流程規則（傳輸規則）來識別透過您組織的郵件，並採取相應動作。
+ms.openlocfilehash: 0a182b9d4a63a824a3955e8296160779c826960d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081421"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635409"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的郵件流程規則 (傳輸規則)
 
-您可以使用郵件流程規則 (也稱為傳輸規則)，找出經過 Office 365 組織的郵件並採取相應動作。郵件流程規則類似於 Outlook 和 網頁型 Outlook 中可用的收件匣規則。主要差異是郵件流程規則會在郵件傳輸期間採取動作，而不是在郵件傳遞至信箱之後。郵件流程規則包含一組更豐富的條件、例外狀況和行動，可讓您靈活地實作許多種郵件原則。
+您可以使用郵件流程規則（也稱為傳輸規則）來識別並對透過您組織的郵件採取動作。郵件流程規則類似于 Outlook 和網頁上的 Outlook 中可用的收件匣規則。主要差異是郵件流程規則會在郵件傳輸時對郵件採取動作，而不是在郵件傳遞至信箱之後。郵件流程規則包含一組更豐富的條件、例外狀況和動作，可讓您靈活地實施許多類型的郵件原則。
 
 本文說明郵件流程規則的元件和它們的運作方式。
 
 如需建立、複製和管理郵件流程規則的步驟，請參閱 [管理 Exchange Online 中的郵件流程規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) (部分內容為機器翻譯)。 針對每個規則，您可以選擇強制執行規則、測試規則，或測試規則並通知寄件者。 若要深入了解測試選項，請參閱[測試郵件流程規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules)和 [Exchange Online 中的原則提示](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips) (部分內容為機器翻譯)。
 
-如需符合郵件流程規則之訊息的摘要和詳細報告，請參閱 [使用 Office 365 的郵件保護報告以檢視有關惡意程式碼、垃圾郵件和規則偵測的資訊](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)。
+如需符合郵件流程規則之郵件的摘要和詳細報告，請參閱[Use mail protection reports，以查看有關惡意程式碼、垃圾郵件和規則](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)偵測的資料。
 
 若要使用郵件流程規則實作特定的訊息原則，請參閱下列主題︰
 

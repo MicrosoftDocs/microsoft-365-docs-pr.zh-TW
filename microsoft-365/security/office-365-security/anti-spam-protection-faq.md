@@ -15,16 +15,16 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: 在 Exchange Online 和獨立 Exchange Online Protection （EOP）中，系統管理員有關反垃圾郵件保護的常見問題與解答。
-ms.openlocfilehash: 30ab9ceb7d2e9e4a264311ff43343485a57d622c
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 0bd34639d717b979a02272e3c2f5de243c68d3ab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528310"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636055"
 ---
-# <a name="anti-spam-protection-faq-in-office-365"></a>Office 365 中的反垃圾郵件保護常見問題
+# <a name="anti-spam-protection-faq"></a>反垃圾郵件保護常見問題集
 
-本主題針對沒有 Exchange Online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）客戶中的信箱，提供 Office 365 客戶的反垃圾郵件保護的常見問題與解答。
+本主題針對沒有 Exchange Online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）客戶中的信箱，提供 Microsoft 365 客戶的反垃圾郵件保護的常見問題與解答。
 
 如需有關隔離區的問題與解答，請參閱[隔離常見問題集](quarantine-faq.md)。
 
@@ -34,12 +34,12 @@ ms.locfileid: "43528310"
 
 ## <a name="q-by-default-what-happens-to-a-spam-detected-message"></a>問：我收到的電子郵件有我不熟悉的附件。 依預設，偵測到垃圾郵件會發生什麼情況？
 
-答： 若**為輸入郵件**：大多數垃圾郵件會透過連線篩選來刪除，該篩選是根據來源電子郵件伺服器的 IP 位址。 反垃圾郵件原則（也稱為垃圾郵件篩選原則或內容篩選原則）會以垃圾郵件、大量或網路釣魚形式檢查郵件，並將郵件分類。 依預設，歸類為垃圾郵件或大量的郵件會傳遞至收件者的 [垃圾郵件] 資料夾，並會隔離分類為網路釣魚的郵件。 您可以修改預設反垃圾郵件原則（適用于所有收件者），也可以以更嚴格的使用者群組設定來建立自訂反垃圾郵件原則（例如，您可以隔離傳送給主管的垃圾郵件）。 如需詳細資訊，請參閱[設定 Office 365 中的反垃圾郵件原則](configure-your-spam-filter-policies.md)和[建議的反垃圾郵件原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
+答： 若**為輸入郵件：** 大部分的垃圾郵件是透過連線篩選刪除，這是根據來源電子郵件伺服器的 IP 位址。 反垃圾郵件原則（也稱為垃圾郵件篩選原則或內容篩選原則）會以垃圾郵件、大量或網路釣魚形式檢查郵件，並將郵件分類。 依預設，歸類為垃圾郵件或大量的郵件會傳遞至收件者的 [垃圾郵件] 資料夾，並會隔離分類為網路釣魚的郵件。 您可以修改預設反垃圾郵件原則（適用于所有收件者），也可以以更嚴格的使用者群組設定來建立自訂反垃圾郵件原則（例如，您可以隔離傳送給主管的垃圾郵件）。 如需詳細資訊，請參閱[設定反垃圾郵件原則](configure-your-spam-filter-policies.md)和[建議的反垃圾郵件原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
 
 > [!IMPORTANT]
 > 在 EOP 保護內部部署信箱的混合部署中，您必須在內部部署 Exchange 組織中設定兩個 Exchange 郵件流程規則（也稱為傳輸規則），以偵測新增至郵件的 EOP 垃圾郵件篩選標頭。 如需詳細資訊，請參閱[設定獨立版 EOP 將垃圾郵件傳送到混合式環境中的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
 
- **對於輸出郵件**：郵件是透過[高風險傳遞集](high-risk-delivery-pool-for-outbound-messages.md)區路由傳送，或是傳回給寄件者的未傳遞回報（也稱為 NDR 或退回的郵件）。 如需輸出垃圾郵件保護的詳細資訊，請參閱[Office 365 中的輸出垃圾郵件控制](outbound-spam-controls.md)。
+ **輸出郵件：** 郵件是透過[高風險傳遞集](high-risk-delivery-pool-for-outbound-messages.md)區路由傳送，或是傳回給寄件者的未傳遞回報（也稱為 NDR 或退回的郵件）。 如需輸出垃圾郵件保護的詳細資訊，請參閱[輸出垃圾郵件控制](outbound-spam-controls.md)。
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>問：我收到的電子郵件有我不熟悉的附件。 哪一天是垃圾郵件變種，服務是如何處理的？
 
@@ -75,7 +75,7 @@ ms.locfileid: "43528310"
 
 ## <a name="q-how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>問：我收到的電子郵件有我不熟悉的附件。 客戶如何使用服務將否定的否定（垃圾郵件）和誤報（非垃圾郵件）郵件傳送給 Microsoft？
 
-答： 客戶可以透過多種方式將垃圾郵件與非垃圾郵件提交給 Microsoft 以進行分析。 如需詳細資訊，請參閱[將郵件和檔案報告給 Microsoft](report-junk-email-messages-to-microsoft.md)。
+答： 客戶可以透過多種方式將垃圾郵件與非垃圾郵件提交給 Microsoft 以進行分析。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="q-can-i-get-spam-reports"></a>問：我收到的電子郵件有我不熟悉的附件。 我是否可以取得垃圾郵件報告？
 
@@ -97,11 +97,11 @@ Exchange Online 客戶：[在 Exchange Online 中監控、報告和執行郵件�
 
 ## <a name="q-can-i-use-a-third-party-anti-spam-and-anti-malware-provider-in-conjunction-with-exchange-online"></a>問：我收到的電子郵件有我不熟悉的附件。 是否可以搭配 Exchange Online 使用協力廠商的反垃圾郵件和反惡意程式碼提供者？
 
-答： 是的。 雖然我們建議您將 MX 記錄指向 Office 365，但我們意識到有正當的商業理由可以將電子郵件路由傳送至 Office 365 以外的地方。
+答： 是的。 雖然我們建議您將 MX 記錄指向 Microsoft，但我們意識到有正當的商業原因可將電子郵件路由傳送至 Microsoft first 以外的地方。
 
 - **輸入**：變更您的 MX 記錄以指向協力廠商提供者，然後將郵件重新導向至 EOP 進行其他處理。 如需詳細資訊，請參閱[在 Exchange Online 中針對連接器的增強型篩選](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
-- **輸出**：設定從 Office 365 到目的地協力廠商提供者的智慧主機路由。
+- **輸出**：設定從 Microsoft 365 到目的地協力廠商提供者的智慧主機路由。
 
 ## <a name="q-does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>問：我收到的電子郵件有我不熟悉的附件。 Microsoft 是否有任何有關如何保護自己免受網頁仿冒騙局的保護的檔？
 
@@ -133,7 +133,7 @@ Exchange Online 客戶：[在 Exchange Online 中監控、報告和執行郵件�
 
   SPF 記錄是一項驗證機制，可驗證從某個網域傳送的郵件是否真的來自該網域而不是詐騙郵件。如需 SPF 記錄的詳細資訊，請參閱下列連結：
 
-  [在 Office 365 中設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  [設定 SPF 以協助防止電子欺騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   [網域常見問題集](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) (部分機器翻譯)
 

@@ -1,5 +1,5 @@
 ---
-title: 分配基本概念
+title: 服務配額基礎
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,40 +13,40 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - commerce
 ms.custom: ''
-description: 了解新的分配功能。
-ms.openlocfilehash: 22f7c35b1a5baf97fb72f541d57da28adeeffbe4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 深入瞭解新的服務配額功能。
+ms.openlocfilehash: d1f926165678b57ec46195d525f2fcdaa6976501
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594684"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632410"
 ---
-# <a name="allotment-basics"></a>分配基本概念
+# <a name="allotment-basics"></a>服務配額基礎
 
-授權分配可讓您設定授權限制及委派管理的授權指派給只有產品和您所選取的授權限制。
+授權服務配額可讓您將授權指派的授許可權制，只委派給您所選取的產品和授許可權制。
 
-分配用於群組為基礎的授權指派授權給您的使用者。 授權限制提供透過多少將授權指派給您的群組中的使用者加入的控制項。 因此即使作為群組增加中的使用者數目，您可以確保您保持在已為您分配的授權限制內。
+服務配額使用以群組為基礎的授權，將授權指派給您的使用者。 授許可權制可讓您新增控制指派給群組中使用者的授權數目。 因此，即使您的群組中的使用者數目增加，您也可以確保您保持在您為您的服務配額所設定的授許可權制內。
 
-您也可以委派管理您分配。 委派的分配擁有者存取系統管理中心中，但只能看到並管理自己的分配中的授權。 這可提供更細微的委派授權管理組織內。
+您也可以委派對您的服務配額的管理。 委派的服務配額可取得系統管理員中心的存取權，但只能查看和管理其擁有的服務配額中的授權。 這可讓您的組織內的授權管理更精細委派。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
-您必須符合[群組為基礎之授權](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)的授權需求。
+您必須符合以[群組為基礎之授權](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)的授權需求。
 
-您可以使用任何使用者可用的 Office 365 產品的分配：
+您可以搭配任何可供使用者使用的產品配額：
 
-- Office 套件和獨立的產品
-- 企業和行動性的產品
+- Office 套件和獨立產品
+- 企業和行動產品
 - Dynamics 365 產品
 
-下列產品不能分配與：
+下列產品無法與服務配額搭配使用：
 
-- Microsoft 市集應用程式
-- 永久軟體或直接指派給使用者如果沒有任何授權所涉及的軟體。
-- Azure 的資源
+- Microsoft Store 應用程式
+- 永久軟體，或直接指派給使用者的軟體（如果沒有相關授權）。
+- Azure 資源
 
-您必須是全域或授權管理員] 以開始使用分配。
+您必須是通用或授權的系統管理員，才可開始使用服務配額。
 
 ## <a name="getting-started"></a>快速入門
 
-在只有少量客戶私人預覽] 中使用分配功能。 如果您有興趣加入，填寫此表單： [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)。
+僅限少數客戶可以使用「服務配額」功能的私人預覽。 如果您想要加入，請填寫此表單： [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)。

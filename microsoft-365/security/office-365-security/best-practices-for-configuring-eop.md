@@ -1,5 +1,5 @@
 ---
-title: 設定 EOP 和 Office 365 ATP 的最佳作法
+title: 設定 EOP 和 ATP 的最佳作法
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 遵循下列 Exchange Online Protection (EOP) 最佳作法建議，以成功完成設定並避免發生常見組態錯誤。
-ms.openlocfilehash: 9bddb736d41b4fd56790b8bbe9dbb00d07e75553
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 69d069377a061c440c22b7a00dd43795597c50e9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528614"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638533"
 ---
-# <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>設定 EOP 和 Office 365 ATP 的最佳作法
+# <a name="best-practices-for-configuring-eop-and-atp"></a>設定 EOP 和 ATP 的最佳作法
 
 遵循下列 Exchange Online Protection (EOP) 最佳作法建議，以成功完成設定並避免發生常見組態錯誤。 本主題假設您已完成安裝程序。 若您尚未完成 EOP 安裝，請參閱 [設定 EOP 服務](set-up-your-eop-service.md)。
 
@@ -41,7 +41,7 @@ ms.locfileid: "43528614"
 
 |安全性功能名稱|標準|嚴格|留言|
 |---------|---------|---------|---------|
-|[在 Office 365 中設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|是|是||
+|[設定 SPF 以協助防止電子欺騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|是|是||
 |[使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)|是|是||
 |[在 Office 365 中使用 DMARC 來驗證電子郵件](use-dmarc-to-validate-email.md)|是|是|使用 action = Standard 的隔離，對 Strict 採取動作 = 拒絕。|
 |部署報告訊息附加元件，以改善使用者對可疑電子郵件的報告|是|是||
@@ -63,7 +63,7 @@ ms.locfileid: "43528614"
 
 ## <a name="report-false-positive-and-false-negatives-to-microsoft"></a>向 Microsoft 報告誤報和漏報
 
-若要協助改善服務中每個人的垃圾郵件篩選，您應該將誤報（良好的電子郵件標記為壞）和漏報（不允許使用的電子郵件），以進行分析。 如需詳細資訊，請參閱[將郵件和檔案報告給 Microsoft](report-junk-email-messages-to-microsoft.md)。
+若要協助改善服務中每個人的垃圾郵件篩選，您應該將誤報（良好的電子郵件標記為壞）和漏報（不允許使用的電子郵件），以進行分析。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="create-mail-flow-rules"></a>建立郵件流程規則
 

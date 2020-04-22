@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性與合規性中心的總管和即時偵測。
-ms.openlocfilehash: 1f5047b923ec40d4beb47d9b4b3d8aec9b9e6807
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: a7958d516177534cafc9d40fe335abbff06b4db6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537506"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631166"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
 
@@ -39,7 +39,7 @@ ms.locfileid: "43537506"
 
 您可以使用此報告：
 
-- [查看 Office 365 安全性功能偵測到的惡意程式碼](#see-malware-detected-in-email-by-technology)
+- [查看 Microsoft 365 的安全性功能偵測到的惡意程式碼](#see-malware-detected-in-email-by-technology)
 - [檢視網路釣魚 URL 並按一下結果](#view-data-about-phishing-urls-and-click-verdict)
 - [從總管中的檢視啟動自動化的調查和回應程序](#start-automated-investigation-and-response) (僅限 ATP 方案 2)
 - ... [調查惡意電子郵件等功能](#more-ways-to-use-explorer-or-real-time-detections)！
@@ -56,7 +56,7 @@ ms.locfileid: "43537506"
 
 ### <a name="preview-email-header-and-download-email-body"></a>預覽電子郵件標頭和下載電子郵件內文
 
-預覽電子郵件標頭和下載電子郵件內文能力為威脅總管提供的新功能。 系統管理員將能分析下載的標頭/電子郵件訊息是否存在威脅。 由於下載電子郵件訊息可能有資訊暴露的風險，此程序是由角色型存取控制 (RBAC) 來控制。 必須將新角色*預覽*新增至另一個 Office 365 角色群組 (例如，新增至安全性作業或安全性系統管理員) 以授與能力來下載郵件，並以所有電子郵件檢視來預覽標頭。
+預覽電子郵件標頭和下載電子郵件內文能力為威脅總管提供的新功能。 系統管理員將能分析下載的標頭/電子郵件訊息是否存在威脅。 由於下載電子郵件訊息可能有資訊暴露的風險，此程序是由角色型存取控制 (RBAC) 來控制。 新的角色（*預覽*）必須新增至其他角色群組（例如，安全性作業或安全性管理員），以授與在所有電子郵件訊息中下載郵件和預覽標頭的能力。
 
 但總管 (和即時偵測) 也會新增新欄位，設計用於提供您更完整的電子郵件訊息目標位置資訊。 這項變更的部分目標是讓安全性作業人員更容易搜捕，但最後的結果在於對問題電子郵件訊息的位置一目了然。
 
@@ -117,7 +117,7 @@ ms.locfileid: "43537506"
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>查看透過技術在電子郵件中偵測到的惡意程式碼
 
-假設您想要查看 Office 365 技術在電子郵件中偵測到的惡意程式碼。 若要這麼做，請使用總管 (或即時偵測) 的 [[電子郵件] > [惡意程式碼]](threat-explorer-views.md#email--malware) 檢視。
+假設您想要查看 Microsoft 365 技術在電子郵件中偵測到惡意程式碼。 若要這麼做，請使用總管 (或即時偵測) 的 [[電子郵件] > [惡意程式碼]](threat-explorer-views.md#email--malware) 檢視。
 
 1. 在安全性與合規性中心 ([https://protection.office.com](https://protection.office.com)) 選擇 **[威脅管理]** > **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
 
@@ -176,7 +176,7 @@ ms.locfileid: "43537506"
 
 1. 在安全性與合規性中心 ([https://protection.office.com](https://protection.office.com)) 選擇 **[威脅管理]** > **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
 
-2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[提交]**。 （以前稱為「**使用者報告**」）。
+2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[提交]**。
 
    ![總管的檢視功能表](../../media/explorer-view-menu-email-user-reported.png)
 
@@ -230,7 +230,7 @@ ms.locfileid: "43537506"
 
 若要深入了解角色和權限，請參閱下列資源：
 
-- [Office 365 安全性與合規性中心權限](permissions-in-the-security-and-compliance-center.md)
+- [安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)
 - [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>威脅瀏覽器與即時偵測的某些差異

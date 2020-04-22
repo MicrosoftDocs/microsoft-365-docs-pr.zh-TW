@@ -1,5 +1,5 @@
 ---
-title: 反網路釣魚原則
+title: 防網路釣魚原則
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,14 +14,14 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: 深入瞭解 Exchange Online Protection （EOP）中的基本反網路釣魚原則，以及 Office 365 Advanced 威脅防護中的高級 ATP 反網路釣魚原則。
-ms.openlocfilehash: f96b490d2c031fb509c39b2efdbc725cec2709a5
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 64a47d5514ab7a3a845e8d8b008f1cd8f672640b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537470"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638353"
 ---
-# <a name="anti-phishing-policies-in-office-365"></a>Office 365 中的反網路釣魚原則
+# <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
 若要設定反網路釣魚防護設定的原則，可在 Office 365 組織中使用 Exchange Online 信箱、獨立 Exchange Online Protection （EOP）組織，但沒有 Exchange Online 信箱，以及 Office 365 高級威脅防護（ATP）組織。
 
@@ -34,13 +34,13 @@ ATP 反網路釣魚原則僅可用於具有 Office 365 ATP 的組織。 例如�
 
 ATP 反網路釣魚原則包含內建的預設反網路釣魚原則，您也可以建立其他自訂 ATP 反網路釣魚原則。
 
-其他 Office 365 組織搭配 Exchange Online 信箱或獨立 Exchange Online Protection （EOP）組織，具有內建的預設反網路釣魚原則，但您無法建立其他原則。 只有具有 Exchange Online 信箱的組織可以修改其預設的反網路釣魚原則。
+其他包含 Exchange Online 信箱或獨立 Exchange Online Protection （EOP）組織但沒有 Exchange Online 信箱的 Microsoft 365 組織，都有內建的預設反網路釣魚原則，但您無法建立其他原則。 只有具有 Exchange Online 信箱的組織可以修改其預設的反網路釣魚原則。
 
 下表說明反網路釣魚原則與 ATP 反網路釣魚原則之間的高層級差異：
 
 ||||
 |---|:---:|:---:|
-|**功能**|**反網路釣魚原則**|**ATP 反網路釣魚原則**|
+|**功能**|**防網路釣魚原則**|**ATP 反網路釣魚原則**|
 |自動建立的預設原則|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |建立自訂原則||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |原則設定<sup>\*</sup>||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -55,30 +55,30 @@ ATP 反網路釣魚原則包含內建的預設反網路釣魚原則，您也可�
 
 - [在 EOP 中設定反網路釣魚原則](configure-anti-phishing-policies-eop.md)
 
-- [在 Office 365 中設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)
+- [在 Microsoft 365 中設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)
 
 本主題的其餘部分將說明 EOP 和 ATP 反網路釣魚原則中可用的設定。
 
 ## <a name="spoof-settings"></a>欺騙設定
 
-哄騙是指電子郵件訊息中的寄件者位址（顯示在電子郵件客戶程式中的寄件者位址）不符合電子郵件來源的網域。 如需有關哄騙的詳細資訊，請參閱[在 Office 365 中的反欺騙保護](anti-spoofing-protection.md)。
+哄騙是指電子郵件訊息中的寄件者位址（顯示在電子郵件客戶程式中的寄件者位址）不符合電子郵件來源的網域。 如需有關欺騙的詳細資訊，請參閱[Microsoft 365 中的反欺騙保護](anti-spoofing-protection.md)。
 
 下列欺騙設定可在反網路釣魚原則和 ATP 反網路釣魚原則中使用：
 
-- **反欺騙保護**：啟用或停用反欺詐防護。 建議您讓它保留啟用狀態。 您可以使用**哄騙智慧原則**來允許或封鎖特定的欺騙內部和外部寄件者。 如需詳細資訊，請參閱[Configure 哄騙情報 In Office 365](learn-about-spoof-intelligence.md)。
+- **反欺騙保護**：啟用或停用反欺詐防護。 建議您讓它保留啟用狀態。 您可以使用**哄騙智慧原則**來允許或封鎖特定的欺騙內部和外部寄件者。 如需詳細資訊，請參閱[Configure 哄騙情報 In Microsoft 365](learn-about-spoof-intelligence.md)。
 
   > [!NOTE]
-  > 預設會在 EOP 的預設反網路釣魚原則、預設 ATP 反網路釣魚原則，以及您建立的新自訂 ATP 反網路釣魚原則中啟用欺騙設定。 <br/><br/> 如果您的 MX 記錄未指向 Office 365，您不需要停用反欺騙保護;請改為啟用連接器的增強篩選。 如需相關指示，請參閱[在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+  > 預設會在 EOP 的預設反網路釣魚原則、預設 ATP 反網路釣魚原則，以及您建立的新自訂 ATP 反網路釣魚原則中啟用欺騙設定。 <br/><br/> 如果您的 MX 記錄未指向 Microsoft 365，您就不需要停用反欺騙保護;請改為啟用連接器的增強篩選。 如需相關指示，請參閱[在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
   針對來自封鎖欺騙寄件者的郵件，您也可以指定要對郵件採取的動作：
 
-  - **將郵件移至 [垃圾郵件] 資料夾**：此為預設值。 郵件會傳遞至信箱，並移至 [垃圾郵件] 資料夾。 在 Exchange Online 中，如果信箱上已啟用垃圾郵件規則，郵件會移至 [垃圾郵件] 資料夾（預設為啟用）。 如需詳細資訊，請參閱[在 Office 365中設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
+  - **將郵件移至 [垃圾郵件] 資料夾**：此為預設值。 郵件會傳遞至信箱，並移至 [垃圾郵件] 資料夾。 在 Exchange Online 中，如果信箱上已啟用垃圾郵件規則，郵件會移至 [垃圾郵件] 資料夾（預設為啟用）。 如需詳細資訊，請參閱[在 Microsoft 365 中的 Exchange Online 信箱上設定垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
   - **隔離郵件**：將郵件傳送至隔離區，而不是預定的收件者。 如需隔離的相關資訊，請參閱下列主題：
 
-    - [Office 365 中的隔離區](quarantine-email-messages.md)
-    - [以 Office 365 系統管理員身分管理隔離的郵件與檔案](manage-quarantined-messages-and-files.md)
-    - [以 Office 365 使用者身分尋找及釋出隔離的郵件](find-and-release-quarantined-messages-as-a-user.md)
+    - [Microsoft 365 中的隔離](quarantine-email-messages.md)
+    - [在 Microsoft 365 中以系統管理員身分管理被隔離的郵件和檔案](manage-quarantined-messages-and-files.md)
+    - [以 Microsoft 365 中的使用者身分找到並釋放被隔離的郵件](find-and-release-quarantined-messages-as-a-user.md)
 
 - **未經驗證的寄件者**：啟用或停用 Outlook 中不明的寄件者識別。 特別是：
 
@@ -88,7 +88,7 @@ ATP 反網路釣魚原則包含內建的預設反網路釣魚原則，您也可�
 
   若要防止這些識別碼新增至特定寄件者的郵件，您可以使用下列選項：
 
-  - 允許寄件者在欺騙智慧原則中哄騙。 如需相關指示，請參閱[Configure 哄騙情報 In Office 365](learn-about-spoof-intelligence.md)。
+  - 允許寄件者在欺騙智慧原則中哄騙。 如需相關指示，請參閱[Configure 哄騙情報 In Microsoft 365](learn-about-spoof-intelligence.md)。
 
   - 設定寄件者網域的[電子郵件驗證](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own)。
   
@@ -118,7 +118,7 @@ ATP 反網路釣魚原則包含內建的預設反網路釣魚原則，您也可�
 
   - **收件**者：一或多個信箱、郵件使用者或您組織中的郵件連絡人。
   - **收件者隸屬**于組織中的一或多個群組。
-  - **收件者網域是**： Office 365 中的一或多個已設定公認的網域。
+  - **收件者網域是**： Microsoft 365 中的一或多個已設定公認的網域。
 
   - 例外狀況**除外**：規則的例外狀況。 設定和行為完全像是條件：
 
@@ -152,13 +152,13 @@ ATP 反網路釣魚原則包含內建的預設反網路釣魚原則，您也可�
 
   - 將**郵件重新導向至其他電子郵件地址**：將郵件傳送給指定的收件者，而不是預定的收件者。
 
-  - **將郵件移至 [垃圾郵件] 資料夾**：郵件會傳遞至信箱，並移至 [垃圾郵件] 資料夾。 在 Exchange Online 中，如果信箱上已啟用垃圾郵件規則，郵件會移至 [垃圾郵件] 資料夾（預設為啟用）。 如需詳細資訊，請參閱[在 Office 365中設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
+  - **將郵件移至 [垃圾郵件] 資料夾**：郵件會傳遞至信箱，並移至 [垃圾郵件] 資料夾。 在 Exchange Online 中，如果信箱上已啟用垃圾郵件規則，郵件會移至 [垃圾郵件] 資料夾（預設為啟用）。 如需詳細資訊，請參閱[在 Microsoft 365 中的 Exchange Online 信箱上設定垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
     - **隔離郵件**：將郵件傳送至隔離區，而不是預定的收件者。 如需隔離的相關資訊，請參閱下列主題：
 
-    - [Office 365 中的隔離區](quarantine-email-messages.md)
-    - [以 Office 365 系統管理員身分管理隔離的郵件與檔案](manage-quarantined-messages-and-files.md)
-    - [以 Office 365 使用者身分尋找及釋出隔離的郵件](find-and-release-quarantined-messages-as-a-user.md)
+    - [Microsoft 365 中的隔離](quarantine-email-messages.md)
+    - [在 Microsoft 365 中以系統管理員身分管理被隔離的郵件和檔案](manage-quarantined-messages-and-files.md)
+    - [以 Microsoft 365 中的使用者身分找到並釋放被隔離的郵件](find-and-release-quarantined-messages-as-a-user.md)
 
   - **傳遞郵件並將其他位址新增至 Bcc 行**：將郵件傳遞給預定的收件者，並以無訊息方式將郵件傳遞給指定的收件者。
 
@@ -172,7 +172,7 @@ ATP 反網路釣魚原則包含內建的預設反網路釣魚原則，您也可�
 
 - **信箱智慧**：啟用或停用人工情報（AI），以決定使用者的電子郵件模式與經常的連絡人。 此設定可協助 AI 區分合法和欺騙的電子郵件與這些連絡人。 信箱智慧只適用于 Exchange Online 信箱。
 
-- **信箱智慧**型模擬保護：根據每個使用者的個人寄件者地圖，啟用或停用增強型類比結果。 這種智慧功能可讓 Office 365 自訂使用者模擬偵測，並更好地處理誤報。 偵測到使用者模擬時，您可以定義要對郵件採取的特定動作：
+- **信箱智慧**型模擬保護：根據每個使用者的個人寄件者地圖，啟用或停用增強型類比結果。 這種智慧可讓 Microsoft 365 自訂使用者模擬偵測，並更好地處理誤報。 偵測到使用者模擬時，您可以定義要對郵件採取的特定動作：
 
   - **不要套用任何動作**
   - **將郵件重新導向至其他電子郵件地址**

@@ -18,22 +18,22 @@ search.appverid:
 - MOE150
 ms.assetid: d0653266-31db-4f6a-a804-d34b667c16bf
 description: '瞭解如何在 Mac、PC 或行動裝置上設定 Office 應用程式。 '
-ms.openlocfilehash: a1c6daf31e86fe345ba896362fe2703c2ca51509
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 73da808b7704f526d07f265ecfe99016e138ea52
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209649"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632100"
 ---
 # <a name="install-office-applications"></a>安裝 Office 應用程式
 
-現在，您已設定 Office 365，您可以在 Mac、PC 或行動裝置上設定 Office 應用程式。
+現在您已設定好 Microsoft 365，您可以在 Mac、PC 或行動裝置上設定 Office 應用程式。
   
 請遵循下列連結，以取得有關如何：
   
 - 安裝 Office 應用程式：[在您的 PC 或 Mac 上安裝 office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)
 
-- 設定行動裝置： [Office 365 行動設定-協助](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f.aspx)
+- 設定行動裝置： [Microsoft 365 mobile setup-Help](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f.aspx)
 
 - 在 Outlook 中設定電子郵件： [Windows](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)或[Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac)
 
@@ -43,6 +43,6 @@ ms.locfileid: "43209649"
 
 ::: moniker-end
 
-有問題嗎？這些疑難排解資源可提供協助︰
+有問題嗎？ 這些疑難排解資源可提供協助︰
   
-- [疑難排解安裝 Office 和 Office 365 的問題](https://support.office.com/article/35ff2def-e0b2-4dac-9784-4cf212c1f6c2.aspx)
+- [疑難排解安裝 Office 和 Microsoft 365](https://support.office.com/article/35ff2def-e0b2-4dac-9784-4cf212c1f6c2.aspx)

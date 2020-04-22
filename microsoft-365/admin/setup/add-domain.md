@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 在您的 DNS 主機上新增 DNS 記錄，將您的網域新增至 Microsoft 365 系統管理中心中的 Office 365。 安裝精靈會引導您完成此程式。
-ms.openlocfilehash: 746163b83190a73326ad589b8e3bc9377ddaa9b4
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 8e08233ffe33ac2b5d41ad164af80468de52983d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209637"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631812"
 ---
 # <a name="add-a-domain-to-office-365"></a>新增網域至 Office 365
 
@@ -75,7 +75,7 @@ ms.locfileid: "43209637"
     
 5. 選擇您要如何驗證您擁有該網域。
     
-    1. 如果您的網域註冊于 GoDaddy 或 1&amp;1，請選取 [登**入** > **] [下一步]** ，Office 365[將會自動設定記錄](../get-help-with-domains/domain-connect.md)。
+    1. 如果您的網域註冊于 GoDaddy 或 1&amp;1，請**選取** > **[下一步]** ，Microsoft[將會自動設定記錄](../get-help-with-domains/domain-connect.md)。
     
     2. 您可以傳送一封含有驗證碼的電子郵件給網域的已登記連絡人。 如果您無法辨識或存取記錄中的電子郵件，您可以使用第三個選項。
     
@@ -112,4 +112,4 @@ ms.locfileid: "43209637"
 
 [設定您的網域 (主機專用指示)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
-[取得 Office 365 網域的說明](../get-help-with-domains/get-help-with-domains.md)
+[取得網域的說明](../get-help-with-domains/get-help-with-domains.md)

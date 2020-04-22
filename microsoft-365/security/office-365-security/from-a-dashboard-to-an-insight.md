@@ -17,16 +17,16 @@ ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何從儀表板前往安全性&amp;與合規性中心的建議動作深入瞭解。
-ms.openlocfilehash: 52fc933133cee4b060a08516b64a46c1c24a13cb
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 22ca34696bc46e0142818be715d68f0b469c6255
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537494"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638091"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>逐步解說 - 從儀表板到深入解析
 
-如果您是[Office 365 安全性&amp;與合規性中心內的報表和洞察力的](reports-and-insights-in-security-and-compliance.md)最新資訊，它可能會協助您瞭解如何輕鬆從儀表板流覽至真知灼見及建議的動作。 
+如果您不熟悉[安全性&amp;與合規性中心的報表和洞察力](reports-and-insights-in-security-and-compliance.md)，它可能會協助您瞭解如何輕鬆從儀表板流覽至真知灼見及建議的動作。 
   
 這是安全性&amp;與合規性中心的幾個演練中的其中一個。 若要查看其他的演練，請參閱[相關主題](#related-topics)一節。 
   

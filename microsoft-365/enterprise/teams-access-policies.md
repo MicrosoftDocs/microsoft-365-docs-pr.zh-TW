@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 28d0893d08e588e52cf202be8d03b00434f7cb10
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+ms.openlocfilehash: f1a4a4ea69efc3c68bdc8ed66aa18833a28feb94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035096"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636720"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>保護小組聊天、群組和檔案的原則建議
 
@@ -33,9 +33,9 @@ ms.locfileid: "43035096"
 
 ## <a name="getting-started-with-teams-before-other-dependent-services"></a>在其他相依服務之前快速開始使用團隊
 
-您不需要啟用相依服務即可開始使用 Microsoft 團隊。 這些全部都是正常運作。 不過，您必須準備好管理下列專案：
+您不需要啟用相依服務即可開始使用 Microsoft 團隊。 這些都是「直接運作」。 不過，您必須準備好管理下列專案：
 
-- Office 365 群組
+- Microsoft 365 群組
 - SharePoint 小組網站
 - 商務用 OneDrive
 - 信箱
@@ -84,7 +84,7 @@ ms.locfileid: "43035096"
 
 ### <a name="guest-access-in-teams"></a>小組中的來賓存取權
 
-除了您公司或組織內部的使用者原則之外，管理員還可以讓來賓存取允許以使用者為基礎的使用者，在您的公司或組織外部的人員存取小組資源並與之互動內部人員，例如群組交談、聊天和會議等專案。 您可以在下列連結中深入瞭解來賓存取：[小組訪客存取權](https://docs.microsoft.com/microsoftteams/guest-access)
+除了您公司或組織內部的使用者原則之外，管理員還可以讓來賓存取允許以使用者為基礎的使用者，在您的公司或組織外部的人員存取小組資源，並與內部人員（例如群組交談、聊天和會議）進行互動。 您可以在下列連結中深入瞭解來賓存取：[小組訪客存取權](https://docs.microsoft.com/microsoftteams/guest-access)
 
 ### <a name="external-access-in-teams"></a>小組中的外部存取
 

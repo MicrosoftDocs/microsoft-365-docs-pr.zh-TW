@@ -1,5 +1,5 @@
 ---
-title: 切換 Office 365 for business 方案之前備份資料
+title: 切換 Microsoft 365 for business 方案之前備份資料
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
-description: 在切換 Office 365 訂閱或使用者離開組織之前，請先備份 Outlook、OneDrive、Yammer 及 SharePoint 內容。
-ms.openlocfilehash: 3d8196bcbd0296e1b6e681b1077d165e168d2f2f
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: 在切換 Microsoft 365 訂閱或使用者離開組織之前，請先備份 Outlook、OneDrive、Yammer 及 SharePoint 內容。
+ms.openlocfilehash: fbebe72ec47fb6745cee6a12d81117ad08c50846
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105744"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636077"
 ---
-# <a name="back-up-data-before-switching-office-365-for-business-plans"></a>切換 Office 365 for business 方案之前備份資料
+# <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>切換 Microsoft 365 for business 方案之前備份資料
 
-如果使用者要切換至另一個訂閱，該訂閱的資料相關服務較少或使用者離開組織，則可以在將其儲存在 Office 365 中的資料複本，在切換至新的訂閱之前加以下載。
+如果使用者要切換至另一個訂閱，該訂閱的資料相關服務較少或使用者離開組織，則可以在將其儲存在 Microsoft 365 中的資料複本，在切換至新的訂閱之前加以下載。
   
 ## <a name="save-a-copy-of-outlook-information"></a>儲存 Outlook 資訊複本
 
@@ -48,7 +48,7 @@ ms.locfileid: "43105744"
   
 ## <a name="how-to-save-sharepoint-information"></a>如何儲存 SharePoint 資訊
 
-如果使用者從已 SharePoint 線上的訂閱切換為沒有該使用者的訂閱，則**SharePoint**磚將不再出現在其 Office 365 功能表中。
+如果使用者從已 SharePoint 線上的訂閱切換為不具備該功能的訂閱，則**SharePoint**磚將不再出現在其 Microsoft 365 功能表中。
   
 不過，只要新的訂閱與其所切換的所在組織位於相同組織內，使用者仍可以存取 SharePoint 小組網站。 他們可以使用小組網站的直接 URL 來查看和更新筆記本、檔、工作及行事曆。
   

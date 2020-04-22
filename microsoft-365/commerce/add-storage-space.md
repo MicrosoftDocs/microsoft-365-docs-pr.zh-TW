@@ -27,13 +27,13 @@ search.appverid:
 - GEA150
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
-description: 瞭解如何在 Office 365 訂閱中新增及減少檔存放區。 使用額外的檔案存放區，您可以在 SharePoint 線上及 OneDrive 中儲存更多內容。
-ms.openlocfilehash: 313ca90c729a89acf00c58e49a7e887313261e66
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: 瞭解如何在 Microsoft 365 訂閱中新增及減少檔存放區。 使用額外的檔案存放區，您可以在 SharePoint 線上及 OneDrive 中儲存更多內容。
+ms.openlocfilehash: b5dea51e0e8616749a820ff35827b4390390af50
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142332"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632740"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>新增您訂閱的儲存空間
 
@@ -43,44 +43,45 @@ ms.locfileid: "43142332"
 
 ::: moniker range="o365-worldwide"
 
-1. 以全域或 SharePoint 管理員的身分登入 https://admin.microsoft.com。(如果您看到您沒有權限存取頁面的訊息，則表示您沒有貴組織的 Office 365 管理員權限。)
-
-2. 在左窗格中，選取 [系統**管理中心**] 底下的 [ **SharePoint**]。 如果顯示的是傳統 SharePoint 系統管理中心，請選取頁面上方的 [立即開啟]****，以開啟新的 SharePoint 系統管理中心。
-
+1. 以https://admin.microsoft.com全域或 SharePoint 管理員身分登入。（如果您看到一則訊息，表示您沒有存取此頁面的許可權，則表示您的組織中沒有 Microsoft 365 系統管理員許可權。
+    
+2. 在左窗格中，選取 [系統**管理中心**] 底下的 [ **SharePoint**]。 如果顯示的是傳統 SharePoint 系統管理中心，請選取頁面上方的 [立即開啟]****，以開啟新的 SharePoint 系統管理中心。 
+    
 3. 在新 SharePoint 系統管理中心的左窗格中，選取 [使用中的網站]****。
 
-4. 在頁面右上方，查看所有網站所使用的儲存量，以及您訂閱的儲存空間總計。 （如果您的組織已在 Office 365 中設定多地理位置，此列也會顯示所有地理位置所使用的儲存量。）
+4. 在頁面右上方，查看所有網站所使用的儲存量，以及您訂閱的儲存空間總計。 （如果您的組織已在 Office 365 中設定多地理位置，此列也會顯示所有地理位置所使用的儲存量。） 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 以https://portal.office.de全域或 SharePoint 管理員身分登入，然後選取 [管理] 磚以開啟系統管理中心。 (如果您看到您沒有權限存取頁面的訊息，則表示您沒有貴組織的 Office 365 管理員權限。)
-
-2. 在左窗格中，選取 [系統**管理中心**] 底下的 [ **SharePoint**]。 如果顯示的是傳統 SharePoint 系統管理中心，請選取頁面上方的 [立即開啟]****，以開啟新的 SharePoint 系統管理中心。
-
+1. 以https://portal.office.de全域或 SharePoint 管理員身分登入，然後選取 [管理] 磚以開啟系統管理中心。 （如果您看到一則訊息，表示您沒有存取此頁面的許可權，則表示您的組織中沒有 Microsoft 365 系統管理員許可權。
+    
+2. 在左窗格中，選取 [系統**管理中心**] 底下的 [ **SharePoint**]。 如果顯示的是傳統 SharePoint 系統管理中心，請選取頁面上方的 [立即開啟]****，以開啟新的 SharePoint 系統管理中心。 
+    
 3. 在新 SharePoint 系統管理中心的左窗格中，選取 [使用中的網站]****。
 
-4. 在頁面右上方，查看所有網站所使用的儲存量，以及您訂閱的儲存空間總計。
+4. 在頁面右上方，查看所有網站所使用的儲存量，以及您訂閱的儲存空間總計。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 以https://login.partner.microsoftonline.cn/全域或 SharePoint 管理員身分登入，然後選取 [管理] 磚以開啟系統管理中心。 (如果您看到您沒有權限存取頁面的訊息，則表示您沒有貴組織的 Office 365 管理員權限。)
-
-2. 在左窗格中，選取 [系統**管理中心**] 底下的 [ **SharePoint**]。 如果顯示的是傳統 SharePoint 系統管理中心，請選取頁面上方的 [立即開啟]****，以開啟新的 SharePoint 系統管理中心。
-
+1. 以https://login.partner.microsoftonline.cn/全域或 SharePoint 管理員身分登入，然後選取 [管理] 磚以開啟系統管理中心。 （如果您看到一則訊息，表示您沒有存取此頁面的許可權，則表示您的組織中沒有 Microsoft 365 系統管理員許可權。
+     
+2. 在左窗格中，選取 [系統**管理中心**] 底下的 [ **SharePoint**]。 如果顯示的是傳統 SharePoint 系統管理中心，請選取頁面上方的 [立即開啟]****，以開啟新的 SharePoint 系統管理中心。 
+    
 3. 在新 SharePoint 系統管理中心的左窗格中，選取 [使用中的網站]****。
 
 4. 在頁面右上方，查看所有網站所使用的儲存量，以及您訂閱的儲存空間總計。  
 
 ::: moniker-end
 
+
 ![「作用中的網站」頁面上的儲存區](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
 > [!NOTE]
-> 使用的儲存空間不包括過去24-48 小時內所做的變更。
+> 使用的儲存空間不包括過去24-48 小時內所做的變更。 
 
 決定所使用的儲存空間量後，您可以為訂閱新增或移除儲存空間。 若要瞭解增加儲存空間的成本，請遵循本文中的步驟，並在購買之前查看定價資訊。
   
@@ -91,6 +92,7 @@ ms.locfileid: "43142332"
 如果您還沒有為訂閱購買額外的儲存空間，您可以這麼做。
 
 ::: moniker range="o365-worldwide"
+
 
 1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a>] 頁面。
 
@@ -158,11 +160,13 @@ ms.locfileid: "43142332"
 
 ::: moniker-end
 
+
 ## <a name="increase-or-decrease-storage"></a>增加或減少儲存空間
 
 如果您已透過**Office 365 額外檔案儲存**空間附加元件購買額外的檔案存放區，您可以使用這些步驟來增加或減少訂閱的額外儲存空間。 您可以將儲存體縮小為低達 1 gb。 若要移除所有額外的儲存空間，您必須[聯繫支援人員](../admin/contact-support-for-business-products.md)。
 
 ::: moniker range="o365-worldwide"
+
 
 1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
 
@@ -177,6 +181,7 @@ ms.locfileid: "43142332"
 ::: moniker range="o365-germany"
 
 1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+
 
 2. 在 [**訂閱**] 頁面上，選取 [**附加**元件]。
 
@@ -220,6 +225,8 @@ ms.locfileid: "43142332"
 
 ::: moniker-end
 
+
+
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>我的方案是否符合 Office 365 額外檔案儲存空間的資格？
 
 Office 365 額外檔案儲存空間適用於下列訂閱︰
@@ -242,11 +249,11 @@ Office 365 額外檔案儲存空間適用於下列訂閱︰
 
 - SharePoint Online 方案 2
 
-- Office 365 商務基本版
+- Microsoft 365 商務基本版
 
-- Office 365 商務進階版
+- Microsoft 365 商務標準版
 
-- Microsoft 365 商務版
+- Microsoft 365 商務版 Premium
 
 - Microsoft 365 E3
 

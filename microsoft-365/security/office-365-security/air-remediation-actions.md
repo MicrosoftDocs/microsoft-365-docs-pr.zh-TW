@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的修復動作自動化調查和回應
+title: Microsoft 365 自動化調查和回應中的修正動作
 keywords: AIR, autoIR, ATP, 自動化, 調查, 回應, 修正, 威脅, 進階, 威脅, 保護
 f1.keywords:
 - NOCSH
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 深入瞭解 Office 365 Advanced 威脅防護方案2中自動化調查和回應功能的修復動作。
-ms.openlocfilehash: d0f08c3e89882e21263c18246612949ea68ac1ad
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 8dfb203cfdae179d8d88842a2d2b55aeab2e17fb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528926"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634649"
 ---
-# <a name="remediation-actions-in-office-365"></a>Office 365 中的修復動作
+# <a name="remediation-actions-in-microsoft-365"></a>Microsoft 365 中的修正動作
 
 ## <a name="remediation-actions"></a>補救動作
 
@@ -60,9 +60,9 @@ Office 365 中的[自動化調查和回應功能](https://docs.microsoft.com/mic
 
 ## <a name="next-steps"></a>後續步驟
 
-- [在 Office 365 中查看自動調查的詳細資料和結果](air-view-investigation-results.md)
+- [在 Microsoft 365 中查看自動調查的詳細資料和結果](air-view-investigation-results.md)
 
-- [在 Office 365 中進行自動調查後，查看擱置或已完成的修復動作](air-review-approve-pending-completed-actions.md)
+- [在 Microsoft 365 中進行自動調查後，查看擱置或已完成的修復動作](air-review-approve-pending-completed-actions.md)
 
 
 ## <a name="related-articles"></a>相關文章

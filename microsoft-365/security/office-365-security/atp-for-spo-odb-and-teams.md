@@ -1,5 +1,5 @@
 ---
-title: 適用於 SharePoint、OneDrive 及 Microsoft Teams 的 Office 365 ATP
+title: 適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 將 Office 365 進階威脅防護延伸至 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 中的檔案，讓您的組織可更安全地進行共同作業。
-ms.openlocfilehash: 3105a9443ddab483bc5ac4037e5260b354d64de9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4c64a4934a472fa5c6ac0f1f718d63300560f6c8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086621"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636019"
 ---
-# <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>適用於 SharePoint、OneDrive 及 Microsoft Teams 的 Office 365 ATP
+# <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP
 
 ## <a name="overview-of-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>概述適用於 SharePoint、OneDrive 及 Microsoft Teams 的 Office 365 ATP
 
@@ -41,7 +41,7 @@ ms.locfileid: "42086621"
 
 ![透過 OneDrive 行動應用程式從商務用 OneDrive 中刪除封鎖的檔案](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
-視 Office 365 的設定方式而定，使用者可能無法下載封鎖的檔案。 以下是在使用者行動裝置上下載封鎖檔案的畫面：
+根據 Microsoft 365 的設定方式，使用者可能會或可能無法下載封鎖的檔案。 以下是在使用者行動裝置上下載封鎖檔案的畫面：
 
 ![在商務用 OneDrive 中下載封鎖的檔案](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
@@ -65,7 +65,7 @@ ms.locfileid: "42086621"
 
 當 SharePoint Online、商務用 OneDrive 或 Microsoft Teams 中的檔案被識別為惡意時，ATP 除了會防止檔案開啟或共用之外，該檔案也會包含在隔離項目清單中。 (在安全性 &amp; 合規性中心內，移至 [威脅管理]**** \> [檢閱]**** \> [隔離]****，然後篩選**內容**。)
 
-如果您是組織的 Office 365 安全小組成員，並具備 [Office 365 安全性 &amp; 合規性中心內指派的必要權限](permissions-in-the-security-and-compliance-center.md)，您可以從隔離區下載、釋放、報告及刪除由 ATP 偵測到的惡意檔案。
+如果您屬於組織的 Microsoft 365 商務安全小組，而且在[安全性&amp;與合規性中心內指派](permissions-in-the-security-and-compliance-center.md)必要的許可權，您可以從隔離區下載、發行、報告和刪除因 ATP 所偵測為惡意的檔案。
 
 - 針對 SharePoint、OneDrive 或 Microsoft Teams，**釋放和報告**檔案會移除各別小組網站或文件庫中檔案上的 ATP 封鎖。 然後使用者就能開啟、共用和下載該檔案。 此外，當您選取 [將報告傳送到 Microsoft]**** 選項時，該檔案就會以誤判的形式來報告給 Microsoft。
 

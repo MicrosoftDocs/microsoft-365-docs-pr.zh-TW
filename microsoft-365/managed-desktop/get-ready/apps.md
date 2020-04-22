@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: adb6423d5c014b5f02fc272f9653abebc14cf543
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: a24212cf69df50d00a32f17e8daf1939657dd602
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557571"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632848"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的應用程式
 
@@ -19,53 +19,53 @@ ms.locfileid: "42557571"
 
 <!--Applications: supported/onboard/deployment -->
  
-## <a name="apps-generally"></a>應用程式通常
+## <a name="apps-generally"></a>應用程式一般
 
-Microsoft 包含特定索引鍵的應用程式，以及參與 Microsoft 受管理的電腦所需的 Microsoft 365 E3 或 E5 授權。 不過，即使我們將提供這些應用程式，您仍會有特定的職責和動作，以完成。
+Microsoft 包含特定的主要應用程式，以及參與 Microsoft Managed Desktop 所需的 Microsoft 365 E3 或 E5 授權。 不過，即使我們提供這些應用程式，仍有一些責任和動作可完成。
 
-您也可以部署其他非 Microsoft 應用程式至您的使用者透過公司入口網站或所需的背景安裝的自助，所有使用 Microsoft Intune 部署管線。 如果您有專業知識，您可以移轉您需要自行; 這些應用程式或者，Microsoft 諮詢服務 (MCS) 或非 Microsoft 廠商將會是不悅以協助您進行封裝和移轉的專案。 如需使用 MCS 的詳細資訊，請參閱[Working with Microsoft 諮詢服務](apps-MCS.md)。
+您也可以使用 Microsoft Intune 的部署管線，透過公司入口網站或必要的背景安裝，將其他非 Microsoft 應用程式部署至使用者，以進行自助服務。 如果您有專業技術，您可以自行遷移所需的應用程式。或者，Microsoft 諮詢服務（MCS）或非 Microsoft 廠商很樂意協助您進行打包和遷移專案。 如需使用 MCS 的詳細資訊，請參閱使用[Microsoft 諮詢服務](apps-MCS.md)。
 
 
-## <a name="apps-provided-by-microsoft"></a>Microsoft 所提供的應用程式
+## <a name="apps-provided-by-microsoft"></a>Microsoft 提供的應用程式
 
-隨附於 Microsoft 受管理電腦授權是 64 位元版本的 Office 365 專業增強版 Standard Suite （Word、 Excel、 PowerPoint、 Outlook、 Publisher、 Access、 Skype for Business 和 OneNote。) 中的應用程式按一下 [-隨選即用版本的 Microsoft Project 和 Visio 會根據預設，*不*包含，但您可以要求他們加入。 如需有關這些應用程式的詳細資訊，請參閱[安裝 Microsoft Project 或 Microsoft 受管理的電腦裝置上的 Microsoft Visio](../get-started/project-visio.md)。
+隨附于 Microsoft 受管理的桌面授權中的 Microsoft 365 應用程式中的64位版本的應用程式，適用于企業標準套件（Word、Excel、PowerPoint、Outlook、Publisher、Access、商務用 Skype 和 OneNote）。預設*不*會包含 Microsoft Project 和 Visio 的 Click-to-Run 版本，但您可以要求新增這些版本。 如需這些應用程式的詳細資訊，請參閱[Install Microsoft Project or Microsoft Visio On Microsoft Managed Desktop 裝置](../get-started/project-visio.md)。
 
-### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Microsoft 沒有為支援我們提供應用程式
+### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Microsoft 對於我們提供的應用程式的支援。
 
-Microsoft 會提供包含 Office 365 專業增強版應用程式的部署、 更新和支援的完整服務。 按一下 [-隨選即用版本的 Microsoft Project 和 Visio 會根據預設，*不*包含，但 Microsoft 受管理的電腦會提供讓 IT 系統管理員管理授權及部署這些應用程式適當地為您的組織部署群組。 Microsoft 將會支援透過 Microsoft 受管理的電腦支援頻道這些應用程式的使用者。
+Microsoft 將為適用于企業應用程式的包含 Microsoft 365 應用程式，提供完整服務，以進行部署、更新和支援。 預設*不*會包含 microsoft Project 和 Visio 的 Click-to-Run 版本，但 Microsoft 受管理的桌面會提供部署群組，讓您的 IT 系統管理員可以管理授權，並適當地為您的組織部署這些應用程式。 Microsoft 將透過 Microsoft 受管理的桌面支援通道來支援這些應用程式的使用者。
 
-### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>您要做為支援我們提供應用程式
+### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>您必須執行哪些動作才能支援我們提供的應用程式
 
-仍有某些您需要運用這些應用程式的事項：
+您仍需要使用這些應用程式進行的某些工作：
 
-- **將授權指派**-您負責取得並指派適當的授權給 Office 365 專業增強版的使用者。
-- **新增使用者至安全性群組**-如果您使用 Microsoft Project 或 Visio，IT 系統管理員必須將新增至適當的部署群組的使用者。 IT 系統管理員也是負責收回這些使用者的授權，如果他們離開公司的。
-- **部署 Office 365 Addons** -如果您需要的任何 Office 365 專業增強版的應用程式的任何 Addons，將其部署集中像任何其他 Windows 32 應用程式。 
+- **指派授權**-您負責針對適用于 Enterprise 的 Microsoft 365 應用程式取得或指派適當的授權給使用者。
+- **將使用者新增至安全性群組**-如果您使用的是 Microsoft Project 或 Visio，您的 IT 系統管理員必須將這些使用者新增至適當的部署群組。 IT 系統管理員也負責在使用者離開公司時，從這些使用者回收授權。
+- **部署 microsoft 365 附加**元件-如果您需要任何適用于企業應用程式的 Microsoft 365 應用程式的任何附加元件，請將它們集中部署，如其他任何 Windows 32 應用程式。 
 
 ## <a name="apps-you-provide"></a>您提供的應用程式
 
-當然，您可能有其他您需要的企業營運的應用程式的數量。 這些可以只部署至 Microsoft 受管理的電腦裝置使用 Microsoft Intune 部署管線。 如果應用程式需要它可以讓他們封裝廠商 （這可能是在非 Microsoft 供應商或 Microsoft 諮詢服務 (MCS)），或如果您有方法，您可以封裝他們自己。 然後將這些套件新增至 Microsoft 受管理電腦入口網站，並將它們指派給 Azure Active Directory 群組，以觸發部署。 
+當然，您可能需要許多其他應用程式供商務運作使用。 使用 Microsoft Intune 的部署管線，只可將這些裝置部署至 Microsoft 受管理的桌面裝置。 若應用程式需要，您可以將其封裝（可能是非 Microsoft 轉銷商或 Microsoft 諮詢服務（MCS）），或如果您有這種方式，您可以自行打包。 然後，您可以將這些套件新增至 Microsoft 受管理的桌面入口網站，並將它們指派給 Azure Active Directory 群組，以觸發部署。 
 
-您用來評估您的應用程式和探索哪些項目查詢準備好讓移轉至 Microsoft Intune 和哪些項目可能需要一些，如果您目前使用 Microsoft 端點 Configuration Manager 部署您的應用程式，可提供 Microsoft 受管理的電腦調整。
+如果您目前使用 Microsoft 端點設定管理員部署應用程式，則 Microsoft 受管理的桌面可以提供查詢來評估您的應用程式，並探索哪些專案準備好可遷移至 Microsoft Intune，以及哪些可能需要進行調整。
 
 
-### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>準備您自己的應用程式以使用 Microsoft 受管理電腦中的相對路徑
-檢閱您的應用程式，檢查：
+### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>準備您自己的應用程式以包含在 Microsoft 受管理的桌面
+查看您的應用程式，檢查：
 
-- 無應用程式禁止或有限制的行為， [Microsoft 受管理的電腦應用程式需求](https://aka.ms/app-req)所述。
-- 應用程式必須準備好以透過 Microsoft Intune 進行管理。 如需有關此的詳細資訊，請參閱[Windows 10 應用程式部署使用 Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy)和[新增應用程式連接至 Microsoft Intune](https://docs.microsoft.com/intune/apps-add)。
-- 提供授權金鑰、 授權合約協議等預先設定的伺服器連線其他前封裝需求。
+- 沒有任何應用程式被禁止或具有限制的行為，如[Microsoft Managed Desktop app 需求](https://aka.ms/app-req)所述。
+- 應用程式必須準備好由 Microsoft Intune 進行管理。 如需相關資訊，請參閱[Windows 10 app deployment Using Microsoft intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy)及[新增應用程式至 Microsoft intune](https://docs.microsoft.com/intune/apps-add)。
+- 其他預先打包需求，例如提供授權金鑰、授權條款的合約，以及預先設定的伺服器連線。
 
 ### <a name="decide-how-to-package-apps"></a>決定如何封裝應用程式
 
-某些獨立軟體廠商可能會要求您的應用程式會封裝集中在部署之前。 「 封裝 」 表示應用程式的安裝程式會設定與授權金鑰，遠端伺服器的位置或桌面捷徑語言設定，以便應用程式可以安裝在背景中。
+有些獨立的軟體廠商可能需要先封裝應用程式，才能進行集中部署。 「打包」表示應用程式的安裝程式是以授權金鑰、遠端伺服器位置或桌面快捷方式等設定來設定，以便在後臺安裝應用程式。
 
-有三個選項来封裝您的應用程式： 
+有三個可讓您的應用程式封裝的選項： 
 
 
 - 您可以自行封裝應用程式
-- 您可以使用非 Microsoft 廠商
-- 您可以邀請 MCS 與要封裝您的應用程式。 使用您的 Microsoft 帳戶代表配合。 如需詳細資訊，請參閱[Working with Microsoft 諮詢服務](apps-MCS.md)。
+- 您可以與非 Microsoft 廠商搭配使用
+- 您可以接洽 MCS 以封裝應用程式。 請與您的 Microsoft 客戶代表合作。 如需詳細資訊，請參閱使用[Microsoft 諮詢服務](apps-MCS.md)。
 
 
 
@@ -75,6 +75,6 @@ Microsoft 會提供包含 Office 365 專業增強版應用程式的部署、 更
 
 ## <a name="deploying-apps"></a>部署應用程式
 
-不論您用來取得封裝之後，已完成，應用程式的方法就可以依照[部署應用程式連接至 Microsoft 受管理的電腦裝置](../get-started/deploy-apps.md)中的步驟。
+任何您用來取得應用程式打包方式的方法完成之後，您就可以遵循將[應用程式部署至 Microsoft 受管理的桌面裝置](../get-started/deploy-apps.md)中的步驟進行。
 
 

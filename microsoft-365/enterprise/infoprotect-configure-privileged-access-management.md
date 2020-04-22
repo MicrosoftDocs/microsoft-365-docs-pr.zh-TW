@@ -1,5 +1,5 @@
 ---
-title: 步驟 7：設定 Office 365 的特殊權限存取管理
+title: 步驟7：設定特殊許可權存取管理
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -14,32 +14,32 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.custom: ''
-description: 了解及設定 Office 365 的特殊權限存取管理。
-ms.openlocfilehash: f29b1e0934a4b9a6d4e3347584f39423d446ed58
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 瞭解和設定特殊許可權存取管理。
+ms.openlocfilehash: 4fed4daacc17a34563825bf0575880ce06ec6ebd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067230"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636985"
 ---
-# <a name="step-7-configure-privileged-access-management-for-office-365"></a>步驟 7：設定 Office 365 的特殊權限存取管理
+# <a name="step-7-configure-privileged-access-management"></a>步驟7：設定特殊許可權存取管理
 
 *此為選用步驟，且僅適用於 Microsoft 365 企業版 E5 和進階合規性版本*
 
-![階段 6：資訊保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![第 6 階段：資訊保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-特殊權限存取管理的啟用方法是透過設定原則，該原則會指定您的 Office 365 租用戶中工作型活動的 Just-In-Time 存取。它可以協助保護貴組織免於受到使用現有特殊權限系統管理員帳戶與機密資料的常設存取權或關鍵組態設定之存取權的缺口。例如，您可能會設定特殊權限存取管理原則，該原則需要明確核准的存取權，並且會變更您的 Office 365 租用戶中的組織信箱設定。
+設定特殊許可權存取管理是透過設定在您租使用者中的任務型活動的即時存取原則來啟用。 它可以協助保護您的組織不會因可能使用現有的許可權系統管理員帳戶存取機密資料或存取重要的設定設定而遭到破壞。 例如，您可以設定特殊許可權存取管理原則，此原則需要明確核准，才能存取和變更您租使用者中的組織信箱設定。
 
-在這個步驟中，您會在 Office 365 租用戶中啟用特殊權限存取管理，並且設定特殊權限存取原則，該原則為 Office 365 資料的工作型存取以及貴組織的組態設定，提供額外的安全性。在您的 Office 365 組織中開始使用特殊權限存取有三個基本步驟：
+在這個步驟中，您將在您的租使用者中啟用特殊許可權存取管理，並設定特殊許可權存取原則，以提供對組織之資料和設定設定的任務型存取的額外安全性。 您的組織中有三個基本步驟可讓您開始使用具有特殊許可權的存取權：
 - 建立核准者的群組
 - 啟用特殊權限存取
 - 建立核准原則
 
 一旦設定，特殊權限存取管理就會讓貴組織以零常設特殊權限來運作，並且針對由於此類常設系統管理存取而引發的漏洞提供一層防護。特殊權限存取需要對執行具有已定義相關聯核准原則的工作進行核准。需要執行包含在核准原則內工作的使用者必須要求存取核准並且獲得授與，才能夠具有執行原則中定義工作的必要權限。
 
-若要啟用 Office 365 特殊權限存取管理，請參閱[在 Office 365 中設定特殊權限存取管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) 主題。
+若要啟用特殊許可權存取管理，請參閱設定特殊許可權[存取管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)主題。
 
-如需詳細資訊，請參閱 [Office 365 中的特殊權限存取管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) 主題。
+如需詳細資訊，請參閱「[特權存取管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)」主題。
 
 
 |||

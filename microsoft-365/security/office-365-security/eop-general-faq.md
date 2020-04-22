@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 在這裡，我們將回答有關於 Microsoft Exchange Online Protection (EOP) 雲端電子郵件篩選服務的最常見一般問題。如需其他常見問題集 (FAQ) 主題，請前往下列連結：
-ms.openlocfilehash: 842f022edbba9d1a790a26987982c3bd508e9d5e
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 899109a768399f53674b97fc8df2f71aa822316d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893679"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636249"
 ---
 # <a name="eop-general-faq"></a>EOP 一般常見問題集
 
@@ -51,19 +51,19 @@ ms.locfileid: "42893679"
 
 答：當您依照[設定 EOP 服務](set-up-your-eop-service.md)中所述步驟變更 MX 記錄，以及透過 EOP 變更郵件流程，就會立即開始進行篩選。MX 記錄可能需要 24-48 個小時，以透過 DNS 進行傳播。在處理過程中，您隨時可以在 Exchange 系統管理中心 (EAC) 中微調您的保護設定。
 
-**問：我必須使用 Microsoft Office 365 的所有功能才能使用 EOP 嗎？如果我只想要 EOP 保護呢？**
+**問：我是否需要使用 Microsoft 365 的所有功能才能使用 EOP？如果我只想要 EOP 保護，該怎麼辦？**
 
-答：您可以使用 EOP 保護您的內部部署信箱，而不需使用 Office 365 的任何其他功能。這也稱為獨立訂閱。[Exchange Online Protection 服務描述](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)會提供 EOP 功能的清單。
+答： 您可以使用 EOP 來保護您的內部部署信箱，而不需要使用 Microsoft 365 的任何其他功能。 這稱為獨立訂閱。 您可以在[Exchange Online Protection 服務說明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)中找到 EOP 功能的清單。
 
-**問：透過 EOP 註冊電子郵件篩選時，為什麼需要 Office 365 租用戶？**
+**問：在註冊透過 EOP 的電子郵件篩選時，為什麼需要 Microsoft 365 租使用者？**
 
-答：Office 365 是提供給一組可透過 Office 365 租用戶存取的產品和服務名稱。請將 Office 365 租用戶想像成新增授權以篩選電子郵件的起點。
+答： Microsoft 365 是指可透過 Microsoft 365 租使用者存取的產品和服務集合所提供的名稱。 請將 Microsoft 365 租使用者想像為您可以為電子郵件篩選新增授權的起始點。
 
 **問：EOP 是否有通訊入口網站可讓我了解已知問題和預期的解決方案？有哪些新功能？**
 
 答： Microsoft 365 系統管理中心將會包含這項資訊。 如果您受到服務等級事件的影響，您應該會在登入 Microsoft 365 系統管理中心後，看到一則通訊警示（通常伴隨鈴聲圖示）。 建議您詳讀內容並採取適當的行動。
 
-關於新的 EOP 功能，[商務用 Office 365 導覽圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)是很好的資源，可以在其中尋找新功能的相關資訊。 我們也會將有關新功能的博客文章張貼至[Microsoft 365 博客](https://www.microsoft.com/microsoft-365/blog/)網站。
+關於新的 EOP 功能， [Microsoft 365 for business 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)是用來找出即將推出之新功能之相關資訊的好資源。 我們也會將有關新功能的博客文章張貼至[Microsoft 365 博客](https://www.microsoft.com/microsoft-365/blog/)網站。
 
 **問：此服務可與舊版 Exchange (例如 Exchange Server 2010) 和非 Exchange 環境搭配使用嗎？**
 
@@ -75,7 +75,7 @@ ms.locfileid: "42893679"
 
 **我需要哪些權限才能設定 EOP？**
 
-若要設定 EOP，您必須是 Office 365 全域管理員或 Exchange 公司管理員 (組織管理角色群組)。
+為了設定 EOP，您必須是全域管理員或 Exchange 公司管理員（組織管理角色群組）。
 
 **問：我如何確定我的資料和私人資訊是安全的？**
 

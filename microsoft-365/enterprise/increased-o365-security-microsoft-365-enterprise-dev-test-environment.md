@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此測試實驗室指南可啟用 Microsoft 365 企業版測試環境的其他 Microsoft 365 安全性設定。
-ms.openlocfilehash: 166388de138f5268eb29b8a427bad61ec6ab7cda
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+ms.openlocfilehash: 53205f0626ce55c5a9627339f3631964e3374a19
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058878"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631666"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>提高 Microsoft 365 企業版測試環境的 Microsoft 365 安全性
 
@@ -43,7 +43,7 @@ ms.locfileid: "43058878"
 
 ## <a name="phase-2-configure-increased-microsoft-365-security"></a>階段2：設定增加的 Microsoft 365 安全性
 
-在此階段中，您可以為 Microsoft 365 企業版測試環境啟用增強的 Microsoft 365 安全性。 如需詳細資訊和設定，請參閱[Configure a Office 365 租使用者以提高安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)。
+在此階段中，您可以為 Microsoft 365 企業版測試環境啟用增強的 Microsoft 365 安全性。 如需詳細資訊和設定，請參閱[Configure a 租使用者以提高安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)。
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>設定線上 SharePoint 封鎖不支援新式驗證的應用程式
 
@@ -64,7 +64,7 @@ ms.locfileid: "43058878"
 
 Office 365 的高級威脅防護（ATP），適用于 SharePoint、OneDrive 和 Microsoft 團隊，可防止您的組織意外共用惡意檔。
 
-1. 請移至[Office 365 Security & 合規性中心](https://protection.office.com)，並以全域系統管理員帳戶登入。
+1. 移至[安全性 & 合規性中心](https://protection.office.com)，並以全域系統管理員帳戶登入。
 
 2. 在左功能窗格中的 [**威脅管理**] 底下，按一下 [**原則**]，然後按一下 [ **ATP 安全附件**]。 
 
@@ -94,7 +94,7 @@ Office 365 威脅管理可協助您控制和管理行動裝置對組織資料的
 
 若要查看安全性儀表板：
 
-1. 如有需要，請移至[Office 365 的安全性 & 合規性中心](https://protection.office.com)，並以全域系統管理員帳戶登入。
+1. 如有需要，請移至[安全性 & 合規性中心](https://protection.office.com)，並以全域系統管理員帳戶登入。
 
 2. 在左功能窗格中的 [**威脅管理**] 底下，按一下 [**儀表板**]。
 

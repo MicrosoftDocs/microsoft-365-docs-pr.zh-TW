@@ -1,5 +1,5 @@
 ---
-title: 變更商務用 Office 365 的帳單地址
+title: 變更帳單地址
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,16 +21,16 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
-description: 瞭解如何更新適用于商務用 Office 365 的帳單位址。 您也可以更新用來接收帳單通知的電子郵件地址。
+description: 瞭解如何更新 Microsoft 365 for business 的帳單位址。 您也可以更新用來接收帳單通知的電子郵件地址。
 ms.custom: okr_SMB
-ms.openlocfilehash: 6b11e38de33bf6d66c5847643790603b9ce7b0af
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 169dfd78ca39e91e065c3bea59242a9f205463d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142308"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632716"
 ---
-# <a name="change-your-billing-addresses-for-office-365-for-business"></a>變更商務用 Office 365 的帳單地址
+# <a name="change-your-billing-addresses"></a>變更帳單地址
 
 您的帳單或發票包含三個位址：
   
@@ -60,9 +60,6 @@ ms.locfileid: "43142308"
 
 ::: moniker-end
 
-::: moniker range="o365-worldwide"
-
-::: moniker-end
 
 ## <a name="change-your-sold-to-address"></a>變更您的購買人地址
 
@@ -158,9 +155,9 @@ ms.locfileid: "43142308"
 
 ## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>變更帳單通知傳送的備用電子郵件地址
 
-根據預設，組織的帳單通知會傳送至 Office 365 電子郵件地址，以及組織中每個全域和計費系統管理員的備用電子郵件地址。每個管理員可以更新設定檔資訊以變更他們的備用電子郵件地址。
+根據預設，您組織的帳單通知會傳送至 Microsoft 電子郵件地址，以及組織中每個全域和計費系統管理員的備用電子郵件地址。 每個管理員可以更新設定檔資訊以變更他們的備用電子郵件地址。
   
-1. 用您的公司或學校帳戶，以全域系統管理員的身分登入 Office 365。[了解如何登入](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用您的公司或學校帳戶，以全域系統管理員身分登入 Microsoft 365。[瞭解如何登入](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 選取**使用者圖示**，然後選取 [**我的帳戶**]。
   
@@ -173,9 +170,7 @@ ms.locfileid: "43142308"
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>變更為另一名系統管理員的備用電子郵件地址
 
 您也可以變更貴組織中其他全域系統管理員和計費系統管理員的備用電子郵件地址。
-
-::: moniker range="o365-worldwide"
-
+  
 1. 在系統管理中心中，移至 [帳單]**** \> [帳單通知]<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank"></a>。
 
 ::: moniker-end
@@ -203,3 +198,5 @@ ms.locfileid: "43142308"
 [了解您的帳單](understand-your-invoice2.md)
 
 [支付您的訂閱](pay-for-your-subscription.md)
+
+[訂閱和帳單-系統管理說明](../index.yml)

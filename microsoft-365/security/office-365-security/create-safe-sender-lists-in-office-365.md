@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中建立安全的寄件者清單
+title: 建立安全寄件者清單
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,17 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: 系統管理員可以深入瞭解 Office 365 和 EOP 中可用的選項，讓輸入郵件可以略過垃圾郵件篩選。
-ms.openlocfilehash: 4b50a4b63377c0f3e7b12592c512449f1a3adc12
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: 系統管理員可以深入瞭解 Microsoft 365 和 EOP 中可用的選項，讓輸入郵件可以略過垃圾郵件篩選。
+ms.openlocfilehash: ff4f2715ddfe0029aced27ed466a5af8eb95e790
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528626"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637673"
 ---
-# <a name="create-safe-sender-lists-in-office-365"></a>在 Office 365 中建立安全的寄件者清單
+# <a name="create-safe-sender-lists"></a>建立安全寄件者清單
 
-如果您是 Office 365 客戶的信箱在 Exchange Online 或獨立 Exchange Online Protection （EOP）客戶（沒有 Exchange Online 信箱），EOP 會提供多種方式，以確保使用者接收來自信任寄件者的電子郵件。 這些選項包括 Exchange 郵件流程規則（也稱為傳輸規則）、Outlook 安全寄件者、IP 允許清單（連線篩選）和反垃圾郵件原則中允許的寄件者清單或允許的網域清單。 綜合，您可以將這些選項視為_安全寄件者清單_。
+如果您是使用 Exchange Online 中的信箱或獨立 Exchange Online Protection （EOP）客戶（沒有 Exchange Online 信箱）的 Microsoft 365 客戶，EOP 會提供多種方式，以確保使用者接收來自信任寄件者的電子郵件。 這些選項包括 Exchange 郵件流程規則（也稱為傳輸規則）、Outlook 安全寄件者、IP 允許清單（連線篩選）和反垃圾郵件原則中允許的寄件者清單或允許的網域清單。 綜合，您可以將這些選項視為_安全寄件者清單_。
 
 下列清單說明可用的安全寄件者清單，依從最高建議至最低建議的順序進行：
 

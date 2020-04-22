@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0b28cf2ce96e4c040fac0999d669623cef066fe4
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 93da55287c3b7d7498a9c25f4deeb2615da81675
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929489"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633492"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解進階搜捕結構描述
 
@@ -42,9 +42,9 @@ ms.locfileid: "42929489"
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | 來自 Microsoft Defender ATP、Office 365 ATP、Microsoft Cloud App Security 和 Azure ATP 的警示，包括嚴重性資訊和威脅分類  |
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | 與警示相關聯的檔案、IP 位址、URLs、使用者或裝置 |
 | **[AccountInfo](advanced-hunting-accountinfo-table.md)** | 各來源的帳戶資訊，包括 Azure Active Directory |
-| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Office 365 電子郵件事件，包括電子郵件傳送和封鎖事件 |
-| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | 有關已附加到 Office 365 電子郵件的檔案相關資訊 |
-| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Office 365 電子郵件上 URL 的相關資訊 |
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 電子郵件事件，包括電子郵件傳遞和封鎖事件 |
+| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | 附加至電子郵件之檔案的相關資訊 |
+| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Microsoft 365 電子郵件上的 URLs 相關資訊 |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | 電腦資訊，包括作業系統資訊 |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | 電腦的網路摘要資訊，包括介面卡、IP 和 MAC 位址，以及已連結的網路和網域 |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | 程序建立與相關事件 |

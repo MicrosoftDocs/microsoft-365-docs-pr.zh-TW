@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 90651aa258adb9f7fe46f99bcadf1d4d552a5b76
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 4030469b54d9a3a9c6f2eaceae384d39ea7f3e20
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955658"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637077"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>在自動化調查和回應功能中處理誤報/負片
 
@@ -45,7 +45,7 @@ Microsoft 威脅防護中的[自動化調查和回應功能](mtp-autoir.md)是�
 
 |偵測到未接或誤接專案 |服務  |處理方式  |
 |---------|---------|---------|
-|-電子郵件 <br/>-電子郵件附件 <br/>-電子郵件訊息中的 URL<br/>-Office 檔案中的 URL      |[Office 365 進階威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[將可疑的垃圾郵件、網路釣魚、URLs 和檔案提交至 Microsoft for Office 365 掃描](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
+|-電子郵件 <br/>-電子郵件附件 <br/>-電子郵件訊息中的 URL<br/>-Office 檔案中的 URL      |[Office 365 進階威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[將可疑的垃圾郵件、網路釣魚、URLs 及檔案提交給 Microsoft 進行掃描](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
 |裝置上的檔或應用程式    |[Windows Defender 進階威脅防護](https://docs.microsoft.com/windows/security/threat-protection)         |[將檔案提交給 Microsoft 以進行惡意程式碼分析](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>調整提醒以避免定期誤報

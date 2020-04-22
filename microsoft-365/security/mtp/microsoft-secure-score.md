@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e7274ff196d5b822d146378752d66c9707fc9f19
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: c15f0b30dbf377da4e01ba199852f02bd7a003ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583378"
+ms.locfileid: "43637101"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -52,7 +52,7 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 ### <a name="products-included-in-secure-score"></a>安全分數中包含的產品
 
-目前有 Office 365 的建議（包括 SharePoint Online、Exchange Online、商務 OneDrive、Microsoft 資訊保護等等）、Azure AD 和 Cloud App Security。 即將推出其他安全性產品（如 Azure ATP 和 Microsoft Defender ATP）的建議。 建議不會涵蓋與各項產品相關聯的所有攻擊面，但也是一個很好的基準。 您也可以將改進動作標示為協力廠商所涵蓋的範圍。
+目前有一些建議包括 SharePoint Online、Exchange Online、商務 OneDrive、Microsoft 資訊保護等等）、Azure AD 和 Cloud App Security。 即將推出其他安全性產品（如 Azure ATP 和 Microsoft Defender ATP）的建議。 建議不會涵蓋與各項產品相關聯的所有攻擊面，但也是一個很好的基準。 您也可以將改進動作標示為協力廠商所涵蓋的範圍。
 
 ## <a name="required-permissions"></a>必要的權限
 
@@ -66,7 +66,6 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 * 安全性系統管理員
 * Exchange 系統管理員
 * SharePoint 系統管理員
-* 帳戶管理員
 
 ### <a name="read-only-roles"></a>唯讀角色
 

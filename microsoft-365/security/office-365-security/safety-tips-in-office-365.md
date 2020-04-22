@@ -1,5 +1,5 @@
 ---
-title: Office 365 電子郵件的安全提示
+title: 電子郵件訊息的安全提示
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,19 +16,19 @@ search.appverid:
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
-description: 針對 EOP 和 Office 365 垃圾郵件篩選器所篩選的電子郵件，引進安全性秘訣。
-ms.openlocfilehash: 3e4e645c6ac0285d9d6fff43b301f1f5c61a90e3
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: 為 EOP 和垃圾郵件篩選器所篩選的電子郵件，引進安全性秘訣。
+ms.openlocfilehash: 7171f5855e295ffac931862c86db011c9f38a4c6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032813"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634301"
 ---
-# <a name="safety-tips-in-email-messages-in-office-365"></a>Office 365 電子郵件的安全提示
+# <a name="safety-tips-in-email-messages"></a>電子郵件訊息的安全提示
 
-Exchange Online Protection （EOP）和 Office 365 會保護您的垃圾郵件、網路釣魚和惡意程式碼防護。 如今，有些攻擊非常精心設計，看起來很合理。 將郵件傳送至 [垃圾郵件] 資料夾並不一定足夠。 現在，當您在 Outlook 或 Outlook 網頁版中檢查您的電子郵件時，EOP 會自動檢查寄件者，並將安全性秘訣加入至電子郵件的最上層。
+Exchange Online Protection （EOP）和 Microsoft 365 會保護您的垃圾郵件、網路釣魚和惡意程式碼防護。 如今，有些攻擊非常精心設計，看起來很合理。 將郵件傳送至 [垃圾郵件] 資料夾並不一定足夠。 現在，當您在 Outlook 或 Outlook 網頁版中檢查您的電子郵件時，EOP 會自動檢查寄件者，並將安全性秘訣加入至電子郵件的最上層。
 
-安全提示（色彩編碼的訊息）會警告您可能有害的郵件。 您的收件匣中的大部分郵件都不會有安全性提示。 只有在 EOP 和 Office 365 具有您所需的資訊，以協助防範垃圾郵件、網路釣魚和惡意程式碼攻擊時，您才會看到這些資訊。 如果在 [收件匣] 中顯示安全性秘訣，您可以使用下列範例深入瞭解每種安全提示類型。
+安全提示（色彩編碼的訊息）會警告您可能有害的郵件。 您的收件匣中的大部分郵件都不會有安全性提示。 只有在 EOP 和 Microsoft 365 具有您所需的資訊，以協助防範垃圾郵件、網路釣魚和惡意程式碼攻擊時，您才會看到這些資訊。 如果在 [收件匣] 中顯示安全性秘訣，您可以使用下列範例深入瞭解每種安全提示類型。
 
 - 可疑郵件（紅色的安全性提示）。
 
@@ -58,6 +58,6 @@ Exchange Online Protection （EOP）和 Office 365 會保護您的垃圾郵件�
 
 ## <a name="working-with-safety-tips"></a>使用安全提示
 
-即使並非每封郵件都會收到，安全性秘訣還是會針對網頁上的 Outlook 一直啟用。 Office 365 系統管理員可以關閉其他電子郵件客戶程式（例如 Outlook）的安全性秘訣。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+即使並非每封郵件都會收到，安全性秘訣還是會針對網頁上的 Outlook 一直啟用。 系統管理員可以關閉其他電子郵件客戶程式（例如 Outlook）的安全性秘訣。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 如果您不同意 EOP 對郵件進行分類的方式（也就是說，郵件不是垃圾郵件或是已標示為垃圾郵件），您可以將郵件提交給 Microsoft 進行分析，以協助改善您的體驗。 如需相關指示，請參閱[將訊息和檔案報告給 Microsoft](report-junk-email-messages-to-microsoft.md)。 您也可以按一下安全提示中的 [意見反應] 連結，直接向 Microsoft 提交批註，以協助我們進行改進。

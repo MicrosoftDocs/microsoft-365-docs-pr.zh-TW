@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: a957ef037aed1f9aba923af428c2a440790dbfba
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: c90f16bfbdf41f859e13a23fbdaeb0c3480bd191
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153889"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631522"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>第5階段： Microsoft 365 企業版行動裝置管理
 
@@ -34,7 +34,7 @@ Microsoft 365 企業版包含的功能可協助您管理組織內的裝置及其
 
 ## <a name="step-1-plan-for-your-scenario"></a>步驟1：規劃案例
 
-管理行動裝置的其中一個主要原因是保護和保護您組織的資源。 [使用 Microsoft Intune 的常見方式](https://docs.microsoft.com/intune/common-scenarios)列出一些實際的範例，包括保護 Office 365 電子郵件和資料。
+管理行動裝置的其中一個主要原因是保護和保護您組織的資源。 [使用 Microsoft Intune 的常見方式](https://docs.microsoft.com/intune/common-scenarios)列出一些實際的範例，包括保護 Microsoft 電子郵件和資料。
 
 Intune 可讓您使用行動裝置管理（MDM）或行動應用程式管理（MAM）來管理組織存取權的選項。 MDM 是使用者在 Intune 中「註冊」其裝置的時間。 註冊後，他們就是受管理的裝置，而且可以接收組織使用的任何原則、規則和設定。 例如，您可以安裝特定的應用程式、建立密碼原則、安裝 VPN 連線等等。
 
@@ -47,7 +47,7 @@ Intune 可讓您使用行動裝置管理（MDM）或行動應用程式管理（M
 接下來，根據您的需求和您在上一個步驟中建立的案例，來取得您的必要條件。 [實施您的計畫](https://docs.microsoft.com/intune/planning-guide-onboarding)，列出所有需求。 以下是使用 Microsoft 365 的 Intune 所需的重要專案：
 
 - **Intune 訂閱**：隨附于 microsoft 365，可讓您在[Azure 入口網站](https://portal.azure.com)中存取 microsoft Intune
-- **Office 365 訂閱**：隨附于 Microsoft 365，可用於 Office 應用程式（包括電子郵件）
+- **Microsoft 365 訂閱**：隨附于 microsoft 365，可用於 Office 應用程式（包括電子郵件）
 - **Azure Active Directory （AZURE AD） premium**：隨附于 Microsoft 365，用來建立使用者或安全性群組。 這些群組會接收您建立的 Intune 原則，例如強制密碼長度以解除鎖定裝置。 您可以使用您在[第2階段](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure)中建立的群組： [身分識別]。
 
 根據組織的需求而定，可能會有一些額外的需求。 例如，如果您要管理 iOS 裝置，則需要 Apple MDM Push 憑證。 如果您使用的是內部部署 Exchange，則需要內部部署 Exchange connector。 當您取得這些步驟時，會概括這些額外的需求。

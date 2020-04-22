@@ -16,22 +16,22 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft 已開發各種原則、程式，並採用數種行業最佳作法，協助保護我們的使用者免受濫用、有害或惡意的電子郵件。
-ms.openlocfilehash: c95c586f6287857b910c82e8f21b3d977cdc5966
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 6e73355c02e0416a80441aff8143fcbf51150b94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033743"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634385"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>參考：原則、實務與指導方針
 
-Microsoft 致力於協助提供最受信任的使用者在網頁上的體驗。 因此，Microsoft 已開發各種原則、程式，並採用數種行業最佳作法，協助保護我們的使用者免受濫用、有害或惡意的電子郵件。 嘗試將電子郵件傳送至 Office 365 使用者的寄件者應確保他們完全瞭解並遵循本文中的指導方針，以協助您進行這項工作，並協助避免潛在的傳遞問題。
+Microsoft 致力於協助提供最受信任的使用者在網頁上的體驗。 因此，Microsoft 已開發各種原則、程式，並採用數種行業最佳作法，協助保護我們的使用者免受濫用、有害或惡意的電子郵件。 嘗試將電子郵件傳送給使用者的寄件者應確保他們完全瞭解並遵循本文中的指導方針，以協助您進行此工作，並協助避免潛在的傳遞問題。
 
-如果您不遵循這些原則和指導方針，我們的支援小組可能無法協助您。 如果您遵循本文所述的指導方針、作法和原則，而且仍然會根據您傳送的 IP 位址，而遇到傳送問題，請依照下列步驟提交取消列出要求。 如需相關指示，請參閱[使用取消列出入口網站將您自己從 Office 365 封鎖寄件者清單中移除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
+如果您不遵循這些原則和指導方針，我們的支援小組可能無法協助您。 如果您遵循本文所述的指導方針、作法和原則，而且仍然會根據您傳送的 IP 位址，而遇到傳送問題，請依照下列步驟提交取消列出要求。 如需相關指示，請參閱[使用取消列出入口網站將您自己從封鎖的寄件者清單中移除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
 
 ## <a name="general-microsoft-policies"></a>一般 Microsoft 原則
 
-傳送給 Office 365 使用者的電子郵件，必須遵守所有管理電子郵件傳輸和使用 Office 365 的 Microsoft 原則。
+傳送給 Microsoft 365 使用者的電子郵件必須遵守所有管理電子郵件傳輸和使用 Office 365 的 Microsoft 原則。
 
 - 適用于 Office 365 的服務條款;特別是，禁止使用服務來垃圾郵件或散佈惡意程式碼
 
@@ -39,7 +39,7 @@ Microsoft 致力於協助提供最受信任的使用者在網頁上的體驗。 
 
 ## <a name="governmental-regulations"></a>政府法規
 
-傳送給 Office 365 使用者的電子郵件，必須遵守所有適用司法轄區中的電子郵件通訊的法律和規定。
+傳送給 Microsoft 365 使用者的電子郵件，必須遵守所有適用司法轄區中的電子郵件通訊的法律和規定。
 
 - [CAN-垃圾郵件法案：商務規範指南](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -47,13 +47,13 @@ Microsoft 致力於協助提供最受信任的使用者在網頁上的體驗。 
 
 ## <a name="technical-guidelines"></a>技術指導方針
 
-傳送至 Office 365 的電子郵件應該遵循下列檔中所列的適當建議（部分連結只有英文版本）。
+傳送至 Microsoft 365 的電子郵件應該遵循下列檔中所列的適當建議（部分連結只有英文版本）。
 
 - [RFC 2505： SMTP Mta 的 Anti-Spam 建議](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920：命令流水線作業的 SMTP 服務擴充](https://www.ietf.org/rfc/rfc2920.txt)
 
-此外，連接至 Office 365 的電子郵件伺服器必須符合下列需求：
+此外，連接至 Microsoft 365 的電子郵件伺服器必須符合下列需求：
 
 - 寄件者應遵守網際網路電子郵件傳輸的所有技術標準（如網際網路社會的網際網路工程工作力（IETF）所發佈），包括 RFC 5321、RFC 5322 及其他。
 
@@ -73,9 +73,9 @@ Microsoft 致力於協助提供最受信任的使用者在網頁上的體驗。 
 
 寄件者、ISP 及其他服務提供者應該主動管理輸出 IP 位址的信譽。
 
-## <a name="office-365-limits"></a>Office 365 限制
+## <a name="microsoft-365-limits"></a>Microsoft 365 限制
 
-寄件者必須遵循[Exchange Online Protection 限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)中所列的 Office 365 限制。
+寄件者必須遵守[Exchange Online Protection 限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)中所列的 Microsoft 365 限制。
 
 ## <a name="email-delivery-resources-and-organizations"></a>電子郵件傳遞資源和組織
 

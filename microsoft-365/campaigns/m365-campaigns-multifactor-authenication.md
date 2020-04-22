@@ -23,21 +23,21 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定多重要素驗證。
-ms.openlocfilehash: b0594551b9efb907dfba374f781f21b8850f85d1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35171688f9e224bdcb9ce8a592cc80124d253d2d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594838"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633698"
 ---
 # <a name="set-up-multifactor-authentication"></a>設定多重要素驗證
 
-多重要素驗證提供更高的安全性，為貴公司。 您的系統管理員所需您可以使用 MFA 之後，您可以設定 Microsoft Authenticator app 與手機安全地讓您記錄到索引鍵的應用程式。 
+多重要素驗證為您的企業提供更高的安全性。 在您的系統管理員要求您使用 MFA 後，您可以設定 Microsoft 驗證器應用程式，讓您使用您的電話安全地登入重要應用程式。 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR] 
 
-查看更多在[Microsoft 365 商務版中的多重要素驗證設定](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+若要深入瞭解，請參閱[設定多重因素驗證 Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
-## <a name="use-the-outlook-app-in-your-devices"></a>在您的裝置中使用的 Outlook 應用程式
+## <a name="use-the-outlook-app-in-your-devices"></a>在您的裝置中使用 Outlook 應用程式
 
-您的系統管理員所需您可以使用 MFA，且您已設定驗證器 app 為第二個表單的驗證之後，我們建議您先安裝並只使用 Outlook app 來存取 Microsoft 365 的行銷活動的電子郵件。 請參閱如何安裝 Office 應用程式，包括 Outlook、 在電話上的 [[設定行動裝置](../business/set-up-mobile-devices.md)。
+在您的系統管理員要求您使用 MFA，而且已將驗證應用程式設定為第二種驗證表單時，建議您安裝並只使用 Outlook 應用程式來存取 Microsoft 365 的行銷活動電子郵件。 請參閱[設定行動裝置](../business/set-up-mobile-devices.md)，以瞭解如何在您的手機上安裝 Office app （包括 Outlook）。

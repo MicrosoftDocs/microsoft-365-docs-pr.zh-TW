@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 使用新的安全性儀表板來查看 Office 365 威脅防護狀態，並查看並處理安全性警示。
-ms.openlocfilehash: bade9f1a0060fcd08458bd28eb276a0543f5d815
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 3b6d754505d0e23f1080520e66061b8f6fef523e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537398"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632514"
 ---
 # <a name="security-dashboard"></a>安全性儀表板
 
@@ -33,12 +33,12 @@ ms.locfileid: "43537398"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
 
-根據您組織的 Office 365 訂閱所包含的內容，安全性儀表板包含數個小元件，例如威脅管理摘要、威脅防護狀態、全球每週威脅偵測、惡意程式碼等等，如下列各節所述。
+根據您組織的訂閱內容，安全性儀表板包含數個小元件，例如威脅管理摘要、威脅防護狀態、全球每週威脅偵測、惡意程式碼等，如下列各節所述。
 
-若要查看安全性儀表板，請在[Office 365 安全性 & 合規性中心](../../compliance/go-to-the-securitycompliance-center.md)，移至 [**威脅管理** \> **儀表板**]。
+若要查看安全性儀表板，請在[安全性 & 合規性中心](../../compliance/go-to-the-securitycompliance-center.md)，移至 [**威脅管理** \> ]**儀表板**。
 
 > [!NOTE]
-> 您必須是 Office 365 全域系統管理員、安全性管理員或安全性讀者，才可查看安全性儀表板。 有些小元件需要其他許可權才能進行查看。 若要深入了解，請參閱 [Office 365 安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+> 您必須是全域系統管理員、安全性管理員或安全性讀者，才可查看安全性儀表板。 有些小元件需要其他許可權才能進行查看。 若要深入瞭解，請參閱[安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="threat-management-summary"></a>威脅管理摘要
 
@@ -61,7 +61,7 @@ ms.locfileid: "43537398"
 
 ![威脅防護狀態構件](../../media/tpswidget.png)
 
-詳細資料取決於您的 Office 365 訂閱是否包含[Exchange Online Protection](exchange-online-protection-eop.md) （EOP），具有或沒有[Office 365 的高級威脅防護](office-365-atp.md)（ATP）。
+詳細資料取決於您的 Microsoft 365 訂閱是否包含[Exchange Online Protection](exchange-online-protection-eop.md) （EOP），具有或沒有[Office 365 的高級威脅防護](office-365-atp.md)（ATP）。
 
 |||
 |---|---|
@@ -101,7 +101,7 @@ ms.locfileid: "43537398"
 
 ![Smart insights](../../media/smartinsights.png)
 
-例如，您可能會發現網路釣魚電子郵件已傳遞，因為某些使用者已停用其垃圾郵件選項。 若要深入瞭解真知灼見的運作方式，請參閱[Office 365 Security & 合規性中心中的報告與深入](reports-and-insights-in-security-and-compliance.md)瞭解。
+例如，您可能會發現網路釣魚電子郵件已傳遞，因為某些使用者已停用其垃圾郵件選項。 若要深入瞭解真知灼見的運作方式，請參閱[安全性 & 規範中心中的報告與深入](reports-and-insights-in-security-and-compliance.md)瞭解。
 
 ## <a name="threat-investigation-and-response"></a>威脅調查及回應
 
@@ -115,7 +115,7 @@ ms.locfileid: "43537398"
 
 ![趨勢區段會摘要組織的電子郵件流程趨勢](../../media/trends.png)
 
-此外，如果您組織的 Office 365 訂閱包含[office 365 高級威脅防護方案 2](office-365-ti.md)，您也會在此區段中有一個**最近的威脅管理警示**報告，讓安全性小組能夠查看並對高優先順序的安全性警示採取行動。
+此外，如果貴組織的訂閱包含[Office 365 Advanced 威脅防護方案 2](office-365-ti.md)，您也會在此區段中有一個**最近的威脅管理警示**報告，讓您的安全性小組能夠查看並對高優先順序的安全性警示採取行動。
 
 若要查看或存取已傳送及已接收的電子郵件小工具，您必須具有查看高級威脅防護報告的許可權。 若要深入瞭解，請參閱[查看 ATP 報表所需的許可權為何？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。
 

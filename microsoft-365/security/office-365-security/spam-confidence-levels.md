@@ -16,16 +16,16 @@ ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解垃圾郵件信賴等級（SCL）如何決定郵件為垃圾郵件的可能性和可能性，以及垃圾郵件篩選依據 SCL 的郵件所採取的預設動作。
-ms.openlocfilehash: b8f194f9aecc31896fb816433e71d1b26de708f7
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 519bc48e7285283ad0570b8f3ac598615b132875
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893691"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638281"
 ---
 # <a name="spam-confidence-level-scl-in-office-365"></a>Office 365 中的垃圾郵件信賴等級（SCL）
 
-當 Office 365 （Exchange Online 或獨立 Exchange online Protection （EOP）（沒有 Exchange Online 信箱）收到輸入電子郵件訊息時，郵件會透過垃圾郵件篩選功能，並被指派垃圾郵件分數。 該分數對應于個別垃圾郵件信賴等級（SCL），它會新增至 X 標頭中的郵件。 較高的 SCL 表示郵件可能是垃圾郵件。 服務會根據 SCL 的郵件採取動作。
+當 Microsoft 365 （Exchange Online 或獨立 Exchange online Protection （EOP）（沒有 Exchange Online 信箱）收到輸入電子郵件訊息時，郵件會透過垃圾郵件篩選功能，並被指派垃圾郵件分數。 該分數對應于個別垃圾郵件信賴等級（SCL），它會新增至 X 標頭中的郵件。 較高的 SCL 表示郵件可能是垃圾郵件。 服務會根據 SCL 的郵件採取動作。
 
 下表說明 SCL 的含義和郵件所採取的預設動作。 如需根據垃圾郵件篩選判定，可對郵件採取之動作的詳細資訊，請參閱 Configure the anti-spam[原則 In Office 365](configure-your-spam-filter-policies.md)。
 
@@ -46,4 +46,4 @@ ms.locfileid: "42893691"
 
 ||
 |:-----|
-|![LinkedIn Learning 的短圖示](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **初次使用 Office 365？**         探索 LinkedIn Learning 提供的 **Office 365 admins and IT pros** 免費影片課程。|
+|![LinkedIn Learning 的短圖示](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **初次使用 Office 365？**         探索適用于**Microsoft 365 系統管理員和 IT 專業人員**的免費影片課程，並 LinkedIn 的知識。|

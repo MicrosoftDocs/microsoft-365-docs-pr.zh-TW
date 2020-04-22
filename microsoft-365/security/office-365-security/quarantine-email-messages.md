@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
-description: Office 365 中的隔離會包含潛在危險或不需要的郵件。 系統管理員和使用者可以存取隔離區。
-ms.openlocfilehash: d3db036210886f7a4607f477bba2cf9f450ed90c
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+description: Microsoft 365 中的隔離包含可能有害或有害的郵件。 系統管理員和使用者可以存取隔離區。
+ms.openlocfilehash: 2e2a83bc2ff2d57cf3310e2cb17a656683dbed47
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43230931"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634433"
 ---
-# <a name="quarantine-in-office-365"></a>Office 365 中的隔離區
+# <a name="quarantine-email-messages"></a>隔離電子郵件
 
-如果您是 Office 365 客戶的信箱位於 Exchange Online 或獨立 Exchange Online Protection （EOP）客戶，但沒有 Exchange Online 信箱，則隔離可用於保留潛在危險或不需要的郵件。
+如果您是使用 Exchange Online 中的信箱或獨立 Exchange Online Protection （EOP）客戶但沒有 Exchange Online 信箱的 Microsoft 365 客戶，則隔離可用於保留潛在危險或有害的郵件。
 
 如果找到*任何*包含惡意程式碼的附件，反惡意程式碼原則就會自動隔離郵件。 如需詳細資訊，請參閱[Configure In Office 365 的反惡意程式碼原則](configure-anti-malware-policies.md)。
 

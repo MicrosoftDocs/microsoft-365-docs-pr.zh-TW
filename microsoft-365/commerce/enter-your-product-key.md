@@ -1,5 +1,5 @@
 ---
-title: 輸入您的產品金鑰的 Office 365 商務進階版
+title: 輸入 Microsoft 365 商務標準的產品金鑰
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,50 +21,50 @@ search.appverid:
 - BEA160
 ms.assetid: 0199dd39-7c46-4875-af9b-588df3a9afea
 ROBOTS: NOINDEX
-description: 了解如何兌換於零售商店購買 Office 365 商務進階版產品金鑰。
+description: 瞭解如何兌換在零售店購買的 Microsoft 365 商務標準產品金鑰。
 ms.custom: okr_SMB
-ms.openlocfilehash: 6ae3a490d4ee7bc311421bf69e7437c1c345c1d4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 9cabc3d3f132ef2e3e56c1209b632f1e10a8637e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239742"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634905"
 ---
-# <a name="enter-your-product-key-for-office-365-business-premium"></a>輸入您的產品金鑰的 Office 365 商務進階版
+# <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>輸入 Microsoft 365 商務標準的產品金鑰
 
-如果您購買 Office 365 商務進階版從零售商店，本文可協助您啟動您的訂閱。 
+如果您是從零售商店購買 Microsoft 365 商務標準，本文可協助您啟動訂閱。 
   
  **需要其他內容嗎？**
- **與 Office 365 家用版，或個人的協助**，請參閱[使用 office 產品金鑰](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx)。  
- **大量授權客戶嗎？** 如果您是商務透過[Microsoft Open 授權方案](https://go.microsoft.com/fwlink/p/?LinkID=613298)購買 Office 365，請參閱文章中，[輸入您的產品金鑰是從 Microsoft Open 購買](purchases-from-microsoft-open.md)。
+ **如需 microsoft 365 系列或 microsoft 365 個人的協助**，請參閱搭配[Office 使用產品金鑰](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx)。  
+ **大量授權客戶？** 如果您是透過[Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298)購買 microsoft 365 for business，請參閱文章，[輸入從 Microsoft 開放購買的產品金鑰](purchases-from-microsoft-open.md)。
   
-## <a name="activate-a-new-subscription"></a>啟動新訂閱
+## <a name="activate-a-new-subscription"></a>啟動新的訂閱
 
 1. 移至<a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">office.com/setupkey</a>。
 
-2. 輸入您的產品金鑰，然後選取 [**下一步**]。
+2. 輸入您的產品金鑰，然後選取 **[下一步]**。
 
-3. 輸入您的名稱、 公司電子郵件地址、 公司電話號碼、 公司名稱和國家/地區或區域]，然後選取 [**下一步**]。
+3. 輸入您的姓名、工作電子郵件地址、商務電話號碼、公司名稱及國家或地區，然後選取 **[下一步]**。
 
-4. 輸入要接收的文字或若要確認您的身分識別的通話的電話號碼。
+4. 輸入電話號碼，以接收文字或撥打驗證身分識別。
 
-5. 您可以取得新的網域，請使用您已擁有，或稍後新增網域的網域名稱。 步驟可以而有所不同，因此遵循的提示，在您選擇哪個選項根據。
+5. 您可以取得新的網域、使用您已擁有的功能變數名稱，或稍後新增網域。 步驟會不同，因此請視您選擇的選項而定，遵循提示。
 
     > [!NOTE]
-    > 如果您想要確定您的訂閱會自動延伸其字詞的結尾，您可以新增信用卡或銀行帳戶，然後[開啟 [週期性帳單](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)該訂閱。
+    > 如果您想要確定訂閱在其期限結束時自動擴充，您可以新增信用卡或銀行帳戶，然後開啟該訂閱的[重複計費](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。
 
-6. 完成作業後，請移至<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">系統管理中心</a>來管理您的訂閱。
+6. 完成後，請移至系統<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>以管理您的訂閱。
 
-## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>擴充的到期日或新增至現有訂閱的授權
+## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>擴充到期日或新增授權至現有訂閱
 
-若要使用延伸的到期日或新增至現有的 Office 365 商務進階版訂閱的授權產品金鑰，您需要全新且未使用的索引鍵相同的 Office 365 計劃。 輸入您的原始 Office 365 產品金鑰不會有任何作用，因為已兌換的金鑰無法再次使用。 請參閱[將授權指派給新增或擴充使用產品金鑰支付訂閱費用](licenses/add-licenses-using-product-key.md)。
+若要使用產品金鑰來擴充到期日或新增授權至現有的 Microsoft 365 商務標準訂閱，您需要同一個 Microsoft 365 方案的新的和未使用的金鑰。 輸入您原始的 Microsoft 365 產品金鑰將無法運作，因為已兌換的金鑰無法再使用。 請參閱[新增授權給或擴充使用產品金鑰支付的訂閱](licenses/add-licenses-using-product-key.md)。
 
 ## <a name="whats-next"></a>下一步是什麼？
 
-如果您是商務用 Office 365 新，了解如何[設定 Office 365](../admin/setup/setup.md)。
+如果您是 Microsoft 365 for business，請瞭解如何[設定 microsoft 365](../admin/setup/setup.md)。
   
-## <a name="still-having-trouble-with-product-keys"></a>仍有產品金鑰的相關問題嗎？
+## <a name="still-having-trouble-with-product-keys"></a>仍存在產品金鑰的問題嗎？
 
-請查閱此常見錯誤與解決方案清單：[商務用 Office 365 產品金鑰發生問題？](product-key-errors-and-solutions.md)
+查看此常見錯誤和解決方案清單：您的[Microsoft 365 商務用產品金鑰有問題嗎？](product-key-errors-and-solutions.md)
   
-或者，您也可以[連絡 Microsoft 支援服務](../admin/contact-support-for-business-products.md)。
+或者，請[致電 Microsoft 支援人員](../admin/contact-support-for-business-products.md)。

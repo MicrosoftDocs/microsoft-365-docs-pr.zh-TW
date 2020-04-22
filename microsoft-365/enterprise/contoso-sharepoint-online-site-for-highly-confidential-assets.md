@@ -1,9 +1,11 @@
 ---
-title: Contoso Corporation 的高度機密數位資產的 SharePoint Online 網站
+title: Contoso Corporation 高度機密數位資產的 SharePoint 網站
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/15/2019
+ms.date: 11/18/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,109 +14,94 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
-description: 摘要： 如何 Contoso 實施適用於 SharePoint Online 網站高管制的資料，其研究之間更輕鬆地共同作業的團隊。
-ms.openlocfilehash: 99599829658e5dc46c8adebfe59f5c6d09b165de
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: 摘要： Contoso 如何針對高管制資料執行 SharePoint 網站，以更輕鬆地在其資訊檢索小組之間合作。
+ms.openlocfilehash: 0a4bc2f685cf015611da62ebbed000218f37f31e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072776"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634249"
 ---
-# <a name="sharepoint-online-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation 的高度機密數位資產的 SharePoint Online 網站
+# <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Contoso Corporation 高度機密數位資產的 SharePoint 網站
 
- **摘要：** Contoso 實作其研究小組之間更輕鬆地共同作業的高管制資料的 SharePoint Online 網站的方式。
+Contoso 最有價值的資產是其智慧財產權，其形式為商業機密（如專有製造技術）和開發中產品的設計規格。 這些資產是以數位格式，最初儲存為 SharePoint Server 2016 網站上的檔案。 當 Contoso 部署 Microsoft 365 企業版時，他們想要將其內部部署數位資產轉變為雲端，以便在巴黎、莫斯科、紐約、北京和 Bangalore 中，跨研究小組輕鬆存取和更開啟的共同作業。 
   
-Contoso 的最有價值的資產是其形式的營業秘密、 專屬的製造技術，例如智慧財產及設計規格正在開發的產品。 這些資產相關數位表單中，原來儲存為 SharePoint Server 2016 網站上的檔案。 Contoso 部署 Microsoft 365 企業版，他們想要在巴黎、 莫斯科、 紐約、 北京和班加羅爾研究小組間轉換至雲端的更容易存取，且更開啟共同作業其內部部署數位資產。 
+不過，由於其敏感性，對這些檔案的存取權必須是：
+
+- 限制于允許其存取的一組人員。 
+- 使用資料遺失防護（DLP）原則加以保護，以防止使用者在網站外散佈。
+- 以防止未授權使用者存取其內容的許可權進行加密及保護，即使這些使用者是在網站外發佈。
+
+Contoso IT 部門的安全性和 SharePoint 管理員決定[針對高管制資料使用 SharePoint 網站](teams-sharepoint-online-sites-highly-regulated-data.md)。
   
-不過，由於其機密性質，存取這些檔案必須是一項：
+Contoso 使用這些步驟來建立及保護其研究小組的 SharePoint 小組網站。
 
-- 受限制的允許檢視或變更，具有持續的權限僅由 SharePoint 系統管理員管理網站的人員設定。 
-- 保護與資料外洩防護 (DLP) 可防止使用者間分散外部網站。
-- 加密和保護與存取控制清單，以防止未經授權的使用者存取其內容，即使他們分配站台外。
+## <a name="step-1-created-a-private-sharepoint-team-site"></a>步驟1：建立私人 SharePoint 小組網站
 
-安全性和 SharePoint 系統管理員在 Contoso 的 IT 部門決定使用[適用於 SharePoint Online 網站高管制資料](teams-sharepoint-online-sites-highly-regulated-data.md)。
-  
-Contoso 使用下列步驟來建立並保護其研究小組 SharePoint Online 小組網站。
+為了保護 SharePoint 網站的存取權，Contoso IT 已設定[建議的 SharePoint 存取原則](sharepoint-file-access-policies.md)。
 
-## <a name="step-1-reviewed-and-verified-the-members-of-research-team-groups"></a>步驟 1： 檢閱並確認研究小組群組的成員
+接下來，Contoso IT 管理員為位於巴黎、莫斯科、紐約、北京和 Bangalore 辦事處中的研究人員，編譯器中的使用者帳戶清單。 
 
-Contoso 的 IT 系統管理員為其研究小組執行 < review of 一組安全性群組。 任何人未 researcher 或不需要存取 research 資產移除它們。 
+接下來，Contoso IT 系統管理員建立一個名為「**調查**」的新私人小組網站，並新增其調查人員的所有使用者帳戶。
 
-他們也建立這些新的安全性群組：
+然後，他們為網站設定其他許可權設定，以防止研究人員共用網站的存取權，以及防止非工作人員要求存取網站。
 
-- **Research 系統管理員** 一組的 SharePoint 系統管理員具有完全控制權的網站，包括修改權限的能力。
-- **Research 成員** 一組安全性群組的世界各地的研究小組。
-- **參考資料檢視** 一組管理使用者，例如 research 組織，只能在網站檢視資產中的主管。
+## <a name="step-2-configured-the-site-for-a-restrictive-dlp-policy"></a>步驟2：設定適用于限制性 DLP 原則的網站
 
-## <a name="step-2-created-an-isolated-sharepoint-online-team-site"></a>步驟 2： 建立隔離的 SharePoint Online 小組網站 
+首先，Contoso 系統管理員會將現有的**高度機密**保留標籤套用至「**資訊檢索**」網站的 Documents 資料夾。
 
-第一次建立新的小組網站的 Contoso SharePoint 系統管理員名為**Research**。 他們，然後設定：
+接下來，他們建立名為「**調查**」的新 DLP 原則：
 
-- 使用參考資料擁有者 SharePoint 群組中，具有**研究-Admins**安全性群組的成員身分的完全控制 」 權限等級
-- 使用 [參考成員] SharePoint 群組中，具有**Research 成員**安全性群組的成員身分的編輯權限等級
-- 使用 Research 訪客 SharePoint 群組，其為成員的 [**參考資料檢視**安全性] 群組的讀取權限等級
+- 使用**高度機密**保留標籤。 
+- 當使用者嘗試在 Contoso 以外的**調研**網站上共用數位資產時，封鎖使用者。
 
-以下是所產生的 SharePoint 權限等級、 SharePoint 群組和其成員。
+如需設定詳細資料，請參閱[使用保留標籤和 DLP 保護 SharePoint](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)檔案。
 
-![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/spo-permissions.png)
+## <a name="step-3-created-a-sensitivity-sublabel-for-the-site"></a>步驟3：建立網站的靈敏度 sublabel
 
-接下來，其設定之網站的其他限制。
-
-如設定的詳細資訊，請參閱[部署隔離的 SharePoint Online 小組網站](https://docs.microsoft.com/office365/enterprise/deploy-an-isolated-sharepoint-online-team-site)。
-
-## <a name="step-3-configured-the-site-for-a-restrictive-dlp-policy"></a>步驟 3： 設定嚴格的 DLP 原則的網站
-
-首先，Contoso 系統管理員套用**Research**網站的**高度機密**的 Office 365 保留標籤。
-
-接下來，建立新的 Office 365 DLP 原則名為**Research**的：
-
-- 使用**高度機密**的 Office 365 保留標籤。 
-- 會套用至**Research**網站。
-- 當他們嘗試共用 Contoso 以外的**研究**網站上的數位資產時，就會封鎖使用者。
-
-如設定的詳細資訊，請參閱 <<c0>使用保留標籤與 DLP 保護 SharePoint Online 檔案。
-
-## <a name="step-4-created-an-azure-information-protection-sub-label-for-the-site"></a>步驟 4： 建立網站的 Azure 資訊保護子標籤
-
-Contoso 系統管理員建立新的 Azure 資訊保護子標籤名為**Research**的預設**高度機密**] 標籤中的限域原則的：
+Contoso admins 為**高度機密**標籤的「**調查小組**」建立了新的靈敏度 sublabel，其為下列專案：
 
 - 需要加密。
-- 允許完整存取**Research 成員**的 [安全性] 群組的成員。
-- 允許讀取權限由**參考資料檢視**的 [安全性] 群組的成員。
+- 允許用於**調查**Microsoft 365 群組的共同撰寫許可權
+- 適用于**調查**Microsoft 365 群組
 
-接下來，這些部署的 Azure 資訊保護用戶端裝置的研究小組成員。
+以下是高度機密資產之**研究**小組網站的結果設定。
 
-如設定的詳細資訊，請參閱[使用 Azure 資訊保護保護 SharePoint Online 檔案](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-azure-information-protection)。 
+![針對高度機密資產的「調查小組網站」所產生的設定](../media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
 
-以下是高度機密資產的**研究**網站所產生的組態。
+「**調查**網站」資料夾中的檔案受到下列保護：
 
-![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
+- 網站許可權，只允許存取「**調查**」 Microsoft 365 群組的成員。
+- 「**調查**DLP」原則，其使用**高度機密**保留標籤和設定，以防止與外部使用者共用檔案。
+- 「**研究小組**敏感度」 sublabel，其會在移動或複製到**資訊檢索**網站時，與檔案一起旅行的加密和許可權。
 
-**研究**站台的資料夾中的檔案受到：
+以下是以「調查**小組**敏感度 sublabel 指派」儲存在「**資訊檢索**」網站中的檔案範例。
 
-- **研究**Azure 資訊保護子標籤，適用於加密和使用權檔案會對每個檔案已移動或複製從**Research**網站。
-- **研究**DLP 原則，會使用**高度機密**的保留標籤和避免與外部使用者共用檔案的設定。
-- 網站權限，只允許存取成員**Research 成員**和**參考資料檢視者**安全性群組和管理由**Research Admins**安全性群組的成員集合。
+![針對高度機密資產的「調查小組網站」所產生的設定](../media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
 
-## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a>步驟 5： 移轉的內部部署 SharePoint research 資料
 
-Contoso 系統管理員移動所有內部研發網站中的內部部署 SharePoint Server 2016 中新**的參考資料**的 SharePoint Online 站台資料夾的檔案。
+## <a name="step-4-migrated-the-on-premises-sharepoint-research-data"></a>步驟4：遷移內部部署 SharePoint 研究資料
 
-## <a name="step-6-trained-their-users"></a>步驟 6： 訓練使用者 
+Contoso admins 會將內部部署 SharePoint Server 2016 網站中的所有內部部署調查檔案，移至新「**調研**SharePoint」網站中的資料夾。
 
-Contoso 的安全性人員訓練逐步執行它們透過強制課程中的研究小組：
+## <a name="step-5-trained-their-researchers"></a>步驟5：訓練其研究員
 
-- How to： 存取新的**研究**SharePoint Online 網站和其現有的檔案。
+Contoso 安全性人員會在必要的課程中訓練**調查**Microsoft 365 群組的成員：
+
+- 如何存取新的**調研**網站及其現有的檔案。
 - 如何在網站上建立新檔案，以及上傳儲存在本機的新檔案。
-- 示範 DLP 原則會封鎖從外部共用的檔案。
-- 如何使用 Azure 資訊保護用戶端標籤具有**Research**子標籤的參考資料檔案。
-- **Research**子標籤如何保護檔案，即使它從網站遺漏的示範。
+- 示範「**調查**DLP」原則如何封鎖外部共用檔案。
+- 如何使用「**研究小組**敏感度」 sublabel 為檔案加上標籤。
+- 示範「**調研組**」子標籤如何保護檔案，甚至是在該檔案從網站洩漏時。
 
-最後的結果是安全的環境研究人員可以共同在安全的環境中的組織。 
+最終結果是一種安全的環境，在此環境中，研究人員可以在包含調研資訊之檔案的安全環境中，于 Contoso 間共同作業。 
 
-如果從**Research**網站遺漏研究文件與**研究**子標籤，它會經過加密並且只有具有有效認證**Research 成員**和**參考資料檢視**安全性群組的成員可以存取。
+如果使用「**調查小組**」的調研檔 sublabel 出「**調查**網站」，它會加密，而且只能存取使用有效使用者帳號憑證的「**調查**Microsoft 365 群組」的成員。
 
 ## <a name="next-step"></a>下一步
 
-[部署](deploy-microsoft-365-enterprise.md)Microsoft 365 企業版，您組織中。
+[部署](deploy-microsoft-365-enterprise.md)您組織中的 Microsoft 365 企業版。
 
+## <a name="see-also"></a>請參閱
+
+[Microsoft 365 生產力資源庫](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary)

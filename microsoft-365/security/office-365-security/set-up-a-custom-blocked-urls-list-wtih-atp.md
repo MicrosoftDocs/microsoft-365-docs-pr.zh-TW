@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 ATP 安全連結來設定自訂封鎖的 Url 清單
+title: 使用 ATP 安全連結設定已封鎖的自訂 URLs 清單
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,14 +17,14 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用 Office 365 進階威脅防護為貴組織設定封鎖的 URL 清單。 封鎖的 URL 會根據您的 ATP 安全連結原則，套用至電子郵件訊息和 Office 文件。
-ms.openlocfilehash: 5205fbd5ccc873513eed4e367119084516e92bf2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ff8709a8bf0f8afc27ace2b3977be975f42c33a5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088085"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638401"
 ---
-# <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>使用 Office 365 ATP 安全連結來設定自訂封鎖的 Url 清單
+# <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>使用 ATP 安全連結設定已封鎖的自訂 URLs 清單
 
 > [!IMPORTANT]
 > 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您是家用版使用者且正在尋找 Outlook 中安全連結的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
@@ -33,7 +33,7 @@ ms.locfileid: "42088085"
   
 ![網站已遭封鎖](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
   
-封鎖的 URL 清單是由貴組織的 Office 365 安全性小組所定義，而該清單適用於組織中受 Office 365 ATP 安全連結原則涵蓋的所有人員。 
+[封鎖的 URLs] 清單是由您組織的 Microsoft 365 商務版安全小組所定義，而該清單適用于 Office 365 ATP 安全連結原則所涵蓋之組織中的所有人。 
   
 請參閱此文章以了解如何為 [Office 365 中的 ATP 安全連結](atp-safe-links.md)設定貴組織的自訂封鎖 URL 清單。
   
@@ -45,12 +45,12 @@ ms.locfileid: "42088085"
 
 |角色  |指派位置/條件  |
 |---------|---------|
-|Office 365 全域系統管理員 |註冊購買 Office 365 的人會預設為為全域系統管理員。 (請參閱[關於 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以深入了解。)         |
+|全域管理員 |簽署購買 Microsoft 365 的人員預設為全域系統管理員。 （請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以深入瞭解。）         |
 |安全性系統管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
 > [!TIP]
-> 若要深入了解角色和權限，請參閱 [Office 365 安全性的權限 &amp; 合規性中心](permissions-in-the-security-and-compliance-center.md) (英文)。
+> 若要深入瞭解角色和許可權，請參閱[安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 ### <a name="to-view-or-edit-a-custom-blocked-urls-list"></a>若要檢視或編輯自訂封鎖 URL 清單
   

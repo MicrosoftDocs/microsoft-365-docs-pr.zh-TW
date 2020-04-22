@@ -1,5 +1,5 @@
 ---
-title: 手動變更商務用 Office 365 方案
+title: 手動變更商務用 Microsoft 365 方案
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: 購買新的訂閱以手動變更訂閱，並確保訂閱同時列出並使用中。
-ms.openlocfilehash: 80e10c3b24fa69ee5b1a6c89790260c2ac810588
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 89786b30403a60bd0551351602d6fccc07f3d1a1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142148"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636580"
 ---
 # <a name="change-plans-manually"></a>手動變更計畫
 
@@ -51,9 +51,9 @@ ms.locfileid: "43142148"
 
 OR
 
-**購買新的訂閱與授權：** 遵循[購買其他商務用 Office 365 訂閱](../buy-another-subscription.md)中的步驟，購買新的訂閱。
+**購買新的訂閱與授權：** 請遵循[購買其他 Microsoft 365 for business 訂閱](../buy-another-subscription.md)中的步驟，購買新的訂閱。
 
-請確認您購買的是使用者現在所在組織的訂閱。 例如，檢查您要移動之 Office 365 使用者的電子郵件地址。 如果他們的電子郵件\@位址包括 contoso.com，您必須購買 contoso.com 的新訂閱。
+請確認您購買的是使用者現在所在組織的訂閱。 例如，檢查您要移動之使用者的電子郵件地址。 如果他們的電子郵件\@位址包括 contoso.com，您必須購買 contoso.com 的新訂閱。
 針對每個您想要移動的使用者，加入一個授權。
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>步驟3：檢查您的新訂閱與授權
@@ -114,5 +114,4 @@ OR
 如果您只將部分使用者移至不同的訂閱，請移除您不再需要的[授權](../licenses/remove-licenses-from-subscription.md)。
 
 ## <a name="call-support-to-help-you-change-plans"></a>通話支援以協助您變更方案
-
 [撥打 Microsoft 支援服務](../../admin/contact-support-for-business-products.md)

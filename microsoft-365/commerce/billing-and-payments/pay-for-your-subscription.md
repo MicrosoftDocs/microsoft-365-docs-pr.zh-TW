@@ -1,5 +1,5 @@
 ---
-title: 支付商務用 Office 365 訂閱費用
+title: 支付訂閱費用
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: 了解有哪些付款選項可以支付您的商務用 Office 365 訂閱費用。
+description: 瞭解哪些付款選項可用於商務用 Microsoft 365 訂閱。
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: dfecd2ec5ca72f8e00e664f3f54d7125fe8d21b6
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: ccf04de4fe11469241e734a202aad3e20778843c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540900"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635013"
 ---
-# <a name="pay-for-your-office-365-for-business-subscription"></a>支付商務用 Office 365 訂閱費用
+# <a name="pay-for-your-subscription"></a>支付訂閱費用
 
 當您在設定訂閱時，可以選擇使用信用卡或銀行帳戶付款，或是使用支票或電匯 (EFT) 透過發票付款。 無論您選擇哪種方式，我們將在後續計費期間繼續使用這種付款方式，除非您[變更您的付款方式](change-payment-method.md)。
 
@@ -93,7 +93,7 @@ ms.locfileid: "43540900"
 如果以發票支付訂閱款項，您會在帳單明細可供檢視時收到電子郵件通知。 此電子郵件不含帳單複本。 不過，您也可以選擇[透過電子郵件接收帳單明細的複本](#receive-a-copy-of-your-billing-statement-in-email)。 帳單內包括各種付款方式的詳細資料。 如果您在購買訂閱時輸入了採購單 (PO) 編號，它會顯示在帳單上。 如需存取帳單明細的相關資訊，請參閱[檢視您的帳單或發票](view-your-bill-or-invoice.md)。
 
 > [!NOTE]
-> 根據預設，貴組織的帳單通知會傳送至組織中每個全域及計費系統管理員的 Office 365 電子郵件地址和備用電子郵件地址。 若要變更備用電子郵件地址，請參閱[變更帳單地址](change-your-billing-addresses.md)。
+> 根據預設，您組織的帳單通知會傳送至 Microsoft 電子郵件地址，以及組織中每個全域和計費系統管理員的備用電子郵件地址。 若要變更備用電子郵件地址，請參閱[變更帳單地址](change-your-billing-addresses.md)。
 
 ### <a name="can-i-pay-my-bill-online"></a>我可以線上支付帳單嗎？
 

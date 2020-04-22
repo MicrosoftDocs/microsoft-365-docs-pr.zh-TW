@@ -1,5 +1,5 @@
 ---
-title: 了解商務用 Office 365 發票
+title: 瞭解適用于商務用 Microsoft 365 的發票
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,15 +23,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: 瞭解如何在您的商務用 Office 365 上轉譯費用、帳單和付款資訊，以及如何變更採購訂單編號。
-ms.openlocfilehash: 152b5d888b8773e2e60cea8584417e47ee58c47f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: 瞭解如何轉譯您的 Microsoft 365 商務發票上的費用、帳單和付款資訊，以及如何變更採購訂單編號。
+ms.openlocfilehash: 392957ecf06c6200bca3daf205946f5b8fd1563a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142296"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634965"
 ---
-# <a name="understand-your-invoice-for-office-365-for-business"></a>了解商務用 Office 365 發票
+# <a name="understand-your-invoice-for-microsoft-365-for-business"></a>瞭解適用于商務用 Microsoft 365 的發票
 
 每月您都會收到一封電子郵件，告訴您您的新帳單報表可在系統管理中心中取得。 [瞭解如何尋找及查看您的帳單或發票](view-your-bill-or-invoice.md)。
   
@@ -66,7 +66,7 @@ ms.locfileid: "43142296"
 > [!NOTE]
 > 銀行帳戶付款不適用於部分國家或地區。
   
-|**Name**|**描述**|
+|**名稱**|**描述**|
 |:-----|:-----|
 |年價格|訂閱會以月度或每年為帳單。 如果您在購買訂閱期間選擇了 [年度帳單]，則該發票上會反映年度授權價格。 如果您想變更帳單頻率，必須取消訂閱並以新的計費頻率 repurchase。|
 |計費期間|計費期間是指自最後一個發票日期起的時間週期。 服務期間是您用來收費使用服務的時段。|
@@ -138,6 +138,6 @@ ms.locfileid: "43142296"
 
 ## <a name="related-articles"></a>相關文章
 
-[支付商務用 Office 365 訂閱費用](pay-for-your-subscription.md)
+[購買 Microsoft 365 for business 訂閱](pay-for-your-subscription.md)
 
 [Minecraft: Education Edition 付款選項](https://go.microsoft.com/fwlink/p/?linkid=838761)

@@ -20,55 +20,55 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 瞭解如何將您的商務用 Office 365 E3 移至 Microsoft 365 商務版。
-ms.openlocfilehash: cff6166529df2e56ba948a9bd3ea4594fb295b08
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+description: 瞭解如何將您的業務移至 Microsoft 365 商務版，從 Office 365 E3。
+ms.openlocfilehash: 0d23e293d599f5b9d6c829d101f2395d6ac21215
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153529"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633184"
 ---
-# <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>從 Office 365 E3 遷移至 Microsoft 365 Business 
+# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>從 Office 365 E3 遷移至 Microsoft 365 商務版 Premium 
 
-Microsoft 365 公司具有您的小型企業所需的一切，結合了最佳的雲端式生產力應用程式與簡單的裝置管理和安全性。 如果您目前已有 Office 365 E3 訂閱，但沒有超過300名員工，請考慮切換至 Microsoft 365 商務以加入安全性功能。
+Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合了最佳的雲端式生產力應用程式與簡單的裝置管理和安全性。 如果您目前已有 Office 365 E3 訂閱，但沒有超過300名員工，請考慮切換至 Microsoft 365 商務版 Premium，以加入安全性功能。
 
-遷移非常簡單：先切換授權，您的目前訂閱中的所有資料和使用者資訊仍會維護。 遷移後，您必須設定在 Microsoft 365 商務版中新增的功能。
+遷移非常簡單：先切換授權，您的目前訂閱中的所有資料和使用者資訊仍會維護。 遷移之後，您必須設定 Microsoft 365 商務版 Premium 新增的功能。
 
-## <a name="differences-between-office-365-e3-and-microsoft-365-business"></a>Office 365 E3 與 Microsoft 365 業務之間的差異
+## <a name="differences-between-office-365-e3-and-microsoft-365-business-premium"></a>Office 365 E3 與 Microsoft 365 商務版的差異
 
-下表顯示 Microsoft 365 商務版與 Office 365 E3 之間的差異。
+下表顯示 Microsoft 365 商務版 Premium 和 Office 365 E3 之間的差異。
 
-| 功能    | Microsoft 365 商務版中的支援    | Office 365 E3 中的支援 | 
+| 功能    | Microsoft 365 商務版 Premium 中的支援    | Office 365 E3 中的支援 | 
 |:-------|:-----|:-----|
 | **內部部署**        | | | 
-| Office app<sup>1</sup>    | Office 365 商務版    | Office 365 專業增強版 | 
+| Office app<sup>1</sup>    | Microsoft 365 商務應用程式    | 適用于企業的 Microsoft 365 應用程式 | 
 | **雲端生產力應用程式**        | | | 
 | Exchange Online 和 Outlook    | 每個信箱 50 GB 儲存空間限制和 Exchange Online 封存數目不受限制    | 每個信箱 100 GB 儲存空間限制和 Exchange Online 封存數目不受限制 | 
-| Teams    | ![隨附于 Microsoft 365 商務](../media/check-mark.png)    | ![隨附于 Office 365 E3](../media/check-mark.png) | 
+| Teams    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Office 365 E3](../media/check-mark.png) | 
 | 商務用 OneDrive    | 每個使用者 1 TB 的儲存空間限制    | 無限制 | 
-| Yammer、SharePoint 線上、Planner、Stream    | ![隨附于 Microsoft 365 商務](../media/check-mark.png)    | ![隨附于 Office 365 E3](../media/check-mark.png) | 
-| StaffHub    | ![隨附于 Microsoft 365 商務](../media/check-mark.png)    | ![隨附于 Office 365 E3](../media/check-mark.png) | 
-| Outlook 客戶經理，MileIQ    | ![隨附于 Microsoft 365 商務](../media/check-mark.png)    | | 
+| Yammer、SharePoint 線上、Planner、Stream    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Office 365 E3](../media/check-mark.png) | 
+| StaffHub    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Office 365 E3](../media/check-mark.png) | 
+| Outlook 客戶經理，MileIQ    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | | 
 | **威脅防護**        | | | 
-| Office 365 高級威脅防護（ATP）方案1 | ![隨附于 Microsoft 365 商務](../media/check-mark.png)    | 不包含，但可以新增于 | 
+| Office 365 高級威脅防護（ATP）方案1 | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | 不包含，但可以新增于 | 
 | **身分識別管理**        | | | 
-| 混合式 Azure Active Directory （Azure AD）帳戶的自助密碼重設，Azure Multi-Factor 驗證，條件式存取，針對內部部署身分識別的密碼回寫功能|     ![隨附于 Microsoft 365 商務](../media/check-mark.png)    |  | 
+| 混合式 Azure Active Directory （Azure AD）帳戶的自助密碼重設，Azure 多重要素驗證（MFA），條件式存取，針對內部部署身分識別的密碼回寫|     ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    |  | 
 | **裝置和應用程式管理**        | | |
-| Microsoft Intune、Windows AutoPilot|     ![隨附于 Microsoft 365 商務](../media/check-mark.png)    |  |
-| 共用電腦啟用|     ![隨附于 Microsoft 365 商務](../media/check-mark.png)    | ![隨附于 Office 365 E3](../media/check-mark.png)| 
-| 從 Win 7/8.1 Pro 授權到 Windows 10 專業版的升級許可權|     ![隨附于 Microsoft 365 商務](../media/check-mark.png)    || 
+| Microsoft Intune、Windows AutoPilot|     ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    |  |
+| 共用電腦啟用|     ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Office 365 E3](../media/check-mark.png)| 
+| 從 Win 7/8.1 Pro 授權到 Windows 10 專業版的升級許可權|     ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    || 
 | **資訊保護**        | | |
-|Office 365 資料外洩防護|    ![隨附于 Microsoft 365 商務](../media/check-mark.png)|![隨附于 Office 365 E3](../media/check-mark.png)|
-|Azure 資訊保護方案1，Bitlocker 強制執行|![隨附于 Microsoft 365 商務](../media/check-mark.png)||
-|Azure 資訊保護方案1，敏感度標籤|![隨附于 Microsoft 365 商務](../media/check-mark.png)||
+|Office 365 資料外洩防護|    ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)|![隨附于 Office 365 E3](../media/check-mark.png)|
+|Azure 資訊保護方案1，Bitlocker 強制執行|![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)||
+|Azure 資訊保護方案1，敏感度標籤|![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)||
 |**用戶端存取許可證（CAL 許可權）**|||
 |Enterprise CAL 套件（Exchange、SharePoint、Skype）||![隨附于 Office 365 E3](../media/check-mark.png)|
 
-<sup>1</sup> Microsoft 365 商務版的 Office 應用程式不包括透過群組原則、應用程式遙測、更新控制項、試算表比較和查詢或商務智慧的大量啟用。
+<sup>1</sup> Microsoft 365 商務版 Office 應用程式不包括透過群組原則、應用程式遙測、更新控制項、試算表比較和查詢或商務智慧的大量啟用。
 
 ## <a name="migration"></a>移轉
 
-若要遷移您的訂閱，請參閱[手動變更計畫](../commerce/subscriptions/change-plans-manually.md)，以瞭解是否只想要將少數幾個人移至 Microsoft 365 商務。 您也可以[自動升級所有人](../commerce/subscriptions/upgrade-to-different-plan.md)，或與合作夥伴合作，將 E3 訂閱和授權移至 Microsoft 365 商務版訂閱。
+若要遷移您的訂閱，請參閱[手動變更計畫](../commerce/subscriptions/change-plans-manually.md)，以取得相關指示如果您只想要將少數幾個人移至 Microsoft 365 商務版 Premium。 您也可以[自動升級所有人](../commerce/subscriptions/upgrade-to-different-plan.md)，或與合作夥伴合作，將 E3 訂閱和授權移至 Microsoft 365 商務版 Premium 訂閱。
 下列各節說明您需要做的變更（若有的話），以及遷移後可以執行的動作。
 
 ### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365 E3 訂閱設定和資料
@@ -87,9 +87,9 @@ Microsoft 365 公司具有您的小型企業所需的一切，結合了最佳的
 > [!NOTE]
 > 如果您設定 Office 365 MDM 原則和裝置，這些裝置將會列在 Microsoft 365 系統管理中心的 [**裝置**] 頁面上。 您設定的任何原則都會顯示在[Intune 入口網站](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)的經典原則清單中。
 
-將授權指派給 Microsoft 365 商務後，您就可以開始保護使用者的裝置和檔案。
+將授權指派給 Microsoft 365 商務版 Premium 之後，您可以開始保護使用者的裝置和檔案。
 
-如果您已將組織中的所有人員升級至 Microsoft 365 商務版，您會在首頁上看到 [安裝精靈]，而且可以遵循[安裝精靈的 [設定] 中的 [Microsoft 365 業務](set-up.md)]，以保護檔案和行動裝置。
+如果您已將組織中的所有人員升級至 Microsoft 365 商務版 Premium，您會在首頁上看到安裝精靈，並且可以遵循[安裝精靈的 [設定 Microsoft 365 商務版] 的](set-up.md)步驟，以保護檔案和行動裝置。
 
 您也可以在 [裝置] 頁面上完成這些步驟：
   
@@ -109,13 +109,13 @@ Microsoft 365 公司具有您的小型企業所需的一切，結合了最佳的
   
 4. 一旦您設定原則，您和您的員工便可以設定裝置：
     
-  - 如需 Windows 裝置的步驟，請參閱為[Microsoft 365 商務使用者設定 Windows 裝置](set-up-windows-devices.md)。 
+  - 如需 Windows 裝置的步驟，請參閱為[Microsoft 365 商務版使用者設定 Windows 裝置](set-up-windows-devices.md)。 
     
   - 如需 Android 手機和 Iphone 的步驟，請參閱為[Microsoft 365 商務版使用者設定行動裝置](set-up-mobile-devices.md)。 
 
 ### <a name="threat-protection"></a>威脅防護
 
-在遷移至 Microsoft 365 商務版之後，您有 Office 365 ATP。 如需概要，請參閱[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 。 若要設定，請參閱[設定 atp 安全連結](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)、[設定 atp 安全附件](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，以及[設定 atp 反網路釣魚](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)。
+在遷移至 Microsoft 365 商務版 Premium 後，您有 Office 365 ATP。 如需概要，請參閱[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 。 若要設定，請參閱[設定 atp 安全連結](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)、[設定 atp 安全附件](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，以及[設定 atp 反網路釣魚](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)。
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 

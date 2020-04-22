@@ -1,5 +1,5 @@
 ---
-title: Office 365 ATP 中的攻擊模擬器
+title: ATP 中的攻擊模擬器
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,31 +15,31 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: 使用攻擊模擬器，在您的 Office 365 E5 或 ATP 方案2組織中執行模擬網路釣魚和密碼攻擊，這可協助您識別遭到攻擊的使用者，在實際的攻擊擊中您的業務之前。
-ms.openlocfilehash: 95b7af302a5dcc1987040c23a7dde867e2d09292
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+description: 作為全域管理員，您可以使用攻擊模擬器，在您的組織中執行實際的攻擊案例。 這可協助您找出並找出有漏洞的使用者，以實際的攻擊擊中您的業務。
+ms.openlocfilehash: cac09ed48a46531ea2246f9c3ef798649dc73196
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637336"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638569"
 ---
-# <a name="attack-simulator-in-office-365-atp"></a>Office 365 ATP 中的攻擊模擬器
+# <a name="attack-simulator-in-atp"></a>ATP 中的攻擊模擬器
 
-Office 365 中的攻擊模擬器高級威脅防護方案2（ATP 方案2）可讓您在組織中執行實際的網路釣魚網站和密碼攻擊活動。 您可以使用行銷活動的結果來識別及訓練有缺陷的使用者。
+**摘要**如果您是全域系統管理員或安全性管理員，且您的組織具備 Office 365 的高級威脅防護方案2（包括[威脅調查和回應功能](office-365-ti.md)），您可以使用攻擊模擬器，在組織中執行實際的攻擊案例。 這可協助您在實際攻擊對您造成實質的損害之前識別並找出易受攻擊的使用者。 若要深入瞭解，請閱讀本文。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 若要開啟 Office 365 安全性 & 規範中心，請移<https://protection.office.com/>至。 攻擊模擬器可在**威脅管理** \> **攻擊模擬器**中取得。
+- 若要開啟安全性 & 規範中心，請移<https://protection.office.com/>至。 攻擊模擬器可在**威脅管理** \> **攻擊模擬器**中取得。
 
   ![威脅管理-攻擊模擬器](../../media/ThreatMgmt-AttackSimulator.png)
 
-- 如需不同 Office 365 訂閱中攻擊模擬器可用性的相關資訊，請參閱[Office 365 高級威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+- 如需不同 Microsoft 365 訂閱中攻擊模擬器可用性的相關資訊，請參閱[Office 365 高級威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
-- 您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 如需安全性 & 規範中心中角色群組的詳細資訊，請參閱[Office 365 安全性 & 規範中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+- 您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 如需安全性 & 規範中心中角色群組的詳細資訊，請參閱[安全性 & 規範中心中的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 - 您的帳戶必須設定為多重要素驗證（MFA）以在攻擊模擬器中建立及管理活動。 如需相關指示，請參閱[設定多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。
 
-- 您只能在具有 Exchange Online 信箱的使用者上執行網路釣魚或密碼攻擊活動。
+若要成功啟動攻擊，請確定您用來執行模擬攻擊的帳戶使用多重要素驗證。 此外，您必須是全域系統管理員或安全性管理員。 （若要深入瞭解角色和許可權，請參閱[安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。）
 
 - 網路釣魚活動會收集事件，並處理30天的事件。 在您啟動市場活動之後，歷史活動資料將可長達90天。
 
@@ -49,11 +49,11 @@ Office 365 中的攻擊模擬器高級威脅防護方案2（ATP 方案2）可讓
 
 *網路釣魚*是一種常見的電子郵件攻擊術語，可嘗試竊取看似來自合法或信任寄件者的郵件中的機密資訊。 *Spear 網路釣魚*是一個目標網路釣魚攻擊，其使用專門為目標收件者量身定制的專門和自訂內容（通常是攻擊者在收件者上的偵測之後）。
 
-如需有關網路釣魚和 spear 網路釣魚的詳細資訊，請參閱[仿冒](https://docs.microsoft.com/windows/security/threat-protection/intelligence/phishing)。
+- 您是全域系統管理員或安全性管理員
 
 在攻擊模擬器中，有兩種不同類型的 spear 網路釣魚活動可供使用：
 
-- **Spear 網路釣魚（認證搜集）**：攻擊會嘗試說服收件者按一下郵件中的 URL。 如果他們按一下連結，則會要求使用者輸入他們的認證。 如果是的話，它們會移至下列其中一個位置：
+- 已開啟[多重要素驗證/條件式存取](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)，至少要有全域管理員帳戶和將使用攻擊模擬器的安全性管理員。 （理想情況下，會為組織中的所有使用者開啟多重要素驗證/條件式存取）。
 
   - 說明這種情況的預設頁面只是測試，並提供識別網路釣魚郵件的秘訣。
 

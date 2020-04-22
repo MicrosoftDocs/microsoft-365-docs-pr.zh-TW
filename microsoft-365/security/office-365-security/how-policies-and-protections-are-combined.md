@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的電子郵件保護順序和優先順序
+title: 電子郵件保護的順序和優先順序
 keywords: 安全性，惡意程式碼，Microsoft 365，M365，安全性中心，ATP，Microsoft Defender ATP，Office 365 ATP，Azure ATP
 f1.keywords:
 - NOCSH
@@ -14,16 +14,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 說明 Office 365 保護的應用程式順序，以及保護原則中的優先順序值如何決定所套用的原則。
-ms.openlocfilehash: 6a95c59a5cd629b704753c6c05c9b8069d9240b1
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: ed4806bad6299dc5a5380bec2f6e1247f9d6b448
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537410"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633963"
 ---
-# <a name="order-and-precedence-of-email-protection-in-office-365"></a>Office 365 中的電子郵件保護順序和優先順序
+# <a name="order-and-precedence-of-email-protection"></a>電子郵件保護的順序和優先順序
 
-在 Office 365 中，輸入的電子郵件會由其評估，因此可能會以多種保護形式（惡意程式碼、垃圾郵件、網路釣魚等）加以標記。 在此活動中，可能很難判斷已套用的原則和順序。
+做為 Microsoft 365 使用者，您的輸入電子郵件可能會以多種保護形式進行標記。 例如，適用于所有 Microsoft 365 客戶的內建 EOP 防網路釣魚原則，以及 Office 365 高級威脅防護客戶也可以使用的更強健的 ATP 反網路釣魚原則。 郵件也會透過多個偵測掃描進行惡意程式碼、垃圾郵件、網路釣魚等的掃描。在此活動中，可能會對套用的原則產生一些混淆。
 
 一般說來，套用至郵件的原則會在**CAT （類別）** 屬性的**X-Forefront-Antispam-Report**標頭中識別。 如需詳細資訊，請參閱＜[反垃圾郵件訊息標頭](anti-spam-message-headers.md)＞。
 

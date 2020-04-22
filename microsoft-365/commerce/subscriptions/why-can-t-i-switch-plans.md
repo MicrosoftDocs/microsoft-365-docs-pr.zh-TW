@@ -1,5 +1,5 @@
 ---
-title: 為什麼我無法切換商務用 Office 365 方案？
+title: 為什麼我無法切換商務方案的 Microsoft 365？
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,14 +23,14 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: 瞭解有時切換方案必須手動完成或通過呼叫支援的原因。
-ms.openlocfilehash: 5aa0885c9f7d68dc46618522de00efe26701551f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 5d446e3492bc9039e490cacca469443c0dc52cbd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211970"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631926"
 ---
-# <a name="why-cant-i-switch-office-365-for-business-plans"></a>為什麼我無法切換商務用 Office 365 方案？
+# <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>為什麼我無法切換商務方案的 Microsoft 365？
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]

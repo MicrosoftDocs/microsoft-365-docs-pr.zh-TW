@@ -1,5 +1,7 @@
 ---
-title: 註冊 Microsoft 365 商務版
+title: 註冊 Microsoft 365 商務版 Premium
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -10,54 +12,88 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
-description: 了解如何購買和註冊 Microsoft 365 商務版。
-ms.openlocfilehash: bc9f8f7bc29d63feaa4eb63962eff12c963a63b2
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: 瞭解 Microsoft 365 商務版 Premium 包含的專案，並取得註冊 Microsoft 365 商務版 Premium 的逐步指引。
+ms.openlocfilehash: 443363fa673a112ae13eb5b63308115724d9bd00
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575501"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635097"
 ---
-# <a name="sign-up-for-microsoft-365-business"></a>註冊 Microsoft 365 商務版
+# <a name="sign-up-for-microsoft-365-business-premium"></a>註冊 Microsoft 365 商務版 Premium
 
-如果您的合作夥伴，請參閱[從 Microsoft 合作夥伴中心取得 Microsoft 365 商務](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center)。
+若要瞭解 Microsoft 365 商務版的功能包括什麼，請觀看[簡短的影片](https://go.microsoft.com/fwlink/?linkid=2109651)，並查看其[概述](microsoft-365-business-overview.md)。
 
-線上購買 Microsoft 365 商務版，前往[探索 Microsoft 365 商務版優勢](https://www.microsoft.com/microsoft-365/business#pmg-cmp-desktop)，選擇 [**立即購買]** 底下 Microsoft 365 商務版。
+可透過三種方式取得 Microsoft 365 商務版 Premium：
+- **購買 microsoft 365 商務版，並完成您自己的設定**：若要購買 Microsoft 365 商務版 premium online，請[遵循下列步驟](#sign-up-steps)。
+- **針對 microsoft 合作夥伴**：若您是協力廠商，請參閱[從 Microsoft 合作夥伴中心取得 Microsoft 365 商務版 Premium](get-microsoft-365-business.md)。
+- **在 microsoft store 中取得協助**： Head To a [microsoft store](https://go.microsoft.com/fwlink/?linkid=2109652)。 Microsoft 商店可協助您瞭解方案的相關問題、協助您購買符合您業務需求的計畫，以及協助您完成設定。
 
-您也可以到[Microsoft 網上商店](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS)購買 Microsoft 365 商務版和取得正確設定說明請前往透過。
+**需要一些不同的專案嗎？** 您可以：
+- [將您的 Office 365 方案升級至 Microsoft 365 商務版 Premium](migrate-to-microsoft-365-business.md)。
+- 在一個月內取得 Microsoft 365 商務版 Premium 的[免費試用版](https://go.microsoft.com/fwlink/p/?linkid=2102309)。
+- 如果您需要更少功能的計畫，請[註冊 Microsoft 365 商務標準版](https://go.microsoft.com/fwlink/p/?LinkID=510935)。 瞭解每個商務計畫在[products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397)中所包含的內容。
+- 如果您不是購買公司，[請註冊家庭或家庭方案](https://go.microsoft.com/fwlink/?linkid=2109398)。 
 
-## <a name="complete-the-sign-up-steps"></a>完成註冊的步驟
+## <a name="sign-up-steps"></a>註冊步驟
 
-您已購買 Microsoft 365 商務版之後，請完成下列步驟。
+觀賞這段影片，快速流覽註冊程式。<br><br>
 
-1. 在 [**歡迎使用，讓我們前往認識您**] 頁面上輸入必要的資訊。 請注意的事項：
- 
-    -  **國家或地區：** 這會決定您收到的服務，無法變更更新版本。
-    - **商業電子郵件地址：** 輸入您目前的電子郵件地址。 Microsoft 會使用這個地址來與您對應關於您的 Microsoft 365 訂閱。
-    - **公司名稱**我們將顯示您的公司名稱在系統管理中心;這是您將在其中管理 Microsoft 365 的使用者、 授權、 等等。 我們也會包含在任何 SharePoint 網站 Url。
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
 
-2. 在 [**建立您的使用者識別碼**] 頁面上：
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-    - **使用者名稱**： 輸入的名稱 （稱為別名），您要使用您自己的商業電子郵件。 例如，Robert Young 可能使用 RobY 或 RobYoung 工時別名。
-    - **您的公司**： 輸入唯一的公司名稱。 這是您公司的網站使用如果有的話的名稱，而且也是您想要包含在之後的名稱 @ 符號時接收商務電子郵件。 此名稱會呼叫網域。 例如，如果貴公司稱為 Contoso Skis，輸入後的 ContosoSkis @ 符號後面。
-    - **選取 [網域]**: 如果您已擁有您的網域名稱，選取 [。 onmicrosoft.com 從下拉式清單功能表，我們將要求您稍後再設定它。 否則，很容易購買代表貴公司的網域名稱。 若要這麼做，請選取您偏好的網域從下拉式清單功能表。 例如，您完整的電子郵件地址可能*Teresa@ContosoSkis.net*。 我們會告知您立即是否可以使用的網域名稱。 如果是的話，我們會加入您的 Microsoft 365 商務版訂閱的成本來您網域的成本。 新的網域也將並準備就緒用於 Microsoft 365 如果您在這裡購買。 網域的相關資訊，請參閱[網域的常見問題集](https://docs.microsoft.com/office365/admin/setup/domains-faq)。
-    
-        ![建立您的使用者識別碼] 頁面的螢幕擷取畫面。](media/signinuserid.png)
+若要為您的企業註冊和購買 Microsoft 365，請完成下列步驟：
 
-3. 填入其餘欄位，選取 [**建立我的帳戶]**。
-4. 在 [**證明您正在。Not.A.Robot。** ] 頁面上輸入電話號碼，以接收透過文字或通話和選取**的文字我**或**打電話給我**，程式碼，然後輸入驗證碼\>**下一步**。
-5. **在將您使用此**頁面上輸入您的商務地址。 這項資訊會決定哪些稅金您付款，但這些訂閱可用。 如需稅金的詳細資訊，請參閱[將我要支付哪些稅？](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) 
-1. 選取 [**下一步**，檢閱您的訂單，然後選取 [**下一步**一次。
-1. 在**您要支付方式**] 頁面上，輸入您付款的詳細資訊，然後**單**。
-    您可以再移至[系統管理中心](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide)以完成您的[設定](set-up.md)。
-
+1. 在 [ [Microsoft 365 商務](https://go.microsoft.com/fwlink/?linkid=2109654)版] 頁面上，選取 [**查看 & 定價的計畫**]。 
+2. 在下一個頁面上，找出每月成本，然後向下翻頁以進一步瞭解 Microsoft 365 中包含的專案。 在 [Microsoft 365 商務版精品] 底下，選取 [**立即購買**]。
+3. 在 [**謝謝您選擇 Microsoft 365 商務版**] 頁面上，輸入您的資訊以開始。
+4. 在**步驟 1**中，輸入您已經使用的電子郵件地址。 這可以是您目前的工作電子郵件地址或您想要 Microsoft 用來在安裝期間與您通訊的任何位址。 也就是我們傳送帳單和續訂資訊的位址。 然後選取 [**設定帳戶**]。
+5. 在 [**步驟 2**] 中，輸入您的姓名、商務電話號碼、公司名稱和位置。 您的國家或地區決定您從 Microsoft 取得的確切服務，而且在您完成此步驟後，就無法變更。 選取 [下一步]****。
     > [!NOTE]
-    > 安裝程式結束時，如果您選取 [**移至系統管理中心**] 連結，您就會進入直接[設定](set-up.md)體驗。
+    > 我們會在系統管理中心顯示您的公司名稱;這是您管理 Microsoft 365 使用者、授權等等的所在位置。 我們也會在任何內部（SharePoint）網站中包含它 URLs。
+6. 在 [**步驟 3**：
+
+    1. 證明您不是機器人！ 選取 [**文字 me** ] 或 [**呼叫我**]，然後輸入我們可與您聯繫的號碼。 選取 [**傳送驗證碼**]，您將會立即收到文字或來電。 輸入您的程式碼，然後選取 [**驗證**]。
+    2. 接下來，決定是否要購買新的功能變數名稱或取得臨時名稱：
+
+        - **我不擁有功能變數名稱** 
+        
+            如果您的電子郵件地址不包含您的公司名稱，而且您沒有使用您公司名稱的網站，您現在可以輕鬆購買網域。 選取 [**購買新的功能變數名稱**]，然後輸入您的公司名稱。 例如，如果您的公司叫用*ContosoSkis*，請嘗試輸入 Contosokis.com、Contososkis.org 或 Contososkis.biz。 然後選取 [**檢查可用性**]，以查看您所選擇的網域是否可用。 您可以先嘗試使用多個選項，再進行決策。 如果您的功能變數名稱可供使用，我們會告訴您，您可以直接使用新的計畫，向您收取成本。 
+       
+            > [!TIP]
+            > 如果您不確定要為新網域選擇哪個網域副檔名（例如，.com 或 org），請參閱[購買功能變數名稱](https://go.microsoft.com/fwlink/?linkid=2109700)
+        
+        - **我不確定，或我擁有的功能變數名稱已** 
+        
+             選擇 [**立即取得 Microsoft 網域**]。 這不會產生任何成本，稍後您可以取得公司的自訂名稱，或連線至您已有的專案名稱。 我們將告訴您如何做。
+
+    3. 選取 **[下一步]** ，建立使用者識別碼及公司電子郵件地址。 輸入您要使用的名稱（也稱為別名）。 例如，Robert 年輕人可能使用 RobY 或 RobYoung 做為工作別名。 新增密碼並選取 [**註冊**]。 請記下您的密碼。 我們會將電子郵件傳送到您在步驟1中輸入的位址，以提醒您您的使用者識別碼。
+7. 在 [**步驟 4**： 
+
+    1. 決定您的公司中有多少人員需要 Microsoft 365 授權，或是將**使用者數目**保留為1，之後再新增更多人員。 
+    2. 選取 [月] 或 [年帳單]，檢查總成本，然後選取 **[下一步]**。 
+    3. 新增您的信用卡詳細資料。 如果您的公司位址不符合您的信用卡位址，我們也會需要您公司位址。 您的公司位址決定您支付的稅款和可用的服務。 如需有關稅收的詳細資訊，請參閱[我要收取的稅收為何？](https://go.microsoft.com/fwlink/?linkid=2109701)。
+    4. 選取 [**下單**]。 Microsoft 會花一點時間，才能完成設定新的計畫。
+
+## <a name="whats-next"></a>下一步是什麼？
+
+選取 [**移至設定**] 以完成其他步驟，例如新增更多安全性以保護您的企業，以及下載 Office 應用程式（如 Word 和 Excel）。
+
+若要取得安裝的說明，請參閱[set up](set-up.md)。
+
+## <a name="see-also"></a>請參閱
+
+[Microsoft 365 商務用訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

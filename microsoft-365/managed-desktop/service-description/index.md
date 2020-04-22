@@ -5,23 +5,23 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Micr
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0668564fea300ace1bdf8ad32a34d85c2ad5a641
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: b7054613ea9add542e2a4466c6feb6d911c99701
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "35830491"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637861"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft 受管理的電腦服務描述
 
-Microsoft 受管理的桌面是一種服務，可為您的使用者提供安全的時尚體驗，並讓最新版本的 Windows 10 Enterprise edition、Office 365 ProPlus 和 Microsoft 安全性服務保持最新的功能，包括：
+Microsoft 受管理的桌面是一種服務，可為您的使用者提供安全的時尚體驗，並讓最新版本的 Windows 10 Enterprise edition、Microsoft 365 應用程式與 Microsoft 安全性服務保持最新狀態，包括：
 
 - 簡化新裝置的註冊
 - 裝置的設定
 - 保留使用者和裝置安全的功能，包括 Windows Hello、BitLocker、SecureBoot 和虛擬化安全性（根據 Microsoft 最佳作法）
 - 裝置安全性監控和修正服務
 - 應用程式相容性（透過[桌面應用程式保證](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)）
-- 管理 Windows 10 和 Office 365 ProPlus app 的更新
+- 管理適用于企業應用程式的 Windows 10 和 Microsoft 365 應用程式更新
 - 裝置和應用程式使用狀況的分析資料
 - 使用者對使用者的支援
 - IT 專業人員的運作支援

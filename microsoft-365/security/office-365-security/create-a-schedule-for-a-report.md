@@ -17,12 +17,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何在安全性&amp;與合規性中心設定報表的排程。
-ms.openlocfilehash: 3e09dee36e14ca1e25f6ea20c8f2b5843dc7edaa
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: a5160c564373711521635d3a206d5501b0b2c8f0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030161"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637697"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>在安全性&amp;與合規性中心建立報表的排程
 
@@ -31,7 +31,7 @@ ms.locfileid: "43030161"
 ## <a name="create-a-schedule-for-a-report"></a>建立報告排程
 
 > [!IMPORTANT]
-> 請確認您具備執行此工作的必要許可權。 一般說來，Office 365 全域管理員、安全性管理員及安全性讀者可以存取安全&amp;規範中心內的報告。 若要深入瞭解許可權，請參閱[Office 365 安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+> 請確認您具備執行此工作的必要許可權。 一般說來，全域管理員、安全性管理員及安全性讀者可以存取安全&amp;規範中心內的報告。 若要深入瞭解許可權，請參閱[安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
   
 1. 在[安全性&amp;與合規性中心](https://protection.office.com)，移至 [**報告** \> ]**儀表板**。
     
@@ -72,7 +72,7 @@ ms.locfileid: "43030161"
   
 ## <a name="related-topics"></a>相關主題
 
-[Office 365 安全性&amp;與合規性中心內的報告與深入瞭解](reports-and-insights-in-security-and-compliance.md)
+[安全性&amp;與合規性中心內的報告與深入瞭解](reports-and-insights-in-security-and-compliance.md)
   
 [在安全性&amp;與合規性中心管理報告的計畫](manage-schedules-for-multiple-reports.md)
   

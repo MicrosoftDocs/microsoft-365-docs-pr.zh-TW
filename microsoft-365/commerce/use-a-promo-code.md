@@ -1,5 +1,5 @@
 ---
-title: 使用您的 Office 365 促銷代碼可享折扣價格
+title: 使用您的促銷代碼來降低價格
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,34 +20,34 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: 了解如何將促銷代碼套用至您的 Office 365 訂閱可享折扣價格，以及如何疑難排解在發生錯誤時的促銷代碼。
+description: 瞭解如何將促銷代碼套用至您的 Microsoft 365 訂閱，以降低價格，以及如何在發生錯誤時對促銷代碼進行疑難排解。
 ms.custom: okr_SMB
-ms.openlocfilehash: ebb2c06623dc295fdcbc3cac4f51894decc3a7b3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 55ce4192a2b76fae841c7b5e2a5733c4d5c2769e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239927"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631854"
 ---
-# <a name="use-your-office-365-promo-code-to-reduce-price"></a>使用您的 Office 365 促銷代碼可享折扣價格
+# <a name="use-your-promo-code-to-reduce-price"></a>使用您的促銷代碼來降低價格
 
-當您購買訂閱時，您可以使用促銷代碼可享折扣價格。 閱讀本篇文章以了解如何將促銷代碼套用至您的訂閱，若要了解[促銷代碼條款](#promo-code-terms)，以及[疑難排解促銷代碼](#troubleshooting-promo-codes)。
+當您購買訂閱時，您可以使用促銷代碼來降低價格。 請閱讀本文以瞭解如何將促銷代碼套用至您的訂閱、瞭解[促銷代碼條款](#promo-code-terms)，以及[疑難排解促銷](#troubleshooting-promo-codes)代碼。
   
 ## <a name="apply-a-promo-code-to-your-subscription"></a>將促銷代碼套用至訂閱
 
-1. 購買新訂閱，或藉由新增服務至現有訂閱，請開始購買。
+1. 請購買新的訂閱，或將服務新增至現有的訂閱，以開始購買。
     
-2. 當您取出時，選擇 [* * 具有促銷或折扣程式碼？，然後在方塊中輸入您的程式碼。 
+2. 當您取出時，請選擇 [* * 有促銷或折扣碼？]，然後在方塊中輸入您的程式碼。 
   
-3. 選取 [**套用促銷代碼**。 您應該會看到確認它已順利套用。 If you see a different message, refer to [Troubleshooting promo codes](#troubleshooting-promo-codes) to figure out why. 
+3. 選取 [套用**促銷代碼**]。 您應該會看到已成功套用的確認。 If you see a different message, refer to [Troubleshooting promo codes](#troubleshooting-promo-codes) to figure out why. 
     
-4. 繼續 [取出]。在 [訂單確認] 頁面上，您會看到您隨附量的折扣程式碼。 
+4. 繼續取出。在 [訂單確認] 頁面上，您會看到含金額的折扣代碼。 
     
-完成購買之後，您就會在帳單上看見由促銷代碼所產生的折扣。 若要深入了解，請參閱[檢視您](billing-and-payments/view-your-bill-or-invoice.md)。
+完成購買之後，您就會在帳單上看見由促銷代碼所產生的折扣。 若要深入瞭解，請參閱[View](billing-and-payments/view-your-bill-or-invoice.md)to。
   
 ## <a name="promo-code-terms"></a>促銷代碼條款
 
-下列指導方針適用於商務用 Office 365 訂閱的促銷代碼。
+下列指導方針適用于適用于商務用 Microsoft 365 訂閱的促銷代碼。
   
 - **每個訂閱的促銷代碼數目** 您可以在同一訂單中為多份訂閱使用一個促銷代碼，但您無法針對同一份訂閱使用多個促銷代碼。 
     

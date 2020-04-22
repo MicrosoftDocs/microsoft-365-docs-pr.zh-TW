@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
-description: 瞭解如何新增及移除商務用 Office 365 訂閱的授權。
-ms.openlocfilehash: abfa479d991bac72bd3e9e5c1c422368758b17a7
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+description: 瞭解如何新增及移除 Microsoft 365 for business 訂閱的授權。
+ms.openlocfilehash: ce14021b3d6efaa14c9010a82ad4b522b0b08339
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240279"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632526"
 ---
 # <a name="manage-subscription-licenses"></a>管理訂閱授權
 
@@ -84,7 +84,7 @@ ms.locfileid: "43240279"
 
 ## <a name="what-if-i-dont-see-the-addremove-licenses-link"></a>如果沒有看到 [新增/移除授權] 連結該怎麼辦？
 
-下表說明 [**新增/移除授權**] 連結可能無法使用的原因，以及您可以採取的措施。
+下表說明 [**新增/移除授權**] 連結可能無法使用的原因，以及您可以採取的措施。 
 
 |原因  |描述  |解決方案  |
 |---------|---------|---------|
@@ -92,14 +92,14 @@ ms.locfileid: "43240279"
 |您已使用產品金鑰啟用訂閱。| 如果訂閱是使用 25 個字元的產品金鑰購買且啟用，您會看到「預付」字樣。  |請參閱[將授權新增至使用產品金鑰支付的訂閱](add-licenses-using-product-key.md)。 |
 |您是透過合作夥伴購買訂閱。 | 如果透過合作夥伴購買訂閱，您將會看到大量授權服務中心 (VLSC) 連結。 | 請參閱[透過大量授權服務中心新增授權至購買的訂閱](add-licenses-bought-through-vlsc.md)。 |
 |您已透過轉銷商購買訂閱。|| 如果透過雲端解決方案提供者 (CSP) 合作夥伴購買訂閱，必須與 CSP 連絡才能購買其授權。        |
-|您有試用版訂閱。 |Office 365 試用版會顯示「試用」字樣。 | 您必須先購買您的試用訂閱，然後才可以新增更多授權。 請參閱[從免費試用版購買商務用 Office 365 訂閱](../buy-a-subscription-from-your-free-trial.md)。|
+|您有試用版訂閱。 |Microsoft 365 的試用版會顯示「試用」文字。 | 您必須先購買您的試用訂閱，然後才可以新增更多授權。 請參閱[從免費試用版購買為商務用 Microsoft 365 的訂閱](../buy-a-subscription-from-your-free-trial.md)。|
 
 ## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>購買商務用訂閱的授權所需注意的事項
 
 ### <a name="buying-licenses"></a>購買授權
 
 - 您必須是全域系統管理員或計費系統管理員，才可購買授權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
-- 若要購買授權並同時在您的訂閱中新增使者，請參閱[個別或大量新增使用者至 Office 365 - 系統管理說明](../../admin/add-users/add-users.md)。
+- 若要購買授權並同時將新使用者新增至您的訂閱，請參閱[個別加入使用者或大量 Microsoft 365-系統管理](../../admin/add-users/add-users.md)說明。
 
 ### <a name="license-availability"></a>授權可用性
 

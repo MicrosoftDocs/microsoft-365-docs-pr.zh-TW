@@ -11,29 +11,29 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
-description: 針對想要執行委派的 Office 365 管理工作的 Microsoft 合作夥伴和轉銷售，包括能夠管理其他承租人 (公司) 的 Exchange Online Protection (EOP)，本主題提供常見問題與解答。
-ms.openlocfilehash: 2a237da685ae3c3d81c5a0912e15b5e7370e2118
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 本主題針對想要執行委派管理工作（包括管理其他租使用者（公司）的 Exchange Online Protection （EOP）的 Microsoft 合作夥伴和轉銷商提供常見問題和解答。
+ms.openlocfilehash: b79c0aba026a8d59aac338ceac0f1c4a60d71c4d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599480"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637649"
 ---
 # <a name="delegated-administration-faq"></a>委派管理常見問題集
 
-針對想要執行委派的 Office 365 管理工作的 Microsoft 合作夥伴和轉銷售，包括能夠管理其他承租人 (公司) 的 Exchange Online Protection (EOP)，本主題提供常見問題與解答。
+本主題針對想要執行委派管理工作（包括管理其他租使用者（公司）的 Exchange Online Protection （EOP）的 Microsoft 合作夥伴和轉銷商提供常見問題和解答。
 
 **問：我是轉銷商，需要管理客戶的承租人；該怎麼做？**
 
-答： 如果您的 Microsoft 合作夥伴或轉銷商，而且您已簽署最多可為 Microsoft 顧問，您可以要求權限管理在系統管理中心內其租用戶。 這稱為委派管理，以及它可讓您管理其 Office 365 租用戶中 （包括 EOP 設定） 如果當您已在組織內系統管理員。 執行委派的管理的步驟如下所示：
+答： 如果您是 Microsoft 合作夥伴或轉銷商，而且您已註冊成為 Microsoft advisor，您可以在系統管理中心中要求管理其租使用者的許可權。 這稱為「委派管理」，可讓您管理其 Microsoft 365 租使用者（包括 EOP 設定），如同您是組織內的系統管理員。 執行委派管理的步驟如下：
 
 1. 註冊成為 [Microsoft Office 365 Advisor](https://aka.ms/cloudbenefits)。
 
-2. 註冊 Office 365 委派管理。客戶必須將委派管理員的身分授權給您，您才可以開始管理客戶的帳戶。若要取得核准，您需要先[將委派管理的邀請寄給他們](https://support.office.com/article/26530dc0-ebba-415b-86b1-b55bc06b073e)。(您也可以稍後再提供委派管理給客戶。)
+2. 註冊委派管理。 在您開始管理客戶的帳戶之前，必須以委派的管理員身分授權。 若要取得他們的核准，您必須先[傳送給他們，以取得委派管理的服務](https://support.office.com/article/26530dc0-ebba-415b-86b1-b55bc06b073e)。 （您也可以稍後為客戶提供委派管理）。
 
-3. 建立委派的管理員帳戶使用中[新增、 變更或刪除訂閱顧問合作夥伴](https://docs.microsoft.com/office365/admin/misc/add-partner)的步驟。
+3. 使用[新增、變更或刪除訂閱顧問合作夥伴](https://docs.microsoft.com/office365/admin/misc/add-partner)中的步驟，建立委派的系統管理員帳戶。
 
-請造訪[合作夥伴： 建立業務以及管理您的 Office 365 合作夥伴訂閱](https://support.office.com/article/30dd1681-47e0-4cbc-abfe-a222cd111319)如需有關如何設定 Office 365 委派管理。
+請造訪協力廠商[：組建您的商務和管理合作夥伴訂閱](https://support.office.com/article/30dd1681-47e0-4cbc-abfe-a222cd111319)，以取得如何設定委派管理的詳細資訊。
 
 **問：我是客戶，不是轉銷商，該如何為子承租人設定委派的系統管理員？**
 
@@ -41,8 +41,8 @@ ms.locfileid: "41599480"
 
 **問：可以防止我的子承租人管理員修改我的原則嗎？**
 
-答：Office 365 目前不具備這項功能。
+答： Microsoft 365 目前並未具備這項功能。
 
 **問：我可以取得所有子承租人的彙總報告嗎？**
 
-答： 跨您管理公司的合併報告不適用於 Microsoft 365 系統管理中心報告這一次。 不過，您可以使用[Microsoft Graph](https://docs.microsoft.com/graph/overview)。
+答： 目前您管理的公司內的整合報告無法供 Microsoft 365 系統管理中心報告使用。 不過，您可以使用[Microsoft Graph](https://docs.microsoft.com/graph/overview)來執行此動作。

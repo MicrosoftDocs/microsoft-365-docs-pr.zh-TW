@@ -1,5 +1,5 @@
 ---
-title: 建立整個組織的簽章及免責聲明
+title: 建立整個組織的簽名和免責聲明
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: 了解如何新增進入或離開貴組織的所有電子郵件訊息的電子郵件簽名、 法律免責聲明或保密聲明。
-ms.openlocfilehash: a63f21dff90c70d39e3709d4c34b53d99a315a59
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 瞭解如何將電子郵件簽章、法律免責聲明或披露聲明新增至所有進入或離開組織的電子郵件。
+ms.openlocfilehash: affd091f951b81541214b4f98c414b5cd4675cd3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360664"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631974"
 ---
-# <a name="create-organization-wide-signatures-and-disclaimers"></a>建立整個組織的簽章及免責聲明
+# <a name="create-organization-wide-signatures-and-disclaimers"></a>建立整個組織的簽名和免責聲明
 
  您可以在進入或離開貴組織的電子郵件中新增電子郵件簽名、法律免責聲明或保密聲明。您可以如下所示，設定將它套用至所有內送或外寄郵件。或者您也可以將它套用至特定郵件，例如包含特定字詞或文字模式的郵件。
 
- 觀看有關建立的全公司的電子郵件簽章。 <br><br>
+ 觀賞有關如何建立全公司的電子郵件簽名的簡短影片。 <br><br>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
@@ -42,7 +42,7 @@ ms.locfileid: "42360664"
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>建立套用至所有郵件的簽名
 
 > [!TIP]
-> 整個組織的簽章不論他們的包含統稱為 「 免責聲明，」。 例如，他們可以只簽章，或也包含您的地址、 法律免責聲明或您想要的其他資訊。
+> 全組織的簽名稱為「免責聲明」，不論包括什麼。 例如，他們可以只是簽名，也可以包含您想要的位址、法律免責聲明或其他資訊。
     
 ::: moniker range="o365-worldwide"
 
@@ -62,56 +62,56 @@ ms.locfileid: "42360664"
 
 ::: moniker-end
 
-1. 選取 app 啟動器![Office 365 中的應用程式啟動器圖示](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)，然後選取 [**系統管理員**。
+1. 選取應用程式啟動器![圖示](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)，然後選取 [**管理**]。
    
-    找不到您要的 App 嗎？請從應用程式啟動器選取 [所有 App]**** 以查看依字母順序排序的可用 Office 365 App 清單。您可從該處搜尋特定的 App。 
+    Can't find the app you're looking for? 從應用程式啟動器中，選取 [**所有應用程式**]，以查看您可以使用之應用程式的字母順序清單。 From there, you can search for a specific app. 
     
-2. 選取 [**系統管理中心**，，然後選擇 [ **Exchange**。
+2. 選取 [系統**管理中心**]，然後選擇 [ **Exchange**]。
     
-3. 郵件流程] 底下選取 [**規則**]。
+3. 在 [郵件流程] 下，選取 [**規則**]。
     
-4. 選取 [ **+** （新增） 圖示，然後選擇 [**套用免責聲明**。
+4. 選取**+** （新增）圖示，並選擇 [套用**免責聲明**]。
     
 5. 為這個規則命名。
     
-6. 在 [**套用此規則**]，選取 **[套用到所有郵件]**。
+6. 在 [套用**此規則**] 底下，選取 **[套用到所有郵件]**。
     
     > [!TIP]
-    > [深入了解](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)您不想將免責聲明套用至所有郵件時的套用條件。 （此範圍的文章是針對 Exchange 伺服器，但它也適用於 Office 365）。 
+    > [深入了解](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)您不想將免責聲明套用至所有郵件時的套用條件。 （此範圍文章適用于 Exchange Server，但也適用于 Microsoft 365。） 
   
-7. [執行下列動作，請將保留選取**Append 免責聲明**。 
+7. 在 [執行下列作業] 底下，保留 **[附加免責聲明**] 選取狀態。 
     
-8.  選取 [**輸入文字**，然後輸入您的免責聲明。 
+8.  選取 [**輸入文字**]，然後輸入免責聲明。 
     
     > [!TIP]
-    > [深入了解](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)如何設定免責聲明格式。 （此格式設定的文章是針對 Exchange 伺服器，但它也適用於 Office 365）。 
+    > [深入了解](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)如何設定免責聲明格式。 （此格式化文章適用于 Exchange Server，但也適用于 Microsoft 365。） 
 
-9. 選取 [**選取其中一個**，然後選擇 [**自動換行**做為後援選項。 然後 **[確定]**。 這表示，該免責聲明如果因為加密或其他郵件設定而無法新增，系統會將它包裝在郵件信封中。
+9. 選取 [**選取其中一項**]，然後選擇 [**包裝**為回退] 選項。 然後按一下 **[確定]**。 這表示，該免責聲明如果因為加密或其他郵件設定而無法新增，系統會將它包裝在郵件信封中。
     
-10. 保留選取**此規則使用嚴重性層級的稽核**。 然後選擇 [**低**、**中**或**高**要用於郵件記錄。 
+10. 選取 [**以嚴重性層級審核此規則**]。 然後選擇 [**低**]、[**中**] 或 [**高**]，以用於消息記錄檔。 
     
-11. 選擇 [**強制**] 來開啟免責聲明立即，除非您想要測試其第一個。 
+11. 選擇 [**強制**] 立即開啟免責聲明，除非您要先加以測試。 
     
-12. 選擇 [**更多選項**] 來納入其他條件或例外狀況。 
+12. 選擇 [**更多選項**] 以包含其他條件或例外狀況。 
     
-13. 選擇 [完成時，[**儲存**]。 
+13. 完成後，請選擇 [**儲存**]。 
     
-## <a name="limitations-of-office-365-organization-wide-signatures"></a>Office 365 組織整體簽章的限制
+## <a name="limitations-of-organization-wide-signatures"></a>組織的寬碼限制
 
-您無法執行 Office 365 簽章與下列動作：
+您無法使用 Microsoft 365 簽名進行下列作業：
   
-- 插入的簽章正下方的最新的電子郵件回覆或轉寄
+- 將簽章直接插入最近的電子郵件回復或轉寄
     
-- 顯示使用者的寄件備份資料夾中的伺服器端電子郵件簽章
+- 在使用者的 [已傳送的郵件] 資料夾中顯示伺服器端的電子郵件簽名
     
-- 將圖像內嵌在電子郵件簽章
+- 在電子郵件簽名中嵌入影像
     
-- 略過行包含無法更新的變數 (例如： 因為使用者未提供的值)
+- 略過包含無法更新的變數的列（例如，由於沒有為使用者提供值）
     
-若要獲得這些結構元件及其他功能，使用協力廠商工具。 請網際網路搜尋**電子郵件簽章軟體**。 這些提供者的數字是金會員的 Microsoft 合作夥伴和其軟體提供這些功能。 
+若要取得這些和其他功能，請使用協力廠商工具。 請對**電子郵件簽名軟體**執行網際網路搜尋。 許多提供者都是 Microsoft 金牌合作夥伴，其軟體會提供這些功能。 
   
 ## <a name="more-resources"></a>其他資源
 
-- 如需使用 PowerShell 的詳細資訊，請參閱[整個組織的郵件免責聲明、 簽章、 頁尾或 Office 365 中的標頭](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)。 
+- 如需使用 PowerShell 的詳細資訊，請參閱[整個組織的郵件免責聲明、簽章、頁尾或標頭中的 Microsoft 365](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) 。 
     
 

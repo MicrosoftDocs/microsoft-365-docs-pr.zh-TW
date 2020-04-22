@@ -1,0 +1,55 @@
+---
+title: 註冊試用訂閱
+f1.keywords:
+- NOCSH
+ms.author: kwekua
+author: kwekua
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+- commerce
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+- BEA160
+description: 瞭解如何註冊試用 Microsoft 365 for business 訂閱。
+ms.openlocfilehash: 61ba4baefc3b7af7609101f5471648dfb1fcbefa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636437"
+---
+# <a name="sign-up-for-a-trial-subscription"></a>註冊試用訂閱
+
+您可以免費註冊試用版 Microsoft 365 訂閱。 您可以試用30天。
+
+> [!NOTE]
+> 當您的公司目前位於美國、日本、加拿大和澳大利亞時，當您註冊試用版時，您將需要信用卡。 當您的免費試用期結束時，您的試用版訂閱將會自動轉換為付費訂閱。 在試用期結束之前，您的信用卡將不會記帳。
+
+## <a name="sign-up-for-an-microsoft-365-business-standard-trial-subscription"></a>註冊 Microsoft 365 商務標準試用訂閱
+
+1. 若要註冊 Microsoft 365 for business 試用訂閱，請移至[Office 產品網站](https://www.aka.ms/office365signup)。 
+    
+2. 選取您想要註冊的計畫，例如**Microsoft 365 商務標準**，向下滾動頁面，然後選取 [**嘗試空閒1個月**]。
+    
+3. 在下一個頁面上，遵循下列步驟來設定您的帳戶。
+
+4. 註冊程式可能需要數分鐘才能完成。 完成後，您將取得如何開始使用您訂閱的詳細資訊。
+
+如需有關設定帳戶的詳細資訊，請參閱[設定 Microsoft 365 for business](../admin/setup/setup.md)。
+
+## <a name="cancel-my-trial-subscription"></a>取消我的試用訂閱
+
+如果您決定在空閒試用期結束之前取消試用，請移至 Microsoft 系統管理中心，並關閉付款和計費區域中的自動續訂選項。 當您的月完成時，試用期會自動到期，而且您的信用卡也不會收費。
+
+## <a name="see-also"></a>請參閱
+
+[Microsoft 365 商務用訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

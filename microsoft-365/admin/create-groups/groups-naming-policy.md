@@ -1,5 +1,5 @@
 ---
-title: Office 365 群組命名原則
+title: 群組命名原則
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -19,22 +19,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
-description: 瞭解如何建立 Office 365 群組的命名原則。
-ms.openlocfilehash: 4325a5e0a1de0c3a83be71220abd256c204ec07d
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: 瞭解如何為 Microsoft 365 群組建立命名原則。
+ms.openlocfilehash: 2d8b016e0830f0d20ea6fb6227dd7789878bfc94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894620"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630440"
 ---
-# <a name="office-365-groups-naming-policy"></a>Office 365 群組命名原則
+# <a name="groups-naming-policy"></a>群組命名原則
 
 您可以使用群組命名原則，針對組織中使用者所建立的群組強制執行一致的命名策略。 命名原則可協助您和您的使用者識別群組、成員資格、地理區域的功能，或群組的建立者。 命名原則也可協助分類通訊錄中的群組。 您可以使用原則來封鎖群組名稱和別名中所用的特定字詞。
 
 命名原則會套用至所有群組工作負載（如 Outlook、Microsoft 團隊、SharePoint、Planner、Yammer 等）上建立的群組。 它會套用至群組名稱和群組別名。 當使用者建立群組，以及為現有的群組編輯群組名稱或別名時，便會套用此方式。
 
 > [!TIP]
-> Office 365 群組命名原則只適用于 Office 365 群組。 這不適用於 Exchange Online 中所建立的通訊群組。 若要建立通訊群組的命名原則，請參閱[建立通訊群組命名原則](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)。
+> Microsoft 365 群組命名原則只適用于 Microsoft 365 群組。 這不適用於 Exchange Online 中所建立的通訊群組。 若要建立通訊群組的命名原則，請參閱[建立通訊群組命名原則](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)。
 
 群組命名原則包含下列功能：
 
@@ -44,7 +44,7 @@ ms.locfileid: "42894620"
 
 ## <a name="licensing-requirements"></a>授權需求
 
-使用適用于 Office 365 群組的 Azure AD 命名原則，您必須擁有但不一定要為屬於一或多個 Office 365 群組成員的每個唯一使用者（包括來賓）指派 Azure Active Directory Premium P1 授權或 Azure AD 基本 EDU 授權。
+使用 Microsoft 365 群組的 Azure AD 命名原則，您必須擁有但不一定要為屬於一或多個 Microsoft 365 群組成員的每個唯一使用者（包括來賓）指派 Azure Active Directory Premium P1 授權或 Azure AD 基本 EDU 授權。
 
 這對於建立群組命名原則的系統管理員也是必要的。
 
@@ -80,7 +80,7 @@ ms.locfileid: "42894620"
 
 - 首碼和尾碼可以包含組名和群組別名中支援的特殊字元。 當前綴和尾碼包含不允許在群組別名中使用的特殊字元時，它們只適用于組名。 因此，在此情況下，套用至群組名稱的首碼和尾碼會與套用至群組別名的首碼和尾碼不同。
 
-- 如果您使用 Yammer Office 365 連接的群組，請避免在您的命名原則中使用下列字元： \#@ \[、 \] \<、、、 \>、和。 如果這些字元是在命名原則中，一般 Yammer 使用者將無法建立群組。
+- 如果您使用 Yammer Microsoft 365 連線群組，請避免在您的命名原則中使用下列字元： @ \#、 \[ \] \<、、、、 \>和。 如果這些字元是在命名原則中，一般 Yammer 使用者將無法建立群組。
 
 ## <a name="custom-blocked-words"></a>自訂封鎖的字詞
 
@@ -126,10 +126,10 @@ ms.locfileid: "42894620"
 ![Azure Active Directory 中群組命名原則設定的螢幕擷取畫面](../../media/groups-naming-policy-azure.png)
 
 > [!NOTE]
-> StaffHub 小組不遵循命名原則，但底層的 Office 365 群組卻這麼做。 StaffHub 小組名稱不會套用首碼和尾碼，也不會檢查自訂的封鎖字。 但 StaffHub 會套用首碼和尾碼，並移除基礎 Office 365 群組中封鎖的字。
+> StaffHub 小組不遵循命名原則，但基礎 Microsoft 365 群組卻不遵循。 StaffHub 小組名稱不會套用首碼和尾碼，也不會檢查自訂的封鎖字。 但 StaffHub 會套用首碼和尾碼，並移除基礎 Microsoft 365 群組中封鎖的文字。
 
 ## <a name="more-articles-on-naming-policy"></a>更多有關命名原則的文章
 
-[在 Azure Active Directory 中強制執行 Office 365 群組的命名原則](https://go.microsoft.com/fwlink/?linkid=868340)
+[在 Azure Active Directory 中強制執行 Microsoft 365 群組的命名原則](https://go.microsoft.com/fwlink/?linkid=868340)
 
 [用於設定群組設定的 Azure Active Directory Cmdlet](https://go.microsoft.com/fwlink/?linkid=868341)

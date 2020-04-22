@@ -14,16 +14,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用者可以瞭解如何管理其自助購買服務。
-ms.openlocfilehash: 15fc43d488cb2a8fd38cea8ab2ed85c002e23d92
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f4be2176d970af426817e975b9942ce5e2b89a9e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142136"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636636"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助購買 (使用者)
 
 作為使用者，您可以購買特定產品的訂閱，並將這些訂閱的授權指派給小組中的人員。 您負責支付您所進行的任何自助購買服務。 您可以在 Microsoft 365 系統管理中心中，以<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>管理您的訂閱。
+
 
 您的系統管理員在您購買的任何訂閱中都有唯讀的視圖。 他們可以查看您購買之每個訂閱的產品、買方名稱、購買的訂閱、到期日、購買價格和指派的使用者。
 
@@ -94,7 +95,7 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 4. 在右窗格中，輸入卡片詳細資料，然後選擇 [**儲存**]。
 
-### <a name="update-an-existing-payment-method"></a>更新現有的支付方式
+### <a name="update-an-existing-payment-method"></a>更新現有的付款方式
 
 1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">票據 & 付款</a>] 頁面。
 

@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Micr
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: b851f3f698abd34d4964c79a68be050ad9f0a4db
-ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
+ms.openlocfilehash: 354845e3bfebee5e6c67b53ba5ef6f55a9c419f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43198358"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637873"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的桌面裝置 
 
@@ -75,7 +75,6 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本主題
 - 如需 Dell 裝置的相關問題，請與<a href="mailto:MMD_at_dell@dell.com">MMD_at_dell@dell.com</a>聯繫。
 
 - 如需 HP 裝置和裝置順序指令的相關問題，請聯繫我們：美洲（<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>）;歐洲/中東/非洲（<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>）;亞太地區/日本（<a href="mailto:mmd-apj@hp.com">mmd-apj@hp.com</a>）;Global （<a href="mailto:mmd@hp.com">mmd@hp.com</a>）
-
 
 
 

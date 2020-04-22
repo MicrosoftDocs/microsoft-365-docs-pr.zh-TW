@@ -1,7 +1,7 @@
 ---
 title: 進階搜捕結構描述中的 EmailEvents 表格
-description: 了解進階搜捕結構描述 EmailEvents 表格中與 Office 365 電子郵件相關聯的事件
-keywords: 郵件 id、 寄件者、 收件者的進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 描述、 EmailEvents，網路附件識別碼、 附件名稱、 惡意程式碼 verdict、 網路釣魚 verdict、 附件計數、 連結計數、 url 計數
+description: 深入瞭解在高級搜尋架構的 EmailEvents 資料表中與 Microsoft 電子郵件相關的事件
+keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參考、kusto、表格、欄、資料類型、描述、EmailEvents、網路郵件 id、寄件者、收件者、附件識別碼、附件計數、url 計數、url 計數
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 690618bb6379532598e60a4e6664df070dd7e5cb
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 3146c428edcf276d0a4d5e7797ed913be48dd2ae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234782"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633528"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -39,7 +39,7 @@ ms.locfileid: "42234782"
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 事件記錄的日期和時間。 |
 | `EmailId` | 字串 | 唯一電子郵件和收件者識別碼 |
-| `NetworkMessageId` | 字串 | Office 365 產生的電子郵的唯一識別碼 |
+| `NetworkMessageId` | 字串 | Microsoft 365 產生之電子郵件的唯一識別碼 |
 | `InternetMessageId` | 字串 | 透過傳送電子郵件系統所設定之電子郵件的公開識別碼 |
 | `SenderMailFromAddress` | 字串 | [郵件寄件者] 標頭中的寄件者電子郵件地址，又稱為信封寄件者或退回路徑位址 |
 | `SenderFromAddress` | 字串 | [寄件者] 標頭中的寄件者電子郵件地址，可對電子郵件用戶端上的電子郵件收件者顯示 |

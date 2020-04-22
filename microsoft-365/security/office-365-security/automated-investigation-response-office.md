@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的自動化調查和回應（AIR）
+title: 自動化調查和回應（AIR）
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,28 +15,28 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 深入瞭解 Office 365 高級威脅防護方案2中的自動化調查和回應功能。
 ms.custom: air
-ms.openlocfilehash: 1fa99d7676a16ccd83319e5fbf3a6fedb72aec12
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: 638f421289d5b4f0d8c02fbd5bf2913191721bf6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170949"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638545"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自動化調查和回應（AIR）
+# <a name="automated-investigation-and-response-air"></a>自動化調查和回應（AIR）
 
-在觸發安全性警示時，您的安全性運作小組會檢查這些警示，並採取步驟來保護您的組織。 在某些情況下，安全性作業小組可能感覺到所觸發的警示數量所淹沒。 Office 365 中的自動化調查和回應（AIR）功能可能會有所説明。 AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括自動調查處理程式，以回應目前存在的已知威脅。 適當的修正動作等待核准，讓您的安全性作業小組能夠回應偵測到的威脅。 
+在觸發安全性警示時，您的安全性運作小組會檢查這些警示，並採取步驟來保護您的組織。 在某些情況下，安全性作業小組可能感覺到所觸發的警示數量所淹沒。 自動化調查和回應（AIR）功能可能會有所説明。 AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括自動調查處理程式，以回應目前存在的已知威脅。 適當的修正動作等待核准，讓您的安全性作業小組能夠回應偵測到的威脅。 
 
-本文提供空中的概覽。 當您準備好開始使用 AIR 時，請參閱[自動調查和回應 Office 365 中的威脅](office-365-air.md)。
+本文提供空中的概覽。 當您準備好開始使用 AIR 時，請參閱[自動調查和回應威脅](office-365-air.md)。
 
 ## <a name="at-a-high-level"></a>在高層級
 
-當觸發警示時，安全性行動行動會生效。 根據情況而定，可以開始進行[自動化調查過程](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 在自動調查期間和之後，建議進行[修正動作](air-remediation-actions.md)。 Office 365 的 [高級威脅防護] 中不會自動採取任何動作。 您的安全性運作小組會進行審閱，然後[核准或拒絕每項修復動作](air-review-approve-pending-completed-actions.md)，當執行完畢時，每項調查都會完成。 所有這些活動都會在 Office 365 安全性 & 規範中心中追蹤和查看（請參閱[查看調查的詳細資料](air-view-investigation-results.md#view-details-of-an-investigation)）。
+當觸發警示時，安全性行動行動會生效。 根據情況而定，可以開始進行[自動化調查過程](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 在自動調查期間和之後，建議進行[修正動作](air-remediation-actions.md)。 Office 365 的 [高級威脅防護] 中不會自動採取任何動作。 您的安全性運作小組會進行審閱，然後[核准或拒絕每項修復動作](air-review-approve-pending-completed-actions.md)，當執行完畢時，每項調查都會完成。 所有這些活動都會在安全性 & 合規性中心中追蹤和查看（請參閱[查看調查的詳細資料](air-view-investigation-results.md#view-details-of-an-investigation)）。
 
 下列各節提供有關警示、安全性行動手冊及動作中的空氣範例的詳細資訊。
 
 ## <a name="alerts"></a>警示
 
-[警示](../../compliance/alert-policies.md#viewing-alerts)代表事件回應的安全性作業小組工作流程的觸發器。 決定要調查的適當一組提醒，同時確保沒有威脅 unaddressed 面臨挑戰。 當手動調查何時執行警示時，安全性作業小組必須搜尋實體（例如內容、裝置和使用者），並與威脅相關聯。 這類工作和工作流程可能非常耗時且包含多個工具和系統。 透過利用關鍵安全性和威脅管理提醒自動觸發安全性回應行動手冊，透過 AIR、調查和 Office 365 安全性事件的回應可自動進行。 
+[警示](../../compliance/alert-policies.md#viewing-alerts)代表事件回應的安全性作業小組工作流程的觸發器。 決定要調查的適當一組提醒，同時確保沒有威脅 unaddressed 面臨挑戰。 當手動調查何時執行警示時，安全性作業小組必須搜尋實體（例如內容、裝置和使用者），並與威脅相關聯。 這類工作和工作流程可能非常耗時且包含多個工具和系統。 透過利用關鍵安全性和威脅管理提醒自動觸發安全性回應行動手冊，透過 AIR、安全事件的調查和回應可自動進行。 
 
 目前對於 AIR，會自動調查從下列類型的報警原則產生的警示：  
 
@@ -55,7 +55,7 @@ ms.locfileid: "43170949"
 > [!NOTE]
 > 預設會在提醒視圖中隱藏資訊警示。 若要查看，請變更警示篩選，以包含資訊性警示。
 
-如果您的組織透過警示管理系統、服務管理系統或安全性資訊和事件管理（SIEM）系統來管理安全性警示，您可以透過電子郵件通知或透過[office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)，將 Office 365 警示傳送給該系統。 透過電子郵件或 API 的調查警示通知包含在安全性 & 規範中心中存取警示的連結，讓指派的安全性系統管理員可以快速流覽調查。
+如果您的組織透過警示管理系統、服務管理系統或安全性資訊和事件管理（SIEM）系統來管理安全性警示，您可以透過電子郵件通知或透過[Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)，將提醒傳送給該系統。 透過電子郵件或 API 的調查警示通知包含在安全性 & 規範中心中存取警示的連結，讓指派的安全性系統管理員可以快速流覽調查。
 
 ![連結至調查的警示](../../media/air-alerts-page-details.png) 
 
@@ -75,7 +75,7 @@ ms.locfileid: "43170949"
 
 階段1也包含對管理員觸發電子郵件調查的支援（使用[威脅瀏覽器](threat-explorer.md)）。
 
-階段2現在正在進行**公開預覽**中的下列行動手冊，提供動作和 aiding 安全性管理員調查問題的建議：
+第2階段現在的進度是**公開預覽**中的下列行動手冊，提供動作和 aiding 安全性管理員調查問題的建議：
 - 使用者舉報為已遭破壞（公開預覽）
 
 進一步的行動手冊將在完成後發行。 請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)，以查看已計畫及即將推出的內容。
@@ -110,7 +110,7 @@ ms.locfileid: "43170949"
 - 類似的電子郵件會透過電子郵件聚簇搜尋加以識別。
 - 此信號是與其他平臺（例如[Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)）共用。
 - 決定是否任何使用者已透過可疑電子郵件訊息中的任何惡意連結進行按一下。
-- 您可以透過 Office 365 Exchange Online Protection （[EOP](exchange-online-protection-eop.md)）和 Office 365 高級威脅防護（[ATP](office-365-atp.md)）進行檢查，以查看使用者是否會報告其他類似的訊息。
+- 在 Exchange Online Protection （[EOP](exchange-online-protection-eop.md)）和 Office 365 高級威脅防護（[ATP](office-365-atp.md)）間進行檢查，以查看使用者是否有任何其他類似的訊息。
 - 會執行檢查以查看使用者是否遭到破壞。 這種檢查會利用跨 Office 365、 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)和[Azure Active Directory](https://docs.microsoft.com/azure/active-directory)的信號，以關聯任何相關的使用者活動異常。 
 
 在搜尋階段中，會將風險和威脅指派給各種搜尋步驟。 
@@ -133,7 +133,7 @@ ms.locfileid: "43170949"
 
 ## <a name="next-steps"></a>後續步驟
 
-- [開始使用 Office 365 中的 AIR](office-365-air.md)
+- [開始使用 AIR](office-365-air.md)
 
 - [造訪 Microsoft 365 藍圖，查看即將推出的功能](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 

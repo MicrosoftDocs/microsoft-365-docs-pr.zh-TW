@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Office 365 系統管理員可以瞭解如何從勒索軟體的攻擊復原。
-ms.openlocfilehash: 6d57142bac6dad22d38cc26a9353b528a9f8eb10
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Microsoft 365 系統管理員可以瞭解如何從勒索軟體的攻擊復原。
+ms.openlocfilehash: 49e14e92505f5241828a525aba82a2dc871e6784
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032873"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634397"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>從 Office 365 復原勒索軟體攻擊
 
-即使您採取每一種預防措施來保護 Office 365 組織，仍然可以遭到您的[勒索軟體](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)攻擊。 勒索軟體是很大的商務用，攻擊是以複雜的驗證。
+即使您採取每一種防範措施保護您的組織，您還是可以遭到[勒索軟體](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)攻擊的受害人。 勒索軟體是很大的商務用，攻擊是以複雜的驗證。
 
-本主題中的步驟可讓您最有可能復原由勒索軟體加密的資料，並將協助停止在 Office 365 組織中的感染傳播。 在您開始之前，請考慮下列項目：
+本主題中的步驟可讓您最有可能復原由勒索軟體加密的資料，並將協助停止傳播組織中的感染。 在您開始之前，請考慮下列項目：
 
 - 不保證支付 ransom 將會傳回檔案的存取權。 實際上，支付 ransom 可讓您成為更多勒索軟體的目標。 如果您已付費，但您已能夠順利復原檔案，而不需要使用攻擊者的解決方式，則應該撥打您的銀行以查看是否可以封鎖交易。 此外，我們也建議您向法律強制執行（如本主題稍後所述），向法律執行、詐騙報告網站和 Microsoft 報告勒索軟體攻擊。
 
@@ -122,9 +122,9 @@ ms.locfileid: "43032873"
 
 ### <a name="submit-email-messages-to-microsoft"></a>將電子郵件提交至 Microsoft
 
-您可以使用下列其中一種方法，報告包含勒索軟體的網路釣魚郵件。 如需詳細資訊，請參閱[將郵件和檔案報告給 Microsoft](report-junk-email-messages-to-microsoft.md)。
+您可以使用下列其中一種方法，報告包含勒索軟體的網路釣魚郵件。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [軟體](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 

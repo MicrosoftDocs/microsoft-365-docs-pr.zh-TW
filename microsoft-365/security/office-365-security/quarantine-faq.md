@@ -16,20 +16,20 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: 有關 Office 365 中的隔離常見問題的答案。
-ms.openlocfilehash: 58800d5645241c2115356bc9899ce53302d1e37e
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 3947fbed2a17380a18320a8bffd08a8178ad2b3f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42856902"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634421"
 ---
-# <a name="quarantine-faq-in-office-365"></a>Office 365 中的隔離常見問題
+# <a name="quarantine-faq"></a>隔離區常見問題集
 
 本主題提供 Exchange Online 或獨立 Exchange Online Protection （EOP）客戶沒有 Exchange Online 信箱之信箱的365隔離問題和解答。
 
 ## <a name="q-how-do-i-manage-messages-that-were-quarantined-for-malware"></a>Q：如何管理被隔離以進行惡意程式碼的郵件？
 
-只有系統管理員可以管理隔離惡意程式碼的郵件。 如需詳細資訊，請參閱[在 Office 365 中以系統管理員身分管理隔離的郵件和](manage-quarantined-messages-and-files.md)檔案。
+只有系統管理員可以管理隔離惡意程式碼的郵件。 如需詳細資訊，請參閱[以 Office 365 系統管理員身分管理隔離的郵件和檔案](manage-quarantined-messages-and-files.md)。
 
 ## <a name="q-how-do-i-quarantine-spam"></a>問：如何隔離垃圾郵件？
 
@@ -70,7 +70,7 @@ $CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contos
 然後，執行下列命令，以將這些郵件釋放給所有原始收件者：
 
 ```powershell
-$CQ | foreach {Release-QuarantineMessage -Identity $CQ.Identity -ReleaseToAll}
+$CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
 ```
 
 在您發佈郵件後，就無法再放開。

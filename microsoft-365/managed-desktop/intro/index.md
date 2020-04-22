@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Micr
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: e8729e8533fd2f01e893d805199027ae166586f1
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 86bec329c5e0793be070df311d6058282e7be854
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516806"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636217"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什麼是 Microsoft 受管理的電腦？
 
@@ -28,7 +28,7 @@ Microsoft 受管理的桌面為企業和其目前人員提供一些挑戰的解�
 - 許多目前的 IT 管理及安全性處理常式已過時、耗時且成本高。
 - 企業想要專注于哪些方面讓他們獨一無二地成功，而不是維護數位基礎結構。
 
-您的使用者將享受最新版的 Windows 10 和 Office 365 ProPlus app （也是更多），使用策劃並經過嚴格測試以取得最佳效能與可靠性的裝置和軟體。 此外，您決不需要擔心將此軟體保持在最新狀態，因為這會自動進行，因為這會在每個步驟中受到監控，因此會自動遵循。 和已註冊的裝置會因技術及安全性問題而受到監控，所以如果發生問題，將會有説明。
+您的使用者將享受最新版本的 Windows 10 和 Microsoft 365 應用程式（也是更多），使用策劃且經過嚴格測試以取得最佳效能和可靠性的裝置和軟體。 此外，您決不需要擔心將此軟體保持在最新狀態，因為這會自動進行，因為這會在每個步驟中受到監控，因此會自動遵循。 和已註冊的裝置會因技術及安全性問題而受到監控，所以如果發生問題，將會有説明。
 
 
 ## <a name="unique-to-microsoft-managed-desktop"></a>Microsoft 受管理的電腦獨有
@@ -111,4 +111,3 @@ Microsoft 受管理的桌面會承擔管理已登錄裝置及其所用 Microsoft
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
  
-

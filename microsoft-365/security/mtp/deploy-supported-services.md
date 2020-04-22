@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1441790bfa0c587c4abceb87eb1e4daae6e4d157
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: c29027bb641530ba2d3c7a22c578770c098f53ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521477"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633468"
 ---
 # <a name="deploy-supported-services"></a>部署支援服務
 
@@ -62,7 +62,7 @@ Microsoft 365 E5，E5 Security，A5，or A5 安全性授權或有效的授權組
 | 服務 | 資料（信號 & 相關的資訊） | 修正 & 回應範圍 |
 | ------ | ------ | ------ |
 | Microsoft Defender ATP | -端點狀態和原始事件<br />-端點偵測和警示，包含防毒程式、EDR、攻擊面降低<br />-在端點上觀察到的檔案及其他實體的資訊 | 端點 |
-| Office 365 ATP | -郵件和信箱狀態和原始事件<br />-電子郵件、附件及連結偵測 | -信箱<br />-Office 365 帳戶 |
+| Office 365 ATP | -郵件和信箱狀態和原始事件<br />-電子郵件、附件及連結偵測 | -信箱<br />-Microsoft 365 帳戶 |
 | Azure ATP | -Active Directory 信號，包括驗證事件<br />-身分識別相關的行為偵測 | 身分識別 |
 | Microsoft Cloud App Security | -偵測 unsanctioned cloud apps and service （shadow）<br />-向雲端應用程式公開資料<br />-Cloud app 相關聯的威脅活動 | 雲端應用程式 |
 

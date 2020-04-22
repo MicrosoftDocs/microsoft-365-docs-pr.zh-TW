@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: 瞭解如何取得免費試用版或購買 Microsoft 365 的訂閱。
-ms.openlocfilehash: 0b19a27b44aa62c65bb8dc5542337e106da2ddc5
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f5c1fca9bfb7b0f2236981e335517c1e03b2007c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141620"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631902"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>試用或購買 Microsoft 365 訂閱
 
 Microsoft 365 是完整的解決方案，可結合 Office 365 與 Windows 10 搭配高級安全性和裝置管理。 如果您已有訂閱，且想要試用或購買 Microsoft 365 訂閱，最好的做法是透過系統管理中心。 您可以在系統管理中心使用下列 Microsoft 365 訂閱，讓您立即嘗試或購買：
   
-- Microsoft 365 商務版
+- Microsoft 365 商務版 Premium
 
 - Microsoft 365 企業版 E3
 
@@ -41,6 +41,7 @@ Microsoft 365 是完整的解決方案，可結合 Office 365 與 Windows 10 搭
 ## <a name="try-or-buy-a-microsoft-365-subscription"></a>試用或購買 Microsoft 365 訂閱
 
 ::: moniker range="o365-worldwide"
+
 
 1. 登入[https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)admin center，然後移至**帳單** \> **購買服務**。
 
@@ -67,13 +68,13 @@ Microsoft 365 是完整的解決方案，可結合 Office 365 與 Windows 10 搭
 
 11. 在 [**訂單接收**] 頁面上，選取 [**繼續**]。
 
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 1. 登入[https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686)admin center，然後移至**帳單** \> **購買服務**。
 
-2. 在 [**購買服務**] 頁面上，會列出您的組織可使用的訂閱。
+2. 在 [**購買服務**] 頁面上，會列出您的組織可使用的訂閱。 
 
 3. 選取您要嘗試或購買的 Microsoft 365 方案下的省略號，然後選取 [**開始免費試用**]，可提供25個使用者授權的一個月的期限，您也可以選取 [**立即購買**]。
 
@@ -99,7 +100,6 @@ Microsoft 365 是完整的解決方案，可結合 Office 365 與 Windows 10 搭
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-
 1. 登入[https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628)admin center，然後移至**帳單** \> **購買服務**。
 
 2. 在 [**購買服務**] 頁面上，會列出您的組織可使用的訂閱。 
@@ -127,14 +127,16 @@ Microsoft 365 是完整的解決方案，可結合 Office 365 與 Windows 10 搭
 
 ::: moniker-end
 
+
 ## <a name="next-steps"></a>後續步驟
 
 在您取得新訂閱後，您必須指派授權給將使用該訂閱的使用者。 若要深入瞭解，請參閱[將授權指派給使用者](../admin/manage/assign-licenses-to-users.md)。
 
 ## <a name="related-articles"></a>相關文章
 
-[購買另一個商務用 Office 365 訂閱](buy-another-subscription.md)
+[購買其他 Microsoft 365 for business 訂閱](buy-another-subscription.md)
 
-[購買或編輯商務用 Office 365 的附加元件](buy-or-edit-an-add-on.md)
+[購買或編輯適用于商務用 Microsoft 365 的附加元件](buy-or-edit-an-add-on.md)
 
 [新增您訂閱的儲存空間](add-storage-space.md)
+

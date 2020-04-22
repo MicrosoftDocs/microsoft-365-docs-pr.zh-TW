@@ -1,5 +1,5 @@
 ---
-title: 偵測並修復 Outlook 規則及自訂表單資料隱碼攻擊的 Office 365 中
+title: 偵測並修復 Outlook 規則和自訂表單注入攻擊
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,228 +15,228 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: 了解如何識別並修復 Outlook 規則及 Office 365 中的自訂表單資料隱碼攻擊
-ms.openlocfilehash: c15eeb057d14cbb252bda0767a15e7c4788ece9f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 瞭解如何在 Office 365 中識別及修復 Outlook 規則和自訂表單注入攻擊
+ms.openlocfilehash: 71f796f589157a8eb801af3da78d67d16534447b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599440"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637589"
 ---
-# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>偵測並修復 Office 365 中 Outlook 規則與自訂表單插入式攻擊
+# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>偵測並修復 Outlook 規則和自訂表單注入攻擊
 
-**摘要**了解如何識別並修復 Outlook 規則及 Office 365 中的自訂表單資料隱碼攻擊。
+**摘要**瞭解如何在 Office 365 中識別及修復 Outlook 規則和自訂表單注入攻擊。
 
-## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>什麼是 Outlook 規則及自訂表單資料隱碼攻擊？
+## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>Outlook 規則和自訂表單植入攻擊是什麼？
 
-攻擊者已在您的租用破壞帳戶，並取得之後，那里即將試，並建立的方式來保持連絡或回復之後找出並移除的方式。 這稱為建立持續性的機制。 他們可以執行此作業的兩種方法是藉由利用 Outlook 規則或插入至 Outlook 的自訂表單。
-在這兩種情況下，規則] 或 [表單同步處理自雲端服務下桌面用戶端上，以便為完整的格式並重新安裝用戶端軟體不會排除資料隱碼攻擊的機制。 這是因為 Outlook 用戶端軟體重新連線到雲端信箱時它將會重新下載規則與從雲端的表單。 一旦規則及表單中的位置，攻擊者就會使用它們來執行遠端或自訂的程式碼，通常是在本機電腦上安裝惡意程式碼。 惡意程式碼再重新竊取認證，或執行其他非法活動。
-好消息是，如果您保留您修補的最新版本的用戶端，您不會為受到為目前的 Outlook 用戶端預設會封鎖這兩個機制。
+當攻擊者破壞您租用中的帳戶並取得時，會嘗試並建立一種方式，以在發現及移除之後，繼續進行，或是取得的方式。 這稱為建立持久性機制。 使用 Outlook 規則或將自訂表單插入 Outlook 的兩種方法可以做到這一點。
+在這兩種情況下，規則或表單會從雲端服務同步處理至桌面用戶端，因此完整格式化及重新安裝用戶端軟體不會消除插入機制。 這是因為當 Outlook 用戶端軟體重新連接至雲端中的信箱時，它會從雲端重新下載規則和表單。 當規則和表單就緒後，攻擊者會使用它們來執行遠端或自訂程式碼，通常是在本機電腦上安裝惡意程式碼。 惡意程式碼接著重新竊取認證或執行其他非法活動。
+以下是一個好的資訊：如果您將用戶端保持在最新版本的補丁，您就不會因為目前的 Outlook 用戶端預設會封鎖這兩種機制，所以威脅不會受到威脅。
 
-攻擊通常請依循下列模式：
+攻擊通常遵循下列模式：
 
-**利用規則**：
+**規則會利用**下列專案：
 
-1. 攻擊者竊取的使用者名稱和密碼的其中一個使用者。
+1. 攻擊者竊取其中一個使用者的使用者名稱和密碼。
 
-2. 攻擊者然後登入該使用者的 Exchange 信箱。 信箱可以是在 Exchange online 或 Exchange 內部部署。
+2. 然後，攻擊者會登入該使用者的 Exchange 信箱。 信箱可以位於 Exchange online 中，也可以位於 Exchange 內部部署中。
 
-3. 攻擊者然後建立信箱信箱可接收電子郵件符合準則的規則時所觸發的轉寄規則。 規則的條件以及觸發電子郵件的內容是特製彼此。
+3. 然後，攻擊者會在信箱收到符合規則準則的電子郵件時，在觸發的信箱中建立轉移規則。 規則的準則及觸發器電子郵件的內容是針對彼此進行量身定制的。
 
-4. 攻擊者通常使用其信箱的使用者所傳送的觸發電子郵件。
+4. 攻擊者會將觸發器電子郵件傳送至一般使用信箱的使用者。
 
-5. 收到電子郵件時，就會觸發規則。 規則的巨集指令通常是以啟動遠端 (WebDAV) 伺服器上的應用程式。
+5. 收到電子郵件時，會觸發規則。 規則的動作通常是在遠端（WebDAV）伺服器上啟動應用程式。
 
-6. 應用程式通常惡意程式碼、 [Powershell 帝國](https://www.powershellempire.com/)，例如在本機上安裝在使用者的電腦。
+6. 應用程式通常會在使用者的電腦上，以本機方式安裝惡意程式碼，例如[Powershell Empire](https://www.powershellempire.com/)。
 
-7. 惡意程式碼讓駭客重新竊取使用者的使用者名稱與密碼或從本機電腦的其他認證，並執行其他惡意活動。
+7. 惡意程式碼可讓攻擊者重新竊取使用者的使用者名稱和密碼，或從本機機器重新竊取其他認證，以及執行其他惡意活動。
 
-**利用表單**：
+**表單利用**方式：
 
-1. 攻擊者竊取的使用者名稱和密碼的其中一個使用者。
+1. 攻擊者竊取其中一個使用者的使用者名稱和密碼。
 
-2. 攻擊者然後登入該使用者的 Exchange 信箱。 信箱可以是在 Exchange online 或 Exchange 內部部署。
+2. 然後，攻擊者會登入該使用者的 Exchange 信箱。 信箱可以位於 Exchange online 中，也可以位於 Exchange 內部部署中。
 
-3. 攻擊者再建立自訂郵件表單範本，並將它插入該使用者的信箱。 當信箱可接收的電子郵件，需要載入自訂表單的信箱時，就會觸發自訂表單。 自訂表單和電子郵件的格式是特製彼此。
-4. 攻擊者會觸發電子郵件傳送給通常使用其信箱的使用者。
+3. 然後，攻擊者會建立自訂的郵件表單範本，並將其插入使用者的信箱。 當信箱收到需要信箱載入自訂表單的電子郵件時，就會觸發自訂表單。 自訂表單和電子郵件的格式是針對彼此進行量身定制。
+4. 攻擊者會將觸發器電子郵件傳送給使用者，該使用者一般會使用其信箱。
 
-5. 載入表單時收到電子郵件時。 表單啟動遠端 (WebDAV) 伺服器上的應用程式。
+5. 當接收到電子郵件時，就會載入表單。 表單會在遠端（WebDAV）伺服器上啟動應用程式。
 
-6. 應用程式通常惡意程式碼、 [Powershell 帝國](https://www.powershellempire.com/)，例如在本機上安裝在使用者的電腦。
+6. 應用程式通常會在使用者的電腦上，以本機方式安裝惡意程式碼，例如[Powershell Empire](https://www.powershellempire.com/)。
 
-7. 惡意程式碼讓駭客重新竊取使用者的使用者名稱與密碼或從本機電腦的其他認證，並執行其他惡意活動。
+7. 惡意程式碼可讓攻擊者重新竊取使用者的使用者名稱和密碼，或從本機機器重新竊取其他認證，以及執行其他惡意活動。
 
-## <a name="what-a-rules-and-custom-forms-injection-attack-might-look-like-office-365"></a>查看規則及自訂表單資料隱碼攻擊看起來會像 Office 365？
+## <a name="what-a-rules-and-custom-forms-injection-attack-might-look-like-office-365"></a>規則和自訂表單植入攻擊可能類似于 Office 365？
 
-這些保存性機制不太可能會注意到您的使用者所且可能在某些情況下偶數會看不到它們。 本文將告訴您如何尋找下面列出任何七個符號 （危害指標）。 如果您發現任何這些，您需要採取補救步驟。
+您的使用者可能會注意到這些持續性機制，但在某些情況下，您可能會看不到這些功能。 本文將告訴您如何尋找下列列出的七個符號（有損損）中的任何一個。 如果您找到上述任一項，您必須採取補救步驟。
 
-- 規則的指標危害：
+- 規則受損的指標：
 
-  - 規則動作是要啟動的應用程式。
+  - 規則動作是要啟動應用程式。
 
-  - 規則參考 EXE、 ZIP 或 URL。
+  - 規則參照 EXE、ZIP 或 URL。
 
-  - 在本機電腦中，尋找 [來自 Outlook PID 的新程序開始。
+  - 在本機電腦上，尋找來自 Outlook P&ID 的新進程開始。
 
-- 自訂表單的指標危害：
+- 自訂表單受損的指標：
 
-  - 自訂表單存在另存為他們自己的郵件類別。
+  - 顯示的自訂表單會另存為自己的郵件類別。
 
   - 郵件類別包含可執行程式碼。
 
-  - 通常儲存在個人表單檔案庫] 或 [收件匣] 資料夾中。
+  - 通常儲存在個人表單庫或 [收件匣] 資料夾中。
 
-  - 表單是名為 IPM。附註。[自訂名稱]。
+  - 表單命名為 IPM。注意。[custom name]。
 
-## <a name="steps-for-finding-signs-of-this-attack-and-confirming-it"></a>尋找這類攻擊的跡象，並確認它的步驟
+## <a name="steps-for-finding-signs-of-this-attack-and-confirming-it"></a>尋找此攻擊之徵兆及確認的步驟
 
 您可以使用下列兩種方法之一來確認攻擊：
 
-- 手動檢查的規則和每個信箱使用 Outlook 用戶端的表單。 這個方法是徹底，但您只能用來檢查信箱使用者一次可以是相當耗時如果您有許多使用者檢查。 它也可能導致您正在執行從存回之電腦的外洩。
+- 使用 Outlook 用戶端，手動檢查每個信箱的規則和表單。 這種方法是完整的，但是您一次只能檢查信箱使用者，如果您有許多使用者可供檢查，就會非常耗費時間。 也可能會造成您正在執行檢查的電腦遭到破壞。
 
-- 使用[Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell 指令碼來自動傾印轉寄規則與自訂表單的每個使用者在您的租用中的所有郵件。 這是使用最少的額外負荷量的最快和最安全方法。
+- 使用 PowerShell [Get-AllTenantRulesAndForms](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1)腳本可自動為您租使用者中的所有使用者轉儲所有的郵件轉寄規則和自訂表單。 這是最快且最安全的方法，最少量的開銷。
 
-### <a name="confirm-the-rules-attack-using-the-outlook-client"></a>確認規則攻擊使用 Outlook 用戶端
+### <a name="confirm-the-rules-attack-using-the-outlook-client"></a>使用 Outlook 用戶端確認規則攻擊
 
-1. 使用者以開啟使用者的 Outlook 用戶端。 使用者可能需要您在檢查其信箱上的規則的協助。
+1. 以使用者身分開啟使用者 Outlook 用戶端。 使用者可能需要協助您檢查其信箱上的規則。
 
-2. 請參閱[使用規則管理電子郵件訊息](https://support.office.com/article/c24f5dea-9465-4df4-ad17-a50704d66c59)文章如何在 Outlook 中開啟的規則介面上的程序。
+2. 如需如何在 Outlook 中開啟規則介面的程式，請參閱[使用規則文章管理電子郵件訊息](https://support.office.com/article/c24f5dea-9465-4df4-ad17-a50704d66c59)。
 
-3. 查詢規則，未建立使用者，或任何未預期的規則或規則的可疑的名稱。
+3. 尋找使用者未建立的規則，或任何未預期的規則或具有可疑名稱的規則。
 
-4. 規則動作的規則描述中尋找該開始和應用程式或參照。EXE、。ZIP 檔案，或啟動 URL。
+4. 請參閱規則描述，以取得啟動和應用程式或參考的規則動作。Exe。ZIP 檔或啟動 URL。
 
-5. 尋找任何新的程序，開始使用 Outlook 處理序識別碼。 若要[尋找的程序識別碼](https://docs.microsoft.com/windows-hardware/drivers/debugger/finding-the-process-id)，請參閱。
+5. 尋找任何開始使用 Outlook 進程識別碼的新程式。 請參閱[尋找進程識別碼](https://docs.microsoft.com/windows-hardware/drivers/debugger/finding-the-process-id)。
 
-### <a name="steps-to-confirm-the-forms-attack-using-the-outlook-client"></a>若要確認表單的步驟來進行攻擊使用 Outlook 用戶端
+### <a name="steps-to-confirm-the-forms-attack-using-the-outlook-client"></a>使用 Outlook 用戶端確認表單攻擊的步驟
 
-1. 使用者以開啟使用者的 Outlook 用戶端。
+1. 以使用者身分開啟使用者 Outlook 用戶端。
 
-2. 請遵循使用者的 Outlook 版本中，[顯示 [開發人員] 索引標籤](https://support.office.com/article/e1192344-5e56-4d45-931b-e5fd9bea2d45)的步驟。
+2. 遵循中的步驟，顯示 Outlook 使用者版本的[[開發人員]](https://support.office.com/article/e1192344-5e56-4d45-931b-e5fd9bea2d45)索引標籤。
 
-3. 在 Outlook 中開啟 [現在顯示開發人員] 索引標籤，然後按一下 [**設計表單**。
+3. 開啟 Outlook 中的 [now visible developer] 索引標籤，然後按一下 [**設計表單**]。
 
-4. 從 [查詢] 清單**中**，選取 [**收件匣**。 尋找任何自訂表單。 自訂表單很少，如果您有任何自訂表單完全，它是值得更深入的外觀。
+4. 從 [**查找範圍**] 清單中選取 [**收件**匣]。 尋找任何自訂表單。 自訂表單非常少見，如果您有任何自訂表單，則需要更深入的外觀。
 
-5. 調查任何自訂表單、 特別標示為隱藏。
+5. 調查任何自訂表單，尤其是標示為隱藏的表單。
 
-6. 開啟任何自訂表單，並在 [**表單**] 群組中按一下 [**檢視程式碼**，請參閱什麼執行時載入表單時。
+6. 開啟任何自訂表單，然後在**表單**群組中按一下 [ **View Code** ] （查看表單載入時執行的功能）。
 
-### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>若要確認的規則及表單的步驟來進行攻擊使用 PowerShell
+### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>使用 PowerShell 確認規則和表單攻擊的步驟
 
-若要驗證規則的最簡單方式或自訂表單攻擊 」 會執行[Get AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell 指令碼。 此指令碼連線至租用戶中的每個信箱和傾印的所有規則和表單到兩個.csv 檔案。
+驗證規則或自訂表單攻擊的最簡單方法，就是執行[Get-AllTenantRulesAndForms](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell script。 此腳本會連線至您租使用者中的每個信箱，並將所有規則和表單轉儲成兩個 .csv 檔案。
 
 #### <a name="pre-requisites"></a>先決條件
 
-您必須擁有的全域系統管理員權限，因為指令碼連線至租用戶讀取的規則及表單中的每個信箱執行指令碼。
+您必須具有全域系統管理員許可權，才能執行腳本，因為腳本會連線至租用中的每個信箱，以讀取規則和表單。
 
-1. 登入您要執行的指令碼以本機系統管理員權限的電腦。
+1. 以本機系統管理員許可權登入您將執行腳本的電腦。
 
-2. 下載或從 GitHub Get AllTenantRulesAndForms.ps1 指令碼複製到資料夾，會從中執行它。 指令碼會建立兩個日期加上戳記檔案，這個資料夾、 MailboxFormsExport-yyyy-公釐-dd.csv 及 MailboxRulesExport yyyy-公釐 dd.csv。
+2. 將 Get-AllTenantRulesAndForms 腳本從 GitHub 下載或複製到要從中執行它的資料夾。 腳本會建立兩個日期戳檔案至此資料夾、MailboxFormsExport-yyyy-mm-dd 及 MailboxRulesExport-yyyy-mm-dd。
 
-3. 開啟身為系統管理員的 PowerShell 執行個體，然後開啟您儲存至指令碼的資料夾。
+3. 以系統管理員身分開啟 PowerShell 實例，然後開啟您用來儲存腳本的資料夾。
 
-4. 執行此 PowerShell 命令列，如下所示`.\Get-AllTenantRulesAndForms.ps1`.\Get-AllTenantRulesAndForms.ps1
+4. 以 .\Get-AllTenantRulesAndForms.ps1 的方式`.\Get-AllTenantRulesAndForms.ps1`執行此 PowerShell 命令列
 
-#### <a name="interpreting-the-output"></a>解譯輸出
+#### <a name="interpreting-the-output"></a>解讀輸出
 
-- **MailboxRulesExport-*-yyyy-mm-dd*.csv**： 檢查巨集指令的條件，包括應用程式或可執行檔 （每個資料列的其中一個） 的規則：
+- **MailboxRulesExport-*yyyy-dd***：檢查規則（每列一個）是否有包含應用程式或可執行檔的動作條件：
 
-  - **ActionType （欄 A）**： 如果您看到 「 ID_ACTION_CUSTOM 」 的值，此規則會可能惡意。
+  - **ActionType （資料行 A）**：如果看到值 "ID_ACTION_CUSTOM"，該規則可能是惡意的。
 
-  - **IsPotentiallyMalicious （D 欄）**： 此值為"TRUE"，規則是否可能惡意。
+  - **IsPotentiallyMalicious （欄 D）**：如果此值為 "TRUE"，則此規則可能是惡意的。
 
-  - **ActionCommand （資料行 G）**： 這會列出應用程式或任何檔具有.exe、.zip 副檔名或參照至的 URL，不應該在那裡，項目規則是否可能惡意。
+  - **ActionCommand （Column G）**：如果這會列出應用程式或任何副檔名為 .exe、.zip 副檔名的專案，或是參照 URL 的專案，則該規則可能是惡意的。
 
-- **MailboxFormsExport-*-yyyy-mm-dd*.csv**： 在 [一般] 自訂表單的用途是很少見。 如果您發現任何此活頁簿中，您會開啟該使用者的信箱，並檢查表單本身。 如果您的組織沒有不將它放有刻意，很可能是惡意。
+- **MailboxFormsExport-*yyyy-yyyy***：一般說來，使用自訂表單非常少見。 如果您在此活頁簿中找到任何的，請開啟該使用者的信箱，並檢查該表單本身。 如果您的組織未有意放入該組織，可能是惡意的。
 
-## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>如何停止和修復 Outlook 規則及表單攻擊
+## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>如何停止和修復 Outlook 規則和表單攻擊
 
-如果您發現這些攻擊的任何辨識項，補救很簡單，只要從信箱中刪除規則] 或 [表單。 您可以利用 Outlook 用戶端或使用遠端 PowerShell 移除的規則來進行此作業。
+如果您發現其中任何一種攻擊的證據，修正很簡單，只需要從信箱中刪除規則或表單即可。 您可以使用 Outlook 用戶端或使用遠端 PowerShell 來移除規則。
 
 ### <a name="using-outlook"></a>使用 Outlook
 
-1. 識別使用者已與 Outlook 搭配使用的所有裝置。 他們將所有需要的潛在的惡意程式碼會清除。 不允許使用者登入，並使用電子郵件，直到已清除所有的裝置。
+1. 識別使用者已用於 Outlook 的所有裝置。 所有的潛在惡意程式碼都必須清除。 不允許使用者登入並使用電子郵件，直到所有裝置都已清除為止。
 
-2. 請依照下列每個裝置中[刪除規則](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f)的步驟。
+2. 依照刪除每個裝置的[規則](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f)中的步驟進行。
 
-3. 如果您不確定相關的其他惡意程式碼存在，您可以設定的格式，並重新安裝在裝置上的所有軟體。 行動裝置的您可以依照製造商以將裝置重設成出廠預設值的影像。
+3. 如果您不確定是否存在其他惡意程式碼，您可以格式化及重新安裝裝置上的所有軟體。 針對行動裝置，您可以遵循製造商的步驟，將裝置重設為出廠影像。
 
-4. 安裝最新版本的 Outlook。 請記住，目前版本的 Outlook 預設會封鎖這兩種此類攻擊。
+4. 安裝最新版本的 Outlook。 請記住，目前的 Outlook 版本會封鎖這兩種攻擊類型的預設值。
 
-5. 一旦已經移除所有的信箱的離線複本，重設使用者的密碼 （高品質其中會使用），如果已經尚未啟用 MFA，請遵循[Office 365 使用者設定多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)] 中的步驟。 這可確保使用者的認證，不會公開透過其他方式 （例如網路釣魚或密碼重複使用）。
+5. 移除信箱的所有離線副本之後，請重設使用者的密碼（使用高品質的密碼），並依照[設定多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)中的步驟進行，如果尚未啟用 MFA。 這可確保使用者的認證不會透過其他方式公開（例如網路釣魚或密碼重複使用）。
 
 ### <a name="using-powershell"></a>使用 PowerShell
 
-有兩個遠端 PowerShell 指令程式可移除或停用危險的規則。 請按照步驟。
+您可以使用兩個遠端 PowerShell Cmdlet 來移除或停用危險的規則。 只需遵循步驟。
 
-#### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Exchange 伺服器上的信箱的步驟
+#### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Exchange 伺服器上的信箱步驟
 
-1. 連線至 Exchange 伺服器使用遠端 PowerShell。 遵循在 [[連線到 Exchange 伺服器使用遠端 PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell)的步驟。
+1. 使用遠端 PowerShell 連接至 Exchange 伺服器。 依照[[使用遠端 PowerShell 連線到 Exchange 伺服器]](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell)中的步驟進行。
 
-2. 如果您想要完全移除單一規則，多個規則或從信箱的所有規則使用[Remove-inboxrule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule)指令程式。
+2. 如果您想要完全移除單一規則、多個規則或所有來自信箱的規則，請使用[Remove-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule) Cmdlet。
 
-3. 如果您想要保留規則，並使用[Disable-inboxrule](https:https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-inboxrule/library/dd298120(v=exchg.160).aspx)指令程式，供進一步調查其內容。
+3. 如果您想要保留規則及其內容以進行進一步調查，請使用[Disable-InboxRule](https:https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-inboxrule/library/dd298120(v=exchg.160).aspx) Cmdlet。
 
-#### <a name="steps-for-mailboxes-in-exchange-online"></a>在 Exchange Online 信箱的步驟
+#### <a name="steps-for-mailboxes-in-exchange-online"></a>Exchange Online 中的信箱步驟
 
-1. 請依照[使用連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)中的步驟。
+1. 依照[[使用 PowerShell 連線到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)中的步驟進行。
 
-2. 如果您想要完全移除單一規則，多個規則或從信箱的所有規則使用[移除收件匣規則](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule)指令程式。
+2. 如果您想要完全移除單一規則、多個規則或所有來自信箱的規則，請使用 [[移除收件匣規則](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule)] Cmdlet。
 
-3. 如果您想要保留規則，並使用[Disable-inboxrule](https:https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-inboxrule/library/dd298120(v=exchg.160).aspx)指令程式，供進一步調查其內容。
+3. 如果您想要保留規則及其內容以進行進一步調查，請使用[Disable-InboxRule](https:https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-inboxrule/library/dd298120(v=exchg.160).aspx) Cmdlet。
 
-## <a name="how-to-minimize-future-attacks"></a>如何減少未來的攻擊
+## <a name="how-to-minimize-future-attacks"></a>如何最小化未來的攻擊
 
-### <a name="first-protect-your-accounts"></a>第一個： 保護您的帳戶
+### <a name="first-protect-your-accounts"></a>第一種：保護您的帳戶
 
-規則與表單攻擊才會使用攻擊之後他們有竊取或破壞您的使用者帳戶的其中一個。 因此，若要避免使用您的組織對這些攻擊的您第一步是積極地保護您的使用者帳戶。 其中一些帳戶會破壞的常用方法是透過網路釣魚或[密碼噴射](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻擊。
+只有在竊取或破壞使用者的帳戶之後，攻擊者才會使用這些規則和表單攻擊。 因此，避免對您的組織使用這些入侵的第一步，是要積極保護您的使用者帳戶。 一些最常見的帳戶破壞方式是透過網路釣魚或[密碼 spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻擊。
 
-若要保護您的使用者帳戶，並特別是您系統管理員帳戶，最好是以[設定 Office 365 使用者的多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。 您也應該：
+保護使用者帳戶的最佳方法（特別是管理員帳戶）是為[使用者設定多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。 您也應該：
 
-- 監視您的使用者帳戶是[存取和使用](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)的方式。 您可能不會使初始資料外洩，但您將來偵測此類更快速地縮短持續時間和資料外洩的影響。 您可以使用這些[Office 365 雲端 App 安全性原則](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)來監視您的帳戶與上不尋常的活動警訊：
+- 監視如何[存取及使用](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)您的使用者帳戶。 您可能不會防止初始遭到破壞，但是您會儘早偵測，以縮短破壞的持續時間和破壞影響。 您可以使用這些[Office 365 雲端 App 安全性原則](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)，監控不尋常活動的帳戶和警示：
 
-  - **多個失敗的登入**： 這個原則設定檔環境和觸發提醒使用者有關學的比較基準，這可能表示嘗試外洩的單一工作階段中執行多個失敗的登入活動時。
+  - **多個失敗的登入嘗試**：這個原則設定檔您的環境，當使用者在與所學的基準相關的單一會話中執行多個失敗的登入活動時，便會觸發警示，這可能表示企圖遭到破壞。
 
-  - **Impossible 旅行**： 這個原則設定檔環境和活動從相同的使用者在不同位置中偵測到兩個位置之間的預期的旅行時間較短的期間內時，會觸發警示。 這可能表示不同的使用者使用相同的認證。 偵測這個異常行為區間初始學習一段期間它可學習新使用者的活動模式的七天。
+  - 不**可能的旅行**：這項原則會在不同位置的相同使用者中偵測到活動時，在兩個位置之間的時間範圍內，以短于預期的旅行時間。 這可能表示不同的使用者使用相同的認證。 偵測到這種反常行為時，會有七天的初始學習週期，以瞭解新使用者的活動模式。
 
-  - **不尋常模擬活動 （依使用者）**： 此原則設定檔環境和使用者執行多個模擬的活動相對於基線學會，在單一工作階段中這可能表示嘗試外洩時，會觸發警示。
+  - 不**尋常的模仿活動（依使用者）**：這項原則會在使用者執行多個模擬活動時，在與基線相關的單一會話中執行多個模擬活動，這可能表示企圖遭到破壞。
 
-- 利用[Office 365 安全分數](https://securescore.office.com/)若要管理帳戶的安全性組態與行為這類的工具。
+- 利用類似[Office 365 安全分數](https://securescore.office.com/)的工具來管理帳戶安全性設定和行為。
 
-### <a name="second-keep-your-outlook-clients-current"></a>第二個： 您的 Outlook 用戶端維持最新狀態
+### <a name="second-keep-your-outlook-clients-current"></a>第二：讓 Outlook 用戶端保持最新
 
-根據預設，完全更新及修補版本的 Outlook 2013 和 2016年停用 「 啟動應用程式 」 規則] / [表單動作。 這可確保，即使攻擊破壞帳戶，規則] 和 [表單動作會被封鎖。 您可以藉由遵循[安裝 Office](https://support.office.com/article/2ab296f3-7f03-43a2-8e50-46de917611c5)更新的安裝最新的更新與安全性修補程式。
+完全更新及修補的 Outlook 2013 版本，而2016預設會停用「啟動應用程式」規則/表單動作。 這可確保即使攻擊者破壞帳戶，規則和表單動作也會遭到封鎖。 您可以遵循[安裝 Office 更新](https://support.office.com/article/2ab296f3-7f03-43a2-8e50-46de917611c5)中的步驟，安裝最新的更新及安全性修補程式。
 
-以下是 Outlook 2013 和 2016年用戶端的修補程式版本：
+以下是 Outlook 2013 和2016用戶端的修補程式版本：
 
-- **Outlook 2016**: 16.0.4534.1001 或更高版本。
+- **Outlook 2016**：16.0.4534.1001 或更新版本。
 
-- **Outlook 2013**: 15.0.4937.1000 或更新版本。
+- **Outlook 2013**：15.0.4937.1000 或更新版本。
 
-如需有關個別安全性修補程式的詳細資訊，請參閱：
+如需個別安全性修補程式的詳細資訊，請參閱：
 
 - [Outlook 2016 安全性修補程式](https://support.microsoft.com/help/3191883)
 
 - [Outlook 2013 安全性修補程式](https://support.microsoft.com/help/3191938)
 
-### <a name="third-monitor-your-outlook-clients"></a>第三個： 監視您的 Outlook 用戶端
+### <a name="third-monitor-your-outlook-clients"></a>第三：監控 Outlook 用戶端
 
-請注意，即使與修補程式安裝的更新，它是以變更本機電腦設定若要重新啟用 「 啟動應用程式 」 行為攻擊者可能。 您可以使用[進階群組原則管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/)來監視及強制執行您的用戶端上的本機電腦原則。
+請注意，即使已安裝修補程式和更新，攻擊者還是可以變更本機電腦設定，以重新啟用「啟動應用程式」行為。 您可以使用[高級群組原則管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/)，在用戶端上監視及強制執行本機電腦原則。
 
-您可以查看是否 「 啟動應用程式 」 已重新啟用透過覆寫登錄中所使用的資訊[如何檢視使用 64 位元版本的 Windows 系統登錄](https://support.microsoft.com/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows)中。 請檢查這些子機碼：
+您可以使用[Windows 的64位版本](https://support.microsoft.com/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows)資訊，查看是否已透過登錄中的覆寫方式重新啟用 [啟動應用程式]。 請檢查下列子項：
 
-- **Outlook 2016**:`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
+- **Outlook 2016**：`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 
-- **Outlook 2013**:`HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
+- **Outlook 2013**：`HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
 
-機碼 EnableUnsafeClientMailRules 外觀。 如果它有且設為 1，已覆寫 Outlook 安全性修補程式和電腦很容易表單讀規則攻擊。 如果值為 0，會停用的 「 啟動應用程式 」 巨集指令。 如果已安裝的 Outlook 更新及修補版本，而且此登錄機碼不存在，則系統不會受到攻擊。
+尋找機碼 EnableUnsafeClientMailRules。 如果已存在，且已設定為1，Outlook 安全性修補程式已被取代，且電腦受到表單/規則攻擊的影響。 如果值為0，就會停用「啟動應用程式」動作。 如果已安裝更新及修補的 Outlook 版本，但此登錄機碼不存在，系統就不會受到攻擊。
 
-與內部部署 Exchange 安裝的客戶應該考慮封鎖舊版 Outlook 沒有可用的修補程式。 可以[設定 Outlook 用戶端封鎖](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help)」 文件中找到此程序的詳細資訊。
+使用內部部署 Exchange 安裝的客戶應考慮封鎖舊版本的 Outlook，但沒有可用的修補程式。 有關此程式的詳細資訊，請參閱[設定 Outlook 用戶端封鎖](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help)一文。
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Office 365
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>保護 Microsoft 365 （如 cybersecurity pro）
 
-您的 Office 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。 使用 [Office 365 安全性藍圖 - 前 30 天、前 90 天前和之後的最高優先順序](security-roadmap.md)來實作 Microsoft 建議用來保護您的 Office 365 租用戶的最佳做法。
+您的 Microsoft 365 訂閱隨附一組強大的安全性功能，可讓您用來保護您的資料和使用者。 使用[microsoft 365 安全性藍圖-前30天、90天和之後的最高優先順序](security-roadmap.md)，以執行 microsoft 建議的最佳作法，以保護您的 microsoft 365 租使用者。
 
 - 要在前 30 天內完成的工作。 這些工作會有立即的影響，而且對您的使用者影響較低。
 
@@ -246,12 +246,12 @@ ms.locfileid: "41599440"
 
 ## <a name="see-also"></a>另請參閱：
 
-- [惡意 Outlook 規則](https://silentbreaksecurity.com/malicious-outlook-rules/)的相關規則向量 SilentBreak 安全性文章提供如何詳細的檢閱 Outlook 規則。
+- [惡意的 Outlook 規則](https://silentbreaksecurity.com/malicious-outlook-rules/)SilentBreak 安全性文章關於規則向量可提供 Outlook 規則的詳細評論。
 
-- 關於 Mailrule Pwnage Sensepost 部落格上的[MAPI over HTTP 和 Mailrule Pwnage](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/)討論工具，稱為尺規，可讓您利用透過 Outlook 規則的信箱。
+- [MAPI OVER HTTP 和 Mailrule Pwnage](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/) On the Sensepost Blog On Mailrule Pwnage 討論稱為尺規的工具，可讓您透過 Outlook 規則利用信箱。
 
-- [Outlook 表單與 shell](https://sensepost.com/blog/2017/outlook-forms-and-shells/)關於表單威脅向量 Sensepost 部落格上。
+- Sensepost 博客上有關表單威脅向量的[Outlook 表單及 shell](https://sensepost.com/blog/2017/outlook-forms-and-shells/) 。
 
-- [尺規程式碼基底](https://github.com/sensepost/ruler)
+- [尺規基本代碼](https://github.com/sensepost/ruler)
 
-- [尺規指標的危害](https://github.com/sensepost/notruler/blob/master/iocs.md)
+- [尺規指標洩露](https://github.com/sensepost/notruler/blob/master/iocs.md)

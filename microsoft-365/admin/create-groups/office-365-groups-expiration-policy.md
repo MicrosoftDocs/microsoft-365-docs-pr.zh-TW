@@ -1,5 +1,5 @@
 ---
-title: Office 365 群組到期原則
+title: 群組到期原則
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,17 +17,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 深入瞭解 Office 365 群組到期原則。
-ms.openlocfilehash: 58eadf3f5899a69fda261c34a5911af22220bd85
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: 深入瞭解 Microsoft 365 群組到期原則。
+ms.openlocfilehash: be61c66b310ada07876c5b3b005e6a7eb660092d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225916"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630052"
 ---
-# <a name="office-365-group-expiration-policy"></a>Office 365 群組到期原則
+# <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 群組到期原則
 
-隨著 Office 365 群組的使用量增加，管理員和使用者需要一種方式來清除未使用的群組。 到期原則可協助從系統中移除非使用中的群組，並使事情更整潔。
+隨著 Microsoft 365 群組的使用量增加，管理員和使用者需要一種方式來清除未使用的群組。 到期原則可協助從系統中移除非使用中的群組，並使事情更整潔。
 
 當群組到期時，其相關聯的所有服務（信箱、Planner、SharePoint 網站、小組等等）都會同時刪除。
 
@@ -46,14 +46,14 @@ ms.locfileid: "43225916"
 請務必知道到期會預設為關閉狀態。 系統管理員若要使用它，必須為組織啟用它。
 
 > [!NOTE]
-> 設定和使用 Office 365 群組的到期原則，需要您擁有但不一定要為已套用到期原則之所有群組的成員指派 Azure AD Premium 授權。 如需詳細資訊，請參閱[Azure Active Directory Premium 快速](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)入門。
+> 設定及使用 Microsoft 365 群組的到期原則，需要您擁有但不一定要為已套用到期原則之所有群組的成員指派 Azure AD Premium 授權。 如需詳細資訊，請參閱[Azure Active Directory Premium 快速](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)入門。
 
-## <a name="who-can-configure-and-use-the-office-365-groups-expiration-policy"></a>誰可以設定及使用 Office 365 群組到期原則？
+## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>誰可以設定及使用 Microsoft 365 群組到期原則？
 
 |角色|可以執行的動作|
 |---------|---------|
-|Office 365 全域管理員（在 Azure、公司管理員）、使用者管理員|建立、讀取、更新或刪除 Office 365 群組到期原則設定。|
-|使用者|更新或[還原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)擁有的 Office 365 群組|
+|全域管理員（在 Azure、公司管理員）、使用者管理員|建立、讀取、更新或刪除 Microsoft 365 群組到期原則設定。|
+|使用者|更新或[還原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)擁有的 Microsoft 365 群組|
 
 ## <a name="how-to-set-the-expiration-policy"></a>如何設定到期原則
 
@@ -77,7 +77,7 @@ ms.locfileid: "43225916"
 
 超過此群組的30天之後，群組擁有者（或您為沒有擁有者之群組所指定的電子郵件地址）將會收到電子郵件，讓使用者可以輕鬆地更新群組。 如果不加以更新，他們會在到期前的15天內收到另一個更新電子郵件。 如果他們仍未更新，他們會在到期前的一天內收到一封以上的電子郵件通知。
 
-若由於某些原因，任何擁有者或系統管理員都不會在過期前更新群組，管理員仍可在到期後30天內還原群組。 如需詳細資訊，請參閱：[還原已刪除的 Office 365 群組](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54)。
+若由於某些原因，任何擁有者或系統管理員都不會在過期前更新群組，管理員仍可在到期後30天內還原群組。 如需詳細資訊，請參閱：[還原已刪除的 Microsoft 365 群組](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54)。
 
 ## <a name="related-articles"></a>相關文章
 
@@ -85,4 +85,4 @@ ms.locfileid: "43225916"
 
 [指派新擁有者給孤立的群組](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[設定 Office 365 群組到期](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)'
+[設定 Microsoft 365 群組到期](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)'

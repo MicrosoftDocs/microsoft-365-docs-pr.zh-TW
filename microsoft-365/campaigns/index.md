@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 市場活動
-ms.openlocfilehash: 32437ccc0c110c0539cb3d24f036438d6a313921
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 167b265676d3c3bc9025a0c0e998379f72bb9e52
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42056466"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632032"
 ---
 <a name="microsoft-365-for-campaigns"></a>適用於行銷活動的 Microsoft 365
 ===========================
@@ -40,24 +40,24 @@ ms.locfileid: "42056466"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH] 
 
 
-**何謂市場活動的 Microsoft 365？** 建議的安全設定包括 Microsoft 365 業務，您可以：
+**何謂市場活動的 Microsoft 365？** 建議的安全設定包括 Microsoft 365 商務版 Premium，您可以：
 - 依靠信任的商業生產力和共同作業工具（例如 Outlook、Word、Excel 及其他 Office 產品） 
 - 使用易於管理的企業級安全性，保護所有 iOS、Android 和 Windows 10 裝置上的工作檔案 
 - 對使用者帳戶和身分識別套用額外的保護 
 
-![Microsoft 365 商務版會保護您的生產力工具、共同作業工具、檔案存放區、電子郵件、裝置和身分識別](../media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 商務版特優保護您的生產力工具、共同作業工具、檔案存放區、電子郵件、裝置和身分識別](../media/M365-WhatIsIt-SecurityFocus.png)
 
-雖然美國的聯邦版選舉活動符合 Microsoft 365 商務用的特殊定價，但具有此方案的任何組織，都可以利用此指導方針來設定增強的安全性，並瞭解如何安全地進行共同作業。
+雖然美國的聯邦版選舉活動符合 Microsoft 365 商務版 Premium 的特殊定價，但具有此方案的任何組織，都可以利用此指導方針來設定增強的安全性，並瞭解如何安全地進行共同作業。
 
 此程式庫包含下列專案：
 - 增加安全性的規範性安裝指導方針。
 - 協助使用者設定安全存取裝置。
 - 安全地共同作業和共用的指導方針。
 
-如需有關所包含專案的詳細資訊，請參閱[Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)。 
+如需有關所包含專案的詳細資訊，請參閱[Microsoft 365 商務版 Premium](https://www.microsoft.com/microsoft-365/business)。 
 
 
-<a name="get-started"></a>開始使用
+<a name="get-started"></a>入門
 --------------------------
 
 <ul class="panelContent cardsJ">

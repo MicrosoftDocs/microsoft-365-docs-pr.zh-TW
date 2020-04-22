@@ -1,5 +1,7 @@
 ---
-title: 何種訂閱最適合您的業務？
+title: 哪種訂閱適合您的商務？
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -15,14 +17,14 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 決定 Office 365 E3、 Office 365 商務進階版或 Microsoft 365 商務版是否適合貴公司。
-ms.openlocfilehash: f3adf67cf164b14596bc0cedf1cacd7dec41955e
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+description: 判斷 Office 365 E3、Microsoft 365 Business Standard 或 Microsoft 365 Business Premium 是否適合您的企業。
+ms.openlocfilehash: 480129ad8251770a4153b7ecc0777bdf03759012
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748314"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635657"
 ---
-# <a name="what-subscription-is-right-for-your-small-business"></a>何種訂閱最適合您的小型企業？
+# <a name="what-subscription-is-right-for-your-small-business"></a>哪種訂閱適合您的小型企業？
 
-Microsoft 提供了數個適用於小型企業的計劃。 建議的訂閱是 Office 365 商務進階版或 Microsoft 365 商務版最多 300 位使用者使用。 Microsoft 365 商務版提供 Office 365 商務進階版新增成本較多的安全性功能。
+Microsoft 提供一些小型企業方案。 建議的訂閱為 Microsoft 365 商務標準或 Microsoft 365 商務版 Premium，最多可達300使用者。 Microsoft 365 商務版服務提供的安全性功能超過 Microsoft 365 的商務標準，以增加成本。

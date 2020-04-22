@@ -1,5 +1,5 @@
 ---
-title: 管理能建立 Office 365 群組的使用者
+title: 管理誰可以建立群組
 f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
-description: 瞭解如何控制可建立 Office 365 群組的使用者。
-ms.openlocfilehash: d31690cb6438c6563b01e0597f7f2b1ff96e3b9a
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+description: 瞭解如何控制可建立 Microsoft 365 群組的使用者。
+ms.openlocfilehash: 5ecd48161a751a1558146236d48df13bb0662ad1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547583"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630402"
 ---
-# <a name="manage-who-can-create-office-365-groups"></a>管理能建立 Office 365 群組的使用者
+# <a name="manage-who-can-create-groups"></a>管理誰可以建立群組
 
   
-由於很容易讓使用者建立 Office 365 群組，所以您不會淹沒在要求中，您必須代表其他人員建立這些群組。 不過，您可能想要控制哪些人員可以建立群組，這取決於您的公司。
+因為建立 Microsoft 365 群組的使用者非常簡單，所以您不會淹沒于要求的情況下，無法代表其他人員建立這些群組。 不過，您可能想要控制哪些人員可以建立群組，這取決於您的公司。
   
-本文說明如何停用在所有使用群組的 Office 365 服務中建立群組的能力，包括：
+本文說明如何停用在所有使用群組的 Microsoft 365 服務中建立群組的能力，包括：
   
 - Outlook
     
@@ -53,9 +53,9 @@ ms.locfileid: "43547583"
 
 - 藍圖
     
-您可以將 Office 365 群組建立限制在特定安全性群組的成員。 若要設定此，您可以使用 Windows PowerShell。 本文將引導您完成必要的步驟。
+您可以將 Microsoft 365 群組建立限制在特定安全性群組的成員。 若要設定此，您可以使用 Windows PowerShell。 本文將引導您完成必要的步驟。
   
-本文中的步驟不會防止某些角色的成員建立群組。 Office 365 全域系統管理員可以透過任何方式建立群組，例如 Microsoft 365 系統管理中心、Planner、小組、Exchange 及 SharePoint 線上。 其他角色可以透過有限的方式建立群組，如下所列。
+本文中的步驟不會防止某些角色的成員建立群組。 全域管理員可以透過任何方式建立群組，例如 Microsoft 365 系統管理中心、Planner、小組、Exchange 及 SharePoint 線上。 其他角色可以透過有限的方式建立群組，如下所列。
         
   - Exchange 管理員： Exchange Admin center，Azure AD
     
@@ -71,7 +71,7 @@ ms.locfileid: "43547583"
   
   - 使用者管理系統管理員： Microsoft 365 Admin center、Yammer、Azure AD
      
-如果您是上述角色成員，即可為受限的使用者建立 Office 365 群組，然後將指派使用者為群組的擁有者。 具有此角色的使用者可以在 Yammer 中建立連線的群組，不論可能禁止建立的任何 PowerShell 設定。
+如果您是其中一個角色的成員，您可以為受限制的使用者建立 Microsoft 365 群組，然後將該使用者指派為群組的擁有者。 具有此角色的使用者可以在 Yammer 中建立連線的群組，不論可能禁止建立的任何 PowerShell 設定。
 
 ## <a name="licensing-requirements"></a>授權需求
 
@@ -85,16 +85,16 @@ ms.locfileid: "43547583"
 
 下列人員不需要有指派給它們的 Azure AD Premium 或 Azure AD 基本 EDU 授權：
 
-- 屬於 Office 365 群組成員的人員，以及沒有建立其他群組的能力。
+- 屬於 Microsoft 365 群組成員的人員，以及沒有建立其他群組的能力。
 
-## <a name="step-1-create-a-security-group-for-users-who-need-to-create-office-365-groups"></a>步驟 1：為需要建立 Office 365 群組的使用者建立安全性群組
+## <a name="step-1-create-a-security-group-for-users-who-need-to-create-microsoft-365-groups"></a>步驟1：為需要建立 Microsoft 365 群組的使用者建立安全性群組
 
 您組織中只有一個安全性群組可用於控制誰可以建立群組。 不過，您可以以巢狀方式內嵌其他安全性群組，做為此群組的成員。 例如，名為「Allow Group Creation」的群組即為指定的安全性群組，而名為「Microsoft Planner Users and Exchange Online Users」的群組則屬於該群組成員。
 
 以上所列角色中的系統管理員不需要是此群組的成員：他們保留其建立群組的能力。
 
 > [!IMPORTANT]
-> 請務必使用**安全性群組**來限制誰可以建立群組。 如果您嘗試使用 Office 365 群組，成員將無法從 SharePoint 建立群組，因為它會檢查安全性群組。 
+> 請務必使用**安全性群組**來限制誰可以建立群組。 如果您嘗試使用 Microsoft 365 群組，成員將無法從 SharePoint 建立群組，因為它會檢查安全性群組。 
     
 1. 在系統管理中心中，移至 [**群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>] 頁面。
 
@@ -174,7 +174,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
     
 ## <a name="step-4-verify-that-it-works"></a>步驟4：確認其運作正常
 
-1. 請使用不具備群組建立能力的使用者帳戶登入 Office 365。 也就是說，它們不是您所建立之安全性群組的成員，或是管理員的成員。
+1. 使用不具備建立群組功能之人員的使用者帳戶登入。 也就是說，它們不是您所建立之安全性群組的成員，或是管理員的成員。
     
 2. 選取 [ **Planner** ] 磚。 
     

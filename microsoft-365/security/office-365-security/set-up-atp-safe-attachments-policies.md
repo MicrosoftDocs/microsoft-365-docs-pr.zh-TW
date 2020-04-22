@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: 定義安全附件原則，避免您的組織受到電子郵件中惡意檔案的危害。
-ms.openlocfilehash: 8151cf1ec25ae46ae7a1845f34f42df3e5483bb2
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: d9139ff1b3adef2f70b6aede630791d355127573
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608099"
+ms.locfileid: "43638341"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
 
@@ -43,29 +43,28 @@ ms.locfileid: "43608099"
 
 - 請確認您組織有 [Office 365 進階威脅防護](office-365-atp.md)。
 
-- 請確定您具有必要權限。 若要定義（或編輯） ATP 原則，您必須被指派 Exchange Online 組織管理角色（預設為 Office 365 全域管理員指派此角色）或 Exchange Online 衛生管理與安全性管理員角色。 如需詳細資訊，請參閱下表：
+- 請確定您具有必要權限。 若要定義（或編輯） ATP 原則，您必須被指派 Exchange Online 組織管理角色（預設為全域管理員指派此角色）或 Exchange Online 衛生管理與安全性管理員角色。 如需詳細資訊，請參閱下表：
 
-  |||
-  |---|---|
-  |**Role**|**指派位置/條件**|
-  |Office 365 全域系統管理員 |註冊購買 Office 365 的人會預設為為全域系統管理員。 (請參閱[關於 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以深入了解。)|
+  |角色|指派位置/條件|
+  |---------|---------|
+  |全域管理員 |簽署購買 Microsoft 365 的人員預設為全域系統管理員。 （請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以深入瞭解。）|
   |安全性系統管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
   |Exchange Online 組織管理，Exchange Online 的清理管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
   |
 
-  若要深入了解角色和權限，請參閱 [Office 365 安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md) (英文)。
+  若要深入瞭解角色和許可權，請參閱[安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 - [了解 ATP 安全附件原則選項](#step-3-learn-about-atp-safe-attachments-policy-options) (在本文中)。 某些選項 (例如監視或取代選項) 可能會造成電子郵件延遲，因為要掃描附件。 若要避免郵件延遲，請考慮使用[動態傳遞和預覽](dynamic-delivery-and-previewing.md)。
 
-- 最多需要 30 分鐘的時間，最新或更新的原則才會散佈至所有 Office 365 資料中心。
+- 最多可允許30分鐘，以將新的或更新的原則散佈至所有 Microsoft 365 資料中心。
 
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>步驟 2：設定 (或編輯) ATP 安全附件原則
 
 1. 移至 [https://protection.office.com](https://protection.office.com) 然後以您的公司或學校帳戶當入。
 
-2. 在 Office 365 安全性與合規性中心的左側瀏覽窗格中，於 [威脅管理]**** 底下，選擇 [原則]**** \> [安全附件]****。
+2. 在&amp;安全性與合規性中心的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則** \> **安全附件**]。
 
-3. 如果您看到 [開啟適用於 SharePoint、OneDrive 和 Microsoft Teams 的 ATP]****，我們建議您選取此選項。 這會為您的 Office 365 環境啟用[適用於 SharePoint、OneDrive 和 Microsoft Teams 的 Office 365 進階威脅防護](atp-for-spo-odb-and-teams.md)。
+3. 如果您看到 [開啟適用於 SharePoint、OneDrive 和 Microsoft Teams 的 ATP]****，我們建議您選取此選項。 這將為您的 Microsoft 365 環境啟用[SharePoint、OneDrive 和 Microsoft 小組的 Office 365 高級威脅防護](atp-for-spo-odb-and-teams.md)。
 
 4. 選擇 [新增]**** \([新增] 按鈕類似加號 (**+**))，以開始建立您的原則。
 
@@ -77,13 +76,13 @@ ms.locfileid: "43608099"
 
    - 在 [回復] 區段中，選擇 [動態傳遞]**** 選項。 ([深入了解 ATP 安全附件的動態傳遞和預覽](dynamic-delivery-and-previewing.md)。)
 
-   - 在 [重新導向附件]**** 區段中，選取 [啟用重新導向] 選項，然後輸入您 Office 365 全域系統管理員、安全性系統管理員或分析者 (將調查惡意附件安全性) 的電子郵件地址。
+   - 在 [重新**導向附件**] 區段中，選取 [啟用重新導向] 選項，然後輸入您的全域系統管理員、安全性管理員或將調查惡意附件的安全性分析員的電子郵件地址。
 
    - 在 [套用至]**** 區段中，選擇 [收件者網域]****，然後選取您的網域。 選擇 [新增]****，然後選擇 [確認]****。
 
 6. 選擇 [儲存]****。
 
-考慮為您的組織設定多個 ATP 安全附件原則。 這些原則會按照其在 **ATP 安全附件**頁面中的順序套用。 在定義或編輯原則之後，至少要有30分鐘的時間讓原則生效于整個 Microsoft 資料中心。
+考慮為您的組織設定多個 ATP 安全附件原則。 這些原則會按照其在 **ATP 安全附件**頁面中的順序套用。 在定義或編輯原則之後，至少需 30 分鐘的時間，原則才能在整個 Microsoft 資料中心內生效。
 
 ## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>步驟 3：了解 ATP 安全附件原則選項
 

@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: '瞭解不同地區的商務用 Office 365 訂閱需要支付多少稅金。 '
+description: '瞭解在不同地區，您要對 Microsoft 365 for business 訂閱收取多少稅收。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: f437e2f58797f3cc092b50611f34ecb2ce9cf3b0
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: e65dc15237cb14959a68a7413227cec2a3163d60
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826310"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635001"
 ---
 # <a name="tax-information"></a>稅務資訊
 
-您透過 Microsoft 所進行的 Microsoft 365 系統管理中心購買的稅款，是由您的公司位址決定，如果是不同，則由您的運送位址決定。 如果您是在美國，您必須提供聯邦雇主身分識別號碼（FEIN）。
+您透過 Microsoft 購買的 Microsoft 365 系統管理中心的稅金取決於您的營業地址，或者如果不同，則取決於您的收貨地址。 如果您是在美國，您必須提供聯邦雇主身分識別號碼（FEIN）。
 
 這些國家/地區的企業可提供其 加值稅 編號：
 

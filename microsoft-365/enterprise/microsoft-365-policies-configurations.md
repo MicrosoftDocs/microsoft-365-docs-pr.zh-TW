@@ -16,16 +16,16 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 8d7adda0ded3a118676a67d0446a5744233468f3
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: f336c9ef2957374223a8f0d7b64f892c87e1169d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633261"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631546"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
-本系列文章說明如何透過企業行動性 + 安全性（EMS）產品執行建議的環境和設定，以設定雲端服務的安全存取，包括一組規定的條件式存取原則和相關的功能。 EMS 是 Microsoft 365 的核心元件。 您可以使用此指導方針來保護與 Azure Active Directory 整合的所有服務的存取，包括 Office 365 服務、其他 SaaS 服務，以及使用 Azure AD 應用程式 Proxy 發佈的內部部署應用程式。 
+本系列文章說明如何透過企業行動性 + 安全性（EMS）產品來設定雲端服務的安全存取，其方式是實施建議的環境和設定，包括一組規定的條件式存取原則和相關功能。 EMS 是 Microsoft 365 的核心元件。 您可以使用此指導方針來保護與 Azure Active Directory 整合的所有服務的存取，包括 Microsoft 365 服務、其他 SaaS 服務，以及使用 Azure AD 應用程式 Proxy 發佈的內部部署應用程式。 
 
 這些建議會與 Microsoft 安全分數和[AZURE AD 中的身分識別排名](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)保持一致，並且將為您的組織增加這些分數。 這些建議也會協助您執行下列[五個步驟，以保護您的身分識別基礎結構](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)。 
 
@@ -51,19 +51,19 @@ Microsoft 知道某些組織有獨特的環境需求或複雜性。 如果您是
 
 ## <a name="three-tiers-of-protection"></a>三種保護層級
 
-大部分組織都有安全性和資料保護的相關特定需求。 根據產業部門和組織內的職責，這些需求會不同。 例如，您的法務部門和 Office 365 系統管理員可能需要其電子郵件對應的額外安全性和資訊保護控制，但其他業務單位使用者則不需要。 
+大部分組織都有安全性和資料保護的相關特定需求。 根據產業部門和組織內的職責，這些需求會不同。 例如，您的法律部門和系統管理員可能需要其他的安全性和資訊保護，而不是其他商業單位使用者所需的電子郵件對應。 
 
-每個產業也都有自己的一組特殊法規。 建議針對三種不同的安全性和保護層級，而不是提供所有可能安全性選項的清單，也是針對每個行業區段或工作功能所提供的建議，並根據您的需求細微性來套用。.
+每個產業也都有自己的一組特殊法規。 建議針對三種不同的安全性和保護層級，而不是提供所有可能安全性選項的清單，也是針對每個行業區段或工作功能所提供的建議。
 
 - **基準保護**：我們建議您建立保護資料的最低標準，以及存取資料的身分識別和裝置。 您可以遵循下列基準建議，提供符合許多組織需求的強預設保護。
-- **敏感保護**：有些客戶的資料子集必須在較高的層級加以保護，否則可能需要以較高的層次保護所有的資料。 您可以將加強防護套用至 Office 365 環境中的所有或特定資料集。 建議保護以可比較的安全性層級存取敏感性資料的身分識別和裝置。  
+- **敏感保護**：有些客戶的資料子集必須在較高的層級加以保護，否則可能需要以較高的層次保護所有的資料。 您可以將增強的保護套用至 Microsoft 365 環境中的所有或特定資料集。 建議保護以可比較的安全性層級存取敏感性資料的身分識別和裝置。  
 - **高管制**：有些組織的資料量可能非常高，consititutes 貿易機密或管制資料。 Microsoft 所提供的功能可協助組織符合這些需求，包含針對身分識別和裝置新增的保護。
 
 ![安全性錐-所有客戶 > 某些客戶 > 特定客戶。 特定應用程式的廣泛應用程式](../media/M365-idquality-threetiers.png)
 
 本指南說明如何針對每一種保護層級的身分識別和裝置執行保護。 使用此指導方針做為組織的起點，並調整原則，以符合組織的特定需求。
 
-請務必針對您的資料、身分識別和裝置使用一致的保護層級。 例如，如果您要執行此指導方針，請務必保護您的資料，以同等的層次。 這些架構模型會顯示哪些功能是可比較的。
+請務必在您的資料、身分識別和裝置之間，使用一致層級的保護。 例如，如果您要執行此指導方針，請務必保護您的資料，以同等的層次。 這些架構模型會顯示哪些功能是可比較的。
 
 **Office 365 的身分識別與裝置保護**<br/>
 ![海報「Office 365 的身分識別與裝置保護」的縮圖](../media/O365_Identity_device_protection_thumb.png)<br/>
@@ -96,7 +96,7 @@ Azure AD 提供完整的身分識別管理功能套件。 為了保護存取，�
 
 - **[自助密碼重設（SSPR）](/azure/active-directory/authentication/concept-sspr-howitworks)**：可讓您的使用者安全地重設其密碼，而不需要技術支援人員介入，只要提供系統管理員可控制的多個驗證方法，即可加以驗證。
 
-- **[多重要素驗證（MFA）](/azure/active-directory/authentication/concept-mfa-howitworks)**： MFA 要求使用者提供兩種形式的驗證，例如使用者密碼加上 Microsoft 驗證應用程式或電話的通知。 MFA 大幅降低可用於存取 Office 365 環境的盜竊身分識別的風險。
+- **[多重要素驗證（MFA）](/azure/active-directory/authentication/concept-mfa-howitworks)**： MFA 要求使用者提供兩種形式的驗證，例如使用者密碼加上 Microsoft 驗證應用程式或電話的通知。 MFA 大幅降低可用於存取您環境的盜竊身分識別的風險。
 
 - **[條件式存取](/azure/active-directory/conditional-access/overview)**： Azure AD 評估使用者登入的條件，並使用您建立以允許存取的條件式存取原則。 例如，在此指導中，我們會告訴您如何建立條件式存取原則，以要求存取機密資料的裝置合規性。 這可以極大降低具有盜竊身分識別的駭客可以存取您機密資料的風險。 它也會保護裝置上的機密資料，因為裝置會符合健康和安全性的特定需求。
 
@@ -112,21 +112,21 @@ Azure AD 提供完整的身分識別管理功能套件。 為了保護存取，�
 
 #### <a name="intune-app-protection"></a>Intune 應用程式保護
 
-您可以使用[Intune 應用程式保護](https://docs.microsoft.com/intune/app-protection-policy)原則，在行動應用程式中保護您組織的資料，但不需要將裝置登記至管理。 Intune 可協助保護 Office 365 資訊，確保您的員工仍可生產力，並防止資料遺失。 透過實施應用層級原則，您可以限制公司資源的存取權，並將資料放在 IT 部門的控制中。
+您可以使用[Intune 應用程式保護](https://docs.microsoft.com/intune/app-protection-policy)原則，在行動應用程式中保護您組織的資料，但不需要將裝置登記至管理。 Intune 可協助保護資訊，確保您的員工仍可生產力，並防止資料遺失。 透過實施應用層級原則，您可以限制公司資源的存取權，並將資料放在 IT 部門的控制中。
 
 本指南說明如何建立建議原則，以強制使用已核准的應用程式，以及決定如何將這些應用程式與您的商務資料搭配使用。
 
-### <a name="office-365"></a>Office 365
+### <a name="microsoft-365"></a>Microsoft 365
 
-本指南說明如何實施一組原則，以保護 Office 365 的存取，包括 Exchange Online、SharePoint 線上和商務 OneDrive。 除了執行這些原則之外，也建議您使用下列資源提升 Office 365 租使用者的保護層級：
+本指南說明如何實施一組原則，以保護 Office 365 的存取，包括 Exchange Online、SharePoint 線上和商務 OneDrive。 除了執行這些原則之外，也建議您使用下列資源提升租使用者的保護層級：
 
-- [設定您的 office 365 租使用者以提高安全性](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355)：這些建議適用于您的 office 365 租使用者的基準安全性。
-- [Office 365 安全性藍圖：前30天、90天和之後的主要優先順序](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)：這些建議包括記錄、資料管理、系統管理存取和威脅防護。
+- [設定您的承租人以提升安全性](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355)：這些建議適用于您租使用者的基準安全性。
+- [Microsoft 365 安全性藍圖：前30天、90天和之後的主要優先順序](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)：這些建議包括記錄、資料管理、系統管理存取和威脅防護。
 
 
-### <a name="windows-10-and-office-365-proplus"></a>Windows 10 和 Office 365 專業增強版
+### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>適用于企業的 Windows 10 和 Microsoft 365 應用程式
 
-Windows 10 和 Office 365 ProPlus 是電腦的建議用戶端環境。 建議 Windows 10，因為 Azure 設計用來提供內部部署和 Azure AD 的最新可能體驗。 Windows 10 也包含可透過 Intune 管理的高級安全性功能。 Office 365 ProPlus 包含最新版本的 Office 應用程式。 這些使用的是新式驗證，也就是更安全，也是條件式存取的必要條件。 這些應用程式也包含增強的安全性和符合性工具。
+Windows 10 和 Microsoft 365 應用程式企業版是電腦的建議用戶端環境。 建議 Windows 10，因為 Azure 設計用來提供內部部署和 Azure AD 的最新可能體驗。 Windows 10 也包含可透過 Intune 管理的高級安全性功能。 Microsoft 365 應用程式企業版包含最新版的 Office 應用程式。 這些使用的是新式驗證，也就是更安全，也是條件式存取的必要條件。 這些應用程式也包含增強的安全性和符合性工具。
 
 ## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>跨三種保護層級應用這些功能
 

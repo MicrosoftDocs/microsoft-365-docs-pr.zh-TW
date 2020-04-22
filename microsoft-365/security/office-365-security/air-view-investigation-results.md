@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中查看自動調查的結果
+title: 在 Microsoft 365 中查看自動調查的結果
 keywords: AIR, autoIR, ATP, 自動化, 調查, 回應, 修正, 威脅, 進階, 威脅, 保護
 f1.keywords:
 - NOCSH
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: 在 Office 365 的自動調查期間和之後，您可以查看結果和重要結果。
-ms.openlocfilehash: e19669f48047f1800d2a904c6ef5565d8db94dd9
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: 在 Microsoft 365 中的自動調查期間和之後，您可以查看結果和重要結果。
+ms.openlocfilehash: e0ecea63260fae474973b39e7069029a2ec93dcb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225972"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634625"
 ---
-# <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Office 365 中自動調查的詳細資料和結果
+# <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中自動調查的詳細資料和結果
 
 當[Office 365 的「高級威脅防護](office-365-atp.md)」會進行[自動調查](office-365-air.md)時，系統會在自動化調查程式期間和之後使用該調查的詳細資料。 如果您擁有必要權限，您可以在調查詳細資料檢視中查看這些詳細資料。 調查詳細資料檢視可提供您最新的狀態，以及核准任何待核准動作的能力。 
 
@@ -46,7 +46,7 @@ ms.locfileid: "43225972"
 
 ## <a name="view-details-of-an-investigation"></a>檢視調查的詳細資料
 
-1. 移至 Office 365 的安全性 & 規範中心（[https://protection.office.com](https://protection.office.com)）並登入。
+1. 移至安全性 & 規範中心（[https://protection.office.com](https://protection.office.com)）並登入。
 
 2. 執行下列其中一項動作：
 
@@ -66,9 +66,9 @@ ms.locfileid: "43225972"
 
 ## <a name="view-details-about-an-alert-related-to-an-investigation"></a>檢視與調查相關警示的詳細資料
 
-某些類型的警示會在 Office 365 中觸發自動化調查。 若要深入了解，請參閱[警示](automated-investigation-response-office.md#alerts)。 使用下列程序來檢視與自動化調查相關聯警示的詳細資料。
+某些類型的警示會觸發 Microsoft 365 中的自動調查。 若要深入了解，請參閱[警示](automated-investigation-response-office.md#alerts)。 使用下列程序來檢視與自動化調查相關聯警示的詳細資料。
 
-1. 移至 Office 365 的安全性 & 規範中心（[https://protection.office.com](https://protection.office.com)）並登入。 
+1. 移至安全性 & 規範中心（[https://protection.office.com](https://protection.office.com)）並登入。 
 
 2. 移至 [威脅管理]****  >  [調查]****。
 
@@ -215,7 +215,7 @@ ms.locfileid: "43225972"
 
 |分析儀 | 描述 |
 |-----|-----|
-|DLP 違規調查 |調查[Office 365 資料遺失防護](../../compliance/data-loss-prevention-policies.md)（DLP）偵測到的任何衝突 |
+|DLP 違規調查 |調查[資料遺失防護](../../compliance/data-loss-prevention-policies.md)（DLP）偵測到的任何衝突 |
 |電子郵件指示器解壓縮 |從電子郵件的標頭、本文和內容提取指示器，以進行調查 |
 |檔案雜湊信譽 |根據組織中使用者和機器的檔案雜湊，偵測不好的異常 |
 |郵件叢集識別 |以標頭、內文、內容及 URLs 為基礎的電子郵件聚簇分析 |

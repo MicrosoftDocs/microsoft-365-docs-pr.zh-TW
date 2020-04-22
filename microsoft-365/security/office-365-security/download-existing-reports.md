@@ -1,5 +1,5 @@
 ---
-title: 下載現有的報表安全性&amp;合規性中心
+title: 在安全性&amp;與合規性中心下載現有報告
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -14,37 +14,37 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
-description: 了解如何下載一或多個現有的報表，安全性&amp;合規性中心。
-ms.openlocfilehash: ea5af9aad268b4a7d540e70cc8a1f64f303159cb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 瞭解如何在安全性&amp;與合規性中心下載一或多個現有報告。
+ms.openlocfilehash: 62f87c3a11e35bd6dae25c786ac2360e9937c84d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599430"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637577"
 ---
-# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>下載現有的報表安全性&amp;合規性中心
+# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>在安全性&amp;與合規性中心下載現有報告
 
-在[安全性&amp;合規性中心](https://protection.office.com)，有幾項[報表和深入解析](reports-and-insights-in-security-and-compliance.md)可用以協助貴組織的安全性小組減輕並解決貴組織的威脅。 如果您是貴組織的安全性小組的成員，您可以下載一或多個現有的報表。 
+在[安全性&amp;與合規性中心](https://protection.office.com)中，有數個[報告和洞察力](reports-and-insights-in-security-and-compliance.md)可協助您的組織的安全性小組緩解並解決組織面臨的威脅。 如果您是組織的安全性小組成員，則可以下載一或多個現有報告。 
   
 ## <a name="download-existing-reports"></a>下載現有的報告
 
 > [!IMPORTANT]
-> 請確定您有必要[權限指派在 Office 365 安全性&amp;合規性中心](permissions-in-the-security-and-compliance-center.md)。 一般而言，Office 365 全域系統管理員、 安全性管理員和安全性讀取者可以存取報告安全性&amp;合規性中心。 
+> 確定您具備[安全性&amp;與合規性中心所指派](permissions-in-the-security-and-compliance-center.md)的必要許可權。 一般說來，全域管理員、安全性管理員及安全性讀者可以存取安全&amp;規範中心內的報告。 
   
-1. 在[安全性&amp;合規性中心](https://protection.office.com)，請移至**報表** \> **下載報告**。
+1. 在[安全性&amp;與合規性中心](https://protection.office.com)，移至 [**報告** \> **報告] 以下載**。
     
-2. 在清單中選取一或多個項目。
+2. 選取清單中的一或多個專案。
     
 3. 按一下 [**下載報告**]，然後按一下 [**關閉**]。
     
 ## <a name="related-topics"></a>相關主題
 
-[報告和 Office 365 安全性的深入解析&amp;合規性中心](reports-and-insights-in-security-and-compliance.md)
+[安全性&amp;與合規性中心內的報告與深入瞭解](reports-and-insights-in-security-and-compliance.md)
   
-[建立報表排程安全性&amp;合規性中心](create-a-schedule-for-a-report.md)
+[在安全性&amp;與合規性中心建立報表的排程](create-a-schedule-for-a-report.md)
   
-[管理安全性的報表排程&amp;合規性中心](manage-schedules-for-multiple-reports.md)
+[在安全性&amp;與合規性中心管理報告的計畫](manage-schedules-for-multiple-reports.md)
   
-[下載自訂報告中的安全性&amp;合規性中心](set-up-and-download-a-custom-report.md)
+[在安全性&amp;與合規性中心下載自訂報告](set-up-and-download-a-custom-report.md)
   
 

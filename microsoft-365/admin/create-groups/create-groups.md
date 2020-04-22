@@ -1,5 +1,5 @@
 ---
-title: 在系統管理中心建立 Office 365 群組
+title: 在系統管理中心建立群組
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
@@ -18,22 +18,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: 瞭解如何建立及刪除 Office 365 群組、新增及移除群組成員，以及自訂群組的運作方式。
-ms.openlocfilehash: 088ef54531bc42cf563659c460cbf7d2e64c4cfe
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 瞭解如何建立及刪除 Microsoft 365 群組、新增及移除群組成員，以及自訂群組的運作方式。
+ms.openlocfilehash: d37058fa3ef3803f3a8f6099d46e1262f314e501
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212090"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630452"
 ---
-# <a name="create-an-office-365-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 admin center 中建立 Office 365 群組
+# <a name="create-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心建立群組
   
-當使用者可以從 Outlook 或其他應用程式（以系統管理員的身分）建立 Office 365 群組時，您可能需要建立或刪除群組、新增或移除成員，並自訂其運作方式。 如果您是全域系統管理員或群組管理員，您可以在 Microsoft 365 系統管理中心中執行此動作。 
+當使用者可以從 Outlook 或其他應用程式（以系統管理員的身分）建立 Microsoft 365 群組時，您可能需要建立或刪除群組、新增或移除成員，並自訂其運作方式。 Microsoft 365 系統管理中心是執行這項作業的地方。 
 
 > [!TIP]
-> 您必須在 Yammer 中建立 Office 365 連線的 Yammer 群組，但可以在 Microsoft 365 系統管理中心（如其他 Office 365 群組）進行管理。 若要深入瞭解，請參閱[Yammer 和 Office 365 群組](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx)。 
+> 您必須在 Yammer 中建立 microsoft 365 連線的 Yammer 群組，但可以在 Microsoft 365 系統管理中心（如其他 Microsoft 365 群組）管理。 若要深入瞭解，請參閱[Yammer 和 Microsoft 365 群組](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx)。 
 
-## <a name="create-an-office-365-group"></a>建立 Office 365 群組
+## <a name="create-a-microsoft-365-group"></a>建立 Microsoft 365 群組
 
 1. 在系統管理中心中，展開 [**群組**]，然後按一下 [**群組**]。
 
@@ -115,13 +115,12 @@ ms.locfileid: "43212090"
 
 ## <a name="next-step-manage-your-group"></a>後續步驟：管理您的群組
 
-在建立新群組並新增成員之後，您可以進一步設定群組，例如編輯群組名稱或描述、變更擁有者或成員，以及指定外部寄件者是否可以電子郵件群組，以及是否要將群組交談的複本傳送給成員。 如需詳細資訊，請參閱[管理 Office 365 群組](manage-groups.md)。
+在建立新群組並新增成員之後，您可以進一步設定群組，例如編輯群組名稱或描述、變更擁有者或成員，以及指定外部寄件者是否可以電子郵件群組，以及是否要將群組交談的複本傳送給成員。 如需詳細資訊，請參閱[管理 Microsoft 365 群組](manage-groups.md)。
 
 ## <a name="related-articles"></a>相關文章
 
-[管理 Office 365 群組的來賓存取權](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[管理 Microsoft 365 群組的來賓存取權](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
 
-[選擇建立 Office 365 群組時要使用的網域](choose-domain-to-create-groups.md)
+[選擇建立 Microsoft 365 群組時要使用的網域](choose-domain-to-create-groups.md)
 
-[將通訊群組清單升級至 Office 365 群組](../manage/upgrade-distribution-lists.md)
-        
+[將通訊群組清單升級至 Microsoft 365 群組](../manage/upgrade-distribution-lists.md)

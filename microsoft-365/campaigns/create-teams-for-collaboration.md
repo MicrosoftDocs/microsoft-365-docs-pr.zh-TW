@@ -1,5 +1,5 @@
 ---
-title: 建立小組共同作業
+title: 建立共同作業的團隊
 f1.keywords:
 - NOCSH
 ms.author: stevhord
@@ -22,68 +22,68 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 建立您的小組共同作業空間與 Microsoft Teams。
-ms.openlocfilehash: d057dbf0afca31b91e8792b3e0ca13d45b5e3455
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 使用 Microsoft 團隊建立小組的共同作業空間。
+ms.openlocfilehash: a89d7a87a18431dfef72c6f7ca4d6c7fbce21f7c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42056346"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635645"
 ---
-# <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Microsoft Teams 中建立小組共同作業
+# <a name="create-teams-for-collaboration-in-microsoft-teams"></a>在 Microsoft 小組中建立共同作業的團隊
 
-Microsoft Teams 是共同作業應用程式，可協助您保持分類，並進行交談，從任何裝置的人員。 您可以使用 Microsoft Teams 進行立即交談的人員或來賓成員與組織外部。 您也可以撥打電話，主機會議及共用檔案。
+Microsoft 團隊是一種共同作業應用程式，可協助您的員工從任何裝置進行組織和交談。 您可以使用 Microsoft 小組與您組織外部員工或客人的成員進行立即交談。 您也可以撥打電話、主控會議及共用檔案。
 
 ## <a name="best-practices"></a>最佳做法
 
-做為範例，行銷活動可以建立下列小組溝通及安全地共同作業：
+舉例來說，市場活動可以建立下列小組，以安全地進行通訊及共同作業：
 
-1. **活動時會導致小組：** 此設定為私用小組以便只有您主要的行銷活動成員可以存取它，並討論潛在機密的考量。
-2. **的一般活動小組：** 這是要用於日常通訊及工作的每位人員。 個人、 群組或委員會可以設定通道內此小組執行其工作。 例如，事件規劃人員可以設定聊天室及協調活動事件後勤的通道。
-3. **合作夥伴小組：** 這是一個小組，您就可以調整與您的廠商、 合作夥伴或名冊但不允許他們到任何項目敏感。
+1. **市場活動主管小組：** 以私有小組的身分進行此設定，這樣只有您的主要行銷活動成員可以存取它，並討論可能的敏感問題。
+2. **一般活動小組：** 這適用于每個人使用的日常通訊和工作。 個人、群組或委員會可以在此小組中設定頻道，以執行其工作。 例如，計畫人員可以設定活動的通道，以聊天及協調活動事件的物流。
+3. **合作夥伴小組：** 這是一個小組，您可以在其中與您的廠商、合作夥伴或志願者進行協調，而不會讓他們變成任何機密。
 
-您也可以建立特定的專案小組，並套用保護根據誰應該包含的資料量。 
+您也可以建立特定專案的團隊，並根據應包含的人員套用適當的保護量。 
 
-![具有三個不同的小組，以允許安全的通訊和共同作業 Microsoft Teams 視窗的圖表](../media/m365-democracy-teams-collab.png)
+![Microsoft 小組視窗的圖表，具有三個不同的小組，可讓您進行安全的通訊和協同作業](../media/m365-democracy-teams-collab.png)
 
-當您建立一個小組時，以下是什麼取得建立：
+當您建立小組時，以下是另一個建立的內容：
 
-- 新的[Office 365 群組](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
-- [SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact)網站和文件庫，以儲存小組檔案
-- [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact)的共用信箱和行事曆
+- 新的[Microsoft 365 群組](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
+- 用於儲存小組檔案的[SharePoint 線上](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact)網站和文件庫
+- [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact)共用信箱和行事曆
 - OneNote 筆記本
-- 繫結到其他 Office 365 應用程式，例如 Planner 和 Power BI
+- 與其他 Office 365 應用程式（如 Planner 和 Power BI）進行結合
 
-Microsoft Teams 內，您可以找到：
-1. **Teams:** 尋找屬於或建立自己的通道。 通道內可以保留上點會議，進行交談，並共用檔案。
+您可以在 Microsoft 團隊內部找到下列專案：
+1. **小組：** 尋找屬於或建立您自己的頻道。 內部頻道您可以保留熱點會議、進行交談及共用檔。
 
-2. **會議：** 請參閱您已取得最新產品接通的整天或整週的所有項目。 或者，排程會議。 Outlook 行事曆與此行事曆同步處理。
+2. **會議：** 查看您在一天或一周中已完成的所有專案。 或者，排程會議。 此行事曆會與您的 Outlook 行事曆同步。
  
-3. **通話：** 在某些情況下，如果您的組織有設定，您可以呼叫任何人從 Microsoft Teams，即使它們不使用 Microsoft Teams。
+3. **呼叫：** 在某些情況下，如果您的組織已設定好，您可以從 Microsoft 小組通話任何人員，即使他們不是使用 Microsoft 團隊也是一樣。
 
-4. **活動：** 跟上所有未閱讀的郵件、 @mentions、 回覆，等等。 
+4. **活動：** 追趕所有未讀取的郵件、@mentions、回復等等。 
 
-使用 [命令] 方塊上方，以搜尋特定項目或人員、 採取快速的動作，並啟動應用程式。
+使用頂端的命令框來搜尋特定的專案或人員、採取快速動作，然後啟動應用程式。
 
 
 ## <a name="set-it-up"></a>進行設定
 
 
-私用為建立小組行銷活動管理員及候選項目如下。 
+只為「活動管理員」和「候選人」這樣的候選人建立私人團隊。 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeqWA]
 
-建立的全組織的小組活動中的每個人都可以用來進行通訊及共用檔案。
+建立整個組織小組，讓市場活動中的每個人都可以使用該小組來通訊和共用檔案。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9]
 
-建立共用與外部活動，例如廣告的財務來賓小組。
+建立與活動外之來賓共用的團隊，例如融資的廣告。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-深入了解在[Microsoft Teams 技術文件](https://docs.microsoft.com/microsoftteams/microsoft-teams)的 Microsoft Teams
+深入瞭解 microsoft 小組的[microsoft 團隊技術檔](https://docs.microsoft.com/microsoftteams/microsoft-teams)
 
-## <a name="admin-settings"></a>系統管理員設定
+## <a name="admin-settings"></a>系統管理設定
 
-您必須是系統管理員建立的全組織的小組。 如需詳細資訊，請參閱[什麼是 Office 365 系統管理員？](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)。
+您必須是系統管理員，才可建立整個組織的團隊。 如需詳細資訊，請參閱[什麼是 Office 365 的系統管理員？](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)。
   

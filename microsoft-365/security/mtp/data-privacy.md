@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 04e60128512d5e9b65a06e158efa95228a53619a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 27f27a16de9d4aa2a2f163a18c1b837d6c575eb0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894261"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633480"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Microsoft 威脅防護資料安全性與隱私權
 
@@ -40,4 +40,4 @@ ms.locfileid: "42894261"
 如需有關特定產品的資料儲存與隱私權資訊的詳細資訊，請參閱：
 - [Microsoft Defender ATP 資料儲存與隱私權](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - [Microsoft Cloud App Security 資料安全性與隱私權](https://docs.microsoft.com/cloud-app-security/cas-compliance-trust)
-- [Office 365 隱私權、安全性和透明化](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)
+- [Microsoft 365 隱私權、安全性和透明性](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)

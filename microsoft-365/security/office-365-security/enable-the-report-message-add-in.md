@@ -16,17 +16,17 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何為個別使用者或整個組織啟用 Outlook 和 Outlook 網頁版的 [報告訊息] 增益集。
-ms.openlocfilehash: c160e928c9a46dd4dc360c5e61d70ca401430378
-ms.sourcegitcommit: a86787b62cec95a392ff2b933f5dc44334ceb7e9
+ms.openlocfilehash: 101a37f48e31f762171b2269055d0e69c889d0dc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061725"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633296"
 ---
-# <a name="enable-the-report-message-add-in-in-office-365"></a>啟用 Office 365 中的報告訊息增益集
+# <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 
 > [!NOTE]
-> 如果您是 Office 365 組織中 Exchange Online 信箱的系統管理員，建議您在 Office 365 安全性 & 規範中心使用提交入口網站。 如需詳細資訊，請參閱[使用系統管理員提交將可疑的垃圾郵件、網路釣魚、URLs 和檔案提交給 Microsoft](admin-submission.md)。
+> 如果您是 Exchange Online 信箱組織中的系統管理員，建議您在安全性 & 規範中心內使用提交入口網站。 如需詳細資訊，請參閱[使用系統管理員提交將可疑的垃圾郵件、網路釣魚、URLs 和檔案提交給 Microsoft](admin-submission.md)。
 
 Outlook 和網頁型 Outlook （先前稱為 Outlook Web App）的報告訊息增益集可讓使用者輕鬆地將誤報（良好的電子郵件標記為壞的電子郵件）或 "漏報（不正確的電子郵件）] 報告給 Microsoft 及其子公司進行分析。 Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。
 
@@ -38,16 +38,16 @@ Outlook 和網頁型 Outlook （先前稱為 Outlook Web App）的報告訊息�
 
 如果您是個人使用者，您可以[自行啟用 [報告訊息] 增益集](#get-the-report-message-add-in-for-yourself)。
 
-如果您是 Office 365 全域系統管理員或 Exchange Online 系統管理員，且 Exchange 已設定為使用 OAuth 驗證，您可以[為貴組織啟用 [報告訊息] 增益集](#get-and-enable-the-report-message-add-in-for-your-organization)。 [報告訊息] 增益集現可透過[集中式部署](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)提供。
+如果您是全域系統管理員或 Exchange Online 系統管理員，且 Exchange 設定成使用 OAuth 驗證，您可以[為組織啟用報告訊息增益集](#get-and-enable-the-report-message-add-in-for-your-organization)。 [報告訊息] 增益集現可透過[集中式部署](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)提供。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 報告訊息增益集可搭配大多數 Office 365 訂閱及下列產品運作：
+- 報告訊息增益集可與大多數 Microsoft 365 訂閱及下列產品搭配使用：
 
   - Outlook 網頁版
   - Outlook 2013 SP1 或更新版本
   - Mac 版 Outlook 2016
-  - Office 365 專業增強版隨附的 Outlook
+  - Outlook 隨附于適用于企業的 Microsoft 365 應用程式
 
 - 報告郵件增益集目前不適用於下列專案：
 
@@ -58,7 +58,7 @@ Outlook 和網頁型 Outlook （先前稱為 Outlook Web App）的報告訊息�
 
 - 若為組織安裝，必須設定組織使用 OAuth 驗證。 如需詳細資訊，請參閱[判斷是否集中式部署的增益集可為您的組織運作](../../admin/manage/centralized-deployment-of-add-ins.md)。
 
-- 管理員必須是全域系統管理員角色群組的成員。 如需詳細資訊，請參閱[Office 365 Security & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+- 管理員必須是全域系統管理員角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>自行取得報告訊息增益集
 
@@ -70,7 +70,7 @@ Outlook 和網頁型 Outlook （先前稱為 Outlook Web App）的報告訊息�
 
 3. 在出現的對話方塊中，複查使用條款和隱私權原則，然後按一下 [**繼續**]。
 
-4. 使用您的公司或學校帳戶 (商務用途) 或您的 Microsoft 帳戶 (個人用途) 登入 Office 365。
+4. 使用您的工作或學校帳戶（供商務用）或您的 Microsoft 帳戶（專為個人用途）登入。
 
 安裝並啟用增益集之後，您會看到下列圖示：
 
@@ -153,6 +153,6 @@ Outlook 和網頁型 Outlook （先前稱為 Outlook Web App）的報告訊息�
 
 2. 尋找並選取**報告訊息**增益集。
 
-3. 在顯示的 [**編輯報告訊息**] 浮出視窗中，視組織的需要複查及編輯設定。 完成後，請按一下 **[儲存]**。
+3. 在顯示的 [**編輯報告訊息**] 浮出視窗中，視組織的需要複查及編輯設定。 完成後，按一下 [儲存]****。
 
    ![報告訊息增益集的設定](../../media/EditReportMessageAddIn.png)

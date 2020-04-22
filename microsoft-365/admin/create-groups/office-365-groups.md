@@ -1,5 +1,5 @@
 ---
-title: 管理員的 Office 365 群組概述
+title: 管理員的 Microsoft 365 群組的概述
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,17 +17,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 深入瞭解 Office 365 群組。
-ms.openlocfilehash: c45c78a26d421c5c16e6ca0769e8adc7ba6e79a8
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+description: 深入瞭解 Microsoft 365 群組。
+ms.openlocfilehash: 9d47383d3226d5a18b9a30a579f6497c7ce63477
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547541"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630040"
 ---
-# <a name="overview-of-office-365-groups-for-administrators"></a>管理員的 Office 365 群組概述
+# <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理員的 Microsoft 365 群組的概述
 
-Office 365 群組是一種基礎成員資格服務，可促進整個 Microsoft 365 的所有團隊合作。 您可以使用 Office 365 群組，讓一群人員能夠存取共同作業資源的集合，供他們共用。 這些資源包括：
+Microsoft 365 群組是一種基礎成員資格服務，可促進整個 Microsoft 365 的所有團隊合作。 使用 Microsoft 365 群組，您可以讓一組人員能夠存取共同作業資源的集合，供他們共用。 這些資源包括：
 
 - 共用的 Outlook 收件匣
 - 共用行事曆
@@ -39,9 +39,9 @@ Office 365 群組是一種基礎成員資格服務，可促進整個 Microsoft 3
 - 小組（如果群組是從小組建立）
 - 藍圖（如果您有 web 的專案）
 
-使用 Office 365 群組時，您不需要手動指派每個資源的許可權，因為新增人員至群組會自動為他們提供群組所提供之工具所需的許可權。
+使用 Microsoft 365 群組時，您不需要手動指派每個資源的許可權，因為新增人員至群組會自動為他們提供群組所提供之工具所需的許可權。
 
-除非您將[群組建立限制于一組特定的人員](manage-creation-of-groups.md)，否則任何 Office 365 使用者都可以建立群組。 請注意，如果您限制群組的建立，無法建立群組的使用者將無法建立 SharePoint 網站、規劃人員或小組。 這些服務要求建立群組的人員可以建立群組。 使用者仍可參與群組活動，例如在 Planner 中建立工作或使用小組聊天，但前提是群組的成員。
+除非您將[群組建立限制于一組特定的人員](manage-creation-of-groups.md)，否則任何使用者都可以建立群組。 請注意，如果您限制群組的建立，無法建立群組的使用者將無法建立 SharePoint 網站、規劃人員或小組。 這些服務要求建立群組的人員可以建立群組。 使用者仍可參與群組活動，例如在 Planner 中建立工作或使用小組聊天，但前提是群組的成員。
 
 群組具有下列角色：
 
@@ -59,15 +59,15 @@ Office 365 群組是一種基礎成員資格服務，可促進整個 Microsoft 3
 - [管理群組的來賓存取權](manage-guest-access-in-groups.md)
 - [復原已刪除的群組](restore-deleted-group.md)（在刪除30天內）
 
-如果您傾向于管理 Office 365 群組的生命週期，使用一種更為自動化的方式，您可以使用到期原則，在特定的時間間隔內到期群組。 群組的擁有者會在群組到期前取得一封電子郵件30、15及1天，以允許使用者在仍需要時輕易更新群組。 請參閱： [Office 365 群組到期原則](office-365-groups-expiration-policy.md)。
+如果您想要更自動化的方法來管理 Microsoft 365 群組的生命週期，您可以使用到期原則，在特定的時間間隔內到期群組。 群組的擁有者會在群組到期前取得一封電子郵件30、15及1天，以允許使用者在仍需要時輕易更新群組。 請參閱： [Microsoft 365 群組到期原則](office-365-groups-expiration-policy.md)。
 
 您可以從 Microsoft 365 系統管理中心或[使用 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)管理您的群組。
 
-如果您有許多使用者，例如在大型公司或企業中，您可能會有許多使用者出於各種目的而建立群組。 強烈建議您複查[Office 365 群組中](plan-for-groups-governance.md)的控管計畫，以取得最佳作法。
+如果您有許多使用者，例如在大型公司或企業中，您可能會有許多使用者出於各種目的而建立群組。 強烈建議您複查[Microsoft 365 群組中](plan-for-groups-governance.md)的控管計畫，以取得最佳作法。
 
 ## <a name="group-limits"></a>群組限制
 
-下列限制適用于 Office 365 群組：
+下列限制適用于 Microsoft 365 群組：
 
 |最大。。。|值|
 |:---------|:----|
@@ -79,20 +79,20 @@ Office 365 群組是一種基礎成員資格服務，可促進整個 Microsoft 3
 |檔存放區|每個訂閱的使用者需要 1 tb + 10 GB + 購買的任何額外儲存空間。 您可以購買無限量的額外儲存空間。|
 |群組信箱大小|50 GB|
 
-Office 365 組織可以擁有的預設 Office 365 群組數目上限為500000，但可按要求增加。 如需 Office 365 群組限制的詳細資訊，請參閱[office 365 群組-系統管理](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)說明。
+組織可以擁有的預設 Microsoft 365 群組數目為500000，但可按要求增加。 如需 Microsoft 365 群組限制的詳細資訊，請參閱[Microsoft 365 群組-系統管理](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)說明。
 
-當您具有群組使用量的可操作資訊時，管理 Office 365 群組會更有效。 Microsoft 365 系統管理中心有一個報告工具，可讓您查看儲存空間使用方式、您擁有的使用中群組數目，甚至是使用者使用群組的方式。 如需詳細資訊，請參閱： [admin center 中的 Office 365 報告](../activity-reports/office-365-groups.md)。
+當您具有群組使用量的可操作資訊時，管理 Microsoft 365 群組會更有效。 Microsoft 365 系統管理中心有一個報告工具，可讓您查看儲存空間使用方式、您擁有的使用中群組數目，甚至是使用者使用群組的方式。 如需詳細資訊，請參閱： [admin center 中的 Microsoft 365 報告](../activity-reports/office-365-groups.md)。
 
-## <a name="which-office-365-plans-include-groups"></a>哪些 Office 365 方案包含群組？
+## <a name="which-microsoft-365-plans-include-groups"></a>哪些 Microsoft 365 方案包含群組？
 
-任何有 Exchange Online 和 SharePoint 線上的 Office 365 訂閱都會支援群組。 包括商務基本版和商務用的方案，以及 Enterprise E1、E3 和 E5 計畫。 群組會接受建立群組的人員授權（也稱為群組的「召集人」）。 只要召集人具有您想要群組擁有的任何功能的適當授權，該授權就會傳遞給群組。
+任何有 Exchange Online 和 SharePoint 線上的 Microsoft 365 訂閱都會支援群組。 包括商務基本版和商務用的方案，以及 Enterprise E1、E3 和 E5 計畫。 群組會接受建立群組的人員授權（也稱為群組的「召集人」）。 只要召集人具有您想要群組擁有的任何功能的適當授權，該授權就會傳遞給群組。
 
 > [!NOTE]
-> 如需有關 Office 365 服務系列與方案的詳細資訊，請參閱[office 365 方案選項](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> 如需 Microsoft 365 服務系列與方案的詳細資訊，請參閱[microsoft 365 方案選項](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
 
 如果您有僅限 Exchange 的計畫，您仍然可以在 Outlook 中取得群組的共用收件匣和共用行事曆功能，但不會取得文件庫、Planner 或任何其他功能。
 
-Office 365 群組可搭配 Azure Active Directory （AAD）使用。 您取得的群組功能取決於您所擁有的 Azure Active Directory 訂閱，以及指派給群組召集人的授權。
+Microsoft 365 群組使用 Azure Active Directory （AAD）。 您取得的群組功能取決於您所擁有的 Azure Active Directory 訂閱，以及指派給群組召集人的授權。
 
 > [!IMPORTANT]
 > 針對所有群組功能，如果您有 Azure AD Premium 訂閱，使用者可以加入群組，不論他們是否已指派 AAD P1 授權。 不會強制執行授權。
@@ -100,10 +100,10 @@ Office 365 群組可搭配 Azure Active Directory （AAD）使用。 您取得�
 
 ## <a name="related-articles"></a>相關文章
 
-[了解 Office 365 群組](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[深入瞭解 Microsoft 365 群組](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[將通訊群組清單升級至 Office 365 群組](../manage/upgrade-distribution-lists.md)
+[將通訊群組清單升級至 Microsoft 365 群組](../manage/upgrade-distribution-lists.md)
 
-[使用 PowerShell 管理 Office 365 群組](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[使用 PowerShell 管理 Microsoft 365 群組](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
 
 [SharePoint Online 限制](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)

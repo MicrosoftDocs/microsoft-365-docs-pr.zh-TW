@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商務版, Microsoft 365, SMB, 轉換雲端解決方案提供者訂閱
 ms.date: 11/01/2017
-ms.openlocfilehash: 0a30d80ad5217868fec81866ab1dc41013917e99
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: da56ce5bc70dfed5a3e86c739ef3c940b4ac1511
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504100"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635057"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>轉換 Microsoft 365 商務版雲端解決方案提供者訂閱
 
@@ -91,7 +91,7 @@ ms.locfileid: "43504100"
 | **登入失敗時重設 PIN 碼** | 對應用程式的存取受限制 | 無應用程式層級的存取限制 |
 | **Office 應用程式閒置後需要使用者重新登入** | 需要登入 | 不需要登入 |
 | **已進行 JB/Root 破解的的裝置上拒絕存取工作檔案** | 在已越獄/具有根功能的裝置上無法存取工作檔 | 可以存取已進行 JB/Root 破解的的裝置上的工作檔案 |
-| **允許使用者從 Office 應用程式複製內容到個人應用程式** | 屬於 Microsoft 365 商務版訂閱的應用程式限制複製/貼上 | 可對所有應用程式使用複製/貼上 |
+| **允許使用者從 Office 應用程式複製內容到個人應用程式** | 複製/貼上限制為 Microsoft 365 訂閱中提供的應用程式 | 可對所有應用程式使用複製/貼上 |
 
 ## <a name="windows-10-pc-impacts-upon-subscription-expiration"></a>訂閱到期對 Windows 10 電腦的影響
 

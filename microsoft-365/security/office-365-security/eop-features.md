@@ -12,19 +12,19 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供可在 Exchange Online Protection (EOP) 託管式電子郵件篩選服務中使用的功能清單。
-ms.openlocfilehash: 1bab584c62114c74c0eb4d9937acef4f17b89073
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: f69b1772a6eddb6cb85441e52c470cf0bb506a3a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081445"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638425"
 ---
 # <a name="eop-features"></a>EOP 功能
 
 下表提供可在 Exchange Online Protection (EOP) 託管式電子郵件篩選服務中使用的功能清單。
 
 > [!TIP]
-> [適用於商務藍圖的 Office 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) 是很好的資源，可找出即將推出之新功能的相關資訊。如需深入了解不同的 EOP 訂閱方案可提供什麼功能，請參閱 [Exchange Online Protection 服務描述](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
+> [Microsoft 365 for business 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)是找出即將推出之新功能之相關資訊的有用資源。如需更多有關不同 EOP 訂閱計畫可用之功能的詳細資訊，請參閱[Exchange Online Protection 服務說明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
 
 |||
 |---|---|
@@ -43,7 +43,7 @@ ms.locfileid: "43081445"
 |設定進行嚴苛垃圾郵件篩選之進階選項的功能|如需詳細資訊，請參閱在 office [365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)（您可以在這裡設定）和[高級垃圾郵件篩選（ASF）365設定](advanced-spam-filtering-asf-options.md)（提供每個選項的特定詳細資料）。|
 |國際垃圾郵件篩選|您可以將 EOP 設定為篩選以特定語言撰寫的郵件，或是從特定國家或地區傳送的電子郵件。 您可以設定高達 86 種不同語言和 250 個不同地區。 此服務會對高信賴度垃圾郵件套用設定的動作。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。|
 |透過 Outlook 或 Outlook 網頁版 (先前為 Outlook Web 應用程式) 管理垃圾郵件|系統管理員和使用者可以建立安全的寄件者清單以及封鎖的寄件者清單。 如需詳細資訊: <br/>* **網頁上的 Outlook**：請參閱[封鎖或允許（垃圾郵件設定）](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46)。  <br/>* **Outlook**：查看[垃圾郵件篩選器的概述](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。 <br/><br/> 如果您正在使用 EOP 來協助保護內部部署信箱，請務必使用目錄同步作業協助確保這些設定會同步到服務。 若需設定目錄同步作業的詳細資訊，請參閱 [管理 EOP 中的郵件使用者](manage-mail-users-in-eop.md) 中的「使用目錄同步作業來管理郵件使用者」。|
-|將誤報（良好的電子郵件標示為壞）和 false 負片（允許的電子郵件不正確）報告給 Microsoft。|如需詳細資訊，請參閱[將郵件和檔案報告給 Microsoft](report-junk-email-messages-to-microsoft.md)。|
+|將誤報（良好的電子郵件標示為壞）和 false 負片（允許的電子郵件不正確）報告給 Microsoft。|如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。|
 |使用者垃圾郵件隔離通知|如需詳細資訊，請參閱[Office 365 中的使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)和[設定使用者垃圾郵件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)。|
 |透過網頁查看、尋找及管理隔離中的郵件|此功能適用於使用者及系統管理員。 如需詳細資訊，請參閱[在 Office 365 中管理被隔離的郵件和檔案為系統管理員](manage-quarantined-messages-and-files.md)，或[尋找並釋放被隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。|
 |查看垃圾郵件隔離的郵件頭|在您查看隔離區中的郵件頭之後，您也可以將標頭文字複製並 pate 到[郵件頭分析器](https://mha.azurewebsites.net/)，以查看郵件發生問題的相關資訊。|
@@ -59,7 +59,7 @@ ms.locfileid: "43081445"
 |條件式郵件路由|如需詳細資訊，請參閱[案例：條件式郵件路由](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing)。|
 |隨機或強制 TLS|隨機或強制 TLS 可供連接器使用。 隨機 TLS 會嘗試 TLS 連線，但是如果 TLS 連線失敗時會使用 SMTP 連線。 強制 TLS 會強制使用 TLS 連線，這表示如果 TLS 連線失敗，就會拒絕郵件。 如需 TLS、安全性和連接器的詳細資訊，請參閱[Set up connectors for secure mail flow with a partner organization](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)。|
 |地區路由 (流向特定地區的郵件流程限制)|如需詳細資訊，請參閱 [Exchange Online Protection 概觀](exchange-online-protection-overview.md) 中的「EOP 資料中心」一節。|
-|SMTP 連線檢查程式工具|如需使用此工具測試郵件流程的詳細資訊，請參閱 [驗證 Office 365 連接器以測試郵件流程](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)。|
+|SMTP 連線檢查程式工具|如需使用此工具測試郵件流程的詳細資訊，請參閱[test mail flow，方法是驗證您的 Microsoft 365 連接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)。|
 |符合子網域|如需關於啟用公認的網域之子網域的雙向郵件流程的詳細資訊，請參閱 [EOP 中的郵件流程](mail-flow-in-eop.md)。|
 |**郵件流程規則**||
 |原則式篩選和動作|自訂原則乃是根據 Exchange 郵件流程規則。 您可以透過網域、關鍵字、檔案名稱、檔案類型、主旨列、郵件內文、寄件者、收件者、標頭和 IP 位址進行篩選。 如需詳細資訊，請參閱 [Exchange Online Protection 中的郵件流程規則 (傳輸規則)](mail-flow-rules-transport-rules-0.md)。|
@@ -76,11 +76,11 @@ ms.locfileid: "43081445"
 |**系統管理**||
 |Web 式管理|EOP 系統管理員可以透過 Exchange 管理中心 (EAC) 介面 (支援 60 種語言) 來管理服務。 如需詳細資訊，請參閱 [Exchange Online Protection 中的 Exchange 系統管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。|
 |目錄同步處理|目錄同步作業可透過 Azure Active Directory 同步處理工具 使用。如需詳細資訊，請參閱 [管理 EOP 中的郵件使用者](manage-mail-users-in-eop.md) 中的「使用目錄同步作業管理郵件使用者」一節。  |
-|目錄架構邊緣封鎖 (DBEB)|DBEB 功能可讓您在服務網路的周邊處拒絕無效收件者的郵件。 DBEB 可讓系統管理員將已啟用郵件的收件者新增至 Office 365，並封鎖所有傳送的目標電子郵件地址沒有顯示在 Office 365 中的郵件。 如需設定 DBEB 的詳細資訊，請參閱 [使用目錄架構邊緣封鎖以拒絕傳送至無效收件者的郵件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。|
+|目錄架構邊緣封鎖 (DBEB)|DBEB 功能可讓您在服務網路的周邊處拒絕無效收件者的郵件。 DBEB 可讓系統管理員將擁有郵件功能的收件者新增至 Microsoft 365，並封鎖所有傳送至不存在於 Microsoft 365 的電子郵件地址的郵件。 如需設定 DBEB 的詳細資訊，請參閱 [使用目錄架構邊緣封鎖以拒絕傳送至無效收件者的郵件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。|
 |遠端 Windows PowerShell 存取|透過遠端 Windows PowerShell 可使用完整的 EOP 功能。 如需詳細資訊，請參閱 [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell)。|
 |**回報和記錄**||
 |郵件追蹤|郵件追蹤功能在電子郵件通過服務時，讓您以系統管理員的身分追蹤電子郵件。 它可以協助您判斷服務是否已接收、拒絕、延遲或傳遞目標電子郵件訊息。 此舉可讓您有效回答使用者的問題、疑難排解郵件流程問題、驗證原則變更，並減少連絡技術支援尋求協助的需求。 如需詳細資訊，請參閱[追蹤電子郵件](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message)。|
-|Web 式報告|Microsoft 365 系統管理中心裡的郵件保護報告會提供郵件資料。 例如，您可以監視偵測到多少垃圾郵件和惡意程式碼，或符合郵件流程規則的程度。 透過這些互動式報告，您可以快速取得摘要資料的視覺報告，並深入查看個別郵件的詳細資料，最多可回溯 90 天。 如需詳細資訊，請參閱 [Use mail protection reports in Office 365 to view data about malware, spam, and rule detections](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)。|
+|Web 式報告|Microsoft 365 系統管理中心裡的郵件保護報告會提供郵件資料。 例如，您可以監視偵測到多少垃圾郵件和惡意程式碼，或符合郵件流程規則的程度。 透過這些互動式報告，您可以快速取得摘要資料的視覺報告，並深入查看個別郵件的詳細資料，最多可回溯 90 天。 如需詳細資訊，請參閱[Use mail protection reports，以查看有關惡意程式碼、垃圾郵件和規則](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)偵測的資料。|
 |稽核記錄|系統管理員角色群組報告和系統管理員稽核記錄可供 EOP 系統管理員使用。如需詳細資訊，請參閱 [EOP 中的稽核報告](auditing-reports-in-eop.md)。  |
 |**服務等級協定 (SLA) 和支援**||
 |垃圾郵件有效性 SLA|\> 99%|

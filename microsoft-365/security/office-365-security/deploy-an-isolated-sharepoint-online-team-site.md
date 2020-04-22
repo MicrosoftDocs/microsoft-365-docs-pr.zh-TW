@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 摘要：使用下列逐步指示來部署新的獨立 SharePoint Online 小組網站。
-ms.openlocfilehash: 07867b4646926468f808f8f34086cf9267d7ab7b
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: e35e380b61a94e08ff25e2e4c4bdfa28a635449e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612613"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637625"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署獨立的 SharePoint Online 小組網站
 
@@ -38,19 +38,19 @@ ms.locfileid: "42612613"
 
 決定與獨立小組網站的 SharePoint Online 系統管理員對應的一組使用者帳戶。
   
-如果您透過 Office 365 管理使用者帳戶和群組，並想要使用 Windows PowerShell，請建立其使用者主體名稱 (UPN) 清單 (範例 UPN：belindan@contoso.com)。
+如果您是透過 Microsoft 365 管理使用者帳戶和群組，且想要使用 Windows PowerShell，請建立使用者主要名稱（Upn）清單（例如 UPN： belindan@contoso.com）。
   
 ### <a name="step-2-list-the-members-for-the-site"></a>步驟2：列出網站的成員
 
 決定與獨立小組網站成員對應的一組使用者帳戶，其會在網站中所儲存的資源上共同作業。
   
-如果您透過 Office 365 管理使用者帳戶和群組，並想要使用 PowerShell，請建立其 UPN 清單。 如果有大量網站成員，您可以將 UPN 清單儲存在文字檔中，並使用單一 PowerShell 命令全部新增。
+如果您是透過 Microsoft 365 管理使用者帳戶和群組，且想要使用 PowerShell，請建立其 Upn 的清單。 如果有大量網站成員，您可以將 UPN 清單儲存在文字檔中，並使用單一 PowerShell 命令全部新增。
   
 ### <a name="step-3-list-the-viewers-for-the-site"></a>步驟3：列出網站的檢視者
 
 決定與獨立小組網站檢視者對應的一組使用者帳戶，其可檢視網站中儲存的資源，但不能加以修改或直接在其內容上共同作業。
   
-如果您透過 Office 365 管理使用者帳戶和群組，並想要使用 PowerShell，請建立其 UPN 清單。 如果有大量網站成員，您可以將 UPN 清單儲存在文字檔中，並使用單一 PowerShell 命令全部新增。
+如果您是透過 Microsoft 365 管理使用者帳戶和群組，且想要使用 PowerShell，請建立其 Upn 的清單。 如果有大量網站成員，您可以將 UPN 清單儲存在文字檔中，並使用單一 PowerShell 命令全部新增。
   
 網站的檢視者可能包括管理階層、法律顧問或各部門的專案關係人。
   
@@ -101,7 +101,7 @@ ms.locfileid: "42612613"
     
 3. 將步驟 3 的使用者清單新增至網站檢視者存取群組
     
-如果您是透過 Active Directory 網域服務 (AD DS) 管理使用者帳戶和群組，請使用標準 AD DS 使用者和群組管理程序，將使用者新增至適當的存取群組，並等待與您的 Office 365 訂用帳戶同步。
+如果您是透過 Active Directory 網域服務（AD DS）來管理使用者帳戶和群組，請使用一般 AD DS 使用者和群組管理程式將使用者新增至適當的訪問群組，並等候 Microsoft 365 訂閱同步處理。
   
 如果您是透過 Office 365 管理使用者帳戶和群組，您可使用 Microsoft 365 系統管理中心或 PowerShell。 如果任何存取群組有重複的群組名稱，您應該使用 Microsoft 365 系統管理中心。
   
@@ -155,7 +155,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>第 2 階段：建立及設定獨立的小組網站
 
-在這個階段中，您會建立獨立的 SharePoint Online 網站，並設定預設 SharePoint Online 權限等級的權限，以使用新的 Azure AD 型存取群組。 依預設，新的小組網站包含 Office 365 群組和其他相關資源，但在此情況下，我們會建立沒有 Office 365 群組的小組網站。 這可讓您完全透過 SharePoint 維護許可權。
+在這個階段中，您會建立獨立的 SharePoint Online 網站，並設定預設 SharePoint Online 權限等級的權限，以使用新的 Azure AD 型存取群組。 依預設，新的小組網站包含 Microsoft 365 群組和其他相關資源，但在此情況下，我們會建立沒有 Microsoft 365 群組的小組網站。 這可讓您完全透過 SharePoint 維護許可權。
   
 首先，使用下列步驟建立 SharePoint Online 小組網站。
   

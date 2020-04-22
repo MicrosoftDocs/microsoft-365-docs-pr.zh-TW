@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 定義郵件使用者是管理 Exchange Online Protection (EOP) 的重要環節。
-ms.openlocfilehash: bdbc3cd54901d53b4a7d01bcf513a9b9a0df1c01
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 56827e29872c6a6ffd14821af8e2d9ea005ff20c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633791"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635577"
 ---
 # <a name="manage-mail-users-in-eop"></a>管理 EOP 中的郵件使用者
 
@@ -63,7 +63,7 @@ ms.locfileid: "42633791"
 
   - **目錄架構邊緣封鎖（DBEB）**：如需 DBEB 的詳細資訊，請參閱[使用目錄架構邊緣封鎖以拒絕傳送至無效收件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)者的郵件。
 
-  - **使用者垃圾郵件隔離**：若要存取使用者垃圾郵件隔離區，使用者必須具有有效的 Office 365 使用者識別碼和密碼。 保護內部部署信箱的 EOP 客戶必須是有效的電子郵件使用者。
+  - **使用者垃圾郵件隔離**：若要存取使用者垃圾郵件隔離區，使用者必須具有有效的使用者識別碼和密碼。 保護內部部署信箱的 EOP 客戶必須是有效的電子郵件使用者。
 
   - **郵件流程規則**：當您使用目錄同步處理時，您現有的 Active directory 使用者和群組會自動上傳至雲端，然後您可以建立郵件流程規則（也稱為傳輸規則），該規則會以特定使用者和/或群組為目標，而不需要透過 EAC 或 Exchange Online Protection PowerShell 手動新增。 請注意， [動態通訊群組](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)無法透過目錄同步作業進行同步處理。
 
@@ -126,7 +126,7 @@ ms.locfileid: "42633791"
 
 - 外部電子郵件地址為 jzeng@tailspintoys.com。
 
-- Office 365 登入名稱是 jeffreyz@contoso.onmicrosoft.com。
+- Microsoft 365 登入名稱是 jeffreyz@contoso.onmicrosoft.com。
 
 - 密碼為 Pa$$word1。
 

@@ -1,5 +1,5 @@
 ---
-title: 使用取消列出入口網站，將您自己從 Office 365 封鎖寄件者清單中移除
+title: 使用取消列出入口網站，將您自己從封鎖的寄件者清單中移除
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,21 +15,21 @@ search.appverid:
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
-description: 當您嘗試將電子郵件傳送給其電子郵件地址是在 Office 365 中的收件者時，是否收到錯誤？如果您認為您不應該收到錯誤訊息，您可以使用取消列出入口網站，將您自己從 Office 365 封鎖寄件者清單中移除。
-ms.openlocfilehash: cd85a06bfd4122dcacd798a48f5a1755e2969b4a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: 當您嘗試將電子郵件傳送給其電子郵件地址是 Microsoft 365 的收件者時，收到錯誤訊息嗎？ 如果您認為您不應該收到錯誤訊息，您可以使用取消列出入口網站，將您自己從 [封鎖的寄件者] 清單中移除。
+ms.openlocfilehash: 39f2c9335f162f26e8bf07a213236e0e0eefef2a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895080"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636401"
 ---
-# <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>使用取消列出入口網站，將您自己從 Office 365 封鎖寄件者清單中移除
+# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>使用取消列出入口網站，將您自己從封鎖的寄件者清單中移除
 
-當您嘗試將電子郵件傳送給其電子郵件地址是在 Office 365 中的收件者時，是否收到錯誤？如果您認為您不應該收到錯誤訊息，您可以使用取消列出入口網站，將您自己從 Office 365 封鎖寄件者清單中移除。
+當您嘗試將電子郵件傳送給其電子郵件地址是 Microsoft 365 的收件者時，收到錯誤訊息嗎？ 如果您認為您不應該收到錯誤訊息，您可以使用取消列出入口網站，將您自己從 [封鎖的寄件者] 清單中移除。
 
-## <a name="what-is-the-office-365-blocked-senders-list"></a>什麼是 Office 365 封鎖寄件者清單？
+## <a name="what-is-the-blocked-senders-list"></a>什麼是封鎖的寄件者清單？
 
-Microsoft 會使用封鎖寄件者清單，來保護其客戶避免垃圾郵件、詐騙和網路釣魚攻擊。您的郵件伺服器的 IP 位址，也就是您的郵件伺服器用來在網際網路上識別其本身的位址，因為其中一個原因，已標記為 Office 365 的潛在威脅。當 Office 365 將 IP 位址新增至清單時，它會防止 IP 位址和透過我們的資料中心的任何客戶之間的所有進一步通訊。
+Microsoft 會使用封鎖寄件者清單，來保護其客戶避免垃圾郵件、詐騙和網路釣魚攻擊。 您的郵件伺服器的 IP 位址（亦即，郵件伺服器用來在網際網路上識別自己的位址）已標記為可能的 Microsoft 365 威脅，原因很多。 當 Microsoft 365 將 IP 位址新增至清單時，它會防止 IP 位址與任何以我們的資料中心進行的任何客戶之間的進一步通訊。
 
 當您收到包含錯誤如下的郵件訊息時，您就會知道您已新增至清單：
 
@@ -37,7 +37,7 @@ Microsoft 會使用封鎖寄件者清單，來保護其客戶避免垃圾郵件�
 
 其中  _IP address_ 是郵件伺服器執行所在之電腦的 IP 位址。
 
-### <a name="to-use-the-office-365-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>若要使用 Office 365 取消列出入口網站將您自己從封鎖寄件者清單中移除
+### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>若要使用取消列出入口網站，將您自己從封鎖的寄件者清單中移除
 
 1. 在 Web 瀏覽器中，移至 [https://sender.office.com](https://sender.office.com)。
 
@@ -53,7 +53,7 @@ Microsoft 會使用封鎖寄件者清單，來保護其客戶避免垃圾郵件�
 
 5. 在取消列出入口網站中，按一下 **[取消列出 IP]**。
 
-    從封鎖寄件者清單移除 IP 位址後，來自該 IP 位址的電子郵件訊息將會傳遞給使用 Office 365 的收件者。因此，請確認您確信從該 IP 位址傳送的電子郵件沒有不當或惡意，否則，可能會再度封鎖 IP 位址。
+    從封鎖的寄件者清單中移除 IP 位址之後，來自該 IP 位址的電子郵件將會傳遞給使用 Microsoft 365 的收件者。 因此，請確認您確信從該 IP 位址傳送的電子郵件沒有不當或惡意，否則，可能會再度封鎖 IP 位址。
 
     > [!NOTE]
     > 最多可能需要24小時的時間，否則結果會在移除限制之前有很大的差異。

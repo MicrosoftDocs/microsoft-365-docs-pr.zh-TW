@@ -1,5 +1,5 @@
 ---
-title: 更新商務用 Office 365
+title: 更新 Microsoft 365 for business
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,19 +23,19 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: '瞭解如何使用產品金鑰來更新您的商務用 Office 365 訂閱，並開啟或關閉定期計費。 '
-ms.openlocfilehash: a382a2c4767f9dac4ee276c050d077d854b99084
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+description: '瞭解如何使用產品金鑰來更新 Microsoft 365 的商務用訂閱，並開啟或關閉定期計費。 '
+ms.openlocfilehash: 1c3fc5f9648c814d300cd65ac872f1e28e90ca0d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43175199"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636556"
 ---
-# <a name="renew-office-365-for-business"></a>更新商務用 Office 365
+# <a name="renew-microsoft-365-for-business"></a>更新 Microsoft 365 for business
 
-本文適用于大部分付費的 Office 365 for business 訂閱。
+本文適用于大部分付費的 Microsoft 365 for business 訂閱。
   
-若要使用您從零售商店或 Office 365 合作夥伴購買的產品金鑰來更新，請參閱[尋找並輸入您的產品金鑰](../enter-your-product-key.md)。
+若要使用您從零售商店或 Microsoft 合作夥伴購買的產品金鑰來更新，請參閱[尋找並輸入您的產品金鑰](../enter-your-product-key.md)。
 
 > [!NOTE]
 > 在某些國家或地區無法使用銀行帳戶付款。
@@ -48,9 +48,10 @@ ms.locfileid: "43175199"
 
 ::: moniker range="o365-worldwide"
 
+
 1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
 
-2. 選擇您想要管理週期性帳單的訂閱。
+2. 選擇您想要管理週期性計費的訂閱。
  
 3. 在 [**帳單**] 底下的 [**續訂開啟**] 或 [**到期**日] 旁邊，選取 [**編輯**]。
 
@@ -67,9 +68,13 @@ ms.locfileid: "43175199"
 
 ::: moniker range="o365-germany"
   
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
 
-2. 選擇您想要管理週期性帳單的訂閱。
+    如果您使用的是 Office 365 Germany，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>頁面。
+
+    如果您使用的是由 21Vianet 提供的 Office 365，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>頁面。
+
+2. 選擇您想要管理週期性計費的訂閱。
  
 3. 若要開啟**定期計費**，請將開啟開關切換為 [**開啟**]。
 
@@ -86,9 +91,13 @@ ms.locfileid: "43175199"
 
 ::: moniker range="o365-21vianet"
   
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
 
-2. 選擇您想要管理週期性帳單的訂閱。
+    如果您使用的是 Office 365 Germany，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>頁面。
+
+    如果您使用的是由 21Vianet 提供的 Office 365，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>頁面。
+
+2. 選擇您想要管理週期性計費的訂閱。
  
 3. 若要開啟**定期計費**，請將開啟開關切換為 [**開啟**]。
 
@@ -106,7 +115,7 @@ ms.locfileid: "43175199"
 ## <a name="related-articles"></a>相關文章
 
 [重新啟動您的訂閱](reactivate-your-subscription.md)
-
+  
 [當訂閱結束時，我的資料與存取權會發生什麼情況？](what-if-my-subscription-expires.md)
 
 [新增、更新或移除付款方式](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
@@ -115,4 +124,4 @@ ms.locfileid: "43175199"
   
 [輸入您的產品金鑰](../enter-your-product-key.md)
   
-[購買商務用 Office 365 試用版](../buy-a-subscription-from-your-free-trial.md)
+[購買 Microsoft 365 的試用版](../buy-a-subscription-from-your-free-trial.md)

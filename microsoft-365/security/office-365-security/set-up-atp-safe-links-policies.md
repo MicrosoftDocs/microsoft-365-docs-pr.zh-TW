@@ -17,19 +17,19 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 設定安全連結原則來保護貴組織，以防範 Word、Excel、PowerPoint 和 Visio 檔案，以及電子郵件中的惡意連結。
-ms.openlocfilehash: a1a78afe7480ed9f68f8cd893c00876872317785
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 31401e8f890f329f5724347deec2d85b6e473552
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43230977"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638329"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>設定 Office 365 ATP 安全連結原則
 
 > [!IMPORTANT]
 > 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您是家用版使用者且正在尋找 Outlook 中安全連結的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-[ATP 安全連結](atp-safe-links.md)([Office 365 進階威脅防護](office-365-atp.md) (ATP) 的功能) 可協助貴組織防範網路釣魚和其他攻擊中使用的惡意連結。 如果您擁有 [Office 365 安全性與合規性中心的必要權限](permissions-in-the-security-and-compliance-center.md)，您可以設定 ATP 安全連結原則，協助確保當人員按一下網址 (URL) 時，您的組織受到保護。 您可以將 ATP 安全連結原則設定為掃描電子郵件中的 URL 和 Office 文件中的 URL。
+[ATP 安全連結](atp-safe-links.md)([Office 365 進階威脅防護](office-365-atp.md) (ATP) 的功能) 可協助貴組織防範網路釣魚和其他攻擊中使用的惡意連結。 如果您具有[安全性&amp;與合規性中心](permissions-in-the-security-and-compliance-center.md)的必要許可權，您可以設定 ATP 安全連結原則，以協助確保當使用者按一下網址（URLs）時，您的組織受到保護。 您可以將 ATP 安全連結原則設定為掃描電子郵件中的 URL 和 Office 文件中的 URL。
 
 啟用 ATP 安全連結後，如果使用者按一下電子郵件中的連結，且該 URL 已被組織的自訂封鎖 URL 清單封鎖，或是該 URL 已確定為惡意的，就會開啟警告頁面。
   
@@ -53,17 +53,17 @@ ms.locfileid: "43230977"
 
     |角色  |指派位置/條件  |
     |---------|---------|
-    |Office 365 全域管理員 |註冊購買 Office 365 的人會預設為為全域系統管理員。 (請參閱[關於 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以深入了解。)         |
+    |全域管理員 |簽署購買 Microsoft 365 的人員預設為全域系統管理員。 （請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以深入瞭解。）         |
     |安全性系統管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
     |Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
-    若要深入了解角色和權限，請參閱 [Office 365 安全性的權限與合規性中心](permissions-in-the-security-and-compliance-center.md)。
+    若要深入瞭解角色和許可權，請參閱[安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 - 確定 Office 用戶端已設定為使用[新式驗證](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (這會用於 Office 文件中的 ATP 安全連結保護)。
     
 - [了解 ATP 安全連結原則選項](#step-4-learn-about-atp-safe-links-policy-options) (在本文中)。 
 
-- 最多需要 30 分鐘的時間，最新或更新的原則才會散佈至所有 Office 365 資料中心。
+- 最多可允許30分鐘，以將新的或更新的原則散佈至所有 Microsoft 365 資料中心。
     
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>步驟2：定義 (或檢閱) 每個人都適用的 ATP 安全連結原則
 
@@ -99,9 +99,7 @@ ms.locfileid: "43230977"
 
     - 在 [描述]**** 方塊中，鍵入類似以下的描述：禁止特定群組中的人員在未經 ATP 安全連結驗證的情況下點選網站。
 
-    - 在 [**選取郵件中未知的可能惡意 URLs 動作**] 底下，選擇 [**開啟**]。
-
-    - 如果您看到 **[選取 Microsoft 小組中未知或潛在惡意 URLs 的動作**]，請選擇 [**開啟**]。 <br/>
+    - 在 [選取動作]**** 區段中，選擇 [開啟]****。
 
     - 如果您想要為可疑和指向檔案的 URL 啟用 URL 引爆功能 (建議使用)，請選取 [針對可疑的連結和指向檔案的連結套用即時 URL 掃描]****。 如果您希望只有在完全掃描 URL 之後才讓使用者接收郵件，則選取 [等到 URL 掃描完成再傳遞郵件]****。
 
@@ -131,7 +129,7 @@ ms.locfileid: "43230977"
 |此選項  |執行此動作  |
 |---------|---------|
 | **封鎖下列 URL** <br/>    | 可讓貴組織擁有自動封鎖的自訂 URL 清單。 使用者按一下此清單中的 URL 後，就會前往說明 URL 為何遭到封鎖的[警告頁面](atp-safe-links-warning-pages.md)。 若要深入了解，請參閱[使用 Office 365 ATP 安全連結來設定自訂封鎖的 URL 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)。 |
-| **Office 365 專業增強版、iOS 版與 Android 版 Office** <br/>    | 選取此選項時，ATP 安全連結保護適用于 Word、Excel URLs 及 PowerPoint 檔案中的 Windows 或 Mac 作業系統、Outlook 中的電子郵件、iOS 或 Android 裝置上的 Office 檔、Windows 上的 Visio 2016 檔案，以及在 Office 應用程式的 web 版本（Word、PowerPoint、Excel、Outlook 及 OneNote）中開啟的檔案，只要使用者已登入 Office 365。 |
+| **適用于企業的 Microsoft 365 應用程式、Office for iOS 和 Android** <br/>    | 選取此選項時，ATP 安全連結保護適用于 Word、Excel URLs 及 PowerPoint 檔案中的 Windows 或 Mac 作業系統、Outlook 中的電子郵件、iOS 或 Android 裝置上的 Office 檔、Windows 上的 Visio 2016 檔案，以及在 Office 應用程式的 web 版本（Word、PowerPoint、Excel、Outlook 及 OneNote）中開啟的檔案，只要使用者已登入 Office 365。 |
 | **當使用者按一下 ATP 安全連結時不要追蹤** <br/>  | 選取此選項時，不會儲存 [Word]、[Excel]、[PowerPoint]、[Visio 檔] 及 [Outlook 電子郵件訊息] 中 URLs 的資料。  <br/> |
 |**不要讓使用者點選原始 URL 的 ATP 安全連結** <br/> |若選取此選項，使用者就無法繼續將[警告頁面](atp-safe-links-warning-pages.md)傳送到被判定是惡意的 URL。  <br/> |
 
@@ -141,10 +139,9 @@ ms.locfileid: "43230977"
 |---------|---------|
 |**關閉** <br/> |不要掃描電子郵件中的 URL。  <br/> 可讓您定義例外狀況規則，例如以下規則：不要掃描特定收件者群組的電子郵件中的 URL。  <br/> |
 |**開啟** <br/> |當使用者按一下電子郵件中的 URL 並啟用 Windows 上 Outlook (C2R) 中的 ATP 安全連結時，重寫 URL 以透過 ATP 安全連結防護路由傳送使用者。  <br/> 如果 URL 沒有令人信服的信譽，則在點選已封鎖或惡意的 URL 清單時檢查 URL，並以非同步方式在背景觸發 URL 引爆。  <br/> |
-|**Microsoft 小組中的未知或潛在的惡意 URLs** |當您使用並選取此選項時，它會開啟 Microsoft 團隊聊天和頻道中的 ATP 安全連結。 當使用者在 Microsoft 小組聊天或通道中按一下 URL 時，會檢查連結。 會針對封鎖或惡意的 URLs 清單，檢查此 URL，並在背景中以非同步方式觸發 URL 的引爆（如果 URL 不具備有效的信譽）。 |
 |**針對可疑的連結和指向檔案的連結套用即時 URL 掃描** <br/> |若選取此選項，則會掃描指向可下載內容的可疑 URL 和連結。  <br/> |
 |**等待 URL 掃描完成再傳遞郵件** <br/> |若選取此選項，則會保留包含要掃描 URL 的郵件，直到 URL 完成掃描且確認是安全的，才會傳遞這些郵件。  <br/> |
-|**將安全連結套用至組織內傳送的郵件** <br/> | 選取此選項時，只要電子郵件帳戶主控于 Office 365，就會將 ATP 安全連結保護套用至組織中的人員所傳送的電子郵件。  <br/> |
+|**將安全連結套用至組織內傳送的郵件** <br/> | 此選項若可使用並已選取，假設電子郵件帳戶託管於 Office 365，則 ATP 安全連結保護就會套用至在貴組織中的人員間傳送的電子郵件。  <br/> |
 |**不要追蹤使用者點選** <br/> |若選取此選項，則不會儲存來自外部寄件者的電子郵件中 URL 的點選資料。 目前不支援追蹤組織內傳送的電子郵件中連結的 URL 點選。  <br/> |
 |**不允許使用者點選原始 URL** <br/> |若選取此選項，使用者就無法繼續將[警告頁面](atp-safe-links-warning-pages.md)傳送到被判定是惡意的 URL。  <br/> |
 |**不要重寫下列 URL** <br/> |將 URL 保留原樣。 保留不需要掃描貴組織中特定電子郵件收件者群組的自訂安全 URL 清單。  如需詳細資料 (包括支援萬用字元星號 (\*) 的近期變更)，請參閱[使用 ATP 安全連結來設定自訂「不要重寫」URL 清單](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)。  <br/> |

@@ -16,24 +16,24 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: 深入瞭解在 SharePoint、OneDrive 或小組中偵測到之惡意檔案的相關資訊，以及如何對這些檔案採取動作。
-ms.openlocfilehash: 3a14c7d69c7081be6bd08840eb8f52c5e11d4be7
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 95f497c5be16d1ba1d4fa9fc57f0dd9650450414
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955552"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635397"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>檢視在 SharePoint、OneDrive 或 Microsoft Teams 中偵測到的惡意檔案資訊
 
 [SharePoint、OneDrive 和 Microsoft 團隊的 Office 365 ATP](atp-for-spo-odb-and-teams.md) ，可保護您的組織，避免文件庫和小組網站中的惡意檔。 偵測到惡意檔案時，該檔案會遭到封鎖，因此在組織的安全性小組採取進一步動作之前，任何人都無法開啟、複製、移動或共用該檔案。 請閱讀本文以瞭解如何查看偵測到檔案的相關資訊，以及要採取的動作。 
 
-為了執行本文所述的工作，您必須具備[Office 365 安全性&amp;與合規性中心](permissions-in-the-security-and-compliance-center.md)的必要許可權。 
+為了執行本文所述的工作，您必須具備[安全性&amp;與合規性中心](permissions-in-the-security-and-compliance-center.md)的必要許可權。 
   
 ## <a name="view-reports-with-information-about-detected-files"></a>以偵測到的檔案的相關資訊來查看報告
 
 若要查看 Office 365 ATP 所偵測到之檔案的狀態和詳細資訊，您可以使用威脅防護狀態報表。
   
-1. 在 [ [Office 365 安全性&amp;與合規性中心](https://protection.office.com)] 中，選擇 [**報告** \> ]**儀表板** \> **威脅防護狀態**。
+1. 在 [[安全性&amp;與合規性中心](https://protection.office.com)] 中，選擇 [**報告** \> ]**儀表板** \> **威脅防護狀態**。
     
 2. 在報表的右上角，選擇 [ **View details table**]。
     
@@ -45,7 +45,7 @@ ms.locfileid: "42955552"
   
 ## <a name="view-and-take-action-on-files-in-quarantine"></a>針對隔離區中的檔案，查看並採取動作
 
-1. 在 [Office 365 安全性&amp;與合規性中心] 中，選擇 [**威脅管理** \> **檢查** \> **隔離區**]。 （您也可以直接前往[https://protection.office.com/quarantine](https://protection.office.com/quarantine)。）
+1. 在 [安全性&amp;與合規性中心] 中，選擇 [**威脅管理** \> **檢查** \> **隔離區**]。 （您也可以直接前往[https://protection.office.com/quarantine](https://protection.office.com/quarantine)。）
     
 2. 在左上角，將**電子郵件**的下拉式功能表**變更為檔案**。 如果結果清單中包含太多專案，請使用**篩選**功能縮小選取範圍。
     

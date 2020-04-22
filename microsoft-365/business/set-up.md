@@ -1,5 +1,5 @@
 ---
-title: 設定 Microsoft 365 商務版
+title: 設定 Microsoft 365 商務版 Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -28,17 +28,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: 探索 Microsoft 365 商務版的設定步驟，包括新增網域和使用者、設定安全性原則等等。
-ms.openlocfilehash: 99994b6f1e9e817b4858aeafe4ce3ceaaf4c3c37
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: 探索 Microsoft 365 商務版 Premium 的設定步驟，包括新增網域和使用者、設定安全性原則等等。
+ms.openlocfilehash: a34ede0002e7e78c5dc437c663fe527cf94e46c5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633871"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635757"
 ---
-# <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>在安裝精靈中設定 Microsoft 365 商務
+# <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在安裝精靈中設定 Microsoft 365 商務版 Premium
 
-請觀看這段影片，以取得 Microsoft 365 商務版安裝程式的概要。<br><br>
+請觀看這段影片，以取得 Microsoft 365 商務版特優設定的概要。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
@@ -48,7 +48,7 @@ ms.locfileid: "42633871"
 
 [![[標籤] 可讓您知道系統管理中心正在變更，您可以在 aka.ms/aboutM365preview 取得更多詳細資料。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-當您購買 Microsoft 365 商務版時，您可以選擇在[註冊](sign-up.md)時使用您擁有的網域，或是購買一個網域。
+當您購買 Microsoft 365 商務版特優功能時，您可以選擇使用您擁有的網域，或在[註冊](sign-up.md)期間購買一個網域。
 
 - 如果您在註冊時購買了新的網域，您的網域就是全部設定，您可以移至 [新增[使用者] 和 [指派授權](#add-users-and-assign-licenses)]。
 
@@ -82,11 +82,11 @@ ms.locfileid: "42633871"
 
 #### <a name="add-users-in-the-wizard"></a>在嚮導中新增使用者
 
-您在嚮導中新增的任何使用者會自動獲得 Microsoft 365 商務版授權。
+您在嚮導中新增的任何使用者會自動指派 Microsoft 365 商務版優質授權。
 
 ![嚮導中 [新增使用者] 頁面的螢幕擷取畫面](../media/addnewuserspage.png)
 
-1. 如果您的 Microsoft 365 商務版訂閱中有現有的使用者（例如，如果您使用 Azure AD Connect），您會看到立即指派授權的選項。 請繼續進行，為他們新增授權。
+1. 如果您的 Microsoft 365 商務版訂閱有現有的使用者（例如，如果您使用 Azure AD Connect），您可以選擇立即將授權指派給他們。 請繼續進行，為他們新增授權。
 
 2. 在您新增使用者之後，您也會看到一個選項，用來與您新增的新使用者共用認證。 您可以選擇列印認證、透過電子郵件傳送認證，或是下載認證。
 
@@ -134,6 +134,6 @@ ms.locfileid: "42633871"
 
 您也可以個別安裝 Office。 請參閱[在 PC 或 Mac 上安裝 Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)以取得指示。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-[Microsoft 365 商務版訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商務用訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/07/2020
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供 Microsoft 365 for enterprise 的元件、方案及部署路徑的簡介。
-ms.openlocfilehash: 6b8d2aa7fd8455acde1d49a6ed7f7c93c5235652
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 85f05e85989d7b298ba0575c7447a3ef157ea163
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504088"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631558"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -32,7 +32,7 @@ ms.locfileid: "43504088"
 
 |||
 |:-------|:-----|
-| 本機和雲端架構應用程式與生產力服務 | 包含 Office 365 專業增強版、最新的 PC 與 Mac 版 Office 應用程式（如 Word、Excel、PowerPoint、Outlook 和其他人），以及一組完整的電子郵件、檔案儲存空間和共同作業、會議和其他的線上服務。 |
+| 本機和雲端架構應用程式與生產力服務 | 包含適用于企業的 Microsoft 365 應用程式、適用于電腦和 Mac 的最新 Office 應用程式（例如 Word、Excel、PowerPoint、Outlook 及其他），以及完整的線上服務，以供電子郵件、檔案儲存及共同作業、會議等等。 |
 | Windows 10 企業版 | 同時滿足大型和中型組織的需求，為使用者提供最具生產力且安全的 Windows 和 IT 專業人員，具有全面的部署、裝置和應用程式管理。 |
 | 裝置管理和高級安全性服務 | 包含 Microsoft Intune，也就是雲端式企業行動管理（EMM）服務，可協助讓您的員工在保持公司資料保護的情況下成為生產力。 |
 |||
@@ -45,7 +45,7 @@ ms.locfileid: "43504088"
 |:-------|:-----|
 | E3 | 存取 Microsoft 365 中的核心產品和功能，以加強工作場所生產力，並安全地推動創新。 |
 | E5 | 存取 Microsoft 365 內最新的產品和功能，包括「高級威脅防護」、「安全性與共同作業」工具。。 包含所有的 E3's 功能，以及高級安全性、語音及資料分析工具。 |
-| F3 | 透過專門構建的工具和資源，與您的 Firstline 工作者進行連線，讓他們可以進行最佳的工作。 |
+| F1 | 透過專門構建的工具和資源，與您的 Firstline 工作者進行連線，讓他們可以進行最佳的工作。 |
 |||
 
 如果您有 Microsoft 365 E3，您也可以取得下列[產品](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)：
@@ -55,7 +55,7 @@ ms.locfileid: "43504088"
 
 這些產品包含 Microsoft 365 E5 隨附的其他功能。
 
-如需每個計畫包含專案的詳細資訊，請參閱[使用 Microsoft 365 轉換您的企業](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans)。
+如需詳細資訊，請參閱[每個方案的功能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
 
 ## <a name="get-the-big-picture"></a>取得大圖片
 
@@ -125,7 +125,7 @@ ms.locfileid: "43504088"
 
 ## <a name="additional-microsoft-365-solutions"></a>其他 Microsoft 365 解決方案
 
-- [Microsoft 365 商務版 ](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 商務版 Premium](https://docs.microsoft.com/microsoft-365/business/)
  
   將 Office 365 的同等級最佳生產力和共同作業能力與裝置管理和安全性解決方案整合在一起，以保護中小型企業 (SMB) 的商務資料。
 
@@ -149,6 +149,6 @@ ms.locfileid: "43504088"
 
 如果您是自行進行部署，請啟動您[的 Microsoft 365，以進行企業部署旅程](deploy-microsoft-365-enterprise.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [適用于企業產品的 Microsoft 365 頁面](https://www.microsoft.com/microsoft-365/enterprise)

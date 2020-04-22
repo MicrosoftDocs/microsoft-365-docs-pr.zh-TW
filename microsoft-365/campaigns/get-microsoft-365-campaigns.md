@@ -23,25 +23,25 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 取得 Microsoft 365 的行銷活動，讓您可以保護您的活動，使您的 cybersecurity 威脅成為電子郵件、資料和通訊。
-ms.openlocfilehash: 2576bc3e62fd9c51dfec16f977e8339fc09e29f6
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5c528ab0ee856062a8e012d9fb699da92d7afb78
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633761"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635621"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>取得 Microsoft 365 的行銷活動
 
-任何 Microsoft 365 商務版的人均可使用此指導方針設定電子郵件和共同作業的額外安全性。 不過，美國的行銷活動和政治各方可享受 Microsoft 365 的特殊定價。 目前可以使用此特殊定價：
+任何擁有 Microsoft 365 商務版 Premium 的人都可以使用此指導方針設定電子郵件和共同作業的額外安全性。 不過，美國的行銷活動和政治各方可享受 Microsoft 365 的特殊定價。 目前可以使用此特殊定價：
 - 美國聯邦政治活動（例如，美國房屋、美國 Senate 或總統的行銷活動）
 - 美國的全國層級政治各方。
 
 如果您的活動或政治一方合格，Microsoft 365 的行銷活動就是 Microsoft 提供的成本最低的計畫。  
 
-如果您不適合特殊定價，則 Microsoft 365 商務版仍是最具成本效益的方式，可取得共同作業環境的安全性。 請參閱[註冊 Microsoft 365 以取得活動](m365-campaigns-sign-up.md)。 然後使用此程式庫設定額外的安全性，以及協助小組安全地進行共同作業。 
+如果您不具備特殊定價的資格，Microsoft 365 商務版 Premium 仍是最經濟划算的方式，可取得共同作業環境的安全性。 請參閱[註冊 Microsoft 365 以取得活動](m365-campaigns-sign-up.md)。 然後使用此程式庫設定額外的安全性，以及協助小組安全地進行共同作業。 
 
 ## <a name="what-does-microsoft-365-for-campaigns-include"></a>Microsoft 365 的行銷活動包含哪些專案？
-Microsoft 365 商務版的此設定包括簡單的控制項，可協助您和您的員工安全地協同運作： 
+Microsoft 365 商務版 Premium 的此設定包括可協助您和您的員工安全地共同運作的簡單控制項： 
 - **保護使用者身分識別**：請確定使用者是登入傳送電子郵件或存取檔案（多重要素驗證）時的使用者。
 - **保護機密資訊**：保護機密資訊以監控組織外部共用的資訊（資料遺失防護）。
 - **保護行動裝置**：保護行動裝置上的資料（行動應用程式保護原則）。

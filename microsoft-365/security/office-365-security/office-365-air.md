@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的自動化調查和回應（AIR）
+title: 自動化調查和回應（AIR）
 keywords: AIR, autoIR, ATP, 自動化, 調查, 回應, 修正, 威脅, 進階, 威脅, 保護
 f1.keywords:
 - NOCSH
@@ -16,14 +16,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 開始使用 Office 365 進階威脅防護方案 2 中的自動化調查及回應功能
 ms.custom: air
-ms.openlocfilehash: 45a2bc0e581916493a0170a5f86c152d02403efe
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 3b7ddd88161b695e8929b749dac61d7947392a0d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826346"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634541"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Office 365 中的自動化調查和回應（AIR）
+# <a name="automated-investigation-and-response-air"></a>自動化調查和回應（AIR）
 
 [Office 365 高級威脅防護](office-365-atp.md)（OFFICE 365 ATP）方案2包含強大的自動化調查和回應（空氣）功能，可儲存您的安全性運作小組時間和工作。 當觸發警示時，您的安全性作業小組會檢查、優先順序及回應這些警示。 保持傳入提醒的數量非常驚人。 自動化某些部分可提供協助。 透過 AIR，您的安全性運作小組可以專注于優先順序較高的工作，而不會失去所觸發之警示的視線。
 
@@ -69,7 +69,7 @@ ms.locfileid: "42826346"
 
 Office 365 的 AIR 功能包含在[office 365 高級威脅防護方案 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2)。 不過，您[應設定 Office 365 ATP 原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)，讓 AIR 如預期般運作。 此外，請務必複查並可能設定組織的[警示原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)。 
 
-Office 365 提供許多內建的警示原則，可協助識別 Exchange 系統管理員許可權濫用、惡意程式碼活動、潛在的外部和內部威脅，以及資訊控管風險。 某些預設的[報警原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)可以觸發自動調查。 包括下列各項：
+Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系統管理員許可權濫用、惡意程式碼活動、潛在的外部和內部威脅，以及資訊控管風險。 某些預設的[報警原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)可以觸發自動調查。 包括下列各項：
 
 - 偵測到可能的惡意 URL 按一下
 
@@ -91,8 +91,8 @@ Office 365 提供許多內建的警示原則，可協助識別 Exchange 系統�
 
 |工作 |需要角色 |
 |--|--|
-|設定 AIR 功能 |下列其中一個角色： <br/>-全域管理員<br/>-安全性管理員 <br/>您可以在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)或[Office 365 Security & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)指派這些角色。 |
-|核准或拒絕建議的動作|在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)或[Office 365 Security & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)中指派的下列其中一個角色：<br/>-全域管理員 <br/>-安全性管理員<br/>-安全性讀取器 <br/>--- 且 ---<br/>-搜尋和清除（此角色只會指派于[Office 365 安全性 & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。 您可能需要建立新的角色群組，並將搜尋和清除角色新增至該新的角色群組。）
+|設定 AIR 功能 |下列其中一個角色： <br/>-全域管理員<br/>-安全性管理員 <br/>您可以在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)或[Security & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)指派這些角色。 |
+|核准或拒絕建議的動作|在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)或[Security & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)內指派的下列角色之一：<br/>-全域管理員 <br/>-安全性管理員<br/>-安全性讀取器 <br/>--- 且 ---<br/>-搜尋和清除（此角色只會指派在[安全性 & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。 您可能需要建立新的角色群組，並將搜尋和清除角色新增至該新的角色群組。）
 
 ## <a name="next-steps"></a>後續步驟
 

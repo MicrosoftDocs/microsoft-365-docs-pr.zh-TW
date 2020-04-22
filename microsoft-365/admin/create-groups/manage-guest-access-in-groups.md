@@ -1,5 +1,5 @@
 ---
-title: 管理 Office 365 群組中的來賓存取
+title: 在 Microsoft 365 群組中管理來賓存取
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,23 +17,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
-description: 瞭解如何將來賓新增至 Office 365 群組、查看來賓使用者，以及使用 PowerShell 來控制來賓存取。
-ms.openlocfilehash: e76718ccb20843b252c939be48653c61c7c1f0a9
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: 瞭解如何將來賓新增至 Microsoft 365 群組、查看來賓使用者，以及使用 PowerShell 來控制來賓存取。
+ms.openlocfilehash: cca1d3dff4d95f5b15b9f18d5eeebcf054e52fe3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894500"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630064"
 ---
-# <a name="manage-guest-access-in-office-365-groups"></a>管理 Office 365 群組中的來賓存取
+# <a name="manage-guest-access-in-microsoft-365-groups"></a>在 Microsoft 365 群組中管理來賓存取
 
-依預設，會為您的組織開啟 Office 365 群組的來賓存取。 系統管理員可以控制是否允許來賓存取整個組織或個別群組的群組。
+根據預設，針對您的組織開啟來賓存取權 Microsoft 365 群組。 系統管理員可以控制是否允許來賓存取整個組織或個別群組的群組。
 
-當其開啟時，群組成員可以透過網頁上的 Outlook 邀請來賓使用者加入 Office 365 群組。 邀請會傳送給群組擁有者以供核准。
+當其開啟時，群組成員可以透過網頁上的 Outlook 邀請來賓使用者加入 Microsoft 365 群組。 邀請會傳送給群組擁有者以供核准。
 
 > [!Note]
 > 處於原生模式或[歐盟地理](https://go.microsoft.com/fwlink/?linkid=2107357)位置的 Yammer Enterprise 網路不支援網路來賓。
-> Office 365 連線的 Yammer 群組目前不支援來賓存取，但您可以在 Yammer 網路中建立未連線的外部群組。 如需相關指示，請參閱[建立及管理 Yammer 中的外部群組](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx)。
+> Microsoft 365 連線的 Yammer 群組目前不支援來賓存取，但您可以在 Yammer 網路中建立未連線的外部群組。 如需相關指示，請參閱[建立及管理 Yammer 中的外部群組](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx)。
 
 ### <a name="edit-guest-information"></a>編輯來賓資訊
 
@@ -48,11 +48,11 @@ ms.locfileid: "42894500"
 
 如果您想要啟用或停用群組中的「來賓存取」，您可以在 Microsoft 365 系統管理中心進行。
 
-1. 在系統管理中心中，移至 [**設定** \> ] **[設定]，然後選取**[ **Office 365 群組**]。
+1. 在系統管理中心中，移至 [**設定** \> ]**設定**，然後選取 [ **Microsoft 365 群組**]。
   
-2. 在 [ **Office 365 群組**] 頁面上，選擇您是否要讓組織外部人員存取群組資源，或讓群組擁有者將組織外部人員新增至群組。
+2. 在 [ **Microsoft 365 群組**] 頁面上，選擇您是否要讓組織外部人員存取群組資源，或讓群組擁有者將組織外部人員新增至群組。
 
-## <a name="add-guests-to-an-office-365-group-from-the-admin-center"></a>從系統管理中心新增來賓至 Office 365 群組
+## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>從系統管理中心新增來賓至 Microsoft 365 群組
 
 如果您的目錄中已存在來賓，您可以從 Microsoft 365 系統管理中心將其新增至您的群組。
   
@@ -62,7 +62,7 @@ ms.locfileid: "42894500"
   
 4. 選取 [**新增成員**]，然後選擇您要新增的客人名稱。
     
-5. 選取 [儲存]****。
+5. 選取 **[儲存]**。
 
 如果您想要直接將來賓新增至目錄，您可以[在 azure 入口網站中新增 Azure Active directory B2B 協同作業使用者](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator)。
 

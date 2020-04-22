@@ -1,5 +1,5 @@
 ---
-title: 手動切換商務用 Office 365 方案
+title: 手動切換 Microsoft 365 的商務方案
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,21 +21,19 @@ search.appverid:
 - BEA160
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
-description: 購買新的訂閱並確保訂閱已列出並使用中，以手動切換商務用 Office 365 訂閱。
-ms.openlocfilehash: a652053b204e84f8f2d3973eba76ead1cc7c1410
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: 購買新的訂閱並確保訂閱已列出且作用中，以手動方式切換 Microsoft 365 的商務訂閱。
+ms.openlocfilehash: e5245e333984c9d8e67b174f10cf48b2339348de
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540840"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636531"
 ---
-# <a name="switch-office-365-for-business-plans-manually"></a>手動切換商務用 Office 365 方案
+# <a name="switch-microsoft-365-for-business-plans-manually"></a>手動切換 Microsoft 365 的商務方案
 
 ::: moniker range="o365-worldwide"
-
 > [!NOTE]
-> 本文適用于舊版系統管理中心。 若要查看有關新系統管理中心的文章，請參閱[手動變更計畫](change-plans-manually.md)。 新版系統管理中心可供所有 Microsoft 365 系統管理員使用。 如需詳細資訊，請參閱[關於新的 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md)。
-
+> 本文適用于舊版系統管理中心。 若要查看有關新系統管理中心的文章，請參閱[手動變更計畫](change-plans-manually.md)。 新的系統管理中心可供所有 Microsoft 365 系統管理員使用，您可以選取 [**嘗試新**的系統管理中心] 切換（位於首頁頂端）來加入宣告。 如需詳細資訊，請參閱[關於新的 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md)。
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>步驟1：決定切換方案的方式
@@ -56,11 +54,11 @@ ms.locfileid: "43540840"
   
 - 或
   
- **購買新的訂閱與授權：** 遵循[購買其他商務用 Office 365 訂閱](../buy-another-subscription.md)中的步驟，購買新的訂閱。
+ **購買新的訂閱與授權：** 請遵循[購買其他 Microsoft 365 for business 訂閱](../buy-another-subscription.md)中的步驟，購買新的訂閱。
   
 請確認您購買的是使用者現在所在組織的訂閱。 例如，檢查您要移動之使用者的電子郵件地址。 如果他們的電子郵件地址包含 @contoso .com，您必須購買 contoso.com 的新訂閱。 針對每個您想要移動的使用者，加入一個授權。
   
- **如果您需要協助選擇計畫**，請參閱[商務用 Office 365 產品比較](https://go.microsoft.com/fwlink/p/?linkid=842056)頁面或[電話支援](../../admin/contact-support-for-business-products.md)。
+ **如果您需要協助選擇計畫**，請參閱[Microsoft 365 for business 產品比較](https://go.microsoft.com/fwlink/p/?linkid=842056)頁面或[電話支援](../../admin/contact-support-for-business-products.md)。
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>步驟3：檢查您的新訂閱與授權
 
@@ -86,7 +84,7 @@ ms.locfileid: "43540840"
 
     您要將使用者移至其中的訂閱，以及您要將使用者移至其中的訂閱，必須一起列出。 如果您第一次檢查時新的訂閱不在那裡，請稍後再試一次。 檢查這兩個訂閱均列**在 [作用中]**。 [未列出或未使用中的新訂閱](#the-new-subscription-isnt-listed-or-isnt-active)。
 
-   **新的商務用 Office 365 訂閱，含可用的授權**
+   **新的 Microsoft 365 訂閱和可用授權**
 
     ![[訂閱] 頁面，顯示新訂閱的授權數目。](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
@@ -94,7 +92,7 @@ ms.locfileid: "43540840"
 
     每個使用者都需要符合其訂閱的授權。 因此，如果您想要將十位使用者移至 Office 365 企業版 E5，您必須確定有10個授權可供使用。 在這裡的圖片中，Office 365 企業版 E5 購買了10個授權，而且所有10個授權均可供指派。
 
-4. **新訂閱需要更多授權？** 移至 [**訂閱**] 頁面，[購買商務用 Office 365 訂閱的授權](../licenses/buy-licenses.md)。
+4. **新訂閱需要更多授權？** 移至 [**訂閱**] 頁面，[購買適用于商務用 Microsoft 365 訂閱的授權](../licenses/buy-licenses.md)。
   
     [舊的授權為何？](#what-about-the-old-licenses)
 

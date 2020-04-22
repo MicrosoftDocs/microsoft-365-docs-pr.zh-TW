@@ -1,5 +1,5 @@
 ---
-title: Office 365 安全性事件回應
+title: 安全性事件回應
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,37 +15,37 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: 此解決方案會告訴您攻擊看起來會像在 Office 365，以及如何回應這些何種最常見 cybersecurity
-ms.openlocfilehash: 317e685dd9e2b2e0afbf25f0568b352c399e7b87
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 此解決方案會告訴您，在 Microsoft 365 中最常見的 cybersecurity 攻擊可能如您所述，以及如何回應它們
+ms.openlocfilehash: 4c5713a0689dae07fe5300c04754d77912f53976
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598720"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634505"
 ---
-# <a name="office-365-security-incident-response"></a>Office 365 安全性事件回應
+# <a name="security-incident-response"></a>安全性事件回應
 
- **摘要：** 此解決方案會告訴您指標是針對 Office 365 中最常見的 cybersecurity 攻擊、 如何以正面確認任何指定的攻擊，以及如何回應給它。
+ **摘要：** 此解決方案會告訴您 Office 365 中最常見的 cybersecurity 攻擊的指示器為何，如何正確確認任何指定的攻擊，以及如何對其作出回應。
 
 ## <a name="overview"></a>概觀
 
-可以阻撓並非所有網路攻擊。 攻擊者會不斷地尋找防禦策略中的新弱點或他們所利用舊的。 藉此了解如何辨識攻擊可讓您更快速地來進行回應，縮短安全性事件的持續時間。
+並非所有 cyberattacks 都可以 thwarted。 攻擊者不斷尋找防禦策略中的新弱點，或利用舊弱點。 瞭解如何辨識攻擊可讓您更快速地回應，進而縮短安全性事件的持續時間。
 
-這一系列的文章可協助您了解哪些特定類型的攻擊看起來會像在 Office 365 中，並讓您回應時，可採取的步驟。 它們是了解快速進入點：
+這一系列的文章可協助您瞭解哪些特定類型的攻擊在 Microsoft 365 中看起來可能如您所示，並提供您可以採取回應的步驟。 它們是瞭解的快速入門知識：
 
-- 查看攻擊的及其運作方式。
+- 攻擊的含義及其運作方式。
 
-- 什麼簽署時，呼叫尋找危害 (IOC)，以及如何尋找的指標。
+- 有哪些符號稱為損損（IOC），可供尋找及尋找方式。
 
-- 如何將有正面確認攻擊。
+- 如何正確確認攻擊。
 
-- 切斷攻擊，而且更有效率的所需步驟來保護您的組織在未來。
+- 要採取的步驟來剪下攻擊，並更好地保護您的組織今後的組織。
 
-- 在每個的深入資訊的連結攻擊類型。
+- 每個攻擊類型的深入資訊連結。
 
-存回以下每月為更多文章會在新增一段時間。
+每月查看一次，隨著時間的增加將新增文章。
 
-## <a name="detect-and-remediate-articles"></a>偵測並修復文章
+## <a name="detect-and-remediate-articles"></a>偵測和修正文章
 
 - [偵測並修復 Office 365 中的非法同意授權](detect-and-remediate-illicit-consent-grants.md)
 
@@ -55,12 +55,12 @@ ms.locfileid: "41598720"
 
 - [對於 Office 365 遭入侵電子郵件帳戶的回覆](responding-to-a-compromised-email-account.md)
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Office 365
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>保護 Microsoft 365 （如 cybersecurity pro）
 
-您的 Office 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。  使用 [Office 365 安全性藍圖 - 前 30 天、前 90 天前和之後的最高優先順序](security-roadmap.md)來實作 Microsoft 建議用來保護您的 Office 365 租用戶的最佳做法。
+您的 Microsoft 365 訂閱隨附一組強大的安全性功能，可讓您用來保護您的資料和使用者。  使用[microsoft 365 安全性藍圖-前30天、90天和之後的最高優先順序](security-roadmap.md)，以執行 microsoft 建議的最佳作法，以保護您的 microsoft 365 組織。
 
 - 要在前 30 天內完成的工作。  這些工作會有立即的影響，而且對您的使用者影響較低。
 
-- 要在 90 天內完成的工作。 這些需要較多時間規劃及實作，但是大幅改善您的安全性狀態
+- 要在 90 天內完成的工作。 需要更多時間來規劃及實施，但能大幅改善您的安全性狀況
 
 - 90 天之後。 這些增強功能會在您的前 90 天工作內建置。

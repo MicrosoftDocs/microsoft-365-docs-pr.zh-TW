@@ -1,5 +1,5 @@
 ---
-title: Office 365 ATP 安全連結警告頁面
+title: ATP 安全連結警告頁面
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,17 +16,17 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: 取得您在 Office 365 高級威脅防護工作時可能看到的警告頁面的概覽。
-ms.openlocfilehash: b784af4740a8379c7879935cdbf301da0cbff930
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: f061d4a35b1c77721464fe2cc5ac4a85ca4bd16e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528854"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635983"
 ---
-# <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP 安全連結警告頁面
+# <a name="atp-safe-links-warning-pages"></a>ATP 安全連結警告頁面
 
 > [!IMPORTANT]
-> 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您使用 Outlook.com、Office 365 家用版或 Office 365 個人版，並且在尋找 Outlook 中安全連結的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您使用的是 Outlook.com、Microsoft 365 系列或 Microsoft 365 個人，而且您正在尋找 Outlook 中安全連結的相關資訊，請參閱[Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 [Office 365 Advanced 威脅防護](office-365-atp.md)（ATP）可協助您的組織防禦透過功能（例如[atp 安全連結](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)和[反網路釣魚防護](anti-phishing-protection.md)）等功能的網路釣魚企圖和惡意程式碼。 保護功能到位時，會檢查電子郵件和 Office 檔中的連結（URLs）。 如果 URL 被識別為可疑或惡意的，當您按一下 url 時，可能會遭到封鎖，無法將其開啟。 您也可能會看到警告頁面，而不是直接前往網站。
 
@@ -60,7 +60,7 @@ URL 指向已識別為惡意的網站。  <br/> 建議您不要繼續進行網�
 
 ### <a name="a-site-is-blocked"></a>封鎖網站
 
-您的組織已封鎖此 URL。 有幾個原因可能會封鎖 URL。 建議您與組織的 Office 365 系統管理員聯繫。
+您的組織已封鎖此 URL。 有幾個原因可能會封鎖 URL。 建議您與組織的 Microsoft 365 for business 管理員聯繫。
 
 ![網站已遭封鎖](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 

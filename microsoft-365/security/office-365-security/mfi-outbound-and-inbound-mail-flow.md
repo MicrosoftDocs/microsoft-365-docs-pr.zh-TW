@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 系統管理員可以在安全性與合規性中心中的郵件流程儀表板了解輸出和輸入郵件流程小工具。
-ms.openlocfilehash: 5c86db8e33ff3ee1dc4d9d126239465b3c84bde5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a1070783f60edf2de62d78c3094e9c20e3dd26f3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088428"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635193"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>輸出和輸入郵件流程
 
@@ -33,19 +33,19 @@ ms.locfileid: "42088428"
 
 ## <a name="message-protected-in-transit-by-tls"></a>傳輸中郵件保護 (使用 TLS)
 
-當您在 Office 365 組織中接收及傳送郵件時，**輸出和輸入郵件流程**小工具會顯示用於連線的 TLS 加密。 與其他電子郵件服務建立的連線，若兩端都提供 TLS，則會由 TLS 進行加密。 小工具會提供上一週的郵件流程快照。 當您按一下 [檢視詳細資料]**** 時，**傳輸中郵件保護 (使用 TLS)** 彈出頁面會針對進入和離開您組織的郵件顯示 TLS 保護。
+**輸出和輸入郵件流程**構件會顯示在您的組織中傳遞郵件時，用於連線的 TLS 加密。 與其他電子郵件服務建立的連線，若兩端都提供 TLS，則會由 TLS 進行加密。 小工具會提供上一週的郵件流程快照。 當您按一下 [檢視詳細資料]**** 時，**傳輸中郵件保護 (使用 TLS)** 彈出頁面會針對進入和離開您組織的郵件顯示 TLS 保護。
 
 ![安全性與合規性中心內的傳輸中郵件保護 (使用 TLS) 彈出畫面](../../media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
 
 目前，TLS 1.2 是 Office 365 提供的最安全 TLS 版本。 通常，您必須知道用於合規性稽核的 TLS 加密為何。 您可能與來源和目的地電子郵件伺服器都沒有直接關係 (您沒有，Microsoft 也沒有)，因此您沒有許多選項可改善那些伺服器使用的 TLS 加密。
 
-不過，您可以使用 [連接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)，以確保在您電子郵件伺服器與 Office 365 之間傳送的郵件是使用最適合的 TLS 保護。 在 Office 365 和您自有電子郵件伺服器或屬於您合作夥伴的伺服器之間，電子郵件流程通常比一般郵件還要重要且敏感，因此您必須針對這些郵件套用額外的安全性和警覺性。 您可以升級或修正您自己的電子郵件伺服器，以改善正在使用的 TLS 加密，或連絡合作夥伴來執行此相同動作。 **連接器報告**會針對使用您 Office 365 連接器的郵件顯示郵件流程量和 TLS 加密。
+不過，您可以使用 [連接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)，以確保在您電子郵件伺服器與 Office 365 之間傳送的郵件是使用最適合的 TLS 保護。 在 Microsoft 365 和您自己的電子郵件伺服器之間或屬於合作夥伴的伺服器之間的郵件流程，通常比一般郵件更為重要且敏感，所以您會想要對這些郵件套用額外的安全性和 vigilance。 您可以升級或修正您自己的電子郵件伺服器，以改善正在使用的 TLS 加密，或連絡合作夥伴來執行此相同動作。 **連接器報告**會顯示使用 Microsoft 365 連接器之郵件的郵件流程數量和 TLS 加密。
 
 ## <a name="connector-report"></a>連接器報告
 
-當您在 [傳輸中郵件保護 (使用 TLS)]**** 彈出畫面中按一下 [連接器報告]**** 時，報告會顯示使用連接器在 Office 365 組織接受和傳送的郵件相關資訊。 您可以在自己的電子郵件伺服器與 Office 365 之間，或您夥伴的伺服器與 Office 365 之間使用連接器。 這會提供每個連接器的郵件量，以及用於連線的 TLS 加密。 此外，您也可以在不使用連接器的情況下，檢視在 Office 365 中傳送或接收的郵件資料。
+當您從 [**傳輸中受保護的郵件] （透過 TLS）** 浮出控制項中按一下 [**連接器報告**] 連結時，報告會顯示從您的組織中使用連接器來傳遞及傳送之郵件的相關資訊。 您可以使用您自己的電子郵件伺服器與 Microsoft 365 或您的夥伴的伺服器和 Office 365 之間的連接器。 這會提供每個連接器的郵件量，以及用於連線的 TLS 加密。 此外，您也可以在未使用連接器的情況下，查看在 Microsoft 365 中傳送或接收的郵件資料。
 
-[郵件流程]**** 檢視會顯示過去一周內透過連接器進行的郵件量。 若要變更日期範圍，請選取 [篩選]****，您可以在此將範圍增加到最多 30 天。 [所有郵件流程]**** 檢視會顯示透過所有連接器在您 Office 365 組織中傳送及接收的所有郵件流程。 您可以按照名稱在下拉式功能表中選取特定的連接器。
+[郵件流程]**** 檢視會顯示過去一周內透過連接器進行的郵件量。 若要變更日期範圍，請選取 [篩選]****，您可以在此將範圍增加到最多 30 天。 [**所有郵件流程**] 視圖會透過所有連接器顯示組織中的所有郵件流程。 您可以按照名稱在下拉式功能表中選取特定的連接器。
 
 您可以從下拉式清單中選取 [TLS 使用狀況]**** 檢視，以查看透過連接器進行的 TLS 郵件保護細項。 就像 **TLS 概觀報告**一樣，此檢視會顯示不同 TLS 版本的百分比。 在 TLS 1.0 連線中，您必須先將電子郵件伺服器或合作夥伴的伺服器升級或修正，以避免 Office 365 終將不支援 TLS 1.0 的問題。 如需詳細資訊，請參閱[關於 Office 365 中加密的技術參考細節](https://docs.microsoft.com/microsoft-365/compliance/technical-reference-details-about-encryption)。
 

@@ -12,12 +12,12 @@ ms.collection:
 ms.service: O365-seccomp
 localization_priority: Priority
 description: 了解 Microsoft 365 如何協助將能源組織移轉至現代共同作業平台，同時協助確保資料和系統安全性及遵循各種法規
-ms.openlocfilehash: d1585fdb69736a82699cdff8ef7a641ccff45194
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 536c895a52024845d8e37c5a7c0b63ba1b2c2752
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43231032"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637185"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>能源產業的重要合規性與安全性考量
 :::image type="content" source="../media/solution-arch-center/MSC17_global_016.png" alt-text="使用雲端的各種產業全球檢視圖例比喻":::

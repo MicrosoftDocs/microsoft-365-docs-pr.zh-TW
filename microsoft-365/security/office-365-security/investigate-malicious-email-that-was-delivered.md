@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何使用威脅調查和回應功能來尋找並調查惡意的電子郵件。
-ms.openlocfilehash: 1b7cef7f079023dd88fe3f04eb1b7d159c4157ef
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: ec70bc585d4067357c9871cffc7475357fbfb5bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955612"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634131"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>調查並修復 Office 365 中傳遞的惡意電子郵件
 
@@ -34,24 +34,24 @@ ms.locfileid: "42955612"
   
 - 您的組織已將[Office 365 高級威脅防護](office-365-atp.md)和[授權指派給使用者](../../admin/manage/assign-licenses-to-users.md)。
     
-- 您的組織已開啟[Office 365 審核記錄](../../compliance/turn-audit-log-search-on-or-off.md)。 
+- 您的組織已開啟[審核記錄](../../compliance/turn-audit-log-search-on-or-off.md)。 
     
 - 您的組織有為反垃圾郵件、反惡意程式碼、反網路釣魚等定義的原則。 請參閱[防禦 Office 365 中的威脅](protect-against-threats.md)。
     
-- 您是 Office 365 全域系統管理員，或您已在安全性&amp;與合規性中心內指派安全性管理員或搜尋和清除角色。 請參閱[Office 365 安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。 在某些動作中，您也必須已指派新的預覽角色。 
+- 您是全域系統管理員，或您已在安全性&amp;與合規性中心內指派安全性管理員或搜尋和清除角色。 請參閱[安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。 在某些動作中，您也必須已指派新的預覽角色。 
 
 #### <a name="preview-role-permissions"></a>預覽角色許可權
 
-若要執行某些動作（例如，查看郵件頭或下載電子郵件內容），您必須要有一個名為*Preview*的新角色，以新增至另一個適當的 Office 365 角色群組。 下表說明必要的角色和許可權。
+若要執行某些動作，例如：查看郵件頭或下載電子郵件內容，您必須將名為*Preview*的新角色新增至另一個適當的角色群組。 下表說明必要的角色和許可權。
 
 |活動  |角色群組 |需要預覽角色？  |
 |---------|---------|---------|
-|使用威脅瀏覽器（和即時偵測）來分析威脅     |Office 365 全域管理員 <br> 安全性系統管理員 <br> 安全性讀取者     | 否   |
-|使用威脅瀏覽器（和即時偵測）來查看電子郵件訊息的標題，以及預覽及下載隔離的電子郵件    |Office 365 全域管理員 <br> 安全性系統管理員 <br>安全性讀取者   |       否  |
-|使用威脅瀏覽器來查看標頭，並下載傳送至信箱的電子郵件     |Office 365 全域管理員 <br>安全性系統管理員 <br> 安全性讀取者 <br> 預覽   |   是      |
+|使用威脅瀏覽器（和即時偵測）來分析威脅     |全域管理員 <br> 安全性系統管理員 <br> 安全性讀取者     | 否   |
+|使用威脅瀏覽器（和即時偵測）來查看電子郵件訊息的標題，以及預覽及下載隔離的電子郵件    |全域管理員 <br> 安全性系統管理員 <br>安全性讀取者   |       否  |
+|使用威脅瀏覽器來查看標頭，並下載傳送至信箱的電子郵件     |全域管理員 <br>安全性系統管理員 <br> 安全性讀取者 <br> 預覽   |   是      |
 
 > [!NOTE]
-> *Preview*是角色，不是角色群組;預覽角色必須新增至 Office 365 的現有角色群組。 Office 365 全域系統管理員角色會指派給 Microsoft 365 系統管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)），而且安全性管理員和安全性讀取者角色會指派于 Office 365 安全性 & 規範中心（[https://protection.office.com](https://protection.office.com)）。 若要深入瞭解角色和許可權，請參閱[Office 365 Security & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+> *Preview*是角色，不是角色群組;預覽角色必須新增至 Office 365 的現有角色群組。 全域系統管理員角色會指派 Microsoft 365 系統管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)），並在安全性 & 規範中心（[https://protection.office.com](https://protection.office.com)）中指派安全性管理員和安全性讀取者角色。 若要深入瞭解角色和許可權，請參閱[安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>尋找和刪除已傳遞的可疑電子郵件
 
