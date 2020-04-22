@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 當您完成設定 Office 365 郵件加密（OME）後，您可以採用多種方式自訂部署的設定。 例如，您可以設定是否要啟用一次性傳送碼，在 Outlook 網頁版中顯示 [保護] 按鈕，等等。 本文中的工作會說明如何進行這項作業。
-ms.openlocfilehash: c235205535b4871deb1963a9113a82429917b75e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: dd69266cccb1d04bc9ed3938b16bac45ca68b4a9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634341"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635883"
 ---
 # <a name="manage-office-365-message-encryption"></a>管理 Office 365 郵件加密
 
@@ -30,7 +30,7 @@ ms.locfileid: "42634341"
 
 ## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>管理 Google、Yahoo 和 Microsoft 帳戶收件者是否可以使用這些帳戶登入 Office 365 郵件加密入口網站
 
-當您設定新的 Office 365 郵件加密功能時，您組織中的使用者可以傳送郵件給您的 Office 365 組織外的收件者。 如果收件者使用的*社交識別碼*，例如 Google Account、Yahoo 帳戶或 Microsoft 帳戶，收件者便可使用社交識別碼登入 OME 入口網站。 如有需要，您可以選擇不允許收件者使用社交 IDs 登入 OME 入口網站。
+當您設定新的 Office 365 郵件加密功能時，您組織中的使用者可以傳送郵件給組織外部的收件者。 如果收件者使用的*社交識別碼*，例如 Google Account、Yahoo 帳戶或 Microsoft 帳戶，收件者便可使用社交識別碼登入 OME 入口網站。 如有需要，您可以選擇不允許收件者使用社交 IDs 登入 OME 入口網站。
   
 ### <a name="to-manage-whether-recipients-can-use-social-ids-to-sign-in-to-the-ome-portal"></a>管理收件者是否可以使用社交 IDs 登入 OME 入口網站
   
@@ -60,7 +60,7 @@ ms.locfileid: "42634341"
   
 ### <a name="to-manage-whether-ome-generates-one-time-pass-codes"></a>若要管理 OME 是否會產生一次的傳遞碼
   
-1. 使用 Office 365 組織中具有全域系統管理員許可權的工作或學校帳戶，並啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，並啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
 
 2. 使用 OTPEnabled 參數執行 Set-OMEConfiguration Cmdlet：
 
@@ -86,7 +86,7 @@ ms.locfileid: "42634341"
   
 ### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>若要管理 [加密] 按鈕是否顯示于網頁上的 Outlook
   
-1. 使用 Office 365 組織中具有全域系統管理員許可權的工作或學校帳戶，並啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，並啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
 
 2. 使用-SimplifiedClientAccessEnabled 參數執行 Set-IRMConfiguration Cmdlet：
 
@@ -108,7 +108,7 @@ ms.locfileid: "42634341"
 
 ## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>為 iOS 郵件 app 使用者啟用電子郵件的服務端解密
 
-IOS 的郵件應用程式無法解密使用 Office 365 郵件加密保護的郵件。 做為 Office 365 系統管理員，您可以對傳送至 iOS 郵件應用程式的郵件套用服務端解密。 當您選擇使用服務端解密時，服務會將郵件的解密複本傳送至 iOS 裝置。 用戶端裝置會儲存郵件的解密複本。 即使 iOS 的郵件應用程式不會對使用者套用用戶端使用許可權，郵件也會保留使用權利的相關資訊。 使用者可以複製或列印郵件，即使他們最初並未具有這麼做的權力。 不過，如果使用者嘗試完成需要 Office 365 郵件伺服器的動作（例如轉寄郵件），如果使用者原來未使用此方法，則伺服器將不會允許執行該動作。 不過，使用者可以從 iOS 郵件應用程式內的不同帳戶轉送郵件，以解決「不要轉寄」使用限制。 不論您是否設定郵件的服務端解密，加密和受版權保護的郵件附件都無法在 iOS 郵件應用程式中查看。
+IOS 的郵件應用程式無法解密使用 Office 365 郵件加密保護的郵件。 做為 Microsoft 365 系統管理員，您可以對傳送至 iOS 郵件應用程式的郵件套用服務端解密。 當您選擇使用服務端解密時，服務會將郵件的解密複本傳送至 iOS 裝置。 用戶端裝置會儲存郵件的解密複本。 即使 iOS 的郵件應用程式不會對使用者套用用戶端使用許可權，郵件也會保留使用權利的相關資訊。 使用者可以複製或列印郵件，即使他們最初並未具有這麼做的權力。 不過，如果使用者嘗試完成需要 Microsoft 365 郵件伺服器的動作（例如轉寄郵件），如果使用者原來未使用此方法，則伺服器將不會允許執行該動作。 不過，使用者可以從 iOS 郵件應用程式內的不同帳戶轉送郵件，以解決「不要轉寄」使用限制。 不論您是否設定郵件的服務端解密，加密和受版權保護的郵件附件都無法在 iOS 郵件應用程式中查看。
   
 如果您選擇 [不允許將解密的郵件傳送至 iOS 郵件 app 使用者]，使用者會收到訊息，指出他們沒有查看郵件的許可權。 根據預設，不會啟用電子郵件的服務端解密。
   
@@ -116,7 +116,7 @@ IOS 的郵件應用程式無法解密使用 Office 365 郵件加密保護的郵�
   
 ### <a name="to-manage-whether-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>若要管理 iOS 郵件應用程式使用者是否可以查看 Office 365 郵件加密所保護的郵件
   
-1. 使用 Office 365 組織中具有全域系統管理員許可權的工作或學校帳戶，並啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，並啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
 
 2. 使用 AllowRMSSupportForUnenlightenedApps 參數執行 ActiveSyncOrganizations Cmdlet：
 
@@ -141,19 +141,19 @@ IOS 的郵件應用程式無法解密使用 Office 365 郵件加密保護的郵�
 
 ## <a name="enable-service-side-decryption-of-email-attachments-for-web-browser-mail-clients"></a>啟用 web 瀏覽器郵件用戶端的電子郵件附件的服務端解密
 
-在一般情況下，當您使用 Office 365 郵件加密時，會自動加密附件。 做為 Office 365 系統管理員，您可以對使用者從網頁瀏覽器下載的電子郵件附件套用服務端解密。
+在一般情況下，當您使用 Office 365 郵件加密時，會自動加密附件。 身為管理員，您可以對使用者從網頁瀏覽器下載的電子郵件附件套用服務端解密。
   
-當您使用服務端解密時，服務會將檔的解密複本傳送至裝置。 郵件仍加密。 電子郵件附件也會保留使用權利的相關資訊，即使瀏覽器並未對使用者套用用戶端使用許可權。 使用者可以複製或列印電子郵件附件，即使他們最初並未具有這麼做的權力。 不過，如果使用者嘗試完成需要 Office 365 郵件伺服器的動作（例如轉寄附件），如果使用者原來未使用此方法，則伺服器不會允許執行動作。
+當您使用服務端解密時，服務會將檔的解密複本傳送至裝置。 郵件仍加密。 電子郵件附件也會保留使用權利的相關資訊，即使瀏覽器並未對使用者套用用戶端使用許可權。 使用者可以複製或列印電子郵件附件，即使他們最初並未具有這麼做的權力。 不過，如果使用者嘗試完成需要 Microsoft 365 郵件伺服器的動作（例如轉寄附件），如果使用者原來未使用此方法，則伺服器將不會允許執行該動作。
   
 不論是否設定附件的服務端解密，使用者都無法在 iOS 郵件應用程式中查看加密和受版權保護之郵件的任何附件。
   
 如果您選擇不允許解密的電子郵件附件，也就是預設值，使用者會收到訊息，指出他們沒有查看附件的許可權。
   
-如需 Office 365 如何使用僅限「加密」選項對電子郵件和電子郵件附件進行加密的詳細資訊，請參閱[email 的唯讀選項。](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
+如需 Microsoft 365 如何使用僅限「加密」選項對電子郵件和電子郵件附件進行加密的詳細資訊，請參閱[電子郵件的唯讀選項。](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
   
 ### <a name="to-manage-whether-email-attachments-are-decrypted-on-download-from-a-web-browser"></a>管理從網頁瀏覽器下載電子郵件附件是否解密
   
-1. 使用 Office 365 組織中具有全域系統管理員許可權的工作或學校帳戶，並啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，並啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
 
 2. 使用 DecryptAttachmentForEncryptOnly 參數執行 Set-IRMConfiguration Cmdlet：
 
@@ -179,7 +179,7 @@ IOS 的郵件應用程式無法解密使用 Office 365 郵件加密保護的郵�
 
 ### <a name="use-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email"></a>使用自訂範本強制所有外部收件者都使用 OME 入口網站和加密的電子郵件
 
-1. 使用 Office 365 組織中具有全域系統管理員許可權的工作或學校帳戶，並啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，並啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
 
 2. 執行 New-TransportRule Cmdlet：
 
@@ -217,7 +217,7 @@ IOS 的郵件應用程式無法解密使用 Office 365 郵件加密保護的郵�
   
 ### <a name="to-disable-the-new-capabilities-for-ome"></a>停用 OME 的新功能
   
-1. 在您的 Office 365 組織中使用具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
 
 2. 如果您已在網頁上的 Outlook 中啟用 [**加密**] 按鈕，請使用 SimplifiedClientAccessEnabled 參數執行 Set-IRMConfiguration Cmdlet 以將其停用。 否則，請略過此步驟。
 

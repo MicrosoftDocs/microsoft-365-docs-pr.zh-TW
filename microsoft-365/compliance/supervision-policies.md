@@ -1,6 +1,6 @@
 ---
 title: 監督原則
-description: 深入瞭解 Office 365 中的監察原則
+description: 了解監督原則
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,17 +18,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 33cd1e9956410c66c21c6b4279416df5358f4adf
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+titleSuffix: Microsoft 365 Compliance
+ms.openlocfilehash: efdb1c7879f00c48e8588b5b9312dad106dc8992
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604080"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626967"
 ---
-# <a name="supervision-policies-in-office-365"></a>Office 365 中的監督原則
+# <a name="supervision-policies"></a>監督原則
 
-Office 365 中的監督原則可讓您透過指定的檢閱者擷取要進行檢查的員工通訊。 您可以定義特定原則，以在您的組織中捕獲內部及外部電子郵件、Microsoft 小組或協力廠商通訊。 然後，檢閱者可以檢閱郵件，以確定郵件符合您組織的郵件標準，並使用分類類型解析郵件。
+Microsoft 365 中的監督原則可讓您透過指定的檢閱者，捕獲員工的通訊以進行檢查。 您可以定義特定原則，以在您的組織中捕獲內部及外部電子郵件、Microsoft 小組或協力廠商通訊。 然後，檢閱者可以檢閱郵件，以確定郵件符合您組織的郵件標準，並使用分類類型解析郵件。
 
 這些原則也可協助您克服許多現代的相容性挑戰，包括：
 
@@ -36,7 +36,7 @@ Office 365 中的監督原則可讓您透過指定的檢閱者擷取要進行檢
 - 不斷增加的郵件資料量
 - 規章強制執行 & 遭到罰款的風險
 
-在某些組織中，IT 支援和規範管理群組之間可能會有不同的職責。 Office 365 支援監察性原則功能設定與捕獲通訊原則設定之間的分隔。 例如，組織的 IT 群組可能負責設定角色許可權和群組，以支援由組織的合規性小組所設定及管理的監督原則。
+在某些組織中，IT 支援和規範管理群組之間可能會有不同的職責。 Microsoft 365 支援監察性原則功能設定與所捕獲通訊原則設定之間的分隔。 例如，組織的 IT 群組可能負責設定角色許可權和群組，以支援由組織的合規性小組所設定及管理的監督原則。
 
 如需監督原則的快速流覽，請參閱[Microsoft 機械通道](https://www.youtube.com/user/OfficeGarageSeries)上的[監管原則影片](https://youtu.be/C3Y8WZ7o_dI)。
 
@@ -44,13 +44,13 @@ Office 365 中的監督原則可讓您透過指定的檢閱者擷取要進行檢
 
 想要在 Microsoft 365 中嘗試新的通訊相容性體驗嗎？ 請參閱[Microsoft 365 中的通訊法規遵從性](communication-compliance.md)中可用的新增及增強功能。
 
-## <a name="transitioning-from-supervision-in-office-365"></a>從 Office 365 的監察過渡
+## <a name="transitioning-from-supervision"></a>從監察中轉換
 
-組織使用 Office 365 中的監察原則，並[在 Microsoft 365 中將其轉換為通訊法規遵從性原則](communication-compliance.md)時，需要瞭解這些重要的要點：
+使用監察原則及規劃，以[在 Microsoft 365 中轉換至通訊合規性原則的](communication-compliance.md)組織，必須瞭解這些重要的要點：
 
-- Office 365 中的監督解決方案將會完全取代于 Microsoft 365 中的通訊相容性解決方案。 針對從監察原則過渡到通訊合規性的組織，建議在通訊合規性中建立新原則，這些原則與現有的監督原則具有相同的*條件*，以啟用新的調查和修正功能。 當轉換為 Microsoft 365 中的通訊法規遵從性時，如果您有內部合規性保留原則需求，您應該規劃從 Office 365 中的監察權匯出報表資料。
+- Microsoft 365 中的監督解決方案將會完全取代于 Microsoft 365 中的通訊相容性解決方案。 針對從監察原則過渡到通訊合規性的組織，建議在通訊合規性中建立新原則，這些原則與現有的監督原則具有相同的*條件*，以啟用新的調查和修正功能。 當轉換為 Microsoft 365 中的通訊法規遵從性時，如果您有內部合規性保留原則需求，您應該規劃從監察中匯出報表資料。
 - 在過渡期間，組織可以同時使用這兩種解決方案，直到完全遷移，但每個解決方案中所用的原則都必須有*唯一的原則名稱*。 群組和自訂關鍵字字典可以在過渡期間內共用方案。
-- Office 365 原則相符中所儲存的監察性郵件，無法在 Microsoft 365 中移動或共用到通訊合規性中。
+- Microsoft 365 原則相符專案中所儲存的監察性郵件，無法在 Microsoft 365 中移動或共用至通訊合規性。
 
 如需 Office 365 中監督的退休資訊，請參閱[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)以取得詳細資訊。
 
@@ -78,7 +78,7 @@ Office 365 中的監督原則可讓您透過指定的檢閱者擷取要進行檢
 
 ### <a name="supervised-users"></a>監督的使用者
 
-開始使用監督之前，必須先判斷誰需要查看其通訊。 在原則中，使用者電子郵件地址可識別要監督的個人或人員群組。 這些群組的一些範例是 Office 365 群組、Exchange 型通訊群組清單和 Microsoft 小組頻道。 您也可以從監督的群組或群組清單中排除特定的使用者或群組。
+開始使用監督之前，必須先判斷誰需要查看其通訊。 在原則中，使用者電子郵件地址可識別要監督的個人或人員群組。 這些群組的一些範例是 Microsoft 365 群組、Exchange 型通訊群組清單和 Microsoft 小組頻道。 您也可以從監督的群組或群組清單中排除特定的使用者或群組。
 
 >[!IMPORTANT]
 >監控原則所監控的使用者，必須具備 Microsoft 365 E5 相容性授權、具有高級合規性附加元件的 Office 365 企業版 E3 授權，或是包含在 Office 365 企業版 E5 訂閱中，或包含在 Microsoft 365 E5 訂閱中。如果您沒有現有的企業版 E5 計畫，而且想要嘗試監督，您可以[註冊 Office 365 Enterprise e5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
@@ -91,24 +91,24 @@ Office 365 中的監督原則可讓您透過指定的檢閱者擷取要進行檢
 
 若要簡化您的設定，請為需要查看其通訊的使用者建立群組，並為查看那些通訊的使用者群組。 如果您正在使用群組，可能需要數個。 例如，如果您想要監視兩個不同的使用者群組之間的通訊，或是想要指定未監督的群組。
 
-當您為監督的使用者選取 Office 365 群組時，該原則會監控共用 Office 365 信箱的內容，以及與群組相關聯的 Microsoft 小組頻道。 當您選取通訊群組清單時，該原則會監控個別的使用者信箱。
+當您為監督的使用者選取 Microsoft 365 群組時，該原則會監控共用信箱的內容，以及與群組相關聯的 Microsoft 小組通道。 當您選取通訊群組清單時，該原則會監控個別的使用者信箱。
 
 ### <a name="supported-communication-types"></a>支援的通訊類型
 
 透過監察原則，您可以選擇在下列一或多個通訊平臺中監視郵件：
 
-- **Exchange 電子郵件：** 在 Exchange Online 上主控的信箱是 Office 365 訂閱的一部分，都符合郵件監督的資格。 電子郵件和附件符合監管原則條件立即可用於監控和監督報告。 支援的監察附件類型與[Exchange 郵件流程規則內容檢查支援的檔案類型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
+- **Exchange 電子郵件：** 在 Exchange Online 上主控的信箱是 Microsoft 365 訂閱的一部分，都符合郵件監督。 電子郵件和附件符合監管原則條件立即可用於監控和監督報告。 支援的監察附件類型與[Exchange 郵件流程規則內容檢查支援的檔案類型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
 
 - **Microsoft 團隊：** 公開和私人 Microsoft 小組通道和個別聊天中的聊天通訊和相關聯的附件都會受到監督。 小組聊天符合監管原則條件的處理頻率為24小時一次，並可在監督報告中進行監視。 使用下列群組管理設定來監督小組中個別的使用者聊天與通道通訊：
 
     - **針對團隊聊天監察：** 指派個別使用者或指派[通訊群組](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)至監管原則。 這適用于1對1或1對許多的使用者/聊天關聯。
-    - 若**為小組通道通訊：** 將您想要監視的每個 Microsoft 小組通道或 Office 365 群組指派給監管原則，其中包含特定的使用者。 如果您將相同使用者新增至其他 Microsoft 團隊通道或 Office 365 群組，請務必將這些新的通道和群組新增至監管原則。
+    - 若**為小組通道通訊：** 將您想要監視的每個 Microsoft 小組通道或 Microsoft 365 群組指派給監管原則，其中包含特定使用者。 如果您將相同使用者新增至其他 Microsoft 小組通道或 Microsoft 365 群組，請務必將這些新的通道和群組新增至監管原則。
 
 - **商務用 Skype Online：** 可監督商務用 Skype Online 中的聊天通訊和相關聯的附件。 商務用 Skype Online 聊天符合監管原則條件的處理頻率為每24小時一次，且可用於監控和監察報告。 受監視的聊天對話是源自[先前在商務用 Skype Online 中所儲存的交談](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)。  在商務用 Skype Online 中使用下列群組管理設定來監督使用者聊天通訊：
 
     - 若**為商務用 Skype Online 研討監察專案：** 指派個別使用者或指派[通訊群組](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)至監管原則。 這適用于1對1或1對許多的使用者/聊天關聯。
 
-- **協力廠商來源：** 您可以監督來自協力廠商來源（如 Facebook 或 DropBox）的通訊，以取得您組織中的 Office 365 信箱匯入的資料。 [瞭解如何將協力廠商資料匯入 Office 365](archiving-third-party-data.md)。
+- **協力廠商來源：** 您可以監督來自協力廠商來源（如 Facebook 或 DropBox）的通訊，以用於匯入到組織中信箱的資料。 [瞭解如何匯入協力廠商資料](archiving-third-party-data.md)。
 
 依預設，每個原則都會保留每個原則所捕獲的通訊，即使使用者離開您的組織而且其信箱已刪除也是一樣。
 
@@ -124,7 +124,7 @@ Office 365 中的監督原則可讓您透過指定的檢閱者擷取要進行檢
 
 #### <a name="sensitive-information-types"></a>敏感性資訊類型
 
-您可以選擇在監管原則中包含敏感資訊類型。 敏感資訊類型是預先定義或自訂的資料類型，可協助識別及保護信用卡號碼、銀行帳戶號碼、護照號碼等等。 「Office 365[資料遺失防護」（DLP）](data-loss-prevention-policies.md)的一部分，敏感資訊設定可使用模式、字元鄰近性、信賴層級，甚至是自訂資料類型，協助識別及標記可能機密的內容。 預設的機密資訊類型包括：
+您可以選擇在監管原則中包含敏感資訊類型。 敏感資訊類型是預先定義或自訂的資料類型，可協助識別及保護信用卡號碼、銀行帳戶號碼、護照號碼等等。 「[資料遺失防護」（DLP）](data-loss-prevention-policies.md)的一部分，敏感資訊設定可使用模式、字元鄰近性、信賴層級，甚至是自訂資料類型，協助識別及標記可能機密的內容。 預設的機密資訊類型包括：
 
 - 金融業
 - 醫療與健康情況
@@ -183,7 +183,7 @@ Office 365 中的監督原則可讓您透過指定的檢閱者擷取要進行檢
   
 ##### <a name="enter-multiple-conditions"></a>輸入多個條件
 
-如果您輸入多個條件，Office 365 會同時使用所有條件，以決定何時將原則套用至通訊專案。 當您設定多個條件時，必須符合原則才能套用的所有條件，除非您輸入例外狀況。 例如，如果郵件包含 "商貿" 一詞，且大小超過 2 MB，您就需要套用原則。 不過，如果郵件也包含「由 Contoso 金融核准」一詞，則不應套用此原則。 因此，在此情況下，三個條件如下：
+如果您輸入多個條件，則 Microsoft 365 會同時使用所有條件，以決定何時將原則套用至通訊專案。 當您設定多個條件時，必須符合原則才能套用的所有條件，除非您輸入例外狀況。 例如，如果郵件包含 "商貿" 一詞，且大小超過 2 MB，您就需要套用原則。 不過，如果郵件也包含「由 Contoso 金融核准」一詞，則不應套用此原則。 因此，在此情況下，三個條件如下：
   
 - **郵件包含下列任何文字**，關鍵字為 "商貿"
 
@@ -263,7 +263,7 @@ Office 365 中的監督原則可讓您透過指定的檢閱者擷取要進行檢
   
 |**標記類型**|**含義**|
 |:-----|:-----|
-| **未檢查** | 尚未檢查的電子郵件數目。 這些電子郵件在「Office 365 監督」儀表板中等候審閱。
+| **未檢查** | 尚未檢查的電子郵件數目。 這些電子郵件在 Microsoft 365 監督儀表板中等候審閱。
 | **Compliant** | 已複查並標示為相容的電子郵件數目。 這些訊息仍然需要解決。 |
 | **有疑問的** | 已複查並標示為可疑的電子郵件數目。 做為其他檢閱者的標誌，以協助檢查電子郵件是否需要針對法規遵從性進行調查。 這些訊息仍然需要解決。 |
 | **不相容（主動）** | 檢閱者目前正在調查的非相容電子郵件數目。 |
@@ -279,7 +279,7 @@ Office 365 中的監督原則可讓您透過指定的檢閱者擷取要進行檢
 
 在某些情況下，您必須提供資訊給法規或合規性審計員，以證明員工活動和通訊的監管。 這可能是與定義的原則或任何時刻監管原則變更相關之所有監察作業的摘要。 監督原則具有內建的審計追蹤，可完成內部或外部審計的完整準備工作。 監督原則所監控之每個動作的詳細審計歷史記錄，都提供監督程式的證明。
 
-下列監察原則活動會在整合的 Office 365 審核記錄檔中進行審核和使用：
+在整合的審計記錄檔中，會審核和使用下列監督原則活動：
 
 |**活動**|**關聯的命令**|
 |:-----|:-----|

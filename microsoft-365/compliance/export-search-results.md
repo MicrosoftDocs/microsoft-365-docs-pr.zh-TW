@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '將安全性 & 合規性中心的內容搜尋中的搜尋結果匯出至本機電腦。 電子郵件結果會匯出為 PST 檔案。 從 SharePoint 和 OneDrive 商務網站的內容會匯出為原生 Office 檔。 '
-ms.openlocfilehash: 5789244314a945937791d360962ad398f87f9bd4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3b9997b11763d91357e53d12ef70ffb025a04d74
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634931"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615987"
 ---
 # <a name="export-content-search-results"></a>匯出內容搜尋結果
 
@@ -56,7 +56,7 @@ ms.locfileid: "42634931"
     
   > [!NOTE]
   > <sup>1</sup> Microsoft 不會製造協力廠商擴充模組或 ClickOnce 應用程式的附加元件。 使用不受支援的瀏覽器匯出搜尋結果時，不支援協力廠商分機或附加元件。<br/>
-  > <sup>2</sup>由於 Microsoft Edge 的最近變更，因此預設不再啟用 ClickOnce 支援。 如需在 Edge 中啟用 ClickOnce 支援的相關指示，請參閱[使用 Microsoft Edge 中的 Office 365 EDiscovery 匯出工具](configure-edge-to-export-search-results.md)。
+  > <sup>2</sup>由於 Microsoft Edge 的最近變更，因此預設不再啟用 ClickOnce 支援。 如需在 Edge 中啟用 ClickOnce 支援的相關指示，請參閱[使用 Microsoft Edge 中的 EDiscovery 匯出工具](configure-edge-to-export-search-results.md)。
     
 - 當您下載搜尋結果時（如步驟2所述），您可以在用來匯出搜尋結果的電腦上設定 Windows 登錄設定，以提升下載速度。 如需詳細資訊，請參閱[在從 Office 365 匯出 eDiscovery 搜尋結果時，提高下載速度](increase-download-speeds-when-exporting-ediscovery-results.md)。
     
@@ -87,7 +87,7 @@ ms.locfileid: "42634931"
   
 1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用公司或學校帳戶登入 Office 365。
+2. 使用您的公司或學校帳戶登入。
     
 3. 在安全性 & 規範中心的左窗格中，按一下 [**搜尋** \> **內容搜尋**]。
     
@@ -160,7 +160,7 @@ ms.locfileid: "42634931"
   
 3. 按一下 [**下載結果**]。
     
-4. 如果系統提示您安裝**MicrosoftOffice 365 EDiscovery 匯出工具**，請按一下 [**安裝**]。
+4. 如果系統提示您安裝**EDiscovery 匯出工具**，請按一下 [**安裝**]。
     
 5. 在 [ **EDiscovery 匯出工具**] 中，在適當的方塊中貼上您在步驟2中複製的匯出金鑰。
     
@@ -212,7 +212,7 @@ ms.locfileid: "42634931"
     
 - 預設可匯出的 PST 檔案大小上限為 10 GB。 這表示如果使用者信箱的搜尋結果大於 10 GB，則信箱的搜尋結果會匯出至兩個（或多個）個別的 PST 檔案。 如果您選擇在單一 PST 檔案中匯出所有搜尋結果，當搜尋結果的總大小超過 10 GB 時，PST 檔案會 spilt 至其他 PST 檔案。 如果您想要變更此預設大小，您可以在用來匯出搜尋結果的電腦上編輯 Windows 登錄。 [在匯出 eDiscovery 搜尋結果時，請參閱變更 PST 檔案的大小](change-the-size-of-pst-files-when-exporting-results.md)。
     
-    此外，除非單一信箱的內容超過 10 GB，否則不會將特定信箱的搜尋結果分割在多個 PST 檔案中。 如果您選擇將搜尋結果匯出至一個 PST 檔案中，其中包含單一資料夾中的所有郵件，且搜尋結果大於 10 GB，則專案仍會以時間順序進行組織，所以這些專案會根據傳送的時間順序進行組織日期。
+    此外，除非單一信箱的內容超過 10 GB，否則不會將特定信箱的搜尋結果分割在多個 PST 檔案中。 如果您選擇在一個 PST 檔案中匯出搜尋結果，其中包含單一資料夾中的所有郵件，且搜尋結果大於 10 GB，則專案仍會以時間順序進行組織，所以這些專案會根據傳送日期 spilt 到其他 PST 檔案中。
      
  ### <a name="export-reports"></a>匯出報告
   

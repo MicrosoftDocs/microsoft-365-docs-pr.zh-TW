@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: '深入瞭解您可以使用安全性 & 合規性中心的內容搜尋工具，在 Exchange Online 信箱中，以及使用 SharePoint 或 OneDrive 進行商務網站的或中搜尋的電子郵件和檔案屬性。  '
-ms.openlocfilehash: 83cd28ba45de027cb899fa6d84369dae9dfc50fc
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: e995f92ad762d06ab69084af3e1ea983b4d3e538
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105995"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636171"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>內容搜尋的關鍵字查詢和搜尋條件
 
@@ -56,13 +56,13 @@ ms.locfileid: "43105995"
 |密件副本|電子郵件訊息的 [密件副本] 欄位。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|所有範例都傳回具有 Pilar Pinilla 的郵件，包含在 [密件副本] 欄位中。|
 |類別| 要搜尋的類別。 使用者可以使用 Outlook 或 Outlook 網頁版（以前稱為 Outlook Web App）定義類別。 可能的值如下：  <br/><br/>  藍色  <br/>  綠色  <br/>  橙  <br/>  紫色  <br/>  紅  <br/>  黃色|`category:"Red Category"`|來源信箱中已指派紅色類別的郵件。|
 |副本|電子郵件訊息的 [副本] 欄位。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|在這兩個範例中，在 [副本] 欄位中指定 Pilar Pinilla 的郵件。|
-|Folderid|特定信箱資料夾的資料夾識別碼（GUID）。 如果您使用此屬性，請務必搜尋指定資料夾所在的信箱。 只會搜尋指定的資料夾。 不會搜尋資料夾中的任何子資料夾。 若要搜尋子資料夾，您必須使用 Folderid 屬性做為您想要搜尋的子資料夾。  <br/> 如需搜尋 Folderid 屬性和使用腳本來取得特定信箱之資料夾 IDs 的詳細資訊，請參閱[在 Office 365 中使用內容搜尋來尋找目標集合](use-content-search-for-targeted-collections.md)。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|第一個範例會傳回指定之信箱資料夾中的所有專案。 第二個範例會傳回 garthf@contoso.com 所傳送或接收的指定信箱資料夾中的所有專案。|
+|Folderid|特定信箱資料夾的資料夾識別碼（GUID）。 如果您使用此屬性，請務必搜尋指定資料夾所在的信箱。 只會搜尋指定的資料夾。 不會搜尋資料夾中的任何子資料夾。 若要搜尋子資料夾，您必須使用 Folderid 屬性做為您想要搜尋的子資料夾。  <br/> 如需搜尋 Folderid 屬性和使用腳本來取得特定信箱之資料夾 IDs 的詳細資訊，請參閱[使用內容搜尋來尋找目標集合](use-content-search-for-targeted-collections.md)。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|第一個範例會傳回指定之信箱資料夾中的所有專案。 第二個範例會傳回 garthf@contoso.com 所傳送或接收的指定信箱資料夾中的所有專案。|
 |寄件者|電子郵件的寄件者。<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|指定的使用者所傳送或從指定的網域傳送的郵件。|
 |HasAttachment|會指出郵件是否有附件。 使用值**true**或**false**。|`from:pilar@contoso.com AND hasattachment:true`|指定使用者所傳送的具有附件的郵件。|
 |Importance|電子郵件訊息的重要性，寄件者可在傳送郵件時指定。 根據預設，郵件會以一般重要性傳送，除非寄件者將重要性設定為**高**或**低**。|`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|標示為高重要性、中度重要性或低重要性的郵件。|
 |IsRead|會指出是否已讀取郵件。 使用值**true**或**false**。|`isread:true`  <br/> `isread:false`|第一個範例會傳回 IsRead 屬性設定為**True**的郵件。 第二個範例會傳回 IsRead 屬性設定為**False**的郵件。|
 |ItemClass|使用此屬性可搜尋您的組織匯入 Office 365 的特定協力廠商資料類型。 請對此屬性使用下列語法：`itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|第一個範例會傳回 Facebook 專案，包含在 Subject 屬性中包含 "contoso" 一詞。 第二個範例會傳回由王小姐 Beebe （包含關鍵字片語 "Northwind 商貿"）所張貼的 Twitter 專案。  <br/> 如需使用 ItemClass 屬性之協力廠商資料類型的完整值清單，請參閱[使用內容搜尋來搜尋匯入至 Office 365 的協力廠商資料](use-content-search-to-search-third-party-data-that-was-imported.md)。|
-|類型| 要搜尋的電子郵件類型。 可能的值：  <br/>  接觸  <br/>  文檔  <br/>  email  <br/>  externaldata  <br/>  傳真  <br/>  我  <br/>  期刊  <br/>  會議  <br/>  microsoftteams （從 Microsoft 團隊中的研討、會議及通話傳回專案）  <br/>  筆記  <br/>  職位  <br/>  rssfeeds  <br/>  任務  <br/>  語音 信箱|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|第一個範例會傳回符合搜尋準則的電子郵件訊息。 第二個範例會傳回電子郵件、立即訊息交談（包括 Microsoft 小組中的商務用 Skype 交談和聊天），以及符合搜尋準則的語音訊息。 第三個範例會傳回從協力廠商資料來源（如 Twitter、Facebook 和 Cisco Jabber)）匯入到 Office 365 中信箱的專案，這些專案會符合搜尋準則。 如需詳細資訊，請參閱在[Office 365 中封存協力廠商資料](https://go.microsoft.com/fwlink/p/?linkid=716918)。|
+|類型| 要搜尋的電子郵件類型。 可能的值：  <br/>  接觸  <br/>  文檔  <br/>  email  <br/>  externaldata  <br/>  傳真  <br/>  我  <br/>  期刊  <br/>  會議  <br/>  microsoftteams （從 Microsoft 團隊中的研討、會議及通話傳回專案）  <br/>  筆記  <br/>  職位  <br/>  rssfeeds  <br/>  任務  <br/>  語音 信箱|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|第一個範例會傳回符合搜尋準則的電子郵件訊息。 第二個範例會傳回電子郵件、立即訊息交談（包括 Microsoft 小組中的商務用 Skype 交談和聊天），以及符合搜尋準則的語音訊息。 第三個範例會傳回從協力廠商資料來源（如 Twitter、Facebook 和 Cisco Jabber)）匯入至 Microsoft 365 信箱的專案，這些專案會符合搜尋準則。 如需詳細資訊，請參閱在[Office 365 中封存協力廠商資料](https://go.microsoft.com/fwlink/p/?linkid=716918)。|
 |參與者|電子郵件訊息中的所有 [人員] 欄位。 這些欄位是寄件者、To、Cc 和 Bcc。<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|傳送或傳送至 garthf@contoso.com 的郵件。 第二個範例會傳回 contoso.com 網域中的使用者所傳送或傳送的所有郵件。|
 |Received|收件者接收到電子郵件的日期。|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|2016年4月15日收到的郵件。 第二個範例會傳回所有在2016年1月1日（2016年3月31日）收到的郵件。|
 |收件者|電子郵件訊息中的所有收件者欄位。 這些欄位是 To、Cc 和 Bcc。<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|傳送至 garthf@contoso.com 的郵件。 第二個範例會傳回傳送至 contoso.com 網域中的任何收件者的郵件。|
@@ -73,7 +73,7 @@ ms.locfileid: "43105995"
 |||||
    
 > [!NOTE]
-> <sup>1</sup>當收件者屬性的值，您可以使用電子郵件地址（也稱為*使用者主體名稱*或 UPN）、顯示名稱或別名指定使用者。 例如，您可以使用 annb@contoso.com、annb 或 "王 Beebe" 來指定使用者王小姐 Beebe。<br/><br/>當您搜尋任何收件者屬性（寄件者、收件者、抄送、Bcc、參與者和收件者）時，Office 365 會嘗試在 Azure Active Directory 中查看每位使用者的身分識別。  如果使用者在 Azure Active Directory 中找到，該查詢會展開以包含使用者的電子郵件地址（或 UPN）、別名、顯示名稱和 LegacyExchangeDN。<br/><br/>例如， `participants:ronnie@contoso.com`展開 to `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`的查詢。<br/><br/>若要防止收件者展開，您可以在搜尋查詢中的電子郵件地址結尾新增萬用字元（星號）。例如， `participants:ronnie@contoso.com*`。
+> <sup>1</sup>當收件者屬性的值，您可以使用電子郵件地址（也稱為*使用者主體名稱*或 UPN）、顯示名稱或別名指定使用者。 例如，您可以使用 annb@contoso.com、annb 或 "王 Beebe" 來指定使用者王小姐 Beebe。<br/><br/>當您搜尋任何收件者內容（寄件者、收件者、抄送、Bcc、參與者和收件者）時，Microsoft 365 會嘗試在 Azure Active Directory 中查看每位使用者的身分識別。  如果使用者在 Azure Active Directory 中找到，該查詢會展開以包含使用者的電子郵件地址（或 UPN）、別名、顯示名稱和 LegacyExchangeDN。<br/><br/>例如， `participants:ronnie@contoso.com`展開 to `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`的查詢。<br/><br/>若要防止收件者展開，您可以在搜尋查詢中的電子郵件地址結尾新增萬用字元（星號）。例如， `participants:ronnie@contoso.com*`。
 
 ## <a name="searchable-site-properties"></a>可搜尋的網站屬性
 
@@ -88,7 +88,7 @@ ms.locfileid: "43105995"
 |建立時間|建立專案的日期。|`created\>=06/01/2016`|在2016年6月1日或之後建立的所有專案。|
 |CreatedBy|建立或上傳專案的人員。 請務必使用此屬性的使用者顯示名稱。|`createdby:"Garth Fort"`|由 Garth Fort 建立或上傳的所有專案。|
 |DetectedLanguage|專案的語言。|`detectedlanguage:english`|以英文顯示所有專案。|
-|DocumentLink|SharePoint 或商務用 OneDrive 上之特定資料夾的路徑（URL）。 如果您使用此屬性，請務必搜尋指定資料夾所在的網站。  <br/> 若要傳回位於為 documentlink 屬性指定之資料夾的子資料夾中的專案，您必須新增/\*至指定資料夾的 URL。例如，`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>如需搜尋 documentlink 屬性和使用腳本來取得特定網站上資料夾的 documentlink URLs 的詳細資訊，請參閱[在 Office 365 中使用內容搜尋來尋找目標集合](use-content-search-for-targeted-collections.md)。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|第一個範例會傳回 Business folder 的指定 OneDrive 中的所有專案。 第二個範例會傳回檔案名中包含「機密」一詞的指定網站資料夾（和所有子資料夾）中的檔。|
+|DocumentLink|SharePoint 或商務用 OneDrive 上之特定資料夾的路徑（URL）。 如果您使用此屬性，請務必搜尋指定資料夾所在的網站。  <br/> 若要傳回位於為 documentlink 屬性指定之資料夾的子資料夾中的專案，您必須新增/\*至指定資料夾的 URL。例如，`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>如需搜尋 documentlink 屬性和使用腳本來取得特定網站上資料夾的 documentlink URLs 的詳細資訊，請參閱[使用內容搜尋來搜尋目標集合](use-content-search-for-targeted-collections.md)。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|第一個範例會傳回 Business folder 的指定 OneDrive 中的所有專案。 第二個範例會傳回檔案名中包含「機密」一詞的指定網站資料夾（和所有子資料夾）中的檔。|
 |FileExtension|檔的副檔名;例如，.docx、one、.pptx 或 .xlsx。|`fileextension:xlsx`|所有 Excel 檔案（Excel 2007 和更新版本）|
 |FileName|檔案的名稱。|`filename:"marketing plan"`  <br/> `filename:estimate`|第一個範例會傳回標題中具有精確片語 "行銷 plan" 的檔案。 第二個範例會傳回檔案名中包含 "預估" 一字的檔案。|
 |LastModifiedTime|上次變更專案的日期。|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|第一個範例會傳回在2016年5月1日或之後變更的專案。 第二個範例會傳回在5月1日、2016和6月1日（2016）之間變更的專案。|
@@ -97,7 +97,7 @@ ms.locfileid: "43105995"
 |SharedWithUsersOWSUser|已與指定的使用者共用，並顯示在使用者的 OneDrive 商務版網站 **] 頁面上**的檔。 這些是組織中其他人員與指定的使用者明確共用的檔。 當您匯出符合使用 SharedWithUsersOWSUser 屬性之搜尋查詢的檔時，檔會從與指定使用者共用檔之人員的原始內容位置匯出。 如需詳細資訊，請參閱[搜尋組織內共用的網站內容](#searching-for-site-content-shared-within-your-organization)。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|這兩個範例會傳回與 Garth Fort 明確共用的所有內部檔，並顯示在 Garth Fort 的 Business account OneDrive 中的 [**與我共用**] 頁面上。|
 |網站|組織中的網站或網站群組的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一個範例會傳回組織中所有使用者之商務網站的 OneDrive 的專案。 第二個範例會傳回所有小組網站中的專案。|
 |大小|專案的大小（以位元組為單位）。|`size>=1`  <br/> `size:1..10000`|第一個範例會傳回大於1個位元組的專案。 第二個範例會傳回大小介於1到10000位元組的專案。|
-|職稱|檔的標題。 Title 屬性是 Microsoft Office 檔中所指定的中繼資料。 它與檔的檔案名不同。|`title:"communication plan"`|在 Office 檔的 Title metadata 屬性中包含 "communication plan" 片語的任何檔。|
+|標題|檔的標題。 Title 屬性是 Microsoft Office 檔中所指定的中繼資料。 它與檔的檔案名不同。|`title:"communication plan"`|在 Office 檔的 Title metadata 屬性中包含 "communication plan" 片語的任何檔。|
 |||||
    
 ## <a name="searchable-contact-properties"></a>可搜尋連絡人屬性
@@ -126,7 +126,7 @@ ms.locfileid: "43105995"
 |OfficeLocation|**Office**或**office location**屬性值。|
 |OtherAddress|**其他**位址屬性的值。|
 |姓|**Last** name 屬性中的名稱。|
-|職稱|職稱**屬性中的標題**。|
+|標題|職稱**屬性中的標題**。|
 |||||
 
 ## <a name="searchable-sensitive-data-types"></a>可搜尋的敏感資料類型
@@ -221,7 +221,7 @@ ms.locfileid: "43105995"
 |**條件**|**描述**|
 |:-----|:-----|
 |作者|Office 檔中的 author 欄位，該欄位會在複製檔時保留。 例如，如果使用者建立檔，並將它的電子郵件給其他人，然後再將其上傳至 SharePoint，該檔仍會保留原來的作者。|
-|職稱|檔的標題。 Title 屬性是 Office 檔中所指定的中繼資料。 它與檔的檔案名不同。|
+|標題|檔的標題。 Title 屬性是 Office 檔中所指定的中繼資料。 它與檔的檔案名不同。|
 |建立時間|建立檔的日期。|
 |上次修改日期|上次變更檔的日期。|
 |檔案類型|檔的副檔名;例如，.docx、one、.pptx 或 .xlsx。 此屬性與 FileExtension 網站屬性相同。|
@@ -367,7 +367,7 @@ ms.locfileid: "43105995"
   
 - 對共用原則所做的變更，例如關閉網站或組織的外部共用。 即使已撤銷外部存取，屬性仍然會將先前的共用檔顯示為外部可存取的。
     
-- 群組成員資格的變更，例如新增或移除外部使用者至 Office 365 群組或 Office 365 安全性群組。 此屬性不會自動更新為群組具有存取權的專案。
+- 群組成員資格的變更，例如新增或移除外部使用者至 Microsoft 365 群組或 Microsoft 365 安全性群組。 此屬性不會自動更新為群組具有存取權的專案。
     
 - 將共用邀請傳送給沒有收件者接受邀請的外部使用者，因此還沒有內容的存取權。
     

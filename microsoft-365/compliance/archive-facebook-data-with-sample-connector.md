@@ -1,5 +1,7 @@
 ---
-title: 使用示例连接器在 Office 365（预览版）中存档 Facebook 数据
+title: 設定連接器來封存 Facebook 資料
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -9,124 +11,109 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理员可以设置本机连接器，以便从数据源（如 Facebook 商业页面、Twitter、LinkedIn公司页面和即时彭博）导入第三方数据。 这样，您就可以在 Office 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如法律保留、内容搜索和保留策略）来管理组织第三方数据的治理。
-ms.openlocfilehash: 2dde58e4d3ead0064e28c1ba1bfc04485c7a25df
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 管理員可以設定連接器，以從資料來源（如 Facebook Business pages、Twitter、LinkedIn 公司頁面及立即 Bloomberg）匯入協力廠商資料。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料的管理。
+ms.openlocfilehash: 5c8bb4c1330af0f9c10dd93f9cedd47b3d3b34b0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076710"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637123"
 ---
-# <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>使用示例连接器在 Office 365（预览版）中存档 Facebook 数据
+# <a name="set-up-a-connector-to-archive-facebook-data"></a>設定連接器來封存 Facebook 資料
 
-在 Office 365 中存档 Facebook 数据的示例连接器功能处于预览版。
+使用 Microsoft 365 規範中心內的連接器，將 Facebook 商務版頁面上的資料匯入並封存至 Microsoft 365。 在您設定及設定連接器之後，它會連接到 Facebook 商務頁面（根據排程），將 Facebook 專案的內容轉換為電子郵件訊息格式，然後將這些專案匯入至 Microsoft 365 中的信箱。
 
-使用 Office 365 中的安全&合规性中心中的示例连接器将数据从 Facebook 业务页导入到 Office 365。 设置和配置示例连接器后，它将连接到 Facebook 商业页面（按计划），将 Facebook 项目的内容转换为电子邮件格式，然后将这些项目导入 Office 365 中的邮箱。
+在匯入 Facebook 資料後，您可以將 Microsoft 365 規範功能（例如訴訟暫止、內容搜尋、In-Place 封存、審核、通訊法規遵從性）和 Microsoft 365 保留原則套用到 Facebook 資料。 例如，當信箱處於訴訟暫止狀態或指派給保留原則時，就會保留 Facebook 資料。 您可以使用內容搜尋來搜尋協力廠商資料，或關聯在高級 eDiscovery 案例中，與系統管理員一起儲存 Facebook 資料的信箱。 在 Microsoft 365 中使用連接器匯入和封存 Facebook 資料，可協助您的組織遵守政府和法規原則。
 
-导入 Facebook 数据后，您可以将 Office 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核、监督和 Office 365 保留策略）应用于 Facebook 数据。 例如，当邮箱被置于诉讼保留或分配给保留策略时，Facebook 数据将被保留。 您可以使用内容搜索搜索第三方数据，或将存储 Facebook 数据的邮箱与高级电子数据展示案例中的保管人相关联。 使用连接器在 Office 365 中导入和存档 Facebook 数据可帮助您的组织遵守政府和监管政策。
+## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>設定 Facebook 商務版網頁連接器的必要條件
 
-> [!NOTE]
-> 目前，只有 Facebook 商业页面和[Twitter](archive-twitter-data-with-sample-connector.md)的示例连接器可供预览。 更多示例连接器即将推出。
+完成下列先決條件之前，您可以在 Microsoft 365 規範中心內安裝和設定連接器，以便從組織的 Facebook 商務頁面匯入及封存資料。 
 
+- 您的組織的商務頁面需要 Facebook 帳戶（您必須在設定連接器時登入此帳戶）。 目前，您只能從 Facebook 商務版頁面封存資料;您無法封存個別 Facebook 設定檔中的資料。
 
-## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>为 Facebook 商业页面设置连接器的先决条件
+- 您的組織必須具有有效的 Azure 訂閱。 如果您沒有現有的 Azure 訂閱，您可以註冊下列其中一個選項：
 
-您必须完成以下先决条件，然后才能在安全&合规性中心设置和配置示例连接器，以便从组织的 Facebook 业务页面导入和存档数据。 
+    - [註冊免費的一年 Azure 訂閱](https://azure.microsoft.com/free) 
 
-- 您的组织的业务页面需要 Facebook 帐户（在设置连接器时需要登录到此帐户）。 目前，您只能存档来自 Facebook 商业页面的数据;您无法存档来自单个 Facebook 个人资料的数据。
-
-- 您的组织必须具有有效的 Azure 订阅。 如果没有现有的 Azure 订阅，则可以注册以下选项之一：
-
-    - [注册免费一年 Azure 订阅](https://azure.microsoft.com/free) 
-
-    - [注册即用即付 Azure 订阅](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
+    - [註冊隨付即用 Azure 訂閱](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > Office 365 订阅中包含的[免费 Azure 活动目录订阅](use-your-free-azure-ad-subscription-in-office-365.md)不支持安全&合规性中心中的示例连接器。
+    > Microsoft 365 訂閱隨附的[免費 Azure Active Directory 訂閱](use-your-free-azure-ad-subscription-in-office-365.md)不支援 Security & 合規性中心內的連接器。
 
-- 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 要同意此请求，请转到[此页面，](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)使用 Office 365 全局管理员的凭据登录，然后接受该请求。
+- 您的組織必須同意允許 Office 365 匯入服務存取您組織中的信箱資料。 若要同意此要求，請移至[此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，並以全域管理員的認證登入，然後接受要求。
 
-- 在"安全&合规性"中设置自定义连接器的用户（在步骤 7 中）必须在 Exchange 联机中分配邮箱导入导出角色。 默认情况下，此角色不会分配给 Exchange 联机中的任何角色组。 您可以将邮箱导入导出角色添加到"联机交换"中的组织管理角色组。 或者，您可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在联机交换中管理角色组"一文[中的"创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)或[修改角色组"](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)部分。
+- 在 Microsoft 365 規範中心內設定自訂連接器的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [[建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)或[修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)] 區段。
 
-## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>第 1 步：从 Github 下载预构建的连接器应用包
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>步驟1：在 Azure Active Directory 中建立應用程式
 
-第一步是下载预构建的 Facebook 连接器应用的源代码，该应用将使用 Facebook API 连接到您的 Facebook 商业页面并提取 Facebook 数据，以便您可以将其导入 Office 365。
+第一步是在 Azure Active Directory （AAD）中註冊新的應用程式。 此應用程式對應到您在步驟4中所執行的 web 應用程式資源，以及 Facebook 連接器的步驟5。 
 
-1. 转到[此 GitHub 站点。](https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases) 
-2. 在最新版本下，单击**示例连接器.zip**文件。
-3. 将 ZIP 文件保存到本地计算机上的位置。 在步骤 4 中将此 zip 文件上载到 Azure。
+如需逐步指示，請參閱[在 Azure Active Directory 中建立應用程式](deploy-facebook-connector.md#step-1-create-an-app-in-azure-active-directory)。
 
-## <a name="step-2-create-an-app-in-azure-active-directory"></a>步骤 2：在 Azure 活动目录中创建应用
+在此步驟完成（使用上一個逐步指示）時，您會將下列資訊儲存至文字檔。 這些值會在部署程式的後續步驟中使用。
 
-下一步是在 Azure 活动目录 （AAD） 中注册新应用。 此应用程序对应于您在步骤 4 中为 Facebook 连接器实现的 Web 应用资源。 
+- AAD 應用程式識別碼
 
-有关分步说明，请参阅在 Azure[活动目录中创建应用。](deploy-facebook-connector.md#step-2-create-an-app-in-azure-active-directory)
+- AAD 應用程式機密
 
-在完成此步骤期间（通过使用前面的分步说明），您将将以下信息保存到文本文件中。 这些值在部署过程中的后续步骤中使用。
+- 租使用者識別碼
 
-- AAD 应用程序 ID
-- AAD 应用程序机密
-- AAD 应用程序 Uri
-- 租户 ID
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>步驟2：將連接器 web 服務從 GitHub 部署至您的 Azure 帳戶
 
-## <a name="step-3-create-an-azure-storage-account"></a>步骤 3：创建 Azure 存储帐户
+下一步是部署 Facebook Business pages connector 應用程式的原始程式碼，該應用程式會使用 Facebook API 來連線到 Facebook 帳戶並提取資料，以便您可以將資料匯入至 Microsoft 365。 您為組織部署的 Facebook 連接器會將 Facebook 商務頁面上的專案上傳至此步驟中建立的 Azure 儲存位置。 在 Microsoft 365 規範中心建立 Facebook 商務頁面連接器（步驟5）之後，匯入服務會將 Facebook 商務頁面資料從 Azure 存放位置複製到您的 Microsoft 365 組織中的信箱。 如先前在[必要條件](#prerequisites-for-setting-up-a-connector-for-facebook-business-pages)區段中所述，您必須具備有效的 azure 訂閱，才可建立 Azure 儲存體帳戶。
 
-为组织部署的 Facebook 连接器会将项目从 Facebook 业务页面上载到您在此步骤中创建的 Azure 存储位置。 在安全&合规性中心（在步骤 7 中）创建自定义连接器后，Office 365 导入服务将从 Azure 存储位置将 Facebook 数据复制到 Office 365 中的邮箱。 如前面[在"先决条件"](#prerequisites-for-setting-up-a-connector-for-facebook-business-pages)部分中所述，您必须具有有效的 Azure 订阅才能创建 Azure 存储帐户。
+如需逐步指示，請參閱[將連接器 web 服務從 GitHub 部署至您的 Azure 帳戶](deploy-facebook-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account)。
 
-有关分步说明，请参阅创建 Azure[存储帐户](deploy-facebook-connector.md#step-3-create-an-azure-storage-account)。
+在完成此步驟的逐步指示中，您將會提供下列資訊：
 
-在此步骤完成期间（按照分步说明执行），可以保存生成的连接字符串 Uri。 在步骤 4 中在 Azure 中创建 Web 应用资源时使用此字符串。
+- APISecretKey：完成此步驟時，您會建立此密碼。 它會在步驟5中使用。
 
-## <a name="step-4-create-a-web-app-resource-in-azure"></a>步骤 4：在 Azure 中创建 Web 应用资源
+- TenantId：在步驟1中建立 Azure Active Directory 中的 Facebook 連接器應用程式之後，所複製之 Microsoft 365 組織的租使用者識別碼。
 
-下一步是在 Azure 中为 Facebook 连接器创建 Web 应用资源。 
+完成此步驟後，請務必複製 Azure 應用程式服務 URL （例如， https://fbconnector.azurewebsites.net)。 您必須使用此 URL，才能完成步驟3、步驟4及步驟5）。
 
-有关分步说明，请参阅在 Azure[中创建新的 Web 应用资源。](deploy-facebook-connector.md#step-4-create-a-new-web-app-resource-in-azure)
+## <a name="step-3-register-the-web-app-on-facebook"></a>步驟3：在 Facebook 上註冊 web 應用程式
 
-在完成此步骤期间（按照分步说明执行），在创建 Web 应用资源时，您将提供以下信息（在完成上述步骤后已复制到文本文件）。
+下一步是在 Facebook 上建立及設定新的應用程式。 您在步驟5中建立的 Facebook 商務頁面連接器會使用 Facebook web app 與 Facebook API 互動，以從組織的 Facebook 商務版頁面中取得資料。
 
-- API机密密钥 – 在完成此步骤期间创建此机密;它在步骤 7 中使用。
-- 存储帐户连接字符串 – 在步骤 3 中创建 Azure 存储帐户后复制的连接字符串 Uri。
-- 租户 Id = 在步骤 2 中在 Azure 活动目录中创建 Facebook 连接器应用后复制的 Office 365 组织的租户 ID。
+如需逐步指示，請參閱[註冊 Facebook 應用程式](deploy-facebook-connector.md#step-3-register-the-facebook-app)。
 
-此外，在此步骤中，您上传 SampleConnector.zip 文件（在步骤 1 中下载），以部署 Facebook 连接器应用的源代码。
+完成此步驟（遵循逐步指示）之後，您會將下列資訊儲存至文字檔。 這些值是用來在步驟4中設定 Facebook 連接器應用程式。
 
-完成此步骤后，请确保复制应用服务 URL（例如， https://fbconnector.azurewebsites.net)。 您需要使用它来完成步骤 5、步骤 6 和步骤 7）。
+- Facebook 應用程式識別碼
 
-## <a name="step-5-register-the-web-app-on-facebook"></a>第 5 步：在 Facebook 上注册 Web 应用
+- Facebook 應用程式機密
 
-下一步是在 Facebook 上创建和配置新应用。 您在步骤 7 中创建的自定义连接器使用 Facebook Web 应用与 Facebook API 交互，以便从组织的 Facebook 业务页面获取数据。
+- Facebook webhooks verify token
 
-有关分步说明，请参阅注册 Facebook[应用](deploy-facebook-connector.md#step-5-register-the-facebook-app)。
+## <a name="step-4-configure-the-facebook-connector-app"></a>步驟4：設定 Facebook 連接器應用程式
 
-在完成此步骤期间（按照分步说明执行），您可以将以下信息保存到文本文件中。 这些值用于在步骤 6 中配置 Facebook 连接器应用。
+下一步是將設定設定新增至您在步驟1中建立 Azure web app 資源時所上傳的 Facebook 連接器應用程式。 若要執行此動作，請移至連接器應用程式的首頁並加以設定。
 
-- Facebook 应用程序 ID
-- Facebook 应用程序机密
-- Facebook 网络挂钩验证令牌
+如需逐步指示，請參閱 Configure the [Facebook connector app](archive-facebook-data-with-sample-connector.md#step-4-configure-the-facebook-connector-app)。
 
-## <a name="step-6-configure-the-facebook-connector-app"></a>第 6 步：配置 Facebook 连接器应用
+在此步驟完成（遵循逐步指示）之後，您會提供下列資訊（在完成上述步驟之後，您已複製到文字檔）：
 
-下一步是向在步骤 4 中创建 Azure Web 应用资源时上传的 Facebook 连接器应用添加配置设置。 为此，请访问连接器应用的主页并配置它。
+- Facebook 應用程式識別碼（在步驟3中取得）
 
-有关分步说明，请参阅[步骤 6：配置连接器 Web 应用](deploy-facebook-connector.md#step-6-configure-the-connector-web-app)。
+- Facebook 應用程式密碼（在步驟3中取得）
 
-在完成此步骤期间（按照分步说明执行），您提供以下信息（在完成上述步骤后已复制到文本文件）：
+- Facebook webhooks verify token （在步驟3中取得）
 
-- Facebook 应用程序 ID（在步骤 5 中获取）
-- Facebook 应用程序机密（在步骤 5 中获取）
-- Facebook Webhook 验证令牌（在步骤 5 中获取）
-- Azure 活动目录应用程序 ID（步骤 2 中获取的 AAD 应用程序 ID）
-- Azure 活动目录应用程序密钥（步骤 2 中获取的 AAD 应用程序密钥）
-- Azure 活动目录应用程序 Uri（步骤 2 中获取的 AAD 应用程序 Uri;例如，https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)
+- Azure Active Directory 應用程式識別碼（步驟1中取得的 AAD 應用程式識別碼）
 
-## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>步骤 7：在安全&合规性中心设置自定义连接器
+- Azure Active Directory 應用程式密碼（在步驟1中取得的 AAD 應用程式密碼）
 
-最后一步是在安全&合规性中心中设置自定义连接器，该连接器将从 Facebook 业务页面将数据导入 Office 365 中的指定邮箱。 完成此步骤后，Office 365 导入服务将开始将数据从 Facebook 业务页导入 Office 365 的过程。 
+## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-microsoft-365-compliance-center"></a>步驟5：設定 Microsoft 365 規範中心內的 Facebook 商務頁面連接器
 
-有关分步说明，请参阅[在安全&合规性中心中设置自定义连接器。](deploy-facebook-connector.md#step-7-set-up-a-custom-connector-in-the-security--compliance-center) 
+最後一個步驟是在 Microsoft 365 規範中心內設定連接器，將您的 Facebook 商務版頁面中的資料匯入至 Microsoft 365 中的指定信箱。 完成此步驟後，Office 365 匯入服務將開始從您的 Facebook 商務版頁面將資料匯入至 Microsoft 365。
 
-在完成此步骤期间（按照分步说明执行），您提供以下信息（完成这些步骤后已复制到文本文件）。
+如需逐步指示，請參閱[Microsoft 365 規範中心的「步驟5：設定 Facebook 連接器](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center)」。 
 
-- Azure 应用服务 URL（在步骤 4 中获取;例如，https://fbconnector.azurewebsites.net)
-- API 机密密钥（您在步骤 4 中创建）
+在此步驟完成（遵循逐步指示）時，您會提供下列資訊（在完成步驟之後，您已複製到文字檔）。
+
+- AAD 應用程式識別碼（在步驟1中取得）
+
+- Azure 應用程式服務 URL （在步驟1中取得; 例如，https://fbconnector.azurewebsites.net)
+
+- APISecretKey （您在步驟2中建立）

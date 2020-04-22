@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 在高級 eDiscovery 案例中管理保管人。
-ms.openlocfilehash: f52c32c2eb65a03369064954ac1af6f881ab556f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b497aef50c2bafd58e3b9cf8643a1ecc038520a4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634701"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635893"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>在高級 eDiscovery 案例中管理保管人
 
@@ -132,7 +132,7 @@ ms.locfileid: "42634701"
 
 4. 在飛入頁面上，按一下 [**發行管理員**]。
 
-   隨即會顯示 [警告] 頁面，說明如果保留是放在與保管人相關聯的資料來源上，保留將會被移除，而且與不同的高級 eDiscovery 案例關聯的任何其他保留仍會適用。 這包括 Office 365 中的其他類型的保留和保留功能（例如 Office 365 保留原則）。
+   隨即會顯示 [警告] 頁面，說明如果保留是放在與保管人相關聯的資料來源上，保留將會被移除，而且與不同的高級 eDiscovery 案例關聯的任何其他保留仍會適用。 包括其他類型的保留和保留功能（例如 Microsoft 365 保留原則）。
 
 5. 按一下 **[是]** 確認您要釋放保管人。 
 

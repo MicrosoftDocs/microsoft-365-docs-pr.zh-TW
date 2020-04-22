@@ -1,5 +1,5 @@
 ---
-title: 變更 Office 365 中非使用中信箱的保留期間
+title: 變更非作用中信箱的保留持續時間
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,38 +15,38 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
-description: 在 Office 365 信箱變為非使用中之後，您可以變更指派給非使用中信箱之保留或 Office 365 保留原則的持續時間。 保留期間會定義 [可復原的專案] 資料夾中的專案保留的時間。
-ms.openlocfilehash: 3d4b8f6195e0034b5801b394c232d21d85fa7d1e
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+description: 在 Microsoft 365 信箱變為非使用中之後，您可以變更指派給非使用中信箱之保留或 Microsoft 365 保留原則的持續時間。 保留期間會定義 [可復原的專案] 資料夾中的專案保留的時間。
+ms.openlocfilehash: 3d1368bedcbeda467cbc77a356635440066c11c0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978243"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636331"
 ---
-# <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>變更 Office 365 中非使用中信箱的保留期間
+# <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>變更非作用中信箱的保留持續時間
 
-非使用中的信箱會在使用者離開組織之後，用來保留離職員工的電子郵件。 信箱會在訴訟暫止、In-Place 暫止、Office 365 保留原則或與 eDiscovery 案例相關聯的保留原則上變為非使用中信箱，而且會刪除對應的 Office 365 使用者帳戶。 非使用中信箱的內容會保留在信箱停用的保留期間內，直到未使用中的信箱為止。 保留期間會定義 [可復原的專案] 資料夾中的專案保留的時間。 當 [可復原的專案] 資料夾中某專案的保留期間到期時，會永久刪除非使用中信箱的專案（清除）。 將信箱設為非使用中之後，您可以變更指派給非使用中信箱的保留或 Office 365 保留原則的持續時間。
+非使用中的信箱會在使用者離開組織之後，用來保留離職員工的電子郵件。 當訴訟暫止、In-Place 暫止、Microsoft 365 保留原則或與 eDiscovery 案例相關聯的保留原則或已刪除的使用者帳戶已刪除時，信箱會變成非使用中。 非使用中信箱的內容會保留在信箱停用的保留期間內，直到未使用中的信箱為止。 保留期間會定義 [可復原的專案] 資料夾中的專案保留的時間。 當 [可復原的專案] 資料夾中某專案的保留期間到期時，會永久刪除非使用中信箱的專案（清除）。 將信箱設為非作用中之後，您可以變更已指派給非使用中信箱之保留或 Microsoft 365 保留原則的持續時間。
   
 > [!IMPORTANT]
-> 當我們繼續以保留信箱內容的不同方式投資時，我們宣佈在 Exchange 系統管理中心中封存 In-Place 的退休。 這表示您應該使用訴訟保留和 Office 365 保留原則來建立非使用中的信箱。 從2020年7月1日起，您將無法在 Exchange Online 中建立新的 In-Place 保留。 不過，您仍然可以變更置於非使用中信箱的 In-Place 保留期間。 不過，從2020年10月1日開始，您將無法變更保留期間。 您只能移除 In-Place 保留才能刪除非使用中的信箱。 在移除保留之前，仍會保留位於 In-Place 暫止的現有非作用中信箱。 如需停用 In-Place 保留的詳細資訊，請參閱[舊版 eDiscovery tools 的退休](legacy-ediscovery-retirement.md)。
+> 當我們繼續以保留信箱內容的不同方式投資時，我們宣佈在 Exchange 系統管理中心中封存 In-Place 的退休。 這表示您應該使用訴訟保留和 Microsoft 365 保留原則，以建立非使用中的信箱。 從2020年4月1日起，您將無法在 Exchange Online 中建立新的 In-Place 保留。 不過，您仍然可以變更置於非使用中信箱的 In-Place 保留期間。 不過，在2020年7月1日開始，您將無法變更保留期間。 您只能移除 In-Place 保留才能刪除非使用中的信箱。 在移除保留之前，仍會保留位於 In-Place 暫止的現有非作用中信箱。 如需停用 In-Place 保留的詳細資訊，請參閱[舊版 eDiscovery tools 的退休](legacy-ediscovery-retirement.md)。
   
 ## <a name="before-you-begin"></a>開始之前
 
-- 您必須使用 Exchange Online PowerShell 變更非使用中信箱的訴訟暫止保留期間。 您無法使用 Exchange 系統管理中心（EAC）。 不過，您可以使用 Exchange Online PowerShell 或 EAC 來變更 In-Place 保留的保留期間。 您可以使用「安全性與合規性中心」或「安全性 & 合規性中心」 PowerShell 變更 Office 365 保留原則的保留期間。
+- 您必須使用 Exchange Online PowerShell 變更非使用中信箱的訴訟暫止保留期間。 您無法使用 Exchange 系統管理中心（EAC）。 不過，您可以使用 Exchange Online PowerShell 或 EAC 來變更 In-Place 保留的保留期間。 您可以使用「安全性與合規性中心」或「安全性 & 合規性中心」 PowerShell 來變更 Microsoft 365 保留原則的保留期間。
     
 - 若要連線至 Exchange Online PowerShell 或安全性 & 規範中心 PowerShell，請參閱下列其中一個主題：
     
   - [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
-  - [連接到 Office 365 安全性與合規性中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
+  - [連線到安全性與合規性中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
     
 - 與 eDiscovery 案例相關聯的保留是無限保留，這表示沒有可以變更的保留期間。 專案會永遠保留，或直到移除保留，並刪除非作用中的信箱為止。
     
-- 如需非使用中信箱的相關資訊，請參閱[Office 365 中的非使用中信箱](inactive-mailboxes-in-office-365.md)。
+- 如需非使用中信箱的相關資訊，請參閱[Microsoft 365 中的非使用中信箱](inactive-mailboxes-in-office-365.md)。
     
 ## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>步驟1：識別非使用中信箱上的封存
 
-因為不同類型的保留或一或多個 Office 365 保留原則可能會放在非使用中的信箱上，所以第一步是在非使用中的信箱上識別保留。
+因為不同類型的保留或一或多個 Microsoft 365 保留原則可能會放在非使用中的信箱上，所以第一步是在非使用中的信箱上識別保留。
   
 在 Exchange Online PowerShell 中執行下列命令，以顯示組織中所有非使用中信箱的保留資訊。
   
@@ -54,7 +54,7 @@ ms.locfileid: "42978243"
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,LitigationHoldDuration,InPlaceHolds
 ```
 
-**True**的**LitigationHoldEnabled**屬性值表示非使用中的信箱處於訴訟暫止狀態。 如果將 In-Place 保留、eDiscovery 保留或 Office 365 保留原則放在非使用中的信箱上，保留原則的 GUID 會顯示為**InPlaceHolds**屬性的值。 例如，下列會顯示五個非作用中信箱的結果。 
+**True**的**LitigationHoldEnabled**屬性值表示非使用中的信箱處於訴訟暫止狀態。 如果將 In-Place 保留、eDiscovery 保留或 Microsoft 365 保留原則放在非使用中的信箱上，保留原則的 GUID 會顯示為**InPlaceHolds**屬性的值。 例如，下列會顯示五個非作用中信箱的結果。 
   
 ||
 |:-----|
@@ -102,11 +102,11 @@ InPlaceHolds          : {UniH7d895d48-7e23-4a8d-8346-533c3beac15d}
 |:-----|:-----|:-----|
 |王小姐 Beebe  <br/> |訴訟暫止  <br/> |*LitigationHoldEnabled*屬性設定為`True`。  <br/> |
 |Pilar Pinilla  <br/> |原有範圍暫止  <br/> |*InPlaceHolds*屬性包含放在非使用中信箱上的 IN-PLACE 保留 GUID。 您可以告知這是 In-Place 保留，因為識別碼不是以前置詞開頭。  <br/> 您可以使用 Exchange `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` Online PowerShell 中的命令，以取得非使用中信箱上 In-Place 保留的相關資訊。  <br/> |
-|Mario Necaise  <br/> |安全性 & 規範中心內的全組織 Office 365 保留原則  <br/> |*InPlaceHolds*屬性是空的。 這表示一或多個組織範圍或（Exchange wide） Office 365 保留原則套用至非使用中的信箱。 在此情況下，您可以在`Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` Exchange Online PowerShell 中執行命令，以取得組織內的 Office 365 保留原則的 guid 清單。 套用至 Exchange 信箱之組織之保留原則的 GUID 是以`mbx`前置詞開頭。例如， `mbxa3056bb15562480fadb46ce523ff7b02`。  <br/> <br/>若要身分識別套用至非使用中信箱的 Office 365 保留原則，請在安全性 & 規範中心 PowerShell 中執行下列命令。  <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>
-|Carol Olson  <br/> |套用至特定信箱之安全性 & 規範中心內的 Office 365 保留原則  <br/> |*InPlaceHolds*屬性包含套用至非使用中信箱之 Office 365 保留原則的 GUID。 您可以告知這是套用至特定信箱的保留原則，因為 GUID 會以`mbx`前置詞開頭。 如果套用至非使用中信箱的保留原則 GUID 是以`skp`前置詞開始，則表示保留原則已套用至商務用 Skype 交談。  <br/><br/> 若要身分識別套用至非使用中信箱的 Office 365 保留原則，請在安全性 & 規範中心 PowerShell 中執行下列命令。<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>當您執行此命令`mbx`時`skp` ，請務必移除或首碼。  <br/> |
+|Mario Necaise  <br/> |安全性 & 規範中心內的全組織 Microsoft 365 保留原則  <br/> |*InPlaceHolds*屬性是空的。 這表示一或多個組織範圍或（Exchange 通用） Microsoft 365 保留原則套用至非使用中的信箱。 在此情況下，您可以在`Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` Exchange Online PowerShell 中執行命令，以取得整個組織的 Microsoft 365 保留原則的 guid 清單。 套用至 Exchange 信箱之組織之保留原則的 GUID 是以`mbx`前置詞開頭。例如， `mbxa3056bb15562480fadb46ce523ff7b02`。  <br/> <br/>若要識別套用至非使用中信箱的 Microsoft 365 保留原則，請在安全性 & 規範中心 PowerShell 中執行下列命令。  <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>
+|Carol Olson  <br/> |套用至特定信箱之安全性 & 規範中心內的 Microsoft 365 保留原則  <br/> |*InPlaceHolds*屬性包含套用至非使用中信箱之 Microsoft 365 保留原則的 GUID。 您可以告知這是套用至特定信箱的保留原則，因為 GUID 會以`mbx`前置詞開頭。 如果套用至非使用中信箱的保留原則 GUID 是以`skp`前置詞開始，則表示保留原則已套用至商務用 Skype 交談。  <br/><br/> 若要識別套用至非使用中信箱的 Microsoft 365 保留原則，請在安全性 & 規範中心 PowerShell 中執行下列命令。<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>當您執行此命令`mbx`時`skp` ，請務必移除或首碼。  <br/> |
 |Abraham McMahon  <br/> |安全性 & 規範中心的 eDiscovery 案例保留  <br/> |*InPlaceHolds*屬性包含放在非使用中信箱上的 eDiscovery 案例保留 GUID。 您可以告訴這是 eDiscovery 案例保留，因為 GUID 是以`UniH`前置詞開頭。  <br/> 您可以使用安全性`Get-CaseHoldPolicy` & 規範中心 PowerShell 中的指令程式，取得與非作用中信箱相關聯之 eDiscovery 案例的相關資訊。 例如，您可以執行命令`Get-CaseHoldPolicy <hold GUID without prefix> | FL Name`以顯示非使用中信箱上之案例保留的名稱。 當您執行此命令`UniH`時，請務必移除前置詞。  <br/><br/> 若要識別與非作用中信箱上之保留相關的 eDiscovery 案例，請執行下列命令。  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **附注：** 建議您不要對非使用中的信箱使用 eDiscovery 保留。 That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. 在某些情況下，法律案例可能會結束，與案例相關聯的保留會被移除，並且 eDiscovery 案例會關閉（或刪除）。 實際上，如果放在非使用中信箱的保留與 eDiscovery 案例相關聯，且已發行保留或 eDiscovery 案例已關閉或已刪除，則系統會永久刪除非作用中的信箱。 
 
-如需有關 Office 365 保留原則的詳細資訊，請參閱[保留原則一覽](retention-policies.md)。
+如需 Microsoft 365 保留原則的詳細資訊，請參閱[保留原則一覽](retention-policies.md)。
   
 ## <a name="step-2-change-the-hold-duration-for-an-inactive-mailbox"></a>步驟2：變更非使用中信箱的保留期間
 
@@ -151,7 +151,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
     ![變更就地保留之持續期間的螢幕擷取畫面](../media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
   
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
 #### <a name="use-exchange-online-powershell-to-change-the-hold-duration"></a>使用 Exchange Online PowerShell 變更保留期間
 

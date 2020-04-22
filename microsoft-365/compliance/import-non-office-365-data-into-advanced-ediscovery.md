@@ -1,5 +1,5 @@
 ---
-title: 匯入非 Office 365 進階電子文件探索分析內容
+title: 匯入非 Microsoft 365 內容以進行高級 eDiscovery 分析
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,78 +14,78 @@ search.appverid:
 - OEC150
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
-description: 如何步驟以匯入內容，不會儲存在 O365 到 Azure blob，讓它可以與 AeD 分析
-ms.openlocfilehash: 529eb21117ed2cdfbb7f02caf058dbc6863d2d9b
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 操作方法：將未儲存在 Microsoft 365 中的內容匯入 Azure blob，以便使用 AeD 來進行分析
+ms.openlocfilehash: daafcf003ded35868413d99c11ec1bf3941dca9f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557893"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634155"
 ---
-# <a name="import-non-office-365-content-for-advanced-ediscovery-classic-analysis"></a>匯入非 Office 365 進階電子文件 （傳統） 分析內容
+# <a name="import-non-microsoft-365-content-for-advanced-ediscovery-classic-analysis"></a>匯入非 Microsoft 365 內容以取得 Advanced eDiscovery （傳統）分析
 
-並非所有文件，您可能需要與 Office 365 進階電子文件探索分析會存在於 Office 365 中。 使用非 Office 365 內容匯入您可以上傳文件，不到案例的連結、 Azure 儲存體 blob live （除了 PST 檔案） 的 Office 365 中並分析其與進階電子文件的進階電子文件中的功能。 此程序將示範如何將非 Office 365 文件移入進階電子文件探索進行分析。
+並非所有您需要使用高級 eDiscovery 進行分析的檔，都將會在 Microsoft 365 中活。 使用高級 eDiscovery 的非 Microsoft 365 內容匯入功能，您可以將不在 Microsoft 365 中的檔（PST 檔除外）上傳至連結的情況下，Azure 儲存區 blob 和使用高級 eDiscovery 進行分析。 此程式顯示如何將您的非 Microsoft 365 檔放入高級 eDiscovery 以進行分析。
   
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 > [!NOTE]
-> 您可以購買 Office 365 進階電子文件探索資料儲存空間] 附加元件訂閱的非 Office 365 內容。 這是專門供進行分析使用進階電子文件的內容。 請遵循[購買或編輯和商務用 Office 365 的附加元件形式](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6)中的步驟及購買 Office 365 進階電子文件探索儲存附加元件。 
+> 您可以購買非 Microsoft 365 內容的高級 eDiscovery 資料儲存區訂閱。 這只適用于使用高級 eDiscovery 進行分析的內容。 遵循[為商務用 Microsoft 365 購買或編輯附加](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6)元件中的步驟，並購買「Advanced eDiscovery 儲存」附加元件。 
   
 ## <a name="before-you-begin"></a>開始之前
 
-使用此程序所述的上傳非 Office 365 功能需要您：
+使用此程式所述的「上傳非 Office 365」功能，需要具備下列專案：
   
-- 使用進階合規性的附加元件或 E5 訂閱 Office 365 E3
+- Office 365 E3 含高級合規性增益集或 E5 訂閱
     
-- 將上傳其非 Office 365 內容的所有 custodians 都必須 E3 與進階合規性的附加元件或 E5 授權
+- 所有非 Office 365 內容的保管人，都必須具備具有高級合規性附加元件或 E5 授權的 E3。
     
 - 現有的 eDiscovery 案例
     
-- 上傳的所有檔案所都收集到資料夾，其中沒有 custodian 每一個資料夾，而且此格式*alias@domainname*中已有該資料夾的名稱。 *Alias@domainname*必須是 Office 365 的使用者別名及網域。 您可以收集所有*alias@domainname*資料夾到根資料夾。 根資料夾只能包含*alias@domainname*資料夾、 根資料夾中必須有任何鬆散檔案 
+- 所有檔案，可將收集到的資料夾中，每個保管人都有一個資料夾，而且資料夾的名稱為*alias@domainname*的此格式。 *Alias@domainname*必須是使用者 Office 365 別名和網域。 您可以將所有*alias@domainname*資料夾收集至根資料夾。 根資料夾只能包含*alias@domainname*資料夾，根資料夾中一定沒有鬆散檔案 
     
-- EDiscovery 管理員 」 或 「 eDiscovery 系統管理員帳戶
+- 既可以是 eDiscovery 管理員，也可以是 eDiscovery 管理員的帳戶
     
-- 具有非 Office 365 內容的資料夾結構的存取權的電腦上安裝[Microsoft Azure 儲存體工具](https://aka.ms/downloadazcopy)。 
+- 在具有非 Office 365 內容資料夾結構存取權的電腦上安裝[Microsoft Azure Storage Tool 工具](https://aka.ms/downloadazcopy)。 
     
-## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>非 Office 365 內容上傳至進階電子文件
+## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>將非 Office 365 內容上傳至高級電子檔探索
 
 
-1. EDiscovery 管理員或 eDiscovery 系統管理員，以開啟 [ **eDiscovery**]，並開啟非 Office 365 資料就會上傳到的案例。 如果您需要建立案例，請參閱[管理 Office 365 安全性中的 eDiscovery 案例&amp;合規性中心](ediscovery-cases.md)
+1. 以 eDiscovery 管理員或 eDiscovery 管理員的身分開啟**ediscovery**，然後開啟非 Office 365 資料將上傳至的情況。 如果您需要建立案例，請參閱[在安全性&amp;與合規性中心管理 eDiscovery 案例](ediscovery-cases.md)
     
-2. 按一下 [**切換至進階電子文件**
+2. 按一下 [**切換至高級 eDiscovery** ]
     
-3. **來源類型**] 下選取 [**非 Office 365 資料**]。
+3. 在 [**來源類型**] 下，選取 [**非 Office 365 資料**]。
     
-4. 按一下 [**新增] 容器**。 名稱容器，並且新增描述。
+4. 按一下 [**新增容器**]。 命名容器並新增描述。
     
-5. 從其在容器清單中選取新加入的容器，然後複製出現在 [容器] 詳細資料窗格中，然後關閉 [] 窗格中的 URL
+5. 從容器清單中選取新加入的容器，然後複製容器詳細資料窗格中顯示的 URL，然後關閉窗格
     
-6. 開啟命令提示字元以系統管理員身分，將目錄變更必須 AzCopy 安裝資料夾...
+6. 以系統管理員身分開啟命令提示字元，並將目錄變更為已安裝 AzCopy 的資料夾。
     
-7. 建構 AzCopy 命令列上傳的檔案，如下所示：
+7. 構造 AzCopy 命令列，將檔案上傳如下：
     
-    AzCopy /Source: 「*在本機電腦上的根資料夾的完整路徑*」 /Dest: 「*容器 URL，但不是包括？*  「 /DestSAS: 「*其餘部分來自容器 url？結尾*"/ S 
+    AzCopy/Source：「*本機電腦上根資料夾的完整路徑，* "/Dest："*容器 URL，但未包含？*  "/DestSAS："*來自「？」的容器 url 的其餘部分。至結束*"/S。 
     
     例如，使用這些值： 
     
   - 根資料夾-C:\Collected 資料 
     
-  - 容器 url- https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17?sv=2015-04-05&amp; sr = c&amp;si = NonOfficeData15 %7 C 0&amp;簽章 = Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA %3d
+  - 容器 url- https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17?sv=2015-04-05&amp; sr = c&amp;Si = NonOfficeData15% 7C0&amp;sig = Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA% 3d
     
-    AzCopy 命令列語法為：
+    AzCopy 命令列語法如下：
     
      `AzCopy /Source:"C:\CollectedData" /Dest:"https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17" /DestSAS:"?sv=2015-04-05&amp;sr=c&amp;si=NonOfficeData15%7C0&amp;sig=Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA%3D" /S`
     
-    如需有關 Azcopy 語法，請參閱[傳輸與 windows AzCopy 的資料](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy)。 
+    如需 Azcopy 語法的詳細資訊，請參閱[使用 Windows 上的 AzCopy 傳輸資料](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy)。 
     
     > [!IMPORTANT]
-    > 必須有一個每位使用者根資料夾和資料夾名稱必須是*alias@domainname*格式。 
+    > 每位使用者都必須有一個根資料夾，而且資料夾名稱必須是*alias@domainname*格式。 
   
-8. 一旦資料夾完成上傳，切換回進階電子文件。 在您上傳的資料夾中的內容已準備好在進階電子文件中處理。 選取的容器，然後按一下 [處理序] 按鈕。 如需詳細資訊，在 [進階電子文件上處理，請[執行處理序模組及載入 Office 365 進階電子文件探索中的資料](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
+8. 完成上傳資料夾後，請切換回「高級電子檔探索」。 您上傳的資料夾內容現在可以在高級 eDiscovery 中處理。 選取容器，然後按一下 [處理] 按鈕。 如需有關高級 eDiscovery 處理的詳細資訊，請參閱，[在高級 ediscovery 中執行 Process module 和 load data](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
     
     > [!IMPORTANT]
-    > 一旦成功處理進階電子文件的容器，您將不再能夠將新的內容新增至 Azure 中的 SAS 儲存。 如果您收集其他內容，而且您想要將其新增至進階電子文件探索分析案例，您必須建立新的**非 Office 365 資料**容器，並重複此程序。 
+    > 在高級 eDiscovery 中成功處理容器後，您就無法再將新內容新增至 Azure 中的 SAS 儲存體。 如果您收集其他內容，而且想要將其新增至案例以進行高級 eDiscovery 分析，您必須建立新的**非 Office 365 資料**容器，並重複此程式。 
   
     > [!NOTE]
-    > 如果容器*不會處理成功由於資料夾命名問題*，而且您然後修正問題，您仍然必須建立新的容器，並重新連線並上傳一次使用本文中的程序。
+    > 如果容器*由於資料夾命名問題而無法順利處理*，而您又修正問題，則您仍然需要使用本文中的程式建立新的容器，並重新連線並上傳。

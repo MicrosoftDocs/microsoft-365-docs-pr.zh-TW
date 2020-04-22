@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 44ee6715c8bbe1254cead6b11930ca41be8864a2
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: f5028e82e8c54972dd188215eac0518775ec275c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634711"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635837"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>管理資料調查中感興趣的人員（預覽）
 
@@ -50,18 +50,18 @@ ms.locfileid: "42634711"
 
 8. 選在浮出控制項中：
    
-    -  **Exchange 信箱**-按一下 **[選擇使用者、群組或小組**]，然後再按一下 **[選擇使用者、群組或小組**]。 若要新增更多信箱，請使用搜尋方塊尋找使用者信箱和通訊群組。 您也可以新增用來儲存 Office 365 群組或 Microsoft 小組資訊的信箱。 選取 [使用者、群組、小組] 核取方塊，按一下 **[選擇**]，然後按一下 [**完成**]。
+    -  **Exchange 信箱**-按一下 **[選擇使用者、群組或小組**]，然後再按一下 **[選擇使用者、群組或小組**]。 若要新增更多信箱，請使用搜尋方塊尋找使用者信箱和通訊群組。 您也可以新增用來儲存 Microsoft 365 群組或 Microsoft 小組資訊的信箱。 選取 [使用者、群組、小組] 核取方塊，按一下 **[選擇**]，然後按一下 [**完成**]。
 
         > [!NOTE]
         > 當您按一下 [選擇使用者、群組或小組以指定信箱] 時，顯示的信箱選擇器會是空的。 這項設計的目的是提升效能。 若要將人員新增至此清單，請在 [搜尋] 方塊中輸入名稱（至少3個字元）。
      
-     - **SharePoint 網站**-按一下 **[選擇網站**]，然後按一下 **[選擇網站**]，以指定您 Wwant 要新增至人員的商務網站的其他 SharePoint 和 OneDrive。 您也可以為 Office 365 群組或 Microsoft 團隊新增 SharePoint 網站的 URL。 輸入每個要指派之網站的 URL。 按一下 **[選擇**]，然後按一下 [**完成**]。
+     - **SharePoint 網站**-按一下 **[選擇網站**]，然後按一下 **[選擇網站**]，以指定您 Wwant 要新增至人員的商務網站的其他 SharePoint 和 OneDrive。 您也可以為 Microsoft 365 群組或 Microsoft 團隊新增 SharePoint 網站的 URL。 輸入每個要指派之網站的 URL。 按一下 **[選擇**]，然後按一下 [**完成**]。
      - **Microsoft 小組**–按一下 **[選擇小組**]，然後按一下 **[選擇小組**]，以查看人員目前隸屬的 Microsoft 小組群組清單。 選取您要新增至人員的團隊。 選取之後，系統會自動識別 & 選取相關聯的 SharePoint 網站與該 Microsoft 團隊相關聯的群組信箱。 按一下 **[選擇**]，然後按一下 [**完成**]。
         
       > [!NOTE]
       > 若要新增其他 Microsoft 團隊，您必須以上述方式個別新增信箱和 SharePoint 網站。
 
-完成將資料來源對應給感興趣的人員之後，您可以看到您剛新增的信箱、網站和團隊總數摘要。 如果您將任何其他資料來源對應到感興趣的人員，並將您的搜尋範圍限定在調查中，請將檔對應至其利益的人員，以便於整個調查中保留，使組織的證據或產生報告變得更容易。. 
+完成將資料來源對應給感興趣的人員之後，您可以看到您剛新增的信箱、網站和團隊總數摘要。 如果您將任何其他資料來源對應到感興趣的人員，並將您的搜尋範圍限定在調查中，請將檔對應到其關注的利益人，這樣就能更輕鬆地組織證據或產生報表的相關人員。 
 
 ## <a name="view-additional-people-of-interest-information"></a>查看其他感興趣資訊的人員
 

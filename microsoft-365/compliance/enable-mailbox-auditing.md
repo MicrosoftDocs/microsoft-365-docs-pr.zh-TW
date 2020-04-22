@@ -16,17 +16,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
-description: 預設會在 Office 365 （也稱為「預設信箱審核」或「信箱審核」預設）中開啟信箱審核記錄。 這表示信箱擁有者、代理人和系統管理員所執行的某些動作會自動記錄在信箱審核記錄檔中，您可以在此搜尋在信箱上執行的活動。
-ms.openlocfilehash: 2b69d63e63e049566c9827f08d2ead592b918684
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: 預設會開啟信箱審核記錄（也稱為預設信箱審計或預設的信箱審核）。 這表示信箱擁有者、代理人和系統管理員所執行的某些動作會自動記錄在信箱審核記錄檔中，您可以在此搜尋在信箱上執行的活動。
+ms.openlocfilehash: 458e5c9797874f35e99c09edbc3ef45753132cba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894918"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631728"
 ---
 # <a name="manage-mailbox-auditing"></a>管理信箱稽核
 
-從2019年1月開始，Microsoft 預設會針對所有 Office 365 組織開啟信箱審核記錄。 這表示會自動記錄信箱擁有者、代理人和系統管理員所執行的某些動作，當您在信箱審核記錄檔中搜尋對應的信箱審核記錄時，就會提供這些記錄。 在信箱審核預設為開啟狀態之前，您必須針對組織中的每個使用者信箱手動啟用它。
+從2019年1月開始，Microsoft 預設會針對所有組織開啟信箱審核記錄。 這表示會自動記錄信箱擁有者、代理人和系統管理員所執行的某些動作，當您在信箱審核記錄檔中搜尋對應的信箱審核記錄時，就會提供這些記錄。 在信箱審核預設為開啟狀態之前，您必須針對組織中的每個使用者信箱手動啟用它。
 
 以下是信箱審核的一些優點：
 
@@ -64,7 +64,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |:---------|:---------:|:---------:|
 |使用者信箱|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |共用信箱|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-|Office 365 群組信箱|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|Microsoft 365 群組信箱|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |資源信箱||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |公用資料夾信箱||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 
@@ -96,7 +96,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 下表說明信箱審核記錄中的使用者信箱和共用信箱可用的信箱動作。
 
-- 一個核取記號（ ![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)）表示可以記錄登入類型的信箱動作（並非所有動作皆可用於所有登入類型）。
+- 核取記號 ( ![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)）表示可以記錄登入類型的信箱動作（並非所有動作皆可用於所有登入類型）。
 
 - 核取記號之後<sup>\*</sup>的星號（）表示登入類型的預設記錄為 [信箱] 動作。
 
@@ -131,13 +131,13 @@ Get-OrganizationConfig | Format-List AuditDisabled
 > [!IMPORTANT]
 > 如果您自訂在組織中啟用信箱審核*之前*針對任何登入類型進行審核的信箱動作，則自訂設定會保留在信箱上，而且不會以本節所述的預設信箱動作覆寫。 若要將「審核信箱」動作還原成其預設值（您可以隨時執行），請參閱本主題稍後的[還原預設信箱動作](#restore-the-default-mailbox-actions)一節。
 
-### <a name="mailbox-actions-for-office-365-group-mailboxes"></a>Office 365 群組信箱的信箱動作
+### <a name="mailbox-actions-for-microsoft-365-group-mailboxes"></a>Microsoft 365 群組信箱的信箱動作
 
-信箱審核預設會將信箱審核記錄到 Office 365 群組信箱，但您無法自訂要記錄的專案（您無法新增或移除記錄的任何登入類型的信箱動作）。
+信箱審核預設會將信箱審核記錄到 Microsoft 365 群組信箱，但您無法自訂要記錄的專案（您無法新增或移除記錄的任何登入類型的信箱動作）。
 
-下表說明每種登入類型的 Office 365 群組信箱上預設會記錄的信箱動作。
+下表說明每種登入類型的 Microsoft 365 群組信箱上，預設會記錄的信箱動作。
 
-請記住，對 Office 365 群組信箱具有「完整存取」許可權的系統管理員會被視為代理人。
+請記住，對 Microsoft 365 群組信箱具有「完整存取」許可權的系統管理員會被視為代理人。
 
 |**信箱動作**|**描述**|**Admin**|**委託**|**Owner**|
 |:---------|:---------|:---------:|:---------:|:---------:|
@@ -159,7 +159,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
-若要在 Office 365 群組信箱上顯示值， \<請\>以共用信箱的名稱、別名或電子郵件地址取代 MailboxIdentity，並在 Exchange Online 中執行下列命令 PowerShell:
+若要在 Microsoft 365 群組信箱上顯示值， \<請\>以共用信箱的名稱、別名或電子郵件地址取代 MailboxIdentity，並在 Exchange Online 中執行下列命令 PowerShell:
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
@@ -167,7 +167,7 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 
 此值`Admin, Delegate, Owner`表示：
 
-- 所有三種登入類型的預設信箱動作都會進行審核。 這是您可以在 Office 365 群組信箱上看到的唯一值。
+- 所有三種登入類型的預設信箱動作都會進行審核。 這是您可以在 Microsoft 365 群組信箱上看到的唯一值。
 
 - *管理員尚未*變更使用者信箱或共用信箱上任何登入類型的已審核信箱動作。 附注：這是預設會在您的組織中開啟信箱審核之後的預設狀態。
 
@@ -188,7 +188,7 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 若要查看目前正在登入使用者信箱或共用信箱的信箱動作，請以\<信箱\>的名稱、別名、電子郵件地址或使用者主要名稱（username）取代 MailboxIdentity，並在 Exchange Online PowerShell 中執行下列一或多個命令。
 
 > [!NOTE]
-> 雖然您可以將`-GroupMailbox`參數新增至 Office 365 群組信箱的下列**Get-Mailbox**命令，但不會相信傳回的值。 本主題稍早的「 [office 365 群組信箱的信箱動作](#mailbox-actions-for-office-365-group-mailboxes)」一節將說明針對 Office 365 群組信箱所審核之預設和靜態信箱動作。
+> 雖然您可以將此`-GroupMailbox`開關新增至 Microsoft 365 群組信箱的下列**Get-Mailbox**命令，但不要相信傳回的值。 在本主題稍早的 [ [microsoft 365 群組信箱的信箱動作](#mailbox-actions-for-microsoft-365-group-mailboxes)] 區段中，會說明針對 Microsoft 365 群組信箱所審核的預設和靜態信箱動作。
 
 #### <a name="owner-actions"></a>擁有者動作
 
@@ -219,7 +219,7 @@ Get-Mailbox -Identity <MailboxIdentity> | Select-Object -ExpandProperty AuditAdm
 
 ### <a name="change-the-mailbox-actions-to-audit"></a>變更要審核的信箱動作
 
-您可以使用**Set-Mailbox** Cmdlet 上的*AuditAdmin*、 *AuditDelegate*或*AuditOwner*參數，來變更針對使用者信箱和共用信箱進行審核的信箱動作（無法自訂 Office 365 群組信箱的已審核動作）。
+您可以使用**Set-Mailbox** Cmdlet 上的*AuditAdmin*、 *AuditDelegate*或*AuditOwner*參數，來變更針對使用者信箱和共用信箱進行審核的信箱動作（無法自訂 Microsoft 365 群組信箱的已審核動作）。
 
 您可以使用兩種不同的方法來指定信箱動作：
 
@@ -261,7 +261,7 @@ Set-Mailbox -Identity <MailboxIdentity> -DefaultAuditSet <Admin | Delegate | Own
 
 您可以指定多個以逗號分隔的*DefaultAuditSet*值。
 
-**附注**：下列程式不適用於 Office 365 群組信箱（它們會限制于[此處](#mailbox-actions-for-office-365-group-mailboxes)所述的預設動作）。
+**附注**：下列程式不適用於 Microsoft 365 群組信箱（它們會限制于[此處](#mailbox-actions-for-microsoft-365-group-mailboxes)所述的預設動作）。
 
 本範例會在信箱 mark@contoso.onmicrosoft.com 上還原所有登入類型的預設已審核信箱動作。
 
@@ -360,13 +360,13 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
     - [執行非擁有者信箱存取報告](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
 
-- 依預設，信箱審核記錄記錄會在刪除之前保留90天。 您可以使用 Exchange Online PowerShell 中**Set-Mailbox** Cmdlet 上的*AuditLogAgeLimit*參數，來變更審核記錄記錄的保留天數。 不過，增加此值不會讓您在 Office 365 審核記錄中搜尋超過90天的事件。
+- 依預設，信箱審核記錄記錄會在刪除之前保留90天。 您可以使用 Exchange Online PowerShell 中**Set-Mailbox** Cmdlet 上的*AuditLogAgeLimit*參數，來變更審核記錄記錄的保留天數。 不過，增加此值不會讓您在審核記錄中搜尋超過90天的事件。
 
   如果您增加保留天數，您必須在 Exchange Online 中使用[Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog)指令程式 PowerShell 來搜尋使用者的信箱審核記錄中超過90天的記錄。
 
 - 如果您已在信箱審核之前將信箱的*AuditLogAgeLimit*屬性變更為已開啟組織的預設值，則信箱的現有審核記錄保留時間限制不會變更。 換句話說，依預設，信箱審計不會影響信箱審計記錄的目前保留限制。
 
-- 若要變更 Office 365 群組信箱上的*AuditLogAgeLimit*值，您必須在**Set-Mailbox**命令`-GroupMailbox`中包含該參數。
+- 若要變更 Microsoft 365 群組信箱上的*AuditLogAgeLimit*值，您必須在**Set-Mailbox**命令`-GroupMailbox`中包含該參數。
 
 - 信箱審計記錄檔會儲存在每個使用者信箱的 [可復原的專案] 資料夾中的子資料夾（稱為「*審核*」）。 請記住下列有關信箱審計記錄和 [可復原的專案] 資料夾的事項：
 
@@ -387,8 +387,8 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
       Get-MailboxFolderStatistics -Identity <MailboxIdentity> -FolderScope RecoverableItems | Where-Object {$_.Name -eq 'Audits'} | Format-List FolderPath,FolderSize,ItemsInFolder
       ```
 
-    - 您無法直接存取 [可復原的專案] 資料夾中的審計記錄記錄;相反地，您可以使用**Search-MailboxAuditLog** Cmdlet 或搜尋 Office 365 的審計記錄檔，以尋找及查看信箱審計記錄。
+    - 您無法直接存取 [可復原的專案] 資料夾中的審計記錄記錄;相反地，您可以使用**Search-MailboxAuditLog** Cmdlet 或搜尋審核記錄檔，以尋找及查看信箱審計記錄。
 
 - 如果信箱處於暫止狀態或指派給規範中心內的保留原則，則在信箱的*AuditLogAgeLimit*屬性（預設值為90天）定義的期間內仍會保留審核記錄記錄。 若要保留長期保留信箱的審計記錄檔，您需要增加信箱的*AuditLogAgeLimit*值。
 
-- 在多地理位置環境中，不支援跨地理位置信箱審核。 例如，如果使用者被指派訪問不同地理位置中共用信箱的許可權，該使用者執行的信箱審核記錄不會登入共用信箱的信箱審核記錄。
+- 在地理位置環境中，不支援跨地理位置信箱稽核。 例如，如果指派給使用者的權限可以存取不同地理位置的共用信箱，則該使用者執行的信箱動作不會記錄在共用信箱的信箱稽核記錄中。

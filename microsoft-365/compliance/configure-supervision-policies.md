@@ -19,25 +19,25 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: e2880679c8520480aeffd640a26730defc298490
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 2935f6d163a954cf17e4e4ce3c357028c9763b3b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604190"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632368"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>在 Office 365 中設定監督原則
 
 >[!IMPORTANT]
->本主題適用于設定 Office 365 訂閱中的監察原則。 如果您想要為 Microsoft 365 訂閱設定通訊相容性，請參閱[設定 microsoft 365 中的通訊法規遵從性](communication-compliance-configure.md)。
+>本主題適用于設定 Microsoft 365 訂閱中的監察原則。 如果您想要為 Microsoft 365 訂閱設定通訊相容性，請參閱[設定 microsoft 365 中的通訊法規遵從性](communication-compliance-configure.md)。
 
 使用監督原則來捕獲員工通訊，以供內部或外部的檢閱者檢查。 如需監督原則如何協助您監視組織中通訊的詳細資訊，請參閱[Office 365 中的監管原則](supervision-policies.md)。
 
 >[!NOTE]
->監控原則所監控的使用者，必須具備 Microsoft 365 E5 相容性授權、具有高級合規性附加元件的 Office 365 企業版 E3 授權，或是包含在 Office 365 企業版 E5 訂閱中，或包含在 Microsoft 365 E5 中。訂閱。
+>監控原則所監控的使用者，必須具備 Microsoft 365 E5 相容性授權、具有高級合規性附加元件的 Office 365 企業版 E3 授權，或是包含在 Office 365 企業版 E5 訂閱中，或包含在 Microsoft 365 E5 訂閱中。
 >如果您沒有現有的企業版 E5 計畫，而且想要嘗試監督，您可以[註冊 Office 365 Enterprise e5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
   
-請遵循下列步驟，在您的 Office 365 組織中設定與使用監督：
+請遵循下列步驟，在您的組織中設定及使用監督：
   
 - **步驟1（選用）**：[設定監督群組](#step-1-set-up-groups-for-supervision-optional)
 
@@ -45,7 +45,7 @@ ms.locfileid: "42604190"
 
 - **步驟2（必要）**：[讓監管可用於您的組織](#step-2-make-supervision-available-in-your-organization-required)
 
-    將您本人新增至主管審查角色群組，讓您可以設定原則。 指派此角色的任何人都可以存取 Office 365 安全性與合規性中心內的**監管**頁面。 如果 reviewable 電子郵件主控于 Exchange Online，則每個檢閱者都必須有[Exchange online 的遠端 PowerShell 存取權](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
+    將您本人新增至主管審查角色群組，讓您可以設定原則。 已指派此角色的任何人都可以存取安全性 & 規範中心內的**監管**頁面。 如果 reviewable 電子郵件主控于 Exchange Online，則每個檢閱者都必須有[Exchange online 的遠端 PowerShell 存取權](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)。
 
 - **步驟3（選用）**：[建立自訂機密資訊類型及自訂關鍵字字典](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
@@ -53,7 +53,7 @@ ms.locfileid: "42604190"
 
 - **步驟4（必要）**：[設定監督原則](#step-4-set-up-a-supervision-policy-required)
 
-    您可以在 Office 365 安全性與合規性中心建立監督原則。 這些原則定義哪些通訊會在您的組織中進行檢查，並指定誰會執行評論。 通訊包括電子郵件和 Microsoft 小組通訊，以及協力廠商平臺通訊（如 Facebook、Twitter 等）。 在 Microsoft 365 訂閱中，Office 365 組織中所建立的監督原則不受支援。
+    您可以在安全性 & 規範中心建立監督原則。 這些原則定義哪些通訊會在您的組織中進行檢查，並指定誰會執行評論。 通訊包括電子郵件和 Microsoft 小組通訊，以及協力廠商平臺通訊（如 Facebook、Twitter 等）。 Microsoft 365 訂閱中的通訊監督不支援組織中所建立的監督原則。
 
 - **步驟5（選用）**：[測試通訊監督原則](#step-5-test-your-supervision-policy-optional)
 
@@ -67,10 +67,10 @@ ms.locfileid: "42604190"
 
 | **原則成員** | **支援的群組** | **不支援的群組** |
 |:-----|:-----|:-----|
-|監督的使用者 <br> 非監督的使用者 | 通訊群組 <br> Office 365 群組 | 動態通訊群組 |
+|監督的使用者 <br> 非監督的使用者 | 通訊群組 <br> Microsoft 365 群組 | 動態通訊群組 |
 | 檢閱者 | 擁有郵件功能的安全性群組  | 通訊群組 <br> 動態通訊群組 |
   
-當您為監督的使用者選取 Office 365 群組時，該原則會監控共用 Office 365 信箱的內容，以及與群組相關聯的 Microsoft 小組頻道。 當您選取通訊群組清單時，該原則會監控個別的使用者信箱。
+當您為監督的使用者選取 Microsoft 365 群組時，該原則會監控共用信箱的內容，以及與群組相關聯的 Microsoft 小組通道。 當您選取通訊群組清單時，該原則會監控個別的使用者信箱。
 
 若要管理大型企業組織中的監督使用者，您可能需要跨大型群組監控所有使用者。 您可以使用 PowerShell 為指派的群組設定全域監督原則的通訊群組。 這可讓您以單一原則監控成千上萬的使用者，並在新員工加入您的組織時，維持監督原則的更新。
 
@@ -105,19 +105,19 @@ ms.locfileid: "42604190"
 
 - [建立並管理通訊群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [管理啟用郵件功能的安全性群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
-- [Office 365 群組的概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+- [Microsoft 365 群組的概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
 ## <a name="step-2-make-supervision-available-in-your-organization-required"></a>步驟2：讓監管可用於您的組織（必要）
 
-若要讓**監察**功能成為 Office 365 安全性與合規性中心的功能表選項，您必須獲指派主管審查系統管理員角色。
+若要讓**監督**成為安全 & 合規性中心的功能表選項，您必須獲指派主管審查系統管理員角色。
   
 若要這麼做，您可以將自己新增為主管審查角色群組的成員，也可以建立角色群組。
   
 ### <a name="add-members-to-the-supervisory-review-role-group"></a>新增成員至主管審查角色群組
 
-1. 在您[https://protection.office.com](https://protection.office.com)的 Office 365 組織中，登入使用系統管理員帳戶的認證。
+1. 登入[https://protection.office.com](https://protection.office.com)在組織中使用管理員帳戶的認證。
 
-2. 在 Office 365 的 [安全性與合規性中心] 中，移至 [**許可權**]。
+2. 在 [安全性 & 規範中心] 中，移至 [**許可權**]。
 
 3. 選取 [**主管審查**] 角色群組，然後按一下 [編輯] 圖示。
 
@@ -125,9 +125,9 @@ ms.locfileid: "42604190"
 
 ### <a name="create-a-new-role-group"></a>建立新的角色群組
 
-1. 在您[https://protection.office.com/permissions](https://protection.office.com/permissions)的 Office 365 組織中，登入使用系統管理員帳戶的認證。
+1. 登入[https://protection.office.com/permissions](https://protection.office.com/permissions)在組織中使用管理員帳戶的認證。
 
-2. 在 Office 365 的 [安全性與合規性中心] **Permissions**中，移至 [許可權**+**]，然後按一下 [新增] （）。
+2. 在 [安全性 & 規範中心] 中，移至 [**許可權**]，**+** 然後按一下 [新增] （）。
 
 3. 在 [**角色**] 區段中，按一下**+**[新增] （），然後向下滾動至「**主管審查管理員**」。 將此角色新增至角色群組。
 
@@ -149,7 +149,7 @@ ms.locfileid: "42604190"
 
 ### <a name="create-custom-sensitive-information-types"></a>建立自訂機密資訊類型
 
-1. 建立新的敏感資訊類型，並將您的自訂字典加入 Office 365 安全性 & 規範中心。 流覽至 [**分類** \> **機密資訊類型**]，然後依照**新增的敏感資訊類型嚮導**中的步驟進行。 您將在這裡：
+1. 建立新的敏感資訊類型，並將您的自訂字典加入安全性 & 規範中心。 流覽至 [**分類** \> **機密資訊類型**]，然後依照**新增的敏感資訊類型嚮導**中的步驟進行。 您將在這裡：
 
     - 定義敏感資訊類型的名稱和描述
     - 定義鄰近性、信賴等級及主要模式元素
@@ -162,9 +162,9 @@ ms.locfileid: "42604190"
 
 ## <a name="step-4-set-up-a-supervision-policy-required"></a>步驟4：設定監督原則（必要）
   
-1. 在您[https://protection.office.com](https://protection.office.com)的 Office 365 組織中，登入使用系統管理員帳戶的認證。
+1. 登入[https://protection.office.com](https://protection.office.com)在組織中使用管理員帳戶的認證。
 
-2. 在 Office 365 的 [安全性與合規性中心] 中，選取 [**監督**]。
+2. 在 [安全性 & 規範中心] 中，選取 [**監督**]。
   
 3. 選取 [**建立**]，然後依照嚮導設定原則設定。 使用此嚮導，您可以：
 
@@ -187,5 +187,5 @@ ms.locfileid: "42604190"
     >[!NOTE]
     >已定義原則的電子郵件會在近期即時處理，而且在設定原則之後可立即進行測試。 Microsoft 小組中的聊天可能需要長達24小時才能完全處理原則。 
 
-3. 以通訊監管原則中指定的檢閱者登入 Office 365 租使用者。 流覽至 [**監察** > ]*您的自訂原則* > **開啟**以查看原則的報告。
+3. 以通訊監督原則中指定的檢閱者身分登入 Microsoft 365。 流覽至 [**監察** > ]*您的自訂原則* > **開啟**以查看原則的報告。
 

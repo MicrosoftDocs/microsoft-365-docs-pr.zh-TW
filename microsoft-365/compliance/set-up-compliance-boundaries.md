@@ -1,5 +1,5 @@
 ---
-title: 設定 Office 365 中電子文件探索調查的合規性界限
+title: 設定 eDiscovery 調查的合規性界限
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,25 +17,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
-description: 使用規範界限在 Office 365 組織內建立邏輯界限，以控制 eDiscovery 管理員可搜尋的使用者內容位置。 規範界限使用「搜尋許可權篩選」（也稱為「合規性安全性篩選」）控制特定使用者可搜尋的信箱、SharePoint 網站及 OneDrive 帳戶。
-ms.openlocfilehash: 247c2649029d3029bb14ca9873a553f2ef8c356c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: 使用規範界限在組織內建立邏輯界限，以控制 eDiscovery 管理員可搜尋的使用者內容位置。 規範界限使用「搜尋許可權篩選」（也稱為「合規性安全性篩選」）控制特定使用者可搜尋的信箱、SharePoint 網站及 OneDrive 帳戶。
+ms.openlocfilehash: 80b64a32ea7bbd45aec726a1e8f41ad48ef77714
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634141"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636161"
 ---
-# <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>設定 Office 365 中電子文件探索調查的合規性界限
+# <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>設定 eDiscovery 調查的合規性界限
 
 使用核心 eDiscovery 或高級 eDiscovery 來管理調查時，可以套用本文中的指導方針。
 
-規範界限會在 Office 365 組織內建立邏輯界限，以控制 eDiscovery 管理員可搜尋的使用者內容位置（例如信箱、SharePoint 網站和 OneDrive 帳戶）。 此外，合規性界限控制誰可以存取 eDiscovery 案例，以用於管理組織內的法律、人力資源或其他調查。 對於必須遵守地理 boarders 及法規及政府（通常分為不同的代理商）的跨國公司，必須使用規範界限。 在 Office 365 中，相容性界限可協助您在使用 eDiscovery 案例執行內容搜尋及管理調查時，符合這些需求。
+規範界限會在組織內建立邏輯界限，以控制 eDiscovery 管理員可以搜尋的使用者內容位置（例如信箱、SharePoint 網站和 OneDrive 帳戶）。 此外，合規性界限控制誰可以存取 eDiscovery 案例，以用於管理組織內的法律、人力資源或其他調查。 對於必須遵守地理 boarders 及法規及政府（通常分為不同的代理商）的跨國公司，必須使用規範界限。 在 Office 365 中，相容性界限可協助您在使用 eDiscovery 案例執行內容搜尋及管理調查時，符合這些需求。
   
 我們會使用下圖中的範例，說明規範界限的運作方式。
   
 ![規範界限是由控制對電子檔或系統管理員角色群組存取的搜尋許可權篩選所組成，以控制 eDiscovery 案例的存取](../media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
   
-在此範例中，Contoso 有限公司是由兩個分公司、第四個咖啡和 Coho Winery 所組成的 Office 365 組織。 業務要求 eDiscovery mangers 和調查人員只能在其代理人中搜尋 Exchange 信箱、OneDrive 帳戶及 SharePoint 網站。 此外，eDiscovery 管理員和調查人員只會查看其代理人中的 eDiscovery 案例，而且只能存取他們隸屬的案例。 以下是規範界限如何符合這些需求。
+在此範例中，Contoso 有限公司是由兩個分公司、第四個咖啡和 Coho Winery 所組成的組織。 業務要求 eDiscovery mangers 和調查人員只能在其代理人中搜尋 Exchange 信箱、OneDrive 帳戶及 SharePoint 網站。 此外，eDiscovery 管理員和調查人員只會查看其代理人中的 eDiscovery 案例，而且只能存取他們隸屬的案例。 以下是規範界限如何符合這些需求。
   
 - 內容搜尋中的搜尋許可權篩選功能會控制 eDiscovery 管理員和調查人員可搜尋的內容位置。 這表示第四個咖啡機關中的 eDiscovery 管理員和調查人員，只能在第四個咖啡店中搜尋內容位置。 這種限制適用于 Coho Winery 子公司。
     
@@ -79,11 +79,11 @@ ms.locfileid: "42634141"
   
 當您將要求提交給 Microsoft 支援時包含下列資訊：
   
-- Office 365 組織的預設功能變數名稱
+- 組織的預設網功能變數名稱稱
     
 - Azure Active Directory 屬性的名稱（步驟1）
     
-- 以下是支援要求目的的標題或描述：「啟用相容性安全性篩選器的商務同步處理與 Azure Active Directory 的 OneDrive。 這有助於將要求路由傳送至執行要求的 Office 365 eDiscovery 工程小組。
+- 以下是支援要求目的的標題或描述：「啟用相容性安全性篩選器的商務同步處理與 Azure Active Directory 的 OneDrive。 這有助於將要求路由傳送至實現要求的 eDiscovery 工程團隊。
     
 在進行工程變更，並將屬性同步處理至 OneDrive 後，Microsoft 支援將會向您傳送所做變更的組建編號，以及預估的部署日期。 在您提交支援要求後，部署程式通常需要4–6周。
   
@@ -237,11 +237,11 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
 - **[地區]** 參數不會控制 Exchange 信箱的搜尋。 當您搜尋信箱時，將會搜尋所有資料中心。 若要限制搜尋的 Exchange 信箱範圍，請在建立或變更搜尋許可權篩選時使用**Filters**參數。 
     
-- 若要讓 eDiscovery 管理員在多個 SharePoint 區域中進行搜尋，您需要為該 eDiscovery 管理員建立不同的使用者帳戶，以便在搜尋許可權篩選中使用，以指定 SharePoint 網站或 OneDrive 的地區。帳戶位於。 如需有關設定此功能的詳細資訊，請參閱在[Office 365 的內容搜尋](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment)中的「搜尋 SharePoint 多地理位置環境中的內容」一節。
+- 若要讓 eDiscovery 管理員在多個 SharePoint 區域中進行搜尋，您需要為該 eDiscovery 管理員建立不同的使用者帳戶，以在「搜尋許可權」篩選中使用，以指定 SharePoint 網站或 OneDrive 帳戶所在的地區。 如需有關設定此功能的詳細資訊，請參閱在[Office 365 的內容搜尋](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment)中的「搜尋 SharePoint 多地理位置環境中的內容」一節。
     
 - 當您在 SharePoint 和 OneDrive 中搜尋內容時， **Region**參數會將搜尋指引至 ediscovery Manager 執行 ediscovery 調查的主要或衛星位置。 [！注意] 如果 eDiscovery 管理員搜尋 SharePoint 和 OneDrive 「搜尋許可權」篩選中指定之區域以外的網站，將不會傳回任何搜尋結果。 
     
-- 當您匯出搜尋結果時，所有內容位置（包括 Exchange、商務用 Skype、SharePoint、OneDrive 及其他可使用內容搜尋工具進行搜尋的 Office 365 服務）的內容都會上傳至位於**Region**參數所指定之資料中心的 Azure 存放位置。 這可協助組織在法規遵從性的情況中，不允許透過可控框線匯出內容。 如果 [搜尋許可權] 篩選中未指定任何區域，則會將內容上傳至組織的預設區域。 
+- 匯出搜尋結果時，所有內容位置的內容（包括 Exchange、商務用 Skype、SharePoint、OneDrive，以及您可以使用內容搜尋工具進行搜尋的其他服務）都會上傳至位於**Region**參數所指定之 datacenter 中的 Azure 儲存位置。 這可協助組織在法規遵從性的情況中，不允許透過可控框線匯出內容。 如果 [搜尋許可權] 篩選中未指定任何區域，則會將內容上傳至組織的預設區域。 
     
 - 您可以執行下列命令來編輯現有的「搜尋許可權」篩選，以新增或變更區域：
 
@@ -267,7 +267,7 @@ EDiscovery 管理員可以將參數新增至其搜尋查詢，將搜尋限制在
   
 是。 若要這樣做，可以將使用者新增至雙方都可以看見的角色群組。
   
- **搜尋許可權篩選器適用于 eDiscovery 案例保留、Office 365 保留原則或 DLP？**
+ **搜尋許可權篩選器適用于 eDiscovery 案例保留、Microsoft 365 保留原則或 DLP？**
   
 否，但目前未這麼做。
   

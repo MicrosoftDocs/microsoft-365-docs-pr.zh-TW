@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中搜尋內容
+title: 搜尋內容
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,79 +12,79 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
-description: 使用安全性 & 合規性中心，以快速找到 Exchange 信箱、 SharePoint 網站和 OneDrive 的位置，以及立即訊息中商務用 Skype 交談中的文件中的 [電子郵件的內容搜尋電子文件探索工具。
-ms.openlocfilehash: d5acdf5bba50d002876491ee0488c1f28a2c51ad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 使用安全性 & 合規性中心的內容搜尋 eDiscovery 工具，可在 Exchange 信箱、SharePoint 網站中的檔，以及在商務用 Skype 中 OneDrive 位置和立即訊息交談中快速尋找電子郵件。
+ms.openlocfilehash: 2b874181fdfc5bce69227acc279e12bffe70c069
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601540"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632918"
 ---
-# <a name="search-for-content-in-office-365"></a>在 Office 365 中搜尋內容
+# <a name="search-for-content"></a>搜尋內容
 
-使用安全性 & 合規性中心，以快速找到 Exchange 信箱、 SharePoint 網站和 OneDrive 的位置，以及立即訊息中商務用 Skype 交談中的文件中的 [電子郵件的內容搜尋工具。 您可以使用內容搜尋工具來搜尋電子郵件、 文件和立即訊息交談中 Office 365 共同作業工具，例如 Microsoft Teams 和 Office 365 群組。
+使用安全性 & 合規性中心的內容搜尋工具，可在 Exchange 信箱、SharePoint 網站中的檔，以及在商務用 Skype 中 OneDrive 位置，快速尋找電子郵件。 您可以使用內容搜尋工具，在共同作業工具（例如 Microsoft 團隊和 Microsoft 365 群組）中搜尋電子郵件、檔和立即訊息交談。
   
 ## <a name="search-for-content"></a>搜尋內容
 
-第一個步驟是開始使用內容搜尋工具來選擇要搜尋並設定關鍵字查詢以搜尋特定項目內容位置。 或者，您只可以為空白查詢，在目標位置傳回的所有項目。
+第一步是開始使用內容搜尋工具來選擇要搜尋的內容位置，並設定關鍵字查詢以搜尋特定專案。 或者，您可以只保留查詢空白，並傳回目標位置中的所有專案。
   
 - [建立並執行](content-search.md)內容搜尋 
     
-- [組建搜尋查詢和使用條件](keyword-queries-and-search-conditions.md)縮小搜尋範圍 
+- [建立搜尋查詢和使用條件](keyword-queries-and-search-conditions.md)以縮小搜尋範圍 
     
-- [設定搜尋權限篩選](permissions-filtering-for-content-search.md)以便電子文件探索管理員可以僅搜尋組織中的信箱或網站的子集 
+- [設定搜尋許可權篩選](permissions-filtering-for-content-search.md)，使 eDiscovery 管理員只會搜尋組織中的信箱或網站的子集 
     
-- [執行識別碼清單搜尋](csv-file-for-an-id-list-content-search.md)來搜尋特定的電子郵件 
+- [執行識別碼清單搜尋](csv-file-for-an-id-list-content-search.md)以搜尋特定的電子郵件 
     
-- Office 365 中的內部部署使用者的[搜尋雲端式信箱](search-cloud-based-mailboxes-for-on-premises-users.md)
+- 在 Microsoft 365 中搜尋內部部署使用者的[雲端架構信箱](search-cloud-based-mailboxes-for-on-premises-users.md)
 
-- [檢視關鍵字統計資料](view-keyword-statistics-for-content-search.md)的搜尋，然後精簡查詢視結果 
+- 查看搜尋結果的[關鍵字統計資料](view-keyword-statistics-for-content-search.md)，然後在必要時精煉查詢 
     
-- 您的組織已匯入至 Office 365 的[搜尋協力廠商資料](use-content-search-to-search-third-party-data-that-was-imported.md) 
+- 搜尋您的組織已匯入 Microsoft 365 的[協力廠商資料](use-content-search-to-search-third-party-data-that-was-imported.md) 
     
-- [大量編輯](bulk-edit-content-searches.md)的查詢，以及多個搜尋內容位置 
+- [大量編輯](bulk-edit-content-searches.md)查詢和內容位置以進行多個搜尋 
     
-- 若要解決錯誤的內容位置的 [[重試內容搜尋](retry-failed-content-search.md)
+- [重試內容搜尋](retry-failed-content-search.md)以解決內容位置錯誤
 
-- [保留密件副本收件者](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members)讓他們可以搜尋 
+- [保留密件副本](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members)收件者，以便進行搜尋 
 
 
-## <a name="perform-actions-on-content-you-find"></a>對您找到的內容執行動作
+## <a name="perform-actions-on-content-you-find"></a>對所找到的內容執行動作
 
-在執行搜尋，並調整視之後下, 一步是執行某些動作與搜尋所傳回的結果。 您可以匯出，並將結果下載到本機電腦，或在您的組織電子郵件攻擊的情況下，您可以從使用者信箱中刪除搜尋的結果。
+在您執行搜尋並視需要加以調整之後，下一步是針對搜尋傳回的結果執行某些動作。 您可以將結果匯出並下載到您的本機電腦上，或在組織的電子郵件攻擊案例中，從使用者信箱中刪除搜尋結果。
   
-- [匯出內容搜尋的結果](export-search-results.md)和下載到本機電腦 
+- [匯出內容搜尋的結果](export-search-results.md)，並將其下載到您的本機電腦 
     
-- [搜尋並刪除電子郵件訊息](search-for-and-delete-messages-in-your-organization.md)，例如內容的病毒、 危險附件或網路釣魚郵件的郵件 
+- [搜尋並刪除電子郵件訊息](search-for-and-delete-messages-in-your-organization.md)，例如內容為病毒、危險附件或網路釣魚郵件的郵件 
     
-- [將報表匯出](export-a-content-search-report.md)結果相關的內容搜尋，而不將匯出的實際的結果 
+- [匯出](export-a-content-search-report.md)內容搜尋結果的報告，但不匯出實際結果 
     
-- 當您匯出搜尋結果時，[[增加的下載速度](increase-download-speeds-when-exporting-ediscovery-results.md) 
+- 提高您匯出搜尋結果時[的下載速度](increase-download-speeds-when-exporting-ediscovery-results.md) 
     
-## <a name="learn-more-about-content-search"></a>深入了解內容搜尋
+## <a name="learn-more-about-content-search"></a>深入瞭解內容搜尋
 
-內容搜尋很容易使用，但是它也是功能強大的工具。 幕後，有很多程度。 多您知道其相關資訊，並了解其行為，以及其限制，更順利就會使用它適合貴組織的搜尋和調查需求。 了解：
+內容搜尋很容易使用，但也是功能強大的工具。 在幕後，有許多事情會發生。 您對它的瞭解越多，並瞭解其行為及其限制，您就能更順利地使用它來滿足您組織的搜尋和調查需求。 深入瞭解：
   
-- [已局部編製索引 Exchange 和 SharePoint 中的項目](partially-indexed-items-in-content-search.md)，以及如何包含或排除它們，當您匯出及下載搜尋結果 
+- [Exchange 和 SharePoint 中已部分編制索引的專案](partially-indexed-items-in-content-search.md)，以及當您匯出及下載搜尋結果時要包含或排除的專案 
     
-- [調查已局部編製索引的項目](investigating-partially-indexed-items-in-ediscovery.md)，並判斷您的組織暴露 
+- [調查已部分索引的專案](investigating-partially-indexed-items-in-ediscovery.md)，並決定貴組織對它們的危險性 
     
-- [限制內容搜尋 」 工具](limits-for-content-search.md)，例如，您可以一次執行搜尋的最大數目以及您可以在單一搜尋中包含的內容位置的最大數目 
+- [內容搜尋工具的限制](limits-for-content-search.md)，例如，您可以一次執行的搜尋數目上限，以及可以包含在單一搜尋中的最大內容位置數目。 
     
-- [估計與實際搜尋結果](differences-between-estimated-and-actual-ediscovery-search-results.md)和原因的原因可能有其當您匯出及下載搜尋結果之間的差異 
+- 當您匯出及下載搜尋結果時，[預估和實際搜尋結果](differences-between-estimated-and-actual-ediscovery-search-results.md)的原因可能有差異。 
     
-- 當您匯出搜尋結果的電子郵件訊息時，您可以啟用的[搜尋結果中的重複資料刪除](de-duplication-in-ediscovery-search-results.md) 
+- 當您匯出搜尋結果的電子郵件時，您可以啟用的[搜尋結果中的重復資料](de-duplication-in-ediscovery-search-results.md)刪除 
     
-## <a name="use-scripts-for-advanced-scenarios"></a>在進階案例中使用指令碼
+## <a name="use-scripts-for-advanced-scenarios"></a>使用腳本進行高級案例
 
-有時候，您必須執行更進階、 複雜，且重複的內容搜尋工作。 在這些情況下，很容易且快速使用安全性 & 合規性中心中的 PowerShell 命令。 為了能夠更容易，我們已建立了數個安全性 & 合規性中心 PowerShell 指令碼，以協助您完成複雜的內容搜尋相關工作。
+有時候，您必須執行更高級、複雜和重複的內容搜尋工作。 在這些情況下，在安全性 & 規範中心使用 PowerShell 命令會變得更輕鬆快捷。 為了簡化這項作業，我們已建立了許多安全性 & 合規性中心 PowerShell 腳本，協助您完成複雜的內容搜尋相關工作。
   
-- [搜尋特定信箱和站台資料夾](use-content-search-for-targeted-collections.md)（稱為 「*目標集合*） 時您確信回應大小寫的項目位於該資料夾 
+- 當您確信回應案例的專案位於該資料夾中時，[搜尋特定的信箱和網站資料夾](use-content-search-for-targeted-collections.md)（稱為*目標集合*） 
     
-- [搜尋的信箱和 OneDrive 位置](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)的使用者清單 
+- [在信箱和 OneDrive 位置搜尋](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)使用者清單 
     
-- [建立、 回報及刪除多個搜尋](create-report-on-and-delete-multiple-content-searches.md)以快速且更有效地識別及 cull 搜尋資料 
+- [建立、報告和刪除多個搜尋](create-report-on-and-delete-multiple-content-searches.md)，以快速且有效地識別及挑選搜尋資料 
     
-- [複製內容搜尋](clone-a-content-search.md)，並快速比較在相同的內容位置; 上執行不同的關鍵字搜尋查詢的結果或使用指令碼以節省時間不會察覺到重新輸入大量內容的位置，當您建立新的搜尋 
+- [複製內容搜尋](clone-a-content-search.md)並快速比較不同關鍵字搜尋查詢的結果在相同的內容位置上執行;或者，您可以使用腳本，在您建立新的搜尋時不必重新輸入大量的內容位置，以節省時間 
     
 

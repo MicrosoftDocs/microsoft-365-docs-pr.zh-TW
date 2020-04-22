@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: '深入瞭解 Office 365 的安全性 & 規範中心內的內容搜尋功能限制，例如同時搜尋的最大數目。 '
-ms.openlocfilehash: a560e26b6a02e48ca50033acad554e3c7bb2ec6e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 6c2093bced166901a4442e9ab6593de2b64b785b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634731"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632648"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>安全性 & 規範中心的內容搜尋限制
 
 > [!NOTE]
 > 本主題中的限制與 Exchange Online 中的 In-Place eDiscovery 和 eDiscovery Center 在 SharePoint Online 中的目前限制不同。 
   
-[安全性 & 規範中心] 中的內容搜尋功能會套用各種限制。 這包括「**內容搜尋**」頁面上的搜尋執行，以及與 eDiscovery 案例相關聯的搜尋。 這些限制可協助維護為 Office 365 組織提供的服務健康情況和品質。 在 Exchange Online 進行搜尋時，也有與電子郵件訊息的索引相關的限制。 您無法修改內容搜尋或電子郵件索引限制，但您應注意這些限制，這樣您就可以在規劃、執行及疑難排解內容搜尋時考慮這些限制。 
+[安全性 & 規範中心] 中的內容搜尋功能會套用各種限制。 這包括「**內容搜尋**」頁面上的搜尋執行，以及與 eDiscovery 案例相關聯的搜尋。 這些限制可協助維護為組織提供的服務健康情況和品質。 在 Exchange Online 進行搜尋時，也有與電子郵件訊息的索引相關的限制。 您無法修改內容搜尋或電子郵件索引限制，但您應注意這些限制，這樣您就可以在規劃、執行及疑難排解內容搜尋時考慮這些限制。 
   
 ## <a name="content-search-limits"></a>內容搜尋限制
 
@@ -51,7 +51,7 @@ ms.locfileid: "42634731"
 |搜尋查詢的最大字元數（包括運算子和條件），以供內容搜尋使用。  <br/><br/> **附注：** 此限制會在查詢展開之後生效，這表示查詢將會針對每個關鍵字展開。 例如，如果搜尋查詢有15個關鍵字及其他參數和條件，則查詢會展開15次，每個都有查詢中的其他參數和條件。 因此，即使搜尋查詢中的字元數可能低於限制，也是擴充的查詢，可能會導致超過此限制。  <br/> |**信箱：** 10000  <br/> **網站：** 4000 搜尋所有網站或2000時搜尋20個網站<sup>1</sup> <br/> |
 |當使用前置詞萬用字元來搜尋搜尋查詢中的確切片語時，或是使用前置詞萬用字元和**NEAR**或**ONEAR** Boolean 運算子時，所傳回的變種數目上限。  <br/> |10000 <sup>2</sup> <br/> |
 |前置詞萬用字元的最小字母字元數目;例如`time*` `one*`，、或`set*`。  <br/> |3   <br/> |
-|您可以執行「搜尋並清除」動作（使用**New-ComplianceSearchAction-Purge**命令），在內容搜尋中刪除專案的信箱數目上限。 如果內容搜尋您執行的清除動作的來源信箱超過此限制，清除動作將會失敗。 如需搜尋及清除的詳細資訊，請參閱[搜尋並刪除您 Office 365 組織中的電子郵件訊息](search-for-and-delete-messages-in-your-organization.md)。  <br/> |50,000  <br/> |
+|您可以執行「搜尋並清除」動作（使用**New-ComplianceSearchAction-Purge**命令），在內容搜尋中刪除專案的信箱數目上限。 如果內容搜尋您執行的清除動作的來源信箱超過此限制，清除動作將會失敗。 如需搜尋及清除的詳細資訊，請參閱[搜尋並刪除組織中的電子郵件訊息](search-for-and-delete-messages-in-your-organization.md)。  <br/> |50,000  <br/> |
    
 > [!NOTE]
 > <sup>1</sup>搜尋商務位置的 SharePoint 和 OneDrive 時，所搜尋之網站 URLs 中的字元會根據此限制計算。 <br/> <sup>2</sup>若非片語查詢（不使用雙引號的關鍵字值），我們會使用特殊的首碼索引。 這會告訴我們檔中的字詞，但不會出現在檔中。 若要執行片語查詢（包含雙引號的關鍵字值），我們需要比較檔內的字詞中的文字的位置。 這表示我們無法使用關鍵字查詢的首碼索引。 在此情況下，我們會以內部首碼擴充的任何可能的字來內部展開查詢;例如， `"time*"`可以展開 to `"time OR timer OR times OR timex OR timeboxed OR …"`。 10000是 word 可以擴充的變種數目上限，而非符合查詢的檔數目上限。 非片語字詞沒有上限。 
@@ -78,14 +78,14 @@ ms.locfileid: "42634731"
   
 - [匯出內容搜尋結果](export-search-results.md#export-limits)
     
-- [位於 Office 365 中內容搜尋的已局部編製索引項目](partially-indexed-items-in-content-search.md)
+- [內容搜尋中已局部編製索引的項目](partially-indexed-items-in-content-search.md)
     
-- [調查 Office 365 電子文件探索中已局部編製索引的項目](investigating-partially-indexed-items-in-ediscovery.md)
+- [調查 eDiscovery 中已部分索引的專案](investigating-partially-indexed-items-in-ediscovery.md)
     
 - [SharePoint Online 的搜尋限制](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)
     
 如需內容搜尋的相關資訊，請參閱：
   
-- [Office 365 中的內容搜尋](content-search.md)
+- [Microsoft 365 中的內容搜尋](content-search.md)
     
 - [內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md)

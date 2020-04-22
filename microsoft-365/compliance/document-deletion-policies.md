@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: 基於規範、法律或其他商業需求，您的組織可能需要將文件保留一段時間。 但如果您的組織保留文件的時間過久，則會產生不必要的法律風險。 使用文件刪除原則，您可以在一段特定時間後，透過刪除網站上的文件以積極降低風險 - 例如，您可以在文件建立五年之後，在使用者的商務用 OneDrive 網站上刪除文件。
-ms.openlocfilehash: 60bf7808daad3eaead99ef64ea24be0bcfd9be0e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 55d4616b4185ebdbbf0f132803d1b7414eaabac8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075195"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633042"
 ---
 # <a name="overview-of-document-deletion-policies"></a>文件刪除原則概觀
 
 > [!IMPORTANT]
-> 我們建議您使用在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或 Office 365 安全性與合規性中心中建立的保留原則或標籤，而不是使用文件刪除原則。 文件刪除原則會繼續與保留原則並行，但是如果您需要保留或刪除 Office 365 中任何地方的內容，我們建議您使用保留原則。 如需詳細資訊，請參閱[使用保留原則，而不是這些功能](retention-policies.md#use-a-retention-policy-instead-of-these-features)。
+> 向前移動，我們建議您使用保留原則或在 Microsoft 365 規範中心、Microsoft 365 安全性中心或安全性&amp;與合規性中心建立的標籤，而不是檔刪除原則。 文件刪除原則會繼續與保留原則並行，但是如果您需要保留或刪除 Office 365 中任何地方的內容，我們建議您使用保留原則。 如需詳細資訊，請參閱[使用保留原則，而不是這些功能](retention-policies.md#use-a-retention-policy-instead-of-these-features)。
   
 基於規範、法律或其他商業需求，您的組織可能需要將文件保留一段時間。 但如果您的組織保留文件的時間過久，則會產生不必要的法律風險。 使用文件刪除原則，您可以在一段特定時間後，透過刪除網站上的文件以積極降低風險 - 例如，您可以在文件建立五年之後，在使用者的商務用 OneDrive 網站上刪除文件。
   
@@ -44,7 +44,7 @@ ms.locfileid: "42075195"
   
 ## <a name="when-to-use-document-deletion-policies"></a>文件刪除原則的使用時機
 
-除了文件刪除原則以外，Office 365 還為站台內容提供下列保留原則：
+除了檔刪除原則之外，Microsoft 還會為網站內容提供下列保留原則：
   
 - [記錄管理](https://go.microsoft.com/fwlink/p/?LinkID=404250)
     

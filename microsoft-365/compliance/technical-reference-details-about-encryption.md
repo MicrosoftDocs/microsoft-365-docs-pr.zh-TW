@@ -1,5 +1,5 @@
 ---
-title: 關於 Office 365 中加密的技術參考細節
+title: 有關加密的技術參考詳細資料
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: 在 Office 365 中查看有關加密的技術詳細資料。
-ms.openlocfilehash: afd02ba6480e692bf16bf6dd94f192a5889590ee
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: cdfd3765fb7bf15835d200a539241d928225d22e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610580"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637207"
 ---
-# <a name="technical-reference-details-about-encryption-in-office-365"></a>關於 Office 365 中加密的技術參考細節
+# <a name="technical-reference-details-about-encryption"></a>有關加密的技術參考詳細資料
 
 請參閱本文，以瞭解[Office 365 中用於加密](encryption.md)的憑證、技術和 TLS 密碼套件。 本文也提供規劃取代的詳細資料。
   

@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 您可以追蹤在安全性 & 合規性中心的「資料調查」工具中執行工作時所產生的長時間執行程式的狀態。
-ms.openlocfilehash: 6c7b247eb4a8ef9797a8a5993195bb21d7bf30bf
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: ef2fe364a20bd0edc48761162f519135b750d9ab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "41582922"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635913"
 ---
 # <a name="manage-jobs-in-data-investigations-preview"></a>管理資料調查中的工作（預覽）
 
 以下是在資料調查（預覽）調查的 [**作業**] 索引標籤上追蹤的工作（通常為長期執行的處理常式）清單。 使用和管理調查時，使用者動作會觸發這些工作。
 
-| 工作類型            | 說明     |
+| 工作類型            | 描述     |
 | :----------------- | :----------     |
 |將資料新增至證據集 | 使用者將搜尋結果新增至證據集。  如需詳細資訊，請參閱[在調查中搜尋資料](search-for-data.md)。 |
 |將資料新增至另一個證據集 | 使用者在相同的情況下，將一套證據集中的檔新增至不同的證據集。|
-|將非 Office 365 資料新增至證據集 | 使用者將非 Office 365 資料上傳至證據集。 在此程式中，資料也會編制索引。 例如，內部部署檔案伺服器或用戶端電腦上的檔案上傳至證據集。 如需詳細資訊，請參閱將[非 Office 365 資料載入到證據](load-non-office365-data.md)。| 
+|將非 Microsoft 365 資料新增至證據集 | 使用者將非 Microsoft 365 資料上傳至證據集。 在此程式中，資料也會編制索引。 例如，內部部署檔案伺服器或用戶端電腦上的檔案上傳至證據集。 如需詳細資訊，請參閱將[非 Microsoft 365 資料載入至證據](load-non-office365-data.md)。| 
 |將修正的資料新增至證據集 | 會修正具有處理錯誤的資料，並將其重新載入回證據集。 如需詳細資訊，請參閱[在處理調查的資料時的錯誤修正](error-remediation.md)。 | 
 |比較負載設定 | 使用者查看證據集中不同載入集之間的差異。 載入集是將資料新增至證據集的實例。 例如，如果您將兩個不同搜尋的結果新增至相同的證據集，每個搜尋會代表一個負載集。 如需詳細資訊，請參閱[管理載入集](manage-load-sets.md)。 |
 |將 redacted 檔轉換成 PDF|在使用者 annotates 證據集內的檔，並編寫其一部分之後，他們可以選擇將 redacted 檔轉換成 PDF 檔案。 這可確保匯出檔進行簡報時，redacted 部分不會顯示。 如需詳細資訊，請參閱[在證據中查看資料](review-data-in-evidence.md)。 |

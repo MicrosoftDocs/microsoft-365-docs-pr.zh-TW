@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 06dc88e395ea31d40a4163565d7894a2720cb469
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 56ed13ad02c176465f983ffc99af93330f19d00c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634251"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632938"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>在高級電子檔探索中管理審閱集
 
@@ -53,6 +53,6 @@ ms.locfileid: "42634251"
 
 1. [將搜尋結果新增至檢閱集](add-data-to-review-set.md)
 
-2. [將非 Office 365 的資料載入檢閱集](load-non-office365-data.md)
+2. [將非 Microsoft 365 資料載入到審閱集](load-non-office365-data.md)
 
 3. [從另一個複查集將資料新增至審閱集](add-data-to-review-set-from-another-review-set.md)

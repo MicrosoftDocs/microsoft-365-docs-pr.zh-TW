@@ -1,5 +1,5 @@
 ---
-title: 開啟或關閉 Office 365 稽核記錄搜尋
+title: 開啟或關閉稽核記錄搜尋
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,33 +18,33 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
-description: 您可以在安全性 & 規範中心開啟「審核記錄搜尋」功能。 如果您變更了主意，您可以在任何時候關閉此功能。 當「審核記錄搜尋」關閉時，系統管理員無法在您的組織中搜尋使用者和系統管理員活動的 Office 365 審核記錄。
-ms.openlocfilehash: 92a781ddb1fd4f5b41198f31ebff6bba9745d21d
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+description: 您可以在安全性 & 規範中心開啟「審核記錄搜尋」功能。 如果您變更了主意，您可以在任何時候關閉此功能。 當「審核記錄搜尋」關閉時，系統管理員無法在您的組織中搜尋使用者和系統管理員活動的 Microsoft 365 審核記錄。
+ms.openlocfilehash: 6b5ea41ff9f40291e54f8cc9f6660d0f86367994
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240212"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633418"
 ---
-# <a name="turn-office-365-audit-log-search-on-or-off"></a>開啟或關閉 Office 365 稽核記錄搜尋
+# <a name="turn-audit-log-search-on-or-off"></a>開啟或關閉稽核記錄搜尋
 
-您（或另一個系統管理員）必須先開啟審核記錄，才可開始搜尋 Office 365 審核記錄。 當安全性 & 規範中心開啟審核記錄搜尋時，您組織中的使用者和系統管理員活動會記錄在審核記錄中，並在90天內保留，而且會根據指派給使用者的授權，最多一年。 不過，您的組織可能會有不想要記錄和保留審核記錄資料的原因。 在這種情況下，全域系統管理員可能會決定關閉 Office 365 中的審計。
+您（或另一個系統管理員）必須先開啟審核記錄，才可開始搜尋審核記錄。 當安全性 & 規範中心開啟審核記錄搜尋時，您組織中的使用者和系統管理員活動會記錄在審核記錄中，並在90天內保留，而且會根據指派給使用者的授權，最多一年。 不過，您的組織可能會有不想要記錄和保留審核記錄資料的原因。 在這種情況下，全域管理員可能會決定在 Microsoft 365 中關閉審核。
 
 > [!IMPORTANT]
-> 如果您關閉 Office 365 中的「審計記錄搜尋」，您就無法使用 Office 365 管理活動 API 或 Azure Sentinel 來存取您組織的審計資料。 依照本文中的步驟關閉審核記錄搜尋，表示當您使用安全性 & 合規性中心或在 Exchange Online PowerShell 中執行**Search-UnifiedAuditLog** Cmdlet 來搜尋審核記錄時，不會傳回任何結果。 這也表示無法透過 Office 365 管理活動 API 或 Azure Sentinel 使用審核記錄。
+> 如果您在 Microsoft 365 中關閉「審計記錄搜尋」，您就無法使用 Office 365 管理活動 API 或 Azure Sentinel 來存取您組織的審計資料。 依照本文中的步驟關閉審核記錄搜尋，表示當您使用安全性 & 合規性中心或在 Exchange Online PowerShell 中執行**Search-UnifiedAuditLog** Cmdlet 來搜尋審核記錄時，不會傳回任何結果。 這也表示無法透過 Office 365 管理活動 API 或 Azure Sentinel 使用審核記錄。
   
 ## <a name="before-you-begin"></a>開始之前
 
-- 您必須在 Exchange Online 中指派「審核記錄」角色，才能在 Office 365 組織中開啟或關閉審核記錄搜尋。 根據預設，此角色會指派給 Exchange 系統管理中心的 [**許可權**] 頁面上的 [規範管理] 和 [組織管理] 角色群組。 Office 365 中的全域系統管理員是 Exchange Online 中「組織管理」角色群組的成員。 
+- 您必須在 Exchange Online 中指派「審核記錄」角色，以在 Microsoft 365 組織中開啟或關閉審核記錄搜尋。 根據預設，此角色會指派給 Exchange 系統管理中心的 [**許可權**] 頁面上的 [規範管理] 和 [組織管理] 角色群組。 Microsoft 365 中的全域系統管理員是 Exchange Online 中「組織管理」角色群組的成員。 
     
     > [!NOTE]
     > 在 Exchange Online 中，必須將許可權指派給使用者，以開啟或關閉審核記錄搜尋。 如果您在安全性 & 合規性中心的 [**許可權**] 頁面上指派「審核記錄」角色，則使用者將無法開啟或關閉審核記錄搜尋。 這是因為基準 Cmdlet 是 Exchange Online Cmdlet。 
     
-- 如需搜尋 Office 365 審核記錄的逐步指示，請參閱在[安全性 & 規範中心搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。 如需有關 Office 365 管理活動 API 的詳細資訊，請參閱[office 365 管理 APIs 快速入門](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)。
+- 如需搜尋審核記錄的逐步指示，請參閱在[安全性 & 規範中心搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。 如需 Microsoft 365 管理活動 API 的詳細資訊，請參閱[開始使用 microsoft 365 管理 APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)。
     
 ## <a name="turn-on-audit-log-search"></a>開啟審計記錄搜尋
 
-您可以使用安全性 & 合規性中心或 PowerShell，在 Office 365 中開啟審核記錄搜尋。 在您開啟審核記錄搜尋後，可能需要數小時的時間，才能在搜尋審核記錄檔時傳回結果。 您必須在 Exchange Online 中指派「審核記錄」角色，才能開啟審核記錄搜尋。
+您可以使用安全性 & 合規性中心或 PowerShell，在 Microsoft 365 中開啟審核記錄搜尋。 在您開啟審核記錄搜尋後，可能需要數小時的時間，才能在搜尋審核記錄檔時傳回結果。 您必須在 Exchange Online 中指派「審核記錄」角色，才能開啟審核記錄搜尋。
   
 ### <a name="use-the-security--compliance-center-to-turn-on-audit-log-search"></a>使用安全性 & 規範中心開啟審核記錄搜尋
 

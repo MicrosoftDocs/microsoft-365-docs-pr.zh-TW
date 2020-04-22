@@ -16,17 +16,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 將 Office 365 審核記錄搜尋的結果匯出並下載到 CSV 檔案之後，您可以在 Excel 的 Power Query 編輯器中使用 JSON 轉換功能，將 AuditData 欄中的每個屬性分割成自己的資料行。 這可協助您快速找到您要尋找的特定審核資料。
-ms.openlocfilehash: 00e89d0834461e73ee0bd8a238e3ff7480de118e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: 將審核記錄搜尋的結果匯出並下載到 CSV 檔案之後，您可以在 Excel 的 Power Query 編輯器中使用 JSON 轉換功能，將 AuditData 欄中 JSON 物件的每個屬性都分割成自己的資料行。 這可協助您快速找到您要尋找的特定審核資料。
+ms.openlocfilehash: 64a16ad3e2584f61e6c30da26d6867614c9a9119
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634921"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615957"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>匯出、 設定及檢視稽核記錄檔的記錄
 
-在您搜尋 Office 365 審計記錄檔並將搜尋結果下載至 CSV 檔案之後，該檔案會包含一個名為**AuditData**的欄，其中包含每個事件的詳細資訊。 此欄中的資料已格式化為 JSON 物件，包含多個屬性設定為*property：值*組合，以逗號分隔。 您可以在 Excel 的 Power Query 編輯器中使用 JSON 轉換功能，將**AuditData**欄中 JSON 物件的每個屬性分割成多個欄，使每個屬性都有自己的資料行。 這可讓您在一個或多個屬性上進行排序和篩選，這可協助您快速找到所要尋找的特定審核資料。
+在您搜尋審核記錄並將搜尋結果下載至 CSV 檔案之後，該檔案會包含一個名為**AuditData**的欄，其中包含每個事件的詳細資訊。 此欄中的資料已格式化為 JSON 物件，包含多個屬性設定為*property：值*組合，以逗號分隔。 您可以在 Excel 的 Power Query 編輯器中使用 JSON 轉換功能，將**AuditData**欄中 JSON 物件的每個屬性分割成多個欄，使每個屬性都有自己的資料行。 這可讓您在一個或多個屬性上進行排序和篩選，這可協助您快速找到所要尋找的特定審核資料。
 
 ## <a name="step-1-export-audit-log-search-results"></a>步驟1：匯出審計記錄搜尋結果
 
@@ -102,11 +102,11 @@ CSV 檔案會在**查詢編輯器**中開啟。 有四個欄： **CreationDate**
 
 以下是在您使用 JSON 轉換功能將**AuditData**欄分割成多個欄之前和之後，匯出及查看審核記錄的一些秘訣和範例。
 
-- 篩選**RecordType**欄，只顯示特定 Office 365 服務或功能區域中的記錄。 例如，若要顯示與 SharePoint 共用相關的事件，您可以選取 [ **14** ] （由 SharePoint 共用活動所觸發之記錄的列舉值）。 如需與**RecordType** ] 欄中所顯示之列舉值相對應的 Office 365 服務清單，請參閱[Office 365 audit Log 中的詳細](detailed-properties-in-the-office-365-audit-log.md)內容。
+- 篩選**RecordType**欄，只顯示特定服務或功能區域中的記錄。 例如，若要顯示與 SharePoint 共用相關的事件，您可以選取 [ **14** ] （由 SharePoint 共用活動所觸發之記錄的列舉值）。 如需與**RecordType** ] 欄中所顯示之列舉值相對應的服務清單，請參閱[audit Log 中的詳細](detailed-properties-in-the-office-365-audit-log.md)內容。
 
 - 篩選 [**作業**] 欄，以顯示特定活動的記錄。 如需與安全性 & 規範中心的「審核記錄」搜尋工具中的可搜尋活動相對應的大部分作業清單，請參閱[安全性 & 規範中心的「搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md#audited-activities)」一節中的「審核的活動」一節。
 
-- 您可以在 Exchange Online Powershell 中使用[Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) Cmdlet，將 Office 365 審核記錄搜尋的結果匯出至 CSV 檔案，而不是使用安全性 & 合規性中心的「審核記錄搜尋」工具。 接著，您可以遵循步驟2所述的相同程式，以使用 Power Query 編輯器來格式化審核記錄檔。 使用 PowerShell Cmdlet 的其中一個優點是，您可以使用*RecordType*參數，從特定 Office 365 服務搜尋事件。 以下是一些使用 PowerShell 將審核記錄匯出至 CSV 檔案的範例，因此您可以使用 Power Query 編輯器，依步驟2所述，在**AuditData**欄中轉換 JSON 物件。
+- 您可以在 Exchange Online Powershell 中使用[Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) Cmdlet，將審核記錄搜尋的結果匯出至 CSV 檔案，而不是使用安全性 & 合規性中心的「審核記錄搜尋」工具。 接著，您可以遵循步驟2所述的相同程式，以使用 Power Query 編輯器來格式化審核記錄檔。 使用 PowerShell Cmdlet 的其中一個優點是，您可以使用*RecordType*參數，從特定服務搜尋事件。 以下是一些使用 PowerShell 將審核記錄匯出至 CSV 檔案的範例，因此您可以使用 Power Query 編輯器，依步驟2所述，在**AuditData**欄中轉換 JSON 物件。
 
    在此範例中，執行下列命令以傳回與 SharePoint 共用作業相關的所有記錄。 
    

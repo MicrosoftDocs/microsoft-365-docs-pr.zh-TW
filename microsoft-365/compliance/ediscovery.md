@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的 eDiscovery
+title: 電子文件探索
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
-description: Microsoft 365 提供許多不同的 eDiscovery 工具，可供您用來搜尋及存放位於不同位置的內容，例如 Exchange 信箱、SharePoint 和 OneDrive 商務網站、Office 365 群組和商務用 Skype 交談。
-ms.openlocfilehash: 19076941d2ff5b908071c779558b2cbe8b15bb54
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+description: Microsoft 365 提供許多不同的 eDiscovery 工具，可供您用來搜尋及存放位於不同位置的內容，例如 Exchange 信箱、SharePoint 和 OneDrive 商務網站、Microsoft 365 群組和商務用 Skype 交談。
+ms.openlocfilehash: 6735ce5df0978c75117324f702d1c2f758208bd1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551214"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631758"
 ---
-# <a name="ediscovery-in-microsoft-365"></a>Microsoft 365 中的 eDiscovery
+# <a name="ediscovery-in-microsoft-365"></a>Microsoft 365 中的電子文件探索
 
-電子搜索 (eDiscovery) 是識別與傳遞電子資訊的程序，而且此類資訊可在法律案件中做為呈堂證據。 您可以使用 Microsoft 365 中的 eDiscovery 工具，搜尋 Exchange Online 信箱、Office 365 群組、Microsoft 小組、SharePoint 線上 OneDrive 和商務用 Skype，以及商務用 Skype 交談和 Yammer 小組中的內容。 您可以使用內容搜尋工具，在相同 eDiscovery 搜尋中搜尋信箱和網站。 您也可以使用核心 eDiscovery 案例來識別、保留及匯出信箱和網站中的內容。 如果您的組織有 Office 365 E5 或 Microsoft 365 E5 訂閱（或相關的 E5 附加元件訂閱），您可以使用 Microsoft 365 中的高級 eDiscovery 解決方案，進一步管理保管人及分析內容。
+電子搜索 (eDiscovery) 是識別與傳遞電子資訊的程序，而且此類資訊可在法律案件中做為呈堂證據。 您可以使用 Microsoft 365 中的 eDiscovery 工具，搜尋 Exchange Online 信箱、Microsoft 365 群組、Microsoft 小組、SharePoint Online 和商務用 Skype OneDrive 中的內容，以及商務用 Skype 交談和 Yammer 小組。 您可以使用內容搜尋工具，在相同 eDiscovery 搜尋中搜尋信箱和網站。 您也可以使用核心 eDiscovery 案例來識別、保留及匯出信箱和網站中的內容。 如果您的組織有 Office 365 E5 或 Microsoft 365 E5 訂閱（或相關的 E5 附加元件訂閱），您可以使用 Microsoft 365 中的高級 eDiscovery 解決方案，進一步管理保管人及分析內容。
   
 Microsoft 365 提供下列 eDiscovery 工具：
   
@@ -43,8 +43,8 @@ Microsoft 365 提供下列 eDiscovery 工具：
   
 |**主題**|**描述**|
 |:-----|:-----|
-|[執行內容搜尋](content-search.md) <br/> |瞭解如何使用內容搜尋工具，在單一搜尋中搜尋信箱、公用資料夾、Office 365 群組、Microsoft 小組、SharePoint 線上網站、商務位置的一個磁碟機，以及 Office 365 組織中的商務用 Skype 交談。  <br/> |
-|[內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md) <br/> |深入瞭解您可以用來搜尋 Office 365 組織中信箱和網站內容的電子郵件和檔案屬性和搜尋條件。  <br/> |
+|[執行內容搜尋](content-search.md) <br/> |瞭解如何使用內容搜尋工具來搜尋信箱、公用資料夾、Microsoft 365 群組、Microsoft 團隊、SharePoint 線上網站、商務位置的一個磁片磁碟機，以及您組織中單一搜尋中的商務用 Skype 交談。  <br/> |
+|[內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md) <br/> |深入瞭解您可以用來搜尋組織中信箱和網站內容的電子郵件和檔案屬性和搜尋條件。  <br/> |
 |[檢視內容搜尋結果的關鍵字統計資料](view-keyword-statistics-for-content-search.md) <br/> |瞭解如何使用搜尋統計資料來顯示及比較一或多個內容搜尋的統計資料，以及設定新的和現有的搜尋，以傳回搜尋查詢中每個關鍵字的統計資料。  <br/> |
 |[匯出搜尋結果](export-search-results.md) <br/> |瞭解如何匯出內容搜尋的結果。  <br/> |
 |[設定內容搜尋的權限篩選](permissions-filtering-for-content-search.md) <br/> |瞭解如何使用許可權篩選，讓 eDiscovery 管理員只搜尋組織中信箱和網站的子集。  <br/> |
@@ -62,7 +62,7 @@ Microsoft 365 提供下列 eDiscovery 工具：
   
 |**主題**|**描述**|
 |:-----|:-----|
-|[開始使用核心電子檔探索](get-started-core-ediscovery.md) |瞭解如何指派 eDiscovery 許可權，以及建立核心 eDiscovery 案例。 本主題也提供核心 eDiscovery 工作流程的概述。<br/> |
+|[開始使用核心電子文件探索](get-started-core-ediscovery.md) |瞭解如何指派 eDiscovery 許可權，以及建立核心 eDiscovery 案例。 本主題也提供核心 eDiscovery 工作流程的概述。<br/> |
 |[建立電子文件探索保留](create-ediscovery-holds.md)|瞭解如何建立與核心 eDiscovery 案例相關聯的 eDiscovery 保留，以保留與您正在調查之案例相關的內容。|
 |[在核心 eDiscovery 案例中搜尋內容](search-for-content-in-core-ediscovery.md)|瞭解如何搜尋與案例相關的內容。 您可以快速建立搜尋，搜尋保留的內容位置。|
 |[從核心 eDiscovery 案例匯出內容](export-content-in-core-ediscovery.md)|瞭解如何從核心 eDiscovery 案例中匯出及下載內容。|

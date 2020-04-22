@@ -1,5 +1,5 @@
 ---
-title: 將 PST 檔案匯入 Office 365 的常見問題
+title: 匯入 PST 檔案的常見問題集
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,19 +15,19 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
-description: '有關使用 Office 365 Import Service 將組織的 PST 檔案匯入 Office 365 信箱之系統管理員的常見問題。 '
-ms.openlocfilehash: 439a321c3890d85f7ca0f7da0074af80f6b7fed5
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+description: '有關使用 Office 365 Import Service 將組織的 PST 檔案匯入至 Microsoft 365 信箱之系統管理員的常見問題。 '
+ms.openlocfilehash: c2eb673ea8be2b628496df0e7b0412cbf3312ba9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058914"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615947"
 ---
-# <a name="faq-about-importing-pst-files-to-office-365"></a>將 PST 檔案匯入 Office 365 的常見問題
+# <a name="faq-about-importing-pst-files"></a>匯入 PST 檔案的常見問題集
 
 **本文適用于系統管理員。您是否要將 PST 檔案匯入您自己的信箱？請參閱[從 Outlook .pst 檔案匯入電子郵件、連絡人及行事曆](https://go.microsoft.com/fwlink/p/?LinkID=785075)**|
    
-以下是一些有關使用 Office 365 Import Service 將 PST 檔案大量匯入 Office 365 信箱的常見問題。 如需如何匯入 PST 檔案的詳細資訊，請參閱[將 pst 檔案匯入至 Office 365 的概述](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84)。
+以下是一些有關使用 Office 365 Import Service 將 PST 檔案大量匯入 Microsoft 365 信箱的常見問題。 如需如何匯入 PST 檔案的詳細資訊，請參閱[將 pst 檔案匯入至 Office 365 的概述](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84)。
   
 ## <a name="using-network-upload-to-import-pst-files"></a>使用網路上傳來匯入 PST 檔案
 
@@ -35,7 +35,7 @@ ms.locfileid: "43058914"
   
  **必須具備哪些權限才能在 Office365 匯入服務中建立匯入工作？**
   
-您必須在 Exchange Online 中獲派信箱匯入匯出角色，才能將 PST 檔案匯入 Office 365 信箱。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself or other users as a member. 如需詳細資訊，請參閱[管理 Exchange Online 中的角色](https://go.microsoft.com/fwlink/p/?LinkId=730688)之＜新增角色至角色群組＞或＜建立角色群組＞一節。
+您必須在 Exchange Online 中指派「信箱匯入匯出」角色，才能將 PST 檔案匯入至 Microsoft 365 信箱。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself or other users as a member. 如需詳細資訊，請參閱[管理 Exchange Online 中的角色](https://go.microsoft.com/fwlink/p/?LinkId=730688)之＜新增角色至角色群組＞或＜建立角色群組＞一節。
   
 此外，若要在安全性與合規性中心建立匯入工作，必須符合以下其中一個條件：
   
@@ -43,7 +43,7 @@ ms.locfileid: "43058914"
     
     或
     
-- 您必須是您 Office365 組織中的全域系統管理員。
+- 您必須是組織中的全域系統管理員。
     
 > [!TIP]
 > 建議您在 Exchange Online 中建立新的角色群組，專門用來將 PST 檔案匯入 Office 365。 若要獲得匯入 PST 檔案所需的最低權限等級，請將信箱匯入匯出及郵件收件者角色指派到新的角色群組，然後新增成員。 
@@ -75,19 +75,19 @@ Using network upload to import PST files is free.
   
  **需要多久的時間才能將 PST 檔案匯入信箱？**
   
-這取決於您的網路容量，但將每 TB 的資料上傳到貴組織的 Azure 儲存體區域通常需要幾個小時的時間。 將 PST 檔案複製到 Azure 儲存體區域之後，系統會以每天至少 24 GB 的速率將 PST 檔案匯入到 Office 365 信箱。 如果這樣的速率不符您的需求，建議您嘗試其他方法將電子郵件資料移轉到 Office 365。 如需詳細資訊，請參閱＜[將多個電子郵件帳戶移轉到 Office 365 的方法](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)＞。
+這取決於您的網路容量，但將每 TB 的資料上傳到貴組織的 Azure 儲存體區域通常需要幾個小時的時間。 將 PST 檔案複製到 Azure Storage 區域之後，PST 檔案會以每日至少 24 GB 的速度匯入至 Microsoft 365 信箱。 如果這樣的速率不符您的需求，建議您嘗試其他方法將電子郵件資料移轉到 Office 365。 如需詳細資訊，請參閱＜[將多個電子郵件帳戶移轉到 Office 365 的方法](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)＞。
   
 如果不同的 PST 檔案需匯入到不同的目標信箱，匯入程序會同時進行；換句話說，系統會同時匯入每個 PST/信箱組合。 同樣地，如果多個 PST 檔案匯入到相同的信箱，則會同時匯入。
   
- **PST 匯入處理如何處理重複的電子郵件專案？**
+ PST 匯入處理程序如何處理重複的電子郵件項目?****
 
-PST 匯入程式會檢查重複的專案，並且不會將專案從 PST 檔案複製到信箱或封存（如果目標信箱或目標封存中的目的檔案夾中有相符的專案的話）。 如果您重新匯入同一個 PST 檔案，並指定不同的目的檔案夾（使用 PST 匯入對應檔案中的 TargetRootFolder 屬性），則會 reimported PST 檔案中的所有專案。
+PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標信箱或目標封存中已有相同項目，則不會將資料從 PST 檔案複製到信箱或封存。 如果您重新匯入同一個 PST 檔案，並指定與前一個匯入工作指定之資料夾為不同的目標資料夾 (使用 PST 匯入對應檔案中的 TargetRootFolder 屬性)，則所有 PST 檔案中的項目將會重新匯入。
 
  **匯入 PST 檔案時，是否有郵件大小限制？**
   
 是。 如果 PST 檔案包含大於 150 MB 的信箱項目，該項目會在匯入程序執行時略過。
   
- **PST 檔案匯入 Office 365 信箱時是否會保留訊息內容 (例如訊息的傳送或接收時間、收件者清單等等)？**
+ **郵件內容，例如傳送或接收郵件時，當 PST 檔案匯入至 Microsoft 365 信箱時，會保留收件者和其他屬性的清單？**
   
 是。 匯入程序不會變更任何原始的訊息中繼資料。
   
@@ -113,7 +113,7 @@ Yes, this capability is now available.
   
  **必須具備哪些權限才能在 Office365 匯入服務中建立匯入工作？**
   
-您必須獲派信箱匯入匯出角色才能將 PST 檔案匯入 Office 365 信箱。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself or other users as a member. 如需詳細資訊，請參閱[管理 Exchange Online 中的角色](https://go.microsoft.com/fwlink/p/?LinkId=730688)之＜新增角色至角色群組＞或＜建立角色群組＞一節。
+您必須獲指派「信箱匯入匯出」角色，才能將 PST 檔案匯入至 Microsoft 365 信箱。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself or other users as a member. 如需詳細資訊，請參閱[管理 Exchange Online 中的角色](https://go.microsoft.com/fwlink/p/?LinkId=730688)之＜新增角色至角色群組＞或＜建立角色群組＞一節。
   
 此外，若要在安全性與合規性中心建立匯入工作，必須符合以下其中一個條件：
   
@@ -121,7 +121,7 @@ Yes, this capability is now available.
     
     或
     
-- 您必須是您 Office365 組織中的全域系統管理員。
+- 您必須是組織中的全域系統管理員。
     
 > [!TIP]
 > 建議您在 Exchange Online 中建立新的角色群組，專門用來將 PST 檔案匯入 Office 365。 若要獲得匯入 PST 檔案所需的最低權限等級，請將信箱匯入匯出及郵件收件者角色指派到新的角色群組，然後新增成員。 
@@ -135,11 +135,11 @@ Yes, this capability is now available.
   
  **有哪些商業授權合約支援磁碟機寄送？**
   
-Microsoft Enterprise Agreement (EA) 提供將 PST 檔案匯入 Office 365 的磁碟機寄送服務。 Microsoft Products and Services Agreement (MPSA) 則沒有提供磁碟機寄送。
+將 PST 檔案匯入至 Microsoft 365 的磁片磁碟機運送可透過 Microsoft Enterprise 合約（EA）取得。 Microsoft Products and Services Agreement (MPSA) 則沒有提供磁碟機寄送。
   
- **使用磁碟機寄送將 PST 檔案匯入 Office 365 的費用為何？**
+ **使用磁片磁碟機運送將 PST 檔案匯入至 Microsoft 365 的定價是多少？**
   
-使用磁碟機寄送將 PST 檔案匯入 Office 365 信箱的費用為每 GB 的資料 $2 美元。 例如，假設您寄送的硬碟含有 1,000 GB (即 1 TB) 的 PST 檔案，則費用為 $2,000 美元。 您可以與夥伴合作來支付匯入費用。 如需有關尋找合作夥伴的資訊，請參閱[尋找您的 Office 365 合作夥伴或轉售商](https://go.microsoft.com/fwlink/p/?LinkId=785197)。
+使用磁片磁碟機運送將 PST 檔案匯入至 Microsoft 365 信箱的成本，為每 GB 的資料量 $2 USD。 例如，假設您寄送的硬碟含有 1,000 GB (即 1 TB) 的 PST 檔案，則費用為 $2,000 美元。 您可以與夥伴合作來支付匯入費用。 如需尋找協力廠商的詳細資訊，請參閱[尋找您的 Microsoft 合作夥伴或轉銷商](https://go.microsoft.com/fwlink/p/?LinkId=785197)。
   
  **哪些類型的硬碟支援磁碟機寄送？**
   
@@ -162,7 +162,7 @@ Office 365 匯入服務只支援使用 2.5 吋固態硬碟 (SSD)，或是 2.5 �
   
  **需要多久的時間才能將 PST 檔案匯入信箱？**
   
-PST 檔案上傳到 Azure 儲存體區域之後，Office 365 會以安全的方式分析 PST 檔案中的資料，來識別 PST 檔案所含項目的保存時間和各種訊息類型。 這項分析程序完成後，您就可以選擇匯入 PST 檔案中的所有資料，或設定篩選器來控制要匯入的資料。 始匯入工作之後，PST 會以每天至少 24 GB 的速率匯入到 Office 365 信箱。 如果這樣的速率不符您的需求，建議您嘗試其他方法將電子郵件資料匯入到 Office 365。 如需詳細資訊，請參閱＜[將多個電子郵件帳戶移轉到 Office 365 的方法](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)＞。
+將 PST 檔案上傳至 Azure Storage 區域之後，Microsoft 365 會以安全且安全的方式，分析 PST 檔案中的資料，以找出專案的年齡及 PST 檔案中包含的不同郵件類型。 這項分析程序完成後，您就可以選擇匯入 PST 檔案中的所有資料，或設定篩選器來控制要匯入的資料。 在您開始匯入工作之後，PST 檔案會匯入至 Microsoft 365 信箱，每日至少 24 GB 的速率。 如果這樣的速率不符您的需求，建議您嘗試其他方法將電子郵件資料匯入到 Office 365。 如需詳細資訊，請參閱＜[將多個電子郵件帳戶移轉到 Office 365 的方法](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)＞。
   
 如果不同的 PST 檔案需匯入到不同的目標信箱，匯入程序會同時進行；換句話說，系統會同時匯入每個 PST/信箱組合。 同樣地，如果多個 PST 檔案匯入到相同的信箱，則會同時匯入。
   
@@ -172,9 +172,9 @@ PST 檔案上傳到 Azure 儲存體區域之後，Office 365 會以安全的方�
   
 這也表示 PST 檔案從 Azure 儲存體區域刪除之後，安全性與合規性中心內完整匯入工作的檔案清單中就不會顯示這些檔案。 即使匯入工作仍然列在安全性與合規性中心的 [匯入 PST 檔案]**** 頁面上，但當您檢視較舊匯入工作的詳細資料時，PST 檔案清單可能為空白。 
   
- **哪些版本的 PST 檔案格式支援匯入 Office 365？**
+ **可將哪一個版本的 PST 檔案格式匯入 Microsoft 365？**
   
-有兩個版本的 PST 檔案格式支援此作業：ANSI 和 Unicode。 我們建議您使用 Unicode PST 檔案格式來匯入檔案。 不過，使用 ANSI PST 檔案格式的檔案 (例如，使用雙位元組字元集 (DBCS) 語言的檔案) 也可以匯入 Office 365。 如需有關匯入 ANSI PST 檔案的詳細資訊，請參閱[使用磁片磁碟機運送將 PST 檔案匯入至 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)中的步驟3。
+有兩個版本的 PST 檔案格式支援此作業：ANSI 和 Unicode。 我們建議您使用 Unicode PST 檔案格式來匯入檔案。 不過，使用 ANSI PST 檔案格式的檔案，例如使用雙位元組字元集（DBCS）語言的檔案，也可以匯入至 Microsoft 365。 如需有關匯入 ANSI PST 檔案的詳細資訊，請參閱[使用磁片磁碟機運送將 PST 檔案匯入至 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)中的步驟3。
   
 此外，Outlook 2007 和更新版本的 PST 檔案也可以匯入 Office 365。
   
@@ -182,11 +182,11 @@ PST 檔案上傳到 Azure 儲存體區域之後，Office 365 會以安全的方�
   
 是。 如果 PST 檔案包含大於 150 MB 的信箱項目，該項目會在匯入程序執行時略過。
   
-  **PST 匯入處理如何處理重複的電子郵件專案？**
+  PST 匯入處理程序如何處理重複的電子郵件項目?****
 
-PST 匯入程式會檢查重複的專案，並且不會將專案從 PST 檔案複製到信箱或封存（如果目標信箱或目標封存中的目的檔案夾中有相符的專案的話）。 如果您重新匯入同一個 PST 檔案，並指定不同的目的檔案夾（使用 PST 匯入對應檔案中的 TargetRootFolder 屬性），則會 reimported PST 檔案中的所有專案。
+PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標信箱或目標封存中已有相同項目，則不會將資料從 PST 檔案複製到信箱或封存。 如果您重新匯入同一個 PST 檔案，並指定與前一個匯入工作指定之資料夾為不同的目標資料夾 (使用 PST 匯入對應檔案中的 TargetRootFolder 屬性)，則所有 PST 檔案中的項目將會重新匯入。
  
- **PST 檔案匯入 Office 365 信箱時是否會保留訊息內容 (例如訊息的傳送或接收時間、收件者清單等等)？**
+ **郵件內容，例如傳送或接收郵件時，當 PST 檔案匯入至 Microsoft 365 信箱時，會保留收件者和其他屬性的清單？**
   
 是。 匯入程序不會變更任何原始的訊息中繼資料
   
@@ -194,7 +194,7 @@ PST 匯入程式會檢查重複的專案，並且不會將專案從 PST 檔案�
   
 是。您無法匯入具有 300 或更多巢狀資料夾階層的 PST 檔案。
   
- **我是否可以使用磁碟機寄送將 PST 檔案匯入 Office 365 中的非作用中的信箱？**
+ **我可以使用磁片磁碟機運送將 PST 檔案匯入至 Microsoft 365 中的非使用中信箱嗎？**
   
 Yes, this capability is now available.
   

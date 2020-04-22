@@ -13,21 +13,21 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: 了解 Microsoft 365 中的資訊控管。
-ms.openlocfilehash: fc8477cdaa268ede659d9bea8e05f20939726ed6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 深入瞭解 Microsoft 365 中的資訊管理。
+ms.openlocfilehash: 370f9b4e6523de540abba2931fe8218033a2c8e6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072130"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635943"
 ---
 # <a name="manage-information-governance"></a>管理資訊控管
 
- 管理您要匯入、 儲存及分類商務關鍵的資料，因此您可以保留功能需要及刪除您的未使用 Microsoft 365 功能的內容生命週期。
+ 使用 Microsoft 365 功能管理內容生命週期，以匯入、儲存和分類重要業務資料，這樣您就可以保留您所需要的專案，並刪除您不需要的專案。
 
 |**功能**|**詳細資訊**|
 |:-----|:-----|
-| **管理資料** | 使用[匯入服務](importing-pst-files-to-office-365.md)快速大量匯入 PST 檔案複製到您組織中的 Exchange Online 信箱。 <br> 將設定[無限制封存](unlimited-archiving.md)為使用者提供額外信箱儲存空間。 <br> 使用[保留原則](retention-policies.md)可簡化管理您的組織會保留的方式、 刪除或保留，然後刪除內容。 |
-| **監視資料** | [確認資料標籤](view-label-activity-for-documents.md)正確套用至組織中的內容。 <br> 若要快速查看標籤最常使用，則會套用使用內建[標籤分析](label-analytics.md)。|
-| **管理非使用中的信箱** | 您的組織可能需要將其保留組織之後保留先前的員工電子郵件。 根據您的組織保留需求，您可能需要幾個月數或年後結束工作，或您可能需要無限期保留信箱內容的保留信箱內容。 不論多久您需要保留電子郵件，您可以建立[非使用中信箱](inactive-mailboxes-in-office-365.md)Office 365 保留離職員工的信箱中。  |
-| **記錄管理** | 確定[核心商業記錄](records-management.md)適當宣告並使用以符合法規義務的完整稽核可見度儲存不變性。 |
+| **管理資料** | 使用匯[入服務](importing-pst-files-to-office-365.md)，快速地將 PST 檔案匯入到您組織中的 Exchange Online 信箱。 <br> 設定[無限期](unlimited-archiving.md)的封存以提供使用者額外的信箱儲存空間。 <br> 使用[保留](retention-policies.md)原則來簡化組織如何保留、刪除或保留，然後刪除內容的管理。 |
+| **監視資料** | [驗證資料標籤](view-label-activity-for-documents.md)是否正確套用至組織中的內容。 <br> 使用內建[標籤分析](label-analytics.md)，快速查看標籤的使用順序及其套用的位置。|
+| **管理非使用中的信箱** | 您的組織可能需要將其保留組織之後保留先前的員工電子郵件。 根據您的組織保留需求，您可能需要幾個月數或年後結束工作，或您可能需要無限期保留信箱內容的保留信箱內容。 不論您需要保留電子郵件的時間為何，您可以建立[非](inactive-mailboxes-in-office-365.md)使用中的信箱以保留之前員工的信箱。  |
+| **記錄管理** | 請確定[核心商務記錄](records-management.md)已正確宣告並儲存不間斷，並具有完整的審核可視性，可滿足法規義務。 |

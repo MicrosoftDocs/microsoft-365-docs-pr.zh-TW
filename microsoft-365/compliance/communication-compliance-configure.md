@@ -1,5 +1,5 @@
 ---
-title: 設定通訊相容性
+title: 開始使用通訊合規性
 description: 設定通訊相容性原則，以設定員工交流以供審查。
 f1.keywords:
 - NOCSH
@@ -18,17 +18,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e9e13c4bb9a950326a5fc718be26f93d046776e7
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: 928401f0c4b0fe479d993eba958ca1e109d4c05f
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193511"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708392"
 ---
-# <a name="configure-communication-compliance-in-microsoft-365"></a>設定 Microsoft 365 中的通訊合規性
+# <a name="get-started-with-communication-compliance"></a>開始使用通訊合規性
 
 >[!IMPORTANT]
->本主題適用于設定 Microsoft 365 訂閱中的通訊相容性。 如果您想要為 Office 365 訂閱設定監察原則，請參閱[設定 office 365 的監管](supervision-policies.md)。
+>本主題適用于設定 Microsoft 365 訂閱中的通訊相容性。 如果您想要為 Microsoft 365 訂閱設定監察原則，請參閱[設定 microsoft 365 的監督](supervision-policies.md)。
 
 使用通訊相容性原則來捕獲員工透過內部或外部檢閱者進行檢查的通訊。 如需通訊相容性原則如何協助您監視組織中的通訊的詳細資訊，請參閱[Microsoft 365 中的通訊相容性原則](communication-compliance.md)。 如果您想要查看 Contoso 如何快速設定通訊相容性原則，以監視 Microsoft 小組和 Exchange Online 通訊中的冒犯性語言，請參閱此[案例研究](communication-compliance-case-study.md)。
 
@@ -48,12 +48,12 @@ ms.locfileid: "43193511"
 - Office 365 企業版 E5 訂閱（付費或試用版）
 - Office 365 企業版 E3 訂閱 + Office 365 Advanced 合規性附加元件（已無法再供新訂閱使用，請參閱記事）
 
-必須將上述其中一個授權指派給通訊符合性原則中所含的使用者。
+通訊符合性原則中所含的使用者必須指派上述其中一個授權。
 
 >[!IMPORTANT]
 >Office 365 Advanced 合規性不再銷售為獨立訂閱。 當目前的訂閱到期時，客戶應轉換至上述其中一個訂閱，其中包含相同或其他的符合性功能。
 
-如果您沒有 Microsoft 365 企業版 E5 方案，且想要試用測試人員風險管理，您可以[將 Microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)至現有的 Office 365 訂閱，或[註冊 Microsoft 365 企業版 E5 的試用版](https://www.microsoft.com/microsoft-365/enterprise)。
+如果您沒有現有的 Office 365 企業版 E5 計畫，而且想要嘗試擁有者風險管理，您可以[將 Microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)至現有的訂閱，或註冊 Office 365 Enterprise E5 的[試用版](https://www.microsoft.com/microsoft-365/enterprise)。
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步驟1（必要）：啟用通訊相容性的許可權
 
@@ -66,7 +66,7 @@ ms.locfileid: "43193511"
 
 1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://protection.office.com/permissions](https://protection.office.com/permissions)。
 
-2. 在 Microsoft Office 365 安全性與合規合規性中心，移至 **[權限]**。 選取連結，以在 Office 365 中檢視及管理角色。
+2. 在安全性&amp;與合規性中心，移至 [**許可權**]。 選取連結，以在 Office 365 中檢視及管理角色。
 
 3. 選取 **[建立]**。
 
@@ -82,11 +82,11 @@ ms.locfileid: "43193511"
 
 如需角色群組和權限的詳細資訊，請參閱[規範中心的權限](../security/office-365-security/protect-against-threats.md)。
 
-## <a name="step-2-required-enable-the-office-365-audit-log"></a>步驟2（必要）：啟用 Office 365 審核記錄
+## <a name="step-2-required-enable-the-audit-log"></a>步驟2（必要）：啟用審核記錄檔
 
 通訊合規性需要「審核記錄檔」顯示提醒，並追蹤檢閱者採取的修復動作。 「審核記錄檔」會摘要所有與已定義的組織原則相關聯的活動，或在任何時刻的通訊合規性原則變更時。
 
-如需開啟審核的逐步指示，請參閱[開啟或關閉 Office 365 審核記錄搜尋](turn-audit-log-search-on-or-off.md)。 在您開啟審核後，會顯示一則訊息，指出已準備好審核記錄，而且您可以在準備完成後數小時執行搜尋。 您只需執行這項動作一次。 如需使用審核記錄的詳細資訊，請參閱[搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。
+如需開啟審計的逐步指示，請參閱[開啟或關閉審計記錄搜尋](turn-audit-log-search-on-or-off.md)。 在您開啟審核後，會顯示一則訊息，指出已準備好審核記錄，而且您可以在準備完成後數小時執行搜尋。 您只需執行這項動作一次。 如需使用審核記錄的詳細資訊，請參閱[搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>步驟3（選用）：設定通訊相容性群組
 
@@ -96,15 +96,15 @@ ms.locfileid: "43193511"
 
 | **原則成員** | **支援的群組** | **不支援的群組** |
 |:-----|:-----|:-----|
-|監督的使用者 <br> 非監督的使用者 | 通訊群組 <br> Office 365 群組 | 動態通訊群組 |
+|監督的使用者 <br> 非監督的使用者 | 通訊群組 <br> Microsoft 365 群組 | 動態通訊群組 |
 | 檢閱者 | 無 | 通訊群組 <br> 動態通訊群組 <br> 擁有郵件功能的安全性群組 |
   
-當您為監督的使用者選取 Office 365 群組時，該原則會監控共用 Office 365 信箱的內容，以及與群組相關聯的 Microsoft 小組頻道。 當您選取通訊群組清單時，該原則會監控個別的使用者信箱。
+當您為監督的使用者選取 Microsoft 365 群組時，該原則會監控共用信箱的內容，以及與群組相關聯的 Microsoft 小組通道。 當您選取通訊群組清單時，該原則會監控個別的使用者信箱。
 
 如需設定群組的詳細資訊，請參閱：
 
 - [建立並管理通訊群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [Office 365 群組的概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+- [Microsoft 365 群組的概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
 ## <a name="step-4-required-create-a-communication-compliance-policy"></a>步驟4（必要）：建立通訊相容性原則
   
@@ -119,7 +119,7 @@ ms.locfileid: "43193511"
 
 4. 選取 [**建立原則**]，以從範本建立及設定新原則，或建立及設定自訂原則。
 
-    如果您選擇內建原則範本以建立原則，您可以：
+    如果您選擇原則範本以建立原則，您可以：
 
     - 確認或更新原則名稱。 建立原則之後，便無法變更原則名稱。
     - 選擇要監督的使用者或群組，包括選擇您想要排除的使用者或群組。
@@ -139,7 +139,7 @@ ms.locfileid: "43193511"
 
     >[!CAUTION]
     >我們正在取代**冒犯性語言**內建的分類符，因為它所產生的是大量的誤報。 請勿使用它，如果您目前使用它，您應該將商務程式移出它。 建議您改為使用**威脅**、**猥褻**和**騷擾**內建的分類符。
-
+    
     - 定義要複查的通訊百分比。
     - 檢查您的原則選擇並建立原則。
 

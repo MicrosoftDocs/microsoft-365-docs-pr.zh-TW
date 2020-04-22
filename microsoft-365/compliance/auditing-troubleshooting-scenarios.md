@@ -1,5 +1,5 @@
 ---
-title: 搜尋 Office 365 審核記錄以進行常見案例疑難排解
+title: 搜尋審計記錄檔以進行常見案例疑難排解
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: 您可以使用 Office 365 審核記錄搜尋工具，協助您疑難排解常見的問題，例如調查已遭破壞的帳戶、找出誰設定信箱的電子郵件轉寄功能，或判斷外部使用者成功登入組織的原因。
-ms.openlocfilehash: b18db4c24548c929043d79adb73e11b46be6ddb8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: 您可以使用「審核記錄搜尋」工具，協助您疑難排解常見問題，例如調查已遭破壞的帳戶、找出誰設定信箱的電子郵件轉寄功能，或判斷外部使用者成功登入組織的原因。
+ms.openlocfilehash: 8eaff1fa3eea6a0fa60edcfd43f4f2aedb5a5ffc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634481"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636381"
 ---
-# <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>搜尋 Office 365 的審計記錄檔，以調查常見的支援問題
+# <a name="search-the-audit-log-to-investigate-common-support-issues"></a>搜尋審計記錄檔，以調查常見的支援問題
 
-本文說明如何使用 Office 365 審核記錄搜尋工具，協助您調查常見的支援問題。 這包括使用審核記錄來：
+本文說明如何使用「審核記錄搜尋」工具，協助您調查常見的支援問題。 這包括使用審核記錄來：
 
 - 尋找用來存取已遭破壞之帳戶之電腦的 IP 位址
 - 決定信箱的電子郵件轉發設定
@@ -33,13 +33,13 @@ ms.locfileid: "42634481"
 - 決定使用者是否建立收件匣規則
 - 調查組織外部使用者成功登入的原因
 
-## <a name="using-the-office-365-audit-log-search-tool"></a>使用 Office 365 審核記錄搜尋工具
+## <a name="using-the-audit-log-search-tool"></a>使用審核記錄搜尋工具
 
-本文中所述的每一個疑難排解案例都是以 Office 365 安全性與合規性中心的「審核記錄搜尋」工具為基礎。 本節列出搜尋審核記錄所需的許可權，並說明存取及執行審核記錄搜尋的步驟。 每個案例區段都會說明如何設定審核記錄搜尋查詢，以及在符合搜尋準則之審核記錄的詳細資訊中要尋找的專案。
+本文中所述的每一個疑難排解案例都是以安全性 & 規範中心內的「審核記錄搜尋」工具為基礎。 本節列出搜尋審核記錄所需的許可權，並說明存取及執行審核記錄搜尋的步驟。 每個案例區段都會說明如何設定審核記錄搜尋查詢，以及在符合搜尋準則之審核記錄的詳細資訊中要尋找的專案。
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>使用審核記錄搜尋工具所需的許可權
 
-您必須獲指派「View-Only 審核記錄」或「審核記錄」角色在 Exchange Online 中，才可搜尋 Office 365 審核記錄。 根據預設，這些角色會在 Exchange 系統管理員中心的 [權限]**** 頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 Office 365 和 Microsoft 365 中的全域系統管理員會自動新增為 Exchange Online 中「組織管理」角色群組的成員。 如需詳細資訊，請參閱[管理 Exchange Online 中的角色群組](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
+您必須獲指派「View-Only 審核記錄」或「審核記錄」角色在 Exchange Online 中，才可搜尋審核記錄。 根據預設，這些角色會在 Exchange 系統管理員中心的 [權限]**** 頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 Office 365 和 Microsoft 365 中的全域系統管理員會自動新增為 Exchange Online 中「組織管理」角色群組的成員。 如需詳細資訊，請參閱[管理 Exchange Online 中的角色群組](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
 
 ### <a name="running-audit-log-searches"></a>執行審核記錄搜尋
 
@@ -80,7 +80,7 @@ ms.locfileid: "42634481"
 **活動：** 如果與您的案例相關，請選取要搜尋的特定活動。 若要疑難排解已遭破壞的帳戶，請考慮選取 [ **Exchange 信箱活動**] 底下的 [**使用者已登入信箱**活動]。 這會傳回審計記錄，顯示登入信箱時所使用的 IP 位址。 否則，請將此欄位保留空白，以傳回所有活動的審計記錄。 
 
 > [!TIP]
-> 將此欄位保留空白將會傳回**UserLoggedIn**活動，也就是 Azure Active Directory 活動，表示某人已登入 Office 365 使用者帳戶。 在搜尋結果中使用篩選來顯示**UserLoggedIn**的審計記錄。
+> 將此欄位保留空白將會傳回**UserLoggedIn**活動，也就是 Azure Active Directory 活動，表示某人已登入使用者帳戶。 在搜尋結果中使用篩選來顯示**UserLoggedIn**的審計記錄。
 
 **開始日期**和**結束日期：** 選取適用于調查的日期範圍。
 
@@ -198,9 +198,9 @@ d. [ **UserId** ] 欄位會指出建立 [ **ObjectId** ] 欄位中指定的收�
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>調查組織外部使用者成功登入的原因
 
-在 Office 365 審核記錄中檢查審計記錄時，您可能會看到指出外部使用者已透過 Azure Active Directory 驗證，且已成功登入組織的記錄。 例如，contoso.onmicrosoft.com 中的系統管理員可能會看到一個審計記錄，表明使用者從不同的 Office 365 組織（例如，fabrikam.onmicrosoft.com）成功登入 contoso.onmicrosoft.com。 同樣地，您可能會看到審計記錄指出使用 Microsoft 帳戶（MSA）的使用者（如 Outlook.com 或 Live.com）已成功登入您的組織。 在這些情況下，已審核的活動為**使用者登入**。 
+在審核記錄中檢查審計記錄時，您可能會看到指出外部使用者已透過 Azure Active Directory 驗證，且已成功登入組織的記錄。 例如，contoso.onmicrosoft.com 中的系統管理員可能會看到一個審計記錄，顯示不同組織中的使用者（例如，fabrikam.onmicrosoft.com）已成功登入 contoso.onmicrosoft.com。 同樣地，您可能會看到審計記錄指出使用 Microsoft 帳戶（MSA）的使用者（如 Outlook.com 或 Live.com）已成功登入您的組織。 在這些情況下，已審核的活動為**使用者登入**。 
 
-這是設計方式。 當外部使用者嘗試存取 SharePoint 網站或組織中的 OneDrive 位置時，azure Active Directory （Azure AD）是 Office 365 中的目錄服務，可允許所謂*的傳遞驗證*。 當外部使用者嘗試這麼做時，系統會提示他們輸入他們的 Office 365 認證。 Azure AD 使用認證來驗證使用者，這表示只有 Azure AD 驗證使用者是其所聲稱的使用者。 在審計記錄中成功登入的指示是 Azure AD 驗證使用者的結果。 成功的登入並不表示使用者能夠存取任何資源或在您的組織中執行其他任何動作。 它只會指出使用者已由 Azure AD 進行驗證。 為了讓透過使用者能夠存取 SharePoint 或 OneDrive 資源，貴組織中的使用者必須透過傳送共用邀請或匿名共用連結，明確地與外部使用者共用資源。 
+這是設計方式。 當外部使用者嘗試存取 SharePoint 網站或組織中的 OneDrive 位置時，azure Active Directory （Azure AD）和目錄服務可讓稱為*傳遞驗證*的內容。 當外部使用者嘗試這麼做時，系統會提示他們輸入認證。 Azure AD 使用認證來驗證使用者，這表示只有 Azure AD 驗證使用者是其所聲稱的使用者。 在審計記錄中成功登入的指示是 Azure AD 驗證使用者的結果。 成功的登入並不表示使用者能夠存取任何資源或在您的組織中執行其他任何動作。 它只會指出使用者已由 Azure AD 進行驗證。 為了讓透過使用者能夠存取 SharePoint 或 OneDrive 資源，貴組織中的使用者必須透過傳送共用邀請或匿名共用連結，明確地與外部使用者共用資源。 
 
 > [!NOTE]
 > Azure AD 只允許*第一方應用程式*的傳遞驗證，例如 SharePoint 線上和商務 OneDrive。 不允許其他協力廠商應用程式。
@@ -225,7 +225,7 @@ d. [ **UserId** ] 欄位會指出建立 [ **ObjectId** ] 欄位中指定的收�
 
   - 使用 Microsoft 帳戶（例如，SaraD@outlook.com）的使用者已嘗試在 fourthcoffee.onmicrosoft.com 中存取商務用 OneDrive for Business 帳戶中的檔，但沒有 fourthcoffee.onmicrosoft.com 中 SaraD@outlook.com 的對應來賓使用者帳戶。
 
-  - 在 Office 365 組織中擁有工作或學校帳戶的使用者（例如 pilarp@fabrikam.onmicrosoft.com）已嘗試存取 contoso.onmicrosoft.com 中的 SharePoint 網站，但沒有 contoso.onmicrosoft.com 中 pilarp@fabrikam.com 的對應來賓使用者帳戶。
+  - 組織中有工作或學校帳戶的使用者（例如 pilarp@fabrikam.onmicrosoft.com）已嘗試存取 contoso.onmicrosoft.com 中的 SharePoint 網站，但沒有 contoso.onmicrosoft.com 中 pilarp@fabrikam.com 的對應來賓使用者帳戶。
 
 
 ### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>透過透過驗證來調查成功登入的秘訣
@@ -236,6 +236,6 @@ d. [ **UserId** ] 欄位會指出建立 [ **ObjectId** ] 欄位中指定的收�
 
     除了**使用者登入**的活動之外，還可以傳回其他的審計記錄，例如，用來指出組織中的使用者與外部使用者共用資源，以及外部使用者是否存取、修改或下載已與其共用的檔。
 
-- 搜尋 SharePoint 的共用活動，該活動會指出與**已登入**審計記錄之使用者所識別的外部使用者共用檔案。 如需詳細資訊，請參閱[在 Office 365 稽核記錄中使用共用稽核](use-sharing-auditing.md)。
+- 搜尋 SharePoint 的共用活動，該活動會指出與**已登入**審計記錄之使用者所識別的外部使用者共用檔案。 如需詳細資訊，請參閱[在審核記錄中使用共用審核](use-sharing-auditing.md)。
 
 - 匯出包含調查相關記錄的審計記錄搜尋結果，以便您可以使用 Excel 來搜尋與外部使用者相關的其他活動。 如需詳細資訊，請參閱[Export、configure 及 view audit log 記錄](export-view-audit-log-records.md)。

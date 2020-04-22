@@ -1,5 +1,7 @@
 ---
-title: 在 Azure 中的 office 365 加密
+title: Azure 中的加密
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,40 +15,40 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: 摘要： 在 Azure 中的加密的說明。
-ms.openlocfilehash: b8980b3979ada9ac02232065a27a7891936aa945
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 摘要： Azure 中加密的說明。
+ms.openlocfilehash: de018e24fc6681ac613e16d8f151c6ea5362f92d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077871"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637431"
 ---
-# <a name="office-365-encryption-in-azure"></a>在 Azure 中的 office 365 加密
+# <a name="encryption-in-azure"></a>Azure 中的加密
 
 ## <a name="introduction"></a>簡介
 
-技術的防護措施 in Azure，例如加密的通訊和操作的程序，協助保護資料安全。 您也必須實作其他加密功能和管理自己的密碼編譯金鑰的彈性。 無論客戶組態中，Microsoft 適用於保護在 Azure 中的客戶資料的加密。 Microsoft 也可讓您控制資料範圍的進階技術來加密、 控制及管理密碼編譯金鑰，透過裝載於 Azure 中的控制項和稽核資料的存取權。 此外，Azure 儲存體提供一組完整的同時啟用 [開發人員建置安全的應用程式的安全性功能。
+Azure 中的技術保護措施，例如加密通訊和工作處理程式，協助保護您的資料安全。 您也可以靈活地執行額外的加密功能和管理您自己的加密金鑰。 不論客戶設定為何，Microsoft 會套用加密，以保護 Azure 中的客戶資料。 Microsoft 也可讓您透過一系列的高級技術來控制 Azure 中的資料，以加密、控制及管理加密金鑰、控制及審核資料的存取權。 此外，Azure Storage 提供一組完整的安全性功能，可搭配使用，讓開發人員建立安全的應用程式。
 
-Azure 提供許多機制，以保護資料，從一個位置移動至另一個。 Microsoft 會使用 TLS 來保護資料，它旅行雲端服務與客戶之間的時候。 Microsoft 資料中心交涉 TLS 連線，連線到 Azure 服務的用戶端系統。 完整轉寄密碼 (PF) 會依唯一索引鍵保護客戶的用戶端系統與 Microsoft 雲端服務之間的連線。 連線也會使用 RSA 型為 2048 位元加密金鑰長度。 此組合會讓困難的某人截距及存取為傳輸中的資料。
+Azure 提供許多機制，可在資料從一個位置移動到另一個位置時加以保護。 當您的雲端服務與客戶之間的旅行時，Microsoft 會使用 TLS 來保護資料。 Microsoft 的資料中心與連接至 Azure 服務的用戶端系統協商 TLS 連線。 「完全轉寄保密（PFS）」會以唯一金鑰保護客戶之用戶端系統與 Microsoft 雲端服務之間的連線。 連接也會使用以 RSA 為基礎的2048位加密金鑰長度。 這種組合使得別人很難截獲和存取傳輸中的資料。
 
-可以使用[用戶端加密](https://docs.microsoft.com/azure/storage/storage-client-side-encryption)、 HTTPS 或 SMB 3.0，在應用程式與 Azure 之間傳輸保護資料。 您可以啟用流量加密您自己的虛擬機器 (Vm) 與您的使用者之間。 與[Azure 虛擬網路](https://azure.microsoft.com/services/virtual-network/)中，您可以使用的業界標準 IPsec 通訊協定來加密您公司的 VPN 閘道與 Azure 也筆電位於您的虛擬網路的 Vm 之間的流量。
+使用[用戶端加密](https://docs.microsoft.com/azure/storage/storage-client-side-encryption)、HTTPS 或 SMB 3.0，可保護應用程式和 Azure 之間傳輸的資料。 您可以對您自己的虛擬機器（Vm）和您的使用者之間的流量啟用加密。 透過[Azure 虛擬網路](https://azure.microsoft.com/services/virtual-network/)，您可以使用業界標準的 IPsec 通訊協定，對您公司 VPN 閘道和 Azure 之間的流量以及位於虛擬網路上的 vm 之間的流量進行加密。
 
-靜態資料，Azure 會提供許多加密選項，例如支援 AES 256，讓您選擇最符合您需求的資料儲存區案例的彈性。 資料可以自動加密時寫入至 Azure 儲存體使用的[儲存體服務加密](https://docs.microsoft.com/azure/storage/storage-service-encryption)，而且作業系統和 Vm 所使用的資料磁碟可以加密使用[Azure 磁碟加密](https://docs.microsoft.com/azure/security/azure-security-disk-encryption)。 此外，在 Azure 儲存體中的資料物件的委派存取權授與使用[共用的存取簽章](https://docs.microsoft.com/azure/storage/storage-dotnet-shared-access-signature-part-1)。 Azure 也會提供資料的使用[Azure SQL Database 和資料倉儲的透明資料加密](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql)的靜態加密。
+針對靜態的資料，Azure 提供許多加密選項（例如支援 AES-256），讓您可以靈活選擇最符合您需求的資料儲存案例。 資料可在使用[Storage Service 加密](https://docs.microsoft.com/azure/storage/storage-service-encryption)寫入 Azure 儲存區時自動加密，而 vm 所使用的作業系統和資料磁片可加密。 如需詳細資訊，請參閱[Azure 中 Windows 虛擬機器的安全性建議](https://docs.microsoft.com/azure/security/azure-security-disk-encryption)。 此外，您可以使用[共用存取簽名](https://docs.microsoft.com/azure/storage/storage-dotnet-shared-access-signature-part-1)授與委派 Azure 儲存區中資料物件的存取權。 Azure 也會使用[AZURE SQL 資料庫和資料倉儲的透明資料加密，](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql)提供靜態資料的加密。
 
-如需在 Azure 中的加密的詳細資訊，請參閱[Azure 加密概觀](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)和[Azure 資料加密待用](https://docs.microsoft.com/azure/security/azure-security-encryption-atrest)。
+如需 Azure 中加密的詳細資訊，請參閱[azure 加密概述](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)和[azure 資料加密（靜態](https://docs.microsoft.com/azure/security/azure-security-encryption-atrest)）。
 
-## <a name="azure-disk-encryption"></a>Azure 磁碟加密
+## <a name="azure-disk-encryption"></a>Azure 磁片加密
 
-[Azure 磁碟加密](https://docs.microsoft.com/azure/security/azure-security-disk-encryption)可讓您加密您的 Windows 和 Linux 基礎結構即服務 (IaaS) VM 磁碟。 Azure 磁碟加密運用 Windows BitLocker 功能和 Linux 作業系統和資料磁碟提供磁碟區層級加密 DM 窖功能。 它也能確保 VM 磁碟上的所有資料都在您的 Azure 儲存體中的靜態都加密。 可協助您控制、 管理及稽核使用加密金鑰和密碼的 Azure 金鑰儲藏室整合 azure 磁碟加密。
+Azure 磁片加密可讓您將 Windows 和 Linux 基礎結構加密為服務（IaaS） VM 磁片。 Azure 磁片加密利用 Windows 的 BitLocker 功能和 Linux 的 DM Crypt 功能，提供作業系統和資料磁片的磁片區層級加密。 此外，它也可確保 VM 磁片上的所有資料在 Azure 儲存體中的靜止時已加密。 Azure 磁片加密與 Azure 金鑰保存庫整合，可協助您控制、管理及審核加密金鑰和機密的使用。
 
-如需詳細資訊，請參閱[Azure 磁碟加密 for Windows 和 Linux IaaS Vm](https://docs.microsoft.com/azure/security/azure-security-disk-encryption)。
+如需詳細資訊，請參閱[Azure 中 Windows 虛擬機器的安全性建議](https://docs.microsoft.com/azure/security/azure-security-disk-encryption)。
 
-## <a name="azure-storage-service-encryption"></a>Azure 儲存體服務加密
+## <a name="azure-storage-service-encryption"></a>Azure Storage Service 加密
 
-使用[Azure 儲存體服務加密](https://docs.microsoft.com/azure/storage/storage-service-encryption)，Azure 儲存體會自動加密資料之前保存它之前擷取的儲存區與解密資料。 加密、 解密和金鑰管理程序是完全不透明給使用者。 Azure 儲存體服務加密可以用於[Azure Blob 儲存體](https://azure.microsoft.com/services/storage/blobs/)和[Azure 檔案](https://azure.microsoft.com/services/storage/files/)。 您也可以使用 Microsoft 受管理加密金鑰與 Azure 儲存體服務加密，或者您可以使用您自己的加密金鑰。 （如使用自己的機碼的詳細資訊，請參閱[使用客戶的儲存體服務加密受管理的 Azure 金鑰保存庫中的機碼](https://docs.microsoft.com/azure/storage/common/storage-service-encryption-customer-managed-keys)。 如需使用 Microsoft 受管理的機碼的詳細資訊，請參閱[靜態資料的儲存體服務加密](https://docs.microsoft.com/azure/storage/storage-service-encryption)。）此外，您可以自動使用加密。 例如，您可以透過程式設計方式啟用或停用使用的[Azure 儲存體資源提供者 REST API](https://msdn.microsoft.com/library/azure/mt163683.aspx)、[存放裝置資源提供者用戶端程式庫 for.NET](https://msdn.microsoft.com/library/azure/mt131037.aspx)、 [Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs)，儲存體帳戶上的儲存體服務加密或[Azure CLI](https://docs.microsoft.com/azure/storage/storage-azure-cli)中。
+使用[Azure Storage Service 加密](https://docs.microsoft.com/azure/storage/storage-service-encryption)，azure 儲存裝置會在將資料保存至儲存區之前自動將資料加密，並在檢索之前解密資料。 加密、解密及金鑰管理程式對使用者而言完全透明。 Azure Storage Service 加密可用於[Azure Blob 儲存區](https://azure.microsoft.com/services/storage/blobs/)和[Azure](https://azure.microsoft.com/services/storage/files/)檔案。 您也可以使用 Microsoft 受管理的加密金鑰搭配 Azure Storage Service 加密，也可以使用您自己的加密金鑰。 （如需使用您自己的金鑰的詳細資訊，請參閱[使用 Azure Key Vault 中客戶管理金鑰的 Storage Service 加密](https://docs.microsoft.com/azure/storage/common/storage-service-encryption-customer-managed-keys)。 如需使用 Microsoft 管理金鑰的詳細資訊，請參閱存放[區資料的 Storage Service Encryption](https://docs.microsoft.com/azure/storage/storage-service-encryption)。此外，您可以自動化加密的使用。 例如，您可以使用[Azure Storage Resource PROVIDER REST API](https://msdn.microsoft.com/library/azure/mt163683.aspx)、適用于 .Net、 [Azure POWERSHELL](https://docs.microsoft.com/powershell/azureps-cmdlets-docs)或[Azure CLI](https://docs.microsoft.com/azure/storage/storage-azure-cli)的[儲存體資源提供者用戶端程式庫](https://msdn.microsoft.com/library/azure/mt131037.aspx)，以程式設計方式啟用或停用儲存帳戶上的 storage Service 加密。
 
-某些 Office 365 服務使用 Azure 來儲存資料。 例如，SharePoint Online 和商務用 OneDrive 將資料儲存在 Azure Blob 儲存和 Microsoft Teams 中的資料表、 blob 和佇列儲存其聊天服務的資料。 此外，在服務信任入口網站的合規性管理員功能會儲存客戶輸入的資料儲存在[Azure 宇宙 DB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest)、 平台即服務 (PaaS)，全域分散式、 多模型資料庫中的加密形式。 Azure 儲存體服務加密來加密資料儲存在 Azure Blob 儲存區和在表格中，與 Azure 磁碟加密來加密佇列，以及提供作業系統的磁碟區加密的 Windows 和 IaaS 虛擬機器磁碟和資料磁碟中的資料。 解決方案可確保虛擬機器的磁碟上的所有資料都在您的 Azure 儲存體中的靜態都加密。 [在 [Azure 宇宙 DB 靜態加密](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest)是由使用數種安全性技術，包括安全金鑰的儲存系統大小、 加密的網路，以及密碼編譯 Api 實作。
+有些 Microsoft 365 服務使用 Azure 儲存資料。 例如，在 Azure Blob 儲存中 SharePoint 線上及 OneDrive 商務存放區資料，而 Microsoft 團隊會將其 chat service 的資料儲存在資料表、blob 及佇列中。 此外，Microsoft 365 合規性中心內的相容性分數功能會將用戶端輸入的資料儲存在[Azure COSMOS DB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest)中，以加密形式儲存的資料，也就是作為服務（PaaS）、全域分散式、多模型資料庫的平臺。 Azure Storage Service 加密會加密儲存在 Azure Blob 儲存區和表格中的資料，而 Azure 磁片加密會加密佇列中的資料，以及 Windows 和 IaaS 虛擬機器盤，以提供作業系統和資料磁片的磁片區加密。 此解決方案可確保虛擬機器磁片上的所有資料在 Azure 儲存體中的靜止時已加密。 [Azure COSMOS DB 中的靜態加密](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest)是透過使用許多安全性技術（包括安全金鑰儲存系統、加密網路和加密 APIs）來執行。
 
 ## <a name="azure-key-vault"></a>Azure 金鑰保存庫
 
-安全金鑰管理不是只核心加密最佳作法。它也是不可或缺的保護雲端中的資料。 [Azure 金鑰保存庫](https://docs.microsoft.com/azure/key-vault/key-vault-whatis)可讓您將加密金鑰及小型的機密資料，例如使用儲存在硬體安全性模組 (Hsm) 中的機碼的密碼。 Azure 金鑰保存庫是適用於管理和控制存取雲端服務所使用的加密金鑰的 Microsoft 的建議的解決方案。 服務或 Azure Active Directory 帳戶的使用者，可指派權限來存取索引鍵。 Azure Key Vault 減輕組織的設定、 修補程式，以及維護 Hsm 和金鑰管理軟體的需求。 Azure 金鑰保存庫，Microsoft 永遠不會看到您的金鑰與應用程式不可以直接存取這些;您可以維護控制項。 您也可以匯入或 Hsm 中產生金鑰。 若要使用[攜帶您自己的金鑰](https://docs.microsoft.com/information-protection/plan-design/byok-price-restrictions)(BYOK) 客戶管理金鑰其 Azure 資訊保護租用戶時，可以設定有包含 Azure 資訊保護訂閱的組織） 和[記錄其用法](https://docs.microsoft.com/information-protection/deploy-use/log-analyze-usage)。
+安全金鑰管理不只是加密最佳作法的核心;保護雲端中的資料也是必要的。 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-whatis)可讓您加密金鑰及小型密碼，例如密碼使用儲存在硬體安全模組（hsm）中的金鑰。 Azure Key Vault 是 Microsoft 建議的解決方案，用來管理和控制雲端服務所使用的加密金鑰的存取。 存取機碼的許可權可指派給服務或使用 Azure Active Directory 帳戶的使用者。 Azure 重要保險存儲區免除組織需要設定、修補及維護 Hsm 和金鑰管理軟體的需求。 使用 Azure 金鑰保存庫時，Microsoft 決不會看到您的金鑰和應用程式無法直接存取它們;您維護控制權。 您也可以匯入或產生 Hsm 中的金鑰。 具有包含 Azure 資訊保護之訂閱的組織可以設定其 Azure 資訊保護租使用者使用客戶管理的金鑰[帶您自己的金鑰](https://docs.microsoft.com/information-protection/plan-design/byok-price-restrictions)（BYOK），並[記錄其使用方式](https://docs.microsoft.com/information-protection/deploy-use/log-analyze-usage)。

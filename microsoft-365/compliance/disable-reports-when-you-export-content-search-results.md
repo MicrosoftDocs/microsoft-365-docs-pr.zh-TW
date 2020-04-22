@@ -12,128 +12,128 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: 編輯 Windows 登錄在本機電腦上，停用的報表，當您從 Office 365 中的安全性 & 合規性中心匯出內容搜尋的結果。 停用這些報告可加速下載時間，並將儲存的磁碟空間。
-ms.openlocfilehash: 99f8079bdbb0a3a43d0306dcf6b6ca8ab2c4fbef
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 在您的本機電腦上編輯 Windows 登錄，當您從 Office 365 的安全性 & 合規性中心匯出內容搜尋結果時，停用報告。 停用這些報告可加快下載時間，並節約磁碟空間。
+ms.openlocfilehash: 3bd5fadda750c709c463fbc4d84668b43e0d3a10
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595238"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633448"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>當您匯出內容搜尋結果時停用報告
 
-當您要匯出其結果的安全性 & 合規性中心的內容搜尋使用 Office 365 電子文件探索匯出工具時，工具會自動建立，並匯出包含匯出內容相關的其他資訊的兩個報表。 這些報告是 Results.csv 和 Manifest.xml 檔案 （請參閱本主題的詳細說明這些報告的[常見問題集關於停用匯出報告](#frequently-asked-questions-about-disabling-export-reports)一節）。 因為這些檔案可能會很大，您可以加速下載時間，並藉由防止這些檔案所匯出儲存的磁碟空間。 您可以藉由變更您用來匯出搜尋結果的電腦上的 Windows 登錄來這麼做。 如果您想要包含在稍後的報告，您可以編輯的登錄設定。 
+當您使用 eDiscovery 匯出工具在安全性 & 合規性中心匯出內容搜尋的結果時，此工具會自動建立及匯出包含匯出內容之其他資訊的兩個報告。 這些報告是結果 .csv 檔案和資訊清單 .xml 檔案（請參閱本主題中[關於如何停用「匯出報告](#frequently-asked-questions-about-disabling-export-reports)」一節的常見問題，以取得這些報告的詳細描述）。 因為這些檔案可能非常大，所以您可以透過防止匯出這些檔案，加快下載時間，並節省磁碟空間。 若要這麼做，您可以在用來匯出搜尋結果的電腦上變更 Windows 登錄。 如果您想要稍後加入報告，您可以編輯登錄設定。 
   
-## <a name="create-registry-settings-to-disable-the-export-reports"></a>建立登錄設定來停用匯出報告
+## <a name="create-registry-settings-to-disable-the-export-reports"></a>建立登錄設定以停用匯出報告
 
-您將使用來將結果匯出內容搜尋的電腦上執行下列程序。
+在您要用來匯出結果的電腦上執行下列程式，以進行內容搜尋。
   
-1. 如果它已經開啟，請關閉 Office 365 電子文件探索匯出工具。
+1. 關閉 eDiscovery 匯出工具（若已開啟）。
     
-2. 執行下列一或兩個以下的步驟中，視哪些匯出報告您要停用。
+2. 根據您要停用的匯出報表，執行下列其中一項或兩項步驟。
     
-    - **Results.csv**
+    - **結果 .csv**
     
-      將下列文字儲存到 Windows 登錄檔中，使用.reg; 檔名尾碼例如，DisableResultsCsv.reg。
+      使用檔案名尾碼註冊，將下列文字儲存至 Windows 登錄檔案。例如，DisableResultsCsv。
     
       ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d False 
       ```
 
-    - **Manifest.xml**
+    - **Manifest .xml**
     
-      將下列文字儲存到 Windows 登錄檔中，使用.reg; 檔名尾碼例如，DisableManifestXml.reg。
+      使用檔案名尾碼註冊，將下列文字儲存至 Windows 登錄檔案。例如，DisableManifestXml。
     
       ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d False 
       ```
 
-3. 在 Windows 檔案總管] 中，按一下或按兩下您在先前步驟中建立的.reg 檔案。
+3. 在 [Windows Explorer] 中，按一下或按兩下您在先前步驟中建立的 .reg 檔案。
     
-4. 在 [使用者存取控制] 視窗中，按一下 [ **]** 讓登錄編輯程式中進行的變更。 
+4. 在 [使用者存取控制] 視窗中，按一下 **[是]** 讓登錄編輯程式進行變更。 
     
-5. 出現提示時若要繼續，按一下 **[是]**。
+5. 當系統提示您繼續時，請按一下 **[是]**。
     
-    登錄編輯程式中會顯示訊息，說明設定已成功新增至登錄。
+    登錄編輯器會顯示一則訊息，指出已成功將設定新增至註冊表。
   
-## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>編輯若要重新啟用匯出報告的登錄設定
+## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>編輯登錄設定以重新啟用匯出報告
 
-如果您停用 [Results.csv] 及 [Manifest.xml 報表在先前的程序中建立.reg 檔案，您可以編輯若要重新啟用報表，以便在搜尋結果匯出這些檔案。 同樣地，您將用來將結果匯出內容搜尋的電腦上執行下列程序。
+如果您已停用結果. csv 和資訊清單 .xml 報告在上述程式中建立 .reg 檔案，您可以編輯這些檔案，以重新啟用報表，使其與搜尋結果一起匯出。 此外，在您要用來匯出結果內容搜尋的電腦上執行下列程式。
   
-1. 如果它已經開啟，請關閉 Office 365 電子文件探索匯出工具。
+1. 關閉 eDiscovery 匯出工具（若已開啟）。
     
-2. 編輯一或兩個您在先前的程序中建立的.reg 編輯檔案。
+2. 編輯您在先前程式中建立的其中一個或兩個 .reg 編輯檔案。
     
-    - **Results.csv**
+    - **結果 .csv**
     
-        開啟 [記事本] 中的 DisableResultsCsv.reg 檔案變更值`False`以`True`，然後儲存檔案。 例如，您可以編輯檔案之後，它看起來像這樣：
+        在 [記事本] 中開啟 DisableResultsCsv 檔案，將值`False`變更為`True`，然後儲存檔案。 例如，編輯檔案之後，它看起來像這樣：
     
         ```text
         Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d True
         ```
 
-    - **Manifest.xml**
+    - **Manifest .xml**
     
-        開啟 [記事本] 中的 DisableManifestXml.reg 檔案變更值`False`以`True`，然後儲存檔案。 例如，您可以編輯檔案之後，它看起來像這樣：
+        在 [記事本] 中開啟 DisableManifestXml 檔案，將值`False`變更為`True`，然後儲存檔案。 例如，編輯檔案之後，它看起來像這樣：
     
       ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d True
       ```
 
-3. 在 Windows 檔案總管] 中，按一下或按兩下您在上一個步驟中編輯.reg 檔案。
+3. 在 [Windows Explorer] 中，按一下或按兩下您在上一個步驟中編輯的 .reg 檔案。
     
-4. 在 [使用者存取控制] 視窗中，按一下 [ **]** 讓登錄編輯程式中進行的變更。 
+4. 在 [使用者存取控制] 視窗中，按一下 **[是]** 讓登錄編輯程式進行變更。 
     
-5. 出現提示時若要繼續，按一下 **[是]**。
+5. 當系統提示您繼續時，請按一下 **[是]**。
     
-    登錄編輯程式中會顯示訊息，說明設定已成功新增至登錄。
+    登錄編輯器會顯示一則訊息，指出已成功將設定新增至註冊表。
   
-## <a name="frequently-asked-questions-about-disabling-export-reports"></a>停用匯出報告相關的常見問題集
+## <a name="frequently-asked-questions-about-disabling-export-reports"></a>停用匯出報告的常見問題
 
- **什麼是 Results.csv 和 Manifest.xml 報告？**
+ **其結果是 csv 及資訊清單 .xml 報告？**
   
-將 Results.csv 和 Manifest.xml 檔案包含匯出內容相關的其他資訊。
+結果 .csv 和資訊清單 .xml 檔案包含匯出內容的其他相關資訊。
   
-- **Results.csv** Excel 文件包含在搜尋結果會下載每個項目的相關資訊。 電子郵件，結果記錄檔會包含每個郵件的資訊包括： 
+- **結果 .csv**包含每個下載為搜尋結果之專案相關資訊的 Excel 檔。 針對電子郵件，結果記錄檔包含每封郵件的相關資訊，包括： 
     
-  - 來源信箱中的郵件的位置 (包括郵件是否處於主要或封存信箱)。
+  - 來源信箱中郵件的位置（包括郵件是在主要或封存信箱中）。
     
-  - 郵件已傳送或接收的日期。
+  - 傳送或接收郵件的日期。
     
-  - 從郵件主旨行。
+  - 郵件的主旨行。
     
-  - 寄件者和收件者的郵件。
+  - 郵件的寄件者和收件者。
     
-  - 郵件是否重複的郵件如果匯出搜尋結果時，啟用重複資料刪除。 重複的郵件將會在**父項目識別碼**] 欄中識別為重複郵件具有值。 **父項目識別碼**] 欄中的值是匯出之郵件的 [**項目 DocumentId** ] 欄中的值相同。 
+  - 當您匯出搜尋結果時啟用重復資料刪除時，郵件是否是重複的郵件。 重複郵件會在**Parent ItemId** ] 欄中，將值識別為重複郵件。 **Parent ItemId** ] 欄中的值與所匯出郵件之 [**專案 DocumentId** ] 欄中的值相同。 
     
-    文件的 SharePoint 和 OneDrive for Business 網站，結果記錄檔包含每個文件的資訊包括：
+    針對來自 SharePoint 和 OneDrive 商務網站的檔，結果記錄檔包含每個檔的相關資訊，包括：
     
-  - 文件的 URL。
+  - 檔的 URL。
     
-  - 文件所在之網站集合的 URL。
+  - 檔所在之網站集合的 URL。
     
-  - 上次修改文件的日期。
+  - 上次修改檔的日期。
     
-  - （這位於結果記錄檔中的 [主旨] 欄） 的文件的名稱。
+  - 檔的名稱（位於結果記錄檔的 [主旨] 欄中）。
     
-- **Manifest.xml**中資訊清單檔案 （XML 格式），其中包含搜尋結果中包含每個項目的相關資訊。 此報告中的資訊會與 [Results.csv] 報告中，相同，但它的格式指定所電子搜索參照模型 (EDRM)。 如需有關 EDRM 的詳細資訊，請移至[https://www.edrm.net](https://www.edrm.net)。
+- **Manifest .xml**包含搜尋結果中所包含之每個專案之相關資訊的資訊清單檔案（xml 格式）。 此報告中的資訊與結果 csv 報告相同，但其格式為「電子 Discovery 參考模型」（EDRM）所指定的格式。 如需 EDRM 的詳細資訊，請[https://www.edrm.net](https://www.edrm.net)前往。
     
  **何時應該停用匯出這些報告？**
   
-這取決於您的特定需求。 許多組織不需要搜尋結果的其他資訊，而不需要這些報告。
+這取決於您的特定需求。 許多組織不需要搜尋結果的額外資訊，而且不需要這些報告。
   
- **我有執行這項作業電腦為何？**
+ **我需要執行此動作的電腦為何？**
   
- 您必須變更您在執行 Office 365 電子文件探索匯出工具的任何本機電腦上的登錄設定。 
+ 您必須在執行 eDiscovery 匯出工具的任何本機電腦上變更登錄設定。 
   
- **變更此設定之後，我有重新啟動電腦？**
+ **變更此設定後，是否需要重新開機電腦？**
   
-否，您不需要重新啟動電腦。 但如果執行 Office 365 電子文件探索匯出工具，您必須關閉它，然後重新啟動它之後變更的登錄設定。
+否，您不需要重新開機電腦。 不過，如果正在執行 eDiscovery 匯出工具，您必須關閉它，然後在變更登錄設定之後重新開機它。
   
- **沒有現有的登錄機碼取得編輯或沒有取得建立新的金鑰嗎？**
+ **是否已編輯現有登錄機碼，或是建立新的金鑰？**
   
-新的登錄機碼會建立第一次執行您在本主題中的程序中建立的.reg 檔案。 然後設定編輯的每當您變更，然後重新執行.reg 編輯檔案。
+當您第一次執行您在本主題的程式中所建立的 .reg 檔案時，就會建立新的登錄機碼。 然後，每當您變更並重新執行 .reg 編輯檔案時，就會編輯設定。

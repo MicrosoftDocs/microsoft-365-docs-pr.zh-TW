@@ -1,11 +1,11 @@
 ---
-title: Office 365 中預估和實際 eDiscovery 搜尋結果之間的差異
+title: 預估和實際 eDiscovery 搜尋結果之間的差異
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
+ms.date: 4/13/2017
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -18,19 +18,18 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: '瞭解在 Office 365 中使用 eDiscovery 工具進行搜尋時，預估和實際搜尋結果可能會有所不同的原因。 '
-ms.openlocfilehash: 9ee24cc0e7b85d39480149d65897b303e23c0adb
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+ms.openlocfilehash: 927042cd7c5f3966e7598f16fdbbcd4e7ddb7923
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204065"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632550"
 ---
-# <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Office 365 中預估和實際 eDiscovery 搜尋結果之間的差異
+# <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>預估和實際 eDiscovery 搜尋結果之間的差異
 
 本主題適用于您可以使用下列其中一個 Microsoft eDiscovery 工具執行的搜尋： 
 
 - 安全性 & 規範中心的內容搜尋  <br/>  
-- 與核心 eDiscovery 案例相關聯的搜尋
 - 在 Exchange 系統管理中心（EAC）中 In-Place eDiscovery  <br/>  
 - SharePoint Online 中的 eDiscovery 中心  <br/> 
    
@@ -56,7 +55,7 @@ ms.locfileid: "43204065"
   
 - 評估**結果的方式**，估計搜尋結果的結果就是符合搜尋查詢準則之專案的預估（而非實際計數）。 若要編譯 Exchange 專案的預估，您所使用的 eDiscovery 工具會從 Exchange 資料庫要求符合搜尋準則的郵件 IDs 清單。 但是當您匯出搜尋結果時，會重新執行搜尋，並從 Exchange 資料庫中檢索實際郵件。 因此，這些差異可能是由於預估專案數目和實際專案數目的決定而造成的。 
     
-- **評估與匯出搜尋結果之間所發生的變更**-當您匯出搜尋結果時，會重新開機搜尋，以收集符合搜尋準則之搜尋索引中的最近專案。 在收集估計的搜尋結果與匯出搜尋結果之間的時間之間，有可能會建立、傳送或接收符合搜尋準則的其他專案。 評估搜尋結果時，在搜尋結果中的專案已經不再存在，可能是因為在匯出搜尋結果之前已經從內容位置中清除。 緩解此問題的一種方法是指定 eDiscovery 搜尋的日期範圍。 另一種方式是保留內容位置，讓專案得以保留且無法清除。 雖然很少發生，即使在套用保留時，內建的行事曆專案（不是使用者可編輯，也包含在許多搜尋結果中），也可能會隨時移除。 這種定期移除行事曆專案會導致較少的專案匯出。
+- **評估與匯出搜尋結果之間所發生的變更**-當您匯出搜尋結果時，會重新開機搜尋，以收集符合搜尋準則之搜尋索引中的最近專案。 在收集估計的搜尋結果與匯出搜尋結果之間的時間之間，有可能會建立、傳送或接收符合搜尋準則的其他專案。 評估搜尋結果時，在搜尋結果中的專案已經不再存在，可能是因為在匯出搜尋結果之前已經從內容位置中清除。 緩解此問題的一種方法是指定 eDiscovery 搜尋的日期範圍。 另一種方式是保留內容位置，讓專案得以保留且無法清除。 
     
 - 未**編制索引的專案**-針對搜尋未編制索引的專案可能會造成預估和實際搜尋結果之間的差異。 例如，當您執行搜尋以估計搜尋結果時，Exchange 中 In-Place eDiscovery，以及 SharePoint 中的 eDiscovery 中心不會包含未編制索引的專案（不符合搜尋準則）。 不過，您可以在匯出搜尋結果時包含未編制索引的專案。 如果您在匯出搜尋結果時包含未編制索引的專案，則可能會有更多匯出的專案。 這會造成預估和匯出的搜尋結果之間的差異。 
     
@@ -80,7 +79,9 @@ ms.locfileid: "43204065"
 
 在 SharePoint Online 的 eDiscovery Center 中，您可以選擇在匯出 eDiscovery 搜尋的結果時包含未編制索引的內容（從 Exchange 及 SharePoint）。 若要執行此動作，請選取 [**包含已加密或具有無法辨識格式的專案**] 選項。 未編制索引的專案（SharePoint 中也稱為「uncrawlable」）是 Exchange 中的專案，也就是由於某些原因 SharePoint 而未編制索引以進行搜尋。 在您匯出搜尋結果時所包含的**Exchange 索引錯誤**報告中，會列出未編制索引的 exchange 專案。 同樣地，未編制索引的 SharePoint 專案會列在**SharePoint 索引錯誤**報告中。 當您匯出未編制索引的專案時，他們會下載至名為**Uncrawlable**的資料夾。 未編制索引的 Exchange 專案包含在 PST 檔案中;每個來自 SharePoint 的未編制索引的檔也會下載。 每個索引錯誤報表中會列出未編制索引的專案數（如果有的話）。 報告中未編制索引的專案數目應符合所下載之未編制索引的專案數目。 
   
- **如果匯出未編制索引的專案數不符合索引錯誤報表中的專案數，有何原因呢？** 如先前所述，可能已在執行搜尋預估和匯出搜尋結果的時間之間，從 Office 365 清除專案。 未編制索引的專案可能會發生類似的差異。 例如，在匯出搜尋結果時，搜尋索引可能會是下班時間。 這表示使用搜尋結果匯出的未編制索引的專案可能未列在 [索引錯誤報表] 中，因為該專案在匯出搜尋結果時未編制索引。 這會導致匯出的索引項目目數目超過索引錯誤報表中列出的數目。 同樣地，索引錯誤報表中所列的未編制索引的專案，在更新搜尋索引之前，可能已經從 Office 365 清除。 這會導致匯出的未編制索引項目目數目少於索引錯誤報表中列出的數目。 
+ **如果匯出未編制索引的專案數不符合索引錯誤報表中的專案數，有何原因呢？** 如先前所述，可能已在執行搜尋預估和匯出搜尋結果的時間之間，清除從 Microsoft 365 的專案。 未編制索引的專案可能會發生類似的差異。 例如，在匯出搜尋結果時，搜尋索引可能會是下班時間。 這表示使用搜尋結果匯出的未編制索引的專案可能未列在 [索引錯誤報表] 中，因為該專案在匯出搜尋結果時未編制索引。 這會導致匯出的索引項目目數目超過索引錯誤報表中列出的數目。 同樣地，索引錯誤報表中所列的未編制索引的專案可能已在更新搜尋索引之前從 Microsoft 365 中清除。 這會導致匯出的未編制索引項目目數目少於索引錯誤報表中列出的數目。 
   
 > [!NOTE]
 > 如果您未選取 [**包括已加密的專案] 或 [未辨識的格式**] 選項，當您匯出搜尋結果或只下載報告時，就會下載索引錯誤報表，但沒有任何專案。 這並不表示沒有任何索引錯誤。 這只表示匯出中不包含未編制索引的專案。 
+  
+

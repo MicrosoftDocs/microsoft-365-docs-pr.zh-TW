@@ -1,5 +1,7 @@
 ---
 title: Office 365 郵件加密的舊版資訊
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,65 +15,65 @@ search.appverid:
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
-description: 如果您尚未将 Office 365 组织迁移到新的 OME 功能，但已部署 OME，则本文中的信息将应用于您的组织。 Microsoft 建议您在您的组织合理时尽快制定计划，以迁移到新的 OME 功能。 有关说明，请参阅设置在 Azure 信息保护之上构建的新 Office 365 消息加密功能。 如果要首先了解有关新功能工作方式的更多信息，请参阅 Office 365 邮件加密。 本文的其余部分是指在新的 OME 功能发布之前的 OME 行为。
-ms.openlocfilehash: 70529e9aa5c444ab8fc57d4a9698295e50198725
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 如果您尚未將組織移至新的 OME 功能，但您已部署 OME，則本文中的資訊適用于您的組織。 Microsoft 建議您在組織合理的情況時，安排移至新的 OME 功能。 如需相關指示，請參閱設定以 Azure 資訊保護為基礎的新 Office 365 郵件加密功能。 如果您想要進一步瞭解新功能的運作方式，請參閱 Office 365 Message Encryption。 本文的其餘部分是在發行新的 OME 功能之前，OME 行為。
+ms.openlocfilehash: 9f9d4cdd9ee75becb6b7c7d9716b9fcb543c48d9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077121"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632682"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 郵件加密的舊版資訊
 
-如果您尚未将 Office 365 组织迁移到新的 OME 功能，但已部署 OME，则本文中的信息将应用于您的组织。 Microsoft 建议您在您的组织合理时尽快制定计划，以迁移到新的 OME 功能。 有关说明，请参阅[设置在 Azure 信息保护 之上构建的新 Office 365 消息加密功能。](set-up-new-message-encryption-capabilities.md) 如果要首先了解有关新功能工作方式的更多信息，请参阅[Office 365 邮件加密](ome.md)。 本文的其余部分是指在新的 OME 功能发布之前的 OME 行为。
+如果您尚未將組織移至新的 OME 功能，但您已部署 OME，則本文中的資訊適用于您的組織。 Microsoft 建議您在組織合理的情況時，安排移至新的 OME 功能。 如需相關指示，請參閱[設定以 Azure 資訊保護為基礎的新 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)。 如果您想要進一步瞭解新功能的運作方式，請參閱[Office 365 Message Encryption](ome.md)。 本文的其餘部分是在發行新的 OME 功能之前，OME 行為。
   
-借助 Office 365 邮件加密，您的组织可以在组织内外人员之间发送和接收加密的电子邮件。 Office 365 邮件加密适用于Outlook.com、雅虎、Gmail 和其他电子邮件服务。 电子邮件加密有助于确保只有目标收件人才能查看邮件内容。
+透過 Office 365 郵件加密，您的組織可以在組織內部和外部的人員之間傳送和接收加密的電子郵件。 Office 365 郵件加密可與 Outlook.com、Yahoo、Gmail 及其他電子郵件服務搭配使用。 電子郵件加密可協助確保只有預定的收件者可以查看郵件內容。
   
 以下為一些範例：
   
-- 银行员工向客户发送信用卡对帐单
+- 銀行員工將信用卡對帳單傳送給客戶
 
-- 保险公司代表为客户提供保单详细信息
+- 保險業公司代表為客戶提供原則詳細資料
 
-- 抵押贷款经纪人向客户请求贷款申请的财务信息
+- 抵押經紀人要求來自客戶的貸款申請財務資訊
 
-- 医疗保健提供者向患者发送医疗保健信息
+- 保健服務提供者將健康情況護理資訊傳送給患者
 
-- 律师向客户或其他律师发送机密信息
+- 律師將機密資訊傳送給客戶或其他律師
 
-## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>Office 365 消息加密如何在没有新功能的情况下工作
+## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>如何在未使用新功能的情況下運作 Office 365 郵件加密
 
-Office 365 邮件加密是在 Microsoft Azure 权限管理 （Azure RMS） 上构建的在线服务。 使用 Azure RMS，管理员可以定义邮件流规则以确定加密条件。 例如，规则可以要求对发送给特定收件人的所有邮件进行加密。
+Office 365 郵件加密是以 Microsoft Azure 版權管理（Azure RMS）為基礎的線上服務。 使用 Azure RMS 時，系統管理員可以定義郵件流程規則，以判斷加密的條件。 例如，規則可以要求所有寄給特定收件者的郵件加密。
   
-观看此简短视频，了解 Office 365 邮件加密在没有新功能的情况下如何工作。
+請觀看這段簡短的影片，查看 Office 365 郵件加密如何運作，但不含新功能。
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c55540e7-f7f0-42f5-b254-4b2d2fbb1d63?autoplay=false]
   
-当某人在 Exchange Online 中发送与加密规则匹配的电子邮件时，该邮件将随 HTML 附件一起发送。 收件人打开 HTML 附件，并按照说明在 Office 365 邮件加密门户上查看加密邮件。 收件人可以选择使用 Microsoft 帐户或与 Office 365 关联的工作或学校登录或使用一次性密码来查看邮件。 这两个选项都有助于确保只有目标收件人才能查看加密的邮件。 对于新的 OME 功能，此过程非常不同。
+當某人在 Exchange Online 中傳送符合加密規則的電子郵件時，郵件會以 HTML 附件傳送。 收件者會開啟 HTML 附件，並遵循指示，在 Office 365 郵件加密入口網站上查看加密郵件。 收件者可以選擇透過與 Office 365 相關聯的 Microsoft 帳戶或工作或學校登入，或是使用一次性的傳遞碼來查看郵件。 這兩個選項可協助確保只有預定的收件者可以查看加密的郵件。 此程式在新的 OME 功能上有很大的差異。
   
-下图总结了电子邮件通过加密和解密过程的过程。
+下圖摘要說明透過加密和解密過程的電子郵件訊息。
   
-![顯示加密電子郵件路徑的圖表](media/O365-Office365MessageEncryption-Concept.png)
+![顯示加密電子郵件路徑的圖表](../media/O365-Office365MessageEncryption-Concept.png)
   
-有关详细信息，请参阅在新的[OME 功能发布之前的旧版 Office 365 邮件加密的服务信息。](legacy-information-for-message-encryption.md#LegacyServiceInfo)
+如需詳細資訊，請參閱[舊版 Office 365 郵件加密的服務資訊，然後再發行新的 OME 功能](legacy-information-for-message-encryption.md#LegacyServiceInfo)。
   
-## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities"></a>为不使用新的 OME 功能的 Office 365 邮件加密定义邮件流规则
+## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities"></a>定義不使用新 OME 功能之 Office 365 郵件加密的郵件流程規則
 
-要启用 Office 365 邮件加密而无需新功能，Exchange 联机和交换联机保护管理员定义 Exchange 邮件流规则。 这些规则确定在什么条件下应加密电子邮件，以及删除邮件加密的条件。 为规则设置加密操作时，任何与规则条件匹配的消息在发送之前都将被加密。
+若要在沒有新功能的情況下啟用 Office 365 郵件加密，Exchange Online 和 Exchange Online Protection 系統管理員會定義 Exchange 郵件流程規則。 這些規則會判斷應如何加密電子郵件，以及移除郵件加密的條件。 為規則設定加密動作時，任何符合規則條件的郵件會先加密，然後再傳送。
   
-邮件流规则非常灵活，允许您组合条件，以便在单个规则中满足特定的安全要求。 例如，您可以创建一个规则来加密包含指定关键字并发送给外部收件人的所有邮件。 Office 365 邮件加密还加密来自加密电子邮件收件人的回复，您可以创建一个规则来解密这些回复，以方便您的电子邮件用户。 这样，组织中的用户就不必登录到加密门户来查看答复。
+郵件流程規則是彈性的，可讓您結合條件，讓您在單一規則中符合特定的安全性需求。 例如，您可以建立規則來加密所有包含指定關鍵字的郵件，並將其寄給外部收件者。 Office 365 郵件加密也會加密來自加密電子郵件收件者的回復，而且您可以建立規則來解密這些回復，以方便您的電子郵件使用者使用。 如此一來，您組織中的使用者不需要登入加密入口網站來查看回復。
   
-有关如何创建 Exchange 邮件流规则的详细信息，请参阅定义[Office 365 邮件加密规则。](define-mail-flow-rules-to-encrypt-email.md)
+如需如何建立 Exchange 郵件流程規則的相關資訊，請參閱[Define rules For Office 365 Message Encryption](define-mail-flow-rules-to-encrypt-email.md)。
   
-## <a name="sending-viewing-and-replying-to-encrypted-email-messages"></a>发送、查看和回复加密的电子邮件
+## <a name="sending-viewing-and-replying-to-encrypted-email-messages"></a>傳送、查看和回復加密的電子郵件
 
-使用 Office 365 邮件加密，电子邮件将根据管理员定义的规则自动加密。 包含加密邮件的电子邮件将到达收件人的收件箱中，并带有附加的 HTML 文件。
+透過 Office 365 郵件加密，電子郵件訊息會根據系統管理員定義的規則自動加密。 帶有已加密郵件的電子郵件會以附加的 HTML 檔案送達收件者的收件匣。
   
-收件人按照邮件中的说明打开附件，并使用 Microsoft 帐户或与 Office 365 关联的工作或学校进行身份验证。 如果收件人没有任一帐户，则会引导他们创建一个 Microsoft 帐户，以便他们登录以查看加密的邮件。 或者，收件人可以选择获取一次性密码来查看邮件。 登录或使用一次性密码后，收件人可以查看解密邮件并发送加密回复。
+收件者按郵件中的指示來開啟附件，並使用 Microsoft 帳戶或與 Office 365 關聯的工作或學校進行驗證。 如果收件者沒有任何帳戶，他們會被導向建立 Microsoft 帳戶，讓他們登入以查看加密郵件。 另外，收件者可以選擇取得一次的傳遞碼以查看郵件。 登入或使用一次性密碼後，收件者可以查看已解密的郵件，並傳送加密的回復。
   
-## <a name="customize-encrypted-messages-with-office-365-message-encryption"></a>使用 Office 365 邮件加密自定义加密邮件
+## <a name="customize-encrypted-messages-with-office-365-message-encryption"></a>使用 Office 365 郵件加密自訂加密郵件
 
-作为 Exchange 联机和交换联机保护管理员，您可以自定义加密邮件。 例如，您可以添加公司的品牌和徽标，指定简介，并在加密邮件和收件人查看加密邮件的门户中添加免责声明文本。 您可以使用 Windows PowerShell 指令程式，自訂以下方面的加密電子郵件收件者視覺體驗：
+做為 Exchange Online 和 Exchange Online Protection 管理員，您可以自訂加密的郵件。 例如，您可以新增公司的商標和標誌、指定簡介，以及在加密郵件中和在收件者查看加密郵件的入口網站中新增免責聲明文字。 您可以使用 Windows PowerShell 指令程式，自訂以下方面的加密電子郵件收件者視覺體驗：
   
 - 包含加密訊息的電子郵件簡介文字
 
@@ -85,69 +87,69 @@ Office 365 邮件加密是在 Microsoft Azure 权限管理 （Azure RMS） 上�
   
 下列範例顯示 ContosoPharma 在電子郵件附件中的自訂標誌：
   
-![已加密郵件頁面的檢視範例](media/TA-OME-3attachment2.jpg)
+![已加密郵件頁面的檢視範例](../media/TA-OME-3attachment2.jpg)
   
- **使用组织品牌自定义加密电子邮件和加密门户**
+ **自訂加密電子郵件和加密入口網站與貴組織的品牌**
   
-1. 使用远程电源外壳联机连接到交换，如[使用远程电源外壳联机连接到交换](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated)中所述。
+1. 使用遠端 PowerShell 連接至 Exchange Online （如[使用遠端 PowerShell 連線到 Exchange online](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated)中所述）。
 
-2. 使用此处描述的 Set-OME 配置 cmdlet：[设置-OME 配置](http://technet.microsoft.com/en-us/3ef0aec0-ce28-411d-abe8-7236f082af1b)或使用下表进行指导。
+2. 依照如下所述使用 Set-OMEConfiguration Cmdlet： [Set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)或使用下表取得指導方針。
 
    **加密自訂選項**
 
 |**若要自訂此加密經驗功能**|**請使用這些 Windows PowerShell 命令**|
 |:-----|:-----|
-|加密電子郵件隨附的預設文字  <br/> 預設文字會出現在檢視加密郵件的指示上方。  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **示例：**`Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
-|包含加密訊息之電子郵件中的免責聲明  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **示例：**`Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
-|出現在加密郵件檢視入口網站上方的文字  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **示例：**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
-|商標  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **示例：**`Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> 支援的檔案格式：.png、.jpg、.bmp 或 .tiff  <br/> 標誌檔案的最佳大小：小於 40 KB  <br/> 標誌影像的最佳大小：170x70 像素  <br/> |
+|加密電子郵件隨附的預設文字  <br/> 預設文字會出現在檢視加密郵件的指示上方。  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **範例：** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
+|包含加密訊息之電子郵件中的免責聲明  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **範例：** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
+|出現在加密郵件檢視入口網站上方的文字  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **範例：** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
+|標誌  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **範例：** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> 支援的檔案格式：.png、.jpg、.bmp 或 .tiff  <br/> 標誌檔案的最佳大小：小於 40 KB  <br/> 標誌影像的最佳大小：170x70 像素  <br/> |
 
- **从加密电子邮件和加密门户中删除品牌自定义**
+ **從加密電子郵件和加密入口網站移除品牌自訂**
   
-1. 使用远程电源外壳联机连接到交换，如[使用远程电源外壳联机连接到交换](http://technet.microsoft.com/en-us/library/jj984289%28v=exchg.150%29.aspx)中所述。
+1. 使用遠端 PowerShell 連接至 Exchange Online （如[使用遠端 PowerShell 連線到 Exchange online](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)中所述）。
 
-2. 使用此处描述的设置-OME 配置 cmdlet：[设置-OME 配置](http://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)。 要从免责声明文本、电子邮件文本和门户文本值中删除组织的品牌自定义项，请将值设置为空字符串 。 `""` 对于所有图像值（如徽标），将值设置为`"$null"`。
+2. 使用如下所述的 Set-OMEConfiguration Cmdlet： [Set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)。 若要從 DisclaimerText、EmailText 及 PortalText 值中移除組織的署名自訂，請將值設為空字串`""`。 針對所有影像值，例如 [標誌]，將值設`"$null"`為。
 
    **加密自訂選項**
 
 |**將加密體驗的這項功能回復為預設文字和影像**|**請使用這些 Windows PowerShell 命令**|
 |:-----|:-----|
-|加密電子郵件隨附的預設文字  <br/> 預設文字會出現在檢視加密郵件的指示上方。  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **示例：**`Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""` <br/> |
-|包含加密訊息之電子郵件中的免責聲明  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **示例：**`Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
-|出現在加密郵件檢視入口網站上方的文字  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **恢复为默认值的示例：**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
-|商標  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **恢复为默认值的示例：**`Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
+|加密電子郵件隨附的預設文字  <br/> 預設文字會出現在檢視加密郵件的指示上方。  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **範例：** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""` <br/> |
+|包含加密訊息之電子郵件中的免責聲明  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **範例：** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
+|出現在加密郵件檢視入口網站上方的文字  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **範例回復為預設值：**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
+|標誌  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **範例回復為預設值：**`Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
 
-## <a name="service-information-for-legacy-office-365-message-encryption-prior-to-the-release-of-the-new-ome-capabilities"></a>在新的 OME 功能发布之前，旧版 Office 365 邮件加密的服务信息
+## <a name="service-information-for-legacy-office-365-message-encryption-prior-to-the-release-of-the-new-ome-capabilities"></a>發行新的 OME 功能之前，舊版 Office 365 郵件加密的服務資訊
 <a name="LegacyServiceInfo"> </a>
 
-下表提供了在新的 OME 功能发布之前 Office 365 消息加密服务的技术详细信息。
+下表提供 Office 365 Message Encryption service 在發行新 OME 功能之前的技術詳細資料。
   
-|**服务详情**|**描述**|
+|**服務詳細資料**|**描述**|
 |:-----|:-----|
-|客户端设备要求  <br/> |只要可以在支持 Form Post 的现代浏览器中打开 HTML 附件，可以在任何客户端设备上查看加密邮件。  <br/> |
-|加密算法和联邦信息处理标准 （FIPS） 合规性  <br/> |Office 365 消息加密使用与 Windows Azure 信息权限管理 （IRM） 相同的加密密钥，并支持加密模式 2（RSA 的 2K 密钥和 SHA-1 系统的 256 位密钥）。 有关基础 IRM 加密模式的详细信息，请参阅[AD RMS 加密模式](http://technet.microsoft.com/library/hh867439%28WS.10%29.aspx)。  <br/> |
-|支持的消息类型  <br/> |Office 365 邮件加密仅支持具有消息类 ID 为**IPM 的项目。注意**. 有关详细信息，请参阅[项类型和消息类](https://msdn.microsoft.com/library/office/ff861573.aspx)。  <br/> |
-|郵件大小限制  <br/> |Office 365 消息加密可以加密高达 25 MB 的邮件。 有关邮件大小限制的详细信息，请参阅[交换联机限制](http://technet.microsoft.com/library/exchange-online-limits.aspx)。  <br/> |
-|交换在线电子邮件保留策略  <br/> |联机交换不会存储加密的邮件。  <br/> |
-|对 Office 365 邮件加密的语言支持  <br/> | Office 365 邮件加密支持 Office 365 语言，如下所示：  <br/>  传入的电子邮件和附加的 HTML 文件根据发件人的语言设置进行本地化。  <br/>  查看门户根据收件人的浏览器设置进行本地化。  <br/>  加密邮件的正文（内容）未本地化。  <br/> |
-|OME 门户和 OME 查看器应用程序的隐私信息  <br/> |[Office 365 消息加密门户隐私声明](https://privacy.microsoft.com/en-US/privacystatement)提供有关 Microsoft 执行和不做您的私人信息的详细信息。  <br/> |
+|用戶端裝置需求  <br/> |您可以在任何用戶端裝置上查看已加密的郵件，只要 HTML 附件可以在支援表單文章的新式瀏覽器中開啟。  <br/> |
+|加密演算法和聯邦資訊處理標準（FIPS）合規性  <br/> |Office 365 郵件加密使用與 Windows Azure 資訊版權管理（IRM）相同的加密金鑰，並支援加密模式2（適用于 RSA 的2K 金鑰和256位金鑰用於 SHA-1 系統）。 如需基礎 IRM 加密模式的詳細資訊，請參閱[AD RMS 密碼編譯模式](https://technet.microsoft.com/library/hh867439%28WS.10%29.aspx)。  <br/> |
+|支援的郵件類型  <br/> |只有具有「IPM」郵件類別識別碼的專案才支援 Office 365 郵件加密 **。附注**。 如需詳細資訊，請參閱[專案類型和郵件類別](https://msdn.microsoft.com/library/office/ff861573.aspx)。  <br/> |
+|郵件大小限制  <br/> |Office 365 郵件加密可將郵件加密為 25 mb。 如需郵件大小限制的詳細資訊，請參閱[Exchange Online 限制](https://technet.microsoft.com/library/exchange-online-limits.aspx)。  <br/> |
+|Exchange Online 電子郵件保留原則  <br/> |Exchange Online 不會儲存加密的郵件。  <br/> |
+|Office 365 郵件加密的語言支援  <br/> | Office 365 郵件加密支援 Microsoft 365 語言，如下所示：  <br/>  傳入的電子郵件和附加的 HTML 檔案會根據寄件者的語言設定進行當地語系化。  <br/>  根據收件者的瀏覽器設定來當地語系化查看入口網站。  <br/>  加密郵件的主體（內容）並未當地語系化。  <br/> |
+|OME 入口網站和 OME Viewer 應用程式的隱私權資訊  <br/> |[Office 365 郵件加密入口網站隱私權聲明](https://privacy.microsoft.com/privacystatement)提供 Microsoft 對您私人資訊的處理方式及不會有什麼作用的詳細資訊。  <br/> |
 
-## <a name="frequently-asked-questions-about-legacy-ome"></a>有关旧版 OME 的常见问题
+## <a name="frequently-asked-questions-about-legacy-ome"></a>有關舊版 OME 的常見問題
 <a name="LegacyServiceInfo"> </a>
 
-对 Office 365 邮件加密有疑问？ 以下是一些解答。 如果找不到所需内容，请查看[Office 365 社区中](http://community.office365.com/en-us/forums/default.aspx)的 Office 365 社区论坛。
+有關于 Office 365 郵件加密的問題嗎？ 以下是一些解答。 如果您找不到所需的專案，請檢查[Office 365 的 Microsoft 技術人員論壇](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)。
   
- **问：我的用户向组织外部的收件人发送加密的电子邮件。外部收件人是否必须执行任何操作才能读取和回复使用 Office 365 邮件加密加密的电子邮件？**
+ **問：我的使用者將加密的電子郵件傳送給我們組織之外的收件者。外部收件者是否必須這麼做才能閱讀和回復使用 Office 365 郵件加密所加密的電子郵件？**
   
-組織外部的收件者收到以 Office 365 加密的電子郵件時，可以這兩種方式檢視郵件：
+組織外部收件者收到 Microsoft 365 加密郵件的收件者可以透過下列其中一種方式加以查看：
   
-- 通过使用 Microsoft 帐户或与 Office 365 关联的工作或学校帐户登录。
+- 使用與 Office 365 相關聯的 Microsoft 帳戶或工作或學校帳戶登入。
 
-- 通过使用一次性密码。
+- 使用一次性處理常式代碼。
 
- **問：Office 365 加密郵件是儲存於雲端或 Microsoft 伺服器上嗎？**
+ **問：是否有儲存在雲端或 Microsoft 伺服器上的 Microsoft 365 加密郵件？**
   
-否，加密邮件保留在收件人的电子邮件系统上，当收件人打开邮件时，邮件将临时发布，以便在 Office 365 服务器上查看。 郵件並不會儲存於該處。
+否，已加密的郵件會保留在收件者的電子郵件系統上，當收件者開啟郵件時，它會暫時張貼以供在 Microsoft 伺服器上查看。 郵件並不會儲存於該處。
   
  **問：我可以使用自己的品牌自訂加密電子郵件嗎？**
   
@@ -161,61 +163,60 @@ Office 365 邮件加密是在 Microsoft Azure 权限管理 （Azure RMS） 上�
   
 否，外部收件者不需要訂閱即可讀取或回覆加密郵件。
   
- **问：Office 365 邮件加密与权限管理服务 （RMS） 有什么不同？**
+ **問： Office 365 郵件加密與 Rights Management Services （RMS）有何不同？**
   
-RMS 通过提供内置模板（如：不转发和公司机密）为组织的内部电子邮件提供信息权限保护功能。 Office 365 郵件加密支援傳送至外部收件者和內部收件者之郵件的電子郵件加密。
+RMS 提供內建的範本，可提供組織內部電子郵件的資訊版權保護功能（例如：請勿轉寄及公司機密）。 Office 365 郵件加密支援傳送至外部收件者和內部收件者之郵件的電子郵件加密。
   
- **问：Office 365 邮件加密与 S/MIME 有什么不同？**
+ **問： Office 365 郵件加密與 S/MIME 有何不同？**
   
-S/MIME 基本上是一種用戶端加密技術，需要複雜的憑證管理與發佈基礎結構。 Office 365 邮件加密使用邮件流规则（也称为传输规则），并且不依赖于证书发布。
+S/MIME 基本上是一種用戶端加密技術，需要複雜的憑證管理與發佈基礎結構。 Office 365 郵件加密使用郵件流程規則（也稱為傳輸規則），而不是取決於憑證發行。
   
  **問：我可以透過行動裝置閱讀加密郵件嗎？**
   
-是的，您可以通过从[谷歌Play商店](http://go.microsoft.com/fwlink/?LinkID=525995&amp;clcid=0x409)和[苹果应用商店](http://go.microsoft.com/fwlink/?LinkID=525996&amp;clcid=0x409)下载OME查看器应用程序来查看Android和iOS上的消息。 在 OME 檢視器應用程式中開啟 HTML 附件，然後依照指示開啟加密的郵件。 對其他行動裝置而言，只要郵件用戶端支援表單張貼，您便能夠開啟 HTML 附件。
+是的，您可以透過從 Google Play 商店和 Apple 應用程式存放區下載 OME Viewer 應用程式來查看 Android 和 iOS 上的郵件。 在 OME 檢視器應用程式中開啟 HTML 附件，然後依照指示開啟加密的郵件。 對其他行動裝置而言，只要郵件用戶端支援表單張貼，您便能夠開啟 HTML 附件。
   
  **問：回覆和轉寄郵件皆會加密嗎？**
   
 是的。在整個執行緒期間都會對回應持續加密。
   
- **问：Office 365 邮件加密是否提供本地化？**
+ **問： Office 365 郵件加密是否提供當地語系化？**
   
 內送電子郵件和 HTML 內容均依據寄件者電子郵件設定進行當地語系化。檢視入口網站會依據收件者的瀏覽器設定進行當地語系化。不過，加密郵件的實際內文 (內容) 不會進行當地語系化。
   
- **问：Office 365 邮件加密使用什么加密方法？**
+ **問： Office 365 郵件加密所使用的加密方法為何？**
   
-Office 365 消息加密使用权限管理服务 （RMS） 作为其加密基础结构。 使用的加密方法取決於您在哪裡取得用來加密及解密郵件的 RMS 金鑰。
+Office 365 郵件加密使用 Rights Management Services （RMS）作為加密基礎結構。 使用的加密方法取決於您在哪裡取得用來加密及解密郵件的 RMS 金鑰。
   
-- 如果使用 Microsoft Azure RMS 获取密钥，则使用加密模式 2。 密碼編譯模式 2 是已更新並增強的 AD RMS 密碼編譯實作。 它支援使用 RSA 2048 進行簽章和加密，也支援使用 SHA-256 進行簽章。
+- 如果您使用 Microsoft Azure RMS 取得機碼，則會使用加密模式2。 密碼編譯模式 2 是已更新並增強的 AD RMS 密碼編譯實作。 它支援使用 RSA 2048 進行簽章和加密，也支援使用 SHA-256 進行簽章。
 
 - 如果您使用 Active Directory (AD) RMS 來取得金鑰，則會使用密碼編譯模式 1 或密碼編譯模式 2。使用的方法取決於內部部署 AD RMS 部署。密碼編譯模式 1 是原始的 AD RMS 密碼編譯實作。它支援使用 RSA 1024 進行簽章和加密，也支援使用 SHA-1 進行簽章。這個模式會繼續受到 RMS 所有目前的版本支援。
 
-有关详细信息，请参阅[AD RMS 加密模式](http://go.microsoft.com/fwlink/p/?LinkId=398616)。
+如需詳細資訊，請參閱[AD RMS 密碼編譯模式](https://go.microsoft.com/fwlink/p/?LinkId=398616)。
   
- **问：为什么某些加密邮件来自Office365@messaging.microsoft.com？**
+ **問：為何某些加密郵件**是來自 Office365@messaging.microsoft.com？
   
 從加密入口網站或透過 OME 檢視器應用程式傳送加密的回覆時，傳送方的電子郵件地址會設為 Office365@messaging.microsoft.com，因為加密的郵件是透過 Microsoft 端點傳送。這有助於避免加密的郵件被標示為垃圾郵件。因為有此標示，加密入口網站中顯示的電子郵件名稱和地址不會變更。此外，此標示只會套用到透過入口網站傳送的郵件，而不會套用到透過任何其他電子郵件用戶端傳送的郵件。
   
- **问：我是交换托管加密 （EHE） 订阅者。在哪里可以了解有关升级到 Office 365 邮件加密的更多信息？**
+ **問：我是 Exchange Hosted Encryption （EHE）訂閱者。在哪裡可以深入瞭解 Office 365 郵件加密的升級？**
   
-所有 EHE 客戶都已升級至 Office 365 郵件加密。 有关详细信息，请访问 Exchange[托管加密升级中心](http://go.microsoft.com/fwlink/p/?LinkID=511077)。
+所有 EHE 客戶都已升級至 Office 365 郵件加密。 如需詳細資訊，請造訪[Exchange Hosted Encryption Upgrade Center](https://go.microsoft.com/fwlink/p/?LinkID=511077)。
   
- **问：我是否需要打开组织防火墙中的任何 URL、IP 地址或端口来支持 Office 365 邮件加密？**
+ **問：我是否需要開啟組織防火牆中的任何 URLs、IP 位址或埠，以支援 Office 365 郵件加密？**
   
-是。 您必须将联机 Exchange 的 URL 添加到组织的允许列表中，以便对由 Office 365 邮件加密加密的邮件启用身份验证。 如需 Exchange Online URL 的清單，請參閱 [Office 365 URLs and IP Address Ranges](https://support.office.com/article/f57e35b7-0a45-42f0-855e-11aa5e7f13fd.aspx)。
+是。 您必須將 Exchange Online URLs 新增至您組織的允許清單，才能對 Office 365 郵件加密所加密的郵件啟用驗證。 如需 Exchange Online URLs 的清單，請參閱[Microsoft 365 URLs 和 IP 位址範圍](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)。
   
- **問：我可以將 Office 365 加密郵件傳送給多少位收件者？**
+ **問：我可以傳送 Microsoft 365 加密郵件的收件者人數為何？**
   
-收件人限制为每封邮件 500 个收件人，或者，在通讯组列表扩展后合并时，邮件**的"收件人"** 字段中有 11，980 个字符，以先到者为准。
+收件者限制是每封郵件500位收件者，或是在通訊群組清單展開後加上11980字元（以第一次**為**准）。
   
  **問：是否可以撤銷傳送給特定收件者的郵件？**
   
-否。 发送邮件后，您无法撤消发送给特定人员的邮件。
+否。 郵件傳送後，您無法將郵件撤銷給特定的使用者。
   
  **問：是否可以檢視已接收和讀取的加密郵件的報表？**
   
-没有显示是否已查看加密邮件的报表，但可以使用 Office 365 报告来确定匹配特定邮件流规则（也称为传输规则）的邮件数。
+沒有顯示已查看加密郵件的報表，但有可用的 Microsoft 365 報告，您可以利用這些報告來判斷符合特定郵件流程規則（也稱為傳輸規則）的郵件數目（例如，也稱為傳輸規則）。
   
  **問：Microsoft 會如何利用透過 OME 入口網站和 OME 檢視器應用程式所取得我的資訊？**
   
-[Office 365 消息加密门户隐私声明](https://privacy.microsoft.com/en-US/privacystatement)提供有关 Microsoft 执行和不做您的私人信息的详细信息。
- 
+[Office 365 郵件加密入口網站隱私權聲明](https://privacy.microsoft.com/privacystatement)提供 Microsoft 對您私人資訊的處理方式及不會有什麼作用的詳細資訊。

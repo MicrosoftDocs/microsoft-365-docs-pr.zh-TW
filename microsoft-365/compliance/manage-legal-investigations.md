@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: 使用 Microsoft 365 規範中心的 eDiscovery 案例來管理組織的法律調查。 如果您有 E5 訂閱，您可以使用「高級 eDiscovery」的文字分析、機器學習和預測編碼功能，進一步分析案例資料。
-ms.openlocfilehash: 0db2187259c0c828c492f56698963bf9f61c9c18
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: 41eaa4ca4428c21b905d63365a9b3af7da1df9aa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097191"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635903"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>管理 Microsoft 365 的法律調查
 
 組織會有許多理由，以回應與組織中特定主管或其他員工相關的法律案例。 這可能會讓您快速尋找及保留電子郵件、檔、立即訊息交談，以及人員在日常工作工作中所使用之其他內容位置中的進一步調查特定資訊。 您可以使用安全性與合規性中心的 eDiscovery 案例工具來執行這些及許多其他類似的活動。
   
-**想知道 Microsoft 如何管理其 eDiscovery 調查？** 以下是您可以下載的[技術白皮書](https://go.microsoft.com/fwlink/?linkid=852161)，說明如何使用相同的 Office 365 搜尋和調查工具來管理我們的內部 eDiscovery 工作流程。
+**想知道 Microsoft 如何管理其 eDiscovery 調查？** 以下是您可以下載的[技術白皮書](https://go.microsoft.com/fwlink/?linkid=852161)，說明如何使用相同的搜尋和調查工具來管理我們的內部 eDiscovery 工作流程。
    
 ## <a name="manage-legal-investigations-with-ediscovery-cases"></a>管理 eDiscovery 案例的法律調查
 

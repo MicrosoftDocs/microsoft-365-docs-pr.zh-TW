@@ -1,5 +1,5 @@
 ---
-title: 匯出 eDiscovery 搜尋結果從 Office 365 時，增加的下載速度
+title: 提高匯出 eDiscovery 搜尋結果時的下載速度
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,27 +13,27 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
-description: 了解如何設定 Windows 登錄，以增加資料輸送量，從安全性 & 合規性中心] 及 [進階電子文件探索中 Office 365 下載搜尋結果，並搜尋資料時。
-ms.openlocfilehash: bb4ba0e788463e68588989c7c2c0c721dd15e018
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 瞭解如何設定 Windows 登錄，以在從安全性 & 規範中心和高級電子檔探索中下載搜尋結果和搜尋資料時，增加資料輸送量。
+ms.openlocfilehash: b19de5728917e6eb6054e6a6be76d9b678aa1430
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597920"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637915"
 ---
-# <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>匯出 eDiscovery 搜尋結果從 Office 365 時，增加的下載速度
+# <a name="increase-the-download-speed-when-exporting-ediscovery-search-results"></a>提高匯出 eDiscovery 搜尋結果時的下載速度
 
-當您使用 Office 365 電子文件探索匯出工具來下載安全性 & 合規性中心的內容搜尋的結果，或從 Office 365 進階電子文件探索下載資料時，此工具會啟動下載資料至您的本機電腦的並行匯出作業數目。 根據預設，同時進行的作業數目設為 8 的次數中您要用來下載資料之電腦的核心。 例如，如果您有雙核心電腦 （亦即一晶片上的兩個管理中心處理單位），同時進行匯出作業的預設數為 16。 若要增加資料傳輸輸送量並提升並下載程序，您可以藉由使用若要下載搜尋結果的電腦上設定 Windows 登錄設定增加同時進行的作業數目。 為了提升並下載程序，我們建議您以設定為 24 同時進行的作業開始。
+當您使用 eDiscovery 匯出工具在安全性 & 合規性中心下載內容搜尋的結果或從高級 eDiscovery 下載資料時，此工具會啟動特定數目的併發匯出作業，以將資料下載到您的本機電腦。 根據預設，並行作業數目會設定為您要用來下載資料之電腦中的核心數目的8倍。 例如，如果您有一個雙核計算機（即一個晶片上的兩個中央處理單位），則同時匯出作業的預設數目為16。 若要增加資料傳輸輸送量並加速下載程式，您可以在您用來下載搜尋結果的電腦上設定 Windows 登錄設定，以增加並行作業的數目。 若要加速下載程式，建議您從24個同時作業的設定開始。
   
-如果您透過低頻寬網路下載搜尋結果，請增加此設定可能會造成負面影響。 或者，您可以增加到超過 24 同時進行的作業 （同時進行的作業的最大數目為 48） 的高頻寬網路中的設定。 設定此登錄設定之後，您可能必須變更，以找出最佳的同時進行的作業，為您的環境。
+如果您透過低頻寬網路下載搜尋結果，增加此設定可能會造成負面影響。 或者，您也可以將此設定增加至高頻寬網路中超過24個同時作業（同時作業的最大數目為48）。 在您設定此登錄設定之後，您可能需要變更它，以找出您環境的最佳並行作業數目。
   
-## <a name="create-a-registry-setting-to-change-the-number-of-concurrent-operations-when-exporting-data"></a>建立登錄設定來匯出資料時變更的同時進行的作業數目
+## <a name="create-a-registry-setting-to-change-the-number-of-concurrent-operations-when-exporting-data"></a>建立登錄設定，以在匯出資料時變更同時作業的數目
 
-您將搜尋結果下載來自安全 & 與規範中心或進階電子文件中的資料使用的電腦上執行下列程序。
+在電腦上執行下列程式，以從 Security & 合規性中心或從高級 eDiscovery 的資料下載搜尋結果。
   
-1. 如果它已經開啟，請關閉 Office 365 電子文件探索匯出工具。 
+1. 關閉 eDiscovery 匯出工具（若已開啟）。 
     
-2. 將下列文字儲存到視窗登錄檔案中，使用.reg; 檔名尾碼例如，ConcurrentOperations.reg。 
+2. 使用檔案名尾碼註冊，將下列文字儲存至視窗登錄檔;例如，ConcurrentOperations。 
     
     ```text
     Windows Registry Editor Version 5.00
@@ -41,32 +41,32 @@ ms.locfileid: "41597920"
     "DownloadConcurrency"="24"
     ```
 
-    如同先前的說明，我們建議您開始使用 24 同時進行的作業，，，然後變更 [視需要此設定。
+    如先前所述，我們建議您從24個同時進行的作業開始，然後視需要變更此設定。
     
-3. 在 Windows 檔案總管] 中，按一下或按兩下您在上一個步驟中建立的.reg 檔案。
+3. 在 [Windows Explorer] 中，按一下或按兩下您在上一個步驟中建立的 .reg 檔案。
     
-4. 在 [使用者存取控制] 視窗中，按一下 [ **]** 讓登錄編輯程式中進行的變更。 
+4. 在 [使用者存取控制] 視窗中，按一下 **[是]** 讓登錄編輯程式進行變更。 
     
-5. 出現提示時若要繼續，按一下 **[是]**。
+5. 當系統提示您繼續時，請按一下 **[是]**。
     
-    登錄編輯程式中會顯示訊息，說明設定已成功新增至登錄。
+    登錄編輯器會顯示一則訊息，指出已成功將設定新增至註冊表。
     
-6. 您可以重複執行步驟 2-5 若要變更的值為`DownloadConcurrency`登錄設定。 
+6. 您可以重複步驟 2-5，以變更 [登錄] `DownloadConcurrency`設定的值。 
     
     > [!IMPORTANT]
-    > 在您建立或變更之後`DownloadConcurrency`登錄設定，請務必建立新的匯出工作或重新啟動現有匯出作業的搜尋結果或您想要下載的資料。 請參閱如需詳細資訊的[詳細資訊](#more-information)一節。 
+    > 在您建立或變更`DownloadConcurrency`登錄設定之後，請務必建立新的匯出工作或重新開機您要下載之搜尋結果或資料的現有匯出工作。 如需詳細資訊，請參閱[詳細資訊](#more-information)一節。 
   
 ## <a name="more-information"></a>詳細資訊
 
-- 新的登錄機碼會建立第一次執行您在此程序中建立的.reg 檔案。 然後在`DownloadConcurrency`登錄設定編輯的每當您變更，然後重新執行.reg 編輯檔案。 
+- 當您第一次執行您在此程式中建立的 .reg 檔案時，就會建立新的登錄機碼。 `DownloadConcurrency`然後，每當您變更並重新執行 .reg 編輯檔案時，就會編輯登錄設定。 
     
-- Office 365 電子文件探索匯出工具會使用[Azure AzCopy 公用程式](https://go.microsoft.com/fwlink/?linkid=849949)來下載搜尋資料，從安全性 & 合規性中心或進階電子文件。 設定`DownloadConcurrency`登錄設定是類似於執行 AzCopy 公用程式時使用 **/NC**參數。 這樣的登錄設定`"DownloadConcurrency=24"`會有相同效果： 使用的參數值`/NC:24`AzCopy 公用程式。 
+- EDiscovery 匯出工具使用[Azure AzCopy 公用程式](https://go.microsoft.com/fwlink/?linkid=849949)，從安全性 & 規範中心或從高級 eDiscovery 下載搜尋資料。 設定登錄設定與執行 AzCopy 公用程式時使用/NC 參數類似。 **/NC** `DownloadConcurrency` 所以登錄設定的`"DownloadConcurrency=24"`效果與使用 AzCopy 公用程式的參數值`/NC:24`相同。 
     
-- 如果您要停止匯出下載仍在建構中，然後將其重新 （嘗試再次下載搜尋結果），Office 365 電子文件探索匯出工具會嘗試繼續的相同下載。 因此，如果您啟動下載，停止，，然後變更`DownloadConcurrency`登錄設定，下載可能會失敗如果重新啟動 （藉由按一下 [**下載匯出的結果**)。 這是因為匯出工具將會嘗試繼續使用無效，因為您已變更的登錄設定的設定先前下載。
+- 如果您停止目前正在進行的匯出下載，然後重新開機它（嘗試再次下載搜尋結果），eDiscovery 匯出工具會嘗試繼續相同的下載。 因此，如果您開始下載，請停止它，然後變更`DownloadConcurrency`登錄設定，當您重新開機時（按一下 [**下載匯出的結果**]），下載可能會失敗。 這是因為匯出工具會嘗試使用不正確設定來繼續先前的下載，因為您已變更登錄設定。
     
-    因此，當您變更`DownloadConcurrency`登錄設定，請務必重新啟動匯出工作 （按一下 [**重新啟動匯出**) 安全性 & 合規性中心。 然後您可以下載匯出的結果。 如需有關匯出搜尋結果和資料的詳細資訊，請參閱：
+    因此，變更`DownloadConcurrency`登錄設定之後，請務必在安全性 & 規範中心內重新開機匯出工作（按一下 [**重新開機匯出**]）。 然後您可以下載匯出的結果。 如需匯出搜尋結果和資料的詳細資訊，請參閱：
     
   - [匯出內容搜尋結果](export-search-results.md)
     
-  - [在 Office 365 進階電子文件探索中匯出結果](export-results-in-advanced-ediscovery.md)
+  - [在高級電子檔探索中匯出結果](export-results-in-advanced-ediscovery.md)
     

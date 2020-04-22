@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文說明如何在安全性 & 規範中心使用「新增資料調查（預覽）」工具來管理資料外泄事件。
-ms.openlocfilehash: f02d5c42d42f6031202e874497f92fdfbe5d0bcf
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: a544eb1e021faa82d00ac46a7d64a3eb368cc323
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634291"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635933"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>管理 Microsoft 365 中的資料外泄事件
 
@@ -29,14 +29,14 @@ ms.locfileid: "42634291"
 
 ## <a name="scope-of-this-article"></a>本文的範圍
 
-本文提供如何永久刪除 Office 365 信箱中的專案，以供使用者或系統管理員不再存取或復原的指示清單。 
+本文提供如何永久刪除 Microsoft 365 信箱中的專案，以供使用者或系統管理員不再存取或復原的指示清單。 
 
 > [!NOTE]
 > 當您刪除位於 SharePoint 或 OneDrive for Business site 中的專案時，會從您從原始位置刪除這些專案時保留93天。
 
 ## <a name="scenario"></a>案例
 
-您會收到資料外泄事件的通知，其中員工在不知情的情況下，透過電子郵件將高度機密檔與多人共用。 您想要快速評估在組織內部和外部接收此檔的人員。 在您調查事件後，您計畫與其他調查人員分享您的結果，以進行檢查，然後從您的 Office 365 組織中永久移除所濺入的資料。 調查完成後，您想要移除所有的證據。 
+您會收到資料外泄事件的通知，其中員工在不知情的情況下，透過電子郵件將高度機密檔與多人共用。 您想要快速評估在組織內部和外部接收此檔的人員。 在調查事件後，您計畫與其他調查人員分享您的調查結果，然後永久移除組織中溢出的資料。 調查完成後，您想要移除所有的證據。 
 
 > [!IMPORTANT]
 > 雖然您可以永久移除組織內溢出的資料，但不能使用這些功能移除任何溢出于組織外的資料。
@@ -68,7 +68,7 @@ ms.locfileid: "42634291"
 
 1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用屬於「資料調查者」角色群組成員的帳戶，登入 Office 365。
+2. 使用「資料調查員」角色群組成員的帳戶登入。
     
 3. 在 [安全性與合規性中心] 中，按一下 [**資料調查**]。
  

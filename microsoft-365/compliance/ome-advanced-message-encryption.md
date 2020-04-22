@@ -1,5 +1,5 @@
 ---
-title: Office 365 進階郵件加密
+title: 高級郵件加密
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,19 +15,19 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Office 365 中的高級郵件加密可讓系統管理員更進一步使用受保護的郵件，以協助組織滿足其合規性義務。
-ms.openlocfilehash: 3b7f4d595b8c3592530b107dd7f71aeb8d0dc57e
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: 「高級郵件加密」可讓系統管理員更進一步使用受保護的郵件，以協助組織滿足其相容性義務。
+ms.openlocfilehash: 0e28bd283b6a7d1666d5db9b71040d2f377adffe
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106171"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626891"
 ---
-# <a name="office-365-advanced-message-encryption"></a>Office 365 進階郵件加密
+# <a name="advanced-message-encryption"></a>高級郵件加密
 
 Office 365 Advanced Message Encryption 包含在[Microsoft 365 企業版 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、Office 365 E5、Microsoft 365 E5 （非盈利性人員定價）、Office 365 企業版 E5 （非盈利性員工定價）和 Office 365 教育版 A5 中。 如果您的組織中有未包含 Office 365 Advanced Message Encryption 的訂閱，您可以使用 microsoft 365 E5 相容性 SKU 附加元件（適用于 Microsoft 365 E3）進行購買。 microsoft 365 E3 （非盈利性員工定價）或 Office 365 Advanced 合規性 SKU 附加元件（適用于 Microsoft 365 E3）、Microsoft 365 E3 （非盈利性員工定價）、Office 365 SKUs，或 microsoft 365 E5/A5 資訊保護和控管 SKU 附加元件（適用于 Microsoft 365 A3/E3）。
 
-Office 365 中的高級郵件加密可協助客戶滿足法規遵從性義務，需要更多彈性控制外部收件者，以及他們存取加密的電子郵件。 使用 Office 365 中的高級郵件加密，您可以控制在組織外與自動原則共用的敏感電子郵件。 您可以設定這些原則來識別敏感資訊類型，例如 PII、財務或健康情況 IDs，也可以使用關鍵字來增強保護。 設定原則之後，您可以使用自訂的署名電子郵件範本對原則進行配對，然後新增到期日，以對符合原則的電子郵件進行特殊的控制。 此外，系統管理員可以隨時撤銷郵件存取權，透過安全的網頁入口網站進一步控制從外部存取的加密電子郵件。
+進階郵件加密可協助客戶滿足需要對外部收件者更靈活控制，以及其對加密電子郵件存取的合規性義務。 使用 Office 365 中的高級郵件加密，您可以控制在組織外與自動原則共用的敏感電子郵件。 您可以設定這些原則來識別敏感資訊類型，例如 PII、財務或健康情況 IDs，也可以使用關鍵字來增強保護。 設定原則之後，您可以使用自訂的署名電子郵件範本對原則進行配對，然後新增到期日，以對符合原則的電子郵件進行特殊的控制。 此外，系統管理員可以隨時撤銷郵件存取權，透過安全的網頁入口網站進一步控制從外部存取的加密電子郵件。
 
 您只能撤銷及設定傳送給外部收件者之電子郵件的到期日。
 
@@ -45,4 +45,4 @@ Office 365 中的高級郵件加密可協助客戶滿足法規遵從性義務，
 
 [撤銷 Office 365 高級郵件加密所加密的電子郵件](revoke-ome-encrypted-mail.md)。 控制組織外共用的敏感電子郵件，並透過安全的 web 入口網站撤銷加密的電子郵件，增強保護。  
 
-使用 Office 365 Advanced Message Encryption 時，無論您何時套用自訂商標範本，Office 365 都會對符合您套用範本之郵件流程規則的電子郵件套用包裝。 您只能撤銷郵件，並將到期日期套用至使用者透過入口網站取得的郵件。 換句話說，已套用自訂商標範本的電子郵件。 如需詳細資訊和範例，請參閱[確保所有外部收件者都使用 OME 入口網站來讀取加密郵件](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail)的指導方針。
+使用 Office 365 Advanced Message Encryption 時，無論您何時套用自訂商標範本，Microsoft 都會對符合您套用範本之郵件流程規則的電子郵件套用包裝。 您只能撤銷郵件，並將到期日期套用至使用者透過入口網站取得的郵件。 換句話說，已套用自訂商標範本的電子郵件。 如需詳細資訊和範例，請參閱[確保所有外部收件者都使用 OME 入口網站來讀取加密郵件](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail)的指導方針。

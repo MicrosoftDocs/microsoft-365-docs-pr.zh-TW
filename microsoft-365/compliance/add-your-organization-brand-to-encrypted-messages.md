@@ -17,17 +17,17 @@ ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 做為 Office 365 全域系統管理員，您可以將組織的署名套用至組織的加密電子郵件和加密入口網站的內容。
-ms.openlocfilehash: 5a3f5426fecd6ce5df6ace5b0080de33fb50e21f
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: 身為全域系統管理員，您可以將組織的署名套用至組織的加密電子郵件和加密入口網站的內容。
+ms.openlocfilehash: 231d0bd1e49d0529b4dc15ec758ba63fe5f60092
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106015"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632288"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>將貴組織的品牌新增至您的加密郵件
 
-做為 Exchange Online 或 Exchange Online Protection 管理員，您可以套用公司品牌，以自訂群組織的 Office 365 郵件加密電子郵件和加密入口網站內容的外觀。 您可以使用 Get-OMEConfiguration 和 Set-OMEConfiguration Windows PowerShell Cmdlet，針對加密的電子郵件訊息收件者，自訂下列各項流覽體驗：
+做為 Exchange Online 或 Exchange Online Protection 管理員，您可以套用公司品牌，以自訂群組織的 Microsoft 365 的商務訊息加密電子郵件和加密入口網站內容的外觀。 您可以使用 Get-OMEConfiguration 和 Set-OMEConfiguration Windows PowerShell Cmdlet，針對加密的電子郵件訊息收件者，自訂下列各項流覽體驗：
   
 - 包含加密訊息的電子郵件簡介文字
 
@@ -59,7 +59,7 @@ ms.locfileid: "43106015"
 
 ## <a name="work-with-ome-branding-templates"></a>使用 OME 品牌範本
 
-您可以在品牌範本中修改數項功能。 您可以修改預設範本，但不要移除。 如果您有高級郵件加密，您也可以建立、修改及移除自訂範本。 使用 Windows PowerShell 一次可搭配一個署名範本。 您需要具備 Office 365 組織中全域系統管理員許可權的工作或學校帳戶，才可使用這些 Cmdlet。
+您可以在品牌範本中修改數項功能。 您可以修改預設範本，但不要移除。 如果您有高級郵件加密，您也可以建立、修改及移除自訂範本。 使用 Windows PowerShell 一次可搭配一個署名範本。 您需要在組織中具備全域系統管理員許可權的工作或學校帳戶，才可使用這些 Cmdlet。
 
 - [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-omeconfiguration) -修改預設的署名範本或您建立的自訂商標範本。
 - [Set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) -建立新的署名範本，僅限高級郵件加密。
@@ -69,7 +69,7 @@ ms.locfileid: "43106015"
 
 使用 Windows PowerShell 一次修改一個署名範本。 如果您有高級郵件加密，您也可以建立、修改及移除自訂範本。
 
-1. 在您的 Office 365 組織中使用具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
 
 2. 使用[Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration)中所述的 Set-OMEConfiguration 指令程式修改範本，或使用下列圖形和表格以取得指導方針。
 
@@ -94,7 +94,7 @@ ms.locfileid: "43106015"
 
 若要建立新的自訂品牌範本：
 
-1. 在您的 Office 365 組織中使用具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
 
 2. 使用[set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) Cmdlet 來建立新的範本。
 
@@ -112,7 +112,7 @@ ms.locfileid: "43106015"
 
 若要從預設範本移除所有修改（包括品牌自訂專案）等等，請完成下列步驟：
   
-1. 在您的 Office 365 組織中使用具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
 
 2. 使用[Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration)中所述的**Set-OMEConfiguration** Cmdlet。 若要從 DisclaimerText、EmailText 及 PortalText 值中移除組織的署名自訂，請將值設為空字串`""`。 針對所有影像值，例如 [標誌]，將值設`"$null"`為。
 
@@ -133,7 +133,7 @@ ms.locfileid: "43106015"
 
 若要移除自訂商標範本：
   
-1. 在您的 Office 365 組織中使用具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
+1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
 
 2. 使用**Remove-set-omeconfiguration 指令程式**，如下所示：
 
@@ -155,7 +155,7 @@ ms.locfileid: "43106015"
 
 - 如果最終使用者從 Outlook 或網頁版 outlook （先前稱為 Outlook Web App）用戶端手動加密電子郵件
 
-- 如果電子郵件已由 Exchange 郵件流程規則或 Office 365 資料遺失防護原則自動加密
+- 如果電子郵件已由 Exchange 郵件流程規則或資料遺失防護原則自動加密
 
 如需如何建立可套用加密之 Exchange 郵件流程規則的詳細資訊，請參閱[定義郵件流程規則，以在 Office 365 中加密電子郵件訊息](define-mail-flow-rules-to-encrypt-email.md)。
 

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 瞭解當您的 Microsoft 365 訂閱到期、停用或取消時，您的資料會發生什麼情況。
-ms.openlocfilehash: 2a5a9e587b6b00017d3e489d948c9cee3db4777b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cd90b0b5825b2888b1194998c25a2ce9c7c28718
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634871"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707604"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>365 Microsoft 商務版訂閱結束時，我的資料與存取權會發生什麼情況？
 
@@ -220,7 +220,7 @@ ms.locfileid: "43634871"
 若要瞭解如何取消，請參閱[取消您的訂閱](cancel-your-subscription.md)。
   
 > [!IMPORTANT]
-> 如果您想要在一般停用期間刪除訂閱資料，您可以要求快速解除準備。 當您要求快速撤銷時，您的訂閱資料會在取消後的 3 天內刪除。 若要使用加速解除[支援，請致電支援](../../admin/contact-support-for-business-products.md)。
+> 如果您想要在一般停用期間刪除訂閱資料，您可以[關閉您的帳戶](../close-your-account.md)。
 
 > [!NOTE]
 > 此頁面上的資訊受限於[Microsoft 原則免責聲明和變更通知](https://go.microsoft.com/fwlink/p/?LinkId=613651)。 定期回到此網站以檢查任何變更。

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 瞭解如何在 Microsoft 小組中定義資訊障礙的原則。
-ms.openlocfilehash: efce9a1c9827ddc904d6942ff9e1005850acfe8c
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: c7bc7a1f90962910a0626967e4f6dee005695e30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029879"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621369"
 ---
 # <a name="define-information-barrier-policies"></a>定義資訊屏障原則
 
@@ -37,7 +37,7 @@ ms.locfileid: "43029879"
 
 - 在 Azure Active Directory （或 Exchange Online）中定義使用者帳戶屬性。 這些屬性可包含部門、職稱、位置、小組名稱及其他工作設定檔詳細資料。 
 
-- 「區段」是 Office 365 Security & 合規性中心使用選取的**使用者帳戶] 屬性**定義的使用者集合。 （請參閱[支援的屬性清單](information-barriers-attributes.md)）。 
+- 區段是在安全性 & 合規性中心使用選取的**使用者帳戶屬性**定義的使用者集合。 （請參閱[支援的屬性清單](information-barriers-attributes.md)）。 
 
 - 資訊屏障原則決定通訊限制或限制。 當您定義資訊屏障原則時，可以選擇兩種原則：
     - 「封鎖」原則防止一個區段與另一個區段通訊。
@@ -67,12 +67,12 @@ ms.locfileid: "43029879"
 
 - 範圍型目錄搜尋-在您定義組織的第一個資訊障礙原則之前，您必須[在 Microsoft 小組中啟用範圍型目錄搜尋](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search)。 在您設定或定義資訊屏障原則之前，請先等候至少24小時後，再啟用範圍目錄搜尋。
 
-- 審核記錄-為了查詢原則應用程式的狀態，必須開啟審核記錄。 在您開始定義區段或原則之前，我們建議您這麼做。 若要深入瞭解，請參閱[開啟或關閉 Office 365 審核記錄搜尋](turn-audit-log-search-on-or-off.md)。
+- 審核記錄-為了查詢原則應用程式的狀態，必須開啟審核記錄。 在您開始定義區段或原則之前，我們建議您這麼做。 若要深入瞭解，請參閱[開啟或關閉審核記錄搜尋](turn-audit-log-search-on-or-off.md)。
 
 - 無通訊錄原則-在您定義及套用資訊屏障原則之前，請確定沒有任何 Exchange 通訊錄原則存在到位。 資訊障礙是以通訊錄原則為基礎，但這兩種原則不相容。 如果您有這類原則，請務必先[移除您的通訊錄原則](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)。 一旦資訊障礙原則已啟用，且已啟用階層式通訊錄，所有***未包含***在資訊屏障區段中的使用者，都會在 Exchange online 中看到[階層式通訊錄](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books)。
 
 - 目前 PowerShell 中，資訊屏障原則是在 Office 365 安全性 & 規範中心使用 PowerShell Cmdlet 來定義及管理。 雖然本文提供了數個範例，但您需要熟悉 PowerShell Cmdlet 及參數。 您也會需要 AzureRM 模組。
-    - [連接到 Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+    - [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [安裝 Azure PowerShell 模組](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - 管理員對 Microsoft 小組資訊障礙的同意-當您的原則就緒時，資訊障礙可以從聊天會話中移除人員。 這可協助確保您的組織符合原則及規定。 使用下列程式可讓資訊障礙原則在 Microsoft 小組中如預期的方式運作。 
@@ -243,7 +243,7 @@ ms.locfileid: "43029879"
 
     請視需要針對每個原則重複此步驟。
 
-3. 當您完成將資訊屏障原則設定為 [使用中狀態] 時，請使用 Office 365 安全性 & 規範中心中的**InformationBarrierPoliciesApplication** Cmdlet。
+3. 當您完成將資訊屏障原則設定為 [使用中狀態] 時，請使用安全性 & 規範中心中的**Start-InformationBarrierPoliciesApplication** Cmdlet。
 
     語法：`Start-InformationBarrierPoliciesApplication`
 

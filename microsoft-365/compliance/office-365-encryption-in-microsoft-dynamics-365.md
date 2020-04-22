@@ -1,5 +1,7 @@
 ---
-title: 微软动态 365 中的 Office 365 加密
+title: Microsoft Dynamics 365 中的加密
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -10,24 +12,24 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: 摘要：了解微软动态365中的加密。
-ms.openlocfilehash: 7c2a352dd712b0db9d2ad623745f854b863dd2e0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 摘要：瞭解 Microsoft Dynamics 365 中的加密。
+ms.openlocfilehash: 7d5116d957f8d9e51309a9605bb82c4ffd76386e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077859"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637237"
 ---
-# <a name="office-365-encryption-in-microsoft-dynamics-365"></a>微软动态 365 中的 Office 365 加密
+# <a name="encryption-in-microsoft-dynamics-365"></a>Microsoft Dynamics 365 中的加密
 
-Microsoft 使用加密技术在 Microsoft 数据库中静态时保护 Dynamics 365 中的客户数据，并在用户设备和数据中心之间传输。 客户和 Microsoft 数据中心之间建立的连接经过加密，所有公共终结点都使用行业标准 TLS 进行保护。 TLS 有效地建立了安全增强的浏览器到服务器连接，以帮助确保桌面和数据中心之间的数据机密性和完整性。 激活数据加密后，无法将其关闭。 有关详细信息，请参阅[字段级数据加密](https://msdn.microsoft.com/en-us/library/dn481562.aspx)。
+Microsoft 使用加密技術來保護 Dynamics 365 中的客戶資料，同時也是在 Microsoft 資料庫中，而且在使用者裝置與我們的資料中心之間的傳輸。 會加密客戶與 Microsoft 資料中心之間建立的連線，並使用業界標準 TLS 來保護所有公用端點。 TLS 可有效地建立安全性增強的瀏覽器對伺服器連線，以協助確保桌面和資料中心之間的資料機密性及完整性。 啟用資料加密後，就無法將其關閉。 如需詳細資訊，請參閱[欄位層級資料加密](https://msdn.microsoft.com/library/dn481562.aspx)。
 
-Dynamics 365 对一组包含敏感信息（如用户名和电子邮件密码）的默认实体属性使用标准的 Microsoft SQL Server 单元级加密。 此功能可帮助组织满足与 FIPS 140-2 相关的合规性要求。 字段级数据加密在利用[Microsoft Dynamics CRM 电子邮件路由器](https://technet.microsoft.com/en-us/library/hh699800.aspx)的方案中尤其重要，该路由器必须存储用户名和密码，才能在 Dynamics 365 实例和电子邮件服务之间实现集成。 
+Dynamics 365 針對包含機密資訊的預設實體屬性集（如使用者名稱和電子郵件密碼），使用標準 Microsoft SQL Server 儲存格層級加密。 這項功能可協助組織滿足與 FIPS 140-2 相關的相容性需求。 在利用[Microsoft DYNAMICS CRM 電子郵件路由器](https://technet.microsoft.com/library/hh699800.aspx)的情況下，欄位層級的資料加密特別重要，它必須儲存使用者名稱和密碼，以啟用 Dynamics 365 實例和電子郵件服務之間的整合。 
 
-Dynamics 365 的所有实例都使用[Microsoft SQL Server 透明数据加密](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)（TDE） 在写入磁盘（静态）时对数据执行实时加密。 TDE 加密 SQL 服务器、Azure SQL 数据库和 Azure SQL 数据仓库数据文件。 默认情况下，Microsoft 会存储和管理 Dynamics 365 实例的数据库加密密钥。 （Dynamics 365 用于财务的密钥由 .NET 框架数据保护 API 生成。 
+所有 Dynamics 365 實例都使用[MICROSOFT SQL Server 透明資料加密](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)（TDE），在寫入磁片（靜態）時執行資料的即時加密。 TDE 會加密 SQL Server、Azure SQL Database 和 Azure SQL 資料倉儲資料檔案。 根據預設，Microsoft 會儲存和管理 Dynamics 365 實例的資料庫加密金鑰。 （Dynamics 365 用於財務的按鍵是由 .NET Framework Data Protection API 產生。） 
 
-Dynamics 365 管理中心中的管理密钥功能使管理员能够自行管理与 Dynamics 365 实例关联的数据库加密密钥。 （自管数据库加密密钥仅在 Microsoft Dynamics 365 的 2017 年 1 月更新中可用，可能无法用于更高版本。 有关详细信息，请参阅管理[Dynamics 365（联机）实例的加密密钥。](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-encryption-keys-instance)密钥管理功能同时支持 PFX 和 BYOK 加密密钥文件，例如存储在 HSM 中的文件。 （有关通过 Internet 生成和传输受 HSM 保护的密钥的详细信息，请参阅[如何为 Azure 密钥保管库生成和传输受 HSM 保护的密钥。](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys) 
+Dynamics 365 Administration Center 中的管理機碼功能可讓系統管理員自行管理與 Dynamics 365 實例相關聯的資料庫加密金鑰。 （自我管理的資料庫加密金鑰只適用于 Microsoft Dynamics 365 的2017年1月更新，而且可能無法供後續版本使用。 如需詳細資訊，請參閱[管理 Dynamics 365 （online）實例的加密金鑰](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-encryption-keys-instance)。金鑰管理功能支援 PFX 和 BYOK 加密金鑰檔案，例如儲存在 HSM 中的金鑰。 （如需在網際網路上產生及轉移受 HSM 保護的金鑰的詳細資訊，請參閱 how [to 針對 Azure Key Vault 產生及傳送受保護性保護的](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys)金鑰。） 
 
-要使用上载加密密钥选项，您需要公共加密密钥和私有加密密钥。
+若要使用 [上傳加密金鑰] 選項，您需要使用 public 和私用加密金鑰。
 
-密钥管理功能通过使用 Azure 密钥保管库安全地存储加密密钥，从而从加密密钥管理中排除了复杂性。 Azure 密钥保管库有助于保护云应用程序和服务使用的加密密钥和机密。 密钥管理功能不要求您具有 Azure 密钥保管库订阅，在大多数情况下，无需访问保管库中用于 Dynamics 365 的加密密钥。
+使用 Azure 金鑰保存庫安全地儲存加密金鑰時，金鑰管理功能會使加密金鑰管理的複雜性變得很複雜。 Azure 金鑰 Vault 可協助保護 cloud 應用程式和服務所使用的加密金鑰和機密。 「金鑰管理」功能不需要您有 Azure 金鑰 Vault 訂閱，但在大多數情況下，您不需要存取用於 Vault 中 Dynamics 365 的加密金鑰。

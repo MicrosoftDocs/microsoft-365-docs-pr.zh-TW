@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 Advanced eDiscovery 分析案例資料
+title: 使用高級電子檔探索分析案例資料
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
-description: '深入瞭解分析程式，可讓您在 Office 365 Advanced eDiscovery 中設定參數、執行選項及查看結果。 '
-ms.openlocfilehash: 31745651ddbebbfc5e9670a5a906d82cf493aea4
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+description: '深入瞭解分析程式，可讓您在 [高級 eDiscovery] 中設定參數、執行選項及查看結果。 '
+ms.openlocfilehash: 5acd9071477856aa81774efe48d3290c92eb4599
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42556801"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637057"
 ---
 # <a name="analyze-case-data-with-advanced-ediscovery-classic"></a>使用高級 eDiscovery （經典）分析案例資料
 

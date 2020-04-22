@@ -13,20 +13,20 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理員可以設定原生連接器，將 Facebook 商務頁面匯入和封存至 Microsoft 365。 在將資料匯入 Microsoft 365 之後，您可以使用合規性功能（例如法律封存、內容搜尋及保留原則）來管理組織 Facebook 資料的控管。
-ms.openlocfilehash: 48747dade98701303c4ca6a8c00192ec7faff34a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 10444d8a2c83fd89eaba927b422c8c89466d05cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635021"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636141"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>部署連接器以封存 Facebook 商務頁面資料
 
-本文包含的逐步程式可讓您部署使用 Microsoft 365 匯入服務的連接器，將資料從 Facebook 商務版頁面匯入至 Microsoft 365。 如需此程式的高層次概述，以及部署 Facebook 連接器所需的必要條件清單，請參閱[Set up a connector to Archive facebook data](archive-facebook-data-with-sample-connector.md)。 
+本文包含的逐步程式可讓您部署使用 Office 365 Import 服務的連接器，將資料從 Facebook 商務版頁面匯入 Microsoft 365。 如需此程式的高層次概述，以及部署 Facebook 連接器所需的必要條件清單，請參閱[Set up a connector to Archive facebook data](archive-facebook-data-with-sample-connector.md)。 
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步驟1：在 Azure Active Directory 中建立應用程式
 
-1. 移至<https://portal.azure.com>並使用 Office 365 全域管理員帳戶的認證登入。
+1. 移至<https://portal.azure.com>並使用全域系統管理員帳戶的認證登入。
 
     ![在 AAD 中建立應用程式](../media/FBCimage1.png)
 

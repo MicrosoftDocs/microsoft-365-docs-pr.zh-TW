@@ -1,5 +1,7 @@
 ---
-title: 与合作伙伴合作，在 Office 365 中存档第三方数据
+title: 與合作夥伴配合來封存第三方資料
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -9,69 +11,69 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 您的组织可以与 Microsoft 合作伙伴合作，设置自定义连接器，以便从数据源（如 Salesforce Chatter、Yahoo Messenger 或 Yammer）导入第三方数据。 这使您可以在 Office 365 中存档来自第三方数据源的数据，以便您可以使用 Office 365 合规性功能（如法律保留、内容搜索和保留策略）来管理组织第三方数据的治理。
-ms.openlocfilehash: a22b4226efb582969072bbd92149080cca9b749c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 您的組織可以與 Microsoft 合作夥伴合作，設定自訂連接器，以從資料來源（例如 Salesforce 交談、Yahoo Messenger 或 Yammer）匯入協力廠商資料。 這可讓您封存協力廠商資料來源中的資料，如此您就可以使用 Microsoft 365 規範功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料的管理。
+ms.openlocfilehash: ee321f14f0fc4ac61781892d8fc3b56265b0d223
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077633"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626239"
 ---
-# <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>与合作伙伴合作，在 Office 365 中存档第三方数据
+# <a name="work-with-a-partner-to-archive-third-party-data"></a>與合作夥伴配合來封存第三方資料
 
-您可以与 Microsoft 合作伙伴合作，将数据从第三方数据源导入 Office 365 并将其存档。 合作伙伴可以为您提供一个自定义连接器，该连接器配置为从第三方数据源中提取项目（定期），然后将这些项目导入 Office 365。 合作伙伴连接器将项目的内容从数据源转换为电子邮件格式，然后将项目存储在 Office 365 中的邮箱中。 导入第三方数据后，您可以将 Office 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核和 Office 365 保留策略）应用于此数据。
+您可以與 Microsoft 合作夥伴合作，匯入協力廠商資料來源中的資料，並將其封存至 Microsoft 365。 協力廠商可為您提供自訂連接器，以設定為從協力廠商資料來源提取專案（定期），然後匯入這些專案。 夥伴連接器會將專案的內容從資料來源轉換成電子郵件訊息格式，然後將專案儲存在信箱中。 匯入協力廠商資料後，您可以將 Microsoft 365 規範功能（例如訴訟暫止、內容搜尋、In-Place 封存、審核和 Microsoft 365 保留原則）套用至此資料。
   
-以下是与 Microsoft 合作伙伴合作将第三方数据导入 Office 365 的过程和必要步骤的概述。
+以下是與 Microsoft 合作夥伴合作以匯入協力廠商資料所需的程式和步驟。
 
 [Step 1: Find a third-party data partner](#step-1-find-a-third-party-data-partner)
 
-[Step 2: Create and configure a third-party data mailbox in Office 365](#step-2-create-and-configure-a-third-party-data-mailbox-in-office-365)
+[步驟2：建立並設定協力廠商資料信箱](#step-2-create-and-configure-a-third-party-data-mailbox-in-office-365)
 
 [Step 3: Configure user mailboxes for third-party data](#step-3-configure-user-mailboxes-for-third-party-data)
 
 [步驟 4：提供資訊給合作夥伴](#step-4-provide-your-partner-with-information)
 
-[步骤 5：在 Azure 活动目录中注册第三方数据连接器](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
+[步驟5：在 Azure Active Directory 中註冊協力廠商資料連線器](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
 
 ## <a name="how-the-third-party-data-import-process-works"></a>協力廠商資料匯入程序的運作方式
 
-下图和说明说明了第三方数据导入过程在与合作伙伴合作时的工作原理。
+下列圖例和描述說明協力廠商資料匯入程式在使用合作夥伴時的運作方式。
   
-![協力廠商資料匯入程序的運作方式](media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
+![協力廠商資料匯入程序的運作方式](../media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
   
-1. 客户与其选择的合作伙伴合作，配置一个连接器，该连接器将从第三方数据源中提取项目，然后将这些项目导入 Office 365。
+1. 客戶可以使用其選擇的合作夥伴，設定將從協力廠商資料來源提取專案的連接器，然後將這些專案匯入至 Microsoft 365。
     
-2. 合作伙伴连接器通过第三方 API（按计划或按配置）连接到第三方数据源，并从数据源中提取项目。 協力廠商連接器會將項目的內容轉換為電子郵件訊息格式。 有关消息格式架构的说明，请参阅[详细信息](#more-information)部分。 
+2. 夥伴連接器會透過協力廠商 API （根據排程或設定的基礎）連線至協力廠商資料來源，並從資料來源提取專案。 協力廠商連接器會將項目的內容轉換為電子郵件訊息格式。 請參閱[More information](#more-information)一節以取得郵件格式架構的描述。 
     
-3. 合作伙伴连接器通过已知终结点使用 Exchange Web 服务 （EWS） 连接到 Office 365 中的 Azure 服务。
+3. 夥伴連接器會透過已知端點透過 Exchange Web 服務（EWS），連接至 Microsoft 365 中的 Azure 服務。
     
 4. 項目是匯入至特定使用者的信箱或「全部擷取」協力廠商資料信箱。項目匯入至特定使用者信箱還是協力廠商資料信箱，是根據下列準則：
     
-    a. **具有对应于 Office 365 用户帐户的用户 ID 的项目：** 如果合作伙伴连接器可以将第三方数据源中项的用户 ID 映射到 Office 365 中的特定用户 ID，则该项目将复制到用户的"可恢复项目"文件夹中**的"清除"** 文件夹。 使用者無法存取 [清除] 資料夾中的項目。 但是，您可以使用 Office 365 电子数据展示工具在"清除"文件夹中搜索项目。
+    a. **具有對應至使用者帳戶之使用者識別碼的專案：** 如果夥伴連接器可將協力廠商資料來源中專案的使用者識別碼對應至 Office 365 中的特定使用者識別碼，該專案會複製到使用者的 [可復原的專案] 資料夾中的 [**清除**] 資料夾。 使用者無法存取 [清除] 資料夾中的項目。 不過，您可以使用 eDiscovery 工具來搜尋 [清除] 資料夾中的專案。
     
-    b. **没有与 Office 365 用户帐户对应的用户 ID 的项目：** 如果合作伙伴连接器无法将项目的用户 ID 映射到 Office 365 中的特定用户 ID，则该项目将复制到第三方数据邮箱的**收件箱**文件夹。 將項目匯入至收件匣可讓您或組織中的某個人登入協力廠商信箱來檢視和管理這些項目，並查看是否需要在協力廠商連接器組態中進行任何調整。
+    b. **沒有對應至使用者帳戶的使用者識別碼的專案：** 如果 partner connector 無法將專案的使用者識別碼對應至特定的使用者識別碼，該專案會複製到協力廠商資料信箱的 [**收件**匣] 資料夾。 將項目匯入至收件匣可讓您或組織中的某個人登入協力廠商信箱來檢視和管理這些項目，並查看是否需要在協力廠商連接器組態中進行任何調整。
  
 ## <a name="step-1-find-a-third-party-data-partner"></a>步驟 1：尋找協力廠商資料合作夥伴
 
-在 Office 365 中存档第三方数据的一个关键组件是查找并与其合作的 Microsoft 合作伙伴，该合作伙伴专门捕获来自第三方数据源的数据并将其导入 Office 365。 导入数据后，可以将其与组织的其他 Microsoft 数据一起存档和保存，例如来自 Exchange 的电子邮件和来自 SharePoint 和 OneDrive 的业务文档。 合作伙伴创建一个连接器，从组织的第三方数据源（如黑莓、Facebook、Google+、汤森路透、Twitter 和 YouTube）中提取数据，并将这些数据传递到 Office 365 API，该 API 将项目导入到 Exchange 邮箱（作为电子邮件。 
+在 Microsoft 365 中封存協力廠商資料的主要元件，是尋找和使用專用於從協力廠商資料來源捕獲資料，並將資料匯入 Office 365 的 Microsoft 合作夥伴。 在匯入資料之後，可以將其封存及保留，以及組織的其他 Microsoft 資料，例如來自 Exchange 的電子郵件，以及來自 SharePoint 和 OneDrive 商務的檔。 合作夥伴會建立從您組織的協力廠商資料來源（例如 BlackBerry、Facebook、Google +、Thomson Reuters、Twitter 及 YouTube）提取資料的連接器，並將該資料傳遞到以電子郵件形式將專案匯入 Exchange 信箱的 Office 365 API。 
   
-以下部分列出了参与 Office 365 中存档第三方数据的计划的 Microsoft 合作伙伴（以及他们支持的第三方数据源）。
+下列各節列出參與程式以在 Office 365 中封存協力廠商資料的 Microsoft 合作夥伴（和其所支援的協力廠商資料來源）。
 
 [17a-4 LLC](#17a-4-llc)
   
-[存档社交](#archivesocial)
+[ArchiveSocial](#archivesocial)
   
-[格洛巴内](#globanet)
+[Globanet](#globanet)
   
 [OpenText](#opentext)
   
-[斯马什](#smarsh)
+[Smarsh](#smarsh)
 
-[韦尔巴](#verba)
+[Verba](#verba)
   
 ### <a name="17a-4-llc"></a>17a-4 LLC
 
-[17a-4 LLC](https://www.17a-4.com)支持以下第三方数据源：
+[17A-4 LLC](https://www.17a-4.com)支援下列協力廠商資料來源：
   
 - BlackBerry
     
@@ -79,13 +81,13 @@ ms.locfileid: "37077633"
     
 - Cisco Jabber
     
-- 事实集
+- FactSet
     
-- 嘻哈聊天
+- HipChat
     
-- 投资边缘
+- InvestEdge
     
-- 现场人员
+- LivePerson
     
 - MessageLabs 資料流
     
@@ -97,7 +99,7 @@ ms.locfileid: "37077633"
     
 - Microsoft SharePoint
     
-- 心对齐
+- MindAlign
     
 - Sitrion One (Newsgator)
     
@@ -107,35 +109,35 @@ ms.locfileid: "37077633"
     
 - SQL 資料庫
     
-- 斯夸克
+- Squawker
     
 - Thomson Reuters Eikon Messenger
   
 
   
-### <a name="archivesocial"></a>存档社交
+### <a name="archivesocial"></a>ArchiveSocial
 
-[存档社交](https://www.archivesocial.com)支持以下第三方数据源： 
+[ArchiveSocial](https://www.archivesocial.com)支援下列協力廠商資料來源： 
   
 - Facebook
     
 - Flickr
     
-- 因斯塔格拉姆
+- Instagram
     
 - LinkedIn
     
-- 兴趣
+- Pinterest
     
 - Twitter
     
-- Youtube
+- YouTube
     
-- 维梅奥
+- Vimeo
   
-### <a name="globanet"></a>格洛巴内
+### <a name="globanet"></a>Globanet
 
-[Globanet](https://www.globanet.com)支持以下第三方数据源： 
+[Globanet](https://www.globanet.com)支援下列協力廠商資料來源： 
   
 - 含樞紐分析用戶端的 AOL 
     
@@ -155,27 +157,27 @@ ms.locfileid: "37077633"
     
 - CipherCloud for Salesforce Chatter
     
-- 思科&amp;IM 状态服务器（v10、v10.5.1 SU1、v11.0、v11.5 SU2）
+- Cisco IM &amp;顯示伺服器（v10，v v10.5.1 SU1，v 11.0，v 11.5 SU2）
 
-- 思科 Webex 团队
+- Cisco Webex 小組
 
-- Citrix&amp;工作区共享文件
+- Citrix 工作&amp;區 ShareFile
 
-- 人群通
+- CrowdCompass
 
-- 自定义分隔的文本文件
+- 自訂分隔的文字檔
     
 - 自訂 XML 檔案
     
-- 脸谱（页面）
+- Facebook （頁面）
     
-- 事实集
+- Factset
     
 - FXConnect
     
 - ICE Chat/YellowJacket
     
-- 摇摆
+- 搖擺
     
 - Macgregor XIP
 
@@ -199,7 +201,7 @@ ms.locfileid: "37077633"
     
 - Slack Enterprise Grid
     
-- 交响乐
+- 交響樂
     
 - Thomson Reuters Eikon
     
@@ -211,11 +213,11 @@ ms.locfileid: "37077633"
     
 - UBS Chat
     
-- Youtube
+- YouTube
   
 ### <a name="opentext"></a>OpenText
 
-[OpenText](https://www.opentext.com/what-we-do/products/opentext-product-offerings-catalog/rebranded-products/daegis)支持以下第三方数据源： 
+[OpenText](https://www.opentext.com/what-we-do/products/opentext-product-offerings-catalog/rebranded-products/daegis)支援下列協力廠商資料來源： 
   
 - Axs Encrypted
     
@@ -231,9 +233,9 @@ ms.locfileid: "37077633"
     
 - Thomson Reuters
   
-### <a name="smarsh"></a>斯马什
+### <a name="smarsh"></a>Smarsh
 
-[Smarsh](https://www.smarsh.com)支持以下第三方数据源： 
+[Smarsh](https://www.smarsh.com)支援下列協力廠商資料來源： 
   
 - 目的
     
@@ -261,15 +263,15 @@ ms.locfileid: "37077633"
     
 - Bloomberg 郵件
     
-- 细胞信托
+- CellTrust
     
 - Chat Import
     
 - Chat Real Time Logging and Policy
     
-- 颤 振
+- 顫 振
     
-- 思科&amp;IM 状态服务器（v9.0.1、v9.1、v9.1.1 SU1、v10、v10.5.1 SU1）
+- Cisco IM &amp;顯示伺服器（v 9.0.1、v 9.1、v 9.1.1 SU1、v10、v v10.5.1 SU1）
     
 - Cisco Unified Presence Server (v8.6.3、v8.6.4、v8.6.5)
     
@@ -281,19 +283,19 @@ ms.locfileid: "37077633"
     
 - Facebook
     
-- 事实集
+- FactSet
     
 - FastTrack
     
-- 努格泰拉
+- Gnutella
     
-- 谷歌+
+- Google +
     
-- 转到MyPC
+- GoToMyPC
     
-- 霍普斯特
+- Hopster
     
-- 胡伯康奈斯
+- HubConnex
     
 - IBM Connections (v3.0.1、v4.0、v4.5、v4.5 CR3、v5)
     
@@ -313,7 +315,7 @@ ms.locfileid: "37077633"
     
 - IBM SameTime Meeting 8.5.2 IFR1
     
-- ICE/黄色夹克
+- 冰/YellowJacket
     
 - IM Import
     
@@ -325,7 +327,7 @@ ms.locfileid: "37077633"
     
 - Irc
     
-- 摇摆
+- 搖擺
     
 - Jive 6 Real Time Logging (v6、v7)
     
@@ -347,7 +349,7 @@ ms.locfileid: "37077633"
     
 - Microsoft UC (Unified Communications)
     
-- 心对齐
+- MindAlign
     
 - Mobile Guard
     
@@ -355,13 +357,13 @@ ms.locfileid: "37077633"
     
 - My Space
     
-- 近地天体网络
+- NEONetwork
     
 - Office 365 Lync Dedicated
     
 - Office 365 Shared IM
     
-- 兴趣
+- Pinterest
     
 - 樞紐
     
@@ -369,9 +371,9 @@ ms.locfileid: "37077633"
     
 - 商務用 Skype 2015
     
-- 软埃瑟
+- SoftEther
     
-- 交响乐
+- 交響樂
     
 - Thomson Reuters Eikon
     
@@ -383,20 +385,20 @@ ms.locfileid: "37077633"
     
 - Twitter
     
-- 温MX
+- WinMX
     
-- 温尼
+- Winny
     
 - 雅虎
     
 - Yammer
     
-- Youtube
+- YouTube
     
 
-### <a name="verba"></a>韦尔巴
+### <a name="verba"></a>Verba
 
-[Verba](https://www.verba.com)支持以下第三方数据源： 
+[Verba](https://www.verba.com)支援下列協力廠商資料來源： 
   
 - Avaya Aura Video
     
@@ -418,9 +420,9 @@ ms.locfileid: "37077633"
     
 - Cisco UC Voice
     
-- 思科 UCCX/UCCE 视频
+- Cisco UCCX/UCCE 影片
     
-- 思科 UCCX/UCCE 语音
+- Cisco UCCX/UCCE 語音
     
 - ESChat Radio
     
@@ -464,106 +466,109 @@ ms.locfileid: "37077633"
   
 ## <a name="step-2-create-and-configure-a-third-party-data-mailbox-in-office-365"></a>步驟 2：在 Office 365 中建立及設定協力廠商資料信箱
 
-以下是创建和配置用于将数据导入 Office 365 的第三方数据邮箱的步骤。 如前所述，如果合作伙伴连接器无法将该项目的用户 ID 映射到 Office 365 用户帐户，则项目将导入此邮箱。
+以下是建立及設定協力廠商資料信箱以將資料匯入 Office 365 的步驟。 如先前所述，如果夥伴連接器無法將專案的使用者識別碼對應至使用者帳戶，便會將專案匯入此信箱。
   
- **在 Microsoft 365 管理中心完成这些任务**
+ **在 Microsoft 365 系統管理中心完成這些工作**
   
-1. 在 Office 365 中创建用户帐户，并为其分配 Exchange 在线计划 2 许可证;请参阅[将用户添加到 Office 365](https://go.microsoft.com/fwlink/p/?LinkId=692098)。 需要计划 2 许可证才能将邮箱置于诉讼保留状态或启用具有无限存储配额的存档邮箱。
+1. 建立使用者帳戶並指派 Exchange Online Plan 2 授權;請參閱[將使用者新增至 Office 365](https://go.microsoft.com/fwlink/p/?LinkId=692098)。 若要將信箱設為訴訟暫止或啟用具有無限儲存配額的封存信箱，則需要 Plan 2 授權。
     
-2. 将第三方数据邮箱的用户帐户添加到 Office 365 中的**Exchange 管理员**管理员角色;请参阅[在 Office 365 中分配管理员角色。](https://go.microsoft.com/fwlink/p/?LinkId=532393)
+2. 將協力廠商資料信箱的使用者帳戶新增至 Office 365 中的**Exchange 管理員系統管理員**角色。請參閱[在 Office 365 中指派系統管理員角色](https://go.microsoft.com/fwlink/p/?LinkId=532393)。
     
     > [!TIP]
     > 請寫下此使用者帳戶的認證。 您需要將它們提供給您的合作夥伴 (如步驟 4 中所述)。 
   
- **在 Exchange 管理中心完成这些任务**
+ **在 Exchange 系統管理中心完成這些工作**
   
-1. 从组织中的通讯簿和其他地址列表中隐藏第三方数据邮箱;请参阅[管理用户邮箱](https://go.microsoft.com/fwlink/p/?LinkId=616058)。 或者，您可以运行以下 PowerShell 命令：
+1. 從組織中的通訊錄和其他通訊清單中隱藏協力廠商資料信箱;請參閱[管理使用者信箱](https://go.microsoft.com/fwlink/p/?LinkId=616058)。 或者，您也可以執行下列 PowerShell 命令：
     
-    ```
+    ```powershell
     Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
     ```
 
-2. 将"**完全访问"** 权限分配给第三方数据邮箱，以便管理员或合规性官可以在 Outlook 桌面客户端中打开第三方数据邮箱;请参阅[管理收件人的权限。](https://go.microsoft.com/fwlink/p/?LinkId=692104)
+2. 指派協力廠商資料信箱的**FullAccess**許可權，讓系統管理員或合規性監察官可以在 Outlook 桌面用戶端中開啟協力廠商資料信箱。請參閱管理收件者[的許可權](https://go.microsoft.com/fwlink/p/?LinkId=692104)。
     
-3. 为第三方数据邮箱启用以下与合规性相关的 Office 365 功能：
+3. 針對協力廠商資料信箱啟用下列與規範相關的功能：
     
-    - 启用存档邮箱;请参阅[启用存档邮箱](enable-archive-mailboxes.md)和[启用无限制存档](enable-unlimited-archiving.md)。 这样，您就可以通过设置将第三方数据项目移动到存档邮箱的存档策略来释放主邮箱中的存储空间。 这为您提供了第三方数据的无限存储空间。
+    - 啟用封存信箱;請參閱[啟用封存信箱](enable-archive-mailboxes.md)及[啟用無限](enable-unlimited-archiving.md)封存。 這可讓您透過設定將協力廠商資料項目目移至封存信箱的封存原則，以釋放主要信箱中的儲存空間。 這可讓您在協力廠商資料上使用無限制的儲存體。
     
-    - 將協力廠商資料信箱處於 [訴訟暫止] 狀態。 您还可以在安全和合规性中心应用 Office 365 保留策略。 将此邮箱置于保留状态将保留第三方数据项目（无限期或指定持续时间），并防止从邮箱中清除它们。 请参阅以下主题之一：
+    - 將協力廠商資料信箱處於 [訴訟暫止] 狀態。 您也可以在安全性與合規性中心套用 Microsoft 365 保留原則。 保留此信箱會保留協力廠商資料項目（無限期或在指定期間內），並防止其從信箱中清除。 請參閱下列其中一個主題：
     
       - [將信箱設定為訴訟資料暫留狀態](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-      - [Office 365 中的保留策略概述](retention-policies.md)
+      - [保留原則概觀](retention-policies.md)
     
-       
-    
-    - 为所有者、代理和管理员访问第三方数据邮箱启用邮箱审核日志记录;请参阅[在 Office 365 中启用邮箱审核。](enable-mailbox-auditing.md) 这允许您审核有权访问第三方数据邮箱的任何用户执行的所有活动。
+    - 針對協力廠商資料信箱的擁有者、委派及系統管理存取啟用信箱審計記錄;請參閱[啟用信箱審核](enable-mailbox-auditing.md)。 這可讓您審核任何可存取協力廠商資料信箱之使用者執行的所有活動。
 
 ## <a name="step-3-configure-user-mailboxes-for-third-party-data"></a>步驟 3：設定協力廠商資料的使用者信箱
 
-下一步是設定使用者信箱以支援協力廠商資料。 使用 Exchange 管理中心或使用相应的 Windows PowerShell cmdlet 完成这些任务。
+下一步是設定使用者信箱以支援協力廠商資料。 使用 Exchange 系統管理中心或使用對應的 Windows PowerShell Cmdlet，完成這些工作。
   
-1. 为每个用户启用存档邮箱;请参阅[启用存档邮箱](enable-archive-mailboxes.md)和[启用无限制存档](enable-unlimited-archiving.md)。
+1. 為每位使用者啟用封存信箱;請參閱[啟用封存信箱](enable-archive-mailboxes.md)及[啟用無限](enable-unlimited-archiving.md)封存。
     
-2. 将用户邮箱置于诉讼保留状态或应用 Office 365 保留策略;请参阅以下主题之一： 
+2. 將使用者信箱設為訴訟暫止，或套用 Microsoft 365 保留原則;請參閱下列其中一個主題： 
     
     - [將信箱設定為訴訟資料暫留狀態](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-    - [Office 365 中的保留策略概述](retention-policies.md)
+    - [保留原則概觀](retention-policies.md)
     
     如先前所述，將信箱置於保留狀態時，您可以設定從協力廠商資料來源保留項目多久的持續時間，或者您可以選擇無限期地保留項目。
 
 ## <a name="step-4-provide-your-partner-with-information"></a>步驟 4：提供資訊給合作夥伴
 
-最後一個步驟是讓您的合作夥伴具有下列資訊，讓他們可以設定連接器以連接到您的 Office 365 組織，將資料匯入至使用者信箱和協力廠商資料信箱。 
+最後一個步驟是向您的合作夥伴提供下列資訊，讓他們可以設定連接器，以連線至您的組織，將資料匯入至使用者信箱和協力廠商資料信箱。 
   
-- 用于连接到 Office 365 中的 Azure 服务的终结点：
+- 用來連線至 Office 365 中之 Azure 服務的端點：
 
-    ```
+    ```text
     https://office365ingestionsvc.gble1.protection.outlook.com/service/ThirdPartyIngestionService.svc
     ```
 
-- 您在步骤 2 中创建的第三方数据邮箱的登录凭据（Office 365 用户 ID 和密码）。 協力廠商連接器需要這些認證才能存取項目以及將其匯入至使用者信箱和協力廠商資料信箱。
+- 您在步驟2中建立之協力廠商資料信箱的登入認證（Microsoft 365 使用者識別碼和密碼）。 協力廠商連接器需要這些認證才能存取項目以及將其匯入至使用者信箱和協力廠商資料信箱。
  
-## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>步骤 5：在 Azure 活动目录中注册第三方数据连接器
+## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>步驟5：在 Azure Active Directory 中註冊協力廠商資料連線器
 
-从 2018 年 9 月 30 日开始，Office 365 中的 Azure 服务将开始使用 Exchange Online 中的现代身份验证来验证尝试连接到 Office 365 组织以导入数据的第三方数据连接器。 进行此更改的原因是，现代身份验证比当前方法提供了更多的安全性，该方法基于使用前面描述的终结点连接到 Azure 服务的白名单第三方连接器。
+從2018年9月30日起，Office 365 中的 Azure 服務會開始使用 Exchange Online 中的新式驗證，以驗證嘗試連線至組織以匯入資料的協力廠商資料連線器。 這種變更的原因是，新式驗證提供的安全性高於目前的方法，這是以使用先前所述的端點來連接至 Azure 服務的 whitelisting 協力廠商連接器為基礎。
 
-要使第三方数据连接器能够使用新的新式身份验证方法连接到 Office 365，Office 365 组织的管理员必须同意在 Azure 活动目录中将连接器注册为受信任的服务应用程序。 这是通过接受权限请求来允许连接器访问 Azure 活动目录中的组织数据来实现的。 接受此请求后，第三方数据连接器将作为企业应用程序添加到 Azure 活动目录，并表示为服务主体。 有关同意过程的详细信息，请参阅[租户管理员同意](https://docs.microsoft.com/en-us/skype-sdk/trusted-application-api/docs/tenantadminconsent)。
+若要讓協力廠商資料連線器使用全新的新式驗證方法來連線至 Office 365，您組織中的系統管理員必須同意在 Azure Active Directory 中將連接器註冊為受信任的服務應用程式。 若要允許連接器在 Azure Active Directory 中存取組織的資料，請接受許可權要求，以進行這項操作。 在您接受此要求之後，協力廠商資料連線器會新增為 Azure Active Directory 中的企業應用程式，並表示為服務主體。 如需同意程式的詳細資訊，請參閱[租使用者管理員同意](https://docs.microsoft.com/skype-sdk/trusted-application-api/docs/tenantadminconsent)。
 
-以下是访问和接受注册连接器的请求的步骤：
+以下是存取及接受註冊連接器要求的步驟：
 
-1. 转到[此页面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)并使用 Office 365 全局管理员的凭据登录。<br/><br/>将显示以下对话框。 您可以展开分卡以查看将分配给连接器的权限。<br/><br/>![将显示权限请求对话框](media/O365-ThirdPartyDataConnector-OptIn1.png)
+1. 移[至此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，並使用全域管理員的認證登入。
+
+   隨即顯示下列對話方塊。 您可以展開 carets，以複查將指派給連接器的許可權。
+
+   ![顯示 [許可權要求] 對話方塊](../media/O365-ThirdPartyDataConnector-OptIn1.png)
+
 2. 按一下 [接受]****。
 
-接受请求后，将显示[Azure 门户。](https://portal.azure.com) 要查看组织的应用程序列表，请单击**Azure 活动目录** > **企业应用程序**。 Office 365 第三方数据连接器列**在"企业"应用程序**边栏选项卡上。
+在您接受要求之後，就會顯示[Azure 入口網站](https://portal.azure.com)。 若要查看組織的應用程式清單，請按一下 [ **Azure Active Directory** > **企業應用程式**]。 Office 365 協力廠商資料連線器會列在**企業應用程式**blade 上。
 
 > [!IMPORTANT]
-> 2018 年 9 月 30 日之后，如果不在 Azure 活动目录中注册第三方数据连接器，则第三方数据将不再导入到组织中的邮箱中。 请注意，现有的第三方数据连接器（2018 年 9 月 30 日之前创建的数据连接器）也必须按照步骤 5 中的步骤在 Azure 活动目录中注册。
+> 在2018年9月30日之後，如果您未在 Azure Active Directory 中註冊協力廠商資料連線器，協力廠商資料將無法再匯入您組織中的信箱。 請注意，在 Azure Active Directory 中建立的協力廠商資料連線器（在2018年9月30日之前所建立），必須先在 Azure Active Directory 中註冊，請遵循步驟5中的程式。
 
-### <a name="revoking-consent-for-a-third-party-data-connector"></a>撤销对第三方数据连接器的同意
+### <a name="revoking-consent-for-a-third-party-data-connector"></a>撤銷協力廠商資料連線器的同意
 
-组织同意在 Azure 活动目录中注册第三方数据连接器的权限请求后，您的组织可以随时撤消该同意。 但是，撤销连接器的同意意味着来自第三方数据源的数据将不再导入 Office 365。
+在您的組織 consents 至許可權要求後，若要在 Azure Active Directory 中註冊協力廠商資料連線器，您的組織可以隨時撤銷該同意。 不過，撤銷連接器的同意表示將不再將協力廠商資料來源的資料匯入 Office 365。
 
-要撤销对第三方数据连接器的同意，可以使用 Azure 门户中的**企业应用程序**边栏选项卡删除应用程序（通过删除相应的服务主体），或使用[在](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal)Office 365 PowerShell 中删除 MsolService 主体。 您还可以在 Azure 活动目录 PowerShell[中使用"删除 AzureADServiceCcd"](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal)
+若要撤銷協力廠商資料連線器的同意，您可以使用 Azure 入口網站中的**Enterprise** application blade，或是使用 Office 365 PowerShell 中的 [[移除-new-msolserviceprincipal](https://docs.microsoft.com/powershell/module/msonline/remove-msolserviceprincipal) ]，從 azure Active Directory 中刪除應用程式（透過刪除對應的服務主體）。 您也可以在 Azure Active Directory PowerShell 中使用[Remove-AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/remove-azureadserviceprincipal) Cmdlet。
   
 ## <a name="more-information"></a>詳細資訊
 
-- 如先前所述，協力廠商資料來源的項目是匯入至 Exchange 信箱做為電子郵件訊息。 合作伙伴连接器使用 Office 365 API 所需的架构导入项目。 下表說明協力廠商資料來源的項目在匯入至 Exchange 信箱當做為電子郵件之後的郵件屬性。 表格也會指出郵件屬性是否為必要的。 必須填入必要屬性。 如果项目缺少必填属性，则不会将其导入 Office 365。 导入过程返回一条错误消息，解释为何未导入项以及缺少哪个属性。
+- 如先前所述，協力廠商資料來源的項目是匯入至 Exchange 信箱做為電子郵件訊息。 夥伴連接器會使用 Office 365 API 所需的架構，匯入專案。 下表說明協力廠商資料來源的項目在匯入至 Exchange 信箱當做為電子郵件之後的郵件屬性。 表格也會指出郵件屬性是否為必要的。 必須填入必要屬性。 如果專案缺少強制的屬性，則不會將它匯入至 Office 365。 匯入程式會傳回一則錯誤訊息，說明未匯入專案的原因，以及遺漏的屬性。
     
-    |**郵件屬性**|**强制性？**|**描述**|**範例值**|
+    |**郵件屬性**|**強制性？**|**描述**|**範例值**|
     |:-----|:-----|:-----|:-----|
-    |**FROM** <br/> |是  <br/> |最初在協力廠商資料來源中建立或傳送項目的使用者。 合作伙伴连接器尝试将用户 ID 从源项（例如 Twitter 句柄）映射到所有用户（FROM 和 TO 字段中的用户）的 Office 365 用户帐户。 郵件副本會匯入至每個參與者的信箱。 如果项目的参与者都不能映射到 Office 365 用户帐户，则该项目将导入 Office 365 中的第三方存档邮箱。  <br/> <br/> 标识为项目发件人的参与者必须在要导入到的 Office 365 组织中具有活动邮箱。 如果寄件者沒有作用中的信箱，則會傳回下列錯誤︰<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
+    |**FROM** <br/> |是  <br/> |最初在協力廠商資料來源中建立或傳送項目的使用者。 夥伴連接器會嘗試將使用者識別碼從來源專案（例如 Twitter 控制碼）對應至所有參與者（[寄件者] 和 [至] 欄位中的使用者）的使用者帳戶。 郵件副本會匯入至每個參與者的信箱。 如果無法將專案的任何參與者對應至使用者帳戶，該專案就會匯入至 Office 365 中的協力廠商封存信箱。  <br/> <br/> 識別為專案之寄件者的參與者必須在組織中有一個使用中的信箱，且該專案要匯入到該組織中。 如果寄件者沒有作用中的信箱，則會傳回下列錯誤︰<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
     |**TO** <br/> |是  <br/> |接收項目的使用者，如果適用於資料來源中的項目。  <br/> | `bob@contoso.com` <br/> |
-    |**主题** <br/> |否  <br/> |來源項目的主旨。  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
-    |**日期** <br/> |是  <br/> |项目最初创建或在客户数据源中过帐的日期。 例如，Twitter 消息被推特的日期。  <br/> | `01 NOV 2015` <br/> |
-    |**身体** <br/> |否  <br/> |訊息或文章的內容。 對於某些資料來源，這個屬性的內容可能與 **SUBJECT** 屬性的內容相同。 在导入过程中，合作伙伴连接器尝试尽可能保持内容源的完全保真度。 如果可能的話，來源項目的內文中的檔案、圖形或其他內容會包含在此屬性中。 否則，來源項目的內容會包含在 **ATTACHMENT** 屬性。 此属性的内容取决于合作伙伴连接器和源平台的功能。  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
-    |**附件** <br/> |否  <br/> |如果数据源中的项目（如 Twitter 中的推文或即时消息对话）中的项目具有附加文件或包含图像，则合作伙伴连接将首先尝试在**BODY**属性中包含附件。 如果这是不可能的，则将其添加到 [ 附件 ] 属性中。 其他附件範例包括 Facebook 的「讚」、內容來源的中繼資料和訊息或文章的回應。  <br/> | `image.gif` <br/> |
-    |**消息类** <br/> |是  <br/> | 這是多重值屬性，由合作夥伴連接器建立並填入。 此属性的格式为`IPM.NOTE.Source.Event`。 （此属性必须以`IPM.NOTE`开头。 此格式与消息类的`IPM.NOTE.X`格式类似。此属性包括以下信息：  <br/><br/>`Source`： 指示第三方数据源;例如，推特、脸谱或黑莓。  <br/> <br/>  `Event`： 指示在生成物料的第三方数据源中执行的活动类型;例如，推特的推文或Facebook上的帖子。 事件特定于数据源。  <br/> <br/>  此屬性的其中一個用途是要根據項目產生來源位置的資料來源或根據事件類型，篩選特定項目。 例如，在 eDiscovery 搜尋中，您可以建立搜尋查詢來尋找特定使用者所張貼的所有推文。  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**主題** <br/> |否  <br/> |來源項目的主旨。  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
+    |**日期** <br/> |是  <br/> |在客戶資料來源中，最初建立或張貼專案的日期。 例如，Twitter 郵件的日期日期。  <br/> | `01 NOV 2015` <br/> |
+    |**身體** <br/> |否  <br/> |訊息或文章的內容。 對於某些資料來源，這個屬性的內容可能與 **SUBJECT** 屬性的內容相同。 在匯入程式期間，協力廠商連接器會嘗試盡可能從內容來源保持完全保真。 如果可能的話，來源項目的內文中的檔案、圖形或其他內容會包含在此屬性中。 否則，來源項目的內容會包含在 **ATTACHMENT** 屬性。 此屬性的內容取決於夥伴連接器和來源平臺的功能。  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
+    |**附件** <br/> |否  <br/> |如果資料來源中的專案（例如 Twitter 或立即訊息交談中的 tweet）具有附加的檔案或包括影像，則協力廠商連線會先嘗試在**BODY**屬性中包含附件。 如果無法這樣做，它會新增至 * * 附件 * * 屬性。 其他附件範例包括 Facebook 的「讚」、內容來源的中繼資料和訊息或文章的回應。  <br/> | `image.gif` <br/> |
+    |**MESSAGECLASS** <br/> |是  <br/> | 這是多重值屬性，由合作夥伴連接器建立並填入。 此屬性的格式為`IPM.NOTE.Source.Event`。 （此屬性必須以開頭`IPM.NOTE`。 這種格式與`IPM.NOTE.X`郵件類別的格式類似。）此屬性包含下列資訊：  <br/><br/>`Source`：指出協力廠商資料來源;例如，Twitter、Facebook 或 BlackBerry。  <br/> <br/>  `Event`：指出在產生專案的協力廠商資料來源中所執行的活動類型。例如，在 Twitter 中的 tweet 或在 Facebook 中的文章。 事件是資料來源特有的。  <br/> <br/>  此屬性的其中一個用途是要根據項目產生來源位置的資料來源或根據事件類型，篩選特定項目。 例如，在 eDiscovery 搜尋中，您可以建立搜尋查詢來尋找特定使用者所張貼的所有推文。  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
-- 当项目成功导入 Office 365 中的邮箱时，唯一标识符将作为 HTTP 响应的一部分返回给调用方。 此标识符称为`x-IngestionCorrelationID`，合作伙伴可用于后续故障排除目的，以便端到端跟踪物料。 建議夥伴擷取這項資訊並加以記錄。 以下是顯示此識別碼之 HTTP 回應的範例：
+- 當專案順利匯入至 Office 365 中的信箱時，會將唯一識別碼傳回回來電者做為 HTTP 回應的一部分。 這個識別碼（稱為`x-IngestionCorrelationID`）可以用於後續疑難排解，供合作夥伴進行專案的端對端追蹤。 建議夥伴擷取這項資訊並加以記錄。 以下是顯示此識別碼之 HTTP 回應的範例：
 
-    ```
+    ```text
     HTTP/1.1 200 OK
     Content-Type: text/xml; charset=utf-8
     Server: Microsoft-IIS/8.5
@@ -572,18 +577,18 @@ ms.locfileid: "37077633"
     X-Powered-By: ASP.NET
     Date: Tue, 02 Feb 2016 22:55:33 GMT 
     ```
- 
-- 您可以使用安全和合规性中心中的内容搜索工具搜索从第三方数据源导入 Office 365 中的邮箱的项目。 要专门搜索这些导入的项目，可以在内容搜索的关键字框中使用以下消息属性值对。
-    
-  - **`kind:externaldata`**：使用此属性值对搜索所有第三方数据类型。 例如，要搜索从第三方数据源导入并在导入项的 Subject 属性中包含单词"contoso"的项目，请使用关键字查询`kind:externaldata AND subject:contoso`。
-    
-  - **`itemclass:ipm.externaldata.<third-party data type>`**：使用此属性值对仅搜索指定类型的第三方数据。 例如，要仅搜索"主题"属性中包含单词"contoso"的 Facebook 数据，请使用关键字查询`itemclass:ipm.externaldata.Facebook* AND subject:contoso`。 
 
-  有关用于`itemclass`该属性的第三方数据类型的完整值列表，请参阅[使用内容搜索搜索已导入 Office 365 的第三方数据](use-content-search-to-search-third-party-data-that-was-imported.md)
+- 您可以使用安全性與合規性中心的內容搜尋工具，搜尋從協力廠商資料來源匯入信箱的專案。 若要特別針對這些匯入的專案進行搜尋，您可以在內容搜尋的關鍵字方塊中使用下列郵件屬性-值對。
+    
+  - **`kind:externaldata`**：使用此屬性-值對可搜尋所有協力廠商資料類型。 例如，若要搜尋從協力廠商資料來源匯入的專案，並在匯入專案的 Subject 屬性中包含 "contoso" 一詞，您可以使用關鍵字查詢`kind:externaldata AND subject:contoso`。
+    
+  - **`itemclass:ipm.externaldata.<third-party data type>`**：使用此屬性-值對只搜尋協力廠商資料的指定類型。 例如，若要在 Subject 屬性中只搜尋包含 "contoso" 一詞的 Facebook 資料，您可以使用關鍵字查詢`itemclass:ipm.externaldata.Facebook* AND subject:contoso`。 
+
+  如需用於`itemclass`屬性的協力廠商資料類型的完整值清單，請參閱[使用內容搜尋來搜尋匯入至 Office 365 的協力廠商資料](use-content-search-to-search-third-party-data-that-was-imported.md)
     
    如需有關使用內容搜尋和建立關鍵字搜尋查詢的詳細資訊，請參閱︰
     
-  - [Office 365 中的内容搜索](content-search.md)
+  - [Office 365 中的內容搜尋](content-search.md)
     
   - [內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md)
  

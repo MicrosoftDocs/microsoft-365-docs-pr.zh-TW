@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 了解 OneDrive for Business 和 SharePoint Online 中的資料安全性加密基本項目。
-ms.openlocfilehash: c21ec4ef6b81bcf89565fd005b9a1d2068244b20
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e882bf3bf633c821fe50246316b5b1065cfa4693
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076350"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633338"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>商務用 OneDrive 和 SharePoint Online 中的資料加密
 
@@ -31,9 +31,9 @@ ms.locfileid: "42076350"
   
 ## <a name="overview"></a>概觀
 
-Office 365 是安全性非常高的環境，在多個層級中提供廣泛的保護，包括：實體資料中心安全性、網路安全性、存取安全性、應用程式安全性以及資料安全性。本文特別著重在OneDrive for Business 和 SharePoint Online 的傳輸中和靜態加密等方面。
+Microsoft 365 是高度安全的環境，可提供多層的廣泛保護：實體資料中心安全性、網路安全性、存取安全性、應用程式安全性和資料安全性。 本文特別著重在OneDrive for Business 和 SharePoint Online 的傳輸中和靜態加密等方面。
   
-Office 365 安全性的整體說明，請參閱[安全性中 Office 365 白皮書](https://go.microsoft.com/fwlink/p/?LinkId=270895)。
+如需 Microsoft 365 安全性整體的說明，請參閱[安全性白皮書](https://go.microsoft.com/fwlink/p/?LinkId=270895)。
   
 觀看下列影片，了解資料加密如何運作。
   
@@ -51,11 +51,11 @@ Office 365 安全性的整體說明，請參閱[安全性中 Office 365 白皮�
 
 靜態加密包括兩個元件：BitLocker 磁碟層級加密，以及客戶內容的每一檔案加密。
   
-服務針對OneDrive for Business 和 SharePoint Online 部署了 BitLocker。 每一檔案加密是也在商務用 OneDrive 和 SharePoint Online 在 Office 365 多承租人與多重租用戶技術之內建的新專用的環境中。
+服務針對OneDrive for Business 和 SharePoint Online 部署了 BitLocker。 在 Microsoft 365 多承租人和以多承租人技術為基礎的新專用環境中 SharePoint，每個檔案加密也是在商務用 OneDrive。
   
 當 BitLocker 加密磁碟中的所有資料時，每一檔案的加密會進一步地納入每個檔案唯一的加密金鑰。此外，每個檔案的每次更新都會使用自己的加密金鑰進行加密。在儲存之前，已加密內容的金鑰會儲存在與內容不同的實體位置。此加密的每個步驟都會使用搭配 256 位元機碼的進階加密標準 (AES)，並與聯邦資訊處理標準 (FIPS) 140-2 相容。已加密的內容會分散到資料中心的數個容器中，而且每個容器都有唯一的認證。這些認證會儲存在內容或內容金鑰等不同的實體位置。
   
-如需 FIPS 140-2 相容性的詳細資訊，請參閱[FIPS 140-2 相容性](https://go.microsoft.com/fwlink/?LinkId=517625)。
+如需有關 FIPS 140-2 規範的詳細資訊，請參閱[FIPS 140-2 相容性](https://go.microsoft.com/fwlink/?LinkId=517625)。
   
 檔案層級的靜態加密會利用 Blob 儲存體提供無限制的虛擬儲存體成長空間，以便提供更全面的保護。OneDrive for Business 和 SharePoint Online 中的所有客戶內容都會移轉至 Blob 儲存體。以下是保護資料的方法：
   

@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 進階電子文件探索中設定分析選項
+title: 在高級電子檔探索中設定分析選項
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,76 +15,76 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
-description: '檢閱步驟以設定 Office 365 進階電子文件探索，包括近似重複項目、 電子郵件執行緒，以及佈景主題中的分析處理程序的選項。  '
-ms.openlocfilehash: 8897099d7531b48f7c6618c106eeb6f051dac546
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: '請參閱在高級 eDiscovery 中設定分析程式選項的步驟，包括近乎重複的電子郵件線索和主題。  '
+ms.openlocfilehash: 5f50e2863398679d1381c66009ff1daec40623f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557783"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631260"
 ---
-# <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>設定進階 eDiscovery 中分析選項 （傳統）
+# <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>在高級 eDiscovery （古典）中設定分析選項
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
-在進階電子文件探索中設定分析選項之前執行分析。
+在 [Advanced eDiscovery] 中，設定 [分析] 選項，再執行 [分析]。
   
 ## <a name="set-analyze-options"></a>設定分析選項
 
-開啟**準備\>分析** \> **安裝程式**。 會顯示下列視窗。
+開啟**準備\>分析** \> **設定**。 隨即會顯示下列視窗。
   
 ![設定分析選項](../media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
- **近似重複項目和電子郵件執行緒**如果您想要執行分析，請核取此方塊。 此為預設選取的選項。 
+ **近乎重複的電子郵件執行緒**如果您想要執行分析，請選取此方塊。 此為預設選取的選項。 
   
- **文件相似性**輸入 Near 重複的臨界值，或接受預設值是 65%。 
+ **檔相似性**輸入接近重複的臨界值或接受預設值65%。 
   
- **佈景主題**核取此方塊可處理所有檔案，並將佈景主題指派給他們。 根據預設，不會選取此核取方塊。 如果您想要執行處理的佈景主題，請輸入下列選項。
+ **主題**選取此方塊以處理所有檔案，並為其指定主題。 預設不會選取此核取方塊。 如果您想要執行主題處理，請輸入下列選項。
   
-- **佈景主題的最大數目**輸入或選取要建立的佈景主題數目的值。 預設值為 200。 
+- **主題數目上限**輸入或選取要建立的主題數目值。 預設值為 200。 
     
     > [!NOTE]
-    > 增加的佈景主題數目會影響效能，以及佈景主題一般化的能力。 佈景主題數目愈高，更細微它們是。 例如，如果 50 個佈景主題的一組包括 「 籃球、 Spurs、 Clippers，Lakers 」; 例如佈景主題300 佈景主題可能會包含不同的佈景主題: 「 Spurs 」、 「 Clippers 」、 「 Lakers 」。 如果您不有任何認知佈景主題的 「 籃球 」，並使用 ECA 這項功能，看到佈景主題 」 籃球 」 可能是很有用。 但是，如果處理有太多的佈景主題，您可能永遠不會看到 「 籃球 」 這個字後，可能不知道，Spurs 和 Clippers 是很好的籃球佈景主題，若要檢閱，而非移入的項目會開機並用於字形。 
+    > 增加主題數目會影響效能，以及將主題的功能歸納為一般化。 主題的數量越高，其程度就越細微。 例如，如果一組50主題包含 "籃球，Spurs，Clippers，Lakers" 等主題，則300主題可以包含不同的主題： "Spurs"、"Clippers"、"Lakers"。 如果您不知道主題「籃球」，並將此功能用於 ECA，請參閱主題「籃球」會非常有用。 不過，如果處理過程中有太多主題，您可能永遠看不到「籃球」一詞，也可能不知道 Spurs 及 Clippers 是好的籃球主題可供審閱，而不是在開始時和用於頭髮的專案。 
   
-- **建議的佈景主題**您可以建議來控制處理的佈景主題的佈景主題文字。 進階電子文件探索會專注於這些建議的字詞，並嘗試建立一或多個相關的佈景主題，根據 「 最大的佈景主題的數字 」 的設定。 
+- **建議主題**您可以建議主題文字，以控制主題處理。 「高級 eDiscovery」會將重點放在這些建議的文字上，並根據「主題最大數目」設定，嘗試建立一個或多個相關主題。 
     
-    例如，如果建議的單字"computer"，且您指定作為 」 主題數目上限 「"2"，進階電子文件會嘗試產生關聯到 「 電腦 」 這個字的兩個佈景主題。 佈景主題的兩個可能會 「 電腦軟體 」 和 「 電腦硬體 」，例如。 
+    例如，如果建議的字為 "computer"，而您指定 "2" 做為「主題的最大數目」，則高級 eDiscovery 會嘗試產生與「電腦」有關的兩個主題。 例如，這兩個主題可能是 "電腦軟體" 和 "電腦硬體"。 
     
     ![新增建議的佈景主題](../media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
   
-1. 若要檢視、 新增或編輯建議的佈景主題，按一下 [**修改**]。
+1. 若要查看、新增或編輯建議的主題，請按一下 [**修改**]。
     
-2. 在 [**建議追蹤的佈景主題**] 面板中，按一下 [**新增**![新增圖示](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)圖示以新增佈景主題。 在 [**新增建議的佈景主題**] 面板中，新增字詞，以逗號隔開。 
+2. 在 [**建議的主題**] 面板中，按一下 [](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) **新增** ![加入圖示] 圖示以新增主題。 在 [**新增建議的主題**] 面板中，加入以逗號分隔的字。 
     
-3. **佈景主題數目**，選取一個值來判斷進階電子文件會嘗試將產生的 （預設值為 1 佈景主題） 這些字詞的佈景主題數目。
+3. 在 [**主題數目**] 中，選取一個值，以決定「主題」高級 eDiscovery 將嘗試為這些字詞產生的數目（預設為1個主題）。
     
 4. 按一下 [**儲存**]，然後關閉對話方塊。 
     
     > [!NOTE]
-    > 總數的佈景主題包含建議的佈景主題。 總數的建議的佈景主題不能超過總佈景主題。 如果有許多的建議的佈景主題，相對於總佈景主題，只有幾個 「 小說 」 佈景主題會偵測系統，因為大部分的佈景主題會專用於建議的佈景主題。 
+    > 主題的總數包含建議的主題。 建議的主題總數不能超過整個主題。 如果有許多相對於整個主題的建議主題，系統只會偵測到一些「novel」主題，因為大多數主題都會專用於建議的主題。 
   
-- **模式**從下拉式清單中選取**佈景主題**選項： 
+- **模式**從下拉式清單中，選取 [**主題**] 選項： 
     
-  - **建立並套用模型**： 計算的模型檔案的線段的佈景主題，並再將它們之間的檔案。
+  - **建立及套用模型**：從一段檔的模型計算主題，然後在這些檔案之間散佈檔。
     
-  - **建立模型**： 計算從檔案的線段的佈景主題模型。 在其他時候分別完成的分割檔案套用程序。
+  - **建立模型**：計算來自一段檔的主題模型。 [套用分割檔] 的處理常式會個別于另一次完成。
     
-  - **套用模型**： 是否先前建立及尚未套用模型，僅會顯示此選項。 這會將佈景主題為基礎的檔案。
+  - 套用**模型**：只有在先前建立的模型和尚未套用的模型時，才會顯示此選項。 這會根據主題來分割檔案。
     
-您也可以[設定忽略文字](set-ignore-text-in-advanced-ediscovery.md)，並[設定分析進階設定]](set-analyze-advanced-settings-in-advanced-ediscovery.md)的分析。 
+您也可以[設定忽略文字](set-ignore-text-in-advanced-ediscovery.md)，並設定分析的 [[分析高級設定](set-analyze-advanced-settings-in-advanced-ediscovery.md)]。 
   
-您已設定這些選項之後，按一下 [**分析**]，以執行。 [檢視分析結果](view-analyze-results-in-advanced-ediscovery.md)會顯示。 
+在您設定這些選項之後，請按一下 [**分析**] 以執行。 顯示 [ [View 分析結果](view-analyze-results-in-advanced-ediscovery.md)]。 
   
 ## <a name="see-also"></a>請參閱
 
-[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
+[進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
   
-[了解文件相似性](understand-document-similarity-in-advanced-ediscovery.md)
+[瞭解檔相似性](understand-document-similarity-in-advanced-ediscovery.md)
   
 [設定忽略文字](set-ignore-text-in-advanced-ediscovery.md)
   
 [設定分析進階設定](set-analyze-advanced-settings-in-advanced-ediscovery.md)
   
-[檢視分析結果](view-analyze-results-in-advanced-ediscovery.md)
+[View 分析結果](view-analyze-results-in-advanced-ediscovery.md)
 

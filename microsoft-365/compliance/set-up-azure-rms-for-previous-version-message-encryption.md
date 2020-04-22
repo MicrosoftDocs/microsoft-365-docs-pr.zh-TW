@@ -1,5 +1,7 @@
 ---
-title: 設定舊版 Office 365 郵件加密的 Azure 版權管理
+title: 設定舊版郵件加密的 Azure Rights Management
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,114 +14,114 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
-description: Office 365 邮件加密的早期版本依赖于 Microsoft Azure 权限管理（以前称为 Windows Azure 活动目录权限管理）。
-ms.openlocfilehash: 84922a57c6245cf3214f17ba922417b5e025b796
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 先前版本的 Office 365 郵件加密取決於 Microsoft Azure Rights Management （先前稱為 Windows Azure Active Directory Rights Management）。
+ms.openlocfilehash: 3d98fff1987548292699972cedb4e3aa34d20b13
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077393"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635475"
 ---
-# <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>設定舊版 Office 365 郵件加密的 Azure 版權管理
+# <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>設定舊版郵件加密的 Azure Rights Management
 
-本主题介绍激活并随后设置 Azure 权限管理 （RMS） 的步骤，这是 Azure 信息保护的一部分，以便与 Office 365 消息加密 （OME） 的早期版本一起使用。
+本主題說明您必須遵循的步驟，才能啟動並設定 Azure 版權管理（RMS）和舊版 Office 365 郵件加密（OME）的 Azure 版權管理（RMS）。
 
-## <a name="this-article-only-applies-to-the-previous-version-of-ome"></a>本文仅适用于早期版本的 OME
-如果您尚未将 Office 365 组织迁移到新的 OME 功能，但已部署 OME，则本文中的信息将应用于您的组织。 Microsoft 建议您在您的组织合理时尽快制定计划，以迁移到新的 OME 功能。 有关说明，请参阅[设置新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)。 如果要首先了解有关新功能工作方式的更多信息，请参阅[Office 365 邮件加密](ome.md)。 本文的其余部分是指在新的 OME 功能发布之前的 OME 行为。
+## <a name="this-article-only-applies-to-the-previous-version-of-ome"></a>本文僅適用于舊版的 OME
+如果您尚未將組織移至新的 OME 功能，但您已部署 OME，則本文中的資訊適用于您的組織。 Microsoft 建議您在組織合理的情況時，安排移至新的 OME 功能。 如需相關指示，請參閱[Set up New Office 365 Message Encryption 功能](set-up-new-message-encryption-capabilities.md)。 如果您想要進一步瞭解新功能的運作方式，請參閱[Office 365 Message Encryption](ome.md)。 本文的其餘部分是在發行新的 OME 功能之前，OME 行為。
 
-## <a name="prerequisites-for-using-the-previous-version-of-office-365-message-encryption"></a>使用早期版本的 Office 365 邮件加密的先决条件
+## <a name="prerequisites-for-using-the-previous-version-of-office-365-message-encryption"></a>使用舊版 Office 365 郵件加密的必要條件
 <a name="warmprereqs"> </a>
 
-Office 365 消息加密 （OME） （包括 IRM） 依赖于 Azure 权限管理 （Azure RMS）。 Azure RMS 是 Azure 信息保护所使用的保护技术。 要使用 OME，Office 365 组织必须包括 Exchange 联机或 Exchange 联机保护订阅，而该订阅又包括 Azure 权限管理订阅。
+Office 365 郵件加密（OME）（包括 IRM）取決於 Azure 版權管理（Azure RMS）。 Azure RMS 是 Azure 資訊保護所使用的保護技術。 若要使用 OME，您的組織必須包含 Exchange Online 或 Exchange Online Protection 訂閱，進而包含 Azure Rights Management 訂閱。
   
-- 如果您不确定订阅包含的内容，请参阅[有关消息策略、恢复和合规性](https://technet.microsoft.com/library/exchange-online-message-policy-recovery-and-compliance.aspx)的 Exchange 在线服务说明。
+- 若不確定您的訂閱所包含的內容，請參閱[訊息原則、復原和合規性](https://technet.microsoft.com/library/exchange-online-message-policy-recovery-and-compliance.aspx)的 Exchange Online 服務說明。
 
-- 如果没有用于 Exchange 联机或 Exchange 联机保护的 Azure RMS 订阅，则必须先购买订阅并激活它。
+- 如果您沒有適用于 Exchange Online 或 Exchange Online Protection 的 Azure RMS 訂閱，則必須先購買訂閱並加以啟動。
 
-    有关购买 Azure 权限管理的订阅的信息，请参阅[Azure 权限管理](https://portal.office.com/Signup/MainSignUp15.aspx?&amp;OfferId=9DF77AF9-DAAE-4d51-8E0E-EEEADD4866B8&amp;dl=RIGHTSMANAGEMENT)。 下節提供啟動 Azure Rights Management 的資訊。
+    如需購買 Azure 版權管理訂閱的相關資訊，請參閱[Azure Rights management](https://portal.office.com/Signup/MainSignUp15.aspx?&amp;OfferId=9DF77AF9-DAAE-4d51-8E0E-EEEADD4866B8&amp;dl=RIGHTSMANAGEMENT)。 下節提供啟動 Azure Rights Management 的資訊。
 
-- 如果您有 Azure 权限管理，但未为 Exchange 联机或 Exchange 联机保护设置，则本文介绍了如何激活 Azure 权限管理，然后介绍了设置 OME 以使用 Azure 权限管理的最佳方式。
+- 如果您有 Azure Rights Management，但未設定 Exchange Online 或 Exchange Online Protection，本文將說明如何啟用 Azure 版權管理，然後描述設定 OME 以搭配 Azure Rights Management 的最佳方式。
 
-- 如果已设置 OME 以使用 Azure 权限管理以进行联机交换或交换联机保护，具体取决于设置方式，则可以立即开始使用 OME 及其新功能。 本文介绍如何确定是否正确设置了 OME，如果需要更改设置该怎么办，以及选择不更改设置会发生什么情况。 例如，为了使用新功能，必须将 Azure RMS 与 OME 一起使用。 不能将新功能与本地活动目录 RMS 一起使用。
+- 如果您已設定 OME 以使用 Azure Rights Management for Exchange Online 或 Exchange Online Protection （取決於其設定方式），您可能會立即開始使用 OME 及其新功能。 本文說明如何判斷您是否已正確設定 OME、需要變更設定的方式，以及如果您選擇不要變更設定，會發生什麼事。 例如，若要使用新功能，您必須搭配使用 Azure RMS 與 OME。 您無法搭配內部部署 Active Directory RMS 使用新功能。
 
-## <a name="activate-azure-rights-management-for--the-previous-version-of-ome-in-office-365"></a>在 Office 365 中为早期版本的 OME 激活 Azure 权限管理
+## <a name="activate-azure-rights-management-for--the-previous-version-of-ome-in-office-365"></a>在 Office 365 中啟動舊版 OME 的 Azure 版權管理
 
-您需要激活 Azure 权限管理，以便组织中的用户可以对其发送的邮件应用信息保护，并打开受 Azure 权限管理服务保护的邮件和文件。 有关说明，请参阅[激活 Azure 权限管理](https://go.microsoft.com/fwlink/p/?LinkId=525775)。 完成激活后，请返回此处并继续执行本文中的任务。
+您必須啟用 Azure Rights Management，讓組織中的使用者能夠對傳送的郵件套用資訊保護，並開啟已由 Azure Rights Management 服務保護的郵件和檔案。 如需相關指示，請參閱[啟用 Azure Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=525775)。 當您完成啟用之後，請回到這裡，繼續執行本文中的工作。
   
-## <a name="set-up-the-previous-version-of-ome-to-use-azure-rms-by-importing-trusted-publishing-domains-tpds"></a>通过导入受信任的发布域 （TLD），将早期版本的 OME 设置为使用 Azure RMS
+## <a name="set-up-the-previous-version-of-ome-to-use-azure-rms-by-importing-trusted-publishing-domains-tpds"></a>透過匯入信任的發行網域（Tpd），將舊版的 OME 設定為使用 Azure RMS
 
-TPD 是一个 XML 文件，其中包含有关组织权限管理设置的信息。 例如，TPD 包含有关用于签名和加密证书和许可证的服务器许可方证书 （SLC） 的信息、用于许可和发布的 URL 等。 使用 Windows PowerShell 将 TPD 导入 Office 365 组织。
+TPD 是一種 XML 檔案，其中包含組織的版權管理設定資訊。 例如，TPD 包含用於簽署和加密憑證和授權的伺服器許可方憑證（SLC）的相關資訊，此 URLs 用於授權與發佈等等。 您可以使用 Windows PowerShell 將 TPD 匯入您的組織。
   
 > [!IMPORTANT]
-> 以前，您可以选择将 TD 从活动目录权限管理服务 （AD RMS） 导入 Office 365 组织。 但是，这样做将阻止您使用新的 OME 功能，并且不建议这样做。 如果 Office 365 组织当前以这种方式配置，Microsoft 建议您创建计划，以便从本地活动目录 RMS 迁移到基于云的 Azure 信息保护。 有关详细信息，请参阅从[AD RMS 迁移到 Azure 信息保护](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)。 在完成迁移到 Azure 信息保护之前，您将无法使用新的 OME 功能。
+> 先前，您可以選擇將 Tpd 從 Active Directory Rights Management service （AD RMS）匯入您的組織。 不過，這樣做會使您無法使用新的 OME 功能，因此建議您不要這樣做。 如果您的組織目前是以這種方式設定，Microsoft 建議您建立從您的內部部署 Active Directory RMS 遷移至雲端式 Azure 資訊保護的計畫。 如需詳細資訊，請參閱[從 AD RMS 遷移至 Azure 資訊保護](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)。 您必須完成遷移至 Azure 資訊保護後，才能使用新的 OME 功能。
   
- **从 Azure RMS 导入 TD**
+ **從 Azure RMS 匯入 Tpd**
   
-1. [使用远程电源外壳连接到在线交换。](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)
+1. [使用遠端 PowerShell 連接至 Exchange Online](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)。
 
-2. 选择与 Office 365 组织的地理位置对应的密钥共享 URL：
+2. 選擇對應于您組織之地理位置的金鑰共用 URL：
 
-|**位置**|**密钥共享位置 URL**|
+|**位置**|**主要共用位置 URL**|
 |:-----|:-----|
 |北美  <br/> |https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |歐盟  <br/> |https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
-|亚洲  <br/> |https://sp-rms.ap.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
+|亞洲  <br/> |https://sp-rms.ap.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |南美洲  <br/> |https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
-|Office 365 for Government (政府社群雲端)  <br/> 此 RMS 密钥共享位置保留给已为政府 SKU 购买 Office 365 的客户。  <br/> |https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
+|Office 365 for Government (政府社群雲端)  <br/> 此 RMS 金鑰共用位置是針對政府 SKUs 購買 Office 365 的客戶所保留。  <br/> |https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
    
-3. 通过运行[Set-IRM 配置](https://technet.microsoft.com/library/dd979792%28v=exchg.160%29.aspx)cmdlet 来配置密钥共享位置，如下所示： 
+3. 執行[Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.160%29.aspx) Cmdlet 以設定金鑰共用位置，如下所示： 
     
-  ```
+  ```powershell
   Set-IRMConfiguration -RMSOnlineKeySharingLocation "<RMSKeySharingURL >"
   ```
 
-    例如，如果您的组织位于北美，则配置密钥共享位置：
-    
-  ```
+    例如，若您的組織位於北美，若要設定金鑰共用位置：
+
+  ```powershell
   Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
   ```
 
-4. 使用 -RMSOnline 开关运行[导入-RMS 信任发布域](https://technet.microsoft.com/library/jj200724%28v=exchg.150%29.aspx)cmdlet 以从 Azure 权限管理导入 TPD： 
-    
-  ```
+4. 使用-RMSOnline 參數執行[Import-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200724%28v=exchg.150%29.aspx) Cmdlet，以從 Azure Rights Management 匯入 TPD： 
+
+  ```powershell
   Import-RMSTrustedPublishingDomain -RMSOnline -Name "<TPDName> "
   ```
 
-    其中*TPDName*是您要用于 TPD 的名称。 例如，"康托索北美 TPD"。 
-    
-5. 要验证是否成功配置了 Office 365 组织以使用 Azure 权限管理服务，请使用 -RMSOnline 开关运行[测试 IRM 配置](https://technet.microsoft.com/library/dd979798%28v=exchg.160%29.aspx)cmdlet，如下所示： 
-    
-  ```
+    其中*TPDName*是您要用於 TPD 的名稱。 例如，"Contoso 北美 TPD"。 
+
+5. 若要確認您是否已成功將組織設定為使用 Azure Rights Management 服務，請使用-RMSOnline 參數執行[Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.160%29.aspx) Cmdlet，如下所示： 
+
+  ```powershell
   Test-IRMConfiguration -RMSOnline
   ```
 
-    除其他事项外，此 cmdlet 会检查与 Azure 权限管理服务的连接，下载 TPD 并检查其有效性。
-    
-6. 运行[Set-IRM 配置](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx)cmdlet，如下所示，以禁用 Azure 权限管理模板在 Web 和 Outlook 上的 Outlook 中可用： 
-    
-  ```
+    此外，此 Cmdlet 還會檢查 Azure 版權管理服務的連線能力、下載 TPD，以及檢查其有效性。
+
+6. 依下列方式執行[Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx) Cmdlet，以停用 outlook 網頁版和 Outlook 版中的 Azure 版權管理範本： 
+
+  ```powershell
   Set-IRMConfiguration -ClientAccessServerEnabled $false
   ```
 
-7. 按如下方式运行[Set-IRM 配置](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx)cmdlet，为基于云的电子邮件组织启用 Azure 权限管理，并将其配置为对 Office 365 邮件加密使用 Azure 权限管理： 
-    
-  ```
+7. 依下列方式執行[Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx) Cmdlet，以為您的雲端式電子郵件組織啟用 Azure rights management，並將其設定為使用 Azure rights Management for Office 365 郵件加密： 
+
+  ```powershell
   Set-IRMConfiguration -InternalLicensingEnabled $true
   ```
 
-8. 要验证是否成功导入了 TPD 并启用了 Azure 权限管理，请使用测试 IRM 配置 cmdlet 来测试 Azure 权限管理功能。 有关详细信息，请参阅[测试 IRM 配置](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx)中的"示例 1"。
-    
-## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>我使用活动目录权限管理而不是 Azure 信息保护设置了早期版本的 OME，我该怎么办？
+8. 若要確認您是否已成功匯入 TPD 及 enabled Azure Rights Management，請使用 Test-IRMConfiguration Cmdlet 來測試 Azure 版權管理功能。 如需詳細資訊，請參閱[Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx)中的「範例1」。
+
+## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>我已將舊版的 OME 設定為使用 Active Directory Rights Management，但不是 Azure 資訊保護，我該怎麼做？
 <a name="importTPDs"> </a>
 
-您可以继续使用现有的 Office 365 邮件加密邮件流规则与活动目录权限管理，但您无法配置或使用新的 OME 功能。 相反，您需要迁移到 Azure 信息保护。 有关迁移及其对组织意味着什么的信息，请参阅从 AD [RMS 迁移到 Azure 信息保护](https://docs.microsoft.com/information-protection/deploy-use/prepare-environment-adrms)。
+您可以繼續使用現有的 Office 365 郵件加密郵件流程規則與 Active Directory Rights Management，但您無法設定或使用新的 OME 功能。 相反地，您必須遷移到 Azure 資訊保護。 如需有關遷移的詳細資訊及其對您組織的意義，請參閱[從 AD RMS 遷移到 Azure 資訊保護](https://docs.microsoft.com/information-protection/deploy-use/prepare-environment-adrms)。
   
 ## <a name="next-steps"></a>後續步驟
 <a name="importTPDs"> </a>
 
-完成 Azure 权限管理设置后，如果要启用新的 OME 功能，请参阅[设置在 Azure 信息保护之上构建的新 Office 365 邮件加密功能。](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)
+當您完成 Azure Rights Management 安裝程式之後，如果您想要啟用新的 OME 功能，請參閱[設定新的 Office 365 郵件加密功能（以 Azure 資訊保護為](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)基礎）。
   
-将组织设置为使用新的 OME 功能后，即可[定义邮件流规则，以使用新的 OME 功能保护电子邮件。](define-mail-flow-rules-to-encrypt-email.md)
+在您設定組織使用新的 OME 功能之後，您就可以[定義郵件流程規則，以使用新的 OME 功能來保護電子郵件](define-mail-flow-rules-to-encrypt-email.md)。
   
 ## <a name="related-topics"></a>相關主題
 <a name="importTPDs"> </a>
@@ -128,6 +130,4 @@ TPD 是一个 XML 文件，其中包含有关组织权限管理设置的信息�
   
 [關於 Office 365 中加密的技術參考細節](technical-reference-details-about-encryption.md)
   
-[什么是 Azure 权限管理？](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
-  
-
+[什麼是 Azure 版權管理？](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)

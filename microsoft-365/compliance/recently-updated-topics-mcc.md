@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: 就像 Microsoft 365 規範中心的功能一樣，我們的說明內容永遠都在發展中。 我們會持續建立新的文章、更新現有的文章，並根據您的意見反應進行變更。 瞭解本月新增及更新的功能。
-ms.openlocfilehash: 1f52139df6585cc0e8de240544befa3dd2175f67
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 4a07327f9ea830483aa3abbaa1b6bd52ca825230
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929347"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632158"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 規範內容的最近更新
 
@@ -35,7 +35,7 @@ ms.locfileid: "42929347"
 
 ### <a name="auditing"></a>稽核
 
-[Microsoft 365 中的高級核查](advanced-audit.md)（新增）<br>適用于具有 Office 365 E5 或 Microsoft 365 企業版 E5 訂閱的組織，「高級核查」會引入功能（例如審核記錄的長保留期間、新的審計記錄保留原則，以及新的追蹤郵件讀取的信箱審核動作。
+[Microsoft 365 中的高級核查](advanced-audit.md)（新增）<br>適用于使用 Office 365 E5 或 Microsoft 365 企業版 E5 訂閱的組織，「高級核查」會引入功能（例如審核記錄的長保留期間、新的審核記錄保留原則，以及追蹤郵件讀取的新信箱審核動作），以擴充現有的審計功能。
 
 [管理審核記錄保留原則](audit-log-retention-policies.md)（新增）<br>有關管理審核記錄保留原則的詳細資訊，此新的高級審核功能可讓您將不同服務的審計記錄儲存一年以上。
 
@@ -53,15 +53,15 @@ ms.locfileid: "42929347"
 
 ### <a name="customer-key"></a>客戶金鑰
 
-[使用 Office 365 中的客戶機碼服務加密](customer-key-overview.md)（新增）<br>新文章會向您介紹客戶重要的概念，如 BitLocker 和服務加密等相關概念，以及它們如何共同運作。
+[使用客戶金鑰服務加密](customer-key-overview.md)（新增）<br>新文章會向您介紹客戶重要的概念，如 BitLocker 和服務加密等相關概念，以及它們如何共同運作。
 
-[管理 Office 365 的客戶金鑰](customer-key-manage.md)（新增）<br>管理客戶機碼的安裝後指示，包括管理現有 DEPs 與主要 vault 許可權的步驟、完成作業的預估時間、如何驗證加密是否有效，以及如何退出 Office 365 服務。
+[管理客戶金鑰](customer-key-manage.md)（新增）<br>管理客戶機碼的安裝後指示，包括管理現有 DEPs 與主要 vault 許可權的步驟、完成作業的預估時間、如何驗證加密是否有效，以及如何退出服務。
 
 [擲出或旋轉客戶金鑰或可用性金鑰](customer-key-availability-key-roll.md)（新增）<br>說明如何為客戶金鑰滾動客戶管理的金鑰。
 
-[瞭解 Office 365 客戶機碼的可用性金鑰](customer-key-availability-key-understand.md)（新增）<br>可用性機碼的詳細資料覆蓋率-何時及如何用來從重要資訊中復原，以及它存在於客戶重要階層中的地方等等。
+[瞭解客戶機碼的可用性金鑰](customer-key-availability-key-understand.md)（新增）<br>可用性機碼的詳細資料覆蓋率-何時及如何用來從重要資訊中復原，以及它存在於客戶重要階層中的地方等等。
 
-[設定 Office 365 的客戶金鑰](customer-key-set-up.md)（已更新）<br>先前標題為「使用客戶金鑰控制 Office 365 中的資料」，本文著重于如何設定 Office 365 的客戶金鑰（包括更新的指示）。
+[設定 Microsoft 365 的客戶金鑰](customer-key-set-up.md)（已更新）<br>先前標題為「使用客戶金鑰控制 Microsoft 365 中的資料」，本文著重于如何設定 Office 365 的客戶金鑰（包括更新的指示）。
 
 ### <a name="data-classification"></a>資料分類
 
@@ -83,12 +83,12 @@ ms.locfileid: "42929347"
 
 更新下列文章，以支援正式發行的有問必答風險管理。<br>
 [深入瞭解 Microsoft 365 中的內幕人士風險管理](insider-risk-management.md)<br>
-[開始使用「內幕風險管理」](insider-risk-management-configure.md)<br>
-[建立及管理有問必答風險原則](insider-risk-management-policies.md)<br>
-[調查有問必答風險警示](insider-risk-management-alerts.md)<br>
-[對內幕人士風險案例採取動作](insider-risk-management-cases.md)<br>
-[使用「內幕風險內容瀏覽器」檢查資料](insider-risk-management-content-explorer.md)<br>
-[將使用者新增至內部使用者風險原則](insider-risk-management-users.md)<br>
+[開始使用測試人員風險管理](insider-risk-management-configure.md)<br>
+[建立及管理測試人員風險原則](insider-risk-management-policies.md)<br>
+[調查測試人員風險警示](insider-risk-management-alerts.md)<br>
+[對測試人員風險案例採取動作](insider-risk-management-cases.md)<br>
+[使用測試人員風險內容總管檢閱資料](insider-risk-management-content-explorer.md)<br>
+[將使用者新增到測試人員風險原則](insider-risk-management-users.md)<br>
 [建立有問必答風險通知](insider-risk-management-notices.md)<br>
 
 ### <a name="records-management"></a>記錄管理
@@ -97,7 +97,7 @@ ms.locfileid: "42929347"
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 
-[開始使用敏感度標籤](get-started-with-sensitivity-labels.md)（新增）<br>包含 Azure 資訊保護客戶的指導方針、對部署敏感度標籤的處理常式與步驟的概要概述、建立及管理標籤的許可權，以及支援標籤的常見案例清單，以及可用的使用者清單。文檔。
+[開始使用敏感度標籤](get-started-with-sensitivity-labels.md)（新增）<br>包含 Azure 資訊保護客戶的指導方針、部署敏感度標籤的程式和步驟的高層次概述、建立及管理標籤的許可權，以及支援標籤的常見案例清單，以及可用的最終使用者檔案清單。
 
 [深入瞭解敏感度標籤](sensitivity-labels.md)（已更新）<br>Retitled 「敏感度標籤」，並將「入門」一節中的資訊移至新文章[開始使用敏感度標籤](get-started-with-sensitivity-labels.md)。
 
@@ -107,7 +107,7 @@ ms.locfileid: "42929347"
 
 [自動將敏感度標籤套用至內容](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)（更新）<br>設定 Office 應用程式自動標籤的區段現在包含使用 trainable 類元的新選項。
 
-[使用敏感度標籤來保護 Microsoft 團隊、Office 365 群組和 SharePoint 網站中的內容（](sensitivity-labels-teams-groups-sites.md)已更新）<br>進行修訂，以取得更好的閱讀體驗和技術說明。 此外，根據客戶的意見反應，新增[AZURE AD 文章](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)的連結，以啟用預覽，以及將敏感度標籤套用至 azure 入口網站中的 Office 365 群組。 最後，新增一個用於審核敏感度標籤活動的區段。
+[使用敏感度標籤來保護 Microsoft 小組、microsoft 365 群組和 SharePoint 網站（公開預覽）中的內容](sensitivity-labels-teams-groups-sites.md)（更新）<br>進行修訂，以取得更好的閱讀體驗和技術說明。 此外，根據客戶的意見反應，新增[AZURE AD 文章](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)的連結，以啟用預覽，以及將敏感度標籤套用至 azure 入口網站中的 Microsoft 365 群組。 最後，新增一個用於審核敏感度標籤活動的區段。
 
 [啟用 SharePoint 和 OneDrive （公開預覽）中的 Office 檔案敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)（已更新）<br>各種更新包含每個客戶對於此功能運作方式的意見反應的說明，強調新功能只會套用至新的和編輯的檔案，而且在刪除標籤時，您可能只會在測試階段看到的新限制。
 

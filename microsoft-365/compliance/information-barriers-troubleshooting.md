@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用本文做為疑難排解資訊障礙的指南。
-ms.openlocfilehash: 4c601ddedf3acc816181f287c74f8f4df207a6b5
-ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
+ms.openlocfilehash: c57f9a14e3089f52ad0eab0a0634d7d58f74e6cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42692660"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621347"
 ---
 # <a name="troubleshooting-information-barriers"></a>疑難排解資訊屏障
 
@@ -27,7 +27,7 @@ ms.locfileid: "42692660"
 當有人在資訊壁壘出現之後發生意外問題時，您可以採取一些步驟來解決這些問題。 使用本文做為指南。
 
 > [!IMPORTANT]
-> 若要執行本文所述的工作，您必須獲指派適當的角色，例如下列其中一項：<br/>-Microsoft 365 企業版全域系統管理員<br/>-Office 365 全域系統管理員<br/>-合規性管理員<br/>-IB 相容性管理（這是新的角色！）<p>若要深入瞭解資訊障礙的必要條件，請參閱[必要條件（適用于資訊障礙原則）](information-barriers-policies.md#prerequisites)。<p>請務必連線[到 Office 365 的安全性 & 合規性中心] PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+> 若要執行本文所述的工作，您必須獲指派適當的角色，例如下列其中一項：<br/>-Microsoft 365 企業版全域系統管理員<br/>-全域管理員<br/>-合規性管理員<br/>-IB 相容性管理（這是新的角色！）<p>若要深入瞭解資訊障礙的必要條件，請參閱[必要條件（適用于資訊障礙原則）](information-barriers-policies.md#prerequisites)。<p>請務必[連接至安全性 & 規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>問題：使用者意外封鎖，無法與 Microsoft 小組中的其他使用者通訊 
 
@@ -65,7 +65,7 @@ ms.locfileid: "42692660"
     ```
     在此情況下，我們可以看到資訊障礙原則會影響銷售和研究中心中的人員。 在此情況下，會防止銷售人員與調查中的人員進行通訊。 
     
-    如果看起來正確，則資訊壁壘會如預期般運作。 如果不是，請繼續進行下一個步驟。
+    如果看起來正確，則資訊壁壘會如預期般運作。 若未完成，請繼續進行下一個步驟。
 
 4. 請確定已正確定義您的區段。 若要這麼做，請`Get-OrganizationSegment`使用 Cmdlet，並複查結果清單。 
 

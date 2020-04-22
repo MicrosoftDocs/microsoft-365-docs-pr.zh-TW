@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 當您建立保留標籤以保留 Microsoft 365 中的內容時，您可以選擇在保留期間結束時觸發處置檢查。
-ms.openlocfilehash: 333e1a2f14c553cbd1d116e23795ba80175df125
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 8559c5abc2faf032b1e197cd337779b3171d0c7e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105660"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633062"
 ---
 # <a name="overview-of-disposition-reviews"></a>進行處置檢查的概覽
 
->*[安全性 & 符合性的 Microsoft 365 授權指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
 當內容到達保留期間結束時，可能會有幾個原因會讓您複查內容，以決定是否可以安全地刪除（「已處置」）。 例如，您可能需要：
   
@@ -37,7 +37,7 @@ ms.locfileid: "43105660"
     
 - 將內容傳回給用戶端或轉接至另一個組織。
     
-當您在 Microsoft 365 規範中心、Microsoft 365 安全性中心或 Office 365 安全性 & 合規性中心建立保留標籤時，您可以選擇在保留期間結束時觸發處置檢查。 在處置評審中：
+當您在 Microsoft 365 規範中心、Microsoft 365 安全性中心或安全性 & 合規性中心建立保留標籤時，您可以選擇在保留期間結束時觸發處置檢查。 在處置評審中：
   
 - 您選擇的人員會收到電子郵件通知，告知他們具有要審閱的內容。 請注意，每週會傳送通知。
     
@@ -53,7 +53,7 @@ ms.locfileid: "43105660"
     
 - 檢閱者可以查看擱置中或已完成的處理，並將該清單匯出為 .csv 檔案。
 
-處置評審可將內容包含在 Exchange 信箱、SharePoint 網站、OneDrive 帳戶和 Office 365 群組中。 只有在檢閱者選擇永久刪除內容之後，才會刪除等候在這些位置中進行處置檢查的內容。
+處置評審可將內容包含在 Exchange 信箱、SharePoint 網站、OneDrive 帳戶和 Microsoft 365 群組中。 只有在檢閱者選擇永久刪除內容之後，才會刪除等候在這些位置中進行處置檢查的內容。
   
 ![安全性與合規性中心中的「處置」頁面](../media/Retention-Dispositions-v2-page.png)
 
@@ -71,7 +71,7 @@ ms.locfileid: "43105660"
 ![標籤的保留設定](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
-> 當您指定選項時，**當專案準備好可供複查時通知人員**，請指定使用者。 此選項不支援 Office 365 群組。
+> 當您指定選項時，**當專案準備好可供複查時通知人員**，請指定使用者。 此選項不支援 Microsoft 365 群組。
 
 ## <a name="disposing-content"></a>處置內容
 
@@ -95,7 +95,7 @@ ms.locfileid: "43105660"
   
 請注意，電子郵件通知會以每週為單位自動傳送給檢閱者。 因此，當內容到達保留期間結束時，最多可能需要7天的時間，檢閱者收到內容正等待處置的電子郵件通知。
   
-另外請注意，所有的處理動作都會經過審核。 為了確保這一點，您必須在第一次處理動作之前至少開啟一天的審計-如需詳細資訊，請參閱[Search the audit log In Office &amp; 365 Security 規章遵循中心](search-the-audit-log-in-security-and-compliance.md)。 
+另外請注意，所有的處理動作都會經過審核。 為了確保這一點，您必須在第一次處理動作之前至少開啟一天的審計-如需詳細資訊，請參閱[Search the audit log &amp; In Security 管制 Center](search-the-audit-log-in-security-and-compliance.md)。 
   
 ## <a name="permissions-for-disposition"></a>進行處置的許可權
 
@@ -105,7 +105,7 @@ ms.locfileid: "43105660"
 
 - 因為用於搜尋審核記錄的基準指令程式是 Exchange Online Cmdlet，所以您必須使用[Exchange online 中的 exchange 系統管理中心](https://docs.microsoft.com/Exchange/exchange-admin-center)，而不是使用安全性 & 規範中心中的 [**許可權**] 頁面，指派此角色的使用者。 如需相關指示，請參閱[Manage role groups In Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
 
-- 此角色不支援 Office 365 群組。 請改為指派使用者信箱或郵件使用者。
+- 此角色不支援 Microsoft 365 群組。 請改為指派使用者信箱或郵件使用者。
   
 ## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>永久刪除處置內容之前的時間
 

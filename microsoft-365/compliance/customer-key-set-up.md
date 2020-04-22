@@ -1,5 +1,5 @@
 ---
-title: 設定 Office 365 的客戶金鑰
+title: 設定客戶金鑰
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 瞭解如何設定適用于 Exchange Online、商務用 Skype、SharePoint 線上、商務 OneDrive 及小組檔案的 Office 365 客戶金鑰。
-ms.openlocfilehash: af3ade4ed411a390d1501d3f3fe15ba3111e14d3
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: 瞭解如何設定適用于 Exchange Online、商務用 Skype、SharePoint 線上、OneDrive 商務及小組檔案的 Microsoft 365 的客戶金鑰。
+ms.openlocfilehash: c9c02f697e04a5cd01ddce1546b6712091712025
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225940"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634195"
 ---
-# <a name="set-up-customer-key-for-office-365"></a>設定 Office 365 的客戶金鑰
+# <a name="set-up-customer-key"></a>設定客戶金鑰
 
-使用客戶金鑰，您可以控制組織的加密金鑰，然後設定 Office 365，以使用這些金鑰在 Microsoft 資料中心內加密您的資料。 換句話說，客戶金鑰可讓客戶新增屬於其金鑰的加密層級。 存放的資料包括 Exchange Online 資料和儲存在信箱的商務用 Skype 資料，以及儲存在 SharePoint Online 中和商務用 OneDrive 中的檔案。
+使用客戶金鑰，您可以控制組織的加密金鑰，然後設定 Microsoft 365，以使用這些金鑰在 Microsoft 資料中心內加密您的資料。 換句話說，客戶金鑰可讓客戶新增屬於其金鑰的加密層級。 存放的資料包括 Exchange Online 資料和儲存在信箱的商務用 Skype 資料，以及儲存在 SharePoint Online 中和商務用 OneDrive 中的檔案。
 
 您必須先設定 Azure，才能使用 Office 365 的客戶金鑰。 本主題說明建立及設定必要 Azure 資源所需遵循的步驟，並提供在 Office 365 中設定客戶機碼的步驟。 完成 Azure 安裝之後，您可以決定要將哪些原則指派給組織中的信箱和檔案，進而決定要指派哪些機碼。 您未指派原則的信箱和檔案會使用由 Microsoft 所控制和管理的加密原則。 如需客戶機碼的相關資訊，或有關一般概述，請參閱[Office 365 中的客戶金鑰服務加密](customer-key-overview.md)。
   
@@ -31,9 +31,7 @@ ms.locfileid: "43225940"
   
 ## <a name="before-you-set-up-customer-key"></a>在您設定客戶機碼之前
 
-開始之前，請先確定您的組織具有適當的授權。 從 office 365 的2020年4月1日開始，于 office 365 E5，M365 E5，M365 E5 規範，以及 M365 E5 & 控管 SKUs 中提供的資訊保護。 Office 365 Advanced 相容性 SKU 已無法再提供購置新的授權。 現有的 Office 365 Advanced 相容性授權會繼續受到支援。
-
-若要瞭解本主題中的概念和程式，請參閱[Azure Key Vault](https://docs.microsoft.com/azure/key-vault/)檔。 此外，熟悉 Azure 中使用的條款，例如[AZURE AD 租](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant)使用者。
+開始之前，請先確定您的組織具有適當的授權。 Microsoft 365 中的客戶金鑰是在 Office 365 E5 或高級規範 SKU 中提供。 若要瞭解本主題中的概念和程式，請參閱[Azure Key Vault](https://docs.microsoft.com/azure/key-vault/)檔。 此外，熟悉 Azure 中使用的條款，例如[承租人](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100))。
 
 FastTrack 僅用於收集用於註冊客戶金鑰所需的承租人和服務設定資訊。 客戶金鑰提供方案是透過 FastTrack 發佈，讓您與我們的協力廠商可以方便您與我們的合作夥伴使用相同方法提交必要的資訊。 FastTrack 也可讓您輕鬆地封存您在提供中提供的資料。
   
@@ -95,7 +93,7 @@ SharePoint 線上和商務 OneDrive：
   
 ### <a name="create-two-new-azure-subscriptions"></a>建立兩個新的 Azure 訂閱
 
-客戶金鑰需要兩個 Azure 訂閱。 最佳作法是 Microsoft 建議您建立新的 Azure 訂閱，以與客戶金鑰搭配使用。 Azure Key Vault 金鑰只可對相同 Azure Active Directory （AAD）租使用者中的應用程式授權，您必須使用與您的 Office 365 組織一起使用的相同 Azure AD 租使用者，來建立新的訂閱，以 DEPs 將會被指派。 例如，在您的 Office 365 組織中使用具有全域系統管理員許可權的公司或學校帳戶。 如需詳細步驟，請參閱[註冊 Azure 做為組織](https://azure.microsoft.com/documentation/articles/sign-up-organization/)。
+客戶金鑰需要兩個 Azure 訂閱。 最佳作法是 Microsoft 建議您建立新的 Azure 訂閱，以與客戶金鑰搭配使用。 Azure Key Vault 金鑰僅可針對相同 Azure Active Directory （AAD）租使用者中的應用程式授權，您必須使用與 DEPs 將會指派的組織搭配使用的相同 Azure AD 租使用者，來建立新的訂閱。 例如，在您的組織中使用具有全域系統管理員許可權的公司或學校帳戶。 如需詳細步驟，請參閱[註冊 Azure 做為組織](https://azure.microsoft.com/documentation/articles/sign-up-organization/)。
   
 > [!IMPORTANT]
 > 客戶金鑰需要每個資料加密原則（DEP）的兩個金鑰。 為了達到此目的，您必須建立兩個 Azure 訂閱。 建議的最佳作法是，您組織中的個別成員可以在每個訂閱中設定一個金鑰。 此外，這些 Azure 訂閱只應該用來管理 Office 365 的加密金鑰。 這會保護您的組織，以防其中一個操作員意外、故意或惡意刪除，或 mismanages 其負責的金鑰。 <br/> 建議您設定只用于管理 Azure 金鑰 Vault 資源的新 Azure 訂閱，以與客戶金鑰搭配使用。 您可以為組織建立的 Azure 訂閱數目沒有實際的限制。 遵循這些最佳作法，可在協助管理客戶金鑰所使用的資源時，將人為錯誤所造成的影響降至最低。
@@ -106,7 +104,7 @@ SharePoint 線上和商務 OneDrive：
   
 若要提交服務以啟用客戶金鑰，請完成下列步驟：
   
-1. 使用 Office 365 組織中具有全域系統管理員許可權的公司或學校帳戶登入[Microsoft FastTrack 入口網站](https://fasttrack.microsoft.com/)。
+1. 在您的組織中使用具有全域系統管理員許可權的公司或學校帳戶，登入[Microsoft FastTrack 入口網站](https://fasttrack.microsoft.com/)。
 
 2. 登入之後，請流覽至**儀表板**。
 
@@ -124,9 +122,9 @@ SharePoint 線上和商務 OneDrive：
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>註冊 Azure 訂閱以使用強制保留期間
 
-暫時或永久遺失根加密金鑰可能是非常中斷或甚至是服務運作的嚴重損壞，而且可能會導致資料遺失。 因此，與客戶金鑰搭配使用的資源需要加強保護。 與客戶金鑰搭配使用的所有 Azure 資源，除了預設設定之外，還提供保護機制。 您可以使用 Azure 訂閱進行標記或註冊，以防止立即和不可撤銷的取消。 這稱為註冊強制保留期間。 在必要保留期間內註冊 Azure 訂閱所需的步驟，需要與 Office 365 小組共同作業。 此程式可能會花費一到五個工作日。 先前，這有時候稱為「不要取消」。
+暫時或永久遺失根加密金鑰可能是非常中斷或甚至是服務運作的嚴重損壞，而且可能會導致資料遺失。 因此，與客戶金鑰搭配使用的資源需要加強保護。 與客戶金鑰搭配使用的所有 Azure 資源，除了預設設定之外，還提供保護機制。 您可以使用 Azure 訂閱進行標記或註冊，以防止立即和不可撤銷的取消。 這稱為註冊強制保留期間。 在必要保留期間內註冊 Azure 訂閱所需的步驟，需要與 Microsoft 365 小組共同作業。 此程式可能會花費一到五個工作日。 先前，這有時候稱為「不要取消」。
   
-在聯繫 Office 365 小組之前，您必須針對每個用客戶金鑰使用的 Azure 訂閱執行下列步驟。 開始之前，請確定您已安裝[Azure PowerShell Az](https://docs.microsoft.com/powershell/azure/new-azureps-module-az)模組。
+在聯繫 Microsoft 365 團隊之前，您必須針對每個用客戶金鑰使用的 Azure 訂閱執行下列步驟。 開始之前，請確定您已安裝[Azure PowerShell Az](https://docs.microsoft.com/powershell/azure/new-azureps-module-az)模組。
   
 1. 使用 Azure PowerShell 登入。 如需相關指示，請參閱[使用 Azure PowerShell 登入](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
 
@@ -169,7 +167,7 @@ SharePoint 線上和商務 OneDrive：
 > [!IMPORTANT]
 > 針對實際執行資料使用特優 SKU 金鑰保存庫和受版權保護的金鑰，只使用標準的 SKU 金鑰保存庫和金鑰進行測試和驗證。
   
-針對每個您將使用客戶金鑰的 Office 365 服務，在您建立的兩個 Azure 訂閱中建立金鑰 vault。 例如，僅限 Exchange Online 和商務用 Skype 或 SharePoint 線上和 OneDrive 僅供商務用，只會建立一對的保險集。 若要同時對 Exchange Online 和 SharePoint 啟用客戶金鑰，您會建立兩組主要保險電子倉庫。
+針對每個要使用客戶金鑰的 Microsoft 365 服務，在您建立的兩個 Azure 訂閱中建立金鑰 vault。 例如，僅限 Exchange Online 和商務用 Skype 或 SharePoint 線上和 OneDrive 僅供商務用，只會建立一對的保險集。 若要同時對 Exchange Online 和 SharePoint 啟用客戶金鑰，您會建立兩組主要保險電子倉庫。
   
 使用金鑰保管的命名慣例，以反映用來與保存庫產生關聯之資料加密原則的預定用途。 如需命名慣例建議，請參閱下列最佳作法一節。
   
@@ -178,7 +176,7 @@ SharePoint 線上和商務 OneDrive：
 建立機碼 Vault 也需要建立 Azure 資源群組，因為重要電子倉庫需要儲存容量（雖然非常小）和重要存放區記錄，如果啟用，也會產生儲存的資料。 最佳作法是 Microsoft 建議使用個別的系統管理員管理每個資源群組，並將系統管理員與管理所有相關客戶金鑰資源的系統管理員對齊。
   
 > [!IMPORTANT]
-> 若要使可用性最大化，您的主要電子倉庫應該位於 Office 365 服務的地區附近。 例如，如果您的 Exchange Online 組織位於北美，請將您的主要電子倉庫放在北美。 如果您的 Exchange Online 組織在歐洲，請將您的主要存放庫放在歐洲。<br/>使用主要保管區的一般前置詞，並包含主要存放區和機碼的使用和範圍的縮寫（例如，存放庫在北美使用的 Contoso SharePoint 服務）、可能的名稱對為 Contoso-O365SP-NA-NA-na-na-NA-NA-NA-NA-NA。 保存庫名稱是 Azure 內全域唯一的字串，因此，您可能需要嘗試所需名稱的變化，以防其他 Azure 客戶已索取所需的名稱。 從2017年7月的電子倉庫名稱無法變更，因此最佳作法是使用書面計畫進行安裝，然後使用第二個人驗證計畫是否正確執行。<br/>如果可能，請在非成對區域中建立您的電子倉庫。 配對的 Azure 區域可提供跨服務失敗網域的高可用性。 因此，區域配對可以視為彼此的備份區域。 這表示位於某個地區的 Azure 資源會透過成對區域自動取得容錯。 基於此原因，針對在地區是成對的資料加密原則中所使用的兩個保存庫選擇地區時，只會使用兩個可用區域的可用性。 大多數地理有兩個地區，所以尚不能選取非成對區域。 如有可能，請選擇兩個不成對的區域，以用於資料加密原則的兩個保存庫。 其優點是共有四個地區的可用性。 如需詳細資訊，請參閱[商務持續性和嚴重損壞修復（BCDR）：](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)目前區域配對清單的 Azure 成對區域。
+> 若要使可用性最大化，您的主要電子倉庫應該位於您的 Microsoft 365 服務區域附近。 例如，如果您的 Exchange Online 組織位於北美，請將您的主要電子倉庫放在北美。 如果您的 Exchange Online 組織在歐洲，請將您的主要存放庫放在歐洲。<br/>使用主要保管區的一般前置詞，並包含主要存放區和機碼的使用和範圍的縮寫（例如，存放庫在北美使用的 Contoso SharePoint 服務）、可能的名稱對為 Contoso-O365SP-NA-NA-na-na-NA-NA-NA-NA-NA。 保存庫名稱是 Azure 內全域唯一的字串，因此，您可能需要嘗試所需名稱的變化，以防其他 Azure 客戶已索取所需的名稱。 從2017年7月的電子倉庫名稱無法變更，因此最佳作法是使用書面計畫進行安裝，然後使用第二個人驗證計畫是否正確執行。<br/>如果可能，請在非成對區域中建立您的電子倉庫。 配對的 Azure 區域可提供跨服務失敗網域的高可用性。 因此，區域配對可以視為彼此的備份區域。 這表示位於某個地區的 Azure 資源會透過成對區域自動取得容錯。 基於此原因，針對在地區是成對的資料加密原則中所使用的兩個保存庫選擇地區時，只會使用兩個可用區域的可用性。 大多數地理有兩個地區，所以尚不能選取非成對區域。 如有可能，請選擇兩個不成對的區域，以用於資料加密原則的兩個保存庫。 其優點是共有四個地區的可用性。 如需詳細資訊，請參閱[商務持續性和嚴重損壞修復（BCDR）：](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)目前區域配對清單的 Azure 成對區域。
   
 ### <a name="assign-permissions-to-each-key-vault"></a>將許可權指派給每個金鑰保存庫
 
@@ -189,7 +187,7 @@ SharePoint 線上和商務 OneDrive：
   > [!IMPORTANT]
   > 指派給主要 vault 管理員的許可權集不包含刪除金鑰的許可權。 這是故意和重要的作法。 刪除加密金鑰通常不會這麼做，因為這樣做會永久銷毀資料。 根據預設，請勿將此許可權授與主要 vault 管理員的最佳作法。 相反地，針對主要 vault 投稿人保留這種情況，而且只要清楚瞭解對結果的瞭解，就只需在短期內將其指派給系統管理員。
   
-  若要將這些許可權指派給 Office 365 組織中的使用者，請使用 Azure PowerShell 登入您的 Azure 訂閱。 如需相關指示，請參閱[使用 Azure PowerShell 登入](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
+  若要將這些許可權指派給組織中的使用者，請使用 Azure PowerShell 登入您的 Azure 訂閱。 如需相關指示，請參閱[使用 Azure PowerShell 登入](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
 
 - 執行 AzKeyVaultAccessPolicy Cmdlet 以指派必要的許可權。
 
@@ -205,7 +203,7 @@ SharePoint 線上和商務 OneDrive：
 
 - 可以變更 Azure Key Vault 自身許可權的**主要 vault 參與者**。 您必須變更這些許可權，因為員工離職或加入您的小組，或在極少的情況下，主要 vault 管理員合法需要刪除或還原金鑰的許可權。 這組重要的 vault 投稿人員必須授與主要 vault 上的**投稿**人角色。 您可以使用 Azure 資源管理員指派此角色。 如需詳細步驟，請參閱[Use Role-Based Access Control，以管理您的 Azure 訂閱資源的存取權](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure)。 建立訂閱的系統管理員會隱含此存取權，以及將其他管理員指派給參與者角色的能力。
 
-- 如果您想要使用客戶金鑰搭配 Exchange Online 和商務用 Skype，您必須授與 Office 365 的許可權，以代表 Exchange Online 和商務用 Skype 使用金鑰 vault。 同樣地，如果您想要使用客戶金鑰與 SharePoint 線上且 OneDrive 商務用，您必須新增 Office 365 的許可權，才能代表 SharePoint 線上及 OneDrive 的商務用金鑰 vault。 若要授與 Office 365 的許可權，請使用下列語法執行**AzKeyVaultAccessPolicy** Cmdlet： 
+- 如果您想要使用客戶金鑰搭配 Exchange Online 和商務用 Skype，您必須授與 Microsoft 365 的許可權，以代表 Exchange Online 和商務用 Skype 使用金鑰 vault。 同樣地，如果您想要使用客戶金鑰與 SharePoint 線上且 OneDrive 商務用，您必須新增 Microsoft 365 的許可權，才能代表 SharePoint 線上及 OneDrive 的商務用金鑰 vault。 若要授與 Microsoft 365 的許可權，請使用下列語法執行**AzKeyVaultAccessPolicy** Cmdlet： 
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
@@ -237,7 +235,7 @@ SharePoint 線上和商務 OneDrive：
   
 若要在金鑰保存庫上啟用虛刪除，請完成下列步驟：
   
-1. 使用 Windows PowerShell 登入您的 Azure 訂閱。 如需相關指示，請參閱[使用 Azure PowerShell 登入](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
+1. 使用 Windows Powershell 登入您的 Azure 訂閱。 如需相關指示，請參閱[使用 Azure PowerShell 登入](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
 
 2. 執行[AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) Cmdlet。 在此範例中，*保存庫名稱*是您要啟用 soft delete 之主要 vault 的名稱：
 
@@ -293,7 +291,7 @@ Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-V
   
 ### <a name="check-the-recovery-level-of-your-keys"></a>檢查機碼的恢復層級
 
-Office 365 要求 Azure Key Vault 訂閱設定為 [未取消]，且客戶機碼使用的金鑰已啟用 [虛刪除]。 您可以查看金鑰上的復原層級，確認這一點。
+Microsoft 365 要求 Azure Key Vault 訂閱設定為 [不要取消]，且客戶機碼使用的金鑰已啟用 [虛刪除]。 您可以查看金鑰上的復原層級，確認這一點。
   
 若要檢查機碼的復原層級，請在 Azure PowerShell 中執行 AzKeyVaultKey 指令程式，如下所示：
   
@@ -367,7 +365,7 @@ Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365SP-NA-VaultA1
 Get-AzKeyVaultKey -VaultName <vault name>
 ```
 
-已到期的金鑰無法由客戶金鑰使用，而且嘗試使用到期金鑰會失敗，而且可能會造成服務中斷。 強烈建議使用與客戶金鑰搭配使用的金鑰沒有到期日。 到期日一經設定，便無法移除，但可以變更為不同的日期。 如果必須使用具有到期日期設定的金鑰，請將 [到期] 值變更為12/31/9999。 到期日期設定為12/31/9999 以外的金鑰，將不會通過 Office 365 驗證。
+已到期的金鑰無法由客戶金鑰使用，而且嘗試使用到期金鑰會失敗，而且可能會造成服務中斷。 強烈建議使用與客戶金鑰搭配使用的金鑰沒有到期日。 到期日一經設定，便無法移除，但可以變更為不同的日期。 如果必須使用具有到期日期設定的金鑰，請將 [到期] 值變更為12/31/9999。 到期日期設定為12/31/9999 以外的金鑰，將不會通過 Microsoft 365 驗證。
   
 若要變更已設定為12/31/9999 以外任何值的到期日，請執行 AzKeyVaultKey 指令[程式](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey)，如下所示：
   
@@ -396,13 +394,13 @@ Azure PowerShell:
   
 ### <a name="create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business"></a>建立資料加密原則（DEP）以搭配 Exchange Online 和商務用 Skype 使用
 
-DEP 與儲存在 Azure Key Vault 中的一組機碼相關聯。 您為 Office 365 中的信箱指派 DEP。 然後，Office 365 會使用原則中所識別的金鑰來加密信箱。 若要建立 DEP，您需要有先前取得的主要 Vault URIs。 如需相關指示，請參閱[取得每個 Azure Key Vault 金鑰的 URI](#obtain-the-uri-for-each-azure-key-vault-key) 。
+DEP 與儲存在 Azure Key Vault 中的一組機碼相關聯。 您為 Microsoft 365 中的信箱指派 DEP。 然後 Microsoft 365 會使用原則中所識別的金鑰來加密信箱。 若要建立 DEP，您需要有先前取得的主要 Vault URIs。 如需相關指示，請參閱[取得每個 Azure Key Vault 金鑰的 URI](#obtain-the-uri-for-each-azure-key-vault-key) 。
   
 記得！ 當您建立 DEP 時，請指定位於兩個不同 Azure 金鑰電子倉庫中的兩個金鑰。 請確定這些機碼位於兩個不同的 Azure 地區，以確保異地冗余。
   
 若要建立 DEP，請遵循下列步驟：
   
-1. 在您的本機電腦上，使用 Office 365 組織中具有全域系統管理員許可權的工作或學校帳戶，以開啟 Windows PowerShell 並執行下列命令，[以連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) 。
+1. 在您的本機電腦上，使用組織中具有全域系統管理員許可權的工作或學校帳戶，並開啟 Windows PowerShell 並執行下列命令，[以連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) 。
 
    ```powershell
    $UserCredential = Get-Credential
@@ -444,7 +442,7 @@ DEP 與儲存在 Azure Key Vault 中的一組機碼相關聯。 您為 Office 36
 
 ### <a name="assign-a-dep-to-a-mailbox"></a>將 DEP 指派給信箱
 
-使用 Set-Mailbox Cmdlet 將 DEP 指派給信箱。 一旦您指派原則之後，Office 365 便可使用 DEP 中指定的金鑰來加密信箱。
+使用 Set-Mailbox Cmdlet 將 DEP 指派給信箱。 一旦您指派原則之後，Microsoft 365 便可使用 DEP 中指定的金鑰來加密信箱。
   
 ```powershell
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
@@ -474,13 +472,13 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
   
 ### <a name="create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo"></a>為商務地區的每一個 SharePoint 線上和 OneDrive 建立資料加密原則（DEP）
 
-您可以將 DEP 與儲存在 Azure Key Vault 中的一組機碼產生關聯。 您將 DEP 套用到一個地理位置（也稱為地理位置）上的所有資料。 如果您使用 Office 365 的多地理位置功能，您可以為每個地理位置建立一個 DEP，使每個地理位置使用不同的金鑰。 如果您不是使用多地理位置，您可以在 Office 365 組織中建立一個 DEP，以用於 SharePoint 線上、商務 OneDrive，以及小組檔案。 Office 365 會使用 DEP 中識別的金鑰，以加密該地理位置的資料。 若要建立 DEP，您需要有先前取得的主要 Vault URIs。 如需相關指示，請參閱[取得每個 Azure Key Vault 金鑰的 URI](#obtain-the-uri-for-each-azure-key-vault-key) 。
+您可以將 DEP 與儲存在 Azure Key Vault 中的一組機碼產生關聯。 您將 DEP 套用到一個地理位置（也稱為地理位置）上的所有資料。 如果您使用 Office 365 的多地理位置功能，您可以為每個地理位置建立一個 DEP，使每個地理位置使用不同的金鑰。 如果您不是使用多地理位置，您可以在組織中建立一個 DEP，以用於 SharePoint 線上、商務 OneDrive 商務及小組檔案。 Microsoft 365 會使用 DEP 中識別的金鑰來加密該地理位置的資料。 若要建立 DEP，您需要有先前取得的主要 Vault URIs。 如需相關指示，請參閱[取得每個 Azure Key Vault 金鑰的 URI](#obtain-the-uri-for-each-azure-key-vault-key) 。
   
 記得！ 當您建立 DEP 時，請指定位於兩個不同 Azure 金鑰電子倉庫中的兩個金鑰。 請確定這些機碼位於兩個不同的 Azure 地區，以確保異地冗余。
   
 若要建立 DEP，您必須使用 Windows PowerShell，以遠端方式從遠端連線至 SharePoint。
   
-1. 在您的本機電腦上，使用 Office 365 組織中具有全域系統管理員許可權的工作或學校帳戶，[連線至 SharePoint Online Powershell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。
+1. 在您的本機電腦上，使用組織中具有全域系統管理員許可權的工作或學校帳戶，[連線至 SharePoint Online Powershell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。
 
 2. 在 Microsoft SharePoint Online 管理命令介面中，執行 SPODataEncryptionPolicy 指令程式，如下所示：
 
@@ -496,12 +494,12 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 ## <a name="related-articles"></a>相關文章
 
-- [使用 Office 365 的客戶金鑰服務加密](customer-key-overview.md)
+- [使用客戶金鑰的服務加密](customer-key-overview.md)
 
-- [管理 Office 365 的客戶金鑰](customer-key-manage.md)
+- [管理客戶金鑰](customer-key-manage.md)
 
-- [滾動或輪替客戶金鑰或可用性金鑰](customer-key-availability-key-roll.md)
+- [滾動或旋轉客戶金鑰或可用性金鑰](customer-key-availability-key-roll.md)
 
 - [深入瞭解可用性金鑰](customer-key-availability-key-understand.md)
 
-- [Office 365 服務加密](office-365-service-encryption.md)
+- [服務加密](office-365-service-encryption.md)

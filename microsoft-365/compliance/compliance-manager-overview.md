@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員是 Microsoft 服務信任入口網站中免費的工作流程型風險評估工具。 合規性管理員可讓您追蹤、指派及驗證與 Microsoft 雲端服務相關的法規遵從性活動。
-ms.openlocfilehash: 7fd8e4e99edd976085cf9fd6fb3b9a0d88debf89
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 31a56f7cba8bb8957d758ca2905853f26d1f8edf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141610"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632988"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合規性管理員（預覽）
 
@@ -43,7 +43,7 @@ ms.locfileid: "43141610"
 - 產生詳盡的 Microsoft Excel 報告，記錄由 Microsoft 和您組織的審計員、管制及其他法規遵從性審查程式所執行的相容性活動。
 
 > [!NOTE]
-> 合規性管理員中提供的客戶動作為建議。在實施之前，您的組織可以評估這些建議在其各項法規環境中的效能。 在合規性管理員中找到的建議不得加以轉譯以保證法規遵從性。
+> 合規性管理員中提供的客戶動作為建議。在實施之前，您的組織可以評估這些建議在其各項法規環境中的效能。 您不應將合規性管理員中找到的建議視為合規性的保證。
 
 ## <a name="relationship-to-compliance-score"></a>與合規性分數的關係
 
@@ -52,7 +52,7 @@ ms.locfileid: "43141610"
 合規性管理員會與合規性分數共用相同的後端。 在這兩個工具的公開預覽階段中，合規性管理員是您管理評估和自訂控制項實施的所在位置。 深入瞭解[合規性分數和合規性管理員之間的關係](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)。
   
 > [!IMPORTANT]
-> 合規性分數不會明確組織符合任何特定標準或法規的絕對度量。 它表示您已採用控制的程度，可降低個人資料和個別隱私權的風險。 沒有任何服務可以保證您符合標準或法規，而且合規性分數不應該以任何方式轉譯為保證。
+> 「合規性分數」的高低並不能用來代表組織合規性絕對符合某個特定的標準或法規。 這代表您採取的控制措施可降低個人資料和個人隱私權暴露在風險中的程度。 沒有任何服務可以保證您符合標準或法規，而且合規性分數不應該以任何方式轉譯為保證。
 
 ## <a name="compliance-manager-components"></a>合規性管理員元件
 

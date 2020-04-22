@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: 將 Office 365 進階威脅防護延伸至 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 中的檔案，讓您的組織可更安全地進行共同作業。
-ms.openlocfilehash: 4c64a4934a472fa5c6ac0f1f718d63300560f6c8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 71e404a402db8c0c0ad01bf1daa415788dfa717b
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636019"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708380"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP
 
@@ -63,7 +63,7 @@ ms.locfileid: "43636019"
 
  自 2018 年的 5 月底起，安全性 &amp; 合規性中心的[隔離](quarantine-email-messages.md)功能已延伸至適用於 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 的 ATP。
 
-當 SharePoint Online、商務用 OneDrive 或 Microsoft Teams 中的檔案被識別為惡意時，ATP 除了會防止檔案開啟或共用之外，該檔案也會包含在隔離項目清單中。 (在安全性 &amp; 合規性中心內，移至 [威脅管理]**** \> [檢閱]**** \> [隔離]****，然後篩選**內容**。)
+當 SharePoint Online、商務用 OneDrive 或 Microsoft Teams 中的檔案被識別為惡意時，ATP 除了會防止檔案開啟或共用之外，該檔案也會包含在隔離項目清單中。 （在&amp;安全性與合規性中心，移至「**威脅管理** \> 」**查看** \> **隔離**及篩選檔案。） **Files**
 
 如果您屬於組織的 Microsoft 365 商務安全小組，而且在[安全性&amp;與合規性中心內指派](permissions-in-the-security-and-compliance-center.md)必要的許可權，您可以從隔離區下載、發行、報告和刪除因 ATP 所偵測為惡意的檔案。
 
@@ -75,7 +75,7 @@ ms.locfileid: "43636019"
 
 ## <a name="next-steps"></a>後續步驟
 
-1. [開啟適用於 SharePoint、OneDrive 及 Microsoft Teams 的 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)
+ - [開啟適用於 SharePoint、OneDrive 及 Microsoft Teams 的 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)
 
-2. [檢視在 SharePoint、OneDrive 或 Microsoft Teams 中偵測到的惡意檔案資訊](malicious-files-detected-in-spo-odb-or-teams.md)
+ - [檢視在 SharePoint、OneDrive 或 Microsoft Teams 中偵測到的惡意檔案資訊](malicious-files-detected-in-spo-odb-or-teams.md)
 

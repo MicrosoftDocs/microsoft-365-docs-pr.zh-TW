@@ -1,5 +1,7 @@
 ---
-title: 用于调查的数据的高级索引
+title: 調查的高級資料索引
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,36 +16,36 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3d562dbc1fc696b1e6d2acccc92f69385da49510
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 278985aa93f8802f78bd632a5fc90dd6be846b21
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076255"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637905"
 ---
-# <a name="advanced-indexing-of-data-for-an-investigation"></a>用于调查的数据的高级索引
+# <a name="advanced-indexing-of-data-for-an-investigation"></a>調查的高級資料索引
 
-由于多种原因，包括存在图像、不支持的文件类型或遇到索引文件大小限制时，实时系统中的内容可以部分编制索引。 在处理高风险数据溢出时，需要确保搜索捕获要调查的所有数据。 将感兴趣的人员添加到数据调查时，将重新处理 Office 365 中被视为部分索引的任何内容，使其完全可搜索。 此过程称为*高级索引。* 
+即時系統中的內容可以部分編制索引，原因很多，包括影像存在、不支援的檔案類型，或是在遇到索引檔案大小限制時。 當您處理高風險資料溢出時，您想要確保搜尋已捕獲所有想要調查的資料。 當相關人員加入資料調查時，會重新處理被視為部分索引的任何內容，使其完全可供搜尋。 此處理程式稱為「*高級索引*」。 
 
-要了解有关 Office 365 和部分索引项中的处理支持的更多内容，请参阅：
+若要深入瞭解處理支援和部分索引項目目的詳細資訊，請參閱：
 
-- [数据调查中支持的文件类型](supported-filetypes-datainvestigations.md)
+- [資料調查中支援的檔案類型](supported-filetypes-datainvestigations.md)
 
 - [位於 Office 365 中內容搜尋的已局部編製索引項目](partially-indexed-items-in-content-search.md)
 
-- [Exchange 搜尋編製索引的檔案格式](https://docs.microsoft.com/en-us/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+- [Exchange 搜尋編製索引的檔案格式](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
-- [SharePoint Server 中預設編目的檔案副檔名及剖析的檔案類型](https://docs.microsoft.com/en-us/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [SharePoint Server 中預設編目的檔案副檔名及剖析的檔案類型](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
-## <a name="viewing-advanced-indexing-results"></a>查看高级索引结果
+## <a name="viewing-advanced-indexing-results"></a>查看高級索引結果
 
-完成高级索引过程后，您可以了解重新处理的有效性。  在"感兴趣的人"索引视图中，该图列出了添加到*混合索引*中的所有项。  混合索引是数据调查（预览）存储重新处理的内容的位置。
+在高級索引處理常式完成之後，您就可以深入瞭解重新處理的有效性。  在重要的 [索引視圖人員] 中，圖表會列出新增至*混合索引*的所有專案。  混合索引是資料調查（預覽）儲存重新處理內容的所在位置。
 
-该图还包括需要修正的项数以及按文件类型划分的另一个错误图表。 有关详细信息，请参阅[处理数据时的错误修正。](error-remediation.md)
+此圖也包含需要修正的專案數，以及另一個依檔案類型的錯誤圖表。 如需詳細資訊，請參閱[在處理資料時進行錯誤修正](error-remediation.md)。
 
-## <a name="updating-advanced-indexes-for-people-of-interest"></a>为感兴趣的人更新高级索引
+## <a name="updating-advanced-indexes-for-people-of-interest"></a>更新感興趣人員的高級索引
 
-将感兴趣的人员添加到数据调查时，将重新处理所有部分索引的项目。 但是，随着时间的推移，可能会将更多部分索引的项目添加到用户的邮箱或 OneDrive 帐户中。  如果需要，可以更新索引。
+當相關人員加入資料調查時，會重新處理所有部分索引項目目。 不過，隨著時間的推移，可將更多的索引項目目新增至使用者的信箱或 OneDrive 帳戶。  如有需要，您可以更新索引。
 
 > [!NOTE]
-> 更新感兴趣的人员索引是一个长时间运行的过程。 建议您在调查中每天更新索引多次。
+> 更新感興趣的索引人員會執行很長的處理常式。 建議您不要在調查中每日更新一次以上的索引。

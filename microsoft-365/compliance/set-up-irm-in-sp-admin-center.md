@@ -17,28 +17,28 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: 瞭解如何透過 Microsoft Azure Active Directory Rights Management Services （RMS）使用 SharePoint Online IRM，以保護 SharePoint 清單和文件庫。
-ms.openlocfilehash: 3705c08b64ffbf719dbce91396c86976db14fea0
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: c981ceefde2cedb5f6c8731fd9a5ad9318174120
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610620"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634775"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
 ## <a name="introduction"></a>簡介
 
-在 SharePoint Online 中，IRM 保護會套用至清單和文件庫層級的檔案。 您的組織在使用 IRM 保護之前，必須先設定 Rights Management。 IRM 依賴 azure Rights Management service 從 Azure 資訊保護來加密及指派使用限制。 有些 Office 365 方案包含 Azure 版權管理，但並非全部。 若要深入瞭解，請參閱[Office 應用程式和服務對 Azure 版權管理的支援方式](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support)。
+在 SharePoint Online 中，IRM 保護會套用至清單和文件庫層級的檔案。 您的組織在使用 IRM 保護之前，必須先設定 Rights Management。 IRM 依賴 azure Rights Management service 從 Azure 資訊保護來加密及指派使用限制。 有些 Microsoft 365 方案包含 Azure 版權管理，但並非全部。 若要深入瞭解，請參閱[Office 應用程式和服務對 Azure 版權管理的支援方式](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support)。
   
 ## <a name="turn-on-irm-service-using-sharepoint-admin-center"></a>使用 SharePoint 系統管理中心開啟 IRM 服務
 
-您的組織必須先為組織啟用 Rights Management 服務，才能 SharePoint 清單和文件庫進行 IRM 保護。 若要深入瞭解，請參閱[啟用 Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service)。 您必須使用具有 Office 365 全域系統管理員許可權的工作或學校帳戶，才能啟用 Rights Management 服務。 否則，您將無法在 SharePoint 線上使用 IRM 功能。
+您的組織必須先為組織啟用 Rights Management 服務，才能 SharePoint 清單和文件庫進行 IRM 保護。 若要深入瞭解，請參閱[啟用 Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service)。 您必須使用具有全域系統管理員許可權的工作或學校帳戶，才能啟用 Rights Management 服務。 否則，您將無法在 SharePoint 線上使用 IRM 功能。
   
 在啟動 Rights Management 服務後，請登入 SharePoint 系統管理中心，以開啟 IRM。
   
-1. 以全域管理員或 SharePoint 系統管理員身分登入 Office 365。
+1. 以全域管理員身分登入，或 SharePoint 管理員登入。
     
-2. 在左上角選取應用程式啟動器圖示 ![Office 365 中的應用程式啟動器圖示](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png)，然後選擇 [系統管理員]**** 來開啟 Microsoft 365 系統管理中心。 (如果您沒有看到 [系統管理員] 磚，則您沒有組織中的 Office 365 系統管理員權限。) 
+2. 在左上角選取應用程式啟動器圖示 ![Office 365 中的應用程式啟動器圖示](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png)，然後選擇 [系統管理員]**** 來開啟 Microsoft 365 系統管理中心。 （如果您沒有看到 [系統管理] 磚，表示您的組織不具備系統管理員許可權。） 
     
 3. 在左窗格中，選擇 [系統**管理中心** \> ] **SharePoint**。
     
@@ -57,7 +57,7 @@ ms.locfileid: "42610620"
   
 您無法在瀏覽器中使用 Office 來建立或編輯已啟用 IRM 之文件庫中的檔。 相反地，一次只能有一個人下載及編輯 IRM 加密的檔案。 使用存回及取出，以管理*共同撰寫*或在多個使用者中製作。 
   
-當您從受 IRM 保護的文件庫下載 PDF 檔案時，Office 365 會建立受保護的 PDF 檔案。 檔案的副檔名不會變更，但檔會受到保護。 若要查看此檔案，您需要有 Azure 資訊保護檢視器、完整 Azure 資訊保護用戶端或其他支援查看受保護 PDF 檔案的應用程式。 
+當您從受 IRM 保護的程式庫下載 PDF 檔案時，Microsoft 365 會建立受保護的 PDF 檔案。 檔案的副檔名不會變更，但檔會受到保護。 若要查看此檔案，您需要有 Azure 資訊保護檢視器、完整 Azure 資訊保護用戶端或其他支援查看受保護 PDF 檔案的應用程式。 
   
 線上 SharePoint 支援下列檔案類型的加密：
   

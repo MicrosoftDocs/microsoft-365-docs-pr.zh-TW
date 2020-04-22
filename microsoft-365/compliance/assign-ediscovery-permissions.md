@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 使用安全性 & 合規性中心，指派執行 eDiscovery 相關工作所需的許可權。
-ms.openlocfilehash: 30d1a288236678c3daef0a9aaa134d49fea127af
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: dc7eb61a006b41e519c76e70c768b551ff5126b9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097206"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631844"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全性 & 規範中心指派 eDiscovery 許可權
 
@@ -55,7 +55,7 @@ ms.locfileid: "43097206"
 
 1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用公司或學校帳戶登入 Office 365。
+2. 使用您的公司或學校帳戶登入。
     
 3. 在安全性與合規性中心的左窗格中，選取 [**許可權**]，然後選取 [ **eDiscovery 管理員**] 旁邊的核取方塊。
     
@@ -81,7 +81,7 @@ ms.locfileid: "43097206"
 |匯出 <br/> | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Hold <br/>  |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |預覽 <br/>  | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Review <br/>  | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
+|檢閱 <br/>  | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
 |RMS 解密 <br/>  ||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
 |搜尋和清除 <br/> | <br/> | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
 ||||
@@ -94,7 +94,7 @@ ms.locfileid: "43097206"
 
 ### <a name="compliance-search"></a>合規性搜尋
 
-此角色可讓使用者在安全性 & 合規性中心內執行「內容搜尋」工具，以搜尋信箱和公用資料夾、SharePoint 線上網站 OneDrive、商務用 Skype、商務用 Skype 交談、Office 365 群組和 Microsoft 團隊，以及 Yammer 群組。 此角色可讓使用者取得搜尋結果的預估，並建立匯出報告，但需要其他角色才能啟動內容搜尋動作，例如預覽、匯出或刪除搜尋結果。
+此角色可讓使用者在安全性 & 合規性中心內執行內容搜尋工具，以搜尋信箱和公用資料夾、SharePoint 線上網站 OneDrive、商務用 Skype、商務用 Skype 交談、Microsoft 365 群組和 Microsoft 團隊，以及 Yammer 群組。 此角色可讓使用者取得搜尋結果的預估，並建立匯出報告，但需要其他角色才能啟動內容搜尋動作，例如預覽、匯出或刪除搜尋結果。
 
 獲指派符合性搜尋角色但沒有「預覽」角色的使用者可以預覽已被指派「預覽」角色的使用者在其中啟動預覽動作的搜尋結果。 沒有「預覽」角色的使用者可以在建立初始預覽動作後的兩周內預覽結果。
 
@@ -110,7 +110,7 @@ ms.locfileid: "43097206"
 
 ### <a name="hold"></a>Hold
 
-此角色可讓使用者將內容保留在信箱、公用資料夾、網站、商務用 Skype 交談和 Office 365 群組中。 內容處於保留狀態時，內容擁有者仍可修改或刪除原始內容，但是會保留內容直到移除保留或保留期間到期為止。 
+此角色可讓使用者將內容保留在信箱、公用資料夾、網站、商務用 Skype 交談和 Microsoft 365 群組中。 內容處於保留狀態時，內容擁有者仍可修改或刪除原始內容，但是會保留內容直到移除保留或保留期間到期為止。 
 
 如需有關保留的詳細資訊，請參閱：
 
@@ -122,7 +122,7 @@ ms.locfileid: "43097206"
 
 此角色可讓使用者查看內容搜尋所傳回的專案清單。 他們也可以開啟並查看清單中的每個專案，以查看其內容。
 
-### <a name="review"></a>Review
+### <a name="review"></a>檢閱
 
 此角色可讓使用者在[高級 ediscovery （古典）](office-365-advanced-ediscovery.md) （也稱為「*高級 ediscovery v1*」）中存取案例資料。 此角色的主要目的是讓使用者能夠存取高級 eDiscovery （古典）。 獲指派此角色的使用者可以在其成員的安全性 & 規範中心內，查看並開啟「 **eDiscovery** 」頁面上的案例清單。 使用者在安全性 & 規範中心存取案例後，可選取 [**切換至高級 ediscovery** ] 以存取及分析 advanced ediscovery （古典）中的案例資料。 此角色不允許使用者預覽與案例相關聯的內容搜尋結果，或是進行其他內容搜尋或案例管理工作。
 
@@ -135,7 +135,7 @@ ms.locfileid: "43097206"
 
 ### <a name="search-and-purge"></a>搜尋和清除
 
-此角色可讓使用者批量移除符合內容搜尋準則的資料。 如需詳細資訊，請參閱[在 Office 365 組織中搜尋並刪除電子郵件訊息](search-for-and-delete-messages-in-your-organization.md)。 
+此角色可讓使用者批量移除符合內容搜尋準則的資料。 如需詳細資訊，請參閱[搜尋並刪除組織中的電子郵件訊息](search-for-and-delete-messages-in-your-organization.md)。 
 
 ## <a name="more-information"></a>詳細資訊
 
@@ -151,7 +151,7 @@ ms.locfileid: "43097206"
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    不支援 Exchange 通訊群組和 Office 365 群組。 您必須使用擁有郵件功能的安全性群組，您可以使用`New-DistributionGroup -Type Security`命令在 Exchange Online PowerShell 中建立。 您也可以在 Exchange 系統管理中心或 Microsoft 365 系統管理中心中，建立已啟用郵件功能的安全性群組（及新增成員）。 在您建立新的已啟用郵件功能的安全性後，可能需要長達60分鐘，才可將其新增至 eDiscovery 管理員角色群組。 
+    不支援 Exchange 通訊群組和 Microsoft 365 群組。 您必須使用擁有郵件功能的安全性群組，您可以使用`New-DistributionGroup -Type Security`命令在 Exchange Online PowerShell 中建立。 您也可以在 Exchange 系統管理中心或 Microsoft 365 系統管理中心中，建立已啟用郵件功能的安全性群組（及新增成員）。 在您建立新的已啟用郵件功能的安全性後，可能需要長達60分鐘，才可將其新增至 eDiscovery 管理員角色群組。 
     
     也如先前所述，您無法使用安全性 & 合規性中心 PowerShell 中的**載入 eDiscoveryCaseAdmin**指令程式，讓 eDiscovery 管理員成為啟用郵件功能的安全性群組。 您只可以將個別使用者新增為 eDiscovery 管理員。 
     

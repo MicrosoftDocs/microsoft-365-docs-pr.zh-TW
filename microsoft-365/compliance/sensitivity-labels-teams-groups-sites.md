@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Office 365 群組中的內容。
-ms.openlocfilehash: 0ac1d9f605c32664115086057b7c17355d495c00
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 69ab8dcecf95f02965254928110802bfd0308b8b
+ms.sourcegitcommit: b8aa905b7c9c59def56490670b928b0b7daa7d0c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106131"
+ms.lasthandoff: 04/19/2020
+ms.locfileid: "43558762"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>使用敏感度標籤來保護 Microsoft Teams、Office 365 群組和 SharePoint 網站中的內容 (公開預覽)
 
@@ -54,7 +54,9 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
 
 1. 由於此功能使用 Azure AD 功能，請依照 Azure AD 文件中的指示來啟用預覽：[將敏感度標籤指派到 Azure Active Directory 中的 Office 365 群組 (預覽)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)。
 
-2. 開啟具有 **[以系統管理員​​身分執行]​​** 選項的 PowerShell 工作階段，使用具備全域系統管理員權限的公司或學校帳戶連線至安全性與合規性中心。 例如：
+2. 現在[連線至 Office 365 安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 
+    
+    例如，在您以系統管理員身分執行的 PowerShell 工作階段中，使用全域系統管理員帳戶登入：
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -62,8 +64,6 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session -DisableNameChecking
     ```
-    
-    如需完整指示，請參閱[連線到 Office 365 安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 3. 執行下列命令以將您的敏感度標籤同步處理到 Azure AD，以便與 Office 365 群組搭配使用：
     
@@ -183,30 +183,44 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
 
 ## <a name="change-site-and-group-settings-for-a-label"></a>變更標籤的網站和群組設定
 
-每當您變更標籤的網站和群組設定時，您必須執行下列 PowerShell 命令，以便您的小組、網站和群組可以使用新的設定。 最佳做法是，不要在將標籤套用至數個小組、群組或網站之後，變更網站和群組設定。
+每當您變更標籤的網站和群組設定時，您必須執行下列 PowerShell 命令，以便您的小組、網站和群組可以使用新的設定。 最佳做法是，不要在將敏感度標籤套用至數個小組、群組或網站之後，變更該標籤的網站和群組設定。
 
-1. 在您開啟之具有 **[以系統管理員​​身分執行]** 選項的 PowerShell 工作階段中，執行下列命令以連線至 Office 365 安全性與合規性中心 PowerShell，並取得敏感度標籤及其 GUID 清單。
+1. 第一，[連接到 Office 365 安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 
+    
+    例如，在您以系統管理員身分執行的 PowerShell 工作階段中，使用全域系統管理員帳戶登入：
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
     $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Authentication Basic -AllowRedirection -Credential $UserCredential
-    Import-PSSession $Session
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
+    ```
+
+2. 透過使用 [Get-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-label?view=exchange-ps) Cmdlet，取得敏感度標籤和其 GUID 的清單：
+    
+    ```powershell
     Get-Label |ft Name, Guid
     ```
 
-2. 記下您已變更之標籤的 GUID。
+3. 記下您已變更之標籤的 GUID。
 
-3. 現在連線到 Exchange Online PowerShell 並執行 Set-unifiedgroup Cmdlet，然後指定您的標籤 GUID 來取代 "e48058ea-98e8-4940-8db0-ba1310fd955e" 的 GUID 範例： 
+4. 現在[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+    
+    例如：
     
     ```powershell
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session
+    ```
+    
+5. 執行 [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-unifiedgroup?view=exchange-ps) Cmdlet，指定您的標籤 GUID 來取代範例 GUID "e48058ea-98e8-4940-8db0-ba1310fd955e"： 
+    
+    ```powershell
     $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
     ```
 
-4. 針對每個群組，重新套用敏感度標籤，然後指定您的標籤 GUID 來取代 "e48058ea-98e8-4940-8db0-ba1310fd955e" 的 GUID 範例：
+6. 針對每個群組，重新套用敏感度標籤，然後指定您的標籤 GUID 來取代 "e48058ea-98e8-4940-8db0-ba1310fd955e" 的 GUID 範例：
     
     ```powershell
     foreach ($g in $groups)
@@ -240,17 +254,17 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
 - Exchange 系統管理中心
 
 
-## <a name="classic-azure-ad-site-classification"></a>傳統 Azure AD 網站分類
+## <a name="classic-azure-ad-group-classification"></a>傳統 Azure AD 群組分類
 
-啟用此預覽時，Office 365 不再對新群組和 SharePoint 網站支援舊分類。 不過，現有的群組和網站仍會顯示舊的分類，除非您轉換它們以使用敏感度標籤。 舊的類別包括您設定的「新式」網站分類，可能是透過 Azure AD PowerShell 或 PnP 核心程式庫所設定，其中定義了 `ClassificationList` 設定的值。
+啟用此預覽時，Office 365 不再對新 Office 365 群組和 SharePoint 網站支援舊分類。 不過，現有的群組和網站仍會顯示舊的分類值，除非您轉換它們以使用敏感度標籤。
 
-例如，在 PowerShell 中：
+如需您先前可能使用的 SharePoint 舊群組分類範例，請參閱 [SharePoint 「新式」網站分類](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)。
+
+這些分類是使用 Azure AD PowerShell 或 PnP 核心程式庫來設定，並定義 `ClassificationList` 設定的值。 如果您的租用戶已定義分類值，當您從 [AzureADPreview PowerShell 模組](https://www.powershellgallery.com/packages/AzureADPreview)執行下列命令時，會顯示這些值：
 
 ```powershell
    ($setting["ClassificationList"])
 ```
-
-如需舊分類方法的詳細資訊，請參閱 [SharePoint「新式」網站分類](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)。
 
 若要將舊分類轉換成敏感度標籤，請執行下列其中一項動作：
 
@@ -268,35 +282,42 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
 
 #### <a name="use-powershell-to-convert-classifications-for-office-365-groups-to-sensitivity-labels"></a>使用 PowerShell 將 Office 365 群組的分類轉換成敏感度標籤
 
-1. 請確認執行 SharePoint Online 管理命令介面版本 16.0.19418.12000 或更新版本。 如果您已有最新版本，請跳到步驟 4。
-
-2. 如果您已安裝來自 PowerShell 資源庫的舊版 SharePoint Online 管理命令介面，您可以執行下列 Cmdlet 來更新模組。
+1. 第一，[連接到 Office 365 安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 
     
-    ```PowerShell
-    Update-Module -Name Microsoft.Online.SharePoint.PowerShell
-    ```
-
-3. 如果您安裝的是來自 Microsoft 下載中心的舊版 SharePoint Online 管理命令介面，請移至 **[新增或移除程式]**，並解除安裝 [SharePoint Online 管理命令介面]。 然後，從[下載中心](https://go.microsoft.com/fwlink/p/?LinkId=255251)下載 SharePoint Online 管理命令介面。
-
-4. 使用擁有 Office 365 中的全域系統管理員或 SharePoint 系統管理員權限的公司或學校帳戶，連線到 SharePoint Online 管理命令介面。 若要了解如何進行，請參閱[開始使用 SharePoint Online 管理命令介面](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
-
-5. 執行下列命令來取得敏感度標籤及其 GUID 的清單。
-
-    ```PowerShell
+    例如，在您以系統管理員身分執行的 PowerShell 工作階段中，使用全域系統管理員帳戶登入：
+    
+    ```powershell
     Set-ExecutionPolicy RemoteSigned
     $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Authentication Basic -AllowRedirection -Credential $UserCredential
-    Import-PSSession $Session
-    Get-Label |ft Name, Guid  
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
     ```
 
-6. 記下您要套用至 Office 365 群組的敏感度標籤 GUID。
+2. 透過使用 [Get-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-label?view=exchange-ps) Cmdlet，取得敏感度標籤和其 GUID 的清單：
+    
+    ```powershell
+    Get-Label |ft Name, Guid
+    ```
 
-7. 使用下列命令做為範例，以取得目前具有「一般」分類的群組清單：
+3. 記下您要套用至 Office 365 群組的敏感度標籤 GUID。
 
-   ```PowerShell
-   $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
-   ```
+4. 現在[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+    
+    例如：
+    
+    ```powershell
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session
+    ```
+
+5. 執行 [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-unifiedgroup?view=exchange-ps) Cmdlet，取得擁有您指定分類之一的 Office 365 群組清單。
+    
+    例如，若要取得具有「General」分類的 Office 365 群組清單： 
+    
+    ```powershell
+    $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
+    ```
 
 6. 針對每個群組，新增新的敏感度標籤 GUID。 例如：
 
@@ -304,6 +325,8 @@ Microsoft Teams、Office 365 群組和 SharePoint 網站的敏感度標籤會逐
     foreach ($g in $groups)
     {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "457fa763-7c59-461c-b402-ad1ac6b703cc"}
     ```
+
+7. 針對其餘的群組分類重複步驟 5 和 6。
 
 ## <a name="auditing-sensitivity-label-activities"></a>稽核敏感度標籤活動
 

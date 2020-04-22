@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: 深入了解安全性與合規性中心的總管和即時偵測。
-ms.openlocfilehash: a7958d516177534cafc9d40fe335abbff06b4db6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2d75a5e05bb3fce85d52856afabc6aba13594f26
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631166"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708556"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
 
@@ -240,4 +240,4 @@ ms.locfileid: "43631166"
 - **所有的電子郵件**view 都可用於**威脅瀏覽器**（而不是**即時**的偵測報告中）。
 - **威脅瀏覽器**中包含更多篩選功能和可用的動作。
 
-如需詳細資訊，請參閱[Office 365 ATP 服務說明：各高級威脅防護（ATP）方案中的功能可用性](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+如需詳細資訊，請參閱[Office 365 ATP 服務說明：各高級威脅防護（ATP）方案中的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。

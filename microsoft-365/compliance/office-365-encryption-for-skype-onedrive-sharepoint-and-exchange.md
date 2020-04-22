@@ -1,5 +1,5 @@
 ---
-title: Office 365 針對 Skype、OneDrive、SharePoint 和 Exchange 的加密
+title: Skype、OneDrive、SharePoint 和 Exchange 的加密
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,16 +17,16 @@ ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
 description: 摘要： Skype、OneDrive、SharePoint 和 Exchange Online 加密的描述。
-ms.openlocfilehash: 4a8dbc2fbe204b09b30eee4ed7ce2136d0ec69f9
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 13c46df74861120b6f5c2fbe7132f912ef29dde3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604160"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637283"
 ---
-# <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>商務用 Skype、商務用 OneDrive、SharePoint 線上和 Exchange Online 的 Office 365 加密
+# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>商務用 Skype、商務用 OneDrive、SharePoint Online 與 Exchange Online 的加密
 
-Office 365 是安全性非常高的環境，在多個層級中提供廣泛的保護，包括：實體資料中心安全性、網路安全性、存取安全性、應用程式安全性以及資料安全性。
+Microsoft 365 是高度安全的環境，可提供多層的廣泛保護：實體資料中心安全性、網路安全性、存取安全性、應用程式安全性和資料安全性。
 
 ## <a name="skype-for-business"></a>商務用 Skype
 
@@ -36,7 +36,7 @@ Office 365 是安全性非常高的環境，在多個層級中提供廣泛的保
 
 在 SharePoint Online 中的所有客戶檔案，都是以唯一的、每個副檔名為單一租使用者的金鑰保護。 這些機碼是由 SharePoint 線上服務建立及管理，或由客戶使用、建立及管理客戶金鑰。 上載檔案時，會在上傳要求的內容中 SharePoint 線上執行加密，然後再將其傳送至 Azure 儲存體。 下載檔案時，SharePoint 線上會根據唯一的檔識別碼從 Azure 儲存體檢索加密的客戶資料，並在將客戶資料傳送給使用者前解密客戶資料。 Azure 儲存區沒有能力解密，甚至可識別或瞭解客戶資料。 所有的加密和解密都會發生在強制租使用者隔離的相同系統中，也就是 Azure Active Directory 和 SharePoint Online。
 
-Office 365 中的數個工作負載會在 SharePoint 線上中儲存資料，包括 Microsoft 團隊，可將所有檔案儲存在 SharePoint 線上中，並為商務 OneDrive 使用 SharePoint 線上存放。 所有儲存在 SharePoint Online 中的客戶資料都會以加密方式（包含一或多個 AES 256 位金鑰）進行加密，並依下列方式分散到整個資料中心。 （此加密處理常式的每一個步驟都是驗證 FIPS 140-2 層級2。 如需有關 FIPS 140-2 規範的詳細資訊，請參閱[fips 140-2 相容性](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105))。）
+Microsoft 365 中的數個工作負載會在線上 SharePoint，包括 Microsoft 團隊，可將所有檔案儲存在 SharePoint Online 中，並為商務 OneDrive 使用 SharePoint 線上存放。 所有儲存在 SharePoint Online 中的客戶資料都會以加密方式（包含一或多個 AES 256 位金鑰）進行加密，並依下列方式分散到整個資料中心。 （此加密處理常式的每一個步驟都是驗證 FIPS 140-2 層級2。 如需有關 FIPS 140-2 規範的詳細資訊，請參閱[fips 140-2 相容性](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105))。）
 
 - 每個檔案都會分割成一或多個區塊，視檔案大小而定。 每個區塊都會以其專屬唯一的 AES 256 位金鑰加密。
 - 更新檔案時，會以相同的方式處理更新：此變更會分割成一或多個區塊，而且每個區塊都會以個別的唯一金鑰加密。
@@ -83,6 +83,6 @@ BitLocker 憑證，用來保護資料中心內機器上的實體磁片量，會�
 
 Exchange Online 會使用 BitLocker 用於所有信箱資料，而 BitLocker 設定會在[BitLocker 進行加密](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)中描述。 服務層級加密會加密信箱層級的所有信箱資料。 
 
-除了服務加密之外，Office 365 還支援客戶金鑰，這是以服務加密為基礎。 客戶金鑰是 Microsoft 管理的金鑰選項，用於 Exchange Online 服務加密，也就是在 Microsoft 藍圖上。 這種加密方法可提供 BitLocker 所提供的增強保護，因為它提供伺服器管理員與解密資料所需的加密金鑰的隔離，而且會將加密直接套用至資料（如相比之下 BitLocker，它會在邏輯磁片區上套用加密）從 Exchange 伺服器複製的任何客戶資料仍保持加密。
+除了服務加密之外，Microsoft 365 還支援客戶金鑰，這是以服務加密為基礎。 客戶金鑰是 Microsoft 管理的金鑰選項，用於 Exchange Online 服務加密，也就是在 Microsoft 藍圖上。 這種加密方法可提供 BitLocker 所提供的增強保護，因為它提供伺服器管理員的隔離和解密資料所需的加密金鑰，而且因為加密是直接套用至資料（與 BitLocker （這會在邏輯磁片磁片區上套用加密），所以從 Exchange 伺服器複製的任何客戶資料仍保持加密。
 
 Exchange Online 服務加密的範圍是在 Exchange Online 中儲存在 rest 上的客戶資料。 （商務用 Skype 存放區幾乎是使用者在 Exchange Online 信箱中所產生的所有內容，因此會繼承 Exchange Online 的服務加密功能。）

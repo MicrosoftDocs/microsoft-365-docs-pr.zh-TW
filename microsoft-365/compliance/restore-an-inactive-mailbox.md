@@ -1,5 +1,7 @@
 ---
-title: 在 Office 365 中还原非活动邮箱
+title: 還原非作用中的信箱
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,122 +15,118 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
-description: 如果新员工或其他用户需要访问 Office 365 中非活动邮箱的内容，则可以将非活动邮箱的内容还原（或合并）到现有邮箱。
-ms.openlocfilehash: 6bd147296e4324c5f75ff808768f8899cf9b59fd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 如果新的員工或其他使用者需要存取 Office 365 中非使用中信箱的內容，您可以將非使用中信箱的內容還原（或合併）到現有的信箱。
+ms.openlocfilehash: 3352dfa582fb09a5f0a6c7ecbd807ed80593351f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078175"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621315"
 ---
-# <a name="restore-an-inactive-mailbox-in-office-365"></a>在 Office 365 中还原非活动邮箱
+# <a name="restore-an-inactive-mailbox"></a>還原非作用中的信箱
 
-非活动邮箱（一种软删除邮箱）用于在前员工离开您的组织后保留其电子邮件。 如果另一名员工承担离职员工的工作职责，或者该员工返回您的组织，则可以通过两种方式将非活动邮箱的内容提供给用户： 
+非使用中的信箱（也就是虛刪除信箱的類型）是用來在離開組織之後，保留離職員工的電子郵件。 如果另一位員工承擔已離開員工的工作責任，或是該員工回到您的組織，有兩種方式可以讓使用者使用非使用中信箱的內容：
   
-- **还原非活动邮箱**如果其他员工承担离职员工的工作职责，或者如果其他用户需要访问非活动邮箱的内容，则可以将非活动邮箱的内容还原（或合并）到现有邮箱。 还可以从非活动邮箱还原存档。 还原后，非活动邮箱将保留并保留为非活动邮箱。 本主题介绍还原非活动邮箱的过程。 
-    
-- **恢复非活动邮箱**如果离职员工返回您的组织，或者雇用新员工来承担离职员工的工作职责，则可以恢复非活动邮箱的内容。 此方法将非活动邮箱转换为包含非活动邮箱内容的新邮箱。 它會復原之後，非使用中的信箱不存在。 有关分步过程，请参阅在 Office [365 中恢复非活动邮箱。](recover-an-inactive-mailbox.md)
-    
-有关还原和恢复非活动邮箱之间的差异的详细信息，请参阅本文中**的详细信息**部分。 
+- **還原非使用中的信箱**如果另一位員工承擔已離開員工的工作責任，或是其他使用者必須存取非使用中信箱的內容，您可以將非使用中信箱的內容還原（或合併）到現有的信箱。 您也可以從非使用中的信箱還原封存。 還原後，非作用中的信箱會保留並保留為非使用中的信箱。 本主題說明還原非使用中信箱的程式。
+
+- **復原非使用中的信箱**如果已離開員工回到您的組織，或是聘用新的員工來承擔已離開員工的工作責任，您可以復原非使用中信箱的內容。 這個方法會將非使用中的信箱轉換成包含非使用中信箱內容的新信箱。 它會復原之後，非使用中的信箱不存在。 如需逐步程式，請參閱[復原 Office 365 中的非使用中信箱](recover-an-inactive-mailbox.md)。
+
+如需還原和復原非使用中信箱之差異的詳細資訊，請參閱本文中的**詳細資訊**一節。
   
 ## <a name="before-you-begin"></a>開始之前
 
-- 您必须使用 Exchange 联机电源外壳来还原非活动邮箱。 不能使用 Exchange 管理中心 （EAC）。 有关分步说明，请参阅[连接到交换在线 PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
-    
-- 在 Exchange 联机 PowerShell 中运行以下命令，以获取组织中非活动邮箱的标识信息。 
-    
-    ```
+- 您必須使用 Exchange Online PowerShell 還原非使用中的信箱。 您無法使用 Exchange 系統管理中心（EAC）。 如需逐步指示，請參閱[Connect To Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
+
+- 在 Exchange Online PowerShell 中執行下列命令，以取得組織中非使用中信箱的身分識別資訊。
+
+    ```powershell
     Get-Mailbox -InactiveMailboxOnly | FL Name,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
     ```
 
-     使用此命令返回的信息还原特定的非活动邮箱。
-    
-- 有关非活动邮箱的详细信息，请参阅 Office [365 中的非活动邮箱。](inactive-mailboxes-in-office-365.md)
-    
+     使用由此命令傳回的資訊，還原特定的非使用中信箱。
+
+- 如需非使用中信箱的相關資訊，請參閱[Office 365 中的非使用中信箱](inactive-mailboxes-in-office-365.md)。
+
 ## <a name="restore-an-inactive-mailbox"></a>還原非作用中的信箱
 
-_使用"源邮箱"_ 和"_目标邮箱"_ 参数使用**New-邮箱还原请求**cmdlet 将非活动邮箱的内容还原到现有邮箱。 有关使用此 cmdlet 的详细信息，请参阅[新建邮箱还原请求](https://go.microsoft.com/fwlink/?linkid=856298)。
+使用**New-MailboxRestoreRequest** Cmdlet 搭配_SourceMailbox_及_TargetMailbox_參數，將非使用中信箱的內容還原到現有信箱。 如需使用此 Cmdlet 的詳細資訊，請參閱[New-MailboxRestoreRequest](https://go.microsoft.com/fwlink/?linkid=856298)。
   
-1. 创建包含非活动邮箱属性的变量。 
-    
-    ```
+1. 建立包含非使用中信箱之屬性的變數。
+
+    ```powershell
     $InactiveMailbox = Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox>
     ```
 
     > [!IMPORTANT]
-    > 在前面的命令中，**使用"可分辨名称"****或"ExchangeGUID"** 属性的值来标识非活动邮箱。 这些属性对于组织中的每个邮箱都是唯一的，而活动邮箱和非活动邮箱可能具有相同的主 SMTP 地址。 
+    > 在上述命令中，使用**DistinguishedName**或**ExchangeGUID**屬性的值來識別非使用中的信箱。 這兩個屬性對於組織中的每個信箱都是唯一的，而使用中和非使用中的信箱可能會有相同的主要 SMTP 位址。
   
-2. 将非活动邮箱的内容还原到现有邮箱。 非活动邮箱（源邮箱）的内容将合并到现有邮箱（目标邮箱）中的相应文件夹中。
-    
-    ```
+2. 將非使用中信箱的內容還原到現有的信箱。 非使用中信箱的內容（來源信箱）將會合並至現有信箱中的對應資料夾（目標信箱）。
+
+    ```powershell
     New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -TargetMailbox newemployee@contoso.com -AllowLegacyDNMismatch
     ```
-   
-   或者，您可以在目标邮箱中指定一个顶级文件夹，用于从非活动邮箱还原内容。 如果目标邮箱中不存在指定的目标文件夹或目标文件夹结构，则在还原过程中创建该文件夹或目标文件夹结构。 
-    
-    本示例将邮箱项目和子文件夹从非活动邮箱复制到目标邮箱的顶级文件夹结构中名为"非活动邮箱"的文件夹。
-    
-   ```
+
+   或者，您也可以指定要從非使用中的信箱還原內容之目標信箱中的最上層資料夾。 如果指定的目的檔案夾或目的檔案夾結構尚未存在於目標信箱中，則會在還原程式期間建立。 
+
+    此範例會將非使用中信箱的信箱專案及子資料夾，複製到目標信箱的最上層資料夾結構中名為 "非使用中信箱" 的資料夾。
+
+   ```powershell
    New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -TargetMailbox newemployee@contoso.com -TargetRootFolder "Inactive Mailbox" -AllowLegacyDNMismatch
    ```
-  
-## <a name="restore-the-archive-from-an-inactive-mailbox"></a>从非活动邮箱还原存档
 
-如果非活动邮箱具有存档邮箱，也可以将其还原到现有邮箱的存档邮箱。 要从非活动邮箱还原存档，必须将_SourceIsArchive_和_TargetIsAchive_开关添加到用于还原非活动邮箱的命令。 
+## <a name="restore-the-archive-from-an-inactive-mailbox"></a>從非使用中的信箱還原封存
+
+如果非使用中的信箱具有封存信箱，您也可以將它還原到現有信箱的封存信箱。 若要從非使用中的信箱還原封存，您必須新增_SourceIsArchive_及_TargetIsAchive_切換至用來還原非使用中信箱的命令。
   
-1. 创建包含非活动邮箱属性的变量。 
-    
-    ```
+1. 建立包含非使用中信箱之屬性的變數。
+
+    ```powershell
     $InactiveMailbox = Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox>
     ```
 
-    > [!IMPORTANT]
-    > 在前面的命令中，**使用"可分辨名称"****或"ExchangeGUID"** 属性的值来标识非活动邮箱。 这些属性对于组织中的每个邮箱都是唯一的，而活动邮箱和非活动邮箱可能具有相同的主 SMTP 地址。 
+    > [!NOTE]
+    > 在上述命令中，使用**DistinguishedName**或**ExchangeGUID**屬性的值來識別非使用中的信箱。 這兩個屬性對於組織中的每個信箱都是唯一的，而使用中和非使用中的信箱可能會有相同的主要 SMTP 位址。 
   
-2. 将存档的内容从非活动邮箱（源存档）还原到现有邮箱（目标存档）的存档。 在此示例中，源存档中的内容将复制到目标邮箱存档中名为"非活动邮箱存档"的文件夹。
+2. 將封存的內容從非作用中的信箱（來源封存）還原至現有信箱的封存（目標封存）。 在此範例中，會將來源封存的內容複寫到目標信箱的封存中名為「非使用中信箱封存」的資料夾。
 
-    ```
+    ```powershell
     New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -SourceIsArchive -TargetMailbox newemployee@contoso.com -TargetIsArchive -TargetRootFolder "Inactive Mailbox Archive" -AllowLegacyDNMismatch
     ```
 
-  
 ## <a name="more-information"></a>詳細資訊
 
-- **恢复和恢复非活动邮箱之间的主要区别是什么？** 恢复非活动邮箱时，邮箱基本上将转换为新邮箱，非活动邮箱的内容和文件夹结构将保留，并且邮箱链接到新的用户帐户。 恢复后，非活动邮箱不再存在，对新邮箱中的内容所做的任何更改都将影响非活动邮箱中最初处于保留状态的内容。 相反，还原非活动邮箱时，内容只会复制到另一个邮箱。 非活动邮箱将保留，并保留为非活动邮箱。 对目标邮箱中的内容所做的任何更改都不会影响非活动邮箱中保留的原始内容。 仍可以使用安全&合规性中心[中的内容搜索工具](run-a-content-search-in-the-security-and-compliance-center.md)搜索非活动邮箱，其内容可以还原到另一个邮箱，也可以在以后恢复或删除。 
-    
-- **如何查找非活动邮箱？** 要获取组织中非活动邮箱的列表并显示对还原非活动邮箱有用的信息，可以运行此命令。 
+- **復原和還原非使用中信箱的主要差異為何？** 當您復原非使用中的信箱時，信箱基本上會轉換為新的信箱、非使用中信箱的內容和資料夾結構會保留，而且信箱會連結至新的使用者帳戶。 復原之後，非使用中的信箱不再存在，對新信箱中的內容所做的任何變更，都會影響原始在非使用中信箱中的內容。 相反地，當您還原非使用中的信箱時，內容只會複製到另一個信箱。 非使用中的信箱會保留並保持非作用中的信箱。 對目標信箱中的內容所做的任何變更，都不會影響保留在非使用中信箱的原始內容。 使用[內容搜尋工具](content-search.md)仍可搜尋非使用中的信箱，其內容可以還原至另一個信箱，也可以在日後復原或刪除。
 
-  ```
+- **如何找到非作用中的信箱？** 若要取得組織中非使用中信箱的清單，並顯示還原非使用中信箱的有用資訊，您可以執行此命令。
+
+  ```powershell
   Get-Mailbox -InactiveMailboxOnly | FL Name,PrimarySMTPAddress,DistinguishedName,ExchangeGUID,LegacyExchangeDN,ArchiveStatus
   ```
 
-- **使用诉讼保留或 Office 365 保留策略保留非活动邮箱内容。** 如果要在还原非活动邮箱后保留其状态，则可以将目标邮箱置于[诉讼保留](https://go.microsoft.com/fwlink/?linkid=856286)状态，或在还原非活动邮箱之前应用[Office 365 保留策略。](retention-policies.md) 这将阻止在将项目还原到目标邮箱后从非活动邮箱永久删除这些项目。 
-    
-- **在还原非活动邮箱之前，启用目标邮箱的保留保留。** 由于非活动邮箱中的邮箱项目可能已旧，因此在还原非活动邮箱之前，可以考虑在目标邮箱上启用保留保留。 将邮箱置于保留保留状态时，在删除保留保留或保留期到期之前，不会处理分配给该邮箱的保留策略。 这为目标邮箱的所有者提供了管理来自非活动邮箱的旧邮件的时间。 否则，保留策略可能会删除根据为目标邮箱配置的保留设置过期的旧项目（或将项目移动到存档邮箱（如果已启用）。" 有关详细信息，请参阅在[Exchange 联机中放置保留邮箱。](https://go.microsoft.com/fwlink/?linkid=856300)
-    
-- **允许传统DN不匹配开关的作用是什么？** 在前面还原非活动邮箱的示例中，**允许旧邮箱不匹配**开关用于允许将非活动邮箱还原到其他目标邮箱。 在典型的还原方案中，目标是还原源邮箱和目标邮箱是同一邮箱的内容。 因此，**默认情况下，New-邮箱还原请求**cmdlet 检查以确保源邮箱和目标邮箱上的**LegacyExchangeDN**属性的值相同。 这有助于防止意外将源邮箱还原到错误的目标邮箱中。 如果尝试还原非活动邮箱而不**使用"允许遗留DN 不匹配"** 开关，则如果源邮箱和目标邮箱具有**旧版ExchangeDN**属性的不同值，则该命令可能会失败。 
-    
-- **您可以将其他参数与 New-邮箱还原请求 cmdlet 一起实现非活动邮箱的不同还原方案。** 例如，可以运行此命令将存档从非活动邮箱还原到目标邮箱的主邮箱中。 
-    
-  ```
+- **使用訴訟暫止或 Microsoft 365 保留原則，保留非使用中的信箱內容。** 如果您想要在還原非使用中的信箱時保留其狀態，您可以將目標信箱設定為[訴訟暫](https://go.microsoft.com/fwlink/?linkid=856286)止，或套用[Microsoft 365 保留原則](retention-policies.md)，再還原非使用中的信箱。 這會在還原至目標信箱後，避免永久刪除非作用中信箱中的任何專案。
+
+- **在還原非使用中的信箱之前，請先在目標信箱上啟用保留功能。** 由於非使用中信箱的信箱專案可能是舊的，因此您可以考慮在還原非使用中的信箱之前，先在目標信箱上啟用保留功能。 當您將信箱設為保留狀態時，將不會處理指派給它的保留原則，除非已移除保留狀態，或保留期間到期。 這可讓目標信箱的擁有者管理非使用中信箱的舊郵件。 否則，保留原則可能會刪除舊專案（或將專案移至封存信箱（如果已啟用），該信箱會根據針對目標信箱設定的保留設定而到期。 如需詳細資訊，請參閱在[Exchange Online 中將信箱設為保留狀態](https://go.microsoft.com/fwlink/?linkid=856300)。
+
+- **AllowLegacyDNMismatch 參數會執行什麼動作？** 在上述範例中，若要還原非使用中的信箱， **AllowLegacyDNMismatch**參數會用於允許將非使用中的信箱還原至不同的目標信箱。 在一般還原案例中，目標是還原來源與目標信箱相同信箱的內容。 所以根據預設， **New-MailboxRestoreRequest**指令程式會檢查，以確保來源和目標信箱上**LegacyExchangeDN**屬性的值相同。 這有助於防止您不小心將來源信箱還原至錯誤的目標信箱。 如果您嘗試在未使用**AllowLegacyDNMismatch**參數的情況下還原非使用中的信箱，當來源和目標信箱的**LegacyExchangeDN**屬性值不同時，此命令可能會失敗。
+
+- **您可以搭配使用 New-MailboxRestoreRequest Cmdlet 的其他參數，針對非使用中的信箱執行不同的還原案例。** 例如，您可以執行此命令，將非使用中信箱的封存還原至目標信箱的主要信箱。 
+
+  ```powershell
   New-MailboxRestoreRequest -SourceMailbox <inactive mailbox> -SourceIsArchive -TargetMailbox <target mailbox> -TargetRootFolder "Inactive Mailbox Archive" -AllowLegacyDNMismatch
   ```
 
-  还可以通过运行此命令将非活动主邮箱还原到目标邮箱的存档中。
+  您也可以執行下列命令，將非使用中的主要信箱還原到目標信箱的封存中。
 
-  ```
+  ```powershell
   New-MailboxRestoreRequest -SourceMailbox <inactive mailbox> -TargetMailbox <target mailbox> -TargetIsArchive -TargetRootFolder "Inactive Mailbox" -AllowLegacyDNMismatch
   ```
 
-- **目标根文件夹参数的作用是什么？** 如前所述，可以使用**TargetRootFolder**参数在目标邮箱中的文件夹结构（也称为根）顶部指定文件夹，用于还原非活动邮箱的内容。 如果不使用此参数，则非活动邮箱中的邮箱项目将合并到目标邮箱的相应默认文件夹中，并在目标邮箱的根目录中重新创建自定义文件夹。 下图突出显示了不使用和使用**TargetRootFolder**参数之间的这些差异。 
-    
-    **未使用目标根文件夹参数时的目标邮箱中的文件夹层次结构**
-    
-    ![未使用 TargetRootFolder 參數時的螢幕擷取畫面](media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
-  
-    **使用目标根文件夹参数时的目标邮箱中的文件夹层次结构**
-    
-    ![使用 TargetRootFolder 參數時的螢幕擷取畫面](media/300da592-7323-48db-b8a4-07012259d113.png)
+- **TargetRootFolder 參數的功能為何？** 如先前所述，您可以使用**TargetRootFolder**參數來指定目標信箱中資料夾結構（也稱為根）頂端的資料夾，以還原非使用中信箱的內容。 如果您未使用此參數，則非使用中信箱的信箱專案會合並至目標信箱的對應預設資料夾，而且會在目標信箱的根目錄中重新建立自訂資料夾。 下列圖例會強調不使用和使用**TargetRootFolder**參數之間的差異。
 
-  
+    **未使用 TargetRootFolder 參數時，目標信箱中的資料夾階層**
 
+    ![未使用 TargetRootFolder 參數時的螢幕擷取畫面](../media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
+  
+    **使用 TargetRootFolder 參數時，目標信箱中的資料夾階層**
+
+    ![使用 TargetRootFolder 參數時的螢幕擷取畫面](../media/300da592-7323-48db-b8a4-07012259d113.png)

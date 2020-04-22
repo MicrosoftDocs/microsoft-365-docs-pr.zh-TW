@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: 8f57a680bf5cbd53153cedc339b35bc2712c3f73
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 3127b4ac7b661cd5143052d298424e24d26071a5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43188977"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635781"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤 (公開預覽)
 
@@ -156,7 +156,7 @@ ms.locfileid: "43188977"
 
 若要停用預覽，請使用 Set-SPOTenant Cmdlet：
 
-1. 在 Office 365 中使用具有全域系統管理員或 SharePoint 系統管理員許可權的工作或學校帳戶，連接至 SharePoint。 若要了解如何進行，請參閱[開始使用 SharePoint Online 管理命令介面](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
+1. 使用具有全域系統管理員或 SharePoint 系統管理員許可權的工作或學校帳戶，連接至 SharePoint。 若要了解如何進行，請參閱[開始使用 SharePoint Online 管理命令介面](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
 
 2. 執行下列命令：
 

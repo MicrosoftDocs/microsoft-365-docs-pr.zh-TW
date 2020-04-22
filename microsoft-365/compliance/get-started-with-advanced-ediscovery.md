@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文說明如何開始使用 Microsoft 365 中的「高級 eDiscovery」。 完成一些快速步驟之後，就可以使用「高級 eDiscovery」工具。 第一步是建立案例，然後開始使用 Advanced eDiscovery 的功能和功能。
-ms.openlocfilehash: 4aae93e250365fc7225fe2f21fe25cd01e5f8cc0
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 669ca954401242f7ac8da9a752a99b1b32c1041c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551124"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632474"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>開始使用進階電子文件探索
 
@@ -33,7 +33,7 @@ Microsoft 365 中的「高級 eDiscovery」提供端對端工作流程，可保�
 
 「高級 eDiscovery」的授權需要適當的組織訂閱和每一使用者授權。
 
-- **組織訂閱：** 若要在 Microsoft 365 規範中心或 Office 365 安全性 & 規範中心存取高級 eDiscovery，您的組織必須具備下列其中一項：
+- **組織訂閱：** 若要存取 Microsoft 365 規範中心或安全性 & 規範中心的高級 eDiscovery，您的組織必須具備下列其中一項：
 
   - Microsoft 365 E5 或 Office 365 E5 訂閱
   
@@ -41,7 +41,7 @@ Microsoft 365 中的「高級 eDiscovery」提供端對端工作流程，可保�
 
   - 具有 E5 電子檔探索和審核附加元件的 Microsoft 365 E3 訂閱
 
-  如果您沒有現有的 Microsoft 365 E5 計畫，且想要嘗試使用 Advanced eDiscovery，您可以[將 microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)至現有的 Office 365 訂閱，或註冊 Microsoft 365 E5 的[試用版](https://www.microsoft.com/microsoft-365/enterprise)。
+  如果您沒有現有的 Microsoft 365 E5 計畫，且想要嘗試使用 Advanced eDiscovery，您可以[將 microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)至現有的訂閱，或註冊 Microsoft 365 E5 的[試用版](https://www.microsoft.com/microsoft-365/enterprise)。
 
 - **每位使用者授權：** 若要在預先 eDiscovery 案例中將使用者新增為系統管理員，該使用者必須根據您的組織訂閱，被指派下列其中一個授權：
 
@@ -56,7 +56,7 @@ Microsoft 365 中的「高級 eDiscovery」提供端對端工作流程，可保�
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>步驟2：指派 eDiscovery 許可權
 
-若要存取高級 eDiscovery 或新增為高級 eDiscovery 案例的成員，必須為使用者指派適當的許可權。 具體而言，使用者必須新增為 Office 365 安全性 & 合規性中心內的 eDiscovery 管理員角色群組成員。 這個角色群組的成員可以建立及管理高級 eDiscovery 案例。 他們可以新增及移除成員、將保管人和內容位置置於保留狀態、管理合法保留通知、建立及編輯案例中相關聯的搜尋、將搜尋結果新增至審閱集、分析複查集中的資料，以及從高級 eDiscovery 案例匯出及下載。
+若要存取高級 eDiscovery 或新增為高級 eDiscovery 案例的成員，必須對使用者指派適當的許可權。 具體說來，使用者必須新增為安全性 & 規範中心的 eDiscovery 管理員角色群組成員。 這個角色群組的成員可以建立及管理高級 eDiscovery 案例。 他們可以新增及移除成員、將保管人和內容位置置於保留狀態、管理合法保留通知、建立及編輯案例中相關聯的搜尋、將搜尋結果新增至審閱集、分析複查集中的資料，以及從高級 eDiscovery 案例匯出及下載。
 
 完成下列步驟，將使用者新增至 eDiscovery 管理員角色群組：
 
@@ -145,7 +145,7 @@ EDiscovery 管理員角色群組中有兩個子群組。 這些子群組之間�
   
    - 您可以對保管人資料進行保留。 這會在調查期間保留與案例相關的資料。
   
-   - 您可以將其他資料來源與系統管理員相關聯（例如，您可以將 SharePoint 網站或 Office 365 群組與保管人建立關聯），這樣就可以重新建立索引、保留和搜尋這些資料，就像是保管人的信箱或 OneDrive 帳戶中的資料。
+   - 您可以將其他資料來源與系統管理員相關聯（例如，您可以將 SharePoint 網站或 Microsoft 365 群組與保管人產生關聯），這樣便可重新建立索引、保留及搜尋這些資料，就像是保管人的信箱或 OneDrive 帳戶中的資料。
 
    - 您可以使用高級 eDiscovery 中的[通訊工作流程](managing-custodian-communications.md)，將合法保留通知傳送給保管人。
 

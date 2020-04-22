@@ -1,5 +1,5 @@
 ---
-title: Office 365 加密鏈
+title: 加密鏈
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 在 Office 365 中查看完整的根憑證和憑證授權單位（Ca）清單。
-ms.openlocfilehash: fd92c8833eab3d816b3f01eccf0502f77663e4a5
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 4fa98f417968229a0ba5382b7b1e8b4067db2e36
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131506"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631698"
 ---
-# <a name="office-365-encryption-chains"></a>Office 365 加密鏈
+# <a name="encryption-chains"></a>加密鏈
 
 Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 365 時，使用者可能會遇到的已知 Office 365 根憑證的完整清單。 如需您可能需要在自己的基礎結構中安裝之憑證的詳細資訊，請參閱[Plan For Office 365 的協力廠商 SSL 憑證](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates)。 下列憑證資訊適用于 Office 365 的所有全球和國內雲端實例。
 

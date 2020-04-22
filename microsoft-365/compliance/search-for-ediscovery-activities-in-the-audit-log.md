@@ -13,17 +13,17 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: 瞭解當合規性管理員在安全性 & 合規性中心執行內容搜尋和 eDiscovery 案例工作時，如何搜尋 Office 365 的審計記錄檔以取得記錄的事件。
-ms.openlocfilehash: 21a7304abae594557c5ae8fcdc33ca8c88bc2dea
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+description: 瞭解當合規性管理員在安全性 & 合規性中心執行內容搜尋和 eDiscovery 案例工作時，如何搜尋審核記錄檔中所記錄的事件。
+ms.openlocfilehash: 96f6b121064e7540778a418baa96bae448e4eed3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151448"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631824"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>在稽核記錄中搜尋電子文件探索活動
 
-在安全性 & 規範中心或執行對應的 PowerShell Cmdlet 時，所執行的內容搜尋和 eDiscovery 相關活動都會記錄在 Office 365 審核記錄中。 當系統管理員或 eDiscovery 管理員（或任何已指派 eDiscovery 許可權的使用者）在安全性 & 合規性中心執行下列內容搜尋和核心 eDiscovery 工作時，會記錄事件：
+在安全性 & 規範中心或執行對應的 PowerShell Cmdlet 時，所執行的內容搜尋和 eDiscovery 相關活動都會記錄在審核記錄中。 當系統管理員或 eDiscovery 管理員（或任何已指派 eDiscovery 許可權的使用者）在安全性 & 合規性中心執行下列內容搜尋和核心 eDiscovery 工作時，會記錄事件：
   
 - 建立及管理電子文件探索案件
 
@@ -38,15 +38,15 @@ ms.locfileid: "43151448"
 > [!IMPORTANT]
 > 本文所述的活動只是使用安全性 & 規範中心所執行的 eDiscovery 工作結果。 在 Exchange Online 中使用 In-Place eDiscovery 工具或 SharePoint Online 中的 eDiscovery 中心所執行的 eDiscovery 工作不會包含在內。 
   
-如需搜尋 Office 365 審核記錄檔、所需的許可權，以及匯出搜尋結果的詳細資訊，請參閱在[安全性 & 規範中心搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。
+如需搜尋審核記錄、所需許可權及匯出搜尋結果的詳細資訊，請參閱在[安全性 & 規範中心搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。
   
 ## <a name="how-to-search-for-and-view-ediscovery-activities"></a>如何搜尋及流覽 eDiscovery 活動
 
-目前，您必須在 Office 365 審核記錄中執行一些特殊的工作，以查看 eDiscovery 活動。 方法如下。
+目前，您必須在審計記錄中執行一些特定工作以查看 eDiscovery 活動。 方法如下。
   
 1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用公司或學校帳戶登入 Office 365。
+2. 使用您的公司或學校帳戶登入。
     
 3. 在左窗格中，按一下 [**搜尋**]，然後按一下 [**審核記錄搜尋**]。
     
@@ -69,7 +69,7 @@ ms.locfileid: "43151448"
 
 ## <a name="ediscovery-activities"></a>電子文件探索活動
 
-下表說明當系統管理員或 eDiscovery 管理員使用安全性 & 合規性中心執行 eDiscovery 相關的活動時，或在 Office 365 安全性 & 規範中心 PowerShell 中執行對應指令程式時所記錄的內容搜尋及核心 eDiscovery 活動。 
+下表說明當系統管理員或 eDiscovery 管理員使用安全性 & 合規性中心執行 eDiscovery 相關的活動時，或在安全性 & 規範中心 PowerShell 中執行對應指令程式時所記錄的內容搜尋和核心 eDiscovery 活動。 
   
 > [!NOTE]
 > 本節所述的 eDiscovery 活動提供與下一節所述 eDiscovery Cmdlet 活動類似的資訊。 我們建議您使用本節所述的 eDiscovery 活動，因為它們會出現在審計記錄搜尋結果的30分鐘內。 在審計記錄搜尋結果中顯示 eDiscovery Cmdlet 活動最多需要24小時。 
@@ -99,7 +99,7 @@ ms.locfileid: "43151448"
 |下載內容搜尋的匯出  <br/> |SearchExportDownloaded  <br/> |不適用  <br/> |使用者將內容搜尋的結果下載到本機電腦。 在下載搜尋結果之前，必須先啟動「**內容搜尋**」活動的「匯出」。  <br/> |
 |預覽內容搜尋的結果  <br/> |SearchPreviewed  <br/> |不適用  <br/> |使用者預覽內容搜尋的結果。  <br/> |
 |已清除的內容搜尋結果  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |使用者透過執行**New-ComplianceSearchAction-Purge**命令來清除內容搜尋的結果。  <br/> |
-|已移除內容搜尋的分析  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-New-compliancesearchaction  <br/> |內容搜尋準備動作（為準備 Office 365 Advanced eDiscovery 的搜尋結果）已遭刪除。 如果準備動作尚未過去兩周，請從 Microsoft Azure 儲存體區域中刪除準備好進行高級 eDiscovery 的搜尋結果。 如果準備動作超過2周，則此事件表示只刪除對應的準備動作。  <br/> |
+|已移除內容搜尋的分析  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-New-compliancesearchaction  <br/> |已刪除內容搜尋準備動作（以準備用於高級 eDiscovery 的搜尋結果）。 如果準備動作尚未過去兩周，請從 Microsoft Azure 儲存體區域中刪除準備好進行高級 eDiscovery 的搜尋結果。 如果準備動作超過2周，則此事件表示只刪除對應的準備動作。  <br/> |
 |已移除內容搜尋的匯出  <br/> |RemovedSearchExported  <br/> |Remove-New-compliancesearchaction  <br/> |已刪除內容搜尋匯出動作。 如果匯出動作不是兩周以前，則已刪除上傳至 Microsoft Azure 儲存體區域的搜尋結果。 如果匯出動作超過2周，則此事件表示只刪除對應的「匯出」動作。  <br/> |
 |已從電子檔探索案例中移除成員  <br/> |CaseMemberRemoved  <br/> |Remove-ComplianceCaseMember  <br/> |已移除使用者，成為 eDiscovery 案例的成員。  <br/> |
 |移除內容搜尋的預覽結果  <br/> |RemovedSearchPreviewed  <br/> |Remove-New-compliancesearchaction  <br/> |已刪除內容搜尋預覽動作。  <br/> |
@@ -144,7 +144,7 @@ ms.locfileid: "43151448"
 |變更的內容搜尋  <br/> |[Set-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517937) <br/> |已變更現有的內容搜尋。 變更可包括新增或移除搜尋及編輯搜尋查詢的內容位置。  <br/> |
 |已開始內容搜尋  <br/> |[Start-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517938) <br/> |已開始內容搜尋。 當您使用安全性 & 規範中心 GUI 建立或變更內容搜尋時，會自動啟動搜尋。 如果您使用**New-ComplianceSearch**或**Set-ComplianceSearch** Cmdlet 來建立或變更搜尋，則必須執行**Start-ComplianceSearch**指令程式，以啟動搜尋。  <br/> |
 |已停止內容搜尋  <br/> |[Stop-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517939) <br/> |已停止執行的內容搜尋。  <br/> |
-|建立內容搜尋動作  <br/> |[New-ComplianceSearchAction](https://go.microsoft.com/fwlink/p/?LinkId=527971) <br/> |已建立內容搜尋動作。 內容搜尋動作包括預覽搜尋結果、匯出搜尋結果、準備 Office 365 Advanced eDiscovery 的搜尋結果，以及永久刪除符合內容搜尋之搜尋準則的專案。  <br/> |
+|建立內容搜尋動作  <br/> |[New-ComplianceSearchAction](https://go.microsoft.com/fwlink/p/?LinkId=527971) <br/> |已建立內容搜尋動作。 內容搜尋動作包括預覽搜尋結果、匯出搜尋結果、在高級 eDiscovery 中準備搜尋結果以進行分析，以及永久刪除符合內容搜尋之搜尋準則的專案。  <br/> |
 |已刪除內容搜尋動作  <br/> |[Remove-New-compliancesearchaction](https://go.microsoft.com/fwlink/p/?LinkId=824027) <br/> |已刪除內容搜尋動作。  <br/> |
 |已建立搜尋許可權篩選  <br/> |[New-ComplianceSecurityFilter](https://go.microsoft.com/fwlink/p/?LinkId=617542) <br/> |已建立搜尋許可權篩選。  <br/> |
 |已刪除的搜尋許可權篩選  <br/> |[Remove-ComplianceSecurityFilter](https://go.microsoft.com/fwlink/p/?LinkId=617543) <br/> |已刪除搜尋許可權篩選。  <br/> |
@@ -168,7 +168,7 @@ ms.locfileid: "43151448"
 |ClientRequestId  <br/> | 針對 eDiscovery 活動，此屬性通常是空白的。  <br/> |
 |CmdletVersion  <br/> |組織中所執行的安全性 & 規範中心版本的組建編號。  <br/> |
 |CreationTime  <br/> |在 eDiscovery 活動完成時的日期和時間（隨用通用時間（UTC））。  <br/> |
-|EffectiveOrganization  <br/> |Office 365 組織的名稱。  <br/> |
+|EffectiveOrganization  <br/> |Microsoft 365 組織的名稱。  <br/> |
 |ExchangeLocations  <br/> |在 eDiscovery 案例中，包含在內容搜尋中或置於保留狀態的 Exchange Online 信箱。  <br/> |
 |排除  <br/> |從內容搜尋排除的信箱或網站位置，或在 eDiscovery 案例中保留的位置。  <br/> |
 |ExtendedProperties  <br/> |內容搜尋、內容搜尋動作或電子檔探索案例中的其他屬性，例如執行活動時所使用的物件 GUID 和對應的指令程式和 Cmdlet 參數。  <br/> |
@@ -177,7 +177,7 @@ ms.locfileid: "43151448"
 |ObjectId  <br/> |由 Operation 屬性中所列的活動所建立、變更或刪除之物件的 GUID 或名稱（例如，「內容搜尋」或「eDiscovery 案例」）。 這個物件也會在審計記錄搜尋結果的 [專案] 欄中識別。  <br/> |
 |ObjectType  <br/> |使用者建立、刪除或修改的 eDiscovery 物件類型。例如，內容搜尋動作（預覽、匯出或清除）、eDiscovery 案例或內容搜尋。  <br/> |
 |作業  <br/> |對應至所執行 eDiscovery 活動的作業名稱。  <br/> |
-|OrganizationId  <br/> |Office 365 組織的 GUID。  <br/> |
+|OrganizationId  <br/> |Microsoft 365 組織的 GUID。  <br/> |
 |參數  <br/> |與對應 Cmdlet 搭配使用之參數的名稱和值。  <br/> |
 |PublicFolderLocations  <br/> |在 Exchange Online 中的公用資料夾位置，包含在內容搜尋中，或在 eDiscovery 案例中放入暫止。  <br/> |
 |查詢  <br/> |與活動相關聯的搜尋查詢，例如內容搜尋或以查詢為基礎的保留。  <br/> |
@@ -188,7 +188,7 @@ ms.locfileid: "43151448"
 |StartTime  <br/> |開始 eDiscovery 活動時的日期和時間（標準時間（UTC））。  <br/> |
 |UserId  <br/> |執行活動的使用者（在操作屬性中指定）會導致記錄記錄。 系統帳戶（如 NT AUTHORITY\SYSTEM）所執行之 eDiscovery 活動的記錄也會包含在審計記錄檔中。  <br/> |
 |UserKey  <br/> |在 UserId 屬性中所識別之使用者的替代識別碼。 針對 eDiscovery 活動，此屬性的值通常與 UserId 屬性相同。  <br/> |
-|UserServicePlan  <br/> |您的組織所使用的 Office 365 訂閱。 針對 eDiscovery 活動，此屬性通常是空白的。  <br/> |
-|UserType  <br/> |執行作業的使用者類型。 下列值表示使用者類型。  <br/> 0一般使用者。 2 Office 365 組織中的系統管理員。 3 A Microsoft 資料中心系統管理員或資料中心系統帳戶。 4系統帳戶。 5應用程式。 6 A 服務主體。 |
+|UserServicePlan  <br/> |您的組織所使用的訂閱。 針對 eDiscovery 活動，此屬性通常是空白的。  <br/> |
+|UserType  <br/> |執行作業的使用者類型。 下列值表示使用者類型。  <br/> 0一般使用者。 2組織中的系統管理員。 3 A Microsoft 資料中心系統管理員或資料中心系統帳戶。 4系統帳戶。 5應用程式。 6 A 服務主體。 |
 |版本  <br/> |會指出記錄的活動版本號碼（由 Operation 屬性識別）。  <br/> |
-|工作負載  <br/> |發生活動的 Office 365 服務。 針對 eDiscovery 活動，此值是**SecurityComplianceCenter**。  <br/> |
+|工作負載  <br/> |發生活動的 Theservice。 針對 eDiscovery 活動，此值是**SecurityComplianceCenter**。  <br/> |

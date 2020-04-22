@@ -1,5 +1,7 @@
 ---
-title: 在 Office 365 + 管理员帮助中启用无限制存档
+title: 啟用無限封存-系統管理說明
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,112 +17,113 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
-description: 对于管理员：了解如何在 Office 365 中启用自动扩展存档，该存档为用户提供了 Exchange 联机邮箱的无限存储空间。 您可以为整个组织或仅针对特定用户启用自动扩展存档。
-ms.openlocfilehash: b140cf9bed811c5af2de2e5441bd3c296ed7effe
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 針對系統管理員：瞭解如何啟用自動擴充封存，可為使用者提供 Exchange Online 信箱的無限存放區。 您可以為整個組織啟用自動展開的封存，也可以只為特定使用者啟用此功能。
+ms.openlocfilehash: cb63aa79365d17692dbedf1829f76fb91e965d8d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077096"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631708"
 ---
-# <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>在 Office 365 + 管理员帮助中启用无限制存档
+# <a name="enable-unlimited-archiving--admin-help"></a>啟用無限封存-系統管理說明
 
-您可以使用 Office 365 中的 Exchange Online 自动扩展存档功能为存档邮箱启用无限的存储空间。 启用自动展开存档时，当用户接近存储限制时，会自动向用户存档邮箱添加额外的存储空间。 结果是邮箱存储容量不受限制。 您可以为组织中的每个人或仅针对特定用户打开自动展开存档。 有关自动扩展存档的详细信息，请参阅[Office 365 中无限制存档概述。](unlimited-archiving.md)
+您可以使用 Exchange Online 自動展開的封存功能來啟用封存信箱的無限存放空間。 當自動展開的封存開啟時，會自動將額外的儲存空間新增至使用者的封存信箱，當其接近儲存量限制時。 結果為無限制的信箱儲存容量。 您可以為組織中的每個人或僅針對特定使用者開啟自動擴充封存。 如需有關自動展開封存的詳細資訊，請參閱[Office 365 中的無限封存概述](unlimited-archiving.md)。
 
 ## <a name="before-you-begin"></a>開始之前
 
-- 您必须是 Office 365 组织中的全局管理员或 Exchange Online 组织中的组织管理角色组的成员，才能为整个组织或特定用户启用自动扩展存档。 或者，您必须是分配了"邮件收件人"角色的角色组的成员，才能为特定用户启用自动扩展存档。
+- 您必須是組織中的全域系統管理員，或 Exchange Online 組織中組織管理角色群組的成員，才能啟用整個組織或特定使用者的自動擴充封存。 或者，您必須是指派「郵件收件者」角色的角色群組成員，才能為特定使用者啟用自動擴充封存。
     
-- 在启用自动展开存档之前，必须启用用户的存档邮箱。 必须为用户分配 Exchange 联机计划 2 许可证才能启用存档邮箱。 如果为用户分配了 Exchange 联机计划 1 许可证，则必须为其分配单独的 Exchange 联机存档许可证才能启用其存档邮箱。 请参阅[在"安全&合规性中心中启用存档邮箱"。](enable-archive-mailboxes.md)
+- 必須啟用使用者的封存信箱，才能啟用自動擴充封存。 使用者必須被指派 Exchange Online Plan 2 授權，才能啟用封存信箱。 若使用者已獲指派 Exchange Online Plan 1 授權，您必須指派個別的 Exchange Online 封存授權，以啟用其封存信箱。 請參閱在[安全性 & 規範中心啟用封存信箱](enable-archive-mailboxes.md)。
     
-- 您还可以使用 PowerShell 启用存档邮箱。 有关 PowerShell 命令的示例，请参阅"[详细信息"](#more-information)部分，可用于为组织中的所有用户启用存档邮箱。 
+- 您也可以使用 PowerShell 來啟用封存信箱。 請參閱[More information](#more-information)一節，以取得 PowerShell 命令的範例，您可以用來為組織中的所有使用者啟用封存信箱。 
     
-- 自動展開封存也支援共用信箱。 要启用共享邮箱的存档，需要使用 Exchange 联机存档许可证的 Exchange 联机计划 2 许可证或 Exchange 联机计划 1 许可证。
+- 自動展開封存也支援共用信箱。 若要啟用共用信箱的封存，則需要 exchange Online Plan 2 授權或 Exchange online Plan 1 授權與 Exchange Online 封存授權。
     
-- 不能使用 Exchange 管理中心或安全&合规性中心启用自动扩展存档。 您必须使用 Exchange 在线电源外壳。 要使用远程 PowerShell 连接到 Exchange 在线组织，请参阅[连接到 Exchange 在线 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
+- 您無法使用 Exchange 系統管理中心或安全性 & 規範中心來啟用自動擴充封存。 您必須使用 Exchange Online PowerShell。 若要使用遠端 PowerShell 連線到您的 Exchange Online 組織，請參閱[connect To Exchange online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
     
   
-## <a name="enable-auto-expanding-archiving-for-your-entire-organization"></a>为整个组织启用自动扩展存档
+## <a name="enable-auto-expanding-archiving-for-your-entire-organization"></a>啟用整個組織的自動擴充封存
 
-您可以为整个组织启用自动扩展存档。 启用后，将启用对现有用户邮箱和已创建的新用户邮箱的自动展开存档。 创建用户邮箱时，请确保启用用户的主存档邮箱，以便自动展开存档功能适用于新用户邮箱。
+您可以為整個組織啟用自動展開封存。 開啟之後，會針對現有的使用者信箱及建立的新使用者信箱啟用自動擴充封存。 當您建立使用者信箱時，請務必啟用使用者的主要封存信箱，這樣新使用者信箱的自動擴充封存功能才能運作。
   
 1. [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
-2. 在 Exchange 在线 PowerShell 中运行以下命令，为整个组织启用自动扩展存档。
+2. 在 Exchange Online PowerShell 中執行下列命令，以啟用整個組織的自動擴充封存。
 
-    ```
+    ```powershell
     Set-OrganizationConfig -AutoExpandingArchive
     ```
-  
-## <a name="enable-auto-expanding-archiving-for-specific-users"></a>为特定用户启用自动扩展存档
 
-您可以只为特定用户启用自动扩展存档，而不是为组织中的每个用户启用自动扩展存档。 可以执行此操作，因为只有某些用户可能需要较大的存档存储容量。
+## <a name="enable-auto-expanding-archiving-for-specific-users"></a>啟用特定使用者的自動擴充封存
+
+除了為組織中的每位使用者啟用自動擴充封存，您只可對特定使用者啟用該封存。 您也可以這麼做，因為只有某些使用者可能需要大量的封存儲存容量。
   
-当您为特定用户启用自动展开存档，并且用户邮箱处于保留状态或分配给 Office 365 保留策略时，将进行以下两个配置更改：
+當您為特定使用者啟用自動擴充封存，且使用者的信箱處於暫止狀態或指派給保留原則時，會進行下列兩項設定變更：
   
-- 用户主存档邮箱的存储配额增加 10 GB（从 100 GB 增加到 110 GB）。 存档警告配额也增加了 10 GB（从 90 GB 增加到 100 GB）。
+- 使用者主要封存信箱的儲存配額增加 10 GB （從 100 GB 到 110 GB）。 封存警告配額也會以 10 GB 增加（從 90 GB 到 100 GB）。
     
-- 用户主邮箱中的"可恢复项目"文件夹的存储配额将增加 10 GB（也从 100 GB 增加到 110 GB）。 可恢复项目警告配额也增加了 10 GB（从 90 GB 增加到 100 GB）。 仅当处于保留状态或分配给 Office 365 保留策略的邮箱时，这些更改才适用。
+- 使用者主要信箱中 [可復原的專案] 資料夾的儲存配額是以 10 GB （也從 100 GB 到 110 GB）增加。 可復原的專案警告配額也會以 10 GB 增加（從 90 GB 到 100 GB）。 只有當信箱處於暫止狀態或指派給保留原則時，這些變更才適用。
     
-添加此额外空间是为了防止在预配自动扩展存档之前可能出现的任何存储问题。 如上一节所述，在为整个组织启用自动扩展存档时，*不会*添加额外的存储空间。 
+新增此額外的空間，以避免在自動展開的封存布建之前可能發生的任何儲存問題。 當您為整個組織啟用自動擴充封存時，*將不會*新增額外的儲存空間，如前一節所述。 
   
 1. [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
-2. 在 Exchange 在线 PowerShell 中运行以下命令，为特定用户启用自动展开存档。 如前所述，必须先启用用户的存档邮箱（主存档），然后才能为该用户启用自动展开存档。
+2. 在 Exchange Online PowerShell 中執行下列命令，以啟用特定使用者的自動擴充封存。 如先前所述，必須啟用使用者的封存信箱（主要封存）才能為該使用者開啟自動展開的封存。
     
-    ```
+    ```powershell
     Enable-Mailbox <user mailbox> -AutoExpandingArchive
     ```
 
 
 > [!IMPORTANT]
-> 在 Exchange 混合部署中，不能**使用"启用-邮箱 - 自动扩展存档"** 命令为主邮箱位于本地且其存档邮箱基于云的特定用户启用自动扩展存档。 要在 Exchange 混合部署中启用基于云的存档邮箱的自动扩展存档，您必须在 Exchange 在线 PowerShell 中**运行"设置组织- 自动扩展存档"** 命令，以便自动扩展存档整个组织。 如果用户的主邮箱和存档邮箱都是基于云的，**则可以使用"启用邮箱-自动扩展存档"** 命令为该特定用户启用自动扩展存档。 
+> 在 Exchange 混合式部署中，您無法使用**Enable-Mailbox-AutoExpandingArchive**命令來啟用自動擴充封存，以針對主要信箱位於內部部署的使用者，啟用自動擴充封存，而且其封存信箱為雲端架構。 若要在 Exchange 混合式部署中為雲端式封存信箱啟用自動擴充封存，您必須在 Exchange Online PowerShell 中執行**Set-OrganizationConfig AutoExpandingArchive**命令，以啟用整個組織的自動展開封存。 如果使用者的主要和封存信箱都是雲端架構，則可以使用**Enable-Mailbox-AutoExpandingArchive**命令來啟用該特定使用者的自動擴充封存。 
   
-## <a name="verify-that-auto-expanding-archiving-is-enabled"></a>验证是否启用了自动展开存档
+## <a name="verify-that-auto-expanding-archiving-is-enabled"></a>確認已啟用自動展開封存
 
-要验证是否为您的组织启用了自动扩展存档，请运行 Exchange 联机 PowerShell 中的以下命令。
+若要確認已為您的組織啟用自動展開封存，請在 Exchange Online PowerShell 中執行下列命令。
 
-```
+```powershell
 Get-OrganizationConfig | FL AutoExpandingArchiveEnabled
 ```
 
-的值`True`指示为组织启用了自动展开存档。 
+值`True`表示為組織啟用自動展開封存。 
   
-要验证是否为特定用户启用了自动展开存档，请运行以下命令。
+若要確認特定使用者的自動展開封存是 enabledd 的，請在 Exchange Online PowerShell 中執行下列命令。
   
-```
+```powershell
 Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
 ```
-的值`True`指示已为用户启用了自动展开存档。 
+
+值`True`表示已為使用者啟用自動展開封存。 
   
-启用自动扩展存档后，请记住以下事项：
+啟用自動擴充封存後，請記住下列事項：
   
-- 如果**运行"设置组织Config-自动扩展存档"** 命令为您的组织启用自动扩展存档，则不必在单个邮箱上运行**启用-邮箱 -自动扩展存档。** 运行"**设置组织Config** cmdlet"以为组织启用自动展开存档不会将用户邮箱*上的"自动展开存档启用"* 属性更改为`True`。
+- 如果您執行**Set-OrganizationConfig AutoExpandingArchive**命令來啟用組織的自動擴充封存，您不需要在個別的信箱上執行**Enable-Mailbox AutoExpandingArchive** 。 執行**Set-OrganizationConfig** Cmdlet 以啟用組織的自動展開封存時，不會將使用者信箱上的*AutoExpandingArchiveEnabled*屬性變更`True`為。
     
-- 同样，启用自动展开存档时，*存档配额*和*存档警告配额*邮箱属性的值不会更改。 实际上，当您为用户邮箱启用自动展开存档，并且*自动展开存档启用*的属性设置为`True`时，将忽略*存档配额*和*存档警告配额*属性。 下面是为用户邮箱启用自动展开存档后这些邮箱属性的示例。 
+- 同樣地，當您啟用自動擴充封存功能時， *ArchiveQuota*和*ArchiveWarningQuota*信箱屬性的值不會變更。 實際上，當您啟用使用者信箱的自動擴充封存，且*AutoExpandingArchiveEnabled*屬性設定為`True`時，會忽略*ArchiveQuota*和*ArchiveWarningQuota*屬性。 以下是針對使用者信箱啟用自動擴充封存後，這些信箱屬性的範例。 
     
-    ![启用自动展开存档后，将忽略存档配额和存档警告配额属性](media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
+    ![啟用自動擴充封存後，就會忽略 ArchiveQuota 和 ArchiveWarningQuota 屬性](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
   
 ## <a name="more-information"></a>詳細資訊
 
-- 您还可以使用 PowerShell 启用存档邮箱。 例如，您可以在 Exchange Online PowerShell 中运行以下命令，为尚未启用存档邮箱的所有用户启用存档邮箱。
+- 您也可以使用 PowerShell 來啟用封存信箱。 例如，您可以在 Exchange Online PowerShell 中執行下列命令，以啟用尚未啟用封存信箱之所有使用者的封存信箱。
 
-    ```
+    ```powershell
     Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
     ```
 
-- 为组织或特定用户打开自动展开存档后，当存档邮箱（包括可恢复项目文件夹）达到 90 GB 时，存档邮箱将转换为自动展开的存档。 预配额外的存储空间最多可能需要 30 天。
+- 當您為組織或特定使用者開啟自動展開的封存後，封存信箱（包括 [可復原的專案] 資料夾）達到 90 GB 時，就會轉換為自動展開的封存。 最多可能需要30天的時間，才能布建額外的儲存空間。
     
-- 打开自动展开存档后，无法将其关闭。
+- 當您開啟自動展開的封存功能之後，就無法將其關閉。
     
-- Exchange 混合部署中为具有本地主邮箱的用户支持基于云的存档邮箱的自动扩展存档。 但是，在为基于云的存档邮箱启用自动扩展存档后，无法将该存档邮箱从板外重新归档回本地 Exchange 组织。 Exchange Server 2010 中的本地邮箱不支持自动展开存档。
+- 在 Exchange 混合式部署中，針對具有內部部署主要信箱的使用者，支援自動擴充封存。 不過，啟用雲端式封存信箱的自動展開封存後，您就無法將封存信箱的信箱移回內部部署 Exchange 組織。 Exchange Server 2010 中的內部部署信箱不支援自動展開封存。
     
-- 有关用户可以用于访问其存档邮箱中其他存储区域中的项目的 Outlook 客户端列表，请参阅[Office 365 中无限制存档概述](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)中的"访问自动扩展存档中项目的 Outlook 要求"部分.
+- 如需使用者可用於存取其封存信箱中其他儲存區之專案的 Outlook 用戶端清單，請參閱[無限制](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)封存的「outlook 要求存取自動擴充的封存中的專案」一節。
     
-- 如前所述，在运行**启用邮箱 - 自动展开存档**命令时，将 10 GB 添加到用户主存档邮箱的存储配额（如果邮箱处于保留状态，则添加到可恢复项目文件夹）。 这将提供额外的存储空间，直到预配自动扩展的存储空间（最多可能需要 30 天）。 **运行"设置组织Config-自动扩展存档"** 以启用组织内所有邮箱的自动扩展存档时，不会添加此额外的存储空间。 如果为整个组织启用了自动扩展存档，但需要为特定用户添加额外的 10 GB 存储空间，则可以在该邮箱上运行**启用邮箱 -自动展开存档**命令。 您将收到一个错误，指出已启用自动展开存档，但额外的存储空间将添加到邮箱中。 
+- 如先前所述，當您執行**Enable-Mailbox-AutoExpandingArchive**命令時，會將 10 GB 新增至使用者主要封存信箱的儲存配額（和 [可復原的專案] 資料夾（如果信箱處於保留狀態）。 在布建自動擴充的儲存空間之前（可能需要30天），這會提供額外的儲存空間。 當您執行**Set-OrganizationConfig AutoExpandingArchive**以啟用組織中所有信箱的自動擴充封存功能時，並不會新增此額外的儲存空間。 如果您已對整個組織啟用自動展開的封存，但需要為特定使用者新增額外的 10 GB 儲存空間，您可以在該信箱上執行**Enable-Mailbox AutoExpandingArchive**命令。 您會收到錯誤訊息，指出已經啟用自動擴充封存，但額外的儲存空間會新增至信箱。 
 
 - 系統管理員無法調整儲存空間配額。
 
 > [!IMPORTANT]
-> 自动展开存档仅支持用于单个用户或共享邮箱的邮箱，其增长率每天不超过 1 GB。 不允许使用日记、传输规则或自动转发规则将邮件复制到存档邮箱以进行存档。 使用者的封存信箱僅供該使用者使用。 Microsoft 保留在使用者封存信箱中用來儲存其他使用者之封存資料的執行個體中拒絕不受限封存的權限。
+> [！注意] 只有針對個別使用者或共用信箱所用的信箱支援自動擴充封存，但其增長率並未超過每日 1 GB。 不允許使用日誌記錄、傳輸規則或自動轉寄規則，將郵件複製到封存信箱以進行封存。 使用者的封存信箱僅供該使用者使用。 Microsoft 保留在使用者的封存信箱用來儲存其他使用者的封存資料或其他不適當用途的情況下，拒絕無限封存的權利。

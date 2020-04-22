@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 387709ebdd84968d2b93992f6b92ef1548117569
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 75e376288a85ca6def5cf3c3037f2faee57de63b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528356"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632268"
 ---
 # <a name="advanced-ediscovery-reports-preview"></a>高級 eDiscovery 報告（預覽）
 
@@ -45,7 +45,7 @@ ms.locfileid: "43528356"
 
 1. 請移至 https://protection.office.com
   
-2. 使用您的公司或學校帳戶登入 Office 365。
+2. 使用您的公司或學校帳戶登入。
   
 3. 在 [安全性 & 規範中心] 中，按一下 [ **eDiscovery > Advanced ediscovery**。
   

@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: '要開始使用 DLP 原則，最簡單且最常見方式是使用 Office 365 所包含的其中一個範本。 '
-ms.openlocfilehash: 85aa5dad9c65cd222d012bf24ea0234ca7534838
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 819320b8170c652a6cdb32e191ebca5174eb0329
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604180"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635963"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>建立、測試及調整 DLP 原則
 
-資料遺失防護是 Office 365 的規範功能，其設計目的是為了協助您的組織避免對不想要的敏感資訊的故意或意外暴露。 DLP 在 Exchange Server 和 Exchange Online 中有其根，也適用于 SharePoint 線上和商務 OneDrive。
+資料遺失防護（DLP）是一項合規性功能，可協助您的組織避免對不想要的敏感資訊的故意或意外洩密。 DLP 在 Exchange Server 和 Exchange Online 中有其根，也適用于 SharePoint 線上和商務 OneDrive。
 
 DLP 使用內容分析引擎檢查電子郵件訊息和檔案的內容，尋找機密資訊（例如信用卡號碼和個人身分識別資訊（PII））。 敏感資訊一般不會以電子郵件傳送，或包含在檔中，而不需要採取其他步驟，例如加密電子郵件訊息或檔案。 使用 DLP，您可以偵測敏感資訊，並採取下列動作：
 
@@ -57,7 +57,7 @@ DLP 使用內容分析引擎檢查電子郵件訊息和檔案的內容，尋找�
 
 可透過 Exchange 系統管理中心來管理 Exchange Online 的 DLP 原則。 不過，您可以透過安全性 & 規範中心設定所有工作負載的 DLP 原則，如此一來，我們將在本文中示範。 在 [安全性 & 規範中心] 中，您會在 [**資料遺失防護** > ]**原則**下找到 DLP 原則。 按一下 [**建立要啟動的原則**]。
 
-Office 365 提供一系列[dlp 原則範本](what-the-dlp-policy-templates-include.md)，您可以用來建立 dlp 原則。 假設您是澳大利亞公司。 您可以篩選原則範本，只顯示與澳大利亞相關的使用者，這些範本屬於財務、醫療和健康情況和隱私權等一般類別。
+Microsoft 365 提供一系列[dlp 原則範本](what-the-dlp-policy-templates-include.md)，您可以用來建立 dlp 原則。 假設您是澳大利亞公司。 您可以篩選原則範本，只顯示與澳大利亞相關的使用者，這些範本屬於財務、醫療和健康情況和隱私權等一般類別。
 
 ![選擇國家或地區的選項](../media/DLP-create-test-tune-choose-country.png)
 
@@ -214,4 +214,4 @@ DLP 原則範本並不完全直接離開盒。 您很可能會發現環境中有
 
 ## <a name="summary"></a>摘要
 
-資料遺失防護原則對於所有類型的組織都很有用。 測試某些 DLP 原則是低風險的執行動作，因為您的控制原則提示、使用者覆寫和附隨報告等專案。 您可以不知不覺地測試部分 DLP 原則，以查看組織中已發生的違規類型，然後使用低的誤報速率來製作原則，並教育使用者有關允許和不允許的專案，然後將 DLP 原則推廣至組織。
+資料遺失防護原則對於所有類型的組織都很有用。 測試某些 DLP 原則是低風險的執行動作，因為您的控制原則提示、使用者覆寫和附隨報告等專案。 您可以不知不覺地測試部分 DLP 原則，以查看組織中已發生的違規類型，然後使用低的誤報速率來製作原則，並對使用者提供允許和不允許的專案，然後將 DLP 原則推廣至組織。

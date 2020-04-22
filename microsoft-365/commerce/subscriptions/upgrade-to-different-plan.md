@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: 瞭解如何升級為新的訂閱。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 8f792cad90b7e153c025a869970a54d36cdd8cbe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a5cede13a64ea1a6562a326c32dc902d14c3dfe5
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636507"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707520"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升級至不同的方案 
 
@@ -63,7 +63,7 @@ ms.locfileid: "43636507"
 
 ## <a name="the-upgrade-tab-is-empty"></a>[升級] 索引標籤是空的
 
-如果 [**升級**] 索引標籤為空，您會看到有關為何您此時無法升級的說明。 您可以嘗試[手動變更計畫](change-plans-manually.md)或[致電支援人員](../../admin/contact-support-for-business-products.md)。 如需詳細資訊，請參閱[為何無法升級計畫？](#why-cant-i-upgrade-plans)）。
+如果 [**升級**] 索引標籤為空，您會看到有關為何您此時無法升級的說明。 您可以嘗試[手動變更計畫](change-plans-manually.md)或[致電支援人員](../../admin/contact-support-for-business-products.md)。 如需詳細資訊，請參閱[為何無法升級方案？](#why-cant-i-upgrade-plans)。
 
 ## <a name="i-dont-see-the-plan-i-want"></a>我看不到想要的計畫
 
@@ -153,7 +153,7 @@ ms.locfileid: "43636507"
 
 舊有訂閱的使用者會自動移至新的訂閱。
   
-如果您的舊訂閱包含多項服務，而且您已變更您的使用者所指派的服務類型，您可能需要在升級計畫之前記下這一點，以便以後可以重新建立這些變更。 在新的訂閱中，所有使用者將能夠存取所有的服務。 例如，如果您先前針對100所有的使用者購買 Office 365 企業版 E3，但未指派該 SharePoint 線上服務的50，則在您升級方案後，就不會保留這項變更。
+如果您的舊訂閱包含多項服務，而且您已變更您的使用者所指派的服務類型，您可能需要在升級計畫之前記下這一點，以便以後可以重新建立這些變更。 在新的訂閱中，所有使用者將能夠存取所有的服務。 例如，如果您先前為100所有的使用者購買 Microsoft 365 商務版 Premium，但未指派 SharePoint Online 服務的50，則在您升級方案後，就不會保留這項變更。
   
 如果您在升級計畫之前有一個以上的訂閱，並且使用者已將授權指派給一個以上的訂閱，則此指派模式在新的訂閱中將盡可能保留最大的狀態。
   
@@ -164,9 +164,9 @@ ms.locfileid: "43636507"
 您的規劃升級已完成，您的舊訂閱上的帳單將會關閉，而新訂閱上的帳單便會開啟。 您將取得對舊訂閱上任何未使用之服務的按比例貸項。 在升級至新訂閱的30天內，您會收到包含舊訂閱信用額的新發票。
   
 > [!NOTE]
-> 實際向您的付款帳戶收費所需的時間長短，視用於訂閱的付款方式而定。 
+> 實際向您的付款帳戶收費所需的時間長短，視用於訂閱的付款方式而定。
   
- **從預付訂閱升級後，它會過期嗎？** 如果您的新訂閱價值大於或等於預付訂閱的剩餘價值，就不會損失任何預付的時間。 在結帳頁面上，您會看到未使用時間的時間額度。 不過，如果新訂閱總成本低於您目前預付訂閱的剩餘價值，您就會損失一些未使用時間。 您會在結帳之前通知您，您可以等候升級，直到接近您的預付訂閱到期日為止。
+**從預付訂閱升級後，它會過期嗎？** 如果您的新訂閱價值大於或等於預付訂閱的剩餘價值，就不會損失任何預付的時間。 在結帳頁面上，您會看到未使用時間的時間額度。 不過，如果新訂閱總成本低於您目前預付訂閱的剩餘價值，您就會損失一些未使用時間。 您會在結帳之前通知您，您可以等候升級，直到接近您的預付訂閱到期日為止。
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>協助您升級方案的電話支援
 

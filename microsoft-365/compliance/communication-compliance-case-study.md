@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 834fb37eba578ff87477fd376cd5d33c8612e1b0
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: e4cab1d34d17b5ecbe23aaba53698f61473bc6a8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43165932"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637175"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>案例研究-Contoso 會快速設定適用于 Microsoft 小組和 Exchange 通訊的冒犯性語言原則
 
@@ -81,7 +81,7 @@ Contoso IT 管理員請採取下列步驟，確認 Contoso 的授權支援：
 
 根據預設，全域管理員無法存取通訊規範功能。 [必須設定許可權](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#step-1-required-enable-permissions-for-communication-compliance)，以讓 Contoso IT 管理員和合規性專家能夠存取通訊相容性。
 
-1. Contoso IT 管理員登入**Office 365 安全性與合規性中心**許可權頁面[（https://protection.office.com/permissions) ](https://protection.office.com/permissions)使用全域系統管理員帳戶的認證，然後選取在 Office 365 中查看及管理角色的連結。
+1. Contoso IT 管理員登入**Office 365 安全性與合規性中心**許可權頁面[（https://protection.office.com/permissions) ](https://protection.office.com/permissions)使用全域系統管理員帳戶的認證，然後選取在 Microsoft 365 中查看及管理角色的連結。
 2. 選取 [**建立**] 之後，他們會為新的角色群組提供「*通訊相容性*」的易記名稱，然後選取 **[下一步**]。
 3. 它們會選取 **[選擇角色**]，然後選取 [**新增**]。 他們會選取「*主管審查管理員*」、「*案例管理*」、「*合規性管理員*」及「*複查*」的核取方塊，然後選取 [**新增**]、[**執行** **] 和 [下一步]**。
 
@@ -141,7 +141,7 @@ Contoso IT 系統管理員和合規性專家也可以選擇 Microsoft 365 方案
 
 若要開始使用通訊相容性原則，Contoso IT 管理員必須先設定許多必要條件，再設定用來監視冒犯性語言的新原則。 完成這些必要條件之後，Contoso IT 管理員和合規性專業人員可以設定新的原則和合規性專業人員，以開始調查並修正任何產生的警示。
 
-### <a name="enabling-auditing-in-office-365"></a>啟用 Office 365 中的審計
+### <a name="enabling-auditing-in-microsoft-365"></a>啟用 Microsoft 365 中的審計
 
 通訊合規性需要「審核記錄檔」顯示提醒，並追蹤檢閱者採取的修復動作。 「審核記錄檔」是與定義之組織原則相關聯的所有活動摘要，或任何一種通訊合規性原則的變更。
 
@@ -154,7 +154,7 @@ Contoso 合規性專家想要將所有員工新增至會監控冒犯性語言的
 他們必須建立新的群組，以包含所有 Contoso 員工，所以他們採取下列步驟：
 
 1. Contoso it 系統管理員會登入**microsoft 365 系統管理中心** [（https://admin.microsoft.com) ](https://admin.microsoft.com)並流覽至**microsoft 365 系統管理中心** > **Groups** > 群組**群組**。
-2. 他們會選取 [**新增群組**]，並完成嚮導，以建立新的*Office 365 群組*或*通訊群組*。
+2. 他們會選取 [**新增群組**]，並完成嚮導，以建立新的*Microsoft 365 群組*或*通訊群組*。
 
 ![群組](../media/communication-compliance-case-all-employees.png)
 

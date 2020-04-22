@@ -1,5 +1,5 @@
 ---
-title: 舊的 eDiscovery 工具退休
+title: 舊版電子文件探索工具淘汰
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -10,22 +10,22 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Exchange Online 中的 In-Place eDiscovery 和 In-Place 保留（以及對應的 PowerShell Cmdlet）會在2020的上半年內淘汰。 Search-Mailbox Cmdlet 和 Office 365 Advanced eDiscovery 1.0 1.0 也會在相同的時段內淘汰。
-ms.openlocfilehash: 2d1f319986d761135e2c22b1d5882797f90f910c
-ms.sourcegitcommit: 9ba28b255640c7b22f627613430dc69191bfaede
+description: Exchange Online 中的 In-Place eDiscovery 和 In-Place 保留（以及對應的 PowerShell Cmdlet）會在2020的上半年內淘汰。 Search-Mailbox Cmdlet 及 Advanced eDiscovery 1.0 1.0 也會在相同的時段內淘汰。
+ms.openlocfilehash: 23ff43dfc2131073425deb947aee41662e30616a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43158434"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635567"
 ---
-# <a name="retirement-of-legacy-ediscovery-tools"></a>舊的 eDiscovery 工具退休
+# <a name="retirement-of-legacy-ediscovery-tools"></a>舊版電子文件探索工具淘汰
 
 > [!IMPORTANT]
 > Microsoft 已評估公開健康情況，我們瞭解這對客戶造成的影響。 我們想要成為強大的合作夥伴和負責的全球公民。 為了簡化您面臨的眾多工作之一，我們會將本文所述之舊版 eDiscovery 工具的計畫停用延遲為三個月。 **更新後的退休日期會反映在下方。**
 
-在幾年中，Microsoft 提供了 eDiscovery 工具，可讓您從 Exchange Online 搜尋、預覽及匯出電子郵件內容。 不過，這些工具不再提供有效的方式，可在其他 Office 365 服務中搜尋非 Exchange 內容，例如 SharePoint 線上和 Office 365 群組。 為了解決此情況，Microsoft 提供了其他 eDiscovery 工具，可協助您搜尋各種各樣的 Office 365 內容。 而且我們致力於在[Microsoft 365 規範中心](https://compliance.microsoft.com)內整合最新和功能強大的 eDiscovery 功能。 這可讓組織對許多 Office 365 服務（包括 Exchange Online）的內容，回應法律、內部及其他檔要求。
+在幾年中，Microsoft 提供了 eDiscovery 工具，可讓您從 Exchange Online 搜尋、預覽及匯出電子郵件內容。 不過，這些工具不再提供有效的方式，可在其他 Microsoft 365 服務中搜尋非 Exchange 內容，例如 SharePoint 線上和 Microsoft 365 群組。 為了解決此情況，Microsoft 提供了其他 eDiscovery 工具，可協助您搜尋各種各樣的 Microsoft 365 內容。 而且我們致力於在[Microsoft 365 規範中心](https://compliance.microsoft.com)內整合最新和功能強大的 eDiscovery 功能。 這可讓組織對許多 Microsoft 365 服務（包括 Exchange Online）的內容，回應法律、內部及其他檔要求。
 
-在 Microsoft 365 規範中心內，這項新的和改善的 eDiscovery 功能的結果是，在 Exchange Online 和 Office 365 中，我們會淘汰下列與搜尋電子郵件內容相關的 eDiscovery 相關功能：
+由於 Microsoft 365 規範中心的這項新的和改善的 eDiscovery 功能，我們即將淘汰下列與電子檔內容在 Exchange Online 和 Microsoft 365 中搜尋相關的 eDiscovery 相關功能：
 
 - 在 Exchange 系統管理中心中[In-Place eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)和[In-Place 存放](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds)。
 
@@ -75,7 +75,7 @@ ms.locfileid: "43158434"
 
 - Office 365 和 Microsoft 365 政府組織;這包括 GCC、GCC High 和 DoD
 
-- Office 365 Germany
+- Office 365 德國
 
 ### <a name="timeline-for-retirement"></a>退休的時程表
 
@@ -108,7 +108,7 @@ ms.locfileid: "43158434"
 <p>更高的可靠性用於搜尋、匯出及放置內容保留</p>
 </li>
 <li>
-<p>在 Exchange Online 中搜尋內容、SharePoint 線上 OneDrive、商務用 Skype、商務用 Skype、Microsoft 團隊、Yammer 群組、Office 365 群組，以及其他儲存在 Office 365 應用程式中的內容</p></li></ul>
+<p>在 Exchange Online 中搜尋內容、SharePoint 線上 OneDrive、商務用 Skype、商務用 Skype、Microsoft 團隊、Yammer 群組、Microsoft 365 群組，以及其他儲存在 Office 365 應用程式中的內容</p></li></ul>
 <p>如需詳細資訊，請參閱<a href="https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations">管理 Office 365 的法律調查</a>。</td>
 </tr>
 <tr class="even">
@@ -178,7 +178,7 @@ Microsoft 365 規範中心也會使用[規範界限](set-up-compliance-boundarie
 
 - Office 365 和 Microsoft 365 政府組織;這包括 GCC、GCC High 和 DoD
 
-- Office 365 Germany
+- Office 365 德國
 
 ### <a name="timeline"></a>時間表
 
@@ -204,7 +204,7 @@ Microsoft 365 規範中心也會使用[規範界限](set-up-compliance-boundarie
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction"><span class="underline">*-New-compliancesearchaction</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase"><span class="underline">*-Get-compliancecase</span></a></p>
-<p> </p></td>
+<p> </p></td>
 <td><p>New-compliancesearch 和 New-compliancesearchaction 指令程式可以搭配使用，以協助您搜尋和匯出內容。 您可以使用<strong>新的-</strong>、 <strong>Get</strong>及<strong>Start-ComplianceSearch</strong> Cmdlet 來建立新的搜尋並查看搜尋預估。 然後，您可以使用<strong>New-ComplianceSearchAction</strong> Cmdlet 來匯出搜尋結果。 您仍然需要使用 Microsoft 365 規範中心內的核心 eDiscovery 工具，將這些搜尋結果下載至您的本機電腦。</p>
 <p>
 <p><strong>附注：</strong>如果您使用這些 Cmdlet 來建立未與核心 eDiscovery 案例相關聯的搜尋，則這些搜尋會位於 Microsoft 365 規範中心的 [<strong>內容搜尋</strong>] 頁面上。</p></td>
@@ -214,7 +214,7 @@ Microsoft 365 規範中心也會使用[規範界限](set-up-compliance-boundarie
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy"><span class="underline">*-CaseHoldPolicy</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule"><span class="underline">*-New-caseholdrule</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase"><span class="underline">*-Get-compliancecase</span></a></p>
-<p> </p></td>
+<p> </p></td>
 <td><p>Microsoft 365 規範中心的封存必須與 Get-compliancecase 相關聯。 首先，建立規範案例，然後建立 CaseHoldPolicy 及 New-caseholdrule。</p>
 <p><strong>附注：</strong>建立沒有建立 New-caseholdrule 的 CaseHoldPolicy，會在建立 New-caseholdrule 並與 CaseHoldPolicy 關聯之前，使保留無法運作。 如需詳細資訊，請參閱 Cmdlet 檔。</p></td>
 </tr>
@@ -259,7 +259,7 @@ Exchange Online PowerShell 中的**Search-Mailbox** Cmdlet 會在 [正在撤銷]
 
 - Office 365 和 Microsoft 365 政府組織;這包括 GCC、GCC High 和 DoD
 
-- Office 365 Germany
+- Office 365 德國
 
 ### <a name="timeline"></a>時間表
 
@@ -303,7 +303,7 @@ Exchange Online PowerShell 中的**Search-Mailbox** Cmdlet 會在 [正在撤銷]
 </tr>
 <tr class="even">
 <td>將搜尋結果複製到探索信箱</td>
-<td> </td>
+<td> </td>
 <td>這種功能沒有直接取代，因為它沒有提供所有 Microsoft 365 服務的存取權。 如需其他解決方案，請參閱<strong>*-MailboxSearch Cmdlet</strong>區段中的 FAQs。 </td>
 </tr>
 </tbody>
@@ -321,7 +321,7 @@ Exchange 系統管理中心的 In-Place eDiscovery & 保留功能，以及 excha
 
 - Office 365 和 Microsoft 365 政府組織;這包括 GCC、GCC High 和 DoD
 
-- Office 365 Germany
+- Office 365 德國
 
 ### <a name="timeline"></a>時間表
 
@@ -355,7 +355,7 @@ Microsoft 365 （也稱為「 *Advanced ediscovery 2.0 2.0*」）中新的 [edis
 
 - Office 365 和 Microsoft 365 教育組織
 
-- Office 365 Germany
+- Office 365 德國
 
 ### <a name="timeline"></a>時間表
 
