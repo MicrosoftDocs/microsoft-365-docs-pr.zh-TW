@@ -1,5 +1,5 @@
 ---
-title: 尋找您的 Office 365 網域註冊機構
+title: 尋找您的網域註冊機構
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -21,16 +21,16 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: 瞭解如何使用 InterNIC 搜尋來尋找您的網域註冊機構和 DNS 主機服務提供者。
-ms.openlocfilehash: 71af74a0f94f2cdc251dab78fd59e9bdd90da5ce
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 234578c5622a883296a001ce7f226627dd9d93b5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210389"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628455"
 ---
-# <a name="find-your-domain-registrar-for-office-365"></a>尋找您的 Office 365 網域註冊機構
+# <a name="find-your-domain-registrar"></a>尋找您的網域註冊機構
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 ## <a name="domain-registrar"></a>網域註冊機構
   

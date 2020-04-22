@@ -1,109 +1,103 @@
 ---
-title: 新的 Microsoft 365 合规性中心概述
+title: Microsoft 365 合規性中心
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/29/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
-description: 了解新的 Microsoft 365 合规性中心，包括其中包含的内容、如何获取它以及后续步骤。
-ms.openlocfilehash: b83b9366408191cb82ae2b221c1ddf5d412bfd00
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 深入瞭解 Microsoft 365 規範中心，包括其包含的內容、如何取得，以及您的後續步驟。
+ms.collection: M365-security-compliance
+ms.openlocfilehash: f87fcbe2cd40b01a42d20da8e36ee4b1d7d3bbb4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077876"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637955"
 ---
-# <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>全新 Microsoft 365 合规性中心概述
+# <a name="microsoft-365-compliance-center"></a>Microsoft 365 合規性中心
 
-## <a name="overview"></a>概觀
+如果您對組織的合規性狀況感興趣，您會喜歡[Microsoft 365 規範中心](https://compliance.microsoft.com)。 Microsoft 365 規範中心可讓您輕鬆存取所需的資料和工具，以管理您組織的合規性需求。
 
-如果您对组织的合规性状况感兴趣，您会喜欢新的[Microsoft 365 合规性中心。](https://compliance.microsoft.com) Microsoft 365 合规性中心提供了对组织合规性需求所需的数据和工具的轻松访问。 
+請閱讀本文以瞭解 Microsoft 365 規範中心、[如何取得](#how-do-i-get-the-compliance-center)[問題、常見問題解答](#frequently-asked-questions)及[後續步驟](#next-steps)。
 
-阅读本文，了解 Microsoft 365 合规性中心、[如何获取它、](#how-do-i-get-this)[常见问题](#frequently-asked-questions)以及[后续步骤。](#next-steps)
+[![Microsoft 365 規範中心首頁](../media/m365-compliance-center-home.png)](https://compliance.microsoft.com)
 
-[![Microsoft 365 合規性中心](media/m365-compliance-center.png)](https://compliance.microsoft.com)
+## <a name="welcome-to-microsoft-365-compliance"></a>歡迎使用 Microsoft 365 合規性
 
-## <a name="welcome-to-microsoft-365-compliance"></a>欢迎来到微软365合规性
+當您第一次移至 Microsoft 365 規範中心時，您會 greeted 下列歡迎訊息：
 
-当您第一次转到 Microsoft 365 合规性中心时，您会收到以下欢迎消息：
+![Microsoft 365 規範中心簡介](../media/m365-compliance-center-welcome-steps.png)
 
-![微软 365 合规性中心简介](media/m365-compliancecenter-welcomesteps.png)
+歡迎使用橫幅提供一些有關如何開始使用的指標，以及下一個步驟和邀請，讓我們提供意見反應。
 
-欢迎横幅为您提供了一些关于如何入门的提示，下一步以及邀请您向我们提供反馈。
+## <a name="card-section"></a>卡片區段
 
-## <a name="the-assess-section"></a>评估部分
+當您第一次造訪 Microsoft 365 規範中心時，首頁上的 [卡片] 區段會顯示您的組織如何處理資料相容性、可供組織使用的解決方案，以及任何使用中警示的摘要。
 
-主页**上的"评估"** 部分可一目了然地显示您的组织在[数据保护和合规性](protect-access-to-data-and-services.md)方面的表现。
+在這裡，您可以：
 
-![Microsoft 365 合规性中心评估部分](media/m365-compliance-center-assess.png)
+- 回顧**Microsoft 規範評分**卡，它會讓您瞭解新的[合規性分數](compliance-score.md)解決方案。 它會計算以風險為基礎的分數，可衡量完成建議動作的進度，以協助降低資料保護和法規標準的風險。 它還提供工作流程功能及內建的控制項對應，協助您有效地執行這些動作。
 
-从这里，您可以转到 Microsoft 合规性分数卡，该卡片将转到[合规性管理器，](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)您可以在其中查看或编辑配置，并可能提高总体合规性分数。
+    ![合規性計分卡 Microsoft 365 規範中心](../media/m365-compliance-center-compliance-score-card.png)
 
-您将看到其他卡片，例如显示组织云应用合规性的卡片，另一张显示有关具有共享文件的用户的数据，以及指向[云应用安全](https://docs.microsoft.com/cloud-app-security/)或其他工具的链接，您可以在其中浏览数据。
+- 回顧新的**方案目錄**卡，它會連結至[整合解決方案](microsoft-365-solution-catalog.md)的集合，以協助您管理端對端的符合性案例。 方案的功能和工具可能包含原則、警示、報告等的組合。
 
-## <a name="the-protect-section"></a>"保护"部分
+    ![方案目錄卡 Microsoft 365 規範中心](../media/m365-compliance-center-solution-catalog-card.png)
 
-主页**上的"保护"** 部分包含卡片，这些卡片提供有关[标签、](labels.md)[数据丢失防护 （DLP）、](data-loss-prevention-policies.md)正在使用的第三方应用、共享文件、影子 IT 应用等的高级信息。 
+- 複查使用中的**警示**卡，其中包含最[活躍的提醒](alert-policies.md)摘要，並包含可讓您查看更詳細資訊的連結，例如嚴重性、狀態、類別等。
 
-![微软 365 合规性中心的保护部分](media/m365-compliance-center-protect.png)
+    ![主動的警示卡 Microsoft 365 規範中心](../media/m365-compliance-center-active-alerts-card.png)
 
-每张卡片都有一个指向报告的链接或其他信息，您可以在其中了解更多信息。
+您也可以使用 [**新增卡**] 功能來新增額外的卡片，例如一個顯示組織的雲端應用程式相容性的卡片，另一個顯示含共用檔案之使用者的資料，並[提供可流覽](https://docs.microsoft.com/cloud-app-security/)資料的其他工具連結。
 
-## <a name="the-respond-section"></a>"响应"部分
+![其他規範中心卡詳細資料](../media/m365-compliance-center-additional-cards.png)
 
-主页**上的"响应"** 部分显示您需要查看并可能采取行动的[警报](/security/office-365-security/alerts.md)和[待处理处置。](disposition-reviews.md)
+## <a name="easy-navigation-to-more-compliance-features-and-capabilities"></a>便於流覽更具法規遵從性功能和功能
 
-![微软 365 合规性中心的响应部分](media/m365-compliance-center-respond.png)
-
-卡片（如[活动警报](/security/office-365-security/alerts.md)卡）包含指向页面的链接，您可以在其中查看更详细的信息，如严重性、状态、类别等。
-
-![活动警报详细信息](media/m365-compliance-center-alerts-details.png) 
-
-## <a name="easy-navigation-to-more-compliance-features-and-capabilities"></a>轻松导航到更多合规性特性和功能
-
-除了主页上的卡片链接外，您还可以在屏幕左侧找到一个导航窗格，让您轻松访问[警报、](/security/office-365-security/alerts.md)[报告、](reports-in-security-and-compliance.md)[策略、](alert-policies.md)合规性解决方案等。 
+除了首頁上的卡片連結之外，您還可以在畫面左邊看到一個功能窗格，讓您輕鬆存取您的[提醒](../security/office-365-security/alerts.md)、[報表](reports-in-security-and-compliance.md)、[原則](alert-policies.md)、規範解決方案等等。 若要新增或移除自訂導覽窗格的選項，請使用功能窗格上的 [**自訂導覽**控制項]。 這會開啟 [**自訂導覽窗格]** 設定，讓您可以設定要顯示在功能窗格中的專案。
 
 |  |  |
 |---------|---------|
-|![在 Microsoft 365 合规性中心导航](media/m365-compliance-center-leftnav.png)  |<br/><br/> 转到**警报**以查看和解析[警报](/security/office-365-security/alerts.md)<br/><br/>访问**报告**以查看有关[标签使用情况和保留、DLP](sensitivity-labels.md)[策略匹配和覆盖、](view-the-dlp-reports.md)[共享文件、](https://docs.microsoft.com/cloud-app-security/file-filters)[正在使用的第三方应用](https://docs.microsoft.com/cloud-app-security/discovered-apps)等数据。<br/><br/>展开"**分类"** 部分以访问[标签、](labels.md)[标签策略、](sensitivity-labels.md#what-label-policies-can-do)[敏感信息类型](what-the-sensitive-information-types-look-for.md)和[标签分析。](view-label-activity-for-documents.md)<br/><br/>转到"**策略"** 以查看[警报](/security/office-365-security/alerts.md)并访问[DLP](data-loss-prevention-policies.md)和[保留](retention-policies.md)策略。<br/><br/> **使用"解决方案"** 部分中的链接访问组织的合规性解决方案。 這些包括： <br/>[数据治理>处置](disposition-reviews.md)<br/>[eDiscovery](overview-ediscovery-20.md)<br/>[监督](supervision-policies.md)<br/>[数据调查](overview-data-investigations.md)<br/>[資料主體要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
+|![Microsoft 365 規範中心內的導覽](../media/m365-compliance-center-leftnav.png)  | 選取 [**首頁**] 以回到 Microsoft 365 規範中心主頁。 <br><br> 選取 [**資料分類**] 區段，以存取[trainable 的分類](classifier-getting-started-with.md)器、[敏感資訊類型](what-the-sensitive-information-types-look-for.md)、內容及[活動](data-classification-activity-explorer.md)瀏覽器。 <br/><br/> 選取 [**資料連線器**]，以設定在 Microsoft 365 訂閱中匯入和封存資料的[連接器](archiving-third-party-data.md)。 <br><br> 移至**提醒**以查看及解決[通知](alert-policies.md) <br/><br/>就診**報告**以查看[標籤使用狀況和保留](sensitivity-labels.md)的相關資料、 [DLP 原則比對和覆寫](view-the-dlp-reports.md)、[共用](https://docs.microsoft.com/cloud-app-security/file-filters)檔案、[使用中的協力廠商應用程式](https://docs.microsoft.com/cloud-app-security/discovered-apps)等等。 <br/><br/> 移至 [**原則**] 以設定管理資料、管理裝置和接收[提醒](../security/office-365-security/alerts.md)的原則。 您也可以存取您的[DLP](data-loss-prevention-policies.md)和[保留](retention-policies.md)原則。<br/><br/> 選取 [**許可權**]，以管理您組織中能夠存取 Microsoft 365 規範中心的人員，以查看內容和完成工作。 <br/><br/> 使用 [**解決方案**] 區段中的連結，以存取組織的合規性解決方案。 包括： <br/><br/> [型錄](microsoft-365-solution-catalog.md) <br> 探索、深入瞭解及開始使用可供您組織使用的智慧相容性和風險管理解決方案。 <br/><br/> [審計](search-the-audit-log-in-security-and-compliance.md) <br> 使用審核記錄檔，調查常見的支援和合規性問題。 <br/><br/> [內容搜尋](search-for-content.md) <br> 使用內容搜尋，以在 Exchange 信箱、SharePoint 網站中的檔、OneDrive 位置，以及 Microsoft 團隊和商務用 Skype 中的立即訊息交談，快速尋找電子郵件。 <br/><br/> [通訊合規性](communication-compliance.md) <br> 自動捕獲不適當的郵件、調查可能的原則違規和採取補救措施，以盡可能降低通訊風險。 <br/><br/> [資料調查](overview-data-investigations.md) <br/> 跨內容位置進行搜尋，以在 Microsoft 365 中識別敏感、惡意或誤放的資料，因此您可以調查並修復任何事件，例如資料外泄。 <br/><br/> [資料遺失保護](data-loss-prevention-policies.md) <br> 在整個組織中、雲端和裝置上，偵測機密內容的使用和共用，並協助防止意外的資料遺失。 <br/><br/> [資料主體要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md) <br> 尋找及匯出使用者的個人資料，以協助您回應一般資料保護規定（GDPR）的資料主體要求。 <br/><br/> [eDiscovery](overview-ediscovery-20.md) <br> 請展開此區段，以使用核心和高級 eDiscovery，保留、收集、審閱、分析和匯出以回應組織內部和外部調查的內容。 <br/><br/> [資訊管理](manage-information-governance.md) <br> 使用功能來管理您的內容生命週期，以匯入、儲存和分類業務關鍵型資料，這樣您就可以保留您所需要的專案，並刪除您不需要的專案。 <br/><br/> [資訊保護](protect-information.md) <br> 探索、分類及保護整個組織中其整個生命週期的敏感和業務關鍵型內容。 <br/><br/> [測試人員風險管理](insider-risk-management.md) <br> 偵測整個組織的危險活動，以協助您快速識別、調查和採取對內部使用者風險和威脅的動作。 <br/><br/> [記錄管理](records-management.md) <br> 自動化和簡化組織中法規、法律和業務關鍵型記錄的保留排程。
 
+## <a name="how-do-i-get-the-compliance-center"></a>如何取得規範中心？
 
-## <a name="how-do-i-get-this"></a>我怎样才能得到这个？
+- 如果您已沒有新的 Microsoft 365 規範中心，您很快就會有。 Microsoft 365 規範中心通常可供 Microsoft 365 SKU 客戶使用。
 
-- 如果您还没有新的 Microsoft 365 合规性中心，您很快就会拥有它。 [新的 Microsoft 365 合规性中心](/security/office-365-security/microsoft-security-and-compliance.md#microsoft-365-compliance-center)现已正式推出。
-
-- 要访问 Microsoft 365 合规性中心（作为全局管理员或合规性管理员，请[https://compliance.microsoft.com](https://compliance.microsoft.com)转到并登录）。 
-
-- 要了解有关要求的详细信息，请参阅[必需的许可证和权限。](/security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions)
+- 若要流覽 Microsoft 365 規範中心，請以全域管理員、合規性管理員或合規性資料管理員[https://compliance.microsoft.com](https://compliance.microsoft.com)的身分登入。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>为什么我被带到 Office 365 安全&合规性中心执行某些任务，例如定义某些策略？
+**為什麼我會進入安全性 & 合規性中心，以完成一些工作，例如定義特定原則？**
 
-我们仍在开发 Microsoft 365 合规性中心，我们将在未来几个月添加更多功能和解决方案。 同时，在 Office 365 安全&合规中心 （ ）[https://protection.office.com](https://protection.office.com)中必须执行一些任务。 在这些情况下，将自动引导您到可以执行手头任务的位置，例如创建或编辑监督策略。
+我們仍在開發 Microsoft 365 規範中心，我們會在今後的幾個月內新增更多功能和解決方案。 同時，安全性 & 規範中心（[https://protection.office.com](https://protection.office.com)）中必須完成一些工作。 在這種情況下，您將會自動定向至您可以在其中完成工作的位置，例如建立或編輯監督原則。
 
-### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>为什么我看不到新的 Microsoft 365 合规性中心呢？
+**為什麼我還沒有看到新的 Microsoft 365 規範中心？**
 
-首先，请确保您具有适当的[许可证和权限。](/security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions) 然后，在 登录。 [https://compliance.microsoft.com](https://compliance.microsoft.com) 如果您尚未看到新的合规中心，您很快就会看到它。
+首先，請確定您有適當的授權和許可權。 然後，在中登[https://compliance.microsoft.com](https://compliance.microsoft.com)入。 如果您還沒有看到新的規範中心，您很快就會有。
 
-### <a name="some-of-my-compliance-features-are-not-available-in-the-microsoft-365-compliance-center-what-do-i-do"></a>我的某些合规性功能在 Microsoft 365 合规性中心不可用。 What do I do?
+**Microsoft 365 規範中心無法使用我的一些規範功能。我該怎麼辦？**
 
-我们仍在向 Microsoft 365 合规性中心添加功能。 如果找不到某些内容（如审核日志搜索），请使用 Office 365 安全&合规性中心 （[https://protection.office.com](https://protection.office.com)）。 您的配置将自动保存在现有的 Office 365 安全&合规性中心和新的 Microsoft 365 合规性中心中。
+我們仍在 Microsoft 365 規範中心新增功能。 如果您找不到任何專案（例如審計記錄搜尋），請使用安全性 & 規範[https://protection.office.com](https://protection.office.com)中心（）。 您的設定會同時儲存在現有的安全性 & 規範中心及新的 Microsoft 365 合規性中心內。
 
-要转到该点，在 Microsoft 365 合规性中心，在屏幕左侧的导航窗格中，**选择"更多资源"，** 然后在**Office 365 安全&合规性中心**下，**选择"打开"。**
+若要移至那裡，請在 Microsoft 365 規範中心的畫面左側的功能窗格中，選擇 [**其他資源**]，然後在 [ **Office 365 安全性 & 規範中心**] 底下，選擇 [**開啟**]。
 
-![其他資源](media/MoreResourcesShowAll.png)
-
+![其他資源](../media/m365-compliance-center-more-resources.png)
 
 ## <a name="next-steps"></a>後續步驟
 
-- **查看您的 Microsoft 合规性分数，** 并使用合规性管理器来提高您的分数。 要了解更多信息，请参阅[使用合规性管理器，以帮助满足使用 Microsoft 云服务时的数据保护和法规要求。](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+- 請**複查您的 Microsoft 合規性分數**，以提升您的合規性分數。 若要深入瞭解，請參閱[相容性分數（預覽）](compliance-score.md)。
 
-- **查看组织的数据丢失防护策略，** 并根据需要进行必要的调整。 要了解更多信息，请参阅[数据丢失防护策略概述](data-loss-prevention-policies.md)。 
+- **設定「有問必答風險管理」原則**，協助將內部風險降至最低，並讓您偵測、調查和採取行動，以應對組織中的危險活動。 請參閱「[有問必答風險管理](insider-risk-management.md)」。
 
-- **熟悉并设置微软云应用程序安全。** 请参阅[快速入门：开始使用微软云应用安全](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)软件。  
+- 請**複查您組織的資料遺失防護原則**，並視需要進行必要的變更。 若要深入瞭解，請參閱[資料遺失防護原則一覽](data-loss-prevention-policies.md)。
 
-- **经常访问您的 Microsoft 365 合规性中心，** 并确保查看可能出现的任何警报或潜在风险。 转到[https://compliance.microsoft.com](https://compliance.microsoft.com)并登录。
+- **深入瞭解並設定 Microsoft Cloud App Security**。 請參閱[快速入門： Microsoft Cloud App Security 快速入門](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)。
+
+- **深入瞭解及建立通訊相容性原則**，以快速找出並修正公司行為準則原則違規。 請參閱[Microsoft 365 中的通訊法規遵從性](communication-compliance.md)。
+
+- 請**經常造訪您的 Microsoft 365 合規性中心**，並務必複查所引發的任何警示或潛在風險。 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) 並登入。

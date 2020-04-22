@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 使用 Microsoft Teams 建立和設定以不同層級為其檔案提供資訊保護的小組。
-ms.openlocfilehash: 63a4b6763165f38e1de5331324e5a7b3573ea0f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d8912900a02149d198222a4402e101b0dce53310
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083324"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637637"
 ---
 # <a name="deploy-teams-for-three-tiers-of-protection-for-files"></a>部署三種檔案保護層級的小組
 
@@ -32,7 +32,7 @@ ms.locfileid: "42083324"
 
 ## <a name="baseline-teams"></a>基準小組
 
-基準保護包含公開和私人小組。 公開小組可供組織中的任何人探索及存取。 私人網站僅供與小組關聯的 Office 365 群組成員探索及存取。 這兩種類型的小組都可讓成員與其他人共用網站。
+基準保護包含公開和私人小組。 公開小組可供組織中的任何人探索及存取。 私人網站僅供與小組關聯的 Microsoft 365 群組成員探索及存取。 這兩種類型的小組都可讓成員與其他人共用網站。
 
 ### <a name="public"></a>公用
 

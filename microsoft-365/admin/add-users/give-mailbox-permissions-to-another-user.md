@@ -1,5 +1,5 @@
 ---
-title: 授予信箱的權限給 Office 365 中的另一個使用者 - 系統管理說明
+title: 將信箱權限授予另一位其他使用者 - 系統管理員說明
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: '瞭解如何授予使用者存取另一個使用者信箱的權限。 這可讓使用者從其他使用者的信箱讀取郵件及傳送郵件。 '
-ms.openlocfilehash: 695068d2002b20637b6df6a2514b74828f273965
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 5a0677844e8503253561c57f926c9c4fadadd76d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151344"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617167"
 ---
-# <a name="give-mailbox-permissions-to-another-user-in-office-365---admin-help"></a>授予信箱的權限給 Office 365 中的另一個使用者 - 系統管理說明
+# <a name="give-mailbox-permissions-to-another-user---admin-help"></a>將信箱權限授予另一位其他使用者 - 系統管理員說明
 
 ::: moniker range="o365-worldwide"
 
@@ -49,11 +49,11 @@ ms.locfileid: "43151344"
   
 設定權限的第一個步驟便是決定您要授權其他使用者可對特定信箱採取的行動。您可以允許使用者讀取信箱中的電子郵件、代理另一個使用者傳送電子郵件，以及以該信箱當作寄件地址傳送電子郵件。請參閱下列文章，了解如何設定各種權限：
   
-- [讀取另一個使用者信箱中的電子郵件](https://support.office.com/article/Read-email-from-another-user-s-mailbox-in-Office-365-cb3b6a8a-c6e8-4342-803c-3e54b6428cc2?#bkmk_reademailanotheruser)
+- [讀取另一個使用者信箱中的電子郵件](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
     
-- [從另一個使用者的信箱傳送電子郵件](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
-    
-- [代理另一個使用者傳送電子郵件](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
+- [從另一個使用者的信箱傳送電子郵件](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)
+
+- [代理另一位使用者傳送電子郵件](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)
     
  **變更傳播：**
   

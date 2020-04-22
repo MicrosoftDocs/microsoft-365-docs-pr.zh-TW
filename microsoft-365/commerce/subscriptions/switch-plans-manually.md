@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: 購買新的訂閱並確保訂閱已列出且作用中，以手動方式切換 Microsoft 365 的商務訂閱。
-ms.openlocfilehash: e5245e333984c9d8e67b174f10cf48b2339348de
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f06e6a5f441286cbe048187eea39889772bb4e75
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636531"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707508"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>手動切換 Microsoft 365 的商務方案
 
@@ -84,13 +84,9 @@ ms.locfileid: "43636531"
 
     您要將使用者移至其中的訂閱，以及您要將使用者移至其中的訂閱，必須一起列出。 如果您第一次檢查時新的訂閱不在那裡，請稍後再試一次。 檢查這兩個訂閱均列**在 [作用中]**。 [未列出或未使用中的新訂閱](#the-new-subscription-isnt-listed-or-isnt-active)。
 
-   **新的 Microsoft 365 訂閱和可用授權**
-
-    ![[訂閱] 頁面，顯示新訂閱的授權數目。](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
-  
 3. **檢查您是否有足夠的授權可供每個使用者使用**
 
-    每個使用者都需要符合其訂閱的授權。 因此，如果您想要將十位使用者移至 Office 365 企業版 E5，您必須確定有10個授權可供使用。 在這裡的圖片中，Office 365 企業版 E5 購買了10個授權，而且所有10個授權均可供指派。
+    每個使用者都需要符合其訂閱的授權。 因此，如果您想要將十位使用者移至 Microsoft 365 商務版 Premium，您必須確定有10個授權可供使用。 
 
 4. **新訂閱需要更多授權？** 移至 [**訂閱**] 頁面，[購買適用于商務用 Microsoft 365 訂閱的授權](../licenses/buy-licenses.md)。
   
@@ -114,19 +110,19 @@ ms.locfileid: "43636531"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">作用中使用者</a>頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
 
 ::: moniker-end
 
@@ -139,8 +135,6 @@ ms.locfileid: "43636531"
     > [!TIP]
     > 若要限制使用者可使用的服務，請針對您想要針對該使用者移除的服務，將切換切換到 [**關閉**] 位置。 例如，如果您想要使用者能夠存取所有可用的服務（商務用 Skype Online 除外），您可以將商務用 Skype Online 服務的切換切換到 [**關閉**] 位置。
   
-    ![設定使用者的授權指派。](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
-  
 5. 針對此使用者不再需要的授權，將開關切換到 [**關閉**] 位置。
 
 6. 在 [**產品授權**] 窗格的底部，選取 [**指派** \> **關閉** \> ] **[關閉]。**
@@ -149,19 +143,19 @@ ms.locfileid: "43636531"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [作用中<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">使用者</a>] 頁面，或選取 [**使用者** \>作用中**使用者**]。
+1. 在系統管理中心中，移至 [**使用者** \>作用中<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">使用者</a>] 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 [**使用者** >作用中<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">使用者</a>] 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
 
 ::: moniker-end
 
@@ -176,8 +170,6 @@ ms.locfileid: "43636531"
     > [!TIP]
     > - 若要限制使用者可使用的服務，請切換至 [**關閉**] 以切換至您要針對該使用者移除的服務。 例如，如果您想要使用者能夠存取所有可用的服務（商務用 Skype Online 除外），您可以將商務用 Skype Online 服務的切換切換到 [**關閉**] 位置。
     > - 將移除任何先前指派給所選使用者的授權。
-  
-    ![設定使用者的授權指派。](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 6. 在 **[取代現有產品]** 窗格中，選取 **[取代]** \> **[關閉]**。
 

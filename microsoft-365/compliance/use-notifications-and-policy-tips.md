@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: '原則提示是指當有人使用與 DLP 原則衝突的內容時所顯示的通知或警告。 您可以使用電子郵件通知和原則提示來增加知名度，協助教育組織的原則。 您也可以讓使用者選擇覆寫原則，以便在有有效的業務需求或原則偵測到誤報時，不會封鎖這些原則。 '
-ms.openlocfilehash: 7d54c035d9bb7c9ecc5a543fb8f37749bf9437e7
-ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
+ms.openlocfilehash: fd6c7a33f8c75615019cca32797008a8fa4753ed
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43284268"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626399"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>針對 DLP 原則傳送電子郵件通知並顯示原則提示
 
@@ -36,7 +36,7 @@ ms.locfileid: "43284268"
   
 您可以使用電子郵件通知和原則提示來增加知名度，協助教育組織的原則。 您也可以讓使用者選擇覆寫原則，以便在有有效的業務需求或原則偵測到誤報時，不會封鎖這些原則。
   
-在 Office 365 的安全性&amp;與合規性中心中，當您建立 DLP 原則時，您可以將使用者通知設定為：
+在安全性&amp;與合規性中心中，當您建立 DLP 原則時，您可以將使用者通知設定為：
   
 - 傳送電子郵件通知給您選擇的描述問題的人員。
     
@@ -54,7 +54,7 @@ ms.locfileid: "43284268"
   
 1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用公司或學校帳戶登入 Office 365。 現在您已是在 Office 365 安全性&amp;與合規性中心。
+2. 使用您的公司或學校帳戶登入。 現在您已在安全性&amp;與合規性中心。
     
 3. 在 [安全性&amp;與合規\>性中心\> ] 左側導覽**資料遺失防護** \> **原則** \>中，**建立原則**。
     
@@ -219,13 +219,13 @@ DLP 原則同步處理至網站，而且會定期及非同步評估 contented，
 
 請注意，所有這些條件都是在 Outlook 中運作，其將會符合內容，並強制執行內容的保護動作。 但尚未支援使用者顯示原則提示。
   
-### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>Exchange 系統管理中心與 Office 365 安全性&amp;與合規性中心的原則提示
+### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Exchange 系統管理中心與安全性&amp;與合規性中心的原則提示
 
-原則秘訣可以搭配在 Exchange 系統管理中心中建立的 DLP 原則和郵件流程規則，或是使用 Office 365 安全性&amp;與合規性中心建立的 dlp 原則來運作，但不能同時使用這兩者。 這是因為這些原則儲存在不同的位置，但是原則秘訣只能從單一位置進行繪製。
+原則秘訣可以搭配在 Exchange 系統管理中心中建立的 DLP 原則和郵件流程規則，或是在安全性&amp;與合規性中心建立的 dlp 原則使用，但不能同時使用這兩者。 這是因為這些原則儲存在不同的位置，但是原則秘訣只能從單一位置進行繪製。
   
-如果您已在 Exchange 系統管理中心中設定原則提示，則在 Office 365 安全性&amp;與合規性中心內設定的任何原則提示，都不會對 outlook 網頁和 outlook 2013 中的使用者或更新的使用者顯示，直到您關閉 Exchange 系統管理中心中的秘訣。 這可確保您目前的 Exchange 郵件流程規則（也稱為傳輸規則）可以繼續運作，直到您選擇切換到 Office 365 安全性&amp;與合規性中心為止。
+如果您已在 Exchange 系統管理中心中設定原則提示，在 [安全性&amp;與合規性中心] 中所設定的任何原則提示，都不會顯示在網頁和 outlook 2013 和更新版本中 outlook 的使用者，直到您關閉 Exchange 系統管理中心中的秘訣。 這可確保您目前的 Exchange 郵件流程規則（也稱為傳輸規則）可以繼續運作，直到您選擇切換到 [安全性&amp;與合規性中心] 為止。
   
-請注意，當原則提示只能從單一位置繪製時，系統會永遠傳送電子郵件通知，即使您同時在 Office 365 安全性&amp;與合規性中心和 Exchange 系統管理中心中使用 DLP 原則也是一樣。
+請注意，當原則提示只能從單一位置繪製時，系統會永遠傳送電子郵件通知，即使您同時在安全性&amp;與合規性中心和 Exchange 系統管理中心中使用 DLP 原則也是一樣。
   
 ### <a name="default-text-for-policy-tips-in-email"></a>電子郵件中原則提示的預設文字
 

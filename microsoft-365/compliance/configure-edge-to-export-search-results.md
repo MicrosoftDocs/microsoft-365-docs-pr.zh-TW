@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Edge 中使用 Office 365 eDiscovery 匯出工具
+title: 使用 Microsoft Edge 中的 eDiscovery 匯出工具
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,16 +12,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 您必須啟用 ClickOnce 支援，才能使用最新版的 Microsoft Edge 從內容搜尋和 eDiscovery 的安全性與合規性中心下載搜尋結果。
-ms.openlocfilehash: 80924b124521b24ffabf1e0273802265cd715500
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: c48e3fb04747306693364a2cdbc6f18047a0fd9e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710342"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632378"
 ---
-# <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a>在 Microsoft Edge 中使用 Office 365 eDiscovery 匯出工具
+# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>使用 Microsoft Edge 中的 eDiscovery 匯出工具
 
-由於最近的 Microsoft Edge 版本變更，因此預設不再啟用 ClickOnce 支援。 若要繼續使用 Microsoft Office 365 eDiscovery 匯出工具下載內容搜尋或 eDiscovery 搜尋結果，您需要使用[Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads)或在最新版的 microsoft Edge 中啟用 ClickOnce 支援。
+由於最近的 Microsoft Edge 版本變更，因此預設不再啟用 ClickOnce 支援。 若要繼續使用 eDiscovery 匯出工具下載內容搜尋或 eDiscovery 搜尋結果，您需要使用[Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) ，或在最新版的 microsoft Edge 中啟用 ClickOnce 支援。
 
 ## <a name="enable-clickonce-support-in-microsoft-edge"></a>在 Microsoft Edge 中啟用 ClickOnce 支援
 
@@ -49,7 +49,7 @@ ms.locfileid: "42710342"
 
    ![按一下 [開啟] 以啟動 eDiscovery 匯出工具](../media/ClickOnceimage4.png)
 
-   如果未安裝 Microsoft Office 365 eDiscovery 匯出工具，系統會提示您顯示安全性警告。 
+   若尚未安裝 eDiscovery 匯出工具，系統會提示您顯示安全性警告。 
 
    ![按一下 [安裝] 以安裝 eDiscovery 匯出工具](../media/ClickOnceimage5.png)
 

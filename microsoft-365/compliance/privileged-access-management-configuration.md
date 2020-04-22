@@ -1,5 +1,5 @@
 ---
-title: 開始使用特殊許可權存取管理
+title: 開始使用 Privileged Access Management
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -17,16 +17,16 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 若要深入瞭解設定特殊許可權存取管理，請使用本主題。
-ms.openlocfilehash: 8c5a0a342c9cabf643bff5e20fc3b64f938c61b7
-ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
+ms.openlocfilehash: 196685eda6818b399c778363ee458f6f2792a33a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43115989"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626509"
 ---
-# <a name="get-started-with-privileged-access-management"></a>開始使用特殊許可權存取管理
+# <a name="get-started-with-privileged-access-management"></a>開始使用 Privileged Access Management
 
-本主題將引導您在 Office 365 組織中啟用和設定特殊許可權存取管理。 您可以使用 Microsoft 365 系統管理中心或 Exchange 管理 PowerShell 來管理和使用特殊許可權存取。
+本主題將引導您如何啟用及設定組織中的特殊許可權存取管理。 您可以使用 Microsoft 365 系統管理中心或 Exchange 管理 PowerShell 來管理和使用特殊許可權存取。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -46,11 +46,11 @@ ms.locfileid: "43115989"
 >[!IMPORTANT]
 >Office 365 Advanced 合規性不再銷售為獨立訂閱。 當目前的訂閱到期時，客戶應轉換至上述其中一個訂閱，其中包含相同或其他的符合性功能。
 
-如果您沒有現有的 Microsoft 365 企業版 E5 計畫，且想要嘗試「許可權存取管理」，您可以[將 microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)至現有的 Office 365 訂閱，或註冊 Microsoft 365 企業版 e5 的[試用版](https://www.microsoft.com/microsoft-365/enterprise)。
+如果您沒有現有的 Office 365 企業版 E5 計畫，且想要嘗試使用許可權存取管理，您可以[將 microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)至現有的 office 365 訂閱，或註冊 Microsoft 365 企業版 e5 的[試用版](https://www.microsoft.com/microsoft-365/enterprise)。
 
 ## <a name="enable-and-configure-privileged-access-management"></a>啟用和設定特殊許可權存取管理
 
-請遵循下列步驟來設定和使用 Office 365 組織中的特殊許可權存取：
+請遵循下列步驟來設定和使用您組織中的特殊許可權存取：
 
 - [步驟1：建立核准者的群組](privileged-access-management-configuration.md#step1)
 
@@ -71,7 +71,7 @@ ms.locfileid: "43115989"
 授與核准後，要求使用者可以執行預定的工作，而許可權存取將會代表使用者授權並執行工作。 核准對於要求的持續時間（預設工期為4小時）保持有效，在此期間，申請者可以多次執行預定的工作。 所有這類執行都會記錄下來，以進行安全性和合規性審核。 
 
 >[!NOTE]
->如果您想要使用 Exchange 管理 PowerShell 來啟用及設定特殊許可權存取，請依照使用 Multi-Factor 驗證連線至 exchange Online PowerShell 與 Office 365 認證，[使用 [連線至 Exchange online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)中的步驟進行。 您不需要為 Office 365 組織啟用多重要素驗證，就能使用這些步驟來啟用許可權存取，以連線至 Exchange Online PowerShell。 使用多重要素驗證來建立 OAuth 權杖，以供簽署要求的授權存取使用。
+>如果您想要使用 Exchange 管理 PowerShell 來啟用及設定特殊許可權存取，請依照使用 Multi-Factor 驗證連線至 exchange Online PowerShell 與 Office 365 認證，[使用 [連線至 Exchange online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)中的步驟進行。 您不需要為組織啟用多重要素驗證，就能在連線至 Exchange Online PowerShell 時，使用這些步驟來啟用許可權存取。 使用多重要素驗證來建立 OAuth 權杖，以供簽署要求的授權存取使用。
 
 <a name="step1"> </a>
 
@@ -126,7 +126,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ## <a name="step-3-create-an-access-policy"></a>步驟3：建立存取原則
 
-您可以為 Office 365 組織建立及設定最多30個許可權存取原則。
+您可以為組織建立及設定最多30個許可權存取原則。
 
 ### <a name="in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心
 

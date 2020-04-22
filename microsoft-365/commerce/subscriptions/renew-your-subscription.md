@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: '瞭解如何使用產品金鑰來更新 Microsoft 365 的商務用訂閱，並開啟或關閉定期計費。 '
-ms.openlocfilehash: 1c3fc5f9648c814d300cd65ac872f1e28e90ca0d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9a44f8e65aad46e82134d8f088f6955bcd37ad3b
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636556"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707652"
 ---
 # <a name="renew-microsoft-365-for-business"></a>更新 Microsoft 365 for business
 
@@ -48,11 +48,10 @@ ms.locfileid: "43636556"
 
 ::: moniker range="o365-worldwide"
 
-
 1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
 
 2. 選擇您想要管理週期性計費的訂閱。
- 
+
 3. 在 [**帳單**] 底下的 [**續訂開啟**] 或 [**到期**日] 旁邊，選取 [**編輯**]。
 
 4. 在 [**週期性計費設定**] 窗格中，選取 [**關閉**] 以關閉該功能。 如果已關閉定期計費，請選取 [**每月**] 或 [**一次**] 開啟。
@@ -68,11 +67,7 @@ ms.locfileid: "43636556"
 
 ::: moniker range="o365-germany"
   
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
-
-    如果您使用的是 Office 365 Germany，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>頁面。
-
-    如果您使用的是由 21Vianet 提供的 Office 365，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>頁面。
+1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
 
 2. 選擇您想要管理週期性計費的訂閱。
  
@@ -91,14 +86,10 @@ ms.locfileid: "43636556"
 
 ::: moniker range="o365-21vianet"
   
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
-
-    如果您使用的是 Office 365 Germany，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>頁面。
-
-    如果您使用的是由 21Vianet 提供的 Office 365，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>頁面。
+1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
 
 2. 選擇您想要管理週期性計費的訂閱。
- 
+
 3. 若要開啟**定期計費**，請將開啟開關切換為 [**開啟**]。
 
     ![已開啟定期計費之訂閱卡的特寫。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)

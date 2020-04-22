@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: de1824abe2b35cb80552c6c261f1389db9b48ca0
-  ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
-  ms.translationtype: HT
+  ms.openlocfilehash: 202a01b439755211cbf3d8b06ea1ef874a58c3c1
+  ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+  ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 04/09/2020
-  ms.locfileid: "43198346"
+  ms.lasthandoff: 04/22/2020
+  ms.locfileid: "43708664"
 landingContent:
 - title: Microsoft 威脅防護
   linkLists:
@@ -36,6 +36,12 @@ landingContent:
       url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
     - text: 功能概述
       url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
+- title: 保護您的遠端員工
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: 保護您的遠端員工
+      url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
 - title: Office 365 ATP
   linkLists:
   - linkListType: overview

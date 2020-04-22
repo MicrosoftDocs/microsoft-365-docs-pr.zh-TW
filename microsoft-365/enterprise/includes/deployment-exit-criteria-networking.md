@@ -2,7 +2,7 @@
 ### <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>必要：Microsoft 365 企業版可以使用您的網路
 
 - 您的辦公室有足夠的網際網路頻寬，可容納 Microsoft 365 流量，包括 Office 365、Microsoft Intune 以及 Windows 10 企業版安裝和更新。
-- 您的整體網路對應至 [Office 365 參考架構](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)。
+- 您的整體網路對應至 [Microsoft 365 參考架構](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)。
 - 您的網路變更已經過試驗和測試，並符合您的流量延遲需求。
 
 如有需要，[步驟 1](../networking-provide-bandwidth-cloud-services.md) 可協助您符合這項要求。

@@ -20,18 +20,18 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 深入瞭解 Microsoft 365 中的多重要素驗證，以及設定它時所需遵循的步驟。
-ms.openlocfilehash: c68fdb5c1a144c6bfe1161d95e1d6808461e2456
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 035a79c9db44990dbce09de540e3e483b3cea8df
+ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627701"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43665665"
 ---
 # <a name="plan-for-multi-factor-authentication-for-microsoft-365-deployments"></a>規劃 Microsoft 365 部署的多重要素驗證
 
 多重要素驗證 (MFA) 是一種需要使用多種驗證方法並為使用者登入和交易額外添加一層安全性的驗證方法。 其運作方式是要求包含使用者帳戶密碼以外資訊的附加驗證步驟，例如：
   
-- 隨機產生的密碼
+- 傳送至您 smart phone 的隨機產生的驗證碼
     
 - 電話
     
@@ -39,9 +39,9 @@ ms.locfileid: "43627701"
     
 - 生物特徵辨識裝置 
     
-## <a name="multi-factor-authentication-in-microsoft-365"></a>Microsoft 365 中的多重要素驗證
+## <a name="mfa-in-microsoft-365"></a>Microsoft 365 中的 MFA
 
-Microsoft 365 使用多重要素驗證，協助提供額外的安全性，並從 Microsoft 365 系統管理中心加以管理。 Microsoft 365 提供下列 Azure 多重要素驗證功能的子集，作為訂閱的一部分： 
+Microsoft 365 使用 MFA 協助提供額外的安全性，並從 Microsoft 365 系統管理中心加以管理。 Microsoft 365 提供下列[Azure Multi-Factor 驗證](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)功能的子集做為訂閱的一部分： 
   
 - 為使用者啟用及強制執行 MFA 的能力
     
@@ -49,23 +49,22 @@ Microsoft 365 使用多重要素驗證，協助提供額外的安全性，並從
     
 - 使用電話做為次要驗證因素
     
-- 使用簡訊服務 (SMS) 訊息做為次要驗證因素
+- 使用短訊息服務（SMS）短消息作為第二個驗證因素
     
 - 非瀏覽器用戶端的應用程式密碼（例如，Microsoft Lync 2013 通訊軟體）
     
 - 驗證電話期間的預設 Microsoft 問候語
     
-如需新增功能的完整清單，請參閱 [Azure 多重要素驗證版本比較](https://go.microsoft.com/fwlink/?LinkId=506927)。您可以購買 Azure 多重要素驗證服務，隨時獲得完整功能。 
+如需新增功能的完整清單，請參閱[Azure Multi-Factor 驗證](https://go.microsoft.com/fwlink/?LinkId=506927)。 您可以透過購買[Azure Multi-Factor 驗證授權](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-licensing)，永遠取得完整功能。 
   
-您可以取得不同的功能子集，具體取決於您是否有僅限雲端部署適用于 Microsoft 365，或具有單一登入和 Active Directory Federation Services （AD FS）的混合式設定。 
+您會收到不同的功能子集，具體取決於您使用的是僅限雲端的身分識別，其中的使用者帳戶已存在於 Microsoft 365，或是使用單一登入和 Active Directory Federation Services （AD FS）的混合式設定。 
   
 |**您在何處管理 Microsoft 365？**|**MFA 次要因素選項**|
 |:-----|:-----|
-|僅限雲端  <br/> |Azure Active Directory MFA (文字或電話)  <br/> |
-|混合設定、受管理的內部部署  <br/> | 如果您透過內部部署管理使用者身分識別，您有下列選擇：  <br/>  實體或虛擬智慧卡 (AD FS)  <br/> [Azure MFA](https://go.microsoft.com/fwlink/p/?LinkId=526677) (AD FS 模組)  <br/>  Azure AD MFA  <br/> |
+|僅限雲端  <br/> | Azure Multi-Factor 驗證（文字或電話）  <br/> |
+|混合設定、受管理的內部部署  <br/> | 如果您透過內部部署管理使用者身分識別，您有下列選擇：  <br/> -實體或虛擬智慧卡（AD FS）  <br/> -Azure Multi-Factor 驗證（AD FS 的模組）  <br/>  -Azure Multi-Factor 驗證  <br/> |
    
-  
-下圖顯示更新的 Office 2013 裝置 App (Windows 版) 如何讓使用者能夠使用 MFA 登入。Office 2013 裝置 App 透過使用 [Active Directory Authentication Library (ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=526684) 支援多重要素驗證。Azure AD 託管使用者可以登入的網頁。身分識別提供者可以是 Azure AD 或 AD FS 等同盟身分識別提供者。同盟使用者的驗證按下列步驟進行：
+Office 2013 裝置應用程式透過使用[Active Directory 驗證程式庫（ADAL）](https://go.microsoft.com/fwlink/p/?LinkId=526684)來支援 MFA。 Azure Active Directory （Azure AD）主控使用者可以登入的網頁。 身分識別提供者可以是 Azure AD 或 AD FS 等同盟身分識別提供者。 同盟使用者的驗證按下列步驟進行：
   
 1. Azure AD 會將使用者重新導向至由組織之身分識別提供者所主控的登入網頁。 身分識別提供者取決於使用者登入名稱中指定的網域。
     
@@ -122,18 +121,20 @@ Sor 詳細資訊，請參閱[關於新式驗證 wiki 文章的常見問題](http
 
 若要為您的訂閱啟用 MFA，請遵循下列步驟：
   
-1. 如有需要，[在 Windows 裝置上啟用 Office 2013 的新式驗證](enable-modern-authentication.md)。
+1. 視需要： 
+
+  - [在 Windows 裝置上啟用 Office 2013 的新式驗證](enable-modern-authentication.md)。
     
-  - 使用協力廠商目錄服務設定 Azure MFA。
+  - 使用協力廠商目錄服務設定 Azure Multi-Factor 驗證。
     
     請參閱[使用 Azure Multi-Factor 驗證和協力廠商 VPN 解決方案的高級案例](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)，以取得此程式接受之特定身分識別提供者的資訊。 
     
-2. [設定 Microsoft 365 的多重要素驗證](set-up-multi-factor-authentication.md)
+2. [設定 Microsoft 365 的 MFA](set-up-multi-factor-authentication.md)。
     
-3. 告訴個別使用者如何以 MFA 登入：以[兩步驟驗證登入 Microsoft 365](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx)。
+3. 告訴個別使用者如何以 MFA 登入。 請參閱[使用 MFA 登入 Microsoft 365](https://support.office.com/en-us/article/sign-in-to-microsoft-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)。
 
 > [!IMPORTANT]
-> 如果您已為您的使用者啟用 Azure AD MFA，而他們擁有任何執行 Office 2013 但未啟用 [新式驗證] 的裝置，他們將須在這些裝置上使用 AppPasswords。如需更多有關 AppPasswords 以及應使用它們的時機/位置/方式，請參閱：[Azure 多重要素驗證的應用程式密碼](https://go.microsoft.com/fwlink/p/?LinkId=528178)。
+> 如果您已對使用者啟用 Azure Multi-Factor 驗證，而且他們的任何執行 Office 2013 的裝置都未啟用新式驗證，則需要在這些裝置上使用 AppPasswords。 如需 AppPasswords 及應使用方式的詳細資訊，請參閱下列網址： [Azure Multi-Factor 驗證的應用程式密碼](https://go.microsoft.com/fwlink/p/?LinkId=528178)。
   
 ## <a name="faq"></a>常見問題集
 
@@ -145,7 +146,7 @@ Sor 詳細資訊，請參閱[關於新式驗證 wiki 文章的常見問題](http
   
  **Azure 多重要素驗證疑難排解：**
   
-請參閱 [Azure MFA 疑難排解](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues)。
+請參閱[Azure Multi-Factor 驗證疑難排解](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues)。
   
 [如何針對使用 AD FS 時的 Office 2013 新式驗證之登入問題進行疑難排解](https://support.microsoft.com/kb/3052203/)
   

@@ -1,7 +1,9 @@
 ---
-title: 开始使用 Microsoft 服务信任门户
-ms.author: markjjo
-author: markjjo
+title: 開始使用 Microsoft 服務信任入口網站
+f1.keywords:
+- NOCSH
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -11,162 +13,160 @@ search.appverid: MET150
 mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: 对于 Office 365、Azure 和 Dynamics 365 在线法规遵从性报告，请参阅第三方审核，了解 Microsoft 如何保护客户数据安全，以及如何在使用这些在线服务时遵守 ISO、HIPAA、NIST、FINRA、GDPR 和 FedRAMP。
-ms.openlocfilehash: 80dd054787957941353cbb76489fc7063d17a416
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 若要查看協力廠商的審計，請參閱 Microsoft 365、Azure 及 Dynamics 365 線上法規合規性報告，瞭解 Microsoft 如何讓客戶資料安全，以及您在使用這些線上服務時，如何相容使用 ISO、HIPAA、NIST、FINRA、GDPR 及 FedRAMP。
+ms.openlocfilehash: 837ab06a0b4cf058586cff31c462884833da5871
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076283"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632444"
 ---
-# <a name="get-started-with-the-microsoft-service-trust-portal"></a>开始使用 Microsoft 服务信任门户
+# <a name="get-started-with-the-microsoft-service-trust-portal"></a>開始使用 Microsoft 服務信任入口網站
 
-Microsoft 服务信任门户提供有关 Microsoft 安全、隐私和合规性实践的各种内容、工具和其他资源。
+Microsoft 服務信任入口網站提供各種內容、工具及其他有關 Microsoft 安全性、隱私權和規範作法的資源。
   
-## <a name="accessing-the-service-trust-portal"></a>访问服务信任门户
+## <a name="accessing-the-service-trust-portal"></a>存取服務信任入口網站
 
-服务信任门户包含有关 Microsoft 实施保护云服务及其客户数据的控制和流程的详细信息。 要访问服务信任门户上的某些资源，您必须以经过身份验证的用户身份使用 Microsoft 云服务帐户（Azure 活动目录组织帐户或 Microsoft 帐户）登录，并查看并接受 Microsoft合规材料的保密协议。
+服務信任入口網站包含 Microsoft 實施之控制和程式的詳細資料，以保護我們的雲端服務和其中的客戶資料。 若要存取服務信任入口網站上的某些資源，您必須使用 Microsoft 雲端服務帳戶（Azure Active Directory 組織帳戶或 Microsoft 帳戶）登入已驗證的使用者，並查看並接受 Microsoft 保密協定的相容性材料。
   
-现有客户可以使用以下在线订阅之一（[https://aka.ms/STP](https://aka.ms/STP)试用版或付费）**访问服务信任门户：** 
+現有客戶可以[https://aka.ms/STP](https://aka.ms/STP)使用下列其中一項線上訂閱**來存取服務信任入口網站**（試用版或付費版）： 
   
-- Office 365
+- Microsoft 365
 
 - Dynamics 365
 
 - Azure
     
  > [!NOTE]
- > 与组织关联的 Azure 活动目录帐户有权访问各种文档和功能，如合规性管理器。 为个人使用而创建的 Microsoft 帐户对服务信任门户内容的访问有限。 
+ > 與組織相關聯的 Azure Active Directory 帳戶，可存取檔和功能（如合規性管理員）的完整範圍。 為個人使用而建立的 Microsoft 帳戶，對服務信任入口網站內容的存取權有限。 
   
-**评估 Microsoft 在线服务的新客户和客户**
+**評估 Microsoft online 服務的新客戶和客戶**
   
-要创建新帐户或创建试用帐户，请使用以下注册表单之一（也用于试用帐户）来访问 STP。
+若要建立新帳戶或建立試用帳戶，請使用下列其中一種簽入表單（也用於試用帳戶），以取得 STP 的存取權。
   
-- 注册新的 Office [365 企业试用帐户](https://go.microsoft.com/fwlink/p/?LinkID=507653)或新的[Office 365 企业试用帐户](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+- 註冊新的[Microsoft 365 應用程式商務試用帳戶](https://go.microsoft.com/fwlink/p/?LinkID=507653)或新的[Office 365 企業版試用帳戶](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
-- 注册新的 Dynamics [365 试用帐户](https://go.microsoft.com/fwlink/?LinkId=252780)
+- 註冊新的[Dynamics 365 試用帳戶](https://go.microsoft.com/fwlink/?LinkId=252780)
 
-- 注册新的 Azure[试用帐户](https://go.microsoft.com/fwlink/?LinkId=722737)。 
+- 註冊新的[Azure 試用帳戶](https://go.microsoft.com/fwlink/?LinkId=722737)。 
     
-注册免费试用版或订阅时，必须启用 Azure 活动目录以支持对 STP 的访问。
+當您註冊免費試用版或訂閱時，您必須啟用 Azure Active Directory 來支援您存取 STP。
   
-## <a name="using-the-service-trust-portal"></a>使用服务信任门户
+## <a name="using-the-service-trust-portal"></a>使用服務信任入口網站
 
-可以从主菜单访问服务信任门户功能和内容。
+您可以從主要功能表存取服務信任入口網站的功能和內容。
   
-![服务信任门户菜单](media/STPMenus1.png)
+![服務信任入口網站功能表](../media/STPMenus1.png)
 
-以下各节描述主菜单中的每个项。
+下列各節說明主要功能表中的每個專案。
   
 ### <a name="service-trust-portal"></a>服務信任入口網站
 
-**服务信任门户**链接显示主页。 它提供了一种快速的方法来返回主页。
+**服務信任入口網站**連結會顯示首頁。 它可讓您快速回到首頁。
 
-### <a name="compliance"></a>合規性
+### <a name="compliance-manager"></a>合規性管理員
 
-提供以下与合规性相关的工具和资源：
+合規性管理員是以工作流程為基礎的風險評估工具，可協助您追蹤、指派及驗證組織的與 Microsoft 雲端服務相關的規章遵循活動，例如 Microsoft 365、Dynamics 365 和 Azure。 使用合規性管理員管理雲端的共用責任模型內的規章遵循。 視您想要使用的合規性管理員版本而定，請參閱下列文章以取得詳細資訊：
 
-- **审核报告**- 显示有关 Microsoft 云服务的独立审核和评估报告列表。 这些报告提供有关 Microsoft 云服务符合数据保护标准和法规要求的信息，例如：
+- [Microsoft 合規性管理員 (傳統)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+
+- [Microsoft 合規性管理員（預覽）](compliance-manager-overview.md)
+
+### <a name="trust-documents"></a>信任文件
+
+提供大量的安全性實施及設計資訊，目的在於瞭解 Microsoft Cloud services 如何保護您的資料，以簡化法規遵從性目標。 若要複查內容，請在 [**信任檔**] 下拉式功能表上選取下列其中一個選項。
+
+- **審核報告：** 隨即會顯示 Microsoft 雲端服務上的獨立審核和評估報告清單。 這些報告提供與資料保護標準及法規需求相關的 Microsoft 雲端服務規範資訊，例如：
   
-    - 国际标准化组织
-    - 服务组织控制 （SOC）
-    - 国家标准与技术研究所
-    - 联邦风险和授权管理计划 （FedRAMP）
-    - 一般数据保护条例
+    - 國際標準組織（ISO）
 
-  有关审核报告的信息以及**指向"审核报告"** 页的链接，也会显示在服务信任门户主页上。 
-  
-- **合规性管理器**- 合规性管理器是一种基于工作流的风险评估工具，可帮助您跟踪、分配和验证与 Microsoft 云服务相关的法规遵从性活动，例如 Office 365、Dynamics 365 和蔚蓝。 使用合规性管理器在云的共享责任模型中管理法规遵从性。 有关详细信息，请参阅[使用合规性管理器来帮助在使用 Microsoft 云服务时满足数据保护和法规要求。](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+    - 服務組織控制 (SOC)
 
-### <a name="industries--regions"></a>行业&区域
+    - 美國國家標準技術局 (NIST)
 
-提供有关 Microsoft 云服务的行业和地区特定的合规性信息。
+    - 聯邦風險與授權管理計畫 (FedRAMP)
 
-- **行业**- 提供有关特定于行业的登录页的信息，以及 Microsoft 云服务如何帮助您的组织遵守这些行业的标准和法规：
+    - 一般資料保護規定 (GDPR)
 
-    - 教育
-    - 金融服务
-    - 政府
-    - 健康情況
-    - 製造
-    - 零售
+- **資料保護：** 包含大量的資源，如已審核的控制項、白皮書、FAQs、滲透測試、風險評估工具及規範指南。
 
-- **区域**- 提供有关 Microsoft 云服务符合不同国家/地区法律的法律意见。 特定国家包括澳大利亚、捷克共和国、德国、波兰、罗马尼亚、西班牙和英国。
-  
-### <a name="documents--resources"></a>文档& 资源
+- **Azure 安全性與合規性藍圖：** 協助您建立安全且相容的雲端架構應用程式的資源。 此區域包含政府、金融、保健和零售行業的藍圖指導方針。
 
-提供丰富的安全实施和设计信息，旨在通过了解 Microsoft 云服务如何确保数据安全，让您更轻松地实现法规遵从性目标。 要查看内容，**请选择"文档&资源"** 页上的选项之一。
+### <a name="industries--regions"></a>產業與地區
 
-- 白皮书、常见问题解答和文章如何
-- 合规指南
-- 笔测试和安全评估
-- 安全分數
-- Azure 安全和合规性蓝图
-- 审核的控件
+提供與行業及地區相關的 Microsoft 雲端服務相容性資訊。
+
+- **行業：** 目前為止，此頁面提供金融服務行業的行業專用登陸頁面。 這包含法規遵從性服務、FAQs 及成功案例等資訊。 未來將會發佈更多行業的資源，但是您可以移至**信任檔 >** STP 中的「資料保護」頁面，以尋找更多行業的資源。
+
+- **地區：** 提供 Microsoft Cloud services 對各國家/地區各法律的法律觀點。 特定國家/地區包括澳大利亞、加拿大、捷克共和國、丹麥、德國、波蘭、羅馬尼亞、西班牙及英國。
   
 ### <a name="trust-center"></a>信任中心
 
-指向[微软信任中心](https://www.microsoft.com/trustcenter)的链接，该中心提供有关微软云中安全性、合规性和隐私的更多信息。 这包括有关 Microsoft 云服务中可用于满足 GDPR 特定要求的功能的信息、有助于您的 GDPR 问责制以及您对技术和组织措施的理解的文档微软已经采取行动支持GDPR。
+[Microsoft 信任中心](https://www.microsoft.com/trust-center)的連結，可提供 microsoft 雲端安全性、規範和隱私權的詳細資訊。 這包括 Microsoft 雲端服務中功能的相關資訊，您可以用來解決 GDPR 的特定需求、檔對您的 GDPR 責任有何説明，以及您對 Microsoft 所採用的技術和組織量值的瞭解，以支援 GDPR。
   
-### <a name="my-library"></a>我的图书馆
+### <a name="my-library"></a>我的文件庫
 
-此新功能允许您保存（或*固定）* 文档，以便您可以在"我的库"页面上快速访问它们。 您还可以设置通知，以便 Microsoft 在更新"我的库"中的文档时向您发送电子邮件。 有关详细信息，请参阅本文[中的"我的库"](#my-library-1)部分。
+這項新功能可讓您儲存（或*固定*）檔，以便您可以在 [我的文件庫] 頁面上快速存取它們。 您也可以設定通知，讓 Microsoft 在我的文件庫中的檔更新時，傳送電子郵件訊息給您。 如需詳細資訊，請參閱本文中的[My Library](#my-library-1)一節。
 
-### <a name="admin"></a>系統管理
+### <a name="more"></a>更多
 
-仅对全局管理员帐户可用的管理功能。 仅当您以全局管理员身份登录时，此选项才可见。
+移至 [**更多 > 管理員**]，以存取只有全域管理員帳戶才能使用的系統管理功能。 只有當您以全域系統管理員身分登入時，才會顯示此選項。 系統**管理**下拉式功能表中有兩個選項：
   
- "**设置"** 页允许您将基于角色的访问权限分配给合规性管理器。 有关详细信息，请参阅使用合规性管理器中的"权限和基于角色的访问控制"部分，[以帮助在使用 Microsoft 云服务时满足数据保护和法规要求。](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control)
-  
+- **設定：** 此頁面可讓您將以角色為基礎的存取權（稱為*使用者角色*）指派給合規性管理員。  如需詳細資訊，請參閱：
+   
+  - [合規性管理員中的許可權（經典）](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control)
+   
+  - [合規性管理員中的許可權（預覽）](compliance-manager-overview.md#permissions)
+
+  您也可以設定合規性管理員中的動作是否要根據安全分數中相同動作的狀態進行更新。 只有在您使用最新版本的合規性管理員時，才支援此功能。 如需詳細資訊，請參閱[控制自動安全分數更新](working-with-compliance-manager.md#controlling-automatic-secure-score-updates)。
+
+- **使用者隱私權設定：** 此頁面可讓您在特定使用者的合規性管理員中，匯出包含交辦事項專案指派的報表。 您也可以將所有動作專案重新指派給不同的使用者，並從指定的使用者移除任何已指派的動作專案。 如需詳細資訊，請參閱[使用者隱私權設定](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings)。
+
 ### <a name="search"></a>搜尋
 
-单击服务信任门户页面右上角的放大镜以展开框，输入搜索字词，然后**按"输入"。**
+按一下 [服務信任入口網站] 頁面右上角的放大鏡，展開方塊，輸入您的搜尋字詞，然後按**enter**。 隨即會顯示 [**搜尋**] 頁面，並在搜尋方塊中顯示搜尋字詞，以及下列所列的搜尋結果。
+  
+![服務信任入口網站 - 套用篩選器搜尋文件](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
-![服務信任入口網站 - 搜尋輸入欄位](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+根據預設，第 th 搜尋會傳回檔結果。 您可以使用下拉式清單來縮小所顯示的檔案清單，以篩選結果。 您可以使用多個篩選器縮小檔案清單。 篩選器包含特定的雲端服務、規範類別或安全性作法、地區和行業。 按一下 [檔案名稱] 連結，以下載檔案。
   
- **将显示"搜索"** 页面，搜索词将显示在搜索框中，搜索结果如下所示。
+若要在合規性管理員中列出評估與搜尋字詞相關的控制項，請按一下 [**合規性管理員**]。 搜尋結果會顯示評估的建立日期、評估群組的名稱、適用的 Microsoft 雲端服務，以及控制項是 Microsoft 或客戶管理的。 按一下控制項的名稱，以在合規性管理員的評估中查看該控制項。
   
-![服務信任入口網站 - 套用篩選器搜尋文件](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
-
-默认情况下，搜索返回文档结果。 您可以使用下拉列表来优化显示的文档列表，从而获得结果。 您可以使用多个筛选器来缩小文档列表。 筛选器包括特定的云服务、合规性或安全实践类别、区域和行业。 单击文档名称链接以下载文档。
-  
-要列出与"合规性管理器"中与搜索条款相关的"评估"中的控件，**请单击"合规性管理器"。** 搜索结果显示创建评估的日期、评估组的名称、适用的 Microsoft 云服务以及该控件是 Microsoft 还是客户管理。 单击控件的名称以查看合规经理评估中的控件。
-  
-![服務信任入口網站 - 搜尋合規性管理員控制項](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![服務信任入口網站 - 搜尋合規性管理員控制項](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
-> 服务信任门户报告和文档在发布后或新版本文档可用之前至少 12 个月可供下载。
+> 服務信任入口網站回報和檔可在發佈後的12個月內下載，或在新的檔版本可供下載。
   
-## <a name="my-library"></a>我的图书馆
+## <a name="my-library"></a>我的文件庫
 
-使用"我的库"功能将"服务信任门户"上的文档和资源添加到"我的库"页面。 这使您可以在单个位置访问与您相关的文档。  要将文档添加到"我的库"，请单击文档右侧**的..."** 菜单，然后**选择"保存到库"。** 您可以通过单击一个或多个文档旁边的复选框，然后单击页面顶部**的"保存到库"，** 将多个文档添加到"我的库"。
+使用 My Library 功能將服務信任入口網站上的檔和資源新增至 [我的文件庫] 頁面。 這可讓您在單一位置存取與其相關的檔。  若要將檔新增至我的文件庫，請按一下檔右側**的 [...** ] 功能表，然後選取 [**儲存至文件庫**]。 您可以按一下一或多個檔旁的核取方塊，然後按一下頁面頂端的 [**儲存至文件庫**]，將多個檔新增至 [我的文件庫]。
 
-此外，通知功能还允许您配置"我的库"，以便在 Microsoft 更新已添加到"我的库"的文档时向您发送一封电子邮件。 要设置通知，请转到"我的库"，然后单击"**通知设置"。** 您可以选择通知的频率，并指定组织中要向其发送通知的电子邮件地址。 电子邮件通知包括指向已更新的文档的链接以及更新的简要说明。
+此外，[通知] 功能可讓您設定我的文件庫，以便在 Microsoft 更新您已新增至 [我的文件庫] 的檔時，將電子郵件訊息傳送給您。 若要設定通知，請移至 [我的文件庫]，然後按一下 [**通知設定**]。 您可以選擇通知頻率，並指定您的組織中傳送通知的電子郵件地址。 電子郵件通知包括已更新之檔的連結，以及更新的簡短描述。
 
-另请注意，无论您是否打开通知，我们都会识别"我的库"中在过去 30 天内更新的任何文档。 更新的简要说明也显示在工具提示中。 
+另外請注意，不論是否開啟通知，我們都會識別在過去30天內已更新 My Library 中的任何檔。 更新的簡短描述也會顯示在工具提示中。
 
-## <a name="starter-packs"></a>初学者包
+## <a name="starter-packs"></a>Starter pack
 
-初学者包是一组 Microsoft 整理的有关特定行业的 Microsoft 云服务的文档。 目前，服务信任门户为金融服务组织提供以下三个入门包。 这些入门包可帮助组织评估和评估 Microsoft 云中的安全性、合规性和隐私，并提供帮助在高度监管的金融服务行业实施 Microsoft 云服务的指导。
+Starter pack 是 Microsoft 策劃的檔檔集合，針對特定行業的 Microsoft 雲端服務。 目前，服務信任入口網站為金融服務組織提供下列三個 starter pack。 這些 starter pack 可協助組織評估和評估 Microsoft 雲端中的安全性、合規性和隱私權，並提供指導方針，以協助您在高管制金融服務行業中實施 Microsoft 雲端服務。
 
-- **评估初学者包**- 用于早期评估金融服务组织的 Microsoft 云。
+- **評估入門套件：** 用於金融服務組織的 Microsoft 雲端初期評估。
 
-- **评估初学者包**- 评估后，使用此入门包中的检查表和其他指南来帮助您的组织评估与安全、合规性和隐私相关的风险。
+- **評估入門套件：** 評估之後，請使用此 starter pack 中的檢查清單和其他指導方針，協助您的組織評估與安全性、規範和隱私權相關的風險。
 
-- **审核初学者包**- 用户此初学者包提供有关使用审核控制和其他工具的指导，以帮助指导您实施 Microsoft 云服务的方式，帮助减少组织的风险。
+- **審核 Starter Pack：** 使用者此 starter pack 提供有關使用審核控制項和其他工具的指導方針，以協助指導您的 Microsoft 雲端服務的實施，以協助降低組織面臨風險的風險。
 
-要访问这些入门包，请转到**服务信任门户>行业&区域>行业解决方案>金融服务。** 您可以打开或从初学者包下载文档，或将其保存到"我的库"。"
+若要存取這些 starter pack，請移至**服務信任入口網站 > 行業 & 地區 > 工業方案 > 金融服務**。 您可以從 starter 套件開啟或下載檔案，或將檔儲存到我的文件庫。
 
 ## <a name="localization-support"></a>當地語系化支援
 
-通过服务信任门户，您可以查看不同语言的页面内容。 要更改页面语言，只需单击页面左下角的地球图标，然后选择您选择的语言。 
+服務信任入口網站可讓您以不同語言來查看頁面內容。 若要變更頁面語言，只要按一下頁面左下角的地球圖示，然後選取您所選擇的語言。 
   
-![服務信任入口網站 - 當地語系化的內容選項](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![服務信任入口網站 - 當地語系化的內容選項](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
   
 ## <a name="feedback"></a>意見反應
 
-我们可以帮助您解决有关服务信任门户的问题，或者您在使用该门户时遇到的错误。 您还可以使用 STP 页面底部的反馈链接联系我们，了解有关服务信任门户合规性报告和信任资源的问题和反馈。
+我們可以協助您瞭解服務信任入口網站的問題，或您在使用入口網站時所遇到的錯誤。 您也可以使用 STP 頁面底部的 [意見反應] 連結，與我們聯繫以取得服務信任入口網站規範報告和信任資源的相關問題和意見反應。
   
-您的反馈对我们非常重要。 点击页面底部的反馈按钮，向我们发送关于您所做的或不喜欢的内容的评论，或者您可能对改进我们的产品或产品功能的建议。
+我們很重視您的意見。 按一下頁面底部的 [意見反應] 按鈕，向我們傳送有關您已做什麼或不喜歡之專案的批註，或是您可能需要用來改善我們產品或產品功能的建議。
   
-![](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![您的意見反應類型](../media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

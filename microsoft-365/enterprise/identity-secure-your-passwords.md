@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 您必須在組織中強化且易於管理您的密碼。
-ms.openlocfilehash: c0ad9e2ad86cb803484e3d350fe112580610f509
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b4eb1861eb8d1c483972cf6a7c22a339dc1b0b36
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633091"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637045"
 ---
 # <a name="step-2-secure-your-passwords"></a>步驟 2：保護您的密碼
 
@@ -82,7 +82,7 @@ ms.locfileid: "42633091"
 
 
 <a name="identity-custom-sign-in"></a>
-## <a name="customize-the-office-365-sign-in-page"></a>自訂 Office 365 登入頁面
+## <a name="customize-the-sign-in-page"></a>自訂登入頁面
 
 *此為選用步驟，且同時適用於 Microsoft 365 企業版 E3 和 E5 版本*
 
@@ -90,7 +90,7 @@ ms.locfileid: "42633091"
 
 使用 Microsoft 365 企業版，您可以自訂登入和存取面板頁面的外觀，讓頁面中出現公司的標誌、色彩配置和自訂的使用者資訊。 
 
-如需詳細資訊，請參閱[將公司商標新增至 Office 365 登入頁面](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page)。
+如需詳細資訊，請參閱[將公司商標新增至 Microsoft 365 登入頁面](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page)。
 
 如需設定的指示，請參閱[將公司商標新增至登入和存取面板頁面](https://aka.ms/aadpaddbranding)。
 

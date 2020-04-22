@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文說明 Microsoft 365 中的新版本的高級 eDiscovery。
-ms.openlocfilehash: a9c7811d9ad0660105f7063e674a54c01707ea58
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3296fbbd04f2baa635fdf0330fc65b927a21448a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634281"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626759"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 中的高級 eDiscovery 解決方案概述
 
@@ -44,7 +44,7 @@ Advanced eDiscovery 的內建工作流程會與「電子探索參考模型」（
 
 - **保存。** 為了保留及保護與調查相關的資料，「高級 eDiscovery」可讓您在案例中對保管人相關聯的資料來源進行合法保留。 您也可以將非 custodial 資料置於保留狀態。 Advanced eDiscovery 也有內建的通訊工作流程，因此您可以將法律封存通知傳送給保管人，並追蹤其確認。
 
-- **收集。** 在您識別（並保留）與調查相關的資料來源之後，您可以在高級 eDiscovery 搜尋中使用內建搜尋工具，並從 custodial 資料來源（和非 custodial 資料來源（如果適用）收集即時資料，以供可能與案例有關。
+- **收集。** 在您識別（並保留）與調查相關的資料來源之後，您可以在高級 eDiscovery 搜尋中使用內建搜尋工具，然後從可能與案例相關的 custodial 資料來源（和非 custodial 資料來源（如果適用））收集即時資料。
 
 - **處理。** 在您收集所有與案例相關的資料之後，下一步是處理它以進一步複查和分析。 在 [Advanced eDiscovery] 中，您在集合階段中所識別的就地資料會複製到 Azure 存放區位置（稱為「*複查集*」），以提供案例資料的靜態視圖。 
  
@@ -80,7 +80,7 @@ Advanced eDiscovery 的內建工作流程會與「電子探索參考模型」（
 
 ## <a name="collecting-case-data"></a>收集案例資料
 
-使用 [**搜尋**] 索引標籤來建立搜尋，以搜尋 Office 365 中的就地 custodial 和非 custodial 資料來源，以取得與案例相關的內容。 您可以建立並執行查詢型搜尋（使用關鍵字和條件）來識別一組與案例相關的電子郵件訊息和檔，以及您想要在 eDiscovery 工作流程的後續步驟中進一步複查及分析的檔。 您可以建立一個或多個與案例相關聯的搜尋。 您也可以使用搜尋工具來預覽範例檔，並查看搜尋統計資料，以協助您優化和改善搜尋結果。 當您認為搜尋結果包含與案例相關的所有資料時，您可以將搜尋結果新增至審閱集，以便進一步複查、分析和剔除。 如需詳細資訊，請參閱[在高級 eDiscovery 中收集案例的資料](collecting-data-for-ediscovery.md)。
+使用 [**搜尋**] 索引標籤來建立搜尋，以搜尋與案例相關之內容的就地 custodial 和非 custodial 資料來源。 您可以建立並執行查詢型搜尋（使用關鍵字和條件）來識別一組與案例相關的電子郵件訊息和檔，以及您想要在 eDiscovery 工作流程的後續步驟中進一步複查及分析的檔。 您可以建立一個或多個與案例相關聯的搜尋。 您也可以使用搜尋工具來預覽範例檔，並查看搜尋統計資料，以協助您優化和改善搜尋結果。 當您認為搜尋結果包含與案例相關的所有資料時，您可以將搜尋結果新增至審閱集，以便進一步複查、分析和剔除。 如需詳細資訊，請參閱[在高級 eDiscovery 中收集案例的資料](collecting-data-for-ediscovery.md)。
 
 ## <a name="reviewing-and-analyzing-case-data"></a>檢查及分析案例資料
 

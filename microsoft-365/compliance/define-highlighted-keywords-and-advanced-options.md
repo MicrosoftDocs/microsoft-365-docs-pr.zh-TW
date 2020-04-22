@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 Advanced eDiscovery 中定義高亮顯示關鍵字和高級選項
+title: 在高級電子檔探索中定義高亮顯示關鍵字和高級選項
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
-description: '瞭解如何將使用者定義的關鍵字新增至相關性，以協助識別 Office 365 Advanced eDiscovery 中的相關檔案，並指定成本參數。  '
-ms.openlocfilehash: bec34867e7dfdb86848fd1fd2126d5cf96129802
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+description: '瞭解如何將使用者定義的關鍵字新增至相關性，以協助識別在高級 eDiscovery 中標記的相關檔案，並指定成本參數。  '
+ms.openlocfilehash: b36032c148e5819440bc31cbf4692db51abf1add
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42556761"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630550"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-advanced-ediscovery-classic"></a>在高級 eDiscovery （古典）中定義高亮顯示關鍵字和高級選項
 

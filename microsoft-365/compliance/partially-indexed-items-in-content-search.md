@@ -1,5 +1,5 @@
 ---
-title: 位於 Office 365 中內容搜尋的已局部編製索引項目
+title: 內容搜尋中已局部編製索引的項目
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: '深入瞭解 Exchange 和 SharePoint 中的未編制索引的專案，您可以透過安全性 & 規範中心納入內容搜尋執行。 '
-ms.openlocfilehash: 3984a181d16d4cd66fbddacb24cfd7c5e489f4ac
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: c44138c11c2703cda4accba9976c254a0b135d65
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551224"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626677"
 ---
-# <a name="partially-indexed-items-in-content-search-in-office-365"></a>位於 Office 365 中內容搜尋的已局部編製索引項目
+# <a name="partially-indexed-items-in-content-search"></a>內容搜尋中已局部編製索引的項目
 
-您從 Office 365 的安全性 & 合規性中心執行的內容搜尋，會在您執行搜尋時，自動在預估搜尋結果中包含一些已部分索引的專案。 已部分編制索引的專案是 Exchange 信箱專案和檔，其上的 SharePoint 和 OneDrive 出於某些原因尚未完全編制搜尋索引的商務網站。 在 Exchange 中，部分編制索引的專案通常會包含檔案類型的檔案，但該檔案是無法建立索引的，其附加至電子郵件訊息。 以下是一些其他一些原因：專案無法編制索引以進行搜尋，而且在您執行搜尋時會傳回成部分索引項目目： 
+您從安全性 & 合規性中心執行的內容搜尋，會在您執行搜尋時，自動在預估搜尋結果中包含一部分索引項目目。 已部分編制索引的專案是 Exchange 信箱專案和檔，其上的 SharePoint 和 OneDrive 出於某些原因尚未完全編制搜尋索引的商務網站。 在 Exchange 中，部分編制索引的專案通常會包含檔案類型的檔案，但該檔案是無法建立索引的，其附加至電子郵件訊息。 以下是一些其他一些原因：專案無法編制索引以進行搜尋，而且在您執行搜尋時會傳回成部分索引項目目： 
   
 - 檔案類型無法辨識或不支援索引編製功能。
     
@@ -47,9 +47,9 @@ ms.locfileid: "43551224"
 - 檔案受密碼保護。
     
 > [!NOTE]
-> 大多數 Office 365 組織的內容少於1% 的內容，而且不會以部分索引的大小小於12%。 磁片區和大小之間差異的原因是，較大的檔案包含無法完全編制索引的內容的可能性較高。 
+> 大多陣列織的內容少於1% 的內容，而且不會以部分索引的大小小於12%。 磁片區和大小之間差異的原因是，較大的檔案包含無法完全編制索引的內容的可能性較高。 
   
-為了進行法律調查，您的組織可能需要查看部分編制索引的專案。 您也可以指定在將搜尋結果匯出至本機電腦時，或在使用 Office 365 Advanced eDiscovery 準備結果以進行分析時，是否要包含部分索引的專案。 如需詳細資訊，請參閱[在 Office 365 eDiscovery 中調查已部分索引的專案](investigating-partially-indexed-items-in-ediscovery.md)。
+為了進行法律調查，您的組織可能需要查看部分編制索引的專案。 您也可以在將搜尋結果匯出至本機電腦時，或在使用 Advanced eDiscovery 準備分析結果時，指定是否要包含部分索引的專案。 如需詳細資訊，請參閱[在 eDiscovery 中調查已部分索引的專案](investigating-partially-indexed-items-in-ediscovery.md)。
   
 ## <a name="file-types-not-indexed-for-search"></a>未建立搜尋索引的檔案類型
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 365 中的 Windows 資訊保護並且進行部署。
-ms.openlocfilehash: 655ff33c3fd1bba822937618d801db76b7881977
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 66c9e10772edb0782096ba120858e895684255b2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067160"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631642"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>步驟 4： 設定 Windows 資訊保護
 
@@ -51,6 +51,6 @@ Windows 資訊保護 (WIP) 可協助保護 Windows 10 裝置上的此類資料�
 
 |||
 |:-------|:-----|
-|![步驟 5](../media/stepnumbers/Step5.png)|[設定 Office 365 資料外洩防護](infoprotect-data-loss-prevention.md)|
+|![步驟 5](../media/stepnumbers/Step5.png)|[設定資料外洩防護](infoprotect-data-loss-prevention.md)|
 
 

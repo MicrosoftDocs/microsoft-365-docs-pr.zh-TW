@@ -1,5 +1,5 @@
 ---
-title: 切換 Microsoft 365 for business 方案之前備份資料
+title: 變更計畫之前備份資料
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
-description: 在切換 Microsoft 365 訂閱或使用者離開組織之前，請先備份 Outlook、OneDrive、Yammer 及 SharePoint 內容。
-ms.openlocfilehash: fbebe72ec47fb6745cee6a12d81117ad08c50846
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 在變更 Microsoft 365 方案之前，請先備份 Outlook、OneDrive、Yammer 及 SharePoint 內容。
+ms.openlocfilehash: a482d59e92cd7055362663ed92630322e4ccf68a
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636077"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708092"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>切換 Microsoft 365 for business 方案之前備份資料
 

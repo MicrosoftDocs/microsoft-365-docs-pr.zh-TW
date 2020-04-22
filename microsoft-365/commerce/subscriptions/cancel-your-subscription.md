@@ -20,35 +20,34 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
-description: 瞭解如何取消 Microsoft 365 for business 或 Microsoft 365 試用版或付費訂閱。
-ms.openlocfilehash: 23a43b3a152844090cbbdf5baef29a7b8f992778
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 瞭解如何取消商務用 Microsoft 365 試用版或付費訂閱。
+ms.openlocfilehash: 56ffeae38b3cba94efacbb52bf2d9beb9af90ebb
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636592"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708080"
 ---
 # <a name="cancel-your-subscription"></a>取消訂閱
 
-*資格：* 如果您指派給使用者的授權不足25個，您可以隨時取消系統管理中心的 Microsoft 365 for business 試用或付費訂閱。 如果您有超過25個授權指派給使用者，請[致電支援部門以取消您的訂閱](../../admin/contact-support-for-business-products.md)。
+*資格：* 如果您指派給使用者的授權不足25個，您可以隨時取消 Microsoft 365 系統管理中心的 Microsoft 365 for business 試用版或付費訂閱。 如果您有超過25個授權指派給使用者，請[致電支援部門以取消您的訂閱](../../admin/contact-support-for-business-products.md)。
 
 *退款：* 在下一個計費週期內，任何按比例支付的信用都會傳回給您。
 
 > [!NOTE]
-> 如果您有多個訂閱同一產品（例如 Office 365 企業版 E3），則取消其中一項將不會影響其他訂閱中已購買的授權或服務。
+> 如果您有多個訂閱同一產品（如 Microsoft 365 商務版），請取消其中一項操作，不會影響其他訂閱中已購買的授權或服務。
 
 ## <a name="steps-to-cancel-your-subscription"></a>取消訂閱的步驟
 
-如果您已新增您自己的功能變數名稱以用於訂閱，則必須先移除網域，再取消您的訂閱。 如需詳細資訊，請參閱[從 Office 365 移除網域](../../admin/get-help-with-domains/remove-a-domain.md)。
+如果您已新增您自己的功能變數名稱以用於訂閱，則必須先移除網域，再取消您的訂閱。 如需詳細資訊，請參閱[移除網域](../../admin/get-help-with-domains/remove-a-domain.md)。
 
 ::: moniker range="o365-worldwide"
-
 
 1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
 
 2. 找到您要取消的訂閱，然後在 [**設定] & 動作**] 下，選取 [**取消訂閱**]。
 
-3. 查看重要的日期，提供您取消原因的意見反應，然後選取 [**取消訂閱**]。
+3. 請查看重要的日期，提供您取消原因的意見反應，然後選取 [**取消訂閱**]。
 
     您的訂閱現在會以**停用**狀態顯示，而且在刪除之前已降低功能。 如需在已收費的 Microsoft 365 for business 訂閱已取消時可預期的詳細資訊，請參閱[當我的 microsoft 365 for business 訂閱結束時，我的資料和存取會發生什麼事？](what-if-my-subscription-expires.md)
 
@@ -64,7 +63,7 @@ ms.locfileid: "43636592"
 
     ![關閉 [其他動作] 功能表。](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
-4. 查看重要的日期，提供您取消原因的意見反應，然後選取 [**取消訂閱**]。
+4. 請查看重要的日期，提供您取消原因的意見反應，然後選取 [**取消訂閱**]。
 
     您的訂閱現在會以**停用**狀態顯示，而且在刪除之前已降低功能。 如需在已收費的 Microsoft 365 for business 訂閱已取消時可預期的詳細資訊，請參閱[當我的 microsoft 365 for business 訂閱結束時，我的資料和存取會發生什麼事？](what-if-my-subscription-expires.md)
 
@@ -80,7 +79,7 @@ ms.locfileid: "43636592"
 
     ![關閉 [其他動作] 功能表。](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
-4. 查看重要的日期，提供您取消原因的意見反應，然後選取 [**取消訂閱**]。
+4. 請查看重要的日期，提供您取消原因的意見反應，然後選取 [**取消訂閱**]。
 
     您的訂閱現在會以**停用**狀態顯示，而且在刪除之前已降低功能。 如需在已收費的 Microsoft 365 for business 訂閱已取消時可預期的詳細資訊，請參閱[當我的 microsoft 365 for business 訂閱結束時，我的資料和存取會發生什麼事？](what-if-my-subscription-expires.md)
 
@@ -109,11 +108,11 @@ ms.locfileid: "43636592"
 
 #### <a name="change-your-domain-nameserver-records-if-needed"></a>變更您的網功能變數名稱稱伺服器記錄（如有需要）
 
-如果您設定了自訂網域，您會新增 DNS 記錄，讓網域能夠搭配 Office 365 服務運作。 在您移除網域之前，請務必在您的 DNS 主機上更新 DNS 記錄（例如您的網域 MX 記錄）。
+如果您設定了自訂網域，您已新增 DNS 記錄，讓網域能夠搭配 Microsoft 365 服務運作。 在您移除網域之前，請務必在您的 DNS 主機上更新 DNS 記錄（例如您的網域 MX 記錄）。
 
 例如，變更您 DNS 主機上的 MX 記錄。 傳送到您網域的電子郵件會停止傳送至您的 Microsoft 位址，而是移至新的電子郵件提供者。 （MX 記錄會決定傳送網域電子郵件的位置。）
 
-- 如果您的名稱伺服器（NS）記錄[指向 Office 365 名稱伺服器](../../admin/setup/add-domain.md)，除非您將 NS 記錄變更為指向新的 DNS 主機，否則 MX 記錄的變更才會生效（請參閱步驟2）。
+- 如果您的名稱伺服器（NS）記錄[指向 Microsoft 365 名稱伺服器](../../admin/setup/add-domain.md)，您的 MX 記錄變更將不會生效，除非您將 NS 記錄變更為指向新的 DNS 主機（請參閱步驟2）。
 
 - 在您更新 MX 記錄之前，請讓您的使用者知道您計畫要用來切換電子郵件的日期，以及您計畫使用的新電子郵件提供者。 此外，如果您的使用者想要將其現有的 Microsoft 電子郵件移至新的提供者，則必須採取額外的步驟。
 
@@ -121,11 +120,11 @@ ms.locfileid: "43636592"
 
 #### <a name="update-your-domain-mx-and-other-dns-records-if-youre-using-a-custom-domain"></a>更新您的網域 MX 及其他 DNS 記錄（如果您使用的是自訂網域）
 
-如果您在設定網域時將名稱伺服器（NS）記錄切換到 Office 365，您必須在您打算使用的 DNS 主機上設定或更新 MX 記錄及其他 DNS 記錄，然後將您的 NS 記錄變更為該 DNS 主機。
+如果您在設定網域時將名稱伺服器（NS）記錄切換到 Microsoft 365，您必須在您計畫要使用的 DNS 主機上設定或更新 MX 記錄及其他 DNS 記錄，然後將您的 NS 記錄變更為該 DNS 主機。
 
 如果您在設定網域時未切換 NS 記錄，當您變更 MX 記錄時，您的郵件會立即開始前往新的位址。
 
-如需詳細資訊，請參閱[Office 365 如何管理我的 DNS 記錄？](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records)。 若要變更您的 NS 記錄，請參閱[從 Office 365 移除網域](../../admin/get-help-with-domains/remove-a-domain.md)。
+如需詳細資訊，請參閱[Microsoft 365 如何管理我的 DNS 記錄？](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records)。 若要變更您的 NS 記錄，請參閱[移除網域](../../admin/get-help-with-domains/remove-a-domain.md)。
 
 ### <a name="save-your-data"></a>儲存資料
 
@@ -137,7 +136,7 @@ ms.locfileid: "43636592"
 
 ### <a name="uninstall-office-optional"></a>卸載 Office （選用）
 
-如果您取消訂閱，但沒有將使用者移至包含 Office 的不同訂閱，Office 365 會在 [精簡功能] 模式中執行。 發生這種情況時，使用者只能讀取和列印檔案，而 Office 365 應用程式會顯示未[授權產品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 為了避免產生任何混淆，請要求您的使用者從其電腦[解除安裝 Office](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)。
+如果您取消訂閱，但沒有將使用者移至包含 Microsoft 365 的不同訂閱，則 Microsoft 365 會以精簡功能模式執行。 發生這種情況時，使用者只能讀取和列印檔案，而 Microsoft 365 應用程式會顯示未[授權產品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 為了避免產生任何混淆，請要求您的使用者從其電腦[解除安裝 Office](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)。
 
 ## <a name="related-articles"></a>相關文章
 

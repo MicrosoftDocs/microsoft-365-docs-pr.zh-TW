@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: 了解當雲端服務成為您的 IT 產品的一部分時，在規劃和實現業務連續性上會有何不同。
-ms.openlocfilehash: bb9f3f1367b376c63b8779f3ff62f05b0312ef55
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 6bdecdbacd69d925e5bd44cfc0521a626d64082f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030103"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633030"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>企業業務連續性管理 (EBCM) 與雲端服務
 
@@ -40,8 +40,8 @@ ms.locfileid: "43030103"
 - [Microsoft 365 服務復原能力](ebcm-m365-service-resiliency.md)
 - [發展您的持續性計劃](ebcm-developing-your-ebcm-plan.md)
 - [Microsoft 365 服務事件的緩解案例](ebcm-microsoft-365-mitigations.md)
-- [Microsoft 365 業務連續性計畫訓練與預演](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
+- [Microsoft 365 用於業務連續性計畫訓練與預演](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [企業業務連續性法律免責聲明](ebcm-legal-disclaimer.md)

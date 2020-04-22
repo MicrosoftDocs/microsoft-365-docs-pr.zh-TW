@@ -1,5 +1,5 @@
 ---
-title: Office 365 安全電子郵件入口網站隱私權聲明
+title: 安全電子郵件入口網站隱私權聲明
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,35 +15,35 @@ search.appverid:
 ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
-description: 上次更新： 5 月 2017
-ms.openlocfilehash: 23707d22e52935b372a90a42ec323d8f64262894
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 上次更新：可能是2017
+ms.openlocfilehash: 069b47305557ef8a6a4e0a732288977842b52a5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597715"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626627"
 ---
-# <a name="privacy-statement-for-office-365-secure-email-portal"></a>Office 365 安全電子郵件入口網站隱私權聲明
+# <a name="privacy-statement-for-secure-email-portal"></a>安全電子郵件入口網站隱私權聲明
 
-上次更新： 5 月 2017
+上次更新：可能是2017
   
-本隱私權聲明說明管理 Office 365 全新的 OME 功能入口網站 (「 全新的 OME 功能入口網站 」)。 先前版本稱為 「 Office 365 郵件加密 (OME) 和 「 OME 入口網站 」。 本隱私權聲明說明不適用於其他線上或離線 Microsoft 網站、 產品或服務。 其他隱私權陳述式可能也適用於您透過全新的 OME 功能入口網站，例如 Microsoft 帳戶 （如果它用來驗證） 的隱私權陳述式或您的裝置相關聯的隱私權陳述式處理程序的資料。
+本隱私權聲明會將 Office 365 新增 OME 功能入口網站（新的 OME 功能入口網站）。 舊版本稱為 Office 365 郵件加密（OME）和「OME 入口網站 "。 本隱私權聲明不適用於其他線上或離線的 Microsoft 網站、產品或服務。 其他隱私權聲明可能也適用于您透過新的 OME 功能入口網站所處理的資料，例如 Microsoft 帳戶的隱私權聲明（如果用於驗證）或與您的裝置相關聯的隱私權聲明。
   
-## <a name="collection-processing-and-use-of-your-information"></a>收集、 處理及使用您的資訊
+## <a name="collection-processing-and-use-of-your-information"></a>收集、處理及使用資訊
 
-全新的 OME 功能入口網站可讓您檢視使用各式各樣的結束點，例如桌上型電腦或行動裝置的 Office 365 加密的電子郵件。 加密的電子郵件會以 HTML 附件的一般郵件送達您的信箱。 如果郵件傳送至您 Microsoft 帳戶、 工作或學校帳戶或 Gmail 帳戶時，系統會要求您登入 web 式全新的 OME 功能入口網站使用這類帳戶。 如果已加密的郵件傳送到 Microsoft 帳戶、 工作或學校帳戶或 Gmail 帳戶以外的帳戶，將系統會提示您建立 Microsoft 帳戶，並將它與要加密的郵件已傳送; 的帳戶或者，您可以選擇，要求一次性密碼驗證將會傳送給同一個加密的郵件已傳送的電子郵件地址。 成功驗證後，郵件會解密並顯示透過全新的 OME 功能入口網站。
+新的 OME 功能入口網站可讓您透過各種端點（例如，桌上型電腦或行動裝置）來查看以 Office 365 加密的電子郵件。 加密的電子郵件會以 HTML 附件形式傳送至一般郵件的信箱。 如果郵件傳送至您的 Microsoft 帳戶、工作或學校帳戶或 Gmail 帳戶，系統會要求您使用此帳戶登入新的 OME 功能入口網站。 如果加密郵件傳送到的帳戶不是 Microsoft 帳戶、單位或學校帳戶或 Gmail 帳戶，系統會提示您建立 Microsoft 帳戶，並將其與加密郵件所傳送的帳戶相關聯。或者，您也可以選擇要求一個用於驗證的一次性密碼，此密碼會傳送至已加密郵件所傳送到的相同電子郵件地址。 驗證成功之後，會透過新的 OME 功能入口網站解密及顯示郵件。
   
-您的認證資訊的 Microsoft 帳戶、 工作或學校帳戶，或的 Gmail 帳戶後，以及一次性密碼，將用於僅供驗證; 目的它將不會儲存在全新的 OME 功能入口網站，或全新的 OME 功能用於任何其他用途。
+您的認證資訊至 Microsoft 帳戶、工作或學校帳戶，或是 Gmail 帳戶，以及單一時間密碼，只是用於驗證的目的;它不會儲存在新的 OME 功能入口網站中，也不會供任何其他用途的新 OME 功能使用。
   
-解密過程中，您會收到加密的郵件將不會儲存由全新的 OME 功能入口網站;它將不會傳輸到外部全新的 OME 功能入口網站隨時。
+在解密過程中，新的 OME 功能入口網站不會儲存您所收到的加密郵件;在任何時候，都不會在新的 OME 功能入口網站上進行傳輸。
   
-全新的 OME 功能可能入口網站，在某些情況下，收集有關使用和效能的全新的 OME 功能 （如範例中，頻率檢視加密的郵件，在瀏覽器或應用程式使用，並遇到的任何錯誤），這可能會分析中的資料點為了改善品質、 安全性和完整性這與其他 Microsoft 應用程式、 產品或服務的彙總。 這項資訊不用來識別、 連絡人，或目標廣告給您。
+在某些情況下，新的 OME 功能入口網站可能會收集有關新 OME 功能之使用與效能的資料點（例如，查看加密的郵件、使用的瀏覽器或應用程式，以及發生的任何錯誤），為了改善此和其他 Microsoft app、產品的品質、安全性和完整性，也可能會進行匯總分析。或服務。 此資訊不會用來識別、聯繫或目標您的廣告。
   
-## <a name="for-more-information"></a>詳細資訊
+## <a name="for-more-information"></a>相關資訊
 
-請直接隱私權相關查詢給 Microsoft 透過[omepriv@microsoft.com](mailto:omepriv@microsoft.com)，或郵件，在下列網址：
+請在下列網址，透過[omepriv@microsoft.com](mailto:omepriv@microsoft.com)或郵件將隱私權相關的查詢指引至 Microsoft：
   
-Microsoft 隱私權的資訊保護
+Microsoft 隱私權-資訊保護
   
 Microsoft Corporation
   
@@ -53,6 +53,6 @@ Redmond, Washington 98052 USA
   
 ## <a name="changes"></a>變更
 
-如果我們張貼本隱私權聲明的變更，我們將會修改 「 上次更新 」 資料頂端的陳述式。 請洽詢提供服務存取的組織，以進一步瞭解隱私權政策的變更。
+如果我們將變更發佈至此語句，我們會在語句的頂端修正「上次更新」的資料。 請洽詢提供服務存取的組織，以進一步瞭解隱私權政策的變更。
   
 

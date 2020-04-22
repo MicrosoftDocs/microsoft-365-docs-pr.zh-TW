@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請逐步了解，然後在組織內推出 Microsoft Teams。
-ms.openlocfilehash: 8220d06fe90bc4bc793ab33d6121e93bb855f973
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d34673a412539dfc73296f0139fa2eb555c17099
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801238"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636696"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>部署 Microsoft 365 企業版的 Microsoft Teams
 
@@ -34,7 +34,7 @@ Microsoft Teams 將交談、會議、共用文件、往來對話整合在一起�
 
 - 請確定您已設定正確的[基礎結構](deploy-foundation-infrastructure.md)階段，您的小組才能具備您需要的使用者帳戶和安全性功能。 身分識別與資訊保護階段，對登入及使用安全的電子郵件和檔案搭配保留和敏感度標籤來說最重要。
 - 利用[此文章](https://docs.microsoft.com/microsoftteams/security-compliance-overview)來了解 Teams 中的安全性與合規性。
-- 利用[此文章](https://docs.microsoft.com/microsoftteams/office-365-licensing)來了解適用於 Teams 的 Office 365 授權。
+- 利用[此文章](https://docs.microsoft.com/microsoftteams/office-365-licensing)來了解適用於 Teams 的授權。
 
 若要在組織中推出 Teams，請參閱[如何推出 Teams](https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams)。
 

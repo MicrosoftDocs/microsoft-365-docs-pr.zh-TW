@@ -15,17 +15,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: Office 365 安全性&amp;與合規性中心的資料遺失防護（DLP）包括可供您在 DLP 原則中使用的80機密資訊類型。 本主題列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: aa3a08961ccad92c9986db16c1d8180d9b0cd17e
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+description: 安全&amp;規範中心中的資料遺失防護（DLP）包括80機密資訊類型，可供您在 DLP 原則中使用。 本主題列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
+ms.openlocfilehash: 9b863e231cd4b576999885ae3f0b5b6792c37150
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240278"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626249"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>敏感資訊類型在找什麼
 
-Office 365 安全性&amp;與合規性中心的資料遺失防護（DLP）包含許多機密資訊類型，可供您在 DLP 原則中使用。 本主題列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。 敏感資訊類型是由正則運算式或函數所識別的模式所定義。 此外，您也可以使用確切證據（如關鍵字及校驗和）來識別敏感資訊類型。 評估程式中也會使用信賴等級和近程。
+安全&amp;規範中心中的資料遺失防護（DLP）包含許多可供您在 DLP 原則中使用的機密資訊類型。 本主題列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。 敏感資訊類型是由正則運算式或函數所識別的模式所定義。 此外，您也可以使用確切證據（如關鍵字及校驗和）來識別敏感資訊類型。 評估程式中也會使用信賴等級和近程。
   
 ## <a name="aba-routing-number"></a>ABA 路由號碼
 
@@ -4522,7 +4522,7 @@ Keyword_nz_terms
 
 - NHI 
 - 紐西蘭 
-- 醫療保健 
+- 健康情況 
 - 治療 
    
 ## <a name="norway-identification-number"></a>挪威身分識別號碼

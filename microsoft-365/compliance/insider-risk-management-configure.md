@@ -1,5 +1,5 @@
 ---
-title: 開始使用「內幕風險管理」
+title: 開始使用測試人員風險管理
 description: 設定貴組織的測試人員風險管理。
 keywords: Microsoft 365, 測試人員風險管理, 風險管理, 合規性
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e4f0f90ff7089ba72f7e8b452842d670d45a49f8
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: 86aa29d0c271869eb1939b8a6a8dfb004e35d2cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097187"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637481"
 ---
-# <a name="get-started-with-insider-risk-management"></a>開始使用「內幕風險管理」
+# <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
 使用測試人員風險管理原則來識別危險的活動和管理工具，以針對組織中的風險警示採取動作。 完成下列步驟來設定必要條件及設定有問必答風險管理原則。
 
@@ -39,7 +39,7 @@ ms.locfileid: "43097187"
 
 包含在內幕風險管理原則中的使用者必須被指派上述其中一個授權。
 
-如果您沒有 Microsoft 365 企業版 E5 方案，且想要試用測試人員風險管理，您可以[將 Microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)至現有的 Office 365 訂閱，或[註冊 Microsoft 365 企業版 E5 的試用版](https://www.microsoft.com/microsoft-365/enterprise)。
+如果您沒有現有的 Microsoft 365 企業版 E5 計畫，而且想要嘗試擁有者風險管理，您可以[將 microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)至現有的訂閱，或註冊 Microsoft 365 Enterprise E5 的[試用版](https://www.microsoft.com/microsoft-365/enterprise)。
 
 ## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>步驟 1 (必要)：為測試人員風險管理啟用權限
 
@@ -60,7 +60,7 @@ ms.locfileid: "43097187"
 
 1. 在 Microsoft [https://protection.office.com/permissions](https://protection.office.com/permissions) 365 組織中登入使用系統管理員帳戶的認證。 "" "" "" ""
 
-2. 在 Microsoft Office 365 安全性與合規合規性中心，移至 **[權限]**。 選取連結，以在 Office 365 中檢視及管理角色。
+2. 在安全性&amp;與合規性中心，移至 [**許可權**]。 選取連結，以在 Office 365 中檢視及管理角色。
 
 3. 選取您想要新增使用者的「內幕風險管理」角色群組，然後選取 [**編輯角色群組**]。
 
@@ -72,11 +72,11 @@ ms.locfileid: "43097187"
 
 7. 選取 **[儲存]** 以將使用者新增至角色群組。 選取 **[關閉]** 以完成步驟。
 
-## <a name="step-2-required-enable-the-office-365-audit-log"></a>步驟2（必要）：啟用 Office 365 審核記錄
+## <a name="step-2-required-enable-the-audit-log"></a>步驟2（必要）：啟用審核記錄檔
 
 有問必答風險管理使用審核記錄，以供使用者洞察和原則中設定的活動使用。 「審計記錄檔」是與「內幕風險管理」原則相關之所有活動的摘要，或每當原則變更時的摘要。
 
-如需開啟審核的逐步指示，請參閱[開啟或關閉 Office 365 審核記錄搜尋](turn-audit-log-search-on-or-off.md)。 在您開啟審核後，會顯示一則訊息，指出已準備好審核記錄，而且您可以在準備完成後數小時執行搜尋。 您只需執行這項動作一次。 如需使用審核記錄的詳細資訊，請參閱[搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。
+如需開啟審計的逐步指示，請參閱[開啟或關閉審計記錄搜尋](turn-audit-log-search-on-or-off.md)。 在您開啟審核後，會顯示一則訊息，指出已準備好審核記錄，而且您可以在準備完成後數小時執行搜尋。 您只需執行這項動作一次。 如需使用審核記錄的詳細資訊，請參閱[搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。
 
 ## <a name="step-3-optional-configure-prerequisites-for-templates"></a>步驟3（選用）：設定範本的必要條件
 

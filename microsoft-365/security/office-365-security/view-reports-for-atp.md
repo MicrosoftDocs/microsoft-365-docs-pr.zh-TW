@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: 在安全性&amp;與合規性中心尋找及使用 Office 365 的「高級威脅防護」報告。
-ms.openlocfilehash: cca2729918239eee7d27973cd28be16a534e461b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 09e2f4be133d395b738219b3a280f08b915030e0
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631058"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708496"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>檢視 Office 365 進階威脅防護的報告
 
@@ -60,9 +60,11 @@ ATP 報告包含下列專案：
 
 ![[威脅防護狀態報表] 下拉式清單顯示「中斷者」。](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
-這些視圖可讓您透過按鈕按一下（在電子郵件 > 網路釣魚詐騙、電子郵件 > 惡意程式碼和內容 > 惡意程式碼視圖）中匯出選項。 匯出至電腦的匯總資料可以在 Excel 中開啟。
+這些視圖可讓您透過按鈕按一下（在**電子郵件** \> **網路釣魚**程式、**電子郵件** \> **惡意**代碼和**內容** \> **惡意**代碼視圖）來匯出選項。 匯出至電腦的匯總資料可以在 Excel 中開啟。
 
 ![此圖形顯示匯出為惡意程式碼視圖功能表中的選項、建立排程和要求報告之間的選項。](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+
+**附注**：**網路釣魚**和**惡意**代碼可以匯出的專案數上限，都是在10000。 如果您匯出的是視圖，則只會匯出最近的10000專案。
 
 「一覽」和「電子郵件」視圖會在處理時間內（而不是24小時）顯示資訊（要求重新）。 增加的速度是清晰的信號）！
 
