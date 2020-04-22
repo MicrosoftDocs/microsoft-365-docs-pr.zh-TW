@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何傳遞 Office 和 LOB 應用程式。
-ms.openlocfilehash: 1cead6563719c49ab591122e0c3864818746d4f0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bf610f6d6684cf8fb6211301468747fbecf3d8f1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085316"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636793"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>步驟 3：Office 和 LOB 應用程式傳遞
 
@@ -30,7 +30,7 @@ ms.locfileid: "42085316"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
 <td><p><strong>步驟 3：Office 和 LOB 應用程式傳遞</strong></p>
-<p>請確定您的應用程式已封裝並且準備好進行自動化安裝。了解隨選即用封裝與 Office 365 專業增強版如何給予您設定、傳遞及將 Office 應用程式保持在最新狀態的新選項。</p></td>
+<p>請確定您的應用程式已封裝並且準備好進行自動化安裝。了解隨選即用封裝與 Microsoft 365 Apps 企業版如何提供您設定、傳遞及將 Office 應用程式保持在最新狀態的新選項。</p></td>
 <td><a href="https://aka.ms/ddev3" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
 </thead>
 </table>
@@ -39,7 +39,7 @@ ms.locfileid: "42085316"
 >Office 和 LOB 應用程式傳遞是我們所建議部署程序轉輪中的第三個步驟，涵蓋安裝及管理 Office 及 LOB 的多個選項。 若要成功進行部署，請勿略過前兩個步驟。  若要查看完整的桌面部署程序，請瀏覽[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
-現在您已準備好提供 Office 和企業營運應用程式。有許多方法可以使用，包括一些有趣的新選項。 雖然有些應用程式僅提供 32 位元或 64 位元的編譯版本，但其他應用程式 (例如 Office 365 專業增強版) 同時提供 32 位元和 64 位元的原生編譯程式碼，而您將進行的最大決策就是要部署哪個版本。 若要利用新裝置上的其他計算能力和 RAM，Microsoft 建議使用沒有 32 位元相依性的 64 位元版本。 若要判定您可能遭遇的任何增益集或檔案相關相容性挑戰，建議先重新瀏覽「步驟 1 裝置和應用程式整備」，再繼續執行。
+現在您已準備好提供 Office 和企業營運應用程式。有許多方法可以使用，包括一些有趣的新選項。 雖然有些應用程式僅提供 32 位元或 64 位元的編譯版本，但其他應用程式 (例如 Microsoft 365 Apps 企業版) 同時提供 32 位元和 64 位元的原生編譯程式碼，而您將進行的最大決策就是要部署哪個版本。 若要利用新裝置上的其他計算能力和 RAM，Microsoft 建議使用沒有 32 位元相依性的 64 位元版本。 若要判定您可能遭遇的任何增益集或檔案相關相容性挑戰，建議先重新瀏覽「步驟 1 裝置和應用程式整備」，再繼續執行。
 
 如果沒有任何問題，建議您將所有應用程式部署為 64 位元版本，包括 Microsoft Office。64 位元原生編譯應用程式可提供最佳效能，是承受未來考驗的最佳選擇。
 
@@ -57,19 +57,19 @@ Microsoft Endpoint Configuration Manager 和 Microsoft Intune 等軟體部署工
 
 ## <a name="pc-imaging"></a>電腦影像
 
-另一個常見的應用程式傳遞方法是電腦映像處理。 在此情況下，應用程式會透過工作序列或手動方式安裝於樣本電腦，然後會擷取已預先安裝必要應用程式的系統映像。 在佈建新電腦時，建立及擷取映像的方式可節省時間，但請記得映像內的作業系統和應用程式很快就會過時。 Windows 10 和 Office 365 專業增強版的累積更新模型可協助解決這個問題，但不會完全排除。 這也是我們為何建議精簡映像方式的原因，您的應用程式會在部署階段從映像外部進行安裝。
+另一個常見的應用程式傳遞方法是電腦映像處理。 在此情況下，應用程式會透過工作序列或手動方式安裝於樣本電腦，然後會擷取已預先安裝必要應用程式的系統映像。 在佈建新電腦時，建立及擷取映像的方式可節省時間，但請記得映像內的作業系統和應用程式很快就會過時。 Windows 10 和 Microsoft 365 Apps 企業版的累積更新模型可協助解決這個問題，但不會完全排除。 這也是我們為何建議精簡映像方式的原因，您的應用程式會在部署階段從映像外部進行安裝。
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-4.png)
 
-如果您想在映像中包含 Office 365 專業增強版，請記住，這會使用使用者型啟用，而無法由系統管理員預先啟用。使用 Office 部署工具在您進行映像處理的裝置上預先安裝 Office，並跳過使用者登入。 部署映像後，使用者可以使用其 Office 365 認證登入並啟動 Office 365 專業增強版。
+如果您想在映像中包含 Microsoft 365 Apps 企業版，請記住，這會使用使用者型啟用，而無法由系統管理員預先啟用。使用 Office 部署工具在您進行映像處理的裝置上預先安裝 Office，並跳過使用者登入。 部署映像後，使用者可以使用其認證登入並啟動 Microsoft 365 Apps 企業版。
 
 [建立安裝作業系統的工作順序](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[以作業系統映像的方式部署 Office 365 專業增強版](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[將 Microsoft 365 Apps 企業版當作作業系統映像的一部分來部署](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office 隨選即用 
 
-Office 365 專業增強版使用隨選即用來安裝，隨選即用取代了 Windows 即將推出的 Office 2019 每個版本中的 MSI 型封裝。 它會帶來許多好處，包括更快速的安裝、更快且更有效率的更新以及更簡潔的解除安裝。 
+Microsoft 365 Apps 企業版使用隨選即用來安裝，隨選即用取代了 Windows 即將推出的 Office 2019 每個版本中的 MSI 型封裝。 它會帶來許多好處，包括更快速的安裝、更快且更有效率的更新以及更簡潔的解除安裝。 
 
 透過「隨選即用」提供的程式會在您電腦上的虛擬應用程式環境中執行，因此會與其他應用程式共存而沒有衝突。如同 MSI 型套件，這些程式也會佔用大約一半的磁碟空間。 Office 應用程式是透過 [Office 部署工具](https://www.microsoft.com/download/details.aspx?id=49117)提供和管理，該工具是下載、設定及自訂 Office 應用程式所需的 Office 安裝程式引擎。 Office 部署工具會讀取 XML 組態檔，該檔案會提供有關如何設定及自訂 Office 安裝的中繼資料指示。
 
@@ -77,15 +77,15 @@ Microsoft 建議使用 [Office 自訂工具](https://config.office.com/)來自�
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
-如果您使用 Configuration Manager，您仍然可以使用它來廣泛部署 Office 365 專業增強版。Configuration Manager (最新分支) 擁有更新的 Office 自訂工具的原生支援，隨選即用在安裝時間的套件自訂，以及安裝後軟體更新管理的原生支援。
+如果您使用 Configuration Manager，您仍然可以使用它來廣泛部署 Microsoft 365 Apps 企業版。Configuration Manager (最新分支) 擁有更新的 Office 自訂工具的原生支援，隨選即用在安裝時間的套件自訂，以及安裝後軟體更新管理的原生支援。
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Office 365 專業增強版部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+[Microsoft 365 Apps 企業版部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
-[升級至 Office 365 專業增強版時，移除 Office 現有的 MSI 版本](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
+[升級至 Microsoft 365 Apps 企業版時，移除 Office 現有的 MSI 版本](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[使用 Configuration Manager 管理 Office 365 ProPlus](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[使用 Configuration Manager 管理 Microsoft 365 Apps 企業版](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置](https://docs.microsoft.com/intune/apps-add-office365)
 
@@ -115,8 +115,8 @@ Microsoft Store 應用程式可原生內建為 UWP 應用程式，或者您可�
 
 ## <a name="next-step"></a>下一步
 
-## <a name="step-4-user-files-and-settingshttpsakamsmdd4"></a>[步驟 4：使用者檔案和設定](https://aka.ms/mdd4) (英文)
+## <a name="step-4-user-files-and-settings"></a>[步驟 4：使用者檔案和設定](https://aka.ms/mdd4) (英文)
 
 ## <a name="previous-step"></a>上一步
 
-## <a name="step-2-directory-and-network-readinesshttpsakamsmdd2"></a>[步驟 2：目錄和網路整備](https://aka.ms/mdd2) 
+## <a name="step-2-directory-and-network-readiness"></a>[步驟 2：目錄和網路整備](https://aka.ms/mdd2) 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 企業版的資訊保護基礎結構部署步驟。
-ms.openlocfilehash: 418506927885948cd917061d99bb69163b1e44a5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0e6fdf1a9c63200bfb57fc9f833515553c1609f4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067129"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631618"
 ---
 # <a name="phase-6-information-protection"></a>第 6 階段：資訊保護
 
@@ -44,7 +44,7 @@ ms.locfileid: "42067129"
 |![步驟 2](../media/stepnumbers/Step2.png)|[設定環境的分類](infoprotect-configure-classification.md)|
 |![步驟 3](../media/stepnumbers/Step3.png)|[設定增強的 Microsoft 365 安全性](infoprotect-configure-increased-security-office-365.md)|
 |![步驟 4](../media/stepnumbers/Step4.png)|[設定 Windows 資訊保護](infoprotect-deploy-windows-information-protection.md)|
-|![步驟 5](../media/stepnumbers/Step5.png)|[設定 Office 365 資料外洩防護](infoprotect-data-loss-prevention.md)|
+|![步驟 5](../media/stepnumbers/Step5.png)|[設定資料外洩防護](infoprotect-data-loss-prevention.md)|
 |![步驟 6](../media/stepnumbers/Step6.png)|[設定電子郵件加密](infoprotect-email-encryption.md)|
 |![步驟 7](../media/stepnumbers/Step7.png)|[設定 Office 365 的特殊權限存取管理](infoprotect-configure-privileged-access-management.md)|
 |||

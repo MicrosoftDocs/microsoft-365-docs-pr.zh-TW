@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 提供非企業組織逐步執行 Microsoft 365 企業版底層基礎結構的簡化階段。
-ms.openlocfilehash: 0d372578539ff05fcd2cadaa45c554921ee68f71
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: cad142f2f26eb999431eb5bb531cb4520e4d6102
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612643"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638257"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>適用於非企業的 Microsoft 365 企業版底層基礎結構
 
@@ -38,7 +38,7 @@ ms.locfileid: "42612643"
 
 ## <a name="first-set-up-your-subscription"></a>首先設定您的訂閱
 
-您必須為您的訂閱設定網域名稱系統 (DNS) 網域。 如果您已經有 Office 365 訂閱，這應該已經完成。 如果沒有，請依照[新增網域至 Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide) 中的指示。
+您必須為您的訂閱設定網域名稱系統 (DNS) 網域。 如果您已經有 Microsoft 365 訂閱，這應該已經完成。 如果沒有，請依照[新增網域至 Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide) 中的指示。
 
 接下來，您需要為 Microsoft 365 設定額外的安全性。 請依照[設定增強的安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)中的指示。
 
@@ -213,28 +213,28 @@ Azure AD 會評估使用者登入的條件，而且可以使用條件式存取�
 | ![大量授權服務中心](../media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | 大量授權服務中心 (提供 Windows 10 企業版新安裝的映像)，以及商務用 Windows Update 服務 (提供最新的更新)。 |
 |||
 
-## <a name="phase-4-office-365-proplus"></a>階段 4：Office 365 專業增強版
+## <a name="phase-4-microsoft-365-apps-for-enterprise"></a>階段 4：Microsoft 365 Apps 企業版
 
-Microsoft 365 企業版包含 Microsoft Office 的訂閱版本 Office 365 專業增強版。 Office 365 專業增強版與 Office 2016 或 Office 2019 一樣，直接安裝在用戶端裝置上。 不過，Office 365 專業增強版可定期獲得包含新功能的更新。 如需詳細資訊，請參閱[關於企業中的 Office 365 專業增強版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
+Microsoft 365 企業版包括 Microsoft Office 的訂閱版本 Microsoft 365 Apps 企業版。 Microsoft 365 Apps 企業版與 Office 2016 或 Office 2019 一樣，直接安裝在用戶端裝置上。 不過，Microsoft 365 Apps 企業版可定期獲得包含新功能的更新。 如需詳細資訊，請參閱[ Microsoft 365 Apps 企業版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
 
-如果是非企業組織，請在裝置 (可以是 Windows、iOS 或 Android 裝置) 上手動安裝 Office 365 專業增強版。 此動作可以在準備要使用的新裝置時完成，或者由使用者在上線程序時完成。
+如果是非企業組織，請在裝置 (可以是 Windows、iOS 或 Android 裝置) 上手動安裝 Microsoft 365 Apps 企業版。 此動作可以在準備要使用的新裝置時完成，或者由使用者在上線程序時完成。
 
 無論是哪一種情況，系統管理員或使用者都要在 https://portal.office.com 登入 Office 365 入口網站。 在 [Microsoft Office 首頁]**** 索引標籤上，按一下 [安裝 Office]****，然後逐步完成安裝程序。
 
-安裝 Office 365 專業增強版的每部電腦，每個月都會下載功能更新。 在非企業組織中通常不需要設定基礎結構，就能散發 Office 365 專業增強版更新。 
+安裝 Microsoft 365 Apps 企業版的每部電腦，每個月都會下載功能更新。 在非企業組織中通常不需要設定基礎結構，就能散發 Microsoft 365 Apps 企業版更新。 
 
 ### <a name="your-configuration-so-far"></a>您目前的設定
 
-以下是 Office 365 專業增強版階段的視覺摘要 (將新項目醒目提示)。
+以下是 Microsoft 365 Apps 企業版階段的視覺摘要 (將新項目醒目提示)。
 
-![在 Office 365 專業增強版階段之後的貴組織](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
+![在 Microsoft 365 Apps 企業版階段之後的貴組織](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
  
-全新和醒目提示的 Office 365 專業增強版元素包括：
+全新和醒目提示的 Microsoft 365 Apps 企業版元素包括：
  
 |||
 |:------:|:-----|
-| ![Office 365 專業增強版安裝在裝置上](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 專業增強版安裝在裝置上，以內部部署膝上型電腦為例。 |
-| ![Office 365 專業增強版適用的 Office 內容傳遞網路 (CDN)](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Office 365 專業增強版適用的 Office 內容傳遞網路 (CDN)，裝置會存取它來取得 Office 365 專業增強版更新。 |
+| ![Microsoft 365 Apps 企業版安裝在裝置上](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Microsoft 365 Apps 企業版安裝在 Windows 裝置上，以內部部署膝上型電腦為例。 |
+| ![Microsoft 365 Apps 企業版適用的 Office 內容傳遞網路 (CDN)](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Microsoft 365 Apps 企業版適用的 Office 內容傳遞網路 (CDN)，可讓裝置存取 Microsoft 365 Apps 企業版更新。 |
 |||
 
 ## <a name="phase-5-mobile-device-management"></a>階段 5：行動裝置管理
@@ -312,14 +312,14 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
 
 如需詳細資訊，請參閱 [Microsoft 365 分類類型](infoprotect-configure-classification.md#microsoft-365-classification-types)。
 
-如果您使用權限的敏感度標籤，可能需要建立額外的 Office 365 安全性群組來定義誰可以對套用敏感度標籤的電子郵件和文件執行什麼動作。 
+如果您使用權限的敏感度標籤，可能需要建立額外的安全性群組來定義誰可以對套用敏感度標籤的電子郵件和文件執行什麼動作。 
 
 例如，您需要建立 RESEARCH 敏感度標籤來保護研究團隊的電子郵件和文件。 您可以決定：
 
 - 研究人員必須能夠變更使用 RESEARCH 敏感度標籤標示的文件。
 - 非研究員工只需要能夠檢視使用 RESEARCH 敏感度標籤標示的文件。 
 
-這表示您必須建立和管理兩個額外的 Office 365 群組：
+這表示您必須建立和管理兩個額外的 Microsoft 365 群組：
 
 - RESEARCH-ALL
 - RESEARCH-VIEW
@@ -388,7 +388,7 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
 
 1. 使用他們的使用者帳戶認證登入裝置。
 2. 使用瀏覽器，登入 Office 365 入口網站 https://portal.office.com。
-3. 從 [Office 365 首頁]**** 索引標籤，按一下 [安裝 Office]****，在裝置上安裝 Office 365 專業增強版。
+3. 從 [Office 365 首頁]**** 索引標籤，按一下 [安裝 Office]****，在裝置上安裝 Microsoft 365 Apps 企業版。
 
 ## <a name="end-results"></a>最終結果
 
@@ -405,7 +405,7 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
   - COND-ACCESS-EXCLUDE
   - 也同樣屬於 BASELINE、SENSITIVE 和 HIGHLY-REGULATED Azure AD 群組之成員的適當 AD DS 或 Azure AD 安全性群組 
   - 工作群組、部門和地區群組
-  - 敏感度標籤 Office 365 群組 (如有需要)
+  - 敏感度標籤 Microsoft 365 群組 (如有需要)
 - 使用 BASELINE、SENSITIVE、HIGHLY-REGULATED 和 COND-ACCESS-EXCLUDE Azure AD 群組的 Azure AD 登入條件式存取原則。
 - Intune 應用程式和裝置合規性原則。
 - 自訂敏感性資訊類型 (如有需要)。
@@ -429,11 +429,11 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
    - LICENSED
    - 適當的 AD DS 或 Azure AD 安全性群組，也同樣屬於條件式存取原則的 BASELINE、SENSITIVE 和 HIGHLY-REGULATED Azure AD 群組的成員 
    - 適當的工作群組、部門和地區群組
-   - 敏感度標籤 Office 365 群組 (如有需要)
+   - 敏感度標籤 Microsoft 365 群組 (如有需要)
 - 具備下列條件的 Windows 10 企業版裝置：
    - 已加入 Azure AD 租用戶 (僅雲端) 或同時加入 Azure AD 租用戶與 AD DS 網域 (混合式)。
    - 使用最新的 Windows 10 企業版產品改良功能和安全性增強功能自動更新本身。
-   - 已安裝 Office 365 專業增強版，它會使用最新的 Office 產品改良功能和安全性增強功能自動更新本身。
+   - 已安裝 Microsoft 365 Apps 企業版，它會使用最新的 Office 產品改良功能和安全性增強功能自動更新本身。
    - 已在 Intune 中註冊，而且遵守 Intune 裝置合規性原則和應用程式保護原則。
 
 ## <a name="next-step"></a>下一步

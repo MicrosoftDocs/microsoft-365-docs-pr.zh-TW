@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解重要的 Windows 和 Office 安全性與相容性考量。
-ms.openlocfilehash: 1d38347ca1bdf152a891cfd147ec3fabf552ff3d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 003064f521f1a68c01da9d6a2c9fb19eae7d3eaf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085257"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636769"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>步驟 5：安全性與相容性考量事項
 
@@ -30,20 +30,20 @@ ms.locfileid: "42085257"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
 <td><p><strong>步驟 5：安全性與相容性考量事項</strong></p>
-<p>Windows 10 和 Office 365 專業增強版提供全新的方式來保護您的資料、裝置和使用者，並快速偵測及回應威脅。此外，了解如何在轉移到 Windows 10 時處理與磁碟加密、反惡意程式碼應用程式和原則相關的常見問題。</p></td>
+<p>Windows 10 和 Microsoft 365 Apps 企業版提供全新的方式來保護您的資料、裝置和使用者，並快速偵測及回應威脅。此外，了解如何在轉移到 Windows 10 時處理與磁碟加密、反惡意程式碼應用程式和原則相關的常見問題。</p></td>
 <td><a href="https://aka.ms/ddev5" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->安全性與相容性是我們建議的部署程序轉輪中第五個步驟，說明 Windows 10 和 Office 365 專業增強安全性與相容性考量。 若要查看完整的桌面部署程序，請瀏覽[桌面部署中心](https://aka.ms/HowToShift)。
+>安全性與相容性是我們建議的部署程序轉輪中第五個步驟，說明 Windows 10 和 Microsoft 365 Apps 企業版安全性與相容性考量。 若要查看完整的桌面部署程序，請瀏覽[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
-現在是時候檢閱可在部署 Windows 10 和 Office 365 專業增強版時以新的安全性及合規性功能作為目標的選項，以及檢閱在從先前版本的 Windows 和 Office 移轉時的考量及常見阻礙。 Windows 10 中許多安全性相關功能都在驅動轉換至較新的平台。 此外，使用 Azure Active Directory 與 Office 365 中的雲端服務和身分識別選項整合能為您的資料、裝置和使用者帶來新的核持續更新保護的存取。
+現在是時候檢閱可在部署 Windows 10 和 Microsoft 365 Apps 企業版時以新的安全性及合規性功能作為目標的選項，以及檢閱在從先前版本的 Windows 和 Office 移轉時的考量及常見阻礙。 Windows 10 中許多安全性相關功能都在驅動轉換至較新的平台。 此外，使用 Azure Active Directory 與雲端服務和身分識別選項整合能為您的資料、裝置和使用者帶來新的且持續更新保護的存取。
 
 ## <a name="overcoming-potential-security-related-deployment-blockers"></a>克服潛在的安全性相關部署封鎖
 
-在說明當您移至 Windows 10 和 Office 365 專業增強版及將這些體驗與雲端連線時可新增的功能之前，讓我們從幾個我們所看到通常可能會中斷部署進度的趨勢開始。
+在說明當您移至 Windows 10 和 Microsoft 365 Apps 企業版及將這些體驗與雲端連線時可新增的功能之前，讓我們從幾個我們所看到通常可能會中斷部署進度的趨勢開始。
 
 ### <a name="disk-encryption"></a>磁碟加密
 
@@ -63,7 +63,7 @@ ms.locfileid: "42085257"
 
 ### <a name="security-policies"></a>安全性原則
 
-您用於較舊版 Windows 和 Office 的 Active Directory 群組原則設定可能不會直接翻譯為 Windows 10 及 Office 365 專業增強版，且較新的安全性與相容性功能會有不同的考量。最好使用 Microsoft 安全性相容性工具組取得最新版 Windows 及 Office 的安全性原則基準。此外，值得一探究竟行動裝置管理原則作為 Microsoft Intune 的一部分。
+您用於較舊版 Windows 和 Office 的 Active Directory 群組原則設定可能不會直接翻譯為 Windows 10 及 Microsoft 365 Apps 企業版，且較新的安全性與相容性功能會有不同的考量。最好使用 Microsoft 安全性相容性工具組取得最新版 Windows 及 Office 的安全性原則基準。此外，值得一探究竟行動裝置管理原則作為 Microsoft Intune 的一部分。
 
 ![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
 
@@ -71,11 +71,11 @@ ms.locfileid: "42085257"
 
 ## <a name="new-security-and-compliance-capabilities-in-microsoft-365"></a>Microsoft 365 中新的安全性和相容性功能
 
-現在，將您目前保護向前移動有一些考量，以及在您轉變前有些要注意的事項。現在讓我們來看一下從 EMS 和更新版本移至 Windows 10、Office 365 專業增強版和雲端選項時，您可以善加利用的新功能。
+現在，將您目前保護向前移動有一些考量，以及在您轉變前有些要注意的事項。現在讓我們來看一下從 EMS 和更新版本移至 Windows 10、Microsoft 365 Apps 企業版和雲端選項時，您可以善加利用的新功能。
 
 ### <a name="identity-and-access-management"></a>身分識別和存取管理
 
-開始進行身分識別與存取管理。Azure Active Directory 是適用於應用程式、裝置和雲端服務的身分識別控制平面，且是連線到 Office 365 及其他雲端服務的現代化方法。條件式存取可讓您根據您的登入位置、您使用的裝置，以及異常行為等來定義不同的驗證需求。
+開始進行身分識別與存取管理。Azure Active Directory 是適用於應用程式、裝置和雲端服務的身分識別控制平面，且是連線到 Microsoft 365 及其他雲端服務的現代化方法。條件式存取可讓您根據您的登入位置、您使用的裝置，以及異常行為等來定義不同的驗證需求。
 
 在裝置層級，生物識別技術能提供唯一識別項以更輕鬆、更安全地存取您的裝置和應用程式 - 在您移動至排除密碼的目標時。Windows Hello 提供裝置型多重要素驗證。必須仰賴裝置本身、PIN 或唯一的生物識別識別碼，例如您可以透過原則強制執行的臉孔或指紋。
 
@@ -99,7 +99,7 @@ ms.locfileid: "42085257"
 
 透過 Microsoft Intelligent Security Graph，您可以更快速地存取新興威脅的資訊和保護。以下是您可以善加利用的幾個功能，從 Office 開始。
 
-**[資料外洩防護](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)** (英文) 內建於 Office 365 專業增強版，可協助在偵測到高風險內容 (例如信用卡或識別碼) 時告知使用者安全性原則。通知使用者後，原則可以通知或封鎖傳送及共用。
+**[資料外洩防護](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)** (英文) 內建於 Microsoft 365 Apps 企業版，可協助在偵測到高風險內容 (例如信用卡或識別碼) 時告知使用者安全性原則。通知使用者後，原則可以通知或封鎖傳送及共用。
 
 **[Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide)** (英文) 是一種互補服務，可與 Office 搭配使用，讓使用者可輕鬆地分類及將 Office 檔案標籤。它會在標籤的檔案上觸發自動動作，例如加密或鎖定共用。
 
@@ -119,12 +119,12 @@ Windows 10 中的 **[Windows Defender 應用程式控制](https://docs.microsoft
 
 #### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) (英文) 作為行動裝置情況下的雲端式管理服務，包括 IOS、Android 和 Windows 裝置，且現在可以設定為共同管理以加強及擴充 Configuration Manager 所管理特定工作負載的控制項。此處的其中一個優點是，可能需要註冊到裝置管理，裝置才能存取受保護的資源 – 即使未受管理、非網域聯結或非 Azure AD 聯結裝置。您也可以利用作業系統和應用程式層級的細微設定與合規性原則強制執行。應用程式原則與設定可以使用 Microsoft Intune 在 Windows 10 中集中設定和強制執行 Office 365 專業增強版和 Microsoft Store 應用程式。
+[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) (英文) 作為行動裝置情況下的雲端式管理服務，包括 IOS、Android 和 Windows 裝置，且現在可以設定為共同管理以加強及擴充 Configuration Manager 所管理特定工作負載的控制項。此處的其中一個優點是，可能需要註冊到裝置管理，裝置才能存取受保護的資源 – 即使未受管理、非網域聯結或非 Azure AD 聯結裝置。您也可以利用作業系統和應用程式層級的細微設定與合規性原則強制執行。應用程式原則與設定可以使用 Microsoft Intune 在 Windows 10 中集中設定和強制執行 Microsoft 365 Apps 企業和 Microsoft Store 應用程式。
 
 ## <a name="next-step"></a>下一步
 
-## <a name="step-6-os-deployment-and-feature-updateshttpsakamsmdd6"></a>[步驟 6：作業系統部署與功能更新](https://aka.ms/mdd6) (英文)
+## <a name="step-6-os-deployment-and-feature-updates"></a>[步驟 6：作業系統部署與功能更新](https://aka.ms/mdd6) (英文)
 
 ## <a name="previous-step"></a>上一步 
 
-## <a name="step-4-user-files-and-settingshttpsakamsmdd4"></a>[步驟 4：使用者檔案和設定](https://aka.ms/mdd4) (英文)
+## <a name="step-4-user-files-and-settings"></a>[步驟 4：使用者檔案和設定](https://aka.ms/mdd4) (英文)

@@ -11,22 +11,22 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: 深入了解 Microsoft 365 中提供的來賓共用設定。
-ms.openlocfilehash: 74bf2fd431b604b7f38043bfc029232137b24cf1
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 396f55063461bb4a87813cc1e3943c5a4afd7156
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604486"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625155"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 來賓共用設定參考
 
-本文提供了可能影響與組織外的部人員共用 Microsoft 365 工作負載的各種設定參考：Teams、Office 365 Groups、SharePoint 和 OneDrive。 這些設定位於 Azure Active Directory、Microsoft 365、Teams 和 SharePoint 系統管理中心。
+本文提供了可能影響與組織外的部人員共用 Microsoft 365 工作負載的各種設定參考：Teams、Microsoft 365 群組、SharePoint 和 OneDrive。 這些設定位於 Azure Active Directory、Microsoft 365、Teams 和 SharePoint 系統管理中心。
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
 **系統管理員角色：** 全域系統管理員
 
-Azure Active Directory 是 Microsoft 365 所使用的目錄服務。 Azure Active Directory 組織關聯性設定會直接影響 Teams、Office 365 群組、SharePoint 和 OneDrive 中的共用。
+Azure Active Directory 是 Microsoft 365 所使用的目錄服務。 Azure Active Directory 組織關聯性設定會直接影響 Teams、Microsoft 365 群組、SharePoint 和 OneDrive 中的共用。
 
 > [!NOTE]
 > 這些設定只有在已設定 [SharePoint 和 OneDrive 整合搭配 Azure AD B2B (預覽)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) 時才會影響 SharePoint。 下表假設已進行此設定。
@@ -41,7 +41,7 @@ Azure Active Directory 是 Microsoft 365 所使用的目錄服務。 Azure Activ
 |:-----|:-----|:-----|
 |來賓使用者權限受限|是|此設定會影響來賓可以執行的目錄工作。|
 |系統管理員與來賓邀請者角色中的使用者可以邀請|是|設為 [是]**** 時，系統管理員可以透過 Azure AD 和透過 Microsoft 365 共用體驗 (例如 Teams 和 SharePoint) 邀請來賓；設為 [否]**** 時則無法。|
-|成員可以邀請|是|設為 [是]**** 時，Azure AD 成員可以透過 Azure AD 邀請來賓；設為 [否]**** 時，則無法邀請。 設為 [是]**** 時，Office 365 群組成員可以邀請具有擁有者核准的來賓；設為 [否]**** 時，Office 365 群組成員可以邀請具有擁有者核准的來賓，但擁有者必須是全域系統管理員，才能進行核准。 <br><br>請注意，**成員可以邀請**是指 Azure AD 中的成員 (相對於來賓)，而非 Microsoft 365 中的網站或群組成員。 <br><br>這與 Microsoft 365 安全性與隱私權中的 [讓使用者將新的來賓新增到組織]**** 設定完全相同。|
+|成員可以邀請|是|設為 [是]**** 時，Azure AD 成員可以透過 Azure AD 邀請來賓；設為 [否]**** 時，則無法邀請。 設為 [是]**** 時，Microsoft 365 群組成員可以邀請具有擁有者核准的來賓；設為 [否]**** 時，Microsoft 365 群組成員可以邀請具有擁有者核准的來賓，但擁有者必須是全域系統管理員，才能進行核准。 <br><br>請注意，**成員可以邀請**是指 Azure AD 中的成員 (相對於來賓)，而非 Microsoft 365 中的網站或群組成員。 <br><br>這與 Microsoft 365 安全性與隱私權中的 [讓使用者將新的來賓新增到組織]**** 設定完全相同。|
 |來賓可以邀請|是|設為 [是]**** 時，目錄中的來賓可以邀請其他來賓在 Azure AD 資源上以及在 SharePoint 和 OneDrive 中的檔案和資料夾上共同作業；設為 [否]**** 時則無法。 <br><br>請注意，必須在 SharePoint 系統管理中心開啟 [允許外部使用者輸入完全相符的電子郵件地址以尋找目錄中的使用者帳戶]****，來賓才能與其他來賓共用檔案和資料夾。|
 |為來賓啟用電子郵件一次性密碼 (預覽)|否|設為 [是]**** 時，沒有 MSA 或公司或學校帳戶的來賓可以[使用一次性密碼向 Azure AD 進行驗證](https://docs.microsoft.com/azure/active-directory/b2b/one-time-passcode)；設為 [否]**** 時，使用者將必須建立 Microsoft 帳戶才能進行驗證。 此設定必須設為 [是]****，[SharePoint 和 OneDrive 整合搭配 Azure AD B2B (預覽)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) 才能運作。|
 |共同作業限制|允許傳送邀請給任何網域|此設定可讓您針對共用指定允許或封鎖的網域清單。 指定允許的網域時，則只可以將共用邀請傳送至這些網域。 指定拒絕的網域時，則無法將共用邀請傳送至這些網域。<br><br> 此設定會影響 Microsoft 365 共用體驗 (例如 Teams 和 SharePoint)。 您可以使用 SharePoint 或 Teams 中的網域篩選，以更細微的層級允許或封鎖網域。|
@@ -52,7 +52,7 @@ Azure Active Directory 是 Microsoft 365 所使用的目錄服務。 Azure Activ
 
 **系統管理員角色：** 全域系統管理員
 
-Microsoft 365 系統管理中心有用於共用和用於 Office 365 群組的組織層級設定。
+Microsoft 365 系統管理中心有用於共用和用於 Microsoft 365 群組的組織層級設定。
 
 ### <a name="sharing"></a>共用
 
@@ -62,18 +62,18 @@ Microsoft 365 系統管理中心有用於共用和用於 Office 365 群組的組
 
 |**設定**|**預設值**|**描述**|
 |:-----|:-----|:-----|
-|讓使用者將新的來賓新增到組織|開啟|設為 [是]**** 時，Azure AD 成員可以透過 Azure AD 邀請來賓；設為 [否]**** 時，則無法邀請。 設為 [是]**** 時，Office 365 群組成員可以邀請具有擁有者核准的來賓；設為 [否]**** 時，Office 365 群組成員可以邀請具有擁有者核准的來賓，但擁有者必須是全域系統管理員，才能進行核准。 <br><br>請注意，**成員可以邀請**是指 Azure AD 中的成員 (相對於來賓)，而非 Microsoft 365 中的網站或群組成員。 <br><br>這與 Azure Active Directory 組織關聯性設定中的 [成員可以邀請]**** 設定完全相同。|
+|讓使用者將新的來賓新增到組織|開啟|設為 [是]**** 時，Azure AD 成員可以透過 Azure AD 邀請來賓；設為 [否]**** 時，則無法邀請。 設為 [是]**** 時，Microsoft 365 群組成員可以邀請具有擁有者核准的來賓；設為 [否]**** 時，Microsoft 365 群組成員可以邀請具有擁有者核准的來賓，但擁有者必須是全域系統管理員，才能進行核准。 <br><br>請注意，**成員可以邀請**是指 Azure AD 中的成員 (相對於來賓)，而非 Microsoft 365 中的網站或群組成員。 <br><br>這與 Azure Active Directory 組織關聯性設定中的 [成員可以邀請]**** 設定完全相同。|
 
-### <a name="office-365-groups"></a>Office 365 群組
+### <a name="microsoft-365-groups"></a>Microsoft 365 群組
 
-**瀏覽：**[Microsoft 365 系統管理中心](https://admin.microsoft.com) > [設定] > [設定] > [Office 365 群組]
+**瀏覽：**[Microsoft 365 系統管理中心](https://admin.microsoft.com) > [設定] > [設定] > [Microsoft 365 群組]
 
-![Microsoft 365 系統管理中心中 Office 365 群組來賓設定的螢幕擷取畫面](../media/office-365-groups-guest-settings.png)
+![Microsoft 365 系統管理中心中 Microsoft 365 群組來賓設定的螢幕擷取畫面](../media/office-365-groups-guest-settings.png)
 
 |**設定**|**預設值**|**描述**|
 |:-----|:-----|:-----|
-|讓貴組織外部的群組成員存取群組內容|開啟|設為 [開啟]**** 時，來賓可以存取群組內容；設為 [否]**** 時，則無法存取。 針對來賓使用者會與 Office 365 群組或 Teams 互動的案例，此設定應該為 [開啟]****。|
-|讓群組擁有者將貴組織外部的人員新增到群組|開啟|[開啟]**** 時，Office 365 群組或 Teams 的擁有者可以邀請新來賓加入群組。 [關閉]**** 時，擁有者只能邀請已在目錄中的來賓。|
+|讓貴組織外部的群組成員存取群組內容|開啟|設為 [開啟]**** 時，來賓可以存取群組內容；設為 [否]**** 時，則無法存取。 針對來賓使用者會與 Microsoft 365 群組或 Teams 互動的案例，此設定應該為 [開啟]****。|
+|讓群組擁有者將貴組織外部的人員新增到群組|開啟|[開啟]**** 時，Microsoft 365 群組或 Teams 的擁有者可以邀請新來賓加入群組。 [關閉]**** 時，擁有者只能邀請已在目錄中的來賓。|
 
 這些設定是在組織層級。 如需如何使用 PowerShell 在群組層級變更這些設定的詳細資訊，請參閱[建立特定群組的設定](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group)。
 
@@ -136,7 +136,7 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]****，必須
 
 **系統管理員角色：** SharePoint 系統管理員
 
-這些設定會影響組織中所有的網站。 它們不會直接影響 Office 365 群組或 Teams，但我們建議您調整這些設定，以配合 Office 365 群組和 Teams 的設定，以避免使用者遇到問題。 (比方說，如果在 Teams 允許來賓共用但未在 SharePoint 中允許，那麼，Teams 中的來賓將無法存取 [檔案] 索引標籤，因為 Teams 檔案是儲存在 SharePoint 中。)
+這些設定會影響組織中所有的網站。 它們不會直接影響 Microsoft 365 群組或 Teams，但我們建議您調整這些設定，以配合 Microsoft 365 群組和 Teams 的設定，以避免使用者遇到問題。 (比方說，如果在 Teams 允許來賓共用但未在 SharePoint 中允許，那麼，Teams 中的來賓將無法存取 [檔案] 索引標籤，因為 Teams 檔案是儲存在 SharePoint 中。)
 
 ### <a name="sharepoint-and-onedrive-sharing-settings"></a>SharePoint 和 OneDrive 共用設定
 
@@ -180,7 +180,7 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]****，必須
 
 ### <a name="sharepoint-and-onedrive-security-group-settings"></a>SharePoint 和 OneDrive 安全性群組設定
 
-如果您想要限制可與 SharePoint 和 OneDrive 中的來賓共用的使用者，您可以將共用限制在特定安全性群組來完成此動作。 這些設定不會影響透過 Office 365 群組或 Teams 共用。 透過群組或團隊邀請的來賓也會可存取相關聯的網站，不過文件和檔案共用只能由指定安全性群組中的人員完成。
+如果您想要限制可與 SharePoint 和 OneDrive 中的來賓共用的使用者，您可以將共用限制在特定安全性群組來完成此動作。 這些設定不會影響透過 Microsoft 365 群組或 Teams 共用。 透過群組或團隊邀請的來賓也會可存取相關聯的網站，不過文件和檔案共用只能由指定安全性群組中的人員完成。
 
 **瀏覽：** SharePoint 系統管理中心 > [共用] > [限制特定安全性群組的外部共用]
 
@@ -234,7 +234,7 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]****，必須
 |:-----|:-----|
 |傳統|**只有貴組織中的人員**|
 |OneDrive|**任何人**|
-|群組連線的網站 (包括 Teams)|如果 Office 365 群組設定 [讓群組擁有者將組織外部的人員新增到群組]**** 為 [開啟]****，則為 [新的及現有的來賓]****；否則為 [僅現有的來賓]****|
+|群組連線的網站 (包括 Teams)|如果 Microsoft 365 群組設定 [讓群組擁有者將組織外部的人員新增到群組]**** 為 [開啟]****，則為 [新的及現有的來賓]****；否則為 [僅現有的來賓]****|
 |通訊|**只有貴組織中的人員**|
 |沒有群組的新式網站 (#STS3 TeamSite)|**僅限您組織中的人員**|
 
@@ -247,4 +247,4 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]****，必須
 
 [Microsoft Teams 中的來賓存取](https://docs.microsoft.com/MicrosoftTeams/guest-access)
 
-[將來賓新增至 Office 365 群組](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[將來賓新增至 Microsoft 365 群組](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)

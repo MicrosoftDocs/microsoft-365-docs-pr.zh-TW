@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 企業版網路基礎結構的部署步驟。
-ms.openlocfilehash: 9a805ffbdbdc19ef5943a0c0ba0ff8f010d3e19b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 341e5530b159d4ba78b94001d92427e36224ab04
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066570"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631474"
 ---
 # <a name="phase-1-networking-infrastructure-for-microsoft-365-enterprise"></a>階段 1：Microsoft 365 企業版的網路基礎結構
 
@@ -28,7 +28,7 @@ ms.locfileid: "42066570"
 
 Microsoft 365 企業版包括 Office 365、Microsoft Intune 和許多 Microsoft Azure 的身分識別和安全性服務。 這些所有雲端服務都依賴透過網際網路或專用線路從用戶端裝置連線的安全性、效能及可靠性。 為了裝載這些服務並且讓世界各地的客戶使用，Microsoft 設計了強調效能和整合的網路基礎結構。 
 
-在這個階段，您會逐步探討對 Microsoft 365 企業版雲端服務建立更具效能的連線之關鍵考量。如需概觀，請參閱 [Office 365 網路原則](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694)。
+在這個階段，您會逐步探討對 Microsoft 365 企業版雲端服務建立更具效能的連線之關鍵考量。如需概觀，請參閱 [Microsoft 365 網路原則](https://techcommunity.microsoft.com/t5/Office-365-Blog/Getting-the-best-connectivity-and-performance-in-Office-365/ba-p/124694)。
 
 >[!Note]
 >如果您已部署網路基礎結構，請參閱此階段的[允出準則](networking-exit-criteria.md)，確保其符合 Microsoft 365 企業版的必要與選用條件。
@@ -43,7 +43,7 @@ Microsoft 365 企業版包括 Office 365、Microsoft Intune 和許多 Microsoft 
 |![步驟 2](../media/stepnumbers/Step2.png)|[設定每個辦公室的當地網際網路連線](networking-dns-resolution-same-location.md)|
 |![步驟 3](../media/stepnumbers/Step3.png)|[避免網路 hairpin](networking-avoid-network-hairpins.md)|
 |![步驟 4](../media/stepnumbers/Step4.png)|[設定流量旁路](networking-configure-proxies-firewalls.md)|
-|![步驟 5](../media/stepnumbers/Step5.png)|[最佳化用戶端和 Office 365 服務效能](networking-optimize-tcp-performance.md)|
+|![步驟 5](../media/stepnumbers/Step5.png)|[最佳化用戶端和服務效能](networking-optimize-tcp-performance.md)|
 
 
 完成這些步驟之後，請移至此階段的[允出準則](networking-exit-criteria.md)，以確定您符合 Microsoft 365 企業版的必要與選用條件。
