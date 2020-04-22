@@ -1,9 +1,11 @@
 ---
-title: Contoso Corporation 的高度機密數位資產的 SharePoint Online 網站
+title: Contoso Corporation 高度機密數位資產的 SharePoint 網站
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/15/2019
+ms.date: 11/18/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,109 +14,94 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
-description: 摘要： 如何 Contoso 實施適用於 SharePoint Online 網站高管制的資料，其研究之間更輕鬆地共同作業的團隊。
-ms.openlocfilehash: 99599829658e5dc46c8adebfe59f5c6d09b165de
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: 摘要： Contoso 如何針對高管制資料執行 SharePoint 網站，以更輕鬆地在其資訊檢索小組之間合作。
+ms.openlocfilehash: 0a4bc2f685cf015611da62ebbed000218f37f31e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072776"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634249"
 ---
-# <a name="sharepoint-online-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a><span data-ttu-id="0c306-103">Contoso Corporation 的高度機密數位資產的 SharePoint Online 網站</span><span class="sxs-lookup"><span data-stu-id="0c306-103">SharePoint Online site for highly confidential digital assets of the Contoso Corporation</span></span>
+# <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a><span data-ttu-id="1bc04-103">Contoso Corporation 高度機密數位資產的 SharePoint 網站</span><span class="sxs-lookup"><span data-stu-id="1bc04-103">SharePoint site for highly confidential digital assets of the Contoso Corporation</span></span>
 
- <span data-ttu-id="0c306-104">**摘要：** Contoso 實作其研究小組之間更輕鬆地共同作業的高管制資料的 SharePoint Online 網站的方式。</span><span class="sxs-lookup"><span data-stu-id="0c306-104">**Summary:** How Contoso implemented a SharePoint Online site for highly regulated data for easier collaboration between its research teams.</span></span>
+<span data-ttu-id="1bc04-104">Contoso 最有價值的資產是其智慧財產權，其形式為商業機密（如專有製造技術）和開發中產品的設計規格。</span><span class="sxs-lookup"><span data-stu-id="1bc04-104">Contoso's most valuable assets are its intellectual property in the form of trade secrets, such as proprietary manufacturing techniques, and design specifications for products that are in development.</span></span> <span data-ttu-id="1bc04-105">這些資產是以數位格式，最初儲存為 SharePoint Server 2016 網站上的檔案。</span><span class="sxs-lookup"><span data-stu-id="1bc04-105">These assets were in digital form, originally stored as files on a SharePoint Server 2016 site.</span></span> <span data-ttu-id="1bc04-106">當 Contoso 部署 Microsoft 365 企業版時，他們想要將其內部部署數位資產轉變為雲端，以便在巴黎、莫斯科、紐約、北京和 Bangalore 中，跨研究小組輕鬆存取和更開啟的共同作業。</span><span class="sxs-lookup"><span data-stu-id="1bc04-106">When Contoso deployed Microsoft 365 Enterprise, they wanted to transition their on-premises digital assets to the cloud for easier access and more open collaboration across research teams in Paris, Moscow, New York, Beijing, and Bangalore.</span></span> 
   
-<span data-ttu-id="0c306-105">Contoso 的最有價值的資產是其形式的營業秘密、 專屬的製造技術，例如智慧財產及設計規格正在開發的產品。</span><span class="sxs-lookup"><span data-stu-id="0c306-105">Contoso's most valuable assets are its intellectual property in the form of trade secrets, such as proprietary manufacturing techniques, and design specifications for products that are in development.</span></span> <span data-ttu-id="0c306-106">這些資產相關數位表單中，原來儲存為 SharePoint Server 2016 網站上的檔案。</span><span class="sxs-lookup"><span data-stu-id="0c306-106">These assets are in digital form, originally stored as files on a SharePoint Server 2016 site.</span></span> <span data-ttu-id="0c306-107">Contoso 部署 Microsoft 365 企業版，他們想要在巴黎、 莫斯科、 紐約、 北京和班加羅爾研究小組間轉換至雲端的更容易存取，且更開啟共同作業其內部部署數位資產。</span><span class="sxs-lookup"><span data-stu-id="0c306-107">When Contoso deployed Microsoft 365 Enterprise, they wanted to transition their on-premises digital assets to the cloud for easier access and more open collaboration across research teams in Paris, Moscow, New York, Beijing, and Bangalore.</span></span> 
+<span data-ttu-id="1bc04-107">不過，由於其敏感性，對這些檔案的存取權必須是：</span><span class="sxs-lookup"><span data-stu-id="1bc04-107">However, due to their sensitive nature, access to these files must be:</span></span>
+
+- <span data-ttu-id="1bc04-108">限制于允許其存取的一組人員。</span><span class="sxs-lookup"><span data-stu-id="1bc04-108">Restricted to the set of people who are allowed access them.</span></span> 
+- <span data-ttu-id="1bc04-109">使用資料遺失防護（DLP）原則加以保護，以防止使用者在網站外散佈。</span><span class="sxs-lookup"><span data-stu-id="1bc04-109">Protected with a Data Loss Prevention (DLP) policy to prevent users from distributing them outside the site.</span></span>
+- <span data-ttu-id="1bc04-110">以防止未授權使用者存取其內容的許可權進行加密及保護，即使這些使用者是在網站外發佈。</span><span class="sxs-lookup"><span data-stu-id="1bc04-110">Encrypted and protected with permissions to prevent unauthorized users from accessing their contents, even if they are distributed outside the site.</span></span>
+
+<span data-ttu-id="1bc04-111">Contoso IT 部門的安全性和 SharePoint 管理員決定[針對高管制資料使用 SharePoint 網站](teams-sharepoint-online-sites-highly-regulated-data.md)。</span><span class="sxs-lookup"><span data-stu-id="1bc04-111">Security and SharePoint administrators in Contoso's IT department decided to use a [SharePoint site for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md).</span></span>
   
-<span data-ttu-id="0c306-108">不過，由於其機密性質，存取這些檔案必須是一項：</span><span class="sxs-lookup"><span data-stu-id="0c306-108">However, due to their sensitive nature, access to these files must be:</span></span>
+<span data-ttu-id="1bc04-112">Contoso 使用這些步驟來建立及保護其研究小組的 SharePoint 小組網站。</span><span class="sxs-lookup"><span data-stu-id="1bc04-112">Contoso used these steps to create and secure a SharePoint team sites for their research teams.</span></span>
 
-- <span data-ttu-id="0c306-109">受限制的允許檢視或變更，具有持續的權限僅由 SharePoint 系統管理員管理網站的人員設定。</span><span class="sxs-lookup"><span data-stu-id="0c306-109">Restricted to the set of people who are allowed to view or change them, with ongoing permissions for the site administered only by SharePoint admins.</span></span> 
-- <span data-ttu-id="0c306-110">保護與資料外洩防護 (DLP) 可防止使用者間分散外部網站。</span><span class="sxs-lookup"><span data-stu-id="0c306-110">Protected with Data Loss Prevention (DLP) to prevent users from distributing them outside the site.</span></span>
-- <span data-ttu-id="0c306-111">加密和保護與存取控制清單，以防止未經授權的使用者存取其內容，即使他們分配站台外。</span><span class="sxs-lookup"><span data-stu-id="0c306-111">Encrypted and protected with access control lists to prevent unauthorized users from accessing their contents, even if they are distributed outside the site.</span></span>
+## <a name="step-1-created-a-private-sharepoint-team-site"></a><span data-ttu-id="1bc04-113">步驟1：建立私人 SharePoint 小組網站</span><span class="sxs-lookup"><span data-stu-id="1bc04-113">Step 1: Created a private SharePoint team site</span></span>
 
-<span data-ttu-id="0c306-112">安全性和 SharePoint 系統管理員在 Contoso 的 IT 部門決定使用[適用於 SharePoint Online 網站高管制資料](teams-sharepoint-online-sites-highly-regulated-data.md)。</span><span class="sxs-lookup"><span data-stu-id="0c306-112">Security and SharePoint administrators in Contoso's IT department decided to use a [SharePoint Online site for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md).</span></span>
-  
-<span data-ttu-id="0c306-113">Contoso 使用下列步驟來建立並保護其研究小組 SharePoint Online 小組網站。</span><span class="sxs-lookup"><span data-stu-id="0c306-113">Contoso used these steps to create and secure a SharePoint Online team sites for their research teams.</span></span>
+<span data-ttu-id="1bc04-114">為了保護 SharePoint 網站的存取權，Contoso IT 已設定[建議的 SharePoint 存取原則](sharepoint-file-access-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="1bc04-114">To protect access to the SharePoint site, Contoso IT configured the [recommended SharePoint access policies](sharepoint-file-access-policies.md).</span></span>
 
-## <a name="step-1-reviewed-and-verified-the-members-of-research-team-groups"></a><span data-ttu-id="0c306-114">步驟 1： 檢閱並確認研究小組群組的成員</span><span class="sxs-lookup"><span data-stu-id="0c306-114">Step 1: Reviewed and verified the members of research team groups</span></span>
+<span data-ttu-id="1bc04-115">接下來，Contoso IT 管理員為位於巴黎、莫斯科、紐約、北京和 Bangalore 辦事處中的研究人員，編譯器中的使用者帳戶清單。</span><span class="sxs-lookup"><span data-stu-id="1bc04-115">Next, Contoso IT admins compiled a list of the user accounts for the researchers in their Paris, Moscow, New York, Beijing, and Bangalore offices.</span></span> 
 
-<span data-ttu-id="0c306-115">Contoso 的 IT 系統管理員為其研究小組執行 < review of 一組安全性群組。</span><span class="sxs-lookup"><span data-stu-id="0c306-115">Contoso IT admins performed a review of the set of security groups for their research teams.</span></span> <span data-ttu-id="0c306-116">任何人未 researcher 或不需要存取 research 資產移除它們。</span><span class="sxs-lookup"><span data-stu-id="0c306-116">They removed anyone who was not a researcher or did not need access to research assets.</span></span> 
+<span data-ttu-id="1bc04-116">接下來，Contoso IT 系統管理員建立一個名為「**調查**」的新私人小組網站，並新增其調查人員的所有使用者帳戶。</span><span class="sxs-lookup"><span data-stu-id="1bc04-116">Next, a Contoso IT admin created a new private team site named **Research** and added all of the user accounts for its researchers.</span></span>
 
-<span data-ttu-id="0c306-117">他們也建立這些新的安全性群組：</span><span class="sxs-lookup"><span data-stu-id="0c306-117">They also and created these new security groups:</span></span>
+<span data-ttu-id="1bc04-117">然後，他們為網站設定其他許可權設定，以防止研究人員共用網站的存取權，以及防止非工作人員要求存取網站。</span><span class="sxs-lookup"><span data-stu-id="1bc04-117">Then they configured additional permission settings for the site to prevent researchers from sharing access to the site and to prevent non-researchers from requesting access to the site.</span></span>
 
-- <span data-ttu-id="0c306-118">**Research 系統管理員** 一組的 SharePoint 系統管理員具有完全控制權的網站，包括修改權限的能力。</span><span class="sxs-lookup"><span data-stu-id="0c306-118">**Research-Admins**  The set of SharePoint admins that have full control over the site, including the ability to modify permissions.</span></span>
-- <span data-ttu-id="0c306-119">**Research 成員** 一組安全性群組的世界各地的研究小組。</span><span class="sxs-lookup"><span data-stu-id="0c306-119">**Research-Members**  The set of security groups for the research teams around the world.</span></span>
-- <span data-ttu-id="0c306-120">**參考資料檢視** 一組管理使用者，例如 research 組織，只能在網站檢視資產中的主管。</span><span class="sxs-lookup"><span data-stu-id="0c306-120">**Research-Viewers**  The set of management users, such as executives in the research organization, that can only view the assets on the site.</span></span>
+## <a name="step-2-configured-the-site-for-a-restrictive-dlp-policy"></a><span data-ttu-id="1bc04-118">步驟2：設定適用于限制性 DLP 原則的網站</span><span class="sxs-lookup"><span data-stu-id="1bc04-118">Step 2: Configured the site for a restrictive DLP policy</span></span>
 
-## <a name="step-2-created-an-isolated-sharepoint-online-team-site"></a><span data-ttu-id="0c306-121">步驟 2： 建立隔離的 SharePoint Online 小組網站</span><span class="sxs-lookup"><span data-stu-id="0c306-121">Step 2: Created an isolated SharePoint Online team site</span></span> 
+<span data-ttu-id="1bc04-119">首先，Contoso 系統管理員會將現有的**高度機密**保留標籤套用至「**資訊檢索**」網站的 Documents 資料夾。</span><span class="sxs-lookup"><span data-stu-id="1bc04-119">First, Contoso admins applied the existing **Highly Confidential** retention label to the Documents folder of the **Research** site.</span></span>
 
-<span data-ttu-id="0c306-122">第一次建立新的小組網站的 Contoso SharePoint 系統管理員名為**Research**。</span><span class="sxs-lookup"><span data-stu-id="0c306-122">Contoso SharePoint admins first created a new team site named **Research**.</span></span> <span data-ttu-id="0c306-123">他們，然後設定：</span><span class="sxs-lookup"><span data-stu-id="0c306-123">They then configured:</span></span>
+<span data-ttu-id="1bc04-120">接下來，他們建立名為「**調查**」的新 DLP 原則：</span><span class="sxs-lookup"><span data-stu-id="1bc04-120">Next, they created a new DLP policy named **Research** that:</span></span>
 
-- <span data-ttu-id="0c306-124">使用參考資料擁有者 SharePoint 群組中，具有**研究-Admins**安全性群組的成員身分的完全控制 」 權限等級</span><span class="sxs-lookup"><span data-stu-id="0c306-124">The Full Control permission level to use the Research Owners SharePoint group, which has the **Research-Admins** security group as a member</span></span>
-- <span data-ttu-id="0c306-125">使用 [參考成員] SharePoint 群組中，具有**Research 成員**安全性群組的成員身分的編輯權限等級</span><span class="sxs-lookup"><span data-stu-id="0c306-125">The Edit permission level to use the Research Members SharePoint group, which has the **Research Members** security group as a member</span></span>
-- <span data-ttu-id="0c306-126">使用 Research 訪客 SharePoint 群組，其為成員的 [**參考資料檢視**安全性] 群組的讀取權限等級</span><span class="sxs-lookup"><span data-stu-id="0c306-126">The Read permission level to use the Research Visitors SharePoint group, which has the **Research-Viewers** security group as a member</span></span>
+- <span data-ttu-id="1bc04-121">使用**高度機密**保留標籤。</span><span class="sxs-lookup"><span data-stu-id="1bc04-121">Uses the **Highly Confidential** retention label.</span></span> 
+- <span data-ttu-id="1bc04-122">當使用者嘗試在 Contoso 以外的**調研**網站上共用數位資產時，封鎖使用者。</span><span class="sxs-lookup"><span data-stu-id="1bc04-122">Blocks users when they attempt to share a digital asset on the **Research** site outside of Contoso.</span></span>
 
-<span data-ttu-id="0c306-127">以下是所產生的 SharePoint 權限等級、 SharePoint 群組和其成員。</span><span class="sxs-lookup"><span data-stu-id="0c306-127">Here are the resulting SharePoint permission levels, SharePoint groups, and their members.</span></span>
+<span data-ttu-id="1bc04-123">如需設定詳細資料，請參閱[使用保留標籤和 DLP 保護 SharePoint](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)檔案。</span><span class="sxs-lookup"><span data-stu-id="1bc04-123">For the configuration details, see [Protect SharePoint files with retention labels and DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).</span></span>
 
-![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/spo-permissions.png)
+## <a name="step-3-created-a-sensitivity-sublabel-for-the-site"></a><span data-ttu-id="1bc04-124">步驟3：建立網站的靈敏度 sublabel</span><span class="sxs-lookup"><span data-stu-id="1bc04-124">Step 3: Created a sensitivity sublabel for the site</span></span>
 
-<span data-ttu-id="0c306-128">接下來，其設定之網站的其他限制。</span><span class="sxs-lookup"><span data-stu-id="0c306-128">Next, they configured additional restrictions for the site.</span></span>
+<span data-ttu-id="1bc04-125">Contoso admins 為**高度機密**標籤的「**調查小組**」建立了新的靈敏度 sublabel，其為下列專案：</span><span class="sxs-lookup"><span data-stu-id="1bc04-125">Contoso admins created a new sensitivity sublabel named **Research Teams** of the **Highly Confidential** label that:</span></span>
 
-<span data-ttu-id="0c306-129">如設定的詳細資訊，請參閱[部署隔離的 SharePoint Online 小組網站](https://docs.microsoft.com/office365/enterprise/deploy-an-isolated-sharepoint-online-team-site)。</span><span class="sxs-lookup"><span data-stu-id="0c306-129">For the configuration details, see [Deploy an isolated SharePoint Online team site](https://docs.microsoft.com/office365/enterprise/deploy-an-isolated-sharepoint-online-team-site).</span></span>
+- <span data-ttu-id="1bc04-126">需要加密。</span><span class="sxs-lookup"><span data-stu-id="1bc04-126">Requires encryption.</span></span>
+- <span data-ttu-id="1bc04-127">允許用於**調查**Microsoft 365 群組的共同撰寫許可權</span><span class="sxs-lookup"><span data-stu-id="1bc04-127">Allows Co-Author permissions for the **Research** Microsoft 365 group</span></span>
+- <span data-ttu-id="1bc04-128">適用于**調查**Microsoft 365 群組</span><span class="sxs-lookup"><span data-stu-id="1bc04-128">Applies to the **Research** Microsoft 365 group</span></span>
 
-## <a name="step-3-configured-the-site-for-a-restrictive-dlp-policy"></a><span data-ttu-id="0c306-130">步驟 3： 設定嚴格的 DLP 原則的網站</span><span class="sxs-lookup"><span data-stu-id="0c306-130">Step 3: Configured the site for a restrictive DLP policy</span></span>
+<span data-ttu-id="1bc04-129">以下是高度機密資產之**研究**小組網站的結果設定。</span><span class="sxs-lookup"><span data-stu-id="1bc04-129">Here is the resulting configuration of the **Research** team site for highly confidential assets.</span></span>
 
-<span data-ttu-id="0c306-131">首先，Contoso 系統管理員套用**Research**網站的**高度機密**的 Office 365 保留標籤。</span><span class="sxs-lookup"><span data-stu-id="0c306-131">First, Contoso admins applied the **Highly Confidential** Office 365 retention label to the **Research** site.</span></span>
+![針對高度機密資產的「調查小組網站」所產生的設定](../media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
 
-<span data-ttu-id="0c306-132">接下來，建立新的 Office 365 DLP 原則名為**Research**的：</span><span class="sxs-lookup"><span data-stu-id="0c306-132">Next, they created a new Office 365 DLP policy named **Research** that:</span></span>
+<span data-ttu-id="1bc04-131">「**調查**網站」資料夾中的檔案受到下列保護：</span><span class="sxs-lookup"><span data-stu-id="1bc04-131">Files in folders of the **Research** site are protected by:</span></span>
 
-- <span data-ttu-id="0c306-133">使用**高度機密**的 Office 365 保留標籤。</span><span class="sxs-lookup"><span data-stu-id="0c306-133">Uses the **Highly Confidential** Office 365 retention label.</span></span> 
-- <span data-ttu-id="0c306-134">會套用至**Research**網站。</span><span class="sxs-lookup"><span data-stu-id="0c306-134">Is applied to the **Research** site.</span></span>
-- <span data-ttu-id="0c306-135">當他們嘗試共用 Contoso 以外的**研究**網站上的數位資產時，就會封鎖使用者。</span><span class="sxs-lookup"><span data-stu-id="0c306-135">Blocks users when they attempt to share a digital asset on the **Research** site outside of Contoso.</span></span>
+- <span data-ttu-id="1bc04-132">網站許可權，只允許存取「**調查**」 Microsoft 365 群組的成員。</span><span class="sxs-lookup"><span data-stu-id="1bc04-132">The site permissions, which only allow access to members of the **Research** Microsoft 365 group.</span></span>
+- <span data-ttu-id="1bc04-133">「**調查**DLP」原則，其使用**高度機密**保留標籤和設定，以防止與外部使用者共用檔案。</span><span class="sxs-lookup"><span data-stu-id="1bc04-133">The **Research** DLP policy, which uses the **Highly Confidential** retention label and settings that prevent the file from being shared with external users.</span></span>
+- <span data-ttu-id="1bc04-134">「**研究小組**敏感度」 sublabel，其會在移動或複製到**資訊檢索**網站時，與檔案一起旅行的加密和許可權。</span><span class="sxs-lookup"><span data-stu-id="1bc04-134">The **Research Teams** sensitivity sublabel, with encryption and permissions that travel with the file if it is moved or copied from the **Research** site.</span></span>
 
-<span data-ttu-id="0c306-136">如設定的詳細資訊，請參閱 <<c0>使用保留標籤與 DLP 保護 SharePoint Online 檔案。</span><span class="sxs-lookup"><span data-stu-id="0c306-136">For the configuration details, see [Protect SharePoint Online files with retention labels and DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).</span></span>
+<span data-ttu-id="1bc04-135">以下是以「調查**小組**敏感度 sublabel 指派」儲存在「**資訊檢索**」網站中的檔案範例。</span><span class="sxs-lookup"><span data-stu-id="1bc04-135">Here is an example of a file stored in the **Research** site with the **Research Teams** sensitivity sublabel assigned.</span></span>
 
-## <a name="step-4-created-an-azure-information-protection-sub-label-for-the-site"></a><span data-ttu-id="0c306-137">步驟 4： 建立網站的 Azure 資訊保護子標籤</span><span class="sxs-lookup"><span data-stu-id="0c306-137">Step 4: Created an Azure Information Protection sub-label for the site</span></span>
+![針對高度機密資產的「調查小組網站」所產生的設定](../media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
 
-<span data-ttu-id="0c306-138">Contoso 系統管理員建立新的 Azure 資訊保護子標籤名為**Research**的預設**高度機密**] 標籤中的限域原則的：</span><span class="sxs-lookup"><span data-stu-id="0c306-138">Contoso admins created a new Azure Information Protection sub-label named **Research** of the default **Highly Confidential** label in a scoped policy that:</span></span>
 
-- <span data-ttu-id="0c306-139">需要加密。</span><span class="sxs-lookup"><span data-stu-id="0c306-139">Requires encryption.</span></span>
-- <span data-ttu-id="0c306-140">允許完整存取**Research 成員**的 [安全性] 群組的成員。</span><span class="sxs-lookup"><span data-stu-id="0c306-140">Allows full access by members of the **Research-Members** security group.</span></span>
-- <span data-ttu-id="0c306-141">允許讀取權限由**參考資料檢視**的 [安全性] 群組的成員。</span><span class="sxs-lookup"><span data-stu-id="0c306-141">Allows read access by members of the **Research-Viewers** security group.</span></span>
+## <a name="step-4-migrated-the-on-premises-sharepoint-research-data"></a><span data-ttu-id="1bc04-137">步驟4：遷移內部部署 SharePoint 研究資料</span><span class="sxs-lookup"><span data-stu-id="1bc04-137">Step 4: Migrated the on-premises SharePoint research data</span></span>
 
-<span data-ttu-id="0c306-142">接下來，這些部署的 Azure 資訊保護用戶端裝置的研究小組成員。</span><span class="sxs-lookup"><span data-stu-id="0c306-142">Next, they deployed the Azure Information Protection client to the devices of research team members.</span></span>
+<span data-ttu-id="1bc04-138">Contoso admins 會將內部部署 SharePoint Server 2016 網站中的所有內部部署調查檔案，移至新「**調研**SharePoint」網站中的資料夾。</span><span class="sxs-lookup"><span data-stu-id="1bc04-138">Contoso admins moved all of the on-premises research files in the on-premises SharePoint Server 2016 site to folders in the new **Research** SharePoint site.</span></span>
 
-<span data-ttu-id="0c306-143">如設定的詳細資訊，請參閱[使用 Azure 資訊保護保護 SharePoint Online 檔案](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-azure-information-protection)。</span><span class="sxs-lookup"><span data-stu-id="0c306-143">For the configuration details, see [Protect SharePoint Online files with Azure Information Protection](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-azure-information-protection).</span></span> 
+## <a name="step-5-trained-their-researchers"></a><span data-ttu-id="1bc04-139">步驟5：訓練其研究員</span><span class="sxs-lookup"><span data-stu-id="1bc04-139">Step 5: Trained their researchers</span></span>
 
-<span data-ttu-id="0c306-144">以下是高度機密資產的**研究**網站所產生的組態。</span><span class="sxs-lookup"><span data-stu-id="0c306-144">Here is the resulting configuration of the **Research** site for highly confidential assets.</span></span>
+<span data-ttu-id="1bc04-140">Contoso 安全性人員會在必要的課程中訓練**調查**Microsoft 365 群組的成員：</span><span class="sxs-lookup"><span data-stu-id="1bc04-140">Contoso security staff trained the members of the **Research** Microsoft 365 group in a mandatory course that stepped them through:</span></span>
 
-![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
+- <span data-ttu-id="1bc04-141">如何存取新的**調研**網站及其現有的檔案。</span><span class="sxs-lookup"><span data-stu-id="1bc04-141">How to access the new **Research** site and its existing files.</span></span>
+- <span data-ttu-id="1bc04-142">如何在網站上建立新檔案，以及上傳儲存在本機的新檔案。</span><span class="sxs-lookup"><span data-stu-id="1bc04-142">How to create new files on the site and upload new files stored locally.</span></span>
+- <span data-ttu-id="1bc04-143">示範「**調查**DLP」原則如何封鎖外部共用檔案。</span><span class="sxs-lookup"><span data-stu-id="1bc04-143">A demonstration of how the **Research** DLP policy blocks files from being shared externally.</span></span>
+- <span data-ttu-id="1bc04-144">如何使用「**研究小組**敏感度」 sublabel 為檔案加上標籤。</span><span class="sxs-lookup"><span data-stu-id="1bc04-144">How to label files with the **Research Teams** sensitivity sublabel.</span></span>
+- <span data-ttu-id="1bc04-145">示範「**調研組**」子標籤如何保護檔案，甚至是在該檔案從網站洩漏時。</span><span class="sxs-lookup"><span data-stu-id="1bc04-145">A demonstration of how the **Research Teams** sub-label protects a file even when it is leaked from the site.</span></span>
 
-<span data-ttu-id="0c306-145">**研究**站台的資料夾中的檔案受到：</span><span class="sxs-lookup"><span data-stu-id="0c306-145">Files in folders of the **Research** site are protected by:</span></span>
+<span data-ttu-id="1bc04-146">最終結果是一種安全的環境，在此環境中，研究人員可以在包含調研資訊之檔案的安全環境中，于 Contoso 間共同作業。</span><span class="sxs-lookup"><span data-stu-id="1bc04-146">The end result is a secure environment in which the researchers can collaborate across Contoso in a secure environment on files containing research information.</span></span> 
 
-- <span data-ttu-id="0c306-146">**研究**Azure 資訊保護子標籤，適用於加密和使用權檔案會對每個檔案已移動或複製從**Research**網站。</span><span class="sxs-lookup"><span data-stu-id="0c306-146">The **Research** Azure Information Protection sublabel, which applies encryption and permssions to each file that travel with the file when it is moved or copied from the **Research** site.</span></span>
-- <span data-ttu-id="0c306-147">**研究**DLP 原則，會使用**高度機密**的保留標籤和避免與外部使用者共用檔案的設定。</span><span class="sxs-lookup"><span data-stu-id="0c306-147">The **Research** DLP policy, which uses the **Highly Sensitive** retention label and settings that prevent the file from being shared with external users.</span></span>
-- <span data-ttu-id="0c306-148">網站權限，只允許存取成員**Research 成員**和**參考資料檢視者**安全性群組和管理由**Research Admins**安全性群組的成員集合。</span><span class="sxs-lookup"><span data-stu-id="0c306-148">The set of site permissions, which only allow access to members of the **Research-Members** and **Research-Viewers** security groups and administration by members of the **Research-Admins** security group.</span></span>
+<span data-ttu-id="1bc04-147">如果使用「**調查小組**」的調研檔 sublabel 出「**調查**網站」，它會加密，而且只能存取使用有效使用者帳號憑證的「**調查**Microsoft 365 群組」的成員。</span><span class="sxs-lookup"><span data-stu-id="1bc04-147">If a research document with the **Research Teams** sublabel leaves the **Research** site, it is encrypted and accessible only to members of the **Research** Microsoft 365 group with valid user account credentials.</span></span>
 
-## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a><span data-ttu-id="0c306-149">步驟 5： 移轉的內部部署 SharePoint research 資料</span><span class="sxs-lookup"><span data-stu-id="0c306-149">Step 5: Migrated the on-premises SharePoint research data</span></span>
+## <a name="next-step"></a><span data-ttu-id="1bc04-148">下一步</span><span class="sxs-lookup"><span data-stu-id="1bc04-148">Next step</span></span>
 
-<span data-ttu-id="0c306-150">Contoso 系統管理員移動所有內部研發網站中的內部部署 SharePoint Server 2016 中新**的參考資料**的 SharePoint Online 站台資料夾的檔案。</span><span class="sxs-lookup"><span data-stu-id="0c306-150">Contoso admins moved all of the on-premises research files in the on-premises SharePoint Server 2016 site to folders in the new **Research** SharePoint Online site.</span></span>
+<span data-ttu-id="1bc04-149">[部署](deploy-microsoft-365-enterprise.md)您組織中的 Microsoft 365 企業版。</span><span class="sxs-lookup"><span data-stu-id="1bc04-149">[Deploy](deploy-microsoft-365-enterprise.md) Microsoft 365 Enterprise in your organization.</span></span>
 
-## <a name="step-6-trained-their-users"></a><span data-ttu-id="0c306-151">步驟 6： 訓練使用者</span><span class="sxs-lookup"><span data-stu-id="0c306-151">Step 6: Trained their users</span></span> 
+## <a name="see-also"></a><span data-ttu-id="1bc04-150">請參閱</span><span class="sxs-lookup"><span data-stu-id="1bc04-150">See also</span></span>
 
-<span data-ttu-id="0c306-152">Contoso 的安全性人員訓練逐步執行它們透過強制課程中的研究小組：</span><span class="sxs-lookup"><span data-stu-id="0c306-152">Contoso security staff trained the research teams in a mandatory course that stepped them through:</span></span>
-
-- <span data-ttu-id="0c306-153">How to： 存取新的**研究**SharePoint Online 網站和其現有的檔案。</span><span class="sxs-lookup"><span data-stu-id="0c306-153">How to access the new **Research** SharePoint Online site and its existing files.</span></span>
-- <span data-ttu-id="0c306-154">如何在網站上建立新檔案，以及上傳儲存在本機的新檔案。</span><span class="sxs-lookup"><span data-stu-id="0c306-154">How to create new files on the site and upload new files stored locally.</span></span>
-- <span data-ttu-id="0c306-155">示範 DLP 原則會封鎖從外部共用的檔案。</span><span class="sxs-lookup"><span data-stu-id="0c306-155">A demonstration of how the DLP policy blocks files from being shared externally.</span></span>
-- <span data-ttu-id="0c306-156">如何使用 Azure 資訊保護用戶端標籤具有**Research**子標籤的參考資料檔案。</span><span class="sxs-lookup"><span data-stu-id="0c306-156">How to use the Azure Information Protection client to label research files with the **Research** sub-label.</span></span>
-- <span data-ttu-id="0c306-157">**Research**子標籤如何保護檔案，即使它從網站遺漏的示範。</span><span class="sxs-lookup"><span data-stu-id="0c306-157">A demonstration of how the **Research** sub-label protects a file even when it is leaked from the site.</span></span>
-
-<span data-ttu-id="0c306-158">最後的結果是安全的環境研究人員可以共同在安全的環境中的組織。</span><span class="sxs-lookup"><span data-stu-id="0c306-158">The end result is a secure environment in which the researchers can collaborate across the organization in a secure environment.</span></span> 
-
-<span data-ttu-id="0c306-159">如果從**Research**網站遺漏研究文件與**研究**子標籤，它會經過加密並且只有具有有效認證**Research 成員**和**參考資料檢視**安全性群組的成員可以存取。</span><span class="sxs-lookup"><span data-stu-id="0c306-159">If a research document with the **Research** sub-label is leaked from the **Research** site, it is encrypted and accessible only to members of the **Research-Members** and **Research-Viewers** security groups with valid credentials.</span></span>
-
-## <a name="next-step"></a><span data-ttu-id="0c306-160">下一步</span><span class="sxs-lookup"><span data-stu-id="0c306-160">Next step</span></span>
-
-<span data-ttu-id="0c306-161">[部署](deploy-microsoft-365-enterprise.md)Microsoft 365 企業版，您組織中。</span><span class="sxs-lookup"><span data-stu-id="0c306-161">[Deploy](deploy-microsoft-365-enterprise.md) Microsoft 365 Enterprise in your organization.</span></span>
-
+<span data-ttu-id="1bc04-151">[Microsoft 365 生產力資源庫](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary)</span><span class="sxs-lookup"><span data-stu-id="1bc04-151">[Microsoft 365 Productivity Library](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)</span></span>

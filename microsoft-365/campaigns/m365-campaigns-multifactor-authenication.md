@@ -23,21 +23,21 @@ search.appverid:
 - MET150
 - MOE150
 description: 設定多重要素驗證。
-ms.openlocfilehash: b0594551b9efb907dfba374f781f21b8850f85d1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35171688f9e224bdcb9ce8a592cc80124d253d2d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594838"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633698"
 ---
-# <a name="set-up-multifactor-authentication"></a><span data-ttu-id="7e071-103">設定多重要素驗證</span><span class="sxs-lookup"><span data-stu-id="7e071-103">Set up multifactor authentication</span></span>
+# <a name="set-up-multifactor-authentication"></a><span data-ttu-id="35631-103">設定多重要素驗證</span><span class="sxs-lookup"><span data-stu-id="35631-103">Set up multifactor authentication</span></span>
 
-<span data-ttu-id="7e071-104">多重要素驗證提供更高的安全性，為貴公司。</span><span class="sxs-lookup"><span data-stu-id="7e071-104">Multi-factor authentication provides more security for your business.</span></span> <span data-ttu-id="7e071-105">您的系統管理員所需您可以使用 MFA 之後，您可以設定 Microsoft Authenticator app 與手機安全地讓您記錄到索引鍵的應用程式。</span><span class="sxs-lookup"><span data-stu-id="7e071-105">After your admin has required you to use MFA, you can set up the Microsoft Authenticator app to let you log into key apps securely with your phone.</span></span> 
+<span data-ttu-id="35631-104">多重要素驗證為您的企業提供更高的安全性。</span><span class="sxs-lookup"><span data-stu-id="35631-104">Multi-factor authentication provides more security for your business.</span></span> <span data-ttu-id="35631-105">在您的系統管理員要求您使用 MFA 後，您可以設定 Microsoft 驗證器應用程式，讓您使用您的電話安全地登入重要應用程式。</span><span class="sxs-lookup"><span data-stu-id="35631-105">After your admin has required you to use MFA, you can set up the Microsoft Authenticator app to let you log into key apps securely with your phone.</span></span> 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR] 
 
-<span data-ttu-id="7e071-106">查看更多在[Microsoft 365 商務版中的多重要素驗證設定](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)</span><span class="sxs-lookup"><span data-stu-id="7e071-106">See more at [Set up multifactor authentication in Microsoft 365 Business](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)</span></span>
+<span data-ttu-id="35631-106">若要深入瞭解，請參閱[設定多重因素驗證 Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)</span><span class="sxs-lookup"><span data-stu-id="35631-106">See more at [Set up multifactor authentication in Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)</span></span>
 
-## <a name="use-the-outlook-app-in-your-devices"></a><span data-ttu-id="7e071-107">在您的裝置中使用的 Outlook 應用程式</span><span class="sxs-lookup"><span data-stu-id="7e071-107">Use the Outlook app in your devices</span></span>
+## <a name="use-the-outlook-app-in-your-devices"></a><span data-ttu-id="35631-107">在您的裝置中使用 Outlook 應用程式</span><span class="sxs-lookup"><span data-stu-id="35631-107">Use the Outlook app in your devices</span></span>
 
-<span data-ttu-id="7e071-108">您的系統管理員所需您可以使用 MFA，且您已設定驗證器 app 為第二個表單的驗證之後，我們建議您先安裝並只使用 Outlook app 來存取 Microsoft 365 的行銷活動的電子郵件。</span><span class="sxs-lookup"><span data-stu-id="7e071-108">After your admin has required you to use MFA and you've set up an authenticator app as a second form of authentication, we recommend that you install and only use the Outlook app to access your Microsoft 365 for Campaigns email.</span></span> <span data-ttu-id="7e071-109">請參閱如何安裝 Office 應用程式，包括 Outlook、 在電話上的 [[設定行動裝置](../business/set-up-mobile-devices.md)。</span><span class="sxs-lookup"><span data-stu-id="7e071-109">See [Set up mobile devices](../business/set-up-mobile-devices.md) for how to install Office apps, including Outlook, on your phone.</span></span>
+<span data-ttu-id="35631-108">在您的系統管理員要求您使用 MFA，而且已將驗證應用程式設定為第二種驗證表單時，建議您安裝並只使用 Outlook 應用程式來存取 Microsoft 365 的行銷活動電子郵件。</span><span class="sxs-lookup"><span data-stu-id="35631-108">After your admin has required you to use MFA and you've set up an authenticator app as a second form of authentication, we recommend that you install and only use the Outlook app to access your Microsoft 365 for Campaigns email.</span></span> <span data-ttu-id="35631-109">請參閱[設定行動裝置](../business/set-up-mobile-devices.md)，以瞭解如何在您的手機上安裝 Office app （包括 Outlook）。</span><span class="sxs-lookup"><span data-stu-id="35631-109">See [Set up mobile devices](../business/set-up-mobile-devices.md) for how to install Office apps, including Outlook, on your phone.</span></span>

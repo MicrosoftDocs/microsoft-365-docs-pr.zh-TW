@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 365 商務版管理受保護的裝置
+title: 使用 Microsoft 365 for business 管理受保護的裝置
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -26,22 +26,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
-description: 了解如何移除的公司資料從裝置透過保護原則來管理，以及 Windows 10 裝置重設成出廠預設值。
-ms.openlocfilehash: 97c9751d020d7f2aecb1e64718721c1ca25189e1
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: 瞭解如何從透過保護原則管理的裝置中移除公司資料，以及將 Windows 10 裝置重設為其出廠設定。
+ms.openlocfilehash: 180887dca3226512ab558e98d2b5a78da3521e53
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561513"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634281"
 ---
-# <a name="manage-protected-devices-with-microsoft-365-business"></a><span data-ttu-id="8297b-103">使用 Microsoft 365 商務版管理受保護的裝置</span><span class="sxs-lookup"><span data-stu-id="8297b-103">Manage protected devices with Microsoft 365 Business</span></span>
+# <a name="manage-protected-devices-with-microsoft-365-for-business"></a><span data-ttu-id="af1ff-103">使用 Microsoft 365 for business 管理受保護的裝置</span><span class="sxs-lookup"><span data-stu-id="af1ff-103">Manage protected devices with Microsoft 365 for business</span></span>
 
-<span data-ttu-id="8297b-104">使用者登入裝置上其公司帳戶裝置或 Office 應用程式將其裝置連線至您的組織之後，您可以保護您所設定的原則與裝置。</span><span class="sxs-lookup"><span data-stu-id="8297b-104">After a user connects their device to your organization by signing in with their work account to the device or to Office apps on the device, you can protect the device with the policies you set up.</span></span> <span data-ttu-id="8297b-105">連線的裝置會列在 [**裝置**] 頁面上。</span><span class="sxs-lookup"><span data-stu-id="8297b-105">Connected devices are listed on the **Devices** page.</span></span> <span data-ttu-id="8297b-106">如果裝置遺失或遭竊，您可以從此頁面移除任何公司資料。</span><span class="sxs-lookup"><span data-stu-id="8297b-106">If a device is lost or stolen, you can manage it from this page to remove any company data.</span></span> <span data-ttu-id="8297b-107">您也可以將 Windows 10 裝置重設成出廠預設值來清除任何自訂設定。</span><span class="sxs-lookup"><span data-stu-id="8297b-107">You can also reset Windows 10 devices to their factory settings to wipe out any custom settings.</span></span> 
+<span data-ttu-id="af1ff-104">在使用者以其工作帳戶登入裝置或裝置上的 Office 應用程式，將其裝置連線到您的組織之後，您可以使用您設定的原則來保護裝置。</span><span class="sxs-lookup"><span data-stu-id="af1ff-104">After a user connects their device to your organization by signing in with their work account to the device or to Office apps on the device, you can protect the device with the policies you set up.</span></span> <span data-ttu-id="af1ff-105">連接的裝置會列在 [**裝置**] 頁面上。</span><span class="sxs-lookup"><span data-stu-id="af1ff-105">Connected devices are listed on the **Devices** page.</span></span> <span data-ttu-id="af1ff-106">如果裝置遺失或遭竊，您可以從此頁面移除任何公司資料。</span><span class="sxs-lookup"><span data-stu-id="af1ff-106">If a device is lost or stolen, you can manage it from this page to remove any company data.</span></span> <span data-ttu-id="af1ff-107">您也可以將 Windows 10 裝置重設成出廠預設值來清除任何自訂設定。</span><span class="sxs-lookup"><span data-stu-id="af1ff-107">You can also reset Windows 10 devices to their factory settings to wipe out any custom settings.</span></span> 
 
-<span data-ttu-id="8297b-108">如需詳細資訊工作可用來管理裝置，請參閱下列文章：</span><span class="sxs-lookup"><span data-stu-id="8297b-108">For more information on the tasks you can use to manage devices, see these articles:</span></span> 
+<span data-ttu-id="af1ff-108">如需可用於管理裝置之工作的詳細資訊，請參閱下列文章：</span><span class="sxs-lookup"><span data-stu-id="af1ff-108">For more information on the tasks you can use to manage devices, see these articles:</span></span> 
   
-[<span data-ttu-id="8297b-109">從裝置移除公司資料</span><span class="sxs-lookup"><span data-stu-id="8297b-109">Remove company data from devices</span></span>](remove-company-data.md)
+[<span data-ttu-id="af1ff-109">從裝置移除公司資料</span><span class="sxs-lookup"><span data-stu-id="af1ff-109">Remove company data from devices</span></span>](remove-company-data.md)
   
-[<span data-ttu-id="8297b-110">將 Windows 10 裝置重設成出廠預設值</span><span class="sxs-lookup"><span data-stu-id="8297b-110">Reset Windows 10 devices to their factory settings</span></span>](reset-devices-to-factory-settings.md)
+[<span data-ttu-id="af1ff-110">將 Windows 10 裝置重設成出廠預設值</span><span class="sxs-lookup"><span data-stu-id="af1ff-110">Reset Windows 10 devices to their factory settings</span></span>](reset-devices-to-factory-settings.md)
   
 

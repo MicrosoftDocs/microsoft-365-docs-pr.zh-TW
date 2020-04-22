@@ -1,0 +1,55 @@
+---
+title: 註冊試用訂閱
+f1.keywords:
+- NOCSH
+ms.author: kwekua
+author: kwekua
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+- commerce
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+- BEA160
+description: 瞭解如何註冊試用 Microsoft 365 for business 訂閱。
+ms.openlocfilehash: 61ba4baefc3b7af7609101f5471648dfb1fcbefa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636437"
+---
+# <a name="sign-up-for-a-trial-subscription"></a><span data-ttu-id="ad1ab-103">註冊試用訂閱</span><span class="sxs-lookup"><span data-stu-id="ad1ab-103">Sign up for a trial subscription</span></span>
+
+<span data-ttu-id="ad1ab-104">您可以免費註冊試用版 Microsoft 365 訂閱。</span><span class="sxs-lookup"><span data-stu-id="ad1ab-104">You can sign up for a trial Microsoft 365 for business subscription for free.</span></span> <span data-ttu-id="ad1ab-105">您可以試用30天。</span><span class="sxs-lookup"><span data-stu-id="ad1ab-105">You can try it out for 30 days.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="ad1ab-106">當您的公司目前位於美國、日本、加拿大和澳大利亞時，當您註冊試用版時，您將需要信用卡。</span><span class="sxs-lookup"><span data-stu-id="ad1ab-106">You'll need a credit card when you sign up for a trial if your business is currently located in the United States, Japan, Canada and Australia.</span></span> <span data-ttu-id="ad1ab-107">當您的免費試用期結束時，您的試用版訂閱將會自動轉換為付費訂閱。</span><span class="sxs-lookup"><span data-stu-id="ad1ab-107">At the end of your free trial period, your trial subscription will automatically convert to a paid subscription.</span></span> <span data-ttu-id="ad1ab-108">在試用期結束之前，您的信用卡將不會記帳。</span><span class="sxs-lookup"><span data-stu-id="ad1ab-108">Your credit card will not be billed until the end of the trial period.</span></span>
+
+## <a name="sign-up-for-an-microsoft-365-business-standard-trial-subscription"></a><span data-ttu-id="ad1ab-109">註冊 Microsoft 365 商務標準試用訂閱</span><span class="sxs-lookup"><span data-stu-id="ad1ab-109">Sign up for an Microsoft 365 Business Standard trial subscription</span></span>
+
+1. <span data-ttu-id="ad1ab-110">若要註冊 Microsoft 365 for business 試用訂閱，請移至[Office 產品網站](https://www.aka.ms/office365signup)。</span><span class="sxs-lookup"><span data-stu-id="ad1ab-110">To sign up for a Microsoft 365 for business trial subscription, go to the [Office Products site](https://www.aka.ms/office365signup).</span></span> 
+    
+2. <span data-ttu-id="ad1ab-111">選取您想要註冊的計畫，例如**Microsoft 365 商務標準**，向下滾動頁面，然後選取 [**嘗試空閒1個月**]。</span><span class="sxs-lookup"><span data-stu-id="ad1ab-111">Select the plan you want to sign up for, such as **Microsoft 365 Business Standard**, scroll down the page, and select **Try free for 1 month**.</span></span>
+    
+3. <span data-ttu-id="ad1ab-112">在下一個頁面上，遵循下列步驟來設定您的帳戶。</span><span class="sxs-lookup"><span data-stu-id="ad1ab-112">On the next page, follow the steps to set up your account.</span></span>
+
+4. <span data-ttu-id="ad1ab-113">註冊程式可能需要數分鐘才能完成。</span><span class="sxs-lookup"><span data-stu-id="ad1ab-113">The signup process may take several minutes to complete.</span></span> <span data-ttu-id="ad1ab-114">完成後，您將取得如何開始使用您訂閱的詳細資訊。</span><span class="sxs-lookup"><span data-stu-id="ad1ab-114">Once it's complete, you'll get more details on how to start using your subscription.</span></span>
+
+<span data-ttu-id="ad1ab-115">如需有關設定帳戶的詳細資訊，請參閱[設定 Microsoft 365 for business](../admin/setup/setup.md)。</span><span class="sxs-lookup"><span data-stu-id="ad1ab-115">For more information about setting up your account, see [Set up Microsoft 365 for business](../admin/setup/setup.md).</span></span>
+
+## <a name="cancel-my-trial-subscription"></a><span data-ttu-id="ad1ab-116">取消我的試用訂閱</span><span class="sxs-lookup"><span data-stu-id="ad1ab-116">Cancel my trial subscription</span></span>
+
+<span data-ttu-id="ad1ab-117">如果您決定在空閒試用期結束之前取消試用，請移至 Microsoft 系統管理中心，並關閉付款和計費區域中的自動續訂選項。</span><span class="sxs-lookup"><span data-stu-id="ad1ab-117">If you decide to cancel your trial before the free trial period ends, go to the Microsoft admin center and turn off the auto-renew option in the payment and billing area.</span></span> <span data-ttu-id="ad1ab-118">當您的月完成時，試用期會自動到期，而且您的信用卡也不會收費。</span><span class="sxs-lookup"><span data-stu-id="ad1ab-118">The trial will automatically expire when your month is finished and your credit card won't be charged.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="ad1ab-119">請參閱</span><span class="sxs-lookup"><span data-stu-id="ad1ab-119">See also</span></span>
+
+[<span data-ttu-id="ad1ab-120">Microsoft 365 商務用訓練影片</span><span class="sxs-lookup"><span data-stu-id="ad1ab-120">Microsoft 365 for business training videos</span></span>](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
