@@ -15,90 +15,90 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: 使用 Office 365 中的 DLP 報告，您可以快速檢視 DLP 原則相符項目、 覆寫或誤判; 的數請參閱是否它們在一段時間; 趨勢向上或向下以不同方式; 篩選報表然後選取圖形上線條上的一點檢視其他詳細資料。
-ms.openlocfilehash: c00047680f684e3845c4383face09c2cee579721
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 透過 Office 365 的 DLP 報告，您可以快速查看 DLP 原則相符性、覆寫或誤報的數目。查看它們是隨時間向上或向後移動，還是以不同方式篩選報表;然後在圖形上選取線條上的點，以查看其他詳細資料。
+ms.openlocfilehash: 6ff8237b1471f10aff3abc40715af7fe538a211c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068747"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626289"
 ---
-# <a name="view-the-reports-for-data-loss-prevention"></a><span data-ttu-id="6810d-103">檢視資料外洩防護報告</span><span class="sxs-lookup"><span data-stu-id="6810d-103">View the reports for data loss prevention</span></span>
+# <a name="view-the-reports-for-data-loss-prevention"></a><span data-ttu-id="c79d6-103">檢視資料外洩防護報告</span><span class="sxs-lookup"><span data-stu-id="c79d6-103">View the reports for data loss prevention</span></span>
 
-<span data-ttu-id="6810d-104">您可以建立您的資料遺失防護 (DLP) 原則之後，您會想確認他們正在為您預期，並協助您符合規範。</span><span class="sxs-lookup"><span data-stu-id="6810d-104">After you create your data loss prevention (DLP) policies, you'll want to verify that they're working as you intended and helping you to stay compliant.</span></span> <span data-ttu-id="6810d-105">使用 DLP 報告中 Office 365 安全性&amp;合規性中心，您可以快速檢視：</span><span class="sxs-lookup"><span data-stu-id="6810d-105">With the DLP reports in the Office 365 Security &amp; Compliance Center, you can quickly view:</span></span>
+<span data-ttu-id="c79d6-104">在您建立資料遺失防護（DLP）原則之後，您可能會想要驗證他們的運作是否正常，並協助您保持相容。</span><span class="sxs-lookup"><span data-stu-id="c79d6-104">After you create your data loss prevention (DLP) policies, you'll want to verify that they're working as you intended and helping you to stay compliant.</span></span> <span data-ttu-id="c79d6-105">透過安全性&amp;與合規性中心的 DLP 報告，您可以快速查看：</span><span class="sxs-lookup"><span data-stu-id="c79d6-105">With the DLP reports in the Security &amp; Compliance Center, you can quickly view:</span></span>
   
-- <span data-ttu-id="6810d-106">**DLP 原則比對**這份報告顯示一段時間的 DLP 原則相符項目計數。</span><span class="sxs-lookup"><span data-stu-id="6810d-106">**DLP policy matches** This report shows the count of DLP policy matches over time.</span></span> <span data-ttu-id="6810d-107">您可以依日期、 位置、 原則或動作篩選報告。</span><span class="sxs-lookup"><span data-stu-id="6810d-107">You can filter the report by date, location, policy, or action.</span></span> <span data-ttu-id="6810d-108">您可以使用此報告來：</span><span class="sxs-lookup"><span data-stu-id="6810d-108">You can use this report to:</span></span> 
+- <span data-ttu-id="c79d6-106">**DLP 原則相符**專案此報告顯示一段時間的 DLP 原則相符計數。</span><span class="sxs-lookup"><span data-stu-id="c79d6-106">**DLP policy matches** This report shows the count of DLP policy matches over time.</span></span> <span data-ttu-id="c79d6-107">您可以依日期、位置、原則或動作來篩選報告。</span><span class="sxs-lookup"><span data-stu-id="c79d6-107">You can filter the report by date, location, policy, or action.</span></span> <span data-ttu-id="c79d6-108">您可以使用此報告來：</span><span class="sxs-lookup"><span data-stu-id="c79d6-108">You can use this report to:</span></span> 
     
-  - <span data-ttu-id="6810d-109">調整或調整您的 DLP 原則，當您在測試模式中執行。</span><span class="sxs-lookup"><span data-stu-id="6810d-109">Tune or refine your DLP policies as you run them in test mode.</span></span> <span data-ttu-id="6810d-110">您可以檢視符合內容的特定規則。</span><span class="sxs-lookup"><span data-stu-id="6810d-110">You can view the specific rule that matched the content.</span></span>
+  - <span data-ttu-id="c79d6-109">在測試模式中執行時，請調整或提煉您的 DLP 原則。</span><span class="sxs-lookup"><span data-stu-id="c79d6-109">Tune or refine your DLP policies as you run them in test mode.</span></span> <span data-ttu-id="c79d6-110">您可以查看符合內容的特定規則。</span><span class="sxs-lookup"><span data-stu-id="c79d6-110">You can view the specific rule that matched the content.</span></span>
     
-  - <span data-ttu-id="6810d-111">將重點放在特定時段，以了解尖峰和趨勢的原因。</span><span class="sxs-lookup"><span data-stu-id="6810d-111">Focus on specific time periods and understand the reasons for spikes and trends.</span></span>
+  - <span data-ttu-id="c79d6-111">將重點放在特定時段，以了解尖峰和趨勢的原因。</span><span class="sxs-lookup"><span data-stu-id="c79d6-111">Focus on specific time periods and understand the reasons for spikes and trends.</span></span>
     
-  - <span data-ttu-id="6810d-112">探索違反貴組織 DLP 原則的商務程序。</span><span class="sxs-lookup"><span data-stu-id="6810d-112">Discover business processes that violate your organization's DLP policies.</span></span>
+  - <span data-ttu-id="c79d6-112">探索違反貴組織 DLP 原則的商務程序。</span><span class="sxs-lookup"><span data-stu-id="c79d6-112">Discover business processes that violate your organization's DLP policies.</span></span>
     
-  - <span data-ttu-id="6810d-113">藉由查看哪些動作會套用到內容，了解 DLP 原則的任何業務影響。</span><span class="sxs-lookup"><span data-stu-id="6810d-113">Understand any business impact of the DLP policies by seeing what actions are being applied to content.</span></span>
+  - <span data-ttu-id="c79d6-113">查看內容所套用的動作，以瞭解 DLP 原則的任何業務影響。</span><span class="sxs-lookup"><span data-stu-id="c79d6-113">Understand any business impact of the DLP policies by seeing what actions are being applied to content.</span></span>
     
-  - <span data-ttu-id="6810d-114">顯示該原則的任何符合項目來驗證是否符合特定 DLP 原則的規範。</span><span class="sxs-lookup"><span data-stu-id="6810d-114">Verify compliance with a specific DLP policy by showing any matches for that policy.</span></span>
+  - <span data-ttu-id="c79d6-114">顯示該原則的任何符合項目來驗證是否符合特定 DLP 原則的規範。</span><span class="sxs-lookup"><span data-stu-id="c79d6-114">Verify compliance with a specific DLP policy by showing any matches for that policy.</span></span>
     
-  - <span data-ttu-id="6810d-115">檢視的主要使用者清單，然後重複使用者參與您組織中的事件。</span><span class="sxs-lookup"><span data-stu-id="6810d-115">View a list of top users and repeat users who are contributing to incidents in your organization.</span></span>
+  - <span data-ttu-id="c79d6-115">查看主要使用者的清單，並重複參與組織中事件的使用者。</span><span class="sxs-lookup"><span data-stu-id="c79d6-115">View a list of top users and repeat users who are contributing to incidents in your organization.</span></span>
     
-  - <span data-ttu-id="6810d-116">在您的組織中檢視上方的敏感資訊類型清單。</span><span class="sxs-lookup"><span data-stu-id="6810d-116">View a list of the top types of sensitive information in your organization.</span></span>
+  - <span data-ttu-id="c79d6-116">在您的組織中查看最上層的敏感資訊類型清單。</span><span class="sxs-lookup"><span data-stu-id="c79d6-116">View a list of the top types of sensitive information in your organization.</span></span>
     
-- <span data-ttu-id="6810d-117">**DLP 事件**這份報告也會顯示原則相符項目經過一段時間，如原則相符項目報告。</span><span class="sxs-lookup"><span data-stu-id="6810d-117">**DLP incidents** This report also shows policy matches over time, like the policy matches report.</span></span> <span data-ttu-id="6810d-118">不過，此原則會比對報表顯示相符項目層級規則;例如，若一封電子郵件符合三個不同的規則，原則會比對報表顯示三個不同列項目。</span><span class="sxs-lookup"><span data-stu-id="6810d-118">However, the policy matches report shows matches at a rule level; for example, if an email matched three different rules, the policy matches report shows three different line items.</span></span> <span data-ttu-id="6810d-119">相反地，事件報告 」 可顯示相符項目層級項目;例如，若一封電子郵件符合三個不同的規則，事件報告顯示該份內容單一列項目。</span><span class="sxs-lookup"><span data-stu-id="6810d-119">By contrast, the incidents report shows matches at an item level; for example, if an email matched three different rules, the incidents report shows a single line item for that piece of content.</span></span> 
+- <span data-ttu-id="c79d6-117">**DLP 事件**此報告也顯示一段時間的原則相符專案，就像原則符合報表。</span><span class="sxs-lookup"><span data-stu-id="c79d6-117">**DLP incidents** This report also shows policy matches over time, like the policy matches report.</span></span> <span data-ttu-id="c79d6-118">不過，原則符合報表會顯示規則層級的相符專案;例如，如果電子郵件符合三個不同的規則，則原則符合報表會顯示三個不同的行專案。</span><span class="sxs-lookup"><span data-stu-id="c79d6-118">However, the policy matches report shows matches at a rule level; for example, if an email matched three different rules, the policy matches report shows three different line items.</span></span> <span data-ttu-id="c79d6-119">相反地，附隨報告會顯示專案層級的相符專案;例如，如果電子郵件符合三個不同的規則，則附隨報告會顯示該部分內容的單一行專案。</span><span class="sxs-lookup"><span data-stu-id="c79d6-119">By contrast, the incidents report shows matches at an item level; for example, if an email matched three different rules, the incidents report shows a single line item for that piece of content.</span></span> 
     
-  <span data-ttu-id="6810d-120">因為報告計數彙總不同，原則相符項目報告是用來識別與特定規則的相符項目及正常調整 DLP 原則。</span><span class="sxs-lookup"><span data-stu-id="6810d-120">Because the report counts are aggregated differently, the policy matches report is better for identifying matches with specific rules and fine tuning DLP policies.</span></span> <span data-ttu-id="6810d-121">事件報告是內容的較適合用來識別會有問題的 DLP 原則的特定部分。</span><span class="sxs-lookup"><span data-stu-id="6810d-121">The incidents report is better for identifying specific pieces of content that are problematic for your DLP policies.</span></span>
+  <span data-ttu-id="c79d6-120">由於報告計數的匯總方式不同，因此原則比對報告更適合識別與特定規則的相符專案，以及微調 DLP 原則。</span><span class="sxs-lookup"><span data-stu-id="c79d6-120">Because the report counts are aggregated differently, the policy matches report is better for identifying matches with specific rules and fine tuning DLP policies.</span></span> <span data-ttu-id="c79d6-121">當您識別 DLP 原則有問題的特定內容片段時，附隨報告會比較好。</span><span class="sxs-lookup"><span data-stu-id="c79d6-121">The incidents report is better for identifying specific pieces of content that are problematic for your DLP policies.</span></span>
     
-- <span data-ttu-id="6810d-122">**DLP 誤判和覆寫**如果您的 DLP 原則允許使用者覆寫它，或回報] 誤判，這份報告顯示這類的執行個體計數一段時間。</span><span class="sxs-lookup"><span data-stu-id="6810d-122">**DLP false positives and overrides** If your DLP policy allows users to override it or report a false positive, this report shows a count of such instances over time.</span></span> <span data-ttu-id="6810d-123">您可以依日期、 位置或原則篩選報告。</span><span class="sxs-lookup"><span data-stu-id="6810d-123">You can filter the report by date, location, or policy.</span></span> <span data-ttu-id="6810d-124">您可以使用此報告來：</span><span class="sxs-lookup"><span data-stu-id="6810d-124">You can use this report to:</span></span> 
+- <span data-ttu-id="c79d6-122">**DLP 錯誤正值和 overrides**如果您的 DLP 原則允許使用者覆寫它或報告誤報，此報告會顯示一段時間的這類實例計數。</span><span class="sxs-lookup"><span data-stu-id="c79d6-122">**DLP false positives and overrides** If your DLP policy allows users to override it or report a false positive, this report shows a count of such instances over time.</span></span> <span data-ttu-id="c79d6-123">您可以依日期、位置或原則篩選報表。</span><span class="sxs-lookup"><span data-stu-id="c79d6-123">You can filter the report by date, location, or policy.</span></span> <span data-ttu-id="c79d6-124">您可以使用此報告來：</span><span class="sxs-lookup"><span data-stu-id="c79d6-124">You can use this report to:</span></span> 
     
-  - <span data-ttu-id="6810d-125">調整或調整您的 DLP 原則所看見的原則可能會形成誤判較大數目。</span><span class="sxs-lookup"><span data-stu-id="6810d-125">Tune or refine your DLP policies by seeing which policies incur a high number of false positives.</span></span>
+  - <span data-ttu-id="c79d6-125">查看哪些原則會產生大量的誤報，以調整或提煉您的 DLP 原則。</span><span class="sxs-lookup"><span data-stu-id="c79d6-125">Tune or refine your DLP policies by seeing which policies incur a high number of false positives.</span></span>
     
-  - <span data-ttu-id="6810d-126">檢視他們所覆寫原則以解析原則秘訣時，使用者所提交的理由。</span><span class="sxs-lookup"><span data-stu-id="6810d-126">View the justifications submitted by users when they resolve a policy tip by overriding the policy.</span></span>
+  - <span data-ttu-id="c79d6-126">透過覆寫原則，查看使用者解析原則提示時所提交的理由。</span><span class="sxs-lookup"><span data-stu-id="c79d6-126">View the justifications submitted by users when they resolve a policy tip by overriding the policy.</span></span>
     
-  - <span data-ttu-id="6810d-127">探索其中 DLP 原則衝突有效商務程序所產生大量的使用者會覆寫。</span><span class="sxs-lookup"><span data-stu-id="6810d-127">Discover where DLP policies conflict with valid business processes by incurring a high number of user overrides.</span></span>
+  - <span data-ttu-id="c79d6-127">透過產生大量的使用者覆寫，探索 DLP 原則與有效商務程式的衝突。</span><span class="sxs-lookup"><span data-stu-id="c79d6-127">Discover where DLP policies conflict with valid business processes by incurring a high number of user overrides.</span></span>
     
-<span data-ttu-id="6810d-128">所有的 DLP 報告可以顯示最近的四個月的時間期間內的資料。</span><span class="sxs-lookup"><span data-stu-id="6810d-128">All DLP reports can show data from the most recent four-month time period.</span></span> <span data-ttu-id="6810d-129">最新的資料可能需要最多 24 小時才會出現在報告。</span><span class="sxs-lookup"><span data-stu-id="6810d-129">The most recent data can take up to 24 hours to appear in the reports.</span></span>
+<span data-ttu-id="c79d6-128">所有 DLP 報告都可顯示最近四個月的時間範圍內的資料。</span><span class="sxs-lookup"><span data-stu-id="c79d6-128">All DLP reports can show data from the most recent four-month time period.</span></span> <span data-ttu-id="c79d6-129">最新的資料可能需要長達24小時才會顯示在報告中。</span><span class="sxs-lookup"><span data-stu-id="c79d6-129">The most recent data can take up to 24 hours to appear in the reports.</span></span>
   
-<span data-ttu-id="6810d-130">您可以在安全性中找到這些報告&amp;合規性中心\>**報表** \> **儀表板**。</span><span class="sxs-lookup"><span data-stu-id="6810d-130">You can find these reports in the Security &amp; Compliance Center \> **Reports** \> **Dashboard**.</span></span>
+<span data-ttu-id="c79d6-130">您&amp;可以在安全性與合規性中心\> **報告** \> **儀表板**中找到這些報告。</span><span class="sxs-lookup"><span data-stu-id="c79d6-130">You can find these reports in the Security &amp; Compliance Center \> **Reports** \> **Dashboard**.</span></span>
   
-![DLP 原則相符項目報告](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+![DLP 原則符合報告](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
-## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a><span data-ttu-id="6810d-132">檢視覆寫使用者所提交的理由</span><span class="sxs-lookup"><span data-stu-id="6810d-132">View the justification submitted by a user for an override</span></span>
+## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a><span data-ttu-id="c79d6-132">查看使用者為覆寫而提交的理由</span><span class="sxs-lookup"><span data-stu-id="c79d6-132">View the justification submitted by a user for an override</span></span>
 
-<span data-ttu-id="6810d-133">如果您的 DLP 原則允許使用者覆寫它，您可以使用誤判和覆寫報告] 來檢視提交的原則提示的文字。</span><span class="sxs-lookup"><span data-stu-id="6810d-133">If your DLP policy allows users to override it, you can use the false positive and override report to view the text submitted by users in the policy tip.</span></span>
+<span data-ttu-id="c79d6-133">如果您的 DLP 原則允許使用者覆寫該原則，您可以使用 [誤報] 和 [覆寫] 報告，以查看原則提示中使用者所提交的文字。</span><span class="sxs-lookup"><span data-stu-id="c79d6-133">If your DLP policy allows users to override it, you can use the false positive and override report to view the text submitted by users in the policy tip.</span></span>
   
-![理由欄位中的 DLP 誤判和覆寫報告詳細資料](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![DLP false 肯定和覆寫報告詳細資料中的調整欄位](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
-## <a name="take-action-on-insights-and-recommendations"></a><span data-ttu-id="6810d-135">採取動作的見解和建議</span><span class="sxs-lookup"><span data-stu-id="6810d-135">Take action on insights and recommendations</span></span>
+## <a name="take-action-on-insights-and-recommendations"></a><span data-ttu-id="c79d6-135">對真知灼見和建議採取動作</span><span class="sxs-lookup"><span data-stu-id="c79d6-135">Take action on insights and recommendations</span></span>
 
-<span data-ttu-id="6810d-136">報告可以顯示見解和建議您將可以按一下 [請參閱潛在問題的詳細資料，並採取可能的補救措施的紅色警告圖示。</span><span class="sxs-lookup"><span data-stu-id="6810d-136">Reports can show insights and recommendations where you can click the red warning icon to see details about potential issues and take possible remedial action.</span></span>
+<span data-ttu-id="c79d6-136">報告可顯示洞察力和建議，您可以在其中按一下紅色的警告圖示，以查看有關潛在問題的詳細資訊，並採取可能的補救措施。</span><span class="sxs-lookup"><span data-stu-id="c79d6-136">Reports can show insights and recommendations where you can click the red warning icon to see details about potential issues and take possible remedial action.</span></span>
   
-![按一下以查看詳細資料，要採取的動作觀點圖示](../media/51782036-7299-4960-8175-75c2b1637159.png)
+![按一下 insights 圖示，以查看要採取的詳細資料和動作](../media/51782036-7299-4960-8175-75c2b1637159.png)
   
-## <a name="permissions-for-dlp-reports"></a><span data-ttu-id="6810d-138">DLP 報告的權限</span><span class="sxs-lookup"><span data-stu-id="6810d-138">Permissions for DLP reports</span></span>
+## <a name="permissions-for-dlp-reports"></a><span data-ttu-id="c79d6-138">DLP 報告的許可權</span><span class="sxs-lookup"><span data-stu-id="c79d6-138">Permissions for DLP reports</span></span>
 
-<span data-ttu-id="6810d-139">若要檢視 DLP 報告中安全性 & 合規性中心，您必須被指派:</span><span class="sxs-lookup"><span data-stu-id="6810d-139">To view DLP reports in the Security & Compliance Center, you have to be assigned the:</span></span>
+<span data-ttu-id="c79d6-139">若要在安全性 & 規範中心中查看 DLP 報告，您必須被指派下列專案：</span><span class="sxs-lookup"><span data-stu-id="c79d6-139">To view DLP reports in the Security & Compliance Center, you have to be assigned the:</span></span>
 
-- <span data-ttu-id="6810d-140">在 Exchange 系統管理中心中的**安全性讀取者**角色。</span><span class="sxs-lookup"><span data-stu-id="6810d-140">**Security Reader** role in the Exchange admin center.</span></span> <span data-ttu-id="6810d-141">根據預設，此角色被指派給組織管理和安全性助讀程式在 Exchange 系統管理中心中的角色群組。</span><span class="sxs-lookup"><span data-stu-id="6810d-141">By default, this role is assigned to the Organization Management and Security Reader role groups in the Exchange admin center.</span></span>
+- <span data-ttu-id="c79d6-140">Exchange 系統管理中心中的**安全性讀取器**角色。</span><span class="sxs-lookup"><span data-stu-id="c79d6-140">**Security Reader** role in the Exchange admin center.</span></span> <span data-ttu-id="c79d6-141">根據預設，此角色會指派給 Exchange 系統管理中心內的「組織管理」和「安全性讀者」角色群組。</span><span class="sxs-lookup"><span data-stu-id="c79d6-141">By default, this role is assigned to the Organization Management and Security Reader role groups in the Exchange admin center.</span></span>
 
-- <span data-ttu-id="6810d-142">安全性 & 合規性中心中的**僅限檢視 DLP 符合性管理**角色。</span><span class="sxs-lookup"><span data-stu-id="6810d-142">**View-Only DLP Compliance Management** role in the Security & Compliance Center.</span></span> <span data-ttu-id="6810d-143">根據預設，此角色被指派給安全性 & 合規性中心的符合性系統管理員、 組織管理、 安全性系統管理員和安全性讀取者角色群組。</span><span class="sxs-lookup"><span data-stu-id="6810d-143">By default, this role is assigned to the Compliance Administrator, Organization Management, Security Administrator, and Security Reader role groups in the Security & Compliance Center.</span></span>
+- <span data-ttu-id="c79d6-142">在安全性 & 規範中心**VIEW-ONLY DLP 合規性管理**角色。</span><span class="sxs-lookup"><span data-stu-id="c79d6-142">**View-Only DLP Compliance Management** role in the Security & Compliance Center.</span></span> <span data-ttu-id="c79d6-143">根據預設，此角色會指派給安全性 & 合規性中心內的合規性管理員、組織管理、安全性管理員及安全性讀者角色群組。</span><span class="sxs-lookup"><span data-stu-id="c79d6-143">By default, this role is assigned to the Compliance Administrator, Organization Management, Security Administrator, and Security Reader role groups in the Security & Compliance Center.</span></span>
 
-- <span data-ttu-id="6810d-144">在 Exchange 系統管理中心**僅檢視收件者**角色。</span><span class="sxs-lookup"><span data-stu-id="6810d-144">**View-Only Recipients** role in the Exchange admin center.</span></span> <span data-ttu-id="6810d-145">根據預設，此角色被指派給在 Exchange 系統管理中心相符性管理、 組織管理和 View-Only Organization Management 角色群組。</span><span class="sxs-lookup"><span data-stu-id="6810d-145">By default, this role is assigned to the Compliance Management, Organization Management, and View-Only Organization Management role groups in the Exchange admin center.</span></span>
+- <span data-ttu-id="c79d6-144">在 Exchange 系統管理中心中**View-Only**收件者角色。</span><span class="sxs-lookup"><span data-stu-id="c79d6-144">**View-Only Recipients** role in the Exchange admin center.</span></span> <span data-ttu-id="c79d6-145">根據預設，此角色會指派給 Exchange 系統管理中心中的規範管理、組織管理和 View-Only 組織管理角色群組。</span><span class="sxs-lookup"><span data-stu-id="c79d6-145">By default, this role is assigned to the Compliance Management, Organization Management, and View-Only Organization Management role groups in the Exchange admin center.</span></span>
 
-## <a name="find-the-cmdlets-for-the-dlp-reports"></a><span data-ttu-id="6810d-146">尋找 DLP 報告的 cmdlet</span><span class="sxs-lookup"><span data-stu-id="6810d-146">Find the cmdlets for the DLP reports</span></span>
+## <a name="find-the-cmdlets-for-the-dlp-reports"></a><span data-ttu-id="c79d6-146">尋找 DLP 報告的 Cmdlet</span><span class="sxs-lookup"><span data-stu-id="c79d6-146">Find the cmdlets for the DLP reports</span></span>
 
-<span data-ttu-id="6810d-147">若要對安全性與合規性中心使用大部分 Cmdlet，您必須：</span><span class="sxs-lookup"><span data-stu-id="6810d-147">To use most of the cmdlets for the Security &amp; Compliance Center, you need to:</span></span>
+<span data-ttu-id="c79d6-147">若要對安全性與合規性中心使用大部分 Cmdlet，您必須：</span><span class="sxs-lookup"><span data-stu-id="c79d6-147">To use most of the cmdlets for the Security &amp; Compliance Center, you need to:</span></span>
   
-1. [<span data-ttu-id="6810d-148">使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心</span><span class="sxs-lookup"><span data-stu-id="6810d-148">Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell</span></span>](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [<span data-ttu-id="c79d6-148">使用遠端 PowerShell 連接&amp;至安全規範中心</span><span class="sxs-lookup"><span data-stu-id="c79d6-148">Connect to the Security &amp; Compliance Center using remote PowerShell</span></span>](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. <span data-ttu-id="6810d-149">使用下列任何一這些[Office 365 安全性&amp;合規性中心 cmdlet](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)</span><span class="sxs-lookup"><span data-stu-id="6810d-149">Use any of these [Office 365 Security &amp; Compliance Center cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)</span></span>
+2. <span data-ttu-id="c79d6-149">使用這些[安全性&amp;與合規性中心 Cmdlet](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)中的任何一個</span><span class="sxs-lookup"><span data-stu-id="c79d6-149">Use any of these [Security &amp; Compliance Center cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)</span></span>
     
-<span data-ttu-id="6810d-150">不過，DLP 報告需要從整個 Office 365 擷取資料，包含 Exchange Online。</span><span class="sxs-lookup"><span data-stu-id="6810d-150">However, DLP reports need pull data from across Office 365, including Exchange Online.</span></span> <span data-ttu-id="6810d-151">基於這個理由，DLP 報告指令程式可供 Exchange Online Powershell 中，而不是以安全性&amp;合規性中心 Powershell。</span><span class="sxs-lookup"><span data-stu-id="6810d-151">For this reason, the cmdlets for the DLP reports are available in Exchange Online Powershell—not in Security &amp; Compliance Center Powershell.</span></span> <span data-ttu-id="6810d-152">因此，若要為 DLP 報告使用 Cmdlet，您需要︰</span><span class="sxs-lookup"><span data-stu-id="6810d-152">Therefore, to use the cmdlets for the DLP reports, you need to:</span></span>
+<span data-ttu-id="c79d6-150">不過，DLP 報告需要從整個 Office 365 擷取資料，包含 Exchange Online。</span><span class="sxs-lookup"><span data-stu-id="c79d6-150">However, DLP reports need pull data from across Office 365, including Exchange Online.</span></span> <span data-ttu-id="c79d6-151">基於這個理由，在 Exchange Online Powershell 中可以使用 DLP 報告的 Cmdlet，而不是在&amp;安全性與合規性中心 powershell 中。</span><span class="sxs-lookup"><span data-stu-id="c79d6-151">For this reason, the cmdlets for the DLP reports are available in Exchange Online Powershell—not in Security &amp; Compliance Center Powershell.</span></span> <span data-ttu-id="c79d6-152">因此，若要為 DLP 報告使用 Cmdlet，您需要︰</span><span class="sxs-lookup"><span data-stu-id="c79d6-152">Therefore, to use the cmdlets for the DLP reports, you need to:</span></span>
   
-1. [<span data-ttu-id="6810d-153">使用遠端 PowerShell 連線到 Exchange Online</span><span class="sxs-lookup"><span data-stu-id="6810d-153">Connect to Exchange Online using remote PowerShell</span></span>](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [<span data-ttu-id="c79d6-153">使用遠端 PowerShell 連線到 Exchange Online</span><span class="sxs-lookup"><span data-stu-id="c79d6-153">Connect to Exchange Online using remote PowerShell</span></span>](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
-2. <span data-ttu-id="6810d-154">為 DLP 報告使用下列任何 Cmdlet：</span><span class="sxs-lookup"><span data-stu-id="6810d-154">Use any of these cmdlets for the DLP reports:</span></span>
+2. <span data-ttu-id="c79d6-154">為 DLP 報告使用下列任何 Cmdlet：</span><span class="sxs-lookup"><span data-stu-id="c79d6-154">Use any of these cmdlets for the DLP reports:</span></span>
     
-      - [<span data-ttu-id="6810d-155">Get-DlpDetectionsReport</span><span class="sxs-lookup"><span data-stu-id="6810d-155">Get-DlpDetectionsReport</span></span>](https://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+      - [<span data-ttu-id="c79d6-155">Get-DlpDetectionsReport</span><span class="sxs-lookup"><span data-stu-id="c79d6-155">Get-DlpDetectionsReport</span></span>](https://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
     
-      - [<span data-ttu-id="6810d-156">Get-DlpDetailReport</span><span class="sxs-lookup"><span data-stu-id="6810d-156">Get-DlpDetailReport</span></span>](https://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
+      - [<span data-ttu-id="c79d6-156">Get-DlpDetailReport</span><span class="sxs-lookup"><span data-stu-id="c79d6-156">Get-DlpDetailReport</span></span>](https://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
 

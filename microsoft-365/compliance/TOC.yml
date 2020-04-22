@@ -149,10 +149,6 @@
           href: document-fingerprinting.md
         - name: 敏感性資訊的 DLP 函數
           href: what-the-dlp-functions-look-for.md
-    - name: M365 中的加密
-      href: encryption.md
-    - name: Office 365 服務加密
-      href: office-365-service-encryption.md
     - name: 客戶金鑰
       items:
         - name: Office 365 中的客戶金鑰服務加密
@@ -163,7 +159,7 @@
           href: customer-key-manage.md
         - name: 滾動或旋轉客戶金鑰或可用性金鑰
           href: customer-key-availability-key-roll.md
-        - name: 了解 Office 365 客戶金鑰的可用性金鑰
+        - name: 了解客戶金鑰的可用性金鑰
           href: customer-key-availability-key-understand.md
     - name: 電子郵件加密
       href: email-encryption.md
@@ -204,8 +200,6 @@
               href: legacy-information-for-message-encryption.md
             - name: 設定舊版 Office 365 郵件加密的 Azure Rights Management
               href: set-up-azure-rms-for-previous-version-message-encryption.md
-    - name: 在 SharePoint 系統管理中心設定 IRM
-      href: set-up-irm-in-sp-admin-center.md
     - name: 了解資料分類 (預覽)
       href: data-classification-overview.md
       items:
@@ -345,7 +339,7 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=867039'
 - name: 管理電子文件探索
   items:
-    - name: Microsoft 365 中的 eDiscovery
+    - name: Microsoft 365 中的電子文件探索
       href: ediscovery.md
     - name: 內容搜尋
       items:
@@ -797,12 +791,12 @@
           href: compliance-score-release-notes.md
         - name: 合規性分數常見問題 (預覽)
           href: compliance-score-faq.md
-        - name: 合規性管理員 (預覽版)
+        - name: 合規性管理員 (預覽)
           href: compliance-manager-overview.md
           items:
-            - name: 合規性管理員 (預覽版) 版本資訊
+            - name: 合規性管理員的新增功能 (預覽)
               href: compliance-manager-release-notes.md
-            - name: 使用合規性管理員 (預覽版)
+            - name: 使用合規性管理員 (預覽)
               href: working-with-compliance-manager.md
             - name: 合規性管理員 (傳統)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
@@ -1218,7 +1212,7 @@
               href: offering-pdpa-argentina.md
 - name: Office 365 企業版
   href: 'https://docs.microsoft.com/Office365/Enterprise'
-- name: Office 365 商務版
+- name: Microsoft 365 Apps 商務版
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
 - name: Microsoft 365 安全性
   href: 'https://docs.microsoft.com/microsoft-365/security/'

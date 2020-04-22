@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Microsoft 365 商務版 Premium 資源
-summary: Microsoft 365 商務版是一種訂閱服務，包含 Office 365 生產力工具和高級功能，以協助保護您的業務，避免 cyberthreats、保護您的資料，以及管理裝置。
+summary: Microsoft 365 商務版（以前稱為 Microsoft 365 公司）是適用于低於低於300員工之企業的完整訂閱服務。 它會以高級安全性和裝置管理功能，整合您最喜歡的 Office 生產力應用程式和服務和共同作業工具，例如 Microsoft 團隊。
 brand: m365
 metadata:
   title: Microsoft 365 商務版 Premium 資源
@@ -11,12 +11,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 29504ca22db443c504a5f3265ca2e8fcba0f737e
-  ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+  ms.openlocfilehash: 59478fceee0017321c59607f589fe464ac95077d
+  ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 04/21/2020
-  ms.locfileid: "43627107"
+  ms.lasthandoff: 04/22/2020
+  ms.locfileid: "43665617"
 productDirectory:
   title: 使用 Microsoft 365 商務版加強遠端工作
   items:
