@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 中的進階稽核提供新的稽核功能，以協助組織進行鑑識與合規性調查。
-ms.openlocfilehash: bdde2552d2c5ccd790740e1f9077e5d26391e920
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b1a79598fc49d710c54a23dc9ce92c9f2b7f5805
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634541"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632278"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 中的進階稽核
 
@@ -65,7 +65,7 @@ Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and
 
 ### <a name="search-for-mailitemsaccessed-audit-records"></a>搜尋 MailItemsAccessed 稽核記錄
 
-若要搜尋 MailItemsAccessed 稽核記錄，您可以在 Office 365 安全性與合規性中心的[稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 [Exchange 信箱活動]**** 下拉式清單中搜尋 [已存取的信箱項目]**** 活動。
+若要搜尋 MailItemsAccessed 稽核記錄，您可以在安全性與合規性中心的[稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 [Exchange 信箱活動]**** 下拉式清單中搜尋 [已存取的信箱項目]**** 活動。
 
 ![在稽核記錄搜尋工具中搜尋 MailItemsAccessed 動作](../media/MailItemsAccessedSCC1.png)
 
@@ -85,7 +85,7 @@ Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and
 
 **我可以在哪裡存取進階稽核？**
 
-在您的組織推出進階稽核之後，您就可以建立稽核記錄保留原則，並使用 [Office 365 安全性與合規性中心](https://protection.office.com)中的 [稽核記錄搜尋] 工具來搜尋 MailItemsAccessed 稽核記錄。 我們正努力在未來幾周內，在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)推出進階稽核。
+在您的組織推出進階稽核之後，您就可以建立稽核記錄保留原則，並使用[安全性與合規性中心](https://protection.office.com)中的 [稽核記錄搜尋] 工具來搜尋 MailItemsAccessed 稽核記錄。 我們正努力在未來幾周內，在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)推出進階稽核。
 
 **每位使用者是否需要 E5 授權才能使用進階稽核？**
 

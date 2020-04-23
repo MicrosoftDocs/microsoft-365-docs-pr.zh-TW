@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 當建立敏感度標籤時，您可以限制標籤將套用至其中之內容的存取。敏感度標籤可以使用加密來保護內容。
-ms.openlocfilehash: ca6b3a76efcc25ab19b05bf841e506c6a5aab375
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 543050a40848330b5e07c3a804b5718deac7bafa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540830"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631688"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容 
 
@@ -36,7 +36,7 @@ ms.locfileid: "43540830"
 加密文件或電子郵件時，內容的存取會受到限制，以便：
 
 - 只有標籤加密設定授權的使用者才能將其解密。
-- 即使檔案重新命名，無論其位於您組織內部或外部，仍保持加密狀態。
+- 即使檔案重新命名，無論其位於您組織內部或外部，仍會保持加密狀態。
 - 同時進行靜態加密 (例如，在 OneDrive 帳戶中) 及傳輸中加密 (例如，已傳送的電子郵件)。
 
 最後，身為系統管理員的您，在設定一個敏感度標籤來套用加密時，可以選擇以下兩者之一：
@@ -44,7 +44,7 @@ ms.locfileid: "43540830"
 - **立即指派權限**，這樣您就能確實決定哪個使用者能夠存取該標籤的內容。
 - 當使用者將標籤套用到內容時，**讓使用者指派權限**。 如此一來，您就可以讓組織中的人員靈活地共同作業並完成工作。
 
-當您在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或是 Office 365 安全性與合規性中心中[建立敏感性標籤](create-sensitivity-labels.md)時，可以使用加密設定。
+當您在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或是安全性與合規性中心中[建立敏感性標籤](create-sensitivity-labels.md)時，可以使用加密設定。
 
 ## <a name="understand-how-the-encryption-works"></a>了解加密的運作方式
 
@@ -130,7 +130,7 @@ ms.locfileid: "43540830"
 
 ### <a name="rights-management-use-license-for-offline-access"></a>用於離線存取的 Rights Management 使用授權
 
-當使用者開啟以來自 Azure 版權管理服務的加密保護的文件或電子郵件時，Azure 版權管理會將該內容的使用授權授與給該使用者。 使用授權是一項憑證，其中包含使用者對於文件或電子郵件使用權限，以及用來加密內容的加密金鑰。 如果已設定，則使用授權也會包含到期日，以及該使用授權的有效期。
+當使用者開啟以來自 Azure Rights Management 服務的加密保護的文件或電子郵件時，Azure Rights Management 會將該內容的使用授權授與給該使用者。 使用授權是一項憑證，其中包含使用者對於文件或電子郵件使用權限，以及用來加密內容的加密金鑰。 如果已設定，則使用授權也會包含到期日，以及該使用授權的有效期。
 
 如果未設定到期日，則租用戶的預設使用授權有效期間為 30 天。在這段期間，不會針對內容重新驗證或重新授權使用者。這個程序可讓使用者在沒有網際網路連線的情況下繼續開啟受保護文件或電子郵件。使用授權有效期間到期時，下次使用者存取受保護文件或電子郵件時，則必須重新驗證和重新授權使用者。
 
@@ -157,6 +157,8 @@ ms.locfileid: "43540830"
 - 組織中的所有人 (所有租用戶成員)。此設定會排除來賓帳戶。
 
 - 任何已驗證的使用者。 選取此選項之前，請先確認您了解此設定的[需求與限制](#requirements-and-limitations-for-add-any-authenticated-users)。
+- 任何特定使用者或啟用電子郵件功能的安全性群組、通訊群組、Microsoft 365 群組或動態通訊群組。 
+- 任何電子郵件地址或網域。 使用此選項來指定另一個組織中使用 Azure AD 的所有使用者，方法是輸入來自該組織的任何網域名稱。 您也可以針對社交提供者使用此選項，方法是輸入其網域名稱，例如 **gmail.com**、**hotmail.com** 或 **outlook.com**。
 
 - Azure AD 中任何特定使用者或啟用電子郵件功能的安全性群組、通訊群組、Office 365 群組或[動態通訊群組](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) (部分機器翻譯)。 請注意，您無法使用 [Exchange 的 動態通訊群組](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019) (部分機器翻譯)，因為此群組類型不會同步處理到 Azure AD，且您無法使用未啟用電子郵件功能的安全性群組。
 

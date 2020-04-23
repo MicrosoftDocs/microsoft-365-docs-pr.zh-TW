@@ -15,25 +15,25 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 本解決方案案例說明如何使用 Office 365 保留標籤來管理儲存在 SharePoint Online 的產品相關文件的生命週期。 方法是使用文件中繼資料來分類內容，具體做法是並自動套用 Office 365 保留標籤及設定以事件為基礎的保留。
-ms.openlocfilehash: bccfb7d20bfcca6476ce5fa971a2ab0c455824a5
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: 本解決方案案例說明如何使用保留標籤來管理儲存在 SharePoint Online 的產品相關文件的生命週期。 方法是使用文件中繼資料來分類內容，具體做法是並自動套用保留標籤及設定以事件為基礎的保留。
+ms.openlocfilehash: 214384fcdf5099f71c36425102bb62866859f910
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106035"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636391"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>使用保留標籤管理 SharePoint 文件的生命週期
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-本文將說明如何使用 Office 365 保留標籤來管理儲存在 SharePoint Online 的產品相關文件的生命週期，具體做法是自動套用標籤及設定以事件為基礎的保留。 自動套用功能會透過使用 SharePoint 中繼資料來運用文件分類。 本文中的案例是以與產品相關的文件為基礎，但是相同的概念也可用於其他案例。 例如，在石油與天然氣產業，您可以管理與石油平台、鑽井記錄或生產授權等實體資產相關的文件生命週期。 在金融服務產業，您可以管理與銀行帳戶、貸款或保險合約相關的文件。 在公共部門，您可以管理與施工許可證或稅務表單相關的文件。
+本文將說明如何使用保留標籤來管理儲存在 SharePoint Online 的產品相關文件的生命週期，具體做法是自動套用標籤及設定以事件為基礎的保留。 自動套用功能會透過使用 SharePoint 中繼資料來運用文件分類。 本文中的案例是以與產品相關的文件為基礎，但是相同的概念也可用於其他案例。 例如，在石油與天然氣產業，您可以管理與石油平台、鑽井記錄或生產授權等實體資產相關的文件生命週期。 在金融服務產業，您可以管理與銀行帳戶、貸款或保險合約相關的文件。 在公共部門，您可以管理與施工許可證或稅務表單相關的文件。
 
 讓我們來看看這篇文章的案例。 我們將探討資訊架構和保留標籤的定義。 然後，我們將透過自動套用標籤來分類文件，最後產生啟動保留期間的事件。
 
 ## <a name="information-architecture"></a>資訊架構
 
-本文的案例是根據一家製造公司，該公司使用 Office 365 SharePoint Online 來儲存所有與公司所開發的產品相關的文件。 這些文件包括產品規格、與供應商簽訂的協議和使用者手冊。 在 SharePoint 中將隨著企業內容管理原則的一部分儲存這些文件時，便會定義文件中繼資料，並將其用於分類。 每份文件皆有下列中繼資料屬性：
+本文的案例是根據一家製造公司，該公司使用 SharePoint Online 來儲存所有與公司所開發的產品相關的文件。 這些文件包括產品規格、與供應商簽訂的協議和使用者手冊。 在 SharePoint 中將隨著企業內容管理原則的一部分儲存這些文件時，便會定義文件中繼資料，並將其用於分類。 每份文件皆有下列中繼資料屬性：
 
 - **文件類型** (例如產品規格、協議和使用者手冊)
 
@@ -146,7 +146,7 @@ ms.locfileid: "43106035"
 
 我們將[自動套用](labels.md#applying-a-retention-label-automatically-based-on-conditions)使用關鍵字查詢語言 (KQL) 為此案例所建立的保留標籤。 KQL 是用於建立搜尋查詢的語言。 您可以在 KQL 中使用關鍵字或 Managed 屬性進行搜尋。 如需關於 KQL 的詳細資訊，請參閱<https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
 
-我們想要讓 Office 365「將**產品規格**保留標籤套用至所有**狀態**為**完稿**，且**文件類型**為**產品規格**的文件。 請記住，**狀態**和**文件類型**是先前在[資訊架構](#information-architecture)一節中為產品文件內容類型定義的網站欄。 為了完成此操作，我們需要設定搜尋結構描述。
+我們想要讓 Microsoft 365 將**產品規格**保留標籤套用至所有**狀態**為**完稿**，且**文件類型**為**產品規格**的文件。 請記住，**狀態**和**文件類型**是先前在[資訊架構](#information-architecture)一節中為產品文件內容類型定義的網站欄。 為了完成此操作，我們需要設定搜尋結構描述。
 
 當 SharePoint 為內容編制索引時，便會自動為每個網站欄產生編目屬性。 在此案例中，我們想要了解**文件類型**和**狀態**屬性。 我們需要使用正確內容類型的文件庫中的文件，並填入網站欄，以便在搜尋中建立編目屬性。
 
@@ -237,7 +237,7 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 6. 輸入名稱 (例如，[自動套用產品規格標籤]****) 和標籤原則的選擇性描述，然後選取 [下一步]****。 
 
-7. 在 [選擇位置]**** 精靈頁面上，選取您要套用原則的內容位置。 針對此案例，我們僅將原則套用至 SharePoint 位置，因為所有生產文件僅儲存在 SharePoint 文件庫中。 選取 [讓我選擇一個特定位置]****，將 Exchange 電子郵件、OneDrive 帳戶和 Office 365 群組的狀態切換為關閉，並確認 SharePoint 網站的狀態已切換為開啟。 
+7. 在 [選擇位置]**** 精靈頁面上，選取您要套用原則的內容位置。 針對此案例，我們僅將原則套用至 SharePoint 位置，因為所有生產文件僅儲存在 SharePoint 文件庫中。 選取 [讓我選擇一個特定位置]****，將 Exchange 電子郵件、OneDrive 帳戶和 Microsoft 365 群組的狀態切換為關閉，並確認 SharePoint 網站的狀態已切換為開啟。 
 
     ![選擇要自動套用標籤的特定網站](../media/SPRetentionSPlocations.png)
 
@@ -270,7 +270,7 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 您可以在安全性與合規性中心手動建立事件，方法是移至 [記錄管理]****  >  [事件]****，並選擇事件類型、設定正確的資產識別碼，並輸入事件日期。 如需詳細資訊，請參閱[事件導向保留的概觀](event-driven-retention.md)。
 
-在此案例中，我們會透過從外部生產系統產生事件來自動建立事件。 在此案例中，產生事件的系統是一個簡單的 SharePoint 清單，該清單指出產品是否生產中，以及與該清單相關聯並會觸發事件的 [Microsoft Flow](https://docs.microsoft.com/flow/getting-started)。 在現實案例中，可以是產生事件的任何系統，例如 HR 或 CRM 系統。 Flow 包含許多可供 Office 365 工作負載使用的現成互動和建置組塊，例如 Exchange、SharePoint、Teams 和 Dynamics 365，以及協力廠商應用程式，例如 Twitter、Box、Salesforce 和 Workdays。 這可讓您輕鬆地將 Flow 與這些系統整合。 如需詳細資訊，請參閱[自動化事件導向保留](automate-event-driven-retention.md)。
+在此案例中，我們會透過從外部生產系統產生事件來自動建立事件。 在此案例中，產生事件的系統是一個簡單的 SharePoint 清單，該清單指出產品是否生產中，以及與該清單相關聯並會觸發事件的 [Microsoft Flow](https://docs.microsoft.com/flow/getting-started)。 在現實案例中，可以是產生事件的任何系統，例如 HR 或 CRM 系統。 Flow 包含許多可供 Microsoft 365 工作負載使用的現成互動和建置區塊，例如 Exchange、SharePoint、Teams 和 Dynamics 365，以及協力廠商應用程式，例如 Twitter、Box、Salesforce 和 Workdays。 這可讓您輕鬆地將 Flow 與這些系統整合。 如需詳細資訊，請參閱[自動化事件導向保留](automate-event-driven-retention.md)。
 
 下列螢幕擷取畫面顯示將用於觸發事件的 SharePoint 清單： 
 

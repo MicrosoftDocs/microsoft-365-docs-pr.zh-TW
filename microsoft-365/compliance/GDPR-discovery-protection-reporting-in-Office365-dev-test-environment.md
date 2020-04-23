@@ -1,6 +1,6 @@
 ---
-title: Office 365 開發/測試環境中的 GDPR 探索、保護和報告
-description: 展示 Office 365 中的 GDPR 功能。
+title: 開發/測試環境中的 GDPR 探索、保護和報告
+description: 展示 Microsoft 365 中的 GDPR 功能。
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,27 +18,27 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: f7bf98da5d358f9b76f38372353a1c2a9d0d45d3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6a16f48948cd40ea39f8d066471e902d2b5a6bf0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594087"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632338"
 ---
-# <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Office 365 開發/測試環境中的 GDPR 探索、保護和報告
+# <a name="gdpr-discovery-protection-and-reporting-in-the-devtest-environment"></a>開發/測試環境中的 GDPR 探索、保護和報告
 
- **摘要：** 展示 Office 365 中的 GDPR 功能。 
+ **摘要：** 展示 Microsoft 365 中的 GDPR 功能。 
   
-本文將說明如何在 Office 365 開發/測試環境中設定及展示一般資料保護規定 (GDPR) 的個人識別資訊 (PII) 探索、保護及報告。
+本文將說明如何在 Microsoft 365 開發/測試環境中設定及展示一般資料保護規定 (GDPR) 的個人識別資訊 (PII) 探索、保護及報告。
   
-## <a name="phase-1-create-and-configure-your-trial-office-365-subscription"></a>階段 1：建立及設定您的試用版 Office 365 訂閱
+## <a name="phase-1-create-and-configure-your-trial-microsoft-365-subscription"></a>階段 1：建立及設定您的 Microsoft 365 訂閱試用版
 
-首先，請遵循 [Office 365 開發/測試環境階段 2](https://docs.microsoft.com/Office365/Enterprise/office-365-dev-test-environment#phase-2-create-an-office-365-trial-subscription) 一文中的步驟進行。
+首先，請遵循 [Microsoft 365 開發/測試環境階段 2](https://docs.microsoft.com/Office365/Enterprise/office-365-dev-test-environment#phase-2-create-an-office-365-trial-subscription) 文章中的步驟進行。
 
 接下來，請使用下列步驟來設定電子文件探索管理員：
 
-1. 使用全域管理員帳戶登入 Office 365 試用版租用戶。
-2. 從 Office 365 首頁上，按一下 [安全性與合規性]****。
+1. 使用全域系統管理員帳戶登入 Microsoft 365 試用版租用戶。
+2. 從 Microsoft 365 首頁上，按一下 [安全性與合規性]****。
 3. 在新的 [安全性與合規性] 索引標籤中，按一下 [權限] **** >  [電子文件探索管理員]****。
 4. 按一下 [電子文件探索管理員] 的 [編輯]****，然後按一下 [選擇電子文件探索管理員]****。
 5. 按一下 [+ 新增]****、搜尋您的全域系統管理員帳戶名稱，然後以電子文件探索管理員身分新增您的全域系統管理員帳戶。
@@ -46,7 +46,7 @@ ms.locfileid: "41594087"
   
 ## <a name="phase-2-add-personally-identifiable-information-to-your-tenant"></a>階段 2：將個人識別資訊新增至租用戶
 
-在這個階段中，您要使用 PII 建立一組範例國際銀行帳號 (IBAN) 的文件，並將其儲存在您 Office 365 開發/測試環境中的 SharePoint Online 網站上。
+在這個階段中，您要使用 PII 建立一組範例國際銀行帳號 (IBAN) 的文件，並將其儲存在您 Microsoft 365 開發/測試環境中的 SharePoint Online 網站上。
 
 1. 在本機電腦上，開啟 Microsoft Word。
 2. 在 Word 檔案中將下表貼上，並在本機電腦上將它儲存為 'IBANs.docx'。
@@ -99,7 +99,7 @@ ms.locfileid: "41594087"
 - 一個四位數序號。 
     - 可能的序號值範圍從 0000 到 9999。   
 
-Contoso 一律會以內部通信、外部通信、文件和其他形式使用 CCN 來參照客戶。Contoso 需要自訂的敏感項目類型來偵測 Office 365 內容中的 CCN 使用情形，以便他們可在使用此形式的個人識別資訊時提供保護。
+Contoso 一律會以內部通信、外部通信、文件和其他形式使用 CCN 來表示客戶。Contoso 需要自訂的敏感項目類型來偵測 Microsoft 365 內容中的 CCN 使用情形，以便他們可在使用此形式的個人識別資訊時提供保護。
 
 1. 使用[使用多重要素驗證連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) 中的指示，並使用您全域系統管理員帳戶的 UPN 連線至安全性與合規性中心。
 2. 執行下列 PowerShell 命令。
@@ -178,7 +178,7 @@ Contoso 一律會以內部通信、外部通信、文件和其他形式使用 CC
 
 ## <a name="phase-5-demonstrate-data-protection"></a>階段 5：展示資料保護
 
-Office 365 中個人資訊的保護，包括使用資料外洩防護 (DLP) 功能。  您可以使用 DLP 原則自動保護整個 Office 365 的敏感性資訊。
+Microsoft 365 中個人資訊的保護，包括使用資料外洩防護 (DLP) 功能。  您可以使用 DLP 原則自動保護整個 Microsoft 365 的敏感性資訊。
 
 您可以多種方式來提供保護。教育並提高以下認知：歐盟居民資料應儲存在您環境的何處以及您的員工被允許處理這些資料的方式，上述方式即代表一種使用 Office 365 DLP 的資訊保護層級。
 
@@ -189,7 +189,7 @@ Office 365 中個人資訊的保護，包括使用資料外洩防護 (DLP) 功�
 3. 按一下 [+ 建立原則]****。
 4. 在 [從範本開始] 或 [建立自訂原則]**** 中，按一下 [自訂] **** >  [自訂原則] **** >  [下一步]****。
 5. 在 [命名原則]**** 中，提供下列詳細資料，然後按 [下一步]****：a. 名稱：**歐盟市民 PII 原則** b. 描述：**保護歐洲市民的個人識別資訊**
-6. 在 [選擇位置]**** 中，選取 [Office 365 中的所有位置]****。這將包含 Exchange 電子郵件中的內容和 OneDrive 與 SharePoint 文件。然後按 [下一步]****。
+6. 在 [選擇位置]**** 中，選取 [Microsoft 365 中的所有位置]****。這將包含 Exchange 電子郵件中的內容和 OneDrive 與 SharePoint 文件。然後按 [下一步]****。
 7. 在 [自訂您要保護的內容類型]**** 中，按一下 [尋找內容中包含：]****，然後按一下 [編輯]****。
 8. 在 [選擇要保護的內容類型]**** 中，按一下 [新增] **** >  [敏感資訊類型]****。
 9. 在 [敏感資訊類型]**** 中，按一下 [+ 新增]****。
@@ -233,7 +233,7 @@ Office 365 中個人資訊的保護，包括使用資料外洩防護 (DLP) 功�
 
 ## <a name="phase-6-demonstrate-reporting"></a>階段 6：展示報告
  
-在這個階段中，您要根據階段 5 中所設定的 DLP 原則來展示 Office 365 報告。
+在這個階段中，您要根據階段 5 中所設定的 DLP 原則來展示 Microsoft 365 報告。
 
    1. 從瀏覽器的 [安全性與合規性] 索引標籤中，按一下 [首頁]****。
    2. 按一下 [報告] **** >  [儀表板] **** >  [DLP 原則相符項目]****。

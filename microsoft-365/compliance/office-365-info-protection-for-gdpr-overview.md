@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 取得 GDPR 的 Office 365 資訊保護概觀。了解如何探索、分類、保護及監視個人資料。
-ms.openlocfilehash: dbb420cce572b2e03260f9f5b1be63e65504276b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b838ae96c8b93dced8b4da898ed04effc0586463
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071158"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637217"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>GDPR 的 Office 365 資訊保護概觀
 
@@ -103,4 +103,4 @@ Office 365 中用於資訊保護的部分功能也可以用來保護其他 SaaS 
 
 ### <a name="step-5--monitor-for-leaks-of-personal-data"></a>步驟 5 — 監視個人資料的外洩
 
-Office 365 資料外洩防護報告可提供監視敏感資料的最詳細層級。您可以設定自動警示，並使用 Office 365 稽核記錄調查洩露。雲端 App 安全性可將尋找並監視敏感性資料的功能擴充至其他 SaaS 提供者。如需這些工具的詳細資訊，請參閱[監視個人資料的洩露](/security/office-365-security/monitor-for-leaks-of-personal-data.md)。
+Office 365 資料外洩防護報告可提供監視敏感資料的最詳細層級。您可以設定自動警示，並使用稽核記錄調查洩露。雲端 App 安全性可將尋找並監視敏感性資料的功能擴充至其他 SaaS 提供者。如需這些工具的詳細資訊，請參閱[監視個人資料的洩露](/security/office-365-security/monitor-for-leaks-of-personal-data.md)。

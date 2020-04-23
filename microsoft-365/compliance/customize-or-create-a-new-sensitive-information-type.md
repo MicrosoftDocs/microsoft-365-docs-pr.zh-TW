@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 ms.custom: ''
 ms.assetid: ''
-description: 了解如何為 GDPR 修改或建立新的 Office 365 敏感資訊類型。
-ms.openlocfilehash: 006a3e7be35000513053321ebb500cbd627e8779
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 了解如何為 GDPR 修改或建立新敏感資訊類型。
+ms.openlocfilehash: e29193e3fdb7f4d2cd6a5810137bc120fb1171e5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595480"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637775"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>自訂或建立新的敏感資訊類型
 
-本文提供三個範例，示範如何為 GDPR 修改或建立新的 Office 365 敏感資訊類型。
+本文提供三個範例，示範如何為 GDPR 修改或建立新敏感資訊類型。
 
 - 修改現有的敏感資訊類型 — 歐盟轉帳卡卡號
 
@@ -45,9 +45,9 @@ ms.locfileid: "41595480"
 
 ## <a name="modify-a-sensitive-information-type-to-improve-accuracy"></a>修改敏感資訊類型以提高精確度
 
-如果您是使用內容搜尋，以利用敏感資訊類型搜尋個人資訊，而且並未傳回預期的結果，或查詢傳回太多誤判，請考慮修改敏感資訊類型，以更有效地使用您的環境。
+如果您使用的是內容搜尋，以利用敏感資訊類型搜尋個人資訊，而且並未傳回預期的結果，或查詢傳回太多誤判，請考慮修改敏感資訊類型，以更有效地使用您的環境。
 
-建立或自訂敏感資訊類型的最佳做法是根據現有的敏感資訊類型建立新的敏感資訊類型，同時為它提供唯一名稱和識別碼。比方說，如果您想要調整「歐盟轉帳卡卡號 」敏感資訊類型的參數，您可以將該規則的複本命名為「歐盟轉帳卡加強版」，以與正本區別。
+建立或自訂敏感資訊類型的最佳做法是根據現有的敏感資訊類型建立新的敏感資訊類型，同時為它提供唯一名稱和識別碼。比方說，如果您想要調整「歐盟轉帳卡卡號」敏感資訊類型的參數，您可以將該規則的複本命名為「歐盟轉帳卡加強版」，以與正本區別。
 
 在新的敏感資訊類型中，只需修改您想要變更以提高其精確度的值。一旦完成，就上傳新的敏感資訊類型，並建立新的 DLP 規則 (或修改現有的 DLP 規則)，來使用您剛新增的敏感資訊類型。修改敏感資訊類型的精確度需要反復試驗，所有保留原始類型的複本可讓您在未來需要時回到最初狀態。
 
@@ -79,7 +79,7 @@ ms.locfileid: "41595480"
 
 在任何系統中改善 DLP 規則的精準度，需要測試範例資料集，而且可能需要反復修改和測試以進行微調。本範例示範如何修改「歐盟轉帳卡卡號」敏感資訊類型來改善其精確度。
 
-在我們的範例中搜尋歐盟轉帳卡卡號時，該卡號的定義會使用複雜模式嚴格定義為 16 位數，並取決於總和檢查碼的驗證。由於此敏感資訊類型的字串定義，我們無法變更此模式。不過，我們可以進行下列調整，以改善 Office 365 DLP 在 Office 365 內尋找敏感資訊類型的精確度。
+在我們的範例中搜尋歐盟轉帳卡卡號時，該卡號的定義會使用複雜模式嚴格定義為 16 位數，並取決於總和檢查碼的驗證。由於此敏感資訊類型的字串定義，我們無法變更此模式。不過，我們可以進行下列調整，以改善 DLP 在 Office 365 內尋找敏感資訊類型的精確度。
 
 ### <a name="proximity-modification"></a>鄰近修改
 
@@ -167,7 +167,7 @@ ms.locfileid: "41595480"
 
 -   您可以使用 NEAR 和 ONEAR 進行鄰近搜尋。
 
--   很遺憾，KQL 不支援查詢與 Regex 類別搭配 (例如：IdRef="Regex\_email\_address")
+-   很遺憾，KQL 不支援具有 Regex 類別的查詢 (例如：IdRef="Regex\_email\_address")
 
 ### <a name="keywords"></a>關鍵字
 
@@ -197,7 +197,7 @@ ms.locfileid: "41595480"
 
 ### <a name="example--create-a-new-sensitive-information-for-email-addresses"></a>範例 — 為電子郵件地址建立新的敏感資訊類型 
 
-我們將繼續使用電子郵件地址做為範例，因為很簡單。下表詳述針對新的電子郵件機密資訊類型建議的修改。
+我們將繼續使用電子郵件地址做為範例，因為它使用簡單。下表詳述針對新電子郵件敏感資訊類型的修改建議。
 
 <table>
 <thead>
@@ -294,7 +294,7 @@ CCN 範例：
 >
 > 17040O1118
 
-Contoso 一律在內部通信、外部通信、文件等使用 CCN 來參照客戶。他們想要建立自訂的敏感資訊類型，來偵測 CCN 在 Office 365 中的使用情形，以便可在使用此形式的個人資料時套用保護。
+Contoso 一律在內部通信、外部通信、文件等使用 CCN 來表示客戶。他們想要建立自訂的敏感資訊類型，來偵測 CCN 的使用情形，以便可在使用此形式的個人資料時套用保護。
 
 ### <a name="create-a-new-sensitive-information-type-for-contoso-customer-number"></a>為 Contoso 客戶編號建立新的敏感資訊類型
 
@@ -312,7 +312,7 @@ Contoso 一律在內部通信、外部通信、文件等使用 CCN 來參照客�
 <td align="left">Contoso 使用 PowerShell 和內容搜尋，來尋找符合 CCN 範例集的文件。</td>
 <td align="left">
 
-<p>#連線至 Office 365 安全性與合規性中心</p>
+<p>#連線到安全性與合規性中心</p>
 <p>$adminUser = &quot;alland@contoso.com&quot;</p>
 <p>Connect-IPPSSession -UserPrincipalName $adminUser</p>
 <p>#建立並開始搜尋範例資料</p>
@@ -363,7 +363,7 @@ Contoso 一律在內部通信、外部通信、文件等使用 CCN 來參照客�
 <tr class="even">
 <td align="left">8</td>
 <td align="left">Contoso 使用下列 PowerShell 建立自訂的敏感資訊類型。</td>
-<td align="left"><p>#連線至 Office 365 安全性與合規性中心</p>
+<td align="left"><p>#連線到安全性與合規性中心</p>
 <p>$adminUser = &quot;alland@contoso.com&quot;</p>
 <p>Connect-IPPSSession -UserPrincipalName $adminUser</p>
 <p>#建立新的敏感資訊類型。</p>

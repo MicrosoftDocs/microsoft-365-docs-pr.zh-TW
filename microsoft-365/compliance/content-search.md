@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的內容搜尋
+title: 內容搜尋
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,17 +18,17 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: 使用 Office 365 或 Microsoft 365 合規性中心中的「內容搜尋」工具，來搜尋信箱中的內容、SharePoint Online 網站，OneDrive 帳戶、Microsoft Teams、Office 365 群組、Yammer 群組和商務用 Skype 交談。 您可以使用關鍵字搜尋查詢和搜尋條件來縮小搜尋結果。 然後您可以預覽和匯出搜尋結果。 內容搜尋也是用來搜尋與 GDPR 資料主體要求相關內容的有效工具。
-ms.openlocfilehash: 0f37daee28afabb6a63be316bd830f9b3992a044
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+description: 使用 Office 365 或 Microsoft 365 合規性中心中的「內容搜尋」工具，來搜尋信箱中的內容、SharePoint Online 網站，OneDrive 帳戶、Microsoft Teams、Microsoft 365 群組、Yammer 群組和商務用 Skype 交談。 您可以使用關鍵字搜尋查詢和搜尋條件來縮小搜尋結果。 然後您可以預覽和匯出搜尋結果。 內容搜尋也是用來搜尋與 GDPR 資料主體要求相關內容的有效工具。
+ms.openlocfilehash: 74fb84a46b4dd283eef90f2181a0d084a7a361e8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521499"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632358"
 ---
-# <a name="content-search-in-office-365"></a>Office 365 中的內容搜尋
+# <a name="content-search"></a>內容搜尋
 
-您可以使用 Office 365 或 Microsoft 365 合規性中心中的內容搜尋電子文件探索工具，來搜尋 Office 365 組織中的就地項目，例如電子郵件、文件和立即訊息交談。 使用此工具來搜尋這些 Office 365 服務中的項目：
+您可以使用 Office 365 或 Microsoft 365 合規性中心中的內容搜尋電子文件探索工具，來搜尋組織中的就地項目，例如電子郵件、文件和立即訊息交談。 使用此工具來搜尋這些服務中的項目：
   
 - Exchange Online 信箱和公用資料夾
     
@@ -38,7 +38,7 @@ ms.locfileid: "43521499"
     
 - Microsoft Teams 
 
-- Office 365 群組
+- Microsoft 365 群組
 
 - Yammer 群組 
     
@@ -48,7 +48,7 @@ ms.locfileid: "43521499"
 
 若要有權存取**內容搜尋**頁面以執行搜尋和預覽並匯出搜尋結果，系統管理員、法務人員或電子文件探索管理員必須是安全性與合規性中心中電子文件探索管理員角色群組的成員。 如需詳細資訊，請參閱[指派電子文件探索權限](assign-ediscovery-permissions.md)。
   
-1. 移至 [https://protection.office.com](https://protection.office.com) 並使用您的 Office 365 電子郵件地址和密碼登入。
+1. 移至 [https://protection.office.com](https://protection.office.com) 並使用您的 Microsoft 電子郵件地址和密碼登入。
     
 2. 按一下 **[搜尋]** \> **[內容搜尋]**。
     
@@ -85,7 +85,7 @@ ms.locfileid: "43521499"
     
        - **位置：** 選擇要搜尋的內容位置。
     
-      - **所有位置：** 使用此選項來搜尋組織中的所有內容位置。 這包括所有 Exchange 信箱 (包括所有非作用中信箱，以及所有 Microsoft Teams、Yammer 群組和 Office 365 群組的信箱) 中的電子郵件、所有商務用 Skype 交談、所有 SharePoint 和商務用 OneDrive 網站 (包括適用於所有 Microsoft Teams、Yammer 群組和 Office 365 群組的網站)，以及所有 Exchange 公用資料夾中的項目。
+      - **所有位置：** 使用此選項來搜尋組織中的所有內容位置。 這包括所有 Exchange 信箱 (包括所有非作用中信箱，以及所有 Microsoft Teams、Yammer 群組和 Microsoft 365 群組的信箱) 中的電子郵件、所有商務用 Skype 交談、所有 SharePoint 和商務用 OneDrive 網站 (包括適用於所有 Microsoft Teams、Yammer 群組和 Microsoft 365 群組的網站)，以及所有 Exchange 公用資料夾中的項目。
     
       - **特定位置：** 使用此選項來搜尋特定內容位置。 您可以搜尋特定 Office 365 服務的所有內容位置 (例如搜尋所有 Exchange 信箱或搜尋所有 SharePoint 網站)，您也可以搜尋所顯示的任何 Office 365 服務中特定位置的內容。 
     
@@ -178,7 +178,7 @@ ms.locfileid: "43521499"
   
 [搜尋 OneDrive 帳戶](#searching-onedrive-accounts)
   
-[搜尋 Microsoft Teams 和 Office 365 群組](#searching-microsoft-teams-and-office-365-groups)
+[搜尋 Microsoft Teams 和 Microsoft 365 群組](#searching-microsoft-teams-and-microsoft-365-groups)
 
 [搜尋 Yammer 群組](#searching-yammer-groups)
   
@@ -196,7 +196,7 @@ ms.locfileid: "43521499"
 
 - 如需內容搜尋功能適用限制的說明，請參閱[內容搜尋的限制](limits-for-content-search.md)。
     
-- Microsoft 會收集所有 Office 365 組織執行的內容搜尋的效能資訊。 雖然搜尋查詢的複雜性可能會影響搜尋時間，會影響搜尋所需時間的最大因素是搜尋的信箱數量。 雖然 Microsoft 不對搜尋時間提供服務等級協定，下表根據搜尋中包含的信箱數量列出內容搜尋的平均搜尋時間。
+- Microsoft 會收集所有組織執行的內容搜尋的效能資訊。 雖然搜尋查詢的複雜性可能會影響搜尋時間，會影響搜尋所需時間的最大因素是搜尋的信箱數量。 雖然 Microsoft 不對搜尋時間提供服務等級協定，下表根據搜尋中包含的信箱數量列出內容搜尋的平均搜尋時間。
     
 |**信箱數目**|**平均搜尋時間**|
 |:-----|:-----|
@@ -229,7 +229,7 @@ ms.locfileid: "43521499"
     
     ![使用關鍵字清單與條件時建立的查詢範例](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-- 執行內容搜尋時，Office 365 會自動檢查您的搜尋查詢中是否有不受支援的字元，以及可能未大寫的布林值運算子。 不支援的字元通常會隱藏起來，且通常會導致搜尋錯誤或傳回非預期的結果。 如需所檢查不受支援字元的詳細資訊，請參閱[檢查您的內容搜尋查詢是否有錯誤](check-your-content-search-query-for-errors.md)。
+- 執行內容搜尋時，Microsoft 365 會自動檢查您的搜尋查詢中是否有不受支援的字元，以及可能未大寫的布林值運算子。 不支援的字元通常會隱藏起來，且通常會導致搜尋錯誤或傳回非預期的結果。 如需所檢查不受支援字元的詳細資訊，請參閱[檢查您的內容搜尋查詢是否有錯誤](check-your-content-search-query-for-errors.md)。
     
 - 如果您有包含非英文字元 (例如中文字元) 關鍵字的搜尋查詢時，您可以按一下 **[查詢語言-國家/地區]**![內容搜尋中的 [查詢語言-國家/地區] 圖示](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)，然後選取搜尋的語言-國家/地區文化特性代碼值。 預設的語言-國家/地區為中性。 如何判斷您是否需要變更內容搜尋的語言設定？ 如果您確定您要搜尋的內容位置包含非英文字元，但搜尋卻未傳回任何結果，這可能是語言設定所造成。 
   
@@ -239,15 +239,15 @@ ms.locfileid: "43521499"
     
     在人員的使用者主體名稱 (UPN) 變更的少數情況下，其 OneDrive 位置的 URL 將會變更以納入新的 UPN。 如果發生這種情況，您必須透過新增使用者的新 OneDrive URL 並移除舊 URL 來修改內容搜尋。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes) (英文)。
   
-### <a name="searching-microsoft-teams-and-office-365-groups"></a>搜尋 Microsoft Teams 和 Office 365 群組
+### <a name="searching-microsoft-teams-and-microsoft-365-groups"></a>搜尋 Microsoft Teams 和 Microsoft 365 群組
 
-您可以搜尋與 Office 365 群組或 Microsoft Teams 相關聯的信箱。 因為 Office 365 群組上建置於 Microsoft Teams 上，搜尋它們的方式很類似。 在這兩個情況下，只會搜尋群組或團隊信箱。 不會搜尋群組或團隊成員的信箱。 若要進行搜尋，您必須特別將它們新增至搜尋。
+您可以搜尋與 Microsoft 365 群組或 Microsoft Teams 相關聯的信箱。 因為 Microsoft Teams 建置於 Microsoft 365 群組上，搜尋它們的方式很類似。 在這兩個情況下，只會搜尋群組或團隊信箱。 不會搜尋群組或團隊成員的信箱。 若要進行搜尋，您必須特別將它們新增至搜尋。
   
-搜尋 Microsoft Teams 和 Office 365 群組中的內容時，請記住下列事項。
+搜尋 Microsoft Teams 和 Microsoft 365 群組中的內容時，請記住下列事項。
   
-- 若要搜尋位於 Teams 和 Office 365 群組中的內容，您必須指定與團隊或群組相關聯的信箱和 SharePoint 網站。
+- 若要搜尋位於 Teams 和 Microsoft 365 群組中的內容，您必須指定與團隊或群組相關聯的信箱和 SharePoint 網站。
     
-- 在 Exchange Online 中執行 **Get-UnifiedGroup** Cmdlet，以檢視團隊或 Office 365 群組的內容。 這是取得與團隊或群組相關聯的網站 URL 的絕佳方法。 例如，下列命令會顯示名為「資深領導團隊」的 Office 365 群組的所選屬性： 
+- 在 Exchange Online 中執行 **Get-UnifiedGroup** Cmdlet，以檢視團隊或 Microsoft 365 群組的內容。 這是取得與團隊或群組相關聯的網站 URL 的絕佳方法。 例如，下列命令會顯示名為「資深領導團隊」的 Microsoft 365 群組的所選屬性： 
     
   ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -260,9 +260,9 @@ ms.locfileid: "43521499"
     > [!NOTE]
     > 若要執行 **Get-UnifiedGroup** Cmdlet，您必須獲指派 Exchange Online 中的「僅檢視收件者」角色或者為獲指派「僅檢視收件者」角色之角色群組的成員。 
   
-- 搜尋使用者的信箱時，不會搜尋使用者所隸屬的任何團隊或 Office 365 群組。 同樣地，當您搜尋團隊或 Office 365 群組時，只會搜尋您指定的群組信箱及群組網站。 不會搜尋群組成員的信箱和商務用 OneDrive 帳戶，除非您明確地將它們新增至搜尋。
+- 搜尋使用者的信箱時，不會搜尋使用者所隸屬的任何團隊或 Microsoft 365 群組。 同樣地，當您搜尋團隊或 Microsoft 365 群組時，只會搜尋您指定的群組信箱及群組網站。 不會搜尋群組成員的信箱和商務用 OneDrive 帳戶，除非您明確地將它們新增至搜尋。
     
-- 若要取得團隊或 Office 365 群組的成員清單，您可以在 Microsoft 365 系統管理中心的 **[常用] \> [群組]** 頁面上檢視內容。 或者，您可以在 Exchange Online PowerShell 中執行下列命令： 
+- 若要取得團隊或 Microsoft 365 群組的成員清單，您可以在 Microsoft 365 系統管理中心的 [常用] \> [群組]**** 頁面上檢視內容。 或者，您可以在 Exchange Online PowerShell 中執行下列命令： 
     
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -358,7 +358,7 @@ ms.locfileid: "43521499"
 
 ### <a name="searching-disconnected-or-de-licensed-mailboxes"></a>搜尋連線中斷或取消授權的信箱
 
-如果您從 Office 365 或 Azure Active Directory 中的使用者帳戶移除 Exchange Online 授權 (或整個 Office 365 授權)，該使用者的信箱就會變成 *「連線中斷」* 的信箱。 這表示信箱已不再與使用者帳戶相關聯。 搜尋中斷連線的信箱時，會發生以下狀況：
+如果您從使用者帳戶或 Azure Active Directory 中移除 Exchange Online 授權 (或整個 Microsoft 365 授權)，該使用者的信箱就會變成「連線中斷」** 的信箱。 這表示信箱已不再與使用者帳戶相關聯。 搜尋中斷連線的信箱時，會發生以下狀況：
 
 - 如果從信箱移除授權，信箱即不再可供搜尋。 
 

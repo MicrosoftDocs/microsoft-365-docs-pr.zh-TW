@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 中的「安全性與合規性中心」來啟用封存信箱，以便支援組織的郵件保留、電子文件探索和保留需求。
-ms.openlocfilehash: 36a5f2003232d55fd82965773b38a26c4fa29b33
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6ff4e0eda616e9bdd5fe10832ae334c9337272f0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074722"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631738"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>啟用「安全性與合規性中心」的封存信箱
   
@@ -41,7 +41,7 @@ Office 365 中的封存 (稱為就地封存) 可為使用者提供額外的信�
   
 1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用公司或學校帳戶登入 Office 365。
+2. 使用您的公司或學校帳戶登入。
     
 3. 在「安全性與合規性中心」的左窗格中，按一下 **[資料控管]** \> **[封存]**。
     
@@ -72,7 +72,7 @@ Office 365 中的封存 (稱為就地封存) 可為使用者提供額外的信�
   
 1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用公司或學校帳戶登入 Office 365。
+2. 使用您的公司或學校帳戶登入。
     
 3. 在「安全性與合規性中心」的左窗格中，按一下 **[資料控管]** \> **[封存]**。
     
@@ -133,7 +133,7 @@ Office 365 中的封存 (稱為就地封存) 可為使用者提供額外的信�
 
    如需支援就地封存的 Outlook 授權清單，請參閱[Exchange 功能的 Outlook 授權需求](https://support.office.com/article/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99)。
 
-- 封存信箱可協助您和您的使用者符合組織的保留、電子文件探索和保留需求。 例如，您可以使用組織的 Exchange 保留原則，將信箱內容移至使用者的封存信箱。 使用「安全性與合規性中心」的「內容搜尋」工具搜尋使用者信箱的特定內容時，系統也會一併搜尋使用者的封存信箱。 此外，當您加入訴訟資料暫留或是將 Office 365 保留原則套用至使用者的信箱時，系統也會保留封存信箱中的郵件。
+- 封存信箱可協助您和您的使用者符合組織的保留、電子文件探索和保留需求。 例如，您可以使用組織的 Exchange 保留原則，將信箱內容移至使用者的封存信箱。 使用「安全性與合規性中心」的「內容搜尋」工具搜尋使用者信箱的特定內容時，系統也會一併搜尋使用者的封存信箱。 此外，當您採行訴訟資料暫留或是將保留原則套用至使用者的信箱時，系統也會保留封存信箱中的郵件。
   
 - 啟用封存信箱後，您的組織即可使用自動指派給每個信箱的預設 Exchange 保留原則 (也稱為「通訊記錄管理」或 MRM 原則)。 啟用封存信箱時，預設 Exchange 保留原則會自動執行下列動作： 
   
@@ -147,4 +147,4 @@ Office 365 中的封存 (稱為就地封存) 可為使用者提供額外的信�
     
   - [Exchange Online 中的預設保留原則](https://go.microsoft.com/fwlink/?linkid=839418)
     
-  - [設定您 Office 365 組織中的信箱封存和刪除原則](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+  - [設定組織中的信箱封存和刪除原則](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留標籤可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Microsoft 365 中實作記錄管理解決方案。
-ms.openlocfilehash: 720a5b0b2fca16701dd4c2a752ac31b81e2233ab
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 35d91db5a52c9c43a178341417955098a60edc34
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189068"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637441"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -38,11 +38,11 @@ ms.locfileid: "43189068"
     
 - 必須**標示為記錄**使之無法編輯或刪除的工作簽證。 
     
-在這些案例中，Office 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利管理，並根據該分類強制執行保留規則。
+在所有這些案例中，保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利管理，並根據該分類強制執行保留規則。
   
 使用保留標籤，您可以：
   
-- **讓組織的人員可以手動套用保留標籤**至 Outlook 網頁版、Outlook 2010 及更新版本、OneDrive、SharePoint、Office 365 群組中的內容。使用者通常最清楚自己使用的內容類型，因此可以對其分類並套用適當的原則。 
+- **讓組織的人員可以手動套用保留標籤**至 Outlook 網頁版、Outlook 2010 及更新版本、OneDrive、SharePoint 和 Microsoft 365 群組中的內容。使用者通常最清楚自己使用的內容類型，因此可以對其分類並套用適當的原則。 
     
 - 在當內容符合特定條件時**自動將保留標籤套用到內容**，例如內容包含： 
     
@@ -64,7 +64,7 @@ ms.locfileid: "43189068"
 
 - **將預設保留標籤套用至 SharePoint 中的文件庫、資料夾或文件集**，以便該位置中的所有文件都繼承預設保留標籤。  
     
-您可以在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或 Office 365 安全性與合規性中心建立保留標籤。
+您可以在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或安全性與合規性中心中建立保留標籤。
 
 ## <a name="how-retention-labels-work-with-retention-label-policies"></a>保留標籤如何與保留標籤原則一起使用
 
@@ -151,9 +151,9 @@ ms.locfileid: "43189068"
   
 |**如果保留標籤是...**|**則標籤原則可套用至...**|
 |:-----|:-----|
-|發佈給使用者  <br/> |Exchange、SharePoint、OneDrive、Office 365 群組  <br/> |
+|發佈給使用者  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 群組  <br/> |
 |根據敏感資訊類型而自動套用  <br/> |Exchange (僅限所有信箱)、SharePoint、OneDrive  <br/> |
-|根據查詢而自動套用  <br/> |Exchange、SharePoint、OneDrive、Office 365 群組  <br/> |
+|根據查詢而自動套用  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 群組  <br/> |
    
 在 Exchange 中，您只能在新傳送的郵件 (傳輸中的資料) 上自動套用保留標籤功能 (適用於查詢和敏感性資訊類型)，而非目前在信箱中的所有郵件 (待用資料)。 此外，您只能在所有信箱中為敏感性資訊類型自動套用保留標籤功能，但無法選取特定信箱。
   
@@ -183,7 +183,7 @@ Exchange 公用資料夾和 Skype 不支援標籤。
     
 - SharePoint
     
-- Office 365 群組 (群組網站和Outlook 網頁版中的群組信箱)
+- Microsoft 365 群組 (Outlook 網頁版中的群組網站和群組信箱)
     
 以下各節說明標籤在不同應用程式中向組織內人員顯示的方式。
   
@@ -235,17 +235,17 @@ Exchange 公用資料夾和 Skype 不支援標籤。
   
 ![自訂檢視中顯示的標籤資料行文件庫](../media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
   
-### <a name="office-365-groups"></a>Office 365 群組
+### <a name="microsoft-365-groups"></a>Microsoft 365 群組
 
-當您將保留標籤發佈到 Office 365 群組時，保留標籤會顯示在群組網站和 Outlook 網頁版中的群組信箱。將保留標籤套用至內容和上述的套用至電子郵件和文件完全相同。
+當您將保留標籤發佈到 Microsoft 365 群組時，保留標籤會顯示在 Outlook 網頁版的群組網站和群組信箱中。將保留標籤套用至內容的方法和上述套用至電子郵件和文件的方法完全相同。
 
-若要保留 Office 365 群組的內容，您必須使用 Office 365 群組位置。雖然 Office 365 群組擁有 Exchange 信箱，包含整個 Exchange 位置的保留原則並不會包含 Office 365 群組信箱中的內容。
+若要保留 Microsoft 365 群組的內容，您必須使用 Microsoft 365 群組位置。雖然 Microsoft 365 群組擁有 Exchange 信箱，包含整個 Exchange 位置的保留原則並不會包含 Microsoft 365 群組信箱中的內容。
 
 此外，無法使用 Exchange 位置來包含或排除特定群組信箱。 雖然 Exchange 位置最初允許選取群組信箱，但是當您嘗試儲存保留原則時，您會收到「RemoteGroupMailbox」不是Exchange 位置有效選取項目的錯誤訊息。
   
 ## <a name="applying-a-retention-label-automatically-based-on-conditions"></a>根據條件自動套用保留標籤
 
-保留標籤最實用的功能之一，是將標籤自動套用至符合特定條件的內容。 在此情況下，貴組織中的人員不必親自套用保留標籤。 Office 365 會執行這些動作。
+保留標籤最實用的功能之一，是將標籤自動套用至符合特定條件的內容。 在此情況下，貴組織中的人員不必親自套用保留標籤。 Microsoft 365 會執行這些動作。
   
 ![自動套用標籤的角色和工作圖](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
   
@@ -373,7 +373,7 @@ Exchange 公用資料夾和 Skype 不支援標籤。
 
 保留標籤可強制執行保留內容的動作。此外，您也可以使用保留標籤作為資料外洩防護 (DLP) 原則的條件。DLP 原則可以對包含特定標籤的內容強制執行其他動作，例如限制存取。 
   
-如需詳細資訊，請參閱[使用標籤做為條件的 DLP 原則](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
+如需詳細資訊，請參閱[使用保留標籤做為 DLP 原則中的條件](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
   
 ## <a name="monitor-retention-labels"></a>監控保留標籤
 
@@ -433,7 +433,7 @@ Exchange 公用資料夾和 Skype 不支援標籤。
 
 ## <a name="use-retention-labels-instead-of-these-features"></a>使用保留標籤而非這些功能
 
-您可以輕鬆將保留標籤運用在整個組織及其 Office 365 內容，包括 Exchange、SharePoint、OneDrive、Office 365 群組。若您需要在 Office 365 任何地方分類內容或管理記錄，建議您使用保留標籤。
+您可以輕鬆將保留標籤運用在整個組織及其 Office 365 內容，包括 Exchange、SharePoint、OneDrive、Microsoft 365 群組。若您需要在 Microsoft 365 的任何位置分類內容或管理記錄，建議您使用保留標籤。
   
 Office 365 先前提供數種用於將內容分類以及管理記錄的功能， 如下所示。 這些功能會繼續支援保留標籤。 雖然有保留標籤實作與先前功能不同的實例，但是保留標籤的演進會促進 Office 365 記錄管理的未來發展。 因此，我們建議您向前邁進，使用保留標籤而非這些功能來進行資料控管。
   
@@ -453,16 +453,16 @@ Office 365 先前提供數種用於將內容分類以及管理記錄的功能，
 
 您的合規性小組中負責建立保留標籤的成員必須具備安全性 &amp; 合規性中心的權限。 根據預設，租用戶系統管理員將可存取此位置，並且可直接讓法務人員與其他人存取安全性 &amp; 合規性中心，而不需要為其提供租用戶系統管理員的所有權限。若要這麼做，我們建議您：移至安全性 &amp; 合規性中心的 [權限]**** 頁面，編輯 [合規性系統管理員]**** 角色群組，將該成員新增到此角色群組。 
   
-如需詳細資訊，請參閱[授與使用者存取 Office 365 安全性與合規性中心的權限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+如需詳細資訊，請參閱[讓使用者能夠存取安全性與合規性中心](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md) (部分機器翻譯)。
   
 需要這些權限才能建立及套用保留標籤和標籤原則。原則強制執行不需要內容的存取權。  
 ## <a name="find-the-powershell-cmdlets-for-labels"></a>尋找標籤的 PowerShell Cmdlet
 
 若要使用標籤 Cmdlet，您必須：
   
-1. [連接到 Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
     
-2. 使用這些 Office 365 安全性與合規性中心 Cmdlet：
+2. 使用以下安全性與合規性中心 Cmdlet：
 
   - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-compliancetag)
 

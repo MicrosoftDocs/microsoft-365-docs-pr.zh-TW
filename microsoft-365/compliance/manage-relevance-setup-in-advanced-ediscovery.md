@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 進階電子文件探索中管理相關性設定
+title: 在進階電子文件探索中管理相關性設定
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
-description: 閱讀在 Office 365 進階電子文件探索設定相關性訓練的建議，依其相關性為檔案評分，並產生分析結果。
-ms.openlocfilehash: 49c7614eb1fec4e61fb374fb637093fd6e860619
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 閱讀在進階電子文件探索設定相關性訓練的建議，依其相關性為檔案評分，並產生分析結果。
+ms.openlocfilehash: fa7a8a4bd87f91d3417183a5713f5c3c06f01ebe
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557883"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632968"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>在 Office 365 進階電子文件探索 (傳統版) 中管理相關性設定
 

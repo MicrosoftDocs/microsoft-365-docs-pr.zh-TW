@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留標籤，您可以讓發生特定類型事件的時間作為保留期間的依據。事件會觸發啟動保留期間，具有套用至該類型事件之保留標籤的所有事件，會強制執行標籤的保留動作。事件導向保留通常是作為記錄管理處理程序的一部分。
-ms.openlocfilehash: 4389f3639de3e9e036491026455ce62a9e258432
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: a33c9ae73c2a1721e62c4c1c294270cc8d27d198
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105620"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43616017"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件導向保留的概觀
 
@@ -84,7 +84,7 @@ ms.locfileid: "43105620"
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>步驟 1：建立其保留期間根據事件的標籤
 
-在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或 Office 365 安全性 &amp; 合規性中心的左側導覽列中，選擇 ** [分類]** >  **[保留標籤]** >  **[標籤]** 索引標籤 > **[建立標籤]**。
+在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或安全性與合規性中心的左側導覽列中，選擇 [分類]**** >  [保留標籤]**** >  [標籤]**** 索引標籤 > [建立標籤]****。
   
 當您建立標籤時，開啟保留，然後如下所示選擇選項，以根據事件保留或刪除內容。這表示當您在 [事件]**** 頁面上建立事件時，保留設定在 9 月 5 日之前不會生效。 
   
@@ -168,7 +168,7 @@ ms.locfileid: "43105620"
 
 若要取得 [事件]**** 頁面的存取權，檢閱者必須是具有**處置管理**角色和**僅限檢視稽核記錄**角色之角色群組的成員。我們建議建立稱為「處置檢閱者」的新角色群組，將這兩個角色新增至該角色群組，然後將成員新增至角色群組。 
   
-如需詳細資訊，請參閱[授與使用者存取 Office 365 安全性與合規性中心的權限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+如需詳細資訊，請參閱[讓使用者能夠存取安全性與合規性中心](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md) (部分機器翻譯)。
   
 ## <a name="automate-events-by-using-powershell"></a>使用 PowerShell 讓事件自動化
 

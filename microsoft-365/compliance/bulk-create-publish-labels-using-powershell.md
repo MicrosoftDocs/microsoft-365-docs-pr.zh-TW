@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 在 Office 365 中，您可以使用保留標籤來為貴組織實作保留排程。 透過使用提供的指令碼和 .csv 檔案，您可以使用 PowerShell 大量建立及發佈保留標籤和保留標籤原則。
-ms.openlocfilehash: e7b992b8464e5c505d048b5b945d154a770fd59c
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 055bc785c492e2fa37bc60ce4e383f79111c551a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105975"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636351"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>使用 PowerShell 大量建立及發佈保留標籤
 
@@ -716,7 +716,7 @@ if ($ResultCSV)
 
 請遵循下列步驟：
   
-- [連接到 Office 365 安全性與合規性中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
+- [連線到安全性與合規性中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)。
     
 ## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-retention-labels"></a>步驟 5：執行 PowerShell 指令碼來建立及發佈保留標籤
 

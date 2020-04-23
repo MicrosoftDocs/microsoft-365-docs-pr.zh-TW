@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates 已驗證當 Exchange Online 和安全性與合規性中心依建議設定時，則會符合 CFTC Rule 1.31(c)-(d)、FINRA Rule 4511 和 SEC Rule 17a-4 的相關儲存要求。您可以下載評估。
-ms.openlocfilehash: bf54bf5798d4bbb5b655cc367330bbb50de7f7b2
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d2624dbc230bb0fb714ab1a5a66b91e70d301a9c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106121"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626419"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>使用 Exchange Online 和安全性與合規性中心以符合 SEC Rule 17a-4
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-如果貴組織需要符合保留資料的法規標準，Office 365 安全性與合規性中心可提供多項功能，讓您管理 Exchange Online 中的資料的生命週期。其中包括保留、稽核、搜尋和匯出資料的功能。這些功能足以滿足大多數組織的需求。
+如果組織需要遵守資料保留的法規標準，安全性與合規性中心可提供多項功能，讓您管理 Exchange Online 中的資料生命週期。其中包括保留、稽核、搜尋和匯出資料的功能。這些功能足以滿足大多數組織的需求。
 
 不過，有些組織是受高度管制的產業，且須受更嚴格的法規要求拘束。例如，銀行或證券經紀公司等金融機構須受美國證券交易委員會 (SEC) 頒佈的 Rule 17a-4 拘束。Rule 17a-4 針對電子資料儲存有特定的要求，包括記錄管理的許多層面，例如持續時間、格式、品質、可用性，以及記錄保留的責任歸屬。
 
@@ -42,7 +42,7 @@ Cohasset 已驗證當 Exchange Online 和安全性與合規性中心依建議設
 
 ## <a name="this-assessment-is-specific-to-exchange-online"></a>這項評估是針對 Exchange Online
 
-請注意，這項評估是針對 Exchange Online。這項評估不包含其他 Office 365 服務 (例如 SharePoint Online 或商務用 OneDrive)，儘管我們正在規劃未來在這些服務中提供 SEC 17a-4 的相關支援。
+請注意，這項評估是針對 Exchange Online。這項評估不包含其他 Microsoft 365 服務 (例如 SharePoint Online 或商務用 OneDrive)，儘管我們正在規劃未來在這些服務中提供 SEC 17a-4 的相關支援。
 
 請務必了解商務用 Skype 和 Teams 也會將資料儲存在 Exchange Online 中。因此，這項評估確實會包含來自商務用 Skype 的訊息，以及來自 Teams 的頻道和聊天訊息。
 
@@ -75,4 +75,4 @@ Cohasset 已驗證當 Exchange Online 和安全性與合規性中心依建議設
 - 無法保留 Teams 聊天和頻道訊息中的讚。
 
 > [!NOTE]
-> 項目層級稽核現在可供 Office 365 群組信箱使用。 如需詳細資訊，請參閱[管理信箱稽核](enable-mailbox-auditing.md)。
+> 項目層級稽核現在可供 Microsoft 365 群組信箱使用。 如需詳細資訊，請參閱[管理信箱稽核](enable-mailbox-auditing.md)。

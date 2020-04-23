@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 從 Microsoft 資訊保護架構使用敏感度標籤來分類及保護組織的資料，同時確保使用者生產效率和共同作業能力不受影響。 這些標籤可套用保護設定以包含加密視覺標記，如頁尾和浮水印。
-ms.openlocfilehash: 27accc57bce0b5597836e7683cf5b28d0fa9b942
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+ms.openlocfilehash: c7a803180cfa839029ce86e19e0ede75c39d6476
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240308"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631290"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -80,7 +80,7 @@ ms.locfileid: "43240308"
 > 除了在 Office 應用程式中將標籤套用至電子郵件和文件以外，現在也能在下列公開預覽版中使用敏感度標籤：
 > 
 > - [對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤 (公開預覽)](sensitivity-labels-sharepoint-onedrive-files.md)
-> - [對 Microsoft Teams、Office 365 群組和 SharePoint 網站使用敏感度標籤 (公開預覽)](sensitivity-labels-teams-groups-sites.md)
+> - [對 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站使用敏感度標籤 (公開預覽)](sensitivity-labels-teams-groups-sites.md)
 
 將敏感度標籤套用至電子郵件或文件後，將會對內容強制執行為該標籤設定的保護設定。 您可以使用敏感度標籤：
 
@@ -92,14 +92,14 @@ ms.locfileid: "43240308"
     
     ![套用至文件的浮水印和頁首](../media/Sensitivity-label-watermark-header.png)
     
-    需要檢查何時套用內容標記？ 請參閱 [Office 365 何時將內容標記和加密套用到內容 ](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption)。
+    需要檢查何時套用內容標記？ 請參閱 [Microsoft 365 何時套用內容標記和加密](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption)。
     
     字串長度：浮水印限制為 255 個字元。 頁首和頁尾均受限於 1024 個字元，但 Excel 除外。 對於頁首及頁尾，Excel 的總限制為 255 個字元，但此限制包含看不見的字元，例如格式代碼。 如果達到該限制，您輸入的字串就不會顯示在 Excel 中。
 
 
-- 當您加入預覽以[在 Microsoft Teams、Office 365 群組和 SharePoint 網站 (公開預覽版) 中搭配使用敏感度標籤時](sensitivity-labels-teams-groups-sites.md)，**保護容器中的內容，例如網站和群組**。
+- 當您加入預覽以[在 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站 (公開預覽) 中搭配使用敏感度標籤時](sensitivity-labels-teams-groups-sites.md)，**保護容器中的內容，例如網站和群組**。
     
-    在您選擇預覽版之前，不會顯示 [網站和群組設定]**** 的設定選項。 請注意，此標籤設定並不會導致文件字動加上標籤，相反的，標籤設定會控制儲存文件的容器存取權，以保護內容。 這些設定包括隱私權層級，Office 365 群組擁有者是否可以將來賓新增至群組，以及授權給非管理裝置的存取層級。
+    在您選擇預覽版之前，不會顯示 [網站和群組設定]**** 的設定選項。 請注意，此標籤設定並不會導致文件字動加上標籤，相反的，標籤設定會控制儲存文件的容器存取權，以保護內容。 這些設定包括隱私權層級，Microsoft 365 群組擁有者是否可以將來賓新增至群組，以及授權給非管理裝置的存取層級。
 
 - **在 Office 應用程式中自動套用標籤，或建議標籤。** 您可以選擇您要標示的敏感資訊類型，且可以自動套用標籤，或提示使用者套用您建議的標籤。 如果您建議使用某個標籤，提示會顯示您選擇的任何文字。 例如：
     
@@ -141,9 +141,9 @@ ms.locfileid: "43240308"
 
 使用標籤原則，您可以：
 
-- **選擇可看見標籤的使用者和群組。** 您可以將標籤發佈至已啟用電子郵件功能的任何安全性群組、Office 365 群組或動態通訊群組。
+- **選擇可看見標籤的使用者和群組。** 您可以將標籤發佈至已啟用電子郵件功能的任何安全性群組、Microsoft 365 群組或動態通訊群組。
 
-- **套用預設標籤**到標籤原則中包含的使用者和群組所建立所有新文件和的電子郵件。 如果您已針對 [Microsoft Teams、Office 365 群組和 SharePoint 網站啟用敏感度標籤](sensitivity-labels-teams-groups-sites.md)，此選項也適用於容器。 如果使用者的文件或電子郵件不是正確的標籤，使用者可以隨時變更預設標籤。 請考慮使用預設標籤來設定您想套用到所有內容中的基本保護設定等級。 不過，若沒有使用者訓練和其他控制項，這項設定也可能導致不正確的標記。 
+- **套用預設標籤**到標籤原則中包含的使用者和群組所建立所有新文件和的電子郵件。 如果您已針對 [Microsoft Teams、Microsoft 365 群組和 SharePoint 網站啟用敏感度標籤](sensitivity-labels-teams-groups-sites.md)，此選項也適用於容器。 如果使用者的文件或電子郵件不是正確的標籤，使用者可以隨時變更預設標籤。 請考慮使用預設標籤來設定您想套用到所有內容中的基本保護設定等級。 不過，若沒有使用者訓練和其他控制項，這項設定也可能導致不正確的標記。 
 
 - **需要變更標籤的理由。** 如果使用者嘗試移除標籤，或以較低順序編號的標籤取代其，您可以要求使用者提供理由來執行此動作。 例如，使用者開啟標示為 [機密] (順序編號 3) 的文件，並將該標籤取代為 [公開] (順序編號 1)。 目前，理由尚未傳送到 [標籤分析](label-analytics.md) 以供系統管理員檢閱。 不過 [Azure 資訊保護整合標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)會將此資訊傳送至 [Azure 資訊保護分析](https://docs.microsoft.com/azure/information-protection/reports-aip)。
 
@@ -197,7 +197,7 @@ ms.locfileid: "43240308"
 
 ### <a name="azure-information-protection-clients"></a>Azure 資訊保護用戶端
 
-當您在 Windows 電腦上的 Office 365 專業增強版應用程式中使用敏感度標籤時，您可以選擇使用 Azure 資訊保護用戶端，或使用 Office 內建的標記功能。
+當您在 Windows 電腦上的 Microsoft 365 Apps 企業版應用程式中使用敏感度標籤時，您可以選擇使用 Azure 資訊保護用戶端，或使用 Office 內建的標記功能。
 
 根據預設，安裝 Azure 資訊保護用戶端時，這些應用程式中的內建標記功能會關閉。 如需詳細資訊，包括如何變更此預設行為，請參閱 [Office 內建標籤用戶端和 Azure 資訊保護用戶端](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client)。
 

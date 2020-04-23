@@ -14,17 +14,17 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: 使用 Office 365 安全性與合規性中心的資料控管報告，您可以快速檢視標籤是否如您預期一般套用到內容。
-ms.openlocfilehash: 4236f76a651550504bfcb46057517077704d4b2f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 使用安全性與合規性中心的資料控管報告，您可以快速檢視標籤是否如您預期套用到內容。
+ms.openlocfilehash: dbfa8b698a4f09a8307f3bbec38555193237a48c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068786"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626299"
 ---
 # <a name="view-the-data-governance-reports"></a>檢視資料控管報告
 
-在建立您的標籤之後，您想要驗證它們是否如您預期一般套用到內容。使用 Office 365 安全性與合規性中心的資料控管報告，您可以快速檢視：
+在建立您的標籤之後，您想要驗證它們是否如您預期套用到內容。使用安全性與合規性中心的資料控管報告，您可以快速檢視：
   
 - **前 5 名標籤** 這份報告會顯示已套用到內容之前 5 名標籤的計數。按一下這份報告來檢視最近已套用到內容之所有標籤的清單。您可以看到每一個標籤的計數、位置、套用方式、其保留動作、其是否為記錄，以及其配置類型。 
     
