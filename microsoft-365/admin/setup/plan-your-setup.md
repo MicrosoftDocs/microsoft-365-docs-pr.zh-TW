@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: 深入瞭解設定 Microsoft 365 for business 所需的功能。
-ms.openlocfilehash: 97463e624968c5b3edf563e916cbf4929ac581b6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d02e1aaf03449bd976b8db549274002b3ebb6ed6
+ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627567"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43794029"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>規劃 Microsoft 365 for business 的設定
 
@@ -93,7 +93,7 @@ ms.locfileid: "43627567"
   
 如果您要將 Microsoft 365 用於您的電子郵件：
   
-- 若要將商務電子郵件地址（例如*rob@contoso.com*）從其他電子郵件服務移至 Microsoft 365，您必須將您的郵件指引傳送至新的 microsoft 365 信箱。 若要執行此動作，請選取 [**設定**] 頁面上的 [**遷移使用者的資料**]，我們將引導您完成您在網域主機上進行的更新（逐步逐步進行）。
+- 若要將商務電子郵件地址（例如 *，\@contoso.com*）從其他電子郵件服務移至 Microsoft 365，您必須將您的郵件指引傳送至新的 microsoft 365 信箱。 若要執行此動作，請選取 [**設定**] 頁面上的 [**遷移使用者的資料**]，我們將引導您完成您在網域主機上進行的更新（逐步逐步進行）。
 
 - 更新您的網域主機後，相關變更通常在 1 到 2 小時內就會生效。 不過，請注意，在網際網路上更新的變更有時可能需要長達72小時。
 
