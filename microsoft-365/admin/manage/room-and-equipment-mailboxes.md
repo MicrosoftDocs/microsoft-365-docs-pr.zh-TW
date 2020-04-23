@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '建立會議室或設備信箱，讓貴組織中的每個人都可以使用 Outlook 預約會議或活動所需的資源。 '
-ms.openlocfilehash: 1690eba40b71972c18f28e02baf0a39d6557651a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 80562901ecc7382ce6e4ff3375b98efd89a991f0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361858"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628073"
 ---
 # <a name="room-and-equipment-mailboxes"></a>會議室和設備信箱
 
-如果您有每個人都需要用到的會議室、公務車或設備，您就必須設法讓每個人都能夠預約這些資源。最好的方法是在 Office 365 中為每個資源建立會議室或設備信箱。您可能會為您的一樓會議室、媒體設備或物流貨車建立會議室或設備信箱。
+如果您有每個人都需要用到的會議室、公務車或設備，您就必須設法讓每個人都能夠預約這些資源。最好的方法是在 Microsoft 365 中為每個資源建立會議室或設備信箱。您可能會為您的一樓會議室、媒體設備或物流貨車建立會議室或設備信箱。
   
 一旦建立會議室或設備信箱，公司中的每個人都可以使用 Outlook 預約會議或活動所需的資源。 若要了解**使用方法**和**設定方法**，請參閱下列兩個索引標籤。 以下是一些有關會議室與設備信箱的其他常見問題。 
   
@@ -66,7 +66,7 @@ ms.locfileid: "42361858"
   
 2. 選取 **[新增]**。
     
-3. 填寫會議室或設備欄位：<br/>![Office 365 中的新增會議室信箱](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
+3. 填寫會議室或設備欄位：<br/>![Microsoft 365 中的新增會議室信箱](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
   
   - **會議室**或**設備**：您想要建立的信箱類型。
     
@@ -105,7 +105,7 @@ ms.locfileid: "42361858"
   
 ### <a name="does-a-room-mailbox-or-equipment-mailbox-need-a-product-license"></a>會議室信箱或設備信箱是否需要產品授權？
 
-否。雖然您組織中大部分的人員都需要授權才能使用 Office 365，但您不需要對會議室信箱或設備信箱指派授權。
+否。雖然您組織中大部分的人員都需要授權才能使用 Microsoft 365，但您不需要對會議室信箱或設備信箱指派授權。
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>是否需要擁有者來負責會議室或設備的預約？
 

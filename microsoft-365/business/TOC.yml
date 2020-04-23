@@ -1,10 +1,10 @@
-- name: Microsoft 365 商務版
+- name: Microsoft 365 商務進階版
   items:
     - name: Microsoft 365
       href: index.yml
-    - name: 什麼是 Microsoft 365 商務版？
+    - name: 什麼是 Microsoft 365 商務進階版？
       href: microsoft-365-business-overview.md
-    - name: 取得 Microsoft 365 商務版
+    - name: 取得 Microsoft 365 商務進階版
       href: sign-up.md
     - name: 資料保護的先決條件
       href: pre-requisites-for-data-protection.md
@@ -12,7 +12,7 @@
       items:
         - name: 步驟概觀
           href: set-up-overview.md
-        - name: 設定 Microsoft 365 商務版
+        - name: 設定 Microsoft 365 商務進階版
           href: set-up.md
         - name: 保護 Windows 10 電腦
           href: secure-win-10-pcs.md
@@ -71,9 +71,9 @@
               href: validate-settings-on-windows-10-pcs.md
         - name: 適用於 Windows 10 電腦的應用程式防護設定
           href: protection-settings-for-windows-10-devices.md
-    - name: 移轉至 Microsoft 365 商務版
+    - name: 移轉至 Microsoft 365 商務進階版
       items:
-        - name: 從 Office 365 商務進階版移轉
+        - name: 從 Microsoft 365 商務標準版移轉
           href: migrate-to-microsoft-365-business.md
         - name: 從 Office 365 E3 移轉
           href: migrate-from-e3.md
@@ -99,7 +99,7 @@
           href: autopilot-profile-settings.md
         - name: 裝置狀態
           href: device-states.md
-    - name: Microsoft 365 商務版常見問題集
+    - name: Microsoft 365 商務進階版常見問題集
       href: support/microsoft-365-business-faqs.md
 - name: Office 365 企業版
   href: 'https://docs.microsoft.com/office365/enterprise'

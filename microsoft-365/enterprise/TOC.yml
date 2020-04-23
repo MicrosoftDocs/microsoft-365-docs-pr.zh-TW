@@ -19,7 +19,7 @@
               href: networking-avoid-network-hairpins.md
             - name: 步驟 4 - 設定流量旁路
               href: networking-configure-proxies-firewalls.md
-            - name: 步驟 5 - 最佳化用戶端和 Office 365 服務效能
+            - name: 步驟 5 - 最佳化用戶端和服務效能
               href: networking-optimize-tcp-performance.md
             - name: 網路允出準則
               href: networking-exit-criteria.md
@@ -55,10 +55,10 @@
               href: windows10-enable-security-features.md
             - name: Windows 10 企業版允出準則
               href: windows10-exit-criteria.md
-        - name: 階段 4 - Office 365 專業增強版
+        - name: 階段 4 - Microsoft 365 Apps 企業版
           href: office365proplus-infrastructure.md
           items:
-            - name: Office 365 專業增強版允出準則
+            - name: Microsoft 365 Apps 企業版允出準則
               href: office365proplus-exit-criteria.md
         - name: 階段 5 - 行動裝置管理
           href: mobility-infrastructure.md
@@ -76,7 +76,7 @@
               href: infoprotect-configure-increased-security-office-365.md
             - name: 步驟 4 - 設定 Windows 資訊保護
               href: infoprotect-deploy-windows-information-protection.md
-            - name: 步驟 5 - 設定 Office 365 資料外洩防護
+            - name: 步驟 5 - 設定資料外洩防護
               href: infoprotect-data-loss-prevention.md
             - name: 步驟 6 - 設定電子郵件加密
               href: infoprotect-email-encryption.md
@@ -174,7 +174,7 @@
           href: contoso-identity.md
         - name: Windows 10 企業版
           href: contoso-win10.md
-        - name: Office 365 專業增強版
+        - name: Microsoft 365 Apps 企業版
           href: contoso-o365pp.md
         - name: 行動裝置管理
           href: contoso-mdm.md

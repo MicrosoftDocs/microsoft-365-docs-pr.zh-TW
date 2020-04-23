@@ -1,5 +1,5 @@
 ---
-title: 在 Office 365 中變更使用名稱和電子郵件地址
+title: 變更使用名稱和電子郵件地址
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,17 +21,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: '了解全域系統管理員如何變更使用者的 Office 365 電子郵件地址和顯示名稱。 '
-ms.openlocfilehash: 16dab0f0ac65bccea0e2273e396315a32dd33439
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: '了解全域系統管理員如何變更使用者的電子郵件地址和顯示名稱。 '
+ms.openlocfilehash: 726d1f01203bbaefc529039d3816fb09c892cd90
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239402"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618737"
 ---
-# <a name="change-a-user-name-and-email-address-in-office-365"></a>在 Office 365 中變更使用名稱和電子郵件地址
+# <a name="change-a-user-name-and-email-address"></a>變更使用名稱和電子郵件地址
 
-您可能需要變更某個使用者的 Office 365 電子郵件地址和顯示名稱，例如當使用者結婚或使用者的姓氏變更時。
+您可能需要變更某個使用者的電子郵件地址和顯示名稱，例如當使用者結婚或使用者的姓氏變更時。
 
 ::: moniker range="o365-worldwide"
 
@@ -48,11 +48,11 @@ ms.locfileid: "42239402"
 
 ## <a name="change-a-users-email-address"></a>變更使用者的電子郵件地址
 
-您必須是 [Office 365 全域系統管理員](about-admin-roles.md)才能執行這些步驟。 
+您必須是[全域系統管理員](about-admin-roles.md)才能執行這些步驟。 
 
 ::: moniker range="o365-worldwide"
  
-1. 在系統管理中心中，移至 [使用者]**** \> [作用中使用者]<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
     
 2. 選取使用者名稱，然後在 [帳戶]**** 索引標籤上，選取 [管理使用者名稱]****。
     
@@ -101,7 +101,7 @@ ms.locfileid: "42239402"
     
     **重要**：如果您是從 GoDaddy 或其他提供管理主控台的協力廠商服務購買 Office 365，就不會看到此選項。 在這種情況下，請改為登入 GoDaddy/協力廠商的管理主控台設定主要別名。 
     
-    補充一點，您必須是 Office 365 全域系統管理員才能看到此選項。如果您沒有看到這個選項，表示您無權變更使用者的名稱和主要電子郵件地址。
+    補充一點，您必須是全域系統管理員才能看到此選項。如果您沒有看到這個選項，表示您無權變更使用者的名稱和主要電子郵件地址。
   
 4. 您會看到一個黃色的大型警告，指出您即將變更使用者的登入資訊。 選取 [儲存]****，再選取 [關閉]****。
     
@@ -129,7 +129,7 @@ ms.locfileid: "42239402"
     
     **重要**：如果您是從 GoDaddy 或其他提供管理主控台的協力廠商服務購買 Office 365，就不會看到此選項。 在這種情況下，請改為登入 GoDaddy/協力廠商的管理主控台設定主要別名。 
     
-    補充一點，您必須是 Office 365 全域系統管理員才能看到此選項。如果您沒有看到這個選項，表示您無權變更使用者的名稱和主要電子郵件地址。
+    補充一點，您必須是全域系統管理員才能看到此選項。如果您沒有看到這個選項，表示您無權變更使用者的名稱和主要電子郵件地址。
   
 4. 您會看到一個黃色的大型警告，指出您即將變更使用者的登入資訊。 選取 [儲存]****，再選取 [關閉]****。
     
@@ -157,7 +157,7 @@ ms.locfileid: "42239402"
     
     **重要**：如果您是從 GoDaddy 或其他提供管理主控台的協力廠商服務購買 Office 365，就不會看到此選項。 在這種情況下，請改為登入 GoDaddy/協力廠商的管理主控台設定主要別名。 
     
-    補充一點，您必須是 Office 365 全域系統管理員才能看到此選項。如果您沒有看到這個選項，表示您無權變更使用者的名稱和主要電子郵件地址。
+    補充一點，您必須是全域系統管理員才能看到此選項。如果您沒有看到這個選項，表示您無權變更使用者的名稱和主要電子郵件地址。
   
 4. 您會看到一個黃色的大型警告，指出您即將變更使用者的登入資訊。 選取 [儲存]****，再選取 [關閉]****。
     
@@ -223,22 +223,22 @@ ms.locfileid: "42239402"
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>[找不到符合參數名稱 'EmailAddresses' 的參數]
 
-如果您收到 [找不到符合參數名稱 'EmailAddresses' 的參數]**** 的錯誤訊息，表示 Office 365 需要久一點的時間，才能完成設定您的租用戶或您的自訂網域 (如果您最近剛新增自訂網域的話)。 設定程序最多可能需要 4 個小時才能完成。 請稍候，讓設定程序完成，然後再試一次。 如果問題仍然存在，請連絡支援人員，他們會為您執行完整的同步處理。
+如果您收到 [找不到符合參數名稱 'EmailAddresses' 的參數]**** 的錯誤訊息，表示需要久一點的時間，才能完成設定您的租用戶或您的自訂網域 (如果您最近剛新增自訂網域的話)。 設定程序最多可能需要 4 個小時才能完成。 請稍候，讓設定程序完成，然後再試一次。 如果問題仍然存在，請連絡支援人員，他們會為您執行完整的同步處理。
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>[很抱歉，無法編輯該使用者。 請檢閱使用者資訊，然後再試一次]
 
-如果收到 [很抱歉，無法編輯該使用者。請檢閱使用者資訊，然後再試一次] **** 的錯誤訊息， 表示您並非 Office 365 全域系統管理員，無權變更使用者的名稱。 請聯繫貴公司的全域系統管理員來進行變更。
+如果收到 [很抱歉，無法編輯該使用者。請檢閱使用者資訊，然後再試一次] **** 的錯誤訊息， 表示您並非全域系統管理員，無權變更使用者的名稱。 請聯繫貴公司的全域系統管理員來進行變更。
 
 
 ## <a name="what-to-do-with-old-email-addresses"></a>該如何處理舊的電子郵件地址
 
 使用者的前一個主要電子郵件地址會保留為其他電子郵件地址。 **強烈建議您不要移除舊電子郵件地址。**
   
-有些人可能會繼續傳送電子郵件到使用者的舊電子郵件地址，所以刪除它可能會導致 NDR 失敗。Office 365 會自動將它路由到新電子郵件地址。此外，請勿重新使用舊 SMTP 電子郵件地址及將它們套用到新帳戶。這也可能會導致 NDR 失敗或傳送到非預期的信箱。
+有些人可能會繼續傳送電子郵件到使用者的舊電子郵件地址，所以將其刪除可能會導致 NDR 失敗。Microsoft 會自動將該地址路由到新電子郵件地址。此外，請勿重新使用舊 SMTP 電子郵件地址及將其套用到新帳戶。這也可能會導致 NDR 失敗或傳送到非預期的信箱。
    
 ## <a name="what-if-the-persons-offline-address-book-wont-sync-with-the-global-address-list"></a>人員的離線通訊錄無法與全域通訊清單同步處理時該怎麼辦？
 
-如果他們使用 Exchange Online 或其 Office 365 帳戶與貴組織的內部部署 Exchange 環境連結，您可能會在嘗試變更使用者名稱和電子郵件地址時看到下列錯誤：「此使用者已與本機 Active Directory 同步處理。某些詳細資料只能透過本機 Active Directory 進行編輯。」
+如果他們使用 Exchange Online 或其帳戶與貴組織的內部部署 Exchange 環境連結，您可能會在嘗試變更使用者名稱和電子郵件地址時看到下列錯誤：「此使用者已與本機 Active Directory 同步處理。某些詳細資料只能透過本機 Active Directory 進行編輯。」
   
 這是因為 Microsoft 線上電子郵件路由位址 (MOERA) 的緣故。MOERA 是從人員在 Active Directory 中的  _userPrincipalName_ 屬性建構而成，而且會在初始同步處理期間自動指派到雲端帳戶，一旦建立之後，就無法在 Office 365 中修改或移除。您可以後續在 Active Directory 中變更使用者名稱，但它不會變更 MOERA，而且您可能會遇到在 [全域通訊清單] 中顯示新變更之名稱的相關問題。 
   

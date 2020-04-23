@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft 365 企業版文件和資源
-summary: 以轉換您的工作的方式的智慧型雲端服務的最佳的生產力應用程式。
+summary: 具有智慧型雲端服務的同級最佳生產力應用程式，讓您的工作方式轉型。
 brand: m365
 metadata:
-  title: Microsoft 365 企業版文件和資源
-  description: 了解產品文件和可用資源的 Microsoft 365 IT 專業人員、 資訊工作者和合作夥伴的企業版。
+  title: 企業用 Microsoft 365 文件和資源
+  description: 深入了解可供 IT 專業人員、資訊工作者和合作夥伴的企業用 Microsoft 365 使用的產品文件和資源。
   services: service
   ms.prod: microsoft-365-enterprise
   ms.service: O365-seccomp
@@ -13,26 +13,26 @@ metadata:
   author: robmazz
   ms.author: robmazz
   ms.date: 11/29/2019
-  ms.openlocfilehash: d7c4eccccc47a9264cdd14fab2b7740789dd33b0
-  ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
-  ms.translationtype: MT
+  ms.openlocfilehash: b9cefc03e590b5f8ab94af9d86e01ba53f76334a
+  ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+  ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 12/19/2019
-  ms.locfileid: "40801668"
+  ms.lasthandoff: 04/21/2020
+  ms.locfileid: "43631654"
 highlightedContent:
   items:
-  - title: 了解 Microsoft 365 企業版
+  - title: 了解企業用 Microsoft 365
     itemType: get-started
     url: microsoft-365-overview.md
-  - title: Accelerate FastTrack 部署
+  - title: 使用 FastTrack 加速您的部署
     itemType: quickstart
     url: https://www.microsoft.com/fasttrack/microsoft-365
   - title: 訓練您的 IT 專業人員和系統管理員
     itemType: learn
     url: https://docs.microsoft.com/learn/m365/
 conceptualContent:
-  title: 協助 Microsoft 365 企業版和其他資源
-  summary: 探索 Microsoft 365 企業版部署指南、 功能和服務。
+  title: 取得企業用 Microsoft 365 的說明和其他資源
+  summary: 探索企業用 Microsoft 365 的部署指南、功能和服務。
   items:
   - title: 遵循部署藍圖
     links:
@@ -48,7 +48,7 @@ conceptualContent:
     - url: desktop-deployment-center-home.md
       itemType: get-started
       text: 桌面部署中心
-  - title: 部署重要的元素
+  - title: 部署重要元素
     links:
     - url: identity-infrastructure.md
       itemType: how-to-guide
@@ -58,49 +58,49 @@ conceptualContent:
       text: Windows 10 企業版
     - url: https://docs.microsoft.com/deployoffice/plan-office-365-proplus
       itemType: deploy
-      text: Office 365 專業增強版
+      text: 企業用 Microsoft 365 應用程式
     - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
       itemType: deploy
       text: Microsoft Intune
-  - title: 部署的關鍵案例
+  - title: 部署重要案例
     links:
     - url: secure-teams-highly-regulated-data-scenario.md
       itemType: how-to-guide
-      text: 適用於高管制資料的 Microsoft Teams
+      text: 適用於高度管制資料的 Microsoft Teams
     - url: teams-sharepoint-online-sites-highly-regulated-data.md
       itemType: how-to-guide
       text: 適用於高度管制資料的 SharePoint 網站
     - url: empower-people-to-work-remotely.md
       itemType: how-to-guide
-      text: 遠端員工
+      text: 遠端工作者
     - url: migration-microsoft-365-enterprise-workload.md
       itemType: deploy
       text: Office 用戶端和伺服器及 Windows 移轉
-  - title: 管理 Microsoft 365 企業版
+  - title: 管理企業用 Microsoft 365
     links:
     - url: https://docs.microsoft.com/windows/deployment/update/
       itemType: how-to-guide
       text: Windows 10 企業版
     - url: https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus
       itemType: concept
-      text: Office 365 專業增強版
+      text: 企業用 Microsoft 365 應用程式
     - url: https://docs.microsoft.com/intune/apps/app-management
       itemType: get-started
-      text: 使用 Intune 應用程式
+      text: 搭配 Intune 的應用程式
     - url: https://docs.microsoft.com/office365/
       itemType: get-started
-      text: Office 365 服務
+      text: Microsoft 365 服務
 additionalContent:
   sections:
   - title: 其他資源
-    summary: 深入了解其他 Microsoft 365 功能與資源。
+    summary: 深入了解其他 Microsoft 365 功能和資源。
     items:
     - title: Microsoft 365 合規性
-      summary: 協助貴組織控管資訊、 防範風險，並遵守法律或法規的標準。
+      summary: 協助組織管理資訊、防範風險，並遵守法務或法規標準。
       url: https://docs.microsoft.com/microsoft-365/compliance/index
     - title: Microsoft 365 安全性
-      summary: 保護貴組織跨健全安全性服務與解決方案的受攻擊面。
+      summary: 使用強固的安全性服務和解決方案來保護組織的攻擊面。
       url: https://docs.microsoft.com/microsoft-365/security/index
     - title: Microsoft 365 技術社群
-      summary: 連線並進行共同作業等項目與 Microsoft 技術社群和共用 Microsoft 365 的最佳作法中的專家。
+      summary: 您可以在 Microsoft 技術社群中與同儕及專家連絡並共同作業，以及分享 Microsoft 365 最佳做法。
       url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

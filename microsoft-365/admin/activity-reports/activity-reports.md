@@ -18,17 +18,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: 取得關於組織中的人員使用 Office 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
-ms.openlocfilehash: fc9416445fec7a873ae7d09e1af366f029f51ed1
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+description: 取得關於組織中的人員使用 Microsoft 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
+ms.openlocfilehash: 646096b0e9d9f2c1d701fba312901bf744a74501
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204053"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621267"
 ---
-# <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的活動報告
+# <a name="microsoft-365-reports-in-the-admin-center"></a>系統管理中心的 Microsoft 365 報告
 
-您可以輕鬆地查看您的員工使用 Office 365 服務的情況。例如，您可以查出誰經常使用服務且達到使用量配額，或是誰可能完全不需要 Office 365 授權。
+您可以輕鬆地查看您的員工使用 Microsoft 365 服務的情況。例如，您可以查出誰經常使用服務且達到使用量配額，或是誰可能完全不需要 Microsoft 365 授權。
   
 您可以索取過去 7 天、30 天、90 天及 180 天的報告。不過系統無法立即提供所有報告期間的資料，您會在 48 小時內看到可用的報告。
   
@@ -58,7 +58,7 @@ ms.locfileid: "43204053"
 ::: moniker-end
 
    
-2. 選取儀表板頂端的 **[選取報告]**，從所有可用報告的清單中選擇所需報告。 或者您也可以選取單個服務 (電子郵件、OneDrive 等等) 的概覽活動小工具以查看詳細資訊。 <br/>![Office 365 使用量儀表板](../../media/usage-report-dashboard.png)
+2. 選取儀表板頂端的 **[選取報告]**，從所有可用報告的清單中選擇所需報告。 或者您也可以選取單個服務 (電子郵件、OneDrive 等等) 的概覽活動小工具以查看詳細資訊。 <br/>![使用情況儀表板](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>誰可以查看報告
 
@@ -87,7 +87,6 @@ ms.locfileid: "43204053"
 視您的訂閱而定，可能有以下幾種報告可用。
   
 - [電子郵件活動](email-activity.md)
-- [表單活動](forms-activity.md)
     
 - [信箱使用量](mailbox-usage.md)
     
@@ -96,12 +95,15 @@ ms.locfileid: "43204053"
 - [作用中的使用者](active-users.md)
   
 - [電子郵件應用程式使用量](email-apps-usage.md)
+
+- [表單活動](forms-activity.md)
   
-- [Office 365 群組](office-365-groups.md)
+- [Microsoft 365 群組](office-365-groups.md)
   
 - [商務用 OneDrive 使用者活動](onedrive-for-business-activity.md)
   
 - [商務用 OneDrive 使用量](onedrive-for-business-usage.md)
+
 - [專業增強版使用量](microsoft365-apps-usage.md)
   
 - [SharePoint 網站使用量](sharepoint-site-usage.md)
@@ -170,7 +172,7 @@ ms.locfileid: "43204053"
   
 您的使用者清單看起來像這樣：
   
-![Office 365 報表 - 匿名使用者清單](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![報告 - 匿名使用者清單](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 這些在報告儀表板中的報告變更，需要幾分鐘後才會生效。此設定也適用於報告 API。
   
@@ -184,4 +186,3 @@ ms.locfileid: "43204053"
 
 [安全與合規性中心內的報告](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
   
-

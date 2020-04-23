@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 建立共用信箱讓組織中的多位使用者共同負責讀取及回覆傳送到某個地址的電子郵件。
-ms.openlocfilehash: 4469197628feb96980ec2d8b560048acba704c54
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 35711e1a17a244a9f68ac88daf665f0328b293b4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212302"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628900"
 ---
 # <a name="create-a-shared-mailbox"></a>建立共用信箱 
 
 > [!NOTE]
 > 如果您的組織使用混合式 Exchange 環境，您應使用內部部署 Exchange 系統管理中心 (EAC) 來建立及管理共用信箱。 請參閱[在 Exchange 系統管理中心建立共用信箱](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019.)<br><br>
-> 如果您不確定應該建立共用信箱或者 Outlook​​ 的 Office 365 群組，請參閱[比較群組](../create-groups/compare-groups.md)以取得指導。 請注意，目前無法將共用信箱移轉至 Office 365 群組。 如果您想要這麼做，請[在這裡投票](https://go.microsoft.com/fwlink/?linkid=871518)讓我們知道。
+> 如果您不確定應該建立共用信箱或者 Outlook​​ 的 Microsoft 365 群組，請參閱[比較群組](../create-groups/compare-groups.md)以取得指導。 請注意，目前無法將共用信箱移轉至 Microsoft 365 群組。 如果您想要這麼做，請[在這裡投票](https://go.microsoft.com/fwlink/?linkid=871518)讓我們知道。
 
 建立共用信箱能讓一群人輕易監視某個共用電子郵件地址 (例如 info@contoso.com) 的電子郵件，並從該電子郵件地址傳送電子郵件。當群組中的某人回覆一則傳送到共用信箱的郵件時，該封電子郵件會顯示為從共用信箱發出，而非從個別使用者發出。
 
@@ -42,7 +42,7 @@ ms.locfileid: "43212302"
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>建立共用信箱和新增成員
   
-1. 使用 Office 365 全域系統管理員帳戶或 Exchange 系統管理員帳戶登入。 如果您收到 **[您沒有存取這個頁面或執行這個動作的權限]** 訊息，則代表您不是系統管理員。 
+1. 使用全域系統管理員帳戶或 Exchange 系統管理員帳戶登入。 如果您收到 **[您沒有存取這個頁面或執行這個動作的權限]** 訊息，則代表您不是系統管理員。 
 
 ::: moniker range="o365-worldwide"
 
@@ -158,7 +158,7 @@ ms.locfileid: "43212302"
     
     如需相關指示，請參閱<a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">將共用信箱新增至 Outlook mobile</a>。
 
-- 開啟您的瀏覽器、登入 Office 365，然後移至 Outlook 網頁版。 您可以從 Outlook 網頁版存取共用信箱。
+- 開啟您的瀏覽器、登入，然後移至 Outlook 網頁版。 您可以從 Outlook 網頁版存取共用信箱。
 
     如需相關指示，請參閱<a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">新增共用信箱到 Outlook 網頁版</a>。
 

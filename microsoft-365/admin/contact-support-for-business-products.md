@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: 使用您的地區或區域所列電話號碼，或提交線上服務要求，或造訪 Microsoft 網上商店以取得技術和帳單支援。
 feedback_system: None
-ms.openlocfilehash: 8f108f4348a7cecd62eba869962d9ee5b179b5b0
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 8f69b77d8e16d4ed73aa8ecf9f15bc8998cf0f20
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212114"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627075"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>連絡商務產品的客戶支援 - 系統管理說明
 
@@ -62,7 +62,7 @@ ms.locfileid: "43212114"
 
 - **英國請撥 0800 032 6417。**
 
-如果上方並未列出您的 Office 365 或 Microsoft 365 商務版支援電話號碼，請使用下方的下拉式功能表選擇您所在的國家/地區。
+如果上方並未列出您的商務用 Microsoft 365 支援電話號碼，請使用下方的下拉式功能表選擇您所在的國家/地區。
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
@@ -70,13 +70,15 @@ ms.locfileid: "43212114"
 
 ## <a name="in-store-support"></a>[店內支援](#tab/instore)
 
-現在您可以到當地 Microsoft Store 預約 Answer Desk 專家，協助解決您的 Office 365 或 Microsoft 365 問題。
+現在您可以到當地 Microsoft Store 預約 Answer Desk 專家，協助解決您的 Microsoft 365 問題。
 
 1. 前往 [Microsoft Store 排程][](https://go.microsoft.com/fwlink/?LinkID=2041482) 頁面，並選取 [排程約會]****。
 
 2. 輸入您的所在地點，然後搜尋來尋找您附近的 Microsoft Store。
 
 3. 選擇商店，然後選取 [立刻排程服務預約]****。
+
+---
 
 ::: moniker-end
 
@@ -86,7 +88,7 @@ ms.locfileid: "43212114"
 
 授權的系統管理員可以使用由 21Vianet 運作的 Office 365 入口網站提交線上服務要求，並存取支援電話號碼。如需相關指示，請參閱[連絡客戶支援](#contact-support)。
 
-21Vianet Office 365 技術支援小組僅疑難排解與 21Vianet 運作的 Office 365 相關的問題。來自客戶網路的問題不在 Office 365 支援範圍內，在這些情況下，客戶必須與其網路小組協同作業以取得協助。
+21Vianet 運作的 Office 365 技術支援小組僅會針對與 21Vianet 運作的 Office 365 相關問題進行疑難排解。來自客戶網路的問題不在 Office 365 支援範圍內，在這些情況下，客戶必須與其網路小組協同作業以取得協助。
 
 ### <a name="community-and-self-service-support-options"></a>社群和自助支援選項
 
@@ -120,7 +122,7 @@ ms.locfileid: "43212114"
 
 | 支援類別 | 範例 |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 安裝和設定 | Exchange Online  <ul><li>Office 365 信箱移轉</li><li>收件者設定 (信箱權限、設定信箱轉寄功能、設定共用信箱)</li><li>自動探索設定</li></ul> SharePoint Online <ul><li>權限和使用者群組</li><li>設定外部使用者</li></ul> 商務用 Skype Online  <ul><li>安裝和建立連絡人</li></ul> Office 365 專業增強版  <ul><li>安裝和設定</li></ul> |
+| 安裝和設定 | Exchange Online  <ul><li>Office 365 信箱移轉</li><li>收件者設定 (信箱權限、設定信箱轉寄功能、設定共用信箱)</li><li>自動探索設定</li></ul> SharePoint Online <ul><li>權限和使用者群組</li><li>設定外部使用者</li></ul> 商務用 Skype Online  <ul><li>安裝和建立連絡人</li></ul> Microsoft 365 Apps 企業版  <ul><li>安裝和設定</li></ul> |
 | 組態 | 服務設定問題  <ul><li>單一登入 (SSO)</li><li>Active Directory 同步處理</li></ul> |
 
 > [!NOTE]
@@ -177,7 +179,7 @@ ms.locfileid: "43212114"
 
 在客戶組織中，只有具備系統管理員角色的人員才能獲授權存取由 21Vianet 運作的 Office 365 入口網站的 [系統管理] 區段，以及直接與 21Vianet 就 Office 365 服務要求進行通訊。
 
-透過 Office 365，您可以指派負責不同職責的不同類型管理員。此服務說明採用一般標題「管理員」來統稱所有類別的管理員。如需有關管理員角色類型的詳細資訊，請參閱〈[在商務用 Office 365 中指派管理員角色](add-users/assign-admin-roles.md)〉。
+透過 Office 365，您可以指派負責不同職責的不同類型管理員。此服務說明採用一般標題「管理員」來統稱所有類別的管理員。如需有關管理員角色類型的詳細資訊，請參閱[在商務用 Microsoft 365 中指派管理員角色](add-users/assign-admin-roles.md)。
 
 管理員：
 
@@ -236,7 +238,7 @@ ms.locfileid: "43212114"
 如果您是 Office 365 Germany 的系統管理員，可以免費向資深支援專員尋求協助，解決技術性問題，以及取得售前、帳戶和帳單相關支援。您也可以代表貴組織的 Office 365 Germany 使用者連絡我們。
 
 > [!NOTE]
-> 下列所有支援選項皆適用於 Microsoft Cloud Germany。如需 Microsoft 如何使用在您連絡 Microsoft Office 365 客戶支援時所提供資料的詳細資訊，請參閱[隱私權聲明](https://go.microsoft.com/fwlink/p/?LinkId=512132)。
+> 下列所有支援選項皆適用於 Microsoft Cloud Germany。如需 Microsoft 如何使用在您連絡 Microsoft 客戶支援時所提供資料的詳細資訊，請參閱[隱私權聲明](https://go.microsoft.com/fwlink/p/?LinkId=512132)。
 
 ### <a name="get-assisted-support"></a>取得輔助支援
 
@@ -253,6 +255,6 @@ ms.locfileid: "43212114"
 
 ### <a name="let-our-community-help"></a>讓我們的社群提供協助。
 
-您也可以[搜尋商務用 Office 365 社群論壇](https://go.microsoft.com/fwlink/p/?LinkId=518605)，查看已知問題和熱門主題，或是提出新問題。社群論壇由受過專業訓練的 Microsoft 支援專員監視，可以協助您解決問題。
+您也可以[搜尋商務用 Microsoft 365 社群論壇](https://go.microsoft.com/fwlink/p/?LinkId=518605)，查看已知問題和熱門主題，或是提出新問題。社群論壇由受過專業訓練的 Microsoft 支援專員監視，可以協助您解決問題。
 
 ::: moniker-end

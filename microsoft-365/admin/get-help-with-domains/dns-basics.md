@@ -20,13 +20,13 @@ search.appverid:
 - BSA160
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
-description: 了解網域及其相關聯的 DNS 記錄，協助您管理 Office 365 網域。
-ms.openlocfilehash: 4fd41102193a9e630ed04a9d1fb2e196dc94486b
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 了解網域及其相關聯的 DNS 記錄，協助您管理網域。
+ms.openlocfilehash: 0b1e969dbb8b172c799e98d5470860fec3625fc2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210465"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628479"
 ---
 # <a name="dns-basics"></a>DNS 基本知識
 
@@ -34,7 +34,7 @@ ms.locfileid: "43210465"
   
 ::: moniker range="o365-worldwide"
 
-網域名稱 (例如 contoso.com) 是由網域註冊機構和資料庫的全球系統管理。 網域名稱系統 (DNS) 可提供人類看得懂的電腦主機名稱與網路設備所使用的 IP 位址之間的對應。 了解 DNS 和網域註冊機構的基本概念有助於管理 Office 365 中的網域。
+網域名稱 (例如 contoso.com) 是由網域註冊機構和資料庫的全球系統管理。 網域名稱系統 (DNS) 可提供人類看得懂的電腦主機名稱與網路設備所使用的 IP 位址之間的對應。 了解 DNS 和網域註冊機構的基本概念有助於管理網域。
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -144,7 +144,7 @@ DNS 記錄如同網域相關資訊的資料庫。 該記錄及其值會儲存在
 ::: moniker-end
 
 > [!NOTE]
-> 如果您要在 Office 365 設定網域，讓 [Office 365 為您設定及管理 DNS 記錄](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records)，則在設定過程中，您得[將 DNS 管理變更為 Office 365](../setup/domains-faq.md#change-dns-management-to-office-365)。 
+> 如果您要在 Office 365 設定網域，讓 [Microsoft 為您設定及管理 DNS 記錄](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records)，則在設定過程中，您得[將 DNS 管理變更為 Office 365](../setup/domains-faq.md#change-dns-management-to-office-365)。 
  
 
 ::: moniker range="o365-worldwide"
@@ -154,13 +154,13 @@ DNS 記錄如同網域相關資訊的資料庫。 該記錄及其值會儲存在
 將自訂網域 (例如 fourthcoffee.com) 新增至 Office 365 可讓您使用更簡短、更熟悉的電子郵件地址和該服務的 userID。 註冊 Office 365 帳戶時，將會[提供一個網域供您使用](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx)，但包括「onmicrosoft.com」。 如果計劃將 Office 365 用於電子郵件，許多人偏好新增組織或商務網域。 
   
 > [!NOTE]
-> 如果您只是要下載並使用 Office 365 App (例如 Outlook 或 Word)，則無需新增網域：[在您的 PC 或 Mac 上安裝 Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)。 
+> 如果您只是要下載並使用 Microsoft App (例如 Outlook 或 Word)，則無需新增網域：[在您的 PC 或 Mac 上安裝 Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)。 
   
 您可以在 Office 365 中將網域名稱用於電子郵件、公用網站及立即訊息位址。
   
 - **電子郵件：** 您的網域名稱可讓您自訂電子郵件，因此您可以使用更簡短且易記的地址，而不是帳戶隨附的[初始 onmicrosoft.com 電子郵件地址](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx)。 因此電子郵件地址 (也是用於登入 Office 365 的公司帳戶) 可能是 joe@contoso.com，而不是 joe@contoso.onmicrosoft.com。 
     
-- **網站：** 如果您的 Office 365 訂閱包含 SharePoint Online 公用網站 (已不再提供購買)，您的公用網站會隨附像 contoso-public.sharepoint.com 這樣的初始位址。 如果您是為企業設定網站，您可以使用自訂網域名稱，將網站位址重新命名為類似 www.contoso.com 這樣的位址。 
+- **網站：** 如果您的 Microsoft 365 訂閱包含 SharePoint Online 公用網站 (已不再提供購買)，您的公用網站會隨附像 contoso-public.sharepoint.com 這樣的初始位址。 如果您是為企業設定網站，您可以使用自訂網域名稱，將網站位址重新命名為類似 www.contoso.com 這樣的位址。 
     
 - **立即訊息：** 您也可以將商務用 Skype Online 位址自訂為使用您的網域名稱，讓組織內部人員使用更簡短易記的位址 (例如 joe@contoso.com)，在商務用 Skype Online 上彼此聯繫。 
     
@@ -179,7 +179,7 @@ DNS 記錄如同網域相關資訊的資料庫。 該記錄及其值會儲存在
   
 - **電子郵件：** 您的網域名稱可讓您自訂電子郵件，因此您可以使用更簡短且易記的地址，而不是帳戶隨附的[初始 onmicrosoft.com 電子郵件地址](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx)。 因此電子郵件地址 (也是用於登入 Office 365 的公司帳戶) 可能是 joe@contoso.com，而不是 joe@contoso.onmicrosoft.com。 
     
-- **網站：** 如果您的 Office 365 訂閱包含 SharePoint Online 公用網站 (已不再提供購買)，您的公用網站會隨附像 contoso-public.sharepoint.com 這樣的初始位址。 如果您是為企業設定網站，您可以使用自訂網域名稱，將網站位址重新命名為類似 www.contoso.com 這樣的位址。 
+- **網站：** 如果您的訂閱包含 SharePoint Online 公用網站 (已不再提供購買)，您的公用網站會隨附像 contoso-public.sharepoint.com 這樣的初始位址。 如果您是為企業設定網站，您可以使用自訂網域名稱，將網站位址重新命名為類似 www.contoso.com 這樣的位址。 
     
 - **立即訊息：** 您也可以將商務用 Skype Online 位址自訂為使用您的網域名稱，讓組織內部人員使用更簡短易記的位址 (例如 joe@contoso.com)，在商務用 Skype Online 上彼此聯繫。 
     
@@ -189,7 +189,7 @@ DNS 記錄如同網域相關資訊的資料庫。 該記錄及其值會儲存在
 
 Office 365 需要具備數種 DNS 記錄才能搭配您的網域使用。 除了設定網域的 MX 記錄，讓電子郵件傳送到 Office 365 之外，還有其他記錄可以協助您處理任務，像是確認 Outlook 可以自動連線到正確的 Exchange 伺服器、設定立即訊息，以及協助防堵垃圾郵件等。
   
-您可以[尋找值清單](information-for-dns-records.md)設定您的網域。 它們包含在 Office 365 入口網站中。 
+您可以[尋找值清單](information-for-dns-records.md)設定您的網域。 這些都包含在 Microsoft 365 系統管理中心。 
   
 或者，如果您正在規劃部署，建議您檢閱 Office 365 所需的所有 DNS 記錄清單、DNS 記錄的作用與範例值。 請參閱 [Office 365 的外部網域名稱系統記錄](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0)。
   

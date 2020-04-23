@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員向 Microsoft 開啟支援票證。
 ms.custom: okr_smb
-ms.openlocfilehash: ec601e5860460ab77760a5e18c834b987c6b3d07
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 4e3cec5b2ff86b35d02f8963a584efdb272f2c5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151392"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618917"
 ---
 # <a name="about-admin-roles"></a>關於系統管理員角色
 
@@ -73,10 +73,10 @@ Microsoft 365 系統管理中心可讓您管理超過 30 個 Azure AD 角色。 
 
 |系統管理員角色     |誰應獲指派此角色？  |
 |---------|---------|
-|Exchange 系統管理員     |   將 Exchange 系統管理員角色指派給需要檢視和管理您使用者的電子郵件信箱、Office 365 群組和 Exchange Online 的使用者。 <br><br> Exchange 系統管理員也可以：<br> - 復原使用者信箱中已刪除的郵件 <br> - 設定「傳送為」和「代表傳送」代理人 <br>  |
+|Exchange 系統管理員     |   將 Exchange 系統管理員角色指派給需要檢視和管理您使用者的電子郵件信箱、Microsoft 365 群組和 Exchange Online 的使用者。 <br><br> Exchange 系統管理員也可以：<br> - 復原使用者信箱中已刪除的郵件 <br> - 設定「傳送為」和「代表傳送」代理人 <br>  |
 |全域系統管理員     |   將全域系統管理員角色指派給需要透過 Microsoft 線上服務多數管理功能和資料的全域存取權的使用者。 <br><br> 授與太多的使用者全域存取權會造成安全性風險，因此建議您擁有 2 到 4 個之間的全域系統管理員。 <br><br> 只有全域系統管理員可以：<br> - 重設所有使用者的密碼 <br> - 新增和管理網域 <br> <br> **附註：** 註冊 Microsoft 線上服務的人員會自動成為全域系統管理員。 |
 |全域讀取者    |   將全域讀取者角色指派給需要檢視系統管理中心中的全域系統管理員可檢視的系統管理功能和設定的使用者。 全域讀取者系統管理員無法編輯任何設定。   |
-|群組系統管理員     |   將群組管理員角色指派給需要跨系統管理中心管理所有群組設定的使用者，包括 Microsoft 365 系統管理中心和 Azure Active Directory 入口網站。 <br><br> 群組系統管理員可以：<br> - 建立、編輯、刪除及還原 Office 365 群組 <br> - 建立並更新群組建立、到期及命名原則 <br> - 建立、編輯、刪除及還原 Azure Active Directory 安全性群組| 
+|群組系統管理員     |   將群組管理員角色指派給需要跨系統管理中心管理所有群組設定的使用者，包括 Microsoft 365 系統管理中心和 Azure Active Directory 入口網站。 <br><br> 群組系統管理員可以：<br> - 建立、編輯、刪除及還原 Microsoft 365 群組 <br> - 建立並更新群組建立、到期及命名原則 <br> - 建立、編輯、刪除及還原 Azure Active Directory 安全性群組| 
 |服務台系統管理員     |   將服務台系統管理員角色指派給需要執行下列動作的使用者：<br> - 重設密碼 <br> - 強制使用者登出 <br> - 管理服務要求 <br> - 監視服務健康情況 <br> <br> **附註**：服務台系統管理員只能協助非系統管理員使用者和獲指派下列角色的使用者：目錄讀取者、來賓邀請者、服務台系統管理員、訊息中心讀取者和報告讀取者。      |
 |Office應用程式系統管理員    |   將 Office 應用程式系統管理員角色指派給需要執行下列動作的使用者： <br> - 使用 Office 雲端原則服務來建立及管理 Office 的雲端式原則 <br> - 建立和管理服務要求 <br> - 管理使用者在 Office 應用程式中看到的新功能內容   <br> - 監視服務健康情況  |
 |服務系統管理員    |   將服務系統管理員角色以額外角色形式指派給其角色不包含下列但仍需執行下列動作的管理員或使用者： <br> - 開啟和管理服務要求 <br> - 檢視和共用訊息中心文章   |
@@ -127,9 +127,9 @@ Microsoft 365 系統管理中心可讓您管理超過 30 個 Azure AD 角色。 
 |安全性操作員     |    調查及回應安全性警告、管理身分識別保護中心的功能，以及監視服務健康情況。     |
 |安全性讀取者     |    對安全性功能、登入報告和稽核記錄具備唯讀存取權。     |
 |服務支援系統管理員     |    建立 Azure、Microsoft 365 和 Office 365 服務的服務要求，以及監視服務健康情況。     |
-|SharePoint 系統管理員     |    完全存取 SharePoint Online、管理 Office 365 群組、管理服務要求，以及監視服務健康情況。     |
+|SharePoint 系統管理員     |    完全存取 SharePoint Online、管理 Microsoft 365 群組、管理服務要求，以及監視服務健康情況。     |
 |商務用 Skype 系統管理員     | 完全存取所有 Teams 和 Skype 功能、Skype 使用者屬性、管理服務要求，以及監視服務健康情況。      |
-|Teams 系統管理員     |    完全存取 Teams 和 Skype 系統管理中心、管理 Office 365 群組和服務要求，以及監視服務健康情況。     |
+|Teams 系統管理員     |    完全存取 Teams 和 Skype 系統管理中心、管理 Microsoft 365 群組和服務要求，以及監視服務健康情況。     |
 |Teams 通訊管理員     |    指派電話號碼、建立及管理語音和會議原則，以及讀取通話分析。     |
 |Teams 通訊支援工程師     |    讀取所有通話參與者的通話記錄詳細資料，以疑難排解通訊問題。     |
 |Teams 通訊支援專員     |    讀取僅特定使用者的使用者通話詳細資料，以疑難排解通訊問題。|

@@ -1,5 +1,5 @@
 ---
-title: 設定商務用 Office 365
+title: 設定商務用 Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,25 +24,25 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
-description: 了解如何設定 Office 365 商務進階版、Office 365 商務基本版、Office 365 商務或 Office 365 教育版訂閱。
-ms.openlocfilehash: f862eb2042da329e70c7cc1658a5c1a037b56faa
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 深入了解如何設定您的 Microsoft 365 商務標準版、Microsoft 365 商務基本版、Microsoft 365 Apps 商務版或 Office 365 教育版訂閱。
+ms.openlocfilehash: 448dc7ae990a4c9803ea751e4ad855f375195734
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212170"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627543"
 ---
-# <a name="set-up-office-365-for-business"></a>設定商務用 Office 365
+# <a name="set-up-microsoft-365-for-business"></a>設定商務用 Microsoft 365
 
-請按照下列步驟，讓您的公司或[非營利組織](https://go.microsoft.com/fwlink/p/?LinkId=627221)熟悉並開始執行 [Office 365 商務進階版](https://go.microsoft.com/fwlink/p/?LinkId=627220)、Office 365 商務基本版、Office 365 商務版或 Office 365 教育版。
+請按照下列步驟，讓您的公司或[非營利組織](https://go.microsoft.com/fwlink/p/?LinkId=627221)熟悉並開始執行 [Microsoft 365 商務標準版](https://go.microsoft.com/fwlink/p/?LinkId=627220)Microsoft 365 商務基本版、Microsoft 365 Apps 商務版或 Office 365 教育版。
   
-不是公司嗎？ 請參閱[設定 Office 365 家用版或 Office 365 個人版](https://support.office.com/article/65415a24-3cbf-4f30-901d-9bf9eba7fce2.aspx)。
+不是公司嗎？ 請參閱[設定 Microsoft 365 家用版或 Microsoft 365 個人版](https://support.office.com/article/65415a24-3cbf-4f30-901d-9bf9eba7fce2.aspx)。
   
 ## <a name="business-premium"></a>商務進階版
   
- *這些步驟適用於擁有 **[Office 365 商務進階版方案](https://go.microsoft.com/fwlink/p/?LinkId=627220)** 的公司和[非營利組織](https://go.microsoft.com/fwlink/p/?LinkId=627221)。*
+ *這些步驟適用於擁有 **[Microsoft 365 商務標準版方案](https://go.microsoft.com/fwlink/p/?LinkId=627220)** 的公司和[非營利組織](https://go.microsoft.com/fwlink/p/?LinkId=627221)。*
 
-觀看有關設定 Office 365 商務進階版的短片。<br><br>
+觀看有關設定 Microsoft 365 商務標準版的短片。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/913be1ad-bae1-40c0-9ded-15bb477b828b]
 
@@ -50,15 +50,15 @@ ms.locfileid: "43212170"
 
 ### <a name="1-sign-up-and-set-up"></a>1. 註冊並設定
 
-1. 若要註冊 Office 365 商務方案，請移至 [Office 產品網站](https://www.aka.ms/office365signup)，然後選取 [立即購買]****。
+1. 若要註冊商務用 Microsoft 365 方案，請移至 [Office 產品網站](https://www.aka.ms/office365signup)，然後選取 [立即購買]****。
 
-2. 選擇您想要註冊的方案，例如 **Office 365 商務進階版**。
+2. 選擇您想要註冊的方案，例如 **Microsoft 365 商務標準版**。
 
-3. 請按照下列步驟註冊 Office 365 商務方案。
+3. 請按照下列步驟註冊商務用 Microsoft 365 方案。
 
     註冊程序完成後，系統會將您導向系統管理中心，您可以在該處按照精靈來安裝 Office 應用程式、新增您的網域、新增使用者，以及指派授權。 完成初始安裝後，您可以使用系統管理中心的 [設定] **** 頁面繼續設定和設定訂閱隨附的服務。
 
-    如需有關 Office 365 安裝精靈和系統管理中心之 [設定]**** 頁面的詳細資訊，請參閱 [Office 365 安裝精靈和設定頁面之間的差異](o365-setup-wizard-and-setup-page.md) (英文)。
+    如需有關安裝精靈和系統管理中心 [設定]**** 頁面的詳細資訊，請參閱[安裝精靈和設定頁面之間的差異](o365-setup-wizard-and-setup-page.md)。
 
 ### <a name="2-set-up-outlook-for-email"></a>2. 設定 Outlook 以收發電子郵件
 
@@ -70,7 +70,7 @@ ms.locfileid: "43212170"
 
 2. 依序選擇 [檔案]**** \> [資訊]**** \> [新增帳戶]****。
 
-3. 輸入您的 Office 365 電子郵件地址並選取 [連線]****。
+3. 輸入您的 Microsoft 電子郵件地址，然後選取 [連線]****。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
   
@@ -78,7 +78,7 @@ ms.locfileid: "43212170"
   
 ### <a name="3-import-email"></a>3. 匯入電子郵件
 
-如果您使用的是 Outlook 搭配另一個電子郵件帳戶，您可以將之前的電子郵件、行事曆和連絡人匯入到新的 Office 365 帳戶。
+如果您使用的是 Outlook 搭配另一個電子郵件帳戶，您可以將之前的電子郵件、行事曆和連絡人匯入到新的 Microsoft 帳戶。
   
 1. **匯出舊的電子郵件**
 
@@ -98,7 +98,7 @@ ms.locfileid: "43212170"
   
 ### <a name="4-use-a-public-website"></a>4. 使用公用網站
 
-Office 365 不包含貴公司的公用網站。 如果您想要設立一個，請考慮使用 Microsoft 合作夥伴，例如 GoDaddy 或 WIX。
+Microsoft 365 不包含貴公司的公用網站。 如果您想要設立一個，請考慮使用 Microsoft 合作夥伴，例如 GoDaddy 或 WIX。
   
 1. 從系統管理中心，移至 [資源]****，然後選取 [公用網站]****。
 
@@ -110,11 +110,11 @@ Office 365 不包含貴公司的公用網站。 如果您想要設立一個，�
   
 ## <a name="business-essentials"></a>商務基本版
   
-*使用這些步驟設定您的 **[Office 365 商務基本版](https://go.microsoft.com/fwlink/p/?LinkId=627218)** 訂閱。在此方案中，您將連線至 Office 365 online，而非安裝 Office `應用程式。*
+*使用這些步驟設定您的 **[Microsoft 365 商務基本版](https://go.microsoft.com/fwlink/p/?LinkId=627218)** 訂閱。在此方案中，您將連線至 Office 365 online，而非安裝 Office 應用程式。*
 
-### <a name="1-create-office-365-accounts-and-add-your-domain"></a>1. 建立 Office 365 帳戶及新增您的網域
+### <a name="1-create-microsoft-365-accounts-and-add-your-domain"></a>1. 建立 Microsoft 365 帳戶及新增您的網域
 
-在此步驟中，您將使用設定精靈來為您的使用者建立 Office 365 帳戶並新增您自己的網域。精靈能讓您個人化貴公司每個使用者的識別碼和電子郵件，例如 rob@contoso.com。
+在此步驟中，您將使用設定精靈來為您的使用者建立 Microsoft 365 帳戶並新增您自己的網域。精靈能讓您個人化貴公司每個使用者的識別碼和電子郵件，例如 rob@contoso.com。
   
 ::: moniker range="o365-worldwide"
 
@@ -140,17 +140,17 @@ Office 365 不包含貴公司的公用網站。 如果您想要設立一個，�
   
 ### <a name="2-import-email"></a>2. 匯入電子郵件
 
-將您現有的電子郵件及連絡人從其他電子郵件系統移至您的 Office 365 信箱，以便於同一處查看。
+將您現有的電子郵件及連絡人從其他電子郵件系統移至您的 Microsoft 信箱，以便於同一處查看。
   
 如需移轉選項，請參閱[移轉電子郵件和連絡人](migrate-email-and-contacts-admin.md)。
   
 ### <a name="3-connect-email-accounts"></a>3. 連接電子郵件帳戶
 
-除了管理您 Outlook 中的 Office 365 電子郵件，您也可以將其他電子郵件帳戶連接至 Outlook，例如 Gmail 和 Yahoo 帳戶。這可讓您在單一位置集中管理您所有的電子郵件。您最多可以將 5 個電子郵件帳戶連接至 Outlook。
+除了管理您 Outlook 中的 Microsoft 電子郵件，您也可以將其他電子郵件帳戶連接至 Outlook，例如 Gmail 和 Yahoo 帳戶。這可讓您在單一位置集中管理您所有的電子郵件。您最多可以將 5 個電子郵件帳戶連接至 Outlook。
   
 ::: moniker range="o365-worldwide"
 
-請在 [https://www.office.com/signin](https://www.office.com/signin) 使用工作或學校帳戶登入 Office 365。
+請在 [https://www.office.com/signin](https://www.office.com/signin) 使用工作或學校帳戶登入 Microsoft 365。
 
 ::: moniker-end
 
@@ -211,11 +211,11 @@ Office 365 不包含貴公司的公用網站。 如果您想要設立一個，�
 
 ### <a name="5-store-files-online"></a>5. 線上儲存檔案
 
-Office 365 讓線上檔案儲存變得容易。若要了解最適合貴公司的儲存位置，請參閱[您可以在 Office 365 中儲存文件的位置](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx)。
+Microsoft 讓線上檔案儲存變得容易。若要了解最適合貴公司的儲存位置，請參閱[您可以儲存檔案的位置](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx)。
   
-在您為每個人建立 Office 365 帳戶時，他們皆會自動獲得 **OneDrive** 雲端儲存位置。 有了 OneDrive，您可以透過電腦、手機和平板電腦來存取檔案。
+在您為每個人建立 Microsoft 帳戶時，他們皆會自動獲得 **OneDrive** 雲端儲存位置。 有了 OneDrive，您可以透過電腦、手機和平板電腦來存取檔案。
   
-1. 在您的電腦上，使用 [檔案總管] 開啟 OneDrive。 或者，從 [Office 365](https://www.office.com) 的應用程式啟動器開啟 **OneDrive**。
+1. 在您的電腦上，使用 [檔案總管] 開啟 OneDrive。 或者，從 [Microsoft 365](https://www.office.com) 的應用程式啟動器開啟 **OneDrive**。
 
 2. 檢視並上傳個人檔案，或選取 [共用]**** 來共用文件或資料夾，然後邀請其他人檢視文件或將連結傳送給他們。 若要深入了解，請參閱[共用 OneDrive 檔案及資料夾](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07.aspx#OS_Type=OneDrive_-_Business)。
 
@@ -223,11 +223,11 @@ Office 365 讓線上檔案儲存變得容易。若要了解最適合貴公司的
   
 ### <a name="get-started-using-office"></a>開始使用 Office
 
-若要瀏覽 Office 365 並了解如何使用所有的 Office 行動應用程式，請參閱[開始使用](../admin-overview/get-started-with-office-365.md) (英文)。
+若要瀏覽 Microsoft 365 並了解如何使用所有的 Office 行動應用程式，請參閱[開始使用](../admin-overview/get-started-with-office-365.md)。
   
 ## <a name="business"></a>商務版
   
-***[Office 365 商務版方案](https://go.microsoft.com/fwlink/p/?LinkId=627219)** 不包含 Office 365 電子郵件或商務用 Skype。在這些設定步驟中，我們會示範如何將現有的電子郵件帳戶 (例如 Gmail) 新增至 Outlook。*
+***[Microsoft 365 Apps 商務版方案](https://go.microsoft.com/fwlink/p/?LinkId=627219)** 不包含 Microsoft 電子郵件或商務用 Skype。在這些設定步驟中，我們會示範如何將現有的電子郵件帳戶 (例如 Gmail) 新增至 Outlook。*
 
 ### <a name="1-add-users"></a>1. 新增使用者
 
@@ -283,15 +283,15 @@ Office 365 讓線上檔案儲存變得容易。若要了解最適合貴公司的
   
 ### <a name="3-set-up-mobile"></a>3. 設定行動裝置
 
-在您的行動裝置上安裝 Office，並設定 Outlook 以使用新的 Office 365 信箱。 您的所有小組成員都需要執行這個步驟。 每位人員最多可以在 5 支手機和 5 部平板電腦上安裝 Office 行動裝置 App。
+在您的行動裝置上安裝 Office，並設定 Outlook 以使用新的 Microsoft 信箱。 您的所有小組成員都需要執行這個步驟。 每位人員最多可以在 5 支手機和 5 部平板電腦上安裝 Office 行動裝置 App。
   
 取得適用您裝置的步驟︰[Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.office.com/article/9bccc8b8-a321-4d0d-a45e-6e06a3438e43.aspx)
   
 ### <a name="4-store-files-online"></a>4. 線上儲存檔案
 
-Office 365 讓線上檔案儲存變得容易。若要了解最適合貴公司的儲存位置，請參閱[您可以在 Office 365 中儲存文件的位置](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx)。
+Microsoft 讓線上檔案儲存變得容易。若要了解最適合貴公司的儲存位置，請參閱[您可以在 Office 365 中儲存檔案的位置](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx)。
   
-在您為每個人建立 Office 365 帳戶時，他們皆會自動獲得 **OneDrive** 雲端儲存位置。 有了 OneDrive，您可以透過電腦、手機和平板電腦來存取檔案。
+在您為每個人建立 Microsoft 帳戶時，他們皆會自動獲得 **OneDrive** 雲端儲存位置。 有了 OneDrive，您可以透過電腦、手機和平板電腦來存取檔案。
   
 1. 在您的電腦上，使用 [檔案總管] 開啟 OneDrive。 或者，從 [Office 365](https://www.office.com) 的應用程式啟動器開啟 **OneDrive**。
 
@@ -301,7 +301,7 @@ Office 365 讓線上檔案儲存變得容易。若要了解最適合貴公司的
   
 ### <a name="get-started-using-office"></a>開始使用 Office
 
-若要瀏覽 Office 365 並了解如何使用所有的 Office 行動應用程式，請參閱[開始使用](../admin-overview/get-started-with-office-365.md) (英文)。
+若要瀏覽 Microsoft 365 並了解如何使用所有的 Office 行動應用程式，請參閱[開始使用](../admin-overview/get-started-with-office-365.md)。
   
 ## <a name="education"></a>教育版
   
@@ -309,7 +309,7 @@ Office 365 讓線上檔案儲存變得容易。若要了解最適合貴公司的
 
 ### <a name="get-ready-for-office-365"></a>準備好使用 Office 365
 
-- **請先確認您符合教育版訂閱的資格**。按照下列步驟[驗證您的 Office 365 網域以證明擁有權、非營利組織版或教育版狀態或啟用 Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590)，這樣 Office 365 才能讓您使用教育版方案。 接著，您可以按照本文的指引為您的學校設定 Office 365。
+- **請先確認您符合教育版訂閱的資格**。按照下列步驟[驗證您的網域以證明擁有權、非營利組織版或教育版狀態或啟用 Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590) (部分機器翻譯)，這樣 Microsoft 才能讓您使用教育版方案。 接著，您可以按照本文的指引為您的學校設定 Office 365。
 
 - **需要取得說明？** 如果您想取得進階部署的說明，建議您首先查看 **[FastTrack](https://www.microsoft.com/en-us/fasttrack/microsoft-365/office-365)**。 您也可以[尋找合作夥伴](https://go.microsoft.com/fwlink/p/?linkid=391089)來協助您。
 
@@ -317,7 +317,7 @@ Office 365 讓線上檔案儲存變得容易。若要了解最適合貴公司的
 
 ### <a name="1-add-your-school-domain-or-connect-your-directory"></a>1. 新增貴校網域或連線您的目錄
 
-在此步驟中，請您登入 Office 365 入口網站，然後將您的學校網域新增至您的訂閱。 這將會與 Microsoft 確認您符合教育版訂閱的資格。
+在此步驟中，請您登入 Microsoft 365 系統管理中心，然後將您的學校網域新增至您的訂閱。 這將會與 Microsoft 確認您符合教育版訂閱的資格。
   
 ::: moniker range="o365-worldwide"
 
@@ -339,7 +339,7 @@ Office 365 讓線上檔案儲存變得容易。若要了解最適合貴公司的
 
 請選取 [移至設定]**** 來啟動精靈。
 
-如需執行精靈時會發生什麼情況的逐步解說，請參閱[使用 Office 365 設定精靈](https://support.office.com/article/3c62a3b7-1680-41ca-943c-0ff01566bace.aspx)。
+如需執行精靈時會發生什麼情況的逐步解說，請參閱[使用設定精靈](https://support.office.com/article/3c62a3b7-1680-41ca-943c-0ff01566bace.aspx) (部分機器翻譯)。
   
 如果您要從內部部署目錄同步處理使用者，或使用單一登入，請不要使用設定精靈來新增使用者****。 請改為閱讀這份指南以了解可用的選項：[將目錄連線至 Office 365](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9)。 下列兩者請擇一設定：
   
@@ -379,6 +379,6 @@ Office 365 讓線上檔案儲存變得容易。若要了解最適合貴公司的
    
 其他國家/地區，請參閱[連絡商務產品的支援服務 - 系統管理說明](../contact-support-for-business-products.md)。
   
-## <a name="see-also"></a>也請參閱
+## <a name="see-also"></a>請參閱
 
-[Microsoft 365 商務版訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[商務用 Microsoft 365 訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

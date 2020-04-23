@@ -1,5 +1,5 @@
 ---
-title: Office 365 密碼原則建議
+title: 密碼原則建議
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 了解如何加強貴組織對密碼攻擊的防護，以及為何應禁用常見密碼並啟用以風險為根據的多重要素驗證。
-ms.openlocfilehash: 74f78b6abcc3e3aa7eb3c18c858afcd8e916d432
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: eff22b5591893ea10f8e04e8e7f470e8a0bf9079
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516920"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627821"
 ---
-# <a name="password-policy-recommendations-for-office-365"></a>Office 365 密碼原則建議
+# <a name="password-policy-recommendations"></a>密碼原則建議
  
-身為 Office 365 組織的系統管理員，您必須為貴組織中的使用者設定密碼原則。 設定密碼原則相當複雜且令人困惑，因此本文提供加強貴組織對密碼攻擊的防護的建議。
+身為組織的系統管理員，您必須為貴組織中的使用者設定密碼原則。 設定密碼原則相當複雜且令人困惑，因此本文提供加強貴組織對密碼攻擊的防護的建議。
   
-若要判斷貴組織中的 Office 365 密碼到期頻率，請參閱[設定 Office 365 的密碼到期原則](../manage/set-password-expiration-policy.md)。
+若要判斷貴組織中的 Microsoft 365 密碼到期頻率，請參閱[設定 Microsoft 365 的密碼到期原則](../manage/set-password-expiration-policy.md)。
   
 ## <a name="understanding-password-recommendations"></a>了解密碼建議
 

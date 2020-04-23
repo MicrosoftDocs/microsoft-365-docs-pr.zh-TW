@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 997596b5-4173-4627-b915-36abac6786dc
 description: 了解如何指派授權給使用者，或將使用者移至新的訂閱。
-ms.openlocfilehash: ab8a54db77ea022cbd3aec7b3c30e8a988ff7853
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2019aeef0d802e92489b09bbddb564c4ecded8c0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362058"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628241"
 ---
 # <a name="assign-licenses-to-users"></a>將授權指派給使用者
 
@@ -49,7 +49,7 @@ ms.locfileid: "42362058"
 3. 選取 **[指派授權]**。
 4. 在 **[指派授權給使用者]** 窗格中，開始輸入名稱，然後從結果中選擇，將它新增到清單中。 一次最多可以新增 20 個使用者。
 5. 選取 **[開啟或關閉應用程式與服務]** 以指派或移除特定項目的存取權。
-6. 完成時，請選取 **[指派]**，然後選取 **[關閉]**。
+6. 完成時，請選取 [指派]****，然後選取 [關閉]****。
 
 如果發生衝突，則會顯示訊息，指出發生什麼問題，以及如何修正。 例如，如果您選取的授權包含發生衝突的服務，則錯誤訊息會指出，請檢查每個授權所包含的服務，然後再試一次。
 
@@ -224,7 +224,7 @@ ms.locfileid: "42362058"
 
 ## <a name="what-you-need-to-know-about-assigning-licenses-to-users"></a>將授權指派給使用者的注意事項
 
-- 您必須是全域系統管理員、帳單管理員、授權系統管理員或使用者管理系統管理員。如需詳細資訊，請參閱[關於 Office 365 系統管理員角色](../add-users/about-admin-roles.md)。
+- 您必須是全域系統管理員、計費系統管理員、授權系統管理員或使用者管理系統管理員。如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](../add-users/about-admin-roles.md)。
 
 - 您可以[使用 Office 365 PowerShell 指派授權給使用者帳戶](https://go.microsoft.com/fwlink/p/?linkid=850410)。
 
@@ -236,7 +236,7 @@ ms.locfileid: "42362058"
 
 [了解訂閱與授權](../../commerce/licenses/subscriptions-and-licenses.md)
 
-[解決商務用 Office 365 中的授權衝突](resolve-license-conflicts.md)
+[解決商務用 Microsoft 365 中的授權衝突](resolve-license-conflicts.md)
 
 [從使用者移除授權](remove-licenses-from-users.md)
 

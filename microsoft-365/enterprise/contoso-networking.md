@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 網路基礎結構，以及如何使用其 SD-WAN 技術，以取得與 Microsoft 365 企業版雲端服務的最佳網路效能。
-ms.openlocfilehash: 20279ac0aed1b7ad86e1fc8e1d78a412230eba52
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4e649796b30b96db3b36de2dabec1f276728d3ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068334"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625275"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation 的網路
 
@@ -50,14 +50,14 @@ ms.locfileid: "42068334"
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>使用 SD-WAN 以取得與 Microsoft 的最佳化網路連線
 
-Contoso 遵循 [Office 365 網路連線原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)，以便：
+Contoso 遵循 [Microsoft 365 網路連線原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) (部分機器翻譯)，以便：
 
-1. 識別並區分 Office 365 網路流量
+1. 識別並區分 Microsoft 365 網路流量
 2. 在當地輸出網路連線
 3. 避免網路 hairpin
 4. 略過重複的網路安全性裝置
 
-Office 365 的網路流量有三種類別：[最佳化]、[允許] 和 [預設]。 [最佳化] 和 [允許] 流量是受信任的網路流量，在端點經過加密並受到保護，目的地是 Microsoft 365 網路。
+Microsoft 365 的網路流量有三種類別：[最佳化]、[允許] 和 [預設]。 [最佳化] 和 [允許] 流量是受信任的網路流量，在端點經過加密並受到保護，目的地是 Microsoft 365 網路。
 
 Contoso 決定：
 
@@ -93,7 +93,7 @@ Contoso 的使用者對於 Microsoft 365 企業版服務採用的成功與否，
 
 2. 建立 Microsoft 365 企業版網路連線的計劃
 
-   Contoso 使用 [Office 365 網路連線原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) 及提供參考網路架構，來決定 SD WAN 作為其 Office 365 連線的偏好拓撲。
+   Contoso 使用 [Microsoft 365 網路連線原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) (部分機器翻譯) 及提供參考網路架構，來決定 SD WAN 作為其 Microsoft 365 連線的偏好拓撲。
 
 3. 在每個辦公室分析網際網路連線使用率和 MPLS WAN 頻寬，並且視需要增加頻寬
 
@@ -105,7 +105,7 @@ Contoso 的使用者對於 Microsoft 365 企業版服務採用的成功與否，
 
 5. 設定內部 DNS
 
-   DNS 必須能夠運作，並且可以在本機針對 Office 365 流量進行查閱。
+   DNS 必須能夠運作，並且可以在本機針對 Microsoft 365 流量進行查閱。
 
 6. 已驗證的網路端點和連接埠連線
 

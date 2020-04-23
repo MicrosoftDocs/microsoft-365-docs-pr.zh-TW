@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft 365 企業版中的資訊保護功能，在雲端中保護其數位資產。
-ms.openlocfilehash: 2fed60d18c878bf6e509c6955b8c8df758cc4caf
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 41873f14ac52000635508aca4728572556692cc4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068406"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625299"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的資訊保護
 
@@ -107,10 +107,10 @@ Contoso 使用下列步驟，針對其資訊保護需求準備 Microsoft 365 企
 
 |||||
 |:-------|:-----|:-----|:-----|
-| | **Office 365** | **Windows 10 和 Office 365 專業增強版** | **EMS** |
+| | **Office 365** | **Windows 10 和 Microsoft 365 Apps 企業版** | **EMS** |
 | 第 1 級：基準  | SharePoint 和 Exchange Online 條件式存取原則 <BR> SharePoint 網站的權限 | 敏感度標籤 <BR> BitLocker <BR> Windows 資訊保護 | 裝置條件式存取原則和行動裝置應用程式管理原則 |
-| 第 2 級：敏感性 | 第 1 級增強版： <BR> <BR> 敏感度標籤 <BR> SharePoint 網站上的 Office 365 保留標籤 <BR> SharePoint 和 Exchange Online 的 Office 365 資料外洩防護 <BR> 隔離的 SharePoint 網站  | 第 1 級增強版： <BR> <BR> 數位資產上的敏感度標籤  | 第 1 級 |
-| 第 3 級：高管制 | 第 2 級增強版： <BR><BR> 針對營業秘密資訊的使用自己的金鑰 (BYOK) 加密和保護 <BR> 適用於與 Office 365 服務互動之企業營運應用程式的 Azure Key Vault | 第 2 級 | 第 1 級 |
+| 第 2 級：敏感性 | 第 1 級增強版： <BR> <BR> 敏感度標籤 <BR> SharePoint 網站上的 Microsoft 365 保留標籤 <BR> SharePoint 和 Exchange Online 的資料外洩防護 <BR> 隔離的 SharePoint 網站  | 第 1 級增強版： <BR> <BR> 數位資產上的敏感度標籤  | 第 1 級 |
+| 第 3 級：高管制 | 第 2 級增強版： <BR><BR> 針對營業秘密資訊的使用自己的金鑰 (BYOK) 加密和保護 <BR> 適用於與 Microsoft 365 服務互動的企業營運應用程式 Azure Key Vault | 第 2 級 | 第 1 級 |
 |||||
 
 以下是 Contoso 的資訊保護設定結果。
