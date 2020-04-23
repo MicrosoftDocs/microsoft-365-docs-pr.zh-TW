@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ca76ca2c117412b2b53bcd5566c32daddbf3212d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: d0fe3092d0ea3004097aba9a86e1916025b87841
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558023"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547563"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-office-365"></a>資料保護影響評估：適用於使用 Office 365 之資料控制者的指引 
 
@@ -57,7 +57,7 @@ GDPR 第 35 條規定，「如果某種處理，特別是使用新技術，並�
 |||
 |:-----|:-----|
 |**風險因素**|**Office 365 的相關資訊**|
-| 處理的目的 | 使用 Office 365 進行處理的目的取決於實作、設定及使用 Office 365 的控制者。 <br><br> 根據[線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)的規定，Microsoft 作為資料處理者，可根據客戶提供的指示處理客戶資料，為客戶提供線上服務。 <br><br> Microsoft 也會使用個人資料來支援限定的商務作業，包括：(1) 帳單和帳戶管理；(2) 薪酬 (例如，計算員工傭金和合作夥伴獎勵)；(3) 內部報告與建模 (例如，預測、收入、容量規劃、產品策略)；(4) 防範可能對 Microsoft 或 Microsoft 產品產生影響的欺詐、網路犯罪或網路攻擊；(5) 改善協助工具、隱私權或能效的核心功能；以及 (6) 財務報告和法律義務遵循 (遵守線上服務條款所述之客戶資料披露的相關限制)。 <br><br> Microsoft 可控制個人資料的處理方式，以支援前述特定的合法商務作業。 一般情況下，Microsoft 會先彙總個人資料，再將其用於我們合法的商務作業，而去除 Microsoft 識別特定人員的能力，此外，在使用個人資料支援合法商務作業所需的處理時，會採用最低限度識別性的形式。 <br><br> Microsoft 不會將客戶資料或其衍生的資料用於分析、廣告或類似的商業用途。 |
+| 處理的目的 | 使用 Office 365 進行處理的目的取決於實作、設定及使用 Office 365 的控制者。 <br><br> 根據[線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)和[資料保護附錄](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67)的規定，Microsoft 作為資料處理者，可根據客戶提供的指示處理客戶資料，為客戶提供線上服務。 <br><br> 如標準[線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)和[資料保護增訂版](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67)所詳列，Microsoft 也會使用個人資料來支援限定的合法商務作業，包括：(1) 帳單和帳戶管理；(2) 薪酬 (例如，計算員工傭金和合作夥伴獎勵)；(3) 內部報告與建模 (例如，預測、收入、產能規劃、產品策略)；(4) 防範可能對 Microsoft 或 Microsoft 產品產生影響的欺詐、網路犯罪或網路攻擊；(5) 改善協助工具、隱私權或能源效率的核心功能；以及 (6) 財務報告和法律義務遵循 (遵守線上服務條款所述之客戶資料披露的相關限制)。 <br><br> Microsoft 可控制個人資料的處理方式，以支援前述特定的合法商務作業。 一般情況下，Microsoft 會先彙總個人資料，再將其用於我們合法的商務作業，而去除 Microsoft 識別特定人員的能力，此外，在使用個人資料支援合法商務作業所需的處理時，會採用最低限度識別性的形式。 <br><br> Microsoft 不會將客戶資料或其衍生的資料用於分析、廣告或類似的商業用途。 |
 | 處理的個人資料類別 | **客戶資料：** 這是所有資料，包括文字、音訊、視訊或影像檔和軟體，由客戶提供給 Microsoft 或是透過使用 Microsoft 線上服務代表客戶提供。 包括客戶上傳用於存儲或處理以及自訂的資料。 在 Office 365 中處理客戶資料的範例，包括 Exchange Online 中的電子郵件內容，和 SharePoint Online 或商務用 OneDrive 中儲存的文件或檔案。 <br><br> **服務產生的資料：** 這是 Microsoft 透過服務的運作而產生或衍生的資料，例如使用或效能資料。 這些資料大部分都包含由 Microsoft 產生的 pseudonymous 識別碼。 <br><br> **診斷資料：** Microsoft 會從連線至線上服務的客戶在本機安裝的軟體收集或取得這項資料，我們也可稱之為遙測。 這個資料通常可由本機安裝的軟體或執行該軟體的電腦所具備的屬性來識別。 <br><br> **支援資料：** 這是為了獲得線上服務的技術支援，由客戶或代表客戶 (或客戶授權 Microsoft 從線上服務取得) 透過與 Microsoft 的合作向 Microsoft 提供的資料。 <br><br> 客戶資料、系統所產生的記錄資料和支援資料不包含系統管理員和帳單資料，例如客戶系統管理員連絡資訊、訂閱資訊和付款資料，Microsoft 會利用其資料控制者身分 (本文件範疇外) 所具備的功能收集和處理這些資料。 |
 | 資料保留 | **客戶資料：** 如同在線上服務條款的資料保護條款中所羅列，Microsoft 將會在客戶有權使用服務的一段時間保留客戶資料，直到所有客戶資料依據客戶指示或線上服務條款進行刪除或傳回。 <br><br> 在客戶訂閱的期間，客戶得以存取、擷取及刪除服務中儲存的客戶資料，在某些情況下，特定產品功能旨在降低不經意刪除的風險 (例如，Exchange 復原項目資料夾)，在產品文件中有進一步的說明。 <br><br> 除了免費試用版和 LinkedIn 服務，Microsoft 將在客戶訂閱到期或終止訂閱後的 90 天內，將儲存在線上服務中的客戶資料保留在功能有限的帳戶中，以便客戶可以存取資料。 90 天的保留期間結束後，Microsoft 將停用客戶的帳戶並刪除客戶資料。 <br><br> **服務產生的資料：** 此資料會保留從收集起算最多 180 天的預設期間，受限於針對服務安全性或符合法律或法規義務而需要較長的保留期間。 <br><br> 如需可讓客戶隨時刪除在服務中維護之個人資料的服務功能進一步資訊，請參閱 [Office 365 的資料主體要求指南](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests?toc=/microsoft-365/enterprise/toc.json)。|
 | 個人資料的位置和傳輸 | 如同線上服務條款的附件 1 所述，如果客戶在澳洲、加拿大、歐盟、法國、印度、日本、南韓、英國或美國佈建其 Office 365 執行個體，Microsoft 只會在該位置內儲存下列客戶資料：(1) Exchange Online 信箱內容 (電子郵件本文、行事曆項目及電子郵件附件的內容)，(2) SharePoint Online 網站內容和儲存在該網站內的檔案，(3) 上傳至商務用 OneDrive 的檔案，以及 (4) 上傳至 Project Online 的專案內容。 <br><br> 針對來自歐洲經濟區和瑞士的其他類型個人資料，Microsoft 會確保個人資料傳輸給第三國或國際組織時受到 GDPR 第 46 條所述適當保護措施的保護。Microsoft 除了遵守處理者的「標準合約條款」以及其他定型化契約的承諾外，還通過了「歐盟-美國」和「瑞士-美國」隱私盾框架及其限定承諾的認證。 |

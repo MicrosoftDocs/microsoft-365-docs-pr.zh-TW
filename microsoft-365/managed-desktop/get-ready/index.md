@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Micr
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0bfd6e61a08d8db2e6226a004006be9750b94a10
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 61bf3b54b5499321288793acea9552b48d7bd492
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "37595589"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790608"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>準備註冊 Microsoft 受管理的電腦
 
@@ -21,5 +21,6 @@ ms.locfileid: "37595589"
 - [為 Microsoft 受管理的電腦準備備內部部署資源存取權](network.md)
 - [為 Microsoft 受管理的電腦準備對應磁碟機](mapped-drives.md)
 - [為 Microsoft 受管理的電腦準備認證和網路設定檔](certs-wifi-lan.md)
+- [準備列印 Microsoft 受管理桌面的資源](printing.md)
 - [Microsoft 受管理電腦中的應用程式](apps.md)
 
