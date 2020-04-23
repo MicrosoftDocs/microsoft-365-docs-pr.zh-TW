@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有關新郵件保護功能的運作方式有疑問嗎？ 在這裡檢查答案。
-ms.openlocfilehash: 87235d637d4c25f7e63b3b7125ea95c175c8ec3b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 93b57e2b973fadd8b4ac2388e42f460114228c3c
+ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626881"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43781458"
 ---
 # <a name="message-encryption-faq"></a>郵件加密常見問題
 
@@ -109,15 +109,18 @@ Microsoft 365 使用者可以從 Outlook for Windows 和 Mac （2013和2016）�
   
 ## <a name="are-pdf-file-attachments-supported"></a>是否支援 PDF 檔案附件？
 
-是的！ 您可以為組織啟用 PDF 附件的加密。 若要啟用 PDF 附件的加密，請在[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)中執行下列命令：
+這個簡短的答案是肯定！ PDF 加密可讓您透過安全通訊或安全共同作業來保護機密 PDF 檔。 當您傳送電子郵件時，Office 365 服務會加密 PDF 檔案附件而非 Outlook 用戶端。 
+
+一旦您啟用 PDF 檔案附件加密，您就可以在網頁上的 Outlook、Outlook for iOS 和適用于 Android 的 Outlook 中，對您傳送的 Pdf 進行加密，而不需要任何其他步驟。
+
+Outlook 桌面不會以本機方式支援 PDF 檔案附件的加密。 若要解決此問題，您仍然可以在您的組織中啟用 PDF 檔附件加密。 當您使用 PDF 附件從 Outlook Desktop 傳送郵件時，用戶端會先將郵件與附件一起傳送給服務。 當服務接收到檔案時，服務會對 Exchange Online 中的資料遺失防護（DLP）原則或郵件流程規則套用 OME 保護。 接下來，Exchange Online 會傳送包含受保護的 PDF 檔附件的郵件。
+
+若要啟用 PDF 附件的加密，請在[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)中執行下列命令：
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
-PDF 加密可讓您透過安全通訊或安全共同作業來保護機密 PDF 檔。 針對所有 Outlook 用戶端，郵件和未受保護的 PDF 附件會繼承 Exchange Online 中的資料遺失防護（DLP）原則或郵件流程規則的 OME 保護。 此外，如果 web 使用者上的 Outlook 附加了未保護的 PDF 檔，並對郵件套用保護，郵件便會繼承郵件的保護。 使用者只能在支援受保護的 Pdf 的應用程式中開啟加密的附件（例如，OME 入口網站和 Azure 資訊保護檢視器）。
-
-  
 ## <a name="are-onedrive-for-business-attachments-supported"></a>是否 OneDrive 支援商務附件？
 
 Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務附件雲端 OneDrive 的郵件。

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員是 Microsoft 服務信任入口網站中免費的工作流程型風險評估工具。 合規性管理員可讓您追蹤、指派及驗證與 Microsoft 雲端服務相關的法規遵從性活動。
-ms.openlocfilehash: 3e710f83bebd94719ef66cde7844f1301611adf4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 73fa3ac2ca15d922a74e1d3ceef6cc74a3bdedca
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637533"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790566"
 ---
 # <a name="microsoft-compliance-manager-preview-release-notes"></a>Microsoft 合規性管理員（預覽）發行附注
 
@@ -62,6 +62,10 @@ ms.locfileid: "43637533"
 ## <a name="known-issues-in-compliance-manager-preview"></a>合規性管理員中的已知問題（預覽）
 
 下列章節涵蓋合規性管理員目前版本中的已知問題。
+
+### <a name="dimension-values"></a>維度值
+
+在2020年4月的資料移轉過程中，有些組織可能會在其評估與範本中看到**產品****或憑證**值「custom」。 如果 [**產品**] 或 [**證書**] 欄位是空白的，則此值會自動插入，而且不會影響資料工作流程。
 
 ### <a name="compliance-score"></a>合規性分數
 

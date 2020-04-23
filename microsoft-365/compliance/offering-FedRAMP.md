@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d5a6ee0b5ca5c9ba1fbf83f1076940a10134a9f6
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: 0ddb997246f2b7a23b25e1b611170c6163e1d670
+ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583590"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43781473"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>聯邦風險與授權管理計畫 (FedRAMP)
 
@@ -27,50 +27,48 @@ ms.locfileid: "43583590"
 
 美國聯邦風險和授權管理計畫（FedRAMP）是為了提供標準化的方法，以在聯邦資訊安全性管理法案（FISMA）下評估、監控和授權雲端計算產品和服務，並加速聯邦代理商採用安全的雲端解決方案。
 
-「管理」和「預算」的 Office 現在需要所有的執行聯邦代理商使用 FedRAMP 來驗證雲端服務的安全性。 （其他代理商也採用它，所以也適用于公用部門的其他區域。）國家標準和技術協會（NIST）800-53 會設定標準，而 FedRAMP 是證明雲端服務提供者（CSP）符合該標準的程式。
+「管理」和「預算」的 Office 現在需要所有的執行聯邦代理商使用 FedRAMP 來驗證雲端服務的安全性。 （其他代理商也採用它，所以也適用于公用部門的其他區域。）國家標準和技術協會（NIST） SP 800-53 會設定必要的標準、建立資訊系統的安全性類別（機密性、完整性和可用性），以評估組織的潛在影響是否應該危及其資訊和資訊系統。 FedRAMP 是證明雲端服務提供者（CSP）符合這些標準的程式。
 
-向聯邦代理商銷售服務的 Csp desiring 可以採取三個路徑來示範 FedRAMP 合規性：從共同授權委員會（JAB）獲得臨時授權，以進行操作（P-ATO）;接收從聯邦代理商運作的授權（ATO）。或獨立運作，以開發符合程式需求的 CSP 提供套件。 這兩種路徑都需要由「FedRAMP 計畫管理 Office （PMO）」和由程式所獲得的獨立協力廠商組織進行評估的嚴格技術審查。
+向聯邦代理商銷售服務的 Csp desiring 可採用三個路徑，以示範 FedRAMP 合規性：
 
-根據 NIST 指導方針，以三個影響層級授與 FedRAMP 授權：低、中和高。 這些排名可影響組織的機密性、完整性或可用性喪失的影響：低（有限的影響）、中度（嚴重的不利影響）和高（嚴重或嚴重的影響）。
+- 從共同授權委員會（JAB）取得臨時授權，以進行操作（P-ATO）。 JAB 是主要的控管和決策 FedRAMP。 來自國防部門的代表、Homeland 的安全性，以及一般的服務管理服務于董事會。 此局會授與 FedRAMP 規範的 Csp P-ATO。
+- 接收從聯邦代理商運作的授權（ATO）。
+- 或者，您可以個別合作，以開發符合程式需求的 CSP 提供套件。
+
+這兩種路徑都需要由「FedRAMP 計畫管理 Office （PMO）」和由程式所獲得的獨立協力廠商組織進行評估的嚴格技術審查。
+
+根據 NIST 指導方針，以三個影響層級授與 FedRAMP 授權：低、中和高。 這些層級會限制對組織的機密性、完整性或可用性喪失的影響：低（有限的影響）、中度（嚴重的不利影響）和高（嚴重或嚴重的影響）。
 
 ## <a name="microsoft-and-fedramp"></a>Microsoft 和 FedRAMP
 
-Microsoft 的政府雲端服務（包括 Azure 政府、Office 365 美國政府及 Dynamics 365 政府）符合美國聯邦風險和授權管理計畫（FedRAMP）的苛刻需求，讓美國聯邦代理商能夠從 Microsoft 雲端的成本節約和嚴格安全性中受益。
+Microsoft 的政府雲端服務（包括 Azure 政府、Dynamics 365 政府和 Office 365 美國政府）符合美國聯邦風險和授權管理計畫（FedRAMP）的苛刻需求，讓美國聯邦代理商能夠從 Microsoft 雲端的成本節約和嚴格安全性中受益。
 
-Microsoft 政府雲端服務提供公用部門的客戶可搭配 FedRAMP 和強健的指導方針與實施工具（包括 Azure 安全性與合規性 FedRAMP 藍圖），以協助在 FedRAMP 環境中自動化 Azure 資源的部署和設定。
-
-深入瞭解 Microsoft Cloud 上的 FEDRAMP 好處：[下載 FedRAMP 合規性 backgrounder](https://aka.ms/fedramp-backgrounder)
-
-瞭解如何使用 Azure 安全性和合規性藍圖加速您的 FEDRAMP 部署：[下載 azure-藍圖 FedRAMP 高 SSP](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=64de30d4-42c6-47e7-bd52-0be935710df9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_FedRAMP%20Blueprint)
+Microsoft 政府雲端服務提供 public tool 客戶與 FedRAMP 及強大的指導方針和執行工具（包括[FedRAMP 高藍圖](https://aka.ms/fedrampblueprint)）相容，可協助客戶針對必須執行 FedRAMP 高控制措施的任何 Azure 部署架構，部署一組核心原則。
 
 ## <a name="microsoft-azure-p-atos"></a>Microsoft Azure P-ATOs
 
-Azure 和 Azure 政府已從共同授權委員會取得 P-ATO
+Azure 和 Azure 政府已從聯合授權板取得「高影響」層級的 P-ATO，其最大的 FedRAMP 資格鑒定，可授權 Azure 和 Azure 政府使用以處理高度機密的資料。
 
-JAB 是主要的控管和決策 FedRAMP。 來自國防部門的代表、Homeland 的安全性，以及一般的服務管理服務于董事會。 此局會授與 FedRAMP 規範的 Csp P-ATO。
+Azure 和 Azure 政府的 FedRAMP audit 包含的資訊安全性管理系統，涵蓋範圍內服務的基礎結構、開發、作業、管理及支援。 授與 P-ATO 後，CSP 仍然需要來自其使用之任何政府代理商的授權（ATO）。 針對 Azure，政府代理商可以使用其自己的安全性授權程式中的 Azure P-ATO，並依據它，作為發行同時符合 FedRAMP 需求的代理商 ATO 的基礎。
 
-Azure 會以中等影響等級維護 P-ATO。 （Azure 是第一個公用雲端，其基礎結構和平臺服務可接收 P-ATO。）JAB 也為「高影響層級」（即「FedRAMP 資格鑒定」的最高的資料行，授權使用 Azure 政府處理高度機密的資料）授與 P-ATO。 強制性的 NIST 800-53 標準會建立資訊系統的安全性類別（機密性、完整性和可用性），以評估組織的潛在影響是否應該危及其資訊和資訊系統。 Azure 和 Azure 政府的 FedRAMP audit 包含的資訊安全性管理系統，涵蓋範圍內服務的基礎結構、開發、作業、管理及支援。
+Azure 在 FedRAMP 高影響層級繼續支援較多的服務，而不是任何其他雲端提供者。 而且，Azure 公有雲端中 FedRAMP 高，可滿足許多美國政府客戶的需求，具有較嚴格需求的代理商會繼續依賴 Azure 政府，其可提供額外的保護措施，例如對人員的進一步篩選。 Microsoft 會列出目前在 Azure 政府中可用的所有[azure 公用服務](https://docs.microsoft.com/azure/azure-government/compliance/azure-services-in-fedramp-auditscope#azure-public-services-by-audit-scope)至 FedRAMP 高界限，以及為當年計畫的服務。
 
-授與 P-ATO 後，CSP 仍需從其所使用之任何政府機關的授權（ATO）。 在 Azure 的情況下，政府代理商可以使用其自己的安全性授權程式中的 Azure P-ATO，並依據它，作為發行同時符合 FedRAMP 需求的代理商 ATO 的基礎。
+## <a name="microsoft-dynamics-365-us-government-ato"></a>Microsoft Dynamics 365 美國政府 ATO
 
-## <a name="dynamics-365-us-government-ato"></a>Dynamics 365 美國政府 ATO
+Dynamics 365 美國政府已授與 ATO 機關和市內開發（HUD）的高影響層級的 FedRAMP 機關。 雖然憑證的範圍限制為政府系 Cloud，但 Dynamics 365 美國政府商務和企業方案卻是在相同組嚴格的 FedRAMP 控制項之後運作。
 
-- Dynamics 365 美國政府已從 HUD 接收 ATO
-- Dynamics 365 美國政府已透過機架和市內開發（HUD）系的高影響層級授與 FedRAMP 機關 ATO。 （請注意，雖然認證的範圍限制為政府系 Cloud，但 Dynamics 365 美國政府商務和企業計畫則會在相同的嚴格 FedRAMP 控制群組的情況下運作。）
+## <a name="microsoft-office-365-and-office-365-us-government-atos"></a>Microsoft Office 365 和 Office 365 美國政府 ATOs
 
-## <a name="office-365-atos"></a>Office 365 ATOs
-
-- Office 365，Office 365 美國政府已從 DHHS ATO。
-- Office 365 美國政府國防版有 P-ATO 來自國防資訊系統 Agency （DISA）。
-- Office 365 （Enterprise and Business 方案）和 Office 365 美國政府在 Inspector 的「健康情況」和「人力資源」（DHHS）」辦公室中，都有 FedRAMP Agency 的影響層級的 ATO。 Office 365 美國政府是第一個以雲端為基礎的電子郵件和共同作業服務，可取得這種授權。
-- 任何要使用 O365 美國政府國防版的客戶都可以利用 DISA P-ATO 產生 Agency ATO，以記錄其對 O365 的認可。
+- Office 365 和 Office 365 美國政府從美國衛生和人力服務（DHHS） ATO。
+- Office 365 美國政府國防版已 P-ATO 美國國防資訊系統 Agency （DISA）。 任何想要部署 Office 365 美國政府國防版的客戶，都可能會使用 DISA P-ATO 產生代理商 ATO，以記錄其接受。
+- Office 365 （enterprise and business 方案）和 Office 365 美國政府在 Inspector 的 DHHS Office 中，有 FedRAMP Agency ATO，其為中等影響層級。 Office 365 美國政府是第一個以雲端為基礎的電子郵件和共同作業服務，可取得這種授權。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure 和 Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2095323)
 - [美國政府的 Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- [Office 365 和 Office 365 美國政府](https://aka.ms/o365-compliance-framework)
+- [Office 365 和 Office 365 美國 Governmen](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 美國政府國防版
 - Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
 - Microsoft Defender ATP
@@ -80,16 +78,18 @@ Azure 會以中等影響等級維護 P-ATO。 （Azure 是第一個公用雲端�
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
-Microsoft 每年都需要 recertify 其雲端服務，以維護其 P-ATO 和 ATOs。 若要這麼做，Microsoft 必須不斷監控和評估其安全性控制，並示範服務的安全性仍保持合規性。
+Microsoft 必須每年重新認證其雲端服務，以維護其 P-ATO 和 ATO。 若要這麼做，Microsoft 必須不斷監控和評估其安全性控制，並示範服務的安全性仍保持合規性。
 
-- [Microsoft 雲端服務授權](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
-- [Microsoft FedRAMP 稽核報告](https://aka.ms/MicrosoftFedRAMPAuditDocuments)
+- [Microsoft cloud services FedRAMP 授權</span>](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
+- [Microsoft FedRAMP 稽核報告</span>](https://aka.ms/MicrosoftFedRAMPAuditDocuments)  
 
-## <a name="ramp-up-your-fedramp-solutions-on-azure-government"></a>提升 Azure 政府的 FedRAMP 解決方案
+若要接收其他的 FedRAMP 報告，請傳送電子郵件至[Azure 聯邦檔](mailto:AzFedDoc@microsoft.com)。
 
-讓 Microsoft 引導您完成 ATO 處理常式，並使用 Azure 安全性和合規性 FedRAMP 藍圖快速部署您的 FedRAMP 解決方案。 我們的藍圖可讓您開始使用參考架構、部署指南、控制執行對應、ATO 工廠支援等等。
+## <a name="quickly-deploy-your-fedramp-solutions-on-azure-government"></a>在 Azure 政府上快速部署您的 FedRAMP 解決方案
 
-[開始使用 Azure FedRAMP 藍圖](https://aka.ms/fedrampblueprint)
+讓 Microsoft 引導您完成 ATO 處理常式，並使用 FedRAMP 的高藍圖快速部署您的 FedRAMP 解決方案，這可協助客戶針對必須實施 FedRAMP 高控制措施的任何 Azure 部署架構，實施一組核心原則。
+
+[開始使用 Azure FedRAMP 高藍圖](https://aka.ms/fedrampblueprint)
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
@@ -103,7 +103,7 @@ FISMA 是一種聯邦法律，只需要我們的聯邦代理商和其合作夥�
 
 **我的代理人會從何處開始執行其專屬的合規性工作？**
 
-如需聯邦代理商成功流覽 FedRAMP 並符合其需求的步驟，請移至[www.fedramp.gov/participate/agencies](https://www.fedramp.gov/agency-authorization/)。
+如需聯邦代理商順利流覽 FedRAMP 並符合其需求的相關步驟，請移至「[取得授權」：「代理程式授權](https://www.fedramp.gov/agency-authorization/)」。
 
 **我是否可以在代理人的授權過程中使用 Microsoft 規範？**
 
@@ -116,7 +116,7 @@ FISMA 是一種聯邦法律，只需要我們的聯邦代理商和其合作夥�
 ## <a name="resources"></a>資源
 
 - [聯邦風險和授權管理計畫](https://www.fedramp.gov/)
-- [Microsoft 通用控制措施中樞合規性架構](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [FedRAMP 安全性評估架構](https://www.fedramp.gov/assets/resources/documents/FedRAMP_Security_Assessment_Framework.pdf)
+- [在 Microsoft 中管理雲端的合規性](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft 政府雲端](https://go.microsoft.com/fwlink/p/?linkid=2087246)
-- [FedRAMP 安全性評估架構](https://go.microsoft.com/fwlink/p/?linkid=2099507)
-- [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Azure 規範服務](https://aka.ms/azurecompliance)

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員是免費的工作流程型風險評估工具。 使用它來追蹤、指派及驗證 Microsoft 產品相關的規章遵循活動。
-ms.openlocfilehash: 2a2c0b9311062da1269f7b56c926ced9e038627f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2e67114c4b59fbb676c45995c08b9e4faa05e55b
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626229"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790660"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>使用 Microsoft 合規性管理員（預覽）
 
@@ -35,7 +35,7 @@ ms.locfileid: "43626229"
 2. 使用您的 Microsoft 服務帳戶登入，這是您的 Office 365、Microsoft 365 或 Azure Active Directory （Azure AD）使用者帳戶。
 
 > [!NOTE]
-> 在服務信任入口網站中，選取 [**合規性管理員**]，這是具有最新功能的預覽版本。 請勿選取 **[合規性管理員（經典）] （** 包含本檔未涵蓋的舊版功能）。
+> 在服務信任入口網站中，選取 [**合規性管理員**]，這是具有最新功能的預覽版本。 請勿選取 **[合規性管理員（經典）**]，其中包含本檔尚未涵蓋的早期版本功能。
 
 ## <a name="administration"></a>系統管理
 

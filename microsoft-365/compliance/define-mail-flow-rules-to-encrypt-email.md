@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何建立郵件流程規則（傳輸規則），以使用 Office 365 郵件加密來加密及解密郵件。
-ms.openlocfilehash: 063c3cf5d33e03e7e0c456a6937fee57451ea709
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f9e9440c40b68f36d0dcca069dcd0797412af184
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632978"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790702"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>定義郵件流程規則以加密電子郵件
 
@@ -93,6 +93,28 @@ ms.locfileid: "43632978"
 7. 從 [**執行下列**動作] 清單中，移除指派給**修改郵件安全性** \>的任何動作套用**先前版本的 OME**。
 
 8. 選擇 [儲存]****。
+
+## <a name="create-mail-flow-rules-to-remove-encryption-for-outgoing-email-messages-with-the-new-ome-capabilities"></a>建立郵件流程規則，以使用新的 OME 功能移除外寄電子郵件的加密
+
+您可以使用 EAC 來定義郵件流程規則，以使用新的 OME 功能來觸發移除郵件加密。
+
+### <a name="use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-the-new-ome-capabilities"></a>使用 EAC 來建立規則，以使用新的 OME 功能來移除電子郵件中的加密
+
+1. 在網頁瀏覽器中，使用已被授與全域系統管理員許可權的公司或學校帳戶登[入 Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)。
+
+2. 選擇 [**管理**] 磚。
+
+3. 在 Microsoft 365 系統管理中心中，選擇 [系統**管理中心** \> ] [ **Exchange**]。
+
+4. 在 EAC 中，移至 [**郵件流程** \> **規則**]，然後選取](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> [**新增** ![新圖示] 以**建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+
+5. 在 [**名稱**] 中，輸入規則的名稱，例如 [從外寄郵件移除加密]。
+
+6. 在 [套用**此規則] 如果**選取應該從郵件中移除加密的情況，請新增**寄件者位於** \> **組織內**。 現在，新增其他條件以設定特定的收件者，例如**收件者位於** \> **組織外**。
+
+7. 在**執行下列**動作中，選取 **[修改郵件安全性** \> **移除 Office 365 訊息加密和許可權保護**]。
+
+8. 選取 **[儲存]**。
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>建立沒有新功能的 Office 365 郵件加密的郵件流程規則
 
