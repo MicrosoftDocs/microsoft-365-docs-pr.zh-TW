@@ -16,12 +16,12 @@ ms.collection:
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: 了解 Microsoft 365 系統管理員可使用的資源。
 ms.custom: okr_smb
-ms.openlocfilehash: b087007d99c16f06cfdacaf8021e32a9566da5d5
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 02d1afa763eda2edd7a0fba5624ab5a168b80a14
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105690"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623997"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Microsoft 365 系統管理說明中心
 
@@ -182,7 +182,7 @@ ms.locfileid: "43105690"
                     </div>
                     <div class="cardText">
                         <h3>小型企業適用</h3>
-                        <p><a href="/office365/smallbusiness/build-your-small-business/build-your-small-business" target="_blank">利用 Office 365 建立您的小型企業。</a></p>
+                        <p><a href="/office365/smallbusiness/build-your-small-business/build-your-small-business" target="_blank">利用 Microsoft 365 建立您的小型企業。</a></p>
                     </div>
                 </div>
             </div>
@@ -199,7 +199,7 @@ ms.locfileid: "43105690"
                     </div>
                     <div class="cardText">
                         <h3>企業適用</h3>
-                        <p><a href="https://docs.microsoft.com/Office365/Enterprise/">引導 IT 專業人員在企業組織中部署、設定及管理 Office 365。</a></p>
+                        <p><a href="https://docs.microsoft.com/Office365/Enterprise/">引導 IT 專業人員在企業組織中部署、設定及管理 Microsoft 365。</a></p>
                     </div>
                 </div>
             </div>
@@ -249,7 +249,7 @@ ms.locfileid: "43105690"
                     <div class="cardText">
                         <h3>疑難排解</h3>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=522692">修正 Office 安裝問題</a></p>
-                        <p><a href="https://diagnostics.outlook.com/">使用 Microsoft 支援及修復小幫手修正 Outlook 與 Office 365 問題</a></p>
+                        <p><a href="https://diagnostics.outlook.com/">使用 Microsoft 支援及修復小幫手修正 Outlook 與 Microsoft 365 問題</a></p>
                         <p><a href="https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues">修正電子郵件問題</a></p>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=866431">修正商務用 OneDrive 的同步處理問題</a></p>
                     </div>

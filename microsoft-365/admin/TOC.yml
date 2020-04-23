@@ -87,7 +87,7 @@
       items:
         - name: Office 365 中的電子郵件
           href: email/email.md
-        - name: Office 365 使用者電子郵件設定
+        - name: 使用者電子郵件設定
           href: email/office-365-user-email-settings.md
         - name: 為使用者新增另一個電子郵件別名
           href: email/add-another-email-alias-for-a-user.md
@@ -189,6 +189,8 @@
           href: manage/remove-licenses-from-users.md
         - name: 解決授權衝突
           href: manage/resolve-license-conflicts.md
+        - name: 管理訊息中心中的訊息
+          href: manage/manage-messages.md
         - name: '使用 [新功能管理] 顯示或隱藏新功能'
           href: manage/show-hide-new-features.md
     - name: 訂閱與計費
@@ -235,11 +237,11 @@
           href: create-groups/office-365-groups.md
         - name: 比較群組
           href: create-groups/compare-groups.md
-        - name: 建立 Office 365 群組
+        - name: 建立 Microsoft 365 群組
           href: create-groups/create-groups.md
-        - name: 管理 Office 365 群組
+        - name: 管理 Microsoft 365 群組
           href: create-groups/manage-groups.md
-        - name: Office 365 群組中的控管規劃
+        - name: Microsoft 365 群組中的控管規劃
           href: create-groups/plan-for-groups-governance.md
         - name: 管理群組的建立
           href: create-groups/manage-creation-of-groups.md
@@ -251,7 +253,7 @@
           href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
         - name: 從群組新增或移除成員
           href: create-groups/add-or-remove-members-from-groups.md
-        - name: Office 365 群組到期原則
+        - name: Microsoft 365 群組到期原則
           href: create-groups/office-365-groups-expiration-policy.md
         - name: 還原已刪除的群組
           href: create-groups/restore-deleted-group.md

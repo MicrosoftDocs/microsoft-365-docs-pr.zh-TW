@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: 4c66e2c398adfc67ec28661ed654ca891a846534
-  ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+  ms.openlocfilehash: 0b5b128a0d4ea756a6cc6f926d1496de16520377
+  ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/19/2020
-  ms.locfileid: "42857318"
+  ms.lasthandoff: 04/21/2020
+  ms.locfileid: "43636648"
 highlightedContent:
   items:
   - title: 適用於系統管理員和 IT 專業人員的訓練
@@ -45,9 +45,9 @@ additionalContent:
     summary: 選取卡片以深入了解 Microsoft 365。
     items:
     - title: Microsoft 365 系統管理中心
-      summary: 為您的組織設定及管理 Office 365 和 Microsoft 365 服務。
+      summary: 為您的組織設定及管理 Microsoft 365 服務。
       url: ./admin/admin-home.md
-    - title: Microsoft 365 商務版
+    - title: Microsoft 365 商務進階版
       summary: 專為中小型企業設計。 使用最新版本的 Windows 和 Office App (例如 Excel 和 Outlook) 處理業務。 利用可延伸至所有商務裝置的資料保護和安全性。
       url: ./business/index.yml
     - title: Microsoft 365 企業版
@@ -63,7 +63,7 @@ additionalContent:
       summary: 了解 Microsoft 365 安全性中強大的安全性解決方案與服務，讓您能夠更進一步全方面保護組織免受攻擊。
       url: ./security/index.yml
     - title: 適用於行銷活動的 Microsoft 365
-      summary: 使用 Microsoft 365 商務版推薦的設定，保持行銷活動或商務資料和通訊的安全。
+      summary: 使用針對商務用 Microsoft 365 建議的組態，保持行銷活動或商務資料和通訊的安全。
       url: ./campaigns/index.md
     - title: Microsoft 受管理的電腦
       summary: Microsoft 受管理的電腦將 Microsoft 365企業版、Microsoft 雲端式裝置管理和安全監控結合在一起，使您的 IT 團隊有時間得以專注於核心業務需求。

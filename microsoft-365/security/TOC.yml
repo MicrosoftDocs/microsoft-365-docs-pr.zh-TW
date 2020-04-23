@@ -191,20 +191,18 @@
               href: mtp/feedback.md
             - name: 透過 ServiceNow 管理票證
               href: ./mtp/tickets.md
-    - name: Office 365 安全性
+    - name: Microsoft 365 安全性
       items:
-        - name: 入門
+        - name: 開始使用
           items:
-            - name: Office 365 安全性藍圖
+            - name: 安全性藍圖
               href: ./office-365-security/security-roadmap.md
-            - name: 設定 Office 365 租用戶以提高安全性
+            - name: 設定租用戶以提高安全性
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
             - name: 新的 Microsoft 365 安全性中心
               href: ./mtp/overview-security-center.md
-            - name: Office 365 安全性與合規性中心中的權限
+            - name: 安全性與合規性中心中的權限
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
-            - name: Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的權限
-              href: ./office-365-security/permissions-microsoft-365-compliance-security.md
             - name: 讓使用者能夠存取安全性中心
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
         - name: 防範威脅
@@ -281,7 +279,7 @@
                   href: ./office-365-security/zero-hour-auto-purge.md
                 - name: 電子郵件訊息的安全提示
                   href: ./office-365-security/safety-tips-in-office-365.md
-                - name: 使用取消列出入口網站，將您自己從 Office 365 封鎖寄件者清單中移除
+                - name: 使用取消列出入口網站，將您自己從封鎖寄件者清單中移除
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
             - name: 防網路釣魚保護
               href: ./office-365-security/anti-phishing-protection.md
@@ -320,9 +318,9 @@
             - name: 電子郵件驗證
               href: ./office-365-security/email-validation-and-authentication.md
               items:
-                - name: Office 365 如何使用 SPF 來防範詐騙
+                - name: Microsoft 365 如何使用 SPF 來防範詐騙
                   href: ./office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md
-                - name: 在 Office 365 中設定 SPF 以協助防止詐騙
+                - name: 設定 SPF 以協助防止詐騙
                   href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
                 - name: 使用 DKIM 來驗證外寄電子郵件
                   href: ./office-365-security/use-dkim-to-validate-outbound-email.md
@@ -600,7 +598,7 @@
                   href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
         - name: Office 365 企業版
           href: 'https://docs.microsoft.com/office-365-security/Enterprise'
-        - name: 商務用 Office 365
+        - name: 商務用 Microsoft 365
           href: 'https://docs.microsoft.com/microsoft-365/admin/admin-home'
     - name: Microsoft 365 合規性
       href: 'https://docs.microsoft.com/microsoft-365/compliance/'
