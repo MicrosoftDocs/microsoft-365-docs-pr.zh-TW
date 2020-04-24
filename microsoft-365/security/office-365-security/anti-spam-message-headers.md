@@ -15,12 +15,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: 了解 Exchange Online Protection 新增至郵件的標頭欄位和值。
-ms.openlocfilehash: 958850bccafcbcb0d4fa27a0daddc3c70353deb3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1bb2468908ef9711242bdb236f7f43f9f6e43eb1
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634565"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708580"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾郵件訊息標頭
 
@@ -135,7 +135,7 @@ dmarc=fail action=oreject header.from=contoso.com
 |||
 |---|---|
 |**標頭欄位**|**描述**|
-|action|表示垃圾郵件篩選器根據 DMARC 檢查結果所採取的動作作。 例如： <ul><li>**oreject** 或 **o.reject**：代表覆寫拒絕。 在這種情況下，當 Microsoft 365 從DMARC TXT 記錄具有 p=reject 原則的網域收到 DMARC 檢查失敗的郵件時，將會採取此動作。 Microsoft 365 會將郵件標記為垃圾郵件，而不是刪除或拒絕郵件。 如需 Microsoft 365 以這種方式設定的原因詳細資訊，請參閱 [Microsoft 365 如何處理未通過 DMARC 的輸入電子郵件](use-dmarc-to-validate-email.md#inbounddmarcfail)。</li><li>**pct.quarantine**：表示無論如何都將傳遞百分比少於 100% 的未通過 DMARC 的郵件。 這表示郵件的 DMARC 失敗並且原則設定為為隔離，但 pct 欄位未設定為 100 %，因此系統隨機決定不根據指定網域的原則來套用 DMARC 動作。</li><li>**pct.reject**：表示無論如何都將傳遞百分比少於 100% 的未通過 DMARC 的郵件。 這表示郵件的 DMARC 失敗並且原則設定為為拒絕，但 pct 欄位未設定為 100 %，因此系統隨機決定不根據指定網域的原則來套用 DMARC 動作。</li><li>**permerror**：在 DMARC 評估期間發生永久性錯誤，例如在 DNS 中發生格式錯誤的 DMARC TXT 記錄。 嘗試重新傳送此郵件也不太會有不同的結果。 相反地，您可能需要連絡網域擁有者來解決問題。</li><li>**temperror**：DMARC 評估期間發生暫時錯誤。 您可能可以要求寄件人稍後重新傳送郵件，以便正確處理電子郵件。</li></ul>|
+|action|表示垃圾郵件篩選器根據 DMARC 檢查結果所採取的動作作。 例如： <ul><li>**oreject** 或 **o.reject**：代表覆寫拒絕。 在這種情況下，當 Microsoft 365 從DMARC TXT 記錄具有 p=reject 原則的網域收到 DMARC 檢查失敗的郵件時，將會採取此動作。 Microsoft 365 會將郵件標記為垃圾郵件，而不是刪除或拒絕郵件。 如需 Microsoft 365 以這種方式設定的原因詳細資訊，請參閱 [Microsoft 365 如何處理未通過 DMARC 的輸入電子郵件](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc)。</li><li>**pct.quarantine**：表示無論如何都將傳遞百分比少於 100% 的未通過 DMARC 的郵件。 這表示郵件的 DMARC 失敗並且原則設定為為隔離，但 pct 欄位未設定為 100 %，因此系統隨機決定不根據指定網域的原則來套用 DMARC 動作。</li><li>**pct.reject**：表示無論如何都將傳遞百分比少於 100% 的未通過 DMARC 的郵件。 這表示郵件的 DMARC 失敗並且原則設定為為拒絕，但 pct 欄位未設定為 100 %，因此系統隨機決定不根據指定網域的原則來套用 DMARC 動作。</li><li>**permerror**：在 DMARC 評估期間發生永久性錯誤，例如在 DNS 中發生格式錯誤的 DMARC TXT 記錄。 嘗試重新傳送此郵件也不太會有不同的結果。 相反地，您可能需要連絡網域擁有者來解決問題。</li><li>**temperror**：DMARC 評估期間發生暫時錯誤。 您可能可以要求寄件人稍後重新傳送郵件，以便正確處理電子郵件。</li></ul>|
 |compauth|複合驗證結果。 Microsoft 365 所使用，用於組合多種類型的驗證 (如 SPF、DKIM、DMARC 或郵件的任何其他部分)，以判斷郵件是否經過驗證。 使用 From: 網域作為評估基礎。|
 |dkim|描述郵件的 DKIM 檢查結果。 可能的值包括： <ul><li>**pass**：表示郵件的 DKIM 檢查通過。</li><li>**fail (原因)**：表示郵件的 DKIM 檢查失敗及原因。 例如，郵件未簽署或簽章未經過驗證。</li><li>**none**：表示郵件未簽署。 這可能會也可能不會表示網域具有 DKIM 記錄或 DKIM 記錄未計算結果，僅表示此郵件未簽署。</li></ul>|
 |dmarc|描述郵件的 DMARC 檢查結果。 可能的值包括： <ul><li>**pass**：表示郵件的 DMARC 檢查通過。</li><li>**fail**：表示郵件的 DMARC 檢查失敗。</li><li>**bestguesspass**：表示該網域沒有 DMARC TXT 記錄，但如果有，郵件的 DMARC 檢查就會通過。 這是因為 `5321.MailFrom` 位址中的網域 (又稱為「郵件寄件者地址」、P1 寄件者或信封寄件者) 符合 `5322.From` 位址中的網域 (又稱為「寄件者地址」或 P2 寄件者)。</li><li>**none**：表示 DNS 中的寄件網域沒有 DKIM TXT 記錄。|
