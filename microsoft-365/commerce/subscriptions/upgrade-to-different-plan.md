@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: 瞭解如何升級為新的訂閱。
 monikerRange: o365-worldwide
-ms.openlocfilehash: a5cede13a64ea1a6562a326c32dc902d14c3dfe5
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: faddecffd91eb58dab7a3b498de97633b5efd9d0
+ms.sourcegitcommit: 11198133b43eb6a6369e544c8a0dd408d582591c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707520"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43796509"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升級至不同的方案 
 
@@ -63,7 +63,7 @@ ms.locfileid: "43707520"
 
 ## <a name="the-upgrade-tab-is-empty"></a>[升級] 索引標籤是空的
 
-如果 [**升級**] 索引標籤為空，您會看到有關為何您此時無法升級的說明。 您可以嘗試[手動變更計畫](change-plans-manually.md)或[致電支援人員](../../admin/contact-support-for-business-products.md)。 如需詳細資訊，請參閱[為何無法升級方案？](#why-cant-i-upgrade-plans)。
+如果 [**升級**] 索引標籤為空，您會看到有關為何您此時無法升級的說明。 您可以嘗試[手動變更方案](change-plans-manually.md)。 如需詳細資訊，請參閱[為何無法升級方案？](#why-cant-i-upgrade-plans)。
 
 ## <a name="i-dont-see-the-plan-i-want"></a>我看不到想要的計畫
 
@@ -159,7 +159,7 @@ ms.locfileid: "43707520"
   
 升級期間會保留所有使用者資料，包括 Exchange 信箱和 SharePoint 線上檔、清單及其他資訊。
   
-### <a name="billing"></a>計費
+### <a name="billing"></a>帳單
 
 您的規劃升級已完成，您的舊訂閱上的帳單將會關閉，而新訂閱上的帳單便會開啟。 您將取得對舊訂閱上任何未使用之服務的按比例貸項。 在升級至新訂閱的30天內，您會收到包含舊訂閱信用額的新發票。
   
