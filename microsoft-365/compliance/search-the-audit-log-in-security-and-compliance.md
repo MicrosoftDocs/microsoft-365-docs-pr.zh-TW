@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: f1fcfd883cb8becea861b6fcebcf59d61b104750
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 '
+ms.openlocfilehash: f961b14bfeb15ac0c82988a35b9455f0dd7ec864
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521489"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625123"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
 ## <a name="introduction"></a>簡介
 
-需要了解是否有使用者已檢視特定文件或清除信箱中的項目嗎？ 如果是，您可以使用 Office 365 安全性與合規性中心來搜尋統一的稽核記錄，檢視 Office 365 組織中的使用者和系統管理員活動。 為什麼使用整合的稽核記錄？ 因為您可以在 Office 365 中搜尋下列類型的使用者和系統管理員活動：
+需要了解是否有使用者已檢視特定文件或清除信箱中的項目嗎？ 如果是，您可以使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 為什麼使用整合的稽核記錄？ 因為您可以在 Office 365 中搜尋下列類型的使用者和系統管理員活動：
 
 - SharePoint Online 和商務用 OneDrive 中的使用者活動
 
@@ -67,19 +67,19 @@ ms.locfileid: "43521489"
 
 ## <a name="before-you-begin"></a>開始之前
 
-在您開始搜尋 Office 365 稽核記錄前，請務必閱讀下列項目。
+開始搜尋稽核記錄前，請務必閱讀下列項目。
 
-- 您 (或其他系統管理員) 必須先開啟稽核記錄，才能開始搜尋 Office 365 稽核記錄。 按一下「安全性與合規性中心」中 **[稽核記錄搜尋]** 頁面上的 **[開啟稽核]**，即可開啟此功能。 (如果您沒看到此連結，表示您的組織已開啟稽核功能。) 開啟此功能後，就會顯示一則訊息，表示正在準備稽核記錄，而您可以在準備完成 (約幾小時) 後執行搜尋。 此操作只需執行一次。 如需詳細資訊，請參閱[開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)。
+- 您 (或其他系統管理員) 必須先開啟稽核記錄，才能開始搜尋稽核記錄。 按一下「安全性與合規性中心」中 **[稽核記錄搜尋]** 頁面上的 **[開啟稽核]**，即可開啟此功能。 (如果您沒看到此連結，表示您的組織已開啟稽核功能。) 開啟此功能後，就會顯示一則訊息，表示正在準備稽核記錄，而您可以在準備完成 (約幾小時) 後執行搜尋。 此操作只需執行一次。 如需詳細資訊，請參閱[開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)。
 
   > [!NOTE]
   > 我們還在設法讓稽核功能可預設為開啟。 在那之前，您可以如上述方法來開啟該功能。
 
-- 您必須在 Exchange Online 中獲派為 [僅限檢視稽核記錄] 或 [稽核記錄] 角色，才能搜尋 Office 365 稽核記錄。 根據預設，這些角色會在 Exchange 系統管理員中心的 [權限]**** 頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 請注意，Office 365 和 Microsoft 365 中的全域系統管理員會自動成為 Exchange Online 中 [組織管理] 角色群組的成員。 若要提供使用者能夠搜尋 Office 365 稽核記錄的最低權限等級，您可以在 Exchange Online 中建立自訂角色群組、新增 [僅限檢視稽核記錄] 或 [稽核記錄] 角色，然後將使用者加入這個新的角色群組成為其中的成員。 如需詳細資訊，請參閱[管理 Exchange Online 中的角色群組](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
+- 您必須在 Exchange Online 中獲派為 [僅限檢視稽核記錄] 或 [稽核記錄] 角色，才能搜尋稽核記錄。 根據預設，這些角色會在 Exchange 系統管理員中心的 [權限]**** 頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 請注意，Office 365 和 Microsoft 365 中的全域系統管理員會自動成為 Exchange Online 中的 [組織管理] 角色群組成員。 若要提供讓使用者能夠搜尋稽核記錄的最低權限等級，您可以在 Exchange Online 中建立自訂角色群組、新增 [僅限檢視稽核記錄] 或 [稽核記錄] 角色，然後將使用者加入這個新的角色群組成為其中的成員。 如需詳細資訊，請參閱[管理 Exchange Online 中的角色群組](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
 
   > [!IMPORTANT]
-  > 如果您在安全性與合規性中心的 [權限]**** 頁面上，將 [僅限檢視稽核記錄] 或 [稽核記錄] 角色指派給使用者，使用者將無法搜尋 Office 365 稽核記錄。 您必須在 Exchange Online 中指派權限。 這是因為用來搜尋稽核記錄的基礎 Cmdlet 是 Exchange Online Cmdlet。
+  > 如果您在安全性與合規性中心的 [權限]**** 頁面上，將 [僅限檢視稽核記錄] 或 [稽核記錄] 角色指派給使用者，使用者將無法搜尋稽核記錄。 您必須在 Exchange Online 中指派權限。 這是因為用來搜尋稽核記錄的基礎 Cmdlet 是 Exchange Online Cmdlet。
 
-- 當使用者或系統管理員執行稽核的活動時，稽核記錄會隨即產生，並儲存在您組織的 Office 365 稽核記錄中。 稽核記錄的保留時間及可在稽核記錄中搜尋的時間長度，取決於您的 Office 365 或 Microsoft 365 企業版訂閱，具體來說，取決於指派給特定使用者的授權類型。
+- 當使用者或系統管理員執行稽核的活動時，稽核記錄會隨即產生，並儲存在您組織的稽核記錄中。 稽核記錄的保留時間及可在稽核記錄中搜尋的時間長度，取決於您的 Office 365 或 Microsoft 365 企業版訂閱，具體來說，取決於指派給特定使用者的授權類型。
 
   - **Office 365 E3 或 Microsoft 365 E3：** 稽核記錄會保留 90 天。 這表示您可以搜尋稽核記錄來尋找過去 90 天中執行的活動。
 
@@ -91,7 +91,7 @@ ms.locfileid: "43521489"
     > [!NOTE]
     > 如果您的組織有參與一年期稽核記錄保留的私人預覽計畫，則將不會重設一般發行日期之前產生的稽核記錄保留期間。
 
-- 如果您想要關閉貴組織在 Office 365 中的稽核記錄搜尋功能，您可以在與 Exchange Online 組織連線的遠端 PowerShell 中執行下列命令：
+- 如果您想要關閉組織的稽核記錄搜尋功能，您可以在與 Exchange Online 組織連線的遠端 PowerShell 中執行下列命令：
 
   ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
@@ -103,17 +103,17 @@ ms.locfileid: "43521489"
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
   ```
 
-  如需詳細資訊，請參閱[關閉 Office 365 中的稽核記錄搜尋](turn-audit-log-search-on-or-off.md)。
+  如需詳細資訊，請參閱[關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)。
 
-- 如先前所述，用來搜尋稽核記錄的基礎 Cmdlet 是 Exchange Online Cmdlet，也就是 **Search-UnifiedAuditLog**。 這表示您可以使用此 Cmdlet 來搜尋 Office 365 稽核記錄，而不是使用安全性與合規性中心中的 [稽核記錄搜尋]**** 頁面。 您必須在連線到 Exchange Online 組織的遠端 PowerShell，執行此 Cmdlet。 如需詳細資訊，請參閱 [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776)。
+- 如先前所述，用來搜尋稽核記錄的基礎 Cmdlet 是 Exchange Online Cmdlet，也就是 **Search-UnifiedAuditLog**。 這表示您可以使用此 Cmdlet 來搜尋稽核記錄，而不是使用安全性與合規性中心中的 [稽核記錄搜尋]**** 頁面。 您必須在連線到 Exchange Online 組織的遠端 PowerShell，執行此 Cmdlet。 如需詳細資訊，請參閱 [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776)。
 
   若要了解如何將 **Search-UnifiedAuditLog** Cmdlet 所傳回的搜尋結果匯出為 CSV 檔案，請參閱[匯出、設定及檢視稽核記錄檔的記錄](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log)中的＜匯出及檢視稽核記錄的秘訣＞一節。
 
-- 如果您想要以程式設計方式從 Office 365 稽核記錄下載資料，我們建議您使用 Office 365 管理活動 API，而非使用 PowerShell 指令碼。 Office 365 管理活動 API 是一個 REST Web 服務，可用於為貴組織開發作業、安全性以及合規性的監控解決方案。 如需詳細資訊，請參閱 [Office 365 管理活動 API 參考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。
+- 如果您想要以程式設計方式從稽核記錄下載資料，我們建議您使用 Office 365 管理活動 API，而非使用 PowerShell 指令碼。 Office 365 管理活動 API 是一個 REST Web 服務，可用於為貴組織開發作業、安全性以及合規性的監控解決方案。 如需詳細資訊，請參閱 [Office 365 管理活動 API 參考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。
 
 - 發生事件後，對應的稽核記錄最多可能需要 30 分鐘或 24 小時的時間，才會在稽核記錄搜尋的結果中傳回。 下列表格顯示不同 Office 365 服務的所需時間。
 
-  |**Office 365 服務**|**30 分鐘**|**24 小時**|
+  |**Microsoft 365 服務**|**30 分鐘**|**24 小時**|
   |:-----|:-----:|:-----:|
   |進階威脅防護和威脅情報|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (使用者登入活動)||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -138,7 +138,7 @@ ms.locfileid: "43521489"
 
 - Azure Active Directory (Azure AD) 是適用於 Office 365 的目錄服務。 整合的稽核記錄包含 Microsoft 365 系統管理員中心或 Azure 管理入口網站中執行的使用者、群組、應用程式、網域及目錄活動。 如需 Azure AD 事件的完整清單，請參閱 [Azure Active Directory 稽核報告事件](https://go.microsoft.com/fwlink/p/?LinkID=616549)。
 
-- Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄中搜尋 Power BI 活動，您必須在 Power BI 系統管理入口網站中啟用稽核功能。 如需相關指示，請參閱 [Power BI 系統管理員入口網站](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)中的＜稽核記錄＞一節。
+- Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Power BI 活動，您必須在 Power BI 系統管理員入口網站中啟用稽核功能。 如需相關指示，請參閱 [Power BI 系統管理員入口網站](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)中的＜稽核記錄＞一節。
 
 ## <a name="search-the-audit-log"></a>搜尋稽核記錄
 
@@ -159,7 +159,7 @@ ms.locfileid: "43521489"
     > [!TIP]
     > 您可以使用私密瀏覽工作階段 (而非一般工作階段) 存取安全性與合規性中心，藉此避免您目前用於登入的認證遭到使用。 若要在 Internet Explorer 或 Microsoft Edge 開啟 InPrivate 瀏覽器工作階段，請按 CTRL+SHIFT+P。 若要在 Google Chrome 中開啟隱私瀏覽工作階段 (稱為無痕式視窗)，請按 CTRL+SHIFT+N。
 
-2. 使用公司或學校帳戶登入 Office 365。
+2. 使用您的公司或學校帳戶登入。
 
 3. 在安全性與合規性中心的左窗格中，按一下 [搜尋]****，然後按一下 [稽核記錄搜尋]****。
 
@@ -174,7 +174,7 @@ ms.locfileid: "43521489"
 
     a. **活動**：按一下下拉式清單以顯示您可以搜尋的活動。 使用者和系統管理員活動會歸類成各種相關活動的群組。 您可以選取特定活動，或者也可以按一下活動群組名稱以選取該群組中的所有活動。 您也可以按一下選定的活動以清除選取。 執行搜尋後，只會顯示選定活動的稽核記錄項目。 選取 [顯示所有活動的結果]**** 會顯示選定使用者或使用者群組所執行的所有活動結果。
 
-    Office 365 稽核記錄中會記錄超過 100 個使用者和系統管理員活動。 請按一下本文主題的 [已稽核活動]**** 索引標籤，以查看各個 Office 365 服務中的每項活動描述。
+    稽核記錄中會記錄超過 100 個使用者和系統管理員活動。 按一下本文主題的 [已稽核活動]**** 索引標籤，可查看不同服務中各項活動的描述。
 
     b. **開始日期**和**結束日期**：根據預設會選取過去七天。 選取日期和時間範圍，以顯示該期間內已發生的事件。 日期和時間以國際標準時間 (UTC) 格式表示。 您可以指定的最大日期範圍為 90 天。 如果選定的日期範圍大於 90 天，則會顯示錯誤。
 
@@ -239,7 +239,7 @@ ms.locfileid: "43521489"
 
 #### <a name="view-the-details-for-a-specific-event"></a>檢視特定事件的詳細資料
 
-您可以按一下搜尋結果清單中的事件記錄，以檢視更多事件相關的詳細資料。 含有事件記錄中詳細屬性的 [詳細資料]**** 頁面隨即顯示。 顯示的屬性會以發生事件的 Office 365 服務為依據。 若要顯示這些詳細資料，請按一下 [更多資訊]****。 如需說明，請參閱 [Office 365 稽核記錄中的詳細內容](detailed-properties-in-the-office-365-audit-log.md)。
+您可以按一下搜尋結果清單中的事件記錄，以檢視更多事件相關的詳細資料。 含有事件記錄中詳細屬性的 [詳細資料]**** 頁面隨即顯示。 顯示的屬性視發生事件的服務而定。 若要顯示這些詳細資料，請按一下 [更多資訊]****。 如需說明，請參閱[稽核記錄中的詳細屬性](detailed-properties-in-the-office-365-audit-log.md)。
 
 ![按一下 [更多資訊] 以檢視稽核記錄事件記錄的詳細屬性。](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
@@ -274,7 +274,7 @@ ms.locfileid: "43521489"
 
    - **儲存載入的結果**：選擇此選項以僅匯出顯示在 [稽核記錄搜尋]**** 頁面 [結果]**** 底下的項目。 下載的 CSV 檔案會包含與頁面上顯示相同的欄 (及資料) (日期、使用者、活動、項目及詳細資料)。 CSV 檔案中包括一個額外的欄 (命名為 [更多]****)，其中含有更多來自稽核記錄項目的資訊。 因為您正在匯出 [稽核記錄搜尋]**** 頁面上所載入的相同結果 (且可檢視)，因此最多可匯出 5,000 個項目。
 
-   - **下載所有結果**：選擇此選項以從符合搜尋準則的 Office 365 稽核記錄匯出所有項目。 針對大量的搜尋結果，選擇此選項除了會下載 [稽核記錄搜尋]**** 頁面上顯示的 5,000 個稽核記錄以外，還會從稽核記錄下載所有項目。 此選項會從稽核記錄下載原始資料至 CSV 檔案，並且在一個命名為 **AuditData** 的欄中包含來自稽核記錄項目的其他資訊。 如果您選擇此匯出選項，下載檔案可能需要較久的時間。這是因為如果您選擇其他選項，檔案可能會遠大於下載的檔案。
+   - **下載所有結果**：選擇此選項，可從符合搜尋準則的稽核記錄中匯出所有項目。 針對大量的搜尋結果，選擇此選項除了會下載 [稽核記錄搜尋]**** 頁面上顯示的 5,000 個稽核記錄以外，還會從稽核記錄下載所有項目。 此選項會從稽核記錄下載原始資料至 CSV 檔案，並且在一個命名為 **AuditData** 的欄中包含來自稽核記錄項目的其他資訊。 如果您選擇此匯出選項，下載檔案可能需要較久的時間。這是因為如果您選擇其他選項，檔案可能會遠大於下載的檔案。
 
      > [!IMPORTANT]
      > 您可以從單一稽核記錄搜尋下載最多 50,000 個項目至 CSV 檔案。 如果已下載 50,000 個項目至 CSV 檔案，您可能可以假設有超過 50,000 個符合搜尋準則的事件。 若要匯出的內容超過此限制，請嘗試使用日期範圍來縮小稽核記錄項目的數量。 您可能需要使用較小的日期範圍執行多次搜尋，以匯出 50,000 個以上的項目。
@@ -287,17 +287,17 @@ ms.locfileid: "43521489"
 
   分割 [AuditData]**** 欄後，您可以在 [作業]**** 欄篩選，以顯示特定活動類型的詳細屬性。
 
-- [下載所有結果]**** 選項會從 Office 365 稽核記錄下載原始資料至 CSV 檔案。 如果您選取 [儲存載入的結果]**** 選項，此檔案會包含與下載檔案不同的欄名稱 (CreationDate、UserIds、Operation、AuditData)。 在兩個不同的 CSV 檔案中，相同活動的值可能也會不一樣。 例如，CSV 檔案 [動作]**** 欄中的活動，以及可能會有與 [稽核記錄搜尋]**** 頁面的 [活動]**** 欄中顯示的「使用者易記」名稱不同的值。 例如，「MailboxLogin」與「使用者已登入信箱」。
+- [下載所有結果]**** 選項會將稽核記錄中的原始資料下載至 CSV 檔案。 如果您選取 [儲存載入的結果]**** 選項，此檔案會包含與下載檔案不同的欄名稱 (CreationDate、UserIds、Operation、AuditData)。 在兩個不同的 CSV 檔案中，相同活動的值可能也會不一樣。 例如，CSV 檔案 [動作]**** 欄中的活動，以及可能會有與 [稽核記錄搜尋]**** 頁面的 [活動]**** 欄中顯示的「使用者易記」名稱不同的值。 例如，「MailboxLogin」與「使用者已登入信箱」。
 
-- 當您從搜尋查詢下載所有結果時，如果搜尋查詢包含不同 Office 365 服務中的事件，則 CSV 檔案中的 [AuditData]**** 欄會包含不同的屬性，視在何種服務中執行動作而定。 例如，來自 Exchange 和 Azure AD 稽核記錄的項目包括命名為 **ResultStatus** 的屬性，它會指出執行的動作是否成功。 SharePoint 中的事件不包括此屬性。 同樣地，SharePoint 事件有一個屬性可用來識別網站 URL 中的檔案和資料夾相關活動。 若要減少此行為，請考慮使用不同的搜尋，以匯出來自單一服務的活動結果。
+- 當您從搜尋查詢下載所有結果時，如果搜尋查詢包含不同服務中的事件，則 CSV 檔案中的 [AuditData]**** 欄會包含不同的屬性，視在何種服務中執行動作而定。 例如，來自 Exchange 和 Azure AD 稽核記錄的項目包括命名為 **ResultStatus** 的屬性，它會指出執行的動作是否成功。 SharePoint 中的事件不包括此屬性。 同樣地，SharePoint 事件有一個屬性可用來識別網站 URL 中的檔案和資料夾相關活動。 若要減少此行為，請考慮使用不同的搜尋，以匯出來自單一服務的活動結果。
 
-  如需下載所有結果時，CSV 檔案 [AuditData]**** 欄中列出的多個屬性描述，以及各個適用的服務，請參閱 [Office 365 稽核記錄中的詳細屬性](detailed-properties-in-the-office-365-audit-log.md)。
+  如需下載所有結果時，CSV 檔案 [AuditData]**** 欄中列出的多個屬性描述，以及各個適用的服務，請參閱[稽核記錄中的詳細屬性](detailed-properties-in-the-office-365-audit-log.md)。
 
 ## <a name="audited-activities"></a>已稽核活動
 
 本節中各表格說明的是 Office 365 中已稽核的活動。 您可以透過搜尋安全性與合規性中心中的稽核記錄來搜尋這些事件。
 
-這些表格會將相關或來自特定 Office 365 服務的活動集合成一個群組。 這些表格包括 [活動]**** 下拉式清單中顯示的易記名稱，以及在稽核記錄詳細資訊中，或匯出搜尋結果時在 CSV 檔案中顯示的對應作業名稱。 如需詳細資訊的說明，請參閱 [Office 365 稽核記錄中的詳細內容](detailed-properties-in-the-office-365-audit-log.md)。
+這些表格會將相關或來自特定服務的活動集合成一個群組。 這些表格包括 [活動]**** 下拉式清單中顯示的易記名稱，以及在稽核記錄詳細資訊中，或匯出搜尋結果時在 CSV 檔案中顯示的對應作業名稱。 如需詳細資訊的說明，請參閱[稽核記錄中的詳細屬性](detailed-properties-in-the-office-365-audit-log.md)。
 
 請按一下下列其中一個連結，以移至特定表格。
 
@@ -362,9 +362,9 @@ ms.locfileid: "43521489"
 
 以下是一些其他案例，其中 app@sharepoint 在稽核記錄中可能會識別為執行活動的使用者：
 
-- Office 365 群組。 當使用者或系統管理員建立新群組時，系統會產生稽核記錄，以建立網站集合、更新清單，以及將成員新增至 SharePoint 群組。 這些工作是應用程式代表建立群組的使用者執行的。
+- Microsoft 365 群組。 當使用者或系統管理員建立新群組時，系統會產生稽核記錄，以建立網站集合、更新清單，以及將成員新增至 SharePoint 群組。 這些工作是應用程式代表建立群組的使用者執行的。
 
-- Microsoft Teams。 與 Office 365 群組類似，建立新小組時，系統會產生稽核記錄，以建立網站集合、更新清單，以及將成員新增至 SharePoint 群組。
+- Microsoft Teams。 與 Microsoft 365 群組類似，建立新小組時，系統會產生稽核記錄，以建立網站集合、更新清單，以及將成員新增至 SharePoint 群組。
 
 - 合規性功能。 當系統管理員實作合規性功能時，例如保留原則、電子文件探索保留及自動套用靈敏度標籤。
 
@@ -418,7 +418,7 @@ ms.locfileid: "43521489"
 
 ### <a name="sharing-and-access-request-activities"></a>共用及存取要求活動
 
-下表說明 SharePoint Online 和商務用 OneDrive 中的使用者共用和存取要求活動。 針對共用事件，[結果]**** 底下的 [詳細資料]**** 欄會識別共用項目的使用者或群組名稱，以及使用者或群組是否為您的組織中的成員或來賓。 如需詳細資訊，請參閱[在 Office 365 稽核記錄中使用共用稽核](use-sharing-auditing.md)。
+下表說明 SharePoint Online 和商務用 OneDrive 中的使用者共用和存取要求活動。 針對共用事件，[結果]**** 底下的 [詳細資料]**** 欄會識別共用項目的使用者或群組名稱，以及使用者或群組是否為您的組織中的成員或來賓。 如需詳細資訊，請參閱[在稽核記錄中使用共用稽核](use-sharing-auditing.md)。
 
 > [!NOTE]
 > 根據使用者物件的 UserType 屬性，使用者可以是成員** 或來賓**。 成員通常是員工，而來賓通常是您的組織之外的共同作業者。 當使用者接受共用邀請時 (而且不屬於您的組織的一部分)，就會在您的組織目錄中為他們建立使用者帳戶。 一旦來賓使用者在您的目錄中擁有帳戶後，就可以直接與他們共用資源 (而不需要邀請)。
@@ -499,12 +499,12 @@ ms.locfileid: "43521489"
 |已新增免除使用者代理程式|ExemptUserAgentSet|SharePoint 或全域系統管理員已將使用者代理程式新增至 SharePoint 系統管理員中心的免除使用者代理程式清單。|
 |已新增地理位置系統管理員|GeoAdminAdded|SharePoint 或全域系統管理員已將使用者新增為某個位置的地理位置系統管理員。|
 |已允許使用者建立群組|AllowGroupCreationSet|網站系統管理員或擁有者新增權限等級至網站，以允許獲派該權限的使用者為該網站建立群組。|
-|已取消網站的地理位置移動|SiteGeoMoveCancelled|SharePoint 或全域系統管理員已成功取消 SharePoint 或 OneDrive 網站的地理位置移動。 多地理位置功能可讓 Office 365 組織橫跨多個 Office 365 資料中心地理位置，這些地理位置稱為 geos。 如需詳細資訊，請參閱 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
-|已變更共用原則|SharingPolicyChanged|SharePoint 或全域系統管理員已使用 Office 365 系統管理員入口網站、SharePoint 系統管理員入口網站或 SharePoint Online 管理命令介面變更了 SharePoint 共用原則。 將會記錄您的組織中的任何共用原則設定變更。 已變更的原則可在事件記錄詳細屬性中的 **ModifiedProperties** 欄位中找到。|
-|已變更裝置存取原則|DeviceAccessPolicyChanged|SharePoint 或全域系統管理員已變更您組織中未受控裝置的原則。 此原則可針對未加入您組織的裝置控制 SharePoint、OneDrive 及 Office 365 的存取權。 設定此原則需要 Enterprise Mobility + Security 訂閱。 如需詳細資訊，請參閱[控制未受管理裝置的存取權](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622)。|
+|已取消網站的地理位置移動|SiteGeoMoveCancelled|SharePoint 或全域系統管理員已成功取消 SharePoint 或 OneDrive 網站的地理位置移動。 多地理位置功能可讓組織橫跨多個 Microsoft 資料中心地理位置，這些地理位置稱為 geos。 如需詳細資訊，請參閱 [OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
+|已變更共用原則|SharingPolicyChanged|SharePoint 或全域系統管理員已使用 Microsoft 365 系統管理員入口網站、SharePoint 系統管理員入口網站或 SharePoint Online 管理命令介面變更了 SharePoint 共用原則。 將會記錄您的組織中的任何共用原則設定變更。 已變更的原則可在事件記錄詳細屬性中的 **ModifiedProperties** 欄位中找到。|
+|已變更裝置存取原則|DeviceAccessPolicyChanged|SharePoint 或全域系統管理員已變更您組織中未受控裝置的原則。 此原則可針對未加入您組織的裝置控制 SharePoint、OneDrive 及 Microsoft 365 的存取權。 設定此原則需要 Enterprise Mobility + Security 訂閱。 如需詳細資訊，請參閱[控制未受管理裝置的存取權](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622)。|
 |已變更免除使用者代理程式|CustomizeExemptUsers|SharePoint 或全域系統管理員已在 SharePoint 系統管理員中心自訂免除使用者代理程式清單。 您可以指定要免除哪些使用者代理程式，以免於接收整個網頁進行索引。 這表示當您指定為免除的使用者代理程式遇到 InfoPath 表單時，會以 XML 檔案傳回該表單，而不是整個網頁。 這樣在進行 InfoPath 表單索引時會更迅速。|
 |已變更網路存取原則|NetworkAccessPolicyChanged|SharePoint 或全域系統管理員已在 SharePoint 系統管理員中心中 (或是使用 SharePoint Online PowerShell) 變更位置存取原則 (又稱為受信任的網路邊界)。 此類原則可根據您指定的授權 IP 位址範圍，控制能存取您組織 SharePoint 和 OneDrive 資源的使用者。 如需詳細資訊，請參閱[根據網路位置控制 SharePoint Online 與 OneDrive 資料的存取權](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f)。|
-|已完成網站的地理位置移動|SiteGeoMoveCompleted|已成功完成您組織全域系統管理員所排程的網站地理位置移動。 多地理位置功能可讓 Office 365 組織橫跨多個 Office 365 資料中心地理位置，這些地理位置稱為 geos。 如需詳細資訊，請參閱 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
+|已完成網站的地理位置移動|SiteGeoMoveCompleted|已成功完成您組織全域系統管理員所排程的網站地理位置移動。 多地理位置功能可讓組織橫跨多個 Microsoft 資料中心地理位置，這些地理位置稱為 geos。 如需詳細資訊，請參閱 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
 |已建立 [傳送至] 連線|SendToConnectionAdded|SharePoint 或全域系統管理員在 SharePoint 系統管理員中心的 [記錄] 管理頁面上建立新的「傳送至」連線。 [傳送至] 連線會指定文件存放庫或記錄中心的設定。 當您建立 [傳送至] 連線時，[內容組合管理] 可提交文件至指定的位置。|
 |已建立網站集合|SiteCollectionCreated|SharePoint 或全域系統管理員在您的 SharePoint Online 組織中建立了網站集合，或是使用者佈建了商務用 OneDrive 網站。|
 |刪除孤立的中樞網站|HubSiteOrphanHubDeleted|SharePoint 或全域系統管理員已刪除孤立中樞網站，也就是未與任何站台建立關聯的中樞網站。 孤立中樞可能是因為刪除原始中樞網站所造成。|
@@ -512,7 +512,7 @@ ms.locfileid: "43521489"
 |已刪除網站|SiteDeleted|網站系統管理員刪除網站。|
 |已啟用文件預覽|PreviewModeEnabledSet|網站系統管理員啟用網站的文件預覽。|
 |已啟用舊版工作流程|LegacyWorkflowEnabledSet|網站系統管理員或擁有者在網站中新增 SharePoint 2013 工作流程工作內容類型。 全域系統管理員也可以在 SharePoint 系統管理員中心為整個組織啟用工作流程。|
-|已啟用 Office on Demand|OfficeOnDemandSet|網站管理員啟用 Office on Demand，這可讓使用者存取最新版的 Office 傳統型應用程式。 Office on Demand 會在 SharePoint 系統管理員中心啟用，並且需要 Office 365 訂閱，該訂閱包含完整、已安裝的 Office 應用程式。|
+|已啟用 Office on Demand|OfficeOnDemandSet|網站管理員啟用 Office on Demand，這可讓使用者存取最新版的 Office 傳統型應用程式。 Office on Demand 會在 SharePoint 系統管理員中心啟用，並且需要 Microsoft 365 訂閱，該訂閱包含完整、已安裝的 Office 應用程式。|
 |已啟用 [人員搜尋] 的結果來源|PeopleResultsScopeSet|網站系統管理員建立網站的 [人員搜尋] 結果來源。|
 |已啟用 RSS 摘要|NewsFeedEnabledSet|網站系統管理員或擁有者啟用網站的 RSS 摘要。 全域管理員可以在 SharePoint 系統管理員中心為整個組織啟用 RSS 摘要。|
 |已聯結網站與中樞網站|HubSiteJoined|網站擁有者讓他們的網站與中樞網站互相關聯。|
@@ -520,7 +520,7 @@ ms.locfileid: "43521489"
 |已移除允許的資料位置|AllowedDataLocationDeleted|SharePoint 或全域系統管理員已在多個地理環境中移除允許的資料位置。|
 |已移除地理位置系統管理員|GeoAdminDeleted|SharePoint 或全域系統管理員已移除某個位置的地理位置管理員。|
 |已重新命名網站|SiteRenamed|網站系統管理員或擁有者重新命名網站|
-|已排程網站的地理位置移動|SiteGeoMoveScheduled|SharePoint 或全域系統管理員已成功排定 SharePoint 或 OneDrive 網站的地理位置移動。 多地理位置功能可讓 Office 365 組織橫跨多個 Office 365 資料中心地理位置，這些地理位置稱為 geos。 如需詳細資訊，請參閱 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
+|已排程網站的地理位置移動|SiteGeoMoveScheduled|SharePoint 或全域系統管理員已成功排定 SharePoint 或 OneDrive 網站的地理位置移動。 多地理位置功能可讓組織橫跨多個 Microsoft 資料中心地理位置，這些地理位置稱為 geos。 如需詳細資訊，請參閱 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
 |已設定主機網站|HostSiteSet|SharePoint 或全域系統管理員將指定的網站變更為託管個人或商務用 OneDrive 網站。|
 |為地理位置設定儲存空間配額|GeoQuotaAllocated|SharePoint 或全域系統管理員已在多地理位置環境中設定地理位置的儲存空間配額。|
 |已解除網站與中樞網站的聯結|HubSiteUnjoined|網站擁有者讓他們的網站與中樞網站解除關聯。|
@@ -529,7 +529,7 @@ ms.locfileid: "43521489"
 
 ### <a name="exchange-mailbox-activities"></a>Exchange 信箱活動
 
-下表列出信箱稽核記錄可以記錄的活動。 信箱擁有者、指定使用者或管理員所執行的信箱活動會記錄在 Office 365 稽核記錄中達 90 天。 系統管理員可能會關閉組織中所有使用者的信箱稽核記錄功能。 在此情況下，任何使用者的信箱動作都不會記錄。 如需詳細資訊，請參閱[管理信箱稽核](enable-mailbox-auditing.md)。
+下表列出信箱稽核記錄可以記錄的活動。 信箱擁有者、指定使用者或管理員所執行的信箱活動會記錄在 Microsoft 365 稽核記錄中達 90 天。 系統管理員可能會關閉組織中所有使用者的信箱稽核記錄功能。 在此情況下，任何使用者的信箱動作都不會記錄。 如需詳細資訊，請參閱[管理信箱稽核](enable-mailbox-auditing.md)。
 
  您也可以在 Exchange Online PowerShell 中使用 [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) Cmdlet 來搜尋信箱活動。
 
@@ -560,7 +560,7 @@ ms.locfileid: "43521489"
 
 ### <a name="sway-activities"></a>Sway 活動
 
-下表列出在 Sway 中的使用者和系統管理員活動。 Sway 是一個 Office 365 App，可協助使用者在互動式 Web 畫布上收集、格式化，以及分享想法、故事及簡報。 如需詳細資訊，請參閱[關於 Sway 的常見問題集 – 系統管理員說明](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
+下表列出在 Sway 中的使用者和系統管理員活動。 Sway 是一個 Microsoft 365 App，可協助使用者在互動式 Web 畫布上收集、格式化，以及分享想法、故事及簡報。 如需詳細資訊，請參閱[關於 Sway 的常見問題集 – 系統管理員說明](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
@@ -586,10 +586,10 @@ ms.locfileid: "43521489"
 
 |**活動**|**作業**|**描述**|
 |:-----|:-----|:-----|
-|已新增使用者|新增使用者|已建立 Office 365 使用者帳戶。|
+|已新增使用者|新增使用者|已建立使用者帳戶。|
 |已變更使用者授權|變更使用者授權|指派給使用者的授權已變更。 若要查看哪些授權已變更，請參閱對應的 [更新的使用者]** ** 活動。|
 |已變更使用者密碼|變更使用者密碼|使用者變更其密碼。 為了讓使用者能夠重設自己的密碼，您必須為組織中的所有或選取的使用者啟用自助式密碼重設。 您也可以追蹤 Azure Active Directory 中的自助式密碼重設活動。 如需詳細資訊，請參閱 [Azure AD 密碼管理的報告選項](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting)。
-|已刪除使用者|刪除使用者|已刪除 Office 365 使用者帳戶。|
+|已刪除使用者|刪除使用者|已刪除使用者帳戶。|
 |重設使用者密碼|重設使用者密碼|系統管理員重設使用者的密碼。|
 |已設定強制使用者變更密碼的屬性|設定強制變更使用者密碼|系統管理員已設定強制使用者在使用者下次登入 Office 365 時變更密碼的屬性。|
 |設定授權屬性|設定授權屬性|系統管理員修改已指派給使用者的授權屬性。|
@@ -598,7 +598,7 @@ ms.locfileid: "43521489"
 
 ### <a name="azure-ad-group-administration-activities"></a>Azure AD 群組管理活動
 
-下表列出當系統管理員或使用者建立或變更 Office 365 群組時，或當系統管理員透過 Microsoft 365 系統管理員中心或 Azure 管理入口網站建立安全性群組時，會記錄的群組管理活動。 如需有關 Office 365 中的群組詳細資訊，請參閱[檢視、建立及刪除 Microsoft 365 系統管理員中心的群組](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7)。
+下表列出當系統管理員或使用者建立或變更 Microsoft 365 群組時，或當系統管理員透過 Microsoft 365 系統管理員中心或 Azure 管理入口網站建立安全性群組時，會記錄的群組管理活動。 如需有關 Office 365 中的群組詳細資訊，請參閱[檢視、建立及刪除 Microsoft 365 系統管理員中心的群組](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7)。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
@@ -630,27 +630,27 @@ ms.locfileid: "43521489"
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
-|將成員新增至 [角色] 中|將角色成員新增至角色|已將使用者新增至 Office 365 中的系統管理員角色。|
-|已從目錄角色中移除使用者|從角色中移除角色成員|已從 Office 365 中的系統管理員角色中移除使用者。|
-|設定公司連絡人資訊|設定公司連絡人資訊|已更新您 Office 365 組織的公司層級連絡人喜好設定。 這包括 Office 365 所傳送訂閱相關電子郵件的電子郵件地址，以及有關 Office 365 服務的技術通知。|
+|將成員新增至 [角色] 中|將角色成員新增至角色|已將使用者新增至 Microsoft 365 中的系統管理員角色。|
+|已從目錄角色中移除使用者|從角色中移除角色成員|已從 Microsoft 365 中的系統管理員角色中移除使用者。|
+|設定公司連絡人資訊|設定公司連絡人資訊|已更新您的組織之公司層級的連絡人喜好設定。 這包括 Microsoft 365 所傳送之訂閱相關電子郵件的電子郵件地址，以及有關服務的技術通知。|
 ||||
 
 ### <a name="directory-administration-activities"></a>目錄管理活動
 
-下表列出當系統管理員在 Microsoft 365 系統管理員中心或 Azure 管理入口網站中管理他們的 Office 365 組織時，會記錄的 Azure AD 目錄和網域相關活動。
+下表列出當系統管理員在 Microsoft 365 系統管理員中心或 Azure 管理入口網站中管理其組織時，會記錄的 Azure AD 目錄和網域相關活動。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
-|已將網域新增至公司|將網域新增至公司|已將網域新增至您的 Office 365 組織。|
-|已將合作夥伴新增至目錄|將合作夥伴新增至公司|已將合作夥伴 (委派系統管理員) 新增至您的 Office 365 組織。|
-|已從公司中移除網域|從公司中移除網域|已從您的 Office 365 組織中移除網域。|
-|已從目錄中移除合作夥伴|從公司中移除合作夥伴|已從您的 Office 365 組織中移除合作夥伴 (委派系統管理員)。|
-|已設定公司資訊|已設定公司資訊|已更新您 Office 365 組織的公司資訊。 這包括 Office 365 所傳送訂閱相關電子郵件的電子郵件地址，以及有關 Office 365 服務的技術通知。|
-|設定網域驗證|設定網域驗證|已變更您 Office 365 組織的網域驗證設定。|
-|已更新網域的同盟設定|設定網域上的同盟設定|已變更您 Office 365 組織的同盟 (外部共用) 設定。|
-|已設定密碼原則|已設定密碼原則|已變更您 Office 365 組織中使用者密碼的長度和字元限制。|
+|已將網域新增至公司|將網域新增至公司|已將網域新增至您的組織。|
+|已將合作夥伴新增至目錄|將合作夥伴新增至公司|已將合作夥伴 (委派系統管理員) 新增至您的組織。|
+|已從公司中移除網域|從公司中移除網域|已從您的組織中移除網域。|
+|已從目錄中移除合作夥伴|從公司中移除合作夥伴|已從您的組織中移除合作夥伴 (委派系統管理員)。|
+|已設定公司資訊|已設定公司資訊|已更新您的組織的公司資訊。 這包括 Microsoft 365 所傳送之訂閱相關電子郵件的電子郵件地址，以及有關 Microsoft 365 服務的技術通知。|
+|設定網域驗證|設定網域驗證|已變更您的組織之網域驗證設定。|
+|已更新網域的同盟設定|設定網域上的同盟設定|已變更您的組織之同盟 (外部共用) 設定。|
+|已設定密碼原則|已設定密碼原則|已變更您的組織中使用者密碼的長度和字元限制。|
 |已開啟 Azure AD 同步|設定公司上的 DirSyncEnabled 標幟|設定可為 Azure AD 同步啟用目錄的屬性。|
-|已更新網域|更新網域|已更新您 Office 365 組織中的網域設定。|
+|已更新網域|更新網域|已更新您的組織中的網域設定。|
 |已驗證網域|驗證網域|已驗證貴組織是網域的擁有者。|
 |已驗證電子郵件已驗證網域|驗證電子郵件已驗證網域|使用電子郵件驗證來驗證貴組織是否為網域的擁有者。|
 ||||
@@ -669,7 +669,7 @@ ms.locfileid: "43521489"
 
 - 管理電子文件探索系統管理員角色
 
-如需已記錄的電子文件探索活動之清單和詳細描述，請參閱[搜尋 Office 365 稽核記錄中的電子文件探索活動](search-for-ediscovery-activities-in-the-audit-log.md)。
+如需已記錄的電子文件探索活動之清單和詳細描述，請參閱[搜尋稽核記錄中的電子文件探索活動](search-for-ediscovery-activities-in-the-audit-log.md)。
 
 > [!NOTE]
 > [活動]**** 下拉式清單中的 [電子文件探索活動]**** 下方所列活動的結果事件，最久需要 30 分鐘才會顯示在搜尋結果中。 相反地，系統需要 24 小時才能在搜尋結果中顯示電子文件探索 Cmdlet 活動的對應事件。
@@ -682,7 +682,7 @@ ms.locfileid: "43521489"
 |:-----|:-----|:-----|
 |已將資料新增至另一個檢閱集|AddWorkingSetQueryToWorkingSet|使用者已將一個檢閱集中的文件新增至不同檢閱集。|
 |已將資料新增至檢閱集|AddQueryToWorkingSet|使用者已將搜尋結果從與進階電子文件探索案例相關的內容搜尋新增至檢閱集。|
-|已將非 Office 365 的資料新增至檢閱集|AddNonOffice365DataToWorkingSet|使用者已將非 Office 365 的資料新增至檢閱集。|
+|已將非 Microsoft 365 的資料新增至檢閱集|AddNonOffice365DataToWorkingSet|使用者已將非 Microsoft 365 的資料新增至檢閱集。|
 |已將修復的文件新增至檢閱集|AddRemediatedData|使用者將已修正索引錯誤的文件上傳至檢閱集。|
 |已分析檢閱集中的資料|RunAlgo|使用者已對檢閱集中的文件執行分析。|
 |已標註檢閱集中的文件|AnnotateDocument|使用者已標註檢閱集中的文件。 標註包含校訂文件中的內容。|
@@ -709,11 +709,11 @@ ms.locfileid: "43521489"
 
 您可以在 Power BI 中搜尋活動的稽核記錄。 如需 Power BI 活動的相關資訊，請參閱[在您組織內使用稽核功能](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi)中的＜由 Power BI 進行稽核的活動＞一節。
 
-Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄中搜尋 Power BI 活動，您必須在 Power BI 系統管理入口網站中啟用稽核功能。 如需相關指示，請參閱 [Power BI 系統管理員入口網站](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)中的＜稽核記錄＞一節。
+Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Power BI 活動，您必須在 Power BI 系統管理員入口網站中啟用稽核功能。 如需相關指示，請參閱 [Power BI 系統管理員入口網站](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)中的＜稽核記錄＞一節。
 
 ### <a name="microsoft-workplace-analytics-activities"></a>Microsoft 工作場所分析活動
 
-工作場所分析可針對群組在 Office 365 組織間共同作業的方式提供見解。 下表列出在工作場所分析中獲派系統管理員角色或分析師角色的使用者所執行的活動。 獲派分析師角色的使用者具有所有服務功能的完整存取權，並可使用產品來進行分析。 獲派系統管理員角色的使用者可以設定隱私權設定與系統預設值，並可以準備、上傳及驗證工作場所分析中的組織資料。 如需詳細資訊，請參閱[工作場所分析](https://docs.microsoft.com/workplace-analytics/index-orig)。
+工作場所分析可針對群組在組織間共同作業的方式提供見解。 下表列出在工作場所分析中獲派系統管理員角色或分析師角色的使用者所執行的活動。 獲派分析師角色的使用者具有所有服務功能的完整存取權，並可使用產品來進行分析。 獲派系統管理員角色的使用者可以設定隱私權設定與系統預設值，並可以準備、上傳及驗證工作場所分析中的組織資料。 如需詳細資訊，請參閱[工作場所分析](https://docs.microsoft.com/workplace-analytics/index-orig)。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
@@ -731,7 +731,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 
 ### <a name="microsoft-teams-activities"></a>Microsoft Teams 活動
 
-下表列出 Office 365 稽核記錄中記錄的 Microsoft Teams 使用者和系統管理員活動。 Microsoft Teams 是 Office 365 中以聊天方式為主的工作區。 它能將小組的交談、會議、檔案及筆記存放在同一個位置。 如需詳細資訊以及說明主題的連結，請參閱：
+下表列出稽核記錄中記錄的 Microsoft Teams 使用者和系統管理員活動。 Microsoft Teams 是 Office 365 中以聊天方式為主的工作區。 它能將小組的交談、會議、檔案及筆記存放在同一個位置。 如需詳細資訊以及說明主題的連結，請參閱：
 
 - [Microsoft Teams 的常見問題集 - 系統管理員說明](https://support.office.com/article/05cbe533-2181-4e95-a4b0-52cd7695fafc)
 
@@ -770,7 +770,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 
 ### <a name="yammer-activities"></a>Yammer 活動
 
-下表列出 Office 365 稽核記錄中記錄的 Yammer 使用者和系統管理員活動。 若要從 Office 365 稽核記錄傳回 Yammer 相關活動，您必須在 [活動]**** 清單中選取 [顯示所有活動的結果]****。 使用 [日期範圍] 方塊與 [使用者]**** 清單來縮小搜尋結果。
+下表列出稽核記錄中記錄的 Yammer 使用者和系統管理員活動。 若要從稽核記錄傳回 Yammer 相關活動，您必須在 [活動]**** 清單中選取 [顯示所有活動的結果]****。 使用 [日期範圍] 方塊與 [使用者]**** 清單來縮小搜尋結果。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
@@ -807,7 +807,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 
 ### <a name="content-explorer-activities"></a>內容總管活動
 
-下表列出 Office 365 稽核記錄中記錄的內容總管活動。 內容總管可從 Microsoft 365 合規性中心的資料分類工具中存取。 如需詳細資訊，請參閱[使用資料分類內容總管](data-classification-content-explorer.md)。
+下表列出稽核記錄中記錄的內容總管活動。 內容總管可從 Microsoft 365 合規性中心的資料分類工具中存取。 如需詳細資訊，請參閱[使用資料分類內容總管](data-classification-content-explorer.md)。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
@@ -829,7 +829,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 
 ### <a name="microsoft-forms-activities"></a>Microsoft Teams 活動
 
-下表列出 Office 365 稽核記錄中記錄的 Microsoft Forms 使用者和系統管理員活動。 Microsoft Forms 是用來收集資料的表單/測驗/問卷工具，以進行資料分析。 
+下表列出稽核記錄中記錄的 Microsoft Forms 使用者和系統管理員活動。 Microsoft Forms 是用來收集資料的表單/測驗/問卷工具，以進行資料分析。 
 
 以下說明中指出部分作業包含的其他活動參數。
 
@@ -898,12 +898,12 @@ Power BI 的稽核記錄未預設為啟用。 若要在 Office 365 稽核記錄�
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 系統管理員稽核記錄
 
-Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) 會在系統管理員 (或獲派管理權限的使用者) 在您 Exchange Online 組織中進行變更時，將事件記錄在 Office 365 稽核記錄中。 使用 Exchange 系統管理員中心或執行 Exchange Online PowerShell 中的 Cmdlet 所做的變更會記錄在 Exchange 系統管理稽核記錄中。 以動詞 **Get-**、**Search-** 或 **Test-** 開頭的 Cmdlet 不會記錄在 Office 365 稽核記錄中。 如需有關 Exchange 系統管理員稽核記錄的詳細資訊，請參閱[系統管理員稽核記錄功能](https://go.microsoft.com/fwlink/p/?LinkID=619225)。
+Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) 會在系統管理員 (或獲派管理權限的使用者) 在您的 Exchange Online 組織中進行變更時，將事件記錄在稽核記錄中。 使用 Exchange 系統管理員中心或執行 Exchange Online PowerShell 中的 Cmdlet 所做的變更會記錄在 Exchange 系統管理稽核記錄中。 以動詞 **Get-**、**Search-** 或 **Test-** 開頭的 Cmdlet 不會記錄在稽核記錄中。 如需有關 Exchange 系統管理員稽核記錄的詳細資訊，請參閱[系統管理員稽核記錄功能](https://go.microsoft.com/fwlink/p/?LinkID=619225)。
 
 > [!IMPORTANT]
-> 未記錄在 Exchange 系統管理員稽核記錄 (或在 Office 365 稽核記錄中) 的某些 Exchange Online Cmdlet。 許多這些 Cmdlet 都與維護 Exchange Online 服務相關，並由 Microsoft 資料中心人員或服務帳戶執行。 之所以不記錄這些 Cmdlet，是因為這些 Cmdlet 會造成大量的「雜亂」稽核事件。 如果有 Exchange Online Cmdlet 未受到稽核，請傳送建議給 [Office 365 安全性與合規性的 User Voice 論壇](https://office365.uservoice.com/forums/289138-office-365-security-compliance)，並要求對其啟用稽核。 您也可以將設計變更要求 (DCR) 傳送到 Microsoft 支援服務。
+> 未記錄在 Exchange 系統管理員稽核記錄 (或在稽核記錄中) 的某些 Exchange Online Cmdlet。 許多這些 Cmdlet 都與維護 Exchange Online 服務相關，並由 Microsoft 資料中心人員或服務帳戶執行。 之所以不記錄這些 Cmdlet，是因為這些 Cmdlet 會造成大量的「雜亂」稽核事件。 如果有 Exchange Online Cmdlet 未受到稽核，請傳送建議給[安全性與合規性的 User Voice 論壇](https://office365.uservoice.com/forums/289138-office-365-security-compliance)，並要求對其啟用稽核。 您也可以將設計變更要求 (DCR) 傳送到 Microsoft 支援服務。
 
-以下是搜尋 Office 365 稽核記錄時，搜尋 Exchange 系統管理員活動時的秘訣：
+以下是在搜尋稽核記錄時搜尋 Exchange 系統管理員活動的秘訣：
 
 - 若要從 Exchange 系統管理員稽核記錄傳回項目，您必須在 [活動]**** 清單中選取 [顯示所有活動的結果]****。 使用日期範圍方塊和 [使用者]**** 清單，以將由特定 Exchange 系統管理員執行的 Cmdlet 搜尋結果縮小為在特定日期範圍之內。
 
@@ -921,26 +921,26 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
 
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
 
-   請記住，相同的 Exchange 系統管理員活動會同時記錄在 Exchange 系統管理員稽核記錄和 Office 365 稽核記錄中。
+   請記住，相同的 Exchange 系統管理員活動會同時記錄在 Exchange 系統管理員稽核記錄和稽核記錄中。
 
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-**目前稽核的各種 Office 365 服務是什麼？**
+**目前稽核的各種 Microsoft 365 服務是什麼？**
 
-最常使用的 Office 365 服務，例如 Exchange Online、SharePoint Online、商務用 OneDrive、Azure Active Directory、Microsoft Teams、Dynamics 365、進階威脅防護和 Power BI 都會進行稽核。 如需稽核的服務清單，請參閱[這篇文章的開頭](search-the-audit-log-in-security-and-compliance.md)。
+最常使用的服務，例如 Exchange Online、SharePoint Online、商務用 OneDrive、Azure Active Directory、Microsoft Teams、Dynamics 365、進階威脅防護和 Power BI 都會進行稽核。 如需稽核的服務清單，請參閱[這篇文章的開頭](search-the-audit-log-in-security-and-compliance.md)。
 
 **稽核服務在 Office 365 中稽核的活動為何？**
 
-請參閱本文的[稽核活動](#audited-activities)一節，其中有 Office 365 中稽核的活動清單及描述。
+請參閱本文的[稽核活動](#audited-activities)一節，其中包含稽核的活動清單及描述。
 
 **事件發生後多久才能使用稽核記錄？**
 
-大部分稽核資料都可在事件發生後的 30 鐘內予以使用，但對應的稽核記錄項目最多可能需要 24 小時才會顯示在搜尋結果中。 請參閱本文＜[開始之前](#before-you-begin)＞一節中的表格，其中顯示不同 Office 365 服務中事件所需的時間。
+大部分稽核資料都可在事件發生後的 30 鐘內予以使用，但對應的稽核記錄項目最多可能需要 24 小時才會顯示在搜尋結果中。 請參閱本文的[開始之前](#before-you-begin)一節中的表格，其中顯示不同服務中事件所需的時間。
 
 **稽核記錄可保留多久時間？**
 
-如先前所述，稽核記錄的保留期取決於您組織的 Office 365 或 Microsoft 365 企業版訂閱。
+如先前所述，稽核記錄的保留期取決於組織的商務用 Microsoft 365 訂閱。
 
   - **Office 365 E3 和 Microsoft 365 E3：** 稽核記錄會保留 90 天。 這表示您可以搜尋稽核記錄來尋找過去 90 天中執行的活動。
 
@@ -954,17 +954,17 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
 
 **除了使用安全性與合規性中心或 Office 365 管理活動 API，有其他方法可取得稽核記錄嗎？**
 
-否。 從 Office 365 稽核服務取得資料的方式只有兩個。
+否。 從稽核服務取得資料的方式只有兩種。
 
 **針對想擷取稽核記錄的服務，我是否要為每項服務個別啟用稽核功能？**
 
-在大部分的 Office 365 服務中，在您初次為 Office 365 組織啟用稽核功能之後，稽核功能就會預設為啟用 (如本文＜[開始之前](#before-you-begin)＞一節中所述)。
+在大部分的服務中，在您初次為組織啟用稽核功能之後，稽核功能就會預設為啟用 (如本文的[開始之前](#before-you-begin)一節中所述)。
 
-**Office 365 稽核服務可支援刪除重複的記錄嗎？**
+**稽核服務支援刪除重複的記錄嗎？**
 
 否。 稽核服務管線幾乎是即時的，因此並不支援刪除重複資料。
 
-**Office 365 稽核資料可在各個地理位置間流通嗎？**
+**稽核資料可在各個地理位置間流通嗎？**
 
 否。 我們目前將稽核管線部署在 NA (北美洲)、EMEA (歐洲、中東及非洲) 和 APAC (亞太地區) 區域中。 不過，我們可以在這些區域間流通資料來達到負載平衡，並只能在即時網站期間才可這麼做。 當我們執行這些活動時，資料傳輸會經過加密處理。
 

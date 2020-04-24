@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: bcc1634398e86e0f4569d5d5fb0c5bc40ce8fc68
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bb16c663258647989c4b0ad3ca7f95f857e8a680
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073322"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632494"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Microsoft 支援服務與專業服務資料主體要求
 
@@ -228,7 +228,7 @@ Microsoft 是與 FastTrack 小組合作的客戶連絡人資料控制者。如�
   
 如果使用者的資料正透過 FastTrack 移轉系統處理時，您需要處理任何存取權、修正或匯出 DSR 要求，客戶就有責任透過使用者資料儲存所在的現有來源系統來滿足這類 DSR。 一旦使用者的移轉完成且資料已移轉到目的地 Microsoft cloud 服務後，就會套用 Microsoft 針對客戶如何使用 Microsoft 產品、服務及系統管理工具來找出並處理個人資料，進而回應資料主體要求所提供的指引。 若要檢視此指引，請參閱 [GDPR 資料主體要求](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests)。 
 
-如果您的組織忙於處理進行中的 FastTrack 移轉專案時，您需要刪除 Office 365 使用者帳戶以回應 DSR 刪除要求，您應該知道移轉系統可能會在使用者完成移轉後，保留移轉資料複本一段時間，而刪除 Office 365 使用者帳戶並不會自動刪除 FastTrack 移轉系統中儲存的這類使用者移轉資料。如果您希望 Microsoft FastTrack 小組刪除使用者移轉資料，您可以[提交要求](https://go.microsoft.com/fwlink/?linkid=874544)。在一般商務過程中，Microsoft FastTrack 會在貴組織的移轉完成後，刪除所有的資料複本。
+如果您的組織忙於處理進行中的 FastTrack 移轉專案時，您需要刪除使用者帳戶以回應 DSR 刪除要求，您應該知道移轉系統可能會在使用者完成移轉後，保留移轉資料複本一段時間，而刪除使用者帳戶並不會自動刪除 FastTrack 移轉系統中儲存的這類使用者移轉資料。如果您希望 Microsoft FastTrack 小組刪除使用者移轉資料，您可以[提交要求](https://go.microsoft.com/fwlink/?linkid=874544)。在一般商務過程中，Microsoft FastTrack 會在貴組織的移轉完成後，刪除所有的資料複本。
 
 ## <a name="other-consulting-services"></a>其他諮詢服務
 

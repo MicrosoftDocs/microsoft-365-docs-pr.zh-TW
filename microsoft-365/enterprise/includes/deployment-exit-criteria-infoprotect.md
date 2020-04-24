@@ -14,7 +14,7 @@
 <a name="crit-infoprotect-step3"></a>
 ### <a name="required-increased-security-for-microsoft-365-is-configured"></a>必要：設定增強的 Microsoft 365 安全性
 
-您已為 [Office 365 增強的安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)設定下列設定：
+您已為 [Microsoft 365 增強的安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security) (部分機器翻譯) 設定下列設定：
 
 - Microsoft 365 安全性中心的威脅管理原則
 - Exchange Online 的其他全租用戶設定
@@ -52,18 +52,18 @@
 如有需要，[步驟 4](../infoprotect-deploy-windows-information-protection.md) 可協助您符合這項要求。 
 
 <a name="crit-infoprotect-step5"></a>
-### <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>選用：部署 Office 365 資料外洩防護 (DLP)
+### <a name="optional-data-loss-prevention-dlp-is-deployed"></a>選用：部署資料外洩防護 (DLP)
 
 您已分析、測試然後推出一組 DLP 原則 (具有位置和規則與條件和動作)，貴組織需要保護客戶和其他類型的私密資料，並且遵循產業和地區法規及需求。
 
-您的資料合規性和安全性人員使用 Office 365 安全性與合規性中心儀表板來監視 DLP 事件。
+您的資料合規性和安全性人員使用安全性與合規性中心儀表板來監視 DLP 事件。
 
 如有需要，[步驟 5](../infoprotect-data-loss-prevention.md) 可協助您符合這項要求。 
 
 <a name="crit-infoprotect-step6"></a>
 ### <a name="optional-email-encryption-is-configured"></a>選用：已設定電子郵件加密
 
-您已視需要設定組織的電子郵件加密：
+您已視需要設定組織的以下電子郵件加密：
 
 |||
 |:-------|:-----|

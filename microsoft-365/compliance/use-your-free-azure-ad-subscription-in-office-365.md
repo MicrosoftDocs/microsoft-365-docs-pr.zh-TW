@@ -1,5 +1,5 @@
 ---
-title: 使用 Office 365 中免費的 Azure Active Directory 訂閱
+title: 使用您的免費 Azure Active Directory 訂閱
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,17 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
-description: 了解如何存取 Azure Active Directory，其隨附於貴組織的 Office 365 的付費訂閱。
-ms.openlocfilehash: fb1e2586c0b21c72084d7120b8735fccccd1a004
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+description: 了解如何存取 Azure Active Directory，其隨附於貴組織的付費訂閱。
+ms.openlocfilehash: be8edecd348d0019916f4f1b974a2bd0f8cabbc9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710492"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626369"
 ---
-# <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>使用 Office 365 中免費的 Azure Active Directory 訂閱
+# <a name="use-your-free-azure-active-directory-subscription"></a>使用您的免費 Azure Active Directory 訂閱
 
-如果貴組織有 Office 365、Microsoft Dynamics CRM Online、Enterprise Mobility Suite 或其他 Microsoft 服務的付費訂閱，則您有 Microsoft Azure Active Directory 的免費訂閱。您和其他系統管理員可以使用 Azure AD，來建立並管理使用者和群組帳戶。若要使用 Azure AD，只需移至 Azure 入口網站，並使用您的 Office 365 帳戶登入。
+如果貴組織有 Microsoft 365、Microsoft Dynamics CRM Online、Enterprise Mobility Suite 或其他 Microsoft 服務的付費訂閱，則您有 Microsoft Azure Active Directory 的免費訂閱。您和其他系統管理員可以使用 Azure AD，來建立並管理使用者和群組帳戶。若要使用 Azure AD，只需移至 Azure 入口網站，然後登入您的帳戶。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -37,7 +37,7 @@ ms.locfileid: "42710492"
 
 ## <a name="access-azure-active-directory"></a>存取 Azure Active Directory
 
-1. 移至 [portal.azure.com](https://portal.azure.com)，並使用您的 Office 365 工作或學生帳戶登入。
+1. 移至 [portal.azure.com](https://portal.azure.com) 並使用您的公司或學生帳戶登入。
 
 2. 在 Azure 入口網站的左導覽窗格中，按一下 [Azure Active Directory]****。
 

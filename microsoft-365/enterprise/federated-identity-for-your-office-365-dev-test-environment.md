@@ -20,18 +20,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 摘要：設定適用於 Microsoft 365 測試環境的同盟驗證。
-ms.openlocfilehash: 4796f8f2a7dc6757ccbcb3d608d72ad789d34e40
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b0aa967570c3d12554cdb273a8b39b8931af1fbd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067616"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634095"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Microsoft 365 測試環境的同盟身分識別
 
 *這個測試實驗室指南可用於 Microsoft 365 企業版和 Office 365 企業版兩種測試環境。*
 
-Office 365 支援同盟身分識別。這表示 Office 365 的連線使用者指的是 Office 365 信任的同盟驗證伺服器，而不是執行認證本身的驗證。如果使用者的認證正確，同盟驗證伺服器會發出安全性權杖，用戶端再傳送到 Office 365 做為驗證證明。同盟身分識別可進行 Office 365 訂閱驗證的卸載與擴展，以及進階驗證及安全性案例。
+Microsoft 365 支援同盟身分識別。這表示 Microsoft 365 的連線使用者指的是 Microsoft 365 信任的同盟驗證伺服器，而不是執行認證本身的驗證。如果使用者的認證正確，同盟驗證伺服器會發出安全性權杖，用戶端再傳送到 Microsoft 365 做為驗證證明。同盟身分識別可進行 Microsoft 365 訂閱驗證的卸載與擴展，以及進階驗證及安全性案例。
   
 本文說明如何設定 Microsoft 365 或 Office 365 測試環境中的同盟驗證，如下：
 
@@ -53,7 +53,7 @@ Office 365 支援同盟身分識別。這表示 Office 365 的連線使用者指
     
 4. 建立自我簽署的憑證並設定 ADFS1 及 PROXY1。
     
-5. 設定 Office 365 的同盟身分識別。
+5. 設定 Microsoft 365 的同盟身分識別。
     
 > [!NOTE]
 > 您無法使用 Azure 試用訂閱設定此測試環境。 
@@ -67,11 +67,11 @@ Office 365 支援同盟身分識別。這表示 Office 365 的連線使用者指
 此組態包含： 
   
 - Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
-- 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 Azure AD Connect 在 APP1 上執行，以定期將 TESTLAB AD DS 網域同步至 Microsoft 365 或 Office 365 訂閱的 Azure AD 租用戶。
+- 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 Azure AD Connect 在 APP1 上執行，以定期將 TESTLAB AD DS 網域同步至 Microsoft 365 訂閱的 Azure AD 租用戶。
 
 ## <a name="phase-2-create-the-ad-fs-server"></a>階段 2：建立 AD FS 伺服器
 
-AD FS 伺服器提供 Office 365 和 DC1 上裝載 corp.contoso.com 網域中的帳戶之間的同盟驗證。
+AD FS 伺服器在 Microsoft 365 和 DC1 上裝載 corp.contoso.com 網域中的帳戶之間提供同盟驗證。
   
 若要為 ADFS1 建立 Azure 虛擬機器，請為基本設定填入訂閱和資源群組的名稱和 Azure 位置，然後在本機電腦上的 Azure PowerShell 命令提示字元執行這些命令。
   
@@ -349,11 +349,11 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
 8. 在 [結果]**** 頁面上，按一下 [關閉]****。
 
     
-## <a name="phase-5-configure-office-365-for-federated-identity"></a>階段 5：設定 Office 365 的同盟身分識別
+## <a name="phase-5-configure-microsoft-365-for-federated-identity"></a>階段5：設定 Microsoft 365 的同盟身分識別
 
 以 CORP\\User1 帳戶認證使用 [Azure 入口網站](https://portal.azure.com)連線到 APP1 虛擬機器。
   
-使用下列步驟為同盟驗證設定 Azure AD Connect 與 Office 365 訂閱：
+使用下列步驟為同盟驗證設定 Azure AD Connect 與 Microsoft 365 訂閱：
   
 1. 從桌面，按兩下 [Azure AD Connect]****。
     
@@ -361,7 +361,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 3. 在 [其他工作]**** 頁面上，按一下 [變更使用者登入]****，然後按一下 [下一步]****。
     
-4. 在 [連線到 Azure AD]**** 頁面上，輸入您的 Office 365 全域系統管理員帳戶名稱和密碼，然後按 [下一步]****。
+4. 在 [連線到 Azure AD]**** 頁面上，輸入您的全域系統管理員帳戶名稱和密碼，然後按 [下一步]****。
     
 5. 在 [使用者登入]**** 頁面上，按一下 [和 AD FS 的同盟]****，然後按 [下一步]****。
     
@@ -373,7 +373,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 9. 在 [AD FS 服務帳戶]**** 頁面上，在 [網域使用者名稱]**** 中輸入 **CORP\\ADFS 服務**，並在 [網域使用者密碼]**** 中輸入帳戶密碼，然後按一下 [下一步]****。
     
-10. 在 [Azure AD 網域]**** 頁面上，於 [網域]**** 中選取您先前在階段 1 建立並新增至 Office 365 訂閱的網域名稱，然後按一下 [下一步]****。
+10. 在 [Azure AD 網域]**** 頁面上，於 [網域]**** 中選取您先前在階段 1 建立並新增至訂閱的網域名稱，然後按一下 [下一步]****。
     
 11. 在 [準備設定]**** 頁面上，按一下 [設定]****。
     
@@ -389,7 +389,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 2. 在登入認證中輸入 **user1@**\< (在階段 1> 建立的網域)。 
     
-    比方說，如果您的測試網域是 **testlab.contoso.com**，則輸入 "user1@testlab.contoso.com"。按 TAB 鍵或讓 Office 365 為您自動重新導向。
+    比方說，如果您的測試網域是 **testlab.contoso.com**，則輸入 "user1@testlab.contoso.com"。按 TAB 鍵或讓 Microsoft 365 為您自動重新導向。
     
     您現在應該會看到**您的連線非私人連線**頁面。因為您在 ADFS1 上安裝了自我簽署的憑證，您的桌上型電腦無法加以驗證，才會出現此頁面。在同盟驗證的生產部署中，您可以使用來自受信任憑證授權單位的憑證，使用者即不會看到此頁面。
     
@@ -401,11 +401,11 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
   - User1 帳戶的密碼
     
-    您應該會看到 **Microsoft Office 首頁**頁面。
+    您應該會看到 [Microsoft Office 首頁]**** 頁面。
     
-此程序會示範 Office 365 試用訂閱與 DC1 上裝載的 AD DS corp.contoso.com 網域的同盟。以下是驗證程序的基本概念：
+此程序會示範試用訂閱與 DC1 上裝載的 AD DS corp.contoso.com 網域的同盟。以下是驗證程序的基本概念：
   
-1. 當您使用登入帳戶名稱內在階段 1 建立的同盟網域時，Office 365 會將您的瀏覽器重新導向至同盟服務 FQDN 和 PROXY1。
+1. 當您使用登入帳戶名稱內在階段 1 建立的同盟網域時，Microsoft 365 會將您的瀏覽器重新導向至同盟服務 FQDN 和 PROXY1。
     
 2. PROXY1 會向您的本機電腦傳送虛構公司登入頁面。
     
@@ -413,13 +413,13 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 4. ADFS1 會使用 DC1 驗證 CORP\\User1 和密碼，並向您的本機電腦傳送安全性權杖。
     
-5. 本機電腦會將安全性權杖傳送到 Office 365。
+5. 本機電腦會將安全性權杖傳送到 Microsoft 365。
     
-6. Office 365 會驗證安全性權杖是由 ADFS1 所建立，並允許存取。
+6. Microsoft 365 會驗證安全性權杖是由 ADFS1 所建立，並允許存取。
     
-您的 Office 365 試用訂閱現在設定使用同盟驗證。您可以將此開發/測試環境用於進階驗證案例。
+您的試用訂閱現在設定使用同盟驗證。您可以將此開發/測試環境用於進階驗證案例。
   
 ## <a name="next-step"></a>下一步
 
-當您準備好在 Azure 中部署 Office 365 的生產就緒、高可用性同盟驗證，請參閱＜[在 Azure 中部署 Microsoft 365 或 Office 365 的高可用性同盟驗證](https://docs.microsoft.com/office365/enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure)＞。
+當您準備好在 Azure 中部署 Microsoft 365 或 Office 365 的生產就緒、高可用性同盟驗證，請參閱＜[在 Azure 中部署 Microsoft 365 的高可用性同盟驗證](https://docs.microsoft.com/office365/enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure)＞。
   

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 透過安全性與合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監控及自動保護整個 Office 365 的敏感性資訊。
-ms.openlocfilehash: f61d6c13a66b7f1d93c7bdc1404265e8567e2fb7
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 68e81a83242ef4a1a099760044b5ccaec5bd91b7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189069"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630600"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -79,7 +79,7 @@ DLP 原則包含一些基本事項：
   
 ### <a name="locations"></a>位置
 
-不論敏感性資訊是在 Exchange Online、SharePoint Online、商務用 OneDrive 或 Microsoft Teams 上，DLP 原則都可以透過 Office 365 尋找及保護該資訊。 您可以選擇保護 Exchange 電子郵件、Microsoft Teams 聊天和頻道訊息，以及所有 SharePoint 或 OneDrive 文件庫中的內容，或者針對原則選取特定位置。
+不論敏感性資訊是在 Exchange Online、SharePoint Online、商務用 OneDrive 或 Microsoft Teams 上，DLP 原則都可以透過 Microsoft 365 尋找及保護該資訊。 您可以選擇保護 Exchange 電子郵件、Microsoft Teams 聊天和頻道訊息，以及所有 SharePoint 或 OneDrive 文件庫中的內容，或者針對原則選取特定位置。
   
 ![DLP 原則可以套用的位置選項](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
@@ -121,7 +121,7 @@ DLP 原則包含一些基本事項：
     
 #### <a name="types-of-sensitive-information"></a>敏感性資訊類型
 
-DLP 原則有助於保護敏感性資訊 (已定義為**敏感性資訊類型**)。 Office 365 包含許多不同區域多種常見敏感資訊類型可供您使用，例如信用卡號碼、銀行帳戶號碼、身分證號碼和護照號碼。 
+DLP 原則有助於保護敏感性資訊 (已定義為**敏感性資訊類型**)。 Microsoft 365 包含許多不同區域多種常見敏感資訊類型可供您使用，例如信用卡號碼、銀行帳戶號碼、身分證號碼和護照號碼。 
   
 ![可用的敏感性資訊類型清單](../media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
   
@@ -397,7 +397,7 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
 
 建立 DLP 原則的第一步是選擇要保護的資訊。 從 DLP 範本開始，您就省去從頭建立新規則集，以及釐清應依預設包含資訊類型的工作。 接著，您可以新增或修改這些需求以微調規則，達到組織的特定需求。
   
-預先設定的原則範本可協助您偵測特定的敏感性資訊類型，例如 HIPAA 資料、PCI-DSS 資料、Gramm-Leach-Bliley 金融服務業現代化法案資料，或甚至是特定地區設定的個人識別資訊 (PII)。 為了讓您能輕鬆地尋找並保護常見的敏感資訊類型，Office 365 中包含的原則範本納入了最常見的敏感資訊類型，讓您快速著手使用。
+預先設定的原則範本可協助您偵測特定的敏感性資訊類型，例如 HIPAA 資料、PCI-DSS 資料、Gramm-Leach-Bliley 金融服務業現代化法案資料，或甚至是特定地區設定的個人識別資訊 (PII)。 為了讓您能輕鬆地尋找並保護常見的敏感資訊類型，Microsoft 365 中包含的原則範本納入了最常見的敏感資訊類型，讓您快速著手使用。
   
 ![資料外洩防護原則的範本清單，重點在於針對美國的範本愛國者法案](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
   
@@ -501,11 +501,11 @@ Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容�
 
 您的合規性小組中將建立 DLP 原則的成員必須具備安全性與合規性中心的權限。 根據預設，您的租用戶系統管理員具備安全性與合規性中心的存取權，且能夠將權限授與法務人員和其他人員，而不必將租用戶系統管理員的所有權限授與他們。若要這樣做，建議您：
   
-1. 在 Office 365 中建立一個群組，並將法務人員新增至此群組。
+1. 在 Microsoft 365 中建立一個群組，並將法務人員新增至此群組。
     
 2. 在安全性與合規性中心的 **[權限]** 頁面上建立角色群組。 
     
-3. 將 Office 365 群組新增至此角色群組。
+3. 將 Microsoft 365 群組新增至角色群組。
     
 如需詳細資訊，請參閱[授與使用者存取 Office 365 合規性中心的權限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
@@ -519,7 +519,7 @@ Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容�
     
 2. 使用任何 [policy-and-compliance-dlp cmdlets](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
     
-不過，DLP 報告需要從整個 Office 365 擷取資料，包含 Exchange Online。 有鑑於此，**DLP 報告的 Cmdlet 可在 Exchange Online PowerShell 中使用，但安全性與合規性中心 PowerShell 則不行**。 因此，若要為 DLP 報告使用 Cmdlet，您需要︰
+不過，DLP 報告需要從整個 Microsoft 365 擷取資料，包含 Exchange Online。 有鑑於此，**DLP 報告的 Cmdlet 可在 Exchange Online PowerShell 中使用，但安全性與合規性中心 PowerShell 則不行**。 因此，若要為 DLP 報告使用 Cmdlet，您需要︰
   
 1. [使用遠端 PowerShell 連線到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
@@ -544,4 +544,3 @@ Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容�
 - [DLP 功能所尋找的項目](what-the-dlp-functions-look-for.md)
     
 - [建立自訂的敏感性資訊類型](create-a-custom-sensitive-information-type.md)
-    

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 請確定您的組態符合 Windows 10 企業版的 Microsoft 365 企業版準則。
-ms.openlocfilehash: 42d8ec912a70aecef49672682c25f5e42c4bbe21
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: cf4a813a6cf89029eebde8e5947caf7b3c2ea553
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632991"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636684"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>階段 3：Windows 10 企業版基礎結構允出準則
 
@@ -127,4 +127,4 @@ Windows Autopilot 會設定裝置並將它連線到 Azure AD。
 
 |||
 |:-------|:-----|
-|![階段 4：Office 365 專業增強版](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| 如果您會遵循 Microsoft 365 企業版的端對端部署階段，則下一個階段是 [Office 365 專業增強版](office365proplus-infrastructure.md)。 |
+|![階段 4：Microsoft 365 Apps 企業版](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| 如果您會遵循 Microsoft 365 企業版的端對端部署階段，則下一個階段是 [Microsoft 365 Apps 企業版](office365proplus-infrastructure.md)。 |

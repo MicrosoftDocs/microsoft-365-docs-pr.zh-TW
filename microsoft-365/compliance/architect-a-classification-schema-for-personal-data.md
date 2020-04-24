@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 判斷您的組織是否將實作標籤做為 GDPR 計劃的一部分。
-ms.openlocfilehash: fa10e3ccd320026f06db76feef8711f8483c2b70
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: db61c5c26ed8484e99aa8f06310bdd3385cf2dce
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596040"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637133"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>設計個人資料的分類結構描述
 
@@ -32,11 +32,11 @@ ms.locfileid: "41596040"
 
 ## <a name="decide-if-youre-using-labels-in-addition-to-sensitive-data-types"></a>決定您除了敏感性資料類型外是否也使用標籤
 
-您可以在 Office 365 中採取兩種方法，對個人資訊進行分類。其中一種可以用於 GDPR 保護。如果您決定僅使用敏感資訊類型進行分類，您可以跳過本主題的其餘部分。
+您可以在 Microsoft 365 中採取兩種方法對個人資訊進行分類。任一種都可用於 GDPR 保護。如果您決定僅使用敏感資訊類型進行分類，您可以跳過本主題的其餘部分。
 
 選擇下列其中一個選項。
 
-### <a name="option-1-use-only-office-365-sensitive-information-types"></a>選項 1：僅使用 Office 365 敏感資訊類型
+### <a name="option-1-use-only-microsoft-365-sensitive-information-types"></a>選項 1：僅使用 Microsoft 365 敏感資訊類型
 
 - 敏感資訊類型非常適用於識別和保護受到 GDPR 和其他法規類型約束的個人資料。
 
@@ -48,7 +48,7 @@ ms.locfileid: "41596040"
 
 ### <a name="option-2-use-sensitive-information-types--retention-labels"></a>選項 2：使用敏感性資訊類型 + 保留標籤
 
-- 您將需要敏感性資訊類型，才能對受限於 GDPR 的個人資料自動套用標籤，因此這些是必要的。
+- 您將需要敏感資訊類型，才能對受限於 GDPR 的個人資料自動套用標籤，因此這些是必要的。
 
 - 使用保留標籤可讓您將受到 GDPR 約束的個人資料併入更廣泛的資料控管計劃中。
 

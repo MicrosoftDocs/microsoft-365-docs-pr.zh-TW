@@ -1,5 +1,5 @@
 ---
-title: 搜尋 Office 365 中內部部署使用者的雲端式信箱
+title: 搜尋內部部署使用者的雲端式信箱
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,20 +17,20 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全性與合規性中心的內容搜尋工具，在 Exchange 混合式部署中搜尋及匯出內部部署使用者的 Microsoft Teams 聊天資料 (稱為 1xN 聊天)。
-ms.openlocfilehash: ba3504289306543916667066738a25cf168d13e5
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 9dc9219d6ef1a387e1514deb672386d7d3c18290
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604150"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626449"
 ---
-# <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>搜尋 Office 365 中內部部署使用者的雲端式信箱
+# <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>搜尋內部部署使用者的雲端式信箱
 
 如果貴組織使用 Exchange 混合式部署 (或將內部部署的 Exchange 組織與 Office 365 同步)，且已啟用 Microsoft Teams，則使用者可以使用 Teams 聊天應用程式進行立即訊息傳遞。 針對雲端式使用者，Teams 聊天資料 (又稱為 *1xN 聊天*) 會儲存到其主要雲端式信箱。 內部部署使用者使用 Teams 聊天應用程式時，其主要信箱位於內部部署。 為了避免此限制，Microsoft 已發佈一項新功能，其中建立雲端式儲存空間區域 (稱為內部部署使用者的雲端式信箱)，用於儲存內部部署使用者的 Teams 聊天資料。 這可讓您使用安全性與合規性中心的內容搜尋工具來搜尋及匯出內部部署使用者的 Teams 聊天資料。 
   
 以下是設定內部部署使用者雲端式信箱的要求和限制：
   
-- 內部部署目錄服務 (例如 Active Directory) 的使用者帳戶必須與 Azure Active Directory (Office 365 中的目錄服務) 同步。 這表示會在 Office 365 中建立郵件使用者帳戶，並將該帳戶與主要信箱位於內部部署組織中的使用者相關聯。
+- 內部部署目錄服務 (例如 Active Directory) 的使用者帳戶必須與 Azure Active Directory (Microsoft 365 中的目錄服務) 同步。 這表示會在 Microsoft 365 中建立郵件使用者帳戶，並將該帳戶與主要信箱位於內部部署組織中的使用者相關聯。
 
 - 主要信箱位於內部部署組織中的使用者必須受指派 Microsoft Teams 授權和 Exchange Online 方案 1 授權 (最低要求)。
 
@@ -39,7 +39,7 @@ ms.locfileid: "42604150"
 - 您必須向 Microsoft 支援服務提交要求，以讓貴組織在內部部署使用者的雲端式信箱中搜尋 Teams 聊天資料。 請參閱本文中的[向 Microsoft 支援服務提交啟用此功能的要求](#filing-a-request-with-microsoft-support-to-enable-this-feature)。 
 
 > [!NOTE]
-> Teams 頻道交談一律儲存在與團隊相關聯的雲端式信箱中。 這表示您可以使用內容搜尋來搜尋頻道交談，而不須提交支援要求。 如需有關搜尋 Teams 頻道交談的詳細資訊，請參閱[搜尋 Microsoft Teams 和 Office 365 群組](content-search.md#searching-microsoft-teams-and-office-365-groups)。
+> Teams 頻道交談一律儲存在與團隊相關聯的雲端式信箱中。 這表示您可以使用內容搜尋來搜尋頻道交談，而不須提交支援要求。 如需有關搜尋 Teams 頻道交談的詳細資訊，請參閱[搜尋 Microsoft Teams 和 Microsoft 365 群組](content-search.md#searching-microsoft-teams-and-microsoft-365-groups)。
   
 ## <a name="how-it-works"></a>運作方式
 
@@ -57,17 +57,17 @@ ms.locfileid: "42604150"
   
 向 Microsoft 支援服務提交要求時，請提供下列資訊：
   
-- Office 365 組織的預設網域名稱。
+- 組織的預設網域名稱。
 
-- Office 365 組織的租用戶名稱和租用戶識別碼。 您可以在 Azure Active Directory 入口網站 (在 **[管理]** \> **[屬性]** 底下) 找到這些資訊。 請參閱[尋找您的 Office 365 租用戶識別碼](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b)。
+- 組織的租用戶名稱和租用戶識別碼。 您可以在 Azure Active Directory 入口網站 (在 **[管理]** \> **[屬性]** 底下) 找到這些資訊。 請參閱[尋找 Microsoft 365 租用戶識別碼](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b)。
 
-- 可在支援要求中使用下列目的標題或描述：「啟用內部部署使用者的應用程式內容搜尋」。 這可協助您將要求傳送到可實作要求的 Office 365 電子文件探索工程團隊。
+- 可在支援要求中使用下列目的標題或描述：「啟用內部部署使用者的應用程式內容搜尋」。 這可協助您將要求傳送到負責實作要求的電子文件探索工程團隊。
 
 工程變更完成後，Microsoft 支援服務就會傳送預計部署日期。 提交支援要求後，部署程序通常需要 2 到 3 週的時間。
   
 ### <a name="what-happens-after-this-feature-is-enabled"></a>啟用此功能後會發生什麼情況？
 
-在您的 Office 365 組織中部署此功能後，便會在安全性與合規性中心的內容搜尋和與電子文件探索案例相關聯的搜尋中進行下列變更：
+在貴組織中部署此功能後，便會在安全性與合規性中心的內容搜尋和與電子文件探索案例相關聯的搜尋中進行下列變更：
   
 - **[為內部部署使用者新增 Office App 內容]** 核取方塊會新增到內容搜尋中的 **[位置]** 底下。
 
@@ -143,7 +143,7 @@ ms.locfileid: "42604150"
 
  **內部部署使用者的雲端式信箱位於何處？**
   
-雲端式信箱建立並儲存在與 Office 365 組織相同的資料中心。
+雲端式信箱建立並儲存在與組織相同的資料中心。
   
  **除了提交支援要求外，還有其他需求嗎？**
   
@@ -153,9 +153,9 @@ ms.locfileid: "42604150"
   
 否。 將內部部署使用者的主要信箱移轉到雲端時，該使用者的 Teams 聊天資料就會移轉至新的雲端式主要信箱。
   
- **可以將電子文件探索保留或 Office 365 保留原則套用至內部部署使用者嗎？**
+ **可以將電子文件探索保留或保留原則套用至內部部署使用者嗎？**
   
-可以。 您可以將 Teams 聊天和頻道訊息的電子文件探索保留或保留原則套用至內部部署使用者的雲端式信箱。
+是。 您可以將 Teams 聊天和頻道訊息的電子文件探索保留或保留原則套用至內部部署使用者的雲端式信箱。
   
  **在組織提交啟用此功能的要求之前，內容搜尋是否能找到內部部署使用者較早的 Teams 聊天？**
   

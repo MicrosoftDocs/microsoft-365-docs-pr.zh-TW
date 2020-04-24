@@ -22,19 +22,18 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: 使用您的地區或區域所列電話號碼，或提交線上服務要求，或造訪 Microsoft 網上商店以取得技術和帳單支援。
+description: 使用您的國家/地區所列電話號碼，或提交線上服務要求，或造訪 Microsoft 網上商店以取得技術和帳單支援。
 feedback_system: None
-ms.openlocfilehash: 8f69b77d8e16d4ed73aa8ecf9f15bc8998cf0f20
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f1698de8c9b1d80763c983fbc9adf3778be45645
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627075"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707544"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>連絡商務產品的客戶支援 - 系統管理說明
 
 ::: moniker range="o365-worldwide"
-
 
 ## <a name="online-support"></a>[線上支援](#tab/online)
 
@@ -52,7 +51,9 @@ ms.locfileid: "43627075"
 
 ## <a name="phone-support"></a>[電話支援](#tab/phone)
 
-英文的帳單支援提供時間為週一至週五的上午 9 點到下午 5 點 (澳洲為上午 9 點到下午 6 點)。  <br/>英文的技術支援提供時間為每週 7 天，每天 24 小時。 <br/> 系統管理員在撥打電話時，必須準備好帳戶詳細資料。<br/>
+英文的帳單支援提供時間為週一至週五的上午 9 點到下午 5 點 (澳洲為上午 9 點到下午 6 點)。\
+英文的技術支援提供時間為每週 7 天，每天 24 小時。\
+系統管理員在撥打電話時，必須準備好帳戶詳細資料。\
 
 - **美國請撥 1 800 865 9408。**
 

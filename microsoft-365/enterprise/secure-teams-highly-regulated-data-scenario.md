@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立安全小組來儲存您最重要且最敏感的檔案。
-ms.openlocfilehash: aeb3662d6c8a21cbd56d983515913750fd5259f1
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 95c0fc4177f2a16fc79dd0833809f4405e8cdda9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951967"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631390"
 ---
 # <a name="teams-for-highly-regulated-data"></a>適用於高度管制資料的 Microsoft Teams
 
-本文提供在 Microsoft Teams 中設定私人小組的建議和步驟，讓您可以鎖定如聊天、會議和檔案等 Microsoft Teams 功能的存取權，僅供小組中 Office 365 群組的成員和擁有者使用。 
+本文提供在 Microsoft Teams 中設定私人小組的建議和步驟，讓您可以鎖定如聊天、會議和檔案等 Microsoft Teams 功能的存取權，僅供小組中 Microsoft 365 群組的成員和擁有者使用。 
 
-除了 Office 365 群組基本的私用存取外，本文還說明如何針對儲存高度管制資料所需的額外安全性，設定基礎的私人 SharePoint 小組網站，此網站可透過小組頻道的 [檔案]**** 區段進行存取。 在此 SharePoint 小組網站中，您可以對檔案、頁面、共用行事曆、工作、筆記本和清單進行儲存和共同作業。
+除了 Microsoft 365 群組基本的私用存取外，本文還說明如何針對儲存高度管制資料所需的額外安全性，設定基礎的私人 SharePoint 小組網站，此網站可透過小組頻道的 [檔案]**** 區段進行存取。 在此 SharePoint 小組網站中，您可以對檔案、頁面、共用行事曆、工作、筆記本和清單進行儲存和共同作業。
 
 >[!Note]
 > [這裡](teams-sharepoint-online-sites-highly-regulated-data.md)提供使用 SharePoint 的類似案例。
@@ -34,13 +34,13 @@ ms.locfileid: "42951967"
 
 針對高度管制資料，小組需要設定的元素有：
 
-- 私人小組，具有對應的 Office 365 群組，群組中有擁有者和成員使用者帳戶。
+- 私人小組，具有對應的 Microsoft 365 群組，群組中有擁有者和成員使用者帳戶。
 - 小組的基礎 SharePoint 網站需要的額外安全性有：
   - 避免網站成員將存取權授與其他使用者。
   - 避免非網站成員要求網站的存取權。
-- 基礎 SharePoint 網站的 Office 365 保留標籤，可自動套用到網站上的新檔案，作為定義保留原則的預設方法。
+- 基礎 SharePoint 網站的保留標籤，可自動套用到網站上的新檔案，作為定義保留原則的預設方法。
 - 資料外洩防護 (DLP) 原則，利用保留標籤封鎖使用者對組織外部共用或傳送檔案。
-- Office 365 敏感度標籤或高度管制標籤的子標籤，已啟用加密且對小組的 Office 365 群組具有共同撰寫權限。 使用者可以從 Word、Excel 和 PowerPoint 的 [敏感度]**** 功能表列，將標籤或子標籤套用到儲存在小組中 [檔案]**** 區段的檔案。
+- 敏感度標籤或高度管制標籤的子標籤，已啟用加密且對小組的 Microsoft 365 群組具有共同撰寫權限。 使用者可以從 Word、Excel 和 PowerPoint 的 [敏感度]**** 功能表列，將標籤或子標籤套用到儲存在小組中 [檔案]**** 區段的檔案。
 
 以下是使用敏感度標籤所產生的組態。
 
@@ -76,7 +76,7 @@ ms.locfileid: "42951967"
 
 當您建立私人小組時，預設權限如下：
 
-- 小組的 Office 365 群組 (以下稱「小組群組」) 有群組擁有者和群組成員
+- 小組的 Microsoft 365 群組 (以下稱「小組群組」) 有群組擁有者和群組成員
 - 針對小組的基礎 SharePoint 網站 (以下稱「小組網站」)：
   - 網站集合系統管理員會設定為「小組群組」擁有者
   - 針對「小組網站」： 

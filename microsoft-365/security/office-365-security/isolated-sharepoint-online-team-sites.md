@@ -17,18 +17,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: 摘要：了解獨立的 Sharepoint 小組網站的用途。
-ms.openlocfilehash: 5750db2206211b6bb231ea01a12d7426a1d731a9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b62223b231c4b6dc0d233d899472800226503323
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599080"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634107"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>獨立的 SharePoint Online 小組網站
 
  **摘要：** 了解獨立的 Sharepoint 小組網站的用途。
   
-SharePoint Online 小組網站是為 Microsoft Office 365 中的記事、文件、文章、行事曆及其他資源快速建立共同作業空間的簡易方式。SharePoint Online 小組網站是以 Office 365 群組為基礎，具有簡化的系統管理模型，可以允許具有私人群組成員集合或整個組織的開發共同作業。預設 SharePoint Online 小組網站可讓 Office 365 群組的成員邀請其他使用者並且控制權限設定。
+SharePoint Online 小組網站是為 Microsoft Office 365 中的記事、文件、文章、行事曆及其他資源快速建立共同作業空間的簡易方式。SharePoint Online 小組網站是以 Microsoft 365 群組為基礎，具有簡化的系統管理模型，可以允許具有私人群組成員集合或整個組織的開發共同作業。預設 SharePoint Online 小組網站可讓 Microsoft 365 群組的成員邀請其他使用者並且控制權限設定。
   
 不過，在某些情況下，您會想要為網站權限是透過群組成員資格和 SharePoint Online 權限等級 (只能由 SharePoint 系統管理員進行管理) 進行更嚴密控制的共同作業建立 SharePoint Online 小組網站。我們將它稱為獨立的網站，它獨立於共用作業、檢視其內容或管理網站的使用者集合。針對下列項目，您可能需要獨立的網站：
   
@@ -38,7 +38,7 @@ SharePoint Online 小組網站是為 Microsoft Office 365 中的記事、文件�
     
 - 組織採取的法律行動資源，或其受限所在的資源。
     
-- 為了在某些地方重疊，但是大部分來說是個別商務實體的多個組織之間共用 Office 365 訂閱。
+- 為了在某些地方重疊，但是大部分來說是個別商務實體的多個組織之間共用 Microsoft 365 訂閱。
     
 以下是獨立網站的需求：
   
@@ -48,7 +48,7 @@ SharePoint Online 小組網站是為 Microsoft Office 365 中的記事、文件�
     
 - 不是獨立網站成員的使用者無法要求網站的存取權。當他們嘗試存取與網站相關聯的任何 URL 時，會進入存取遭拒網頁。
     
-SharePoint Online 系統管理員要求集中式存取控制和自訂權限的代價是網站經過一段時間後仍然是獨立的。舉例來說，目前成員無論有意或無意，都無法對不應該是網站成員的 Office 365 訂閱內其他使用者進行邀請或設定自訂權限。
+SharePoint Online 系統管理員要求集中式存取控制和自訂權限的代價是網站經過一段時間後仍然是獨立的。舉例來說，目前成員無論有意或無意，都無法對不應該是網站成員的 Microsoft 365 訂閱內其他使用者進行邀請或設定自訂權限。
   
 獨立的網站可以與其他功能搭配使用，例如：
   

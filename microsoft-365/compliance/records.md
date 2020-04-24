@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 若要在您的 Office 365 或 Microsoft 組織中執行記錄管理策略，請使用保留標籤將內容宣告為記錄。 然後發佈或自動套用保留記錄標籤。
-ms.openlocfilehash: d497f3e536a54226ad9e7b5bb9a399f66774c25e
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: db33c65b6c3528a717672b0111a9da098a3d5c31
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153831"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632112"
 ---
 # <a name="overview-of-records"></a>記錄概觀
 
@@ -108,6 +108,9 @@ ms.locfileid: "43153831"
 
 ![標記為記錄之文件的 [記錄狀態] 內容](../media/recordversioning8.png)
 
+> [!NOTE]
+> 記錄版本設定要求每位有權編輯在 SharePoint 網站或 OneDrive 帳戶中被宣告為記錄的內容的使用者，都必須獲得 Office 365 Enterprise E5 授權。 具有唯讀存取權的使用者不需要此授權。
+
 ### <a name="locking-and-unlocking-a-record"></a>鎖定和解除鎖定記錄
 
 當您將記錄標籤指派給文件之後，具有 [參與] 權限或更低權限等級的所有使用者都可以解除鎖定記錄或鎖定已解鎖的記錄。
@@ -153,7 +156,7 @@ ms.locfileid: "43153831"
 
 ### <a name="searching-the-audit-log-for-record-versioning-events"></a>搜尋記錄版本設定事件的稽核記錄
 
-鎖定和解鎖記錄的動作會記錄在 Office 365 稽核記錄中。 您可以搜尋 [已將記錄狀態變更為「鎖定」]**** 和 [已將記錄狀態變更為「未鎖定」]**** 的特定活動，其位於 [安全性與合規性中心]**** 的 [稽核記錄搜尋]**** 頁面上，[檔案與頁面活動] 區段的 [活動]**** 下拉式清單中。
+鎖定和解鎖記錄的動作會記錄在稽核記錄中。 您可以搜尋 [已將記錄狀態變更為「鎖定」]**** 和 [已將記錄狀態變更為「未鎖定」]**** 的特定活動，其位於 [安全性與合規性中心]**** 的 [稽核記錄搜尋]**** 頁面上，[檔案與頁面活動] 區段的 [活動]**** 下拉式清單中。
 <br/><br/>
 
 ![搜尋記錄版本設定事件的稽核記錄](../media/recordversioning13.png)

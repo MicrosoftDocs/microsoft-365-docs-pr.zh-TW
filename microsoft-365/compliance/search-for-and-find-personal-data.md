@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何搜尋並找出 Office 365 中的個人資料。
-ms.openlocfilehash: 31ff182c673b9a8d8f468b81c6cf5d30cf00733a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3bcae58049cd844a64bfbff89f78a98df6e25dbc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597560"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638127"
 ---
 # <a name="search-for-and-find-personal-data"></a>搜尋並找出個人資料
 
@@ -33,7 +33,7 @@ ms.locfileid: "41597560"
 
 > 「個人資料」表示與已識別或可識別之自然人 (資料主旨) 相關的任何資訊。可識別的自然人是可以直接或間接識別的人員，尤其藉由參照識別碼來識別，例如名稱、身分證號碼、位置資料、線上識別碼，或特定於該自然人的身體、生理、基因、心理、經濟、文化或社會身份的一個或多個因素；
 
-本文示範如何找出 SharePoint 和商務用 OneDrive (其中包含所有 Office 365 群組和 Microsoft Teams 的網站) 中儲存的個人資料。
+本文示範如何找出 SharePoint 和商務用 OneDrive (其中包含所有 Microsoft 365 群組和 Microsoft Teams 的網站) 中儲存的個人資料。
 
 尋找受限於 GDPR 的個人資料視 Office 365 中使用的機密資訊類型而定。 這將定義自動化程式如何識別特定的資訊類型，例如健保號碼和信用卡號碼。 您可以在傳輸時使用資料外洩防護原則來尋找郵件中的個人資料。 您可以使用為 GDPR 策展的敏感性資訊類型，來尋找和保護透過電子郵件傳送的個人資訊。 也請參閱[使用安全性與合規性中心的 DSR 案例工具來管理 GDPR 資料主體要求](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool)。
 
@@ -97,13 +97,13 @@ Microsoft 建議三階段方法，來尋找 Office 365 中的個人資料。本�
 <tbody>
 <tr class="odd"><td align="left"><p>移至安全性與合規性中心的內容搜尋</p></td>
 <td align="left"><p>在安全性與合規性中心的左窗格中，按一下 [搜尋與調查]**** &gt; [內容搜尋]****。</p>
-<p>請參閱<a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">在 Office 365 安全性與合規性中心執行內容搜尋</a>。</p></td>
+<p>請參閱<a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">在安全性與合規性中心執行內容搜尋</a>。</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>為每一種敏感資訊類型建立新的搜尋項目</p></td>
 <td align="left"><p>請使用下列語法：</p>
 <blockquote>
-<p>SensitiveType:”&lt;type&gt;”</p>
+<p>SensitiveType:"&lt;type&gt;"</p>
 </blockquote>
 <p>例如：</p>
 <blockquote>
@@ -117,7 +117,7 @@ Microsoft 建議三階段方法，來尋找 Office 365 中的個人資料。本�
 <td align="left"><p>尋找這些類型的問題來判斷查詢目標是否精確：</p>
 <p><li>許多誤判</li></p>
 <p><li>缺少已知的資料執行個體</li></p>
-<p>請參閱<a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">從 Office 365 安全性與合規性中心匯出搜尋結果</a>。</p>
+<p>請參閱<a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">從安全性與合規性中心匯出搜尋結果</a>。</p>
 <p>注意：如果您是使用 Mozilla Firefox 或 Chrome，則可能需要先使用 Internet Explorer 或 Edge 下載報告，才能安裝所需的增益集。</p></td>
 </tr>
 </tbody>
@@ -153,7 +153,7 @@ Microsoft 建議三階段方法，來尋找 Office 365 中的個人資料。本�
 >
 > 法國社會安全號碼 (INSEE)
 >
-> 德國駕照號碼
+> 德國駕照編號
 >
 > 德國身分證號碼
 >
@@ -207,14 +207,14 @@ Microsoft 建議三階段方法，來尋找 Office 365 中的個人資料。本�
 
 語法：
 
--   SensitiveType:”\<type\>|\<count range\>|\<confidence range\>”
+-   SensitiveType:"\<type\>|\<count range\>|\<confidence range\>"
 
-範例：
+範例:
 
--   SensitiveType:“Credit Card Number|5” (僅傳回確切地包含五個信用卡號碼的文件)
+-   SensitiveType:"Credit Card Number|5" (僅傳回確切地包含五個信用卡號碼的文件)
 
--   SensitiveType:“Credit Card Number|\*|85..” (信賴範圍為 85% 或更高)
+-   SensitiveType:"Credit Card Number|\*|85.." (信賴範圍為 85% 或更高)
 
-注意：“SensitiveType” 會區分大小寫，但查詢的其餘部分不會。
+注意："SensitiveType" 會區分大小寫，但查詢的其餘部分不會。
 
 您也可以使用屬性和運算子來說明您如何修改查詢。如需詳細資訊和範例，請參閱[形成查詢以搜尋儲存在網站上的敏感資料](https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836)。

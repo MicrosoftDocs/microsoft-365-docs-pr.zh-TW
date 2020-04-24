@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的電子郵件驗證
+title: Microsoft 365 中的電子郵件驗證
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,17 +17,17 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: 深入了解 Office 365 中的 Exchange Online 和 Exchange Online Protection (EOP) 如何使用電子郵件驗證 (SPF、DKIM 和 DMARC) 來協助防止詐騙、網路釣魚和垃圾郵件。
-ms.openlocfilehash: 609f1a9bf80acc266bdfc5b0089eb6006be4bd7c
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: 深入了解 Microsoft 365 中的 Exchange Online 和 Exchange Online Protection (EOP) 如何使用電子郵件驗證 (SPF、DKIM 和 DMARC) 來協助防止詐騙、網路釣魚和垃圾郵件。
+ms.openlocfilehash: f3a3ea902cb0c4fede4fcfd919f0969765bc4a96
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529845"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637553"
 ---
-# <a name="email-authentication-in-office-365"></a>Office 365 中的電子郵件驗證
+# <a name="email-authentication-in-microsoft-365"></a>Microsoft 365 中的電子郵件驗證
 
-電子郵件驗證 (又稱為電子郵件驗證) 是一組嘗試停止詐騙 (來自偽造寄件者的電子郵件訊息) 的標準。 在擁有 Exchange Online 信箱的 Office 365 組織中，和沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，EOP 會使用標準來驗證內送電子郵件：
+電子郵件驗證 (又稱為電子郵件驗證) 是一組嘗試停止詐騙 (來自偽造寄件者的電子郵件訊息) 的標準。 在擁有 Exchange Online 信箱的 Microsoft 365 組織中，和沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，EOP 會使用標準來驗證內送電子郵件：
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 
@@ -55,7 +55,7 @@ DMARC 會藉由檢查郵件中的 [寄件者]**** 地址 (使用者在其電子�
 
 隱含電子郵件驗證是根據一般電子郵件驗證原則的許多延伸模組而建立。 這些延伸模組包括寄件者信譽、寄件者歷程記錄、收件者歷程記錄、行為分析，以及其他進階技術。 傳送郵件的網域若未使用電子郵件驗證原則，該郵件將被標示為詐騙郵件，除非郵件包含其他能指出其合法性的訊號。
 
-若要查看 Microsoft 的一般公告，請參閱[網路釣魚的範圍第 2 部分 - Office 365 中增強的反詐騙保護](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209)。
+若要查看 Microsoft 的一般公告，請參閱[網路釣魚的範圍第 2 部分 - Microsoft 365 中增強的反詐騙保護](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209) (英文)。
 
 ## <a name="composite-authentication"></a>複合驗證
 
@@ -63,9 +63,9 @@ DMARC 會藉由檢查郵件中的 [寄件者]**** 地址 (使用者在其電子�
 
 > Authentication-Results:<br/>&nbsp;&nbsp;&nbsp;compauth=\<fail | pass | softpass | none\> reason=\<yyy\>
 
-這些值會在 [Office 365 電子郵件驗證使用的 Authentication-results 郵件標頭欄位](anti-spam-message-headers.md#authentication-results-message-header-fields-used-by-office-365-email-authentication)中說明。
+這些值會在 [Authentication-results 郵件標頭](anti-spam-message-headers.md#authentication-results-message-header)中說明。
 
-系統管理員或甚至是使用者都能透過檢查郵件標題來決定 Office 365 如何判斷寄件者是偽造的。
+系統管理員或甚至是使用者都能透過檢查郵件標題來決定 Microsoft 365 如何判斷寄件者是偽造的。
 
 ## <a name="why-email-authentication-is-not-always-enough-to-stop-spoofing"></a>為什麼電子郵件驗證不一定能夠阻止詐騙
 
@@ -128,11 +128,11 @@ To: michelle@fabrikam.com
 
 ## <a name="solutions-for-legitimate-senders-who-are-sending-unauthenticated-email"></a>傳送未經驗證電子郵件的合法寄件者解決方案
 
-Office 365 會追蹤誰傳送未經驗證電子郵件到您的組織。 如果該服務認為寄件者不合法，則會標示為複合驗證失敗。 若要避免發生此情況，您可以使用本節中的建議。
+Microsoft 365 會追蹤誰傳送未經驗證電子郵件到您的組織。 如果該服務認為寄件者不合法，則會標示為複合驗證失敗。 若要避免發生此情況，您可以使用本節中的建議。
 
 ### <a name="configure-email-authentication-for-domains-you-own"></a>為您擁有的網域設定電子郵件驗證
 
-您可以使用這個方法，在您擁有多個租用戶或與多個租用戶互動的案例中，解決組織內部詐騙和跨網域詐騙。 其也有助於解決跨網域詐騙，您在其中傳送郵件給 Office 365 內的客戶，或其他提供者主控的第三方。
+您可以使用這個方法，在您擁有多個租用戶或與多個租用戶互動的案例中，解決組織內部詐騙和跨網域詐騙。 其也有助於解決跨網域詐騙，您在其中傳送郵件給 Microsoft 365 內的客戶，或其他提供者主控的第三方。
 
 - 為您的網域[設定 SPF 記錄](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。
 
@@ -152,7 +152,7 @@ fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
 
 此範例表示來自公司基礎結構的電子郵件將會通過電子郵件驗證，但是來自不明來源的電子郵件將會回歸中性。
 
-Office 365 會將來自公司基礎結構的內送電子郵件視為已驗證，但是來自無法識別來源的電子郵件可能仍會標示為詐騙 (依據 Office 365 是否可以對其進行隱含驗證而定)。 但是，比起所有電子郵件都被 Office 365 標示為詐騙郵件，這不失為一項改進。
+Microsoft 365 會將來自公司基礎結構的內送電子郵件視為已驗證，但是來自無法識別來源的電子郵件可能仍會標示為詐騙 (依據 Microsoft 365 是否可以對其進行隱含驗證而定)。 但是，比起所有電子郵件都被 Microsoft 365 標示為詐騙郵件，這不失為一項改進。
 
 當您開始使用 SPF 後援原則 `?all` 之後，您就可以逐漸探索及包含更多郵件來源，然後使用更嚴格的原則更新您的 SPF 記錄。
 
@@ -170,7 +170,7 @@ Office 365 會將來自公司基礎結構的內送電子郵件視為已驗證，
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>為寄件者/收件者配對建立允許項目
 
-若要略過垃圾郵件篩選、網路釣魚篩選的某些部分，但是不略過特定寄件者的惡意程式碼篩選，請參閱[在 Office 365 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。
+若要略過垃圾郵件篩選、網路釣魚篩選的某些部分，但是不略過特定寄件者的惡意程式碼篩選，請參閱[在 Microsoft 365 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。
 
 ### <a name="ask-the-sender-to-configure-email-authentication-for-domains-you-dont-own"></a>要求寄件者為您未擁有的網域設定電子郵件驗證
 

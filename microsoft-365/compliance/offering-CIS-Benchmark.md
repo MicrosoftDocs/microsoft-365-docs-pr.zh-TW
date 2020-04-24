@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bfb71a88f836fc68967398e3f27bebd11854c1de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a83c744bc9f1335e0ce2993801475fdf16164766
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602630"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627065"
 ---
 # <a name="center-for-internet-security-cis-benchmarks"></a>網際網路安全性 (CIS) 中心基準
 
@@ -46,7 +46,7 @@ CIS 基準是國際認可的安全性標準，防禦 IT 系統和資料免於網
   
 就像所有的 CIS 基準，Microsoft 基準是使用共識檢閱程序所建立，這個程序是根據來自各種學科、具有多元背景 (橫跨軟體開發、稽核和合規性、安全性研究、作業、政府及法律) 專家的意見。 Microsoft 是這些 CIS 努力的整合合作夥伴。 例如，Office 365 根據列出的服務進行測試，而產生的 Microsoft 365 基礎基準涵蓋大範圍的建議，讓您設定適當的安全性原則，這些原則涵蓋帳戶與驗證、資料管理、應用程式權限、儲存空間及其他安全性策略領域。  
   
-除了 Microsoft 產品和服務的基準，CIS 也發佈了[用於 Azure 虛擬機器的 CIS 強化映像](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/)，設定為符合 CIS 基準。 其中包括適用於 Microsoft Windows Server 2016 的 CIS 強化映像，經過認證可以在 Azure 上執行。 CIS 表示：「可以在 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=center%20for%20internet%20security) 上取得的 CIS 強化映像都經過認證，可以在 Azure 上執行。 它們已經針對整備以及與 Azure 公用雲端、服務提供者透過雲端作業系統網路主控的 Microsoft 雲端平台，以及由客戶管理的內部部署私人雲端 Windows Server Hyper-V 部署的相容性，經過預先測試」。
+除了 Microsoft 產品和服務的基準，CIS 也發佈了[用於 Azure 虛擬機器的 CIS 強化映像](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/)，設定為符合 CIS 基準。 其中包括適用於 Microsoft Windows Server 2016 的 CIS 強化映像，經過認證可以在 Azure 上執行。 CIS 表示：「可以在 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=center%20for%20internet%20security) 上取得的 CIS 強化映像都經過認證，可以在 Azure 上執行。 其已經針對整備以及與 Azure 公用雲端、服務提供者透過雲端作業系統網路主控的 Microsoft 雲端平台，以及由客戶管理的內部部署私人雲端 Windows Server Hyper-V 部署的相容性，經過預先測試」。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -68,7 +68,7 @@ CIS 基準是國際認可的安全性標準，防禦 IT 系統和資料免於網
 ## <a name="how-to-implement"></a>實作方法
 
 - [適用於 Azure 的 CIS 基準](https://azure.microsoft.com/mediahandler/files/resourcefiles/cis-microsoft-azure-foundations-security-benchmark/CIS_Microsoft_Azure_Foundations_Benchmark_v1.0.0.pdf)：取得針對 Azure 建立安全基礎組態的規範指導方針。  
-- [Office 365 安全性藍圖](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)：按照此藍圖，將資料外洩或遭入侵帳戶的可能性降至最低。
+- [Microsoft 365 安全性藍圖](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)：按照此藍圖，將資料外洩或遭入侵帳戶的可能性降至最低。
 - [Windows 安全性基準](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)：按照這些指導方針，以有效地使用貴組織中的安全性基準。
 - [CIS 控制雲端小幫手指南](https://www.cisecurity.org/white-papers/cis-controls-cloud-companion-guide/)：取得將 CIS 控制第 7 版中的安全性最佳做法套用至雲端環境的指導方針。
 
@@ -84,7 +84,7 @@ CIS 基準會為採用範圍內 Microsoft 產品和服務的任何人，建立�
 
 **誰參與開發 Microsoft CIS 基準？**
 
-CIS 會記錄其「準則是透過學科專家、技術廠商、公有和私人 CIS 基準社群成員，以及 CIS 基準開發小組的慷慨自願付出，進行開發」。 例如，您可以在[CIS Microsoft Azure 基礎基準 v1.0.0 現在可供使用](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/)上，找到 Azure 參與者的清單。
+CIS 會記錄其「準則是透過學科專家、技術廠商、公有和私人 CIS 基準社群成員，以及 CIS 基準開發小組的慷慨自願付出，進行開發」。 例如，您可以在 [CIS Microsoft Azure 基礎基準 v1.0.0 現在可供使用](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/)上，找到 Azure 參與者的清單。
 
 ## <a name="resources"></a>資源
 

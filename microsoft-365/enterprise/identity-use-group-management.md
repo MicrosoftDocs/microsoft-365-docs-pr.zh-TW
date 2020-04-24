@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 您可以使用群組來自動管理某些系統管理工作。
-ms.openlocfilehash: 215bb84cbb0cedc2f1320372ba8239cd51d07c98
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 047d733dbd586f094612c579f2b1685562c58ed1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633491"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637033"
 ---
 # <a name="step-5-use-groups-for-management"></a>步驟 5：使用群組進行管理
 
@@ -36,7 +36,7 @@ ms.locfileid: "42633491"
 使用者可要求安全性群組的成員資格，該要求會傳送給群組擁有者，而不是 IT 系統管理員。這可將群組成員資格的每日控制委派給小組、專案或業務擁有者，他們了解群組的業務使用，可以管理成員資格。
 
 >[!Note]
->自助群組管理功能僅適用於 Azure AD 安全性和 Office 365 群組。 它不適用於已啟用郵件功能的群組、通訊群組清單或已從內部部署 Active Directory 網域服務 (AD DS) 同步處理的任何群組。
+>自助群組管理功能僅適用於 Azure AD 安全性和 Microsoft 365 群組。 它不適用於已啟用郵件功能的群組、通訊群組清單或已從內部部署 Active Directory 網域服務 (AD DS) 同步處理的任何群組。
 >
 
 如需詳細資訊，請參閱[設定 Azure AD 群組自助管理的指示](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management)。

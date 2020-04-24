@@ -1,5 +1,5 @@
 ---
-title: 以 Office 365 使用者身分尋找及釋出隔離的郵件
+title: 以使用者身分找到並釋放被隔離的郵件
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,23 +16,23 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: 身為 Office 365 使用者，您可以檢視、釋出、刪除隔離郵件 (收件者是您，且經垃圾郵件篩選功能認為是垃圾郵件或大量電子郵件而加以隔離的郵件)。 您可以在「安全性與合規性中心」檢視和管理隔離郵件。
-ms.openlocfilehash: 32ae03c555742b9f08c272806464ed75585d08df
-ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
+description: 身為 Microsoft 365 使用者，您可以檢視、釋出、刪除隔離郵件 (收件者是您，且經垃圾郵件篩選功能認為是垃圾郵件或大量電子郵件而加以隔離的郵件)。 您可以在「安全性與合規性中心」檢視和管理隔離郵件。
+ms.openlocfilehash: 215cbc23aca3b7d10eca8c53d816892d0ca042cb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216901"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638103"
 ---
-# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>以 Office 365 使用者身分尋找及釋出隔離的郵件
+# <a name="find-and-release-quarantined-messages-as-a-user"></a>以使用者身分找到並釋放被隔離的郵件
 
-在擁有 Exchange Online 信箱的 Office 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，隔離區會保存可能有害或不想要的郵件。 如需詳細資訊，請參閱 [Office 365 中的隔離區](quarantine-email-messages.md)。
+在擁有 Exchange Online 信箱的 Microsoft 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，隔離區會保存可能有害或不想要的郵件。 如需詳細資訊，請參閱 [Office 365 中的隔離區](quarantine-email-messages.md)。
 
 身為使用者，您可以檢視、釋出、刪除收件者是您的隔離郵件，郵件之所以會遭到隔離，是因為系統認為這些郵件是垃圾郵件、大量電子郵件或 (2020 年 4 月起) 網路釣魚。 您可以在安全性與合規性中心 (如果系統管理員已設定) 或[使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)中查看和管理您的隔離郵件。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 若要開啟 Office 365 的「安全性與合規性中心」，請移至 <https://protection.office.com>。 若要直接開啟 [隔離區] 頁面，請移至 <https://protection.office.com/quarantine>。
+- 若要開啟安全性與合規性中心，請移至 <https://protection.office.com>。 若要直接開啟 [隔離區] 頁面，請移至 <https://protection.office.com/quarantine>。
 
 - 系統管理員可以設定郵件要先保留在隔離區中多久，然後才永久刪除 (反垃圾郵件原則)。 已在隔離區中到期的郵件將無法還原。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
@@ -66,7 +66,7 @@ ms.locfileid: "43216901"
 
    - **郵件識別碼**
 
-   - **原則名稱**：此屬性會顯示導致郵件被隔離的原則。 您可以將此資訊提供給您的系統管理員。
+   - **原則名稱**
 
    - **大小**
 
@@ -108,7 +108,7 @@ ms.locfileid: "43216901"
 
    - **主旨**：使用郵件的完整主旨。 搜尋時不會區分大小寫。
 
-   輸入搜尋準則後，請按一下![重新整理按鈕](../media/scc-quarantine-refresh.png) [重新整理]**** 來篩選結果。
+   輸入搜尋準則後，請按一下![重新整理按鈕](../../media/scc-quarantine-refresh.png) [重新整理]**** 來篩選結果。
 
 當您找到特定隔離郵件後，選取該郵件即可檢視其詳細資料，並對其採取動作 (例如檢視、釋出、下載或刪除郵件)。
 
@@ -150,7 +150,7 @@ ms.locfileid: "43216901"
 
   完成時，請按一下 [釋出郵件]****。
 
-- **檢視郵件標頭**：選擇此連結來查看郵件標頭文字。 若要深入分析標頭欄位和值，請將郵件標頭文字複製到您的剪貼簿，然後選擇 [Microsoft 郵件標頭分析器]**** 來移至遠端連線分析程式 (如果您想在不離開 Office 365 的情況下完成這項工作，請按一下滑鼠右鍵並選擇 [在新索引標籤中開啟]****)。 將郵件標頭貼至 [郵件標頭分析器] 區段的頁面上，並選擇 [分析標頭]****：
+- **檢視郵件標頭**：選擇此連結來查看郵件標頭文字。 若要深入分析標頭欄位和值，請將郵件標頭文字複製到您的剪貼簿，然後選擇 [Microsoft 郵件標頭分析器]**** 來移至遠端連線分析程式 (如果您想在不離開 Microsoft 365 的情況下完成這項工作，請按一下滑鼠右鍵並選擇 [在新索引標籤中開啟]****)。 將郵件標頭貼至 [郵件標頭分析器] 區段的頁面上，並選擇 [分析標頭]****：
 
 - **預覽郵件**：在出現的飛出窗格中，選擇下列其中一個選項：
 

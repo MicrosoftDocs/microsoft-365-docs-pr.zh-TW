@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解三種您可以用來監視個人資料外洩的工具。
-ms.openlocfilehash: 617f0fde0e4b15a014658ba0fc3cf2def4b88d81
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9bc56d1de153f1357064d2b3ddada0d0533bc3cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088382"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635157"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>監視個人資料的外洩
 
@@ -33,13 +33,13 @@ ms.locfileid: "42088382"
 
 在此圖例中：
 
-- 從 Office 365 資料外洩防護報告開始，這些報告用於監視 SharePoint Online、商務用 OneDrive 和傳輸中電子郵件中的個人資料。這些提供監視個人資料時的最大詳細資料層級。不過，這類報告不包含 Office 365 中的所有服務。
+- 從 Microsoft 365 資料外洩防護報告開始，這些報告用於監視 SharePoint Online、商務用 OneDrive 和傳輸中電子郵件中的個人資料。這些提供監視個人資料時的最大詳細資料層級。不過，這類報告不包含 Office 365 中的所有服務。
 
-- 接下來，使用警示和 Office 365 稽核記錄，以監視整個 Office 365 服務的活動。設定持續監視，或搜尋稽核記錄以調查事件。Office 365 稽核記錄適用於整個 Office 365 服務 — Sway、PowerBI、eDiscovery、Dynamics 365、Microsoft Flow’Microsoft Teams、Admin activity、OneDrive for Business、SharePoint Online、傳輸中郵件，以及靜態信箱。靜態信箱包括 Skype 交談。
+- 接下來，使用警示和稽核記錄，以監視整個服務的活動。設定持續監視，或搜尋稽核記錄以調查事件。稽核記錄適用於整個服務 — Sway、PowerBI、eDiscovery、Dynamics 365、Microsoft Flow’Microsoft Teams、Admin activity、商務用 OneDrive、SharePoint Online、傳輸中郵件，以及靜態信箱。靜態信箱包括 Skype 交談。
 
-- 最後，使用 Microsoft Cloud App Security 監視其他 SaaS 提供者中具有敏感資料的檔案。即將能夠在 Azure 資訊保護和具有 Cloud App Security 的 Office 之間使用 Office 365 敏感資訊類型和統一標籤。您可以設定適用於所有 SaaS 應用程式或特定應用程式 (例如 Box) 的原則。Cloud App Security 不會探索 Exchange 中的檔案，包括電子郵件的附加檔案。
+- 最後，使用 Microsoft Cloud App Security 監視其他 SaaS 提供者中具有敏感資料的檔案。即將能夠在 Azure 資訊保護和具有 Cloud App Security 的 Office 之間使用敏感資訊類型和統一標籤。您可以設定適用於所有 SaaS 應用程式或特定應用程式 (例如 Box) 的原則。Cloud App Security 不會探索 Exchange 中的檔案，包括電子郵件的附加檔案。
 
-## <a name="office-365-data-loss-prevention-reports"></a>Office 365 資料外洩防護報告
+## <a name="data-loss-prevention-reports"></a>資料外洩防護報告
 
 建立資料外洩防護 (DLP) 原則之後，您會想要確認原則是否達到您想要的效果並協助您符合規範。使用 Office 365 中的 DLP 報告，您可以快速檢視 DLP 原則及規則相符、覆寫及誤判的數量、查看它們是否會隨時間而有趨勢上揚或下降的變化、以不同方式篩選報告，以及選取圖形上線條的點來檢視其他詳細資料。
 
@@ -65,17 +65,17 @@ DLP 報告位於安全性中心和合規性中心。 瀏覽至 [報告] \> [檢�
 
 ![顯示 DLP 原則比對的報告](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
-## <a name="office-365-audit-log-and-alert-policies"></a>Office 365 稽核記錄和警示原則
+## <a name="audit-log-and-alert-policies"></a>稽核記錄和警示原則
 
-Office 365 稽核記錄包含的事件來自 Exchange Online、SharePoint Online、商務用 OneDrive、Azure Active Directory、Microsoft Teams’Power BI、Sway，以及其他 Office 365 服務。
+稽核記錄包含的事件來自 Exchange Online、SharePoint Online、商務用 OneDrive、Azure Active Directory、Microsoft Teams’Power BI、Sway，以及其他服務。
 
-安全性中心和合規性中心提供兩種方法來監視及報告 Office 365 稽核記錄：
+安全性中心和合規性中心提供兩種方法來監視及報告稽核記錄：
 
 - 設定警示原則、檢視警示和監視趨勢 — 使用安全性中心或合規性中心中的警示原則和警示儀表板工具。
 
 - 直接搜尋稽核記錄 — 搜尋指定日期範圍的所有事件。或者，根據特定準則 (例如執行動作的使用者、動作或目標物件) 篩選結果。
 
-資訊安全與規範小組可以使用這些工具，主動檢閱使用者和系統管理員在 Office 365 服務之間執行的活動。您可以設定自動警示，在特定網站集合上發生特定活動時傳送電子郵件通知 - 例如，從已知包含 GDPR 相關資訊的網站共用內容時。這可讓那些小組追蹤使用者，以確保他們遵循公司安全性原則，或是提供其他訓練。
+資訊安全與規範小組可以使用這些工具，主動檢閱使用者和系統管理員在服務之間執行的活動。您可以設定自動警示，在特定網站集合上發生特定活動時傳送電子郵件通知 - 例如，從已知包含 GDPR 相關資訊的網站共用內容時。這可讓那些小組追蹤使用者，以確保他們遵循公司安全性原則，或是提供其他訓練。
 
 資訊安全小組也可以搜尋稽核記錄，以調查可疑的資料外洩，並判斷根本原因，以及外洩範圍。此內建功能有助於遵循 GDPR 的第 33 條和第 34 條，這需要在特定時段內將資料外洩通知 GDPR 監理局和資料主體本身。稽核記錄項目只會在服務內保留 90 天 - 通常這是建議的天數，但許多組織需要這些記錄保留更長的一段時間。
 
@@ -87,13 +87,13 @@ Office 365 稽核記錄包含的事件來自 Exchange Online、SharePoint Online
 
 - [搜尋稽核記錄以取得 Office 365 中的使用者和系統管理員活動](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (簡介)
 
-- [開啟或關閉 Office 365 稽核記錄搜尋](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+- [開啟或關閉稽核記錄搜尋](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
 - [搜尋稽核記錄](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) (Cmdlet)
 
-- [Office 365 稽核記錄中的詳細內容](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
+- [稽核記錄中的詳細內容](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -113,9 +113,9 @@ Microsoft Cloud App Security 是一種全方位服務，可為您的雲端應用
 
 這些屬性類型即將在 Cloud App Security 推出：
 
-- Office 365 敏感資訊類型
+- 敏感性資訊類型
 
-- Office 365 與 Azure 資訊保護之間的統一標籤
+- Microsoft 365 與 Azure 資訊保護之間的統一標籤
 
 ### <a name="cloud-app-security-dashboard"></a>Cloud App Security 儀表板
 

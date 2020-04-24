@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解部署 Microsoft 365 企業版底層基礎結構階段的一些方法。
-ms.openlocfilehash: 765bba743485c13c65cd6377abe01f80f2df4c23
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5eb4851a4c967baae268e04113b4e44023164db4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067790"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638149"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Microsoft 365 企業版底層基礎結構部署策略
 
@@ -90,7 +90,7 @@ IT 基礎結構包含後端服務和向終端使用者推出的新增或改進�
 
 - 我需要於 12 月使用智慧型手機啟用 MFA。(身分識別)
 - 我於 3 月在 Windows 8.1 電腦上安裝了 Windows 10 企業版。(Windows 10 企業版)
-- 我於 6 月安裝了 Office 365 專業增強版，取代原本的 Office 2013。(Office 365 專業增強版)
+- 我在 6 月時安裝了 Microsoft 365 Apps 企業版來取代 Office 2013。 (Microsoft 365 Apps 企業版)
 - 我於 9 月註冊裝置並套用了 App 和裝置原則。 (行動裝置管理)
 - 我於 12 月安裝了 Azure 資訊保護用戶端，並接受有關如何將標籤套用至文件的訓練。(資訊保護)
 
@@ -100,7 +100,7 @@ IT 基礎結構包含後端服務和向終端使用者推出的新增或改進�
 
 - 我需要於 1 月使用智慧型手機啟用 MFA。(身分識別)
 - 我於 4 月在 Windows 8.1 電腦上安裝了 Windows 10 企業版。(Windows 10 企業版)
-- 我於 7 月安裝了 Office 365 專業增強版，取代原本的 Office 2013。(Office 365 專業增強版)
+- 我在 7 月時安裝了 Microsoft 365 Apps 企業版來取代 Office 2013。 (Microsoft 365 Apps 企業版)
 - 我於 10 月註冊裝置並套用了 App 和裝置原則。 (行動裝置管理)
 - 我於隔年 1 月安裝了 Azure 資訊保護用戶端，並接受有關如何將標籤套用至文件的訓練。(資訊保護)
 
@@ -120,7 +120,7 @@ IT 基礎結構包含後端服務和向終端使用者推出的新增或改進�
 
 - 我需要於 12 月使用智慧型手機啟用 MFA。(身分識別)
 - 我於 2 月在 Windows 8.1 電腦上安裝了 Windows 10 企業版。(Windows 10 企業版)
-- 我於 4 月安裝了 Office 365 專業增強版，取代原本的 Office 2013。(Office 365 專業增強版)
+- 我在 4 月時安裝了 Microsoft 365 Apps 企業版來取代 Office 2013。 (Microsoft 365 Apps 企業版)
 - 我於 6 月註冊裝置並套用了 App 和裝置原則。 (行動裝置管理)
 - 我於 8 月安裝了 Azure 資訊保護用戶端，並接受有關如何將標籤套用至文件的訓練。(資訊保護)
 
@@ -130,7 +130,7 @@ IT 基礎結構包含後端服務和向終端使用者推出的新增或改進�
 
 - 我需要於 1 月使用智慧型手機啟用 MFA。(身分識別)
 - 我於 3 月在 Windows 8.1 電腦上安裝了 Windows 10 企業版。(Windows 10 企業版)
-- 我於 5 月安裝了 Office 365 專業增強版，取代原本的 Office 2013。(Office 365 專業增強版)
+- 我在 5 月時安裝了 Microsoft 365 Apps 企業版來取代 Office 2013。 (Microsoft 365 Apps 企業版)
 - 我於 7 月註冊裝置並套用了 App 和裝置原則。 (行動裝置管理)
 - 我於 9 月安裝了 Azure 資訊保護用戶端，並接受有關如何將標籤套用至文件的訓練。(資訊保護)
 
@@ -158,7 +158,7 @@ IT 基礎結構包含後端服務和向終端使用者推出的新增或改進�
 
 - 我需要於 12 月使用智慧型手機啟用 MFA。(身分識別)
 - 我於 1 月在 Windows 8.1 電腦上安裝了 Windows 10 企業版。(Windows 10 企業版)
-- 我於 2 月安裝了 Office 365 專業增強版，取代原本的 Office 2013。(Office 365 專業增強版)
+- 我在 2 月時安裝了 Microsoft 365 Apps 企業版來取代 Office 2013。 (Microsoft 365 Apps 企業版)
 - 我於 5 月註冊裝置並套用了 App 和裝置原則。 (行動裝置管理)
 - 我於 4 月安裝了 Azure 資訊保護用戶端，並接受有關如何將標籤套用至文件的訓練。(資訊保護)
 
@@ -168,7 +168,7 @@ IT 基礎結構包含後端服務和向終端使用者推出的新增或改進�
 
 - 我需要於 1 月使用智慧型手機啟用 MFA。(身分識別)
 - 我於 2 月在 Windows 8.1 電腦上安裝了 Windows 10 企業版。(Windows 10 企業版)
-- 我於 3 月安裝了 Office 365 專業增強版，取代原本的 Office 2013。(Office 365 專業增強版)
+- 我在 3 月時安裝了 Microsoft 365 Apps 企業版來取代 Office 2013。 (Microsoft 365 Apps 企業版)
 - 我於 4 月註冊裝置並套用了 App 和裝置原則。 (行動裝置管理)
 - 我於 5 月安裝了 Azure 資訊保護用戶端，並接受有關如何將標籤套用至文件的訓練。(資訊保護)
 
@@ -186,7 +186,7 @@ IT 部門為階段 2-6 設定基礎結構，然後推出給試驗使用者，以
 
 - MFA 和其他身分識別功能 (身分識別)
 - Windows 裝置上的 Windows 10 企業版 (Windows 10 企業版)
-- Office 365 專業增強版的 Office 套件 (Office 365 專業增強版)
+- 適用於 Office 套件的 Microsoft 365 Apps 企業版 (Microsoft 365 Apps 企業版)
 - App 和裝置原則 (行動裝置管理)
 - 安裝 Azure 資訊保護用戶端，並對如何將標籤套用至文件進行訓練 (資訊保護)
 

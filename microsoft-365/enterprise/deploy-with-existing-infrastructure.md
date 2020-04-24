@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐一討論在您有現有基礎結構時，部署企業用 Microsoft 365 的允出準則。
-ms.openlocfilehash: ce9c9343ff6983968f3ed96b1e1558788d04ffc1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ace84e53da9b62b39a557b670c54c1be31d0b61a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597060"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638181"
 ---
 # <a name="deployment-of-microsoft-365-for-enterprise-with-existing-infrastructure"></a>使用現有基礎結構部署企業用 Microsoft 365
 
@@ -49,11 +49,11 @@ ms.locfileid: "41597060"
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-windows10.md)]
 
-## <a name="exit-criteria-for-office-365-proplus-phase-4"></a>Office 365 專業增強版的允出準則 (階段 4)
+## <a name="exit-criteria-for-microsoft-365-apps-for-enterprise-phase-4"></a>Microsoft 365 Apps 企業版的允出準則 (階段 4)
 
-符合 Office 365 專業增強版的評估、部署規劃和部署需求。
+符合 Microsoft 365 Apps 企業版基礎結構的評估、部署規劃和部署需求。
 
-[!INCLUDE [Deployment exit criteria for Office 365 ProPlus](./includes/deployment-exit-criteria-office365proplus.md)]
+[!INCLUDE [Deployment exit criteria for Microsoft 365 Apps for enterprise](./includes/deployment-exit-criteria-office365proplus.md)]
 
 ## <a name="exit-criteria-for-mobile-device-management-phase-5"></a>行動裝置管理的允出準則 (階段 5)
 

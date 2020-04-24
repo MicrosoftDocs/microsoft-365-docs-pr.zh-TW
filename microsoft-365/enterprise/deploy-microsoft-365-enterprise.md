@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解可用來在組織中部署 Microsoft 365 企業版的資源。
-ms.openlocfilehash: 9ea96af7cef0e497e8f7560ef87239828789b117
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 3f6ddb1caf270f2ba261bd7b9c8f8cd938187705
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951931"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638233"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>部署 Microsoft 365 企業版
 
@@ -124,7 +124,7 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-for-enterprise"></a>Contoso Corporation 如何部署 Microsoft 365 企業版
 
-Contoso Corporation 是虛構但具代表性的全球製造業集團，其總部位於法國巴黎。 請參閱 [Contoso 部署的 Microsoft 365 企業版](contoso-case-study.md)，並且針對網路、身分識別、Windows 10 企業版、Office 365 專業增強版、行動裝置管理、資訊保護和安全性，訂定主要設計決策和實作詳細資料。 
+Contoso Corporation 是虛構但具代表性的全球製造業集團，其總部位於法國巴黎。 請參閱 [Contoso 如何部署 Microsoft 365 企業版](contoso-case-study.md)，並且針對網路、身分識別、Windows 10 企業版、Microsoft 365 Apps 企業版、行動裝置管理、資訊保護和安全性，訂定主要設計決策和實作詳細資料。 
 
 ## <a name="stay-current-with-deployment-content"></a>隨時了解部署內容
 

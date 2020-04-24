@@ -3,7 +3,7 @@
 <a name="crit-identity-global-admin"></a>
 ### <a name="required-your-global-administrator-accounts-are-protected"></a>必要：全域系統管理員帳戶會受到保護 
 
-您已[保護您的 Office 365 全域系統管理員帳戶](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)，以防止攻擊者所進行、可能導致違反您的 Microsoft 365 訂閱的認證洩露。
+您已[保護您的全域系統管理員帳戶](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) (部分機器翻譯)，以防止攻擊者所進行、可能導致違反您的 Microsoft 365 訂閱的認證洩露。
 
 如果您略過這項要求，全域系統管理員帳戶可能會受到攻擊和洩露，讓攻擊者可以取得對您資料的系統範圍存取權，來進行蒐集、損毀，或要求贖金。
 
@@ -17,7 +17,7 @@
    ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. 使用步驟 1 中的每個帳戶登入 Office 365。 每個登入必須要求 Azure Multi-Factor Authentication 和您組織中可用的最強型次要驗證。
+2. 使用步驟 1 中的每個帳戶登入。 每個登入必須要求 Azure Multi-Factor Authentication 和您組織中可用的最強型次要驗證。
 
 > [!Note]
 > 請參閱[連線到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)，以取得安裝 Azure Active Directory PowerShell for Graph 模組及登入 Office 365 的指示。
@@ -66,11 +66,11 @@
 如有需要，[步驟 2](../identity-secure-your-passwords.md#identity-sso) 可協助您使用此選項。
 
 <a name="crit-identity-custom-sign-in"></a>
-### <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>選用：已個人化您組織的 Office 365 登入畫面
+### <a name="optional-the-sign-in-screen-is-personalized-for-your-organization"></a>選用：已個人化您組織的登入畫面
 
-您已使用「[將公司商標新增至登入及存取面板頁面](https://aka.ms/aadpaddbranding)」來將貴組織的商標新增至 Office 365 登入頁面。
+您已使用「[將公司商標新增至登入及存取面板頁面](https://aka.ms/aadpaddbranding)」來將貴組織的商標新增至登入頁面。
 
-如果您略過此選項，使用者會看到一般的 Office 365 登入畫面，並且可能無法確定它們登入的是貴組織的網站。
+如果您略過此選項，使用者會看到一般的登入畫面，並且可能無法確定它們登入的是貴組織的網站。
 
 如有需要，[步驟 2](../identity-secure-your-passwords.md#identity-custom-sign-in) 可協助您使用此選項。
 
@@ -183,7 +183,7 @@ Azure AD Connect Health 入口網站會顯示您內部部署網域控制站和�
 
 
 <a name="crit-identity-self-service-groups"></a>
-### <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a>選用：已啟用特定 Azure AD 的安全性和 Office 365 群組的自助群組管理
+### <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-microsoft-365-groups"></a>選用：已啟用特定 Azure AD 的安全性和 Microsoft 365 群組的自助群組管理
 
 您已決定哪些群組適用於自助管理，指示其擁有者關於群組管理工作流程和責任，並為這些群組[設定 Azure AD 中的自助管理](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management)。
 

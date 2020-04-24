@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用整個 Microsoft 365 企業版的安全性功能。
-ms.openlocfilehash: 036c812e645399e00af270e62d057637867595fe
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f8a16b07c6d4cb9a62e0131a1f667b675d5eaf66
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597090"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636483"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>適用於 Contoso Corporation 之 Microsoft 365 企業版安全性的摘要
 
@@ -62,7 +62,7 @@ Contoso 會使用下列步驟來準備部署 Microsoft 365 企業版的安全性
 
   Contoso 的安全性管理員相較於該 IT 人員作業功能和責任的適當帳戶，獲指派較少的管理角色。
 
-  如需詳細資訊，請參閱[關於 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
+  如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
 
 - 適用於所有使用者帳戶的 MFA
 
@@ -97,7 +97,7 @@ Contoso 會使用下列步驟來準備部署 Microsoft 365 企業版的安全性
 
 - 使用 Office 365 威脅調查及回應來進行攻擊監視和防護
 
-  Contoso 使用 [Office 365 威脅調查及回應](https://docs.microsoft.com/office365/securitycompliance/office-365-ti)，讓識別和解決攻擊以及防範未來的攻擊變得簡單，藉此來保護其 Office 365 使用者。
+  Contoso 使用 [Office 365 威脅調查及回應](https://docs.microsoft.com/office365/securitycompliance/office-365-ti)，讓識別和解決攻擊以及防範未來的攻擊變得簡單，藉此來保護其使用者。
 
 - 使用 Advanced Threat Analytics 來防護縝密的攻擊
 
@@ -107,9 +107,9 @@ Contoso 會使用下列步驟來準備部署 Microsoft 365 企業版的安全性
 
 - 使用 Azure 資訊保護標籤來保護機密和高管制數位資產
 
-  Contoso 決定三個層級的資料保護，並且部署 [Office 365 敏感度標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)，讓使用者套用至數位資產。針對其營業秘密和其他智慧財產權，Contoso 使用敏感度子標籤高度管制資料，該資料會對內容進行加密並限制對特定使用者帳戶和群組的存取。
+  Contoso 決定三個層級的資料保護，並且部署 [Microsoft 365 敏感度標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)，讓使用者套用至數位資產。針對其營業秘密和其他智慧財產權，Contoso 使用敏感度子標籤高度管制資料，該資料會對內容進行加密並限制對特定使用者帳戶和群組的存取。
 
-- 使用 Office 365 資料外洩防護來防止內部網路資料外洩
+- 使用資料外洩防護來防止內部網路資料外洩
 
   Contoso 已針對 Exchange Online、SharePoint 和商務用 OneDrive 設定[資料外洩防護](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)原則，以防止使用者意外或故意共用機密資料。
 

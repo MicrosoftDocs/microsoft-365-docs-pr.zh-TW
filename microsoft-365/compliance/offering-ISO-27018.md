@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e2a26b91de38c876145b9b5b1c7765058b4b25a3
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 4376d2ca5ac27ec8e12f266bb7d3bb54289c1dbd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222055"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637523"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>保護雲端中個人資料的 ISO/IEC 27018 工作條例規定
 
@@ -45,8 +45,8 @@ Microsoft 和 ISO/IEC 27018
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure、Azure Government 和 Azure 德國](https://aka.ms/AzureCompliance)
-- 雲端 App 安全性
-- Microsoft 專業服務：Azure、Dynamics 365、Intune 及 Office 365 中型企業和企業客戶的的頂級和內部部署
+- Cloud App Security
+- Microsoft 專業服務：Azure、Dynamics 365、Intune 及商務用 Microsoft 365 中型企業和企業客戶的頂級與內部部署
 - [Dynamics 365 和 Dynamics 365 美國政府](https://aka.ms/d365-compliance-list)
 - Genomics
 - Graph
@@ -117,7 +117,7 @@ Microsoft 雲端和商業技術支援服務會一年根據 ISO/IEC 27018 工作�
 
 **我是否可以在組織的憑證程序中使用 Microsoft 合規性？**
 
-可以。 如果 ISO/IEC 27018 合規性對您的企業和在任何 Microsoft 範圍內的企業雲端服務作部署的實作很重要，您可以在合規性評定中使用 Microsoft 的 ISO/IEC 27018 證明，並搭配 Microsoft 的 ISO/IEC 27001 憑證。
+是。 如果 ISO/IEC 27018 合規性對您的企業和在任何 Microsoft 範圍內的企業雲端服務作部署的實作很重要，您可以在合規性評定中使用 Microsoft 的 ISO/IEC 27018 證明，並搭配 Microsoft 的 ISO/IEC 27001 憑證。
 
 不過，您有責任確保處理者有參與評估合規性的實作，以及組織中的控制和程序。
 

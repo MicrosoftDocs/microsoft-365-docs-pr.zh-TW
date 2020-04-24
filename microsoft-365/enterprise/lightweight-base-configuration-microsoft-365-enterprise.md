@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用這個「測試實驗室指南」建立輕量型測試環境，以測試 Microsoft 365 企業版。
-ms.openlocfilehash: 4e90cc01cb37664f3084daf7295e9d59052809af
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 04e63b1c3d9d35bd636041f8be7655ab17b1d165
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633341"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631606"
 ---
 # <a name="the-lightweight-base-configuration"></a>輕量型基本組態
 
@@ -63,7 +63,7 @@ ms.locfileid: "42633341"
 5. 針對步驟 4，在此記錄登入頁面 (選取並複製)： ![線](../media/Common-Images/TableLine.png) 
 6. 在此記錄使用者識別碼：![線](../media/Common-Images/TableLine.png).onmicrosoft.com  
    在安全位置中記錄您輸入的密碼。
-   此值將被稱為 **「Office 365 全域系統管理員名稱」**。
+   此值將被稱為 **「全域系統管理員名稱」**。
 8. 按一下 **[移至設定]**。
 9. 在 [Office 365 E5 設定] 中，按一下 [繼續在電子郵件和登入中使用 **您的組織.*onmicrosoft.com]*，** 然後按一下 **[結束並稍後再繼續]**。
 
@@ -73,11 +73,11 @@ ms.locfileid: "42633341"
     
 ## <a name="phase-2-configure-your-office-365-trial-subscription"></a>階段 2：設定 Office 365 試用訂閱
 
-在這個階段中，您可以設定其他使用者使用您的 Office 365 訂閱，並指派他們 Office 365 E5 授權。
+在這個階段中，您可以設定其他使用者使用您的訂閱，並指派他們 Office 365 E5 授權。
   
-使用[連線到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) 中的指示，將 Office 365 訂閱從您的電腦連線到 Azure Active Directory PowerShell for Graph 模組。
+使用[連線到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) 中的指示，將訂閱從您的電腦連線到 Azure Active Directory PowerShell for Graph 模組。
     
-在 **[Windows PowerShell 認證要求]** 對話方塊中，輸入 Office 365 全域管理員帳戶的使用者名稱 (例如：jdoe@contosotoycompany.onmicrosoft.com) 和密碼。
+在 **[Windows PowerShell 認證要求]** 對話方塊中，輸入全域管理員帳戶的使用者名稱 (例如：jdoe@contosotoycompany.onmicrosoft.com) 和密碼。
   
 填入您的組織名稱 (範例︰contosotoycompany)，代表位置的兩個字元國家/地區代碼、常用帳戶密碼，再從 PowerShell 命令提示字元中執行下列命令：
 
@@ -121,7 +121,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 記錄這些值：
   
-- Office 365 全域系統管理員名稱： ![線](../media/Common-Images/TableLine.png).onmicrosoft.com (來自階段 1 的步驟 6)
+- 全域系統管理員名稱： ![線](../media/Common-Images/TableLine.png).onmicrosoft.com (來自階段 1 的步驟 6)
     
     也將此帳戶的密碼記錄在安全的位置。
     
@@ -291,7 +291,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 6. 關閉設定視窗。
     
-接下來，在 WIN10 電腦上安裝 Office 365 專業增強版。
+接下來，在 WIN10 電腦上安裝 Microsoft 365 Apps 企業版。
   
 1. 開啟 Microsoft Edge 瀏覽器，並使用全域管理員帳戶認證登入 Office 入口網站。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
@@ -309,7 +309,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 - 已加入您的 Microsoft 365 E5 訂閱的 Azure AD 租用戶。
 - 已在 Microsoft Intune (EMS) 中註冊為 Azure AD 裝置。
-- 已安裝 Office 365 專業增強版。
+- 已安裝 Microsoft 365 Apps 企業版。
   
 您現在已準備好嘗試 [Microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
   

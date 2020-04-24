@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解貴組織中部署企業用 Microsoft 365 底層基礎結構的主要階段，也稱為核心部署。
-ms.openlocfilehash: 6c2784d22e236880b87ece9e04e11fb0502667dd
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 287afd5e5f75bb6547e1898877f3d1c65ebfb9a0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153841"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638245"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>企業用 Microsoft 365 底層基礎結構
 
@@ -33,9 +33,9 @@ ms.locfileid: "43153841"
 |![階段 1：網路](../media/deploy-foundation-infrastructure/networking_icon-small.png)|[階段 1：網路](networking-infrastructure.md)| 網路會針對 Microsoft 365 雲端式服務的存取進行最佳化。 |
 |![階段 2：身分識別](../media/deploy-foundation-infrastructure/identity_icon-small.png)|[階段 2：身分識別](identity-infrastructure.md)| 系統管理員帳戶會受到保護、使用者和群組會進行同步處理，並提供增強式的使用者驗證機制。 |
 |![階段 3：Windows 10 企業版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[階段 3：Windows 10 企業版](windows10-infrastructure.md)| 現有的 Windows 架構電腦可升級為 Windows 10 企業版，且新裝置會使用 Windows 10 企業版來進行安裝。 |
-|![階段 4：Office 365 專業增強版](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[階段 4：Office 365 專業增強版](office365proplus-infrastructure.md)| 現有的 Microsoft Office 使用者可升級為 Office 365 專業增強版。 |
+|![階段 4：Microsoft 365 Apps 企業版](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[階段 4：Microsoft 365 Apps 企業版](office365proplus-infrastructure.md)| 現有的 Microsoft Office 使用者可升級為 Microsoft 365 Apps 企業版。 |
 |![階段 5：行動裝置管理](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[階段 5：行動裝置管理](mobility-infrastructure.md)| 裝置可以進行註冊並受到管理。 |
-|![階段 6：資訊保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[階段 6：資訊保護](infoprotect-infrastructure.md)| 已啟用 Office 365 安全功能，您的標籤和原則已就緒，可保護文件和電子郵件。 |
+|![階段 6：資訊保護](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[階段 6：資訊保護](infoprotect-infrastructure.md)| 已啟用 Microsoft 365 安全功能，您的標籤和原則已就緒，可保護文件和電子郵件。 |
 
 這些階段會從最基本的項目 (網路和身分識別) 開始，然後會建立基礎結構的各個設定和群組層級，以便：
 
@@ -90,9 +90,9 @@ ms.locfileid: "43153841"
 |:-------|:-----|
 | 身分識別 | 帳戶同步處理和身分識別型條件式存取原則的群組。 |
 | Windows 10 企業版 | 可自動將執行 Windows 7 或 Windows 8.1 的電腦就地升級為 Windows 10 企業版的群組。 |
-| Office 365 專業增強版 | 可自動為使用 Office 2010、Office 2013 或 Office 2016 的使用者部署 Office 365 專業增強版的群組。 |
+| Microsoft 365 Apps 企業版 | 可自動為使用 Office 2010、Office 2013 或 Office 2016 的使用者部署 Microsoft 365 Apps 企業版的群組。 |
 | 行動裝置管理 | 用於裝置註冊和裝置型條件式存取原則的群組。 |
-| 資訊保護 | Office 365 敏感度標籤的群組。 |
+| 資訊保護 | 敏感度標籤群組。 |
 
 當您準備好對使用者推出這個基礎結構的元素時：
 
@@ -100,11 +100,11 @@ ms.locfileid: "43153841"
 |:-------|:-----|
 | 身分識別 | 將使用者帳戶新增至身分識別型條件式存取原則的群組。 |
 | Windows 10 企業版 | 將帳戶新增至可自動為使用 Windows 7 或 Windows 8.1 的使用者就地部署 Windows 10 企業版的群組。 |
-| Office 365 專業增強版 | 將使用者帳戶新增至可自動為使用 Office 2010、Office 2013 或 Office 2016 的使用者部署 Office 365 專業增強版的群組。 |
+| Microsoft 365 Apps 企業版 | 將使用者帳戶新增至可自動為使用 Office 2010、Office 2013 或 Office 2016 的使用者部署 Microsoft 365 Apps 企業版的群組。 |
 | 行動裝置管理 | 將帳戶新增至用於裝置註冊和裝置型條件式存取原則的群組。 |
 | 資訊保護 | 將使用者帳戶新增至敏感度標籤群組。 |
 
-在底層基礎結構的階段或元素完成、經過測試及試驗後，您便可以對使用者以最符合業務目標和 IT 資源的方式推出已安裝好的軟體 (例如，Windows 10 企業版和 Office 365 專業增強版) 以及雲端式服務和保護 (例如，裝置註冊和條件式存取原則)。
+在底層基礎結構的階段或元素完成、經過測試及試驗後，您便可以對使用者以最符合業務目標和 IT 資源的方式推出已安裝好的軟體 (例如，Windows 10 企業版和 Microsoft 365 Apps 企業版) 以及雲端式服務和保護 (例如，裝置註冊和條件式存取原則)。
 
 ## <a name="deployment-and-project-management-strategies"></a>部署和專案管理策略
 

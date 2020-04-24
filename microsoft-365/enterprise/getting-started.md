@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 桌面部署程序簡介。
-ms.openlocfilehash: 62d18f23df55783c8b1f0c01f9f803a1d4bca0f0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f50a719d87a961c0446757d21d2f8be5d6eedbc0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067478"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634215"
 ---
 # <a name="getting-started---desktop-deployment"></a>快速入門 - 桌面部署
 
@@ -30,7 +30,7 @@ ms.locfileid: "42067478"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
 <td><p><strong>快速入門：人員、流程及技術指導方針</strong></p>
-<p>探索 Windows 10 和 Office 365 專業增強版的優點、與先前部署比較後的重大變更與考量及最佳做法，以確保順利轉移到 Windows 10 和 Office 365 專業增強版。</p></td>
+<p>探索 Windows 10 和 Microsoft 365 Apps 企業版的優點、與先前部署比較後的重大變更與考量及最佳做法，以確保順利轉移到 Windows 10 和 Microsoft 365 Apps 企業版。</p></td>
 <td><a href="https://aka.ms/ddev0" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
 </thead>
 </table>
@@ -39,27 +39,27 @@ ms.locfileid: "42067478"
 >在本系列中，我們會說明使用現有工具的最佳方法，為您介紹新技術、服務和雲端啟用的方法。  若要查看完整的桌面部署程序，請瀏覽[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
-歡迎使用桌面部署中心，這是我們了解如何協助您規劃及轉變為 Windows 10 和 Office 365 專業增強版的中心位置。 這可讓您利用具備最新生產力、團隊合作和共同作業體驗的安全工作區。
+歡迎使用桌面部署中心，這是我們了解如何協助您規劃及轉變為 Windows 10 和 Microsoft 365 Apps 企業版的中心位置。 這可讓您利用具備最新生產力、團隊合作和共同作業體驗的安全工作區。
 
 如果您有一段時間未部署新的桌面環境，好消息是太多的部署程序已有所改善。 過去的挑戰 (例如應用程式相容性) 在現在已不是問題。 新的工具和雲端提供的深入見解，可讓您比以往更具信心、更快且更有效率地往前邁進。
 
-在本文中，我們將概述已變更的內容，然後瀏覽電腦部署轉輪。這會引導您完成您轉變至 Windows 10 以及 Office 365 專業增強版的建議步驟，詳細說明如何運用現有的工具和程序，同時採用現代化管理技術和方法。
+在本文中，我們將概述已變更的內容，然後瀏覽電腦部署轉輪。這會引導您完成您轉變至 Windows 10 以及 Microsoft 365 Apps 企業版的建議步驟，詳細說明如何運用現有的工具和程序，同時採用現代化管理技術和方法。
 
 ## <a name="why-upgrade"></a>為什麼要升級？
 
 將 Windows 10 和 Microsoft 智慧雲端合併可增強您的能力，為您的使用者提供最有能力且安全的工作區，並可以讓您簡化支援基礎結構。
 
-現代化管理實務的主要租用戶之一，就是必須永遠保持最新版的裝置。 透過本系列，您將了解所提供的新功能可協助您移至 Windows 10 與 Office 365 專業增強版，同時還能持續取得上述兩項的最新半年度發行版本。
+現代化管理實務的主要租用戶之一，就是必須永遠保持最新版的裝置。 透過本系列，您將了解所提供的新功能可協助您移至 Windows 10 與 Microsoft 365 Apps 企業版，同時還能持續取得上述兩項的最新半年度發行版本。
 
 [適用於 IT 專業人員的 Windows 10](https://www.microsoft.com/itpro/windows-10) (英文)
 
-[關於企業中的 Office 365 專業增強版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) (英文)
+[關於企業中的 Microsoft 365 Apps企業版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)
 
 ## <a name="what-has-changed"></a>有什麼變更
 
 讓我們先了解上一個桌面部署開始已變更及改善之處。如果您還沒有轉變您的電腦環境，您可能還在使用 Windows 7 和 Office 2010 或 Office 2013。如果您是如此，就會發現自您上次重大升級開始有幾件事有所進化。以下是一些核心變更：
 
-**身分識別與存取：** 能與雲端產能、安全性和管理服務連結的 Windows 10 與 Office 365 專業增強版，在其核心上擁有身分識別與存取管理服務：Azure Active Directory (Azure AD)。 這可允許在您的雲端服務之間進行單一登入和安全連線，這表示您需要具備 Azure AD，才能充分利用 Microsoft 365 服務，例如 Office 365、Intune 或 Windows Autopilot。
+**身分識別與存取：** 能與雲端產能、安全性和管理服務連結的 Windows 10 與 Microsoft 365 Apps 企業版，在其核心上擁有身分識別與存取管理服務：Azure Active Directory (Azure AD)。 這可允許在您的雲端服務之間進行單一登入和安全連線，這表示您需要具備 Azure AD，才能充分利用 Microsoft 365 服務，例如 Office 365、Intune 或 Windows Autopilot。
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 
@@ -73,13 +73,13 @@ ms.locfileid: "42067478"
 
 [Windows Autopilot](https://www.microsoft.com/windowsforbusiness/windows-autopilot) (英文)
 
-**隨選即用部署：** 佈建 Office 傳統型應用程式時，Office 365 專業增強版是慣用的選項。 這可讓您存取 Office 中正在開發的最新創新功能，如此您就不需要等待幾年的時間即可使用新功能。 您也可以使用稱為「隨選即用」的新安裝。
+**隨選即用部署：** 佈建 Office 傳統型應用程式時，Microsoft 365 Apps 企業版是慣用的選項。 這可讓您存取 Office 中正在開發的最新創新功能，如此您就不需要等待幾年的時間即可使用新功能。 您也可以使用稱為「隨選即用」的新安裝。
 
 「隨選即用」與過去的 MSI 套件截然不同。 「隨選即用」更快也更輕便，並且支援在背景中進行更新，讓使用者保持啟動且可繼續執行的狀態。 但這仍然是 Office 的本機複本，您可以繼續使用現有的部署工具 (例如 Microsoft Endpoint Configuration Manager) 來佈建及設定應用程式。
 
-[Office 365 專業增強版部署指南](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+[Microsoft 365 Apps 企業版部署指南](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 
-**半年更新：** 一旦移至 Windows 10 和 Office 365 專業增強版後，每半年會提供更新和新功能。 但因為 Microsoft 能夠從雲端提供深入見解來協助您，您可以快速且充滿自信地將這些更新推廣至數百或數千個裝置。 如同就地升級，功能更新會保留先前版本的應用程式、資料和設定。
+**半年更新：** 一旦移至 Windows 10 和 Microsoft 365 Apps 企業版後，每半年會提供更新和新功能。 但因為 Microsoft 能夠從雲端提供深入見解來協助您，您可以快速且充滿自信地將這些更新推廣至數百或數千個裝置。 如同就地升級，功能更新會保留先前版本的應用程式、資料和設定。
 
 ## <a name="the-deployment-process-wheel"></a>部署程序轉輪
 
@@ -93,7 +93,7 @@ ms.locfileid: "42067478"
 
 [BranchCache 與對等快取](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/) (英文)
 
-**[步驟 3：Office 和企業營運應用程式傳遞](https://aka.ms/mdd3)** 在 Windows 繼續支援 MSI 型安裝之際，現在也支援較新的安裝機制，適合用於自動化部署和持續更新。 Office 365 專業增強版和 Windows 2019 用戶端使用「隨選即用」安裝技術。 您可能需要讓一些 UWP 應用程式可供使用，而且您可能會逐漸發現，所部署的第三方應用程式及內部開發企業營運應用程式是使用新的 MSIX 封裝應用程式。 這個步驟可確保您的應用程式準備好可自動化部署，且您已為成功做好準備，無論您的應用程式是否使用「隨選即用」、MSIX、傳統 MSI 部署，或是 UWP 應用程式 (部署在您所設業務的 Microsoft Store 中)。
+**[步驟 3：Office 和企業營運應用程式傳遞](https://aka.ms/mdd3)** 在 Windows 繼續支援 MSI 型安裝之際，現在也支援較新的安裝機制，適合用於自動化部署和持續更新。 Microsoft 365 Apps 企業版和 Office 2019 用戶端使用「隨選即用」安裝技術。 您可能需要讓一些 UWP 應用程式可供使用，而且您可能會逐漸發現，所部署的第三方應用程式及內部開發企業營運應用程式是使用新的 MSIX 封裝應用程式。 這個步驟可確保您的應用程式準備好可自動化部署，且您已為成功做好準備，無論您的應用程式是否使用「隨選即用」、MSIX、傳統 MSI 部署，或是 UWP 應用程式 (部署在您所設業務的 Microsoft Store 中)。
 
 [MSIX 簡介](https://blogs.msdn.microsoft.com/sgern/2018/06/15/msix-intro/) (英文)
 
@@ -103,7 +103,7 @@ ms.locfileid: "42067478"
 
 [將 Windows 已知資料夾重新導向並移動至 OneDrive](https://docs.microsoft.com/onedrive/redirect-known-folders) (英文)
 
-**[步驟 5：安全性與合規性](https://aka.ms/mdd5)** 安全性與合規性是移至 Windows 10 和 Office 365 專業增強版時具有許多優點的區域。請務必熟悉新的內建功能，並與既有的功能比較。例如，Windows 10 中使用虛擬化安全性的新功能可防止認證竊盜、防止瀏覽器的漏洞和惡意程式碼執行，方法是隔離作業系統的核心程序及秘密。此外，「進階威脅防護」等雲端服務可提供整合的平台，以強化安全性、外洩後偵測、調查及回應。進階的威脅防護也可以保護您免於受到惡意電子郵件附件、不安全的超連結等攻擊。
+**[步驟 5：安全性與合規性](https://aka.ms/mdd5)** 安全性與合規性是移至 Windows 10 和 Microsoft 365 Apps 企業版時具有許多優點的區域。請務必熟悉新的內建功能，並與既有的功能比較。例如，Windows 10 中使用虛擬化安全性的新功能可防止認證竊盜、防止瀏覽器的漏洞和惡意程式碼執行，方法是隔離作業系統的核心程序及秘密。此外，「進階威脅防護」等雲端服務可提供整合的平台，以強化安全性、外洩後偵測、調查及回應。進階的威脅防護也可以保護您免於受到惡意電子郵件附件、不安全的超連結等攻擊。
 
 [Microsoft Security](https://www.microsoft.com/security/default.aspx) (英文)
 
@@ -111,18 +111,18 @@ ms.locfileid: "42067478"
 
 [在 Configuration Manager 中部署作業系統的簡介](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment) (部分機器翻譯)
 
-**[步驟 7：Windows 和 Office 即服務](https://aka.ms/mdd7)** 這代表您維護使用者桌面大小方式的主要轉變。 您可以利用 Windows 10 及 Office 365 專業增強版的這項移動，將管理 Windows 和 Office 改變為一項服務。 取代每隔幾年的大型技術轉變，您會持續將全新的功能、體驗和保護帶給您的使用者。 半年度功能更新或在每年秋季及春季提供全新的功能，而每月累積的品質更新將會包含安全性、可靠性和錯誤 (bug) 修正。 雖然您可以選擇部署 Office 2019 用戶端，但強烈建議您移至 Office 365 專業增強版。 這會遵循 Windows 的類似服務方案，也可讓使用者定期獲得 Office 應用程式的更新。
+**[步驟 7：Windows 和 Office 即服務](https://aka.ms/mdd7)** 這代表您維護使用者桌面大小方式的主要轉變。 您可以利用 Windows 10 及 Microsoft 365 Apps 企業版的這項移動，將管理 Windows 和 Office 改變為一項服務。 取代每隔幾年的大型技術轉變，您會持續將全新的功能、體驗和保護帶給您的使用者。 半年度功能更新或在每年秋季及春季提供全新的功能，而每月累積的品質更新將會包含安全性、可靠性和錯誤 (bug) 修正。 雖然您可以選擇部署 Office 2019 用戶端，但強烈建議您移至 Microsoft 365 Apps 企業版。 這會遵循 Windows 的類似服務方案，也可讓使用者定期獲得 Office 應用程式的更新。
 
 ![](../media/getting-started-media/getting-started-media-2.png)
 
 [Windows 即服務概觀](https://docs.microsoft.com/windows/deployment/update/waas-overview)
 [Office 即服務概觀](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
 
-**[步驟 8：使用者的通訊和訓練](https://aka.ms/mdd8)** 最後這個步驟對於推動使用新功能以提升團隊合作、通訊、安全性等至關重要。 在廣泛部署目標為早期採納者週期外的使用者之前，建議您推行使用者通訊和訓練。 這將有助於推動在 Office、Windows 或其他企業營運應用程式和服務中的新功能使用方式所需變更。 如需協助，我們透過 Microsoft FastTrack 提供免費線上訓練。 此外，我們已發佈免費的範例通訊計劃和時間表，搭配電子郵件和社交及內部網路範本來協助您推出 Windows 10。 身為 Microsoft 365 或 Office 365 的組織，貴組織可能也符合資格且直接支援。
+**[步驟 8：使用者的通訊和訓練](https://aka.ms/mdd8)** 最後這個步驟對於推動使用新功能以提升團隊合作、通訊、安全性等至關重要。 在廣泛部署目標為早期採納者週期外的使用者之前，建議您推行使用者通訊和訓練。 這將有助於推動在 Office、Windows 或其他企業營運應用程式和服務中的新功能使用方式所需變更。 如需協助，我們透過 Microsoft FastTrack 提供免費線上訓練。 此外，我們已發佈免費的範例通訊計劃和時間表，搭配電子郵件和社交及內部網路範本來協助您推出 Windows 10。 身為 Microsoft 365 組織，貴組織可能也符合資格且可直接支援。
 
 ## <a name="next-step"></a>下一步
 
-現在您已了解 Windows 10 及 Office 365 專業增強版的新功能和差異，我們已概要說明建議的部署程序轉輪。 透過這個可供您轉變為 Windows 10 及 Office 365 專業增強版的端對端指導方針和工具體驗，我們開始吧。
+現在您已了解 Windows 10 及 Microsoft 365 Apps 企業版的新功能和差異，我們已概要說明建議的部署程序轉輪。 透過這個可供您轉變為 Windows 10 及 Microsoft 365 Apps 企業版的端對端指導方針和工具體驗，我們開始吧。
 
-## <a name="step-1-device-and-app-readinesshttpsakamsmdd1"></a>[步驟 1：裝置和應用程式整備](https://aka.ms/mdd1)
+## <a name="step-1-device-and-app-readiness"></a>[步驟 1：裝置和應用程式整備](https://aka.ms/mdd1)
 

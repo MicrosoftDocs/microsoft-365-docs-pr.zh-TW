@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在環境中評估裝置和應用程式整備。
-ms.openlocfilehash: abeb6bbfcc5a8de869263f5a4aa922a6642a92f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fc048b046e46b4b2e792aa9bffb695eed742a74c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085464"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636853"
 ---
 # <a name="step-1-device-and-app-readiness"></a>步驟 1：裝置和應用程式整備
 
@@ -39,7 +39,7 @@ ms.locfileid: "42085464"
 >裝置和應用程式整備是我們所建議部署程序轉輪中的第一個步驟，方法是涵蓋應用程式與硬體相容性的整體層面。 若要查看完整的桌面部署程序，請瀏覽[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
-在過去，升級使用者桌面的主要障礙是應用程式和硬體相容性。在您規劃要移轉至 Windows 10 和 Office 365 專業增強版方面有一個好消息，就是近 10 年內撰寫的任何應用程式都能在 Windows 10 上執行，貴組織在回溯到 Office 2010 的 Office 版本上所使用的任何 COM 增益集和 VBA 巨集，都能持續在最新版本的 Office 上運作，不需要修改。
+在過去，升級使用者桌面的主要障礙是應用程式和硬體相容性。在您規劃要移轉至 Windows 10 和 Microsoft 365 Apps 企業版方面有一個好消息，就是近 10 年內撰寫的任何應用程式都能在 Windows 10 上執行，貴組織在回溯到 Office 2010 的 Office 版本上所使用的任何 COM 增益集和 VBA 巨集，都能持續在最新版本的 Office 上運作，不需要修改。
 
 也就是說，根據貴組織的大小和年份，確認應用程式和硬體的相容性很可能還是建議的 8 階段部署程序中的基本初始步驟。
 
@@ -89,7 +89,7 @@ ms.locfileid: "42085464"
 
 您也可以使用電腦分析來評估以瀏覽器為基礎的相容性問題，識別出仍在使用 ActiveX 控制項、瀏覽器協助程式物件、VBScript 或 Microsoft Edge 瀏覽器不支援的其他傳統技術的使用者所存取的網站和 Web 應用程式。 您的使用者仍必須對這些網站使用 Internet Explorer 11，而您可以使用 Enterprise Mode Site List Manager 將網站新增到[企業模式網站清單](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility)。
 
-此外，為了協助您移至 Office 365 專業增強版，您可能想要使用[適用於 Office 的整備工具組](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro)，測試您的增益集與 Microsoft Visual Basic for Applications (VBA) 巨集的相容性。
+此外，為了協助您移至 Microsoft 365 Apps 企業版，您可能想要使用[適用於 Office 的整備工具組](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro)，測試您的增益集與 Microsoft Visual Basic for Applications (VBA) 巨集的相容性。
 
 ![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -110,12 +110,12 @@ ms.locfileid: "42085464"
 
 ## <a name="app-assure"></a>應用程式保證
 
-協助達到 Windows 10 和 Office 365 專業增強版應用程式相容性的另一個工具是透過 FastTrack Center 提供的[應用程式保證](https://aka.ms/appassure)程式。 在有效應用程式發生問題時，透過「應用程式保證」，Microsoft 工程師可以與您合作 (不另行收費)，協助修復應用程式不相容性問題。
+協助達到 Windows 10 和 Microsoft 365 Apps 企業版應用程式相容性的另一個工具是透過 FastTrack Center 提供的[應用程式保證](https://aka.ms/appassure)程式。 在有效應用程式發生問題時，透過「應用程式保證」，Microsoft 工程師可以與您合作 (不另行收費)，協助修復應用程式不相容性問題。
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>繼續使用診斷資料工具
 
-電腦分析不只是協助您移轉至 Windows 10 和 Office 365 專業增強版的工具。 一旦您讓電腦執行 Windows 10 和 Office 365，就可以使用它來協助維護部署及管理半年功能更新，讓您保持在最新版本。
+桌面分析並不只是一種可協助您移至 Windows 10 和 Microsoft 365 Apps 企業版的工具。 一旦您讓電腦執行 Windows 10 和 Office 365，就可以使用它來協助維護部署及管理半年功能更新，讓您保持在最新版本。
 
 ## <a name="next-step"></a>下一步 
 
-## <a name="step-2-directory-and-network-readinesshttpsakamsmdd2"></a>[步驟 2：目錄和網路整備](https://aka.ms/mdd2)
+## <a name="step-2-directory-and-network-readiness"></a>[步驟 2：目錄和網路整備](https://aka.ms/mdd2)

@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 摘要：在 Microsoft Teams 中保護檔案的設定建議。
-ms.openlocfilehash: 82c55affc8384c04e0595f82d21c7e3532b5cb0e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e177f290dff22943e282080652326dfb65cd07cd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088124"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638473"
 ---
 # <a name="secure-files-in-microsoft-teams"></a>在 Microsoft Teams 中保護檔案
 
@@ -61,7 +61,7 @@ ms.locfileid: "42088124"
 
 - 系統會針對「敏感性」和「高度機密」的保留標籤設定[資料外洩防護](../../compliance/data-loss-prevention-policies.md) (DLP) 原則，以在使用者嘗試將這類檔案傳送到組織外部時，對他們發出警告或阻止此動作。
 
-- 如果在您的案例中有需要，您可以使用[敏感度標籤](../../compliance/sensitivity-labels.md)以使用加密與權限來保護高度機密檔案。 針對 Azure 資訊保護客戶，您可以使用 Microsoft 365 合規性中心的 Azure 資訊保護標籤，而如果您選擇執行額外或進階組態，標籤就會與 Azure 入口網站同步處理。 Azure 資訊保護標籤與 Office 365 敏感度標籤完全彼此相容。 這表示，例如，如果您有使用 Azure 資訊保護加上標籤的內容，則不需將內容重新分類或重新加上標籤。 並非所有客戶都需要此層級的保護。
+- 如果在您的案例中有需要，您可以使用[敏感度標籤](../../compliance/sensitivity-labels.md)以使用加密與權限來保護高度機密檔案。 針對 Azure 資訊保護客戶，您可以使用 Microsoft 365 合規性中心的 Azure 資訊保護標籤，而如果您選擇執行額外或進階組態，標籤就會與 Azure 入口網站同步處理。 Azure 資訊保護標籤與敏感度標籤完全彼此相容。 這表示，例如，如果您有使用 Azure 資訊保護加上標籤的內容，則不需將內容重新分類或重新加上標籤。 並非所有客戶都需要此層級的保護。
 
 ## <a name="organization-wide-settings-for-sharepoint-and-onedrive"></a>SharePoint 和 OneDrive 的全組織設定
 
@@ -125,7 +125,7 @@ SharePoint 和 OneDrive 的裝置存取設定可讓您決定要僅限瀏覽器�
 
 如需此解決方案中四種不同小組類型的部署步驟，請參閱[部署三種檔案保護層級的小組](deploy-teams-three-tiers.md)。
 
-## <a name="office-365-retention-labels"></a>Office 365 保留標籤
+## <a name="retention-labels"></a>保留標籤
 
 建議您在含有敏感性資料的環境中使用保留標籤。 設定並發佈保留標籤之後：
 
@@ -135,7 +135,7 @@ SharePoint 和 OneDrive 的裝置存取設定可讓您決定要僅限瀏覽器�
 
 - 您可以套用以保留標籤為基礎的 DLP 原則。
 
-- 組織中的人員可手動將標籤套用至 Outlook 網頁版、Outlook 2010 和更新版本、OneDrive、SharePoint 和 Office 365 群組中的內容。 使用者通常最清楚自己使用的內容類型，因此可以對其分類並套用適當的 DLP 原則。
+- 組織中的人員可手動將標籤套用至 Outlook 網頁版、Outlook 2010 和更新版本、OneDrive、SharePoint 和 Microsoft 365 群組中的內容。 使用者通常最清楚自己使用的內容類型，因此可以對其分類並套用適當的 DLP 原則。
 
 如圖例所示，此解決方案包括建立下列保留標籤：
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 365 企業版的雲端服務網際網路頻寬需求。
-ms.openlocfilehash: 2f20542609c757c4fbccd2f9b0e4af59d9bc7566
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a2b5be462747ff269b82304249d46f32837ae2e5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066513"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631450"
 ---
 # <a name="step-1-prepare-your-network-for-microsoft-365"></a>步驟 1：準備用於 Microsoft 365 的網路
 
@@ -31,10 +31,10 @@ ms.locfileid: "42066513"
 在步驟 1 中，您必須：
 
 - 評估並調整內部連結及網際網路連線的網路頻寬，以說明 Microsoft 365 企業版雲端的流量。
-- 使用 [Office 365 參考架構](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)校準您的網路。
+- 使用 [Microsoft 365 參考架構](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2)校準您的網路。
 - 計劃變更、試驗它們，然後測試變更是否符合您的頻寬和流量延遲需求。
 
-如需有關使用 ExpressRoute 搭配 Office 365 和其他 Microsoft 365 企業版雲端服務的資訊和建議，請參閱 [Azure ExpressRoute for Office 365](https://docs.microsoft.com/office365/enterprise/azure-expressroute)。
+如需有關使用 ExpressRoute 搭配 Microsoft 365 和其他 Microsoft 365 企業版雲端服務的資訊和建議，請參閱 [Azure ExpressRoute for Microsoft 365](https://docs.microsoft.com/office365/enterprise/azure-expressroute)。
 
 作為過渡期的檢查點，您可以看到此步驟的[允出準則](networking-exit-criteria.md#crit-networking-step1)。
 

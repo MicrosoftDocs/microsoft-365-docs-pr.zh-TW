@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定適用於 Microsoft 365 測試環境的密碼回寫。
-ms.openlocfilehash: 8ff6c8c7d2eae735a2572bae1c437502602cfd0b
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: cc71b581730001d8dc021b5074e300fed636e3d9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633081"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632872"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼回寫
 
@@ -35,8 +35,8 @@ ms.locfileid: "42633081"
 
 此測試環境的設定分為兩個階段︰
 
-1.  使用密碼雜湊同步處理建立 Microsoft 365 模擬企業測試環境。
-2.  啟用適用於 TESTLAB AD DS 網域的密碼回寫。
+1.    使用密碼雜湊同步處理建立 Microsoft 365 模擬企業測試環境。
+2.    啟用適用於 TESTLAB AD DS 網域的密碼回寫。
     
 ![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -53,7 +53,7 @@ ms.locfileid: "42633081"
   
 - Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 
-- Azure AD Connect 在 APP1 上執行，以將 TESTLAB AD DS 網域同步至 Microsoft 365 或 Office 365 訂閱的 Azure AD 租用戶。
+- Azure AD Connect 會在 APP1 上執行，以將 TESTLAB AD DS 網域同步至 Microsoft 365 訂閱的 Azure AD 租用戶。
 
 ## <a name="phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain"></a>階段 2：啟用適用於 TESTLAB AD DS 網域的密碼回寫
 
@@ -69,7 +69,7 @@ ms.locfileid: "42633081"
 
 5. 在 user1 的 [編輯使用者角色]**** 窗格中，按一下 [全域系統管理員]****。按一下 [儲存]****，然後按一下 [關閉]****。
 
-接下來，使用安全性設定來配置使用者 1 帳戶，該安全性設定允許其代表 TESTLAB AD DS 網域中的其他使用者變更密碼。。
+接下來，使用安全性設定來配置使用者 1 帳戶，該安全性設定允許其代表 TESTLAB AD DS 網域中的其他使用者變更密碼。
 
 1. 從 [Azure 入口網站](https://portal.azure.com)，以您的全域管理員帳戶登入，然後以 TESTLAB\User1 帳戶連線到 APP1。
 
@@ -130,7 +130,7 @@ ms.locfileid: "42633081"
 
 - 已註冊 DNS 網域 TESTLAB.\<您的網域名稱> 的 Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 
-- Azure AD Connect 在 APP1 上執行，以將來自 Microsoft 365 或 Office 365 訂閱之 Azure AD 租用戶的帳戶和群組清單同步至 TESTLAB AD DS 網域。 
+- Azure AD Connect 會在 APP1 上執行，以將來自 Microsoft 365 訂閱之 Azure AD 租用戶的帳戶和群組清單同步至 TESTLAB AD DS 網域。 
 - 密碼回寫已啟用，因此使用者可以透過 Azure AD 變更其密碼，而不需要連線到簡化的內部網路。
 
 如需在生產中進行密碼回寫的相關資訊和連結，請參閱身分識別階段中的「[簡化密碼更新](identity-add-user-accounts.md#identity-pw-writeback)」步驟。

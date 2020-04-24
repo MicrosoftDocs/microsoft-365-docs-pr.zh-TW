@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 檢查資訊保護型服務和基礎結構的準則，確定您的設定符合 Microsoft 365 企業版的需求。
-ms.openlocfilehash: 28eff02ea870dcfca7e2e32580ed6a3a9e8a9484
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c0b4ff6a0d289b8a8c63255d817ea455df00bf13
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633351"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631630"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>資訊保護基礎結構的允出準則
 
@@ -44,7 +44,7 @@ ms.locfileid: "42633351"
 <a name="crit-infoprotect-step3"></a>
 ## <a name="required-increased-security-for-microsoft-365-is-configured"></a>必要：設定增強的 Microsoft 365 安全性
 
-您已為 [Office 365 增強的安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)設定下列設定：
+您已為 [Microsoft 365 增強的安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security) (部分機器翻譯) 設定下列設定：
 
 - Microsoft 365 安全性中心的威脅管理原則
 - Exchange Online 的其他全租用戶設定
@@ -82,11 +82,11 @@ ms.locfileid: "42633351"
 如有需要，[步驟 4](infoprotect-deploy-windows-information-protection.md) 可協助您符合這項要求。 
 
 <a name="crit-infoprotect-step5"></a>
-## <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>選用：部署 Office 365 資料外洩防護 (DLP)
+## <a name="optional-data-loss-prevention-dlp-is-deployed"></a>選用：部署資料外洩防護 (DLP)
 
 您已分析、測試然後推出一組 DLP 原則 (具有位置和規則與條件和動作)，貴組織需要保護客戶和其他類型的私密資料，並且遵循產業和地區法規及需求。
 
-您的資料合規性和安全性人員使用 Office 365 安全性與合規性中心儀表板來監視 DLP 事件。
+您的資料合規性和安全性人員使用安全性與合規性中心儀表板來監視 DLP 事件。
 
 如有需要，[步驟 5](infoprotect-data-loss-prevention.md) 可協助您符合這項要求。 
 

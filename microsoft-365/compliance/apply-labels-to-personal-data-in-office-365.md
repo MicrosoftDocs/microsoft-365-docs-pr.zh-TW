@@ -1,5 +1,5 @@
 ---
-title: 將標籤套用至 Office 365 中的個人資料
+title: 將標籤套用至個人資料
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -17,37 +17,37 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 Office 標籤做為 GDPR 保護計劃的一部分。
-ms.openlocfilehash: 179b71e9fa41b5e3e602dfe78848e9d1afc4699e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5ffcddaa183e64fe53c14d740025b7df30e9687a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079789"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636281"
 ---
-# <a name="apply-labels-to-personal-data-in-office-365"></a>將標籤套用至 Office 365 中的個人資料
+# <a name="apply-labels-to-personal-data"></a>將標籤套用至個人資料
 
  如果您使用分類標籤做為 GDPR 保護計劃的一部分，請使用本主題。 
 
-如果您使用標籤來保護 Office 365 中的個人資料，Microsoft 建議從使用[保留標籤](labels.md)開始。 使用保留標籤，您可以：
+如果您使用標籤來保護 Microsoft 365 中的個人資料，Microsoft 建議從使用[保留標籤](labels.md)開始。 使用保留標籤，您可以：
 - 使用「進階資料控管」，根據敏感性資訊類型或其他準則自動套用標籤。
 - 使用保留標籤搭配資料外洩防護來套用保護。 
 - 使用標籤搭配電子文件探索和內容搜尋。 
 
-雲端 App 安全性目前不支援保留標籤，但是您可以使用 Office 365 敏感資訊類型搭配雲端 App 安全性，監視位於其他 SaaS 應用程式中的個人資料。
+雲端 App 安全性目前不支援保留標籤，但是您可以使用 Microsoft 365 敏感資訊類型搭配雲端 App 安全性，監視位於其他 SaaS 應用程式中的個人資料。
 
-目前建議使用[敏感度標籤](sensitivity-labels.md)，將標籤套用至內部部署與其他雲端服務和提供者中的檔案。 也有對於 Office 365 中需要使用 Azure 資訊保護加密進行資料保護的檔案 (例如商業秘密檔案) 所建議的事項。
+目前建議使用[敏感度標籤](sensitivity-labels.md)，將標籤套用至內部部署與其他雲端服務和提供者中的檔案。 也有對於 Microsoft 365 中需要使用 Azure 資訊保護加密進行資料保護的檔案 (例如商業秘密檔案) 所建議的事項。
 
-目前，對於 Office 365 中具有、受限於 GDPR 資料的檔案，不建議使用 Azure 資訊保護來套用加密。 Office 365 服務目前無法讀取使用 AIP 加密的檔案。 因此，服務找不到這些檔案中的敏感性資料。
+目前，對於 Microsoft 365 中具有、受限於 GDPR 資料的檔案，不建議使用 Azure 資訊保護來套用加密。 Microsoft 365 服務目前無法讀取使用 AIP 加密的檔案。 因此，服務找不到這些檔案中的敏感資料。
 
-您可對 Exchange Online 中的郵件套用保留標籤，而這些標籤可搭配 Office 365 資料外洩防護使用。 
+您可對 Exchange Online 中的郵件套用保留標籤，而這些標籤可搭配 Microsoft 365 資料外洩防護使用。 
 
-![Office 365 標籤和 Azure 資訊保護標籤](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
+![Microsoft 365 標籤和 Azure 資訊保護標籤](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
 在此圖例中：
 
 -   將保留標籤用於個人資料，以及 SharePoint Online 和商務用 OneDrive 中高度管制的商業機密檔案。
--   Office 365 敏感性資訊類型可以用於 Office 365 之中，也可以搭配雲端 App 安全性，監視位於其他 SaaS 應用程式中的個人資料。
+-   Microsoft 365 敏感資訊類型可以用於 Microsoft 365 之中，也可以搭配雲端 App 安全性，監視位於其他 SaaS 應用程式中的個人資料。
 -   將敏感度標籤用於高度管制的商業機密檔案、Exchange Online 電子郵件、其他 SaaS 服務中的檔案、內部部署資料中心中的檔案，以及其他雲端提供者中的檔案。
 
 
@@ -80,7 +80,7 @@ ms.locfileid: "42079789"
 <p>. . . 至具有此標籤的文件 . . .</p>
 <p>客戶資料</p></td>
 <td align="left"><p>在任何獲批准的 SaaS App 中具有這些屬性的檔案 . . .</p>
-<p>選擇一或多個屬性：預先定義的 PII 屬性、Office 365 敏感性資訊類型、敏感度標籤 (AIP)、自訂運算式</p>
+<p>選擇一或多個屬性：預先定義的 PII 屬性、Microsoft 365 敏感資訊類型、敏感度標籤 (AIP)、自訂運算式</p>
 <p>。 。 。 在組織外共用時發出警示</p><p>附註：雲端 App 安全性目前不支援保留標籤。</td>
 </tr>
 <tr class="even">
@@ -101,7 +101,7 @@ ms.locfileid: "42079789"
 
 對於受到 GDPR 約束的個人資料，Microsoft 建議利用您為環境策劃的敏感資訊類型來自動套用標籤。請務必妥善地設計並測試自動套用標籤原則，以確保發生預期的行為。
 
-建立自動套用原則的順序，以及使用者是否也套用這些標籤會影響結果。因此，仔細做好推出計劃很重要。以下是您需要知道的。
+建立自動套用原則的順序，以及使用者是否也套用這些標籤會影響結果。因此，請務必仔細做好推出計劃。以下是須知事項。
 
 ### <a name="one-label-at-a-time"></a>一次一個標籤
 

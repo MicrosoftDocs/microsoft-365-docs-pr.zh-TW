@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 查看 Microsoft 365 部署指南中的新內容及變更。
-ms.openlocfilehash: fb9768be38ef215b22c81bcf10b19b58e37fb124
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 3374ee742982b1c7f451448674feed5f7d803031
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951807"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631570"
 ---
 # <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Microsoft 365 企業版部署內容的變更
 
@@ -38,7 +38,7 @@ ms.locfileid: "42951807"
 
 ### <a name="new-content"></a>新增內容 
 
-- [從 Microsoft 365 商務版移轉至 Microsoft 365 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+- [從 Microsoft 365 商務進階版移轉至 Microsoft 365 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
 
 - [Contoso Corporation 的機密專案小組](contoso-team-for-top-secret-project.md)
 
@@ -86,7 +86,7 @@ ms.locfileid: "42951807"
 
 ### <a name="updates-and-enhancements"></a>更新和增強功能
 
-- 重新整理[階段 4：Office 365 專業增強版](office365proplus-infrastructure.md)
+- 重新整理[階段 4：Microsoft 365 Apps 企業版](office365proplus-infrastructure.md)
 - 重新整理 [Contoso 案例研究](contoso-case-study.md)
 - 重新整理 [Microsoft Teams](teams-workload.md)、[Exchange Online](exchangeonline-workload.md) 和 [SharePoint Online](sharepoint-online-onedrive-workload.md) 的工作負載
 - 重新整理[適用於高度管制資料的 SharePoint 網站](teams-sharepoint-online-sites-highly-regulated-data.md)案例
@@ -170,9 +170,9 @@ ms.locfileid: "42951807"
 ### <a name="new-content"></a>新增內容 
 
 - [身分識別和裝置存取權](identity-device-access-m365-test-environment.md)先決條件測試實驗室指南
-- [階段 6：資訊保護](infoprotect-infrastructure.md)的 [Windows 資訊保護](infoprotect-deploy-windows-information-protection.md) 和 [Office 365 資料遺失防護](infoprotect-data-loss-prevention.md)步驟
+- [階段 6：資訊保護](infoprotect-infrastructure.md)的 [Windows 資訊保護](infoprotect-deploy-windows-information-protection.md)和[資料遺失防護](infoprotect-data-loss-prevention.md)步驟
 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [部署指南](deploy-microsoft-365-enterprise.md)

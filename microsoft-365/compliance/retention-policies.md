@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: df2e89e26de2baab21cb334c1852cb261e1b8c98
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: 7075e043a2d45358447137fbf76bcbf88a65e9f4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521509"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632434"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -95,8 +95,6 @@ ms.locfileid: "43521509"
     > [!NOTE]
     > 為了防止資料意外遺失，系統永遠不會從保留文件保留庫自動刪除內容，但會移至第二階段資源回收筒。 這時，如果需要，可在 93 天的寬限期內復原此內容。
     
-2. 若內容在保留期間**未修改或刪除**，在保留期間結束時會將內容移至第一階段資源回收筒。 如果使用者從此處刪除內容，或清空此資源回收筒 (也就是清除)，則會將文件移至第二階段資源回收筒。 93 天保留期間涵蓋了第一和第二階段資源回收筒。93 天結束時，則會從文件所在的任何位置永久刪除文件 (無論是第一或第二階段資源回收筒)。 系統並未對資源回收筒編製索引，因此無法提供搜尋。 如此一來，電子文件探索搜尋就找不到可放置保留的資源回收筒內容。
-
 2. 若內容在保留期間**未修改或刪除**：在保留期間結束時，系統會將文件移至第一階段資源回收筒。 如果使用者從此處刪除文件，或清空此資源回收筒 (也就是清除)，則會將文件移至第二階段資源回收筒。 93 天保留期間涵蓋了第一和第二階段資源回收筒。93 天結束時，則會從文件所在的任何位置永久刪除文件 (無論是第一或第二階段資源回收筒)。 系統並未對資源回收筒編製索引，因此無法提供搜尋。 如此一來，電子文件探索搜尋就找不到可放置保留的資源回收筒內容。 
 
 當保留原則為僅保留或僅刪除時，內容路徑為保留和刪除的變化：
@@ -333,7 +331,7 @@ ms.locfileid: "43521509"
    > [!NOTE]
    > 過去，保留原則無法刪除少於 30 天的 Teams 內容，我們已移除此限制。 現在 Teams 內容的保留期間，可以是您選擇的任何天數，也可以是一天這麼短的時間。 如果您確實有一天的保留期間，在保留期間到期後，於永久刪除訊息之前，可能需要最長 3 天的時間。
     
-在 Teams 聊天中共用的檔案會儲存在共用檔案之使用者的 OneDrive 帳戶中。 上傳至頻道的檔案則會儲存在團隊的 SharePoint 網站中。 因此，若要保留或刪除 Teams 中的檔案，您需要建立一個套用至 OneDrive 和 Office 365 群組位置的保留原則。 如果您想要將原則套用到特定使用者或團隊在 Teams 中共用的檔案，您可以選擇 OneDrive 或 Office 365 群組位置，並包含特定的使用者或團隊。
+在 Teams 聊天中共用的檔案會儲存在共用檔案之使用者的 OneDrive 帳戶中。 上傳至頻道的檔案則會儲存在團隊的 SharePoint 網站中。 因此，若要保留或刪除 Teams 中的檔案，您需要建立一個套用至 OneDrive 和 Microsoft 365 群組位置的保留原則。 如果您想要將原則套用到特定使用者或團隊在 Teams 中共用的檔案，您可以選擇 OneDrive 或 Microsoft 365 群組位置，並包含特定的使用者或團隊。
   
 套用到 Teams 的保留原則可以使用[保留鎖定](#locking-a-retention-policy)。
   
@@ -342,9 +340,9 @@ ms.locfileid: "43521509"
 > [!NOTE]
 > 如果您在組織中建立 Skype 或 Teams 位置的保留原則，當使用者在 Outlook 電腦版用戶端中檢視信箱資料夾的內容時，其中一個原則會顯示為預設資料夾原則。 這是 Outlook 中顯示不正確的問題，並且是[已知問題](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)。 應顯示為預設資料夾原則的是套用至資料夾的信箱保留原則。 Skype 或 Teams 保留原則不會套用至使用者的信箱。  
 
-### <a name="office-365-groups-locations"></a>Office 365 群組的位置
+### <a name="microsoft-365-groups-locations"></a>Microsoft 365 群組位置
 
-若要保留 Office 365 群組的內容，您需要使用 Office 365 群組位置。 即使 Office 365 群組有 Exchange 信箱，包含整個 Exchange 位置的保留原則並不會包含 Office 365 群組信箱中的內容。 套用到 Office 365 群組的保留原則同時包含群組信箱和網站。 套用至 Office 365 群組的保留原則可保護由 Office 365 群組所建立的資源，其中包括 Microsoft Teams。
+若要保留 Microsoft 365 群組的內容，就必須使用 Microsoft 365 群組位置。 即使 Microsoft 365 群組有 Exchange 信箱，包含整個 Exchange 位置的保留原則並不會包含 Microsoft 365 群組信箱中的內容。 套用到 Microsoft 365 群組的保留原則同時包含群組信箱和網站。 套用至 Microsoft 365 群組的保留原則可保護由 Microsoft 365 群組所建立的資源，其中包括 Microsoft Teams。
 
 此外，無法使用 Exchange 位置來包含或排除特定群組信箱。 雖然 Exchange 位置最初允許選取群組信箱，但是當您嘗試儲存保留原則時，您會收到 "RemoteGroupMailbox" 不是Exchange 位置的有效選項錯誤訊息。 
 
@@ -406,7 +404,7 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
     
 3. **明確包含優先於隱含包含。** 也就是說： 
     
-    1. 如果包含保留設定的標籤是由使用者手動指派至項目 (例如 Exchange 電子郵件或 OneDrive 文件)，則該標籤會優先於在網站或信箱層級指派的原則，以及文件庫指派的預設標籤。 例如，如果明確標籤會保留 10 年，但網站指派的原則只會保留 5 年，則標籤會優先於原則。 自動套用的標籤會被視為隱含，而不是明確，因為這類標籤是由 Office 365 自動套用。
+    1. 如果包含保留設定的標籤是由使用者手動指派至項目 (例如 Exchange 電子郵件或 OneDrive 文件)，則該標籤會優先於在網站或信箱層級指派的原則，以及文件庫指派的預設標籤。 例如，如果明確標籤會保留 10 年，但網站指派的原則只會保留 5 年，則標籤會優先於原則。 自動套用的標籤會被視為隱含，而不是明確，因為這類標籤是由 Microsoft 365 自動套用。
     
     2. 如果保留原則包含特定位置 (例如特定使用者的信箱或商務用 OneDrive 帳戶)，則此原則優先於其他套用至所有使用者信箱或商務用 OneDrive 帳戶但未特地包含該使用者信箱的保留原則。
     
@@ -418,13 +416,13 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
   
 ## <a name="use-a-retention-policy-instead-of-these-features"></a>使用保留原則，而不是這些功能
 
-您可以輕鬆地將單一保留原則套用到整個組織，以及 Office 365 中的多個位置 (包括 Exchange Online、SharePoint Online、商務用 OneDrive 和 Office 365 群組)。 如果您需要保留或刪除 Office 365 任何位置中的內容，建議您使用保留原則。 (您也可以使用標籤搭配保留設定。 如需詳細資訊，請參閱[標籤概觀](labels.md)。)
+您可以輕鬆地將單一保留原則套用到整個組織，以及 Microsoft 365 中的多個位置 (包括 Exchange Online、SharePoint Online、商務用 OneDrive 和 Microsoft 365 群組)。 如果您需要保留或刪除 Microsoft 365 任何位置中的內容，建議您使用保留原則。 (您也可以使用標籤搭配保留設定。 如需詳細資訊，請參閱[標籤概觀](labels.md)。)
   
-有一些之前用來保留或刪除 Office 365 中的內容的其他功能。 如下所示。 這些功能會隨著保留原則和保留標籤繼續運作。 但建議您使用保留原則或標籤 (而非所有這些功能) 來進行資訊控管。 保留原則是唯一可以同時保留及刪除 Office 365 中的內容之功能。
+有一些之前用來保留或刪除 Microsoft 365 中的內容的其他功能。 如下所示。 這些功能會隨著保留原則和保留標籤繼續運作。 但建議您使用保留原則或標籤 (而非所有這些功能) 來進行資訊控管。 保留原則是唯一可以同時保留及刪除 Microsoft 365 中的內容之功能。
   
 ### <a name="exchange-online"></a>Exchange Online
 
-- [管理 Office 365 安全性與合規性中心的電子文件探索案例](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (電子文件探索保留) 
+- [管理安全性與合規性中心的電子文件探索案例](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (電子文件探索保留) 
     
 - [就地保留與訴訟暫止](https://go.microsoft.com/fwlink/?linkid=846124) (電子文件探索保留) 
 
@@ -434,7 +432,7 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
     
 ### <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 和商務用 OneDrive
 
-- [管理 Office 365 安全性與合規性中心的電子文件探索案例](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (電子文件探索保留) 
+- [管理安全性與合規性中心的電子文件探索案例](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (電子文件探索保留) 
     
 - [在電子文件探索中心將內容新增至案例及保留來源](https://support.office.com/article/54d70de9-1ec2-4325-84f3-aeb588554479) (電子文件探索保留) 
     
@@ -460,9 +458,9 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
 
 若要使用保留原則 Cmdlet：
   
-1. [連接到 Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
     
-2. 使用這些 Office 365 安全性與合規性中心 Cmdlet：
+2. 使用以下安全性與合規性中心 Cmdlet：
     
     - [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancepolicy)
     
@@ -484,7 +482,7 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
 
 您的合規性團隊中負責建立保留原則的成員必須具備[安全性與合規性中心](https://protection.office.com/)的權限。&amp; 根據預設，租用戶系統管理員將可存取此位置，並且可直接讓法務人員與其他人存取[安全性&amp;與合規性中心](https://protection.office.com/)，而不需要為其提供租用戶系統管理員的所有權限。若要這麼做，我們建議您：移至[安全性&amp;與合規性中心](https://protection.office.com/)的 **[權限]** 頁面、編輯 **[合規性系統管理員]** 角色群組，並將該成員新增到該角色群組。 
   
-如需詳細資訊，請參閱[授與使用者存取 Office 365 安全性與合規性中心的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center) (部分機器翻譯)。 
+如需詳細資訊，請參閱[授與使用者存取安全規範中心的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。 
 
 需要這些權限才能建立及套用保留原則。原則強制執行不需要內容的存取權。
 

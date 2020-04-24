@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定適用於 Microsoft 365 測試環境的傳遞驗證。
-ms.openlocfilehash: 4f9941b017f00b40a6ae7e893211131cae51c611
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8a9a8847d79e1d114f0ddfb4843cbb7b9f9f0d4c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066418"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631414"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的傳遞驗證
 
@@ -35,8 +35,8 @@ ms.locfileid: "42066418"
   
 設定此測試環境有兩個主要階段︰
 
-1.  使用密碼雜湊同步處理建立 Microsoft 365 模擬企業測試環境。
-2.  在 APP1 上針對傳遞驗證設定 Azure AD Connect。
+1.    使用密碼雜湊同步處理建立 Microsoft 365 模擬企業測試環境。
+2.    在 APP1 上針對傳遞驗證設定 Azure AD Connect。
     
 ![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -52,7 +52,7 @@ ms.locfileid: "42066418"
 此組態包含： 
   
 - Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
-- 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 Azure AD Connect 在 APP1 上執行，以定期將 TESTLAB AD DS 網域同步至 Microsoft 365 或 Office 365 訂閱的 Azure AD 租用戶。
+- 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 Azure AD Connect 在 APP1 上執行，以定期將 TESTLAB AD DS 網域同步至 Microsoft 365 訂閱的 Azure AD 租用戶。
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>階段 2：在 APP1 上針對傳遞驗證設定 Azure AD Connect
 
@@ -60,25 +60,25 @@ ms.locfileid: "42066418"
 
 ### <a name="configure-azure-ad-connect-on-app1"></a>在 APP1 上設定 Azure AD Connect
 
-1.  從 [Azure 入口網站](https://portal.azure.com)，以您的全域管理員帳戶登入，然後以 TESTLAB\User1 帳戶連線到 APP1。
+1.    從 [Azure 入口網站](https://portal.azure.com)，以您的全域管理員帳戶登入，然後以 TESTLAB\User1 帳戶連線到 APP1。
 
-2.  從 APP1 的桌面執行 Azure AD Connect。
+2.    從 APP1 的桌面執行 Azure AD Connect。
 
-3.  在 [歡迎]**** 頁面上，按一下 [設定]****。
+3.    在 [歡迎]**** 頁面上，按一下 [設定]****。
 
-4.  在 [其他工作] 頁面上，按一下 [變更使用者登入]****，然後按 [下一步]****。
+4.    在 [其他工作] 頁面上，按一下 [變更使用者登入]****，然後按 [下一步]****。
 
-5.  在 [連線到 Azure AD]**** 頁面上，輸入您的全域管理員帳戶認證，然後按 [下一步]****。
+5.    在 [連線到 Azure AD]**** 頁面上，輸入您的全域管理員帳戶認證，然後按 [下一步]****。
 
-6.  在 [使用者登入]**** 頁面上，按一下 [傳遞驗證]****，然後按 [下一步]****。
+6.    在 [使用者登入]**** 頁面上，按一下 [傳遞驗證]****，然後按 [下一步]****。
 
-7.  在 [準備設定]**** 頁面上，按一下 [設定]****。
+7.    在 [準備設定]**** 頁面上，按一下 [設定]****。
 
-8.  在 [組態完成]**** 頁面上，按一下 [結束]****。
+8.    在 [組態完成]**** 頁面上，按一下 [結束]****。
 
-9.  從 Azure 入口網站的左窗格，按一下 [Azure Active Directory > Azure AD Connect]****。確認 [傳遞驗證]**** 功能顯示為 [已啟用]****。
+9.    從 Azure 入口網站的左窗格，按一下 [Azure Active Directory > Azure AD Connect]****。確認 [傳遞驗證]**** 功能顯示為 [已啟用]****。
 
-10. 按一下 [傳遞驗證]****。[傳遞驗證]**** 窗格會列出您的驗證代理程式安裝所在的伺服器。您應該會在清單中看到 APP1。關閉 [傳遞驗證]**** 窗格。
+10.    按一下 [傳遞驗證]****。[傳遞驗證]**** 窗格會列出您的驗證代理程式安裝所在的伺服器。您應該會在清單中看到 APP1。關閉 [傳遞驗證]**** 窗格。
 
 接下來，以 <strong>user1@testlab.</strong>\<您的公用網域> User1 帳戶的使用者名稱測試登入訂閱的能力。
 
@@ -95,7 +95,7 @@ ms.locfileid: "42066418"
 此組態包含：
 
 - 已註冊 DNS 網域 TESTLAB.\<您的網域名稱> 的 Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
-- 簡化的組織內部網路與網際網路連線，由 Azure 虛擬網路子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成。驗證代理程式會在 APP1 上執行，以處理來自 Microsoft 365 或 Office 365 訂閱 Azure AD 租用戶的傳遞驗證要求。
+- 簡化的組織內部網路與網際網路連線，由 Azure 虛擬網路子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成。驗證代理程式會在 APP1 上執行，以處理來自 Microsoft 365 訂閱 Azure AD 租用戶的傳遞驗證要求。
 
 ## <a name="next-step"></a>下一步
 

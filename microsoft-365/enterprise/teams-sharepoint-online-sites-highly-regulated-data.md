@@ -16,12 +16,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: 建立安全的 SharePoint 小組網站來儲存您最重要且最敏感的檔案。
-ms.openlocfilehash: bc1a84fa7437d9b2979e10b352f8a422c457e8a0
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 97a01275d1d45cb02e66e88f82c95311bcb6fe70
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951979"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636708"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>適用於高度管制資料的 SharePoint 網站
 
@@ -40,10 +40,10 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 - 在 SharePoint 小組網站中儲存檔案 (文件、投影片檔案、試算表等)。
 - 鎖定網站，以防止：
-  - 非網站的 Office 365 群組成員的使用者存取。
+  - 非網站的 Microsoft 365 群組成員的使用者存取。
   - 網站成員將存取權授與其他使用者。
   - 非網站成員要求網站的存取權。
-- 為 SharePoint 網站設定 Office 365 保留標籤，作為防止使用者在組織外部傳送檔案的預設方法。
+- 為 SharePoint 網站設定保留標籤，作為防止使用者在組織外部傳送檔案的預設方法。
 - 使用隨檔案一起移動的加密來加密網站中最敏感的檔案。
 - 將權限新增至最敏感的檔案，以致於雖然是在網站外部共用這些檔案，開啟檔案時仍然需要具有權限之使用者帳戶的有效認證。
 
@@ -53,11 +53,11 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 |:-------|:-----|
 | **需求** | **Microsoft 365 企業版功能** |
 | 儲存檔案 | SharePoint 小組網站 |
-| 鎖定網站 | Office 365 群組和 SharePoint 小組網站的權限 |
-| 為網站上的檔案新增標籤 | Office 365 保留標籤 |
-| 將檔案傳送到組織外部時封鎖使用者 | Office 365 中的資料外洩防護 (DLP) 原則 |
-| 加密網站上的所有檔案 | Office 365 敏感度標籤或子標籤 |
-| 新增權限至網站的檔案 | Office 365 敏感度標籤或子標籤 |
+| 鎖定網站 | Microsoft 365 群組和 SharePoint 小組網站的權限 |
+| 為網站上的檔案新增標籤 | Microsoft 365 保留標籤 |
+| 將檔案傳送到組織外部時封鎖使用者 | 資料遺失保護 (DLP) 原則 |
+| 加密網站上的所有檔案 | Microsoft 365 敏感度標籤或子標籤 |
+| 新增權限至網站的檔案 | Microsoft 365 敏感度標籤或子標籤 |
 |||
 
 以下是安全 SharePoint 網站的設定範例。
@@ -88,26 +88,26 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 該目的會驅使基本組態項目的決定，例如：
 
-- 要指派至網站的文件部分以及標籤的 DLP 原則集合的 Office 365 保留標籤
-- Office 365 敏感度子標籤的設定，可讓使用者套用到儲存在網站中的高度敏感檔案
+- 要指派至網站的文件部分以及標籤 DLP 原則集合的保留標籤
+- 敏感度子標籤的設定，可讓使用者套用到儲存在網站中的高度敏感檔案
 
 決定後，您就能使用這些設定在階段 2 中設定網站。 
 
-### <a name="step-1-office-365-retention-labels-and-dlp-policies"></a>步驟 1：Office 365 保留標籤和 DLP 原則
+### <a name="step-1-microsoft-365-retention-labels-and-dlp-policies"></a>步驟 1 Microsoft 365 保留標籤和 DLP 原則
 
-當套用至 SharePoint 小組網站的文件部分時，Office 365 保留標籤提供預設方法，來分類儲存在網站上的所有檔案。
+當套用至 SharePoint 小組網站的文件部分時，保留標籤提供預設方法，來分類儲存在網站上的所有檔案。
  
-針對適用於高度管制資料的 SharePoint 網站，您必須決定要使用哪個 Office 365 保留標籤。
+針對適用於高度管制資料的 SharePoint 網站，您必須決定要使用哪個保留標籤。
 
-如需 Office 365 標籤的設計考量，請參閱 [Office 365 分類和標籤](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels)。
+如需標籤的設計考量，請參閱 [Microsoft 365 分類和標籤](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels)。
 
 若要保護機密資訊並防止意外或故意洩露，您可以使用 DLP 原則。如需詳細資訊，請參閱[概觀](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)。
 
-針對 SharePoint 網站，您必須針對指派至網站的 Office 365 保留標籤設定 DLP 原則，以在使用者嘗試與外部使用者共用檔案時，封鎖使用者。 
+針對 SharePoint 網站，您必須針對指派至網站的保留標籤設定 DLP 原則，以在使用者嘗試與外部使用者共用檔案時，封鎖使用者。 
 
-### <a name="step-2-your-office-365-sensitivity-sublabel"></a>步驟 2：您的 Office 365 敏感度子標籤
+### <a name="step-2-your-microsoft-365-sensitivity-sublabel"></a>步驟2：您的 Microsoft 365 敏感度子標籤
 
-若要將加密和權限集提供給最敏感的檔案，使用者必須套用 Office 365 敏感度標籤和子標籤。 子標籤位於現有標籤下方。 
+若要將加密和權限集提供給最敏感的檔案，使用者必須套用敏感度標籤和子標籤。 子標籤位於現有標籤下方。 
 
 當您的需求是少量標籤、可同時用於全域使用和個別的私人小組時，請使用敏感度標籤。 當您有大量標籤或想要將安全網站的標籤整理在您的高度管制標籤之下時，請使用敏感度子標籤。 
 
@@ -117,14 +117,14 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 您已決定下列項目：
 
-- 適當的 Office 365 保留標籤和與標籤相關聯的 DLP 原則
-- 包含加密和權限的 Office 365 敏感度子標籤設定
+- 適當的保留標籤和與標籤相關聯的 DLP 原則
+- 包含加密和權限的敏感度子標籤設定
 
 ## <a name="phase-2-configure"></a>階段 2：設定
 
 在這個階段中，您會採用在階段 1 中決定的設定，然後實作這些設定來建立適用於高度管制資料的 SharePoint 網站。
 
-### <a name="step-1-create-a-private-sharepoint-team-site-with-owners-and-members-of-the-corresponding-office-365-group"></a>步驟 1：使用對應 Office 365 群組的擁有者和成員來建立私人 SharePoint 小組網站
+### <a name="step-1-create-a-private-sharepoint-team-site-with-owners-and-members-of-the-corresponding-microsoft-365-group"></a>步驟 1：使用對應 Microsoft 365 群組的擁有者和成員來建立私人 SharePoint 小組網站
 
 按照[以下指示]( https://support.office.com/article/create-a-site-in-sharepoint-online-4d1e11bf-8ddc-499d-b889-2b48d10b1ce8)來建立私人 SharePoint 小組網站。
 
@@ -139,15 +139,15 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 
 清除這些設定後，網站群組成員與其他成員或非成員要求網站存取權以共用網站的功能將會停用。
 
-### <a name="step-3-configure-the-site-for-an-office-365-retention-label"></a>步驟 3：針對 Office 365 保留標籤設定網站
+### <a name="step-3-configure-the-site-for-a-retention-label"></a>步驟 3：針對保留標籤設定網站
 
-使用[使用 Office 365 標籤與 DLP 來保護 SharePoint 檔案](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)中的指示來：
+使用[使用標籤與 DLP 來保護 SharePoint 檔案](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)中的指示來：
 
 1. 建立並發布適用於高度管制資料的保留標籤 (如有需要)。
 2. 針對步驟 1 中建立的保留標籤設定網站。
 3. 為使用在步驟 2 中建立的保留標籤的高度管制資料建立 DLP 原則，並封鎖使用者在組織外傳送檔案
 
-#### <a name="step-4-create-an-office-365-sensitivity-sublabel-for-the-site"></a>步驟 4：為網站建立 Office 365 敏感度子標籤
+#### <a name="step-4-create-a-sensitivity-sublabel-for-the-site"></a>步驟 4：為網站建立敏感度子標籤
 
 適用於高度管制資料的敏感度標籤可讓任何人套用至任何檔案，但是安全網站不同，它需要自己的子標籤，以致於指派子標籤的檔案都能：
 
@@ -167,9 +167,9 @@ Microsoft 365 企業版包含一套完整的雲端式服務，因此您可以建
 您已設定下列項目：
 
 - SharePoint 網站上的其他限制權限設定
-- 指派給 SharePoint 網站文件部分的 Office 365 保留標籤
-- Office 365 保留標籤的 DLP 原則
-- 使用者可將 Office 365 敏感度標籤或子標籤套用到儲存在網站中的最敏感檔案，其會加密檔案並只允許小組網站群組的成員擁有共同撰寫存取權 
+- 指派給 SharePoint 網站文件部分的保留標籤
+- 保留標籤的 DLP 原則
+- 使用者可將敏感度標籤或子標籤套用到儲存在網站中的最敏感檔案，其會加密檔案並只允許小組網站群組的成員擁有共同撰寫存取權 
 
 以下是使用高度管制標籤的子標籤所產生的設定。
 

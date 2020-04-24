@@ -14,13 +14,13 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解如何透過通訊和訓練，讓終端使用者準備迎接 Windows 10 和 Office 365 專業增強版。
-ms.openlocfilehash: 02fa62cc7f9276670812a887e927ce8a1c6fb549
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何透過通訊和訓練，讓終端使用者準備迎接 Windows 10 和 Microsoft 365 Apps 企業版。
+ms.openlocfilehash: 7497925b7efd66dd4b86dd4d64df81490bbc7d90
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085110"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636744"
 ---
 # <a name="step-8-user-communications-and-training"></a>步驟 8：使用者的通訊和訓練
 
@@ -30,7 +30,7 @@ ms.locfileid: "42085110"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>步驟 8：使用者的通訊和訓練</strong></p>
-<p>將電腦移至 Windows 10 和 Office 365 專業增強版時，請確認使用者了解新版體驗與新的工作方式。了解如何利用 Microsoft FastTrack 的使用者採用協助、訓練教材和通訊範本，以及全新的方式來監控使用者接受及其使用方式。</p></td>
+<p>將電腦移至 Windows 10 和 Microsoft 365 Apps 企業版時，請確認使用者了解新版體驗與新的工作方式。了解如何利用 Microsoft FastTrack 的使用者採用協助、訓練教材和通訊範本，以及全新的方式來監控使用者接受及其使用方式。</p></td>
 <td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -45,7 +45,7 @@ ms.locfileid: "42085110"
 
 ## <a name="getting-ready-for-new-experiences"></a>準備好接收新體驗
 
-從 Office 開始，如果您是第一次部署 Office 365 專業增強版，此時您可以傳達登入 Office 應用程式，並將檔案儲存至 OneDrive 或 SharePoint 位置的優點，其可讓使用者更輕鬆地共用、減少檔案分支並啟用即時共同撰寫。
+從 Office 開始，如果您是第一次部署 Microsoft 365 Apps 企業版，此時您可以傳達登入 Office 應用程式，並將檔案儲存至 OneDrive 或 SharePoint 位置的優點，其可讓使用者更輕鬆地共用、減少檔案分支並啟用即時共同撰寫。
 
 詳細的通訊和訓練範本適用於這些和其他本機或瀏覽器型應用程式，例如 Teams 與 Planner。
 
@@ -61,7 +61,7 @@ ms.locfileid: "42085110"
 
 比方說，如果您已啟用多重要素驗證，這會使用 Azure AD，並利用電話應用程式或 PIN 以安全地存取服務，藉以保護使用者登入資源。Azure 資訊保護可以方便使用者分類並為文件加上標籤。
 
-[設定 Office 365 使用者的多重要素驗證](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[為使用者設定多重要素驗證](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 這些只是使用者會發現的幾個新功能，某些使用者可能會以正面方式或稍不正面的方式意外發現新功能。而這些意外，特別是若其變更了一般的工作流程，可能會導致您或服務台接到更多來電與問題票證。
 
@@ -129,8 +129,8 @@ Microsoft IT 展示系列也是 Windows 10 部署相關內容很好的資源。�
 
 除了透過分析工具監視的診斷資料，您也可以透過系統管理中心工作負載的詳細使用量報告，以及透過 Power BI 使用系統管理儀表板，以更細微的方式來監視 Office 365 和 Microsoft 365 服務使用量。 這些是很好的工具，當您推行新的共同作業工具 (如 Microsoft Teams) 或共用檔案的新方式 (如 OneDrive) 時，可協助設定及追蹤目標。
 
-新技術的接受與採用會在組織中每部電腦都安裝 Windows 10 和 Office 365 專業增強版後持續進行。若沒有花時間來通知及訓練使用者使用新功能，使用者不一定會變更運作的方式。最後，新的服務模型會在 Windows 進行中的半年排程，或 Office 的每月排程中提供新功能，通訊將會持續進行。
+新技術的接受與採用會在組織中每部電腦都安裝 Windows 10 和 Microsoft 365 Apps 企業版後持續進行。若沒有花時間來通知及訓練使用者使用新功能，使用者不一定會變更運作的方式。最後，新的服務模型會在 Windows 進行中的半年排程，或 Office 的每月排程中提供新功能，通訊將會持續進行。
 
 ## <a name="previous-step"></a>上一步 
 
-## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[步驟 7：Windows 和 Office 服務](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicing"></a>[步驟 7：Windows 和 Office 服務](https://aka.ms/mdd7)

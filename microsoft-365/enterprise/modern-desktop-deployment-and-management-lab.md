@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: 15bd30e54aaf5c7e7fcd881009f8c51c6d5c74e0
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: 9635e6d12b9f3ef606f8b62edac4dce6d75a1074
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225928"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631510"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署的 Lab Kit
 
-這些實驗室是設計來協助您規劃、測試及驗證執行 Windows 10 企業版和 Office 365 專業增強版之桌面的部署和管理。 實驗室涵蓋桌面部署輪中概述的步驟和工具，跨越 Microsoft Endpoint Configuration Manager、電腦分析、Office 自訂工具、OneDrive、Windows Autopilot，以及其他。
+這些實驗室是設計來協助您規劃、測試及驗證執行 Windows 10 企業版和 Microsoft 365 Apps 企業版的桌面部署和管理。 實驗室涵蓋桌面部署輪中概述的步驟和工具，跨越 Microsoft Endpoint Configuration Manager、電腦分析、Office 自訂工具、OneDrive、Windows Autopilot，以及其他。
 
 強烈建議準備結束 Windows 7 生命週期的組織進行這項訓練，如果您目前使用的是 Windows 10 和 Office 365 Plus 或 Office 2019，也適用這項訓練。 此外，如果您是獨立環境，實驗室非常適合用來探索部署工具更新，並測試與部署相關的自動化。
 
@@ -69,7 +69,7 @@ ms.locfileid: "43225928"
 
 ### <a name="office-and-lob-app-delivery"></a>Office 和 LOB 應用程式傳遞
 
-  - Office 365 專業增強版部署 
+  - Microsoft 365 Apps 企業版
   - 使用 Configuration Manager 和 Microsoft Intune 的企業管理部署
   - 使用 Microsoft Intune 部署及管理應用程式
   - 使用商務用 Microsoft Store 進行應用程式部署和自助安裝
@@ -113,7 +113,7 @@ ms.locfileid: "43225928"
 
 [下載 Windows 和 Office 部署的 Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
-請使用寬頻來下載此內容，以強化您的下載體驗，並允許 30-45 分鐘進行自動佈建。實驗室環境最少需要 16 GB 可用記憶體及 150 GB 可用磁碟空間。如需最佳效能，建議使用 32 GB 可用記憶體。實驗室將在 2020 年 7 月 5 日到期。到期之前，將會發佈新的版本。**
+請使用寬頻來下載此內容，以強化您的下載體驗，並允許 30-45 分鐘進行自動佈建。實驗室環境最少需要 16 GB 可用記憶體及 150 GB 可用磁碟空間。如需最佳效能，建議使用 32 GB 可用記憶體。實驗室將在 2020 年 4 月 18 日到期。到期之前，將會發佈新的版本。**
 
 ## <a name="additional-guidance"></a>其他指引
 
@@ -125,7 +125,7 @@ ms.locfileid: "43225928"
 
   - [<span class="underline">Windows 10 部署計劃</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Office 365 專業增強版部署指南</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Microsoft 365 Apps 企業版部署指南</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
   - [<span class="underline">開始使用 Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 

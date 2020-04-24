@@ -14,12 +14,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: c8d222f035bbb8ad618c652809808ffe31ce036b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 874077089cb12292db316d99869fcdfd7b449f91
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594644"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632328"
 ---
 # <a name="microsoft-365-nist-800-53-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 NIST 800-53 行動計畫 — 前 30 天、90 天及過後的首要工作
 
@@ -50,7 +50,7 @@ Microsoft 被視為雲端安全性中的業界領導者。使用多年建置企�
 |了解您的 NIST 800-53 需求，並且考慮與 Microsoft 諮詢合作夥伴配合。|•    與您的 Microsoft 合作夥伴合作，為組織執行 NIST 800-53 合規性的差距分析，並且發展規劃您的合規性旅程的藍圖。 <br>• 使用 [Microsoft 合規性分數](compliance-score.md)和中的指導方針來定義及記錄存取控制和資訊共用的原則和程序，其說明用途、範圍、角色、責任、組織實體間的協調以及合規性。|
 |學習並了解 Microsoft 365 內建的深度防禦策略。|•   使用 [Microsoft 合規性分數](compliance-score.md)進行貴組織的 NIST 800-53 評定，以評定及管理合規性風險。遵循 Microsoft 365 安全性控制來管理及降低評定結果的風險。<br>•   使用 [Microsoft 安全分數](/security/office-365-security/office-365-secure-score.md) 來追蹤組織一段時間內在 Office 365 與 Windows 10 電腦上的 Microsoft 365 安全性功能使用量。 <br>•  深入了解 Microsoft 用來提供 [Office 365 資料加密](encryption.md) 的技術與策略，以及 Microsoft Cloud 中[預防拒絕服務攻擊](https://docs.microsoft.com/office365/enterprise/office-365-defending-against-denial-of-service-attacks-overview) 的策略。|
 |保護使用者和系統管理員的 Office 365 存取權限。|• 建立[強化認證](https://docs.microsoft.com/azure/security/azure-ad-secure-steps#step-1---strengthen-your-credentials)來保護使用者帳戶認證。 <br> •  深入了解 Office 365 服務的[建議身分識別與裝置存取原則](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations) 。<br> • 使用 [Office 365 系統管理角色](https://support.office.com/article/understanding-administrative-roles-52f29955-6a60-435f-aba9-eb69c898606a) (英文) 來實作角色型存取系統管理功能並啟用分開的管理責任。附註：Office 365 中許多系統管理員角色在 Exchange Online、SharePoint Online 和商務用 Skype Online 中有相對應的角色。區隔權限以確保單一系統管理員沒有高於所需的存取權。|
-|確定所有系統的存取權都可根據貴組織的稽核與責任原則進行稽核。|啟用 [Office 365 稽核記錄](search-the-audit-log-in-security-and-compliance.md) 和[信箱稽核](enable-mailbox-auditing.md) (針對所有 Exchange 信箱)，以監視 Office 365 是否有潛在的惡意活動，並啟用資料外洩的鑑識調查分析。|
+|確定所有系統的存取權都可根據貴組織的稽核與責任原則進行稽核。|啟用[稽核記錄](search-the-audit-log-in-security-and-compliance.md)和[信箱稽核](enable-mailbox-auditing.md) (針對所有 Exchange 信箱)，以監視 Office 365 是否有潛在的惡意活動，並啟用資料外洩的鑑識調查分析。|
 |||
 
 ## <a name="90-days--enhanced-protections"></a>90 天 — 加強的保護 
@@ -61,7 +61,7 @@ Microsoft 被視為雲端安全性中的業界領導者。使用多年建置企�
 |**適用範圍**|**工作**|
 |加強反惡意程式碼、修補和設定管理計劃。|•   保護公司資產和電腦，方法是部署和啟用 [Windows Defender 防毒軟體](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/deploy-windows-defender-antivirus) 至組織及使用其與 Windows 10 的緊密整合。<br>•   追蹤隔離受感染的系統並避免進一步的損毀，直到採取補救步驟為止。<br>•   充滿自信地仰賴 Microsoft 365 嚴格的標準變更管理程序以取得受信任的更新、Hotfix 和修補程式。|
 |使用 Microsoft 365 安全性功能來控制對環境的存取，以及保護組織資訊和資產。|•   實作[建議的身分識別與裝置的存取原則](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations) 來保護使用者和系統管理員帳戶。 <br>• 實作 [Office 365 郵件加密 (OME)](ome.md) 功能，協助使用者在透過電子郵件傳送機密資料時，符合貴組織的原則。<br>• 將 [Windows Defender 進階威脅防護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (ATP) 部署至所有桌上型電腦以防範惡意程式碼，以及資料外洩防護和回應。<br>•  設定、測試和部署原則，以識別，監視和[自動保護](apply-protection-to-personal-data-in-office-365.md)文件和電子郵件中，80 多種常見的敏感資料類型，包括財務、醫療和個人身分資訊。<br>•   藉由設定[原則提示](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)，自動向電子郵件寄件者通知，他們即將違反您的其中一個原則 — 即使在他們傳送違規郵件之前。原則提示可以設定為顯示簡短通知 (在 Outlook、Outlook 網頁版及適用於裝置的 OWA 上)，在建立郵件期間提供可能的原則違規資訊。<br>• 保護企業的機密資料並符合貴組織的資訊共用原則，方法是實作[在 SharePoint Online 和商務用 OneDrive 中外部共用](https://docs.microsoft.com/onedrive/manage-sharing) 的控制措施。確定只有已驗證的外部使用者可以存取公司資料。|
-|使用內建的稽核功能來監視 Office 365 內的機密或風險活動。|•   啟用 Microsoft 365 安全性或合規性中心內的[警示原則](alert-policies.md)，以在發生機密的活動 (例如當使用者的帳戶權限提高或當存取機密資料時) 時發出自動通知。 所有特殊權限功能都必須經過稽核及監視。<br>•  在安全性或合規性中心定期[搜尋您的 Office 365 稽核記錄](search-the-audit-log-in-security-and-compliance.md)，以檢閱對租用戶組態設定所做的變更。<br>•   針對長期儲存 Office 365 稽核記錄資料，使用 Office 365 管理活動 API 參考以與安全性資訊和事件管理 (SIEM) 工具整合。|
+|使用內建的稽核功能來監視 Office 365 內的機密或風險活動。|•   啟用 Microsoft 365 安全性或合規性中心內的[警示原則](alert-policies.md)，以在發生機密的活動 (例如當使用者的帳戶權限提高或當存取機密資料時) 時發出自動通知。 所有特殊權限功能都必須經過稽核及監視。<br>•  在安全性或合規性中心定期[搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)，以檢閱對租用戶組態設定所做的變更。<br>• 針對長期儲存稽核記錄資料，使用 Office 365 管理活動 API 參考以與安全性資訊和事件管理 (SIEM) 工具整合。|
 |針對電子郵件和 Office 文件中的連結和附件部署進階威脅防護。|實作 [Office 365 進階威脅防護 (ATP)](/security/office-365-security/office-365-atp)，協助防範最常見的攻擊，包括網路釣魚電子郵件和包含惡意連結和附件的 Office 文件。|
 |||
 

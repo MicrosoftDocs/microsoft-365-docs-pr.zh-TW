@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 摘要：為政治活動開發/測試環境建立具備使用者與群組的 Office 365 和 Enterprise Mobility + Security (EMS) 之試用訂閱。
-ms.openlocfilehash: a61cc21b67cafd213d47076698929d0aa2644d08
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f07ccbb648ef20c6b7c6ef005afef59fd89d56aa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083482"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638451"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>設定政治活動開發/測試環境的群組和使用者
 
@@ -36,9 +36,9 @@ ms.locfileid: "42083482"
 
 首先，請遵循 [Office 365 開發/測試環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)的**階段 2** 中的指示進行。
 
-接著，註冊 EMS E5 試用訂閱，並將它新增至與 Office 365 試用訂閱相同的組織。
+接著，註冊 EMS E5 試用訂閱，並將它新增至與試用訂閱相同的組織。
 
-1. 如果需要，請使用試用訂閱的全域管理員帳戶認證登入系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如果需要，請使用試用訂閱的全域管理員帳戶認證登入系統管理中心。 如需說明，請參閱[在何處登入](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 按一下 [管理]**** 磚。
 
@@ -191,7 +191,7 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
   例如，針對 contoso.onmicrosoft.com 的試用訂閱網域名稱，組織名稱為「contoso」。
 
-- Office 365 全域系統管理員名稱： ![底線](../../media/Common-Images/TableLine.png).onmicrosoft.com
+- 全域系統管理員名稱： ![底線](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   在安全位置記錄此帳戶的密碼以及其他使用者帳戶的常見初始密碼。
 

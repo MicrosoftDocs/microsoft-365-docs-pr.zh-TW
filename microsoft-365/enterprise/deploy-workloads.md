@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 讓貴組織的使用者快速上手企業用 Microsoft 365 的生產力工作負載。
-ms.openlocfilehash: 692deeee652a4d27b8cc46a8e02890cccb8bb311
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2bb86ec474f93ea9d5f41fb104c6d533b7ec9561
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633141"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638161"
 ---
 # <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>企業用 Microsoft 365 工作負載和案例
 
@@ -60,7 +60,7 @@ ms.locfileid: "42633141"
 | 網路 | 網路會進行更新，以獲得最佳的 Microsoft 365 雲端服務效能。 |
 | 身分識別 | 身分識別會進行同步處理，並讓使用者帳戶使用增強式驗證以及讓系統管理員帳戶使用保護機制來確保身分識別的安全。 |
 | Windows 10 企業版 | 執行 Windows 7 或 Windows 8.1 的電腦可升級為 Windows 10 企業版，且新裝置會使用 Windows 10 企業版來進行安裝。 |
-| Office 365 專業增強版 | 現有的 Microsoft Office 使用者可升級為 Office 365 專業增強版。 |
+| Microsoft 365 Apps 企業版 | 現有的 Microsoft Office 使用者可升級為 Microsoft 365 Apps 企業版。 |
 | 行動裝置管理 | 裝置可以進行註冊並受到管理。 |
 | 資訊保護 | 會啟用 Microsoft 365 資訊保護功能，且敏感度標籤或 Azure 資訊保護標籤已準備好而可保護文件和電子郵件。 |
 
@@ -69,7 +69,7 @@ ms.locfileid: "42633141"
 以下是一些要立即部署的常見工作負載： 
 
 - 在對使用者推出底層基礎結構的**身分識別**階段後，許多組織會部署：
-  - [Office 365 專業增強版](office365proplus-infrastructure.md)加上 [OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise)。 Office 365 專業增強版可提供新式驗證的安全性和最新 Microsoft Office 用戶端的使用者體驗。 將使用者的個人檔案移轉到 OneDrive 會減少基礎結構和對於主資料夾及主目錄磁碟的支援需求。
+  - 與 [OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise) 結合的 [Microsoft 365 Apps 企業版](office365proplus-infrastructure.md)。 Microsoft 365 Apps 企業版可提供新式驗證的安全性和最新 Microsoft Office 用戶端的使用者體驗。 將使用者的個人檔案移轉到 OneDrive 會減少基礎結構和對於主資料夾及主目錄磁碟的支援需求。
   - [Exchange Online](exchangeonline-workload.md)，讓使用者可以開始使用雲端式電子郵件。
 - 如果您並非立即需要在雲端中儲存高度管制的數位資產，請先為使用者部署 [Microsoft Teams](teams-workload.md) 和 [SharePoint](sharepoint-online-onedrive-workload.md)，再部署**資訊保護**階段。
 

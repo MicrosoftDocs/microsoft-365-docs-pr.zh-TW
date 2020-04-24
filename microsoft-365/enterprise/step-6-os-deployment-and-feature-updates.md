@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解作業系統部署與功能更新的選項。
-ms.openlocfilehash: 24b6cf30398031cf2bf4032795013338fec39ffb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d22a0993b256a1bea1a6a5ac61f14b144c6ac6c7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085210"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636756"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>步驟 6：作業系統部署與功能更新
 
@@ -41,7 +41,7 @@ ms.locfileid: "42085210"
 
 如果您到目前為止已遵循部署程序轉輪，您應至少已部分完成裝置和應用程式整備的步驟、準備好基礎結構、設定並收集應用程式套件、計劃就位可移轉使用者檔案及設定預設設定，以及計劃好保留您現有的安全性控制項，並可能部署新的控制項。
 
-現在我們已達到一個階段，您結合這些片段以盡可能自動化來安裝 Windows 10 和 Office 365 專業增強版，以及所需的驅動程式、應用程式和其他任何所需項目。
+現在我們已達到一個階段，您結合這些片段以盡可能自動化來安裝 Windows 10 和 Microsoft 365 Apps 企業版，以及所需的驅動程式、應用程式和其他任何所需項目。
 
 最後，作業系統部署成功的最佳評量是符合使用者預期並避免中斷工作。在此步驟中，您會開始測試和部署以在分階段部署中試用使用者。這裡有一個提示，在您擴大部署之前，您必須直接跳到部署程序轉輪的步驟 8 – [使用者通訊和訓練](https://aka.ms/mdd8) (英文) 以確保使用者收到通知，並準備好以他們的方式進行變更，且您可以使用分階段部署透過連續驗證來測量您呈現的速度。
 
@@ -131,8 +131,8 @@ Windows 10 的新選項使用Windows Autopilot 將新電腦設定配置為硬體
 
 ## <a name="next-step"></a>下一步 
 
-## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[步驟 7：Windows 和 Office 服務](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicing"></a>[步驟 7：Windows 和 Office 服務](https://aka.ms/mdd7)
 
 ## <a name="previous-step"></a>上一步
 
-## <a name="step-5-security-and-compliance-considerationshttpsakamsmdd5"></a>[步驟 5：安全性與相容性考量事項](https://aka.ms/mdd5)
+## <a name="step-5-security-and-compliance-considerations"></a>[步驟 5：安全性與相容性考量事項](https://aka.ms/mdd5)

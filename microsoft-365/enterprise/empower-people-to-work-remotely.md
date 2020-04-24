@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: 設定基礎結構和安全性，讓您的員工隨時隨地都能遠端工作。
-ms.openlocfilehash: 8bbbe4853805c506ee511ecdef684f407166aca0
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 3c4d34e21993f3b0c9327b27dd0a5a14f430b1b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504120"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637501"
 ---
 # <a name="empower-remote-workers"></a>強化遠端工作人員
 
@@ -58,14 +58,14 @@ ms.locfileid: "43504120"
 - 安全的資源存取
   - 使用 Teams、SharePoint 網站和 OneDrive 的群組和權限，以便只有經過驗證且被允許的使用者才能存取
 - 外洩檔案的保護
-  - Office 365 DLP 原則
+  - DLP 原則
   - 跟隨檔案的敏感度標籤，用於加密和權限
 - Microsoft Intune 的裝置管理和安全性
   - 註冊受管理裝置
   - 個人裝置的應用程式設定
   - 裝置和應用程式原則
 - 裝置的生產力應用程式
-  - Office 365 專業增強版應用程式搭配 Teams、SharePoint 和 OneDrive 進行共同作業的體驗 
+  - Microsoft 365 Apps 企業版應用程式搭配 Teams、SharePoint 和 OneDrive 進行共同作業的體驗 
 - Windows 10 企業版
   - 全面的安全性功能，可防範網路攻擊並防止資料外洩
 - 存取內部部署應用程式
@@ -108,11 +108,11 @@ ms.locfileid: "43504120"
 
 ![適用于遠端工作人員的 Windows 10 企業元素](../media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
  
-[階段 4：Office 365 專業增強版](office365proplus-infrastructure.md)，部署基礎結構以安裝 Office 365 專業增強版或在組織的裝置上將目前安裝的 Office 套件 (例如 Office 2010 或 Office 2013) 升級至 Office 365 專業增強版。 這會為您的使用者提供最佳的安全性和共同作業體驗。
+針對[階段4：Microsoft 365 Apps 企業版](office365proplus-infrastructure.md)，您將部署基礎結構以安裝 Microsoft 365 Apps 企業版，或將您目前安裝的 Office 套件 (例如 Office 2010 或 Office 2013) 升級至您組織裝置上的 Microsoft 365 Apps 企業版。 這會為您的使用者提供最佳的安全性和共同作業體驗。
 
-以下是安裝 Office 365 專業增強版的裝置所產生的組態。
+以下是在裝置上安裝 Microsoft 365 Apps 企業版產生的組態。
 
-![適用于遠端工作人員的 Office 365 專業增強版元素](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
+![適用於遠端工作人員的 Microsoft 365 Apps 企業版](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
  
 [階段 5：行動裝置管理](mobility-infrastructure.md)部署 Intune 裝置和應用程式管理：
 
@@ -126,8 +126,8 @@ ms.locfileid: "43504120"
  
 [階段 6：資訊保護](infoprotect-infrastructure.md)是為您的數位資產設計和設定保護：
 
-- Office 365 DLP 原則。
-- 跟隨檔案的 Office 365 敏感度標籤，用於加密和權限。
+- DLP 原則。
+- 跟隨檔案的 Microsoft 365 敏感度標籤，用於加密和權限。
 
 以下是所產生的組態，強調 [DLP 原則] 和 [敏感度標籤]。
 
@@ -153,7 +153,7 @@ ms.locfileid: "43504120"
  
 ### <a name="deployment-results"></a>部署結果
 
-部署底層基礎結構和工作負載並推出 Windows 10 企業版和 Office 365 專業增強版之後，遠端工作人員：
+部署底層基礎結構和工作負載並推出 Windows 10 企業版和 Microsoft 365 Apps 企業版之後，遠端工作人員會：
 
 - 受制于增強式驗證和身分識別保護。
 - 在其 Windows 裝置上使用最新且最安全的 Windows 版本。
@@ -205,7 +205,7 @@ ms.locfileid: "43504120"
 
 ### <a name="user-adoption-results"></a>使用者採用結果
 
-您的遠端工作人員可以使用其 Windows 10 企業版或其他裝置與 Office 365 專業增強版，在安全的環境中存取和使用共用的 Microsoft 365 企業版雲端服務和資源，並即時開會、建立和共同作業。
+您的遠端工作人員可以使用其 Windows 10 企業版或其他裝置與 Microsoft 365 Apps 企業版，在安全的環境中存取和使用共用的 Microsoft 365 企業版雲端服務和資源，並即時開會、建立和共同作業。
 
 ## <a name="additional-microsoft-features-to-support-remote-workers"></a>支援遠端工作人員的其他 Microsoft 功能
 

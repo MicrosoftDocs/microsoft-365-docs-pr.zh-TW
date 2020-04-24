@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並設定您組織的安全性和資訊保護層級。
-ms.openlocfilehash: d3ba5f490b7aa80c9149a0451059914c78b8f2f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0fa3e9fa11070ea505752d781ecdd21b344c8222
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067210"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636961"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>步驟 1：定義安全性和資訊保護層級
 
@@ -33,7 +33,7 @@ ms.locfileid: "42067210"
 雖然您可以定義自己的安全性層級且可能已有定義好的層級，Microsoft 建議您開發計劃，以使用至少三個不同的可套用的安全性與保護層級。 以下清單可協助您快速上手： 
 
 - **基準線：** 此為保護資料的最低標準，適用於存取您資料的身分識別與裝置。您可以遵循基準線安全性與保護建議來提供最強的預設保護，此預設保護符合許多組織或其部門的需求。
-- **敏感性：** 此為對您資料子集的額外保護，該資料的保護層級必須大於基準線。您可以將此提高的保護套用至 Office 365 環境中特定的資料集。Microsoft 也建議將敏感安全性層級套用至會存取敏感資料的身分識別和裝置。
+- **敏感性：** 此為對您資料子集的額外保護，該資料的保護層級必須大於基準線。您可以將此提高的保護套用至 Microsoft 365 環境中特定的資料集。Microsoft 也建議將敏感安全性層級套用至會存取敏感資料的身分識別和裝置。
 - **高管制：** 這是最高層級的保護，適用於通常有少量高機密資料、受重視的智慧財產權或商業機密或必須遵守嚴格之安全性法規的資料。Microsoft 365 企業版能夠協助組織符合這些高安全性需求 (包括對身分識別與裝置的對等保護)。
 
 如需詳細資訊，請參閱[三層的保護](microsoft-365-policies-configurations.md#three-tiers-of-protection)。

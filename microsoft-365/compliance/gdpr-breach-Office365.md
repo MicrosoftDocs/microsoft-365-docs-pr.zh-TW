@@ -1,5 +1,5 @@
 ---
-title: GDPR 規定的 Office 365 資料外洩通知
+title: GDPR 規定的外洩通知
 description: Microsoft 如何防止個人資料外洩，以及若發生外洩 Microsoft 會如何回應和通知您。
 keywords: Office 365、Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
 localization_priority: Priority
@@ -15,14 +15,14 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 25888f0981cc4fe2b25e70282f5f6b49283cdcf3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ae69a8330f5daec275247e718f7eb66a5f0f8bf9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073850"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633438"
 ---
-# <a name="office-365-breach-notification-under-the-gdpr"></a>GDPR 規定的 Office 365 資料外洩通知
+# <a name="breach-notification-under-the-gdpr"></a>GDPR 規定的外洩通知
 
 Office 365 將以資料處理者的身分，確保身為資料控制者的客戶可符合 GDPR 資料外洩通知的要求。為此，我們致力於完成以下項目：
 
@@ -76,7 +76,7 @@ Microsoft 認可資料控制者要負責進行風險評估並判斷資料外洩�
 
 如上所述，Office 365 會盡力在宣告資料外洩後的 72 小時內通知客戶。客戶的租用戶系統管理員將會收到通知。此外，Office 365 建議客戶透過 Azure Active Directory (AAD) 入口網站指定「全域隱私權連絡人」別名。發生個人資料外洩時，除了系統管理員外，此別名也可以收到以電子郵件傳送的通知。
 
-客戶的隱私權連絡人可以是組織內的個人、通訊群組清單 (DL)，或是完全與組織沒關係的某人。Office 365 只會要求客戶提供此連絡人的電子郵件地址，而且客戶可以在 AAD 入口網站中的 [全域隱私權連絡人] 欄位下，指定此連絡人。請注意，此欄位與 AAD 中的「技術連絡人」欄位相關 (但不同)。如果客戶選擇指定 DL 作為此連絡人，應確認 DL 是否已設定為可接收來自外部寄件者的郵件。
+客戶的隱私權連絡人可以是組織內的個人、通訊群組清單 (DL)，或是完全與組織沒關係的某人。Office 365 只會要求客戶提供此連絡人的電子郵件地址，而且客戶可以在 AAD 入口網站中的 [全域隱私權連絡人] 欄位下，指定此連絡人。請注意，此欄位與 AAD 中的 [技術連絡人] 欄位相關 (但不同)。如果客戶選擇指定 DL 作為此連絡人，應確認 DL 是否已設定為可接收來自外部寄件者的郵件。
 
 總之，Office 365 會要求客戶執行下列項目，以享有資料外洩通知程序的好處：
 

@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: 推行並發揮 SharePoint 在組織中的價值，規劃這整個程序的步驟。
-ms.openlocfilehash: cb0cf16df328d667d796008ac7cabfc98c21ad17
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: ee2c5592015361a678785cb8e4aaad9074c5d804
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "39886320"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636913"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>部署適用於 Microsoft 365 企業版的 SharePoint 和 OneDrive
 
@@ -93,8 +93,8 @@ SharePoint 的案例清單，能解決組織對於文件儲存與共用、內容
 
 如需更深入了解 SharePoint 的安全性，請檢閱下列資源：
 
--   [SharePoint 和 OneDrive 如何保護您在雲端的資料](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
--   [OneDrive 和 SharePoint 中的資料加密](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
+-     [SharePoint 和 OneDrive 如何保護您在雲端的資料](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
+-     [OneDrive 和 SharePoint 中的資料加密](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
 
 #### <a name="result"></a>結果
 
@@ -155,8 +155,8 @@ SharePoint 的案例清單，能解決組織對於文件儲存與共用、內容
 
 以下是一些建議的活動：
 
-- 請參閱 [Office 365 的成功要素](https://aka.ms/successfactors) (英文) 以了解雲端服務導入的一般最佳做法。 
-- 請參閱 [Office 365 系統管理中心的活動報告](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports)，以了解整個組織的 Office 365 服務用法。如果貴組織還沒有 Office 365 全域系統管理員，請找將報告讀取權限授與給使用者帳戶的人員，讓您可以存取活動報告。
+- 請參閱 [Microsoft 365 的成功要素](https://aka.ms/successfactors) (英文) 以了解雲端服務導入的一般最佳做法。 
+- 請參閱[系統管理中心的 Microsoft 365 報告](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports)，以了解整個組織的服務用法。如果您不是貴組織的全域系統管理員，請要求全域系統管理員授與報告讀取權限給您的使用者帳戶，讓您可以存取活動報告。
 - 監控您的意見反應管道 (位於中央 Teams 團隊或 Yammer 中的公共頻道)，以發現個人在使用 SharePoint 上的問題和意見反應。 快速解決問題，避免使用者在使用上感到挫折，並展現出對推行的支援。
 - 在每個業務小組中找出並培養擁護者，並特別表彰他們在使用 SharePoint 上的成就和最佳作法。 向組織反映他們的成功，以顯示專案的成功和導入成效。 透過業務小組內的技術領導者的認可，可以對領導者和同儕產生強大的影響力。
 

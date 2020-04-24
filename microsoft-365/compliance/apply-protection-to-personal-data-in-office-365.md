@@ -1,5 +1,5 @@
 ---
-title: 將保護套用至 Office 365 中的個人資料
+title: 將保護套用至個人資料
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,21 +18,21 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: 了解如何使用資料外洩防護 (DLP) 原則來保護 Office 365 中的個人資料。
-ms.openlocfilehash: ef6907f9c6574f53dc6f3ba6e44c72eac308d825
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 了解如何使用資料外洩防護 (DLP) 原則來保護 Microsoft 365 中的個人資料。
+ms.openlocfilehash: 54bfdd27f5c18d6c145b1e9f13c5e92c1b322048
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079741"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634271"
 ---
-# <a name="apply-protection-to-personal-data-in-office-365"></a>將保護套用至 Office 365 中的個人資料
+# <a name="apply-protection-to-personal-data"></a>將保護套用至個人資料
 
-Office 365 中個人資訊的保護，包括使用資料外洩防護功能。 透過合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監視及自動保護整個 Office 365 的敏感性資訊。
+Microsoft 365 中的個人資訊保護包括使用資料外洩防護功能。 透過合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監視及自動保護整個 Microsoft 365 的敏感資訊。
 
 本主題描述如何使用 DLP 保護個人資料。本主題也會列出可用來實現 GDPR 規範的其他保護功能，包括在 SharePoint 文件庫中設定權限，以及使用裝置存取原則。
 
-## <a name="apply-protection-using-data-loss-prevention-in-office-365"></a>使用 Office 365 中的資料外洩防護來套用保護
+## <a name="apply-protection-using-data-loss-prevention-in-microsoft-365"></a>使用 Microsoft 365 中的資料外洩防護來套用保護
 
 使用 DLP 時，您可以：
 
@@ -62,9 +62,9 @@ Office 365 中個人資訊的保護，包括使用資料外洩防護功能。 �
 
 ### <a name="using-dlp-for-gdpr-compliance"></a>對 GDPR 規範使用 DLP
 
-Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐盟資料主旨相關的個人資料。Office 365 DLP 可以通知規範小組，個人資訊在 SharePoint Online 和商務用 OneDrive 的儲存位置，或使用者何時傳送包含個人資訊的電子郵件。使用與歐盟居民相關的個人資訊時，DLP 也可以為您的員工提供原則提示。
+Microsoft 365 DLP 的其中一個主要用途為識別 Microsoft 365 環境中與歐盟資料主旨相關的個人資料。Microsoft 365 DLP 可以通知規範小組，個人資訊在 SharePoint Online 和商務用 OneDrive 的儲存位置，或使用者何時傳送包含個人資訊的電子郵件。使用與歐盟居民相關的個人資訊時，DLP 也可以為您的員工提供原則提示。
 
-教育並認知歐盟居民資料應儲存在您環境的何處中，以及允許您的員工如何處理這些資料，這代表一種使用 Office 365 DLP 的資訊保護層級。通常，已有權存取這類資訊的員工需要這個存取權，才能進行其日常工作。實施 DLP 原則來協助遵循 GDPR，可能不需要限制存取。
+教育並認知歐盟居民資料應儲存在您環境的何處中，以及允許您的員工如何處理這些資料，這代表一種使用 Microsoft 365 DLP 的資訊保護層級。通常，已有權存取這類資訊的員工需要這個存取權，才能進行其日常工作。實施 DLP 原則來協助遵循 GDPR，可能不需要限制存取。
 
 不過，遵循 GDPR 通常包含組織的風險型評估，其依循法律與資訊安全觀點、何種類型與個人資訊儲存位置的識別，以及是否有儲存及處理該資訊的法律理由。根據此評估，實作原則來保護組織及遵循 GDPR，可能需要移除員工對文件的存取，而此文件包含歐盟資料主旨的個人資訊。若需要進一步保護，可以另外設定 DLP 保護。
 
@@ -132,7 +132,7 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 </tr>
 <tr class="even">
 <td align="left">位置</td>
-<td align="left">Office 365 中的所有位置</td>
+<td align="left">Microsoft 365 中的所有位置</td>
 </tr>
 <tr class="odd">
 <td align="left">尋找包含的內容</td>
@@ -144,13 +144,13 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 </tr>
 <tr class="odd">
 <td align="left">在內容符合原則設定時通知使用者</td>
-<td align="left"><p>核取此方塊 (向使用者顯示原則提示，並傳送他們電子郵件通知。)</p>
+<td align="left"><p>核取此方塊 (「向使用者顯示原則提示並傳送電子郵件通知。」)</p>
 <p>按一下 [自訂提示和電子郵件]，並針對您的環境更新這些項目。請參閱本文中的預設通知：<a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">傳送電子郵件通知，並顯示 DLP 原則的原則提示</a>。</p></td>
 </tr>
 <tr class="even">
 <td align="left">在一次共用特定數量的敏感資訊時偵測</td>
 <td align="left"><p>[在共用的內容包含：至少 ___ 個執行個體，屬於相同的敏感資訊類型時偵測] — 將此項設為 1。</p>
-<p>[以電子郵件傳送事件報告] — 請核取此方塊。按一下 [選擇要包含在報告中的項目以及接收者]。請務必新增您的規範小組。</p>
+<p>[以電子郵件傳送事件報告] — 請核取此方塊。按一下 [選擇要包含在報告中的項目以及接收者]。請務必新增您的合規性小組。</p>
 <p>[限制誰可以存取的內容並覆寫原則] — 清除此核取方塊，以接收關於敏感資訊的通知，不阻止使用者存取該資訊。</p></td>
 </tr>
 </tbody>
@@ -166,7 +166,7 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 
 由於內容搜尋目前無法讓您利用電子郵件測試敏感資訊類型，請考慮為 Exchange 建立個別原則 (每一個原則中都有敏感資訊類型的子集)，以及監視這些原則的推出。
 
-## <a name="additional-protection-you-can-apply-to-protect-personal-data-in-office-365"></a>您可以套用以保護 Office 365 中個人資料的額外保護
+## <a name="additional-protection-you-can-apply-to-protect-personal-data-in-microsoft-365"></a>您可套用以對 Microsoft 365 中的個人資料進行保護的額外保護
 
 敏感資訊類型、標籤和資料外洩防護原則可協助您識別包含特定資料的文件，並套用保護。不過，這些保護視將針對資料存取而設定的權限、具有未受連累之帳戶的使用者，以及狀況良好的裝置而定。
 
@@ -189,7 +189,7 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 <td align="left"><p>敏感資訊類型</p>
 <p>Office 標籤</p>
 <p>資料外洩防護原則</p>
-<p>電子郵件的 Office 365 郵件加密</p></td>
+<p>電子郵件的 Microsoft 365 郵件加密</p></td>
 </tr>
 <tr class="even">
 <td align="left">網站和文件庫層級保護 (包括 SharePoint 和 OneDrive 網站)</td>
@@ -198,7 +198,7 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 <p>網站層級裝置存取控制</p></td>
 </tr>
 <tr class="odd">
-<td align="left">服務存取保護 (包括 Office 365 中所有服務的存取)</td>
+<td align="left">服務存取保護 (包括 Microsoft 365 中所有服務的存取)</td>
 <td align="left"><p>企業行動力 + 安全性 (EMS) 套件的身分識別與裝置存取保護</p>
 <p>特許存取管理</p>
 <p>Windows 10 安全性功能</p></td>
@@ -212,7 +212,7 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 
 您可以在針對 GDPR 規範設定的環境中使用下列功能。GDPR 規範不一定需要這些功能，但可以使用它們，不會對您探索、保護、監視及報告與 GDPR 規範相關之資料的能力產生負面影響。
 
-客戶金鑰 — 可讓客戶對用來在 Office 365 內加密靜態資料的加密金鑰提供並保留控制權。此建議只適用於法規上需要管理其自己的加密金鑰的的客戶。
+客戶金鑰 — 可讓客戶對用來在 Microsoft 365 內加密靜態資料的加密金鑰提供及保留控制權。此建議只適用於法規上需要管理其本身加密金鑰的客戶。
 
 客戶加密箱 — 客戶加密箱可讓您控制 Microsoft 支援工程師如何存取您的資料，以在必要時根據具體情況解決技術問題。您可以控制是否要授與支援工程師存取您資料的權限。每個要求都會隨附到期時間。
 
@@ -259,7 +259,7 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 
 許多組織允許外部共用以支援分工合作。了解如何設定您租用戶的整個設定。然後，檢閱包含個人資料之網站的外部共用設定。
 
-外部使用者是您組織外的人員，受邀存取您的 SharePoint 網站和文件，但沒有您的 SharePoint Online 或 Microsoft Office 365 訂閱的授權。
+外部使用者是您組織外的人員，受邀存取您的 SharePoint 網站和文件，但沒有您的 SharePoint Online 或 Microsoft 365 訂閱的授權。
 
 外部共用原則同時適用於 SharePoint Online 和商務用 OneDrive
 
@@ -288,7 +288,7 @@ Office 365 DLP 的其中一個主要用途為識別 Office 365 環境中與歐�
 </tr>
 <tr class="even">
 <td align="left">外部使用者可以做什麼</td>
-<td align="left"><p>阻止外部使用者共用檔案、資料夾、他們未擁有的網站</p>
+<td align="left"><p>阻止外部使用者共用他們未擁有的檔案、資料夾、網站</p>
 <p>要求外部使用者接受具有邀請傳送至其中之相同帳戶的共用邀請</p></td>
 </tr>
 <tr class="odd">
@@ -358,7 +358,7 @@ SharePoint 和商務用 OneDrive 的裝置存取原則需要 Azure Active Direct
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>身分識別與裝置的服務存取保護
 
-Microsoft 建議您針對存取服務的身分識別與裝置設定保護。您用於保護 Office 365 服務存取的工作也可用來保護其他 SaaS 服務、PaaS 服務，甚至是其他雲端提供者中應用程式的存取。
+Microsoft 建議您針對存取服務的身分識別與裝置設定保護。您用於保護 Microsoft 365 服務存取的工作也可用來保護其他 SaaS 服務、PaaS 服務，甚至是其他雲端提供者中應用程式的存取。
 
 身分識別與裝置的存取保護提供保護的底線，以確保身分識別不會受到連累、裝置安全無虞，且裝置上存取的組織資料遭到隔離並受到保護。
 
@@ -366,7 +366,7 @@ Microsoft 建議您針對存取服務的身分識別與裝置設定保護。您�
 
 如需搭配 AD FS 的混合式身分識別環境，請參閱[建議的安全性原則和設定](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance)。
 
-下圖描述雲端服務 (SaaS、PaaS)、帳戶類型 (租用戶網域帳戶與 B2B 帳戶帳戶)，以及服務存取功能如何相關。請務必注意可與 B2B 帳戶搭配使用的功能。
+下圖描述雲端服務 (SaaS、PaaS)、帳戶類型 (租用戶網域帳戶與 B2B 帳戶)，以及服務存取功能如何相關。請務必注意可與 B2B 帳戶搭配使用的功能。
 
 ![雲端服務、帳戶類型和存取功能](../media/Apply-protection-to-personal-data-in-Office-365-image4.png)
 
@@ -374,11 +374,11 @@ Microsoft 建議您針對存取服務的身分識別與裝置設定保護。您�
 
 ### <a name="cloud-services"></a>雲端服務
 
-Azure Active Directory 可讓您的身分識別存取任何雲端服務，包括非 Microsoft 提供者，例如 Amazon Web 服務。此圖顯示 Office 365、「其他 SaaS 應用程式」和「PaaS 應用程式」。箭號從 Azure Active Directory 指向其中每一個服務，這顯示 Azure Active Directory 可用於驗證這些應用程式類型的全部。
+Azure Active Directory 可讓您的身分識別存取任何雲端服務，包括非 Microsoft 提供者，例如 Amazon Web 服務。此圖顯示 Microsoft 365、「其他 SaaS 應用程式」和「PaaS 應用程式」。箭號從 Azure Active Directory 指向其中每一個服務，這顯示 Azure Active Directory 可用於所有這類應用程式類型的驗證。
 
 ### <a name="types-of-accounts"></a>帳戶類型
 
-租用戶網域帳戶是您新增至租用戶並直接管理的帳戶。B2B 帳戶是組織外受邀與您合作之使用者的帳戶。這些可以是其他 Office 365 帳戶、其他組織帳戶或消費者帳戶 (例如 Gmail)。此圖顯示 Azure Active Directory 內的兩種帳戶類型。
+租用戶網域帳戶是您新增至租用戶並直接管理的帳戶。B2B 帳戶是組織外受邀與您合作之使用者的帳戶。這些可以是其他 Microsoft 365 帳戶、其他組織帳戶或消費者帳戶 (例如 Gmail)。此圖顯示 Azure Active Directory 內的兩種帳戶類型。
 
 ### <a name="capabilities"></a>功能
 

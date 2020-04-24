@@ -1,5 +1,5 @@
 ---
-title: Office 365 的反詐騙保護
+title: 反詐騙保護
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,26 +18,26 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: ''
-ms.openlocfilehash: 53e671e72922eb337cd5af2cfaa11b3ce3f95399
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 3a306cb8bda0f5f07660f8a2af60e29a3c4d0776
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537518"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636031"
 ---
-# <a name="anti-spoofing-protection-in-office-365"></a>Office 365 的反詐騙保護
+# <a name="anti-spoofing-protection"></a>反詐騙保護
 
-如果您是 Office 365 客戶並且有 Exchange Online 信箱，或是獨立版 Exchange Online Protection (EOP) 客戶且沒有 Exchange Online 信箱，EOP 所包含的功能可協助保護貴組織抵禦詐騙 (偽造) 寄件者。
+如果您是 Microsoft 365 客戶並且有 Exchange Online 信箱，或是獨立版 Exchange Online Protection (EOP) 客戶且沒有 Exchange Online 信箱，EOP 所包含的功能可協助保護貴組織抵禦詐騙 (偽造) 寄件者。
 
 為保護使用者，Microsoft 嚴正看待網路釣魚攻擊。 詐騙是攻擊者所使用的常見技巧。 **詐騙訊息是來自實際來源以外的某人或某個位置**。 這是設計來取得使用者認證的網路釣魚攻擊的慣用伎倆。 EOP 中的反詐騙技術專門檢查郵件內文中的 [寄件者] 標頭(用於顯示電子郵件用戶端中的郵件寄件者)。 當 EOP 高度認為 [寄件者] 標頭為偽造時，會將該郵件視為詐騙。
 
 EOP 中提供下列反詐騙技術：
 
-- **詐騙情報**：檢閱來自內部和外部網域中寄件者的詐騙郵件，並允許或封鎖那些寄件者。 如需詳細資訊，請參閱[在 Office 365 中設定詐騙情報](learn-about-spoof-intelligence.md)。
+- **詐騙情報**：檢閱來自內部和外部網域中寄件者的詐騙郵件，並允許或封鎖那些寄件者。 如需詳細資訊，請參閱[在 Microsoft 365 中設定詐騙情報](learn-about-spoof-intelligence.md)。
 
-- **防網路釣魚原則**：在 EOP 中，內建的防網路釣魚原則可讓您開啟或關閉詐騙情報、開啟或關閉 Outlook 中未經驗證的寄件者識別碼，並針對已封鎖詐騙寄件者指定動作 (移至 [垃圾郵件] 資料夾或隔離)。 Office 365 進階威脅防護 (ATP) 中提供的進階防網路釣魚原則，也包含防冒充設定 (受保護的寄件者和網域)、信箱智慧設定，以及可調整的進階網路釣魚臨界值。 如需詳細資訊，請參閱 [Office 365 中的防網路釣魚原則](set-up-anti-phishing-policies.md)。
+- **防網路釣魚原則**：在 EOP 中，內建的防網路釣魚原則可讓您開啟或關閉詐騙情報、開啟或關閉 Outlook 中未經驗證的寄件者識別碼，並針對已封鎖詐騙寄件者指定動作 (移至 [垃圾郵件] 資料夾或隔離)。 Office 365 進階威脅防護 (ATP) 中提供的進階防網路釣魚原則，也包含防冒充設定 (受保護的寄件者和網域)、信箱智慧設定，以及可調整的進階網路釣魚臨界值。 如需詳細資訊，請參閱 [Microsoft 365 中的防網路釣魚原則](set-up-anti-phishing-policies.md)。
 
-- **電子郵件驗證**：任何反詐騙工作的整合部分就是在 DNS 中使用 SPF、DKIM 和 DMARC 記錄的電子郵件驗證 (Authentication) (也稱為電子郵件驗證 (Validation))。 您可以為網域設定這些記錄，這樣目的地電子郵件系統就能檢查您網域中寄件者所聲稱郵件的有效性。 針對內送郵件，Office 365 需要寄件者網域的電子郵件驗證。 如需詳細資訊，請參閱 [Office 365 中的電子郵件驗證](email-validation-and-authentication.md)。
+- **電子郵件驗證**：任何反詐騙工作的整合部分就是在 DNS 中使用 SPF、DKIM 和 DMARC 記錄的電子郵件驗證 (Authentication) (也稱為電子郵件驗證 (Validation))。 您可以為網域設定這些記錄，這樣目的地電子郵件系統就能檢查您網域中寄件者所聲稱郵件的有效性。 針對內送郵件，Microsoft 365 需要寄件者網域的電子郵件驗證。 如需詳細資訊，請參閱 [Microsoft 365 中的電子郵件驗證](email-validation-and-authentication.md)。
 
 Microsoft 的反詐騙技術最初僅部署到具有 Office 365 進階威脅防護 (ATP) 的組織。 在 2018 年 10 月，已將反詐騙保護功能新增至 EOP。
 
@@ -113,15 +113,15 @@ Microsoft 將詐騙郵件區分為兩種類型：
 
   - SFTY 是郵件的安全層級。 9 表示網路釣魚，22 表示跨網域詐騙。
 
-如需詐騙相關類別和複合驗證 (compauth) 值的詳細資訊，請參閱 [Office 365 的反垃圾郵件標頭](anti-spam-message-headers.md)。
+如需詐騙相關類別和複合驗證 (compauth) 值的詳細資訊，請參閱 [Microsoft 365 的反垃圾郵件標頭](anti-spam-message-headers.md)。
 
-如需 DMARC 的詳細資訊，請參閱[在 Office 365 中使用 DMARC 來驗證電子郵件](use-dmarc-to-validate-email.md)。
+如需 DMARC 的詳細資訊，請參閱[在 Microsoft 365 中使用 DMARC 來驗證電子郵件](use-dmarc-to-validate-email.md)。
 
 ## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>關於有多少郵件被標示為詐騙郵件的報告
 
 EOP 組織可以在 [安全性與合規性中心] 的 [報告] 儀表板中使用**詐騙偵測**報告。 如需詳細資訊，請參閱[詐騙偵測報告](view-email-security-reports.md#spoof-detections-report)。
 
-Office 365 ATP 組織可以使用 [安全性與合規性中心] 中的 [威脅總管] 來檢視網路釣魚嘗試的相關資訊。 如需詳細資訊，請參閱 [Office 365 威脅調查及回應](office-365-ti.md)。
+Office 365 ATP 組織可以使用 [安全性與合規性中心] 中的 [威脅總管] 來檢視網路釣魚嘗試的相關資訊。 如需詳細資訊，請參閱 [Microsoft 365 威脅調查及回應](office-365-ti.md)。
 
 ## <a name="problems-with-anti-spoofing-protection"></a>反詐騙保護的問題
 
@@ -154,7 +154,7 @@ Office 365 ATP 組織可以使用 [安全性與合規性中心] 中的 [威脅�
 
   - 在電子郵件用戶端中建立收件匣規則，將郵件移動至收件匣。 您也可以要求系統管理員設定覆寫，如[使用詐騙情報來設定未經驗證電子郵件的允許寄件者](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email)中所討論。
 
-  - 向 Office 365 建立支援票證，以建立郵寄清單的覆寫，將它視為合法。 如需詳細資訊，請參閱[連絡商務產品的支援服務 - 系統管理說明](../../admin/contact-support-for-business-products.md)。
+  - 向 Microsoft 365 建立支援票證，以建立郵寄清單的覆寫，將其視為合法。 如需詳細資訊，請參閱[連絡商務產品的支援服務 - 系統管理說明](../../admin/contact-support-for-business-products.md)。
 
 如果其他所有項目都失敗，您可以將郵件當作誤判向 Microsoft 報告。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
@@ -162,4 +162,4 @@ Office 365 ATP 組織可以使用 [安全性與合規性中心] 中的 [威脅�
 
 ## <a name="considerations-for-anti-spoofing-protection"></a>反詐騙保護的考量
 
-如果您是目前傳送郵件至 Office 365 的系統管理員，您必須確認您的電子郵件已正確驗證。 否則，可能會標示為垃圾郵件或網路釣魚。 如需詳細資訊，請參閱[傳送未經驗證電子郵件的合法寄件者解決方案](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email)。
+如果您是目前傳送郵件至 Microsoft 365 的系統管理員，您必須確認您的電子郵件已正確驗證。 否則，可能會標示為垃圾郵件或網路釣魚。 如需詳細資訊，請參閱[傳送未經驗證電子郵件的合法寄件者解決方案](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email)。

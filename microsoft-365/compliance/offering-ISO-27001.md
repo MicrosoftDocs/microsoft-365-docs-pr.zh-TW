@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5bb3820222258a5b0b4b28c7476541b5d338f4b6
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 19f9e5dc72231093b279d39b8bf38f5cea0a9c18
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222095"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583540"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 資訊安全性管理標準
 
@@ -56,9 +56,9 @@ ISO/IEC 27001 在國際上的接受度和適用性，是取得此標準認證為
 - [Microsoft 專業服務](https://go.microsoft.com/fwlink/p/?linkid=2100022)
 - Stream
 - Azure DevOps Services
-- Windows Defender ATP - 端點偵測與回應、自動調查與補救、安全分數
+- Microsoft Defender ATP - 端點偵測與回應、自動調查與補救、安全分數
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 稽核週期：Microsoft 雲端服務針對 ISO 27001：2013 標準，至少一年稽核一次。
 
@@ -84,9 +84,9 @@ ISO/IEC 27001 在國際上的接受度和適用性，是取得此標準認證為
 
 - [Microsoft 專業服務](https://www.bsigroup.com/Our-services/Certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=licence%3d601002%26company%3dMicrosoft&licencenumber=IS%20601002)
 
-### <a name="windows-defender-atp"></a>Windows Defender ATP
+### <a name="microsoft-defender-atp"></a>Microsoft Defender ATP
 
-- [Windows Defender ATP - 端點偵測與回應、自動調查與補救、安全分數 - ISO 27001 認證](https://aka.ms/windowsdefenderatpiso27001certificate)
+- [Microsoft Defender ATP - 端點偵測與回應、自動調查與補救、安全分數 - ISO 27001 憑證](https://aka.ms/windowsdefenderatpiso27001certificate)
 
 ## <a name="assessments-and-reports"></a>評定和報告
 
@@ -110,10 +110,10 @@ ISO/IEC 27001 在國際上的接受度和適用性，是取得此標準認證為
 
 - [Azure DevOps Services ISO 27001 認證 IS 619017](https://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=company%3dVisual%2bStudio%2bTeam%2bServices&licencenumber=IS%20619017)
 
-### <a name="windows-defender-atp"></a>Windows Defender ATP
+### <a name="microsoft-defender-atp"></a>Microsoft Defender ATP
 
-- [Windows Defender ATP - 端點偵測與回應、自動調查與補救、安全分數 - ISO 27001 稽核評定報告](https://aka.ms/windowsdefenderatpiso27001auditreport)
-- [Windows Defender ATP - 端點偵測與回應、自動調查與補救、安全分數 - ISO 27001 和 27018 SOA](https://aka.ms/windowsdefenderatpiso27001SOA)
+- [Microsoft Defender ATP - 端點偵測與回應、自動調查與補救、安全分數 - ISO 27001 稽核評定報告](https://aka.ms/windowsdefenderatpiso27001auditreport)
+- [Microsoft Defender ATP - 端點偵測與回應、自動調查與補救、安全分數 - ISO 27001 和 27018 SOA](https://aka.ms/windowsdefenderatpiso27001SOA)
 
 [查看其他稽核報告](https://aka.ms/auditreports)
 

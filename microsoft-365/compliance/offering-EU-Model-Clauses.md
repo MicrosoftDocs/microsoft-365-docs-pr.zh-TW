@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d35c6ee17c326f98179e882bb8752cd38f14ec6a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c792653cf8434a14bc89776a4ec870bc0d9a67ca
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602480"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637977"
 ---
 # <a name="european-union-model-clauses"></a>歐盟示範條款
 
@@ -47,7 +47,7 @@ Microsoft 為歐盟的資料保護工作小組提供其標準合約條款，以�
 
 - [Azure 和 Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
-- Microsoft 專業服務：Azure、Dynamics 365、Intune 及 Office 365 中型企業和企業客戶的頂級和內部部署
+- Microsoft 專業服務：Azure、Dynamics 365、Intune 及商務用 Microsoft 365 中型企業和企業客戶的頂級與內部部署
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune：Intune 附加元件產品和適用於 Office 365 的行動裝置管理的雲端服務部分
 - Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中

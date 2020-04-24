@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 檔案計劃管理員提供對於保留標籤、保留標籤原則的進階管理功能，並且提供整合的方式讓標籤和標籤至內容活動周遊整個內容生命週期 – 從建立、共同作業、記錄宣告、保留，到最終的處置。
-ms.openlocfilehash: c4b1ddfaf3191a282a67917c2b2d257712a10802
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 4c9cbdefe538a0ed2593ec74dfcee1010fd9b818
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151458"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708438"
 ---
 # <a name="overview-of-file-plan-manager"></a>檔案計劃管理員的概觀
 
@@ -37,9 +37,9 @@ ms.locfileid: "43151458"
 
 若要存取檔案規劃管理員，必須擁有下列其中一種系統管理員角色：
     
-- 保留管理員
-
-- 僅檢視保留管理員
+    - 保留管理員
+    
+    - 僅檢視保留管理員
 
 ## <a name="default-retention-labels-and-label-policy"></a>預設保留標籤和標籤原則
 
@@ -131,7 +131,7 @@ ms.locfileid: "43151458"
 
    ![Excel 中開啟空白檔案計劃範本](../media/file-plan-blank-template.png)
 
-3. 填寫範本。 下列描述檔案計劃範本中每個屬性的內容和有效值。<br/>
+3. 填寫範本。 下列描述檔案計劃範本中每個屬性的內容和有效值。 匯入時，每個值最多可以包含 64 個字元。 <br/>
 
    |**屬性**|**類型**|**有效值**|
    |:-----|:-----|:-----|
@@ -152,7 +152,7 @@ ms.locfileid: "43151458"
    |CitationUrl|字串|此屬性指定在 **[條款/引文]** 檔案計劃描述元中顯示的 URL。|
    |CitationJurisdiction|字串|此屬性指定在 **[條款/引文]** 檔案計劃描述元中顯示的管轄單位或代理機構；例如「美國證券交易委員會 (SEC)」。|
    |Regulatory|字串|保留空白。 目前無法使用此屬性。|
-   |EventType|字串|此屬性會指定與標籤相關聯的保留規則。 您可以使用唯一識別規則的任何值。 例如：</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>您可以使用 [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) Cmdlet 來檢視可用的保留規則。 請注意，如果從某 Office 365 組織中匯出標籤，在將標籤匯入至另​​一個 Office 365 組織時，則不能使用該組織的 EventType 屬性的值。 這是因為對組織而言 EventType 值是唯一的。 |
+   |EventType|字串|此屬性會指定與標籤相關聯的保留規則。 您可以使用唯一識別規則的任何值。 例如：</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>您可以使用 [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) Cmdlet 來檢視可用的保留規則。 請注意，如果從某組織中匯出標籤，在將標籤匯入至另​​一個組織時，不可使用該組織的 EventType 屬性值。 這是因為對組織而言 EventType 值是唯一的。 |
    |||
 
    以下是含有保留標籤相關資訊的範本範例。

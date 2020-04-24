@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 深入了解如何在與組織外的人員共用檔案時，限制資訊意外暴露。
-ms.openlocfilehash: a84c5183ba3a816cf4d65f854f0143a48374f669
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: fbe97eef2841da9bd46d7f05e3b26dea40cd1bd2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604437"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632580"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>在與組織外的人員共用檔案時，限制資訊意外暴露。
 
@@ -79,7 +79,7 @@ ms.locfileid: "42604437"
 3. 在 [誰可以與組織外進行共用]**** 底下，選取其中一個核取方塊，或同時選取：a. [只讓所選安全性群組中的使用者與已驗證的外部使用者共用]****，指定可以與已驗證使用者共用的安全性群組 b. [只有所選安全性群組中的使用者可以與已驗證之外部使用者和使用匿名連結的使用者進行共用]****，指定可以與已驗證使用者共用和使用 [任何人] 連結的安全性群組
 4. 按一下 [確定]****。
 
-請注意，這會影響檔案、資料夾和網站，但是不會影響 Office 365 群組或 Teams。 當成員邀請來賓加入私人 Office 365 群組或 Microsoft Teams 中的私人小組時，邀請會傳送給群組或小組擁有者進行核准。
+請注意，這會影響檔案、資料夾和網站，但是不會影響 Microsoft 365 群組或 Teams。 當成員邀請來賓加入私人 Microsoft 365 群組或 Microsoft Teams 中的私人小組時，邀請會傳送給群組或小組擁有者進行核准。
 
 ## <a name="see-also"></a>另請參閱
 

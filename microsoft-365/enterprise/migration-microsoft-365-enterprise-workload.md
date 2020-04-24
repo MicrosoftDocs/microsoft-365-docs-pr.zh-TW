@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 在整個組織中逐步執行將 Microsoft Office、Office 伺服器及 Windows 的各版本移轉為 Microsoft 365 企業版的程序。
-ms.openlocfilehash: 76396ea3eb4622bb27455938f5c645dd1240003a
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 53d50321ffa2870fb0e94e9f6b7f005b8c666c2d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113492"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631534"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>移轉至 Microsoft 365 企業版
 
@@ -25,7 +25,7 @@ ms.locfileid: "43113492"
 
 若要充分發揮 Microsoft 365 企業版產品整合套件的商務價值，請開始規劃並實作策略以移轉以下版本：
 
-- 將安裝在您電腦上的 Office 用戶端移轉為 Office 365 專業增強版
+- 將安裝在您電腦上的 Office 用戶端移轉為 Microsoft 365 Apps 企業版
 - 將安裝在您伺服器上的 Office 伺服器移轉為 Office 365 中的對等服務
 - 將裝置上的 Windows 7 和 Windows 8.1 移轉為 Windows 10 企業版
 
@@ -49,7 +49,7 @@ ms.locfileid: "43113492"
 - 未以最佳化方式啟用以便運用 Microsoft 雲端技術，及協助您的企業進行數位轉型。
 - 不包含新功能。
  
-Microsoft 365 企業版包含 Office 365 專業增強版，此 Office 用戶端產品版本可使用 Microsoft 365 企業版授權，且會從 Microsoft 雲端進行安裝與更新。 Office 365 專業增強版包括安全性更新和最新功能。 如需詳細資訊，請參閱[關於企業中的 Office 365 專業增強版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
+Microsoft 365 企業版包含 Microsoft 365 Apps 企業版，此 Office 用戶端產品版本可使用 Microsoft 365 企業版授權，且會從 Microsoft 雲端進行安裝與更新。 Microsoft 365 Apps 企業版授權包括安全性更新和最新功能。 如需詳細資訊，請參閱[ Microsoft 365 Apps 企業版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
 
 ### <a name="office-2007"></a>Office 2007
 
@@ -59,9 +59,9 @@ Microsoft 365 企業版包含 Office 365 專業增強版，此 Office 用戶端�
 
 1. 為使用者取得並指派 Microsoft 365 授權。
 2. 在使用者電腦中解除安裝 Office 2007。
-3. 安裝 Office 365 專業增強版 (個別或搭配 IT 推出)。如需詳細資訊，請參閱[階段 4：Office 365 專業增強版](office365proplus-infrastructure.md)。
+3. 安裝 Microsoft 365 App 企業版 (個別安裝或搭配 IT 推出)。 如需詳細資訊，請參閱[階段4：Microsoft 365 App 企業版](office365proplus-infrastructure.md)。
 
-Office 365 專業增強版會自動安裝更新，可以充分利用 Office 365 中以雲端為基礎的服務，以取得增強的安全性和生產力。
+Microsoft 365 App 企業版會自動安裝更新，可以充分利用以雲端為基礎的服務，以取得增強的安全性和生產力。
 
 ### <a name="office-2010"></a>Office 2010
 
@@ -71,9 +71,9 @@ Office 365 專業增強版會自動安裝更新，可以充分利用 Office 365 
 
 1. 為使用者取得並指派 Microsoft 365 授權。
 2. 在使用者電腦中解除安裝 Office 2010。
-3. 安裝 Office 365 專業增強版 (個別或搭配 IT 推出)。如需詳細資訊，請參閱[階段 4：Office 365 專業增強版](office365proplus-infrastructure.md)。
+3. 安裝 Microsoft 365 App 企業版 (個別安裝或搭配 IT 推出)。 如需詳細資訊，請參閱[階段4：Microsoft 365 App 企業版](office365proplus-infrastructure.md)。
 
-Office 365 專業增強版會自動安裝安全性和新功能更新，並可以充分利用 Microsoft 365 中以雲端為基礎的服務，以取得增強的安全性和生產力。
+Microsoft 365 App 企業版會自動安裝安全性和新功能更新，並可以充分利用 Microsoft 365 中以雲端為基礎的服務，以取得增強的安全性和生產力。
 
 ### <a name="office-2013-and-office-2016"></a>Office 2013 和 Office 2016
 
@@ -83,9 +83,9 @@ Office 2013 和 Office 2016 版的終止支援藍圖尚未確定。 不過，與
 
 1. 為使用者取得並指派 Microsoft 365 授權。
 2. 在使用者電腦中解除安裝 Office 2013 或 Office 2016。
-3. 安裝 Office 365 專業增強版 (個別或搭配 IT 推出)。如需詳細資訊，請參閱[階段 4：Office 365 專業增強版](office365proplus-infrastructure.md)。
+3. 安裝 Microsoft 365 App 企業版 (個別安裝或搭配 IT 推出)。 如需詳細資訊，請參閱[階段4：Microsoft 365 App 企業版](office365proplus-infrastructure.md)。
 
-Office 365 專業增強版會自動安裝安全性和新功能更新，並可以充分利用 Microsoft 365 中以雲端為基礎的服務，以取得增強的安全性和生產力。
+Microsoft 365 App 企業版會自動安裝安全性和新功能更新，並可以充分利用 Microsoft 365 中以雲端為基礎的服務，以取得增強的安全性和生產力。
 
 ## <a name="migration-for-microsoft-office-server-products"></a>Microsoft Office 伺服器產品的移轉
 
@@ -116,10 +116,9 @@ Microsoft 365 企業版包括 Office 365，其中包括雲端型的 Office 伺�
 
 ### <a name="office-server-2010"></a>Office Server 2010
 
-以下 Office 2010 版的伺服器產品將於 **2020 年 10 月 13 日**終止支援：
+[Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support) 的支援終止日期為 **2020 年 10 月 13 日**。
 
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+[SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) 的支援終止日期為 **2021 年 4 月 13 日**。
 
 若不使用 Office 2013 或 Office 2016 版的伺服器產品升級 Office 2010 版的這些伺服器產品，請考慮：
 
@@ -163,7 +162,7 @@ Windows 7 已於 **2020 年 1 月 14 日**終止支援。 若要移轉執行 Win
 
 請查看 Microsoft 的 IT 專業人員如何使用以下資源將公司移轉到 Microsoft 365 企業版： 
 
-- [部署及更新 Microsoft Office 365 專業增強版](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
+- [部署及更新 Microsoft 365 Apps 企業版](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft 會將 150000 個信箱移轉到 Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [SharePoint 至雲端：深入了解 Microsoft 如何執行自己的移轉](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [在 Microsoft 以就地升級方式部署 Windows 10](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)

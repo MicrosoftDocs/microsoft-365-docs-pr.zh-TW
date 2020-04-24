@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a2ef9ff0521755bbb3000dd42b417ff57e398bbb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7b8e7e7f15ac4a0f257e9c4c86bd14659cc609b6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602130"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632928"
 ---
 # <a name="my-number-act-japan"></a>個人編號法案 (日本)
 
@@ -37,7 +37,7 @@ ms.locfileid: "41602130"
 
 Microsoft 商務雲端服務在 [Microsoft Online Services 條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)中說明了這些需求，規定了包含「個人編號」資料的客戶資料的責任和擁有權屬於客戶，而非 Microsoft。 客戶因此必須具備適當的控制措施，以保護客戶資料中所包含的「個人編號」資料。
 
-因為 Microsoft 無法存取儲存於雲端服務中的「個人編號」資料，所以不需要處理「個人編號」資料的「委外」合約。 如果客戶希望 Microsoft 具有存取包含「個人編號」資料的的客戶資料，客戶必須先與 Microsoft 針對每個案例先建立額外的委外合約，才能提出這樣的要求。
+因為 Microsoft 無法存取儲存於雲端服務中的「個人編號」資料，所以不需要處理「個人編號」資料的「委外」合約。 如果客戶希望 Microsoft 具有存取包含「個人編號」資料的客戶資料，客戶必須先與 Microsoft 針對每個案例先建立額外的委外合約，才能提出這樣的要求。
 
 這項條款也陳述 Microsoft 致力於使用客戶資料僅用來提供客戶服務，而非任何廣告或類似的商業用途，並且 Microsoft 已具備強健的存取控制系統。
 
@@ -58,7 +58,7 @@ Microsoft 商務雲端服務在 [Microsoft Online Services 條款](https://www.m
 
 - [Office 365 中的隱私權](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=a1b48a5b-bcb1-4c19-9277-952c0df87113&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)：Microsoft 如何在 Office 365 中建構強大的隱私權保護。
 
-- [Office 365 中系統管理存取](https://docs.microsoft.com/office365/SecurityCompliance/office-365-administrative-access-controls-overview)：Microsoft 如何管理對Office 365 客戶數據的系統管理存取。
+- [Office 365 中系統管理存取](https://docs.microsoft.com/office365/SecurityCompliance/office-365-administrative-access-controls-overview)：Microsoft 如何管理對客戶資料的系統管理存取。
 
 - [Office 365 中的稽核與報告](https://docs.microsoft.com/office365/SecurityCompliance/office-365-auditing-and-reporting-overview)：探索客戶可用來追蹤其租用戶中使用者和系統管理活動的功能。
 

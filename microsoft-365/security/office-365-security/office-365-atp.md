@@ -17,17 +17,17 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 進階威脅防護包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
-ms.openlocfilehash: 34dc541087eb05af6b688670112cf02489164fb1
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 993939027962bd51ad4fdc3381c1e7d8ea4eddd4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528602"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634529"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
 > [!IMPORTANT]
-> 本文適用於擁有 [Office 365 進階威脅防護](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)的企業客戶。 如果您使用 Outlook.com、Office 365 家用版或 Office 365 個人版，並且在尋找 Outlook 中的安全連結或安全附件的相關資訊，請參閱[適用於 Office 365 訂閱者的進階 Outlook.com 安全性](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文適用於擁有 [Office 365 進階威脅防護](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)的企業客戶。 如果您使用 Outlook.com、Microsoft 365 家用版或 Microsoft 365 個人版，並且在尋找 Outlook 中的安全連結或安全附件的相關資訊，請參閱[適用於 Microsoft 365 訂閱者的進階 Outlook.com 安全性](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 ## <a name="overview"></a>概觀
 
@@ -53,7 +53,7 @@ Office 365 進階威脅防護 (ATP) 可保護組織防範由電子郵件訊息�
 
 - Office 365 ATP 方案 2 包含在 Office 365 E5、Office 365 A5 和 Microsoft 365 E5 中。
 
-- Office 365 ATP 方案 1 包含在 Microsoft 365 商務版中。
+- Office 365 ATP 方案 1 包含在 Microsoft 365 商務進階版中。
 
 - Office 365 ATP 方案 1 和 Office 365 ATP 方案 2 各以某些訂閱附加元件的形式提供使用。 若要深入了解，請參閱 [ATP 方案中功能的可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
@@ -61,7 +61,7 @@ Office 365 進階威脅防護 (ATP) 可保護組織防範由電子郵件訊息�
 
 ## <a name="configure-atp-policies"></a>設定 ATP 原則
 
-有了 Office 365 ATP，貴組織的安全性小組就能在 Office 365 安全與合規性中心中定義原則來設定防護 (請移至[https://protection.office.com](https://protection.office.com) > **威脅管理** > **原則**。)
+有了 Office 365 ATP，貴組織的安全性小組就能在安全性與合規性中心中定義原則來設定防護 (請移至[https://protection.office.com](https://protection.office.com)  >  [威脅管理]****  >  [原則]****。)
 
 > [!TIP]
 > 如需定義的原則快速清單，請參閱[防範威脅](protect-against-threats.md)。
@@ -112,16 +112,16 @@ Office 365 ATP 方案 2 中包含業界最佳[威脅調查及回應工具](offic
 
 |角色或角色群組|可深入了解的資源|
 |---------|---------|
-|Office 365 全域系統管理員 (可在 Azure Active Directory 或 Office 365 安全性與合規性中心指派) |[關於 Office 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|安全性系統管理員 (可在 Azure Active Directory 或 Office 365 安全性與合規性中心指派) |[Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)|
+|全域系統管理員 (可在 Azure Active Directory 或安全性與合規性中心指派) |[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|安全性系統管理員 (可在 Azure Active Directory 或安全性與合規性中心指派) |[Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)|
 |Exchange Online 組織管理 (這是在 Exchange Online 中指派)|[Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
-|搜尋和清除 (僅能在 Office 365 安全性與合規性中心指派) |[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md|
+|搜尋和清除 (僅能在安全性與合規性中心指派) |[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md|
 
 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="get-office-365-atp"></a>取得 Office 365 ATP
 
-Office 365 ATP 包含在某些訂閱中，例如 Microsoft 365 E5、Office 365 E5、Office 365 A5 和 Microsoft 365 商務版。 如果您的訂閱不包含 Office 365 ATP，您可以以附加元件形式為特定訂閱購買 ATP 方案 1 或 ATP 方案 2。 若要深入了解，請參閱下列資源：
+Office 365 ATP 包含在某些訂閱中，例如 Microsoft 365 E5、Office 365 E5、Office 365 A5 和 Microsoft 365 商務進階版。 如果您的訂閱不包含 Office 365 ATP，您可以以附加元件形式為特定訂閱購買 ATP 方案 1 或 ATP 方案 2。 若要深入了解，請參閱下列資源：
 
 - [Office 365 進階威脅防護 (ATP) 可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability)，以取得包含 ATP 方案的訂閱清單。
 

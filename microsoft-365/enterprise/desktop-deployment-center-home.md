@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 桌面部署中心概觀。
-ms.openlocfilehash: 540f0d50ef8adc292fc1fbd4ef13bb12556d596c
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 36506864d932665a2da8fd2dfc94ab276e4fa2ec
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113526"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638137"
 ---
 # <a name="desktop-deployment-center"></a>桌面部署中心
 
@@ -94,7 +94,7 @@ ms.locfileid: "43113526"
 <img align="middle" src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
 
-按照以下步驟來規劃和執行 Windows 10 和 Office 365 專業增強版的大規模部署。 以下每個步驟都是整個規劃和部署過程的一部分，這些步驟通常會在分段部署中同步執行。 使用部署程序中強調的工具下載免費的[桌面部署和管理實驗室工具包](https://aka.ms/howtoshiftlabs)，以進行實際操作訓練。 您還可以從 Microsoft 合作夥伴和 FastTrack 服務中為桌面部署[找到說明](https://aka.ms/mddhelp)。
+按照以下步驟來規劃和執行 Windows 10 和 Microsoft 365 Apps 企業版的大規模部署。 以下每個步驟都是整個規劃和部署過程的一部分，這些步驟通常會在分段部署中同步執行。 使用部署程序中強調的工具下載免費的[桌面部署和管理實驗室工具包](https://aka.ms/howtoshiftlabs)，以進行實際操作訓練。 您還可以從 Microsoft 合作夥伴和 FastTrack 服務中為桌面部署[找到說明](https://aka.ms/mddhelp)。
 
 <br>
 
@@ -102,7 +102,7 @@ ms.locfileid: "43113526"
 <tr class="even">
 <td><a href="https://aka.ms/mdd0"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd0">快速入門：人員、流程及技術指導方針</a></strong> (英文)</p>
-<p>探索移轉至 Windows 10 和 Office 365 專業增強版的優點、與先前部署比較後的重大變更與考量及最佳做法，以確保順利轉移到 Windows 10 和 Office 365 專業增強版。</p></td>
+<p>探索搬移至 Windows 10 和 Microsoft 365 Apps 企業版的優點、與先前部署比較後的重大變更與考量及最佳做法，以確保順利轉移到 Windows 10 和 Microsoft 365 Apps 企業版。</p></td>
 <td><a href="https://aka.ms/ddev0" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="130" width="231" /></a></td>
 </tr>
 <tbody>
@@ -115,13 +115,13 @@ ms.locfileid: "43113526"
 <tr class="even">
 <td><a href="https://aka.ms/mdd2"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd2">步驟 2：目錄和網路整備</a></strong> (英文)</p>
-<p>在 Office 365 專業增強版中的雲端連線服務及新的部署選項 (例如 Windows Autopilot) 需要 Azure Active Directory。將 Windows 映像、應用程式、驅動程式和相關檔案移到電腦時，您的網路和連線能力也是需規劃的重要區域。了解新的工具和部署選項如何減少並簡化網路流量。</p></td>
+<p>在 Microsoft 365 Apps 企業版中的雲端連線服務及新的部署選項 (例如 Windows Autopilot) 需要 Azure Active Directory。將 Windows 映像、應用程式、驅動程式和相關檔案移到電腦時，您的網路和連線能力也是需規劃的重要區域。了解新的工具和部署選項如何減少並簡化網路流量。</p></td>
 <td><a href="https://aka.ms/ddev2" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
 </tr>
 <tr class="odd">
 <td><a href="https://aka.ms/mdd3"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd3">步驟 3：Office 和 LOB 應用程式傳遞</a></strong> (英文)</p>
-<p>確定您的應用程式已封裝並準備好進行自動安裝。 了解隨選即用封裝與 Office 365 專業增強版如何是您在設定、交付及將 Office 應用程式保持在最新狀態的新選擇。</p></td>
+<p>確定您的應用程式已封裝並準備好進行自動安裝。 了解隨選即用封裝與 Microsoft 365 Apps 企業版如何提供您設定、交付及將 Office 應用程式保持在最新狀態的新選擇。</p></td>
 <td><a href="https://aka.ms/ddev3" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
@@ -133,7 +133,7 @@ ms.locfileid: "43113526"
 <tr class="odd">
 <td><a href="https://aka.ms/mdd5"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd5">步驟 5：安全性與相容性考量事項</a></strong> (英文)</p>
-<p>Windows 10 和 Office 365 專業增強版提供了保護資料、裝置和使用者以及快速偵測和回應威脅的新方法。 此外，了解如何在移轉到 Windows 10 時處理與磁碟加密、反惡意程式應用程式和原則相關的常見問題。</p></td>
+<p>Windows 10 和 Microsoft 365 Apps 企業版提供了保護資料、裝置和使用者以及快速偵測和回應威脅的新方法。 此外，了解如何在移轉到 Windows 10 時處理與磁碟加密、反惡意程式應用程式和原則相關的常見問題。</p></td>
 <td><a href="https://aka.ms/ddev5" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
@@ -145,13 +145,13 @@ ms.locfileid: "43113526"
 <tr class="odd">
 <td><a href="https://aka.ms/mdd7"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd7">步驟 7：Windows 和 Office 服務</a></strong></p>
-<p>Windows 10 和 Office 365 專業增強版不斷地增加新功能，以透過最新的創新持續提升使用者體驗和安全性。 了解如何掌握半年和每月更新的最新消息、新服務模式的運作方式以及您擁有的工具和選項。</p></td>
+<p>Windows 10 和 Microsoft 365 Apps 企業版不斷地增加新功能，以透過最新的創新持續提升使用者體驗和安全性。 了解如何掌握半年和每月更新的最新消息、新服務模式的運作方式以及您擁有的工具和選項。</p></td>
 <td><a href="https://aka.ms/ddev7" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
 <td><a href="https://aka.ms/mdd8"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></a></td>
 <td><p><strong><a href="https://aka.ms/mdd8">步驟 8：使用者的通訊和訓練</a></strong> (英文)</p>
-<p>將電腦移至 Windows 10 和 Office 365 專業增強版時，請確認使用者了解新版體驗與新的工作方式。了解如何利用 Microsoft FastTrack 的使用者採用協助、訓練教材和通訊範本，以及全新的方式來監控使用者接受及其使用方式。</p></td>
+<p>將電腦移至 Windows 10 和 Microsoft 365 Apps 企業版時，請確認使用者了解新版體驗與新的工作方式。了解如何利用 Microsoft FastTrack 的使用者採用協助、訓練教材和通訊範本，以及全新的方式來監控使用者接受及其使用方式。</p></td>
 <td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </tr>
 </tbody>

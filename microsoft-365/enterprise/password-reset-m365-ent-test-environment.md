@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定並測試適用於 Microsoft 365 測試環境的密碼重設。
-ms.openlocfilehash: c8d5ed0c7feac98afd3230a305f4ab1f850ca7f8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 96a8b03ca978ac2b2174742c0208444d853ba7c9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633171"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632884"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼重設
 
@@ -33,9 +33,9 @@ Azure Active Directory (Azure AD) 自助密碼重設 (SSPR) 允許使用者重�
 
 本文將以三階段說明如何針對 Microsoft 365 測試環境，設定及測試密碼重設：
 
-1.  建立 Microsoft 365 企業版測試環境。
+1.    建立 Microsoft 365 企業版測試環境。
 2.  啟用密碼回寫。
-3.  設定及測試「使用者 3」帳戶的密碼重設。
+3.    設定及測試「使用者 3」帳戶的密碼重設。
     
 ![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -52,7 +52,7 @@ Azure Active Directory (Azure AD) 自助密碼重設 (SSPR) 允許使用者重�
   
 - Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 
-- Azure AD Connect 會在 APP1 上執行，以將 TESTLAB Active Directory Domain Services (AD DS) 網域同步至 Microsoft 365 或 Office 365 訂閱的 Azure AD 租用戶。
+- Azure AD Connect 會在 APP1 上執行，以將 TESTLAB Active Directory Domain Services (AD DS) 網域同步至 Microsoft 365 訂閱的 Azure AD 租用戶。
 
 ## <a name="phase-2-enable-password-writeback"></a>階段 2：啟用密碼回寫
 

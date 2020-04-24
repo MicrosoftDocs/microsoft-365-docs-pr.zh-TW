@@ -14,12 +14,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: 了解在 Microsoft 365 中限制或停用共用的選項。
-ms.openlocfilehash: e6cce1102af793d38606b929951d20221eba4b12
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: ebeeefa61d9f4fc9fd77b417ccadfaa4308acb38
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604482"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632592"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>在 Microsoft 365 中限制共用
 
@@ -29,7 +29,7 @@ ms.locfileid: "42604482"
 
 |共用方法|描述|限制選項|
 |:-------------|:----------|:-------------|
-|[Office 365 群組或團隊](#office-365-group-or-team)|獲授與 Microsoft Teams 團隊或 Office 365 群組存取權的人員對於相關聯 SharePoint 網站中的檔案具有編輯存取權。|如果群組或團隊是私人的，加入團隊的共用邀請會送往擁有者以進行核准。 系統管理員可以停用來賓存取，以防止組織外部的人員存取。|
+|[Microsoft 365 群組或團隊](#microsoft-365-group-or-team)|獲授與 Microsoft Teams 團隊或 Microsoft 365 群組存取權的人員對於相關聯 SharePoint 網站中的檔案具有編輯存取權。|如果群組或團隊是私人的，加入團隊的共用邀請會送往擁有者以進行核准。 系統管理員可以停用來賓存取，以防止組織外部的人員存取。|
 |[SharePoint 網站](#sharepoint-site)|人員可以獲授與擁有 SharePoint 網站的擁有者、成員或來賓存取，並將擁有網站中檔案的該層級存取權。|您可以限制網站權限，以便只有網站擁有者可以共用網站。|
 |[與特定人員共用](#sharing-with-specific-people)|網站成員與擁有編輯權限的人員可以提供檔案和資料夾的直接權限，或使用 *[特定人員]* 連結來共用檔案和資料夾。|您可以限制網站權限，以便只有網站擁有者可以共用檔案和資料夾。 在此情況下，由網站成員共用的直接存取和 *[特定人員]* 連結會送往網站擁有者以進行核准。|
 |[SharePoint 來賓共用](#sharepoint-guest-sharing)|SharePoint 網站擁有者和成員可以與組織外部人員共用檔案和資料夾。|您可以為整個組織或個別網站停用來賓共用。|
@@ -41,9 +41,9 @@ ms.locfileid: "42604482"
 
 若要了解貴組織使用共用功能的方式，請[執行有關檔案和資料夾共用的報告](https://docs.microsoft.com/sharepoint/sharing-reports)。
 
-## <a name="office-365-group-or-team"></a>Office 365 群組或團隊
+## <a name="microsoft-365-group-or-team"></a>Microsoft 365 群組或團隊
 
-如果想要限制 Office 365 群組或 Microsoft Teams 團隊中的共用，請務必將群組或團隊設為私人。 貴組織內部的人員可以隨時加入公開群組或團隊。 除非群組或團隊是私人的，否則無法限制在組織內共用團隊或其檔案。
+如果想要限制 Microsoft 365 群組或 Microsoft Teams 團隊中的共用，請務必將群組或團隊設為私人。 貴組織內部的人員可以隨時加入公開群組或團隊。 除非群組或團隊是私人的，否則無法限制在組織內共用團隊或其檔案。
 
 ### <a name="guest-sharing"></a>來賓共用
 
@@ -52,17 +52,17 @@ ms.locfileid: "42604482"
 關閉 Teams 的來賓共用
 1. 在 Teams 系統管理中心中，展開 **[全組織設定]**，然後按一下 **[來賓存取]**。
 2. 關閉 **[在 Teams 中允許來賓存取]**。
-3. 按一下 **[儲存]**。
+3. 按一下 [儲存]****。
 
-如果想要在 Office 365 群組中防止來賓存取，您可以在 Microsoft 365 系統管理中心中關閉群組來賓存取設定。
+如果想要在 Microsoft 365 群組中防止來賓存取，您可以在 Microsoft 365 系統管理中心中關閉群組來賓存取設定。
 
-關閉 Office 365 群組中的來賓共用
+若要關閉 Microsoft 365 群組中的來賓共用
 1. 在 Microsoft 365 系統管理中心中，按一下 **[設定]**，然後按一下 **[設定]**。
-2. 在 **[服務]** 索引標籤上，按一下 **[Office 365 群組]**。
+2. 在 [服務]**** 索引標籤上，按一下 [Microsoft 365 群組]****。
 3. 清除 **[讓貴組織外部的群組成員存取群組內容]** 和 **[讓群組擁有者將貴組織外部的人員新增到群組]** 核取方塊。
-4. 按一下 **[儲存變更]**。
+4. 按一下 [儲存變更]****。
 
-    ![Microsoft 365 系統管理中心中 Office 365 群組共用設定的螢幕擷取畫面](../media/office-365-groups-guest-settings-off.png)
+    ![Microsoft 365 系統管理中心中 Microsoft 365 群組共用設定的螢幕擷取畫面](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
 > 如果想要防止特定群組或團隊的來賓共用，您可以使用 Microsoft PowerShell 來執行此動作。 如需詳細資料，請參閱[允許或封鎖來自特定群組的來賓使用者](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups?view=o365-worldwide#block-guest-users-from-a-specific-group)。
@@ -79,7 +79,7 @@ ms.locfileid: "42604482"
 
 ## <a name="sharepoint-site"></a>SharePoint 網站
 
-您可以將 SharePoint 網站共用限制於僅限網站擁有者。 這麼做會防止網站成員共用網站。 請記住，如果網站連接至 Office 365 群組，群組成員可以邀請其他人加入群組，而這些使用者將擁有網站存取權。
+您可以將 SharePoint 網站共用限制於僅限網站擁有者。 這麼做會防止網站成員共用網站。 請記住，如果網站連接至 Microsoft 365 群組，群組成員可以邀請其他人加入群組，而這些使用者將擁有網站存取權。
 
 限制擁有者的網站共用
 1. 在網站中，按一下齒輪圖示，然後按一下 **[網站權限]**。

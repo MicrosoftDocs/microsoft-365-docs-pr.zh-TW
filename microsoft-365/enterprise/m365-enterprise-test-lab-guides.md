@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用「測試實驗室指南」以設定企業用 Microsoft 365 的示範、概念證明或開發/測試環境。
-ms.openlocfilehash: 1ea41cd3553c70b2a8bb99e08da43fd45b1aa558
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 582068e84d82bfa681d1e1e64234698544ce3b9d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153913"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631594"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>企業用 Microsoft 365 測試實驗室指南
 
@@ -116,16 +116,16 @@ TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符�
 
 若要示範資訊保護相關的功能，請參閱：
 
-- [增強的 Office 365 安全性](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
+- [增強的 Microsoft 365 安全性](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
     
-   設定增強的 Office 365 安全性的設定，並且調查內建安全性工具。
+   設定增強的 Microsoft 365 安全性的設定，並且調查內建安全性工具。
   
 - [資料分類](data-classification-microsoft-365-enterprise-dev-test-environment.md)
     
-   設定 Office 365 標籤並且將其套用至 SharePoint Online 小組網站中的文件。
+   設定標籤並且將其套用至 SharePoint Online 小組網站中的文件。
     
 - [特殊權限存取管理](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
-   設定特殊權限存取管理，以對您 Office 365 組織中提升權限和特殊權限的工作進行 Just-In-Time 存取。
+   設定特殊權限存取管理，以對您組織中提升權限和特殊權限的工作進行 Just-In-Time 存取。
 
 
