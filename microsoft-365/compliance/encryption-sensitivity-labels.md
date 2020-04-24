@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 當建立敏感度標籤時，您可以限制標籤將套用至其中之內容的存取。敏感度標籤可以使用加密來保護內容。
-ms.openlocfilehash: 543050a40848330b5e07c3a804b5718deac7bafa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fef9e7b41b66c353b93c6196908c6dec4990995f
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631688"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790640"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容 
 
@@ -160,7 +160,7 @@ ms.locfileid: "43631688"
 - 任何特定使用者或啟用電子郵件功能的安全性群組、通訊群組、Microsoft 365 群組或動態通訊群組。 
 - 任何電子郵件地址或網域。 使用此選項來指定另一個組織中使用 Azure AD 的所有使用者，方法是輸入來自該組織的任何網域名稱。 您也可以針對社交提供者使用此選項，方法是輸入其網域名稱，例如 **gmail.com**、**hotmail.com** 或 **outlook.com**。
 
-- Azure AD 中任何特定使用者或啟用電子郵件功能的安全性群組、通訊群組、Office 365 群組或[動態通訊群組](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) (部分機器翻譯)。 請注意，您無法使用 [Exchange 的 動態通訊群組](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019) (部分機器翻譯)，因為此群組類型不會同步處理到 Azure AD，且您無法使用未啟用電子郵件功能的安全性群組。
+- 任何特定使用者或啟用電子郵件功能的安全性群組、通訊群組、Microsoft 365 群組 (可在 Azure AD 中擁有[動態成員資格](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule))。 請注意，您無法使用 [Exchange 的 動態通訊群組](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019) (部分機器翻譯)，因為此群組類型不會同步處理到 Azure AD，且您無法使用未啟用電子郵件功能的安全性群組。
 
 - 任何電子郵件地址或網域。 使用此選項來指定另一個組織中使用 Azure AD 的所有使用者，方法是輸入來自該組織的任何網域名稱。 您也可以針對社交提供者使用此選項，方法是輸入其網域名稱，例如 **gmail.com**、**hotmail.com** 或 **outlook.com**。
     

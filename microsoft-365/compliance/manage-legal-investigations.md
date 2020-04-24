@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: 使用 Microsoft 365 規範中心的 eDiscovery 案例來管理組織的法律調查。 如果您有 E5 訂閱，您可以使用「高級 eDiscovery」的文字分析、機器學習和預測編碼功能，進一步分析案例資料。
-ms.openlocfilehash: 41eaa4ca4428c21b905d63365a9b3af7da1df9aa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1e7279fed51e108886ff0b4a6d64788d6424720e
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635903"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43799904"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>管理 Microsoft 365 的法律調查
 
@@ -64,7 +64,7 @@ Microsoft 365 中的「高級 eDiscovery 解決方案」是以 Office 365 中現
 
 - [索引管理員資料](processing-data-for-case.md)並修正索引錯誤，讓您能有效地收集調查的資料
 
-- [收集](collecting-data-for-ediscovery.md)案例的資料，並將[其新增至複查集](collecting-data-for-ediscovery.md#adding-search-results-to-a-review-set)以進行進一步調查
+- [收集](collecting-data-for-ediscovery.md)案例的資料，並將[其新增至複查集](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set)以進行進一步調查
 
 - [查看](view-documents-in-review-set.md)審閱集中的檔、[查詢](review-set-search.md)資料及[標記](tagging-documents.md)專案
 

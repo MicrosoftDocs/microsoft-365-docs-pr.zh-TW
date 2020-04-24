@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 8295ec4098e90cac963598ab2d53d47a266b23a7
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 8b6cf223eb9a7a806691a282944e77040de3f586
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551144"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790630"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -141,7 +141,7 @@ ms.locfileid: "43551144"
 
 在預覽期間，下列應用程式支援靈敏度標籤的分類器：
 
-- 來自 [Office 測試人員](https://office.com/insider)的 Windows 版 Office 365 專業增強版傳統型應用程式：
+- 來自 [Office 測試人員](https://office.com/insider)的 Microsoft 365 Apps 企業版傳統型應用程式 (Windows 版)：
     - Word
     - Excel
     - PowerPoint
@@ -152,7 +152,7 @@ ms.locfileid: "43551144"
     - PowerPoint
     - Outlook
 
-### <a name="recommend-that-the-user-applies-a-sensitivity-label-in-office-apps"></a>建議使用者在 Office 應用程式中套用敏感度標籤
+### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>建議使用者套用敏感度標籤
 
 您可以視需要建議使用者套用標籤。 如果您使用此選項，您的使用者就可以接受分類和任何相關的保護，或者當標籤不適合內容時，可以取消建議。
 
@@ -162,7 +162,7 @@ ms.locfileid: "43551144"
 
 ![套用建議標籤的提示](../media/Sensitivity-label-Prompt-for-required-label.png)
 
-### <a name="when-automatic-or-recommended-labels-are-applied-in-office-apps"></a>在 Office 應用程式中套用自動或建議標籤的時機
+### <a name="when-automatic-or-recommended-labels-are-applied"></a>當套用自動或建議標籤時
 
 是否會在 Office 應用程式中實作自動化的建議標籤功能，取決於您使用的是 Office 內建的標籤功能，還是 Azure 資訊保護的整合標籤用戶端。 不過，在這兩種情況下：
 
@@ -192,7 +192,7 @@ ms.locfileid: "43551144"
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>自動套用標籤原則的必要條件
 
-- 必須對模擬模式開啟針對 Office 365 稽核。 如果您需要開啟稽核，或者如果您不確定稽核是否開啟，請參閱[開啟或關閉 Office 365 稽核記錄搜尋](turn-audit-log-search-on-or-off.md)。
+- 必須對模擬模式開啟 Microsoft 365 的稽核。 如果您需要開啟稽核，或者如果您不確定稽核是否開啟，請參閱[開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)。
 
 - 若要對 SharePoint 和 OneDrive 中的檔案自動套用標籤：
     - 您必須[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤 (公開預覽)](sensitivity-labels-sharepoint-onedrive-files.md)。
@@ -205,6 +205,7 @@ ms.locfileid: "43551144"
 - 一或多個敏感性標籤[已建立和已發佈](create-sensitivity-labels.md) (給至少一個使用者)，這些標籤可供您針對自動套用標籤原則選取。 針對這些標籤：
     - Office 應用程式中的自動套用標籤標籤設定開啟與否並不重要，因為該標籤設定是補充自動套用標籤原則，如簡介中的說明。 
     - 如果您想要用於自動套用標籤的標籤是設定為使用視覺標記 (頁首、頁尾、浮水印)，請注意，這些標籤不適用於文件。
+    - 如果標籤採用加密功能，則必須針對 [立即套用許可權] **** 設定進行設定。
 
 ### <a name="learn-about-simulation-mode"></a>了解模擬模式
 
@@ -239,6 +240,8 @@ ms.locfileid: "43551144"
 2. 選取 [自動套用標籤 (預覽)]**** 索引標籤：
     
     ![自動套用標籤 (預覽) 索引標籤](../media/auto-labeling-tab.png)
+    
+    這個新的索引標籤仍會提供給租使用者。 如果您沒有看到，請於之後幾天再試一次。
 
 3. 選取 [+ 建立原則]****。
 
@@ -292,5 +295,4 @@ ms.locfileid: "43551144"
 
 > [!TIP]
 > 您也可以使用內容總管來識別包含包含敏感性資訊、具有未套用標籤文件的位置。 利用此資訊，請考量將這些位置新增到您的自動套用標籤原則，並納入已識別的敏感性資訊類型作為規則。
-
 

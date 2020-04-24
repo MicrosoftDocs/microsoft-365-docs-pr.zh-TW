@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 在您的 DNS 主機上新增 DNS 記錄，將您的網域新增至 Microsoft 365 系統管理中心中的 Office 365。 安裝精靈會引導您完成此程式。
-ms.openlocfilehash: 8e08233ffe33ac2b5d41ad164af80468de52983d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a77526efc526073e17b535612213202ad22d5657
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631812"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800020"
 ---
 # <a name="add-a-domain-to-office-365"></a>新增網域至 Office 365
 
@@ -101,6 +101,49 @@ ms.locfileid: "43631812"
     如果您想稍後等候，請滾動至底部，然後選取 [**略過此步驟**]。
     
 8. 選取 **[完成]** -您已經完成！ 
+
+## <a name="add-or-edit-custom-dns-records"></a>新增或編輯自訂 DNS 記錄
+
+請遵循下列步驟，為網站或協力廠商服務新增自訂記錄。
+
+1. 登入 Microsoft 系統管理中心，網址<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>為。
+
+2. 移至 [**設定**  > **網域**] 頁面。
+
+3. 在 [**網域**] 頁面上，選取網域。 
+    
+4. 在 [ **DNS 設定**] 底下，選取 [**自訂記錄**]，然後選取 [**新增自訂記錄**]。
+
+5. 選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。
+    
+6. 選取 [儲存]****。
+
+## <a name="registrars-with-domain-connect"></a>使用網域連接的註冊機構
+
+已啟用[網域](https://www.domainconnect.org/)連線註冊機構可讓您將網域新增至 Microsoft 365，並以三個步驟為單位，以分鐘為單位。 
+  
+在 [！附注] 中，我們只會確認您擁有網域，然後自動設定您的網域記錄，所以電子郵件會送出至 Microsoft 365 和其他 Microsoft 365 服務，如小組，請與您的網域合作。
+  
+> [!NOTE]
+> 啟動設定精靈之前，務必停用瀏覽器中的所有快顯封鎖程式。
+  
+### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>與 Microsoft 365 整合的網域連接註冊機構
+
+- [1&amp;1 IONOS](https://www.1and1.com/)
+- [123Reg](https://www.123-reg.co.uk/)
+- [GoDaddy](https://www.godaddy.com/)
+- [Wordpress](https://wordpress.com/)
+- [Plesk](https://www.plesk.com/)
+- [MediaTemple](https://mediatemple.net/)
+- SecureServer 或 WildWestDomains （使用 SecureServer DNS 主控的 GoDaddy 轉銷商）
+    - [MadDog 網域](https://www.maddogdomains.com/)
+    - [CheapNames](https://www.cheapnames.com)
+
+### <a name="what-happens-to-my-email-and-website"></a>我的電子郵件和網站會發生什麼情況？
+
+完成設定之後，您的網域的 MX 記錄會更新，以指向 Microsoft 365，而您網域的所有電子郵件都會開始進入 Microsoft 365。 請確認您已針對在您的網域取得電子郵件的每位人員，在 Office 365 中新增使用者並設定信箱。
+  
+如果您擁有商務用途的網站，該網站將會在原處繼續運作。 網域連接設定步驟不會影響您的網站。
 
 ## <a name="related-articles"></a>相關文章
 

@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Microsoft 服務信任入口網站中的合規性管理員會提供工具，可追蹤、實作及管理控制項，在針對 Microsoft 雲端服務 (例如 Office 365 和 Microsoft Azure) 進行測量時，可協助貴組織達到安全性和資料保護法規遵循產業標準 (例如 GDPR、ISO 27001 與 27018，與 HIPAA)。合規性管理員可協助監督資料保護和隱私策略的人員，讓貴組織可管理法規遵循和風險評估程序。
-ms.openlocfilehash: 363b95294a9d06b425edcbb5c587f2f89878926b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3019378c82e263ce438b385a998dcf2475f3b62d
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071725"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790620"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft 合規性管理員 (傳統)
 
 > [!NOTE]
-> 本文件將說明舊版產品。 使用者強烈建議使用此版本的合規性管理員，而非建議使用全新的 [Microsoft 合規性分數](compliance-score.md)。
+> 本文件說明此產品之前的版本。 使用者強烈不鼓勵使用此版本的合規性管理員，而是建議您使用全新的 [Microsoft 合規性分數](compliance-score.md)。
 
- 合規性管理員無法使用 21Vianet 運作的 Office 365、Office 365 德國、Office 365 U.S. Government Community High (GCC High)，或 Office 365 美國國防部。** 
+ 合規性管理員無法使用 21Vianet 運作的 Office 365、Office 365 德國、Office 365 U.S. Government Community High (GCC High)，或 Office 365 美國國防部。**
   
 合規性管理員是 Microsoft [服務信任入口網站](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662)中以工作流程為基礎的風險評估工具，可讓您追蹤、指派及驗證貴組織與 Microsoft 專業服務和 Microsoft 雲端服務相關的法規遵循活動，例如 Microsoft Office 365、Microsoft Dynamics 365，以及 Microsoft Azure。 
 
@@ -700,7 +700,7 @@ ms.locfileid: "42071725"
     
 - **次要**變更是客戶動作的無意義變更，例如修正拼字錯誤或格式設定問題，或是更新或修正超連結。次要變更通常不需要重新評估控制項；不過，建議您檢閱更新的客戶動作。
   
-### <a name="office-365-customer-managed-controls---change-log-for-july-2018"></a>Office 365 客戶管理控制項 - 2018 年 7 月的變更記錄
+### <a name="customer-managed-controls---change-log-for-july-2018"></a>客戶管理控制項 - 2018 年 7 月的變更記錄
 
 |**控制項 ID**|**評估**|**變更類型**|**變更描述**|**客戶的建議動作**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -710,7 +710,7 @@ ms.locfileid: "42071725"
 45 C.F.R.  § 164.316(b)(2)(iii)| Office 365：HIPAA|主要|將 HITECH 控制項新增至 Office 365 的 HIPAA 評估|檢閱新增的控制項和建議的客戶動作<br/>|
 |
 
-### <a name="office-365-customer-managed-controls---change-log-for-april-2018"></a>Office 365 客戶管理控制項 - 2018 年 4 月的變更記錄
+### <a name="customer-managed-controls---change-log-for-april-2018"></a>客戶管理控制項 - 2018 年 4 月的變更記錄
 
 |**GDPR**|**HIPAA**|**ISO 27001**|**ISO 27018**|**NIST 800-53**|**NIST 800-171**|**變更類型**|**變更描述**|**客戶的建議動作**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|

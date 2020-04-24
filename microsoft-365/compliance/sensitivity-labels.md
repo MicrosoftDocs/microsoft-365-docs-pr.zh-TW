@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 從 Microsoft 資訊保護架構使用敏感度標籤來分類及保護組織的資料，同時確保使用者生產效率和共同作業能力不受影響。 這些標籤可套用保護設定以包含加密視覺標記，如頁尾和浮水印。
-ms.openlocfilehash: c7a803180cfa839029ce86e19e0ede75c39d6476
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 65f647228db1ce18c7c26ce0f12542569c5f0a2e
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631290"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790650"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -141,7 +141,7 @@ ms.locfileid: "43631290"
 
 使用標籤原則，您可以：
 
-- **選擇可看見標籤的使用者和群組。** 您可以將標籤發佈至已啟用電子郵件功能的任何安全性群組、Microsoft 365 群組或動態通訊群組。
+- **選擇可看見標籤的使用者和群組。** 可以將標籤發佈到任何特定的使用者或電子郵件功能的安全性群組、通訊群組或 Microsoft 365 群組 (在 Azure AD 中可以有 [動態成員資格](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule))。
 
 - **套用預設標籤**到標籤原則中包含的使用者和群組所建立所有新文件和的電子郵件。 如果您已針對 [Microsoft Teams、Microsoft 365 群組和 SharePoint 網站啟用敏感度標籤](sensitivity-labels-teams-groups-sites.md)，此選項也適用於容器。 如果使用者的文件或電子郵件不是正確的標籤，使用者可以隨時變更預設標籤。 請考慮使用預設標籤來設定您想套用到所有內容中的基本保護設定等級。 不過，若沒有使用者訓練和其他控制項，這項設定也可能導致不正確的標記。 
 
