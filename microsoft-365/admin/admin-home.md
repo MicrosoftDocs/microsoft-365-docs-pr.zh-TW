@@ -16,12 +16,12 @@ ms.collection:
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: 了解 Microsoft 365 系統管理員可使用的資源。
 ms.custom: okr_smb
-ms.openlocfilehash: 02d1afa763eda2edd7a0fba5624ab5a168b80a14
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 631c6640efeb6bebd8e091712b030ed61047042e
+ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623997"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43781490"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Microsoft 365 系統管理說明中心
 
@@ -38,8 +38,8 @@ ms.locfileid: "43623997"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Office 365 將變成 Microsoft 365</h3>
-                        <p>我們正在變更部分 Office 365 和 Microsoft 365 訂閱名稱。 您不需要執行任何動作。 您的服務、App 和功能，以及訂閱價格都會保持相同。 您的訂閱名稱會在 Microsoft 365 系統管理中心自動更新，而帳單將於 2020 年 4 月 21 日開始更新。</p>
+                        <h3>Office 365 現在是 Microsoft 365</h3>
+                        <p>我們已變更部分 Office 365 和 Microsoft 365 訂閱名稱。 您不需要執行任何動作。 您的服務、App 和功能，以及訂閱價格都會保持相同。 您的訂閱名稱會在 Microsoft 365 系統管理中心自動更新，而帳單將於 2020 年 4 月 21 日開始更新。</p>
                         <ul>
                             <li><p><b>Office 365 商務基本版</b>現在是 <b>Microsoft 365 商務基本版</b>。</p></li>
                             <li><p><b>Office 365 商務進階版</b>現在是 <b>Microsoft 365 商務標準版</b>。</p></li>
