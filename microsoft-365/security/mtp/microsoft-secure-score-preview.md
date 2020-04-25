@@ -17,19 +17,21 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8b8976f07f88afa184eb292b0cdc1d6e36a44d77
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8767174fa17aceab7d83adb96f938efad5074356
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43615915"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804770"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft 安全評分（預覽）
 
 >[!IMPORTANT]
 >一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目，表示執行的改善動作越多。 遵循安全性分數建議可保護您的組織免受威脅。 透過 Microsoft 365 security center 中的集中式儀表板，組織可以監視及處理其 Microsoft 365 身分識別、資料、應用程式、裝置和基礎結構的安全性。
+Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目，表示執行的改善動作越多。 可在 Microsoft 365 的https://security.microsoft.com/securescore安全性中心找到該網址。
+
+遵循安全性分數建議可保護您的組織免受威脅。 透過 Microsoft 365 security center 中的集中式儀表板，組織可以監視及處理其 Microsoft 365 身分識別、資料、應用程式、裝置和基礎結構的安全性。
 
 安全分數可協助組織：  
 
@@ -154,9 +156,34 @@ Microsoft Secure 得分是根據系統設定、使用者行為和其他安全性
 
 ## <a name="whats-new"></a>新功能 
 
-若要讓 Microsoft 安全評分為您安全性狀況的更佳代表，我們進行了一些變更。 若要深入瞭解規劃的變更，請參閱[Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)
+若要讓 Microsoft 安全評分為您安全性狀況的更佳代表，我們進行了一些變更。 若要深入瞭解規劃的變更，請參閱[Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)。
 
-### <a name="updated-interface-and-functionality"></a>更新的介面及功能
+### <a name="april-21st-2020"></a>2020年4月21日
+
+#### <a name="added-azure-active-directory-improvement-action"></a>新增 Azure Active Directory 改進動作
+
+- 不允許使用者將同意授與未受管理的應用程式（目前已發行版本本中提供）
+
+#### <a name="added-azure-advanced-threat-protection-improvement-actions"></a>新增 Azure 高級威脅防護改進動作
+
+- 停用網域控制站上的幕後列印程式服務
+- 修改不安全的 Kerberos 委派以防止模仿
+- 使用 Microsoft LAPS 保護和管理本機系統管理員密碼
+- 降低橫向移動路徑對機密實體的風險
+- 移除敏感群組中的睡眠帳戶
+- 從實體中移除不安全的 SID 歷程記錄屬性
+- 解決不安全的帳戶屬性
+- 停止清除文字認證曝光
+- 停止舊版通訊協定通訊
+- 停止弱密碼使用
+
+#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>支援 Microsoft Defender ATP 威脅 & 漏洞管理（TVM）安全性建議
+
+現在提供 TVM 提供的所有發佈安全性建議。
+
+### <a name="january---march-2020"></a>一月份-2020 年3月
+
+#### <a name="updated-interface-and-functionality"></a>更新的介面及功能
 
 * CISO 和潛在客戶層級討論的所有新的計量和趨勢視圖
 * 追蹤和基準成績的新方法
@@ -165,13 +192,13 @@ Microsoft Secure 得分是根據系統設定、使用者行為和其他安全性
 * 使用分數預測和規劃的動作來管理您的未來目標
 * 還有更多！
 
-### <a name="removed-not-scored-and-review-improvement-actions"></a>移除「未評分」和「複查」改進動作
+#### <a name="removed-not-scored-and-review-improvement-actions"></a>移除「未評分」和「複查」改進動作
 
 安全分數的原則之一是，分數應該是標準化的，且與的功能非常輕鬆。 具有不具可度量或具可操作性的改進動作已導致混淆。 只有在每個建議都會對分數有明確影響時，其中一個 Microsoft 安全評分才有意義。 不計分的改善動作不是可測量的，而且與其他改進動作相比，檢查改進動作不會以相同的標準進行度量。
 
 基於這些原因，所有未計分或要求的改善動作都會暫時移除。 您的元件不需要任何動作。
 
-### <a name="simplification-of-the-point-system"></a>簡化了點系統
+#### <a name="simplification-of-the-point-system"></a>簡化了點系統
 
 若要在多個經驗上標準化點，每個安全分數改進動作點總數已更新為10點以內。 在目前我們所做的安全性控制的廣泛 breather，以及未來將新增的安全性控制措施，都有一定的一致性。 雖然這是一項重大的變更，但您會看到點上有一個下沉，但是安全性狀況不會有任何變更。
 

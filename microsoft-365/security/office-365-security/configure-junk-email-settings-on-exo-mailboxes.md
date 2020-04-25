@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Exchange Online 信箱中設定垃圾郵件設定。 在 Outlook 或 web 上的 Outlook 中，使用者可以使用許多這些設定。
-ms.openlocfilehash: a18706c4bf63d9d96ba5e2f9bcbb803bddec36db
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: 55597c45f093a5b9a0b860c6987454f926025e28
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/24/2020
-ms.locfileid: "43800064"
+ms.locfileid: "43804787"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>設定 Exchange Online 信箱上的垃圾郵件設定
 
@@ -54,7 +54,7 @@ Exchange online 中的組織反垃圾郵件設定是由 Exchange Online Protecti
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>使用 Exchange Online PowerShell 啟用或停用信箱中的垃圾郵件規則
 
 > [!NOTE]
-> 您只能使用 **Set-MailboxJunkEmailConfiguration** Cmdlet 來停用已在 Outlook (在快取 Exchange 模式) 或 網頁型 Outlook 中開啟的信箱的垃圾郵件規則。 若尚未開啟信箱，您會收到錯誤： `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.`如果您想要針對大量作業隱藏此錯誤，您可以將此錯誤新增`-ErrorAction SlientlyContinue`至**Set-MailboxJunkEmailConfiguration**命令
+> 您只能使用 **Set-MailboxJunkEmailConfiguration** Cmdlet 來停用已在 Outlook (在快取 Exchange 模式) 或 網頁型 Outlook 中開啟的信箱的垃圾郵件規則。 若尚未開啟信箱，您會收到錯誤： `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.`如果您想要針對大量作業隱藏此錯誤，您可以將此錯誤新增`-ErrorAction SlientlyContinue`至**Set-MailboxJunkEmailConfiguration**命令。
 
 若要啟用或停用信箱中的垃圾郵件規則，請使用下列語法：
 
@@ -76,11 +76,11 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 如需詳細的語法及參數資訊，請參閱[Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration)。
 
- **附註**：
-
-- 如果使用者從未開啟其信箱，當您執行先前的命令時，可能會收到錯誤。 若要抑制大量作業的此錯誤， `-ErrorAction SlientlyContinue`請新增至**Set-MailboxJunkEmailConfiguration**命令。
-
-- 即使您停用垃圾郵件規則，Outlook 垃圾郵件篩選器（取決於其設定方式）也可以判斷郵件是否為垃圾郵件，以及是否可以將郵件移至 [收件匣] 或 [垃圾郵件] 資料夾（根據其本身的垃圾郵件，以及信箱上的安全清單集合）。 如需詳細資訊，請參閱本主題中的＜[關於 Outlook 中的垃圾郵件設定](#about-junk-email-settings-in-outlook)＞章節。
+> [!NOTE]
+> 
+> - 如果使用者從未開啟其信箱，當您執行先前的命令時，可能會收到錯誤。 若要抑制大量作業的此錯誤， `-ErrorAction SlientlyContinue`請新增至**Set-MailboxJunkEmailConfiguration**命令。
+> 
+> - 即使您停用垃圾郵件規則，Outlook 垃圾郵件篩選器（取決於其設定方式）也可以判斷郵件是否為垃圾郵件，以及是否可以將郵件移至 [收件匣] 或 [垃圾郵件] 資料夾（根據其本身的垃圾郵件，以及信箱上的安全清單集合）。 如需詳細資訊，請參閱本主題中的＜[關於 Outlook 中的垃圾郵件設定](#about-junk-email-settings-in-outlook)＞章節。
 
 ### <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 
@@ -145,13 +145,13 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 如需詳細的語法及參數資訊，請參閱[Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration)。
 
- **附註**：
-
-- 如果使用者從未開啟其信箱，當您執行先前的命令時，可能會收到錯誤。 若要抑制大量作業的此錯誤， `-ErrorAction SlientlyContinue`請新增至**Set-MailboxJunkEmailConfiguration**命令。
-
-- 即使停用信箱上的垃圾郵件規則，仍然可以設定安全清單集合，而 Outlook 垃圾郵件篩選器可以將郵件移至收件匣或 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱本主題中的＜[關於 Outlook 中的垃圾郵件設定](#about-junk-email-settings-in-outlook)＞章節。
-
-- Outlook 垃圾郵件篩選器有其他安全清單集合設定（例如，**自動將我的電子郵件新增至安全寄件者清單**）。 如需詳細資訊，請參閱＜[使用垃圾郵件篩選器來控制要查看的訊息](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077)＞。
+> [!NOTE]
+> 
+> - 如果使用者從未開啟其信箱，當您執行先前的命令時，可能會收到錯誤。 若要抑制大量作業的此錯誤， `-ErrorAction SlientlyContinue`請新增至**Set-MailboxJunkEmailConfiguration**命令。
+> 
+> - 即使停用信箱上的垃圾郵件規則，仍然可以設定安全清單集合，而 Outlook 垃圾郵件篩選器可以將郵件移至收件匣或 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱本主題中的＜[關於 Outlook 中的垃圾郵件設定](#about-junk-email-settings-in-outlook)＞章節。
+> 
+> - Outlook 垃圾郵件篩選器有其他安全清單集合設定（例如，**自動將我的電子郵件新增至安全寄件者清單**）。 如需詳細資訊，請參閱＜[使用垃圾郵件篩選器來控制要查看的訊息](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077)＞。
 
 ### <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 

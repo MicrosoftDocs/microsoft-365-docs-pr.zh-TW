@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 了解如何識別並修正在 Office 365 中的非法同意授權。
-ms.openlocfilehash: 43ce8de2826006069b815a37208fe2a3834bf313
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49fbbc1ea687cb5c01b39045a7359ee131a6732a
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637601"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808975"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>偵測並修正違法的同意授與
 
@@ -48,17 +48,18 @@ ms.locfileid: "43637601"
 
 3. 搜尋（所有活動和所有使用者）並輸入開始日期和結束日期（如有需要），然後按一下 [**搜尋**]。 
 
-4. 篩選結果以取得應用程式的同意，並新增 OAuth2PermissionGrant。
+4. 按一下 [**篩選結果**]，並在 [**活動**] 欄位中輸入應用程式同意。
 
 5. 按一下結果以查看活動的詳細資料。 按一下 [**詳細資訊**] 以取得活動的詳細資料。 請檢查 IsAdminContent 是否設定為 True。
 
 > [!NOTE]
-> * 在發生事件後，可在搜尋結果中顯示對應的審計記錄專案，最多可花30分鐘到24小時的時間。 <br/><br/> 在審核記錄中保留及可搜尋的審計記錄的時間長度，取決於您的 Microsoft 365 訂閱，特別是指派給特定使用者的授權類型。 如需詳細資訊，請參閱[稽核記錄](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
-如果這個值為 true，表示擁有全域系統管理員存取權的人員可能已獲得資料的廣泛存取權。 如果這是未預期的，請採取步驟以[確認攻擊](#how-to-confirm-an-attack)。
+> 在發生事件後，可在搜尋結果中顯示對應的審計記錄專案，最多可花30分鐘到24小時的時間。 <br/><br/> 在審核記錄中保留及可搜尋的審計記錄的時間長度，取決於您的 Microsoft 365 訂閱，特別是指派給特定使用者的授權類型。 如需詳細資訊，請參閱[稽核記錄](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
+> 
+> 如果這個值為 true，表示擁有全域系統管理員存取權的人員可能已獲得資料的廣泛存取權。 如果這是未預期的，請採取步驟以[確認攻擊](#how-to-confirm-an-attack)。
 
 ## <a name="how-to-confirm-an-attack"></a>如何確認攻擊
 
-如果您有上面所列的一或多個 IOC 執行個體，則必須進一步調查，以明確確認發生了攻擊。 您可以使用下列三種方法中的任何一種來確認攻擊。
+如果您有上面所列的一或多個 IOC 執行個體，則必須進一步調查，以明確確認發生了攻擊。 您可以使用下列三種方法中的任何一種來確認攻擊：
 
 - 使用 Azure Active Directory 入口網站來清查應用程式及其權限。 此方法很徹底，但是一次只能檢查一個使用者，如果要檢查的使用者很多，這會非常耗時。
 
@@ -158,9 +159,9 @@ ms.locfileid: "43637601"
 
 - 您可以關閉租用戶的整合式應用程式。 這是一項重大步驟，會在整個租用戶範圍中停用使用者授權同意的能力。 這可防止您的使用者不小心授權存取惡意應用程式。 我們不建議您這麼做，因為這會嚴重影響使用者使用使用協力廠商應用程式的生產力。 若要這麼做，可以依照[開啟或關閉整合式應用程式](https://docs.microsoft.com/office365/admin/misc/integrated-apps)中的步驟進行。
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>保護 Microsoft 365 （如 cybersecurity pro）
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Microsoft 365
 
-您的 Microsoft 365 訂閱隨附一組強大的安全性功能，可讓您用來保護您的資料和使用者。 使用[microsoft 365 安全性藍圖-前30天、90天和之後的最高優先順序](security-roadmap.md)，以執行 microsoft 建議的最佳作法，以保護您的 microsoft 365 租使用者。
+您的 Microsoft 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。 使用 [Microsoft 365 安全性藍圖 - 前 30 天、前 90 天前和之後的最高優先順序](security-roadmap.md)來實作 Microsoft 建議用來保護您的 Microsoft 365 租用戶的最佳做法。
 
 - 要在前 30 天內完成的工作。 這些工作會有立即的影響，而且對您的使用者影響較低。
 

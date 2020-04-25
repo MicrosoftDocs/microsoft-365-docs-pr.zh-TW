@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 在 Microsoft 365 中的自動調查期間和之後，您可以查看結果和重要結果。
-ms.openlocfilehash: e0ecea63260fae474973b39e7069029a2ec93dcb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b109c3e8a8dc92f2aaf91e40e620da8f1574af6f
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634625"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804864"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中自動調查的詳細資料和結果
 
@@ -250,6 +250,6 @@ ms.locfileid: "43634625"
 
 ## <a name="next-steps"></a>後續步驟
 
-- [審閱及核准擱置的動作](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)
+- [審閱及核准擱置的動作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide#approve-or-reject-pending-actions)
 
 - [深入瞭解 Microsoft 威脅防護中的自動化調查和回應](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

@@ -17,16 +17,18 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: 為 EOP 和垃圾郵件篩選器所篩選的電子郵件，引進安全性秘訣。
-ms.openlocfilehash: 7171f5855e295ffac931862c86db011c9f38a4c6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c7d7e6819e1374fd941d6eeb992ecf63726d4127
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634301"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43809017"
 ---
 # <a name="safety-tips-in-email-messages"></a>電子郵件訊息的安全提示
 
-Exchange Online Protection （EOP）和 Microsoft 365 會保護您的垃圾郵件、網路釣魚和惡意程式碼防護。 如今，有些攻擊非常精心設計，看起來很合理。 將郵件傳送至 [垃圾郵件] 資料夾並不一定足夠。 現在，當您在 Outlook 或 Outlook 網頁版中檢查您的電子郵件時，EOP 會自動檢查寄件者，並將安全性秘訣加入至電子郵件的最上層。
+Exchange Online Protection （EOP）和 Microsoft 365 會保護您的垃圾郵件、網路釣魚和惡意程式碼防護。 如今，有些攻擊非常精心設計，看起來很合理。 將郵件傳送至 [垃圾郵件] 資料夾並不一定足夠。 現在，當您在 Outlook 或 Outlook 網頁版或任何電子郵件客戶程式中檢查您的電子郵件時，EOP 會自動檢查寄件者，並將安全性秘訣加入至電子郵件的最上層。
+
+Outlook 中的安全性秘訣不一定取決於您所使用的 Outlook 版本，因為安全性秘訣會被破譯，並直接插入郵件內文。 這表示安全提示會顯示在任何您使用的電子郵件客戶程式中。 它會在電子郵件篩選層級進行，而不是在郵件客戶層級轉譯，所以不只會顯示在任何版本的 Outlook 中，也會顯示在任何電子郵件客戶程式中。
 
 安全提示（色彩編碼的訊息）會警告您可能有害的郵件。 您的收件匣中的大部分郵件都不會有安全性提示。 只有在 EOP 和 Microsoft 365 具有您所需的資訊，以協助防範垃圾郵件、網路釣魚和惡意程式碼攻擊時，您才會看到這些資訊。 如果在 [收件匣] 中顯示安全性秘訣，您可以使用下列範例深入瞭解每種安全提示類型。
 
@@ -55,6 +57,7 @@ Exchange Online Protection （EOP）和 Microsoft 365 會保護您的垃圾郵�
     我們也會告訴您，當我們略過檢查郵件時，因為郵件是來自您信任的 [安全寄件者] 清單上的寄件者，或是因為有郵件流程規則，而略過篩選。
 
     當外部圖像遭到封鎖時，灰色的安全性提示也會顯示出來，也就是說，郵件會在您的收件匣中，而且不會顯示為垃圾郵件，但是會包含您未選擇下載的外部圖像。
+    
 
 ## <a name="working-with-safety-tips"></a>使用安全提示
 

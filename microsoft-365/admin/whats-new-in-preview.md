@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 系統管理中心-深入瞭解本月新增的功能。
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 35a08b7c5ebdfd85a66fd28c46eb601d16298f96
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a3c042413525ec591f74cd63685490f7de93775a
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627519"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805181"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的新功能
 
@@ -36,10 +36,59 @@ ms.locfileid: "43627519"
 > **「傳統」系統管理員中心于三月份開始退休**<br><br>
 當您登入 admin.microsoft.com 時，您將會在每次進入新的系統管理中心。 在三月份，我們將開始停用切換回傳統系統管理中心的功能。 現在，您仍然可以切換回來，但在新的系統管理中心有同位（而且超過它），我們會關閉所有組織的參數。 <br><br> *上次更新：2020年3月2日*
 
-此外，如果您對其他系統管理中心的新功能感興趣：
+此外，如果您對其他 Microsoft 雲端服務的新功能感興趣：
 
+- [Exchange Online 的新功能](https://go.microsoft.com/fwlink/?linkid=2119714)
+- [Microsoft Intune 的新功能](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Microsoft 365 規範中心的新功能](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Office 更新](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="march-2020"></a>2020 年 3 月
+
+### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>特別推薦的反應修正：改善授權的「新增使用者」可靠性
+
+我們收到許多來自系統管理員的意見，可供系統管理員在新增使用者時，將授權指派給他們的困難程度。 我們已對此修正進行第一次更新，我們已遷移至較可靠的幕後服務，以處理這些要求。 如果發生錯誤，您現在會收到錯誤訊息，可讓您再試一次。
+
+:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="新增錯誤的使用者確認頁面。":::
+
+### <a name="microsoft-teams-home-page-card"></a>Microsoft 小組首頁頁面卡片
+
+透過 uptick 在小組的使用中，有些組織 emc 會取得一個固定的儀表板卡，讓小組開啟更容易探索。 這張卡片也具有訓練及檔的連結，可協助您的組織轉換至遠端工作。 請移至**首頁**以查看新的卡片。
+
+:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Microsoft 小組首頁頁面卡片":::
+
+### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>自訂群組織的 SharePoint 行動應用程式主題
+
+您可以使用 Microsoft 365 系統管理中心，在 SharePoint 行動應用程式中自訂群組織的主題，以進行 iOS 和 SharePoint 適用于 Android 的行動應用程式。 這項功能可輕鬆提供行動內部網路應用程式經驗，可讓員工在旅途中符合您的 SharePoint 線上。 主題自訂包括您的徽標影像、導覽列色彩、文字和圖示色彩，以及強調色彩的難易色彩。
+
+:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="圖表將系統管理中心設定對應至行動應用程式。":::
+
+:::image-end:::
+
+### <a name="improvements-to-the-add-a-group-wizard"></a>「新增群組」嚮導的增強功能
+
+當系統管理員建立新的群組，並將其指派給一個小組時，他們就可以指派沒有包含小組之授權的擁有者。 而且這會產生一些麻煩。 我們已更新嚮導流程，以驗證擁有者是否擁有小組授權，以及是否未停用將群組轉換為小組的選項。
+
+### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>適用于中小型企業的 Microsoft 365 產品
+
+我們知道這是下個月的宣告，但我們想要確保您已做好準備。
+
+從365年4月21日起，我們將與 Office 訂閱相關的變更，用於中小企業和 Office 365 ProPlus。 這些產品現在會使用 Microsoft 365 品牌。
+
+新的產品名稱會在2020年4月21日生效。 這只是對產品名稱所做的變更，目前沒有任何定價或功能變更。
+
+|目前名稱 |新名稱  |
+|---------|---------|
+|Office 365 商務基本版     |   Microsoft 365 商務基本版      |
+|Office 365 商務進階版     |    Microsoft 365 商務標準版     |
+|Microsoft 365 商務版     |    Microsoft 365 商務進階版     |
+|Office 365 商務版     |    Microsoft 365 Apps 商務版       | 
+|Office 365 專業增強版    |   適用于企業的 Microsoft 365 應用程式      |
+
+### <a name="videos-training-and-docs"></a>影片、訓練及檔
+
+[Microsoft 365 web 系列的新](https://go.microsoft.com/fwlink/p/?linkid=2118096)功能：在這個月的劇集中，我們會強調 microsoft 小組的3年周年紀念，並涵蓋新功能，包括線上會議中增強的音訊品質、firstline 管理員的目標通訊，以及倒班應用程式、小組和 Skype 使用者互通性等等。
 
 ## <a name="february-2020"></a>2020 年 2 月
 
@@ -181,7 +230,7 @@ Howdy，合作夥伴！ （無法幫您自己。）我們也為您提供這一�
 - **使用中使用者** > **管理角色**-這已更新，以與角色的變更對齊。 就像 [角色] 清單之外，我們已將角色的預設清單範圍限定為最實用，但是您可以透過展開 [**所有按類別**展開] 來查看所有角色。
 - **全域讀取者角色**-您要求的是！ 沒問題！ [全域讀取器](add-users/about-admin-roles.md#roles-available-in-the-microsoft-365-admin-center)角色！
 
-### <a name="report-an-issue"></a>報告問題
+### <a name="report-an-issue"></a>回報問題
 
 服務健康狀態已更新為新的樣式，如果您受到服務健康情況儀表板上未顯示問題的影響，您可以**報告問題**，讓 Microsoft 知道。 移至**健康情況** > **服務健康**情況。
 
@@ -337,7 +386,7 @@ Howdy，合作夥伴！ （無法幫您自己。）我們也為您提供這一�
 - **Intune 裝置保護**-若您的授權包含 intune，而且我們發現您未完成設定 intune 或註冊的裝置，我們建議您建立 Intune 原則，以在使用者從行動裝置存取時保護組織的檔案。
 - **取得每月 office 功能更新**-我們從非常小型客戶取得的回饋是，當他們取得每月 office 功能更新時，他們的使用者就會感到高興。 因此，如果您是一部非常小的企業，而且您目前每六個月都會更新一次 Office 功能，您就會看到此建議。
 
-**Settings** <br>
+**設定** <br>
 如設定所述，有很多變更。 大部分情況下，只需將現有的設定更新為新的系統管理中心樣式即可。 當我們向前推進並新增您以前從未見過的新設定時，我們會在這裡開始提及。 而且我們有一個整體設定可宣告：**新式驗證**。 是的，有新的設定可開啟**新式驗證**！ 若要將其取出，請移至 [**設定** > **服務 & 增益集** > **新式驗證**]。
 
 ## <a name="april-2019"></a>2019 年 4 月

@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 - MOE150
 description: 當多人需要存取相同的信箱時，會使用共用信箱。 深入瞭解建立共用信箱之前所需注意的事項。
-ms.openlocfilehash: fcdbb591e5b8f9b2c5490435b68e543c17a035a0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b6d1d7c8e0ae99047b854e91c1a97327a839f630
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629104"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808751"
 ---
 # <a name="about-shared-mailboxes"></a>關於共用信箱
 
 如果有多個人員需要存取相同信箱 (例如公司資訊或支援電子郵件地址、接待處或其他可能由多人共用的功能)，就會使用共用信箱。
 
-擁有群組信箱權限的使用者可以以信箱電子郵件地址的身分傳送或代表其傳送 (如果系統管理員已授與使用者執行該動作的權限)。 這對於協助和支援信箱特別有用，因為使用者可以傳送來自「Contoso Support」或「建立接待服務台」的電子郵件。
+擁有群組信箱權限的使用者可以以信箱電子郵件地址的身分傳送或代表其傳送 (如果系統管理員已授與使用者執行該動作的權限)。 這對於說明和支援信箱特別有用，因為使用者可以透過「Contoso 支援」或「大樓 A 接待處」傳送電子郵件。
 
-[建立共用信箱](create-a-shared-mailbox.md)之前，以下是您應該知道的一些事項。
+[建立共用信箱](create-a-shared-mailbox.md)之前，請先瞭解下列事項：
 
 - **授權：** 您的共用信箱可以儲存至50GB 的資料，而不需要您指派授權給它。 超過此上限後，您必須指派授權給信箱才能儲存更多資料。 如需共用信箱授權的詳細資訊，請參閱[Exchange Online 限制](https://technet.microsoft.com/library/exchange-online-limits.aspx#StorageLimits)。 當共用信箱到達儲存上限時，您可以接收電子郵件一段時間，但您將無法傳送新電子郵件。 之後，信箱將停止接收電子郵件。 傳送郵件到此信箱的寄件者會收到未傳遞回條。
 
@@ -55,7 +55,7 @@ ms.locfileid: "43629104"
 
 - **太多使用者：** 當同時存取共用信箱的指定使用者太多時，他們可能會間歇無法連線到此信箱。 在此情況下，您可以考慮減少使用者數目或使用不同的工作負載，例如 Microsoft 365 群組或公用資料夾。
 
-- **刪除郵件：** 不幸的是，您無法防止人員刪除共用信箱中的郵件。 這項工作的唯一方法是建立 Microsoft 365 群組，而不是共用信箱。 Outlook 中的群組就像是共用信箱。 如需兩者的比較，請參閱[比較群組](../create-groups/compare-groups.md)。 若要深入瞭解群組，請參閱[深入瞭解群組](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+- **刪除郵件：** 不幸的是，您無法防止人員刪除共用信箱中的郵件。 這項工作的唯一方法是建立 Microsoft 365 群組，而不是共用信箱。 Outlook 中的群組就像是共用信箱。 如需兩者的比較，請參閱[比較群組](../create-groups/compare-groups.md)。 若要深入瞭解群組，請參閱[深入瞭解群組](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)。
 
 ## <a name="related-articles"></a>相關文章
 

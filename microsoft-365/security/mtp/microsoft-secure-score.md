@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c15f0b30dbf377da4e01ba199852f02bd7a003ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 56c3187999d34ac6d84c1b3857053f82bb40b2a9
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637101"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804752"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -120,9 +120,7 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 3. 選取 [**略**過]，因為您已決定接受風險，而不會制定「改進」動作。 一旦您忽略 [改進] 動作，您可以達到的安全分數點總數即會減少。 您可以在歷史記錄中查看此動作，也可以隨時復原。
 
-4. 選取 [**檢查**]，因為改進動作需要您定期檢查環境的一部分，以取得及保留點數。 例如，應每週複查信箱轉寄規則，以確保資料未從您的網路挾帶。 您不需要進行任何變更，但必須執行動作。 如果您定期檢查規則，您會收到點數。 如果不是，則會降低分數。
-
-![安全分數改進動作範例](../../media/secure-score/secure-score1x450.png) ![安全分數評審改進動作範例](../../media/secure-score/secure-score2x450.png)
+![安全分數改進動作範例](../../media/secure-score/secure-score1x450.png)
 
 *圖 2 & 3：改善動作 flyouts*
 
@@ -137,6 +135,15 @@ Microsoft Secure 得分是根據系統設定、使用者行為和其他安全性
 ## <a name="whats-new"></a>新功能
 
 若要讓 Microsoft 安全評分為您安全性狀況的更好代表，我們進行了一些變更。 若要深入瞭解規劃的變更，請參閱[Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)
+
+### <a name="april-21st-2020"></a>2020年4月21日
+
+#### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>移除不符合可靠度量期望的改進動作，或不提供安全狀況的有用標記法
+
+為了確保 Microsoft 安全分數有意義，且每個改進動作都有意義且可靠，我們正在移除下列改進動作。
+
+- 將 IRM 保護套用至檔
+- 套用資料遺失防護原則
 
 ### <a name="january---march-2020"></a>一月份-2020 年3月
 

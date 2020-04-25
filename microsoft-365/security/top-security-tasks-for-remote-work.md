@@ -12,13 +12,13 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - remotework
-description: '保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。 '
-ms.openlocfilehash: 0730f4df4f6e9e72f024b35729909df309826625
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。
+ms.openlocfilehash: f2d76fd92ac6d439fd6400a0478028c99ae935eb
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630794"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808840"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>最常見的12個任務，可供安全性小組用來支援在家運作
 
@@ -36,7 +36,7 @@ ms.locfileid: "43630794"
 ||**工作**| 所有 Office 365 企業版方案|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
 |1       |[啟用 Azure Multi-Factor 驗證（MFA）](#1-enable-azure-multi-factor-authentication-mfa)   |   ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|2      | [防範威脅](#2-protect-against-threats) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|第     | [防範威脅](#2-protect-against-threats) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |3       |  [設定 Office 365 的高級威脅防護](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4       | [設定 Azure 高級威脅防護（ATP）](#4-configure-azure-advanced-threat-protection)   |   |      |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |5      |   [開啟 Microsoft 高級威脅防護](#5-turn-on-microsoft-advanced-threat-protection)  |  |      | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
@@ -46,7 +46,7 @@ ms.locfileid: "43630794"
 |9       | [針對 cloud connectivity 優化網路](#9-optimize-your-network-for-cloud-connectivity)  |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |10    | [訓練使用者](#10-train-users) |    ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |11  |[開始使用 Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
-|12 |[監視威脅並採取動作](#12-monitor-for-threats-and-take-action) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
+|12  |[監視威脅並採取動作](#12-monitor-for-threats-and-take-action) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 
 
@@ -63,7 +63,7 @@ ms.locfileid: "43630794"
 套用這些原則只需要數分鐘，但準備好在今後數天內為您的使用者提供支援。  
 
 
-|規劃  |建議  |
+|方案  |建議  |
 |---------|---------|
 |Microsoft 365 方案（沒有 Azure AD P1 或 P2）     |[啟用 AZURE AD 中的安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性預設值包括針對使用者和系統管理員的 MFA。   |
 |Microsoft 365 E3 （搭配 Azure AD P1）     | 使用[一般條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)來設定下列原則： <br>- [需要對系統管理員進行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [需要對所有使用者進行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [封鎖舊版驗證](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
@@ -191,7 +191,7 @@ Microsoft Intune 行動應用程式管理（MAM）可讓您在不管理這些裝
 
 ## <a name="10-train-users"></a>10：訓練使用者
 
-當使用者不知道組織中工作中的威脅防護功能時，他們可能會受到保護功能的沮喪，使其減慢速度，或防止他們完成工作。 此外，如果他們事先知道對可疑的電子郵件訊息或 URLs 所監視的情況，這些專案就不會再開啟可疑的專案。 訓練使用者可將您的使用者與安全性作業小組儲存大量的時間和不滿。
+訓練使用者可將您的使用者與安全性作業小組儲存大量的時間和不滿。 聰明的使用者不太可能開啟附件或按一下可疑電子郵件訊息中的連結，也很可能避免可疑的網站。 
 
 Harvard 甘迺迪 School [Cybersecurity 活動手冊](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409)提供好的指導方針，可為組織內的安全性感知建立強大的文化，包括訓練使用者來識別網路釣魚攻擊。 
 

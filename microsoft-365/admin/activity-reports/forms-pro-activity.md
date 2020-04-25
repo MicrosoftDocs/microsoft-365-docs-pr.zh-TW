@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - GEA150
 description: 瞭解如何使用 Microsoft 365 系統管理中心的 [Microsoft 365 報告] 儀表板來取得 Microsoft Forms Pro 活動報告。
-ms.openlocfilehash: 69938124b1aeb996afd52c119ac61e2e607f871e
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: b86fffe580e67e86999379cc3186465dcfc7fed8
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781610"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804814"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>系統管理中心的 Microsoft 365 報告-表單活動
+# <a name="microsoft-365-reports-in-the-admin-center---forms-pro-activity"></a>系統管理中心的 Microsoft 365 報告-Forms Pro 活動
 
 Microsoft 365**報告**儀表板會向您顯示組織中各產品的活動概況。 此功能可讓您深入了解個別產品層級報表，更加深入解析各產品內的活動。 請參閱[報告概觀主題](activity-reports.md)。
   
