@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 取得關於組織中的人員使用 Microsoft 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
-ms.openlocfilehash: 646096b0e9d9f2c1d701fba312901bf744a74501
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 665512e322eadd2f590fb5109fd6f1a9e7706e61
+ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621267"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43794014"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>系統管理中心的 Microsoft 365 報告
 
@@ -58,7 +58,7 @@ ms.locfileid: "43621267"
 ::: moniker-end
 
    
-2. 選取儀表板頂端的 **[選取報告]**，從所有可用報告的清單中選擇所需報告。 或者您也可以選取單個服務 (電子郵件、OneDrive 等等) 的概覽活動小工具以查看詳細資訊。 <br/>![使用情況儀表板](../../media/usage-report-dashboard.png)
+2. 選取儀表板頂端的 **[選取報告]**，從所有可用報告的清單中選擇所需報告。 或者您也可以選取單個服務 (例如電子郵件或 OneDrive) 的概覽活動小工具以查看詳細資訊。 <br/>![使用情況儀表板](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>誰可以查看報告
 
@@ -104,7 +104,7 @@ ms.locfileid: "43621267"
   
 - [商務用 OneDrive 使用量](onedrive-for-business-usage.md)
 
-- [專業增強版使用量](microsoft365-apps-usage.md)
+- [Microsoft 365 應用程式使用量](microsoft365-apps-usage.md)
   
 - [SharePoint 網站使用量](sharepoint-site-usage.md)
   
