@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 或 Microsoft 365 合規性中心中的「內容搜尋」工具，來搜尋信箱中的內容、SharePoint Online 網站，OneDrive 帳戶、Microsoft Teams、Microsoft 365 群組、Yammer 群組和商務用 Skype 交談。 您可以使用關鍵字搜尋查詢和搜尋條件來縮小搜尋結果。 然後您可以預覽和匯出搜尋結果。 內容搜尋也是用來搜尋與 GDPR 資料主體要求相關內容的有效工具。
-ms.openlocfilehash: 74fb84a46b4dd283eef90f2181a0d084a7a361e8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d601db20cbfc8c5ea5a4fcc64d181a99a7f8f940
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632358"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43900737"
 ---
 # <a name="content-search"></a>內容搜尋
 
@@ -138,13 +138,13 @@ ms.locfileid: "43632358"
     
 3. 在 **[個別結果]** 下拉式清單中，按一下 **[搜尋統計資料]**。
     
-4. 在 **[類型]** 下拉式清單中，視您想要檢視的搜尋統計資料而定，按一下下列其中一個選項。 
+4. 在 **[類型]** 下拉式清單中，視您想要檢視的搜尋統計資料而定，按一下下列其中一個選項：
     
-  - **摘要：** 針對所搜尋的每個內容位置類型，顯示其統計資料。 這包括包含的項目符合搜尋查詢的內容位置的數量，以及搜尋結果項目的總數量和大小。 這是預設設定。
-    
-  - **查詢：** 顯示搜尋查詢的相關統計資料。 這包括查詢統計資料所適用的內容位置類型、適用的搜尋查詢統計資料部分 (請注意，**主要**代表整個搜尋查詢)、包含符合搜尋查詢項目的內容位置的數量，以及所找到符合搜尋查詢項目的總數量和大小 (在指定的內容位置中)。 未編製索引項目的統計資料 (也稱為*部分編製索引的項目*) 也會顯示。 不過，統計資料中只會包含來自信箱的部分編製索引的項目。 統計資料中不會包括來自 SharePoint 和 OneDrive 的部分編製索引項目。
-    
-  - **熱門位置：** 顯示每個內容位置中符合搜尋查詢的項目數量的相關統計資料。 會顯示前 1,000 個位置。
+    - **摘要：** 針對所搜尋的每個內容位置類型，顯示其統計資料。 這包括包含的項目符合搜尋查詢的內容位置的數量，以及搜尋結果項目的總數量和大小。 這是預設設定。
+
+    - **查詢：** 顯示搜尋查詢的相關統計資料。 這包括查詢統計資料所適用的內容位置類型、適用的搜尋查詢統計資料部分 (請注意，**主要**代表整個搜尋查詢)、包含符合搜尋查詢項目的內容位置的數量，以及所找到符合搜尋查詢項目的總數量和大小 (在指定的內容位置中)。 未編製索引項目的統計資料 (也稱為*部分編製索引的項目*) 也會顯示。 不過，統計資料中只會包含來自信箱的部分編製索引的項目。 統計資料中不會包括來自 SharePoint 和 OneDrive 的部分編製索引項目。
+
+    - **熱門位置：** 顯示每個內容位置中符合搜尋查詢的項目數量的相關統計資料。 會顯示前 1,000 個位置。
     
 如需搜尋統計資料的更詳細資訊，請參閱[檢視內容搜尋結果的關鍵字統計資料](view-keyword-statistics-for-content-search.md)。
   
@@ -246,6 +246,8 @@ ms.locfileid: "43632358"
 搜尋 Microsoft Teams 和 Microsoft 365 群組中的內容時，請記住下列事項。
   
 - 若要搜尋位於 Teams 和 Microsoft 365 群組中的內容，您必須指定與團隊或群組相關聯的信箱和 SharePoint 網站。
+
+- 來自私人頻道的內容會儲存在每位使用者的信箱，而不會儲存在小組信箱。 若要搜尋私人頻道中的內容，請參閱 [私人頻道進階電子文件探索](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels)。
     
 - 在 Exchange Online 中執行 **Get-UnifiedGroup** Cmdlet，以檢視團隊或 Microsoft 365 群組的內容。 這是取得與團隊或群組相關聯的網站 URL 的絕佳方法。 例如，下列命令會顯示名為「資深領導團隊」的 Microsoft 365 群組的所選屬性： 
     
