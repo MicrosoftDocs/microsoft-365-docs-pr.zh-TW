@@ -16,12 +16,12 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: 摘要： 本文說明如何更新網域名稱服務 (DNS) 記錄，使您可以在 Office 365 內的自訂網域中使用寄件者原則架構 (SPF)。 使用 SPF 協助驗證自您自訂網域傳送的輸出電子郵件。
-ms.openlocfilehash: c1424ed9da6a36128d9f4502aadb475068ad029b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9d84fb60886dd1518beb8a94438d5168c869a8c8
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638317"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808993"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>設定 SPF 以協助防止詐騙
 
@@ -49,7 +49,7 @@ ms.locfileid: "43638317"
 
 - 您網域的目前 SPF TXT 記錄。如需相關指示，請參閱[收集建立 Office 365 DNS 記錄所需的資訊](https://docs.microsoft.com/office365/admin/get-help-with-domains/information-for-dns-records)。
 
-- 所有內部部署訊息伺服器的 IP 位址。例如，**192.168.0.1**。
+- 所有內部部署訊息伺服器的外部 IP 位址。例如，**131.107.2.200**。
 
 - 要使用的網域名稱，針對您需要包含在 SPF TXT 記錄中的所有協力廠商網域。某些大量郵件提供者已設定要用於他們的客戶的子網域。例如，公司 MailChimp 已設定 **servers.mcsv.net**。
 

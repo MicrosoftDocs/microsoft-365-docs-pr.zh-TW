@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 8798dccb02b35158bce34b710362c5b020a9bb15
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: f3cf16da0c7623c1cdd7f90272fa4b11126dcc25
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/24/2020
-ms.locfileid: "43800044"
+ms.locfileid: "43805189"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -86,7 +86,7 @@ ms.locfileid: "43800044"
     > [!NOTE]
     > 如果您的組織有參與一年期稽核記錄保留的私人預覽計畫，則將不會重設一般發行日期之前產生的稽核記錄保留期間。
 
-  - 對於或指派其他任何 (非 E5) Office 365 或 Microsoft 365 授權的使用者，稽核記錄會保留 90 天。 如需支援整合稽核記錄的 Office 365 和 Microsoft 365 訂閱清單，請參閱[安全性與合規性中心服務描述](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) (部分機器翻譯)。
+  - 對於獲派其他任何 (非 E5) Office 365 或 Microsoft 365 授權的使用者，稽核記錄會保留 90 天。 如需支援整合稽核記錄的 Office 365 和 Microsoft 365 訂閱清單，請參閱[安全性與合規性中心服務描述](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) (部分機器翻譯)。
 
     > [!NOTE]
     > 即使信箱稽核預設為開啟，您可能會發現某些使用者的信箱稽核事件在安全性與合規性中心的稽核記錄搜尋或透過 Office 365 管理活動 API 找不到。 如需詳細資訊，請參閱[信箱稽核記錄的相關資訊](enable-mailbox-auditing.md#more-information)。
@@ -113,7 +113,7 @@ ms.locfileid: "43800044"
 
 - 發生事件後，對應的稽核記錄最多可能需要 30 分鐘或 24 小時的時間，才會在稽核記錄搜尋的結果中傳回。 下列表格顯示不同 Office 365 服務的所需時間。
 
-  |**Microsoft 365 服務**|**30 分鐘**|**24 小時**|
+  |**Microsoft 365 服務或功能**|**30 分鐘**|**24 小時**|
   |:-----|:-----:|:-----:|
   |進階威脅防護和威脅情報|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (使用者登入活動)||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -129,6 +129,7 @@ ms.locfileid: "43800044"
   |Power Apps||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Power BI|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |安全性與合規性中心|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |敏感度標籤||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |SharePoint Online 和商務用 OneDrive|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sway||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |工作場所分析|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -529,7 +530,7 @@ ms.locfileid: "43800044"
 
 ### <a name="exchange-mailbox-activities"></a>Exchange 信箱活動
 
-下表列出信箱稽核記錄可以記錄的活動。 信箱擁有者、指定使用者或管理員所執行的信箱活動會記錄在稽核記錄中達 90 天。 系統管理員可能會關閉組織中所有使用者的信箱稽核記錄功能。 在此情況下，任何使用者的信箱動作都不會記錄。 如需詳細資訊，請參閱[管理信箱稽核](enable-mailbox-auditing.md)。
+下表列出信箱稽核記錄可以記錄的活動。 信箱擁有者、指定使用者或管理員所執行的信箱活動會記錄在 Microsoft 365 稽核記錄中達 90 天。 系統管理員可能會關閉組織中所有使用者的信箱稽核記錄功能。 在此情況下，任何使用者的信箱動作都不會記錄。 如需詳細資訊，請參閱[管理信箱稽核](enable-mailbox-auditing.md)。
 
  您也可以在 Exchange Online PowerShell 中使用 [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) Cmdlet 來搜尋信箱活動。
 
@@ -669,7 +670,7 @@ ms.locfileid: "43800044"
 
 - 管理電子文件探索系統管理員角色
 
-如需已記錄電子文件探索活動的清單和詳細描述，請參閱[搜尋稽核記錄中的電子文件探索活動](search-for-ediscovery-activities-in-the-audit-log.md)。
+如需已記錄的電子文件探索活動之清單和詳細描述，請參閱[搜尋稽核記錄中的電子文件探索活動](search-for-ediscovery-activities-in-the-audit-log.md)。
 
 > [!NOTE]
 > [活動]**** 下拉式清單中的 [電子文件探索活動]**** 下方所列活動的結果事件，最久需要 30 分鐘才會顯示在搜尋結果中。 相反地，系統需要 24 小時才能在搜尋結果中顯示電子文件探索 Cmdlet 活動的對應事件。
@@ -901,7 +902,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) 會在系統管理員 (或獲派管理權限的使用者) 在您的 Exchange Online 組織中進行變更時，將事件記錄在稽核記錄中。 使用 Exchange 系統管理員中心或執行 Exchange Online PowerShell 中的 Cmdlet 所做的變更會記錄在 Exchange 系統管理稽核記錄中。 以動詞 **Get-**、**Search-** 或 **Test-** 開頭的 Cmdlet 不會記錄在稽核記錄中。 如需有關 Exchange 系統管理員稽核記錄的詳細資訊，請參閱[系統管理員稽核記錄功能](https://go.microsoft.com/fwlink/p/?LinkID=619225)。
 
 > [!IMPORTANT]
-> 未記錄在 Exchange 系統管理員稽核記錄 (或在稽核記錄中) 的某些 Exchange Online Cmdlet。 許多這些 Cmdlet 都與維護 Exchange Online 服務相關，並由 Microsoft 資料中心人員或服務帳戶執行。 之所以不記錄這些 Cmdlet，是因為這些 Cmdlet 會造成大量的「雜亂」稽核事件。 如果有 Exchange Online Cmdlet 未受到稽核，請傳送建議給[安全性與合規性的 User Voice 論壇](https://office365.uservoice.com/forums/289138-office-365-security-compliance) (英文)，並要求對其啟用稽核。 您也可以將設計變更要求 (DCR) 傳送到 Microsoft 支援服務。
+> 未記錄在 Exchange 系統管理員稽核記錄 (或在稽核記錄中) 的某些 Exchange Online Cmdlet。 許多這些 Cmdlet 都與維護 Exchange Online 服務相關，並由 Microsoft 資料中心人員或服務帳戶執行。 之所以不記錄這些 Cmdlet，是因為這些 Cmdlet 會造成大量的「雜亂」稽核事件。 如果有 Exchange Online Cmdlet 未受到稽核，請傳送建議給[安全性與合規性的 User Voice 論壇](https://office365.uservoice.com/forums/289138-office-365-security-compliance)，並要求對其啟用稽核。 您也可以將設計變更要求 (DCR) 傳送到 Microsoft 支援服務。
 
 以下是在搜尋稽核記錄時搜尋 Exchange 系統管理員活動的秘訣：
 
@@ -940,7 +941,7 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
 
 **稽核記錄可保留多久時間？**
 
-如先前所述，由獲指派 Office 365 E5 或 Microsoft E5 授權的使用者 (或擁有 Microsoft 365 E5 附加元件授權的使用者) 所執行活動的稽核記錄，會保留一年。 針對支援整合稽核記錄的其他所有訂閱，稽核記錄會保留 90天。
+如先前所述，由獲派 Office 365 E5 或 Microsoft E5 授權的使用者 (或擁有 Microsoft 365 E5 附加元件授權的使用者) 所執行活動的稽核記錄，會保留一年。 針對支援整合稽核記錄的其他所有訂閱，稽核記錄會保留 90天。
 
 **我可以以程式設計方式存取稽核資料嗎？**
 
@@ -948,7 +949,7 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
 
 **除了使用安全性與合規性中心或 Office 365 管理活動 API，有其他方法可取得稽核記錄嗎？**
 
-不對。 從稽核服務取得資料的方式只有兩種。
+否。 從稽核服務取得資料的方式只有兩種。
 
 **針對想擷取稽核記錄的服務，我是否要為每項服務個別啟用稽核功能？**
 
@@ -956,11 +957,11 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
 
 **稽核服務支援刪除重複的記錄嗎？**
 
-不對。 稽核服務管線幾乎是即時的，因此並不支援刪除重複資料。
+否。 稽核服務管線幾乎是即時的，因此並不支援刪除重複資料。
 
 **稽核資料可在各個地理位置間流通嗎？**
 
-不對。 我們目前將稽核管線部署在 NA (北美洲)、EMEA (歐洲、中東及非洲) 和 APAC (亞太地區) 區域中。 不過，我們可以在這些區域間流通資料來達到負載平衡，並只能在即時網站期間才可這麼做。 當我們執行這些活動時，資料傳輸會經過加密處理。
+否。 我們目前將稽核管線部署在 NA (北美洲)、EMEA (歐洲、中東及非洲) 和 APAC (亞太地區) 區域中。 不過，我們可以在這些區域間流通資料來達到負載平衡，並只能在即時網站期間才可這麼做。 當我們執行這些活動時，資料傳輸會經過加密處理。
 
 **稽核資料會加密嗎？**
 

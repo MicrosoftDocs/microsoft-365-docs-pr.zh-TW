@@ -17,12 +17,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: 身為 Microsoft 365 使用者，您可以檢視、釋出、刪除隔離郵件 (收件者是您，且經垃圾郵件篩選功能認為是垃圾郵件或大量電子郵件而加以隔離的郵件)。 您可以在「安全性與合規性中心」檢視和管理隔離郵件。
-ms.openlocfilehash: 215cbc23aca3b7d10eca8c53d816892d0ca042cb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b8ab5835a29ccf0c58d27f56fe84d29745419b1a
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638103"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43809005"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user"></a>以使用者身分找到並釋放被隔離的郵件
 
@@ -38,7 +38,7 @@ ms.locfileid: "43638103"
 
 - 系統管理員也可以在反垃圾郵件原則中[啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)。 使用者可以直接從這些通知釋出垃圾郵件隔離郵件，但無法釋出網路釣魚隔離郵件。 如需詳細資訊，請參閱 [Office 365 中的使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
-- 經系統或郵件流程規則 (又稱為傳輸規則) 認為是高信賴度網路釣魚或惡意程式碼而遭到隔離的郵件，只會交給系統管理員處理。 如需詳細資訊，請參閱[以 Office 365 系統管理員身分管理隔離的郵件和檔案](manage-quarantined-messages-and-files.md)。
+- 經系統或郵件流程規則 (又稱為傳輸規則) 認為是高信賴度網路釣魚或惡意程式碼而遭到隔離的郵件，只會交給系統管理員處理。 使用者可以檢閱網路釣魚訊息，但只能由系統管理員發行。 如需詳細資訊，請參閱[以 Office 365 系統管理員身分管理隔離的郵件和檔案](manage-quarantined-messages-and-files.md)。
 
 - 您只能釋出郵件並將其報告為誤判 (非垃圾郵件) 一次。
 

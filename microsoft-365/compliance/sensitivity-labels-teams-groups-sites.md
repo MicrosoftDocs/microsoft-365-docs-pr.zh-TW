@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: 9252fa5a5096e8a0768277f0c72d78e4743f51dc
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: ac4e95c8356149ce9e5c719837820f84332d2a80
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790678"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804846"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites-public-preview"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容 (公開預覽)
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-在 [Microsoft 365 合規性中心](https://protection.office.com/)中建立敏感度標籤時，您現在可以將這些標籤套用至下列容器：Microsoft Teams 網站、Microsoft 365 群組 (先前的 Office 365 群組) 和 SharePoint 網站。 使用下列標籤設定來協助保護這些容器中的內容：
+在 [Microsoft 365 合規性中心](https://protection.office.com/)中建立敏感度標籤時，您現在可以將這些標籤套用至下列容器：Microsoft Teams 網站、Microsoft 365 群組 ([先前的 Office 365 群組](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) 和 SharePoint 網站。 使用下列標籤設定來協助保護這些容器中的內容：
 
 - Microsoft 365 群組連線小組網站的隱私權 (公開或私人)
 - 外部使用者存取
@@ -258,7 +258,7 @@ Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤會
 
 啟用此預覽時，Microsoft 365 不再針對新的 Microsoft 365 群組和 SharePoint 網站支援舊分類。 不過，現有的群組和網站仍會顯示舊的分類值，除非您轉換它們以使用敏感度標籤。
 
-如需您先前可能使用的 SharePoint 舊群組分類範例，請參閱 [SharePoint 「新式」網站分類](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)。
+如需您先前可能使用的 SharePoint 舊群組分類範例，請參閱 [SharePoint 新式網站分類](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)。
 
 這些分類是使用 Azure AD PowerShell 或 PnP 核心程式庫來設定，並定義 `ClassificationList` 設定的值。 如果您的租用戶已定義分類值，當您從 [AzureADPreview PowerShell 模組](https://www.powershellgallery.com/packages/AzureADPreview)執行下列命令時，會顯示這些值：
 
