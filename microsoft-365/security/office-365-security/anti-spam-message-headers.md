@@ -15,12 +15,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: 了解 Exchange Online Protection 新增至郵件的標頭欄位和值。
-ms.openlocfilehash: 1bb2468908ef9711242bdb236f7f43f9f6e43eb1
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 8b034da9e6c4ac138e804e07e4654c1e269aeda1
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708580"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805215"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾郵件訊息標頭
 
@@ -46,7 +46,7 @@ Exchange Online Protection (EOP) 掃描輸入的電子郵件時，會在每封�
 |IPV:CAL|郵件跳過垃圾郵件篩選，因為來源 IP 位址位於 IP 允許清單中。 如需詳細資訊，請參閱[設定連線篩選](configure-the-connection-filter-policy.md)。|
 |IPV:NLI|IP 位址不被列在任何 IP 信譽清單中。|
 |LANG|撰寫郵件所用的語言，如國碼所指定 (例如，ru_RU 代表俄文)。|
-|PTR:\[ReverseDNS\]|來源 IP 位址的 PTR 記錄 (也稱為指標記錄或反向 DNS 位址)。|
+|PTR:\[ReverseDNS\]|來源 IP 位址的 PTR 記錄 (又稱為反向 DNS 查閱)。|
 |SCL|郵件的垃圾郵件信賴等級 (SCL)。 此值越高，表示郵件越有可能是垃圾郵件。 如需詳細資訊，請參閱[垃圾郵件信賴等級 (SCL)](spam-confidence-levels.md)。|
 |SFTY|郵件已被識別為網路釣魚，並且也會標示為以下其中一個值： <ul><li>9.1：預設值。 該郵件包含網路釣魚 URL、可能包含其他網路釣魚內容，或者在將郵件轉送到 Microsoft 365 之前，可能已被其他郵件篩選器 (例如內部部署 Exchange) 標記為網路釣魚郵件。</li><li>9.11：[組織內部或自我詐騙](anti-spoofing-protection.md#different-types-of-spoofing)。 郵件的反詐騙檢查失敗，其中 [寄件者] 標頭中的寄件者電子郵件網域與接收網域相同，或與接收網域相同或屬於同一組織。 組織內部詐騙的安全提示會新增至郵件。</li><li>9.19：網域冒充。 寄件網域嘗試冒充 ATP 防網路釣魚原則中指定的受保護網域 (由收件者的組織擁有的網域或自訂網域)。 網域冒充的安全提示會新增至郵件 (如果已在 ATP 防網路釣魚原則中啟用安全提示)。</li><li>9.20：使用者冒充。 寄件使用者嘗試冒充收件者組織中的使用者，或 ATP 防網路釣魚原則中指定的受保護使用者。 使用者冒充的安全提示會新增至郵件 (如果已在 ATP 防網路釣魚原則中啟用安全提示)。</li><li>9.21：[跨網域詐騙](anti-spoofing-protection.md#different-types-of-spoofing)。 郵件的反詐騙檢查失敗，[寄件者] 標頭中的寄件電子郵件網域未驗證而且是外部網域。 與 [CompAuth](#authentication-results-message-header-fields-used-by-microsoft-email-authentication) 搭配使用。</li><li>9.22：與 9.21 相同，唯一不同的是使用者的安全寄件者遭到覆寫。</li><li>9.23：與 9.22 相同，唯一不同的是組織允許遭到覆寫的寄件者或網域。</li><li>9.24：與 9.23 相同，唯一不同的是使用者的 Exchange 郵件流程規則 (又稱為傳輸規則) 遭到覆寫。</li></ul>|
 |SFV:BLK|已跳過篩選，且已封鎖郵件，因為該郵件是從使用者的 Outlook 封鎖寄件者 (使用者的 [封鎖寄件者] 清單) 中的地址傳送。<br/></br> 關於系統管理員如何管理使用者的封鎖寄件者清單，如需詳細資訊請參閱[設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。|

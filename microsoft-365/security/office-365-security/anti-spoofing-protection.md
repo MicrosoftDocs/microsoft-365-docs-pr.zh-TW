@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: ''
-ms.openlocfilehash: 3a306cb8bda0f5f07660f8a2af60e29a3c4d0776
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e66a0b7965212ef65663208efd73378d8c14a726
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636031"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805220"
 ---
 # <a name="anti-spoofing-protection"></a>反詐騙保護
 
@@ -92,11 +92,9 @@ Microsoft 將詐騙郵件區分為兩種類型：
 
   `Authentication-Results: ... compauth=fail reason=6xx`
 
-  `X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
+  `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.11`
 
   - `reason=6xx` 表示組織內部詐騙。
-
-  - CAT 是郵件類別，一般會註記為 SPM (垃圾郵件)，但偶而會註記為 HSPM (信賴度高的垃圾郵件) 或 PHISH (網路釣魚)，係根據郵件內所偵測到的其他模式類型而定。
 
   - SFTY 是郵件的安全層級。 9 表示網路釣魚，11 表示組織內部詐騙。
 
@@ -109,7 +107,7 @@ Microsoft 將詐騙郵件區分為兩種類型：
 
   `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
 
-  - `reason=000` 值表示郵件未通過明確電子郵件驗證。 `reason=001` 值表示郵件未通過隱含電子郵件驗證。
+  - `reason=000` 表示郵件未通過明確電子郵件驗證。 `reason=001` 值表示郵件未通過隱含電子郵件驗證。
 
   - SFTY 是郵件的安全層級。 9 表示網路釣魚，22 表示跨網域詐騙。
 
