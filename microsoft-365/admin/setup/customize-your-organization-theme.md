@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: '瞭解如何變更 Microsoft 365 的預設主題，並加以自訂，使其符合您公司的徽標或色彩。 '
-ms.openlocfilehash: 6a689c6da967bf3f62699bb9df287f7c5fc42e6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 06b247da1a8ac1f330f2ad36c8b29897963819f3
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627603"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43900771"
 ---
-# <a name="customize-the-theme-for-your-organization"></a>自訂群組織的主題
+# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自訂群組織的 Microsoft 365 主題
 
 瞭解如何在 Microsoft 365 系統管理中心中自訂您的主題。 做為 Microsoft 商務用 Microsoft 365 訂閱的系統管理員，您可以變更顯示在組織中所有人員的上方導覽列中的預設主題。 您可以新增公司的徽標並變更色彩，使其符合其他品牌的色彩。 您甚至可以新增目的地連結供使用者選取您的徽標時流覽到。 您可以在這裡看到預設主題和自訂主題結果 Microsoft 365。
   
@@ -64,7 +64,7 @@ ms.locfileid: "43627603"
     
 4. 選取 [儲存變更]****。
     
-您會立即在系統管理中心看到新的主題，您會在一段短暫的延遲之後看到365它，包括 Outlook、SharePoint [SharePoint 行動應用程式中 iOS 的](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)網頁，以及[適用于 Android 的行動應用程式 SharePoint](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)。 請參閱下圖，取得您從系統管理中心自訂主題變更的範例。
+您會立即在系統管理中心看到新的主題，您會在一段短暫的延遲之後看到365它，包括 Outlook、SharePoint [SharePoint 行動應用程式中 iOS 的](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)網頁，以及[適用于 Android 的行動應用程式 SharePoint](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)。 如需您可以從系統管理中心自訂主題變更的範例，請參閱下列圖像。
 
 ![m365-系統管理員-租使用者-主題-概念](../../media/m365-admin-tenant-theme-conceptual.png)
 
@@ -72,7 +72,7 @@ ms.locfileid: "43627603"
   
 ## <a name="best-practices"></a>最佳做法
 
-選擇**標誌影像**時，建議您盡可能使用 SVG 檔案類型，這樣，您的徽標在所有螢幕上和所有縮放比例都具有高解析度的外觀。
+選擇**徽標影像**時，建議使用 SVG 檔案類型，這樣您的徽標在所有螢幕上和所有縮放比例中的外觀都是高解析度。
 
 選擇自訂色彩時，請選擇具有您挑選之**徽標影像**的高對比的導覽列**背景色彩**。 此外，請選擇與導覽列**背景色彩**具有高對比比例的**文字和圖示**色彩，以確保所有文字和圖示均可輕鬆顯示。
 
@@ -99,4 +99,3 @@ ms.locfileid: "43627603"
 [在 [我的 App] 頁面和 App 啟動器上新增自訂磚](../manage/customize-the-app-launcher.md)
   
   
-

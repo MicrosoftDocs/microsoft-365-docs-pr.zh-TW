@@ -21,14 +21,21 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 系統管理中心-深入瞭解本月新增的功能。
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: a3c042413525ec591f74cd63685490f7de93775a
-ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
+ms.openlocfilehash: 0b6d0741b5c59b1d720ca1ef73c0d45a674569b1
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805181"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907234"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的新功能
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 本文中的部分資訊可能不適用於由世紀運作的 Office 365。
+
+::: moniker-end
 
 我們不斷將新功能新增至[Microsoft 365 系統管理中心](microsoft-365-admin-center-preview.md)，以修正我們所學的問題，並根據您的意見反應進行變更。 請參閱下列內容，以查看今天可提供的功能。 有些功能會以不同的速度向客戶推出。 如果您還沒有看到功能，[請嘗試將您新增至目標版本](manage/release-options-in-office-365.md)。
 
@@ -277,7 +284,7 @@ Howdy，合作夥伴！ （無法幫您自己。）我們也為您提供這一�
 
 ## <a name="august-2019"></a>2019 年 8 月
 
-### <a name="billing"></a>帳單
+### <a name="billing"></a>計費
 
 在本月，我們已取得帳單和訂閱的一些更新：
 
@@ -386,7 +393,7 @@ Howdy，合作夥伴！ （無法幫您自己。）我們也為您提供這一�
 - **Intune 裝置保護**-若您的授權包含 intune，而且我們發現您未完成設定 intune 或註冊的裝置，我們建議您建立 Intune 原則，以在使用者從行動裝置存取時保護組織的檔案。
 - **取得每月 office 功能更新**-我們從非常小型客戶取得的回饋是，當他們取得每月 office 功能更新時，他們的使用者就會感到高興。 因此，如果您是一部非常小的企業，而且您目前每六個月都會更新一次 Office 功能，您就會看到此建議。
 
-**設定** <br>
+**Settings** <br>
 如設定所述，有很多變更。 大部分情況下，只需將現有的設定更新為新的系統管理中心樣式即可。 當我們向前推進並新增您以前從未見過的新設定時，我們會在這裡開始提及。 而且我們有一個整體設定可宣告：**新式驗證**。 是的，有新的設定可開啟**新式驗證**！ 若要將其取出，請移至 [**設定** > **服務 & 增益集** > **新式驗證**]。
 
 ## <a name="april-2019"></a>2019 年 4 月

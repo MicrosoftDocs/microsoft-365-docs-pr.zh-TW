@@ -17,16 +17,18 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 904c1a019c55cabce6856a7caaca73d08d6db3f7
-ms.sourcegitcommit: 841c06a5d566d404c35d5e9c0c7de5088daab976
+ms.openlocfilehash: eb6af6b11d2d932f3bd2165aa3f597c14feb5ae8
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42836877"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901019"
 ---
 # <a name="manage-tickets-through-servicenow"></a>透過 ServiceNow 管理票證
 
-Microsoft 365 security center 已增強，可在 ServiceNow 中以本機方式建立及追蹤票證。 安全性管理員可以直接傳送[Microsoft Secure 得分](microsoft-secure-score.md)改進動作來 ServiceNow 和建立票證。 您可以建立事件管理和變更管理票證。
+ServiceNow 是一個流行的雲端計算平臺，可協助公司管理企業作業的數位工作流程。 其 Now 平臺具有 IT 工作流程、員工工作流程和客戶工作流程。 Microsoft 已與 ServiceNow 合作，讓 IT 系統管理員可輕鬆管理這兩個平臺的票證和工作。 [深入瞭解 ServiceNow](https://www.servicenow.com/)
+
+Microsoft 365 的安全性中心現在已增強，可在 ServiceNow 中以本機方式建立及追蹤票證。 安全性管理員可以直接傳送[Microsoft Secure 得分](microsoft-secure-score.md)改進動作來 ServiceNow 和建立票證。 您可以建立事件管理和變更管理票證。 然後，您可以在 Microsoft 的「安全性中心」首頁中追蹤它們，然後 ServiceNow。
 
 ## <a name="prerequisites"></a>必要條件
 
