@@ -21,18 +21,18 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: 深入瞭解您可以使用 Microsoft 365 系統管理中心取得協助的所有方式。
-ms.openlocfilehash: f9d42057e1ad16108237b9f53eedf60736cd6bd5
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 847281acc368f45ffaf466cc3877c042507a7f79
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894742"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930192"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
 # <a name="how-to-get-help-in-the-microsoft-365-admin-center"></a>如何在 Microsoft 365 系統管理中心取得協助
 
-如果您是系統管理員， [admin.microsoft.com](https://admin.microsoft.com)是您開始進行管理，並充分利用您的 microsoft 365 訂閱。 有時候，您可能不會發現正確的工作、在工作流程上 embarking 之前需要更多內容，或者根本不會確定動作的範圍和影響為系統管理員。為了涵蓋這些情形，我們會以下列方式在整個 Microsoft 365 系統管理中心中提供新式協助和智慧協助：
+如果您是系統管理員， [admin.microsoft.com](https://admin.microsoft.com)是您開始進行管理，並充分利用您的 microsoft 365 訂閱。 在某些情況下，您可能不會發現正確的工作、在工作流程上 embarking 之前需要更多內容，或者根本不會確定動作的範圍和影響為系統管理員。為了涵蓋這些情形，我們會以下列方式在整個 Microsoft 365 系統管理中心中提供新式協助和智慧協助：
 
 <ul class="panelContent cardsW">
     <li>
@@ -94,6 +94,7 @@ ms.locfileid: "42894742"
     </li>
 </ul>
  
+
 ## <a name="integrated-help"></a>整合說明
 
 協助已整合到整個系統管理中心，所以當您需要時，也是如此。 在許多頁面的頂端，您會看到內嵌解說文字，可提供手頭工作的資訊一覽，以及可讓您快速尋找官方檔以取得更深入瞭解的文章連結。
@@ -102,9 +103,9 @@ ms.locfileid: "42894742"
 
 ## <a name="modern-self-help-powered-by-ai"></a>由 AI 進行的新式自助支援
 
-在 Microsoft 365 系統管理中心中選取「需要協助」按鈕，開啟由人工智慧所供電的現代自助體驗。 例如，如果您要搜尋「*驗證我的網域*」，您將會收到步驟，再加上我們認為會協助您的幾篇文章。 我們使用 machine learning，呈現已找到的最接近解決方案，以協助其他已輸入類似查詢的系統管理員。
+若要以人工智慧的方式開啟新式自助體驗，請選取 [Microsoft 365 系統管理中心] 中的 [**需要協助**] 按鈕。 例如，如果您搜尋「驗證我的網域」，您將會收到步驟，再加上我們認為會協助您的一些文章。 我們使用電腦學習來呈現最接近的解決方案，以協助其他系統管理員輸入類似的查詢。
 
-或者，如果您不太瞭解如何在特定情況下進行某項操作，請使用支援助理。 此體驗目前僅適用于英文。 只需使用 [需要協助] 窗格上方的 [切換]，即可將其開啟。 支援助理提供一個會話介面，以取得協助。 輸入您的查詢，chatbot 將會詢問明確的問題，讓您瞭解特定狀況的正確答案。 請將它想像為您的虛擬協助者，以探索解決方案及完成工作。
+或者，如果您不太瞭解如何在特定情況下進行某項操作，請使用支援助理。 目前，此體驗只適用于英文。 若要開啟支援助理，只需使用 [**需要協助**] 窗格上方的 [切換]。 支援助理提供會話式介面來協助您。 在您輸入查詢後，chatbot 會詢問您明確的問題，讓您瞭解特定狀況的正確答案。 請將它想像為您的虛擬協助者，以探索解決方案及完成工作。
 
 ![新式自助](../../media/help-options.png)
 
