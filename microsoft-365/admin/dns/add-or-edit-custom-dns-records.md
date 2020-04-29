@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: af00a516-dd39-4eda-af3e-1eaf686c8dc9
 description: '瞭解如何在 Microsoft 中編輯或新增自訂的 DNS 記錄。 '
-ms.openlocfilehash: 05b1024be658d26a758711177c4a89629e875445
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: b8f0cd859b73641a4f6e4c21c9e74fe0a25e2daa
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43800032"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919454"
 ---
 # <a name="add-or-edit-custom-dns-records-in-microsoft"></a>在 Microsoft 中新增或編輯自訂 DNS 記錄
 
@@ -35,7 +35,7 @@ ms.locfileid: "43800032"
 
 1. 登入 Microsoft 系統管理中心，網址<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>為。   
 
-2. 移至 [**設定**  > **網域**] 頁面。
+2. 移至 [**安裝** \> **網域**] 頁面。
 
 3. 在 [**網域**] 頁面上，選取網域。 
     

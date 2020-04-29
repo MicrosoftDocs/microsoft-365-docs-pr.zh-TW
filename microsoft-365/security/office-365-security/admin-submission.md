@@ -15,65 +15,226 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs，以及您公司中的檔案提交至 Microsoft 進行掃描。
-ms.openlocfilehash: 2d86555854f9babd202764f1bad8b548daf52c70
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 73c33ba1218a710c33f8b2675bc65c0a7486efda
+ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631378"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43921494"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 
-如果您是 Microsoft 365 組織中的系統管理員，且其信箱在 Exchange Online 中，您可以使用安全性 & 合規性中心內的提交入口網站，將電子郵件訊息、URLs 和附件提交給 Microsoft 以供掃描。
+如果您是 Microsoft 365 組織中與 Exchange Online 中信箱的系統管理員，您可以使用安全性 & 合規性中心內的提交入口網站，將電子郵件訊息、URLs 和附件提交給 Microsoft 以進行掃描。
 
 當您提交電子郵件時，您會收到任何可能允許內送電子郵件進入租使用者的原則，以及對郵件中的任何 URLs 和附件進行檢查的相關資訊。 可能允許郵件的原則包括個別使用者的安全寄件者清單，以及租使用者層級原則，例如 Exchange 郵件流程規則（也稱為傳輸規則）。
 
-如需其他方式，將電子郵件訊息、URLs 和附件提交給 Microsoft，請參閱 
+如需其他方式將電子郵件訊息、URLs 和附件提交給 Microsoft，請參閱[向 Microsoft 報告訊息和](report-junk-email-messages-to-microsoft.md)檔案。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至**提交**頁面，請<https://protection.office.com/reportsubmission>使用。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連接至獨立版 Exchange Online Protection PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 您必須已獲指派權限，才能執行這些程序。 若要新增、修改和刪除反垃圾郵件原則，您必須是「**組織管理**」、「**安全性管理員**」或「**安全性讀者**」角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
-- 您必須已獲指派權限，才能執行這些程序。 若要新增、修改和刪除反垃圾郵件原則，您必須是「**組織管理**」、「**安全性管理員**」或「**安全性讀者**」角色群組的成員。 如需安全性 & 規範中心中角色群組的詳細資訊，請參閱[安全性 & 規範中心中的許可權](permissions-in-the-security-and-compliance-center.md)。
+- 如需使用者如何提交郵件和檔案給 Microsoft 的詳細資訊，請參閱[向 Microsoft 報告訊息和](report-junk-email-messages-to-microsoft.md)檔案。
 
-- 如需使用者如何將郵件和檔案提交給 Microsoft 的詳細資訊，請參閱[將報告訊息和檔案傳送給 microsoft](report-junk-email-messages-to-microsoft.md)。
+## <a name="report-suspicious-content-to-microsoft"></a>向 Microsoft 報告可疑內容
 
-## <a name="how-to-direct-suspicious-content-to-microsoft-scanning"></a>如何將可疑內容引導至 Microsoft 掃描
+1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理** \> ] 以**查看** \>系統**管理員提交訊息**。
 
-若要將內容提交至 Microsoft，請按一下 [提交] 頁面左上方的 [**新增提交**] 按鈕。 頁面右邊的浮出控制項顯示可供您提交電子郵件、URL 或檔案的選項。
+2. 在出現的 [**提交**] 頁面上，按一下 [**新增提交**] 按鈕。
+
+3. 使用看似送出的**新**送出控制項，如下列各節所述提交郵件、URL 或附件。
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>將可疑的電子郵件提交給 Microsoft
 
-![電子郵件提交範例](../../media/submission-flyout-email.PNG)
+1. 在 [**物件類型**] 區段中，選取 [**電子郵件**]。 在 [**提交格式**] 區段中，使用下列其中一個選項：
 
-1. 若要提交電子郵件，請選取 [**電子郵件**] 並指定電子郵件**網路訊息識別碼**或上傳電子郵件檔案。
+   - **網路消息識別碼**：這是在郵件中**X-MS-Exchange-Organization-網路 Message-Id**標頭中可用的 GUID 值。
 
-2. 指定您想要執行原則檢查的收件者。 原則檢查會決定是否因使用者或租使用者層級原則而略過掃描的電子郵件。
+   - **File**檔案：按一下 **[選擇**檔案]。 在開啟的對話方塊中，尋找並選取 .eml 或 .msg 檔案，然後按一下 [**開啟**]。
 
-3. 指定是否應該封鎖電子郵件。 如果電子郵件應該已封鎖，請指定是否應該封鎖為垃圾郵件、網路釣魚或惡意程式碼。 如果您不確定可能是哪種類型，請使用您的最佳判斷。
+2. **在 [收**件者] 區段中，指定您想要執行原則檢查的一或多個收件者。 原則檢查會決定是否因使用者或組織原則而略過掃描的電子郵件。
 
-   - 如果篩選因提交原則而略過，您將會看到該原則的相關資訊。
+3. 在 [**提交原因**] 區段中，選取下列其中一個選項：
 
-   - 如果篩選器因一或多個原則而略過，掃描將會在數分鐘內完成。 您可以按一下 [狀態] 連結，以查看有關提交的其他資訊。 這包括原則檢查的結果和重新掃描判定。 請注意，這不會再透過 Office 365 ATP 完整篩選棧執行電子郵件，但會根據郵件、URL 或檔案的某些屬性執行部分重新掃描。
+   - **不應該封鎖**
 
-4. 按一下 [**提交**] 按鈕。
+   - **應該已封鎖**：請選取 **[垃圾郵件**]、[**網路釣魚**] 或 [**惡意**代碼]。 如果您不確定，請使用您的最佳判斷。
+
+4. 如果篩選因提交原則而略過，您將會看到該原則的相關資訊。
+
+   如果篩選器因一或多個原則而略過，掃描將會在數分鐘內完成。 您可以按一下 [狀態] 連結，以查看有關提交的其他資訊。 這包括原則檢查的結果和重新掃描判定。 請注意，這不會再透過 Office 365 ATP 完整篩選棧執行電子郵件，但會根據郵件、URL 或檔案的某些屬性執行部分重新掃描。
+
+5. 完成作業後，請按一下 [**提交**] 按鈕。
+
+![URL 提交範例](../../media/submission-flyout-email.PNG)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>將可疑 URL 傳送給 Microsoft
 
+1. 在 [**物件類型**] 區段中，選取 [ **URL**]。 在出現的方塊中，輸入完整的 URL （例如<https://www.fabrikam.com/marketing.html>）。
+
+2. 在 [**提交原因**] 區段中，選取下列其中一個選項：
+
+   - **不應該封鎖**
+
+   - **應該已封鎖**：請選取 [**網路釣魚**或**惡意**代碼]。
+
+3. 完成作業後，請按一下 [**提交**] 按鈕。
+
 ![電子郵件提交範例](../../media/submission-url-flyout.png)
-
-1. 若要提交 URL，請選取浮出控制項的**url** 。 輸入完整 URL，包含通訊協定（**HTTPs://**）。
-
-   如果您選取 [**應該已經過篩選**]，請指定 URL 是否為網路釣魚或惡意程式碼。
-
-2. 按一下 [**提交**] 按鈕。
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>將可疑檔提交至 Microsoft
 
-![電子郵件提交範例](../../media/submission-file-flyout.PNG)
+1. 在 [**物件類型**] 區段中，選取 [**附件**]。
 
-1. 若**要從飛出檔中**提交檔案選取檔案，並上傳想要掃描的檔。
+2. 按一下 **[選擇**檔案]。 在開啟的對話方塊中，尋找並選取檔，然後按一下 [**開啟**]。
 
-2. 按一下 [**提交**] 按鈕。
+3. 在 [**提交原因**] 區段中，選取下列其中一個選項：
+
+   - **不應該封鎖**
+
+   - **應該已封鎖**：**惡意**代碼是唯一的選擇，而且會自動加以選取。
+
+4. 完成作業後，請按一下 [**提交**] 按鈕。
+
+![附件提交範例](../../media/submission-file-flyout.PNG)
+
+## <a name="view-admin-submissions"></a>查看系統管理員報送
+
+1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理** \> ] 以**查看** \>系統**管理員提交訊息**。
+
+2. 在出現的 [**提交**] 頁面上，確認已選取 [系統**管理提交**] 索引標籤。
+
+在頁面頂端附近，您可以輸入開始日期、結束日期及（預設值）您可以在此方塊中輸入值，然後按一下![[重新整理] 按鈕](../../media/scc-quarantine-refresh.png)，依**提交識別碼**篩選。 Update
+
+若要變更篩選準則，請按一下 [**提交識別碼**] 按鈕，然後選擇下列其中一個值：
+
+- **Sender**
+- **Subject/URL/檔案名**
+- **提交者**
+- **提交類型**
+- **狀態**
+
+![管理員報送的篩選選項](../../media/admin-submission-email-filter-options.png)
+
+若要匯出結果，請按一下頁面頂端附近的 [**匯出**]，然後選取 [**圖表資料**或**表格**]。 在出現的對話方塊中，儲存 .csv 檔案。
+
+在圖形下方有三個索引標籤：**電子郵件**（預設值）、 **URL**及**附件**。
+
+### <a name="view-admin-email-submissions"></a>查看系統管理電子郵件報送
+
+按一下 [**電子郵件**] 索引標籤。
+
+您可以按一下頁面底部附近的 [**欄選項**] 按鈕，從該視圖新增或移除欄：
+
+- **Date**
+- **提交識別碼**
+- **提交者**<sup>\*</sup>
+- **主旨**<sup>\*</sup>
+- **Sender**
+- **寄件者 IP**<sup>\*</sup>
+- **提交類型**
+- **傳遞原因**
+- **地位**<sup>\*</sup>
+- **控制項類型**
+- **控制項來源**
+
+  <sup>\*</sup>如果您按一下此值，詳細資訊就會顯示在浮出控制項中。
+
+### <a name="view-admin-url-submissions"></a>查看管理 URL 提交
+
+按一下 [ **URL** ] 索引標籤。
+
+您可以按一下頁面底部附近的 [**欄選項**] 按鈕，從該視圖新增或移除欄：
+
+- **Date**
+- **提交識別碼**
+- **提交者**<sup>\*</sup>
+- **URL**<sup>\*</sup>
+- **提交類型**
+- **地位**<sup>\*</sup>
+
+  <sup>\*</sup>如果您按一下此值，詳細資訊就會顯示在浮出控制項中。
+
+### <a name="view-admin-attachment-submissions"></a>View admin 附件提交
+
+按一下 [**附件**] 索引標籤。
+
+您可以按一下頁面底部附近的 [**欄選項**] 按鈕，從該視圖新增或移除欄：
+
+- **Date**
+- **提交識別碼**
+- **提交者**<sup>\*</sup>
+- **檔案名**<sup>\*</sup>
+- **提交類型**
+- **地位**<sup>\*</sup>
+
+  <sup>\*</sup>如果您按一下此值，詳細資訊就會顯示在浮出控制項中。
+
+## <a name="view-user-submissions-to-microsoft"></a>查看 Microsoft 的使用者報送
+
+如果您已部署[報表訊息增益集](enable-the-report-message-add-in.md)，或人員使用[網頁型 Outlook 中內建的報表](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)，您可以在 [**使用者報送**] 索引標籤上看到使用者的報告。
+
+1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理** \> ] 以**查看** \>系統**管理員提交訊息**。
+
+2. 在出現的 [**提交**] 頁面上，按一下 [**使用者報送**] 索引標籤。
+
+您可以按一下頁面底部附近的 [**欄選項**] 按鈕，從該視圖新增或移除欄：
+
+- **提交于**
+- **提交者**<sup>\*</sup>
+- **主旨**<sup>\*</sup>
+- **Sender**
+- **寄件者 IP**<sup>\*</sup>
+- **提交類型**
+
+<sup>\*</sup>如果您按一下此值，詳細資訊就會顯示在浮出控制項中。
+
+在頁面頂端附近，您可以輸入開始日期、結束日期及（預設值）您可以在此方塊中輸入值，然後按一下![[重新整理] 按鈕](../../media/scc-quarantine-refresh.png)，以篩選**寄件者**。 Update
+
+若要變更篩選準則，請按一下 [**寄件者**] 按鈕，然後選擇下列其中一個值：
+
+- **寄件者網域**
+- **主旨**
+- **提交者**
+- **提交類型**
+- **寄件者 IP**
+
+![使用者提交的篩選選項](../../media/user-submissions-filter-options.png)
+
+若要匯出結果，請按一下頁面頂端附近的 [**匯出**]，然後選取 [**圖表資料**或**表格**]。 在出現的對話方塊中，儲存 .csv 檔案。
+
+## <a name="view-user-submissions-to-the-custom-mailbox"></a>查看自訂信箱的使用者報送
+
+如果您已[將自訂信箱設定](user-submission.md)為接收使用者報告的郵件，您可以查看並提交傳遞到報表信箱的郵件。
+
+1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理** \> ] 以**查看** \>系統**管理員提交訊息**。
+
+2. 在出現的 [**提交**] 頁面上，按一下 [**自訂信箱**] 索引標籤。
+
+您可以按一下頁面底部附近的 [**欄選項**] 按鈕，從該視圖新增或移除欄：
+
+- **提交于**
+- **提交者**<sup>\*</sup>
+- **主旨**<sup>\*</sup>
+- **Sender**
+- **寄件者 IP**<sup>\*</sup>
+- **提交類型**
+
+在頁面頂端附近，您可以輸入開始日期、結束日期，也可以透過在方塊中輸入值，然後按一下![[重新整理]](../../media/scc-quarantine-refresh.png)**按鈕來篩選**。 Update
+
+若要匯出結果，請按一下頁面頂端附近的 [**匯出**]，然後選取 [**圖表資料**或**表格**]。 在出現的對話方塊中，儲存 .csv 檔案。
+
+### <a name="submit-messages-to-microsoft-from-the-custom-mailbox"></a>從自訂信箱將郵件提交給 Microsoft
+
+如果您已將自訂信箱設定為在未傳送郵件給 Microsoft 的情況下截獲使用者報告的郵件，您可以尋找特定郵件並將其傳送給 Microsoft 進行分析。 這會有效地將使用者提交權移至系統管理員提交。
+
+在 [**自訂信箱**] 索引標籤上，選取清單中的訊息，按一下 [**動作**] 按鈕，然後進行下列其中一項選擇：
+
+- **報告清理**
+- **報告網路釣魚**
+- **報告惡意程式碼**
+- **報告垃圾郵件**
+
+![動作按鈕上的選項](../../media/user-submission-custom-mailbox-action-button.png)

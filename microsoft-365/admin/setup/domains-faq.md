@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 在 FAQ 中尋找問題的答案以深入瞭解網域。
 ms.custom: okr_smb
-ms.openlocfilehash: 4ece90306f37b6f07e34ce93423a76f084d50b6f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 81e67ee4b22ea0682d65ebc0e48a4b3564e79526
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627591"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919478"
 ---
 # <a name="domains-faq"></a>網域常見問題集
 
@@ -424,7 +424,7 @@ ms.locfileid: "43627591"
         
     4. 在開啟的視窗中，選取 [**內部轉送**]。 
         
-    5. 選取 **[儲存]**。 此設定可能需要幾分鐘才會生效。 
+    5. 選取 [儲存]****。 此設定可能需要幾分鐘才會生效。 
     
 4. （選用）解除封鎖現有的電子郵件伺服器
     
@@ -492,7 +492,7 @@ ms.locfileid: "43627591"
         
     4. 測試電子郵件給其他電子郵件系統上的某人。 例如，傳送電子郵件給使用者 C。這封電子郵件應該傳送至原始郵件伺服器上的使用者 C 信箱。
         
-    5. 從外部帳戶，或是從其他電子郵件系統上某員工的電子郵件帳戶，確認已在其他電子郵件系統上正確設定轉寄功能。 例如，從使用者 C 的 origninal server 帳戶或 Hotmail 帳戶傳送使用者 A 電子郵件，並確認其送達使用者 A 的 Office 365 信箱。
+    5. 從外部帳戶，或是從其他電子郵件系統上某員工的電子郵件帳戶，確認已在其他電子郵件系統上正確設定轉寄功能。 例如，從使用者 C 的原始伺服器帳戶或 Hotmail 帳戶傳送使用者 A 電子郵件，並確認其送達使用者 A 的 Office 365 信箱。
         
 9. 移動信箱內容
     

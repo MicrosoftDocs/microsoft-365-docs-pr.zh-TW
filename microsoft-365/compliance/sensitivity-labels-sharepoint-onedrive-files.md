@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: 3127b4ac7b661cd5143052d298424e24d26071a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 09b955a3cf5b987d2ca7dac37c4c604fb45a2e56
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635781"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930142"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤 (公開預覽)
 
@@ -104,7 +104,7 @@ ms.locfileid: "43635781"
 
 ## <a name="prepare-the-sharepoint-online-management-shell-for-the-preview"></a>為預覽準備 SharePoint Online 管理命令介面
 
-啟用預覽之前，請確定您正在執行 SharePoint 線上管理命令介面版本16.0.19418.12000 或更新版本。 如果您已有最新版本，則可以繼續進行並啟用預覽。
+若要使用 PowerShell 啟用預覽，請確定您正在執行 SharePoint 線上管理命令介面版本16.0.19418.12000 或更新版本。 如果您已有最新版本，則可以繼續進行並啟用預覽。
 
 1. 如果您已安裝來自 PowerShell 資源庫的舊版 SharePoint Online 管理命令介面，您可以執行下列 Cmdlet 來更新模組。
 
@@ -119,7 +119,6 @@ ms.locfileid: "43635781"
 4. 選取語言，然後按一下 [下載]****。
 
 5. 在 x64 和 x86 .msi 檔案之間選擇。 如果您執行的是64位版本的 Windows 或 x86 檔案（如果您執行32位版本），請下載 x64 檔案。 如果您不知道，請參閱[我要執行哪一個 Windows 作業系統版本？](https://support.microsoft.com/help/13443/windows-which-operating-system)
-
 
 6. 下載檔案之後，請執行檔，然後依照安裝精靈中的步驟進行。
 
@@ -137,6 +136,25 @@ ms.locfileid: "43635781"
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
 3. 針對 Office 365 多地理位置：對餘下的地理位置重複步驟1和2。
+
+## <a name="use-the-compliance-center-to-enable-support-for-sensitivity-labels"></a>使用規範中心來啟用敏感度標籤支援
+
+此選項目前正以其他方法來啟用預覽，以取代承租人。
+
+組織的全域系統管理員擁有建立及管理敏感度標籤所有層面的完整權限。 如果您未以全域系統管理員身分登入，請參閱[建立和管理敏感度標籤所需的權限](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels)。
+
+1. 登入[Microsoft 365 規範中心](https://compliance.microsoft.com/)，並流覽至**解決方案** > **資訊保護**
+    
+    如果您沒有立即看到這個選項，請先選取 [全部顯示]****。 
+
+2. 在 [**標籤] 索引標籤**上，如果您看到開啟在 Office online 檔案中處理內容之功能的訊息，請選取 [**立即開啟**]：
+    
+    ![開啟 [立即開啟] 按鈕，以啟用 Office Online 的敏感度標籤](../media/sensitivity-labels-turn-on-banner.png)
+    
+    命令會立即執行，並在下一次重新整理頁面時，您就不會再看到訊息或按鈕。 
+
+> [!NOTE]
+> 如果您有 Office 365 多地理位置，您必須使用 PowerShell 來啟用所有地理位置的功能。 如需相關指示，請參閱上一節。
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>在您建立或變更靈敏度標籤之後排程部署
 

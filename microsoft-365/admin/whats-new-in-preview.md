@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Microsoft 365 系統管理中心-深入瞭解本月新增的功能。
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 0b6d0741b5c59b1d720ca1ef73c0d45a674569b1
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+ms.openlocfilehash: e0f7242ff144b5e4b42a6cb1713b2ad5df41f2f3
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907234"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919757"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的新功能
 
@@ -49,6 +49,7 @@ ms.locfileid: "43907234"
 - [Microsoft Intune 的新功能](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Microsoft 365 規範中心的新功能](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Exchange 系統管理中心的新功能](https://docs.microsoft.com/Exchange/whats-new)
 - [Office 更新](https://docs.microsoft.com/OfficeUpdates/)
 
 ## <a name="march-2020"></a>2020 年 3 月
@@ -96,6 +97,7 @@ ms.locfileid: "43907234"
 ### <a name="videos-training-and-docs"></a>影片、訓練及檔
 
 [Microsoft 365 web 系列的新](https://go.microsoft.com/fwlink/p/?linkid=2118096)功能：在這個月的劇集中，我們會強調 microsoft 小組的3年周年紀念，並涵蓋新功能，包括線上會議中增強的音訊品質、firstline 管理員的目標通訊，以及倒班應用程式、小組和 Skype 使用者互通性等等。
+
 
 ## <a name="february-2020"></a>2020 年 2 月
 
@@ -259,7 +261,7 @@ Howdy，合作夥伴！ （無法幫您自己。）我們也為您提供這一�
 > [!IMPORTANT]
 > 您現在可以使用常規 URL: 進入 SharePoint 系統管理中心[https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
 
-如需詳細資訊，請參閱[SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+如需詳細資訊，請參閱[SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)。
 
 ## <a name="september-2019"></a>2019 年 9 月
 

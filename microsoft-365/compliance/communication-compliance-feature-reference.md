@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 25f69491156d7862d9dc145123ec158a3ff40556
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1a63e71df0d9ac6d43fce31ad2e974b787697a9a
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634185"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919670"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -43,13 +43,13 @@ ms.locfileid: "43634185"
 
 |**適用範圍**|**原則範本**|**詳細資料**|
 |:-----|:-----|:-----|
-| **冒犯性語言和反騷擾** | 監視冒犯性語言的通訊 | -位置： Exchange、小組、商務用 Skype <br> -Direction:Inbound、輸出、內部 <br> -審閱百分比：100% <br> -條件：冒犯性語言分類程式 |
-| **敏感性資訊** | 監視敏感資訊的通訊 | -位置： Exchange、小組、商務用 Skype <br> -Direction:Inbound、輸出、內部 <br> -審閱百分比：10% <br> -條件：機密資訊、現成的內容模式和類型、自訂字典選項、大於 1 MB 的附件 |
-| **法規遵從性** | 監視與金融法規合規性相關的資訊的通訊 | -位置： Exchange、小組、商務用 Skype <br> -Direction:Inbound、輸出 <br> -審閱百分比：10% <br> -條件：自訂字典選項，大於 1 MB 的附件 |
+| **冒犯性語言和反騷擾** | 監視冒犯性語言的通訊 | -位置： Exchange Online、Microsoft 團隊、Yammer、商務用 Skype <br> -Direction:Inbound、輸出、內部 <br> -審閱百分比：100% <br> -條件：冒犯性語言分類程式 |
+| **敏感性資訊** | 監視敏感資訊的通訊 | -位置： Exchange Online、Microsoft 團隊、Yammer、商務用 Skype <br> -Direction:Inbound、輸出、內部 <br> -審閱百分比：10% <br> -條件：機密資訊、現成的內容模式和類型、自訂字典選項、大於 1 MB 的附件 |
+| **法規遵從性** | 監視與金融法規合規性相關的資訊的通訊 | -位置： Exchange Online、Microsoft 團隊、Yammer、商務用 Skype <br> -Direction:Inbound、輸出 <br> -審閱百分比：10% <br> -條件：自訂字典選項，大於 1 MB 的附件 |
 
 ## <a name="supervised-users"></a>監督的使用者
 
-開始使用通訊相容性之前，必須先判斷誰需要查看其通訊。 在原則中，使用者電子郵件地址可識別要監督的個人或人員群組。 這些群組的一些範例是 Microsoft 365 群組、Exchange 型通訊群組清單和 Microsoft 小組頻道。 您也可以從特定的排除群組或群組清單之外的掃描中排除特定的使用者或群組。
+開始使用通訊相容性之前，必須先判斷誰需要查看其通訊。 在原則中，使用者電子郵件地址可識別要監督的個人或人員群組。 這些群組的一些範例是 Microsoft 365 群組、Exchange 型通訊清單、Yammer 社區和 Microsoft 小組頻道。 您也可以從特定的排除群組或群組清單之外的掃描中排除特定的使用者或群組。
 
 >[!IMPORTANT]
 >通訊相容性原則所涵蓋的使用者，必須具備 Microsoft 365 E5 相容性授權、具有高級合規性附加元件的 Office 365 企業版 E3 授權，或是包含在 Office 365 企業版 E5 訂閱中。如果您沒有現有的企業版 E5 計畫，而且想要嘗試通訊相容性，您可以[註冊 Office 365 企業版 e5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
@@ -75,6 +75,8 @@ ms.locfileid: "43634185"
 
 - **Exchange 電子郵件**：在 exchange Online 中主控的信箱，作為 Microsoft 365 或 Office 365 訂閱的一部分，都符合郵件掃描的條件。 Exchange 電子郵件訊息和附件符合通訊合規性原則的情況可能需要長達24小時才能處理。 支援的通訊遵循類型與[Exchange 郵件流程規則內容檢查所支援的檔案類型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
 
+- **Yammer**：您可以掃描 yammer 社區中的私人郵件和公用交談和相關聯的附件。 當使用者新增至包含 Yammer 做為已定義通道的通訊一致性原則時，使用者所屬的所有 Yammer 社區間的通訊都會包含在掃描程式中。 Yammer 研討和附件符合通訊合規性原則的情況可能需要長達24小時才能處理。 Yammer 必須以[原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)，以進行通訊相容性原則，以監控 Yammer 通訊和附件。 在原生模式中，所有的 Yammer 使用者都在 Azure Active Directory （AAD）中，所有群組都是 Office 365 群組，且所有檔案都儲存在 SharePoint 線上中。
+
 - **商務用 Skype online**：可監督商務用 skype online 中的聊天通訊和相關聯的附件。 商務用 Skype Online 聊天符合通訊相容性原則的情況可能需要長達24小時才能處理。 受監視的聊天對話是源自[先前在商務用 Skype Online 中所儲存的交談](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)。  在商務用 Skype Online 中使用下列群組管理設定來監督使用者聊天通訊：
 
     - 若**為商務用 Skype Online 聊天通訊**：指派個別使用者或指派[通訊群組](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)至通訊相容性原則。 此設定適用于一對一或一對多的使用者/聊天關聯。
@@ -84,7 +86,6 @@ ms.locfileid: "43634185"
     - [立即 Bloomberg](archive-instant-bloomberg-data.md)
     - [Facebook](archive-facebook-data-with-sample-connector.md)
     - [LinkedIn](archive-linkedin-data.md)
-    - SAP SuccessFactors
     - [Twitter](archive-twitter-data-with-sample-connector.md)
     - [自訂資料連線器](archiving-third-party-data.md)
 

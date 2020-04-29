@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 24d11f94d2b9139a6e54f29cff39f05076676f78
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b8e25b55ea20514e452b2c26ee0ad1569dbc3c85
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634175"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919690"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通訊法規遵從性
 
-通訊相容性是 Microsoft 365 中新的有問必答風險方案方案的一部分，可協助您偵測、捕獲和採取補救措施，對組織中不適當的郵件進行偵測，以協助降低通訊風險。 預先定義和自訂原則可讓您掃描內部及外部通訊的原則符合，以供指定的檢閱者檢查。 檢閱者可以調查組織中已掃描的電子郵件、Microsoft 小組或協力廠商通訊，並採取適當的修正動作，以確保它們符合您組織的郵件標準。
+通訊相容性是 Microsoft 365 中新的有問必答風險方案方案的一部分，可協助您偵測、捕獲和採取補救措施，對組織中不適當的郵件進行偵測，以協助降低通訊風險。 預先定義和自訂原則可讓您掃描內部及外部通訊的原則符合，以供指定的檢閱者檢查。 檢閱者可以調查組織中已掃描的電子郵件、Microsoft 團隊、Yammer 或協力廠商通訊，並採取適當的修正動作，以確保它們符合您組織的郵件標準。
 
 Microsoft 365 中的通訊相容性原則可協助您克服與相容性和內部及外部通訊相關的眾多現代化挑戰，包括：
 
@@ -99,6 +99,7 @@ Microsoft 365 中的通訊法規遵從性建立于[Office 365 中的監察原則
 
 - **Microsoft 小組**：公用和私人[Microsoft 團隊](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)通道和個別聊天的聊天通訊支援為獨立通道來源或其他 Microsoft 365 服務。 原則現在會針對原則中定義的特定使用者自動掃描所有的 Microsoft 團隊通道和團隊，不需要為 Microsoft 小組的工作分派保留個別對應清單。
 - **Exchange online**：在您的 Microsoft 365 組織中的[exchange Online](https://docs.microsoft.com/Exchange/exchange-online)上主控的所有信箱都符合掃描資格。 電子郵件和附件比對相容性原則的情況立即可用於監視和監察報告。 Exchange Online 現在是一種選用的來源通道，而且通訊法規遵從性原則中已不再需要。
+- **Yammer**：通訊相容性原則支援[yammer](https://docs.microsoft.com/yammer/yammer-landing-page)中的私人郵件和公開社區交談。 Yammer 是選用的通道，必須是[原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)，以支援郵件和附件的掃描。
 - **商務用 Skype online**：通訊相容性原則支援在[商務用 skype Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)中的掃描聊天通訊和相關聯的附件。
 - **協力廠商來源**：您可以掃描來自[協力廠商來源](archiving-third-party-data.md)的郵件，以用於將資料匯入至 Microsoft 365 組織中的信箱。 通訊相容性支援多個流行平臺的連線，包括立即 Bloomberg、Facebook、Twitter 及其他。
 
@@ -155,4 +156,4 @@ Microsoft 365 中的通訊法規遵從性建立于[Office 365 中的監察原則
 
 ## <a name="ready-to-get-started"></a>準備好開始使用了嗎？
 
-若要設定 Microsoft 365 組織的通訊相容性，請參閱[設定 microsoft 365 的通訊相容性](communication-compliance-configure.md)，[以及如何](communication-compliance-case-study.md)快速設定通訊相容性原則，以監視 Microsoft 小組和 Exchange Online 通訊中的攻擊性語言。
+若要設定 Microsoft 365 組織的通訊相容性，請參閱[設定 microsoft 365 的通訊相容](communication-compliance-configure.md)性，[以及如何](communication-compliance-case-study.md)快速設定通訊相容性原則，以監視 Microsoft 小組、Exchange Online 和 Yammer 通訊中的冒犯性語言。

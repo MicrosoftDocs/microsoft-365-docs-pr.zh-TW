@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Cloudflare。
-ms.openlocfilehash: f04e4b4a29085a3ddd9b388c7178c1cd638445ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ccd629dfdec24e509144c205b748a883cb65d554
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629704"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919624"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>在 Cloudflare 建立 Microsoft 的 DNS 記錄
 
@@ -35,7 +35,7 @@ ms.locfileid: "43629704"
   
 在 Cloudflare 新增這些記錄之後，您的網域就會設定為與 Microsoft 365 服務搭配使用。
   
-若要深入瞭解 Microsoft 的網站的主控和 DNS，請參閱搭配[Microsoft 使用公用網站](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx)。
+若要了解使用 Microsoft 網站的虛擬主機和 DNS，請參閱[搭配 Microsoft 使用公用網站](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx)。
   
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
@@ -48,7 +48,7 @@ ms.locfileid: "43629704"
   
 當您註冊 Cloudflare 時，您會使用 Cloudflare**安裝程式**來新增網域。 
   
-您新增的網域是從個別的網域註冊機構購買;Cloudflare 不提供網域註冊服務。 若要在 Microsoft 365 中驗證及建立網域的 DNS 記錄，您必須先在網域註冊機構變更名稱伺服器，以便使用 Cloudflare 的名稱伺服器。
+您所新增的網域是從 Cloudflare 或個別網域註冊機構購買。 若要在 Microsoft 365 中驗證及建立網域的 DNS 記錄，您必須先在網域註冊機構變更名稱伺服器，以便使用 Cloudflare 的名稱伺服器。
   
 若要自行在網域註冊機構網站變更自家網域的名稱伺服器，請遵循下列步驟進行：
   
@@ -72,7 +72,7 @@ ms.locfileid: "43629704"
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 <a name="BKMK_verify"> </a>
 
-在將您的網域與 Microsoft 搭配使用之前，我們必須先確認您擁有該網域。 您能夠在您的網域註冊機構登入您的帳戶，並為您擁有網域的 Microsoft 建立 DNS 記錄證明。
+在您將自己的網域用於 Microsoft 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Microsoft 就能確信您擁有該網域。
   
 > [!NOTE]
 > 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
@@ -88,19 +88,19 @@ ms.locfileid: "43629704"
     
     |**類型**|**名稱**|**自動 TTL**|**內容**|
     |:-----|:-----|:-----|:----|
-    |TXT  <br/> |@  <br/> |30 分鐘  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 從表格中，使用您的特定**目的地或指向位址**值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)    |
+    |TXT  <br/> |@  <br/> |30 分鐘  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)    |
   
     
-5. 選取 **[儲存]**。
+5. 選取 [儲存]****。
   
   
 9. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
 現在，您已在網域註冊機構的網站上新增記錄，您會回到 Microsoft 並搜尋該記錄。
   
-當 Microsoft 找到正確的 TXT 記錄後，您的網域就會經過驗證。
+在 Microsoft 找到正確的 TXT 記錄後，您的網域就完成驗證了。
   
-1. 在 Microsoft 系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+1. 在 Microsoft 系統管理中心中，移至 [設定]**** \> [網域]<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> 頁面。
 
     
 2. 在 **[網域]** 頁面上，選取您要驗證的網域。 
@@ -118,7 +118,7 @@ ms.locfileid: "43629704"
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，使您網域的電子郵件將會傳送給 Microsoft
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，以將寄往您網域的電子郵件轉至 Microsoft
 <a name="BKMK_add_MX"> </a>
 
 1. 若要開始使用，請移至您的網域頁面 Cloudflare，方法是使用[此連結](https://www.cloudflare.com/a/login)。 系統會提示您先登入。
@@ -136,7 +136,7 @@ ms.locfileid: "43629704"
    
 
   
-5. 選取 **[儲存]**。
+5. 選取 [儲存]****。
   
 9. 如果 [ **Mx 記錄**] 區段中列出任何其他 MX 記錄，請選取**刪除（X）** 圖示加以刪除。 
   
@@ -171,7 +171,7 @@ ms.locfileid: "43629704"
   
 5. 選取 [ **DNS 流量**] 圖示（橙色雲端）以略過 Cloudflare 伺服器。
   
-6. 選取 **[儲存]**。
+6. 選取 [儲存]****。
   
 7. 逐一新增其餘五筆 CNAME 記錄。
 
@@ -180,7 +180,7 @@ ms.locfileid: "43629704"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果您已有網域的 SPF 記錄，請勿為 Microsoft 365 建立新的記錄。 請改為將必要的 Microsoft 365 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 365 建立一個新的記錄。 而是，請將必要的 Microsoft 365 值新增到目前的記錄，以便擁有包含這兩組值的*單一* SPF 記錄。 
   
 1. 若要開始使用，請移至您的網域頁面 Cloudflare，方法是使用[此連結](https://www.cloudflare.com/a/login)。 系統會提示您先登入。
     
@@ -197,11 +197,11 @@ ms.locfileid: "43629704"
     |TXT  <br/> |@  <br/> |30 分鐘  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。   |
 
  
-5. 選取 **[儲存]**。
+5. 選取 [儲存]****。
     
 
   
-## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的兩筆 SRV 記錄
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增兩筆 Microsoft 所需的 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
@@ -217,13 +217,13 @@ ms.locfileid: "43629704"
 
     在 [ **DNS 管理**] 頁面上，按一下 [**新增記錄**]，然後選取下表中第一列的值。
         
-    |**類型**|**Service** (服務)|**Protocol** (通訊協定)|**Name** (名稱)|**TTL**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|
+    |**類型**|**Service** (服務)|**Protocol** (通訊協定)|**Name**|**TTL**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV|_sip |TLS |使用您的*domain_name*;例如，contoso.com  |30 分鐘 | 100|1  |443 |sipfed.online.lync.com  |
     |SRV|_sipfederationtls | TCP|使用您的*domain_name*;例如，contoso.com   |30 分鐘 |100 |1  |5061 | sipfed.online.lync.com |
 
   
-5. 選取 **[儲存]**。
+5. 選取 [儲存]****。
 
   
 6. 從資料表的第二列中選擇值，以新增其他 SRV 記錄。 

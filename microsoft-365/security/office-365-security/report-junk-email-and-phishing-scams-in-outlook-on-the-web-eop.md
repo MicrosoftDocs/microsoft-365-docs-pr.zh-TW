@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 具有 Exchange Online 信箱的使用者可以使用網頁型 Outlook （Outlook Web App），將垃圾郵件、非垃圾郵件和網路釣魚郵件提交給 Microsoft 進行分析。
-ms.openlocfilehash: 858224074ef7258d59318eef0c685a4ea4f9130f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9fc17abafe219a450e0fb6e45438211ea03fb337
+ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632616"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43921477"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-office-365"></a>在 Office 365 的 Outlook 網頁版中報告垃圾郵件和網路釣魚電子郵件
 
@@ -32,6 +32,8 @@ ms.locfileid: "43632616"
 - 如果您是 Exchange Online 信箱組織中的系統管理員，建議您在安全性 & 規範中心內使用提交入口網站。 如需詳細資訊，請參閱[使用系統管理員提交將可疑的垃圾郵件、網路釣魚、URLs 和檔案提交給 Microsoft](admin-submission.md)。
 
 - 系統管理員可以停用或啟用使用者在 Outlook 網頁版中將郵件報告給 Microsoft 的功能。 如需詳細資訊，請參閱本主題稍後的在[Outlook 網頁版中停用或啟用垃圾郵件報告](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)一節。
+
+- 您可以設定報告的郵件以複製或重新導向至您指定的信箱。 如需詳細資訊，請參閱[在 Office 365 中指定使用者送出垃圾郵件和網路釣魚郵件的信箱](user-submission.md)。
 
 - 如需向 Microsoft 報告訊息的詳細資訊，請參閱[在 Office 365 中報告訊息和檔案至 microsoft](report-junk-email-messages-to-microsoft.md)。
 

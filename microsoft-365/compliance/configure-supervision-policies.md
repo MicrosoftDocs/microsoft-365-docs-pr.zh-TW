@@ -19,17 +19,25 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 2935f6d163a954cf17e4e4ce3c357028c9763b3b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c13e481cfc55e56d8cc1c0a772f2f661992f5353
+ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632368"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43921455"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>在 Office 365 中設定監督原則
 
 >[!IMPORTANT]
->本主題適用于設定 Microsoft 365 訂閱中的監察原則。 如果您想要為 Microsoft 365 訂閱設定通訊相容性，請參閱[設定 microsoft 365 中的通訊法規遵從性](communication-compliance-configure.md)。
+>在2月2020中，遵循 Microsoft 365 合規性中的通訊相容性，便會停用 Office 365 中的監督。 監管原則將不再可供建立，而且最終將會在唯讀的唯讀存取之後移除原則。
+>
+>如果您使用監督，請注意：
+>
+>- 從2020年6月15日起，承租人將無法建立新的監察原則。
+>- 2020年8月31日開始，現有的原則將停止捕獲新的郵件。
+>- 從2020年10月26日開始，將會刪除現有的原則。
+>
+>我們積極鼓勵目前探索或使用 Office 365 內監察的客戶，以使用新的[通訊相容性](communication-compliance.md)解決方案，利用一組更豐富的智慧功能來處理通訊監視或法規需求。
 
 使用監督原則來捕獲員工通訊，以供內部或外部的檢閱者檢查。 如需監督原則如何協助您監視組織中通訊的詳細資訊，請參閱[Office 365 中的監管原則](supervision-policies.md)。
 

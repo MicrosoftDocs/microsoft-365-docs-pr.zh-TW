@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 瞭解如何使用自助密碼重設工具來重設密碼。
-ms.openlocfilehash: beffbcac997806f0c13347dfba42a1ab0ec65c1d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9d9a1f97f9f6fc59b54f2f9bdce9c337c7d57b13
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617143"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919432"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>讓使用者重設自己的密碼
 
@@ -65,12 +65,12 @@ ms.locfileid: "43617143"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [**設定** \> **安全性&amp;隱私權**] 頁面。
+1. 在系統<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [**設定** \>**設定** \> **安全性&amp;隱私權**] 頁面。
 
 ::: moniker-end
 
    
-2. 在 [**讓您的使用者重設自己的密碼**] 底下，選取**Azure AD 系統管理中心**的連結。 您將能免費取得 Azure！
+2. 選取 [**自助密碼重設**]，然後選取 [**移至 Azure 入口網站] 連結，以開啟自助密碼重設**。 您將能免費取得 Azure！
   
 3. 在左側導覽中選取 [**使用者**]，然後選取 [**密碼重設**]。
   

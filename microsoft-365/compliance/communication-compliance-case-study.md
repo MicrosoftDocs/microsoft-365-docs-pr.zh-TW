@@ -1,6 +1,6 @@
 ---
-title: 案例研究-Contoso 會快速設定適用于 Microsoft 小組和 Exchange 通訊的冒犯性語言原則
-description: Contoso 的案例研究，以及如何快速設定通訊相容性原則，以監視 Microsoft 團隊和 Exchange Online 通訊中的冒犯性語言
+title: 案例研究-Contoso 會快速設定適用于 Microsoft 小組、Exchange 及 Yammer 通訊的冒犯性語言原則
+description: Contoso 的案例研究，以及如何快速設定通訊相容性原則，以監視 Microsoft 小組、Exchange Online 和 Yammer 通訊中的冒犯性語言。
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -19,18 +19,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e4cab1d34d17b5ecbe23aaba53698f61473bc6a8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 39815140d223d95275e03b0e85b931699bd69f7e
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637175"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919710"
 ---
-# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>案例研究-Contoso 會快速設定適用于 Microsoft 小組和 Exchange 通訊的冒犯性語言原則
+# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>案例研究-Contoso 會快速設定適用于 Microsoft 小組、Exchange 及 Yammer 通訊的冒犯性語言原則
 
-Microsoft 365 中的通訊法規遵從性，可協助您針對組織中的不適當郵件偵測、捕獲和採取補救措施，以盡可能降低通訊風險。 預先定義和自訂原則可讓您掃描內部及外部通訊的原則符合，以供指定的檢閱者檢查。 檢閱者可以調查組織中已掃描的電子郵件、Microsoft 小組或協力廠商通訊，並採取適當的修正動作，以確保它們符合您組織的郵件標準。
+Microsoft 365 中的通訊法規遵從性，可協助您針對組織中的不適當郵件偵測、捕獲和採取補救措施，以盡可能降低通訊風險。 預先定義和自訂原則可讓您掃描內部及外部通訊的原則符合，以供指定的檢閱者檢查。 檢閱者可以調查組織中已掃描的電子郵件、Microsoft 團隊、Yammer 或協力廠商通訊，並採取適當的修正動作，以確保它們符合您組織的郵件標準。
 
-Contoso Corporation 是一種虛構的組織，需要快速設定用來監視冒犯性語言的原則。 他們一直使用 Microsoft 365，主要是針對員工的電子郵件和 Microsoft 小組支援，但有新的需求可強制實施公司原則，避免工作場所騷擾。 Contoso IT 系統管理員和合規性專家對使用 Microsoft 365 的基本概念有基本的瞭解，而且正在尋找如何快速開始使用通訊相容性的端對端指導方針。
+Contoso Corporation 是一種虛構的組織，需要快速設定用來監視冒犯性語言的原則。 他們一直在使用 Microsoft 365，主要是針對其員工的電子郵件、Microsoft 小組和 Yammer 支援，但有新的需求，可強制實施公司原則，避免工作場所騷擾。 Contoso IT 系統管理員和合規性專家對使用 Microsoft 365 的基本概念有基本的瞭解，而且正在尋找如何快速開始使用通訊相容性的端對端指導方針。
 
 此案例研究將涵蓋快速設定通訊相容性原則，以監視冒犯性語言的通訊的基本概念。 本指南包含下列專案：
 
@@ -41,7 +41,7 @@ Contoso Corporation 是一種虛構的組織，需要快速設定用來監視冒
 
 ## <a name="step-1---planning-for-communication-compliance"></a>步驟 1-規劃通訊合規性
 
-Contoso IT 系統管理員和合規性專家會參加線上網路研討會365中有關法規遵從性解決方案的相關資訊，決定通訊法規遵從性原則可協助他們符合減少工作地點騷擾的更新公司原則需求。 共同運作，他們已開發好一種計畫，用以為 Exchange Online 中傳送的電子郵件訊息，建立及啟用通訊相容性原則，以監視 Microsoft 小組中所傳送的攻擊性語言。 其計畫包含識別：
+Contoso IT 系統管理員和合規性專家會參加線上網路研討會365中有關法規遵從性解決方案的相關資訊，決定通訊法規遵從性原則可協助他們符合減少工作地點騷擾的更新公司原則需求。 共同運作，他們已開發出一種可建立及啟用通訊相容性原則的計畫，它會針對 Microsoft 小組、Yammer 中的私人郵件和社區交談，以及在 Exchange Online 中傳送的電子郵件訊息，監控冒犯性語言。 其計畫包含識別：
 
 - 需要存取通訊規範功能的 IT 管理員。
 - 需要建立及管理通訊原則的規範專家。
@@ -146,6 +146,12 @@ Contoso IT 系統管理員和合規性專家也可以選擇 Microsoft 365 方案
 通訊合規性需要「審核記錄檔」顯示提醒，並追蹤檢閱者採取的修復動作。 「審核記錄檔」是與定義之組織原則相關聯的所有活動摘要，或任何一種通訊合規性原則的變更。
 
 Contoso IT 系統管理員會檢查並完成[逐步指示](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)來開啟審計。 在開啟審核後，會顯示一則訊息，指出已準備好審核記錄，而且在準備完成後，可以在數小時內執行搜尋。 Contoso IT 管理員只需執行這項動作一次。
+
+### <a name="configuring-yammer-tenant-for-native-mode"></a>設定原生模式的 Yammer 租使用者
+
+通訊法規遵從性要求組織的 Yammer 租使用者處於原生模式，以監視私人郵件和公用社區交談中的冒犯性語言。
+
+Contoso IT 系統管理員請確定他們查看[microsoft 365 主題中 Yammer 原生模式概述](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)中的資訊，並遵循執行遷移工具的步驟，在 [[設定 Yammer 網路 for Microsoft 365 的原生模式]](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)主題中執行遷移工具。
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>為範圍內使用者設定群組
 

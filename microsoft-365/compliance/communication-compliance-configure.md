@@ -18,19 +18,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 928401f0c4b0fe479d993eba958ca1e109d4c05f
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 990e39484b7f3f5b26b39e52f9344da0a3ffa290
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708392"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919680"
 ---
 # <a name="get-started-with-communication-compliance"></a>開始使用通訊合規性
 
 >[!IMPORTANT]
 >本主題適用于設定 Microsoft 365 訂閱中的通訊相容性。 如果您想要為 Microsoft 365 訂閱設定監察原則，請參閱[設定 microsoft 365 的監督](supervision-policies.md)。
 
-使用通訊相容性原則來捕獲員工透過內部或外部檢閱者進行檢查的通訊。 如需通訊相容性原則如何協助您監視組織中的通訊的詳細資訊，請參閱[Microsoft 365 中的通訊相容性原則](communication-compliance.md)。 如果您想要查看 Contoso 如何快速設定通訊相容性原則，以監視 Microsoft 小組和 Exchange Online 通訊中的冒犯性語言，請參閱此[案例研究](communication-compliance-case-study.md)。
+使用通訊相容性原則來捕獲員工透過內部或外部檢閱者進行檢查的通訊。 如需通訊相容性原則如何協助您監視組織中的通訊的詳細資訊，請參閱[Microsoft 365 中的通訊相容性原則](communication-compliance.md)。 如果您想要查看 Contoso 如何快速設定通訊相容性原則，以監視 Microsoft 小組、Exchange Online 和 Yammer 通訊中的冒犯性語言，請參閱此[案例研究](communication-compliance-case-study.md)。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -106,7 +106,16 @@ ms.locfileid: "43708392"
 - [建立並管理通訊群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Microsoft 365 群組的概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## <a name="step-4-required-create-a-communication-compliance-policy"></a>步驟4（必要）：建立通訊相容性原則
+## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>步驟4（選用）：確認 Yammer 租使用者處於原生模式
+
+在原生模式中，所有的 Yammer 使用者都在 Azure Active Directory （AAD）中，所有群組都是 Office 365 群組，且所有檔案都儲存在 SharePoint 線上中。 您的 Yammer 租使用者必須採用原生模式，以進行通訊相容性原則，以掃描及識別 Yammer 中的私人郵件和社區交談中有風險的交談。
+
+如需在原生模式中設定 Yammer 的詳細資訊，請參閱：
+
+- [Microsoft 365 中的 Yammer 原生模式概述](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)
+- [針對 Microsoft 365 設定您的 Yammer 網路使用原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)
+
+## <a name="step-5-required-create-a-communication-compliance-policy"></a>步驟5（必要）：建立通訊相容性原則
   
 >[!Important]
 >不支援使用 PowerShell 建立及管理通訊相容性原則。 若要建立及管理這些原則，您必須使用[Microsoft 365 通訊規範解決方案](https://compliance.microsoft.com/supervisoryreview)中的原則管理控制項。
@@ -131,7 +140,7 @@ ms.locfileid: "43708392"
     - 將原則命名為 [名稱] 和 [描述]。 建立原則之後，便無法變更原則名稱。
     - 選擇要監督的使用者或群組，包括您組織中的所有使用者、特定使用者和群組，或是您想要排除的其他使用者和群組。
     - 選擇原則的檢閱者。 「檢閱者」是個別的使用者，而且所有檢閱者都必須在 Exchange Online 上主控信箱。
-    - 選擇要掃描的通訊通道，包括 Exchange、Microsoft 團隊或商務用 Skype。 如果您已在 Microsoft 365 中設定連接器，您也會選擇掃描協力廠商來源。
+    - 選擇要掃描的通訊通道，包括 Exchange、Microsoft 團隊、Yammer 或商務用 Skype。 如果您已在 Microsoft 365 中設定連接器，您也會選擇掃描協力廠商來源。
     - 選擇要監視的通訊方向，包括輸入、輸出或內部通訊。
     - 定義通訊相容性原則[條件](communication-compliance-feature-reference.md#ConditionalSettings)。 您可以選擇 [郵寄地址]、[關鍵字]、[檔案類型] 和 [大小相符] 條件。
     - 選擇是否要包含機密資訊類型。 在這個步驟中，您可以選取預設和自訂的機密資訊類型。 在 [通訊合規性原則] 中，從現有的自訂敏感資訊類型或自訂關鍵字字典中挑選。 如有需要，您可以在執行該嚮導之前建立這些專案。 您也可以從通訊合規性原則嚮導中建立新的敏感資訊類型。
@@ -147,7 +156,7 @@ ms.locfileid: "43708392"
 
 6. **已建立您**的原則頁面會隨著原則的啟動時間及將捕獲哪些通訊的指導方針來顯示。
 
-## <a name="step-5-optional-create-employee-notice-templates"></a>步驟5（選用）：建立員工通知範本
+## <a name="step-6-optional-create-employee-notice-templates"></a>步驟6（選用）：建立員工通知範本
 
 如果您想要選擇以傳送提醒通知給關聯的員工來回應原則警示，您必須在組織中至少建立一個公告範本。 [！注意事項] [通知範本] 欄位是可編輯的，在傳送為警示修復程式的一部分之前，建議您為每個通訊相容性原則建立自訂的通知範本。
 
@@ -167,14 +176,14 @@ ms.locfileid: "43708392"
 
 5. 選取 [**儲存**] 以建立及儲存 [公告] 範本。
 
-## <a name="step-6-optional-test-your-communication-compliance-policy"></a>步驟6（選用）：測試通訊合規性原則
+## <a name="step-7-optional-test-your-communication-compliance-policy"></a>步驟7（選用）：測試通訊合規性原則
 
 在您建立通訊相容性原則之後，建議您加以測試，以確定原則已正確地強制執行您所定義的條件。 您也可能想要[測試您的資料遺失防護（DLP）原則（](create-test-tune-dlp-policy.md)如果通訊相容性原則包括敏感資訊類型）。 請務必提供您的原則啟動時間，以便您想要測試的通訊得以捕獲。
 
 請遵循下列步驟來測試您的通訊合規性原則：
 
-1. 在您要測試之原則中所定義的監督使用者登入時，開啟電子郵件客戶程式或 Microsoft 團隊。
-2. 傳送電子郵件或 Microsoft 小組聊天，其符合您在通訊合規性原則中所定義的準則。 此測試可以是關鍵字、附件大小、網域等等。確定您判斷原則中設定的設定條件設定過於嚴格或太 lenient。
+1. 在您要測試之原則中所定義的監督使用者登入時，開啟電子郵件客戶程式、Microsoft 小組或 Yammer。
+2. 傳送電子郵件、Microsoft 小組聊天或 Yammer 訊息，其符合您在通訊相容性原則中所定義的準則。 此測試可以是關鍵字、附件大小、網域等等。確定您判斷原則中設定的設定條件設定過於嚴格或太 lenient。
 
     > [!NOTE]
     > 在原則中，所有來源通道中的通訊最多可能需要24小時才能完整處理。
