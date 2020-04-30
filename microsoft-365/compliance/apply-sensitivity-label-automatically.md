@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: ee9eef1c8f12d24cdf1c03ee5d7799c63c9acc23
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: 48e6b000110014637afbf032f81b23703a763f4d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799976"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943242"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -113,7 +113,7 @@ ms.locfileid: "43799976"
 ![在 Office 應用程式中自動套用標籤的標籤條件](../media/sensitivity-labels-conditions.png)
 
 > [!NOTE]
-> 目前，[分類器]**** 的選項在限制預覽中，您必須將表單提交給 Microsoft，才能為您的租用戶啟用這項功能。 如需詳細資訊，請參閱[宣佈在 Office 應用程式中使用內建分類器自動套用標籤 - 限制預覽](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889) (英文)。
+> 目前，**[分類器]** 的選項在限制預覽中，您必須將表單提交給 Microsoft，才能為您的租用戶啟用這項功能。 如需詳細資訊，請參閱[宣佈在 Office 應用程式中使用內建分類器自動套用標籤 - 限制預覽](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889) (英文)。
 
 自動套用此敏感度標籤時，使用者會在其 Office 應用程式中看到通知。 例如：
 
@@ -131,9 +131,9 @@ ms.locfileid: "43799976"
 
 ![執行個體計數和比對精確度的選項](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-### <a name="configuring-classifers-for-a-label"></a>為標籤設定分類器
+### <a name="configuring-classifiers-for-a-label"></a>為標籤設定分類器
 
-當您選取 [分類器]**** 選項時，請選取一或多個內建分類器：
+當您選取 **[分類器]** 選項時，請選取一或多個內建分類器：
 
 ![分類器和敏感度標籤的選項](../media/sensitivity-labels-classifers.png)
 
@@ -205,7 +205,7 @@ ms.locfileid: "43799976"
 - 一或多個敏感性標籤[已建立和已發佈](create-sensitivity-labels.md) (給至少一個使用者)，這些標籤可供您針對自動套用標籤原則選取。 針對這些標籤：
     - Office 應用程式中的自動套用標籤標籤設定開啟與否並不重要，因為該標籤設定是補充自動套用標籤原則，如簡介中的說明。 
     - 如果您想要用於自動套用標籤的標籤是設定為使用視覺標記 (頁首、頁尾、浮水印)，請注意，這些標籤不適用於文件。
-    - 如果標籤採用加密功能，則必須針對 [立即套用許可權] **** 設定進行設定。
+    - 如果標籤採用加密功能，則必須針對 **[立即指派權限]** 設定進行設定。
 
 ### <a name="learn-about-simulation-mode"></a>了解模擬模式
 
@@ -278,7 +278,7 @@ ms.locfileid: "43799976"
 
 12. 針對**決定立即或稍後執行原則模擬**的頁面：如果您已準備好立即在模擬模式中執行自動套用標籤原則，請選取 [在模擬模式中執行原則]**** 。 否則，請選取 [將原則關閉]****。 選取 [下一步]****。 
 
-13. 針對 [摘要]**** 頁面：檢閱您的自動套用標籤原則設定，視需要進行任何變更，然後完成精靈。
+13. 針對 **[摘要]** 頁面：檢閱您的自動套用標籤原則設定，視需要進行任何變更，然後完成精靈。
     
     不同於 Office 應用程式的自動套用標籤，沒有個別發佈選項。 不過，發佈標籤時，請允許最多 24 小時，讓自動套用標籤原則在您的整個組織中複寫。
 

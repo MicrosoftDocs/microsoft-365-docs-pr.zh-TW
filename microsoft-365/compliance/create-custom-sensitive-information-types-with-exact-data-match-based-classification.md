@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
-ms.openlocfilehash: 63db4da59a04f13d79da61932f74f49d87fa3ffc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 94adbd4382c6e0a5a736feeb7de4bc32e213d25c
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631322"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919700"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -50,8 +50,8 @@ ms.locfileid: "43631322"
 
 - Office 365 E5
 - Microsoft 365 E5
-- Microsoft 365 資訊保護和合規性
-- Office 365 進階合規性
+- Microsoft 365 E5 合規性
+- Microsoft E5/A5 資訊保護和控管
 
 ## <a name="the-work-flow-at-a-glance"></a>工作流程概覽
 

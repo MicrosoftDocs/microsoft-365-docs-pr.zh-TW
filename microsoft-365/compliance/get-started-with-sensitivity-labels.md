@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: 8889d2706b4467be33eef473845c79a0caac606f
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+ms.openlocfilehash: f03207910ae1f86434679067eecbe721ebb5591a
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907200"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930160"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 

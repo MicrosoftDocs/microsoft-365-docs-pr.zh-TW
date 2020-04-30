@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 取得 GDPR 的 Office 365 資訊保護概觀。了解如何探索、分類、保護及監視個人資料。
-ms.openlocfilehash: b838ae96c8b93dced8b4da898ed04effc0586463
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 83a090b214821142a312ee81463fb3c395876867
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637217"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919602"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>GDPR 的 Office 365 資訊保護概觀
 
