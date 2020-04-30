@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: 使用 Office 365 或 Microsoft 365 合規性中心中的「內容搜尋」工具，來搜尋信箱中的內容、SharePoint Online 網站，OneDrive 帳戶、Microsoft Teams、Microsoft 365 群組、Yammer 群組和商務用 Skype 交談。 您可以使用關鍵字搜尋查詢和搜尋條件來縮小搜尋結果。 然後您可以預覽和匯出搜尋結果。 內容搜尋也是用來搜尋與 GDPR 資料主體要求相關內容的有效工具。
-ms.openlocfilehash: d601db20cbfc8c5ea5a4fcc64d181a99a7f8f940
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.openlocfilehash: 61e8b15af29bf02849a83f6a68bdd1c0accd7e8d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43900737"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943172"
 ---
 # <a name="content-search"></a>內容搜尋
 
@@ -302,6 +302,8 @@ ms.locfileid: "43900737"
   在搜尋結果中，會在 **[類型]** 欄位中將會議摘要識別為 **[會議]**，以及將通話摘要識別為 **[通話]**。 此外，屬於 Teams 頻道和 1xN 聊天的交談，會在 **[類型]** 欄位中識別為 **IM**。
   
   ![Teams 會議、通話和 1xN 聊天都可在 [類型] 欄位中識別](../media/O365-ContentSearch-Teams-MessageKind.png)
+
+   如需詳細資訊，請參閱 [Microsoft Teams 啟動通話跟會議的電子文件探索](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947) (英文)。
 
 - 您可以使用 **Kind** 電子郵件屬性或 **[郵件類型]** 搜尋條件來搜尋 Teams 中的專屬內容。 
   

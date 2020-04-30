@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留標籤，您可以讓發生特定類型事件的時間作為保留期間的依據。事件會觸發啟動保留期間，具有套用至該類型事件之保留標籤的所有事件，會強制執行標籤的保留動作。事件導向保留通常是作為記錄管理處理程序的一部分。
-ms.openlocfilehash: a33c9ae73c2a1721e62c4c1c294270cc8d27d198
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ad6d734da77b6e0a706c4ff0d71b82caf0166c8
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43616017"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949300"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件導向保留的概觀
 
@@ -43,7 +43,7 @@ ms.locfileid: "43616017"
     
 - 已宣告為記錄但是其事件觸發程序尚未發生的文件，會無限期保留 (記錄無法永久刪除)，直到事件觸發該文件的保留期間。
     
-- 根據事件的標籤通常會在保留期間結束時觸發處置檢閱，讓記錄管理員可以手動檢查並處置內容。如需詳細資訊，請參閱[處置檢閱概觀](disposition-reviews.md)。
+- 根據事件的保留標籤通常會在保留期間結束時觸發處置檢閱，讓記錄管理員可以手動檢查並處置內容。如需詳細資訊，請參閱[內容處置](disposition.md) (英文)。
     
 根據事件的標籤具有與 Office 365 中的任何標籤相同的功能。若要深入了解，請參閱[標籤概觀](labels.md)。
 

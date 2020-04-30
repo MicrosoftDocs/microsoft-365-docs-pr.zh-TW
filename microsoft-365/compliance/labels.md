@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留標籤可以分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤在 Microsoft 365 中實作記錄管理解決方案。
-ms.openlocfilehash: 35d91db5a52c9c43a178341417955098a60edc34
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6496c5f82ee21e2085568f5e623fc6ee75145b8a
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637441"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949310"
 ---
 # <a name="overview-of-retention-labels"></a>保留標籤概觀
 
@@ -38,8 +38,9 @@ ms.locfileid: "43637441"
     
 - 必須**標示為記錄**使之無法編輯或刪除的工作簽證。 
     
-在所有這些案例中，保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利管理，並根據該分類強制執行保留規則。
-  
+
+在這些案例中，Microsoft 365 中的保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利管理，並根據該分類強制執行保留規則。
+
 使用保留標籤，您可以：
   
 - **讓組織的人員可以手動套用保留標籤**至 Outlook 網頁版、Outlook 2010 及更新版本、OneDrive、SharePoint 和 Microsoft 365 群組中的內容。使用者通常最清楚自己使用的內容類型，因此可以對其分類並套用適當的原則。 
@@ -165,7 +166,7 @@ Exchange 公用資料夾和 Skype 不支援標籤。
   
 除此之外，保留標籤有兩個只能用於保留標籤，但不能用於保留原則的保留選項。使用保留標籤，您可以：
   
-- 在保留期間結束時觸發處置檢閱，這樣能在刪除 SharePoint 和 OneDrive 文件之前，必須先檢閱它們。如需詳細資訊，請參閱[處置檢閱概觀](disposition-reviews.md)。
+- 在保留期間結束時觸發處置檢閱，這樣能在系統刪除 SharePoint 和 OneDrive 文件前，必須先檢閱它們。如需詳細資訊，請參閱[內容處置](disposition.md) (英文)。
     
 - 保留期間是從內容套用標籤時開始計算，而不是內容的壽命或上次修改時間。 此選項僅適用 SharePoint 網站和 OneDrive 帳戶中的內容。 針對 Exchange 電子郵件，保留期間一律會取決於傳送或接收郵件的日期，無論在這裡選擇的選項為何。
     
@@ -263,7 +264,7 @@ Exchange 公用資料夾和 Skype 不支援標籤。
     
 - [符合您所建立查詢的特定關鍵字](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
-- [可訓練分類器的符合項目](#auto-apply-labels-to-content-by-using-trainable-classifiers)
+- [可訓練分類器的符合項目](#auto-apply-labels-to-content-by-using-trainable-classifers)
     
 ![自動套用標籤的選擇條件頁面](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
@@ -313,7 +314,7 @@ Exchange 公用資料夾和 Skype 不支援標籤。
 ![查詢編輯器](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
 
-### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>使用可訓練分類器自動將標籤套用至內容
+### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>使用可訓練分類器自動將標籤套用至內容
 
 選擇用於可訓練分類器的選項時，可以選取其中一個內建分類器或自訂分類器。 內建分類器包括 **[粗穢言語]**、**[履歷]**、**[原始程式碼]**、**[針對性騷擾]**、**[粗話]** 和 **[威脅]**：
 
@@ -324,6 +325,7 @@ Exchange 公用資料夾和 Skype 不支援標籤。
 如需有關可訓練分類器的詳細資訊，請參閱[開始使用可訓練分類器 (預覽)](classifier-getting-started-with.md)。
 
 如需組態範例，請參閱[如何準備及使用內建分類器](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-built-in-classifier)。
+
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>將預設保留標籤套用至 SharePoint 文件庫、資料夾或文件集中的所有內容
 

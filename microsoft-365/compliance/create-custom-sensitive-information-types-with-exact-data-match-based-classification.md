@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
-ms.openlocfilehash: 94adbd4382c6e0a5a736feeb7de4bc32e213d25c
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: d234b4c9ba01b185c367074ee78b0f92be226c46
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919700"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938613"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -72,7 +72,7 @@ ms.locfileid: "43919700"
       - 每個資料來源最多 32 個資料行 (欄位)
       - 最多 5 個資料行 (欄位) 標示為可搜尋
 
-2. 以 .csv 檔案格式將敏感性資料結構化，使得第一列包含用於以 EDM 為基礎的分類的欄位名稱。 在您的 .csv 檔案中，您可能會有欄位名稱，例如 "ssn"、"birthdate"、"firstname"、"lastname" 等等。 舉例來說，我們的 .csv 檔案稱為 *PatientRecords.csv*，且其資料行包括 *PatientID*、 *MRN*、 *LastName*、 *FirstName*、 *SSN* 等。
+2. 以 .csv 檔案格式將敏感性資料結構化，使得第一列包含用於以 EDM 為基礎的分類的欄位名稱。 在您的 .csv 檔案中，您可能會有欄位名稱，例如 "ssn"、"birthdate"、"firstname"、"lastname" 等等。 請注意，資料行標題的名稱中不能包含空格或底線。 舉例來說，我們的 .csv 檔案稱為 *PatientRecords.csv*，且其資料行包括 *PatientID*、 *MRN*、 *LastName*、 *FirstName*、 *SSN*等。
 
 3. 以 .xml 格式定義用於敏感性資訊資料庫的結構描述 (類似以下的範例)。 將此結構描述檔案命名為  **edm.xml**，然後進行設定，讓資料庫中的每一個資料行都會有使用下列語法的行： 
 
