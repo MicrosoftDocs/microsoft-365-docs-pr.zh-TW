@@ -165,6 +165,8 @@
           href: customer-key-availability-key-roll.md
         - name: 了解客戶金鑰的可用性金鑰
           href: customer-key-availability-key-understand.md
+    - name: 傳輸中資料的加密
+      href: office-365-encryption-for-data-in-transit.md
     - name: 電子郵件加密
       href: email-encryption.md
       items:
@@ -283,8 +285,8 @@
           href: automate-event-driven-retention.md
         - name: 管理 SharePoint 文件的生命週期
           href: auto-apply-retention-labels-scenario.md
-    - name: 處置資料
-      href: disposition-reviews.md
+    - name: 資料處置
+      href: disposition.md
     - name: 管理非使用中的信箱
       items:
         - name: 非作用中信箱概觀
@@ -338,7 +340,7 @@
             - name: 自動化事件型保留
               href: automate-event-driven-retention.md
         - name: 處置
-          href: disposition-reviews.md
+          href: disposition.md
         - name: 深入了解記錄管理
           items:
             - name: 觀看有關記錄管理的影片
@@ -1204,6 +1206,8 @@
               href: offering-lopd-spain.md
             - name: PASF (英國)
               href: offering-pasf-uk.md
+            - name: 個人資料當地語系化 (俄羅斯)
+              href: offering-russia-data-localization.md
         - name: 北美
           items:
             - name: 加州消費者隱私法 (CCPA)
