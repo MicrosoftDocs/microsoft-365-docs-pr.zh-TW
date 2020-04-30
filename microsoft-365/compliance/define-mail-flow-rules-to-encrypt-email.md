@@ -16,16 +16,16 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何建立郵件流程規則（傳輸規則），以使用 Office 365 郵件加密來加密及解密郵件。
-ms.openlocfilehash: f9e9440c40b68f36d0dcca069dcd0797412af184
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: ec36e8ff57b45b0f6a3408d6e6bc1e07ce789ffd
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790702"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943120"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>定義郵件流程規則以加密電子郵件
 
-以全域管理員的身分，您可以建立郵件流程規則（也稱為傳輸規則），以協助保護您傳送和接收的電子郵件訊息。 您可以設定規則來加密任何外寄電子郵件訊息，並移除來自組織內部的加密郵件的加密，或從組織傳送的加密郵件回復。 您可以使用 Exchange 系統管理中心（EAC）或 Exchange Online PowerShell 來建立這些規則。 除了整體加密規則之外，您也可以選擇為使用者啟用或停用個別的郵件加密選項。
+以全域管理員的身分，您可以建立郵件流程規則（也稱為傳輸規則），以協助保護您傳送和接收的電子郵件訊息。 您可以設定規則來加密任何外寄電子郵件訊息，並移除來自組織內部的加密郵件的加密，或從組織傳送的加密郵件回復。 您可以使用 Exchange 系統管理中心（EAC）或 Exchange Online PowerShell 來建立這些規則。 除了整體加密規則，您也可以選擇啟用或停用使用者的個別郵件加密選項。
 
 您無法對來自組織外部寄件者的輸入郵件進行加密。
 
@@ -34,7 +34,7 @@ ms.locfileid: "43790702"
 如需組成郵件流程規則的元件，以及郵件流程規則如何運作的詳細資訊，請參閱[郵件流程規則（傳輸規則）中的 Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。 如需郵件流程規則如何使用 Azure 資訊保護的詳細資訊，請參閱設定[Exchange Online mail 流程規則以取得 azure 資訊保護標籤](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules)。
 
 > [!IMPORTANT]
-> 在混合式 Exchange 環境中，只有在透過 Exchange Online 路由傳送電子郵件時，內部部署使用者才能使用 OME 傳送加密郵件。 若要設定混合式 Exchange 環境中的 OME，您必須先[使用混合式設定向導設定混合](https://docs.microsoft.com/Exchange/exchange-hybrid)式，然後再[將郵件設定為從您的電子郵件伺服器流向 Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)。 將郵件設定為流過 Office 365 後，您就可以使用本指南來設定 OME 的郵件流程規則。
+> 在混合式 Exchange 環境中，只有在透過 Exchange Online 路由傳送電子郵件時，內部部署使用者才能使用 OME 傳送和接收加密郵件。 若要設定混合式 Exchange 環境中的 OME，您必須先[使用混合式設定向導設定混合](https://docs.microsoft.com/Exchange/exchange-hybrid)式，然後再[將郵件設定為從 Office 365 流向您的電子郵件伺服器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-1-configure-mail-to-flow-from-office-365-to-your-on-premises-email-server)，並[將郵件設定為從您的電子郵件伺服器流向 Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)。 將郵件設定為流過 Office 365 後，您就可以使用本指南來設定 OME 的郵件流程規則。
 
 ## <a name="create-mail-flow-rules-to-encrypt-email-messages-with-the-new-ome-capabilities"></a>建立郵件流程規則，以新的 OME 功能加密電子郵件
 
@@ -52,7 +52,7 @@ ms.locfileid: "43790702"
 
 5. 在 [**名稱**] 中，輸入規則的名稱，例如 [加密 DrToniRamos@hotmail.com 的郵件]。
 
-6. 在 [套用**此規則**] 選取條件時，必要時輸入值。 例如，若要加密要 DrToniRamos@hotmail.com 的郵件：
+6. 在 [套用**此規則 if**] 中，選取條件，然後視需要輸入值。 例如，若要加密要 DrToniRamos@hotmail.com 的郵件：
 
    1. 在 [套用**此規則 if**] 中，選取**收件者為**。
 
@@ -110,11 +110,11 @@ ms.locfileid: "43790702"
 
 5. 在 [**名稱**] 中，輸入規則的名稱，例如 [從外寄郵件移除加密]。
 
-6. 在 [套用**此規則] 如果**選取應該從郵件中移除加密的情況，請新增**寄件者位於** \> **組織內**。 現在，新增其他條件以設定特定的收件者，例如**收件者位於** \> **組織外**。
+6. 在 [套用**此規則**條件] 中，選取應該從郵件中移除加密的條件。 新增**寄件者位於** \> **組織內**。 現在，新增其他條件以設定特定的收件者，例如**收件者位於** \> **組織外**。
 
 7. 在**執行下列**動作中，選取 **[修改郵件安全性** \> **移除 Office 365 訊息加密和許可權保護**]。
 
-8. 選取 **[儲存]**。
+8. 選取 [儲存]****。
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>建立沒有新功能的 Office 365 郵件加密的郵件流程規則
 
@@ -164,14 +164,14 @@ ms.locfileid: "43790702"
    New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
    ```
 
-   **附註**：
-
-   - 新規則的唯一名稱是「Dr Toni Ramos 的加密規則」。
-
-   - _SentTo_參數會指定郵件收件者（透過名稱、電子郵件地址、辨識名稱等）。 在此範例中，收件者會透過電子郵件地址 "DrToniRamos@hotmail.com" 加以識別。
-
-   - _SentToScope_參數會指定郵件收件者的位置。 在此範例中，收件者的信箱是在 hotmail 中，而且不是組織的一部分， `NotInOrganization`因此會使用此值。
-
+   > [!NOTE]
+   > 
+   > - 新規則的唯一名稱是「Dr Toni Ramos 的加密規則」。
+   > 
+   > - _SentTo_參數會指定郵件收件者（透過名稱、電子郵件地址、辨識名稱等）。 在此範例中，收件者會透過電子郵件地址 "DrToniRamos@hotmail.com" 加以識別。
+   > 
+   > - _SentToScope_參數會指定郵件收件者的位置。 在此範例中，收件者的信箱是在 hotmail 中，而且不是組織的一部分， `NotInOrganization`因此會使用此值。
+   
    如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)。
 
 ### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>從加密的電子郵件回復中移除加密，但不含新的 OME 功能
@@ -194,7 +194,7 @@ ms.locfileid: "43790702"
 
 7. 在**執行下列**動作中，選取 **[修改郵件安全性** \> **移除舊版 OME**]。
 
-8. 選取 **[儲存]**。
+8. 選取 [儲存]****。
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>使用 Exchange Online PowerShell 建立規則，以從加密的電子郵件回復中移除加密，但不使用新的 OME 功能
 
@@ -208,17 +208,17 @@ ms.locfileid: "43790702"
    New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
    ```
 
-   **附註**：
-
-   - 新規則的唯一名稱是「移除來自傳入郵件的加密」。
-
-   - _SentToScope_參數會指定郵件收件者的位置。 在此範例中，會`InOrganization`使用 value 值，表示：
-
-     - 收件者是組織中的信箱、郵件使用者、群組或擁有郵件功能的公用資料夾。
-
-       或
-
-     - 收件者的電子郵件地址位於已設定為授權網域或組織內部轉送網域的公認網域中，_且_透過已驗證的連線來傳送或接收郵件。
+   > [!NOTE]
+   > 
+   > - 新規則的唯一名稱是「移除來自傳入郵件的加密」。
+   > 
+   > - _SentToScope_參數會指定郵件收件者的位置。 在此範例中，會`InOrganization`使用 value 值，表示：
+   > 
+   >   - 收件者是組織中的信箱、郵件使用者、群組或擁有郵件功能的公用資料夾。
+   > 
+   >     或
+   > 
+   >   - 收件者的電子郵件地址位於已設定為授權網域或組織內部轉送網域的公認網域中，_且_透過已驗證的連線來傳送或接收郵件。
 
 如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)。
 

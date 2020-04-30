@@ -14,20 +14,22 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 瞭解如何在安全性 & 規範中心準備內容搜尋的結果，以利用高級 eDiscovery 工具進行進一步的分析。
-ms.openlocfilehash: e4cf580a045f9911e6c92fb2031a5d7bed79754e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4d1b406503ff758fb9287cc40d8a323ae23bc3f1
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626637"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943292"
 ---
 # <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>準備進階電子文件探索 (傳統版) 的搜尋結果
 
 > [!IMPORTANT]
-> 當我們繼續投資較新版的先進 eDiscovery 時，我們宣佈退休的是「高級 ediscovery」（也稱為「*高級電子檔探索」（經典）* 或*advanced ediscovery 1.0*版）。 如果您仍在使用進階電子文件探索 1.0 版，請盡快轉換為[進階電子文件探索 2.0 版](overview-ediscovery-20.md) (*在Microsoft 365 中也稱為進階電子文件探索解決方案*)。 進階電子文件探索 2.0 中包含可在進階電子文件探索 1.0 版中找到的類似功能，但同時也提供許多新的功能，例如監管人管理、通訊管理和檢閱集。 若要深入了解進階電子文件探索 1.0 版的停用，請參閱[舊版電子文件探索工具的停用](legacy-ediscovery-retirement.md#advanced-ediscovery-v10) (部分機器翻譯)。 
+> 隨著我們繼續投資於更新版本的進階電子文件探索，我們即將宣布停用進階文件探索 (也稱為*進階電子文件探索 (傳統版)* 或*進階文件探索 1.0 版*)。 如果您仍在使用進階電子文件探索 1.0 版，請盡快轉換為[進階電子文件探索 2.0 版](overview-ediscovery-20.md) (*在Microsoft 365 中也稱為進階電子文件探索解決方案*)。 進階電子文件探索 2.0 中包含可在進階電子文件探索 1.0 版中找到的類似功能，但同時也提供許多新的功能，例如監管人管理、通訊管理和檢閱集。 若要深入了解進階電子文件探索 1.0 版的停用，請參閱[舊版電子文件探索工具的停用](legacy-ediscovery-retirement.md#advanced-ediscovery-v10) (部分機器翻譯)。 
 
 在安全性 & 合規性中心與 eDiscovery 案例相關聯的搜尋順利執行後，您可以使用高級 eDiscovery 準備進一步分析的搜尋結果，這樣可讓您分析大型的非結構化資料集，並減少與法律案例相關的資料量。 Advanced eDiscovery 的功能包括：
   

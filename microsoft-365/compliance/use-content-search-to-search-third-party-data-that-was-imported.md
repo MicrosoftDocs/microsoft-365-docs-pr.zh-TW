@@ -11,15 +11,17 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用內容搜尋 eDiscovery 工具，從協力廠商資料來源搜尋從 Microsoft 365 匯入信箱的專案。 您可以建立查詢來搜尋所有匯入的專案，或建立查詢以搜尋特定的協力廠商資料類型。 本文列出您可以在關鍵字查詢中使用的值，以搜尋您可以匯入至 Microsoft 365 的協力廠商資料類型。
-ms.openlocfilehash: 07a489d7c18cc305b7ffc745f7fc7870d8f72a2f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e7e48f5231bccc988ad853202603defd17fd58f4
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633368"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942966"
 ---
 # <a name="use-content-search-to-search-third-party-imported-data"></a>使用內容搜尋來搜尋協力廠商匯入的資料
 

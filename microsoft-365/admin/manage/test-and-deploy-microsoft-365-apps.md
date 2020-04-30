@@ -10,15 +10,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: ''
-search.appverid: ''
+search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 針對組織中的使用者和群組，從 Microsoft 365 系統管理中心的整合式應用程式入口網站，尋找、測試及部署 Microsoft 和 Microsoft 合作夥伴應用程式。
-ms.openlocfilehash: 5189eef7524242a87f1797f8856bbd33b9a32a31
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: bc9ad91a664072f4291f0c95c029fb2ca06530f5
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212266"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942149"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 admin center 中測試及部署 Microsoft 365 應用程式
 

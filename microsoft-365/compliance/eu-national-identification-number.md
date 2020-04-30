@@ -1,9 +1,9 @@
 ---
-title: 歐盟國家識別碼
+title: 歐盟國身分識別號碼
 f1.keywords:
 - NOCSH
-ms.author: cabailey
-author: cabailey
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -11,43 +11,43 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-description: 本主題顯示什麼資料外洩防護 (DLP) 原則會尋找當它偵測到歐盟國民身分識別號碼敏感資訊類型。 此敏感資訊類型定義不同模式、 關鍵字、 和其他辨識項的每個國家/地區。
-ms.openlocfilehash: f001d23ec3d6d8a2b3aa9575d4a9d602c4315e13
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: 本主題說明資料遺失防護（DLP）原則在偵測到歐盟國身分識別號碼的敏感資訊類型時，會尋找哪些專案。 這種敏感資訊類型會定義不同的模式、關鍵字和其他每個國家/地區的證據。
+ms.openlocfilehash: 4dac77f129b45f457a82e709cb5a3b846a95cdf4
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41592234"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938759"
 ---
-# <a name="eu-national-identification-number"></a>歐盟國家識別碼
+# <a name="eu-national-identification-number"></a>歐盟國身分識別號碼
 
-本主題顯示什麼資料外洩防護 (DLP) 原則會尋找當它偵測到歐盟國民身分識別號碼敏感資訊類型。 此敏感資訊類型定義不同模式、 關鍵字、 和其他辨識項的每個國家/地區。
+本主題說明資料遺失防護（DLP）原則在偵測到歐盟國身分識別號碼的敏感資訊類型時，會尋找哪些專案。 這種敏感資訊類型會定義不同的模式、關鍵字和其他每個國家/地區的證據。
   
 ## <a name="austria"></a>奧地利
 
 ### <a name="format"></a>格式
 
-24 個字元組合的字母、 數字和特殊字元
+字母、數位及特殊字元的24個字元的組合
   
 ### <a name="pattern"></a>模式
 
-24 個字元：
+24個字元：
   
--  22 字母 （不區分大小寫）、 數字、 反斜線、 正斜線或加號 
+-  22個字母（不區分大小寫）、數位、反斜線、正斜線或正號 
     
-- 兩個字母 （不區分大小寫）、 數字、 反斜線、 正斜線、 加號或等號
+- 兩個字母（不區分大小寫）、數位、反斜線、正斜線、加號或等號
     
-### <a name="checksum"></a>總和檢查碼
+### <a name="checksum"></a>校驗
 
 不適用
   
 ### <a name="definition"></a>定義
 
-DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
-- 規則運算式`Regex_austria_eu_national_id_card`找到符合模式的內容。 
+- 正則運算式`Regex_austria_eu_national_id_card`會找到符合模式的內容。 
     
-- 從關鍵字`Keywords_austria_eu_national_id_card`找到。 
+- 找到來自`Keywords_austria_eu_national_id_card`的關鍵字。 
     
 ```
  
@@ -65,51 +65,51 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 奧地利身分識別號碼
   
-國民身分識別號碼
+本國身分識別號碼
   
 身分識別號碼
   
-國民身分證
+國家識別碼
   
 personalausweis republik österreich
   
 ## <a name="belgium"></a>比利時
 
-如需詳細資訊，請參閱 「 比利時國民編碼 」 中[的敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。
+如需詳細資訊，請參閱[敏感資訊類型所尋找](what-the-sensitive-information-types-look-for.md)的「比利時國家編號」一節。
   
 ## <a name="bulgaria"></a>保加利亞
 
 ### <a name="format"></a>格式
 
-如果沒有空格和分隔符號十位數
+10位數，不含空格及分隔符號
   
 ### <a name="pattern"></a>模式
 
-如果沒有空格和分隔符號十位數
+10位數，不含空格及分隔符號
   
--  會對應至 (YYMMDD) 的出生日期的六位數 
+-  與出生日期對應的六位數（YYMMDD） 
     
 - 對應至出生順序的兩位數
     
-- 會對應至性別的一個數字： 1 女 2 男和女性奇數數字偶數數字
+- 對應于性別的一個數位：用於男的偶數位數和用於女的奇數數位
     
 - 一個檢查碼
     
-### <a name="checksum"></a>總和檢查碼
+### <a name="checksum"></a>校驗
 
 是
   
 ### <a name="definition"></a>定義
 
-DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
   
-- 函式`Func_bulgaria_national_number`找到符合模式的內容。 
+- 函數`Func_bulgaria_national_number`會找到符合模式的內容。 
     
-- 從關鍵字`Keywords_bulgaria_national_number`找到。 
+- 找到來自`Keywords_bulgaria_national_number`的關鍵字。 
     
-DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
-- 函式`Func_bulgaria_national_number`找到符合模式的內容。 
+- 函數`Func_bulgaria_national_number`會找到符合模式的內容。 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -131,61 +131,61 @@ egn
   
 egn#
   
-保加利亞文的國際電話號碼
+保加利亞國號碼
   
-國際電話號碼
+國家/地區號碼
   
 社會安全號碼
   
 nationalnumber#
   
-ssn#
+Ssn#
   
-ssn
+Ssn
   
 nationalnumber
   
-bnn#
+安娜#
   
-bnn
+安娜
   
-個人識別碼
+個人號碼
   
 personalidnumber#
   
-ЕДИНЕН ГРАЖДАНСКИ НОМЕР
+единен граждански номер
   
 edinen grazhdanski nomer
   
-ЕГН
+егн
   
-ЕГН#
+егн#
   
 ## <a name="croatia"></a>克羅埃西亞
 
-如需詳細資訊，請參閱 「 克羅埃西亞身分識別號碼 」 中[的敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。
+如需詳細資訊，請參閱[敏感資訊類型所尋找](what-the-sensitive-information-types-look-for.md)的「克羅地亞身分識別號碼」一節。
   
 ## <a name="cyprus"></a>賽普勒斯
 
 ### <a name="format"></a>格式
 
-如果沒有空格和分隔符號十位數
+10位數，不含空格及分隔符號
   
 ### <a name="pattern"></a>模式
 
- 十位數 
+ 10位數 
   
-### <a name="checksum"></a>總和檢查碼
+### <a name="checksum"></a>校驗
 
 不適用
   
 ### <a name="definition"></a>定義
 
-DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
-- 規則運算式`Regex_cyprus_eu_national_id_card`找到符合模式的內容。 
+- 正則運算式`Regex_cyprus_eu_national_id_card`會找到符合模式的內容。 
     
-- 從關鍵字`Keywords_cyprus_eu_national_id_card`找到。 
+- 找到來自`Keywords_cyprus_eu_national_id_card`的關鍵字。 
     
 ```
  
@@ -201,57 +201,57 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 #### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
-證號碼
+id 卡號碼
   
-國家識別碼
+國家識別號碼
   
-個人識別碼
+個人號碼
   
-身分證號碼
+身分識別卡號碼
   
-ΤΑΥΤΟΤΗΤΑΣ
+ταυτοτητασ
   
 ## <a name="czech-republic"></a>捷克共和國
 
-如需詳細資訊，請參閱 「 捷克國民身分識別號碼 」 中[的敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。
+如需詳細資訊，請參閱[敏感資訊類型所尋找](what-the-sensitive-information-types-look-for.md)的「捷克國身分識別號碼」一節。
   
 ## <a name="denmark"></a>丹麥
 
-如需詳細資訊，請參閱 「 丹麥個人識別碼 」 中[的敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。
+如需詳細資訊，請參閱[敏感資訊類型所尋找](what-the-sensitive-information-types-look-for.md)的「丹麥個人身分識別號碼」一節。
   
 ## <a name="estonia"></a>愛沙尼亞
 
 ### <a name="format"></a>格式
 
-11 位數不含空格和分隔符號
+11位數，不含空格及分隔符號
   
 ### <a name="pattern"></a>模式
 
-11 位數：
+11位數：
   
-- 會對應至性別和世紀的出生的一個數字 (奇數數字 1 女 2 男、 偶數 [女; 1-2: 19 世紀; 3-4: 20 世紀; 5-6： 第 21 世紀)
+- 對應于性別和世紀的一位數（奇數號男，甚至是數位女; 1-2：19世紀; 3-4：20世紀; 5-6：21世紀）
     
-- 會對應至 (YYMMDD) 出生日期的六位數
+- 對應至出生日期的六位數（YYMMDD）
     
-- 會對應至分隔出生日期相同的人員序號的三位數
+- 三位數，對應至在相同日期出生的人員的序號
     
 - 一個檢查碼
     
-### <a name="checksum"></a>總和檢查碼
+### <a name="checksum"></a>校驗
 
 是
   
 ### <a name="definition"></a>定義
 
-DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
   
-- 函式`Func_estonia_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_estonia_eu_national_id_card`會找到符合模式的內容。 
     
-- 從關鍵字`Keywords_estonia_eu_national_id_card`找到。 
+- 找到來自`Keywords_estonia_eu_national_id_card`的關鍵字。 
     
-DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
-- 函式`Func_estonia_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_estonia_eu_national_id_card`會找到符合模式的內容。 
     
 ```
  
@@ -270,73 +270,73 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 #### <a name="keywords_estonia_eu_national_id_card"></a>Keywords_estonia_eu_national_id_card
 
-個人識別碼的程式碼
+個人身分識別碼
   
-個人識別碼
+個人身分識別號碼
   
-國家識別碼
+國家識別號碼
   
-國際電話號碼
+國家/地區號碼
   
-個人識別碼
+個人號碼
   
 personalidnumber#
   
-ik
+益
   
 isikukood
   
-識別碼 kaart
+識別碼-kaart
   
 ## <a name="finland"></a>芬蘭
 
-如需詳細資訊，請參閱 「 芬蘭國民身分證 」 中[的敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。
+如需詳細資訊，請參閱[敏感資訊類型所尋找](what-the-sensitive-information-types-look-for.md)的「芬蘭國 ID」一節。
   
 ## <a name="france"></a>法國
 
-如需詳細資訊，請參閱 「 法國國民身分證 (CNI) 」 中[的敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。
+如需詳細資訊，請參閱[敏感資訊類型所尋找](what-the-sensitive-information-types-look-for.md)的「法國全國身分識別卡（CNI）」一節。
   
 ## <a name="germany"></a>德國
 
-如需詳細資訊，請參閱 「 德國身分證號碼 」 中[的敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。
+如需詳細資訊，請參閱[敏感資訊類型所尋找](what-the-sensitive-information-types-look-for.md)的「德國身分識別卡片編號」一節。
   
 ## <a name="greece"></a>希臘
 
-如需詳細資訊，請參閱 「 希臘國民身分證 」 中[的敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。
+如需詳細資訊，請參閱[敏感資訊類型所尋找](what-the-sensitive-information-types-look-for.md)的「希臘國 ID 卡」一節。
   
 ## <a name="hungary"></a>匈牙利
 
 ### <a name="format"></a>格式
 
-11 位數
+11位數
   
 ### <a name="pattern"></a>模式
 
-11 位數：
+11位數：
   
--  會對應至性別 （1-1 女 2 男 2 女性、 其他的數字是也可能公民出生 1900年之前或具有雙公民公民） 的一個數字 
+-  對應于性別（1-男，2-女，其他號碼）的一種數位，也可能是公民之前出生的公民，具有雙公民的1900或公民。 
     
-- 會對應至 (YYMMDD) 的出生日期的六位數
+- 對應至出生日期的六位數（YYMMDD）
     
-- 會對應至序號的三位數
+- 對應至序列值的三位數
     
 - 一個檢查碼
     
-### <a name="checksum"></a>總和檢查碼
+### <a name="checksum"></a>校驗
 
 是
   
 ### <a name="definition"></a>定義
 
-DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
   
-- 函式`Func_hungary_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_hungary_eu_national_id_card`會找到符合模式的內容。 
     
-- 從關鍵字`Keywords_hungary_eu_national_id_card`找到。 
+- 找到來自`Keywords_hungary_eu_national_id_card`的關鍵字。 
     
-DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
-- 函式`Func_hungary_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_hungary_eu_national_id_card`會找到符合模式的內容。 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -354,11 +354,11 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 #### <a name="keywords_hungary_eu_national_id_card"></a>Keywords_hungary_eu_national_id_card
 
-個人識別碼
+個人身分識別號碼
   
-識別碼
+識別號碼
   
-個人識別碼
+個人號碼
   
 személyazonosító igazolvány
   
@@ -366,43 +366,43 @@ személyazonosító igazolvány
 
 ### <a name="format"></a>格式
 
-九個字元字母、 數字，與組合中所指定的型態的空間
+在指定的模式中，字母、數位及空格的九個字元組合
   
 ### <a name="pattern"></a>模式
 
-九個字元字母、 數字，與組合中所指定的型態的空間
+在指定的模式中，字母、數位及空格的九個字元組合
   
-從 01 到現在的年 1 月 2013:
-  
--  七位數 
-    
-- 一個檢查碼
-    
-- 一個空格或大寫字母"W"（區分大小寫）
-    
-之前 01 年 1 月 2013:
+從01年1月2013至現在：
   
 -  七位數 
     
 - 一個檢查碼
     
-- 一個空格或大寫字母 （區分大小寫）
+- 一個空格或大寫字母 "W" （區分大小寫）
     
-### <a name="checksum"></a>總和檢查碼
+在2013年1月1日之前：
+  
+-  七位數 
+    
+- 一個檢查碼
+    
+- 一個空格或大寫字母（區分大小寫）
+    
+### <a name="checksum"></a>校驗
 
 是
   
 ### <a name="definition"></a>定義
 
-DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
   
-- 函數找到符合模式的內容。
+- 函數會找到符合模式的內容。
     
-- 找到來自於關鍵字。
+- 找到來自的關鍵字。
     
-DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
-- 函數找到符合模式的內容。
+- 函數會找到符合模式的內容。
     
 ```
  
@@ -421,63 +421,63 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 #### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
 
-個人公用服務號碼
+個人公開服務號碼
   
-pps 沒有
+pps 否
   
-收益及社會保險號碼
+收入與社交保險號碼
   
-rsi 不
+rsi 否
   
-個人識別碼
+個人身分識別號碼
   
-識別碼
+識別號碼
   
-個人識別碼
+個人號碼
   
 uimhir phearsanta seirbhíse poiblí
   
-uimh。 psp
+uimh. Psp
   
 ## <a name="italy"></a>義大利
 
 ### <a name="format"></a>格式
 
-字母和數字中指定的型態的 16 個字元組合
+指定之模式中字母和數位的16個字元組合
   
 ### <a name="pattern"></a>模式
 
-字母和數字 16 個字元組合：
+字母和數位的16個字元的組合：
   
-- 會對應到前三個母音系列名稱中的三個字母
+- 與系列名稱中的前三個雙子音相對應的三個字母
     
-- 會對應至第一、 第三個和第四個的三個字母母音在名字
+- 與名字中的第一個、第三個和第四個雙子音相對應的三個字母
     
-- 會對應至最後一位數的出生年份的兩位數
+- 與出生年份的最後一個數位相對應的兩位數
     
-- 對應於信件的出生的月份的一個字母 — 字母可用依字母順序，但只字母 A 到 E、 H、 L、 M、 P、 R 以 T 可用 （因此，一月是的而且年 10 月 R）
+- 對應至出生月份之字母的一個字母，在字母順序中使用字母，但是只會使用字母 A 到 E、H、L、M、P、P、R 到 T （即，一月份是 A，10月是 R）
     
-- 會對應至出生的月份日期的兩位數 — 為了區別 genders，40 會新增至的女性的出生日期
+- 兩位數的出生月份天數，為了區別 genders，40會新增到女士的出生日。
     
-- 會對應至 municipality 出生之人員的特定區域的程式碼的四個位數 （國家/地區全代碼用於外部國家/地區提供）
+- 相對於 municipality 人員專屬之地區代碼的四位數（國家/地區的碼用於外國國家）
     
-- 一個同位檢查數字
+- 一個同位數位
     
-### <a name="checksum"></a>總和檢查碼
+### <a name="checksum"></a>校驗
 
 是
   
 ### <a name="definition"></a>定義
 
-DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
   
-- 函式`Func_italy_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_italy_eu_national_id_card`會找到符合模式的內容。 
     
-- 從關鍵字`Keywords_italy_eu_national_id_card`找到。 
+- 找到來自`Keywords_italy_eu_national_id_card`的關鍵字。 
     
-DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
-- 函式`Func_italy_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_italy_eu_national_id_card`會找到符合模式的內容。 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -495,19 +495,19 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 #### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
-個人的程式碼
+個人程式碼
   
-個人代碼數字
+個人碼編號
   
-個人的憑證數目
+個人憑證號碼
   
-會計年度的程式碼
+會計代碼
   
 personalcodeno#
   
-個人識別碼
+個人號碼
   
-個人識別碼的程式碼
+個人識別碼代碼
   
 codice personale
   
@@ -525,35 +525,35 @@ codice fiscale
 
 ### <a name="format"></a>格式
 
-11 個數字和以指定的格式為連字號
+11位數和指定格式的連字號
   
 ### <a name="pattern"></a>模式
 
-11 位數，並連字號：
+11位數和連字號：
   
--  會對應至 (DDMMYY) 的出生日期的六位數 
+-  與出生日期對應的六位數（DDMMYY） 
     
 - 連字號
     
-- 會對應至的出生 （"0"19 世紀的、 20 世紀的"1"和"2"的第 21 世紀） 世紀的一個數字
+- 一個數位，對應至出生世紀（"0" 代表19世紀，"1" 代表20世紀，而 "2" 代表21世紀）
     
-- 四位數，隨機產生
+- 四位數（隨機產生）
     
-### <a name="checksum"></a>總和檢查碼
+### <a name="checksum"></a>校驗
 
 是
   
 ### <a name="definition"></a>定義
 
-DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
   
-- 函式`Func_latvia_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_latvia_eu_national_id_card`會找到符合模式的內容。 
     
-- 從關鍵字`Keywords_latvia_eu_national_id_card`找到。 
+- 找到來自`Keywords_latvia_eu_national_id_card`的關鍵字。 
     
-DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
-- 函式`Func_latvia_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_latvia_eu_national_id_card`會找到符合模式的內容。 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -571,53 +571,53 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 #### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
-個人的程式碼
+個人程式碼
   
-個人代碼數字
+個人碼編號
   
-個人的憑證數目
+個人憑證號碼
   
 personalcodeno#
   
-個人識別碼
+個人號碼
   
-個人識別碼的程式碼
+個人識別碼代碼
   
-人物代表 kods
+角色 kods
   
 ## <a name="lithuania"></a>立陶宛
 
 ### <a name="format"></a>格式
 
-11 位數不含空格和分隔符號
+11位數，不含空格及分隔符號
   
 ### <a name="pattern"></a>模式
 
-如果沒有空格和分隔符號的 11 位數：
+11位數，不含空格及分隔符號：
   
-- 會對應至該人員的性別和世紀的出生的一個數字
+- 對應至人員性別和出生世紀的一個數位
     
--  會對應至 (YYMMDD) 的出生日期的六位數 
+-  對應至出生日期的六位數（YYMMDD） 
     
-- 會對應至出生日期序號的三位數
+- 對應至出生日期之序號的三位數
     
 - 一個檢查碼
     
-### <a name="checksum"></a>總和檢查碼
+### <a name="checksum"></a>校驗
 
 是
   
 ### <a name="definition"></a>定義
 
-DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
   
-- 函式`Func_lithuania_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_lithuania_eu_national_id_card`會找到符合模式的內容。 
     
-- 從關鍵字`Keywords_lithuania_eu_national_id_card`找到。 
+- 找到來自`Keywords_lithuania_eu_national_id_card`的關鍵字。 
     
-DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
-- 函式`Func_lithuania_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_lithuania_eu_national_id_card`會找到符合模式的內容。 
     
 ```
  
@@ -636,17 +636,17 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 #### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
-個人數字碼
+個人數位代碼
   
-唯一識別數字
+唯一識別碼
   
-公民健保號碼
+公民服務號碼
   
-唯一識別數字
+唯一的身分識別號碼
   
 uniqueidentityno#
   
-個人的程式碼。
+個人程式碼。
   
 asmeninis skaitmeninis kodas
   
@@ -656,37 +656,37 @@ piliečio paslaugos numeris
   
 unikalus identifikavimo kodas
   
-asmens kodas。
+asmens kodas.
   
 ## <a name="luxemburg"></a>盧森堡
 
 ### <a name="format"></a>格式
 
-11 位數不含空格和分隔符號
+11位數，不含空格及分隔符號
   
 ### <a name="pattern"></a>模式
 
-11 位數
+11位數
   
-- 會對應至該人員的性別和世紀的出生的一個數字
+- 對應至人員性別和出生世紀的一個數位
     
--  會對應至 (YYMMDD) 的出生日期的六位數 
+-  對應至出生日期的六位數（YYMMDD） 
     
-- 會對應至出生日期序號的三位數
+- 對應至出生日期之序號的三位數
     
 - 一個檢查碼
     
-### <a name="checksum"></a>總和檢查碼
+### <a name="checksum"></a>校驗
 
 不適用
   
 ### <a name="definition"></a>定義
 
-DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
-- 規則運算式`Regex_luxemburg_eu_national_id_card`找到符合模式的內容。 
+- 正則運算式`Regex_luxemburg_eu_national_id_card`會找到符合模式的內容。 
     
-- 從關鍵字`Keywords_luxemburg_eu_national_id_card`找到。 
+- 找到來自`Keywords_luxemburg_eu_national_id_card`的關鍵字。 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -703,7 +703,7 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 個人識別碼
   
-個人識別碼
+個人號碼
   
 personalidno#
   
@@ -713,15 +713,15 @@ personalidnumber#
   
 唯一識別碼機碼
   
-個人識別碼的程式碼
+個人識別碼代碼
   
 uniqueidkey#
   
-個別的程式碼
+個別程式碼
   
-個別的識別碼
+個別識別碼
   
-eindeutige 識別碼 nummer
+eindeutige id-nummer
   
 eindeutige 識別碼
   
@@ -739,31 +739,31 @@ eindeutigeid#
 
 ### <a name="format"></a>格式
 
-一個字母後尾隨七位數
+七位數後接一個字母
   
 ### <a name="pattern"></a>模式
 
-一個字母後尾隨七位數：
+七位數後接一個字母：
   
 -  七位數 
     
-- 一個大寫字母 （區分大小寫）
+- 單一大寫字母（區分大小寫）
     
-### <a name="checksum"></a>總和檢查碼
+### <a name="checksum"></a>校驗
 
 不適用
   
 ### <a name="definition"></a>定義
 
-DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
-- 規則運算式`Regex_malta_eu_national_id_card`找到符合模式的內容。 
+- 正則運算式`Regex_malta_eu_national_id_card`會找到符合模式的內容。 
     
-- 從關鍵字`Keywords_malta_eu_national_id_card`找到。 
+- 找到來自`Keywords_malta_eu_national_id_card`的關鍵字。 
     
-DLP 原則是 65%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是65%：
   
-- 規則運算式`Regex_malta_eu_national_id_card`找到符合模式的內容。 
+- 正則運算式`Regex_malta_eu_national_id_card`會找到符合模式的內容。 
     
 ```
  
@@ -782,49 +782,49 @@ DLP 原則是 65%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 #### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
-個人數字碼
+個人數位代碼
   
-唯一識別數字
+唯一識別碼
   
-公民健保號碼
+公民服務號碼
   
-唯一識別數字
+唯一的身分識別號碼
   
 uniqueidentityno#
   
 kodiċi numerali personali
   
-numru 東西 ' identifikazzjoni uniku
+numru ta ' identifikazzjoni uniku
   
-numru 塔司 servizz taċ ċittadin
+numru tas-servizz taċ-ċittadin
   
-numru 東西 ' identità uniku
+numru ta ' identità uniku
   
 ## <a name="netherlands"></a>荷蘭
 
 ### <a name="format"></a>格式
 
-不含空格或分隔符號的九位數
+九位數，不含空格或分隔符號
   
 ### <a name="pattern"></a>模式
 
 九位數
   
-### <a name="checksum"></a>總和檢查碼
+### <a name="checksum"></a>校驗
 
 是
   
 ### <a name="definition"></a>定義
 
-DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
   
-- 函式`Func_netherlands_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_netherlands_eu_national_id_card`會找到符合模式的內容。 
     
-- 找到來自於關鍵字。
+- 找到來自的關鍵字。
     
-DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
-- 函式`Func_netherlands_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_netherlands_eu_national_id_card`會找到符合模式的內容。 
     
 ```
  
@@ -843,13 +843,13 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 #### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
 
-個人數字碼
+個人數位代碼
   
-唯一識別數字
+唯一識別碼
   
-公民健保號碼
+公民服務號碼
   
-唯一識別數字
+唯一的身分識別號碼
   
 uniqueidentityno#
   
@@ -867,37 +867,37 @@ uniek identiteitsnummer
   
 ## <a name="poland"></a>波蘭
 
-如需詳細資訊，請參閱 「 波蘭國家識別碼 (PESEL) 」 中[的敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。
+如需詳細資訊，請參閱[敏感資訊類型所尋找](what-the-sensitive-information-types-look-for.md)的「波蘭國家識別碼（PESEL）」一節。
   
 ## <a name="portugal"></a>葡萄牙
 
-如需詳細資訊，請參閱 「 葡萄牙公民證號碼 」 中[的敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。
+如需詳細資訊，請參閱[敏感資訊類型所尋找](what-the-sensitive-information-types-look-for.md)的「葡萄牙公民卡片編號」一節。
   
 ## <a name="romania"></a>羅馬尼亞
 
 ### <a name="format"></a>格式
 
-如果沒有空格和分隔符號的 13 位數
+13位數，不含空格及分隔符號
   
 ### <a name="pattern"></a>模式
 
-13 位數
+13位數
   
-### <a name="checksum"></a>總和檢查碼
+### <a name="checksum"></a>校驗
 
 是
   
 ### <a name="definition"></a>定義
 
-DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
   
-- 函式`Func_romania_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_romania_eu_national_id_card`會找到符合模式的內容。 
     
-- 從關鍵字`Keywords_romania_eu_national_id_card`找到。 
+- 找到來自`Keywords_romania_eu_national_id_card`的關鍵字。 
     
-DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
-- 函式`Func_romania_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_romania_eu_national_id_card`會找到符合模式的內容。 
     
 ```
  
@@ -916,31 +916,31 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 #### <a name="keywords_romania_eu_national_id_card"></a>Keywords_romania_eu_national_id_card
 
-個人數字碼
+個人數位代碼
   
-唯一識別數字
+唯一識別碼
   
-cnp
+Cnp
   
-cnp#
+Cnp#
   
-pin 碼
+針
   
-pin 碼#
+針#
   
 保險號碼
   
 insurancenumber#
   
-唯一識別數字
+唯一的身分識別號碼
   
 uniqueidentityno#
   
-cod 數值個人
+貨到數值的個人
   
-cod identificare 個人
+identificare 個人
   
-cod unic identificare
+貨至 unic identificare
   
 număr 個人 unic
   
@@ -958,27 +958,27 @@ numărpersonalunic#
 
 ### <a name="format"></a>格式
 
-10 位數包含一個反斜線
+10位數包含一個反斜線
   
 ### <a name="pattern"></a>模式
 
-10 位數包含一個反斜線：
+10位數包含一個反斜線：
   
-### <a name="checksum"></a>總和檢查碼
+### <a name="checksum"></a>校驗
 
 是
   
 ### <a name="definition"></a>定義
 
-DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
   
-- 函式`Func_slovakia_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_slovakia_eu_national_id_card`會找到符合模式的內容。 
     
-- 從關鍵字`Keywords_slovakia_eu_national_id_card`找到。 
+- 找到來自`Keywords_slovakia_eu_national_id_card`的關鍵字。 
     
-DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
-- 函式`Func_slovakia_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_slovakia_eu_national_id_card`會找到符合模式的內容。 
     
 ```
  
@@ -997,23 +997,23 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 #### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
-出生數目
+出生號碼
   
-國家識別碼
+國家識別號碼
   
-個人識別碼
+個人身分識別號碼
   
 社會安全號碼
   
 nationalnumber#
   
-ssn#
+Ssn#
   
-ssn
+Ssn
   
-國際電話號碼
+國家/地區號碼
   
-個人識別碼
+個人號碼
   
 personalidnumber#
   
@@ -1027,35 +1027,35 @@ rodne cislo
 
 ### <a name="format"></a>格式
 
-不含空格或分隔符號的 13 位數
+13位數，不含空格或分隔符號
   
 ### <a name="pattern"></a>模式
 
-13 位數，代表所指定的型態：
+指定的模式中的13位數：
   
--  會對應至出生日期 (DDMMLLL) 」 LLL 」 對應至最後一個三位數的出生年份的七位數 
+-  對應至出生日期（DDMMLLL）的7位數，其中 "LLL" 會對應至出生年份的後三位數 
     
-- 會對應至出生的區域中的兩位數
+- 對應至出生區域的兩位數
     
-- 在同一天 (000-如 1 女 2 男的 499) 和 500-999 名為女性出生的人會對應至性別及序號的組合的三位數
+- 三個數字，對應于一天出生的性別和序號碼組合（000-499 的插頭和500-999 的女）
     
 - 一個檢查碼
     
-### <a name="checksum"></a>總和檢查碼
+### <a name="checksum"></a>校驗
 
 是
   
 ### <a name="definition"></a>定義
 
-DLP 原則是 85%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
   
-- 函式`Func_slovenia_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_slovenia_eu_national_id_card`會找到符合模式的內容。 
     
-- 從關鍵字`Keywords_slovenia_eu_national_id_card`找到。 
+- 找到來自`Keywords_slovenia_eu_national_id_card`的關鍵字。 
     
-DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
-- 函式`Func_slovenia_eu_national_id_card`找到符合模式的內容。 
+- 函數`Func_slovenia_eu_national_id_card`會找到符合模式的內容。 
     
 ```
  
@@ -1074,17 +1074,17 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 #### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
-個人數字碼
+個人數位代碼
   
-唯一識別數字
+唯一識別碼
   
-唯一登記號碼
+唯一註冊號碼
   
-唯一識別數字
+唯一的身分識別號碼
   
 uniqueidentityno#
   
-唯一的主版公民數目
+唯一主公民號碼
   
 edinstvena identifikacijska številka
   
@@ -1098,27 +1098,27 @@ emšo
 
 ### <a name="format"></a>格式
 
-七位數後尾隨一個字元
+七位數後接一個字元
   
 ### <a name="pattern"></a>模式
 
-七位數後尾隨一個字元
+七位數後接一個字元
   
 - 七位數
     
-- 一個數字或字母 （不區分大小寫）
+- 一個數位或字母（不區分大小寫）
     
-### <a name="checksum"></a>總和檢查碼
+### <a name="checksum"></a>校驗
 
 不適用
   
 ### <a name="definition"></a>定義
 
-DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是 300 個字元：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
-- 規則運算式`Regex_spain_eu_national_id_card`找到符合模式的內容。 
+- 正則運算式`Regex_spain_eu_national_id_card`會找到符合模式的內容。 
     
-- 從關鍵字`Keywords_spain_eu_national_id_card"`找到。 
+- 找到來自`Keywords_spain_eu_national_id_card"`的關鍵字。 
     
 ```
  
@@ -1136,19 +1136,19 @@ DLP 原則是 75%以內，已偵測到此敏感資訊類型的如果鄰近性是
 
 dni
   
-國家識別碼
+國家識別號碼
   
-國民身分識別號碼
+本國身分識別號碼
   
 保險號碼
   
-個人識別碼
+個人身分識別號碼
   
-國民身分識別
+本國身分識別
   
-個人身分識別沒有
+個人身分識別
   
-唯一識別數字
+唯一的身分識別號碼
   
 nationalidno#
   
@@ -1158,9 +1158,9 @@ dni#
   
 nationalid#
   
-nie#
+聶#
   
-nie
+聶
   
 nienúmero#
   
@@ -1180,9 +1180,9 @@ identidadúnico#
   
 ## <a name="sweden"></a>瑞典
 
-如需詳細資訊，請參閱 「 瑞典國民身分證 」 中[的敏感資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。
+如需詳細資訊，請參閱[敏感資訊類型所尋找](what-the-sensitive-information-types-look-for.md)的「瑞典全國識別碼」一節。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
 

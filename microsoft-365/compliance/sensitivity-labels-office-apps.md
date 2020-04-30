@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 深入瞭解使用者如何使用 Office 應用程式中的敏感度標籤、適用于行動裝置的 Office 應用程式，以及適用于 web 的 Office 應用程式。 瞭解哪些應用程式支援靈敏度標籤。
-ms.openlocfilehash: 87e4425658044d29c9306cdf57c13941c2d62785
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8015df13735097292be7c2866cdb9f5c061b2c68
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635791"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943596"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -56,7 +56,7 @@ ms.locfileid: "43635791"
 |[提供自訂 [説明] 頁面的 [說明] 連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[標記內容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 推出[每月通道](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus)（2003 +） | 推出[每月通道](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-office-365-proplus)（16.35 +）   | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
+|[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 推出[每月通道](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-microsoft-365-apps)（2003 +） | 推出[每月通道](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-microsoft-365-apps)（16.35 +）   | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
 |使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 在 [複查] 下            | 在 [複查] 下        | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
 |[要求使用者將標籤套用至電子郵件和檔](sensitivity-labels.md#what-label-policies-can-do)   | 在 [複查] 下            | 在 [複查] 下        | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 預覽：在[Office 有問必答](https://office.com/insider)                                  | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | [預覽](sensitivity-labels-sharepoint-onedrive-files.md) |

@@ -1,5 +1,5 @@
 ---
-title: 設定連接器以匯入 HR 資料
+title: 設定連接器以匯入人力資源資料
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -10,18 +10,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: 管理員可以設定資料連線器，將員工資料從組織的人力資源（HR）系統匯入 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的 HR 資料，協助您偵測可能會對組織造成內部威脅之特定使用者的活動。
-ms.openlocfilehash: 53c1a44ad1e27d2d1002680faee56ae88e3e0921
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: 0850e3fbbccb7653ddb9c56c07deaad9ed13f84a
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710542"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943362"
 ---
-# <a name="set-up-a-connector-to-import-hr-data"></a>設定連接器以匯入 HR 資料
+# <a name="set-up-a-connector-to-import-hr-data"></a>設定連接器以匯入人力資源資料
 
-您可以設定 Microsoft 365 規範中心內的資料連線器，以匯入人力資源（HR）資料，例如，員工提交其辭職的日期和員工最後一天的日期。 這種 HR 資料可供 Microsoft 資訊保護解決方案使用，例如新的[有問必答風險管理解決方案](insider-risk-management.md)，以協助保護您的組織免受惡意活動或組織內的資料竊取。 設定 HR 連接器是指在 Azure Active Directory 中建立應用程式，以供連接器驗證使用，建立包含 HR 資料的 CSV 對應檔案，在規範中心建立資料連線器，然後執行腳本（在排程），將 CSV 檔案中的 HR 資料 ingests 至 Microsoft 雲端。 然後，使用 Microsoft 相容性解決方案（如「內幕風險管理」）的資料連線器，以存取已匯入至 Microsoft 365 組織的 HR 資料。
+您可以設定 Microsoft 365 規範中心內的資料連線器，以匯入人力資源（HR）資料，例如，員工提交其辭職的日期和員工最後一天的日期。 這種 HR 資料可供 Microsoft 資訊保護解決方案使用，例如新的[有問必答風險管理解決方案](insider-risk-management.md)，以協助保護您的組織免受惡意活動或組織內的資料竊取。 設定 HR 連接器是指在 Azure Active Directory 中建立應用程式，以供連接器進行驗證，建立包含 HR 資料的 CSV 對應檔案，在規範中心建立資料連線器，然後在 CSV 檔案中以 ingests 的 HR 資料來執行腳本（以排程為基礎）。 然後，使用 Microsoft 相容性解決方案（如「內幕風險管理」）的資料連線器，以存取已匯入至 Microsoft 365 組織的 HR 資料。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -31,7 +33,7 @@ ms.locfileid: "42710542"
 
 - 您必須決定如何從組織的 HR 系統（定期）取得或匯出資料，並將其新增至步驟2中所述的 CSV 檔案。 您在步驟4中執行的腳本會將 CSV 檔案中的 HR 資料上傳至 Microsoft 雲端。
 
-- 您在步驟4中執行的範例腳本會將 HR 資料上傳至 Microsoft 雲端，以供其他 Microsoft 工具使用，例如有問必答風險管理解決方案。 在任何 Microsoft standard support 計畫或服務下，都不支援此範例腳本。 範例腳本是以不含任何類型擔保的方式提供。 Microsoft 進一步否認所有暗示擔保，包括但不限於任何適售性或特定用途適用性的暗示擔保。 因使用或效能範例腳本及檔的整體風險，仍然保留給您。 在沒有任何事件的情況下，Microsoft、其作者或腳本的建立、實際執行或交付的任何人都會對任何損壞造成責任（包括但不限於業務利潤損失、業務中斷、遺失的損害）由於使用或無法使用範例腳本或檔，即使 Microsoft 已被告知可能有這類損害的可能性，也引起的商務資訊或其他 pecuniary 遺失。
+- 您在步驟4中執行的範例腳本會將 HR 資料上傳至 Microsoft 雲端，以供其他 Microsoft 工具使用，例如有問必答風險管理解決方案。 在任何 Microsoft standard support 計畫或服務下，都不支援此範例腳本。 範例腳本是以不含任何類型擔保的方式提供。 Microsoft 進一步否認所有暗示擔保，包括但不限於任何適售性或特定用途適用性的暗示擔保。 因使用或效能範例腳本及檔的整體風險，仍然保留給您。 在任何事件中，Microsoft、其作者、（包括但不限於使用或無法使用範例腳本或檔的任何損害（包括（但不限於）因使用或無法使用範例腳本或檔而造成的任何損害（包括但不限於公司中斷、商務中斷、商務資訊遺失或其他 pecuniary 遺失）以外的任何損害（包括但不限於）使用或無法使用範例腳本或檔時所產生的任何其他
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步驟1：在 Azure Active Directory 中建立應用程式
 
@@ -92,7 +94,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
    隨即會顯示 [狀態] 頁面，確認已建立連接器。 此頁面也包含工作識別碼。 在下一個步驟中，您將需要此工作識別碼來執行腳本。 您可以從這個頁面或從連接線的快顯視窗中複製此頁面。
 
-7. 按一下 **[完成]**。
+7. 按一下 [完成]****。
    
    新的連接器會顯示在 [**連接器**] 索引標籤上的清單中。 
 

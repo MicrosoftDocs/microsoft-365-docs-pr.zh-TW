@@ -9,16 +9,18 @@ audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection:
 - M365-security-compliance
 - remotework
 description: 保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。
-ms.openlocfilehash: f2d76fd92ac6d439fd6400a0478028c99ae935eb
-ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
+ms.openlocfilehash: 04f59d4f87bda9460930b54818d2ab43933d11e5
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43808840"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943540"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>最常見的12個任務，可供安全性小組用來支援在家運作
 
@@ -45,7 +47,7 @@ ms.locfileid: "43808840"
 |8       |  [將電腦登記到裝置管理並要求相容的電腦](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9       | [針對 cloud connectivity 優化網路](#9-optimize-your-network-for-cloud-connectivity)  |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |10    | [訓練使用者](#10-train-users) |    ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|11  |[開始使用 Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|11  |[開始使用 Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |  |  |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
 |12  |[監視威脅並採取動作](#12-monitor-for-threats-and-take-action) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 

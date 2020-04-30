@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft name.com。
-ms.openlocfilehash: 9183d27641ee22d9e49be2ca04832ab68bc20ace
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 8518ca2570b3be1cb3abcd5c57b8309e989481cb
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919733"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938657"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>在 name.com 建立 Microsoft 的 DNS 記錄
 
@@ -34,8 +34,7 @@ ms.locfileid: "43919733"
 如果 name.com 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
   
 在 name.com 新增這些記錄之後，您的網域就會設定為與 Microsoft 服務搭配使用。
-  
-若要了解使用 Microsoft 網站的虛擬主機和 DNS，請參閱[搭配 Microsoft 使用公用網站](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)。
+
   
 > [!NOTE]
 > DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 

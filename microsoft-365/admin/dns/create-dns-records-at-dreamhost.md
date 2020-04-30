@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9c0812e0-908b-4b41-a64b-77f0dbd3db7a
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Dreamhost。
-ms.openlocfilehash: 2187cc155bc15e8482960d933d9136401ea29beb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 756889457e802bdd9ee18b239b6986fb69f6b924
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629800"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939292"
 ---
 # <a name="create-dns-records-at-dreamhost-for-microsoft"></a>在 Dreamhost 建立 Microsoft 的 DNS 記錄
 
@@ -35,7 +35,6 @@ ms.locfileid: "43629800"
  
 在 DreamHost 新增這些記錄之後，您的網域就會設定為與 Microsoft 服務搭配使用。
   
-若要深入瞭解 Microsoft 的網站的主控和 DNS，請參閱搭配[Microsoft 使用公用網站](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx)。
   
 > [!NOTE]
 > DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
@@ -43,7 +42,7 @@ ms.locfileid: "43629800"
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 <a name="BKMK_verify"> </a>
 
-在將您的網域與 Microsoft 搭配使用之前，我們必須先確認您擁有該網域。 您能夠在您的網域註冊機構登入您的帳戶，並為您擁有網域的 Microsoft 建立 DNS 記錄證明。
+在您將自己的網域用於 Microsoft 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Microsoft 就能確信您擁有該網域。
   
 > [!NOTE]
 > 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
@@ -66,9 +65,9 @@ ms.locfileid: "43629800"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**名稱**|**Type**|**Value**|**Comment**|
+    |**Name**|**Type**|**Value**|**Comment**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 從表格中，使用您的特定**目的地或指向位址**值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |（此欄位是選用的。）  <br/> |
+    |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |（此欄位是選用的。）  <br/> |
    
    ![Dreamhost-BP-Verify-1-1](../../media/ed4a7d43-eeeb-4ec8-849c-37f81315dc69.png)
   
@@ -78,11 +77,11 @@ ms.locfileid: "43629800"
   
 6. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
-現在，您已在網域註冊機構的網站上新增記錄，您會回到 Microsoft 並要求記錄。
+現在您已在網域註冊機構網站新增記錄，請返回 Microsoft 並要求該記錄。
   
-當 Microsoft 找到正確的 TXT 記錄後，您的網域就會經過驗證。
+在 Microsoft 找到正確的 TXT 記錄後，您的網域就完成驗證了。
   
-1. 在 Microsoft 系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+1. 在 Microsoft 系統管理中心中，移至 [設定]**** \> [網域]<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> 頁面。
 
     
 2. 在 **[網域]** 頁面上，選取您要驗證的網域。 
@@ -102,7 +101,7 @@ ms.locfileid: "43629800"
   
 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，使您網域的電子郵件將會傳送給 Microsoft
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，以將寄往您網域的電子郵件轉至 Microsoft
 <a name="BKMK_add_MX"> </a>
 
 請依照下列步驟進行。
@@ -167,7 +166,7 @@ ms.locfileid: "43629800"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**名稱**|**Type**|**Value**|**Comment**|
+    |**Name**|**Type**|**Value**|**Comment**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> |（此欄位是選用的。）  <br/> |
     |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |（此欄位是選用的。）  <br/> |
@@ -188,7 +187,7 @@ ms.locfileid: "43629800"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果您已有網域的 SPF 記錄，請不要為 Microsoft 建立新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。
   
 請依照下列步驟操作。
   
@@ -210,7 +209,7 @@ ms.locfileid: "43629800"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**名稱**|**Type**|**Value**|**Comment**|
+    |**Name**|**Type**|**Value**|**Comment**|
     |:-----|:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |（此欄位是選用的。）  <br/> |
    
@@ -223,7 +222,7 @@ ms.locfileid: "43629800"
 6. 使用前面的兩個步驟和表格中第二列的值，新增其他 SRV 記錄。
     
   
-## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的兩筆 SRV 記錄
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增兩筆 Microsoft 所需的 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
 
 請依照下列步驟進行。
@@ -246,7 +245,7 @@ ms.locfileid: "43629800"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**名稱**|**Type**|**Value**|**Comment**|
+    |**Name**|**Type**|**Value**|**Comment**|
     |:-----|:-----|:-----|:-----|
     |_sip。 _tls  <br/> |SRV  <br/> |100 1 443  <br/> sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |（此欄位是選用的。）  <br/> |
     |_sipfederationtls。 _tcp  <br/> |SRV  <br/> |100 1 5061  <br/> sipfed.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |（此欄位是選用的。）  <br/> |

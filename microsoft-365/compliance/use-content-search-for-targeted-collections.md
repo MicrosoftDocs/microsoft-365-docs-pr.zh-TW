@@ -13,15 +13,17 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: 在安全性 & 規範中心使用內容搜尋，以執行目標集合。 目標集合表示您確信已回應案例或特權專案的專案位於特定信箱或網站資料夾中。 使用本文中的腳本，取得您要搜尋之特定信箱或網站資料夾的資料夾識別碼或路徑。
-ms.openlocfilehash: e6de817e7ec324e6aa80ef596340906c2f86d126
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4808dad8faed99ac15c4f9828ad1759e2f1179fc
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633378"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942976"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>對目標集合使用內容搜尋
 
@@ -229,11 +231,11 @@ ms.locfileid: "43633378"
     
     - 按一下 **[選擇要搜尋的特定信箱**]，然後新增當您在步驟1中執行腳本時所指定的相同信箱。 
     
-      或
+      或者
     
     - 按一下 **[選擇要搜尋的特定網站**] 進行搜尋，然後新增當您在步驟1中執行腳本時所指定的相同網站 URL。 
     
-6. 按 **[下一步]**。
+6. 按 [下一步]****。
     
 7. 在 [**您想要做什麼？** ] 頁面上的 [關鍵字] 方塊中， `folderid:<folderid>`將`documentlink:<path>`步驟1中的腳本所傳回的 or 值貼上。 
     

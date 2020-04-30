@@ -15,36 +15,37 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
+- MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: 了解如何建立像搜尋及透過 Office 365 中的安全性 & 合規性中心中的 PowerShell 指令碼執行報告的內容搜尋工作自動化。
-ms.openlocfilehash: 915ea910eebba8f6f39ceb41d9475769a6403729
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 瞭解如何透過 Office 365 的安全性 & 規範中心內的 PowerShell 腳本，以自動化內容搜尋工作，例如建立搜尋及執行報告。
+ms.openlocfilehash: 4e66013ba34c71fd7e2078691f892c2ae289538b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077181"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943494"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>建立、報告及刪除多個內容搜尋
 
- 快速建立和報告探索搜尋是通常重要步驟 eDiscovery 與調查時您想要了解基礎的資料，以及豐富性和搜尋的品質。 若要協助您這麼做，安全性 & 合規性中心 PowerShell 會提供一組 cmdlet 來自動化耗時的內容搜尋工作。 這些指令碼提供快速又簡單的方式，來建立搜尋，數目，然後再執行報告可協助您判斷有問題的資料數量的預估的搜尋結果。 您也可以使用指令碼以建立不同版本的搜尋來比較每個產生的結果。 這些指令碼可協助您快速且更有效地識別及 cull 您的資料。 
+ 當您嘗試深入瞭解基礎資料時，以及搜尋的豐富程度和品質，在 eDiscovery 和調查中，快速建立及報告探索搜尋通常是很重要的步驟。 為了協助您執行這項作業，安全性 & 規範中心 PowerShell 提供一組 Cmdlet，以自動化耗時的內容搜尋任務。 這兩個腳本提供一種快速快捷的方式來建立許多搜尋，然後執行估計的搜尋結果報告，可協助您判斷問題的資料量。 您也可以使用腳本來建立不同的搜尋版本，以比較每個搜尋產生的結果。 這些腳本可協助您快速且有效地識別及挑選您的資料。 
   
 ## <a name="before-you-begin"></a>開始之前
 
-- 您必須是 eDiscovery 管理員角色群組的成員安全 & 與規範中心執行本主題中所述的指令碼。 
+- 您必須是 Security & 合規性中心內 eDiscovery 管理員角色群組的成員，才可執行本主題中所述的腳本。 
     
-- Onedrive for Business 網站組織可讓您加入至步驟 1 中的 CSV 檔案中收集的 Url 清單，請參閱[建立您組織中的所有 OneDrive 位置清單](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a)。 
+- 若要收集組織中您可以在步驟1中新增至 CSV 檔案之商務網站的 OneDrive URLs 清單，請參閱[建立組織中所有 OneDrive 位置的清單](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a)。 
     
-- 請務必儲存您在本主題的相同資料夾中建立的所有檔案。 會將執行指令碼比較方便。
+- 請務必將您在本主題中建立的所有檔案儲存至相同的資料夾。 這樣會使執行腳本變得更容易。
     
-- 指令碼包含最少的錯誤處理。 其主要目的是要快速地建立、 回報及刪除多個內容搜尋。
+- 腳本包含最低的錯誤處理。 其主要用途是快速建立、報告和刪除多個內容搜尋。
     
 - 在任何 Microsoft 標準支援程式或服務下，不支援本主題提供的指令碼。範例指令碼係依「現狀」提供，不附帶任何明示或默示的擔保。Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。使用或操作範例指令碼和文件發生的所有風險皆屬於您的責任。Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
     
-## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>步驟 1： 建立 CSV 檔案，其中包含您想要執行搜尋的相關資訊
+## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>步驟1：建立包含您要執行之搜尋資訊的 CSV 檔案
 
-您在此步驟中建立的逗點分隔的值 (CSV) 檔案包含每個使用者想要搜尋資料列。 您可以搜尋使用者的 Exchange Online 信箱 （其中包含封存信箱，如果已啟用），其 OneDrive for Business 網站。 或者，您可以搜尋只是信箱或商務用 OneDrive 網站。 您也可以在 SharePoint Online 組織中搜尋任何網站。 您在步驟 3 中執行的指令碼會建立 CSV 檔案中的每一列的個別搜尋。 
+在此步驟中建立的逗點分隔值（CSV）檔案，會為每一個要搜尋的使用者包含一列。 您可以搜尋使用者的 Exchange Online 信箱（包含封存信箱（如果已啟用），以及其 OneDrive 的商務網站。 或者，您可以只搜尋商務網站的信箱或 OneDrive。 您也可以搜尋 SharePoint Online 組織中的任何網站。 您在步驟3中執行的腳本會為 CSV 檔案中的每一列建立個別的搜尋。 
   
-1. 複製並貼入.txt 檔案，使用 [記事本] 中的下列文字。 此檔案儲存至資料夾，在本機電腦上。 您將此資料夾以及儲存其他指令碼。
+1. 使用 [記事本] 複製並貼上下列文字至 .txt 檔案。 將此檔案儲存到本機電腦上的資料夾。 您也可以將其他腳本儲存至此資料夾。
     
     ```text
     ExchangeLocation,SharePointLocation,ContentMatchQuery,StartDate,EndDate
@@ -56,25 +57,25 @@ ms.locfileid: "42077181"
     ,https://contoso-my.sharepoint.com/personal/janets_contoso_onmicrosoft_com,,1/1/2015,
     ```
 
-    在第一列或標題列，該檔案列出**New-compliancesearch** cmdlet （在步驟 3 中的指令碼） 時用來建立新的內容搜尋的參數。 每個參數名稱都是以逗號分隔。 請確定標題列中沒有任何空格。 標題列底下的每個資料列代表每個搜尋的參數值。 請務必將 CSV 檔案中的版面配置區資料取代實際資料。 
+    檔案的第一列（或標題列）會列出**New-ComplianceSearch** Cmdlet （在步驟3的腳本中）建立新的內容搜尋時所使用的參數。 每個參數名稱都是以逗號分隔。 請確定標頭列中沒有任何空格。 標頭列底下的每一列都代表每個搜尋的參數值。 請務必以實際資料取代 CSV 檔案中的預留位置資料。 
     
-2. 在 Excel 中，開啟.txt 檔案，並再使用下表中的資訊來編輯每個搜尋資訊的檔案。 
+2. 在 Excel 中開啟 .txt 檔，然後使用下表中的資訊，針對每個搜尋的資訊來編輯檔案。 
     
     |**參數**|**描述**|
     |:-----|:-----|
-    | `ExchangeLocation` <br/> |使用者信箱的 SMTP 地址。  <br/> |
-    | `SharePointLocation` <br/> |使用者的 OneDrive for Business 網站或組織中任何網站的 URL 的 URL。 Onedrive for Business 網站的 url，請使用此格式： ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `。 例如，  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`。  <br/> |
-    | `ContentMatchQuery` <br/> |搜尋的搜尋查詢。 如需建立搜尋查詢的詳細資訊，請參閱[關鍵字查詢和搜尋條件的內容搜尋](keyword-queries-and-search-conditions.md)。  <br/> |
-    | `StartDate` <br/> |電子郵件，日期當時或之後的訊息已接收到收件者或寄件者所傳送。 文件在 SharePoint 或 OneDrive for Business 網站的上次修改日期當時或之後的文件。  <br/> |
-    | `EndDate` <br/> |電子郵件所傳送的日期當天或之前的訊息已傳送的使用者。 文件在 SharePoint 或 OneDrive for Business 網站的上次修改日期當天或之前的文件。  <br/> |
+    | `ExchangeLocation` <br/> |使用者信箱的 SMTP 位址。  <br/> |
+    | `SharePointLocation` <br/> |使用者的商務用網站 OneDrive URL，或組織中任何網站的 URL。 若為商務用網站的 OneDrive URL，請使用此格式` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `：。 例如，  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`。  <br/> |
+    | `ContentMatchQuery` <br/> |搜尋的搜尋查詢。 如需建立搜尋查詢的詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。  <br/> |
+    | `StartDate` <br/> |若為電子郵件，收件者或傳送者傳送郵件的日期或後的日期。 對於商務網站 SharePoint 或 OneDrive 的檔，上次修改檔的日期。  <br/> |
+    | `EndDate` <br/> |電子郵件，由使用者傳送的郵件傳送日期或之前的日期。 對於商務網站 SharePoint 或 OneDrive 的檔，上次修改檔的日期。  <br/> |
    
-3. Excel 檔案儲存為 CSV 檔案的資料夾在本機電腦上。 您在步驟 3 中建立的指令碼會建立搜尋，以使用 CSV 檔案中的資訊。 
+3. 將 Excel 檔案當做 CSV 檔案儲存至本機電腦上的資料夾。 您在步驟3中建立的腳本會使用此 CSV 檔案中的資訊來建立搜尋。 
   
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步驟 2︰連線至安全性與合規性中心 PowerShell
 
-下一步是連線至安全性 & 貴組織的合規性中心 PowerShell。
+下一步是連接至組織的安全性 & 規範中心 PowerShell。
   
-1. 使用.ps1 檔名尾碼，將下列文字儲存至 Windows PowerShell 指令碼檔案例如， `ConnectSCC.ps1`。 將檔案儲存至您儲存 CSV 檔案，以在步驟 1 中的相同資料夾。
+1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `ConnectSCC.ps1`。 將檔案儲存到您在步驟1中儲存 CSV 檔案的相同資料夾。
     
     ```powershell
     # Get login credentials 
@@ -84,23 +85,23 @@ ms.locfileid: "42077181"
     $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
     ```
 
-2. 在您的本機電腦上開啟 Windows PowerShell 移至您在上一個步驟中建立的指令碼所在的資料夾，然後執行指令碼。例如：
+2. 在您的本機電腦上，開啟 [Windows PowerShell]，移至您在上一個步驟中建立的腳本所在的資料夾，然後執行腳本;例如：
     
     ```powershell
     .\ConnectSCC.ps1
     ```
 
-## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>步驟 3： 執行指令碼，以建立並啟動搜尋
+## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>步驟3：執行腳本以建立及啟動搜尋
 
-在此步驟中的指令碼會建立每個資料列的個別內容搜尋您在步驟 1 建立的 CSV 檔案中。 當您執行此指令碼時，將會提示您輸入兩個值：
+此步驟中的腳本會針對您在步驟1中建立的 CSV 檔案中的每一列，建立個別的內容搜尋。 當您執行此腳本時，系統會提示您輸入兩個值：
   
-- **搜尋群組識別碼**此名稱會提供簡單的方法來組織建立 CSV 檔中搜尋。 會建立每個搜尋名為具有搜尋群組識別碼，並接著一個數字會附加至搜尋名稱。 例如，如果您輸入**ContosoCase**搜尋群組識別碼，然後搜尋名為**ContosoCase_1**、 **ContosoCase_2**、 **ContosoCase_3**，等等。 請注意，您輸入的名稱是區分大小寫。 當您使用步驟 4 和步驟 5 中搜尋群組識別碼時，您必須使用相同的情況下，如同您在建立時。 
+- **搜尋群組識別碼**-此名稱提供一種簡單的方法，可組織從 CSV 檔案建立的搜尋。 所建立的每個搜尋都是以搜尋群組識別碼命名，然後在搜尋名稱中附加數位。 例如，如果您為搜尋群組識別碼輸入**ContosoCase** ，則搜尋會命名為**ContosoCase_1**、 **ContosoCase_2**、 **ContosoCase_3**等。 請注意，您輸入的名稱會區分大小寫。 當您在步驟4和步驟5中使用搜尋群組識別碼時，您必須使用與建立它時相同的大小寫。 
     
-- **CSV 檔案**-您在步驟 1 中建立 CSV 檔案的名稱。 請務必包含使用完整的檔案名稱，包含.csv 檔案的副檔名;例如， `ContosoCase.csv`。
+- **Csv**檔案-您在步驟1中建立的 CSV 檔案名。 請務必包含使用完整檔案名，包含 .csv 副檔名;例如， `ContosoCase.csv`。
     
 若要執行指令碼，請執行下列步驟：
 
-1. 使用.ps1 檔名尾碼，將下列文字儲存至 Windows PowerShell 指令碼檔案例如， `CreateSearches.ps1`。 將檔案儲存到您用來儲存其他檔案的相同資料夾。
+1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `CreateSearches.ps1`。 將檔案儲存到儲存其他檔案所在的相同資料夾。
     
   ```Powershell
   # Get the Search Group ID and the location of the CSV input file
@@ -177,27 +178,27 @@ ms.locfileid: "42077181"
   }
   ```
 
-2. 在 Windows PowerShell 中，移至在前一個步驟中，您儲存指令碼的所在資料夾，然後執行指令碼;例如：
+2. 在 [Windows PowerShell] 中，移至上一個步驟中您用來儲存腳本的資料夾，然後執行腳本;例如：
     
     ```Powershell
     .\CreateSearches.ps1
     ```
 
-3. 在**搜尋群組識別碼**提示字元處，輸入搜尋群組名稱，然後按下**Enter**。例如， `ContosoCase`。 請記住此名稱會區分大小寫，所以您必須先在後續步驟中輸入相同的方式。
+3. 在 [**搜尋群組識別碼**] 提示中，輸入搜尋組名，然後按**enter**;例如， `ContosoCase`。 請記住，此名稱區分大小寫，所以您必須在後續步驟中以相同的方式輸入此名稱。
     
-4. 在**來源 CSV 檔案**提示字元處，輸入 CSV 檔案中，包含.csv 檔案的副檔名; 名稱例如， `ContosoCase.csv`。
+4. 在**來源 CSV**檔案提示字元處，輸入 csv 檔案名（包括 .csv 副檔名）的名稱;例如， `ContosoCase.csv`。
     
-5. 按**Enter**以繼續執行指令碼。 
+5. 按**enter**繼續執行腳本。 
     
-    指令碼會顯示進度的建立和執行搜尋。 指令碼完成時，它會傳回的提示。 
+    腳本會顯示建立及執行搜尋的進度。 當腳本完成時，會傳回提示。 
     
     ![執行指令碼以建立多個規範搜尋的範例輸出](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
   
-## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>步驟 4： 執行指令碼，以報告搜尋估計
+## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>步驟4：執行腳本以報告搜尋估計
 
-建立搜尋之後下, 一步是執行指令碼來顯示簡單的步驟 3 中建立每個搜尋的搜尋點擊數報告。 報告也會包含每個搜尋和點擊的總數與總大小的所有搜尋結果的大小。 當您執行報告的指令碼時，系統會提示您針對搜尋群組 ID]，然後將 CSV 檔案名稱如果您想要將報告儲存至 CSV 檔案。
+在您建立搜尋之後，下一步是執行腳本，以顯示在步驟3中所建立之每個搜尋之搜尋命中數目的簡單報告。 報告也包含每個搜尋的結果大小，以及所有搜尋的命中總數及總大小。 當您執行報表腳本時，系統會提示您輸入搜尋群組識別碼，如果您想要將報告儲存至 CSV 檔案，則會提示您輸入 CSV 檔案名。
   
-1. 使用.ps1 檔名尾碼，將下列文字儲存至 Windows PowerShell 指令碼檔案例如， `SearchReport.ps1`。 將檔案儲存到您用來儲存其他檔案的相同資料夾。
+1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `SearchReport.ps1`。 將檔案儲存到儲存其他檔案所在的相同資料夾。
     
   ```Powershell
   $searchGroup = Read-Host 'Search Group ID'
@@ -252,30 +253,30 @@ ms.locfileid: "42077181"
   }
   ```
 
-2. 在 Windows PowerShell 中，移至在前一個步驟中，您儲存指令碼的所在資料夾，然後執行指令碼;例如：
+2. 在 [Windows PowerShell] 中，移至上一個步驟中您用來儲存腳本的資料夾，然後執行腳本;例如：
     
     ```Powershell
     .\SearchReport.ps1
     ```
 
-3. 在**搜尋群組識別碼**提示字元處，輸入搜尋群組名稱，然後按下**Enter**。例如`ContosoCase`。 請記住，這個名稱會區分大小寫，所以您必須先輸入相同的方式一樣當您在步驟 3 中執行指令碼時。
+3. 在 [**搜尋群組識別碼**] 提示中，輸入搜尋組名，然後按**enter**;例如`ContosoCase`。 請記住，這個名稱是區分大小寫的，所以您必須使用在步驟3中執行腳本時所用的相同方式來輸入。
     
-4. **檔案路徑，以儲存到一個 CSV 檔案 （只顯示 [報表保留空白） 報告**系統提示時，請輸入完整的檔名的路徑 （包括.csv 檔案的副檔名） 的檔案名稱，如果您想要將報告儲存至 CSV 檔案。 CSV 檔案，包括副檔名為.csv 檔案的名稱。 例如，您可以輸入`ContosoCaseReport.csv`若要將它儲存到目前的目錄或您可以輸入`C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv`將它儲存到不同的資料夾。 您也可以將提示顯示報表，但不將它儲存到檔案留白。 
+4. 若要將報告儲存至**csv 檔案（保留空白以顯示報告）** 提示，請在您想要將報告儲存至 csv 檔案時，輸入完整檔案名路徑的檔案名（包括 .csv 副檔名）。 CSV 檔案名（包括 .csv 副檔名）的名稱。 例如，您可以輸入`ContosoCaseReport.csv`將其儲存至目前的目錄，或輸入`C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv`將其儲存至不同的資料夾。 您也可以將提示保留空白，以顯示報表，但不會將其儲存至檔案。 
     
 5. 按 **Enter**。
     
-    指令碼會顯示進度的建立和執行搜尋。 指令碼完成時，會顯示報表。 
+    腳本會顯示建立及執行搜尋的進度。 當腳本完成時，就會顯示報告。 
     
     ![執行搜尋報告，以顯示搜尋群組的估計](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
   
 > [!NOTE]
-> 如果相同的信箱或網站指定為 [搜尋] 群組中的多個搜尋的內容位置，（適用於項目數目與大小總計） 報告中的總結果估計可能包含相同的項目結果。 這是因為在相同的電子郵件或文件會被計算一次以上如果它會比對 [搜尋] 群組中的不同搜尋查詢。 
+> 如果相同的信箱或網站指定為搜尋群組中的多個搜尋中的內容位置，則報告中的總結果（專案數目及總大小）可能會包含相同專案的結果。 這是因為當電子郵件訊息或檔符合搜尋群組中不同搜尋的查詢時，將會算作超過一次的電子郵件或檔。 
   
-## <a name="step-5-run-the-script-to-delete-the-searches"></a>步驟 5： 執行指令碼，以刪除搜尋
+## <a name="step-5-run-the-script-to-delete-the-searches"></a>步驟5：執行腳本以刪除搜尋
 
-您可能建立的搜尋很多，因為此最後一個指令碼只是容易快速刪除您在步驟 3 中建立搜尋。 像其他的指令碼，這樣也會提示您輸入搜尋群組識別碼。 當您執行此指令碼時，將會刪除所有的搜尋，在 [搜尋名稱搜尋群組識別碼。 
+因為您可能會建立許多搜尋，所以最後的腳本只是讓您輕鬆地快速刪除您在步驟3中建立的搜尋。 與其他腳本類似的是，這也會提示您輸入搜尋群組識別碼。 當您執行此腳本時，搜尋名稱中的所有搜尋群組識別碼都會被刪除。 
   
-1. 使用.ps1 檔名尾碼，將下列文字儲存至 Windows PowerShell 指令碼檔案例如， `DeleteSearches.ps1`。 將檔案儲存到您用來儲存其他檔案的相同資料夾。
+1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `DeleteSearches.ps1`。 將檔案儲存到儲存其他檔案所在的相同資料夾。
     
   ```Powershell
   # Delete all searches in a search group
@@ -291,14 +292,14 @@ ms.locfileid: "42077181"
   }
   ```
 
-2. 在 Windows PowerShell 中，移至在前一個步驟中，您儲存指令碼的所在資料夾，然後執行指令碼;例如：
+2. 在 [Windows PowerShell] 中，移至上一個步驟中您用來儲存腳本的資料夾，然後執行腳本;例如：
     
     ```Powershell
     .\DeleteSearches.ps1
     ```
 
-3. 在**搜尋群組識別碼**提示字元處，輸入您要刪除搜尋的搜尋群組名稱，然後按 [ **Enter**;例如， `ContosoCase`。 請記住，這個名稱會區分大小寫，所以您必須先輸入相同的方式一樣當您在步驟 3 中執行指令碼時。
+3. 在 [**搜尋群組識別碼**] 提示中，輸入您要刪除之搜尋的搜尋組名，然後按**enter**;例如， `ContosoCase`。 請記住，這個名稱是區分大小寫的，所以您必須使用在步驟3中執行腳本時所用的相同方式來輸入。
     
-    指令碼會顯示在刪除每個搜尋的名稱。
+    腳本會顯示每個已刪除之搜尋的名稱。
     
     ![執行指令碼，以刪除搜尋群組中的搜尋](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)

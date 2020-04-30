@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7712b6af-329c-43a0-af7b-c4e4c1befb0e
 description: '瞭解如何設定 Microsoft 以在 Bluehost 管理您的 DNS 記錄。 '
-ms.openlocfilehash: 63084b35c3f0d71764bca1995f25d7c6f0842a86
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f20c09d2c9ca107648cba843cc93d839df8c53fc
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629908"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939388"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-bluehost"></a>使用 Bluehost 變更名稱伺服器以設定 Microsoft
 
@@ -35,7 +35,7 @@ ms.locfileid: "43629908"
   
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 
-在將您的網域與 Microsoft 搭配使用之前，我們必須先確認您擁有該網域。 您能夠在您的網域註冊機構登入您的帳戶，並為您擁有網域的 Microsoft 建立 DNS 記錄證明。
+在您將自己的網域用於 Microsoft 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Microsoft 就能確信您擁有該網域。
   
 > [!NOTE]
 > 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
@@ -55,7 +55,7 @@ ms.locfileid: "43629908"
 |||||
 |:-----|:-----|:-----|:-----|
 |**Host Record** <br/> |**TTL** <br/> |**類型** <br/> |**TXT Value** <br/> |
-|@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX* <br/> **附註：** 這是範例。 從表格中，使用您的特定**目的地或指向位址**值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX* <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 5. 選取 [**新增記錄**]。
@@ -64,9 +64,9 @@ ms.locfileid: "43629908"
     
 現在，您已在網域註冊機構的網站上新增記錄，您會回到 Microsoft 並要求搜尋該記錄。
   
-當 Microsoft 找到正確的 TXT 記錄後，您的網域就會經過驗證。
+在 Microsoft 找到正確的 TXT 記錄後，您的網域就完成驗證了。
   
-1. 在 Microsoft 系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+1. 在 Microsoft 系統管理中心中，移至 [設定]**** \> [網域]<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> 頁面。
 
     
 2. 在 **[網域]** 頁面上，選取您要驗證的網域。 
@@ -76,7 +76,7 @@ ms.locfileid: "43629908"
 4. 在 [驗證網域]**** 頁面上，選取 [驗證]****。
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 如果您在新增 DNS 記錄後遇到郵件流程或其他問題的問題，請參閱[尋找並修正新增您的網域或 DNS 記錄後的問題](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>變更您網域的名稱伺服器 (NS) 記錄
 
@@ -125,8 +125,6 @@ ms.locfileid: "43629908"
 |:-----|:-----|
 |**第三個空白列** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**第四個空白列** <br/> |ns4.bdm.microsoftonline.com  <br/> |
-   
-    ![Bluehost-BP-Redelegate-1-3-3](../../media/480b32bb-af27-40a5-90c5-5617ed02bb41.png)
   
 4. 若要新增第四個名稱伺服器記錄，請再次選取 [**新增列**]，然後使用上表最後一列的值來建立記錄。 
     

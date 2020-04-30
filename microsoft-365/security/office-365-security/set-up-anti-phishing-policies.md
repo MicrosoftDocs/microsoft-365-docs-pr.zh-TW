@@ -14,27 +14,25 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: 深入瞭解 Exchange Online Protection （EOP）中的基本反網路釣魚原則，以及 Office 365 Advanced 威脅防護中的高級 ATP 反網路釣魚原則。
-ms.openlocfilehash: 64a47d5514ab7a3a845e8d8b008f1cd8f672640b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 32214d24c7ed030b3bc7aad36bf3ac99f68a17fb
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638353"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949378"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
-若要設定反網路釣魚防護設定的原則，可在 Office 365 組織中使用 Exchange Online 信箱、獨立 Exchange Online Protection （EOP）組織，但沒有 Exchange Online 信箱，以及 Office 365 高級威脅防護（ATP）組織。
+使用 Exchange Online 信箱的獨立 Exchange Online Protection （EOP）組織，以及 Office 365 高級威脅防護（ATP）組織，可在 Microsoft 365 組織中使用設定反網路釣魚保護設定的原則。
 
 ATP 反網路釣魚原則僅可用於具有 Office 365 ATP 的組織。 例如：
 
-- Office 365 企業版 E5、Office 365 教育版 A5 等等。
+- Microsoft 365 企業版 E5、Microsoft 365 教育版 A5 等等。
 - [Microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise/home)
 - [Microsoft 365 商務版](https://www.microsoft.com/microsoft-365/business)
 - [Office 365 ATP 做為附加元件](https://products.office.com/exchange/advance-threat-protection)
 
-ATP 反網路釣魚原則包含內建的預設反網路釣魚原則，您也可以建立其他自訂 ATP 反網路釣魚原則。
-
-其他包含 Exchange Online 信箱或獨立 Exchange Online Protection （EOP）組織但沒有 Exchange Online 信箱的 Microsoft 365 組織，都有內建的預設反網路釣魚原則，但您無法建立其他原則。 只有具有 Exchange Online 信箱的組織可以修改其預設的反網路釣魚原則。
+所有其他組織皆具有反網路釣魚原則。
 
 下表說明反網路釣魚原則與 ATP 反網路釣魚原則之間的高層級差異：
 
@@ -42,8 +40,8 @@ ATP 反網路釣魚原則包含內建的預設反網路釣魚原則，您也可�
 |---|:---:|:---:|
 |**功能**|**防網路釣魚原則**|**ATP 反網路釣魚原則**|
 |自動建立的預設原則|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|建立自訂原則||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|原則設定<sup>\*</sup>||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|建立自訂原則|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|原則設定<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |類比設定||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |欺騙設定|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |高級網路釣魚臨界值||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -57,7 +55,7 @@ ATP 反網路釣魚原則包含內建的預設反網路釣魚原則，您也可�
 
 - [在 Microsoft 365 中設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)
 
-本主題的其餘部分將說明 EOP 和 ATP 反網路釣魚原則中可用的設定。
+本主題的其餘部分將說明反網路釣魚原則和 ATP 反網路釣魚原則中可用的設定。
 
 ## <a name="spoof-settings"></a>欺騙設定
 
@@ -65,10 +63,10 @@ ATP 反網路釣魚原則包含內建的預設反網路釣魚原則，您也可�
 
 下列欺騙設定可在反網路釣魚原則和 ATP 反網路釣魚原則中使用：
 
-- **反欺騙保護**：啟用或停用反欺詐防護。 建議您讓它保留啟用狀態。 您可以使用**哄騙智慧原則**來允許或封鎖特定的欺騙內部和外部寄件者。 如需詳細資訊，請參閱[Configure 哄騙情報 In Microsoft 365](learn-about-spoof-intelligence.md)。
+- **反欺騙保護**：啟用或停用反欺詐防護。 建議您讓它保留啟用狀態。 您可以使用**哄騙智慧原則**來允許或封鎖特定的欺騙內部和外部寄件者。 如需詳細資訊，請參閱[在 Microsoft 365 中設定詐騙情報](learn-about-spoof-intelligence.md)。
 
   > [!NOTE]
-  > 預設會在 EOP 的預設反網路釣魚原則、預設 ATP 反網路釣魚原則，以及您建立的新自訂 ATP 反網路釣魚原則中啟用欺騙設定。 <br/><br/> 如果您的 MX 記錄未指向 Microsoft 365，您就不需要停用反欺騙保護;請改為啟用連接器的增強篩選。 如需相關指示，請參閱[在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+  > 預設會在 EOP 的預設反網路釣魚原則、預設的 ATP 反網路釣魚原則，以及您建立的新自訂反網路釣魚原則或 ATP 反網路釣魚原則中啟用欺騙設定。 <br/><br/> 如果您的 MX 記錄未指向 Microsoft 365，您就不需要停用反欺騙保護;請改為啟用連接器的增強篩選。 如需相關指示，請參閱[在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
   針對來自封鎖欺騙寄件者的郵件，您也可以指定要對郵件採取的動作：
 

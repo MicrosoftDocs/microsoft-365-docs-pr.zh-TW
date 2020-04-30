@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何建立、修改及刪除使用 Office 365 高級威脅防護（ATP）的組織中可用的高級防網路釣魚原則。
-ms.openlocfilehash: 358abc2835e8d1fba39d72021f03b75775528bcf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e1a7d3b9d401d8bb5bec08d7b5d58546bbd382aa
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638453"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949256"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>設定 ATP 防網路釣魚原則
 
@@ -29,9 +29,9 @@ ATP 反網路釣魚原則是[Office 365 Advanced 威脅防護](office-365-atp.md
 
 您可以在 Security & 合規性中心或 Exchange Online PowerShell 中設定 ATP 反網路釣魚原則。
 
-如需設定 Exchange Online Protection 組織中可用的有限內建防網路釣魚原則的相關資訊（也就是沒有 ATP 的 Office 365 組織），請參閱[在 EOP 中設定預設的反網路釣魚原則](configure-anti-phishing-policies-eop.md)。
+如需設定 Exchange Online Protection 組織中可用之防網路釣魚原則的限制（也就是沒有 ATP 的 Office 365 組織）的詳細資訊，請參閱[Configure THE EOP 中的反網路釣魚原則](configure-anti-phishing-policies-eop.md)。
 
-## <a name="atp-anti-phishing-policies-in-the-office-365-security--compliance-center-vs-exchange-online-powershell"></a>Office 365 Security 中的 ATP 反網路釣魚原則 & 規範中心與 Exchange Online PowerShell
+## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>安全性 & 合規性中心與 Exchange Online PowerShell 中的 ATP 反網路釣魚原則
 
 ATP 反網路釣魚原則的基本元素如下：
 
@@ -73,7 +73,7 @@ ATP 反網路釣魚原則的基本元素如下：
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
-- 您必須已獲指派權限，才能執行這些程序。 若要新增、修改和刪除反網路釣魚原則，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要獲得反網路釣魚原則的唯讀存取權，您必須是**Security Reader**角色群組的成員。 如需安全性 & 規範中心中角色群組的詳細資訊，請參閱[安全性 & 規範中心中的許可權](permissions-in-the-security-and-compliance-center.md)。
+- 您必須已獲指派權限，才能執行這些程序。 若要新增、修改和刪除反網路釣魚原則，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要獲得反網路釣魚原則的唯讀存取權，您必須是**Security Reader**角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
 - 如需有關 ATP 反網路釣魚原則的建議設定，請參閱[OFFICE ATP 反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings)。
 
@@ -147,7 +147,7 @@ ATP 反網路釣魚原則的基本元素如下：
 
 4. **原則設定**：按一下 [**編輯**]，修改當您在上一節中[建立原則](#use-the-security--compliance-center-to-create-atp-anti-phishing-policies)時可用的相同設定：
 
-   - **名稱**
+   - **Name**
    - **描述**
    - **套用對象**
    - **檢查您的設定**
@@ -244,7 +244,7 @@ ATP 反網路釣魚原則的基本元素如下：
 
 6. **哄騙**：按一下 [**編輯**] 以開啟或關閉欺騙情報、在 Outlook 中開啟或關閉未驗證寄件者識別，以及設定要套用至封鎖的欺騙寄件者的郵件的動作。 如需詳細資訊，請參閱[反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。
 
-   請注意，這些設定與 EOP 中預設反網路釣魚原則中提供的設定相同。
+   請注意，EOP 中的反網路釣魚原則也提供這些相同設定。
 
    - **哄騙篩選設定**：預設值為 [**開啟**]，建議您將其保持開啟。 若要將它關閉，請將開關滑動至 [**關閉**]。 如需詳細資訊，請參閱[在 Office 365 中設定詐騙情報](learn-about-spoof-intelligence.md)。
 
@@ -408,7 +408,7 @@ New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Addit
 - 啟用安全提示。
 
 ```powershell
-New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Default monitoring policy" -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
+New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
 ```
 
 如需詳細的語法及參數資訊，請參閱[AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishPolicy)。

@@ -10,15 +10,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: 在執行搜尋之前，請檢查關鍵字查詢的內容搜尋中是否有錯誤和輸入錯誤，例如不支援的字元及小寫 Boolean 運算子。 如果我們發現錯誤，我們會建議您已修改的查詢。
-ms.openlocfilehash: 17d9c7a2480b80fa45fd4bb296308a4d4be79377
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bd87faa774f8449833287ff0c583f9e15a4298ff
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636311"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942906"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>檢查您的內容搜尋查詢是否有錯誤
 

@@ -12,13 +12,15 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: Normal
+search.appverid:
+- MET150
 description: 此深入瞭解導向的建議可協助您的組織在您的 DLP 原則覆蓋範圍內有可能的缺口時，通知您，以保護機密內容365的安全。 您會在安全性&amp;與合規性中心的首頁上看到此建議功能（如果您的檔包含任何最常見類型的敏感資訊，但不會受到 DLP 原則保護）。
-ms.openlocfilehash: 73c45c477942533d5668c225144950a0fde4279b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 504a85b07f348c45c9925cc2e6ee24b1d8a48656
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632464"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943372"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>開始使用 DLP 原則建議
 

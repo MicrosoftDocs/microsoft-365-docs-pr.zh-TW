@@ -1,5 +1,5 @@
 ---
-title: 封存協力廠商資料
+title: 封存第三方資料
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,17 +13,19 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 管理員可以從社交媒體平臺、立即訊息平臺及檔共同作業平臺將協力廠商資料匯入至 Microsoft 365 組織中的信箱。 這可讓您在 Microsoft 365 中封存 Facebook、Twitter 及其他協力廠商資料來源中的資料。 然後，您可以針對協力廠商資料使用並套用 Microsoft 365 規範功能（例如法律封存、eDiscovery、In-Place 封存及保留原則）。
-ms.openlocfilehash: 72afb48f74a30bac2904e857a33487a83eba48cd
-ms.sourcegitcommit: f9b5eca20e025acc36635cbd1786ff3407295857
+ms.openlocfilehash: e9276a845a29f5c047e303e9e04051ec9f77da1e
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43027653"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943182"
 ---
-# <a name="archive-third-party-data"></a>封存協力廠商資料
+# <a name="archive-third-party-data"></a>封存第三方資料
 
 Microsoft 365 可讓系統管理員從社交媒體平臺、立即訊息平臺及檔共同作業平臺，將協力廠商資料匯入並封存至您的 Microsoft 365 組織中的信箱。 您可以匯入 Microsoft 365 的協力廠商資料來源範例包含下列服務： 
   

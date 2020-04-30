@@ -1,5 +1,5 @@
 ---
-title: 設定組織中信箱的封存和刪除原則
+title: 設定組織中的信箱封存和刪除原則
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,16 +17,17 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
+- MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: 建立可自動將專案移至使用者封存信箱的封存和刪除原則。
-ms.openlocfilehash: d5c55227d601476b7c06d530a13a5768a4a108c4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b8d156ec9340e644e8f0bf213f04135e756421eb
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635557"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943576"
 ---
-# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>設定組織中信箱的封存和刪除原則
+# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>設定組織中的信箱封存和刪除原則
 
  在 Microsoft 365 中，系統管理員可以建立封存和刪除原則，以自動將專案移至使用者的封存信箱，並自動刪除信箱中的專案。 系統管理員會建立指派給信箱的保留原則，並在一段時間後將專案移至使用者的封存信箱，並在達到特定保留時限後，刪除信箱中的郵件。 決定要移動或刪除哪些專案，以及發生該問題的實際規則稱為保留標記。 保留標記會連結到保留原則，而該保留原則又會指派給使用者的信箱。 保留標記會將保留設定套用至使用者信箱中的個別郵件和資料夾。 它會定義郵件保留在信箱中的時間長度，以及當郵件達到指定的保留時間時採取的動作。 當郵件到達保留天數時，它會移至使用者的封存信箱，或已被刪除。 
   

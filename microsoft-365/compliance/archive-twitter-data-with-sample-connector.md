@@ -10,14 +10,16 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: 管理員可以設定原生連接器，將 Twitter 資料匯入 Microsoft 365。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料的管理。
-ms.openlocfilehash: 866bd61c40aa998bcb612ee1d82f8275f075bb8e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d4c1817fe9b3c47dc3cbabd0147f23057c7bc65
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630610"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943192"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data"></a>設定連接器來封存 Twitter 資料
 

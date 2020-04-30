@@ -13,15 +13,17 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: 使用內容搜尋和本文中的腳本，針對使用者群組搜尋商務網站的信箱和 OneDrive。
-ms.openlocfilehash: fa17b9eab2613407ae6c537ffc2619e5857f9182
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 31dfa2057eff27ed1d2579cc541361858a11c7ce
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634671"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943272"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>使用內容搜尋來搜尋信箱與商務用 OneDrive 網站的使用者清單
 
@@ -35,7 +37,7 @@ ms.locfileid: "42634671"
     
 - 腳本包含最低的錯誤處理。 其主要用途是快速且輕鬆地搜尋每個使用者之商務網站的信箱和 OneDrive。
     
-- 任何 Microsoft standard support program 或 service 都不支援本主題中提供的範例腳本。 範例腳本是以不含任何類型擔保的方式提供。 Microsoft 進一步否認所有我[https://go.microsoft.com/fwlink/p/?LinkId=517283](https://go.microsoft.com/fwlink/p/?LinkId=517283)的 mplied 擔保，包括但不限於任何適售性或特定用途適用性的暗示擔保。 因使用或效能範例腳本及檔的整體風險，仍然保留給您。 在沒有任何事件的情況下，Microsoft、其作者或腳本的建立、實際執行或交付的任何人都會對任何損壞造成責任（包括但不限於業務利潤損失、業務中斷、遺失的損害）由於使用或無法使用範例腳本或檔，即使 Microsoft 已被告知可能有這類損害的可能性，也引起的商務資訊或其他 pecuniary 遺失。
+- 任何 Microsoft standard support program 或 service 都不支援本主題中提供的範例腳本。 範例腳本是以不含任何類型擔保的方式提供。 Microsoft 進一步否認所有我[https://go.microsoft.com/fwlink/p/?LinkId=517283](https://go.microsoft.com/fwlink/p/?LinkId=517283)的 mplied 擔保，包括但不限於任何適售性或特定用途適用性的暗示擔保。 因使用或效能範例腳本及檔的整體風險，仍然保留給您。 在任何事件中，Microsoft、其作者、（包括但不限於使用或無法使用範例腳本或檔的任何損害（包括（但不限於）因使用或無法使用範例腳本或檔而造成的任何損害（包括但不限於公司中斷、商務中斷、商務資訊遺失或其他 pecuniary 遺失）以外的任何損害（包括但不限於）使用或無法使用範例腳本或檔時所產生的任何其他
     
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>步驟 1：安裝 SharePoint Online 管理命令介面
 

@@ -2,22 +2,22 @@
 title: 歐盟護照號碼
 f1.keywords:
 - NOCSH
-ms.author: cabailey
-author: cabailey
+ms.author: chrfox
+author: chrfox
 manager: laurawi
-ms.date: 8/16/2018
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 本主題說明資料遺失防護（DLP）原則在偵測到歐盟護照號碼機密資訊類型時，會尋找什麼。 這種敏感資訊類型會定義不同的模式、關鍵字和其他每個國家/地區的證據。
-ms.openlocfilehash: 0032d3e50d7dab0b696d9000242e70956469052e
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 56eb79dd067ca89600f92ea57eaaf01e562f9388
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "41592114"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938737"
 ---
 # <a name="eu-passport-number"></a>歐盟護照號碼
 
@@ -939,7 +939,7 @@ ms.locfileid: "41592114"
 
 如需詳細資訊，請參閱 section/英國 「[機密資訊類型](what-the-sensitive-information-types-look-for.md)」所尋找的「護照號碼」。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
 

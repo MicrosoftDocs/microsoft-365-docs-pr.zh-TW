@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以用於 Microsoft 的 Amazon Web 服務（AWS）。
-ms.openlocfilehash: 1ce4d47dce2fce177efafade49b78ea706cf14e2
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: daac9a8efedc8a2710217e352d9793ead954d2c3
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919536"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939352"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>在 Microsoft 的 Amazon Web 服務（AWS）上建立 DNS 記錄
 
@@ -35,7 +35,7 @@ ms.locfileid: "43919536"
   
 在 AWS 新增這些記錄之後，您的網域就會設定為與 Microsoft 服務搭配使用。
   
-若要深入瞭解具有 Microsfot 之網站的主控和 DNS，請參閱搭配[Microsoft 使用公用網站](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)。
+
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 

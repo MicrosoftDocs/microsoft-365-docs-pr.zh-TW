@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文說明如何開始使用 Microsoft 365 中的核心 eDiscovery。 指派 eDiscovery 許可權並建立案例之後，您可以新增成員、建立 eDiscovery 保留，然後搜尋並匯出與調查相關的資料。
-ms.openlocfilehash: 838870f60c55c82225c3809aa8f281beadd0dba1
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: c9c3d8c3832703e8dbbcf8b2c04a566af0f5eb6b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551391"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943382"
 ---
-# <a name="get-started-with-core-ediscovery"></a>開始使用核心電子檔探索
+# <a name="get-started-with-core-ediscovery"></a>開始使用核心電子文件探索
 
 Microsoft 365 中的核心 eDiscovery 提供一種基本 eDiscovery 工具，可讓組織用來搜尋並匯出 Microsoft 365 和 Office 365 中的內容。 您也可以使用核心 eDiscovery，在內容位置（例如 Exchange 信箱、SharePoint 網站、OneDrive 帳戶和 Microsoft 小組）上進行 eDiscovery 暫止。 不需要部署核心 eDiscovery，但在您的組織開始使用核心 eDiscovery 來搜尋、匯出及保留內容之前，必須先完成一些必要的工作，IT 系統管理員和 eDiscovery 管理員才能開始使用。
 
@@ -36,15 +36,25 @@ Microsoft 365 中的核心 eDiscovery 提供一種基本 eDiscovery 工具，可
 
 - **組織訂閱：** 若要存取 Microsoft 365 規範中心或 Office 365 安全性 & 規範中心的核心 eDiscovery，以及使用保留與匯出功能，您的組織必須具有 Microsoft 365 E3 或 Office 365 E3 訂閱或更高版本。
 
-- **每位使用者授權：** 若要在使用者信箱上進行 eDiscovery 暫止，必須根據您的組織訂閱，為該使用者指派下列其中一個授權：
+- **每位使用者授權：** 若要在信箱和網站上放置 eDiscovery 暫止，必須根據您的組織訂閱，為使用者指派下列其中一個授權：
 
   - Microsoft 365 E3 或 Office 365 E3 授權或更高版本
 
+   OR
+
   - Microsoft 365 E1 或 Office 365 E1 授權與 Exchange Online 方案2或 Exchange Online 封存附加元件授權
 
+  AND
+
+  - Microsoft 365 E1 或 Office 365 E1 授權，具有 SharePoint Online Plan 2 或 OneDrive for Business Plan 2 附加元件授權
+  
   如需如何指派授權的詳細資訊，請參閱[將授權指派給使用者](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
 
-如需 Microsoft 365 和 Office 365 授權的相關資訊，請下載並參閱[microsoft 365 合規性授權比較](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.pdf)中的「探索 & 回應」方案。
+如需授權的相關資訊：
+
+- 下載並查看[Microsoft 365 合規性授權比較](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)中的「探索 & 回應」方案。
+
+- 請參閱[安全性 & 規範中心服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>步驟2：指派 eDiscovery 許可權
 

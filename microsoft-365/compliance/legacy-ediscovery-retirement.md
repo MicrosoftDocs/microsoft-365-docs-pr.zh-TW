@@ -9,14 +9,16 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: Exchange Online 中的 In-Place eDiscovery 和 In-Place 保留（以及對應的 PowerShell Cmdlet）會在2020的上半年內淘汰。 Search-Mailbox Cmdlet 及 Advanced eDiscovery 1.0 1.0 也會在相同的時段內淘汰。
-ms.openlocfilehash: 23ff43dfc2131073425deb947aee41662e30616a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 48dbbd86071f8b07fa3dbf3a699f0d7e085fd50b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635567"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943342"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>舊版電子文件探索工具淘汰
 

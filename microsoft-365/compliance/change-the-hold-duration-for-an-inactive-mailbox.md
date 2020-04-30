@@ -13,15 +13,17 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: 在 Microsoft 365 信箱變為非使用中之後，您可以變更指派給非使用中信箱之保留或 Microsoft 365 保留原則的持續時間。 保留期間會定義 [可復原的專案] 資料夾中的專案保留的時間。
-ms.openlocfilehash: 3d1368bedcbeda467cbc77a356635440066c11c0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 15f140959a63b4c1a6da573c8a31ab23dbe55ca1
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636331"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942926"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>變更非作用中信箱的保留持續時間
 
@@ -151,7 +153,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
     ![變更就地保留之持續期間的螢幕擷取畫面](../media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
   
-6. 選取 **[儲存]**。
+6. 選取 [儲存]****。
     
 #### <a name="use-exchange-online-powershell-to-change-the-hold-duration"></a>使用 Exchange Online PowerShell 變更保留期間
 

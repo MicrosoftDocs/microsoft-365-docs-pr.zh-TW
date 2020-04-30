@@ -10,15 +10,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理員可以設定原生連接器，將 Facebook 商務頁面匯入和封存至 Microsoft 365。 在將資料匯入 Microsoft 365 之後，您可以使用合規性功能（例如法律封存、內容搜尋及保留原則）來管理組織 Facebook 資料的控管。
-ms.openlocfilehash: 10444d8a2c83fd89eaba927b422c8c89466d05cc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9ef7a2f3a24201ff4a32839671df7430a492bb44
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636141"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943036"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>部署連接器以封存 Facebook 商務頁面資料
 

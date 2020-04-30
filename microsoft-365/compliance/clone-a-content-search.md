@@ -13,14 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
+- MET150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: 使用本文中的 Windows PowerShell 腳本，可在 Office 365 或 Microsoft 365 中的規範中心內快速複製現有的內容搜尋。 當您複製搜尋時，會建立新的搜尋（具有新的名稱），該搜尋包含與原始搜尋相同的屬性。 然後，您可以變更關鍵字查詢或日期範圍，以編輯新的搜尋，然後再執行。
-ms.openlocfilehash: 13a459cabd7febe3daf5c907e89025185821e835
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bba683e7ffbad6177a6214ebb36e3aaece7aada7
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637491"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942936"
 ---
 # <a name="clone-a-content-search"></a>複製內容搜尋
 

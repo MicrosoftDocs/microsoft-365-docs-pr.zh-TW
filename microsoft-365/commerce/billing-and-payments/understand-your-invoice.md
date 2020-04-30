@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: 瞭解如何閱讀和瞭解您的 Microsoft 商務產品發票。
 keywords: 計費帳戶、組織資訊、發票
-ms.openlocfilehash: 3028b0e8aa952b932e7d56a5ecceaad5931dee30
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7b16af7c6ef39743aa8d0a4e927786f64f47c4cd
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634977"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942874"
 ---
 # <a name="understand-your-invoice"></a>了解您的發票
 
 該發票提供您的費用和付款指示的摘要。 您可以在 Microsoft 365 系統管理中心中[查看您的線上發票](#view-your-online-invoice)。 您也可以透過電子郵件將其下載成可移植檔案格式（.pdf）。
 
-如果您只有 Microsoft 365 訂閱，請參閱[查看商務用 microsoft 365 的發票](view-your-bill-or-invoice.md)。
+如果您只有 Microsoft 365 訂閱，請參閱[瞭解商務用 microsoft 365 的發票](understand-your-invoice2.md)。
 
 ## <a name="understand-the-invoice-header"></a>瞭解發票標頭
 
@@ -51,7 +51,7 @@ ms.locfileid: "43634977"
 | 術語 | 描述 |
 | --- | --- |
 | 收費|為此帳單期限購買的產品總數，以及其相關的費用和稅款。 匯總購買以提供您的帳單的簡潔觀點。 |
-| 參與名單 |您從傳回獲得的學分 |
+| 製作群 |您從傳回獲得的學分 |
 | 應用 Azure 信用 |您的 Azure 信用，會自動套用至 Azure 每個計費期間的費用。 如果您沒有任何 Azure 信用，此欄位是隱藏的。 如需 Azure 信用的詳細資訊，請參閱[追蹤 Microsoft 客戶協定 Azure 信用平衡](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance)。 |
 | 小計 |納稅到期金額 |
 | 稅 |根據帳單設定檔的國家/地區所支付的稅金類型和金額。 如果您不需要支付稅款，您的發票上不會顯示任何稅款。 |
@@ -78,7 +78,7 @@ ms.locfileid: "43634977"
 
 `Total = Charges/Credits - Azure Credit + Tax`
 
-如果您需要更多詳細資料的發票上有 Azure 費用，請參閱[瞭解您的 Microsoft 客戶合約發票上的費用](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill)。
+如果您的發票上有您想要詳細資料的 Azure 費用，請參閱[複查您的 Microsoft 客戶合約發票](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill)。
 
 ## <a name="understand-the-last-invoice-page"></a>瞭解 [最後發票] 頁面
 

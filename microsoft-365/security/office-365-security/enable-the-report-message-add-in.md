@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何為個別使用者或整個組織啟用 Outlook 和 Outlook 網頁版的 [報告訊息] 增益集。
-ms.openlocfilehash: 0024e8c87ef6326c1df4547349631c4f1fd4cab8
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 22ce1c8e8084cb0bcbcb2f9fa4c0c80e1a59bf9c
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43921573"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939472"
 ---
 # <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 
@@ -133,7 +133,7 @@ Outlook 和網頁型 Outlook （先前稱為 Outlook Web App）的報告訊息�
 
    ![宣告增益集頁面](../../media/announce-add-in-page.png)
 
-### <a name="learn-how-to-use-the-report-message-add-in"></a>了解如何使用報告訊息增益集
+## <a name="learn-how-to-use-the-report-message-add-in"></a>了解如何使用報告訊息增益集
 
 已指派增益集的人員會看到下列圖示：
 
@@ -147,7 +147,7 @@ Outlook 和網頁型 Outlook （先前稱為 Outlook Web App）的報告訊息�
 
 當您通知使用者關於 [報告訊息] 增益集時，請包含[使用報告訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)的連結。
 
-### <a name="review-or-edit-settings-for-the-report-message-add-in"></a>檢閱或編輯報告訊息增益集的設定
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>檢閱或編輯報告訊息增益集的設定
 
 1. 在 Microsoft 365 系統管理中心中，移至上<https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>的 [服務] **& 增益集**] 頁面。
 
@@ -158,3 +158,11 @@ Outlook 和網頁型 Outlook （先前稱為 Outlook Web App）的報告訊息�
 3. 在顯示的 [**編輯報告訊息**] 浮出視窗中，視組織的需要複查及編輯設定。 完成後，按一下 [儲存]****。
 
    ![報告訊息增益集的設定](../../media/EditReportMessageAddIn.png)
+
+## <a name="view-and-review-reported-messages"></a>查看和審閱報告的郵件
+
+若要查看使用者向 Microsoft 報告的郵件，您可以使用下列選項：
+
+- 使用系統管理提交入口網站。 如需詳細資訊，請參閱[View user 報送 To Microsoft](admin-submission.md#view-user-submissions-to-microsoft)。
+
+- 建立郵件流程規則（也稱為傳輸規則）以傳送報告訊息的副本。 如需相關指示，請參閱[使用郵件流程規則來查看您的使用者向 Microsoft 報告的內容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)。

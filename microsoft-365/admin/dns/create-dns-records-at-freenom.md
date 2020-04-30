@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Freenom。
-ms.openlocfilehash: 828a1728606338017383857e4b59d6a62d087fc7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a7ad45d3d785478966df5120567836200de316da
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629560"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939224"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>在 Freenom 建立 Microsoft 的 DNS 記錄
 
@@ -36,7 +36,6 @@ ms.locfileid: "43629560"
   
 不論服務限制，您可以選擇在 Freenom 管理您自己的 Microsoft DNS 記錄，請遵循本文中的步驟來驗證您的網域，並設定電子郵件和其他服務的 DNS 記錄。
   
-若要深入瞭解 Microsoft 的網站的主控和 DNS，請參閱搭配[Microsoft 使用公用網站](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx)。
   
 > [!NOTE]
 > DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
@@ -44,7 +43,7 @@ ms.locfileid: "43629560"
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 <a name="bkmk_txt"> </a>
 
-在將您的網域與 Microsoft 搭配使用之前，我們必須先確認您擁有該網域。 您能夠在您的網域註冊機構登入您的帳戶，並為您擁有網域的 Microsoft 建立 DNS 記錄證明。
+在您將自己的網域用於 Microsoft 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Microsoft 就能確信您擁有該網域。
   
 > [!NOTE]
 > 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
@@ -71,9 +70,9 @@ ms.locfileid: "43629560"
   
 6. 在新記錄的方塊中，輸入或複製並貼上下表中的值。 
     
-    |**名稱**|**Type**|**TTL**|**Target** (目標)|
+    |**Name**|**Type**|**TTL**|**Target** (目標)|
     |:-----|:-----|:-----|:-----|
-    |(保留空白)  <br/> |TXT  <br/> |3600（秒）  <br/> |MS=msXXXXXXXX  <br/> **附註：** 這是範例。 從表格中，使用您的特定**目的地或指向位址**值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |(保留空白)  <br/> |TXT  <br/> |3600（秒）  <br/> |MS=msXXXXXXXX  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Freenom 用於驗證的 TXT 值](../../media/650098df-b3aa-47e5-9763-7fde24e34c3f.png)
   
@@ -83,11 +82,11 @@ ms.locfileid: "43629560"
   
 8. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
-現在，您已在網域註冊機構的網站上新增記錄，您會回到 Microsoft 並要求記錄。
+現在您已在網域註冊機構網站新增記錄，請返回 Microsoft 並要求該記錄。
   
-當 Microsoft 找到正確的 TXT 記錄後，您的網域就會經過驗證。
+在 Microsoft 找到正確的 TXT 記錄後，您的網域就完成驗證了。
   
-1. 在 Microsoft 系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+1. 在 Microsoft 系統管理中心中，移至 [設定]**** \> [網域]<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> 頁面。
 
     
 2. 在 **[網域]** 頁面上，選取您要驗證的網域。 
@@ -105,7 +104,7 @@ ms.locfileid: "43629560"
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，使您網域的電子郵件將會傳送給 Microsoft
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，以將寄往您網域的電子郵件轉至 Microsoft
 <a name="bkmk_mx"> </a>
 
 1. 若要開始使用，請使用[此連結](https://my.freenom.com/)移至 Freenom 中您的網域頁面。 You'll be prompted to log in.
@@ -138,7 +137,7 @@ ms.locfileid: "43629560"
   
 8. 在每一筆新記錄的方塊中，輸入或複製並貼上下表第一列中的值。 
     
-    |**名稱**|**Type**|**TTL**|**Target** (目標)|**優先順序**|
+    |**Name**|**Type**|**TTL**|**Target** (目標)|**優先順序**|
     |:-----|:-----|:-----|:-----|:-----|
     |(保留空白)  <br/> |MX (郵件交換程式)  <br/> |3600（秒）  <br/> |\<網域金鑰\>。 mail.protection.outlook.com  <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9) <br/> |
    
@@ -175,7 +174,7 @@ ms.locfileid: "43629560"
   
 6. 建立第一筆 CNAME 記錄。 在每一筆新記錄的方塊中，輸入或複製並貼上下表第一列中的值。 
     
-    |**Name** (名稱)|**記錄類型**|**TTL**|**Target** (目標)|
+    |**Name**|**記錄類型**|**TTL**|**Target** (目標)|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |3600（秒）  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |3600（秒）  <br/> |sipdir.online.lync.com  <br/> |
@@ -197,7 +196,7 @@ ms.locfileid: "43629560"
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果您已有網域的 SPF 記錄，請不要為 Microsoft 建立新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 
 
 1. 若要開始使用，請使用[此連結](https://my.freenom.com/)移至 Freenom 中您的網域頁面。 You'll be prompted to log in.
     
@@ -221,7 +220,7 @@ ms.locfileid: "43629560"
   
 6. In the boxes for the new record, type or copy and paste the following values. 
     
-    |**Name** (名稱)|**記錄類型**|**TTL**|**Target** (目標)|
+    |**Name**|**記錄類型**|**TTL**|**Target** (目標)|
     |:-----|:-----|:-----|:-----|
     |(保留空白)  <br/> |TXT  <br/> |3600（秒）  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    

@@ -11,15 +11,17 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: 部分編制索引的專案（也稱為未編制索引的專案）是 Exchange 信箱專案和檔在 SharePoint 和 OneDrive 網站上，因為某些原因並未完全編制內容搜尋的索引。 在本文中，您可以瞭解為何專案無法編制索引以進行搜尋，並傳回成部分索引項目目、識別部分索引項目目的搜尋錯誤，以及使用 PowerShell 腳本判斷您的組織對部分索引電子郵件專案的公開程度。
-ms.openlocfilehash: 64b052e5c04019d5937c3763094529ae5c4c9e42
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0053ec5b03f5d32af1a39be94474c05f74ec3234
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637461"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942126"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>調查 eDiscovery 中已部分索引的專案
 
@@ -184,6 +186,6 @@ ms.locfileid: "43637461"
     
 2. 清單錯誤標記，以及發生錯誤的對應檔案類型。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [位於 Office 365 中內容搜尋的已局部編製索引項目](partially-indexed-items-in-content-search.md)

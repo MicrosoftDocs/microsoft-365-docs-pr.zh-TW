@@ -11,15 +11,17 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: 「審核記錄」是一個整合的審計記錄檔。 為什麼使用整合的稽核記錄？ 因為組織所訂閱的大部分服務事件會記錄在您可以搜尋的單一審核記錄中。 這表示您可以在這些服務中搜尋使用者和系統管理員活動：
-ms.openlocfilehash: 95f5025e4831223c93251c7c22d1f43d44086d48
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3cc76b272516c0e0508c7d76f0b93da44effa487
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625093"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943642"
 ---
 # <a name="search-the-audit-log-for-user-and-admin-activity"></a>搜尋審核記錄中的使用者和系統管理員活動
 

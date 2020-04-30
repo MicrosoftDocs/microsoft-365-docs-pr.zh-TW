@@ -23,18 +23,18 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: 瞭解有時切換方案必須手動完成或通過呼叫支援的原因。
-ms.openlocfilehash: 5d446e3492bc9039e490cacca469443c0dc52cbd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b6c4069f2c7f0cfd86981c1001a7211aa298ff7
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631926"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943140"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>為什麼我無法切換商務方案的 Microsoft 365？
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> 本文適用于舊版系統管理中心。 若要查看有關系統管理中心（預覽）的文章，請參閱[為何無法升級計畫？](why-cant-i-change-plans.md)。 預覽可供所有 Microsoft 365 系統管理員使用，您可以選取 [嘗試使用位於首頁頂端的**預覽**切換] 進行選擇。 如需詳細資訊，請參閱[關於新的 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md)。
+> 本文適用于舊版系統管理中心。 若要查看有關系統管理中心（預覽）的文章，請參閱[為何無法升級計畫？](upgrade-to-different-plan.md#why-cant-i-upgrade-plans)。 預覽可供所有 Microsoft 365 系統管理員使用，您可以選取 [嘗試使用位於首頁頂端的**預覽**切換] 進行選擇。 如需詳細資訊，請參閱[關於新的 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md)。
 ::: moniker-end
 
 如果您看不到 [**切換方案**] 按鈕，就無法自動切換您的計畫。 在某些情況下，您可能能夠解決問題，使您可以使用 [**切換方案**] 按鈕，否則您也可以改為[手動切換方案](switch-plans-manually.md)。 將滑鼠移到 info 圖示上，以查看訊息，說明 [**切換方案**] 按鈕無法使用的原因。 您可以使用本文中的資訊以解決問題。

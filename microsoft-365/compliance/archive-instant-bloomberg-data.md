@@ -10,14 +10,16 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: 管理員可以設定原生連接器，將資料從立即 Bloomberg 聊天室工具匯入 Microsoft 365。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: a6b748cdb33b34c7fc48b0167728f78cf7ae1099
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d423de02695b1727f3c2ac7de00dde99a36a073c
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637113"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943222"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>設定連接器來封存 Instant Bloomberg 資料
 

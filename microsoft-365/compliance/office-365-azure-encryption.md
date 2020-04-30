@@ -15,21 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: 摘要： Azure 中加密的說明。
-ms.openlocfilehash: de018e24fc6681ac613e16d8f151c6ea5362f92d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Azure 中加密的說明。
+ms.openlocfilehash: cac3a27a209b4c2da66dbf583d2be88cf06aca34
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637431"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943312"
 ---
 # <a name="encryption-in-azure"></a>Azure 中的加密
 
+Azure 中的技術保護措施，例如加密通訊和工作處理程式，協助保護您的資料安全。 您也可以靈活地執行額外的加密功能和管理您自己的加密金鑰。 不論客戶設定為何，Microsoft 會套用加密，以保護 Azure 中的客戶資料。 Microsoft 也可讓您透過一系列的高級技術來控制 Azure 中的資料，以加密、控制和管理加密金鑰，以及控制及審核資料的存取。 此外，Azure Storage 提供一組完整的安全性功能，可搭配使用，讓開發人員建立安全的應用程式。
+
 ## <a name="introduction"></a>簡介
 
-Azure 中的技術保護措施，例如加密通訊和工作處理程式，協助保護您的資料安全。 您也可以靈活地執行額外的加密功能和管理您自己的加密金鑰。 不論客戶設定為何，Microsoft 會套用加密，以保護 Azure 中的客戶資料。 Microsoft 也可讓您透過一系列的高級技術來控制 Azure 中的資料，以加密、控制及管理加密金鑰、控制及審核資料的存取權。 此外，Azure Storage 提供一組完整的安全性功能，可搭配使用，讓開發人員建立安全的應用程式。
-
-Azure 提供許多機制，可在資料從一個位置移動到另一個位置時加以保護。 當您的雲端服務與客戶之間的旅行時，Microsoft 會使用 TLS 來保護資料。 Microsoft 的資料中心與連接至 Azure 服務的用戶端系統協商 TLS 連線。 「完全轉寄保密（PFS）」會以唯一金鑰保護客戶之用戶端系統與 Microsoft 雲端服務之間的連線。 連接也會使用以 RSA 為基礎的2048位加密金鑰長度。 這種組合使得別人很難截獲和存取傳輸中的資料。
+Azure 提供許多機制，可在資料從一個位置移動到另一個位置時加以保護。 當您的雲端服務與客戶之間的旅行時，Microsoft 會使用 TLS 來保護資料。 Microsoft 的資料中心會與連接至 Azure 服務的用戶端系統協商 TLS 連線。 「完全轉寄保密（PFS）」會以唯一金鑰保護客戶之用戶端系統與 Microsoft 雲端服務之間的連線。 連接也會使用以 RSA 為基礎的2048位加密金鑰長度。 這種組合使得別人很難截獲和存取傳輸中的資料。
 
 使用[用戶端加密](https://docs.microsoft.com/azure/storage/storage-client-side-encryption)、HTTPS 或 SMB 3.0，可保護應用程式和 Azure 之間傳輸的資料。 您可以對您自己的虛擬機器（Vm）和您的使用者之間的流量啟用加密。 透過[Azure 虛擬網路](https://azure.microsoft.com/services/virtual-network/)，您可以使用業界標準的 IPsec 通訊協定，對您公司 VPN 閘道和 Azure 之間的流量以及位於虛擬網路上的 vm 之間的流量進行加密。
 
@@ -41,7 +41,7 @@ Azure 提供許多機制，可在資料從一個位置移動到另一個位置�
 
 Azure 磁片加密可讓您將 Windows 和 Linux 基礎結構加密為服務（IaaS） VM 磁片。 Azure 磁片加密利用 Windows 的 BitLocker 功能和 Linux 的 DM Crypt 功能，提供作業系統和資料磁片的磁片區層級加密。 此外，它也可確保 VM 磁片上的所有資料在 Azure 儲存體中的靜止時已加密。 Azure 磁片加密與 Azure 金鑰保存庫整合，可協助您控制、管理及審核加密金鑰和機密的使用。
 
-如需詳細資訊，請參閱[Azure 中 Windows 虛擬機器的安全性建議](https://docs.microsoft.com/azure/security/azure-security-disk-encryption)。
+如需詳細資訊，請參閱[Azure 中 Windows 虛擬機器的安全性建議](https://docs.microsoft.com/azure/virtual-machines/windows/security-recommendations)。
 
 ## <a name="azure-storage-service-encryption"></a>Azure Storage Service 加密
 

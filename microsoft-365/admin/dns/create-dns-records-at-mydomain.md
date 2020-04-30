@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9982191d-ed79-46a9-b2e7-317d1a3a9867
 description: 了解如何在 Microsoft 的 [我的網域] 中驗證網域，並為電子郵件、商務用 Skype Online和其他服務設定 DNS 記錄。
-ms.openlocfilehash: 4f26da1e1e148307cd2b5cdf9aeed97c610ec8dd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ea89fd64c7f3f87f59b7e71e1366372c442e254d
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629428"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939176"
 ---
 # <a name="create-dns-records-at-mydomain-for-microsoft"></a>在 MyDomain 建立 Microsoft 的 DNS 記錄
 
@@ -40,7 +40,7 @@ ms.locfileid: "43629428"
     
 在 MyDomain 新增這些記錄之後，您的網域就會設定為搭配 Microsoft 服務使用。
   
-若要了解使用 Microsoft 網站的虛擬主機和 DNS，請參閱[搭配 Microsoft 使用公用網站](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)。
+
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 

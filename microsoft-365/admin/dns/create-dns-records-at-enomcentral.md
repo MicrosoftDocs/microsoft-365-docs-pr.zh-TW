@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以供 Microsoft eNomCentral。
-ms.openlocfilehash: 2a1d32f0152b0c8a38b1a9e1c3fc46237708480d
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: b43261c601b953eef7f98170f04b51d8dcf97d8d
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919490"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939268"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>在 Microsoft 的 eNomCentral 建立 DNS 記錄
 
@@ -34,8 +34,7 @@ ms.locfileid: "43919490"
 如果 eNomCentral 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
   
 在 eNomCentral 新增這些記錄之後，您的網域就會設定為與 Microsoft 服務搭配使用。
-  
-若要了解使用 Microsoft 網站的虛擬主機和 DNS，請參閱[搭配 Microsoft 使用公用網站](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9)。
+
   
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
@@ -64,7 +63,7 @@ ms.locfileid: "43919490"
   
 4. 在新記錄的方塊中，輸入或複製並貼上下表中的值。
     
-    \(從下拉式清單中選擇 [**記錄類型**] 值。\) 
+    從下拉式清單中選擇 [**記錄類型**] 值。
     
     ||||
     |:-----|:-----|:-----|
@@ -165,7 +164,7 @@ ms.locfileid: "43919490"
   
 5. 在六筆新記錄的方塊中，輸入或複製並貼上下列的值。
     
-        (Choose the **Record Type** value from the drop-down list.) 
+從下拉式清單中選擇 [**記錄類型**] 值。
         
     |**Host Name**|**Record Type**|**Address**|
     |:-----|:-----|:-----|
@@ -203,7 +202,7 @@ ms.locfileid: "43919490"
   
 4. 在每一筆新記錄的方塊中，輸入或複製並貼上下表中的值。
     
-    (Choose the **Record Type** value from the drop-down list.) 
+從下拉式清單中選擇 [**記錄類型**] 值。
     
     |**Host Name**|**Record Type**|**Address**|
     |:-----|:-----|:-----|

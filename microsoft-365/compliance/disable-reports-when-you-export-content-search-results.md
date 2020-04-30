@@ -10,15 +10,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: 在您的本機電腦上編輯 Windows 登錄，當您從 Office 365 的安全性 & 合規性中心匯出內容搜尋結果時，停用報告。 停用這些報告可加快下載時間，並節約磁碟空間。
-ms.openlocfilehash: 3bd5fadda750c709c463fbc4d84668b43e0d3a10
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 89ea5e073a2c33d5f04fe3eef74b5b26510eef2f
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633448"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943006"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>當您匯出內容搜尋結果時停用報告
 

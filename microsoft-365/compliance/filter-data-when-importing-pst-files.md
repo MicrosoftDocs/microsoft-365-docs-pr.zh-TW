@@ -13,15 +13,17 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: '使用 Office 365 Import service 中的新智慧匯入功能，篩選實際匯入至目標信箱的專案。 智慧匯入可讓您主動決定要匯入哪些資料和留下的內容。 智慧匯入也提供您要匯入至 Office 365 之資料的洞察力。 '
-ms.openlocfilehash: cc34163c46639765331772aaa1f4a0ae956294e3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5ab276af0ee0859657074657f7b21d202947b98a
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636229"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942206"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>匯入 PST 檔案時篩選資料
 
@@ -61,7 +63,7 @@ ms.locfileid: "43636229"
 
 在您建立 PST 匯入工作之後，請遵循下列步驟，在將資料匯入 Office 365 之前先加以篩選。
   
-1. 移至[https://protection.office.com/](https://protection.office.com/)並使用您組織中的系統管理員帳戶的認證登入。 
+1. 前往 [https://protection.office.com/](https://protection.office.com/)，然後使用您組織中系統管理員帳戶的認證來登入。 
     
 2. 按一下 [**資訊管理** \>匯**入** \> **PST**檔案]。
     
@@ -110,13 +112,13 @@ ms.locfileid: "43636229"
     
     ![資料洞察力會根據您的篩選設定進行更新](../media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
   
-    d. 按 **[下一步]**。
+    d. 按 [下一步]****。
     
     隨即會顯示 [狀態] 頁面，顯示篩選設定。 同樣的，您也可以編輯任何篩選設定。
     
     e. 按一下 [匯**入資料**] 以開始匯入。 請注意，會顯示要匯入的總數據量。 
     
-    或
+    或者
     
     a. 按一下 [**否，我要**匯入所有內容]，將 PST 檔案中的所有資料匯入 Office 365，然後按 **[下一步]**。
     

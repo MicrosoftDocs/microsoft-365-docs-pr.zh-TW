@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: 瞭解如何設定由世紀運作的 Office 365，以管理您的 DNS 記錄（1&1 網際網路是 DNS 主機服務提供者時）。
-ms.openlocfilehash: 53e846b5a9672f3fbf0e003ec48261afc80c0abf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 99ac40472d0afa0cb734b0e86a0f10d7904133e1
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630004"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939403"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>變更名稱伺服器以設定具有 1&1 IONOS 的 Microsoft 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "43630004"
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 
 
-在將您的網域與 Microsoft 365 搭配使用之前，我們必須確定您擁有該網域。 您能夠在您的網域註冊機構登入您的帳戶，並建立 DNS 記錄，以證明您擁有該網域的 Microsoft 365。
+在您將自己的網域用於 Microsoft 365 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Microsoft 365 就能確信您擁有該網域。
   
 > [!NOTE]
 > 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
@@ -62,7 +62,7 @@ ms.locfileid: "43630004"
 ||||
 |:-----|:-----|:-----|
 |**類型** <br/> |**Prefix** <br/> |**Name Value** <br/> |
-|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **請注意**：這是一個範例。 從 Microsoft 365 的表格中，使用您的特定**目的地或指向位址**值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **請注意**：這是一個範例。 在這裡請使用您自己的 [目的地或指向位址]**** 值，請參閱 Microsoft 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 7. 請選取 [**儲存**]，然後再**儲存**一次。 
@@ -71,9 +71,9 @@ ms.locfileid: "43630004"
     
 9. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
-現在，您已在網域註冊機構的網站上新增記錄，您會回到 Microsoft 365，並要求 Microsoft 365 尋找該記錄。
+現在您已在網域註冊機構網站新增記錄，請返回 Microsoft 365 並要求 Microsoft 365 尋找該記錄。
   
-當 Microsoft 365 找到正確的 TXT 記錄後，您的網域就會得到驗證。
+在 Microsoft 365 找到正確的 TXT 記錄後，您的網域就完成驗證了。
   
 1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
     
@@ -84,7 +84,7 @@ ms.locfileid: "43630004"
 4. 在 [驗證網域]**** 頁面上，選取 [驗證]****。
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 如果您在新增 DNS 記錄後遇到郵件流程或其他問題的問題，請參閱[尋找並修正在 Microsoft 365 中新增您的網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 如果您在新增 DNS 記錄後遇到郵件流程或其他問題的問題，請參閱[尋找並修正在 Microsoft 365 中新增您的網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>變更您網域的名稱伺服器 (NS) 記錄
 
@@ -138,9 +138,9 @@ ms.locfileid: "43630004"
 |**名稱伺服器3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**名稱伺服器4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-    ![Entering name server values](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
+![輸入名稱伺服器值](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
     
     ![在 [名稱伺服器設定] 頁面上選取 [儲存]](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
@@ -171,7 +171,7 @@ ms.locfileid: "43630004"
    
    ![輸入名稱伺服器值](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
-3. 選取 **[儲存]**。
+3. 選取 [儲存]****。
     
     ![在 [名稱伺服器設定] 頁面上選取 [儲存]](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   
