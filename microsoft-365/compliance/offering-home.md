@@ -1,28 +1,28 @@
 ---
 title: Microsoft 合規性方案
 layout: LandingPage
-description: 了解 Microsoft 產品和服務如何協助貴組織符合法規的合規性標準。
+description: 深入瞭解 Microsoft 產品和服務如何協助您的組織符合法規遵從性標準。
 author: robmazz
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 manager: laurawi
 ms.topic: landing-page
-keywords: Microsoft、 Microsoft 365、 合規性供應項目
+keywords: Microsoft、Microsoft 365、規範、服務
 localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 59e2c36e87232efcda29f9d5abe41b4c37a17a62
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 57faa73d6c3cb5bbe92c1cea4fab7dd810abbeec
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071242"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943322"
 ---
 # <a name="microsoft-compliance-offerings"></a>Microsoft 合規性方案
 
-Microsoft 提供了一組完整的合規性供應項目，有助於組織符合國家、 區域和產業特定的收集與使用資料控管自己的需求。
+Microsoft 提供一組完整的規範選項，可協助您的組織遵守管理資料集合及使用的本國、區域及特定行業的需求。
 
 <ul class="panelContent cardsD">
     <li>
@@ -40,7 +40,7 @@ Microsoft 提供了一組完整的合規性供應項目，有助於組織符合�
                         <p><a href="offering-cis-benchmark.md">CIS 基準</a></p>
                         <p><a href="offering-csa-star-attestation.md">CSA-STAR 證明</a></p>
                         <p><a href="offering-csa-star-certification.md">CSA-STAR 認證</a></p>
-                        <p><a href="offering-csa-star-self-assessment.md">CSA 顆星自我評估</a></p>
+                        <p><a href="offering-csa-star-self-assessment.md">CSA STAR 自我評估</a></p>
                         <p><a href="offering-ISO-20000-1-2011.md">ISO 20000-1:2011</a></p>
                         <P><a href="offering-ISO-22301.md">ISO 22301</a></p>
                         <p><a href="offering-ISO-27001.md">ISO 27001</a></p>
@@ -73,7 +73,7 @@ Microsoft 提供了一組完整的合規性供應項目，有助於組織符合�
                         <p><a href="offering-dfars.md">DFARS</a></p>
                         <p><a href="offering-dod-disa-l2-l4-l5.md">DoD DISA L2，L4，L5</a></p>
                         <p><a href="offering-doe-10-cfr-part-810.md">DoE 10 CFR Part 810</a></p>
-                        <p><a href="offering-ear.md">耳朵上 （US 匯出 Adm.註冊）</a></p>
+                        <p><a href="offering-ear.md">EAR （美國出口 .Adm）</a></p>
                         <p><a href="offering-fedramp.md">FedRAMP</a></p>
                         <p><a href="offering-fips-140-2.md">FIPS 140-2</a></p>
                         <p><a href="offering-irs-1075.md">IRS 1075</a></p>
@@ -119,7 +119,7 @@ Microsoft 提供了一組完整的合規性供應項目，有助於組織符合�
                         <p><a href="offering-glba.md">GLBA</a></p>
                         <p><a href="offering-gxp.md">GxP</a></p>
                         <p><a href="offering-hds-france.md">HDS (法國)</a></p>
-                        <p><a href="offering-hipaa-hitech.md">HIPAA / HITECH</a></p>
+                        <p><a href="offering-hipaa-hitech.md">HIPAA/高科技</a></p>
                         <p><a href="offering-hitrust.md">HITRUST</a></p>
                         <p><a href="offering-knf-poland.md">KNF (波蘭)</a></p>
                         <p><a href="offering-mars-e.md">MARS-E</a></p>
@@ -133,8 +133,8 @@ Microsoft 提供了一組完整的合規性供應項目，有助於組織符合�
                         <p><a href="offering-pci-dss.md">PCI DSS</a></p>
                         <p><a href="offering-rbi-irdai-india.md">RBI + IRDAI (印度)</a></p>
                         <p><a href="offering-sec-17a-4.md">SEC 17a-4</a></p>
-                        <p><a href="offering-sec-reg-sci.md">秒規定 SCI</a></p>
-                        <p><a href="offering-shared-assessments.md">共用的 「 評估 」</a></p>
+                        <p><a href="offering-sec-reg-sci.md">SEC 法規 SCI</a></p>
+                        <p><a href="offering-shared-assessments.md">共用評估</a></p>
                         <p><a href="offering-sox.md">SOX</a></p>
                         <p><a href="offering-tisax-germany.md">TISAX (德國)</a></p>
                         <p><a href="offering-trusight.md">TruSight</a></p>
@@ -158,9 +158,9 @@ Microsoft 提供了一組完整的合規性供應項目，有助於組織符合�
                         <h3>地區</h3>
                         <p><a href="offering-bir-2012-netherlands.md">BIR 2012 (荷蘭)</a></p>
                         <p><a href="offering-c5-germany.md">C5 (德國)</a></p>
-                        <p><a href="offering-ccpa.md">CCPA （US 加州）</a></p>
-                        <p><a href="offering-ccsl-irap-australia.md">次 / CCSL （澳大利亞）</a></p>
-                        <p><a href="offering-cs-mark-gold-japan.md">CS 標記黃金 （日本）</a></p>
+                        <p><a href="offering-ccpa.md">CCPA （美國-加州）</a></p>
+                        <p><a href="offering-ccsl-irap-australia.md">IRAP/CCSL （澳大利亞）</a></p>
+                        <p><a href="offering-cs-mark-gold-japan.md">CS 標誌金（日本）</a></p>
                         <p><a href="offering-cyber-essentials-plus-uk.md">Cyber Essentials Plus (英國)</a></p>
                         <p><a href="offering-canadian-privacy-laws.md">加拿大隱私權法</a></p>
                         <p><a href="https://www.trustcenter.cn/compliance/default.html#DJCP">DJCP (中國)</a></p>
@@ -168,7 +168,7 @@ Microsoft 提供了一組完整的合規性供應項目，有助於組織符合�
                         <p><a href="offering-ens-spain.md">ENS (西班牙)</a></p>
                         <p><a href="offering-enisa.md">ENISA IAF (EU)</a></p>
                         <p><a href="offering-eu-model-clauses.md">EU Model Clauses</a></p>
-                        <p><a href="offering-eu-us-privacy-shield.md">歐盟美國隱私權盾</a></p>
+                        <p><a href="offering-eu-us-privacy-shield.md">歐盟-US 隱私權防護板</a></p>
                         <p><a href="https://www.trustcenter.cn/compliance/default.html#GB18030">GB 18030 (中國)</a></p>
                         <p><a href="gdpr.md">GDPR (歐盟)</a></p>
                         <p><a href="offering-g-cloud-uk.md">G-Cloud (英國)</a></p>
@@ -182,6 +182,7 @@ Microsoft 提供了一組完整的合規性供應項目，有助於組織符合�
                         <p><a href="offering-nz-cc-framework-nz.md">NZ CC Framework (紐西蘭)</a></p>
                         <p><a href="offering-pasf-uk.md">PASF (英國)</a></p>
                         <p><a href="offering-pdpa-argentina.md">PDPA (阿根廷)</a></p>
+                        <p><a href="offering-russia-data-localization.md">個人資料當地語系化（俄羅斯）</a></p>
                         <p><a href="https://aka.ms/TRUCS-Compliance">TRUCS (中國)</a></p>
                     </div>
                 </div>
