@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 監視和管理內容處置，不論您使用的是處置檢查，還是會根據您設定的設定自動刪除內容。
-ms.openlocfilehash: cb48d2eb6d2d06093ddea74f13269faeb4798b97
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 47cb8f023f378796f206e436aa33e74b2993ac97
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/30/2020
-ms.locfileid: "43950077"
+ms.locfileid: "43952616"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -120,7 +120,7 @@ ms.locfileid: "43950077"
 > [!NOTE]
 > 可查看未進行處置檢查便會自動刪除之記錄的功能，會逐步向2020內租至租使用者的租使用者，因此您可能不會立即看到這種體驗。
 
-使用 [**記錄管理**] 頁面中的 [**部署**] 索引標籤來識別自動刪除的記錄。 這些專案會在 [**類型**] 欄中顯示已**處置的記錄**。 在比較中，經核准為透過處置評審顯示的已處置記錄會顯示**擱置的處理**。 例如：
+使用 [**記錄管理**] 頁面中的 [**部署**] 索引標籤來識別自動刪除的記錄。 這些專案會在 [**類型**] 欄中顯示已**處置的記錄**。 例如：
 
 ![未進行處置評審的已處置專案](../media/records-disposed2.png)
 

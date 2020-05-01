@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: 09b955a3cf5b987d2ca7dac37c4c604fb45a2e56
-ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
+ms.openlocfilehash: bdf66e4160e324fa3b83cc58214b16fbacf5c233
+ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43930142"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43957283"
 ---
-# <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤 (公開預覽)
+# <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-在此預覽之前，您無法將您的[靈敏度標籤](sensitivity-labels.md)套用至網頁上的 Office。 您沒有在功能區上看到 [**敏感性**] 選項，或狀態列上已套用的標籤名稱。 此外，如果您使用桌面應用程式來標示您的檔案，然後將檔案儲存在 SharePoint 或 Onedrive 上，如果標籤已套用加密，服務就無法處理這些檔案的內容。 在這些情況下，合著、eDiscovery、資料遺失防護、搜尋、Delve 及其他協同功能無法運作。 
+在 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤之前，您無法將您的[靈敏度卷](sensitivity-labels.md)標套用至網頁上的 office。 您不會在功能區上看到 [**靈敏度**] 按鈕，或在狀態列上看到已套用的標籤名稱。 此外，如果您使用桌面應用程式來標示您的檔案，然後將檔案儲存在 SharePoint 或 OneDrive 上，如果標籤已套用加密，服務就無法處理這些檔案的內容。 在這些情況下，合著、eDiscovery、資料遺失防護、搜尋及其他協同功能無法運作。
 
-此預覽可啟用所有這些功能。 除了為使用者顯示敏感度標籤之外，針對已套用敏感度標籤（包含以雲端為基礎的金鑰進行加密）的新檔和變更的檔案：
+當您在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤時，會啟用所有這些功能。 除了為使用者顯示敏感度標籤之外，針對已套用敏感度標籤（包含以雲端為基礎的金鑰進行加密）的新檔和變更的檔案：
 
 - SharePoint 會辨識套用至 Word、Excel 及 PowerPoint 檔案中 SharePoint 及 OneDrive 的敏感度標籤：當檔案儲存在 SharePoint 中時，會移除來自 Azure 資訊保護的加密，以便處理檔案內容。 如需如何在 SharePoint 儲存檔時保護檔的相關資訊，請參閱[OneDrive For Business and SharePoint Online 中的資料加密](data-encryption-in-odb-and-spo.md)。
 
@@ -43,30 +43,30 @@ ms.locfileid: "43930142"
 - Office 365 eDiscovery 支援這些檔案的全文搜尋。 資料遺失防護（DLP）原則涵蓋這些檔案中的內容。
 
 > [!NOTE]
-> 若尚未使用雲端式金鑰（內部部署金鑰）套用加密，通常稱為「保留您自己的金鑰」（HYOK）的金鑰管理拓撲，處理檔內容的 SharePoint 行為不會隨此預覽而變更。
+> 若尚未使用雲端型金鑰（內部部署金鑰）套用加密，通常稱為「保留您自己的金鑰」（HYOK）的金鑰管理拓撲，處理檔內容的 SharePoint 行為不會改變。
 >
-> 在您啟用預覽之前，SharePoint 行為也不會針對 SharePoint 中的現有標籤和加密檔變更。 若要讓這些檔案受益于新功能，必須下載並上傳這些檔案，或在啟用預覽之後加以編輯。 例如，他們會在搜尋和 eDiscovery 結果中傳回。
+> SharePoint 行為也不會變更 SharePoint 中的現有標籤和加密檔。 為了讓這些檔案受益于新功能，在您執行此命令以啟用 SharePoint 和 OneDrive 的靈敏度標籤之後，必須下載並上傳或編輯這些檔案。 例如，他們會在搜尋和 eDiscovery 結果中傳回。
 
-當您啟用此預覽時，會有三個新的[審計事件](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)可供使用網頁上的 Office 來監視敏感度標籤：
+在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤之後，會有三個新的[審計事件](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)可用於監視 SharePoint 和 OneDrive 中的檔之敏感度標籤：
 - **已將敏感度標籤套用到檔案**
 - **已變更套用到檔案的敏感度標籤**
 - **已將敏感度標籤從檔案移除**
 
-觀賞下列影片（無音訊）以查看這些新功能的動作：
+觀賞下列影片（無音訊），以查看動作中的新功能：
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
-您隨時都可以選擇自願退出此預覽。
+您可以隨時在 SharePoint 中停用 Office 檔案的靈敏度標籤，也可以隨時 OneDrive。
 
 ## <a name="requirements"></a>需求
 
-這些功能僅適用于[敏感度標籤](sensitivity-labels.md)。 如果您目前已具備 Azure 資訊保護標籤，請先將它們遷移至靈敏度標籤，讓您可以針對您上傳的新檔案啟用這些功能。 如需相關指示，請參閱 how [to 將 Azure 資訊保護標籤遷移至統一敏感度標籤](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
+這些新功能僅適用于[敏感度標籤](sensitivity-labels.md)。 如果您目前已具備 Azure 資訊保護標籤，請先將它們遷移至靈敏度標籤，讓您可以針對您上傳的新檔案啟用這些功能。 如需相關指示，請參閱 how [to 將 Azure 資訊保護標籤遷移至統一敏感度標籤](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
 
-在此預覽中，請在 Windows 上使用 OneDrive 同步處理應用程式版本19.002.0121.0008 或更新版本，在 Mac 上使用19.002.0107.0008 或更新版本。 這兩個版本都發行于2019年1月28日，而且目前已發佈給所有的振鈴。 如需詳細資訊，請參閱[OneDrive 發行附注](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)。 啟用此預覽後，系統會提示執行舊版本的 sync 應用程式的使用者進行更新。
+使用 Windows 上的 OneDrive 同步處理應用程式版本19.002.0121.0008 或更新版本，以及 Mac 版19.002.0107.0008 或更新版本。 這兩個版本都發行于2019年1月28日，而且目前已發佈給所有的振鈴。 如需詳細資訊，請參閱[OneDrive 發行附注](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)。 在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤之後，會提示執行舊版本的 sync 應用程式的使用者進行更新。
 
 ## <a name="limitations"></a>限制
 
-- 當您啟用此預覽時，在 OneDrive 同步處理資料夾中的檔案上變更標籤的使用者，可能無法儲存對檔案所做的其他變更。 此案例適用于以加密標示標籤的檔案，也就是從沒有套用加密標籤的標籤所做的標籤變更時。 使用者看到[紅色圓圈時出現白色的交叉圖示錯誤](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)，並且要求您將新的變更儲存為個別的副本。  
+- 當您在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤時，在 OneDrive Sync 資料夾中的檔案上變更標籤的使用者，可能無法儲存對檔案所做的其他變更。 此案例適用于以加密標示標籤的檔案，也就是從沒有套用加密標籤的標籤所做的標籤變更時。 使用者看到[紅色圓圈時出現白色的交叉圖示錯誤](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)，並且要求您將新的變更儲存為個別的副本。  
     
     除了使用者所初始化的標籤變更之外，如果系統管理員變更已套用至使用者同步處理用戶端之檔案的已發行標籤設定，就會發生相同的行為。
     
@@ -74,7 +74,7 @@ ms.locfileid: "43930142"
     - 若要套用標籤，請使用 web 版本的 Office 應用程式。
     - 套用標籤後關閉檔案，然後重新開啟檔案以進行其他變更。
 
-- SharePoint 不會自動將敏感度標籤套用至您已使用 Azure 資訊保護標籤加密的現有檔案。 相反地，若要在啟用此預覽後取得功能，請完成下列工作：
+- SharePoint 不會自動將敏感度標籤套用至您已使用 Azure 資訊保護標籤加密的現有檔案。 相反地，若要在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤之後，取得功能，請完成下列工作：
     
     1. 確定您已將 Azure 資訊保護標籤遷移至靈敏度標籤，並已從 Microsoft 365 規範中心（或對等標上的標記系統管理中心）發行。
     
@@ -84,7 +84,7 @@ ms.locfileid: "43930142"
     - **讓使用者在套用標籤**和 [ **Word、PowerPoint 及 Excel 中**的核取方塊時，指定許可權，並選取 [提示使用者指定許可權]。 此設定有時稱為「使用者定義的許可權」。
     - 對**內容到期的使用者存取權**設定為**永不**值以外的值。
     
-    如果是具有上述任一種加密設定的標籤，則網頁上的 Office 使用者不會看到標籤。 此外，此預覽的新功能也無法用於已經具有這些加密設定的已標記檔。 例如，即使更新這些檔，這些檔也不會在搜尋結果中傳回。
+    如果是具有上述任一種加密設定的標籤，則網頁上的 Office 使用者不會看到標籤。 此外，新功能也無法與已有這些加密設定的已標記檔一起使用。 例如，即使更新這些檔，這些檔也不會在搜尋結果中傳回。
 
 - 針對授與使用者編輯許可權的加密檔，在 Office 應用程式的 web 版本中無法封鎖複製。
 
@@ -102,9 +102,38 @@ ms.locfileid: "43930142"
 
 - 如果您刪除的標籤已套用至 SharePoint 中的檔，而不是從適當的標籤原則中移除標籤，則下載的檔不會標示或加密。 相比之下，如果標籤的檔儲存在 SharePoint 之外，當標籤刪除時，該檔仍會保持加密狀態。 請注意，雖然您可以在測試階段刪除標籤，但很少需要在實際執行環境中刪除標籤。
 
-## <a name="prepare-the-sharepoint-online-management-shell-for-the-preview"></a>為預覽準備 SharePoint Online 管理命令介面
+## <a name="how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in"></a>如何啟用 SharePoint 和 OneDrive 的敏感度標籤（自願加入）
 
-若要使用 PowerShell 啟用預覽，請確定您正在執行 SharePoint 線上管理命令介面版本16.0.19418.12000 或更新版本。 如果您已有最新版本，則可以繼續進行並啟用預覽。
+您可以使用 Microsoft 365 規範中心或使用 PowerShell 來啟用新功能。
+
+### <a name="use-the-compliance-center-to-enable-support-for-sensitivity-labels"></a>使用規範中心來啟用敏感度標籤支援
+
+這個選項是為 SharePoint 和 OneDrive 啟用敏感度標籤的最簡單方式。
+
+組織的全域系統管理員擁有建立及管理敏感度標籤所有層面的完整權限。 如果您未以全域系統管理員身分登入，請參閱[建立和管理敏感度標籤所需的權限](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels)。
+
+1. 登入[Microsoft 365 規範中心](https://compliance.microsoft.com/)，並流覽至**解決方案** > **資訊保護**
+    
+    如果您沒有立即看到這個選項，請先選取 [全部顯示]****。 
+
+2. 如果您看到可在 Office online 檔案中處理內容之功能的訊息，請選取 [**立即開啟**]：
+    
+    ![開啟 [立即開啟] 按鈕，以啟用 Office Online 的敏感度標籤](../media/sensitivity-labels-turn-on-banner.png)
+    
+    命令會立即執行，並在下一次重新整理頁面時，您就不會再看到訊息或按鈕。 
+
+> [!NOTE]
+> 如果您有 Office 365 多地理位置，您必須使用 PowerShell 來啟用所有地理位置的功能。 如需詳細資料，請參閱下一節。
+
+### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>使用 PowerShell 啟用敏感度標籤支援
+
+除了使用規範中心之外，您還可以使用[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) Cmdlet 從 SharePoint 線上 PowerShell 中，啟用敏感度標籤支援。 
+
+如果您有 Office 365 多地理位置，您必須使用 PowerShell 來啟用所有地理位置的支援。
+
+#### <a name="prepare-the-sharepoint-online-management-shell"></a>準備 SharePoint 線上管理命令介面
+
+在您執行 PowerShell 命令以啟用 SharePoint 和 OneDrive 中的 Office 檔案敏感度標籤之前，請確定您執行 SharePoint 線上管理命令介面版本16.0.19418.12000 或更新版本。 如果您已有最新版本，則可以略過[下一個](#run-the-powershell-command-to-enable-support-for-sensitivity-labels)程式執行 PowerShell 命令。
 
 1. 如果您已安裝來自 PowerShell 資源庫的舊版 SharePoint Online 管理命令介面，您可以執行下列 Cmdlet 來更新模組。
 
@@ -122,39 +151,20 @@ ms.locfileid: "43930142"
 
 6. 下載檔案之後，請執行檔，然後依照安裝精靈中的步驟進行。
 
-## <a name="enable-the-preview-by-using-microsoft-powershell-opt-in"></a>使用 Microsoft PowerShell 啟用預覽（自願加入）
+#### <a name="run-the-powershell-command-to-enable-support-for-sensitivity-labels"></a>執行 PowerShell 命令以啟用敏感度標籤支援
 
-若要啟用預覽，請使用 Set-SPOTenant Cmdlet：
+若要啟用新功能，請搭配使用[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) Cmdlet 搭配*EnableAIPIntegration*參數：
 
 1. 在 Office 365 中使用具有全域系統管理員或 SharePoint 系統管理員許可權的工作或學校帳戶，連接至 SharePoint。 若要了解如何進行，請參閱[開始使用 SharePoint Online 管理命令介面](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
     
     附注：如果您有 Office 365 多地理位置，請搭配使用-Url 參數和[Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)，並為其中一個地理位置指定 SharePoint Online Administration CENTER 網站 Url。
 
-2. 執行下列命令：
+2. 執行下列命令，然後按**Y**確認：
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
 3. 針對 Office 365 多地理位置：對餘下的地理位置重複步驟1和2。
-
-## <a name="use-the-compliance-center-to-enable-support-for-sensitivity-labels"></a>使用規範中心來啟用敏感度標籤支援
-
-此選項目前正以其他方法來啟用預覽，以取代承租人。
-
-組織的全域系統管理員擁有建立及管理敏感度標籤所有層面的完整權限。 如果您未以全域系統管理員身分登入，請參閱[建立和管理敏感度標籤所需的權限](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels)。
-
-1. 登入[Microsoft 365 規範中心](https://compliance.microsoft.com/)，並流覽至**解決方案** > **資訊保護**
-    
-    如果您沒有立即看到這個選項，請先選取 [全部顯示]****。 
-
-2. 在 [**標籤] 索引標籤**上，如果您看到開啟在 Office online 檔案中處理內容之功能的訊息，請選取 [**立即開啟**]：
-    
-    ![開啟 [立即開啟] 按鈕，以啟用 Office Online 的敏感度標籤](../media/sensitivity-labels-turn-on-banner.png)
-    
-    命令會立即執行，並在下一次重新整理頁面時，您就不會再看到訊息或按鈕。 
-
-> [!NOTE]
-> 如果您有 Office 365 多地理位置，您必須使用 PowerShell 來啟用所有地理位置的功能。 如需相關指示，請參閱上一節。
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>在您建立或變更靈敏度標籤之後排程部署
 
@@ -168,20 +178,18 @@ ms.locfileid: "43930142"
 
 3. 更廣泛地發佈標籤。
 
-## <a name="disable-the-preview-by-using-microsoft-powershell-opt-out"></a>使用 Microsoft PowerShell 停用預覽（自願檢出）
+## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>如何停用 SharePoint 和 OneDrive 的敏感度標籤（自願拉出）
 
-如果您停用此預覽，您在預覽期間上傳的檔案會繼續受到標籤的保護。 會繼續強制執行對應的設定。 當您停用預覽後，將標籤套用至新的檔案時，全文搜尋、eDiscovery 和合著功能將不再運作。
+如果您停用這些新功能，當您為 SharePoint 和 OneDrive 啟用敏感度標籤之後，您上傳的檔案會繼續受到標籤的保護，因為標籤設定會繼續強制執行。 當您停用這些新功能之後，當您將敏感度標籤套用至新的檔案時，全文搜尋、eDiscovery 和合著將不再運作。
 
-若要停用預覽，請使用 Set-SPOTenant Cmdlet：
+若要停用這些新功能，您必須使用 PowerShell。 使用 SharePoint 線上管理命令介面和[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps)指令程式，指定與[使用 PowerShell 以啟用敏感度標籤](#use-powershell-to-enable-support-for-sensitivity-labels)] 區段中所述的相同*EnableAIPIntegration*參數。 不過這段時間，請將參數值設為 false，然後按**Y**確認：
 
-1. 使用具有全域系統管理員或 SharePoint 系統管理員許可權的工作或學校帳戶，連接至 SharePoint。 若要了解如何進行，請參閱[開始使用 SharePoint Online 管理命令介面](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
+```PowerShell
+Set-SPOTenant -EnableAIPIntegration $false
+```
 
-2. 執行下列命令：
-
-    ```PowerShell
-    Set-SPOTenant -EnableAIPIntegration $false
-    ```
+如果您有 Office 365 多地理位置，您必須針對每個地理位置執行此命令。
 
 ## <a name="next-steps"></a>後續步驟
 
-現在，您已在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤，請考慮使用自動標記原則自動標記這些檔案。 如需詳細資訊，請參閱[自動將敏感度標籤套用至內容](apply-sensitivity-label-automatically.md)。
+在 SharePoint 和 OneDrive 中為 Office 檔案啟用敏感度標籤之後，請考慮使用自動標記原則自動標記這些檔案。 如需詳細資訊，請參閱[自動將敏感度標籤套用至內容](apply-sensitivity-label-automatically.md)。

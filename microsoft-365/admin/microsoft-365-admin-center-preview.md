@@ -16,14 +16,13 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: 深入瞭解新的 Microsoft 365 系統管理中心。
-ms.openlocfilehash: c4e6df3824e3f4ca33e947c438bb0be2f841e416
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+ms.openlocfilehash: 95453380fc693c4313debf5baaa96264d486385b
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907222"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43952636"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>關於新的 Microsoft 365 系統管理中心
 
@@ -105,7 +104,7 @@ Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般
 
 Microsoft 365 是完整的智慧解決方案，包括 Office 365、Windows 10 和企業行動性 + 安全性，可讓每個人都有創造性且安全地協同運作。 您可以在系統管理中心使用下列 Microsoft 365 訂閱，讓您立即嘗試或購買：
   
-- Microsoft 365 商務版
+- 商務用 Microsoft 365
 - Microsoft 365 企業版 E3
 - Microsoft 365 企業版 E5
     
