@@ -1,0 +1,80 @@
+### YamlMime:Landing
+title: 使用 Office 365 PowerShell 管理 SharePoint Online 使用者和群組
+summary: 請參閱這些資源，以協助系統管理員進行常見的工作，或參閱左側的功能窗格以取得完整清單。
+metadata:
+  title: 使用 Office 365 PowerShell 管理 SharePoint Online 使用者和群組
+  description: 管理密碼、新增及移除使用者、設定群組，以及管理授權
+  ms.service: O365-administration
+  ms.subservice: subservice
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 01/27/2020
+  localization_priority: Priority
+  ms.openlocfilehash: fc4300d57f3a14a7f71b0ff61a3aedf4c54bbac6
+  ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43955310"
+landingContent:
+- title: 管理使用者
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 新增使用者
+      url: add-users.md
+    - text: 編輯使用者
+      url: add-users.md
+    - text: 新增另一個電子郵件地址
+      url: ../email/add-another-email-alias-for-a-user.md
+    - text: 建立共用信箱
+      url: ../email/create-a-shared-mailbox.md
+    - text: 將授權指派給使用者
+      url: ../manage/assign-licenses-to-users.md
+    - text: 從使用者移除授權
+      url: ../manage/remove-licenses-from-users.md
+    - text: 使用您的自訂網域
+      url: ../email/change-email-address.md
+- title: 管理群組
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 建立群組
+      url: ../create-groups/create-groups.md
+    - text: 新增成員
+      url: ../create-groups/add-or-remove-members-from-groups.md
+    - text: 還原或復原已刪除的群組
+      url: ../create-groups/restore-deleted-group.md
+    - text: 管理群組中的來賓存取
+      url: ../create-groups/manage-guest-access-in-groups.md
+- title: 管理密碼
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 重設使用者的密碼
+      url: reset-passwords.md
+    - text: 將密碼設為永不過期
+      url: set-password-to-never-expire.md
+    - text: 讓使用者重設自己的密碼
+      url: let-users-reset-passwords.md
+    - text: 為您的組織設定密碼到期原則
+      url: ../manage/set-password-expiration-policy.md
+    - text: 重設系統管理員密碼
+      url: reset-passwords.md#reset-my-admin-password
+- title: 移除員工
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 刪除使用者
+      url: delete-a-user.md
+    - text: 存取及備份先前使用者的資料
+      url: get-access-to-and-back-up-a-former-user-s-data.md
+    - text: 將電子郵件轉寄給另一位使用者
+      url: ../email/configure-email-forwarding.md
+    - text: 移除授權
+      url: ../manage/remove-licenses-from-users.md
+    - text: 還原已刪除的使用者
+      url: restore-user.md
+    - text: 從裝置移除公司資料（Microsoft 365 商務版 Premium）
+      url: ../../business/remove-company-data.md

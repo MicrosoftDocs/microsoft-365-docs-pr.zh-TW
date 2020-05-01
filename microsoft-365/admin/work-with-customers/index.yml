@@ -1,0 +1,39 @@
+### YamlMime:Landing
+title: 與客戶合作
+summary: 請參閱這些資源，以協助系統管理員進行常見的工作，或參閱左側的功能窗格以取得完整清單。
+metadata:
+  title: 與客戶合作
+  description: 共用檔和使用團隊共同作業和開會
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 04/16/2020
+  localization_priority: Priority
+  ms.openlocfilehash: 299b7fa4cb98f05a1f5a3248fad59d3e8ea414ed
+  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43952672"
+landingContent:
+- title: 與客戶合作
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 共用外部網站和檔案
+      url: ../manage/share-sites-with-external-users.md
+    - text: 與來賓使用者共用行事曆
+      url: ../manage/share-calendars-with-external-users.md
+  - linkListType: video
+    links:
+    - text: 建立具有來賓的小組
+      url: https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7
+    - text: 將小組加入為來賓
+      url: https://support.office.com/article/928d1eef-61e2-49ec-b754-c2fe86b34824
+    - text: 與員工和客戶聊天
+      url: https://support.office.com/article/65748808-a403-462c-a6e1-b169e5bc6c92
+    - text: 排程具有來賓的小組會議
+      url: https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a
+    - text: 加入與客人的小組會議
+      url: https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8
