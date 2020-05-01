@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 48e6b000110014637afbf032f81b23703a763f4d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 7d31d77bdb08ce5ae7ef5580301b0432747da2a1
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943242"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43952626"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -188,7 +188,7 @@ ms.locfileid: "43943242"
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>如何設定 SharePoint、OneDrive 和 Exchange 的自動套用標籤原則
 > [!NOTE]
-> 自動套用標籤原則會在公開預覽階段逐步推出給租用戶，並可能有所變更。
+> 自動套用標籤原則在公開預覽階段，並可能有所變更。
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>自動套用標籤原則的必要條件
 
@@ -241,7 +241,6 @@ ms.locfileid: "43943242"
     
     ![自動套用標籤 (預覽) 索引標籤](../media/auto-labeling-tab.png)
     
-    這個新的索引標籤仍會提供給租使用者。 如果您沒有看到，請於之後幾天再試一次。
 
 3. 選取 [+ 建立原則]****。
 
