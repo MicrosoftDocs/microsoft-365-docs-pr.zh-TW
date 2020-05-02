@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供 Microsoft 365 for enterprise 的元件、方案及部署路徑的簡介。
-ms.openlocfilehash: 85f05e85989d7b298ba0575c7447a3ef157ea163
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d9148acadf5ec05562ac1a5cbbca9cbf7d0a1b65
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631558"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002288"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -45,7 +45,7 @@ ms.locfileid: "43631558"
 |:-------|:-----|
 | E3 | 存取 Microsoft 365 中的核心產品和功能，以加強工作場所生產力，並安全地推動創新。 |
 | E5 | 存取 Microsoft 365 內最新的產品和功能，包括「高級威脅防護」、「安全性與共同作業」工具。。 包含所有的 E3's 功能，以及高級安全性、語音及資料分析工具。 |
-| F1 | 透過專門構建的工具和資源，與您的 Firstline 工作者進行連線，讓他們可以進行最佳的工作。 |
+| F3 | 透過專門構建的工具和資源，與您的 Firstline 工作者進行連線，讓他們可以進行最佳的工作。 |
 |||
 
 如果您有 Microsoft 365 E3，您也可以取得下列[產品](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/)：
@@ -125,7 +125,7 @@ ms.locfileid: "43631558"
 
 ## <a name="additional-microsoft-365-solutions"></a>其他 Microsoft 365 解決方案
 
-- [Microsoft 365 商務版 Premium](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 商務進階版](https://docs.microsoft.com/microsoft-365/business/)
  
   將 Office 365 的同等級最佳生產力和共同作業能力與裝置管理和安全性解決方案整合在一起，以保護中小型企業 (SMB) 的商務資料。
 
@@ -149,6 +149,6 @@ ms.locfileid: "43631558"
 
 如果您是自行進行部署，請啟動您[的 Microsoft 365，以進行企業部署旅程](deploy-microsoft-365-enterprise.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [適用于企業產品的 Microsoft 365 頁面](https://www.microsoft.com/microsoft-365/enterprise)

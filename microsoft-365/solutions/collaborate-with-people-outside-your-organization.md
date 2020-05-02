@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解如何設定 Microsoft 365，以與組織外部的人員共同作業。
-ms.openlocfilehash: 1b2a15312dcaacc398bb521f3ecfb6e7453f66bb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 338b486725f727506d654a4507d8ea47c6fa2bab
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630722"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002249"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>與組織外部人員合作
 
@@ -42,7 +46,7 @@ Microsoft 365 中的外部共用功能可讓您組織中的人員與合作夥伴
 
 - 以未[驗證的使用者共用檔案和資料夾的最佳作法](best-practices-anonymous-sharing.md)-瞭解與未驗證使用者共用的最佳作法。
 - [限制意外曝光](share-limit-accidental-exposure.md)-瞭解如何減少與組織外部人員意外共用機密內容的機率。
-- [建立安全來賓共用環境](create-secure-guest-sharing-environment.md)）-深入瞭解 Microsoft 365 中提供的工具，以協助確保與組織外部的人員共用，以安全且安全的方式執行，並符合您的管理需求。
+- [建立安全來賓共用環境](create-secure-guest-sharing-environment.md)-深入瞭解 Microsoft 365 中提供的工具，以協助確保與組織外部的人員共用，以安全且安全的方式執行，並符合您的管理需求。
 
 ## <a name="collaborate-with-partner-companies"></a>與合作夥伴公司共同作業
 

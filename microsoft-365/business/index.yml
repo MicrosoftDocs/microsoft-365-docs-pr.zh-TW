@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Microsoft 365 商務版 Premium 資源
-summary: Microsoft 365 商務版（以前稱為 Microsoft 365 公司）是適用于低於低於300員工之企業的完整訂閱服務。 它會以高級安全性和裝置管理功能，整合您最喜歡的 Office 生產力應用程式和服務和共同作業工具，例如 Microsoft 團隊。
+summary: Microsoft 365 商務進階版 (之前稱為 Microsoft 365 商務版) 是一項全面的訂閱服務，適用於員工人數低於 300 人的企業。 它會以高級安全性和裝置管理功能，整合您最喜歡的 Office 生產力應用程式和服務和共同作業工具，例如 Microsoft 團隊。
 brand: m365
 metadata:
   title: Microsoft 365 商務版 Premium 資源
@@ -11,12 +11,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 4dff1d10b8a4574ea8350aa194d7f6a2c8eb2605
-  ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+  ms.openlocfilehash: 520a89860d5dcac103493037fc4a52b8e60073ea
+  ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 04/22/2020
-  ms.locfileid: "43781468"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "44002177"
 productDirectory:
   title: 使用 Microsoft 365 商務版加強遠端工作
   items:
@@ -34,7 +34,7 @@ productDirectory:
     url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
 conceptualContent:
   items:
-  - title: 何謂 Microsoft 365 商務版？
+  - title: 什麼是 Microsoft 365 商務進階版？
     links:
     - url: microsoft-365-business-overview.md
       itemType: overview
@@ -51,7 +51,7 @@ conceptualContent:
     - url: support/microsoft-365-business-faqs.md
       itemType: reference
       text: 常見問題集
-  - title: 設定 Microsoft 365 商務版 Premium
+  - title: 設定 Microsoft 365 商務進階版
     links:
     - url: set-up.md
       itemType: how-to-guide
@@ -79,6 +79,9 @@ conceptualContent:
     - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
       itemType: download
       text: 技術基礎
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
+      itemType: download
+      text: 保護遠端工作的檢查清單
   - title: 管理使用者
     links:
     - url: https://docs.microsoft.com/microsoft-365/business/add-users-m365b
@@ -188,7 +191,7 @@ conceptualContent:
       text: 註冊 Microsoft 365 商務版 Premium
     - url: migrate-to-microsoft-365-business.md
       itemType: how-to-guide
-      text: 從 Microsoft 365 商務標準遷移
+      text: 從 Microsoft 365 商務標準版移轉
     - url: migrate-from-e3.md
       itemType: how-to-guide
       text: 從 Office 365 E3 移轉

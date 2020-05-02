@@ -12,12 +12,12 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: josephd
-ms.openlocfilehash: 74c8dc4a0d4e2d457462320999ed79e80b372b7a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 43793a1780542b1825c693030dd9d4dbff4ee3d7
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636660"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002340"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>步驟1：為 Windows 10 企業版準備您的組織
 
@@ -51,12 +51,12 @@ Microsoft 會使用診斷資料，以找出惡意程式碼趨勢及其他威脅�
 |:--- |:--- |:--- |
 | 安全性 | 僅限安全性資料。 | 0 |
 | 基本 | 安全性資料和基本系統和品質資料。 | 1  |
-| 增強 | 安全性資料、基本系統和品質資料，以及增強的真知灼見和 advanced 可靠性資料。 | 2  |
+| 增強 | 安全性資料、基本系統和品質資料，以及增強的真知灼見和 advanced 可靠性資料。 | 第 |
 | Full | 安全性資料、基本系統和品質資料、增強的真知灼見和 advanced 可靠性資料，以及完整的診斷資料。 | 3  |
 
 您可以透過下列其中一種方法來啟用診斷資料：
 
-* **Microsoft Intune** -如果您想要使用 Intune 來管理裝置，您可以設定<a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a>系統原則，以建立啟用診斷資料的設定原則。 如需設定原則的詳細資訊，請參閱[使用 Microsoft Intune 原則管理裝置上的設定和功能](https://aka.ms/intuneconfigpolicies)。
+* **Microsoft Intune** -如果您想要使用 Intune 來管理裝置，您可以設定<a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a>系統原則，以建立啟用診斷資料的設定原則。
 * **登錄編輯程式**-您可以使用登錄編輯程式，在組織中的每台裝置上手動啟用診斷資料。 或者，您也可以撰寫腳本，以編輯註冊表。 如果管理原則已存在（如群組原則或 MDM），它會覆寫此登錄設定。
 * **群組原則**-如果您不打算在 Intune 中註冊裝置，您可以使用「群組原則」物件設定組織的診斷資料層級。
 * **命令提示**字元-您可以將 Windows 10 診斷資料和服務設定為以命令提示字元自動啟動。 這種方法最適合於只在幾個裝置上測試服務。 使用此命令讓服務自動啟動，將不會設定診斷資料層級。 如果您未使用管理工具設定診斷資料層級，該服務將以預設的增強層級運作。

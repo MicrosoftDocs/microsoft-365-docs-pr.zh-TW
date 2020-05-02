@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: fa970b28939ad43bf6a2717e603013277bc9130f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: f1c616a3d752324b8db5fdd5069904989a25eade
+ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633901"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43997511"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>開啟 Microsoft 威脅防護
 
@@ -36,7 +36,7 @@ Microsoft 威脅防護整合了您的事件回應流程，方法是整合跨 Mic
 若要取得最佳保護，並優化 Microsoft 威脅防護，我們建議您在網路上部署所有適用的受支援服務。 如需詳細資訊，請[參閱部署支援的服務](deploy-supported-services.md)。
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>檢查授權資格和必要許可權
-Microsoft 365 E5，E5 Security，or A5 授權或有效的授權組合，可提供支援服務的存取權，並可讓您在 Microsoft 365 安全性中心使用 Microsoft 威脅防護。
+Microsoft 365 E5，E5 Security，A5，或 A5 安全性授權或有效的授權組合，可提供支援服務的存取權，並可讓您在 Microsoft 365 安全性中心使用 Microsoft 威脅防護。
 
 如需詳細的授權資訊，請[閱讀授權要求](prerequisites.md#licensing-requirements)。
 
@@ -51,7 +51,7 @@ Microsoft 威脅防護會匯總各種整合服務中的資料。 它會集中處
 ![顯示 microsoft](../../media/mtp-welcome.png)
 *365 security center 中*microsoft 威脅防護歡迎頁面上的 microsoft 威脅防護功能，顯示 microsoft 威脅防護歡迎頁面的圖像
 
-若要開啟 Microsoft 威脅防護，只需從歡迎頁面完成此程式。 您也可以在功能窗格中存取**設定**（[security.microsoft.com/settings](https://security.microsoft.com/settings)），並選取 [ **microsoft 威脅防護**]，以開啟 microsoft 威脅防護。
+若要開啟 Microsoft 威脅防護，只需從歡迎頁面完成此程式。 您也可以在功能窗格中存取**設定**（[security.microsoft.com/settings](https://security.microsoft.com/settings)），並選取 [ **microsoft 威脅防護**]，以開啟 microsoft 威脅防護。 按一下 **[儲存]**。
 
 >[!NOTE]
 >如果您在功能窗格中看不到**設定**或無法存取頁面，請檢查您的許可權和授權。

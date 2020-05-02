@@ -5,23 +5,27 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解如何使用夥伴組織中的受管理來賓使用者建立 B2B 外部網路網站或小組。
-ms.openlocfilehash: 24a2652d4d025f194d0754b90b6a21a054f4159a
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 3a1faab90907daf9c48ec02c51eb272187fb0fde
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604538"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44001696"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>使用受管理來賓建立 B2B 外部網路
 
 您可以使用[Azure Active Directory 的權利管理](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)建立 B2B 外部網路，以與使用 Azure Active Directory 的夥伴組織共同作業。 這可讓使用者在外部網路網站或小組中自我註冊，並透過核准工作流程接收存取權。
 
-透過這種共用資源進行共同作業，合作夥伴組織可以協助使用者在其端繼續維護和核准來賓使用者，減少 IT 部門的工作，並讓他們最熟悉共同作業合約以管理使用者訪問。
+透過這種共用資源進行共同作業，合作夥伴組織可以協助使用者在其端維護和核准來賓使用者，減少 IT 部門的負擔，並讓您能夠熟悉共同作業合約，以管理使用者存取。
 
 本文將逐步逐步建立可透過自助存取註冊模型與夥伴組織共用的資源套件（此案例中為網站或小組）。 
 
