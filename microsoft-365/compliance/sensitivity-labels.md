@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 從 Microsoft 資訊保護架構使用敏感度標籤來分類及保護組織的資料，同時確保使用者生產效率和共同作業能力不受影響。 這些標籤可套用保護設定以包含加密視覺標記，如頁尾和浮水印。
-ms.openlocfilehash: 65f647228db1ce18c7c26ce0f12542569c5f0a2e
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: d31faa5dde212060f5e7b3c075cf4bc6fb3bef5f
+ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790650"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43957303"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -77,10 +77,7 @@ ms.locfileid: "43790650"
 ## <a name="what-sensitivity-labels-can-do"></a>敏感度標籤的功能
 
 > [!NOTE]
-> 除了在 Office 應用程式中將標籤套用至電子郵件和文件以外，現在也能在下列公開預覽版中使用敏感度標籤：
-> 
-> - [對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤 (公開預覽)](sensitivity-labels-sharepoint-onedrive-files.md)
-> - [對 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站使用敏感度標籤 (公開預覽)](sensitivity-labels-teams-groups-sites.md)
+> 除了將敏感度標籤套用至電子郵件和文件，目前在預覽版中，您也可以[搭配 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站使用敏感度標籤](sensitivity-labels-teams-groups-sites.md)。
 
 將敏感度標籤套用至電子郵件或文件後，將會對內容強制執行為該標籤設定的保護設定。 您可以使用敏感度標籤：
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 若要在您的 Office 365 或 Microsoft 組織中執行記錄管理策略，請使用保留標籤將內容宣告為記錄。 然後發佈或自動套用保留記錄標籤。
-ms.openlocfilehash: db33c65b6c3528a717672b0111a9da098a3d5c31
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cfd9bbc30313a53c197476ab6b7345fdff1c0c35
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632112"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949280"
 ---
 # <a name="overview-of-records"></a>記錄概觀
 
@@ -38,7 +38,7 @@ ms.locfileid: "43632112"
 
 - 在記錄規定的保留期限結束後，會將記錄丟棄。
 
-您可以使用[保留標籤](labels.md)將內容分類為記錄。 建立保留標籤來宣告記錄後，您可以[發佈](labels.md#how-retention-labels-work-with-retention-label-policies)這些標籤 (讓使用者使用這些標籤將內容分類為記錄)，或[自動套用這些標籤](labels.md#applying-a-retention-label-automatically-based-on-conditions)將您想要的內容分類為記錄。 透握使用保留標籤來宣告記錄，您就可以在 Office 365 中實作單一且一致的記錄管理策略，而其他記錄管理功能 (例如 [記錄中心]) 只能套用至 SharePoint 內容。
+使用[保留標籤](labels.md)將內容分類為記錄。 建立保留標籤來宣告記錄後，您可以[發佈](labels.md#how-retention-labels-work-with-retention-label-policies)這些標籤 (讓使用者使用這些標籤將內容分類為記錄)，或[自動套用這些標籤](labels.md#applying-a-retention-label-automatically-based-on-conditions)將您想要的內容分類為記錄。 透握使用保留標籤來宣告記錄，您就可以在 Office 365 中實作單一且一致的記錄管理策略，而其他記錄管理功能 (例如 [記錄中心]) 只能套用至 SharePoint 內容。
 
 請記住以下關於記錄的事實：
 
@@ -74,10 +74,10 @@ ms.locfileid: "43632112"
 
 當您建立保留標籤時，可以選擇使用保留標籤將內容分類為記錄。 若要將內容聲明為記錄，請遵循下列步驟：
 
-1. 建立保留標籤。 在 Microsoft 365 合規性中心中，移至 [記錄管理]**** \> [檔案計畫]****。 在 [檔案計畫]**** 頁面上，按一下 [建立標籤]****。
+1. 建立保留標籤。 在 Microsoft 365 合規性中心中，移至 [記錄管理]**** \> [檔案計畫]****。 選取在 **[檔案計畫]** 頁面上的 **[建立標籤]**。
 
-2. 在精靈的 [標籤設定]**** 頁面上，選擇設定保留標籤的選項，將內容宣告為記錄。<br/>
-
+2. 在精靈的 [標籤設定]**** 頁面上，選擇設定保留標籤的選項，將內容宣告為記錄。
+    
    ![按一下 [使用標籤以將內容分類為「記錄」] 核取方塊](../media/recordversioning6.png)
 
 3. [發佈](labels.md#how-retention-labels-work-with-retention-label-policies)或[自動套用](labels.md#applying-a-retention-label-automatically-based-on-conditions)保留標籤到 SharePoint 網站和/或 OneDrive 帳戶。

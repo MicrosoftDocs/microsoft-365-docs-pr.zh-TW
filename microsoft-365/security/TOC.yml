@@ -269,6 +269,8 @@
                       href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                     - name: 將郵件手動提交給 Microsoft
                       href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
+                    - name: 使用郵件流程規則來查看您的使用者報告給 Microsoft 哪些內容
+                      href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
                     - name: 將惡意程式碼與非惡意程式碼提交給 Microsoft
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: 反垃圾郵件訊息標頭
