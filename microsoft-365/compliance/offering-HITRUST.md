@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f04c6bf41e9c09455773c419efec0b7b4e8ca5ae
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fa35e71d2748e02da12a239f67134c1b25b5a369
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637987"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011826"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>健康資訊信任同盟（HITRUST）常見的安全性架構（CSF）
 
@@ -45,7 +45,7 @@ HITRUST 提供三種確定性或評估等級：自我評估、CSF 驗證及 CSF 
 - Intune
 - [Office 365 和 Office 365 美國政府](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 Azure 和 Office 365 的 HITRUST CSF 憑證是兩年有效。
 
@@ -82,7 +82,7 @@ Azure 和 Office 365 的 HITRUST CSF 憑證是兩年有效。
 
 **Office 365 的範圍內服務有哪些？**
 
-HITRUST CSF 認證的範圍內服務是 Exchange Online 封存、Exchange Online Protection、Exchange Online、商務用 Skype、系統管理中心、SharePoint 線上、Project Online、OneDrive for Business、Office Online、MyAnalytics、Microsoft 團隊、office 365 多租使用者雲端和 Office 365 GCC 中的 Office ProPlus。
+HITRUST CSF 認證的範圍內服務是 Exchange Online 封存、Exchange Online Protection、Exchange Online、商務365用 Skype、系統管理中心、SharePoint 線上、Project Online、OneDrive for Business、Office Online、MyAnalytics、Microsoft 團隊、Microsoft 365 多租使用者雲端和 Office 365 GCC。
 
 > [!NOTE]
 > Microsoft 365 應用程式企業版可讓您存取各種雲端服務，例如漫遊設定、授權和 OneDrive 使用者雲端儲存裝置，並可讓今後存取其他雲端服務。 漫遊設定和授權支援 HITRUST 的標準。 OneDrive 使用者雲端儲存區未提供，而且可透過 Microsoft 365 應用程式存取的其他雲端服務，以及 Microsoft 未來可能會提供的雲服務，也可能會支援這些標準。 *

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: 深入瞭解 Microsoft 365 for business 中可用的預設和其他設定，以保護 Windows 10 裝置。
-ms.openlocfilehash: a3b7f0a8572a215491b32101a30c306b54571b6f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9096fb6a8fc790d9a9432578cfd8623f9cb69c7a
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633010"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011560"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>設定適用於 Windows 10 電腦的裝置保護設定
 
@@ -67,7 +67,7 @@ ms.locfileid: "43633010"
 |使用 Windows Defender 防毒軟體來協助保護電腦免於遭受病毒與其他威脅的侵害  <br/> |需要開啟 Windows Defender 防毒軟體，以保護電腦免於遭受連接至網際網路時的安全威脅。  <br/> |
 |協助保護電腦免於遭受 Microsoft Edge 中的網路安全威脅  <br/> |開啟 Microsoft Edge 中的設定，以協助保護使用者免受惡意網站與下載檔案的威脅。  <br/> |
 |使用能減少裝置受攻擊面的規則  <br/> |設定為 [開啟] 時，受攻擊面縮減能協助系統封鎖惡意程式碼通常會用來感染裝置的動作和 App。只有在 Windows Defender 防毒軟體設為 [開啟] 時，這項設定才能夠使用。請參閱[縮減受攻擊面](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)以深入了解。  <br/> |
-|保護資料夾來抵擋勒索軟體等威脅  <br/> |這項設定使用受控資料夾存取權來保護公司資料，不讓可疑或惡意的 App 修改。 系統會封鎖這類型的 App，不讓它們變更受保護資料夾中的資料。 只有在 Windows Defender 防毒軟體設為 [開啟] 時，這項設定才能夠使用。 請參閱[使用可控資料夾存取保護資料夾](https://docs.microsoft.com/configmgr/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA)以深入瞭解。  <br/> |
+|保護資料夾來抵擋勒索軟體等威脅  <br/> |這項設定使用受控資料夾存取權來保護公司資料，不讓可疑或惡意的 App 修改。 系統會封鎖這類型的 App，不讓它們變更受保護資料夾中的資料。 只有在 Windows Defender 防毒軟體設為 [開啟] 時，這項設定才能夠使用。 請參閱[使用可控資料夾存取保護資料夾](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA)以深入瞭解。  <br/> |
 |避免連線到網際網路上可能有惡意之內容的網路存取行為  <br/> |使用此設定來封鎖向低信譽 Internet 位置（可能會主控網路釣魚詐騙、入侵或其他惡意內容）的外寄使用者連線。 只有在 Windows Defender 防病毒設定為**On**時，才可使用此設定。 如需詳細資訊，請參閱[保護您的網路](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)。  <br/> |
 |利用 BitLocker 來協助您保護電腦上的檔案和資料夾，抵擋未經授權的存取行為  <br/> |Bitlocker 能為電腦硬碟加密來保護資料，以及在電腦遺失或遭竊時保護資料來避免資料外洩。 如需詳細資訊，請參閱[BITLOCKER FAQ](https://go.microsoft.com/fwlink/?linkid=871000)。  <br/> |
 |允許使用者從 Microsoft Store 下載 App  <br/> |讓使用者從 Microsoft Store 下載並安裝 App。 應用程式包括從遊戲到生產力工具的所有專案，因此我們將此設定保留為**開啟**，但您可以關閉此設定，以進行額外的安全性。  <br/> |

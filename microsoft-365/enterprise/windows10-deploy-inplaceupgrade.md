@@ -1,7 +1,7 @@
 ---
-title: 將 Windows 10 企業版的現有裝置部署為就地升級
-description: 針對設定及部署使用 System Center Configuration Manager 進行就地升級為 Windows 10 企業版映像提供指導。
-keywords: Microsoft 365，Microsoft 365 企業版，Microsoft 365 文件、 Windows 10 企業版部署中，就地升級，Configuration Manager，System Center Configuration Manager
+title: 部署 Windows 10 企業版作為就地升級的現有裝置
+description: 提供使用 Microsoft 端點設定管理員設定及部署 Windows 10 企業版映射的指導方針做為就地升級。
+keywords: Microsoft 365，Microsoft 365 企業版，Microsoft 365 檔，Windows 10 企業版，部署，就地升級，Configuration Manager，Configuration Manager
 author: greg-lindsay
 localization_priority: Normal
 ms.collection: M365-modern-desktop
@@ -9,435 +9,146 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
+f1.keywords:
+- NOCSH
 ms.author: greglin
-ms.openlocfilehash: 31650774a784f1fe784c30b90bc1f9ae579b34fa
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 1c90640fa49aa102d2a4c8420feedf659b5682f2
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291610"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011814"
 ---
-# <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>步驟 2： 以進行就地升級現有的裝置部署 Windows 10 企業版
+# <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>步驟2：將現有裝置的 Windows 10 企業版部署為就地升級
 
-*本文適用於 Microsoft 365 企業版 E3 和 E5 版本*
+*本文適用于 Microsoft 365 企業版的 E3 和 E5 版本*
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![階段 3：Windows 10 企業版](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-升級目前執行 Windows 7 或 Windows 8.1 到 Windows 10 電腦的最簡單路徑是透過使用就地升級。 您可以使用 System Center Configuration Manager (Configuration Manager) 工作順序完全自動化程序。 
+將目前執行 Windows 7 或 Windows 8.1 之電腦升級至 Windows 10 的最簡單途徑是透過就地升級。 您可以使用 Configuration Manager （Configuration Manager）任務順序，以完全自動化處理常式。 
 
-如果您有現有的電腦執行 Windows 7 或 Windows 8.1，我們建議此路徑，如果您的組織正在部署 Windows 10。 這會運用 Windows 安裝程式 (Setup.exe) 以執行就地升級，自動會保留所有的資料、 設定、 應用程式，並從現有的作業系統版本的驅動程式。 這需要最少的 IT 努力，因為不需要任何複雜的部署基礎結構。
+如果您有現有的電腦正在執行 Windows 7 或 Windows 8.1，建議您在組織部署 Windows 10 時，建議使用此路徑。 這會利用 Windows 安裝程式（setup.exe）執行就地升級，這會自動保留現有作業系統版本中的所有資料、設定、應用程式及驅動程式。 這需要最少的 IT 工作，因為不需要任何複雜的部署基礎結構。
 
-請遵循下列步驟來設定並部署 Configuration Manager 使用就地升級為 Windows 10 企業版映像。
+請遵循下列步驟，使用 Microsoft 端點 Configuration Manager 做為就地升級，以設定及部署 Windows 10 企業版映射。
 
-## <a name="part-1-verify-readiness-to-upgrade-windows"></a>第 1 部分： 確認升級 Windows 的整備
+## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>使用 Configuration Manager 的 Windows 10 部署海報
 
-首先，使用 Windows Analytics Upgrade Readiness 功能來提供功能強大的見解和電腦、 應用程式及驅動程式在您組織中，在不需建議額外成本和不具有其他基礎結構需求。 這項新服務會引導您完成使用 Microsoft 建議作法為基礎的工作流程的升級與功能更新專案。 最新的庫存資料可讓您以平衡成本與您升級的專案中的風險。
+在橫向模式（17x11）中，Configuration Manager 海報是一個頁面。 按一下下方的圖像以在瀏覽器中查看 PDF。 
 
-若要了解更多、 開始、 使用及疑難排解升級整備狀況，請參閱[管理 Windows 升級以升級整備狀況](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness)。
+[![使用 Configuration Manager 海報部署 Windows 10](../media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
 
-接下來，遵循使用 System Center Configuration Manager （最新分支） 升級至 Windows 10 的 Windows 7 或更新版本的作業系統指南。 就像任何高風險的部署中，我們建議您備份使用者資料，再繼續執行。 OneDrive 雲端儲存空間已準備用於 Microsoft 365 的授權使用者，且可以用來安全地儲存其檔案。 如需詳細資訊，請參閱 < <b0>OneDrive 快速開始指南</b0>。 若要存取此頁面上，您必須是租用戶系統管理員或在 Office 365 或 Microsoft 365 租用戶的全域系統管理員登入。
+您也可以以 [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) 或 [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx) 格式下載此海報。
 
-Configuration Manager 版本及支援的相對應 Windows 10 用戶端版本清單，請參閱[支援適用於 Windows 10 的 System Center Configuration Manager](https://aka.ms/supportforwin10sccm)。
+## <a name="part-1-verify-readiness-to-upgrade-windows"></a>第1部分：確認升級 Windows 的準備工作
 
-**若要確認升級 Windows 的整備**
+首先，使用 Windows Analytics 的升級準備工作功能，針對組織中的電腦、應用程式和驅動程式提供強大的洞察力和建議，不需要額外的成本，也沒有其他基礎結構需求。 這項新服務會引導您使用以 Microsoft 建議的做法為基礎的工作流程升級和功能更新專案。 最新的庫存資料可讓您在升級專案中平衡成本和風險。
 
-啟動 Windows 10 部署之前，請檢閱下列需求：
+請參閱使用升級準備以深入瞭解、開始、使用及疑難排解升級準備工作中[的「管理 Windows 升級](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness)」。
 
-- **合格的 Windows 版本升級**對您的裝置必須執行 Windows 7 或 Windows 8.1 便符合資格，以升級到 Windows 10 企業版的版本。 如需支援的版本的清單，請參閱 < <b0>Windows 10 升級路徑</b0>。 
-- **支援的裝置**與 Windows 8.1 相容的大部分電腦將會與 Windows 10 相容。 您可能需要安裝更新的驅動程式在 Windows 10 中您的裝置正常運作。 如需詳細資訊，請參閱[Windows 10 規格](https://aka.ms/windows10specifications)。
-- **部署準備**-請確定您有下列，再開始設定部署：
-    - Windows 10 安裝媒體的安裝媒體必須位於不同的磁碟機，已裝載 iso。 從[MSDN 訂閱者下載](https://aka.ms/msdn-subscriber-downloads)或[大量授權服務中心](https://aka.ms/mvlsc)，您可以取得 ISO。
-    - 備份的使用者資料-使用者的資料會移轉升級，雖然最佳作法是設定備份的案例。 例如，將所有使用者資料都匯出至 OneDrive 帳戶、 移 BitLocker 加密 USB 快閃磁碟機或網路檔案伺服器。 如需詳細資訊，請參閱[備份 （或轉接） 在 Windows 中的資料](https://aka.ms/backuptransferdatawindows)。
-- **環境準備**-您將使用現有的 Configuration Manager 伺服器結構來準備部署作業系統。 基底的安裝程式，除了應該 Configuration Manager 部署環境中進行下列設定：
-    1. [擴充 Active Directory 架構](https://aka.ms/extendadschema)，並[建立的系統管理容器](https://aka.ms/createsysmancontainer)。
-    2. 啟用 Active Directory 樹系探索及 Active Directory 系統探索。 如需詳細資訊，請參閱 < <b0>Configure 探索方法的 System Center Configuration Manager</b0>。
-    3. 建立 IP 範圍界限和界限群組內容和網站的工作分派。 如需詳細資訊，請參閱[定義站台界限和界限群組的 System Center Configuration Manager](https://aka.ms/definesiteboundaries)。
-    4. 新增及設定 reporting services 點角色 Configuration Manager。 如需詳細資訊，請參閱[設定報告組態管理員] 中](https://aka.ms/configurereporting)。
-    5. 建立套件檔案系統資料夾結構。
+接下來，遵循下列指南以使用 Configuration Manager （目前的分支）將 Windows 7 或更新版本的作業系統升級至 Windows 10。 就像任何高風險部署一樣，我們建議先備份使用者資料，然後再繼續進行。 OneDrive 雲端儲存已準備好用於授權的 Microsoft 365 使用者，而且可用於安全地儲存其檔案。 如需詳細資訊，請參閱[OneDrive 快速入門手冊](https://aka.ms/ODfBquickstartguide)。 若要存取此頁面，您必須以承租人系統管理員或全域管理員身分登入 Office 365 或 Microsoft 365 租使用者。
+
+如需支援的 Configuration Manager 版本和對應的 Windows 10 用戶端版本清單，請參閱[Support For Configuration Manager 的 windows 10](https://docs.microsoft.com/mem/configmgr/core/plan-design/configs/support-for-windows-10)。
+
+**若要驗證升級 Windows 的準備工作**
+
+開始 Windows 10 部署之前，請先複查這些需求：
+
+- **適用于升級的 windows 版本**-您的裝置必須執行可升級至 Windows 10 企業版的 windows 7 或 windows 8.1 版本。 如需支援的版本清單，請參閱[Windows 10 升級路徑](https://aka.ms/win10upgradepaths)。 
+- **支援的裝置**-與 windows 8.1 相容的大部分電腦都會與 windows 10 相容。 您可能需要在 Windows 10 中安裝更新的驅動程式，裝置才能正常運作。 如需詳細資訊，請參閱[Windows 10 規格](https://aka.ms/windows10specifications)。
+- **部署準備**-開始設定部署之前，請先確認下列事項：
+    - Windows 10 安裝媒體-安裝媒體必須位於不同的磁片磁碟機上，且已安裝了 ISO。 您可以從「 [MSDN 訂戶下載](https://aka.ms/msdn-subscriber-downloads)」或「[大量授權服務中心](https://aka.ms/mvlsc)」取得 ISO。
+    - 備份使用者資料-雖然使用者資料會在升級時進行遷移，但最佳作法是設定備份案例。 例如，將所有使用者資料匯出至 OneDrive 帳戶，BitLocker 為「已加密的 USB 快閃記憶體磁片磁碟機」或「網路檔案伺服器」。 如需詳細資訊，請參閱[在 Windows 中備份或傳輸資料](https://aka.ms/backuptransferdatawindows)。
+- **環境準備**-您將使用現有的 Configuration Manager 伺服器結構來準備作業系統部署。 除了基本設定之外，還應該在 Configuration Manager 環境中進行下列設定：
+    1. [擴充 Active Directory 架構](https://aka.ms/extendadschema)，並[建立系統管理容器](https://aka.ms/createsysmancontainer)。
+    2. 啟用 Active Directory 樹系探索和 Active Directory 系統探索。 如需詳細資訊，請參閱[Configure Configuration Manager 的探索方法](https://aka.ms/configurediscoverymethods)。
+    3. 建立內容和網站指派的 IP 範圍界限和邊界群組。 如需詳細資訊，請參閱[定義網站界限和設定管理員的邊界群組](https://aka.ms/definesiteboundaries)。
+    4. 新增及設定 Configuration Manager reporting services 點角色。 如需詳細資訊，請參閱[在 Configuration Manager 中設定報告](https://aka.ms/configurereporting)。
+    5. 為套件建立檔系統資料夾結構。
     6. 建立套件的 Configuration Manager 主控台資料夾結構。
-    7. 安裝 System Center Configuration Manager （最新分支） 更新及任何其他的 Windows 10 必要條件。
+    7. 安裝 Configuration Manager （目前分支）更新及其他任何 Windows 10 先決條件。
 
-## <a name="part-2-add-a-windows-10-os-image-using-configuration-manager"></a>第 2 部分： 新增使用 Configuration Manager 的 Windows 10 OS 映像
-現在您需要建立包含完整的 Windows 10 安裝媒體作業系統升級封裝。 在下列步驟中，您將使用 Configuration Manager 來建立的 Windows 10 企業版 x64 升級的封裝。
+## <a name="part-2-add-a-windows-10-os-image-using-configuration-manager"></a>第2部分：使用 Configuration Manager 新增 Windows 10 OS 映射
+現在，您需要建立包含完整 Windows 10 安裝媒體的作業系統升級套件。 在下列步驟中，您將使用 Configuration Manager 建立 Windows 10 企業版 x64 的升級套件。
 
-**若要新增使用 Configuration Manager Windows 10 OS 映像**
+**使用 Configuration Manager 新增 Windows 10 OS 映射**
 
-1. 使用 Configuration Manager 主控台中，在**軟體程式庫**工作區中，以滑鼠右鍵按一下 [**作業系統升級封裝**] 節點，然後選取 [**新增作業系統升級封裝**。
-2. 在 [**資料來源**] 頁面上指定的 Windows 10 企業版 x64 媒體，UNC 路徑，然後選取 [**下一步**。
-3. 在 [**一般**] 頁面上，指定**Windows 10 企業版 x64 升級**，，然後選取 [**下一步**。 
-4. 在 [**摘要**] 頁面上，選取 [**下一步**，，然後選取 [**關閉**。 
-5. 建立的**Windows 10 企業版 x64 更新**套件，以滑鼠右鍵按一下，然後選取 [**發佈內容**。 
+1. 使用 Configuration Manager 主控台，在 [**軟體庫**] 工作區中，以滑鼠右鍵按一下 [**作業系統升級套件**] 節點，然後選取 [**新增作業系統升級套件**]。
+2. 在 [**資料來源**] 頁面上，指定 Windows 10 Enterprise x64 媒體的 UNC 路徑，然後選取 **[下一步]**。
+3. 在 [**一般**] 頁面上，指定**Windows 10 Enterprise x64 Upgrade**，然後選取 **[下一步]**。 
+4. 在 [**摘要**] 頁面上，選取 **[下一步]**，然後選取 [**關閉**]。 
+5. 以滑鼠右鍵按一下建立的**Windows 10 Enterprise X64 更新**套件，然後選取 [**散佈內容**]。 
 6. 選擇您的發佈點。
 
-## <a name="part-3-configure-deployment-settings"></a>第 3 部分： 設定部署設定
-在此步驟中，您會設定包含設定 Windows 10 升級的升級工作順序。 您將接著識別要升級，裝置，然後再部署至那些裝置的 [工作順序。
+## <a name="part-3-configure-deployment-settings"></a>第3部分：設定部署設定
+在這個步驟中，您將設定包含 Windows 10 升級設定的升級任務順序。 接著，您會識別要升級的裝置，然後將任務順序部署至這些裝置。
 
-### <a name="create-a-task-sequence"></a>建立工作順序
-若要建立升級工作順序，請執行下列步驟：
+### <a name="create-a-task-sequence"></a>建立任務順序
+若要建立升級任務順序，請執行下列步驟：
   
-1. 在 Configuration Manager 主控台中，在**軟體程式庫**工作區中，依序展開 [**作業系統**。 
-2. 以滑鼠右鍵按一下 [ **Task Sequences** ] 節點，然後選取 [**建立工作順序**。
-3. 在 [**建立新的工作順序**] 頁面上選取 [**升級作業系統升級的封裝**，，然後選取 [**下一步**。
-4. 在 [ **Task Sequence 資訊**] 頁面上，指定**Windows 10 企業版 x64 升級**，，然後選取 [**下一步**。
-5. 在**Windows 作業系統升級**] 頁面中，選取 [**瀏覽**選擇**Windows 10 企業版 x64 升級作業系統升級封裝**、 選取 **[確定]**，並再選取 [**下一步**。
-6. 繼續執行其餘的精靈頁面，然後再選取 [**關閉**。
+1. 在 Configuration Manager 主控台中，展開 [**軟體庫**] 工作區中的 [**作業系統**]。 
+2. 在 [**任務順序**] 節點上按一下滑鼠右鍵，然後選取 [**建立任務順序**]。
+3. 在 [**建立新的任務順序**] 頁面上，選取 [**從升級套件升級作業系統**]，然後選取 **[下一步]**。
+4. 在 [**任務順序資訊**] 頁面上，指定**Windows 10 Enterprise x64 Upgrade**，然後選取 **[下一步]**。
+5. 在 [**升級 Windows 作業系統**] 頁面上，選取 **[流覽]** ，然後選擇 [ **windows 10 Enterprise x64 升級作業系統升級] 套件**，選取 **[確定**]，然後選取 **[下一步**]。
+6. 繼續執行剩下的嚮導頁面，然後選取 [**關閉**]。
 
 ### <a name="create-a-device-collection"></a>建立裝置集合
-您建立的升級工作順序之後，您需要建立包含您要升級之裝置的集合。
+在您建立升級工作順序之後，您將需要建立包含您要升級之裝置的集合。
 
 > [!NOTE]
-> 以測試部署的單一裝置上使用下列設定值。 您可以使用不同的成員資格規則包含一組裝置，當您準備好。 如需詳細資訊，請參閱 <<c0>如何建立在 System Center Configuration Manager 的集合。
+> 使用下列設定來測試單一裝置上的部署。 當您準備就緒時，您可以使用不同的成員資格規則來包括裝置群組。 如需詳細資訊，請參閱[如何在 Configuration Manager 中建立集合](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections)。
 
-1. 在 Configuration Manager 主控台中，在**資產和合規性**工作區中，以滑鼠右鍵按一下 [**裝置集合**，，，然後選取 [**建立裝置集合**。 
-2. 在 [建立裝置集合精靈] 在 [**一般**] 頁面上輸入下列設定值，然後選取 [**下一步**：
+1. 在 Configuration Manager 主控台中，于 [**資產與規範**] 工作區中，以滑鼠右鍵按一下 [**裝置集合**]，然後選取 [**建立裝置集合**]。 
+2. 在 [建立裝置集合] 嚮導的 **[一般**] 頁面上，輸入下列設定，然後選取 **[下一步]**：
     - 名稱： Windows 10 企業版 x64 升級
-    - 限制的集合： 所有系統
-3. 在 [**成員資格的規則**] 頁面上，選取 [**新增規則** > **直接規則**，以啟動建立直接成員資格規則精靈]。
-4. 在 [建立直接成員資格規則精靈] 的 [**歡迎**] 頁面中，選取 [**下一步**]。
-5. 在 [**資源搜尋**] 頁面上，輸入下列設定值，以您正在升級裝置的名稱取代預留位置文字**值**： 
-    - 資源類別： 系統資源
-    - 屬性名稱： 名稱
+    - 限制集合：所有系統
+3. 在 [**成員資格規則**] 頁面上，選取 [ **Add rule** > **Direct rule** ] 以啟動 [建立直接成員資格規則] 嚮導。
+4. 在 [建立直接成員資格規則] 嚮導的 [**歡迎**] 頁面上，選取 **[下一步**]。
+5. 在 [**搜尋資源**] 頁面上，輸入下列設定，並將預留位置**值**文字取代為您要升級的裝置名稱： 
+    - Resource 類別：系統資源
+    - 屬性名稱： Name
     - 值： *PC0003*
-6. 在**選取的資源**] 頁面上，選取您的裝置，然後選取 [**下一步**。
-7. 完成建立直接成員資格規則精靈 」 和 「 建立裝置集合精靈 」。  
-8. 檢閱 Windows 10 企業版 x64 升級集合。 不會繼續直到您看到機器加入集合中。
+6. 在 [**選取資源**] 頁面上，選取您的裝置，然後選取 **[下一步]**。
+7. 完成 [建立直接成員資格規則] 嚮導和 [建立裝置集合] 嚮導。  
+8. 複查 Windows 10 企業版 x64 升級集合。 在您看到您在集合中新增的機器之前，請勿繼續。
 
 ### <a name="create-an-operating-system-deployment"></a>建立作業系統部署
-請遵循下列步驟來建立工作順序的部署。
+請遵循下列步驟建立任務順序的部署。
 
-1. 在 Configuration Manager 主控台中，在**軟體程式庫**工作區中，以滑鼠右鍵按一下您在上一個步驟中建立工作順序，然後選取 [**部署**]。
-2. 在 [**一般**] 頁面上選取 [ **Windows 10 企業版 x64 升級**的集合，然後再選取 [**下一步**。
-3. 在 [**內容**] 頁面上，選取 [**下一步**]。
-4. 在**部署設定**] 頁面上，選取下列設定值，，然後選取 [**下一步**：
+1. 在 Configuration Manager 主控台的 [**軟體庫**] 工作區中，以滑鼠右鍵按一下您在上一個步驟中建立的任務順序，然後選取 [**部署**]。
+2. 在 [**一般**] 頁面上，選取**Windows 10 Enterprise x64 升級**集合，然後選取 **[下一步]**。
+3. 在**內容**頁面上，選取 **[下一步]**。
+4. 在 [**部署設定**] 頁面上，選取下列設定，然後選取 **[下一步]**：
 
     > [!NOTE]
-    > 針對這個測試部署，您將設定目的 」，**可使用**，這需要使用者介入才能開始部署。 在實際執行環境中，您可能想要自動化使用所需的目的，包括設定其他選項，例如排程執行部署時的部署。 
+    > 針對此測試部署，您會將目的設定為 [**可用**]，這需要使用者干涉才能啟動部署。 在實際執行環境中，您可能想要使用必要的目的來自動化部署，這包括設定其他選項（例如，在執行部署時排程）。 
 
-    - 巨集指令： 安裝
-    - 目的： 可用
+    - 動作：安裝
+    - 目的：可用
 
-5. 在 [**排程**] 頁面上，接受預設設定，，然後選取 [**下一步**。
-6. 在**使用者經驗**] 頁面上，接受預設設定，然後再選取 [**下一步**。
-7. 在 [**提醒**] 頁面上，接受預設設定，然後再選取 [**下一步**。
-8. 在 [**摘要**] 頁面上，選取 [**下一步**，，然後選取 [**關閉**。
+5. 在 [**排程**] 頁面上，接受預設設定，然後選取 **[下一步]**。
+6. 在 [**使用者經驗**] 頁面上，接受預設設定，然後選取 **[下一步]**。
+7. 在 [**提醒**] 頁面上，接受預設設定，然後選取 **[下一步]**。
+8. 在 [**摘要**] 頁面上，選取 **[下一步]**，然後選取 [**關閉**]。
 
-## <a name="part-5-start-the-windows-10-upgrade-task-sequence"></a>第 5 部分︰ 開始 Windows 10 的升級工作順序
+## <a name="part-4-start-the-windows-10-upgrade-task-sequence"></a>第4部分：啟動 Windows 10 升級任務順序
 請遵循下列步驟，在您要升級的裝置上啟動 Windows 10 升級工作順序。
  
-1. 登入 Windows 電腦並啟動**軟體中心**。
-2. 選取您在上一個步驟中建立工作順序，然後選取 [**安裝**。
-3. 當工作順序開始時，自動啟動就地升級程序藉由叫用必要的命令列參數來執行自動的升級，會保留所有的資料、 設定、 應用程式，與 Windows 安裝程式 (Setup.exe) 及驅動程式。
-4. 工作順序成功完成之後，電腦會完全升級到 Windows 10。
+1. 登入 [Windows 電腦]，然後啟動**軟體中心**。
+2. 選取您在上一個步驟中建立的任務順序，然後選取 [**安裝**]。
+3. 當任務順序開始時，它會自動初始化就地升級程式，方法是使用必要的命令列參數來呼叫 Windows 安裝程式（Setup.exe），以執行自動升級，以保留所有資料、設定、應用程式及驅動程式。
+4. 工作順序成功完成後，電腦將會完整升級至 Windows 10。
 
-如果您遇到問題，在企業環境中使用 Windows 10 時，您可以請洽詢[上方的 Microsoft 支援服務解決方案的最常見的問題](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions)。 這些資源包括 KB 文章、 更新和文件庫文章。
+如果您在企業環境中使用 Windows 10 時遇到問題，可以參考[最常見的 Microsoft 支援解決方案，以取得最常見的問題](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions)。 這些資源包括 KB 文章、更新及文件庫文章。
 
-期間更新整個組織推出，使用 Windows Analytics 更新合規性功能，提供能夠全面檢視 OS 升級相容性、 更新部署進度以及疑難排解 Windows 10 裝置的失敗。 這項新服務使用診斷資料，包括安裝進度、 Windows Update 設定及其他資訊來提供無這類見解，額外成本和不具有其他基礎結構需求。 是否搭配使用 Windows Update 基於商業或其他管理工具，您可以確保正確更新您的裝置。
+在整個組織中部署更新的過程中，請使用 Windows Analytics 的更新合規性功能，為 Windows 10 裝置提供完整的作業系統更新規範、更新部署進度和失敗疑難排解的視圖。 此新服務使用診斷資料（包括安裝進度、Windows Update 設定及其他資訊），以提供這類洞察力，不需要額外成本，也不需要其他基礎結構需求。 不論它是用於商務用 Windows 更新或其他管理工具，您都可以保證您的裝置已正確更新。
 
-請參閱[監視 Windows 更新及升級相容性與 Windows Defender 防毒軟體了解更多、 要開始，並使用升級相容性。](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor)
+請參閱[監視 Windows 更新和具有更新規範的 Windows Defender 防毒軟體](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor)，以深入瞭解、快速入門及使用更新規範。
 
-作為過渡期的檢查點，您可以看到對應至此步驟的[允出準則](windows10-exit-criteria.md#crit-windows10-step2)。
+作為過渡期的檢查點，您可以看到此步驟的[允出準則](windows10-exit-criteria.md#crit-windows10-step2)。
 
 ## <a name="next-step"></a>下一步
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [新裝置透過 Windows Autopilot 部署 Windows 10 企業版](windows10-deploy-autopilot.md) |
-
-
-
-<!--
-
-| Phases | Description |
-|:--- |:--- |
-| [Phase 1: Consideration phase](#phase-1-consideration-phase) | TBD |
-| [Phase 2: Testing phase](#phase-2-testing-phase) | TBD |
-| [Phase 3: Deployment phase](#phase-3-deployment-phase) | TBD |
-
-## Phase 1: Consideration phase
-Before upgrading an OS in an enterprise environment, take the following technical aspects into account:
-* [Infrastructure](#step-1-infrastructure)
-* [Apps](#step-2-apps)
-* [Governance and business processes](#step-3-governance-and-business-processes)
-
-This guide is meant only to provide Microsoft's best recommendations around these assumptions by providing links to existing documentation.
-
-### Step 1: Infrastructure
-Consider your organization's collection of hardware, software, policies, networks, and other related technologies as part of the deployment process.
-
-For in-place upgrade with Configuration Manager, these are the infrastructure you need to take into account:
-
-#### Group Policy
-Windows 10 introduces many new features and removes and changes many others in Windows 7 and 8.1, including new Group Policy settings which you need to test and implement as part of a Windows 10 migration. Use the examples from the following resources to assess current group policies for Windows, including Group Policy Objects in the Active Directory structure:
-* [Manage Windows 10 with administrative templates](https://go.microsoft.com/fwlink/?linkid=860226) - Get step-by-step info on how to manage Windows 10 with administrative templates
-* [Group Policy settings that apply to Windows 10](https://docs.microsoft.com/windows/client-management/group-policies-for-enterprise-and-education-editions) - Find out which Group Policy settings apply only to Windows 10 Enterprise
-
-> [!NOTE]
-> If you are considering moving to modern management by using MDM instead of Group Policy to manage device configurations, you can start by using the [MDM Migration Analysis Tool (MMAT)](https://github.com/WindowsDeviceManagement/MMAT) to determine what Group Policies are set on the device and report the corresponding settings, if available.
-
-#### Data management
-Although in-place upgrades shouldn’t affect user data and apps, a best practice is to configure a backup scenario and back up user data. For example, export all user data to a OneDrive for Business account, BitLocker To Go-encrypted USB flash drive, or network file server. For more details, see:
-* [How to back up or transfer your data on a Windows-based computer](https://go.microsoft.com/fwlink/?linkid=860230) - Get step-by-step info on how to manually back up your personal files and settings.
-* [Redirect known folders to OneDrive for Business](https://go.microsoft.com/fwlink/?linkid=846620) - Learn how to set a policy at the domain level to make sure users all sync to the same folder when they install the OneDrive sync client and how you can set additional policies to redirect the Documents folder to that sync location.
-
-#### System Center Configuration Manager
-This guide assumes you are following Microsoft recommendations and have one of the following versions of System Center Configuration Manager 2012 onward:
-* System Center 2012 Configuration Manager with SP2
-* System Center 2012, 2012 R2 Configuration Manager with SP1, Current Branch, 1706
-    * [Run an in-place upgrade to the latest Configuration Manager](https://go.microsoft.com/fwlink/?linkid=839406)
-    * [Updates for Configuration Manager](https://go.microsoft.com/fwlink/?linkid=620343)
-* Core Configuration Manager configuration:
-    * CONFIGURATION MANAGER accounts
-    * Active Directory permissions
-    * Source folder structure
-    * Active Directory schema
-* Configure the following [necessary Configuration Manager components for Windows 10 deployment](https://go.microsoft.com/fwlink/?linkid=860245):
-    * **State migration point** - Stores user state migration data during computer replace scenarios
-    * **Distribution point** - Stores all packages in Configuration Manager
-    * **Software update point** - Updates an OS as part of the deployment process
-    * **Reporting services point** - Monitors the OS deployment process
-    * **Boot images** - Are Windows Preinstallation Environment (PE) images used by Configuration Manager to start deployments
-    * **OS images** - Denotes the production deployment image (mounted OS)
-    * **OS installers** - Creates reference images using Microsoft Deployment Toolkit (MDT) Light Touch
-    * **Drivers** - Denotes a repository of managed device drivers
-    * **Task Sequence** - Is delivered automatically to the client as a policy
-
-#### Network bandwidth
-This guide assumes you have enough network bandwidth to support the deployment of Windows 10 Enterprise and Office 365 ProPlus as a unit. As a bundle, network bandwidth is a significant factor.
-
-#### Client machines and in-place upgrade scenario
-* Disk encryption - Third-party disk encryption isn't supported in an in-place upgrade scenario.
-* User profiles - Only the standard user profile type is supported.
-* Legacy BIOS to Unified Extensible Firmware Interface (UEFI) booting - Changing from legacy BIOS to UEFI booting isn't supported.
-* Dual-boot - This scenario is not covered in the guide. If you have the FastTrack Benefit, it only covers devices running a single OS.
-* Virtual desktop infrastructure (VDI) environments - This scenario is not covered in the guide. If you have the FastTrack Benefit, it doesn't cover configuration or deployment on VDI environments.
-* x64 and x86 - Changing from a 32-bit OS to a 64-bit isn't supported. For more info, see [Windows 10 deployment scenario > In-place upgrade](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios#in-place-upgrade).
-
-### Step 2: Apps
-
-#### Security
-Security clients (like antivirus, anti-malware, and anti-spam) are typically found on all PCs within an organization. Because these programs hook into the deeper levels of the OS, you may need to perform a compatibility assessment before starting any Windows 10 migrations. You may need to upgrade, reconfigure, or even replace Some software. Not performing this assessment can lead to:
-* Native app compatibility checks failing and preventing an in-place upgrade from starting.
-* Broken functionality in the security software.
-* Instability after upgrading to Windows 10 (like crashing and reduced performance)
-
-**Antivirus**
-
-Assess current antivirus software. Windows 10 comes with Windows Defender Antivirus to protect devices from malware, viruses, and security threats. We recommend Windows Defender Antivirus. To enable Windows Defender Antivirus, see [Windows Defender Antivirus](windows10-enable-security-features.md#windows-defender-antivirus) and [Protect devices with Windows Defender Antivirus](https://go.microsoft.com/fwlink/?linkid=860254).
-
-To learn about antivirus solutions from other providers, see [Consumer antivirus software providers for Windows](https://go.microsoft.com/fwlink/?linkid=67345).
-
-#### App readiness
-Each Windows 10 release provides improved app compatibility. However, some apps may not be compatible. Depending on the app, you may need to only do a simple upgrade or configuration update before upgrading to Windows 10. In other circumstances, you may need to remove an app entirely.
-
-Be sure to assess business critical apps and understand the impact of upgrading to the next OS. Prioritize the workloads that impact the least number of people during deployment. 
-
-See the following Upgrade Readiness resources to help with app inventory, driver compatibility issues, and usage information:
-* [Manage Windows Upgrades with Upgrade Readiness](https://go.microsoft.com/fwlink/?linkid=860255) - Learn about the tools to help you plan and manage the upgrade process end to end, which allow you to adopt new Windows releases more quickly.
-* [Configure Windows diagnostic data](https://go.microsoft.com/fwlink/?linkid=859970) - Find out about the importance of Windows diagnostic data and how Microsoft protects that data.
-
-> [!NOTE]
-> Upgrade Readiness may not be able to assess compatibility for custom and line-of-business (LOB) apps in an organization.
-
-#### Language packs
-In-place upgrades have have limitations when it comes to language packs. The language stays consistent throughout the upgrade. Verify the language version and make sure it stays consistent. For example, Windows 7 with English as the default won’t change when upgraded to Windows 10. For more info, see:
-* [Default language pack on your OS](https://go.microsoft.com/fwlink/?linkid=860282)
-* [Finding language packs on each Windows 10 deployment](https://go.microsoft.com/fwlink/?linkid=860283)
-
-For a Microsoft 365 powered device, you'll also need to download Office 365 ProPlus language packs that applies to the client. These come in 32-bit (x86) or 64-bit (x64). A specific language must be installed as the default. You can install other languages later. For more info, see:
-* [Choose between 64-bit or 32-bit version of Office](https://go.microsoft.com/fwlink/?linkid=862361) - Helps you decide which version of Office is right for you.
-* [Language accessory pack for Office](https://go.microsoft.com/fwlink/?linkid=860280) - Follow the steps to install the language accessory pack for Office.
-* [Add an additional language pack](https://go.microsoft.com/fwlink/?linkid=860281) - Get step-by-step info on adding a language or setting language preferences in Office.
-
-### Step 3: Governance and business processes
-
-#### Windows as a service
-Windows 10 introduced the concept of Windows as a service. This greatly changes the frequency and style of updates to Windows. Instead of new versions being released every 3-5 years, a more incremental model is used where two smaller updates (Feature Updates) are released yearly. For more info, see:
-* [Windows as a service on the Windows IT Pro Center](https://www.microsoft.com/itpro/windows-10/windows-as-a-service)
-* [Overview of Windows as a service](https://go.microsoft.com/fwlink/?linkid=860288)
-* [Update Windows 10 in the enterprise](https://go.microsoft.com/fwlink/?linkid=860285)
-
-#### Pilot users and deployment rings
-Be sure to have a pilot group of users selected from different parts of the business. If you have Microsoft 365 powered devices, Windows 10 and Office 365 ProPlus users should be in these deployment rings. This affects future Windows updates as well (including features and quality). You need to create and edit device collections by deployment rings to help minimize the effect on network bandwidth and simplify future updates. 
-
-For the group of pilot users, create a device collection on Configuration Manager. The list of devices should correspond to the list of the first users upgraded to Windows 10. 
-
-**Windows 10 deployment rings**
-
-There are three servicing channels for OS deployment rings:
-* Windows Insider Program - Provides organizations with the opportunity to test and provide feedback on features that are shipped in the next feature update.
-* Semi-Annual Channel - Provides new functionality with twice-per-year feature update releases. Organizations can choose when to deploy updates from the Semi-Annual Channel.
-* Long-Term Servicing Channel (LTSC) - Used for specialized devices and receives new feature releases about every three years.
-
-For more info, see:
-* [Windows Insider Program, Semi-Annual Channel, and Long-Term Servicing Channel](https://go.microsoft.com/fwlink/?linkid=860293)
-* [Build deployment rings for Windows 10 updates](https://go.microsoft.com/fwlink/?linkid=860294)
-* [Manage software updates using Intune in Azure Portal](https://docs.microsoft.com/intune/windows-update-for-business-configure)
-
-**Office 365 ProPlus**
-
-For Microsoft 365 powered devices, you must also be able to support the six-month update channel for both IT and business users. One way to do so is to have three groups:
-* Current Channel
-* Deferred Channel
-* First-release for Deferred Channel
-
-Each group has different configuration files, as users from the Current Channel are used as a pilot to test earlier updates. For more info, see:
-* [Update process for Office 365 ProPlus](https://go.microsoft.com/fwlink/?linkid=860299)
-* [Manage updates to Office 365 ProPlus](https://go.microsoft.com/fwlink/?linkid=860300)
-* [Configure update settings for Office 365 ProPlus](https://go.microsoft.com/fwlink/?linkid=860301)
-* [Update channels for Office 365 ProPlus](https://go.microsoft.com/fwlink/?linkid=860302)
-* [Version and build numbers of update channel releases](https://go.microsoft.com/fwlink/?linkid=860304)
-
-For more info, see [Phase 4: Office 365 ProPlus infrastructure for Microsoft 365 Enterprise](office365proplus-infrastructure.md).
-
-## Phase 2: Testing phase
-Once you've completed the scenarios and requirements in [Step 1: Consideration phase](#step-1-consideration-phase), you can move to this stage.
-* [Networking](#step-1-networking)
-* [Identity](#step-2-identity)
-* [Client readiness](#step-3-client-readiness)
-* [System Center Configuration Manager](#step-4-system-center-configuration-manager)
-* [Diagnostic data](#step-5-diagnostic-data)
-
-### Step 1: Networking
-Ports to the client need to be opened for Office 365 ProPlus (for a Microsoft 365 powered device) and Configuration Manager. For more details about setting up your Microsoft 365 Enterprise networking infrastructure, see [Phase 1: Networking](networking-infrastructure.md).
-
-When setting up your networking infrastructure as part your in-place upgrade, make sure you complete these steps:
-1. Read the best practices for [network planning and improving migration performance for Office 365](http://go.microsoft.com/fwlink/?LinkId=733655).
-2. [Plan for network devices that connect to Office 365 services](http://go.microsoft.com/fwlink/?LinkId=733652).
-3. [Review network impact of directory synchronization](http://go.microsoft.com/fwlink/?LinkId=733652).
-4. Calculate the number of clients to use per IP address and understand [Network Address Translation (NAT) support with Office 365](http://go.microsoft.com/fwlink/?LinkId=733653) and how it impacts the number of users and client devices you can serve with a single IP address.
-5. If your organization restricts computers on your network from connecting to the Internet, you'll need to understand the [endpoints (fully qualified domain names (FQDNs), ports, URLs, IPv4, and IPv6 address ranges)](http://go.microsoft.com/fwlink/?LinkID=280129) that you should include in your outbound allow lists to ensure your computers can successfully use Office 365 services.
-6. [Create domain name system records for Office 365 at any Domain Name System hosting provider](http://go.microsoft.com/fwlink/?LinkId=733656).
-7. [Reduce mail exchange (MX) DNS record time to live (TTL) value](http://go.microsoft.com/fwlink/?LinkId=733656).
-
-### Step 2: Identity
-Intelligent security for Microsoft 365 Enterprise, in which the right users have access to the right resources with an appropriate level of access, begins with identity management. For more details about setting up your Microsoft 365 Enterprise identity infrastructure, see [Phase 2: Identity](identity-infrastructure.md).
-
-When setting up your identity infrastructure as part of your in-place upgrade, make sure you complete these tasks:
-1. [Add a domain and users to Office 365](http://go.microsoft.com/fwlink/?LinkID=526338).
-2. [Install and run the Office 365 IdFix tool](http://go.microsoft.com/fwlink/?LinkId=733662), which scans your on-premises Active Directory environment and identifies problems that might impact directory synchronization and slow your migration to Office 365.
-3. Configure Active Directory for directory synchronization with Office 365 and [integrate on-premises directories with Azure AD](http://go.microsoft.com/fwlink/?LinkId=733661).
-4. [Prepare to provision users through directory synchronization to Office 365](http://go.microsoft.com/fwlink/?LinkId=733659).
-5. Know the [prerequisites for Azure AD Connect](http://go.microsoft.com/fwlink/?LinkId=733663), then install and run the Azure AD Connect tool to synchronize your on-premises Active Directory to the Azure AD service used by Office 365.
-6. Determine custom installation of Azure AD Connect (full version of SQL Server for directory synchronization, if required).
-7. [Integrate your on-premises identities with Azure AD](http://go.microsoft.com/fwlink/?LinkID=733485).
-8. [Sync a list of required attributes with AD Connect](https://go.microsoft.com/fwlink/?linkid=860363) to get all the features in Office 365 and Windows 10.
-9. Activate Windows 10 Enterprise licenses, which are checked based on Azure AD credentials.
-
-    This provides a systematic way to assign licenses to end users and groups in your organization. For more info, see [Windows 10 Subscription Activation](https://go.microsoft.com/fwlink/?linkid=860365) and [Deploy Windows 10 licenses](https://go.microsoft.com/fwlink/?linkid=860367).
-
-### Step 3: Client readiness
-
-#### System requirements for Office 365
-Confirm that Windows 10 works with Office 365. Be sure you're using the latest OS version and browsers with Office 365 and have updated them with the latest service packs. For more info on Office requirements, see [System requirements for Office](http://go.microsoft.com/fwlink/?LinkID=394412).
-
-### Step 4: System Center Configuration Manager
-See [System Center Configuration Manager](#system-center-configuration-manager).
-
-### Step 5: Diagnostic data
-Microsoft uses diagnostic data to help keep Windows devices secure by identifying malware trends and other threats and to help us improve the quality of Windows and Microsoft services. You must ensure that the diagnostics service is enabled at a minimum level of Basic on all endpoints in your organization. **By default, this service is enabled and set to the Enhanced level.** However, it’s good practice to check and ensure that they are receiving sensor data. Setting levels through policies overrides device-level settings. 
-
-**Windows 10 operating system diagnostic data levels**
-
-You can configure your operating system diagnostic data settings using the management tools you’re already using, such as Group Policy, MDM, or Windows Provisioning. You can also manually change your settings using Registry Editor. Setting your diagnostic data levels through a management policy overrides any device level settings.
-
-Use the appropriate value in the table below when you configure the management policy.
-
-| Level | Data gathered | Value |
-|:--- |:--- |:--- |
-| Security | Security data only. | 0 |
-| Basic | Security data, and basic system and quality data. | 1 |
-| Enhanced | Security data, basic system and quality data, and enhanced insights and advanced reliability data. | 2 |
-| Full | Security data, basic system and quality data, enhanced insights and advanced reliability data, and full diagnostics data. | 3 |
-
-You can enable diagnostics data through these methods:
-* Microsoft Intune - If you plan to use Intune to manage your devices, you can create a configuration policy to enable diagnostic data by configuring the <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> system policy. For more info on setting up configuration policies, see [Manage settings and features on your devices with Microsoft Intune policies](https://aka.ms/intuneconfigpolicies).
-* Registry Editor - You can use the Registry Editor to manually enable diagnostic data on each device in your organization, or write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
-* Group Policy - If you do not plan to enroll devices in Intune, you can use a Group Policy object to set your organization’s diagnostic data level.
-* Command prompt - You can set Windows 10 diagnostics data and service to automatically start with the command prompt. This method is best if you are testing the service on only a few devices. Enabling the service to start automatically with this command will not configure the diagnostic data level. If you have not configured a diagnostic data level using management tools, the service will operate with the default Enhanced level.
-
-See [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization) to learn more about Windows diagnostic data and how you can enable it based on the method that you choose.
-
-## Phase 3: Deployment phase
-When ready, complete these:
-* [In-place upgrade to Windows 10 Enterprise](#31-in-place-upgrade-to-windows-10-enterprise)
-* [Windows Defender Antivirus](#32-windows-defender-antivirus)
-
-### Step 1: In-place upgrade to Windows 10 Enterprise
-1. Integrate System Center Configuration Manager with Microsoft Deployment Tool.
-
-    Be sure to use the Microsoft Deployment Toolkit (MDT) in conjunction with Configuration Manager when deploying an updated version of Windows 10. MDT brings Zero Touch Installation and Light Touch Installation enhancements to help with deployments at no cost to the customer. For more info, see:
-    * [Download the latest MDT](https://go.microsoft.com/fwlink/?linkid=860465)
-    * [Deploy Windows 10 with the Microsoft Deployment Toolkit](https://go.microsoft.com/fwlink/?linkid=860466)
-
-2. Prepare for zero touch installation.
-
-    As part of zero touch installation, you are responsible for preparing the following:
-    * Configuration Manager service accounts
-    * Active Directory permissions
-    * Source folder structure
-
-    Then, [integrate Configuration Manager with MDT](https://go.microsoft.com/fwlink/?linkid=860035).
-
-3. Create a custom Windows Preinstallation Environment boot image.
-
-    Windows Preinstallation Environment (PE) is a pre-installation environment required for OS deployments. It’s used to prepare a client machine for Windows installation, to copy disk images from a network file server, and to initiate Windows Setup. It’s used for Windows 10 Enterprise editions. For more info, see:
-    * [Overview of Windows PE](https://go.microsoft.com/fwlink/?linkid=860468)
-    * [Windows PE features, hardware requirements, and limitations](https://go.microsoft.com/fwlink/?linkid=860469)
-    * [Create a custom Windows PE boot image with Configuration Manager](https://go.microsoft.com/fwlink/?linkid=860470)
-
-4. Add a Windows 10 OS upgrade image.
-
-    You need to create a Windows 10 reference image with MDT (as needed). Reference images are the foundation of what each of the client machine’s OS looks like. The image should be in a separate folder located with the already-mounted ISO file. The task sequence looks for and then runs “setup.exe”. 
-
-    Follow the steps to create and add a Windows 10 OS upgrade image on Configuration Manager:
-    * [Create a Windows 10 reference image](https://go.microsoft.com/fwlink/?linkid=860500)
-    * [Add a Windows 10 OS image using Configuration Manager](https://go.microsoft.com/fwlink/?linkid=860501)
-
-5. Create an app to deploy with Windows 10.
-
-    For a Microsoft 365 powered device, you can deploy Office 365 ProPlus with Windows 10 Enterprise using Configuration Manager. You can also add other apps as needed.
-
-    To deploy Office 365 ProPlus, follow the steps in [Phase 4: Office 365 ProPlus infrastructure for Microsoft 365 Enterprise](office365proplus-infrastructure.md). During this phase, make sure you complete these steps:
-    
-    1. Download the Office 2016 Deployment Tool (ODT) in conjunction with Configuration Manager to help with Office 365 ProPlus deployments. 
-    2. Edit the configuration XML file to fit specific deployment needs (like version, language, and product element). 
-    
-    You can then create apps with Configuration Manager. For more info, see:
-    * [Configuration options for ODT](https://go.microsoft.com/fwlink/?linkid=860504)
-    * [Create apps in Configuration Manager](https://go.microsoft.com/fwlink/?linkid=761079)
-    * [Deploy Office 365 ProPlus with Configuration Manager](https://go.microsoft.com/fwlink/?linkid=860506)
-
-6. Add drivers to a Windows 10 deployment using Windows PE.
-
-    Network drivers need to be created for both Windows PE and Windows 10 to connect deployment shares and storage drivers with local storage on a client computer. Use Configuration Manager to create these drivers required for deployment. For more info, see [Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](https://go.microsoft.com/fwlink/?linkid=860036).
-
-7. Create a task sequence.
-
-    A task sequence (a collection of commands) is required for MDT Lite Touch Installation (LTI). You need to create and then edit the task sequence for optimal deployment experience. One of the configurations enable support for Unified Extensible Firmware Interface (UEFI). The UEFI environment is a minimal boot OS where devices are booted and the Windows 10 OS runs. For more info, see:
-    * [Overview of Windows Boot Manager](https://go.microsoft.com/fwlink/?linkid=860696)
-    * [Create the task sequence in Configuration Manager](https://go.microsoft.com/fwlink/?linkid=860697)
-
-8. Finalize the OS configuration for Windows 10 deployment.
-
-    **To finalize the OS configuration**
-
-    1. Enable MDT monitoring
-    2. Create and share the Logs folder
-    3. Configure the rules
-    4. Distribute content to the distribution point (a server running Configuration Manager)
-    5. Create a deployment for the task sequence
-
-   For more info, see [Finalize OS configuration with Configuration Manager](https://go.microsoft.com/fwlink/?linkid=860697).
-
-9. Deploy the Windows 10 Enterprise image to a UEFI machine.
-
-    For more info, see [Deploy Windows 10 using Configuration Manager](https://go.microsoft.com/fwlink/?linkid=860697).
-
-10. Monitor the Windows 10 deployment.
-
-    Use Configuration Manager and MDT to monitor your deployment. Deployment Workbench enables access to the computer remotely using the Diagnostics and Recovery Toolset (DaRT) (optional). Deployments can be monitored in Configuration Manager. For more info, see [Monitor the Windows 10 deployment with Configuration Manager](https://go.microsoft.com/fwlink/?linkid=860705).
-
-### Step 2: Windows Defender Antivirus
-See [Enable Windows 10 Enterprise security features > Windows Defender Antivirus](windows10-enable-security-features.md#windows-defender-antivirus)
-
--->
+|![步驟 3](../media/stepnumbers/Step3.png)| [使用 Windows Autopilot 為新裝置部署 Windows 10 企業版](windows10-deploy-autopilot.md) |

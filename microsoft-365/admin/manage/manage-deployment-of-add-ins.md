@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用系統管理中心的集中式部署，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: 440cb55f318ac2aa43af5a24fa8ca80753aa03ac
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 30f2c08aa895f63ed529b4390d208e3daa9d6d7b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628157"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011708"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中管理增益集的部署
 
@@ -211,8 +211,8 @@ Office 增益集會與內含部分增益集中繼資料的 XML 資訊清單檔�
 |||
 |:-----|:-----|
 |**平台** <br/> |**組建號碼** <br/> |
-|Windows 的 Office 2016 ProPlus 每月  <br/> |9001.2138   <br/> |
-|Office 2016 ProPlus 半年  <br/> |8431.2159  <br/> |
+|適用于企業的 Microsoft 365 應用程式（每月通道）  <br/> |9001.2138   <br/> |
+|適用于企業的 Microsoft 365 應用程式（半年通道）  <br/> |8431.2159  <br/> |
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |

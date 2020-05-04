@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Micr
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 86bec329c5e0793be070df311d6058282e7be854
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0df3f6d2636a277bdca12e7d76279c4c58c9f1d4
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636217"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011908"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什麼是 Microsoft 受管理的電腦？
 
@@ -53,7 +53,7 @@ Microsoft 受管理的桌面為企業和其目前人員提供一些挑戰的解�
 Microsoft 受管理的桌面會承擔管理已登錄裝置及其所用 Microsoft 軟體的負擔。
 
 - **硬體：** 不是您的 IT 部門必須研究及測試裝置（及其驅動程式），由 Microsoft 受管理的電腦仔細測試特定裝置，進而產生符合企業層級效能需求的[裝置策劃清單](../service-description/device-list.md)，並保證可與服務搭配使用。 您可以自行（或使用協力廠商）或重複使用已有的裝置，只要這些裝置位於 [已核准] 清單。 註冊裝置非常簡單，而且在部署之前，您也可以為使用者[自訂](../working-with-managed-desktop/config-setting-overview.md)裝置經驗的某些方面。
-- **更新：** Microsoft 受管理的桌面會設定和管理 Windows 10 品質和功能更新、驅動程式、固件、反病毒定義及 Office ProPlus 更新的[部署群組](../service-description/updates.md)的各個層面。 這包括所有更新的大量測試及驗證，以確保已註冊的裝置永遠都是最新的，並使中斷減至最少，從該進行中的工作中釋放您的 IT 部門。
+- **更新：** Microsoft Managed Desktop 會針對 Windows 10 品質和功能更新、驅動程式、固件、反病毒定義，以及 Microsoft 365 應用程式的企業版更新，設定及管理[部署群組](../service-description/updates.md)的各個層面。 這包括所有更新的大量測試及驗證，以確保已註冊的裝置永遠都是最新的，並使中斷減至最少，從該進行中的工作中釋放您的 IT 部門。
 - **應用程式：** Microsoft 365 Enterprise 的一部分為您提供（及管理）許多重要的 Microsoft 應用程式。 不過，您可能也有其他您公司需要的應用程式。 不是您的 IT 部門，您必須測試、封裝及部署這些應用程式 Microsoft 協助您加以部署，並可在必要時協助[桌面應用程式的保證](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)。 若要深入瞭解，請參閱[Microsoft Managed Desktop 中的應用程式](../get-ready/apps.md)。
 
 

@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 763a9f3c7c517a5d093b9691310720468053bf24
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 02e6eb5914af9ad72971029913d31b214ebbd190
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636471"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011932"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>如何在 Microsoft 受管理的電腦中處理更新
 
@@ -61,10 +61,10 @@ Microsoft 受管理的桌面會使用四個 Azure AD 群組來管理更新：
 <tr><td>作業系統的功能更新</td><td>0天</td><td>30 天</td><td>60 天</td><td>90 天</td></tr>
 <tr><td>驅動程式/固件</td><td colspan="4">遵循品質更新的排程</td></tr>
 <tr><td>防病毒定義</td><td colspan="4">更新每個掃描</td></tr>
-<tr><td>適用于企業的 Microsoft 365 應用程式</td><td colspan="4">遵循 Office 的每月通道
+<tr><td>Microsoft 365 Apps 企業版</td><td colspan="4">遵循 Office 的每月通道
 </table>
 
-如需適用于企業的 Microsoft 365 應用程式每月通道的詳細資訊，請參閱[適用于企業的 microsoft 365 應用程式更新通道](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus)。
+如需適用于企業的 Microsoft 365 應用程式每月通道的詳細資訊，請參閱[microsoft 365 應用程式的更新通道概述](https://docs.microsoft.com/deployoffice/overview-update-channels)。
 
 >[!NOTE]
 >這些延期期間是特意設計，以確保所有使用者的高安全性和效能標準。 此外，根據在所有 Microsoft 受管理的桌面裝置上收集的資料，以及更新的範圍和影響，Microsoft 受管理的桌面保留可靈活修改任何和所有部署群組的上述延遲週期長度。

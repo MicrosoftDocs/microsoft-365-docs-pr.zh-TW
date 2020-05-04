@@ -1,5 +1,5 @@
 ---
-title: 集中式部署常見問題
+title: 集中式部署常見問題集
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,20 +18,20 @@ search.appverid:
 - MET150
 - MOE150
 description: 從 Microsoft 365 系統管理中心，回顧有關集中式部署的常見問題解答。
-ms.openlocfilehash: 39df2ec5a1671f800572bc845581bdbe2716d209
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: c389ab07136b8a6e625db9ecfeff514a6899cd7d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209661"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011732"
 ---
-# <a name="centralized-deployment-faq"></a>集中式部署常見問題
+# <a name="centralized-deployment-faq"></a>集中式部署常見問題集
 
 集中式部署是 Office 365 系統管理員針對組織內的使用者和群組部署 Office 增益集（Word、Excel、PowerPoint 和 Outlook）的建議方法，前提是組織符合本文所述的使用集中式部署的所有需求。   
   
 ## <a name="how-do-i-know-if-my-organization-is-set-up-for-centralized-deployment"></a>如何知道我的組織是否已設定進行集中式部署？  
 
-[！注意] 增益集的集中式部署需要使用者使用 Office 365 ProPlus （而且使用組織登入身分驗證登入 Office）和 Exchange Online 信箱。 您的訂閱目錄必須是在 Azure Active Directory 中或同盟至 Azure Active Directory。  
+集中式部署增益集需要使用者使用 Microsoft 365 應用程式的企業版（並使用組織登入認證來登入 Office）和 Exchange Online 信箱。 您的訂閱目錄必須是在 Azure Active Directory 中或同盟至 Azure Active Directory。  
  
 僅支援線上信箱的集中式部署。 它不支援部署至內部部署 Exchange 信箱。
  

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: '瞭解如何在整合 Office 365 時使用 Cortana。 您可以在系統管理中心關閉 Cortana，以限制其存取您組織的資料。 '
-ms.openlocfilehash: 768abeed4bf40255e9dd7c6e09e20122523a943d
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+ms.openlocfilehash: 5f1d225e8cf7378bf4548fbbc705cf4ca6c2c63b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907210"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011684"
 ---
 # <a name="cortana-in-office-365"></a>Office 365 中的 Cortana
 
@@ -106,7 +106,7 @@ Cortana 會傳送個人化簡報電子郵件，其中包含您用來將其標記
 
 3. 舉例來說，「我的電子郵件」是一種 Cortana 服務，您的使用者可以透過 Outlook 連線至 iOS，並利用 Office 365 中的 Cortana。
 
-4. 系統管理員在使用 Office ProPlus 應用程式時，系統管理員一定會具有 Cortana 選用的連接體驗，類似選用的連線體驗。
+4. 系統管理員在使用 Microsoft 365 應用程式的企業版應用程式時，系統管理員一定會具有 Cortana 選用的連接體驗，類似選用的連線體驗。
 
 **現有的消費者服務**： Cortana 選用聯機服務主要是針對使用者經驗所設計，目前是在 Windows 10 （版本1909和更舊版本）和在 IOS 和 Android 上的 Cortana 應用程式中傳遞。
 

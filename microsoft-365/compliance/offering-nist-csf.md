@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b380604e908d91feacefe6b54ed3d3f08dcea0fa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49eb9ae31ab913be30b2b96735f15ae57e85a10f
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637795"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011230"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>國家標準和技術研究院（NIST） Cybersecurity Framework （CSF）
 
@@ -88,7 +88,7 @@ NIST Cybersecurity Framework （CSF） standard 可能是雲端的挑戰性。 �
 
 **Office 365 的範圍內服務有哪些？**
 
-NIST CSF 認證的範圍內服務是 Exchange Online 封存、Exchange Online Protection、Exchange Online、商務用 Skype、系統管理中心、SharePoint 線上、Project Online、OneDrive for Business、Office Online、MyAnalytics、Microsoft 團隊、office 365 多租使用者雲端和 Office 365 GCC 中的 Office ProPlus。
+NIST CSF 認證的範圍內服務是 Exchange Online 封存、Exchange Online Protection、Exchange Online、商務用 Skype、系統管理中心、SharePoint 線上、Project Online、OneDrive for Business、Office Online、MyAnalytics、Microsoft 團隊、Microsoft 365 多承租人雲端和 Office 365 GCC 365 中的 Microsoft 應用程式。
 
 > [!NOTE]
 > Microsoft 365 應用程式企業版可讓您存取各種雲端服務，例如漫遊設定、授權和 OneDrive 使用者雲端儲存裝置，並可讓今後存取其他雲端服務。 漫遊設定和授權支援 HITRUST 的標準。 OneDrive 使用者雲端儲存區未提供，而且可透過 Microsoft 365 應用程式存取的其他雲端服務，以及 Microsoft 未來可能會提供的雲服務，也可能會支援這些標準。 *

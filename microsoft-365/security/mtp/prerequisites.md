@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c482e46cf51cbf11960c02663221df0c136b067c
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: dfc2136f04ed128fc655386c6eef7b91c5e5ef3a
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857176"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011267"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威脅防護先決條件
 
@@ -34,7 +34,11 @@ ms.locfileid: "42857176"
 瞭解授權、硬體和軟體需求，以及其他設定，以提供和使用 Microsoft 威脅防護。
 
 ## <a name="licensing-requirements"></a>授權需求
-若要使用 Microsoft 威脅防護，您必須是單一授權或授權組合。
+
+>[!IMPORTANT]
+>從2020年5月3日開始，Microsoft 將逐步推出有關授權需求的新的優化體驗，並[開啟 Microsoft 威脅防護](mtp-enable.md)。 在這段期間內，有些客戶會開始查看其門戶體驗的變更。 有關全新經驗的資訊已在本文中標示**新經驗**。
+
+若要使用 Microsoft 威脅防護，您必須是單一授權或授權組合。 這些授權或授權組合可讓您存取 Microsoft 威脅防護功能，而不需要額外成本。
 
 ### <a name="single-license"></a>單一授權
 您可以使用下列*其中一個*授權：
@@ -47,11 +51,24 @@ ms.locfileid: "42857176"
 
 - Office 365 E5 或 A5
 - *企業行動 + 安全性（EMS）* E5 或 A5
-- Windows E5 或 A5
+- Windows 10 企業版 E5 或 A5
 
 如需詳細資訊，請[查看 Microsoft 365 企業版服務方案](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
 
 > 還沒有授權？ [試用或購買 Microsoft 365 訂閱](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
+
+
+**新經驗：** 從2020年5月3日起，客戶會逐漸收到這種經驗的變更。 針對具有全新經驗的使用者，使用下列任何一種授權的*客戶都可*使用開啟 Microsoft 威脅防護的選項：
+
+- Microsoft 365 E5 或 A5
+- Microsoft 365 E5 Security 或 A5 Security
+- Windows 10 企業版 E5 或 A5
+- Enterprise 可移動性 + Security （EMS） E5 或 A5 
+- Office 365 E5 或 A5
+- Windows Defender 進階威脅防護 
+- Azure 進階威脅防護 
+- Microsoft Cloud App Security 
+- Office 365 高級威脅防護（方案2） 
 
 ### <a name="check-your-existing--licenses"></a>檢查您現有的授權
 移至 Microsoft 365 系統管理中心（[admin.microsoft.com](https://admin.microsoft.com/)）以查看您現有的授權。 在系統管理中心中，移至 **[帳單]** >  **[授權]**。

@@ -19,23 +19,21 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 27f27a16de9d4aa2a2f163a18c1b837d6c575eb0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 81773481f79a70cb5996696c9554dfe744170e8c
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633480"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011240"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Microsoft 威脅防護資料安全性與隱私權
 
 **適用於：**
 - Microsoft 威脅防護
 
-
-
 使用 Microsoft 威脅防護時，您同意下列條款：
 
-開啟 Microsoft 威脅防護（MTP）後，您同意下列條款。 線上服務條款（OST）中所定義的適當客戶資料將會從其他 Microsoft 服務傳輸至 MTP。 使用 MTP 中的客戶資料，將遵循 Microsoft Defender 高級威脅防護（Microsoft Defender ATP）的資料處理標準及承諾。 您認可此類承諾可能與轉移客戶資料的服務不同。 此外，在您選取用於儲存 MDATP 客戶資料的地理位置中，儲存在 MTP 中的客戶資料會儲存在 rest 上，這可能會與您在其他服務中所選取的地理位置不同。 Microsoft 不會在這類 Geo 之外轉接客戶資料，除非[Microsoft 信任中心](https://www.microsoft.com/trust-center)的 [資料位置] 區段中所述。
+*Microsoft 威脅防護（MTP）服務會將其他 Microsoft 企業線上服務的某些客戶資料傳送至 MTP，並從 MTP 傳送至 Microsoft enterprise online 服務。這些資料傳輸受[線上服務條款](https://go.microsoft.com/fwlink/?linkid=2127420)的制約，並在[Microsoft 信任中心](https://go.microsoft.com/fwlink/?linkid=2127550)進一步說明。*
 
 如需有關特定產品的資料儲存與隱私權資訊的詳細資訊，請參閱：
 - [Microsoft Defender ATP 資料儲存與隱私權](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

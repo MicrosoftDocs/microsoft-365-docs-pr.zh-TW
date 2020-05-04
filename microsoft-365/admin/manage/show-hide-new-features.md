@@ -1,5 +1,5 @@
 ---
-title: 使用新的管理來顯示或隱藏新功能
+title: 使用 [新功能管理] 顯示或隱藏新功能
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 決定使用者在 office 的新管理 Office 桌面應用程式中，向使用者顯示或隱藏的功能及其新內容。
-ms.openlocfilehash: de4191529c58dd471c6f24e86bdff2177a38b51d
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 7399da493f8e6878a92dc13d92482d7ddece0ba3
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131967"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011696"
 ---
-# <a name="show-or-hide-new-features-using-whats-new-management"></a>使用新的管理來顯示或隱藏新功能
+# <a name="show-or-hide-new-features-using-whats-new-management"></a>使用 [新功能管理] 顯示或隱藏新功能
 
 Office Win 32 的新管理可讓您的組織決定在 Office 桌面應用程式中，使用者對使用者顯示或隱藏的功能。 每個 Office 版本都包含新功能和改進功能，而內容預覽可讓您針對每個發行版本本和頻道查看新的內容，並選擇是否要隱藏或顯示每項功能對使用者的新內容。 
 
@@ -62,7 +62,7 @@ Office Microsoft 365 系統管理中心及[用戶端設定服務](https://config
 |**半年（已設定目標）** <br/> |9月1日和3月1日 <br/> | 主要版本之前2周的新功能
 |**半年** <br/> |1月1日和7月1日 <br/> | 主要版本之前2周的新功能<br/> |
 
-如需有關通道更新排程的詳細資訊，請參閱[Office 365 ProPlus 的更新歷程記錄（依日期列出）](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)。
+如需有關通道更新排程的詳細資訊，請參閱[Microsoft 365 app 的更新歷程記錄（依日期列出）](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)。
 
 ## <a name="related-articles"></a>相關文章
 

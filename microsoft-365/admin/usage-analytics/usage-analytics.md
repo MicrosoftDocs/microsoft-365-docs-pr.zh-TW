@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 深入瞭解您的組織如何採用 Microsoft 365 服務來進行通訊及共同作業。
-ms.openlocfilehash: 783b2c599a5f3a31446855450029859e6dfd9f65
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3e74160cc2e30dc9337e0203fd82ced98869faf7
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626931"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011756"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情況分析
 ---
@@ -71,7 +71,7 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 「啟用與授權」頁面提供有關 Microsoft 365 啟用的報告;也就是說，有多少使用者已下載和啟用 Office 應用程式，以及您的組織已指派多少個授權。 朝上的月值指的是目前的月，而度量值會反映從當月開始到目前日期的匯總值。
 
-- **啟用** &ndash;追蹤組織中的啟用追蹤服務方案（例如，Microsoft 365 ProPlus、Project 和 Visio）。 擁有 Office 授權的每個人員都能在多達五部裝置上安裝產品。 您也可以使用本節中的報告，查看人員已安裝 Office 應用程式的裝置。 請注意，若要啟動計畫，使用者必須安裝應用程式，並以其帳戶登入。
+- **啟用** &ndash;追蹤服務方案（例如，適用于企業、Project 和 Visio 的 Microsoft 365 應用程式）在您的組織中啟動。 擁有 Office 授權的每個人員都能在多達五部裝置上安裝產品。 您也可以使用本節中的報告，查看人員已安裝 Office 應用程式的裝置。 請注意，若要啟動計畫，使用者必須安裝應用程式，並以其帳戶登入。
 
 - **授權** &ndash;此報告包含授權類型、指派每個授權類型的使用者計數，以及每個月的授權指派發佈的概述。 朝上的月值指的是目前的月，而度量值會反映從當月開始到目前日期的匯總值。
 

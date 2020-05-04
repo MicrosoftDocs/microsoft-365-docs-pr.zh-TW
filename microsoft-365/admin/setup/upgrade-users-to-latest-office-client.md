@@ -19,12 +19,12 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 瞭解如何將使用者升級至最新的 Office 用戶端。
-ms.openlocfilehash: 148069011784b822c5ce366190afd60bf278772f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2140e246882d9d9b30481bc20b78142708408f88
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627531"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011266"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>將您的 Microsoft 365 for business 使用者升級至最新的 Office 用戶端
 
@@ -124,4 +124,4 @@ Office 2010 會在10月13日在2020上達到其支援的終止。 當 Office 201
 在您確認要升級的使用者擁有授權後，最後一個步驟是讓他們安裝 Office，請參閱[在您的 PC 或 Mac 上下載並安裝或重新安裝 office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)。
   
 > [!TIP]
-> 如果您不想讓使用者自行安裝 Office，請參閱[管理 office 365 中的軟體下載設定](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365)。 您可以使用[Office 部署工具](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool)，將 office 軟體下載到您的本機網路，然後使用您一般使用的軟體部署方法來部署 office。
+> 如果您不想讓使用者自行安裝 Office，請參閱[管理 office 365 中的軟體下載設定](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365)。 您可以使用[Office 部署工具](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool)，將 office 軟體下載到您的本機網路，然後使用您一般使用的軟體部署方法來部署 office。

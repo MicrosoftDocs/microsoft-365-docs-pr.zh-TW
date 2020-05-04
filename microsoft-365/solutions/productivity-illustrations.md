@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 53b5bc1bad9a67543fccaa8dcb3223307d2634b9
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 8b792fa659866682df32130992340d9089aebfe7
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002567"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011848"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生產力圖例
 
@@ -124,12 +124,12 @@ This guidance includes Test Lab Guides. For more information, see [Microsoft Sec
 <a name="msd"></a>
 ### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>使用 Microsoft 部署現代和安全的桌面
 
-IT 結構設計師需要了解的關於在 Windows 10 上部署和管理 Office 365 專業增強版的更新。
+IT 結構設計師在 Windows 10 上部署及管理適用于企業的 Microsoft 365 應用程式（先前稱為 Office 365 ProPlus）更新時，需要瞭解的資訊。
   
 
 |**項目**|**描述**|
 |:-----|:-----|
-|[![使用 Microsoft 模型部署現代和安全的桌面縮圖](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>2017年9月更新 | 此模型包含： <ul><li>  從 Microsoft Cloud 部署 Windows 10 和 Office ProPlus </li><li>  使用 Microsoft Endpoint Configuration Manager 部署 Windows 10 和 Office ProPlus 專業增強版 </li><li>  從 Microsoft Cloud 管理 Windows 10 和 Office ProPlus 的更新 </li><li>  使用 Microsoft Endpoint Configuration Manager 管理 Windows 10 和 Office 專業增強版的更新 </li><li>  Windows 10 立即可用和額外的保護功能 </li></ul><br/> |
+|[![使用 Microsoft 模型部署現代和安全的桌面縮圖](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>2017年9月更新 | 此模型包含： <ul><li>  從 Microsoft cloud 部署 Windows 10 和 Microsoft 365 應用程式 enterprise </li><li>  使用 Microsoft Endpoint Configuration Manager 部署 Windows 10 和 Microsoft 365 應用程式 enterprise </li><li>  從 Microsoft cloud 管理 Windows 10 和 Microsoft 365 應用程式 enterprise 的更新 </li><li>  使用 Microsoft 端點 Configuration Manager 管理適用于企業的 Windows 10 和 Microsoft 365 應用程式更新 </li><li>  Windows 10 立即可用和額外的保護功能 </li></ul><br/> |
    
 ## <a name="see-also"></a>另請參閱
 

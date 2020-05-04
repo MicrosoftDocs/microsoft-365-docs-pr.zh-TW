@@ -1,5 +1,5 @@
 ---
-title: AllowSelfServicePurchase 用於 MSCommerce PowerShell 模組
+title: 針對 MSCommerce PowerShell 模組使用 AllowSelfServicePurchase
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -14,36 +14,36 @@ ms.collection:
 ms.custom: ''
 search.appverid:
 - MET150
-description: 了解如何使用 AllowSelfServicePurchase PowerShell 指令程式來開啟或關閉自助購買。
+description: 瞭解如何使用 AllowSelfServicePurchase PowerShell Cmdlet 來開啟或關閉自助購買服務。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0e9f9e3ee87f62b903e4bf7069f31319253de62d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6c0bcec70eab4266674ca2a22f1b2054807a26e8
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080340"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011672"
 ---
-# <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>AllowSelfServicePurchase 用於 MSCommerce PowerShell 模組
+# <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>針對 MSCommerce PowerShell 模組使用 AllowSelfServicePurchase
 
-現在使用[PowerShell 資源庫](https://aka.ms/allowselfservicepurchase-powershell-gallery)上**MSCommerce** PowerShell 模組。 模組包含**AllowSelfServicePurchase** ，可讓您控制您組織中的使用者是否可以讓自助購買**PolicyID**參數值。
+**MSCommerce** PowerShell 模組現在可用於[PowerShell 圖庫](https://aka.ms/allowselfservicepurchase-powershell-gallery)。 此模組包含**AllowSelfServicePurchase**的**PolicyID**參數值，可讓您控制組織中的使用者是否可以進行自助購買。
 
-您可以使用**MSCommerce** PowerShell 模組：
+您可以使用**MSCommerce** PowerShell 模組來：
 
-- 檢視**AllowSelfServicePurchase**參數值的預設狀態 — 是否已啟用或停用
-- 檢視清單中的適用產品與是否啟用或停用自助購買
-- 檢視或修改特定產品的啟用或停用它目前的設定
+- 查看**AllowSelfServicePurchase**參數值的預設狀態，不論它是啟用還是停用
+- 查看適用產品的清單，以及是否啟用或停用自助購買功能
+- 查看或修改特定產品的目前設定，以啟用或停用
 
 ## <a name="requirements"></a>需求
 
 若要使用**MSCommerce** PowerShell 模組，您需要：
 
 - Windows 10 裝置
-- 裝置的系統管理員權限
-- 您的租用戶的全域或計費系統管理員角色
+- 裝置的系統管理員許可權
+- 您租使用者的全域或計費系統管理員角色
 
 ## <a name="install-the-mscommerce-powershell-module"></a>安裝 MSCommerce PowerShell 模組
 
-您一次安裝在 Windows 10 裝置上的 [ **MSCommerce** PowerShell 模組，並再將其匯入您啟動每個 PowerShell 工作階段。 從[PowerShell 資源庫](https://aka.ms/allowselfservicepurchase-powershell-gallery)下載**MSCommerce** PowerShell 模組。
+您可以在 Windows 10 裝置上安裝**MSCommerce** PowerShell 模組一次，然後將其匯入您所開始的每個 PowerShell 會話。 從[PowerShell 庫](https://aka.ms/allowselfservicepurchase-powershell-gallery)下載**MSCommerce** PowerShell 模組。
 
 若要使用**PowerShellGet**安裝**MSCommerce** PowerShell 模組，請執行下列命令：
 
@@ -51,41 +51,41 @@ ms.locfileid: "42080340"
 Install-Module -Name MSCommerce
 ```
 
-## <a name="import-mscommerce-into-the-powershell-session"></a>MSCommerce 匯入 PowerShell 工作階段
+## <a name="import-mscommerce-into-the-powershell-session"></a>將 MSCommerce 匯入至 PowerShell 會話
 
-在 Windows 10 裝置上安裝模組之後，再匯入您啟動每個 PowerShell 工作階段。 若要將其匯入 PowerShell 工作階段，執行下列命令：
+在 Windows 10 裝置上安裝模組之後，您可以將它匯入至每個開始的 PowerShell 會話。 若要將其匯入 PowerShell 會話，請執行下列命令：
 
 ```powershell
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a>使用您的認證連線至 MSCommerce
+## <a name="connect-to-mscommerce-with-your-credentials"></a>使用您的認證連接至 MSCommerce
 
-若要連接至您的認證之 PowerShell 模組，請執行下列命令。
+若要使用您的認證連接至 PowerShell 模組，請執行下列命令。
 
 ```powershell
 Connect-MSCommerce
 ```
 
-此命令會連線到 Azure Active Directory 租用戶目前 PowerShell 工作階段。 此命令會提示您輸入使用者名稱和密碼，您想要連線至租用戶。 如果您的認證啟用多重要素驗證，則您可以使用 [互動] 選項登入]。
+此命令會將目前的 PowerShell 會話連接至 Azure Active Directory 租使用者。 命令會提示您輸入您要連線的承租人的使用者名稱和密碼。 如果為您的認證啟用多重要素驗證，您可以使用 [互動式] 選項來登入。
 
-## <a name="view-details-for-allowselfservicepurchase"></a>AllowSelfServicePurchase 檢視詳細資料
+## <a name="view-details-for-allowselfservicepurchase"></a>查看 AllowSelfServicePurchase 的詳細資料
 
-若要檢視的描述**AllowSelfServicePurchase**參數值和預設狀態，根據您的組織，執行下列命令：
+若要根據您的組織，查看**AllowSelfServicePurchase**參數值的描述及預設狀態，請執行下列命令：
 
 ```powershell
 Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
 ```
 
-## <a name="view-a-list-of-self-service-purchase-products-and-their-status"></a>檢視清單中的自助購買產品以及其狀態
+## <a name="view-a-list-of-self-service-purchase-products-and-their-status"></a>查看自助購買產品及其狀態的清單
 
-若要檢視所有可用的自助購買產品和每個狀態的清單，請執行下列命令：
+若要查看所有可用自助購買產品的清單，以及每個產品的狀態，請執行下列命令：
 
 ```powershell
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
 
-下表列出可用的產品和其**ProductId**。
+下表列出可用的產品及其**ProductId**。
 
 | 產品 | ProductId |
 |-----------------------------|--------------|
@@ -93,9 +93,9 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 | 每位使用者的電源自動化 | CFQ7TTC0KP0N |
 | Power BI Pro | CFQ7TTC0L3PB |
 
-## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>檢視或設定 AllowSelfServicePurchase 狀態
+## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>查看或設定 AllowSelfServicePurchase 的狀態
 
-檢視可供自助購買的產品清單之後，您可以檢視或修改某項特定產品的設定。
+在您查看可供自助購買之產品的清單後，您可以查看或修改特定產品的設定。
 
 若要取得特定產品的原則設定，請執行下列命令：
 
@@ -109,15 +109,15 @@ Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TT
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $True
 ```
 
-若要停用某項特定產品的原則設定，請執行下列命令：
+若要停用特定產品的原則設定，請執行下列命令：
 
 ```powershell
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $False
 ```
 
-## <a name="example-script-to-disable-allowselfservicepurchase"></a>若要停用 AllowSelfServicePurchase 的範例指令碼
+## <a name="example-script-to-disable-allowselfservicepurchase"></a>停用 AllowSelfServicePurchase 的範例腳本
 
-下列範例會引導您逐步完成如何匯入**MSCommerce**模組，使用您的帳戶登入，取得**ProductId** Power 自動化，，然後停用**AllowSelfServicePurchase**該產品。
+下列範例會逐步引導您如何匯入 MSCommerce 模組、以您的帳戶登入、取得自動**MSCommerce**的**ProductId** ，然後針對該產品停用**AllowSelfServicePurchase** 。
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -135,11 +135,11 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
     HandleError : Failed to retrieve policy with PolicyId 'AllowSelfServicePurchase', ErrorMessage - The underlying
     connection was closed: An unexpected error occurred on a send.
 
-這可能是由於較舊版本的傳輸層安全性 (TLS)。 若要連接這項服務必須使用 TLS 1.2 版或更新版本
+這可能是因為舊版本的傳輸層安全性（TLS）。 若要連接此服務，您需要使用 TLS 1.2 或更新版本
 
 **解決方案**
 
-升級為 TLS 1.2:[https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2)
+升級到 TLS 1.2：[https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module
