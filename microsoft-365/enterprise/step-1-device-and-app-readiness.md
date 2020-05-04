@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在環境中評估裝置和應用程式整備。
-ms.openlocfilehash: fc048b046e46b4b2e792aa9bffb695eed742a74c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8596d23356fd8eda733938ad3a6fc0fbe81fcce3
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636853"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011660"
 ---
 # <a name="step-1-device-and-app-readiness"></a>步驟 1：裝置和應用程式整備
 
@@ -89,7 +89,7 @@ ms.locfileid: "43636853"
 
 您也可以使用電腦分析來評估以瀏覽器為基礎的相容性問題，識別出仍在使用 ActiveX 控制項、瀏覽器協助程式物件、VBScript 或 Microsoft Edge 瀏覽器不支援的其他傳統技術的使用者所存取的網站和 Web 應用程式。 您的使用者仍必須對這些網站使用 Internet Explorer 11，而您可以使用 Enterprise Mode Site List Manager 將網站新增到[企業模式網站清單](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility)。
 
-此外，為了協助您移至 Microsoft 365 Apps 企業版，您可能想要使用[適用於 Office 的整備工具組](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro)，測試您的增益集與 Microsoft Visual Basic for Applications (VBA) 巨集的相容性。
+此外，為了協助您移至 Microsoft 365 Apps 企業版，您可能想要使用[適用於 Office 的整備工具組](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)，測試您的增益集與 Microsoft Visual Basic for Applications (VBA) 巨集的相容性。
 
 ![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -105,7 +105,7 @@ ms.locfileid: "43636853"
 
 使用雲端式分析解決方案進行裝置和應用程式整備時，Configuration Manager 軟體清查是替代方法。 您可以使用安裝計數並深入了解特定電腦，以協助設定相容性測試和驗證的優先順序，並透過套件將應用程式套件設定為與 Windows 10 相容。 雖然此選項並未提供比較已知相容性資訊與 Microsoft 分析服務的功能，但可成為有效的解決方法，其以一小組已排定優先順序的應用程式為目標進行手動測試。 
 
-如需詳細資訊，請參閱 [Configuration Manager 中的軟體清查簡介](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) (英文)，以及 [Configuration Manager 中的套件和程式](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs) (英文) 中應用程式套件的設定平台需求。
+如需詳細資訊，請參閱 [Configuration Manager 中的軟體清查簡介](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) (英文)，以及 [Configuration Manager 中的套件和程式](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs) (英文) 中應用程式套件的設定平台需求。
 
 
 ## <a name="app-assure"></a>應用程式保證

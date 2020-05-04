@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解作業系統部署與功能更新的選項。
-ms.openlocfilehash: d22a0993b256a1bea1a6a5ac61f14b144c6ac6c7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f372c41b113286d4ecff679f16581200264a9bdd
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636756"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011624"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>步驟 6：作業系統部署與功能更新
 
@@ -57,7 +57,7 @@ ms.locfileid: "43636756"
 
 [建立 Windows 10 參照映像](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
 
-[建立安裝作業系統的工作順序](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[建立安裝作業系統的工作順序](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 ### <a name="deployment-types"></a>部署類型
 
@@ -89,7 +89,7 @@ ms.locfileid: "43636756"
 
 [使用 Configuration Manager 執行就地升級至 Windows 10](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
 
-[建立工作順序以在 Configuration Manager 中升級作業系統](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[建立工作順序以在 Configuration Manager 中升級作業系統](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 ### <a name="phased-deployment"></a>階段式部署
 
@@ -101,7 +101,7 @@ ms.locfileid: "43636756"
 
 無論您選擇的部署類型，您需要確認可預測性和重複性盡可能為自動化。Microsoft 提供兩個解決方案可使用自動化的工作順序自動化作業系統部署：
 
-  - **[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction)** (ConfigMgr) (英文) 提供內建作業系統部署功能，可加強軟體發佈與軟體更新管理的功能。ConfigMgr 已廣泛用於各種規模的組織，並支援所有四個 Windows 部署類型。或者，您也可以將 ConfigMgr 與 Microsoft Intune 整合以新增其他功能來部署和裝置管理。
+  - **[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction)** (ConfigMgr) (英文) 提供內建作業系統部署功能，可加強軟體發佈與軟體更新管理的功能。ConfigMgr 已廣泛用於各種規模的組織，並支援所有四個 Windows 部署類型。或者，您也可以將 ConfigMgr 與 Microsoft Intune 整合以新增其他功能來部署和裝置管理。
 
   - 其他常用的部署選項是免費的 **[Microsoft 部署工具組](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit)** (MDT) (英文) 通常是由小型及中型規模的組織用來進行作業系統部署。這幾乎不需要基礎結構。MDT 與 Windows 部署服務 (WDS) 整合以進行網路開機。它支援所有四種部署類型以及應用程式安裝、驅動程式和設定。當然，MDT 甚至可與 Configuration Manager 整合。
 

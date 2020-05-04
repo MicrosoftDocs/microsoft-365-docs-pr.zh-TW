@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 來部署 Microsoft 365 Apps 企業版。
-ms.openlocfilehash: eca3978103ca1e590d747b3549a3c9e393f871ca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ff05a079d83389ed94445fc011b9f7902c6de56
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625251"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011884"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>適用於 Contoso 的 Microsoft 365 Apps 企業版部署
 
@@ -40,7 +40,7 @@ Contoso 根據自身需求，選擇以 Configuration Manager (最新分支) 部�
 - 智慧型語言套件部署，包括自動部署與作業系統相同的語言
 - 完整支援並有簡單好用的方法，在部署期間從用戶端移除現有的 Office 版本
 
-除了 Configuration Manager，Contoso 也使用「[整備工具組](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro)」，此為 Microsoft 提供的免費工具，可用於評估 Office 巨集和增益集的相容性問題。
+除了 Configuration Manager，Contoso 也使用「[整備工具組](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)」，此為 Microsoft 提供的免費工具，可用於評估 Office 巨集和增益集的相容性問題。
 
 ## <a name="managing-the-deployment-and-updates"></a>管理部署及更新
 
@@ -51,7 +51,7 @@ Microsoft 365 Apps 企業版有新的發行模式：Office 即服務。此服務
 
 Contoso 不使用 Configuration Manager 來管理 Office 的更新，而是啟用雲端自動更新。雲端式更新可在降低管理成本的同時，確保裝置維持最新版本。 
 
-Contoso 遵循相同的兩階段方式進行功能更新和部署 Office：在試驗群組中的裝置會比其他組織中的裝置 (大型群組) 早四個月收到功能更新。為了在 Office 中啟用此功能，Contoso 使用兩個建議的[更新通道](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)： 
+Contoso 遵循相同的兩階段方式進行功能更新和部署 Office：在試驗群組中的裝置會比其他組織中的裝置 (大型群組) 早四個月收到功能更新。為了在 Office 中啟用此功能，Contoso 使用兩個建議的[更新通道](https://docs.microsoft.com/DeployOffice/overview-update-channels)： 
 
 - 對試驗群組更新的半年通道 (已設定目標) 
 - 對大型群組更新的半年通道。 
