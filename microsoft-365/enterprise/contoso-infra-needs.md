@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 內部部署 IT 基礎結構的基本結構，以及 Microsoft 365 企業版如何符合其業務需求。
-ms.openlocfilehash: 38d2b8df611cb06e19abba074f49e00d95496c30
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3899466e6c8ad50ad3a3d97863d1368ba1d8af20
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625287"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011194"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contoso 的 IT 基礎結構與業務需求
 
@@ -110,7 +110,7 @@ Contoso 的業務需求分成五個主要類別。
 
 - 降低針對在電腦和裝置上執行之軟體進行管理的 IT 額外負荷
 
-  自動安裝更新到整個組織的 Windows 作業系統和 Microsoft Office 專業增強版。
+  自動安裝更新到整個組織的 Windows 作業系統和 Microsoft 365 應用程式企業版。
 
 ## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>將 Contoso 的業務需求對應至 Microsoft 365 企業版
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 提供非企業組織逐步執行 Microsoft 365 企業版底層基礎結構的簡化階段。
-ms.openlocfilehash: cad142f2f26eb999431eb5bb531cb4520e4d6102
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e1c747e5f4ab3e58adeaf91518512d8ece83d91b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638257"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011896"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>適用於非企業的 Microsoft 365 企業版底層基礎結構
 
@@ -215,7 +215,7 @@ Azure AD 會評估使用者登入的條件，而且可以使用條件式存取�
 
 ## <a name="phase-4-microsoft-365-apps-for-enterprise"></a>階段 4：Microsoft 365 Apps 企業版
 
-Microsoft 365 企業版包括 Microsoft Office 的訂閱版本 Microsoft 365 Apps 企業版。 Microsoft 365 Apps 企業版與 Office 2016 或 Office 2019 一樣，直接安裝在用戶端裝置上。 不過，Microsoft 365 Apps 企業版可定期獲得包含新功能的更新。 如需詳細資訊，請參閱[ Microsoft 365 Apps 企業版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
+Microsoft 365 企業版包括 Microsoft Office 的訂閱版本 Microsoft 365 Apps 企業版。 Microsoft 365 Apps 企業版與 Office 2016 或 Office 2019 一樣，直接安裝在用戶端裝置上。 不過，Microsoft 365 Apps 企業版可定期獲得包含新功能的更新。 如需詳細資訊，請參閱[關於 Microsoft 365 應用程式企業版](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)。
 
 如果是非企業組織，請在裝置 (可以是 Windows、iOS 或 Android 裝置) 上手動安裝 Microsoft 365 Apps 企業版。 此動作可以在準備要使用的新裝置時完成，或者由使用者在上線程序時完成。
 

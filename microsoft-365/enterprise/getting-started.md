@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 桌面部署程序簡介。
-ms.openlocfilehash: f50a719d87a961c0446757d21d2f8be5d6eedbc0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 05ec900acbcfed9d148ef4f567aab099dd9b7c7d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634215"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011872"
 ---
 # <a name="getting-started---desktop-deployment"></a>快速入門 - 桌面部署
 
@@ -53,7 +53,7 @@ ms.locfileid: "43634215"
 
 [適用於 IT 專業人員的 Windows 10](https://www.microsoft.com/itpro/windows-10) (英文)
 
-[關於企業中的 Microsoft 365 Apps企業版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)
+[關於 Microsoft 365 應用程式企業版](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)
 
 ## <a name="what-has-changed"></a>有什麼變更
 
@@ -67,7 +67,7 @@ ms.locfileid: "43634215"
 
 **雲端裝置管理：** Microsoft Intune 等服務可讓您像其他行動裝置一樣，在同一個地方管理您的 Windows 10 裝置。 Microsoft Intune 的特點是能夠使用 Microsoft Endpoint Configuration Manager 共同管理 Windows 10 裝置。 您可以使用 Configuration Manager 來協助您轉換為 Windows 10，然後新增 Microsoft Intune。 搭配使用 Microsoft Endpoint Configuration Manager 後，其會變成貴組織內的智慧優勢，可連線至 Microsoft 智慧型雲端。 無論使用者裝置位於何處，是否在貴組織連線或在公用雲端連線，這都能讓您管理使用者的裝置。
 
-[Windows 10 裝置的共同管理](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview) (英文)
+[Windows 10 裝置的共同管理](https://docs.microsoft.com/mem/configmgr/core/clients/manage/co-management-overview) (英文)
 
 **雲端部署服務：** 當您取得新電腦時，我們已引進新的雲端服務，可協助您部署稱為 Windows Autopilot 部署服務的 Microsoft 365 裝置。 Autopilot 會整合您的硬體提供者，且新電腦會在 Autopilot 中自動註冊，讓新電腦可直接出貨給終端使用者。 當電腦第一次啟動時，會快速設定為貴組織所需的設定，並針對使用者的特定需求進行自訂。
 
@@ -77,7 +77,7 @@ ms.locfileid: "43634215"
 
 「隨選即用」與過去的 MSI 套件截然不同。 「隨選即用」更快也更輕便，並且支援在背景中進行更新，讓使用者保持啟動且可繼續執行的狀態。 但這仍然是 Office 的本機複本，您可以繼續使用現有的部署工具 (例如 Microsoft Endpoint Configuration Manager) 來佈建及設定應用程式。
 
-[Microsoft 365 Apps 企業版部署指南](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+[Microsoft 365 應用程式部署指南](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
 **半年更新：** 一旦移至 Windows 10 和 Microsoft 365 Apps 企業版後，每半年會提供更新和新功能。 但因為 Microsoft 能夠從雲端提供深入見解來協助您，您可以快速且充滿自信地將這些更新推廣至數百或數千個裝置。 如同就地升級，功能更新會保留先前版本的應用程式、資料和設定。
 
@@ -109,14 +109,14 @@ ms.locfileid: "43634215"
 
 **[步驟 6：作業系統部署與功能更新](https://aka.ms/mdd6)** (英文) 在一切就緒後，下一步就是部署作業系統映像。進行大量的重擔可以使用 System Center Configuration Manage 順序和基礎結構來完成。建議的方法是以階段部署，首先設定目標，並使用一組代表硬體和應用程式部署至貴組織中的「早期採納者群組」。然後，您可以使用這些裝置和使用者的資料逐漸將目標設定為更多部電腦。
 
-[在 Configuration Manager 中部署作業系統的簡介](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment) (部分機器翻譯)
+[在 Configuration Manager 中部署作業系統的簡介](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment) (部分機器翻譯)
 
 **[步驟 7：Windows 和 Office 即服務](https://aka.ms/mdd7)** 這代表您維護使用者桌面大小方式的主要轉變。 您可以利用 Windows 10 及 Microsoft 365 Apps 企業版的這項移動，將管理 Windows 和 Office 改變為一項服務。 取代每隔幾年的大型技術轉變，您會持續將全新的功能、體驗和保護帶給您的使用者。 半年度功能更新或在每年秋季及春季提供全新的功能，而每月累積的品質更新將會包含安全性、可靠性和錯誤 (bug) 修正。 雖然您可以選擇部署 Office 2019 用戶端，但強烈建議您移至 Microsoft 365 Apps 企業版。 這會遵循 Windows 的類似服務方案，也可讓使用者定期獲得 Office 應用程式的更新。
 
 ![](../media/getting-started-media/getting-started-media-2.png)
 
 [Windows 即服務概觀](https://docs.microsoft.com/windows/deployment/update/waas-overview)
-[Office 即服務概觀](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
+[Office 即服務概觀](https://docs.microsoft.com/DeployOffice/overview-update-channels)
 
 **[步驟 8：使用者的通訊和訓練](https://aka.ms/mdd8)** 最後這個步驟對於推動使用新功能以提升團隊合作、通訊、安全性等至關重要。 在廣泛部署目標為早期採納者週期外的使用者之前，建議您推行使用者通訊和訓練。 這將有助於推動在 Office、Windows 或其他企業營運應用程式和服務中的新功能使用方式所需變更。 如需協助，我們透過 Microsoft FastTrack 提供免費線上訓練。 此外，我們已發佈免費的範例通訊計劃和時間表，搭配電子郵件和社交及內部網路範本來協助您推出 Windows 10。 身為 Microsoft 365 組織，貴組織可能也符合資格且可直接支援。
 

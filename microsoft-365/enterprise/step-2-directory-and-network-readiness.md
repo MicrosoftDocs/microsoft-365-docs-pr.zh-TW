@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在環境中評估目錄和網路整備。
-ms.openlocfilehash: 4db179a2ed4c2aada841e8f7a4ed824aa1e190ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9b2ed38afd77a5dd487b7e319eeee5300a62a25
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636805"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011648"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>步驟 2：目錄和網路整備
 
@@ -51,7 +51,7 @@ ms.locfileid: "43636805"
 
 如果貴組織已使用 Office 365、Exchange Online、Microsoft Intune 或其他 Microsoft 線上服務，好消息是，您已經在使用 Azure Active Directory。 如果是，您只需要確認您目標桌面部署的使用者是在 Azure Active Directory 中，並已指派授權。
 
-如果您目前未使用 Azure Active Directory，則有[許多資源](https://docs.microsoft.com/azure/active-directory/)可協助您進行設定。 您也可能符合透過 Microsoft FastTrack 提供的個人化協助資格 (授權的一部分)。 您可以在[這裡](https://fasttrack.microsoft.com)進一步了解 Microsoft Fastrack。
+如果您目前未使用 Azure Active Directory，則有[許多資源](https://docs.microsoft.com/azure/active-directory/)可協助您進行設定。 您也可能符合透過 Microsoft FastTrack 提供的個人化協助資格 (授權的一部分)。 您可以在[這裡](https://fasttrack.microsoft.com)進一步了解 Microsoft FastTrack。
 
 一旦 Azure Active Directory 就位後，您的使用者可以登入並啟用其 Microsoft 365 Apps 企業版應用程式，且您可以使用 Microsoft Intune 或 Windows Autopilot 部署，以自動化部署應用程式和原則。
 
@@ -121,7 +121,7 @@ Configuration Manager 支援的**對等快取**用戶端也可利用對等快取
 
 **二進位差異壓縮** 從最新版本的 Microsoft 365 Apps 企業版更新至下一個版本時，Microsoft 365 Apps 企業版會使用二進位差異壓縮來減少軟體更新所耗用的頻寬。透過只從兩個先前版本放入二進位層級變更，可將累積更新的每月成長影響降到最低。這有可能會每部電腦每個月儲存數百 MB 的資料。但若要使用這項功能，您無法略過版本。如果您這麼做，必須先下載完整的累積更新。
 
-[下載 Office 365 的更新](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus) (英文)
+[下載 Microsoft 365 應用程式的更新](https://docs.microsoft.com/deployoffice/overview-update-process-microsoft-365-apps#download-the-updates-for-microsoft-365-apps)
 
 **Outlook 資料檔** Outlook 通常會設定為在本機快取使用者的整個信箱，以供離線使用。 在任何 Windows 部署中，除了就地升級以外，使用者的 Outlook 資料檔都需要在升級後自行重建。 這是自動化程序，但是 Outlook 信箱限制通常設為最多 100 GB，而在本機重新快取所有使用者的整個信箱表示有大量資料轉送。 若要減少網路負載，您可考慮使用群組原則來降低「要離線保留的郵件」設定。 在 Microsoft 365 Apps 企業版或 Office 2016 中，Outlook 的預設值會設為 12 個月。 若要降低網路影響，請考慮將離線快取設定為最近 1 到 6 個月。 變更此設定並不會影響線上信箱的大小，仍可透過 Outlook 在線上搜尋整個信箱。
 

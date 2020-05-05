@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何傳遞 Office 和 LOB 應用程式。
-ms.openlocfilehash: bf610f6d6684cf8fb6211301468747fbecf3d8f1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ab40e59face9e8c4b37db15a9c815ea5579b4a2c
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636793"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011636"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>步驟 3：Office 和 LOB 應用程式傳遞
 
@@ -63,9 +63,9 @@ Microsoft Endpoint Configuration Manager 和 Microsoft Intune 等軟體部署工
 
 如果您想在映像中包含 Microsoft 365 Apps 企業版，請記住，這會使用使用者型啟用，而無法由系統管理員預先啟用。使用 Office 部署工具在您進行映像處理的裝置上預先安裝 Office，並跳過使用者登入。 部署映像後，使用者可以使用其認證登入並啟動 Microsoft 365 Apps 企業版。
 
-[建立安裝作業系統的工作順序](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[建立安裝作業系統的工作順序](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[將 Microsoft 365 Apps 企業版當作作業系統映像的一部分來部署](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[將 Microsoft 365 應用程式當作作業系統映像的一部分來部署](https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office 隨選即用 
 
@@ -81,11 +81,11 @@ Microsoft 建議使用 [Office 自訂工具](https://config.office.com/)來自�
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Microsoft 365 Apps 企業版部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+[Microsoft 365 應用程式部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[升級至 Microsoft 365 Apps 企業版時，移除 Office 現有的 MSI 版本](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
+[升級至 Microsoft 365 應用程式時，移除現有的 Office MSI 版本](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[使用 Configuration Manager 管理 Microsoft 365 Apps 企業版](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[使用 Configuration Manager 管理 Microsoft 365 Apps 企業版](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置](https://docs.microsoft.com/intune/apps-add-office365)
 

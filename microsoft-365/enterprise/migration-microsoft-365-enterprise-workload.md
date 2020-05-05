@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 在整個組織中逐步執行將 Microsoft Office、Office 伺服器及 Windows 的各版本移轉為 Microsoft 365 企業版的程序。
-ms.openlocfilehash: 53d50321ffa2870fb0e94e9f6b7f005b8c666c2d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6830b4627eea799e18d32d3f9150617df339d7d4
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631534"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011792"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>移轉至 Microsoft 365 企業版
 
@@ -49,7 +49,7 @@ ms.locfileid: "43631534"
 - 未以最佳化方式啟用以便運用 Microsoft 雲端技術，及協助您的企業進行數位轉型。
 - 不包含新功能。
  
-Microsoft 365 企業版包含 Microsoft 365 Apps 企業版，此 Office 用戶端產品版本可使用 Microsoft 365 企業版授權，且會從 Microsoft 雲端進行安裝與更新。 Microsoft 365 Apps 企業版授權包括安全性更新和最新功能。 如需詳細資訊，請參閱[ Microsoft 365 Apps 企業版](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)。
+Microsoft 365 企業版包含 Microsoft 365 Apps 企業版，此 Office 用戶端產品版本可使用 Microsoft 365 企業版授權，且會從 Microsoft 雲端進行安裝與更新。 Microsoft 365 Apps 企業版授權包括安全性更新和最新功能。 如需詳細資訊，請參閱[關於 Microsoft 365 應用程式企業版](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)。
 
 ### <a name="office-2007"></a>Office 2007
 

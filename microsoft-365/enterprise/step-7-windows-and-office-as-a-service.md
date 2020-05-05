@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在您的環境中準備 Windows 和 Office 服務。
-ms.openlocfilehash: 422cbd4fd8310a9bc63696c0ea6e9da858c51230
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bca8fbf39bbbcc7b0a37512383caf630ffe3da67
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636732"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011612"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>步驟 7：Windows 和 Office 服務
 
@@ -83,7 +83,7 @@ Windows 10 與 Microsoft 365 Apps 企業版都推出了新的服務選項、支�
 
 [使用 Configuration Manager 來部署 Windows 10 更新](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-[使用 Configuration Manager 管理 Microsoft 365 Apps 企業版](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[使用 Configuration Manager 管理 Microsoft 365 Apps 企業版](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## <a name="overview-of-windows-and-office-channels"></a>Windows 和 Office 通道的概觀
 
@@ -103,7 +103,7 @@ Microsoft 365 提供四個服務通道：
 如需 Windows 和 Office 服務通道的詳細資訊，請檢閱下列文件：
 
 - [Windows 即服務概觀](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)
-- [Microsoft 365 Apps 企業版更新通道的概觀](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- [Microsoft 365 應用程式更新通道概觀](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 ## <a name="phased-deployment-of-updates"></a>階段式更新部署
 
@@ -141,7 +141,7 @@ Windows 和 Office 更新通道可使用標準的核准和目標設定程序，�
 
 [Windows 半年通道](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Microsoft 365 Apps 企業版的半年通道](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+[Microsoft 365 應用程式的半年通道](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 #### <a name="upgrade-task-sequences"></a>升級工作順序
 
@@ -153,7 +153,7 @@ Windows 和 Office 更新通道可使用標準的核准和目標設定程序，�
 
 如果您已使用工作順序將 Windows 7 電腦移轉到 Windows 10，且您很熟悉這些工具，則這是很好的起點，並可提供最終的控制。雖然您可以針對整個升級使用單一工作順序，組織使用兩個工作順序是很常見的。其中一個工作順序用來確定電腦已準備好升級，可自動在目標電腦上將所有必要的安裝檔案預先區分階段，另一個則執行實際的升級。這個方法可確保使用者生產力較不會受到影響。
 
-[建立工作順序以在 Configuration Manager 中升級作業系統](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[建立工作順序以在 Configuration Manager 中升級作業系統](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 #### <a name="semi-annual-channel-support-for-feature-updates"></a>功能更新的半年通道支援
 
