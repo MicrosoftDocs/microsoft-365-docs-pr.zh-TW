@@ -76,41 +76,41 @@
     - name: 團隊合作和共同作業
       items:
         - name: 小組架構海報
-          href: 'https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: 電話語音解決方案
           items:
             - name: 選擇您的解決方案
-              href: 'https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: 多國公司的案例研究
               href: null
         - name: 在 SharePoint 中使用 Microsoft 365 進行檔案共同作業
-          href: 'https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: 規劃智慧 SharePoint 內部網路
-          href: 'https://docs.microsoft.com/sharepoint/plan-intranet?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/sharepoint/plan-intranet?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: 適用于企業的 OneDrive 指南
-          href: 'https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: 安全性
       items:
         - name: 最主要的安全性小組工作以支援在家工作
-          href: 'https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: Microsoft 365 商務決策者（Bdm）的安全性
-          href: 'https://docs.microsoft.com/microsoft-365/security/microsoft-365-security-for-bdm?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/microsoft-365/security/microsoft-365-security-for-bdm?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: 部署 Microsoft Defender 高級威脅防護
-          href: 'https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: 合規性
       items:
         - name: GDPR 的資訊保護
-          href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: 法規合規性行動計劃
           items:
             - name: ISO - 建議使用的行動計劃
-              href: 'https://docs.microsoft.com/microsoft-365/compliance/iso-action-plan?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/iso-action-plan?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: NIST - 建議使用的行動計劃
-              href: 'https://docs.microsoft.com/microsoft-365/compliance/nist-action-plan?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/nist-action-plan?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: CCPA - 常見問題集
-              href: 'https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: GDPR-建議的行動方案
-              href: 'https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Contoso 案例研究
       items:
         - name: Contoso Corporation 的 Microsoft 365 解決方案
@@ -138,17 +138,17 @@
     - name: 醫療
       items:
         - name: 適用於醫療保健的 Teams
-          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: 教育版
       items:
         - name: Microsoft Teams 教育版
-          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: 政府機關
       items:
         - name: 適用於政府機關的 Teams
-          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: 使用團隊支援遠端政府工作者
-          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?toc=microsoft-365/solutions/toc.json&bc=microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
 - name: 企業架構設計原則
   items:
     - name: 概觀
