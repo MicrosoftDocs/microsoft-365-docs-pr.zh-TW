@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: "針對系統管理員：刪除中的專案 \n\ner 為 Exchange Online 信箱的 [可復原的專案] 資料夾，即使該信箱位於法律封存中也是一樣。 這是一種有效的方式，可刪除意外濺入 Microsoft 365 的資料。"
-ms.openlocfilehash: 0e6782c96efa997773b06535d5a0364100bd5433
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 針對系統管理員：刪除使用者的 [可復原的專案] 資料夾中的專案，即使該信箱位於法律封存中也是一樣。 這是一種有效的方式，可刪除意外濺入 Microsoft 365 的資料。
+ms.openlocfilehash: 4cf568c06fc3b6ee886ff1823d8771a64c0286d8
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630510"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022083"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>刪除雲端式信箱的 [可復原的專案] 資料夾中的專案，保留系統管理員協助
 
@@ -48,21 +48,21 @@ Exchange Online 信箱的 [可復原的專案] 資料夾存在，可防止意外
 ## <a name="before-you-begin"></a>開始之前
 
 - 若要建立和執行內容搜尋，您必須是「eDiscovery 管理員」角色群組的成員，或者獲指派「符合性搜尋」管理角色。 若要刪除郵件，您必須是「組織管理」角色群組的成員，或者獲指派「搜尋及清除」管理角色。 如需新增使用者至角色群組的詳細資訊，請參閱[在安全性與合規性中心中指派電子文件探索權限](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)。
-    
+
 - 非使用中的信箱不支援本文所述的程式。 這是因為在您移除停用信箱之後，您無法將保留（或保留原則）重新套用至非使用中的信箱。 當您從非使用中的信箱移除保留時，它會變更為一般虛刪除信箱，且會在受管理的資料夾助理處理之後，從組織中永久刪除。
-    
-- 您無法針對已被指派至已使用保留鎖定之保留原則的信箱執行此程式。 這是因為保留鎖定可防止您從保留原則移除或排除信箱，以及停用信箱上的受管理的資料夾助理。 如需有關封鎖保留原則的詳細資訊，請參閱[鎖定保留原則](retention-policies.md#locking-a-retention-policy)。
-    
+
+- 您無法對指派給已以保留鎖定鎖定之保留原則的信箱執行此程式。 這是因為保留鎖定可防止您從保留原則移除或排除信箱，以及停用信箱上的受管理的資料夾助理。 如需有關封鎖保留原則的詳細資訊，請參閱[鎖定保留原則](retention-policies.md#locking-a-retention-policy)。
+
 - 如果信箱未處於保留狀態（或沒有啟用單一專案復原），您可以從 [可復原的專案] 資料夾中刪除專案。 如需如何執行此動作的詳細資訊，請參閱[搜尋並刪除組織中的電子郵件訊息](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)。
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>步驟1：收集信箱的相關資訊
 
 此第一步是從目標信箱收集會影響此程式的選取屬性。 請務必記下這些設定或將其儲存至文字檔，因為您會在從 [可復原的專案] 資料夾中刪除專案之後，變更部分的屬性，然後再回復為步驟6中的原始值。 以下是您需要收集的信箱屬性清單。
   
--  *SingleItemRecoveryEnabled*和*RetainDeletedItemsFor* ;如有必要，您會停用單一復原，並增加步驟3中已刪除的郵件保留期間。 
-    
--  *LitigationHoldEnabled*和*InPlaceHolds* ;您必須識別放在信箱上的所有保留，以便您可以在步驟3中暫時移除。 請參閱[詳細資訊](#more-information)一節，以取得如何識別可能放置在信箱上之類型保留的秘訣。 
-    
+- *SingleItemRecoveryEnabled*和*RetainDeletedItemsFor*。 如有必要，您會停用單一復原，並增加步驟3中已刪除的郵件保留期間。 
+
+- *LitigationHoldEnabled*和*InPlaceHolds*。 您必須識別放在信箱上的所有保留，以便您可以在步驟3中暫時移除。 請參閱[詳細資訊](#more-information)一節，以取得如何識別可能放置在信箱上之類型保留的秘訣。 
+
 此外，您還需要取得信箱用戶端存取設定，這樣您就可以暫時停用這些設定，讓擁有者（或其他使用者）在此程式中無法存取信箱。 最後，您可以取得 [可復原的專案] 資料夾中的目前大小及專案數目。 在步驟5中刪除 [可復原的專案] 資料夾中的專案之後，您將使用此資訊來確認專案已移除。
   
 1. [連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。 請務必使用使用者名稱和密碼，以在 Exchange Online 中指派適當的管理角色的系統管理員帳戶。 
@@ -225,9 +225,9 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 如需標籤的詳細資訊，請參閱[標籤概觀](labels.md)。
 
- ### <a name="ediscovery-case-holds"></a>eDiscovery 案例保留
+ ### <a name="ediscovery-holds"></a>eDiscovery 保留
   
-在[安全性 & 規範中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)中執行下列命令，識別與套用至信箱的 eDiscovery 案例相關聯的保留。 使用您在步驟1中識別`UniH`的 eDiscovery 暫止的 GUID （不包括前置詞）。 第二個命令會顯示保留所關聯的 eDiscovery 案例名稱;第三個命令會顯示保留的名稱。 
+在[安全性 & 規範中心」 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)中執行下列命令，識別與套用至信箱的 ediscovery 案例（稱為*ediscovery 保留*）相關聯的保留。 使用您在步驟1中識別`UniH`的 eDiscovery 暫止的 GUID （不包括前置詞）。 第二個命令會顯示保留所關聯的 eDiscovery 案例名稱;第三個命令會顯示保留的名稱。 
   
 ```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
@@ -241,7 +241,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold.Name
 ```
 
-在您識別 eDiscovery 案例名稱和保留後，請移至規範中心的 [ **ediscovery** \> **ediscovery** ] 頁面，開啟案例，然後從保留中移除信箱。 如需詳細資訊，請參閱[eDiscovery 案例](ediscovery-cases.md)。
+在您識別 eDiscovery 案例名稱和保留後，請移至規範中心的 [ **ediscovery** \> **ediscovery** ] 頁面，開啟案例，然後從保留中移除信箱。 如需識別 eDiscovery 保留的詳細資訊，請參閱[如何識別位於 Exchange Online 信箱之保留類型](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds)的「eDiscovery 保留」一節。
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>步驟4：移除信箱的延遲保留
 
@@ -261,7 +261,7 @@ Get-Mailbox <username> | FL DelayHoldApplied,DelayReleaseHoldApplied
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-或
+或者
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied

@@ -1,54 +1,53 @@
 ---
-title: Microsoft 受管理的電腦裝置上安裝 Microsoft Project 或 Microsoft Visio
-description: Microsoft 受管理的電腦裝置上安裝 Microsoft Project 或 Microsoft Visio 的資訊
-keywords: Microsoft 受管理的電腦，Microsoft 365、 Microsoft Project，Microsoft Visio
+title: 在 Microsoft 受管理的桌面裝置上安裝 Microsoft Project 或 Microsoft Visio
+description: Microsoft 受管理的桌面裝置上安裝 Microsoft Project 或 Microsoft Visio 的資訊
+keywords: Microsoft 受管理的桌面、microsoft 365、Microsoft Project、Microsoft Visio
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5c820e36b7b397fe770216ee229e38a1da5b034d
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 450dbcb08cd0636dae575ecd2d5e9abadc5ceb25
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288994"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022093"
 ---
-# <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Microsoft 受管理的電腦裝置上安裝 Microsoft Project 或 Microsoft Visio
+# <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>在 Microsoft 受管理的桌面裝置上安裝 Microsoft Project 或 Microsoft Visio
 
-Microsoft Project 和 Microsoft Visio 需要安裝 Microsoft 受管理的電腦裝置上的特定步驟。 本主題記載的先決條件和安裝程序，為這些應用程式。
+Microsoft Project 和 Microsoft Visio 需要在 Microsoft 受管理的桌面裝置上安裝特定步驟。 本主題說明這些應用程式的必要條件和安裝程式。
 
 ## <a name="prerequisites"></a>必要條件
 
-系統管理員應該驗證其符合下列必要條件：
-- 必須可供您的使用者**授權數量**正確的 Microsoft Project 和 Microsoft Visio 的授權數量。 Microsoft 受管理的電腦時，目前僅支援 64 位元版本的這些應用程式。 
-- **授權名稱**這些應用程式的適當授權名稱如下：
-    - **Microsoft Project** -Project Online 專業版或 Project Online 進階版
-    - **Microsoft Visio** Visio Online 方案 2
-- **公司入口網站**的公司入口網站必須能夠使用租用戶中為您的使用者安裝這些應用程式。 如果公司入口網站不部署在您的租用戶，請參閱 <<c0>的公司入口網站。
+系統管理員應確認其符合下列必要條件：
+- **授權數量**-您的使用者必須能夠使用正確的 microsoft Project 和 microsoft Visio 授權金額。 Microsoft 受管理的桌面目前只支援這些應用程式的64位版本。 
+- **授權名稱**-這些應用程式的適當授權名稱是：
+    - **Microsoft project** -Project Online 專業版或 Project online Premium
+    - **Microsoft visio** -Visio Online 方案2
+- **公司入口網站**-您的租使用者必須具備公司入口網站，您的使用者才可安裝這些應用程式。 如果未在租使用者中部署公司入口網站，請參閱[公司入口網站](company-portal.md)。
 
-## <a name="deploy-project-and-visio-for-microsoft-managed-desktop-devices"></a>部署 Project 和 Visio 版 Microsoft 受管理的電腦裝置
-您提交支援要求之後，Microsoft 受管理的電腦會建立三個 Azure AD 群組和三個應用程式部署透過 Microsoft Intune 部署至您的租用戶的應用程式。  
+## <a name="deploy-project-and-visio-for-microsoft-managed-desktop-devices"></a>部署 Microsoft 受管理桌面裝置的 Project 和 Visio
+在您提交支援要求之後，Microsoft 受管理的桌面會透過 Microsoft Intune 建立三個 Azure AD 群組和三個應用程式部署，以將應用程式部署至您的租使用者。  
 
-**部署 Project 及 Visio**
-1. **支援要求的檔案**IT 系統管理員必須支援服務歸檔，讓這些應用程式可以使用自己的使用者。 連絡 Microsoft 受管理電腦的詳細資訊，請參閱[支援 Microsoft 受管理電腦的系統管理員](../working-with-managed-desktop/admin-support.md)。
-2. **將使用者指派給新的 Azure AD 群組**Microsoft 受管理的電腦會建立租用戶中的 3 Azure AD 群組及 3 對應的應用程式部署。 IT 系統管理員必須將使用者指派給適當的群組。
+**部署 Project 和 Visio**
+1. 檔案**a 支援要求**IT 系統管理員必須將支援要求歸檔，以讓這些應用程式可供使用者使用。 如需聯繫 Microsoft 受管理的電腦的詳細資訊，請參閱[Microsoft Managed desktop 的系統管理支援](../working-with-managed-desktop/admin-support.md)。
+2. **將使用者指派給新的 AZURE AD 群組**Microsoft 受管理的桌面會在您的租使用者和3對應的應用程式部署中建立3個 Azure AD 群組。 IT 系統管理員必須將使用者指派給適當的群組。
 
 >[!NOTE]
->將使用者指派給其中一個 Azure AD 群組。 
+>僅將使用者指派給這些 Azure AD 群組中的其中一個。 
 
-Azure AD 群組名稱 | 若要指派哪個使用者？   
+Azure AD 群組名稱 | 要指派哪些使用者？   
  --- | ---
-Microsoft Office Project 的安裝 | 使用者需要只有專案
-Microsoft Office Visio-安裝 | 需要僅 Visio 的使用者
-Microsoft Office Project 和 Visio 安裝 | 需要 Project 及 Visio 的使用者
+現代辦公 Project_Install | 需要專案的使用者
+現代辦公 Visio_Install | 需要 Visio 的使用者
 
-一旦指派給這些群組，應用程式則可在公司入口網站。 可能需要數分鐘才能同步處理，但然後使用者可以從公司入口網站安裝應用程式。 
+一旦指派給這些群組，便可在公司入口網站中取得應用程式。 可能需要幾分鐘的時間進行同步處理，但是您的使用者可以從公司入口網站安裝應用程式。 
 
-## <a name="communicate-changes"></a>傳達變更
-請務必讓 IT 系統管理員可讓他們知道如何安裝 Project 及 Visio 的使用者。 其中包括： 
-- 提供給他們這些應用程式時，請通知使用者。 
-- 關於如何從公司入口網站安裝這些應用程式的指示。
+## <a name="communicate-changes"></a>交流變更
+讓使用者瞭解如何安裝 Project 和 Visio 很重要。 這包括： 
+- 在這些應用程式可供使用時通知使用者。 
+- 如何從公司入口網站安裝這些應用程式的指示。
 
 >[!NOTE]
->使用者必須關閉所有 Office 應用程式，再從公司入口網站安裝 Microsoft Project 或 Microsoft Visio。 
+>使用者在從公司入口網站安裝 Microsoft Project 或 Microsoft Visio 之前，必須先關閉所有 Office 應用程式。 
