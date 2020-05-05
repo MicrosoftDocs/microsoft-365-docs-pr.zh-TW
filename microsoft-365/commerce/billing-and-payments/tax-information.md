@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: '瞭解在不同地區，您要對 Microsoft 365 for business 訂閱收取多少稅收。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: e65dc15237cb14959a68a7413227cec2a3163d60
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 491c8241d8517d342e04a214d426e937895aab5a
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635001"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708128"
 ---
 # <a name="tax-information"></a>稅務資訊
 
@@ -94,7 +94,7 @@ ms.locfileid: "43635001"
   
 ### <a name="europe-the-middle-east-and-africa-emea"></a>歐洲、中東及非洲 (EMEA)
 
-當您在歐盟地區購買 Office 365 服務時，這項購買會被課徵加值稅 (VAT)。
+當您在歐盟購買 Microsoft 365 服務時，這項採購須繳納加值稅（加值稅）。
   
 - 如果您位於歐盟會員國，並且未提供您的有效當地 VAT 識別碼，Microsoft Ireland Operations Ltd. 就會根據您帳戶設定的帳單國家/地區套用目前的當地 VAT 稅率。
 
@@ -152,9 +152,9 @@ ms.locfileid: "43635001"
 
 ### <a name="north-central-and-south-america"></a>北、中、南美洲
 
-在美國及加拿大，會根據您所在地點適用各種稅率。在波多黎各，則採用當地加值稅 (VAT) 費率。
+在美國及加拿大，會根據您所在地點適用各種稅率。 在波多黎各，則採用當地加值稅 (VAT) 費率。
   
-如果是由 Microsoft Corporation ([請查看您的發票](view-your-bill-or-invoice.md)) 開立您的發票，而您是在美國、加拿大及波多黎各以外的地區註冊 Office 365，則通常不需課稅。
+如果您的帳單是由 Microsoft Corporation （[請參閱您的發票](view-your-bill-or-invoice.md)）所完成，而且您已在美國、加拿大及波多黎各之外註冊 Microsoft 365，則納稅一般不會收費。
 
 ## <a name="how-taxes-are-calculated"></a>如何計算稅金
 

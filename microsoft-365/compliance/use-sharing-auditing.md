@@ -1,5 +1,7 @@
 ---
-title: 稽核共用來找出與外部使用者共用的資源
+title: 使用稽核記錄中的共用稽核
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,139 +15,141 @@ search.appverid:
 - MOE150
 - BCS160
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: '共享是共享点在线和一个业务一个驱动器的关键活动。 管理员现在可以在 Office 365 审核日志中使用共享审核来标识与组织外部用户共享的资源。 '
-ms.openlocfilehash: 48fc1a67f501c807e76ba2333170df83a1248428
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: '「共用」是 SharePoint 線上和商務 OneDrive 的主要活動。 管理員現在可以使用「審核記錄」中的共用審核，來識別與組織外的使用者共用的資源。 '
+ms.openlocfilehash: 63b56831dc5409cc92a0c4a2f4bf002cd268a878
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078265"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626379"
 ---
-# <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>稽核共用來找出與外部使用者共用的資源
+# <a name="use-sharing-auditing-in-the-audit-log"></a>使用稽核記錄中的共用稽核
 
-共享是 SharePoint 在线和 OneDrive 业务中的一项关键活动，在 Office 365 组织中广泛使用。 管理员可以在 Office 365 审核日志中使用共享审核来确定在其组织中如何使用共享。 
+「共用」是 SharePoint 線上和商務 OneDrive 中的主要活動，在組織中十分廣泛使用。 管理員可以在審核記錄中使用共用審核，以決定組織中共用的使用方式。 
   
-## <a name="the-sharepoint-sharing-schema"></a>共享点共享架构
+## <a name="the-sharepoint-sharing-schema"></a>SharePoint 共用架構
 
-共享事件（不包括与共享策略和共享链接相关的事件）以一种主要方式与文件和文件夹相关事件不同：一个用户正在执行对另一个用户有影响的操作。 例如，当资源用户 A 授予用户 B 对文件的访问权限时。 在此示例中，用户 A 是*代理用户，* 用户 B 是*目标用户。* 在 SharePoint 文件架构中，代理用户的操作仅影响文件本身。 当用户 A 打开文件时，"**文件访问"** 事件中所需的唯一信息是代理用户。 为了解决这种差异，有一个单独的架构，称为*SharePoint 共享架构，* 用于捕获有关共享事件的详细信息。 这可确保管理员能够了解共享资源的人员以及共享资源的用户。 
+共用事件（不包括與共享原則及共用連結相關的事件）的方式與檔案和資料夾相關的事件有一個主要作用：一個使用者執行的動作會對另一個使用者造成影響。 例如，當資源使用者 A 給使用者 B 存取檔時。 在此範例中，使用者 A 是*作用*中的使用者，而使用者 B 是*目標使用者*。 在 SharePoint 檔案架構中，作用中使用者的動作只會影響檔本身。 當使用者 A 開啟檔案時， **FileAccessed**事件所需的唯一資訊就是作用中的使用者。 若要解決這種差異，有一個稱為「 *SharePoint 共用架構*」的不同架構，可捕獲共用事件的詳細資訊。 這可確保系統管理員可以查看共用資源和共用資源之使用者的人員。 
   
-共享架构在审核记录中提供了与共享事件相关的两个附加字段： 
+共用架構會在與共享事件相關的審計記錄中提供兩個額外的欄位： 
   
-- **目标用户或组类型：** 标识目标用户或组是成员、来宾、SharePoint 组、安全组还是合作伙伴。
+- **TargetUserOrGroupType：** 識別目標使用者或群組是成員、來賓、SharePointGroup、SecurityGroup 或 Partner。
 
-- **目标用户或组名称：** 存储与资源共享的资源的目标用户或组（上例中的用户 B）的 UPN 或名称。 
+- **TargetUserOrGroupName：** 儲存與其共用資源之目標使用者或群組的 UPN 或名稱（上一個範例中的使用者 B）。 
 
-除了 Office 365 审核日志架构（如"用户、操作"和"日期"）中的其他属性外，这两个字段还可以讲述*有关哪些*用户与*谁*共享*哪些*资源以及*何时*共享资源的完整故事。 
+除了來自審計記錄架構（如 User、 *Operation 及 Date*）以外的其他屬性之外，這兩個欄位也可告訴您完整的*情景，告訴*您*哪些*使用者已*與其共用哪個*資源。 
   
-还有另一个架构属性对共享故事很重要。 导出审核日志搜索结果时，导出的 CSV 文件中的**AuditData**列会存储有关共享事件的信息。 例如，当用户与另一个用户共享网站时，这是通过将目标用户添加到 SharePoint 组来实现的。 "**审核数据"** 列捕获此信息，为管理员提供上下文。 有关如何分析**AuditData**列中的信息的说明，请参阅[步骤 2。](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log)
+還有另一個架構屬性非常重要的共用案例。 當您匯出審計記錄檔搜尋結果時，匯出之 CSV 檔案中的 [ **AuditData** ] 欄會儲存共用事件的相關資訊。 例如，當使用者與其他使用者共用網站時，可將目標使用者新增至 SharePoint 群組來完成。 **AuditData**欄會捕獲此資訊，以提供系統管理員的上下文。 請參閱[步驟 2](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log)以取得如何在**AuditData** ] 欄中剖析資訊的指示。
 
-## <a name="sharepoint-sharing-events"></a>共享点共享事件
+## <a name="sharepoint-sharing-events"></a>共用事件 SharePoint
 
-共享由用户（*代理*用户）希望与其他用户（*目标*用户）共享资源时定义。 与与外部用户共享资源相关的审核记录（组织外部且在组织的 Azure 活动目录中没有来宾帐户的用户）由以下事件标识，这些事件记录在 Office 365 中审核日志：
+共用是由使用者 *（使用者）* 要與其他使用者（*目標*使用者）共用資源時定義。 與外部使用者共用資源的審計記錄（組織外部的使用者，且在組織的 Azure Active Directory 中沒有來賓帳戶），會由下列事件識別，這些事件會記錄在審計記錄檔中：
 
-- **共享邀请已创建：** 组织中的用户尝试与外部用户共享资源（可能是站点）。 这将导致向目标用户发送外部共享邀请。 此时不授予对资源的访问权限。
+- **SharingInvitationCreated：** 您組織中的使用者嘗試與外部使用者共用資源（可能是網站）。 這會產生外部共用邀請傳送給目標使用者。 此時不會授與資源的存取權。
 
-- **共享邀请接受：** 外部用户已接受代理用户发送的共享邀请，现在有权访问该资源。
+- **SharingInvitationAccepted：** 外部使用者已接受由行動使用者傳送的共用邀請，而且現在可以存取該資源。
 
-- **匿名链接已创建：** 为资源创建匿名链接（也称为"任何人"链接）。 由于可以创建匿名链接，然后复制匿名链接，因此可以合理地假定具有匿名链接的任何文档都已与目标用户共享。
+- **AnonymousLinkCreated：** 為資源建立匿名連結（也稱為「任何人」連結）。 因為匿名連結可以建立並複製，所以假設具有匿名連結的任何檔都已與目標使用者共用。
 
-- **匿名链接已使用：** 顾名思义，当使用匿名链接访问资源时，将记录此事件。 
+- **AnonymousLinkUsed：** 顧名思義，當使用匿名連結存取資源時，會記錄此事件。 
 
-- **已创建安全链接：** 用户已创建"特定人员链接"，以便与特定人员共享资源。 此目标用户可能是组织外部的人员。 与资源共享的人员**在"添加到安全链接"** 事件的审核记录中标识。 这两个事件的时间戳几乎相同。
+- **SecureLinkCreated：** 使用者已建立「特定人員連結」，以與特定人員共用資源。 這個目標使用者可能是您組織外部的人員。 共用資源的人員會在**AddedToSecureLink**事件的「審計」記錄中識別。 這兩個事件的時間戳記幾乎相同。
 
-- **添加到安全链接：** 用户已添加到特定人员链接。 在此事件中**使用"目标用户或组名"** 字段来标识添加到相应特定人员链接的用户。 此目标用户可能是组织外部的人员。
+- **AddedToSecureLink：** 已將使用者新增至特定人員連結。 使用此事件中的 [ **TargetUserOrGroupName** ] 欄位來識別新增至對應的 [特定人員] 連結的使用者。 這個目標使用者可能是您組織外部的人員。
 
-## <a name="sharing-auditing-work-flow"></a>共享审核工作流
+## <a name="sharing-auditing-work-flow"></a>共用審核工作流程
   
-当用户（代理用户）希望与其他用户（目标用户）共享资源时，SharePoint（或企业 OneDrive）首先检查目标用户的电子邮件地址是否已与组织目录中的用户帐户关联。 如果目标用户位于目录中（并且具有相应的来宾用户帐户），则 SharePoint 执行以下操作：
+當使用者（作用中使用者）想要與另一個使用者（目標使用者）共用資源時，SharePoint （或 OneDrive 商務）先檢查目標使用者的電子郵件地址是否已與組織目錄中的使用者帳戶相關聯。 若目標使用者在目錄中（且具有相對應的來賓使用者帳戶），SharePoint 會執行下列動作：
   
--  通过将目标用户添加到相应的 SharePoint 组，立即分配目标用户访问资源的权限，并**记录"添加到组"** 事件。 
+-  將目標使用者新增至適當的 SharePoint 群組，然後記錄**AddedToGroup**事件，立即指派目標使用者的許可權以存取資源。 
     
-- 向目标用户的电子邮件地址发送共享通知。
+- 將共用通知傳送至目標使用者的電子郵件地址。
     
-- 记录**共享集**事件。 此事件在审核日志搜索工具的活动选取器**中的"共享**文件、文件夹或站点"下具有"共享文件、文件夹或站点"的友好名称。 请参阅[步骤 1](#step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file)中的屏幕截图。 
+- 記錄**SharingSet**事件。 在「審核記錄搜尋」工具的 [活動] 中，此事件的「共用檔、資料夾或網站」的易記名稱是「共用」**和「存取權要求**」。 請參閱[步驟 1](#step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file)中的螢幕擷取畫面。 
     
-如果目标用户的用户帐户不在目录中，SharePoint 将执行以下操作： 
+若目標使用者的使用者帳戶不在目錄中，SharePoint 會執行下列作業： 
     
-   - 根据资源的共享方式记录以下事件之一：
+   - 根據共用資源的方式，記錄下列其中一項事件：
    
-      - **匿名链接已创建**
+      - **AnonymousLinkCreated**
    
-      - **已创建安全链接**
+      - **SecureLinkCreated**
    
-      - **添加到安全链接** 
+      - **AddedToSecureLink** 
 
-      - **共享邀请已创建**（仅当共享资源是站点时，才会记录此事件）
+      - **SharingInvitationCreated** （只有共用資源是網站時才會記錄此事件）
     
-   - 当目标用户接受发送给他们的共享邀请时（通过单击邀请中的链接），SharePoint 会记录**共享邀请接受**事件，并分配目标用户访问资源的权限。 如果向目标用户发送匿名链接，则在目标用户使用该链接访问资源后，将记录**匿名链接事件。** 对于安全链接，当外部用户使用链接访问资源时，将记录**FileAccess 事件。**
+   - 當目標使用者接受傳送給他們的共用邀請（按一下邀請中的連結）時，SharePoint 會記錄**SharingInvitationAccepted**事件，並指派目標使用者許可權來存取資源。 若目標使用者已傳送匿名連結，則會在目標使用者使用連結存取資源之後記錄**AnonymousLinkUsed**事件。 針對安全連結，當外部使用者使用連結存取資源時，會記錄**FileAccessed**事件。
 
-还会记录有关目标用户的其他信息，例如邀请对象的用户的身份和接受邀请的用户的身份。 在某些情况下，这些用户（或电子邮件地址）可能不同。 
+也會記錄有關目標使用者的其他資訊，例如邀請的使用者識別碼，以及接受邀請的使用者。 在某些情況下，這些使用者（或電子郵件地址）可能會不同。 
 
-## <a name="how-to-identify-resources-shared-with-external-users"></a>如何识别与外部用户共享的资源
+## <a name="how-to-identify-resources-shared-with-external-users"></a>如何識別與外部使用者共用的資源
 
-管理员的一个常见要求是创建与组织外部用户共享的所有资源的列表。 通过在 Office 365 中使用共享审核，管理员可以生成此列表。 方法如下。
+管理員的常見需求是建立與組織外部使用者共用的所有資源清單。 在 Office 365 中使用共用審核，管理員可以產生此清單。 方法如下。
   
-### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>步骤 1：搜索共享事件并将结果导出到 CSV 文件
+### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>步驟1：搜尋共用事件，並將結果匯出至 CSV 檔案
 
-第一步是搜索 Office 365 审核日志以查找共享事件。 有关搜索审核日志的详细信息（包括所需的权限），请参阅[在安全&合规性中心中搜索审核日志。](search-the-audit-log-in-security-and-compliance.md)
+第一步是在審核記錄中搜尋共用事件。 如需有關搜尋審核記錄檔的詳細資訊（包括所需的許可權），請參閱在[安全性 & 規範中心搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。
   
-1. 移至 [https://protection.office.com](https://protection.office.com)。
+1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用公司或學校帳戶登入 Office 365。
+2. 使用您的公司或學校帳戶登入。
     
-3. 在"安全&合规性中心"的左侧窗格中，**单击"搜索**  > **审核日志搜索"。**
+3. 在安全性與合規性中心的左窗格中，按一下 [搜尋]****   >  [稽核記錄搜尋]****。
     
-    将显示**审核日志搜索**页。 
+    [稽核記錄搜尋]**** 頁面隨即顯示。 
     
-4. 在"**活动"** 下，**单击"共享"和"访问请求活动"** 以搜索与共享相关的事件。 
+4. 在 [**活動**] 底下，按一下 [**共用和存取要求活動**] 以搜尋共用相關事件。 
     
-    ![在"活动"下，选择"共享和访问请求活动"](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+    ![在 [活動] 底下，選取 [共用和存取要求活動]](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
-5.  选择日期和时间范围以查找该时间段内发生的共享事件。 
+5.  選取 [日期和時間範圍]，以尋找在該期間內發生的共用事件。 
     
-6. **单击"搜索"** 以运行搜索。 
+6. 按一下 [**搜尋**] 以執行搜尋。 
     
-7. 当搜索完成运行并显示结果时，**单击"导出结果**\>**下载所有结果"。**
+7. 當搜尋執行完畢並顯示結果之後，按一下 [**匯出結果** \> ]**下載所有結果**。
     
-    选择导出选项后，窗口底部的一条消息将提示您打开或保存 CSV 文件。
+    選取 [匯出] 選項之後，視窗底部的訊息會提示您開啟或儲存 CSV 檔案。
     
-8. **单击"另存**\>**为"，** 将 CSV 文件保存到本地计算机上的文件夹中。 
+8. 按一下 [**另** \> **存新檔]，將**CSV 檔案儲存至本機電腦上的資料夾。 
 
-### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>第 2 步：使用 PowerQuery 编辑器格式化导出的审核日志
+### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>步驟2：使用 PowerQuery 編輯器格式化匯出的審計記錄檔
 
-下一步是使用 Excel 中的电源查询编辑器中的 JSON 转换功能将**AuditData**列中的每个属性（由多属性 JSON 对象组成）拆分为自己的列。 这允许您筛选列以查看与共享相关的记录
+下一步是在 Excel 的 Power Query 編輯器中使用 JSON 轉換功能，將**AuditData**欄（包含多屬性 JSON 物件）中的每個屬性分割成自己的資料行。 這可讓您篩選欄，以查看與共享相關的記錄
 
-有关分步说明，请参阅"步骤 2：使用 Power 查询编辑器格式化导出的审核[日志"，请参阅导出、配置和查看审核日志记录。](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor)
+如需逐步指示，請參閱[Export、configure 及 view a audit log 記錄](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor)中的「步驟2：使用 Power Query Editor 格式化匯出的審計記錄檔」。
 
-### <a name="step-3-filter-the-csv-file-for-resources-shared-with-external-users"></a>步骤 3：筛选 CSV 文件，以便与外部用户共享资源
+### <a name="step-3-filter-the-csv-file-for-resources-shared-with-external-users"></a>步驟3：篩選 CSV 檔案以取得與外部使用者共用的資源
 
-下一步是筛选以前在[SharePoint 共享事件](#sharepoint-sharing-events)部分中描述的不同共享相关事件的 CSV。 或者，您可以**筛选"目标用户或组类型"** 列以显示此属性的值为**来宾**的所有记录。 
+下一步是篩選 CSV，以取得先前在「 [SharePoint 共用事件](#sharepoint-sharing-events)」區段中所述的不同共用相關事件。 或者，您也可以篩選**TargetUserOrGroupType**欄，以顯示此屬性的值為**Guest**的所有記錄。 
 
-按照上一步中的说明使用 PowerQuery 编辑器准备 CSV 文件后，请执行以下操作：
+在您遵循上一個步驟中的指示，使用 PowerQuery 編輯器準備 CSV 檔案之後，請執行下列操作：
     
-1. 打开您在步骤 2 中创建的 Excel 文件。 
+1. 開啟您在步驟2中建立的 Excel 檔案。 
 
-2. 在"**主页"** 选项卡上，**单击"排序&筛选器，** 然后单击"**筛选"。**
+2. 在 [**首頁**] 索引標籤上，按一下 [**排序 & 篩選**]，然後按一下 [**篩選**]。
     
-3. **在"操作"** 列的"**排序&筛选器"** 下拉列表中，清除所有选择，然后选择以下一个或多个与共享相关的事件，然后单击"**确定**"。
+3. 在 [**作業**] 欄上的 [**排序 & 篩選**] 下拉式清單中，清除所有選取專案，然後選取下列一或多個與共享相關的事件，然後按一下 **[確定]**。
  
-   - **共享邀请已创建**
+   - **SharingInvitationCreated**
    
-   - **匿名链接已创建**
+   - **AnonymousLinkCreated**
    
-   - **已创建安全链接**
+   - **SecureLinkCreated**
    
-   - **添加到安全链接** 
+   - **AddedToSecureLink** 
     
-    Excel 显示所选事件的行。
+    Excel 會顯示您所選取之事件的列。
     
-4. 转到**名为"目标用户或组类型"** 的列并选择它。 
+4. 移至名為**TargetUserOrGroupType**的欄，並選取它。 
     
-5. 在"**排序&筛选器下**拉列表中，清除所有选择，然后**选择"目标用户或组类型：来宾"，** 然后单击"**确定"。**
+5. 在 [**排序 & 篩選**] 下拉式清單中，清除所有選取專案，然後選取 [ **TargetUserOrGroupType：來賓**]，然後按一下 **[確定]**。
     
-    现在，Excel 显示用于共享事件的行和目标用户在组织之外的位置，因为外部用户由**值"目标用户"或"类型：来宾"** 标识。 
+    現在，Excel 會顯示共用事件所在的列，以及目標使用者在您組織外部的位置，因為**TargetUserOrGroupType：來賓**的值會識別外部使用者。 
   
 > [!TIP]
-> 对于显示的审核**记录，"ObjectId"** 列标识与目标用户共享的资源;对于"目标 Id"列，将标识与目标用户共享的资源。例如`ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
+> 對於顯示的審計記錄，[ **ObjectId** ] 欄位會識別與目標使用者共用的資源;例如`ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`。
