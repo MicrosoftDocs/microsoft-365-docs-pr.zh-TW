@@ -1,5 +1,5 @@
 ---
-title: 使用相關性模組來辨識項中分析資料
+title: 使用相關性模組分析證據中的資料
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,131 +15,132 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 0b6c42f594ef10c868051d81b0a7ea4b7ff84e00
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 瞭解關聯性模組如何使用相關性工作流程的描述，以及資料調查（預覽）中的訓練步驟，來分析證據中的資料。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 10b05d4d648bc781a2ec1c7ff8a35d5e82583c55
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080610"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034485"
 ---
-# <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a><span data-ttu-id="a7b1b-102">使用相關性模組來辨識項中分析資料</span><span class="sxs-lookup"><span data-stu-id="a7b1b-102">Use the Relevance module to analyze data in evidence</span></span>
+# <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a><span data-ttu-id="e69af-103">使用相關性模組分析證據中的資料</span><span class="sxs-lookup"><span data-stu-id="e69af-103">Use the Relevance module to analyze data in evidence</span></span>
 
-<span data-ttu-id="a7b1b-103">在 [資料調查 （預覽），相關性模組包含相關性訓練與 < review of 調查相關檔案。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-103">In Data Investigations (Preview), the Relevance module includes the Relevance training and review of files related to an investigation.</span></span> <span data-ttu-id="a7b1b-104">相關性工作流程會顯示，並說明如下：</span><span class="sxs-lookup"><span data-stu-id="a7b1b-104">The Relevance workflow is shown and described as follows:</span></span>
+<span data-ttu-id="e69af-104">在 [資料調查（預覽）] 中，相關性模組包含與調查相關的相關性訓練和評論。</span><span class="sxs-lookup"><span data-stu-id="e69af-104">In Data Investigations (Preview), the Relevance module includes the Relevance training and review of files related to an investigation.</span></span> <span data-ttu-id="e69af-105">相關性工作流程的顯示和描述如下：</span><span class="sxs-lookup"><span data-stu-id="e69af-105">The Relevance workflow is shown and described as follows:</span></span>
   
 ![相關性工作流程](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
-- <span data-ttu-id="a7b1b-106">**循環的評估和追蹤**：</span><span class="sxs-lookup"><span data-stu-id="a7b1b-106">**Cycles of assessment and tracking**:</span></span>
+- <span data-ttu-id="e69af-107">**評估和追蹤週期**：</span><span class="sxs-lookup"><span data-stu-id="e69af-107">**Cycles of assessment and tracking**:</span></span>
     
-  - <span data-ttu-id="a7b1b-107">**評估**： 啟用檔案的隨機樣本為基礎的早期評估，並使用此評定套用決策，以決定預測的程式碼撰寫程序的效能。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-107">**Assessment**: Enables early assessment based on a random sample of files and uses this assessment to apply decisions to determine the performance of the predictive coding process.</span></span> 
+  - <span data-ttu-id="e69af-108">**評估**：根據隨機檔案範例來啟用早期評估，並使用這項評估套用決策，以判斷預測編碼程式的效能。</span><span class="sxs-lookup"><span data-stu-id="e69af-108">**Assessment**: Enables early assessment based on a random sample of files and uses this assessment to apply decisions to determine the performance of the predictive coding process.</span></span> 
     
-  - <span data-ttu-id="a7b1b-108">**追蹤**： 計算並顯示過渡同時監視程序的統計有效性的評估結果。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-108">**Track**: Calculate and display interim results of the assessment while monitoring statistical validity of the process.</span></span> 
+  - <span data-ttu-id="e69af-109">**追蹤**：在監控程式的統計有效性時，計算及顯示評估的過渡結果。</span><span class="sxs-lookup"><span data-stu-id="e69af-109">**Track**: Calculate and display interim results of the assessment while monitoring statistical validity of the process.</span></span> 
     
-- <span data-ttu-id="a7b1b-109">**循環的訓練與追蹤**</span><span class="sxs-lookup"><span data-stu-id="a7b1b-109">**Cycles of training and tracking**</span></span>
+- <span data-ttu-id="e69af-110">**訓練和追蹤週期**</span><span class="sxs-lookup"><span data-stu-id="e69af-110">**Cycles of training and tracking**</span></span>
     
-  - <span data-ttu-id="a7b1b-110">**標記**： 資料調查 （預覽） 可學習相關性準則專屬於根據專家的反覆運算檢閱每一項問題和標記的個別的檔案。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-110">**Tag**: Data Investigations (Preview) learns Relevance criteria specific to each issue based on the expert's iterative review and tagging of individual files.</span></span>
+  - <span data-ttu-id="e69af-111">**標記**：資料調查（預覽）會透過專家的重複檢查和個別檔案的標記，瞭解每個問題特有的相關準則。</span><span class="sxs-lookup"><span data-stu-id="e69af-111">**Tag**: Data Investigations (Preview) learns Relevance criteria specific to each issue based on the expert's iterative review and tagging of individual files.</span></span>
     
-  - <span data-ttu-id="a7b1b-111">**追蹤**： 計算並顯示過渡結果的相關性訓練，同時監視程序的統計的有效性。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-111">**Track**: Calculate and display interim results of the Relevance training while monitoring statistical validity of the process.</span></span> 
+  - <span data-ttu-id="e69af-112">**追蹤**：在監控程式的統計有效性時，計算及顯示相關性訓練的過渡結果。</span><span class="sxs-lookup"><span data-stu-id="e69af-112">**Track**: Calculate and display interim results of the Relevance training while monitoring statistical validity of the process.</span></span> 
     
-- <span data-ttu-id="a7b1b-112">**批次計算**： 累積和學相關性準則套用至整個檔案集合，並為每個檔案產生相關性分數。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-112">**Batch calculation**: The accumulated and learned Relevance criteria is applied to the entire file collection, and a Relevance score is generated for each file.</span></span>
+- <span data-ttu-id="e69af-113">**批次計算**：對整個檔集合套用累計和已知的相關準則，並為每個檔案產生相關性分數。</span><span class="sxs-lookup"><span data-stu-id="e69af-113">**Batch calculation**: The accumulated and learned Relevance criteria is applied to the entire file collection, and a Relevance score is generated for each file.</span></span>
     
-- <span data-ttu-id="a7b1b-113">**決定**： 套用至整個案例分析的結果會顯示批次計算後，並且會顯示用來決定文件檢閱資料。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-113">**Decide**: The results of the analysis applied to the entire case is displayed after Batch calculation, and data used to make document review decisions is displayed.</span></span>
+- <span data-ttu-id="e69af-114">**決定**：在批次計算後會顯示套用至整個案例的分析結果，並顯示用於進行檔檢查決策的資料。</span><span class="sxs-lookup"><span data-stu-id="e69af-114">**Decide**: The results of the analysis applied to the entire case is displayed after Batch calculation, and data used to make document review decisions is displayed.</span></span>
     
-- <span data-ttu-id="a7b1b-114">**測試**： 可以測試結果，以確認資料調查 （預覽） 處理程序的效率的有效性。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-114">**Test**: Results can be tested to verify the validity and effectiveness of the Data Investigations (Preview) processing.</span></span>
+- <span data-ttu-id="e69af-115">**測試**：可以測試結果，以驗證資料調查（預覽）處理的有效性和有效性。</span><span class="sxs-lookup"><span data-stu-id="e69af-115">**Test**: Results can be tested to verify the validity and effectiveness of the Data Investigations (Preview) processing.</span></span>
 
-- <span data-ttu-id="a7b1b-115">**搜尋**： 相關性工作流程完成後，您可以使用例如讀取百分位數的文件的輸出為您的問題當您執行查詢時您工作集內。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-115">**Search**: Once the Relevance workflow is complete, you can use the output such as read percentile of a document for your issue when you run a query within your working set.</span></span>
+- <span data-ttu-id="e69af-116">**搜尋**：完成相關性工作流程之後，您可以在您的工作集中執行查詢時，針對您的問題，使用此輸出（如，讀取檔的百分點）。</span><span class="sxs-lookup"><span data-stu-id="e69af-116">**Search**: Once the Relevance workflow is complete, you can use the output such as read percentile of a document for your issue when you run a query within your working set.</span></span>
     
-## <a name="guidelines-for-relevance-training-and-review"></a><span data-ttu-id="a7b1b-116">相關性訓練及檢閱指導方針</span><span class="sxs-lookup"><span data-stu-id="a7b1b-116">Guidelines for Relevance training and review</span></span>
+## <a name="guidelines-for-relevance-training-and-review"></a><span data-ttu-id="e69af-117">相關訓練和評論的指導方針</span><span class="sxs-lookup"><span data-stu-id="e69af-117">Guidelines for Relevance training and review</span></span>
 
-<span data-ttu-id="a7b1b-117">下列是概觀相關性訓練及檢閱指導方針：</span><span class="sxs-lookup"><span data-stu-id="a7b1b-117">Following is an overview of guidelines for Relevance training and review:</span></span>
+<span data-ttu-id="e69af-118">以下是有關關聯性訓練和審查的指導方針：</span><span class="sxs-lookup"><span data-stu-id="e69af-118">Following is an overview of guidelines for Relevance training and review:</span></span>
   
-- <span data-ttu-id="a7b1b-118">**錯誤與不一致**： 如果標記錯誤所做的訓練期間，傳回以更正這些舊檔案範例。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-118">**Errors and inconsistencies**: If tagging errors are made during training, return to previous file samples to correct them.</span></span> <span data-ttu-id="a7b1b-119">如果有太多錯誤更正或沒有的情況下，或是此問題： 新觀點來看，應重新定義相關性準則，由系統管理員，且相關性訓練重新啟動。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-119">If there are too many errors to correct or there is a new perspective of the case or issue, the Relevance criteria should be redefined by the Administrator, and the Relevance training restarted.</span></span>
+- <span data-ttu-id="e69af-119">**錯誤和不一致**：如果在訓練期間進行標記錯誤，請回到先前的檔案範例以修正這些錯誤。</span><span class="sxs-lookup"><span data-stu-id="e69af-119">**Errors and inconsistencies**: If tagging errors are made during training, return to previous file samples to correct them.</span></span> <span data-ttu-id="e69af-120">如果有太多錯誤無法修正，或是案例或問題的新觀點，應由系統管理員重新定義相關性準則，並重新啟動相關性訓練。</span><span class="sxs-lookup"><span data-stu-id="e69af-120">If there are too many errors to correct or there is a new perspective of the case or issue, the Relevance criteria should be redefined by the Administrator, and the Relevance training restarted.</span></span>
     
-- <span data-ttu-id="a7b1b-120">**標記和訓練**：</span><span class="sxs-lookup"><span data-stu-id="a7b1b-120">**Tagging and training**:</span></span> 
+- <span data-ttu-id="e69af-121">**標記與訓練**：</span><span class="sxs-lookup"><span data-stu-id="e69af-121">**Tagging and training**:</span></span> 
     
-  - <span data-ttu-id="a7b1b-121">檔案應該根據內容才標記。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-121">Files should be tagged based on content only.</span></span> <span data-ttu-id="a7b1b-122">執行動作時，不會考慮中繼資料，例如 custodian、 日期或檔案路徑。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-122">Do not consider metadata, such as custodian, date, or file path.</span></span> 
+  - <span data-ttu-id="e69af-122">檔案應該以只以內容為基礎的標記。</span><span class="sxs-lookup"><span data-stu-id="e69af-122">Files should be tagged based on content only.</span></span> <span data-ttu-id="e69af-123">請勿考慮中繼資料，例如保管人、date 或 file path。</span><span class="sxs-lookup"><span data-stu-id="e69af-123">Do not consider metadata, such as custodian, date, or file path.</span></span> 
     
-  - <span data-ttu-id="a7b1b-123">執行動作時，考慮日期範圍表示在文字中的標記檔案。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-123">Do not consider date range indications in the text when tagging files.</span></span>
+  - <span data-ttu-id="e69af-124">在標記檔案時，請勿考慮文字中的日期範圍指示。</span><span class="sxs-lookup"><span data-stu-id="e69af-124">Do not consider date range indications in the text when tagging files.</span></span>
     
-  - <span data-ttu-id="a7b1b-124">當標記檔案不認為內嵌圖形的映像。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-124">Do not consider embedded graphical images when tagging files.</span></span>
+  - <span data-ttu-id="e69af-125">在標記檔案時，請勿考慮內嵌的圖形影像。</span><span class="sxs-lookup"><span data-stu-id="e69af-125">Do not consider embedded graphical images when tagging files.</span></span>
      
-  - <span data-ttu-id="a7b1b-125">忽略中 [文字] 檢視中顯示的檔案內容相關性中移除套用至相關性文字。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-125">Ignore text applied to Relevance will be removed in the displayed file content in the text view in Relevance.</span></span> <span data-ttu-id="a7b1b-126">如果略過的文字的值已定義相關性訓練已啟動後，新略過的文字將套用到從其已定義的點建立的範例檔案。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-126">If the values for Ignore text were defined after Relevance training already started, the new ignored text will be applied to sample files created from the point in which it was defined.</span></span> <span data-ttu-id="a7b1b-127">略過文字使用的功能應該謹慎，其使用可能會降低檔案分析的效能</span><span class="sxs-lookup"><span data-stu-id="a7b1b-127">The Ignore Text feature should be used cautiously, as its use may reduce the performance of file analysis</span></span>
+  - <span data-ttu-id="e69af-126">請忽略套用至相關性的文字將會從相關性的文字視圖中的顯示檔內容中移除。</span><span class="sxs-lookup"><span data-stu-id="e69af-126">Ignore text applied to Relevance will be removed in the displayed file content in the text view in Relevance.</span></span> <span data-ttu-id="e69af-127">如果在相關性訓練已經開始之後定義了 Ignore text 的值，則會將新的忽略文字套用到從定義的點所建立的範例檔案。</span><span class="sxs-lookup"><span data-stu-id="e69af-127">If the values for Ignore text were defined after Relevance training already started, the new ignored text will be applied to sample files created from the point in which it was defined.</span></span> <span data-ttu-id="e69af-128">您應謹慎使用「忽略文字」功能，因為其使用可能會降低檔分析的效能</span><span class="sxs-lookup"><span data-stu-id="e69af-128">The Ignore Text feature should be used cautiously, as its use may reduce the performance of file analysis</span></span>
     
-  - <span data-ttu-id="a7b1b-128">使用 [**略過標記**] 選項僅在必要時。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-128">Use the **Skip tagging** option only when necessary.</span></span> <span data-ttu-id="a7b1b-129">略過的檔案上資料調查 （預覽） 不會不訓練根據。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-129">Data Investigations (Preview) does not train based on skipped files.</span></span> <span data-ttu-id="a7b1b-130">在評估，如果很難判斷檔案是否相關，最好是標記為 Relevant (R) 或不相關 （編號） 儘而不是選取 [**略過**。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-130">In assessment, if it's hard to tell whether a file is relevant, it is better to tag as Relevant (R) or Not relevant (NR) whenever possible rather than selecting **Skip**.</span></span> <span data-ttu-id="a7b1b-131">當資料調查 （預覽） 評估訓練時，然後才能看到它如何妥善處理這些類型的檔案。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-131">When Data Investigations (Preview) evaluates training, it can then be seen how well these types of files were processed.</span></span>
+  - <span data-ttu-id="e69af-129">只有在必要時才使用 [**略過標記**] 選項。</span><span class="sxs-lookup"><span data-stu-id="e69af-129">Use the **Skip tagging** option only when necessary.</span></span> <span data-ttu-id="e69af-130">資料調查（預覽）不會根據略過的檔案進行訓練。</span><span class="sxs-lookup"><span data-stu-id="e69af-130">Data Investigations (Preview) does not train based on skipped files.</span></span> <span data-ttu-id="e69af-131">在評估中，如果您很難辨別檔案是否相關，請盡可能將其標記為相關（R）或不相關（NR），而不是選取 [**略過**]。</span><span class="sxs-lookup"><span data-stu-id="e69af-131">In assessment, if it's hard to tell whether a file is relevant, it is better to tag as Relevant (R) or Not relevant (NR) whenever possible rather than selecting **Skip**.</span></span> <span data-ttu-id="e69af-132">當資料調查（預覽）評估訓練時，可看到這些檔案類型的處理方式。</span><span class="sxs-lookup"><span data-stu-id="e69af-132">When Data Investigations (Preview) evaluates training, it can then be seen how well these types of files were processed.</span></span>
     
-  - <span data-ttu-id="a7b1b-132">具有很少量的擷取文字偶數檔案應該標記中為 R/編號，而非 「 略過 」，儘可能的訓練。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-132">Even files with a very small amount of extracted text should be tagged in training as R/NR, rather than as "Skip", when possible.</span></span> 
+  - <span data-ttu-id="e69af-133">即便是具有極少量解壓縮文字的檔案，也應該在訓練中以 R/NR 的身分標記，而不是以「略過」標記（如有可能）。</span><span class="sxs-lookup"><span data-stu-id="e69af-133">Even files with a very small amount of extracted text should be tagged in training as R/NR, rather than as "Skip", when possible.</span></span> 
     
-  - <span data-ttu-id="a7b1b-133">標記可能會影響類別器，只要檔案是可讀取，並且可以標示為 R/編號。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-133">Tagging can impact the classifier as long as the file is readable and can be tagged as R/NR.</span></span>
+  - <span data-ttu-id="e69af-134">標籤會影響分類器，只要該檔案可擦讀且可以標示為 R/NR。</span><span class="sxs-lookup"><span data-stu-id="e69af-134">Tagging can impact the classifier as long as the file is readable and can be tagged as R/NR.</span></span>
     
-  - <span data-ttu-id="a7b1b-134">在 [**標籤**] 索引標籤上顯示範例檔案清單上的檔案順序編號可讓使用者返回原始檔的顯示順序。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-134">The file sequence number on the displayed Sample files list on the **Tag** tab allows the user to return to the original displayed order of the files.</span></span> 
+  - <span data-ttu-id="e69af-135">**[標籤] 索引**標籤上的 [顯示的範例檔案] 清單中的檔順序編號可讓使用者回到檔案的原始顯示順序。</span><span class="sxs-lookup"><span data-stu-id="e69af-135">The file sequence number on the displayed Sample files list on the **Tag** tab allows the user to return to the original displayed order of the files.</span></span> 
     
-  - <span data-ttu-id="a7b1b-135">您可以回到任何範例，並變更的評估標記和訓練設定檔案。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-135">You can go back to any sample and change the tagging of the assessment and training set files.</span></span> <span data-ttu-id="a7b1b-136">建立下一個範例時，將會套用所做的變更。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-136">The changes will be applied when creating the next sample.</span></span>
+  - <span data-ttu-id="e69af-136">您可以回到任何範例，並變更評估與訓練集檔的標記。</span><span class="sxs-lookup"><span data-stu-id="e69af-136">You can go back to any sample and change the tagging of the assessment and training set files.</span></span> <span data-ttu-id="e69af-137">建立下一個範例時，會套用這些變更。</span><span class="sxs-lookup"><span data-stu-id="e69af-137">The changes will be applied when creating the next sample.</span></span>
     
-  - <span data-ttu-id="a7b1b-137">掃描的 Excel 以 PDF 格式的檔案應被視為相同原生的 Excel 檔案時標記檔案。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-137">Scanned Excel files in PDF format should be treated the same as native Excel files when tagging files.</span></span>
+  - <span data-ttu-id="e69af-138">以 PDF 格式掃描的 Excel 檔案，在標記檔案時，應與原生 Excel 檔案相同。</span><span class="sxs-lookup"><span data-stu-id="e69af-138">Scanned Excel files in PDF format should be treated the same as native Excel files when tagging files.</span></span>
     
-  - <span data-ttu-id="a7b1b-138">在 [相關檔案相關性標記有疑問，請洽詢專家。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-138">When in doubt regarding the Relevance tagging of a file, consult an expert.</span></span> <span data-ttu-id="a7b1b-139">不正確的標記相關性訓練期間可能會導致遺失時間稍後的程序與在整體結果的品質也可能會造成負面影響。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-139">Incorrect tagging during the Relevance training can lead to lost time later in the process and may also have a negative impact on the quality of the overall results.</span></span>
+  - <span data-ttu-id="e69af-139">當您對檔案的相關性標記不確定時，請諮詢專家。</span><span class="sxs-lookup"><span data-stu-id="e69af-139">When in doubt regarding the Relevance tagging of a file, consult an expert.</span></span> <span data-ttu-id="e69af-140">在相關性訓練期間不正確的標籤可能會導致在程式的後損毀，而且可能會對整體結果的品質產生負面影響。</span><span class="sxs-lookup"><span data-stu-id="e69af-140">Incorrect tagging during the Relevance training can lead to lost time later in the process and may also have a negative impact on the quality of the overall results.</span></span>
     
-  - <span data-ttu-id="a7b1b-140">已定義的關鍵字的關鍵字清單中會顯示以協助使用者識別相關的檔案時標記的色彩。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-140">Keywords that were defined in Keyword lists will be displayed in colors to help the user identify relevant files while tagging.</span></span>
+  - <span data-ttu-id="e69af-141">關鍵字清單中所定義的關鍵字會顯示在 [色彩] 中，以協助使用者在標記時識別相關檔。</span><span class="sxs-lookup"><span data-stu-id="e69af-141">Keywords that were defined in Keyword lists will be displayed in colors to help the user identify relevant files while tagging.</span></span>
     
-- <span data-ttu-id="a7b1b-141">**批次計算**： 已標記為 R/編號的專家將會收到 [0] 或 [100 分數的檔案。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-141">**Batch calculation**: Files that were tagged as R/NR by the expert will receive a score of either 0 or 100.</span></span> <span data-ttu-id="a7b1b-142">這適用於標記進行批次計算之前。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-142">This applies to tagging made before Batch calculation.</span></span> <span data-ttu-id="a7b1b-143">如果專家切換閒置批次計算後問題，並繼續標記這個問題，新標記的分數將無法 100/0，但而原始分數。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-143">If the expert switched the issue to Idle after Batch Calculation and continued tagging this issue, the newly tagged scores will not be 100/0 but rather the original score.</span></span>
+- <span data-ttu-id="e69af-142">**批次計算**：由專家標記為 R/NR 的檔案，將會收到0或100的分數。</span><span class="sxs-lookup"><span data-stu-id="e69af-142">**Batch calculation**: Files that were tagged as R/NR by the expert will receive a score of either 0 or 100.</span></span> <span data-ttu-id="e69af-143">這適用于批次計算之前所進行的標記。</span><span class="sxs-lookup"><span data-stu-id="e69af-143">This applies to tagging made before Batch calculation.</span></span> <span data-ttu-id="e69af-144">如果專家在批次計算後將問題切換至空閒狀態，並且繼續標記此問題，則新的已標記分數不會是100/0，而是原始分數。</span><span class="sxs-lookup"><span data-stu-id="e69af-144">If the expert switched the issue to Idle after Batch Calculation and continued tagging this issue, the newly tagged scores will not be 100/0 but rather the original score.</span></span>
     
-- <span data-ttu-id="a7b1b-144">**問題和取樣模式**： 問題通常已關閉時於這些工作已完成 （穩定相關性訓練與執行批次計算） 時便會取消問題，或當另一位使用者工作的問題時。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-144">**Issues and sampling mode**: Issues are usually turned Off when work on them is completed (Relevance training is stabilized and Batch calculation was performed), when the issues are canceled, or when another user is working on the issues.</span></span>
+- <span data-ttu-id="e69af-145">**問題和採樣模式**：當工作完成時，通常會關閉問題（相關性訓練是穩定和批次計算）、何時取消問題，或其他使用者正在處理問題。</span><span class="sxs-lookup"><span data-stu-id="e69af-145">**Issues and sampling mode**: Issues are usually turned Off when work on them is completed (Relevance training is stabilized and Batch calculation was performed), when the issues are canceled, or when another user is working on the issues.</span></span>
     
-## <a name="steps-in-relevance-training"></a><span data-ttu-id="a7b1b-145">在 [相關性訓練的步驟</span><span class="sxs-lookup"><span data-stu-id="a7b1b-145">Steps in Relevance training</span></span>
+## <a name="steps-in-relevance-training"></a><span data-ttu-id="e69af-146">相關訓練中的步驟</span><span class="sxs-lookup"><span data-stu-id="e69af-146">Steps in Relevance training</span></span>
 
-<span data-ttu-id="a7b1b-146">在**相關性\>追蹤**] 索引標籤，資料調查提供的建議如何繼續處理，使用下列的下一個步驟。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-146">In the **Relevance \> Track** tab, Data investigations provides recommendations on how to proceed in the processing, with the following next steps.</span></span> <span data-ttu-id="a7b1b-147">當相關性訓練程序中建議的每個以下的步驟如下所述所造成影響。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-147">The implications are described below when each of the following steps is recommended in the Relevance training process.</span></span> 
+<span data-ttu-id="e69af-147">在 [**相關性\>追蹤**] 索引標籤中，「資料調查」提供如何在處理過程中進行處理的建議，以及下列後續步驟。</span><span class="sxs-lookup"><span data-stu-id="e69af-147">In the **Relevance \> Track** tab, Data investigations provides recommendations on how to proceed in the processing, with the following next steps.</span></span> <span data-ttu-id="e69af-148">在下列每個步驟都建議使用相關性訓練程式時，說明下列各項的含義。</span><span class="sxs-lookup"><span data-stu-id="e69af-148">The implications are described below when each of the following steps is recommended in the Relevance training process.</span></span> 
   
-- <span data-ttu-id="a7b1b-148">標記 / 繼續標記： 檔案檢閱與相關性標記執行的最高]，為每個檔案並發出內範例。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-148">Tagging / Continue tagging: File review and Relevance tagging performed by an expert for each file and issue within a sample.</span></span>
+- <span data-ttu-id="e69af-149">標記/繼續標記：在範例中每個檔案和問題的專家所執行的檔案檢查及相關性標記。</span><span class="sxs-lookup"><span data-stu-id="e69af-149">Tagging / Continue tagging: File review and Relevance tagging performed by an expert for each file and issue within a sample.</span></span>
     
-  - <span data-ttu-id="a7b1b-149">Mincopiestoprotect 這個： 現有範例需要標記。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-149">Implication: An existing sample needs to be tagged.</span></span>
+  - <span data-ttu-id="e69af-150">隱含：現有的範例需要加上標記。</span><span class="sxs-lookup"><span data-stu-id="e69af-150">Implication: An existing sample needs to be tagged.</span></span>
     
-- <span data-ttu-id="a7b1b-150">評估 / 繼續進行評估： 可讓早期驗證案例問題相關性和匯入目前的大小寫檔案母群體的相關性的初步檢視。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-150">Assessment / Continue assessment: Enables early validation of case issue relevance and a preliminary view of the relevance of the file population imported for the current case.</span></span>
+- <span data-ttu-id="e69af-151">評估/繼續評估：啟用案例問題相關性的早期驗證，以及針對目前案例匯入的檔案人口相關性的初步觀點。</span><span class="sxs-lookup"><span data-stu-id="e69af-151">Assessment / Continue assessment: Enables early validation of case issue relevance and a preliminary view of the relevance of the file population imported for the current case.</span></span>
     
-  - <span data-ttu-id="a7b1b-151">Mincopiestoprotect 這個： 多個評估需要或建議。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-151">Implication: More assessment is required or recommended.</span></span>
+  - <span data-ttu-id="e69af-152">隱含：需要或建議進行更多評估。</span><span class="sxs-lookup"><span data-stu-id="e69af-152">Implication: More assessment is required or recommended.</span></span>
     
-- <span data-ttu-id="a7b1b-152">訓練 / 繼續訓練： 程序期間哪些資料調查可學習從專家標記檔案範例和取得能夠識別相關性準則改變每個案例的內容中每一項問題。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-152">Training / Continue training: Process during which Data investigations learns from the expert who is tagging the file samples and acquires the ability to identify Relevance criteria pertinent to each issue within the context of each case.</span></span>
+- <span data-ttu-id="e69af-153">訓練/繼續訓練：在此過程中，資料調查透過標記檔案範例的專家來瞭解，並取得每個案例內容中的每個問題相關的相關準則。</span><span class="sxs-lookup"><span data-stu-id="e69af-153">Training / Continue training: Process during which Data investigations learns from the expert who is tagging the file samples and acquires the ability to identify Relevance criteria pertinent to each issue within the context of each case.</span></span>
     
-  - <span data-ttu-id="a7b1b-153">Mincopiestoprotect 這個： 問題需要更多的教育訓練;應建立及標記的下一個範例。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-153">Implication: The issue needs more training; the next sample should be created and tagged.</span></span> 
+  - <span data-ttu-id="e69af-154">隱含：此問題需要進一步訓練;下一個範例應該建立並加上標記。</span><span class="sxs-lookup"><span data-stu-id="e69af-154">Implication: The issue needs more training; the next sample should be created and tagged.</span></span> 
     
-- <span data-ttu-id="a7b1b-154">批次計算： 相關性處理程序中的資料調查採用知識取得訓練階段期間，然後套用至整個檔案母體。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-154">Batch calculation: Relevance process in which Data investigations takes the knowledge acquired during the training stage and applies it to the entire file population.</span></span> <span data-ttu-id="a7b1b-155">相關檔案群組中的所有檔案都相關性評估，並指派相關性分數。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-155">All files in the pertinent file group are assessed for relevance and assigned a Relevance score.</span></span>
+- <span data-ttu-id="e69af-155">批次計算：相關性處理常式，其中資料調查採取訓練階段所取得的知識，並將其套用至整個檔案的人口。</span><span class="sxs-lookup"><span data-stu-id="e69af-155">Batch calculation: Relevance process in which Data investigations takes the knowledge acquired during the training stage and applies it to the entire file population.</span></span> <span data-ttu-id="e69af-156">會評估相關檔群組中的所有檔案，以取得相關性，並指派相關性分數。</span><span class="sxs-lookup"><span data-stu-id="e69af-156">All files in the pertinent file group are assessed for relevance and assigned a Relevance score.</span></span>
     
-  - <span data-ttu-id="a7b1b-156">Mincopiestoprotect 這個： 穩定問題後，而且可以執行批次計算。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-156">Implication: The issue has stabilized, and Batch calculation can be performed.</span></span>
+  - <span data-ttu-id="e69af-157">隱含：此問題已穩定，可執行批次計算。</span><span class="sxs-lookup"><span data-stu-id="e69af-157">Implication: The issue has stabilized, and Batch calculation can be performed.</span></span>
     
-- <span data-ttu-id="a7b1b-157">Catch-up： 相關性指出專家檢閱，以及標記從其他檔案負載期間循環載入的案例中所選取的檔案的範例。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-157">Catch-up: Relevance indicates when an expert reviews and tags a sample of files selected from an additional file load during a Rolling Loads scenario.</span></span>
+- <span data-ttu-id="e69af-158">追趕：「相關性」表示當專家在滾動負載案例期間，從其他檔案負載中所選取的檔案範例會何時審閱及標記。</span><span class="sxs-lookup"><span data-stu-id="e69af-158">Catch-up: Relevance indicates when an expert reviews and tags a sample of files selected from an additional file load during a Rolling Loads scenario.</span></span>
     
-  - <span data-ttu-id="a7b1b-158">Mincopiestoprotect 這個： 已新增新的負載，且 Catch-up 需要繼續使用。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-158">Implication: A new load has been added, and Catch-up is required to continue working.</span></span>
+  - <span data-ttu-id="e69af-159">隱含：已新增新的負載，必須有追趕才能繼續運作。</span><span class="sxs-lookup"><span data-stu-id="e69af-159">Implication: A new load has been added, and Catch-up is required to continue working.</span></span>
     
-- <span data-ttu-id="a7b1b-159">標記不一致： 程序識別，透過資料調查演算法，標記可能會造成負面影響分析的程序在檔案中的不一致。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-159">Tag inconsistencies: Process identifies, via an Data investigations algorithm, inconsistencies in the file tagging process that may negatively impact the analysis.</span></span>
+- <span data-ttu-id="e69af-160">標記不一致：進程會透過資料調查演算法識別可能對分析造成負面影響的檔標記處理常式中的不一致。</span><span class="sxs-lookup"><span data-stu-id="e69af-160">Tag inconsistencies: Process identifies, via an Data investigations algorithm, inconsistencies in the file tagging process that may negatively impact the analysis.</span></span>
     
-  - <span data-ttu-id="a7b1b-160">Mincopiestoprotect 這個： 下一個範例會在前一個範例中，包括已標記的檔案，必須取消復原其標記。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-160">Implication: The next sample will include files that have been tagged in previous samples, and their tagging must be redone.</span></span>
+  - <span data-ttu-id="e69af-161">暗示：下一個範例會包括已在先前範例中標記的檔案，而且必須重做其標記。</span><span class="sxs-lookup"><span data-stu-id="e69af-161">Implication: The next sample will include files that have been tagged in previous samples, and their tagging must be redone.</span></span>
     
-- <span data-ttu-id="a7b1b-161">更新器： 可讓使用者套用標記或植入的變更。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-161">Update classifier: Allows the user to apply tagging or seeding changes.</span></span>
+- <span data-ttu-id="e69af-162">更新分類器：允許使用者套用標記或植入變更。</span><span class="sxs-lookup"><span data-stu-id="e69af-162">Update classifier: Allows the user to apply tagging or seeding changes.</span></span>
     
-  - <span data-ttu-id="a7b1b-162">Mincopiestoprotect 這個： 標記及植入變更可套用而不需要以手動方式執行相關性的另一個範例。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-162">Implication: Tagging and seeding changes can be applied without needing to manually run another Relevance sample.</span></span>
+  - <span data-ttu-id="e69af-163">隱含：可以套用標記和植入變更，而不需要手動執行另一個相關性範例。</span><span class="sxs-lookup"><span data-stu-id="e69af-163">Implication: Tagging and seeding changes can be applied without needing to manually run another Relevance sample.</span></span>
     
-- <span data-ttu-id="a7b1b-163">保留： 相關性訓練程序完成。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-163">On hold: The Relevance training process is completed.</span></span>
+- <span data-ttu-id="e69af-164">保留：相關性訓練程式已完成。</span><span class="sxs-lookup"><span data-stu-id="e69af-164">On hold: The Relevance training process is completed.</span></span>
     
-  - <span data-ttu-id="a7b1b-164">Mincopiestoprotect 這個： 沒有相關性訓練，則需要這個時候。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-164">Implication: No Relevance training is required at this point.</span></span>
+  - <span data-ttu-id="e69af-165">隱含：此時不需要相關性訓練。</span><span class="sxs-lookup"><span data-stu-id="e69af-165">Implication: No Relevance training is required at this point.</span></span>
     
-<span data-ttu-id="a7b1b-165">雖然資料調查將引導您完成程序，以建議的後續步驟，在不同的階段，您還可以] 索引標籤和頁面之間瀏覽，並選擇地址情況可能會改變您個別的情況下，問題，或文件檢閱程序。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-165">Although Data investigations guides you through the process, with recommended Next steps at different stages, it also allows you to navigate between tabs and pages, and to make choices to address situations that may be pertinent to your individual case, issue, or document review process.</span></span> 
+<span data-ttu-id="e69af-166">雖然資料調查會引導您完成此程式，並在不同的階段進行後續步驟，但也可讓您在選項卡和頁面之間流覽，並做出選擇，以解決可能與您的個別案例、問題或檔審閱程式相關的情形。</span><span class="sxs-lookup"><span data-stu-id="e69af-166">Although Data investigations guides you through the process, with recommended Next steps at different stages, it also allows you to navigate between tabs and pages, and to make choices to address situations that may be pertinent to your individual case, issue, or document review process.</span></span> 
   
-<span data-ttu-id="a7b1b-166">就可以接受或覆寫資料調查下一步處理選項。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-166">It is possible to accept or override Data investigations Next step processing choices.</span></span> <span data-ttu-id="a7b1b-167">如果您想要執行的步驟以外的建議的下一個步驟，請按一下 [**下一步**] 對話方塊中的擴充此問題： 顯示中所列，按一下 [下一步旁的 [**修改**] 按鈕並選取另一個下一步步驟選項。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-167">If you want to perform a step other than the recommended Next step, click the **Next step** listed in the expanded issue display in the dialog, click the **Modify** button next to the Next step, and select another Next step option.</span></span> 
+<span data-ttu-id="e69af-167">您可以接受或覆寫資料調查下一個步驟處理選項。</span><span class="sxs-lookup"><span data-stu-id="e69af-167">It is possible to accept or override Data investigations Next step processing choices.</span></span> <span data-ttu-id="e69af-168">如果您想要執行的步驟不是建議的下一個步驟，請按一下 [展開的問題顯示幕] 對話方塊中所列的**下一個步驟**，按一下下一個步驟旁邊的 [**修改**] 按鈕，然後選取另一個 [下一步] 選項。</span><span class="sxs-lookup"><span data-stu-id="e69af-168">If you want to perform a step other than the recommended Next step, click the **Next step** listed in the expanded issue display in the dialog, click the **Modify** button next to the Next step, and select another Next step option.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="a7b1b-168">某些選項可能都維持在已停用之後解除鎖定為不受支援之程序中使用點。</span><span class="sxs-lookup"><span data-stu-id="a7b1b-168">Some options may remain disabled after unlocking as they are not supported for use at that point in the process.</span></span> 
+> <span data-ttu-id="e69af-169">當您解除鎖定時，有些選項可能仍會停用，因為不支援在程式中使用該位置。</span><span class="sxs-lookup"><span data-stu-id="e69af-169">Some options may remain disabled after unlocking as they are not supported for use at that point in the process.</span></span> 
   
-## <a name="more-information"></a><span data-ttu-id="a7b1b-169">詳細資訊</span><span class="sxs-lookup"><span data-stu-id="a7b1b-169">More information</span></span>
+## <a name="more-information"></a><span data-ttu-id="e69af-170">詳細資訊</span><span class="sxs-lookup"><span data-stu-id="e69af-170">More information</span></span>
 
-[<span data-ttu-id="a7b1b-170">了解相關性評估</span><span class="sxs-lookup"><span data-stu-id="a7b1b-170">Understanding Assessment in Relevance</span></span>](assessment-in-relevance-in-advanced-ediscovery.md)
+[<span data-ttu-id="e69af-171">瞭解相關評估</span><span class="sxs-lookup"><span data-stu-id="e69af-171">Understanding Assessment in Relevance</span></span>](assessment-in-relevance-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="a7b1b-171">標記與評估</span><span class="sxs-lookup"><span data-stu-id="a7b1b-171">Tagging and assessment</span></span>](tagging-and-assessment-in-advanced-ediscovery.md)
+[<span data-ttu-id="e69af-172">標記與評估</span><span class="sxs-lookup"><span data-stu-id="e69af-172">Tagging and assessment</span></span>](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="a7b1b-172">標記與相關性訓練</span><span class="sxs-lookup"><span data-stu-id="a7b1b-172">Tagging and Relevance training</span></span>](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[<span data-ttu-id="e69af-173">標記與相關性訓練</span><span class="sxs-lookup"><span data-stu-id="e69af-173">Tagging and Relevance training</span></span>](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="a7b1b-173">追蹤相關性分析</span><span class="sxs-lookup"><span data-stu-id="a7b1b-173">Tracking Relevance analysis</span></span>](track-relevance-analysis-in-advanced-ediscovery.md)
+[<span data-ttu-id="e69af-174">追蹤相關性分析</span><span class="sxs-lookup"><span data-stu-id="e69af-174">Tracking Relevance analysis</span></span>](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="a7b1b-174">決定根據結果</span><span class="sxs-lookup"><span data-stu-id="a7b1b-174">Deciding based on the results</span></span>](decision-based-on-the-results-in-advanced-ediscovery.md)
+[<span data-ttu-id="e69af-175">根據結果決定</span><span class="sxs-lookup"><span data-stu-id="e69af-175">Deciding based on the results</span></span>](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="a7b1b-175">測試相關性分析</span><span class="sxs-lookup"><span data-stu-id="a7b1b-175">Testing Relevance analysis</span></span>](test-relevance-analysis-in-advanced-ediscovery.md)
+[<span data-ttu-id="e69af-176">測試相關性分析</span><span class="sxs-lookup"><span data-stu-id="e69af-176">Testing Relevance analysis</span></span>](test-relevance-analysis-in-advanced-ediscovery.md)
 
-[<span data-ttu-id="a7b1b-176">查詢中的辨識項的資料</span><span class="sxs-lookup"><span data-stu-id="a7b1b-176">Query the data in evidence</span></span>](evidence-query.md)
+[<span data-ttu-id="e69af-177">查詢證據中的資料</span><span class="sxs-lookup"><span data-stu-id="e69af-177">Query the data in evidence</span></span>](evidence-query.md)
