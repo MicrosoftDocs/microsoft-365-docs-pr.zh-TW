@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全性與合規性中心的內容搜尋工具，在 Exchange 混合式部署中搜尋及匯出內部部署使用者的 Microsoft Teams 聊天資料 (稱為 1xN 聊天)。
-ms.openlocfilehash: 9dc9219d6ef1a387e1514deb672386d7d3c18290
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7b05460bb41ff97c8571a96b38a8eebd50a206fd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626449"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034569"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>搜尋內部部署使用者的雲端式信箱
 
@@ -47,7 +47,7 @@ ms.locfileid: "43626449"
   
 下圖顯示搜尋、預覽及匯出內部部署使用者的 Teams 聊天資料的工作流程。
   
-![Microsoft Teams 內部部署使用者的雲端式儲存空間](../media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
+![Microsoft Teams 內部部署使用者的雲端式儲存空間](../media/EHAMShard1.png)
   
 除了這項新功能，您仍然可以使用內容搜尋來搜尋、預覽及匯出小組中與每個 Microsoft Team 相關聯的雲端式 SharePoint 網站和 Exchange 信箱中的 Teams 內容，以及雲端式使用者 Exchange Online 信箱中的 1xN Teams 聊天資料。
 

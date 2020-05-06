@@ -10,18 +10,20 @@ ms.date: 02/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
+ms.custom:
+- TN2DMC
+- seo-marvel-apr2020
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
-description: 這份簡介檔將協助您瞭解 Exchange Online Protection （EOP）及一些重要的術語。 這適用于保護 Exchange Online 雲端託管信箱的客戶，以及保護內部部署信箱（例如 Exchange Server 2016）的 EOP 單機客戶。
-ms.openlocfilehash: dc08507a80db8e15d2e08ff5b954dec1905cfada
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 在本文中，您將瞭解 Exchange Online Protection （EOP）（即雲端式電子郵件篩選服務）。
+ms.openlocfilehash: 7a9c122edf229d70f0ea5a1dbea8be56b5a2a3a9
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630914"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034935"
 ---
 # <a name="what-is-exchange-online-protection-eop"></a>何謂 Exchange Online Protection （EOP）
 

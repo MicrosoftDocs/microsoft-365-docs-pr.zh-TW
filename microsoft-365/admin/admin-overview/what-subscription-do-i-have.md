@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: 透過前往 [訂閱] 頁面，瞭解您的組織有哪些訂閱可供驗證。
 ms.custom: okr_SMB
-ms.openlocfilehash: a8ebff405d57578142318a2111db1dcb53d54435
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b855c533627aadf6117e6830d7484276003ea665
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621427"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045209"
 ---
 # <a name="what-subscription-do-i-have"></a>我有何種訂閱？
 
@@ -40,9 +40,9 @@ ms.locfileid: "43621427"
 > [!NOTE]
 > 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
-2. 您的訂閱會顯示在 [**產品 & 服務**] 頁面上，以及訂閱名稱、訂閱的相關資訊及其狀態。 若要查看簡潔的視圖，請選取 [**表格視圖**]。
+2. 您的訂閱會顯示在 [**產品**] 頁面上，以及訂閱名稱、訂閱的相關資訊及其狀態。 若要查看簡潔的視圖，請選取 [**表格視圖**]。
 
 ::: moniker-end
   

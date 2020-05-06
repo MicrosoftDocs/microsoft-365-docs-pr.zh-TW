@@ -1,5 +1,7 @@
 ---
-title: 将数据从一个审核集添加到另一个审核集
+title: 將資料從一個複查集新增至另一個複查集
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,34 +15,35 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: bd33d57380e99225d741b9c38677c2b49694139a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 瞭解如何從一項審閱集選取檔，並在高級 eDiscovery 案例中個別使用另一組檔。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 636e76b1740cfa07254e4c56165cfafa8f1fad5a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076781"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034677"
 ---
-# <a name="add-data-to-a-review-set-from-another-review-set"></a>将数据从其他审阅集添加到审阅集
+# <a name="add-data-to-a-review-set-from-another-review-set"></a>從另一個複查集將資料新增至審閱集
 
-在某些情况下，可能需要从一个审阅集中分离出部分文档，并在另一个审阅集中单独使用它们。  如果您已筛选审阅集中的内容，并且希望对数据子集运行分析，则此功能特别有用。
+在某些情況下，您可能需要從一部審閱集選取檔，並在另一個審校集內個別使用這些檔。 如果您已在評審集中 culled 內容，而且想要對資料子集執行分析，這一點特別有用。
 
-按照本文中的工作流将内容从一个审阅集添加到另一个审阅集。
+請遵循本文中的工作流程，將其中一個複查集的內容新增至另一個。
 
 ## <a name="before-you-begin"></a>開始之前
 
-在开始之前，您需要创建新的审阅集以将数据添加到。  可以在案例**的"审阅集"** 选项卡上添加新审核集。 有关详细信息，请参阅[创建审阅集](managing-review-sets.md#create-a-review-set)。
+開始之前，您必須建立新的審閱集，以將資料新增至。  您可以在案例的 [**複查集**] 索引標籤上新增新的審閱集。 如需詳細資訊，請參閱[建立審閱集](managing-review-sets.md#create-a-review-set)。
 
-## <a name="step-1-identify-content-to-add-to-another-review-set"></a>第 1 步：标识要添加到其他审阅集的内容
+## <a name="step-1-identify-content-to-add-to-another-review-set"></a>步驟1：識別要新增至其他審閱集的內容
 
-您可以通过在源审阅集中选择特定文档或 b 从一个审阅集向另一个审阅集添加内容，或者 b 从审阅集查询返回的所有项目进行 seletletletletletletlet。  如果要添加选定项目，请选择项目，**单击"操作"，** 然后单击"**添加到其他审阅集"。**
+您可以選取來源複查集內的特定檔，或選取 [複查] 集合查詢所傳回的所有專案，以將內容從一項審閱集新增至另一個。 若要新增選取的專案，請選取專案，然後選取 [**動作**]，然後選取 [**新增至其他審閱集**]。
 
-![添加到另一个审阅集](media/64f2a4d4-eba3-4ab3-a3ba-d519feea3142.png)
+![新增至另一個考核集](../media/64f2a4d4-eba3-4ab3-a3ba-d519feea3142.png)
 
-## <a name="step-2-specify-options-for-adding-to-another-review-set"></a>步骤 2：指定用于添加到其他审阅集的选项
+## <a name="step-2-specify-options-for-adding-to-another-review-set"></a>步驟2：指定新增至其他審閱集的選項
 
-在"**添加到其他审阅集选项**弹出窗口"页中，选择要向其添加项目的审阅集。 选择是添加**所有搜索结果**还是**添加选定项目。**  其他信息提供了一些选项，用于包括项目中的所有元数据，以及是否在文档添加到新审阅集时从源审阅集中包括标记（通过**选中"标签"** 复选框）。  
+在 [**新增至其他審閱集選項**] 飛入頁面中，選擇您想要新增專案的審閱集。 選擇是否要新增**所有搜尋結果**或**選取的專案**。  **其他資訊**提供的選項可包含專案中的所有中繼資料，以及是否要在將檔新增至新的審閱集時，從來源複查集包括標記（透過選取 [**標籤**] 核取方塊）。  
 
-![添加到另一个审阅集](media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
+![新增至另一個考核集](../media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
 
-**单击"确定"** 后，将创建一个新作业（名为"**将数据添加到另一个审阅集"）** 以将内容添加到另一个审阅集。  您可以**转到"作业"** 选项卡并监视此作业的进度。 有关详细信息，请参阅[管理作业](managing-jobs-ediscovery20.md)。
+按一下 **[確定]** 後，就會建立新的工作（命名為**將資料新增至另一個複查集**），以將內容新增至另一個評審集。 您可以移至 [**工作**] 索引標籤，監視此工作的進度。 如需詳細資訊，請參閱[管理工作](managing-jobs-ediscovery20.md)。

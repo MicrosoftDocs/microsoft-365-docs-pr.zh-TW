@@ -15,13 +15,14 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 協助說明郵件加密版本之間的差異。
-ms.openlocfilehash: 89d145f19591ba59df6983bb8863a8e0cc28fcf3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 本文可協助說明不同版本的 Office 365 郵件加密之間的差異。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 32895f8aae8c6c23ab7f0e3d70d4caa73285fa9e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626789"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034873"
 ---
 # <a name="compare-versions-of-ome"></a>比較 OME 版本
 

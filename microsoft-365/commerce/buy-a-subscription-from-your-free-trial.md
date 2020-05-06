@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: 購買商務用 Microsoft 365 訂閱。 您可以購買與您嘗試使用的相同類型的訂閱，或其他計畫。
-ms.openlocfilehash: 3635a4ae729aa0759ef1f2de2905fa745a48951a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 48786ffc4bd0a8c5e8e13e0062b6db1dd5bed561
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634941"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045797"
 ---
 # <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>從免費試用版購買為商務用 Microsoft 365 的訂閱
 
@@ -50,9 +50,9 @@ ms.locfileid: "43634941"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
-2. 在 [**產品 & 服務**] 頁面上，尋找您要購買的訂閱。 在 [**授權**] 區段中，選取 [**購買訂閱**]。
+2. 在 [**產品**] 頁面上，找到您要購買的訂閱。 在 [**授權**] 區段中，選取 [**購買訂閱**]。
 
 3. 選擇您訂閱的每月或每年承諾，然後選取 [**簽出**]。
 
@@ -163,6 +163,6 @@ ms.locfileid: "43634941"
 
 [延長試用期](extend-your-trial.md)
   
-[註冊 Microsoft 365](../admin/admin-overview/sign-up-for-office-365.md)
+[註冊 Microsoft 365。](../admin/admin-overview/sign-up-for-office-365.md)
   
 [切換至不同的 Microsoft 365 方案或訂閱](subscriptions/switch-to-a-different-plan.md)

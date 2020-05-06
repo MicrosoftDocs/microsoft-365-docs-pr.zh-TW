@@ -10,16 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 合規性管理員是 Microsoft 服務信任入口網站中免費的工作流程型風險評估工具。 合規性管理員可讓您追蹤、指派及驗證與 Microsoft 雲端服務相關的法規遵從性活動。
-ms.openlocfilehash: 31a56f7cba8bb8957d758ca2905853f26d1f8edf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 深入瞭解 microsoft 服務信任入口網站中的 Microsoft 合規性管理員（免費的工作流程型風險評估工具）。
+ms.openlocfilehash: cc62e989a3ef0a40a05c5f2e34e6e15dc6e7f399
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632988"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046281"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合規性管理員（預覽）
 
@@ -42,17 +45,15 @@ ms.locfileid: "43632988"
 - 為您提供安全的存放庫，以上傳和管理與您的合規性活動相關的證據及其他專案。
 - 產生詳盡的 Microsoft Excel 報告，記錄由 Microsoft 和您組織的審計員、管制及其他法規遵從性審查程式所執行的相容性活動。
 
-> [!NOTE]
-> 合規性管理員中提供的客戶動作為建議。在實施之前，您的組織可以評估這些建議在其各項法規環境中的效能。 您不應將合規性管理員中找到的建議視為合規性的保證。
+  
+> [!IMPORTANT]
+> 您不應將「合規性分數」和「合規性管理員」中的建議視為合規性的保證。 您可以根據法規環境評估和驗證客戶控制措施的效能。 這些服務目前是在預覽中，並受限於[線上服務條款](https://go.microsoft.com/fwlink/?linkid=2108910)中的條款及條件。 另請參閱[Microsoft 365 授權指南以取得安全性和合規性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="relationship-to-compliance-score"></a>與合規性分數的關係
 
 [Microsoft 規範分數（預覽）](compliance-score.md)是 microsoft 365 規範中心中的一項功能，可提供組織的相容性狀況的最上層視圖。 它會計算以風險為基礎的分數，用以衡量您在完成動作方面的進展，以協助降低資料保護和法規標準的風險。 知道您的整體合規性分數可協助您的組織瞭解和管理法規遵從性。 瞭解[如何計算您的合規性分數](compliance-score-methodology.md)。
 
 合規性管理員會與合規性分數共用相同的後端。 在這兩個工具的公開預覽階段中，合規性管理員是您管理評估和自訂控制項實施的所在位置。 深入瞭解[合規性分數和合規性管理員之間的關係](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)。
-  
-> [!IMPORTANT]
-> 「合規性分數」的高低並不能用來代表組織合規性絕對符合某個特定的標準或法規。 這代表您採取的控制措施可降低個人資料和個人隱私權暴露在風險中的程度。 沒有任何服務可以保證您符合標準或法規，而且合規性分數不應該以任何方式轉譯為保證。
 
 ## <a name="compliance-manager-components"></a>合規性管理員元件
 

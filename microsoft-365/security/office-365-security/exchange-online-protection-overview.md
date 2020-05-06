@@ -11,13 +11,15 @@ ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
-description: Microsoft Exchange Online Protection (EOP) 是雲端式的電子郵件篩選服務，它能協助組織抵禦垃圾郵件和惡意軟體，同時也包括預防組織發生訊息原則違規的功能。
-ms.openlocfilehash: a87b9b40d1a95f7c4da194ffd2138aa9d1726032
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: 深入瞭解 Microsoft Exchange Online Protection （EOP），以及它如何協助保護您的組織抵禦垃圾郵件和惡意程式碼。
+ms.openlocfilehash: 4630c58bef49f13a1ae1536336afbac170418dcc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083114"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036521"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概觀
 

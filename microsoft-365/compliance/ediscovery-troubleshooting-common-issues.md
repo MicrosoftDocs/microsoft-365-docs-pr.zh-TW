@@ -16,14 +16,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 調查、疑難排解及解決 eDiscovery 的常見問題。
+description: 瞭解您可以採取的基本疑難排解步驟，以解決 Office 365 eDiscovery 中的常見問題。
 siblings_only: true
-ms.openlocfilehash: 5bcbe498cb650268dc8ff6f2b41a6201e75a8192
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f8b73e886e9aa639ff5575f10822417411a0784e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631768"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035665"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>調查、疑難排解及解決常見的 eDiscovery 問題
 

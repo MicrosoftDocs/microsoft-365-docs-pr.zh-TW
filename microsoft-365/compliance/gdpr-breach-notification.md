@@ -1,7 +1,7 @@
 ---
 title: 外洩通知
-description: Microsoft 服務如何防止個人資料外洩，以及若發生外洩 Microsoft 會如何回應和通知您。
-keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR
+description: 了解Microsoft 服務如何防止個人資料外洩，以及若發生外洩 Microsoft 會如何回應和通知您。
+keywords: Microsoft 365、Microsoft 365 教育版, Microsoft 365 文件, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,13 +14,15 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 4cf6bb62034708b6ba21fb060949de6f1ac19066
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 988e5e26f3aa983dec481677fe8d9a3f8d331181
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558083"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036101"
 ---
 # <a name="gdpr-breach-notification"></a>GDPR 外洩通知
 

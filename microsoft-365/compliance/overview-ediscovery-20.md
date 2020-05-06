@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 本文說明 Microsoft 365 中的新版本的高級 eDiscovery。
-ms.openlocfilehash: 3296fbbd04f2baa635fdf0330fc65b927a21448a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 本文概要說明 Microsoft 365 中的高級 eDiscovery，以及內部及外部調查的工具。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: fae09b33364f9ff57233ee25ccf40e4956dfd408
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626759"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034903"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 中的高級 eDiscovery 解決方案概述
 

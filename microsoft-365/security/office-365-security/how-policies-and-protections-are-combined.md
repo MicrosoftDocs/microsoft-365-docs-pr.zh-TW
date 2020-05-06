@@ -13,13 +13,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: 說明 Office 365 保護的應用程式順序，以及保護原則中的優先順序值如何決定所套用的原則。
-ms.openlocfilehash: ed4806bad6299dc5a5380bec2f6e1247f9d6b448
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解 Office 365 保護的應用程式順序，以及保護原則中的優先順序值如何決定所套用的原則。
+ms.openlocfilehash: 856b3bc39cd971e605cd9f1c0f31554a853c1b67
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633963"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036713"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子郵件保護的順序和優先順序
 
@@ -33,10 +35,10 @@ ms.locfileid: "43633963"
 
   |||||
   |---|---|---|---|
-  |**優先順序**|**電子郵件保護**|**類別**|**要管理的位置**|
-  |1 |惡意程式碼|CAT： MALW|[在 Office 365 中設定反惡意程式碼原則](configure-anti-malware-policies.md)|
-  |2 |網路釣魚|CAT： PHSH|[設定 Office 365 的反垃圾郵件原則](configure-your-spam-filter-policies.md)|
-  |3 |高信賴度的垃圾郵件|CAT： HSPM|[設定 Office 365 的反垃圾郵件原則](configure-your-spam-filter-policies.md)|
+  |**Priority** (優先順序)|**電子郵件保護**|**類別**|**要管理的位置**|
+  |1|惡意程式碼|CAT： MALW|[在 Office 365 中設定反惡意程式碼原則](configure-anti-malware-policies.md)|
+  |第|網路釣魚|CAT： PHSH|[設定 Office 365 的反垃圾郵件原則](configure-your-spam-filter-policies.md)|
+  |個|高信賴度的垃圾郵件|CAT： HSPM|[設定 Office 365 的反垃圾郵件原則](configure-your-spam-filter-policies.md)|
   |4 |詐騙|CAT：欺騙|[在 Office 365 中設定假冒情報](learn-about-spoof-intelligence.md)|
   |5 |垃圾郵件|CAT： SPM|[設定 Office 365 的反垃圾郵件原則](configure-your-spam-filter-policies.md)|
   |6 |大量|CAT：大量|[設定 Office 365 的反垃圾郵件原則](configure-your-spam-filter-policies.md)|
@@ -54,9 +56,9 @@ ms.locfileid: "43633963"
 
   |||||
   |---|---|---|---|
-  |**ATP 反網路釣魚原則**|**優先順序**|**使用者模擬**|**反詐騙**|
-  |原則 A|1 |開啟|關閉|
-  |原則 B|2 |關閉|開啟|
+  |**ATP 反網路釣魚原則**|**Priority** (優先順序)|**使用者模擬**|**反詐騙**|
+  |原則 A|1|開啟|關閉|
+  |原則 B|第|關閉|開啟|
   |
 
 1. 郵件會標示並視為欺騙性，因為哄騙具有比使用者模擬（8）更高的優先順序（4）。

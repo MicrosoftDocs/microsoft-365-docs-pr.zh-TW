@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 security center 中的裝置監控與報告
+title: 裝置監控 & 報告-安全性中心
 description: 說明如何讓您的裝置在組織中保持安全、最新和潛在的潛在威脅
 keywords: 安全性，惡意程式碼，Microsoft 365，M365，security center，monitor，report，裝置
 ms.prod: microsoft-365-enterprise
@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f8adb04e968f19c6b0577127e4f9c0ceb7d9e315
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 870d2ce1f70028c917cc8b165e8a1c55b746100a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804878"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033995"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 security center 中的裝置監控與報告
 

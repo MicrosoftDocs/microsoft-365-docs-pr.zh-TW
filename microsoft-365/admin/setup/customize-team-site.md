@@ -1,5 +1,5 @@
 ---
-title: 自訂您的小組網站以進行檔案儲存與共享
+title: 自訂小組網站以進行檔案儲存和共用-SharePoint 線上
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,18 +16,19 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - IT_Networking
+- seo-marvel-apr2020
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
-description: 瞭解如何自訂、組織和管理小組網站。
-ms.openlocfilehash: e3f2773e72a1b86cc3bae53ee6bbdbcb33d465b8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 在本文中，您將瞭解如何自訂、組織和管理小組網站，以進行檔案儲存與共享。
+ms.openlocfilehash: 49bacdd193277e88eb076baeb90380c8f696d27b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627615"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033783"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自訂您的小組網站以進行檔案儲存與共享
 

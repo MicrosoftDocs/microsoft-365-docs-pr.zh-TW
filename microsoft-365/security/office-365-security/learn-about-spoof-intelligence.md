@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
-description: 系統管理員可以瞭解如何設定欺騙寄件者，以允許或不允許，以及其他在 Exchange Online 和 Exchange Online Protection （EOP）中的欺騙智慧設定。
-ms.openlocfilehash: e2aeefbd90a7ed66699778fab54a76a33293e4bb
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，您將瞭解如何使用和管理欺騙性情報，以防範電子郵件欺騙。
+ms.openlocfilehash: 32a7668edced5c9dbca2f7b16ff00253b56a5988
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949234"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034241"
 ---
 # <a name="configure-spoof-intelligence-in-microsoft-365"></a>在 Microsoft 365 中設定假冒情報
 

@@ -1,5 +1,5 @@
 ---
-title: 設定搜尋和分析設定
+title: 設定搜尋及分析設定-eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
+ms.custom: seo-marvel-mar2020
 description: 設定案例中套用至所有審閱集的高級 eDiscovery 設定。 這包括分析和 OCR 的設定。
-ms.openlocfilehash: 9a7568fac91fa9c021d05b255fc0a145002e7f29
-ms.sourcegitcommit: 0b2c41dad19da5f0513097c36a4ff32a5868836c
+ms.openlocfilehash: eb934146b065454b54d797e47f7a643b95be546d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42588806"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033673"
 ---
 # <a name="configure-search-and-analytics-settings"></a>設定搜尋和分析設定
 

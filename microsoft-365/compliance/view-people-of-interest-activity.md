@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 7b7109f2a14e2d215573cfe461fc64676d4247c8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-mar2020
+description: 您可以在調查中存取和搜尋活動，以在調查中使用「資料調查」（預覽）重要管理工具的人員。
+ms.openlocfilehash: 552d7727761052a28c2a58b51bf9b937bf953ad5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626319"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034275"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>查看相關人員的「審計」活動
 
@@ -29,7 +30,7 @@ ms.locfileid: "43626319"
 
 ## <a name="before-you-begin"></a>開始之前
 
-您必須在 Exchange Online 中指派 View-Only 的「審計記錄」或「審計記錄」角色，才能搜尋審計記錄。 根據預設，這些角色會在 Exchange 系統管理員中心的 [權限] 頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 若要讓使用者能夠使用最低的許可權層級搜尋資料調查（預覽）審核記錄，您可以在 Exchange Online 中建立自訂角色群組、新增 View-Only 的「審計記錄檔」或「審核記錄」角色，然後將該使用者新增為新角色群組的成員。 如需詳細資訊，請參閱管理 Exchange Online 中的角色群組。
+您必須在 Exchange Online 中獲派為 [僅限檢視稽核記錄] 或 [稽核記錄] 角色，才能搜尋稽核記錄。 根據預設，這些角色會在 Exchange 系統管理員中心的 [權限] 頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 若要讓使用者能夠使用最低的許可權層級搜尋資料調查（預覽）審核記錄，您可以在 Exchange Online 中建立自訂角色群組、新增 View-Only 的「審計記錄檔」或「審核記錄」角色，然後將該使用者新增為新角色群組的成員。 如需詳細資訊，請參閱管理 Exchange Online 中的角色群組。
 
 > [!IMPORTANT]
 > 如果您在安全性 & 規範中心的 [許可權] 頁面上指派使用者 View-Only 的「審核記錄」或「審核記錄」角色，他們將無法搜尋審核記錄。 您必須在 Exchange Online 中指派權限。 這是因為用來搜尋稽核記錄的基礎 Cmdlet 是 Exchange Online Cmdlet。

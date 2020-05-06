@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 新增與高級 eDiscovery 案例相關的搜尋結果。 從原始位置複製專案，並將其複製到 Microsoft 提供的 Azure 儲存位置。 專案也會重新編制索引，而高級 eDiscovery 將會在圖像檔案上執行光學字元辨識（OCR），並上傳圖像文本以供複查和分析。
-ms.openlocfilehash: b3710a91585d801f55b36622d6048a2c4bc58a7d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何將搜尋結果或其範例新增至「高級 eDiscovery 案例審核」集。
+ms.openlocfilehash: 5e0cdb12a34b3b69c41546e6fcb356ed905189dd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632298"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034667"
 ---
 # <a name="add-search-results-to-a-review-set"></a>將搜尋結果新增至檢閱集
 

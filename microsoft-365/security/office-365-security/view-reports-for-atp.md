@@ -1,5 +1,5 @@
 ---
-title: 查看 Office 365 的報告高級威脅防護、惡意程式碼報告、網路釣魚報告、受損帳戶、URL 保護狀態、威脅報告、報告威脅
+title: 查看高級威脅防護的報告
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -17,12 +17,13 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: 在安全性&amp;與合規性中心尋找及使用 Office 365 的「高級威脅防護」報告。
-ms.openlocfilehash: 09e2f4be133d395b738219b3a280f08b915030e0
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 56e8b79ad85a5801f75a6ed36a58afe58b552527
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708496"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034959"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>檢視 Office 365 進階威脅防護的報告
 

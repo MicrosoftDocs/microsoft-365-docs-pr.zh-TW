@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 深入瞭解 Microsoft 365 for business，如何加以設定，以及如何準備使用者的裝置和電腦，以確保 Microsoft 365 for business 所保護。
-ms.openlocfilehash: 17b142fb704d1b0be088a649490e751effb19517
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8754c470cb6369f0814f953288be130fa49cea86
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633196"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048078"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>開始使用 Microsoft 365 for business
 
@@ -44,7 +44,7 @@ Microsoft 365 for business 是一組完整的商務生產力和共同作業工�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-適用于企業的 Microsoft 365 是針對最多300授權的目的。 如果您需要更多授權，請參閱[Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986)檔以取得詳細資訊。 
+適用于企業的 Microsoft 365 是針對最多300授權的目的。 如果您需要更多授權，請參閱 [Microsoft 365 企業版](https://go.microsoft.com/fwlink/p/?linkid=860986)文件，以取得詳細資訊。 
   
 ## <a name="get-microsoft-365-for-business"></a>取得 Microsoft 365 for business
 
@@ -52,7 +52,7 @@ Microsoft 365 for business 是一組完整的商務生產力和共同作業工�
     
 - 如果您沒有合作夥伴，且想要取得 Microsoft 365 for business，您可以在[這裡購買](https://www.microsoft.com/microsoft-365/business)。
     
-## <a name="set-up-microsoft-365-for-business"></a>設定 Microsoft 365 for business
+## <a name="set-up-microsoft-365-for-business"></a>設定商務用 Microsoft 365
 
  **Microsoft 365 for business 套件設定概述**
   
@@ -83,7 +83,7 @@ Microsoft 365 for business 是一組完整的商務生產力和共同作業工�
     
     - 使用目錄同步處理嚮導，將您的使用者同步處理至雲端。 依照[設定 Microsoft 365 的目錄同步](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)處理中的步驟完成此程式。 將使用者同步處理至雲端後，您必須[關閉 Office 365 的目錄同步](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d)作業。
     
-    您也必須將以這種方式新增的每個使用者，授與 Microsoft 365 for business 的授權。 您可以在[安裝精靈](set-up.md)中執行這項作業，也可以[將授權指派給 Microsoft 365 for business 中的使用者](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC)。
+    您也必須將以這種方式新增的每個使用者，授與 Microsoft 365 for business 的授權。 您可以在[安裝精靈](set-up.md)中執行這項作業，也可以[將授權指派給 Microsoft 365 for business 中的使用者](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)。
     
 ### <a name="2-prepare-mobile-devices"></a>2：準備行動裝置
 
@@ -112,4 +112,4 @@ Microsoft 365 for business 是一組完整的商務生產力和共同作業工�
   
 [管理 microsoft 365 for](manage.md)business[遷移至 microsoft 365 for business](migrate-to-microsoft-365-business.md)
 
-[Microsoft 365 商務用訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[商務用 Microsoft 365 訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
-description: '瞭解如何執行報告，然後在 [Advanced eDiscovery] 中下載其 .csv 檔案。  '
-ms.openlocfilehash: 9da35e21de23e4773130f5aa87b16fe18d044140
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 瞭解如何對選取的程式執行報告，然後在 Advanced eDiscovery 中下載其 .csv 檔案。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e8761277dae8898cfe4c1674beb3f89eeddb48ba
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626479"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034587"
 ---
 # <a name="run-reports-in-advanced-ediscovery-classic"></a>在高級 eDiscovery 中執行報告（經典）
 

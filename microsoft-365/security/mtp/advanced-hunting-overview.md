@@ -1,5 +1,5 @@
 ---
-title: Microsoft 威脅防護中的進階搜捕概觀
+title: 概覽-高級搜尋
 description: 了解 Microsoft 365 中的進階搜捕查詢，以及如何使用該功能主動找出您的網路中的威脅和弱點
 keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，自訂偵測，schema，kusto，microsoft 365，Microsoft 威脅防護
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: dc91b97f48d6a5ca76c405e4c1006dceb9dc0b34
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c4b5d58a006591da23d37aaeccf72cfccc6d1c43
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929025"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033971"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>使用 Microsoft 威脅防護中的進階搜捕功能主動尋找威脅
 
@@ -35,7 +36,7 @@ ms.locfileid: "42929025"
 
 您可以使用相同的威脅搜尋查詢來建立自訂的偵測規則。 這些規則會自動執行，以檢查和回應各種事件和系統狀態，包括可疑的入侵活動和設定不當的電腦。
 
-在 Microsoft 365 的安全性中心，「高級搜尋」支援查詢可查看各種工作區中的資料，包括來自 Microsoft Defender ATP 的裝置、電子郵件、應用程式和身分識別的資料、Office 365 ATP、Microsoft Cloud App Security 和 AzureAtp。 若要使用進階搜捕，請[開啟 Microsoft 威脅防護](mtp-enable.md)。
+在 Microsoft 365 的安全性中心，「高級搜尋」支援查詢可查看各種工作區中的資料，包括來自 Microsoft Defender ATP 的裝置、電子郵件、應用程式和身分識別的資料、Office 365 ATP、Microsoft Cloud App Security 和 Azure ATP。 若要使用進階搜捕，請[開啟 Microsoft 威脅防護](mtp-enable.md)。
 
 ## <a name="get-started-with-advanced-hunting"></a>開始使用進階搜捕
 
@@ -49,12 +50,6 @@ ms.locfileid: "42929025"
 | **運用預先定義的查詢** | 探索涵蓋不同威脅搜捕案例的預先定義查詢集合。 | [使用共用查詢](advanced-hunting-shared-queries.md) |
 | **最佳化查詢** | 了解如何建立可結合來自電子郵件和裝置資料的高效查詢。 | - [查詢最佳作法](advanced-hunting-shared-queries.md) <br>- [跨裝置和電子郵件進行搜尋](advanced-hunting-best-practices.md) |
 | **建立自訂偵測規則** | 瞭解您可以如何使用高級搜尋查詢來觸發提醒並自動套用回應動作。 | - [自訂偵測簡介](custom-detections-overview.md)<br>- [自訂偵測規則](custom-detection-rules.md) |
-
-## <a name="get-help-as-you-write-queries"></a>編寫查詢時取得協助
-運用下列功能更快速地編寫查詢：
-- **Autosuggest** --當您撰寫查詢時，高級搜尋會提供 IntelliSense 的建議。 
-- **結構描述參考** - 在您的工作區域旁提供、包含資料表清單和其資料欄的結構描述參考。 如需詳細資訊，請將游標暫留在某項目上。 按兩下某個項目，將它插入查詢編輯器。
-
 
 ## <a name="related-topics"></a>相關主題
 - [了解查詢語言](advanced-hunting-query-language.md)

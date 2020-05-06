@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
-description: 了解如何使用 Office 365 進階威脅防護為貴組織設定封鎖的 URL 清單。 封鎖的 URL 會根據您的 ATP 安全連結原則，套用至電子郵件訊息和 Office 文件。
-ms.openlocfilehash: ff8709a8bf0f8afc27ace2b3977be975f42c33a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何使用 Office 365 進階威脅防護為貴組織設定封鎖的 URL 清單。
+ms.openlocfilehash: 9e0c6e75358c97a21ab0765edf5a15bafe53d75e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638401"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035369"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>使用 ATP 安全連結設定已封鎖的自訂 URLs 清單
 

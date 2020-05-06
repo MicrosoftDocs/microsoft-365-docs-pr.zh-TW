@@ -10,13 +10,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
-description: 系統管理員可以深入瞭解安全性 & 規範中心內的郵件流程儀表板。
-ms.openlocfilehash: 64bf1f2af967f841cd4c21be19fce914df136815
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 系統管理員可以深入瞭解安全性 & 規範中心（包括深入資訊、報告和小元件）中的郵件流程儀表板。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6bd3638f9f7cc2c6c8a7c1abe31b2e7655d110af
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630464"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034143"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件流程深入解析
 

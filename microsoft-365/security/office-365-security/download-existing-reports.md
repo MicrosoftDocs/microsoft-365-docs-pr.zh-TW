@@ -1,5 +1,5 @@
 ---
-title: 在安全性&amp;與合規性中心下載現有報告
+title: 下載現有的報表-安全性 & 規範中心
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -14,13 +14,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
-description: 瞭解如何在安全性&amp;與合規性中心下載一或多個現有報告。
-ms.openlocfilehash: 62f87c3a11e35bd6dae25c786ac2360e9937c84d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 瞭解如何在安全性 & 合規性中心下載一或多個現有報告，以減輕及解決組織面臨的威脅。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 53daaf5bdcb6b9f471e70c6f9451ebcf33d6393d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637577"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034801"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>在安全性&amp;與合規性中心下載現有報告
 
