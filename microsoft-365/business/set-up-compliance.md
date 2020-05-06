@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 設定規范功能以避免資料遺失，並協助保護您的和客戶的敏感資訊。
-ms.openlocfilehash: e0d853223c7e6f455cba6e68ad173b137992d863
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 523d020587bcf16e46263b88ee7654b9c786e7a2
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635117"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048058"
 ---
 # <a name="set-up-compliance-features"></a>設定合規性功能
 
@@ -54,7 +54,7 @@ DLP 隨附許多可用於許多不同地區設定的現成原則範本。 例如
     
 4. 在 [**訴訟**暫止] 對話方塊中，您可以在 [**訴訟暫止持續時間**] 欄位中指定訴訟暫止持續時間。 如果您想要進行無限保留，請將此欄位保留空白。 您也可以新增附注，並將信箱擁有者導向至網站，您可能需要進一步說明訴訟暫止。 \>**儲存**。
     
-**保留：** 例如，您可以啟用自訂的保留原則，以在保留期間結束時保留特定時間量或永久刪除內容。 若要深入瞭解，請參閱[保留原則一覽](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)。
+**保留：** 例如，您可以啟用自訂的保留原則，以在保留期間結束時保留特定時間量或永久刪除內容。 若要深入瞭解，請參閱[保留原則一覽](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)。
 
 ## <a name="set-up-sensitivity-labels"></a>設定敏感度標籤
 

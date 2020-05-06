@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
-description: 在 Microsoft 365 信箱變為非使用中之後，您可以變更指派給非使用中信箱之保留或 Microsoft 365 保留原則的持續時間。 保留期間會定義 [可復原的專案] 資料夾中的專案保留的時間。
-ms.openlocfilehash: 15f140959a63b4c1a6da573c8a31ab23dbe55ca1
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: 在 Office 365 信箱變為非使用中之後，請變更指派給非使用中信箱的保留或 Office 365 保留原則的持續時間。
+ms.openlocfilehash: 7b74cad30adb1600bb37cbe4861a9a811145c065
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942926"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034155"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>變更非作用中信箱的保留持續時間
 

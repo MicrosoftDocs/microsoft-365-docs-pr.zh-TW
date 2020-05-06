@@ -9,15 +9,17 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.custom:
+- seo-marvel-apr2020
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
-description: 本主題說明如何設定 Microsoft Exchange Online Protection (EOP)。 如果您從 Office 365 網域精靈進入這裡，而您不希望使用 Exchange Online Protection 的話，請回到 Office 365 網域精靈。 如果您正在尋找如何設定連接器的詳細資訊，請參閱＜使用 Office 365 中的連接器設定郵件流程＞。
-ms.openlocfilehash: 9a2c876ac7696adfcabf87d4ad13e29374509f1b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 本文中，您將瞭解如何設定 Microsoft Exchange Online Protection （EOP）。
+ms.openlocfilehash: c00d39cae440bc95e26c853e107d8d7a8f4c50d8
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638305"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035281"
 ---
 # <a name="set-up-your-eop-service"></a>設定 EOP 服務
 
@@ -54,7 +56,7 @@ ms.locfileid: "43638305"
 
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>步驟 3：使用 EAC 來設定郵件流程
 
-在 Exchange 系統管理中心（EAC）中建立連接器，以啟用 EOP 與內部部署郵件伺服器之間的郵件流程。如需詳細指示，請參閱[設定連接器以在 Microsft 365 和您自己的電子郵件伺服器之間路由傳送郵件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)。
+在 Exchange 系統管理中心 (EAC) 內建立連接器，來啟用 EOP 與您內部部署郵件伺服器之間的郵件流程。 如需詳細指示，請參閱[設定連接器以在 Microsft 365 和您自己的電子郵件伺服器之間路由傳送郵件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)。
 
 ### <a name="how-do-you-know-this-task-worked"></a>如何才能了解此工作是否正常運作？
 
@@ -73,9 +75,9 @@ ms.locfileid: "43638305"
 
 如果不要將郵件移至每個使用者的 [垃圾郵件] 資料夾，您可以在 Exchange 系統管理中心編輯內容篩選原則，以選擇其他動作。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>步驟 6：使用 Microsoft 365 系統管理中心 將您的 MX 記錄指向 EOP
+## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>步驟 6：使用 Microsoft 365 系統管理中心將您的 MX 記錄指向 EOP
 
-遵循網域設定步驟，更新您網域的 MX 記錄，讓輸入電子郵件流過 EOP。請務必將 MX 記錄直接指向 EOP，而不是讓協力廠商篩選服務轉送電子郵件給 EOP。如需詳細資訊，您可以再次參考[Office 365 的建立 DNS 記錄](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+遵循網域設定步驟，更新您網域的 MX 記錄，讓輸入電子郵件流過 EOP。 請務必直接將 MX 記錄指向 EOP 而非讓協力廠商篩選服務將郵件轉送至 EOP。 如需詳細資訊，請再次參照[建立 Office 365 的 DNS 記錄](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
 
 ### <a name="how-do-you-know-this-task-worked"></a>如何才能了解此工作是否正常運作？
 

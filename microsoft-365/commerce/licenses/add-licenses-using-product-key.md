@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
 description: 瞭解如何將授權新增至您的訂閱。
-ms.openlocfilehash: 694b8ac57e28bbe6b03e5f8aeef87bda1bcc73ba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 20e822d6124b3a4383df5308e7a5d47a34d49ed6
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632422"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045401"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>新增授權或擴充使用產品金鑰支付的訂閱
 
@@ -42,8 +42,7 @@ ms.locfileid: "43632422"
 
 ::: moniker range="o365-worldwide"
 
-
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 尋找您要新增授權的訂閱。 在 [**授權**] 區段中，選取 [**新增更多授權**]。
 
@@ -100,8 +99,7 @@ ms.locfileid: "43632422"
 
 ::: moniker range="o365-worldwide"
 
-
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 尋找您要擴充的訂閱。 在 [**帳單**] 區段中，選取 [**結束日期**]。
 

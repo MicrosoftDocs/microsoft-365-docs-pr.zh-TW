@@ -16,18 +16,18 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解如何從行動裝置存取電子郵件。
-ms.openlocfilehash: 7c318c6d68a0314c750c6ca1e4c3b2d180d9507f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42784d652d26222fc53b3e11f3427cf286cb32dd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629092"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048816"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>從行動裝置存取電子郵件的選項
 
 您的組織已設定的設定會控制哪些行動應用程式可以用來存取電子郵件、行事曆和連絡人的工作帳戶。
   
-適用于您的公司或學校電子郵件的 Outlook for Android 和 Outlook iOS 行動應用程式是專為您的公司或學校電子郵件設計，其提供功能類似[于焦點收件](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978.aspx)匣的功能，可協助您找出與同事合作的會議[時間，並](https://go.microsoft.com/fwlink/?linkid=873406)只尋找可用的會議室。
+適用于您的公司或學校電子郵件的 Outlook for Android 和 Outlook iOS 行動應用程式是專為您的公司或學校電子郵件設計，其提供功能類似[于焦點收件](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978.aspx)匣的功能，可協助您找出與同事合作的會議[時間，並](https://www.microsoft.com/?ref=go)只尋找可用的會議室。
   
 ## <a name="end-user-experience"></a>使用者經驗
 

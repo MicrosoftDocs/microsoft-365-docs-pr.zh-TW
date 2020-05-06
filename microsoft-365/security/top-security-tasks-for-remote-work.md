@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。
-ms.openlocfilehash: 04f59d4f87bda9460930b54818d2ab43933d11e5
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: a5d81eed4d3d6edae48cd82109f83320953782a3
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943540"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046349"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>最常見的12個任務，可供安全性小組用來支援在家運作
 
@@ -37,9 +37,9 @@ ms.locfileid: "43943540"
   
 ||**工作**| 所有 Office 365 企業版方案|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
-|1       |[啟用 Azure Multi-Factor 驗證（MFA）](#1-enable-azure-multi-factor-authentication-mfa)   |   ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|1      |[啟用 Azure Multi-Factor 驗證（MFA）](#1-enable-azure-multi-factor-authentication-mfa)   |   ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |第     | [防範威脅](#2-protect-against-threats) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
-|3       |  [設定 Office 365 的高級威脅防護](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
+|個      |  [設定 Office 365 的高級威脅防護](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4       | [設定 Azure 高級威脅防護（ATP）](#4-configure-azure-advanced-threat-protection)   |   |      |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |5      |   [開啟 Microsoft 高級威脅防護](#5-turn-on-microsoft-advanced-threat-protection)  |  |      | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |6       | [設定電話和平板電腦的 Intune 行動裝置應用程式保護](#6-configure-intune-mobile-app-protection-for-phones-and-tablets) |    |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
@@ -65,7 +65,7 @@ ms.locfileid: "43943540"
 套用這些原則只需要數分鐘，但準備好在今後數天內為您的使用者提供支援。  
 
 
-|方案  |建議  |
+|規劃  |建議  |
 |---------|---------|
 |Microsoft 365 方案（沒有 Azure AD P1 或 P2）     |[啟用 AZURE AD 中的安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性預設值包括針對使用者和系統管理員的 MFA。   |
 |Microsoft 365 E3 （搭配 Azure AD P1）     | 使用[一般條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)來設定下列原則： <br>- [需要對系統管理員進行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [需要對所有使用者進行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [封鎖舊版驗證](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
@@ -100,7 +100,7 @@ Office 365 ATP：
 - [設定 ATP 安全連結](office-365-security/set-up-atp-safe-links-policies.md)
 - [設定 ATP 安全附件原則](office-365-security/set-up-atp-safe-attachments-policies.md)
 - [設定自訂「不要重寫」URL 清單](office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-- [設定自訂封鎖 URL 清單](office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md)
+- [設定自訂封鎖 URL 清單](office-365-security/set-up-a-custom-blocked-urls-list-atp.md)
 
 您必須與 Exchange Online 系統管理員和 SharePoint Online 系統管理員合作，才能設定下列工作負載的 ATP：
 - [開啟適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
@@ -131,7 +131,7 @@ Office 365 ATP：
 ## <a name="6-configure-intune-mobile-app-protection-for-phones-and-tablets"></a>6：設定電話和平板電腦的 Intune 行動裝置應用程式保護
 
 Microsoft Intune 行動應用程式管理（MAM）可讓您在不管理這些裝置的情況下，管理和保護您組織的手機和平板電腦上的資料。 以下為運作方式：
-- 您可以建立應用程式保護原則（應用程式），以決定裝置上的哪些應用程式受管理，以及允許哪些行為（例如，防止將受管理的應用程式的資料複製到非管理的應用程式）。 您為每個 platorm （iOS，Android）建立一個原則。
+- 您可以建立應用程式保護原則（應用程式），以決定裝置上的哪些應用程式受管理，以及允許哪些行為（例如，防止將受管理的應用程式的資料複製到非管理的應用程式）。 您為每個平臺（iOS、Android）建立一個原則。
 - 建立應用程式保護原則之後，您可以在 Azure AD 中建立條件式存取規則，以要求核准的應用程式和應用程式資料保護，以強制執行這些原則。
 
 應用程式保護原則包含許多設定。 幸運的是，您不需要深入瞭解每個設定並權衡選項。 Microsoft 可讓您輕鬆地透過建議起始點來套用設定的設定。 [使用應用程式保護原則的資料保護架構](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)包含三個您可以選擇的層級。 
@@ -154,7 +154,8 @@ Microsoft Intune 行動應用程式管理（MAM）可讓您在不管理這些裝
 
 您建立的 Intune 行動裝置應用程式保護原則，以及要求核准的應用程式和應用程式保護的條件式存取規則，都可以套用到來賓帳戶，並協助保護您的組織資料。 
 
-**附注**：如果您已將電腦簽入裝置管理以要求相容的電腦，您也需要從強制執行裝置規範的條件式存取規則中排除來賓帳戶。 
+> [!NOTE]
+> 如果您已註冊電腦進入裝置管理以要求相容的電腦，您也需要從強制執行裝置規範的條件式存取規則中排除來賓帳戶。 
 
 
 ## <a name="8-enroll-pcs-into-device-management-and-require-compliant-pcs"></a>8：將電腦登記到裝置管理並要求相容的電腦
@@ -179,7 +180,7 @@ Microsoft Intune 行動應用程式管理（MAM）可讓您在不管理這些裝
 
 網路元素（如 VPN 集中式、中央網路出口裝置（例如 proxy 和資料遺失防護裝置）、中央網際網路頻寬、backhaul MPLS 電路、NAT 功能等等，突然因使用它們的整個商務負載而受到大量的壓力影響。 最終結果是不良效能和生產力，以及對在家工作進行調整的使用者不佳的使用者經驗。
 
-使用者所存取的雲端應用程式會提供傳統中透過公司網路傳送流量的某些保護。 如果您已在本文中達成這項步驟，您已針對 Microsoft 365 服務和資料執行一組複雜的雲端安全性控制。 使用這些控制措施後，您可以準備將遠端使用者的流量直接路由傳送至 Office 365。 如果您仍需要 VPN 連結才能存取其他應用程式，您可以執行分割隧道，以大幅改善效能和使用者體驗。 當您在 oganization 中達成合約後，就能在一天內由適當的網路小組完成。
+使用者所存取的雲端應用程式會提供傳統中透過公司網路傳送流量的某些保護。 如果您已在本文中達成這項步驟，您已針對 Microsoft 365 服務和資料執行一組複雜的雲端安全性控制。 使用這些控制措施後，您可以準備將遠端使用者的流量直接路由傳送至 Office 365。 如果您仍需要 VPN 連結才能存取其他應用程式，您可以執行分割隧道，以大幅改善效能和使用者體驗。 在您的組織達成合約後，您就可以在一天內由合理的網路小組完成。
 
 
 如需詳細資訊，請參閱這些檔上的資源：

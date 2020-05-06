@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性分數可協助組織簡化及自動化風險評估，並建議採取建議的動作以協助解決風險。
-ms.openlocfilehash: 77650747e28096fc05c4a9b30bc92545b6f2bc29
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 507ff021095dfc0b18cffb6db313009c22ad2693
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141568"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046271"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft 合規性分數（預覽）
 
@@ -49,8 +49,8 @@ Microsoft 合規性分數是 Microsoft 365 規範中心的預覽功能，可協�
 - **建議的動作**：提供建議，並逐步指導您如何執行控制以最大化排名
 -  **內建的控制項對應**：透過提供內建的共同作業架構，協助您在不斷提高的規範環境中保持最新狀態
 
-> [!IMPORTANT] 
-> 合規性分數不會明確組織符合任何特定標準或法規的絕對度量。 它表示您已採用控制的程度，可降低個人資料和個別隱私權的風險。 符合性分數和合規性管理員的建議不得加以轉譯以保證法規遵從性。 這項服務目前在預覽中，並受限於[線上服務條款](https://go.microsoft.com/fwlink/?linkid=2108910)中的條款及條件。
+> [!IMPORTANT]
+> 您不應將「合規性分數」和「合規性管理員」中的建議視為合規性的保證。 您可以根據法規環境評估和驗證客戶控制措施的效能。 這些服務目前是在預覽中，並受限於[線上服務條款](https://go.microsoft.com/fwlink/?linkid=2108910)中的條款及條件。 另請參閱[Microsoft 365 授權指南以取得安全性和合規性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="relationship-to-compliance-manager"></a>與合規性管理員的關係
 
@@ -64,7 +64,7 @@ Microsoft 合規性分數是 Microsoft 365 規範中心的預覽功能，可協�
 
 ## <a name="understanding-your-score"></a>瞭解您的分數
 
-合規性分數為您提供以 Microsoft 365 資料保護基準為基礎的初始分數。 此基準是一組包含常見工業法規和標準的控制項。 雖然這個分數是評估符合性狀況的好開端，但一旦您新增了與貴組織更為相關的評估，就會變得更強大。
+合規性分數為您提供以 Microsoft 365 資料保護基準為基礎的初始分數。 此基準是一組包含常見業界法規和標準的控制。 雖然這個分數是評估符合性狀況的好開端，但一旦您新增了與貴組織更為相關的評估，就會變得更強大。
 
 例如，如果您的組織屬於金融服務行業，您可能會想要新增 FFIEC 評估。 如果您的組織屬於醫療保健行業，您可以新增 HIPAA/高科技評估。 瞭解如何[在合規性管理員中新增評估](working-with-compliance-manager.md#assessments)。
 

@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: 作為全域管理員，您可以使用攻擊模擬器，在您的組織中執行實際的攻擊案例。 這可協助您找出並找出有漏洞的使用者，以實際的攻擊擊中您的業務。
-ms.openlocfilehash: cac09ed48a46531ea2246f9c3ef798649dc73196
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何使用攻擊模擬器，在您的 Microsoft 365 E5 或 ATP Plan 2 組織中執行模擬網路釣魚和密碼攻擊。
+ms.openlocfilehash: e2c6859291e4a25e56dd8dd20a8ecc5962310680
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638569"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035855"
 ---
 # <a name="attack-simulator-in-atp"></a>ATP 中的攻擊模擬器
 
@@ -29,13 +31,13 @@ ms.locfileid: "43638569"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 若要開啟安全性 & 規範中心，請移<https://protection.office.com/>至。 攻擊模擬器可在**威脅管理** \> **攻擊模擬器**中取得。
+- 若要開啟安全性與合規性中心，請移至 <https://protection.office.com/>。 攻擊模擬器可在**威脅管理** \> **攻擊模擬器**中取得。
 
   ![威脅管理-攻擊模擬器](../../media/ThreatMgmt-AttackSimulator.png)
 
 - 如需不同 Microsoft 365 訂閱中攻擊模擬器可用性的相關資訊，請參閱[Office 365 高級威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
-- 您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 如需安全性 & 規範中心中角色群組的詳細資訊，請參閱[安全性 & 規範中心中的許可權](permissions-in-the-security-and-compliance-center.md)。
+- 您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
 - 您的帳戶必須設定為多重要素驗證（MFA）以在攻擊模擬器中建立及管理活動。 如需相關指示，請參閱[設定多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。
 

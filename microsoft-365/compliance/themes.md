@@ -1,5 +1,5 @@
 ---
-title: 佈景主題
+title: 主題-資料調查
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 4460faebf5bc138eb72e583c154ee6ee9d70c294
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 在資料調查過程中，請透過尋找常見的觀點或概念，使用主題來組織檔。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: e05210036ce2db0a06b6450a611908cf2de24f19
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080910"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034507"
 ---
 # <a name="themes"></a>佈景主題
 
-當有人會撰寫文件時，它們沒有選擇字詞隨機;他們嘗試傳達一些想法或概念，並會據以選擇字所組成。 佈景主題模組叢集討論類似主旨事件，以便檢閱者可以更有效地進行經由文件的文件。
+當有人撰寫檔時，不會隨機播放任何字;他們會嘗試傳遞某些創意或概念，並據此選擇文字。 主題模組會對討論類似主旨的檔進行分類，讓檢閱者可以更有效率地執行檔。
 
-## <a name="how-does-themes-work"></a>佈景主題的運作方式？
+## <a name="how-does-themes-work"></a>主題如何運作？
 
-佈景主題會分析文件以顯示所有文件的一般佈景主題剖析工作集合中的文字。 然後，它將那些佈景主題指派給他們顯示的文件。 它也標籤各有使用中的佈景主題的代表配合文件的文字。 文件可以是多個主題專家的相關，因為在許多情況下，文件會有多個指派給它的佈景主題。 最顯著出現在文件中的佈景主題會被指定為其主控項的佈景主題。
+主題會分析具有工作集中文字的檔，以分析顯示在檔中的一般主題。 然後，它會將這些主題指派給他們顯示的檔。 它也會標出每一種檔中所用的文字，代表主題。 因為檔可能多於一個主題，所以在許多情況下，會為檔指定一個以上的主題。 檔中顯示最醒目的主題是指定為其主要主題。

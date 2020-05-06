@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 威脅防護中建立及管理自訂偵測規則
 description: 瞭解如何根據高級搜尋查詢建立及管理自訂偵測規則
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，自訂偵測，rules，schema，kusto，microsoft 365，Microsoft 威脅防護，RBAC，許可權，MicrosoftDefender ATP
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，自訂偵測，rules，schema，kusto，microsoft 365，Microsoft 威脅防護，RBAC，許可權，Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: adb8c7dfa0050ef2eb0d59e1e55d07da7aaa3f39
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: cdfc23f34d90c9d725ec6fb314728553a987c025
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42931727"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034861"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>建立及管理自訂的偵測規則
 
@@ -114,7 +114,7 @@ DeviceEvents
 
 您可以為每個實體類型（信箱、使用者或裝置）只選取一個資料行。 無法選取查詢未傳回的資料行。
 
-### <a name="3-specify-actions-on-files-or-machines"></a>3. 指定檔或機器的動作。
+### <a name="4-specify-actions-on-files-or-machines"></a>4. 指定檔或機器的動作。
 您的自訂偵測規則可對查詢所傳回的檔案或機器自動採取動作。
 
 #### <a name="actions-on-machines"></a>對機器的動作
@@ -130,7 +130,7 @@ DeviceEvents
 > [!NOTE]
 > Microsoft 威脅防護目前不支援自訂偵測規則的 allow 或 block 動作。
 
-### <a name="4-set-the-rule-scope"></a>4. 設定規則範圍。
+### <a name="5-set-the-rule-scope"></a>5. 設定規則範圍。
 設定範圍以指定規則涵蓋哪些裝置。 此範圍會影響檢查裝置的規則，而不會影響僅檢查信箱和使用者帳戶或身分識別的規則。
 
 當您設定範圍時，您可以選取：
@@ -140,7 +140,7 @@ DeviceEvents
 
 只會查詢範圍中裝置的資料。 此外，只會對那些裝置採取動作。
 
-### <a name="5-review-and-turn-on-the-rule"></a>5. 檢查並開啟規則。
+### <a name="6-review-and-turn-on-the-rule"></a>6. 檢查並開啟規則。
 檢查規則之後，按一下 [**建立**] 進行儲存。 自訂偵測規則會立即執行。 它會以檢查相符專案的設定頻率重新執行，並產生警示和採取回應動作。
 
 ## <a name="manage-existing-custom-detection-rules"></a>管理現有的自訂偵測規則

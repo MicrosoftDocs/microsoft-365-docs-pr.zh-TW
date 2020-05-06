@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: '瞭解在不同地區，您要對 Microsoft 365 for business 訂閱收取多少稅收。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 491c8241d8517d342e04a214d426e937895aab5a
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 0aeabd49477bdef856a7ddb9f3b7c39211be2479
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708128"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045821"
 ---
 # <a name="tax-information"></a>稅務資訊
 
@@ -114,7 +114,7 @@ ms.locfileid: "43708128"
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>新增您的 VAT 識別碼 (僅限歐盟國家/地區)
 
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 尋找您要更新之訂閱的訂閱卡。
 

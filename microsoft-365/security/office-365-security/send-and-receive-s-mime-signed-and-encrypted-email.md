@@ -1,5 +1,5 @@
 ---
-title: 傳送及接收 S/MIME 簽署和加密的 Exchange Online 中的電子郵件
+title: 傳送 & 接收 S/MIME 加密的電子郵件-Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,16 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: 在 Microsoft Outlook 中傳送或回覆 S/MIME 加密郵件的實作方式，與非加密郵件十分相似。
-ms.openlocfilehash: a7050ed2b2cd37b08bd2e95b90577f36086f0e85
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b573cb7a0a299b5b8c942b198e141b98b8301087
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598420"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035393"
 ---
-# <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a>傳送及接收 S/MIME 簽署和加密的 Exchange Online 中的電子郵件
+# <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a>在 Exchange Online 中傳送和接收 S/MIME 已簽署和加密的電子郵件
 
-在 Microsoft Outlook 中傳送或回覆 S/MIME 加密郵件的實作方式，與非加密郵件十分相似。 如需讀取或傳送 S/MIME 加密郵件從網頁 （原先稱為 Outlook Web App） 上的 Outlook 之類的電子郵件程式的詳細資訊，請參閱[使用 outlook 網頁版中的 S/MIME 加密郵件](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480)。
+在 Microsoft Outlook 中傳送或回覆 S/MIME 加密郵件的實作方式，與非加密郵件十分相似。 如需從電子郵件程式（以前稱為 Outlook Web App）讀取或傳送 S/MIME 加密郵件的詳細資訊，請參閱[在網頁型 outlook 中使用 S/MIME 加密郵件](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480)。
 
 ## <a name="for-more-information"></a>如需詳細資訊
 

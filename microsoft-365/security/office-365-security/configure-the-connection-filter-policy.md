@@ -1,5 +1,5 @@
 ---
-title: 設定預設連線篩選原則、IP 允許清單、IP 封鎖清單、啟用或停用安全清單
+title: 設定預設連線篩選原則
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
-description: 若要確保從您信任的人員寄送的電子郵件未遭到封鎖，您可以使用連線篩選原則來建立您信任的 IP 位址的允許清單。 您也可以建立封鎖的寄件者的 IP 封鎖清單。
-ms.openlocfilehash: 54e68c79f78bb1408684ac583edff137cb687b53
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何在 Office 365 中設定連線篩選，以允許或封鎖電子郵件伺服器中的電子郵件。
+ms.openlocfilehash: 0848e9a59df8c312891add29d14eec2dfed420df
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637743"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035079"
 ---
 # <a name="configure-connection-filtering"></a>設定連線篩選
 
@@ -44,7 +46,7 @@ ms.locfileid: "43637743"
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連接至獨立版 Exchange Online Protection PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲指派權限，才能執行這些程序。 若要修改預設連線篩選原則，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要對預設連線篩選原則進行唯讀存取，您必須是**Security Reader**角色群組的成員。 如需安全性 & 規範中心中角色群組的詳細資訊，請參閱[安全性 & 規範中心中的許可權](permissions-in-the-security-and-compliance-center.md)。
+- 您必須已獲指派權限，才能執行這些程序。 若要修改預設連線篩選原則，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要對預設連線篩選原則進行唯讀存取，您必須是**Security Reader**角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
 - 若要尋找您要允許或封鎖之電子郵件伺服器（寄件者）的來源 IP 位址，您可以檢查郵件頭中的 [連接 IP （**CIP**）標頭] 欄位。 若要在不同的電子郵件客戶程式中查看郵件頭，請參閱在[Outlook 中查看網際網路郵件頭](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)。
 

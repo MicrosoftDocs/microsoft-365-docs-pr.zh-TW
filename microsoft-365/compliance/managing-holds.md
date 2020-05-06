@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 1334a90dc2e98e720aa9da392bd558adb34b37b2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 瞭解如何在保管人及其資料來源中放置保留，以保留您的高級 eDiscovery 案例中的相關內容。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 8789889a243bad15f1c29c0bd392d7273574b62c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632958"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034121"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>在高級 eDiscovery 中管理保留
 
@@ -65,7 +66,7 @@ ms.locfileid: "43632958"
  
 6. 選在 [**描述**] 方塊中，新增保留的描述。
   
-7. 按 **[下一步]**。
+7. 按 [下一步]****。
   
 8. 選擇您要保留的內容位置。 您可以將信箱、網站和公用資料夾放入暫止狀態。
 
@@ -122,7 +123,7 @@ Microsoft 團隊是以 Office 365 群組為基礎。 因此，在「高級 eDisc
 - **如何將其他 Microsoft 365 群組或 Microsoft 小組網站對應至保管人？如何在 Microsoft 365 群組和 Microsoft 團隊上放置非 Custodial 保留？** Microsoft 團隊是以 Microsoft 365 群組為基礎。 因此，將其保留在 eDiscovery 案例中非常類似。 將 Microsoft 365 群組和 Microsoft 小組置於暫止狀態時，請記住下列事項。
   - 若要將 Microsoft 365 群組和 Microsoft 小組中的內容設為暫止狀態，您必須指定與群組或小組相關聯的信箱和 SharePoint 網站。
   
-  - 在 Exchange Online 中執行**set-unifiedgroup 指令程式**，以查看 Microsoft 365 群組或 microsoft 小組的屬性。 若要取得與 Microsoft 365 群組或 Microsoft 小組相關聯之網站的 URL，這是一種很好的方式。 例如，下列命令會顯示名為「高層領導」小組之 Microsoft 365 群組的選取屬性：
+  - 在 Exchange Online 中執行**set-unifiedgroup 指令程式**，以查看 Microsoft 365 群組或 microsoft 小組的屬性。 若要取得與 Microsoft 365 群組或 Microsoft 小組相關聯之網站的 URL，這是一種很好的方式。 例如，下列命令會顯示名為「資深領導團隊」的 Microsoft 365 群組的所選屬性：
 
 
     ```text

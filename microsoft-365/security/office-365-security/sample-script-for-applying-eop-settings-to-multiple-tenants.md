@@ -1,5 +1,5 @@
 ---
-title: 套用 EOP 設定至多個承租人的範例指令碼
+title: EOP 設定的範例腳本-多個承租人
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
-description: 下列範例指令碼可讓管理多個承租人 (公司) 的 Microsoft Exchange Online Protection (EOP) 系統管理員，利用 Windows PowerShell 將組態設定套用至他們的承租人。
-ms.openlocfilehash: 83199e809b6001b8b5b3b51d2cd15a6e44d83b03
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，您將瞭解如何使用 PowerShell，將設定設定套用至 Microsoft Exchange Online Protection （EOP）中的承租人。
+ms.openlocfilehash: b875a6c7ba53f459a73699b250ee5ed4a206f1b1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598490"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035927"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>套用 EOP 設定至多個租用戶的範例指令碼
 

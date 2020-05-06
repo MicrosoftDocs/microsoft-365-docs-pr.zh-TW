@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
-description: 若為 Exchange Online Protection (EOP) 客戶，傳送到貴組織的所有郵件會先通過 EOP，您的背景工作才會看見這些郵件。不論透過 Exchange Online 在雲端託管所有的信箱，或將信箱託管於內部部署環境 (稱為獨立案例)，或者繼續利用現有的基礎結構，您都可以在即將通過 EOP 進行處理的郵件路由傳送到您的背景工作收件匣之前，先選擇如何路由傳送這些郵件。
-ms.openlocfilehash: cbe369e5bf522cb966fd448970f07a34a141d610
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，Exchange Online Protection （EOP）客戶可以瞭解如何設定可能符合其業務需求的自訂郵件路由。
+ms.openlocfilehash: cdc919c628f2254ffc971678f7887c37786d2528
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630476"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034229"
 ---
 # <a name="mail-flow-in-eop"></a>EOP 中的郵件流程
 

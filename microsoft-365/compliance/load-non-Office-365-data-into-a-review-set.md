@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 將非 Microsoft 365 資料匯入至高級 eDiscovery 案例中的複查集。
-ms.openlocfilehash: 823ecbdbd50adbb1925bcda154db2c1b8ba24cca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 瞭解如何在高級 eDiscovery 案例中將非 Microsoft 365 資料匯入至審查集，以進行分析。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ed4a26ea1dd68b9198cce67ce0f97580ed4b2a99
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632638"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034421"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>將非 Microsoft 365 資料載入到審閱集
 

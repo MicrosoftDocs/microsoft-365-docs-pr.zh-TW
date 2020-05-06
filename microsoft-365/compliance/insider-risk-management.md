@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 509b8643ffd2b9ee8b364615e2ed3f56afe84733
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e820eed8e47adf040b267ffc0a3cf3e23410d7ef
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637471"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043304"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 中的有問必答風險管理
 
@@ -132,4 +132,5 @@ Microsoft 365 中的測試人員風險管理採用完整的服務和協力廠商
 
 ## <a name="ready-to-get-started"></a>準備好開始使用了嗎？
 
-準備好為您的組織設定測試人員風險管理嗎？ 請參閱[開始使用測試人員風險管理](insider-risk-management-configure.md)來設定必要條件、建立原則並開始接收警示。
+- 如需如何準備在組織中啟用內部使用者風險管理原則，請參閱[Plan for 有問必答風險管理](insider-risk-management-plan.md)。
+- 請參閱[開始使用測試人員風險管理](insider-risk-management-configure.md)來設定必要條件、建立原則並開始接收警示。

@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
-description: 管理員可以從社交媒體平臺、立即訊息平臺及檔共同作業平臺將協力廠商資料匯入至 Microsoft 365 組織中的信箱。 這可讓您在 Microsoft 365 中封存 Facebook、Twitter 及其他協力廠商資料來源中的資料。 然後，您可以針對協力廠商資料使用並套用 Microsoft 365 規範功能（例如法律封存、eDiscovery、In-Place 封存及保留原則）。
-ms.openlocfilehash: e9276a845a29f5c047e303e9e04051ec9f77da1e
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何將「社交媒體平臺」、「立即訊息平臺」及「檔共同作業平臺」的協力廠商資料匯入至 Microsoft 365 信箱。
+ms.openlocfilehash: 0db7019b607388b7c62fe19210b85b8410083f32
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943182"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035481"
 ---
 # <a name="archive-third-party-data"></a>封存第三方資料
 
