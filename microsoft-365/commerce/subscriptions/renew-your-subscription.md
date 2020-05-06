@@ -23,13 +23,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: '瞭解如何使用產品金鑰來更新 Microsoft 365 的商務用訂閱，並開啟或關閉定期計費。 '
-ms.openlocfilehash: 9a44f8e65aad46e82134d8f088f6955bcd37ad3b
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+description: '瞭解如何使用產品金鑰來更新 Microsoft 365 的商務版訂閱，以及如何關閉或開啟定期計費。 '
+ms.openlocfilehash: 7cceae61891da31dbb058af1db12598a02b172e2
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707652"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046225"
 ---
 # <a name="renew-microsoft-365-for-business"></a>更新 Microsoft 365 for business
 
@@ -48,7 +48,7 @@ ms.locfileid: "43707652"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 選擇您想要管理週期性計費的訂閱。
 
@@ -60,7 +60,7 @@ ms.locfileid: "43707652"
 
     > [!NOTE]
     > - 您只可以變更使用中訂閱的**重複計費**設定。 如果您的訂閱已到期或已停用，您必須先將[其重新](reactivate-your-subscription.md)啟用，然後才能開啟或關閉**定期計費**。
-    > - 當**週期性記帳**關閉時，不會立即取消訂閱。 它會保持作用中直到到期為止。 您可以在 [**產品 & 服務**] 頁面上，于訂閱詳細資料的 [**帳單**] 區段中查看到期日。
+    > - 當**週期性記帳**關閉時，不會立即取消訂閱。 它會保持作用中直到到期為止。 您可以在 [**產品**] 頁面上，于 [訂閱詳細資料] 的 [**帳單**] 區段中查看到期日。
     > - 若要瞭解如何立即取消訂閱，請參閱[取消我的訂閱](cancel-your-subscription.md)。
 
 ::: moniker-end
@@ -70,7 +70,7 @@ ms.locfileid: "43707652"
 1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
 
 2. 選擇您想要管理週期性計費的訂閱。
- 
+
 3. 若要開啟**定期計費**，請將開啟開關切換為 [**開啟**]。
 
     ![已開啟定期計費之訂閱卡的特寫。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
@@ -109,10 +109,6 @@ ms.locfileid: "43707652"
   
 [當訂閱結束時，我的資料與存取權會發生什麼情況？](what-if-my-subscription-expires.md)
 
-[新增、更新或移除付款方式](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
-
-[變更您的付款方式](../billing-and-payments/change-payment-method.md)
-  
 [輸入您的產品金鑰](../enter-your-product-key.md)
   
 [購買 Microsoft 365 的試用版](../buy-a-subscription-from-your-free-trial.md)

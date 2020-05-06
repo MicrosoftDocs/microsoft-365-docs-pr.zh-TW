@@ -1,5 +1,5 @@
 ---
-title: 設定 Microsoft 365 商務版 Premium
+title: 設定 Microsoft 365 商務進階版
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 探索 Microsoft 365 商務版 Premium 的設定步驟，包括新增網域和使用者、設定安全性原則等等。
-ms.openlocfilehash: a34ede0002e7e78c5dc437c663fe527cf94e46c5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cfc8523fe88ebca6b8c03db0ad0f6caeba662923
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635757"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048034"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在安裝精靈中設定 Microsoft 365 商務版 Premium
 
@@ -124,7 +124,7 @@ ms.locfileid: "43635757"
 
 ## <a name="secure-windows-10-pcs"></a>保護 Windows 10 電腦
 
-在左側導覽中，選取 [**安裝**]，然後在 [**共同和安全性**] 底下，選擇 [**保護您的 Windows 10 電腦**]。 選擇 [View] （**查看**）立即開始。 請參閱[保護您的 Windows 10 電腦](secure-win-10-pcs.md)以取得完整的指示。
+在左導覽上，選取 [**安裝**]，然後在 [登**入和安全性**] 下，選擇 [**保護您的 Windows 10 電腦**]。 選擇 [View] （**查看**）立即開始。 請參閱[保護您的 Windows 10 電腦](secure-win-10-pcs.md)以取得完整的指示。
 
 ## <a name="deploy-office-365-client-apps"></a>部署 Office 365 用戶端應用程式
 
@@ -136,4 +136,4 @@ ms.locfileid: "43635757"
 
 ## <a name="see-also"></a>請參閱
 
-[Microsoft 365 商務用訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[商務用 Microsoft 365 訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

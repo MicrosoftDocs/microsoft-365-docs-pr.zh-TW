@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Register.com。
-ms.openlocfilehash: 7d1293368a9a7ab94a5556ca266c716280ae85f5
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 125baf224cc9f3f21746a2f802b17f2572b65316
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939116"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048900"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>在 Register.com 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 Register.com 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
   
@@ -123,7 +123,7 @@ ms.locfileid: "43939116"
     
     |主機名稱 * * * *|優先順序 * * * *|郵件伺服器 * * * *|
     |:-----|:-----|:-----|
-    |@  <br/> |高  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/>  <br/>**注意：** 從您的 Microsoft 帳戶取得您的\<*網域金鑰*\>。 <br> [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |高  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/>  <br/>**注意：** 從您的 Microsoft 帳戶取得您的\<*網域金鑰*\>。 <br> [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![複製並貼上表格中的值](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -206,7 +206,7 @@ ms.locfileid: "43939116"
     
     |主機名稱 * * * *|TXT 記錄 * * * *|
     |:-----|:-----|
-    |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。  |
+    |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。  |
    
      ![複製並貼上表格中的值](../../media/b1dc5036-c13c-4306-b1e3-5a38a74643b7.png)
   
@@ -243,8 +243,8 @@ ms.locfileid: "43939116"
     
     |服務 * * * *|Proto * * * *|****名稱****|優先順序 * * * *|體重 * * * *|埠 * * * *|目標 * * * *|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |High (高)  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High (高)  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |High (高)  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High (高)  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
    
     ![複製並貼上表格中的值](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   

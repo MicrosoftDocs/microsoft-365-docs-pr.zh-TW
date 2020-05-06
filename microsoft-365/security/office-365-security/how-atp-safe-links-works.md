@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 「安全連結」可在 Office 文件和電子郵件訊息中提供點擊超連結時即進行驗證的功能。 請閱讀本文以瞭解 ATP 安全連結的運作方式。
-ms.openlocfilehash: 7887c3c2920f472d4baa7ff899c3e3b4f704385d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: e79c44b91eb5de7564058b4dc50c94d2a4223f08
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943708"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046361"
 ---
 # <a name="how-atp-safe-links-works"></a>ATP 安全連結的運作方式
 > [!IMPORTANT] 
@@ -43,7 +43,7 @@ ms.locfileid: "43943708"
     
 6. ATP 安全連結功能會在開啟網站之前立即檢查 URL。 URL 被識別為封鎖、惡意或安全。
         
-   - 如果 URL 是在組織的 [[自訂封鎖 URLs] 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)中所包含的網站上，則會開啟 [[警告] 頁面](atp-safe-links-warning-pages.md)。 
+   - 如果 URL 是在組織的 [[自訂封鎖 URLs] 清單](set-up-a-custom-blocked-urls-list-atp.md)中所包含的網站上，則會開啟 [[警告] 頁面](atp-safe-links-warning-pages.md)。 
     
    - 如果 URL 指向已確定為惡意的網站，則會開啟 [警告][頁面](atp-safe-links-warning-pages.md)。 
     
@@ -61,7 +61,7 @@ ms.locfileid: "43943708"
     
 3. 當使用者按一下檔中的 URL 時，ATP 安全連結服務便會檢查此連結。
     
-   - 如果 URL 是在組織的[自訂封鎖 URLs] 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)中所包含的網站上，則會移至 [[警告] 頁面](atp-safe-links-warning-pages.md)。
+   - 如果 URL 是在組織的[自訂封鎖 URLs] 清單](set-up-a-custom-blocked-urls-list-atp.md)中所包含的網站上，則會移至 [[警告] 頁面](atp-safe-links-warning-pages.md)。
     
    - 如果 URL 指向已確定為惡意的網站，則會將使用者移至 [[警告] 頁面](atp-safe-links-warning-pages.md)。
     

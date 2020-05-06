@@ -9,15 +9,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
-ms.service: O365-seccomp
+ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: 了解 Microsoft 365 如何協助將能源組織移轉至現代共同作業平台，同時協助確保資料和系統安全性及遵循各種法規
-ms.openlocfilehash: 536c895a52024845d8e37c5a7c0b63ba1b2c2752
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- M365solutions
+ms.openlocfilehash: b0a791177f201e07d00ecbc4621509c1029c4734
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637185"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002237"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>能源產業的重要合規性與安全性考量
 :::image type="content" source="../media/solution-arch-center/MSC17_global_016.png" alt-text="使用雲端的各種產業全球檢視圖例比喻":::
@@ -197,7 +199,7 @@ Microsoft 365 監督原則可讓組織監視通訊是否符合公司原則，例
 
 「通信合規性」可監視多個通訊通道，並使用機器學習模型來識別潛在的原則違規，包括 Office 365 電子郵件、Microsoft Teams、商務用 Skype Online、Facebook、Twitter 及 Bloomberg 立即訊息。 「通訊合規性」可協助合規性小組有效且有效率地檢閱郵件的潛在違規：
 - 公司原則，例如可接受的使用、道德標準，和公司特定原則 
-- 機密或機密商業披露，例如未經授權的機密專案通訊，如近期收購、合併、收益披露、改組或領導團隊變更
+- 敏感性或敏感性商業披露，例如未經授權的敏感性專案通訊，如近期收購、合併、收益披露、改組或領導團隊變更
 - 法規合規性需求，例如組織參與的業務或交易類型需遵循 FERC 對於能源市場的法規，其中的相關員工通訊。
 
 通訊合規性提供內建威脅、騷擾和粗話交叉分類器，以協助減少檢閱通訊時的誤報。 這樣可節省檢閱者調查及補救程序的時間。 其可協助檢閱者在冗長往來書信中，將焦點放在已由原則警示醒目提示的特定訊息。 這樣可協助合規性小組更快速地識別並補救風險。 合規性小組也可以透過通訊合規性來輕鬆設定和微調原則、調整解決方案以符合組織的特定需求以及降低誤報。 「通訊合規性」也可以追蹤使用者一段時間內的行為，醒目提示危險行為或原則違規的潛在模式。 最後，其提供彈性的內建補救工作流程，讓檢閱者可以依照定義的公司程序，迅速採取動作，並呈報給法律或人力資源小組。

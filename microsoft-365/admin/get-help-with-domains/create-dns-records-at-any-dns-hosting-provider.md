@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: 了解如何在 Microsoft 365 的任一 DNS 主機服務提供者上驗證您的網域並建立 DNS 記錄。
 ms.custom: okr_smb
-ms.openlocfilehash: c727092c153e43369d5ed52d71bfcd256878db4b
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: a2d9b57f0230aa736944727e39845f3a0a533426
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919502"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048780"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider"></a>在任一 DNS 主機服務提供者建立 DNS 記錄
 
@@ -41,7 +41,7 @@ ms.locfileid: "43919502"
 若要自行設定記錄，以下是必須新增的記錄。 請注意，您的驗證記錄和 MX 記錄對您的網域來說是唯一的。 若要進行設定，您必須為網域取得和使用特定的「權杖」值。 下列步驟說明如何執行這項作業。
   
 > [!IMPORTANT]
-> 對於每個 DNS 主機來說，在建立每種類型的 DNS 記錄時，在其上輸入或貼上資訊的方塊或 *[欄位]* 的確切名稱都不同。 您的 DNS 主機在其網站上可能提供說明，協助您將此處所述的指示對應到網站上的確切欄位。 請記得在[建立 Microsoft 365 的 DNS 記錄](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx)中查看我們是否提供您 DNS 主機的逐步指示。 > 某些 DNS 主機不會讓您建立所有需要的記錄類型，而這會導致 Microsoft 365 的[服務限制](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) (部分機器翻譯)。 例如，如果您的網域主機不支援 SRV、TXT 或 CNAME 記錄，建議您[將網域移轉](../get-help-with-domains/buy-a-domain-name.md)至支援所有必要記錄的 DNS 主機。 建議您將網域移轉至 GoDaddy，以獲得快速且自動化的 Microsoft 365 設定程序。 
+> 對於每個 DNS 主機來說，在建立每種類型的 DNS 記錄時，在其上輸入或貼上資訊的方塊或 *[欄位]* 的確切名稱都不同。 您的 DNS 主機在其網站上可能提供說明，協助您將此處所述的指示對應到網站上的確切欄位。 請記得在[建立 Microsoft 365 的 DNS 記錄](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx)中查看我們是否提供您 DNS 主機的逐步指示。 > 某些 DNS 主機不會讓您建立所有需要的記錄類型，而這會導致 Microsoft 365 的[服務限制](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (部分機器翻譯)。 例如，如果您的網域主機不支援 SRV、TXT 或 CNAME 記錄，建議您[將網域移轉](../get-help-with-domains/buy-a-domain-name.md)至支援所有必要記錄的 DNS 主機。 建議您將網域移轉至 GoDaddy，以獲得快速且自動化的 Microsoft 365 設定程序。 
   
 > [!NOTE]
 > 通常需要幾分鐘，DNS 變更才會生效。 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正變更網域名稱或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md) (部分機器翻譯)。 
@@ -81,7 +81,7 @@ ms.locfileid: "43919502"
       ||||||
       |:-----|:-----|:-----|:-----|:-----|
       |**Record Type** (記錄類型)|**Alias** (別名) 或 **Host Name** (主機名稱)|**Value** (值)|**Priority** (優先順序)|**TTL**|
-      |MX|輸入 **@** 或您的網域名稱。 |MS=ms *XXXXXXXX* <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。    <br/>       [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)     <br/>     |針對 **[Priority]** (優先順序)，為避免跟用於郵件流程的 MX 記錄發生衝突，請使用比任一現有 MX 記錄更低的優先順序。 <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |將此值設為 **1 hour** (1 小時)，或設為等同的分鐘數 ( **60** )、秒數 ( **3600** ) 等。 |
+      |MX|輸入 **@** 或您的網域名稱。 |MS=ms *XXXXXXXX* <br/> **附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Office 365 表格。    <br/>       [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)     <br/>     |針對 **[Priority]** (優先順序)，為避免跟用於郵件流程的 MX 記錄發生衝突，請使用比任一現有 MX 記錄更低的優先順序。 <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |將此值設為 **1 hour** (1 小時)，或設為等同的分鐘數 ( **60** )、秒數 ( **3600** ) 等。 |
    
 2. 儲存記錄。
     
@@ -141,7 +141,7 @@ ms.locfileid: "43919502"
     
    - **Priority** (優先順序)：將 MX 記錄的優先順序設為可用的最高值，通常是 **[0]**。
     
-      如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)
+      如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)
     
    - **主機名稱**：**@**
     

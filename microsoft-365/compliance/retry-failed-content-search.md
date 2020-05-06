@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 請使用 [重試] 按鈕來解析內容位置有錯誤的內容搜尋。
-ms.openlocfilehash: 6eb08c006f206e3ad7850d67e541f6fc3f496441
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: 在調查過程中，您可以使用 [重試] 按鈕來解析內容位置發生錯誤的內容搜尋。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6b2d26cd51c30f2c273abb59199cf4a89f5b7a37
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634171"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034627"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>重試內容搜尋以解決內容位置錯誤
 

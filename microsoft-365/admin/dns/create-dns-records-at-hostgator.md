@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Hostgator。
-ms.openlocfilehash: d2d8d535d137ca3de2fc6dfc04abe8cf61dda07d
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: fb510bcdcdefb141535e9a1099e18b63adffd2ab
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939188"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048996"
 ---
 # <a name="create-dns-records-at-hostgator-for-microsoft"></a>在 Hostgator 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 Hostgator 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
   
@@ -91,7 +91,7 @@ ms.locfileid: "43939188"
     |||||
     |:-----|:-----|:-----|:-----|
     |**Name** <br/> |**TTL** <br/> |**類型** <br/> |**TXT Data** <br/> |
-    |使用您的*domain_name*。 (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |使用您的*domain_name*。 (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. 選取 [**新增記錄**]。
     
@@ -134,9 +134,9 @@ ms.locfileid: "43939188"
   
 5. 在 [新增**記錄**] 區域的新記錄方塊中，輸入或複製並貼上下表中的值。 
     
-    |**優先順序**|**Destination**|
+    |**Priority** (優先順序)|**目的地**|
     |:-----|:-----|
-    |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附注：** 從您\<的 Microsoft 帳戶取得您的*網域金鑰*\> 。    [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附注：** 從您\<的 Microsoft 帳戶取得您的*網域金鑰*\> 。    [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
   
 6. 選取 [**新增記錄**]。
    
@@ -186,7 +186,7 @@ ms.locfileid: "43939188"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 而是，請將必要的 Microsoft 值新增到目前的記錄，以便擁有包含這兩組值的單一 SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords)。 若要驗證您的 SPF 記錄，您可以使用其中一種 [SPF 驗證工具](../setup/domains-faq.md)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 而是，請將必要的 Microsoft 值新增到目前的記錄，以便擁有包含這兩組值的單一 SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records#bkmk_spfrecords)。 若要驗證您的 SPF 記錄，您可以使用其中一種 [SPF 驗證工具](../setup/domains-faq.md)。 
   
 > [!IMPORTANT]
 > 執行此程序之前，您必須先執行本文中第一節的程序[＜將您的網域指向您的代管帳戶＞](#point-your-domain-to-your-hosting-account)。 
@@ -206,7 +206,7 @@ ms.locfileid: "43939188"
     
     |**Name**|**TTL**|**類型**|**TXT Data**|
     |:-----|:-----|:-----|:-----|
-    |使用您的*domain_name*。 (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |使用您的*domain_name*。 (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
   
 4. 選取 [**新增記錄**]。
     
@@ -234,8 +234,8 @@ ms.locfileid: "43939188"
     
     |**Name**|**TTL**|**類型**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip。 _tls。 *domain_name*。 （例如 _sip，_tls fourthcoffee）  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls。 _tcp。 *domain_name*。 （例如 _sipfederationtls，_tcp fourthcoffee）  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip。 _tls。 *domain_name*。 （例如 _sip，_tls fourthcoffee）  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls。 _tcp。 *domain_name*。 （例如 _sipfederationtls，_tcp fourthcoffee）  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
 
 4. 選取 [**新增記錄**]。

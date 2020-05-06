@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: 瞭解如何刪除使用者帳戶。 決定要如何處理使用者的電子郵件、OneDrive 內容，以及是否要保留產品授權或停止付款。
-ms.openlocfilehash: 1d529627841c648684c8a9fe217a761b29749150
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a179915ae92def2a967dc86378346bb905c923e4
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617245"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049456"
 ---
 # <a name="delete-a-user-from-your-organization"></a>刪除貴組織中的使用者
   
@@ -61,7 +61,7 @@ ms.locfileid: "43617245"
 |||
 |:-----|:-----|
 |產品授權  <br/> |您可以從使用者移除授權，並將其從您的訂閱中移除，以停止支付該授權。 如果您選取此選項，則會自動從您的訂閱中移除授權。  <br/><br/> 如果您是透過合作夥伴或大量授權購買，**您就無法移除授權**。 如果您是支付年度計畫，或您正在計費週期的中央，您必須在您的承諾完成後，才能從訂閱中移除授權。  <br/> |
-|OneDrive 內容  <br/> |如果使用者將其檔案儲存為 OneDrive，您可以授予另一個使用者存取這些檔案的許可權。  <br/><br/> 您必須將想要保留的檔案移至 OneDrive 檔設定的保留期間內。 **根據預設，保留期間是30天。** 如果您在刪除使用者之後未移動保留期間內的檔案，則會永久刪除 OneDrive 內容。 若要增加您為已刪除的帳戶 OneDrive 的檔案保留天數，請參閱[設定已刪除使用者的 OneDrive 保留](https://support.office.com/article/fa1641ea-9f03-4f34-a826-dbd8697e76fe.aspx)。  <br/><br/> **重要！** 如果刪除的使用者使用個人電腦從 SharePoint 和 OneDrive 下載檔案，您就無法在其電腦上擦除儲存的檔案。 他們將繼續存取所有從 OneDrive 同步處理的檔案。           |
+|OneDrive 內容  <br/> |如果使用者將其檔案儲存為 OneDrive，您可以授予另一個使用者存取這些檔案的許可權。  <br/><br/> 您必須將想要保留的檔案移至 OneDrive 檔設定的保留期間內。 **根據預設，保留期間是30天。** 如果您在刪除使用者之後未移動保留期間內的檔案，則會永久刪除 OneDrive 內容。 若要增加您為已刪除的帳戶 OneDrive 的檔案保留天數，請參閱[設定已刪除使用者的 OneDrive 保留](https://docs.microsoft.com/onedrive/set-retention)。  <br/><br/> **重要！** 如果刪除的使用者使用個人電腦從 SharePoint 和 OneDrive 下載檔案，您就無法在其電腦上擦除儲存的檔案。 他們將繼續存取所有從 OneDrive 同步處理的檔案。           |
 |電子郵件  <br/> | 授與另一個使用者對已刪除使用者之電子郵件的存取權，會將刪除的使用者信箱轉換成共用信箱。 然後新的信箱擁有者可以存取信箱，並監視新的電子郵件。 您也會有下列選項：  <br/>  <br/>變更顯示名稱-建議您變更顯示名稱，以便在作用中使用者清單中識別共用信箱。  <br/>  開啟自動回復-我們已經為您撰寫了禮貌的自動回復。 您可以將不同的自動回復傳送給組織內的人員，以及組織外的人員。  <br/> <br/> 清除別名-別名是使用者的其他電子郵件地址。 有些組織並未使用它們，否則您不需要在這裡做任何其他事情。 如果使用者確實有別名，我們建議您將其移除，這樣您就可以重複使用這些電子郵件地址。 否則，您無法重複使用這些電子郵件地址，直到已刪除信箱的保留期間已經過去為止。 根據預設，已刪除的信箱可復原30天。 如需詳細資訊，請參閱[刪除或還原 Exchange Online 中的使用者信箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox)。 <br/> |
 |Active Directory  <br/> |如果您的公司使用與 Azure AD 同步處理的 **Active Directory** ，您必須從 Active Directory 中刪除使用者帳戶。 您無法透過 Office 365 執行這個動作。 如需相關指示，請參閱[刪除使用者帳戶](https://go.microsoft.com/fwlink/p/?linkid=841808)。  <br/> |
    
@@ -138,7 +138,7 @@ ms.locfileid: "43617245"
   
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。 如果您未看到此選項，則表示您不是全域系統管理員或計費系統管理員，且無法執行此步驟。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。 如果您未看到此選項，則表示您不是全域系統管理員或計費系統管理員，且無法執行此步驟。
 
 2. 選取 [訂閱] （如果您有多個），然後選取 [**新增/移除**授權以刪除授權]，以便在您雇用其他人員之前不必支付。  
 

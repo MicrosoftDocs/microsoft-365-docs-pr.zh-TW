@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: 瞭解如何升級為新的訂閱。
 monikerRange: o365-worldwide
-ms.openlocfilehash: faddecffd91eb58dab7a3b498de97633b5efd9d0
-ms.sourcegitcommit: 11198133b43eb6a6369e544c8a0dd408d582591c
+ms.openlocfilehash: 7739da2d56fa0d37dd64b22b2959ad6dca198e75
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43796509"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046213"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升級至不同的方案 
 
@@ -42,7 +42,7 @@ ms.locfileid: "43796509"
 
 當您使用 [**升級**] 索引標籤時，您會逐步完成購買新的計畫。 所有使用者會自動指派新方案中的授權，而且舊的計畫會為您取消。
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品 & 服務</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 選取您要升級的訂閱。
 
@@ -59,7 +59,7 @@ ms.locfileid: "43796509"
 
 7. 當您完成時，請選取 [**下單**]。
 
-當您完成結帳時，可能需要幾分鐘的時間來完成升級。 您可以立即開始使用新的訂閱。 選取 [**檢查升級狀態**]，檢查升級的進度。 升級完成後，您將會收到通知。 通知會顯示在 [**產品 & 服務**] 頁面上的新訂閱旁邊。
+當您完成結帳時，可能需要幾分鐘的時間來完成升級。 您可以立即開始使用新的訂閱。 選取 [**檢查升級狀態**]，檢查升級的進度。 升級完成後，您將會收到通知。 通知會顯示在 [**產品**] 頁面上的新訂閱旁邊。
 
 ## <a name="the-upgrade-tab-is-empty"></a>[升級] 索引標籤是空的
 
@@ -137,7 +137,7 @@ ms.locfileid: "43796509"
 
 #### <a name="your-subscription-has-an-unpaid-balance"></a>您的訂閱有未付款的餘額
 
-若要解決此問題，請在 [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品 & 服務</a>] 頁面上找到訂閱，然後選取 [**帳單**] 區段中的 [**立即付款**] 連結。 進行付款之後，請再次檢查 [**升級**] 索引標籤。
+若要解決此問題，請在 [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面上找到訂閱，然後選取 [**帳單**] 區段中的 [**立即支付**] 連結。 進行付款之後，請再次檢查 [**升級**] 索引標籤。
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>升級方案對我的服務和計費有何作用？
 
@@ -159,7 +159,7 @@ ms.locfileid: "43796509"
   
 升級期間會保留所有使用者資料，包括 Exchange 信箱和 SharePoint 線上檔、清單及其他資訊。
   
-### <a name="billing"></a>帳單
+### <a name="billing"></a>計費
 
 您的規劃升級已完成，您的舊訂閱上的帳單將會關閉，而新訂閱上的帳單便會開啟。 您將取得對舊訂閱上任何未使用之服務的按比例貸項。 在升級至新訂閱的30天內，您會收到包含舊訂閱信用額的新發票。
   

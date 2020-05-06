@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以供 Microsoft eNomCentral。
-ms.openlocfilehash: b43261c601b953eef7f98170f04b51d8dcf97d8d
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 601ae58b2b5e196f8bd58cd508ac5722d7f999e4
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939268"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049044"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>在 Microsoft 的 eNomCentral 建立 DNS 記錄
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 eNomCentral 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
   
@@ -125,7 +125,7 @@ ms.locfileid: "43939268"
     
     |**Host Name**|**Address**|**Pref**|
     |:-----|:-----|:-----|
-    |@  <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
+    |@  <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
        
    ![eNom-BP-Configure-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
   
@@ -206,7 +206,7 @@ ms.locfileid: "43939268"
     
     |**Host Name**|**Record Type**|**Address**|
     |:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |@  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
    ![eNom-BP-Configure-4-1](../../media/64c68697-258d-4044-84b1-c28f4a402e3b.png)
   
@@ -237,10 +237,10 @@ ms.locfileid: "43939268"
   
 5. 在這兩筆新記錄的方塊中，輸入或複製並貼上下表中的值。
     
-    |**Service** (服務)|**Protocol** (通訊協定)|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**目標          (主機名稱)**|
+    |**服務**|**Protocol** (通訊協定)|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**目標          (主機名稱)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
+    |_sip  <br/> |_tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
    
     ![eNom-BP-Configure-5-2](../../media/4d478f40-780f-43b9-940b-712b09da8c63.png)
   

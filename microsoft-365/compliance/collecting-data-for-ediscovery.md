@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 462c58f8531265026b34fe3d8484736aefa4c5fa
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+description: 瞭解如何使用 Advanced eDiscovery 中的搜尋工具，識別要在調查中查看的檔組。
+ms.custom: seo-marvel-2020
+ms.openlocfilehash: 9d8a88ddfc6bcb30f8678f39ad2bc4fbaf717ecc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799936"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034347"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>在高級 eDiscovery 中收集案例的資料
 

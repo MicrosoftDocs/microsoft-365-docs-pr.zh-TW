@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
-description: 在安全性與合規性中心建立警示原則，以監視潛在威脅、資料遺失和許可權問題。 然後，您可以查看和管理使用者執行符合警示原則條件的活動時所產生的警示。
-ms.openlocfilehash: 7ccfe4dd85081a628094da4e9c31aa457e28fd0f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 在 Office 365 和 Microsoft 365 中的安全性與合規性中心建立警示原則，以監視潛在威脅、資料遺失和許可權問題。
+ms.openlocfilehash: 7505853a4a3bc263b4547d45838567a593f9759b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637067"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034431"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全性與合規性中心內的警示原則
 

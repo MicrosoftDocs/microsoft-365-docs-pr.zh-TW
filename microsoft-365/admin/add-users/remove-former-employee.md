@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: '遵循此檢查清單，從 Microsoft 365 中移除員工，並保護資料安全。 '
-ms.openlocfilehash: 593460c2e49b7136972c084a9927544e6194cb90
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 74da58878259275d9b39849bd917f7ef35dce82b
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617119"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045293"
 ---
 # <a name="remove-a-former-employee"></a>移除離職員工
   
@@ -159,7 +159,7 @@ ms.locfileid: "43617119"
 
 4. 開啟 [**轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄**位址**] 方塊中，輸入即將取得電子郵件的目前員工（或共用信箱）的電子郵件地址。 
   
-5. 選取 **[儲存]**。 
+5. 選取 [儲存]****。 
     
 6. 請記住，不要刪除離職員工的帳戶。
  
@@ -175,7 +175,7 @@ ms.locfileid: "43617119"
 
 4. 開啟 [**轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄**位址**] 方塊中，輸入即將取得電子郵件的目前員工（或共用信箱）的電子郵件地址。 
   
-5. 選取 **[儲存]**。 
+5. 選取 [儲存]****。 
     
 6. 請記住，不要刪除離職員工的帳戶。
 
@@ -191,7 +191,7 @@ ms.locfileid: "43617119"
 
 4. 開啟 [**轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄**位址**] 方塊中，輸入即將取得電子郵件的目前員工（或共用信箱）的電子郵件地址。 
   
-5. 選取 **[儲存]**。 
+5. 選取 [儲存]****。 
     
 6. 請記住，不要刪除離職員工的帳戶。
 
@@ -213,7 +213,7 @@ ms.locfileid: "43617119"
     
 5. 在 [行動**裝置詳細資料**] 頁面的 [行動**裝置**] 下，選取行動裝置，選取 [](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)**清除資料**![清除裝置]，然後選取 [**封鎖**]。 
     
-6. 選取 **[儲存]**。 
+6. 選取 [儲存]****。 
     
     **秘訣**：請確定您已移除或停用內部部署 Blackberry Enterprise Service 中的使用者。 您也應停用使用者的任何 Blackberry 裝置。 如需有關如何停用使用者的特定步驟，請參閱 Blackberry Business Cloud Services Administration Guide。 
     
@@ -318,7 +318,7 @@ ms.locfileid: "43617119"
 
 
 
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 
 ::: moniker-end

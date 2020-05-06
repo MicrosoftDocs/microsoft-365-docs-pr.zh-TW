@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
-description: 本主題針對想要執行委派管理工作（包括管理其他租使用者（公司）的 Exchange Online Protection （EOP）的 Microsoft 合作夥伴和轉銷商提供常見問題和解答。
-ms.openlocfilehash: b79c0aba026a8d59aac338ceac0f1c4a60d71c4d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 本主題為想要執行委派 Microsoft 365 管理工作的 Microsoft 合作夥伴和轉銷商提供 FAQs 和解答。
+ms.openlocfilehash: d2411734e583cce2be817793e2b39abba2b186a5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637649"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036460"
 ---
 # <a name="delegated-administration-faq"></a>委派管理常見問題集
 

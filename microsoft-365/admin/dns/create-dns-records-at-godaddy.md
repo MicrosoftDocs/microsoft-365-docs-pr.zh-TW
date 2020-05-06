@@ -21,16 +21,16 @@ search.appverid:
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以供 Microsoft GoDaddy。
 ms.custom: okr_smb
-ms.openlocfilehash: 0f71eb512b83451db8fee41b535ecc0c60d8d6bc
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: b1c5539af6683bbf8f94fd15880fb870caf31342
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939212"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049020"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>在 Microsoft 的 GoDaddy 建立 DNS 記錄
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。
 
 如果 GoDaddy 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並設定電子郵件與商務用 Skype Online 等項目的 DNS 記錄。
 
@@ -120,9 +120,9 @@ ms.locfileid: "43939212"
 
     （從下拉式清單中選擇 [ **TTL** ] 值。）
 
-    |**記錄類型**|**Host**|**Points to** (指向)|**Priority** (優先順序)|**TTL**|
+    |**記錄類型**|**Host** (主機)|**Points to** (指向)|**Priority** (優先順序)|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (郵件交換程式)  <br/> |@  <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |1 小時  <br/> |
+    |MX (郵件交換程式)  <br/> |@  <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 小時  <br/> |
 
 6. 選取 [儲存]****。
 
@@ -154,7 +154,7 @@ ms.locfileid: "43939212"
 
     （從下拉式清單中選擇 [ **TTL** ] 值。）
 
-    |**記錄類型**|**Host**|**Points to** (指向)|**TTL**|
+    |**記錄類型**|**Host** (主機)|**Points to** (指向)|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 小時  <br/> |
     |CNAME (Alias) (CNAME (別名))  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |1 小時  <br/> |
@@ -232,8 +232,8 @@ ms.locfileid: "43939212"
 
     |**記錄類型**|**Name** (名稱)|**Target** (目標)|**Protocol** (通訊協定)|**Service** (服務)|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service) (SRV (服務))  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1   <br/> |443  <br/> |1 小時  <br/> |
-    |SRV (Service) (SRV (服務))  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1   <br/> |5061  <br/> |1 小時  <br/> |
+    |SRV (Service) (SRV (服務))  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 小時  <br/> |
+    |SRV (Service) (SRV (服務))  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 小時  <br/> |
 
     ![GoDaddy-BP-Configure-5-1](../../media/a1b15ab1-eb6a-4672-90d1-7ac3e0beb223.png)
 

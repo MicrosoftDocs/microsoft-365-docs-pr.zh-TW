@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有關新郵件保護功能的運作方式有疑問嗎？ 在這裡檢查答案。
-ms.openlocfilehash: 93b57e2b973fadd8b4ac2388e42f460114228c3c
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: 75b414aecfbe9d3952d7e3c5994946775d353a6f
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781458"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049518"
 ---
 # <a name="message-encryption-faq"></a>郵件加密常見問題
 
@@ -109,11 +109,11 @@ Microsoft 365 使用者可以從 Outlook for Windows 和 Mac （2013和2016）�
   
 ## <a name="are-pdf-file-attachments-supported"></a>是否支援 PDF 檔案附件？
 
-這個簡短的答案是肯定！ PDF 加密可讓您透過安全通訊或安全共同作業來保護機密 PDF 檔。 當您傳送電子郵件時，Office 365 服務會加密 PDF 檔案附件而非 Outlook 用戶端。 
+這個簡短的答案是肯定！ PDF 加密可讓您透過安全通訊或安全共同作業來保護機密 PDF 檔。 當您傳送電子郵件時，Office 365 服務會加密 PDF 檔案附件而非 Outlook 用戶端。
 
-一旦您啟用 PDF 檔案附件加密，您就可以在網頁上的 Outlook、Outlook for iOS 和適用于 Android 的 Outlook 中，對您傳送的 Pdf 進行加密，而不需要任何其他步驟。
+針對網頁版 outlook、Outlook for iOS 和 Outlook for Android，您可以加密您傳送的 Pdf，而不需要任何其他步驟。 這些用戶端原本都支援 PDF 加密。
 
-Outlook 桌面不會以本機方式支援 PDF 檔案附件的加密。 若要解決此問題，您仍然可以在您的組織中啟用 PDF 檔附件加密。 當您使用 PDF 附件從 Outlook Desktop 傳送郵件時，用戶端會先將郵件與附件一起傳送給服務。 當服務接收到檔案時，服務會對 Exchange Online 中的資料遺失防護（DLP）原則或郵件流程規則套用 OME 保護。 接下來，Exchange Online 會傳送包含受保護的 PDF 檔附件的郵件。
+Outlook 桌面不會以本機方式支援 PDF 檔案附件的加密。 相反地，您必須設定 Exchange 郵件流程規則或 DLP，以先將加密套用至 PDF 附件。 當您使用 PDF 附件從 Outlook Desktop 傳送郵件時，用戶端會先將郵件與附件一起傳送給服務。 當服務接收到檔案時，服務會對 Exchange Online 中的資料遺失防護（DLP）原則或郵件流程規則套用 OME 保護。 接下來，Exchange Online 會傳送包含受保護的 PDF 檔附件的郵件。
 
 若要啟用 PDF 附件的加密，請在[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)中執行下列命令：
 
@@ -131,7 +131,7 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
 
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>我是否可以透過設定原則自動加密郵件？
 
-是。 使用 Exchange Online 中的郵件流程規則，根據特定條件自動加密郵件。 例如，您可以建立以收件者識別碼、收件者網域或郵件內文或主旨的內容為基礎的原則。 請參閱[定義郵件流程規則，以加密 Office 365 中的電子郵件](define-mail-flow-rules-to-encrypt-email.md)。
+可以。 使用 Exchange Online 中的郵件流程規則，根據特定條件自動加密郵件。 例如，您可以建立以收件者識別碼、收件者網域或郵件內文或主旨的內容為基礎的原則。 請參閱[定義郵件流程規則，以加密 Office 365 中的電子郵件](define-mail-flow-rules-to-encrypt-email.md)。
   
 ## <a name="can-i-automatically-remove-encryption-on-incoming-and-outgoing-mail"></a>我可以自動移除傳入和傳出郵件的加密嗎？
 
@@ -151,7 +151,7 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>是否可以使用郵件加密搭配電子檔探索等相容性功能？
 
-是。 所有加密的電子郵件都可透過 Microsoft 365 符合性功能來發現。
+可以。 所有加密的電子郵件都可透過 Microsoft 365 符合性功能來發現。
 
 ## <a name="can-i-remove-encryption-from-email"></a>我可以從電子郵件移除加密嗎？
 

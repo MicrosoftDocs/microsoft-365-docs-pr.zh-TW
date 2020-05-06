@@ -6,18 +6,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.collection:
-- Ent_O365
-- Strat_O365_Enterprise
 - M365-security-compliance
-ms.service: O365-seccomp
+ms.prod: microsoft-365-enterprise
+ms.custom:
+- M365solutions
 localization_priority: Priority
 description: 了解 Microsoft 365 如何協助將金融服務移轉至現代共同作業平台，同時協助確保資料和系統安全性及遵循各種法規
-ms.openlocfilehash: f312c1a44f81dda2cd89937354423f686eb7346b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+f1.keywords: NOCSH
+ms.openlocfilehash: e3ed7d40cf7b4452dd2bc47e870e0a7afe10d629
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632604"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002364"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>美國銀行和資本市場的重要合規性與安全性考量
 
@@ -259,7 +260,7 @@ Microsoft 365 的安全性服務是由 Intelligent Security Graph 提供。 為�
 
 最終，這些細則要求組織在涉及銀行服務、銷售或交易的角色之間建立原則並實施資訊屏障，以防止與分析師交換資訊和通訊。
 
-[資訊屏障](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide)能讓您在 Office 365 環境中建立道德管束，讓規範管理員或其他獲授權的管理員定義原則，以允許或防止團隊內使用者群組之間的通訊。 資訊屏障會對特定動作執行檢查，以防止未經授權的通訊。 在內部團隊正在進行合併/收購或機密交易，或使用必須嚴格限制的敏感性內部資訊的情況下，資訊屏障也可以限制通訊。
+[資訊屏障](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide)能讓您在 Office 365 環境中建立道德管束，讓規範管理員或其他獲授權的管理員定義原則，以允許或防止團隊內使用者群組之間的通訊。 資訊屏障會對特定動作執行檢查，以防止未經授權的通訊。 在內部團隊正在進行合併/收購或敏感性交易，或使用必須嚴格限制的敏感性內部資訊的情況下，資訊屏障也可以限制通訊。
 
 Microsoft 365 中的資訊屏障支援 Teams 中的交談和檔案。 資訊屏障可以防止以下與通訊相關的動作，以協助遵守 FINRA 法規：
 

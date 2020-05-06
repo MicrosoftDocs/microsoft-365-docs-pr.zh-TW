@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Cloudflare。
-ms.openlocfilehash: 116132d096db61e7004315dcf159fc78dd790d43
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 36578d8eed2c5630a9ce5abfb355983a26028888
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939316"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049068"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>在 Cloudflare 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 Cloudflare 是您的 DNS 主機服務提供者，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、商務用 Skype Online 等的 DNS 記錄。
   
@@ -131,7 +131,7 @@ ms.locfileid: "43939316"
     
     |**類型**|**名稱**|**郵件伺服器**|**Priority** (優先順序)|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附注：** 從 Microsoft 365 帳戶取得您* \<的網域金鑰\> * 。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/>|30 分鐘  <br/> |
+    |MX  <br/> |@  <br/> |*\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附注：** 從 Microsoft 365 帳戶取得您* \<的網域金鑰\> * 。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |1  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 分鐘  <br/> |
    
 
   
@@ -193,7 +193,7 @@ ms.locfileid: "43939316"
     
     |**類型**|**名稱**|**TTL**|**內容**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |@  <br/> |30 分鐘  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。   |
+    |TXT  <br/> |@  <br/> |30 分鐘  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。   |
 
  
 5. 選取 [儲存]****。
@@ -216,10 +216,10 @@ ms.locfileid: "43939316"
 
     在 [ **DNS 管理**] 頁面上，按一下 [**新增記錄**]，然後選取下表中第一列的值。
         
-    |**類型**|**Service** (服務)|**Protocol** (通訊協定)|**Name**|**TTL**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|
+    |**類型**|**服務**|**Protocol** (通訊協定)|**Name**|**TTL**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|_sip |TLS |使用您的*domain_name*;例如，contoso.com  |30 分鐘 | 100|1  |443 |sipfed.online.lync.com  |
-    |SRV|_sipfederationtls | TCP|使用您的*domain_name*;例如，contoso.com   |30 分鐘 |100 |1  |5061 | sipfed.online.lync.com |
+    |SRV|_sip |TLS |使用您的*domain_name*;例如，contoso.com  |30 分鐘 | 100|1 |443 |sipfed.online.lync.com  |
+    |SRV|_sipfederationtls | TCP|使用您的*domain_name*;例如，contoso.com   |30 分鐘 |100 |1 |5061 | sipfed.online.lync.com |
 
   
 5. 選取 [儲存]****。

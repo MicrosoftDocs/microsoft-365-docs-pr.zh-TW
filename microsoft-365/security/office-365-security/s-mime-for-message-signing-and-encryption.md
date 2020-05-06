@@ -1,5 +1,5 @@
 ---
-title: 可用於 Exchange Online 中訊息簽署和加密的 S/MIME
+title: Exchange Online 中的加密 S/MIME-Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,13 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
-description: 系統管理員可以在 Exchange Online 中瞭解如何使用 S/MIME。
-ms.openlocfilehash: 294fd22ff81e9ddaabf0664afb34a37c008a6d09
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 系統管理員可以瞭解如何在 Exchange Online 中使用 S/MIME （安全/多用途網際網路郵件擴充）來加密電子郵件，並以數位方式簽署郵件。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8c45df36535e7b5af2648b82f83159315b94bec8
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634325"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036617"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>可用於 Exchange Online 中訊息簽署和加密的 S/MIME
 

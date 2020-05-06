@@ -1,5 +1,5 @@
 ---
-title: 管理員的 Microsoft 365 群組的概述
+title: 系統管理員的 Microsoft 365 群組概觀 (部分機器翻譯)
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 365 群組。
-ms.openlocfilehash: 9d47383d3226d5a18b9a30a579f6497c7ce63477
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: aca6dfee26e05f162b8cc3efb69005d773a9a9dc
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630040"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049164"
 ---
-# <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理員的 Microsoft 365 群組的概述
+# <a name="overview-of-microsoft-365-groups-for-administrators"></a>系統管理員的 Microsoft 365 群組概觀 (部分機器翻譯)
 
 Microsoft 365 群組是一種基礎成員資格服務，可促進整個 Microsoft 365 的所有團隊合作。 使用 Microsoft 365 群組，您可以讓一組人員能夠存取共同作業資源的集合，供他們共用。 這些資源包括：
 
@@ -56,7 +56,7 @@ Microsoft 365 群組是一種基礎成員資格服務，可促進整個 Microsof
 - [指定誰可以建立群組](manage-creation-of-groups.md)
 - [為組織中的群組建立命名原則](groups-naming-policy.md)
 - [選擇建立群組時所要使用的網域](choose-domain-to-create-groups.md)
-- [管理群組的來賓存取權](manage-guest-access-in-groups.md)
+- [管理來賓存取群組](manage-guest-access-in-groups.md)
 - [復原已刪除的群組](restore-deleted-group.md)（在刪除30天內）
 
 如果您想要更自動化的方法來管理 Microsoft 365 群組的生命週期，您可以使用到期原則，在特定的時間間隔內到期群組。 群組的擁有者會在群組到期前取得一封電子郵件30、15及1天，以允許使用者在仍需要時輕易更新群組。 請參閱： [Microsoft 365 群組到期原則](office-365-groups-expiration-policy.md)。
@@ -79,7 +79,7 @@ Microsoft 365 群組是一種基礎成員資格服務，可促進整個 Microsof
 |檔存放區|每個訂閱的使用者需要 1 tb + 10 GB + 購買的任何額外儲存空間。 您可以購買無限量的額外儲存空間。|
 |群組信箱大小|50 GB|
 
-組織可以擁有的預設 Microsoft 365 群組數目為500000，但可按要求增加。 如需 Microsoft 365 群組限制的詳細資訊，請參閱[Microsoft 365 群組-系統管理](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)說明。
+組織可以擁有的預設 Microsoft 365 群組數目為500000，但可按要求增加。 如需 Microsoft 365 群組限制的詳細資訊，請參閱[Microsoft 365 群組-系統管理](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)說明。
 
 當您具有群組使用量的可操作資訊時，管理 Microsoft 365 群組會更有效。 Microsoft 365 系統管理中心有一個報告工具，可讓您查看儲存空間使用方式、您擁有的使用中群組數目，甚至是使用者使用群組的方式。 如需詳細資訊，請參閱： [admin center 中的 Microsoft 365 報告](../activity-reports/office-365-groups.md)。
 

@@ -1,7 +1,7 @@
 ---
 title: 一般資料保護規定
-description: 一般資料保護規定 (GDPR) 的 Microsoft 技術指導
-keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR
+description: 了解一般資料保護規定 (GDPR) 的 Microsoft 技術指導及尋找實用資訊。
+keywords: Microsoft 365、Microsoft 365 教育版, Microsoft 365 文件, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -15,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 960a09c89c855861e3db0402f40dd558b27527ac
-ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: fb89a24e48dbdadd9a1af863cb8c44ded46435b1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42322552"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036206"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般資料保護摘要
 
@@ -249,7 +250,7 @@ GDPR 提供歐盟派駐人員，透過一組「資料主體權限」控制個人
 
 **如果不符合合規性，公司會被處以多少罰鍰？**
 
-公司若無法符合特定 GDPR 需求，最高可罰 2 千萬歐元或全球年度營業額的 4% (以較大者為准)。 如果您無法遵守 GDPR 需求，額外的個別救濟可能會增加您的風險。
+公司若無法符合特定 GDPR 需求，最高可罰 2 千萬歐元 (&euro;) 或全球年度營業額的 4% (以較大者為准)。 如果您無法遵守 GDPR 需求，額外的個別救濟可能會增加您的風險。
 
 **我的公司需要指派資料保護長 (DPO) 嗎？**
 
@@ -273,7 +274,7 @@ GDPR 會規範個人資料的收集、儲存、使用和共用。 依據 GDPR，
 
 **具體來說，會將什麼內容認定為個人資料？**
 
-個人資料是任何與已識別或可識別個人相關的資訊。 個人的私人、公開或公司角色之間沒有區別。 個人資料可能包括：
+個人資料是任何與已識別或可識別個人相關的資訊。 個人的私人、公開或工作角色之間沒有區別。 個人資料可能包括：
 
 - 姓名
 - 住家地址

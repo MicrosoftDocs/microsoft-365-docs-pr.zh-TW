@@ -13,42 +13,16 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用資訊障礙，以確保您的組織內的 Microsoft 小組能夠進行通訊法規遵從性。
-ms.openlocfilehash: 344c2b6999a8fd890358a25b39ef3a37abc9ef58
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c4b4b31de90e8c72c346da5574b8854492de19ba
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636101"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44047994"
 ---
 # <a name="information-barriers"></a>資訊屏障
 
 ## <a name="overview"></a>概觀
-
-<!--
-
-# Information barriers (click-through test)
-
-## Overview
-
-
-
- [![Click-Through for Information Barriers](./media/information-barriers/clickthrough-information-barriers-thumbnail.png)](./media/information-barriers/clickthrough-information-barriers.pdf)
-
-
-Click through an overview of Information Barriers: [PDF](./media/information-barriers/clickthrough-information-barriers.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/Click-Through-Test/microsoft-365/compliance/media/information-barriers/Clickthrough-Information-Barriers.pptx)
-
-OLD: Move comment field here
-
- [![Click-Through for Information Barriers](./media/information-barriers/Clickthrough_InformationBarriers_Thumbnail.png)](./media/information-barriers/Clickthrough_InformationBarriers.pdf)
-
-For the PowerPoint slide of this Click-Through, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/Click-Through-Test/microsoft-365/compliance/media/information-barriers/InfoBarriersExample.pptx).
-
->[!Tip]
->Try this new [Click-Through on information barriers](media/information-barriers/Clickthrough_InformationBarriers.pdf) for a quick overview of the essential facts.
->
-
---> 
-
 
 Microsoft 雲端服務包含強大的通訊和協同作業功能。 不過，假設您想要限制兩個群組之間的通訊，以避免組織中發生利益衝突。 或者，您可能想要限制組織內特定人員之間的通訊，以保護內部資訊。 Microsoft 365 可跨群組和組織進行通訊及共同作業，所以有沒有方法可以限制特定使用者群組之間的通訊（必要時）？ 透過資訊障礙，您可以！ 
 

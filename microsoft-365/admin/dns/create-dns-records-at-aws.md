@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以用於 Microsoft 的 Amazon Web 服務（AWS）。
-ms.openlocfilehash: daac9a8efedc8a2710217e352d9793ead954d2c3
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: d75822feef5848575b8ec7fe09f834f67cdc6c55
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939352"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049104"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>在 Microsoft 的 Amazon Web 服務（AWS）上建立 DNS 記錄
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 AWS 是您的 DNS 主機服務提供者，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、商務用 Skype Online 等的 DNS 記錄。
   
@@ -171,7 +171,7 @@ ms.locfileid: "43939352"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.md)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.md)。 
   
 1. 首先請用[這個連結](https://console.aws.amazon.com/route53/home)移至 AWS 上您的網域頁面。 系統會提示您先登入。
     
@@ -187,7 +187,7 @@ ms.locfileid: "43939352"
     
     |**價值：**|
     |:-----|
-    |v=spf1 include:spf.protection.outlook.com -all  <br/> (系統會自動提供畫面上指示所需的引號。您不需要手動輸入。)  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |v=spf1 include:spf.protection.outlook.com -all  <br/> (系統會自動提供畫面上指示所需的引號。您不需要手動輸入。)  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
     ![AWS-BP-Configure-4-2](../../media/beb3c086-eaf8-4245-9860-18512a3ff72e.png)
   
@@ -214,8 +214,8 @@ ms.locfileid: "43939352"
     
     |**Name**|**Type**|**Alias**|**TTL (Seconds)**|**值**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip。 _tls|SRV - 服務定位器|無|300|100 1 443 sipdir.online.lync.com。 **此值必須以句點（.）結尾**><br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |簡易|
-    |_sipfederationtls。 _tcp|SRV - 服務定位器|無|300|100 1 5061 sipfed.online.lync.com。 **This value MUST end with a period (.)**<br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |簡單|
+    |_sip。 _tls|SRV - 服務定位器|無|300|100 1 443 sipdir.online.lync.com。 **此值必須以句點（.）結尾**><br> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |簡易|
+    |_sipfederationtls。 _tcp|SRV - 服務定位器|無|300|100 1 5061 sipfed.online.lync.com。 **This value MUST end with a period (.)**<br> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |簡單|
    
     ![AWS-BP-Configure-5-1](../../media/c3f841d3-6076-428f-bb04-e71cc5f392fa.png)
   

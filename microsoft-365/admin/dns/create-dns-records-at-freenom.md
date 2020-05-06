@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Freenom。
-ms.openlocfilehash: a7ad45d3d785478966df5120567836200de316da
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 39963b5c0f5f3f82fe193160e8aa8ab03894cedd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939224"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049032"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>在 Freenom 建立 Microsoft 的 DNS 記錄
 
@@ -137,9 +137,9 @@ ms.locfileid: "43939224"
   
 8. 在每一筆新記錄的方塊中，輸入或複製並貼上下表第一列中的值。 
     
-    |**Name**|**Type**|**TTL**|**Target** (目標)|**優先順序**|
+    |**Name**|**Type**|**TTL**|**Target** (目標)|**Priority** (優先順序)|
     |:-----|:-----|:-----|:-----|:-----|
-    |(保留空白)  <br/> |MX (郵件交換程式)  <br/> |3600（秒）  <br/> |\<網域金鑰\>。 mail.protection.outlook.com  <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9) <br/> |
+    |(保留空白)  <br/> |MX (郵件交換程式)  <br/> |3600（秒）  <br/> |\<網域金鑰\>。 mail.protection.outlook.com  <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![Freenom MX 記錄](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
@@ -222,7 +222,7 @@ ms.locfileid: "43939224"
     
     |**Name**|**記錄類型**|**TTL**|**Target** (目標)|
     |:-----|:-----|:-----|:-----|
-    |(保留空白)  <br/> |TXT  <br/> |3600（秒）  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |(保留空白)  <br/> |TXT  <br/> |3600（秒）  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
     ![Freenom SPF 的 TXT 值](../../media/1b3b1199-9104-4ca1-acdb-786d139c21ac.png)
   

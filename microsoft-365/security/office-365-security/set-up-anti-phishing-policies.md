@@ -13,13 +13,15 @@ localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
-description: 深入瞭解 Exchange Online Protection （EOP）中的基本反網路釣魚原則，以及 Office 365 Advanced 威脅防護中的高級 ATP 反網路釣魚原則。
-ms.openlocfilehash: 32214d24c7ed030b3bc7aad36bf3ac99f68a17fb
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，您將瞭解如何在 Microsoft 365 中設定反網路釣魚防護，以保護您的組織免受惡意網路釣魚攻擊。
+ms.openlocfilehash: bbde781114cadb6535bdb09c133d834ce23793a3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949378"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035329"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 

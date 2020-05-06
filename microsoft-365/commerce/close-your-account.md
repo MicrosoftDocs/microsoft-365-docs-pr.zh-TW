@@ -15,12 +15,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: 瞭解如何使用 Microsoft 關閉您的帳戶。
-ms.openlocfilehash: b71cfe8246b5e3e9471c76cf8043bad52840f194
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 43ec3fe2eedc354c0494818f97b01e8de63694c7
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942850"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045773"
 ---
 # <a name="close-your-account"></a>關閉您的帳戶
 
@@ -40,7 +40,7 @@ ms.locfileid: "43942850"
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>步驟2：取消所有作用中的訂閱
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品 & 服務</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 如果 [訂閱] 清單位於**表格**視圖中，請在右側選取 [**卡片**]。
 
@@ -52,7 +52,7 @@ ms.locfileid: "43942850"
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>步驟3：刪除所有已停用的訂閱
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品 & 服務</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 如果 [訂閱] 清單位於**表格**視圖中，請在右側選取 [**卡片**]。
 

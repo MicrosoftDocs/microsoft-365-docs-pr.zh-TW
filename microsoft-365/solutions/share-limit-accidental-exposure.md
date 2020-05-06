@@ -5,21 +5,25 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 深入了解如何在與組織外的人員共用檔案時，限制資訊意外暴露。
-ms.openlocfilehash: fbe97eef2841da9bd46d7f05e3b26dea40cd1bd2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 93fceaca45a3f814341678c2d29d5feea3653369
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632580"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002165"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>在與組織外的人員共用檔案時，限制資訊意外暴露。
 
-當與組織外的人員共用檔案和資料夾時，有許多選項可以降低意外共用機密資訊的機會。 您可以從本文中選擇最符合貴組織需求的選項。
+當與組織外的人員共用檔案和資料夾時，有許多選項可以降低意外共用敏感性資訊的機會。 您可以從本文中選擇最符合貴組織需求的選項。
 
 ## <a name="use-best-practices-for-anyone-links"></a>使用適用於 [任何人] 連結的最佳做法
 

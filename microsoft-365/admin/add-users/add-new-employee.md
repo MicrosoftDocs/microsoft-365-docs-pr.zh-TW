@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: 針對電子郵件、Skype 和 Office 應用程式，將新員工新增至 Microsoft 365 for business。
-ms.openlocfilehash: 43685a786da7ec43c982f91b4fca554424cad624
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f25f9445cba31942a58c656d8d7f212dc093024d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618893"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049494"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>將新員工新增至 Microsoft 365
 
@@ -82,7 +82,7 @@ ms.locfileid: "43618893"
 |設定商務用 Skype，讓您可以在公司內或世界各地與同事或業務夥伴連線。 您可以從 IM、語音或視頻通話開始交談。  <br/> |[在您的電腦上安裝商務用 Skype](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx)。  <br/> <br/>若要瞭解如何使用商務用 Skype，請[觀賞影片。](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>您是否已設定商務用 Skype，讓您的員工可以與您的商務用免費 Skype app 的外部人員聯繫？ 如果不是，請告訴您的新員工，讓他們知道使用商務用 Skype 時所期望的專案。  <br/> |
 |若要在您的手機上取得電子郵件或使用商務用 Skype，請在行動裝置上安裝應用程式。  <br/> |如果您想要設定 Outlook 行動應用程式，以便您可以透過電話取得電子郵件。 如需相關指示，請參閱[iOS](https://support.office.com/article/b2de2161-cc1d-49ef-9ef9-81acd1c8e234.aspx)、 [Android](https://support.office.com/article/886db551-8dfa-4fd5-b835-f8e532091872.aspx)、 [Windows Phone](https://support.microsoft.com/en-us/office/set-up-email-on-windows-phone-181a112a-be92-49ca-ade5-399264b3d417) <br/> <br/>如果您想要在行動裝置上使用商務用 Skype，請下載並安裝行動應用程式。 如需相關指示，請參閱[iOS](https://support.microsoft.com/en-us/office/install-skype-for-business-on-a-mobile-device-3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS)、 [Android](https://support.microsoft.com/en-us/office/sign-in-to-skype-for-business-on-a-mobile-device-4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android)、 [Windows Phone](https://support.microsoft.com/en-us/office/sign-in-to-skype-for-business-on-a-mobile-device-4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone) <br/> |
 |完成商務訓練的 OneDrive，協助您瞭解如何在雲端中儲存及組織檔、簡報和試算表。  <br/> |使用商務用 OneDrive，將商務相關的檔保存在雲端中。 即使您已登入其他電腦上的 Microsoft 365，您還是可以隨時取得您的內容。 [觀賞影片以瞭解如何使用您的商務 OneDrive](https://support.office.com/article/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde.aspx) <br/><br/> **訓練：** [商務訓練的 OneDrive](https://support.office.com/article/1f608184-b7e6-43ca-8753-2ff679203132.aspx) （為商務選取 OneDrive）。  <br/> |
-|完成 SharePoint 線上訓練，協助您與同事共同作業和共用內容。  <br/> |您的同事也可以存取的檔的最佳位置是在 SharePoint 線上。  <br/> <br/>**訓練：** [影片：使用 SharePoint Online 與小組內容共同](https://support.office.com/article/2dd9aeff-7749-4b78-9696-eb0f6267f1f5.aspx)作業 <br/><br/> **瞭解：** 您的組織如何使用 SharePoint 線上，以及哪種檔案類型會儲存在這裡。 此外，哪些檔會儲存在 OneDrive 的商務中。  <br/> |
+|完成 SharePoint 線上訓練，協助您與同事共同作業和共用內容。  <br/> |您的同事也可以存取的檔的最佳位置是在 SharePoint 線上。  <br/> <br/>**訓練：** [影片：使用 SharePoint Online 與小組內容共同](https://support.office.com/article/what-is-sharepoint-online-c17b6824-cc22-478f-8757-497cc6b57121)作業 <br/><br/> **瞭解：** 您的組織如何使用 SharePoint 線上，以及哪種檔案類型會儲存在這裡。 此外，哪些檔會儲存在 OneDrive 的商務中。  <br/> |
 
    
 ## <a name="related-articles"></a>相關文章

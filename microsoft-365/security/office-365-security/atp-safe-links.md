@@ -15,6 +15,8 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -23,13 +25,13 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: 「安全連結」可在 Office 文件和電子郵件訊息中提供點擊超連結時即進行驗證的功能。 使用安全連結來保護組織不受網路釣魚及其他攻擊的威脅。
-ms.openlocfilehash: 912c2fc0e76ca39ff4d600f53386d65e43946758
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 在本文中，您將瞭解如何使用安全連結來保護您的組織免受網路釣魚和其他攻擊。
+ms.openlocfilehash: 5f166848fe5c2beb46fedfaa33394e1e73c94a10
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638557"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045246"
 ---
 # <a name="atp-safe-links"></a>ATP 安全連結
 
@@ -85,7 +87,7 @@ Office 365 ATP 安全連結 ([進階威脅防護](office-365-atp.md)的一部份
 |Jean 是群組成員，該群組的 ATP 安全連結原則涵蓋電子郵件和 Office 文件中的 URL。 Jean 開啟某人傳送的 PowerPoint 簡報，然後按一下簡報中的 URL。  <br/> |是的。 定義的 ATP 安全連結原則適用于 Jean-francois 的群組、Jean-francois 的電子郵件，以及 Jean-francois 開啟的 Word、Excel、PowerPoint 或 Visio 檔，只要在 Windows、iOS 或 Android 裝置上登入 Jean-francois，並使用 Microsoft 365 應用程式 for enterprise。  <br/> |
 |在 Chris 的組織中，全域或安全性系統管理員都未定義任何 ATP 安全連結原則。 Chris 收到包含惡意網站 URL 的電子郵件。 Chris 不知道 URL 是惡意的，並且按下連結。  <br/> |否。 適用於組織中所有人且涵蓋 URL 的預設原則都必須加以定義，才能有保護效用。  <br/> |
 |在 Pat 的組織中，全域或安全性系統管理員都未定義或編輯任何 ATP 安全連結原則。 Pat 開啟 Word 檔，然後按一下檔案中的 URL。  <br/> |否。 包含 Office 文件的原則必須加以定義，才能有保護效用。 請參閱[在 Office 365 中設定 ATP 安全連結原則](set-up-atp-safe-links-policies.md)。  <br/> |
-|Lee 他們組織的 ATP 安全連結原則將 `https://tailspintoys.com` 列為封鎖的網站。 Lee 收到包含 `https://tailspintoys.com/aboutus/trythispage` URL 的郵件訊息。 Lee 按下該 URL。  <br/> |這取決於整個網站及其所有子頁面是否包含在封鎖的 URL 清單中。 請參閱[使用 ATP 安全連結來設定自訂的封鎖 URL 清單](set-up-a-custom-blocked-urls-list-wtih-atp.md)。  <br/> |
+|Lee 他們組織的 ATP 安全連結原則將 `https://tailspintoys.com` 列為封鎖的網站。 Lee 收到包含 `https://tailspintoys.com/aboutus/trythispage` URL 的郵件訊息。 Lee 按下該 URL。  <br/> |這取決於整個網站及其所有子頁面是否包含在封鎖的 URL 清單中。 請參閱[使用 ATP 安全連結來設定自訂的封鎖 URL 清單](set-up-a-custom-blocked-urls-list-atp.md)。  <br/> |
 |Jean 的同事 Jamie 傳送電子郵件給 Jean，但不知道電子郵件含有惡意的 URL。  <br/> |這取決於在組織內傳送的電子郵件是否已定義 ATP 安全連結原則。 請參閱[在 Office 365 中設定 ATP 安全連結原則](set-up-atp-safe-links-policies.md)。  <br/> |
 
 

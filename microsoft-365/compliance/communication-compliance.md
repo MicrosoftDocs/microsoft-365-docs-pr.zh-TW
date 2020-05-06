@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b8e25b55ea20514e452b2c26ee0ad1569dbc3c85
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 71226634f17e8e801c409e513494dfdcc19d0719
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919690"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046291"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通訊法規遵從性
 
@@ -156,4 +156,6 @@ Microsoft 365 中的通訊法規遵從性建立于[Office 365 中的監察原則
 
 ## <a name="ready-to-get-started"></a>準備好開始使用了嗎？
 
-若要設定 Microsoft 365 組織的通訊相容性，請參閱[設定 microsoft 365 的通訊相容](communication-compliance-configure.md)性，[以及如何](communication-compliance-case-study.md)快速設定通訊相容性原則，以監視 Microsoft 小組、Exchange Online 和 Yammer 通訊中的冒犯性語言。
+- 如需規劃資訊，請參閱[規劃通訊符合性](communication-compliance-plan.md)。
+- 查看 Contoso 的[案例研究](communication-compliance-case-study.md)，並查看其如何快速設定通訊相容性原則，以監視 Microsoft 小組、Exchange Online 和 Yammer 通訊中的冒犯性語言。
+- 若要設定 Microsoft 365 組織的通訊相容性，請參閱[configure communication 合規性（適用于 microsoft 365](communication-compliance-configure.md)）。

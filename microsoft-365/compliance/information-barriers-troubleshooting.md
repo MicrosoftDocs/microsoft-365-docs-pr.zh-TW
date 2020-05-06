@@ -13,12 +13,13 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用本文做為疑難排解資訊障礙的指南。
-ms.openlocfilehash: c57f9a14e3089f52ad0eab0a0634d7d58f74e6cf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f73493f53937c38f33eeab9595ddb07ef4813c89
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621347"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035029"
 ---
 # <a name="troubleshooting-information-barriers"></a>疑難排解資訊屏障
 
@@ -146,7 +147,7 @@ ms.locfileid: "43621347"
 
 2. 根據上一個步驟的結果，執行下列其中一個步驟：
   
-    |狀態  |下一步  |
+    |狀態  |後續步驟  |
     |---------|---------|
     |**未開始**     |若**InformationBarrierPoliciesApplication** Cmdlet 已執行超過45分鐘，請複查您的審核記錄檔，以查看原則定義中是否有任何錯誤，或應用程式尚未啟動的其他一些原因。 |
     |**失敗**     |若應用程式失敗，請複查您的審核記錄檔。 另外，請複查您的區段和原則。 是否有任何使用者被指派至多個區段？ 是否有任何區段被指派多個 poliicy？ 如有必要，請[編輯區段](information-barriers-edit-segments-policies.md#edit-a-segment)和/或[編輯原則](information-barriers-edit-segments-policies.md#edit-a-policy)，然後再次執行**InformationBarrierPoliciesApplication** Cmdlet。  |
@@ -164,7 +165,7 @@ ms.locfileid: "43621347"
 
 2. 執行[Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/get-addressbookpolicy?view=exchange-ps) Cmdlet，並檢查結果。
 
-    |結果  |下一步  |
+    |結果  |後續步驟  |
     |---------|---------|
     |Exchange 通訊錄原則會列出     |[移除通訊錄原則](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)         |
     |無通訊錄原則存在 |檢查您的審計記錄檔，以找出原則應用程式失敗的原因 |

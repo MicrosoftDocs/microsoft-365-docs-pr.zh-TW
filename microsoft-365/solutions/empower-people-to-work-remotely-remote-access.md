@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: 請確保您的遠端工作者能夠存取內部部署資源，同時將 Microsoft 365 雲端服務的存取最佳化。
-ms.openlocfilehash: fb91451b52c55f2cad1e0efefe19a044ce1cc37b
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: daa1a04912dd83c7a53769299b3870b90dbfd33a
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002506"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049554"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步驟 2： 可遠端存取內部部署應用程式和服務
 
@@ -35,6 +35,10 @@ ms.locfileid: "44002506"
 1. 您已經在使用遠端存取 VPN 解決方案。
 2. 您沒有使用遠端存取 VPN 解決方案、您有混合式身分識別，而且您只需要遠端存取內部部署的 Web 架構應用程式。
 3. 您沒有使用遠端存取 VPN 解決方案、您需要存取內部部署應用程式，而且其中部分應用程式並非 Web 架構。
+
+請參閱此流程圖，了解本文所述的遠端存取設定選項。
+
+![遠端存取設定流程圖](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-flowchart.png)
 
 使用遠端存取連線時，您也可以使用[遠端桌面](https://support.microsoft.com/help/4028379/windows-10-how-to-use-remote-desktop)，將您的使用者連線到內部部署電腦。 例如，遠端工作者可以從 Windows、iOS 或 Android 裝置，使用遠端桌面連線到其辦公室中的電腦。 從遠端連線之後，他們就可以像坐在電腦前面一樣使用電腦。
 

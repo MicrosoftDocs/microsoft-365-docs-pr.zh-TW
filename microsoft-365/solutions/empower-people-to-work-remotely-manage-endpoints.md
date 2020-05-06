@@ -17,18 +17,20 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: 使用 Microsoft 端點管理員來管理受管理的裝置、電腦及其他端點。
-ms.openlocfilehash: 76e18d65865f4ec2bbc8a8d1554bb4cad6fee553
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 2a5b047aabb95d0b60c46fe3bec339e723adee0e
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011600"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049578"
 ---
 # <a name="3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>3. 為您的裝置、電腦和其他端點部署端點管理
 
 若雇用遠端工作者，您必須支援日益增加的個人裝置。 端點管理是原則型的安全性方法，要求裝置必須符合特定準則，才能獲得存取資源的授權。 Microsoft 端點管理員提供新式的工作場所和新式管理功能，讓您的資料在雲端和內部部署中保持安全。 
 
 端點管理員提供可管理行動裝置、電腦、虛擬機器、嵌入式裝置及伺服器的服務和工具，並結合您可能已經知道且正在使用的服務。
+
+![端點管理元件](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 

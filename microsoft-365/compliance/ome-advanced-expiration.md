@@ -16,12 +16,13 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 使用 office 365 的高級郵件加密功能在 Office 365 郵件加密（OME）的上方，您可以透過自訂的署名範本來設定電子郵件的到期日，以擴充電子郵件的安全性。
-ms.openlocfilehash: c9b639c016e86c3883191b04d4c7480625745e91
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f555e707cb377033c3bf643785e18b9203be0560
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626901"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036056"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>為由 Office 365 進階郵件加密所加密的電子郵件設定到期日
 

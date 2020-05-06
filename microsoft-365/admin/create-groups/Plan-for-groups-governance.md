@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: 瞭解如何規劃 Microsoft 365 群組管理。
-ms.openlocfilehash: 95cd549fea6646639386d33e5a026f60b3ccbbba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4427f210bc1691ef04b97fa4802313078f8d0997
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617131"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049408"
 ---
 # <a name="plan-for-governance-in-groups"></a>群組管理的規劃
 
@@ -50,10 +50,10 @@ Microsoft 365 群組支援三種主要通訊方法。 可以在這些體驗內�
 > 透過其他團隊合作應用程式建立新的群組（例如，SharePoint、Planner 或 Stream），將會建立具有 Outlook 收件匣的群組，以及連接至 Microsoft 小組的功能。
 
 根據建立群組的位置，會自動布建特定資源，例如：
-- [收件](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)匣-群組成員之間的電子郵件交談。 此收件匣具有電子郵件地址，可以設定為接受來自群組以外的人員，甚至是組織外的郵件，與傳統的通訊群組清單非常類似。
+- [收件](https://support.microsoft.com/en-us/office/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)匣-群組成員之間的電子郵件交談。 此收件匣具有電子郵件地址，可以設定為接受來自群組以外的人員，甚至是組織外的郵件，與傳統的通訊群組清單非常類似。
  - 行事[曆](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)–用於排程與群組相關的事件
 - [SharePoint 小組網站](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)–中央存放庫，提供與群組相關的資訊、連結和內容。
-- [SharePoint 文件庫](https://support.office.com/article/share-group-files-749bc73b-90c9-4760-9b6f-9aa1cf01b403)–群組存放及共用檔案的中央位置
+- [SharePoint 文件庫](https://support.microsoft.com/en-us/office/share-group-files-in-outlook-749bc73b-90c9-4760-9b6f-9aa1cf01b403)–群組存放及共用檔案的中央位置
 - [OneNote 筆記本](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)–用於收集創意、調查和資訊
 - [Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc) –用於指派及管理群組成員中的專案工作
 - [Yammer 群組](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)–具有交談及共用資訊的常見位置
@@ -81,7 +81,7 @@ Microsoft 365 群組支援三種主要通訊方法。 可以在這些體驗內�
 
 - Outlook 群組：新式 DL （以電子郵件為基礎的協同作業）
   - 目標通訊的廣泛目標
-  - DLs 升級為 Microsoft 365 群組–[您應該升級的原因為何？](https://support.office.com/article/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+  - DLs 升級為 Microsoft 365 群組–[您應該升級的原因為何？](https://support.microsoft.com/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - SharePoint –所有 Microsoft 365 群組的核心內容共同作業體驗
   - 每個群組都取得連線的 SharePoint 小組網站
@@ -119,7 +119,7 @@ Microsoft 365 群組具有一套豐富的工具，可實施貴組織可能需要
 | -------------- | ------------------------------------------------------------ |
 | 開啟（預設值） | 使用者可以視需要建立自己的群組，而不需要等候或加以干擾。 |
 | IT-led         | 使用者向群組要求。 您可以在其中選取最佳共同作業工具，以滿足其需求。 |
-| 控制     | 群組建立限制在特定人員、小組或服務。 若要深入瞭解，請參閱[管理誰可以建立 Microsoft 365 群組](https://support.office.com/article/manage-who-can-create-office-365-groups-4c46c8cb-17d0-44b5-9776-005fced8e618)。 |
+| 控制     | 群組建立限制在特定人員、小組或服務。 若要深入瞭解，請參閱[管理誰可以建立 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-creation-of-groups)。 |
 
 您的組織可能會有特定需求，以對可以建立群組的使用者實施嚴格的控制。 請使用下表來協助決策，以決定您的組織符合您的組織的布建模型。
 
@@ -154,7 +154,7 @@ Microsoft 365 群組具有一套豐富的工具，可實施貴組織可能需要
 >在「虛刪除」期間，如果使用者嘗試存取網站，則會看到 403 禁止訊息。 在此期間之後，如果使用者嘗試存取網站，則會看到 404 找不到訊息。
 
 #### <a name="resources"></a>*資源*
-- [還原已刪除的 Microsoft 365 群組](https://support.office.com/article/Restore-a-deleted-Office-365-Group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54?ui=en-US&rs=en-001&ad=US)
+- [還原已刪除的 Microsoft 365 群組](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
 - [在 Azure Active Directory 中還原已刪除的 Microsoft 365 群組](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)
 - [使用 Remove-UnifiedGroup Cmdlet 來刪除群組](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
 
@@ -273,7 +273,7 @@ Microsoft 365 群組是以 Microsoft 365 的高級安全性和合規性功能為
 
 #### <a name="resources"></a>*資源*
 - [將通訊群組清單（DL）升級至 Outlook 中的群組](https://aka.ms/whyupgradedls)
-- 透過 Exchange 系統管理中心或透過[PowerShell 腳本](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f)，只按一下一次即可升級
+- 透過 Exchange 系統管理中心或透過[PowerShell 腳本](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists)，只按一下一次即可升級
 - [將通訊群組清單遷移至 Microsoft 365 群組-系統管理說明](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 - [將現有的 SharePoint 網站連線至 Microsoft 365 群組：](https://docs.microsoft.com/sharepoint/dev/transform/modernize-connect-to-office365-group)
 - [分析和使用掃描程式資料](https://docs.microsoft.com/sharepoint/dev/transform/modernize-connect-to-office365-group-scanner)
@@ -296,8 +296,8 @@ Microsoft 365 報告儀表板會顯示您組織中的所有 Microsoft 產品的�
 
 
 #### <a name="resources"></a>*資源*
-- [系統管理中心的 Microsoft 365 報告](https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)
-- [Office 365 採用內容套件](https://support.office.com/article/Office-365-Adoption-Content-Pack-77ff780d-ab19-4553-adea-09cb65ad0f1f)
+- [系統管理中心的 Microsoft 365 報告](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
+- [Office 365 採用內容套件](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/usage-analytics)
 - [Azure AD 內容套件](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-power-bi-content-pack-how-to)
 - [Microsoft Graph 群組活動 API](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/office_365_groups_activity_reports)
 - [Microsoft 365 群組報告（整合群組）](https://gallery.technet.microsoft.com/office/Office-365-Groups-Report-7e3e161b)
@@ -318,8 +318,8 @@ Microsoft 365 群組提供您組織可能需要的一組豐富的管理功能。
 
 | 階段 | 說明 |
 | --------------- | ------------------------------------------------------------ |
-| 指引 |<ul><li>請考慮使用自助布建模型。</li><li> Outlook & SharePoint 網站中的群組[預設為私人](https://techcommunity.microsoft.com/t5/Office-365-Groups/Groups-in-Outlook-and-Group-connected-team-sites-are-now-private/m-p/186395)。</li><li> 群組可以透過一次或透過 PowerShell 升級現有的通訊群組清單（DLs）來建立。 請參閱[將通訊群組清單升級至 Microsoft 365 群組](https://support.office.com/article/Upgrade-distribution-lists-to-Office-365-Groups-in-Outlook-787D7A75-E201-46F3-A242-F698162FF09F)。</li><li> 啟用來賓存取，但使用 allow/封鎖來賓網域來管理。</li><li> 使用「群組報告」來深入瞭解使用者如何使用群組。</li><li> 請考慮建立全組織的小組 Microsoft 小組小組，以成為單一小組共同作業之一部分的方式。 </li></ul>|
-| 後續步驟      |<ul><li>請考慮使用[網站設計和網站腳本](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-overview)，使用[JSON 架構參照](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema)內定義的動作，將預設設計定義為控制項。</li><li>審查[群組報告](https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。</li><li>追蹤總群組和非作用中/主動群組。</li><li>追蹤使用的 Exchange 和 SharePoint 儲存區。</li><li>跨群組信箱交談、群組網站/檔案活動等來查看群組活動。</li></ul> |
+| 指引 |<ul><li>請考慮使用自助布建模型。</li><li> Outlook & SharePoint 網站中的群組[預設為私人](https://techcommunity.microsoft.com/t5/Office-365-Groups/Groups-in-Outlook-and-Group-connected-team-sites-are-now-private/m-p/186395)。</li><li> 群組可以透過一次或透過 PowerShell 升級現有的通訊群組清單（DLs）來建立。 請參閱[將通訊群組清單升級至 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists)。</li><li> 啟用來賓存取，但使用 allow/封鎖來賓網域來管理。</li><li> 使用「群組報告」來深入瞭解使用者如何使用群組。</li><li> 請考慮建立全組織的小組 Microsoft 小組小組，以成為單一小組共同作業之一部分的方式。 </li></ul>|
+| 後續步驟      |<ul><li>請考慮使用[網站設計和網站腳本](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-overview)，使用[JSON 架構參照](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema)內定義的動作，將預設設計定義為控制項。</li><li>審查[群組報告](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)。</li><li>追蹤總群組和非作用中/主動群組。</li><li>追蹤使用的 Exchange 和 SharePoint 儲存區。</li><li>跨群組信箱交談、群組網站/檔案活動等來查看群組活動。</li></ul> |
 
 ### <a name="medium-sized-business"></a>中型企業
 除了上述建議之外，還請考慮下列情況：已部署 Microsoft 365 的中型企業，至少有一個企業版 E3/E5 和 Azure Active Directory Premium P1 授權。

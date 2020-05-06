@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: 瞭解如何驗證您的網域，並在 Microsoft 的網路解決方案中設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄。
-ms.openlocfilehash: f990e4311ef88022d7fec2e1b7c90b3d8d035448
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: fb5fd2d2bcb263a62306617d728f08b07bb6da34
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939140"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048924"
 ---
 # <a name="create-dns-records-at-network-solutions-for-microsoft"></a>在 Microsoft 的網路解決方案中建立 DNS 記錄
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 Network Solutions 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並設定電子郵件與商務用 Skype Online 等項目的 DNS 記錄。
   
@@ -89,7 +89,7 @@ ms.locfileid: "43939140"
   
 6. In the boxes for the new record, type or copy and paste the values in the following table.
     
-    |**Host**|**TTL**|**Text**|
+    |**Host** (主機)|**TTL**|**Text**|
     |:-----|:-----|:-----|
     |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)   |
        
@@ -158,9 +158,9 @@ ms.locfileid: "43939140"
   
 6. 在新記錄的方塊中，輸入或複製並貼上下表中的值。
     
-    |**優先順序**|**TTL**|**Mail server (郵件伺服器)**|
+    |**Priority** (優先順序)|**TTL**|**Mail server (郵件伺服器)**|
     |:-----|:-----|:-----|
-    |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |3600  <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![在新記錄的方塊中輸入或貼上值](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
@@ -269,9 +269,9 @@ ms.locfileid: "43939140"
   
 6. In the boxes for the new record, type or copy and paste the following values.
     
-    |**Host**|**TTL**|**Text**|
+    |**Host** (主機)|**TTL**|**Text**|
     |:-----|:-----|:-----|
-    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。 |
+    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。 |
        
     ![輸入或貼上新記錄的值](../../media/11564eca-e2ee-4f17-af2b-a00eb7c157db.png)
   
@@ -317,10 +317,10 @@ ms.locfileid: "43939140"
     
     （從下拉式清單中選擇 [**服務**] 和 [**通訊協定**] 值。） 
     
-    |**Service** (服務)|**Protocol** (通訊協定)|**TTL**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|
+    |**服務**|**Protocol** (通訊協定)|**TTL**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
+    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
        
     ![輸入或貼上新記錄的值](../../media/86968d1c-8e43-4e61-aeaa-37fc7d7ef7a7.png)
   

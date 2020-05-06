@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 瞭解如何管理 Microsoft 365 群組，包括新增移除群組成員、編輯電子郵件地址、組名或描述，以及自訂群組的運作方式。
-ms.openlocfilehash: 230a449bad22d0b872983a8c911955f4d00153ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 332d0dce46b94a3b69169183afb0c75ec537af8c
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630390"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049200"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中管理群組
 
@@ -122,7 +122,7 @@ ms.locfileid: "43630390"
 
 3. 在 [**設定**] 索引標籤上，如果您想要讓成員在自己的收件匣接收群組郵件和行事曆專案的副本，請選取 [**將群組交談和事件的副本傳送至群組成員**]
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
 
 ::: moniker-end
 
@@ -134,7 +134,7 @@ ms.locfileid: "43630390"
 
 3. 如果您想要讓成員在自己的收件匣中接收群組郵件和行事曆專案的副本，請將 [**群組交談和事件的副本**]**轉換為 [** 群組] 的 [收件者]。
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
 
 ::: moniker-end
 
@@ -146,7 +146,7 @@ ms.locfileid: "43630390"
 
 3. 如果您想要讓成員在自己的收件匣中接收群組郵件和行事曆專案的副本，請將 [**群組交談和事件的副本**]**轉換為 [** 群組] 的 [收件者]。
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
 
 ::: moniker-end
 
@@ -162,7 +162,7 @@ ms.locfileid: "43630390"
 
 3. 在 [系統管理中心群組] 清單中，選取您要變更之群組的名稱，然後在 [**設定**] 索引標籤上，選取 [**允許外部寄件者以電子郵件傳送此群組**]。
     
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ ms.locfileid: "43630390"
     
 3. 設定**讓組織外部的人員可將群組**切換為 [**開啟**]。
     
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ ms.locfileid: "43630390"
     
 3. 設定**讓組織外部的人員可將群組**切換為 [**開啟**]。
     
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
 
 ::: moniker-end
 
@@ -194,7 +194,7 @@ ms.locfileid: "43630390"
 
 [建立 Microsoft 365 群組](create-groups.md)
 
-[管理 Microsoft 365 群組的來賓存取權](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[管理 Microsoft 365 群組的來賓存取權](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [選擇建立 Microsoft 365 群組時要使用的網域](choose-domain-to-create-groups.md)
 
@@ -202,4 +202,4 @@ ms.locfileid: "43630390"
 
 [將通訊群組清單升級至 Microsoft 365 群組](../manage/upgrade-distribution-lists.md)
 
-[使用 PowerShell 管理 Microsoft 365 群組](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[使用 PowerShell 管理 Microsoft 365 群組](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)

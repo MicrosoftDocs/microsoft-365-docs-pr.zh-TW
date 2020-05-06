@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft 用 Azure DNS 區域。
-ms.openlocfilehash: 7104fb18a6581b7ebc853f938b85171ae1886cfd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3d50051e2302b6ef49762cad6682f15c90dd74a1
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629140"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048864"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>建立 Azure DNS 區域的 DNS 記錄
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 Azure 是您的 DNS 主機服務提供者，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、商務用 Skype Online 等的 DNS 記錄。
   
@@ -39,13 +39,13 @@ ms.locfileid: "43629140"
     
 - [新增 TXT 記錄以供驗證](#add-a-txt-record-for-verification)
 
-- [新增 MX 記錄，使您網域的電子郵件將會傳送給 Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
+- [新增 MX 記錄，以將寄往您網域的電子郵件轉至 Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
 - [新增 Microsoft 所需的四種 CNAME 記錄](#add-the-four-cname-records-that-are-required-for-microsoft)
     
 - [新增 SPF 的 TXT 記錄以協助防範垃圾郵件](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [新增 Microsoft 所需的兩筆 SRV 記錄](#add-the-two-srv-records-that-are-required-for-microsoft)
+- [新增兩筆 Microsoft 所需的 SRV 記錄](#add-the-two-srv-records-that-are-required-for-microsoft)
     
 在 Azure 新增這些記錄之後，您的網域就會設定為與 Microsoft 服務搭配使用。
   
@@ -86,7 +86,7 @@ ms.locfileid: "43629140"
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 <a name="BKMK_verify"> </a>
 
-在將您的網域與 Microsoft 搭配使用之前，我們必須先確認您擁有該網域。 您能夠在您的網域註冊機構登入您的帳戶，並為您擁有網域的 Microsoft 建立 DNS 記錄證明。
+在您將自己的網域用於 Microsoft 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Microsoft 就能確信您擁有該網域。
   
 > [!NOTE]
 > 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
@@ -107,19 +107,19 @@ ms.locfileid: "43629140"
     
     （從下拉式清單中選擇 [**類型**] 和 [ **TTL 單位**] 值。） 
     
-    |**名稱**|**Type**|**TTL**|**TTL 單位**|**值**|
+    |**Name**|**Type**|**TTL**|**TTL 單位**|**值**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |1   <br/> |小時  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 從表格中，使用您的特定**目的地或指向位址**值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |TXT  <br/> |1  <br/> |小時  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Azure-BP-Verify-1-1](../../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
   
-5. 選取 [確定]****。
+5. 選取 **[確定]**。
   
 6. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
-現在，您已在網域註冊機構的網站上新增記錄，您會回到 Microsoft 並要求記錄。
+現在您已在網域註冊機構網站新增記錄，請返回 Microsoft 並要求該記錄。
   
-當 Microsoft 找到正確的 TXT 記錄後，您的網域就會經過驗證。
+在 Microsoft 找到正確的 TXT 記錄後，您的網域就完成驗證了。
   
 1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
     
@@ -138,7 +138,7 @@ ms.locfileid: "43629140"
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，使您網域的電子郵件將會傳送給 Microsoft
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，以將寄往您網域的電子郵件轉至 Microsoft
 <a name="BKMK_add_MX"> </a>
 
 1. 若要開始使用，請使用[此連結](https://portal.azure.com )前往 Azure 上的網域頁面。 系統會提示您先登入。
@@ -157,13 +157,13 @@ ms.locfileid: "43629140"
     
     （從下拉式清單中選擇 [**類型**] 和 [ **TTL 單位**] 值。） 
     
-    |**名稱**|**Type**|**TTL**|**TTL 單位**|**偏好**|**郵件交換**|
+    |**Name**|**Type**|**TTL**|**TTL 單位**|**偏好**|**郵件交換**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1   <br/> |小時  <br/> |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。   [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)  
+    |@  <br/> |MX  <br/> |1  <br/> |小時  <br/> |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。   [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)  
    
     ![Azure-BP-Configure-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   
-5. 選取 [確定]****。
+5. 選取 **[確定]**。
     
     ![Azure-BP-Configure-2-2](../../media/2f24225f-69ac-41dc-91c5-93d327360f74.png)
   
@@ -181,7 +181,7 @@ ms.locfileid: "43629140"
     
     ![Azure-BP-Configure-2-5](../../media/25219e25-bc14-4bc7-84ed-ee65eb28a8ed.png)
   
-8. 選取 **[儲存]**。
+8. 選取 [儲存]****。
     
     ![Azure-BP-Configure-2-6](../../media/c6133096-5e43-4637-9c01-b63ee4b03517.png)
   
@@ -206,16 +206,16 @@ ms.locfileid: "43629140"
     
     （從下拉式清單中選擇 [**類型**] 和 [ **TTL 單位**] 值。） 
     
-    |**名稱**|**Type**|**TTL**|**TTL 單位**|**Alias**|
+    |**Name**|**Type**|**TTL**|**TTL 單位**|**Alias**|
     |:-----|:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |1   <br/> |小時  <br/> |autodiscover.outlook.com  <br/> |
-    |sip  <br/> |CNAME  <br/> |1   <br/> |小時  <br/> |sipdir.online.lync.com  <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |1   <br/> |小時  <br/> |webdir.online.lync.com  <br/> |
+    |autodiscover  <br/> |CNAME  <br/> |1  <br/> |小時  <br/> |autodiscover.outlook.com  <br/> |
+    |sip  <br/> |CNAME  <br/> |1  <br/> |小時  <br/> |sipdir.online.lync.com  <br/> |
+    |lyncdiscover  <br/> |CNAME  <br/> |1  <br/> |小時  <br/> |webdir.online.lync.com  <br/> |
     
    
     ![Azure-BP-Configure-3-1](../../media/a1c4d869-da97-43b3-952c-d513a20231dc.png)
   
-5. 選取 [確定]****。
+5. 選取 **[確定]**。
     
     ![Azure-BP-Configure-3-2](../../media/b89b51da-1c07-43cf-9fab-75d2e5eb3544.png)
   
@@ -230,16 +230,16 @@ ms.locfileid: "43629140"
 > [!IMPORTANT]
 > 如果您有 Microsoft 的行動裝置管理（MDM），則必須建立兩個額外的 CNAME 記錄。 請按照您針對其他四筆 CNAME 記錄所進行的程序執行，但提供下表的值。 （如果您沒有 MDM，您可以略過此步驟。） 
   
-|**名稱**|**Type**|**TTL**|**TTL 單位**|**Alias**|
+|**Name**|**Type**|**TTL**|**TTL 單位**|**Alias**|
 |:-----|:-----|:-----|:-----|:-----|
-|enterpriseregistration  <br/> |CNAME  <br/> |1   <br/> |小時  <br/> |enterpriseregistration.windows.net  <br/> |
-|enterpriseenrollment  <br/> |CNAME  <br/> |1   <br/> |小時  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+|enterpriseregistration  <br/> |CNAME  <br/> |1  <br/> |小時  <br/> |enterpriseregistration.windows.net  <br/> |
+|enterpriseenrollment  <br/> |CNAME  <br/> |1  <br/> |小時  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>新增 SPF 的 TXT 記錄以協助防範垃圾郵件
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果您已有網域的 SPF 記錄，請不要為 Microsoft 建立新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 
   
 1. 若要開始使用，請使用[此連結](https://portal.azure.com )前往 Azure 上的網域頁面。 系統會提示您先登入。
     
@@ -257,17 +257,17 @@ ms.locfileid: "43629140"
     
     （從下拉式清單中選擇 [**類型**] 和 [ **TTL 單位**] 值。） 
     
-    |**名稱**|**Type**|**TTL**|**TTL 單位**|**值**|
+    |**Name**|**Type**|**TTL**|**TTL 單位**|**值**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |1   <br/> |小時  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           
+    |@  <br/> |TXT  <br/> |1  <br/> |小時  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           
 
     ![Azure-BP-Configure-4-2](../../media/78e84c43-e0ce-433f-8e74-9157fb093cca.png)
   
-5. 選取 **[儲存]**。
+5. 選取 [儲存]****。
     
     ![Azure-BP-Configure-4-3](../../media/d7421c7f-ea63-4e11-8595-a482b8c165e0.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的兩筆 SRV 記錄
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增兩筆 Microsoft 所需的 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
 
 1. 若要開始使用，請使用[此連結](https://portal.azure.com )前往 Azure 上的網域頁面。 系統會提示您先登入。
@@ -288,14 +288,14 @@ ms.locfileid: "43629140"
     
     （從下拉式清單中選擇 [**類型**] 和 [ **TTL 單位**] 值。） 
     
-    |**名稱**|**Type**|**TTL**|**TTL 單位**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|
+    |**Name**|**Type**|**TTL**|**TTL 單位**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip。 _tls  <br/> |SRV  <br/> |1   <br/> |小時  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls。 _tcp  <br/> |SRV  <br/> |1   <br/> |小時  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 
+    |_sip。 _tls  <br/> |SRV  <br/> |1  <br/> |小時  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls。 _tcp  <br/> |SRV  <br/> |1  <br/> |小時  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 
 
     ![Azure-BP-Configure-5-1](../../media/a436e0b4-8bb8-4a66-9c22-4e3b2dcf54ff.png)
   
-5. 選取 [確定]****。
+5. 選取 **[確定]**。
     
     ![Azure-BP-Configure-5-2](../../media/a35b6c8a-d001-4b3c-8a67-96b4890e564c.png)
   

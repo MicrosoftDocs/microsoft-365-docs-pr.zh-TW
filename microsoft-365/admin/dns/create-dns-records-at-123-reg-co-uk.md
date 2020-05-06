@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft 123-reg.co.uk。
-ms.openlocfilehash: af03f4994868c34ebd76537c21af9e4f3755dd6a
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 0c9a6a144a38398e7664f7f2bb317a96b627b640
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939364"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049128"
 ---
 # <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>在123-reg.co.uk 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 123-reg.co.uk 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並設定電子郵件與商務用 Skype Online 等項目的 DNS 記錄。
   
@@ -99,9 +99,9 @@ ms.locfileid: "43939364"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**主機 名**|**類型**|**優先順序**|**Destination MX (目的地 MX)**|
+    |**主機 名**|**類型**|**Priority** (優先順序)|**Destination MX (目的地 MX)**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **注意：** 從您的 Microsoft 帳戶取得您的\<網域金鑰\>。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |1  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **注意：** 從您的 Microsoft 帳戶取得您的\<網域金鑰\>。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![複製並貼上表格中的值](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
@@ -154,7 +154,7 @@ ms.locfileid: "43939364"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果您已有網域的 SPF 記錄，請勿為 Microsfot 建立新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords)。 若要驗證您的 SPF 記錄，您可以使用其中一種 [SPF 驗證工具](../setup/domains-faq.md)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果您已有網域的 SPF 記錄，請勿為 Microsfot 建立新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records#bkmk_spfrecords)。 若要驗證您的 SPF 記錄，您可以使用其中一種 [SPF 驗證工具](../setup/domains-faq.md)。 
   
 1. 首先請用[這個連結](https://www.123-reg.co.uk/secure/cpanel/domain/overview)移至 123-reg.co.uk 上您的網域頁面。 系統會提示您先登入。
     
@@ -170,7 +170,7 @@ ms.locfileid: "43939364"
     
     |**主機 名**|**類型**|**Destination TXT/SPF**|
     |:-----|:-----|:-----|
-    |@  <br/> |TXT/SPF  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |@  <br/> |TXT/SPF  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
     ![123Reg-BP-Configure-4-1](../../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
   
@@ -198,8 +198,8 @@ ms.locfileid: "43939364"
     ||||||
     |:-----|:-----|:-----|:-----|:-----|
     |主機名稱|Type (類型)|Priority (優先順序)|TTL|Destination SRV (目的 SRV)|
-    |_sip。 _tls|SRV|100|3600|1 443 sipdir.online.lync.com。 **This value MUST end with a period (.)**<br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
-    |_sipfederationtls。 _tcp|SRV|100|3600|1 5061 sipfed.online.lync.com。 **This value MUST end with a period (.)** <br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |_sip。 _tls|SRV|100|3600|1 443 sipdir.online.lync.com。 **This value MUST end with a period (.)**<br> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |_sipfederationtls。 _tcp|SRV|100|3600|1 5061 sipfed.online.lync.com。 **This value MUST end with a period (.)** <br> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
     ![複製並貼上表格中的值](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
   

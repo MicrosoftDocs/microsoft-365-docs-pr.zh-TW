@@ -11,15 +11,17 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
-description: 摘要：使用這些程式來管理您的隔離 SharePoint Online 小組網站。
-ms.openlocfilehash: b5fe92f2653774b40eb227c9f8cbb57443fd51e2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 管理隔離的 SharePoint 線上小組網站、新增使用者和群組、移除使用者和群組，以及使用自訂許可權建立 documents 子資料夾。
+ms.openlocfilehash: 05e3cf742482d34c158e14253eed9d1b99c82995
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635385"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036629"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>管理獨立的 SharePoint Online 小組網站
 
@@ -148,7 +150,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
   
 若要建立具有自訂許可權的 documents 子資料夾，請執行下列操作：
   
-1. 登入屬於網站管理員存取群組成員的帳戶。 如需協助，請參閱[登錄 Microsoft 365 的位置](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 登入屬於網站管理員存取群組成員的帳戶。 如需說明，請參閱[在何處登入 Microsoft 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 移至隔離的小組網站，然後按一下 [**檔**]。
     

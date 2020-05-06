@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: 瞭解如何取消商務用 Microsoft 365 試用版或付費訂閱。
-ms.openlocfilehash: 56ffeae38b3cba94efacbb52bf2d9beb9af90ebb
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: c12b574d29b50432cdb480dca711588ad1f0df32
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708080"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046201"
 ---
 # <a name="cancel-your-subscription"></a>取消訂閱
 
@@ -43,7 +43,7 @@ ms.locfileid: "43708080"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 找到您要取消的訂閱，然後在 [**設定] & 動作**] 下，選取 [**取消訂閱**]。
 
