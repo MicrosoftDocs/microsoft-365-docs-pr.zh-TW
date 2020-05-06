@@ -15,18 +15,20 @@ search.appverid:
 ms.assetid: ceeda109-6c24-4270-bd09-a36959417276
 ms.collection:
 - M365-security-compliance
-description: 如果您是 Exchange Online 或 Exchange Online Protection (EOP) 系統管理員，您可以協助確保透過服務傳送的電子郵件訊息不會被標示為垃圾郵件。 請參閱最新版的提示和程序來完成這項工作，防止因為安全清單或其他技術誤將電子郵件標示為垃圾郵件。
-ms.openlocfilehash: 7ff5c7d027a4caabaaadc8169d6afab5698a50bb
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.custom:
+- seo-marvel-apr2020
+description: 以 Exchange Online 或 Exchange Online Protection （EOP）系統管理員的身分瞭解，您如何確定透過服務傳送的電子郵件不會標示為垃圾郵件。
+ms.openlocfilehash: 4661e695d4bea363de396853ae78c3b31f878243
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893631"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036374"
 ---
-# <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a><span data-ttu-id="4a59d-104">如何確保郵件不會被標示為垃圾郵件</span><span class="sxs-lookup"><span data-stu-id="4a59d-104">How to help ensure that a message isn't marked as spam</span></span>
+# <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a><span data-ttu-id="22bcf-103">如何確保郵件不會被標示為垃圾郵件</span><span class="sxs-lookup"><span data-stu-id="22bcf-103">How to help ensure that a message isn't marked as spam</span></span>
 
-<span data-ttu-id="4a59d-105">如果您是 Exchange Online 或 Exchange Online Protection (EOP) 系統管理員，您可以協助確保透過服務傳送的電子郵件訊息不會被標示為垃圾郵件。</span><span class="sxs-lookup"><span data-stu-id="4a59d-105">As an Exchange Online or Exchange Online Protection (EOP) administrator, you can help ensure that an email message traveling through the service isn't marked as spam.</span></span> <span data-ttu-id="4a59d-106">若要在[Office 365 中建立安全寄件者清單](create-safe-sender-lists-in-office-365.md)，請參閱更新後的秘訣和程式的版本。</span><span class="sxs-lookup"><span data-stu-id="4a59d-106">See the updated version of the tips and procedures to accomplish this in [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).</span></span>
+<span data-ttu-id="22bcf-104">如果您是 Exchange Online 或 Exchange Online Protection (EOP) 系統管理員，您可以協助確保透過服務傳送的電子郵件訊息不會被標示為垃圾郵件。</span><span class="sxs-lookup"><span data-stu-id="22bcf-104">As an Exchange Online or Exchange Online Protection (EOP) administrator, you can help ensure that an email message traveling through the service isn't marked as spam.</span></span> <span data-ttu-id="22bcf-105">若要在[Office 365 中建立安全寄件者清單](create-safe-sender-lists-in-office-365.md)，請參閱更新後的秘訣和程式的版本。</span><span class="sxs-lookup"><span data-stu-id="22bcf-105">See the updated version of the tips and procedures to accomplish this in [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="4a59d-107">另請參閱</span><span class="sxs-lookup"><span data-stu-id="4a59d-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="22bcf-106">請參閱</span><span class="sxs-lookup"><span data-stu-id="22bcf-106">See also</span></span>
 
-[<span data-ttu-id="4a59d-108">Office 365 中的反垃圾郵件保護</span><span class="sxs-lookup"><span data-stu-id="4a59d-108">Anti-spam protection in Office 365</span></span>](anti-spam-protection.md)
+[<span data-ttu-id="22bcf-107">Office 365 中的反垃圾郵件保護</span><span class="sxs-lookup"><span data-stu-id="22bcf-107">Anti-spam protection in Office 365</span></span>](anti-spam-protection.md)
