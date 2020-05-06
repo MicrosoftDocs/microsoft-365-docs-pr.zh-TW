@@ -1,5 +1,7 @@
 ---
-title: 高级电子数据展示中的导出案例数据
+title: 在高級電子檔探索中匯出案例資料
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,24 +15,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 0bd071912ca1a39779e71beed193b3f59fc93d21
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 瞭解如何在高級 eDiscovery 案例中匯出或下載簡報或外部評論的審閱集合中的內容。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 2aeb8b2cdfa850c3878b23205ce965794ea3be15
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077152"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035951"
 ---
-# <a name="export-case-data-in-advanced-ediscovery"></a><span data-ttu-id="1f129-102">高级电子数据展示中的导出案例数据</span><span class="sxs-lookup"><span data-stu-id="1f129-102">Export case data in Advanced eDiscovery</span></span>
+# <a name="export-case-data-in-advanced-ediscovery"></a><span data-ttu-id="0a1f1-103">在高級電子檔探索中匯出案例資料</span><span class="sxs-lookup"><span data-stu-id="0a1f1-103">Export case data in Advanced eDiscovery</span></span>
 
-<span data-ttu-id="1f129-103">有三种方法可以从审阅集导出数据：</span><span class="sxs-lookup"><span data-stu-id="1f129-103">There are three ways to export data from a review set:</span></span>
+<span data-ttu-id="0a1f1-104">有三種方式可以從審查集匯出資料：</span><span class="sxs-lookup"><span data-stu-id="0a1f1-104">There are three ways to export data from a review set:</span></span>
 
-<span data-ttu-id="1f129-104">**下载**– 用于下载（通过使用浏览器）一小组本机文件。</span><span class="sxs-lookup"><span data-stu-id="1f129-104">**Download** – Use to download (by using a browser) a small set of native files.</span></span> <span data-ttu-id="1f129-105">这是导出一小组数据的最快速度。</span><span class="sxs-lookup"><span data-stu-id="1f129-105">This is the quickest was to export a small set of data.</span></span>
+<span data-ttu-id="0a1f1-105">**下載：** 下載（使用瀏覽器）小型原生檔案集。</span><span class="sxs-lookup"><span data-stu-id="0a1f1-105">**Download:** Download (by using a browser) a small set of native files.</span></span> <span data-ttu-id="0a1f1-106">這是匯出小型資料集的最快方法。</span><span class="sxs-lookup"><span data-stu-id="0a1f1-106">This is the quickest way to export a small set of data.</span></span> <span data-ttu-id="0a1f1-107">此方法會保留原生檔案名。</span><span class="sxs-lookup"><span data-stu-id="0a1f1-107">This method preserves the native file names.</span></span>
 
-<span data-ttu-id="1f129-106">**导出**– 用于自定义导出的数据，包括导出元数据文件、本机文件、文本文件和已保存到 PDF 文件的已编辑的文档。</span><span class="sxs-lookup"><span data-stu-id="1f129-106">**Export** – Use to customize what data is exported, including the export of metadata files, native files, text files, and redacted documents that have been saved to a PDF file.</span></span> <span data-ttu-id="1f129-107">导出的数据上载 Azure 存储位置后，必须将其下载到本地计算机。</span><span class="sxs-lookup"><span data-stu-id="1f129-107">After exported data is uploaded Azure storage location, you have to download it to a local computer.</span></span> <span data-ttu-id="1f129-108">如需詳細資訊，請參閱：</span><span class="sxs-lookup"><span data-stu-id="1f129-108">For more information, see:</span></span> 
+<span data-ttu-id="0a1f1-108">**匯出：** 自訂匯出的資料。</span><span class="sxs-lookup"><span data-stu-id="0a1f1-108">**Export:** Customize what data is exported.</span></span> <span data-ttu-id="0a1f1-109">這包括匯出檔案中繼資料、原生檔案、文字檔，以及已儲存至 PDF 檔案的 redacted 檔。</span><span class="sxs-lookup"><span data-stu-id="0a1f1-109">This includes exporting file metadata, native files, text files, and redacted documents that have been saved to a PDF file.</span></span> <span data-ttu-id="0a1f1-110">將匯出的資料上傳至 Azure 存放區位置之後，您可以將它下載到本機電腦。</span><span class="sxs-lookup"><span data-stu-id="0a1f1-110">After the exported data is uploaded to an Azure Storage location, you can download it to a local computer.</span></span> <span data-ttu-id="0a1f1-111">如需詳細資訊，請參閱：</span><span class="sxs-lookup"><span data-stu-id="0a1f1-111">For more information, see:</span></span> 
 
-   - [<span data-ttu-id="1f129-109">從檢閱集匯出文件</span><span class="sxs-lookup"><span data-stu-id="1f129-109">Export documents from a review set</span></span>](export-documents-from-review-set.md)
+   - [<span data-ttu-id="0a1f1-112">從檢閱集匯出文件</span><span class="sxs-lookup"><span data-stu-id="0a1f1-112">Export documents from a review set</span></span>](export-documents-from-review-set.md)
 
-   - [<span data-ttu-id="1f129-110">下載匯出工作</span><span class="sxs-lookup"><span data-stu-id="1f129-110">Download export jobs</span></span>](download-export-jobs.md)
+   - [<span data-ttu-id="0a1f1-113">下載匯出工作</span><span class="sxs-lookup"><span data-stu-id="0a1f1-113">Download export jobs</span></span>](download-export-jobs.md)
 
-<span data-ttu-id="1f129-111">**添加到另一个审阅集**- 用于将数据从一个审阅集复制到另一个审阅集。</span><span class="sxs-lookup"><span data-stu-id="1f129-111">**Add to another review set** – Use to copy data from one review set to a different review set.</span></span> <span data-ttu-id="1f129-112">有关详细信息，请参阅[将数据从一个审核集添加到另一个审核集](add-data-to-review-set-from-another-review-set.md)。</span><span class="sxs-lookup"><span data-stu-id="1f129-112">For more information, see [Add data from one review set to another review set](add-data-to-review-set-from-another-review-set.md).</span></span> 
+<span data-ttu-id="0a1f1-114">**新增至其他審閱集：** 將資料從一個複查集複製到不同的審閱集。</span><span class="sxs-lookup"><span data-stu-id="0a1f1-114">**Add to another review set:** Copy data from one review set to a different review set.</span></span> <span data-ttu-id="0a1f1-115">如需詳細資訊，請參閱[將資料從一個複查集新增至另一個複查集](add-data-to-review-set-from-another-review-set.md)。</span><span class="sxs-lookup"><span data-stu-id="0a1f1-115">For more information, see [Add data from one review set to another review set](add-data-to-review-set-from-another-review-set.md).</span></span> 
