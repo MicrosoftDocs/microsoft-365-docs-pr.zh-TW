@@ -25,12 +25,12 @@ search.appverid:
 - SPB160
 ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: 深入瞭解各種類型的群組，以及如何使用 Microsoft 365 的各種共同作業功能。
-ms.openlocfilehash: 09dce9a26d22989fecf828bf91c0e8ce9583a589
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b5b8030b1f16562007ac2786dca776db6482eecb
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628864"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048792"
 ---
 # <a name="email-collaboration"></a>電子郵件共同作業
 
@@ -47,7 +47,7 @@ Microsoft 365 鼓勵透過 Outlook 中的群組、通訊群組清單（也稱為
 |:-----|:-----|
 |Outlook 中的群組  <br/> |可在所有 Microsoft 365 應用程式中運作的共用工作區。 包括共用收件匣、行事曆和商務用網站的 OneDrive，用以儲存檔案。 使用者可以從他們的電子郵件或行事曆，在 Outlook 中建立、尋找及加入群組。 具有 Exchange Online 或 Microsoft 365 訂閱的新和現有使用者可以使用 Outlook 中的群組。  <br/> |
 |共用信箱  <br/> |特定使用者的信箱，用來選取閱讀及傳送電子郵件訊息及共用一般行事曆。共用信箱也可以做為一般的電子郵件地址 (例如 info@contoso.com 或 sales@contoso.com) 使用，讓客戶可以用來查詢您公司的相關資訊。當在共用信箱上啟用 [傳送為] 權限時，從信箱傳送的電子郵件將會使用一般地址 (例如 sales@contoso.com)。  <br/> |
-|通訊群組清單 (也稱為通訊群組)  <br/> |用來同時將電子郵件訊息發送給兩個或多個人員。通訊群組也稱為具備郵件功能的通訊群組。另外一種通訊群組 (稱為動態通訊群組) 是具備郵件功能的 Active Directory 群組物件，可用來將電子郵件傳送到大型且不斷擴展的收件者群組。確切的收件者可由您所指定的篩選條件與條件 (例如特定地區設定的所有成員或所有全職員工) 來決定。<br/><br/> Outlook 中的 Microsoft 365 群組可提供比通訊群組共同作業的功能更為強大的解決方案。 若要深入瞭解，請參閱[為何您應該將通訊群組清單升級為 Outlook 中的群組](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)，並將[通訊群組清單遷移至 Microsoft 365 群組](../manage/upgrade-distribution-lists.md)。  <br/> |
+|通訊群組清單 (也稱為通訊群組)  <br/> |用來同時將電子郵件訊息發送給兩個或多個人員。通訊群組也稱為具備郵件功能的通訊群組。另外一種通訊群組 (稱為動態通訊群組) 是具備郵件功能的 Active Directory 群組物件，可用來將電子郵件傳送到大型且不斷擴展的收件者群組。確切的收件者可由您所指定的篩選條件與條件 (例如特定地區設定的所有成員或所有全職員工) 來決定。<br/><br/> Outlook 中的 Microsoft 365 群組可提供比通訊群組共同作業的功能更為強大的解決方案。 若要深入瞭解，請參閱[為何您應該將通訊群組清單升級為 Outlook 中的群組](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)，並將[通訊群組清單遷移至 Microsoft 365 群組](../manage/upgrade-distribution-lists.md)。  <br/> |
 |公用資料夾  <br/> |公用資料夾是針對共用存取而設計的，可讓您輕鬆且有效地收集、組織及與組織中的其他人員共用資訊。 公用資料夾將內容組織在深層階層中，其可輕鬆瀏覽並永遠可在 Outlook 資料夾檢視中看見。 公用資料夾可以具備郵件功能並新增為通訊群組的成員。 傳送至通訊群組的電子郵件會自動新增至公用資料夾，以供封存或供日後參考。 如果您沒有 SharePoint Online 訂閱，公用資料夾也會提供簡單的文件共用。  <br/> |
    
 ## <a name="which-collaboration-tool-to-use"></a>要使用哪種共同作業工具？

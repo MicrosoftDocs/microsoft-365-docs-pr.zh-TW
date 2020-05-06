@@ -1,5 +1,5 @@
 ---
-title: 使用 Security & 合規性中心的 DSR 案例工具管理 GDPR 資料主體要求
+title: 在安全性 & 規範中心內，使用 DSR 案例工具管理 GDPR 資料主體要求
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,12 +18,13 @@ ms.collection:
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: GDPR 給歐盟公民（稱為「資料主體」）其個人資料的特定權力;這些權利包括取得其複本、要求變更、限制處理、刪除或以電子格式接收。 由資料主體對其個人資料採取動作的正式要求稱為「資料主體要求」或「DSR」。 您可以在 Office 365 和 Microsoft 365 的「規範中心」中使用 DSR 案例，以管理組織的 DSR 調查。
-ms.openlocfilehash: 7fc786f1e330b03884ef279e210c8f8ef22e9793
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f3be609ae1245b20b39d26fe60444e6e54f171d3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635923"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035867"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>使用 Security & 合規性中心的 DSR 案例工具管理 GDPR 資料主體要求
 
@@ -182,7 +183,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
   - Microsoft Edge
     
-    或
+    或者
     
   - Microsoft Internet Explorer 10 和更新版本
     

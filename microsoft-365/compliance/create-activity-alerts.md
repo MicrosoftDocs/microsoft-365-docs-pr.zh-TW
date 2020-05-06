@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: 新增及管理安全性 & 規範中心的活動警示，讓 Microsoft 365 會在使用者執行特定活動時傳送電子郵件通知。
-ms.openlocfilehash: e6800bf5b8bbc013586a4be248a4e9e71fc70507
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 16c40ebeb44ecb1c54a1715a936436b3427a7d54
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943162"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035805"
 ---
 # <a name="create-activity-alerts"></a>建立活動警示
 

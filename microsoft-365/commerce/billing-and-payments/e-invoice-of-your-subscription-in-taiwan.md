@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
 description: 瞭解適用于臺灣的 Microsoft 365 商務版電子發票。
-ms.openlocfilehash: 4603d9f39a4421b6711d056d0646981732353c5c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0b57ce0cb6b30b4c9dcd37c3b6931a3389b50b68
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632704"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045877"
 ---
 # <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>瞭解 Microsoft 365 for business 的電子發票（臺灣）
 
@@ -55,7 +55,7 @@ Microsoft 會在**9 月15日**將目前的電腦化發票取代為電子發票�
   
 建立帳戶之後，您可以遵循下列步驟，透過系統管理中心更新 加值稅 ID：
   
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
     
 2. 選取訂閱，然後選取 [**其他動作**]。
     

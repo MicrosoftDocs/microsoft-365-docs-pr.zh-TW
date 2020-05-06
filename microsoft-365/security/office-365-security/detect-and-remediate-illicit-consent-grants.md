@@ -15,13 +15,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: 了解如何識別並修正在 Office 365 中的非法同意授權。
-ms.openlocfilehash: 49fbbc1ea687cb5c01b39045a7359ee131a6732a
-ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
+description: 瞭解如何辨識和修正非法同意授與 Microsoft Office 365 的攻擊。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c7ba6c521c814e4ea44c2dc29ccdad8143d166d4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43808975"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034825"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>偵測並修正違法的同意授與
 

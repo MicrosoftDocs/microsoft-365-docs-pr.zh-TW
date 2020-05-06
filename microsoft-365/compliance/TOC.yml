@@ -42,6 +42,8 @@
       items:
         - name: 了解通訊合規性
           href: communication-compliance.md
+        - name: 通訊合規性計畫
+          href: communication-compliance-plan.md
         - name: 開始使用通訊合規性
           href: communication-compliance-configure.md
         - name: 調查和修復通訊合規性警示

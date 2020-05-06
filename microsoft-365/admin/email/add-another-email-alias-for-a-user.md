@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: '瞭解您可以如何有一個以上的電子郵件地址，稱為「電子郵件別名」，與您的 Microsoft 365 for business 帳戶相關聯。 '
-ms.openlocfilehash: 66ff2441c95ed28b2072792fd0a63b16eea85c04
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: efd0dbf5ae072c803b52d94dd41f16db9bb0413a
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629080"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048804"
 ---
-# <a name="add-another-email-alias-for-a-user"></a>為使用者新增另一個電子郵件別名
+# <a name="add-another-email-alias-for-a-user"></a>為使用者新增其他電子郵件別名
   
 本文適用于具有商務用訂閱的 Microsoft 365 系統管理員。 這不適用於家庭使用者。
   
@@ -68,7 +68,7 @@ Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時
     > 如果您是從 GoDaddy 或其他協力廠商購買訂閱，您必須移至 GoDaddy/協力廠商管理主控台，才能將新別名設為主要電子郵件地址。 
   
     > [!TIP]
-    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain To Office 365](https://support.office.com/article/2d2fa996-b760-411d-a5cc-190d63f13207.aspx)。 
+    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain To Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
   
      
 5. 完成後，請選擇 [**儲存變更**]。
@@ -100,7 +100,7 @@ Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時
     > 如果您是從 GoDaddy 或其他協力廠商購買訂閱，您必須移至 GoDaddy/協力廠商管理主控台，才能將新別名設為主要電子郵件地址。 
   
     > [!TIP]
-    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain To Office 365](https://support.office.com/article/2d2fa996-b760-411d-a5cc-190d63f13207.aspx)。 
+    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain To Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
 
 5. 當您完成時，請選取 [**儲存**]。
 
@@ -131,7 +131,7 @@ Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時
     > 如果您是從 GoDaddy 或其他協力廠商購買訂閱，您必須移至 GoDaddy/協力廠商管理主控台，才能將新別名設為主要電子郵件地址。 
   
     > [!TIP]
-    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain To Office 365](https://support.office.com/article/2d2fa996-b760-411d-a5cc-190d63f13207.aspx)。 
+    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain To Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
 
 5. 當您完成時，請選取 [**儲存**]。
 

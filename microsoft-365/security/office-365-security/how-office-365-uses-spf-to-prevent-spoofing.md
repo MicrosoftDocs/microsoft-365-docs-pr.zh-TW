@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 如何使用寄件者原則架構（SPF）來防止欺騙
+title: 寄件者原則架構（SPF）如何防止欺騙
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -15,15 +15,17 @@ search.appverid:
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
-description: 摘要：本文說明 Microsoft 365 如何在 DNS 中使用寄件者原則架構（SPF） TXT 記錄，以確保目的地電子郵件系統信任從您的自訂網域傳送的郵件。 這適用于從 Microsoft 365 傳送的輸出郵件。 從 Microsoft 365 傳送給 Microsoft 365 內之收件者的郵件，將永遠會透過 SPF。
-ms.openlocfilehash: d73fb881b8395c6c1383cca70e506694795f1364
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解 Microsoft 365 如何在 DNS 中使用寄件者原則架構（SPF） TXT 記錄，以確保目的地電子郵件系統信任從您的自訂網域傳送的郵件。
+ms.openlocfilehash: 5d09047b51f191947c13a3e6ca64b5cb30d3f6a0
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633987"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036386"
 ---
-# <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Microsoft 365 如何使用寄件者原則架構（SPF）來防止欺騙
+# <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Microsoft 365 如何使用寄件者原則架構 (SPF) 來防止詐騙
 
  **摘要：** 本文說明 Microsoft 365 如何使用 DNS 中的寄件者原則架構（SPF） TXT 記錄，以確保目的地電子郵件系統信任從您的自訂網域傳送的郵件。 這適用于從 Microsoft 365 傳送的輸出郵件。 從 Microsoft 365 傳送給 Microsoft 365 內之收件者的郵件，將永遠會透過 SPF。
 
@@ -202,7 +204,7 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 ip4:192.168.0.3 include:spf.protection.ou
 
 一旦您已制定 SPF TXT 記錄，請遵循在[Microsoft 365 中設定 SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)中的步驟，協助防止哄騙將其新增至您的網域。
 
-雖然 SPF 的設計訴求是要協助防止詐騙，但是有 SPF 無法防護的詐騙技術。 為了避免這些情況，在您設定 SPF 之後，您也應該設定 DKIM 和 DMARC for Microsoft 365。 若要開始使用，請參閱[使用 DKIM 驗證從 Microsoft 365 中的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)。 接下來，請參閱[使用 DMARC 驗證 Microsoft 365 中的電子郵件](use-dmarc-to-validate-email.md)。
+雖然 SPF 的設計訴求是要協助防止詐騙，但是有 SPF 無法防護的詐騙技術。 為了避免這些情況，在您設定 SPF 之後，您也應該設定 DKIM 和 DMARC for Microsoft 365。 若要開始使用，請參閱[使用 DKIM 驗證從 Microsoft 365 中的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)。 接下來，請參閱[在 Microsoft 365 中使用 DMARC 來驗證電子郵件](use-dmarc-to-validate-email.md)。
 
 ## <a name="troubleshooting-best-practices-for-spf-in-microsoft-365"></a>疑難排解： Microsoft 365 中 SPF 的最佳作法
 <a name="SPFTroubleshoot"> </a>

@@ -1,5 +1,5 @@
 ---
-title: '執行 EOP 中的系統管理員角色群組報告 '
+title: 執行 EOP 中的系統管理員角色群組報告
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,23 +11,25 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
-description: 系統管理員可以了解如何執行系統管理員角色群組報表中 Exchange Online Protection (EOP)。 此報表記錄時為系統管理員成員可以從新增或移除成員系統管理員角色群組，Microsoft Exchange Online Protection (EOP) 會記錄每個項目。
-ms.openlocfilehash: d9e7db8accae259b3eb332ce17c52c6749c2bec2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，您將瞭解如何在 Exchange Online Protection （EOP）中執行系統管理員角色群組報告。
+ms.openlocfilehash: d3c4db8079a71ba054f323617d3ade65083a3a04
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598540"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034453"
 ---
 # <a name="run-an-administrator-role-group-report-in-eop"></a>執行 EOP 中的系統管理員角色群組報告
 
- 當系統管理員成員可以從新增或移除成員系統管理員角色群組，Exchange Online Protection (EOP) 會記錄每個項目。 當您執行系統管理員角色群組報表在 Exchange 系統管理中心 (EAC) 中時，項目顯示為搜尋結果，並包含已變更的角色群組成員資格角色群組會受到影響，與時機，以及進行哪些成員資格更新。 使用此報告可監視指派給組織使用者的系統管理權限變更。
+ 當系統管理員在系統管理員角色群組中新增或移除成員時，Exchange Online Protection （EOP）會記錄每個事件。 當您在 Exchange 系統管理中心（EAC）中執行系統管理員角色群組報告時，專案會顯示為搜尋結果，並包含受影響的角色群組、變更角色群組成員資格的人員，以及進行的成員資格更新。 使用此報告可監視指派給組織使用者的系統管理權限變更。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
 - 預估完成時間：2 分鐘
 
-- 若要開啟 Exchange 系統管理中心，請參閱[Exchange 系統管理中心在 Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md)。
+- 若要開啟 Exchange 系統管理中心，請參閱 exchange [Online Protection 中的 exchange 系統管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
 - 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [EOP 中的功能權限](feature-permissions-in-eop.md)主題的「報告」一節。
 
@@ -38,7 +40,7 @@ ms.locfileid: "41598540"
 
 ## <a name="use-the-eac-to-run-an-administrator-role-group-report"></a>使用 EAC 執行系統管理員角色群組報告
 
-執行系統管理員角色群組報表，以尋找特定的時間範圍內您組織中的管理角色群組所做的變更。
+執行系統管理員角色群組報告，以在特定時間範圍內尋找組織中管理角色群組的變更。
 
 1. 在 EAC 中，瀏覽至 **[相符性管理]** \> **[稽核]**，然後選擇 **[執行系統管理員角色群組報告]**。
 
@@ -60,10 +62,10 @@ ms.locfileid: "41598540"
 
 若要判斷是否已新增或移除某位使用者，您必須比較報告中的兩個個別項目。例如，以下是 **HelpDesk** 角色群組的記錄項目：
 
-> 2018/1/27 下午 4:43 <br> 系統管理員 <br> Updated members:Administrator;annb,florencef;pilarp <br> 2018/2/06 10:09 AM <br> 系統管理員 <br> Updated members:Administrator;annb;florencef;pilarp;tonip <br> 2018/2/19 下午 2:12 <br> 系統管理員 <br> Updated members:Administrator;annb;florencef;tonip
+> 1/27/2018 4:43 PM <br> 系統管理員 <br> Updated members:Administrator;annb,florencef;pilarp <br> 2/06/2018 10:09 AM <br> 系統管理員 <br> Updated members:Administrator;annb;florencef;pilarp;tonip <br> 2/19/2018 2:12 PM <br> 系統管理員 <br> Updated members:Administrator;annb;florencef;tonip
 
 在此範例中，系統管理員使用者帳戶做了以下變更：
 
-- 2/06/2018/，它們會新增使用者 tonip。
+- 在2/06/2018 上，他們新增了使用者 tonip。
 
-- 2/19/2018/，他們可以移除使用者 pilarp。
+- 在2/19/2018 上，他們移除使用者 pilarp。

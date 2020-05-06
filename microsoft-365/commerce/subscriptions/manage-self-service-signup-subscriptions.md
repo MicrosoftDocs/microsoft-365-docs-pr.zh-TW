@@ -17,18 +17,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: 瞭解如何管理組織的免費自助註冊訂閱。
-ms.openlocfilehash: 056ae95f9f5067ea3fa86164b620c72c84e3aad4
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 46c77cb32fec4dfa1fb9c3d3f992bd842be1b969
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43154127"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045251"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>管理自助註冊訂閱
 
 ## <a name="what-are-self-service-sign-up-subscriptions"></a>何謂自助註冊訂閱？
 
-您組織中的使用者可以註冊的免費自助註冊訂閱數目有限。 使用者只能為自己註冊和使用自助註冊訂閱服務。 這些訂閱會出現在 [**產品 & 服務**] 頁面上，標記為 [**可用**]，並顯示附注「這是您公司中使用者啟用的免費訂閱」。 您可以封鎖使用者的註冊，以及刪除使用者已註冊的免費訂閱，以管理自助註冊訂閱。 如需自助註冊和可用訂閱的詳細資訊，請參閱[在您的組織中使用自助註冊](../../admin/misc/self-service-sign-up.md)。
+您組織中的使用者可以註冊的免費自助註冊訂閱數目有限。 使用者只能為自己註冊和使用自助註冊訂閱服務。 這些訂閱會出現在 [**產品**] 頁面上，標記為 [**可用**]，並顯示附注「這是您公司中使用者啟用的免費訂閱」。 您可以封鎖使用者的註冊，以及刪除使用者已註冊的免費訂閱，以管理自助註冊訂閱。 如需自助註冊和可用訂閱的詳細資訊，請參閱[在您的組織中使用自助註冊](../../admin/misc/self-service-sign-up.md)。
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>這些訂閱與自助購買訂閱有何不同？
 
@@ -43,7 +43,7 @@ ms.locfileid: "43154127"
 > [!IMPORTANT]
 > 當您刪除自助註冊訂閱時，會封鎖所有使用者存取其資料和電子郵件，以及刪除所有的資料和電子郵件。
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品 & 服務</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 2. 尋找您要刪除的自助註冊訂閱。 在 [**設定 & 動作**] 區段中，選取 [**刪除訂閱**]。
 3. 在 [**刪除訂閱**] 窗格中，選取核取方塊，然後選取 [**刪除訂閱**]。
 

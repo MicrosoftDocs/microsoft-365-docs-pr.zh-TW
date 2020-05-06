@@ -1,5 +1,5 @@
 ---
-title: 安全性與合規性中心內的智慧型報告和深入解析
+title: 智慧報告、深入瞭解 Microsoft 365 的安全性 & 規範中心
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
-description: 深入瞭解安全性&amp;與合規性中心的報表和真知灼見 avialable。
-ms.openlocfilehash: 0ce3a0208344e328f4b494ab4d04c517fc2a21a6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 深入瞭解安全性與合規性中心中可用的智慧報告和洞察力，以及如何使用它們來查看及流覽資料，並快速採取動作。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 2825aeac685ba4742165ed5e01829e24c9287c44
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637163"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035541"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>安全性&amp;與合規性中心的智慧報告和洞察力
 
@@ -58,7 +59,7 @@ ms.locfileid: "43637163"
 |**高級威脅防護和電子郵件安全性報告** <br/> 電子郵件安全性和威脅防護報告（包括惡意程式碼、垃圾郵件、網路釣魚和欺騙性報告）  <br/> |在安全性&amp;與合規性中心，移至 [**報告** \> ]**儀表板** <br/> |[檢視 Office 365 進階威脅防護的報告](view-reports-for-atp.md) <br/><br/> [檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md) <br/> |
 |**郵件流程** <br/> 傳送和接收電子郵件訊息、最近的警示、排名最前面的寄件者及收件者、電子郵件轉寄報告等等相關資訊  <br/> |在安全性&amp;與合規性中心，移至 [**郵件流程** \> ]**儀表板** <br/> |[安全性與合規性中心內的郵件流程深入解析](mail-flow-insights-v2.md)<br/> |
 |**GDPR 規範** <br/> GDPR 合規性的相關資訊，包括資料主體、標籤趨勢及使用&amp;中關閉案例的連結  <br/> |在安全性&amp;與合規性中心，移至 [**資料隱私權** \> **GDPR] 儀表板** <br/> |[GDPR 的 Office 365 資訊保護](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
-|**審核記錄** <br/> Microsoft 365 活動、使用者、檔案或資料夾等相關資訊  <br/> |在安全性&amp;與合規性中心，移**至&amp;搜尋調查** \> **審計記錄搜尋** <br/> |[在安全性&amp;與合規性中心搜尋審核記錄檔](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
+|**審核記錄** <br/> Microsoft 365 活動、使用者、檔案或資料夾等等相關資訊  <br/> |在安全性&amp;與合規性中心，移**至&amp;搜尋調查** \> **審計記錄搜尋** <br/> |[在安全性&amp;與合規性中心搜尋審核記錄檔](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**規範報告** <br/> FedRAMP 報告、控管、風險和合規性報告、ISO 資訊安全性管理報告及服務組織控制稽核與評定報告  <br/> |在安全性&amp;與合規性中心，移至**服務品質保證** \> **報告** <br/> |[在 Office 365 &amp;中規劃安全性合規性](../../compliance/plan-for-security-and-compliance.md) <br/> |
   
 ## <a name="next-steps"></a>後續步驟

@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 本文說明 Microsoft 365 中的新資料調查（預覽）工具。
-ms.openlocfilehash: 89bd9e637a74ac1b972b00f794eca408828c076d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-mar2020
+description: 在本文中，您將瞭解 Microsoft 365 中的資料調查（預覽）工具。 「資料調查」工具可協助您評估和修正資料外泄。
+ms.openlocfilehash: 6975d554e939481c6ee1c32ec4e76bb25c7bf36c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626769"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036046"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 中的資料調查（預覽）綜述
 

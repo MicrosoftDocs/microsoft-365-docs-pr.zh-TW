@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: 瞭解如何在您的訂閱到期時或在 Microsoft 停用時重新啟用它，或在中間取消該訂閱。
-ms.openlocfilehash: 79a8b157743b96dd3227086d417e6903ec1762b0
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 9f665cc9ca80b7338197a5401cdf9a4c2283d123
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707664"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046237"
 ---
 # <a name="reactivate-your-subscription"></a>重新啟動您的訂閱
 
@@ -40,10 +40,9 @@ ms.locfileid: "43707664"
 
 ::: moniker range="o365-worldwide"
 
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
-
-2. 在 [產品與服務]**** 頁面上，找出您要重新啟用的訂閱。 在 [**帳單**] 區段中，選取 [**重新**啟用]。
+2. 在 [**您的產品**] 頁面上，尋找您要重新啟用的訂閱。 在 [**帳單**] 區段中，選取 [**重新**啟用]。
   
     如果您未看到 [**重新**啟用] 做為可用的動作，請[致電支援人員](../../admin/contact-support-for-business-products.md)重新啟用您的訂閱。
 
@@ -91,11 +90,11 @@ ms.locfileid: "43707664"
 
 3. 輸入您的付款詳細資料。 您可以在這裡更新現有的付款資訊。
 
-  - 如果您的訂閱已到期，當您提交付款明細時，您的訂閱會回到使用中狀態，而**下一個帳單**日期則會以一個月或一年的方式延伸，視您目前的訂閱承諾而定。 如果您是以信用卡或銀行帳戶付款，您的信用卡或銀行帳戶將會支付分機。 如果您是以發票付款，您會看到此分機會反映在下一個發票上。 若要確定您的訂閱不再到期，請[開啟定期計費](renew-your-subscription.md#turn-recurring-billing-off-or-on)。
+    - 如果您的訂閱已到期，當您提交付款明細時，您的訂閱會回到使用中狀態，而**下一個帳單**日期則會以一個月或一年的方式延伸，視您目前的訂閱承諾而定。 如果您是以信用卡或銀行帳戶付款，您的信用卡或銀行帳戶將會支付分機。 如果您是以發票付款，您會看到此分機會反映在下一個發票上。 若要確定您的訂閱不再到期，請[開啟定期計費](renew-your-subscription.md#turn-recurring-billing-off-or-on)。
 
     > [!NOTE]
     > 某些國家或地區未提供以銀行帳戶付款的能力。
   
-  - 如果您的訂閱已取消或已停用，因為尚未收到付款，它會傳回使用中狀態，而**下一個帳單**日期則保持不變。
+    - 如果您的訂閱已取消或已停用，因為尚未收到付款，它會傳回使用中狀態，而**下一個帳單**日期則保持不變。
 
 ::: moniker-end

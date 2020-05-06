@@ -1,5 +1,5 @@
 ---
-title: 大量投訴層級值、大宗郵件寄件者、BCL 層級、BCL 的運作方式、BCL 分級、反垃圾郵件標頭、大宗郵件篩選、停止大宗郵件
+title: 大量相容層級值
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,12 +16,12 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: 瞭解 Office 365 中的大量規范層級（BCL）值。
-ms.openlocfilehash: e45b08756dd528e56b24635d670ddcd05e4396e4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 82c006f05ce3d37ff23ca1e522b653bd26efeed8
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630632"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035565"
 ---
 # <a name="bulk-complaint-level-bcl-in-office-365"></a>Office 365 中的大量投訴層級（BCL）
 

@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
-description: 退信攻擊是自動退回傳送至偽造電子郵件地址的郵件。 非法回應 dnsbl DNSBL 識別傳送退信攻擊郵件（可能包含許多合法的電子郵件來源）的伺服器。 因為這不是垃圾郵件的清單，所以不會嘗試移除您自己的非法回應 dnsbl DNSBL。
-ms.openlocfilehash: 22eeec29722cf1742e096234aad95b9f6ee407e2
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，您將瞭解退信攻擊和 Microsoft Exchange Online Protection （EOP）
+ms.openlocfilehash: 14460b75920b053461722b5a129d785fb6952a5a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895402"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035589"
 ---
 # <a name="backscatter-and-eop"></a>退信攻擊與 EOP
 

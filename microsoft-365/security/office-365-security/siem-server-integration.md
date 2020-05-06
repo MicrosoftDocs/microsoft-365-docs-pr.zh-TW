@@ -1,5 +1,5 @@
 ---
-title: " 安全性資訊和事件管理（SIEM）伺服器與 Microsoft 365 服務和應用程式整合"
+title: SIEM server 與 Microsoft 365 服務與應用程式的整合
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,13 +15,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - SIEM
+- seo-marvel-apr2020
 description: 深入瞭解安全性資訊和事件管理（SIEM）伺服器與您的 Microsoft 365 雲端服務和應用程式的整合
-ms.openlocfilehash: a4ef144d02ebf0481481861c3dfa60a43b4f3ace
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: c52f24c6260c890b1f6d8612efacb78f9b08be86
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081217"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035257"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>安全性資訊和事件管理（SIEM）伺服器與 Microsoft 365 服務和應用程式整合
 

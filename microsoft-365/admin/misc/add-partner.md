@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: 瞭解如何在 Microsoft 365 購買時，新增訂閱顧問合作夥伴作為記錄的合作夥伴，變更合作夥伴或從訂閱刪除合作夥伴。
-ms.openlocfilehash: 913be0cfa94784826f4bc8dcfcc1bbf314ab4c09
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: daefb83335af84403cb2dd4e9c7759700eab8278
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627965"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045281"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>新增、變更或刪除訂閱顧問合作夥伴
 
@@ -114,7 +114,7 @@ ms.locfileid: "43627965"
 > [!NOTE]
 > 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
     
 2. 如果您有一個以上的訂閱，請選取您要編輯的訂閱。
   
@@ -132,7 +132,7 @@ ms.locfileid: "43627965"
   
 3. 在右側的 [訂閱成本] 底下，選擇 [**其他動作** > ] [**新增記錄的夥伴**]。
 
-4. 輸入您要新增之合作夥伴的 Microsoft 合作夥伴 ID、選取 [**檢查 ID**]，然後再進行**提交**。 請詢問合作夥伴，取得對方的 Microsoft 合作夥伴 ID。
+4. 輸入您要新增之合作夥伴的 Microsoft 合作夥伴 ID、選取 [**檢查 ID**]，然後再進行**提交**。 您可以詢問合作夥伴，以取得對方的 Microsoft 合作夥伴識別碼。
 
 5. 合作夥伴識別碼會顯示在 [**訂閱**] 頁面上。
     
@@ -161,13 +161,13 @@ ms.locfileid: "43627965"
 > [!NOTE]
 > 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
     
 2. 如果您有多個訂閱，請選取您要編輯的訂閱名稱。
     
 3. 在 [**合作夥伴識別碼**] 底下，選取 [**編輯記錄的夥伴**]。
   
-4. 輸入您要新增之合作夥伴的新 Microsoft 合作夥伴識別碼，然後選取 [**檢查 ID**]，然後再**提交**。 請詢問合作夥伴，取得對方的 Microsoft 合作夥伴 ID。
+4. 輸入您要新增之合作夥伴的新 Microsoft 合作夥伴識別碼，然後選取 [**檢查 ID**]，然後再**提交**。 您可以詢問合作夥伴，以取得對方的 Microsoft 合作夥伴識別碼。
   
 ::: moniker-end
 
@@ -179,7 +179,7 @@ ms.locfileid: "43627965"
     
 3. 在 [**合作夥伴識別碼**] 底下，選取 [**編輯記錄的夥伴**]。
   
-4. 輸入您要新增之合作夥伴的新 Microsoft 合作夥伴識別碼，然後選取 [**檢查 ID**]，然後再**提交**。 請詢問合作夥伴，取得對方的 Microsoft 合作夥伴 ID。   
+4. 輸入您要新增之合作夥伴的新 Microsoft 合作夥伴識別碼，然後選取 [**檢查 ID**]，然後再**提交**。 您可以詢問合作夥伴，以取得對方的 Microsoft 合作夥伴識別碼。   
 
 ::: moniker-end
 
@@ -191,7 +191,7 @@ ms.locfileid: "43627965"
     
 3. 在 [**合作夥伴識別碼**] 底下，選取 [**編輯記錄的夥伴**]。
   
-4. 輸入您要新增之合作夥伴的新 Microsoft 合作夥伴識別碼，然後選取 [**檢查 ID**]，然後再**提交**。 請詢問合作夥伴，取得對方的 Microsoft 合作夥伴 ID。   
+4. 輸入您要新增之合作夥伴的新 Microsoft 合作夥伴識別碼，然後選取 [**檢查 ID**]，然後再**提交**。 您可以詢問合作夥伴，以取得對方的 Microsoft 合作夥伴識別碼。   
 
 ::: moniker-end
 
@@ -209,7 +209,7 @@ ms.locfileid: "43627965"
 > [!NOTE]
 > 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
-1.  在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1.  在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
     
 2. 如果您有多個訂閱，請選取您要編輯的訂閱名稱。
     
@@ -248,7 +248,7 @@ ms.locfileid: "43627965"
 
 ::: moniker range="o365-worldwide"
 
-您無法自行移除轉銷商關係。
+您不能自行移除經銷商關係。
   
 如果您要移除轉銷商關係，[**刪除**] 選項會變暗，您必須要求轉銷商合作夥伴遵循下列指示：[移除與合作夥伴的轉銷商關係](https://docs.microsoft.com/partner-center/remove-a-relationship)。
 
@@ -256,7 +256,7 @@ ms.locfileid: "43627965"
 
 ::: moniker range="o365-germany"
 
-您無法自行移除轉銷商關係。
+您不能自行移除經銷商關係。
   
 如果您要移除轉銷商關係，[**刪除**] 選項會變暗，您必須要求轉銷商合作夥伴遵循下列指示：[移除與合作夥伴的轉銷商關係](https://docs.microsoft.com/partner-center/remove-a-relationship)。
   
@@ -264,7 +264,7 @@ ms.locfileid: "43627965"
 
 ::: moniker range="o365-21vianet"
 
-您無法自行移除轉銷商關係。
+您不能自行移除經銷商關係。
   
 如果您要移除轉銷商關係，[**刪除**] 選項會變暗，您必須要求轉銷商合作夥伴遵循下列指示：[移除與合作夥伴的轉銷商關係](https://docs.microsoft.com/partner-center/remove-a-relationship)。
   

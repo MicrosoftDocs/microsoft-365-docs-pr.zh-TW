@@ -1,5 +1,5 @@
 ---
-title: 威脅總管和即時偵測, 威脅總管新功能, 威脅總管變更, Office 365 新功能, 安全性, 雲端安全性, ATP 安全性新功能, ATP 新功能
+title: 威脅總管和即時偵測
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: 深入了解安全性與合規性中心的總管和即時偵測。
-ms.openlocfilehash: 2d75a5e05bb3fce85d52856afabc6aba13594f26
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+description: 瞭解如何在安全性&amp;與合規性中心使用 Explorer 和即時偵測，以有效且有效地調查威脅並加以回應。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7d540b52a403e43be06fc731590d183d5edfa7f9
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708556"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036749"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
 

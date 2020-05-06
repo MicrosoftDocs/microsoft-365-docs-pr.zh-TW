@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: '瞭解如何在 Microsoft 365 for business 訂閱中重設使用者的密碼。 '
-ms.openlocfilehash: 0d8a68edb0b85094b271712f018eea79ca9f0aee
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 99ec6423b835204624f91977b6f138fa7c8ba8cd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626943"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049444"
 ---
 # <a name="reset-passwords"></a>重設密碼
 
@@ -93,7 +93,7 @@ ms.locfileid: "43626943"
     
 - 要求您公司中的另一個全域管理員為您重設您的密碼。
     
-- 或者，請[致電 Microsoft 支援人員](https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&amp;rs=en-US&amp;ad=US#ID0EAADAAA=Phone_support_)。 
+- 或者，請[致電 Microsoft 支援人員](https://docs.microsoft.com/en-us/microsoft-365/admin/contact-support-for-business-products)。 
     
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>同時為組織中的所有人重設所有商務密碼
 <a name="bkmk_forgot"> </a>
@@ -117,9 +117,9 @@ ms.locfileid: "43626943"
 
 使用 PowerShell！請參閱由 Eyal Doron 撰寫的這篇文章：[使用 PowerShell 管理密碼](https://go.microsoft.com/fwlink/?linkid=853696)。
   
-相關文章︰[設定多個使用者帳戶的密碼](https://support.office.com/article/014fc912-bee1-461d-ad00-56b80428b907.aspx#bkmk_password)。
+相關文章︰[設定多個使用者帳戶的密碼](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。
   
-如需概要資訊，請參閱[PowerShell For Microsoft 365 administrators](https://support.office.com/article/40fdcbd4-c34f-42ab-8678-8b3751137ef1.aspx)。
+如需概要資訊，請參閱[PowerShell For Microsoft 365 administrators](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1)。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>針對企業中的所有使用者強制執行密碼變更
 <a name="bkmk_forgot"> </a>
@@ -144,4 +144,4 @@ ms.locfileid: "43626943"
 
 [移除離職員工](remove-former-employee.md)
 
-[Microsoft 365 商務用訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[商務用 Microsoft 365 訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

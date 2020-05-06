@@ -1,5 +1,7 @@
 ---
-title: 下載匯出工作
+title: 下載案例的匯出工作
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,99 +15,100 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 安装并使用 Azure 存储资源管理器下载从高级电子数据展示中的审阅集导出的文档。
-ms.openlocfilehash: 4846a77d26079303f85778e71e6bdf2804ccea5e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.custom: seo-marvel-mar2020
+description: 安裝和使用 Azure Storage Explorer，以從 Advanced eDiscovery 的審閱集中下載已匯出的檔。
+ms.openlocfilehash: 617ef0b27d5cab4098c505eaefb935ba8ae4ae2a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076308"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035675"
 ---
 # <a name="download-export-jobs"></a>下載匯出工作
 
-从高级电子数据展示案例中的审阅集导出文档时，文档将上载到 Microsoft 提供的 Azure 存储位置或组织管理的 Azure 存储位置。 使用的 Azure 存储位置的类型取决于导出文档时选择的选项。 
+當您在高級 eDiscovery 案例中從審閱集匯出檔時，會將檔上傳至 Microsoft 提供的 Azure 存放區位置，或組織所管理的 Azure 儲存體位置。 使用的 Azure 儲存位置類型取決於匯出檔時選取的選項。 
 
-本文提供有关如何使用 Microsoft Azure 存储资源管理器连接到 Azure 存储位置以浏览和下载导出的文档的说明。 有关 Azure 存储资源管理器的详细信息，请参阅[快速入门：使用 Azure 存储资源管理器](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-storage-explorer)。
+本文提供如何使用 Microsoft Azure Storage Explorer 連線到 Azure 存放位置，以流覽及下載匯出的檔的指示。 如需 Azure Storage Explorer 的詳細資訊，請參閱[快速入門：使用 Azure Storage explorer](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-storage-explorer)。
 
-## <a name="step-1-install-the-azure-storage-explorer"></a>步骤 1：安装 Azure 存储资源管理器
+## <a name="step-1-install-the-azure-storage-explorer"></a>步驟1：安裝 Azure Storage Explorer
 
-第一步是下载并安装 Azure 存储资源管理器。 有关说明，请参阅[Azure 存储资源管理器工具](https://go.microsoft.com/fwlink/p/?LinkId=544842)。 使用此工具可以连接到步骤 3 中的导出文档并下载文档。
+第一個步驟是下載及安裝 Azure Storage Explorer。 如需相關指示，請參閱[Azure Storage Explorer 工具](https://go.microsoft.com/fwlink/p/?LinkId=544842)。 您可以使用此工具，在步驟3中連線並下載匯出的檔。
 
-## <a name="step-2-obtain-the-sas-url-from-the-export-job"></a>步骤 2：从导出作业获取 SAS URL
+## <a name="step-2-obtain-the-sas-url-from-the-export-job"></a>步驟2：從匯出工作取得 SAS URL
 
-下一步是获取在创建导出作业以[从审阅集导出文档](export-documents-from-review-set.md)时生成的共享访问签名 （SAS） URL。 您可以复制上载到 Microsoft 提供的 Azure 存储位置或组织管理的 Azure 存储位置的文档的 SAS URL。 在这两种情况下，您都使用 SAS URL 连接到步骤 3 中的 Azure 存储位置。
+下一步是取得當您建立匯出工作以[從審閱集匯出檔](export-documents-from-review-set.md)時所產生的共用存取簽名（SAS） URL。 您可以複製上傳至 Microsoft 提供之 Azure 存放區位置或您組織所管理之 Azure 存放位置之檔的 SAS URL。 在這兩種情況下，您可以使用 SAS URL 連線至步驟3中的 Azure 儲存體位置。
 
-1. 在"**高级电子数据展示"** 页上，转到案例，然后单击"**导出"** 选项卡。
+1. 在 [**高級電子**檔探索] 頁面上，移至案例，然後按一下 [**匯出**] 索引標籤。
 
-2. 在"**导出"** 选项卡上，单击要下载的导出作业。
+2. 在 [**匯出**] 索引標籤上，按一下您要下載的匯出工作。
 
-3. 在"弹出窗口"页上，在"**位置"** 下复制显示的 SAS URL。 如有必要，可以将其保存到文件中，以便在步骤 3 中访问该文件。
+3. 在飛入頁面的 [**位置**] 下，複製所顯示的 SAS URL。 如有必要，您可以將它儲存至檔案，讓您可以在步驟3中存取。
  
-   ![复制"位置"下显示的 SAS URL](./media/eDiscoExportJob.png)
+   ![複製顯示在 [位置] 底下的 SAS URL](../media/eDiscoExportJob.png)
 
-## <a name="step-3-connect-to-the-azure-storage-location"></a>步骤 3：连接到 Azure 存储位置
+## <a name="step-3-connect-to-the-azure-storage-location"></a>步驟3：連線至 Azure 存放區位置
 
-最后一步是使用 Azure 存储资源管理器和 SAS URL 连接到 Azure 存储位置，并将导出到本地计算机的文档下载。
+最後一個步驟是使用 Azure Storage Explorer 和 SAS URL 連線至 Azure 存放位置，並下載匯出至本機電腦的檔。
 
-1.  打开步骤 1 中安装的 Azure 存储资源管理器。
+1.  開啟您在步驟1中安裝的 Azure 存放區 Explorer。
 
-2. 单击"**添加帐户"** 图标。 或者，您可以右键**单击"存储帐户"。**
+2. 按一下 [**新增帳戶**] 圖示。 或者，您也可以用滑鼠右鍵按一下 [**儲存帳戶**]。
 
-   ![单击"添加帐户"图标](./media/AzureStorageConnect.png)
+   ![按一下 [新增帳戶] 圖示](../media/AzureStorageConnect.png)
 
-3.  在"**连接到 Azure 存储"** 页上，**单击"使用共享访问签名 （SAS） URI"，** 然后单击"**下一步"。**
+3.  在 [ **Connect To Azure Storage]** 頁面上，按一下 [**使用共用存取簽名（SAS）] URI** ，然後按 **[下一步]**。
 
-    ![单击使用共享访问签名 （SAS） URI，然后单击"下一步"](./media/AzureStorageConnect2.png)
+    ![按一下 [使用共用存取簽名（SAS）] URI，然後按 [下一步]](../media/AzureStorageConnect2.png)
 
-4.  在"**使用 SAS URI 附加"** 页上，单击 URI 框，然后粘贴在步骤 2 中获取的 SAS URL。 
+4.  在 [**附加于 SAS URI** ] 頁面上，按一下 [URI] 方塊，然後貼上您在步驟2中取得的 SAS URL。 
 
-    ![将 SAS URL 粘贴到 URI 框中](./media/AzureStorageConnect3.png)
+    ![在 [URI] 方塊中貼上 SAS URL](../media/AzureStorageConnect3.png)
 
-    请注意，SAS URL 的一部分**显示在"显示名称"** 框中。 这将用作连接到存储位置后在**存储帐户**下创建的容器的显示名称。 此名称由高级电子数据展示案例的 ID 和唯一标识符组成。 您可以保留默认显示名称或更改它。 如果更改它，则显示名称必须是唯一的。
+    請注意，SAS URL 的一部分會顯示在 [**顯示名稱**] 方塊中。 在您連接至儲存位置後，會將此名稱當做**儲存帳戶**下所建立之容器的顯示名稱使用。 這個名稱是由高級 eDiscovery 案例的識別碼所組成，也就是唯一的識別碼。 您可以保留預設顯示名稱或加以變更。 如果您進行變更，顯示名稱必須是唯一的。
 
 5.  按 [下一步]****。
 
-    将显示"**连接摘要"** 页。
+    隨即會顯示 [連線**摘要**] 頁面。
    
-    ![单击"连接摘要"页上的连接以连接到 Azure 存储位置](./media/AzureStorageConnect4.png)
+    ![按一下 [連線摘要] 頁面上的 [連線]，以連線至 Azure 存放位置。](../media/AzureStorageConnect4.png)
 
-6. 在"**连接摘要"** 页上，查看连接信息，然后单击"**连接"。** 
+6. 在 [連線**摘要**] 頁面上，複查連線資訊，然後按一下 **[連接]**。 
 
-    打开**Blob 容器**节点（**在存储帐户（** > **附加容器）**\>下。 
+    開啟 [ **Blob 容器**] 節點（[**儲存帳戶** > **（附加的容器）** \> ] 下）。 
 
-    ![](./media/AzureStorageConnect5.png)
+    ![在 Blob 容器節點中匯出工作](../media/AzureStorageConnect5.png)
 
-    它包含一个容器，该容器的名称来自步骤 4 中的显示名称。 此容器包含您创建的每个导出作业的文件夹。 这些文件夹的命名 ID 对应于导出作业的 ID。 您可以在"支持"页上的"**支持"** 页上找到这些导出操作码（以及导出名称），该"准备数据"**用于"作业"** 选项卡上列出的每个**导出作业的"准备数据"。**
+    包含以步驟4顯示名稱命名的容器。 此容器包含您已建立之每個匯出工作的資料夾。 這些資料夾是以對應至匯出工作識別碼的識別碼命名。 您可以在 [支援] 頁面上的 [**支援資訊**] 下，于 [**工作**] 索引標籤上所列的每個**針對匯出工作準備資料的資料**匯出 IDs （和匯出的名稱）。
 
-7. 双击导出作业文件夹以将其打开。
+7. 按兩下 [匯出] 工作資料夾以將其開啟。
 
-   将显示文件夹和导出报告的列表。
+   隨即會顯示資料夾清單及匯出報告。
    
-    ![导出文件夹包含导出的文件和导出报告](./media/AzureStorageConnect6.png)
+    ![匯出資料夾包含匯出的檔案和匯出報告](../media/AzureStorageConnect6.png)
 
-   导出作业文件夹包含以下项目。 导出文件夹中的实际项由创建导出作业时配置的导出选项确定。 有关详细信息，请参阅[从审阅集导出文档。](export-documents-from-review-set.md)
+   「匯出工作」資料夾包含下列專案。 匯出資料夾中的實際專案是由建立匯出工作時設定的匯出選項所決定。 如需詳細資訊，請參閱[從審閱集匯出檔](export-documents-from-review-set.md)。
 
-    - 导出_load_file.csv：此 CSV 文件是包含有关每个导出文档的详细信息的详细信息导出报表。 该文件由文档的每个元数据属性的列组成。 有关此报表中包含的元数据的列表和说明，请参阅[高级电子数据展示 中"文档元数据"字段中](document-metadata-fields.md)的表中的"**导出字段名称"** 列。
+    - Export_load_file .csv：此 CSV 檔是包含每個匯出檔相關資訊的詳細資料匯出報告。 檔案由每個檔的中繼資料屬性的欄所組成。 如需此報告中包含之中繼資料的清單和描述，請參閱[Advanced eDiscovery 中檔元資料欄位](document-metadata-fields.md)之表格中的**匯出**的功能變數名稱欄。
     
-    - 摘要.txt：包含导出摘要（包括导出统计信息）的文本文件。
+    - 摘要：一個文字檔，包含匯出摘要，包括匯出統計資料。
     
-    - 提取的_text_文件：此文件夹包含每个导出文档的文本文件版本。
+    - Extracted_text_files：此資料夾包含每個匯出的檔的文字檔版本。
      
-    - 本机文件：此文件夹包含每个导出文档的本机文件版本。
+    - NativeFiles：此資料夾包含每個匯出檔的原生檔案版本。
     
-    - 错误\文件：当导出作业包含任何错误文件时，此文件夹包含以下项目： 
+    - Error_files：當匯出工作包含任何錯誤檔時，此資料夾包含下列專案： 
         
-      - 提取错误.csv：此 CSV 文件包含未从其父项正确提取的文件的可用元数据。
+      - ExtractionError：此 CSV 檔案包含未從其上層專案正確提取之檔案可用的中繼資料。
         
-      - 处理错误：此文件夹包含处理错误的文档。 此内容处于项目级别，这意味着如果附件出现处理错误，则包含附件的文档也将包含在此文件夹中。
+      - ProcessingError：此資料夾包含處理錯誤的檔。 此內容屬於專案層級，這表示如果附件發生處理錯誤，包含附件的檔也會包含在此資料夾中。
  
-8. 要导出导出的所有内容，请选择导出文件夹，然后单击"**下载"。**
+8. 若要匯出匯出中的所有內容，請選取 [匯出] 資料夾，然後按一下 [**下載**]。
 
-9. 指定要下载导出文件的位置，然后单击"选择文件夹"。
+9. 指定您要下載匯出檔案的位置，然後按一下 [選取資料夾]。
 
-    Azure 存储资源管理器启动导出过程。 下载导出的项目的状态将显示在"**活动"** 窗格中。 下载完成后将显示一条消息。
+    Azure Storage Explorer 會啟動匯出程式。 [**活動**] 窗格中會顯示所匯出專案的下載狀態。 下載完成時，會顯示一則訊息。
 
-    ![下载完成后将显示一条消息](./media/AzureStorageConnect8.png)
+    ![當下載完成時，會顯示一則訊息](../media/AzureStorageConnect8.png)
 
 > [!NOTE]
-> 您可以选择要下载的特定项目，而不是下载整个导出作业。 您可以双击某个项目以查看项目，而不是下载项目。
+> 您可以選取要下載的特定專案，而不是下載整個匯出工作。 您可以按兩下專案來查看專案，而不是下載專案。

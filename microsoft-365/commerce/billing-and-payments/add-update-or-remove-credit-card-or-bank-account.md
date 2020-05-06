@@ -1,5 +1,5 @@
 ---
-title: 新增、更新或移除支付方式
+title: 新增、更新或移除付款方式
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,17 +24,17 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: 瞭解如何在 Microsoft 365 系統管理中心中管理您的支付方式。
-ms.openlocfilehash: be03d4b779c0592d47b23c4cf1fd491b7c8f455e
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: b15381ee4eba7c1a91e108743fc326c890ab1820
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106045"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045925"
 ---
-# <a name="add-update-or-remove-your-payment-methods"></a>新增、更新或移除支付方式
+# <a name="add-update-or-remove-your-payment-methods"></a>新增、更新或移除付款方式
 
 ::: moniker range="o365-worldwide"
-您可以使用信用卡或支付卡或銀行帳戶，購買來自 Microsoft 的產品和服務。 您可以在 [**付款條件**] 頁面上輸入您的付款資訊，或在進行購買時輸入資訊。
+您可以使用信用卡或支付卡或銀行帳戶，購買來自 Microsoft 的產品和服務。 您可以在 [**付款方式**] 頁面或進行購買時，輸入您的付款資訊。
 
 您只能管理已新增的支付方式。
 
@@ -45,14 +45,14 @@ ms.locfileid: "43106045"
 
 **您看到的介面與本文所述的介面不相符嗎？** 如果是的話，請參閱[管理支付方式](manage-payment-methods.md)。
 
-## <a name="add-a-payment-method"></a>新增付款條件
+## <a name="add-a-payment-method"></a>新增付款方式
 
 1. 在系統管理中心中，移至**帳單** > **& 付款** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>] 頁面。
 2. 選取 [新增付款方式]****。
 3. 在 [付款方式]**** 頁面上，從下拉式功能表選取付款方法。
 4. 輸入新卡片或銀行帳戶的資訊，然後選取 [**新增**]。
 
-## <a name="update-an-existing-payment-method"></a>更新現有的支付方式
+## <a name="update-an-existing-payment-method"></a>更新現有的付款方式
 
 您無法變更現有的卡片或銀行帳戶上的號碼。 如果卡或銀行帳戶號碼已變更，請將其新增為新的支付方式。 接下來，將其挑選為您訂閱的付款選項，然後移除現有的卡片或銀行帳戶。 您必須使用與租使用者相同的國家/地區所簽發的卡片。
 
@@ -60,13 +60,13 @@ ms.locfileid: "43106045"
 2. 在 [**支付方式**] 頁面上，挑選要更新的卡片或銀行帳戶，然後選取 [**編輯**]。
 3. 更新您的付款條件資訊（名片上的名稱、帳單位址、電話號碼或到期日），然後選取 [**儲存**]。
 
-## <a name="change-a-payment-method"></a>變更付款條件
+## <a name="change-a-payment-method"></a>變更付款方式
 
 您可以變更用來支付單一訂閱的支付方式。 您也可以將所有訂閱從一個付款條件移至另一個。
 
 ### <a name="change-the-payment-method-used-for-a-single-subscription"></a>變更用於單一訂閱的付款條件
 
-1. 在系統管理中心，移至 [帳單]**** > [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 2. 選取您要使用新信用卡或銀行帳戶支付的訂閱。 在 [**帳單**] 底下的支付方式旁邊，選取 [**編輯**]。
 3. 在您現有的支付方式旁邊，選取 [**變更**]。
 4. 從下拉式功能表中，選取另一個付款條件，或選擇新增支付方式。
@@ -83,16 +83,16 @@ ms.locfileid: "43106045"
 > [!NOTE]
 > 您只能在 [**變更付款方法**] 窗格中的現有付款條件之間進行變更。 若要變更為依發票付款，請參閱[從信用卡或銀行帳戶變更為發票](change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice)。
 
-## <a name="remove-a-payment-method"></a>移除支付方式
+## <a name="remove-a-payment-method"></a>移除付款方式
 
 您只能從付款條件清單中移除信用卡或轉帳卡或銀行帳戶（如果未附加至訂閱）。 這適用于所有的訂閱，不論其狀態。 為訂閱新增支付方式，然後從該訂閱中移除舊的支付方式。 如果支付方式與帳單設定檔相關聯，請變更用於計費設定檔的付款條件，然後移除付款條件。
 
 ### <a name="delete-a-payment-method"></a>刪除付款條件
 
-如果您的付款條件未與任何訂閱相關聯，您可以立即將其刪除。
+如果您的付款方式沒有與任何訂閱相關聯，您可以立即將其刪除。
 
 1. 在系統管理中心中，移至**帳單** > **& 付款** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>] 頁面。
-2. 將游標移到卡片或銀行帳戶上方，然後選取刪除圖示。
+2. 將游標暫留在卡片或銀行帳戶上，然後選取 [刪除] 圖示。
 3. 在 [**刪除支付方式**] 窗格底部，選取 [**刪除**]。
 
 ### <a name="add-an-alternate-payment-method-used-to-pay-for-subscriptions"></a>新增支付訂閱所用的其他支付方式
@@ -100,7 +100,7 @@ ms.locfileid: "43106045"
 如果您的付款條件與任何訂閱相關聯，而且您在檔案上沒有其他付款條件，請先新增支付方式。 接下來，變更用來支付訂閱費用的支付方式。 然後，您就可以刪除支付方式。
 
 1. 在系統管理中心中，移至**帳單** > **& 付款** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>] 頁面。
-2. 將游標移到卡片或銀行帳戶上方，然後選取刪除圖示。
+2. 將游標暫留在卡片或銀行帳戶上，然後選取 [刪除] 圖示。
 3. [**刪除支付方式**] 窗格會列出使用該付款條件的現有訂閱。
 4. 選取 [新增付款方式]****。
 5. 選取您要新增的付款條件類型、輸入帳戶資訊，然後選取 [**新增**]。
@@ -114,7 +114,7 @@ ms.locfileid: "43106045"
 如果您的付款條件與任何訂閱相關聯，而且您在檔案中至少有一個備選付款條件，請先變更用來支付訂閱的付款條件。 然後，您就可以刪除支付方式。
 
 1. 在系統管理中心中，移至**帳單** > **& 付款** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>] 頁面。
-2. 將游標移到卡片或銀行帳戶上方，然後選取刪除圖示。
+2. 將游標暫留在卡片或銀行帳戶上，然後選取 [刪除] 圖示。
 3. [**刪除支付方式**] 窗格會列出使用該付款條件的現有訂閱。
 4. 選取 [**變更支付方式**]。
 5. 從下拉式清單中選取其他支付方式，然後選取 [**變更**]。
@@ -141,7 +141,7 @@ ms.locfileid: "43106045"
 2. 如果您沒有其他支付方式，請依照[Add a an an 付款條件所用的步驟來支付訂閱](#add-an-alternate-payment-method-used-to-pay-for-subscriptions)。
 3. 如果您已有其他可用的支付方式，請依照[變更付款條件](#change-a-payment-method)中的步驟進行。
 
-## <a name="troubleshoot-payment-methods"></a>付費方法疑難排解
+## <a name="troubleshoot-payment-methods"></a>針對付款方式進行疑難排解
 
 |**問題**|**疑難排解步驟**|
 |:-----|:-----|

@@ -1,5 +1,5 @@
 ---
-title: 在 Exchange Online 中設定 Outlook 網頁版的 S/MIME 設定
+title: 設定 S/MIME 設定-web 上 Outlook 的 Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,12 +15,13 @@ ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 ms.collection:
 - M365-security-compliance
 description: 簡要描述 Exchange Online 系統管理員需要執行哪些動作才能在 Exchange Online 的 Outlook 網頁版中查看和設定 S/MIME 設定。
-ms.openlocfilehash: 354b247c2b0e0e610e6cb0626f4a404b582db717
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 2ed3f3c6289c4663c6bebecdf9ab03eacd94e373
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960319"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035091"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>在 Exchange Online 中設定 Outlook 網頁版的 S/MIME 設定
 
@@ -28,13 +29,13 @@ ms.locfileid: "41960319"
 
 如需詳細的語法及參數資訊，請參閱 [Get-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-smimeconfig) 和 [Set-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-smimeconfig)。
 
-## <a name="considerations-for-new-microsoft-edge-chromium-based"></a>新的 Microsoft Edge （Chromium 型） 的考量
+## <a name="considerations-for-new-microsoft-edge-chromium-based"></a>新 Microsoft Edge 的考慮（以 Chromium 為基礎）
 
-若要在新的[Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) web 瀏覽器中網頁型 Outlook 中使用 S/MIME，您 （或另一個系統管理員） 必須設定，然後設定名為**ExtensionInstallForcelist**在新的 Microsoft Edge 中安裝 Microsoft S/MIME 分機的 Microsoft Edge 瀏覽器原則。 原則值為 `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx`。 並請注意，將套用此原則需要加入網域的電腦，因此有效率地在新的 Microsoft Edge 瀏覽器中使用 S/MIME 需要加入網域的電腦。
+若要在新的[Microsoft edge](https://www.microsoft.com/windows/microsoft-edge)網頁瀏覽器中使用 Outlook 網頁版 S/MIME，您（或另一個系統管理員）必須設定及設定名為**ExtensionInstallForcelist**的 microsoft Edge browser 原則，以在新的 Microsoft edge 中安裝 microsoft S/MIME 擴充。 原則值為 `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx`。 請注意，套用此原則需要加入網域的電腦，因此在新的 Microsoft Edge 瀏覽器中使用 S/MIME 會有效地需要加入網域的電腦。
 
 如需詳細的 **ExtensionInstallForcelist** 原則的資訊，請參閱 [ExtensionInstallForcelist](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#extensioninstallforcelist)。
 
-此步驟是使用新的 Microsoft Edge 中; 的先決條件它不會取代由使用者安裝 S/MIME 控制項。 在初次使用 S/MIME 時，系統會提示使用者下載並安裝 Outlook 網頁版中的 S/MIME 控制。 或者，使用者可以主動移至 Outlook 網頁版設定中的 **S/MIME**，取得控制的下載連結。
+此步驟是使用新的 Microsoft Edge 的必要條件;它不會取代使用者所安裝的 S/MIME 控制項。 在初次使用 S/MIME 時，系統會提示使用者下載並安裝 Outlook 網頁版中的 S/MIME 控制。 或者，使用者可以主動移至 Outlook 網頁版設定中的 **S/MIME**，取得控制的下載連結。
 
 ## <a name="considerations-for-chrome"></a>Chrome 使用者的考量
 

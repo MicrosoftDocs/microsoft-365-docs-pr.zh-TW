@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: 系統管理員可以深入瞭解 Microsoft 365 和 EOP 中可用的選項，讓輸入郵件可以略過垃圾郵件篩選。
-ms.openlocfilehash: ff4f2715ddfe0029aced27ed466a5af8eb95e790
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解系統管理員如何在 Microsoft 365 和 EOP 中建立安全寄件者清單，以允許輸入郵件略過垃圾郵件篩選。
+ms.openlocfilehash: e09d607f6b5203bdc3ab23ad5bd6e8f85782605a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637673"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036340"
 ---
 # <a name="create-safe-sender-lists"></a>建立安全寄件者清單
 

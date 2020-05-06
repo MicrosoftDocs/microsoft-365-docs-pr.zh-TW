@@ -1,6 +1,6 @@
 ---
 title: 符合 GDPR 的 Azure DPIA
-description: ''
+description: 在使用 Microsoft Azure 時，尋找相關資訊以判斷是否需要資料保護影響評估 (DPIA)。
 keywords: DPIA, Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -16,12 +16,13 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: b7736a3890f293ca6bcfa05fd2f1630748009d9f
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: ec7bcf7a3211531e1c0cd2abf514752c6099e8d1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547553"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035461"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-azure"></a>資料保護影響評估：資料控制者使用 Microsoft Azure 的指引
 

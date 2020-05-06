@@ -1,5 +1,7 @@
 ---
-title: 信息屏障策略的属性
+title: 資訊屏障原則的屬性
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -10,94 +12,95 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: 使用本文作为可用于信息屏障策略的各种属性的参考。
-ms.openlocfilehash: 4198728d412062edced6238604b2b891da22aeac
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 這是您用來定義資訊障礙區段之 Azure Active Directory 使用者帳戶屬性的參考文章。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 75a568b4d54432de0b72c379e83077c222acb687
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077135"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035049"
 ---
-# <a name="attributes-for-information-barrier-policies"></a>信息屏障策略的属性
+# <a name="attributes-for-information-barrier-policies"></a>資訊屏障原則的屬性
 
-Azure 活动目录中的某些属性可用于对用户进行分段。 定义段后，这些段可用作信息屏障策略的筛选器。 例如，**您可以使用"部门"** 按组织内部门定义用户细分（假设没有一名员工同时为两个部门工作）。 
+Azure Active Directory 中的某些屬性可用於分割使用者。 在定義區段之後，就可以使用這些區段做為資訊屏障原則的篩選器。 例如，您可以使用**部門**，依組織內的部門定義使用者的區段（假設沒有任何單一員工同時針對兩個部門運作）。 
 
-本文介绍如何使用具有信息障碍的属性，并提供可以使用的属性列表。 要了解有关信息障碍的详细信息，请参阅以下资源：
-- [信息障碍](information-barriers.md)
-- [定义 Microsoft 团队中信息障碍的策略](information-barriers-policies.md)
-- [编辑（或删除）信息屏障策略](information-barriers-edit-segments-policies.md.md)
+本文說明如何使用具有資訊障礙的屬性，並提供可使用的屬性清單。 若要深入瞭解資訊障礙，請參閱下列資源：
+- [資訊屏障](information-barriers.md)
+- [在 Microsoft 小組中定義資訊障礙的原則](information-barriers-policies.md)
+- [編輯（或移除）資訊屏障原則](information-barriers-edit-segments-policies.md)
 
-## <a name="how-to-use-attributes-in-information-barrier-policies"></a>如何在信息屏障策略中使用属性
+## <a name="how-to-use-attributes-in-information-barrier-policies"></a>如何使用資訊屏障原則中的屬性
 
-本文中列出的属性可用于定义或编辑用户段。 在[信息屏障策略](information-barriers-policies.md)中，定义的段用作参数（称为*UserGroupFilter*值）。
+本文所列的屬性可以用來定義或編輯使用者的區段。 在[資訊關卡原則](information-barriers-policies.md)中，您定義的區段充當參數（稱為*UserGroupFilter*值）。
 
-1. 确定要用于定义段的属性。 （请参阅本文中的[参考](#reference)部分。
+1. 決定要用來定義線段的屬性。 （請參閱本文中的[參考](#reference)一節。）
 
-2. 确保用户帐户已为您在步骤 1 中选择的属性填充了值。 查看用户帐户详细信息，如有必要，编辑用户帐户以包括属性值。 
+2. 請確定使用者帳戶已填入您在步驟1中所選取之屬性的值。 查看使用者帳戶詳細資料，必要時，編輯使用者帳戶以包含屬性值。 
 
-    - 要编辑多个帐户（或使用 PowerShell 编辑单个帐户），请参阅[使用 Office 365 PowerShell 配置用户帐户属性。](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
+    - 若要編輯多個帳戶（或使用 PowerShell 編輯單一帳戶），請參閱[使用 Office 365 PowerShell 設定使用者帳戶屬性](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)。
 
-    - 要编辑单个帐户，请参阅[使用 Azure 活动目录 添加或更新用户的配置文件信息。](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+    - 若要編輯單一帳戶，請參閱[使用 Azure Active Directory 新增或更新使用者的設定檔資訊](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
 
-3. [使用 PowerShell 定义段，](information-barriers-policies.md#define-segments-using-powershell)类似于以下示例：
+3. [使用 PowerShell 定義線段](information-barriers-policies.md#define-segments-using-powershell)，類似下列範例：
 
-    |範例  |Cmdlet  |
+    |範例  |指令程式  |
     |---------|---------|
-    |使用"部门"属性定义称为"段 1"的段     | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"`        |
-    |使用成员Of属性定义称为段A的段（假设此属性包含组名称，如"BlueGroup"）     | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"`        |
-    |使用扩展属性1 定义名为 DayTrader 的段（假设此属性包含作业标题，如"DayTrader"）|`New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
+    |使用部門屬性定義名為 Segment1 的區段     | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"`        |
+    |使用 MemberOf 屬性定義名為 SegmentA 的區段（假設此屬性包含群組名稱，例如 "BlueGroup"）     | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"`        |
+    |使用 ExtensionAttribute1 定義名為 DayTraders 的段落（假設此屬性包含職稱，例如 "DayTrader"）|`New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
 
     > [!TIP]
-    > 定义线段时，对所有线段使用相同的属性。 例如，*如果使用"部门"* 定义某些细分，则*使用"部门"* 定义所有段。 不要*使用"部门"* 定义某些细分，*使用"成员"* 定义其他细分。 确保您的细分不重叠;每个用户应分配给一个段。 
+    > 當您定義區段時，請針對所有的區段使用相同的屬性。 例如，如果您使用*部門*定義部分區段，請使用*部門*定義所有的區段。 不要使用*MemberOf*來定義某些區段使用*部門*和其他。 請確定您的區段沒有交疊;每一位使用者都應該被指派為一個段落。 
 
 ## <a name="reference"></a>參考
 
-下表列出了可用于信息障碍的属性。
+下表列出您可以與資訊障礙搭配使用的屬性。
 
-|Azure 活动目录属性名称<br/>（LDAP 显示名称）  |交换属性名称  |
+|Azure Active Directory 屬性名稱<br/>（LDAP 顯示名稱）  |Exchange 屬性名稱  |
 |---------|---------|
-|Co       | Co        |
+|顯       | 顯        |
 |Company     |Company         |
 |部門     |部門         |
-|扩展属性1 |自定义属性1  |
-|扩展属性2 |自定义属性2  |
-|扩展属性3 |自定义属性3  |
-|扩展属性4 |自定义属性4  |
-|扩展属性5 |自定义属性5  |
-|扩展属性6 |自定义属性6  |
-|扩展属性7 |自定义属性7  |
-|扩展属性8 |自定义属性8  |
-|扩展属性9 |自定义属性9  |
-|扩展属性10 |自定义属性10  |
-|扩展属性11 |自定义属性11  |
-|扩展属性12 |自定义属性12  |
-|扩展属性13 |自定义属性13  |
-|扩展属性14 |自定义属性14  |
-|扩展属性15 |自定义属性15  |
-|MSExch扩展自定义属性1 |扩展自定义属性1 |
-|MSExch扩展自定义属性2 |扩展自定义属性2 |
-|MSExch扩展自定义属性3 |扩展自定义属性3 |
-|MSExch 扩展自定义属性4 |扩展自定义属性4 |
-|MSExch扩展自定义属性5 |扩展自定义属性5 |
-|邮件昵称 |別名 |
-|物理交付办公室名称 |Office |
+|ExtensionAttribute1 |CustomAttribute1  |
+|ExtensionAttribute2 |CustomAttribute2  |
+|ExtensionAttribute3 |CustomAttribute3  |
+|ExtensionAttribute4 |CustomAttribute4  |
+|ExtensionAttribute5 |CustomAttribute5  |
+|ExtensionAttribute6 |CustomAttribute6  |
+|ExtensionAttribute7 |CustomAttribute7  |
+|ExtensionAttribute8 |CustomAttribute8  |
+|ExtensionAttribute9 |CustomAttribute9  |
+|ExtensionAttribute10 |CustomAttribute10  |
+|ExtensionAttribute11 |CustomAttribute11  |
+|ExtensionAttribute12 |CustomAttribute12  |
+|ExtensionAttribute13 |CustomAttribute13  |
+|ExtensionAttribute14 |CustomAttribute14  |
+|ExtensionAttribute15 |CustomAttribute15  |
+|MSExchExtensionCustomAttribute1 |ExtensionCustomAttribute1 |
+|MSExchExtensionCustomAttribute2 |ExtensionCustomAttribute2 |
+|MSExchExtensionCustomAttribute3 |ExtensionCustomAttribute3 |
+|MSExchExtensionCustomAttribute4 |ExtensionCustomAttribute4 |
+|MSExchExtensionCustomAttribute5 |ExtensionCustomAttribute5 |
+|MailNickname |別名 |
+|PhysicalDeliveryOfficeName |辦公室 |
 |PostalCode |PostalCode |
-|代理地址 |电子邮件地址 |
+|ProxyAddresses |EmailAddresses |
 |StreetAddress |StreetAddress |
-|目标地址 |外部电子邮件地址 |
+|TargetAddress |ExternalEmailAddress |
 |UsageLocation |UsageLocation |
-|UserPrincipalName  |UserPrincipalName  |
-|郵件   |窗口电子邮件地址    |
+|UserPrincipalName    |UserPrincipalName    |
+|郵件    |WindowsEmailAddress    |
 |描述    |描述    |
-|成员   |小组成员  |
+|MemberOf    |MemberOfGroup    |
 
 ## <a name="related-topics"></a>相關主題
 
-[定义 Microsoft 团队中信息障碍的策略](information-barriers-policies.md)
+[在 Microsoft 小組中定義資訊障礙的原則](information-barriers-policies.md)
 
-[排除信息障碍](information-barriers-troubleshooting.md)
+[疑難排解資訊屏障](information-barriers-troubleshooting.md)
 
-[信息障碍](information-barriers.md)
+[資訊屏障](information-barriers.md)
 
 
 
