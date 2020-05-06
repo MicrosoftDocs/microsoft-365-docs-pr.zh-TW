@@ -1,5 +1,5 @@
 ---
-title: 使用 PST 集合工具，在您的組織中尋找、複製和刪除 PST 檔案
+title: 使用 PST 收集工具來尋找、複製及刪除 PST 檔案
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,12 +15,13 @@ search.appverid:
 - MET150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: 使用 Microsoft PST 集合工具來搜尋您組織的網路，以取得分散于整個組織中的 PST 檔案清單。 在您找到 PST 檔案之後，您可以使用 PST 集合工具將其複製到一個集中位置，這樣您就可以將它們匯入 Office 365。
-ms.openlocfilehash: 3d28db482bc3c17570b4cf4a952939c3c221d94b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: fd547d0d5244df40bd5fa118bccdfe95fcba9341
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942196"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033807"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>使用 PST 集合工具，在您的組織中尋找、複製和刪除 PST 檔案
 

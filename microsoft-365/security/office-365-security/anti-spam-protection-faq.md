@@ -14,13 +14,15 @@ search.appverid:
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
-description: 在 Exchange Online 和獨立 Exchange Online Protection （EOP）中，系統管理員有關反垃圾郵件保護的常見問題與解答。
-ms.openlocfilehash: 0bd34639d717b979a02272e3c2f5de243c68d3ab
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 本主題提供有關反垃圾郵件保護的 FAQs & 解答。解答適用于 Microsoft Exchange Online & Exchange Online Protection （EOP）客戶。
+ms.openlocfilehash: 33fb1fb5d73f0d686a72e89d460c0973d2bbdabe
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636055"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033735"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾郵件保護常見問題集
 
@@ -133,7 +135,7 @@ Exchange Online 客戶：[在 Exchange Online 中監控、報告和執行郵件�
 
   SPF 記錄是一項驗證機制，可驗證從某個網域傳送的郵件是否真的來自該網域而不是詐騙郵件。如需 SPF 記錄的詳細資訊，請參閱下列連結：
 
-  [設定 SPF 以協助防止電子欺騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  [設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   [網域常見問題集](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) (部分機器翻譯)
 

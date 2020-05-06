@@ -1,5 +1,5 @@
 ---
-title: 自動化調查和回應（AIR）
+title: 自動化調查和回應（AIR）-快速入門
 keywords: AIR, autoIR, ATP, 自動化, 調查, 回應, 修正, 威脅, 進階, 威脅, 保護
 f1.keywords:
 - NOCSH
@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 開始使用 Office 365 進階威脅防護方案 2 中的自動化調查及回應功能
-ms.custom: air
-ms.openlocfilehash: 3b7ddd88161b695e8929b749dac61d7947392a0d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: air - seo-marvel-mar2020
+ms.openlocfilehash: b9811963210f253bbfe90af02dd6d38926776a62
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634541"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033947"
 ---
-# <a name="automated-investigation-and-response-air"></a>自動化調查和回應（AIR）
+# <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>開始使用 Office 365 中的自動調查和回應（AIR）
 
 [Office 365 高級威脅防護](office-365-atp.md)（OFFICE 365 ATP）方案2包含強大的自動化調查和回應（空氣）功能，可儲存您的安全性運作小組時間和工作。 當觸發警示時，您的安全性作業小組會檢查、優先順序及回應這些警示。 保持傳入提醒的數量非常驚人。 自動化某些部分可提供協助。 透過 AIR，您的安全性運作小組可以專注于優先順序較高的工作，而不會失去所觸發之警示的視線。
 
@@ -52,7 +52,7 @@ ms.locfileid: "43634541"
     當未決修正動作經核准（或拒絕）時，自動調查完成。
 
 > [!NOTE]
-> 在 Office 365 ATP 中，不會自動採取任何修正動作。 只有組織的安全小組核准時，才會採取補救措施。 
+> 在 Office 365 ATP 中，不會自動採取任何修正動作。 在組織的安全性小組核准後才能採取補救動作。 
 
 在自動化調查程序期間及之後，您的安全性小組可以執行下列動作：
 

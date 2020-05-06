@@ -1,5 +1,5 @@
 ---
-title: 安全性與合規性中心中的權限
+title: 許可權-Microsoft 365 & 規範中心的安全性
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,13 +16,14 @@ ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
-description: 系統管理員可以瞭解安全性 & 規範中心提供的許可權。
-ms.openlocfilehash: 8fd288aa9a0a409a005c43a1ff685bf29bfef6b3
-ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
+description: 系統管理員可以瞭解 Microsoft 365 安全性 & 規範中心提供的許可權。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dda0fe4263c6c62e9ac7829c87caf6332e56f809
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43930180"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033911"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>安全性與合規性中心中的權限
 
