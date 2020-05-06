@@ -1,5 +1,5 @@
 ---
-title: '在 Outlook 網頁版中回報垃圾郵件與網路釣魚詐騙 '
+title: 報告電子郵件詐騙-網頁上的 Outlook
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 具有 Exchange Online 信箱的使用者可以使用網頁型 Outlook （Outlook Web App），將垃圾郵件、非垃圾郵件和網路釣魚郵件提交給 Microsoft 進行分析。
-ms.openlocfilehash: 9fc17abafe219a450e0fb6e45438211ea03fb337
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 32e60aa707bcaea9e35cc3bb8ded3aefb7fe46ab
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43921477"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031487"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-office-365"></a>在 Office 365 的 Outlook 網頁版中報告垃圾郵件和網路釣魚電子郵件
 

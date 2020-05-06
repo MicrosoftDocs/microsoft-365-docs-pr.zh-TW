@@ -15,13 +15,15 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: 您可以使用「審核記錄搜尋」工具，協助您疑難排解常見問題，例如調查已遭破壞的帳戶、找出誰設定信箱的電子郵件轉寄功能，或判斷外部使用者成功登入組織的原因。
-ms.openlocfilehash: 8eaff1fa3eea6a0fa60edcfd43f4f2aedb5a5ffc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何使用 Office 365 審核記錄搜尋工具來協助疑難排解電子郵件帳戶的常見支援問題。
+ms.openlocfilehash: 64ddffab518fdf54dba1ffca87548a65037b8eb7
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636381"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034209"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>搜尋審計記錄檔，以調查常見的支援問題
 
@@ -236,6 +238,6 @@ d. [ **UserId** ] 欄位會指出建立 [ **ObjectId** ] 欄位中指定的收�
 
     除了**使用者登入**的活動之外，還可以傳回其他的審計記錄，例如，用來指出組織中的使用者與外部使用者共用資源，以及外部使用者是否存取、修改或下載已與其共用的檔。
 
-- 搜尋 SharePoint 的共用活動，該活動會指出與**已登入**審計記錄之使用者所識別的外部使用者共用檔案。 如需詳細資訊，請參閱[在審核記錄中使用共用審核](use-sharing-auditing.md)。
+- 搜尋 SharePoint 的共用活動，該活動會指出與**已登入**審計記錄之使用者所識別的外部使用者共用檔案。 如需詳細資訊，請參閱[在稽核記錄中使用共用稽核](use-sharing-auditing.md)。
 
 - 匯出包含調查相關記錄的審計記錄搜尋結果，以便您可以使用 Excel 來搜尋與外部使用者相關的其他活動。 如需詳細資訊，請參閱[Export、configure 及 view audit log 記錄](export-view-audit-log-records.md)。

@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
-description: 有關 Office 365 中的隔離常見問題的答案。
-ms.openlocfilehash: 3947fbed2a17380a18320a8bffd08a8178ad2b3f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Exchange Online 或獨立 EOP 中的 Office 365 信箱隔離的常見問題和解答，但沒有 Exchange Online 信箱。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5c5d7f426701ebc9a546a86a4fccbd7015fc0e49
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634421"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033851"
 ---
 # <a name="quarantine-faq"></a>隔離區常見問題集
 

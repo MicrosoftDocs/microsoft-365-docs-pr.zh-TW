@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: ac4e95c8356149ce9e5c719837820f84332d2a80
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: ff99489d933ee932c79fee8c655a46268eb8a6a4
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804846"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022141"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites-public-preview"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容 (公開預覽)
 
@@ -81,7 +81,7 @@ Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤會
 
 - **Office 365 群組連線小組網站**：[無 - 讓使用者選擇誰可以存取網站]**** 的預設設定目前正在向租用戶推出。 如果您想要使用敏感度標籤來保護容器中的內容，但仍讓使用者自行設定隱私權設定，則請保留此預設設定。
     
-    將此標籤套用至容器時，請選取 [公用]**** 或 [私人]**** 來設定和鎖定隱私權設定。 如果您希望組織中的任何人都能存取已套用此標籤的小組網站或群組，請選擇 [公用]****，如果您想要限制只有組織中已通過核准的成員才能存取，請選擇 [私人]****。 
+    將此標籤套用至容器時，請選取 **[公用]** 或 **[私人]** 來設定和鎖定隱私權設定。 如果您希望組織中的任何人都能存取已套用此標籤的小組網站或群組，請選擇 [公用]****，如果您想要限制只有組織中已通過核准的成員才能存取，請選擇 [私人]****。 
     
     [公用]**** 或 [私人]**** 設定會取代先前為小組或群組設定的任何隱私權設定，並鎖定隱私權值，以便只有先移除容器的敏感度標籤才能變更隱私權設定。 移除敏感度標籤後，標籤的隱私權設定會保留，使用者現在便可再次變更隱私權設定。
 
@@ -330,15 +330,17 @@ Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤會
 
 若某使用者將文件上傳到受敏感度標籤保護的網站，且文件的敏感度標籤[優先於](sensitivity-labels.md#label-priority-order-matters)網站的敏感度標籤，則不會封鎖此動作。 例如，您已將**一般**標籤套用至 SharePoint 網站，而某使用者上傳到此網站的文件標示為**機密**。 由於優先順序較高的敏感度標籤會識別比優先順序較低的內容更具敏感度的內容，因此可能會造成安全性問題。
 
-儘管動作並未遭到封鎖，但會受到稽核，因此您可以找出與標籤優先順序不一致的文件，並視需要採取行動。 例如，從網站刪除或移動已上傳的文件。 
+儘管系統不會封鎖該動作，但會稽核，且會產生電子郵件給上傳文件的人員和網站系統管理員。 因此使用者和系統管理員可以找出與標籤優先順序不一致的文件，並視需要採取行動。 例如，從網站刪除或移動已上傳的文件。 
 
-如果文件套用的敏感度標籤，其優先順序低於網站所套用的敏感度標籤，則不會造成安全性問題。 例如，套用 **「一般」** 標籤的文件上傳到標記為 **「機密」** 的網站。 在此案例中，不會產生稽核事件。
+如果文件套用的敏感度標籤，其優先順序低於網站所套用的敏感度標籤，則不會造成安全性問題。 例如，套用 **「一般」** 標籤的文件上傳到標記為 **「機密」** 的網站。 在此案例中，不會產生稽核事件和電子郵件。
 
 若要搜尋此事件的稽核記錄，請尋找 **[檔案與頁面活動]** 類別中的 **[偵測到的文件敏感度不相符]**。 
 
-當某使用者在網站或群組中新增或移除敏感度標籤時，這些活動也會受到稽核。 您可以在 [[敏感度標籤活動]](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) 類別中找到這些事件。 
+自動產生電子郵件的 [主旨] 為**偵測到不相容敏感度標籤**，而電子郵件訊息則會有上傳文件和網站連結的標記不相符說明。 它也包含說明使用者可如何變更敏感度標籤的文件連結。 目前無法停用或自訂這些自動電子郵件。
 
-如需搜尋稽核記錄的指示，請參閱[在安全性與合規性中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)。
+當某人在網站或群組間新增或移除敏感度標籤時，系統也會稽核這些活動，但不會自動產生電子郵件。 
+
+您可以在 [[敏感度標籤活動]](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) 類別中找到所有這些稽核事件。 如需搜尋稽核記錄的指示，請參閱[在安全性與合規性中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)。
 
 ## <a name="troubleshoot-sensitivity-label-deployment"></a>疑難排解敏感度標籤部署
 

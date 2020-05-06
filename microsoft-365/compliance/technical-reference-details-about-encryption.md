@@ -15,13 +15,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
-description: 在 Office 365 中查看有關加密的技術詳細資料。
-ms.openlocfilehash: cdfd3765fb7bf15835d200a539241d928225d22e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 深入瞭解 Office 365 中用於加密的各種憑證、技術和 TLS 密碼套件。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f15f55c4a66d579d547a164633613175f254640b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637207"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034527"
 ---
 # <a name="technical-reference-details-about-encryption"></a>有關加密的技術參考詳細資料
 

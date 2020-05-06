@@ -15,13 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: 關於 Microsoft 如何在資料中心內加密傳輸資料的簡短說明。
-ms.openlocfilehash: 645294522185a631012c1654fbad96ba0a21b33e
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: 在本文中，會找到 Microsoft 如何在傳輸中加密 Microsoft 365 客戶資料的簡短說明。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7ee869308549398a9df00ed42975b4aeedb666a4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943302"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033601"
 ---
 # <a name="encryption-for-data-in-transit"></a>傳輸中資料的加密
 

@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的威脅調查和回應功能高級威脅防護方案2
+title: 威脅調查 & 回應功能-Office 365 ATP 方案2
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
-description: 瞭解 Office 365 中威脅智慧功能的方式。高級威脅防護可協助您調查組織面臨的威脅、回應惡意程式碼、網路釣魚和 Microsoft 365 所偵測到的其他攻擊，並搜尋威脅指標。
-ms.openlocfilehash: 9d89e84cc50b82b8cc5f2fe4e0e5ad6f4f85b091
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 深入瞭解 Office 365 的「高級威脅防護計畫中的威脅調查和回應功能。
+ms.openlocfilehash: 61b08dc2b77c874e255547b2bcaef596ee017bf4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634517"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033935"
 ---
 # <a name="threat-investigation-and-response"></a>威脅調查及回應
 

@@ -1,6 +1,6 @@
 ---
 title: 透過 ServiceNow 建立及追蹤入場券
-description: Microsoft 365 security center 已增強，可在 ServiceNow 中以本機方式建立及追蹤票證。 安全性管理員可以直接傳送安全得分建議，以 ServiceNow 及建立票證。
+description: 瞭解如何在 Microsoft 365 安全中心的 ServiceNow 中建立及追蹤票證。
 keywords: 安全性，Microsoft 365，M365，安全分數，安全性中心，ServiceNow，票證，任務
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -17,12 +17,14 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: eb6af6b11d2d932f3bd2165aa3f597c14feb5ae8
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.custom:
+- seo-marvel-apr2020
+ms.openlocfilehash: 6070878d6cf0efd8a85d05ff6ef89ee49baf4144
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43901019"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034185"
 ---
 # <a name="manage-tickets-through-servicenow"></a>透過 ServiceNow 管理票證
 

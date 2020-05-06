@@ -17,13 +17,14 @@ search.appverid:
 ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
-description: 深入瞭解您可以設定的提醒，以協助 Office 365 中的安全性。
-ms.openlocfilehash: 24e36b6867600985a9ca0f9cb3cbafc5a8c6029e
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: 瞭解如何使用 Office 365 安全性 & 規範中心中的 [提醒] 功能，以查看及管理提醒，包括管理高級提醒。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8b0c2d89f7f91e1dfcae644663c43bc6e8640f37
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943552"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033771"
 ---
 # <a name="alerts-in-the-security-amp-compliance-center"></a>安全性&amp;與合規性中心的警示
 

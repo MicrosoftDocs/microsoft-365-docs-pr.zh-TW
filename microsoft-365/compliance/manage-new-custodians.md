@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 在高級 eDiscovery 案例中管理保管人。
-ms.openlocfilehash: b497aef50c2bafd58e3b9cf8643a1ecc038520a4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 瞭解如何在高級 eDiscovery 案例中查看對保管人清單的詳細資料、編輯和大量編輯。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 895383f72259fa5e46a46df35925bcc73f62e3a5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635893"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034175"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>在高級 eDiscovery 案例中管理保管人
 
@@ -126,9 +127,9 @@ ms.locfileid: "43635893"
 
 1. 請移至**eDiscovery > Advanced ediscovery** ，然後開啟案例。
 
-2.  移至 [**保管人**] 索引標籤。
+2.    移至 [**保管人**] 索引標籤。
 
-3.  按一下 [to**保管人]** 索引標籤，然後選取從案例中發放的保管人。
+3.    按一下 [to**保管人]** 索引標籤，然後選取從案例中發放的保管人。
 
 4. 在飛入頁面上，按一下 [**發行管理員**]。
 
