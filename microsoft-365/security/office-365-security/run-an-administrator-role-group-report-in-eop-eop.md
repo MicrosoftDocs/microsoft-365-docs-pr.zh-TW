@@ -1,5 +1,5 @@
 ---
-title: '執行 EOP 中的系統管理員角色群組報告 '
+title: 執行 EOP 中的系統管理員角色群組報告
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,59 +11,61 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
-description: 系統管理員可以了解如何執行系統管理員角色群組報表中 Exchange Online Protection (EOP)。 此報表記錄時為系統管理員成員可以從新增或移除成員系統管理員角色群組，Microsoft Exchange Online Protection (EOP) 會記錄每個項目。
-ms.openlocfilehash: d9e7db8accae259b3eb332ce17c52c6749c2bec2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，您將瞭解如何在 Exchange Online Protection （EOP）中執行系統管理員角色群組報告。
+ms.openlocfilehash: d3c4db8079a71ba054f323617d3ade65083a3a04
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598540"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034453"
 ---
-# <a name="run-an-administrator-role-group-report-in-eop"></a><span data-ttu-id="1bddf-104">執行 EOP 中的系統管理員角色群組報告</span><span class="sxs-lookup"><span data-stu-id="1bddf-104">Run an administrator role group report in EOP</span></span>
+# <a name="run-an-administrator-role-group-report-in-eop"></a><span data-ttu-id="fc00a-103">執行 EOP 中的系統管理員角色群組報告</span><span class="sxs-lookup"><span data-stu-id="fc00a-103">Run an administrator role group report in EOP</span></span>
 
- <span data-ttu-id="1bddf-105">當系統管理員成員可以從新增或移除成員系統管理員角色群組，Exchange Online Protection (EOP) 會記錄每個項目。</span><span class="sxs-lookup"><span data-stu-id="1bddf-105">When an admin adds members to or removes members from administrator role groups, Exchange Online Protection (EOP) logs each occurrence.</span></span> <span data-ttu-id="1bddf-106">當您執行系統管理員角色群組報表在 Exchange 系統管理中心 (EAC) 中時，項目顯示為搜尋結果，並包含已變更的角色群組成員資格角色群組會受到影響，與時機，以及進行哪些成員資格更新。</span><span class="sxs-lookup"><span data-stu-id="1bddf-106">When you run an administrator role group report in the Exchange admin center (EAC), entries are displayed as search results and include the role groups affected, who changed the role group membership and when, and what membership updates were made.</span></span> <span data-ttu-id="1bddf-107">使用此報告可監視指派給組織使用者的系統管理權限變更。</span><span class="sxs-lookup"><span data-stu-id="1bddf-107">Use this report to monitor changes to the administrative permissions assigned to users in your organization.</span></span>
+ <span data-ttu-id="fc00a-104">當系統管理員在系統管理員角色群組中新增或移除成員時，Exchange Online Protection （EOP）會記錄每個事件。</span><span class="sxs-lookup"><span data-stu-id="fc00a-104">When an admin adds members to or removes members from administrator role groups, Exchange Online Protection (EOP) logs each occurrence.</span></span> <span data-ttu-id="fc00a-105">當您在 Exchange 系統管理中心（EAC）中執行系統管理員角色群組報告時，專案會顯示為搜尋結果，並包含受影響的角色群組、變更角色群組成員資格的人員，以及進行的成員資格更新。</span><span class="sxs-lookup"><span data-stu-id="fc00a-105">When you run an administrator role group report in the Exchange admin center (EAC), entries are displayed as search results and include the role groups affected, who changed the role group membership and when, and what membership updates were made.</span></span> <span data-ttu-id="fc00a-106">使用此報告可監視指派給組織使用者的系統管理權限變更。</span><span class="sxs-lookup"><span data-stu-id="fc00a-106">Use this report to monitor changes to the administrative permissions assigned to users in your organization.</span></span>
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="1bddf-108">開始之前有哪些須知？</span><span class="sxs-lookup"><span data-stu-id="1bddf-108">What do you need to know before you begin?</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="fc00a-107">開始之前有哪些須知？</span><span class="sxs-lookup"><span data-stu-id="fc00a-107">What do you need to know before you begin?</span></span>
 
-- <span data-ttu-id="1bddf-109">預估完成時間：2 分鐘</span><span class="sxs-lookup"><span data-stu-id="1bddf-109">Estimated time to complete: 2 minutes</span></span>
+- <span data-ttu-id="fc00a-108">預估完成時間：2 分鐘</span><span class="sxs-lookup"><span data-stu-id="fc00a-108">Estimated time to complete: 2 minutes</span></span>
 
-- <span data-ttu-id="1bddf-110">若要開啟 Exchange 系統管理中心，請參閱[Exchange 系統管理中心在 Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md)。</span><span class="sxs-lookup"><span data-stu-id="1bddf-110">To open the Exchange admin center, see [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).</span></span>
+- <span data-ttu-id="fc00a-109">若要開啟 Exchange 系統管理中心，請參閱 exchange [Online Protection 中的 exchange 系統管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。</span><span class="sxs-lookup"><span data-stu-id="fc00a-109">To open the Exchange admin center, see [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).</span></span>
 
-- <span data-ttu-id="1bddf-p103">您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [EOP 中的功能權限](feature-permissions-in-eop.md)主題的「報告」一節。</span><span class="sxs-lookup"><span data-stu-id="1bddf-p103">You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Reports" section of the [Feature permissions in EOP](feature-permissions-in-eop.md) topic.</span></span>
+- <span data-ttu-id="fc00a-p102">您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [EOP 中的功能權限](feature-permissions-in-eop.md)主題的「報告」一節。</span><span class="sxs-lookup"><span data-stu-id="fc00a-p102">You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Reports" section of the [Feature permissions in EOP](feature-permissions-in-eop.md) topic.</span></span>
 
-- <span data-ttu-id="1bddf-113">如需適用於本主題中程序的快速鍵相關資訊，請參閱 [Exchange Online 中 Exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。</span><span class="sxs-lookup"><span data-stu-id="1bddf-113">For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).</span></span>
+- <span data-ttu-id="fc00a-112">如需適用於本主題中程序的快速鍵相關資訊，請參閱 [Exchange Online 中 Exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。</span><span class="sxs-lookup"><span data-stu-id="fc00a-112">For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).</span></span>
 
 > [!TIP]
-> <span data-ttu-id="1bddf-114">有問題嗎？</span><span class="sxs-lookup"><span data-stu-id="1bddf-114">Having problems?</span></span> <span data-ttu-id="1bddf-115">在 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) 論壇中尋求協助。</span><span class="sxs-lookup"><span data-stu-id="1bddf-115">Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.</span></span>
+> <span data-ttu-id="fc00a-113">有問題嗎？</span><span class="sxs-lookup"><span data-stu-id="fc00a-113">Having problems?</span></span> <span data-ttu-id="fc00a-114">在 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) 論壇中尋求協助。</span><span class="sxs-lookup"><span data-stu-id="fc00a-114">Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.</span></span>
 
-## <a name="use-the-eac-to-run-an-administrator-role-group-report"></a><span data-ttu-id="1bddf-116">使用 EAC 執行系統管理員角色群組報告</span><span class="sxs-lookup"><span data-stu-id="1bddf-116">Use the EAC to run an administrator role group report</span></span>
+## <a name="use-the-eac-to-run-an-administrator-role-group-report"></a><span data-ttu-id="fc00a-115">使用 EAC 執行系統管理員角色群組報告</span><span class="sxs-lookup"><span data-stu-id="fc00a-115">Use the EAC to run an administrator role group report</span></span>
 
-<span data-ttu-id="1bddf-117">執行系統管理員角色群組報表，以尋找特定的時間範圍內您組織中的管理角色群組所做的變更。</span><span class="sxs-lookup"><span data-stu-id="1bddf-117">Run the administrator role group report to find the changes to management role groups in your organization within a particular time frame.</span></span>
+<span data-ttu-id="fc00a-116">執行系統管理員角色群組報告，以在特定時間範圍內尋找組織中管理角色群組的變更。</span><span class="sxs-lookup"><span data-stu-id="fc00a-116">Run the administrator role group report to find the changes to management role groups in your organization within a particular time frame.</span></span>
 
-1. <span data-ttu-id="1bddf-118">在 EAC 中，瀏覽至 **[相符性管理]** \> **[稽核]**，然後選擇 **[執行系統管理員角色群組報告]**。</span><span class="sxs-lookup"><span data-stu-id="1bddf-118">In the EAC, navigate to **Compliance management** \> **Auditing**, and choose **Run an administrator role group report**.</span></span>
+1. <span data-ttu-id="fc00a-117">在 EAC 中，瀏覽至 **[相符性管理]** \> **[稽核]**，然後選擇 **[執行系統管理員角色群組報告]**。</span><span class="sxs-lookup"><span data-stu-id="fc00a-117">In the EAC, navigate to **Compliance management** \> **Auditing**, and choose **Run an administrator role group report**.</span></span>
 
-2. <span data-ttu-id="1bddf-p105">選擇 **[開始日期]** 和 **[結束日期]**。依預設，報告會搜尋過去兩週以來對系統管理員角色群組所做的變更。</span><span class="sxs-lookup"><span data-stu-id="1bddf-p105">Choose the **Start date** and **End date**. By default, the report searches for changes made to administrator role groups in the past two weeks.</span></span>
+2. <span data-ttu-id="fc00a-p104">選擇 **[開始日期]** 和 **[結束日期]**。依預設，報告會搜尋過去兩週以來對系統管理員角色群組所做的變更。</span><span class="sxs-lookup"><span data-stu-id="fc00a-p104">Choose the **Start date** and **End date**. By default, the report searches for changes made to administrator role groups in the past two weeks.</span></span>
 
-3. <span data-ttu-id="1bddf-p106">若要檢視特定角色群組的變更，請按一下 **[選取角色群組]**。在後續的對話方塊中選取一或多個角色群組，然後按一下 **[確定]**。您也可以將欄位留白，以尋找所有變更的角色群組。</span><span class="sxs-lookup"><span data-stu-id="1bddf-p106">To view the changes for a specific role group, click **Select role groups**. Select the role group (or groups) in the subsequent dialog box, and click **OK**. You can also leave the field blank to find all changed role groups.</span></span>
+3. <span data-ttu-id="fc00a-p105">若要檢視特定角色群組的變更，請按一下 **[選取角色群組]**。在後續的對話方塊中選取一或多個角色群組，然後按一下 **[確定]**。您也可以將欄位留白，以尋找所有變更的角色群組。</span><span class="sxs-lookup"><span data-stu-id="fc00a-p105">To view the changes for a specific role group, click **Select role groups**. Select the role group (or groups) in the subsequent dialog box, and click **OK**. You can also leave the field blank to find all changed role groups.</span></span>
 
-4. <span data-ttu-id="1bddf-124">Click **Search**.</span><span class="sxs-lookup"><span data-stu-id="1bddf-124">Click **Search**.</span></span>
+4. <span data-ttu-id="fc00a-123">Click **Search**.</span><span class="sxs-lookup"><span data-stu-id="fc00a-123">Click **Search**.</span></span>
 
-<span data-ttu-id="1bddf-p107">如果使用您指定的準則找到任何變更，它們會出現在結果窗格中。按一下搜尋結果中的角色群組，即可在詳細資料窗格中查看變更。</span><span class="sxs-lookup"><span data-stu-id="1bddf-p107">If any changes are found using the criteria you specified, they will appear in the results pane. Click a role group in the search results to see the changes in the details pane.</span></span>
+<span data-ttu-id="fc00a-p106">如果使用您指定的準則找到任何變更，它們會出現在結果窗格中。按一下搜尋結果中的角色群組，即可在詳細資料窗格中查看變更。</span><span class="sxs-lookup"><span data-stu-id="fc00a-p106">If any changes are found using the criteria you specified, they will appear in the results pane. Click a role group in the search results to see the changes in the details pane.</span></span>
 
-## <a name="how-do-you-know-this-worked"></a><span data-ttu-id="1bddf-127">如何知道這是否正常運作？</span><span class="sxs-lookup"><span data-stu-id="1bddf-127">How do you know this worked?</span></span>
+## <a name="how-do-you-know-this-worked"></a><span data-ttu-id="fc00a-126">如何知道這是否正常運作？</span><span class="sxs-lookup"><span data-stu-id="fc00a-126">How do you know this worked?</span></span>
 
-<span data-ttu-id="1bddf-p108">如果您已經成功執行系統管理員角色群組報告，已在日期範圍內變更的角色群組會顯示在搜尋結果窗格中。如果沒有任何結果，則表示在指定的日期範圍內，沒有對角色群組進行任何變更。如果您認為應該有結果，請變更日期範圍，然後重新執行報告。</span><span class="sxs-lookup"><span data-stu-id="1bddf-p108">If you've successfully run an administrator role group report, role groups that have been changed within the date range are displayed in the search results pane. If there are no results, then no changes to role groups have taken place within the specified date range. If you think there should be results, change the date range and then run the report again.</span></span>
+<span data-ttu-id="fc00a-p107">如果您已經成功執行系統管理員角色群組報告，已在日期範圍內變更的角色群組會顯示在搜尋結果窗格中。如果沒有任何結果，則表示在指定的日期範圍內，沒有對角色群組進行任何變更。如果您認為應該有結果，請變更日期範圍，然後重新執行報告。</span><span class="sxs-lookup"><span data-stu-id="fc00a-p107">If you've successfully run an administrator role group report, role groups that have been changed within the date range are displayed in the search results pane. If there are no results, then no changes to role groups have taken place within the specified date range. If you think there should be results, change the date range and then run the report again.</span></span>
 
-## <a name="monitor-changes-to-role-group-membership"></a><span data-ttu-id="1bddf-131">監視角色群組成員資格的變更</span><span class="sxs-lookup"><span data-stu-id="1bddf-131">Monitor changes to role group membership</span></span>
+## <a name="monitor-changes-to-role-group-membership"></a><span data-ttu-id="fc00a-130">監視角色群組成員資格的變更</span><span class="sxs-lookup"><span data-stu-id="fc00a-130">Monitor changes to role group membership</span></span>
 
-<span data-ttu-id="1bddf-p109">在角色群組中新增或移除成員時，搜尋結果會顯示在詳細資料窗格中，指出角色群組成員資格已經更新，並列出目前的成員。結果不會明確表示已新增或移除哪一位使用者。</span><span class="sxs-lookup"><span data-stu-id="1bddf-p109">When members are added to or removed from a role group, the search results displayed in the details pane indicate that the role group membership was updated and lists the current members. The results don't explicitly state which user was added or removed.</span></span>
+<span data-ttu-id="fc00a-p108">在角色群組中新增或移除成員時，搜尋結果會顯示在詳細資料窗格中，指出角色群組成員資格已經更新，並列出目前的成員。結果不會明確表示已新增或移除哪一位使用者。</span><span class="sxs-lookup"><span data-stu-id="fc00a-p108">When members are added to or removed from a role group, the search results displayed in the details pane indicate that the role group membership was updated and lists the current members. The results don't explicitly state which user was added or removed.</span></span>
 
-<span data-ttu-id="1bddf-p110">若要判斷是否已新增或移除某位使用者，您必須比較報告中的兩個個別項目。例如，以下是 **HelpDesk** 角色群組的記錄項目：</span><span class="sxs-lookup"><span data-stu-id="1bddf-p110">To determine if a user was added or removed, you have to compare two separate entries in the report. For example, let's look at the following log entries for the **HelpDesk** role group:</span></span>
+<span data-ttu-id="fc00a-p109">若要判斷是否已新增或移除某位使用者，您必須比較報告中的兩個個別項目。例如，以下是 **HelpDesk** 角色群組的記錄項目：</span><span class="sxs-lookup"><span data-stu-id="fc00a-p109">To determine if a user was added or removed, you have to compare two separate entries in the report. For example, let's look at the following log entries for the **HelpDesk** role group:</span></span>
 
-> <span data-ttu-id="1bddf-136">2018/1/27 下午 4:43</span><span class="sxs-lookup"><span data-stu-id="1bddf-136">1/27/2018 4:43 PM</span></span> <br> <span data-ttu-id="1bddf-137">系統管理員</span><span class="sxs-lookup"><span data-stu-id="1bddf-137">Administrator</span></span> <br> <span data-ttu-id="1bddf-138">Updated members:Administrator;annb,florencef;pilarp</span><span class="sxs-lookup"><span data-stu-id="1bddf-138">Updated members: Administrator;annb,florencef;pilarp</span></span> <br> <span data-ttu-id="1bddf-139">2018/2/06 10:09 AM</span><span class="sxs-lookup"><span data-stu-id="1bddf-139">2/06/2018 10:09 AM</span></span> <br> <span data-ttu-id="1bddf-140">系統管理員</span><span class="sxs-lookup"><span data-stu-id="1bddf-140">Administrator</span></span> <br> <span data-ttu-id="1bddf-141">Updated members:Administrator;annb;florencef;pilarp;tonip</span><span class="sxs-lookup"><span data-stu-id="1bddf-141">Updated members: Administrator;annb;florencef;pilarp;tonip</span></span> <br> <span data-ttu-id="1bddf-142">2018/2/19 下午 2:12</span><span class="sxs-lookup"><span data-stu-id="1bddf-142">2/19/2018 2:12 PM</span></span> <br> <span data-ttu-id="1bddf-143">系統管理員</span><span class="sxs-lookup"><span data-stu-id="1bddf-143">Administrator</span></span> <br> <span data-ttu-id="1bddf-144">Updated members:Administrator;annb;florencef;tonip</span><span class="sxs-lookup"><span data-stu-id="1bddf-144">Updated members: Administrator;annb;florencef;tonip</span></span>
+> <span data-ttu-id="fc00a-135">1/27/2018 4:43 PM</span><span class="sxs-lookup"><span data-stu-id="fc00a-135">1/27/2018 4:43 PM</span></span> <br> <span data-ttu-id="fc00a-136">系統管理員</span><span class="sxs-lookup"><span data-stu-id="fc00a-136">Administrator</span></span> <br> <span data-ttu-id="fc00a-137">Updated members:Administrator;annb,florencef;pilarp</span><span class="sxs-lookup"><span data-stu-id="fc00a-137">Updated members: Administrator;annb,florencef;pilarp</span></span> <br> <span data-ttu-id="fc00a-138">2/06/2018 10:09 AM</span><span class="sxs-lookup"><span data-stu-id="fc00a-138">2/06/2018 10:09 AM</span></span> <br> <span data-ttu-id="fc00a-139">系統管理員</span><span class="sxs-lookup"><span data-stu-id="fc00a-139">Administrator</span></span> <br> <span data-ttu-id="fc00a-140">Updated members:Administrator;annb;florencef;pilarp;tonip</span><span class="sxs-lookup"><span data-stu-id="fc00a-140">Updated members: Administrator;annb;florencef;pilarp;tonip</span></span> <br> <span data-ttu-id="fc00a-141">2/19/2018 2:12 PM</span><span class="sxs-lookup"><span data-stu-id="fc00a-141">2/19/2018 2:12 PM</span></span> <br> <span data-ttu-id="fc00a-142">系統管理員</span><span class="sxs-lookup"><span data-stu-id="fc00a-142">Administrator</span></span> <br> <span data-ttu-id="fc00a-143">Updated members:Administrator;annb;florencef;tonip</span><span class="sxs-lookup"><span data-stu-id="fc00a-143">Updated members: Administrator;annb;florencef;tonip</span></span>
 
-<span data-ttu-id="1bddf-145">在此範例中，系統管理員使用者帳戶做了以下變更：</span><span class="sxs-lookup"><span data-stu-id="1bddf-145">In this example, the Administrator user account made the following changes:</span></span>
+<span data-ttu-id="fc00a-144">在此範例中，系統管理員使用者帳戶做了以下變更：</span><span class="sxs-lookup"><span data-stu-id="fc00a-144">In this example, the Administrator user account made the following changes:</span></span>
 
-- <span data-ttu-id="1bddf-146">2/06/2018/，它們會新增使用者 tonip。</span><span class="sxs-lookup"><span data-stu-id="1bddf-146">On 2/06/2018, they added the user tonip.</span></span>
+- <span data-ttu-id="fc00a-145">在2/06/2018 上，他們新增了使用者 tonip。</span><span class="sxs-lookup"><span data-stu-id="fc00a-145">On 2/06/2018, they added the user tonip.</span></span>
 
-- <span data-ttu-id="1bddf-147">2/19/2018/，他們可以移除使用者 pilarp。</span><span class="sxs-lookup"><span data-stu-id="1bddf-147">On 2/19/2018, they removed the user pilarp.</span></span>
+- <span data-ttu-id="fc00a-146">在2/19/2018 上，他們移除使用者 pilarp。</span><span class="sxs-lookup"><span data-stu-id="fc00a-146">On 2/19/2018, they removed the user pilarp.</span></span>

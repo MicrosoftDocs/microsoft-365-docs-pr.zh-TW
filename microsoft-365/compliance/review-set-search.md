@@ -1,5 +1,7 @@
 ---
 title: 查詢檢視集中的資料
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,42 +15,55 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 446f3f2588a79cb328476db490f1f555448b5ce7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 瞭解如何在評審集中建立及執行查詢，以在高級 eDiscovery 案例中組織資料，以進行更有效率的審閱。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 1bf4d86ea4aecb33cbb2e7ad7b617cd58a5c086d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078172"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034597"
 ---
-# <a name="query-the-data-in-a-review-set"></a><span data-ttu-id="05755-102">查詢檢視集中的資料</span><span class="sxs-lookup"><span data-stu-id="05755-102">Query the data in a review set</span></span>
+# <a name="query-the-data-in-a-review-set"></a><span data-ttu-id="e9029-103">查詢檢視集中的資料</span><span class="sxs-lookup"><span data-stu-id="e9029-103">Query the data in a review set</span></span>
 
-<span data-ttu-id="05755-103">在大多數情況下，將能夠深入探討還有什麼中檢閱設定，並將它們更有效率地檢閱組織很有用。</span><span class="sxs-lookup"><span data-stu-id="05755-103">In most cases, it will be useful to be able to dig deeper into what is there in a review set and organize them to review more efficiently.</span></span> <span data-ttu-id="05755-104">檢閱集合內的查詢可讓您若要這樣做，可讓您專注於符合一次您所定義之準則的文件的子集。</span><span class="sxs-lookup"><span data-stu-id="05755-104">Queries within a review set enables you to do so by letting you focus on a subset of documents that meet the criteria defined by you at once.</span></span>
+<span data-ttu-id="e9029-104">在大多數情況下，可以深入查看檢查集合中的資料，並整理該資料，以促進更有效率的審閱。</span><span class="sxs-lookup"><span data-stu-id="e9029-104">In most cases, it will be useful to be able to dig deeper into the data in a review set and organize that data to facilitate a more efficient review.</span></span> <span data-ttu-id="e9029-105">使用審閱集中的查詢可協助您將重點放在符合您的審閱準則的檔子集。</span><span class="sxs-lookup"><span data-stu-id="e9029-105">Using Queries in a review set helps you focus on a subset of documents that meet the criteria of your review.</span></span>
 
-## <a name="creating-and-running-a-query-within-a-review-set"></a><span data-ttu-id="05755-105">建立和執行檢閱集合內的查詢</span><span class="sxs-lookup"><span data-stu-id="05755-105">Creating and running a query within a review set</span></span>
+## <a name="creating-and-running-a-query-in-a-review-set"></a><span data-ttu-id="e9029-106">在審閱集中建立及執行查詢</span><span class="sxs-lookup"><span data-stu-id="e9029-106">Creating and running a query in a review set</span></span>
 
-<span data-ttu-id="05755-106">才能建立及執行查詢，以在您檢閱集內，按一下 [您檢閱集中在 「 新增查詢 」。</span><span class="sxs-lookup"><span data-stu-id="05755-106">In order to create and run a query within your review set, click on "New Query" in your review set.</span></span> <span data-ttu-id="05755-107">在您的查詢名稱並定義條件之後，按一下 「 儲存 」 以執行查詢。</span><span class="sxs-lookup"><span data-stu-id="05755-107">After you name your query and define the conditions, click "Save" to run the query.</span></span> <span data-ttu-id="05755-108">若要執行的查詢，先前尚未儲存，只要按一下已儲存的查詢。</span><span class="sxs-lookup"><span data-stu-id="05755-108">To run a query that has been previously saved, simply click on the saved query.</span></span> <span data-ttu-id="05755-109">如需您可以藉由搜尋的中繼資料的清單，請參閱[文件中繼資料](document-metadata-fields.md)欄位。</span><span class="sxs-lookup"><span data-stu-id="05755-109">Refer to [Document metadata fields](document-metadata-fields.md) for a list of metadata you can search by.</span></span>
+<span data-ttu-id="e9029-107">若要為審閱集內的檔建立並執行查詢，請按一下 [檢查集合] 中的 [**新增查詢**]。</span><span class="sxs-lookup"><span data-stu-id="e9029-107">To create and run a query on the documents in a review set, click **New query** in the review set.</span></span> <span data-ttu-id="e9029-108">在命名查詢並定義條件之後，按一下 [**儲存**] 儲存並執行查詢。</span><span class="sxs-lookup"><span data-stu-id="e9029-108">After you name your query and define the conditions, click **Save** to save and run the query.</span></span> <span data-ttu-id="e9029-109">若要執行先前已儲存的查詢，請按一下已儲存的查詢。</span><span class="sxs-lookup"><span data-stu-id="e9029-109">To run a query that has been previously saved, click a saved query.</span></span>
 
-## <a name="building-your-query"></a><span data-ttu-id="05755-110">建立您的查詢</span><span class="sxs-lookup"><span data-stu-id="05755-110">Building your query</span></span>
+![檢查集合查詢](../media/AeDReviewSetQueries.png)
 
-<span data-ttu-id="05755-111">您可以建置查詢關鍵字條件卡片中使用條件卡和查詢語言的組合。</span><span class="sxs-lookup"><span data-stu-id="05755-111">You can build your query using a combination of condition cards and query language in the Keywords condition card.</span></span> <span data-ttu-id="05755-112">您可以在一起作為區塊，以製作較複雜的查詢群組條件卡。</span><span class="sxs-lookup"><span data-stu-id="05755-112">You can group condition cards together as a block to craft a more complex query.</span></span>
+## <a name="building-a-review-set-query"></a><span data-ttu-id="e9029-111">建立審閱集查詢</span><span class="sxs-lookup"><span data-stu-id="e9029-111">Building a review set query</span></span>
 
-### <a name="condition-card"></a><span data-ttu-id="05755-113">條件卡</span><span class="sxs-lookup"><span data-stu-id="05755-113">Condition card</span></span>
+<span data-ttu-id="e9029-112">您可以使用關鍵字條件卡中的條件卡和查詢語言組合，建立查詢。</span><span class="sxs-lookup"><span data-stu-id="e9029-112">You can build a query by using a combination of condition cards and query language in the Keywords condition card.</span></span> <span data-ttu-id="e9029-113">您也可以將條件卡片組合成組塊（稱為*條件群組*），以建立更複雜的查詢。</span><span class="sxs-lookup"><span data-stu-id="e9029-113">You can also group condition cards together as a block (called a *condition group*) to build a more complex query.</span></span> <span data-ttu-id="e9029-114">如需您可以搜尋之中繼資料屬性的清單和描述，請參閱[Advanced eDiscovery 中的檔元資料欄位](document-metadata-fields-in-Advanced-eDiscovery.md)。</span><span class="sxs-lookup"><span data-stu-id="e9029-114">For a list and description of metadata properties that you can search, see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).</span></span>
 
-<span data-ttu-id="05755-114">檢閱集合中每個可搜尋的欄位具有對應的條件介面卡，您可用來建置您的查詢。</span><span class="sxs-lookup"><span data-stu-id="05755-114">Every searchable field in a review set has a corresponding condition card that you can use to build your query.</span></span>
+### <a name="condition-cards"></a><span data-ttu-id="e9029-115">條件卡片</span><span class="sxs-lookup"><span data-stu-id="e9029-115">Condition cards</span></span>
 
-<span data-ttu-id="05755-115">有多種類型的條件卡：</span><span class="sxs-lookup"><span data-stu-id="05755-115">There are multiple types of condition cards:</span></span>
-- <span data-ttu-id="05755-116">Freetext 條件卡用於文字欄位，例如主旨 Freetext:。</span><span class="sxs-lookup"><span data-stu-id="05755-116">Freetext: freetext condition card is used for text fields such as subject.</span></span> <span data-ttu-id="05755-117">您可以使用分號分隔這些列出多個搜尋字詞。</span><span class="sxs-lookup"><span data-stu-id="05755-117">You can list multiple search terms by separating them out with a comma.</span></span>
-- <span data-ttu-id="05755-118">日期： 日期條件卡係供例如上次修改日期的日期欄位。</span><span class="sxs-lookup"><span data-stu-id="05755-118">Date: date condition card is used for date fields such as last modified date.</span></span>
-- <span data-ttu-id="05755-119">搜尋選項： 搜尋選項條件卡提供可能的值清單中檢閱設定特定的欄位。</span><span class="sxs-lookup"><span data-stu-id="05755-119">Search options: search options condition card will provide a list of possible values for the particular field in your review set.</span></span> <span data-ttu-id="05755-120">這用於欄位，例如寄件者數量有限的可能值在您檢閱集中的地方。</span><span class="sxs-lookup"><span data-stu-id="05755-120">This is used for fields, such as sender, where there is a finite number of possible values in your review set.</span></span>
-- <span data-ttu-id="05755-121">關鍵字： 關鍵字條件卡片是 freetext 條件卡片，您可以使用搜尋字詞，或使用 KQL 類似的查詢語言中的特定執行個體。</span><span class="sxs-lookup"><span data-stu-id="05755-121">Keyword: keyword condition card is a specific instance of freetext condition card that you can use to search for terms, or use KQL-like query language in.</span></span> <span data-ttu-id="05755-122">如需詳細資訊，請參閱以下內容。</span><span class="sxs-lookup"><span data-stu-id="05755-122">See below for more detail.</span></span>
+<span data-ttu-id="e9029-116">每個審閱集中的可搜尋欄位都有對應的條件卡，可供您用來建立查詢。</span><span class="sxs-lookup"><span data-stu-id="e9029-116">Every searchable field in a review set has a corresponding condition card that you can use to build your query.</span></span>
 
-### <a name="query-language"></a><span data-ttu-id="05755-123">查詢語言</span><span class="sxs-lookup"><span data-stu-id="05755-123">Query language</span></span>
+<span data-ttu-id="e9029-117">有多種狀況卡片類型：</span><span class="sxs-lookup"><span data-stu-id="e9029-117">There are multiple types of condition cards:</span></span>
 
-<span data-ttu-id="05755-124">除了條件卡] 底下，您可以使用類似的 KQL 查詢語言關鍵字卡片，製作您的查詢。</span><span class="sxs-lookup"><span data-stu-id="05755-124">In addition to condition cards, you can use a KQL-like query language in the Keywords card to craft your query.</span></span> <span data-ttu-id="05755-125">語言支援標準 KQL 語法，例如 AND、 OR、 NOT、 查詢和 NEAR(n)。</span><span class="sxs-lookup"><span data-stu-id="05755-125">The query language supports standard KQL syntax like AND, OR, NOT, and NEAR(n).</span></span> <span data-ttu-id="05755-126">它也支援單一字元萬用字元 （？） 以及多重字元萬用字元 （\*）。</span><span class="sxs-lookup"><span data-stu-id="05755-126">It also supports single-character wildcard (?) and multi-character wildcard (\*).</span></span>
+- <span data-ttu-id="e9029-118">Freetext：透過文字欄位（例如 subject）使用 freetext 條件卡。</span><span class="sxs-lookup"><span data-stu-id="e9029-118">Freetext: A freetext condition card is used for text fields such as subject.</span></span> <span data-ttu-id="e9029-119">您可以將多個搜尋字詞以逗號分隔，以加以列出。</span><span class="sxs-lookup"><span data-stu-id="e9029-119">You can list multiple search terms by separating them out with a comma.</span></span>
 
-## <a name="filter"></a><span data-ttu-id="05755-127">篩選</span><span class="sxs-lookup"><span data-stu-id="05755-127">Filter</span></span>
+- <span data-ttu-id="e9029-120">日期：日期功能卡片用於日期欄位（例如「上次修改日期」）。</span><span class="sxs-lookup"><span data-stu-id="e9029-120">Date: A date condition card is used for date fields such as last modified date.</span></span>
 
-<span data-ttu-id="05755-128">除了您可以儲存的查詢，您可以使用篩選器您查詢結果重疊飛出視窗上的其他條件。</span><span class="sxs-lookup"><span data-stu-id="05755-128">In addition to queries that you can save, you can overlay additional conditions on the fly to your query results using filters.</span></span> <span data-ttu-id="05755-129">篩選與一些重大的方式不同查詢：</span><span class="sxs-lookup"><span data-stu-id="05755-129">Filters differ from queries in a few significant ways:</span></span>
-- <span data-ttu-id="05755-130">篩選器是暫時性 （亦即它們不會保存透過不同的工作階段），而查詢會儲存至檢閱設定。</span><span class="sxs-lookup"><span data-stu-id="05755-130">Filters are transient (i.e. they do not persist over different sessions), whereas queries are saved to the review set.</span></span>
-- <span data-ttu-id="05755-131">篩選器永遠都會 additive;篩選會套用掌握您此時，有作用中的查詢，而套用查詢將會取代查詢作用中。</span><span class="sxs-lookup"><span data-stu-id="05755-131">Filters are always additive; filters will apply on top of the query you have in effect at the moment, whereas applying a query will replace the query in effect.</span></span>
+- <span data-ttu-id="e9029-121">搜尋選項：「搜尋選項」條件卡會為您的考核集中的特定欄位提供可能的值清單。</span><span class="sxs-lookup"><span data-stu-id="e9029-121">Search options: A search options condition card will provide a list of possible values for the particular field in your review set.</span></span> <span data-ttu-id="e9029-122">這適用于在您的考核集中，具有有限數目的可能值的欄位（例如寄件者）。</span><span class="sxs-lookup"><span data-stu-id="e9029-122">This is used for fields, such as sender, where there is a finite number of possible values in your review set.</span></span>
+
+- <span data-ttu-id="e9029-123">關鍵字：關鍵字條件卡片是 freetext 條件卡的特定實例，可供您用來搜尋字詞，或使用 KQL 類似的查詢語言。</span><span class="sxs-lookup"><span data-stu-id="e9029-123">Keyword: A keyword condition card is a specific instance of freetext condition card that you can use to search for terms, or use KQL-like query language in.</span></span> <span data-ttu-id="e9029-124">如需詳細資訊，請參閱下一節。</span><span class="sxs-lookup"><span data-stu-id="e9029-124">See below for more detail.</span></span>
+
+### <a name="query-language"></a><span data-ttu-id="e9029-125">查詢語言</span><span class="sxs-lookup"><span data-stu-id="e9029-125">Query language</span></span>
+
+<span data-ttu-id="e9029-126">除了條件卡片之外，您還可以使用關鍵字智慧卡中的類似 KQL 的查詢語言來建立您的查詢。</span><span class="sxs-lookup"><span data-stu-id="e9029-126">In addition to condition cards, you can use a KQL-like query language in the Keywords card to build your query.</span></span> <span data-ttu-id="e9029-127">「檢查的複查集」查詢語言支援標準 Boolean 運算子，例如**and**、 **OR**、 **NOT**和**NEAR**。</span><span class="sxs-lookup"><span data-stu-id="e9029-127">The query language for review set queries supports standard Boolean operators, such as **AND**, **OR**, **NOT**, and **NEAR**.</span></span> <span data-ttu-id="e9029-128">它也支援單一字元萬用字元（？）和多字元萬用字元（\*）。</span><span class="sxs-lookup"><span data-stu-id="e9029-128">It also supports a single-character wildcard (?) and a multi-character wildcard (\*).</span></span>
+
+## <a name="using-filters"></a><span data-ttu-id="e9029-129">使用篩選</span><span class="sxs-lookup"><span data-stu-id="e9029-129">Using filters</span></span>
+
+<span data-ttu-id="e9029-130">除了您可以儲存的查詢之外，您還可以使用「複查集」篩選，將其他條件快速套用至審閱集查詢。</span><span class="sxs-lookup"><span data-stu-id="e9029-130">In addition to queries that you can save, you can use review set filters to quickly apply additional conditions to a review set query.</span></span> <span data-ttu-id="e9029-131">這可協助您進一步精煉審閱集查詢所顯示的結果。</span><span class="sxs-lookup"><span data-stu-id="e9029-131">This helps you further refine the results displayed by a review set query.</span></span>
+
+![審閱集合篩選](../media/AeDReviewSetFilters.png)
+
+<span data-ttu-id="e9029-133">篩選不同于查詢的兩個重要方式：</span><span class="sxs-lookup"><span data-stu-id="e9029-133">Filters differ from queries in two significant ways:</span></span>
+
+- <span data-ttu-id="e9029-134">篩選是暫時性的。</span><span class="sxs-lookup"><span data-stu-id="e9029-134">Filters are transient.</span></span> <span data-ttu-id="e9029-135">它們不會存在於現有的會話之外。</span><span class="sxs-lookup"><span data-stu-id="e9029-135">They don't persist beyond the existing session.</span></span> <span data-ttu-id="e9029-136">換句話說，您無法儲存篩選。</span><span class="sxs-lookup"><span data-stu-id="e9029-136">In other words, you can't save a filter.</span></span> <span data-ttu-id="e9029-137">查詢會儲存至複查集，並在開啟評審集時進行存取。</span><span class="sxs-lookup"><span data-stu-id="e9029-137">Queries are saved to the review set, and access them whenever open the review set.</span></span>
+
+- <span data-ttu-id="e9029-138">篩選永遠都是累加的。</span><span class="sxs-lookup"><span data-stu-id="e9029-138">Filters are always additive.</span></span> <span data-ttu-id="e9029-139">除了目前的複查集查詢之外，還會套用篩選器。</span><span class="sxs-lookup"><span data-stu-id="e9029-139">Filters are applied in addition to the current review set query.</span></span> <span data-ttu-id="e9029-140">套用不同的查詢會取代目前查詢所傳回的結果。</span><span class="sxs-lookup"><span data-stu-id="e9029-140">Applying a different query will replace the results returned by the current query.</span></span>
