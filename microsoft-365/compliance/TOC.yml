@@ -22,6 +22,8 @@
       items:
         - name: 深入了解測試人員風險管理
           href: insider-risk-management.md
+        - name: 測試人員風險管理計畫
+          href: insider-risk-management-plan.md
         - name: 開始使用測試人員風險管理
           href: insider-risk-management-configure.md
         - name: 建立及管理測試人員風險原則

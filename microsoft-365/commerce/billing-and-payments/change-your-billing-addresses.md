@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: 瞭解如何更新 Microsoft 365 for business 的帳單位址。 您也可以更新用來接收帳單通知的電子郵件地址。
 ms.custom: okr_SMB
-ms.openlocfilehash: 169dfd78ca39e91e065c3bea59242a9f205463d0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7edef65eb1cf45192188316b13acfd87eac5a490
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632716"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048022"
 ---
 # <a name="change-your-billing-addresses"></a>變更帳單地址
 
@@ -121,7 +121,7 @@ ms.locfileid: "43632716"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 尋找您要變更的訂閱。 在 [**設定 & 動作**] 區段中，選取 [**編輯服務使用位址**]。
 
@@ -170,6 +170,8 @@ ms.locfileid: "43632716"
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>變更為另一名系統管理員的備用電子郵件地址
 
 您也可以變更貴組織中其他全域系統管理員和計費系統管理員的備用電子郵件地址。
+
+::: moniker range="o365-worldwide"
   
 1. 在系統管理中心中，移至 [帳單]**** \> [帳單通知]<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank"></a>。
 

@@ -1,5 +1,5 @@
 ---
-title: 系統管理員報送、提交、垃圾郵件問題，誤報，送出網路釣魚，送出電子郵件的掃描，可疑的電子郵件，在 Office 365 中，掃描郵件，具有 Microsoft 掃描的網路釣魚程式、提交電子郵件、提交電子郵件、dodgy 電子郵件、不良演員郵件、可疑、不受信任的郵件、報告網路傳送電子郵件至 microsoft、報告詐騙電子郵件給 microsoft，向 Microsoft 報告惡意程式碼，電子郵件收件匣中的垃圾郵件，電子郵件中有病毒
+title: Office 365 的系統管理員提交
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,13 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: 瞭解如何將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs，以及您公司中的檔案提交至 Microsoft 進行掃描。
-ms.openlocfilehash: 73c33ba1218a710c33f8b2675bc65c0a7486efda
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 79f200963655e5fb07a04b686c1dd8cc3bbd0873
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43921494"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034197"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 

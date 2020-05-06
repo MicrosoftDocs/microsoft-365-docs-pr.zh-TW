@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: 瞭解如何在30天內擴充試用訂閱。
-ms.openlocfilehash: 2656e23120e114f2bc83988aff614790663131d7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a158f737b0606ec8b3ae451d92d312ea2969f176
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634893"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045761"
 ---
 # <a name="extend-your-trial"></a>延長試用期
 
@@ -34,10 +34,9 @@ ms.locfileid: "43634893"
 
 ::: moniker range="o365-worldwide"
 
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
-
-2. 在 [**產品 & 服務**] 頁面上，尋找您要擴充的試用訂閱。 在 [**設定 & 動作**] 區段中，選取 [**擴充試用**]。
+2. 在 [**產品**] 頁面上，尋找您要擴充的試用訂閱。 在 [**設定 & 動作**] 區段中，選取 [**擴充試用**]。
 
 3. 請複查分機資訊，如有必要，請變更您的支付方式。 完成後，請選取 [**擴充試用**]。
 
@@ -45,9 +44,7 @@ ms.locfileid: "43634893"
 
 ::: moniker range="o365-germany"
 
-
 1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
-
 
 2. 在 [**訂閱**] 頁面上，選取您要擴充的試用訂閱，然後在 [到期日] 底下，選取 [**擴充試用**]。
 

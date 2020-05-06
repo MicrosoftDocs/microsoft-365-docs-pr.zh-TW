@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: 深入瞭解 Microsoft 365 自助註冊和可用自助服務程式，例如 Microsoft Power App、Microsoft Flow 及 Dynamics 365 （適用于金融）。
 ms.custom: okr_SMB
-ms.openlocfilehash: d20609d48c71795205940546bef752c236ae3e81
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 02d318fbafb6e062f9c3d1592cd6adc7f764fd56
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627797"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045269"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>在您的組織中使用自助註冊
 
@@ -42,7 +42,7 @@ ms.locfileid: "43627797"
 
 3. 我們會驗證他們的電子郵件地址，然後可以立即開始使用 Microsoft 365、Power BI 或其他服務。
 
-4. 作為商務系統管理員，您可以透過查看系統管理中心中的 [**產品 & 服務**] 頁面，查看誰已註冊訂閱。 如此一來，您就可以看到您租使用者中的服務是否有新增或無法辨識的授權。 若要控制使用者是否可以註冊自助訂閱，請使用[MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell Cmdlet 搭配**AllowAdHocSubscriptions**參數。 如需詳細資訊，請參閱[如何控制自助設定？](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
+4. 作為商務系統管理員，您可以透過查看系統管理中心的 [**產品**] 頁面，查看誰已註冊訂閱。 如此一來，您就可以看到您租使用者中的服務是否有新增或無法辨識的授權。 若要控制使用者是否可以註冊自助訂閱，請使用[MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell Cmdlet 搭配**AllowAdHocSubscriptions**參數。 如需詳細資訊，請參閱[如何控制自助設定？](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
 
 ## <a name="available-self-service-programs"></a>可用的自助服務程式
 

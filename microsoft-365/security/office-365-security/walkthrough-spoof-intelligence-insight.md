@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: 請參閱 Office 365 的 [高級威脅防護] 中的欺騙智慧洞察力的運作方式。
-ms.openlocfilehash: 4ad3de8812e09b73018c02232e3e66e4bec9d041
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 瞭解新的欺騙性智慧洞察力的運作方式，包括如何快速判斷哪些寄件者合法傳送您未驗證的電子郵件。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 481d248b833c7910152cd39113ff32fdc1217a5a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630926"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033641"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>逐步解說-在 Microsoft 365 中的 ATP 欺騙智慧洞察力
 
@@ -38,11 +39,11 @@ ms.locfileid: "43630926"
 
   您可以在安全性 & 合規性中心的多個儀表板上查看哄騙智慧洞察力。 不論您所看到的儀表板為何，真知灼見都會提供相同的詳細資料，並可讓您快速執行相同的工作。
 
-- 您必須已獲指派權限，才能執行這些程序。 若要使用欺騙性智慧洞察力，您必須是「**組織管理**」、「**安全性管理員**」或「**安全性讀者**」角色群組的成員。 如需安全性 & 規範中心中角色群組的詳細資訊，請參閱[安全性 & 規範中心中的許可權](permissions-in-the-security-and-compliance-center.md)。
+- 您必須已獲指派權限，才能執行這些程序。 若要使用欺騙性智慧洞察力，您必須是「**組織管理**」、「**安全性管理員**」或「**安全性讀者**」角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
 - 您可以在 ATP 反網路釣魚原則中啟用和停用欺騙智慧。 如需詳細資訊，請參閱[在 Microsoft 365 中設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
-- 在包含 Exchange Online 信箱和獨立 Exchange Online Protection （EOP）的 Microsoft 365 組織中，如果沒有 Exchange Online 信箱，您可以使用哄騙智慧來監視和管理您傳送未驗證郵件的寄件者。 如需詳細資訊，請參閱[Configure 哄騙情報 In Microsoft 365](learn-about-spoof-intelligence.md)。
+- 在包含 Exchange Online 信箱和獨立 Exchange Online Protection （EOP）的 Microsoft 365 組織中，如果沒有 Exchange Online 信箱，您可以使用哄騙智慧來監視和管理您傳送未驗證郵件的寄件者。 如需詳細資訊，請參閱[在 Microsoft 365 中設定詐騙情報](learn-about-spoof-intelligence.md)。
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心開啟欺騙性智慧洞察力
 

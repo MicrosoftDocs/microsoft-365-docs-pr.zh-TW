@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 使用者可以瞭解如何管理其自助購買服務。
-ms.openlocfilehash: f4be2176d970af426817e975b9942ce5e2b89a9e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ed84bfc215d000eaa144aaf1f6eac281fc5a0c16
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636636"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046165"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助購買 (使用者)
 
@@ -30,11 +30,11 @@ ms.locfileid: "43636636"
 
 ## <a name="view-your-subscriptions"></a>查看您的訂閱
 
-您可以查看您購買的所有自助服務購買的訂閱清單。 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品 & 服務</a>] 頁面。
+您可以查看您購買的所有自助服務購買的訂閱清單。 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>如何購買更多或減少授權
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品 & 服務</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 尋找您要購買更多或減少授權的訂閱。
 
@@ -74,7 +74,7 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ## <a name="cancel-a-subscription"></a>取消訂閱
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品 & 服務</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 找到您要取消的訂閱。
 

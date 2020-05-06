@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 瞭解如何建立及刪除 Microsoft 365 群組、新增及移除群組成員，以及自訂群組的運作方式。
-ms.openlocfilehash: d37058fa3ef3803f3a8f6099d46e1262f314e501
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a691f2363547c5bffb4c674d61cddde0cdb0266a
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630452"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049212"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心建立群組
   
 當使用者可以從 Outlook 或其他應用程式（以系統管理員的身分）建立 Microsoft 365 群組時，您可能需要建立或刪除群組、新增或移除成員，並自訂其運作方式。 Microsoft 365 系統管理中心是執行這項作業的地方。 
 
 > [!TIP]
-> 您必須在 Yammer 中建立 microsoft 365 連線的 Yammer 群組，但可以在 Microsoft 365 系統管理中心（如其他 Microsoft 365 群組）管理。 若要深入瞭解，請參閱[Yammer 和 Microsoft 365 群組](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx)。 
+> 您必須在 Yammer 中建立 microsoft 365 連線的 Yammer 群組，但可以在 Microsoft 365 系統管理中心（如其他 Microsoft 365 群組）管理。 若要深入瞭解，請參閱[Yammer 和 Microsoft 365 群組](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups)。 
 
 ## <a name="create-a-microsoft-365-group"></a>建立 Microsoft 365 群組
 
@@ -57,7 +57,7 @@ ms.locfileid: "43630452"
 
 ::: moniker range="o365-worldwide"
 
-使用者可以[自行新增或要求核准](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即加入。
+使用者可以[自行新增或要求核准](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即加入。
 
 1. 在系統管理中心中重新整理頁面，使新的群組出現，然後選取您要新增成員的群組名稱。
     
@@ -67,7 +67,7 @@ ms.locfileid: "43630452"
     
 4. 選取您要新增的使用者，然後選取 [**儲存**]。
     
-5. 選取 [**關閉**三次]。 
+5. 選取 [關閉]**** 三次。 
     
 群組將會出現在具有指派之成員的 Outlook 中。
 
@@ -75,7 +75,7 @@ ms.locfileid: "43630452"
 
 ::: moniker range="o365-germany"
 
-使用者可以[自行新增或要求核准](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即加入。
+使用者可以[自行新增或要求核准](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即加入。
 1. 在系統管理中心中重新整理頁面，使新的群組出現，選取 [**群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>]，然後選取您要新增成員的群組。
     
 2. 在 [**成員**] 旁，選取 [**編輯**]。
@@ -83,7 +83,7 @@ ms.locfileid: "43630452"
     
 4. 選取您要新增的使用者，然後選取 [**儲存**]。
     
-5. 選取 [**關閉**三次]。 
+5. 選取 [關閉]**** 三次。 
     
 群組將會出現在具有指派之成員的 Outlook 中。
   
@@ -91,7 +91,7 @@ ms.locfileid: "43630452"
 
 ::: moniker range="o365-21vianet"
 
-使用者可以[自行新增或要求核准](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即加入。
+使用者可以[自行新增或要求核准](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即加入。
 1. 在系統管理中心中重新整理頁面，使新的群組出現，選取 [**群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>]，然後選取您要新增成員的群組。
     
 2. 在 [**成員**] 旁，選取 [**編輯**]。
@@ -99,7 +99,7 @@ ms.locfileid: "43630452"
     
 4. 選取您要新增的使用者，然後選取 [**儲存**]。
     
-5. 選取 [**關閉**三次]。 
+5. 選取 [關閉]**** 三次。 
     
 群組將會出現在具有指派之成員的 Outlook 中。
   
@@ -119,7 +119,7 @@ ms.locfileid: "43630452"
 
 ## <a name="related-articles"></a>相關文章
 
-[管理 Microsoft 365 群組的來賓存取權](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[管理 Microsoft 365 群組的來賓存取權](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [選擇建立 Microsoft 365 群組時要使用的網域](choose-domain-to-create-groups.md)
 

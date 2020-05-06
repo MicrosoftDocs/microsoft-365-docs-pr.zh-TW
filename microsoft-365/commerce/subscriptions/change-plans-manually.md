@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: 購買新的訂閱以手動變更訂閱，並確保訂閱同時列出並使用中。
-ms.openlocfilehash: bcd9a129ef1597469ef9bbf93841b5db4f919f1e
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: fcaa3ebfd9d20fa50c9f37f3366aec9d4dd69103
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707628"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046189"
 ---
 # <a name="change-plans-manually"></a>手動變更計畫
 
@@ -58,14 +58,14 @@ OR
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>步驟3：檢查您的新訂閱與授權
 
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. **確認同時列出和使用中的兩個訂閱**您要將使用者移至其中的訂閱，以及您要將使用者移至其中的訂閱，必須一起列出。 如果您第一次檢查時新的訂閱不在那裡，請稍後再試一次。 檢查這兩個訂閱是否都在使用中。 [未列出或未使用中的新訂閱](#the-new-subscription-isnt-listed-or-isnt-active)。
 
 3. **檢查您是否有足夠的授權可供每個使用者使用**每個使用者都需要符合其訂閱的授權。 因此，如果您想要將十位使用者移至 Microsoft 365 商務版 Premium，您必須確定有10個授權可供使用。
 
 4. **新訂閱需要更多授權？**
-   移至 [**產品 & 服務**] 頁面，[購買更多授權](../licenses/buy-licenses.md)。
+   移至 [**產品**] 頁面並[購買更多授權](../licenses/buy-licenses.md)。
 
 > [舊的授權為何？](#what-about-the-old-licenses)
 
@@ -83,7 +83,7 @@ OR
 
 ### <a name="reassign-a-license-for-one-user"></a>為一位使用者重新指派授權
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 在 [作用中**使用者**] 頁面上，選取您要指派授權的使用者。
 
@@ -91,7 +91,7 @@ OR
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>一次為多位使用者重新指派授權
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取您要取代現有授權的使用者名稱旁的圓圈。
 

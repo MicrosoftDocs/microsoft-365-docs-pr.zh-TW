@@ -1,5 +1,5 @@
 ---
-title: Exchange Online Protection 中的郵件流程規則 (傳輸規則)
+title: 郵件流程規則（傳輸規則）-Exchange Online Protection
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 您可以使用郵件流程規則（傳輸規則）來識別透過您組織的郵件，並採取相應動作。
-ms.openlocfilehash: 0a182b9d4a63a824a3955e8296160779c826960d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8cb28a1f198d0717d2373de8f2b9cb048b6ff7df
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635409"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036182"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的郵件流程規則 (傳輸規則)
 

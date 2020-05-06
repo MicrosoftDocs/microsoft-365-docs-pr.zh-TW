@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 34e57a00-2a7d-469c-beec-089423f18369
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Dyn.com。
-ms.openlocfilehash: afce9c21b0f717a038f378d4bf7114724748c2ac
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 9d419cc26688cdbda792c0aaaa116ee01534247a
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939280"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049116"
 ---
 # <a name="create-dns-records-at-dyncom-for-microsoft"></a>在 Dyn.com 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 Dyn.com 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
  
@@ -55,7 +55,7 @@ ms.locfileid: "43939280"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Host**|**TTL**|**類型**|**資料**|
+    |**Host** (主機)|**TTL**|**類型**|**資料**|
     |:-----|:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |600  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
        
@@ -106,9 +106,9 @@ ms.locfileid: "43939280"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Host**|**TTL**|**類型**|**資料**|
+    |**Host** (主機)|**TTL**|**類型**|**資料**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |10  *\<網域金鑰\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **10**是 MX 優先順序值。 請將它新增到 MX 值的開頭，並以空格分隔該值的其餘部分。  <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)      <br>    For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
+    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |10  *\<網域金鑰\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **10**是 MX 優先順序值。 請將它新增到 MX 值的開頭，並以空格分隔該值的其餘部分。  <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)      <br>    For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
     ![Dyn-BP-Configure-2-1](../../media/62ac77b7-c84d-426d-9ec4-a28d6479ad04.png)
   
@@ -143,7 +143,7 @@ ms.locfileid: "43939280"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Host**|**TTL**|**類型**|**資料**|
+    |**Host** (主機)|**TTL**|**類型**|**資料**|
     |:-----|:-----|:-----|:-----|
     |autodiscover (自動探索)  <br/> |600  <br/> |CNAME  <br/> |autodiscover.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> |
     |sip  <br/> |600  <br/> |CNAME  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
@@ -183,9 +183,9 @@ ms.locfileid: "43939280"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Host**|**TTL**|**類型**|**資料**|
+    |**Host** (主機)|**TTL**|**類型**|**資料**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |(Leave this field empty.)  <br/> |600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
     ![Dyn-BP-Configure-4-1](../../media/f8511349-3ea2-40c3-9853-98e1a58a91b5.png)
   
@@ -212,10 +212,10 @@ ms.locfileid: "43939280"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Host**|**TTL**|**類型**|**資料**|
+    |**Host** (主機)|**TTL**|**類型**|**資料**|
     |:-----|:-----|:-----|:-----|
-    |_sip。 _tls|600|SRV|100 1 443 sipdir.online.lync.com。 **This value MUST end with a period (.)**<br>**注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
-    |_sipfederationtls。 _tcp|600|SRV|100 1 5061 sipfed.online.lync.com。 **This value MUST end with a period (.)**<br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |_sip。 _tls|600|SRV|100 1 443 sipdir.online.lync.com。 **This value MUST end with a period (.)**<br>**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |_sipfederationtls。 _tcp|600|SRV|100 1 5061 sipfed.online.lync.com。 **This value MUST end with a period (.)**<br> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
     ![Dyn-BP-Configure-5-1](../../media/a6873411-f4ce-4327-9145-02d435930976.png)
   

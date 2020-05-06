@@ -1,5 +1,7 @@
 ---
-title: 高级电子数据展示中的导出案例数据
+title: 在高級電子檔探索中匯出案例資料
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,24 +15,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 0bd071912ca1a39779e71beed193b3f59fc93d21
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 瞭解如何在高級 eDiscovery 案例中匯出或下載簡報或外部評論的審閱集合中的內容。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 2aeb8b2cdfa850c3878b23205ce965794ea3be15
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37077152"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035951"
 ---
-# <a name="export-case-data-in-advanced-ediscovery"></a>高级电子数据展示中的导出案例数据
+# <a name="export-case-data-in-advanced-ediscovery"></a>在高級電子檔探索中匯出案例資料
 
-有三种方法可以从审阅集导出数据：
+有三種方式可以從審查集匯出資料：
 
-**下载**– 用于下载（通过使用浏览器）一小组本机文件。 这是导出一小组数据的最快速度。
+**下載：** 下載（使用瀏覽器）小型原生檔案集。 這是匯出小型資料集的最快方法。 此方法會保留原生檔案名。
 
-**导出**– 用于自定义导出的数据，包括导出元数据文件、本机文件、文本文件和已保存到 PDF 文件的已编辑的文档。 导出的数据上载 Azure 存储位置后，必须将其下载到本地计算机。 如需詳細資訊，請參閱： 
+**匯出：** 自訂匯出的資料。 這包括匯出檔案中繼資料、原生檔案、文字檔，以及已儲存至 PDF 檔案的 redacted 檔。 將匯出的資料上傳至 Azure 存放區位置之後，您可以將它下載到本機電腦。 如需詳細資訊，請參閱： 
 
    - [從檢閱集匯出文件](export-documents-from-review-set.md)
 
    - [下載匯出工作](download-export-jobs.md)
 
-**添加到另一个审阅集**- 用于将数据从一个审阅集复制到另一个审阅集。 有关详细信息，请参阅[将数据从一个审核集添加到另一个审核集](add-data-to-review-set-from-another-review-set.md)。 
+**新增至其他審閱集：** 將資料從一個複查集複製到不同的審閱集。 如需詳細資訊，請參閱[將資料從一個複查集新增至另一個複查集](add-data-to-review-set-from-another-review-set.md)。 

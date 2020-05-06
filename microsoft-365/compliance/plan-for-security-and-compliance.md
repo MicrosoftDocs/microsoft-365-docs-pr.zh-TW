@@ -14,14 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
-description: 方案安全性與合規性的登陸頁面
+description: 此登陸頁面提供 Office 365 的安全性和合規性的連結及規劃資訊。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 93c342a6b94dfb2333963c682f01e6a37aa7fb72
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b0f3bb6499de2ddd6fb613834b98e46d453d739a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626647"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034893"
 ---
 # <a name="plan-for-security-amp-compliance"></a>規劃安全性&amp;合規性
 
