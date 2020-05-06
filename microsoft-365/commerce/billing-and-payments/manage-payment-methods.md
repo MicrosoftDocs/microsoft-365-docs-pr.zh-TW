@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 瞭解如何在 Microsoft 365 系統管理中心中管理您的支付方式。
-ms.openlocfilehash: 997b957bb28d32402e17eb855bc891ed07e5f27f
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: fb3efa7aa2e098462e8c323d1cd0038222862e7b
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894838"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045865"
 ---
 # <a name="manage-payment-methods"></a>管理付款方式
 
@@ -36,7 +36,7 @@ ms.locfileid: "42894838"
 >
 > 您必須使用與租使用者相同國家/地區所簽發的支付方式。
 
-## <a name="add-a-payment-method"></a>新增付款條件
+## <a name="add-a-payment-method"></a>新增付款方式
 
 新增支付方式並不會將任何訂閱關聯。 若要指派單一訂閱給支付方式，請參閱[變更單一訂閱的付款條件](#change-a-payment-method-for-a-single-subscription)。 若要以新的付款條件取代所有使用另一種付款條件的訂閱，請參閱[取代支付方式](#replace-a-payment-method)。
 
@@ -73,7 +73,7 @@ ms.locfileid: "42894838"
 
 您可以變更用來支付單一訂閱的支付方式。
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品 & 服務</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 2. 在 [**訂閱**] 索引標籤上，選取您要使用其他支付方式支付的訂閱。 
 3. 在 [**帳單**] 底下的支付方式旁邊，選取 [**編輯**]。
 4. 在您現有的支付方式旁邊，選取 [**變更**]。
@@ -108,7 +108,7 @@ ms.locfileid: "42894838"
 7. 已在下拉式清單中選取新的付款條件。 選取 [下一步]****。
 8. 選取 [刪除]****。
 
-## <a name="troubleshoot-payment-methods"></a>付費方法疑難排解
+## <a name="troubleshoot-payment-methods"></a>針對付款方式進行疑難排解
 
 |**問題**|**疑難排解步驟**|
 |:----------|:-----|

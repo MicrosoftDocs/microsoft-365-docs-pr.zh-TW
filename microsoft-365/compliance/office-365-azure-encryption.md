@@ -15,13 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: Azure 中加密的說明。
-ms.openlocfilehash: cac3a27a209b4c2da66dbf583d2be88cf06aca34
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: 瞭解 Azure 中可用的加密，例如 Azure 磁片加密
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d5d334c56228a372d7e389bd5d0eff9859184d5b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943312"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033631"
 ---
 # <a name="encryption-in-azure"></a>Azure 中的加密
 

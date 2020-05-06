@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
-description: 系統管理員可以瞭解垃圾郵件信賴等級（SCL）如何決定郵件為垃圾郵件的可能性和可能性，以及垃圾郵件篩選依據 SCL 的郵件所採取的預設動作。
-ms.openlocfilehash: 519bc48e7285283ad0570b8f3ac598615b132875
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，系統管理員可以瞭解垃圾郵件信賴等級（SCL）如何判斷郵件的 likeliness 為垃圾郵件。
+ms.openlocfilehash: 9448b1fd99878dbb85bc8699afc0719bc62dd951
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638281"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035245"
 ---
 # <a name="spam-confidence-level-scl-in-office-365"></a>Office 365 中的垃圾郵件信賴等級（SCL）
 

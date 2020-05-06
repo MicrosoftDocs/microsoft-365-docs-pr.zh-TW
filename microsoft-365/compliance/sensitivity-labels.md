@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 從 Microsoft 資訊保護架構使用敏感度標籤來分類及保護組織的資料，同時確保使用者生產效率和共同作業能力不受影響。 這些標籤可套用保護設定以包含加密視覺標記，如頁尾和浮水印。
-ms.openlocfilehash: d31faa5dde212060f5e7b3c075cf4bc6fb3bef5f
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: b09a107c6b03743eeaddf86e812cc747482d2eb4
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957303"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022151"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -138,20 +138,24 @@ ms.locfileid: "43957303"
 
 使用標籤原則，您可以：
 
-- **選擇可看見標籤的使用者和群組。** 可以將標籤發佈到任何特定的使用者或電子郵件功能的安全性群組、通訊群組或 Microsoft 365 群組 (在 Azure AD 中可以有 [動態成員資格](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule))。
+- **選擇可看見標籤的使用者和群組。** 可以在 Azure AD 中將標籤發佈到任何特定的使用者或啟用電子郵件功能的安全性群組、通訊群組或 Microsoft 365 群組 (可以有 [動態成員資格](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule))。
 
-- **套用預設標籤**到標籤原則中包含的使用者和群組所建立所有新文件和的電子郵件。 如果您已針對 [Microsoft Teams、Microsoft 365 群組和 SharePoint 網站啟用敏感度標籤](sensitivity-labels-teams-groups-sites.md)，此選項也適用於容器。 如果使用者的文件或電子郵件不是正確的標籤，使用者可以隨時變更預設標籤。 請考慮使用預設標籤來設定您想套用到所有內容中的基本保護設定等級。 不過，若沒有使用者訓練和其他控制項，這項設定也可能導致不正確的標記。 
+- **套用預設標籤**到標籤原則中包含的使用者和群組所建立所有新文件和的電子郵件。 如果您已針對 [Microsoft Teams、Microsoft 365 群組和 SharePoint 網站啟用敏感度標籤](sensitivity-labels-teams-groups-sites.md)，此選項也適用於容器。 如果使用者的文件或電子郵件不是正確的標籤，使用者可以隨時變更預設標籤。 
+    
+    請考慮使用預設標籤來設定您想套用到所有內容中的基本保護設定等級。 不過，若沒有使用者訓練和其他控制項，這項設定也可能導致不正確的標記。 選取將套用加密作為對文件之預設標籤的標籤並不是個好主意。 例如，許多組織需要將文件傳送與共用給外部使用者，而這些使用者可能沒有[支援加密的應用程式](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)，或可能不會使用[可授權的帳戶](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#supported-scenarios-for-opening-protected-documents)。
 
 - **需要變更標籤的理由。** 如果使用者嘗試移除標籤，或以較低順序編號的標籤取代其，您可以要求使用者提供理由來執行此動作。 例如，使用者開啟標示為 [機密] (順序編號 3) 的文件，並將該標籤取代為 [公開] (順序編號 1)。 目前，理由尚未傳送到 [標籤分析](label-analytics.md) 以供系統管理員檢閱。 不過 [Azure 資訊保護整合標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)會將此資訊傳送至 [Azure 資訊保護分析](https://docs.microsoft.com/azure/information-protection/reports-aip)。
 
     ![提示使用者輸入理由](../media/Sensitivity-label-justification-required.png)
 
-- **要求使用者在其電子郵件和文件中套用標籤。** 也稱為強制標記，您可以要求必須先套用標籤，使用者才能儲存文件和傳送電子郵件。 使用此選項來協助增加您的標記涵蓋範圍。 標籤可由使用者手動指派、由於您設定的條件而自動指派，或依預設指派 (如上所述的預設標籤選項)。 當使用者需要指派標籤時，Outlook 中顯示的提示：
+- **要求使用者在其電子郵件和文件中套用標籤。** 也稱為強制標記，您可以要求必須先套用標籤，使用者才能儲存文件和傳送電子郵件。 標籤可由使用者手動指派、由於您設定的條件而自動指派，或依預設指派 (如上所述的預設標籤選項)。 當使用者需要指派標籤時，Outlook 中顯示的提示範例：
 
-    ![Outlook 中詢問使用者套用必要標籤的提示](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
+    ![Outlook 中要求使用者套用必要標籤的提示](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
     > [!NOTE]
-    > 強制標籤需要具備 Azure 資訊保護訂閱。 若要使用此功能，您必須安裝 [Azure 資訊保護整合標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)。 此用戶端僅能在 Windows 上執行，因此 Mac、iOS 和 Android 上尚不支援此功能。
+    > 強制標記目前需要 [Azure 資訊保護整合標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)。 此用戶端僅能在 Windows 上執行，因此 Mac、iOS 和 Android 上尚不支援此功能。
+    
+    請考慮使用此選項來協助增加您的標記涵蓋範圍。 不過，若沒有使用者訓練，這項設定可能導致不正確的標記。 此外，除非您也設定預設標籤，否則強制標籤的常見提示可能會讓使用者感到無益。 
 
 - **提供自訂說明頁面的說明連結。** 如果使用者不確定敏感度標籤代表的意義或使用方式，您可以提供顯示在 Office 應用程式中 **[敏感度標籤]** 功能表底部的 [深入了解] URL：
 

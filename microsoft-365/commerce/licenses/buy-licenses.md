@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: 瞭解如何新增及移除 Microsoft 365 for business 訂閱的授權。
-ms.openlocfilehash: ce14021b3d6efaa14c9010a82ad4b522b0b08339
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 57768a7e93b19c14c5428508268c2c1e37d700f6
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632526"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045221"
 ---
 # <a name="manage-subscription-licenses"></a>管理訂閱授權
 
@@ -42,9 +42,9 @@ ms.locfileid: "43632526"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
-2. 在 [**產品 & 服務**] 頁面上，尋找您要新增或移除授權的訂閱，然後選取 [**新增/移除授權**]。
+2. 在 [**產品**] 頁面上，尋找您要新增或移除授權的訂閱，然後選取 [**新增/移除授權**]。
 
     [如果沒有看到 [新增/移除授權] 連結該怎麼辦？](#what-if-i-dont-see-the-addremove-licenses-link)
 

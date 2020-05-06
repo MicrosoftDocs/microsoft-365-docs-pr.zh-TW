@@ -12,13 +12,15 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: 摘要：瞭解 Microsoft 365 中的資料恢復能力。
-ms.openlocfilehash: 365cde7137247e20bb4fd2b57039057398deafd5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-mar2020
+description: 在本文中，您將瞭解可在 Microsoft 365 中管理及設定的加密技術。
+ms.openlocfilehash: 3c7050ba0417473b4b387937336aae02c1eba778
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637339"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033611"
 ---
 # <a name="customer-managed-encryption-features"></a>客戶管理的加密功能
 
@@ -64,8 +66,8 @@ Azure 版權管理可協助減少威脅，例如，網路攻絲、中間人攻�
 
 Exchange Online Protection （EOP）和 Exchange Online 支援網域機碼的輸入驗證，識別出郵件（DKIM）郵件。 DKIM 是一種方法，用來驗證郵件是由其來源的網域所傳送，且沒有其他人冒充。 它會將電子郵件訊息傳送給負責傳送電子郵件的組織，而且也是較大的電子郵件加密模式的一部分。 如需此範例之三個部分的詳細資訊，請參閱：
 
-- [設定 SPF 以協助防止電子欺騙](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
+- [設定 SPF 以協助防止詐騙](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
 
-- [使用 DKIM 來驗證從您的自訂網域傳送的輸出電子郵件](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
+- [使用 DKIM 驗證從您自訂網域傳送的輸出電子郵件](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
 
 - [使用 DMARC 驗證電子郵件](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)

@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以在 Microsoft 的 Windows 基礎 DNS 上進行。
-ms.openlocfilehash: 3207a319880a23b71a17e80f3e9e77398fa79ef0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1aaf81dddf27911ad3562bec6f56fb34c64fd37d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631366"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048840"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>使用以 Windows 為基礎的 DNS 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
    
 如果您使用 Windows 型 DNS 託管自己的 DNS 記錄，請按照本文的步驟設定您電子郵件的記錄、商務用 Skype Online 等。
   
@@ -75,14 +75,14 @@ ms.locfileid: "43631366"
     - 主機名稱： sip
     - 類型： CNAME
     - 位址： sipdir.online.lync.com
-- 選取 [確定]****。
+- 選取 **[確定]**。
 
 新增商務用 Skype Online 自動探索 CNAME 記錄。  
 - 在網域的 [DNS 管理員] 頁面上，移至 [**動作** \> **CNAME （cname）**]。 在 [**新增資源記錄**] 對話方塊中，確定已將欄位設定為嚴格下列值：  
     - 主機名稱： lyncdiscover
     - 類型： CNAME
     - 位址： webdir.online.lync.com
-- 選取 [確定]****。
+- 選取 **[確定]**。
    
 ### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>新增兩個適用于 Microsoft 的行動裝置管理（MDM） CNAME 記錄
 
@@ -96,7 +96,7 @@ ms.locfileid: "43631366"
 - 主機名稱： enterpriseregistration
 - 類型： CNAME
 - 位址： enterpriseregistration.windows.net
-- 選取 [確定]****。 
+- 選取 **[確定]**。 
 
 新增 MDM Enterpriseenrollment CNAME 記錄。 
 -  在網域的 [DNS 管理員] 頁面上，移至 [**動作** \> **CNAME （cname）**]。 
@@ -104,13 +104,13 @@ ms.locfileid: "43631366"
     - 主機名稱： enterpriseenrollment
     - 類型： CNAME
     - 位址： enterpriseenrollment-s.manage.microsoft.com
-- 選取 [確定]****。
+- 選取 **[確定]**。
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>新增 SPF 的 TXT 記錄以協助防範垃圾郵件
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果您已有網域的 SPF 記錄，請不要為 Microsoft 建立新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 
   
 新增網域的 SPF TXT 記錄，以協助防堵垃圾郵件。
   
@@ -124,7 +124,7 @@ ms.locfileid: "43631366"
 -  記錄類型： TXT
 -  Address： v = spf1 包含: spf.protection.outlook.com。 .com-all 
          
--  選取 [確定]****。
+-  選取 **[確定]**。
    
 ## <a name="add-srv-records"></a>新增 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
@@ -141,7 +141,7 @@ ms.locfileid: "43631366"
     -  加權：1
     -  連接埠：443
     -  目標（主機名稱）： sipdir.online.lync.com
--  選取 [確定]****。 
+-  選取 **[確定]**。 
 
 
 為商務用 Skype Online 同盟新增 SIP SRV 記錄。  
@@ -154,7 +154,7 @@ ms.locfileid: "43631366"
     -  加權：1
     -  連接埠：5061
     -  目標（主機名稱）： sipfed.online.lync.com
--  選取 [確定]****。 
+-  選取 **[確定]**。 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>新增記錄以驗證您擁有網域 (若您尚未這麼做)
 <a name="BKMK_verify"> </a>
@@ -200,7 +200,7 @@ ms.locfileid: "43631366"
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>在內部部署 Active Directory 中用來做為 UPN 的非可路由電子郵件地址
 <a name="BKMK_ADNote"> </a>
 
-如果您想要將內部部署的 Active Directory 與 Microsoft 同步，請確定 Active Directory 使用者主體名稱（UPN）尾碼是有效的網域尾碼，而不是不受支援的網域尾碼，例如 @contoso local。 如果您需要變更 UPN 尾碼，請參閱 how [to prepare a 不可路由的網域以進行目錄同步](https://support.office.com/article/e7968303-c234-46c4-b8b0-b5c93c6d57a7)處理。
+如果您想要將內部部署的 Active Directory 與 Microsoft 同步，請確定 Active Directory 使用者主體名稱（UPN）尾碼是有效的網域尾碼，而不是不受支援的網域尾碼，例如 @contoso local。 如果您需要變更 UPN 尾碼，請參閱 how [to prepare a 不可路由的網域以進行目錄同步](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization)處理。
   
 > [!NOTE]
 >  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 

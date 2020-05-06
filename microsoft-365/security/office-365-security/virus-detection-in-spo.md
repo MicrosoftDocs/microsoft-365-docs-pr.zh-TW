@@ -17,13 +17,14 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: 深入瞭解 SharePoint Online 中的防防毒保護。
-ms.openlocfilehash: f04cd18bb4880ab631816c90b4976beada436225
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 深入瞭解 SharePoint 線上如何在使用者上傳的檔案中偵測病毒，並防止使用者下載或同步處理檔案。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6a47f52a30f90d7a19cc01dc9e14eb9b534ec244
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630938"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034947"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>SharePoint Online 中的病毒偵測
 

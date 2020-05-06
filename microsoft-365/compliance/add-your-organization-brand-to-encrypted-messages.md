@@ -17,13 +17,15 @@ ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 身為全域系統管理員，您可以將組織的署名套用至組織的加密電子郵件和加密入口網站的內容。
-ms.openlocfilehash: 231d0bd1e49d0529b4dc15ec758ba63fe5f60092
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 將組織的署名套用至組織的加密電子郵件和加密入口網站的內容。
+ms.openlocfilehash: fc2767c0b7ad67a53e081d60d18ac583b2b4c686
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632288"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034389"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>將貴組織的品牌新增至您的加密郵件
 

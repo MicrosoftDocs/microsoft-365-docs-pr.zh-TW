@@ -17,12 +17,13 @@ ms.date: 11/22/2019
 ms.collection:
 - M365-security-compliance
 description: 將組織的 SIEM 伺服器與 office 365 的高級威脅防護和相關威脅事件，與 Office 365 活動管理 API 整合。
-ms.openlocfilehash: 770e2348c4e5729531118fb4a014a72c352a0dd1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0527a998e7049960df840c7756ef5deaafaf5ade
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638293"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035269"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>SIEM 與高級威脅防護的整合
 

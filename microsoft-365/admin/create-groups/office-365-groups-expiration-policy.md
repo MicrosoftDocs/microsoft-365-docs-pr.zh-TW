@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 365 群組到期原則。
-ms.openlocfilehash: be61c66b310ada07876c5b3b005e6a7eb660092d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 82938caf083cd5b5fa330fd047686ae6a8b5300d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630052"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049176"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 群組到期原則
 
@@ -77,12 +77,12 @@ ms.locfileid: "43630052"
 
 超過此群組的30天之後，群組擁有者（或您為沒有擁有者之群組所指定的電子郵件地址）將會收到電子郵件，讓使用者可以輕鬆地更新群組。 如果不加以更新，他們會在到期前的15天內收到另一個更新電子郵件。 如果他們仍未更新，他們會在到期前的一天內收到一封以上的電子郵件通知。
 
-若由於某些原因，任何擁有者或系統管理員都不會在過期前更新群組，管理員仍可在到期後30天內還原群組。 如需詳細資訊，請參閱：[還原已刪除的 Microsoft 365 群組](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54)。
+若由於某些原因，任何擁有者或系統管理員都不會在過期前更新群組，管理員仍可在到期後30天內還原群組。 如需詳細資訊，請參閱：[還原已刪除的 Microsoft 365 群組](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group)。
 
 ## <a name="related-articles"></a>相關文章
 
-[保留原則概觀](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)
+[保留原則概觀](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
-[指派新擁有者給孤立的群組](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
+[指派新擁有者給孤立的群組](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
 
 [設定 Microsoft 365 群組到期](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)'

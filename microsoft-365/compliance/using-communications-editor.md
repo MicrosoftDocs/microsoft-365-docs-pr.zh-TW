@@ -15,34 +15,35 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 2f445e4449fb20f0d13d857bb83d3dc85d7b7387
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 當您設定內容格式時，請使用通訊編輯器變更文字和合併欄位變數。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 0cb415da9aa09452176bd8aa9be4575cfc827582
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069200"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034475"
 ---
 # <a name="use-the-communications-editor"></a>使用通訊編輯器
 
-當您定義入口網站內容的內容，法律保留通知和相關的提醒/呈報之後，您可以利用通訊編輯器]，以格式化，並以動態方式來自訂您的內容。
+當您定義入口網站內容、法律封存通知和相關的提醒/上報內容時，您可以利用通訊編輯器來格式化並動態自訂內容。
 
-## <a name="rich-text-editor"></a>Rtf 編輯器 
+## <a name="rich-text-editor"></a>富文字編輯器 
 
-通訊編輯器可讓使用者自訂使用 [編輯器] 選項的文字。 例如，使用者可以變更字型類型，建立項目符號清單、 醒目提示內容等等。 
+通訊編輯器可讓使用者使用編輯器選項自訂文字。 例如，使用者可以變更字型類型、建立專案符號清單、反白顯示內容等等。 
 
 ## <a name="merge-field-variables"></a>合併欄位變數
 
-您可以利用電子郵件合併變數將嵌入的通訊內文文字的自訂的 custodian 屬性從通訊編輯器。 傳送至 custodian 時，合併列印欄位也會填入對應的欄位。 例如，傳送至 custodian John Smith 時，[Custodian 名稱] 的合併列印欄位會轉譯與對應的名稱。 
+您可以利用通訊編輯器中的電子郵件合併變數，將自訂的系統管理員屬性嵌入通訊的內文文字。 傳送給管理員時，會以對應的欄位填入合併欄位。 例如，當傳送給「保管人 John Smith」時，合併欄位 [保管人 Name] 會以對應的名稱加以轉譯。 
 
-您可以藉由選取編排 rtf 編輯器控制項的**合併列印欄位**圖示使用電子郵件合併列印功能變數。 版面配置區將新增型關閉使用者的資料指標的位置。 
+您可以透過選取 rtf 文字編輯器控制項頂端的**合併欄位**圖示，使用電子郵件合併欄位。 會根據使用者游標的位置來新增預留位置。 
 
-### <a name="list-of-merge-field-variables"></a>合併列印欄位變數的清單
+### <a name="list-of-merge-field-variables"></a>合併欄位變數清單
 
-| 欄位名稱                  | 欄位的詳細資訊 | 
+| 欄位名稱                  | 欄位詳細資料 | 
 | :------------------- | :------------------- |
-| 顯示名稱  | Custodian 的名字和姓氏。 | 
-| 認可連結 | 記錄每個 custodian 認可自訂的連結。|                 |
-| 入口網站的連結     | Custodian 規範入口網站自訂的連結。|                |
-| 發出長                   | 指定的單位法務人員的電子郵件地址。|                   |
-| 發行日期                   | 請注意所發出的 (時間 UTC) 日期。              |
+| 顯示名稱  | 管理員的名字和姓氏。 | 
+| 確認連結 | 自訂的連結，可記錄每個保管人的認可。|                 |
+| 入口網站連結     | 管理員的規範入口網站的自訂連結。|                |
+| 簽發官                   | 指定之簽發專員的電子郵件地址。|                   |
+| 簽發日期                   | 發出通知的日期（UTC）。              |

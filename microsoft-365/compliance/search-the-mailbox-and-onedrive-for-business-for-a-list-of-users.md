@@ -1,5 +1,5 @@
 ---
-title: 使用內容搜尋來搜尋信箱與商務用 OneDrive 網站的使用者清單
+title: 在信箱 & OneDrive 中搜尋商務網站，以取得使用內容搜尋的使用者清單
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,12 +18,13 @@ search.appverid:
 - MET150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: 使用內容搜尋和本文中的腳本，針對使用者群組搜尋商務網站的信箱和 OneDrive。
-ms.openlocfilehash: 31dfa2057eff27ed1d2579cc541361858a11c7ce
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e9269fca59d13dfb715153c4211339e0d9cfb7e0
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943272"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035825"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>使用內容搜尋來搜尋信箱與商務用 OneDrive 網站的使用者清單
 

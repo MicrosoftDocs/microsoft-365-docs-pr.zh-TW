@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: 瞭解如何轉譯您的 Microsoft 365 商務發票上的費用、帳單和付款資訊，以及如何變更採購訂單編號。
-ms.openlocfilehash: 392957ecf06c6200bca3daf205946f5b8fd1563a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5cb2f961fa11f25e160ddd978783c7744776307e
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634965"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045809"
 ---
 # <a name="understand-your-invoice-for-microsoft-365-for-business"></a>瞭解適用于商務用 Microsoft 365 的發票
 
@@ -66,14 +66,14 @@ ms.locfileid: "43634965"
 > [!NOTE]
 > 銀行帳戶付款不適用於部分國家或地區。
   
-|**名稱**|**描述**|
+|**Name**|**描述**|
 |:-----|:-----|
 |年價格|訂閱會以月度或每年為帳單。 如果您在購買訂閱期間選擇了 [年度帳單]，則該發票上會反映年度授權價格。 如果您想變更帳單頻率，必須取消訂閱並以新的計費頻率 repurchase。|
 |計費期間|計費期間是指自最後一個發票日期起的時間週期。 服務期間是您用來收費使用服務的時段。|
 |帳單|這是您帳單部門的位址，通常與「銷售者」位址相同。 若要更新您的帳單位址，請參閱[變更您的帳單位址](change-your-billing-addresses.md)。|
 |收費|發票的第1頁摘要列出發票計費期間的所有費用。 第2頁顯示每個訂閱的詳細費用。|
 |檢查|如果您是在您的國家/地區提供發票和支票付款，則第1頁的底部會包含有關寄送付款的位置資訊。 請參考支票上的發票編號。|
-|參與名單|您的發票第1頁會匯總發票計費期間的所有貸方。 第2頁顯示每個訂閱的詳細點數。|
+|製作群|您的發票第1頁會匯總發票計費期間的所有貸方。 第2頁顯示每個訂閱的詳細點數。|
 |客戶 PO 編號|您的採購單（PO）編號。 如果您更新 PO 號碼，則未來的發票會包含它。 [變更您的採購訂單編號](#change-your-purchase-order-number)。 <br/> **記事**您無法將 PO 號碼新增至現有的發票。           |
 |天|每個帳單交易都與一個服務期間相關聯。 [天數] 欄位會指出服務週期中的天數。|
 |折扣|您的發票第1頁摘要發票計費期間的所有折扣。 第2頁顯示每個訂閱的詳細折扣。|
@@ -104,7 +104,7 @@ ms.locfileid: "43634965"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 [帳單]**** \> [產品與服務]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 如果您是在**表格**視圖中，請選取 [**卡片**] 以切換視圖。
 

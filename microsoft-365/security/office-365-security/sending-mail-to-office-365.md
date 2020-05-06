@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
-description: 這些文章可協助外部寄件者提升其信譽，並提高將電子郵件傳送至 Office 365 中使用者的能力。 他們也提供一些資訊，也就是如果您不是自己的 Microsoft 365 使用者，您可以如何報告垃圾郵件和網路釣魚企圖。
-ms.openlocfilehash: c5c84d154b25f29b94635e6506ed54158efc672f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 請以外部的寄件者的身分瞭解，如何提高將電子郵件傳遞給 Microsoft 365 中使用者的能力。 此外，還會瞭解如何以外部使用者的身分嘗試報告垃圾郵件 & 網路釣魚嘗試。
+ms.openlocfilehash: c1086088a92240be4bb7bbbd52077cecb1c54476
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638413"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035381"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>將郵件傳送至 Microsoft 365
 

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: 瞭解如何在 CSV 檔案中，一次將使用者新增至 Microsoft 365，一次一或多個使用者。
-ms.openlocfilehash: 78e5cf2c3c0148a91d48355881c3aec331213fd5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6d7a9d97d4cca25bac6579ea4427136351110658
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618857"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049468"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>個別或大量新增使用者
 
@@ -118,7 +118,7 @@ ms.locfileid: "43618857"
 新增使用者後，您都會收到一封由 Microsoft Online Services 小組寄送的電子郵件。 電子郵件會包含個人的使用者識別碼和密碼，讓他們可以登入 Microsoft 365。 您需要告訴新使用者有關其 Microsoft 365 登入資訊的相關資訊。 請以正常程序傳達新密碼。
 
 > [!NOTE]
->如果您透過遷移信箱建立使用者，您將需要指派授權來啟用使用者帳戶。 如果您未指派授權給使用者，則在30天的寬限期過後，其信箱將會停用。 請參閱如何使用 Microsoft 365 系統管理中心[將授權指派給使用者](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)。
+>如果您透過遷移信箱建立使用者，您將需要指派授權來啟用使用者帳戶。 如果您未指派授權給使用者，則在30天的寬限期過後，其信箱將會停用。 請參閱如何使用 Microsoft 365 系統管理中心[將授權指派給使用者](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)。
 
 ### <a name="video-add-and-manage-users-in-the-admin-center"></a>影片：在系統管理中心新增及管理使用者
 

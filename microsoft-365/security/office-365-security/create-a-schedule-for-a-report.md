@@ -1,5 +1,5 @@
 ---
-title: 在安全性&amp;與合規性中心建立報表的排程
+title: 建立報表安全性 & 規範中心的排程
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
-description: 瞭解如何在安全性&amp;與合規性中心設定報表的排程。
-ms.openlocfilehash: a5160c564373711521635d3a206d5501b0b2c8f0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 系統管理員可以瞭解如何在 Office 365 的安全性&amp;與合規性中心設定報表排程。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 54235ebc0a119ae0d82986325fb473156d93da18
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637697"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033723"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>在安全性&amp;與合規性中心建立報表的排程
 

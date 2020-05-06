@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
-description: 本主題提供有關已排入佇列、延遲，或在 Microsoft Exchange Online Protection (EOP) 篩選程序中退回之郵件的常見問題解答。
-ms.openlocfilehash: 05993e8d0e9af69dd1ac35b588c4e8ec731642f7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom:
+- seo-marvel-apr2020
+description: 尋找在 Microsoft Exchange Online Protection （EOP）篩選程式期間佇列、延遲或退回的郵件相關 FAQs 的答案。
+ms.openlocfilehash: f7a7c8b5466e02353ca114d6c7ed44f37bed5592
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599350"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036545"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>EOP 排入佇列、延後和退回的訊息常見問題集
 
@@ -33,7 +35,7 @@ ms.locfileid: "41599350"
 
 **問：郵件維持延遲的時間有多長，而重試間隔時間有多長？**
 
-答： 延期的郵件仍在我們佇列中的 1 天。 郵件重試次數乃是根據我們從收件者的郵件系統所取回的錯誤。 第一個的幾個 deferrals 是 15 分鐘或更少，與後續的重試 （透過下一個半十幾個） 透過多個最大值為 60 分鐘重試增加間隔。 間隔期間擴充是動態的考慮像佇列大小和內部郵件優先順序的多個變數。 在基本，它是 15 分鐘 （或更少） 若要開始，然後展開從該處透過下一步的幾個小時到最大 60 分鐘。
+答： 延遲中的郵件會保留1天的佇列。 郵件重試次數乃是根據我們從收件者的郵件系統所取回的錯誤。 前幾個 deferrals 為15分鐘或更少，後續的重試次數（透過接下來的一半或如此），將多次重試間隔增加到最大的60分鐘。 間隔持續時間擴充是動態的，其中考慮了多個變數，如佇列大小和內部郵件優先順序。 在 basic 中，它是15分鐘（或更少）的開始時間，然後從未來數小時到最多60分鐘進行擴充。
 
 **問：還原您的電子郵件伺服器後，已排入佇列的郵件如何散佈？**
 
