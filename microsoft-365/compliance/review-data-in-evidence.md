@@ -1,5 +1,7 @@
 ---
 title: 檢閱辨識項中的資料
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,93 +15,94 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 20ac1adb67014439110e355025b31753a4a6bcfe
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: 瞭解如何查看您的證據中的資料，例如以原生、文字或近乎原生格式查看的方法。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: f094718bd14ee86ff8fdae482e86c22ecfbdc483
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37078149"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034607"
 ---
-# <a name="review-the-data-in-evidence"></a><span data-ttu-id="f74d5-102">檢閱辨識項中的資料</span><span class="sxs-lookup"><span data-stu-id="f74d5-102">Review the data in evidence</span></span>
+# <a name="review-the-data-in-evidence"></a><span data-ttu-id="11296-103">檢閱辨識項中的資料</span><span class="sxs-lookup"><span data-stu-id="11296-103">Review the data in evidence</span></span>
 
-<span data-ttu-id="f74d5-103">数据调查中的证据集中的数据是您收集并添加到证据集的搜索结果的快照。</span><span class="sxs-lookup"><span data-stu-id="f74d5-103">The data in an evidence set in a data investigation is a snapshot of the search results that you collected and added to the evidence set.</span></span> <span data-ttu-id="f74d5-104">将搜索结果添加到证据时，将触发一个进程，从搜索返回的项目中提取文件、元数据和文本。</span><span class="sxs-lookup"><span data-stu-id="f74d5-104">When you add search results to evidence, a process is triggered to extract files, metadata, and text from the items returned by the search.</span></span> <span data-ttu-id="f74d5-105">然后，数据调查（预览）工具生成所有数据的新索引（通过称为*高级索引*的过程），并**添加到"证据"** 选项卡上设置的证据。</span><span class="sxs-lookup"><span data-stu-id="f74d5-105">Then the Data Investigations (Preview) tool then builds a new index (by a process called *Advanced indexing*) of all the data and adds to an evidence set on the **Evidence** tab.</span></span> 
+<span data-ttu-id="11296-104">資料調查中的證據集中的資料是您收集並新增至證據集之搜尋結果的快照。</span><span class="sxs-lookup"><span data-stu-id="11296-104">The data in an evidence set in a data investigation is a snapshot of the search results that you collected and added to the evidence set.</span></span> <span data-ttu-id="11296-105">當您將搜尋結果新增至證據時，會觸發處理常式，以從搜尋傳回的專案提取檔、中繼資料和文字。</span><span class="sxs-lookup"><span data-stu-id="11296-105">When you add search results to evidence, a process is triggered to extract files, metadata, and text from the items returned by the search.</span></span> <span data-ttu-id="11296-106">然後，「資料調查（預覽）」工具會為所有資料建立新的索引（由稱為「*高級索引*」的程式），並新增至 [**證據**] 索引標籤上的證據集。</span><span class="sxs-lookup"><span data-stu-id="11296-106">Then the Data Investigations (Preview) tool then builds a new index (by a process called *Advanced indexing*) of all the data and adds to an evidence set on the **Evidence** tab.</span></span> 
 
-<span data-ttu-id="f74d5-106">对于时间敏感的调查，这允许您通过删除位于原始数据源中的实际溢出或恶意数据来快速控制环境，同时允许您调查在隔离环境，在这种情况下，这是复制到证据集的数据）。</span><span class="sxs-lookup"><span data-stu-id="f74d5-106">For time-sensitive investigations, this allows you to quickly contain the environment by deleting the actual spilled or malicious data located in the at original data source, while at the same time allowing you to investigate the re-created evidence in a quarantined environment, which in this case is the data copied to the evidence set).</span></span> <span data-ttu-id="f74d5-107">收集证据并将其添加到证据集后，可以查看各个文档的本机格式、文本格式或可用于对文档进行分文和编辑的接近本机格式。</span><span class="sxs-lookup"><span data-stu-id="f74d5-107">After the evidence is collected and added to the evidence set, you can review individual documents in their native format, text format, or a near-native format that you can use to annotate and redact documents.</span></span> <span data-ttu-id="f74d5-108">此外，还可以运行查询以按时间范围、文件类型、数据所有者以及许多其他属性和搜索条件缩小数据集。</span><span class="sxs-lookup"><span data-stu-id="f74d5-108">Additionally, you can run queries to narrow the data set by time range, file types, data owners, and many other properties and search conditions.</span></span> <span data-ttu-id="f74d5-109">例如，通过使用"作者"、"发件人"或"收件人"条件，您可以快速识别事件所涉及的人员，以及组织中的任何数据是否已与外部用户共享。</span><span class="sxs-lookup"><span data-stu-id="f74d5-109">For example, by using the Author, Sender, or Recipient conditions, you can quickly identify the people are involved in the incident and if any data from your organization has been shared with external users.</span></span> <span data-ttu-id="f74d5-110">有关在证据集中搜索数据的详细信息，请参阅[查询证据中的数据。](evidence-query.md)</span><span class="sxs-lookup"><span data-stu-id="f74d5-110">For more information about searching through data in an evidence set, see [Query the data in evidence](evidence-query.md).</span></span>
+<span data-ttu-id="11296-107">針對時間敏感調查，這可讓您刪除位於原始資料來源中的實際濺入或惡意資料，同時也可讓您調查隔離環境中重新建立的證據，在此情況下，會將資料複製到證據集。</span><span class="sxs-lookup"><span data-stu-id="11296-107">For time-sensitive investigations, this allows you to quickly contain the environment by deleting the actual spilled or malicious data located in the at original data source, while at the same time allowing you to investigate the re-created evidence in a quarantined environment, which in this case is the data copied to the evidence set).</span></span> <span data-ttu-id="11296-108">收集證據並將證據新增至證據集之後，您可以查看以原生格式、文字格式或原始格式的個別檔，以供您用來批註及密文的檔。</span><span class="sxs-lookup"><span data-stu-id="11296-108">After the evidence is collected and added to the evidence set, you can review individual documents in their native format, text format, or a near-native format that you can use to annotate and redact documents.</span></span> <span data-ttu-id="11296-109">此外，您可以執行查詢來縮小資料集的時間範圍、檔案類型、資料擁有人，以及許多其他屬性和搜尋條件。</span><span class="sxs-lookup"><span data-stu-id="11296-109">Additionally, you can run queries to narrow the data set by time range, file types, data owners, and many other properties and search conditions.</span></span> <span data-ttu-id="11296-110">例如，使用作者、寄件者或收件者條件，您可以快速識別事件中涉及的人員，以及您的組織中是否有任何與外部使用者共用的資料。</span><span class="sxs-lookup"><span data-stu-id="11296-110">For example, by using the Author, Sender, or Recipient conditions, you can quickly identify the people are involved in the incident and if any data from your organization has been shared with external users.</span></span> <span data-ttu-id="11296-111">如需搜尋證據集中資料的詳細資訊，請參閱[查詢證據中的資料](evidence-query.md)。</span><span class="sxs-lookup"><span data-stu-id="11296-111">For more information about searching through data in an evidence set, see [Query the data in evidence](evidence-query.md).</span></span>
 
-<span data-ttu-id="f74d5-111">要对文档进行分组并获取更多审核帮助，**请选择"证据"** 选项卡上设置的证据，然后单击"**管理证据"。**</span><span class="sxs-lookup"><span data-stu-id="f74d5-111">To group documents and get more assistance for your review, select an evidence set on the **Evidence** tab, and then click **Manage evidence**.</span></span> <span data-ttu-id="f74d5-112">在"**分析"** 磁贴中，**单击"重建整个集的分析"。**</span><span class="sxs-lookup"><span data-stu-id="f74d5-112">In the **Analytics** tile, click **Rebuild analytics for the whole set**.</span></span> <span data-ttu-id="f74d5-113">这将运行高级分析，如重复检测、电子邮件线程和主题分析。</span><span class="sxs-lookup"><span data-stu-id="f74d5-113">This will run advanced analytics such as duplicate detection, email threading, and theme analysis.</span></span> <span data-ttu-id="f74d5-114">之后，您可以看到数据的一般主题，还可以通过电子邮件线程、接近重复项和精确重复项组织文档，以帮助您进行调查。</span><span class="sxs-lookup"><span data-stu-id="f74d5-114">Afterwards, you can see the general themes of the data and also organize documents by email threads, near duplicates, and exact duplicates to help your investigation.</span></span> <span data-ttu-id="f74d5-115">有关详细信息，请参阅[运行分析以加快调查](run-analytics-to-investigate-faster.md)速度。</span><span class="sxs-lookup"><span data-stu-id="f74d5-115">For more information, see [Run analytics to investigate faster](run-analytics-to-investigate-faster.md).</span></span>
+<span data-ttu-id="11296-112">若要群組檔並取得更多您的評論協助，請選取 [**證據**] 索引標籤上的證據集，然後按一下 [**管理證據**]。</span><span class="sxs-lookup"><span data-stu-id="11296-112">To group documents and get more assistance for your review, select an evidence set on the **Evidence** tab, and then click **Manage evidence**.</span></span> <span data-ttu-id="11296-113">在 [**分析**] 磚中，按一下 **[重新建立整個集的分析**]。</span><span class="sxs-lookup"><span data-stu-id="11296-113">In the **Analytics** tile, click **Rebuild analytics for the whole set**.</span></span> <span data-ttu-id="11296-114">這會執行高級分析，例如重複偵測、電子郵件執行緒及主題分析。</span><span class="sxs-lookup"><span data-stu-id="11296-114">This will run advanced analytics such as duplicate detection, email threading, and theme analysis.</span></span> <span data-ttu-id="11296-115">之後，您就可以查看資料的一般主題，也可以透過電子郵件執行緒、接近重複專案以及完全重複的方式來組織檔，以協助您進行調查。</span><span class="sxs-lookup"><span data-stu-id="11296-115">Afterwards, you can see the general themes of the data and also organize documents by email threads, near duplicates, and exact duplicates to help your investigation.</span></span> <span data-ttu-id="11296-116">如需詳細資訊，請參閱[執行分析以更快速地進行調查](run-analytics-to-investigate-faster.md)。</span><span class="sxs-lookup"><span data-stu-id="11296-116">For more information, see [Run analytics to investigate faster](run-analytics-to-investigate-faster.md).</span></span>
 
-## <a name="view-documents-in-evidence"></a><span data-ttu-id="f74d5-116">查看证据文档</span><span class="sxs-lookup"><span data-stu-id="f74d5-116">View documents in evidence</span></span>
+## <a name="view-documents-in-evidence"></a><span data-ttu-id="11296-117">在證據中查看檔</span><span class="sxs-lookup"><span data-stu-id="11296-117">View documents in evidence</span></span>
 
-<span data-ttu-id="f74d5-117">数据调查（预览）允许您在多个不同的查看器中显示内容，每个查看器具有不同的用途。</span><span class="sxs-lookup"><span data-stu-id="f74d5-117">Data Investigations (Preview) allows you to display content in several different viewers, with each viewer having a different purpose.</span></span> <span data-ttu-id="f74d5-118">这些查看器是：</span><span class="sxs-lookup"><span data-stu-id="f74d5-118">These viewers are:</span></span>
+<span data-ttu-id="11296-118">資料調查（預覽）可讓您在多個不同的檢視器中顯示內容，每個檢視器各有不同的用途。</span><span class="sxs-lookup"><span data-stu-id="11296-118">Data Investigations (Preview) allows you to display content in several different viewers, with each viewer having a different purpose.</span></span> <span data-ttu-id="11296-119">這些檢視器包括：</span><span class="sxs-lookup"><span data-stu-id="11296-119">These viewers are:</span></span>
 
-- <span data-ttu-id="f74d5-119">文件元数据</span><span class="sxs-lookup"><span data-stu-id="f74d5-119">File metadata</span></span>
-- <span data-ttu-id="f74d5-120">本机视图</span><span class="sxs-lookup"><span data-stu-id="f74d5-120">Native view</span></span>
-- <span data-ttu-id="f74d5-121">文本视图</span><span class="sxs-lookup"><span data-stu-id="f74d5-121">Text view</span></span>
-- <span data-ttu-id="f74d5-122">分名视图</span><span class="sxs-lookup"><span data-stu-id="f74d5-122">Annotate view</span></span>
+- <span data-ttu-id="11296-120">檔中繼資料</span><span class="sxs-lookup"><span data-stu-id="11296-120">File metadata</span></span>
+- <span data-ttu-id="11296-121">原生視圖</span><span class="sxs-lookup"><span data-stu-id="11296-121">Native view</span></span>
+- <span data-ttu-id="11296-122">文字視圖</span><span class="sxs-lookup"><span data-stu-id="11296-122">Text view</span></span>
+- <span data-ttu-id="11296-123">批註視圖</span><span class="sxs-lookup"><span data-stu-id="11296-123">Annotate view</span></span>
 
-<span data-ttu-id="f74d5-123">要访问这些查看器中的任何一个，只需在证据集中选择文档。</span><span class="sxs-lookup"><span data-stu-id="f74d5-123">To access any of these viewers, just select a document in an evidence set.</span></span>
+<span data-ttu-id="11296-124">若要存取這些檢視器，只要選取證據集中的檔。</span><span class="sxs-lookup"><span data-stu-id="11296-124">To access any of these viewers, just select a document in an evidence set.</span></span>
 
-## <a name="file-metadata"></a><span data-ttu-id="f74d5-124">文件元数据</span><span class="sxs-lookup"><span data-stu-id="f74d5-124">File metadata</span></span>
+## <a name="file-metadata"></a><span data-ttu-id="11296-125">檔中繼資料</span><span class="sxs-lookup"><span data-stu-id="11296-125">File metadata</span></span>
 
-<span data-ttu-id="f74d5-125">此视图显示与所选文档关联的各种元数据属性。</span><span class="sxs-lookup"><span data-stu-id="f74d5-125">This view displays various metadata properties associated with the selected document.</span></span> <span data-ttu-id="f74d5-126">您可以通过**单击"文件元数据"** 来打开和关闭此视图。</span><span class="sxs-lookup"><span data-stu-id="f74d5-126">You can toggle this view on and off by clicking **File metadata**.</span></span> <span data-ttu-id="f74d5-127">查看文档时，您可以查看文件元数据，但仍可在不同查看者之间进行更改。</span><span class="sxs-lookup"><span data-stu-id="f74d5-127">When reviewing a document, you can view the file metadata and still change between the different viewers.</span></span>
+<span data-ttu-id="11296-126">這個視圖會顯示與選取檔相關聯的各種中繼資料屬性。</span><span class="sxs-lookup"><span data-stu-id="11296-126">This view displays various metadata properties associated with the selected document.</span></span> <span data-ttu-id="11296-127">您可以按一下 [檔案**中繼資料**] 開啟和關閉此視圖。</span><span class="sxs-lookup"><span data-stu-id="11296-127">You can toggle this view on and off by clicking **File metadata**.</span></span> <span data-ttu-id="11296-128">當您審閱檔時，您可以在不同的檢視器之間查看檔案中繼資料，但仍然可以變更。</span><span class="sxs-lookup"><span data-stu-id="11296-128">When reviewing a document, you can view the file metadata and still change between the different viewers.</span></span>
 
-<span data-ttu-id="f74d5-128">下面是文档的文件元数据示例。</span><span class="sxs-lookup"><span data-stu-id="f74d5-128">Here's an example of the file metadata for a document.</span></span> <span data-ttu-id="f74d5-129">有关元数据字段的详细信息，请参阅[数据调查（预览）中的"文档元数据"字段。](document-metadata-fields.md)</span><span class="sxs-lookup"><span data-stu-id="f74d5-129">For more information about the metadata fields, see [Document metadata fields in Data Investigations (Preview)](document-metadata-fields.md).</span></span>
+<span data-ttu-id="11296-129">以下是一份檔的檔案中繼資料範例。</span><span class="sxs-lookup"><span data-stu-id="11296-129">Here's an example of the file metadata for a document.</span></span> <span data-ttu-id="11296-130">如需元資料欄位的詳細資訊，請參閱[資料調查中的檔元資料欄位（預覽）](document-metadata-fields.md)。</span><span class="sxs-lookup"><span data-stu-id="11296-130">For more information about the metadata fields, see [Document metadata fields in Data Investigations (Preview)](document-metadata-fields.md).</span></span>
 
-![文件元数据面板](media/Reviewimage2.png)
+![檔中繼資料面板](../media/Reviewimage2.png)
 
-## <a name="native-view"></a><span data-ttu-id="f74d5-131">本机视图</span><span class="sxs-lookup"><span data-stu-id="f74d5-131">Native view</span></span>
+## <a name="native-view"></a><span data-ttu-id="11296-132">原生視圖</span><span class="sxs-lookup"><span data-stu-id="11296-132">Native view</span></span>
 
-<span data-ttu-id="f74d5-132">本机查看器以本机格式显示文档的最准确视图。</span><span class="sxs-lookup"><span data-stu-id="f74d5-132">The Native viewer displays the most accurate view of a document in it's native format.</span></span> <span data-ttu-id="f74d5-133">本机视图支持数百种文件类型，旨在以尽可能真实的本机体验显示文档。</span><span class="sxs-lookup"><span data-stu-id="f74d5-133">Native view is supported for hundreds of file types and is meant to display documents in the truest native experience possible.</span></span> <span data-ttu-id="f74d5-134">对于 Microsoft Office 文件，本机查看器使用 Office 应用的 Web 版本。</span><span class="sxs-lookup"><span data-stu-id="f74d5-134">For Microsoft Office files, the Native viewer uses the web version of Office apps.</span></span> <span data-ttu-id="f74d5-135">这允许您查看内容，如不同 Office 文档中的注释、Excel 中的公式和隐藏行/列，以及 PowerPoint 中的"注释"视图。</span><span class="sxs-lookup"><span data-stu-id="f74d5-135">This allows you to view content such as comments in different Office documents, formulas and hidden rows/columns in Excel, and the Notes view in PowerPoint.</span></span>
+<span data-ttu-id="11296-133">原生檢視器會以原生格式顯示檔的最準確的視圖。</span><span class="sxs-lookup"><span data-stu-id="11296-133">The Native viewer displays the most accurate view of a document in it's native format.</span></span> <span data-ttu-id="11296-134">數百種檔案類型支援原生模式，其可讓您以 truest 原生體驗顯示檔。</span><span class="sxs-lookup"><span data-stu-id="11296-134">Native view is supported for hundreds of file types and is meant to display documents in the truest native experience possible.</span></span> <span data-ttu-id="11296-135">針對 Microsoft Office 檔案，原生檢視器會使用 web 版本的 Office 應用程式。</span><span class="sxs-lookup"><span data-stu-id="11296-135">For Microsoft Office files, the Native viewer uses the web version of Office apps.</span></span> <span data-ttu-id="11296-136">這可讓您在 Excel 中查看不同 Office 檔、公式和隱藏列/欄中的批註等內容，以及 PowerPoint 中的 [附注] 視圖。</span><span class="sxs-lookup"><span data-stu-id="11296-136">This allows you to view content such as comments in different Office documents, formulas and hidden rows/columns in Excel, and the Notes view in PowerPoint.</span></span>
 
-![<span data-ttu-id="f74d5-136">本机视图</span><span class="sxs-lookup"><span data-stu-id="f74d5-136">Native view</span></span>
-](media/Reviewimage3.png)
+![<span data-ttu-id="11296-137">原生視圖</span><span class="sxs-lookup"><span data-stu-id="11296-137">Native view</span></span>
+](../media/Reviewimage3.png)
 
-## <a name="text-view"></a><span data-ttu-id="f74d5-137">文本视图</span><span class="sxs-lookup"><span data-stu-id="f74d5-137">Text view</span></span>
+## <a name="text-view"></a><span data-ttu-id="11296-138">文字視圖</span><span class="sxs-lookup"><span data-stu-id="11296-138">Text view</span></span>
 
-<span data-ttu-id="f74d5-138">文本查看器提供文件提取文本的视图。</span><span class="sxs-lookup"><span data-stu-id="f74d5-138">The Text viewer provides a view of the extracted text of a file.</span></span> <span data-ttu-id="f74d5-139">它忽略任何嵌入的图像和格式，但如果您尝试快速查看和理解文档中的内容，此视图非常有用。</span><span class="sxs-lookup"><span data-stu-id="f74d5-139">It ignores any embedded images and formatting, but this view is very useful if you're trying to quickly review and understand the content in a document.</span></span> <span data-ttu-id="f74d5-140">文本视图还包括以下功能：</span><span class="sxs-lookup"><span data-stu-id="f74d5-140">Text view also includes these features:</span></span>
+<span data-ttu-id="11296-139">文字檢視器提供檔的解壓縮文字的視圖。</span><span class="sxs-lookup"><span data-stu-id="11296-139">The Text viewer provides a view of the extracted text of a file.</span></span> <span data-ttu-id="11296-140">它會忽略任何內嵌的圖像和格式設定，但是如果您嘗試快速查看並瞭解檔中的內容，此視圖會非常有用。</span><span class="sxs-lookup"><span data-stu-id="11296-140">It ignores any embedded images and formatting, but this view is very useful if you're trying to quickly review and understand the content in a document.</span></span> <span data-ttu-id="11296-141">文字視圖也包含下列功能：</span><span class="sxs-lookup"><span data-stu-id="11296-141">Text view also includes these features:</span></span>
 
-  - <span data-ttu-id="f74d5-141">行计数器，它便于引用文档的特定部分。</span><span class="sxs-lookup"><span data-stu-id="f74d5-141">A line counter, which makes it easier to reference specific portions of a document.</span></span>
+  - <span data-ttu-id="11296-142">行計數器，可讓您更輕鬆地參考檔的特定部分。</span><span class="sxs-lookup"><span data-stu-id="11296-142">A line counter, which makes it easier to reference specific portions of a document.</span></span>
 
-  - <span data-ttu-id="f74d5-142">搜索点击突出显示文档中以及滚动条上的突出显示字词</span><span class="sxs-lookup"><span data-stu-id="f74d5-142">Search hit highlighting that highlight terms in the document as well as on the scrollbar</span></span>
+  - <span data-ttu-id="11296-143">在檔中和捲軸上突出顯示字詞的搜尋順序醒目提示</span><span class="sxs-lookup"><span data-stu-id="11296-143">Search hit highlighting that highlight terms in the document as well as on the scrollbar</span></span>
 
-  - <span data-ttu-id="f74d5-143">差异视图提供比较视图，可在使用"**近重复"** 面板查看文档时突出显示文本差异。</span><span class="sxs-lookup"><span data-stu-id="f74d5-143">A diff view provides a comparison view that highlights the text differences when viewing documents using the **Near duplicates** panel.</span></span>
+  - <span data-ttu-id="11296-144">在使用 [**臨近重複**] 面板來查看檔時，比較視圖會提供比較視圖，以強調文字差異。</span><span class="sxs-lookup"><span data-stu-id="11296-144">A diff view provides a comparison view that highlights the text differences when viewing documents using the **Near duplicates** panel.</span></span>
 
-<span data-ttu-id="f74d5-144">**文本和滚动条中行计数器和搜索命中突出显示的示例**</span><span class="sxs-lookup"><span data-stu-id="f74d5-144">**Example of line counter and search hit highlighting in text and scrollbar**</span></span>
+<span data-ttu-id="11296-145">**文字和捲軸中的行計數器及搜尋順序醒目提示範例**</span><span class="sxs-lookup"><span data-stu-id="11296-145">**Example of line counter and search hit highlighting in text and scrollbar**</span></span>
 
-![<span data-ttu-id="f74d5-145">文本视图</span><span class="sxs-lookup"><span data-stu-id="f74d5-145">Text view</span></span>
-](media/Reviewimage4.png)
+![<span data-ttu-id="11296-146">文字視圖</span><span class="sxs-lookup"><span data-stu-id="11296-146">Text view</span></span>
+](../media/Reviewimage4.png)
 
-<span data-ttu-id="f74d5-146">**差异视图示例**</span><span class="sxs-lookup"><span data-stu-id="f74d5-146">**Example of the diff view**</span></span>
+<span data-ttu-id="11296-147">**Diff view 的範例**</span><span class="sxs-lookup"><span data-stu-id="11296-147">**Example of the diff view**</span></span>
 
-![<span data-ttu-id="f74d5-147">差异视图</span><span class="sxs-lookup"><span data-stu-id="f74d5-147">Diff view</span></span>
-](media/Reviewimage5.png)
+![<span data-ttu-id="11296-148">比較視圖</span><span class="sxs-lookup"><span data-stu-id="11296-148">Diff view</span></span>
+](../media/Reviewimage5.png)
 
-## <a name="annotate-view"></a><span data-ttu-id="f74d5-148">分名视图</span><span class="sxs-lookup"><span data-stu-id="f74d5-148">Annotate view</span></span>
+## <a name="annotate-view"></a><span data-ttu-id="11296-149">批註視圖</span><span class="sxs-lookup"><span data-stu-id="11296-149">Annotate view</span></span>
 
-<span data-ttu-id="f74d5-149">"分号"视图提供功能，允许您在审阅过程中对文档应用标记;这包括这些工具：</span><span class="sxs-lookup"><span data-stu-id="f74d5-149">The Annotate view provides features that allow you to apply markup on a document during the review process; this  includes these tools:</span></span>
+<span data-ttu-id="11296-150">[批註] 視圖提供的功能可讓您在審閱過程中對檔套用標記;這包括下列工具：</span><span class="sxs-lookup"><span data-stu-id="11296-150">The Annotate view provides features that allow you to apply markup on a document during the review process; this  includes these tools:</span></span>
 
-  - <span data-ttu-id="f74d5-150">**区域密文**– 您可以在文档上绘制隐藏敏感内容的不透明框。</span><span class="sxs-lookup"><span data-stu-id="f74d5-150">**Area redactions** – You can draw an opaque box on the document that hides sensitive content.</span></span>
+  - <span data-ttu-id="11296-151">**區域密文**–您可以在隱藏敏感內容的檔中繪製不透明的方塊。</span><span class="sxs-lookup"><span data-stu-id="11296-151">**Area redactions** – You can draw an opaque box on the document that hides sensitive content.</span></span>
 
-  - <span data-ttu-id="f74d5-151">**铅笔**– 您可以徒手绘制文档，以引起对内容某些部分的注意</span><span class="sxs-lookup"><span data-stu-id="f74d5-151">**Pencil** – You can free-hand draw on a document to bring attention to certain portions of the content</span></span>
+  - <span data-ttu-id="11296-152">**鉛筆**–您可以在檔上自由手繪出內容的某些部分，以引起注意</span><span class="sxs-lookup"><span data-stu-id="11296-152">**Pencil** – You can free-hand draw on a document to bring attention to certain portions of the content</span></span>
 
-  - <span data-ttu-id="f74d5-152">**选择批注**- 您可以在文档中选择和删除批注。</span><span class="sxs-lookup"><span data-stu-id="f74d5-152">**Select annotations** - You can select and delete annotations in a document.</span></span>
+  - <span data-ttu-id="11296-153">**選取批註**-您可以選取及刪除檔中的批註。</span><span class="sxs-lookup"><span data-stu-id="11296-153">**Select annotations** - You can select and delete annotations in a document.</span></span>
 
-  - <span data-ttu-id="f74d5-153">**切换注释透明度**- 您可以切换注释的透明度（在不透明和半透明之间），以便查看注释背后的内容。</span><span class="sxs-lookup"><span data-stu-id="f74d5-153">**Toggle annotation transparency** – You can toggle the transparency of annotations (between opaque and semi-transparent)so you can view the content behind the annotation.</span></span> <span data-ttu-id="f74d5-154">这包括切换铅笔注释和密文的透明度。</span><span class="sxs-lookup"><span data-stu-id="f74d5-154">This includes toggling the transparency of pencil annotations and redactions.</span></span>
+  - <span data-ttu-id="11296-154">**切換批註透明性**–您可以切換批註的透明度（介於不透明和半透明的情況之間），以便您可以查看批註背後的內容。</span><span class="sxs-lookup"><span data-stu-id="11296-154">**Toggle annotation transparency** – You can toggle the transparency of annotations (between opaque and semi-transparent)so you can view the content behind the annotation.</span></span> <span data-ttu-id="11296-155">這包括切換鉛筆批註和密文的透明度。</span><span class="sxs-lookup"><span data-stu-id="11296-155">This includes toggling the transparency of pencil annotations and redactions.</span></span>
 
-<span data-ttu-id="f74d5-155">"分页"视图还提供以下导航功能：</span><span class="sxs-lookup"><span data-stu-id="f74d5-155">The Annotate view also provides the following navigation functionality:</span></span>
+<span data-ttu-id="11296-156">[批註] 視圖也提供下列導覽功能：</span><span class="sxs-lookup"><span data-stu-id="11296-156">The Annotate view also provides the following navigation functionality:</span></span>
 
-  - <span data-ttu-id="f74d5-156">**上一页，\*\*\*\*下一页，** 和**转到页面**导航控件，用于多页文档。</span><span class="sxs-lookup"><span data-stu-id="f74d5-156">**Previous page**, **Next page**, and **Go to page** - Navigation controls to use for multi-page documents.</span></span>
+  - <span data-ttu-id="11296-157">**上一頁**、**下一頁**，然後移至多分頁檔使用的**頁面**導覽控制項。</span><span class="sxs-lookup"><span data-stu-id="11296-157">**Previous page**, **Next page**, and **Go to page** - Navigation controls to use for multi-page documents.</span></span>
 
-  - <span data-ttu-id="f74d5-157">**缩放**= 在"批号"视图中增加或减小文档的大小。</span><span class="sxs-lookup"><span data-stu-id="f74d5-157">**Zoom** – Increases or decreases the size of documents in Annotate view.</span></span>
+  - <span data-ttu-id="11296-158">**縮放**–以批註模式增加或減少檔案大小。</span><span class="sxs-lookup"><span data-stu-id="11296-158">**Zoom** – Increases or decreases the size of documents in Annotate view.</span></span>
 
-  - <span data-ttu-id="f74d5-158">**旋转**= 顺时针旋转文档。</span><span class="sxs-lookup"><span data-stu-id="f74d5-158">**Rotate** – Rotate documents clockwise.</span></span>
+  - <span data-ttu-id="11296-159">**旋轉**–順時針旋轉檔。</span><span class="sxs-lookup"><span data-stu-id="11296-159">**Rotate** – Rotate documents clockwise.</span></span>
 
-  - <span data-ttu-id="f74d5-159">**搜索**– 搜索文档中的关键字，然后使用"上一个"和"下一个"控件查看文档中的点击次数（突出显示）。</span><span class="sxs-lookup"><span data-stu-id="f74d5-159">**Search** – Search for keywords in a document, and then use Previous and Next controls to view the hits (which are highlighted) within the document.</span></span>
+  - <span data-ttu-id="11296-160">**搜尋**–搜尋檔中的關鍵字，然後使用 [上一個] 和 [下一步] 控制項來查看檔中的命中（高亮顯示）。</span><span class="sxs-lookup"><span data-stu-id="11296-160">**Search** – Search for keywords in a document, and then use Previous and Next controls to view the hits (which are highlighted) within the document.</span></span>
 
-<span data-ttu-id="f74d5-160">**批名视图示例**</span><span class="sxs-lookup"><span data-stu-id="f74d5-160">**Example of Annotate view**</span></span>
+<span data-ttu-id="11296-161">**批註視圖的範例**</span><span class="sxs-lookup"><span data-stu-id="11296-161">**Example of Annotate view**</span></span>
 
-![分名视图](media/Reviewimage1.png)
+![批註視圖](../media/Reviewimage1.png)
 
 > [!NOTE]
-> <span data-ttu-id="f74d5-162">注释应用于添加到证据集的文档副本。</span><span class="sxs-lookup"><span data-stu-id="f74d5-162">Annotations are applied to a copy of the document that was added to the evidence set.</span></span> <span data-ttu-id="f74d5-163">实时服务中的原始文档未作任何分号。</span><span class="sxs-lookup"><span data-stu-id="f74d5-163">The original documents in the live service aren't annotated.</span></span>
+> <span data-ttu-id="11296-163">將批註套用至已新增至證據集的檔副本。</span><span class="sxs-lookup"><span data-stu-id="11296-163">Annotations are applied to a copy of the document that was added to the evidence set.</span></span> <span data-ttu-id="11296-164">Live service 中的原始檔案沒有批註。</span><span class="sxs-lookup"><span data-stu-id="11296-164">The original documents in the live service aren't annotated.</span></span>
