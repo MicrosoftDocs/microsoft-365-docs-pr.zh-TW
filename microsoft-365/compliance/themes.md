@@ -1,5 +1,5 @@
 ---
-title: 佈景主題
+title: 主題-資料調查
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 4460faebf5bc138eb72e583c154ee6ee9d70c294
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 在資料調查過程中，請透過尋找常見的觀點或概念，使用主題來組織檔。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: e05210036ce2db0a06b6450a611908cf2de24f19
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080910"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034507"
 ---
-# <a name="themes"></a><span data-ttu-id="e9bbb-102">佈景主題</span><span class="sxs-lookup"><span data-stu-id="e9bbb-102">Themes</span></span>
+# <a name="themes"></a><span data-ttu-id="ce5ec-103">佈景主題</span><span class="sxs-lookup"><span data-stu-id="ce5ec-103">Themes</span></span>
 
-<span data-ttu-id="e9bbb-103">當有人會撰寫文件時，它們沒有選擇字詞隨機;他們嘗試傳達一些想法或概念，並會據以選擇字所組成。</span><span class="sxs-lookup"><span data-stu-id="e9bbb-103">When someone composes a document, they do not choose words randomly; they are trying to convey some ideas or concepts, and the words are chosen accordingly.</span></span> <span data-ttu-id="e9bbb-104">佈景主題模組叢集討論類似主旨事件，以便檢閱者可以更有效地進行經由文件的文件。</span><span class="sxs-lookup"><span data-stu-id="e9bbb-104">Themes modules clusters documents that discuss similar subject matters so that reviewers can be more efficient in going through documents.</span></span>
+<span data-ttu-id="ce5ec-104">當有人撰寫檔時，不會隨機播放任何字;他們會嘗試傳遞某些創意或概念，並據此選擇文字。</span><span class="sxs-lookup"><span data-stu-id="ce5ec-104">When someone composes a document, they do not choose words randomly; they are trying to convey some ideas or concepts, and the words are chosen accordingly.</span></span> <span data-ttu-id="ce5ec-105">主題模組會對討論類似主旨的檔進行分類，讓檢閱者可以更有效率地執行檔。</span><span class="sxs-lookup"><span data-stu-id="ce5ec-105">Themes modules clusters documents that discuss similar subject matters so that reviewers can be more efficient in going through documents.</span></span>
 
-## <a name="how-does-themes-work"></a><span data-ttu-id="e9bbb-105">佈景主題的運作方式？</span><span class="sxs-lookup"><span data-stu-id="e9bbb-105">How does Themes work?</span></span>
+## <a name="how-does-themes-work"></a><span data-ttu-id="ce5ec-106">主題如何運作？</span><span class="sxs-lookup"><span data-stu-id="ce5ec-106">How does Themes work?</span></span>
 
-<span data-ttu-id="e9bbb-106">佈景主題會分析文件以顯示所有文件的一般佈景主題剖析工作集合中的文字。</span><span class="sxs-lookup"><span data-stu-id="e9bbb-106">Themes analyzes documents with text in a working set to parse out common themes that appear across the documents.</span></span> <span data-ttu-id="e9bbb-107">然後，它將那些佈景主題指派給他們顯示的文件。</span><span class="sxs-lookup"><span data-stu-id="e9bbb-107">Then, it assigns those themes to the documents in which they appear.</span></span> <span data-ttu-id="e9bbb-108">它也標籤各有使用中的佈景主題的代表配合文件的文字。</span><span class="sxs-lookup"><span data-stu-id="e9bbb-108">It also labels each with words used in the documents that are representative of the theme.</span></span> <span data-ttu-id="e9bbb-109">文件可以是多個主題專家的相關，因為在許多情況下，文件會有多個指派給它的佈景主題。</span><span class="sxs-lookup"><span data-stu-id="e9bbb-109">Since a document can be about more than one subject matter, in many cases a document has more than one themes assigned to it.</span></span> <span data-ttu-id="e9bbb-110">最顯著出現在文件中的佈景主題會被指定為其主控項的佈景主題。</span><span class="sxs-lookup"><span data-stu-id="e9bbb-110">The theme that appears most prominently in a document is designated as its dominant theme.</span></span>
+<span data-ttu-id="ce5ec-107">主題會分析具有工作集中文字的檔，以分析顯示在檔中的一般主題。</span><span class="sxs-lookup"><span data-stu-id="ce5ec-107">Themes analyzes documents with text in a working set to parse out common themes that appear across the documents.</span></span> <span data-ttu-id="ce5ec-108">然後，它會將這些主題指派給他們顯示的檔。</span><span class="sxs-lookup"><span data-stu-id="ce5ec-108">Then, it assigns those themes to the documents in which they appear.</span></span> <span data-ttu-id="ce5ec-109">它也會標出每一種檔中所用的文字，代表主題。</span><span class="sxs-lookup"><span data-stu-id="ce5ec-109">It also labels each with words used in the documents that are representative of the theme.</span></span> <span data-ttu-id="ce5ec-110">因為檔可能多於一個主題，所以在許多情況下，會為檔指定一個以上的主題。</span><span class="sxs-lookup"><span data-stu-id="ce5ec-110">Since a document can be about more than one subject matter, in many cases a document has more than one themes assigned to it.</span></span> <span data-ttu-id="ce5ec-111">檔中顯示最醒目的主題是指定為其主要主題。</span><span class="sxs-lookup"><span data-stu-id="ce5ec-111">The theme that appears most prominently in a document is designated as its dominant theme.</span></span>

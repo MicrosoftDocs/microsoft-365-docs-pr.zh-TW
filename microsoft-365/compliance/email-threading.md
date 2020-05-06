@@ -1,5 +1,5 @@
 ---
-title: 電子郵件執行緒
+title: 電子郵件執行緒-資料調查
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,32 +15,33 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 423b3a4ebb00473a45122cf89d2810e6d7c1fc2d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 在管理資料調查時，電子郵件執行緒會分析電子郵件交談，並將每封郵件分隔成不同的類別。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 6cc466bf89187f292acd454fd8ca6efb05958d2b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074700"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035655"
 ---
-# <a name="email-threading"></a><span data-ttu-id="25dcc-102">電子郵件執行緒</span><span class="sxs-lookup"><span data-stu-id="25dcc-102">Email threading</span></span>
+# <a name="email-threading"></a><span data-ttu-id="eee71-103">電子郵件執行緒</span><span class="sxs-lookup"><span data-stu-id="eee71-103">Email threading</span></span>
 
-<span data-ttu-id="25dcc-103">請考慮有一段時間移電子郵件交談。</span><span class="sxs-lookup"><span data-stu-id="25dcc-103">Consider an email conversation that has been going on for a while.</span></span> <span data-ttu-id="25dcc-104">在大多數情況下，在執行緒上的最後一個電子郵件會包含所有上述的電子郵件; 的內容檢閱最後一個電子郵件將會提供執行緒上發生的交談的完整內容。</span><span class="sxs-lookup"><span data-stu-id="25dcc-104">In most cases, the last email on the thread will include the contents of all the preceding emails; reviewing the last email will give a complete context of the conversation that happened in the thread.</span></span> <span data-ttu-id="25dcc-105">電子郵件執行緒識別這類電子郵件，以便檢閱者可以檢閱收集文件的分數，而不會遺失任何內容。</span><span class="sxs-lookup"><span data-stu-id="25dcc-105">Email threading identifies such emails so that reviewers can review a fraction of collected documents without losing any context.</span></span>
+<span data-ttu-id="eee71-104">請考慮已有一段時間的電子郵件交談。</span><span class="sxs-lookup"><span data-stu-id="eee71-104">Consider an email conversation that has been going on for a while.</span></span> <span data-ttu-id="eee71-105">在大多數情況下，線索上的最後一封電子郵件會包含上述所有電子郵件的內容;檢查最後一個電子郵件將會提供執行緒中發生之談話的完整內容。</span><span class="sxs-lookup"><span data-stu-id="eee71-105">In most cases, the last email on the thread will include the contents of all the preceding emails; reviewing the last email will give a complete context of the conversation that happened in the thread.</span></span> <span data-ttu-id="eee71-106">電子郵件執行緒識別這類電子郵件，讓檢閱者可以在不遺失任何內容的情況下，審閱收集的檔數。</span><span class="sxs-lookup"><span data-stu-id="eee71-106">Email threading identifies such emails so that reviewers can review a fraction of collected documents without losing any context.</span></span>
 
-## <a name="what-does-email-threading-do"></a><span data-ttu-id="25dcc-106">電子郵件執行緒做什麼？</span><span class="sxs-lookup"><span data-stu-id="25dcc-106">What does email threading do?</span></span>
+## <a name="what-does-email-threading-do"></a><span data-ttu-id="eee71-107">電子郵件執行緒的功能為何？</span><span class="sxs-lookup"><span data-stu-id="eee71-107">What does email threading do?</span></span>
 
-<span data-ttu-id="25dcc-107">每個電子郵件和 desconstructs 電子郵件執行緒會剖析至個別郵件;每個電子郵件是個別郵件的鏈結之一。</span><span class="sxs-lookup"><span data-stu-id="25dcc-107">Email threading parses each email and desconstructs it to individual messages; each email is a chain of individual messages.</span></span> <span data-ttu-id="25dcc-108">然後，它會分析工作集至判斷一封電子郵件是否有獨特的內容，或如果鏈結完全不同的電子郵件中包含的所有電子郵件。</span><span class="sxs-lookup"><span data-stu-id="25dcc-108">Then, it analyzes all emails in the working set to determine whether an email has unique content or if the chain is wholly contained in a different email.</span></span> <span data-ttu-id="25dcc-109">在結尾的電子郵件會分成四種類別：</span><span class="sxs-lookup"><span data-stu-id="25dcc-109">In the end emails are divided into four categories:</span></span>
+<span data-ttu-id="eee71-108">電子郵件串接會分析每封電子郵件，並將它 desconstructs 至個別郵件;每封電子郵件都是個別郵件的鏈。</span><span class="sxs-lookup"><span data-stu-id="eee71-108">Email threading parses each email and desconstructs it to individual messages; each email is a chain of individual messages.</span></span> <span data-ttu-id="eee71-109">然後，它會分析所有工作集中的電子郵件，以判斷電子郵件是否有獨特的內容，或此鏈是否完全包含在不同的電子郵件中。</span><span class="sxs-lookup"><span data-stu-id="eee71-109">Then, it analyzes all emails in the working set to determine whether an email has unique content or if the chain is wholly contained in a different email.</span></span> <span data-ttu-id="eee71-110">在結束電子郵件中分為四個類別：</span><span class="sxs-lookup"><span data-stu-id="eee71-110">In the end emails are divided into four categories:</span></span>
 
-- <span data-ttu-id="25dcc-110">**Inclusive**： 最後一封電子郵件中的具有唯一的內容，且電子郵件的所有其他的內容完全包含此電子郵件中的電子郵件中所含的附件。</span><span class="sxs-lookup"><span data-stu-id="25dcc-110">**Inclusive**: the last message in the email has unique content, and the email has all of the attachments that were included in other emails of which the content is wholly contained in this email.</span></span>
+- <span data-ttu-id="eee71-111">**包含**：電子郵件中的最後一封郵件有唯一的內容，而且電子郵件中包含其他電子郵件中包含的所有附件，該內容完全包含在此電子郵件中。</span><span class="sxs-lookup"><span data-stu-id="eee71-111">**Inclusive**: the last message in the email has unique content, and the email has all of the attachments that were included in other emails of which the content is wholly contained in this email.</span></span>
 
 
-- <span data-ttu-id="25dcc-111">**減 Inclusive**： 最後一封電子郵件中的具有唯一的內容，但電子郵件並不包含一些其他的內容完全包含此電子郵件中的電子郵件中所含的附件。</span><span class="sxs-lookup"><span data-stu-id="25dcc-111">**Inclusive minus**: the last message in the email has unique content, but the email does not contain some of the attachments that were included in other emails of which the content is wholly contained in this email.</span></span>
+- <span data-ttu-id="eee71-112">**包括減號**：電子郵件中的最後一封郵件有唯一的內容，但是電子郵件不包含其他電子郵件中所包含的一些附件，此電子郵件中的內容已完全包含在此電子郵件中。</span><span class="sxs-lookup"><span data-stu-id="eee71-112">**Inclusive minus**: the last message in the email has unique content, but the email does not contain some of the attachments that were included in other emails of which the content is wholly contained in this email.</span></span>
 
-- <span data-ttu-id="25dcc-112">**內含的複本**： 完全相同的 [內含/內含減電子郵件複本</span><span class="sxs-lookup"><span data-stu-id="25dcc-112">**Inclusive copy**: an exact copy of an inclusive/inclusive minus email</span></span>
+- <span data-ttu-id="eee71-113">**包含副本**：含非獨佔/包含的負數電子郵件的確切副本</span><span class="sxs-lookup"><span data-stu-id="eee71-113">**Inclusive copy**: an exact copy of an inclusive/inclusive minus email</span></span>
 
-- <span data-ttu-id="25dcc-113">**None**： 這封電子郵件的內容完全包含至少一個電子郵件標示為 [內含/內含減號。</span><span class="sxs-lookup"><span data-stu-id="25dcc-113">**None**: The content of this email is wholly contained in at least one email that is marked as inclusive/inclusive minus.</span></span>
+- <span data-ttu-id="eee71-114">**None**：此電子郵件的內容全部包含在至少一個標記為包含/包含減號的電子郵件中。</span><span class="sxs-lookup"><span data-stu-id="eee71-114">**None**: The content of this email is wholly contained in at least one email that is marked as inclusive/inclusive minus.</span></span>
 
-## <a name="how-is-it-different-from-conversations-in-outlook"></a><span data-ttu-id="25dcc-114">如何是否不同於 Outlook 中的交談？</span><span class="sxs-lookup"><span data-stu-id="25dcc-114">How is it different from conversations in Outlook?</span></span>
-<span data-ttu-id="25dcc-115">一眼這聲音非常類似於 Outlook 中的交談群組。</span><span class="sxs-lookup"><span data-stu-id="25dcc-115">At a glance, this sounds very similar to conversation groupings in Outlook.</span></span> <span data-ttu-id="25dcc-116">不過，有一些重要的差別。</span><span class="sxs-lookup"><span data-stu-id="25dcc-116">However, there are some important distinctions.</span></span> <span data-ttu-id="25dcc-117">請考慮到兩個交談; got 分叉電子郵件交談比方說，有人回應電子郵件不是最新的交談中讓交談中的最後兩個電子郵件兩者都有唯一的內容。</span><span class="sxs-lookup"><span data-stu-id="25dcc-117">Consider an email conversation that got forked into two conversation; for instance, someone responded to an email that is not the latest in the conversation so the last two emails in the conversation both have unique content.</span></span>
+## <a name="how-is-it-different-from-conversations-in-outlook"></a><span data-ttu-id="eee71-115">它與 Outlook 中的交談有何不同？</span><span class="sxs-lookup"><span data-stu-id="eee71-115">How is it different from conversations in Outlook?</span></span>
+<span data-ttu-id="eee71-116">這聽起來很類似于 Outlook 中的交談群組。</span><span class="sxs-lookup"><span data-stu-id="eee71-116">At a glance, this sounds very similar to conversation groupings in Outlook.</span></span> <span data-ttu-id="eee71-117">不過，有一些重要的區別。</span><span class="sxs-lookup"><span data-stu-id="eee71-117">However, there are some important distinctions.</span></span> <span data-ttu-id="eee71-118">考慮從兩個交談中分叉的電子郵件交談;例如，某人回應的電子郵件並不是最新的交談，所以交談中的最後兩封電子郵件都有唯一的內容。</span><span class="sxs-lookup"><span data-stu-id="eee71-118">Consider an email conversation that got forked into two conversation; for instance, someone responded to an email that is not the latest in the conversation so the last two emails in the conversation both have unique content.</span></span>
 
-<span data-ttu-id="25dcc-118">Outlook 會仍組成群組加入單一對話; 電子郵件閱讀的最後一個電子郵件會表示缺少倒數第二個電子郵件，也包含唯一內容的內容。</span><span class="sxs-lookup"><span data-stu-id="25dcc-118">Outlook would still group the emails into a single conversation; reading only the last email would mean missing the context of the second-to-last email, which also contains unique content.</span></span> <span data-ttu-id="25dcc-119">因為電子郵件執行緒剖析出每封電子郵件到個別元件，並比較它們，電子郵件執行緒會將標記這兩個最後兩個電子郵件為 inclusives，確保，您就不會遺漏任何內容，只要讀取所有的電子郵件標示為 （含）。</span><span class="sxs-lookup"><span data-stu-id="25dcc-119">Because email threading parses out each email into individual components and compares them, email threading would mark both of the last two emails as inclusives, ensuring that you won't miss any context as long as you read all emails marked as inclusive.</span></span>
+<span data-ttu-id="eee71-119">Outlook 仍然會將電子郵件組合成單一交談;只閱讀最後一個電子郵件會丟失第二對最後一個電子郵件的內容，也就是包含唯一的內容。</span><span class="sxs-lookup"><span data-stu-id="eee71-119">Outlook would still group the emails into a single conversation; reading only the last email would mean missing the context of the second-to-last email, which also contains unique content.</span></span> <span data-ttu-id="eee71-120">因為電子郵件執行緒會將每封電子郵件剖析為個別元件，並加以比較，所以電子郵件執行緒會將最後兩封電子郵件都標示為 inclusives，以確保當您閱讀所有標記為包含的電子郵件時，不會漏掉任何內容。</span><span class="sxs-lookup"><span data-stu-id="eee71-120">Because email threading parses out each email into individual components and compares them, email threading would mark both of the last two emails as inclusives, ensuring that you won't miss any context as long as you read all emails marked as inclusive.</span></span>
