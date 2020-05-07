@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f1abc4d885a1d9a1d915bdf5492e3492dc4318a6
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 35f565eb9adb2283238a753fe5e46c208387afb0
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42363019"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066276"
 ---
 # <a name="web-content-accessibility-guidelines"></a>網頁內容協助工具指導方針
 
@@ -59,7 +59,3 @@ Microsoft 發行了 WCAG 報告，其中反映了完整產品或服務。 其通
 - [Office 365 協助工作中心](https://go.microsoft.com/fwlink/p/?linkid=2051801)：針對身心障礙使用者提供的 Office 365 資源。
 - [企業身心障礙人士 Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890)：針對我們的產品和服務或合規性有相關協助工具問題之企業客戶所提供的專用支援。
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf)。

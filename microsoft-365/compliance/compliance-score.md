@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性分數可協助組織簡化及自動化風險評估，並建議採取建議的動作以協助解決風險。
-ms.openlocfilehash: 507ff021095dfc0b18cffb6db313009c22ad2693
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 5fced1a9452f2345a678bfef670e1a19b9811e81
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046271"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140848"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft 合規性分數（預覽）
 
@@ -104,7 +104,7 @@ Microsoft 合規性分數是 Microsoft 365 規範中心的預覽功能，可協�
 
 ### <a name="templates"></a>範本
 
-合規性分數可提供預先設定的範本進行評估。 您也可以新增您自己的控制項和動作，以自訂預先設定的範本。 例如，您可以為商務程式控制建立範本，或為區域資料保護或符合性標準（其中一個預先設定的範本尚未涵蓋）建立範本。 透過將您自己的範本引入合規性分數，您不僅可以追蹤 Microsoft 雲端評估，還可以追蹤組織範圍內任何其他風險評估。
+合規性分數可提供預先設定的範本進行評估。 您也可以將自己的控制項和動作新增至預先設定的範本，以建立自訂評估。 例如，您可以為商務程式控制建立範本，或為區域資料保護或符合性標準（其中一個預先設定的範本尚未涵蓋）建立範本。 透過將您自己的範本引入合規性分數，您不僅可以追蹤 Microsoft 雲端評估，還可以追蹤組織範圍內任何其他風險評估。
 
 符合性分數的預先設定範本如下：
 

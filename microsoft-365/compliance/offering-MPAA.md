@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d6f817ed755237a49d792ca66f78977729c5d13f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 47aabfdff1973b3edff21c858d25c158ce39c6a7
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602160"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065634"
 ---
 # <a name="motion-picture-association-of-america-mpaa"></a>美國電影協會 (MPAA)
 
@@ -34,8 +34,6 @@ ms.locfileid: "41602160"
 MPAA 評定涵蓋通用指導方針的 48 個安全性主題，以及應用程式與雲端安全性指導方針的其他六個主題。 這些內容是建立在產業公認的安全性標準 (例如 ISO/IEC 27001 和 NIST 800-53) 之上，並且符合最佳做法 (例如雲端安全性聯盟 (CSA) 雲端控制基礎)。
 
 Azure 合規性的正式評定代表與主要工作室業務往來的公司能夠使用 Azure 來協助減少通常與安全架設、管理、儲存和發佈內容的 IT 成本，同時遵守 MPAA 需求。 Azure 媒體服務、儲存體、虛擬網路和其他超過 30 個服務，提供雲端中的內容工作流程引擎，比起傳統內部部署生產程序更加安全，且在保護媒體資產下游更加有效。
-
-了解 MPAA 在 Microsoft 雲端上的優點：[下載 MPAA 背景資料](https://aka.ms/mpaa-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -70,7 +68,3 @@ MPAA 指導方針提供主要工作室廠商和合作夥伴一組最佳做法，
 - [CSA STAR Azure 自我評定](https://www.microsoft.com/TrustCenter/Compliance/CSA-self-assessment)
 - [Azure 針對 CSA CAIQ v3.0.1 的回應](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/7/A/1/7A19B051-3399-4222-BEF1-E6E3E0A17961/MPAA_Backgrounder.pdf)。

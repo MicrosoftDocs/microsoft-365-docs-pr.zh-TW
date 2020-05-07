@@ -22,14 +22,21 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 在 FAQ 中尋找問題的答案以深入瞭解網域。
 ms.custom: okr_smb
-ms.openlocfilehash: 0b9b79c3cab74f4f809f0bd96ed5a51c17282ccd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 09e811b64def4d507a9d825f95b9d22f910669bb
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048158"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140746"
 ---
 # <a name="domains-faq"></a>網域常見問題集
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 本文包含有關 Office 365 中的網域的常見問題解答。
 

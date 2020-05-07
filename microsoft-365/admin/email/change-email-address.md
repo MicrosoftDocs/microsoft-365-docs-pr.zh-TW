@@ -24,16 +24,16 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: '將您的初始電子郵件地址變更為類似 tom@fourthcoffee.com 的易記電子郵件地址。 若要這麼做，您必須購買功能變數名稱，並將其新增至 Microsoft 365。 '
-ms.openlocfilehash: d419521210740cfa76a911cf0d66e7826ee8e626
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: baa2e49d98ed1d7b3de9af78b84403d028b4c91d
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629056"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053821"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>變更電子郵件地址以使用您的自訂網域
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 ::: moniker range="o365-worldwide"
 
@@ -53,7 +53,7 @@ ms.locfileid: "43629056"
 
 ::: moniker-end
 
-當您將網域的電子郵件變更為 Microsoft 365 時，當您在設定期間更新您網域的 MX 記錄時，所有傳送至該網域的電子郵件都會開始使用 Microsoft 365。 在您變更 MX 記錄之前，請確定已在 Microsoft 365 中新增使用者，並為已在您的網域上擁有電子郵件的所有人新增信箱。 不想將您網域中的每一個人的電子郵件移至 Microsoft 365 嗎？ 您可以[只使用一些電子郵件地址試驗 Microsoft 365 的](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx)步驟。
+當您將網域的電子郵件變更為 Microsoft 365 時，當您在設定期間更新您網域的 MX 記錄時，所有傳送至該網域的電子郵件都會開始使用 Microsoft 365。 在您變更 MX 記錄之前，請確定已在 Microsoft 365 中新增使用者，並為已在您的網域上擁有電子郵件的所有人新增信箱。 不想將您網域中的每一個人的電子郵件移至 Microsoft 365 嗎？ 您可以[只使用一些電子郵件地址試驗 Microsoft 365 的](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)步驟。
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 系統管理中心變更您的電子郵件地址以使用您的自訂網域
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e1bd69e7038ce3bf6372a3f53cd985ce54f350a8
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: 47e001fafedbdcaab6e1aa6365789bc309d9f65c
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781448"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065808"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 –171
 
@@ -49,7 +49,7 @@ NIST SP 800 –171的需求是 NIST SP 800-53 的子集（FedRAMP 使用的標�
 - Intune
 - [Office 365 美國政府社區雲端（GCC）、Office 365 GCC High 及 DoD](https://aka.ms/o365-compliance-framework)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 - [具有 NIST SP 800 –171的 Azure 政府規範證明](https://aka.ms/Azure-NIST-800-171)
 
@@ -76,7 +76,3 @@ NIST SP 800 –171的需求是 NIST SP 800-53 的子集（FedRAMP 使用的標�
 - [Microsoft 和 NIST Cybersecurity Framework](offering-nist-csf.md)
 - [Microsoft 政府雲端](https://www.microsoft.com/enterprise/government)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf )。

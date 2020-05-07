@@ -1,5 +1,5 @@
 ---
-title: 共用外部網站和檔案
+title: 外部共用網站和檔案
 f1.keywords: NOCSH
 ms.author: twerner
 author: twernermsft
@@ -20,14 +20,21 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: '瞭解如何與組織外部的人員共用網站和檔案。 '
-ms.openlocfilehash: c11526ee199cf097053489bb4ab8060dcb2c6bc9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e49cc84314b55f1aacfa47ab28916bae12132a3e
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628025"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139610"
 ---
-# <a name="share-sites-and-files-externally"></a>共用外部網站和檔案
+# <a name="share-sites-and-files-externally"></a>外部共用網站和檔案
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 若要與組織外部的人員進行共同作業，您可以在外部共用整個網站或特定檔案。 如果您想要直接設定共用，請選擇您要啟用的案例：
 
@@ -67,7 +74,7 @@ ms.locfileid: "43628025"
   
 2. 在開啟的頁面上，選擇使用者是否可以只與現有來賓共用、新的和現有的來賓或任何人共用。 
     
-3. 選取 **[儲存]**。
+3. 選取 [儲存]****。
     
 在組織層級啟用外部共用之後，您可以微調共用設定，以停用特定網站的外部共用。 如需詳細資訊，請參閱[開啟或關閉網站的外部共用](/sharepoint/change-external-sharing-site)。
   

@@ -1,5 +1,5 @@
 ---
-title: 自訂 Microsoft 365 使用情況分析中的報告
+title: 在 Microsoft 365 使用方式分析中自訂報告
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,134 +18,141 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
-description: 了解如何自訂報告中的瀏覽器和 Power BI Desktop。
-ms.openlocfilehash: 6e4bb6cf977607ca6e3b3f57240ac89dbd530e4f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 瞭解如何在瀏覽器和 Power BI Desktop 中自訂報告。
+ms.openlocfilehash: 4f0c85802ecb5db9c57add2fa6dd561827e8fa22
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355154"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140706"
 ---
-# <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>自訂 Microsoft 365 使用情況分析中的報告
+# <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>在 Microsoft 365 使用方式分析中自訂報告
 
-Microsoft 365 使用情況分析提供提供深入了解使用者如何採用及使用 Microsoft 365 的 Power BI 中的儀表板。 儀表板是只與使用狀況資料互動的起始點。 針對多個人化觀點便可自訂報表。
-  
-您也可以使用 Power BI desktop 以進一步自訂您的報表將它們連線至其他資料來源，以更豐富的深入了解貴公司的相關情形。
-  
-## <a name="customizing-reports-in-the-browser"></a>在瀏覽器中的自訂報告
+::: moniker range="o365-21vianet"
 
-下列兩個範例顯示如何修改現有 visual 以及如何建立新的視覺。
-  
-### <a name="modify-an-existing-visual"></a>修改現有 visual
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
-本範例會示範如何修改**啟用讀授權**報表中的 [**啟用**] 索引標籤。 
+::: moniker-end
+
+Microsoft 365 流量分析提供 Power BI 中的儀表板，可深入瞭解使用者採用和使用 Microsoft 365 的方式。 儀表板只是與使用狀況資料互動的起點。 您可以自訂報告，以獲得更多個人化洞察力。
   
-1. 內 [**啟用/授權**] 報告中，按一下 [**啟用**] 索引標籤。
-    
-2. 輸入的編輯模式]，即可透過頂端的 [**編輯**] 按鈕![Power BI 中更多的 [頁面] 按鈕](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)] 按鈕。 
-    
-    ![按一下 [編輯報表上最右邊的功能](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
+您也可以使用 Power BI 桌面來進一步自訂報告，方法是將其連線至其他資料來源，以深入瞭解您的企業。
   
-3. 在右上方，按一下 [**複製此頁面**。
-    
-    ![選擇 [複製此頁面](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
+## <a name="customizing-reports-in-the-browser"></a>在瀏覽器中自訂報告
+
+下列兩個範例示範如何修改現有的視覺效果，以及如何建立新的視覺效果。
   
-4. 在右底端，按一下 [顯示例如 Android、 iOS、 Mac OS 為基礎的使用者啟用計數橫條任何的圖等等。
+### <a name="modify-an-existing-visual"></a>修改現有的視覺效果
+
+此範例顯示如何在**啟用/授權**報告中修改 [**啟用**] 索引標籤。 
+  
+1. 在 [**啟用/授權**] 報告中，按一下 [**啟用**] 索引標籤。
     
-5. 在 [**視覺效果**區域右邊，才能移除 visual **Mac 計數**，請按一下在其旁邊的**X** 。
+2. 按一下上方的 [**編輯**] 按鈕，然後按一下 [Power BI ![ ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) ] 按鈕中的 [其他頁面] 按鈕，以進入編輯模式。 
+    
+    ![按一下右上方導覽中的 [編輯報告]](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
+  
+3. 在右上方，按一下 [**複製此頁面**]。
+    
+    ![選擇 [複製此頁面]](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
+  
+4. 在右下方，按一下顯示根據 OS （如 Android、iOS、Mac 等等）啟動之使用者計數的任何橫條圖。
+    
+5. 在右側的**視覺化**區域中，若要從 visual 中移除**Mac 計數**，請按一下其旁邊的**X** 。
 
     ![移除 Mac 計數](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
     
 ### <a name="create-a-new-visual"></a>建立新的視覺
 
-下列範例會示範如何建立新視覺上每月付款追蹤 Yammer 的新使用者。
+下列範例顯示如何建立新的視覺效果，以每月追蹤新的 Yammer 使用者。
   
-1. 移至**產品使用情況**報表使用左側的導覽中，按一下 [ **Yammer** ] 索引標籤上。
+1. 使用左導覽，然後按一下 [ **Yammer** ] 索引標籤移至 [**產品使用方式**] 報告。
     
-2. 切換至編輯模式]，即可在![Power BI 中更多的 [頁面] 按鈕](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)及**編輯**。 
+2. 按一下 Power BI ![ ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)和**edit**中的 [更多頁面] 按鈕，切換至編輯模式。 
     
-3. 在頁面底部，按一下 [ ![Power BI 中的 [新增頁面] 按鈕](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 若要建立新的頁面。
+3. 在頁面底部，按一下 ![Power BI 中的 [新增頁面] 按鈕](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 以建立新的頁面。
   
-4. 在右側的 [**視覺效果**] 區域中，按一下 [**堆疊橫條圖**（上方的列，第一次從左）。
+4. 在右側的 [**視覺化效果**] 區域中，按一下 [**堆疊橫條圖**（第一列，從左開始）]。
 
     ![選取橫條圖](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
     
-5. 按一下 [右下方的視覺效果，然後拖曳以使其變大。
+5. 按一下該視覺化效果的右下方，並拖曳以放大。
 
-6. 在右邊**欄位**] 區域中，依序展開 [**行事曆**表格。
+6. 在右側的 [**欄位**] 區域中，展開 [行事**曆**] 表格。
 
-7. 將**MonthName**拖曳至 [欄位] 區域中，正下方的**視覺效果**區域中的**座標軸**標題。
+7. 將**MonthName**拖曳至 [欄位] 區域，其位於**視覺化**區域的 [**座標軸**] 標題下方。
  
-    ![拖曳的月份名稱](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
+    ![拖曳月份名稱](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
     
-8. 在右邊**欄位**] 區域中，展開 [ **TenantProductUsage**資料表。
+8. 在右側的 [**欄位**] 區域中，展開 [ **TenantProductUsage** ] 表格。
 
-9. 將**FirstTimeUsers**拖曳至 [欄位] 區域中，[**值**] 標題的正下方。
+9. 將**FirstTimeUsers**拖曳至 [欄位] 區域，直接在**值**標題下方。
 
-10. 將 [**產品**] 拖曳至 [**篩選**] 區域中，正下方**視覺化層級篩選**標題。
+10. 將**產品**拖曳至 [**篩選**] 區域，直接在 [**視覺層級篩選**] 標題下。
 
-11. 在出現 [**篩選器類型**] 區域中，選取 [ **Yammer** ] 核取方塊。
+11. 在出現的 [**篩選類型**] 區域中，選取 [ **Yammer** ] 核取方塊。
 
-    ![選取 [Yammer] 核取方塊](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![選取 Yammer 核取方塊](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. 正下方的視覺效果清單中，按一下 [**格式**] 圖示![Power BI Visualizaions 中的 [格式] 圖示](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)。
+12. 在視覺效果的清單下方，按一下 [ **Format** Power BI ![Visualizaions](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)] 中的格式圖示格式圖示。
 
-13. 展開標題及**每月**的第一次 Yammer 使用者變更的**標題文字**值。
+13. 按月，展開 [標題]，然後將 [**標題] 文字**值變更為 [**第一次 Yammer] 使用者**。
     
-14. 變更**文字大小**] 值為**12**。
+14. 將**文字大小**值變更為**12**。
     
-15. 編輯上右下方的名稱，以變更新網頁的標題。
+15. 在右下方編輯頁面名稱，以變更新頁面的標題。
 
-16.  儲存出 report 按一下在 [**閱讀] 檢視**在上方，然後**儲存**。
+16.  按一下頂端的 [**閱讀檢視**]，然後按一下 [**儲存**] 來儲存報告。
     
-## <a name="customizing-the-reports-in-power-bi-desktop"></a>自訂報告在 Power BI Desktop
+## <a name="customizing-the-reports-in-power-bi-desktop"></a>自訂 Power BI Desktop 中的報表
 
-對於大多數的客戶在修改的報告和 Power BI web 中的圖表視覺效果會足夠。 針對某些不過，有可能會需要加入此資料與其他資料來源，以獲得更豐富的觀點關聯式自己商務版，在此情況下他們可以自訂，並建置使用 Power BI Desktop 其他報告。 您可以免費下載[Power BI Desktop](https://go.microsoft.com/fwlink/p/?linkid=849797) 。 
+大多數客戶在 Power BI web 中修改報告和圖表視覺效果的情況都會夠用。 在某些情況下，您可能需要將此資料與其他資料來源結合，以獲得更深入的業務相關內容，在這種情況下，他們可以使用 Power BI Desktop 自訂及建立其他報告。 您可以免費下載[POWER BI desktop](https://go.microsoft.com/fwlink/p/?linkid=849797) 。 
   
-### <a name="use-the-reporting-apis"></a>使用報告 Api
+### <a name="use-the-reporting-apis"></a>使用報表 APIs
 
-您可以啟動直接連線至報告 Api 從 Microsoft 365 ODATA 該 power 這些報告。
+您可以開始直接連線至 Microsoft 365 的 ODATA 報告 APIs，以加上這些報告。
   
-1. 若**要取得的資料**移\>**其他** \> **ODATA 摘要** \> **連線**。
+1. 移至 [**取得資料** \> ]**其他** \> **ODATA** \>摘要**Connect**。
     
-2. 在 [URL] 視窗中輸入 「 https://<i></i>reports.office.com/pbi/v1.0/\<tenantid\>」
+2. 在 [URL] 視窗中，<i></i>輸入\<"\>HTTPs://reports.office.com/pbi/v1.0/tenantid"
     
-    **附註：** 報表 Api 是在預覽中並受限於變更，直到使用者移至實際執行環境。 
+    **附注：** 報告 APIs 是在預覽中，且在實際執行之前必須變更。 
   
-    ![OData 摘要的 Power BI desktop URL](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
+    ![OData Power BI desktop 的摘要 URL](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
   
-3. 輸入您 Microsoft 365 （公司或學校） 系統管理員的認證來驗證 Microsoft 365 出現提示時。
+3. 當系統提示時，請輸入您的 Microsoft 365 （組織或學校）系統管理員認證，以向 Microsoft 365 驗證。
     
-    請參閱[常見問題集](usage-analytics.md#faq)的誰可以存取 Microsoft 365 採用範本應用程式報告的詳細資訊。 
+    如需允許存取 Microsoft 365 採用範本應用程式報告之使用者的詳細資訊，請參閱[FAQ](usage-analytics.md#faq) 。 
     
-4. 一旦連線獲得授權，您會看到顯示可連線至資料集的導覽視窗。
+4. 連線授權後，您將會看到 [Navigator] 視窗，顯示可供連線的資料集。
     
-    選取 [全部，然後按一下 [在**載入**。
+    選取 [全部]，然後按一下 [**載入**]。
     
-    這會下載資料至 Power BI 桌面上。 儲存檔案，然後您就可以開始建立所需的報表。
+    這會將資料下載到您的 Power BI Desktop。 儲存此檔案，然後您就可以開始建立所需的報告。
     
-    ![可用的報告 API 中的 ODATA 值](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
+    ![報告 API 中可用的 ODATA 值](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
   
 ### <a name="use-the-microsoft-365-usage-analytics-template"></a>使用 Microsoft 365 流量分析範本
 
-您也可以使用做為起點連接到資料會對應至 Microsoft 365 使用情況分析報告的 Power BI 範本檔案。 使用的 pbit 檔案的優點是它具有已建立的連接字串。 您也可以利用所有的自訂措施所建立的基底結構描述會傳回，並在其上建置的進一步資料。
+您也可以使用與 Microsoft 365 使用方式分析報告對應的 Power BI 範本檔案，作為連接至資料的起點。 使用 pbit 檔案的優點是已建立連接字串。 您也可以利用基礎架構傳回的資料與基礎架構傳回的所有自訂量值，並進一步加以建立。
   
-您可以下載 Power BI 範本檔案從 Microsoft 下載中心從[下載中心](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)。 下載後的 Power BI 範本檔案請遵循下列步驟以開始：
+您可以從[下載中心](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)從 Microsoft 下載中心下載 Power BI 範本檔案。 下載 Power BI 範本檔案之後，請遵循下列步驟開始執行：
   
-1. 開啟的 pbit 檔案。
+1. 開啟 pbit 檔案。
     
-2. 在對話方塊中輸入您的租用戶識別碼值。
+2. 在對話方塊中輸入您的租使用者識別碼值。
     
-    ![輸入您的租用戶識別碼，若要開啟的 pbit 檔案](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
+    ![輸入您的租使用者識別碼，以開啟 pbit 檔案](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
   
-3. 輸入您的系統管理員認證來驗證 Microsoft 365 出現提示時。
+3. 當系統提示時，請輸入您的系統管理員認證以驗證 Microsoft 365。
     
-     如需有關誰允許存取 Microsoft 365 使用情況分析報告。 
+     以取得允許存取 Microsoft 365 使用方式分析報告之使用者的詳細資訊。 
     
-    授權之後，在 Power BI 檔案將會重新整理資料。
+    授權後，就會在 Power BI 檔案中重新整理資料。
     
-    資料負載可能需要一些時間，完成之後，您可以將檔案儲存為.pbix 檔案，並繼續進行自訂報告或其他資料來源帶入這份報告。
+    資料負載可能需要一些時間，完成後，您可以將檔案儲存為 .pbix 檔案，繼續自訂報告或將額外的資料來源帶入此報告。
     
-4. 請遵循[開始使用 Power BI](https://go.microsoft.com/fwlink/?linkid=849802)說明文件，以了解如何建立報表、 發佈到 Power BI 服務，並與您的組織共用。 下列自訂及共用的路徑，可能需要額外的 Power BI 授權。 請參閱 Power BI 的[授權指引](https://go.microsoft.com/fwlink/p/?linkid=849803)的詳細資訊。 
+4. 遵循[POWER bi 檔快速](https://go.microsoft.com/fwlink/?linkid=849802)入門，以瞭解如何建立報表、將其發佈至 Power BI 服務，以及與您的組織共用。 請遵循此路徑進行自訂和共用，可能需要額外的 Power BI 授權。 如需詳細資訊，請參閱 Power BI[授權指南](https://go.microsoft.com/fwlink/p/?linkid=849803)。 
     
 

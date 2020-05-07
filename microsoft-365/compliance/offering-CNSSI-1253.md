@@ -1,6 +1,6 @@
 ---
-title: 委員會上國民身分安全性系統指令 [否]。 1253 (CNSSI 1253)
-description: Azure 政府版遵守美國政府版系統需要高機密性、 高完整性和高可用性的 CNSSI 1253 安全性控制。
+title: 全國安全性系統的委員會說明否。 1253（CNSSI 1253）
+description: Azure 政府針對需要高機密性、高完整性和高可用性的政府系統，遵循 CNSSI 1253 的安全性控制。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
@@ -14,62 +14,58 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f65baf936e83e4f5128f207a82bce50100cd58b2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 59bb5fd9e692cc5c69a4baf1cdc14cc200dba7a6
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602590"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066266"
 ---
-# <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>委員會上國民身分安全性系統指令 [否]。 1253 (CNSSI 1253)
+# <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>全國安全性系統的委員會說明否。 1253（CNSSI 1253）
 
-## <a name="about-cnss-instruction-1253"></a>關於 CNSS 指令 1253
+## <a name="about-cnss-instruction-1253"></a>關於 CNSS 指令1253
 
-委員會國民身分安全性系統 (CNSS) 是設定為我們政府部門國民身分 cybersecurity 原則和行政機關服務業組織。 [CNSS 指令否 1253](https://www.dss.mil/Portals/69/documents/io/rmf/CNSSI_No1253.pdf)，」 安全性分類和控制項選取範圍的國民身分安全性系統，「 聯邦機構應套用至分類國家的安全性資訊和適當的安全性層級的系統的安全性標準提供指導。  
+全國安全性系統（CNSS）上的委員會是一個政府組織，可為美國政府部門和代理商設定國家 cybersecurity 原則。 [CNSS 指令不是 1253](https://www.dss.mil/Portals/69/documents/io/rmf/CNSSI_No1253.pdf)，「地區安全性系統的安全性分類及控制選取範圍」會提供聯邦機關應套用的安全性標準的指導方針，以適當的安全性層級將國家安全性資訊和系統分類。  
   
-CNSSI 1253 基礎 NIST SP 800-53，提供控制基準的 FedRAMP 高授權。 有，不過，有些重要差異 CNSSI 1253 和 NIST 出版物。  
+CNSSI 1253 是在 NIST SP 800-53 上建立，可提供 FedRAMP 高授權的控制基準。 不過，CNSSI 1253 和 NIST 出版物之間有一些重要差異。  
   
-例如，CNSSI 1253 方法明確定義的機密性、 完整性和可用性與安全性控制，關聯性，並以精簡安全性控制覆疊用於國民身分安全性社群。 CNSS 使用不同的低、 中型與高分類每個這些三種安全性方針。 這會導致分類，例如 Moderate Moderate 低 — 中等機密性、 中等完整性和低可用性。 CNSSI 1253 接著會為使用中的控制項 NIST SP 800-53 每個可能的系統分類提供適當的安全性基準線。
+例如，CNSSI 1253 方法會明確定義與安全性控制的機密性、完整性和可用性的關聯性，並精煉全國安全性群組的安全性控制覆蓋使用。 CNSS 針對這三個安全性目標，使用個別的低、中、高類別。 這會產生如下類別的分類：適中-適中-低-適中的機密性、適中的完整性及低可用性。 CNSSI 1253 然後使用 NIST SP 800-53 中的控制項，為每個可能的系統分類提供適當的安全性基準。
 
 ## <a name="microsoft-and-cnssi-1253"></a>Microsoft 和 CNSSI 1253
 
-FedRAMP 核准協力廠商評估組織 (3PAO) Kratos SecureInfo 獨立已經驗證合規性的 Microsoft Azure 政府版系統與 CNSSI 1253 高高高基準線。 Kratos SecureInfo 驗證 CNSSI 1253 安全性評估報告 （特別行政區） 的 Azure 政府版提供約定中安全性評估計劃 (SAP) 適用的安全性控制的完整評定。 特別行政區文件對其進行驗證 Azure 政府 CNSSI 1253 安全性控制的系統需要高機密性、 高完整性和高可用性的選取範圍進行測試。  
+FedRAMP 核准的協力廠商評定組織（3PAO），Kratos SecureInfo，已獨立驗證具有 CNSSI 1253 高高基準的 Microsoft Azure 政府系統的合規性。 Kratos SecureInfo 會證實 Azure 政府的 CNSSI 1253 安全性評估報告（SAR）可以完整地評估安全性評估計畫（SAP）中適用的安全性控制 stipulated。 SAR 檔針對需要高機密性、高完整性和高可用性之系統的 CNSSI 1253 安全性控制，針對驗證 Azure 政府所進行的測試。  
   
-Azure 政府版目前擁有高暫時性 FedRAMP 的授權操作 (P ATO) 聯合授權版 (JAB) 和部門的防禦暫時性授權 (PA) 位於影響的雲端運算安全性層級 5 所發出的需求指南 (準則 SRG)。 使用這些授權，Kratos SecureInfo 分析已測試來判斷前次評估之安全性控制哪些其他 CNSSI 1253 安全性控制進行測試以確保與 CNSSI 1253 高高高基準合規性。 Kratos SecureInfo 檢查辨識項進行驗證成功實作 43 適用的安全性控制的座談並發佈 CNSSI 1253 特別行政區其完整測試的結果。  
+Azure 政府目前擁有 FedRAMP 高的臨時授權，可執行由聯合授權委員會（JAB）所發出的處理（P-ATO），以及雲端運算安全性需求指南（SRG）中影響層級5的國防臨時授權（PA）。 在使用這些授權時，Kratos SecureInfo 會分析先前評估中已測試的安全性控制，以判斷要測試的其他 CNSSI 1253 安全性控制，以確保符合 CNSSI 1253 高高的基準。 Kratos SecureInfo 會檢查證據並進行面試，以驗證是否成功實施43適用的安全性控制，並在 CNSSI 1253 SAR 中發佈其完整測試的結果。  
   
-合規性的 Azure 政府版與 Azure 可提供公共部門客戶在美國境內 services 相容的豐富陣列與 CNSSI 1253，讓他們能獲益從節省成本和嚴格的繁重 CNSSI 1253 需求方法Microsoft 雲端的安全性。
+遵守苛刻的 CNSSI 1253 需求的 Azure 政府規範表示，Azure 可以提供美國的公開服務陣列與 CNSSI 1253 相容，讓他們能夠從 Microsoft 雲端的成本節約和嚴格安全性中受益。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-- [Azure 政府版](https://aka.ms/AzureCompliance)
+- [Azure 政府](https://aka.ms/AzureCompliance)
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
-Azure 政府 CNSSI 1253 attestation 的合規性 CNSSI 1253 高高高基準
+Azure 政府 CNSSI 1253 與 CNSSI 1253 高高基準的相容性證明
 
 ## <a name="how-to-implement"></a>實作方法
 
-- [Azure 政府版文件](https://docs.microsoft.com/azure/azure-government/)： 教學課程和 how-to 指南，協助開發人員部署及管理服務使用 Azure 政府版。
+- [Azure 政府檔](https://docs.microsoft.com/azure/azure-government/)：教學課程和操作方法指南可協助開發人員使用 Azure 政府部署及管理服務。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-**若要對象沒有 CNSSI 1253 套用？**
+**CNSSI 1253 適用于哪些專案？**
 
-客戶與國家安全性系統 (NSS) 必須遵守 CNSSI 1253 需求和控制項。
+具有全國安全性系統（NSS）的客戶必須遵守 CNSSI 1253 的需求和控制措施。
 
-**針對 CNSSI 1253 安全性控制經過測試的 Azure 環境？**
+**哪些 Azure 環境已針對 CNSSI 1253 安全性控制進行測試？**
 
-Azure 政府版 （FedRAMP 套件識別碼 F1603087869） 皆已測試一次這些控制項。
+Azure 政府（FedRAMP 套件識別碼 F1603087869）已再次測試這些控制項。
 
 ## <a name="resources"></a>資源
 
-- [什麼是 Azure 政府版？](https://docs.microsoft.com/azure/azure-government/documentation-government-welcome)
-- [Azure 政府版](https://aka.ms/Azure-Government)
+- [何謂 Azure 政府？](https://docs.microsoft.com/azure/azure-government/documentation-government-welcome)
+- [Azure 政府](https://aka.ms/Azure-Government)
 - [Microsoft 和 FedRAMP](offering-fedramp.md)
-- [Microsoft 和 DoD 暫時性的授權](offering-DoD-DISA-L2-L4-L5.md)
+- [Microsoft 和 DoD 的臨時授權](offering-DoD-DISA-L2-L4-L5.md)
 - [Microsoft 政府雲端](https://www.microsoft.com/enterprise/government)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf)。

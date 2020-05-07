@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7a0dfc1b03099d52255f2e474ba8d99c2ea3a2cb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a305c66aaa3359417bd72b8525ed63787d655f8f
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602150"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065678"
 ---
 # <a name="multi-tier-cloud-security-mtcs-standard-for-singapore"></a>新加坡多層雲端安全性 (MTCS) 標準
 
@@ -41,8 +41,6 @@ MTCS 是第一個具有不同安全性層級的雲端安全性標準，因此，
 經 MTCS 認證機構進行嚴格評估，Microsoft 雲端服務獲得了所有三個服務分類的 MTCS 584:2013 認證 — 基礎結構即服務 (IaaS)、平台即服務 (PaaS) 和軟體即服務 (SaaS)。 Microsoft 是第一個在所有三個分類中獲得此認證的全球 CSP。
 
 授予了 Microsoft Azure 服務 (IaaS 和 PaaS)、Microsoft Dynamics 365 服務 (SaaS) 和 Microsoft Office 365 服務 (SaaS) 層級 3 的認證。 層級 3 認證表示範圍內 Microsoft 雲端服務能夠以最嚴格的安全性需求來託管受監管組織的高度影響力資料。 新加坡政府必須實作某些雲端解決方案。
-
-了解 Microsoft Cloud 上 MTCS 的優點：[下載適用於新加坡背景的 MTCS 標準](https://aka.ms/mtcs-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -105,7 +103,3 @@ MTCS 共有 535 個控制措施，涵蓋三個安全性層級：
 - [新加坡安全性與隱私權需求中的 Azure 合規性](https://aka.ms/azurecompliancesingapore)
 - [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/3/1/A/31AA4618-A5AE-4013-832B-C7A23CEBC26E/MCTS_Compliance_Backgrounder.pdf)。

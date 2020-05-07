@@ -1,6 +1,6 @@
 ---
-title: 美國 DoE 10 CFR 組件 810
-description: 受到美國 DoE 10 CFR 組件 810 匯出控制需求的客戶可以使用 Azure 政府版。
+title: US DoE 10 CFR Part 810
+description: 受限於 US DoE 10 CFR Part 810 之出口控制需求的客戶可以使用 Azure 政府。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
@@ -14,61 +14,57 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f9054c164efa340b489de917fb820e0460123df5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b34babe60781858b85a3c76280c2126094442851
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601970"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066436"
 ---
-# <a name="us-doe-10-cfr-part-810"></a>美國 DoE 10 CFR 組件 810
+# <a name="us-doe-10-cfr-part-810"></a>US DoE 10 CFR Part 810
 
-## <a name="microsoft-and-doe-10-cfr-part-810"></a>Microsoft 和 DoE 10 CFR 組件 810
+## <a name="microsoft-and-doe-10-cfr-part-810"></a>Microsoft 和 DoE 10 CFR Part 810
 
-Microsoft Azure 政府版可協助支援受到美國部門的能源 (DoE) 10 的匯出控制需求的客戶 CFR 組件 810 到兩個授權：
+Microsoft Azure 政府可以透過兩個授權，協助客戶支援受限於 US 公司能源（DoE） 10 CFR Part 810 之出口控制需求的客戶：
 
-- FedRAMP 高暫時性授權操作 (P ATO) 發出的聯合授權版 (JAB)
-- 層級 4 和 5 暫時性的授權從國防部 (DoD) 防禦資訊系統局
+- FedRAMP 的高臨時授權，用以運作（P-ATO）由聯合授權委員會（JAB）發出
+- 國防（DoD）國防資訊系統代理商的第4層和第5級臨時授權
 
-FedRAMP 提供適當的基準，可提供 Azure 政府版提供核心基礎結構和虛擬化技術和服務，例如 compute、 儲存及網路採用嚴格 NIST 控制項設計的保證。 這些協助符合客戶資料區隔需求，以及協助讓客戶的內部部署環境的安全連線。
+FedRAMP 提供適當的基準，讓 Azure 政府能夠提供核心基礎結構和虛擬化技術，以及以嚴格 NIST 控制為設計之網路的服務，例如計算、儲存和網路。 這些協助可滿足客戶資料分隔需求，並協助您啟用與客戶內部部署環境的安全連線。
 
-此外，Azure 政府版是實體分隔從 Azure 雲端美國政府社群雲端。 它提供其他保證有關特定背景檢測需求 US government，包括限制存取資訊的特定控制項和系統以遮蔽美國公民 Azure 操作人員之間。
+此外，Azure 政府是一種以實際方式與 Azure 雲端分開的美國政府社區雲端。 它會為美國政府提供其他有關特定背景遮罩需求的保證，包括限制存取訊號和系統以在 Azure 作業人員間對 US 公民進行篩選的特定控制項。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-- [Azure 政府版](https://aka.ms/AzureCompliance)
+- [Azure 政府](https://aka.ms/AzureCompliance)
 - Intune
 
 ## <a name="how-to-implement"></a>實作方法
 
-- [NERC CIP 標準 & 雲端運算](https://aka.ms/AzureNERC)： 指導電子公用程式並註冊實體部署 Azure 或 Azure Government 上的工作負載。
+- [NERC CIP 標準 & Cloud 計算](https://aka.ms/AzureNERC)：在 Azure 或 azure 政府上部署工作負載的電氣公用程式及已註冊實體的指導方針。
 
-## <a name="about-doe-10-cfr-part-810"></a>關於 DoE 10 CFR 組件 810
+## <a name="about-doe-10-cfr-part-810"></a>關於 DoE 10 CFR Part 810
 
-美國部門的能源 (DoE) 匯出控制[10 CFR 組件 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf)管理分類核子技術及協助匯出的規定。 它可以協助確保從美國匯出核子技術，用於僅供和平之。 修訂的組件 810 （最後一個規則） 採用效果在 2015 年 3 月，以及由[國民身分核子安全性管理](https://www.energy.gov/nnsa/national-nuclear-security-administration)管理。 區段 810.6 會指出特定 DoE 授權是需要同時佈建的協助和傳輸的機密核子技術 」 通常授權，「 以及那些需要特定授權 （例如尋求協助涉及敏感核子技術，例如豐富和最粗水災實際執行）。
+US （DoE） export control control 規章[10 CFR part 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf)管理未分類的核技術及協助出口。 協助確保從美國出口的核技術只會用於 peaceful 目的。 修改後的部分810（最終規則）會在3月2015內生效，並由[國家核安全性管理](https://www.energy.gov/nnsa/national-nuclear-security-administration)所管理。 Section 810.6 針對「一般授權」的敏感核技術的提供，以及需要特定授權的機密技術（例如，如豐富和厚水生產等機密核技術的協助），都需要特定的 DoE 授權。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-**執行動作會套用至 Azure 政府版 10 CFR 組件 110 法規的美國核子法規委員會？**
+**10 CFR Part 110 規章的美國核法規傭金是否適用于 Azure 政府？**
 
-否。 [美國核子法規委員會](https://www.nrc.gov/)(NRC) 規定了[匯出和匯入](https://www.nrc.gov/about-nrc/ip/export-import.html)核子設施和相關的設備和[10 CFR 組件 110](https://www.nrc.gov/reading-rm/doc-collections/cfr/part110/)底下的材料。 NRC 不會規定核子技術和全都 DoE 管轄這些項目相關的協助。 因此，NRC 10 CFR 組件 110 法規不會套用至 Azure 政府版。
+否。 [美國核法規傭金](https://www.nrc.gov/)（NRC）會將核設施和相關的設備及材料的[出口和](https://www.nrc.gov/about-nrc/ip/export-import.html)匯入[10 CFR part 110](https://www.nrc.gov/reading-rm/doc-collections/cfr/part110/)。 NRC 不會控制與 DoE 司法轄區底下的各項相關的核技術及協助。 因此，NRC 10 CFR Part 110 規章不適用於 Azure 政府。
 
-**如何提供證據 I 'm 遵守 DoE 10 CFR 組件 810？**
+**如何提供遵循 DoE 10 CFR Part 810 的證據？**
 
-如果您的組織正在部署資料至 Azure 政府版，您仍可依賴上 Azure 政府 FedRAMP 高 P-ATO 以作為證據您以適當的限制的方式處理資料。 不過，您必須負責取得 DoE 授權您自己的系統，包括使用雲端服務。
+如果您的組織要將資料部署到 Azure 政府，您可以依靠 Azure 政府 FedRAMP 高 P-ATO 作為以適當限制方式處理資料的證據。 不過，您負責取得您自己系統的 DoE 授權（包括使用雲端服務）。
 
-**為何我來分類資料部署到 Azure Government 的責任？**
+**將部署到 Azure 政府的資料分類為何？**
 
-將資料部署到 Azure 政府版客戶負責自己的安全性分類程序。 針對客戶資料受到 DoE 匯出控制項、 區段 148 的[美國原子能源法案](https://www.epa.gov/laws-regulations/summary-atomic-energy-act)所建立的未分類控制核子資訊 (UCNI) 控制項來進一步強化的分類系統。
+向 Azure 政府部署資料的客戶負責其安全分類程式。 針對使用 DoE export 控制項的客戶資料，分類系統會由美國第一個第一方的第148一項的第一方的第一個第一方的[基本](https://www.epa.gov/laws-regulations/summary-atomic-energy-act)功能（UCNI）控制來進一步擴充。
 
 ## <a name="resources"></a>資源
 
-- [Azure 雲端服務與美國匯出控制項](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+- [Azure 雲端服務和美國出口控制項](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 - [Microsoft 和 FedRAMP](offering-fedramp.md)
 - [Microsoft 和 DoD](offering-dod-disa-l2-l4-l5.md)
 - [Microsoft 政府雲端](https://www.microsoft.com/enterprise/government)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf)。
