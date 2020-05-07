@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何設定及開始使用 Microsoft 合規性分數，以協助簡化及自動化風險評估。
-ms.openlocfilehash: 4ccd89647540aeda8ba6253f6e5eefab1dc81791
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7a0030ed417e21484717b6edf12406d2f5e760e5
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632388"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140858"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Microsoft 規範分數（預覽）設定
 
@@ -40,16 +40,14 @@ ms.locfileid: "43632388"
 
 ### <a name="where-to-set-permissions"></a>設定許可權的位置
 
-您組織的全域管理員可以設定 Microsoft 365 規範中心或 Azure Active Directory （Azure AD）中的使用者許可權。 在這兩個位置中設定角色後，使用者即可存取合規性分數及合規性管理員。
-
-請注意，現有的相容性管理員角色**不會**轉移到合規性分數。 如果您在合規性管理員中擁有角色，且其符合性分數是新的，則您的合規性管理員角色不會授與您對合規性分數的存取。 您的全域系統管理員必須在 Microsoft 365 規範中心或 Azure AD 中為您設定許可權和角色，以便您可以存取合規性分數。
+您組織的全域管理員可以設定[Azure Active Directory （AZURE AD）](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)或[合規性管理員](compliance-manager-overview.md#permissions)中的使用者許可權。 在這兩個位置中設定角色後，使用者即可存取合規性分數及合規性管理員。
 
 ### <a name="role-types"></a>角色類型
 
-下表顯示每個 Microsoft 365 規範中心角色如何對應至現有的合規性管理員角色，以及每個角色所允許的功能。
+下表顯示每個[AZURE AD 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)如何對應至現有的合規性管理員角色，以及每個角色所允許的功能。 使用者至少需要 Azure AD 全域讀卡機角色，才能存取合規性分數。
 
 
-| 使用者可以： | Microsoft 365 規範中心角色 | 合規性管理員角色 | 
+| 使用者可以： | Azure AD 角色 | 合規性管理員角色 | 
 | :------------- | :-------------: | :------------: |
 | **讀取但不編輯資料**| Azure AD 全域讀取器  | Azure AD 全域讀取器 | 
 | **讀取但不編輯資料**| 安全性讀取者 | 合規性管理員讀者  | 
@@ -60,13 +58,6 @@ ms.locfileid: "43632388"
 
 > [!NOTE]
 > 當您從相容性分數移至合規性管理員以完成工作時（例如，若要管理評估），您的瀏覽器會開啟新的索引標籤，並顯示對話方塊。 在標頭為「已是 Microsoft cloud services 客戶」的上方區段中？ 登入您的帳戶「選取登**入**以存取合規性管理員;您不需要重新輸入您的認證。
-
-### <a name="how-to-set-permissions-and-roles-in-the-microsoft-365-compliance-center"></a>如何在 Microsoft 365 規範中心設定許可權和角色
-
-若要設定 Microsoft 365 規範中心的許可權：
-
-1. 請移至[Microsoft 365 規範中心](https://compliance.microsoft.com)，並以您的全域系統管理員帳戶登入。
-2. 在左功能窗格上選取 [**許可權**]。 您可以從這裡查看角色及指派許可權。
 
 ## <a name="configure-automatic-secure-score-updates"></a>設定自動安全分數更新
 

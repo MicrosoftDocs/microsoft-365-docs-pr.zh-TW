@@ -1,5 +1,5 @@
 ---
-title: 4. 部署遠端工作者生產力應用程式和服務
+title: 步驟 4： 部署遠端工作者生產力應用程式和服務
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,14 +17,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: 讓您的使用者透過 Teams、Exchange、SharePoint 和其他 Microsoft 365 服務提高生產力。
-ms.openlocfilehash: dddc3cac8a6cb955e8a337eed07279ba75c029aa
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 05704cdd08b315b5dbcdf4bf357fc211f9727761
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002764"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141427"
 ---
-# <a name="4-deploy-remote-worker-productivity-apps-and-services"></a>4. 部署遠端工作者生產力應用程式和服務
+# <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>步驟 4： 部署遠端工作者生產力應用程式和服務
 
 為提高生產力，人員之間必須能夠溝通並共同作業。 他們需要開會、透過語音和文字交談、建立新內容、共用資訊和檔案、交換電子郵件，以及管理行事曆和工作。 Microsoft 365 為這些關鍵功能提供雲端服務：
 
@@ -32,6 +32,8 @@ ms.locfileid: "44002764"
 - 若要交換電子郵件及管理行事曆、連絡人和工作，請使用 Exchange Online 和 Outlook 用戶端。
 - 若要儲存及共同處理檔案，請使用 SharePoint 和 OneDrive。 您可以搭配網頁瀏覽器或在 Teams 內使用這些服務。
 - 若要建立新內容或共同處理現有內容，Microsoft 365 App 是安裝在您本機電腦上的 Word、PowerPoint、Excel 和 Outlook 版本，而且會收到持續的功能和安全性更新。
+
+![使用 Teams、Outlook、SharePoint、OneDrive 和 Microsoft 365 應用程式以保持生產力](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 
 ## <a name="keep-people-connected-with-microsoft-teams"></a>讓人員透過 Microsoft Teams 保持聯繫
 

@@ -18,13 +18,15 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: 使用 Office 365 或 Microsoft 365 合規性中心中的「內容搜尋」工具，來搜尋信箱中的內容、SharePoint Online 網站，OneDrive 帳戶、Microsoft Teams、Microsoft 365 群組、Yammer 群組和商務用 Skype 交談。 您可以使用關鍵字搜尋查詢和搜尋條件來縮小搜尋結果。 然後您可以預覽和匯出搜尋結果。 內容搜尋也是用來搜尋與 GDPR 資料主體要求相關內容的有效工具。
-ms.openlocfilehash: 61e8b15af29bf02849a83f6a68bdd1c0accd7e8d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: 使用 Office 365 或 Microsoft 365 合規性中心中的內容搜尋工具，搜尋各種 Office 365 服務中的內容。
+ms.openlocfilehash: e16b369c2844f75673ac4f6eee1cb3b8f4fdfab4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943172"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035501"
 ---
 # <a name="content-search"></a>內容搜尋
 
@@ -138,7 +140,7 @@ ms.locfileid: "43943172"
     
 3. 在 **[個別結果]** 下拉式清單中，按一下 **[搜尋統計資料]**。
     
-4. 在 **[類型]** 下拉式清單中，視您想要檢視的搜尋統計資料而定，按一下下列其中一個選項：
+4. 在 [類型]**** 下拉式清單中，視您想要檢視的搜尋統計資料而定，按一下下列其中一個選項：
     
     - **摘要：** 針對所搜尋的每個內容位置類型，顯示其統計資料。 這包括包含的項目符合搜尋查詢的內容位置的數量，以及搜尋結果項目的總數量和大小。 這是預設設定。
 
@@ -247,7 +249,7 @@ ms.locfileid: "43943172"
   
 - 若要搜尋位於 Teams 和 Microsoft 365 群組中的內容，您必須指定與團隊或群組相關聯的信箱和 SharePoint 網站。
 
-- 來自私人頻道的內容會儲存在每位使用者的信箱，而不會儲存在小組信箱。 若要搜尋私人頻道中的內容，請參閱 [私人頻道進階電子文件探索](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels)。
+- 來自私人頻道的內容會儲存在每位使用者的信箱，而不會儲存在小組信箱。 若要搜尋私人頻道中的內容，請參閱[私人頻道進階電子文件探索](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels) (部分機器翻譯)。
     
 - 在 Exchange Online 中執行 **Get-UnifiedGroup** Cmdlet，以檢視團隊或 Microsoft 365 群組的內容。 這是取得與團隊或群組相關聯的網站 URL 的絕佳方法。 例如，下列命令會顯示名為「資深領導團隊」的 Microsoft 365 群組的所選屬性： 
     

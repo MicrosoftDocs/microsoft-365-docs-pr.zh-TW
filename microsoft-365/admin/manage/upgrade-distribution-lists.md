@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 瞭解如何將一或多個通訊群組清單升級至 Outlook 中的 Microsoft 365 群組，以及如何使用 PowerShell 同時升級多個通訊群組清單。
-ms.openlocfilehash: 3f364de1e863cef542fb8342e61f537bcd113535
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 993b0baf46b702322df64693f682e25b0240a0ab
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048170"
+ms.locfileid: "44065666"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>將通訊群組清單升級至 Outlook 中的 Microsoft 365 群組
 
@@ -51,7 +51,7 @@ ms.locfileid: "44048170"
 7. 如果您選取了要升級的 DL，但是它仍會顯示在頁面上，以供升級時使用，則無法升級。 若[升級無法運作，請查看要執行的](#what-to-do-if-the-upgrade-doesnt-work)動作。
 
 > [!NOTE]
-> 如果您正在取得群組摘要電子郵件，您可能會注意到，它有時候會讓您升級您所擁有的任何合格通訊群組清單。 如需有關摘要電子郵件的詳細資訊，請參閱[在 Outlook 中擁有群組交談](https://support.office.com/article/a0482e24-a769-4e39-a5ba-a7c56e828b22.aspx)。
+> 如果您正在取得群組摘要電子郵件，您可能會注意到，它有時候會讓您升級您所擁有的任何合格通訊群組清單。 如需有關摘要電子郵件的詳細資訊，請參閱[在 Outlook 中擁有群組交談](https://support.microsoft.com/en-us/office/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)。
 
 
 ## <a name="what-to-do-if-the-upgrade-doesnt-work"></a>升級無法運作時應執行的動作

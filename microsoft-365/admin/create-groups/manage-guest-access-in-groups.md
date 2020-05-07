@@ -18,14 +18,21 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 瞭解如何將來賓新增至 Microsoft 365 群組、查看來賓使用者，以及使用 PowerShell 來控制來賓存取。
-ms.openlocfilehash: 1b315ac89936aaa69072959031733fef4e0a5c1a
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 48f3339968040eeb82a93d6540c70f0bbea0754a
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049188"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140540"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>在 Microsoft 365 群組中管理來賓存取
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 根據預設，針對您的組織開啟來賓存取權 Microsoft 365 群組。 系統管理員可以控制是否允許來賓存取整個組織或個別群組的群組。
 

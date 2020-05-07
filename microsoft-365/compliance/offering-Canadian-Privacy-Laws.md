@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6a2957ed5782c9449a1715669a7e220940572a66
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 68dfc85b2f7ba4025393c82fa7ca5c67575ca0d2
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602570"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066246"
 ---
 # <a name="canadian-privacy-laws"></a>加拿大隱私權法
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602570"
 
 加拿大制訂隱私權法以保護個人隱私並賦予他們權利存取收集的資訊。 [加拿大隱私權委員會辦公室](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/02_05_d_15/) (OPCC) 負責監督這些法規的合規性。
 
-[隱私權法案](https://privacy.microsoft.com/en-US/#heading-0-0-2-1)規定聯邦政府組織如何收集、使用和揭露包含聯邦員工的個人識別資訊。 [個人資訊保護與電子文件法案](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA) 對商業營利企業的商務活動以及受聯邦控管的企業 (如銀行、航空公司和電信公司) 員工採取相同的管理方式。
+[隱私權法案](https://privacy.microsoft.com/zh-TW/#heading-0-0-2-1)規定聯邦政府組織如何收集、使用和揭露包含聯邦員工的個人識別資訊。 [個人資訊保護與電子文件法案](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (PIPEDA) 對商業營利企業的商務活動以及受聯邦控管的企業 (如銀行、航空公司和電信公司) 員工採取相同的管理方式。
 
 PIPEDA 建立在 10 項[公平資訊原則](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/)上，企業如符合該原則，就必須遵守。 例如，同意的基本原則引起了 PIPEDA 的要求，即組織必須獲得個人的許可才能收集或使用個人資訊。 每個人都有權存取個人資訊並質疑其準確性 (以「個人存取權」為基礎)。 「識別用途」原則會導致規定個人資訊只能用於一致同意的目的。
 
@@ -79,7 +79,3 @@ PIPEDA 不需要加拿大的公司將個人資料保留在加拿大。 但是，
 - [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)
 - [雲端隱私權考量](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/1/9/3/19390188-F5C7-4819-80BB-30B84304E499/CanadianPrivacyLaws-Compliance.pdf)。

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7b8e7e7f15ac4a0f257e9c4c86bd14659cc609b6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d270e43bb336a6cdf110507ba51281e135f99b9a
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632928"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066077"
 ---
 # <a name="my-number-act-japan"></a>個人編號法案 (日本)
 
@@ -73,11 +73,7 @@ PPC Q\&A 的 [Q3-13 章節](https://www.ppc.go.jp/legal/policy/faq/) (日文版)
 ## <a name="resources"></a>資源
 
 - [Azure 合規性和日本安全性與隱私權需求](https://gallery.technet.microsoft.com/Azure-Compliance-and-the-53409748)
-- [Microsoft 中的隱私權](https://privacy.microsoft.com/en-US/)
+- [Microsoft 中的隱私權](https://privacy.microsoft.com/zh-TW/)
 - [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)
 - [雲端隱私權考量](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/0/E/C/0EC14DDA-6041-4841-A180-199870B136C4/MyNumberAct-Compliance.pdf)。

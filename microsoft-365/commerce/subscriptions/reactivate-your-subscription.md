@@ -25,14 +25,21 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: 瞭解如何在您的訂閱到期時或在 Microsoft 停用時重新啟用它，或在中間取消該訂閱。
-ms.openlocfilehash: 9f665cc9ca80b7338197a5401cdf9a4c2283d123
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: d75ebb3b09ec8b72c60e829406c1341939a4e534
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046237"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141095"
 ---
 # <a name="reactivate-your-subscription"></a>重新啟動您的訂閱
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 如果您的訂閱到期，或已由 Microsoft 停用，或您已在訂閱期限中間取消，您可以在系統管理中心重新啟用。
   

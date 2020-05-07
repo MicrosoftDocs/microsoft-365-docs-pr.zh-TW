@@ -1,6 +1,6 @@
 ---
-title: SharePoint Server 適用的 GDPR
-description: 深入了解如何在內部部署 SharePoint Server 中解決 GDPR 需求。
+title: 適用於 SharePoint Server 的 GDPR
+description: 了解如何解決內部部署 SharePoint Server 中的一般資料保護規定 (GDPR) 需求。
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -11,12 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 6cbcb7f0918d472d953cb0f837adcb23b642a3a3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 58ddbe98ec5ca6b08e6d6be58c4258265c13e3de
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596390"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036226"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>適用於 SharePoint Server 的 GDPR
 

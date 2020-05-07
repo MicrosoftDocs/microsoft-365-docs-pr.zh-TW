@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: 瞭解如何規劃 Microsoft 365 群組管理。
-ms.openlocfilehash: 4427f210bc1691ef04b97fa4802313078f8d0997
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 85dfbb27899d7b79257eba4cff4b7cd715f762a5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049408"
+ms.locfileid: "44064784"
 ---
 # <a name="plan-for-governance-in-groups"></a>群組管理的規劃
 
@@ -154,7 +154,7 @@ Microsoft 365 群組具有一套豐富的工具，可實施貴組織可能需要
 >在「虛刪除」期間，如果使用者嘗試存取網站，則會看到 403 禁止訊息。 在此期間之後，如果使用者嘗試存取網站，則會看到 404 找不到訊息。
 
 #### <a name="resources"></a>*資源*
-- [還原已刪除的 Microsoft 365 群組](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
+- [還原已刪除的 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
 - [在 Azure Active Directory 中還原已刪除的 Microsoft 365 群組](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)
 - [使用 Remove-UnifiedGroup Cmdlet 來刪除群組](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
 
