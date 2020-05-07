@@ -1,7 +1,7 @@
 ---
 title: Microsoft 的資料保護長
-description: GDPR 的 Microsoft 歐盟資料保護長 (DPO) 相關資訊
-keywords: Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
+description: 了解 Microsoft 歐盟資料保護長 (DPO) 對於 GDPR 的位置和資格。
+keywords: Microsoft 365、Microsoft 365 教育版, Microsoft 365 文件, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -15,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 8e517db11806085339f6f431c9b942b468a211ed
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b09458bfba65a196ff9be4d9bfd7f3fbfda25fda
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558063"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036091"
 ---
 # <a name="microsofts-data-protection-officer"></a>Microsoft 的資料保護長
 

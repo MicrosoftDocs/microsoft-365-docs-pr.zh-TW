@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c68e51fd0efe415458942736a8d19ae1c12adc3c
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 333333ad274c569337c2cbab7fd00c7337e26160
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189088"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44064764"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>美國國防部（DoD）在影響層級（2、4、5）的臨時授權
 
@@ -35,8 +35,7 @@ DoD 雲端服務支援定義 SRG 中的原則、安全性控制及其他需求�
 
 Microsoft 的政府雲端服務會符合美國國防部的苛刻需求（從影響等級2到5），讓美國國防機關能夠從 Microsoft 雲端的成本節約和嚴格安全性中受益。 透過部署包含 Azure 政府、Office 365 美國政府及 Dynamics 365 政府的受保護服務，國防機關可以使用一組豐富的相容性服務。
 
-- 深入瞭解 Microsoft Cloud 上的 DoD DISA L2，L4：[下載國防 DISA Backgrounder](https://aka.ms/disa-backgrounder)
-- 瞭解如何利用[Azure DoD 藍圖](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy)加速 DoD DISA L2 的 L4 部署
+- 瞭解如何利用[Azure DoD 藍圖](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)加速 DoD DISA L2 的 L4 部署
 
 ## <a name="dod-impact-level-5-provisional-authorization"></a>DoD 影響等級5的臨時授權
 
@@ -56,7 +55,7 @@ DISA 雲端服務支援已授與適用于 Microsoft Azure 政府的 DoD 影響�
 - Dynamics 365 美國政府軟體 as a Service （SaaS）根據從機架系及市內開發（HUD）進行的代理人 FedRAMP 授權（ATO），授與此授權。
 - Office 365 美國政府已授與 ATO 從健康情況和人力服務（DHHS）為基礎之代理商 FedRAMP 的授權。
 
-影響等級2涵蓋未控制的未分類資訊-已授權公開發行的資料。 此外，它還涵蓋其他未分類的資訊，但不被視為「重要任務」，但仍然需要最低的存取控制層級。 這種授權可讓美國聯邦政府客戶在範圍內的 Microsoft 雲端服務上部署非機密資訊和基本防護應用程式和網站。
+影響等級2涵蓋未控制的未分類資訊-已授權公開發行的資料。 此外，它也涵蓋其他未分類的資訊，而不是被視為「要徑任務」，仍然需要基本層級的存取控制。 這種授權可讓美國聯邦政府客戶在範圍內的 Microsoft 雲端服務上部署非機密資訊和基本防護應用程式和網站。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -83,21 +82,21 @@ DISA 雲端服務支援已授與適用于 Microsoft Azure 政府的 DoD 影響�
 
 ## <a name="fast-track-your-deployment-of-dod-solutions-on-azure"></a>快速追蹤 Azure 上的 DoD 解決方案部署
 
-開始使用政府中的雲端優點與國防 L4 的藍圖範例，以充分運用政府的優勢。 此藍圖提供的工具和指引，可讓您立即開始建立 DoD 相容的解決方案。 [開始使用 Azure 藍圖做為 DoD L4](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)。
+開始利用使用雲端的政府與 Azure 安全性與合規性藍圖中的雲端優點的開端。 此藍圖提供的工具和指引，可讓您立即開始建立 DoD 相容的解決方案。 [開始使用 Azure DoD 藍圖](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-**我是否可以在組織的認證過程中使用 Microsoft 的符合性？**
+**我是否可以在組織的憑證程序中使用 Microsoft 合規性？**
 
 是。 所有 DoD 機構都可能會依據 Microsoft 雲端服務的認證，成為需要 DoD 授權的任何程式或倡議的基礎。 （這也適用于支援 DoD 和需要雲端服務的其他組織。）不過，您必須為這些服務之外的元件達成您自己的授權。
 
 **Microsoft 的 DoD 認證是否符合 NIST 800 –171的需求？**
 
-在10月2016，國防部門（DoD）會 promulgated 最終規則，以執行國防聯邦購買法規補充（DFARS）條款，適用于所有的 DoD 承包商，其適用于透過資訊系統處理、儲存或傳送「涵蓋的國防資訊」的所有承包商。 這項規則規定這類系統必須符合 NIST SP 800 –171中所述的安全性需求，以[保護 nonfederal 資訊系統和組織中控制的未分類資訊](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)，或由 DoD 簽約官核准的「替代但又有效的安全性度量單位」。 而且 DoD 承包商使用外部雲端服務提供者來處理、儲存或傳輸涵蓋的防禦資訊，則此提供者必須符合與 FedRAMP 適中的基準等的安全性需求。
+在10月2016，國防部門（DoD）會 promulgated 最終規則，以執行國防聯邦購買法規補充（DFARS）條款，套用到所有的 DoD 承包商，其適用于透過資訊系統來處理、儲存或傳送「涵蓋國防資訊」的所有承包商。 這項規則規定這類系統必須符合 NIST SP 800 –171中所述的安全性需求，以[保護 nonfederal 資訊系統和組織中控制的未分類資訊](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)，或是由 DoD 的簽約官核准的「替代，但同等有效的安全性度量單位」。 而且 DoD 承包商使用外部雲端服務提供者來處理、儲存或傳輸涵蓋的防禦資訊，則此提供者必須符合與 FedRAMP 適中的基準等的安全性需求。
 
 下列 Microsoft 雲端服務已收到 FedRAMP 適中的授權： Azure、Azure 政府、Dynamics 365 美國政府版、Office 365 MT、Office 365 U.S. 政府和 Office 365 美國政府國防版。
 
-此外，在 FedRAMP 認證的界限之外，可供 DoD 承包商處理、儲存或傳輸「涵蓋的國防資訊」所使用的 Microsoft 服務，都在進行審閱，以符合2017年12月31日的合規性期限。 Microsoft 致力於記錄這些內部及客戶對等服務如何符合 NIST SP 800 –171或可接受的安全性對等專案，以符合 DFARS 相關條款。
+此外，在 FedRAMP 認證的界限之外，可供 DoD 承包商處理、儲存或傳輸「涵蓋的防護資訊」所使用的 Microsoft 服務，都在進行審閱，以符合2017年12月31日的合規性期限。 Microsoft 致力於記錄這些內部及客戶對等服務如何符合 NIST SP 800 –171或可接受的安全性對等專案，以符合 DFARS 相關條款。
 
 ## <a name="resources"></a>資源
 
@@ -108,7 +107,3 @@ DISA 雲端服務支援已授與適用于 Microsoft Azure 政府的 DoD 影響�
 - [Microsoft 通用控制措施中樞合規性架構](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft 政府雲端](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf)。

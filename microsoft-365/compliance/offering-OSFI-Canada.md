@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f4cb36cd208017881dd03a99d4e8c8adbbea65d4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7a43011a1d81c014526b1dd9178d051162e96acd
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602070"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065958"
 ---
 # <a name="office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>加拿大金融機構監理總署 (OSFI)
 
@@ -75,7 +75,3 @@ Microsoft 檢查清單可協助加拿大金融公司執行 Microsoft 商務用�
 - [Azure 的金融服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure 金融服務雲端風險評定工具](https://aka.ms/FFIEC-CSDT)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/6/9/9/699E9434-6376-4F2A-A666-1F10D715B898/OFSI-Compliance.pdf)。

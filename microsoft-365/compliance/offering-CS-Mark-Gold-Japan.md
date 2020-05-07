@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: eca929b495a6f6d059b0015afa0bf5ab18fabd78
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ea2700b8bee62b045d3a65ff95097cae567c239e
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602600"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066256"
 ---
 # <a name="cloud-security-mark-gold-cs-gold-mark"></a>雲端安全性金色標章 (CS 金色標章)
 
@@ -65,7 +65,3 @@ JASA 開發了授權資訊安全稽核系統 (AISAS)，該系統會針對組織�
 - [ISO/IEC 27017: 2015](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=43757)
 - [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/D/A/A/DAAF35AB-60DE-4A70-AF1D-DD5CBAF16477/CSMarkGold-Compliance.pdf)。

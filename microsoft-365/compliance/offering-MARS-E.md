@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b62e40ce317bc5a6bc817e5eade5b476542c5f04
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ac5a027225ce0f7c4c719ba3a897f5bc6f5629d5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602170"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065644"
 ---
 # <a name="minimum-acceptable-risk-standards-for-exchanges-mars-e-20-framework"></a>交易可接受的最小風險標準 (MARS-E) 2.0 架構
 
@@ -34,8 +34,6 @@ ms.locfileid: "41602170"
 ## <a name="microsoft-and-mars-e-20-framework"></a>Microsoft 和 MARS-E 2.0 架構
 
 目前沒有適用於 MARS-E 的正式授權和資格鑑定程序。 不過，Microsoft Azure 平台服務已經歷「中等影響等級」的獨立 FedRAMP 稽核，以及「高等影響等級」的 Azure Government 稽核，並根據 FedRAMP 標準獲得授權。 雖然這些標準不會專門專注於 MARS-E，但是 MARS-E 控制項需求與目標緊密地保持一致，並致力於保護 Azure 上資料的機密性、完整性和可用性。
-
-深入了解 MARS-E 2.0 架構在 Microsoft 雲端上的優點：[下載 MARS-E 背景資料](https://aka.ms/mars-e-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -72,7 +70,3 @@ Microsoft 可確保 Azure 平台符合管理[線上服務條款](https://www.mic
 - [線上服務的 Microsoft 合規性架構白皮書](https://aka.ms/compliance-framework)
 - [Microsoft Online Services 條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/7/C/2/7C2690A7-19CC-4EED-A47A-B43CC418790A/MARS-E-Compliance.pdf)。

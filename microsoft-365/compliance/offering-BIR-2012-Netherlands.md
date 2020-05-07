@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 695edb08c8316cf3f95af37321d5ab3a7d53399d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 765e9b3ed18e15cd458913e7f943d52f791dbafd
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602680"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065878"
 ---
 # <a name="baseline-informatiebeveiliging-rijksdienst-standard-bir-2012"></a>基準資訊化人民解放陣線標準 (BIR 2012)
 
@@ -75,7 +75,3 @@ Microsoft Online Services 提供許多控制措施，可協助荷蘭的組織符
 - [國家/地區資訊安全性處方 2007 (VIR)](https://wetten.overheid.nl/BWBR0022141/2007-07-01)
 - [基準資訊安全性 (BIR)](https://www.earonline.nl/index.php/BIR_2012)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/F/0/0/F00F62B6-254B-41AC-AC79-7A43CD6E376C/BIR2012-Compliance.pdf)。

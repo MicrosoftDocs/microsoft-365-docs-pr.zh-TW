@@ -24,14 +24,21 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: '瞭解如何使用產品金鑰來更新 Microsoft 365 的商務版訂閱，以及如何關閉或開啟定期計費。 '
-ms.openlocfilehash: 7cceae61891da31dbb058af1db12598a02b172e2
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 7bcd0fcc9d3984589ff7c05ec2c1b95afad22c29
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046225"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141075"
 ---
 # <a name="renew-microsoft-365-for-business"></a>更新 Microsoft 365 for business
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 本文適用于大部分付費的 Microsoft 365 for business 訂閱。
   

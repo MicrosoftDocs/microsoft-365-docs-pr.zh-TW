@@ -21,14 +21,21 @@ search.appverid:
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: 瞭解如何在30天內擴充試用訂閱。
-ms.openlocfilehash: a158f737b0606ec8b3ae451d92d312ea2969f176
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: e634c43c1d6399abc3a88438fe410f5a1a19361e
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045761"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141249"
 ---
 # <a name="extend-your-trial"></a>延長試用期
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 在購買之前，您需要更多時間來試用 Microsoft 365 for business 的功能嗎？ 如果您的試用訂閱尚在過期前的 15 天內，且未曾延長過，您就可以將試用期再延長 30 天。 您只能延長試用期一次。
 

@@ -21,14 +21,21 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 瞭解如何在 Microsoft 365 系統管理中心中，設定新產品及功能更新的發行選項。
-ms.openlocfilehash: 11672e46acb3124c8fd840ab19ee683cfd6af94f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fc931893e95ff053cd251b6c1b12bfdbaadf49ae
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628109"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139646"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>設定標準或目標發行選項
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 使用 Microsoft 365 時，您會在新的產品更新及功能可供使用時收到，而不是每隔幾年執行昂貴的更新。 您可以管理組織收到這些更新的方式。 例如，您可以註冊以在早期取得發行的更新，讓您的組織率先收到更新。 您可以指定僅特定人員收到這些更新。 或者，您可以維持預設的發行排程，於稍後收到更新。 本文說明不同的發行選項，以及您可以如何將它運用於您的組織。
   

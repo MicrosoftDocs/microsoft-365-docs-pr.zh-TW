@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: 身為 Microsoft 365 使用者，您可以檢視、釋出、刪除隔離郵件 (收件者是您，且經垃圾郵件篩選功能認為是垃圾郵件或大量電子郵件而加以隔離的郵件)。 您可以在「安全性與合規性中心」檢視和管理隔離郵件。
-ms.openlocfilehash: b8ab5835a29ccf0c58d27f56fe84d29745419b1a
-ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
+ms.custom:
+- seo-marvel-apr2020
+description: 在本文中，您將了解如何在 Microsoft 365 的安全性與合規性中心檢視及管理隔離的郵件。
+ms.openlocfilehash: 177f60f1fccc764d74ec0374249a62c602cb84aa
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43809005"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036509"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user"></a>以使用者身分找到並釋放被隔離的郵件
 

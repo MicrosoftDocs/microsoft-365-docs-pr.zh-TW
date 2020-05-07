@@ -19,16 +19,16 @@ search.appverid:
 ROBOTS: NOINDEX
 description: 深入瞭解 Office 365 中的 ' MSOID ' CNAME 記錄，可引導您使用最佳的驗證程式伺服器，讓您能更快速地進行回應。
 monikerRange: o365-21vianet
-ms.openlocfilehash: f5369b8a723c60691da0e73f2bd8cc32233abbcd
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: a7c59829419ac8e7db400b079681ccf5bff199d6
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212218"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053845"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>MSOID 的 Office 365 CNAME 記錄的用途為何？
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
 > [!NOTE]
 > 下列僅適用于由世紀運作的 * * Office 365。
   
@@ -40,7 +40,7 @@ ms.locfileid: "43212218"
   
  **如果 Office 365 管理您網域的 DNS 記錄，** Office 365 為您設定此 CNAME 記錄。 
   
- **如果您是在 dns 主機管理網域的 dns 記錄，** 您可以[遵循 DNS 主機的指示](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx)自行建立此記錄。
+ **如果您是在 dns 主機管理網域的 dns 記錄，** 您可以[遵循 DNS 主機的指示](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)自行建立此記錄。
   
 如果您是在規劃 Office 365 部署，並且想要深入瞭解可能需要新增或更新的所有 DNS 記錄，請參閱[下列內容： Office 365 的外部網域名稱系統記錄](https://go.microsoft.com/fwlink/?LinkId=579013)。
   
