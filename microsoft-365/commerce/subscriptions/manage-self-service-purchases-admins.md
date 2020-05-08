@@ -14,74 +14,81 @@ ms.collection:
 search.appverid:
 - MET150
 description: 系統管理員可以瞭解如何管理組織中使用者所進行的自我服務購買。
-ms.openlocfilehash: 7074a829bed3e65a160a9a33afb4f2b130f6c8d1
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 991dc87c40f41a6cbd2f1c08d4bc72bbb34d28f1
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046177"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141147"
 ---
-# <a name="manage-self-service-purchases-admin"></a><span data-ttu-id="3089e-103">管理自助購買 (管理員)</span><span class="sxs-lookup"><span data-stu-id="3089e-103">Manage self-service purchases (Admin)</span></span>
+# <a name="manage-self-service-purchases-admin"></a><span data-ttu-id="ffce6-103">管理自助購買 (管理員)</span><span class="sxs-lookup"><span data-stu-id="ffce6-103">Manage self-service purchases (Admin)</span></span>
 
-<span data-ttu-id="3089e-104">身為系統管理員，您可以看到組織中人員所進行的自我服務購買。</span><span class="sxs-lookup"><span data-stu-id="3089e-104">As an admin, you can see self-service purchases made by people in your organization.</span></span> <span data-ttu-id="3089e-105">您可以看到產品、買方名稱、購買的訂閱、到期日、購買價格，以及每個自助購買的指派使用者。</span><span class="sxs-lookup"><span data-stu-id="3089e-105">You can see the product, purchaser name, subscriptions purchased, expiry date, purchase price, and assigned users for each self-service purchase.</span></span> <span data-ttu-id="3089e-106">如果您的組織需要，您可以透過 PowerShell 關閉以每個產品為基礎的自助購買。</span><span class="sxs-lookup"><span data-stu-id="3089e-106">If required for your organization, you can turn off self-service purchasing on a per product basis via PowerShell.</span></span> <span data-ttu-id="3089e-107">透過自助購買或集中購買的產品，您可以使用相同的資料管理和存取原則。</span><span class="sxs-lookup"><span data-stu-id="3089e-107">You have the same data management and access policies over products bought through self-service purchase or centrally.</span></span>
+::: moniker range="o365-21vianet"
 
-<span data-ttu-id="3089e-108">您也可以控制組織中的使用者是否可以進行自助購買。</span><span class="sxs-lookup"><span data-stu-id="3089e-108">You can also control whether users in your organization can make self-service purchases.</span></span> <span data-ttu-id="3089e-109">如需詳細資訊，請參閱[Use AllowSelfServicePurchase For MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="3089e-109">For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).</span></span>
+> [!NOTE]
+> <span data-ttu-id="ffce6-104">系統管理中心變更。</span><span class="sxs-lookup"><span data-stu-id="ffce6-104">The admin center is changing.</span></span> <span data-ttu-id="ffce6-105">[！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。</span><span class="sxs-lookup"><span data-stu-id="ffce6-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
 
-## <a name="view-self-service-subscriptions"></a><span data-ttu-id="3089e-110">查看自助訂閱</span><span class="sxs-lookup"><span data-stu-id="3089e-110">View self-service subscriptions</span></span>
+::: moniker-end
 
-1. <span data-ttu-id="3089e-111">在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。</span><span class="sxs-lookup"><span data-stu-id="3089e-111">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+<span data-ttu-id="ffce6-106">身為系統管理員，您可以看到組織中人員所進行的自我服務購買。</span><span class="sxs-lookup"><span data-stu-id="ffce6-106">As an admin, you can see self-service purchases made by people in your organization.</span></span> <span data-ttu-id="ffce6-107">您可以看到產品、買方名稱、購買的訂閱、到期日、購買價格，以及每個自助購買的指派使用者。</span><span class="sxs-lookup"><span data-stu-id="ffce6-107">You can see the product, purchaser name, subscriptions purchased, expiry date, purchase price, and assigned users for each self-service purchase.</span></span> <span data-ttu-id="ffce6-108">如果您的組織需要，您可以透過 PowerShell 關閉以每個產品為基礎的自助購買。</span><span class="sxs-lookup"><span data-stu-id="ffce6-108">If required for your organization, you can turn off self-service purchasing on a per product basis via PowerShell.</span></span> <span data-ttu-id="ffce6-109">透過自助購買或集中購買的產品，您可以使用相同的資料管理和存取原則。</span><span class="sxs-lookup"><span data-stu-id="ffce6-109">You have the same data management and access policies over products bought through self-service purchase or centrally.</span></span>
 
-2. <span data-ttu-id="3089e-112">在 [**精煉結果**] 旁邊的 [**帳戶類型**] 下拉式清單中，選擇 [**自助**]。</span><span class="sxs-lookup"><span data-stu-id="3089e-112">Next to **Refine results**, from the **Account type** drop-down, choose **Self-service**.</span></span>
+<span data-ttu-id="ffce6-110">您也可以控制組織中的使用者是否可以進行自助購買。</span><span class="sxs-lookup"><span data-stu-id="ffce6-110">You can also control whether users in your organization can make self-service purchases.</span></span> <span data-ttu-id="ffce6-111">如需詳細資訊，請參閱[Use AllowSelfServicePurchase For MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="ffce6-111">For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).</span></span>
 
-3. <span data-ttu-id="3089e-113">若要查看訂閱的詳細資料，請從清單中選擇其中一個。</span><span class="sxs-lookup"><span data-stu-id="3089e-113">To view more details about a subscription, choose one from the list.</span></span>
+## <a name="view-self-service-subscriptions"></a><span data-ttu-id="ffce6-112">查看自助訂閱</span><span class="sxs-lookup"><span data-stu-id="ffce6-112">View self-service subscriptions</span></span>
 
-## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a><span data-ttu-id="3089e-114">查看誰有自助購買訂閱的授權</span><span class="sxs-lookup"><span data-stu-id="3089e-114">View who has licenses for a self-service purchase subscription</span></span>
+1. <span data-ttu-id="ffce6-113">在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。</span><span class="sxs-lookup"><span data-stu-id="ffce6-113">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
 
-1. <span data-ttu-id="3089e-115">在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。</span><span class="sxs-lookup"><span data-stu-id="3089e-115">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.</span></span>
+2. <span data-ttu-id="ffce6-114">在 [**精煉結果**] 旁邊的 [**帳戶類型**] 下拉式清單中，選擇 [**自助**]。</span><span class="sxs-lookup"><span data-stu-id="ffce6-114">Next to **Refine results**, from the **Account type** drop-down, choose **Self-service**.</span></span>
 
-2. <span data-ttu-id="3089e-116">選擇 [篩選] 圖示，然後選擇 [**自我服務**]。</span><span class="sxs-lookup"><span data-stu-id="3089e-116">Choose the filter icon, then choose **Self-service**.</span></span>
+3. <span data-ttu-id="ffce6-115">若要查看訂閱的詳細資料，請從清單中選擇其中一個。</span><span class="sxs-lookup"><span data-stu-id="ffce6-115">To view more details about a subscription, choose one from the list.</span></span>
 
-3. <span data-ttu-id="3089e-117">選取產品以查看指派給人員的授權。</span><span class="sxs-lookup"><span data-stu-id="3089e-117">Select a product to see licenses assigned to people.</span></span>
+## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a><span data-ttu-id="ffce6-116">查看誰有自助購買訂閱的授權</span><span class="sxs-lookup"><span data-stu-id="ffce6-116">View who has licenses for a self-service purchase subscription</span></span>
+
+1. <span data-ttu-id="ffce6-117">在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。</span><span class="sxs-lookup"><span data-stu-id="ffce6-117">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.</span></span>
+
+2. <span data-ttu-id="ffce6-118">選擇 [篩選] 圖示，然後選擇 [**自我服務**]。</span><span class="sxs-lookup"><span data-stu-id="ffce6-118">Choose the filter icon, then choose **Self-service**.</span></span>
+
+3. <span data-ttu-id="ffce6-119">選取產品以查看指派給人員的授權。</span><span class="sxs-lookup"><span data-stu-id="ffce6-119">Select a product to see licenses assigned to people.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="3089e-118">如果有多個產品購買的產品，該產品只會列出一次，而且 [**可用數量**] 欄會顯示針對該產品購買的所有訂閱總數。</span><span class="sxs-lookup"><span data-stu-id="3089e-118">If there are multiple purchases for a product, that product is only listed once, and the **Available quantity** column shows the total of all subscriptions bought for that product.</span></span>
+    > <span data-ttu-id="ffce6-120">如果有多個產品購買的產品，該產品只會列出一次，而且 [**可用數量**] 欄會顯示針對該產品購買的所有訂閱總數。</span><span class="sxs-lookup"><span data-stu-id="ffce6-120">If there are multiple purchases for a product, that product is only listed once, and the **Available quantity** column shows the total of all subscriptions bought for that product.</span></span>
 
-4. <span data-ttu-id="3089e-119">[**使用者**] 清單是依進行自助購買的人員名稱群組。</span><span class="sxs-lookup"><span data-stu-id="3089e-119">The **Users** list is grouped by the names of people who made self-service purchases.</span></span>
+4. <span data-ttu-id="ffce6-121">[**使用者**] 清單是依進行自助購買的人員名稱群組。</span><span class="sxs-lookup"><span data-stu-id="ffce6-121">The **Users** list is grouped by the names of people who made self-service purchases.</span></span>
 
-5. <span data-ttu-id="3089e-120">若要匯出具有這些訂閱之授權的使用者清單，請選擇您想要匯出的訂閱，然後選擇 [**匯出使用者**]。</span><span class="sxs-lookup"><span data-stu-id="3089e-120">To export a list of users with licenses for these subscriptions, choose the subscriptions that you want to export, then choose **Export users**.</span></span>
+5. <span data-ttu-id="ffce6-122">若要匯出具有這些訂閱之授權的使用者清單，請選擇您想要匯出的訂閱，然後選擇 [**匯出使用者**]。</span><span class="sxs-lookup"><span data-stu-id="ffce6-122">To export a list of users with licenses for these subscriptions, choose the subscriptions that you want to export, then choose **Export users**.</span></span>
 
-## <a name="disable-or-enable-self-service-purchases"></a><span data-ttu-id="3089e-121">停用或啟用自助購買</span><span class="sxs-lookup"><span data-stu-id="3089e-121">Disable or enable self-service purchases</span></span>
+## <a name="disable-or-enable-self-service-purchases"></a><span data-ttu-id="ffce6-123">停用或啟用自助購買</span><span class="sxs-lookup"><span data-stu-id="ffce6-123">Disable or enable self-service purchases</span></span>
 
-<span data-ttu-id="3089e-122">您可以針對組織中的使用者停用或啟用自助購買功能。</span><span class="sxs-lookup"><span data-stu-id="3089e-122">You can disable or enable self-service purchases for users in your organization.</span></span> <span data-ttu-id="3089e-123">**MSCommerce** PowerShell 模組包含**AllowSelfServicePurchase**的**PolicyID**參數值，可讓您控制組織中的使用者是否可以進行自助購買，以及哪些產品。</span><span class="sxs-lookup"><span data-stu-id="3089e-123">The **MSCommerce** PowerShell module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases, and for which products.</span></span>
+<span data-ttu-id="ffce6-124">您可以針對組織中的使用者停用或啟用自助購買功能。</span><span class="sxs-lookup"><span data-stu-id="ffce6-124">You can disable or enable self-service purchases for users in your organization.</span></span> <span data-ttu-id="ffce6-125">**MSCommerce** PowerShell 模組包含**AllowSelfServicePurchase**的**PolicyID**參數值，可讓您控制組織中的使用者是否可以進行自助購買，以及哪些產品。</span><span class="sxs-lookup"><span data-stu-id="ffce6-125">The **MSCommerce** PowerShell module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases, and for which products.</span></span>
 
-<span data-ttu-id="3089e-124">您可以使用**MSCommerce** PowerShell 模組來：</span><span class="sxs-lookup"><span data-stu-id="3089e-124">You can use the **MSCommerce** PowerShell module to:</span></span>
+<span data-ttu-id="ffce6-126">您可以使用**MSCommerce** PowerShell 模組來：</span><span class="sxs-lookup"><span data-stu-id="ffce6-126">You can use the **MSCommerce** PowerShell module to:</span></span>
 
-- <span data-ttu-id="3089e-125">查看**AllowSelfServicePurchase**參數值&mdash;的預設狀態，不論它是由產品啟用或停用</span><span class="sxs-lookup"><span data-stu-id="3089e-125">View the default state of the **AllowSelfServicePurchase** parameter value &mdash; whether it's enabled or disabled by product</span></span>
-- <span data-ttu-id="3089e-126">查看適用產品的清單，以及是否啟用或停用自助購買功能</span><span class="sxs-lookup"><span data-stu-id="3089e-126">View a list of applicable products and whether self-service purchase is enabled or disabled</span></span>
-- <span data-ttu-id="3089e-127">查看或修改特定產品的目前設定，以啟用或停用</span><span class="sxs-lookup"><span data-stu-id="3089e-127">View or modify the current setting for a specific product to either enable or disable it</span></span>
+- <span data-ttu-id="ffce6-127">查看**AllowSelfServicePurchase**參數值&mdash;的預設狀態，不論它是由產品啟用或停用</span><span class="sxs-lookup"><span data-stu-id="ffce6-127">View the default state of the **AllowSelfServicePurchase** parameter value &mdash; whether it's enabled or disabled by product</span></span>
+- <span data-ttu-id="ffce6-128">查看適用產品的清單，以及是否啟用或停用自助購買功能</span><span class="sxs-lookup"><span data-stu-id="ffce6-128">View a list of applicable products and whether self-service purchase is enabled or disabled</span></span>
+- <span data-ttu-id="ffce6-129">查看或修改特定產品的目前設定，以啟用或停用</span><span class="sxs-lookup"><span data-stu-id="ffce6-129">View or modify the current setting for a specific product to either enable or disable it</span></span>
 
-<span data-ttu-id="3089e-128">如需詳細資訊，請參閱[Use AllowSelfServicePurchase For MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="3089e-128">For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).</span></span>
+<span data-ttu-id="ffce6-130">如需詳細資訊，請參閱[Use AllowSelfServicePurchase For MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)。</span><span class="sxs-lookup"><span data-stu-id="ffce6-130">For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).</span></span>
 
-## <a name="centralize-licenses-under-a-single-subscription"></a><span data-ttu-id="3089e-129">在單一訂閱下集中授權</span><span class="sxs-lookup"><span data-stu-id="3089e-129">Centralize licenses under a single subscription</span></span>
+## <a name="centralize-licenses-under-a-single-subscription"></a><span data-ttu-id="ffce6-131">在單一訂閱下集中授權</span><span class="sxs-lookup"><span data-stu-id="ffce6-131">Centralize licenses under a single subscription</span></span>
 
-<span data-ttu-id="3089e-130">您可以指派現有的授權，或透過現有的合約針對指派給自助購買之使用者的現有協定來購買其他訂閱。</span><span class="sxs-lookup"><span data-stu-id="3089e-130">You can assign existing licenses or purchase additional subscriptions through existing agreements for users assigned to self-service purchases.</span></span> <span data-ttu-id="3089e-131">在您指派這些已集中購買的授權之後，您可以要求購買者取消其現有的訂閱。</span><span class="sxs-lookup"><span data-stu-id="3089e-131">After you assign these centrally purchased licenses, you can request that purchasers cancel their existing subscriptions.</span></span>
+<span data-ttu-id="ffce6-132">您可以指派現有的授權，或透過現有的合約針對指派給自助購買之使用者的現有協定來購買其他訂閱。</span><span class="sxs-lookup"><span data-stu-id="ffce6-132">You can assign existing licenses or purchase additional subscriptions through existing agreements for users assigned to self-service purchases.</span></span> <span data-ttu-id="ffce6-133">在您指派這些已集中購買的授權之後，您可以要求購買者取消其現有的訂閱。</span><span class="sxs-lookup"><span data-stu-id="ffce6-133">After you assign these centrally purchased licenses, you can request that purchasers cancel their existing subscriptions.</span></span>
 
-1. <span data-ttu-id="3089e-132">使用您的全域系統管理員帳戶或計費系統管理員帳戶登入系統<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>。</span><span class="sxs-lookup"><span data-stu-id="3089e-132">Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> with your Global admin or Billing admin account.</span></span>
+1. <span data-ttu-id="ffce6-134">使用您的全域系統管理員帳戶或計費系統管理員帳戶登入系統<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>。</span><span class="sxs-lookup"><span data-stu-id="ffce6-134">Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> with your Global admin or Billing admin account.</span></span>
 
-2. <span data-ttu-id="3089e-133">移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a>] 頁面。</span><span class="sxs-lookup"><span data-stu-id="3089e-133">Go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.</span></span>
+2. <span data-ttu-id="ffce6-135">移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a>] 頁面。</span><span class="sxs-lookup"><span data-stu-id="ffce6-135">Go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.</span></span>
 
-3. <span data-ttu-id="3089e-134">尋找並選擇您想要購買的產品，然後選擇 [**購買**]。</span><span class="sxs-lookup"><span data-stu-id="3089e-134">Find and choose the product that you want to buy, then choose **Buy**.</span></span>
+3. <span data-ttu-id="ffce6-136">尋找並選擇您想要購買的產品，然後選擇 [**購買**]。</span><span class="sxs-lookup"><span data-stu-id="ffce6-136">Find and choose the product that you want to buy, then choose **Buy**.</span></span>
 
-4. <span data-ttu-id="3089e-135">完成其餘步驟以完成購買。</span><span class="sxs-lookup"><span data-stu-id="3089e-135">Complete the remaining steps to complete your purchase.</span></span>
+4. <span data-ttu-id="ffce6-137">完成其餘步驟以完成購買。</span><span class="sxs-lookup"><span data-stu-id="ffce6-137">Complete the remaining steps to complete your purchase.</span></span>
 
-5. <span data-ttu-id="3089e-136">請遵循 View the[自助購買訂閱授權的](#view-who-has-licenses-for-a-self-service-purchase-subscription)使用者，以匯出步驟6中所參照的使用者清單。</span><span class="sxs-lookup"><span data-stu-id="3089e-136">Follow the steps in [View who has licenses for a self-service purchased subscription](#view-who-has-licenses-for-a-self-service-purchase-subscription) to export a list of users to reference in step 6.</span></span>
+5. <span data-ttu-id="ffce6-138">請遵循 View the[自助購買訂閱授權的](#view-who-has-licenses-for-a-self-service-purchase-subscription)使用者，以匯出步驟6中所參照的使用者清單。</span><span class="sxs-lookup"><span data-stu-id="ffce6-138">Follow the steps in [View who has licenses for a self-service purchased subscription](#view-who-has-licenses-for-a-self-service-purchase-subscription) to export a list of users to reference in step 6.</span></span>
 
-6. <span data-ttu-id="3089e-137">將授權指派給在其他訂閱中具有授權的每個人。</span><span class="sxs-lookup"><span data-stu-id="3089e-137">Assign licenses to everyone who has a license in the other subscription.</span></span> <span data-ttu-id="3089e-138">如需完整步驟，請參閱[將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md)。</span><span class="sxs-lookup"><span data-stu-id="3089e-138">For full steps, see [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).</span></span>
+6. <span data-ttu-id="ffce6-139">將授權指派給在其他訂閱中具有授權的每個人。</span><span class="sxs-lookup"><span data-stu-id="ffce6-139">Assign licenses to everyone who has a license in the other subscription.</span></span> <span data-ttu-id="ffce6-140">如需完整步驟，請參閱[將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md)。</span><span class="sxs-lookup"><span data-stu-id="ffce6-140">For full steps, see [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).</span></span>
 
-7. <span data-ttu-id="3089e-139">聯繫購買自助購買訂閱的人員，並要求他們取消。</span><span class="sxs-lookup"><span data-stu-id="3089e-139">Contact the person who bought the self-service purchase subscription and ask them to cancel it.</span></span>
+7. <span data-ttu-id="ffce6-141">聯繫購買自助購買訂閱的人員，並要求他們取消。</span><span class="sxs-lookup"><span data-stu-id="ffce6-141">Contact the person who bought the self-service purchase subscription and ask them to cancel it.</span></span>
 
-## <a name="need-help-contact-us"></a><span data-ttu-id="3089e-140">需要協助嗎？</span><span class="sxs-lookup"><span data-stu-id="3089e-140">Need help?</span></span> <span data-ttu-id="3089e-141">聯繫我們。</span><span class="sxs-lookup"><span data-stu-id="3089e-141">Contact us.</span></span>
+## <a name="need-help-contact-us"></a><span data-ttu-id="ffce6-142">需要協助嗎？</span><span class="sxs-lookup"><span data-stu-id="ffce6-142">Need help?</span></span> <span data-ttu-id="ffce6-143">聯繫我們。</span><span class="sxs-lookup"><span data-stu-id="ffce6-143">Contact us.</span></span>
 
-<span data-ttu-id="3089e-142">如需有關自助購買的常見問題，請參閱[自助購買常見問題](self-service-purchase-faq.md)。</span><span class="sxs-lookup"><span data-stu-id="3089e-142">For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.md).</span></span>
+<span data-ttu-id="ffce6-144">如需有關自助購買的常見問題，請參閱[自助購買常見問題](self-service-purchase-faq.md)。</span><span class="sxs-lookup"><span data-stu-id="ffce6-144">For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.md).</span></span>
 
-<span data-ttu-id="3089e-143">如果您有任何問題或需要協助您購買自助服務，請[與支援人員聯繫](../../admin/contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="3089e-143">If you have questions or need help with self-service purchases, [contact support](../../admin/contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="ffce6-145">如果您有任何問題或需要協助您購買自助服務，請[與支援人員聯繫](../../admin/contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="ffce6-145">If you have questions or need help with self-service purchases, [contact support](../../admin/contact-support-for-business-products.md).</span></span>
