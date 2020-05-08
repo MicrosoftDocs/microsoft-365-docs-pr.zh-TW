@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
 description: 瞭解如何為商務用 Microsoft 365 訂閱啟用、更新或新增授權。
-ms.openlocfilehash: da4e42ae2dadec8d376b9ef8d12c6d4cb4fe7af5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0f8233613f7929dad37167e7237be335d4e8f567
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636449"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165123"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>輸入您從 Microsoft 開放購買的產品金鑰
 
@@ -63,7 +63,7 @@ ms.locfileid: "43636449"
 
 查看此常見錯誤和解決方案清單：[您的產品金鑰有問題嗎？](product-key-errors-and-solutions.md)
   
-合作夥伴請參閱[合作夥伴：使用產品金鑰設定客戶訂閱](https://support.office.com/article/cf22c50f-95c9-4fa2-b959-c264de256d40.aspx)。
+合作夥伴請參閱[合作夥伴：使用產品金鑰設定客戶訂閱](https://support.microsoft.com/en-us/office/partners-use-a-product-key-to-set-up-a-customer-subscription-cf22c50f-95c9-4fa2-b959-c264de256d40)。
   
 大量授權客戶可造訪 [Microsoft 大量授權服務中心訓練與資源](https://go.microsoft.com/fwlink/p/?LinkId=618103)進一步瞭解。
   

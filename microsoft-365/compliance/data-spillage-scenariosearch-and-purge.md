@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用 eDiscovery 和搜尋工具來管理和回應組織中的資料外泄事件。
-ms.openlocfilehash: fd230d3e54ca61046a28f60d81d497a413bfa4f7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 708343992d2b8d51d9b10f89cd6b986de00423d6
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630590"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166054"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery 解決方案系列：資料外泄案例-搜尋和清除
 
@@ -120,7 +120,7 @@ Afer 您已驗證搜尋結果，您可能想要與其他人共用您的結果，
   
 您可以在安全性與合規性中心使用郵件追蹤，也可以在 Exchange Online 中使用對應的 Cmdlet PowerShell。 請務必注意，郵件追蹤不會對傳回的資料完整性提供完整的保證。 如需使用郵件追蹤的詳細資訊，請參閱： 
   
-- [安全性與合規性中心內的訊息追蹤](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
+- [安全性與合規性中心內的訊息追蹤](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc)
     
 - [安全性 & 規範中心內的新郵件追蹤](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     

@@ -23,50 +23,50 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: 了解如何傳送加密的電子郵件使用 Outlook。
-ms.openlocfilehash: 559998326caedaf3352741ad9083940f79b1a614
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 瞭解如何使用 Outlook 傳送加密的電子郵件。
+ms.openlocfilehash: fe0835c7b5b3328114ce7820da3336ca9f300d3e
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080453"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165682"
 ---
-# <a name="encrypt-or-label-your-sensitive-email"></a>加密或標籤機密電子郵件
+# <a name="encrypt-or-label-your-sensitive-email"></a>加密或標記敏感的電子郵件
 
-您的資料和活動資訊是很重要，通常機密。 協助讓您和您的電子郵件收件者的資訊則會需要區分大小寫視為使用加密和敏感度標籤來保護機密資訊。
+您的資料和活動資訊非常重要，通常是保密的。 使用加密和敏感度標籤來協助保護此機密資訊，讓您和您的電子郵件收件者以其所需的靈敏度來處理資訊。
 
 
 ## <a name="best-practices"></a>最佳做法
 
-您傳送電子郵件具有敏感或機密資訊之前，請考慮開啟：
+在您傳送包含機密或機密資訊的電子郵件之前，請考慮開啟：
 
-- **加密：** 您可以加密您的電子郵件保護的電子郵件中的資訊私密性。 當您將加密的電子郵件訊息時，它會從可讀取的純文字轉換成亂碼的 cypher 文字。 只有收件者具有比對的公開金鑰用來加密郵件的私密金鑰可解密讀取的郵件。 任何收件者，而不相對應之私密金鑰，不過，會看到無法解讀文字。 您的系統管理員可以定義規則以自動加密符合特定準則的郵件。 比方說，您的系統管理員可以建立傳送組織外的所有郵件都加密的規則或涵蓋特定單字或片語的所有郵件。 任何加密的郵件將會自動套用。
-- **敏感度標籤：** 您可以套用到您的檔案和電子郵件，讓它們與您的行銷活動資訊保護原則相容的敏感度標籤也可以設定您的行銷活動。 當您設定標籤時，標籤保存與您的電子郵件，即使它傳送-例如，藉由讓它成為您的郵件標頭。
+- **加密：** 您可以加密您的電子郵件，以保護電子郵件中資訊的隱私權。 當您加密電子郵件時，它會從可讀取的純文字轉換成亂碼的 cypher 文字。 只有具有與用來加密郵件之公開金鑰相符的私密金鑰的收件者，才能解密郵件以進行讀取。 沒有對應私密金鑰的任何收件者，但是會看到無法破譯的文字。 您的系統管理員可以定義規則，以自動加密符合特定準則的郵件。 例如，您的系統管理員可以建立一種規則，用來加密您的組織外傳送的所有郵件，或所有提及特定文字或片語的郵件。 將會自動套用任何加密規則。
+- **敏感度標籤：** 您的活動也可以設定敏感度標籤，您可以將敏感度標籤套用至您的檔案和電子郵件，使其符合您的活動的資訊保護原則。 當您設定標籤時，標籤會隨電子郵件一起保留，即使傳送時也是如此; 例如，它會顯示為郵件的標頭。
 
-![含有圖說文字的標籤和加密的電子郵件的圖表](../media/m365-campaign-email-encrypt.png)
+![具有標籤和加密之標注的電子郵件圖表](../media/m365-campaign-email-encrypt.png)
 
 
 ## <a name="set-it-up"></a>進行設定
 
-如果您想要加密的郵件不符合的預先定義的規則，或您的系統管理員尚未設定任何規則，您可以在傳送郵件之前，先套用各種不同的加密的郵件。 傳送加密的郵件，從 Outlook 2013 或 2016 或 Outlook 2016 for Mac 中，選取**選項 > 權限**，然後選取您需要的保護選項。 您也可以藉由選取 [**保護**] 按鈕，網頁型 Outlook 中傳送加密的郵件。 如需詳細資訊，請參閱[傳送、 檢視和回覆加密郵件的電腦版 Outlook 中](https://support.office.com/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-US&rs=en-US&ad=US)。
+如果您想要加密的郵件不符合預先定義的規則，或系統管理員尚未設定任何規則，您可以在傳送郵件之前，套用各種不同的加密規則。 若要從 Outlook 2013 或2016（或 Outlook 2016 Mac）傳送加密的郵件，請選取 [**選項] > 許可權**]，然後選取所需的保護選項。 您也可以在 web 上的 Outlook 中選取 [**保護**] 按鈕來傳送加密的郵件。 如需詳細資訊，請參閱[在 Outlook 中傳送、查看和回復加密郵件的電腦](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)。
 
-## <a name="admin-settings"></a>系統管理員設定
+## <a name="admin-settings"></a>系統管理設定
 
-您可以了解在[Office 365 中的電子郵件加密](https://docs.microsoft.com/office365/securitycompliance/email-encryption)的電子郵件加密設定。
+您可以[在 Office 365 中瞭解如何在電子郵件加密中](https://docs.microsoft.com/office365/securitycompliance/email-encryption)設定電子郵件加密。
 
-### <a name="automatically-encrypt-email-messages"></a>會自動加密電子郵件
+### <a name="automatically-encrypt-email-messages"></a>自動加密電子郵件
 
-系統管理員可以建立郵件流程規則來自動保護的傳送和接收來自您的行銷活動的電子郵件訊息。 設定規則以加密所有外寄的電子郵件，並移除加密，從加密的郵件來自組織內部或從組織傳送加密郵件的回覆。 
+系統管理員可以建立郵件流程規則，以自動保護從您的活動中傳送及接收的電子郵件。 設定用來加密任何外寄電子郵件的規則，並從組織內部或從組織傳送的加密郵件中移除加密。 
 
-建立郵件流程規則來加密與新的 Office 365 郵件加密 (OME) 功能的電子郵件。 定義郵件流程規則觸發郵件加密與新的 OME 功能使用 Exchange 系統管理中心 (EAC)。 
+您可以建立郵件流程規則，以使用新的 Office 365 郵件加密（OME）功能來加密電子郵件。 使用 Exchange 系統管理中心（EAC）定義郵件流程規則，以使用新的 OME 功能來觸發郵件加密。 
 
-1. 在網頁瀏覽器中，使用已授與全域系統管理員權限的工作或學校帳戶登入 Office 365。 
+1. 在網頁瀏覽器中，使用已被授與全域系統管理員許可權的公司或學校帳戶登入 Office 365。 
 2. 選擇 [管理] 磚。 
-3. 在系統管理中心中，選擇 [**系統管理中心 > 交換**。 
+3. 在系統管理中心中，選擇 [系統**管理中心] > Exchange**。 
 
-如需詳細資訊，請參閱[定義郵件流規則以加密 Office 365 中的電子郵件](https://docs.microsoft.com/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email)。
+如需詳細資訊，請參閱[定義郵件流程規則，以加密 Office 365 中的電子郵件訊息](https://docs.microsoft.com/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email)。
 
-### <a name="brand-your-encryption-messages"></a>品牌加密郵件
+### <a name="brand-your-encryption-messages"></a>標記加密郵件
 
-您也可以套用行銷活動品牌自訂外觀和電子郵件訊息中的文字。 如需詳細資訊，請參閱[新增至加密郵件的貴組織的品牌](https://docs.microsoft.com/office365/securitycompliance/email-encryption)。
+您也可以套用您的行銷活動品牌，以自訂電子郵件訊息中的外觀和文字。 如需詳細資訊，請參閱[將貴組織的品牌新增至加密的郵件](https://docs.microsoft.com/office365/securitycompliance/email-encryption)。
 

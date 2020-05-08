@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 989d30a53b767bc8ec757c92e72198e3900bcfeb
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 70e36d4f11f7fc1a5870f41a32351cf7078bdc68
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943662"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065768"
 ---
 # <a name="russian-personal-data-localization-requirements"></a>俄文個人資料當地語系化需求
 
@@ -71,5 +71,5 @@ Microsoft 邀請客戶應考慮透過 Microsoft 雲端解決方案提供者（CS
 - **線上支援**：透過[電源平臺支援](https://docs.microsoft.com/power-platform/admin/get-help-support)提交查詢
 
 > [!NOTE]
-> <sup>1</sup>聯邦法律否。 242-針對在 FZ （edition edition 12.31.2014） "的法律作用中輸入修正案，以瞭解在資訊和電信網路的「日期」中的個人資料處理常式。 <br>
+> <sup>1</sup>聯邦法律否。 FZ （edition edition 12.31.2014） ' On the 俄語同盟的法律作用中，輸入改正，以說明資訊和電信網路中的個人資料處理常式的 07.21.2014 242 <br>
 > <sup>2</sup>聯邦法律否。 152-從 07.27 FZ 個人資料。 2006<br>

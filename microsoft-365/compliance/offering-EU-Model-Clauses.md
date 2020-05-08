@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c792653cf8434a14bc89776a4ec870bc0d9a67ca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 778338220cf7897f8a557fb1e335062d3effeac5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637977"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066416"
 ---
 # <a name="european-union-model-clauses"></a>歐盟示範條款
 
@@ -38,10 +38,6 @@ Microsoft 已投資完成必要的執行程序，以符合將個人資料傳輸�
 Microsoft 為歐盟的資料保護工作小組提供其標準合約條款，以便檢閱及核准。 歐盟資料保護工作小組包含來自歐洲資料保護主管、歐洲委員會和 28 個歐盟資料保護機構 (DPA) 的代表。
 
 小組決定 Microsoft 合約中的佈建實作，符合其嚴格需求。 (Microsoft 是獲得小組背書和核准的第一個雲端服務提供者。)核准涵蓋在示範條款 2010/87/EU 中反映的參與項目，而不是在附錄中，描述由資料匯入者實作的資料傳輸和安全性措施。 您可以使用 DPA 來個別分析附錄。
-
-深入了解 Microsoft 雲端上歐盟示範條款的優點
-
-[下載歐盟示範條款背景資料](https://aka.ms/eu-model-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -77,7 +73,7 @@ Microsoft 會持續評估歐盟標準，並視需要更新服務。
 
 **什麼是「子處理者」？**
 
-「子處理者」是指按照資料控制者指示以及歐盟示範條款和轉包合約，來處理個人資料的某個人員。 Microsoft 客戶 (尤其是獨立軟體廠商 (ISV)) 有時候本身就是資料處理者。 在這些情況下，Microsoft 是子處理者。
+子處理者是指按照資料控制者指示以及歐盟示範條款和轉包合約，來處理個人資料的某個人員。 Microsoft 客戶 (尤其是獨立軟體廠商 (ISV)) 有時候本身就是資料處理者。 在這些情況下，Microsoft 是子處理者。
 
 **我要從何處著手組織自身的合規性工作？**
 
@@ -94,7 +90,3 @@ Microsoft 會持續評估歐盟標準，並視需要更新服務。
 - [Microsoft 通用控制措施中樞合規性架構](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/E/5/F/E5FA8D11-07A4-4496-82B3-0BCFABAA2FB7/EU_Model_Clauses_Compliance_Backgrounder.pdf)。

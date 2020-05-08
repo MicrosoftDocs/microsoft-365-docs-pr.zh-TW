@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: 尋找當您變更計畫或公司名稱時，如何在兩部 Microsoft 365 帳戶之間手動傳輸資料，或將多個訂閱組合為一個。
-ms.openlocfilehash: c0cb6531518c18e8cdc5b5829dc05a5b9b375291
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1eaaf48f445eb54ebf91b96924c39e9062eea4fb
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628372"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053737"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>在兩個帳戶間手動傳輸資料
 
@@ -55,7 +55,7 @@ ms.locfileid: "43628372"
 
 移至每個帳戶的下列頁面，並根據舊帳戶的設定，設定新帳戶。
   
-如果您要將資料從 Microsoft 365 轉接至 Microsoft 365 中型企業或 Microsoft 365 企業版，系統管理員頁面會以不同的方式結構化。 觀賞[影片：介紹 Microsoft 365 Enterprise](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx)，然後移至下列位置，以查看系統管理設定。
+如果您要將資料從 Microsoft 365 轉接至 Microsoft 365 中型企業或 Microsoft 365 企業版，系統管理員頁面會以不同的方式結構化。 觀賞[影片：介紹 Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/admin/)，然後移至下列位置，以查看系統管理設定。
   
 Microsoft 365 企業版和 Microsoft 365 中型企業版：
   
@@ -90,9 +90,9 @@ Microsoft 365 企業版和 Microsoft 365 中型企業版：
   
 - 您可以將舊網站儲存為範本，然後將範本匯入新的網站。
 
-- 若要傳輸檔，請先在新網站上手動重新建立階層。 然後，您可以同時開啟這兩個 SharePoint 小組網站、使用 Windows Explorer 開啟文件庫，以及複製及貼上檔。 請參閱[影片：使用 [以瀏覽器開啟] 複製或移動文件庫](https://support.office.com/article/c27bc6f3-7b38-4c29-b947-5d00c7153384.aspx)檔案。
+- 若要傳輸檔，請先在新網站上手動重新建立階層。 然後，您可以同時開啟這兩個 SharePoint 小組網站、使用 Windows Explorer 開啟文件庫，以及複製及貼上檔。 請參閱[影片：使用 [以瀏覽器開啟] 複製或移動文件庫](https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790)檔案。
 
-- 若要傳輸清單資料、儲存[清單範本](https://support.office.com/article/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393.aspx)，然後使用儲存的範本在新網站上重新建立清單。
+- 若要傳輸清單資料、儲存[清單範本](https://support.microsoft.com/en-us/office/manage-list-templates-c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)，然後使用儲存的範本在新網站上重新建立清單。
 
 - 若要將文件庫或清單內容從 SharePoint 線上環境（商務用 OneDrive 或小組網站）儲存至檔案共用或本機電腦，請參閱[手動遷移 SharePoint 線上內容的相關資訊](https://support.microsoft.com/kb/2783484)。
 

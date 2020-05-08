@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: 使用 Office 365 中的「安全性與合規性中心」來啟用封存信箱，以便支援組織的郵件保留、電子文件探索和保留需求。
-ms.openlocfilehash: 6ff4e0eda616e9bdd5fe10832ae334c9337272f0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f544e739bc28b2383492baec5465be1502a08d0d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631738"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166014"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>啟用「安全性與合規性中心」的封存信箱
   
@@ -131,7 +131,7 @@ Office 365 中的封存 (稱為就地封存) 可為使用者提供額外的信�
   
 - 當封存信箱啟用時，使用者可以將郵件儲存在其封存信箱中。 使用者可以使用 Microsoft Outlook 和 Outlook 網頁版來存取其封存信箱。 只要使用這些用戶端應用程式，使用者就能檢視其封存信箱中的郵件，並且在其主要信箱與其封存信箱之間移動或複製郵件。 使用者也可以使用「復原刪除的郵件」工具復原其封存信箱的 [可復原的項目] 資料夾中的已刪除郵件。
 
-   如需支援就地封存的 Outlook 授權清單，請參閱[Exchange 功能的 Outlook 授權需求](https://support.office.com/article/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99)。
+   如需支援就地封存的 Outlook 授權清單，請參閱[Exchange 功能的 Outlook 授權需求](https://support.microsoft.com/zh-TW/office/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99)。
 
 - 封存信箱可協助您和您的使用者符合組織的保留、電子文件探索和保留需求。 例如，您可以使用組織的 Exchange 保留原則，將信箱內容移至使用者的封存信箱。 使用「安全性與合規性中心」的「內容搜尋」工具搜尋使用者信箱的特定內容時，系統也會一併搜尋使用者的封存信箱。 此外，當您採行訴訟資料暫留或是將保留原則套用至使用者的信箱時，系統也會保留封存信箱中的郵件。
   

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: 瞭解如何啟用 Microsoft 365，以在幾個步驟中保護本機作用中已加入目錄的 Windows 10 裝置。
-ms.openlocfilehash: 431c1be74723e156befb13ffe1ed98b48b9a23cb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: adc125c32fe5aa56be8c17c07f28316602a36594
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633276"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165802"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-for-business"></a>啟用已加入網域的 Windows 10 裝置以供商務用 Microsoft 365 管理
 
@@ -53,7 +53,7 @@ ms.locfileid: "43633276"
 
 ## <a name="2-install-and-configure-azure-ad-connect"></a>2. 安裝及設定 Azure AD Connect
 
-若要將您的使用者、群組和連絡人從本機 Active Directory 同步處理至 Azure Active Directory，請安裝 Azure Active Directory Connect，並設定目錄同步作業。 請參閱[設定 Office 365 的目錄同步](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)處理以深入瞭解。
+若要將您的使用者、群組和連絡人從本機 Active Directory 同步處理至 Azure Active Directory，請安裝 Azure Active Directory Connect，並設定目錄同步作業。 請參閱[設定 Office 365 的目錄同步](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)處理以深入瞭解。
 
 > [!NOTE]
 > Microsoft 365 for business 的步驟完全相同。 

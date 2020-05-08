@@ -9,16 +9,16 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
 description: 瞭解如何根據敏感度設定小組以保護您的資料
-ms.openlocfilehash: 77493398b11109a51c4e60599561fd8cd4f6c3ac
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 8704c3a0a271c247652d611e963ff1d26308dcdb
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002514"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159464"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>使用 Microsoft 365 設定安全協同作業
 
@@ -85,9 +85,9 @@ ms.locfileid: "44002514"
 
 從基準層開始，然後根據需要新增使用*敏感*和*高度機密*階層的團隊，以協助保護組織中的資訊。 請參閱下列資源以開始執行：
 
-- [設定具有基準保護的團隊](configure-teams-baseline-protection.md)
-- [設定具有敏感資料保護的團隊](configure-teams-sensitive-protection.md)
-- [設定具有高敏感度資料保護的團隊](configure-teams-highly-sensitive-protection.md)
+- [為小組設定基準保護](configure-teams-baseline-protection.md)
+- [為團隊設定高敏感性資料保護](configure-teams-sensitive-protection.md)
+- [為小組設定高敏感度資料保護](configure-teams-highly-sensitive-protection.md)
 
 如果您有高度機密的專案需要在組織內共用額外的保護，您可以設定一個小組，該小組使用自己的敏感度標籤來加密檔案，只有小組成員可以讀取這些檔案。 如需詳細資訊，請參閱[Configure a team with security 隔離](secure-teams-security-isolation.md)。
 
@@ -104,7 +104,7 @@ ms.locfileid: "44002514"
 根據所共用資訊的敏感度，您可以新增安全保護，以協助防止 oversharing。 這些資源將協助您設定組織所需的保護：
 
 - [與未驗證使用者共用檔案和資料夾的最佳做法](best-practices-anonymous-sharing.md)
-- [在與組織外的人員共用檔案時，限制資訊意外暴露。](share-limit-accidental-exposure.md)
+- [在與組織外的人員共用檔案時，限制資訊意外暴露](share-limit-accidental-exposure.md)
 - [建立安全的來賓共用環境](create-secure-guest-sharing-environment.md)
 
 如果您有一個主要專案與一個夥伴組織，您可以使用 Azure 權利管理，在您為專案設定的小組中管理該組織的客人。 如需詳細資訊，請參閱[Create a B2B extranet with managed guests](b2b-extranet.md) 。

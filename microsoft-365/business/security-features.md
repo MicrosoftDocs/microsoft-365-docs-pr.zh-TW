@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 深入瞭解 Microsoft 365 商務版 Premium 隨附的安全性功能，協助保護電腦、電話和平板電腦上的資料。
-ms.openlocfilehash: 35eb0ac1dce216ccc557fc629ddb5d2df50e7134
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f6aef84afc76217161dee6b68d626128e0cc15b2
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635137"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165750"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 商務版安全性和合規性功能
 
@@ -64,7 +64,7 @@ Microsoft 365 商務版特優提供簡化的安全性功能，以協助保護電
 
 Microsoft 365 商務版中的高級功能可協助您保護您的公司免受網路威脅，並保護機密資訊。
   
-- **[Office 365 進階威脅防護](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
+- **[Office 365 進階威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
     
     高級威脅防護（ATP）可協助您的企業防禦複雜的網路釣魚和勒索軟體攻擊，以損臔員工或客戶資訊。 功能包括：
     
@@ -97,7 +97,7 @@ Microsoft 365 商務版中的高級功能可協助您保護您的公司免受網
 
 您的 Microsoft 365 商務版訂閱中包含的功能可協助您維護符合性和法規標準。
 
-- **[資料遺失防護原則](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)**（DLP）綜述。 
+- **[資料遺失防護原則](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)**（DLP）綜述。 
     
     您可以將 DLP 設定為自動偵測敏感資訊，例如信用卡號碼、社會保險號碼等等，以防止在公司外意外共用。
     

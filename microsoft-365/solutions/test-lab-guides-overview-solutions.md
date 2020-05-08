@@ -12,17 +12,18 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- M365solutions
 ms.custom:
 - Ent_Architecture
-- M365solutions
 description: 使用測試實驗室指南來建立開發/測試環境中的 Microsoft 365 解決方案和案例。
-ms.openlocfilehash: 7f05e0268efe99c22177db830c82b32ba2480652
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 38b06678df46189f49b40a5752803786a94784fe
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002502"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159440"
 ---
 # <a name="test-lab-guides-for-solutions-and-scenarios"></a>針對解決方案與案例的測試實驗室指南
 

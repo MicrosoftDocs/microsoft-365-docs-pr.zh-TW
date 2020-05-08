@@ -9,17 +9,17 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom: ''
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 深入了解如何在與組織外的人員共用檔案時，限制資訊意外暴露。
-ms.openlocfilehash: 93fceaca45a3f814341678c2d29d5feea3653369
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 2687705a9edab9dea486e28d8e417cf890cc0424
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002165"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159380"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>在與組織外的人員共用檔案時，限制資訊意外暴露。
 

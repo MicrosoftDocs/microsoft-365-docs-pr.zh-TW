@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: 在本文中，您將瞭解如何自訂、組織和管理小組網站，以進行檔案儲存與共享。
-ms.openlocfilehash: 49bacdd193277e88eb076baeb90380c8f696d27b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1830cd3df75ee80f25ff0ca3147d4491103102e4
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033783"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155278"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自訂您的小組網站以進行檔案儲存與共享
 
@@ -51,7 +51,7 @@ ms.locfileid: "44033783"
   
 若要改善網站的可探索性，請將其新增為 SharePoint 開始頁面上的功能連結。 如需詳細資訊，請參閱[將特色連結新增至 SharePoint 開始頁面](/sharepoint/change-links-list-on-sharepoint-home-page)。
   
-若要將圖像新增至小組網站開始頁面，請參閱[add a picture or image file to a SharePoint page](https://support.office.com/article/4A9B0E98-C89A-4A41-8ADB-B7750DCCCA16.aspx#ID0EAACAAA=SharePoint_Online)。
+若要將圖像新增至小組網站開始頁面，請參閱[add a picture or image file to a SharePoint page](https://support.microsoft.com/en-us/office/add-a-picture-or-image-file-to-a-sharepoint-page-4a9b0e98-c89a-4a41-8adb-b7750dccca16)。
   
 若要將頁面新增至您的網站，請參閱[將頁面新增至網站](https://support.office.com/article/b3d46deb-27a6-4b1e-87b8-df851e503dec.aspx)。
   
@@ -65,7 +65,7 @@ ms.locfileid: "44033783"
    
 瞭解如何編輯、刪除、取出檔案等等。 如需詳細資訊，請參閱[使用文件庫中的](https://support.office.com/article/a9d89171-1673-4892-9dd2-1ca52037dea2.aspx)檔案。
   
-如需建立程式庫視圖以呈現特定資料的詳細資訊，請參閱[建立文件庫的自訂視圖](https://support.office.com/article/8f6b08e0-a9a0-4232-9b9b-b374a2ad3da7.aspx)。
+如需建立程式庫視圖以呈現特定資料的詳細資訊，請參閱[建立文件庫的自訂視圖](https://support.microsoft.com/en-us/office/create-a-custom-view-of-a-document-library-8f6b08e0-a9a0-4232-9b9b-b374a2ad3da7)。
   
 ## <a name="work-with-lists-to-organize-data"></a>使用清單來組織資料
 
@@ -73,7 +73,7 @@ SharePoint 包含許多您可以新增至網站的清單範本，例如連結清
   
 瞭解如何[在 SharePoint 中建立清單](https://support.office.com/article/0D397414-D95F-41EB-ADDD-5E6EFF41B083.aspx#ID0EAAGAAA=Online)。
   
-如需詳細資訊，請參閱在[SharePoint 清單或文件庫中建立欄](https://support.office.com/article/2b0361ae-1bd3-41a3-8329-269e5f81cfa2.aspx#ID0EAADAAA=Online)。
+如需詳細資訊，請參閱在[SharePoint 清單或文件庫中建立欄](https://support.microsoft.com/en-us/office/create-a-column-in-a-sharepoint-list-or-library-2b0361ae-1bd3-41a3-8329-269e5f81cfa2)。
   
 如果您要將大量資料儲存在清單中，請參閱[在 SharePoint 中管理大型清單和文件庫](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx)。
   

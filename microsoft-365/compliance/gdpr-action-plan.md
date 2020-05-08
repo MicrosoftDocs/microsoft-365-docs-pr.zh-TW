@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c4b135f189aa43e4e7015550739c9e79a74c2310
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1531b94300f29df17127879056ceed809502bd18
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036076"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165994"
 ---
 # <a name="microsoft-365-gdpr-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 GDPR 行動計畫 — 前 30 天、90 天及過後的首要工作
 
@@ -55,7 +55,7 @@ GDPR 引入新的規則，供向歐盟 (EU) 人員提供產品及服務，或收
 |**適用範圍**|**工作**|
 |:-----|:-----|
 | **開始使用 Microsoft 365 資料控管和合規性功能，實作合規性需求。** |* 使用 [Microsoft 服務信任入口網站](https://support.office.com/article/get-started-with-the-microsoft-service-trust-portal-f30e2353-0bd6-41ed-8347-eea1fb8d2662) (STP) 內的 [Microsoft 合規性分數](compliance-score.md)，管理您的 GDPR 合規性。<br>* 協助使用者識別及分類個人資料，如同 GDPR 所定義，方法是對 Exchange 電子郵件、SharePoint 網站、商務用 OneDrive 網站及 Microsoft 365 群組使用分類結構描述以及相關聯的 Office 365 標籤。 請參閱 [GDPR 的 Office 365 資訊保護](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr)。|
-| **使用 Microsoft 365 的安全性功能來防止資料外洩，並為個人資料實作保護。** |* 藉由針對所有使用者帳戶啟用[多重要素驗證](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)，以及針對所有應用程式啟用[新式驗證](https://support.office.com/article/using-office-365-modern-authentication-with-office-clients-776c0036-66fd-41cb-8928-5495c0f9168a#bk_getstarted)，在 Microsoft Cloud 中改善系統管理員和使用者的驗證。 如需建議的原則組態，請參閱[身分識別與裝置存取設定](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)。<br>* 將 [Windows Defender 進階威脅防護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (ATP) 部署至所有桌上型電腦以防範惡意程式碼、資料外洩防護和回應。<br>* 針對所有 Exchange 信箱啟用[稽核記錄](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) (部分機器翻譯) 和[信箱稽核](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918) (部分機器翻譯)，以監視潛在的惡意活動，並啟用資料外洩的鑑識調查分析。<br>* 設定、測試及部署 [Office 365 資料外洩防護 (DLP) 原則](https://support.office.com/article/overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e) (部分機器翻譯)，以在文件和電子郵件內識別、監視及[自動保護](https://docs.microsoft.com/office365/enterprise/apply-protection-to-personal-data-in-office-365)超過 80 個常見的敏感性資料類型，包括財務、醫療及個人識別資訊。<br>* 實作 [Office 365 進階威脅防護 (ATP)](https://support.office.com/article/office-365-advanced-threat-protection-e100fe7c-f2a1-4b7d-9e08-622330b83653) (部分機器翻譯)，協助防範最常見的攻擊，包括網路釣魚電子郵件和包含惡意連結和附件的 Office 文件。|
+| **使用 Microsoft 365 的安全性功能來防止資料外洩，並為個人資料實作保護。** |* 藉由針對所有使用者帳戶啟用[多重要素驗證](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)，以及針對所有應用程式啟用[新式驗證](https://support.office.com/article/using-office-365-modern-authentication-with-office-clients-776c0036-66fd-41cb-8928-5495c0f9168a#bk_getstarted)，在 Microsoft Cloud 中改善系統管理員和使用者的驗證。 如需建議的原則組態，請參閱[身分識別與裝置存取設定](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)。<br>* 將 [Windows Defender 進階威脅防護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (ATP) 部署至所有桌上型電腦以防範惡意程式碼、資料外洩防護和回應。<br>* 針對所有 Exchange 信箱啟用[稽核記錄](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) (部分機器翻譯) 和[信箱稽核](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918) (部分機器翻譯)，以監視潛在的惡意活動，並啟用資料外洩的鑑識調查分析。<br>* 設定、測試及部署 [Office 365 資料外洩防護 (DLP) 原則](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) (部分機器翻譯)，以在文件和電子郵件內識別、監視及[自動保護](https://docs.microsoft.com/office365/enterprise/apply-protection-to-personal-data-in-office-365)超過 80 個常見的敏感性資料類型，包括財務、醫療及個人識別資訊。<br>* 實作 [Office 365 進階威脅防護 (ATP)](https://support.office.com/article/office-365-advanced-threat-protection-e100fe7c-f2a1-4b7d-9e08-622330b83653) (部分機器翻譯)，協助防範最常見的攻擊，包括網路釣魚電子郵件和包含惡意連結和附件的 Office 文件。|
 
 ## <a name="beyond-90-days--ongoing-security-data-governance-and-reporting"></a>超過 90 天 - 持續的安全性、資料控管及報告
 

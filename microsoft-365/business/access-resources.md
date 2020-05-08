@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 瞭解如何從已加入 Azure Active Directory 的 Windows 10 裝置，存取內部部署資源（如商務線應用程式、檔案共用及印表機）。
-ms.openlocfilehash: c1e04e5ca0d36c32a55a9819140356db5093e3a1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 980efbf09349cc0203ac50ae5e028c008d5694ca
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627447"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165894"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>從 Microsoft 365 商務版 Premium 中已加入 Azure AD 的裝置存取內部部署資源
 
@@ -41,7 +41,7 @@ ms.locfileid: "43627447"
 
 完成下列步驟，讓您組織的 Azure AD 加入裝置能夠存取內部部署資源。
   
-1. 若要將您的使用者、群組和連絡人從本機 Active Directory 同步處理至 Azure Active Directory，請依照[設定 Office 365 的目錄同步](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)處理中所述，執行目錄同步處理嚮導和 Azure AD Connect。
+1. 若要將您的使用者、群組和連絡人從本機 Active Directory 同步處理至 Azure Active Directory，請依照[設定 Office 365 的目錄同步](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)處理中所述，執行目錄同步處理嚮導和 Azure AD Connect。
     
 2. 目錄同步處理完成後，請確定您組織的 Windows 10 裝置已加入 Azure AD。 此步驟會在每個 Windows 10 裝置上進行個別的執行。 如需詳細資訊，請參閱[為 Microsoft 365 商務版使用者設定 Windows 裝置](set-up-windows-devices.md)。 
     

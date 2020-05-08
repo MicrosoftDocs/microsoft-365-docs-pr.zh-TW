@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
+- M365solutions
 ms.custom: ''
 description: 使用 Microsoft 365 建立不同的通訊方式來傳達 COVID-19 的內部和公開消息。
-ms.openlocfilehash: 4f9144f743998a511b76d26f69ae6cc734193232
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 686cfa12d76bf4122ebe4ae22a49da938322fee9
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141475"
+ms.locfileid: "44160807"
 ---
 # <a name="step-5-create-covid-19-crisis-communication-venues"></a>步驟 5：建立 COVID-19 危機通訊地點
 

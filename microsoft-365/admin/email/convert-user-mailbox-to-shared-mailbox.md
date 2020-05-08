@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '瞭解如何將私人信箱轉換為可供多位使用者存取的共用信箱。 '
-ms.openlocfilehash: 7e652dc77218be44caa56515e4b21efb692cbaa3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 51817001b02c1dd5dd0e82f5795ef1a3f66bf7c7
+ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628888"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44162695"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>將使用者信箱轉換為共用信箱
 
@@ -48,7 +48,7 @@ ms.locfileid: "43628888"
 
 3. 選取使用者信箱。 在 [**轉換為共用信箱**] 底下，選取 [**轉換**]。
 
-4. 如果信箱小於50GB，您可以移除[使用者的授權](../manage/remove-licenses-from-users.md)，然後停止付款。 不要刪除使用者的舊信箱。 共用信箱需要以錨定。 如果您要轉換的是離開組織之員工的信箱，您應該採取額外的步驟，確定他們無法再登入。 請參閱[從 Microsoft 365 移除前任員工](../add-users/remove-former-employee.md)。
+4. 如果信箱小於50GB，您可以移除[使用者的授權](../manage/remove-licenses-from-users.md)，然後停止付款。 請勿刪除使用者的帳戶。 共用信箱需要以錨定。 如果您要轉換的是離開組織之員工的信箱，您應該採取額外的步驟，確定他們無法再登入。 請參閱[從 Microsoft 365 移除前任員工](../add-users/remove-former-employee.md)。
     
 5. 如需有關共用信箱的其他資訊，請參閱[關於共用](about-shared-mailboxes.md)信箱及[建立共用信箱](create-a-shared-mailbox.md)。
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 使用 Office 365，您的內容會在靜止時以最強的加密、通訊協定和技術進行加密。 深入瞭解 Office 365 中的加密。
-ms.openlocfilehash: fdd1c50c7fde1892b5bab4ad83cddf8e032f4d61
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 16b7786097690af6a2dbb558582a7cf88e605bec
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631678"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166004"
 ---
 # <a name="encryption"></a>加密
 
@@ -63,7 +63,7 @@ Microsoft 365 針對 Office 365 中的大量加密、檔加密和信箱加密，
   
 - [什麼是 Azure 版權管理？](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [在系統管理中心啟動 Rights Management](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
+- [在系統管理中心啟動 Rights Management](https://docs.microsoft.com/office365/enterprise/activate-rms-in-office-365)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
@@ -75,7 +75,7 @@ Microsoft 365 針對 Office 365 中的大量加密、檔加密和信箱加密，
 |:-----|:-----|
 |設定組織的加密  <br/> |[設定 Office 365 企業版中的加密](set-up-encryption.md) <br/> |
 |查看憑證、技術和 TLS 密碼套件的詳細資料 <br/> |[加密的技術詳細資料](technical-reference-details-about-encryption.md) <br/> |
-|在行動裝置上使用加密的郵件  <br/> |[在您的 Android 裝置上查看加密郵件](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [在 iPhone 或 iPad 上查看加密郵件](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
+|在行動裝置上使用加密的郵件  <br/> |[在您的 Android 裝置上查看加密郵件](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [在 iPhone 或 iPad 上查看加密郵件](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
 |使用密碼保護加密檔  <br/><br/>  瀏覽器不支援密碼保護。 使用桌上出版的 Word、Excel 及 PowerPoint 以進行密碼保護。 |[新增或移除檔、活頁簿或簡報中的保護](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> 選擇 [**新增保護**] 區段，然後查看 [**使用密碼加密**]。  |
 |移除檔的加密  <br/> |[新增或移除檔、活頁簿或簡報中的保護](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> 選擇 [**移除保護**] 區段，然後參閱 [**移除密碼加密**]。  |
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 63dcc6351b2ba0074bf71583577a34ddcc33ed94
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 90f8a0f9f6cda7462892dc9d7ebd808e263a9259
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602210"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065738"
 ---
 # <a name="it-grundschutz-compliance-workbook"></a>IT-Grundschutz 合規性活頁簿
 
@@ -69,7 +69,3 @@ Microsoft Cloud Germany 實際位於德國，並遵守德國隱私權法的要�
 - [Azure 德國 IT-Grundschutz 合規性活頁簿](https://aka.ms/grundschutzworkbook)
 - [ISO/IEC 27001:2013 資訊安全性管理系統背景](offering-iso-27001.md)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/B/3/5/B35DE78F-C346-4E31-ABC5-FF87BD1FF97F/ITGrundschutz-Compliance.pdf)。

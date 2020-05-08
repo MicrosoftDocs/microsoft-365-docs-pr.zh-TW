@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: 您可以選擇匯出的重複 eDiscovery 搜尋結果，這樣一來，即使在不同的信箱中找到多個相同郵件實例，也只會匯出一份電子郵件。
-ms.openlocfilehash: 17bfb7581da1147c7de8cae0437fe91316a3fcb6
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 6a63783efd76d6e598d3f00dd8a683317c261d2d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943130"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166044"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>電子文件探索搜尋結果中的重複資料刪除
 
@@ -84,4 +84,4 @@ eDiscovery 工具使用下列電子郵件屬性的組合，判斷郵件是否重
 
   - [將電子檔探索搜尋結果匯出至 PST 檔案 In-Place](https://go.microsoft.com/fwlink/p/?linkid=832671)
 
-  - [在 eDiscovery 中心匯出內容及建立報告](https://support.office.com/article/7b2ea190-5f9b-4876-86e5-4440354c381a)
+  - [在 eDiscovery 中心匯出內容及建立報告](https://docs.microsoft.com/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center)

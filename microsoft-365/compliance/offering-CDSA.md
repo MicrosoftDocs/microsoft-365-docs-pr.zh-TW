@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 34e0b0197754a85576c86fc4d447af7a25c0dc62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b349c41f2f423f7c0fca1b66c20c571a3512fa54
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602650"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065858"
 ---
 # <a name="content-delivery--security-association-cdsa-content-protection--security-cps-standard"></a>內容傳遞與安全性關聯 (CDSA) 內容保護與安全性 (CPS) 標準
 
@@ -39,7 +39,7 @@ CPS 認證提供標準式方法，以確保我們和您的客戶在由 Azure 中
 
 Azure 媒體服務是第一個超大規模雲端媒體平台，為點播視訊和即時視訊串流廣播提供即時的加密。 Azure 媒體服務為內容提供多項加強安全性的上傳通道，包括 ExpressRoute 至 Azure 的私有網路連線、透過 Aspera 用戶端的 UDP 上傳，以及透過網際網路的 HTTPS 上傳。
 
-- 了解 Microsoft 雲端上 CDSA 的權益：[了解 CDSA 如何使用 Microsoft Azure 轉換雲端影片製作](https://customers.microsoft.com/story/cdsa-nonprofit-azure-sharepoint-office365-mobility-security-en) (英文版)
+- 了解 Microsoft 雲端上 CDSA 的權益：[了解 CDSA 如何使用 Microsoft Azure 轉換雲端影片製作](https://customers.microsoft.com/story/cdsa-nonprofit-azure-sharepoint-office365-mobility-security-en)
 - 了解如何使用 Azure 安全性與合規性藍圖加快 CDSA 部署：[下載 Microsoft Azure - 實作符合 CDSA 規範的內容保護和安全性指南](https://gallery.technet.microsoft.com/Azure-Implementing-CDSA-8087c7a2)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
@@ -76,7 +76,3 @@ Microsoft 已成功完成 CDSA CPS 認證的六個月續約，而 Azure 目前�
 - [Azure 媒體服務取得 CDSA 安全性認證的方法](https://johndeutscher.com/2015/04/14/how-azure-media-services-earned-cdsa-security-certification/)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - 了解 CDSA 和 Azure 合規性
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/2/6/3/263C244E-20A8-41B1-B2DA-2835E30CE92E/CDSA_Compliance_Backgrounder.pdf)。

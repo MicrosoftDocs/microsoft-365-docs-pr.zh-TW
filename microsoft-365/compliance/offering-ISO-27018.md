@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4376d2ca5ac27ec8e12f266bb7d3bb54289c1dbd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8c04362747a3e4767defcf746e1158849c00725b
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637523"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065758"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>保護雲端中個人資料的 ISO/IEC 27018 工作條例規定
 
@@ -39,8 +39,6 @@ Microsoft 和 ISO/IEC 27018
 - **客戶資料不會沒有明確許可前即用來行銷或廣告。** 某些 CSP 使用客戶資料做為其個別的商業目的，包括目標廣告。 由於 Microsoft 採用 ISO/IEC 27018 作為其範圍內企業雲端服務，因此客戶大可放心其資料永遠不會在明確許可前以此目的遭使用，而許可也不能成為雲端服務使用的條件。
 - **Microsoft 客戶知道其 PII 的現行狀況。** ISO/IEC 27018 需要允許在合理的期間內傳回、轉移和安全處置個人資訊的原則。 如果 Microsoft 與其他需要存取客戶資料的公司合作，Microsoft 會主動地公開這些子處理者的身分識別。
 - **Microsoft 僅遵循具有法律約束力之客戶資料公開的要求。** 如果 Microsoft 必須遵守這項要求 (例如犯罪調查)，我們一定會先行通知客戶，除非法律有所禁止。
-
-了解 Microsoft 雲端上 ISO-27018 的權益：[下載 ISO/IEC 27017 背景資料](https://aka.ms/iso27017-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -133,7 +131,3 @@ Microsoft 雲端和商業技術支援服務會一年根據 ISO/IEC 27018 工作�
 - [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 政府雲端](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/F/D/A/FDA4697E-D72D-4513-8626-A5F294DC7A0F/ISOIEC_27018_Compliance_Backgrounder.pdf)。

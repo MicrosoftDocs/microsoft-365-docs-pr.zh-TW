@@ -1,6 +1,6 @@
 ---
 title: 適用於 Office 伺服器的 GDPR
-description: 深入了解如何在內部部署 Office 伺服器中解決 GDPR 需求。
+description: 了解如何解決 Office 內部部署伺服器中的一般資料保護規定 (GDPR) 需求。
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -11,12 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: b50722d7f37b54b38bac259b7c42d3bd782dfb3d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 4efb3803df2baa1ca37aeda05ae81947c3b65010
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557953"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036258"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>適用於內部部署 Office 伺服器的 GDPR
 
@@ -54,4 +55,4 @@ ms.locfileid: "42557953"
 |保護||Exchange Server 資料外洩防護規則；權限，文件庫的 IRM 保護|Exchange Server 資料外洩防護規則；與 Exchange Server 的 IRM 整合|||
 |監視|整合記錄與 SIEM 工具|整合記錄與 SIEM 工具|整合記錄與 SIEM 工具|整合記錄與 SIEM 工具|整合記錄與 SIEM 工具|
 
-*請注意，保護會加密檔案。因此，SharePoint Server 在保護的檔案中找不到機密資訊類型。
+*請注意，保護會加密檔案。因此，SharePoint Server 在保護的檔案中找不到敏感性資訊類型。

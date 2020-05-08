@@ -1,7 +1,7 @@
 - name: 管理商務版訂閱
   href: index.yml
 - name: Microsoft 365 系統管理說明中心
-  href: ../admin/admin-home.md
+  href: ../admin/index.yml
 - name: 試用或購買
   items:
     - name: 註冊 Microsoft 365 試用版
@@ -51,7 +51,7 @@
     - name: 了解您的發票
       href: billing-and-payments/understand-your-invoice.md
     - name: 管理付款方式
-      href: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+      href: billing-and-payments/manage-payment-methods.md
     - name: 支付訂閱費用
       href: billing-and-payments/pay-for-your-subscription.md
     - name: 變更您的付款方式

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下載協力廠商審核，瞭解 Microsoft 如何讓客戶資料安全，以及如何在使用 Office 365 時遵循 ISO、HIPAA、FINRA 和 FedRAMP。
-ms.openlocfilehash: b9a9198d8206b2693f0634355c926856c1327d9d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: d2805ae3532ee01a2515693cac6eb52da209022d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943586"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165924"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>安全性 & 規範中心的服務保證
 
@@ -134,7 +134,7 @@ ms.locfileid: "43943586"
 ## <a name="get-help-with-service-assurance"></a>取得服務保障的協助
 <a name="addother"> </a>
 
-[支援商務產品的支援-系統管理](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)說明。
+[支援商務產品的支援-系統管理](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)說明。
   
 ## <a name="frequently-asked-questions"></a>常見問題集
 <a name="addother"> </a>

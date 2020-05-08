@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 瞭解當您的 Microsoft 365 訂閱到期、停用或取消時，您的資料會發生什麼情況。
-ms.openlocfilehash: cd90b0b5825b2888b1194998c25a2ce9c7c28718
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 363d8379bb2fa34e58a81892beadcebb9c6624f2
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707604"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165116"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>365 Microsoft 商務版訂閱結束時，我的資料與存取權會發生什麼情況？
 
@@ -50,7 +50,7 @@ ms.locfileid: "43707604"
 * 大部分的國家和地區中的產品。
   
 > [!NOTE]
-> **何謂「客戶資料」？** 客戶資料（如[Microsoft Online 服務條款](https://go.microsoft.com/fwlink/p/?LinkId=613649)中所定義）是指透過客戶使用 Microsoft 365 服務，將所有資料（包括所有的文字、聲音或圖像檔案）提供給 microsoft （或代表）提供給 microsoft 的使用者。 若要深入瞭解客戶資料的保護，請參閱[Microsoft 服務信任入口網站入門](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662)。
+> **何謂「客戶資料」？** 客戶資料（如[Microsoft Online 服務條款](https://go.microsoft.com/fwlink/p/?LinkId=613649)中所定義）是指透過客戶使用 Microsoft 365 服務，將所有資料（包括所有的文字、聲音或圖像檔案）提供給 microsoft （或代表）提供給 microsoft 的使用者。 若要深入瞭解客戶資料的保護，請參閱[Microsoft 服務信任入口網站入門](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal)。
   
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>如果我的訂閱即將到期，我有哪些選項？
 

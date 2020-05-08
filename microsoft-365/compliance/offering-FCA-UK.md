@@ -1,6 +1,6 @@
 ---
-title: 英國財務管理辦法授權單位 (FCA)
-description: 在英國財務公司的 Microsoft 的指引來遵循財務進行授權和指導方針外包至雲端。
+title: 英國金融籌辦機關（FCA）
+description: 英國金融公司的 Microsoft 指導方針，遵循金融行為與雲端外包的指導方針。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
@@ -14,34 +14,34 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f96b4eccec92f78b22eb28caecf3910a5d4ace2d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1a45b101363c3b881161384a241c1ea50e951552
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602440"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066386"
 ---
-# <a name="united-kingdom-financial-conduct-authority-fca"></a>英國財務管理辦法授權單位 (FCA)
+# <a name="united-kingdom-financial-conduct-authority-fca"></a>英國金融籌辦機關（FCA）
 
-## <a name="fca-uk-overview"></a>FCA （英國） 概觀
+## <a name="fca-uk-overview"></a>FCA （UK）概述
 
-[財務進行授權單位](https://www.fca.org.uk/)(FCA)，獨立的公用主體的努力國庫規定了 58,000 財務公司及英國市場及做為超過這些組織的 18000 prudential 調整。 [Prudential 規定授權單位](https://www.bankofengland.co.uk/pra/pages/default.aspx)(PRA)，這也用於英國銀行做為 prudential 調整和規定了 1500，較大的財務服務例如銀行、 建置 societies、 信用卡等位、 負責確認保戶，以及投資公司的機構。 （FCA 會挑選未落在 PRA remit 的公司的 prudential 規定）。
+[金融籌辦機關](https://www.fca.org.uk/)（FCA）是一種獨立公開的公開主體，負責財政部，可規定英國的58000財務公司和市場，並做為超過18000之組織的 prudential 調節器。 [Prudential 規章核證機關](https://www.bankofengland.co.uk/pra/pages/default.aspx)（PRA），也充當英國銀行的 Prudential 調節器，並規定較大型金融服務中心（如銀行、組建 societies、信用單位、保險公司和投資公司）的1500。 （FCA 為不屬於 PRA 匯款的公司挑選 prudential 法規。）
 
-FCA 有收到金融機構和雲端服務提供者已清楚有關如何將外包其規則套用至雲端，雲端使用的潛在障礙的意見反應。 假設此 FCA 強制包含升級 （其狀態的創新可以是驅動程式） 的有效競爭，FCA 想要支援的雲端服務時，使用表示 「 我們看見任何基礎原因為何不能雲端服務 （包括公用雲端服務）實作，使用適當的考量，遵守我們規則的方式。 」 因此 FCA 外包至雲端，最終的指引，在 2016 年 11 月發佈的[指導公司外包雲端及其他協力廠商 IT 服務](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf)為了幫助財務公司和公司外包至雲端 （或要這麼做） 時，雲端服務提供者了解 FCA 期望釐清其需求。 雖然本指南未繫結，FCA 預期公司使用適當的位置。 （請注意，PRA 有不同的法定之擔保目標，讓此原則會規定的公司，必須先確認其具有 PRA 的方法）。這是詳細文件，並提供使用、 評估，並持續監視的傳遞之 IT 服務的協力廠商的特定指導。 它除以考量到 13 區域感興趣，範圍從法律、 法規考量和持續力規劃並計劃結束外包安排風險管理
+FCA 收到的回饋表明金融機構和雲端服務提供者不清楚如何針對外包至雲端，將其原則套用至雲端（即雲端使用的潛在障礙）。 假設 FCA 要求包含提升有效的競爭（針對其創新可以是驅動程式），FCA 會想要支援使用雲端服務，指出「不能以符合我們規則的方式」來執行雲端服務（包括公用雲端服務）的根本原因。 因此，FCA 會闡明其外包至雲端的需求、在公司外包至雲端的指導方針中發佈最後的2016指導方針，[以及其他協力廠商 IT 服務](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf)，以協助金融公司和雲端服務提供者瞭解當公司外包給雲端（或計畫執行）時所需的 FCA 期望。 雖然本指南並未系結，但 FCA 預期公司會在適當的地方使用它。 （請注意，PRA 有不同的法定目標，所以公司 it 規定必須使用 PRA 來確認其方法。）這是一項詳細的檔，並提供特定指導，以供協力廠商在交付 IT 服務時使用、評估和進行監視。 將考慮劃分為13個重要方面，包括法律、法規考慮和風險管理，以及持續性規劃，以及現有外包安排的計畫
 
-## <a name="microsoft-and-fca-uk"></a>Microsoft 和 FCA （英國）
+## <a name="microsoft-and-fca-uk"></a>Microsoft 和 FCA （UK）
 
-Microsoft 已發佈的全方位指南，[啟用規範： FCA Microsoft 方法完成雲端指引](https://go.microsoft.com/fwlink/p/?linkid=2101561)，細部 Azure 可以如何協助財務服務授權並移至雲端的 IT 作業時，由英國財務進行授權單位 (FCA) 和 Prudential 規定授權單位 (PRA) 管制的客戶。
+Microsoft 已發佈綜合指南，[以提供法規遵從性： MICROSOFT FCA 完成雲端指導方針的方法](https://go.microsoft.com/fwlink/p/?linkid=2101561)，詳述 Azure 可如何在將 IT 作業移至雲端時，協助由 UK 金融機關（FCA）和 Prudential 管制機關（PRA）進行授權和管制的金融服務客戶。
 
-Microsoft 指南告訴您，很棒的詳細說明我們的合規性許多可辨識的國際標準，我們透明度周圍如何的客戶資料處理，讓您控制，以及契約性佈建該位址特有財務法規需求。
+Microsoft 指南以極大的方式描述我們遵循許多公認的國際標準，我們對客戶資料的處理方式與客戶資料的處理方式之間的透明性，以及對特定財務法規需求進行通訊的合約。
 
-Microsoft 指南 》 中的各節將對應 FCA 指引感興趣的每個區域的深度。 例如，法規外包需求的重要層面是財務服務公司必須識別並管理哪些外包可能引入其商務任何風險。 Microsoft 討論在風險評定執行 save 方法，記載，用來識別目前的最佳做法，依此類推。 我們幫助您評估相關的風險，並提供各種資源，可以協助您到期的盡職調查。
+深入說明 FCA 指引中每一個感興趣的領域。 例如，「法規外包」需求的主要層面是金融服務公司必須識別及管理外包可能引進其業務的任何風險。 Microsoft 討論其方法，以執行風險評估、記錄它、識別目前的最佳作法等等。 我們協助您評估相關的風險，並提供大量的資源，以協助您的到期的努力。
 
-了解如何 Azure 啟用英國銀行 FCA 合規性：[讀取 Microsoft 合作以 ClearBank： 超過 250 年中的第一個新的英國清除銀行啟動](https://customers.microsoft.com/story/microsoft-collaborates-with-clearbank)
+瞭解 Azure 如何在英國銀行啟用 FCA 合規性：請[參閱 Microsoft 與 ClearBank 的通力合作：在250年內啟動第一個新的 UK 清算銀行](https://customers.microsoft.com/story/microsoft-collaborates-with-clearbank)
 
-## <a name="accelerate-your-deployment-on-azure"></a>Azure 上加速部署
+## <a name="accelerate-your-deployment-on-azure"></a>加速 Azure 上的部署
 
-[下載 Microsoft 方法，即可完成 FCA 雲端指引](https://go.microsoft.com/fwlink/p/?linkid=2101561)
+[下載 Microsoft 方法以 FCA 完成的雲端指導方針](https://go.microsoft.com/fwlink/p/?linkid=2101561)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -51,22 +51,18 @@ Microsoft 指南 》 中的各節將對應 FCA 指引感興趣的每個區域的
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-**可以使用此架構的 Microsoft 回覆我的組織符合性程序嗎？**
+**我是否可以在組織的合規性程式中使用 Microsoft 回應至此架構？**
 
-是。 不過，此架構的 Microsoft 回覆由協力廠商確認相容，雖然客戶負責驗證合規性的他們有 Azure 或 Power BI 所實作的解決方案。
+是。 不過，雖然 Microsoft 對此架構的回應是由協力廠商相容，但客戶也負責驗證他們在 Azure 或 Power BI 上實施的解決方案規範。
 
-是。 不過，此架構的 Microsoft 回覆由協力廠商確認相容，雖然客戶負責驗證合規性的他們有 Azure 或 Power BI 所實作的解決方案。
+是。 不過，雖然 Microsoft 對此架構的回應是由協力廠商相容，但客戶也負責驗證他們在 Azure 或 Power BI 上實施的解決方案規範。
 
 ## <a name="resources"></a>資源
 
-- [在英國金融機構的 Microsoft Cloud 檢查清單](https://aka.ms/Azure-UK-compliance)
-- [FG 16/5 — 指導公司外包雲端及其他協力廠商 IT 服務](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf)
-- [啟用規範： FCA Microsoft 方法完成雲端指引](https://go.microsoft.com/fwlink/p/?linkid=2101561)
+- [英國金融機構的 Microsoft Cloud 檢查清單](https://aka.ms/Azure-UK-compliance)
+- [FG 16/5 —公司外包至雲端和其他協力廠商 IT 服務的指導方針](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf)
+- [啟用法規遵從性： FCA 完成雲端指引的 Microsoft 方法](https://go.microsoft.com/fwlink/p/?linkid=2101561)
 - [Microsoft 金融服務合規性計劃](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Azure 的金融服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Microsoft 商務用雲端服務與金融服務](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf)。

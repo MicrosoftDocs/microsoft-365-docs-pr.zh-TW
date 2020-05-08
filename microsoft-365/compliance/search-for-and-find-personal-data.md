@@ -17,13 +17,14 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: 了解如何搜尋並找出 Office 365 中的個人資料。
-ms.openlocfilehash: 3bcae58049cd844a64bfbff89f78a98df6e25dbc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 瞭解如何在 Office 365 中搜尋並尋找符合一般資料保護規定 (GDPR) 的個人資料。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5634437e5212fca6a7caf768d5a66d99497de3c6
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638127"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036408"
 ---
 # <a name="search-for-and-find-personal-data"></a>搜尋並找出個人資料
 

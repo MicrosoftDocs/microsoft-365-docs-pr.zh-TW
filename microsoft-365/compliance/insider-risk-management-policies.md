@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e135ceec2ac4abcd0bfd5183fb19089a97dc4bb4
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: 4f52cb4ff6809bee7582e2c030fb782f6ac35fd8
+ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043294"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44162685"
 ---
 # <a name="insider-risk-management-policies"></a>有問必答風險管理原則
 
@@ -52,7 +52,9 @@ ms.locfileid: "44043294"
 保護資料和防止資料洩漏是大多陣列織面臨的挑戰，尤其是員工、裝置及服務所建立的新資料的快速成長。 員工可以跨服務和裝置建立、儲存和共用資訊，使管理資料洩漏的複雜性和難度變得越來越複雜。 資料洩漏可能包括意外 oversharing 組織外部的資訊，或惡意目的資料竊取。 此範本會針對可疑的可疑 SharePoint 線上資料下載、檔案和資料夾共用、將檔案複製到可擕式裝置（例如 USB 磁片磁碟機、列印檔案，以及將資料複製到個人雲端郵件和儲存服務）的即時偵測進行排定。
 
 >[!IMPORTANT]
->使用此範本時，您必須設定至少一個資料遺失防護（DLP）原則，以定義組織中的機密資訊。 如需為貴組織設定 DLP 原則的逐步指示，請參閱[建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)主題。
+>使用此範本時，您必須設定至少一個資料遺失防護（DLP）原則，以定義組織中的機密資訊。 請確定與此範本搭配使用的內幕人士原則管理之 DLP 原則中的 [**附隨報告**] 設定會設定*高*嚴重性等級警示。 不會從 DLP 原則產生「內幕風險管理」提醒，其**附隨報告**欄位設定為 [*低*] 或「*中*」。
+>
+>如需為貴組織設定 DLP 原則的逐步指示，請參閱[建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)主題。
 
 ### <a name="offensive-language-in-email"></a>電子郵件中的冒犯性語言
 
