@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 針對市場活動的設定綜述
-ms.openlocfilehash: 0fa804c46ac3545a7f2d30ffe80b148262cc23cc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 463d7cebf88ea830048c25e2781eac4aa379e30a
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632752"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165694"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>設定市場活動的 Microsoft 365
 
@@ -62,6 +62,6 @@ ms.locfileid: "43632752"
 
  **如果您需要連絡客戶支援：**
   
-做為 Microsoft 365 系統管理員，您可以存取我們的客戶支援小組， **[與商務產品的支援人員聯繫-系統管理](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)說明**
+做為 Microsoft 365 系統管理員，您可以存取我們的客戶支援小組， **[與商務產品的支援人員聯繫-系統管理](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)說明**
     
 

@@ -19,14 +19,14 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 和 Microsoft 365 中的安全性與合規性中心建立警示原則，以監視潛在威脅、資料遺失和許可權問題。
-ms.openlocfilehash: 7505853a4a3bc263b4547d45838567a593f9759b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8720d4811377365ad00ced4d950d89cf459f653e
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034431"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165164"
 ---
-# <a name="alert-policies-in-the-security-and-compliance-center"></a>安全性與合規性中心內的警示原則
+# <a name="alert-policies-in-the-security-and-compliance-center"></a>安全性與合規性中心的警示原則
 
 您可以使用 [安全性與合規性中心] 中的 [新增警示原則] 和 [警示儀表板] 工具來建立警示原則，然後查看使用者執行符合警示原則條件的活動時所產生的警示。
 
@@ -108,14 +108,14 @@ Microsoft 提供內建的警示原則，可協助識別 Exchange 系統管理員
 
 |**預設警示原則**|**說明**|**Category**|**Office 365 企業版訂閱**|
 |:-----|:-----|:-----|:-----|
-|**偵測到可能的惡意 URL 按一下**|當您組織中的[Office 365 ATP 安全連結](../security/office-365-security/atp-safe-links.md)所保護的使用者按一下惡意連結時，會產生警示。 當 Office 365 ATP 或使用者覆寫 Office 365 ATP 安全連結頁面（根據您的組織的 Microsoft 365 for business ATP 安全連結原則）時，就會觸發此事件。 此警示原則具有**高**嚴重性設定。 若為 Office 365 ATP P2，E5，G5 客戶，此提醒會自動觸發[Office 365 中的自動調查和回應](https://go.microsoft.com/fwlink/?linkid=2084737)。 如需觸發此警示之事件的詳細資訊，請參閱[設定 Office 365 ATP 安全連結原則](../security/office-365-security/set-up-atp-safe-links-policies.md)。|威脅管理|E5/G5 或 Office 365 ATP P2 附加元件訂閱|
+|**偵測到可能的惡意 URL 按一下**|當您組織中的[Office 365 ATP 安全連結](../security/office-365-security/atp-safe-links.md)所保護的使用者按一下惡意連結時，會產生警示。 當 Office 365 ATP 或使用者覆寫 Office 365 ATP 安全連結頁面（根據您的組織的 Microsoft 365 for business ATP 安全連結原則）時，就會觸發此事件。 此警示原則具有**高**嚴重性設定。 若為 Office 365 ATP P2，E5，G5 客戶，此提醒會自動觸發[Office 365 中的自動調查和回應](https://www.microsoft.com/?ref=go)。 如需觸發此警示之事件的詳細資訊，請參閱[設定 Office 365 ATP 安全連結原則](../security/office-365-security/set-up-atp-safe-links-policies.md)。|威脅管理|E5/G5 或 Office 365 ATP P2 附加元件訂閱|
 |**已完成系統管理員提交結果**|當系統[管理員提交](../security/office-365-security/admin-submission.md)完成已送出之實體的重新掃描時產生警示。 每當系統管理員提交轉譯重新掃描結果時，就會觸發警示。 這些提醒會提醒您[複查先前提交的結果](https://protection.office.com/reportsubmission)、提交使用者報告的郵件以取得最新的原則檢查和重新掃描 verdicts，以及協助您判斷組織中的篩選原則是否有預期的影響。 這個原則的嚴重性設定**低**。|威脅管理|E1/F1、E3 或 E5|
 |**建立轉送/重新導向規則**|當您組織中的人員建立信箱的收件匣規則，將郵件轉寄或重新導向至另一個電子郵件帳戶時，會產生警示。 這個原則只追蹤使用 Outlook 網頁版（以前稱為 Outlook Web App）或 Exchange Online PowerShell 所建立的收件匣規則。 這個原則的嚴重性設定**低**。 如需使用收件匣規則來轉寄及重新導向 web 上 Outlook 中電子郵件的詳細資訊，請參閱[使用 outlook 網頁版中的規則，將郵件自動轉寄至另一個帳戶](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。|威脅管理|E1/F1/G1、E3/G3 或 E5/G5|
 |**已啟動或匯出 eDiscovery 搜尋**|當有人在安全性與合規性中心使用內容搜尋工具時產生警示。 執行下列內容搜尋活動時，會觸發警示： <br/><br/>* 已啟動內容搜尋<br/>* 匯出內容搜尋的結果<br/>* 內容搜尋報告已匯出<br/><br/>在與 eDiscovery 案例關聯的先前內容搜尋活動執行時，也會觸發警示。 這個原則的嚴重性設定是「**中**」。 如需內容搜尋活動的詳細資訊，請參閱在[審核記錄中搜尋 eDiscovery 活動](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)。|威脅管理|E1/F1/G1、E3/G3 或 E5/G5|
 |**提升 Exchange 系統管理員許可權**|在您的 Exchange Online 組織中有指派系統管理許可權的人時產生警示。 例如，當使用者新增至 Exchange Online 中的「組織管理」角色群組時。 這個原則的嚴重性設定**低**。|權限|E1/F1/G1、E3/G3 或 E5/G5|
-|**傳遞後移除包含惡意程式碼的電子郵件**|會在包含惡意程式碼的任何郵件傳送至組織中的信箱時產生警示。 如果發生此事件，Microsoft 會使用[零小時自動清除](../security/office-365-security/zero-hour-auto-purge.md)，從 Exchange Online 信箱移除染毒郵件。 這個原則的**資訊**嚴重性設定會自動觸發[Office 365 中的自動調查和回應](https://go.microsoft.com/fwlink/?linkid=2084737)。|威脅管理|E5/G5 或 Office 365 ATP P2 附加元件訂閱|
-|**傳遞後移除包含網路釣魚 URLs 的電子郵件**|將包含網路釣魚詐騙的郵件傳送給組織中的信箱時，會產生警示。 如果發生此事件，Microsoft 會使用[零小時自動清除](../security/office-365-security/zero-hour-auto-purge.md)，從 Exchange Online 信箱移除染毒郵件。 這個原則的**資訊**嚴重性設定會自動觸發[Office 365 中的自動調查和回應](https://go.microsoft.com/fwlink/?linkid=2084737)。|威脅管理|E5/G5 或 Office 365 ATP P2 附加元件訂閱|
-|**使用者報告為惡意程式碼或網路釣魚網路的電子郵件**|當您組織中的使用者使用報告訊息增益集將郵件報告為網路釣魚電子郵件時，就會產生警示。 這個原則有**資訊性**嚴重性設定。 如需此增益集的詳細資訊，請參閱[Use The Report Message 增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。 若為 Office 365 ATP P2，E5，G5 客戶，此提醒會自動觸發[Office 365 中的自動調查和回應](https://go.microsoft.com/fwlink/?linkid=2084737)。|威脅管理|E1/F1/G1、E3/G3 或 E5/G5|
+|**傳遞後移除包含惡意程式碼的電子郵件**|會在包含惡意程式碼的任何郵件傳送至組織中的信箱時產生警示。 如果發生此事件，Microsoft 會使用[零小時自動清除](../security/office-365-security/zero-hour-auto-purge.md)，從 Exchange Online 信箱移除染毒郵件。 這個原則的**資訊**嚴重性設定會自動觸發[Office 365 中的自動調查和回應](https://www.microsoft.com/?ref=go)。|威脅管理|E5/G5 或 Office 365 ATP P2 附加元件訂閱|
+|**傳遞後移除包含網路釣魚 URLs 的電子郵件**|將包含網路釣魚詐騙的郵件傳送給組織中的信箱時，會產生警示。 如果發生此事件，Microsoft 會使用[零小時自動清除](../security/office-365-security/zero-hour-auto-purge.md)，從 Exchange Online 信箱移除染毒郵件。 這個原則的**資訊**嚴重性設定會自動觸發[Office 365 中的自動調查和回應](https://www.microsoft.com/?ref=go)。|威脅管理|E5/G5 或 Office 365 ATP P2 附加元件訂閱|
+|**使用者報告為惡意程式碼或網路釣魚網路的電子郵件**|當您組織中的使用者使用報告訊息增益集將郵件報告為網路釣魚電子郵件時，就會產生警示。 這個原則有**資訊性**嚴重性設定。 如需此增益集的詳細資訊，請參閱[Use The Report Message 增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。 若為 Office 365 ATP P2，E5，G5 客戶，此提醒會自動觸發[Office 365 中的自動調查和回應](https://www.microsoft.com/?ref=go)。|威脅管理|E1/F1/G1、E3/G3 或 E5/G5|
 |**超過電子郵件傳送限制**|當您組織中的某人傳送的郵件超過輸出垃圾郵件原則所允許的郵件時，就會產生警示。 這通常表示使用者傳送太多電子郵件，或可能會危及帳戶。 這個原則的嚴重性設定是「**中**」。 如果您收到此警示原則產生的警示，最好[檢查使用者帳戶是否遭到破壞](../security/office-365-security/responding-to-a-compromised-email-account.md)。|威脅管理|E1/F1/G1、E3/G3 或 E5/G5|
 |**郵件已延遲**|當 Microsoft 無法使用連接器將電子郵件傳送至您的內部部署組織或夥伴伺服器時，產生警示。 發生這種情況時，郵件會在 Office 365 中排入佇列。 當有2000封以上的郵件已排入佇列超過一小時時，就會觸發此警示。 這個原則具有**高**嚴重性設定。|郵件流程|E1/F1/G1、E3/G3 或 E5/G5|
 |**傳遞後偵測到惡意程式碼活動**|當大量包含惡意程式碼的郵件會傳遞至組織中的信箱時產生警示。 如果發生此事件，Microsoft 會從 Exchange Online 信箱移除染毒郵件。 這個原則具有**高**嚴重性設定。|威脅管理|E5/G5 或 Office 365 ATP P2 附加元件訂閱|

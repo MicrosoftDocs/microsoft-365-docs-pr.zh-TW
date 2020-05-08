@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: 瞭解如何使用 Windows AutoPilot 為您的公司設定新的 Windows 10 裝置，以供員工使用。
-ms.openlocfilehash: 98a2bfc721ce86c81ebd89e8f41603e619b31546
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: de14012ebf9e7cdd22e41505f316ab665773c670
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627487"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165874"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用逐步指南新增 Autopilot 裝置和設定檔
 
@@ -69,7 +69,7 @@ ms.locfileid: "43627487"
     
     您可以從硬體廠商取得此資訊，也可以使用[Get-WindowsAutoPilotInfo PowerShell 腳本](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)來產生 CSV 檔案。 
     
-    如需詳細資訊，請參閱[裝置清單 CSV 檔案](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e)。 您也可以在 [**上傳含裝置清單的 .csv**檔案] 頁面上，下載範例檔案。 
+    如需詳細資訊，請參閱[裝置清單 CSV 檔案](https://docs.microsoft.com/microsoft-365/admin/misc/device-list)。 您也可以在 [**上傳含裝置清單的 .csv**檔案] 頁面上，下載範例檔案。 
     
 4. 在 [**指派設定檔**] 頁面上，您可以挑選現有的設定檔或建立新的設定檔。 如果您還沒有，系統會提示您建立一個。 
     

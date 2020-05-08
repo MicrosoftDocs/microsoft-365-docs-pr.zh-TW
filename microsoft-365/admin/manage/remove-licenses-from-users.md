@@ -21,14 +21,21 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: 瞭解如何移除使用者帳戶中的授權。
-ms.openlocfilehash: e3c6150c2eb228e29bf6fc2b87d90809a7033660
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49d3b4b6786bc6ab66bc0416aac847ada592664d
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628097"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139634"
 ---
 # <a name="unassign-licenses-from-users"></a>取消指派給使用者的授權
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 ::: moniker range="o365-worldwide"
 您可以從 [作用中的**使用者**] 頁面或 [**授權**] 頁面移除或取消指派使用者授權。 使用哪一種方法取決於您是否要從特定使用者取消指派產品授權，或從特定產品取消指派使用者授權。
@@ -142,7 +149,7 @@ ms.locfileid: "43628097"
 
 ## <a name="what-you-need-to-know-about-unassigning-licenses-for-users"></a>取消指派使用者授權所需注意的事項
 
-- 您必須是全域系統管理員、帳單管理員、授權管理員或使用者管理系統管理員。如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](../add-users/about-admin-roles.md)。
+- 您必須是全域系統管理員、計費系統管理員、授權系統管理員或使用者管理系統管理員。如需詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](../add-users/about-admin-roles.md)。
 
 - 您可以[使用 Office 365 PowerShell 移除使用者帳戶中的授權](https://go.microsoft.com/fwlink/p/?linkid=848428)。
 

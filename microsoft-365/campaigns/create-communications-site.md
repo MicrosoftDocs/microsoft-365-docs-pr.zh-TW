@@ -22,32 +22,32 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 建立您的行銷活動的通訊網站。
-ms.openlocfilehash: 5c6590ae8e8fbe0dd1cc024c53f3a2a109aa918c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 建立活動的通訊網站。
+ms.openlocfilehash: 3435ede554c16bb787b87a6ea76e0c41f62b8fe5
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42056368"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165718"
 ---
-# <a name="create-a-communications-site-for-your-campaign"></a>建立您的行銷活動的通訊網站
+# <a name="create-a-communications-site-for-your-campaign"></a>建立活動的通訊網站
 
-通訊優先順序、 共用策略文件，並反白顯示即將來臨的事件的好方法是使用 SharePoint 中的通訊網站。 通訊網站會跨整個活動; 廣泛地共用項目它是您內部的行銷活動的網站。
+使用 SharePoint 中的通訊網站是一種極佳的方式，可讓您交流優先順序、分享策略檔，以及醒目即將發生的事件。 通訊網站是用於整個活動中廣泛共用的內容;這是您的內部即時網頁。
 
 ## <a name="best-practices"></a>最佳做法
 
-通訊網站中包含下列元素：
+在您的通訊網站中包含下列元素：
 
-1. 新增您的行銷活動標誌與色彩做為標題影像和佈景主題
-2. 導致策略、 與郵件、 重要的文件、 一個目錄，在**Hero 網頁組件**中的常見問題集。
-3. 納入**文字網頁組件**至小組的候選陳述式。
-4. 將活動事件新增至**事件網頁組件**，讓每個人都可以看到接下來什麼。
-5. 新增人員可以使用或**影像圖庫網頁組件**共用的相片。
+1. 將您的活動標誌和色彩新增為頁首影像和主題
+2. 在 [**英雄網頁元件**] 中，靠您提供您的策略、訊息、重要檔、目錄及常見問題。
+3. 將候選語句包含在**文字網頁元件**中的團隊。
+4. 將活動事件新增至**事件網頁元件**，讓所有人都能看到即將推出的內容。
+5. 新增人員可使用或共用至**影像庫網頁元件**的相片。
 
-![需要行銷活動的共同元素的空間與 SharePoint 通訊] 頁面上的圖表](../media/m365-democracy-comms-site.png)
+![包含市場活動所需之共同元素空間的 SharePoint 通訊頁面的圖表](../media/m365-democracy-comms-site.png)
 
-## <a name="infographic-create-a-communications-site-infographic"></a>資訊圖表： 建立通訊網站資訊圖表 
-下列連結以 PowerPoint 和 PDF 可以下載及列印 tabloid 格式 (也稱為 ledger 11 x 17 或 A3)。
+## <a name="infographic-create-a-communications-site-infographic"></a>資訊圖表：建立通訊網站資訊圖表 
+下列 PowerPoint 和 PDF 的連結可透過 tabloid 格式（也稱為分類帳、11 x 17 或 A3）下載及列印。
 
 [![通訊網站資訊圖表的影像](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
@@ -57,13 +57,13 @@ ms.locfileid: "42056368"
 ## <a name="set-it-up"></a>進行設定
 
 1. 登入https://Office.com。
-2. 在頁面左上角，選取 [應用程式啟動器圖示，然後選取 [ **SharePoint** ] 磚。 如果您沒有看到 [ **SharePoint** ] 磚，按一下 [**網站**] 磚] 或 [**全部**如果看不到 SharePoint。
-3. 在 SharePoint 首頁頂端，按一下 [ **+ 建立網站**，並選擇**通訊網站**選項。
+2. 在頁面左上角，選取應用程式啟動器圖示，然後選取 [ **SharePoint** ] 麻將牌。 如果您看不到**SharePoint**磚，請按一下 [**網站**] 磚或 [**全部**] （如果 SharePoint 不可見）。
+3. 在 SharePoint 首頁的頂端，按一下 [ **+ 建立網站**]，然後選擇 [**通訊] 網站**選項。
 
-了解所有[關於站台的通訊](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732)，以及如何[建立 SharePoint Online 中的通訊網站](https://support.office.com/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB)。
+深入瞭解[通訊網站](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732)，以及如何[在 SharePoint Online 中建立通訊網站](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)。
 
 
-## <a name="admin-settings"></a>系統管理員設定
+## <a name="admin-settings"></a>系統管理設定
 
-如果您沒有看到 [ **+ 建立**網站] 連結，可能無法在 Microsoft 365 使用自助網站架設。 若要建立小組網站，請連絡您的組織中管理 Microsoft 365 的人員。 如果您的 Microsoft 365 系統管理員，請參閱[SharePoint Online 中的管理網站建立](https://docs.microsoft.com/sharepoint/manage-site-creation)若要啟用自助網站架設，為您的組織或[在新的 SharePoint 系統管理中心中的受管理的網站](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center)」 從 SharePoint Online 系統管理中心建立網站。
+如果您沒有看到 [ **+ 建立**網站] 連結，Microsoft 365 可能無法使用自助網站架設。 若要建立小組網站，請與組織中的 Microsoft 365 管理人員聯繫。 如果您是 Microsoft 365 系統管理員，請參閱[在 SharePoint online 中管理網站的建立](https://docs.microsoft.com/sharepoint/manage-site-creation)，以啟用組織的自助網站架設或在[新的 SharePoint 系統管理中心中管理網站](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center)，以從 SharePoint 線上系統管理中心建立網站。
   

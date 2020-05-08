@@ -21,14 +21,21 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: 瞭解如何取消商務用 Microsoft 365 試用版或付費訂閱。
-ms.openlocfilehash: c12b574d29b50432cdb480dca711588ad1f0df32
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: f0f635529a7d7c6ee0f9a2d6b15b887e3fd23bfb
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046201"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141166"
 ---
 # <a name="cancel-your-subscription"></a>取消訂閱
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 *資格：* 如果您指派給使用者的授權不足25個，您可以隨時取消 Microsoft 365 系統管理中心的 Microsoft 365 for business 試用版或付費訂閱。 如果您有超過25個授權指派給使用者，請[致電支援部門以取消您的訂閱](../../admin/contact-support-for-business-products.md)。
 

@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: 深入了解如何設定您的 Microsoft 365 商務標準版、Microsoft 365 商務基本版、Microsoft 365 Apps 商務版或 Office 365 教育版訂閱。
-ms.openlocfilehash: 448dc7ae990a4c9803ea751e4ad855f375195734
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9415d81e88234ac537bb531d531b891f0a4feb80
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627543"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165080"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>設定商務用 Microsoft 365
 
@@ -285,7 +285,7 @@ Microsoft 讓線上檔案儲存變得容易。若要了解最適合貴公司的�
 
 在您的行動裝置上安裝 Office，並設定 Outlook 以使用新的 Microsoft 信箱。 您的所有小組成員都需要執行這個步驟。 每位人員最多可以在 5 支手機和 5 部平板電腦上安裝 Office 行動裝置 App。
   
-取得適用您裝置的步驟︰[Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.office.com/article/9bccc8b8-a321-4d0d-a45e-6e06a3438e43.aspx)
+取得適用您裝置的步驟︰[Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.microsoft.com/zh-TW/office/set-up-office-apps-and-email-on-windows-phone-9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
 ### <a name="4-store-files-online"></a>4. 線上儲存檔案
 
@@ -309,11 +309,11 @@ Microsoft 讓線上檔案儲存變得容易。若要了解最適合貴公司的�
 
 ### <a name="get-ready-for-office-365"></a>準備好使用 Office 365
 
-- **請先確認您符合教育版訂閱的資格**。按照下列步驟[驗證您的網域以證明擁有權、非營利組織版或教育版狀態或啟用 Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590) (部分機器翻譯)，這樣 Microsoft 才能讓您使用教育版方案。 接著，您可以按照本文的指引為您的學校設定 Office 365。
+- **請先確認您符合教育版訂閱的資格**。按照下列步驟[驗證您的網域以證明擁有權、非營利組織版或教育版狀態或啟用 Yammer](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (部分機器翻譯)，這樣 Microsoft 才能讓您使用教育版方案。 接著，您可以按照本文的指引為您的學校設定 Office 365。
 
-- **需要取得說明？** 如果您想取得進階部署的說明，建議您首先查看 **[FastTrack](https://www.microsoft.com/en-us/fasttrack/microsoft-365/office-365)**。 您也可以[尋找合作夥伴](https://go.microsoft.com/fwlink/p/?linkid=391089)來協助您。
+- **需要取得說明？** 如果您想取得進階部署的說明，建議您首先查看 **[FastTrack](https://www.microsoft.com/zh-TW/fasttrack/microsoft-365/office-365)**。 您也可以[尋找合作夥伴](https://go.microsoft.com/fwlink/p/?linkid=391089)來協助您。
 
-- **規劃**。這些工具和資源會協助您針對 Office 365 備妥網路、目錄及使用者：[讓您的組織準備好使用 Office 365 企業版](https://support.office.com/article/712fced7-f9d0-4fde-8b79-286262a5d0bc)。
+- **規劃**。這些工具和資源會協助您針對 Office 365 備妥網路、目錄及使用者：[讓您的組織準備好使用 Office 365 企業版](https://docs.microsoft.com/office365/enterprise/get-your-organization-ready-for-office-365)。
 
 ### <a name="1-add-your-school-domain-or-connect-your-directory"></a>1. 新增貴校網域或連線您的目錄
 
@@ -339,25 +339,25 @@ Microsoft 讓線上檔案儲存變得容易。若要了解最適合貴公司的�
 
 請選取 [移至設定]**** 來啟動精靈。
 
-如需執行精靈時會發生什麼情況的逐步解說，請參閱[使用設定精靈](https://support.office.com/article/3c62a3b7-1680-41ca-943c-0ff01566bace.aspx) (部分機器翻譯)。
+如需執行精靈時會發生什麼情況的逐步解說，請參閱[使用設定精靈](https://docs.microsoft.com/microsoft-365/admin/setup/plan-your-setup) (部分機器翻譯)。
   
-如果您要從內部部署目錄同步處理使用者，或使用單一登入，請不要使用設定精靈來新增使用者****。 請改為閱讀這份指南以了解可用的選項：[將目錄連線至 Office 365](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9)。 下列兩者請擇一設定：
+如果您要從內部部署目錄同步處理使用者，或使用單一登入，請不要使用設定精靈來新增使用者****。 請改為閱讀這份指南以了解可用的選項：[將目錄連線至 Office 365](https://docs.microsoft.com/office365/enterprise/about-office-365-identity)。 下列兩者請擇一設定：
   
-- [](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9#BK_Sync)。同步處理內部部署目錄。您將在內部部署管理您的使用者。您也可以同步處理密碼，讓使用者在內部部署和雲端都有相同的密碼，但他們必須再次登入才能使用 Office 365。
+- [](https://docs.microsoft.com/office365/enterprise/about-office-365-identity#BK_Sync)。同步處理內部部署目錄。您將在內部部署管理您的使用者。您也可以同步處理密碼，讓使用者在內部部署和雲端都有相同的密碼，但他們必須再次登入才能使用 Office 365。
 
-- [](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9#BK_Federated)。同步處理內部部署目錄。您將在內部部署管理您的使用者。使用者在內部部署和雲端都有相同的密碼，而且不須再次登入即可使用 Office 365。這通常稱為單一登入。
+- [](https://docs.microsoft.com/office365/enterprise/about-office-365-identity#BK_Federated)。同步處理內部部署目錄。您將在內部部署管理您的使用者。使用者在內部部署和雲端都有相同的密碼，而且不須再次登入即可使用 Office 365。這通常稱為單一登入。
 
 ### <a name="2-set-up-services"></a>2. 設定服務
 
-設定電子郵件、檔案共用、即時訊息及其他 Office 365 服務與應用程式：[設定 Office 365 企業版服務和應用程式](https://support.office.com/article/7cec08a5-97fd-4761-b23b-ef3d66519e30)。
+設定電子郵件、檔案共用、即時訊息及其他 Office 365 服務與應用程式：[設定 Office 365 企業版服務和應用程式](https://docs.microsoft.com/office365/enterprise/configure-services-and-applications)。
   
 在此步驟中，每位人員最多可以在 5 部 PC 或筆記型電腦上安裝 Office 365。
   
 ### <a name="3-migrate-data"></a>3. 移轉資料
 
-設定完服務之後，您就可以開始移轉資料，例如電子郵件和檔案：[將組織資料移轉到 Office 365 企業版](https://support.office.com/article/e2fdfc8d-547e-4419-8628-2738ed4e0f46)。
+設定完服務之後，您就可以開始移轉資料，例如電子郵件和檔案：[將組織資料移轉到 Office 365 企業版](https://docs.microsoft.com/office365/enterprise/migrate-data-to-office-365)。
   
-如果您為您的學生和教職員使用學生資訊系統 (SIS)，請參閱[設定 SIS 整合](https://support.office.com/article/f3d1147b-4ade-4905-8518-508e729f2e91.aspx)以了解詳情。
+如果您為您的學生和教職員使用學生資訊系統 (SIS)，請參閱[設定 SIS 整合](https://docs.microsoft.com/schooldatasync/overview-of-school-data-sync)以了解詳情。
   
 ### <a name="train-your-users"></a>訓練您的使用者
 

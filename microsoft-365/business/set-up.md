@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 探索 Microsoft 365 商務版 Premium 的設定步驟，包括新增網域和使用者、設定安全性原則等等。
-ms.openlocfilehash: cfc8523fe88ebca6b8c03db0ad0f6caeba662923
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 03f446f790a664af85cc630048bc022d88b6e54f
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048034"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165770"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在安裝精靈中設定 Microsoft 365 商務版 Premium
 
@@ -97,7 +97,7 @@ ms.locfileid: "44048034"
   
 若要設定服務，您必須更新 DNS 主機或網域註冊機構中的某些記錄。
   
-1. 設定精靈通常會偵測您的註冊機構，並提供您一個逐步指示連結，讓您更新在註冊機構網站上的 NS 記錄。 如果不是，請[變更名稱伺服器以設定 Office 365 與任何網域註冊](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2)機構。 
+1. 設定精靈通常會偵測您的註冊機構，並提供您一個逐步指示連結，讓您更新在註冊機構網站上的 NS 記錄。 如果不是，請[變更名稱伺服器以設定 Office 365 與任何網域註冊](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar)機構。 
 
     - 如果您有現有的 DNS 記錄（例如現有的網站），但您的 DNS 主機已啟用[網域](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)連線，請選擇 [**新增我的記錄**]。 在 [**選擇您的線上服務**] 頁面上，接受所有預設值，然後選擇 [**下一步]**，然後在您的 DNS 主機頁面上選擇 [**授權**]。
     - 如果您有現有的 DNS 記錄與其他 DNS 主機（未啟用網域連線），您會想要管理自己的 DNS 記錄，以確保現有的服務保持連線。 如需詳細資訊，請參閱[網域基礎知識](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics)。

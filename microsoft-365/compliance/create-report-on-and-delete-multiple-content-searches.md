@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 瞭解如何透過 Office 365 的安全性 & 規範中心內的 PowerShell 腳本，以自動化內容搜尋工作，例如建立搜尋及執行報告。
-ms.openlocfilehash: 4e66013ba34c71fd7e2078691f892c2ae289538b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 1967d17ab24c991d38a7c5881d3cff87750084c3
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943494"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166074"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>建立、報告及刪除多個內容搜尋
 
@@ -33,7 +33,7 @@ ms.locfileid: "43943494"
 
 - 您必須是 Security & 合規性中心內 eDiscovery 管理員角色群組的成員，才可執行本主題中所述的腳本。 
     
-- 若要收集組織中您可以在步驟1中新增至 CSV 檔案之商務網站的 OneDrive URLs 清單，請參閱[建立組織中所有 OneDrive 位置的清單](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a)。 
+- 若要收集組織中您可以在步驟1中新增至 CSV 檔案之商務網站的 OneDrive URLs 清單，請參閱[建立組織中所有 OneDrive 位置的清單](https://docs.microsoft.com/onedrive/list-onedrive-urls)。 
     
 - 請務必將您在本主題中建立的所有檔案儲存至相同的資料夾。 這樣會使執行腳本變得更容易。
     

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。
-ms.openlocfilehash: a5d81eed4d3d6edae48cd82109f83320953782a3
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: abc75a7c7a8b771e5b15fb3c4f0aeb2125be4684
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046349"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155418"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>最常見的12個任務，可供安全性小組用來支援在家運作
 
@@ -65,11 +65,11 @@ ms.locfileid: "44046349"
 套用這些原則只需要數分鐘，但準備好在今後數天內為您的使用者提供支援。  
 
 
-|規劃  |建議  |
+|方案  |建議  |
 |---------|---------|
-|Microsoft 365 方案（沒有 Azure AD P1 或 P2）     |[啟用 AZURE AD 中的安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性預設值包括針對使用者和系統管理員的 MFA。   |
-|Microsoft 365 E3 （搭配 Azure AD P1）     | 使用[一般條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)來設定下列原則： <br>- [需要對系統管理員進行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [需要對所有使用者進行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [封鎖舊版驗證](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 （包含 Azure AD P2）     | 使用 Azure AD 身分識別保護，請先建立下列兩個原則，以執行 Microsoft[建議的條件式存取和相關原則的組合](../enterprise/identity-access-policies.md)：<br> - [當登入風險為中或高時，需要 MFA](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [封鎖不支援新式驗證的用戶端](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [高風險使用者必須變更密碼](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 方案（沒有 Azure AD P1 或 P2）     |[在 Azure AD 中啟用安全性預設](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性預設包含了適用於使用者和系統管理員的 MFA。   |
+|Microsoft 365 E3 （搭配 Azure AD P1）     | 使用[常見的條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)來設定下列原則： <br>- [要求系統管理員使用 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [要求所有使用者使用 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [封鎖舊版驗證](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 （包含 Azure AD P2）     | 利用 Azure AD Identity Protection，藉由建立下列兩種原則來開始實作 Microsoft [建議的一組條件式存取和相關原則](../enterprise/identity-access-policies.md)：<br> - [登入風險為中或高時，需要 MFA](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [封鎖不支援新式驗證的用戶端](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [高風險使用者必須變更密碼](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 
@@ -217,7 +217,7 @@ Microsoft 365 提供下列資源，協助您在組織中告知使用者：
     
 Microsoft 也建議您採取下列文章中建議的動作來保護其個人電子郵件帳戶：
   
-- [協助保護您的 Outlook.com 電子郵件帳戶](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba.aspx)
+- [協助保護您的 Outlook.com 電子郵件帳戶](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
     
 - [使用2步驟驗證保護您的 Gmail 帳戶](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
 

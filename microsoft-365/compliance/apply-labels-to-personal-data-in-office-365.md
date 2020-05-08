@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: 了解如何使用 Office 標籤做為一般資料保護規定 (GDPR) 保護計劃的一部分。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ad80a63470d0afa4cfb946def18f3408f8a27f4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42cfc73433a7087f0f5dd62f2da9b27b5a3cf48d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034357"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165256"
 ---
 # <a name="apply-labels-to-personal-data"></a>將標籤套用至個人資料
 
@@ -182,7 +182,7 @@ ms.locfileid: "44034357"
 <tr class="odd">
 <td align="left"><p>將權限授與規範小組的成員。</p></td>
 <td align="left"><p>要建立標籤的合規性小組成員需有使用安全性中心和/或合規性中心的權限。請移至安全性中心或合規性中心的 [權限]，然後修改合規性系統管理員群組的成員。</p>
-<p>請參閱<a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">讓使用者能夠存取安全性中心和/或合規性中心</a>。</p></td>
+<p>請參閱<a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">讓使用者能夠存取安全性中心和/或合規性中心</a>。</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>建立保留標籤。</p></td>

@@ -23,15 +23,21 @@ search.appverid:
 - BEA160
 - GEA150
 description: 瞭解如何升級為新的訂閱。
-monikerRange: o365-worldwide
-ms.openlocfilehash: 7739da2d56fa0d37dd64b22b2959ad6dca198e75
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: b0f79233e6a05c2838026093bb0027cd4789b01b
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046213"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141063"
 ---
-# <a name="upgrade-to-a-different-plan"></a>升級至不同的方案 
+# <a name="upgrade-to-a-different-plan"></a>升級至不同的方案
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 當您的公司變更或需要更多功能時，您可以升級計畫。 若要執行此作業，最簡單的方法是使用系統管理中心的 [**升級**] 索引標籤。 不過，並非所有情況都支援使用 [**升級**] 索引標籤。 在某些情況下，您可能可以手動變更方案。
 

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 56c3187999d34ac6d84c1b3857053f82bb40b2a9
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 9f39878ca56aef3ec8c9d89805a87196c19eb5b8
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804752"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141504"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -52,7 +52,7 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 ### <a name="products-included-in-secure-score"></a>安全分數中包含的產品
 
-目前有一些建議包括 SharePoint Online、Exchange Online、商務 OneDrive、Microsoft 資訊保護等等）、Azure AD 和 Cloud App Security。 即將推出其他安全性產品（如 Azure ATP 和 Microsoft Defender ATP）的建議。 建議不會涵蓋與各項產品相關聯的所有攻擊面，但也是一個很好的基準。 您也可以將改進動作標示為協力廠商所涵蓋的範圍。
+目前有 Microsoft 365 （包括 Exchange Online）、Azure AD、Microsoft Defender ATP、Azure ATP 和 Cloud App Security 的建議。 即將推出其他安全性產品的建議。 建議不會涵蓋與各項產品相關聯的所有攻擊面，但也是一個很好的基準。 您也可以將改進動作標示為協力廠商所涵蓋的範圍。
 
 ## <a name="required-permissions"></a>必要的權限
 
@@ -110,8 +110,6 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 ### <a name="actions"></a>動作
 
-標為 [未評分] 的動作不會由 Microsoft 安全分數追蹤。 您仍然可以採取動作，但完成這些動作不會影響您的分數。 如果您未來的動作成為 Microsoft 安全得分，而且您已完成，您的安全分數會自動反映變更。
-
 當您選取特定的 [改進] 動作時，會出現 [飛出]。 若要完成此動作，您有幾個選項：
 
 1. 選取 [**查看設定**] 以進入設定畫面，然後進行變更。 然後，您可以在飛出的最上方看到所要採取動作的點。最多可能需要24小時才能更新點數。
@@ -122,7 +120,7 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 ![安全分數改進動作範例](../../media/secure-score/secure-score1x450.png)
 
-*圖 2 & 3：改善動作 flyouts*
+*圖2：改進動作浮出控制項*
 
 ## <a name="monitor-improvements-over-time"></a>監視隨時間的改進
 
@@ -215,7 +213,7 @@ Microsoft Secure 得分會更新改進動作，以支援[AZURE AD 中的安全�
 已移除改進動作：
 
 - 為多重要素驗證註冊所有使用者
-- 需要對所有使用者進行 MFA
+- 要求所有使用者使用 MFA
 - Azure AD 特權角色需要 MFA
 
 新增改進動作：

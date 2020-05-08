@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b5efda8f6b4b7937b98a9357ad3bb2c661541256
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ace04c61b8bb26661201b3a2616799f0dc4ea87e
+ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065818"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44162675"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
@@ -91,17 +91,19 @@ ms.locfileid: "44065818"
 如需為貴組織設定 Microsoft 365 HR 連接器的逐步指示，請參閱[設定連接器以匯入 HR 資料](import-hr-data.md)主題。 設定 HR 連接器後，請返回這些設定步驟。
 
 >[!IMPORTANT]
->如果您使用「 *emplo'ee 資料竊取*」範本設定 p'licy，則需要將 HR 連接器設定為使用原則範本的完整信號偵測功能。 如果您為貴組織設定多個 HR 連接器，測試人員風險管理將會自動從所有 HR 連接器提取指標。
+>如果您使用「*盜竊員工資料竊取*」範本來設定原則，則必須設定 HR 連接器，以使用原則範本的完整信號偵測功能。 如果您為貴組織設定多個 HR 連接器，測試人員風險管理將會自動從所有 HR 連接器提取指標。
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>設定資料遺失防護（DLP）原則
 
-測試人員風險管理支援使用 DLP 原則，以協助您識別蓄意或意外將敏感性資訊暴露給不適當的對象。 使用*資料外洩*範本設定測試人員風險管理原則時，您必須將特定 DLP 原則指派給原則。 此原則可協助推動敏感性資訊的警示指標，且是在組織中設定完整風險管理覆蓋範圍的重要部分。
+測試人員風險管理支援使用 DLP 原則，以協助您識別蓄意或意外將敏感性資訊暴露給不適當的對象。 使用*資料外洩*範本設定測試人員風險管理原則時，您必須將特定 DLP 原則指派給原則。
 
-如需為貴組織設定 DLP 原則的逐步指示，請參閱[建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)主題。 在您設定 DLP 原則之後，請回到下列設定的 config "ration 步驟"。 "" "" "" "" ""
+這個原則可協助為敏感資訊的高嚴重性 DLP 警示產生「內幕人員風險管理」指示器，這是在組織中設定完整風險管理範圍的重要部分。 如果您為貴組織設定多個 DLP 原則，您必須為每個 DLP 原則指派測試人員風險管理原則。
+
+如需為貴組織設定 DLP 原則的逐步指示，請參閱[建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)主題。 設定 DLP 原則後，請返回這些設定步驟。
 
 >[!IMPORTANT]
->如果您使用*資料洩漏*範本來設定原則，則必須至少設定一個 DLP 原則，才能使用原則範本的完整信號偵測功能。 如果您為貴組織設定多個 DLP 原則，您必須為每個 DLP 原則指派測試人員風險管理原則。
-""""""""
+>請確定與此範本搭配使用的內幕人士原則管理之 DLP 原則中的 [**附隨報告**] 設定會設定*高*嚴重性等級警示。 不會從 DLP 原則產生「內幕風險管理」提醒，其**附隨報告**欄位設定為 [*低*] 或「*中*」。
+
 ## <a name="step-4-required-configure-insider-risk-settings"></a>步驟4（必要）：設定有問必答風險設定
 
 「[內部使用者風險」設定](insider-risk-management-policies.md#policy-settings)會套用至所有的內幕風險管理原則，不論您在建立原則時所選擇的範本為何。 設定是使用「**內幕風險設定**」控制項設定，其位於所有「內幕人員風險管理」索引標籤的頂端。 這些設定會控制隱私權、指示器、監控視窗和智慧偵測。

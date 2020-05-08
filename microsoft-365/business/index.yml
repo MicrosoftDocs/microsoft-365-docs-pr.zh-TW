@@ -11,27 +11,27 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 520a89860d5dcac103493037fc4a52b8e60073ea
-  ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+  ms.openlocfilehash: 05b835c8c7ceb6a472710a9878f356de63c89e5f
+  ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "44002177"
+  ms.lasthandoff: 05/08/2020
+  ms.locfileid: "44165822"
 productDirectory:
   title: 使用 Microsoft 365 商務版加強遠端工作
   items:
-  - title: 新功能
-    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Azure AD Premium P1 已進入 Microsoft 365 商務版 Premium！
-    url: https://aka.ms/aadp1smbblog
-  - title: 觀賞合作夥伴網路研討會
-    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: 在您的 SMB 客戶處理 COVID-19 時加以保護。
-    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
   - title: 讀取
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
     summary: 使用 Microsoft 365 商務版優質啟用安全遠端作業的最佳方式。
     url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
+  - title: 取得免費的合作夥伴套件
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: 適用于合作夥伴進行遠端工作的實用指導方針和走向市場資源。
+    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
+  - title: 新功能
+    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+    summary: Azure AD Premium P1 已進入 Microsoft 365 商務版 Premium！
+    url: https://aka.ms/aadp1smbblog
 conceptualContent:
   items:
   - title: 什麼是 Microsoft 365 商務進階版？
@@ -76,7 +76,7 @@ conceptualContent:
     - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx
       itemType: download
       text: 音調組（夥伴焦點）
-    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery
       itemType: download
       text: 技術基礎
     - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
@@ -118,7 +118,7 @@ conceptualContent:
     - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
       itemType: overview
       text: 資料外洩防護
-    - url: https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980
+    - url: https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980
       itemType: how-to-guide
       text: 傳送加密的電子郵件
     - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving

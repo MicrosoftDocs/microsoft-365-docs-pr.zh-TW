@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 了解網域及其相關聯的 DNS 記錄，協助您管理網域。
-ms.openlocfilehash: bd011add44ea462dacab41fde1ef0ebe4a6b4aa8
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: feef7de31f1576173f7377afe3eac8a6f6aaacb1
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048182"
+ms.locfileid: "44053749"
 ---
 # <a name="dns-basics"></a>DNS 基本知識
 
@@ -151,14 +151,14 @@ DNS 記錄如同網域相關資訊的資料庫。 該記錄及其值會儲存在
 ## <a name="why-add-a-domain-in-office-365"></a>為什麼要在 Office 365 中新增網域？
 
 
-將自訂網域 (例如 fourthcoffee.com) 新增至 Office 365 可讓您使用更簡短、更熟悉的電子郵件地址和該服務的 userID。 註冊 Office 365 帳戶時，將會[提供一個網域供您使用](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx)，但包括「onmicrosoft.com」。 如果計劃將 Office 365 用於電子郵件，許多人偏好新增組織或商務網域。 
+將自訂網域 (例如 fourthcoffee.com) 新增至 Office 365 可讓您使用更簡短、更熟悉的電子郵件地址和該服務的 userID。 註冊 Office 365 帳戶時，將會[提供一個網域供您使用](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，但包括「onmicrosoft.com」。 如果計劃將 Office 365 用於電子郵件，許多人偏好新增組織或商務網域。 
   
 > [!NOTE]
 > 如果您只是要下載並使用 Microsoft App (例如 Outlook 或 Word)，則無需新增網域：[在您的 PC 或 Mac 上安裝 Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)。 
   
 您可以在 Office 365 中將網域名稱用於電子郵件、公用網站及立即訊息位址。
   
-- **電子郵件：** 您的網域名稱可讓您自訂電子郵件，因此您可以使用更簡短且易記的地址，而不是帳戶隨附的[初始 onmicrosoft.com 電子郵件地址](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx)。 因此電子郵件地址 (也是用於登入 Office 365 的公司帳戶) 可能是 joe@contoso.com，而不是 joe@contoso.onmicrosoft.com。 
+- **電子郵件：** 您的網域名稱可讓您自訂電子郵件，因此您可以使用更簡短且易記的地址，而不是帳戶隨附的[初始 onmicrosoft.com 電子郵件地址](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)。 因此電子郵件地址 (也是用於登入 Office 365 的公司帳戶) 可能是 joe@contoso.com，而不是 joe@contoso.onmicrosoft.com。 
     
 - **網站：** 如果您的 Microsoft 365 訂閱包含 SharePoint Online 公用網站 (已不再提供購買)，您的公用網站會隨附像 contoso-public.sharepoint.com 這樣的初始位址。 如果您是為企業設定網站，您可以使用自訂網域名稱，將網站位址重新命名為類似 www.contoso.com 這樣的位址。 
     
@@ -170,14 +170,14 @@ DNS 記錄如同網域相關資訊的資料庫。 該記錄及其值會儲存在
 ## <a name="why-add-a-domain-in-office-365"></a>為什麼要在 Office 365 中新增網域？
 
 
-將自訂網域 (例如 fourthcoffee.com) 新增至 Office 365 可讓您使用更簡短、更熟悉的電子郵件地址和該服務的 userID。 註冊 Office 365 帳戶時，將會[提供一個網域供您使用](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx)，但包括「onmicrosoft.com」。 如果計劃將 Office 365 用於電子郵件，許多人偏好新增組織或商務網域。 
+將自訂網域 (例如 fourthcoffee.com) 新增至 Office 365 可讓您使用更簡短、更熟悉的電子郵件地址和該服務的 userID。 註冊 Office 365 帳戶時，將會[提供一個網域供您使用](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，但包括「onmicrosoft.com」。 如果計劃將 Office 365 用於電子郵件，許多人偏好新增組織或商務網域。 
   
 > [!NOTE]
 > 如果您只是要下載並使用 Office 365 App (例如 Outlook 或 Word)，則無需新增網域：[在您的 PC 或 Mac 上安裝 Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)。 
   
 您可以在 Office 365 中將網域名稱用於電子郵件、公用網站及立即訊息位址。
   
-- **電子郵件：** 您的網域名稱可讓您自訂電子郵件，因此您可以使用更簡短且易記的地址，而不是帳戶隨附的[初始 onmicrosoft.com 電子郵件地址](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx)。 因此電子郵件地址 (也是用於登入 Office 365 的公司帳戶) 可能是 joe@contoso.com，而不是 joe@contoso.onmicrosoft.com。 
+- **電子郵件：** 您的網域名稱可讓您自訂電子郵件，因此您可以使用更簡短且易記的地址，而不是帳戶隨附的[初始 onmicrosoft.com 電子郵件地址](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)。 因此電子郵件地址 (也是用於登入 Office 365 的公司帳戶) 可能是 joe@contoso.com，而不是 joe@contoso.onmicrosoft.com。 
     
 - **網站：** 如果您的訂閱包含 SharePoint Online 公用網站 (已不再提供購買)，您的公用網站會隨附像 contoso-public.sharepoint.com 這樣的初始位址。 如果您是為企業設定網站，您可以使用自訂網域名稱，將網站位址重新命名為類似 www.contoso.com 這樣的位址。 
     

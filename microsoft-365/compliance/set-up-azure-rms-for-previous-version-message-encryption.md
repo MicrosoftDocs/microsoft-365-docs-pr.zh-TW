@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: 先前版本的 Office 365 郵件加密取決於 Microsoft Azure Rights Management （先前稱為 Windows Azure Active Directory Rights Management）。
-ms.openlocfilehash: 234115a76116fe9033e8da7868f846658d0d3eee
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 879f4ec1db8a8cfe1fe3c8d3b1dd9e1fc68dd687
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943262"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165914"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>設定舊版郵件加密的 Azure Rights Management
 
@@ -116,7 +116,7 @@ TPD 是一種 XML 檔案，其中包含組織的版權管理設定資訊。 例�
 ## <a name="next-steps"></a>後續步驟
 <a name="importTPDs"> </a>
 
-當您完成 Azure Rights Management 安裝程式之後，如果您想要啟用新的 OME 功能，請參閱[設定新的 Office 365 郵件加密功能（以 Azure 資訊保護為](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)基礎）。
+當您完成 Azure Rights Management 安裝程式之後，如果您想要啟用新的 OME 功能，請參閱[設定新的 Office 365 郵件加密功能（以 Azure 資訊保護為](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities)基礎）。
   
 在您設定組織使用新的 OME 功能之後，您就可以[定義郵件流程規則，以使用新的 OME 功能來保護電子郵件](define-mail-flow-rules-to-encrypt-email.md)。
   

@@ -24,14 +24,21 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: '遵循此檢查清單，從 Microsoft 365 中移除員工，並保護資料安全。 '
-ms.openlocfilehash: 74da58878259275d9b39849bd917f7ef35dce82b
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: d54a37575c0280ca9ad23fdd4a4b878286dde1ab
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045293"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140590"
 ---
 # <a name="remove-a-former-employee"></a>移除離職員工
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
   
 ## <a name="sign-out-now"></a>立即登出！
 

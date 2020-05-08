@@ -1,6 +1,6 @@
 ---
 title: GDPR 和 CCPA 的 Visual Studio 系列資料主體要求
-description: GDPR 和 CCPA 的 Visual Studio 系列資料主體要求
+description: 了解如何使用 Microsoft 工具管理 Visual Studio 中的家族資料主體要求，以符合 GDPR 和 CCPA。
 keywords: Visual Studio、Visual Studio Code、Visual Studio for Mac、Visual Studio 文件、隱私權、GDPR、CCPA
 localization_priority: Priority
 audience: itpro
@@ -18,18 +18,19 @@ ms.collection:
 ms.workload:
 - multiple
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 81dfd4b0c0724e2ab40113c1d134e0932c215c8f
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f6d5e4fe6db8ef776435cc75da04ac5d2e038a47
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557983"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036298"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Visual Studio 系列資料主體要求
 
 歐盟[一般資料保護規範 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) 賦予人員 (在規範中稱為「資料主體」__) 權限，以管理他們的個人資料。個人資料在 GDPR 中的定義非常廣泛，係指與已識別或可識別之自然人相關的任何資料。GDPR 賦予資料主體對其個人資料的特定權限，這些權限包括取得個人資料副本、要求更正資料、限制資料的處理、刪除資料或以電子格式接收資料。由資料主體向資料控制者 (具有個人資料控制權的雇主或其他類型的公司或組織) 提出對該資料主體的個人資料採取某項動作的正式要求，稱為「資料主體要求」__ 或 DSR。
 
-同樣地，加州消費者隱私法 (CCPA) 為加州客戶提供隱私權和義務，包括與 GDPR 資料主體權利相似的權利，例如有權刪除、存取和接收 (可攜性) 其個人資訊。  CCPA 也提供特定接露、針對選擇行使權時的歧視提供保護，以及特定資料傳輸的「選擇退出/選擇加入」需求分類為「銷售」。 銷售的廣泛定義，包括出於有價值的考量而共用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](offering-ccpa.md)和[常見問題集](ccpa-faq.md)。
+同樣地，加州消費者隱私法 (CCPA) 為加州客戶提供隱私權和義務，包括與 GDPR 資料主體權利相似的權利，例如有權刪除、存取和接收 (可攜性) 其個人資訊。  CCPA 也提供特定揭露、針對選擇行使權時的歧視提供保護，以及特定資料傳輸的「選擇退出/選擇加入」需求分類為「銷售」。 銷售的廣泛定義，包括出於有價值的考量而共用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](offering-ccpa.md)和[常見問題集](ccpa-faq.md)。
 
 如需關於 GDPR 的一般資訊，請參閱[服務信任入口網站的 GDPR 區段](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)。
 

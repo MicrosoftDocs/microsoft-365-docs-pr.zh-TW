@@ -14,14 +14,21 @@ ms.collection:
 search.appverid:
 - MET150
 description: 系統管理員可以瞭解如何管理組織中使用者所進行的自我服務購買。
-ms.openlocfilehash: 7074a829bed3e65a160a9a33afb4f2b130f6c8d1
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 991dc87c40f41a6cbd2f1c08d4bc72bbb34d28f1
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046177"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141147"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助購買 (管理員)
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 身為系統管理員，您可以看到組織中人員所進行的自我服務購買。 您可以看到產品、買方名稱、購買的訂閱、到期日、購買價格，以及每個自助購買的指派使用者。 如果您的組織需要，您可以透過 PowerShell 關閉以每個產品為基礎的自助購買。 透過自助購買或集中購買的產品，您可以使用相同的資料管理和存取原則。
 

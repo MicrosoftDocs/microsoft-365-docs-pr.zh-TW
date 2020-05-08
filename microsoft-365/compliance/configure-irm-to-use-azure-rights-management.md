@@ -18,15 +18,15 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文包含 Office 365 郵件加密（OME）新功能的相關資訊。
-ms.openlocfilehash: e379e4cd9c4a1620dd394541b08c447d62a741ca
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b1a9c58a17b5f8434325191828063ec91a116e88
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033683"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166094"
 ---
 # <a name="configure-irm-to-use-azure-rights-management"></a>設定 IRM 以使用 Azure Rights Management
 
-使用 Office 365 郵件加密（OME）的新功能時，您不再需要個別設定 IRM。 Microsoft 不建議使用舊版 OME 和 IRM 搭配 Azure Rights Management 設定新的部署。 如需有關新 OME 功能的詳細資訊，請參閱[Office 365 郵件加密常見問題](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e)。 如果您已準備好開始使用組織內的新 OME 功能，請參閱[設定新的 Office 365 郵件加密功能（以 Azure 資訊保護](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)為基礎）。
+使用 Office 365 郵件加密（OME）的新功能時，您不再需要個別設定 IRM。 Microsoft 不建議使用舊版 OME 和 IRM 搭配 Azure Rights Management 設定新的部署。 如需有關新 OME 功能的詳細資訊，請參閱[Office 365 郵件加密常見問題](https://docs.microsoft.com/microsoft-365/compliance/ome-faq)。 如果您已準備好開始使用組織內的新 OME 功能，請參閱[設定新的 Office 365 郵件加密功能（以 Azure 資訊保護](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities)為基礎）。
   
 

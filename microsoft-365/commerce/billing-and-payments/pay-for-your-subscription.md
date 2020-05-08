@@ -24,14 +24,21 @@ description: 瞭解哪些付款選項可用於商務用 Microsoft 365 訂閱。
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 599eb7eafda81f59b02ab11c822307d0db0c49c2
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 613bb0fcc776b65090ee66faf6dc0516987947b2
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045833"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140868"
 ---
 # <a name="pay-for-your-subscription"></a>支付訂閱費用
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 當您在設定訂閱時，可以選擇使用信用卡或銀行帳戶付款，或是使用支票或電匯 (EFT) 透過發票付款。 無論您選擇哪種方式，我們將在後續計費期間繼續使用這種付款方式，除非您[變更您的付款方式](change-payment-method.md)。
 

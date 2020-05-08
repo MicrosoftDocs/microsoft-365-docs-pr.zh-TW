@@ -1,6 +1,5 @@
 ---
 title: GDPR 和 CCPA 的資料主體要求
-description: ''
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,18 +14,20 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: fc5f4f8752d17595cfafaa39626f0d36675d7c82
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 了解如何使用 Microsoft 產品和服務來完成一般資料保護規定 (GPDR) 和加州消費者隱私法 (CCPA) 底下的 DSR。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 7342c0ae4105c05ae2e2956df51581d3afedb286
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558053"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035471"
 ---
 # <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>GDPR 與 CCPA 和資料主體要求
 
 針對為歐盟 (EU) 中的人們提供產品及服務或為歐盟居民收集和分析資料的組織，一般資料保護規定 (GDPR) 推出了新的規則，而無論您或您的企業位於何處都必須遵守。 您可以在 [GDPR 摘要主題](gdpr.md)中找到其他詳細資料。
 
-同樣地，加州消費者隱私法 (CCPA) 為加州客戶提供隱私權和義務，包括與 GDPR 資料主體權利相似的權利，例如有權刪除、存取和接收 (可攜性) 其個人資訊。  CCPA 也提供特定接露、針對選擇行使權時的歧視提供保護，以及特定資料傳輸的「選擇退出/選擇加入」需求分類為「銷售」。 本文件會引導您了解依據 GDPR 和 CCPA 使用 Microsoft 產品和服務時，完成資料主體要求 (DSR) 的相關資訊。
+同樣地，加州消費者隱私法 (CCPA) 為加州客戶提供隱私權和義務，包括與 GDPR 資料主體權利相似的權利，例如有權刪除、存取和接收 (可攜性) 其個人資訊。  CCPA 也提供特定揭露、針對選擇行使權時的歧視提供保護，以及特定資料傳輸的「選擇退出/選擇加入」需求分類為「銷售」。 本文件會引導您了解依據 GDPR 和 CCPA 使用 Microsoft 產品和服務時，完成資料主體要求 (DSR) 的相關資訊。
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -78,7 +79,7 @@ Microsoft 產生的記錄檔和相關資料可能包含依據 GDPR 的「個人�
 
 ### <a name="yammer-and-kaizala"></a>Yammer 和 Kaizala
 
-刪除使用者帳戶不會移除系統為 Yammer 和 Kaizala 所產生的記錄。若要從這些應用程式中移除資料，請參閱以下其中一個資源：
+刪除使用者的帳戶不會移除系統針對 Yammer 和 Kaizala 產生的記錄。 若要移除這些應用程式中的資料，請參閱下列其中一項資源：
 
 - [管理 Yammer Enterprise 中的 GDPR 資料主體要求](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
 - [在 Kaizala 中匯出或刪除使用者的組織資料](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)

@@ -24,14 +24,21 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: 瞭解如何在 Microsoft 365 系統管理中心中管理您的支付方式。
-ms.openlocfilehash: b15381ee4eba7c1a91e108743fc326c890ab1820
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: fda0bc13fc8c15644eeabd497cd3783b4f50e9db
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045925"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140944"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>新增、更新或移除付款方式
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 ::: moniker range="o365-worldwide"
 您可以使用信用卡或支付卡或銀行帳戶，購買來自 Microsoft 的產品和服務。 您可以在 [**付款方式**] 頁面或進行購買時，輸入您的付款資訊。

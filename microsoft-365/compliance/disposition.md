@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 監視和管理內容處置，不論您使用的是處置檢查，還是會根據您設定的設定自動刪除內容。
-ms.openlocfilehash: 47cb8f023f378796f206e436aa33e74b2993ac97
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 07790175d56db9b82610b4882070a54ddce3d0c2
+ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952616"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44156888"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -63,11 +63,14 @@ ms.locfileid: "43952616"
 
 在保留期間結束時，會觸發處置檢查：
   
-- 您選擇的人員會收到電子郵件通知，告知他們具有要審閱的內容。 這些檢閱者可以是個別的使用者、發佈或安全性群組或 Office 365 群組。 請注意，每週會傳送通知。
+- 您選擇的人員會收到電子郵件通知，告知他們具有要審閱的內容。 這些檢閱者可以是個別使用者、發佈或安全性群組或 Microsoft 365 群組（[以前稱為 Office 365 群組](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)）。 請注意，每週會傳送通知。
     
 - 檢閱者會移至 Microsoft 365 合規性中心的「**處置**」索引標籤，以查看內容，並決定是否要永久刪除、擴充保留期間或套用其他保留標籤。
 
 處置評審可將內容包含在 Exchange 信箱、SharePoint 網站、OneDrive 帳戶和 Microsoft 365 群組中。 只有在檢閱者選擇永久刪除內容之後，才會刪除等候在這些位置中進行處置檢查的內容。
+
+> [!NOTE]
+> 信箱至少必須有 10 MB 的資料，才可支援處理審閱。
 
 您可以在 [**概覽**] 索引標籤中看到所有擱置的處理的概覽。例如：
 
@@ -106,10 +109,10 @@ ms.locfileid: "43952616"
 - 套用其他保留標籤
 
 提供您具有位置和內容的許可權，您可以使用 [**位置**] 欄中的連結，以查看其原始位置中的檔。 在處置檢查期間，內容永遠不會從其原始位置移動，永遠不會刪除，除非檢閱者選擇這麼做。
-  
+
 電子郵件通知會以每週為單位自動傳送給檢閱者。 此排定的程式表示當內容到達其保留期間結束時，最多可能需要7天的時間，檢閱者收到內容正等待處置的電子郵件通知。
   
-所有的處理動作都可以進行審核。
+所有的處理動作都可以經過審核，而且檢閱者所輸入的調整文字會儲存並顯示在 [已**釋放的專案**] 頁面上的 [**批註**] 欄中。
   
 ### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>永久刪除處置內容之前的時間
 

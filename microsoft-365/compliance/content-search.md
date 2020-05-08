@@ -21,12 +21,12 @@ ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 ms.custom:
 - seo-marvel-apr2020
 description: 使用 Office 365 或 Microsoft 365 合規性中心中的內容搜尋工具，搜尋各種 Office 365 服務中的內容。
-ms.openlocfilehash: e16b369c2844f75673ac4f6eee1cb3b8f4fdfab4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b2120ed131af48defb87af80e8b38c55dc0a0422
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035501"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166104"
 ---
 # <a name="content-search"></a>內容搜尋
 
@@ -237,7 +237,7 @@ ms.locfileid: "44035501"
   
 ### <a name="searching-onedrive-accounts"></a>搜尋 OneDrive 帳戶
 
-- 若要收集組織中 OneDrive 網站的 URL 清單，請參閱[建立組織中所有 OneDrive 位置的清單](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)。 本文章中的這個指令碼會建立文字檔案，其中包含所有 OneDrive 網站的清單。 若要執行此指令碼，您必須安裝並使用 SharePoint Online 管理命令介面。 請務必將您組織 MySite 網域的 URL 附加至您要搜尋的每個 OneDrive 網站。 這是包含您所有 OneDrive 的網域；例如，`https://contoso-my.sharepoint.com`。 以下是使用者 OneDrive 網站的 URL 範例：`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
+- 若要收集組織中 OneDrive 網站的 URL 清單，請參閱[建立組織中所有 OneDrive 位置的清單](https://docs.microsoft.com/onedrive/list-onedrive-urls)。 本文章中的這個指令碼會建立文字檔案，其中包含所有 OneDrive 網站的清單。 若要執行此指令碼，您必須安裝並使用 SharePoint Online 管理命令介面。 請務必將您組織 MySite 網域的 URL 附加至您要搜尋的每個 OneDrive 網站。 這是包含您所有 OneDrive 的網域；例如，`https://contoso-my.sharepoint.com`。 以下是使用者 OneDrive 網站的 URL 範例：`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
     
     在人員的使用者主體名稱 (UPN) 變更的少數情況下，其 OneDrive 位置的 URL 將會變更以納入新的 UPN。 如果發生這種情況，您必須透過新增使用者的新 OneDrive URL 並移除舊 URL 來修改內容搜尋。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes) (英文)。
   

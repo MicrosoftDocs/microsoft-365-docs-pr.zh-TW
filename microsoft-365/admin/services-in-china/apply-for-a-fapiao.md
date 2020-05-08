@@ -1,5 +1,5 @@
 ---
-title: 由 21Vianet 運作的 Office 365 申請發票
+title: 適用于由世紀運作的 Office 365 發票
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,132 +18,139 @@ search.appverid:
 - MET150
 - GEA150
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
-description: 了解如何您發票將要求提交至 21Vianet 發票管理系統由中國 21vianet 運作的 Office 365 中進行付款之後。
+description: 瞭解如何將發票要求提交給世紀發票管理系統，然後再將其付款于中國由世紀運作的 Office 365。
 monikerRange: o365-21vianet
-ms.openlocfilehash: fece5448ecd72ad3d0aceabde76d6519bafa917d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 55629654599dd20b813708a148e3ce49f6b6cf88
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360954"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140810"
 ---
-# <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>由 21Vianet 運作的 Office 365 申請發票
+# <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>適用于由世紀運作的 Office 365 發票
 
-您可以提交至 21Vianet 發票管理系統發票要求約三天後沒有付費。 您提交發票要求之後，它會處理在兩天內。
-  
-![顯示發票應用程式程序的流程圖。](../../media/bf14884a-53f9-4c53-971c-b9b8ad6ec8d3.png)
-  
-## <a name="step-1-apply-for-a-fapiao"></a>步驟 1： 申請發票
-
-有兩種方式可申請發票：
-  
-1. 由 21Vianet 網站運作的 Office 365 中進行付款之後, 就會收到訂單確認電子郵件，其中包含您的訂單編號和發票管理系統的連結。 您可以使用電子郵件中的連結， <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet 發票的資訊管理系統</a>中建立帳戶。
-    
-    或者
-    
-2. 您可以申請發票，從<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">系統管理中心</a>。
-    
-    ![在 Microsoft 365 系統管理中心的 [帳單] 頁面。](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
-  
-## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>步驟 2： 註冊 21Vianet 發票管理系統
+::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 您可以使用相同的電子郵件名稱和密碼為您的 Office 365 帳戶，或您可以使用不同的項目。 
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
+
+您可以將您的發票要求提交至世紀發票管理系統，大約在您支付後三天。 在您提交發票要求之後，它會在兩天內處理。
   
-1. 移至<a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet 發票的資訊管理系統</a>。
-    
-2. 在註冊表單中，輸入您的訂單號碼、 電子郵件地址和密碼，然後選取 [**註冊**。
-    
-    ![21Vianet Fapioa 管理系統註冊頁面。](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
+![顯示發票應用程式進程的流程圖。](../../media/bf14884a-53f9-4c53-971c-b9b8ad6ec8d3.png)
   
-3. 您的註冊完成後，系統將會啟用電子郵件傳送給您的電子郵件地址中。 開啟電子郵件訊息，並選取 [啟用您的帳戶] 連結。
+## <a name="step-1-apply-for-a-fapiao"></a>步驟1：申請發票
+
+有兩種方法適用于發票：
+  
+1. 在由世紀運作的 Office 365 中支付款項後，您將會收到訂單確認電子郵件，其中包含您的訂單號碼和發票管理系統的連結。 您可以使用電子郵件中的連結，在 [<a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">世紀發票資訊管理系統</a>] 中建立帳戶。
     
-## <a name="step-3-submit-your-bill-for-a-fapiao"></a>步驟 3： 提交您的帳單發票
+    或
+    
+2. 您可以從系統<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>申請發票。
+    
+    ![Microsoft 365 系統管理中心中的 [帳單] 頁面。](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
+  
+## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>步驟2：向世紀發票管理系統註冊
+
+> [!NOTE]
+> 您可以使用與 Office 365 帳戶相同的電子郵件名稱和密碼，也可以使用不同的電子郵件名稱和密碼。 
+  
+1. 移至 [<a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">世紀發票資訊管理系統</a>]。
+    
+2. 在 [註冊] 表單中，輸入您的訂單號碼、電子郵件地址和密碼，然後選取 [**註冊**]。
+    
+    ![[世紀 Fapioa management system registration] 頁面。](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
+  
+3. 完成註冊後，系統會將啟用電子郵件訊息傳送至您的電子郵件地址。 開啟電子郵件訊息，然後選取要啟用帳戶的連結。
+    
+## <a name="step-3-submit-your-bill-for-a-fapiao"></a>步驟3：提交您的帳單以供發票
 
 1. 登入<a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">發票管理系統</a>。
     
-2. 選取帳單的記錄，然後選取 [**套用帳單**。
+2. 選取帳單記錄，然後選取 [套用**帳單**]。
     
     > [!NOTE]
-    > 付款系統是協力廠商平台上，並採取三天的時間可以同步處理的順序與付款的記錄。 
+    > 付款系統位於協力廠商平臺上，並且需要三天來同步處理訂單和付款記錄。 
   
-    ![顯示最近的訂單的發票管理系統頁面。](../../media/b319767d-1d10-4cb4-b270-c5fbcee1368e.png)
+    ![顯示最近訂單的 [發票管理系統] 頁面。](../../media/b319767d-1d10-4cb4-b270-c5fbcee1368e.png)
   
-3. 選取發票類型，輸入所需的資訊，然後選取 [**下一步**。
+3. 選取發票類型，輸入必要的資訊，然後選取 **[下一步]**。
     
-    ![您在其中選取發票類型發票要求表單。](../../media/56fe3db1-c20f-4082-a39d-02d7ac41fec8.png)
+    ![發票要求表單，您可以在其中選取發票類型。](../../media/56fe3db1-c20f-4082-a39d-02d7ac41fec8.png)
   
     > [!NOTE]
-    > - 針對一般 VAT 發票，您只需要輸入該位購買者的名稱。
-    > - 如有需要，您可以申請發票具有不同的標題。 不過，您只能在一個卷的一個發票標題套用在系統中。 如果您想要分割成不同的金額或標題的發票，請<a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">將提交您在系統管理中心的要求</a>。
-    > - 下一次申請發票，系統會自動呈現先前的發票資訊。
-    > - 如果您需要購買憑證或退款，必須符合的付款者名稱與發票標題。
+    > - 若為一般的 加值稅 發票，您只需要輸入買方的名稱。
+    > - 如有必要，您可以套用至具有不同標題的發票。 不過，您只能對系統中的一個帳單套用一個發票職稱。 如果您想要將發票分割成不同的金額或頭銜，請<a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">在系統管理中心提交您的要求</a>。
+    > - 當您下一次套用發票時，系統會自動顯示先前的發票資訊。
+    > - 如果您需要購買憑證或退款，付款人名稱和發票職稱必須相符。
     
-4. 選取 [運送方式，然後輸入郵件的資訊。 您可以選擇 Yunda 或 SF （運費收集）。 您也可以移至要取得發票 21Vianet 上海分支。 選取 [**下一步**]。
+4. 選取發貨方式，然後輸入郵寄資訊。 您可以選擇 Yunda 或 SF （貨運收集）。 您也可以前往世紀上海分公司，以取得發票。 選取 **[下一步]**。
     
-    ![發票要求表單顯示之郵件的資訊。](../../media/bba500b4-a51d-477b-81a7-9113b08d39f1.png)
+    ![顯示郵寄資訊的發票要求表單。](../../media/bba500b4-a51d-477b-81a7-9113b08d39f1.png)
   
-    **21Vianet 上海分支公司地址：**
+    **世紀上海分公司公司位址：**
 
-    從上海，Pudong 新區域 Keyuan 隨身攜帶 [否]。 88，德文中心建置 3，657
+    上海，Pudong 新區域 Keyuan 道路編號 88，德文 Center，組建3，657
 
     **連絡人資訊：**
 
-    Zhu qin qin 021 28986102
+    Zhu qin qin 021-28986102
    
-5. 確認資訊正確，然後選取 [ **Confirm**。
+5. 請確認資訊正確無誤，然後選取 [**確認**]。
     
     ![發票要求表單的 [確認] 頁面。](../../media/18706d9d-defc-4285-8fd3-990448b44a18.png)
   
-## <a name="step-4-check-application-progress"></a>步驟 4： 檢查應用程式進度
+## <a name="step-4-check-application-progress"></a>步驟4：檢查應用程式進度
 
-應用程式自動傳輸值得 21Vianet 服務，並將兩個工作天內完成。
+您的應用程式會自動傳送至世紀服務中心，並會在兩個工作日內完成。
   
-您提交的應用程式後，您可以隨時查看進度。 我們將會更新您的應用程式的狀態與**發行**或**出 Mailed**之類的註解。
+在您提交應用程式之後，您可以隨時查看進度。 我們將使用已**寄出或已寄出**的**評語**，更新應用程式的狀態。
   
-![21Vianet 發票管理系統顯示的頁面要求的狀態。](../../media/6cd696ec-d630-4fce-9f27-935a0d5f0ebe.png)
+![顯示要求狀態的 [世紀發票管理系統] 頁面。](../../media/6cd696ec-d630-4fce-9f27-935a0d5f0ebe.png)
   
-使用超出發票時，系統會顯示通知，且會指出發出發票的預計的時間。
+當發票已無法使用時，系統會顯示一個通知，並指出預計會發出發票的時間。
   
-![超出使用 21Vianet 發票管理系統時所顯示的錯誤訊息。](../../media/effe0796-83aa-4a91-a488-15d6f58c01dc.png)
+![在使用世紀發票管理系統時所顯示的錯誤訊息。](../../media/effe0796-83aa-4a91-a488-15d6f58c01dc.png)
   
 ## <a name="faqs"></a>常見問題集
 
-### <a name="what-services-can-i-get-from-online-support"></a>從 [線上支援可以取得哪些服務？
+### <a name="what-services-can-i-get-from-online-support"></a>我可以從線上支援取得哪些服務？
 
-您可以檢查您的發票要求的進度，並找出您還沒有收到發票的原因為何。
+您可以檢查發票要求的進度，並找出您未收到發票的原因。
   
-如果您想要變更的發票標題，請將發票傳送給我們，我們將會重新提交的發票。 您可以提交要求透過<a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">系統管理中心</a>。
+如果您想要變更發票標題，請將發票送回給我們，我們將會重新發起發票。 您可以透過系統<a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">管理中心</a>提交要求。
   
-![在系統管理中心支援表單來傳送發票回到要求標題變更。](../../media/2a413e9e-f30b-4f26-adbf-6287cc217a0f.png)
+![Admin center 支援表單用來傳送發票以要求標題變更。](../../media/2a413e9e-f30b-4f26-adbf-6287cc217a0f.png)
   
-### <a name="how-do-i-change-my-login-email-address-and-password"></a>如何變更我的登入電子郵件地址和密碼？
+### <a name="how-do-i-change-my-login-email-address-and-password"></a>如何變更登入電子郵件地址和密碼？
 
-1. 登入<a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">發票管理系統</a>中，然後選取 [**變更電子郵件地址**。
+1. 登入<a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">發票管理系統</a>，然後選取 [**變更電子郵件地址**]。
     
-    ![使用者登入至 21Vianet 發票管理系統之後下拉功能表。](../../media/ee6de24b-6be2-41e6-8aec-e0c3cb0ea35e.png)
+    ![使用者登入世紀發票管理系統之後的下拉式功能表。](../../media/ee6de24b-6be2-41e6-8aec-e0c3cb0ea35e.png)
   
-2. 如果您忘記您的登入的密碼，您可以使用您的登入電子郵件地址重設密碼。 發票管理系統會將新的密碼傳送到您的電子郵件地址。 您可以使用新的密碼以登入。
+2. 如果您忘記登入密碼，您可以使用您的登入電子郵件地址來重設密碼。 發票管理系統會將新密碼傳送至您的電子郵件地址。 您可以使用新密碼登入。
     
-    ![循序圖像顯示如何 21Vianet 發票管理系統中重設密碼。](../../media/2edb0a47-1286-4792-804d-7e84534c8370.png)
+    ![顯示如何在世紀發票管理系統中重設密碼的連續影像。](../../media/2edb0a47-1286-4792-804d-7e84534c8370.png)
   
-3. 如果您忘記您的登入電子郵件地址，請連絡 21Vianet 客戶服務 (86) 400-089-0365。
+3. 如果您忘記登入電子郵件地址，請聯繫我們的客戶服務中心客戶服務，網址為（86）400-089-0365。
     
-### <a name="how-do-i-find-my-order-id"></a>如何尋找我的順序識別碼？
+### <a name="how-do-i-find-my-order-id"></a>如何尋找我的訂單識別碼？
 
-1. 在[系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)，移至**帳單** \> **帳單 & 付款**] 頁面。
+1. 在系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)中，移至 [**帳單** \> **票據 & 付款**] 頁面。
     
-2. 尋找您想要選取若要檢視，或選擇下載 PDF 發票。
+2. 找到您想要的發票，選取以查看或選擇下載 PDF。
 
   
-### <a name="what-if-i-enter-the-wrong-email-address-when-i-register"></a>如果我註冊時輸入錯誤的電子郵件地址？
+### <a name="what-if-i-enter-the-wrong-email-address-when-i-register"></a>當我註冊時輸入錯誤的電子郵件地址，該怎麼辦？
 
-如果您輸入錯誤的電子郵件地址，當您註冊時，不會收到啟用電子郵件。 電子郵件中的 [註冊] 連結會自動將在 24 小時後到期。 您可以回到<a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">註冊] 頁面上</a>，並重新註冊正確的電子郵件地址。 
+如果您在註冊時輸入錯誤的電子郵件地址，您就不會收到啟用電子郵件。 電子郵件中的註冊連結會在24小時後自動到期。 您可以回到<a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">註冊頁面</a>，並使用正確的電子郵件地址再次註冊。 
   
-### <a name="what-if-i-dont-receive-an-activation-email"></a>如果我未收到啟用電子郵件？
+### <a name="what-if-i-dont-receive-an-activation-email"></a>如果我沒有收到啟用電子郵件，該怎麼辦？
 
-如果您未收到帳戶啟用電子郵件，您在註冊後的 24 小時內，移至<a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet 發票的資訊管理系統</a>，輸入您的電子郵件地址，然後選取 [ **Resend 啟用電子郵件**。 系統將會重新傳送至您已註冊的電子郵件地址的帳戶啟用電子郵件。
+如果您在註冊後24小時內未收到帳戶啟用電子郵件，請移至 [<a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">發票資訊管理系統</a>]，輸入您的電子郵件地址，然後選取 **[重新傳送啟用電子郵件**]。 系統會將帳戶啟用電子郵件重新傳送至您註冊的電子郵件地址。
   
-![21Vianet Fapioa 管理系統註冊頁面。](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
+![[世紀 Fapioa management system registration] 頁面。](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
   
-如果您仍未收到啟用電子郵件，請連絡 21Vianet 客戶服務 (86) 400-089-0365。
+如果您仍未收到啟用電子郵件，請聯繫我們的客戶服務中心客戶服務，網址為（86）400-089-0365。

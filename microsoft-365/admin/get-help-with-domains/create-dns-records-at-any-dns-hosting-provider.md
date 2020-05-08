@@ -23,25 +23,25 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: 了解如何在 Microsoft 365 的任一 DNS 主機服務提供者上驗證您的網域並建立 DNS 記錄。
 ms.custom: okr_smb
-ms.openlocfilehash: a2d9b57f0230aa736944727e39845f3a0a533426
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 2cf28cdd3cc2f85e448d512e72f5b022177e8f1e
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048780"
+ms.locfileid: "44053716"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider"></a>在任一 DNS 主機服務提供者建立 DNS 記錄
 
  若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
-查看我們的[特定主機指示](https://support.office.com/article/ae950c9e-e8d9-4108-b0cb-449156998580) 來尋找您的主機，並遵循步驟來新增您需要的所有記錄。 
+查看我們的[特定主機指示](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) 來尋找您的主機，並遵循步驟來新增您需要的所有記錄。 
   
 如果您不知道您網域的 DNS 主機提供者或網域註冊機構，請參閱[尋找您的網域註冊機構或 DNS 主機服務提供者](../get-help-with-domains/find-your-domain-registrar.md)。
   
 若要自行設定記錄，以下是必須新增的記錄。 請注意，您的驗證記錄和 MX 記錄對您的網域來說是唯一的。 若要進行設定，您必須為網域取得和使用特定的「權杖」值。 下列步驟說明如何執行這項作業。
   
 > [!IMPORTANT]
-> 對於每個 DNS 主機來說，在建立每種類型的 DNS 記錄時，在其上輸入或貼上資訊的方塊或 *[欄位]* 的確切名稱都不同。 您的 DNS 主機在其網站上可能提供說明，協助您將此處所述的指示對應到網站上的確切欄位。 請記得在[建立 Microsoft 365 的 DNS 記錄](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx)中查看我們是否提供您 DNS 主機的逐步指示。 > 某些 DNS 主機不會讓您建立所有需要的記錄類型，而這會導致 Microsoft 365 的[服務限制](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (部分機器翻譯)。 例如，如果您的網域主機不支援 SRV、TXT 或 CNAME 記錄，建議您[將網域移轉](../get-help-with-domains/buy-a-domain-name.md)至支援所有必要記錄的 DNS 主機。 建議您將網域移轉至 GoDaddy，以獲得快速且自動化的 Microsoft 365 設定程序。 
+> 對於每個 DNS 主機來說，在建立每種類型的 DNS 記錄時，在其上輸入或貼上資訊的方塊或 *[欄位]* 的確切名稱都不同。 您的 DNS 主機在其網站上可能提供說明，協助您將此處所述的指示對應到網站上的確切欄位。 請記得在[建立 Microsoft 365 的 DNS 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)中查看我們是否提供您 DNS 主機的逐步指示。 > 某些 DNS 主機不會讓您建立所有需要的記錄類型，而這會導致 Microsoft 365 的[服務限制](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (部分機器翻譯)。 例如，如果您的網域主機不支援 SRV、TXT 或 CNAME 記錄，建議您[將網域移轉](../get-help-with-domains/buy-a-domain-name.md)至支援所有必要記錄的 DNS 主機。 建議您將網域移轉至 GoDaddy，以獲得快速且自動化的 Microsoft 365 設定程序。 
   
 > [!NOTE]
 > 通常需要幾分鐘，DNS 變更才會生效。 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正變更網域名稱或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md) (部分機器翻譯)。 
@@ -432,6 +432,6 @@ ms.locfileid: "44048780"
   
  **如果您需要一些協助以了解如何新增所需的 DNS 記錄**，請參閱[設定您的網域 (特定主機指示)](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions?view=o365-worldwide) (部分機器翻譯)，但是先[收集建立 Microsoft 365 DNS記錄所需的資訊](../get-help-with-domains/information-for-dns-records.md) (部分機器翻譯)。 然後使用本主題中的一般步驟來設定網域的 DNS 記錄，這樣您就可以將網域與 Microsoft 365 服務 (例如電子郵件) 搭配使用。
   
- **如果您的網站未搭配自訂網域**，您可以讓 Microsoft 365 來設定及管理網域的 DNS 記錄，而不是自行執行所有設定。 深入了解在 Microsoft 365 中[設定和管理自訂網域的 DNS 記錄的兩種選項](https://support.office.com/article/5980474a-097f-4f21-a864-21245314957f.aspx) (部分機器翻譯)。 
+ **如果您的網站未搭配自訂網域**，您可以讓 Microsoft 365 來設定及管理網域的 DNS 記錄，而不是自行執行所有設定。 深入了解在 Microsoft 365 中[設定和管理自訂網域的 DNS 記錄的兩種選項](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (部分機器翻譯)。 
   
 

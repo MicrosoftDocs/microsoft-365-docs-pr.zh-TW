@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: 在本文中，您將瞭解如何自訂、組織和管理小組網站，以進行檔案儲存與共享。
-ms.openlocfilehash: 1830cd3df75ee80f25ff0ca3147d4491103102e4
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: 465cd3781fb5023fa6a1c943b41fa7802d7b4a45
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155278"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165104"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自訂您的小組網站以進行檔案儲存與共享
 
@@ -77,7 +77,7 @@ SharePoint 包含許多您可以新增至網站的清單範本，例如連結清
   
 如果您要將大量資料儲存在清單中，請參閱[在 SharePoint 中管理大型清單和文件庫](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx)。
   
-View a 錄影若要將行事曆新增至您的網站，請參閱[建立共用的行事曆](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx)。
+View a 錄影若要將行事曆新增至您的網站，請參閱[建立共用的行事曆](https://support.microsoft.com/en-us/office/video-create-a-shared-calendar-in-office-365-61b96006-70e2-4535-a34f-ee4fc772f798)。
 
 ## <a name="organize-sites-into-hubs"></a>將網站組織成中樞
 
@@ -87,7 +87,7 @@ View a 錄影若要將行事曆新增至您的網站，請參閱[建立共用的
   
 準備好建立中樞網站，請參閱[在 SharePoint Online 中建立 hub 網站](/sharepoint/create-hub-site)。
   
-若要瞭解如何將網站新增至 hub 網站，請參閱[將 SharePoint 網站與 hub 網站關聯](https://support.office.com/article/ae0009fd-af04-4d3d-917d-88edb43efc05.aspx)。
+若要瞭解如何將網站新增至 hub 網站，請參閱[將 SharePoint 網站與 hub 網站關聯](https://support.microsoft.com/en-us/office/associate-a-sharepoint-site-with-a-hub-site-ae0009fd-af04-4d3d-917d-88edb43efc05)。
   
 ## <a name="sharing-files-with-the-team"></a>與小組成員共用檔
 
@@ -115,7 +115,7 @@ View a 錄影若要將行事曆新增至您的網站，請參閱[建立共用的
     
   - [在 iPhone 或 iPad 上使用 Microsoft 365 安裝和設定 Office](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
     
-  - [在 Windows Phone 上使用 Microsoft 365 設定 Office](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [在 Windows Phone 上使用 Microsoft 365 設定 Office](https://support.microsoft.com/en-us/office/set-up-office-mobile-apps-on-a-windows-mobile-device-2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
     
 - [深入了解如何使用 OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458)。
     

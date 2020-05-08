@@ -22,14 +22,21 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 瞭解如何在人員離開組織時保留員工的檔案和電子郵件。
-ms.openlocfilehash: 9f665b68f50fd9b7f41ac0a6ef4b9e29ef289d7c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f7132b927c05b8339f20b268b48847291e9c710e
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617221"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140630"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>存取及備份離職使用者的資料
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 
 當員工離開您的組織時，您可能會想要存取其資料（檔和電子郵件），並對其進行備份，或是將它備份或提供給新員工。

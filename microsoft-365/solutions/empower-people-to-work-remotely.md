@@ -14,19 +14,21 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
 - M365solutions
+ms.custom: ''
 description: 設定安全性和服務基礎結構，讓您的員工隨時隨地都能遠端工作。
-ms.openlocfilehash: da83dc788f31edb56a155f29dd6f14529840f8d5
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 7e396c509431772b9f044c24fdeb230b82241c60
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003792"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160914"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 強化遠端工作者
 
 為了因應 COVID-19 危機，貴組織可能必須讓員工能夠從家裡安全地存取貴組織的內部部署與雲端式資訊、工具及資源。 
+
+![使用 Microsoft 365 強化遠端工作者的步驟](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)
 
 請使用下列步驟來保護和最佳化組織伺服器、資料和雲端服務的存取，並讓員工發揮最高的生產力。
 

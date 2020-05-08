@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: f7ae1a285e22ad18d292d37aab0bba0b4a441461
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 6ac6d74b027cc533f689c1d67c7fce246c73984f
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857448"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166158"
 ---
 # <a name="automated-investigation-and-response-air-capabilities-in-microsoft-threat-protection"></a>Microsoft 威脅防護中的自動化調查和回應（AIR）功能
 
@@ -54,7 +54,7 @@ AIR 可讓您的安全性作業小組大幅增加貴組織處理安全性警示�
 |裝置 (也稱為端點)     |[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |電子郵件內容 (信箱中的檔案和郵件)     |[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-每個調查會針對每個調查證據產生結果 (*惡意*、*可疑*或*乾淨*)。 根據威脅類型和產生的判定，您的組織的安全性運作小組會自動或核准執行修正動作。 待處理和已完成的操作會列在[重要訊息中心](mtp-action-center.md)。
+每個調查都會針對每個證據調查產生 verdicts （未找到*惡意*、*可疑*或*無威脅*）。 根據威脅類型和產生的判定，您的組織的安全性運作小組會自動或核准執行修正動作。 待處理和已完成的操作會列在[重要訊息中心](mtp-action-center.md)。
 
 > [!TIP]
 > 如果您認為 Microsoft 威脅防護中的自動調查和回應功能已錯過或錯誤地偵測到某項功能，請告訴我們！ 請參閱[如何在 Microsoft 威脅防護中，以自動化調查和回應（AIR）功能來報告誤報/負片](mtp-autoir-report-false-positives-negatives.md)。

@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解設定小組以與小組中的客人共同作業所需的 Microsoft 365 設定步驟。
-ms.openlocfilehash: bf074d9115d8e5d9e2c7c265ee96e493ac3d59e3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: dabcfa53e9ccf4b3ea136b5ab522619fe81ae738
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036004"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160024"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在小組中與來賓共同作業
 
@@ -61,17 +61,17 @@ Microsoft 365 中的共用可透過 Azure Active Directory 中的組織關聯設
 
 ![Teams 來賓存取切換的螢幕擷取畫面](../media/teams-guest-access-toggle-on.png)
 
-設定小組來賓存取設定
+設定 Teams 來賓存取設定
 
-1. 登入 Microsoft 365 系統管理中心，網址[https://admin.microsoft.com](https://admin.microsoft.com)為。
-2. 在左側導覽中，按一下 [**全部顯示**]。
-3. 在 [系統**管理中心**] 底下，按一下 [**小組**]。
-4. 在團隊系統管理中心的左側導覽中，展開 [**整個組織的設定**]，然後按一下 [**來賓存取**]。
-5. 確定 [**允許以團隊來賓存取**] 設定為 [**開啟**]。
-6. 對其他來賓設定進行任何想要的變更，然後按一下 [**儲存**]。
+1. 登入 [https://admin.microsoft.com](https://admin.microsoft.com) 的 Microsoft 365 系統管理中心。
+2. 在左側導覽窗格中，按一下 [顯示全部]****。
+3. 在 [系統管理中心]**** 底下，按一下 [Teams]****。
+4. 在 Teams 系統管理中心的左側導覽中展開 [全組織設定]****，然後按一下 [來賓存取]****。
+5. 確定 [在 Teams 中允許來賓存取]**** 已設定為 [開啟]****。
+6. 對其他來賓設定進行所需的變更，然後按一下 [儲存]****。
 
 > [!NOTE]
-> 在您將「小組訪客」設定為作用中後，可能需要長達24小時的時間才會變成作用中。
+> Teams 來賓設定在開啟後，最慢可能需要 24 小時才會生效。
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 群組來賓設定
 
@@ -128,7 +128,7 @@ Microsoft 365 中的共用可透過 Azure Active Directory 中的組織關聯設
 2. 在 [檔案**和資料夾連結**] 底下，選取您要使用的預設共用連結。
 3. 如果您做了任何變更，請按一下 [儲存]****。
 
-## <a name="create-a-team"></a>建立小組
+## <a name="create-a-team"></a>建立團隊
 
 下一步是建立您計畫用以與客人合作的小組。
 

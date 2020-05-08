@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用系統管理中心的集中式部署，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: 30f2c08aa895f63ed529b4390d208e3daa9d6d7b
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: cb41d02d8075e94c788a9964e0a3ac69d8363ef4
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011708"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139706"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中管理增益集的部署
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 Office 增益集可以協助您將文件個人化，也可以簡化您存取網路資訊的方式 (請參閱[開始使用 Office 增益集](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx))。 作為系統管理員，您可以為組織中的使用者部署 Office 增益集。 您可以使用 Microsoft 365 系統管理中心的 [集中式部署] 功能來執行此動作。
   
@@ -234,7 +241,7 @@ Office 增益集會與內含部分增益集中繼資料的 XML 資訊清單檔�
   
 如果已啟用 Active Directory 驗證程式庫（ADAL），Windows 的 Word、Excel 及 PowerPoint 2013 會支援相同的次要檢查。 規範有兩個選項，如接下來所述。
   
-- **啟用 ADAL**。 本文說明如何啟用 ADAL for Office 2013：搭配[使用 Microsoft 365 新式驗證與 office 用戶端](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)。<br/>您也需要將登錄機碼設定為啟用 ADAL，如在[Windows 裝置上啟用 Office 2013 新式驗證](../security-and-compliance/enable-modern-authentication.md)中所述。<br/>此外，您必須安裝下列 Office 2013 的四月更新：
+- **啟用 ADAL**。 本文說明如何啟用 ADAL for Office 2013：搭配[使用 Microsoft 365 新式驗證與 office 用戶端](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。<br/>您也需要將登錄機碼設定為啟用 ADAL，如在[Windows 裝置上啟用 Office 2013 新式驗證](../security-and-compliance/enable-modern-authentication.md)中所述。<br/>此外，您必須安裝下列 Office 2013 的四月更新：
     
   - [Office 2013 的安全性更新說明：4月10日（2018）](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     
@@ -281,6 +288,6 @@ Office 增益集會與內含部分增益集中繼資料的 XML 資訊清單檔�
 
 深入了解如何建立及建置 [Office 增益集](https://go.microsoft.com/fwlink/p/?linkid=846362)。
   
-[使用集中式部署 PowerShell Cmdlet 來管理增益集](https://support.office.com/article/94f4e86d-b8e5-42dd-b558-e6092f830ec9)。
+[使用集中式部署 PowerShell Cmdlet 來管理增益集](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)。
   
 [疑難排解：使用者未看到增益集](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)

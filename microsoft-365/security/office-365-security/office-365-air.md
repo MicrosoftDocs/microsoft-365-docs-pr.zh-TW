@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 開始使用 Office 365 進階威脅防護方案 2 中的自動化調查及回應功能
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: b9811963210f253bbfe90af02dd6d38926776a62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: cb65b5a7f0b12ff977c0e8bd92912b8f741a2281
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033947"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141544"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>開始使用 Office 365 中的自動調查和回應（AIR）
 
@@ -93,6 +93,13 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 |--|--|
 |設定 AIR 功能 |下列其中一個角色： <br/>-全域管理員<br/>-安全性管理員 <br/>您可以在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)或[Security & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)指派這些角色。 |
 |核准或拒絕建議的動作|在[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)或[Security & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)內指派的下列角色之一：<br/>-全域管理員 <br/>-安全性管理員<br/>-安全性讀取器 <br/>--- 且 ---<br/>-搜尋和清除（此角色只會指派在[安全性 & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。 您可能需要建立新的角色群組，並將搜尋和清除角色新增至該新的角色群組。）
+
+[Office 365 ATP 計畫 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2)授權應指派給：
+- 安全性管理員（包括全域管理員）
+- 組織的安全性運作小組（包括安全性讀者和具有搜尋及清除角色的使用者）
+- 使用者
+
+此外，必須定義及套用[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies)原則，才能進行保護。
 
 ## <a name="next-steps"></a>後續步驟
 

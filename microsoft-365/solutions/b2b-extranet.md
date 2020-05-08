@@ -9,17 +9,17 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解如何使用夥伴組織中的受管理來賓使用者建立 B2B 外部網路網站或小組。
-ms.openlocfilehash: 3a1faab90907daf9c48ec02c51eb272187fb0fde
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 1b7542dd2fcd5fa28afc013f83da713c37e1187b
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44001696"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166146"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>使用受管理來賓建立 B2B 外部網路
 
@@ -58,7 +58,7 @@ ms.locfileid: "44001696"
 2. 按一下 [**目錄**]。
 3. 按一下 [**新增目錄**]。
 4. 輸入目錄的名稱和描述，並確定**外部使用者**的**Enabled**及 enabled 皆已設定為 **[是]**。
-5. 按一下 **[建立]**。
+5. 按一下 [建立]****。
 
    ![Azure Active Directory 身分識別管理中目錄頁面的螢幕擷取畫面](../media/identity-governance-catalogs.png)
 

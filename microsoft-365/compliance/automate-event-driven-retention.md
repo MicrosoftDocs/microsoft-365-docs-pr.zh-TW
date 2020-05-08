@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本主題說明如何使用 Microsoft 365 REST API 透過事件進行自動化保留，設定您的商務程序流程。
-ms.openlocfilehash: 1e7255fe8f21328b93ac95c0377ccd9017195caa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b94a607b679c6a03624a5af7a1b61f7d7a29dbee
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636361"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166124"
 ---
 # <a name="automate-event-based-retention"></a>自動化事件型保留
 
@@ -89,7 +89,7 @@ ms.locfileid: "43636361"
         
     - 建立 SharePoint 文件庫。在文件庫層級設定事件型標籤。如需更多資訊，請參閱[將預設的保留標籤套用至 SharePoint 文件庫、資料夾或文件組的所有內容](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。
           
-    - 在 SharePoint 中設定文件組。 如需詳細資訊，請參閱[文件組簡介](https://support.office.com/article/3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234)。
+    - 在 SharePoint 中設定文件組。 如需詳細資訊，請參閱[文件組簡介](https://support.microsoft.com/zh-TW/office/introduction-to-document-sets-3dbcd93e-0bed-46b7-b1ba-b31de2bcd234)。
       
 3. 將資產識別碼指派給每個員工文件組。 資產識別碼是組織使用的產品名稱或代碼，例如員工識別碼可以是資產識別碼。 透過將資產識別碼指派給資料夾的方式，該資料夾內的每個項目都會自動繼承相同的資產識別碼。 這表示所有項目可以透過相同事件觸發保留期間。
 
@@ -183,10 +183,10 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 <tr class="odd">
 <td>Body</td>
 <td><p>&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'</p>
-<p>xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
-<p>xmlns='http://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
+<p>&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'</p>
+<p>xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
+<p>xmlns='https://www.w3.org/2005/Atom'&gt;</p>
+<p>&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
 <p>&lt;updated&gt;9/9/2017 10:50:00 PM&lt;/updated&gt;</p>
 <p>&lt;content type='application/xml'&gt;</p>
 <p>&lt;m:properties&gt;</p>
@@ -374,10 +374,10 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 <p>$EventName=&quot;EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))&quot;</p>
 <p>Write-Host &quot;開始建立下列名稱的事件：$EventName&quot;</p>
 <p>$body = &quot;&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'</p>
-<p>xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
-<p>xmlns='http://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
+<p>&lt;entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices'</p>
+<p>xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
+<p>xmlns='https://www.w3.org/2005/Atom'&gt;</p>
+<p>&lt;category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
 <p>&lt;updated&gt;7/14/2017 2:03:36 PM&lt;/updated&gt;</p>
 <p>&lt;content type='application/xml'&gt;</p>
 <p>&lt;m:properties&gt;</p>

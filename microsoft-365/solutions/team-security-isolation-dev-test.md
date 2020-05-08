@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
 - M365solutions
+ms.custom: ''
 description: 設定安全性和基礎結構，讓您的員工隨時隨地都能遠端工作。
-ms.openlocfilehash: 5f22930a4c8d207e32c5379733ec77c637f3f581
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 5c2de3fbb174bdf1dccc8ef8371dca1ae1bfddf0
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002558"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159392"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>在開發/測試環境中為小組設定安全性隔離
 
@@ -121,7 +121,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 接下來，建立小組：
 
 1. 在 Teams 中，按一下應用程式左側的 [小組]****，然後按一下小組清單底部的 [加入或建立小組]****。
-2. 按一下 [建立小組]**** (左上角的第一張卡片)。
+2. 按一下 [建立團隊]**** (左上角的第一張卡片)。
 3. 選擇 [從頭建置小組]****。
 4. 在 [敏感度]**** 清單中，保留預設值。
 5. 在 [隱私權]**** 底下，按一下 [私人]****。

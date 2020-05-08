@@ -18,14 +18,21 @@ search.appverid:
 - MET150
 description: 瞭解如何閱讀和瞭解您的 Microsoft 商務產品發票。
 keywords: 計費帳戶、組織資訊、發票
-ms.openlocfilehash: 7b16af7c6ef39743aa8d0a4e927786f64f47c4cd
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: dad635df97e9cdf490118adc3a041c876878521b
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942874"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141325"
 ---
 # <a name="understand-your-invoice"></a>了解您的發票
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 該發票提供您的費用和付款指示的摘要。 您可以在 Microsoft 365 系統管理中心中[查看您的線上發票](#view-your-online-invoice)。 您也可以透過電子郵件將其下載成可移植檔案格式（.pdf）。
 

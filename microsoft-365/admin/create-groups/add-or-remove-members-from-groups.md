@@ -20,14 +20,21 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: 瞭解如何將成員新增至群組、從群組中移除成員及管理 Microsoft 365 系統管理中心中的群組擁有者狀態。
-ms.openlocfilehash: 8b4df54e3dc54baf2f9e770f42333b95af391e90
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 96d9485821c27f2e9a4696401938da35a9996996
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049396"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140552"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>使用系統管理中心新增或移除 Microsoft 365 群組中的成員
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 在 Microsoft 365 中，群組成員通常會建立自己的群組、將自己新增至他們想要加入的群組，或由群組擁有者邀請。 如果群組擁有權變更，或者您決定要新增或移除成員，您也可以在系統管理員進行變更。 只有全域系統管理員、Exchange 系統管理員、群組管理員或使用者管理員可以進行這些變更。 [何謂 Microsoft 365 群組？](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 

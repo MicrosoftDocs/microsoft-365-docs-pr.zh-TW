@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-security-compliance
-ms.custom:
 - M365solutions
+ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 在本文中，您將了解在 Microsoft 365 中建立安全的來賓共用環境的可用選項。
-ms.openlocfilehash: 848bdef888ab6d6fb20db2a461912f180bfa212c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b567be8df8d0b9dc96400627c6607560fefd9c39
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036121"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159476"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>建立安全的來賓共用環境
 
@@ -35,8 +35,8 @@ ms.locfileid: "44036121"
 - 設定工作階段逾時原則，以確保來賓每天進行驗證。
 - 建立及發佈敏感度標籤以分類內容。
 - 建立高敏感度專案的敏感性資訊類型。
-- 自動將*高敏感度*標籤指派給包含敏感性資訊類型的文件。
-- 自動從標示為*高敏感度*的檔案移除來賓存取權。
+- 自動將 [高敏感度]* *標籤指派給包含敏感性資訊類型的文件。
+- 自動從標示為 [高敏感度]** 的檔案移除來賓存取權。
 
 本文中所述的部分選項要求來賓在 Azure Active Directory 中擁有帳戶。 若要確保共用檔案和資料夾時目錄中包含來賓，請使用 [SharePoint 和 OneDrive 與 Azure AD B2B 整合 (預覽版)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)。
 

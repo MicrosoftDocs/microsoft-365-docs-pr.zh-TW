@@ -10,15 +10,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: d621586e5ff50bce7be68117a940fc54607362c2
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: f0c80cee878f845aa26a984e8374a911a6da120d
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011744"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159976"
 ---
 # <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 解決方案和架構中心
 
@@ -26,7 +26,7 @@ ms.locfileid: "44011744"
 
 ![封鎖](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **[基礎方案指導](foundation-solutions-overview.md)** 這些解決方案可提供特定業務問題或需求的完整指導方針。 它們會引導您逐步瞭解概念和功能，並協助您做出選擇，以從規劃到實施起起作用的最終結果。 
 
-- [使用 Microsoft 365 提供遠端工作者](empower-people-to-work-remotely.md)
+- [使用 Microsoft 365 強化遠端工作者](empower-people-to-work-remotely.md)
 - [使用 Microsoft 365 設定安全協同作業](setup-secure-collaboration-with-teams.md)
 - [跨 Microsoft 365 部署威脅防護](deploy-threat-protection.md)
 

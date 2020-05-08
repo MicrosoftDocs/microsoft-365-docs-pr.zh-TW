@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 瞭解如何使用 Office 365 郵件加密為組織建立機密資訊類型原則。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a6baf20d755ed30ce962d7cc6b03f6c9734e4a4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 7ba94923c1f8c6ade6b7bf494636c562b4cc4102
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031403"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165954"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>使用郵件加密為組織建立機密資訊類型原則
 
@@ -64,7 +64,7 @@ New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -S
 
 您可能會想要更新任何適用的使用者檔和訓練材料，以準備組織中的人員進行此項變更。 請適當地與您的使用者分享這些 Office 365 郵件加密資源：
 
-- [在 Outlook 中針對電腦傳送、查看和回復加密的郵件](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980)
+- [在 Outlook 中針對電腦傳送、查看和回復加密的郵件](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
 - [Microsoft 365 Essentials 影片： Office 郵件加密](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="view-these-changes-in-the-audit-log"></a>在審核記錄中查看這些變更

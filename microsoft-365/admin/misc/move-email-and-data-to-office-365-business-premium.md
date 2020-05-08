@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: 瞭解如何將資料移至新的商務身分識別。
-ms.openlocfilehash: 674b5e1fc8128656733b9586d9bab607df621954
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 64db403b27d661fe812acd209ca6ed8e95961125
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627833"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155358"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>將電子郵件和資料移至 Microsoft 365 商務標準
 
@@ -61,14 +61,14 @@ ms.locfileid: "43627833"
 ## <a name="outlookemail"></a>[Outlook/電子郵件](#tab/Outlook)
   
  **將 Outlook 2013 資訊匯出成 Outlook 資料檔**
-1. 建立 Outlook 資料檔 (.pst) 之前，您必須先在電腦版 Outlook 中新增要匯出 Outlook 資訊的帳戶。若要了解如何將帳戶新增到 Outlook 2013 或更新版本，請參閱[在 Windows 版 Outlook 中設定電子郵件](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)或[在 Mac 版 Outlook 2011 中設定電子郵件](https://support.office.com/article/d7b404a0-6e18-4d95-bed8-2de7661563ca.aspx)。
+1. 建立 Outlook 資料檔 (.pst) 之前，您必須先在電腦版 Outlook 中新增要匯出 Outlook 資訊的帳戶。若要了解如何將帳戶新增到 Outlook 2013 或更新版本，請參閱[在 Windows 版 Outlook 中設定電子郵件](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)或[在 Mac 版 Outlook 2011 中設定電子郵件](https://support.microsoft.com/en-us/office/set-up-email-in-mac-os-x-mail-de372dc4-9648-4044-a76c-e8a60e178d54)。
     
 2. 每個使用者都需要完成[將電子郵件、連絡人及行事曆匯出或備份為 Outlook.pst 檔案](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)中的步驟。
     
  **在 Outlook 中設定新的電子郵件帳戶**
 1. 每個使用者都必須設定其新的電子郵件帳戶隨附于 Microsoft 365 for business 訂閱。 若要這麼做，他們將需要其新電子郵件帳戶的位址。 每個使用者的電子郵件帳戶與用來登入 Microsoft 365 for business 的使用者名稱相同。 它看起來會類似 sue@contoso.onmicrosoft.com 或 david@contoso.com。
     
-2. 要求每個使用者在 Outlook 中新增自己的電子郵件帳戶。若要了解如何進行這項作業，請參閱[在 Windows 版 Outlook 中設定電子郵件](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)或[在 Mac 版 Outlook 2011 中設定電子郵件](https://support.office.com/article/d7b404a0-6e18-4d95-bed8-2de7661563ca.aspx)。
+2. 要求每個使用者在 Outlook 中新增自己的電子郵件帳戶。若要了解如何進行這項作業，請參閱[在 Windows 版 Outlook 中設定電子郵件](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)或[在 Mac 版 Outlook 2011 中設定電子郵件](https://support.microsoft.com/en-us/office/set-up-email-in-mac-os-x-mail-de372dc4-9648-4044-a76c-e8a60e178d54)。
     
  **從 Outlook 資料檔匯入資訊**
 1. 這會將儲存在 PST 檔案中的電子郵件、行事曆、工作和連絡人，合併成您的商務用 Microsoft 365 電子郵件帳戶。
