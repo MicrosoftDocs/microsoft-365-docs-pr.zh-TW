@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bea6775580c4e4a7c9ab4cbf9b9368c312331038
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 069267af4e695ebdf811f92cdab653c5f20e4af4
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602280"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065928"
 ---
 # <a name="korea-information-security-management-system-k-isms"></a>韓國資訊安全管理系統 (K-ISMS)
 
@@ -86,7 +86,3 @@ MSIT、韓國通訊委員會和韓國行政安全部在 2018 年 11 月將 K-ISM
 - [K-ISMS 文件和指南](https://isms.kisa.or.kr/main/isms/notice/) (韓文)
 - [Azure 區域](https://azure.microsoft.com/global-infrastructure/regions/)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/2/C/6/2C6FFA1C-1BA8-48E8-887A-4EA52E256AF3/K-ISMS-Compliance.pdf)。

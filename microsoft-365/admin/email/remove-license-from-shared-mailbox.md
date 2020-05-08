@@ -21,14 +21,21 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '從共用信箱中移除授權，將其指派給其他使用者。 '
-ms.openlocfilehash: 02c98570a1742d710373c6711d2621a0a9ebe818
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: fb09036fc28ea3d9c182395d0a85e467f611dfdc
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210525"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140426"
 ---
-# <a name="remove-a-license-from-a-shared-mailbox"></a>從共用信箱中移除授權
+# <a name="remove-a-license-from-a-shared-mailbox"></a>從共用信箱移除授權
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 除非信箱具有超過50GB 的資料，否則共用信箱不需要授權。 請遵循下列指示，從共用信箱中移除授權，以便將其指派給使用者或傳回授權，這樣您就不會支付您不需要的授權。
   
@@ -58,7 +65,7 @@ ms.locfileid: "43210525"
 
 ::: moniker range="o365-germany"
 
- 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
 
    > [!NOTE]
    > 您必須從 [作用中使用者] 頁面中移除授權。 您無法從共用信箱頁面移除授權，因為授權是使用者設定。
@@ -67,7 +74,7 @@ ms.locfileid: "43210525"
 
 3. [**產品授權**] 頁面上，針對您想要移除的授權，將切換設定為 [**關閉**]。
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
 
 5. 當您回到 [作用中**使用者**] 頁面時，共用信箱的狀態將會是 [未**授權**]。
 
@@ -77,7 +84,7 @@ ms.locfileid: "43210525"
 
 ::: moniker range="o365-21vianet"
 
- 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
+ 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
 
    > [!NOTE]
    > 您必須從 [作用中使用者] 頁面中移除授權。 您無法從共用信箱頁面移除授權，因為授權是使用者設定。
@@ -86,7 +93,7 @@ ms.locfileid: "43210525"
 
 3. [**產品授權**] 頁面上，針對您想要移除的授權，將切換設定為 [**關閉**]。
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
 
 5. 當您回到 [作用中**使用者**] 頁面時，共用信箱的狀態將會是 [未**授權**]。
 

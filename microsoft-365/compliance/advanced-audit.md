@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 中的進階稽核提供新的稽核功能，以協助組織進行鑑識與合規性調查。
-ms.openlocfilehash: b1a79598fc49d710c54a23dc9ce92c9f2b7f5805
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6fb42e9df35fe025c5c5f292238217aebb4098c7
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632278"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141041"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 中的進階稽核
 
@@ -93,7 +93,7 @@ Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and
 
 **為什麼即使已有 E5 訂閱，而使用者也已獲指派 E5 授權，在組織中仍看不到進階稽核？**
 
-即使已具備正確的授權，您的組織可能仍無法使用 [進階稽核] 功能 (例如建立稽核記錄保留原則和記錄 MailItemsAccessed 稽核記錄的功能)。 如果您遇到此問題，這是因為進階稽核套件尚未部署至您的組織。 這是暫時的授權回填問題，在未來幾周內將會為受影響組織解決這個問題。 若要緩解此問題，請針對每個 E5 使用者執行下列步驟：
+即使已具備正確的授權，您的組織可能仍無法使用 [進階稽核] 功能 (例如建立稽核記錄保留原則和記錄 MailItemsAccessed 稽核記錄的功能)。 如果您遇到此問題，這是因為進階稽核套件尚未部署至您的組織。 這是暫時的授權回填問題，應該很快會為受影響組織解決這個問題。 若要緩解此問題，請針對每個 E5 使用者執行下列步驟：
 
 1. 在 Microsoft 365 系統管理中心，移至 [使用者] > [作用中的使用者]****，然後選取使用者。
 
@@ -106,6 +106,8 @@ Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and
    b. 如果已選取 [Microsoft 365 進階稽核]**** 核取方塊，請清除它，然後按一下 [儲存變更]****。 請參閱步驟 4。
 
 4. 如果您已在步驟 3 中清除核取方塊，請稍候 60 分鐘，然後重複步驟 3a 來啟用 Microsoft 365 進階稽核應用程式。
+
+針對使用以群組為基礎授權之指派授權至使用者群組的組織，請務必關閉該群組的 Microsoft 365 進階稽核授權指派。 儲存變更之後，請確認已關閉群組的 Microsoft 365 進階稽核。 然後重新開啟群組的授權指派。 如需以群組為基礎授權的相關指示，請參閱[在 Azure Active Directory 中以群組成員資格指派授權給使用者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) (英文)。
 
 **如果我的組織處於私人預覽階段的一年稽核記錄保留，會發生什麼情況？**
 

@@ -1,6 +1,6 @@
 ---
 title: GDPR 和 CCPA 的 Microsoft 支援服務與專業服務資料主體要求
-description: Microsoft 支援服務與專業服務如何處理 GDPR 和 CCPA 資料主體要求。
+description: 了解 Microsoft 支援服務與專業服務如何處理 GDPR 和 CCPA 資料主體要求。
 keywords: 專業服務, Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: bb16c663258647989c4b0ad3ca7f95f857e8a680
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e8bbdcc6140ffac298942f81899a4c872cc05584
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632494"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036308"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Microsoft 支援服務與專業服務資料主體要求
 
@@ -28,13 +29,13 @@ ms.locfileid: "43632494"
 
 Microsoft 專業服務包括一組多元化的技術結構設計師、工程師、顧問師，以及致力於達成 Microsoft 任務的支援專業人員，以期讓客戶更有能力與成就。我們的專業服務小組總計包括超過 21,000 名顧問師、數位顧問、頂級支援、工程師和專業銷售人員，這些專業人員在全球 191 個國家/地區工作，可支援 46 種不同的語言，每個月管理數百萬件約定，以及透過內部部署、電話、網路、社群和自動化工具參與客戶與合作夥伴互動。該組織具備廣泛的 Microsoft 產品組合專業知識，並運用廣闊的合作夥伴、技術社群、工具、診斷及通道網路來連結我們與企業客戶。
 
-移至 [Microsoft 專業服務安全性文件網頁](https://www.microsoft.com/en-us/professionalservices/overview)，以深入了解 Microsoft 專業服務。 Microsoft 專業服務很認真看待其在一般資料保護規定 (GDPR) 下所需承擔的責任。 本文件中的資訊是為了回答客戶有關 Microsoft 的支援和諮詢供應項目如何根據 GDPR 回應及協助客戶回應資料主體要求 (DSR) 義務的問題。
+移至 [Microsoft 專業服務安全性文件網頁](https://www.microsoft.com/zh-TW/professionalservices/overview)，以深入了解 Microsoft 專業服務。 Microsoft 專業服務很認真看待其在一般資料保護規定 (GDPR) 下所需承擔的責任。 本文件中的資訊是為了回答客戶有關 Microsoft 的支援和諮詢供應項目如何根據 GDPR 回應及協助客戶回應資料主體要求 (DSR) 義務的問題。
 
 ### <a name="introduction-to-dsrs"></a>DSR 簡介 
 
 GDPR 賦予人員 (在規範中稱為「資料主體」**) 權限，以管理由雇主或其他類型的公司或組織 (稱為「資料控制者」** 或簡稱「控制者」**) 收集而來的個人資料。個人資料在 GDPR 中的定義非常廣泛，係指與已識別或可識別自然人相關的任何資料。GDPR 賦予資料主體對其個人資料的特定權限，這些權限包括取得個人資料複本、要求更正資料、限制資料的處理和刪除資料。由資料主體向控制者提出對其個人資料採取某項動作的正式要求，稱為「資料主體要求」** 或 DSR。此外，它規定公司代表控制者 (稱為「資料處理者」** 或「處理者」**) 合理協助控制者達成 DSR。
 
-同樣地，加州消費者隱私法 (CCPA) 為加州客戶提供隱私權和義務，包括與 GDPR 資料主體權利相似的權利，例如有權刪除、存取和接收 (可攜性) 其個人資訊。  CCPA 也提供特定接露、針對選擇行使權時的歧視提供保護，以及特定資料傳輸的「選擇退出/選擇加入」需求分類為「銷售」。 銷售的廣泛定義，包括出於有價值的考量而共用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](offering-ccpa.md)和[常見問題集](ccpa-faq.md)。
+同樣地，加州消費者隱私法 (CCPA) 為加州客戶提供隱私權和義務，包括與 GDPR 資料主體權利相似的權利，例如有權刪除、存取和接收 (可攜性) 其個人資訊。  CCPA 也提供特定揭露、針對選擇行使權時的歧視提供保護，以及特定資料傳輸的「選擇退出/選擇加入」需求分類為「銷售」。 銷售的廣泛定義，包括出於有價值的考量而共用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](offering-ccpa.md)和[常見問題集](ccpa-faq.md)。
 
 本指南說明如何尋找、存取及處理存在 Microsoft IT 系統的個人資料，這些資料經收集用以提供支援和其他專業服務產品。
 
@@ -49,7 +50,7 @@ GDPR 賦予人員 (在規範中稱為「資料主體」**) 權限，以管理由
 - **修正：** 在適用情況下，對個人資料進行變更或實行其他要求的動作。
 - **限制**：藉由盡可能移除各種 Azure 服務的授權或關閉所需的服務，以限制個人資料的處理。 您也可以從 Microsoft 雲端移除資料，並將它保留在內部部署或另一個位置。
 - **刪除：** 永久移除 Microsoft 雲端中常駐的個人資料。
-- **匯出/接收 (可攜性)：** 將個人資料或個人資訊以電子複本 (以電腦可讀取的格式) 提供給資料主體。 CCPA 中的個人資訊是任何與已識別或可識別個人相關的資訊。 個人的私人、公開或公司角色之間沒有區別。 定義的「個人資訊」一詞在 GDPR 下，大致與「個人資料」相符。 不過，CCPA 也包含家庭和家用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](offering-ccpa.md)和[常見問題集](ccpa-faq.md)。
+- **匯出/接收 (可攜性)：** 將個人資料或個人資訊以電子複本 (以電腦可讀取的格式) 提供給資料主體。 CCPA 中的個人資訊是任何與已識別或可識別個人相關的資訊。 個人的私人、公開或工作角色之間沒有區別。 定義的「個人資訊」一詞大致與 GDPR 下的「個人資料」對應。 不過，CCPA 也包含家庭和家用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](offering-ccpa.md)和[常見問題集](ccpa-faq.md)。
 
 ### <a name="terminology"></a>術語
 
@@ -96,7 +97,7 @@ John 是 O365 企業客戶的 IT 系統管理員，具有一個開放支援約�
 
 ## <a name="dsr-for-an-end-user-engaging-microsoft"></a>Microsoft 使用者的 DSR
 
-Microsoft 會如何回應客戶員工或其他資料主體的要求來執行其權利。**
+*Microsoft 會如何回應客戶員工或其他資料主體的要求來執行其權利。*
 
 如果客戶員工或其他資料主體與 Microsoft 連絡，以針對 Microsoft 以資料處理者身分收集的資料執行其權限，則該資料主體會被告知他們需要連絡 Microsoft 客戶 (資料控制者)，以執行這些權限。Microsoft 不會採取進一步的動作。
 
@@ -108,7 +109,7 @@ Microsoft 會如何回應客戶員工或其他資料主體的要求來執行其�
 
 ## <a name="dsr-for-customer-provided-data-commercial-support"></a>客戶所提供資料的 DSR：商業支援
 
-當客戶收到員工或其他資料主體的要求要執行權限，且該資料主體的個人資料在支援約定期間由 Microsoft 支援服務所收集，在此情況下如何接收 Microsoft 的協助。**
+*當客戶收到員工或其他資料主體的要求要執行權限，且該資料主體的個人資料在支援約定期間由 Microsoft 支援服務所收集，在此情況下如何接收 Microsoft 的協助。*
 
 當客戶與 Microsoft 支援服務約定時，Microsoft 會收集客戶的支援資料以解決需要支援約定的任何問題。 這項支援資料包含 Microsoft 與客戶的互動 (例如聊天、電話、電子郵件、網頁提交)，加上客戶傳送給 Microsoft，或 Microsoft 經客戶同意從客戶 IT 環境或線上服務租用戶擷取的任何內容檔案，用以解決支援問題。 在主要支援的情況下，這還會包含我們向您收集的任何資料，以主動預防日後問題。 不過，這會排除客戶連絡人資訊或 Microsoft 與客戶商務關係 (例如帳單記錄) 的其他資訊。
 
@@ -124,13 +125,13 @@ Microsoft 會如何回應客戶員工或其他資料主體的要求來執行其�
 
 在探索相關資料及取得 Microsoft 的協助方面，對於如何達到 DSR 客戶有數種選項：
 
-選項 A：跨 Microsoft 支援服務客戶 DSR**。將 DSR 套用於 Microsoft 支援環境中所有客戶的支援資料。若要這麼做，客戶可以要求 Microsoft 將 DSR 套用於收集的所有支援資料。
+*選項 A：跨 Microsoft 支援服務客戶 DSR*。將 DSR 套用於 Microsoft 支援環境中所有客戶的支援資料。若要這麼做，客戶可以要求 Microsoft 將 DSR 套用於收集的所有支援資料。
 
 *選項 B — 特定客戶參與。* 使用線上系統檢閱工單，然後找出特定的約定，其中包含相關的個人資料並向 Microsoft 報告。 如果客戶無法搜尋約定 (工單)，Microsoft 會嘗試提供協助以執行搜尋。
 
 ***識別出約定之後，要求將 DSR 套用於記錄的特定部分，或 Microsoft 中與該約定相關的所有項目。***
 
-若要找出特定的約定，客戶需要搜尋其約定。對於頂級客戶，客戶的合約服務管理員 (“CSM”) 可看見在該合約排程下建立的所有支援要求 (SR)。對於非頂級客戶，則提供對等的支援約定入口網站，例如透過線上服務支援區域。
+若要找出特定的約定，客戶需要搜尋其約定。對於頂級客戶，客戶的合約服務管理員 ("CSM") 可看見在該合約排程下建立的所有支援要求 (SR)。對於非頂級客戶，則提供對等的支援約定入口網站，例如透過線上服務支援區域。
 
 ![在 SMC 中搜尋](../media/Prof-Serv-DSR-Doc-Final_image3.png)CSM 可以進到入口網站 Support.Microsoft.Com ([https://support.microsoft.com/\<local語言代碼\>/頂級](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) ("SMC") 並選取及檢閱支援要求。 (請注意：在 URL 中請替代為您的當地語言代碼)。
 
@@ -208,7 +209,7 @@ Microsoft 支援服務執行了以上所有刪除，且根據客戶要求，TAM 
 
 ## <a name="dsr-guide-for-customer-provided-data-in-consulting-services-including-migration-services"></a>諮詢服務中客戶所提供資料的 DSR 指南包括移轉服務
 
-當客戶收到員工或其他資料主體的要求要執行權限，且該資料主體的個人資料在諮詢約定期間由 Microsoft 所收集，在此情況下如何接收 Microsoft 的協助。**
+*當客戶收到員工或其他資料主體的要求要執行權限，且該資料主體的個人資料在諮詢約定期間由 Microsoft 所收集，在此情況下如何接收 Microsoft 的協助。*
 
 ## <a name="microsoft-consulting-services"></a>Microsoft 諮詢服務
 
@@ -226,7 +227,7 @@ Microsoft 是與 FastTrack 小組合作的客戶連絡人資料控制者。如�
 
 對於 FastTrack 移轉服務而言，Microsoft 是資料處理者。根據我們的 FastTrack 額外隱私權揭露聲明，所有移轉中的資料都會被都視為「轉換資料」。如果您的組織忙於處理 FastTrack 移轉專案時，您需要執行 DSR，則必須特別謹慎。
   
-如果使用者的資料正透過 FastTrack 移轉系統處理時，您需要處理任何存取權、修正或匯出 DSR 要求，客戶就有責任透過使用者資料儲存所在的現有來源系統來滿足這類 DSR。 一旦使用者的移轉完成且資料已移轉到目的地 Microsoft cloud 服務後，就會套用 Microsoft 針對客戶如何使用 Microsoft 產品、服務及系統管理工具來找出並處理個人資料，進而回應資料主體要求所提供的指引。 若要檢視此指引，請參閱 [GDPR 資料主體要求](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests)。 
+如果使用者的資料正透過 FastTrack 移轉系統處理時，您需要處理任何存取權、修正或匯出 DSR 要求，客戶就有責任透過使用者資料儲存所在的現有來源系統來滿足這類 DSR。 一旦使用者的移轉完成且資料已移轉到目的地 Microsoft 雲端服務後，就會套用 Microsoft 針對客戶如何使用 Microsoft 產品、服務及系統管理工具來找出並處理個人資料，進而回應資料主體要求所提供的指引。 若要檢視此指引，請參閱 [GDPR 資料主體要求](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests)。 
 
 如果您的組織忙於處理進行中的 FastTrack 移轉專案時，您需要刪除使用者帳戶以回應 DSR 刪除要求，您應該知道移轉系統可能會在使用者完成移轉後，保留移轉資料複本一段時間，而刪除使用者帳戶並不會自動刪除 FastTrack 移轉系統中儲存的這類使用者移轉資料。如果您希望 Microsoft FastTrack 小組刪除使用者移轉資料，您可以[提交要求](https://go.microsoft.com/fwlink/?linkid=874544)。在一般商務過程中，Microsoft FastTrack 會在貴組織的移轉完成後，刪除所有的資料複本。
 

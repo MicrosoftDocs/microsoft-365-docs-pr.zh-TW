@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fa35e71d2748e02da12a239f67134c1b25b5a369
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: e94cc9164938189e1b6fb07d897cf4bbf1e73c5d
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011826"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066670"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>健康資訊信任同盟（HITRUST）常見的安全性架構（CSF）
 
@@ -110,7 +110,3 @@ Microsoft 提供最全面的選項，與其他雲端服務提供者相較。 為
 - [瞭解和利用 CSF](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [進一步瞭解 HITRUST 共用責任計畫](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf)。

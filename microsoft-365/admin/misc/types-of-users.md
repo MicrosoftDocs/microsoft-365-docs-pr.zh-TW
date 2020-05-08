@@ -21,12 +21,12 @@ ms.assetid: 0dc55430-98d6-4cbe-ba69-1a4ad29a967d
 ROBOTS: NOINDEX
 description: '瞭解系統管理中心的使用者類型。 '
 ms.custom: okr_smb
-ms.openlocfilehash: b9a705d651aff3cde9fdd32d0122e8947e574715
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 152be955ffdb5526c974d3b0f4d19693cb29e948
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627761"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155348"
 ---
 # <a name="quick-help-types-of-users"></a>快速說明：使用者類型
 
@@ -45,7 +45,7 @@ ms.locfileid: "43627761"
 |密碼系統管理員  <br/> |這些使用者能代替您重設密碼、管理服務要求及監視服務健康情況。  <br/> |
 |服務系統管理員  <br/> |這些使用者能代替您管理服務要求及監視服務健康情況。  <br/> |
 |使用者管理系統管理員  <br/> |這些使用者能重設密碼、監視服務健康情況，以及管理使用者帳戶、使用者群組和服務要求。他們無法刪除全域系統管理員、建立其他系統管理員角色，或重設計費、全域及服務系統管理員的密碼。  <br/> |
-|新增自訂篩選  <br/> |使用此選項時，您可以建立自訂篩選，只查看特定類型的首選項，例如哪些使用者屬於 Microsoft 365 Apps for business plan。 [快速說明：篩選使用者](https://support.office.com/article/8ac6a63c-04d8-4ceb-91af-d7e27b6eac0c)。  <br/> |
+|新增自訂篩選  <br/> |使用此選項時，您可以建立自訂篩選，只查看特定類型的首選項，例如哪些使用者屬於 Microsoft 365 Apps for business plan。 [快速說明：篩選使用者](https://docs.microsoft.com/microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view)。  <br/> |
    
 ## <a name="related-articles"></a>相關文章
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 182e3489824c7842f5e9cf6a410d49d574b7462c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8a7a64532aeb7053572b78a6b05a757bf6d1b006
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637997"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066456"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保險流通與責任（HIPAA） & 高科技的運作
 
@@ -57,7 +57,7 @@ Microsoft enterprise 雲端服務也涵蓋 FedRAMP 評估。 Microsoft Azure 和
 - Cloud App Security
 - Microsoft Health Bot 服務
 - Microsoft Stream
-- Microsoft 專業服務： Azure、Dynamics 365、Intune 及適用于 Microsoft 365 for business 的中型企業和企業客戶的卓越和內部部署
+- Microsoft 專業服務：Azure、Dynamics 365、Intune 及商務用 Microsoft 365 中型企業和企業客戶的頂級與內部部署
 - [Dynamics 365 和 Dynamics 365 美國政府](https://aka.ms/d365-compliance-list)
 - Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Intune
@@ -115,7 +115,3 @@ Microsoft 為合格的公司或其供應商提供涵蓋在 Microsoft 服務範�
 - [瞭解對 Azure 的 HIPAA 合規性](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)（2016年5月19日）（含）
 - [Azure HIPAA 實現指導方針](https://aka.ms/azure-hipaa-guide)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf)。

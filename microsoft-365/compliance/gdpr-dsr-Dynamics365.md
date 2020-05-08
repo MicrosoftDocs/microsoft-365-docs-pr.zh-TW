@@ -1,6 +1,6 @@
 ---
 title: GDPR 和 CCPA 的 Dynamics 365 資料主體要求
-description: 本指南會介紹如何使用 Microsoft 產品、服務及系統管理工具，協助我們的控制者客戶找出並處理個人資料，以回應 DSR 和 CCPA 要求。
+description: 本指南可協助您了解如何尋找及處理個人資料，以及回應 Dynamics 365 客戶提出的 DSR 和 CCPA 要求。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,13 +15,15 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 38c50703fbc58e85a646720b5bbe8b400477b9d4
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: ec598816158068445f3f662bbdd6ea7c7edafd82
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558003"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043324"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Dynamics 365 資料主體要求
 
@@ -223,7 +225,7 @@ Microsoft 也讓您能夠存取、匯出及刪除系統產生的記錄檔，根�
 
 建立新要求後，該要求會列在 [資料記錄檔匯出] **** 頁面上，您可在其中追蹤其狀態。要求完成後，您可以按一下連結來存取系統產生的記錄檔，系統會在該要求建立後 30 天內，將此記錄檔匯出至貴組織的 Azure 儲存位置。系統將以常見、機器可讀取的檔案格式 (例如 JSON 或 XML) 來儲存資料。如果您沒有 Azure 帳戶和 Azure 儲存位置，就必須為貴組織建立 Azure 帳戶和/或 Azure 儲存位置，讓「資料記錄檔匯出」工具可以匯出系統產生的記錄檔。
 
-Azure 可支援這點；我們讓貴組織能以原生 JSON 格式，將資料匯出到您指定的Azure 儲存體容器。[Microsoft Azure 儲存體 - Blob 儲存體簡介](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage)一文。
+Azure 可支援這點；我們讓貴組織能以原生 JSON 格式，將資料匯出到您指定的Azure 儲存體容器。[Microsoft Azure 儲存體 - Blob 儲存體簡介](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage)一文。 所擷取的資料不會包含可能造成服務安全性和穩定性受損的資料。
 
 > [!IMPORTANT]
 > 您必須是租用戶系統管理員，才能從租用戶中匯出使用者資料。
@@ -245,9 +247,7 @@ Azure 可支援這點；我們讓貴組織能以原生 JSON 格式，將資料�
 
 ### <a name="deleting-system-generated-logs"></a>刪除系統產生的記錄
 
-若要透過存取要求來刪除系統產生的記錄檔，您必須將使用者從該服務中移除，並永久刪除其 Azure Active Directory 帳戶。如需永久刪除使用者的相關指示，請參閱本指南中[刪除使用者](https://microsoft-my.sharepoint.com/personal/kated_microsoft_com/Documents/DSR%20Guide%20v4%20-(newly%20created%20for%20O365%20only).docx#_Deleting_a_user)一節。請務必注意，一旦開始永久刪除使用者帳戶即無法復原。
-
-永久刪除使用者帳戶會在 30 天內將使用者資料，從幾乎所有 Dynamics 365 服務的系統產生的記錄中移除。
+若要刪除透過存取要求擷取的系統產生記錄，您必須從服務中移除使用者，然後永久刪除其 Azure Active Directory 帳戶。 請注意，永久刪除使用者帳戶一旦啟動就無法復原。 永久刪除使用者帳戶會在 30 天內將使用者資料，從幾乎所有 Dynamics 365 服務的系統產生的記錄中移除。
 
 ## <a name="learn-more"></a>深入了解
 

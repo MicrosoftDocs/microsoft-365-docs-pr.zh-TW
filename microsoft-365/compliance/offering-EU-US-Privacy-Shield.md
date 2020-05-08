@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1ed1703ac30a9c7c8392ad61ec0d126d1e17c17e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f58baecce1d1972c7aee1fdb7121375d5ddd111c
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602470"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066406"
 ---
 # <a name="eu-us-and-swiss-us-privacy-shield-frameworks"></a>歐盟美國和瑞士美國隱私權護盾架構
 
@@ -82,7 +82,7 @@ Azure 中的資料保護 — Azure 根據預設和客戶選項，提供強大的
 
 **Microsoft 如何處理歐盟美國和瑞士美國隱私盾下的投訴？**
 
-如果您有與隱私盾相關的投訴，請使用 [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)的[如何與我們連絡](https://privacy.microsoft.com/PrivacyStatement#mainhowtocontactusmodule)部分告知我們。 針對您無法直接透過 Microsoft 解決的任何投訴，我們會與歐盟 DPA 合作，並遵守他們提供的建議。 請與我們連絡，我們會將您導引至相關的 DPA 連絡人。 正如[隱私盾原則](https://www.privacyshield.gov/article?id=Requirements-of-Participation)中進一步說明的那樣，您可以利用具約束仲裁選項來解決其他方式無法解決的投訴。
+如果您有與隱私盾相關的投訴，請使用 [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)的[如何與我們連絡](https://privacy.microsoft.com/privacystatement#mainhowtocontactusmodule)部分告知我們。 針對您無法直接透過 Microsoft 解決的任何投訴，我們會與歐盟 DPA 合作，並遵守他們提供的建議。 請與我們連絡，我們會將您導引至相關的 DPA 連絡人。 正如[隱私盾原則](https://www.privacyshield.gov/article?id=Requirements-of-Participation)中進一步說明的那樣，您可以利用具約束仲裁選項來解決其他方式無法解決的投訴。
 
 ## <a name="resources"></a>資源
 
@@ -92,7 +92,3 @@ Azure 中的資料保護 — Azure 根據預設和客戶選項，提供強大的
 - [Microsoft 中的隱私權](https://privacy.microsoft.com)
 - [雲端隱私權考量](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/3/F/4/3F4C5C35-6653-4E9B-8C4F-917B1064F537/PrivacyShield-Compliance.pdf)。

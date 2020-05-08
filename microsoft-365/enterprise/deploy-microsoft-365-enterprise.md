@@ -13,14 +13,14 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
-ms.custom: ''
-description: 了解可用來在組織中部署 Microsoft 365 企業版的資源。
-ms.openlocfilehash: b37e7fa844a27596904e5684c5692c0193c35513
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.custom: seo-marvel-apr2020
+description: 了解可用來在組織中部署 Microsoft 365 企業版的不同資源。
+ms.openlocfilehash: 0e588816cb2393af05b48900821d7aae92b6853d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002352"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031423"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>部署 Microsoft 365 企業版
 
@@ -117,7 +117,7 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
 同時，智慧安全性功能和產品整合有助於簡化管理需求，並將整個 IT 生命週期的總擁有成本降到最低。 
 
-了解 Core Services Engineering and Operations (以前稱為 Microsoft IT) 如何[使用 Microsoft 365 建置了現代化工作場所](https://www.microsoft.com/en-us/itshowcase/microsoft-365)。
+了解 Core Services Engineering and Operations (以前稱為 Microsoft IT) 如何[使用 Microsoft 365 建置了現代化工作場所](https://www.microsoft.com/zh-TW/itshowcase/microsoft-365)。
 
 > [!Note]
 > 此網頁只提供英文版。

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7e903467a35427e4d1c6fae0b29f41d970d0fbc8
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: b5efda8f6b4b7937b98a9357ad3bb2c661541256
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043314"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065818"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
@@ -34,8 +34,10 @@ ms.locfileid: "44043314"
 
 - Microsoft 365 E5 訂閱（付費或試用版）
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
+- Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」
 - Microsoft 365 A5 訂閱（付費或試用版）
 - Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
 
 包含在「內幕風險管理」原則中的使用者必須指派上述其中一個授權。
 

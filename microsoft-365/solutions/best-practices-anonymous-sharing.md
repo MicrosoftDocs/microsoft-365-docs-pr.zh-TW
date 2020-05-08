@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 在本文中，您將了解與未驗證使用者共用檔案和資料夾的最佳做法。
-ms.openlocfilehash: 4660d1ab34172bf73e6bea0de3065d2c946a7d2c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 127f50a6a94e35a9f3c8acf655bd260080aa8420
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036761"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160676"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>與未驗證使用者共用檔案和資料夾的最佳做法
 
@@ -40,7 +40,7 @@ ms.locfileid: "44036761"
 設定任何人連結的到期日
 1. 開啟 SharePoint Online 系統管理中心。
 2. 在左側導覽窗格中，按一下 [共用]****。
-3. 在 [「任何人」連結的進階設定]**** 底下，選取 [這些連結必須在此天數內過期]**** 核取方塊。</br>
+3. 在 **[為任何人連結選擇過期和授權選項]** 下，選取 **[這些連結必須在此天數內過期]** 核取方塊。</br>
    ![SharePoint 組織層級任何人連結到期設定的螢幕擷取畫面](../media/sharepoint-organization-anyone-link-expiration.png)
 4. 在方塊中輸入天數，然後按一下 [儲存]****。
 

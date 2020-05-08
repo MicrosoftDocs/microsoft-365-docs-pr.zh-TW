@@ -1,6 +1,6 @@
 ---
-title: 韓國的電子產品與資訊技術 (MeitY)
-description: Microsoft 已所電子韓國和用於印度的資訊技術的完整 」 資格鑑定。
+title: 電子產品和資訊技術的部（MeitY）
+description: Microsoft 已授與印度的電子產品和資訊技術部的完整資格鑒定。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
@@ -14,32 +14,32 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3b1f93b301ba4db44b7260ae588688acf648e345
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 86a3e7ce703881452d3d112aace3b418bf0984af
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602140"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066094"
 ---
-# <a name="ministry-of-electronics-and-information-technology-meity"></a>韓國的電子產品與資訊技術 (MeitY)
+# <a name="ministry-of-electronics-and-information-technology-meity"></a>電子產品和資訊技術的部（MeitY）
 
-## <a name="meity-overview"></a>MeitY 概觀
+## <a name="meity-overview"></a>MeitY 概述
 
-資訊技術 (MeitY) 的印度、 政府機構與韓國的電子產品提供給所有的政府和狀態公營組織的原則指導方針。 私用的磁區組織在管制的產業，例如財務服務及電信也常用醫療其指導方針。
+電子的政府及州的政府和州公開部門的電子產品和資訊技術（MeitY），會為政府和州公開的各項組織提供原則指導方針。 其指導方針也經常採用管制行業中的私營部門組織，例如金融服務和電信。
 
-MeitY 提供 」 資格鑑定 （引用 MeitY 為 「 empanelment 」） 的雲端服務提供者，它需要雲端服務才能通過認證為相容對一組預先定義的標準和安全性、 互通性、 資料可攜性的指導方針，服務層次協議，以及合約的條款和條件。 稽核者所 MeitY 的 irap 確認所進行的雲端服務提供者的稽核合規性。
+MeitY 提供雲端服務提供者的資格鑒定（由 MeitY 視為 "empanelment"），它需要將雲端服務認證為符合預先定義的標準集和原則，以符合安全性、互通性、資料可攜性、服務等級協定，以及合約條款與條件。 由 MeitY 驗證的審計員會透過執行雲端服務提供者的審計來驗證相容性。
 
-一旦 irap，雲端服務提供者會列在政府雲端服務目錄其中公營組織可以比較，並視需要而定的 irap 雲端服務。 目錄是[MeghRaj 雲端計劃](https://meity.gov.in/content/gi-cloud-meghraj)的服務 (或 GI\[印度政府\]雲端)，其中會升階的雲端運算政府使用，並且管理實作的公共部門 IT 服務。
+經過認證之後，雲端服務提供者會列在政府雲端服務目錄中，其中的公用部門可用於比較和購買獲得資格鑒定的雲端服務。 目錄是[MeghRaj Cloud 倡議](https://meity.gov.in/content/gi-cloud-meghraj)（或 GI \[政府的印度\] Cloud）的服務，可促進政府中的雲端計算的使用，並控制公用部門 IT 服務的實施。
 
-## <a name="microsoft-and-ministry-of-electronics-and-information-technology-meity"></a>Microsoft 的電子產品韓國及資訊技術 (MeitY)
+## <a name="microsoft-and-ministry-of-electronics-and-information-technology-meity"></a>Microsoft 和一部電子和資訊技術（MeitY）
 
-2017 年 11 月的月，Microsoft 會變成的第一個全域雲端服務提供者，來達成完整 」 資格鑑定 MeitY 由其三個雲端模型的其中一個：
+在11月2017中，Microsoft 已成為第一個全球雲端服務提供者，以透過 MeitY 為其三項雲端模型，取得完整的資格鑒定：
 
-- 公用雲端，共用、 多重租用戶公用雲端服務
-- 政府虛擬私人雲端，這必須是以邏輯方式分開的雲端服務提供者的公用及其他供應項目
-- 政府社群雲端，雲端服務，專門用來政府部門和實際隔開公用和雲端服務提供者的其他供應項目
+- 公用雲端，適用于共用、多租使用者公用雲端服務
+- 政府虛擬私人雲端，必須從邏輯上獨立于雲端服務提供者的公開和其他服務
+- 政府社區雲端，針對專屬的官方服務，以及與雲端服務提供者的公開和其他提供的實際方式不同的雲服務
 
-Microsoft MeitY 鑑已嚴格的稽核標準化測試及品質憑證 (STQC) Directorate，提供品質保證服務，政府組織使用評估架構所進行的結果根據 MeghRaj 雲端開發案的工作。 透過 Microsoft Azure，現在可以在各種部署模型與服務供應項目，包括作為服務 (IaaS)、 平台的基礎結構服務 (PaaS)、 嚴重損壞修復、 DevOps，以及受管理的備份上繪製公營組織。
+Microsoft 的 MeitY 資格鑒定是由標準化測試和品質認證（STQC） Directorate 所執行的嚴格審核所產生的結果，該組織提供品質保證服務，其依據 MeghRaj 雲端倡議的運作方式來使用評估架構。 透過 Microsoft Azure，公用部門現在可以在廣泛的部署模型和服務產品上進行繪製，包括基礎結構作為服務（IaaS）、平臺為服務（PaaS）、災難修復、DevOps 和受管理的備份。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -49,21 +49,17 @@ Microsoft MeitY 鑑已嚴格的稽核標準化測試及品質憑證 (STQC) Direc
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
-- 在 [[稽核狀態的雲端服務提供者](https://meity.gov.in/content/gi-cloud-meghraj)] 下的 Microsoft Cloud 」 資格鑑定
+- [雲端服務提供者的「審核狀態](https://meity.gov.in/content/gi-cloud-meghraj)」下的 Microsoft 雲端資格鑒定
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 **為什麼 MeitY 很重要？**
 
-到線上公民可用 government 服務是重要的部分 「 數位印度計畫 」，是以 「 轉換為印度數位行列協會和知識經濟。 」 MeitY 清單的 irap 在政府雲端服務目錄中，可讓公營組織比較，並視需要取得這些服務的 cloud 服務提供者。
+讓公民線上使用政府服務是數位印度計畫的重要部分，其目的是「將印度轉換成數位能力強大的社會和知識經濟」。 MeitY 列出政府雲端服務目錄中已取得資格的雲端服務提供者，可讓公用部門組織比較及購買這些服務。
 
 ## <a name="resources"></a>資源
 
-- [韓國的電子產品與資訊技術](https://meity.gov.in/)
-- [MeghRaj 雲端計劃](https://meity.gov.in/content/gi-cloud-meghraj)
-- [此成員的雲端服務提供者](https://meity.gov.in/content/gi-cloud-meghraj)
+- [電子產品和資訊技術的部](https://meity.gov.in/)
+- [MeghRaj 雲端計畫](https://meity.gov.in/content/gi-cloud-meghraj)
+- [已獲得資格鑒定的雲端服務提供者](https://meity.gov.in/content/gi-cloud-meghraj)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf)。

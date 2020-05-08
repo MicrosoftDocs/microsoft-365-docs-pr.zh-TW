@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: '瞭解如何在 Microsoft 365 for business 訂閱中重設使用者的密碼。 '
-ms.openlocfilehash: 99ec6423b835204624f91977b6f138fa7c8ba8cd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 14226927680c70035a01d9390f114cb0bfddbf38
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049444"
+ms.locfileid: "44064806"
 ---
 # <a name="reset-passwords"></a>重設密碼
 
@@ -93,7 +93,7 @@ ms.locfileid: "44049444"
     
 - 要求您公司中的另一個全域管理員為您重設您的密碼。
     
-- 或者，請[致電 Microsoft 支援人員](https://docs.microsoft.com/en-us/microsoft-365/admin/contact-support-for-business-products)。 
+- 或者，請[致電 Microsoft 支援人員](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。 
     
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>同時為組織中的所有人重設所有商務密碼
 <a name="bkmk_forgot"> </a>

@@ -1,6 +1,6 @@
 ---
-title: 家庭教育權限和隱私權法案 (FERPA)
-description: Microsoft 配合美國系列教育權限和隱私權法案的需求。
+title: 家庭教育權利和隱私權法案（FERPA）
+description: Microsoft 會與我們的美國家庭教育權利和隱私權法案的需求相符。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
@@ -14,72 +14,66 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 11fa59476737fd3326fb49427945f183f8b990bc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6685a542ac082b97ec771bb14481eecf212f4898
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602430"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066366"
 ---
-# <a name="family-educational-rights-and-privacy-act-ferpa"></a>家庭教育權限和隱私權法案 (FERPA)
+# <a name="family-educational-rights-and-privacy-act-ferpa"></a>家庭教育權利和隱私權法案（FERPA）
 
-## <a name="ferpa-overview"></a>FERPA 概觀
+## <a name="ferpa-overview"></a>FERPA 概述
 
-系列教育權限和隱私權法案 (FERPA) 是美國聯邦法律會保護學生的教育版記錄，其中包括個人識別和目錄資訊的隱私權。 FERPA 已准許以確保 18 和較舊的父代和學生時代可以存取這些記錄、 要求變更，並控制的詳細資訊，揭露以外，在特定和有限的情況下 FERPA 其中允許未經同意的外洩。
+「家庭教育權利」和隱私權法案（FERPA）是美國聯邦法律，可保護學生教育記錄的隱私權，包含個人身分識別及目錄資訊。 FERPA 已頒佈，以確保父母和學生年齡18歲及更舊的版本可以存取這些記錄、要求變更，以及控制資訊的洩漏，但在特定和有限的情況下，FERPA 允許披露，但不同意。
 
-法律適用於學校、 學區，以及收到資金美國部門的教育版的任何其他機構--也就是說，幾乎所有公用 K-12 學校及學校學區中，以及公用和私人後次要機構.
+法律適用于學校、學校地區和任何其他接受美國教育部門之資助的機構，也就是幾乎所有的公開和私營共同的次要機構，也就是全部的公開和私營。
 
-安全性是 FERPA，需要從未經授權的揭露的學生資訊保護與合規性中心。 使用雲端運算需要契約性 reassurances 技術廠商會適當地管理機密學生資料的教育機構。
+安全性是與 FERPA 相容性的核心，它需要保護學生資訊以防未經授權的披露。 使用雲端運算的教育機構需要合約 reassurances，技術廠商會適當地管理機密的學生資料。
 
-## <a name="microsoft-and-ferpa"></a>Microsoft 和 (FERPA)
+## <a name="microsoft-and-ferpa"></a>Microsoft 及（FERPA）
 
-FERPA 不需要或辨識稽核或其他認證，因此 FERPA 受限於任何 academic 機構必須評估為其本身是否，以及其使用雲端服務如何影響遵守 FERPA 需求的能力。 不過，Microsoft 已進行下列的合約承諾足以其合規性：
+FERPA 不需要或認可審核或其他憑證，所以任何受制于 FERPA 的學術機構必須自行評估其使用雲端服務是否會影響其符合 FERPA 需求的能力。 不過，Microsoft 已作出下列合約承諾，以證明其合規性：
 
-- 在其[線上服務條款](https://aka.ms/Online-Services-Terms)中，Microsoft 同意被指定為 「 學校正式 」 與 「 合法教育興趣 」 中所定義下 FERPA 的客戶資料。 （客戶資料會包含任何透過學校運用 Microsoft 雲端服務所提供的學生記錄）。當處理學生教育版記錄，Microsoft 同意遵守的學校主管一樣，34 CFR 99.33(a) 所加諸的需求與限制。
-- 此外，Microsoft 認可若要使用只提供組織相容的目的 （例如改善惡意程式碼偵測），其雲端服務與客戶資料，並不是我廣告的客戶資料。
-- Microsoft 也有義務不適用於將為教育機構以外的客戶資料洩漏認可，會指示，如合約，或所需的法律所述。 透過 Microsoft 雲端服務，其使用提供給 Microsoft 的教育版記錄的學校可以因而確保這些記錄限於有關其使用和外洩的嚴格契約性限制。
+- 在其[線上服務條款](https://aka.ms/Online-Services-Terms)中，Microsoft 同意以「FERPA」所定義的客戶資料為「學校官方」，並以「合法教育愛好」方式指派。 （客戶資料會包含透過學校使用 Microsoft 雲端服務提供的任何學生記錄。）在處理學員教育記錄時，Microsoft 同意遵守 34 CFR 99.33 （a）所強加的限制和需求，如同學校的官員一樣。
+- 此外，Microsoft 只會承諾使用客戶資料，以提供其雲端服務和相容性的組織（例如改善惡意程式碼偵測），而且不會將客戶資料用於廣告。
+- 除了教育機構指引（如合約所述或法律所要求）之外，Microsoft 也 contractually 提交不會披露客戶資料。 透過使用 Microsoft 雲端服務為 Microsoft 提供教育記錄的學校，可確保這些記錄受到嚴格合約限制的使用和披露。
 
-由於這些合約承諾，FERPA 受限於的客戶 — 教育機構和對象它們授與存取機密學生資料的第三方 — 充滿處理程序，將儲存使用中範圍 Microsoft business 雲端服務並傳送該資料。
-
-了解在 Microsoft 雲端 FERPA 優點：[下載 FERPA 背景資料](https://aka.ms/ferpa-compliance)
+根據這些合約承諾，FERPA （教育機構和協力廠商可存取機密的學生資料）的客戶可以自信地使用範圍內的 Microsoft business 雲端服務來處理、儲存及傳送該資料。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-服務的 Microsoft 同意被指定為 「 學校官方 」 與 「 合法的教育興趣 「 客戶資料中包含：
+在客戶資料中，Microsoft 同意被指定為「學校官方 ' ' 學校官方 ' 的服務，包含：
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365、Office 365 美國政府和 Office 365 美國政府國防版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- 做為獨立服務或做為品牌計劃或套件的 Office 365 中包含 power BI，PowerApps 和 Microsoft Flow
+- 作為獨立服務的 Power BI、PowerApps 和 Microsoft Flow，或包含在 Office 365 品牌計畫或套件中
 - Azure DevOps Services
 - Windows Defender ATP
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
-FERPA 不需要或辨識稽核或認證。
+FERPA 不需要或認可的審計或認證。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 **為什麼 FERPA 很重要？**
 
-此美國聯邦法律規定的學生的教育版記錄隱私權保護法。 它也會提供父代和合格的學生存取這些記錄並修正它們，以及相關的記錄第三方的發行版本特定權限的能力。
+美國聯邦法律規定對學生教育記錄的隱私權的保護。 它也可讓父母和合格的學生存取這些記錄，以及修正這些記錄的功能，以及與協力廠商的記錄版本相關的特定許可權。
 
-**哪裡可以找到 FERPA 上的詳細資訊？**
+**在哪裡可以找到 FERPA 的詳細資訊？**
 
-- [聯邦註冊： FERPA 最終規則](https://aka.ms/ferpa-reg)(年 12 月 2011 (英文)
-- [FERPA 家長的一般指引](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/parents.html)
+- [聯邦收銀機： FERPA 詞尾規則](https://aka.ms/ferpa-reg)（2011年12月）
+- [FERPA 父母的一般指導方針](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/parents.html)
 
 ## <a name="resources"></a>資源
 
-- [家庭教育權限和隱私權法案](https://www.ed.gov/policy/gen/guid/fpco/ferpa/index.html)
-- [聯邦法規的電子化程式碼： FERPA](https://aka.ms/FERPA-GPO)
-- [聯邦註冊： FERPA 最終規則](https://aka.ms/ferpa-reg)
-- [Microsoft azure FERPA 實作指南](https://aka.ms/azureferpa)
-- [Azure FERPA 合規性架構對應](https://aka.ms/AzureFERPAMapping)
+- [家庭教育權利和隱私權法案](https://www.ed.gov/policy/gen/guid/fpco/ferpa/index.html)
+- [電子化聯邦法規的電子化程式碼： FERPA](https://aka.ms/FERPA-GPO)
+- [聯邦收銀機： FERPA Final 規則](https://aka.ms/ferpa-reg)
+- [Microsoft Azure 的 FERPA 實施指南](https://aka.ms/azureferpa)
+- [Azure FERPA 規範架構對應](https://aka.ms/AzureFERPAMapping)
 - [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf)。

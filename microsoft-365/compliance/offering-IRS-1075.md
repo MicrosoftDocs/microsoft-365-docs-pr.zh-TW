@@ -1,6 +1,6 @@
 ---
-title: 美國內部收益服務出版物 1075
-description: Microsoft 沒有符合的美國內部收益服務出版物 1075年需求的控制項。
+title: 美國內年收入服務出版物1075
+description: Microsoft 的控制措施符合美國內部收入服務出版物1075的需求。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
@@ -14,78 +14,72 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bb7a805fa927756753e3ba09c3dd5eb2998467e7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b64b69d52028a09ddd54863d4e2cbf5f0642bd67
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602290"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066326"
 ---
-# <a name="us-internal-revenue-service-publication-1075"></a>美國內部收益服務出版物 1075
+# <a name="us-internal-revenue-service-publication-1075"></a>美國內年收入服務出版物1075
 
-## <a name="us-internal-revenue-service-publication-1075-overview"></a>美國內部收益服務出版物 1075年概觀
+## <a name="us-internal-revenue-service-publication-1075-overview"></a>美國內部收入服務出版物1075概述
 
-內部收益服務出版物 1075 (IRS 1075) 提供美國政府機關及存取聯邦稅務資訊 (FTI)，以確保它們使用原則、 實務及控制項來保護其機密性其代理程式的指引。 IRS 1075 旨在遺失、 資料外洩或不當使用 FTI 外部政府機構所持有的風險降至最低。 例如，狀態部門的收益其居民稅務傳回處理 FTI 或健全狀況服務行政機關，存取 FTI，必須具備程式措施來保護該資訊。  
+Internal 創收服務出版物1075（IRS 1075）為美國政府代理商和其代理人員提供指導，以確保其使用原則、作法和控制措施來保護其機密性。 IRS 1075 的目的是為了降低因外部政府機構所持有之 FTI 所造成的遺失、破壞或誤用風險。 例如，用來處理某位居民的稅收傳回的狀態部門（或存取 FTI 的健康情況服務中心），必須具備適當的程式，以保護該資訊。  
   
-若要保護 FTI，IRS 1075 規定了安全性和隱私權控制應用程式、 平台，與資料中心的服務。 例如，它排列優先順序資料中心活動，例如 FTI，適當處理方式和資料中心承包商來限制項目負責監督的安全性。 若要確保接收 FTI 政府機關，套用這些控制項，IRS 會建立保護措施的程式，可包含這些行政機關和其承包商定期檢閱。
+為了保護 FTI，IRS 1075 規定了應用程式、平臺及資料中心服務的安全性和隱私權控制。 例如，它會排定資料中心活動的安全性，例如正確處理 FTI，以及資料中心承包商的監察能力來限制專案。 為了確保接收到的政府代理商套用到這些控制，IRS 已建立了安全保護計劃，其中包括定期檢查這些機構及其承包商。
 
-## <a name="microsoft-and-us-internal-revenue-service-publication-1075"></a>Microsoft 和美國內部收益服務出版物 1075
+## <a name="microsoft-and-us-internal-revenue-service-publication-1075"></a>Microsoft 和 US 內部收入服務出版物1075
 
-Microsoft Azure 政府版和[Microsoft Office 365 美國政府](https://products.office.com/government/office-365-web-services-for-government)雲端服務提供的合約承諾他們有適當的控制項中的位置，以及 Microsoft 機構客戶符合 IRS 1075 實質性需求所需的安全性功能。  
+Microsoft Azure 政府和[Microsoft Office 365 美國政府](https://products.office.com/government/office-365-web-services-for-government)雲端服務會提供合約承諾，讓他們具備適當的控制措施，以及 Microsoft agency 客戶符合 1075 IRS 的實體需求所需的安全性功能。  
   
-政府這些 Microsoft 雲端服務提供的平台的客戶可以建置及操作其解決方案，但客戶必須自行判斷本身是否這些特定解決方案都運作根據 IRS 1075 和都是，因此，遭到 IRS 稽核。  
+這些適用于政府的 Microsoft 雲端服務提供一個平臺，客戶可以在其中建立及操作其解決方案，但是客戶必須自行決定是否要根據 IRS 1075 運作特定的解決方案，因此，也就是在進行 IRS 審計時使用。  
   
-若要協助政府機構中其合規性努力，Microsoft:
+為了協助政府機構在其法規遵從性工作中，Microsoft：
 
-- 提供詳細指導方針來協助了解其責任，以及如何各種 IRS 行政機關控制項對應至 Azure 政府版與 Office 365 US Government 的功能。 IRS 1075 可保護安全性報告 (SSR) 徹底文件的 Microsoft 服務如何實作適用的 IRS 控制項，並根據 Azure 政府版和 Office 365 US Government 的 FedRAMP 套件。 因為 IRS 1075 和 FedRAMP 根據 NIST 800-53、 IRS 1075 的合規性界限為 FedRAMP 授權相同。
-- 讓下 NDA 唯一政府版客戶可以檢閱 SSR，IRS 必須明確地核准任何 IRS 保護文件的版本。
-- 可讓稽核報告及監視其雲端服務的獨立人士所產生的資訊。
-- 提供 IRS Azure 政府版相容性考量事項和 Office 365 美國政府版相容性考量事項，其中概述如何機構可使用 Microsoft Cloud 政府服務遵守 IRS 1075 的方式。 下 NDA 政府版客戶可以要求這些文件。
-- 視通訊與 Microsoft 主題專家或外部稽核員 」 提供客戶機會 （位於其費用）。
-
-了解在 Microsoft 雲端 IRS 1075 優點：[下載 IRS 1075 背景資料](https://aka.ms/irs1075-backgrounder)
+- 提供詳細的指導，以協助各機構瞭解他們的責任，以及如何對應至 Azure 政府和 Office 365 美國政府的功能。 IRS 1075 防護安全性報告（SSR）會詳盡說明 Microsoft 服務如何根據 Azure 政府和 Office 365 美國政府的 FedRAMP 套件來實施適用的 IRS 控制。 因為 IRS 1075 和 FedRAMP 都是以 NIST 800-53 為基礎，所以 IRS 1075 的相容性界限與 FedRAMP 授權相同。
+- IRS 必須明確核准任何 IRS 防護檔的發行，所以只有保密協定下的政府客戶才能檢查 SSR。
+- 針對其雲端服務，提供可供獨立評估者的審計報告及監控資訊。
+- 提供對應的 Azure 政府合規性考慮和 Office 365 美國政府合規性考慮，其概括了代理商如何使用 Microsoft 雲端政府服務的方式，遵循的方式是依照 IRS 1075。 保密協定下的政府客戶可以要求這些檔。
+- 在需要時，向客戶提供與 Microsoft 主題專家或外部審計員進行通訊的機會。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-FedRAMP 授權會依據 NIST 指導方針的三個影響層級授與 — 低、 中型與高。 這些排名的機密性、 完整性或可用性遺失可能對組織有影響 — 低 （有限效果）、 中等 （嚴重的負面影響），以及高 （嚴重或災難性效果）。
+根據 NIST 指導方針，以三個影響層級授與 FedRAMP 授權：低、中和高。 這些排名可影響組織的機密性、完整性或可用性喪失的影響：低（有限的影響）、中度（嚴重的不利影響）和高（嚴重或嚴重的影響）。
 
 - [Azure 和 Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
-- Dynamics 365 美國政府版
+- 美國政府的 Dynamics 365
 - [Office 365 和 Office 365 美國政府](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Office 365 美國政府國防版
 - Power BI 雲端服務，以獨立服務形式提供或包含在 Office 365 品牌方案或套件中
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
-合規性 IRS 1075 實質性需求涵蓋 FedRAMP 稽核每年。
+遵守 IRS 1075 的實體需求涵蓋每年 FedRAMP 的審計。
 
 - [FedRAMP 授權](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
-- [Azure IRS 1075 可保護安全性報告](https://aka.ms/AzureIRS1075SafeguardSecurityReport)
+- [Azure IRS 1075 保護安全性報告](https://aka.ms/AzureIRS1075SafeguardSecurityReport)
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-**Microsoft 如何解決 IRS 1075 的需求？**
+**Microsoft 如何滿足 IRS 1075 的需求？**
 
-Microsoft 會定期監視其安全性、 隱私權和操作控制項和 FedRAMP 中度影響資訊系統基準所需的 NIST 800-53 修訂 4 控制項。 它提供每季存取透過持續監視報告此資訊。 Azure 政府版和 Office 365 US Government 的客戶可以透過 「[服務信任入口網站](https://aka.ms/stphelp)存取此機密的合規性資訊。
+Microsoft 會定期監視其安全性、隱私權、運作控制措施和 NIST 800-53 rev。 FedRAMP 一般影響資訊系統的比較基準所要求的4個控制項。 透過連續的監控報告可提供對此資訊的季度存取。 Azure 政府和 Office 365 美國政府客戶可以透過[服務信任入口網站](https://aka.ms/stphelp)存取這種機密的合規性資訊。
 
-此外，Microsoft 已認可包括 IRS 1075 控制項中設定 Azure 政府版和 Office 365 US Government，其主要控制項，並每年稽核對它們。
+此外，Microsoft 在 Azure 政府和 Office 365 美國政府的主控制項集內，還會承諾包含 IRS 1075 控制項，並每年進行審計。
 
-**可以檢閱 FedRAMP 套件或系統安全性計劃嗎？**
+**我可以查看 FedRAMP 套件或系統安全性計畫嗎？**
 
-是，如果您的組織符合 Azure 政府版和 Office 365 US Government 資格需求。 請連絡您的 Microsoft 帳戶代表直接以檢閱這些文件。 您也可以參照 FedRAMP 相容的雲端服務提供者清單。
+是的，如果您的組織符合 Azure 政府和 Office 365 美國政府的資格需求。 請直接聯繫您的 Microsoft 客戶代表以查看這些檔。 您也可以參閱相容的雲端服務提供者的 FedRAMP 清單。
 
-**我是否可以使用 Azure 或 Office 365 公用雲端環境，仍是 [IRS 1075 相容？**
+**我可以使用 Azure 或 Office 365 公用雲端環境，是否仍然相容于 IRS 1075？**
 
-否。 可以儲存和處理 FTI 之唯一環境是 Azure 政府版或 Office 365 US Government。 政府版客戶必須符合資格需求，才能使用這些環境。
+否。 可以儲存並處理的唯一環境是 Azure 政府或 Office 365 美國政府。 政府客戶必須符合資格的要求才能使用這些環境。
 
 ## <a name="resources"></a>資源
 
-- [IRS 出版物 1075](https://www.irs.gov/pub/irs-pdf/p1075.pdf)
-- [IRS 保護程式](https://www.irs.gov/uac/Safeguards-Program)
+- [IRS 出版物1075](https://www.irs.gov/pub/irs-pdf/p1075.pdf)
+- [IRS 安全措施計畫](https://www.irs.gov/uac/Safeguards-Program)
 - [Microsoft 通用控制措施中樞合規性架構](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [適用於政府的 Microsoft 雲端](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/D/1/8/D1825AE2-4FDA-4A4B-8D4F-9B7D2976D54A/IRS1075_Compliance_Backgrounder.pdf)。

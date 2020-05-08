@@ -12,12 +12,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商務進階版, Microsoft 365, SMB, 常見問題集, 常見問題集, 解答, 商務版
 ms.date: 06/08/2018
-ms.openlocfilehash: e456719d393dc911a6f28455e530c90e8ab9ff5a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 68e085313b0344f9e48ddfa9124c1d2d7297ae45
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635077"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065828"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Microsoft 365 商務進階版常見問題集
 
@@ -48,7 +48,7 @@ Microsoft 365 是一個整合式解決方案，聚集所有同級最佳的生產
 * 透過 Windows AutoPilot 簡化電腦部署。
 
 **其他權利** 
-- Microsoft 365 商務進階版客戶也可以存取 Windows 虛擬桌面和 Office 共用電腦啟用功能。 若要深入了解，請參閱 [Microsoft 365 商務進階版部落格](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog)。 請參閱[商務用 Microsoft 365 服務描述](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
+- Microsoft 365 商務進階版客戶也可以存取 Windows 虛擬桌面和 Office 共用電腦啟用功能。 若要深入了解，請參閱 [Microsoft 365 商務進階版部落格](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog)。 另請參閱[Microsoft 365 for business 服務說明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
 
 ### <a name="who-should-consider-adopting-microsoft-365-business-premium"></a>誰應考慮採用 Microsoft 365 商務進階版？ 
 Microsoft 365 商務進階版是一項全面的雲端安全性解決方案，可讓您：  
@@ -85,7 +85,7 @@ Windows 10 中與現有傳統型 (Win32) 應用程式的相容性很強大，大
 ### <a name="what-is-windows-10-business"></a>什麼是 Windows 10 商務版？ 
 Windows 10 商務版是一組雲端服務和裝置管理功能，這些功能彌補了 Windows 10 專業版的不足，並且啟用 Microsoft 365 商務進階版的集中式管理和安全性控制。
 
-Windows 10 商務版還隨附特定的進階 Microsoft Defender 功能，例如，受控的資料夾存取和網路安全威脅保護。 它也包含 Windows AutoPilot，這是一項服務，可簡化新 Windows 10 電腦的部署。
+Windows 10 商務版也附帶特定的 Microsoft Defender 功能，例如控制資料夾存取和網路型威脅的網路保護。 它也包含 Windows AutoPilot，這是一項服務，可簡化新 Windows 10 電腦的部署。
 
 如果您的裝置已取得 Windows 7、8 和 8.1 專業版的授權，Microsoft 365 商務進階版可讓您升級至 Windows 10 專業版，這是部署 Windows 10 商務版的必要條件。
 > [!IMPORTANT]
@@ -130,7 +130,7 @@ Microsoft 365 商務進階版試用版可供 CSP 使用。 稍後將為直接客
 ## <a name="deployment"></a>部署
 
 ### <a name="what-should-customers-consider-when-planning-a-microsoft-365-business-premium-deployment"></a>客戶在規劃 Microsoft 365 商務進階版部署時，應考慮哪些事項？ 
-成功部署 Microsoft 365 商務進階版的最直接途徑是與 Microsoft 合作夥伴接洽。 他們接受過大量訓練，遇到過各種不同的客戶案例，因此絕對最能了解您的環境和需求。 擁有資深 IT 人員的客戶，可以使用 <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Microsoft 365 商務進階版入門</a>來協助進行 Microsoft 365 商務進階版部署。 
+成功部署 Microsoft 365 商務進階版的最直接途徑是與 Microsoft 合作夥伴接洽。 他們接受過大量訓練，遇到過各種不同的客戶案例，因此絕對最能了解您的環境和需求。 擁有資深 IT 人員的客戶，可以使用 <a href="https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview" target="_blank">Microsoft 365 商務進階版入門</a>來協助進行 Microsoft 365 商務進階版部署。 
 
 ### <a name="does-microsoft-365-business-premium-include-the-full-capabilities-of-microsoft-intune"></a>Microsoft 365 商務進階版是否包含完整的 Microsoft Intune 功能？ 
 是的，Microsoft 365 商務進階版訂閱者的授權可使用 iOS、Android、MacOS 及其他跨平台裝置管理的完整 Intune 功能。 Microsoft 365 商務進階版簡化的主控台中無法使用的功能 (例如，協力廠商應用程式管理和 WiFi 設定檔的設定、VPN 憑證)，可在完整 Intune 主控台中管理。 

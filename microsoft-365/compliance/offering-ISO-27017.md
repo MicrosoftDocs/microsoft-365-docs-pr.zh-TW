@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6bd989a5600252ee60ada4eb4e3d1414ef3853d5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1f44c46046fc107e8059cebda3388fcd775bd31e
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602240"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065688"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>資訊安全性控制的 ISO/IEC 27017:2015 工作條例規定
 
@@ -40,8 +40,6 @@ ISO/IEC 27017:2015 工作條例規定專為組織設計，可在基於 ISO/IEC 2
 ## <a name="microsoft-and-isoiec-27017"></a>Microsoft 和 ISO/IEC 27017
 
 ISO/IEC 27017 在為雲端服務提供者和雲端服務客戶提供指導方針方面與眾不同。 它也會為雲端服務客戶提供有關他們應該對雲端服務提供者所預期的實務資訊。 透過確保客戶了解在雲端中的共用責任，客戶可以直接從 ISO/IEC 27017 獲益。
-
-了解有關 Microsoft Cloud 的 ISO/IEC 27017 優勢：[下載 ISO/IEC 27017：資訊安全性控制的工作條例規定](https://aka.ms/iso27017-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -64,7 +62,7 @@ Microsoft 雲端服務會每年隨著 ISO/IEC 27001:2013 的認證程序，針�
 
 - [Azure ISO 27017 認證](https://go.microsoft.com/fwlink/p/?linkid=2078005)
 - [Azure ISO 27017 評定報告](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Azure ISO 27017 適用性聲明](https://aka.ms/AzureISO27017StatementofApplicability)
+- [Azure ISO 27017 適用性聲明](https://aka.ms/azureiso27017StatementofApplicability)
 - [Office 365 ISO 27001、27018 和 27017 稽核評定報告](https://aka.ms/o365isoreport)
 
 ## <a name="frequently-asked-questions"></a>常見問題集
@@ -90,7 +88,3 @@ Microsoft 雲端服務會每年隨著 ISO/IEC 27001:2013 的認證程序，針�
 - [ISO/IEC 27017:2015 工作條例規定](https://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=43757)
 - [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/7/7/9/7799D02B-A97A-48E0-A057-C19DD543BB24/ISO-IEC-27017_backgrounder.pdf)。

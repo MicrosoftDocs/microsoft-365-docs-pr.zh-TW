@@ -1,5 +1,7 @@
 ---
-title: 管理帳單的設定檔
+title: 管理帳單設定檔
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -14,60 +16,68 @@ ms.collection:
 ms.custom: ''
 search.appverid:
 - MET150
-description: 了解如何帳單 profiles 支援發票。
-keywords: 帳單設定檔、 發票、 費用，受管理的費用
-ms.openlocfilehash: 3dbdbb57b46b915891640483bde56ebc8ad1cff6
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+description: 瞭解帳單設定檔如何支援發票。
+keywords: 計費設定檔、發票、費用、受管理的費用
+ms.openlocfilehash: f93ca5af11ba416fecd13fcceffe75055a776553
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837387"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140887"
 ---
-# <a name="manage-billing-profiles"></a>管理帳單的設定檔
-從 Microsoft 購買產品和服務的商業客戶，「 帳單設定檔 」 可讓您自訂哪些項目會包含在您的帳單和支付您發票的方式。
+# <a name="manage-billing-profiles"></a>管理帳單設定檔
 
-帳單設定檔包含下列資訊：
+::: moniker range="o365-21vianet"
 
-- **計費帳戶**&ndash;設定檔與相關的帳單帳戶名稱
-- **付款方式**&ndash;信用卡或轉帳卡、 銀行帳戶、 存回或線路傳輸
-- **連絡人資訊**&ndash;帳單地址與連絡人的名稱
-- **發票設定**&ndash;貨幣根據帳單帳戶、 選用的 PO 編號，以及收到以電子郵件附件形式的發票的選項的國家/地區
-- **權限**&ndash;的權限可讓您變更帳單的設定檔，支付帳單，或購買商品帳單的設定檔上使用付款方式
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
-用於控制您購買並自訂您的帳單計費的設定檔。 每月的發票付款與帳單的設定檔所購買的產品為產生。 您可以自訂發票，例如更新購買訂單號碼和電子郵件發票喜好設定。
+::: moniker-end
 
-在第一個購買期間帳單帳戶會自動建立帳單的設定檔。 您可以在<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">設定檔] [帳單</a>] 頁面上設定多個發票建立帳單的設定檔。 例如，您可以使用不同的帳單設定檔，當您在組織中每個部門的購買。 在您下一步帳單日期後，您會收到每個計費的設定檔的發票。
+針對從 Microsoft 購買產品和服務的商業客戶，計費設定檔可讓您自訂發票上包含的專案，以及您支付發票的方式。
 
-## <a name="billing-profile-roles"></a>帳單的設定檔角色
+計費設定檔包含下列資訊：
 
-在帳單設定檔的角色具有權限來控制購買，檢視及管理發票。 將這些角色指派給追蹤、 組織及支付發票，像是組織中的採購小組成員的使用者。
+- 與設定檔相關之帳單帳戶的**帳單帳戶** &ndash;名稱
+- **支付方式** &ndash;信用卡或轉帳卡、銀行帳戶、支票或電匯卡
+- **連絡人資訊** &ndash;的帳單位址和連絡人名稱
+- 根據帳單帳戶的國家/地區、選擇性的 PO 編號，以及以電子郵件附件形式接收發票的選項的**發票設定** &ndash;貨幣
+- **許可權** &ndash;許可權，可讓您變更帳單設定檔、支付帳單或使用計費設定檔上的付款條件進行購買
+
+使用計費設定檔來控制購買及自訂發票。 每月發票會產生為以帳單設定檔購買的產品。 您可以自訂發票，例如更新採購訂單編號和電子郵件發票偏好設定。
+
+您第一次購買時，會自動為您的帳單帳戶建立帳單設定檔。 您可以在 [<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">帳單設定檔</a>] 頁面上建立計費設定檔，以設定更多發票。 例如，您可以在您為組織中的每個部門進行購買時使用不同的帳單設定檔。 在您下一個帳單日期，您會收到每個帳單設定檔的發票。
+
+## <a name="billing-profile-roles"></a>計費設定檔角色
+
+計費設定檔上的角色具有控制購買的許可權，以及查看和管理發票。 將這些角色指派給追蹤、組織和支付發票的使用者，例如組織中的採購團隊成員。
 
 | 角色                          | 描述                                                                       |
 |-----------------------------  |---------------------------------------------------------------------------------  |
-| 帳單的設定檔擁有者         | 管理帳單的設定檔的所有項目                                           |
-| 帳單的設定檔參與者   | 管理帳單的設定檔中的權限以外的項目                         |
-| 帳單的設定檔讀取者        | 唯讀] 檢視帳單的設定檔中的所有項目                                 |
-| 發票管理員               | 檢視和支付帳單，和帳單的設定檔中有唯讀] 檢視的每個項目   |
+| 計費設定檔擁有者         | 管理帳單設定檔的所有專案                                           |
+| 帳單設定檔參與者   | 管理帳單設定檔中的許可權以外的所有專案                         |
+| 計費設定檔讀取器        | 計費設定檔中所有專案的唯讀視圖                                 |
+| 發票管理員               | 查看和支付帳單，且具有記帳設定檔中所有專案的唯讀視圖   |
 
-## <a name="view-billing-profiles"></a>檢視帳單的設定檔
+## <a name="view-billing-profiles"></a>查看帳單設定檔
 
-1. 在 [系統管理中心中，移至**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">帳單 & 付款</a>] 頁面。
+1. 在系統管理中心中，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">[帳單與付款]</a> 頁面。
 
-2. 選擇 [**計費設定檔**，然後從清單中選擇 [帳單的設定檔。
+2. 選擇 [**帳單設定檔**]，然後從清單中選擇帳單設定檔。
 
-    - [**概觀**] 索引標籤中，您可以編輯帳單設定檔的詳細資訊，並開啟或關閉傳送電子郵件的發票。
+    - 在 [**概覽**] 索引標籤上，您可以編輯帳單設定檔詳細資料，並開啟或關閉透過電子郵件傳送發票的功能。
 
-    - [**權限**] 索引標籤中，您可以將角色指派給使用者，讓支付發票。
+    - 在 [**許可權**] 索引標籤上，您可以將角色指派給使用者以支付發票。
 
-    - 在**Azure 信用達到負載平衡**] 索引標籤，Azure 客戶可以看到該帳單的設定檔使用 Azure 信用額度交易平衡歷程記錄。
+    - 在 [ **azure 信用平衡**] 索引標籤上，Azure 客戶可以查看該帳單設定檔使用之 Azure 點數的交易餘額歷史記錄。
 
-    - 在**Azure 的信用額度**] 索引標籤，Azure 客戶可以看到該帳單的設定檔，以及其到期日期相關聯的 Azure 點數的清單。
+    - 在 [ **azure 信用**] 索引標籤上，Azure 客戶可以查看與該帳單設定檔相關聯的 Azure 信用名單及其到期日期。
 
     > [!NOTE]
-    > 如果您沒有任何 Azure 的信用額度，不會看到 [ **Azure 信用達到負載平衡**或**Azure 信用額度**] 索引標籤。
+    > 如果您沒有任何 Azure 信用，您就不會看到 [ **azure 貸方餘額**] 或 [ **azure 信用**] 索引標籤。
 
-## <a name="need-help-contact-support"></a>需要說明嗎？ 連絡客戶支援。
+## <a name="need-help-contact-support"></a>需要協助嗎？ 連絡客戶支援。
 
-如果您有任何疑問，或需要與您 Azure 的費用，<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">建立 Azure 支援的支援要求</a>協助。
+如果您有任何問題或需要協助您的 Azure 費用，請<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">建立支援 azure 支援的支援要求</a>。
 
-如果您有任何疑問，或需要您帳單的設定檔，在 Microsoft 365 系統管理中心，[請連絡商務產品的支援](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
+如果您有任何疑問或需要協助您使用 Microsoft 365 系統管理中心的帳單設定檔，請[聯繫商務產品支援](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)人員。

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0c3898fd808a588578cba29f7f40b8d5be183e1c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 695471d51e391957a5dfea8770cb1928dd39ee86
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602260"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065908"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 商務持續性管理標準
 
@@ -32,8 +32,6 @@ ms.locfileid: "41602260"
 ## <a name="microsoft-and-iso-22301"></a>Microsoft 和 ISO 22301
 
 Microsoft 是獲得商務持續性管理 ISO 22301 認證的第一個超大規模雲端服務提供者。 獨立認證單位在涵蓋商務持續性程序各個層面的嚴格稽核之後，將此認證頒給 Microsoft Azure、Microsoft Azure Government、Microsoft Office 365 (包括商務版、政府版及教育版供應項目)、Microsoft Cloud App Security、Microsoft Intune 及 Microsoft Power BI。 稽核涵蓋以下所列的範圍內服務和 Azure 管理功能、Azure 入口網站，以及用來監控、操作及更新範圍內服務的系統。
-
-了解 Microsoft 雲端上 ISO/IEC 22301 的權益：[下載 ISO/IEC 22301 背景資料](https://aka.ms/iso22301-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -79,7 +77,3 @@ ISO 22301 是企業及政府組織所用的認證，讓他們透過達到商務�
 - [Microsoft 企業版商務持續性管理計劃說明](https://go.microsoft.com/fwlink/p/?linkid=2092212)
 - [合規性分數](compliance-score.md)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/0/0/9/009B2F34-96F6-4D85-8BDC-238B91A2C6EE/ISO-22301-Compliance.pdf )。

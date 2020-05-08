@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 797b32dfa0cd286cf7eb9b6e0aa128d332f5c19a
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 70c82232dff10bb13c5079de9590cde2508db14c
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066202"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159930"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -62,7 +62,7 @@ ms.locfileid: "44066202"
 
 若要簡化您的設定，請為需要查看其通訊的使用者建立群組，並為查看那些通訊的使用者群組。 如果您正在使用群組，可能需要數個。 例如，如果您想要掃描兩個不同的使用者群組之間的通訊，或是想要指定未監督的群組。
 
-當您為監督的使用者選取 Microsoft 365 群組時，該原則會掃描共用信箱的內容，以及與該群組相關聯的 Microsoft 小組通道。 當您選取通訊群組清單時，該原則會掃描個別的使用者信箱。
+當您為監督的使用者選取 Microsoft 365 群組時，該原則會掃描共用信箱的內容，以及與該群組相關聯的 Microsoft 小組通道。 當您選取通訊群組清單時，該原則會掃描個別的使用者信箱。 將群組和通訊群組清單新增至通訊相容性原則是整體條件和規則集的一部分，因此原則所支援的群組和通訊群組清單數目上限會因也新增至原則的條件數目而異。 每個原則都應該支援大約20個群組或通訊群組清單，視原則中所出現的其他條件數目而定。
 
 ## <a name="supported-communication-types"></a>支援的通訊類型
 

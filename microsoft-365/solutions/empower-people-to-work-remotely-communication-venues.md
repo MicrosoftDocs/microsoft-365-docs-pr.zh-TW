@@ -1,5 +1,5 @@
 ---
-title: '# 步驟 5：建立 COVID-19 危機通訊地點'
+title: 步驟 5：建立 COVID-19 危機通訊地點
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: 使用 Microsoft 365 建立不同的通訊方式來傳達 COVID-19 的內部和公開消息。
-ms.openlocfilehash: 189e0bde959ee8ad245b03cb5aca42ab6b19a0b3
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 4f9144f743998a511b76d26f69ae6cc734193232
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002539"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141475"
 ---
 # <a name="step-5-create-covid-19-crisis-communication-venues"></a>步驟 5：建立 COVID-19 危機通訊地點
 
@@ -31,6 +31,8 @@ ms.locfileid: "44002539"
 - 在單一入口網站中整合的公共衛生和新聞
 - SharePoint Online 中的通訊網站
 - Yammer 社群
+
+![COVID-19 危機通訊地點](../media/empower-people-to-work-remotely/comm-venues-grid.png)
 
 ## <a name="employee-surveys"></a>員工問卷調查
 
