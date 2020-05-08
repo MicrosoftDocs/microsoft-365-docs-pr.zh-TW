@@ -20,12 +20,12 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 ms.assetid: ''
 description: 了解如何為一般資料保護規定 (GDPR) 修改或建立新的 Office 365 敏感資訊類型。
-ms.openlocfilehash: ffe9792eabc8607506f2ebabd75ae24b70214449
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3eca04fcf949a19615dc574c90d8dbeea0894a23
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035735"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166064"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>自訂或建立新的敏感資訊類型
 
@@ -73,7 +73,7 @@ ms.locfileid: "44035735"
 
 7.  上傳新的敏感資訊類型。
 
-8.  重新編目內容以識別敏感資訊。請參閱[手動要求重新編目網站和重新編製網站檢索](https://support.office.com/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E)。
+8.  重新編目內容以識別敏感資訊。請參閱[手動要求重新編目網站和重新編製網站檢索](https://docs.microsoft.com/sharepoint/crawl-site-content)。
 
 ## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>範例：修改「歐盟轉帳卡卡號」敏感資訊類型。
 
@@ -147,11 +147,11 @@ ms.locfileid: "44035735"
 
 - [執行內容搜尋](content-search.md)
 
-內容搜尋提供另一種資源，協助您開發 KQL 查詢及敏感資訊類型 — 關鍵字。為什麼使用關鍵字清單？您可以取得統計資料，顯示多少個項目比對每一個關鍵字的。這可協助您快速識別哪些關鍵字的效率最好 (最差)。如需搜尋統計資料的詳細資訊，請參閱[檢視內容搜尋結果的關鍵字統計資料](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)。
+內容搜尋提供另一種資源，協助您開發 KQL 查詢及敏感資訊類型 — 關鍵字。為什麼使用關鍵字清單？您可以取得統計資料，顯示多少個項目比對每一個關鍵字的。這可協助您快速識別哪些關鍵字的效率最好 (最差)。如需搜尋統計資料的詳細資訊，請參閱[檢視內容搜尋結果的關鍵字統計資料](https://docs.microsoft.com/microsoft-365/compliance/view-keyword-statistics-for-content-search)。
 
 每一列上的關鍵字是藉由所建立的搜尋查詢中的 OR 運算子來連線。您也可以連續使用關鍵字片語 (以括號括住)。
 
-如需詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)。
+如需詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)。
 
 ### <a name="exampleusing-content-search-to-identify-email-addresses"></a>範例 — 使用內容搜尋來識別電子郵件地址
 

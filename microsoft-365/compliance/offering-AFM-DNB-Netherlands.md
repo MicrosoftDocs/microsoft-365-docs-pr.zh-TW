@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d4efa625c4026ce87d0895d03b4a9993bb4bca40
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 09d6514a3b18535820f31b50736591314182d140
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602700"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066650"
 ---
 # <a name="dutch-authority-for-the-financial-markets-and-the-central-bank-of-the-netherlands"></a>荷蘭金融市場管理局和荷蘭中央銀行
 
@@ -81,7 +81,3 @@ Microsoft 檢查清單可協助荷蘭金融公司執行 Microsoft 商務雲端�
 - [Azure 的金融服務合規性](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure 金融服務雲端風險評定工具](https://aka.ms/FFIEC-CSDT)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/A/E/5/AE505D51-DA54-4B2D-B1BD-C76D9102F36A/AFM-DNB-Compliance.pdf)。

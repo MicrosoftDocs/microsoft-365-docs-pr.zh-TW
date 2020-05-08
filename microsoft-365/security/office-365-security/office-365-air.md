@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 開始使用 Office 365 進階威脅防護方案 2 中的自動化調查及回應功能
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: cb65b5a7f0b12ff977c0e8bd92912b8f741a2281
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 4e36e0fa07f825d3259ef9e42b802c81ae929470
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141544"
+ms.locfileid: "44159404"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>開始使用 Office 365 中的自動調查和回應（AIR）
 
@@ -99,7 +99,7 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 - 組織的安全性運作小組（包括安全性讀者和具有搜尋及清除角色的使用者）
 - 使用者
 
-此外，必須定義及套用[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies)原則，才能進行保護。
+此外，必須定義及套用[Office 365 ATP 原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies)，才能進行保護。
 
 ## <a name="next-steps"></a>後續步驟
 

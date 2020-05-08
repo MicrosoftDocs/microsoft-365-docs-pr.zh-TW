@@ -1,6 +1,6 @@
 ---
-title: 國際流量武器法規 (ITAR)
-description: Azure 政府版支援建置美國國際流量武器具備 Regs 系統中的客戶。
+title: Arm 規章中的國際流量（ITAR）
+description: Azure 政府支援客戶在具有 Arm Regs 功能的系統中建立國際流量。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
@@ -14,51 +14,47 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 045f6c177acd3f5feb0645fb56d25426632638e7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c19b10b436d40364d15ce6bf8569d18b0a0e7b7b
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602190"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065728"
 ---
-# <a name="international-traffic-in-arms-regulations-itar"></a>國際流量武器法規 (ITAR)
+# <a name="international-traffic-in-arms-regulations-itar"></a>Arm 規章中的國際流量（ITAR）
 
-## <a name="itar-overview"></a>ITAR 概觀
+## <a name="itar-overview"></a>ITAR 概述
 
-美國部門的狀態是負責管理防禦文章清單 （亦即任何項目或在美國武器] 清單中，指定的技術資料標題 22 CFR 121.1 所述），由武器匯出控制項法案 （控管的暫存匯入與匯出Title 22 USC 2778) 和武器法規 (ITAR) (Title 22 CFR 120 – 130) 國際流量。 Directorate 防禦貿易控制項 (DDTC) 是負責管理這些程式下控管的實體。
+美國州的部門負責管理防護文章的匯出和暫時匯入（表示在 [US Munitions] 清單中指定的任何專案或技術資料，如 Title 22 CFR 121.1 中所述），該清單是由 Arm 匯出控制法案（Title 22 USC 2778）和 Arm 規章（ITAR）中的國際流量（Title 22 CFR 120-130）控制。 國防商貿控制（DDTC）的 Directorate 負責管理這些程式所管轄的實體。
 
 ## <a name="microsoft-and-itar"></a>Microsoft 和 ITAR
 
-Microsoft 會提供特定的雲端服務或服務功能，可支援 ITAR 義務的客戶。 針對 ITAR 不符合性憑證時，Microsoft 運作，並且設計範圍內服務能夠支援客戶 ITAR 義務和規範計劃。  
+Microsoft 提供某些可以支援 ITAR 義務之客戶的雲端服務或服務功能。 雖然 ITAR 未提供相容性認證，但 Microsoft 會運作並設計出範圍內的服務，以支援客戶的 ITAR 義務和合規性計畫。  
   
-Microsoft Azure 政府版和 Microsoft Office 365 美國政府國防版的客戶資料可能會透過其他合約承諾客戶有關位置的儲存的資料，並限制 ITAR 提供支援上若要存取美國人員這類資料的能力。 Microsoft 提供的基礎結構和作業元件這些政府雲端服務時，這些保證但客戶最終負責保護與他們在其環境內的應用程式的架構。  
+Microsoft Azure 政府和 Microsoft Office 365 美國政府 for 國防可透過其他合約承諾向客戶提供有關所儲存資料位置的 ITAR，以及將這些資料存取至 US 人員的能力限制。 Microsoft 為這些政府雲端服務的基礎結構和操作元件提供這些保證，但客戶最終負責其環境中其應用程式的保護和架構。  
   
-客戶必須登入正式通知的儲存 ITAR 控制資料，其是 Microsoft，以便 Microsoft 可能遵守我們的客戶，以及 US government 的責任的其他協議。  
+客戶必須為其他合約簽署其他合約，以將 Microsoft 的意圖儲存 ITAR 控制的資料，讓 Microsoft 能夠遵守我們對客戶及美國政府的責任。  
   
-ITAR 具有報告違規，可提供特定風險降低優點的特定責任。 Microsoft Enterprise 合約修正讓 Microsoft 和客戶報告這類違規中共同運作。  
+ITAR 對舉報違規有特定責任，可提供某些風險降低的效益。 Microsoft Enterprise 合約修正可讓 Microsoft 與客戶一起運作，以舉報這類違規行為。  
   
-客戶對主機 ITAR 管制資料的搜尋應使用其 Microsoft 帳戶和授權小組合作，了解更多，取得適當的協議，並存取相關的系統架構資訊。
+尋找主控 ITAR 管制資料的客戶應使用其 Microsoft 帳戶和授權小組來深入瞭解、取得正確的協定，以及存取相關的系統架構資訊。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-- [Azure 政府版](https://aka.ms/AzureCompliance)
+- [Azure 政府](https://aka.ms/AzureCompliance)
 - [Office 365 美國政府國防版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-**其中要求合規性資訊？**
+**我可以在哪裡要求規範資訊？**
 
-請連絡您的 Microsoft 帳戶代表配合。
+請與您的 Microsoft 客戶代表聯繫。
 
 ## <a name="resources"></a>資源
 
 - [DDTC ITAR](https://www.pmddtc.state.gov/?id=ddtc_kb_article_page&sys_id=24d528fddbfc930044f9ff621f961987)
-- [ITAR 標題 22 CFR 120 – 130](https://aka.ms/itar)
-- [使用 Azure 政府版與 ITAR 控制資料](https://aka.ms/azure-itar-guide)
-- [Azure 政府版](https://azure.microsoft.com/features/gov/)
-- [Office 365 US Government](https://products.office.com/government/office-365-web-services-for-government)
+- [ITAR Title 22 CFR 120-130](https://aka.ms/itar)
+- [搭配使用 Azure 政府與 ITAR 控制的資料](https://aka.ms/azure-itar-guide)
+- [Azure 政府](https://azure.microsoft.com/features/gov/)
+- [Office 365 美國政府版](https://products.office.com/government/office-365-web-services-for-government)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf)。

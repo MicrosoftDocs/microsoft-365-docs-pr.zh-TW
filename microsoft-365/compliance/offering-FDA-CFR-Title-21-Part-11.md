@@ -1,6 +1,6 @@
 ---
-title: 食物和藥物管理 CFR 標題 21 11 部分
-description: Microsoft 可協助客戶遵守這些美國食物和藥物管理規定。
+title: 食品和藥品管理 CFR Title 21 第11部分
+description: Microsoft 可協助客戶遵守這些美國食品和藥品管理條例。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
@@ -14,42 +14,42 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 07a722101aaf9a3413e5821459ea9a980a8b76fe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1b24460940d583eeb9ed431b61453e87a218a816
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071280"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066376"
 ---
-# <a name="food-and-drug-administration-cfr-title-21-part-11"></a>食物和藥物管理 CFR 標題 21 11 部分
+# <a name="food-and-drug-administration-cfr-title-21-part-11"></a>食品和藥品管理 CFR Title 21 第11部分
 
-## <a name="fda-cfr-title-21-overview"></a>FDA CFR 標題 21 概觀
+## <a name="fda-cfr-title-21-overview"></a>FDA CFR Title 21 簡介
 
-程式碼的聯邦法規 (CFR) 包含 executive 部門及的美國聯邦政府機構法規與規則。 每個 CFR 50 標題位址管制的不同區域。
+聯邦法規（CFR）的程式碼包含美國聯邦政府的執行部門和代理商的規則和規定。 每個 CFR 50 標題都是針對不同的管制區域。
 
-[FDA CFR 標題 21](https://aka.ms/FDA-CFR)規定了食物和藥品製造或使用在美國境內，管轄底下的食物和藥物管理 (FDA)、 藥物執法管理和 Office 的國民身分藥物控制原則。 CFR 標題 21 部分 11 中所述的規定設定管理資訊由組織遵守 FDA 負責監督技術系統的基本規則。 任何管理良好實驗室做法 (GLP)、 良好臨床做法 (GCP)，以及良好量產發行做法 (GMP) 這類 GxP 程序的技術系統也需要 GxP 它遵循的驗證。
+[FDA CFR Title 21](https://aka.ms/FDA-CFR)會在美國、食品和藥品管理（FDA）的司法轄區、藥物執行管理，以及全國藥品控制項原則的辦事處，來規定美國內省和毒品。 CFR Title 中所列的規章21第11部分設定技術系統的基本規則，以管理受 FDA 監察之組織所使用的資訊。 任何控制這類 GxP 處理常式的技術系統，如良好的實驗慣例（GLP）、良好的臨床作法（GCP），以及良好的生產慣例（GMP）也需要驗證其是否遵循 GxP。
 
-CFR 標題 21 部分 11 設定需求，以確保電子記錄和簽章是高可信度電腦且可靠，和對等項目通常會為紙張記錄及手寫簽章。 它也提供以改善 FDA 管制產業中的電腦系統的安全性指導方針。 主旨公司必須證明，其處理程序和產品般運作設計，以及如果這些程序和產品變更，它們必須重新驗證該證明。 最佳做法指導方針封面：
+CFR Title 21 Part 11 會設定需求，以確保電子記錄及簽章對紙面記錄和手寫簽章具有信賴、可靠和一般等的替代。 它還提供指導方針，以提升 FDA 管制行業中電腦系統的安全性。 主旨公司必須證明其程式及產品的運作方式，以及這些程式及產品是否變更時，必須重新驗證該校樣。 最佳做法指導方針包括：
 
-- 標準作業程序，支援電子記錄及資料備份、 安全性和電腦系統驗證等的簽章的控制項。
-- 請確定電腦系統是安全的功能包含的資料值的稽核線索，並確保電子簽章的完整性。
-- 系統不正常依設計時，就可以偵測到驗證和文件提供證據，系統會執行用途和該使用者。
+- 支援電子記錄及特徵碼的標準作業程式和控制項，例如資料備份、安全性和電腦系統驗證。
+- 確保電腦系統安全的功能，包含資料值的核查追蹤記錄，並確保電子簽名的完整性。
+- 驗證及檔，提供系統執行目標的證據，而且使用者可以偵測到系統未正常運作的時間。
 
-## <a name="microsoft-and-fda-cfr-title-21"></a>Microsoft 和 FDA CFR 標題 21
+## <a name="microsoft-and-fda-cfr-title-21"></a>Microsoft 和 FDA CFR Title 21
 
-Microsoft 企業版雲端服務與一般獨立第三方 SOC 1 類型 2 和 SOC 2 Type 2 稽核，並根據 ISO/IEC 27001 和 ISO/IEC 27018 標準認證。
+Microsoft enterprise 雲端服務經歷一般獨立的協力廠商 SOC 1 Type 2 和 SOC 2 Type 2 審核，並根據 ISO/IEC 27001 和 ISO/IEC 27018 標準進行驗證。
 
-雖然這些規則的稽核和憑證執行未特別著重於 FDA 法規合規性，其目的與目標類似性質的 CFR 標題 21 部分 11，並以協助確保機密性、 完整性和可用性服務儲存在 Microsoft 雲端服務中的資料。 我們的資格方法也依據業界最佳作法，包括國際協會很好的作法指南藥品工程 (ISPE) GAMP 系列和藥品檢查合作配置 (PIC/S) 良好做法電腦化系統管制 GxP 環境中。
+雖然這些一般審核和憑證並未特別著重于 FDA 法規遵從性，但其用途和目標與 CFR Title 21 Part 11 的性質類似，而且可協助確保 Microsoft 雲端服務中儲存的資料的機密性、完整性和可用性。 我們的認證方法也是以業界最佳作法為基礎，包括國際協會（適用于製藥工程（ISPE） GAMP 系列的做法指南和藥物檢查合作架構（PIC/S）為管制 GxP 環境中的電腦化系統的良好作法。
 
-客戶可以要求存取合規性報告，受限於軟體授權合約條款與條件，透過其 Microsoft 帳戶服務代表洽談，或透過 「[服務信任入口網站](https://aka.ms/stphelp)。 此外，限定性條件的指導方針 Microsoft Azure 和 Microsoft Office 365 提供 Microsoft 稽核控制項如何對應至 CFR 標題 21 部分 11、 指導 FDA 限定性條件的策略，實作的需求的詳細的說明與共用責任範圍的描述。
+客戶可以要求存取相容性報告、受保密協定條款及條件的制約、透過其 Microsoft 帳戶代表或透過[服務信任入口網站](https://aka.ms/stphelp)。 此外，Microsoft Azure 和 Microsoft Office 365 的資格指導方針提供了 Microsoft audit controls 如何對應于 CFR Title 21 Part 11 的需求、實施 FDA 資格策略的指導方針，以及共同責任區域的說明。
 
-了解如何開始加速 FDA CFR 標題 21 部署：[下載 Azure FDA 21 限定性條件快顯功能表](https://go.microsoft.com/fwlink/p/?linkid=2086604)
+瞭解如何加速您的 FDA CFR Title 21 部署：[下載 AZURE fda 21 驗證指南](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-雖然沒有遵守 CFR 標題 21 部分 11 沒有憑證，但下列的 Microsoft 企業版雲端服務已經過獨立、 第三方稽核，可能有幫助客戶其合規性努力。 這些服務包括：
+雖然沒有符合 CFR Title 21 Part 11 的認證，但下列 Microsoft enterprise 雲端服務已經經歷了獨立的協力廠商審核，可協助客戶進行法規遵從性工作。 這些服務包括：
 
-- Azure： 雲端服務、 儲存、 Traffic Manager、 虛擬機器及虛擬網路
+- Azure：雲端服務、儲存、流量管理員、虛擬機器和虛擬網路
 - Azure DevOps
 - Intune
 - [Dynamics 365 和 Dynamics 365 美國政府](https://aka.ms/d365-compliance-list)
@@ -57,44 +57,40 @@ Microsoft 企業版雲端服務與一般獨立第三方 SOC 1 類型 2 和 SOC 2
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
-ISO/IEC 27001 和 ISO/IEC 27018 標準為 SOC 1 和 SOC 2 Type 2 稽核報告足以 Microsoft 已實作，且可能有幫助客戶 FDA CFR 標題 21 部分 11 發表的控制項的有效性。
+SOC 1 和 SOC 2 Type 2 的審計報告（ISO/IEC 27001 和 ISO/IEC 27018 標準證明已實現的控制項的有效性，並可協助客戶遵循 FDA CFR Title 21 第11部分。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 **該標準適用於誰？**
 
-FDA CFR 標題 21 部分 11 適用於組織的產品和服務處理中的參考資料、 臨床研究、 維護、 製造業及通訊群組的壽命科學產品 FDA 管制層面。
+FDA CFR Title 21 Part 11 適用于包含產品和服務的組織，這些產品和服務是針對研究、臨床研究、維護、製造及生命科學產品發佈的 FDA 管制方面。
 
-**Microsoft 企業版雲端服務如何示範合規性 FDA CFR 標題 21 部分 11？**
+**Microsoft enterprise cloud services 如何示範與 FDA CFR Title 的相容性：第11部分？**
 
-使用 SOC 1 類型 2、 SOC 2 Type 2、 ISO/IEC 27001 和 ISO/IEC 27018、 Microsoft 是能夠顯示方式相關的控制項，第三方備妥正式稽核記下這些報告位址中的需求。
+使用協力廠商準備的正式審核，以 SOC 1 Type 2、SOC 2 Type 2、ISO/IEC 27001 及 ISO/IEC 27018 為依據，Microsoft 可顯示這些報告中所述的相關控制措施如何滿足需求。
 
-由 Microsoft 所實作的稽核的控制項可協助確保機密性、 完整性和可用性的資料，並且對應到的適用法規需求定義標題 21 部分 11 中被識別為 Microsoft 的責任。 Azure 與 Office 365 Microsoft 稽核控制項如何對應至這些需求的詳細資料的資格指導方針。
+由 Microsoft 執行的經過審核的控制項可協助確定資料的機密性、完整性和可用性，並對應至已識別為 Microsoft 責任的標題21第11部分中所定義的適當法規需求。 Azure 和 Office 365 的資格指導方針詳細說明 Microsoft audit controls 如何對應至這些需求。
 
-**如何取得稽核報告的複本？**
+**如何取得審計員報表的複本？**
 
-[服務信任入口網站](https://aka.ms/stphelp)提供獨立稽核的合規性報告。 您可以使用入口網站來要求稽核報告，以便您稽核員 」 可以比較 Microsoft 的雲端服務結果與您自己的法律和法規需求。
+[服務信任入口網站](https://aka.ms/stphelp)提供獨立稽核的合規性報告。 您可以使用入口網站要求審核報告，讓審計員能夠與您自己的法律和法規需求比較 Microsoft 的雲端服務結果。
 
-**我可以使用 Microsoft 的合規性憑證程序中的我的組織？**
+**我可以在組織的認證程式中使用 Microsoft 的符合性嗎？**
 
-是。 IEC/ISO 27001、 ISO/IEC 27018、 SOC 1 和 SOC 2 標準獨立第三方合規性報告足以 Microsoft 控制項的有效性。 Microsoft 企業雲端客戶可能會使用自己 CFR 標題 21 部分 11 風險分析和限定性條件努力一部分這些相關的報告中所述的稽核的控制項。 建置和部署應用程式 FDA 依法規管制的客戶負責確保其應用程式符合 FDA 需求。
+是。 IEC/ISO 27001、ISO/IEC 27018、SOC 1 和 SOC 2 標準的獨立協力廠商法規遵從性報告可證明 Microsoft 控制項的效能。 Microsoft enterprise cloud 客戶可以使用這些相關報告中所述的已審核控制項，作為其自有之 CFR Title 的一部分，21第11部分的風險分析和限定工作。 建立及部署遵循 FDA 法規之應用程式的客戶負責確保其應用程式符合 FDA 的需求。
 
-**什麼是 Microsoft 的維護與此標準的合規性的責任？**
+**Microsoft 對於維護符合此標準的責任為何？**
 
-Microsoft 可確保其企業雲端服務符合所定義的管理字詞[線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)和適用的服務等級協定 (Sla)。 這些定義我們負責實作和維護適合用來保護及監視系統的控制項。
+Microsoft 可確保其 enterprise 雲端服務符合管理[線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)及適用服務等級協定（sla）內定義的條款。 這些會定義我們的責任，用以實施及維護控制措施，以保護及監視系統。
 
 ## <a name="resources"></a>資源
 
-- [Azure GxP 資格指導方針](https://aka.ms/gxpcompliance)
-- [程式碼的聯邦法規標題 21](https://aka.ms/FDA-CFR)
-- [FDA 指導產業組件 11： 電子記錄和簽章](https://www.fda.gov/RegulatoryInformation/Guidances/ucm125067.htm)
+- [Azure GxP 認證指導方針](https://aka.ms/gxpcompliance)
+- [聯邦法規的程式碼標題21](https://aka.ms/FDA-CFR)
+- [行業第11部分的 FDA 指導方針：電子記錄和簽名](https://www.fda.gov/RegulatoryInformation/Guidances/ucm125067.htm)
 - [Azure 的資格指導方針](https://aka.ms/azurefda21cfrpart11qualguide)
 - [Office 365 的資格指導方針](https://aka.ms/o365-qualification-guideline)
 - [Microsoft 通用控制措施中樞合規性架構](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)
 - [適用於政府的 Microsoft 雲端](https://aka.ms/govt-cloud)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>下載方案背景資料
-
-是否需要此方案的背景資料文件？ 下載 [PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf)。

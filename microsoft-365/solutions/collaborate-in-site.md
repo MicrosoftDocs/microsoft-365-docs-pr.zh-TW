@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 深入瞭解設定 SharePoint 網站與來賓共同作業所需的 Microsoft 365 設定步驟。
-ms.openlocfilehash: f79846de5d4fd8661205e549db3457a7696e9770
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1f53fa43b6abdfaf21d938bc69db384d173d660e
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035992"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160000"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在網站中與來賓共同作業
 
@@ -92,7 +92,7 @@ Microsoft 365 中的共用可透過 Azure Active Directory 中的組織關聯設
 
 若要建立網站
 1. 在 SharePoint 系統管理中心的 **[網站]** 底下，按一下 **[使用中網站]**。
-2. 按一下 **[建立]**。
+2. 按一下 [建立]****。
 3. 按一下 [**小組網站**]。
 4. 輸入網站名稱，並為群組擁有者（網站擁有者）輸入名稱。
 5. 在 [**高級設定**] 底下，選擇您要讓它成為公用或私人網站。

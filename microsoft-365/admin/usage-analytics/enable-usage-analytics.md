@@ -18,80 +18,87 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
-description: 了解如何開始使用 Power BI 中的 Microsoft 365 使用情況分析範本應用程式租用戶收集資料。
-ms.openlocfilehash: 249fadce15ca2e4c979d6e1930ff0d14ccd9bc08
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 瞭解如何使用 Power BI 中的 Microsoft 365 流量分析範本應用程式，來開始收集租使用者的資料。
+ms.openlocfilehash: 386b64b1db15ba9f00450ac037a74bfc702e95ea
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355004"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140680"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>啟用 Microsoft 365 使用情況分析
 
-Microsoft 365 使用情況分析也適用於 Microsoft 365 美國政府社群。
-  
-## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>若要啟用 Microsoft 365 使用情況分析的步驟
+::: moniker range="o365-21vianet"
 
-若要開始使用 Microsoft 365 使用情況分析，您必須先在 Microsoft 365 系統管理中心中，提供資料，然後啟動 Power BI 中的範本應用程式。
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
+
+Microsoft 365 的流量分析也適用于 Microsoft 365 美國政府社區。
+  
+## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>啟用 Microsoft 365 使用方式分析的步驟
+
+若要開始使用 Microsoft 365 流量分析，您必須先將資料提供給 Microsoft 365 系統管理中心，然後在 Power BI 中啟動範本應用程式。
   
 ### <a name="get-power-bi"></a>取得 Power BI
 
-如果您還沒有 Power BI，您可以[註冊 Power BI 專業版](https://go.microsoft.com/fwlink/p/?linkid=845347)。 選取 [**免費試用**來註冊試用或若要取得 Power BI 專業人員的**立即購買**]。
+如果您還沒有 Power BI，可以[註冊 POWER Bi Pro](https://go.microsoft.com/fwlink/p/?linkid=845347)。 選取 [**嘗試免費**註冊試用版] 或 [**立即購買**]，以取得 Power BI Pro。
   
   
-您也可以展開 [**產品**] 購買其中 Power BI 的版本。 
+您也可以展開 [**產品**] 以購買 Power BI 的版本。 
 
 > [!NOTE]
-> 您必須安裝、 自訂及發佈的範本應用程式的 Power BI 專業版授權。 如需詳細資訊，請參閱[必要條件](https://docs.microsoft.com/power-bi/service-template-apps-install-distribute?source=docs#prerequisites)。
+> 您需要具備 Power BI Pro 授權才能安裝、自訂及發佈範本應用程式。 如需詳細資訊，請參閱[必要條件](https://docs.microsoft.com/power-bi/service-template-apps-install-distribute?source=docs#prerequisites)。
 
-您需要專業 Power BI 的授權，以共用您的內容，以及您將它與共用的人員進行太，或內容必須可在工作區中的[高階容量](https://docs.microsoft.com/power-bi/service-premium-what-is)。 
+您需要一個 Power BI Pro 授權，以共用您的內容，以及您與其共用的人員，或其內容必須位於高[容量](https://docs.microsoft.com/power-bi/service-premium-what-is)的工作區中。 
   
 ### <a name="enable-the-template-app"></a>啟用範本應用程式
 
-若要啟用的範本應用程式，您必須是**全域系統管理員**、**報告讀取者**、 **Exchange 系統管理員**、**商務用 Skype 系統管理員**或**SharePoint 系統管理員**。 
+若要啟用範本應用程式，您必須是**全域系統管理員**、**報告讀取**者、 **Exchange 系統**管理員、**商務用 Skype 系統管理員**或**SharePoint 管理員**。 
   
 如需詳細資訊，請參閱[關於系統管理員角色](../add-users/about-admin-roles.md)。 
   
 1. 在系統管理中心中，移至 **[報告]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">[使用量]</a> 頁面。 
     
-2. 在 [**使用狀況**] 頁面上，找出 [ **Microsoft 365 使用情況分析**卡片，並選取**要開始**。
+2. 在 [**使用狀況**] 頁面上，找出 [ **Microsoft 365 流量分析**卡]，然後選取 [**開始**]。
     
-3. 在報表上會開啟的面板設**使可 Power bi 的 Microsoft 365 使用情況分析的資料****上** \> **儲存**。 
+3. 在開啟的\> [報告] 面板上，設定 [**讓 power BI 的 Microsoft 365 流量分析使用的資料可供****儲存**]。 **On** 
   
-這會資料收集程序，且會視您的租用戶大小而定的 2 到 48 小時內完成。 **移至 Power BI** ] 按鈕將會啟用 （不再灰色） 資料收集完畢時。 
+這會啟動資料收集程式，並且會在2到48小時內完成，視租使用者的大小而定。 資料收集完成時，將會啟用（不再是灰色） [**移至 POWER BI** ] 按鈕。 
     
-### <a name="initiate-the-template-app"></a>啟動的範本應用程式
+### <a name="initiate-the-template-app"></a>啟動範本應用程式
 
-若要啟動的範本應用程式，您必須是**全域系統管理員**、**報告讀取者**、 **Exchange 系統管理員**、**商務用 Skype 系統管理員**或**SharePoint 系統管理員**。 
+若要啟動範本應用程式，您必須是**全域系統管理員**、**報告讀取**者、 **Exchange 系統**管理員、**商務用 Skype 系統管理員**或**SharePoint 管理員**。 
   
-1. 複製租用戶識別碼，然後選取 [**移至 Power BI**。
+1. 複製租使用者識別碼，然後選取 [**移至 POWER BI**]。
     
-2.  當您移到 Power BI 時，進行登入。 從瀏覽功能表中選取應用程式->取得應用程式。    
+2.  當您移到 Power BI 時，進行登入。 從流覽功能表中選取 [App->取得應用程式]。    
   
-3. 在 [**應用程式**] 索引標籤中，輸入 [搜尋] 方塊中的 Microsoft 365，然後選取 [ **Microsoft 365 使用情況分析** \> **取得它現在**。
+3. 在 [**應用程式**] 索引標籤的 [搜尋] 方塊中，輸入 microsoft 365，然後選取 [ **microsoft 365 使用方式分析** \> ]**立即取得**。
 
-    [![選取 [立即取得](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
+    [![選取 [立即取得]](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     
-4.  一旦安裝應用程式。 按一下 [上] 磚以開啟它。
+4.  安裝應用程式之後。 按一下平鋪開啟它。
 
-5.  按一下 [**瀏覽應用程式**來檢視將含有範例資料的應用程式]。 按一下 [應用程式連線至您的組織資料的**連線**。
+5.  按一下 [**流覽應用程式**] 以查看具有範例資料的應用程式。 按一下 **[連線]** ，將應用程式連線至您組織的資料。
 
-6.  按一下之後**連線**，在 [**連線至 Microsoft 365 使用情況分析**] 畫面上，輸入您在步驟 (1) 複製的識別碼在租用戶中\>**下一步**。
+6.  按一下 [連線 **]** 之後，在 [連線**至 Microsoft 365 流量分析]** 畫面上，輸入您在步驟（1）中\>複製的租使用者識別碼（按 **[下一步]**）。
     
-7. 在下一個畫面上，選取**oAuth2**作為**驗證方法** \> **登入**。 如果您選擇任何其他驗證方法，將會失敗的範本應用程式的連線。
+7. 在下一個畫面中，選取 [ **oAuth2** ] 作為**驗證方法** \> [登**入**]。 如果您選擇任何其他驗證方法，則與範本應用程式的連線將會失敗。
     
     ![Choose oAuth2 as authentication method](../../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
   
-8. 一旦具現化範本應用程式的 Microsoft 365 流量分析儀表板將可在 Power BI 網頁。 儀表板的初始載入需要 2 到 30 分鐘。
+8. 當範本應用程式範例化後，Microsoft 365 流量分析儀表板將會出現在網路上的 Power BI 中。 儀表板的初次載入需要2到30分鐘。
   
-租用戶層級彙總則可在所有報告。 **使用者層級的詳細資訊才會變成可用 1st 或 15 天後選擇中的行事曆月之後**。 這會影響使用者活動下的所有報告 (請參閱[瀏覽和運用 Microsoft 365 使用情況分析中的報告](navigate-and-utilize-reports.md)的祕訣如何檢視及使用這些報告)。
+所有報告都提供租使用者層級匯總。 **使用者層級的詳細資料只會在 [行事曆] 月的第一天或第15天之後變為使用**。 這會影響所有「使用者活動」下的報告（請參閱[流覽並使用 Microsoft 365 流量分析中的報告](navigate-and-utilize-reports.md)，以取得如何查看和使用這些報告的秘訣）。
     
 ## <a name="make-the-collected-data-anonymous"></a>將收集的資料匿名化
 
-若要將所有報表收集的資料匿名化，您必須是全域系統管理員。 這麼做會隱藏和範本應用程式中報告的使用者、 群組和網站名稱等識別資訊。
+若要將所有報表收集的資料匿名化，您必須是全域系統管理員。 這會在報表和範本應用程式中隱藏識別資訊，例如使用者、群組和網站名稱。
   
-1. 在系統管理中心，移至 [**設定** \> **設定**，並在 [**服務**] 索引標籤中，選擇**報告**。
+1. 在系統管理中心中，移至 [**設定** \> ]**設定**，然後在 [**服務**] 索引標籤上選擇 [**報告**]。
     
-2. 選取 [**報告**]，然後再選擇**顯示匿名識別碼**。 使用狀況報告以及範本應用程式，取得套用此設定。
+2. 選取 [**報告**]，然後選擇**顯示匿名識別碼**。 此設定會同時套用至使用狀況報告和範本應用程式。
   
 3. 選取 [儲存變更]****。

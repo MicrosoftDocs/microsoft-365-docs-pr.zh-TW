@@ -1,5 +1,5 @@
 ---
-title: 在政治活動開發/測試環境中建立小組網站
+title: 建立小組網站 - 政治活動開發/測試環境
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,15 +15,15 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治活動開發/測試環境中，建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。
-ms.openlocfilehash: 14ba5b00754a9e55c797edd0835658ac81b7e647
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e3223b059273f0955d7fc11f8ca98d529d946210
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637661"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036472"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治活動開發/測試環境中建立小組網站
 

@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: 瞭解如何取得免費試用版或購買 Microsoft 365 的訂閱。
-ms.openlocfilehash: 255cd1779f3fb29a619110160faefdd3d5369eca
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 19529192e2fa48ac081a84e9ad54669c3ef16791
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707532"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141051"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>試用或購買 Microsoft 365 訂閱
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+
+::: moniker-end
 
 Microsoft 365 是完整的解決方案，可結合 Office 365 與 Windows 10 搭配高級安全性和裝置管理。 如果您已有訂閱，且想要試用或購買 Microsoft 365 訂閱，最好的做法是透過系統管理中心。 您可以在系統管理中心使用下列 Microsoft 365 訂閱，讓您立即嘗試或購買：
   
