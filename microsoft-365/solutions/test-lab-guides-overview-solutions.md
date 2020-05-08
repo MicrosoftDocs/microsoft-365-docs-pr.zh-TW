@@ -12,27 +12,28 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- M365solutions
 ms.custom:
 - Ent_Architecture
-- M365solutions
 description: 使用測試實驗室指南來建立開發/測試環境中的 Microsoft 365 解決方案和案例。
-ms.openlocfilehash: 7f05e0268efe99c22177db830c82b32ba2480652
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 38b06678df46189f49b40a5752803786a94784fe
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002502"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159440"
 ---
-# <a name="test-lab-guides-for-solutions-and-scenarios"></a><span data-ttu-id="fd679-103">針對解決方案與案例的測試實驗室指南</span><span class="sxs-lookup"><span data-stu-id="fd679-103">Test Lab Guides for solutions and scenarios</span></span>
+# <a name="test-lab-guides-for-solutions-and-scenarios"></a><span data-ttu-id="093fd-103">針對解決方案與案例的測試實驗室指南</span><span class="sxs-lookup"><span data-stu-id="093fd-103">Test Lab Guides for solutions and scenarios</span></span>
 
-<span data-ttu-id="fd679-p101">測試實驗室指南 (TLG) 可協助您快速地了解 Microsoft 產品。它們提供規範的指示，可以設定簡化但是具有代表性的測試環境。您可以將這些環境用於示範、自訂或者針對試用版或付費訂閱持續時間建立複雜的概念證明。</span><span class="sxs-lookup"><span data-stu-id="fd679-p101">Test Lab Guides (TLGs) help you quickly learn about Microsoft products. They provide prescriptive instructions to configure simplified but representative test environments. You can use these environments for demonstration, customization, or creation of complex proofs of concept for the duration of a trial or paid subscription.</span></span> 
+<span data-ttu-id="093fd-p101">測試實驗室指南 (TLG) 可協助您快速地了解 Microsoft 產品。它們提供規範的指示，可以設定簡化但是具有代表性的測試環境。您可以將這些環境用於示範、自訂或者針對試用版或付費訂閱持續時間建立複雜的概念證明。</span><span class="sxs-lookup"><span data-stu-id="093fd-p101">Test Lab Guides (TLGs) help you quickly learn about Microsoft products. They provide prescriptive instructions to configure simplified but representative test environments. You can use these environments for demonstration, customization, or creation of complex proofs of concept for the duration of a trial or paid subscription.</span></span> 
 
-<span data-ttu-id="fd679-p102">TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符合您學習或測試組態需求的多個組態。「我自行建置而且可以運作」提供實做經驗，可協助您了解新產品或案例的部署需求，因此您可以更有效地規劃在生產環境中裝載。</span><span class="sxs-lookup"><span data-stu-id="fd679-p102">TLGs are designed to be modular. They build upon each other to create multiple configurations that more closely match your learning or test configuration needs. The "I built it out myself and it works" hands-on experience helps you understand the deployment requirements of a new product or scenario so you can better plan for hosting it in production.</span></span>
+<span data-ttu-id="093fd-p102">TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符合您學習或測試組態需求的多個組態。「我自行建置而且可以運作」提供實做經驗，可協助您了解新產品或案例的部署需求，因此您可以更有效地規劃在生產環境中裝載。</span><span class="sxs-lookup"><span data-stu-id="093fd-p102">TLGs are designed to be modular. They build upon each other to create multiple configurations that more closely match your learning or test configuration needs. The "I built it out myself and it works" hands-on experience helps you understand the deployment requirements of a new product or scenario so you can better plan for hosting it in production.</span></span>
 
-<span data-ttu-id="fd679-110">您也可以使用 TLG 針對應用程式開發和測試建立具有代表性的環境，亦稱為開發/測試環境。</span><span class="sxs-lookup"><span data-stu-id="fd679-110">You can also use TLGs to create representative environments for development and testing of applications, also known as dev/test environments.</span></span>
+<span data-ttu-id="093fd-110">您也可以使用 TLG 針對應用程式開發和測試建立具有代表性的環境，亦稱為開發/測試環境。</span><span class="sxs-lookup"><span data-stu-id="093fd-110">You can also use TLGs to create representative environments for development and testing of applications, also known as dev/test environments.</span></span>
   
 ![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-<span data-ttu-id="fd679-112">嘗試[此測試實驗室指南](team-security-isolation-dev-test.md)以設定具有安全性隔離的團隊。</span><span class="sxs-lookup"><span data-stu-id="fd679-112">Try [this Test Lab Guide](team-security-isolation-dev-test.md) to set up a team with security isolation.</span></span>
+<span data-ttu-id="093fd-112">嘗試[此測試實驗室指南](team-security-isolation-dev-test.md)以設定具有安全性隔離的團隊。</span><span class="sxs-lookup"><span data-stu-id="093fd-112">Try [this Test Lab Guide](team-security-isolation-dev-test.md) to set up a team with security isolation.</span></span>
 
