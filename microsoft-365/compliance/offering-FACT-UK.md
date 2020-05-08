@@ -1,6 +1,6 @@
 ---
-title: 針對著作權竊取 （事實） 同盟
-description: Microsoft Azure 可達到從同盟針對著作權竊取英國的憑證。
+title: 同盟防盜的同盟（事實）
+description: Microsoft Azure 已取得同盟的憑證，以防範 UK 中的著作權盜竊。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
@@ -14,55 +14,49 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2aa68d75f795e670390c913c999c154a0164c18c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e8d7ce93438ce3699dd30ac8b5f0f8818045eaf5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602460"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066396"
 ---
-# <a name="federation-against-copyright-theft-fact"></a><span data-ttu-id="b6cc3-104">針對著作權竊取 （事實） 同盟</span><span class="sxs-lookup"><span data-stu-id="b6cc3-104">Federation Against Copyright Theft (FACT)</span></span>
+# <a name="federation-against-copyright-theft-fact"></a><span data-ttu-id="1da12-104">同盟防盜的同盟（事實）</span><span class="sxs-lookup"><span data-stu-id="1da12-104">Federation Against Copyright Theft (FACT)</span></span>
 
-## <a name="fact-overview"></a><span data-ttu-id="b6cc3-105">事實概觀</span><span class="sxs-lookup"><span data-stu-id="b6cc3-105">FACT overview</span></span>
+## <a name="fact-overview"></a><span data-ttu-id="1da12-105">事實綜述</span><span class="sxs-lookup"><span data-stu-id="1da12-105">FACT overview</span></span>
 
-<span data-ttu-id="b6cc3-106">著作權保護的內容有許多形式 — 圖片、 視訊、 音樂、 合約、 指令碼、 工作流程、 美工圖案、 架構及更多 — 和代表許多企業的核心資產。</span><span class="sxs-lookup"><span data-stu-id="b6cc3-106">Copyrighted content comes in many forms — pictures, videos, music, contracts, scripts, workflows, art, architecture, and more — and represents the core assets of many businesses.</span></span> <span data-ttu-id="b6cc3-107">隱私權威脅破壞智慧財產權非法提升或市場中斷非法通訊透過這些企業非常存在。</span><span class="sxs-lookup"><span data-stu-id="b6cc3-107">Piracy threatens to undermine the very existence of these businesses through the unlawful distribution of intellectual property for illicit gain or market disruption.</span></span> <span data-ttu-id="b6cc3-108">當實際執行和後續的實際執行的工作流程越來越多移至雲端，智慧財產的黑色市場同樣地將移開向線上機制的實體媒體。</span><span class="sxs-lookup"><span data-stu-id="b6cc3-108">As production and post-production workflows increasingly move to the cloud, the black market for intellectual property is similarly moving away from physical media toward online mechanisms.</span></span>
+<span data-ttu-id="1da12-106">受版權保護的內容有多種形式：圖片、影片、音樂、合約、腳本、工作流程、圖形、架構等等，以及代表許多企業的核心資產。</span><span class="sxs-lookup"><span data-stu-id="1da12-106">Copyrighted content comes in many forms — pictures, videos, music, contracts, scripts, workflows, art, architecture, and more — and represents the core assets of many businesses.</span></span> <span data-ttu-id="1da12-107">盜版會因非法收益或市場中斷而造成這些公司因非法的智慧財產權散佈而造成破壞。</span><span class="sxs-lookup"><span data-stu-id="1da12-107">Piracy threatens to undermine the very existence of these businesses through the unlawful distribution of intellectual property for illicit gain or market disruption.</span></span> <span data-ttu-id="1da12-108">隨著實際執行工作流程和生產後的工作流程逐漸移至雲端，其智慧財產權的黑色市場會類似于線上裝置的實體媒體。</span><span class="sxs-lookup"><span data-stu-id="1da12-108">As production and post-production workflows increasingly move to the cloud, the black market for intellectual property is similarly moving away from physical media toward online mechanisms.</span></span>
 
-## <a name="microsoft-and-federation-against-copyright-theft-fact"></a><span data-ttu-id="b6cc3-109">Microsoft 和針對著作權竊取 （事實） 同盟</span><span class="sxs-lookup"><span data-stu-id="b6cc3-109">Microsoft and Federation Against Copyright Theft (FACT)</span></span>
+## <a name="microsoft-and-federation-against-copyright-theft-fact"></a><span data-ttu-id="1da12-109">針對著作權盜竊的 Microsoft 和同盟（事實）</span><span class="sxs-lookup"><span data-stu-id="1da12-109">Microsoft and Federation Against Copyright Theft (FACT)</span></span>
 
-<span data-ttu-id="b6cc3-110">為底線 Microsoft 的承諾，以保護客戶，當他們過程錄影至公用雲端這類資產，Microsoft Azure 已經認證由同盟針對著作權竊取 （） 中事實英國。</span><span class="sxs-lookup"><span data-stu-id="b6cc3-110">To underscore Microsoft’s commitment to protect customers when they entrust such assets to the public cloud, Microsoft Azure has been certified by the Federation Against Copyright Theft (FACT) in the United Kingdom.</span></span> <span data-ttu-id="b6cc3-111">事實憑證根據 ISO 27001，將重點放在實體和數位安全性、 人員檢測和訓練和存取控制。</span><span class="sxs-lookup"><span data-stu-id="b6cc3-111">FACT certification is based on ISO 27001, focusing on physical and digital security, staff screening and training, and access control.</span></span> <span data-ttu-id="b6cc3-112">事實內容保護和安全性程式上的專業知識繪製跨執法機構、 技術合作夥伴和對抗侵權和內容竊取，例如對等端對端共用、 不合法的光碟重複和訊號的產業關聯竊取。</span><span class="sxs-lookup"><span data-stu-id="b6cc3-112">The FACT content protection and security program draws on expertise across law enforcement, technology partners, and industry associations to fight copyright infringement and content theft, such as peer-to-peer sharing, illegal disc duplication, and signal theft.</span></span>
+<span data-ttu-id="1da12-110">若要在 Microsoft 對客戶 entrust 這類資產的承諾時，對客戶進行保護的底線，microsoft Azure 已透過同盟防禦版權所有（事實）。</span><span class="sxs-lookup"><span data-stu-id="1da12-110">To underscore Microsoft’s commitment to protect customers when they entrust such assets to the public cloud, Microsoft Azure has been certified by the Federation Against Copyright Theft (FACT) in the United Kingdom.</span></span> <span data-ttu-id="1da12-111">事實證明是以 ISO 27001 為基礎，其重點是實體和數位安全性、人員篩選和訓練，以及存取控制。</span><span class="sxs-lookup"><span data-stu-id="1da12-111">FACT certification is based on ISO 27001, focusing on physical and digital security, staff screening and training, and access control.</span></span> <span data-ttu-id="1da12-112">事實內容保護和安全性計畫會在法律強制執行、技術合作夥伴和行業關聯上，在抵禦著作權侵犯和內容盜竊方面的專業知識，例如對等共用、非法的光碟重複和信號竊取等方面。</span><span class="sxs-lookup"><span data-stu-id="1da12-112">The FACT content protection and security program draws on expertise across law enforcement, technology partners, and industry associations to fight copyright infringement and content theft, such as peer-to-peer sharing, illegal disc duplication, and signal theft.</span></span>
 
-<span data-ttu-id="b6cc3-113">根據自發性提交由 Microsoft 事實稽核，事實稽核者認證 Azure。</span><span class="sxs-lookup"><span data-stu-id="b6cc3-113">Based on the voluntary submission by Microsoft to a FACT audit, the FACT auditor certified Azure.</span></span> <span data-ttu-id="b6cc3-114">Azure 的第一個的多重租用戶公用雲端服務，以達成事實憑證，新增至 Azure 的產品組合的媒體相關的認證，包括 CDSA 憑證和由 MPAA 正式評估。</span><span class="sxs-lookup"><span data-stu-id="b6cc3-114">Azure was the first multi-tenant public cloud service to achieve FACT certification, adding to Azure’s portfolio of media-related certifications, including CDSA certification and a formal assessment by the MPAA.</span></span>
+<span data-ttu-id="1da12-113">根據 Microsoft 對事實審核的自願提交，事實審計員認可型 Azure。</span><span class="sxs-lookup"><span data-stu-id="1da12-113">Based on the voluntary submission by Microsoft to a FACT audit, the FACT auditor certified Azure.</span></span> <span data-ttu-id="1da12-114">Azure 是第一個用於取得事實證明的多承租人公用雲端服務，新增至 Azure 的媒體相關憑證組合，包括 CDSA 憑證和 MPAA 的正式評估。</span><span class="sxs-lookup"><span data-stu-id="1da12-114">Azure was the first multi-tenant public cloud service to achieve FACT certification, adding to Azure’s portfolio of media-related certifications, including CDSA certification and a formal assessment by the MPAA.</span></span>
 
-<span data-ttu-id="b6cc3-115">了解在 Microsoft 雲端的事實的優點：[下載事實背景資料](https://aka.ms/fact-backgrounder)</span><span class="sxs-lookup"><span data-stu-id="b6cc3-115">Learn about the benefits of FACT on the Microsoft Cloud: [Download the FACT backgrounder](https://aka.ms/fact-backgrounder)</span></span>
+## <a name="microsoft-in-scope-cloud-services"></a><span data-ttu-id="1da12-115">Microsoft 範圍內雲端服務</span><span class="sxs-lookup"><span data-stu-id="1da12-115">Microsoft in-scope cloud services</span></span>
 
-## <a name="microsoft-in-scope-cloud-services"></a><span data-ttu-id="b6cc3-116">Microsoft 範圍內雲端服務</span><span class="sxs-lookup"><span data-stu-id="b6cc3-116">Microsoft in-scope cloud services</span></span>
+[<span data-ttu-id="1da12-116">Azure 和 Azure Government</span><span class="sxs-lookup"><span data-stu-id="1da12-116">Azure and Azure Government</span></span>](https://aka.ms/AzureCompliance)
 
-[<span data-ttu-id="b6cc3-117">Azure 和 Azure Government</span><span class="sxs-lookup"><span data-stu-id="b6cc3-117">Azure and Azure Government</span></span>](https://aka.ms/AzureCompliance)
+## <a name="audits-reports-and-certificates"></a><span data-ttu-id="1da12-117">稽核、報告和憑證</span><span class="sxs-lookup"><span data-stu-id="1da12-117">Audits, reports, and certificates</span></span>
 
-## <a name="audits-reports-and-certificates"></a><span data-ttu-id="b6cc3-118">稽核、報告和憑證</span><span class="sxs-lookup"><span data-stu-id="b6cc3-118">Audits, reports, and certificates</span></span>
+<span data-ttu-id="1da12-118">每年會更新 Azure 憑證： [AZURE 事實憑證](https://aka.ms/azurefactcert)</span><span class="sxs-lookup"><span data-stu-id="1da12-118">The Azure certification is renewed annually: [Azure FACT certificate](https://aka.ms/azurefactcert)</span></span>
 
-<span data-ttu-id="b6cc3-119">每年更新 Azure 的憑證： [Azure 事實憑證](https://aka.ms/azurefactcert)</span><span class="sxs-lookup"><span data-stu-id="b6cc3-119">The Azure certification is renewed annually: [Azure FACT certificate](https://aka.ms/azurefactcert)</span></span>
+## <a name="frequently-asked-questions"></a><span data-ttu-id="1da12-119">常見問題集</span><span class="sxs-lookup"><span data-stu-id="1da12-119">Frequently asked questions</span></span>
 
-## <a name="frequently-asked-questions"></a><span data-ttu-id="b6cc3-120">常見問題集</span><span class="sxs-lookup"><span data-stu-id="b6cc3-120">Frequently asked questions</span></span>
+<span data-ttu-id="1da12-120">**為什麼很重要？**</span><span class="sxs-lookup"><span data-stu-id="1da12-120">**Why is FACT important?**</span></span>
 
-<span data-ttu-id="b6cc3-121">**為什麼事實很重要？**</span><span class="sxs-lookup"><span data-stu-id="b6cc3-121">**Why is FACT important?**</span></span>
+<span data-ttu-id="1da12-121">內容安全性對功能影片和電視開發很重要，因為工作流程中有多點會危及或竊取數位資產。</span><span class="sxs-lookup"><span data-stu-id="1da12-121">Content security is critical for feature film and television development, as there are multiple points along the workflow where digital assets can be compromised or stolen.</span></span> <span data-ttu-id="1da12-122">Dailies、粗略切削和視覺效果只是一般影片實際執行循環內公開的部分材料，而 blockbuster 專案的安全性違規會影響到數百萬的資金。</span><span class="sxs-lookup"><span data-stu-id="1da12-122">Dailies, rough cuts, and visual effects are just some of the materials exposed during a normal film production cycle, and the box-office impacts of a security breach on a blockbuster project can reach tens of millions of dollars.</span></span> <span data-ttu-id="1da12-123">透過傳遞事實審核，Azure 可協助避免非法發佈和銷售工作圖片和電視資產，為客戶提供另一層的保障。</span><span class="sxs-lookup"><span data-stu-id="1da12-123">By passing the FACT audit, Azure provides another layer of assurance to customers by helping to prevent the illegal distribution and sale of motion picture and television assets.</span></span>
 
-<span data-ttu-id="b6cc3-122">內容安全性是重要的功能影片與電視開發，有多個點沿著可以洩漏資料或遭竊數位資產的工作流程。</span><span class="sxs-lookup"><span data-stu-id="b6cc3-122">Content security is critical for feature film and television development, as there are multiple points along the workflow where digital assets can be compromised or stolen.</span></span> <span data-ttu-id="b6cc3-123">Dailies、 粗略剪下和視覺效果的只是一些標準底片生產週期內，公開的資料與安全性漏洞鉅專案上 box-office 影響可以達到千萬金額。</span><span class="sxs-lookup"><span data-stu-id="b6cc3-123">Dailies, rough cuts, and visual effects are just some of the materials exposed during a normal film production cycle, and the box-office impacts of a security breach on a blockbuster project can reach tens of millions of dollars.</span></span> <span data-ttu-id="b6cc3-124">藉由傳遞事實稽核，Azure 可提供另一層的保證是協助防止不合法的分佈情況及其 sale 影片圖片和電視資產的客戶。</span><span class="sxs-lookup"><span data-stu-id="b6cc3-124">By passing the FACT audit, Azure provides another layer of assurance to customers by helping to prevent the illegal distribution and sale of motion picture and television assets.</span></span>
+<span data-ttu-id="1da12-124">**我的組織仍然需要進行事實審核，還是可使用 Azure 審核？**</span><span class="sxs-lookup"><span data-stu-id="1da12-124">**Does my organization still need to undergo a FACT audit, or can we use the Azure audit?**</span></span>
 
-<span data-ttu-id="b6cc3-125">**我的組織仍需要進行事實稽核，或我們可以使用 Azure 稽核嗎？**</span><span class="sxs-lookup"><span data-stu-id="b6cc3-125">**Does my organization still need to undergo a FACT audit, or can we use the Azure audit?**</span></span>
+<span data-ttu-id="1da12-125">符合事實是自願的，但 Microsoft 選擇執行獨立的評估，讓媒體客戶可以自信 Azure 的內容安全性和保護功能。</span><span class="sxs-lookup"><span data-stu-id="1da12-125">Compliance with FACT is voluntary, but Microsoft elected to carry out an independent assessment so that media customers can be confident in the content security and protection capabilities of Azure.</span></span> <span data-ttu-id="1da12-126">不過，客戶的個別雲端環境不會由 Azure 進行管理，因此可能會受到個別審核最適合的其他法規。</span><span class="sxs-lookup"><span data-stu-id="1da12-126">However, customers’ individual cloud environments are not managed by Azure, and thus may be subject to additional regulation that is best addressed by an individual audit.</span></span>
 
-<span data-ttu-id="b6cc3-126">合規性事實自發性，但 Microsoft 選取來實行獨立評估，以便媒體客戶可以放心在 Azure 的內容安全性和保護功能。</span><span class="sxs-lookup"><span data-stu-id="b6cc3-126">Compliance with FACT is voluntary, but Microsoft elected to carry out an independent assessment so that media customers can be confident in the content security and protection capabilities of Azure.</span></span> <span data-ttu-id="b6cc3-127">不過，客戶的個別雲端環境未受 [Azure，因此可能需支付額外的規定，最好能由個別的稽核。</span><span class="sxs-lookup"><span data-stu-id="b6cc3-127">However, customers’ individual cloud environments are not managed by Azure, and thus may be subject to additional regulation that is best addressed by an individual audit.</span></span>
+## <a name="resources"></a><span data-ttu-id="1da12-127">資源</span><span class="sxs-lookup"><span data-stu-id="1da12-127">Resources</span></span>
 
-## <a name="resources"></a><span data-ttu-id="b6cc3-128">資源</span><span class="sxs-lookup"><span data-stu-id="b6cc3-128">Resources</span></span>
-
-- <span data-ttu-id="b6cc3-129">針對著作權竊取同盟</span><span class="sxs-lookup"><span data-stu-id="b6cc3-129">Federation Against Copyright Theft</span></span>
-- [<span data-ttu-id="b6cc3-130">事實的安全性憑證計劃</span><span class="sxs-lookup"><span data-stu-id="b6cc3-130">Fact Security Certification Program</span></span>](https://go.microsoft.com/fwlink/?linkid=2099508)
-- [<span data-ttu-id="b6cc3-131">Azure 媒體服務的 CDSA 憑證</span><span class="sxs-lookup"><span data-stu-id="b6cc3-131">CDSA certification of Azure Media Services</span></span>](https://aka.ms/cdsa-cert)
-- [<span data-ttu-id="b6cc3-132">Azure ISO 27001 認證</span><span class="sxs-lookup"><span data-stu-id="b6cc3-132">Azure ISO 27001 certification</span></span>](https://aka.ms/Azure-BSI-Cert)
-- [<span data-ttu-id="b6cc3-133">MPAA 評估</span><span class="sxs-lookup"><span data-stu-id="b6cc3-133">MPAA Assessment</span></span>](offering-mpaa.md)
-- [<span data-ttu-id="b6cc3-134">Azure 針對 CSA CAIQ v3.0.1 的回應</span><span class="sxs-lookup"><span data-stu-id="b6cc3-134">Azure Responses to CSA CAIQ v3.0.1</span></span>](https://aka.ms/csacaiqresponses)
-- [<span data-ttu-id="b6cc3-135">Microsoft 信任中心的合規性</span><span class="sxs-lookup"><span data-stu-id="b6cc3-135">Compliance on the Microsoft Trust Center</span></span>](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a><span data-ttu-id="b6cc3-136">下載方案背景資料</span><span class="sxs-lookup"><span data-stu-id="b6cc3-136">Download the offering backgrounder</span></span>
-
-<span data-ttu-id="b6cc3-137">是否需要此方案的背景資料文件？</span><span class="sxs-lookup"><span data-stu-id="b6cc3-137">Do you need the backgrounder document for this offering?</span></span> <span data-ttu-id="b6cc3-138">下載 [PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf)。</span><span class="sxs-lookup"><span data-stu-id="b6cc3-138">Download the [PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf).</span></span>
+- <span data-ttu-id="1da12-128">同盟防盜的同盟</span><span class="sxs-lookup"><span data-stu-id="1da12-128">Federation Against Copyright Theft</span></span>
+- [<span data-ttu-id="1da12-129">事實安全認證計畫</span><span class="sxs-lookup"><span data-stu-id="1da12-129">Fact Security Certification Program</span></span>](https://go.microsoft.com/fwlink/?linkid=2099508)
+- [<span data-ttu-id="1da12-130">Azure 媒體服務的 CDSA 認證</span><span class="sxs-lookup"><span data-stu-id="1da12-130">CDSA certification of Azure Media Services</span></span>](https://aka.ms/cdsa-cert)
+- [<span data-ttu-id="1da12-131">Azure ISO 27001 認證</span><span class="sxs-lookup"><span data-stu-id="1da12-131">Azure ISO 27001 certification</span></span>](https://aka.ms/Azure-BSI-Cert)
+- [<span data-ttu-id="1da12-132">MPAA 評估</span><span class="sxs-lookup"><span data-stu-id="1da12-132">MPAA Assessment</span></span>](offering-mpaa.md)
+- [<span data-ttu-id="1da12-133">Azure 針對 CSA CAIQ v3.0.1 的回應</span><span class="sxs-lookup"><span data-stu-id="1da12-133">Azure Responses to CSA CAIQ v3.0.1</span></span>](https://aka.ms/csacaiqresponses)
+- [<span data-ttu-id="1da12-134">Microsoft 信任中心的合規性</span><span class="sxs-lookup"><span data-stu-id="1da12-134">Compliance on the Microsoft Trust Center</span></span>](https://www.microsoft.com/trust-center/compliance/compliance-overview)
