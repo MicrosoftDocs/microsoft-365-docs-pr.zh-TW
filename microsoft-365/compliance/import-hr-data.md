@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理員可以設定資料連線器，將員工資料從組織的人力資源（HR）系統匯入 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的 HR 資料，協助您偵測可能會對組織造成內部威脅之特定使用者的活動。
-ms.openlocfilehash: 0850e3fbbccb7653ddb9c56c07deaad9ed13f84a
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 118e2a8ad4ff134a4529e3ffc95fa22cdb7cbdaf
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943362"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173483"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>設定連接器以匯入人力資源資料
 
@@ -68,7 +68,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 |**LastWorkingDate**|為終止的員工指定最後一天的工作。 您必須使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`，也就是[ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
 |||
 
-使用必要的 HR 資料建立 CSV 檔案之後，請將它儲存在您在步驟4中執行腳本的本機電腦上。 您也應該執行更新策略，以確保 CSV 檔案永遠包含最新的資訊，因此，不論您執行腳本，最新的員工終止資料都會上傳至 Microsoft 雲端。
+在您建立含有必要 HR 資料的 CSV 檔案之後，請將它儲存在您在步驟4中執行的腳本所在的相同系統上。 您也應該執行更新策略，以確保 CSV 檔案永遠包含最新的資訊，因此，不論您執行腳本，最新的員工終止資料都會上傳至 Microsoft 雲端。
 
 ## <a name="step-3-create-the-hr-connector"></a>步驟3：建立 HR 連接器
 
@@ -94,7 +94,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
    隨即會顯示 [狀態] 頁面，確認已建立連接器。 此頁面也包含工作識別碼。 在下一個步驟中，您將需要此工作識別碼來執行腳本。 您可以從這個頁面或從連接線的快顯視窗中複製此頁面。
 
-7. 按一下 [完成]****。
+7. 按一下 **[完成]**。
    
    新的連接器會顯示在 [**連接器**] 索引標籤上的清單中。 
 
@@ -136,7 +136,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
    |`appId` |這是您在步驟1中您于 Azure AD 中所建立之應用程式的 AAD 應用程式識別碼。 當腳本嘗試存取您的 Microsoft 365 組織時，Azure AD 可用於驗證。 | 
    |`appSecret`|這是您在步驟1中您在 Azure AD 中建立之應用程式的 AAD 應用程式機密。 這也是用來進行驗證。|
    |`jobId`|這是您在步驟3中建立之 HR 連接器的工作識別碼。 這是用來將上傳至 Microsoft 雲端的 HR 資料與 HR connector 產生關聯。|
-   |`csvFilePath`|這是您在步驟2中建立之 CSV 檔案的本機電腦（您用來執行腳本的檔路徑）。 請嘗試避免檔路徑中的空格;否則請使用單引號。|
+   |`csvFilePath`|這是您在步驟2中建立之 CSV 檔案（儲存于腳本所在的相同系統）的檔案路徑。 請嘗試避免檔路徑中的空格;否則請使用單引號。|
    |||
    
    以下是 HR 連接器腳本語法的範例，其中每個參數都使用實際值：
@@ -177,7 +177,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
 3. 在 [**動作**] 區段中，按一下 [**建立任務**]。
 
-4. 在 [**一般**] 索引標籤上，輸入計畫任務的描述性名稱;例如， **HR Connector Script**。 您也可以新增選用的描述。 
+4. 在 [**一般**] 索引標籤上，輸入計畫任務的描述性名稱;例如， **HR Connector Script**。 您也可以新增選用的描述。
 
 5. 在 [**安全性選項**] 底下，執行下列動作：
 

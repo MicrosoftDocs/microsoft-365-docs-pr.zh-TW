@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: bdf66e4160e324fa3b83cc58214b16fbacf5c233
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: bb35d4ed287e87ba17780c0e7106b837beb9666a
+ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957283"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44170912"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
@@ -56,7 +56,7 @@ ms.locfileid: "43957283"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
-您可以隨時在 SharePoint 中停用 Office 檔案的靈敏度標籤，也可以隨時 OneDrive。
+在 SharePoint 和 OneDrive 中，您可以隨時停用 Office 檔案的靈敏度標籤（隨時[自願退出）](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out) 。
 
 ## <a name="requirements"></a>需求
 
@@ -66,21 +66,13 @@ ms.locfileid: "43957283"
 
 ## <a name="limitations"></a>限制
 
-- 當您在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤時，在 OneDrive Sync 資料夾中的檔案上變更標籤的使用者，可能無法儲存對檔案所做的其他變更。 此案例適用于以加密標示標籤的檔案，也就是從沒有套用加密標籤的標籤所做的標籤變更時。 使用者看到[紅色圓圈時出現白色的交叉圖示錯誤](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)，並且要求您將新的變更儲存為個別的副本。  
-    
-    除了使用者所初始化的標籤變更之外，如果系統管理員變更已套用至使用者同步處理用戶端之檔案的已發行標籤設定，就會發生相同的行為。
-    
-    若要避免這些案例中的工作遺失，請執行下列其中一項動作：
-    - 若要套用標籤，請使用 web 版本的 Office 應用程式。
-    - 套用標籤後關閉檔案，然後重新開啟檔案以進行其他變更。
-
 - SharePoint 不會自動將敏感度標籤套用至您已使用 Azure 資訊保護標籤加密的現有檔案。 相反地，若要在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤之後，取得功能，請完成下列工作：
     
-    1. 確定您已將 Azure 資訊保護標籤遷移至靈敏度標籤，並已從 Microsoft 365 規範中心（或對等標上的標記系統管理中心）發行。
+    1. 確定您已將[Azure 資訊保護標籤遷移](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)至靈敏度標籤，並已從 Microsoft 365 規範中心（或對等標上的標記系統管理中心）[發行](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)。
     
     2. 下載檔案，然後將檔案上傳至 SharePoint。
 
-- 當套用加密的標籤有下列兩種加密設定時，SharePoint 無法處理加密的檔案：
+- 當套用加密的標籤有下列兩種[加密](encryption-sensitivity-labels.md#configure-encryption-settings)設定時，SharePoint 無法處理加密的檔案：
     - **讓使用者在套用標籤**和 [ **Word、PowerPoint 及 Excel 中**的核取方塊時，指定許可權，並選取 [提示使用者指定許可權]。 此設定有時稱為「使用者定義的許可權」。
     - 對**內容到期的使用者存取權**設定為**永不**值以外的值。
     
@@ -91,6 +83,8 @@ ms.locfileid: "43957283"
 - 不支援 Azure 資訊保護檔追蹤網站。
 
 - Office 桌面應用程式和行動應用程式不支援共同撰寫以加密標示的檔案。 這些應用程式會繼續以獨佔編輯模式開啟標籤和加密的檔案。
+
+- 如果系統管理員變更已套用至使用者同步處理用戶端之檔案的已發行標籤設定，則使用者可能無法在其 OneDrive Sync 資料夾中儲存對檔案所做的變更。 此案例適用于以加密標示標籤的檔案，也就是從沒有套用加密標籤的標籤所做的標籤變更時。 使用者看到[紅色圓圈時出現白色的交叉圖示錯誤](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)，並且要求您將新的變更儲存為個別的副本。 相反地，他們可以關閉並重新開啟檔案，或在網頁上使用 Office。
 
 - 如果已標示的檔上傳至 SharePoint，而標籤是使用服務主體名稱中的帳戶來套用加密，則無法在網頁上的 Office 中開啟該檔。 範例案例包括 Microsoft Cloud App Security，以及透過電子郵件傳送給小組的檔案。
 
