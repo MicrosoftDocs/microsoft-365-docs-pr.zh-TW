@@ -21,20 +21,21 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 瞭解如何使用 Windows PowerShell 將部分個人的使用者密碼設為永不過期。
-ms.openlocfilehash: 66c4901d171f5ed2e07d7a9f5cccbf141dc3d04d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3d5d65f687a5ed02e0e20ff77482f7bef5b6b695
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43624031"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173493"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>設定個別使用者的密碼永不過期
 
 ## <a name="set-the-password-expiration-policy-for-your-organization"></a>設定組織的密碼到期原則
 
-1. 在系統管理中心中，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">安全性 & 隱私權</a>] 頁面。
-2. 選取 [**密碼原則**] 旁邊的 [**編輯**]。 
-3. 如果密碼設為永不過期，請將開關設定為 [**關閉**]。 您可以選擇指定密碼到期前的天數。
+1. 在系統管理中心中，移至 [**設定** \> ] <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">[設定] 頁面。</a>
+2. 在 [設定] 頁面的頂端，選取 [**安全性 & 隱私權**]。
+3. 選取 [密碼到期原則]****。 
+4. 如果密碼設為永不過期，請按一下 [**將使用者密碼設為在數天后到期**] 旁邊的核取方塊。 您可以選擇指定密碼到期前的天數。
 
 ## <a name="set-the-password-expiration-policy-for-individual-users"></a>為個別使用者設定密碼到期原則
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解如何設定適用于組織中特定使用者、群組或網域的輸出垃圾郵件原則。
-ms.openlocfilehash: 644ffb51c92f4d71d3ae2cde1eba408289573f48
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: efd3fecc2447435f40e4e20fd958e8f3b2d8e48f
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036785"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173437"
 ---
 # <a name="configure-outbound-spam-filtering"></a>設定輸出垃圾郵件篩選
 
@@ -53,7 +53,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 - 當您從安全性 & 合規性中心移除輸出垃圾郵件原則時，會移除輸出垃圾郵件篩選規則和相關聯的輸出垃圾郵件篩選原則。
 
-在 Exchange Online PowerShell 或獨立 Exchange Online Protection PowerShell 中，輸出垃圾郵件篩選原則和輸出垃圾郵件篩選規則之間的差異很明顯。 您可以使用** \*-HostedContentFilterPolicy** Cmdlet 來管理輸出垃圾郵件篩選原則，也可以使用** \*-disable-hostedcontentfilterrule** Cmdlet 來管理輸出垃圾郵件篩選規則。
+在 Exchange Online PowerShell 或獨立 Exchange Online Protection PowerShell 中，輸出垃圾郵件篩選原則和輸出垃圾郵件篩選規則之間的差異很明顯。 您可以使用** \*-HostedOutboundSpamFilterPolicy** Cmdlet 來管理輸出垃圾郵件篩選原則，也可以使用** \*-HostedOutboundSpamFilterRule** Cmdlet 來管理輸出垃圾郵件篩選規則。
 
 - 在 PowerShell 中，您先建立輸出垃圾郵件篩選原則，然後建立輸出垃圾郵件篩選規則，以識別套用規則的原則。
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 瞭解如何使用自助密碼重設工具來重設密碼。
-ms.openlocfilehash: 9d9a1f97f9f6fc59b54f2f9bdce9c337c7d57b13
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 01099f6f678bbaa3b163ac59e0417614352e0e97
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919432"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173527"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>讓使用者重設自己的密碼
 
@@ -53,7 +53,7 @@ ms.locfileid: "43919432"
 下列步驟會針對公司中的所有人員開啟自助密碼重設。
   
 ::: moniker range="o365-worldwide"
-1.  在系統管理中心中，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">安全性 & 隱私權</a>] 頁面。
+1. 在系統管理中心中，移至 [**設定** \> ] <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">[設定] 頁面。</a>
 
 ::: moniker-end
 
@@ -70,13 +70,13 @@ ms.locfileid: "43919432"
 ::: moniker-end
 
    
-2. 選取 [**自助密碼重設**]，然後選取 [**移至 Azure 入口網站] 連結，以開啟自助密碼重設**。 您將能免費取得 Azure！
+2. 在 [設定] 頁面的頂端，選取 [**安全性 & 隱私權**]。
   
-3. 在左側導覽中選取 [**使用者**]，然後選取 [**密碼重設**]。
+3. 選取 [**自助密碼重設**]。
   
 4. 在 [屬性] 頁面上，選取 [**全部**] 以針對您公司內的每個人啟用它，然後選取 [**儲存**]。
   
-5. 當使用者登入 Office 365 時，系統將提示使用者輸入額外的連絡資訊以協助日後重設使用者的密碼。
+5. 當您的使用者登入時，系統會提示他們輸入其他連絡人資訊，以協助他們日後重設其密碼。
 
 ## <a name="related-articles"></a>相關文章
 

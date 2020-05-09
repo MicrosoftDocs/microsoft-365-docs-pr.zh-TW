@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: '瞭解如何在 Microsoft 365 for business 訂閱中重設使用者的密碼。 '
-ms.openlocfilehash: 14226927680c70035a01d9390f114cb0bfddbf38
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064806"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173515"
 ---
 # <a name="reset-passwords"></a>重設密碼
 
@@ -79,11 +79,11 @@ ms.locfileid: "44064806"
 
 如果您忘記密碼，但是您可以登入 Microsoft 365，請使用下列步驟，例如，您的密碼儲存在您的瀏覽器中： 
     
-1. 在 Microsoft 365 中，選取 [**設定** \> **Office 365** \> **個人資訊**]。 
+1. 在右上角 >**我的帳戶** > **個人資訊**] 中選取您的名稱（圖示）。 
           
-2. 請仔細檢查您的**連絡人詳細資料**和**備用電子郵件**是否正確。 如果不是，請立即變更。 
+2. 在 [**連絡人詳細資料**] 下，仔細檢查您的**備選電子郵件**是否正確，以及您是否已提供行動電話號碼。 如果不是，請立即變更。 
         
-3. 登出 Office 365：在右上角選取您的名稱（如上圖所示，顯示為**Diane** \> **） [登出]**。 
+3. 登出：在右上角選取您的名稱（如**Diane** \> **），請登出。** 
         
 4. 現在重新登入：請輸入您的\>使用者名稱，然後選取 [**忘記密碼** **]** \> 。 
     
@@ -92,6 +92,8 @@ ms.locfileid: "44064806"
 如果您忘記了密碼，而且無法登入： 
     
 - 要求您公司中的另一個全域管理員為您重設您的密碼。
+
+- 請確認您已提供替代連絡人資訊，包括行動電話號碼。 
     
 - 或者，請[致電 Microsoft 支援人員](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。 
     

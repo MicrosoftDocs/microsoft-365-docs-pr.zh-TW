@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
-ms.openlocfilehash: a3a175c3815c6750086526ec92d097fb7cbcefa3
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 6de4c076af5b0c669625cd8edaa367f072c27598
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43922660"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173341"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-office-365"></a>在 Office 365 中指定使用者送出垃圾郵件和網路釣魚郵件的信箱
 
@@ -66,9 +66,9 @@ ms.locfileid: "43922660"
 
      - **Microsoft （建議使用）**：不使用使用者提交信箱（所有報告的郵件都會移至 Microsoft）。
 
-     - **Microsoft 和自訂信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。
+     - **Microsoft 和自訂信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。 不允許通訊群組。
 
-     - **自訂信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。
+     - **自訂信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。 不允許通訊群組。
 
      完成後，請按一下 [**確認**]。
 

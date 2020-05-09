@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 在安全性&amp;與合規性中心尋找及使用 Office 365 的「高級威脅防護」報告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 56e8b79ad85a5801f75a6ed36a58afe58b552527
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c202e7df274e81da5395f7466199d85443361c05
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034959"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173319"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>檢視 Office 365 進階威脅防護的報告
 
@@ -101,7 +101,7 @@ ATP 報告包含下列專案：
 在 [詳細資料] 表格中，您將可以看到有關按一下時間和使用者資訊的詳細資訊。 最後，請記住 URL 保護狀態報表顯示來自 ATP 安全連結功能的保護，所以只有已啟用 ATP 安全連結的客戶才能看到此報告上會反映的資料。
 
 > [!NOTE]
-> 這是一項*保護趨勢報告*，表示資料代表較大資料集的趨勢。 報告無法在這裡即時提供。 若為即時 URL，請按一下 [資料]，然後繼續使用 URL 追蹤。
+> 這是一項*保護趨勢報告*，表示資料代表較大資料集的趨勢。 因此，在這種情況下，不會即時提供匯總視圖中的資料，但 [詳細資料] 表格視圖中的資料則是如此，您可能會看到這兩種視圖之間稍有差異。
 
 ## <a name="atp-file-types-report"></a>ATP 檔案類型報告
 

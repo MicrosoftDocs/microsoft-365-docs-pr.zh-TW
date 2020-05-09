@@ -1,6 +1,6 @@
 ---
-title: Microsoft 安全分數
-description: 說明 microsoft 365 security center 中的 Microsoft Secure 得分、如何計算詳細資料，以及安全性管理員可以預期的情況。
+title: Microsoft Secure 得分（先前的反覆運算）
+description: 說明 microsoft 365 security center 中的 Microsoft 安全分數、如何改善安全性狀態，以及安全性管理員可以預期的狀況。
 keywords: 安全性、惡意程式碼、Microsoft 365、M365、安全分數、安全性中心、改進動作
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -17,14 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9f39878ca56aef3ec8c9d89805a87196c19eb5b8
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 383ef5a0ff61b861bd72dc08d7b974ef98592fcc
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141504"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173389"
 ---
-# <a name="microsoft-secure-score"></a>Microsoft 安全分數
+# <a name="microsoft-secure-score-previous-iteration"></a>Microsoft Secure 得分（先前的反覆運算）
+
+>[!IMPORTANT]
+>此 Microsoft 安全評分的小小部分是在未來數月內，取代新的設計項目和功能。 如果您還沒有看到最新的小小小小，您很快就會這麼做。
+>
+>如果您看到 [歷程記錄] 旁邊的 [**值 & 趨勢**] 索引標籤，表示您在新的小小中。 [移至 Microsoft Secure 得分（新增）](microsoft-secure-score-new.md)
 
 Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目，表示執行的改善動作越多。 遵循安全性分數建議可保護您的組織免受威脅。 透過 Microsoft 365 security center 中的集中式儀表板，組織可以監視及處理其 Microsoft 365 身分識別、資料、應用程式、裝置和基礎結構的安全性。
 
