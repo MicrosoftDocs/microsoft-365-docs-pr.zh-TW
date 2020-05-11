@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 548b331a8ee26434f53b9960fd355feacd45dfde
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: cc6f99dea89a5abc7f4c5bc07187c82d8999a064
+ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066316"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44156878"
 ---
 # <a name="service-organization-controls-soc"></a>服務組織控制 (SOC)
 
@@ -77,19 +77,13 @@ Microsoft 已取得 SOC 1 Type 2、SOC 2 Type 2 和 SOC 3 報告。 通常，SOC
 
 ### <a name="audit-cycle"></a>稽核週期
 
-Microsoft 雲端服務針對 SOC 1 (SSAE18，ISAE 3402) 和 SOC 2 (AT 第 101 節) 標準，至少一年稽核一次。
+Microsoft 雲端服務針對 SOC 1 (SSAE18，ISAE 3402)、SOC 2 (AT 第 101 節) 和 SOC 3 標準，至少一年稽核一次。
 
-#### <a name="azure-cloud-app-security-flow-graph-intune-power-bi-powerapps-stream-and-microsoft-datacenters"></a>Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stream 和 Microsoft 資料中心
+#### <a name="azure-dynamics-365-cloud-app-security-flow-graph-intune-power-bi-powerapps-stream-and-microsoft-datacenters"></a>Azure、Dynamics 365、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stream 和 Microsoft 資料中心
 
-- [Azure 和 Azure Government SOC 1 Type 2 報告](https://go.microsoft.com/fwlink/p/?linkid=2099601)
-- [Azure 和 Azure Government SOC 2 Type 2 報告](https://aka.ms/azuresoc2auditreport)
-- [Azure 和 Azure Government SOC 3 報告](https://aka.ms/azuresoc3auditreport)
-
-#### <a name="dynamics-365"></a>Dynamics 365
-
-- [Dynamics 365 SOC 1 Type 2 報告](https://aka.ms/Dynamics365SOC1AuditReport)
-- [Dynamics 365 SOC 2 AT 101 Type II 稽核報告](https://aka.ms/Dynamics365SOC2AuditReport)
-- [請參閱 Bridge Letter 和其他稽核報告](https://aka.ms/auditreports)
+- [Azure + Dynamics 365 及 Azure + Dynamics 365 Government SOC 1 Type 2 報告](https://aka.ms/azuresoc1auditreport)
+- [Azure + Dynamics 365 及 Azure + Dynamics 365 Government SOC 2 Type 2 報告](https://aka.ms/azuresoc2auditreport)
+- [Azure + Dynamics 365 及 Azure + Dynamics 365 Government SOC 3 報告](https://aka.ms/azuresoc3auditreport)
 
 #### <a name="office-365"></a>Office 365
 
