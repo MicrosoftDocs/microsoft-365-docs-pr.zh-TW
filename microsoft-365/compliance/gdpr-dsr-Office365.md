@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: dbb24e3c7347faf09e5f14d3d28d17b8163ccc2c
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: e4620938a5f7f63d7da09d60d701e81c3bbae0fa
+ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166024"
+ms.locfileid: "44171002"
 ---
 # <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的資料主體要求
 
@@ -586,7 +586,7 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 - 使用者再也無法登入 Office 365 或存取貴組織的任何 Microsoft 資源，例如其商務用 OneDrive 帳戶、SharePoint Online 網站或其 Exchange Online 信箱。
 - 與使用者帳戶相關聯的個人資料 (例如電子郵件地址、別名、電話號碼和郵寄地址) 都會刪除
 - 某些 Office 365 應用程式會移除使用者的相關資訊。 例如，在 Microsoft Flow 中，將從共用流程的擁有者清單中移除已刪除的使用者。
-- 由系統所產生而關於資料主體的記錄，會在刪除使用者帳戶後的 30 天刪除。如需詳細資訊，請參閱[刪除系統所產生的記錄](#deleting-system-generated-logs)一節。
+- 系統產生的關於資料主體之記錄 (可能危及服務安全性或穩定性的資料除外)，會在刪除使用者帳戶 30 天後被刪除。 如需詳細資訊，請參閱[刪除系統產生的記錄](#deleting-system-generated-logs)章節一節。
 
 >[!IMPORTANT]
 >在您刪除使用者帳戶之後，該使用者將無法登入 Office 365，也無法登入先前用於工作或學校帳戶所依賴的任何產品或服務。如果 Microsoft 是資料控制者，則該使用者也無法直接透過 Microsoft 執行個體來發起任何 DSR 要求。如需詳細資訊，請參閱本指南第 4 部分中的[當 Microsoft 是其資料控制者時，使用組織識別碼來驗證產品和服務](#product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller)一節。
@@ -597,7 +597,7 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 如同上節 (刪除個人資料) 中所述的虛刪除和實刪除資料，當您刪除使用者帳戶時，也會有虛刪除和實刪除狀態。
 
 - 一開始刪除使用者帳戶 (透過刪除系統管理中心或 Azure 入口網站中的使用者) 時，會虛刪除使用者帳戶，並移至 Azure 中的資源回收筒，保留最多 30 天。 此時，使用者帳戶還可以還原。
-- 如果永久刪除使用者帳戶，則會實刪除使用者帳戶，並從 Azure 中的資源回收筒移除使用者帳戶。此時，使用者帳戶就無法還原，與使用者帳戶相關聯的任何資料也會從 Microsoft 雲端永久移除。在實刪除使用者帳戶之後，由系統所產生而關於資料主體的記錄也將刪除。
+- 如果永久刪除使用者帳戶，則會實刪除使用者帳戶，並從 Azure 中的資源回收筒移除之。此時，使用者帳戶無法還原，與使用者帳戶相關聯的任何資料也會從 Microsoft 雲端永久移除。實刪除使用者帳戶也會刪除系統產生的關於資料主體之記錄 (可能危及服務安全性或穩定性的資料除外)。
 
 以下是從組織中刪除使用者的高層級程序。
 
@@ -1598,7 +1598,7 @@ Microsoft 提供直接透過既有的應用程式開發介面 (API) 或特定服
 
 若要透過存取要求來刪除系統產生的記錄，您必須將使用者從該服務中移除，並永久刪除其 Azure Active Directory 帳戶。如需永久刪除使用者的相關指示，請參閱本指南中[刪除使用者](#deleting-a-user)一節。請務必注意，一旦開始永久刪除使用者帳戶即無法復原。
 
-永久刪除使用者帳戶會在 30 天內將使用者資料，從幾乎所有 Office 365 服務的系統產生的記錄中移除。 有一個例外，就是 Exchange Online，其永久刪除使用者帳戶所需的時間超過 30 天。 有鑑於 Exchange Online 內容的重要本質，並防止資料意外流失， 此系統已經過設計，在永久刪除了使用者帳戶之後，故意將處於保留狀態的資料最多保留 60 天。 若要在 30 天時間範圍內永久刪除使用者的 Exchange Online 資料，請永久刪除 Azure Active Directory 中的使用者帳戶，然後連絡 [Microsoft 支援](https://support.microsoft.com/)，並要求在排定的刪除程序外手動移除使用者的 Exchange Online 資料。 如需詳細資訊，請參閱本指南先前所述的[移除 Exchange Online 資料](#removing-exchange-online-data)。
+永久刪除使用者帳戶會在 30 天內將使用者資料，從幾乎所有 Office 365 服務產生的系統記錄中移除 (可能危及服務安全性或穩定性的資料除外)。 有一個例外，就是 Exchange Online，其永久刪除使用者帳戶所需的時間超過 30 天。 有鑑於 Exchange Online 內容的重要本質，並防止資料意外流失， 此系統已經過設計，在永久刪除了使用者帳戶之後，故意將處於保留狀態的資料最多保留 60 天。 若要在 30 天時間範圍內永久刪除使用者的 Exchange Online 資料，請永久刪除 Azure Active Directory 中的使用者帳戶，然後連絡 [Microsoft 支援](https://support.microsoft.com/)，並要求在排定的刪除程序外手動移除使用者的 Exchange Online 資料。 如需詳細資訊，請參閱本指南先前所述的[移除 Exchange Online 資料](#removing-exchange-online-data)。
 
 刪除使用者帳戶不會移除系統為 Yammer 和 Kaizala 所產生的記錄。若要從這些應用程式中移除資料，請參閱以下其中一項：
 

@@ -180,7 +180,9 @@
                       href: mtp/custom-detection-rules.md
             - name: 安全分數
               items:
-                - name: 安全分數
+                - name: 安全分數 (新)
+                  href: mtp/microsoft-secure-score-new.md
+                - name: 安全分數 (上一次反覆運算)
                   href: mtp/microsoft-secure-score.md
                 - name: 安全分數 (預覽)
                   href: mtp/microsoft-secure-score-preview.md

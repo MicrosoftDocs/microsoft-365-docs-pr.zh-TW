@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解 Exchange Online Protection 新增至郵件的標題欄位，以提供有關該郵件及其處理方式的資訊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 035b081980e52d1e68d21e6227636ed78697b4cc
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 7f86b5ffa02b6f84c10ab2300f913b5f03726713
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033747"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173401"
 ---
 # <a name="anti-spam-message-headers"></a>反垃圾郵件訊息標頭
 
