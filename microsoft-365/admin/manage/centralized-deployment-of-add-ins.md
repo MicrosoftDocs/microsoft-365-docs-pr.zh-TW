@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 判斷您的承租人和使用者是否符合需求，讓您可以使用集中式部署來部署 Office 增益集。
-ms.openlocfilehash: 0fcdb9901c708842470f72106ab4eea20ff8b17e
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: bd1c9ca0a034494f6556f0badca66284c3d9e1de
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011720"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214249"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>判斷集中式部署的增益集是否適用于您的組織
 
@@ -75,9 +75,9 @@ ms.locfileid: "44011720"
 
 偵測使用者是否已安裝 Microsoft 365 應用程式並最近使用它的最簡單方法，就是使用 microsoft Office 啟用報告，該報告可在 Microsoft 365 系統管理中心中取得。 報告提供過去7天、30天、90天或180天內，已為企業版啟用 Microsoft 365 應用程式的所有使用者清單。 對於集中式部署用途而言，Windows 或 Mac 的電腦版啟用數是報告中的重要欄。 您可以將報告匯出到 Excel。 如需報告的詳細資訊，請參閱系統[管理中心的 microsoft 365 報告-Microsoft Office](../activity-reports/microsoft-office-activations.md)啟用。
   
-如果您不想使用啟用報告，您可以要求使用者在其電腦上開啟 Office 應用程式（如 Word），然後選擇 [**檔** \> **帳戶**]。 在 [**產品資訊**] 底下，您應該會看到 [**訂閱產品**] 和 [ **microsoft microsoft 365 應用程式適用于企業**]，如下列影像所示。
+如果您不想使用啟用報告，您可以要求使用者在其電腦上開啟 Office 應用程式（如 Word），然後選擇 [**檔** \> **帳戶**]。 在 [**產品資訊**] 底下，您應該會看到 [**訂閱產品**] 和 [ **Microsoft 365 for enterprise**]，如下列影像所示。
 
-![Office 應用程式中的產品資訊](../../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
+![Office 應用程式中的產品資訊](../../media/product-information-microsoft-365-enterprise.png)
   
 如需 Microsoft 365 應用程式 enterprise 的說明，請參閱適用于[企業的 microsoft 365 應用程式疑難排解秘訣](https://go.microsoft.com/fwlink/p/?linkid=846339)。
 
@@ -108,7 +108,7 @@ Import-Module O365CompatibilityChecker
 ```powershell
 Invoke-CompatibilityCheck
 ```
-   這會提示您*_TenantDomain_* （例如， *TailspinToysIncorporated）。</span>com*）和*_TenantAdmin_* 認證（使用您的全域系統管理員認證），然後要求同意。
+   這會提示您*_TenantDomain_* （例如， *TailspinToysIncorporated）。 </span>com*）和*_TenantAdmin_* 認證（使用您的全域系統管理員認證），然後要求同意。
     
 > [!NOTE]
 > 根據您租用戶中的使用者人數而定，檢查程式可能需要花費幾分鐘至幾小時。 
@@ -161,7 +161,7 @@ You can do the opposite query by resolving the group to see if it's a member of 
   
 |**平台**|**偵錯資訊**|
 |:-----|:-----|
-|辦公室  <br/> | Charles/Fiddler 記錄檔  <br/>  租用戶識別碼 ( [了解做法](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b.aspx))  <br/>  CorrelationID。 查看其中一個 office 頁面的來源，並尋找 [相關性識別碼] 值並傳送給支援：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|辦公室  <br/> | Charles/Fiddler 記錄檔  <br/>  租用戶識別碼 ( [了解做法](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationID。 查看其中一個 office 頁面的來源，並尋找 [相關性識別碼] 值並傳送給支援：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |豐富型用戶端 (Windows、Mac)  <br/> | Charles/Fiddler 記錄檔  <br/>  用戶端應用程式的組建編號（最好是檔案 **/帳戶**的螢幕擷取畫面）  <br/> |
    
 
