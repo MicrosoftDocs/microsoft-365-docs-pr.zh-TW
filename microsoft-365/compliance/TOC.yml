@@ -247,15 +247,15 @@
       items:
         - name: 封存協力廠商資料概觀
           href: archiving-third-party-data.md
-        - name: 設定連接器來封存 Facebook 資料
+        - name: 封存 Facebook 資料 (預覽)
           href: archive-facebook-data-with-sample-connector.md
-        - name: 設定連接器來封存 Twitter 資料
+        - name: 封存 Twitter 資料 (預覽)
           href: archive-twitter-data-with-sample-connector.md
-        - name: 設定連接器來封存 LinkedIn 資料
+        - name: 封存 LinkedIn 資料
           href: archive-linkedin-data.md
-        - name: 設定連接器來封存 Instant Bloomberg 資料
+        - name: 封存 Instant Bloomberg 資料
           href: archive-instant-bloomberg-data.md
-        - name: 設定連接器以匯入人力資源資料
+        - name: 匯入人力資源資料 (預覽)
           href: import-hr-data.md
         - name: 與合作夥伴配合來封存第三方資料
           href: work-with-partner-to-archive-third-party-data.md
@@ -313,7 +313,7 @@
           href: view-the-data-governance-reports.md
     - name: 資料控管的其他資訊
       items:
-        - name: 觀看 Microsoft 資料控管小組的影片
+        - name: 觀看 Microsoft 資料控管團隊的影片
           href: 'https://go.microsoft.com/fwlink/?linkid=867039'
     - name: 記錄管理
       items:
