@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 深入瞭解 Office 365 高級威脅防護方案2中的自動化調查和回應功能。
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 3f8aa761207be61f78eb5f9b5140439c86455bf3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d62d24a8f4cbd0541099ece91e46a23d3fbc786c
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035613"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208908"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Microsoft 365 中的自動化調查和回應（AIR）綜述
 
@@ -50,7 +50,7 @@ ms.locfileid: "44035613"
 > [!NOTE]
 > 以星號（*）標示的警示會在安全性 & 合規性中心內的各項警示原則中指派*資訊*嚴重性，並關閉電子郵件通知。 您可以透過[報警原則](../../compliance/alert-policies.md#alert-policy-settings)設定開啟電子郵件通知。 使用雜湊（#）標示的警示，通常是與公共預覽行動手冊相關聯的警示。
 
-若要在安全性 & 規範中心中查看提醒，請選擇 [**提醒** > ] [**查看提醒**]。 選取警示以查看其詳細資料，然後從那裡使用「**查看調查**」連結，以移至對應的[調查](air-view-investigation-results.md#investigation-graph)。  
+若要在安全性 & 規範中心中查看提醒，請選擇 [**提醒**] [  >  **查看提醒**]。 選取警示以查看其詳細資料，然後從那裡使用「**查看調查**」連結，以移至對應的[調查](air-view-investigation-results.md#investigation-graph)。  
 
 > [!NOTE]
 > 預設會在提醒視圖中隱藏資訊警示。 若要查看，請變更警示篩選，以包含資訊性警示。
@@ -68,6 +68,7 @@ ms.locfileid: "44035613"
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>安全性行動行動是分階段推出
 
 在飛機的一部分中，安全性行動行動是在階段中推出。 階段1現在已可供使用，且包含數個行動手冊，可提供安全性管理員可審查及核准的動作建議：
+
 - 使用者報告的網路釣魚郵件
 - URL 按一下判定變更
 - 惡意程式碼偵測到傳遞後（惡意程式碼 ZAP）
@@ -76,6 +77,7 @@ ms.locfileid: "44035613"
 階段1也包含對管理員觸發電子郵件調查的支援（使用[威脅瀏覽器](threat-explorer.md)）。
 
 第2階段現在的進度是**公開預覽**中的下列行動手冊，提供動作和 aiding 安全性管理員調查問題的建議：
+
 - 使用者舉報為已遭破壞（公開預覽）
 
 進一步的行動手冊將在完成後發行。 請造訪[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)，以查看已計畫及即將推出的內容。
@@ -83,6 +85,7 @@ ms.locfileid: "44035613"
 ### <a name="playbooks-include-investigation-and-recommendations"></a>行動行動包括調查和建議
 
 在 AIR 中，每個安全性行動手冊包括： 
+
 - 電子郵件實體的根調查（檔案、URLs、收件者、IP 位址等）
 - 進一步搜尋組織所收到的類似電子郵件 
 - 識別和關聯其他潛在威脅所採取的步驟，以及 
@@ -95,6 +98,7 @@ ms.locfileid: "44035613"
 假設組織中的使用者收到他們認為是網路釣魚企圖的電子郵件。 使用者在報告這類訊息時，會使用[報告訊息增益集](enable-the-report-message-add-in.md)將其傳送至 Microsoft 進行分析。 提交也會傳送給您的系統，而且會顯示在**提交**視圖（先前稱為**使用者報告**的查看）的 [Explorer] 中。 此外，使用者報告的訊息現在會觸發以系統為基礎的資訊性警示，這會自動啟動調查行動手冊。
 
 在根調查階段中，會評估電子郵件的各個層面。 包括：
+
 - 決定可能的威脅類型;
 - 誰送出;
 - 電子郵件傳送來源的位置（傳送基礎結構）;
@@ -110,8 +114,8 @@ ms.locfileid: "44035613"
 - 類似的電子郵件會透過電子郵件聚簇搜尋加以識別。
 - 此信號是與其他平臺（例如[Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)）共用。
 - 決定是否任何使用者已透過可疑電子郵件訊息中的任何惡意連結進行按一下。
-- 在 Exchange Online Protection （[EOP](exchange-online-protection-eop.md)）和 Office 365 高級威脅防護（[ATP](office-365-atp.md)）間進行檢查，以查看使用者是否有任何其他類似的訊息。
-- 會執行檢查以查看使用者是否遭到破壞。 這種檢查會利用跨 Office 365、 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)和[Azure Active Directory](https://docs.microsoft.com/azure/active-directory)的信號，以關聯任何相關的使用者活動異常。 
+- 在 Exchange Online Protection （[EOP](exchange-online-protection-overview.md)）和 Office 365 高級威脅防護（[ATP](office-365-atp.md)）間進行檢查，以查看使用者是否有任何其他類似的訊息。
+- 會執行檢查以查看使用者是否遭到破壞。 這種檢查會利用跨 Office 365、 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)和[Azure Active Directory](https://docs.microsoft.com/azure/active-directory)的信號，以關聯任何相關的使用者活動異常。
 
 在搜尋階段中，會將風險和威脅指派給各種搜尋步驟。 
 
@@ -136,4 +140,3 @@ ms.locfileid: "44035613"
 - [開始使用 AIR](office-365-air.md)
 
 - [造訪 Microsoft 365 藍圖，查看即將推出的功能](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-

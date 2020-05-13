@@ -17,17 +17,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您將瞭解如何設定適用于組織中特定使用者、群組或網域的輸出垃圾郵件原則。
-ms.openlocfilehash: efd3fecc2447435f40e4e20fd958e8f3b2d8e48f
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+description: 系統管理員可以瞭解如何在 Exchange Online Protection （EOP）中查看、建立、修改和刪除輸出垃圾郵件原則。
+ms.openlocfilehash: 9970956c2d05a47032cd47b867b8b4e9e92abc29
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173437"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209568"
 ---
-# <a name="configure-outbound-spam-filtering"></a>設定輸出垃圾郵件篩選
+# <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中設定輸出垃圾郵件篩選
 
-如果您是使用 Exchange Online 中的信箱或獨立 Exchange Online Protection （EOP）客戶但沒有 Exchange Online 信箱的 Microsoft 365 客戶，系統會自動檢查透過 EOP 傳送的輸出電子郵件是否有垃圾郵件和不尋常的傳送活動。
+在未使用 Exchange online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）組織中使用信箱的 Microsoft 365 組織中，會自動檢查透過 EOP 傳送的輸出電子郵件是否有垃圾郵件和不尋常的傳送活動。
 
 組織中使用者的外寄垃圾郵件通常表示已遭破壞的帳戶。 可疑的輸出郵件會標示為垃圾郵件（不論垃圾郵件信賴等級或 SCL 為何），並透過[高風險傳遞集](high-risk-delivery-pool-for-outbound-messages.md)區路由傳送，以協助保護服務的信譽（也就是說，保留 Microsoft 365 來源電子郵件伺服器，而非 IP 封鎖清單）。 系統管理員會自動收到可疑的輸出電子郵件活動，並透過[警示原則](../../compliance/alert-policies.md)封鎖使用者。
 
@@ -35,7 +35,7 @@ EOP 使用輸出垃圾郵件原則做為組織的整體防禦垃圾郵件的一�
 
 系統管理員可以查看、編輯和設定（但不能刪除）預設輸出垃圾郵件原則。 為了獲得更多細微性，您也可以建立適用于組織中特定使用者、群組或網域的自訂輸出垃圾郵件原則。 自訂原則一律優先於預設原則，但您可以變更自訂原則的優先順序 (執行順序)。
 
-您可以在安全性 & 合規性中心或 PowerShell （Microsoft 365 客戶的 Exchange Online PowerShell）中設定輸出垃圾郵件原則;Exchange Online Protection PowerShell 適用于獨立 EOP 客戶）。
+您可以在 Security & 合規性中心或 PowerShell （Exchange Online 365 PowerShell 中，使用 Exchange Online 中的信箱來設定外寄垃圾郵件原則; 獨立 EOP PowerShell 沒有 Exchange Online 信箱的組織）設定輸出垃圾郵件原則。
 
 ## <a name="outbound-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>安全性 & 規範中心與 Exchange online PowerShell 或 Exchange Online Protection 中的輸出垃圾郵件原則 PowerShell
 
@@ -53,7 +53,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 - 當您從安全性 & 合規性中心移除輸出垃圾郵件原則時，會移除輸出垃圾郵件篩選規則和相關聯的輸出垃圾郵件篩選原則。
 
-在 Exchange Online PowerShell 或獨立 Exchange Online Protection PowerShell 中，輸出垃圾郵件篩選原則和輸出垃圾郵件篩選規則之間的差異很明顯。 您可以使用** \*-HostedOutboundSpamFilterPolicy** Cmdlet 來管理輸出垃圾郵件篩選原則，也可以使用** \*-HostedOutboundSpamFilterRule** Cmdlet 來管理輸出垃圾郵件篩選規則。
+在 Exchange Online PowerShell 或獨立 Exchange Online Protection PowerShell 中，輸出垃圾郵件篩選原則和輸出垃圾郵件篩選規則之間的差異很明顯。 您可以使用** \* -HostedOutboundSpamFilterPolicy** Cmdlet 來管理輸出垃圾郵件篩選原則，也可以使用** \* -HostedOutboundSpamFilterRule** Cmdlet 來管理輸出垃圾郵件篩選規則。
 
 - 在 PowerShell 中，您先建立輸出垃圾郵件篩選原則，然後建立輸出垃圾郵件篩選規則，以識別套用規則的原則。
 
@@ -113,7 +113,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
         視需要重複這些步驟。
 
-        您新增的收件者會出現在飛入的 [**收件者清單**] 區段中。 若要刪除收件者![，請](../../media/scc-remove-icon.png)按一下 [移除] 按鈕。
+        您新增的收件者會出現在飛入的 [**收件者清單**] 區段中。 若要刪除收件者，請按一下 [ ![ 移除] 按鈕 ](../../media/scc-remove-icon.png) 。
 
      e. 完成後，按一下 [儲存]****。
 
@@ -136,7 +136,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
         視需要重複這些步驟。
 
-        您新增的收件者會出現在飛入的 [**收件者清單**] 區段中。 若要刪除收件者![，請](../../media/scc-remove-icon.png)按一下 [移除] 按鈕。
+        您新增的收件者會出現在飛入的 [**收件者清單**] 區段中。 若要刪除收件者，請按一下 [ ![ 移除] 按鈕 ](../../media/scc-remove-icon.png) 。
 
      e. 完成後，按一下 [儲存]****。
 
@@ -167,17 +167,17 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
        - 在下一天之後，使用者將無法再傳送任何郵件到以 UTC 時間為基礎。 系統管理員無法覆寫此區塊。
 
-     - **限制使用者傳送郵件**：已傳送電子郵件通知，使用者會新增至安全性 & 合規性中心內的 **[受限制的使用者]<https://sip.protection.office.com/restrictedusers> **入口網站，直到系統管理員將其從**受限使用者**入口網站中移除之後，使用者才會傳送電子郵件。系統管理員從清單中移除使用者後，該天的使用者將不會受到限制。 如需相關指示，請參閱[在傳送垃圾郵件後移除受限使用者入口網站中的使用者](removing-user-from-restricted-users-portal-after-spam.md)。
+     - **限制使用者傳送郵件**：已傳送電子郵件通知，使用者會新增至安全性 & 合規性中心內的 **[受限制的使用者] <https://sip.protection.office.com/restrictedusers> **入口網站，直到系統管理員將其從**受限使用者**入口網站中移除之後，使用者才會傳送電子郵件。系統管理員從清單中移除使用者後，該天的使用者將不會受到限制。 如需相關指示，請參閱[在傳送垃圾郵件後移除受限使用者入口網站中的使用者](removing-user-from-restricted-users-portal-after-spam.md)。
 
      - **無動作，只發出警示**：已傳送電子郵件通知。
 
 6. 必備展開 [套用**至**] 區段，識別套用原則的內部寄件者。
 
-    您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同狀況或例外狀況或邏輯的多個值（例如， _ \<sender1\> _或_ \<sender2\>_）。 不同的條件或例外情況_ \<使用和邏輯（例如，\> _ _ \<group\>1 的成員_）。
+    您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同狀況或例外狀況或邏輯的多個值（例如， _ \< sender1 \> _或_ \< sender2 \> _）。 不同的條件或例外情況使用和邏輯（例如_ \< ， \> _ _ \< group 1 \> 的成員_）。
 
     最簡單的方法是按一下 [新增條件]**** 三次，查看所有可用的條件。 您可以按一下 ![移除按鈕](../../media/scc-remove-icon.png)移除您不想要設定的條件。
 
-    - **寄件者網域為**：指定 Office 365 中一或多個已設定公認的網域中的寄件者。 按一下 [新增標籤]**** 方塊，可查看並選取網域。 如果有不止一個網域，再次按一下 [新增標籤]**** 方塊可選取其他網域。
+    - **寄件者網域為**：指定組織中一或多個已設定公認的網域中的寄件者。 按一下 [新增標籤]**** 方塊，可查看並選取網域。 如果有不止一個網域，再次按一下 [新增標籤]**** 方塊可選取其他網域。
 
     - **寄件者為**：指定組織中的一或多個使用者。 在 [新增標籤]**** 內按一下，然後開始輸入以篩選清單。 再次按一下 [**新增標記**] 方塊，以選取其他寄件者。
 
@@ -191,7 +191,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 1. 在安全性與合規性中心，移至 [威脅管理]**** \> [原則]**** \> [反垃圾郵件]****。
 
-2. 在 [**反垃圾郵件設定**] 頁面上![，按一下](../../media/scc-expand-icon.png) [展開圖示] 以展開輸出垃圾郵件原則：
+2. 在 [**反垃圾郵件設定**] 頁面上，按一下 [ ![ 展開圖示] ](../../media/scc-expand-icon.png) 以展開輸出垃圾郵件原則：
 
    - 名為 [**輸出垃圾郵件篩選原則**] 的預設原則。
 
@@ -203,7 +203,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 1. 在安全性與合規性中心，移至 [威脅管理]**** \> [原則]**** \> [反垃圾郵件]****。
 
-2. 在 [**反垃圾郵件設定**] 頁面上![，按一下](../../media/scc-expand-icon.png) [展開圖示] 以展開輸出垃圾郵件原則：
+2. 在 [**反垃圾郵件設定**] 頁面上，按一下 [ ![ 展開圖示] ](../../media/scc-expand-icon.png) 以展開輸出垃圾郵件原則：
 
    - 名為 [**輸出垃圾郵件篩選原則**] 的預設原則。
 
@@ -221,7 +221,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 1. 在安全性與合規性中心，移至 [威脅管理]**** \> [原則]**** \> [反垃圾郵件]****。
 
-2. 在 [**反垃圾郵件設定**] 頁面上![，按一下](../../media/scc-expand-icon.png) [展開圖示]，展開您建立的自訂原則（[**類型**] 欄中的值為 [**自訂輸出垃圾郵件原則**]）。
+2. 在 [**反垃圾郵件設定**] 頁面上，按一下 [ ![ 展開圖示] ](../../media/scc-expand-icon.png) ，展開您建立的自訂原則（[**類型**] 欄中的值為 [**自訂輸出垃圾郵件原則**]）。
 
 3. 在隨即出現的展開的原則詳細資料中，請注意**開啟**資料行的值。
 
@@ -243,11 +243,11 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 2. 在 [**反垃圾郵件設定**] 頁面上，尋找 [**類型**] 欄中的值為 [**自訂輸出垃圾郵件原則**] 的原則。 請注意 [優先順序]**** 資料行中的值：
 
-   - 具有最高優先順序的自訂輸出垃圾郵件原則， ![具有值向](../../media/ITPro-EAC-DownArrowIcon.png)中箭號圖示**0**。
+   - 具有最高優先順序的自訂輸出垃圾郵件原則，具有值 ![ 向中箭號圖示 ](../../media/ITPro-EAC-DownArrowIcon.png) **0**。
 
-   - 具有最低優先順序的自訂輸出垃圾郵件原則具有值![向上箭號](../../media/ITPro-EAC-UpArrowIcon.png) **n** （ ![例如向上箭號圖示](../../media/ITPro-EAC-UpArrowIcon.png) **3**）。
+   - 具有最低優先順序的自訂輸出垃圾郵件原則具有值 ![ 向上箭號圖示 ](../../media/ITPro-EAC-UpArrowIcon.png) **n** （例如 ![ 向上箭號圖示 ](../../media/ITPro-EAC-UpArrowIcon.png) **3**）。
 
-   - 如果您有三個或多個自訂輸出垃圾郵件原則，則最高和最低優先順序![之間的原則](../../media/ITPro-EAC-UpArrowIcon.png)![會具有值](../../media/ITPro-EAC-DownArrowIcon.png)向上箭號圖示向下箭號](../../media/ITPro-EAC-UpArrowIcon.png)![圖示**n** （例如， ![向上鍵圖示向下箭號圖示](../../media/ITPro-EAC-DownArrowIcon.png) **2**）。
+   - 如果您有三個或多個自訂輸出垃圾郵件原則，則最高和最低優先順序之間的原則會具有值向上箭號 ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ 圖示向下箭號圖示 ](../../media/ITPro-EAC-DownArrowIcon.png) **n** （例如， ![ 向上鍵圖示 ](../../media/ITPro-EAC-UpArrowIcon.png)![ 向下箭號圖示 ](../../media/ITPro-EAC-DownArrowIcon.png) **2**）。
 
 3. 按一下 ![向上箭號圖示](../../media/ITPro-EAC-UpArrowIcon.png) 或 ![向下箭號圖示](../../media/ITPro-EAC-DownArrowIcon.png) 在 [優先順序] 清單中，將自訂的輸出垃圾郵件原則上移或下移。
 
@@ -255,7 +255,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 1. 在安全性與合規性中心，移至 [威脅管理]**** \> [原則]**** \> [反垃圾郵件]****。
 
-2. 在 [**反垃圾郵件設定**] 頁面上![，按一下](../../media/scc-expand-icon.png) [展開圖示] 以展開您要刪除的自訂原則（[**類型**] 欄是**自訂輸出垃圾郵件原則**）。
+2. 在 [**反垃圾郵件設定**] 頁面上，按一下 [ ![ 展開圖示] ](../../media/scc-expand-icon.png) 以展開您要刪除的自訂原則（[**類型**] 欄是**自訂輸出垃圾郵件原則**）。
 
 3. 在隨即出現的展開原則詳細資料中，按一下 [刪除原則]****。
 
@@ -279,9 +279,9 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 - 您可以在 PowerShell 中的新外寄垃圾郵件篩選原則上設定下列設定，而這些原則在安全性 & 規範中心內無法使用，直到您建立原則為止：
 
-  - 建立新原則為停用（在**HostedOutboundSpamFilterRule** Cmdlet 上_啟用_ `$false` ）。
+  - 建立新原則為停用（_ _ `$false` 在**HostedOutboundSpamFilterRule** Cmdlet 上啟用）。
 
-  - 設定在**HostedOutboundSpamFilterRule 指令程式**建立時的原則優先順序（_優先權_ _ \<編號\>_）。
+  - 設定在**HostedOutboundSpamFilterRule 指令程式**建立時的原則優先順序（_優先權_ _ \< \> 編號_）。
 
 - 在您將原則指派給垃圾郵件篩選規則之前，您在 PowerShell 中所建立的新輸出垃圾郵件篩選原則不會顯示在安全性 & 規範中心。
 

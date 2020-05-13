@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 設計獨立 SharePoint Online 小組網站，包括決定許可權等級、將許可權指派給具有存取群組的使用者，以及嵌套的 Azure AD 群組。
-ms.openlocfilehash: 4663a0b9710fc05d0b063a3100d3b5ac223a2161
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 821e15a05bc80e3795f9e18d4457416baf7145b7
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034837"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209508"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>設計獨立的 SharePoint Online 小組網站
 
@@ -59,15 +59,15 @@ ms.locfileid: "44034837"
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>階段2：將許可權指派給具有存取群組的使用者
 
-您可以將許可權指派給使用者，方法是將其使用者帳戶（或使用者帳戶所屬的 Microsoft 365 或 Azure AD 群組）新增至 SharePoint 群組。 一旦新增，使用者帳戶（透過 Microsoft 365 或 Azure AD 群組中的成員資格直接或間接）會被指派與 SharePoint 群組相關聯的許可權等級。
+您可以將許可權指派給使用者，方法是將其使用者帳戶或使用者帳戶所屬的 Microsoft 365 或 Azure AD 群組新增至 SharePoint 群組。 一旦新增，使用者帳戶（透過 Microsoft 365 或 Azure AD 群組中的成員資格直接或間接）會被指派與 SharePoint 群組相關聯的許可權等級。
   
 使用預設的 SharePoint 群組為範例：
   
-- 可包含使用者帳戶和群組的** \<網站名稱> 成員**SharePoint 群組的成員會被指派 [**編輯**] 許可權等級。
+- 可包含使用者帳戶和群組的** \< 網站名稱> 成員**SharePoint 群組的成員會被指派 [**編輯**] 許可權等級。
     
-- **網站名稱的成員> 訪客 SharePoint 群組，其中可以包含使用者帳戶和群組，都已獲指派「讀取」許可權等級。 \< ** **Read**
+- ** \< 網站名稱的成員> 訪客**SharePoint 群組，其中可以包含使用者帳戶和群組，都已獲指派「**讀取**」許可權等級。
     
-- 網站名稱> 擁有者 SharePoint 群組的成員，可包含使用者帳戶和群組，都已獲指派「**完全控制**」許可權層級。 ** \< **
+- ** \< 網站名稱> 擁有**者 SharePoint 群組的成員，可包含使用者帳戶和群組，都已獲指派「**完全控制**」許可權層級。
     
  **最佳作法：** 雖然您可以透過個別使用者帳戶管理許可權，但建議您改用單一 Azure AD 群組（稱為存取群組）。 這可簡化透過存取群組成員資格的版權管理，而不是管理每個 SharePoint 群組的使用者帳戶清單。
   
@@ -99,9 +99,9 @@ Microsoft 365 的 Azure AD 群組不同于 Microsoft 365 群組。 Azure AD 群�
   
 當您設計三個訪問群組時，請記住下列事項：
   
-- 在 [ ** \<網站名稱]> Admins** access 群組中應該只有少數幾個成員，對應于管理小組網站的少數 SharePoint Online 系統管理員。
+- 在 [ ** \< 網站名稱]> Admins** access 群組中應該只有少數幾個成員，對應于管理小組網站的少數 SharePoint Online 系統管理員。
     
-- 您的網站成員大部分位於** \<網站名稱> 成員**或** \<網站名稱> 查看**器存取群組。 因為** \<網站名稱> 成員**存取群組中的網站成員具備刪除或修改網站中資源的能力，所以請謹慎考慮其成員資格。 若有疑問，請將網站成員新增至** \<網站名稱> 查看**器存取群組。
+- 您的網站成員大部分位於** \< 網站名稱> 成員**或** \< 網站名稱> 查看**器存取群組。 因為** \< 網站名稱> 成員**存取群組中的網站成員具備刪除或修改網站中資源的能力，所以請謹慎考慮其成員資格。 若有疑問，請將網站成員新增至** \< 網站名稱> 查看**器存取群組。
     
 以下是名為 ProjectX 之隔離網站的 SharePoint 群組和存取群組的範例。
   

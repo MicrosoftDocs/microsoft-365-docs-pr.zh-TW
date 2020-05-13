@@ -26,12 +26,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，您將瞭解如何使用安全連結來保護您的組織免受網路釣魚和其他攻擊。
-ms.openlocfilehash: 5f166848fe5c2beb46fedfaa33394e1e73c94a10
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 9f6222889d213c25c7411e39f0714ccf09cfe0d9
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045246"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208944"
 ---
 # <a name="atp-safe-links"></a>ATP 安全連結
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 瞭解如何透過 Office 365 的安全性 & 規範中心內的 PowerShell 腳本，以自動化內容搜尋工作，例如建立搜尋及執行報告。
-ms.openlocfilehash: 1967d17ab24c991d38a7c5881d3cff87750084c3
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 2832b533c6350cdc2ab2852b6dd0d592603af46e
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166074"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208137"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>建立、報告及刪除多個內容搜尋
 
@@ -64,7 +64,7 @@ ms.locfileid: "44166074"
     |**參數**|**描述**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |使用者信箱的 SMTP 位址。  <br/> |
-    | `SharePointLocation` <br/> |使用者的商務用網站 OneDrive URL，或組織中任何網站的 URL。 若為商務用網站的 OneDrive URL，請使用此格式` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `：。 例如，  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`。  <br/> |
+    | `SharePointLocation` <br/> |使用者的商務用網站 OneDrive URL，或組織中任何網站的 URL。 若為商務用網站的 OneDrive URL，請使用此格式： ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com ` 。 例如，  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`。  <br/> |
     | `ContentMatchQuery` <br/> |搜尋的搜尋查詢。 如需建立搜尋查詢的詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。  <br/> |
     | `StartDate` <br/> |若為電子郵件，收件者或傳送者傳送郵件的日期或後的日期。 對於商務網站 SharePoint 或 OneDrive 的檔，上次修改檔的日期。  <br/> |
     | `EndDate` <br/> |電子郵件，由使用者傳送的郵件傳送日期或之前的日期。 對於商務網站 SharePoint 或 OneDrive 的檔，上次修改檔的日期。  <br/> |
@@ -72,24 +72,10 @@ ms.locfileid: "44166074"
 3. 將 Excel 檔案當做 CSV 檔案儲存至本機電腦上的資料夾。 您在步驟3中建立的腳本會使用此 CSV 檔案中的資訊來建立搜尋。 
   
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步驟 2︰連線至安全性與合規性中心 PowerShell
-
-下一步是連接至組織的安全性 & 規範中心 PowerShell。
   
-1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `ConnectSCC.ps1`。 將檔案儲存到您在步驟1中儲存 CSV 檔案的相同資料夾。
-    
-    ```powershell
-    # Get login credentials 
-    $UserCredential = Get-Credential 
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
-    Import-PSSession $Session -AllowClobber -DisableNameChecking 
-    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
-    ```
-
-2. 在您的本機電腦上，開啟 [Windows PowerShell]，移至您在上一個步驟中建立的腳本所在的資料夾，然後執行腳本;例如：
-    
-    ```powershell
-    .\ConnectSCC.ps1
-    ```
+下一步是將組織連線至安全性與合規性中心 PowerShell。 如需逐步指示，請參閱[連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+  
+如果您的 Microsoft 365 帳戶使用多重要素驗證 (MFA) 或同盟驗證，您就無法使用前個主題中的指示來連線至安全性與合規性中心 PowerShell。 您應改為參閱[使用多重要素驗證連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)中的指示。
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>步驟3：執行腳本以建立及啟動搜尋
 
@@ -97,11 +83,11 @@ ms.locfileid: "44166074"
   
 - **搜尋群組識別碼**-此名稱提供一種簡單的方法，可組織從 CSV 檔案建立的搜尋。 所建立的每個搜尋都是以搜尋群組識別碼命名，然後在搜尋名稱中附加數位。 例如，如果您為搜尋群組識別碼輸入**ContosoCase** ，則搜尋會命名為**ContosoCase_1**、 **ContosoCase_2**、 **ContosoCase_3**等。 請注意，您輸入的名稱會區分大小寫。 當您在步驟4和步驟5中使用搜尋群組識別碼時，您必須使用與建立它時相同的大小寫。 
     
-- **Csv**檔案-您在步驟1中建立的 CSV 檔案名。 請務必包含使用完整檔案名，包含 .csv 副檔名;例如， `ContosoCase.csv`。
+- **Csv**檔案-您在步驟1中建立的 CSV 檔案名。 請務必包含使用完整檔案名，包含 .csv 副檔名;例如， `ContosoCase.csv` 。
     
 若要執行指令碼，請執行下列步驟：
 
-1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `CreateSearches.ps1`。 將檔案儲存到儲存其他檔案所在的相同資料夾。
+1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `CreateSearches.ps1` 。 將檔案儲存到儲存其他檔案所在的相同資料夾。
     
   ```Powershell
   # Get the Search Group ID and the location of the CSV input file
@@ -184,9 +170,9 @@ ms.locfileid: "44166074"
     .\CreateSearches.ps1
     ```
 
-3. 在 [**搜尋群組識別碼**] 提示中，輸入搜尋組名，然後按**enter**;例如， `ContosoCase`。 請記住，此名稱區分大小寫，所以您必須在後續步驟中以相同的方式輸入此名稱。
+3. 在 [**搜尋群組識別碼**] 提示中，輸入搜尋組名，然後按**enter**;例如， `ContosoCase` 。 請記住，此名稱區分大小寫，所以您必須在後續步驟中以相同的方式輸入此名稱。
     
-4. 在**來源 CSV**檔案提示字元處，輸入 csv 檔案名（包括 .csv 副檔名）的名稱;例如， `ContosoCase.csv`。
+4. 在**來源 CSV**檔案提示字元處，輸入 csv 檔案名（包括 .csv 副檔名）的名稱;例如， `ContosoCase.csv` 。
     
 5. 按**enter**繼續執行腳本。 
     
@@ -198,7 +184,7 @@ ms.locfileid: "44166074"
 
 在您建立搜尋之後，下一步是執行腳本，以顯示在步驟3中所建立之每個搜尋之搜尋命中數目的簡單報告。 報告也包含每個搜尋的結果大小，以及所有搜尋的命中總數及總大小。 當您執行報表腳本時，系統會提示您輸入搜尋群組識別碼，如果您想要將報告儲存至 CSV 檔案，則會提示您輸入 CSV 檔案名。
   
-1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `SearchReport.ps1`。 將檔案儲存到儲存其他檔案所在的相同資料夾。
+1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `SearchReport.ps1` 。 將檔案儲存到儲存其他檔案所在的相同資料夾。
     
   ```Powershell
   $searchGroup = Read-Host 'Search Group ID'
@@ -259,9 +245,9 @@ ms.locfileid: "44166074"
     .\SearchReport.ps1
     ```
 
-3. 在 [**搜尋群組識別碼**] 提示中，輸入搜尋組名，然後按**enter**;例如`ContosoCase`。 請記住，這個名稱是區分大小寫的，所以您必須使用在步驟3中執行腳本時所用的相同方式來輸入。
+3. 在 [**搜尋群組識別碼**] 提示中，輸入搜尋組名，然後按**enter**;例如 `ContosoCase` 。 請記住，這個名稱是區分大小寫的，所以您必須使用在步驟3中執行腳本時所用的相同方式來輸入。
     
-4. 若要將報告儲存至**csv 檔案（保留空白以顯示報告）** 提示，請在您想要將報告儲存至 csv 檔案時，輸入完整檔案名路徑的檔案名（包括 .csv 副檔名）。 CSV 檔案名（包括 .csv 副檔名）的名稱。 例如，您可以輸入`ContosoCaseReport.csv`將其儲存至目前的目錄，或輸入`C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv`將其儲存至不同的資料夾。 您也可以將提示保留空白，以顯示報表，但不會將其儲存至檔案。 
+4. 若要將報告儲存至**csv 檔案（保留空白以顯示報告）** 提示，請在您想要將報告儲存至 csv 檔案時，輸入完整檔案名路徑的檔案名（包括 .csv 副檔名）。 CSV 檔案名（包括 .csv 副檔名）的名稱。 例如，您可以輸入將 `ContosoCaseReport.csv` 其儲存至目前的目錄，或輸入將 `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` 其儲存至不同的資料夾。 您也可以將提示保留空白，以顯示報表，但不會將其儲存至檔案。 
     
 5. 按 **Enter**。
     
@@ -276,7 +262,7 @@ ms.locfileid: "44166074"
 
 因為您可能會建立許多搜尋，所以最後的腳本只是讓您輕鬆地快速刪除您在步驟3中建立的搜尋。 與其他腳本類似的是，這也會提示您輸入搜尋群組識別碼。 當您執行此腳本時，搜尋名稱中的所有搜尋群組識別碼都會被刪除。 
   
-1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `DeleteSearches.ps1`。 將檔案儲存到儲存其他檔案所在的相同資料夾。
+1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `DeleteSearches.ps1` 。 將檔案儲存到儲存其他檔案所在的相同資料夾。
     
   ```Powershell
   # Delete all searches in a search group
@@ -298,7 +284,7 @@ ms.locfileid: "44166074"
     .\DeleteSearches.ps1
     ```
 
-3. 在 [**搜尋群組識別碼**] 提示中，輸入您要刪除之搜尋的搜尋組名，然後按**enter**;例如， `ContosoCase`。 請記住，這個名稱是區分大小寫的，所以您必須使用在步驟3中執行腳本時所用的相同方式來輸入。
+3. 在 [**搜尋群組識別碼**] 提示中，輸入您要刪除之搜尋的搜尋組名，然後按**enter**;例如， `ContosoCase` 。 請記住，這個名稱是區分大小寫的，所以您必須使用在步驟3中執行腳本時所用的相同方式來輸入。
     
     腳本會顯示每個已刪除之搜尋的名稱。
     

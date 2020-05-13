@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您將瞭解如何使用和管理欺騙性情報，以防範電子郵件欺騙。
-ms.openlocfilehash: 32a7668edced5c9dbca2f7b16ff00253b56a5988
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 系統管理員可以深入瞭解 Exchange Online Protection （EOP）中的欺騙情報，您可以在其中允許或封鎖特定的欺騙寄件者。
+ms.openlocfilehash: 607c11d82a145828af736d8d1ecab1dff367f94d
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034241"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206637"
 ---
-# <a name="configure-spoof-intelligence-in-microsoft-365"></a>在 Microsoft 365 中設定假冒情報
+# <a name="configure-spoof-intelligence-in-eop"></a>在 EOP 中設定欺騙情報
 
-如果您是使用 Exchange Online 中的信箱或獨立 Exchange Online Protection （EOP）客戶（沒有 Exchange Online 信箱）的 Microsoft 365 客戶，輸入的電子郵件會在10月2018時自動受到 EOP 的欺騙。 EOP 會使用哄騙情報做為組織對網路釣魚的整體防護的一部分。 如需詳細資訊，請參閱[Microsoft 365 中的反欺騙保護](anti-spoofing-protection.md)。
+在未使用 Exchange Online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）組織中使用信箱的 Microsoft 365 組織中，輸入的電子郵件會在10月2018時自動受到 EOP 的欺騙。 EOP 會使用哄騙情報做為組織對網路釣魚的整體防護的一部分。 如需詳細資訊，請參閱[EOP 中的反欺詐防護](anti-spoofing-protection.md)。
 
 當寄件者欺騙電子郵件地址時，他們似乎是組織網域之一中的使用者，或是將電子郵件傳送至您組織的外部網域中的使用者。 欺騙寄件者以傳送垃圾郵件或網路釣魚電子郵件的攻擊者必須封鎖。 但在某些情況下，合法寄件者是哄騙。 例如：
 
@@ -50,26 +50,26 @@ ms.locfileid: "44034241"
 
 哄騙情報，特別是預設（而且只是）哄騙智慧原則，可協助確保合法寄件者所傳送的欺騙電子郵件不會陷入 Microsoft 365 或外部電子郵件系統的垃圾郵件篩選器中，同時也會保護您的使用者免受垃圾郵件或網路釣魚攻擊。
 
-您可以在 Microsoft 365 Security & 合規性中心或 PowerShell （Microsoft 365 客戶的 Exchange Online PowerShell 中）管理欺騙情報;Exchange Online Protection PowerShell 適用于獨立 EOP 客戶）。
+您可以在安全性 & 合規性中心或 PowerShell （Exchange Online PowerShell 中，管理具有 Exchange Online 信箱的 Microsoft 365 組織; 獨立 EOP PowerShell （沒有 Exchange Online 信箱的組織）中的欺騙智慧。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [反垃圾郵件設定]**** 頁面，請使用 <https://protection.office.com/antispam>。 若要直接移至 [**反網路釣魚**] 頁面<https://protection.office.com/antiphishing>，請使用。
+- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [反垃圾郵件設定]**** 頁面，請使用 <https://protection.office.com/antispam>。 若要直接移至 [**反網路釣魚**] 頁面，請使用 <https://protection.office.com/antiphishing> 。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連接至獨立版 Exchange Online Protection PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲指派權限，才能執行這些程序。 若要修改欺騙性智慧原則或啟用或停用欺騙智慧，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要取得欺騙智慧原則的唯讀存取權，您必須是「**安全性讀者**」角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱 [Office 365 安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
+- 您必須已獲指派權限，才能執行這些程序。 若要修改欺騙性智慧原則或啟用或停用欺騙智慧，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要取得欺騙智慧原則的唯讀存取權，您必須是「**安全性讀者**」角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
 - 如需適用于哄騙情報的建議設定，請[EOP 預設的反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。
 
 ## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>使用安全性 & 規範中心管理欺騙寄件者
 
 > [!NOTE]
-> 如果您有 Office 365 企業版 E5 訂閱或是個別購買及高級威脅防護（ATP）附加元件，您也可以管理透過[欺騙智慧洞察力](walkthrough-spoof-intelligence-insight.md)欺騙您網域的寄件者。
+> 如果您有 Microsoft 365 企業版 E5 訂閱或已個別購買 Office 365 高級威脅防護（Office 365 ATP）附加元件，您也可以管理透過[欺騙智慧洞察力](walkthrough-spoof-intelligence-insight.md)欺騙您網域的寄件者。
 
 1. 在安全性與合規性中心，移至 [威脅管理]**** \> [原則]**** \> [反垃圾郵件]****。
 
-2. 在 [**反垃圾郵件設定**] 頁面上![，按一下](../../media/scc-expand-icon.png) [展開圖示] 以展開 [**欺騙智慧原則**]。
+2. 在 [**反垃圾郵件設定**] 頁面上，按一下 [ ![ 展開圖示] ](../../media/scc-expand-icon.png) 以展開 [**欺騙智慧原則**]。
 
    ![選取哄騙智慧原則](../../media/anti-spam-settings-spoof-intelligence-policy.png)
 
@@ -83,13 +83,13 @@ ms.locfileid: "44034241"
    - **您的網域**：寄件者哄騙您內部網域中的使用者。
    - **外部網域**：寄件者哄騙外部網域中的使用者。
 
-5. 按一下![[](../../media/scc-expand-icon.png) **允許欺騙？** ] 欄中的展開圖示。 選擇 **[是]** 允許冒牌寄件者，或選擇 [**否**] 將郵件標示為欺騙。 此動作是由預設的反網路釣魚原則或自訂 ATP 反網路釣魚原則所控制（預設值為 [**將郵件移至垃圾郵件資料夾**]）。 如需詳細資訊，請參閱[反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。
+5. 按一下 ![ ](../../media/scc-expand-icon.png) [**允許欺騙？** ] 欄中的展開圖示。 選擇 **[是]** 允許冒牌寄件者，或選擇 [**否**] 將郵件標示為欺騙。 此動作是由預設的反網路釣魚原則或自訂 ATP 反網路釣魚原則所控制（預設值為 [**將郵件移至垃圾郵件資料夾**]）。 如需詳細資訊，請參閱[反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。
 
    ![顯示欺騙寄件者飛出的螢幕擷取畫面，以及是否允許寄件者哄騙](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
    下列清單說明您所看到的欄和值：
 
-   - **欺騙使用者**：已欺騙的使用者帳戶。 這是電子郵件客戶程式中所顯示寄件者位址（ `5322.From`也稱為位址）中的郵件寄件者。 SPF 不會檢查此位址的有效性。
+   - **欺騙使用者**：已欺騙的使用者帳戶。 這是電子郵件客戶程式中所顯示寄件者位址（也稱為位址）中的郵件寄件者 `5322.From` 。 SPF 不會檢查此位址的有效性。
 
      - 在 [**您的網域**] 索引標籤上，此值會包含單一電子郵件地址，或如果來源電子郵件伺服器是哄騙多個使用者帳戶，它會包含**一個以上**的使用者帳戶。
 
@@ -150,13 +150,13 @@ Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-2. 編輯 CSV 檔案，以新增或修改**SpoofedUser** （電子郵件地址）和**AllowedToSpoof** （是或否）值。 儲存檔案，閱讀檔案，並將內容儲存為名為`$UpdateSpoofedSenders`的變數：
+2. 編輯 CSV 檔案，以新增或修改**SpoofedUser** （電子郵件地址）和**AllowedToSpoof** （是或否）值。 儲存檔案，閱讀檔案，並將內容儲存為名為的變數 `$UpdateSpoofedSenders` ：
 
    ```powershell
    $UpdateSpoofedSenders = Get-Content -Raw "C:\My Documents\Spoofed Senders.csv"
    ```
 
-3. 使用`$UpdateSpoofedSenders`變數來設定欺騙智慧原則：
+3. 使用 `$UpdateSpoofedSenders` 變數來設定欺騙智慧原則：
 
    ```powershell
    Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
@@ -178,7 +178,7 @@ Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 若要確認您已設定欺騙智慧與允許和不允許哄騙的寄件者，以及您已設定欺騙性智慧設定，請使用下列任何一項步驟：
 
-- 在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **反垃圾郵件** \>展開**欺騙性智慧原則** \>選取 [顯示我\> **已複查的寄件者**] 選取 [**您的網域**] 或 [**外部網域**] 索引標籤，然後確認寄件者的 [**允許欺騙？** ] 值。
+- 在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **反垃圾郵件** \> 展開**欺騙性智慧原則** \> 選取 [**顯示我已複查的寄件者** \> ] 選取 [**您的網域**] 或 [**外部網域**] 索引標籤，然後確認寄件者的 [**允許欺騙？** ] 值。
 
 - 在 PowerShell 中，執行下列命令，以查看允許和不允許哄騙的寄件者：
 
@@ -197,7 +197,7 @@ Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 - 在包含 Exchange Online 信箱的 Microsoft 365 組織中，執行下列其中一個步驟：
 
-  - 在 [安全性 & 規範中心] 中，移至**威脅管理** \> **原則** \> **反網路釣魚** \>按一下 [**預設原則**]，然後查看快顯視窗中的詳細資料。
+  - 在 [安全性 & 規範中心] 中，移至**威脅管理** \> **原則** \> **反網路釣魚** \> 按一下 [**預設原則**]，然後查看快顯視窗中的詳細資料。
 
   - 在 Exchange Online PowerShell 中，執行下列命令並確認設定：
 
@@ -212,7 +212,7 @@ Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
     - 從清單中選取原則。 在出現的快顯視窗中，確認 [**哄騙**] 區段中的值。
     - 按一下 [**預設原則**]。 在出現的快顯視窗中，確認 [**哄騙**] 區段中的值。
 
-  - 在 Exchange Online PowerShell 中， \<以\> Office365 AntiPhish 預設值取代名稱] 的預設值，或自訂 ATP 反網路釣魚原則的名稱，然後執行下列命令並確認設定：
+  - 在 Exchange Online PowerShell 中， \< \> 以 Office365 AntiPhish 預設值取代名稱] 的預設值，或自訂 ATP 反網路釣魚原則的名稱，然後執行下列命令並確認設定：
 
     ```PowerShell
     Get-AntiPhishPolicy -Identity "<Name>"

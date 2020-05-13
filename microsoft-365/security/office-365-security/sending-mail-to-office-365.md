@@ -2,10 +2,10 @@
 title: 將郵件傳送至 Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 04/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -18,16 +18,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 請以外部的寄件者的身分瞭解，如何提高將電子郵件傳遞給 Microsoft 365 中使用者的能力。 此外，還會瞭解如何以外部使用者的身分嘗試報告垃圾郵件 & 網路釣魚嘗試。
-ms.openlocfilehash: c1086088a92240be4bb7bbbd52077cecb1c54476
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c464d09ddd5f6324c9b3e22e9cad6a613862c9a1
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035381"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209820"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>將郵件傳送至 Microsoft 365
 
-這些文章可協助外部寄件者提升其信譽，並提高將電子郵件傳送至 Office 365 中使用者的能力。 他們也提供一些資訊，也就是如果您不是自己的 Microsoft 365 使用者，您可以如何報告垃圾郵件和網路釣魚企圖。
+這些文章可協助外部寄件者提升其聲譽，並提高將電子郵件傳送給 Microsoft 365 中使用者的能力。 他們也提供一些資訊，也就是如果您不是 Microsoft 365 使用者自行，如何報告垃圾郵件和網路釣魚企圖。
 
 如果您不是客戶，但正嘗試將郵件傳送給其所在的某人，您就是在正確的地方。 如果您是系統管理員，而您需要協助反擊垃圾郵件，這不是正確的區段。 相反地，請移至[Microsoft 365 中的反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)。
 

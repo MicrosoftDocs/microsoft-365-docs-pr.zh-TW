@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 中的反網路釣魚保護
+title: 防網路釣魚保護
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,13 +18,13 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-description: 本文介紹可用的線上資源，可供您用來深入瞭解及如何在 Microsoft 365 中執行反網路釣魚選項與策略。
-ms.openlocfilehash: 09d384376b1e44989987c40ef3c7860e4fac6167
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 系統管理員可以瞭解 Exchange Online Protection （EOP）和 Office 365 Advanced 威脅防護（Office 365 ATP）中的反網路釣魚保護功能。
+ms.openlocfilehash: c1b9332fc35997dfe1cbfdfbef79e2d7beed736f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033759"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208968"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚保護
 
@@ -38,13 +38,13 @@ ms.locfileid: "44033759"
 
 - 在網路釣魚郵件中，加密您的資料和要求付款以進行解密的**勒索軟體**幾乎永遠不會開始。 反網路釣魚保護無法協助您解密加密的檔案，但可協助偵測與勒索軟體相關的初始網路釣魚郵件。 如需從勒索軟體攻擊復原的詳細資訊，請參閱[從 Microsoft 365 的勒索軟體攻擊復原](recover-from-ransomware.md)。
 
-隨著攻擊複雜度的日益增加，訓練的使用者甚至很難識別複雜的網路釣魚郵件。 幸運的是，Exchange Online Protection （EOP）和 Microsoft 365 Advanced 威脅防護（ATP）中的其他功能都有助您的協助。
+隨著攻擊複雜度的日益增加，訓練的使用者甚至很難識別複雜的網路釣魚郵件。 幸運的是，Exchange Online Protection （EOP）和 Office 365 高級威脅防護（Office 365 ATP）中的其他功能都有助您的協助。
 
 ## <a name="anti-phishing-protection-in-eop"></a>EOP 中的反網路釣魚保護
 
 EOP （也就是，不含 ATP 的 Microsoft 365 組織）包含可協助您保護組織免受網路釣魚威脅的功能：
 
-- **詐騙情報**：檢閱來自內部和外部網域中寄件者的詐騙郵件，並允許或封鎖那些寄件者。 如需詳細資訊，請參閱[在 Microsoft 365 中設定詐騙情報](learn-about-spoof-intelligence.md)。
+- **詐騙情報**：檢閱來自內部和外部網域中寄件者的詐騙郵件，並允許或封鎖那些寄件者。 如需詳細資訊，請參閱[在 EOP 中設定欺騙智慧](learn-about-spoof-intelligence.md)。
 
 - **EOP 中的反網路釣魚原則**：開啟或關閉欺騙智慧、開啟或關閉 Outlook 中未驗證的寄件者識別，以及指定封鎖的欺騙寄件者（移至 [垃圾郵件] 資料夾或 [隔離]）的動作。 如需詳細資訊，請參閱[CONFIGURE EOP 中的反網路釣魚原則](configure-anti-phishing-policies-eop.md)。
 

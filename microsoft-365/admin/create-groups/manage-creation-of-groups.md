@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 瞭解如何控制可建立 Microsoft 365 群組的使用者。
-ms.openlocfilehash: 5ecd48161a751a1558146236d48df13bb0662ad1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55b3ec119e8c74982ce340c58f6b8da684c9ffa8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630402"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208339"
 ---
 # <a name="manage-who-can-create-groups"></a>管理誰可以建立群組
 
@@ -120,13 +120,13 @@ ms.locfileid: "43630402"
 
 將下列腳本複製到文字編輯器（例如記事本）或[Windows POWERSHELL ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)。
 
-以您建立的安全性群組名稱取代* \<SecurityGroupName\> * 。 例如：
+以您建立的安全性群組名稱取代* \< SecurityGroupName \> * 。 例如：
 
 `$GroupName = "Group Creators"`
 
 將檔案儲存為 GroupCreators。 
 
-在 [PowerShell] 視窗中，流覽至您儲存檔案的位置（輸入 " <FileLocation>CD"）。
+在 [PowerShell] 視窗中，流覽至您儲存檔案的位置（輸入 "CD <FileLocation> "）。
 
 輸入下列命令以執行腳本：
 
@@ -173,6 +173,8 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 如果您想關閉群組建立限制，並再次允許所有使用者建立群組，請將 $GroupName 設定為 ""，並 $AllowGroupCreation 為 "True"，然後重新執行腳本。
     
 ## <a name="step-4-verify-that-it-works"></a>步驟4：確認其運作正常
+
+變更可能需要30分鐘以上的時間才會生效。 您可以執行下列動作來驗證新的設定：
 
 1. 使用不具備建立群組功能之人員的使用者帳戶登入。 也就是說，它們不是您所建立之安全性群組的成員，或是管理員的成員。
     

@@ -17,16 +17,16 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在安全性 & 規範中心中取得。
-ms.openlocfilehash: b65dd6479262b97f08e34420d9a88ee2a327a73b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ca23f7ba0ce7bc43f8808e213dc79d066316a9ec
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631082"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208510"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
-[安全性 & 合規性中心](https://protection.office.com)提供各種報告，可協助您觀察電子郵件安全性功能（例如，反垃圾郵件、反惡意程式碼，以及 Microsoft 365 中的加密功能）如何保護您的組織。 如果您有[必要的許可權](#what-permissions-are-needed-to-view-these-reports)，您可以移至 [**報表** \> ]**儀表板**，在安全性 & 規範中心中查看這些報告。
+[安全性 & 合規性中心](https://protection.office.com)提供各種報告，可協助您觀察電子郵件安全性功能（例如，反垃圾郵件、反惡意程式碼，以及 Microsoft 365 中的加密功能）如何保護您的組織。 如果您有[必要的許可權](#what-permissions-are-needed-to-view-these-reports)，您可以移至 [**報表**] \> **儀表板**，在安全性 & 規範中心中查看這些報告。
 
 ![安全性 & 規範中心內的報告儀表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -75,7 +75,7 @@ ms.locfileid: "43631082"
 
 **加密報告**會顯示已加密之電子郵件的相關資訊，不論是透過您組織的原則或透過使用者控制項。 組織的安全小組可以使用此報告中的資訊來識別模式，並主動套用或調整敏感電子郵件訊息的原則。
 
-若要查看此報告，請在安全性 & 合規性中心，移至 [**報告** \> **] 儀表板** \> **加密報告**。
+若要查看此報告，請在安全性 & 合規性中心，移至 [**報告**] \> **儀表板** \> **加密報告**。
 
 ![加密報告](../../media/encryptionreport-defaultview.png)
 
@@ -100,9 +100,9 @@ ms.locfileid: "43631082"
 「**威脅防護狀態**報告」是一個智慧報告，顯示 Exchange Online Protection 偵測到並封鎖的惡意電子郵件。 此報告可用於查看識別為惡意程式碼的電子郵件，或一段時間內的網路釣魚企圖（最多90天），並可讓安全性管理員識別趨勢或判斷是否需要調整原則。
 
 > [!NOTE]
-> 具有[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)或[Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop) （EOP）的客戶可以使用威脅防護狀態報表;不過，針對 ATP 客戶顯示在威脅防護狀態報表中的資訊，其可能會包含與客戶可能看到的 EOP 不同的資料。 例如，EOP 客戶可以查看在電子郵件中偵測到惡意程式碼的相關資訊，但不是[在 SharePoint Online、OneDrive 或 Microsoft 小組中偵測到的惡意](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)檔案資訊，也就是 ATP 特有的功能。 （[深入瞭解 ATP 報告](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)。）
+> 具有[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)或[Exchange Online Protection](exchange-online-protection-overview.md) （EOP）的客戶可以使用威脅防護狀態報表;不過，針對 ATP 客戶顯示在威脅防護狀態報表中的資訊，其可能會包含與客戶可能看到的 EOP 不同的資料。 例如，EOP 客戶可以查看在電子郵件中偵測到惡意程式碼的相關資訊，但不是[在 SharePoint Online、OneDrive 或 Microsoft 小組中偵測到的惡意](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)檔案資訊，也就是 ATP 特有的功能。 （[深入瞭解 ATP 報告](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)。）
 
-若要查看此報告，請在[安全性 & 合規性中心](https://protection.office.com)，移至 [**報告** \> ]**儀表板** \> **威脅防護狀態**。
+若要查看此報告，請在[安全性 & 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板** \> **威脅防護狀態**。
 
 ![威脅防護狀態報告](../../media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
 
@@ -120,7 +120,7 @@ ms.locfileid: "43631082"
 
 **惡意軟體**偵測報告會顯示偵測到包含組織之惡意程式碼的傳入和傳出郵件數目。
 
-若要查看此報告，請在 [[安全性 & 規範中心](https://protection.office.com)] 中，移至 [**報告** \> **] 儀表板** \> **惡意**代碼偵測。
+若要查看此報告，請在 [[安全性 & 規範中心](https://protection.office.com)] 中，移至 [**報告**] \> **儀表板** \> **惡意**代碼偵測。
 
 ![惡意程式碼偵測報告範例](../../media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
 
@@ -130,7 +130,7 @@ ms.locfileid: "43631082"
 
 **主要惡意**代碼報告會顯示[Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features)偵測到的各種惡意程式碼。
 
-若要查看此報告，請在[安全性 & 合規性中心](https://protection.office.com)，移至 [**報告** \> ]**儀表板** \>的**主要惡意**代碼。
+若要查看此報告，請在[安全性 & 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板**的 \> **主要惡意**代碼。
 
 ![SCC-EOP 主要惡意程式碼](../../media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
 
@@ -146,15 +146,15 @@ ms.locfileid: "43631082"
 
 「**主要寄件者與收件**者」報告是顯示您主要電子郵件寄件者的餅形圖。
 
-若要查看此報告，請在 [[安全性 & 規範中心](https://protection.office.com)] 中，移至 [**報告** \> **] 儀表板** \>的**頁首和收件**者。
+若要查看此報告，請在 [[安全性 & 規範中心](https://protection.office.com)] 中，移至 [**報告**] \> **儀表板**的 \> **頁首和收件**者。
 
-![若要查看此報告，請在安全性 & 合規性中心，移\>至\>報表儀表板排名主要寄件者和收件者](../../media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
+![若要查看此報告，請在安全性 & 合規性中心，移至報表 \> 儀表板 \> 排名主要寄件者和收件者](../../media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
 
 當您將游標移到圓形圖中的楔形上方時，您可以看到所傳送或接收的郵件計數。
 
 按一下（或點擊）報表，以在新的瀏覽器視窗中開啟它，您可以在其中取得更詳細的報表檢視。
 
-使用 [**顯示資料**] 清單，選擇是否要查看主要寄件者、接收器、垃圾郵件收件者和惡意程式碼收件者的資料。 您也可以查看[Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop)已偵測到的惡意程式碼。
+使用 [**顯示資料**] 清單，選擇是否要查看主要寄件者、接收器、垃圾郵件收件者和惡意程式碼收件者的資料。 您也可以查看[Exchange Online Protection](exchange-online-protection-overview.md)已偵測到的惡意程式碼。
 
 ![使用 [顯示資料] 清單查看特定資訊](../../media/bd91449f-7d42-4749-8666-7b44044049b8.png)
 
@@ -164,9 +164,9 @@ ms.locfileid: "43631082"
 
 「**欺騙**偵測報告」會顯示偵測到的電子郵件訊息數量，以及那些被視為「良好」（由於正當商務理由而完成的電子郵件）。
 
-若要查看此報告，請在[安全性 & 合規性中心](https://protection.office.com)，移至 [**報告** \> ]**儀表板** \> **冒名郵件**。
+若要查看此報告，請在[安全性 & 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板** \> **冒名郵件**。
 
-![在安全性 & 規範中心內，移至 [ \>報告\> ] 儀表板冒名郵件](../../media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
+![在安全性 & 規範中心內，移至 [報告] \> 儀表板 \> 冒名郵件](../../media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
 
 當您將游標移到圖表中的某一天時，您可以看到有多少偽造的電子郵件訊息。
 
@@ -176,9 +176,9 @@ ms.locfileid: "43631082"
 
 **垃圾郵件**偵測報告會顯示 Exchange Online 所封鎖的所有垃圾郵件內容。 郵件會依每封郵件計算，而非每個收件者。 例如，如果電子郵件訊息傳送至您組織中的100收件者，則會將它計為一封郵件。
 
-若要查看此報告，請在 [[安全性 & 規範中心](https://protection.office.com)] 中，移至 [**報告** \> **] 儀表板** \> **垃圾郵件**偵測。
+若要查看此報告，請在 [[安全性 & 規範中心](https://protection.office.com)] 中，移至 [**報告**] \> **儀表板** \> **垃圾郵件**偵測。
 
-![若要查看此報告，請在安全性 & 合規性中心，移\>至\> [報告] 儀表板 EOP 垃圾郵件偵測](../../media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
+![若要查看此報告，請在安全性 & 合規性中心，移至 [報告] \> 儀表板 \> EOP 垃圾郵件偵測](../../media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
 
 當您將游標移到圖表中的某一天時，您可以查看該天已封鎖的專案數，以及這些專案的分類方式。 例如，您可以查看已篩選的垃圾郵件數目，以及來自封鎖的網際網路通訊協定（IP）位址的專案數目。
 
@@ -192,9 +192,9 @@ ms.locfileid: "43631082"
 
 「**傳送及接收的電子郵件**報告」是一個智慧報告，顯示傳入和傳出電子郵件的相關資訊，包括垃圾郵件偵測、惡意程式碼，以及識別為「良好」的電子郵件。
 
-若要查看此報告，請在[安全性 & 合規性中心](https://protection.office.com)，移至 [**報告** \> ]**儀表板** \> **傳送和接收的電子郵件**。
+若要查看此報告，請在[安全性 & 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板** \> **傳送和接收的電子郵件**。
 
-![若要查看此報告，請在安全性 & 合規性中心，移\>至\> [報告] 儀表板傳送和接收的電子郵件](../../media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
+![若要查看此報告，請在安全性 & 合規性中心，移至 [報告] \> 儀表板 \> 傳送和接收的電子郵件](../../media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
 
 當您將游標移到圖表中的某一天時，您就可以看到已有多少封郵件，以及這些郵件的分類方式。 例如，您可以查看偵測到包含惡意程式碼的郵件數目，以及識別為垃圾郵件的數目。
 
@@ -224,7 +224,7 @@ ms.locfileid: "43631082"
 
 - 移至**威脅管理** \> **檢查** \> **使用者報告的郵件**。
 
-![在 [安全性 & 規範中心] 中，選擇\> [ \>威脅管理] [使用者報告的郵件]](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
+![在 [安全性 & 規範中心] 中，選擇 [威脅管理] [ \> \> 使用者報告的郵件]](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
 > [!IMPORTANT]
 > 為了讓使用者報告的郵件報告正確運作，您必須為您的 Office 365 環境**開啟審核記錄**。 這項工作通常是由在 Exchange Online 中獲派稽核記錄角色的人員完成。 如需詳細資訊，請參閱[開啟或關閉 Microsoft 365 審核記錄搜尋](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)。
@@ -235,7 +235,7 @@ ms.locfileid: "43631082"
 
 - 針對安全性 & 合規性中心，您必須已指派下列角色之一：
 
-  -組織管理-安全性系統管理員（可以在 Azure Active Directory 系統管理中心中指派[https://aad.portal.azure.com](https://aad.portal.azure.com)）-安全性讀取器
+  -組織管理-安全性系統管理員（可以在 Azure Active Directory 系統管理中心中指派 [https://aad.portal.azure.com](https://aad.portal.azure.com) ）-安全性讀取器
 
 - 針對 Exchange Online，您必須在 Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) 或 PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) 受指派下列其中一個角色：
 

@@ -1,5 +1,5 @@
 ---
-title: 反欺騙保護常見問題
+title: 反詐騙保護常見問題集
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,21 +15,21 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 在 Exchange Online 和獨立 Exchange Online Protection （EOP）中，系統管理員有關反欺騙保護的常見問題與解答。
-ms.openlocfilehash: b39e48fd57b899e6296d40ab10aac265cb4165a3
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: 系統管理員可以在 Exchange Online Protection （EOP）中查看有關反欺騙保護的常見問題及解答。
+ms.openlocfilehash: 603293dd00100e3b93a225d94f2ed8fd9baae6a5
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529842"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209092"
 ---
-# <a name="anti-spoofing-protection-faq-in-office-365"></a>Office 365 中的反欺騙保護常見問題
+# <a name="anti-spoofing-protection-faq"></a>反詐騙保護常見問題集
 
-本主題針對沒有 Exchange Online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）客戶中的信箱，提供 Office 365 客戶的反欺騙保護的常見問題及解答。
+本主題針對 Exchange Online 中的信箱或獨立 Exchange Online Protection （EOP）組織中的 Microsoft 365 組織，提供有關反欺騙保護的常見問題和解答，但沒有 Exchange Online 信箱。
 
 如需反垃圾郵件保護的相關問題和解答，請參閱[反垃圾郵件保護常見問題](anti-spam-protection-faq.md)。
 
-如需有關反惡意程式碼保護的問題和解答，請參閱[Office 365 中的反惡意程式碼保護常見問題](anti-malware-protection-faq-eop.md)。
+如需有關反惡意程式碼保護的問題和解答，請參閱[反惡意程式碼保護常見問題](anti-malware-protection-faq-eop.md)
 
 ## <a name="why-did-microsoft-choose-to-junk-unauthenticated-inbound-email"></a>Microsoft 為何選擇未驗證的垃圾輸入電子郵件？
 
@@ -41,11 +41,11 @@ ms.locfileid: "43529842"
 
 Microsoft 本身會在將新的電子郵件驗證需求部署給客戶之前，先採用一周。 一開始會出現一些干擾，但慢慢的會減少。
 
-## <a name="is-spoof-intelligence-available-to-office-365-customers-without-atp"></a>是否有欺騙性智慧可供沒有 ATP 的 Office 365 客戶使用？
+## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-atp"></a>是否有欺騙性智慧可供沒有 ATP 的 Microsoft 365 客戶使用？
 
-是。 從10月2018到10月為止，所有包含 Exchange Online 信箱和獨立 EOP 組織的組織皆可使用欺騙智慧，而不需要 Exchange Online 信箱。
+是。 從10月2018到10月為止，具有 Exchange Online 信箱的所有組織，以及沒有 Exchange Online 信箱的獨立 EOP 組織皆可取得欺騙智慧。
 
-反欺騙技術最初是部署到具有 Office 365 企業版 E5 訂閱的組織，或其訂閱的 Office 365 高級威脅防護（ATP）附加元件。
+反欺騙技術最初隻會部署至具有 Office 365 企業版 E5 訂閱的組織，或其訂閱的 Office 365 高級威脅防護（Office 365 ATP）附加元件。
 
 ## <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>如何向 Microsoft 回報垃圾郵件或非垃圾郵件？
 
@@ -63,17 +63,17 @@ Microsoft 本身會在將新的電子郵件驗證需求部署給客戶之前，�
 
 ## <a name="does-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>反欺騙保護的意思是我會保護所有網路釣魚嗎？
 
-不幸的是，不。 攻擊者可採用其他技術（例如，在免費電子郵件服務中已遭破壞的帳戶或帳戶）進行調整。 不過，反網路釣魚保護的運作速度很好于偵測其他類型的網路釣魚方法。 Office 365 中的保護層是設計一起運作，彼此上建立。
+不幸的是，不。 攻擊者可採用其他技術（例如，在免費電子郵件服務中已遭破壞的帳戶或帳戶）進行調整。 不過，反網路釣魚保護的運作速度很好于偵測其他類型的網路釣魚方法。 EOP 中的保護層是設計一起運作，彼此上建立。
 
 ## <a name="do-other-large-email-services-block-unauthenticated-inbound-email"></a>其他大型電子郵件服務會封鎖未驗證的輸入電子郵件嗎？
 
-幾乎所有大型的電子郵件服務都會執行傳統的 SPF、DKIM 及 DMARC 檢查。 有些服務會有其他更為嚴格的檢查，但不像 Office 365 那樣可以封鎖未驗證的電子郵件，並將其視為欺騙性的郵件。 不過，該行業正深入瞭解未驗證電子郵件的問題，尤其是由於網路釣魚問題所導致。
+幾乎所有大型的電子郵件服務都會執行傳統的 SPF、DKIM 及 DMARC 檢查。 有些服務有其他更為嚴格的檢查，但不是 EOP 來封鎖未驗證的電子郵件，並將其視為欺騙性的電子郵件。 不過，該行業正深入瞭解未驗證電子郵件的問題，尤其是由於網路釣魚問題所導致。
 
 ## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>如果我啟用反欺騙，仍然需要啟用高級垃圾郵件篩選器設定「SPF 記錄：硬失敗」（_MarkAsSpamSpfRecordHardFail_）？
 
 否。 這種 ASF 設定不再是必要的，因為反欺騙不僅會考慮 SPF hard 失敗，還會有更多更豐富的準則。 如果您已啟用反詐騙功能，並且開啟 **SPF 記錄：驗證失敗** (_MarkAsSpamSpfRecordHardFail_)，則可能會發生更多誤判。
 
-我們建議您停用此功能，因為它幾乎不會提供偵測垃圾郵件或網路釣魚郵件的額外權益，而會產生大部分的誤報。 如需詳細資訊，請參閱 [Office 365 中的進階垃圾郵件篩選 (ASF) 設定](advanced-spam-filtering-asf-options.md)。
+我們建議您停用此功能，因為它幾乎不會提供偵測垃圾郵件或網路釣魚郵件的額外權益，而會產生大部分的誤報。 如需詳細資訊，請參閱[EOP 中的高級垃圾郵件篩選（ASF）設定](advanced-spam-filtering-asf-options.md)。
 
 ## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>寄件者重新寫入架構是否有助於修正轉寄的電子郵件？
 

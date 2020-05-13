@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: 設定連接器，將 Twitter 資料匯入 Microsoft 365，讓您可以使用合規性功能，例如法律封存、內容搜尋和保留原則。
-ms.openlocfilehash: 5fb13b3a5eb79c09c2947292b793fe607dae247f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: efc02dcf7b9c40fafedf230e4786f6f6494c27d6
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035125"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210579"
 ---
-# <a name="set-up-a-connector-to-archive-twitter-data"></a>設定連接器來封存 Twitter 資料
+# <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>設定連接器以封存 Twitter 資料（預覽）
 
 使用 Microsoft 365 規範中心內的連接器，將 Twitter 中的資料匯入並封存至 Microsoft 365。 在您設定及設定連接器之後，它會連線到您組織的 Twitter 帳戶（根據排程），將專案的內容轉換成電子郵件格式，然後將這些專案匯入至 Microsoft 365 中的信箱。
 
@@ -82,7 +82,7 @@ ms.locfileid: "44035125"
 
 - tenantId：在步驟1中，您在 Azure Active Directory 中建立 Twitter 應用程式之後所複製之 Microsoft 365 組織的租使用者識別碼。
 
-完成此步驟後，請務必複製 app 服務 URL （例如`https://twitterconnector.azurewebsites.net`）。 您必須使用此 URL，才能完成步驟3、步驟4及步驟5）。
+完成此步驟後，請務必複製 app 服務 URL （例如 `https://twitterconnector.azurewebsites.net` ）。 您必須使用此 URL，才能完成步驟3、步驟4及步驟5）。
 
 ## <a name="step-3-create-developer-app-on-twitter"></a>步驟3：建立 Twitter 上的開發人員應用程式
 
@@ -128,6 +128,6 @@ ms.locfileid: "44035125"
 
 在此步驟完成（遵循逐步指示）之後，您將會提供下列資訊（在完成步驟之後，您已複製到文字檔中）。
 
-- Azure 應用程式服務 URL （如步驟2取得; 例如`https://twitterconnector.azurewebsites.net`）
+- Azure 應用程式服務 URL （如步驟2取得; 例如 `https://twitterconnector.azurewebsites.net` ）
 
 - APISecretKey （您在步驟2中建立）

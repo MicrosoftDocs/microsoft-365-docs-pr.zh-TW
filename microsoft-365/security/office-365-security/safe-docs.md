@@ -15,16 +15,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 深入瞭解 Office 365 ATP 中的安全檔。
-ms.openlocfilehash: b70c7013ce038a3934b7ea5e62d1d0530f12e4e6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9e5a42b3d6be987170049ad5f0f451f8280fbff
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634313"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209160"
 ---
-# <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Office 365 中的安全檔高級威脅防護
+# <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Office 365 進階威脅防護中的安全文件
 
-安全檔是 Office 365 高級威脅防護（ATP）中的一項功能，可使用[Microsoft Defender 高級威脅防護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)來掃描在[受保護的檢視](https://support.office.com/article/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)中開啟的檔和檔案。
+安全檔是 Office 365 高級威脅防護（Office 365 ATP）中的一項功能，可使用[Microsoft Defender 高級威脅防護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)來掃描在[受保護的檢視](https://support.office.com/article/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)中開啟的檔和檔案。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -32,15 +32,20 @@ ms.locfileid: "43634313"
 
 - 安全檔目前可用於公開預覽，可供屬於 office 版本為2002（12527.20092）或更高版本的[Office 預覽人員計畫](https://insider.office.com/en-us/join)中的使用者。 此功能預設為關閉，必須由安全性管理員啟用。
 
-- 目前只有美國地區支援相容性檔案處理（所有檔案都會前往 US 地區進行掃描）。 對 UK/歐盟地區的支援計畫于未來的更新中。
-
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連接至 Exchange Online Protection PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲指派許可權，才能執行本主題中的程式。 若要啟用及設定安全檔，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 如需安全性 & 規範中心中角色群組的詳細資訊，請參閱[安全性 & 規範中心中的許可權](permissions-in-the-security-and-compliance-center.md)。
+- 您必須已獲指派許可權，才能執行本主題中的程式。 若要啟用及設定安全檔，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
+
+## <a name="how-does-microsoft-handle-your-data"></a>Microsoft 如何處理您的資料？
+
+為了讓您受到保護，安全檔會將檔案傳送至[Microsoft Defender 高級威脅防護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)雲端，以進行分析。
+
+- 您可以在[這裡](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)找到 Microsoft Defender 高級執行緒保護如何處理資料的詳細資訊
+- 除了上述指導之外，由安全檔所傳送的檔案不會保留在進行分析所需的時間（通常是小於24小時）。
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>使用安全性 & 規範中心設定安全檔
 
-1. 開啟安全性 & 規範中心，網址<https://protection.office.com>為。
+1. 開啟安全性 & 規範中心，網址為 <https://protection.office.com> 。
 
 2. 移至**威脅管理** \> **原則** \> **ATP 安全附件**。
 

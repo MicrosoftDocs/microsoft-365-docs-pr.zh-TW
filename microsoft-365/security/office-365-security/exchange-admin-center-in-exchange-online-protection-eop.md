@@ -1,5 +1,5 @@
 ---
-title: Exchange Online Protection 中的 Exchange 系統管理中心
+title: 獨立 EOP 中的 Exchange 系統管理中心
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,29 +15,39 @@ search.appverid:
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: Exchange 系統管理中心 (EAC) 是 Microsoft Exchange Online Protection (EOP) 的網頁型管理主控台。
-ms.openlocfilehash: 3b5fb014e56a9928d58abffd5e4c96e1eef463ad
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+description: 深入瞭解獨立 Exchange Online Protection （EOP）中的 web 管理介面。
+ms.openlocfilehash: 378754f2565604236f7ac33e471d1f991238d304
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372491"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209712"
 ---
-# <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Online Protection 中的 Exchange 系統管理中心
+# <a name="exchange-admin-center-in-standalone-eop"></a>獨立 EOP 中的 Exchange 系統管理中心
 
-Exchange 系統管理中心 (EAC) 是 Microsoft Exchange Online Protection (EOP) 的網頁型管理主控台。
-
-在尋找此主題的 Exchange Server 版本？ 請參閱 [Exchange Server 中的 Exchange 系統管理中心](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center)。
+Exchange 系統管理中心（EAC）是一種以 web 為基礎的管理主控台，供獨立 Exchange Online Protection （EOP）使用。
 
 在尋找本主題的 Exchange Online 版本嗎？ 請參閱[Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
-## <a name="accessing-the-eac"></a>存取 EAC
+## <a name="open-the-eac-in-eop"></a>開啟 EOP 中的 EAC
 
-在大多數情況下，EOP 客戶會透過 Microsoft 365 系統管理中心存取 EAC。 You can find a link to EOP in the drop-down menu in the **Admin** tile, which is next to the **Me** tile. 按一下 [**管理**] 磚，然後從下拉式功能表即可移至 EAC 中選取**Exchange Online Protection** 。
+獨立 EOP 客戶可以使用下列方法存取 EAC：
 
-您也可以透過下列 URL 直接存取 EAC 登入頁面：`https://admin.protection.outlook.com/ecp/<companydomain>`。例如，`https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com`。指定使用者認證後，您會被直接帶往 EAC。
+- **從 Microsoft 365 系統管理中心**：
 
-## <a name="common-user-interface-elements-in-the-eac"></a>EAC 中常見的使用者介面元素
+  1. 移至 <https://admin.microsoft.com> 並按一下 [**全部顯示**]。
+
+     ![按一下 Microsoft 365 系統管理中心內的 [全部顯示]](../../media/m365-center-show-all.png)
+
+  2. 在出現的 [系統**管理中心**] 區段中，按一下 [**所有系統管理中心**]。
+
+     ![按一下 [Microsoft 365 系統管理中心] 中的 [所有系統管理中心]。](../../media/m365-center-select-all-admin-centers.png)
+
+  3. 在出現的 [**所有系統管理中心**] 頁面上，按一下 [ **Exchange Online Protection**]。
+
+- 直接移至 `https://admin.protection.outlook.com/ecp/` 。
+
+## <a name="common-user-interface-elements-in-the-eac-in-eop"></a>EOP 中 EAC 中的一般使用者介面元素
 
 本節說明 EMC 中的使用者介面元素。
 
@@ -47,15 +57,20 @@ Exchange 系統管理中心 (EAC) 是 Microsoft Exchange Online Protection (EOP)
 
 這是您在 EAC 中執行大部分工作時的第一個導覽層級。功能窗格依功能區域組織。
 
-1. **收件者**：您可在此檢視內部使用者和外部連絡人。
+- 收件**者：這**是您用來查看群組和外部連絡人的所在位置。
 
-2. **權限**：您可在此管理系統管理員角色。
+- **許可權**：這是您管理系統管理員角色的位置。
 
-3. **合規性管理**：您可在此尋找稽核記錄和報告，例如系統管理員角色群組報告。
+- **規範管理**：這是您可以找到系統管理員角色群組報告和系統管理員審核記錄報告的所在位置。
 
-4. **保護**：您可在此管理組織的反惡意程式碼和反垃圾郵件保護，以及管理隔離郵件。
+- **保護**：這是您可以管理反惡意程式碼原則、預設連線篩選原則及 DKIM 的所在位置。
 
-5. **郵件流程**：您可在此管理規則、公認的網域和連接器，以及執行郵件追蹤。
+  > [!NOTE]
+  > 您應在安全性 & 規範中心管理反惡意程式碼原則和預設連線篩選原則。 如需詳細資訊，請參閱在[EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md)及[設定 EOP 中的連線篩選](configure-the-connection-filter-policy.md)。
+
+- **郵件流程**：這是您管理郵件流程規則（也稱為傳輸規則）、公認的網域和連接器，以及您可以前往執行郵件追蹤的位置。
+
+- **混合**式：這是您可以執行[混合](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)式設定向導的所在位置，以及您可以在其中安裝[Exchange Online PowerShell 模組](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)的位置。
 
 ### <a name="tabs"></a>索引標籤
 
@@ -65,8 +80,9 @@ Exchange 系統管理中心 (EAC) 是 Microsoft Exchange Online Protection (EOP)
 
 按一下大部分的索引標籤時，會看到一個工具列。工具列上的圖示會執行特定動作。下表描述圖示及其動作。
 
+||||
+|---|---|---|
 |**Icon**|**名稱**|**Action**|
-|:-----|:-----|:-----|
 |![新增圖示](../../media/ITPro-EAC-AddIcon.gif)|新增|使用此圖示來建立新的物件。這些圖示中有些擁有一個關聯的向下箭號，您可以按一下以顯示所能建立的其他物件。|
 |![編輯圖示](../../media/ITPro-EAC-EditIcon.gif)|編輯|使用此圖示來編輯物件。|
 |![刪除圖示](../../media/ITPro-EAC-DeleteIcon.gif)|刪除|使用此圖示來刪除物件。部分刪除圖示擁有一個向下箭號，您可以按一下以顯示額外選項。|
@@ -75,6 +91,7 @@ Exchange 系統管理中心 (EAC) 是 Microsoft Exchange Online Protection (EOP)
 |![[更多選項] 圖示](../../media/ITPro-EAC-MoreOptionsIcon.gif)|更多選項|使用此圖示來檢視更多可對該索引標籤之物件執行的動作。例如，在 **[收件者 \> 使用者]** 中按一下此圖示會顯示可執行 **[進階搜尋]** 的選項。  |
 |![向上箭號圖示](../../media/ITPro-EAC-UpArrowIcon.gif)![向下箭號圖示](../../media/ITPro-EAC-DownArrowIcon.gif)|向上鍵和向下鍵|使用這些圖示向上或向下移動物件的優先順序。|
 |![[移除] 圖示](../../media/ITPro-EAC-RemoveIcon.gif)|移除|使用此圖示來移除清單中的物件。|
+|
 
 ### <a name="list-view"></a>清單檢視
 
@@ -88,21 +105,23 @@ Exchange 系統管理中心 (EAC) 是 Microsoft Exchange Online Protection (EOP)
 
 **[自有磚]** 可讓您登出 EAC，然後以不同使用者的身分登入。您可以從 **[說明]**![說明圖示](../../media/ITPro-EAC-HelpIcon.gif) 下拉式功能表執行下列動作：
 
-1. **說明：** 按一下 [說明圖示]![](../../media/ITPro-EAC-HelpIcon.gif) 即可檢視線上說明內容。
+- **說明：** 按一下 [說明圖示]![](../../media/ITPro-EAC-HelpIcon.gif) 即可檢視線上說明內容。
 
-2. **停用說明泡泡圖**：[說明泡泡圖] 會在您建立或編輯物件時，顯示欄位的內容說明。 您可以關閉 [說明泡泡圖]，或是在停用的狀態下將它開啟。
+- **意見**反應：留下意見反應。
 
-3. **著作權**：按一下此連結可以閱讀 Exchange Online Protection 的版權聲明。
+- **社區**：在社區論壇中張貼尋找答案的問題。
 
-4. **隱私權**：按一下可閱讀 Exchange Online Protection 的隱私權原則。
+- **停用說明泡泡圖**：[說明泡泡圖] 會在您建立或編輯物件時，顯示欄位的內容說明。 您可以關閉 [說明泡泡圖]，或是在停用的狀態下將它開啟。
+
+- **顯示命令記錄**：會開啟新的視窗，顯示根據 EAC 中設定之專案的對等 PowerShell 命令。
 
 ## <a name="supported-browsers"></a>支援的瀏覽器
 
 為享有 EAC 最佳使用體驗，建議您一律使用最新的瀏覽器、Office 用戶端和應用程式。 我們也建議您隨時安裝最新的軟體更新。 如需此服務支援的瀏覽器和系統需求的詳細資訊，請參閱 [Office 的系統需求](https://products.office.com/office-system-requirements)。
 
-## <a name="supported-languages-in-eop"></a>EOP 的支援語言
+## <a name="supported-languages"></a>支援的語言
 
-Exchange Online Protection 支援且可使用下列語言。
+在獨立 EOP 中，EAC 支援和使用下列語言。
 
 - 阿姆哈拉文
 
@@ -227,5 +246,3 @@ Exchange Online Protection 支援且可使用下列語言。
 - 越南文
 
 - 威爾斯文
-
-

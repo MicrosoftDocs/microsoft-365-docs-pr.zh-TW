@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 系統管理員可以深入瞭解與使用連接器（也稱為「郵件流程智慧」）郵件傳遞相關聯的錯誤代碼。
-ms.openlocfilehash: aa156299dcc835369b7eb69bb5719b27078d8404
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55b57e4b487444abb57bcc184ef6fd742ea9dc1d
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635633"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206613"
 ---
-# <a name="mail-flow-intelligence"></a>郵件流程智慧
+# <a name="mail-flow-intelligence-in-eop"></a>EOP 中的郵件流程智慧
 
-一般來說，您會使用連接器將組織中的電子郵件訊息路由傳送至您的內部部署電子郵件環境。 您也可以使用連接器將來自 Microsoft 365 的郵件路由傳送至夥伴組織。 當 Microsoft 365 無法透過連接器傳遞這些郵件時，他們就會在 Microsoft 365 中佇列。 Microsoft 365 會繼續重試每封郵件24小時的傳遞。 24小時後，佇列中的郵件會到期，而且郵件會傳回給原始寄件者的未傳遞回報（也稱為 NDR 或退回的郵件）。
+在包含 Exchange Online 或獨立 Exchange online Protection （EOP）組織中信箱的 Microsoft 365 組織中，您通常會使用連接器將電子郵件訊息從 EOP 路由傳送至您的內部部署電子郵件環境。 您也可以使用連接器將來自 Microsoft 365 的郵件路由傳送至夥伴組織。 當 Microsoft 365 無法透過連接器傳遞這些郵件時，他們就會在 Microsoft 365 中佇列。 Microsoft 365 會繼續重試每封郵件24小時的傳遞。 24小時後，佇列中的郵件會到期，而且郵件會傳回給原始寄件者的未傳遞回報（也稱為 NDR 或退回的郵件）。
 
 當無法使用連接器傳遞郵件時，Microsoft 365 會產生錯誤。 本主題說明最常見的錯誤及其解決方案。 透過連接器傳送的未傳遞郵件的排隊和通知錯誤，稱為「_郵件流程智慧_」。
 
@@ -72,9 +72,9 @@ ms.locfileid: "43635633"
 
     2. 選取 [**寄件者**] 值為**Office 365**的連接器，並選取**您組織的電子郵件伺服器**的 [**到**] 值，然後執行下列其中一個步驟：
 
-       - 按一下 [**刪除** ![移除圖示] 以刪除連接器](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - 按一下 [**刪除**移除圖示] 以刪除連接器 ![](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - 按一下 [**編輯** ![編輯圖示](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) ] 並**取消選中，** 以停用連接器。
+       - 按一下 [**編輯** ![ 編輯圖示] 並取消 ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 選中 **，以**停用連接器。
 
   - 將與您的內部部署電子郵件環境關聯的 Microsoft 365 中公認的網域從**內部轉送**變更為**權威性**。 如需相關指示，請參閱[管理 Exchange Online 中公認的網域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
@@ -86,7 +86,7 @@ ms.locfileid: "43635633"
 
 此錯誤通常是指 Microsoft 365 連接至目的地電子郵件伺服器，但伺服器會以立即錯誤回應，或不符合連線需求。 錯誤詳細資料會說明問題。 例如：
 
-- 目的地電子郵件伺服器會以「服務無法使用」的錯誤回應，這表示伺服器無法維持與 Office 365 的通訊。
+- 目的地電子郵件伺服器會以「服務無法使用」的錯誤回應，這表示伺服器無法與 Microsoft 365 保持通訊。
 
 - 連接器設定為需要 TLS，但目的地電子郵件伺服器不支援 TLS。
 
@@ -102,15 +102,15 @@ ms.locfileid: "43635633"
 
 - 您的防火牆使用 SMTP 封包檢查規則，而這些規則不會正常運作。
 
-- 您的內部部署電子郵件伺服器無法正常運作（例如，服務懸掛、損毀或低系統資源），造成伺服器超時並關閉 Office 365 的連線。
+- 您的內部部署電子郵件伺服器無法正常運作（例如，服務懸掛、損毀或低系統資源），這會導致伺服器超時並關閉 Microsoft 365 的連線。
 
-- 您的內部部署環境與 Office 365 之間有網路問題。
+- 您的內部部署環境與 Microsoft 365 之間有網路問題。
 
 ### <a name="how-do-i-fix-error-code-450-44318"></a>如何修正錯誤碼 450 4.4.318？
 
 - 找出哪個案例適用于您，並進行必要的更正。
 
-- 如果問題是由您的內部部署環境與 Office 365 之間的網路問題所造成，請與您的網路小組聯繫以進行問題的疑難排解。
+- 如果問題是由您的內部部署環境和 Microsoft 365 之間的網路問題所造成，請與您的網路小組聯繫以進行問題的疑難排解。
 
 - 如果錯誤來自您的夥伴組織（例如，協力廠商雲端服務提供者），您必須聯繫您的合作夥伴以修正此問題。
 

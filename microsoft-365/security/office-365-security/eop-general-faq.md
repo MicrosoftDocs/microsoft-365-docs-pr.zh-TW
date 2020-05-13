@@ -2,10 +2,10 @@
 title: EOP 一般常見問題集
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 1/2/2018
+ms.date: ''
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -13,17 +13,17 @@ localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 ms.custom:
 - seo-marvel-apr2020
-description: 在本主題中，您將會看到有關 Microsoft Exchange Online Protection （EOP）雲端主控的電子郵件篩選服務最常見的一般問題。
-ms.openlocfilehash: 48841e5e68dd560329eadc0a654e6d8fe1b2d09e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 取得關於 Exchange Online Protection （EOP）雲端主控電子郵件篩選服務的最常見一般問題的答案。
+ms.openlocfilehash: 02aa7175e95cf706ed13268035953400af2485a7
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036557"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206659"
 ---
 # <a name="eop-general-faq"></a>EOP 一般常見問題集
 
-在這裡，我們將回答有關於 Microsoft Exchange Online Protection (EOP) 雲端電子郵件篩選服務的最常見一般問題。如需其他常見問題集 (FAQ) 主題，請前往下列連結：
+在這裡，我們會針對 Exchange Online Protection （EOP）雲端託管的電子郵件篩選服務，回答最常見的一般問題。 如需其他常見問題集 (FAQ) 主題，請前往下列連結：
 
 - [EOP 排入佇列、延後和退回的訊息常見問題集](eop-queued-deferred-and-bounced-messages-faq.md)
 
@@ -37,56 +37,56 @@ ms.locfileid: "44036557"
 
 - [郵件追蹤常見問題集](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq)
 
-**問：EOP 是什麼？**
+## <a name="what-is-eop"></a>EOP 是什麼？
 
-答：EOP 是雲端電子郵件篩選服務，專門用來保護客戶遠離垃圾郵件與惡意程式碼，以及執行自訂原則規則。
+EOP 是一種雲端主控的電子郵件篩選服務，可為客戶防範垃圾郵件和惡意程式碼，以及實施自訂原則規則。 EOP 包含在任何包含 Exchange Online 信箱的 Microsoft 365 訂閱中。 EOP 也以獨立的方式提供，以協助保護內部部署的電子郵件環境。
 
-**問：如何註冊 EOP 試用版或購買 EOP？**
+## <a name="how-do-i-sign-up-for-an-eop-trial-or-purchase-eop"></a>如何註冊 EOP 試用版或購買 EOP？
 
-答：可透過以下網址註冊 EOP 試用版或購買 EOP：[Exchange Online Protection 首頁](https://products.office.com/exchange/exchange-email-security-spam-protection)。請注意，試用購買的功能與付費訂閱版相同，但另外包含 [Exchange Enterprise CAL with Services](https://products.office.com/exchange/microsoft-exchange-server-licensing-licensing-overview) 訂閱方案提供的其他功能。
+在[Exchange Online Protection 首頁](https://products.office.com/exchange/exchange-email-security-spam-protection)上，註冊 EOP 試用版或透過網頁購買 EOP。 請注意，試用期購買的功能與付費訂閱相同，但也包含[Exchange ENTERPRISE CAL With Services](https://products.office.com/exchange/microsoft-exchange-server-licensing-licensing-overview)訂閱計畫提供的其他功能。
 
-**問：EOP 如何定價？**
+## <a name="how-is-eop-priced"></a>EOP 的定價如何？
 
-答：EOP 是依使用者授權。如需最新定價資訊，請參閱 [Exchange Online Protection 首頁](https://products.office.com/exchange/exchange-email-security-spam-protection)。
+EOP 是由使用者授權。 如需最新的定價資訊，請參閱[Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)首頁。
 
-**問：將 EOP 放入實際執行環境需時多久？**
+## <a name="how-long-does-it-take-to-put-eop-into-production"></a>將 EOP 投入實際執行所需的時間多久？
 
-答：當您依照[設定 EOP 服務](set-up-your-eop-service.md)中所述步驟變更 MX 記錄，以及透過 EOP 變更郵件流程，就會立即開始進行篩選。MX 記錄可能需要 24-48 個小時，以透過 DNS 進行傳播。在處理過程中，您隨時可以在 Exchange 系統管理中心 (EAC) 中微調您的保護設定。
+當您根據[設定 EOP 服務](set-up-your-eop-service.md)中所述的步驟變更 MX 記錄，並將郵件流過 EOP 時，篩選會立即開始。 MX 記錄可能需要長達24-48 小時才能透過 DNS 傳播。 在此程式期間，您可以隨時微調保護設定。
 
-**問：我是否需要使用 Microsoft 365 的所有功能才能使用 EOP？如果我只想要 EOP 保護，該怎麼辦？**
+## <a name="do-i-have-to-use-all-features-of-microsoft-365-to-use-eop-what-if-i-just-want-eop-protection-and-thats-all"></a>我必須使用 Microsoft 365 的所有功能才能使用 EOP 嗎？ 如果我只想要 EOP 保護，該怎麼辦？
 
-答： 您可以使用 EOP 來保護您的內部部署信箱，而不需要使用 Microsoft 365 的任何其他功能。 這稱為獨立訂閱。 您可以在[Exchange Online Protection 服務說明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)中找到 EOP 功能的清單。
+您可以使用 EOP 來保護您的內部部署信箱，而不需要使用 Microsoft 365 的任何其他功能。 這稱為獨立訂閱。 您可以在[Exchange Online Protection 服務說明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)中找到 EOP 功能的清單。
 
-**問：在註冊透過 EOP 的電子郵件篩選時，為什麼需要 Microsoft 365 租使用者？**
+## <a name="why-do-i-need-a-microsoft-365-tenant-when-signing-up-for-email-filtering-through-eop"></a>為什麼在註冊透過 EOP 的電子郵件篩選時，我需要 Microsoft 365 租使用者？
 
-答： Microsoft 365 是指可透過 Microsoft 365 租使用者存取的產品和服務集合所提供的名稱。 請將 Microsoft 365 租使用者想像為您可以為電子郵件篩選新增授權的起始點。
+Microsoft 365 是指可透過 Microsoft 365 租使用者存取的產品和服務集合所提供的名稱。 請將 Microsoft 365 租使用者想像為您可以為電子郵件篩選新增授權的起始點。
 
-**問：EOP 是否有通訊入口網站可讓我了解已知問題和預期的解決方案？有哪些新功能？**
+## <a name="does-eop-have-a-communication-portal-where-i-can-find-out-about-known-issues-and-expected-resolutions-what-about-new-features"></a>EOP 是否有通訊入口網站，可從中找出已知問題和預期的解決方法？ 新功能的功能為何？
 
-答： Microsoft 365 系統管理中心將會包含這項資訊。 如果您受到服務等級事件的影響，您應該會在登入 Microsoft 365 系統管理中心後，看到一則通訊警示（通常伴隨鈴聲圖示）。 建議您詳讀內容並採取適當的行動。
+Microsoft 365 系統管理中心將會包含這項資訊。 如果您受到服務等級事件的影響，您應該會在登入 Microsoft 365 系統管理中心後，看到一則通訊警示（通常伴隨鈴聲圖示）。 建議您詳讀內容並採取適當的行動。
 
 關於新的 EOP 功能， [Microsoft 365 for business 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)是用來找出即將推出之新功能之相關資訊的好資源。 我們也會將有關新功能的博客文章張貼至[Microsoft 365 博客](https://www.microsoft.com/microsoft-365/blog/)網站。
 
-**問：此服務可與舊版 Exchange (例如 Exchange Server 2010) 和非 Exchange 環境搭配使用嗎？**
+## <a name="does-the-service-work-with-legacy-exchange-versions-such-as-exchange-server-2010-and-non-exchange-environments"></a>服務是否可搭配舊版 Exchange 版本（例如 Exchange Server 2010）和非 Exchange 環境使用？
 
-答：可以，此服務與伺服器無關，可與任何 SMTP 郵件傳輸代理程式共用。
+是的，此服務是伺服器不可知的，而且可以搭配任何 SMTP 郵件傳輸代理程式使用。
 
-**問：哪種組織規模可以使用此項服務？**
+## <a name="what-size-organization-can-use-the-service"></a>組織可以使用服務的規模為何？
 
-問：所有規模都可以。無論您組織的成長速度多快，EOP 網路都有足夠容量可容納成長。
+任何大小。 EOP 網路有足夠的容量可容納您的成長，不論組織的成長速度為何。
 
-**我需要哪些權限才能設定 EOP？**
+## <a name="what-permissions-do-i-need-to-set-up-eop"></a>我需要哪些權限才能設定 EOP？
 
 為了設定 EOP，您必須是全域管理員或 Exchange 公司管理員（組織管理角色群組）。
 
-**問：我如何確定我的資料和私人資訊是安全的？**
+## <a name="how-do-i-know-my-data-and-private-information-are-safe"></a>如何知道我的資料和私人資訊是安全的？
 
-答：若想深入了解我們為了確保您的資料和私人資訊之安全所採取的措施，包括服務等級協定 (SLA) 的相關資訊，請前往 [Office 365 信任中心](https://www.microsoft.com/trust-center)。
+若要深入瞭解我們採取的步驟，以確保資料和私人資訊的安全性，包括服務等級協定（Sla）的相關資訊，請移至[Office 365 信任中心](https://www.microsoft.com/trust-center)。
 
-**問：是否有我應該知道的任何限制，例如郵件大小限制？**
+## <a name="are-there-any-limits-i-should-be-aware-of-such-as-message-size-limitations"></a>是否有任何應注意的限制，例如郵件大小限制？
 
-答：是。如需 EOP 限制的詳細資訊，請參閱＜[Exchange Online Protection 限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)＞。
+是。 如需 EOP 中限制的相關資訊，請參閱[Exchange Online Protection 限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)。
 
-**問： EOP 是否支援 PowerShell？**
+## <a name="does-eop-support-powershell"></a>EOP 是否支援 PowerShell？
 
-答： 是的，可透過 PowerShell 取得完整的 EOP 功能。 如需詳細資訊，請參閱 [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell)。
+可以透過使用 Exchange Online 信箱的組織 PowerShell: Exchange Online PowerShell 取得完整的 EOP 功能;獨立 EOP 組織的獨立 EOP PowerShell。 如需詳細資訊，請參閱[Exchange online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)和[exchange online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell)。

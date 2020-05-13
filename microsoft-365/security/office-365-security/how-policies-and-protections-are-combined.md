@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 瞭解 Office 365 保護的應用程式順序，以及保護原則中的優先順序值如何決定所套用的原則。
-ms.openlocfilehash: 856b3bc39cd971e605cd9f1c0f31554a853c1b67
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 系統管理員可以深入瞭解 Exchange Online Protection （EOP）中的保護應用程式順序，以及保護原則中的優先順序值如何決定所套用的原則。
+ms.openlocfilehash: 176d39a240d49e0118b4bb8e8cee52a6e7c61b0e
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036713"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209436"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子郵件保護的順序和優先順序
 
-做為 Microsoft 365 使用者，您的輸入電子郵件可能會以多種保護形式進行標記。 例如，適用于所有 Microsoft 365 客戶的內建 EOP 防網路釣魚原則，以及 Office 365 高級威脅防護客戶也可以使用的更強健的 ATP 反網路釣魚原則。 郵件也會透過多個偵測掃描進行惡意程式碼、垃圾郵件、網路釣魚等的掃描。在此活動中，可能會對套用的原則產生一些混淆。
+在未使用 Exchange online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）組織中使用信箱的 Microsoft 365 組織中，輸入電子郵件可能會以多種保護形式進行標記。 例如，可供所有 Microsoft 365 客戶使用的內建 EOP 防網路釣魚原則，以及 Office 365 高級威脅防護（Office 365 ATP）客戶也可以使用的更強健的 ATP 反網路釣魚原則。 郵件也會透過多個偵測掃描進行惡意程式碼、垃圾郵件、網路釣魚等的掃描。在此活動中，可能會對套用的原則產生一些混淆。
 
 一般說來，套用至郵件的原則會在**CAT （類別）** 屬性的**X-Forefront-Antispam-Report**標頭中識別。 如需詳細資訊，請參閱＜[反垃圾郵件訊息標頭](anti-spam-message-headers.md)＞。
 
@@ -35,20 +35,20 @@ ms.locfileid: "44036713"
 
   |||||
   |---|---|---|---|
-  |**Priority** (優先順序)|**電子郵件保護**|**類別**|**要管理的位置**|
-  |1|惡意程式碼|CAT： MALW|[在 Office 365 中設定反惡意程式碼原則](configure-anti-malware-policies.md)|
-  |第|網路釣魚|CAT： PHSH|[設定 Office 365 的反垃圾郵件原則](configure-your-spam-filter-policies.md)|
-  |個|高信賴度的垃圾郵件|CAT： HSPM|[設定 Office 365 的反垃圾郵件原則](configure-your-spam-filter-policies.md)|
-  |4 |詐騙|CAT：欺騙|[在 Office 365 中設定假冒情報](learn-about-spoof-intelligence.md)|
-  |5 |垃圾郵件|CAT： SPM|[設定 Office 365 的反垃圾郵件原則](configure-your-spam-filter-policies.md)|
-  |6 |大量|CAT：大量|[設定 Office 365 的反垃圾郵件原則](configure-your-spam-filter-policies.md)|
-  |7<sup>\*</sup>|網域模仿（受保護的使用者）|DIMP|[在 Office 365 中設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)|
-  |8：00<sup>\*</sup>|使用者類比（受保護的網域）|UIMP|[在 Office 365 中設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)|
+  |**優先順序**|**電子郵件保護**|**類別**|**要管理的位置**|
+  |1|惡意程式碼|CAT： MALW|[在 EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md)|
+  |第|網路釣魚|CAT： PHSH|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
+  |個|高信賴度的垃圾郵件|CAT： HSPM|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
+  |4 |詐騙|CAT：欺騙|[在 EOP 中設定欺騙情報](learn-about-spoof-intelligence.md)|
+  |5 |垃圾郵件|CAT： SPM|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
+  |6 |大量|CAT：大量|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
+  |7<sup>\*</sup>|網域模仿（受保護的使用者）|DIMP|[設定 ATP 防網路釣魚原則](configure-atp-anti-phishing-policies.md)|
+  |8：00<sup>\*</sup>|使用者類比（受保護的網域）|UIMP|[設定 ATP 防網路釣魚原則](configure-atp-anti-phishing-policies.md)|
   |
 
   <sup>\*</sup>這些功能只有在 ATP 反網路釣魚原則中才能使用。
 
-- **原則的優先順序**：針對每一種保護類型（反垃圾郵件、反惡意程式碼、反網路釣魚等等），都有一個適用于每個人的預設原則，但您通常可以建立適用于特定使用者的自訂原則。 每個自訂原則都有一個優先順序值，以決定原則的套用順序。 預設原則永遠套用於最後。
+- **原則的優先順序**：針對每一種保護類型（反垃圾郵件、反惡意程式碼、反網路釣魚等等），都有一個適用于每個人的預設原則，但您可以建立適用于特定使用者的自訂原則。 每個自訂原則都有一個優先順序值，以決定原則的套用順序。 預設原則永遠套用於最後。
 
   如果使用者是在相同類型的多個原則中定義，則只有具有最高優先順序的原則適用于。 不會為使用者評估任何其他類型的原則（包括預設原則）。
 
@@ -56,7 +56,7 @@ ms.locfileid: "44036713"
 
   |||||
   |---|---|---|---|
-  |**ATP 反網路釣魚原則**|**Priority** (優先順序)|**使用者模擬**|**反詐騙**|
+  |**ATP 反網路釣魚原則**|**優先順序**|**使用者模擬**|**反詐騙**|
   |原則 A|1|開啟|關閉|
   |原則 B|第|關閉|開啟|
   |

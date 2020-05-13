@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 系統管理員可以在安全性與合規性中心使用郵件追蹤，以了解郵件發生什麼情況。
-ms.openlocfilehash: 12600eeb5242f0de5fc187be81b9311d4f9cb645
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e78d3361306a93542302e29ff5c1fac4e2262b2f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635313"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209424"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件追蹤
 
@@ -27,11 +27,11 @@ ms.locfileid: "43635313"
 安全性 & 規範中心內的郵件追蹤改善於 Exchange 系統管理中心（EAC）中提供的原始郵件追蹤。 您可以使用郵件追蹤中的資訊，有效地解答使用者對郵件發生什麼問題、疑難排解郵件流程問題，以及驗證原則變更。
 
 > [!NOTE]
-> * 若要執行郵件追蹤，您必須是「組織管理」、「合規性管理」或「服務台」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。 <br/><br/>* 結果中顯示的訊息數目上限取決於您選取的報告類型（如需詳細資訊，請參閱[選擇報表類型](#choose-report-type)區段）。 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的 [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) Cmdlet 會在結果中傳回所有郵件。
+> •若要進行郵件追蹤，您必須是「組織管理」、「合規性管理」或「服務台」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。 <br/><br/>•結果中顯示的訊息數目上限取決於您選取的報告類型（如需詳細資訊，請參閱[選擇報表類型](#choose-report-type)區段）。 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的 [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) Cmdlet 會在結果中傳回所有郵件。
 
 ## <a name="open-message-trace"></a>開啟郵件追蹤
 
-1. 開啟安全性 & 規範中心，網址<https://protection.office.com>為。
+1. 開啟安全性 & 規範中心，網址為 <https://protection.office.com> 。
 
 2. 展開 [**郵件流程**]，然後選取 [**郵件追蹤**]。
 
@@ -39,7 +39,7 @@ ms.locfileid: "43635313"
 
 您可以按一下 [開始追蹤]**** 按鈕，從這裡開始新的預設追蹤。 這會搜尋過去兩天的所有寄件者和收件者的所有郵件。 或者，您也可以從可用的查詢類別使用其中一個已儲存的查詢，並且依現狀執行它們或將它們用來作為自己的查詢起點：
 
-- **預設查詢**：Office 365 提供的內建查詢。
+- **預設查詢**： Microsoft 365 提供的內建查詢。
 
 - **自訂查詢**：貴組織的系統管理員所儲存的查詢，可供日後使用。
 
@@ -94,11 +94,11 @@ ms.locfileid: "43635313"
 
 - **失敗**：未傳遞郵件。
 
-- **已隔離**：已隔離郵件 (垃圾郵件、大宗郵件或網路釣魚)。 如需詳細資訊，請參閱[在 Office 365 中隔離電子郵件](quarantine-email-messages.md)。
+- **已隔離**：已隔離郵件 (垃圾郵件、大宗郵件或網路釣魚)。 如需詳細資訊，請參閱[在 EOP 中隔離的電子郵件訊息](quarantine-email-messages.md)。
 
 - **篩選為垃圾郵件**：已將郵件識別為垃圾郵件，而且已拒絕或封鎖該郵件 (未隔離)。
 
-- **正在取得狀態**：Office 365 最近已收到郵件，但還沒有其他狀態資料。 請在幾分鐘後再回來查看。
+- **取得狀態：** 郵件最近是由 Microsoft 365 收到，但其他狀態資料仍無法使用。 請在幾分鐘後再回來查看。
 
 **注意**：只有小於 10 天的搜尋，才能使用 [擱置]****、[已隔離]**** 和 [篩選為垃圾郵件]**** 這些值。 此外，實際和報告的傳遞狀態之間可能會有 5 到 10 分鐘的延遲。
 
@@ -106,7 +106,7 @@ ms.locfileid: "43635313"
 
 這是網際網路郵件識別碼 (也稱為「用戶端識別碼」)，可在郵件標頭的 [郵件識別碼:]**** 標頭欄位中找到。 使用者可將此值提供給您，以便您調查特定郵件。
 
-此值是郵件存留時間的常數。 針對 Microsoft 365 或 Exchange 中建立的郵件，此值的格式`<GUID@ServerFQDN>`為，包含角括弧（\< \>）。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。 其他郵件系統可能會使用不同的語法或值。 此值應為唯一的狀態，但並非所有電子郵件系統都會嚴格遵循此要求。 如果來自外部來源的內送郵件的 [郵件識別碼:]**** 標頭欄位不存在或空白，則會指派任意值。
+此值是郵件存留時間的常數。 針對 Microsoft 365 或 Exchange 中建立的郵件，此值的格式為 `<GUID@ServerFQDN>` ，包含角括弧（ \< \> ）。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。 其他郵件系統可能會使用不同的語法或值。 此值應為唯一的狀態，但並非所有電子郵件系統都會嚴格遵循此要求。 如果來自外部來源的內送郵件的 [郵件識別碼:]**** 標頭欄位不存在或空白，則會指派任意值。
 
 當您使用 [郵件識別碼:]**** 來篩選結果時，請務必包含完整的字串，包括任何角括號。
 
@@ -333,9 +333,9 @@ ms.locfileid: "43635313"
 |**值**|**描述**|
 |:-----|:-----|
 |`SFV=NSPM`|郵件標記為非垃圾郵件，並傳送給預定的收件者。|
-|`SFV=SPM`|內容篩選已將郵件標記為垃圾郵件。|
+|`SFV=SPM`|郵件被反垃圾郵件篩選（也稱為內容篩選）標示為垃圾郵件。|
 |`SFV=BLK`|已略過篩選，且郵件來自封鎖的寄件者，所以封鎖郵件。|
-|`SFV=SKS`|郵件先被標示為垃圾郵件，再由內容篩選器進行處理。這包括與傳輸規則相符而被自動標示為垃圾郵件，並略過所有其他篩選的郵件。|
+|`SFV=SKS`|在反垃圾郵件篩選處理之前，郵件會標示為垃圾郵件。 這包括符合郵件流程規則 (也稱為傳輸規則) 而自動標記為垃圾郵件，因而略過所有其他篩選的郵件。|
 |`SCL=<number>`|如需不同 SCL 值和其意義的詳細資訊，請參閱[垃圾郵件信賴等級](spam-confidence-levels.md)。|
 |`PCL=<number>`|郵件的網路釣魚信賴等級 (PCL) 值。 這些值的解譯方式與[垃圾郵件信賴等級](spam-confidence-levels.md)中所記載的 SCL 值相同。|
 |`DI=SB`|已封鎖郵件的寄件者。|

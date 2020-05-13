@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何建立郵件流程規則（傳輸規則）來識別郵件，以及在 Exchange Online Protection 中設定郵件的垃圾郵件信賴等級（SCL）。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 444a7f2a8342102c2222cc734b2592f46632f8d3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f9af154a9f71992597e111147b792cd5286e2ad3
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035007"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208558"
 ---
-# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>使用郵件流程規則在郵件中設定垃圾郵件信賴等級 (SCL)
+# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>使用郵件流程規則來設定 EOP 中郵件的垃圾郵件信賴等級（SCL）
 
-如果您是使用 Exchange Online 中的信箱或獨立 Exchange Online Protection （EOP）客戶但沒有 Exchange Online 信箱的 Microsoft 365 客戶，EOP 會使用反垃圾郵件原則（也稱為垃圾郵件篩選原則或內容篩選原則）來掃描輸入郵件中的垃圾郵件。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+在未使用 Exchange online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）組織中使用信箱的 Microsoft 365 組織中，EOP 會使用反垃圾郵件原則（也稱為垃圾郵件篩選原則或內容篩選原則）來掃描輸入郵件中的垃圾郵件。 如需詳細資訊，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-如果您想要將特定郵件標記為垃圾郵件，然後再透過垃圾郵件篩選進行掃描，或將郵件標示為略過垃圾郵件篩選，您可以建立郵件流程規則（也稱為傳輸規則）來識別郵件，並設定垃圾郵件信賴等級（SCL）。 如需有關 SCL 的詳細資訊，請參閱[Office 365 中的垃圾郵件信賴等級（SCL）](spam-confidence-levels.md)。
+如果您想要將特定郵件標記為垃圾郵件，然後再透過垃圾郵件篩選進行掃描，或將郵件標示為略過垃圾郵件篩選，您可以建立郵件流程規則（也稱為傳輸規則）來識別郵件，並設定垃圾郵件信賴等級（SCL）。 如需有關 SCL 的詳細資訊，請參閱[EOP 中的垃圾郵件信賴等級（SCL）](spam-confidence-levels.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -42,7 +42,7 @@ ms.locfileid: "44035007"
 
 1. 在 EAC 中，移至 [郵件流程]**** \> [規則]****。
 
-2. 按一下 [**新增** ![加入](../../media/ITPro-EAC-AddIcon.png)圖示]，然後選取 [**建立新的規則**]。
+2. 按一下 [**新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) ，然後選取 [**建立新的規則**]。
 
 3. 在開啟的 [**新增規則**] 頁面中，設定下列設定：
 
@@ -52,12 +52,12 @@ ms.locfileid: "44035007"
 
    - 在下列情況中套用**此規則**：選取一或多個條件來識別郵件。 如需詳細資訊，請參閱[在 Exchange Online 中的郵件流程規則條件和例外狀況（謂語）](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
 
-   - **請執行下列**動作：選取 [**修改郵件屬性** \> ]**設定垃圾郵件信賴等級（SCL）**。 在出現的 [**指定 SCL** ] 對話方塊中，設定下列其中一個值：
+   - **請執行下列**動作：選取 [**修改郵件屬性**] \> **設定垃圾郵件信賴等級（SCL）**。 在出現的 [**指定 SCL** ] 對話方塊中，設定下列其中一個值：
 
    - **略過垃圾郵件篩選**：這會將 SCL 設為-1，這表示郵件會略過垃圾郵件篩選。
 
      > [!CAUTION]
-     > 請務必小心允許郵件略過垃圾郵件篩選。 攻擊者可以利用此弱點，將網路釣魚和其他惡意郵件傳送至您的組織。 郵件流程規則需要的不僅僅是寄件者的電子郵件地址或網域。 如需詳細資訊，請參閱[在 Office 365 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。
+     > 請務必小心允許郵件略過垃圾郵件篩選。 攻擊者可以利用此弱點，將網路釣魚和其他惡意郵件傳送至您的組織。 郵件流程規則需要的不僅僅是寄件者的電子郵件地址或網域。 如需詳細資訊，請參閱[在 EOP 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。
 
    - **0 至 4**：透過垃圾郵件篩選傳送郵件以進行其他處理。
 
@@ -69,4 +69,4 @@ ms.locfileid: "44035007"
 
 ## <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 
-若要驗證此程式是否正常運作，請將電子郵件訊息傳送給組織內部的人員，並確認對郵件執行的動作如期。 例如，如果您**將垃圾郵件信賴等級（SCL）設定**為**略過垃圾郵件篩選**，則郵件應該會傳送至指定收件者的收件匣。 不過，如果您**將垃圾郵件信賴等級（SCL）設定**為**9**，而且適用之內容篩選原則的**高信賴垃圾郵件**動作是將郵件移至 [垃圾郵件] 資料夾，則郵件應該會傳送至指定收件者的 [垃圾郵件] 資料夾。
+若要驗證此程式是否正常運作，請將電子郵件訊息傳送給組織內部的人員，並確認對郵件執行的動作如期。 例如，如果您**將垃圾郵件信賴等級（SCL）設定**為**略過垃圾郵件篩選**，則郵件應該會傳送至指定收件者的收件匣。 不過，如果您**將垃圾郵件信賴等級（SCL）設定**為**9**，且適用的反垃圾郵件原則的**高可信度垃圾郵件**動作是將郵件移至 [垃圾郵件] 資料夾，則郵件應該會傳送至指定收件者的 [垃圾郵件] 資料夾。

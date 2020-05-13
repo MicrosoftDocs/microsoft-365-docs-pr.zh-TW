@@ -14,14 +14,14 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解如何將網域和設定從一個 Microsoft Exchange Online Protection （EOP）組織（租使用者）移至另一個。
-ms.openlocfilehash: 86f268e6bfb5ed7229137df8b6bf017f15ab1f9c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c57f8363093c2e1a9bfad5c34f62a0ca2c1ae689
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033959"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208311"
 ---
-# <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>將網域及設定從某個 EOP 組織移到另一個 EOP 組織
+# <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>將網域及設定從某個 EOP 組織移到另一個組織
 
 隨時變更的商務需求有時需要將一個 Microsoft Exchange Online Protection (EOP) 組織 (租用戶) 分割成兩個個別的組織、將兩個組織合併成一個，或是將您的網域和 EOP 設定從一個組織移至另一個組織。從一個 EOP 組織移至第二個 EOP 組織並不容易，但是利用幾個基本遠端 Windows PowerShell 指令碼和少量的準備工作，就可以使用一個相當小的維護視窗達成此目地。
 
@@ -44,9 +44,13 @@ ms.locfileid: "44033959"
 
 - 群組
 
-- 反垃圾郵件內容篩選器
+- 反垃圾郵件
 
-- 反惡意程式碼內容篩選器
+  - 反垃圾郵件原則（也稱為內容篩選原則）
+  - 輸出垃圾郵件篩選原則
+  - 連接篩選原則
+
+- 反惡意程式碼原則
 
 - 連接器
 
@@ -125,7 +129,7 @@ Get-HostedContentFilterPolicy | Export-Clixml HostedContentFilterPolicy.xml
 Get-HostedContentFilterRule | Export-Clixml HostedContentFilterRule.xml
 Get-HostedOutboundSpamFilterPolicy | Export-Clixml HostedOutboundSpamFilterPolicy.xml
 #****************************************************************************
-# Anti-malware content filters
+# Anti-malware policies
 #****************************************************************************
 Get-MalwareFilterPolicy | Export-Clixml MalwareFilterPolicy.xml
 Get-MalwareFilterRule | Export-Clixml MalwareFilterRule.xml
@@ -175,9 +179,11 @@ Foreach ($domain in $Domains) {
 
 現在，您可以從目標組織的 Microsoft 365 系統管理中心檢閱並收集資訊，讓您可以在適當時間快速驗證網域：
 
-1. 登入 [https://portal.office.com](https://portal.office.com) 的 Microsoft 365 系統管理中心。
+1. 登入 <https://portal.office.com> 的 Microsoft 365 系統管理中心。
 
 2. 按一下 **[網域]**。
+
+   如果您看不到網域，請按一下 [**自訂 navigtion**]，選取 [**設定**]，然後按一下 [**儲存**]。
 
 3. 按一下每個**啟動安裝程式**連結，然後繼續執行安裝精靈。
 
@@ -185,7 +191,7 @@ Foreach ($domain in $Domains) {
 
 5. 記錄您降用來驗證網域的 MX 記錄或 TXT 記錄，然後完成安裝精靈。
 
-6. 將驗證 TXT 記錄新增至您的 DNS 記錄。 這樣可以在網域從目標組織移除後，讓您更快速地在來源組織中驗證網域。 如需詳細的設定 DNS 資訊，請參閱[在任一 DNS 主機服務提供者建立 Office 365 的 DNS 記錄](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+6. 將驗證 TXT 記錄新增至您的 DNS 記錄。 這樣可以在網域從目標組織移除後，讓您更快速地在來源組織中驗證網域。 如需設定 DNS 的詳細資訊，請參閱[在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>步驟 3：強制寄件者將郵件加入佇列
 
@@ -195,8 +201,7 @@ Foreach ($domain in $Domains) {
 
 另一個選項是將無效的 MX 記錄放在保留網域 DNS 記錄的每個網域中 (也就是您的 DNS 主機服務)。這會導致寄件者將您的郵件加入佇列然後重試 (一般的重試嘗試會維持 48 個小時，但可能會因為不同的提供者而有所不同)。您可以使用 invalid.outlook.com 做為無效的 MX 目標。將 MX 記錄上的存留時間 (TTL) 值降低至 5 分鐘，將有助於更快速地將變更傳播到 DNS 提供者。
 
-如需詳細的設定 DNS 資訊，請參閱[在任一 DNS 主機服務提供者建立 Office 365 的 DNS 記錄](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
-
+如需設定 DNS 的詳細資訊，請參閱[在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
 
 > [!IMPORTANT]
 > 不同的提供者將郵件加入佇列的時間也有所不同。您必須快速地設定新的租用戶並還原您的 DNS 設定，以避免未傳遞回報 (NDR) 在佇列時間過期時傳送給寄件者。
@@ -926,4 +931,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>步驟 8：還原您的 DNS 設定以停止郵件佇列
 
-如果您選擇將 MX 記錄設為無效的位址，造成寄件者在您的轉換期間將郵件加入佇列，您必須將它們設回[系統管理中心](https://admin.microsoft.com)中所指定的正確值。 如需詳細的設定 DNS 資訊，請參閱[在任一 DNS 主機服務提供者建立 Office 365 的 DNS 記錄](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+如果您選擇將 MX 記錄設為無效的位址，造成寄件者在您的轉換期間將郵件加入佇列，您必須將它們設回[系統管理中心](https://admin.microsoft.com)中所指定的正確值。 如需設定 DNS 的詳細資訊，請參閱[在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。

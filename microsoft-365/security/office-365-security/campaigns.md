@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 進階威脅防護中的行銷活動檢視。
-ms.openlocfilehash: 69b11319ffb033b628e59abac931b6a3f30d082c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5441c877dac70330bf1e5653983494be5b1b3293
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637815"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209592"
 ---
 # <a name="campaign-views-in-atp"></a>ATP 中的即時檢視
 
@@ -54,15 +54,15 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 
 ## <a name="campaign-views-the-security--compliance-center"></a>即時檢視安全性 & 規範中心
 
-在**威脅管理** \> **活動**中，[安全性 & 合規性中心](https://protection.office.com)提供即時檢視。
+在**威脅管理**活動中，[安全性 & 合規性中心](https://protection.office.com)提供即時檢視 \> ** **。
 
 ![安全性與合規性中心的行銷活動概觀](../../media/campaigns-overview.png)
 
 您也可以從下列來源取得市場即時檢視：
 
-- **威脅管理** \> **瀏覽器** \>的**查看** \> **活動**
+- **威脅管理** \>**瀏覽器** \>**View** \>**活動**
 
-- **威脅管理** \> **瀏覽器** \> **查看** \> **所有電子郵件** \> **活動**
+- **威脅管理** \>**瀏覽器** \>**View** \>**所有電子郵件** \>**活動**
 
 > [!TIP]
 > 如果您沒有看到任何行銷活動資料，請嘗試變更日期範圍。
@@ -83,7 +83,7 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 
 - **按一下**：在網路釣魚郵件中按一下 URL 的使用者數目。
 
-- **按一下 [速率**：由「已**按一下** / **Inboxed**」所計算的百分比。 此值是活動之效能的指示器，以及收件者是否可以將郵件識別為網路釣魚，並避免按一下 [負載 URL]。
+- **按一下 [速率**：由「已**按一下**Inboxed」所計算的百分比  /  ** **。 此值是活動之效能的指示器，以及收件者是否可以將郵件識別為網路釣魚，並避免按一下 [負載 URL]。
 
 - 已**訪問**：有多少使用者實際將其設為 [負載] 網站。 如果有**按一下**的值，但安全連結已封鎖網站的存取權，這個值將會是零。
 
@@ -144,7 +144,7 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 
   <sup>\*\*</sup>請複查您的反垃圾郵件原則，因為應該隔離這些郵件，而非傳遞。
 
-- **傳送位置**：您可能想要調查實際傳送給收件者的訊息 (無論是移至 [收件匣] 或 [垃圾郵件] 資料夾)，即使使用者未在訊息中點選承載 URL。 您也可以從隔離區中移除隔離的郵件。 如需詳細資訊，請參閱[在 Office 365 中隔離電子郵件](quarantine-email-messages.md)。
+- **傳送位置**：您可能想要調查實際傳送給收件者的訊息 (無論是移至 [收件匣] 或 [垃圾郵件] 資料夾)，即使使用者未在訊息中點選承載 URL。 您也可以從隔離區中移除隔離的郵件。 如需詳細資訊，請參閱[在 EOP 中隔離的電子郵件訊息](quarantine-email-messages.md)。
 
   - **已刪除資料夾**
 

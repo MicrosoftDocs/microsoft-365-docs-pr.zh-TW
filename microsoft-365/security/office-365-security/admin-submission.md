@@ -1,5 +1,5 @@
 ---
-title: Office 365 的系統管理員提交
+title: 系統管理報送
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,17 +16,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 瞭解如何將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs，以及您公司中的檔案提交至 Microsoft 進行掃描。
-ms.openlocfilehash: 79f200963655e5fb07a04b686c1dd8cc3bbd0873
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和檔案提交至 Microsoft 進行掃描。
+ms.openlocfilehash: ae84c9ca111c7e7056ae97abff20471c474dccb2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034197"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209748"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 
-如果您是 Microsoft 365 組織中與 Exchange Online 中信箱的系統管理員，您可以使用安全性 & 合規性中心內的提交入口網站，將電子郵件訊息、URLs 和附件提交給 Microsoft 以進行掃描。
+在使用 Exchange Online 信箱的 Microsoft 365 組織中，系統管理員可以使用安全性 & 合規性中心內的提交入口網站，將電子郵件訊息、URLs 和附件提交給 Microsoft 以供掃描。
 
 當您提交電子郵件時，您會收到任何可能允許內送電子郵件進入租使用者的原則，以及對郵件中的任何 URLs 和附件進行檢查的相關資訊。 可能允許郵件的原則包括個別使用者的安全寄件者清單，以及租使用者層級原則，例如 Exchange 郵件流程規則（也稱為傳輸規則）。
 
@@ -34,7 +34,7 @@ ms.locfileid: "44034197"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至**提交**頁面，請<https://protection.office.com/reportsubmission>使用。
+- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至**提交**頁面，請使用 <https://protection.office.com/reportsubmission> 。
 
 - 您必須已獲指派權限，才能執行這些程序。 若要新增、修改和刪除反垃圾郵件原則，您必須是「**組織管理**」、「**安全性管理員**」或「**安全性讀者**」角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -42,7 +42,7 @@ ms.locfileid: "44034197"
 
 ## <a name="report-suspicious-content-to-microsoft"></a>向 Microsoft 報告可疑內容
 
-1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理** \> ] 以**查看** \>系統**管理員提交訊息**。
+1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理**] 以 \> **查看**系統 \> **管理員提交訊息**。
 
 2. 在出現的 [**提交**] 頁面上，按一下 [**新增提交**] 按鈕。
 
@@ -74,7 +74,7 @@ ms.locfileid: "44034197"
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>將可疑 URL 傳送給 Microsoft
 
-1. 在 [**物件類型**] 區段中，選取 [ **URL**]。 在出現的方塊中，輸入完整的 URL （例如<https://www.fabrikam.com/marketing.html>）。
+1. 在 [**物件類型**] 區段中，選取 [ **URL**]。 在出現的方塊中，輸入完整的 URL （例如 <https://www.fabrikam.com/marketing.html> ）。
 
 2. 在 [**提交原因**] 區段中，選取下列其中一個選項：
 
@@ -104,11 +104,11 @@ ms.locfileid: "44034197"
 
 ## <a name="view-admin-submissions"></a>查看系統管理員報送
 
-1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理** \> ] 以**查看** \>系統**管理員提交訊息**。
+1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理**] 以 \> **查看**系統 \> **管理員提交訊息**。
 
 2. 在出現的 [**提交**] 頁面上，確認已選取 [系統**管理提交**] 索引標籤。
 
-在頁面頂端附近，您可以輸入開始日期、結束日期及（預設值）您可以在此方塊中輸入值，然後按一下![[重新整理] 按鈕](../../media/scc-quarantine-refresh.png)，依**提交識別碼**篩選。 Update
+在頁面頂端附近，您可以輸入開始日期、結束日期及（預設值）您可以在此方塊中輸入值，然後按一下 [重新整理] 按鈕，依**提交識別碼**篩選 ![ ](../../media/scc-quarantine-refresh.png) 。 Update
 
 若要變更篩選準則，請按一下 [**提交識別碼**] 按鈕，然後選擇下列其中一個值：
 
@@ -178,7 +178,7 @@ ms.locfileid: "44034197"
 
 如果您已部署[報表訊息增益集](enable-the-report-message-add-in.md)，或人員使用[網頁型 Outlook 中內建的報表](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)，您可以在 [**使用者報送**] 索引標籤上看到使用者的報告。
 
-1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理** \> ] 以**查看** \>系統**管理員提交訊息**。
+1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理**] 以 \> **查看**系統 \> **管理員提交訊息**。
 
 2. 在出現的 [**提交**] 頁面上，按一下 [**使用者報送**] 索引標籤。
 
@@ -193,7 +193,7 @@ ms.locfileid: "44034197"
 
 <sup>\*</sup>如果您按一下此值，詳細資訊就會顯示在浮出控制項中。
 
-在頁面頂端附近，您可以輸入開始日期、結束日期及（預設值）您可以在此方塊中輸入值，然後按一下![[重新整理] 按鈕](../../media/scc-quarantine-refresh.png)，以篩選**寄件者**。 Update
+在頁面頂端附近，您可以輸入開始日期、結束日期及（預設值）您可以在此方塊中輸入值，然後按一下 [重新整理] 按鈕，以篩選**寄件者** ![ ](../../media/scc-quarantine-refresh.png) 。 Update
 
 若要變更篩選準則，請按一下 [**寄件者**] 按鈕，然後選擇下列其中一個值：
 
@@ -211,7 +211,7 @@ ms.locfileid: "44034197"
 
 如果您已[將自訂信箱設定](user-submission.md)為接收使用者報告的郵件，您可以查看並提交傳遞到報表信箱的郵件。
 
-1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理** \> ] 以**查看** \>系統**管理員提交訊息**。
+1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理**] 以 \> **查看**系統 \> **管理員提交訊息**。
 
 2. 在出現的 [**提交**] 頁面上，按一下 [**自訂信箱**] 索引標籤。
 
@@ -224,7 +224,7 @@ ms.locfileid: "44034197"
 - **寄件者 IP**<sup>\*</sup>
 - **提交類型**
 
-在頁面頂端附近，您可以輸入開始日期、結束日期，也可以透過在方塊中輸入值，然後按一下![[重新整理]](../../media/scc-quarantine-refresh.png)**按鈕來篩選**。 Update
+在頁面頂端附近，您可以輸入開始日期、結束日期，也可以透過在方塊中輸入值，然後按一下 [重新整理] 按鈕**來篩選** ![ ](../../media/scc-quarantine-refresh.png) 。 Update
 
 若要匯出結果，請按一下頁面頂端附近的 [**匯出**]，然後選取 [**圖表資料**或**表格**]。 在出現的對話方塊中，儲存 .csv 檔案。
 

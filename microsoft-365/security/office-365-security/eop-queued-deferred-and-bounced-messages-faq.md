@@ -2,10 +2,10 @@
 title: EOP 排入佇列、延後和退回的訊息常見問題集
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 11/17/2014
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,30 +13,30 @@ localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
 ms.custom:
 - seo-marvel-apr2020
-description: 尋找在 Microsoft Exchange Online Protection （EOP）篩選程式期間佇列、延遲或退回的郵件相關 FAQs 的答案。
-ms.openlocfilehash: f7a7c8b5466e02353ca114d6c7ed44f37bed5592
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 尋找在 Exchange Online Protection （EOP）篩選程式期間，有關已排入佇列、延遲或退回之郵件的最常見問題的答案。
+ms.openlocfilehash: 38e72a04e855862c621bd2b170c11407e0d22af3
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036545"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206589"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>EOP 排入佇列、延後和退回的訊息常見問題集
 
-本主題提供有關已排入佇列、延遲，或在 Microsoft Exchange Online Protection (EOP) 篩選程序中退回之郵件的常見問題解答。
+本主題提供 Exchange Online Protection （EOP）篩選過程中已排入佇列、延遲或退回之郵件的常見問題解答。
 
-**問：為何將郵件排入佇列？**
+## <a name="why-is-mail-queuing"></a>為什麼為郵件佇列？
 
-答：如果服務無法連線到傳遞的收件者伺服器，郵件會排入佇列或延遲。如果從收件者的網路傳回 500 系列錯誤，它不會延遲郵件。
+如果服務無法連線至收件者伺服器以進行傳遞，郵件會排隊或延遲。 當收件者網路傳回500系列錯誤時，它不會推遲郵件。
 
-**問：如何延遲郵件？**
+## <a name="how-does-a-message-become-deferred"></a>郵件如何成為延遲的？
 
-答：當收件者伺服器的連線無法建立，而且收件者的伺服器傳回連接逾時、連線被拒絕或 400 系列錯誤等「暫存失敗」時，就會保留郵件。如果發生永久性失敗 (例如 500 系列錯誤)，郵件就會傳回給寄件者。
+當收件者伺服器無法連線，且收件者的伺服器傳回「暫時失敗」（例如，連接逾時、連線拒絕或400系列錯誤）時，就會保留郵件。 如果發生永久失敗，例如 500-數列錯誤，則郵件會傳回給寄件者。
 
-**問：郵件維持延遲的時間有多長，而重試間隔時間有多長？**
+## <a name="how-long-does-a-message-remain-in-deferral-and-what-is-the-retry-interval"></a>郵件保持延遲的時間和重試間隔是多少？
 
-答： 延遲中的郵件會保留1天的佇列。 郵件重試次數乃是根據我們從收件者的郵件系統所取回的錯誤。 前幾個 deferrals 為15分鐘或更少，後續的重試次數（透過接下來的一半或如此），將多次重試間隔增加到最大的60分鐘。 間隔持續時間擴充是動態的，其中考慮了多個變數，如佇列大小和內部郵件優先順序。 在 basic 中，它是15分鐘（或更少）的開始時間，然後從未來數小時到最多60分鐘進行擴充。
+延遲中的郵件會保留1天的佇列。 郵件重試次數乃是根據我們從收件者的郵件系統所取回的錯誤。 前幾個 deferrals 為15分鐘或更少，後續的重試次數（透過接下來的一半或如此），將多次重試間隔增加到最大的60分鐘。 間隔持續時間擴充是動態的，其中考慮了多個變數，如佇列大小和內部郵件優先順序。 在 basic 中，它是15分鐘（或更少）的開始時間，然後從未來數小時到最多60分鐘進行擴充。
 
-**問：還原您的電子郵件伺服器後，已排入佇列的郵件如何散佈？**
+## <a name="after-your-email-server-is-restored-how-are-queued-messages-distributed"></a>還原電子郵件伺服器之後，佇列中的郵件會如何散佈？
 
-答：您的電子郵件伺服器還原後，所有排入佇列的郵件會在伺服器無法使用時，自動根據他們被接收與排入佇列的順序自動進行處理。
+還原電子郵件伺服器之後，當伺服器無法使用時，所有已排入佇列的郵件都會以接收順序進行處理，並進行佇列佇列。

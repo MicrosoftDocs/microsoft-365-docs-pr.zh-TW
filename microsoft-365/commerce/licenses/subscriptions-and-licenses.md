@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 7ac93507-0e38-4398-8bfe-9c1d123cb387
 description: '深入瞭解 Microsoft 365 for business 中的訂閱與授權，並知道誰可以指派授權，以及當您指派授權給某人時會發生什麼情況。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 1508daa6dae30c35a9517fceb81b0a4d2b4a7f58
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5178b25de6f66968f8a89c7b2c34ee466f8855bd
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635433"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211435"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>瞭解 Microsoft 365 for business 中的訂閱與授權
 
@@ -58,20 +58,20 @@ ms.locfileid: "43635433"
   
 |**如果訂閱含有此服務**|**會自動發生以下情況**|
 |:-----|:-----|
-|Exchange Online  <br/> |系統會為該人員建立信箱。  <br/> |
+|Exchange Online  <br/> |系統會為該人員建立信箱。  <br/> 若要瞭解此工作完成的 SLA，請參閱「[設定 ...」Microsoft 365 系統管理中心中的郵件](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
 |SharePoint Online  <br/> |系統會指派預設 SharePoint Online 小組網站的編輯權限給該人員。  <br/> |
 |商務用 Skype Online  <br/> |該人員會獲得授權相關功能的存取權限。  <br/> |
-|適用于企業的 Microsoft 365 應用程式  <br/> |該人員可在最多 5 部 Mac 或 PC、5 台平板電腦和 5 支智慧型手機上下載 Microsoft Office。  <br/> |
+|Microsoft 365 Apps 企業版  <br/> |該人員可在最多 5 部 Mac 或 PC、5 台平板電腦和 5 支智慧型手機上下載 Microsoft Office。  <br/> |
    
 ## <a name="how-many-devices-can-people-install-office-on"></a>使用者可以在多少部裝置上安裝 Office？
 
 如果您的訂閱包含下列任何產品，每個人員都能在最多 5 部 Mac 或 PC、5 台平板電腦和 5 支智慧型手機上安裝 Office。
   
-- Microsoft 365 商務應用程式
+- Microsoft 365 Apps 商務版
     
 - Microsoft 365 商務標準版
     
-- 適用于企業的 Microsoft 365 應用程式
+- Microsoft 365 Apps 企業版
     
 - Office 365 Enterprise E3
     

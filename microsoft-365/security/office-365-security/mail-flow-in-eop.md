@@ -13,23 +13,21 @@ localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，Exchange Online Protection （EOP）客戶可以瞭解如何設定可能符合其業務需求的自訂郵件路由。
-ms.openlocfilehash: cdc919c628f2254ffc971678f7887c37786d2528
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 系統管理員可以深入瞭解在 Exchange Online Protection （EOP）中設定郵件流程及路由的選項。
+ms.openlocfilehash: cb2ae7370d50fe32802ad5c279cc2170eb35f581
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034229"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208327"
 ---
 # <a name="mail-flow-in-eop"></a>EOP 中的郵件流程
 
-若為 Exchange Online Protection (EOP) 客戶，傳送到貴組織的所有郵件會先通過 EOP，您的背景工作才會看見這些郵件。不論透過 Exchange Online 在雲端託管所有的信箱，或將信箱託管於內部部署環境 (稱為獨立案例)，或者繼續利用現有的基礎結構，您都可以在即將通過 EOP 進行處理的郵件路由傳送到您的背景工作收件匣之前，先選擇如何路由傳送這些郵件。
-
-您可以設定自訂郵件路由，使您的郵件傳遞方式符合業務需求。例如，您可以透過原則篩選裝置傳遞所有的輸出郵件。
+在具有 Exchange Online 信箱的 Microsoft 365 組織中，或獨立 Exchange Online Protection （EOP）組織沒有 Exchange Online 信箱時，所有傳送給您組織的郵件都會透過 EOP，再讓工作者看到這些郵件。 您可以選擇如何路由傳送至您的工作人員收件匣的郵件，並透過 EOP 進行處理。
 
 ## <a name="working-with-messages-and-message-access-options"></a>使用郵件和郵件存取選項
 
-EOP 對您的郵件路由傳送方式提供了很大的彈性。 下列主題說明郵件流程處理序中的步驟。
+EOP 提供郵件路由傳送方式的彈性。 下列主題說明郵件流程處理序中的步驟。
 
 [使用目錄架構邊緣封鎖以拒絕傳送至無效收件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)者的郵件描述目錄型 Edge 封鎖功能，可讓您拒絕服務網路周邊上無效收件者的郵件。
 
@@ -37,9 +35,11 @@ EOP 對您的郵件路由傳送方式提供了很大的彈性。 下列主題說
 
 如果您新增子網域至組織，則 EOP 服務也可以協助您管理這些子網域。 若要深入瞭解子域，請參閱[啟用 Exchange Online 中子域的郵件流程](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)。
 
-[Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)簡介連接器並說明如何使用 EOP 連結器自訂郵件路由。案例包括確保與合作夥伴組織進行安全通訊及設定智慧主機。
+[使用連接器來設定郵件流程](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)介紹連接器，並說明如何使用這些連接器來自訂郵件路由。 案例包括確保與合作夥伴組織進行安全通訊及設定智慧主機。
 
-若要確定垃圾郵件已正確路由傳送至每位使用者的垃圾郵件資料夾，您必須執行一些設定步驟。 在[設定獨立 EOP 將垃圾郵件傳送至混合式環境中的 [垃圾郵件] 資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)時，會加以詳述。 如果您不想要將郵件移至每個使用者的垃圾郵件資料夾，您可以在 Exchange 系統管理中心編輯內容篩選原則，以選擇另一個動作。 如需詳細資訊，請參閱[設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+[針對連接器的增強篩選](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)說明如何在 EOP 之前，先將郵件路由傳送至服務或裝置，以設定連接器。
+
+在獨立 EOP 組織中，您必須執行一些設定步驟，以確保垃圾郵件可正確路由傳送至每位使用者的垃圾郵件資料夾。 在[設定獨立 EOP 將垃圾郵件傳送至混合式環境中的 [垃圾郵件] 資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)時，會加以詳述。 如果您不想要將郵件移至每個使用者的垃圾郵件資料夾，您可以編輯反垃圾郵件原則（也稱為內容篩選原則）來選擇另一個動作。 如需詳細資訊，請參閱[設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 ## <a name="verify-mail-flow"></a>驗證郵件流程
 

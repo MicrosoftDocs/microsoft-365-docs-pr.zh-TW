@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 12e68cd8fcd7c784b1d0b4c70c5c25370cbbb409
-ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
+ms.openlocfilehash: 66b3f7e446416b6252050e6f41a2b22d99d25767
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44015999"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209232"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威脅防護先決條件
 
@@ -34,6 +34,9 @@ ms.locfileid: "44015999"
 瞭解授權、硬體和軟體需求，以及其他設定，以提供和使用 Microsoft 威脅防護。
 
 ## <a name="licensing-requirements"></a>授權需求
+
+>[!IMPORTANT]
+>從2020年5月12日開始，Microsoft 將逐步推出有關授權需求的新的優化體驗，並[開啟 Microsoft 威脅防護](mtp-enable.md)。 在這段期間內，有些客戶會開始查看其門戶體驗的變更。 有關全新經驗的資訊已在本文中標示**新經驗**。
 
 若要使用 Microsoft 威脅防護，您必須是單一授權或授權組合。 這些授權或授權組合可讓您存取 Microsoft 威脅防護功能，而不需要額外成本。
 
@@ -54,6 +57,19 @@ ms.locfileid: "44015999"
 
 > 還沒有授權？ [試用或購買 Microsoft 365 訂閱](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
 
+
+**新經驗：** 從2020年5月12日起，客戶會逐漸收到這種經驗的變更。 針對具有全新經驗的使用者，使用下列任何一種授權的*客戶都可*使用開啟 Microsoft 威脅防護的選項：
+
+- Microsoft 365 E5 或 A5
+- Microsoft 365 E5 Security 或 A5 Security
+- Windows 10 企業版 E5 或 A5
+- Enterprise 可移動性 + Security （EMS） E5 或 A5 
+- Office 365 E5 或 A5
+- Windows Defender 進階威脅防護 
+- Azure 進階威脅防護 
+- Microsoft Cloud App Security 
+- Office 365 高級威脅防護（方案2） 
+
 ### <a name="check-your-existing--licenses"></a>檢查您現有的授權
 移至 Microsoft 365 系統管理中心（[admin.microsoft.com](https://admin.microsoft.com/)）以查看您現有的授權。 在系統管理中心中，移至 **[帳單]** >  **[授權]**。
 
@@ -63,8 +79,8 @@ ms.locfileid: "44015999"
 ## <a name="browser-requirements"></a>瀏覽器需求
 使用 Microsoft Edge、Internet Explorer 11 或任何符合 HTML 5 標準的網頁瀏覽器，存取 microsoft 365 security center 中的 Microsoft 威脅防護。
 
-## <a name="microsoft-threat-protection-for-us-government-community-cloud-and-us-government-community-cloud-high-gcc-high-customers"></a>適用于美國政府社區 Cloud 和 US 政府社區的 Microsoft 威脅防護。雲端高（GCC High）客戶
-目前，我們的 GCC 和 GCC 的高客戶無法使用 Microsoft 威脅防護功能。 
+## <a name="us-gcc-and-gcc-high-availability"></a>美國 GCC 和 GCC 高可用性
+目前，我們的政府社區雲端（GCC）和政府社區雲端（GCC 高端）客戶無法使用 Microsoft 威脅防護。 
 
 ## <a name="related-topics"></a>相關主題
 - [Microsoft 威脅防護概觀](microsoft-threat-protection.md)

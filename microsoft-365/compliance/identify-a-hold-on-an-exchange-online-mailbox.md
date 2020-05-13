@@ -14,13 +14,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
-description: 瞭解如何識別可放在 Microsoft 365 信箱上的不同保留類型。 這些保留類型包括訴訟暫止、eDiscovery 保留及 Microsoft 365 保留原則。 您也可以判斷使用者是否已從整個組織的保留原則中排除
-ms.openlocfilehash: 232173b82033f7372ef54411a04f3ee891a42bbb
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+description: 瞭解如何識別可放在 Microsoft 365 信箱上的不同保留類型。 這些保留類型包括訴訟暫止、eDiscovery 保留及 Microsoft 365 保留原則。 您也可以判斷使用者是否已從整個組織的保留原則中排除。
+ms.openlocfilehash: 594b8550cdd418af9551c732b78091817da7bfc3
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44047995"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208664"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何找出位於 Exchange Online 信箱的保留類型
 
@@ -30,7 +30,7 @@ Microsoft 365 提供數種方式，讓您的組織可以防止信箱內容遭到
 
 - **[訴訟暫](create-a-litigation-hold.md)止：** 適用于 Exchange Online 中使用者信箱的保留。
 
-- ** [eDiscovery 保留](ediscovery-cases.md#step-4-place-content-locations-on-hold)：** 與安全性與合規性中心中的 eDiscovery 案例相關聯的保留。 eDiscovery 保留可以套用到使用者信箱，以及 Microsoft 365 群組和 Microsoft 小組對應的信箱。
+- ** [eDiscovery 保留](create-ediscovery-holds.md)：** 與安全性與合規性中心中的核心 eDiscovery 案例相關聯的保留。 eDiscovery 保留可以套用到使用者信箱，以及 Microsoft 365 群組和 Microsoft 小組對應的信箱。
 
 - **[保留 In-Place](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds)：** 在 Exchange Online 中使用 Exchange 系統管理中心的「In-Place eDiscovery & 保留」工具，將套用至使用者信箱的保留。
 
@@ -66,18 +66,18 @@ Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 ```
 
 > [!TIP]
-> 如果 InPlaceHolds 屬性中的值太多，而且不是所有的值都顯示出來，您可以執行`Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds`此命令，將每個 GUID 顯示在不同的行上。
+> 如果 InPlaceHolds 屬性中的值太多，而且不是所有的值都顯示出來，您可以執行此 `Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds` 命令，將每個 GUID 顯示在不同的行上。
 
 下表說明當您執行**Get-Mailbox** Cmdlet 時，如何根據*InPlaceHolds*屬性中的值來識別不同類型的保留。
 
 
 |保留類型  |範例值  |如何識別保留  |
 |---------|---------|---------|
-|訴訟暫止     |    `True`     |     當*LitigationHoldEnabled*屬性設定為`True`時，信箱的訴訟資料暫留已啟用。    |
-|eDiscovery 保留     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   *InPlaceHolds 屬性*包含與安全性與合規性中心中的 eDiscovery 案例相關聯之任何保留的 GUID。 您可以告訴這是 eDiscovery 封存，因為 GUID 是以`UniH`前置詞開頭（表示整合保留）。      |
-|原有範圍暫止     |     `c0ba3ce811b6432a8751430937152491` <br/> 或 <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     *InPlaceHolds*屬性包含放在信箱上的 IN-PLACE 保留 GUID。 您可以告知這是 In-Place 保留，因為 GUID 不是以前置詞開頭，也不是以`cld`前置詞開頭。     |
-|專門套用至信箱的 Microsoft 365 保留原則     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> 或 <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     InPlaceHolds 屬性包含套用至信箱之任何特定位置保留原則的 Guid。 您可以識別保留原則，因為 GUID 是以`mbx`或`skp`前置詞開頭。 `skp`前置詞表示將保留原則套用至使用者信箱中的商務用 Skype 交談。    |
-|從全組織的 Microsoft 365 保留原則中排除     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     如果信箱是從全組織的 Microsoft 365 保留原則中排除，則會在 InPlaceHolds 屬性中顯示信箱所排除的保留原則 GUID，並以`-mbx`前置詞加以識別。    |
+|訴訟暫止     |    `True`     |     當*LitigationHoldEnabled*屬性設定為時，信箱的訴訟資料暫留已啟用 `True` 。    |
+|eDiscovery 保留     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   *InPlaceHolds 屬性*包含與安全性與合規性中心中的 eDiscovery 案例相關聯之任何保留的 GUID。 您可以告訴這是 eDiscovery 封存，因為 GUID 是以前置詞開頭 `UniH` （表示整合保留）。      |
+|原有範圍暫止     |     `c0ba3ce811b6432a8751430937152491` <br/> 或 <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     *InPlaceHolds*屬性包含放在信箱上的 IN-PLACE 保留 GUID。 您可以告知這是 In-Place 保留，因為 GUID 不是以前置詞開頭，也不是以前置詞開頭 `cld` 。     |
+|專門套用至信箱的 Microsoft 365 保留原則     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> 或 <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     InPlaceHolds 屬性包含套用至信箱之任何特定位置保留原則的 Guid。 您可以識別保留原則，因為 GUID 是以 `mbx` 或前置詞開頭 `skp` 。 `skp`前置詞表示將保留原則套用至使用者信箱中的商務用 Skype 交談。    |
+|從全組織的 Microsoft 365 保留原則中排除     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     如果信箱是從全組織的 Microsoft 365 保留原則中排除，則會在 InPlaceHolds 屬性中顯示信箱所排除的保留原則 GUID，並以前置詞加以識別 `-mbx` 。    |
 
 ### <a name="get-organizationconfig"></a>Get-OrganizationConfig
 當您執行**Get-Mailbox** Cmdlet 時，如果*InPlaceHolds*屬性是空的，則仍有一個或多個組織範圍的 Microsoft 365 保留原則會套用至信箱。 在 Exchange Online PowerShell 中執行下列命令，以取得整個組織的 Microsoft 365 保留原則的 Guid 清單。
@@ -87,15 +87,15 @@ Get-OrganizationConfig | FL InPlaceHolds
 ```
 
 > [!TIP]
-> 如果 InPlaceHolds 屬性中的值太多，而且不是所有的值都顯示出來，您可以執行`Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds`此命令，將每個 GUID 顯示在不同的行上。
+> 如果 InPlaceHolds 屬性中的值太多，而且不是所有的值都顯示出來，您可以執行此 `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` 命令，將每個 GUID 顯示在不同的行上。
 
 下表說明組織範圍的不同類型，以及如何在您執行**Get-OrganizationConfig** Cmdlet 時，根據*InPlaceHolds*屬性所包含的 guid 來識別每個類型。
 
 
 |保留類型  |範例值  |描述  |
 |---------|---------|---------|
-|適用于 Exchange 信箱、Exchange 公用資料夾和團隊聊天的 Microsoft 365 保留原則    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   套用至 Exchange 信箱、Exchange 公用資料夾和1xN 聊天室的組織內的保留原則，都是由以`mbx`前置詞開頭的 guid 來識別。 附注1xN 聊天會儲存在個別聊天參與者的信箱中。      |
-|套用至 Microsoft 365 群組和團隊通道郵件的 microsoft 365 保留原則     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    在 Microsoft 小組中套用至 Microsoft 365 群組和通道郵件的全組織保留原則，會由以前置詞開頭`grp`的 guid 來識別。 附注通道郵件會儲存在與 Microsoft 小組相關聯的群組信箱中。     |
+|適用于 Exchange 信箱、Exchange 公用資料夾和團隊聊天的 Microsoft 365 保留原則    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   套用至 Exchange 信箱、Exchange 公用資料夾和1xN 聊天室的組織內的保留原則，都是由以前置詞開頭的 Guid 來識別 `mbx` 。 附注1xN 聊天會儲存在個別聊天參與者的信箱中。      |
+|套用至 Microsoft 365 群組和團隊通道郵件的 microsoft 365 保留原則     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    在 Microsoft 小組中套用至 Microsoft 365 群組和通道郵件的全組織保留原則，會由以前置詞開頭的 Guid 來識別 `grp` 。 附注通道郵件會儲存在與 Microsoft 小組相關聯的群組信箱中。     |
 
 如需適用于 Microsoft 小組的詳細資訊保留原則，請參閱[保留原則](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)的「小組位置」一節。
 
@@ -149,7 +149,7 @@ $CaseHold | FL Name,ExchangeLocation
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 ```
 
-如果 In-Place 保留的 GUID 是以`cld`前置詞開頭，請務必在執行先前的命令時包含首碼。
+如果 In-Place 保留的 GUID 是以前置詞開頭 `cld` ，請務必在執行先前的命令時包含首碼。
 
 > [!IMPORTANT]
 > 當我們繼續以保留信箱內容的不同方式投資時，我們宣佈在 Exchange 系統管理中心（EAC）中封存 In-Place 的退休。 從2020年7月1日起，您將無法在 Exchange Online 中建立新的 In-Place 保留。 不過，您仍然可以管理 EAC 中的 In-Place，或是使用 Exchange Online PowerShell 中的**Set-MailboxSearch** Cmdlet 來管理。 不過，從2020年10月1日開始，您將無法管理 In-Place 保留。 您只會在 EAC 中或使用**Remove-MailboxSearch** Cmdlet 中移除它們。 如需停用 In-Place 保留的詳細資訊，請參閱[舊版 eDiscovery tools 的退休](legacy-ediscovery-retirement.md)。
@@ -200,7 +200,7 @@ Get-Mailbox <username> | FL *HoldApplied*
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-或者
+或
  
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -214,7 +214,7 @@ Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
-或者
+或
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
@@ -235,9 +235,9 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplie
 
 在您識別套用至信箱的保留後，您可以執行工作，例如變更保留期間、暫時或永久移除保留，或排除 Microsoft 365 保留原則中非使用中的信箱。 如需執行與保留相關之工作的詳細資訊，請參閱下列其中一個主題：
 
-- 在 [安全性 & 規範中心] 中執行[Set-RetentionCompliancePolicy AddExchangeLocationException \<使用者信箱>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy?view=exchange-ps)命令 PowerShell，以從整個組織的 Microsoft 365 保留原則中排除信箱。 這個命令僅可用於*ExchangeLocation*屬性值等於`All`的保留原則。
+- 在 [安全性 & 規範中心] 中執行[Set-RetentionCompliancePolicy AddExchangeLocationException \< 使用者信箱>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy?view=exchange-ps)命令 PowerShell，以從整個組織的 Microsoft 365 保留原則中排除信箱。 這個命令僅可用於*ExchangeLocation*屬性值等於的保留原則 `All` 。
 
-- 在 Exchange Online PowerShell 中執行[Set-Mailbox ExcludeFromOrgHolds \<保留 GUID （不含首碼或尾碼>](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps)命令），以從整個組織的 Microsoft 365 保留原則中排除非作用中的信箱。
+- 在 Exchange Online PowerShell 中執行[Set-Mailbox ExcludeFromOrgHolds \< 保留 GUID （不含首碼或尾碼>](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps)命令），以從整個組織的 Microsoft 365 保留原則中排除非作用中的信箱。
 
 - [變更非使用中信箱的保留期間](change-the-hold-duration-for-an-inactive-mailbox.md)
 

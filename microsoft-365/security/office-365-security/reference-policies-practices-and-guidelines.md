@@ -2,10 +2,10 @@
 title: 參考原則、作法和指導方針
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft 已開發各種原則、程式，並採用數種行業最佳作法，協助保護我們的使用者免受濫用、有害或惡意的電子郵件。
-ms.openlocfilehash: 6e73355c02e0416a80441aff8143fcbf51150b94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9684453503329e955c21051885c5d93e8c927c48
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634385"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208207"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>參考：原則、實務與指導方針
 
@@ -31,9 +31,9 @@ Microsoft 致力於協助提供最受信任的使用者在網頁上的體驗。 
 
 ## <a name="general-microsoft-policies"></a>一般 Microsoft 原則
 
-傳送給 Microsoft 365 使用者的電子郵件必須遵守所有管理電子郵件傳輸和使用 Office 365 的 Microsoft 原則。
+傳送給 Microsoft 365 使用者的電子郵件必須遵守所有管理電子郵件傳輸和使用 Microsoft 365 的 Microsoft 原則。
 
-- 適用于 Office 365 的服務條款;特別是，禁止使用服務來垃圾郵件或散佈惡意程式碼
+- 適用于 Microsoft 365 的服務條款;特別是，禁止使用服務來垃圾郵件或散佈惡意程式碼。
 
 - [Microsoft 服務合約](https://www.microsoft.com/servicesagreement/)
 
@@ -85,7 +85,7 @@ Microsoft 主動與業界主體和服務提供者合作，以改善網際網路�
 
 - [線上信任同盟](https://www.otalliance.org/resources)
 
-- [電子郵件&amp;寄件者提供者聯盟](https://www.espcoalition.org/)
+- [電子郵件寄件者 & 提供者聯盟](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>濫用和垃圾郵件報告
 

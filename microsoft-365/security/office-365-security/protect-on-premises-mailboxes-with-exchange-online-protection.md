@@ -1,11 +1,11 @@
 ---
-title: 保護內部部署信箱-Exchange Online Protection
+title: 使用獨立 EOP 保護中國內部部署信箱
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 6/1/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,15 +20,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您將瞭解如何使用 Exchange Online Protection （EOP）保護內部部署信箱
-ms.openlocfilehash: bdfebf16d77f26f3e3bb2890bd4aa8ccfa12f27b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 在中國使用 Office 365 的系統管理員可以瞭解如何使用獨立的 Exchange Online Protection （EOP）來保護其內部部署信箱。
+ms.openlocfilehash: 6ce85e626f9bf4c960de57ad5cd15ac3148954cb
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033875"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208291"
 ---
-# <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>使用 Exchange Online Protection 保護內部部署的信箱
+# <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>使用獨立 EOP 保護中國內部部署信箱
 
 > [!NOTE]
 > 本文僅適用於中國 21Vianet 所營運的 Office 365。
@@ -65,7 +65,7 @@ ms.locfileid: "44033875"
 
 ## <a name="step-5-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>步驟5：確定垃圾郵件路由傳送至每個使用者的 [垃圾郵件] 資料夾
 
-為了確保垃圾電子郵件正確地路由傳送至每個使用者的 [垃圾郵件] 資料夾，您必須執行幾個設定步驟。 [設定獨立 EOP 中的步驟，將垃圾郵件傳遞至混合式環境中的 [垃圾郵件] 資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 如果不要將郵件移至每個使用者的 [垃圾郵件] 資料夾，您可以在 Exchange 系統管理中心編輯內容篩選原則，以選擇其他動作。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+為了確保垃圾電子郵件正確地路由傳送至每個使用者的 [垃圾郵件] 資料夾，您必須執行幾個設定步驟。 [設定獨立 EOP 中的步驟，將垃圾郵件傳遞至混合式環境中的 [垃圾郵件] 資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。 如果您不想要將郵件移至每個使用者的 [垃圾郵件] 資料夾，您可以編輯反垃圾郵件原則（也稱為「內容篩選原則」）來選擇另一個動作。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>步驟 6：使用 Microsoft 365 系統管理中心將您的 MX 記錄指向 EOP
 

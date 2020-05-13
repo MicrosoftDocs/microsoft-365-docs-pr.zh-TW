@@ -14,12 +14,12 @@ ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解如何從內部部署電子郵件清潔裝置或雲端式保護服務切換到 Exchange Online Protection （EOP）。
-ms.openlocfilehash: 4bbd0b60d42b52d5c9343126f12059fcf1fc3d62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d7b2cfbe84d1e03bcd549c5220f6063592962792
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035221"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209268"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>從 Google Postini、Barracuda Spam and Virus Firewall 或 Cisco IronPort 切換到 EOP
 
@@ -55,9 +55,9 @@ ms.locfileid: "44035221"
 
 當您決定切換至 EOP 時，請務必提供下列方面的特殊考量：
 
-- **自訂篩選規則**：如果您有自訂篩選規則或企業政策規則可捕捉特定垃圾郵件，建議您先以預設設定試用 EOP 一段時間，然後才遷移規則。 EOP 提供具有預設設定的企業級垃圾郵件保護，結果可能是您不需要將部分規則遷移至 EOP。 當然，如果現有的規則會強制執行特定自訂業務原則，即可建立這些原則。 [Exchange Online Protection 中的郵件流程規則（傳輸規則）](mail-flow-rules-transport-rules-0.md)提供在 EOP 建立郵件流程規則的詳細指示。
+- **自訂篩選規則**：如果您有自訂篩選或商務原則規則來找出特定的垃圾郵件，我們建議您在遷移規則之前，先嘗試使用預設設定 EOP 一段時間。 EOP 提供具有預設設定的企業級垃圾郵件保護，結果可能是您不需要將部分規則遷移至 EOP。 當然，如果現有的規則會強制執行特定自訂業務原則，即可建立這些原則。 [Exchange Online Protection 中的郵件流程規則（傳輸規則）](mail-flow-rules-transport-rules-0.md)提供在 EOP 建立郵件流程規則的詳細指示。
 
-- **IP 允許清單和 IP 封鎖清單**：如果您有每一使用者的允許清單和封鎖清單，請在設定過程中留出一些時間將這些清單複製到 EOP。 如需 IP 允許清單和 IP 封鎖清單的相關資訊，請參閱[設定連線篩選原則](configure-the-connection-filter-policy.md)。
+- **IP 允許清單和 IP 封鎖清單**：如果您有每一使用者的允許清單和封鎖清單，請在設定過程中留出一些時間將這些清單複製到 EOP。 如需 IP 允許清單和 IP 封鎖清單的詳細資訊，請參閱[Configure the connection filter policy](configure-the-connection-filter-policy.md)。
 
 - **安全通訊**：如果合作夥伴要求郵件必須加密，建議您在 Exchange 系統管理中心設定此案例。 如要設定此案例，請查閱[設定連接器以保護與合作夥伴間的郵件流程安全](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)。
 

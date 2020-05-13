@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何將垃圾郵件路由傳送至 Exchange Online Protection 混合式環境中的使用者垃圾郵件資料夾。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14193fecf90a6f2ddde05fbfdaded0ff2bcb5875
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a5b4d16c864b25c4d47910f0dd69f0ed3e71a0de
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036569"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209472"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>設定獨立 EOP，將垃圾郵件傳遞至混合式環境中的 [垃圾郵件] 資料夾
 
@@ -44,7 +44,7 @@ ms.locfileid: "44036569"
 本主題說明如何建立郵件流程規則 Exchange 系統管理中心（EAC），以及內部部署 Exchange 組織中的 Exchange 管理命令介面（Exchange PowerShell）。
 
 > [!TIP]
-> 您可以在 EOP 中設定反垃圾郵件原則，以隔離 EOP 中的垃圾郵件，而不是將郵件傳遞至內部部署使用者的 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+> 您可以在 EOP 中設定反垃圾郵件原則，以隔離 EOP 中的垃圾郵件，而不是將郵件傳遞至內部部署使用者的 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -60,7 +60,7 @@ ms.locfileid: "44036569"
 
   - 信箱上是否啟用垃圾郵件規則（ _enabled_參數值是在 Exchange 管理命令介面的[Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration)指令程式中 $true）。 這是垃圾郵件規則，它會在傳送後實際將郵件移至 [垃圾郵件] 資料夾。 依預設，會在信箱上啟用垃圾郵件規則。 如需詳細資訊，請參閱[設定信箱上的 Exchange 反垃圾郵件設定](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)。
   
-- 若要在 Exchange 伺服器上開啟 EAC，請參閱 exchange [server 中的 exchange 系統管理中心](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center)。 若要開啟 Exchange 管理命令介面， [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell)請參閱。
+- 若要在 Exchange 伺服器上開啟 EAC，請參閱 exchange [server 中的 exchange 系統管理中心](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center)。 若要開啟 Exchange 管理命令介面，請參閱 [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) 。
 
 - 如需內部部署 Exchange 中郵件流程規則的相關資訊，請參閱下列主題：
 
@@ -74,7 +74,7 @@ ms.locfileid: "44036569"
 
 1. 在 EAC 中，移至 [郵件流程]**** \> [規則]****。
 
-2. 按一下 [**新增** ![新增](../../media/ITPro-EAC-AddIcon.png)圖示]，然後在出現的下拉式清單中選取 [**建立新的規則**]。
+2. 按一下 [**新增**新增 ![ 圖示] ](../../media/ITPro-EAC-AddIcon.png) ，然後在出現的下拉式清單中選取 [**建立新的規則**]。
 
 3. 在開啟的 [**新增規則**] 頁面中，設定下列設定：
 
@@ -94,9 +94,9 @@ ms.locfileid: "44036569"
 
      - 按一下 [**輸入文字**]。 在出現的 [**指定標頭名稱**] 對話方塊中，輸入**X-Forefront-Antispam-Report** ，然後按一下 **[確定**]。
 
-     - 按一下 [**輸入文字**]。 在出現的 [**指定字詞或片語**] 對話方塊中，輸入下列其中一個 EOP 的垃圾郵件頭值（**SFV： SPM**、 **SFV： SKS**或**SFV:SKB**），按一下](../../media/ITPro-EAC-AddIcon.png)[**新增** ![] [新增] 圖示，然後按一下 **[確定]**。
+     - 按一下 [**輸入文字**]。 在出現的 [**指定字詞或片語**] 對話方塊中，輸入下列其中一個 EOP 的垃圾郵件頭值（**SFV： SPM**、 **SFV： SKS**或**SFV:SKB**），按一下 [**新增** ![ ] [新增] 圖示 ](../../media/ITPro-EAC-AddIcon.png) ，然後按一下 **[確定]**。
 
-   - **請執行下列**動作：選取 [**修改郵件屬性** \> ]**設定垃圾郵件信賴等級（SCL）**。
+   - **請執行下列**動作：選取 [**修改郵件屬性**] \> **設定垃圾郵件信賴等級（SCL）**。
 
      在 [**指定 SCL** ] 對話方塊中，選取 [ **6** （預設值為**5**）]。
 
@@ -132,9 +132,9 @@ New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-F
 
 若要確認您是否已成功將獨立 EOP 設定為將垃圾郵件傳遞至混合式環境中的 [垃圾郵件] 資料夾，請執行下列任一步驟：
 
-- 在 EAC 中，移至 [**郵件流程** \> **規則**]，選取規則，然後按一下 [**編輯** ![編輯](../../media/ITPro-EAC-EditIcon.png)圖示] 以驗證設定。
+- 在 EAC 中，移至 [**郵件流程** \> **規則**]，選取規則，然後按一下 [**編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-EditIcon.png) 以驗證設定。
 
-- 在 Exchange 管理命令介面中， \<將\> RuleName 取代為郵件流程規則的名稱，然後 rul 下列命令，以確認設定：
+- 在 Exchange 管理命令介面中，將 \< RuleName 取代 \> 為郵件流程規則的名稱，然後 rul 下列命令，以確認設定：
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

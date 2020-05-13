@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: 您可以使用本文中的腳本，產生一個報告，其中包含與 Office 365 或 Microsoft 365 中的「規範中心」有關之所有保留的相關資訊。
-ms.openlocfilehash: 9fa4bab745a3f956b32deb1dab1a1d909cecf08a
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 4a4d9c4195a201482228226ddd781260bb19499c
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942896"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208375"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>在電子文件探索案例中的保留建立報表
   
@@ -41,27 +41,9 @@ ms.locfileid: "43942896"
     
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>步驟1：連線至安全性 & 規範中心 PowerShell
 
-第一步是連接至組織的安全性 & 規範中心。
+第一步是連接至組織的安全性 & 規範中心 PowerShell。 如需逐步指示，請參閱[連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
   
-1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `ConnectSCC.ps1`。 
-    
-      ```powershell
-      # Get login credentials 
-      $UserCredential = Get-Credential 
-      $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
-      Import-PSSession $Session -AllowClobber -DisableNameChecking 
-      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
-    ```
-
-2. 在您的本機電腦上，開啟 [Windows PowerShell]，然後移至您用來儲存腳本的資料夾。 
-    
-3. 執行腳本;例如：
-
-    ```powershell
-    .\ConnectSCC.ps1
-    ```
-
-4. 當系統提示您輸入認證時，請輸入您的電子郵件地址和密碼，然後按一下 **[確定]**。 
+如果您的 Microsoft 365 帳戶使用多重要素驗證 (MFA) 或同盟驗證，您就無法使用前個主題中的指示來連線至安全性與合規性中心 PowerShell。 您應改為參閱[使用多重要素驗證連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)中的指示。
   
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>步驟2：執行腳本以報告與 eDiscovery 案例相關聯的封存
 
@@ -172,9 +154,9 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     > [!TIP]
     > 若要將報告儲存在腳本所在的相同資料夾中，請在系統提示您輸入目的檔案夾時，輸入句點（"."）。 若要將報告儲存至腳本所在之資料夾的子資料夾，只要輸入子資料夾的名稱即可。 
   
-    腳本開始收集組織中所有 eDiscovery 案例的相關資訊。 在腳本執行時，請勿存取報告檔案。 腳本完成後，會在 Windows PowerShell 會話中顯示確認訊息。 顯示此訊息之後，您可以在步驟4中所指定的資料夾中存取報告。 報表的檔案名是`CaseHoldsReport<DateTimeStamp>.csv`。
+    腳本開始收集組織中所有 eDiscovery 案例的相關資訊。 在腳本執行時，請勿存取報告檔案。 腳本完成後，會在 Windows PowerShell 會話中顯示確認訊息。 顯示此訊息之後，您可以在步驟4中所指定的資料夾中存取報告。 報表的檔案名是 `CaseHoldsReport<DateTimeStamp>.csv` 。
 
-    Addtionally，腳本也會建立報表，其中包含沒有任何保留的案例清單。 此報告的檔案名為`CaseswithNoHolds<DateTimeStamp>.csv`。
+    Addtionally，腳本也會建立報表，其中包含沒有任何保留的案例清單。 此報告的檔案名為 `CaseswithNoHolds<DateTimeStamp>.csv` 。
     
     以下是執行 CaseHoldsReport 腳本的範例。 
     

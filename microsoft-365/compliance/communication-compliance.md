@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e49b80cc873887cf9cc447a28ac2a274034176fc
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 49b5491cb67f447bf8cca1d88aab807c1bf30624
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066236"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208385"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通訊法規遵從性
 
@@ -97,7 +97,7 @@ Microsoft 365 中的通訊法規遵從性建立于[Office 365 中的監察原則
 
 通訊相容性原則可跨多個通訊通道掃描及捕獲郵件，以協助您快速查看和修正法規遵從性問題：
 
-- **Microsoft 小組**：公用和私人[Microsoft 團隊](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)通道和個別聊天的聊天通訊支援為獨立通道來源或其他 Microsoft 365 服務。 原則現在會針對原則中定義的特定使用者自動掃描所有的 Microsoft 團隊通道和團隊，不需要為 Microsoft 小組的工作分派保留個別對應清單。
+- **Microsoft 小組**：公用和私人[Microsoft 團隊](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)通道和個別聊天的聊天通訊支援為獨立通道來源或其他 Microsoft 365 服務。 當您選取要在通訊合規性原則中監督的使用者和群組時，您必須手動新增個別使用者、通訊群組或特定 Microsoft 小組頻道。
 - **Exchange online**：在您的 Microsoft 365 組織中的[exchange Online](https://docs.microsoft.com/Exchange/exchange-online)上主控的所有信箱都符合掃描資格。 電子郵件和附件比對通訊相容性原則的情況立即可用於監控和符合性報告。 Exchange Online 現在是一種選用的來源通道，而且通訊法規遵從性原則中已不再需要。
 - **Yammer**：通訊相容性原則支援[yammer](https://docs.microsoft.com/yammer/yammer-landing-page)中的私人郵件和公開社區交談。 Yammer 是選用的通道，必須是[原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)，以支援郵件和附件的掃描。
 - **商務用 Skype online**：通訊相容性原則支援在[商務用 skype Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)中的掃描聊天通訊和相關聯的附件。

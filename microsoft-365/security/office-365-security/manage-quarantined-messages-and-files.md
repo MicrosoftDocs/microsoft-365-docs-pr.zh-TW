@@ -17,23 +17,23 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您將瞭解系統管理員如何管理 Office 365 中使用者的隔離郵件和檔案。
-ms.openlocfilehash: e69887b54b3e892775c16fa3e306da3b17ab7db3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 系統管理員可以瞭解如何針對 Exchange Online Protection （EOP）中的所有使用者，查看及管理隔離的郵件。 具有 Office 365 高級威脅防護的組織中的系統管理員（Office 365 ATP）也可以在 SharePoint Online、商務 OneDrive 公司和 Microsoft 小組中管理隔離的檔案。
+ms.openlocfilehash: 0f0dd7ee14aeb4558674a6e2240e022df3c489fc
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036170"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209004"
 ---
-# <a name="manage-quarantined-messages-and-files-as-an-administrator"></a>以系統管理員身分管理被隔離的郵件與檔案
+# <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中以系統管理員身分管理隔離的郵件和檔案
 
-在擁有 Exchange Online 信箱的 Microsoft 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，隔離區會保存可能有害或不想要的郵件。 如需詳細資訊，請參閱 [Office 365 中的隔離區](quarantine-email-messages.md)。
+在未使用 Exchange online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）組織中使用信箱的 Microsoft 365 組織，隔離會包含可能危險或不需要的郵件。 如需詳細資訊，請參閱[在 EOP 中隔離的電子郵件訊息](quarantine-email-messages.md)。
 
 系統管理員可以針對所有使用者，查看、發行和刪除所有類型的隔離郵件。 只有系統管理員可以管理被隔離為惡意程式碼、高可信度網路釣魚或郵件流程規則（也稱為傳輸規則）結果的郵件。 系統管理員也可以將誤報報告給 Microsoft。
 
-使用 Office 365 高級威脅防護（ATP）的組織中的系統管理員，也可以在 SharePoint Online、商務 OneDrive 商務和 Microsoft 小組中，查看、下載和刪除隔離的檔案。
+使用 Office 365 高級威脅防護（Office 365 ATP）組織中的系統管理員，也可以在 SharePoint Online、商務 OneDrive 商務和 Microsoft 小組中，查看、下載和刪除隔離的檔案。
 
-您可以在安全性 & 規範中心或 PowerShell （Microsoft 365 客戶的 Exchange Online PowerShell）中查看及管理隔離的郵件;Exchange Online Protection PowerShell 適用于獨立 EOP 客戶）。
+您可以在安全性 & 合規性中心或 PowerShell （Exchange Online 365 PowerShell 中，使用 Exchange Online 中的信箱來查看及管理隔離的郵件; 獨立 EOP PowerShell 沒有 Exchange Online 信箱的組織）。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -46,8 +46,6 @@ ms.locfileid: "44036170"
 - 隔離的郵件會在自動刪除之前保留在預設時間段內：
 
   - 反垃圾郵件原則（垃圾郵件、網路釣魚和大量電子郵件）隔離的郵件：30天。 這是預設值和最大值。 若要設定此值，請參閱[設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
-
-1. 在您的組織中使用具有全域系統管理員許可權（或適當的安全性 & 合規性中心角色）的工作或學校帳戶，登入並[移至安全性 & 規範中心](../../compliance/go-to-the-securitycompliance-center.md)。
 
   - 包含惡意程式碼的郵件：15天。
 
@@ -74,8 +72,6 @@ ms.locfileid: "44036170"
    - **已釋出？**<sup>\*</sup>
 
    - **原則類型**<sup>\*</sup>
-
-1. 在您的組織中使用具有全域系統管理員許可權（或適當的安全性 & 合規性中心角色）的工作或學校帳戶，登入並[移至安全性 & 規範中心](../../compliance/go-to-the-securitycompliance-center.md)。
 
    - **收件者**
 
@@ -125,7 +121,7 @@ ms.locfileid: "44036170"
 
    - **郵件識別碼**：郵件的全域唯一識別碼。
 
-        例如，您使用[郵件追蹤](message-trace-scc.md)尋找傳送給組織中使用者的郵件，而您判斷郵件已被隔離而非傳遞。 請務必包含完整的郵件識別碼值，其中可能包含角括弧（\<\>）。 例如：`<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。
+     例如，您使用[郵件追蹤](message-trace-scc.md)尋找傳送給組織中使用者的郵件，而您判斷郵件已被隔離而非傳遞。 請務必包含完整的郵件識別碼值，其中可能包含角括弧（ \< \> ）。 例如：`<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。
 
    - **寄件者電子郵件地址**：單一寄件者的電子郵件地址。
 
@@ -240,7 +236,7 @@ ms.locfileid: "44036170"
 
 2. 變更**隔離**為**預設值檔的**視圖。 您可以按一下可用的欄標題，依序排序欄位。
 
-3. 您可以按一下可用資料行標題來排序結果。 按一下 [修改資料行]**** 可顯示最多七個資料行。 預設欄會以星號（<sup>\*</sup>）標示：
+3. 您可以按一下可用資料行標題來排序結果。 按一下 [修改資料行]**** 可顯示最多七個資料行。 預設欄會以星號（ <sup>\*</sup> ）標示：
 
    - **使用者**<sup>\*</sup>
 

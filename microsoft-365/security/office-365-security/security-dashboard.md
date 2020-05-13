@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 使用新的安全性儀表板來查看 Office 365 威脅防護狀態，並查看並處理安全性警示。
-ms.openlocfilehash: 3b6d754505d0e23f1080520e66061b8f6fef523e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d750c0055a9a55f573e4b920166284f6d95ae70f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632514"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208033"
 ---
 # <a name="security-dashboard"></a>安全性儀表板
 
@@ -35,7 +35,7 @@ ms.locfileid: "43632514"
 
 根據您組織的訂閱內容，安全性儀表板包含數個小元件，例如威脅管理摘要、威脅防護狀態、全球每週威脅偵測、惡意程式碼等，如下列各節所述。
 
-若要查看安全性儀表板，請在[安全性 & 合規性中心](../../compliance/go-to-the-securitycompliance-center.md)，移至 [**威脅管理** \> ]**儀表板**。
+若要查看安全性儀表板，請在[安全性 & 合規性中心](../../compliance/go-to-the-securitycompliance-center.md)，移至 [**威脅管理**] \> **儀表板**。
 
 > [!NOTE]
 > 您必須是全域系統管理員、安全性管理員或安全性讀者，才可查看安全性儀表板。 有些小元件需要其他許可權才能進行查看。 若要深入瞭解，請參閱[安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
@@ -61,7 +61,7 @@ ms.locfileid: "43632514"
 
 ![威脅防護狀態構件](../../media/tpswidget.png)
 
-詳細資料取決於您的 Microsoft 365 訂閱是否包含[Exchange Online Protection](exchange-online-protection-eop.md) （EOP），具有或沒有[Office 365 的高級威脅防護](office-365-atp.md)（ATP）。
+詳細資料取決於您的 Microsoft 365 訂閱是否包含[Exchange Online Protection](exchange-online-protection-overview.md) （EOP），具有或沒有[Office 365 的高級威脅防護](office-365-atp.md)（ATP）。
 
 |||
 |---|---|
@@ -82,7 +82,7 @@ ms.locfileid: "43632514"
 
 |||
 |---|---|
-|**度量**|**計算方式**|
+|**計量**|**計算方式**|
 |掃描的郵件|已掃描的電子郵件數目乘以收件者數目|
 |威脅已停止|識別為包含惡意軟體的電子郵件數目乘以收件者數目|
 |由[ATP](office-365-atp.md)封鎖|ATP 所封鎖的電子郵件數目乘以收件者數目|
