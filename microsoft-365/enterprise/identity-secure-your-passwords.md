@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 您必須在組織中強化且易於管理您的密碼。
-ms.openlocfilehash: b4eb1861eb8d1c483972cf6a7c22a339dc1b0b36
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6e5c2567ee2027be2a84121fdad10ba873ec1c43
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637045"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214647"
 ---
 # <a name="step-2-secure-your-passwords"></a>步驟 2：保護您的密碼
 
@@ -31,7 +31,7 @@ ms.locfileid: "43637045"
 
 *此為選用步驟，且同時適用於 Microsoft 365 E3 和 E5 版本*
 
-您所有的使用者都應使用 [Microsoft 密碼指導方針](https://www.microsoft.com/research/publication/password-guidance/)來建立使用者帳戶密碼。
+您所有的使用者都應使用 [Microsoft 密碼指導方針](https://www.microsoft.com/research/publication/password-guidance)來建立使用者帳戶密碼。
 
 若要防止使用者建立容易猜測的密碼，請使用 Azure AD 密碼保護，此功能會同時使用全域禁止密碼清單和您指定的選用自訂禁止密碼清單。 例如，您可以指定組織的特定字詞，例如：
 

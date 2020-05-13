@@ -13,12 +13,12 @@ ms.custom: ''
 localization_priority: Priority
 description: 了解 Microsoft 365 如何協助將金融服務移轉至現代共同作業平台，同時協助確保資料和系統安全性及遵循各種法規
 f1.keywords: NOCSH
-ms.openlocfilehash: affaf7ee6d9251003aec084d73b501212ebeda40
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 24177c6e878116b8d60d8f38be77d0b52141699a
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160456"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214693"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>美國銀行和資本市場的重要合規性與安全性考量
 
@@ -216,7 +216,7 @@ Microsoft 365 的安全性服務是由 Intelligent Security Graph 提供。 為�
 - 保留期間到期時，會發生什麼情況 (刪除文件、開始處置檢閱或不採取任何動作)。
 -  觸發保留期間的起始點 (建立日期、上次修改日期、標籤日期或事件) 並將文件或電子郵件標示為記錄 (表示無法編輯或刪除)。
 
-保留標籤便會發佈到 SharePoint 或 OneDrive 網站、Exchange 信箱和 Microsoft 365 群組。 使用者可以手動將保留標籤套用到文件和電子郵件。 記錄管理員可以使用情報來自動套用標籤。 情報功能可根據[九十多種內建敏感性資訊類型](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide) (例如 ABA 匯款路徑編號、美國銀行帳號或美國社會安全號碼)。 也可以根據關鍵字或電子郵件中的敏感性資料 (例如信用卡號碼或其他個人辨識資訊) 或根據 SharePoint 中繼資料來自訂。 針對不容易透過手動或自動模式比對來識別的資料，可訓練的分類器可用於根據機器學習技術聰明分類文件。
+保留標籤便會發佈到 SharePoint 或 OneDrive 網站、Exchange 信箱和 Microsoft 365 群組。 使用者可以手動將保留標籤套用到文件和電子郵件。 記錄管理員可以使用情報來自動套用標籤。 情報功能可根據[九十多種內建敏感性資訊類型](https://docs.microsoft.com/microsoft-365/compliance/content-search?view=o365-worldwide) (例如 ABA 匯款路徑編號、美國銀行帳號或美國社會安全號碼)。 也可以根據關鍵字或電子郵件中的敏感性資料 (例如信用卡號碼或其他個人辨識資訊) 或根據 SharePoint 中繼資料來自訂。 針對不容易透過手動或自動模式比對來識別的資料，可訓練的分類器可用於根據機器學習技術聰明分類文件。
  
 **美國證券交易委員會 (SEC)** 要求經紀商/自營商和其他受監管金融機構保留所有業務相關通訊。 這些要求適用於許多類型的通訊和資料，包括電子郵件、文件、立即訊息、傳真等。 **SEC 細則 17a-4** 定義這些組織在電子資料儲存系統中儲存記錄時必須符合的準則。 SEC 在 2003 年發行了闡明這些要求的版本。 其中包括下列準則：
 
