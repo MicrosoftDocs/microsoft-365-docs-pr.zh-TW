@@ -196,6 +196,8 @@
           href: manage/centralized-deployment-of-add-ins.md
         - name: 使用集中式部署來安裝和管理增益集
           href: manage/manage-deployment-of-add-ins.md
+        - name: 集中式部署常見問題集
+          href: manage/centralized-deployment-faq.md
         - name: 尋找合作夥伴或轉銷商。
           href: manage/find-your-partner-or-reseller.md
         - name: 關於訊息中心
