@@ -14,361 +14,361 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 exchange Online Protection （EOP）組織中建立、修改和刪除可用的反網路釣魚原則，但不含 Exchange Online 信箱。
-ms.openlocfilehash: 770990cdd7927ebb8afa088f2d5be09c75824d59
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 076c8aa8a0111643ab0f43bcd5f6ff21f82277b2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949268"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208896"
 ---
-# <a name="configure-anti-phishing-policies-in-eop"></a><span data-ttu-id="b73f0-103">在 EOP 中設定反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="b73f0-103">Configure anti-phishing policies in EOP</span></span>
+# <a name="configure-anti-phishing-policies-in-eop"></a><span data-ttu-id="58c7a-103">在 EOP 中設定反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="58c7a-103">Configure anti-phishing policies in EOP</span></span>
 
-<span data-ttu-id="b73f0-104">Office 365 組織若有 Exchange Online 信箱和獨立 Exchange Online Protection （EOP）組織，但沒有 Exchange Online 信箱的組織有預設的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-104">Office 365 organizations with Exchange Online mailboxes and standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes have a default anti-phishing policy.</span></span> <span data-ttu-id="b73f0-105">這個原則包含預設會啟用的有限數量的反欺騙功能。</span><span class="sxs-lookup"><span data-stu-id="b73f0-105">This policy contains a limited number of anti-spoofing features that are enabled by default.</span></span> <span data-ttu-id="b73f0-106">如需詳細資訊，請參閱[反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-106">For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).</span></span>
+<span data-ttu-id="58c7a-104">在未使用 Exchange online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）組織中使用信箱的 Microsoft 365 組織中，有預設的反網路釣魚原則，其中包含預設啟用的有限的反欺騙功能。</span><span class="sxs-lookup"><span data-stu-id="58c7a-104">In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, there's a default anti-phishing policy that contains a limited number of anti-spoofing features that are enabled by default.</span></span> <span data-ttu-id="58c7a-105">如需詳細資訊，請參閱[反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-105">For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).</span></span>
 
-<span data-ttu-id="b73f0-107">系統管理員可以查看、編輯和設定（但不能刪除）預設的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-107">Admins can view, edit, and configure (but not delete) the default anti-phishing policy.</span></span> <span data-ttu-id="b73f0-108">為了獲得更多細微性，您也可以建立適用于組織中特定使用者、群組或網域的自訂反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-108">For greater granularity, you can also create custom anti-phishing policies that apply to specific users, groups, or domains in your organization.</span></span> <span data-ttu-id="b73f0-109">自訂原則一律優先於預設原則，但您可以變更自訂原則的優先順序 (執行順序)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-109">Custom policies always take precedence over the default policy, but you can change the priority (running order) of your custom policies.</span></span>
+<span data-ttu-id="58c7a-106">系統管理員可以查看、編輯和設定（但不能刪除）預設的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-106">Admins can view, edit, and configure (but not delete) the default anti-phishing policy.</span></span> <span data-ttu-id="58c7a-107">為了獲得更多細微性，您也可以建立適用于組織中特定使用者、群組或網域的自訂反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-107">For greater granularity, you can also create custom anti-phishing policies that apply to specific users, groups, or domains in your organization.</span></span> <span data-ttu-id="58c7a-108">自訂原則一律優先於預設原則，但您可以變更自訂原則的優先順序 (執行順序)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-108">Custom policies always take precedence over the default policy, but you can change the priority (running order) of your custom policies.</span></span>
 
-<span data-ttu-id="b73f0-110">具有 Exchange Online 信箱的組織可在安全性 & 合規性中心或 Exchange Online PowerShell 中設定反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-110">Organizations with Exchange Online mailboxes can configure anti-phishing policies in the Security & Compliance Center or in Exchange Online PowerShell.</span></span> <span data-ttu-id="b73f0-111">獨立 EOP 組織只能使用安全性 & 合規性中心。</span><span class="sxs-lookup"><span data-stu-id="b73f0-111">Standalone EOP organizations can only use the Security & Compliance Center.</span></span>
+<span data-ttu-id="58c7a-109">具有 Exchange Online 信箱的組織可在安全性 & 合規性中心或 Exchange Online PowerShell 中設定反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-109">Organizations with Exchange Online mailboxes can configure anti-phishing policies in the Security & Compliance Center or in Exchange Online PowerShell.</span></span> <span data-ttu-id="58c7a-110">獨立 EOP 組織只能使用安全性 & 合規性中心。</span><span class="sxs-lookup"><span data-stu-id="58c7a-110">Standalone EOP organizations can only use the Security & Compliance Center.</span></span>
 
-<span data-ttu-id="b73f0-112">如需建立及修改 Office 365 Advanced 威脅防護中可用的更高級 ATP 反網路釣魚原則的詳細資訊，請參閱[在 office 365 中設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-112">For information about creating and modifying the more advanced ATP anti-phishing policies that are available in Office 365 Advanced Threat Protection, see [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).</span></span>
+<span data-ttu-id="58c7a-111">如需建立及修改 Office 365 Advanced 威脅防護（Office 365 ATP）中可用的更高級 ATP 反網路釣魚原則的詳細資訊，請參閱[設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-111">For information about creating and modifying the more advanced ATP anti-phishing policies that are available in Office 365 Advanced Threat Protection (Office 365 ATP), see [Configure ATP anti-phishing policies](configure-atp-anti-phishing-policies.md).</span></span>
 
-## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a><span data-ttu-id="b73f0-113">安全性 & 規範中心與 Exchange Online PowerShell 中的反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="b73f0-113">Anti-phishing policies in the Security & Compliance Center vs Exchange Online PowerShell</span></span>
+## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a><span data-ttu-id="58c7a-112">安全性 & 規範中心與 Exchange Online PowerShell 中的反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="58c7a-112">Anti-phishing policies in the Security & Compliance Center vs Exchange Online PowerShell</span></span>
 
-<span data-ttu-id="b73f0-114">反網路釣魚原則的基本元素如下：</span><span class="sxs-lookup"><span data-stu-id="b73f0-114">The basic elements of an anti-phishing policy are:</span></span>
+<span data-ttu-id="58c7a-113">反網路釣魚原則的基本元素如下：</span><span class="sxs-lookup"><span data-stu-id="58c7a-113">The basic elements of an anti-phishing policy are:</span></span>
 
-- <span data-ttu-id="b73f0-115">**反網路釣魚原則**：指定要啟用或停用的網路釣魚防護，以及要套用選項的動作。</span><span class="sxs-lookup"><span data-stu-id="b73f0-115">**The anti-phish policy**: Specifies the phishing protections to enable or disable, and the actions to apply options.</span></span>
+- <span data-ttu-id="58c7a-114">**反網路釣魚原則**：指定要啟用或停用的網路釣魚防護，以及要套用選項的動作。</span><span class="sxs-lookup"><span data-stu-id="58c7a-114">**The anti-phish policy**: Specifies the phishing protections to enable or disable, and the actions to apply options.</span></span>
 
-- <span data-ttu-id="b73f0-116">**反網路釣魚規則**：為反網路釣魚原則指定優先順序和收件者篩選器（該原則套用於誰）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-116">**The anti-phish rule**: Specifies the priority and recipient filters (who the policy applies to) for an anti-phish policy.</span></span>
+- <span data-ttu-id="58c7a-115">**反網路釣魚規則**：為反網路釣魚原則指定優先順序和收件者篩選器（該原則套用於誰）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-115">**The anti-phish rule**: Specifies the priority and recipient filters (who the policy applies to) for an anti-phish policy.</span></span>
 
-<span data-ttu-id="b73f0-117">當您在安全性 & 合規性中心管理反網路釣魚原則時，這兩個元素之間的差異並不明顯。</span><span class="sxs-lookup"><span data-stu-id="b73f0-117">The difference between these two elements isn't obvious when you manage anti-phishing policies in the Security & Compliance Center:</span></span>
+<span data-ttu-id="58c7a-116">當您在安全性 & 合規性中心管理反網路釣魚原則時，這兩個元素之間的差異並不明顯。</span><span class="sxs-lookup"><span data-stu-id="58c7a-116">The difference between these two elements isn't obvious when you manage anti-phishing policies in the Security & Compliance Center:</span></span>
 
-- <span data-ttu-id="b73f0-118">當您在安全性 & 合規性中心建立反網路釣魚原則時，實際上您實際上是建立反網路釣魚規則和相關聯的反網路釣魚原則，同時為這兩者使用相同的名稱。</span><span class="sxs-lookup"><span data-stu-id="b73f0-118">When you create an anti-phishing policy in the Security & Compliance Center, you're actually creating an anti-phish rule and the associated anti-phish policy at the same time using the same name for both.</span></span>
+- <span data-ttu-id="58c7a-117">當您在安全性 & 合規性中心建立反網路釣魚原則時，實際上您實際上是建立反網路釣魚規則和相關聯的反網路釣魚原則，同時為這兩者使用相同的名稱。</span><span class="sxs-lookup"><span data-stu-id="58c7a-117">When you create an anti-phishing policy in the Security & Compliance Center, you're actually creating an anti-phish rule and the associated anti-phish policy at the same time using the same name for both.</span></span>
 
-- <span data-ttu-id="b73f0-119">當您在安全性 & 規範中心修改反網路釣魚原則時，與名稱、優先順序、已啟用或已停用的設定或收件者篩選器相關的設定會修改反網路釣魚規則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-119">When you modify an anti-phishing policy in the Security & Compliance Center, settings related to the name, priority, enabled or disabled, and recipient filters modify the anti-phish rule.</span></span> <span data-ttu-id="b73f0-120">所有其他設定會修改關聯的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-120">All other settings modify the associated anti-phish policy.</span></span>
+- <span data-ttu-id="58c7a-118">當您在安全性 & 規範中心修改反網路釣魚原則時，與名稱、優先順序、已啟用或已停用的設定或收件者篩選器相關的設定會修改反網路釣魚規則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-118">When you modify an anti-phishing policy in the Security & Compliance Center, settings related to the name, priority, enabled or disabled, and recipient filters modify the anti-phish rule.</span></span> <span data-ttu-id="58c7a-119">所有其他設定會修改關聯的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-119">All other settings modify the associated anti-phish policy.</span></span>
 
-- <span data-ttu-id="b73f0-121">當您從安全性 & 合規性中心移除防網路釣魚原則時，會移除反網路釣魚規則和相關聯的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-121">When you remove an anti-phishing policy from the Security & Compliance Center, the anti-phish rule and the associated anti-phish policy are removed.</span></span>
+- <span data-ttu-id="58c7a-120">當您從安全性 & 合規性中心移除防網路釣魚原則時，會移除反網路釣魚規則和相關聯的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-120">When you remove an anti-phishing policy from the Security & Compliance Center, the anti-phish rule and the associated anti-phish policy are removed.</span></span>
 
-<span data-ttu-id="b73f0-122">在 Exchange Online PowerShell 中，反網路釣魚原則和反網路釣魚規則之間的差異很明顯。</span><span class="sxs-lookup"><span data-stu-id="b73f0-122">In Exchange Online PowerShell, the difference between anti-phish policies and anti-phish rules is apparent.</span></span> <span data-ttu-id="b73f0-123">您可以使用\*\* \*-AntiPhishPolicy\*\* Cmdlet 來管理反網路釣魚原則，並使用\*\* \*-AntiPhishRule\*\* Cmdlet 來管理反網路釣魚規則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-123">You manage anti-phish policies by using the **\*-AntiPhishPolicy** cmdlets, and you manage anti-phish rules by using the **\*-AntiPhishRule** cmdlets.</span></span>
+<span data-ttu-id="58c7a-121">在 Exchange Online PowerShell 中，反網路釣魚原則和反網路釣魚規則之間的差異很明顯。</span><span class="sxs-lookup"><span data-stu-id="58c7a-121">In Exchange Online PowerShell, the difference between anti-phish policies and anti-phish rules is apparent.</span></span> <span data-ttu-id="58c7a-122">您可以使用\*\* \* -AntiPhishPolicy\*\* Cmdlet 來管理反網路釣魚原則，並使用\*\* \* -AntiPhishRule\*\* Cmdlet 來管理反網路釣魚規則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-122">You manage anti-phish policies by using the **\*-AntiPhishPolicy** cmdlets, and you manage anti-phish rules by using the **\*-AntiPhishRule** cmdlets.</span></span>
 
-- <span data-ttu-id="b73f0-124">在 PowerShell 中，您先建立反網路釣魚原則，然後建立反網路釣魚規則，識別套用規則的原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-124">In PowerShell, you create the anti-phish policy first, then you create the anti-phish rule that identifies the policy that the rule applies to.</span></span>
+- <span data-ttu-id="58c7a-123">在 PowerShell 中，您先建立反網路釣魚原則，然後建立反網路釣魚規則，識別套用規則的原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-123">In PowerShell, you create the anti-phish policy first, then you create the anti-phish rule that identifies the policy that the rule applies to.</span></span>
 
-- <span data-ttu-id="b73f0-125">在 PowerShell 中，您可以修改反網路釣魚原則和反網路釣魚規則中的設定。</span><span class="sxs-lookup"><span data-stu-id="b73f0-125">In PowerShell, you modify the settings in the anti-phish policy and the anti-phish rule separately.</span></span>
+- <span data-ttu-id="58c7a-124">在 PowerShell 中，您可以修改反網路釣魚原則和反網路釣魚規則中的設定。</span><span class="sxs-lookup"><span data-stu-id="58c7a-124">In PowerShell, you modify the settings in the anti-phish policy and the anti-phish rule separately.</span></span>
 
-### <a name="default-atp-anti-phishing-policy"></a><span data-ttu-id="b73f0-126">預設 ATP 反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="b73f0-126">Default ATP anti-phishing policy</span></span>
+### <a name="default-atp-anti-phishing-policy"></a><span data-ttu-id="58c7a-125">預設 ATP 反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="58c7a-125">Default ATP anti-phishing policy</span></span>
 
-<span data-ttu-id="b73f0-127">每個組織都有一個名為 Office365 AntiPhish 的內建反網路釣魚原則，其具有下列屬性：</span><span class="sxs-lookup"><span data-stu-id="b73f0-127">Every organization has a built-in anti-phishing policy named Office365 AntiPhish Default that has these properties:</span></span>
+<span data-ttu-id="58c7a-126">每個組織都有一個名為 Office365 AntiPhish 的內建反網路釣魚原則，其具有下列屬性：</span><span class="sxs-lookup"><span data-stu-id="58c7a-126">Every organization has a built-in anti-phishing policy named Office365 AntiPhish Default that has these properties:</span></span>
 
-- <span data-ttu-id="b73f0-128">名稱為 Office365 AntiPhish 的原則會套用至組織中的所有收件者，即使沒有與原則相關聯的反網路釣魚規則（收件者篩選器）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-128">The policy named Office365 AntiPhish Default is applied to all recipients in the organization, even though there's no anti-phish rule (recipient filters) associated with the policy.</span></span>
+- <span data-ttu-id="58c7a-127">名稱為 Office365 AntiPhish 的原則會套用至組織中的所有收件者，即使沒有與原則相關聯的反網路釣魚規則（收件者篩選器）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-127">The policy named Office365 AntiPhish Default is applied to all recipients in the organization, even though there's no anti-phish rule (recipient filters) associated with the policy.</span></span>
 
-- <span data-ttu-id="b73f0-129">名為 Office365 AntiPhish 的原則預設具有您無法修改的自訂**優先順序值（** 原則永遠會最後套用）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-129">The policy named Office365 AntiPhish Default has the custom priority value **Lowest** that you can't modify (the policy is always applied last).</span></span> <span data-ttu-id="b73f0-130">您建立的任何自訂原則的優先順序都會高於名為 Office365 AntiPhish Default 的原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-130">Any custom policies that you create always have a higher priority than the policy named Office365 AntiPhish Default.</span></span>
+- <span data-ttu-id="58c7a-128">名為 Office365 AntiPhish 的原則預設具有您無法修改的自訂**優先順序值（** 原則永遠會最後套用）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-128">The policy named Office365 AntiPhish Default has the custom priority value **Lowest** that you can't modify (the policy is always applied last).</span></span> <span data-ttu-id="58c7a-129">您建立的任何自訂原則的優先順序都會高於名為 Office365 AntiPhish Default 的原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-129">Any custom policies that you create always have a higher priority than the policy named Office365 AntiPhish Default.</span></span>
 
-- <span data-ttu-id="b73f0-131">名為 Office365 AntiPhish 的原則預設為預設原則（ **IsDefault**屬性具有值`True`），而且您無法刪除預設原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-131">The policy named Office365 AntiPhish Default is the default policy (the **IsDefault** property has the value `True`), and you can't delete the default policy.</span></span>
+- <span data-ttu-id="58c7a-130">名為 Office365 AntiPhish 的原則預設為預設原則（ **IsDefault**屬性具有值 `True` ），而且您無法刪除預設原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-130">The policy named Office365 AntiPhish Default is the default policy (the **IsDefault** property has the value `True`), and you can't delete the default policy.</span></span>
 
-<span data-ttu-id="b73f0-132">若要提高反網路釣魚防護的效能，您可以建立自訂的反網路釣魚原則，其套用至特定使用者或使用者群組的更嚴格設定。</span><span class="sxs-lookup"><span data-stu-id="b73f0-132">To increase the effectiveness of anti-phishing protection, you can create custom anti-phishing policies with stricter settings that are applied to specific users or groups of users.</span></span>
+<span data-ttu-id="58c7a-131">若要提高反網路釣魚防護的效能，您可以建立自訂的反網路釣魚原則，其套用至特定使用者或使用者群組的更嚴格設定。</span><span class="sxs-lookup"><span data-stu-id="58c7a-131">To increase the effectiveness of anti-phishing protection, you can create custom anti-phishing policies with stricter settings that are applied to specific users or groups of users.</span></span>
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="b73f0-133">開始之前有哪些須知？</span><span class="sxs-lookup"><span data-stu-id="b73f0-133">What do you need to know before you begin?</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="58c7a-132">開始之前有哪些須知？</span><span class="sxs-lookup"><span data-stu-id="58c7a-132">What do you need to know before you begin?</span></span>
 
-- <span data-ttu-id="b73f0-134">您要在 <https://protection.office.com/> 開啟安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="b73f0-134">You open the Security & Compliance Center at <https://protection.office.com/>.</span></span> <span data-ttu-id="b73f0-135">若要直接移至 [**反網路釣魚**] 頁面<https://protection.office.com/antiphishing>，請使用。</span><span class="sxs-lookup"><span data-stu-id="b73f0-135">To go directly to the **Anti-phishing** page, use <https://protection.office.com/antiphishing>.</span></span>
+- <span data-ttu-id="58c7a-133">您要在 <https://protection.office.com/> 開啟安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="58c7a-133">You open the Security & Compliance Center at <https://protection.office.com/>.</span></span> <span data-ttu-id="58c7a-134">若要直接移至 [**反網路釣魚**] 頁面，請使用 <https://protection.office.com/antiphishing> 。</span><span class="sxs-lookup"><span data-stu-id="58c7a-134">To go directly to the **Anti-phishing** page, use <https://protection.office.com/antiphishing>.</span></span>
 
-- <span data-ttu-id="b73f0-136">若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-136">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span>
+- <span data-ttu-id="58c7a-135">若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-135">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span>
 
-  <span data-ttu-id="b73f0-137">您無法管理獨立 EOP PowerShell 中的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-137">You can't manage anti-phishing policies in standalone EOP PowerShell.</span></span>
+  <span data-ttu-id="58c7a-136">您無法管理獨立 EOP PowerShell 中的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-136">You can't manage anti-phishing policies in standalone EOP PowerShell.</span></span>
 
-- <span data-ttu-id="b73f0-138">您必須已獲指派權限，才能執行這些程序。</span><span class="sxs-lookup"><span data-stu-id="b73f0-138">You need to be assigned permissions before you can perform these procedures.</span></span> <span data-ttu-id="b73f0-139">若要新增、修改和刪除反網路釣魚原則，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。</span><span class="sxs-lookup"><span data-stu-id="b73f0-139">To add, modify, and delete anti-phishing policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.</span></span> <span data-ttu-id="b73f0-140">若要獲得反網路釣魚原則的唯讀存取權，您必須是**Security Reader**角色群組的成員。</span><span class="sxs-lookup"><span data-stu-id="b73f0-140">For read-only access to anti-phishing policies, you need to be a member of the **Security Reader** role group.</span></span> <span data-ttu-id="b73f0-141">如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱 [Office 365 安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-141">For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+- <span data-ttu-id="58c7a-137">您必須已獲指派權限，才能執行這些程序。</span><span class="sxs-lookup"><span data-stu-id="58c7a-137">You need to be assigned permissions before you can perform these procedures.</span></span> <span data-ttu-id="58c7a-138">若要新增、修改和刪除反網路釣魚原則，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。</span><span class="sxs-lookup"><span data-stu-id="58c7a-138">To add, modify, and delete anti-phishing policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.</span></span> <span data-ttu-id="58c7a-139">若要獲得反網路釣魚原則的唯讀存取權，您必須是**Security Reader**角色群組的成員。</span><span class="sxs-lookup"><span data-stu-id="58c7a-139">For read-only access to anti-phishing policies, you need to be a member of the **Security Reader** role group.</span></span> <span data-ttu-id="58c7a-140">如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-140">For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
 
-- <span data-ttu-id="b73f0-142">若要能夠在獨立 EOP 中建立及修改反垃圾郵件原則，您需要針對租使用者執行需要_分解_的專案。</span><span class="sxs-lookup"><span data-stu-id="b73f0-142">To be able to create and modify anti-spam policies in standalone EOP, you need to do something that requires _hydration_ for your tenant.</span></span> <span data-ttu-id="b73f0-143">例如，在 EAC 中，您可以移至 [**許可權**] 索引標籤、選取現有的角色群組、按一下 [](../../media/ITPro-EAC-EditIcon.png)**編輯** ![編輯圖示] 及 [移除角色] （最終將會新增回）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-143">For example, in the EAC, you can go to the **Permissions** tab, select an existing role group, click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png), and remove a role (which you'll ultimately add back).</span></span> <span data-ttu-id="b73f0-144">如果您的租使用者從未 hydrated，您會看到一個名為「**更新組織」設定**的對話方塊，其進度列應該會順利完成。</span><span class="sxs-lookup"><span data-stu-id="b73f0-144">If your tenant has never been hydrated, you get a dialog named **Update Organization Settings** with a progress bar that should complete successfully.</span></span> <span data-ttu-id="b73f0-145">如需分解的詳細資訊，請參閱[Enable-OrganizationCustomization 指令程式](https://docs.microsoft.com/powershell/module/exchange/organization/enable-organizationcustomization)（不可在獨立 EOP PowerShell 或安全性 & 規範中心）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-145">For more information about hydration, see the [Enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/organization/enable-organizationcustomization) cmdlet (which isn't available in standalone EOP PowerShell or in the Security & Compliance Center).</span></span>
+- <span data-ttu-id="58c7a-141">若要能夠在獨立 EOP 中建立及修改反垃圾郵件原則，您需要針對租使用者執行需要_分解_的專案。</span><span class="sxs-lookup"><span data-stu-id="58c7a-141">To be able to create and modify anti-spam policies in standalone EOP, you need to do something that requires _hydration_ for your tenant.</span></span> <span data-ttu-id="58c7a-142">例如，在 EAC 中，您可以移至 [**許可權**] 索引標籤、選取現有的角色群組、按一下 [**編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-EditIcon.png) 及 [移除角色] （最終將會新增回）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-142">For example, in the EAC, you can go to the **Permissions** tab, select an existing role group, click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png), and remove a role (which you'll ultimately add back).</span></span> <span data-ttu-id="58c7a-143">如果您的租使用者從未 hydrated，您會看到一個名為「**更新組織」設定**的對話方塊，其進度列應該會順利完成。</span><span class="sxs-lookup"><span data-stu-id="58c7a-143">If your tenant has never been hydrated, you get a dialog named **Update Organization Settings** with a progress bar that should complete successfully.</span></span> <span data-ttu-id="58c7a-144">如需分解的詳細資訊，請參閱[Enable-OrganizationCustomization 指令程式](https://docs.microsoft.com/powershell/module/exchange/organization/enable-organizationcustomization)（不可在獨立 EOP PowerShell 或安全性 & 規範中心）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-144">For more information about hydration, see the [Enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/organization/enable-organizationcustomization) cmdlet (which isn't available in standalone EOP PowerShell or in the Security & Compliance Center).</span></span>
 
-- <span data-ttu-id="b73f0-146">如需有關反網路釣魚原則的建議設定，請參閱[EOP 預設的反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-146">For our recommended settings for anti-phishing policies, see [EOP default anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).</span></span>
+- <span data-ttu-id="58c7a-145">如需有關反網路釣魚原則的建議設定，請參閱[EOP 預設的反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-145">For our recommended settings for anti-phishing policies, see [EOP default anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).</span></span>
 
-- <span data-ttu-id="b73f0-147">允許套用更新的原則最多30分鐘。</span><span class="sxs-lookup"><span data-stu-id="b73f0-147">Allow up to 30 minutes for the updated policy to be applied.</span></span>
+- <span data-ttu-id="58c7a-146">允許套用更新的原則最多30分鐘。</span><span class="sxs-lookup"><span data-stu-id="58c7a-146">Allow up to 30 minutes for the updated policy to be applied.</span></span>
 
-- <span data-ttu-id="b73f0-148">如需在篩選管線中套用反網路釣魚原則的相關資訊，請參閱[Office 365 中的電子郵件保護順序和優先順序](how-policies-and-protections-are-combined.md)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-148">For information about where anti-phishing policies are applied in the filtering pipeline, see [Order and precedence of email protection in Office 365](how-policies-and-protections-are-combined.md).</span></span>
+- <span data-ttu-id="58c7a-147">如需在篩選管線中套用反網路釣魚原則的相關資訊，請參閱[電子郵件保護的順序及優先順序](how-policies-and-protections-are-combined.md)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-147">For information about where anti-phishing policies are applied in the filtering pipeline, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).</span></span>
 
-## <a name="use-the-security--compliance-center-to-create-anti-phishing-policies"></a><span data-ttu-id="b73f0-149">使用安全性 & 規範中心建立反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="b73f0-149">Use the Security & Compliance Center to create anti-phishing policies</span></span>
+## <a name="use-the-security--compliance-center-to-create-anti-phishing-policies"></a><span data-ttu-id="58c7a-148">使用安全性 & 規範中心建立反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="58c7a-148">Use the Security & Compliance Center to create anti-phishing policies</span></span>
 
-<span data-ttu-id="b73f0-150">在安全性 & 合規性中心建立自訂的反網路釣魚原則，會同時使用相同的名稱建立反網路釣魚規則和相關聯的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-150">Creating a custom anti-phishing policy in the Security & Compliance Center creates the anti-phish rule and the associated anti-phish policy at the same time using the same name for both.</span></span>
+<span data-ttu-id="58c7a-149">在安全性 & 合規性中心建立自訂的反網路釣魚原則，會同時使用相同的名稱建立反網路釣魚規則和相關聯的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-149">Creating a custom anti-phishing policy in the Security & Compliance Center creates the anti-phish rule and the associated anti-phish policy at the same time using the same name for both.</span></span>
 
-<span data-ttu-id="b73f0-151">當您建立反網路釣魚原則時，您只能指定原則名稱、描述及識別套用原則的收件者篩選器。</span><span class="sxs-lookup"><span data-stu-id="b73f0-151">When you create an anti-phishing policy, you can only specify the policy name, description, and the recipient filter that identifies who the policy applies to.</span></span> <span data-ttu-id="b73f0-152">建立原則之後，您可以修改原則，以變更或審閱預設的反網路釣魚設定。</span><span class="sxs-lookup"><span data-stu-id="b73f0-152">After you create the policy, you can modify the policy to change or review the default anti-phishing settings.</span></span>
+<span data-ttu-id="58c7a-150">當您建立反網路釣魚原則時，您只能指定原則名稱、描述及識別套用原則的收件者篩選器。</span><span class="sxs-lookup"><span data-stu-id="58c7a-150">When you create an anti-phishing policy, you can only specify the policy name, description, and the recipient filter that identifies who the policy applies to.</span></span> <span data-ttu-id="58c7a-151">建立原則之後，您可以修改原則，以變更或審閱預設的反網路釣魚設定。</span><span class="sxs-lookup"><span data-stu-id="58c7a-151">After you create the policy, you can modify the policy to change or review the default anti-phishing settings.</span></span>
 
-1. <span data-ttu-id="b73f0-153">在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **反網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="b73f0-153">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
+1. <span data-ttu-id="58c7a-152">在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **反網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="58c7a-152">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
 
-2. <span data-ttu-id="b73f0-154">在 [**反網路釣魚**] 頁面上，按一下 [**建立**]。</span><span class="sxs-lookup"><span data-stu-id="b73f0-154">On the **Anti-phishing** page, click **Create**.</span></span>
+2. <span data-ttu-id="58c7a-153">在 [**反網路釣魚**] 頁面上，按一下 [**建立**]。</span><span class="sxs-lookup"><span data-stu-id="58c7a-153">On the **Anti-phishing** page, click **Create**.</span></span>
 
-3. <span data-ttu-id="b73f0-155">[**建立新的反網路釣魚原則**] 嚮導隨即開啟。</span><span class="sxs-lookup"><span data-stu-id="b73f0-155">The **Create a new anti-phishing policy** wizard opens.</span></span> <span data-ttu-id="b73f0-156">在 [**命名您的原則**] 頁面上，設定下列設定：</span><span class="sxs-lookup"><span data-stu-id="b73f0-156">On the **Name your policy** page, configure the following settings:</span></span>
+3. <span data-ttu-id="58c7a-154">[**建立新的反網路釣魚原則**] 嚮導隨即開啟。</span><span class="sxs-lookup"><span data-stu-id="58c7a-154">The **Create a new anti-phishing policy** wizard opens.</span></span> <span data-ttu-id="58c7a-155">在 [**命名您的原則**] 頁面上，設定下列設定：</span><span class="sxs-lookup"><span data-stu-id="58c7a-155">On the **Name your policy** page, configure the following settings:</span></span>
 
-   - <span data-ttu-id="b73f0-157">**名稱**：輸入原則的唯一描述性名稱。</span><span class="sxs-lookup"><span data-stu-id="b73f0-157">**Name**: Enter a unique, descriptive name for the policy.</span></span>
+   - <span data-ttu-id="58c7a-156">**名稱**：輸入原則的唯一描述性名稱。</span><span class="sxs-lookup"><span data-stu-id="58c7a-156">**Name**: Enter a unique, descriptive name for the policy.</span></span>
 
-   - <span data-ttu-id="b73f0-158">**說明**：輸入原則的選擇性說明。</span><span class="sxs-lookup"><span data-stu-id="b73f0-158">**Description**: Enter an optional description for the policy.</span></span>
+   - <span data-ttu-id="58c7a-157">**說明**：輸入原則的選擇性說明。</span><span class="sxs-lookup"><span data-stu-id="58c7a-157">**Description**: Enter an optional description for the policy.</span></span>
 
-   <span data-ttu-id="b73f0-159">完成後，按 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="b73f0-159">When you're finished, click **Next**.</span></span>
+   <span data-ttu-id="58c7a-158">完成後，按 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="58c7a-158">When you're finished, click **Next**.</span></span>
 
-4. <span data-ttu-id="b73f0-160">在出現的 [套用**至**] 頁面上，識別套用原則的內部收件者。</span><span class="sxs-lookup"><span data-stu-id="b73f0-160">On the **Applied to** page that appears, identify the internal recipients that the policy applies to.</span></span>
+4. <span data-ttu-id="58c7a-159">在出現的 [套用**至**] 頁面上，識別套用原則的內部收件者。</span><span class="sxs-lookup"><span data-stu-id="58c7a-159">On the **Applied to** page that appears, identify the internal recipients that the policy applies to.</span></span>
 
-   <span data-ttu-id="b73f0-161">您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。</span><span class="sxs-lookup"><span data-stu-id="b73f0-161">You can only use a condition or exception once, but you can specify multiple values for the condition or exception.</span></span> <span data-ttu-id="b73f0-162">相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<recipient1\>_ 或 _\<recipient2\>_)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-162">Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_).</span></span> <span data-ttu-id="b73f0-163">不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<recipient1\>_ 和 _\<群組 1 的成員\>_)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-163">Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).</span></span>
+   <span data-ttu-id="58c7a-160">您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。</span><span class="sxs-lookup"><span data-stu-id="58c7a-160">You can only use a condition or exception once, but you can specify multiple values for the condition or exception.</span></span> <span data-ttu-id="58c7a-161">相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<recipient1\>_ 或 _\<recipient2\>_)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-161">Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_).</span></span> <span data-ttu-id="58c7a-162">不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<recipient1\>_ 和 _\<群組 1 的成員\>_)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-162">Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).</span></span>
 
-   <span data-ttu-id="b73f0-164">按一下 [**新增條件**]。</span><span class="sxs-lookup"><span data-stu-id="b73f0-164">Click **Add a condition**.</span></span> <span data-ttu-id="b73f0-165">在出現的下拉式清單中，選取 [**適用于**下列條件的條件：</span><span class="sxs-lookup"><span data-stu-id="b73f0-165">In the dropdown that appears, select a condition under **Applied if**:</span></span>
+   <span data-ttu-id="58c7a-163">按一下 [**新增條件**]。</span><span class="sxs-lookup"><span data-stu-id="58c7a-163">Click **Add a condition**.</span></span> <span data-ttu-id="58c7a-164">在出現的下拉式清單中，選取 [**適用于**下列條件的條件：</span><span class="sxs-lookup"><span data-stu-id="58c7a-164">In the dropdown that appears, select a condition under **Applied if**:</span></span>
 
-   - <span data-ttu-id="b73f0-166">**收件者是**：指定您組織中的一或多個信箱、郵件使用者或郵件連絡人。</span><span class="sxs-lookup"><span data-stu-id="b73f0-166">**The recipient is**: Specifies one or more mailboxes, mail users, or mail contacts in your organization.</span></span>
-   - <span data-ttu-id="b73f0-167">**收件者以成員的身分存在於**：指定您組織中的一或多個群組。</span><span class="sxs-lookup"><span data-stu-id="b73f0-167">**The recipient is a member of**: Specifies one or more groups in your organization.</span></span>
-   - <span data-ttu-id="b73f0-168">**收件者網域為**：指定 Office 365 中一個或多個接受網域 (已設定) 中的收件者。</span><span class="sxs-lookup"><span data-stu-id="b73f0-168">**The recipient domain is**: Specifies recipients in one or more of the configured accepted domains in Office 365.</span></span>
+   - <span data-ttu-id="58c7a-165">**收件者是**：指定您組織中的一或多個信箱、郵件使用者或郵件連絡人。</span><span class="sxs-lookup"><span data-stu-id="58c7a-165">**The recipient is**: Specifies one or more mailboxes, mail users, or mail contacts in your organization.</span></span>
+   - <span data-ttu-id="58c7a-166">**收件者以成員的身分存在於**：指定您組織中的一或多個群組。</span><span class="sxs-lookup"><span data-stu-id="58c7a-166">**The recipient is a member of**: Specifies one or more groups in your organization.</span></span>
+   - <span data-ttu-id="58c7a-167">**收件者網域為**：指定組織中一或多個已設定公認的網域中的收件者。</span><span class="sxs-lookup"><span data-stu-id="58c7a-167">**The recipient domain is**: Specifies recipients in one or more of the configured accepted domains in your organization.</span></span>
 
-   <span data-ttu-id="b73f0-169">選取條件後，會出現對應的下拉式清單，其中有**其中**一個方塊。</span><span class="sxs-lookup"><span data-stu-id="b73f0-169">After you select the condition, a corresponding dropdown appears with an **Any of these** box.</span></span>
+   <span data-ttu-id="58c7a-168">選取條件後，會出現對應的下拉式清單，其中有**其中**一個方塊。</span><span class="sxs-lookup"><span data-stu-id="58c7a-168">After you select the condition, a corresponding dropdown appears with an **Any of these** box.</span></span>
 
-   - <span data-ttu-id="b73f0-170">在方塊中按一下，並在值清單中向內移動，以選取。</span><span class="sxs-lookup"><span data-stu-id="b73f0-170">Click in the box and scroll through the list of values to select.</span></span>
-   - <span data-ttu-id="b73f0-171">按一下方塊中的 [開始輸入]，以篩選清單並選取值。</span><span class="sxs-lookup"><span data-stu-id="b73f0-171">Click in the box and start typing to filter the list and select a value.</span></span>
-   - <span data-ttu-id="b73f0-172">若要新增其他值，請按一下方塊中的空白區域。</span><span class="sxs-lookup"><span data-stu-id="b73f0-172">To add additional values, click in an empty area in the box.</span></span>
-   - <span data-ttu-id="b73f0-173">若要移除個別專案， **Remove** ![請按一下值](../../media/scc-remove-icon.png)上的 [移除移除圖示]。</span><span class="sxs-lookup"><span data-stu-id="b73f0-173">To remove individual entries, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the value.</span></span>
-   - <span data-ttu-id="b73f0-174">若要移除整個條件，請**Remove** ![按一下條件上](../../media/scc-remove-icon.png)的 [移除移除圖示]。</span><span class="sxs-lookup"><span data-stu-id="b73f0-174">To remove the whole condition, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the condition.</span></span>
+   - <span data-ttu-id="58c7a-169">在方塊中按一下，並在值清單中向內移動，以選取。</span><span class="sxs-lookup"><span data-stu-id="58c7a-169">Click in the box and scroll through the list of values to select.</span></span>
+   - <span data-ttu-id="58c7a-170">按一下方塊中的 [開始輸入]，以篩選清單並選取值。</span><span class="sxs-lookup"><span data-stu-id="58c7a-170">Click in the box and start typing to filter the list and select a value.</span></span>
+   - <span data-ttu-id="58c7a-171">若要新增其他值，請按一下方塊中的空白區域。</span><span class="sxs-lookup"><span data-stu-id="58c7a-171">To add additional values, click in an empty area in the box.</span></span>
+   - <span data-ttu-id="58c7a-172">若要移除個別專案， **Remove**請按一下 ![ ](../../media/scc-remove-icon.png) 值上的 [移除移除圖示]。</span><span class="sxs-lookup"><span data-stu-id="58c7a-172">To remove individual entries, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the value.</span></span>
+   - <span data-ttu-id="58c7a-173">若要移除整個條件，請**Remove**按一下 ![ ](../../media/scc-remove-icon.png) 條件上的 [移除移除圖示]。</span><span class="sxs-lookup"><span data-stu-id="58c7a-173">To remove the whole condition, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the condition.</span></span>
 
-   <span data-ttu-id="b73f0-175">若要新增其他條件，請按一下 [**新增條件**]，然後選取 [套用**于 if**中的剩餘值]。</span><span class="sxs-lookup"><span data-stu-id="b73f0-175">To add an additional condition, click **Add a condition** and select a remaining value under **Applied if**.</span></span>
+   <span data-ttu-id="58c7a-174">若要新增其他條件，請按一下 [**新增條件**]，然後選取 [套用**于 if**中的剩餘值]。</span><span class="sxs-lookup"><span data-stu-id="58c7a-174">To add an additional condition, click **Add a condition** and select a remaining value under **Applied if**.</span></span>
 
-   <span data-ttu-id="b73f0-176">若要新增例外狀況，請按一下 [**新增條件**]，然後選取 [**除外 if**] 底下的例外狀況。</span><span class="sxs-lookup"><span data-stu-id="b73f0-176">To add exceptions, click **Add a condition** and select an exception under **Except if**.</span></span> <span data-ttu-id="b73f0-177">設定和行為就像是條件。</span><span class="sxs-lookup"><span data-stu-id="b73f0-177">The settings and behavior are exactly like the conditions.</span></span>
+   <span data-ttu-id="58c7a-175">若要新增例外狀況，請按一下 [**新增條件**]，然後選取 [**除外 if**] 底下的例外狀況。</span><span class="sxs-lookup"><span data-stu-id="58c7a-175">To add exceptions, click **Add a condition** and select an exception under **Except if**.</span></span> <span data-ttu-id="58c7a-176">設定和行為就像是條件。</span><span class="sxs-lookup"><span data-stu-id="58c7a-176">The settings and behavior are exactly like the conditions.</span></span>
 
-   <span data-ttu-id="b73f0-178">完成後，按 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="b73f0-178">When you're finished, click **Next**.</span></span>
+   <span data-ttu-id="58c7a-177">完成後，按 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="58c7a-177">When you're finished, click **Next**.</span></span>
 
-5. <span data-ttu-id="b73f0-179">在 [**複查您的設定**] 頁面上，複查您的設定。</span><span class="sxs-lookup"><span data-stu-id="b73f0-179">On the **Review your settings** page that appears, review your settings.</span></span> <span data-ttu-id="b73f0-180">您可以按一下每個設定的 [**編輯**] 進行修改。</span><span class="sxs-lookup"><span data-stu-id="b73f0-180">You can click **Edit** on each setting to modify it.</span></span>
+5. <span data-ttu-id="58c7a-178">在 [**複查您的設定**] 頁面上，複查您的設定。</span><span class="sxs-lookup"><span data-stu-id="58c7a-178">On the **Review your settings** page that appears, review your settings.</span></span> <span data-ttu-id="58c7a-179">您可以按一下每個設定的 [**編輯**] 進行修改。</span><span class="sxs-lookup"><span data-stu-id="58c7a-179">You can click **Edit** on each setting to modify it.</span></span>
 
-   <span data-ttu-id="b73f0-181">當您完成時，按一下 [**建立這個原則**]。</span><span class="sxs-lookup"><span data-stu-id="b73f0-181">When you're finished, click **Create this policy**.</span></span>
+   <span data-ttu-id="58c7a-180">當您完成時，按一下 [**建立這個原則**]。</span><span class="sxs-lookup"><span data-stu-id="58c7a-180">When you're finished, click **Create this policy**.</span></span>
 
-6. <span data-ttu-id="b73f0-182">在出現的確認對話方塊中，按一下 [**確定**]。</span><span class="sxs-lookup"><span data-stu-id="b73f0-182">Click **OK** in the confirmation dialog that appears.</span></span>
+6. <span data-ttu-id="58c7a-181">在出現的確認對話方塊中，按一下 [**確定**]。</span><span class="sxs-lookup"><span data-stu-id="58c7a-181">Click **OK** in the confirmation dialog that appears.</span></span>
 
-<span data-ttu-id="b73f0-183">使用這些一般原則設定建立反網路釣魚原則之後，請使用下一節中的指示來設定原則中的保護設定。</span><span class="sxs-lookup"><span data-stu-id="b73f0-183">After you create the anti-phishing policy with these general policy settings, use the instructions in the next section to configure the protection settings in the policy.</span></span>
+<span data-ttu-id="58c7a-182">使用這些一般原則設定建立反網路釣魚原則之後，請使用下一節中的指示來設定原則中的保護設定。</span><span class="sxs-lookup"><span data-stu-id="58c7a-182">After you create the anti-phishing policy with these general policy settings, use the instructions in the next section to configure the protection settings in the policy.</span></span>
 
-## <a name="use-the-security--compliance-center-to-modify-anti-phishing-policies"></a><span data-ttu-id="b73f0-184">使用安全性 & 規範中心來修改反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="b73f0-184">Use the Security & Compliance Center to modify anti-phishing policies</span></span>
+## <a name="use-the-security--compliance-center-to-modify-anti-phishing-policies"></a><span data-ttu-id="58c7a-183">使用安全性 & 規範中心來修改反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="58c7a-183">Use the Security & Compliance Center to modify anti-phishing policies</span></span>
 
-<span data-ttu-id="b73f0-185">請使用下列程式修改反網路釣魚原則：您建立的新原則，或您已自訂的現有原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-185">Use the following procedures to modify anti-phishing policies: a new policy that you created, or existing policies that you've already customized.</span></span>
+<span data-ttu-id="58c7a-184">請使用下列程式修改反網路釣魚原則：您建立的新原則，或您已自訂的現有原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-184">Use the following procedures to modify anti-phishing policies: a new policy that you created, or existing policies that you've already customized.</span></span>
 
-1. <span data-ttu-id="b73f0-186">如果您還沒有開啟安全性 & 規範中心，請移至**威脅管理** \> **原則** \> **反網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="b73f0-186">If you're not already there, open the Security & Compliance Center, and go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
+1. <span data-ttu-id="58c7a-185">如果您還沒有開啟安全性 & 規範中心，請移至**威脅管理** \> **原則** \> **反網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="58c7a-185">If you're not already there, open the Security & Compliance Center, and go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
 
-2. <span data-ttu-id="b73f0-187">選取您要修改的自訂反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-187">Select the custom anti-phishing policy that you want to modify.</span></span> <span data-ttu-id="b73f0-188">如果已選取它，請取消選取它，然後再次選取。</span><span class="sxs-lookup"><span data-stu-id="b73f0-188">If it's already selected, deselect it and select it again.</span></span>
+2. <span data-ttu-id="58c7a-186">選取您要修改的自訂反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-186">Select the custom anti-phishing policy that you want to modify.</span></span> <span data-ttu-id="58c7a-187">如果已選取它，請取消選取它，然後再次選取。</span><span class="sxs-lookup"><span data-stu-id="58c7a-187">If it's already selected, deselect it and select it again.</span></span>
 
-3. <span data-ttu-id="b73f0-189">隨即會顯示 [\*\*編輯您的原則\<名稱\> \*\* ] 快顯視窗。</span><span class="sxs-lookup"><span data-stu-id="b73f0-189">The **Edit your policy \<name\>** flyout appears.</span></span> <span data-ttu-id="b73f0-190">按一下任何區段中的 [**編輯**]，即可存取該區段中的設定。</span><span class="sxs-lookup"><span data-stu-id="b73f0-190">Clicking **Edit** in any section gives you access to the settings in that section.</span></span>
+3. <span data-ttu-id="58c7a-188">隨即會顯示 [**編輯您的原則 \< \> 名稱**] 快顯視窗。</span><span class="sxs-lookup"><span data-stu-id="58c7a-188">The **Edit your policy \<name\>** flyout appears.</span></span> <span data-ttu-id="58c7a-189">按一下任何區段中的 [**編輯**]，即可存取該區段中的設定。</span><span class="sxs-lookup"><span data-stu-id="58c7a-189">Clicking **Edit** in any section gives you access to the settings in that section.</span></span>
 
-   - <span data-ttu-id="b73f0-191">下列步驟會以區段出現的順序顯示，但不是連續的（您可以選取及修改所有順序的區段）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-191">The following steps are presented in the order that the sections appear, but they aren't sequential (you can select and modify the sections in any order).</span></span>
+   - <span data-ttu-id="58c7a-190">下列步驟會以區段出現的順序顯示，但不是連續的（您可以選取及修改所有順序的區段）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-190">The following steps are presented in the order that the sections appear, but they aren't sequential (you can select and modify the sections in any order).</span></span>
 
-   - <span data-ttu-id="b73f0-192">在區段中按一下 [**編輯**] 之後，可用設定會以嚮導格式呈現，但是您可以在頁面中以任何順序跳離，也可以按一下任何頁面上的 [**儲存**] （或 [**取消**]](../../media/scc-remove-icon.png)或 [**關閉** ![] 關閉圖示可返回 [\*\*編輯您的原則\<名稱\> \*\* ] 頁面（您不需要流覽該嚮導的最後一頁以儲存或離開）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-192">After you click **Edit** in a section, the available settings are presented in a wizard format, but you can jump within the pages in any order, and you can click **Save** on any page (or **Cancel** or **Close** ![Close icon](../../media/scc-remove-icon.png) to return to the **Edit your policy \<name\>** page (you aren't required to visit the last page of the wizard to save or leave).</span></span>
+   - <span data-ttu-id="58c7a-191">在區段中按一下 [**編輯**] 之後，可用設定會以嚮導格式呈現，但是您可以在頁面中以任何順序跳離，也可以按一下任何頁面上的 [**儲存**] （或 [**取消**] 或 [**關閉** ![ ] 關閉圖示可 ](../../media/scc-remove-icon.png) 返回 [\*\*編輯您的原則 \< 名稱 \> \*\* ] 頁面（您不需要流覽該嚮導的最後一頁以儲存或離開）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-191">After you click **Edit** in a section, the available settings are presented in a wizard format, but you can jump within the pages in any order, and you can click **Save** on any page (or **Cancel** or **Close** ![Close icon](../../media/scc-remove-icon.png) to return to the **Edit your policy \<name\>** page (you aren't required to visit the last page of the wizard to save or leave).</span></span>
 
-4. <span data-ttu-id="b73f0-193">**原則設定**：按一下 [**編輯**]，修改當您在上一節中[建立原則](#use-the-security--compliance-center-to-create-anti-phishing-policies)時可用的相同設定：</span><span class="sxs-lookup"><span data-stu-id="b73f0-193">**Policy setting**: Click **Edit** to modify the same settings that were available when you [created the policy](#use-the-security--compliance-center-to-create-anti-phishing-policies) in the previous section:</span></span>
+4. <span data-ttu-id="58c7a-192">**原則設定**：按一下 [**編輯**]，修改當您在上一節中[建立原則](#use-the-security--compliance-center-to-create-anti-phishing-policies)時可用的相同設定：</span><span class="sxs-lookup"><span data-stu-id="58c7a-192">**Policy setting**: Click **Edit** to modify the same settings that were available when you [created the policy](#use-the-security--compliance-center-to-create-anti-phishing-policies) in the previous section:</span></span>
 
-   - <span data-ttu-id="b73f0-194">**Name**</span><span class="sxs-lookup"><span data-stu-id="b73f0-194">**Name**</span></span>
-   - <span data-ttu-id="b73f0-195">**描述**</span><span class="sxs-lookup"><span data-stu-id="b73f0-195">**Description**</span></span>
-   - <span data-ttu-id="b73f0-196">**套用對象**</span><span class="sxs-lookup"><span data-stu-id="b73f0-196">**Applied to**</span></span>
-   - <span data-ttu-id="b73f0-197">**檢查您的設定**</span><span class="sxs-lookup"><span data-stu-id="b73f0-197">**Review your settings**</span></span>
+   - <span data-ttu-id="58c7a-193">**Name**</span><span class="sxs-lookup"><span data-stu-id="58c7a-193">**Name**</span></span>
+   - <span data-ttu-id="58c7a-194">**描述**</span><span class="sxs-lookup"><span data-stu-id="58c7a-194">**Description**</span></span>
+   - <span data-ttu-id="58c7a-195">**套用對象**</span><span class="sxs-lookup"><span data-stu-id="58c7a-195">**Applied to**</span></span>
+   - <span data-ttu-id="58c7a-196">**檢查您的設定**</span><span class="sxs-lookup"><span data-stu-id="58c7a-196">**Review your settings**</span></span>
 
-   <span data-ttu-id="b73f0-198">完成後，按一下 [**儲存**] 任何頁面。</span><span class="sxs-lookup"><span data-stu-id="b73f0-198">When you're finished, click **Save** on any page.</span></span>
+   <span data-ttu-id="58c7a-197">完成後，按一下 [**儲存**] 任何頁面。</span><span class="sxs-lookup"><span data-stu-id="58c7a-197">When you're finished, click **Save** on any page.</span></span>
 
-5. <span data-ttu-id="b73f0-199">**哄騙**：按一下 [**編輯**] 以開啟或關閉欺騙情報、在 Outlook 中開啟或關閉未驗證寄件者識別，以及設定要套用至封鎖的欺騙寄件者的郵件的動作。</span><span class="sxs-lookup"><span data-stu-id="b73f0-199">**Spoof**: Click **Edit** to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and configure the action to apply to messages from blocked spoofed senders.</span></span> <span data-ttu-id="b73f0-200">如需詳細資訊，請參閱[反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-200">For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).</span></span>
+5. <span data-ttu-id="58c7a-198">**哄騙**：按一下 [**編輯**] 以開啟或關閉欺騙情報、在 Outlook 中開啟或關閉未驗證寄件者識別，以及設定要套用至封鎖的欺騙寄件者的郵件的動作。</span><span class="sxs-lookup"><span data-stu-id="58c7a-198">**Spoof**: Click **Edit** to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and configure the action to apply to messages from blocked spoofed senders.</span></span> <span data-ttu-id="58c7a-199">如需詳細資訊，請參閱[反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-199">For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).</span></span>
 
-   <span data-ttu-id="b73f0-201">請注意，ATP 反網路釣魚原則中也提供這些相同設定。</span><span class="sxs-lookup"><span data-stu-id="b73f0-201">Note that these same settings are also available in ATP anti-phishing policies.</span></span>
+   <span data-ttu-id="58c7a-200">請注意，ATP 反網路釣魚原則中也提供這些相同設定。</span><span class="sxs-lookup"><span data-stu-id="58c7a-200">Note that these same settings are also available in ATP anti-phishing policies.</span></span>
 
-   - <span data-ttu-id="b73f0-202">**哄騙篩選設定**：預設值為 [**開啟**]，建議您將其保持開啟。</span><span class="sxs-lookup"><span data-stu-id="b73f0-202">**Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on.</span></span> <span data-ttu-id="b73f0-203">若要將它關閉，請將開關滑動至 [**關閉**]。</span><span class="sxs-lookup"><span data-stu-id="b73f0-203">To turn it off, slide the toggle to **Off**.</span></span> <span data-ttu-id="b73f0-204">如需詳細資訊，請參閱[在 Office 365 中設定詐騙情報](learn-about-spoof-intelligence.md)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-204">For more information, see [Configure spoof intelligence in Office 365](learn-about-spoof-intelligence.md).</span></span>
+   - <span data-ttu-id="58c7a-201">**哄騙篩選設定**：預設值為 [**開啟**]，建議您將其保持開啟。</span><span class="sxs-lookup"><span data-stu-id="58c7a-201">**Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on.</span></span> <span data-ttu-id="58c7a-202">若要將它關閉，請將開關滑動至 [**關閉**]。</span><span class="sxs-lookup"><span data-stu-id="58c7a-202">To turn it off, slide the toggle to **Off**.</span></span> <span data-ttu-id="58c7a-203">如需詳細資訊，請參閱[在 EOP 中設定欺騙智慧](learn-about-spoof-intelligence.md)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-203">For more information, see [Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md).</span></span>
 
      > [!NOTE]
-     > <span data-ttu-id="b73f0-205">如果您的 MX 記錄未指向 Office 365，您不需要停用反欺騙保護;請改為啟用連接器的增強篩選。</span><span class="sxs-lookup"><span data-stu-id="b73f0-205">You don't need to disable anti-spoofing protection if your MX record doesn't point to Office 365; you enable Enhanced Filtering for Connectors instead.</span></span> <span data-ttu-id="b73f0-206">如需相關指示，請參閱[在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-206">For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).</span></span>
+     > <span data-ttu-id="58c7a-204">如果您的 MX 記錄未指向 Microsoft 365，您就不需要停用反欺騙保護;請改為啟用連接器的增強篩選。</span><span class="sxs-lookup"><span data-stu-id="58c7a-204">You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead.</span></span> <span data-ttu-id="58c7a-205">如需相關指示，請參閱[在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-205">For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).</span></span>
 
-   - <span data-ttu-id="b73f0-207">**啟用未經驗證的寄件者功能**：預設值為**On**。</span><span class="sxs-lookup"><span data-stu-id="b73f0-207">**Enable Unauthenticated Sender feature**: The default value is **On**.</span></span> <span data-ttu-id="b73f0-208">若要將它關閉，請將開關滑動至 [**關閉**]。</span><span class="sxs-lookup"><span data-stu-id="b73f0-208">To turn it off, slide the toggle to **Off**.</span></span>
+   - <span data-ttu-id="58c7a-206">**啟用未經驗證的寄件者功能**：預設值為**On**。</span><span class="sxs-lookup"><span data-stu-id="58c7a-206">**Enable Unauthenticated Sender feature**: The default value is **On**.</span></span> <span data-ttu-id="58c7a-207">若要將它關閉，請將開關滑動至 [**關閉**]。</span><span class="sxs-lookup"><span data-stu-id="58c7a-207">To turn it off, slide the toggle to **Off**.</span></span>
 
-   - <span data-ttu-id="b73f0-209">**動作**：指定對哄騙智慧失敗的郵件採取的動作：</span><span class="sxs-lookup"><span data-stu-id="b73f0-209">**Actions**: Specify the action to take on messages that fail spoof intelligence:</span></span>
+   - <span data-ttu-id="58c7a-208">**動作**：指定對哄騙智慧失敗的郵件採取的動作：</span><span class="sxs-lookup"><span data-stu-id="58c7a-208">**Actions**: Specify the action to take on messages that fail spoof intelligence:</span></span>
 
-     <span data-ttu-id="b73f0-210">**如果電子郵件是由不允許哄騙您網域的人員所傳送**：</span><span class="sxs-lookup"><span data-stu-id="b73f0-210">**If email is sent by someone who's not allowed to spoof your domain**:</span></span>
+     <span data-ttu-id="58c7a-209">**如果電子郵件是由不允許哄騙您網域的人員所傳送**：</span><span class="sxs-lookup"><span data-stu-id="58c7a-209">**If email is sent by someone who's not allowed to spoof your domain**:</span></span>
 
-     - <span data-ttu-id="b73f0-211">**將郵件移至收件者的 [垃圾郵件] 資料夾**</span><span class="sxs-lookup"><span data-stu-id="b73f0-211">**Move message to the recipients' Junk Email folders**</span></span>
-     - <span data-ttu-id="b73f0-212">**隔離郵件**</span><span class="sxs-lookup"><span data-stu-id="b73f0-212">**Quarantine the message**</span></span>
+     - <span data-ttu-id="58c7a-210">**將郵件移至收件者的 [垃圾郵件] 資料夾**</span><span class="sxs-lookup"><span data-stu-id="58c7a-210">**Move message to the recipients' Junk Email folders**</span></span>
+     - <span data-ttu-id="58c7a-211">**隔離郵件**</span><span class="sxs-lookup"><span data-stu-id="58c7a-211">**Quarantine the message**</span></span>
 
-   - <span data-ttu-id="b73f0-213">請**複查您的設定**：設定會顯示在摘要中，而不是按一下每個個別步驟。</span><span class="sxs-lookup"><span data-stu-id="b73f0-213">**Review your settings**: Instead of clicking on each individual step, the settings are displayed in a summary.</span></span>
+   - <span data-ttu-id="58c7a-212">請**複查您的設定**：設定會顯示在摘要中，而不是按一下每個個別步驟。</span><span class="sxs-lookup"><span data-stu-id="58c7a-212">**Review your settings**: Instead of clicking on each individual step, the settings are displayed in a summary.</span></span>
 
-     - <span data-ttu-id="b73f0-214">您可以按一下每個區段中的 [**編輯**]，以跳回到相關頁面。</span><span class="sxs-lookup"><span data-stu-id="b73f0-214">You can click **Edit** in each section to jump back to the relevant page.</span></span>
-     - <span data-ttu-id="b73f0-215">您可以在此頁面**上\*\*\*\*直接切換**下列設定：</span><span class="sxs-lookup"><span data-stu-id="b73f0-215">You can toggle the following settings **On** or **Off** directly on this page:</span></span>
+     - <span data-ttu-id="58c7a-213">您可以按一下每個區段中的 [**編輯**]，以跳回到相關頁面。</span><span class="sxs-lookup"><span data-stu-id="58c7a-213">You can click **Edit** in each section to jump back to the relevant page.</span></span>
+     - <span data-ttu-id="58c7a-214">您可以在此頁面**上\*\*\*\*直接切換**下列設定：</span><span class="sxs-lookup"><span data-stu-id="58c7a-214">You can toggle the following settings **On** or **Off** directly on this page:</span></span>
 
-       - <span data-ttu-id="b73f0-216">**啟用 antispoofing 保護**</span><span class="sxs-lookup"><span data-stu-id="b73f0-216">**Enable antispoofing protection**</span></span>
-       - <span data-ttu-id="b73f0-217">**啟用未經驗證的寄件者功能**</span><span class="sxs-lookup"><span data-stu-id="b73f0-217">**Enable Unauthenticated Sender feature**</span></span>
+       - <span data-ttu-id="58c7a-215">**啟用 antispoofing 保護**</span><span class="sxs-lookup"><span data-stu-id="58c7a-215">**Enable antispoofing protection**</span></span>
+       - <span data-ttu-id="58c7a-216">**啟用未經驗證的寄件者功能**</span><span class="sxs-lookup"><span data-stu-id="58c7a-216">**Enable Unauthenticated Sender feature**</span></span>
 
-   <span data-ttu-id="b73f0-218">完成後，按一下 [**儲存**] 任何頁面。</span><span class="sxs-lookup"><span data-stu-id="b73f0-218">When you're finished, click **Save** on any page.</span></span>
+   <span data-ttu-id="58c7a-217">完成後，按一下 [**儲存**] 任何頁面。</span><span class="sxs-lookup"><span data-stu-id="58c7a-217">When you're finished, click **Save** on any page.</span></span>
 
-6. <span data-ttu-id="b73f0-219">回到 [**編輯您的原則\<名稱\> \*\* ] 頁面上，複查您的設定，然後按一下 [**關閉\*\*]。</span><span class="sxs-lookup"><span data-stu-id="b73f0-219">Back on the **Edit your policy \<Name\>** page, review your settings and then click **Close**.</span></span>
+6. <span data-ttu-id="58c7a-218">回到 [**編輯您的原則 \< 名稱 \> \*\* ] 頁面上，複查您的設定，然後按一下 [**關閉\*\*]。</span><span class="sxs-lookup"><span data-stu-id="58c7a-218">Back on the **Edit your policy \<Name\>** page, review your settings and then click **Close**.</span></span>
 
-### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy"></a><span data-ttu-id="b73f0-220">使用安全性 & 合規性中心來修改預設的反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="b73f0-220">Use the Security & Compliance Center to modify the default anti-phishing policy</span></span>
+### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy"></a><span data-ttu-id="58c7a-219">使用安全性 & 合規性中心來修改預設的反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="58c7a-219">Use the Security & Compliance Center to modify the default anti-phishing policy</span></span>
 
-<span data-ttu-id="b73f0-221">預設的反網路釣魚原則命名為 Office365 AntiPhish 預設值，且不會顯示在原則清單中。</span><span class="sxs-lookup"><span data-stu-id="b73f0-221">The default anti-phishing policy is named Office365 AntiPhish Default, and it doesn't appear in the list of policies.</span></span> <span data-ttu-id="b73f0-222">若要修改預設的反網路釣魚原則，請執行下列步驟：</span><span class="sxs-lookup"><span data-stu-id="b73f0-222">To modify the default anti-phishing policy, do the following steps:</span></span>
+<span data-ttu-id="58c7a-220">預設的反網路釣魚原則命名為 Office365 AntiPhish 預設值，且不會顯示在原則清單中。</span><span class="sxs-lookup"><span data-stu-id="58c7a-220">The default anti-phishing policy is named Office365 AntiPhish Default, and it doesn't appear in the list of policies.</span></span> <span data-ttu-id="58c7a-221">若要修改預設的反網路釣魚原則，請執行下列步驟：</span><span class="sxs-lookup"><span data-stu-id="58c7a-221">To modify the default anti-phishing policy, do the following steps:</span></span>
 
-1. <span data-ttu-id="b73f0-223">在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **反網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="b73f0-223">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
+1. <span data-ttu-id="58c7a-222">在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **反網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="58c7a-222">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
 
-2. <span data-ttu-id="b73f0-224">在 [**反網路釣魚**] 頁面上，按一下 [**預設原則**]。</span><span class="sxs-lookup"><span data-stu-id="b73f0-224">On the **Anti-phishing** page, click **Default policy**.</span></span>
+2. <span data-ttu-id="58c7a-223">在 [**反網路釣魚**] 頁面上，按一下 [**預設原則**]。</span><span class="sxs-lookup"><span data-stu-id="58c7a-223">On the **Anti-phishing** page, click **Default policy**.</span></span>
 
-3. <span data-ttu-id="b73f0-225">隨即會顯示 [**編輯您的原則 Office365 AntiPhish 預設**] 頁面。</span><span class="sxs-lookup"><span data-stu-id="b73f0-225">The **Edit your policy Office365 AntiPhish Default** page appears.</span></span> <span data-ttu-id="b73f0-226">下列各節可供使用，其中包含[修改自訂原則](#use-the-security--compliance-center-to-modify-anti-phishing-policies)時的相同設定。</span><span class="sxs-lookup"><span data-stu-id="b73f0-226">The following sections are available, which contain identical settings for when you [modify a custom policy](#use-the-security--compliance-center-to-modify-anti-phishing-policies).</span></span>
+3. <span data-ttu-id="58c7a-224">隨即會顯示 [**編輯您的原則 Office365 AntiPhish 預設**] 頁面。</span><span class="sxs-lookup"><span data-stu-id="58c7a-224">The **Edit your policy Office365 AntiPhish Default** page appears.</span></span> <span data-ttu-id="58c7a-225">下列各節可供使用，其中包含[修改自訂原則](#use-the-security--compliance-center-to-modify-anti-phishing-policies)時的相同設定。</span><span class="sxs-lookup"><span data-stu-id="58c7a-225">The following sections are available, which contain identical settings for when you [modify a custom policy](#use-the-security--compliance-center-to-modify-anti-phishing-policies).</span></span>
 
-   - <span data-ttu-id="b73f0-227">**模擬**</span><span class="sxs-lookup"><span data-stu-id="b73f0-227">**Impersonation**</span></span>
-   - <span data-ttu-id="b73f0-228">**惡搞**</span><span class="sxs-lookup"><span data-stu-id="b73f0-228">**Spoof**</span></span>
-   - <span data-ttu-id="b73f0-229">**進階設定**</span><span class="sxs-lookup"><span data-stu-id="b73f0-229">**Advanced settings**</span></span>
+   - <span data-ttu-id="58c7a-226">**模擬**</span><span class="sxs-lookup"><span data-stu-id="58c7a-226">**Impersonation**</span></span>
+   - <span data-ttu-id="58c7a-227">**惡搞**</span><span class="sxs-lookup"><span data-stu-id="58c7a-227">**Spoof**</span></span>
+   - <span data-ttu-id="58c7a-228">**進階設定**</span><span class="sxs-lookup"><span data-stu-id="58c7a-228">**Advanced settings**</span></span>
 
-   <span data-ttu-id="b73f0-230">當您修改預設原則時，無法使用下列設定：</span><span class="sxs-lookup"><span data-stu-id="b73f0-230">The following settings aren't available when you modify the default policy:</span></span>
+   <span data-ttu-id="58c7a-229">當您修改預設原則時，無法使用下列設定：</span><span class="sxs-lookup"><span data-stu-id="58c7a-229">The following settings aren't available when you modify the default policy:</span></span>
 
-   - <span data-ttu-id="b73f0-231">您可以看到 [**原則設定**] 區段和 [值]，但沒有**編輯**連結，所以您無法修改設定（原則名稱、描述及原則套用至的人員）（此原則會套用至所有收件者）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-231">You can see the **Policy setting** section and values, but there's no **Edit** link, so you can't modify the settings (policy name, description, and who the policy applies to (it applies to all recipients)).</span></span>
-   - <span data-ttu-id="b73f0-232">您無法刪除預設原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-232">You can't delete the default policy.</span></span>
-   - <span data-ttu-id="b73f0-233">您無法變更預設原則的優先順序（預設原則為 [永不最後套用]）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-233">You can't change the priority of the default policy (it's always applied last).</span></span>
+   - <span data-ttu-id="58c7a-230">您可以看到 [**原則設定**] 區段和 [值]，但沒有**編輯**連結，所以您無法修改設定（原則名稱、描述及原則套用至的人員）（此原則會套用至所有收件者）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-230">You can see the **Policy setting** section and values, but there's no **Edit** link, so you can't modify the settings (policy name, description, and who the policy applies to (it applies to all recipients)).</span></span>
+   - <span data-ttu-id="58c7a-231">您無法刪除預設原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-231">You can't delete the default policy.</span></span>
+   - <span data-ttu-id="58c7a-232">您無法變更預設原則的優先順序（預設原則為 [永不最後套用]）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-232">You can't change the priority of the default policy (it's always applied last).</span></span>
 
-4. <span data-ttu-id="b73f0-234">在 [**編輯您的原則 Office365 AntiPhish 預設**] 頁面上，複查您的設定，然後按一下 [**關閉**]。</span><span class="sxs-lookup"><span data-stu-id="b73f0-234">On the **Edit your policy Office365 AntiPhish Default** page, review your settings and then click **Close**.</span></span>
+4. <span data-ttu-id="58c7a-233">在 [**編輯您的原則 Office365 AntiPhish 預設**] 頁面上，複查您的設定，然後按一下 [**關閉**]。</span><span class="sxs-lookup"><span data-stu-id="58c7a-233">On the **Edit your policy Office365 AntiPhish Default** page, review your settings and then click **Close**.</span></span>
 
-### <a name="enable-or-disable-custom-anti-phishing-policies"></a><span data-ttu-id="b73f0-235">啟用或停用自訂的反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="b73f0-235">Enable or disable custom anti-phishing policies</span></span>
+### <a name="enable-or-disable-custom-anti-phishing-policies"></a><span data-ttu-id="58c7a-234">啟用或停用自訂的反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="58c7a-234">Enable or disable custom anti-phishing policies</span></span>
 
-1. <span data-ttu-id="b73f0-236">在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **反網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="b73f0-236">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
+1. <span data-ttu-id="58c7a-235">在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **反網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="58c7a-235">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
 
-2. <span data-ttu-id="b73f0-237">請注意 [**狀態**] 欄中的值：</span><span class="sxs-lookup"><span data-stu-id="b73f0-237">Notice the value in the **Status** column:</span></span>
+2. <span data-ttu-id="58c7a-236">請注意 [**狀態**] 欄中的值：</span><span class="sxs-lookup"><span data-stu-id="58c7a-236">Notice the value in the **Status** column:</span></span>
 
-   - <span data-ttu-id="b73f0-238">將 [切換] 滑動至 [**關閉**] 以停用原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-238">Slide the toggle to **Off** to disable the policy.</span></span>
+   - <span data-ttu-id="58c7a-237">將 [切換] 滑動至 [**關閉**] 以停用原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-237">Slide the toggle to **Off** to disable the policy.</span></span>
 
-   - <span data-ttu-id="b73f0-239">將切換滑動至**開啟**以啟用原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-239">Slide the toggle to **On** to enable the policy.</span></span>
+   - <span data-ttu-id="58c7a-238">將切換滑動至**開啟**以啟用原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-238">Slide the toggle to **On** to enable the policy.</span></span>
 
-<span data-ttu-id="b73f0-240">您無法停用預設的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-240">You can't disable the default anti-phishing policy.</span></span>
+<span data-ttu-id="58c7a-239">您無法停用預設的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-239">You can't disable the default anti-phishing policy.</span></span>
 
-### <a name="set-the-priority-of-custom-anti-phishing-policies"></a><span data-ttu-id="b73f0-241">設定自訂的反網路釣魚原則優先順序</span><span class="sxs-lookup"><span data-stu-id="b73f0-241">Set the priority of custom anti-phishing policies</span></span>
+### <a name="set-the-priority-of-custom-anti-phishing-policies"></a><span data-ttu-id="58c7a-240">設定自訂的反網路釣魚原則優先順序</span><span class="sxs-lookup"><span data-stu-id="58c7a-240">Set the priority of custom anti-phishing policies</span></span>
 
-<span data-ttu-id="b73f0-242">根據預設，反網路釣魚原則的優先順序會根據建立的順序而定（較舊的原則的優先順序較舊）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-242">By default, anti-phishing policies are given a priority that's based on the order they were created in (newer policies are lower priority than older policies).</span></span> <span data-ttu-id="b73f0-243">較小的優先順序數字表示原則的優先順序較高 (0 最高)，原則是依據優先順序進行處理，較高優先順序的原則會在較低優先順序的原則前面進行處理。</span><span class="sxs-lookup"><span data-stu-id="b73f0-243">A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies).</span></span> <span data-ttu-id="b73f0-244">不會有兩個原則的優先順序相同。</span><span class="sxs-lookup"><span data-stu-id="b73f0-244">No two policies can have the same priority.</span></span>
+<span data-ttu-id="58c7a-241">根據預設，反網路釣魚原則的優先順序會根據建立的順序而定（較舊的原則的優先順序較舊）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-241">By default, anti-phishing policies are given a priority that's based on the order they were created in (newer policies are lower priority than older policies).</span></span> <span data-ttu-id="58c7a-242">較小的優先順序數字表示原則的優先順序較高 (0 最高)，原則是依據優先順序進行處理，較高優先順序的原則會在較低優先順序的原則前面進行處理。</span><span class="sxs-lookup"><span data-stu-id="58c7a-242">A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies).</span></span> <span data-ttu-id="58c7a-243">不會有兩個原則的優先順序相同。</span><span class="sxs-lookup"><span data-stu-id="58c7a-243">No two policies can have the same priority.</span></span>
 
-<span data-ttu-id="b73f0-245">自訂的反網路釣魚原則會以處理的順序顯示（第一個原則的**Priority**值為0）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-245">Custom anti-phishing policies are displayed in the order they're processed (the first policy has the **Priority** value 0).</span></span> <span data-ttu-id="b73f0-246">預設的反網路釣魚原則（名為 Office365 AntiPhish Default）的自訂優先順序值是**最低**的，您無法變更它。</span><span class="sxs-lookup"><span data-stu-id="b73f0-246">The default anti-phishing policy named Office365 AntiPhish Default has the custom priority value **Lowest**, and you can't change it.</span></span>
+<span data-ttu-id="58c7a-244">自訂的反網路釣魚原則會以處理的順序顯示（第一個原則的**Priority**值為0）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-244">Custom anti-phishing policies are displayed in the order they're processed (the first policy has the **Priority** value 0).</span></span> <span data-ttu-id="58c7a-245">預設的反網路釣魚原則（名為 Office365 AntiPhish Default）的自訂優先順序值是**最低**的，您無法變更它。</span><span class="sxs-lookup"><span data-stu-id="58c7a-245">The default anti-phishing policy named Office365 AntiPhish Default has the custom priority value **Lowest**, and you can't change it.</span></span>
 
- <span data-ttu-id="b73f0-247">**附注**：在 [安全性 & 規範中心] 中，您只能在建立反網路釣魚原則之後變更其優先順序。</span><span class="sxs-lookup"><span data-stu-id="b73f0-247">**Note**: In the Security & Compliance Center, you can only change the priority of the anti-phishing policy after you create it.</span></span> <span data-ttu-id="b73f0-248">在 PowerShell 中，您可以在建立反網路釣魚規則（可能會影響現有規則的優先順序）時，覆寫預設的優先順序。</span><span class="sxs-lookup"><span data-stu-id="b73f0-248">In PowerShell, you can override the default priority when you create the anti-phish rule (which can affect the priority of existing rules).</span></span>
+ <span data-ttu-id="58c7a-246">**附注**：在 [安全性 & 規範中心] 中，您只能在建立反網路釣魚原則之後變更其優先順序。</span><span class="sxs-lookup"><span data-stu-id="58c7a-246">**Note**: In the Security & Compliance Center, you can only change the priority of the anti-phishing policy after you create it.</span></span> <span data-ttu-id="58c7a-247">在 PowerShell 中，您可以在建立反網路釣魚規則（可能會影響現有規則的優先順序）時，覆寫預設的優先順序。</span><span class="sxs-lookup"><span data-stu-id="58c7a-247">In PowerShell, you can override the default priority when you create the anti-phish rule (which can affect the priority of existing rules).</span></span>
 
-<span data-ttu-id="b73f0-249">若要變更原則的優先順序，請按一下 [**增加優先順序**] 或 [**降低**優先順序] 中原則的屬性（您無法直接修改安全性 & 規範中心中的**優先順序**號碼）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-249">To change the priority of a policy, you click **Increase priority** or **Decrease priority** in the properties of the policy (you can't directly modify the **Priority** number in the Security & Compliance Center).</span></span> <span data-ttu-id="b73f0-250">如果您有多個原則，變更原則的優先順序只會有意義。</span><span class="sxs-lookup"><span data-stu-id="b73f0-250">Changing the priority of a policy only makes sense if you have multiple policies.</span></span>
+<span data-ttu-id="58c7a-248">若要變更原則的優先順序，請按一下 [**增加優先順序**] 或 [**降低**優先順序] 中原則的屬性（您無法直接修改安全性 & 規範中心中的**優先順序**號碼）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-248">To change the priority of a policy, you click **Increase priority** or **Decrease priority** in the properties of the policy (you can't directly modify the **Priority** number in the Security & Compliance Center).</span></span> <span data-ttu-id="58c7a-249">如果您有多個原則，變更原則的優先順序只會有意義。</span><span class="sxs-lookup"><span data-stu-id="58c7a-249">Changing the priority of a policy only makes sense if you have multiple policies.</span></span>
 
-1. <span data-ttu-id="b73f0-251">在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **ATP 反網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="b73f0-251">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
+1. <span data-ttu-id="58c7a-250">在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **ATP 反網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="58c7a-250">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
 
-2. <span data-ttu-id="b73f0-252">選取您要修改的原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-252">Select the policy that you want to modify.</span></span> <span data-ttu-id="b73f0-253">如果已選取它，請取消選取它，然後再次選取。</span><span class="sxs-lookup"><span data-stu-id="b73f0-253">If it's already selected, deselect it and select it again.</span></span>
+2. <span data-ttu-id="58c7a-251">選取您要修改的原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-251">Select the policy that you want to modify.</span></span> <span data-ttu-id="58c7a-252">如果已選取它，請取消選取它，然後再次選取。</span><span class="sxs-lookup"><span data-stu-id="58c7a-252">If it's already selected, deselect it and select it again.</span></span>
 
-3. <span data-ttu-id="b73f0-254">隨即會顯示 [\*\*編輯您的原則\<名稱\> \*\* ] 快顯視窗。</span><span class="sxs-lookup"><span data-stu-id="b73f0-254">The **Edit your policy \<name\>** flyout appears.</span></span>
+3. <span data-ttu-id="58c7a-253">隨即會顯示 [**編輯您的原則 \< \> 名稱**] 快顯視窗。</span><span class="sxs-lookup"><span data-stu-id="58c7a-253">The **Edit your policy \<name\>** flyout appears.</span></span>
 
-   - <span data-ttu-id="b73f0-255">**優先順序**值為**0**的自訂反網路釣魚原則只有「**降低優先順序**」按鈕可用。</span><span class="sxs-lookup"><span data-stu-id="b73f0-255">The custom anti-phishing policy with the **Priority** value **0** has only the **Decrease priority** button available.</span></span>
+   - <span data-ttu-id="58c7a-254">**優先順序**值為**0**的自訂反網路釣魚原則只有「**降低優先順序**」按鈕可用。</span><span class="sxs-lookup"><span data-stu-id="58c7a-254">The custom anti-phishing policy with the **Priority** value **0** has only the **Decrease priority** button available.</span></span>
 
-   - <span data-ttu-id="b73f0-256">具有最低**優先順序**值的自訂反網路釣魚原則（例如， **3**）只有 [**增加優先順序**] 按鈕可用。</span><span class="sxs-lookup"><span data-stu-id="b73f0-256">The custom anti-phishing policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** button available.</span></span>
+   - <span data-ttu-id="58c7a-255">具有最低**優先順序**值的自訂反網路釣魚原則（例如， **3**）只有 [**增加優先順序**] 按鈕可用。</span><span class="sxs-lookup"><span data-stu-id="58c7a-255">The custom anti-phishing policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** button available.</span></span>
 
-   - <span data-ttu-id="b73f0-257">如果您有三個或多個自訂的反網路釣魚原則，則最高和最低優先順序值之間的原則都有可用的 [**增加優先順序**] 和 [**降低優先順序**] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="b73f0-257">If you have three or more custom anti-phishing policies, policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** buttons available.</span></span>
+   - <span data-ttu-id="58c7a-256">如果您有三個或多個自訂的反網路釣魚原則，則最高和最低優先順序值之間的原則都有可用的 [**增加優先順序**] 和 [**降低優先順序**] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="58c7a-256">If you have three or more custom anti-phishing policies, policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** buttons available.</span></span>
 
-4. <span data-ttu-id="b73f0-258">按一下 [**增加優先順序**] 或 [**降低優先順序**] 以變更 [**優先順序**] 值。</span><span class="sxs-lookup"><span data-stu-id="b73f0-258">Click **Increase priority** or **Decrease priority** to change the **Priority** value.</span></span>
+4. <span data-ttu-id="58c7a-257">按一下 [**增加優先順序**] 或 [**降低優先順序**] 以變更 [**優先順序**] 值。</span><span class="sxs-lookup"><span data-stu-id="58c7a-257">Click **Increase priority** or **Decrease priority** to change the **Priority** value.</span></span>
 
-5. <span data-ttu-id="b73f0-259">完成時，請按一下 [關閉]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="b73f0-259">When you're finished, click **Close**.</span></span>
+5. <span data-ttu-id="58c7a-258">完成時，請按一下 [關閉]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="58c7a-258">When you're finished, click **Close**.</span></span>
 
-## <a name="use-the-security--compliance-center-to-view-anti-phishing-policies"></a><span data-ttu-id="b73f0-260">使用安全性 & 規範中心來查看反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="b73f0-260">Use the Security & Compliance Center to view anti-phishing policies</span></span>
+## <a name="use-the-security--compliance-center-to-view-anti-phishing-policies"></a><span data-ttu-id="58c7a-259">使用安全性 & 規範中心來查看反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="58c7a-259">Use the Security & Compliance Center to view anti-phishing policies</span></span>
 
-1. <span data-ttu-id="b73f0-261">在安全性 & 規範中心，然後移至**威脅管理** \> **原則** \> **反網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="b73f0-261">In the Security & Compliance Center, and go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
+1. <span data-ttu-id="58c7a-260">在安全性 & 規範中心，然後移至**威脅管理** \> **原則** \> **反網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="58c7a-260">In the Security & Compliance Center, and go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
 
-2. <span data-ttu-id="b73f0-262">請執行下列其中一個步驟：</span><span class="sxs-lookup"><span data-stu-id="b73f0-262">Do one of the following steps:</span></span>
+2. <span data-ttu-id="58c7a-261">請執行下列其中一個步驟：</span><span class="sxs-lookup"><span data-stu-id="58c7a-261">Do one of the following steps:</span></span>
 
-   - <span data-ttu-id="b73f0-263">選取您要查看的自訂反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-263">Select a custom anti-phishing policy that you want to view.</span></span> <span data-ttu-id="b73f0-264">如果已選取它，請取消選取它，然後再次選取。</span><span class="sxs-lookup"><span data-stu-id="b73f0-264">If it's already selected, deselect it and select it again.</span></span>
+   - <span data-ttu-id="58c7a-262">選取您要查看的自訂反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-262">Select a custom anti-phishing policy that you want to view.</span></span> <span data-ttu-id="58c7a-263">如果已選取它，請取消選取它，然後再次選取。</span><span class="sxs-lookup"><span data-stu-id="58c7a-263">If it's already selected, deselect it and select it again.</span></span>
 
-   - <span data-ttu-id="b73f0-265">按一下 [**預設原則**] 以查看預設的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-265">Click **Default policy** to view the default anti-phishing policy.</span></span>
+   - <span data-ttu-id="58c7a-264">按一下 [**預設原則**] 以查看預設的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-264">Click **Default policy** to view the default anti-phishing policy.</span></span>
 
-3. <span data-ttu-id="b73f0-266">隨即會顯示 [\*\*編輯您的原則\<名稱\> \*\* ] 快顯視窗，您可以在其中查看設定和值。</span><span class="sxs-lookup"><span data-stu-id="b73f0-266">The **Edit your policy \<name\>** flyout appears, where you can view the settings and values.</span></span>
+3. <span data-ttu-id="58c7a-265">隨即會顯示 [**編輯您的原則 \< \> 名稱**] 快顯視窗，您可以在其中查看設定和值。</span><span class="sxs-lookup"><span data-stu-id="58c7a-265">The **Edit your policy \<name\>** flyout appears, where you can view the settings and values.</span></span>
 
-## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies"></a><span data-ttu-id="b73f0-267">使用安全性 & 規範中心移除反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="b73f0-267">Use the Security & Compliance Center to remove anti-phishing policies</span></span>
+## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies"></a><span data-ttu-id="58c7a-266">使用安全性 & 規範中心移除反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="58c7a-266">Use the Security & Compliance Center to remove anti-phishing policies</span></span>
 
-1. <span data-ttu-id="b73f0-268">在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **反網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="b73f0-268">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
+1. <span data-ttu-id="58c7a-267">在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **反網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="58c7a-267">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span>
 
-2. <span data-ttu-id="b73f0-269">選取您要移除的原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-269">Select the policy that you want to remove.</span></span> <span data-ttu-id="b73f0-270">如果已選取它，請取消選取它，然後再次選取。</span><span class="sxs-lookup"><span data-stu-id="b73f0-270">If it's already selected, deselect it and select it again.</span></span>
+2. <span data-ttu-id="58c7a-268">選取您要移除的原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-268">Select the policy that you want to remove.</span></span> <span data-ttu-id="58c7a-269">如果已選取它，請取消選取它，然後再次選取。</span><span class="sxs-lookup"><span data-stu-id="58c7a-269">If it's already selected, deselect it and select it again.</span></span>
 
-3. <span data-ttu-id="b73f0-271">在出現的 [**編輯\<您\>的原則名稱**] 浮出視窗中，按一下 [**刪除原則**]，然後在顯示的警告對話方塊中按一下 [**是]** 。</span><span class="sxs-lookup"><span data-stu-id="b73f0-271">In the **Edit your policy \<name\>** flyout that appears, click **Delete policy**, and then click **Yes** in the warning dialog that appears.</span></span>
+3. <span data-ttu-id="58c7a-270">在出現的 [**編輯您的原則 \< \> 名稱**] 浮出視窗中，按一下 [**刪除原則**]，然後在顯示的警告對話方塊中按一下 [**是]** 。</span><span class="sxs-lookup"><span data-stu-id="58c7a-270">In the **Edit your policy \<name\>** flyout that appears, click **Delete policy**, and then click **Yes** in the warning dialog that appears.</span></span>
 
-<span data-ttu-id="b73f0-272">您無法移除預設原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-272">You can't remove the default policy.</span></span>
+<span data-ttu-id="58c7a-271">您無法移除預設原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-271">You can't remove the default policy.</span></span>
 
-## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies"></a><span data-ttu-id="b73f0-273">使用 Exchange Online PowerShell 設定反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="b73f0-273">Use Exchange Online PowerShell to configure anti-phishing policies</span></span>
+## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies"></a><span data-ttu-id="58c7a-272">使用 Exchange Online PowerShell 設定反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="58c7a-272">Use Exchange Online PowerShell to configure anti-phishing policies</span></span>
 
-<span data-ttu-id="b73f0-274">在獨立 EOP 組織中無法使用下列程式。</span><span class="sxs-lookup"><span data-stu-id="b73f0-274">The following procedures aren't available in standalone EOP organizations.</span></span>
+<span data-ttu-id="58c7a-273">在獨立 EOP 組織中無法使用下列程式。</span><span class="sxs-lookup"><span data-stu-id="58c7a-273">The following procedures aren't available in standalone EOP organizations.</span></span>
 
-### <a name="use-powershell-to-create-anti-phishing-policies"></a><span data-ttu-id="b73f0-275">使用 PowerShell 建立反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="b73f0-275">Use PowerShell to create anti-phishing policies</span></span>
+### <a name="use-powershell-to-create-anti-phishing-policies"></a><span data-ttu-id="58c7a-274">使用 PowerShell 建立反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="58c7a-274">Use PowerShell to create anti-phishing policies</span></span>
 
-<span data-ttu-id="b73f0-276">在 PowerShell 中建立反網路釣魚原則的程式分為兩個步驟：</span><span class="sxs-lookup"><span data-stu-id="b73f0-276">Creating an anti-phishing policy in PowerShell is a two-step process:</span></span>
+<span data-ttu-id="58c7a-275">在 PowerShell 中建立反網路釣魚原則的程式分為兩個步驟：</span><span class="sxs-lookup"><span data-stu-id="58c7a-275">Creating an anti-phishing policy in PowerShell is a two-step process:</span></span>
 
-1. <span data-ttu-id="b73f0-277">建立反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-277">Create the anti-phish policy.</span></span>
+1. <span data-ttu-id="58c7a-276">建立反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-276">Create the anti-phish policy.</span></span>
 
-2. <span data-ttu-id="b73f0-278">建立反網路釣魚規則，以指定套用規則的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-278">Create the anti-phish rule that specifies the anti-phish policy that the rule applies to.</span></span>
+2. <span data-ttu-id="58c7a-277">建立反網路釣魚規則，以指定套用規則的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-277">Create the anti-phish rule that specifies the anti-phish policy that the rule applies to.</span></span>
 
- <span data-ttu-id="b73f0-279">**附註**：</span><span class="sxs-lookup"><span data-stu-id="b73f0-279">**Notes**:</span></span>
+ <span data-ttu-id="58c7a-278">**附註**：</span><span class="sxs-lookup"><span data-stu-id="58c7a-278">**Notes**:</span></span>
 
-- <span data-ttu-id="b73f0-280">您可以建立新的反網路釣魚規則，並將現有的、未關聯的反網路釣魚原則指派給它。</span><span class="sxs-lookup"><span data-stu-id="b73f0-280">You can create a new anti-phish rule and assign an existing, unassociated anti-phish policy to it.</span></span> <span data-ttu-id="b73f0-281">反網路釣魚規則無法與一個以上的反網路釣魚原則相關聯。</span><span class="sxs-lookup"><span data-stu-id="b73f0-281">An anti-phish rule can't be associated with more than one anti-phish policy.</span></span>
+- <span data-ttu-id="58c7a-279">您可以建立新的反網路釣魚規則，並將現有的、未關聯的反網路釣魚原則指派給它。</span><span class="sxs-lookup"><span data-stu-id="58c7a-279">You can create a new anti-phish rule and assign an existing, unassociated anti-phish policy to it.</span></span> <span data-ttu-id="58c7a-280">反網路釣魚規則無法與一個以上的反網路釣魚原則相關聯。</span><span class="sxs-lookup"><span data-stu-id="58c7a-280">An anti-phish rule can't be associated with more than one anti-phish policy.</span></span>
 
-- <span data-ttu-id="b73f0-282">您可以在 PowerShell 中為安全性 & 相容性中心以外的新反網路釣魚原則設定下列設定，直到您建立原則為止：</span><span class="sxs-lookup"><span data-stu-id="b73f0-282">You can configure the following settings on new anti-phish policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:</span></span>
+- <span data-ttu-id="58c7a-281">您可以在 PowerShell 中為安全性 & 相容性中心以外的新反網路釣魚原則設定下列設定，直到您建立原則為止：</span><span class="sxs-lookup"><span data-stu-id="58c7a-281">You can configure the following settings on new anti-phish policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:</span></span>
 
-  - <span data-ttu-id="b73f0-283">建立新原則為停用（在**AntiPhishRule** Cmdlet 上_啟用_ `$false` ）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-283">Create the new policy as disabled (_Enabled_ `$false` on the **New-AntiPhishRule** cmdlet).</span></span>
+  - <span data-ttu-id="58c7a-282">建立新原則為停用（_ _ `$false` 在**AntiPhishRule** Cmdlet 上啟用）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-282">Create the new policy as disabled (_Enabled_ `$false` on the **New-AntiPhishRule** cmdlet).</span></span>
 
-  - <span data-ttu-id="b73f0-284">設定在**AntiPhishRule 指令程式**建立時的原則優先順序（_優先權_ _ \<編號\>_）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-284">Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-AntiPhishRule** cmdlet).</span></span>
+  - <span data-ttu-id="58c7a-283">設定在**AntiPhishRule 指令程式**建立時的原則優先順序（_優先權_ _ \< \> 編號_）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-283">Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-AntiPhishRule** cmdlet).</span></span>
 
-- <span data-ttu-id="b73f0-285">在您指派原則至反網路釣魚規則之前，您在 PowerShell 中所建立的新反網路釣魚原則不會顯示在安全性 & 規範中心。</span><span class="sxs-lookup"><span data-stu-id="b73f0-285">A new anti-phish policy that you create in PowerShell isn't visible in the Security & Compliance Center until you assign the policy to an anti-phish rule.</span></span>
+- <span data-ttu-id="58c7a-284">在您指派原則至反網路釣魚規則之前，您在 PowerShell 中所建立的新反網路釣魚原則不會顯示在安全性 & 規範中心。</span><span class="sxs-lookup"><span data-stu-id="58c7a-284">A new anti-phish policy that you create in PowerShell isn't visible in the Security & Compliance Center until you assign the policy to an anti-phish rule.</span></span>
 
-#### <a name="step-1-use-powershell-to-create-an-anti-phish-policy"></a><span data-ttu-id="b73f0-286">步驟1：使用 PowerShell 建立反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="b73f0-286">Step 1: Use PowerShell to create an anti-phish policy</span></span>
+#### <a name="step-1-use-powershell-to-create-an-anti-phish-policy"></a><span data-ttu-id="58c7a-285">步驟1：使用 PowerShell 建立反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="58c7a-285">Step 1: Use PowerShell to create an anti-phish policy</span></span>
 
-<span data-ttu-id="b73f0-287">若要建立反網路釣魚原則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b73f0-287">To create an anti-phish policy, use this syntax:</span></span>
+<span data-ttu-id="58c7a-286">若要建立反網路釣魚原則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="58c7a-286">To create an anti-phish policy, use this syntax:</span></span>
 
 ```PowerShell
 New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableAntiSpoofEnforcement <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
 ```
 
-<span data-ttu-id="b73f0-288">此範例會使用下列設定來建立名為「調查隔離隔離」的反網路釣魚原則：</span><span class="sxs-lookup"><span data-stu-id="b73f0-288">This example creates anti-phish policy named Research Quarantine with the following settings:</span></span>
+<span data-ttu-id="58c7a-287">此範例會使用下列設定來建立名為「調查隔離隔離」的反網路釣魚原則：</span><span class="sxs-lookup"><span data-stu-id="58c7a-287">This example creates anti-phish policy named Research Quarantine with the following settings:</span></span>
 
-- <span data-ttu-id="b73f0-289">原則已啟用（未使用_enabled_參數，預設值為`$true`）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-289">The policy is enabled (we aren't using the _Enabled_ parameter, and the default value is `$true`).</span></span>
-- <span data-ttu-id="b73f0-290">描述為：「調研部門原則」。</span><span class="sxs-lookup"><span data-stu-id="b73f0-290">The description is: Research department policy.</span></span>
-- <span data-ttu-id="b73f0-291">將哄騙的預設動作變更為「隔離」。</span><span class="sxs-lookup"><span data-stu-id="b73f0-291">Changes the default action for spoofing to Quarantine.</span></span>
+- <span data-ttu-id="58c7a-288">原則已啟用（未使用_enabled_參數，預設值為 `$true` ）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-288">The policy is enabled (we aren't using the _Enabled_ parameter, and the default value is `$true`).</span></span>
+- <span data-ttu-id="58c7a-289">描述為：「調研部門原則」。</span><span class="sxs-lookup"><span data-stu-id="58c7a-289">The description is: Research department policy.</span></span>
+- <span data-ttu-id="58c7a-290">將哄騙的預設動作變更為「隔離」。</span><span class="sxs-lookup"><span data-stu-id="58c7a-290">Changes the default action for spoofing to Quarantine.</span></span>
 
 ```powershell
 New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine
 ```
 
-<span data-ttu-id="b73f0-292">如需詳細的語法及參數資訊，請參閱[AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishPolicy)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-292">For detailed syntax and parameter information, see [New-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishPolicy).</span></span>
+<span data-ttu-id="58c7a-291">如需詳細的語法及參數資訊，請參閱[AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishPolicy)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-291">For detailed syntax and parameter information, see [New-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishPolicy).</span></span>
 
-#### <a name="step-2-use-powershell-to-create-an-anti-phish-rule"></a><span data-ttu-id="b73f0-293">步驟2：使用 PowerShell 建立反網路釣魚規則</span><span class="sxs-lookup"><span data-stu-id="b73f0-293">Step 2: Use PowerShell to create an anti-phish rule</span></span>
+#### <a name="step-2-use-powershell-to-create-an-anti-phish-rule"></a><span data-ttu-id="58c7a-292">步驟2：使用 PowerShell 建立反網路釣魚規則</span><span class="sxs-lookup"><span data-stu-id="58c7a-292">Step 2: Use PowerShell to create an anti-phish rule</span></span>
 
-<span data-ttu-id="b73f0-294">若要建立反網路釣魚規則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b73f0-294">To create an anti-phish rule, use this syntax:</span></span>
+<span data-ttu-id="58c7a-293">若要建立反網路釣魚規則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="58c7a-293">To create an anti-phish rule, use this syntax:</span></span>
 
 ```PowerShell
 New-AntiPhishRule -Name "<RuleName>" -AntiPhishPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"]
 ```
 
-<span data-ttu-id="b73f0-295">在這個範例中，會建立一個名為「調查部門」的反網路釣魚規則，條件如下：</span><span class="sxs-lookup"><span data-stu-id="b73f0-295">This example creates an anti-phish rule named Research Department with the following conditions:</span></span>
+<span data-ttu-id="58c7a-294">在這個範例中，會建立一個名為「調查部門」的反網路釣魚規則，條件如下：</span><span class="sxs-lookup"><span data-stu-id="58c7a-294">This example creates an anti-phish rule named Research Department with the following conditions:</span></span>
 
-- <span data-ttu-id="b73f0-296">此規則會與名為「調查隔離隔離」的反網路釣魚原則相關聯。</span><span class="sxs-lookup"><span data-stu-id="b73f0-296">The rule is associated with the anti-phish policy named Research Quarantine.</span></span>
-- <span data-ttu-id="b73f0-297">此規則適用於名為 Research Department 之群組的成員。</span><span class="sxs-lookup"><span data-stu-id="b73f0-297">The rule applies to members of the group named Research Department.</span></span>
-- <span data-ttu-id="b73f0-298">因為我們沒有使用_priority_參數，所以會使用預設的優先順序。</span><span class="sxs-lookup"><span data-stu-id="b73f0-298">Because we aren't using the _Priority_ parameter, the default priority is used.</span></span>
+- <span data-ttu-id="58c7a-295">此規則會與名為「調查隔離隔離」的反網路釣魚原則相關聯。</span><span class="sxs-lookup"><span data-stu-id="58c7a-295">The rule is associated with the anti-phish policy named Research Quarantine.</span></span>
+- <span data-ttu-id="58c7a-296">此規則適用於名為 Research Department 之群組的成員。</span><span class="sxs-lookup"><span data-stu-id="58c7a-296">The rule applies to members of the group named Research Department.</span></span>
+- <span data-ttu-id="58c7a-297">因為我們沒有使用_priority_參數，所以會使用預設的優先順序。</span><span class="sxs-lookup"><span data-stu-id="58c7a-297">Because we aren't using the _Priority_ parameter, the default priority is used.</span></span>
 
 ```powershell
 New-AntiPhishRule -Name "Research Department" -AntiPhishPolicy "Research Quarantine" -SentToMemberOf "Research Department"
 ```
 
-<span data-ttu-id="b73f0-299">如需詳細的語法及參數資訊，請參閱[AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishRule)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-299">For detailed syntax and parameter information, see [New-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishRule).</span></span>
+<span data-ttu-id="58c7a-298">如需詳細的語法及參數資訊，請參閱[AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishRule)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-298">For detailed syntax and parameter information, see [New-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishRule).</span></span>
 
-### <a name="use-powershell-to-view-anti-phish-policies"></a><span data-ttu-id="b73f0-300">使用 PowerShell 來查看反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="b73f0-300">Use PowerShell to view anti-phish policies</span></span>
+### <a name="use-powershell-to-view-anti-phish-policies"></a><span data-ttu-id="58c7a-299">使用 PowerShell 來查看反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="58c7a-299">Use PowerShell to view anti-phish policies</span></span>
 
-<span data-ttu-id="b73f0-301">若要查看現有的反網路釣魚原則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b73f0-301">To view existing anti-phish policies, use the following syntax:</span></span>
+<span data-ttu-id="58c7a-300">若要查看現有的反網路釣魚原則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="58c7a-300">To view existing anti-phish policies, use the following syntax:</span></span>
 
 ```PowerShell
 Get-AntiPhishPolicy [-Identity "<PolicyIdentity>"] [| <Format-Table | Format-List> <Property1,Property2,...>]
 ```
 
-<span data-ttu-id="b73f0-302">此範例會傳回所有反網路釣魚原則的摘要清單及指定的屬性。</span><span class="sxs-lookup"><span data-stu-id="b73f0-302">This example returns a summary list of all anti-phish policies along with the specified properties.</span></span>
+<span data-ttu-id="58c7a-301">此範例會傳回所有反網路釣魚原則的摘要清單及指定的屬性。</span><span class="sxs-lookup"><span data-stu-id="58c7a-301">This example returns a summary list of all anti-phish policies along with the specified properties.</span></span>
 
 ```PowerShell
 Get-AntiPhishPolicy | Format-Table Name,IsDefault
 ```
 
-<span data-ttu-id="b73f0-303">此範例會傳回名為「主管人員」之反網路釣魚原則的所有屬性值。</span><span class="sxs-lookup"><span data-stu-id="b73f0-303">This example returns all the property values for the anti-phish policy named Executives.</span></span>
+<span data-ttu-id="58c7a-302">此範例會傳回名為「主管人員」之反網路釣魚原則的所有屬性值。</span><span class="sxs-lookup"><span data-stu-id="58c7a-302">This example returns all the property values for the anti-phish policy named Executives.</span></span>
 
 ```PowerShell
 Get-AntiPhishPolicy -Identity "Executives"
 ```
 
-<span data-ttu-id="b73f0-304">如需詳細的語法及參數資訊，請參閱[AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishPolicy)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-304">For detailed syntax and parameter information, see [Get-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishPolicy).</span></span>
+<span data-ttu-id="58c7a-303">如需詳細的語法及參數資訊，請參閱[AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishPolicy)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-303">For detailed syntax and parameter information, see [Get-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishPolicy).</span></span>
 
-### <a name="use-powershell-to-view-anti-phish-rules"></a><span data-ttu-id="b73f0-305">使用 PowerShell 來查看反網路釣魚規則</span><span class="sxs-lookup"><span data-stu-id="b73f0-305">Use PowerShell to view anti-phish rules</span></span>
+### <a name="use-powershell-to-view-anti-phish-rules"></a><span data-ttu-id="58c7a-304">使用 PowerShell 來查看反網路釣魚規則</span><span class="sxs-lookup"><span data-stu-id="58c7a-304">Use PowerShell to view anti-phish rules</span></span>
 
-<span data-ttu-id="b73f0-306">若要查看現有的反網路釣魚規則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b73f0-306">To view existing anti-phish rules, use the following syntax:</span></span>
+<span data-ttu-id="58c7a-305">若要查看現有的反網路釣魚規則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="58c7a-305">To view existing anti-phish rules, use the following syntax:</span></span>
 
 ```PowerShell
 Get-AntiPhishRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled] [| <Format-Table | Format-List> <Property1,Property2,...>]
 ```
 
-<span data-ttu-id="b73f0-307">此範例會傳回所有反網路釣魚規則的摘要清單及指定的屬性。</span><span class="sxs-lookup"><span data-stu-id="b73f0-307">This example returns a summary list of all anti-phish rules along with the specified properties.</span></span>
+<span data-ttu-id="58c7a-306">此範例會傳回所有反網路釣魚規則的摘要清單及指定的屬性。</span><span class="sxs-lookup"><span data-stu-id="58c7a-306">This example returns a summary list of all anti-phish rules along with the specified properties.</span></span>
 
 ```PowerShell
 Get-AntiPhishRule | Format-Table Name,Priority,State
 ```
 
-<span data-ttu-id="b73f0-308">若要依啟用或停用篩選規則的清單，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="b73f0-308">To filter the list by enabled or disabled rules, run the following commands:</span></span>
+<span data-ttu-id="58c7a-307">若要依啟用或停用篩選規則的清單，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="58c7a-307">To filter the list by enabled or disabled rules, run the following commands:</span></span>
 
 ```PowerShell
 Get-AntiPhishRule -State Disabled | Format-Table Name,Priority
@@ -378,136 +378,136 @@ Get-AntiPhishRule -State Disabled | Format-Table Name,Priority
 Get-AntiPhishRule -State Enabled | Format-Table Name,Priority
 ```
 
-<span data-ttu-id="b73f0-309">此範例會傳回名為 Contoso 主管的反網路釣魚規則的所有屬性值。</span><span class="sxs-lookup"><span data-stu-id="b73f0-309">This example returns all the property values for the anti-phish rule named Contoso Executives.</span></span>
+<span data-ttu-id="58c7a-308">此範例會傳回名為 Contoso 主管的反網路釣魚規則的所有屬性值。</span><span class="sxs-lookup"><span data-stu-id="58c7a-308">This example returns all the property values for the anti-phish rule named Contoso Executives.</span></span>
 
 ```PowerShell
 Get-AntiPhishRule -Identity "Contoso Executives"
 ```
 
-<span data-ttu-id="b73f0-310">如需詳細的語法及參數資訊，請參閱[AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishrule)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-310">For detailed syntax and parameter information, see [Get-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishrule).</span></span>
+<span data-ttu-id="58c7a-309">如需詳細的語法及參數資訊，請參閱[AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishrule)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-309">For detailed syntax and parameter information, see [Get-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishrule).</span></span>
 
-### <a name="use-powershell-to-modify-anti-phish-policies"></a><span data-ttu-id="b73f0-311">使用 PowerShell 修改反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="b73f0-311">Use PowerShell to modify anti-phish policies</span></span>
+### <a name="use-powershell-to-modify-anti-phish-policies"></a><span data-ttu-id="58c7a-310">使用 PowerShell 修改反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="58c7a-310">Use PowerShell to modify anti-phish policies</span></span>
 
-<span data-ttu-id="b73f0-312">除了下列專案之外，當您在 PowerShell 中修改反網路釣魚原則時，當您在本主題稍早的[步驟1：使用 PowerShell 建立反網路釣魚原則](#step-1-use-powershell-to-create-an-anti-phish-policy)區段中所述時，就可以使用相同的設定。</span><span class="sxs-lookup"><span data-stu-id="b73f0-312">Other than the following items, the same settings are available when you modify an anti-phish policy in PowerShell as when you create the policy as described in the [Step 1: Use PowerShell to create an anti-phish policy](#step-1-use-powershell-to-create-an-anti-phish-policy) section earlier in this topic.</span></span>
+<span data-ttu-id="58c7a-311">除了下列專案之外，當您在 PowerShell 中修改反網路釣魚原則時，當您在本主題稍早的[步驟1：使用 PowerShell 建立反網路釣魚原則](#step-1-use-powershell-to-create-an-anti-phish-policy)區段中所述時，就可以使用相同的設定。</span><span class="sxs-lookup"><span data-stu-id="58c7a-311">Other than the following items, the same settings are available when you modify an anti-phish policy in PowerShell as when you create the policy as described in the [Step 1: Use PowerShell to create an anti-phish policy](#step-1-use-powershell-to-create-an-anti-phish-policy) section earlier in this topic.</span></span>
 
-- <span data-ttu-id="b73f0-313">在 PowerShell 中修改反網路釣魚原則時，可將指定的原則變成預設原則（適用于所有人、永不**最低**的優先順序，而且無法刪除）的_MakeDefault_參數。</span><span class="sxs-lookup"><span data-stu-id="b73f0-313">The _MakeDefault_ switch that turns the specified policy into the default policy (applied to everyone, always **Lowest** priority, and you can't delete it) is only available when you modify an anti-phish policy in PowerShell.</span></span>
+- <span data-ttu-id="58c7a-312">在 PowerShell 中修改反網路釣魚原則時，可將指定的原則變成預設原則（適用于所有人、永不**最低**的優先順序，而且無法刪除）的_MakeDefault_參數。</span><span class="sxs-lookup"><span data-stu-id="58c7a-312">The _MakeDefault_ switch that turns the specified policy into the default policy (applied to everyone, always **Lowest** priority, and you can't delete it) is only available when you modify an anti-phish policy in PowerShell.</span></span>
 
-- <span data-ttu-id="b73f0-314">您無法重新命名反網路釣魚原則（ **AntiPhishPolicy** Cmdlet 沒有_Name_參數）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-314">You can't rename an anti-phish policy (the **Set-AntiPhishPolicy** cmdlet has no _Name_ parameter).</span></span> <span data-ttu-id="b73f0-315">當您在安全性 & 合規性中心重新命名防網路釣魚原則時，您只是重新命名反網路釣魚_規則_。</span><span class="sxs-lookup"><span data-stu-id="b73f0-315">When you rename an anti-phishing policy in the Security & Compliance Center, you're only renaming the anti-phish _rule_.</span></span>
+- <span data-ttu-id="58c7a-313">您無法重新命名反網路釣魚原則（ **AntiPhishPolicy** Cmdlet 沒有_Name_參數）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-313">You can't rename an anti-phish policy (the **Set-AntiPhishPolicy** cmdlet has no _Name_ parameter).</span></span> <span data-ttu-id="58c7a-314">當您在安全性 & 合規性中心重新命名防網路釣魚原則時，您只是重新命名反網路釣魚_規則_。</span><span class="sxs-lookup"><span data-stu-id="58c7a-314">When you rename an anti-phishing policy in the Security & Compliance Center, you're only renaming the anti-phish _rule_.</span></span>
 
-<span data-ttu-id="b73f0-316">若要修改反網路釣魚原則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b73f0-316">To modify an anti-phish policy, use this syntax:</span></span>
+<span data-ttu-id="58c7a-315">若要修改反網路釣魚原則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="58c7a-315">To modify an anti-phish policy, use this syntax:</span></span>
 
 ```PowerShell
 Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-<span data-ttu-id="b73f0-317">如需詳細的語法及參數資訊，請參閱[Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-317">For detailed syntax and parameter information, see [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy).</span></span>
+<span data-ttu-id="58c7a-316">如需詳細的語法及參數資訊，請參閱[Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-316">For detailed syntax and parameter information, see [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy).</span></span>
 
-### <a name="use-powershell-to-modify-anti-phish-rules"></a><span data-ttu-id="b73f0-318">使用 PowerShell 修改反網路釣魚規則</span><span class="sxs-lookup"><span data-stu-id="b73f0-318">Use PowerShell to modify anti-phish rules</span></span>
+### <a name="use-powershell-to-modify-anti-phish-rules"></a><span data-ttu-id="58c7a-317">使用 PowerShell 修改反網路釣魚規則</span><span class="sxs-lookup"><span data-stu-id="58c7a-317">Use PowerShell to modify anti-phish rules</span></span>
 
-<span data-ttu-id="b73f0-319">在 PowerShell 中修改反網路釣魚規則時，唯一無法使用的設定是_Enabled_參數，可讓您建立已停用的規則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-319">The only setting that isn't available when you modify an anti-phish rule in PowerShell is the _Enabled_ parameter that allows you to create a disabled rule.</span></span> <span data-ttu-id="b73f0-320">若要啟用或停用現有的反網路釣魚規則，請參閱下一節。</span><span class="sxs-lookup"><span data-stu-id="b73f0-320">To enable or disable existing anti-phish rules, see the next section.</span></span>
+<span data-ttu-id="58c7a-318">在 PowerShell 中修改反網路釣魚規則時，唯一無法使用的設定是_Enabled_參數，可讓您建立已停用的規則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-318">The only setting that isn't available when you modify an anti-phish rule in PowerShell is the _Enabled_ parameter that allows you to create a disabled rule.</span></span> <span data-ttu-id="58c7a-319">若要啟用或停用現有的反網路釣魚規則，請參閱下一節。</span><span class="sxs-lookup"><span data-stu-id="58c7a-319">To enable or disable existing anti-phish rules, see the next section.</span></span>
 
-<span data-ttu-id="b73f0-321">否則，當您在 PowerShell 中修改反網路釣魚規則時，不會有其他設定可供使用。</span><span class="sxs-lookup"><span data-stu-id="b73f0-321">Otherwise, no additional settings are available when you modify an anti-phish rule in PowerShell.</span></span> <span data-ttu-id="b73f0-322">當您建立規則時，如本主題稍早的[步驟2：使用 PowerShell 建立反網路釣魚規則](#step-2-use-powershell-to-create-an-anti-phish-rule)一節所述，您可以使用相同的設定。</span><span class="sxs-lookup"><span data-stu-id="b73f0-322">The same settings are available when you create a rule as described in the [Step 2: Use PowerShell to create an anti-phish rule](#step-2-use-powershell-to-create-an-anti-phish-rule) section earlier in this topic.</span></span>
+<span data-ttu-id="58c7a-320">否則，當您在 PowerShell 中修改反網路釣魚規則時，不會有其他設定可供使用。</span><span class="sxs-lookup"><span data-stu-id="58c7a-320">Otherwise, no additional settings are available when you modify an anti-phish rule in PowerShell.</span></span> <span data-ttu-id="58c7a-321">當您建立規則時，如本主題稍早的[步驟2：使用 PowerShell 建立反網路釣魚規則](#step-2-use-powershell-to-create-an-anti-phish-rule)一節所述，您可以使用相同的設定。</span><span class="sxs-lookup"><span data-stu-id="58c7a-321">The same settings are available when you create a rule as described in the [Step 2: Use PowerShell to create an anti-phish rule](#step-2-use-powershell-to-create-an-anti-phish-rule) section earlier in this topic.</span></span>
 
-<span data-ttu-id="b73f0-323">若要修改反網路釣魚規則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b73f0-323">To modify an anti-phish rule, use this syntax:</span></span>
+<span data-ttu-id="58c7a-322">若要修改反網路釣魚規則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="58c7a-322">To modify an anti-phish rule, use this syntax:</span></span>
 
 ```PowerShell
 Set-AntiPhishRule -Identity "<RuleName>" <Settings>
 ```
 
-<span data-ttu-id="b73f0-324">如需詳細的語法及參數資訊，請參閱[Set-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishrule)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-324">For detailed syntax and parameter information, see [Set-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishrule).</span></span>
+<span data-ttu-id="58c7a-323">如需詳細的語法及參數資訊，請參閱[Set-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishrule)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-323">For detailed syntax and parameter information, see [Set-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishrule).</span></span>
 
-### <a name="use-powershell-to-enable-or-disable-anti-phish-rules"></a><span data-ttu-id="b73f0-325">使用 PowerShell 來啟用或停用反網路釣魚規則</span><span class="sxs-lookup"><span data-stu-id="b73f0-325">Use PowerShell to enable or disable anti-phish rules</span></span>
+### <a name="use-powershell-to-enable-or-disable-anti-phish-rules"></a><span data-ttu-id="58c7a-324">使用 PowerShell 來啟用或停用反網路釣魚規則</span><span class="sxs-lookup"><span data-stu-id="58c7a-324">Use PowerShell to enable or disable anti-phish rules</span></span>
 
-<span data-ttu-id="b73f0-326">啟用或停用 PowerShell 中的反網路釣魚規則可啟用或停用整個反網路釣魚原則（反網路釣魚規則和指派的反網路釣魚原則）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-326">Enabling or disabling an anti-phish rule in PowerShell enables or disables the whole anti-phishing policy (the anti-phish rule and the assigned anti-phish policy).</span></span> <span data-ttu-id="b73f0-327">您無法啟用或停用預設的反網路釣魚原則（永遠套用到所有收件者）。</span><span class="sxs-lookup"><span data-stu-id="b73f0-327">You can't enable or disable the default anti-phishing policy (it's always applied to all recipients).</span></span>
+<span data-ttu-id="58c7a-325">啟用或停用 PowerShell 中的反網路釣魚規則可啟用或停用整個反網路釣魚原則（反網路釣魚規則和指派的反網路釣魚原則）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-325">Enabling or disabling an anti-phish rule in PowerShell enables or disables the whole anti-phishing policy (the anti-phish rule and the assigned anti-phish policy).</span></span> <span data-ttu-id="58c7a-326">您無法啟用或停用預設的反網路釣魚原則（永遠套用到所有收件者）。</span><span class="sxs-lookup"><span data-stu-id="58c7a-326">You can't enable or disable the default anti-phishing policy (it's always applied to all recipients).</span></span>
 
-<span data-ttu-id="b73f0-328">若要啟用或停用 PowerShell 中的反網路釣魚規則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b73f0-328">To enable or disable an anti-phish rule in PowerShell, use this syntax:</span></span>
+<span data-ttu-id="58c7a-327">若要啟用或停用 PowerShell 中的反網路釣魚規則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="58c7a-327">To enable or disable an anti-phish rule in PowerShell, use this syntax:</span></span>
 
 ```PowerShell
 <Enable-AntiPhishRule | Disable-AntiPhishRule> -Identity "<RuleName>"
 ```
 
-<span data-ttu-id="b73f0-329">本範例會停用名為「行銷部門」的反網路釣魚規則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-329">This example disables the anti-phish rule named Marketing Department.</span></span>
+<span data-ttu-id="58c7a-328">本範例會停用名為「行銷部門」的反網路釣魚規則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-328">This example disables the anti-phish rule named Marketing Department.</span></span>
 
 ```PowerShell
 Disable-AntiPhishRule -Identity "Marketing Department"
 ```
 
-<span data-ttu-id="b73f0-330">此範例會啟用相同規則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-330">This example enables same rule.</span></span>
+<span data-ttu-id="58c7a-329">此範例會啟用相同規則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-329">This example enables same rule.</span></span>
 
 ```PowerShell
 Enable-AntiPhishRule -Identity "Marketing Department"
 ```
 
-<span data-ttu-id="b73f0-331">如需詳細的語法及參數資訊，請參閱[Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/enable-AntiPhishrule)和[Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/disable-AntiPhishrule)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-331">For detailed syntax and parameter information, see [Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/enable-AntiPhishrule) and [Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/disable-AntiPhishrule).</span></span>
+<span data-ttu-id="58c7a-330">如需詳細的語法及參數資訊，請參閱[Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/enable-AntiPhishrule)和[Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/disable-AntiPhishrule)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-330">For detailed syntax and parameter information, see [Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/enable-AntiPhishrule) and [Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/disable-AntiPhishrule).</span></span>
 
-### <a name="use-powershell-to-set-the-priority-of-anti-phish-rules"></a><span data-ttu-id="b73f0-332">使用 PowerShell 設定反網路釣魚規則的優先順序</span><span class="sxs-lookup"><span data-stu-id="b73f0-332">Use PowerShell to set the priority of anti-phish rules</span></span>
+### <a name="use-powershell-to-set-the-priority-of-anti-phish-rules"></a><span data-ttu-id="58c7a-331">使用 PowerShell 設定反網路釣魚規則的優先順序</span><span class="sxs-lookup"><span data-stu-id="58c7a-331">Use PowerShell to set the priority of anti-phish rules</span></span>
 
-<span data-ttu-id="b73f0-333">您可以對規則設定的最高優先順序值為 0。</span><span class="sxs-lookup"><span data-stu-id="b73f0-333">The highest priority value you can set on a rule is 0.</span></span> <span data-ttu-id="b73f0-334">您可以設定的最低值則取決於規則的數目。</span><span class="sxs-lookup"><span data-stu-id="b73f0-334">The lowest value you can set depends on the number of rules.</span></span> <span data-ttu-id="b73f0-335">例如，如果您有五個規則，則您可以使用 0 到 4 的優先順序值。</span><span class="sxs-lookup"><span data-stu-id="b73f0-335">For example, if you have five rules, you can use the priority values 0 through 4.</span></span> <span data-ttu-id="b73f0-336">變更現有規則的優先順序會對其他規則造成階層式影響。</span><span class="sxs-lookup"><span data-stu-id="b73f0-336">Changing the priority of an existing rule can have a cascading effect on other rules.</span></span> <span data-ttu-id="b73f0-337">例如，如果您有五個自訂規則 (優先順序 0 到 4)，而您將規則的優先順序變更為 2，則優先順序為 2 的現有規則會變更為優先順序 3，優先順序 3 的規則會變更為優先順序 4。</span><span class="sxs-lookup"><span data-stu-id="b73f0-337">For example, if you have five custom rules (priorities 0 through 4), and you change the priority of a rule to 2, the existing rule with priority 2 is changed to priority 3, and the rule with priority 3 is changed to priority 4.</span></span>
+<span data-ttu-id="58c7a-332">您可以對規則設定的最高優先順序值為 0。</span><span class="sxs-lookup"><span data-stu-id="58c7a-332">The highest priority value you can set on a rule is 0.</span></span> <span data-ttu-id="58c7a-333">您可以設定的最低值則取決於規則的數目。</span><span class="sxs-lookup"><span data-stu-id="58c7a-333">The lowest value you can set depends on the number of rules.</span></span> <span data-ttu-id="58c7a-334">例如，如果您有五個規則，則您可以使用 0 到 4 的優先順序值。</span><span class="sxs-lookup"><span data-stu-id="58c7a-334">For example, if you have five rules, you can use the priority values 0 through 4.</span></span> <span data-ttu-id="58c7a-335">變更現有規則的優先順序會對其他規則造成階層式影響。</span><span class="sxs-lookup"><span data-stu-id="58c7a-335">Changing the priority of an existing rule can have a cascading effect on other rules.</span></span> <span data-ttu-id="58c7a-336">例如，如果您有五個自訂規則 (優先順序 0 到 4)，而您將規則的優先順序變更為 2，則優先順序為 2 的現有規則會變更為優先順序 3，優先順序 3 的規則會變更為優先順序 4。</span><span class="sxs-lookup"><span data-stu-id="58c7a-336">For example, if you have five custom rules (priorities 0 through 4), and you change the priority of a rule to 2, the existing rule with priority 2 is changed to priority 3, and the rule with priority 3 is changed to priority 4.</span></span>
 
-<span data-ttu-id="b73f0-338">若要設定 PowerShell 中的反網路釣魚規則優先順序，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b73f0-338">To set the priority of an anti-phish rule in PowerShell, use the following syntax:</span></span>
+<span data-ttu-id="58c7a-337">若要設定 PowerShell 中的反網路釣魚規則優先順序，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="58c7a-337">To set the priority of an anti-phish rule in PowerShell, use the following syntax:</span></span>
 
 ```PowerShell
 Set-AntiPhishRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-<span data-ttu-id="b73f0-339">此範例會將規則 (名稱為 Marketing Department) 的優先順序設定為 2。</span><span class="sxs-lookup"><span data-stu-id="b73f0-339">This example sets the priority of the rule named Marketing Department to 2.</span></span> <span data-ttu-id="b73f0-340">優先順序小於或等於 2 的所有現有規則會減 1 (它們的優先順序數字會加 1)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-340">All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).</span></span>
+<span data-ttu-id="58c7a-338">此範例會將規則 (名稱為 Marketing Department) 的優先順序設定為 2。</span><span class="sxs-lookup"><span data-stu-id="58c7a-338">This example sets the priority of the rule named Marketing Department to 2.</span></span> <span data-ttu-id="58c7a-339">優先順序小於或等於 2 的所有現有規則會減 1 (它們的優先順序數字會加 1)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-339">All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).</span></span>
 
 ```PowerShell
 Set-AntiPhishRule -Identity "Marketing Department" -Priority 2
 ```
 
-<span data-ttu-id="b73f0-341">**附註**：</span><span class="sxs-lookup"><span data-stu-id="b73f0-341">**Notes**:</span></span>
+<span data-ttu-id="58c7a-340">**附註**：</span><span class="sxs-lookup"><span data-stu-id="58c7a-340">**Notes**:</span></span>
 
-- <span data-ttu-id="b73f0-342">若要在建立新規則時設定其優先順序，請改用**AntiPhishRule** Cmdlet 上的_priority_參數。</span><span class="sxs-lookup"><span data-stu-id="b73f0-342">To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-AntiPhishRule** cmdlet instead.</span></span>
+- <span data-ttu-id="58c7a-341">若要在建立新規則時設定其優先順序，請改用**AntiPhishRule** Cmdlet 上的_priority_參數。</span><span class="sxs-lookup"><span data-stu-id="58c7a-341">To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-AntiPhishRule** cmdlet instead.</span></span>
 
-- <span data-ttu-id="b73f0-343">預設的反網路釣魚原則沒有相對應的反網路釣魚規則，而且它永遠具有不可修改的優先順序**值。**</span><span class="sxs-lookup"><span data-stu-id="b73f0-343">The default anti-phish policy doesn't have a corresponding anti-phish rule, and it always has the unmodifiable priority value **Lowest**.</span></span>
+- <span data-ttu-id="58c7a-342">預設的反網路釣魚原則沒有相對應的反網路釣魚規則，而且它永遠具有不可修改的優先順序**值。**</span><span class="sxs-lookup"><span data-stu-id="58c7a-342">The default anti-phish policy doesn't have a corresponding anti-phish rule, and it always has the unmodifiable priority value **Lowest**.</span></span>
 
-### <a name="use-powershell-to-remove-anti-phish-policies"></a><span data-ttu-id="b73f0-344">使用 PowerShell 移除反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="b73f0-344">Use PowerShell to remove anti-phish policies</span></span>
+### <a name="use-powershell-to-remove-anti-phish-policies"></a><span data-ttu-id="58c7a-343">使用 PowerShell 移除反網路釣魚原則</span><span class="sxs-lookup"><span data-stu-id="58c7a-343">Use PowerShell to remove anti-phish policies</span></span>
 
-<span data-ttu-id="b73f0-345">當您使用 PowerShell 來移除反網路釣魚原則時，並不會移除對應的反網路釣魚規則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-345">When you use PowerShell to remove an anti-phish policy, the corresponding anti-phish rule isn't removed.</span></span>
+<span data-ttu-id="58c7a-344">當您使用 PowerShell 來移除反網路釣魚原則時，並不會移除對應的反網路釣魚規則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-344">When you use PowerShell to remove an anti-phish policy, the corresponding anti-phish rule isn't removed.</span></span>
 
-<span data-ttu-id="b73f0-346">若要在 PowerShell 中移除反網路釣魚原則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b73f0-346">To remove an anti-phish policy in PowerShell, use this syntax:</span></span>
+<span data-ttu-id="58c7a-345">若要在 PowerShell 中移除反網路釣魚原則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="58c7a-345">To remove an anti-phish policy in PowerShell, use this syntax:</span></span>
 
 ```PowerShell
 Remove-AntiPhishPolicy -Identity "<PolicyName>"
 ```
 
-<span data-ttu-id="b73f0-347">此範例會移除名為「行銷部門」的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-347">This example removes the anti-phish policy named Marketing Department.</span></span>
+<span data-ttu-id="58c7a-346">此範例會移除名為「行銷部門」的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-346">This example removes the anti-phish policy named Marketing Department.</span></span>
 
 ```PowerShell
 Remove-AntiPhishPolicy -Identity "Marketing Department"
 ```
 
-<span data-ttu-id="b73f0-348">如需詳細的語法及參數資訊，請參閱[Remove-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishPolicy)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-348">For detailed syntax and parameter information, see [Remove-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishPolicy).</span></span>
+<span data-ttu-id="58c7a-347">如需詳細的語法及參數資訊，請參閱[Remove-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishPolicy)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-347">For detailed syntax and parameter information, see [Remove-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishPolicy).</span></span>
 
-### <a name="use-powershell-to-remove-anti-phish-rules"></a><span data-ttu-id="b73f0-349">使用 PowerShell 移除反網路釣魚規則</span><span class="sxs-lookup"><span data-stu-id="b73f0-349">Use PowerShell to remove anti-phish rules</span></span>
+### <a name="use-powershell-to-remove-anti-phish-rules"></a><span data-ttu-id="58c7a-348">使用 PowerShell 移除反網路釣魚規則</span><span class="sxs-lookup"><span data-stu-id="58c7a-348">Use PowerShell to remove anti-phish rules</span></span>
 
-<span data-ttu-id="b73f0-350">當您使用 PowerShell 來移除反網路釣魚規則時，並不會移除對應的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-350">When you use PowerShell to remove an anti-phish rule, the corresponding anti-phish policy isn't removed.</span></span>
+<span data-ttu-id="58c7a-349">當您使用 PowerShell 來移除反網路釣魚規則時，並不會移除對應的反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-349">When you use PowerShell to remove an anti-phish rule, the corresponding anti-phish policy isn't removed.</span></span>
 
-<span data-ttu-id="b73f0-351">若要在 PowerShell 中移除反網路釣魚規則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b73f0-351">To remove an anti-phish rule in PowerShell, use this syntax:</span></span>
+<span data-ttu-id="58c7a-350">若要在 PowerShell 中移除反網路釣魚規則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="58c7a-350">To remove an anti-phish rule in PowerShell, use this syntax:</span></span>
 
 ```PowerShell
 Remove-AntiPhishRule -Identity "<PolicyName>"
 ```
 
-<span data-ttu-id="b73f0-352">此範例會移除名為「行銷部門」的反網路釣魚規則。</span><span class="sxs-lookup"><span data-stu-id="b73f0-352">This example removes the anti-phish rule named Marketing Department.</span></span>
+<span data-ttu-id="58c7a-351">此範例會移除名為「行銷部門」的反網路釣魚規則。</span><span class="sxs-lookup"><span data-stu-id="58c7a-351">This example removes the anti-phish rule named Marketing Department.</span></span>
 
 ```PowerShell
 Remove-AntiPhishRule -Identity "Marketing Department"
 ```
 
-<span data-ttu-id="b73f0-353">如需詳細的語法及參數資訊，請參閱[Remove-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishRule)。</span><span class="sxs-lookup"><span data-stu-id="b73f0-353">For detailed syntax and parameter information, see [Remove-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishRule).</span></span>
+<span data-ttu-id="58c7a-352">如需詳細的語法及參數資訊，請參閱[Remove-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishRule)。</span><span class="sxs-lookup"><span data-stu-id="58c7a-352">For detailed syntax and parameter information, see [Remove-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishRule).</span></span>
 
-## <a name="how-do-you-know-these-procedures-worked"></a><span data-ttu-id="b73f0-354">如何知道這些程序是否正常運作？</span><span class="sxs-lookup"><span data-stu-id="b73f0-354">How do you know these procedures worked?</span></span>
+## <a name="how-do-you-know-these-procedures-worked"></a><span data-ttu-id="58c7a-353">如何知道這些程序是否正常運作？</span><span class="sxs-lookup"><span data-stu-id="58c7a-353">How do you know these procedures worked?</span></span>
 
-<span data-ttu-id="b73f0-355">若要確認您是否已成功設定 ATP 反網路釣魚原則，請執行下列任一步驟：</span><span class="sxs-lookup"><span data-stu-id="b73f0-355">To verify that you've successfully configured ATP anti-phishing policies, do any of the following steps:</span></span>
+<span data-ttu-id="58c7a-354">若要確認您是否已成功設定 ATP 反網路釣魚原則，請執行下列任一步驟：</span><span class="sxs-lookup"><span data-stu-id="58c7a-354">To verify that you've successfully configured ATP anti-phishing policies, do any of the following steps:</span></span>
 
-- <span data-ttu-id="b73f0-356">在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **反網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="b73f0-356">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span> <span data-ttu-id="b73f0-357">請確認原則的清單、其**狀態**值，以及其**優先順序**值。</span><span class="sxs-lookup"><span data-stu-id="b73f0-357">Verify the list of policies, their **Status** values, and their **Priority** values.</span></span> <span data-ttu-id="b73f0-358">若要查看更多詳細資料，請執行下列其中一個步驟：</span><span class="sxs-lookup"><span data-stu-id="b73f0-358">To view more details do either of the following steps:</span></span>
+- <span data-ttu-id="58c7a-355">在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **反網路釣魚**。</span><span class="sxs-lookup"><span data-stu-id="58c7a-355">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing**.</span></span> <span data-ttu-id="58c7a-356">請確認原則的清單、其**狀態**值，以及其**優先順序**值。</span><span class="sxs-lookup"><span data-stu-id="58c7a-356">Verify the list of policies, their **Status** values, and their **Priority** values.</span></span> <span data-ttu-id="58c7a-357">若要查看更多詳細資料，請執行下列其中一個步驟：</span><span class="sxs-lookup"><span data-stu-id="58c7a-357">To view more details do either of the following steps:</span></span>
 
-  - <span data-ttu-id="b73f0-359">從清單中選取原則，然後在飛入的視窗中查看詳細資料。</span><span class="sxs-lookup"><span data-stu-id="b73f0-359">Select the policy from the list, and view the details in the flyout.</span></span>
-  - <span data-ttu-id="b73f0-360">按一下 [**預設原則**]，然後在飛入的視窗中查看詳細資料。</span><span class="sxs-lookup"><span data-stu-id="b73f0-360">Click **Default policy** and view the details in the flyout.</span></span>
+  - <span data-ttu-id="58c7a-358">從清單中選取原則，然後在飛入的視窗中查看詳細資料。</span><span class="sxs-lookup"><span data-stu-id="58c7a-358">Select the policy from the list, and view the details in the flyout.</span></span>
+  - <span data-ttu-id="58c7a-359">按一下 [**預設原則**]，然後在飛入的視窗中查看詳細資料。</span><span class="sxs-lookup"><span data-stu-id="58c7a-359">Click **Default policy** and view the details in the flyout.</span></span>
 
-- <span data-ttu-id="b73f0-361">在 Exchange Online PowerShell 中， \<以\>原則或規則名稱取代名稱，並執行下列命令並確認設定：</span><span class="sxs-lookup"><span data-stu-id="b73f0-361">In Exchange Online PowerShell, replace \<Name\> with the name of the policy or rule, and run the following command and verify the settings:</span></span>
+- <span data-ttu-id="58c7a-360">在 Exchange Online PowerShell 中， \< \> 以原則或規則名稱取代名稱，並執行下列命令並確認設定：</span><span class="sxs-lookup"><span data-stu-id="58c7a-360">In Exchange Online PowerShell, replace \<Name\> with the name of the policy or rule, and run the following command and verify the settings:</span></span>
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"
