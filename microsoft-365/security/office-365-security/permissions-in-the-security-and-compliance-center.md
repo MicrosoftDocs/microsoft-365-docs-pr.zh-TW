@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: 系統管理員可以瞭解 Microsoft 365 安全性 & 規範中心提供的許可權。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dda0fe4263c6c62e9ac7829c87caf6332e56f809
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5235a872cb3c2733847fbe9ac7a0f59ee52dfa71
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033911"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208618"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>安全性與合規性中心中的權限
 
@@ -67,14 +67,14 @@ ms.locfileid: "44033911"
 |**測試人員風險調查員**|使用此群組可將許可權指派給將充當內部使用者風險資料調查人員的使用者。 在所有情況下，此角色群組中的使用者都可以存取所有的內幕程式風險管理提醒、案例、通知範本及內容瀏覽器。|案例管理 <br/><br/> 內幕風險管理調查|
 |**IRM 投稿人**|這個角色群組是可見的，但是只供背景服務使用。|內部人員風險管理的暫存份額|
 |**郵件流程系統管理員**|成員可以在安全性與合規性中心監視和檢視郵件流程深入解析和報告。 全域管理員可以在此群組中新增一般使用者，但是如果使用者不是 Exchange 系統管理員群組的成員，使用者將無法存取 Exchange 系統管理員相關的工作。|僅限檢視收件者|
-|**組織管理**<sup>1</sup>|成員可以控制在安全性與合規性中心中存取功能的權限，也能管理裝置管理、資料遺失防護、報告和保留的設定。 <br/><br/> 請注意，若為非全域管理員的使用者，若要查看由 MDM for Microsoft 365 管理的裝置清單，並在這些裝置上執行動作，例如從 Office 365 的 MDM 版中撤銷裝置，則使用者必須是 Exchange 系統管理員。 <br/><br/> lobal 系統管理員會自動新增為此角色群組的成員。|稽核記錄 <br/><br/> 案例管理 <br/><br/> 合規性系統管理員 <br/><br/> 合規性搜尋 <br/><br/> DLP 合規性管理 <br/><br/> 裝置管理 <br/><br/> 處置管理 <br/><br/> 保留 <br/><br/> IB 合規性管理 <br/><br/> 管理警示 <br/><br/> 組織組態 <br/><br/> 隔離 <br/><br/> RecordManagement <br/><br/> 保留管理 <br/><br/> 角色管理 <br/><br/> 搜尋和清除 <br/><br/> 安全性系統管理員 <br/><br/> 安全性讀取者 <br/><br/> 敏感度標籤系統管理員 <br/><br/> 敏感度標籤讀取器 <br/><br/> 服務保證檢視 <br/><br/> 僅限檢視稽核記錄 <br/><br/> 僅限檢視 DLP 合規性管理 <br/><br/> 僅限檢視裝置管理 <br/><br/> 僅限檢視 IB 合規性管理 <br/><br/> 僅限檢視管理警示 <br/><br/> 僅限檢視收件者 <br/><br/> 僅限檢視記錄管理 <br/><br/> 僅限檢視保留管理|
-|**隔離系統管理員**|成員可以存取所有隔離動作。 如需詳細資訊，請參閱[在 Office 365 中以系統管理員身分管理隔離的郵件和](manage-quarantined-messages-and-files.md)檔案|隔離|
+|**組織管理**<sup>1</sup>|成員可以控制在安全性與合規性中心中存取功能的權限，也能管理裝置管理、資料遺失防護、報告和保留的設定。 <br/><br/> 請注意，若要讓非全域管理員的使用者能夠查看由 MDM for Microsoft 365 管理的裝置清單，並在這些裝置上執行動作，例如從適用于 Microsoft 365 的 MDM 中撤出裝置，則使用者必須是 Exchange 系統管理員。 <br/><br/> lobal 系統管理員會自動新增為此角色群組的成員。|稽核記錄 <br/><br/> 案例管理 <br/><br/> 合規性系統管理員 <br/><br/> 合規性搜尋 <br/><br/> DLP 合規性管理 <br/><br/> 裝置管理 <br/><br/> 處置管理 <br/><br/> 保留 <br/><br/> IB 合規性管理 <br/><br/> 管理警示 <br/><br/> 組織組態 <br/><br/> 隔離 <br/><br/> RecordManagement <br/><br/> 保留管理 <br/><br/> 角色管理 <br/><br/> 搜尋和清除 <br/><br/> 安全性系統管理員 <br/><br/> 安全性讀取者 <br/><br/> 敏感度標籤系統管理員 <br/><br/> 敏感度標籤讀取器 <br/><br/> 服務保證檢視 <br/><br/> 僅限檢視稽核記錄 <br/><br/> 僅限檢視 DLP 合規性管理 <br/><br/> 僅限檢視裝置管理 <br/><br/> 僅限檢視 IB 合規性管理 <br/><br/> 僅限檢視管理警示 <br/><br/> 僅限檢視收件者 <br/><br/> 僅限檢視記錄管理 <br/><br/> 僅限檢視保留管理|
+|**隔離系統管理員**|成員可以存取所有隔離動作。 如需詳細資訊，請參閱[在 OEOP 中管理被隔離的郵件和檔案為系統管理員](manage-quarantined-messages-and-files.md)|隔離|
 |**記錄管理**|成員可以管理和處置記錄內容。|稽核記錄 <br/><br/> RecordManagement <br/><br/> 保留管理|
 |**檢閱者**|這類成員只能檢視安全性與合規性中心電子文件探索案例頁面上的案例清單， 無法建立、開啟或管理電子文件探索案例。 這個角色群組的主要目的是讓成員能夠在[高級 ediscovery （古典）](../../compliance/office-365-advanced-ediscovery.md) （也稱為「*高級 ediscovery v1*」）中查看和存取案例資料。 <br/><br/> 這個角色群組具有最嚴格的電子文件探索相關權限。<br/><br/>**附注：** 此時，「檢閱者」角色群組成員的使用者無法在 Microsoft 365 （也稱為「*高級 ediscovery v2*」）中存取「[高級 ediscovery」中](../../compliance/overview-ediscovery-20.md)的資料。 若要在高級 eDiscovery v2 中新增成員至案例，讓他們可以查看案例資料，使用者必須是 eDiscovery 管理員角色群組的成員。|檢閱|
-|**安全性系統管理員**|這個角色群組的成員可能包括跨服務系統管理員，以及外部的合作夥伴群組和 Microsoft 支援服務。 根據預設，這個群組中不會指派任何角色。 不過，它是 Azure Active Directory 中安全性系統管理員角色的成員，且會繼承該角色的能力。 若要集中管理許可權，請在 Azure Active Directory 系統管理中心中變更此角色。 如需詳細資訊，請參閱[在 Azure Active Directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 <br/><br/> 如果您在安全性與合規性中心編輯這個角色群組，這些變更只會套用到安全性與合規性中心，而不會套用到任何其他服務，而在 Azure Active Directory 系統管理中心所做的變更會影響所有服務。 <br/><br/> 所有安全讀者角色的唯讀許可權，以及相同服務的其他許多管理許可權： Azure 資訊保護、Identity Protection Center、特權身分識別管理、監視 Office 365 服務健康情況，以及安全性 & 合規性中心。|稽核記錄 <br/><br/> DLP 合規性管理 <br/><br/> 裝置管理 <br/><br/> IB 合規性管理 <br/><br/> 管理警示 <br/><br/> 隔離 <br/><br/> 安全性系統管理員 <br/><br/> 敏感度標籤系統管理員 <br/><br/> 僅限檢視稽核記錄 <br/><br/> 僅限檢視 DLP 合規性管理 <br/><br/> 僅限檢視裝置管理 <br/><br/> 僅限檢視 IB 合規性管理 <br/><br/> 僅限檢視管理警示|
+|**安全性系統管理員**|這個角色群組的成員可能包括跨服務系統管理員，以及外部的合作夥伴群組和 Microsoft 支援服務。 根據預設，這個群組中不會指派任何角色。 不過，它是 Azure Active Directory 中安全性系統管理員角色的成員，且會繼承該角色的能力。 若要集中管理許可權，請在 Azure Active Directory 系統管理中心中變更此角色。 如需詳細資訊，請參閱[在 Azure Active Directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 <br/><br/> 如果您在安全性與合規性中心編輯這個角色群組，這些變更只會套用到安全性與合規性中心，而不會套用到任何其他服務，而在 Azure Active Directory 系統管理中心所做的變更會影響所有服務。 <br/><br/> 所有安全讀者角色的唯讀許可權，以及相同服務的其他許多管理許可權： Azure 資訊保護、Identity Protection Center、特權身分識別管理、監視 Microsoft 365 服務健康情況，以及安全性 & 合規性中心。|稽核記錄 <br/><br/> DLP 合規性管理 <br/><br/> 裝置管理 <br/><br/> IB 合規性管理 <br/><br/> 管理警示 <br/><br/> 隔離 <br/><br/> 安全性系統管理員 <br/><br/> 敏感度標籤系統管理員 <br/><br/> 僅限檢視稽核記錄 <br/><br/> 僅限檢視 DLP 合規性管理 <br/><br/> 僅限檢視裝置管理 <br/><br/> 僅限檢視 IB 合規性管理 <br/><br/> 僅限檢視管理警示|
 |**安全性操作員**|成員可以管理安全性警示，也可以檢視安全性功能的報告和設定。|合規性搜尋 <br/><br/> 管理警示 <br/><br/> 安全性讀取者 <br/><br/> 僅限檢視稽核記錄 <br/><br/> 僅限檢視 DLP 合規性管理 <br/><br/> 僅限檢視裝置管理 <br/><br/> 僅限檢視 IB 合規性管理 <br/><br/> 僅限檢視管理警示|
-|**安全性讀取者**|成員對 Identity Protection Center、特權身分識別管理、監視 Office 365 服務健康情況及安全性 & 合規性中心具有許多安全性功能具有唯讀存取權。 <br/><br/> 這個角色群組中的成員資格能跨服務同步，且為集中管理的。 這個角色群組的成員可能包括跨服務系統管理員，以及外部的合作夥伴群組和 Microsoft 支援服務。 根據預設，這個群組中不會指派任何角色。 不過，它是 Azure Active Directory 中安全性讀取者角色的成員，且會繼承該角色的能力。 若要集中管理權限，請在 Azure Active Directory 系統管理中心變更此角色，如需詳細資訊，請參閱 [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) (部分機器翻譯)。 如果您在安全性與合規性中心編輯這個角色群組，這些變更只會套用到安全性與合規性中心，而不會套用到任何其他服務，而在 Azure Active Directory 系統管理中心所做的變更會影響所有服務|安全性讀取者 <br/><br/> 敏感度標籤讀取器 <br/><br/> 僅限檢視 DLP 合規性管理 <br/><br/> 僅限檢視裝置管理 <br/><br/> 僅限檢視 IB 合規性管理 <br/><br/> 僅限檢視管理警示|
-|**服務保證使用者**|成員可以存取安全性 & 合規性中心的服務保證區段。 服務保證會針對儲存在 Office 365 中的客戶資料，提供描述 Microsoft 安全性做法的報告和文件。 此外，這個區段也會提供 Office 365 的獨立第三方稽核報告。 如需詳細資訊，請參閱[安全性 & 合規性中心中的服務保證](https://docs.microsoft.com/microsoft-365/compliance/service-assurance)。|服務保證檢視|
+|**安全性讀取者**|成員對身分識別保護中心的許多安全性功能具有唯讀存取權、特權身分識別管理、監視 Microsoft 365 服務健康情況，以及安全性 & 合規性中心。 <br/><br/> 這個角色群組中的成員資格能跨服務同步，且為集中管理的。 這個角色群組的成員可能包括跨服務系統管理員，以及外部的合作夥伴群組和 Microsoft 支援服務。 根據預設，這個群組中不會指派任何角色。 不過，它是 Azure Active Directory 中安全性讀取者角色的成員，且會繼承該角色的能力。 若要集中管理權限，請在 Azure Active Directory 系統管理中心變更此角色，如需詳細資訊，請參閱 [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) (部分機器翻譯)。 如果您在安全性與合規性中心編輯這個角色群組，這些變更只會套用到安全性與合規性中心，而不會套用到任何其他服務，而在 Azure Active Directory 系統管理中心所做的變更會影響所有服務|安全性讀取者 <br/><br/> 敏感度標籤讀取器 <br/><br/> 僅限檢視 DLP 合規性管理 <br/><br/> 僅限檢視裝置管理 <br/><br/> 僅限檢視 IB 合規性管理 <br/><br/> 僅限檢視管理警示|
+|**服務保證使用者**|成員可以存取安全性 & 合規性中心的服務保證區段。 服務保證可提供報告及檔，說明 Microsoft 在 Microsoft 365 中儲存的客戶資料的安全性作法。 此外，它還提供 Microsoft 365 上獨立的協力廠商審核報告。 如需詳細資訊，請參閱[安全性 & 合規性中心中的服務保證](https://docs.microsoft.com/microsoft-365/compliance/service-assurance)。|服務保證檢視|
 |**主管檢閱**|成員可以建立和管理原則，該原則定義了組織中要被檢視的是那些通訊。 如需詳細資訊，請參閱[設定貴組織的通訊合規性原則](../../compliance/communication-compliance-configure.md)。|主管檢閱系統管理員|
 |
 

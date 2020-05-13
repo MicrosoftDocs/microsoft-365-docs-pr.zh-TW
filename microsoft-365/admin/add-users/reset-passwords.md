@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: '瞭解如何在 Microsoft 365 for business 訂閱中重設使用者的密碼。 '
-ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 0cd9bfe2b4f60ed0150e95f35d1f24994724ca60
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173515"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208195"
 ---
 # <a name="reset-passwords"></a>重設密碼
 
@@ -79,13 +79,13 @@ ms.locfileid: "44173515"
 
 如果您忘記密碼，但是您可以登入 Microsoft 365，請使用下列步驟，例如，您的密碼儲存在您的瀏覽器中： 
     
-1. 在右上角 >**我的帳戶** > **個人資訊**] 中選取您的名稱（圖示）。 
+1. 在右上角 >**我的帳戶**  >  **個人資訊**] 中選取您的名稱（圖示）。 
           
 2. 在 [**連絡人詳細資料**] 下，仔細檢查您的**備選電子郵件**是否正確，以及您是否已提供行動電話號碼。 如果不是，請立即變更。 
         
-3. 登出：在右上角選取您的名稱（如**Diane** \> **），請登出。** 
+3. 登出：在右上角選取您的名稱（如**Diane**），請登出 \> ** **。 
         
-4. 現在重新登入：請輸入您的\>使用者名稱，然後選取 [**忘記密碼** **]** \> 。 
+4. 現在重新登入：請輸入您的使用者名稱 \> **Next** \> ，然後選取 [**忘記密碼**]。 
     
 5. 依照嚮導中的步驟來重設您的密碼。 它會使用您的替代連絡人資訊，確認您是正確重設密碼的使用者。 
     
@@ -100,7 +100,7 @@ ms.locfileid: "44173515"
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>同時為組織中的所有人重設所有商務密碼
 <a name="bkmk_forgot"> </a>
 
-這些步驟適用於有大量使用者的企業。如果您有數百或數千個使用者，請參閱下一節了解如何大量重設密碼。
+這些步驟適用於有大量使用者的企業。 如果您有成百上千的使用者，請參閱下一節 [大量重設密碼（最多40個使用者一次）]。
   
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
     

@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 系統管理員可以瞭解如何從勒索軟體的攻擊復原。
-ms.openlocfilehash: 49e14e92505f5241828a525aba82a2dc871e6784
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 51f5bb365fe707615444c1399479171aa72755e1
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634397"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208255"
 ---
-# <a name="recover-from-a-ransomware-attack-in-office-365"></a>從 Office 365 復原勒索軟體攻擊
+# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>從 Microsoft 365 復原勒索軟體攻擊
 
 即使您採取每一種防範措施保護您的組織，您還是可以遭到[勒索軟體](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)攻擊的受害人。 勒索軟體是很大的商務用，攻擊是以複雜的驗證。
 
@@ -42,7 +42,7 @@ ms.locfileid: "43634397"
 
 如果您懷疑電子郵件是目標，您應該暫時停用使用者對信箱的存取權。 Exchange ActiveSync 是由行動裝置用於同步裝置與 Exchange Online 信箱之間的資料。
 
-若要停用信箱的 ActiveSync，請參閱[如何針對 Office 365 中的使用者停用 Exchange ActiveSync](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365)。
+若要停用信箱的 ActiveSync，請參閱[如何為 Exchange Online 中的使用者停用 exchange ActiveSync](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365)。
 
 若要停用信箱的其他類型的存取，請參閱：
 
@@ -124,7 +124,7 @@ ms.locfileid: "43634397"
 
 您可以使用下列其中一種方法，報告包含勒索軟體的網路釣魚郵件。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [軟體](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 

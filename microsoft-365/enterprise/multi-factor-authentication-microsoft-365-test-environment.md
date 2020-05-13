@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用在 Microsoft 365 企業版測試環境中傳送至 smart phone 的文字訊息，設定多重要素驗證。
-ms.openlocfilehash: b17c6b3b39bebaff2737ea5e9bb198beef00844c
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: ae8cab25a20cc75992eecc600219d9f1dd869b63
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153877"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213137"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企業版測試環境的多重要素驗證
 
@@ -28,7 +28,7 @@ ms.locfileid: "43153877"
 
 若要取得其他安全性，以供登入 Microsoft 365 或任何服務或應用程式使用您訂閱的 Azure AD 租使用者，您可以啟用 Azure 多重要素驗證，它只需要使用者名稱和密碼，即可驗證帳戶。 
 
-使用多重要素驗證時，使用者必須認可電話、輸入短信中傳送的驗證碼，或是在正確輸入密碼後，在智慧型電話上指定應用程式密碼。 只有在滿足這個第二次驗證要素之後，他們才可以登入。 
+使用多重要素驗證時，使用者必須認可電話、輸入短信中所傳送的驗證碼，或在正確輸入密碼後，使用智慧型電話上的應用程式驗證驗證。 只有在滿足這個第二次驗證要素之後，他們才可以登入。 
   
 本文說明如何為特定使用者帳戶啟用並測試以郵件為基礎的驗證。
   
@@ -58,7 +58,7 @@ ms.locfileid: "43153877"
 
 使用下列步驟為使用者2帳戶啟用多重要素驗證：
   
-1. 開啟瀏覽器的個別私人實例，移至 Microsoft 365 系統管理中心（[https://portal.microsoft.com](https://portal.microsoft.com)），然後使用全域系統管理員帳戶登入。
+1. 開啟瀏覽器的個別私人實例，移至 Microsoft 365 系統管理中心（ [https://portal.microsoft.com](https://portal.microsoft.com) ），然後使用全域系統管理員帳戶登入。
     
 2. 在左方的瀏覽區域中，按一下 [使用者] > [作用中的使用者]****。
     
@@ -80,9 +80,9 @@ ms.locfileid: "43153877"
   
 1. 開啟瀏覽器的新的私人實例。
     
-2. 移至 Office 365 入口網站（[https://portal.office.com](https://portal.office.com)），並使用使用者2帳戶名稱和密碼登入。
+2. 移至 Office 365 入口網站（ [https://portal.office.com](https://portal.office.com) ），並使用使用者2帳戶名稱和密碼登入。
     
-3. 登入後，系統會提示您設定帳戶以取得詳細資訊。 按 **[下一步]**。
+3. 登入後，系統會提示您設定帳戶以取得詳細資訊。 按一下 **[下一步]**。
     
 4. 在 [**其他安全性驗證**] 頁面上：
     
@@ -92,11 +92,11 @@ ms.locfileid: "43153877"
     
    - 在**方法**中，按一下 [以**文字訊息傳送程式碼**]。
     
-5. 按 **[下一步]**。
+5. 按一下 **[下一步]**。
     
 6. 從 smart phone 上收到的文字訊息中輸入驗證碼，然後按一下 [**驗證**]。
     
-7. 在 [**步驟3：保留現有的應用程式**] 頁面上，將使用者2帳戶的顯示應用程式密碼記錄在安全的位置，然後按一下 [**完成**]。
+7. 在 [**步驟3：保留現有的應用程式**] 頁面上，按一下 [**完成**]。
     
 8. 如果這是您第一次使用使用者2帳戶登入，系統會提示您變更密碼。 輸入原始密碼和新密碼兩次，然後按一下 [**更新密碼並登入**]。 將新密碼記錄在安全的位置。
     
@@ -121,7 +121,7 @@ ms.locfileid: "43153877"
 
 接下來，建立條件式存取原則，以要求 MFAUsers 群組成員的多重要素驗證。
 
-1. 在瀏覽器的新索引標籤上， [https://portal.azure.com](https://portal.azure.com)移至。
+1. 在瀏覽器的新索引標籤上，移至 [https://portal.azure.com](https://portal.azure.com) 。
 2. 按一下 [ **Azure Active Directory > Security > 條件式存取**]。
 3. 在 [**條件式存取-原則**] 窗格中，按一下 [**新增原則**]。
 4. 在 [**新增**] 窗格中，為 [**名稱**] 中的**使用者帳戶輸入 MFA** 。

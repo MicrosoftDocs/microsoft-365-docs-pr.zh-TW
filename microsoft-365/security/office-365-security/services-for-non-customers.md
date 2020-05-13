@@ -1,11 +1,11 @@
 ---
-title: 將郵件傳送至 Office 365 的非客戶服務
+title: 將郵件傳送至 Microsoft 365 的非客戶服務
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 5/2/2016
+ms.date: ''
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -16,16 +16,16 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 為了協助維護使用者對電子郵件使用的信任，Microsoft 將各種原則和技術放在一起，以協助保護我們的使用者。
-ms.openlocfilehash: 2d8de601fd24f30c342768b8b27e44248f05b5fe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3a3dc26d757de84f5abd46c85f3596db67d676ae
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638389"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208231"
 ---
-# <a name="services-for-non-customers-sending-mail-to-office-365"></a>將郵件傳送至 Office 365 的非客戶服務
+# <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>將郵件傳送至 Microsoft 365 的非客戶服務
 
-電子郵件濫用、垃圾郵件和欺詐電子郵件（網路釣魚）都會繼續負擔整個電子郵件生態系統。 為了協助維護使用者對電子郵件使用的信任，Microsoft 將各種原則和技術放在一起，以協助保護我們的使用者。 不過，Microsoft 知道合法的電子郵件不會受到不良影響。 因此，我們已建立一套服務，以協助寄件者透過主動管理其傳送信譽，以提升電子郵件傳送至 Microsoft 365 使用者的能力。
+電子郵件濫用、垃圾郵件和欺詐電子郵件（網路釣魚）都會繼續負擔整個電子郵件生態系統。 為了協助維護使用者對電子郵件使用的信任，Microsoft 將各種原則和技術放在適當位置，以協助保護我們的使用者。 不過，Microsoft 知道合法的電子郵件不會受到不良影響。 因此，我們已建立一套服務，以協助寄件者透過主動管理其傳送信譽，以提升電子郵件傳送至 Microsoft 365 使用者的能力。
 
 此概述提供我們為您的組織提供的效益資訊，即使您不是客戶也是如此。
 
@@ -33,14 +33,14 @@ ms.locfileid: "43638389"
 
 |**Service** (服務)|**效益**|
 |:-----|:-----|
-|這個線上說明內容| 提供：  <br/>  將通訊傳送至 EOP 使用者的任何相關問題的開始點  <br/>  包含與我們的原則及需求有關的簡易線上指南  <br/>  Microsoft 所採用的垃圾郵件篩選器和驗證技術概述|
+|這個線上說明內容|提供： <br/> 與提供與 EOP 使用者通訊相關之任何問題的起點。 <br/><br/> 包含與我們的原則及需求有關的簡易線上指南。 <br/><br/> Microsoft 所採用的垃圾郵件篩選器和驗證技術的概述。|
 |[Microsoft 支援](#microsoft-support)|提供傳送問題的自我協助和上報支援。|
 |[Anti-Spam IP 取消列出入口網站](#anti-spam-ip-delist-portal)|用於提交 IP 取消列出要求的工具。 在提交此要求之前，寄件者的責任是確保任何來自于問題的 IP 的後續郵件都不會遭到濫用或惡意。|
 |[來自 Exchange Online 的垃圾郵件的濫用和垃圾郵件報告](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|讓垃圾郵件和其他有害的郵件無法從 Exchange Online 傳送，並打亂網際網路和您的郵件系統。|
 
 ## <a name="microsoft-support"></a>Microsoft 支援
 
-Microsoft 提供數種支援選項，讓使用者無法傳送郵件給 Microsoft 365 收件匣。 我們建議您：
+Microsoft 提供數種支援選項，讓使用者在傳送郵件給 Microsoft 365 收件者時遇到問題。 我們建議您：
 
 - 遵循您收到的任何未傳遞回報中的指示進行。
 

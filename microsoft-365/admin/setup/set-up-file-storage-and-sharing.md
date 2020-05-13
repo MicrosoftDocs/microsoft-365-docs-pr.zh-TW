@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 瞭解如何使用 OneDrive 和小組網站進行檔案儲存與共享。
-ms.openlocfilehash: 98fc168e42fea50ae21914d5f44e403ae459c1d9
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 7eb9ece0408fc495938c319390267790b01a2b89
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165214"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208183"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>設定檔案儲存與共用
 
@@ -144,7 +144,7 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
 
     ![在此畫面變更您的本機資料夾](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
-6. 小組網站中的檔案會以組織名稱顯示在 [檔案瀏覽器] 的左窗格中。 OneDrive 中的檔案會出現在「OneDrive- \<組織\>名稱」下方。
+6. 小組網站中的檔案會以組織名稱顯示在 [檔案瀏覽器] 的左窗格中。 OneDrive 中的檔案會出現在「OneDrive- \< 組織名稱」下方。 \>
 
     ![在您的本機資料夾中查看已同步處理的專案](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
@@ -185,7 +185,7 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
   
 1. 登入系統<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>。
 
-2. 移至 [**設定** \> ] <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">[設定] 頁面。</a>
+2. 移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**組織設定**</a>] 頁面。
 
 3. 在 [**服務**] 索引標籤上，選取 **[網上] 的 [Office**]。
 
