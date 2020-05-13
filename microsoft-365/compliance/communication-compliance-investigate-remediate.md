@@ -1,5 +1,5 @@
 ---
-title: 調查和修正通訊相容性警示
+title: 調查和修復通訊合規性警示
 description: 調查和修正 Microsoft 365 中的通訊相容性警示。
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: fb185239ee670c9fa4bd4add5bd36140db2f7706
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3cef513d6b89634e16e0a0b4516f403cf1a794af
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632854"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208395"
 ---
-# <a name="investigate-and-remediate-communication-compliance-alerts"></a>調查和修正通訊相容性警示
+# <a name="investigate-and-remediate-communication-compliance-alerts"></a>調查和修復通訊合規性警示
 
 在您設定通訊相容性原則之後，您將開始在 Microsoft 365 合規性中心收到警示，以取得符合原則條件的郵件問題。 遵循這裡的工作流程指示，以調查和修正警示問題。
 
@@ -33,14 +33,14 @@ ms.locfileid: "42632854"
 
 調查您的原則所偵測到的問題，第一步是在 Microsoft 365 規範中心檢查產生的警示。 「規範中心」中有許多區域，可協助您快速調查提醒，具體取決於您傾向于如何查看警示群組：
 
-- **通訊相容性首頁**：當您[https://compliance.microsoft.com](https://compliance.microsoft.com)登入使用 Microsoft 365 組織中的系統管理員帳號憑證時，請選取 [**通訊相容性** > **一覽表**]，以顯示通訊合規性首頁。 您會看到下列專案：
+- **通訊相容性首頁**：當您登入 [https://compliance.microsoft.com](https://compliance.microsoft.com) 使用 Microsoft 365 組織中的系統管理員帳號憑證時，請選取 [**通訊相容性**  >  **一覽表**]，以顯示通訊合規性首頁。 您會看到下列專案：
     - 從高到低嚴重性列出需要檢查的警示。 選取警示以啟動警示詳細資料頁面，並啟動修復動作。
     - 依原則名稱列出的最近原則符合。
     - 依原則名稱列出的已解析專案。
     - 依原則名稱列出的上報。
     - 符合最高原則的使用者，列于比對最少數目的專案。
-- [**警示]** 索引標籤：流覽至 [**通訊相容性** > **警示**]，以顯示依符合通訊相容性原則分組的警示 此視圖可讓您快速查看哪些通訊法規遵從性原則產生了按嚴重性排序的最大警示。  若要啟動修正動作，請展開原則，以選取特定警示及啟動警示詳細資料頁面。
-- [**原則]** 索引標籤：流覽至**通訊相容性** > **原則**，以顯示針對您的 Microsoft 365 組織設定的通訊相容性原則。 列出的每個原則都包含需要複查的警示計數。 選取原則會顯示符合原則的所有擱置中警示，選取啟動 [原則詳細資料] 頁面的特定警示，然後啟動修正動作。
+- [**警示]** 索引標籤：流覽至 [**通訊相容性**  >  **警示**]，以顯示最近30天的警示依原則相符分組。 此視圖可讓您快速查看哪些通訊法規遵從性原則產生了按嚴重性排序的最大警示。  若要啟動修正動作，請展開原則，以選取特定警示及啟動警示詳細資料頁面。
+- [**原則]** 索引標籤：流覽至**通訊相容性**  >  **原則**，以顯示針對您的 Microsoft 365 組織設定的通訊相容性原則。 列出的每個原則都包含需要複查的警示計數。 選取原則會顯示符合原則的所有擱置中警示，選取啟動 [原則詳細資料] 頁面的特定警示，然後啟動修正動作。
 
 ### <a name="using-filters"></a>使用篩選
 

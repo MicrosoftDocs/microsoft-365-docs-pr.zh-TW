@@ -14,19 +14,19 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何安裝和使用 Microsoft 垃圾郵件回報增益集來向 Microsoft 報告垃圾郵件、非垃圾郵件和網路釣魚郵件。
-ms.openlocfilehash: be087a15071114b2d1ec564cbb118dcd85e32429
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5c0b802bea89a0f0f62952261bf0d2864842024f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638497"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208824"
 ---
-# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook-in-office-365"></a>在 Office 365 中安裝及使用 Microsoft Outlook 的垃圾郵件回報增益集
+# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>安裝和使用 Microsoft Outlook 的垃圾郵件回報增益集
 
 > [!NOTE]
-> 如果您目前並未使用垃圾郵件回報增益集，則建議您改為[報告訊息增益集](enable-the-report-message-add-in.md)。
+> 如果您目前並未使用垃圾郵件回報增益集，則建議您改為[報告訊息增益集](enable-the-report-message-add-in.md)。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
-Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報（已標記為垃圾郵件的良好電子郵件）、誤報（允許不良電子郵件）和網路釣魚郵件至 Exchange Online Protection （EOP）。 如果您的組織未使用 EOP，則您的垃圾郵件報告提交不會影響您的垃圾郵件篩選。
+Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報（已標記為垃圾郵件的良好電子郵件）、誤報（允許不良電子郵件）和網路釣魚郵件。 如果您的組織未使用 Exchange Online Protection （例如，內部部署 Exchange 或非 Exchange Online 的電子郵件服務），您的垃圾郵件報告提交將不會影響您的垃圾郵件篩選。
 
 本主題說明如何安裝和使用垃圾郵件回報增益集。
 
@@ -39,7 +39,7 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報（�
   - Outlook 2013 或更新版本
   - Outlook 隨附于適用于企業的 Microsoft 365 應用程式
 
-- 如需向 Microsoft 報告訊息的詳細資訊，請參閱[在 Office 365 中報告訊息和檔案至 microsoft](report-junk-email-messages-to-microsoft.md)。
+- 如需將郵件報告給 Microsoft 的詳細資訊，請參閱[將郵件和檔案報告給 microsoft](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a>使用垃圾郵件回報增益集來報告垃圾郵件和網路釣魚郵件
 
@@ -93,7 +93,7 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報（�
 
 - 您必須具備安裝增益集之電腦的系統管理員許可權。
 
-- 移至<https://www.microsoft.com/download/details.aspx?id=18275>並下載適用于您的 Office 版本的 .msi 檔案，以供您尋找的位置：
+- 移至 <https://www.microsoft.com/download/details.aspx?id=18275> 並下載適用于您的 Office 版本的 .msi 檔案，以供您尋找的位置：
 
   - **32**位：`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
@@ -197,7 +197,7 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報（�
 
 在您關閉 Outlook 後，請使用下列任何程式卸載垃圾郵件回報增益集：
 
-- **控制台**：按下 Windows 鍵 + R。在開啟的 [**執行**] 對話方塊中`control appwiz.cpl` ，輸入，然後按一下 **[確定]**。
+- **控制台**：按下 Windows 鍵 + R。在開啟的 [**執行**] 對話方塊中，輸入， `control appwiz.cpl` 然後按一下 **[確定]**。
 
   在清單中尋找並選取**Microsoft 垃圾郵件回報增益集**，然後按一下 [**卸載**]。
 
@@ -209,7 +209,7 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報（�
 
   在出現的對話方塊中，選取 [**移除 Outlook 的 Microsoft 垃圾郵件回報增益集**]，然後按 **[下一步]**。
 
-- **無訊息模式**：尋找或下載適當的 .msi 檔案。 在 [命令提示字元] 視窗\<中\> ，將 PathToFile 取代為 .msi 檔案的位置，然後執行下列其中一個命令：
+- **無訊息模式**：尋找或下載適當的 .msi 檔案。 在 [命令提示字元] 視窗中，將 \< PathToFile 取代 \> 為 .msi 檔案的位置，然後執行下列其中一個命令：
 
   - **32**位：
 
@@ -249,7 +249,7 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報（�
 
 #### <a name="problem-an-error-message-continually-appears-that-asks-users-to-contact-their-system-administrator"></a>問題：不斷出現錯誤訊息，詢問使用者是否要聯繫其系統管理員
 
-1. 驗證或將登錄`LoggingLevel`機碼設定為 "Verbose" 值：
+1. 驗證或將登錄機 `LoggingLevel` 碼設定為 "Verbose" 值：
 
    - **32 位 Outlook on 32 Bit Windows**：
 
@@ -288,7 +288,7 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報（�
 
 #### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>問題：選取的使用者在報告郵件時，不會收到確認提示，而且現在想要回復提示
 
-1. `ConfirmReportJunk`建立登錄機碼 wih 值為 "True"：
+1. 建立登錄機 `ConfirmReportJunk` 碼 wih 值為 "True"：
 
    ```text
    Windows Registry Editor Version 5.00

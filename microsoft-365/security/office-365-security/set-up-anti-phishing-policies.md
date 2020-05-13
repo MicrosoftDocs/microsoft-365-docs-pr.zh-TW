@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您將瞭解如何在 Microsoft 365 中設定反網路釣魚防護，以保護您的組織免受惡意網路釣魚攻擊。
-ms.openlocfilehash: bbde781114cadb6535bdb09c133d834ce23793a3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 系統管理員可以瞭解 Exchange Online Protection （EOP）和 Office 365 Advanced 威脅防護（Office 365 ATP）中可用的反網路釣魚原則。
+ms.openlocfilehash: 0b1342d61ab4ab1fedde63271082c577211f6595
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035329"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209808"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
-使用 Exchange Online 信箱的獨立 Exchange Online Protection （EOP）組織，以及 Office 365 高級威脅防護（ATP）組織，可在 Microsoft 365 組織中使用設定反網路釣魚保護設定的原則。
+Microsoft 365 組織中有 Exchange Online 信箱、獨立 Exchange Online Protection （EOP）組織（沒有 Exchange Online 信箱）和 Office 365 高級威脅防護（Office 365 ATP）組織的 Microsoft 組織皆可使用設定反網路釣魚防護設定的原則。
 
 ATP 反網路釣魚原則僅可用於具有 Office 365 ATP 的組織。 例如：
 
@@ -185,7 +185,7 @@ ATP 反網路釣魚原則僅可用於具有 Office 365 ATP 的組織。 例如�
 
 ### <a name="advanced-phishing-thresholds-in-atp-anti-phishing-policies"></a>ATP 反網路釣魚原則中的高級網路釣魚臨界值
 
-下列高級網路釣魚臨界值僅可用於 ATP 反網路釣魚原則中，以指定如何處理偵測到的網路釣魚郵件：
+下列高級網路釣魚臨界值僅可用於 ATP 反網路釣魚原則，以控制將機器學習模型套用至郵件以判定網路釣魚是否判定的敏感程度：
 
 - **1-Standard**：此為預設值。 針對郵件採取的動作嚴重性，取決於郵件為網路釣魚（低、中、高或非常高的信賴程度）的信賴程度。 例如，以非常高的信賴程度識別為網路釣魚的郵件會套用最嚴重的動作，而識別為低信任程度之網路釣魚的郵件，則會套用較低的嚴重動作。
 

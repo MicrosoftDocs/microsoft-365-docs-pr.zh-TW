@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: 設定連接器，將 Facebook 資料匯入 Microsoft 365，讓您可以使用合規性功能，例如法律封存、內容搜尋和保留原則。
-ms.openlocfilehash: a1a45b3558e8c5fb77fb1d04a1a38402000bbd1b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e35e4cb8e0f16d3cc95b3f21ce6648bbe087733d
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035155"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210525"
 ---
-# <a name="set-up-a-connector-to-archive-facebook-data"></a>設定連接器來封存 Facebook 資料
+# <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>設定連接器以封存 Facebook 資料（預覽）
 
 使用 Microsoft 365 規範中心內的連接器，將 Facebook 商務版頁面上的資料匯入並封存至 Microsoft 365。 在您設定及設定連接器之後，它會連接到 Facebook 商務頁面（根據排程），將 Facebook 專案的內容轉換為電子郵件訊息格式，然後將這些專案匯入至 Microsoft 365 中的信箱。
 
@@ -74,7 +74,7 @@ ms.locfileid: "44035155"
 
 - TenantId：在步驟1中建立 Azure Active Directory 中的 Facebook 連接器應用程式之後，所複製之 Microsoft 365 組織的租使用者識別碼。
 
-完成此步驟後，請務必複製 Azure 應用程式服務 URL （例如， https://fbconnector.azurewebsites.net)。 您必須使用此 URL，才能完成步驟3、步驟4及步驟5）。
+完成此步驟後，請務必複製 Azure 應用程式服務 URL （例如， https://fbconnector.azurewebsites.net) 。 您必須使用此 URL，才能完成步驟3、步驟4及步驟5）。
 
 ## <a name="step-3-register-the-web-app-on-facebook"></a>步驟3：在 Facebook 上註冊 web 應用程式
 

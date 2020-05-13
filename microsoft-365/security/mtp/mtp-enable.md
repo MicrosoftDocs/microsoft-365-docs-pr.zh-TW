@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 394fceffb96350b7702c5eef4a8138b3eb53f714
-ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
+ms.openlocfilehash: 9a57929e42f08db8abda170c889441d3a50ade72
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44016071"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209244"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>開啟 Microsoft 威脅防護
 
@@ -45,22 +45,27 @@ Microsoft 365 E5，E5 Security，A5，或 A5 安全性授權或有效的授權�
 
 ## <a name="start-using-the-service"></a>開始使用服務
 
+>[!IMPORTANT]
+>從2020年5月12日開始，Microsoft 將逐步推出有關[授權需求](prerequisites.md#licensing-requirements)的新的優化體驗，並開啟 Microsoft 威脅防護。 在這段期間內，有些客戶會開始查看其門戶體驗的變更。 有關全新經驗的資訊已在本文中標示**新經驗**。
+
 Microsoft 威脅防護會匯總各種整合服務中的資料。 它會集中處理及儲存資料，以識別新的洞察力，並可讓集中式回應工作流程成為可能。 這樣做不會影響現有的部署、設定或與整合服務相關聯的資料。
 
 在您開啟服務之前，當您從功能窗格中選取 [**事件**]、[**動作中心**] 或 [**搜尋**] 時，microsoft 365 安全中心（[security.microsoft.com](https://security.microsoft.com)）會顯示 microsoft 威脅防護歡迎頁面。 如果您不具備使用 Microsoft 威脅防護的資格，就不會顯示這些流覽選項。
 
-![顯示 microsoft](../../media/mtp-welcome.png)
-*365 security center 中*microsoft 威脅防護歡迎頁面上的 microsoft 威脅防護功能，顯示 microsoft 威脅防護歡迎頁面的圖像
+![顯示 microsoft ](../../media/mtp-welcome.png)
+ *365 security center 中*microsoft 威脅防護歡迎頁面上的 microsoft 威脅防護功能，顯示 microsoft 威脅防護歡迎頁面的圖像
 
 若要開啟 Microsoft 威脅防護，只需從歡迎頁面完成此程式。 您也可以在功能窗格中存取**設定**（[security.microsoft.com/settings](https://security.microsoft.com/settings)），並選取 [ **microsoft 威脅防護**]，以開啟 microsoft 威脅防護。
 
 >[!NOTE]
->如果您在功能窗格中看不到**設定**或無法存取頁面，請檢查您的許可權和授權。       
+>如果您在功能窗格中看不到**設定**或無法存取頁面，請檢查您的許可權和授權。
 
 ### <a name="select-data-center-location"></a>選取資料中心位置
 如果已為您的組織佈建 Microsoft Defender ATP，則資料將會儲存在為[您的 Microsoft Defender ATP 資料](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)選取的相同資料中心位置中。 如果您沒有 Microsoft Defender ATP，系統會要求您選擇專用於 Microsoft 威脅防護的新資料中心位置。 
  
 您必須先提供同意，才可在服務和匯總間共用資料。
+
+**新經驗：** 從2020年5月12日起，客戶會逐漸收到這種經驗的變更。 針對具有全新經驗的使用者，服務會根據您現有的 Microsoft 365 安全性服務，自動為匯總資料選取最佳的資料中心位置。 選取的資料中心位置會顯示在螢幕上。
 
 ### <a name="confirm-that-the-service-is-on"></a>確認服務已開啟
 服務一旦佈建，它會新增：
@@ -69,8 +74,8 @@ Microsoft 威脅防護會匯總各種整合服務中的資料。 它會集中處
 - 用於管理[自動化調查和回應](mtp-autoir.md)的重要訊息中心
 - [高級搜尋](advanced-hunting-overview.md)功能
 
-![Microsoft 365 security center 導覽窗格與 microsoft 威脅防護的影像功能](../../media/mtp-on.png)
-*microsoft 365 security center with 事件管理和其他 Microsoft 威脅防護功能*
+![Microsoft 365 security center 導覽窗格與 Microsoft 威脅防護的影像功能 ](../../media/mtp-on.png)
+ *microsoft 365 security center with 事件管理和其他 Microsoft 威脅防護功能*
 
 ### <a name="getting-azure-atp-data"></a>取得 Azure ATP 資料
 若要使用 Microsoft 威脅防護共用 Azure ATP 資料，請確認已開啟 Microsoft Cloud App Security 和 Azure ATP 整合。 [深入了解此整合](https://docs.microsoft.com/cloud-app-security/aatp-integration)

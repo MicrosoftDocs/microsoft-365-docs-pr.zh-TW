@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 如何驗證寄件者位址，以防止網路釣魚
+title: EOP 如何驗證寄件者位址以避免網路釣魚
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,18 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: 為了協助防止網路釣魚，Microsoft 365 和 Outlook.com 現在要求來自：位址的 RFC 相容性。
+description: 系統管理員可以深入瞭解 Exchange Online Protection （EOP）和 Outlook.com 所接受或拒絕的電子郵件地址類型，以協助防止網路釣魚。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef361c7009cc8903ab2721d299412b7d44a4f87c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f16bb9b0af1ca5481437ef253c6d36dd519ff9e2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034079"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209448"
 ---
-# <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Microsoft 365 如何驗證寄件者位址，以防止網路釣魚
+# <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>EOP 如何驗證寄件者位址以避免網路釣魚
 
-Microsoft 365 電子郵件帳戶會收到日益大量的網路釣魚攻擊。 除了使用[冒牌（偽造）寄件者電子郵件地址](anti-spoofing-protection.md)，攻擊者通常會使用來自于網際網路標準的「寄件者」位址值。 為了協助防止此類型的網路釣魚，Microsoft 365 和 Outlook.com 現在要求輸入郵件包含與 RFC 相容的「來源位址」（如本主題所述）。 此強制已于2017年11月啟用。
+網路釣魚攻擊是對任何電子郵件組織造成的持續威脅。 除了使用[冒牌（偽造）寄件者電子郵件地址](anti-spoofing-protection.md)，攻擊者通常會使用來自于網際網路標準的「寄件者」位址值。 為了協助防止此類型的網路釣魚，Exchange Online Protection （EOP）和 Outlook.com 現在要求輸入郵件包含 RFC 相容的「來源位址」（如本主題所述）。 此強制已于2017年11月啟用。
 
 **附註**：
 
@@ -41,7 +41,7 @@ Microsoft 365 電子郵件帳戶會收到日益大量的網路釣魚攻擊。 �
 
 - `5321.MailFrom`位址（也稱為「**郵件發**件人位址」、「P1 寄件者」或「信封寄件者」）是郵件 SMTP 傳輸中所用的電子郵件地址。 這個電子郵件地址通常會記錄在郵件頭的 [傳回**路徑**標頭] 欄位中（不過，寄件者可以指定不同的**回郵路徑**電子郵件地址）。
 
-- `5322.From` （也稱為 from Address 或 P2 寄件者）是 [**發**件人] 標頭欄位中的電子郵件地址，也就是顯示在電子郵件客戶程式中的寄件者電子郵件地址。 「寄件者位址」是本主題中需求的重點。
+- `5322.From`（也稱為 from address 或 P2 寄件者）是 [**發**件人] 標頭欄位中的電子郵件地址，也就是顯示在電子郵件客戶程式中的寄件者電子郵件地址。 「寄件者位址」是本主題中需求的重點。
 
 「寄件者」位址會在多個 Rfc 中詳細定義（例如 RFC 5322 區段3.2.3、3.4 及3.4.1，以及[rfc 3696](https://tools.ietf.org/html/rfc3696)）。 定址的情況有許多變化，且被視為有效或無效。 為了簡化，我們建議您遵循下列格式及定義：
 
@@ -53,7 +53,7 @@ Microsoft 365 電子郵件帳戶會收到日益大量的網路釣魚攻擊。 �
   - 如果 [寄件者] 位址包含顯示名稱，則 EmailAddress 值必須括在角括弧（< >）中（如圖所示）。
   - Microsoft 強烈建議您在顯示名稱和電子郵件地址之間插入空格。
 
-- **EmailAddress**：電子郵件地址使用下列格式`local-part@domain`：
+- **EmailAddress**：電子郵件地址使用下列格式 `local-part@domain` ：
 
   - **本機部分**：識別與位址相關聯之信箱的字串。 此值在網域內是唯一的。 通常會使用信箱擁有人的使用者名稱或 GUID。
   - **domain**：主控電子郵件地址的本機部分所識別之信箱的電子郵件伺服器的完整功能變數名稱（FQDN）。
@@ -104,7 +104,7 @@ Microsoft 365 電子郵件帳戶會收到日益大量的網路釣魚攻擊。 �
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>抑制您的自訂網域的自動回復
 
-您無法使用此值`From: <>`來抑制自動回復。 相反地，您必須為您的自訂網域設定空的 MX 記錄。 自動回復（和所有回復）都會以自然抑制，因為回應伺服器無法傳送郵件的發行位址。
+您無法使用此值 `From: <>` 來抑制自動回復。 相反地，您必須為您的自訂網域設定空的 MX 記錄。 自動回復（和所有回復）都會以自然抑制，因為回應伺服器無法傳送郵件的發行位址。
 
 - 選擇無法接收電子郵件的電子郵件網域。 例如，如果您的主要網域是 contoso.com，您可以選擇 [noreply.contoso.com]。
 

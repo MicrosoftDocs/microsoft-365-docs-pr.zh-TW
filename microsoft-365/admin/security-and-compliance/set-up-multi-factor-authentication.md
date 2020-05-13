@@ -1,5 +1,5 @@
 ---
-title: 設定使用者的多重要素驗證
+title: 為使用者設定多重要素驗證
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 瞭解如何使用安全性預設值為使用者設定多重要素驗證。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 1000689794b8b5471efa898e731fd75a0e5a8cce
-ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
+ms.openlocfilehash: 4c0df9198db8154c1aa748a68eff29dd9bf3bca1
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43665629"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213007"
 ---
 # <a name="set-up-multi-factor-authentication"></a>設定多重要素驗證
   
@@ -75,7 +75,9 @@ ms.locfileid: "43665629"
 
 ## <a name="enable-modern-authentication-for-your-organization"></a>為您的組織啟用新式驗證
 
-所有 Office 2016 用戶端應用程式都透過使用 Active Directory Authentication Library (ADAL) 來支援 MFA。 這表示 Office 2016 用戶端不需要 App 密碼。 不過，您必須確定已啟用 ADAL 或新式驗證的 Microsoft 365 訂閱。
+所有 Office 2016 用戶端應用程式都透過使用 Active Directory Authentication Library (ADAL) 來支援 MFA。 這表示 Office 2016 用戶端不需要 App 密碼。 如需詳細資訊，請參閱[本文](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings#app-passwords)。
+
+不過，您必須確定已啟用 ADAL 或新式驗證的 Microsoft 365 訂閱。
 
 1. 若要啟用新式驗證，請從[系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=834822)選取 [設定]**** \> [設定]****，然後在 [服務]**** 索引標籤中，從清單選擇 [新式驗證]****。
 

@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理員可以設定資料連線器，將員工資料從組織的人力資源（HR）系統匯入 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的 HR 資料，協助您偵測可能會對組織造成內部威脅之特定使用者的活動。
-ms.openlocfilehash: 118e2a8ad4ff134a4529e3ffc95fa22cdb7cbdaf
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 69b290dfb6d5a07ad0fd3b0b356a4b9f6d467613
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173483"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210569"
 ---
-# <a name="set-up-a-connector-to-import-hr-data"></a>設定連接器以匯入人力資源資料
+# <a name="set-up-a-connector-to-import-hr-data-preview"></a>設定連接器以匯入 HR 資料（預覽）
 
 您可以設定 Microsoft 365 規範中心內的資料連線器，以匯入人力資源（HR）資料，例如，員工提交其辭職的日期和員工最後一天的日期。 這種 HR 資料可供 Microsoft 資訊保護解決方案使用，例如新的[有問必答風險管理解決方案](insider-risk-management.md)，以協助保護您的組織免受惡意活動或組織內的資料竊取。 設定 HR 連接器是指在 Azure Active Directory 中建立應用程式，以供連接器進行驗證，建立包含 HR 資料的 CSV 對應檔案，在規範中心建立資料連線器，然後在 CSV 檔案中以 ingests 的 HR 資料來執行腳本（以排程為基礎）。 然後，使用 Microsoft 相容性解決方案（如「內幕風險管理」）的資料連線器，以存取已匯入至 Microsoft 365 組織的 HR 資料。
 
@@ -64,8 +64,8 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 |**資料行名稱**|**描述**|
 |:-----|:-----|
 | **EmailAddress** <br/> |指定離職員工的電子郵件地址。|
-| **TerminationDate** <br/> |會指定人員正式終止組織中的雇用日期。 例如，這可能是員工在離開組織時所提供通知的日期。 此日期可能不同于人員的最後一天的工作日期。 您必須使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`，也就是[ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
-|**LastWorkingDate**|為終止的員工指定最後一天的工作。 您必須使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`，也就是[ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
+| **TerminationDate** <br/> |會指定人員正式終止組織中的雇用日期。 例如，這可能是員工在離開組織時所提供通知的日期。 此日期可能不同于人員的最後一天的工作日期。 您必須使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` ，也就是[ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
+|**LastWorkingDate**|為終止的員工指定最後一天的工作。 您必須使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` ，也就是[ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
 |||
 
 在您建立含有必要 HR 資料的 CSV 檔案之後，請將它儲存在您在步驟4中執行的腳本所在的相同系統上。 您也應該執行更新策略，以確保 CSV 檔案永遠包含最新的資訊，因此，不論您執行腳本，最新的員工終止資料都會上傳至 Microsoft 雲端。
@@ -74,7 +74,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
 下一步是在 Microsoft 365 規範中心內建立 HR 連接器。 在步驟4中執行腳本後，您建立的 HR 連接器會將 HR 資料從 CSV 檔案中攝取至您的 Microsoft 365 組織。 在這個步驟中，請務必複製當您建立連接器時所產生的 JobId。 當您執行腳本時，您會使用 JobId。
 
-1. 移至[https://compliance.microsoft.com](https://compliance.microsoft.com) ，然後按一下左側導覽中的 [**資料連線器**]。
+1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然後按一下左側導覽中的 [**資料連線器**]。
 
 2. 在 [**資料連線器（預覽）** ] 下的 [ **HR**] 頁面上，按一下 [ **View**]。
 
@@ -118,7 +118,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
 4. 如有需要，修改組織的範例腳本。
 
-5. 使用檔案名尾碼， `.ps1`將文字檔儲存為 Windows PowerShell script file;例如， `HRConnector.ps1`。
+5. 使用檔案名尾碼，將文字檔儲存為 Windows PowerShell script file `.ps1` ; 例如， `HRConnector.ps1` 。
 
 6. 在您的本機電腦上開啟命令提示字元，然後移至您用來儲存腳本的目錄。
 
@@ -151,7 +151,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
 在您建立 HR 連接器並執行腳本以上傳 HR 資料之後，您可以在 Microsoft 365 規範中心中查看連接器和上傳狀態。 如果您安排定期定期執行腳本，您也可以在上次腳本執行後，查看目前的狀態。
 
-1. 移至[https://compliance.microsoft.com](https://compliance.microsoft.com)並按一下左側導覽中的 [**資料連線器**]。
+1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) 並按一下左側導覽中的 [**資料連線器**]。
 
 2. 按一下 [**連接器**] 索引標籤，然後選取 [HR connector] 以顯示飛出頁面，該頁面包含連接器的屬性和資訊。
 
@@ -199,7 +199,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
    a. 在 [**動作**] 下拉式清單中，確定已選取 [**啟動程式**]。
 
-   b. 在 [**程式/腳本**] 方塊中，按一下 **[流覽]**，然後移至下列位置，並選取該位置，以便在方塊`C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`中顯示路徑：。
+   b. 在 [**程式/腳本**] 方塊中，按一下 **[流覽]**，然後移至下列位置，並選取該位置，以便在方塊中顯示路徑： `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` 。
 
    c. 在 [**新增引數（選用）** ] 方塊中，貼上您在步驟4中執行的相同指令碼命令。 例如，`.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 

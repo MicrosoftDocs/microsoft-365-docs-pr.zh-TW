@@ -13,13 +13,13 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 系統管理員可以瞭解如何建立、修改及刪除使用 Office 365 高級威脅防護（ATP）的組織中可用的高級防網路釣魚原則。
-ms.openlocfilehash: e1a7d3b9d401d8bb5bec08d7b5d58546bbd382aa
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+description: 系統管理員可以瞭解如何建立、修改及刪除使用 Office 365 高級威脅防護的組織中可用的高級防網路釣魚原則（Office 365 ATP）。
+ms.openlocfilehash: efecd830db7ed10210605e31aa0ded2599de1b72
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949256"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208884"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>設定 ATP 防網路釣魚原則
 
@@ -29,7 +29,7 @@ ATP 反網路釣魚原則是[Office 365 Advanced 威脅防護](office-365-atp.md
 
 您可以在 Security & 合規性中心或 Exchange Online PowerShell 中設定 ATP 反網路釣魚原則。
 
-如需設定 Exchange Online Protection 組織中可用之防網路釣魚原則的限制（也就是沒有 ATP 的 Office 365 組織）的詳細資訊，請參閱[Configure THE EOP 中的反網路釣魚原則](configure-anti-phishing-policies-eop.md)。
+如需在 Exchange Online Protection 組織（也就是未使用 Office 365 ATP 的 Microsoft 365 組織）中，設定更少限制之防網路釣魚原則的相關資訊，請參閱[Configure THE EOP 中的反網路釣魚原則](configure-anti-phishing-policies-eop.md)。
 
 ## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>安全性 & 合規性中心與 Exchange Online PowerShell 中的 ATP 反網路釣魚原則
 
@@ -47,7 +47,7 @@ ATP 反網路釣魚原則的基本元素如下：
 
 - 當您從安全性 & 規範中心移除 ATP 反網路釣魚原則時，會移除反網路釣魚規則和相關聯的反網路釣魚原則。
 
-在 Exchange Online PowerShell 中，反網路釣魚原則和反網路釣魚規則之間的差異很明顯。 您可以使用** \*-AntiPhishPolicy** Cmdlet 來管理反網路釣魚原則，並使用** \*-AntiPhishRule** Cmdlet 來管理反網路釣魚規則。
+在 Exchange Online PowerShell 中，反網路釣魚原則和反網路釣魚規則之間的差異很明顯。 您可以使用** \* -AntiPhishPolicy** Cmdlet 來管理反網路釣魚原則，並使用** \* -AntiPhishRule** Cmdlet 來管理反網路釣魚規則。
 
 - 在 PowerShell 中，您先建立反網路釣魚原則，然後建立反網路釣魚規則，識別套用規則的原則。
 
@@ -63,13 +63,13 @@ ATP 反網路釣魚原則的基本元素如下：
 
 - 名為 Office365 AntiPhish 的原則預設具有您無法修改的自訂**優先順序值（** 原則永遠會最後套用）。 您建立的任何自訂原則的優先順序都會高於名為 Office365 AntiPhish Default 的原則。
 
-- 名為 Office365 AntiPhish 的原則預設為預設原則（ **IsDefault**屬性具有值`True`），而且您無法刪除預設原則。
+- 名為 Office365 AntiPhish 的原則預設為預設原則（ **IsDefault**屬性具有值 `True` ），而且您無法刪除預設原則。
 
 若要提高反網路釣魚防護的效能，您可以使用套用至特定使用者或使用者群組的更嚴格設定來建立自訂 ATP 反網路釣魚原則。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至**ATP 反網路釣魚**頁面，請<https://protection.office.com/antiphishing>使用。
+- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至**ATP 反網路釣魚**頁面，請使用 <https://protection.office.com/antiphishing> 。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
@@ -79,7 +79,7 @@ ATP 反網路釣魚原則的基本元素如下：
 
 - 最多允許30分鐘，以套用新的或更新的原則。
 
-- 如需在篩選管線中套用反網路釣魚原則的相關資訊，請參閱[Office 365 中的電子郵件保護順序和優先順序](how-policies-and-protections-are-combined.md)。
+- 如需在篩選管線中套用反網路釣魚原則的相關資訊，請參閱[電子郵件保護的順序及優先順序](how-policies-and-protections-are-combined.md)。
 
 ## <a name="use-the-security--compliance-center-to-create-atp-anti-phishing-policies"></a>使用安全性 & 合規性中心建立 ATP 反網路釣魚原則
 
@@ -107,15 +107,15 @@ ATP 反網路釣魚原則的基本元素如下：
 
    - **收件者是**：指定您組織中的一或多個信箱、郵件使用者或郵件連絡人。
    - **收件者以成員的身分存在於**：指定您組織中的一或多個群組。
-   - **收件者網域為**：指定 Office 365 中一個或多個接受網域 (已設定) 中的收件者。
+   - **收件者網域為**：指定組織中一或多個已設定公認的網域中的收件者。
 
    選取條件後，會出現對應的下拉式清單，其中有**其中**一個方塊。
 
    - 在方塊中按一下，並在值清單中向內移動，以選取。
    - 按一下方塊中的 [開始輸入]，以篩選清單並選取值。
    - 若要新增其他值，請按一下方塊中的空白區域。
-   - 若要移除個別專案， **Remove** ![請按一下值](../../media/scc-remove-icon.png)上的 [移除移除圖示]。
-   - 若要移除整個條件，請**Remove** ![按一下條件上](../../media/scc-remove-icon.png)的 [移除移除圖示]。
+   - 若要移除個別專案， **Remove**請按一下 ![ ](../../media/scc-remove-icon.png) 值上的 [移除移除圖示]。
+   - 若要移除整個條件，請**Remove**按一下 ![ ](../../media/scc-remove-icon.png) 條件上的 [移除移除圖示]。
 
    若要新增其他條件，請按一下 [**新增條件**]，然後選取 [套用**于 if**中的剩餘值]。
 
@@ -139,11 +139,11 @@ ATP 反網路釣魚原則的基本元素如下：
 
 2. 選取您要修改的自訂 ATP 反網路釣魚原則。 如果已選取它，請取消選取它，然後再次選取。
 
-3. 隨即會顯示 [**編輯您的原則\<名稱\> ** ] 快顯視窗。 按一下任何區段中的 [**編輯**]，即可存取該區段中的設定。
+3. 隨即會顯示 [**編輯您的原則 \< \> 名稱**] 快顯視窗。 按一下任何區段中的 [**編輯**]，即可存取該區段中的設定。
 
    - 下列步驟會以區段出現的順序顯示，但不是連續的（您可以選取及修改所有順序的區段）。
 
-   - 在區段中按一下 [**編輯**] 之後，可用設定會以嚮導格式呈現，但是您可以在頁面中以任何順序跳離，也可以按一下任何頁面上的 [**儲存**] （或 [**取消**]](../../media/scc-remove-icon.png)或 [**關閉** ![] 關閉圖示可返回 [**編輯您的原則\<名稱\> ** ] 頁面（您不需要流覽該嚮導的最後一頁以儲存或離開）。
+   - 在區段中按一下 [**編輯**] 之後，可用設定會以嚮導格式呈現，但是您可以在頁面中以任何順序跳離，也可以按一下任何頁面上的 [**儲存**] （或 [**取消**] 或 [**關閉** ![ ] 關閉圖示可 ](../../media/scc-remove-icon.png) 返回 [**編輯您的原則 \< 名稱 \> ** ] 頁面（您不需要流覽該嚮導的最後一頁以儲存或離開）。
 
 4. **原則設定**：按一下 [**編輯**]，修改當您在上一節中[建立原則](#use-the-security--compliance-center-to-create-atp-anti-phishing-policies)時可用的相同設定：
 
@@ -164,7 +164,7 @@ ATP 反網路釣魚原則的基本元素如下：
 
         - 在方塊中按一下，並在使用者清單中向內移動，以選取。
         - 按一下方塊中的 [開始輸入]，以篩選清單並選取使用者。
-        - 若要移除專案，請**Remove** ![按一下使用者上](../../media/scc-remove-icon.png)的 [移除移除圖示]。
+        - 若要移除專案，請**Remove**按一下 ![ ](../../media/scc-remove-icon.png) 使用者上的 [移除移除圖示]。
 
      - **名稱**：此值會根據您選取的電子郵件地址來填入，但您可以變更它。
 
@@ -226,7 +226,7 @@ ATP 反網路釣魚原則的基本元素如下：
 
        - 在方塊中按一下，並在使用者清單中向內移動，以選取。
        - 按一下方塊中的 [開始輸入]，以篩選清單並選取使用者。
-       - 若要移除專案，請**Remove** ![按一下使用者上](../../media/scc-remove-icon.png)的 [移除移除圖示]。
+       - 若要移除專案，請**Remove**按一下 ![ ](../../media/scc-remove-icon.png) 使用者上的 [移除移除圖示]。
 
      - **受信任的網域**：輸入功能變數名稱（例如，contoso.com），按 enter，然後視需要重複此功能變數名稱。
 
@@ -236,8 +236,8 @@ ATP 反網路釣魚原則的基本元素如下：
      - 您可以在此頁面**上****直接切換**下列設定：
 
        - **受保護的使用者**
-       - **受保護的網域** \> **包括我擁有的網域**
-       - **受保護的網域** \> **保護網域**（自訂網域）
+       - **受保護的網域** \>**包含我擁有的網域**
+       - **受保護的網域** \>**受保護的網域**（自訂網域）
        - **信箱情報**
 
    完成後，按一下 [**儲存**] 任何頁面。
@@ -246,10 +246,10 @@ ATP 反網路釣魚原則的基本元素如下：
 
    請注意，EOP 中的反網路釣魚原則也提供這些相同設定。
 
-   - **哄騙篩選設定**：預設值為 [**開啟**]，建議您將其保持開啟。 若要將它關閉，請將開關滑動至 [**關閉**]。 如需詳細資訊，請參閱[在 Office 365 中設定詐騙情報](learn-about-spoof-intelligence.md)。
+   - **哄騙篩選設定**：預設值為 [**開啟**]，建議您將其保持開啟。 若要將它關閉，請將開關滑動至 [**關閉**]。 如需詳細資訊，請參閱[在 EOP 中設定欺騙智慧](learn-about-spoof-intelligence.md)。
 
      > [!NOTE]
-     > 如果您的 MX 記錄未指向 Office 365，您不需要停用反欺騙保護;請改為啟用連接器的增強篩選。 如需相關指示，請參閱[在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+     > 如果您的 MX 記錄未指向 Microsoft 365，您就不需要停用反欺騙保護;請改為啟用連接器的增強篩選。 如需相關指示，請參閱[在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
    - **啟用未經驗證的寄件者功能**：預設值為**On**。 若要將它關閉，請將開關滑動至 [**關閉**]。
 
@@ -283,7 +283,7 @@ ATP 反網路釣魚原則的基本元素如下：
 
    當您完成時，按一下 [**儲存**] 任何一頁。
 
-8. 回到 [**編輯您的原則\<名稱\> ** ] 頁面上，複查您的設定，然後按一下 [**關閉**]。
+8. 回到 [**編輯您的原則 \< 名稱 \> ** ] 頁面上，複查您的設定，然後按一下 [**關閉**]。
 
 ### <a name="use-the-security--compliance-center-to-modify-the-default-atp-anti-phishing-policy"></a>使用安全性 & 合規性中心，修改預設的 ATP 反網路釣魚原則
 
@@ -333,7 +333,7 @@ ATP 反網路釣魚原則的基本元素如下：
 
 2. 選取您要修改的原則。 如果已選取它，請取消選取它，然後再次選取。
 
-3. 隨即會顯示 [**編輯您的原則\<名稱\> ** ] 快顯視窗。
+3. 隨即會顯示 [**編輯您的原則 \< \> 名稱**] 快顯視窗。
 
    - 具有**Priority**值**0**的自訂 ATP 反網路釣魚原則，只有「**降低優先順序**」按鈕可用。
 
@@ -355,7 +355,7 @@ ATP 反網路釣魚原則的基本元素如下：
 
    - 按一下 [**預設原則**] 以查看預設的反網路釣魚原則。
 
-3. 隨即會顯示 [**編輯您的原則\<名稱\> ** ] 快顯視窗，您可以在其中查看設定和值。
+3. 隨即會顯示 [**編輯您的原則 \< \> 名稱**] 快顯視窗，您可以在其中查看設定和值。
 
 ## <a name="use-the-security--compliance-center-to-remove-atp-anti-phishing-policies"></a>使用安全性 & 規範中心移除 ATP 反網路釣魚原則
 
@@ -363,7 +363,7 @@ ATP 反網路釣魚原則的基本元素如下：
 
 2. 選取您要移除的原則。 如果已選取它，請取消選取它，然後再次選取。
 
-3. 在出現的 [**編輯\<您\>的原則名稱**] 浮出視窗中，按一下 [**刪除原則**]，然後在顯示的警告對話方塊中按一下 [**是]** 。
+3. 在出現的 [**編輯您的原則 \< \> 名稱**] 浮出視窗中，按一下 [**刪除原則**]，然後在顯示的警告對話方塊中按一下 [**是]** 。
 
 您無法移除預設原則。
 
@@ -383,9 +383,9 @@ ATP 反網路釣魚原則的基本元素如下：
 
 - 您可以在 PowerShell 中為安全性 & 相容性中心以外的新反網路釣魚原則設定下列設定，直到您建立原則為止：
 
-  - 建立新原則為停用（在**AntiPhishRule** Cmdlet 上_啟用_ `$false` ）。
+  - 建立新原則為停用（_ _ `$false` 在**AntiPhishRule** Cmdlet 上啟用）。
 
-  - 設定在**AntiPhishRule 指令程式**建立時的原則優先順序（_優先權_ _ \<編號\>_）。
+  - 設定在**AntiPhishRule 指令程式**建立時的原則優先順序（_優先權_ _ \< \> 編號_）。
 
 - 在您指派原則至反網路釣魚規則之前，您在 PowerShell 中所建立的新反網路釣魚原則不會顯示在安全性 & 規範中心。
 
@@ -399,7 +399,7 @@ New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Addit
 
 此範例會使用下列設定來建立名為「調查隔離隔離」的反網路釣魚原則：
 
-- 原則已啟用（未使用_enabled_參數，預設值為`$true`）。
+- 原則已啟用（未使用_enabled_參數，預設值為 `$true` ）。
 - 描述為：「調研部門原則」。
 - 針對所有公認的網域及目標網域的 fabrikam.com 保護，啟用組織網域保護。
 - 將 Mai Fujito （mfujito@fabrikam.com）指定為要防止模擬的使用者。
@@ -608,7 +608,7 @@ Remove-AntiPhishRule -Identity "Marketing Department"
   - 從清單中選取原則，然後在飛入的視窗中查看詳細資料。
   - 按一下 [**預設原則**]，然後在飛入的視窗中查看詳細資料。
 
-- 在 Exchange Online PowerShell 中， \<以\>原則或規則名稱取代名稱，並執行下列命令並確認設定：
+- 在 Exchange Online PowerShell 中， \< \> 以原則或規則名稱取代名稱，並執行下列命令並確認設定：
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ee36f1fb1b44d2643aeb73f35ae9eb571dd0aa35
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8a988cb053a5869c9cb57306fc0c78cdd7ba5ccc
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633308"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208814"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-365"></a>適用於 Microsoft 365 的責任整備檢查清單
 
@@ -104,10 +104,10 @@ ms.locfileid: "43633308"
 |***資訊分類 (6.5.1)***|客戶應該明確地將個人資料視為資料分類配置的一部分。|Office 365 中支援個人資料分類的功能。<br>- GDPR 的 Office 365 資訊保護** [[5](gdpr-arc-Office365.md#5)] 請參閱「設計個人資料的分類結構描述」<br>- 6.5.1 [合規性分數](compliance-score.md)中的資訊分類|(39)(1)(b)|
 |***管理抽取式媒體 (6.5.2)***|客戶應決定使用抽取式媒體的內部政策，因為這涉及到個人資料的保護 (例如加密裝置)。|Microsoft 服務如何保護任何抽取式媒體上個人資訊的安全性。<br>- FedRAMP 中度 FedRAMP 系統安全性計劃** [[3](gdpr-arc-Office365.md#3)] 請參閱「13.10 媒體保護 (MP)」<br>- 在[合規性分數](compliance-score.md)中管理抽取式媒體|(32)(1)(a)、(5)(1)(f)|
 |***實體媒體傳輸 (6.5.3)***|客戶應決定在傳輸實體媒體時保護個人資料的內部策略 (例如加密)。| Microsoft 服務如何在實體媒體的任何傳輸期間保護個人資料。<br>- FedRAMP 中度 FedRAMP 系統安全性計劃 [[3](gdpr-arc-Office365.md#3)] 請參閱「13.10 媒體保護 (MP)」<br>- 6.5.3 [合規性分數](compliance-score.md)中的實體媒體傳輸|(32)(1)(a)、(5)(1)(f)|
-|***使用者存取管理 (6.6.1)***|客戶應知道自己在使用的服務中，對於存取控制有哪些責任，並以可用的工具善盡其責。|Microsoft 服務提供來協助您強制執行存取控制的工具。<br>- Office 365 安全性文件 [[2](gdpr-arc-Office365.md#2)] 請參閱「[保護 Office 365 中的資料與服務存取權](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e)」<br>- 6.6.1 在[合規性分數](compliance-score.md)中|(5)(1)(f)|
-|***使用者註冊及取消註冊 (6.6.2)***|客戶應以可用的工具，來管理所使用服務中的使用者註冊和取消註冊。|Microsoft 服務提供來協助您強制執行存取控制的工具。<br>- Office 365 安全性文件 [[2](gdpr-arc-Office365.md#2)] 請參閱「[保護 Office 365 中的資料與服務存取權](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e)」<br>- 6.6.2 [合規性分數](compliance-score.md)中的使用者註冊及取消註冊|(5)(1)(f)|
-|***使用者存取權佈建 (6.6.3)***|客戶應以可用的工具，來管理所使用服務中的使用者設定檔，尤其是對個人資料的授權存取。|Microsoft 服務如何支援對個人資料的正式存取控制，包括使用者識別碼、角色、應用程式的存取權，以及使用者的註冊和取消註冊。<br>- Office 365 安全性文件 [[2](gdpr-arc-Office365.md#2)] 請參閱「[保護 Office 365 中的資料與服務存取](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e)」<br>- 使用租用限制管理 SaaS 雲端應用程式的存取 [[15](gdpr-arc-Office365.md#15)]<br>- [合規性分數](compliance-score.md)中的使用者存取佈建|(5)(1)(f)|
-|***管理特殊權限存取 (6.6.4)***|客戶應以可用的工具，來管理所使用服務中的使用者識別碼，以利追蹤存取 (尤其是對個人資料的存取)。|Microsoft 服務如何支援對個人資料的正式存取控制，包括使用者識別碼、角色以及使用者的註冊和取消註冊。<br>- Office 365 安全性文件 2 請參閱「[保護 Office 365 中的資料與服務存取權](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e)」<br>- 使用租用限制管理 SaaS 雲端應用程式的存取 [15]<br>- 6.6.4 [合規性分數](compliance-score.md)中的管理特殊權限存取|(5)(1)(f)|
+|***使用者存取管理 (6.6.1)***|客戶應知道自己在使用的服務中，對於存取控制有哪些責任，並以可用的工具善盡其責。|Microsoft 服務提供來協助您強制執行存取控制的工具。<br>- Office 365 安全性文件 [[2](gdpr-arc-Office365.md#2)] 請參閱「[保護 Office 365 中的資料與服務存取權](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services)」<br>- 6.6.1 在[合規性分數](compliance-score.md)中|(5)(1)(f)|
+|***使用者註冊及取消註冊 (6.6.2)***|客戶應以可用的工具，來管理所使用服務中的使用者註冊和取消註冊。|Microsoft 服務提供來協助您強制執行存取控制的工具。<br>- Office 365 安全性文件 [[2](gdpr-arc-Office365.md#2)] 請參閱「[保護 Office 365 中的資料與服務存取權](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services)」<br>- 6.6.2 [合規性分數](compliance-score.md)中的使用者註冊及取消註冊|(5)(1)(f)|
+|***使用者存取權佈建 (6.6.3)***|客戶應以可用的工具，來管理所使用服務中的使用者設定檔，尤其是對個人資料的授權存取。|Microsoft 服務如何支援對個人資料的正式存取控制，包括使用者識別碼、角色、應用程式的存取權，以及使用者的註冊和取消註冊。<br>- Office 365 安全性文件 [[2](gdpr-arc-Office365.md#2)] 請參閱「[保護 Office 365 中的資料與服務存取](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services)」<br>- 使用租用限制管理 SaaS 雲端應用程式的存取 [[15](gdpr-arc-Office365.md#15)]<br>- [合規性分數](compliance-score.md)中的使用者存取佈建|(5)(1)(f)|
+|***管理特殊權限存取 (6.6.4)***|客戶應以可用的工具，來管理所使用服務中的使用者識別碼，以利追蹤存取 (尤其是對個人資料的存取)。|Microsoft 服務如何支援對個人資料的正式存取控制，包括使用者識別碼、角色以及使用者的註冊和取消註冊。<br>- Office 365 安全性文件 2 請參閱「[保護 Office 365 中的資料與服務存取權](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services)」<br>- 使用租用限制管理 SaaS 雲端應用程式的存取 [15]<br>- 6.6.4 [合規性分數](compliance-score.md)中的管理特殊權限存取|(5)(1)(f)|
 |***安全的登入程序 (6.6.5)***|客戶應該利用服務中所提供的機制，確保必要時為其使用者提供安全的登入功能。|Microsoft 服務如何支援與個人資料相關的內部存取控制原則。<br>- 誰根據哪些條款可以存取您的資料 [[6](gdpr-arc-Office365.md#6)]<br>- 6.6.5 [合規性分數](compliance-score.md)安全登入程序|(5)(1)(f)|
 |***密碼編譯 (6.7)***|客戶應該判斷哪些資料需要加密，以及正在使用的服務是否提供了這種功能。客戶應該根據需要以可用的工具來加密資料。|Microsoft 服務如何支援加密及假名，以降低處理個人資料的風險。<br>- FedRAMP 中度 FedRAMP 系統安全性計劃 (SSP) 請參閱「*Cosmos*」pp29<br>- 6.7 [合規性分數](compliance-score.md)中的密碼編譯|(32)(1)(a)|
 |***安全處置或重複使用設備 (6.8.1)***|在客戶使用雲端計算服務 (PaaS、SaaS、IaaS) 的情況下，應該了解雲端提供者如何確保在將儲存空間分配給其他客戶之前，將客戶的個人資料從該空間中刪除。|在轉移或重複使用設備之前，Microsoft 服務如何確保將個人資料從儲存設備中刪除。<br>- FedRAMP 中度 FedRAMP 系統安全性計劃 [[3](gdpr-arc-Office365.md#3)] 請參閱「13.10 媒體保護 (MP)」<br>- 6.8.1 [合規性分數](compliance-score.md)中的安全處置或重複使用設備|(5)(1)(f)|
@@ -134,7 +134,7 @@ ms.locfileid: "43633308"
 |:-----|:-----|
 |**識別碼**|**描述/連結**|
 | 1 <a name="1"> </a> | [線上服務條款](https://aka.ms/ost) |
-| 2 <a name="2"> </a> | [Office 365 安全性文件](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e) |
+| 2 <a name="2"> </a> | [Office 365 安全性文件](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services) |
 | 3 <a name="3"> </a> | [FedRAMP 中度 FedRAMP 系統安全性計劃 (SSP)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=053666de-e359-43ef-a7bb-3cf379208ed8&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_FedRAMP_Reports) |
 | 4 <a name="4"> </a> | [Microsoft 雲端安全性原則](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c83d1345-0cff-4beb-a521-27b837ed271a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) |
 | 5 <a name="5"> </a> | [GDPR 的 Office 365 資訊保護](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) |
@@ -148,7 +148,7 @@ ms.locfileid: "43633308"
 | 13 <a name="13"> </a> | [Microsoft 信任中心合規性供應項目](offering-home.md) |
 | 14 <a name="14"> </a> | [Office 365 ISMS 手冊](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=72821313-c175-4857-b1f7-e3c5e6eb2db4&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 15 <a name="15"> </a> | [使用租用戶限制管理 SaaS 雲端應用程式的存取](https://docs.microsoft.com/azure/active-directory/active-directory-tenant-restrictions) |
-| 16 <a name="16"> </a> | [在 Office 365 安全與合規性中心搜尋稽核記錄](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) |
+| 16 <a name="16"> </a> | [在 Office 365 安全與合規性中心搜尋稽核記錄](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) |
 | 17 <a name="17"> </a> | [Microsoft Cloud 中的加密](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=ec66d938-6eb4-4d7d-b8c3-2168573bb534&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) |
 | 18 <a name="18"> </a> | [Microsoft 的資料保護長](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer) |
 

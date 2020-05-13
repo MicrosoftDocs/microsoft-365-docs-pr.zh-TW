@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e4620938a5f7f63d7da09d60d701e81c3bbae0fa
-ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
+ms.openlocfilehash: e77fe9c8340608afae3a308ee399809144f6308f
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44171002"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211459"
 ---
 # <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的資料主體要求
 
@@ -63,7 +63,7 @@ ms.locfileid: "44171002"
 
 ### <a name="office-365-national-clouds"></a>Office 365 國家雲
 
-Microsoft Office 365 服務也可在下列國家雲環境中取得：[Office 365 Germany](https://support.office.com/article/learn-about-office-365-germany-8a5a4bbc-667a-4cac-8769-d8ac9015db4c)、[由 21Vianet (中國) 運作的 Office 365](https://support.office.com/article/Learn-about-Office-365-operated-by-21Vianet-A8AB5061-3346-4DA0-BB7C-5260822B53AE) 和 [Office 365 US Government](https://technet.microsoft.com/library/mt774581.aspx)。本文件中描述的大多數用於管理資料主體要求的指引會套用到這些國家雲環境。不過，由於這些環境的隔離性質，所以有一些例外狀況。在特定子節中值得注意的是，這些例外狀況會在對應的附註中引出。
+Microsoft Office 365 服務也可在下列國家雲環境中取得：[Office 365 Germany](https://docs.microsoft.com/microsoft-365/admin/admin-overview/learn-about-office-365-germany)、[由 21Vianet (中國) 運作的 Office 365](https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china) 和 [Office 365 US Government](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans)。本文件中描述的大多數用於管理資料主體要求的指引會套用到這些國家雲環境。不過，由於這些環境的隔離性質，所以有一些例外狀況。在特定子節中值得注意的是，這些例外狀況會在對應的附註中引出。
 
 ### <a name="hybrid-deployments"></a>混合式部署
 
@@ -111,7 +111,7 @@ Microsoft Office 365 服務也可在下列國家雲環境中取得：[Office 365
 ||
 
 >[!NOTE]
->內容搜尋電子文件探索工具並未在[由 21Vianet 運作 (中國) 的 Office 365](https://support.office.com/article/Learn-about-Office-365-operated-by-21Vianet-A8AB5061-3346-4DA0-BB7C-5260822B53AE) 中提供。這表示您無法使用這項工具來搜尋和匯出表格 1 中所顯示 Office 365 應用程式中的客戶資料。不過，您可以在 Exchange Online 中使用「就地電子文件探索」工具來搜尋使用者信箱中的內容。您也可以在 SharePoint Online 中使用「電子文件探索中心」來搜尋 SharePoint 網站和 OneDrive 帳戶中的內容。或者，您可以要求文件擁有者協助您尋找並進行內容變更或刪除，或視需要匯出內容。如需詳細資訊，請參閱：</br><br> * [建立就地電子文件探索搜尋](https://technet.microsoft.com/library/dd353189(v=exchg.150).aspx)<br> * [在 SharePoint Online 中設定電子文件探索中心](https://support.office.com/article/Set-up-an-eDiscovery-Center-in-SharePoint-Online-A18F8975-AA7F-43B4-A7D6-001D14744D8E)
+>內容搜尋電子文件探索工具並未在[由 21Vianet 運作 (中國) 的 Office 365](https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china) 中提供。這表示您無法使用這項工具來搜尋和匯出表格 1 中所顯示 Office 365 應用程式中的客戶資料。不過，您可以在 Exchange Online 中使用「就地電子文件探索」工具來搜尋使用者信箱中的內容。您也可以在 SharePoint Online 中使用「電子文件探索中心」來搜尋 SharePoint 網站和 OneDrive 帳戶中的內容。或者，您可以要求文件擁有者協助您尋找並進行內容變更或刪除，或視需要匯出內容。如需詳細資訊，請參閱：</br><br> * [建立就地電子文件探索搜尋](https://docs.microsoft.com/exchange/create-in-place-ediscovery-search-exchange-2013-help)<br> * [在 SharePoint Online 中設定電子文件探索中心](https://support.office.com/article/Set-up-an-eDiscovery-Center-in-SharePoint-Online-A18F8975-AA7F-43B4-A7D6-001D14744D8E)
 
 ### <a name="using-content-search-to-find-personal-data"></a>使用內容搜尋來尋找個人資料
 
@@ -119,7 +119,7 @@ Microsoft Office 365 服務也可在下列國家雲環境中取得：[Office 365
 
 如先前所述，Microsoft 估計有超過 90% 的組織資料是使用 Office 應用程式 (例如 Word 和 Excel) 建立的。這表示，您可以使用安全性與合規性中心內的內容搜尋，來搜尋大部分與 DSR 相關的資料。
 
-本指南假設，針對可回應 DSR 要求的個人資料，您或搜尋人員熟悉安全性與合規性中心內的「內容搜尋」工具，或有使用此工具的經驗。如需使用內容搜尋的一般指導方針，請參閱 [Office 365 中的內容搜尋](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)。請確定您已將安全性與合規性中心內的必要權限，指派給執行搜尋的人員。應將此人員新增為安全性與合規性中心內「電子文件探索管理員」角色群組的成員；請參閱[指派安全性與合規性中心內的電子文件探索權限](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7)。請考慮將貴組織中涉及調查 DSR 的人員也新增至「電子文件探索管理員」角色群組，以便他們在內容搜尋工具中執行必要動作，例如預覽和匯出搜尋結果。不過，除非您設定合規性界限 (如[這裡](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)所述)，否則請注意電子文件探索管理員可以搜尋貴組織中的所有內容位置，包括可能與 DSR 調查不相關的內容位置。
+本指南假設，針對可回應 DSR 要求的個人資料，您或搜尋人員熟悉安全性與合規性中心內的「內容搜尋」工具，或有使用此工具的經驗。如需使用內容搜尋的一般指導方針，請參閱 [Office 365 中的內容搜尋](https://docs.microsoft.com/microsoft-365/compliance/content-search)。請確定您已將安全性與合規性中心內的必要權限，指派給執行搜尋的人員。應將此人員新增為安全性與合規性中心內「電子文件探索管理員」角色群組的成員；請參閱[指派安全性與合規性中心內的電子文件探索權限](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)。請考慮將貴組織中涉及調查 DSR 的人員也新增至「電子文件探索管理員」角色群組，以便他們在內容搜尋工具中執行必要動作，例如預覽和匯出搜尋結果。不過，除非您設定合規性界限 (如[這裡](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)所述)，否則請注意電子文件探索管理員可以搜尋貴組織中的所有內容位置，包括可能與 DSR 調查不相關的內容位置。
 
 找到資料後，接著您可以執行指定的動作來滿足資料主體的要求。
 
@@ -142,7 +142,7 @@ Microsoft Office 365 服務也可在下列國家雲環境中取得：[Office 365
 
 - 一開始先搜尋貴組織中的所有內容位置 (您可以在單一搜尋中進行搜尋)，來快速判斷哪些內容位置包含符合搜尋查詢的項目。 然後，您可以重新執行搜尋，並將搜尋範圍縮小至包含相關項目的特定位置。
 - 請使用搜尋統計資料，來識別包含符合搜尋查詢項目的熱門位置。請參閱[檢視內容搜尋結果的關鍵字統計資料](https://docs.microsoft.com/microsoft-365/compliance/view-keyword-statistics-for-content-search)。
-- 搜尋稽核記錄，以找出身為 DSR 主體的使用者最近執行過的檔案及資料夾活動。 搜尋稽核記錄將會傳回稽核記錄的清單，其中會包含使用者最近與其互動之資源的名稱和位置。 您可以使用這些資訊來組建內容搜尋查詢。 請參閱[在安全性與合規性中心搜尋稽核記錄](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)。
+- 搜尋稽核記錄，以找出身為 DSR 主體的使用者最近執行過的檔案及資料夾活動。 搜尋稽核記錄將會傳回稽核記錄的清單，其中會包含使用者最近與其互動之資源的名稱和位置。 您可以使用這些資訊來組建內容搜尋查詢。 請參閱[在安全性與合規性中心搜尋稽核記錄](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)。
 
 #### <a name="building-search-queries-to-find-personal-data"></a>組建搜尋查詢來尋找個人資料
 
@@ -167,7 +167,7 @@ Microsoft Office 365 服務也可在下列國家雲環境中取得：[Office 365
 |**條件**|**描述** |**條件值的範例**|
 | 檔案類型 | 文件或檔案的副檔名。 請使用此條件以搜尋 Office 365 應用程式建立的 Office 文件及檔案。 當搜尋位於 SharePoint Online 網站和商務用 OneDrive 帳戶中的資料時，請使用此條件。<br/>對應的文件屬性為 filetype。 <br/>如需您可以搜尋之副檔名的完整清單，請參閱 SharePoint 中預設已編目的副檔名及已剖析的檔案類型](https://technet.microsoft.com/library/jj219530.aspx)。|&nbsp;&bull;&nbsp;&nbsp;csv – 搜尋逗號分隔值 (CSV) 檔案。Excel 檔案可以儲存為 CSV 格式，而且 CSV 檔案可以輕鬆地匯入 Excel 中 <br><br>&bull;&nbsp;&nbsp;docx – 搜尋 Word 檔案 <br><br>&bull;&nbsp;&nbsp;mpp - 搜尋 Project 檔案<br/><br>&bull;&nbsp;&nbsp;one - 搜尋 OneNote 檔案 <br><br>&bull;&nbsp;&nbsp;pdf – 搜尋儲存為 PDF 格式的檔案 <br><br>&bull;&nbsp;&nbsp;pptx – 搜尋 PowerPoint 檔案 <br><br>&bull;&nbsp;&nbsp;xlxs – 搜尋 Excel 檔案 <br><br>&bull;&nbsp;&nbsp;vsd – 搜尋 Visio 檔案 <br><br>&bull;&nbsp;&nbsp;wmv – 搜尋 Windows Media 視訊檔 <br>|
 | 訊息類型 | 要搜尋的電子郵件類型。 使用此條件，在信箱中搜尋聯絡人 (人員)、會議 (行事曆) 或商務用 Skype 交談。 對應的電子郵件屬性是 *kind*。|&bull;&nbsp;&nbsp;*contacts – 搜尋信箱中我的連絡人清單 (人員)<br><br>&bull;&nbsp;&nbsp;* email — 搜尋電子郵件 <br><br>&bull;&nbsp;&nbsp;*im — 搜尋商務用 Skype 交談<br><br>&bull;&nbsp;&nbsp;* meetings — 搜尋約會及會議邀請 (行事曆) <br><br>&bull;&nbsp;&nbsp;*tasks – 搜尋我的工作清單 (工作)；使用此值也將傳回以 Microsoft ToDo 建立的工作。<br>|
-| 合規性標籤 |指派給電子郵件訊息或文件的標籤。標籤是用來分類電子郵件和文件，以進行資料控管；並根據標籤定義的分類強制執行保留規則。請使用此條件，來搜尋已自動或手動指派標籤的項目。<br/>這是對 DSR 調查很有用的條件，因為組織可能會使用標籤來分類與資料隱私權相關的內容，或含有個人資料或敏感性資訊的內容。請參閱 [Office 365 中的標籤概觀](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30)中的＜使用內容搜尋來尋找所有已套用特定標籤的內容＞一節。|compliancetag="personal data"|
+| 合規性標籤 |指派給電子郵件訊息或文件的標籤。標籤是用來分類電子郵件和文件，以進行資料控管；並根據標籤定義的分類強制執行保留規則。請使用此條件，來搜尋已自動或手動指派標籤的項目。<br/>這是對 DSR 調查很有用的條件，因為組織可能會使用標籤來分類與資料隱私權相關的內容，或含有個人資料或敏感性資訊的內容。請參閱 [Office 365 中的標籤概觀](https://docs.microsoft.com/microsoft-365/compliance/labels)中的＜使用內容搜尋來尋找所有已套用特定標籤的內容＞一節。|compliancetag="personal data"|
 ||||
 
 有許多其他的電子郵件和文件內容及搜尋條件，可用來建立更複雜的搜尋查詢。如需詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)說明主題中的下列各節。
@@ -222,23 +222,23 @@ pilar@contoso.com AND filetype="xlxs"
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>在內容搜尋中使用已局部編製索引的項目
 
-已部分編製索引的項目 (也稱為「未編製索引的項目」**) 是 SharePoint Online 和商務用 OneDrive 網站上，基於某種原因而未完全編製索引以利搜尋的 Exchange Online 信箱項目和文件，這表示無法使用「內容搜尋」來加以搜尋。 大部分的電子郵件訊息和網站文件都可成功編製索引，因為落在 [Office 365 索引限制](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??)內。 電子郵件訊息或檔案未編製索引以利搜尋的原因包括：
+已部分編製索引的項目 (也稱為「未編製索引的項目」**) 是 SharePoint Online 和商務用 OneDrive 網站上，基於某種原因而未完全編製索引以利搜尋的 Exchange Online 信箱項目和文件，這表示無法使用「內容搜尋」來加以搜尋。 大部分的電子郵件訊息和網站文件都可成功編製索引，因為落在 [Office 365 索引限制](https://docs.microsoft.com/microsoft-365/compliance/limits-for-content-search)內。 電子郵件訊息或檔案未編製索引以利搜尋的原因包括：
 
-- 檔案類型[無法辨識或不支援索引編製功能](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)。 雖然有時候檔案類型會支援索引編製，但在編製特定檔案的索引時發生錯誤。
+- 檔案類型[無法辨識或不支援索引編製功能](https://docs.microsoft.com/microsoft-365/compliance/partially-indexed-items-in-content-search)。 雖然有時候檔案類型會支援索引編製，但在編製特定檔案的索引時發生錯誤。
 - 電子郵件訊息所具有的附加檔案 (例如影像檔) 缺乏有效的處理常式，這是已局部編製索引的電子郵件項目最常見的原因
 - 電子郵件訊息的附加檔案太大，或有太多個附加檔案
 
 我們建議您深入了解已局部編製索引的項目，讓您可在回應 DSR 要求時使用。如需詳細資訊，請參閱：
 
-- [位於 Office 365 中內容搜尋的已局部編製索引項目](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)
-- [調查 Office 365 電子文件探索中已局部編製索引的項目](https://support.office.com/article/investigating-partially-indexed-items-in-office-365-ediscovery-4e8ff113-6361-41e2-915a-6338a7e2a1ed)
-- [匯出未編製索引的項目](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278#unidexeditems)
+- [位於 Office 365 中內容搜尋的已局部編製索引項目](https://docs.microsoft.com/microsoft-365/compliance/partially-indexed-items-in-content-search)
+- [調查 Office 365 電子文件探索中已局部編製索引的項目](https://docs.microsoft.com/microsoft-365/compliance/investigating-partially-indexed-items-in-ediscovery)
+- [匯出未編製索引的項目](https://docs.microsoft.com/microsoft-365/compliance/export-search-results#unidexeditems)
 
 #### <a name="tips-for-working-with-partially-indexed-items"></a>使用已局部編製索引項目的提示
 
 可回應 DSR 調查的資料可能位於已部分編製索引的項目中。以下是一些使用已部分編製索引項目的建議：
 
-- 執行搜尋後，估計部分項目的數字會顯示在搜尋統計資料中。 此估計值不會包含 SharePoint Online 和商務用 OneDrive 中部分編製索引的項目。 匯出內容搜尋的報告，以取得部分編製索引項目的相關資訊。 **未編製索引的 Items.csv** 報告包含未編製索引項目的相關資訊，包含項目的位置、URL (如果項目位於 SharePoint Online 或商務用 OneDrive)，以及 (郵件) 主旨行或文件的名稱。 如需詳細資訊，請參閱[匯出內容搜尋報告](https://support.office.com/article/Export-a-Content-Search-report-5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9)。
+- 執行搜尋後，估計部分項目的數字會顯示在搜尋統計資料中。 此估計值不會包含 SharePoint Online 和商務用 OneDrive 中部分編製索引的項目。 匯出內容搜尋的報告，以取得部分編製索引項目的相關資訊。 **未編製索引的 Items.csv** 報告包含未編製索引項目的相關資訊，包含項目的位置、URL (如果項目位於 SharePoint Online 或商務用 OneDrive)，以及 (郵件) 主旨行或文件的名稱。 如需詳細資訊，請參閱[匯出內容搜尋報告](https://docs.microsoft.com/microsoft-365/compliance/export-a-content-search-report)。
 
 - 隨著內容搜尋一起傳回的已局部編製索引項目統計資料和清單，都是來自所搜尋內容位置中的局部項目。
 
@@ -246,11 +246,11 @@ pilar@contoso.com AND filetype="xlxs"
 
 ##### <a name="export-all-partially-indexed-items"></a>匯出所有已局部編製索引的項目
 
-您可以從搜尋內容的位置匯出內容搜尋結果和部分編製索引的項目。 您也可以只匯出部分編製索引項目。 之後，您可以在原生應用程式中開啟並檢視內容。 您必須使用此選項，才能從 SharePoint Online 和商務用 OneDrive 匯出項目。 請參閱[從安全性與合規性中心匯出搜尋結果](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278)。
+您可以從搜尋內容的位置匯出內容搜尋結果和部分編製索引的項目。 您也可以只匯出部分編製索引項目。 之後，您可以在原生應用程式中開啟並檢視內容。 您必須使用此選項，才能從 SharePoint Online 和商務用 OneDrive 匯出項目。 請參閱[從安全性與合規性中心匯出搜尋結果](https://docs.microsoft.com/microsoft-365/compliance/export-search-results)。
 
 ##### <a name="export-a-specific-set-of-partially-indexed-items-from-mailboxes"></a>從信箱中匯出一組特定的已局部編製索引項目
 
-您可以重新執行內容搜尋來搜尋部分編製索引項目的特定清單，然後再將其匯出，而不是從搜尋匯出所有部分編製索引的信箱項目。 您可以只針對信箱項目匯出項目。 請參閱[在 Office 365 中準備目標內容搜尋的 CSV 檔案](https://support.office.com/article/prepare-a-csv-file-for-a-targeted-content-search-in-office-365-82c97bb4-2b64-4edc-804d-cedbda525d22)。
+您可以重新執行內容搜尋來搜尋部分編製索引項目的特定清單，然後再將其匯出，而不是從搜尋匯出所有部分編製索引的信箱項目。 您可以只針對信箱項目匯出項目。 請參閱[在 Office 365 中準備目標內容搜尋的 CSV 檔案](https://docs.microsoft.com/microsoft-365/compliance/csv-file-for-an-id-list-content-search)。
 
 ### <a name="next-steps"></a>後續步驟
 
@@ -270,9 +270,9 @@ pilar@contoso.com AND filetype="xlxs"
 
 使用 Office Lens (執行 iOS、Android 和 Windows 之裝置支援的相機應用程式) 的人員可以拍攝白板、文件的紙本、名片及含有大量文字的其他項目。 Office Lens 使用光學字元辨識技術，其會擷取影像中的文字，並將之儲存至 Word、PowerPoint 和 OneNote 等 Office 文件或 PDF 檔案。 之後，使用者可能將包含影像內文字的檔案，上傳到 Office 365 的商務用 OneDrive 帳戶。 那代表您可以使用內容搜尋工具來搜尋、存取、刪除和匯出檔案中的資料，這些檔案是從 Office Lens 影像建立而來。 如需 Office Lens 的詳細資訊，請參閱：
 
-- [IOS 版 Office Lens](https://support.office.com/article/Office-Lens-for-iOS-fbdca5f4-1b1b-4391-a931-dc1c2582397b)
+- [IOS 版 Office Lens](https://support.microsoft.com/zh-TW/office/microsoft-office-lens-for-ios-fbdca5f4-1b1b-4391-a931-dc1c2582397b)
 - [Android 版 Office Lens](https://support.office.com/article/Office-Lens-for-Android-ec124207-0049-4201-afaf-b5874a8e6f2b)
-- [Windows 版 Office Lens](https://support.office.com/article/Office-Lens-for-Windows-577ec09d-8da2-4029-8bb7-12f8114f472a)
+- [Windows 版 Office Lens](https://support.microsoft.com/zh-TW/office/office-lens-for-windows-577ec09d-8da2-4029-8bb7-12f8114f472a)
 
 #### <a name="onedrive-for-business-and-sharepoint-online-experience-settings"></a>商務用 OneDrive 和 SharePoint Online 體驗設定
 
@@ -306,7 +306,7 @@ pilar@contoso.com AND filetype="xlxs"
 
 系統管理員可以在 SharePoint Online PowerShell 中使用 **Export-SPOUserProfile** Cmdlet，匯出使用者的所有使用者設定檔屬性。請參閱 [Export-SPOUserProfile](https://docs.microsoft.com/powershell/module/sharepoint-online/export-spouserprofile?view=sharepoint-ps)。
 
-如需使用者設定檔的詳細資訊，請參閱[在 SharePoint 系統管理中心管理使用者設定檔](https://support.office.com/article/Manage-user-profiles-in-the-SharePoint-admin-center-494bec9c-6654-41f0-920f-f7f937ea9723)。
+如需使用者設定檔的詳細資訊，請參閱[在 SharePoint 系統管理中心管理使用者設定檔](https://docs.microsoft.com/sharepoint/manage-user-profiles)。
 
 ##### <a name="user-information-list-on-sharepoint-online-sites"></a>SharePoint Online 網站上的使用者資訊清單
 
@@ -373,13 +373,13 @@ OneNote 課程筆記本會儲存在課程小組 SharePoint Online 網站中。�
 
 #### <a name="microsoft-to-do"></a>Microsoft To-Do
 
-Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清單*)，會在使用者的 Exchange Online 信箱中儲存為工作。 這表示您可以使用內容搜尋工具來搜尋、存取、刪除及匯出待辦事項。 如需詳細資訊，請參閱[設定 Microsoft To-Do](https://support.office.com/article/Set-up-Microsoft-To-Do-490c1a8c-2333-4952-8125-841afadb9620)。
+Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清單*)，會在使用者的 Exchange Online 信箱中儲存為工作。 這表示您可以使用內容搜尋工具來搜尋、存取、刪除及匯出待辦事項。 如需詳細資訊，請參閱[設定 Microsoft To-Do](https://support.microsoft.com/zh-TW/office/set-up-microsoft-to-do-490c1a8c-2333-4952-8125-841afadb9620)。
 
 #### <a name="skype-for-business"></a>商務用 Skype
 
 以下是關於如何在商務用 Skype 中存取、檢視和匯出個人資料的一些額外資訊。
 
-- 附加至會議的檔案會在實際會議中保留 180 天，然後就會變成無法存取。會議參與者可以透過從會議邀請加入會議，然後檢視或下載附加檔案的方式，來存取這些檔案。請參閱[預先載入商務用 Skype 會議的附件](https://support.office.com/article/preload-attachments-for-a-skype-for-business-meeting-fd3d9f9d-b448-4754-b813-02e49393f251)中的＜使用會議中的附件＞一節。
+- 附加至會議的檔案會在實際會議中保留 180 天，然後就會變成無法存取。會議參與者可以透過從會議邀請加入會議，然後檢視或下載附加檔案的方式，來存取這些檔案。請參閱[預先載入商務用 Skype 會議的附件](https://support.microsoft.com/zh-TW/office/preload-attachments-for-a-skype-for-business-meeting-fd3d9f9d-b448-4754-b813-02e49393f251)中的＜使用會議中的附件＞一節。
 - 商務用 Skype 中的交談會保留在使用者信箱中的 [交談記錄] 資料夾內。您可以使用內容搜尋來搜尋信箱，找出 Skype 交談中的資料。
 - 資料主體可在商務用 Skype 中匯出其連絡人。若要這麼做，需以滑鼠右鍵按一下商務用 Skype 中的連絡人群組，並按一下 [複製]****。然後，資料主體可以將電子郵件地址的清單，貼入文字或 Word 文件中。
 - 如果會議參與者的 Exchange Online 信箱處於訴訟資料暫留狀態，或已指派給 Office 365 保留原則，則附加至會議的檔案會保留在參與者信箱中。若檔案的保留期間尚未過期，您就可以使用「內容搜尋」來搜尋參與者信箱中的檔案。如需保留檔案的詳細資訊，請參閱[保留附加至商務用 Skype 會議的大型檔案](https://docs.microsoft.com/skypeforbusiness/set-up-policies-in-your-organization/retaining-large-files-attached-to-a-meeting)。
@@ -395,13 +395,13 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 有兩種方法可使用「內容搜尋」工具，來取得您在執行搜尋後所找到文件或信箱項目的複本。
 
 - 請先預覽搜尋結果，然後再下載文件或項目的複本。這是下載少數項目或檔案的好方法。
-- 匯出搜尋結果，然後下載搜尋傳回的所有項目副本。 這個方法雖然較為複雜，卻是下載許多回應 DSR 之項目的理想方法。 實用報表也隨附於匯出搜尋結果。 您可以使用這些報告，以取得每個項目的額外資訊。 **Results.csv** 報告很實用，因為它包含與匯出項目有關的許多資訊，例如，項目的確切位置 (例如，電子郵件的信箱或文件的 URL 或SharePoint Online 和商務用 OneDrive 的清單)。 此資訊可協助您找出項目的擁有者，因為您在 DSR 調查程序期間可能需要連絡他們。 如需匯出搜尋結果時隨附報告的詳細資訊，請參閱[匯出內容搜尋報告](https://support.office.com/article/Export-a-Content-Search-report-5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9)。
+- 匯出搜尋結果，然後下載搜尋傳回的所有項目副本。 這個方法雖然較為複雜，卻是下載許多回應 DSR 之項目的理想方法。 實用報表也隨附於匯出搜尋結果。 您可以使用這些報告，以取得每個項目的額外資訊。 **Results.csv** 報告很實用，因為它包含與匯出項目有關的許多資訊，例如，項目的確切位置 (例如，電子郵件的信箱或文件的 URL 或SharePoint Online 和商務用 OneDrive 的清單)。 此資訊可協助您找出項目的擁有者，因為您在 DSR 調查程序期間可能需要連絡他們。 如需匯出搜尋結果時隨附報告的詳細資訊，請參閱[匯出內容搜尋報告](https://docs.microsoft.com/microsoft-365/compliance/export-a-content-search-report)。
 
 #### <a name="preview-and-download-items"></a>預覽及下載項目
 
 執行新的搜尋，或開啟現有的搜尋後，您可以預覽符合搜尋查詢的每個項目，以驗證它與您正在調查的 DSR 相關。 這也包含搜尋結果傳回的 SharePoint 清單和網頁。 如果您需要將原始檔案提供給資料主體，也能下載原始檔案。 在這兩種情況下，您可以取得螢幕擷取畫面，滿足資料主體取得資訊的要求。
 
-某些類型的項目無法預覽。 若項目或檔案類型不支援預覽，您也可以選擇將個別項目下載到本機電腦，或已對應的網路磁碟機或其他網路位置。 您只能預覽[支援的檔案類型](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)。
+某些類型的項目無法預覽。 若項目或檔案類型不支援預覽，您也可以選擇將個別項目下載到本機電腦，或已對應的網路磁碟機或其他網路位置。 您只能預覽[支援的檔案類型](https://docs.microsoft.com/microsoft-365/compliance/content-search)。
 
 若要預覽及下載項目：
 
@@ -410,7 +410,7 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 3. 請按一下項目來檢視。
 4. 按一下 [下載原始檔案]****，將項目下載到本機電腦。您也必須下載無法預覽的項目。
 
-如需預覽搜尋結果的詳細資訊，請參閱[預覽搜尋結果](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)。
+如需預覽搜尋結果的詳細資訊，請參閱[預覽搜尋結果](https://docs.microsoft.com/microsoft-365/compliance/content-search)。
 
 #### <a name="export-and-download-items"></a>匯出及下載項目
 
@@ -449,7 +449,7 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 
 匯出程序完成時，您可以在本機電腦上檔案所下載到的位置中存取檔案。內容搜尋的結果會下載到以內容搜尋命名的資料夾中。來自網站的內容搜尋文件會複製到名為 **SharePoint** 的子資料夾。信箱項目則會複製到命名為 **Exchange** 的子資料夾。
 
-如需詳細的逐步指示，請參閱[從安全性與合規性中心匯出搜尋結果](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278)。
+如需詳細的逐步指示，請參閱[從安全性與合規性中心匯出搜尋結果](https://docs.microsoft.com/microsoft-365/compliance/export-search-results)。
 
 ### <a name="downloading-documents-and-lists-from-sharepoint-online-and-onedrive-for-business"></a>從 SharePoint Online 和商務用 OneDrive 下載文件和清單
 
@@ -460,7 +460,7 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 
 對於某些 DSR 匯出要求，您可能會想要允許資料主體自行下載內容。這可讓資料主體前往 SharePoint Online 網站或共用資料夾，然後按一下 [同步處理]****，以同步處理文件庫或所選資料夾中的所有內容。請參閱：
 
-- [讓使用者可以將 SharePoint 檔案與新的 OneDrive 同步處理用戶端同步](https://support.office.com/article/Enable-users-to-sync-SharePoint-files-with-the-new-OneDrive-sync-client-22e1f635-fb89-49e0-a176-edab26f69614)
+- [讓使用者可以將 SharePoint 檔案與新的 OneDrive 同步處理用戶端同步](https://docs.microsoft.com/sharepoint/let-users-use-new-onedrive-sync-client)
 - [將 SharePoint 檔案與新的 OneDrive 同步處理用戶端同步](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-client-6de9ede8-5b6e-4503-80b2-6190f3354a88)
 
 ## <a name="deleting-personal-data"></a>刪除個人資料
@@ -496,12 +496,12 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 
 如需詳細程序，請參閱下列主題。
 
-- [從 SharePoint 文件庫中刪除檔案、資料夾或連結](https://support.office.com/article/Delete-a-file-folder-or-link-from-a-SharePoint-document-library-71f3c90a-0d24-4d80-8b66-f88234b79a52#ID0EAADAAA=Online)
-- [刪除項目或清空 SharePoint 網站的資源回收筒](https://support.office.com/article/delete-items-or-empty-the-recycle-bin-of-a-sharepoint-site-2e713599-d13e-40d6-96dc-66f0a366f74e#ID0EAADAAA=Online)
-- [從網站集合資源回收筒中刪除項目](https://support.office.com/article/Delete-items-from-the-site-collection-Recycle-Bin-dd5c00c2-aef6-4458-9d04-80b185077653#ID0EAADAAA=Online)
-- [存取及備份先前使用者的資料](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604)中的＜存取離職員工的商務用 OneDrive 文件＞一節
+- [從 SharePoint 文件庫中刪除檔案、資料夾或連結](https://support.microsoft.com/zh-TW/office/delete-a-file-folder-or-link-from-a-sharepoint-document-library-71f3c90a-0d24-4d80-8b66-f88234b79a52)
+- [刪除項目或清空 SharePoint 網站的資源回收筒](https://support.microsoft.com/zh-TW/office/delete-items-or-empty-the-recycle-bin-of-a-sharepoint-site-2e713599-d13e-40d6-96dc-66f0a366f74e)
+- [從網站集合資源回收筒中刪除項目](https://support.microsoft.com/zh-TW/office/delete-items-from-the-site-collection-recycle-bin-dd5c00c2-aef6-4458-9d04-80b185077653)
+- [存取及備份先前使用者的資料](https://docs.microsoft.com/microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)中的＜存取離職員工的商務用 OneDrive 文件＞一節
 - [刪除商務用 OneDrive 中的檔案或資料夾](https://support.office.com/article/Delete-files-or-folders-in-OneDrive-21fe345a-e488-4fa7-932b-f053c1bebe8a)
-- [刪除 SharePoint 中的清單](https://support.office.com/article/delete-a-list-in-sharepoint-2a7bca5b-b8fd-4e5b-8f4b-2ac034f3070d#ID0EAADAAA=Online)
+- [刪除 SharePoint 中的清單](https://support.microsoft.com/zh-TW/office/delete-a-list-in-sharepoint-2a7bca5b-b8fd-4e5b-8f4b-2ac034f3070d)
 - [刪除 SharePoint Online 中的清單項目](https://support.office.com/article/delete-list-items-in-sharepoint-online-db722233-4a38-4889-a6cf-4b33fe5c60c0)
 
 ### <a name="deleting-a-sharepoint-site"></a>刪除 SharePoint 網站
@@ -556,7 +556,7 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 1. 請建立並執行 [內容搜尋]，來尋找您想要從使用者信箱中刪除的項目。 您可能必須重新執行搜尋以縮小該搜尋結果，以便在搜尋結果中只傳回您想要刪除的項目。
 2. 請使用 Office 365 PowerShell 中的 **New-ComplianceSearchAction** **-Purge** 命令，來虛刪除上一個步驟中建立的內容搜尋所傳回的項目。
 
-如需詳細指示，請參閱[搜尋並刪除組織中的電子郵件訊息](https://support.office.com/article/Search-for-and-delete-email-messages-in-your-Office-365-organization-Admin-Help-3526fd06-b45f-445b-aed4-5ebd37b3762a)。
+如需詳細指示，請參閱[搜尋並刪除組織中的電子郵件訊息](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)。
 
 #### <a name="hard-delete-mailbox-items"></a>實刪除信箱項目
 
@@ -568,7 +568,7 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 
 如同先前所述，如果您實刪除處於保留狀態下信箱中的項目，項目並不會從信箱中移除。而是會移至 [可復原的項目] 資料夾中的隱藏資料夾 ([清除]**** 資料夾)，而且會留在那裡，直到項目的保留期間到期或移除保留為止。若發生了上述任一情況，則下次處理信箱時，項目將從 Office 365 中清除。
 
-貴組織可能會判斷在保留期間到期後永久刪除項目，符合 DSR 刪除要求的需求。不過，如果您判斷必須立即從 Office 365 中清除信箱項目，則必須從信箱中移除保留，然後實刪除信箱中的項目。如需詳細指示，請參閱[刪除處於保留狀態下雲端型信箱的 [可復原的項目] 資料夾中的項目](https://support.office.com/article/Delete-items-in-the-Recoverable-Items-folder-of-cloud-based-mailboxes-on-hold-Admin-Help-a85e1c87-a48e-4715-bfa9-d5275cde67b0)。
+貴組織可能會判斷在保留期間到期後永久刪除項目，符合 DSR 刪除要求的需求。不過，如果您判斷必須立即從 Office 365 中清除信箱項目，則必須從信箱中移除保留，然後實刪除信箱中的項目。如需詳細指示，請參閱[刪除處於保留狀態下雲端型信箱的 [可復原的項目] 資料夾中的項目](https://docs.microsoft.com/microsoft-365/compliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold)。
 
 >[!NOTE]
 >若要遵循上一個主題中的程序，實刪除信箱項目以滿足 DSR 刪除要求，您可能必須在信箱仍處於保留狀態時虛刪除這些項目，以便將其移至 [可復原的項目] 資料夾。
@@ -603,7 +603,7 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 
 1. 請移至系統管理中心或 Azure 入口網站，然後找出使用者。
 
-2. 刪除使用者。一開始刪除使用者時，該使用者的帳戶會傳送至資源回收筒。此時，只是對使用者進行虛刪除，帳戶會以虛刪除的狀態保留 30 天，這可讓您還原帳戶。30 天後，帳戶會自動實刪除。如需特定指示，請參閱[刪除 Azure AD 中的使用者](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory)。<br><br> 您也可以虛刪除系統管理中心的使用者帳戶。 請參閱[刪除貴組織中的使用者](https://support.office.com/article/Delete-a-user-from-your-organization-D5155593-3BAC-4D8D-9D8B-F4513A81479E)。
+2. 刪除使用者。一開始刪除使用者時，該使用者的帳戶會傳送至資源回收筒。此時，只是對使用者進行虛刪除，帳戶會以虛刪除的狀態保留 30 天，這可讓您還原帳戶。30 天後，帳戶會自動實刪除。如需特定指示，請參閱[刪除 Azure AD 中的使用者](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory)。<br><br> 您也可以虛刪除系統管理中心的使用者帳戶。 請參閱[刪除貴組織中的使用者](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)。
 
 3. 如果您不想等待 30 天，再實刪除使用者帳戶，您可以手動進行實刪除。 若要在 Azure 入口網站執行此動作，請移至最近刪除的使用者清單，並永久刪除使用者。 此時使用者會實刪除。 如需指示，請參閱[如何永久刪除最近刪除的使用者](https://docs.microsoft.com/azure/active-directory/active-directory-users-restore)。
 
@@ -645,7 +645,7 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 
 您有幾種方式可用來在可回應 DSR 要求的 Access 資料庫中搜尋記錄。對於 DSR 調查，您可以搜尋資料主體相關記錄或搜尋含有特定資料的記錄。例如，您可以搜尋或移至資料主體的對應記錄。或者，您可以搜尋含有特定資料的記錄，例如有關資料主體的個人資料。如需詳細資訊，請參閱：
 
-- [在 Access 資料庫中尋找記錄](https://support.office.com/article/find-records-in-an-access-database-705220b7-0255-4ef9-9349-6bd7442d1b7e) 
+- [在 Access 資料庫中尋找記錄](https://support.microsoft.com/zh-TW/office/find-records-in-an-access-database-705220b7-0255-4ef9-9349-6bd7442d1b7e) 
 - [建立簡單的選取查詢](https://support.office.com/article/create-a-simple-select-query-de8b1c8d-14e9-4b25-8e22-70888d54de59)
 
 ##### <a name="access"></a>Access
@@ -654,18 +654,18 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 
 - [Access 中的報告簡介](https://support.office.com/article/introduction-to-reports-in-access-e0869f59-7536-4d19-8e05-7158dcd3681c)
 - [將資料匯出到 Excel](https://support.office.com/article/export-data-to-excel-64e974e6-ae43-4301-a53e-20463655b1a9)
-- [將資料匯出到 Word 文件](https://support.office.com/article/export-access-data-to-a-word-document-6e954c8e-2243-4cb9-8544-607e5b7bfc12)
-- [將資料匯出到文字檔](https://support.office.com/article/export-data-to-a-text-file-f72dfc38-a8a0-4c5b-8c2c-bf2950814140)
+- [將資料匯出到 Word 文件](https://support.microsoft.com/zh-TW/office/export-access-data-to-a-word-document-6e954c8e-2243-4cb9-8544-607e5b7bfc12)
+- [將資料匯出到文字檔](https://support.microsoft.com/zh-TW/office/export-data-to-a-text-file-f72dfc38-a8a0-4c5b-8c2c-bf2950814140)
 
 ##### <a name="export"></a>匯出
 
-如先前所述，您可以將資料從 Access 資料庫匯出為不同的檔案格式。 您選擇要匯出的檔案格式可能會取決於來自資料主體的特定 DSR 匯出要求。 請參閱[匯入及匯出](https://support.office.com/article/import-and-export-c060505b-d8ac-4499-8879-733e56c6106f)主題清單，其中說明如何以不同的檔案格式匯出 Access 資料。
+如先前所述，您可以將資料從 Access 資料庫匯出為不同的檔案格式。 您選擇要匯出的檔案格式可能會取決於來自資料主體的特定 DSR 匯出要求。 請參閱[匯入及匯出](https://support.microsoft.com/zh-TW/office/import-and-export-c060505b-d8ac-4499-8879-733e56c6106f)主題清單，其中說明如何以不同的檔案格式匯出 Access 資料。
 
 ##### <a name="delete"></a>刪除
 
 您可以刪除整筆記錄，或只是從 Access 資料庫中刪除一個欄位。 從 Access 資料庫中刪除一筆記錄的最快方法，就是以 [資料工作表] 檢視開啟資料表，選取您想要刪除的記錄 (列) 或只選取欄位中的資料，然後按 [刪除]。 您也可以使用您為了尋找資料所建立的選取查詢，然後將它轉換為刪除查詢。 請參閱：
 
-- [從資料庫中刪除一或多筆記錄](https://support.office.com/article/delete-one-or-more-records-from-a-database-002b850d-1efa-473d-9297-0994ce46c66a)
+- [從資料庫中刪除一或多筆記錄](https://support.office.com/article/ways-to-add-edit-and-delete-records-5e90a80c-106d-4c55-996e-07d7200980ce)
 - [建立並執行刪除查詢](https://support.office.com/article/create-and-run-a-delete-query-6da65fe1-0fc7-4a64-8ef0-c052cd4c3ec5)
 
 ### <a name="business-apps-for-office-365"></a>適用於 Office 365 的商務應用程式
@@ -914,7 +914,7 @@ Invoicing 會收集並儲存下列類型的資料：
 
 - Flow/PowerApps 方案 2 授權 (付費或試用版)
 
-- [全域系統管理員\ ](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)
+- [全域系統管理員\ ](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
 
     或
 
@@ -974,11 +974,11 @@ Forms 使用者可以移至 <https://forms.office.com>，然後選取 [我的表
 
 #### <a name="access"></a>Access
 
-在找到相關表單之後，您可以按一下 [回應]**** 索引標籤，來存取表單的回應。深入了解如何[檢查您的測驗結果](https://support.office.com/article/c4a9b45c-d62f-4eb7-b5db-ad81892c7c07)或[表單結果](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af)。 若要在 Excel 中檢視回應結果，請選取 [回應] **** 索引標籤，然後按一下 [在 Excel 中開啟]****。 如果您想要將表單的複本傳送給資料主體，可以取得以 RTF 格式顯示在應用程式中之相關問答的螢幕擷取畫面，或將結果的 Excel 複本傳送給資料主體。 如果您正在使用 Excel，且只想要與資料主體共用問卷結果的一部分，可以刪除特定列或欄，或刪減剩餘的區段，然後共用結果。 或者，您也可以移至 [共用]**\> [取得複製的連結]** (在 [共用] 下的範本)，以便將整個表單的複寫提供給資料主體。
+在找到相關表單之後，您可以按一下 [回應]**** 索引標籤，來存取表單的回應。深入了解如何[檢查您的測驗結果](https://support.microsoft.com/zh-TW/office/check-and-share-your-quiz-results-c4a9b45c-d62f-4eb7-b5db-ad81892c7c07)或[表單結果](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af)。 若要在 Excel 中檢視回應結果，請選取 [回應] **** 索引標籤，然後按一下 [在 Excel 中開啟]****。 如果您想要將表單的複本傳送給資料主體，可以取得以 RTF 格式顯示在應用程式中之相關問答的螢幕擷取畫面，或將結果的 Excel 複本傳送給資料主體。 如果您正在使用 Excel，且只想要與資料主體共用問卷結果的一部分，可以刪除特定列或欄，或刪減剩餘的區段，然後共用結果。 或者，您也可以移至 [共用]**\> [取得複製的連結]** (在 [共用] 下的範本)，以便將整個表單的複寫提供給資料主體。
 
 #### <a name="delete"></a>刪除
 
-擁有者可以永久刪除任何問卷、測驗、問卷調查或投票。如果您想要接受「忘記我」DSR 並刪除整個表單，請尋找表單清單中的表單、在表單預覽視窗右上角選取一連串的點 (省略符號)，然後按一下 [刪除]****。表單一經刪除，便無法擷取。如需詳細資訊，請參閱[刪除表單](https://support.office.com/article/delete-a-form-2207e468-ce1b-4c4a-a256-caf631d87af0)。
+擁有者可以永久刪除任何問卷、測驗、問卷調查或投票。如果您想要接受「忘記我」DSR 並刪除整個表單，請尋找表單清單中的表單、在表單預覽視窗右上角選取一連串的點 (省略符號)，然後按一下 [刪除]****。表單一經刪除，便無法擷取。如需詳細資訊，請參閱[刪除表單](https://support.microsoft.com/zh-TW/office/delete-a-form-2207e468-ce1b-4c4a-a256-caf631d87af0)。
 
 #### <a name="export"></a>匯出
 
@@ -1017,8 +1017,8 @@ Kaizala 使用者可以移至其行動裝置，查看他們在其裝置上所建
 
 當貴組織中的使用者使用 Kaizala 時，就會產生消費者資料，而如果使用者參與組織群組，則可能會產生組織資料。系統管理員可以從 Kaizala 管理入口網站匯出使用者的組織資料。Kaizala 消費者使用者可以從 Kaizala 行動裝置應用程式匯出其私人資料。在這兩種情況下，請注意，當系統管理員或使用者匯出 Kaizala 資料時，也會匯出產品和服務使用情況資料。如需詳細資訊，請參閱：
 
-- [在 Kaizala 中匯出或刪除使用者的組織資料](https://support.office.com/article/export-or-delete-a-user-s-organizational-data-in-kaizala-150ec214-a070-4e8a-8509-82f46d84bbb6)
-- [在 Kaizala 行動應用程式中匯出或刪除您的資料](https://support.office.com/article/export-or-delete-your-data-in-the-kaizala-mobile-app-65f83dbc-4f10-4644-9b2d-9945c967684e)
+- [在 Kaizala 中匯出或刪除使用者的組織資料](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
+- [在 Kaizala 行動應用程式中匯出或刪除您的資料](https://docs.microsoft.com/office365/kaizala/export-or-delete-your-data)
 
 #### <a name="delete"></a>刪除
 
@@ -1028,8 +1028,8 @@ Kaizala 系統管理員可以在 Kaizala 管理入口網站中移除 Kaizala 使
 
 如需詳細資訊，請參閱：
 
-- [在 Kaizala 中匯出或刪除使用者的組織資料](https://support.office.com/article/export-or-delete-a-user-s-organizational-data-in-kaizala-150ec214-a070-4e8a-8509-82f46d84bbb6)
-- [在 Kaizala 行動應用程式中匯出或刪除您的資料](https://support.office.com/article/export-or-delete-your-data-in-the-kaizala-mobile-app-65f83dbc-4f10-4644-9b2d-9945c967684e)
+- [在 Kaizala 中匯出或刪除使用者的組織資料](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
+- [在 Kaizala 行動應用程式中匯出或刪除您的資料](https://docs.microsoft.com/office365/kaizala/export-or-delete-your-data)
 
 ### <a name="planner"></a>Planner
 
@@ -1037,7 +1037,7 @@ Kaizala 系統管理員可以在 Kaizala 管理入口網站中移除 Kaizala 使
 
 #### <a name="discover"></a>探索
 
-Planner 計劃與 Microsoft 365 群組相關聯，而且 Microsoft 365 群組的檔案會儲存在該群組的相關聯 SharePoint Online 網站中。 這表示，您可以使用內容搜尋來搜尋 Microsoft 365 群組的網站，以尋找 Planner 檔案。 若要這麼做，您必須要有 Microsoft 365 群組的 URL。 如需如何取得 Microsoft 365 群組之相關資訊的提示，請參閱「Office 365 中的內容搜尋」說明主題中的[搜尋 Microsoft Teams 和 Microsoft 365 群組](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)，來協助您在對應的 SharePoint Online 網站中搜尋 Planner 檔案。
+Planner 計劃與 Microsoft 365 群組相關聯，而且 Microsoft 365 群組的檔案會儲存在該群組的相關聯 SharePoint Online 網站中。 這表示，您可以使用內容搜尋來搜尋 Microsoft 365 群組的網站，以尋找 Planner 檔案。 若要這麼做，您必須要有 Microsoft 365 群組的 URL。 如需如何取得 Microsoft 365 群組之相關資訊的提示，請參閱「Office 365 中的內容搜尋」說明主題中的[搜尋 Microsoft Teams 和 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/compliance/content-search)，來協助您在對應的 SharePoint Online 網站中搜尋 Planner 檔案。
 
 #### <a name="access"></a>Access
 
@@ -1088,7 +1088,7 @@ PowerApps 是一種服務，用於組建可在貴組織內共用及使用的應�
 若要促成與 PowerApps 相關的 DSR 要求，您可以運用 [PowerApps 系統管理中心](https://admin.powerapps.com/)和 [PowerApps Admin PowerShell Cmdlet](https://go.microsoft.com/fwlink/?linkid=871804) 中公開的系統管理作業。 要存取這些工具將需要具有下列權限的帳戶：
 
 - 付費的 PowerApps 方案 2 授權或 PowerApps 方案 2 試用版授權。 您可以在[這裡](https://web.powerapps.com/trial)註冊 30 天試用版授權。
-- [全域系統管理員](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)，或
+- [全域系統管理員](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)，或
 - [Azure Active Directory 全域系統管理員](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
 
 如需尋找個人資料的詳細資訊，請參閱[探索 PowerApps 個人資料](https://go.microsoft.com/fwlink/?linkid=871880)。
@@ -1152,15 +1152,15 @@ PowerApps 服務也包含了 Common Data Service For Apps，可讓使用者可�
 
 找到資料之後，就可以取得其螢幕擷取畫面，或複製資料並貼到 Word 或文字檔案，並將該資料提供給資料物件。 您也可以將出版物儲存為 Word、PDF 或 XPS 檔案。 請參閱：
 
-  - [將出版物儲存為 Word 文件](https://support.office.com/article/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
-  - [使用 Publisher 將出版物另存新檔為或轉換為 .pdf 或 .xps](https://support.office.com/article/657332d0-d2c2-464a-9870-e9b3d22e6469)
+  - [將出版物儲存為 Word 文件](https://support.microsoft.com/zh-TW/office/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
+  - [使用 Publisher 將出版物另存新檔為或轉換為 .pdf 或 .xps](https://support.microsoft.com/zh-TW/office/save-as-or-convert-a-publication-to-pdf-or-xps-using-publisher-657332d0-d2c2-464a-9870-e9b3d22e6469)
 
 #### <a name="export"></a>匯出
 
 您可以使用實際 Publisher 檔案提供資料主體，或如先前所述，您可以將出版物另存新檔為 Word、PDF 或 XPS 檔案。 請參閱：
 
-  - [將出版物儲存為 Word 文件](https://support.office.com/article/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
-  - [使用 Publisher 將出版物另存新檔為或轉換為 .pdf 或 .xps](https://support.office.com/article/657332d0-d2c2-464a-9870-e9b3d22e6469)
+  - [將出版物儲存為 Word 文件](https://support.microsoft.com/zh-TW/office/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
+  - [使用 Publisher 將出版物另存新檔為或轉換為 .pdf 或 .xps](https://support.microsoft.com/zh-TW/office/save-as-or-convert-a-publication-to-pdf-or-xps-using-publisher-657332d0-d2c2-464a-9870-e9b3d22e6469)
 
 #### <a name="delete"></a>刪除
 
@@ -1223,7 +1223,7 @@ Whiteboard 檔案 (.wbx 檔案) 會儲存在使用者的商務用 OneDrive 帳�
 
 若要存取及移轉白板： 
 
-1. 授與您自己存取使用者之商務用 OneDrive 帳戶的權限。請參閱[存取及備份先前使用者的資料](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604)中的＜存取離職員工的商務用 OneDrive 文件＞一節。
+1. 授與您自己存取使用者之商務用 OneDrive 帳戶的權限。請參閱[存取及備份先前使用者的資料](https://docs.microsoft.com/microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)中的＜存取離職員工的商務用 OneDrive 文件＞一節。
 2. 移至使用者的商務用 OneDrive 帳戶中的 [Whiteboard 應用程式資料] 資料夾，並且複製您要移轉之白板的 .wbx 檔案。
 3. 授與您自己存取資料主體之商務用 OneDrive 帳戶的權限，然後移至 [Whiteboard 應用程式資料] 資料夾。
 4. 貼上您在上一步中複製的 .wbx 檔案。
@@ -1247,7 +1247,7 @@ Whiteboard 檔案 (.wbx 檔案) 會儲存在使用者的商務用 OneDrive 帳�
 
 您可以授與自己存取使用者之商務用 OneDrive 帳戶的權限，然後刪除白板。
 
-1. 授與您自己存取資料主體之商務用 OneDrive 帳戶的權限。請參閱[存取及備份先前使用者的資料](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604)中的＜存取離職員工的商務用 OneDrive 文件＞一節。
+1. 授與您自己存取資料主體之商務用 OneDrive 帳戶的權限。請參閱[存取及備份先前使用者的資料](https://docs.microsoft.com/microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)中的＜存取離職員工的商務用 OneDrive 文件＞一節。
 2. 移至 [Whiteboard 應用程式資料] 資料夾，然後刪除此資料夾的內容。
 
 #### <a name="whiteboard-for-pc-surface-hub-and-other-platforms"></a>適用於電腦、Surface Hub 及其他平台的 Whiteboard
@@ -1421,7 +1421,7 @@ Power BI 依賴用於其儀表板和報告的基礎來源資料，才能完整�
 
 ### <a name="preventing-users-from-accessing-their-onedrive-for-business-account"></a>防止使用者存取其商務用 OneDrive 帳戶
 
-移除使用者的 SharePoint Online 授權，並無法防止使用者存取其商務用 OneDrive 帳戶 (若已存在的話)。 您必須移除使用者對其商務用 OneDrive 帳戶的權限。 做法為以其商務用 OneDrive 帳戶的網站集合擁有者身分移除使用者。 具體來說，您必須從其使用者設定檔中的主要網站集合系統管理員網站集合系統管理員「主要網站集合管理員」和「網站集合管理員」群組中移除使用者。 請參閱[管理 SharePoint 管理中心的使用者設定檔](https://support.office.com/article/Manage-user-profiles-in-the-SharePoint-admin-center-494bec9c-6654-41f0-920f-f7f937ea9723)中的＜新增和移除商務用 OneDrive 帳戶上的系統管理員＞一節。
+移除使用者的 SharePoint Online 授權，並無法防止使用者存取其商務用 OneDrive 帳戶 (若已存在的話)。 您必須移除使用者對其商務用 OneDrive 帳戶的權限。 做法為以其商務用 OneDrive 帳戶的網站集合擁有者身分移除使用者。 具體來說，您必須從其使用者設定檔中的主要網站集合系統管理員網站集合系統管理員「主要網站集合管理員」和「網站集合管理員」群組中移除使用者。 請參閱[管理 SharePoint 管理中心的使用者設定檔](https://docs.microsoft.com/sharepoint/manage-user-profiles)中的＜新增和移除商務用 OneDrive 帳戶上的系統管理員＞一節。
 
 ### <a name="turning-off-an-office-365-service"></a>關閉 Office 365 服務
 

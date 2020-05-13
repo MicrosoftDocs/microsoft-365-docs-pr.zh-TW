@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 70c82232dff10bb13c5079de9590cde2508db14c
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: bfaead99bf439173cb353bc745488a5d0aee70c4
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159930"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210532"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -56,7 +56,7 @@ ms.locfileid: "44159930"
 
 ## <a name="reviewers"></a>檢閱者
 
-當您建立通訊相容性原則時，必須決定誰會審核使用者的郵件。 在原則中，使用者電子郵件地址可識別人員或群組，以查看已監督的通訊。 所有檢閱者都必須在 Exchange Online 上主控信箱，而且必須為**案例管理**和**審閱**角色指派信箱。
+當您建立通訊相容性原則時，必須決定誰會審核使用者的郵件。 在原則中，使用者電子郵件地址可識別人員或群組，以查看已監督的通訊。 所有檢閱者都必須在 Exchange Online 上主控信箱，而且必須為**案例管理**和**審閱**角色指派信箱。 當檢閱者新增至原則時，會自動收到一封電子郵件，通知他們對原則的指派，並提供審閱程式相關資訊的連結。
 
 ## <a name="groups-for-supervised-users-and-reviewers"></a>監督的使用者和檢閱者群組
 
@@ -71,7 +71,7 @@ ms.locfileid: "44159930"
 - **Microsoft 小組**：您可以掃描公開和私人 Microsoft 團隊通道和個別聊天中的聊天通訊和相關聯的附件。 小組聊天和附件符合通訊合規性原則的情況可能需要長達24小時才能處理。 使用下列群組管理設定來監督小組中個別的使用者聊天與通道通訊：
 
     - **小組聊天通訊：** 指派個別使用者或指派[通訊群組](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)至通訊相容性原則。 此設定適用于一對一或一對多的使用者/聊天關聯。
-    - 若**為小組通道通訊：** 將您想要掃描的每個 Microsoft 小組通道或 Microsoft 365 群組指派給通訊相容性原則，其中包含特定的使用者。 如果您將相同使用者新增至其他 Microsoft 小組通道或 Microsoft 365 群組，請務必將這些新的通道和群組新增至通訊相容性原則。
+    - 若**為小組通道通訊：** 將您想要掃描的每個 Microsoft 團隊通道或 Microsoft 365 群組指派給通訊合規性原則，其中包含特定的使用者。 如果您將相同使用者新增至其他 Microsoft 小組通道或 Microsoft 365 群組，請務必將這些新的通道和群組新增至通訊相容性原則。
 
 - **Exchange 電子郵件**：在 exchange Online 中主控的信箱，作為 Microsoft 365 或 Office 365 訂閱的一部分，都符合郵件掃描的條件。 Exchange 電子郵件訊息和附件符合通訊合規性原則的情況可能需要長達24小時才能處理。 支援的通訊遵循類型與[Exchange 郵件流程規則內容檢查所支援的檔案類型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
 
@@ -162,7 +162,7 @@ ms.locfileid: "44159930"
 | **附件包含下列任一字**  <br><br> **附件不包含任何這些字詞** | 若要在郵件附件（例如 Word 檔）中包含或排除某些字詞或片語時套用原則，請輸入每個單字以逗號分隔。 如果是兩個字以上的片語，請在該片語兩邊使用引號。 您輸入的每個單字或片語都是分開套用（只有一個字必須套用，原則才能套用至附件）。 如需輸入單字或片語的詳細資訊，請參閱下一節[將字詞和片語比對電子郵件或附件](communication-compliance-feature-reference.md#Matchwords)。|
 | **附件為下列其中一種檔案類型**  <br><br> **附件不是任何檔案類型** | 若要監督包含或排除特定類型附件的通訊，請輸入副檔名（例如 .exe 或 .pdf）。 如果您想要包含或排除多個副檔名，請在個別的行上輸入這些副檔名。 只有一個附件副檔名必須符合原則才能套用。|
 | **郵件大小大於**  <br><br> **郵件大小不大於** | 若要根據特定大小來查看郵件，請使用下列條件，指定郵件在進行審閱之前可以具有的最大或最小大小。 例如，如果您指定的**郵件大小大於** \> **1.0 MB**，則所有 1.01 MB 和更大的郵件都會進行審閱。 您可以選擇此條件的位元組、kb、mb 或 gb。|
-| **附件大於**  <br><br> **附件不大於** | 若要根據附件大小來查看郵件，請指定郵件之前的附件大小上限或最小值。 例如，如果您指定的**附件** \>大於**2.0 mb**，所有附件為 2.01 MB 的郵件都會進行審閱。 您可以選擇此條件的位元組、kb、mb 或 gb。|
+| **附件大於**  <br><br> **附件不大於** | 若要根據附件大小來查看郵件，請指定郵件之前的附件大小上限或最小值。 例如，如果您指定的**附件**大於 \> **2.0 mb**，所有附件為 2.01 MB 的郵件都會進行審閱。 您可以選擇此條件的位元組、kb、mb 或 gb。|
    
 #### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>比對電子郵件或附件的字詞和片語
 <a name="Matchwords"> </a>

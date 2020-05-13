@@ -1,5 +1,5 @@
 ---
-title: 使用郵件流程規則來篩選 Office 365 中的大量電子郵件
+title: 使用郵件流程規則來篩選大量電子郵件
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,28 +14,32 @@ search.appverid:
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
-description: 系統管理員可以瞭解如何使用 Exchange Online Protection （EOP）中的郵件流程規則，以進行大量電子郵件篩選。
+description: 系統管理員可以瞭解如何使用郵件流程規則（傳輸規則），在 Exchange Online Protection （EOP）中識別及篩選大宗郵件（灰色郵件）。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43a10951a24ac76108fb0531f9e2c205c3fc9047
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: bb305551db1e86d8d6eccf5e95cdaad29e6711ef
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034971"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208522"
 ---
-# <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a>使用郵件流程規則來篩選 Office 365 中的大量電子郵件
+# <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>使用郵件流程規則來篩選 EOP 中的大量電子郵件
 
-如果您是使用 Exchange Online 中的信箱或獨立 Exchange Online Protection （EOP）客戶但沒有 Exchange Online 信箱的 Microsoft 365 客戶，EOP 會使用反垃圾郵件原則（也稱為垃圾郵件篩選原則或內容篩選原則）來掃描輸入郵件中的垃圾郵件和大宗郵件（也稱為灰色郵件）。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+在未使用 Exchange online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）組織中使用信箱的 Microsoft 365 組織中，EOP 會使用反垃圾郵件原則（也稱為垃圾郵件篩選原則或內容篩選原則）來掃描輸入郵件中的垃圾郵件和大宗郵件（也稱為灰色郵件）。 如需詳細資訊，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-如果您想要更多的選項來篩選大宗郵件，您可以建立郵件流程規則（也稱為傳輸規則），以搜尋大宗郵件中經常找到的文字模式或片語，並將這些郵件標示為垃圾郵件。 如需大宗郵件的詳細資訊，請參閱 Office 365 中的[垃圾郵件和大量電子郵件](what-s-the-difference-between-junk-email-and-bulk-email.md)以及[大量投訴（BCL）](bulk-complaint-level-values.md)之間的差異。
+如果您想要更多的選項來篩選大宗郵件，您可以建立郵件流程規則（也稱為傳輸規則），以搜尋大宗郵件中經常找到的文字模式或片語，並將這些郵件標示為垃圾郵件。 如需大宗郵件的詳細資訊，請參閱 EOP 中[垃圾郵件和大量電子郵件](what-s-the-difference-between-junk-email-and-bulk-email.md)以及大量[投訴（BCL）](bulk-complaint-level-values.md)之間的差異。
 
-本主題說明如何在 Exchange 系統管理中心（EAC）和 PowerShell （Microsoft 365 客戶的 Exchange Online PowerShell 中建立這些郵件流程規則;Exchange Online Protection PowerShell 適用于獨立 EOP 客戶）。
+本主題說明如何在 Exchange 系統管理中心（EAC）中建立這些郵件流程規則 PowerShell，以及如何在 exchange Online 中建立 EOP （Exchange Online PowerShell 365 適用于 exchange Online 的信箱; 獨立 PowerShell 不含 Exchange Online 信箱的組織）。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您必須先在 Exchange Online 中指派許可權，才能執行這些程式。 具體而言，您必須被指派**傳輸規則**角色，預設會指派給**組織管理**、**規範管理**及**記錄管理**角色。 如需詳細資訊，請參閱[管理 Exchange Online 中的角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
+- 您必須已獲指派許可權，才能執行這些程式：
 
-- 若要在 Exchange Online 中開啟 EAC，請參閱 exchange [online 中的 exchange admin center](https://docs.microsoft.com/Exchange/exchange-admin-center)。
+  - 在 Exchange Online 中，請參閱在[Exchange online 中的功能許可權中](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions)的「郵件流程」專案。
+  
+  - 在獨立 EOP 中，您需要傳輸規則角色，預設會指派給 OrganizationManagement、ComplianceManagement 和 RecordsManagement 角色。 如需詳細資訊，請參閱[獨立 EOP 中的許可權](feature-permissions-in-eop.md)和[使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+
+- 若要在 Exchange Online 中開啟 EAC，請參閱 exchange [online 中的 exchange admin center](https://docs.microsoft.com/Exchange/exchange-admin-center)。 若要在獨立 EOP 中開啟 EAC，請參閱[Exchange admin center in 獨立 EOP](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連接至獨立版 Exchange Online Protection PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
@@ -57,7 +61,7 @@ ms.locfileid: "44034971"
 
 1. 在 EAC 中，移至 [郵件流程]**** \> [規則]****。
 
-2. 按一下 [**新增** ![加入](../../media/ITPro-EAC-AddIcon.png)圖示]，然後選取 [**建立新的規則**]。
+2. 按一下 [**新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) ，然後選取 [**建立新的規則**]。
 
 3. 在開啟的 [**新增規則**] 頁面中，設定下列設定：
 
@@ -67,75 +71,52 @@ ms.locfileid: "44034971"
 
    - **在下列情況中套用此規則**：設定下列其中一個設定，以使用正則運算式（RegEx）或字詞或片語來尋找郵件中的內容：
 
-     - 主旨**或** \>本文的主旨或內文**符合這些文字模式**：在出現的 [**指定字詞或片語**] 對話方塊中，輸入下列其中一個值，按一下 [](../../media/ITPro-EAC-AddIcon.png)**新增** ![] 圖示，然後重複，直到您輸入所有值為止。
+     - **主語或** \> 本文主旨或內文**符合這些文字模式**：在出現的 [**指定字詞或片語**] 對話方塊中，輸入下列其中一個值，按一下 [**新增**] ![ 圖示 ](../../media/ITPro-EAC-AddIcon.png) ，然後重複，直到您輸入所有值為止。
 
        - `If you are unable to view the content of this email\, please`
-
        - `\>(safe )?unsubscribe( here)?\</a\>`
-
        - `If you do not wish to receive further communications like this\, please`
-
        - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
-
        - `To stop receiving these+emails\:http\://`
-
        - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
-
        - `no longer (wish )?(to )?(be sent|receive) w+ email`
-
        - `If you are unable to view the content of this email\, please click here`
-
        - `To ensure you receive (your daily deals|our e-?mails)\, add`
-
        - `If you no longer wish to receive these emails`
-
        - `to change your (subscription preferences|preferences or unsubscribe)`
-
        - `click (here to|the) unsubscribe`
 
-      若要編輯專案，請選取它， **Edit** ![然後按一下 [](../../media/ITPro-EAC-EditIcon.png)編輯編輯圖示]。 若要移除專案，請選取它， **Remove** ![然後按一下 [](../../media/ITPro-EAC-DeleteIcon.png)移除移除圖示]。
+      若要編輯專案，請選取它，然後按一下 [**編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-EditIcon.png) 。 若要移除專案，請選取它，然後按一下 [**移除** ![ 移除圖示] ](../../media/ITPro-EAC-DeleteIcon.png) 。
 
        完成後，按一下 [確定]****。
 
-     - 主旨**或** \>本文的主旨或內文**包含下列任何文字**：在出現的 [**指定字詞或片語**] 對話方塊中，輸入下列其中一個值，按一下 [**新增** ![] 圖示](../../media/ITPro-EAC-AddIcon.png)，然後重複，直到您輸入所有值為止。
+     - **主語或** \> 本文主旨或內文**包含下列任何文字**：在出現的 [**指定字詞或片語**] 對話方塊中，輸入下列其中一個值，按一下 [**新增**] ![ 圖示 ](../../media/ITPro-EAC-AddIcon.png) ，然後重複，直到您輸入所有值為止。
 
        - `to change your preferences or unsubscribe`
-
        - `Modify email preferences or unsubscribe`
-
        - `This is a promotional email`
-
        - `You are receiving this email because you requested a subscription`
-
        - `click here to unsubscribe`
-
        - `You have received this email because you are subscribed`
-
        - `If you no longer wish to receive our email newsletter`
-
        - `to unsubscribe from this newsletter`
-
        - `If you have trouble viewing this email`
-
        - `This is an advertisement`
-
        - `you would like to unsubscribe or change your`
-
        - `view this email as a webpage`
-
        - `You are receiving this email because you are subscribed`
 
-      若要編輯專案，請選取它， **Edit** ![然後按一下 [](../../media/ITPro-EAC-EditIcon.png)編輯編輯圖示]。 若要移除專案，請選取它， **Remove** ![然後按一下 [](../../media/ITPro-EAC-DeleteIcon.png)移除移除圖示]。
+      若要編輯專案，請選取它，然後按一下 [**編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-EditIcon.png) 。 若要移除專案，請選取它，然後按一下 [**移除** ![ 移除圖示] ](../../media/ITPro-EAC-DeleteIcon.png) 。
 
        完成後，按一下 [確定]****。
 
-   - **請執行下列**動作：選取 [**修改郵件屬性** \> ]**設定垃圾郵件信賴等級（SCL）**。 在出現的 [**指定 SCL** ] 對話方塊中，設定下列其中一個設定：
+   - **請執行下列**動作：選取 [**修改郵件屬性**] \> **設定垃圾郵件信賴等級（SCL）**。 在出現的 [**指定 SCL** ] 對話方塊中，設定下列其中一個設定：
 
      - 若要將郵件標示為**垃圾**郵件，請選取 [ **6**]。 您為反垃圾郵件原則中的**垃圾**郵件篩選 verdicts 設定的動作會套用至郵件（預設值為 [**將郵件移至垃圾郵件資料夾**]）。
 
      - 將郵件標示為**高信賴度垃圾郵件**選取**9**。 您為反垃圾郵件原則中已設定**高信賴度垃圾郵件**篩選 verdicts 的動作會套用至郵件（預設值為 [**將郵件移至垃圾郵件資料夾**]）。
 
-    如需 SCL 值的詳細資訊，請參閱[Office 365 中的垃圾郵件信賴等級（SCL）](spam-confidence-levels.md)。
+    如需 SCL 值的詳細資訊，請參閱[EOP 中的垃圾郵件信賴等級（SCL）](spam-confidence-levels.md)。
 
    完成後，請按一下 [儲存]****。
 
@@ -165,9 +146,9 @@ New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWor
 
 若要驗證您是否已設定郵件流程規則以篩選大量電子郵件，請執行下列任一步驟：
 
-- 在 EAC 中，移至 [**郵件流程** \> **規則** \> ] 選取\>規則，然後按一下](../../media/ITPro-EAC-EditIcon.png)[**編輯** ![編輯圖示]，然後驗證設定。
+- 在 EAC 中，移至 [**郵件流程** \> **規則**] \> 選取規則 \> ，然後按一下 [**編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-EditIcon.png) ，然後驗證設定。
 
-- 在 PowerShell 中， \<以規則\>名稱取代規則名稱，並執行下列命令來確認設定：
+- 在 PowerShell 中，以 \< 規則名稱取代規則名稱 \> ，並執行下列命令來確認設定：
 
   ```powershell
   Get-TransportRule -Identity "<Rule Name>" | Format-List

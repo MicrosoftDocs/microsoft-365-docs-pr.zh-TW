@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 深入瞭解 Microsoft 365 中的多重要素驗證，以及設定它時所需遵循的步驟。
-ms.openlocfilehash: 035a79c9db44990dbce09de540e3e483b3cea8df
-ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
+ms.openlocfilehash: 6d28e9e7db825aa9030196396ad420028dc1c881
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43665665"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213125"
 ---
 # <a name="plan-for-multi-factor-authentication-for-microsoft-365-deployments"></a>規劃 Microsoft 365 部署的多重要素驗證
 
@@ -131,10 +131,10 @@ Sor 詳細資訊，請參閱[關於新式驗證 wiki 文章的常見問題](http
     
 2. [設定 Microsoft 365 的 MFA](set-up-multi-factor-authentication.md)。
     
-3. 告訴個別使用者如何以 MFA 登入。 請參閱[使用 MFA 登入 Microsoft 365](https://support.office.com/en-us/article/sign-in-to-microsoft-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)。
+3. 告訴個別使用者如何以 MFA 登入。 請參閱[使用 MFA 登入 Microsoft 365](https://support.office.com/article/sign-in-to-microsoft-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)。
 
 > [!IMPORTANT]
-> 如果您已對使用者啟用 Azure Multi-Factor 驗證，而且他們的任何執行 Office 2013 的裝置都未啟用新式驗證，則需要在這些裝置上使用 AppPasswords。 如需 AppPasswords 及應使用方式的詳細資訊，請參閱下列網址： [Azure Multi-Factor 驗證的應用程式密碼](https://go.microsoft.com/fwlink/p/?LinkId=528178)。
+> 如果您已對使用者啟用 Azure Multi-Factor 驗證，而且他們的任何執行 Office 2013 的裝置都未啟用新式驗證，則需要在這些裝置上使用應用程式密碼。 如需詳細資訊，請參閱[本文](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings#app-passwords)。
   
 ## <a name="faq"></a>常見問題集
 

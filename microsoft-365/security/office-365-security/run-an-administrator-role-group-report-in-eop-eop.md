@@ -1,5 +1,5 @@
 ---
-title: 執行 EOP 中的系統管理員角色群組報告
+title: 在獨立 EOP 中執行系統管理員角色群組報告
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,25 +13,25 @@ localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您將瞭解如何在 Exchange Online Protection （EOP）中執行系統管理員角色群組報告。
-ms.openlocfilehash: d3c4db8079a71ba054f323617d3ade65083a3a04
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理員可以瞭解如何在獨立 Exchange Online Protection （EOP）中執行系統管理員角色群組報告。 當系統管理員在系統管理員角色群組中新增或移除成員時，此報告會登入，EOP 記錄每次出現一次。
+ms.openlocfilehash: f5641e9900c786f976d05cdeeec148caab12a03d
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034453"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209172"
 ---
-# <a name="run-an-administrator-role-group-report-in-eop"></a>執行 EOP 中的系統管理員角色群組報告
+# <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>在獨立 EOP 中執行系統管理員角色群組報告
 
- 當系統管理員在系統管理員角色群組中新增或移除成員時，Exchange Online Protection （EOP）會記錄每個事件。 當您在 Exchange 系統管理中心（EAC）中執行系統管理員角色群組報告時，專案會顯示為搜尋結果，並包含受影響的角色群組、變更角色群組成員資格的人員，以及進行的成員資格更新。 使用此報告可監視指派給組織使用者的系統管理權限變更。
+在沒有 Exchange Online 信箱的獨立 Exchange Online Protection （EOP）組織中，當系統管理員新增成員至或移除系統管理角色群組中的成員時，服務會記錄每個事件。 如需獨立 EOP 中角色群組的詳細資訊，請參閱[獨立 EOP 中的許可權](feature-permissions-in-eop.md)。
+
+當您在 Exchange 系統管理中心（EAC）中執行系統管理員角色群組報告時，專案會顯示為搜尋結果，並包含受影響的角色群組、變更角色群組成員資格的人員，以及進行的成員資格更新。 使用此報告可監視指派給組織使用者的系統管理權限變更。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 預估完成時間：2 分鐘
+- 若要開啟 Exchange 系統管理中心，請參閱[exchange admin center in 獨立 EOP](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 若要開啟 Exchange 系統管理中心，請參閱 exchange [Online Protection 中的 exchange 系統管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
-
-- 您必須已獲指派權限，才能執行此程序或這些程序。若要查看您需要的權限，請參閱 [EOP 中的功能權限](feature-permissions-in-eop.md)主題的「報告」一節。
+- 您必須已獲指派權限，才能執行這些程序。 具體說來，您需要 ComplianceManagement 審核記錄檔或 View-Only 的「審核記錄」角色，其預設會指派給、OrganizationManagement （全域管理員）和 SecurityAdministrator 角色群組。 如需詳細資訊，請參閱[獨立 EOP 中的許可權](feature-permissions-in-eop.md)和[使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
 - 如需適用於本主題中程序的快速鍵相關資訊，請參閱 [Exchange Online 中 Exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
@@ -42,13 +42,15 @@ ms.locfileid: "44034453"
 
 執行系統管理員角色群組報告，以在特定時間範圍內尋找組織中管理角色群組的變更。
 
-1. 在 EAC 中，瀏覽至 **[相符性管理]** \> **[稽核]**，然後選擇 **[執行系統管理員角色群組報告]**。
+1. 在 EAC 中，移至 [**規範管理**] [ \> **審計**]，然後選擇 [**執行系統管理員角色群組報告**]。
 
-2. 選擇 **[開始日期]** 和 **[結束日期]**。依預設，報告會搜尋過去兩週以來對系統管理員角色群組所做的變更。
+2. 在開啟的 [**搜尋系統管理員角色群組變更**] 頁面上，設定下列設定：
 
-3. 若要檢視特定角色群組的變更，請按一下 **[選取角色群組]**。在後續的對話方塊中選取一或多個角色群組，然後按一下 **[確定]**。您也可以將欄位留白，以尋找所有變更的角色群組。
+   - **開始日期**和**結束日期**：輸入日期範圍。 依預設，報告會搜尋過去兩週以來對系統管理員角色群組所做的變更。
 
-4. Click **Search**.
+   - **選取角色群組**：根據預設，會搜尋所有角色群組。 若要依特定角色群組篩選結果，請按一下 [**選取角色群組**]。 在出現的對話方塊中，選取角色群組，然後按一下 [**載入 >**]。 視需要重複此步驟，然後在完成時按一下 **[確定]** 。
+
+3. 完成後，請按一下 [**搜尋**]。
 
 如果使用您指定的準則找到任何變更，它們會出現在結果窗格中。按一下搜尋結果中的角色群組，即可在詳細資料窗格中查看變更。
 
@@ -69,3 +71,81 @@ ms.locfileid: "44034453"
 - 在2/06/2018 上，他們新增了使用者 tonip。
 
 - 在2/19/2018 上，他們移除使用者 pilarp。
+
+## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>使用獨立 Exchange Online PowerShell 來搜尋審計記錄專案
+
+您可以使用 Exchange Online PowerShell 來搜尋符合您指定之準則的審計記錄專案。 如需搜尋準則的清單，請參閱[系統管理員稽核記錄](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)。 此程式會使用**Search-AdminAuditLog** Cmdlet，並以 Exchange Online PowerShell 顯示搜尋結果。 當您需要傳回的一組結果超過 **New-AdminAuditLogSearch** Cmdlet 或 EAC「稽核報告」報告中所定義的限制時，就可以使用這個 Cmdlet。
+
+若要搜尋指定準則的稽核記錄，請使用下列語法。
+
+```PowerShell
+Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 1, parameter 2, ...> -StartDate <start date> -EndDate <end date> -UserIds <user IDs> -ObjectIds <object IDs> -IsSuccess <$True | $False >
+```
+
+> [!NOTE]
+> 根據預設， **Search-AdminAuditLog** 指令程式最多會傳回 1,000 個記錄項目。 使用_ResultSize_參數可指定最多250000個記錄專案。 或者，使用值傳回 `Unlimited` 所有專案。
+
+此範例使用下列準則，執行所有稽核記錄項目的搜尋：
+
+- **開始日期**：08/04/2018
+
+- **結束日期**：10/03/2018
+
+- **使用者 IDs**： davids、chrisd、kima
+
+- **Cmdlet**： **Set-Mailbox**
+
+- **Parameters**： _ProhibitSendQuota_、 _ProhibitSendReceiveQuota_、 _IssueWarningQuota_、 _MaxSendSize_、 _MaxReceiveSize_
+
+```PowerShell
+Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,ProhibitSendReceiveQuota,IssueWarningQuota,MaxSendSize,MaxReceiveSize -StartDate 08/04/2018 -EndDate 10/03/2018 -UserIds davids,chrisd,kima
+```
+
+此範例搜尋特定信箱的變更。如果您在進行疑難排解或需要提供調查的資訊，這會很有用。使用下列準則：
+
+- **開始日期**：05/01/2018
+
+- **結束日期**：10/03/2018
+
+- **物件識別碼**： contoso.com/Users/DavidS
+
+```PowerShell
+Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso.com/Users/DavidS
+```
+
+如果您的搜尋傳回許多記錄專案，建議您使用使用 Exchange Online PowerShell 中提供的程式，**來搜尋審計記錄專案，並將結果傳送給**本主題稍後的收件者。 該章節中的程序會以電子郵件附件形式將 XML 檔案傳送給您指定的收件者，讓您更輕鬆擷取感興趣的資料。
+
+如需詳細的語法及參數資訊，請參閱 [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)。
+
+### <a name="view-details-of-audit-log-entries"></a>檢視稽核記錄項目的詳細資料
+
+**Search-AdminAuditLog** Cmdlet 會傳回 [系統管理員稽核記錄](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)的「稽核記錄內容」一節所描述的欄位。在此指令程式傳回的欄位中， **CmdletParameters** 和 **ModifiedProperties** 兩個欄位包含依預設無法檢視的其他資訊。
+
+若要檢視 **CmdletParameters** 和 **ModifiedProperties** 欄位的內容，請使用下列步驟。 或者，您可以使用**Exchange Online PowerShell 中的程式來搜尋審計記錄專案，並將結果傳送到**本主題稍後的收件者，以建立 XML 檔案。
+
+此程序採用下列概念：
+
+- [about_Arrays](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_arrays)
+
+- [about_Variables](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_variables)
+
+1. 決定您要搜尋的準則、執行 **Search-AdminAuditLog** 指令程式，然後使用下列命令將結果儲存在變數中。
+
+    ```PowerShell
+    $Results = Search-AdminAuditLog <search criteria>
+    ```
+
+2. 每個審計記錄專案都是以陣列元素形式儲存在變數中 `$Results` 。 您可以指定陣列項目索引來選取陣列元素。 陣列元素索引從零 (0) 開始，表示第一個陣列元素。 例如，若要擷取第 5 個陣列元素，其索引為 4，請使用下列命令。
+
+    ```PowerShell
+    $Results[4]
+    ```
+
+3. 上一個命令會傳回儲存在陣列元素 4 中的記錄項目。若要查看此記錄項目的 **CmdletParameters** 和 **ModifiedProperties** 欄位的內容，請使用下列命令。
+
+    ```PowerShell
+    $Results[4].CmdletParameters
+    $Results[4].ModifiedProperties
+    ```
+
+4. 若要檢視另一個記錄項目的 **CmdletParameters** 或 **ModifiedParameters** 欄位，請變更陣列元素索引。

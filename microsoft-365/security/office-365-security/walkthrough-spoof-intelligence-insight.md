@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: 瞭解新的欺騙性智慧洞察力的運作方式，包括如何快速判斷哪些寄件者合法傳送您未驗證的電子郵件。
+description: 系統管理員可以瞭解欺騙性智慧洞察力的運作方式，包括如何快速判斷哪些寄件者可合法傳送您未驗證的電子郵件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 481d248b833c7910152cd39113ff32fdc1217a5a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4a71b885926d742f86a5a0c86443a5f5ba23b8a6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033641"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208461"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>逐步解說-在 Microsoft 365 中的 ATP 欺騙智慧洞察力
 
@@ -35,7 +35,7 @@ ms.locfileid: "44033641"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [**安全性] 儀表板**頁面，請使用<https://protection.office.com/searchandinvestigation/dashboard>。
+- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [**安全性] 儀表板**頁面，請使用 <https://protection.office.com/searchandinvestigation/dashboard> 。
 
   您可以在安全性 & 合規性中心的多個儀表板上查看哄騙智慧洞察力。 不論您所看到的儀表板為何，真知灼見都會提供相同的詳細資料，並可讓您快速執行相同的工作。
 
@@ -47,7 +47,7 @@ ms.locfileid: "44033641"
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心開啟欺騙性智慧洞察力
 
-1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理** \> ]**儀表板。**
+1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理**] \> **儀表板。**
 
 2. 在 [**洞察力**] 列中，尋找下列其中一個專案：
 
@@ -69,7 +69,7 @@ ms.locfileid: "44033641"
 
    **網域對**是 [寄件者] 位址及傳送基礎結構的組合：
 
-   - 寄件者位址是顯示在電子郵件客戶程式中的寄件者電子郵件地址。 此地址可識別電子郵件的作者。 也就是負責撰寫郵件的使用者或系統信箱。 此位址也稱為`5322.From`位址。
+   - 寄件者位址是顯示在電子郵件客戶程式中的寄件者電子郵件地址。 此地址可識別電子郵件的作者。 也就是負責撰寫郵件的使用者或系統信箱。 此位址也稱為 `5322.From` 位址。
 
    - 傳送基礎結構（或寄件者）是寄件者 IP 位址的反向 DNS 查找（PTR 記錄）的組織網域。 如果傳送 IP 位址沒有 PTR 記錄，則寄件者會透過以 CIDR 標記法（/24）的255.255.255.0 子網路遮罩傳送 IP 加以識別。 例如，如果 IP 位址是192.168.100.100，則寄件者的完整 IP 位址是 192.168.100.100/24。
 

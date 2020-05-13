@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+monikerRange: o365-germany
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,18 +20,17 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: 深入瞭解 Office 365 德國。
-ms.openlocfilehash: d992d437e40baaa105ca407d40bb81ff84d9e3f3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2c63672865ac2c64bd9731df797202cf9cfdd9cd
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623903"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208351"
 ---
-> [!NOTE]
-> Office 365 德國不再接受新的客戶或部署新的服務。 在德國，新的雲端地區是在2020的第一季中提供，以供 Microsoft 365 和 Office 365 使用，這會在德國內提供核心客戶資料派駐服務，以及 Microsoft 全球雲端網路的完整連線能力。 
->
-
 # <a name="learn-about-office-365-germany"></a>深入了解 Office 365 Germany
+
+> [!NOTE]
+> Office 365 德國不再接受新的客戶或部署新的服務。 在德國，新的雲端地區是在2020的第一季中提供，以供 Microsoft 365 和 Office 365 使用，這會在德國內提供核心客戶資料派駐服務，以及 Microsoft 全球雲端網路的完整連線能力。
 
 Office 365 德國是一種可在歐洲使用的 Office 365 服務的區別選項。 透過德國法律所制約的獨特資料存取和控制量，它可協助您在德國、歐盟（EU）和歐盟免費交易協會（EFTA）中提供最受管制客戶的需求，方法是：從德國資料中心的數位工作、德國資料中心的資料，以及以德國法律為中心的資料，嚴格的資料存取和控制量。
   
@@ -66,7 +66,7 @@ Office 365 德國計畫選項會在此孤立環境中盡可能搭配全球泛型
     
 - 群組
     
-- 安全性&amp;與合規性中心
+- 安全性與 &amp; 合規性中心
     
 - 客戶加密箱
     

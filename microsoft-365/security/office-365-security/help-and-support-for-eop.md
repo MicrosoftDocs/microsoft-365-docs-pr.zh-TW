@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
-ms.openlocfilehash: 6fde3c6cf62f865a17f081c1892d6a5197b037f9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ef6bacbce6f46a17abcceb98e40d20ed3ad5363
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638043"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209196"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 的說明和支援
 
-如果使用 Microsoft Exchange Online Protection (EOP) 時有問題，此處列出的技術支援資源可幫助您找到答案。Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
+在未使用 Exchange online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）組織中使用信箱的 Microsoft 365 組織中，本主題所列的技術支援資源，可協助您在 EOP 中遇到問題時，尋找答案。 Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
 
 ## <a name="self-support-options"></a>自我支援選項
 

@@ -1,5 +1,5 @@
 ---
-title: 隔離常見問題集
+title: 隔離的郵件常見問題
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,52 +15,58 @@ search.appverid:
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
-description: Exchange Online 或獨立 EOP 中的 Office 365 信箱隔離的常見問題和解答，但沒有 Exchange Online 信箱。
+description: 系統管理員可以在 Exchange Online Protection （EOP）中查看有關隔離郵件的常見問題和解答。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5c5d7f426701ebc9a546a86a4fccbd7015fc0e49
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b2022a43f1dd89d47fdb4f3898f8f481419962c0
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033851"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213101"
 ---
-# <a name="quarantine-faq"></a>隔離區常見問題集
+# <a name="quarantined-messages-faq"></a>隔離的郵件常見問題
 
-本主題提供 Exchange Online 或獨立 Exchange Online Protection （EOP）客戶沒有 Exchange Online 信箱之信箱的365隔離問題和解答。
+本主題針對 Exchange Online 中的信箱或獨立 Exchange Online Protection （EOP）組織中的 Microsoft 365 組織，提供有關隔離的電子郵件的常見問題和解答，但沒有 Exchange Online 信箱。
 
-## <a name="q-how-do-i-manage-messages-that-were-quarantined-for-malware"></a>Q：如何管理被隔離以進行惡意程式碼的郵件？
+如需反垃圾郵件保護的相關問題和解答，請參閱[反垃圾郵件保護常見問題](anti-spam-protection-faq.md)。
 
-只有系統管理員可以管理隔離惡意程式碼的郵件。 如需詳細資訊，請參閱[以 Office 365 系統管理員身分管理隔離的郵件和檔案](manage-quarantined-messages-and-files.md)。
+如需有關反惡意程式碼保護的問題和解答，請參閱[反惡意程式碼保護常見問題](anti-malware-protection-faq-eop.md)。
 
-## <a name="q-how-do-i-quarantine-spam"></a>問：如何隔離垃圾郵件？
+如需反欺騙保護的相關問題和解答，請參閱[反欺騙保護常見問題](anti-spoofing-protection-faq.md)。
 
-答： 依預設，歸類為垃圾郵件或大量電子郵件的郵件會傳遞至使用者的信箱，並移至 [垃圾郵件] 資料夾。 不過，您也可以建立並設定反垃圾郵件原則，以隔離垃圾郵件或大量電子郵件。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+## <a name="how-do-i-manage-messages-that-were-quarantined-for-malware"></a>如何管理被隔離以進行惡意程式碼的郵件？
 
-## <a name="q-how-do-i-give-users-access-to-the-quarantine"></a>問：如何讓使用者能夠存取隔離區？
+只有系統管理員可以管理隔離惡意程式碼的郵件。 如需詳細資訊，請參閱[以系統管理員身分管理被隔離的郵件和](manage-quarantined-messages-and-files.md)檔案。
 
-答： 使用者必須具有有效的帳戶，才能存取隔離中自己的郵件。 獨立 EOP 要求使用者在 EOP 中以郵件使用者的身分呈現（透過目錄同步處理手動建立或建立）。 如需在獨立 EOP 環境中管理使用者的詳細資訊，請參閱[Manage mail users IN EOP](manage-mail-users-in-eop.md)。
+## <a name="how-do-i-quarantine-spam"></a>如何隔離垃圾郵件？
 
-## <a name="q-what-messages-can-end-users-access-in-quarantine"></a>問：哪些郵件可以讓使用者在隔離區中存取？
+依預設，歸類為垃圾郵件或大量電子郵件的郵件會傳遞至使用者的信箱，並移至 [垃圾郵件] 資料夾。 不過，您也可以建立並設定反垃圾郵件原則，以隔離垃圾郵件或大量電子郵件。 如需詳細資訊，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-答： 使用者可以存取垃圾郵件、大量電子郵件，以及（從2020年4月的）網路釣魚郵件，其為收件者。 由於將**郵件傳遞至**郵件流程規則（也稱為傳輸規則）中的主控隔離動作，因此使用者無法存取隔離的惡意程式碼、高信賴網路釣魚或已隔離的郵件。 如需存取隔離郵件之使用者的詳細資訊，請參閱[在 Office 365 中尋找及發行隔離郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。
+## <a name="how-do-i-give-users-access-to-the-quarantine"></a>如何讓使用者能夠存取隔離區？
 
-## <a name="q-how-long-are-messages-kept-in-the-quarantine"></a>問：郵件保存在隔離區中的時間多久？
+使用者必須具有有效的帳戶，才能存取隔離中自己的郵件。 獨立 EOP 要求使用者在 EOP 中以郵件使用者的身分呈現（透過目錄同步處理手動建立或建立）。 如需在獨立 EOP 環境中管理使用者的詳細資訊，請參閱[Manage mail users IN EOP](manage-mail-users-in-eop.md)。
 
-答： 您可以使用反垃圾郵件原則，設定隔離區中的垃圾郵件、網路釣魚和大量電子郵件的保留時間。 預設值為30天，也就是最大值。 如需詳細資訊，請參閱[在 Office 365 設定反垃圾郵件原則](configure-your-spam-filter-policies.md)
+## <a name="what-messages-can-end-users-access-in-quarantine"></a>使用者可以在隔離區中存取哪些郵件？
+
+使用者可以存取垃圾郵件、大量電子郵件，以及（從2020年4月的）網路釣魚郵件的收件者。 由於將**郵件傳遞至**郵件流程規則（也稱為傳輸規則）中的主控隔離動作，因此使用者無法存取隔離的惡意程式碼、高信賴網路釣魚或已隔離的郵件。 如需存取隔離郵件之使用者的詳細資訊，請參閱[尋找和以使用者身分發行隔離的郵件](find-and-release-quarantined-messages-as-a-user.md)。
+
+## <a name="how-long-are-messages-kept-in-the-quarantine"></a>郵件保存在隔離區中的時間多久？
+
+您可以使用反垃圾郵件原則，設定隔離區中的垃圾郵件、網路釣魚和大量電子郵件的保留時間。 預設值為30天，也就是最大值。 如需詳細資訊，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)
 
 針對由郵件流程規則動作隔離的郵件，會將**郵件傳遞至主控隔離區**，並將郵件保留30天。 您無法設定此持續時間。
 
 時段到期後，郵件即會刪除，而且無法復原。
 
-## <a name="q-can-i-release-or-report-more-than-one-quarantined-message-at-a-time"></a>問：一次可以放開或報告一封以上的隔離郵件？
+## <a name="can-i-release-or-report-more-than-one-quarantined-message-at-a-time"></a>我是否可以一次放開或報告一封以上的隔離郵件？
 
-答： 在 [安全性 & 規範中心] 中，您可以一次選取及發行最多100封郵件。
+在 [安全性 & 規範中心] 中，您可以一次選取及發行最多100封郵件。
 
-系統管理員可以使用 Exchange Online 中的[Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage)和[Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) Cmdlet PowerShell 或獨立 Exchange online Protection PowerShell 以大量尋找及發行隔離的郵件，以及大量報告誤報。
+系統管理員可以使用 Exchange Online PowerShell 或獨立 EOP PowerShell 中的[Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage)和[Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) Cmdlet，以大量尋找及發行隔離的郵件，並大量報告誤報。
 
-## <a name="q-are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>Q：搜尋隔離郵件時是否支援萬用字元？ 是否可以搜尋特定網域的隔離郵件？
+## <a name="are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>搜尋隔離郵件時，是否支援萬用字元？ 是否可以搜尋特定網域的隔離郵件？
 
-答： 在安全性 & 規範中心內不支援萬用字元。 例如，在搜尋寄件者時，您必須指定完整的電子郵件地址。 不過，您可以在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中使用萬用字元。
+在安全性 & 規範中心內不支援萬用字元。 例如，在搜尋寄件者時，您必須指定完整的電子郵件地址。 不過，您可以在 Exchange Online PowerShell 或獨立 EOP PowerShell 中使用萬用字元。
 
 例如，執行下列命令，尋找來自網域 contoso.com 中所有寄件者的垃圾郵件隔離郵件：
 

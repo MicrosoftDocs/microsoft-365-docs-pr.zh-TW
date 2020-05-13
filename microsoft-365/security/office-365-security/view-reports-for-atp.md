@@ -16,20 +16,20 @@ search.appverid:
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
-description: 在安全性&amp;與合規性中心尋找及使用 Office 365 的「高級威脅防護」報告。
+description: 在安全性與合規性中心尋找及使用 Office 365 的「高級威脅防護」報告 &amp; 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c202e7df274e81da5395f7466199d85443361c05
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: af5844cf05d14e34059a26291d2034187439ec56
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173319"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208486"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>檢視 Office 365 進階威脅防護的報告
 
-如果您的組織有[Office 365 高級威脅防護](office-365-atp.md)（ATP），而且您有[必要的許可權](#what-permissions-are-needed-to-view-the-atp-reports)，您可以在安全性&amp;與合規性中心使用數個 ATP 報告。 （移至 [**報表** \> ]**儀表板**）。
+如果您的組織有[Office 365 高級威脅防護](office-365-atp.md)（ATP），而且您有[必要的許可權](#what-permissions-are-needed-to-view-the-atp-reports)，您可以在安全性與 &amp; 合規性中心使用數個 ATP 報告。 （移至**報表** \>**儀表板**。）
 
-![安全性&amp;與合規性中心儀表板可協助您查看高級威脅防護的運作情形](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![安全性與 &amp; 合規性中心儀表板可協助您查看高級威脅防護的運作情形](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ATP 報告包含下列專案：
 
@@ -70,9 +70,9 @@ ATP 報告包含下列專案：
 「一覽」和「電子郵件」視圖會在處理時間內（而不是24小時）顯示資訊（要求重新）。 增加的速度是清晰的信號）！
 
 > [!NOTE]
-> 具有[Office 365 ATP](office-365-atp.md)或[Exchange Online Protection](exchange-online-protection-eop.md) （EOP）的客戶可以使用威脅防護狀態報表;不過，針對 ATP 客戶顯示在威脅防護狀態報表中的資訊，其可能會包含與客戶可能看到的 EOP 不同的資料。 例如，ATP 客戶的「威脅防護狀態報表」會包含[SharePoint 線上、OneDrive 或 Microsoft 小組中偵測到之惡意](atp-for-spo-odb-and-teams.md)檔案的相關資訊。 這類資訊專用於 ATP，所以具有 EOP 但不是 ATP 的客戶將無法在威脅防護狀態報表中看到這些詳細資料。
+> 「威脅防護狀態」報告適用于具有[Office 365 ATP](office-365-atp.md)或[Exchange Online Protection](exchange-online-protection-overview.md)（EOP）的客戶;不過，針對 ATP 客戶顯示在威脅防護狀態報表中的資訊，其可能會包含與客戶可能看到的 EOP 不同的資料。 例如，ATP 客戶的「威脅防護狀態報表」會包含[SharePoint 線上、OneDrive 或 Microsoft 小組中偵測到之惡意](atp-for-spo-odb-and-teams.md)檔案的相關資訊。 這類資訊專用於 ATP，所以具有 EOP 但不是 ATP 的客戶將無法在威脅防護狀態報表中看到這些詳細資料。
 
-若要查看「威脅防護狀態」報告，請在[安全性&amp;與合規性中心](https://protection.office.com)，移至 [**報告** \> ]**儀表板** \> **威脅防護狀態**。
+若要查看「威脅防護狀態」報告，請在[安全性與 &amp; 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板** \> **威脅防護狀態**。
 
 ![ATP 威脅防護狀態報表](../../media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
 
@@ -107,11 +107,11 @@ ATP 報告包含下列專案：
 
 **Atp 檔案類型**報告會顯示由[ATP 安全附件](atp-safe-attachments.md)偵測為惡意的檔案類型。
 
-若要查看此報告，請[在&amp;安全性與合規性中心](https://protection.office.com)，移至 [**報告** \> ]**儀表板** \> **ATP 檔案類型**。
+若要查看此報告，請在[安全性與 &amp; 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板** \> **ATP 檔案類型**。
 
 ![ATP 檔案類型報告](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
-當您將游標移到某一天時，您可以看到[ATP 安全附件](atp-safe-attachments.md)和[ &amp;反垃圾郵件反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)偵測到的惡意檔案類型細目。
+當您將游標移到某一天時，您可以看到[ATP 安全附件](atp-safe-attachments.md)和[反垃圾郵件 &amp; 反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)偵測到的惡意檔案類型細目。
   
 ![ATP 檔案類型一天的報告資料](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
 
@@ -119,7 +119,7 @@ ATP 報告包含下列專案：
 
 **ATP 郵件**處理報告會顯示偵測到有惡意內容的電子郵件所採取的動作。
 
-若要查看此報告，請[在&amp;安全性與合規性中心](https://protection.office.com)，移至 [**報告** \> ]**儀表板** \> **ATP 郵件部署**。
+若要查看此報告，請在[安全性與 &amp; 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板** \> **ATP 郵件部署**。
 
 ![ATP 郵件處置報告](../../media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
 
@@ -143,13 +143,13 @@ ATP 報告包含下列專案：
 
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>查看 ATP 報表所需的許可權為何？
 
-為了查看和使用本文所述的報告，**您必須為安全性&amp;與合規性中心和 Exchange 系統管理中心指派適當的角色**。
+為了查看和使用本文所述的報告，**您必須為安全性與 &amp; 合規性中心和 Exchange 系統管理中心指派適當的角色**。
 
 - 針對「安全性與合規性中心」，您必須受指派下列其中一個角色：
 
   - 組織管理
   - 安全性系統管理員 (這可以在 Azure Active Directory 系統管理中心指派 ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
-  - 安全操作員（可以在 Azure Active Directory 系統管理中心[https://aad.portal.azure.com](https://aad.portal.azure.com)內指派）
+  - 安全操作員（可以在 Azure Active Directory 系統管理中心內 [https://aad.portal.azure.com](https://aad.portal.azure.com) 指派）
   - 安全性讀取者
 
 - 針對 Exchange Online，您必須在 Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) 或 PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) 受指派下列其中一個角色：
@@ -161,7 +161,7 @@ ATP 報告包含下列專案：
 
 若要深入了解，請參閱下列資源：
 
-- [安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)
+- [安全性與 &amp; 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)
 
 - [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
@@ -171,10 +171,10 @@ ATP 報告包含下列專案：
 
 ## <a name="related-topics"></a>相關主題
 
-[安全性&amp;與合規性中心內的報告與深入瞭解](reports-and-insights-in-security-and-compliance.md)
+[安全性與 &amp; 合規性中心內的報告與深入瞭解](reports-and-insights-in-security-and-compliance.md)
   
-[在安全性&amp;與合規性中心建立報表的排程](create-a-schedule-for-a-report.md)
+[在安全性與 &amp; 合規性中心建立報表的排程](create-a-schedule-for-a-report.md)
 
-[在安全性&amp;與合規性中心內設定及下載自訂報告](set-up-and-download-a-custom-report.md)
+[在安全性與 &amp; 合規性中心內設定及下載自訂報告](set-up-and-download-a-custom-report.md)
 
 [角色許可權（Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

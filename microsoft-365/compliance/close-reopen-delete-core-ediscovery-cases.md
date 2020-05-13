@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文說明如何管理核心 eDiscovery 案例。 這包括關閉案例、開啟關閉的案例，以及刪除案例。
-ms.openlocfilehash: 41ba622a58b0abb5ce668e6d94d89b1694a328c9
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 45282486c2c3b1d00b99a1cda5968b3bb042f6c2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551388"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208415"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>關閉、重新開啟和刪除核心 eDiscovery 案例
 
@@ -42,7 +42,7 @@ ms.locfileid: "43551388"
 
 若要關閉案例：
   
-1. 在 [Microsoft 365 合規性] enter 中，按一下 [ **eDiscovery** > **Core** ] 以顯示您組織中的核心 eDiscovery 案例清單。
+1. 在 Microsoft 365 規範中心，按一下 [ **eDiscovery**  >  **Core** ] 以顯示您組織中的核心 eDiscovery 案例清單。
 
 2. 按一下您要關閉之案例的名稱。
 
@@ -66,7 +66,7 @@ ms.locfileid: "43551388"
 
 當您重新開啟案例時，關閉案例時所使用的任何 eDiscovery 保留都不會自動復原。 在重新開啟案例之後，您必須移至 [**保留**] 頁面並開啟先前保留。 若要開啟保留，請選取它以顯示飛入頁面，然後將**狀態**切換設定為 [**開啟**]。
   
-1. 在 [Microsoft 365 合規性] enter 中，按一下 [ **eDiscovery** > **Core** ] 以顯示您組織中的核心 eDiscovery 案例清單。
+1. 在 Microsoft 365 規範中心，按一下 [ **eDiscovery**  >  **Core** ] 以顯示您組織中的核心 eDiscovery 案例清單。
 
 2. 按一下您要重新開啟之案例的名稱。
 
@@ -102,7 +102,7 @@ ms.locfileid: "43551388"
 
 若要刪除案例：
 
-1. 在 [Microsoft 365 合規性] enter 中，按一下 [ **eDiscovery** > **Core** ] 以顯示您組織中的核心 eDiscovery 案例清單。
+1. 在 Microsoft 365 規範中心，按一下 [ **eDiscovery**  >  **Core** ] 以顯示您組織中的核心 eDiscovery 案例清單。
 
 2. 按一下您要刪除之案例的名稱。
 

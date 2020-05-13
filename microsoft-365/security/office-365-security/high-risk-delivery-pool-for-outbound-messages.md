@@ -16,12 +16,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: 瞭解高風險傳遞集區如何用來保護 Microsoft 365 資料中心的電子郵件伺服器信譽。
-ms.openlocfilehash: 7fb4788361534335be1e07bae44ed7511bebe434
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 190dc3bd7ed2a6cddb23c8bc7c117dee30fd4f13
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638031"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209184"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>輸出郵件的高風險傳遞集區
 
@@ -45,11 +45,8 @@ Microsoft 365 資料中心的電子郵件伺服器可能會暫時 guilty 寄送�
 NDRs 中的電湧可能原因包括：
 
 - 會影響使用服務之客戶之一的電子欺騙活動。
-
 - 目錄收集攻擊。
-
 - 垃圾郵件攻擊。
-
 - 欺詐的電子郵件伺服器。
 
 所有這些問題都會造成服務處理的 NDRs 數量突然增加。 許多情況下，這些 NDRs 似乎是對其他電子郵件伺服器和服務（也稱為_[退信攻擊](backscatter-messages-and-eop.md)_）的垃圾郵件。

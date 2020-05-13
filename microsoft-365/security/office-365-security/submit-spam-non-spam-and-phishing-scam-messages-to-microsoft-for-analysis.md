@@ -15,19 +15,19 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: '您和您的使用者可以將假的否定和誤報垃圾郵件提交給 Microsoft 進行分析。 '
+description: 系統管理員和使用者可以瞭解如何將電子郵件（適當的郵件標示為壞或壞的郵件允許），以供 Microsoft 進行分析。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7fc26e1cba976e68b8dcfee5ec8b4fe366b8c47
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ed605d88f025996646c928200c20945df9c9871f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035233"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208606"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手動將郵件提交給 Microsoft 進行分析
 
 > [!NOTE]
-> 如果您是使用 Exchange Online 信箱的 Microsoft 365 組織中的系統管理員，建議您在安全性 & 合規性中心使用提交入口網站。 如需詳細資訊，請參閱[使用系統管理員提交將可疑的垃圾郵件、網路釣魚、URLs 和檔案提交給 Microsoft](admin-submission.md)。
+> 如果您是 Exchange Online 信箱組織中的系統管理員，建議您在安全性 & 規範中心內使用提交入口網站。 如需詳細資訊，請參閱[使用系統管理員提交將可疑的垃圾郵件、網路釣魚、URLs 和檔案提交給 Microsoft](admin-submission.md)。
 
 當您組織中的使用者在其收件匣中收到垃圾郵件（垃圾郵件）或網路釣魚郵件時，或是因為郵件標示為垃圾郵件而未收到合法電子郵件時，可能會令人感到沮喪。 我們不斷微調垃圾郵件篩選器，使其更準確。
 
@@ -57,7 +57,7 @@ ms.locfileid: "44035233"
 3. 當您完成時，按一下 [**傳送**]。
 
 > [!TIP]
-> 系統管理員可以使用數種不同的方式封鎖正 misidentified 為垃圾郵件的特定郵件。 如需詳細資訊，請參閱[在 Office 365 中建立封鎖的寄件者清單](create-block-sender-lists-in-office-365.md)。
+> 系統管理員可以使用數種不同的方式封鎖正 misidentified 為垃圾郵件的特定郵件。 如需詳細資訊，請參閱[在 EOP 中建立封鎖的寄件者清單](create-block-sender-lists-in-office-365.md)。
 
 ## <a name="submit-false-positives-to-microsoft"></a>將誤報提交給 Microsoft
 
@@ -66,7 +66,7 @@ ms.locfileid: "44035233"
 
 如果郵件被錯誤地辨識為垃圾郵件，您可以將郵件提交給 Microsoft 垃圾郵件分析小組。 分析員會評估郵件，並根據分析的結果，可以調整整個服務篩選器以允許郵件通過。
 
-1. `not_junk@office365.microsoft.com`以收件者的身分建立新的空白電子郵件訊息：
+1. 以收件者的身分建立新的空白電子郵件訊息 `not_junk@office365.microsoft.com` ：
 
 2. 將 misidentified 郵件拖曳並放入新的郵件。 這會將 misidentified 郵件儲存為新郵件中的附件。 請勿複製及貼上郵件內容或轉寄郵件（我們需要原始郵件，才能檢查郵件頭）。
 
@@ -76,7 +76,7 @@ ms.locfileid: "44035233"
 3. 當您完成時，按一下 [**傳送**]。
 
 > [!TIP]
-> 系統管理員有幾種不同的方式可讓特定郵件略過垃圾郵件篩選。 如需詳細資訊，請參閱[在 Office 365 中建立安全寄件者清單](create-safe-sender-lists-in-office-365.md)。
+> 系統管理員有幾種不同的方式可讓特定郵件略過垃圾郵件篩選。 如需詳細資訊，請參閱[在 EOP 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>建立郵件流程規則，以接收報告給 Microsoft 的郵件副本
 
