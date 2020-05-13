@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何建立、修改及刪除使用 Office 365 高級威脅防護的組織中可用的高級防網路釣魚原則（Office 365 ATP）。
-ms.openlocfilehash: efecd830db7ed10210605e31aa0ded2599de1b72
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5b67fe1a39f577209d1f10688215722a67d5546a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208884"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213457"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>設定 ATP 防網路釣魚原則
 
@@ -31,7 +31,7 @@ ATP 反網路釣魚原則是[Office 365 Advanced 威脅防護](office-365-atp.md
 
 如需在 Exchange Online Protection 組織（也就是未使用 Office 365 ATP 的 Microsoft 365 組織）中，設定更少限制之防網路釣魚原則的相關資訊，請參閱[Configure THE EOP 中的反網路釣魚原則](configure-anti-phishing-policies-eop.md)。
 
-## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>安全性 & 合規性中心與 Exchange Online PowerShell 中的 ATP 反網路釣魚原則
+## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-powershell"></a>安全性 & 規範中心與 PowerShell 中的 ATP 反網路釣魚原則
 
 ATP 反網路釣魚原則的基本元素如下：
 

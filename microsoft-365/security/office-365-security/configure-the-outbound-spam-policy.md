@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在 Exchange Online Protection （EOP）中查看、建立、修改和刪除輸出垃圾郵件原則。
-ms.openlocfilehash: 9970956c2d05a47032cd47b867b8b4e9e92abc29
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 3f34c1ad27af1e0df2d2e2385f095da53e1cc318
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209568"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213029"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中設定輸出垃圾郵件篩選
 
@@ -37,7 +37,7 @@ EOP 使用輸出垃圾郵件原則做為組織的整體防禦垃圾郵件的一�
 
 您可以在 Security & 合規性中心或 PowerShell （Exchange Online 365 PowerShell 中，使用 Exchange Online 中的信箱來設定外寄垃圾郵件原則; 獨立 EOP PowerShell 沒有 Exchange Online 信箱的組織）設定輸出垃圾郵件原則。
 
-## <a name="outbound-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>安全性 & 規範中心與 Exchange online PowerShell 或 Exchange Online Protection 中的輸出垃圾郵件原則 PowerShell
+## <a name="outbound-spam-policies-in-the-security--compliance-center-vs-powershell"></a>安全性 & 規範中心與 PowerShell 的輸出垃圾郵件原則
 
 EOP 中的外寄垃圾郵件原則基本元素為：
 
@@ -53,7 +53,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 - 當您從安全性 & 合規性中心移除輸出垃圾郵件原則時，會移除輸出垃圾郵件篩選規則和相關聯的輸出垃圾郵件篩選原則。
 
-在 Exchange Online PowerShell 或獨立 Exchange Online Protection PowerShell 中，輸出垃圾郵件篩選原則和輸出垃圾郵件篩選規則之間的差異很明顯。 您可以使用** \* -HostedOutboundSpamFilterPolicy** Cmdlet 來管理輸出垃圾郵件篩選原則，也可以使用** \* -HostedOutboundSpamFilterRule** Cmdlet 來管理輸出垃圾郵件篩選規則。
+在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，輸出垃圾郵件篩選原則和輸出垃圾郵件篩選規則之間的差異很明顯。 您可以使用** \* -HostedOutboundSpamFilterPolicy** Cmdlet 來管理輸出垃圾郵件篩選原則，也可以使用** \* -HostedOutboundSpamFilterRule** Cmdlet 來管理輸出垃圾郵件篩選規則。
 
 - 在 PowerShell 中，您先建立輸出垃圾郵件篩選原則，然後建立輸出垃圾郵件篩選規則，以識別套用規則的原則。
 
@@ -77,7 +77,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [反垃圾郵件設定]**** 頁面，請使用 <https://protection.office.com/antispam>。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連接至獨立版 Exchange Online Protection PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連線至獨立 EOP PowerShell，請參閱[connect To Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
 - 您必須已獲指派權限，才能執行這些程序。 若要新增、修改和刪除輸出垃圾郵件原則，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要唯讀的輸出垃圾郵件原則的存取權，您必須是**Security Reader**角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -101,7 +101,12 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 4. 選展開 [**通知**] 區段，設定其他應接收副本的使用者，以及可疑外寄電子郵件訊息的通知：
 
-   - **將可疑的輸出電子郵件的複本傳送給特定人員**：此設定會將指定的使用者當做 Bcc 收件者新增至可疑的輸出郵件。 若要啟用此設定：
+   - **將可疑的輸出電子郵件的複本傳送給特定人員**：此設定會將指定的使用者當做 Bcc 收件者新增至可疑的輸出郵件。
+
+     > [!NOTE]
+     > 此設定僅適用于預設輸出垃圾郵件原則。 在您建立的自訂輸出垃圾郵件原則中無法運作。
+
+     若要啟用此設定：
 
      a. 選取 [啟用] 設定的核取方塊。
 
@@ -122,7 +127,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
    - **如果寄件者因傳送輸出的垃圾郵件而遭到封鎖，請通知特定人員**：
 
      > [!NOTE]
-     > 當使用者因超過 [**收件者限制**] 區段中的限制時[，已封鎖](../../compliance/alert-policies.md)使用者 TenantAdmins （全域系統管理員）群組的成員時，會將**電子郵件通知**傳送至**TenantAdmins** （**全域系統管理員**）群組的成員。 建議您在輸出垃圾郵件原則中使用警示原則，而不是此設定，以通知系統管理員和其他使用者。 如需相關指示，請參閱[確認限制使用者的警示設定](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。
+     > 當使用者因超過 [**收件者限制**] 區段中的限制時[，已封鎖](../../compliance/alert-policies.md)使用者 TenantAdmins （全域系統管理員）群組的成員時，會將**電子郵件通知**傳送至**TenantAdmins** （**全域系統管理員**）群組的成員。 建議您在輸出垃圾郵件原則中使用警示原則，而不是此設定，以通知系統管理員和其他使用者。 如需相關指示，請參閱[確認限制使用者的警示設定](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 <br/><br/> 此設定僅適用于預設輸出垃圾郵件原則。 在您建立的自訂輸出垃圾郵件原則中無法運作。
 
      若要啟用此設定：
 
@@ -146,7 +151,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
    > [!NOTE]
    > 這些設定只適用于雲端架構信箱。
-     
+
    - **每位使用者的收件者數目上限**
 
      有效的值為0到10000。 預設值為0，這表示使用服務預設值。 如需詳細資訊，請參閱[在 Microsoft 365 選項](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)中傳送限制。
@@ -263,7 +268,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 您無法移除預設原則。
 
-## <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-outbound-spam-policies"></a>使用 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 設定輸出垃圾郵件原則
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies"></a>使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定輸出垃圾郵件原則
 
 ### <a name="use-powershell-to-create-outbound-spam-policies"></a>使用 PowerShell 建立輸出垃圾郵件原則
 

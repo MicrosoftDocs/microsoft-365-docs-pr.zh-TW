@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 系統管理員可以在安全性與合規性中心使用郵件追蹤，以了解郵件發生什麼情況。
-ms.openlocfilehash: e78d3361306a93542302e29ff5c1fac4e2262b2f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 22ae7293dfe85fe5354d21e690de6f060a931788
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209424"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44212983"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件追蹤
 
@@ -27,7 +27,7 @@ ms.locfileid: "44209424"
 安全性 & 規範中心內的郵件追蹤改善於 Exchange 系統管理中心（EAC）中提供的原始郵件追蹤。 您可以使用郵件追蹤中的資訊，有效地解答使用者對郵件發生什麼問題、疑難排解郵件流程問題，以及驗證原則變更。
 
 > [!NOTE]
-> •若要進行郵件追蹤，您必須是「組織管理」、「合規性管理」或「服務台」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。 <br/><br/>•結果中顯示的訊息數目上限取決於您選取的報告類型（如需詳細資訊，請參閱[選擇報表類型](#choose-report-type)區段）。 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的 [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) Cmdlet 會在結果中傳回所有郵件。
+> •若要進行郵件追蹤，您必須是「組織管理」、「合規性管理」或「服務台」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。 <br/><br/>•結果中顯示的訊息數目上限取決於您選取的報告類型（如需詳細資訊，請參閱[選擇報表類型](#choose-report-type)區段）。 Exchange Online PowerShell 或獨立 EOP 中的[Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) Cmdlet PowerShell 會傳回結果中的所有郵件。
 
 ## <a name="open-message-trace"></a>開啟郵件追蹤
 
