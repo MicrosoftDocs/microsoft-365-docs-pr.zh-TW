@@ -2,8 +2,8 @@
 title: 反垃圾郵件訊息標頭
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -14,18 +14,18 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: 瞭解 Exchange Online Protection 新增至郵件的標題欄位，以提供有關該郵件及其處理方式的資訊。
+description: 系統管理員能了解 Exchange Online Protection (EOP) 新增至郵件的標題欄位，以提供有關該郵件及其處理方式的資訊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f86b5ffa02b6f84c10ab2300f913b5f03726713
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: d63d173b90ffd868cfbeac212f2c9d5a6ee125c6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173401"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208219"
 ---
-# <a name="anti-spam-message-headers"></a>反垃圾郵件訊息標頭
+# <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 的反垃圾郵件標頭
 
-Exchange Online Protection (EOP) 掃描輸入的電子郵件時，會在每封郵件插入 **X-Forefront-Antispam-Report** 標頭。 此標頭的欄位有助於提供系統管理員郵件及其處理方式的相關資訊。 **X-Microsoft-Antispam** 標頭中的欄位可提供大宗郵件和網路釣魚的額外資訊。 除了這兩個標頭之外，Exchange Online Protection 還會為其在 **Authentication-results** 標頭中處理的每封郵件插入電子郵件身份驗證結果。
+在擁有 Exchange Online 信箱的 Microsoft 365 組織中，或沒有 Exchange Online 信箱的獨立版 Exchange Online Protection (EOP) 組織中，EOP 進行掃描並將 **X-Forefront-Antispam-Report** 標頭插入每個內送電子郵件。 此標頭的欄位有助於提供系統管理員郵件及其處理方式的相關資訊。 **X-Microsoft-Antispam** 標頭中的欄位可提供大宗郵件和網路釣魚的額外資訊。 除了這兩個標頭之外，Exchange Online Protection 還會為其在 **Authentication-results** 標頭中處理的每封郵件插入電子郵件身份驗證結果。
 
 如需如何在各種電子郵件用戶端中檢視電子郵件標頭的詳細資訊，請參閱 [在 Outlook 中查看網際網路郵件標題](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)。
 

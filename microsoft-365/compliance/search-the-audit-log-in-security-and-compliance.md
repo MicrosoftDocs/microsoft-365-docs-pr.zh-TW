@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: f3cf16da0c7623c1cdd7f90272fa4b11126dcc25
-ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
+ms.openlocfilehash: 447777c4cf3eb8532e30977d97694445647889d4
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805189"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208077"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -530,7 +530,7 @@ ms.locfileid: "43805189"
 
 ### <a name="exchange-mailbox-activities"></a>Exchange 信箱活動
 
-下表列出信箱稽核記錄可以記錄的活動。 信箱擁有者、指定使用者或管理員所執行的信箱活動會記錄在 Microsoft 365 稽核記錄中達 90 天。 系統管理員可能會關閉組織中所有使用者的信箱稽核記錄功能。 在此情況下，任何使用者的信箱動作都不會記錄。 如需詳細資訊，請參閱[管理信箱稽核](enable-mailbox-auditing.md)。
+下表列出信箱稽核記錄可以記錄的活動。 信箱擁有者、指定使用者或管理員所執行的信箱活動會記錄在稽核記錄中達 90 天。 系統管理員可能會關閉組織中所有使用者的信箱稽核記錄功能。 在此情況下，任何使用者的信箱動作都不會記錄。 如需詳細資訊，請參閱[管理信箱稽核](enable-mailbox-auditing.md)。
 
  您也可以在 Exchange Online PowerShell 中使用 [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) Cmdlet 來搜尋信箱活動。
 
@@ -670,7 +670,7 @@ ms.locfileid: "43805189"
 
 - 管理電子文件探索系統管理員角色
 
-如需已記錄的電子文件探索活動之清單和詳細描述，請參閱[搜尋稽核記錄中的電子文件探索活動](search-for-ediscovery-activities-in-the-audit-log.md)。
+如需已記錄電子文件探索活動的清單和詳細描述，請參閱[搜尋稽核記錄中的電子文件探索活動](search-for-ediscovery-activities-in-the-audit-log.md)。
 
 > [!NOTE]
 > [活動]**** 下拉式清單中的 [電子文件探索活動]**** 下方所列活動的結果事件，最久需要 30 分鐘才會顯示在搜尋結果中。 相反地，系統需要 24 小時才能在搜尋結果中顯示電子文件探索 Cmdlet 活動的對應事件。
@@ -902,7 +902,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) 會在系統管理員 (或獲派管理權限的使用者) 在您的 Exchange Online 組織中進行變更時，將事件記錄在稽核記錄中。 使用 Exchange 系統管理員中心或執行 Exchange Online PowerShell 中的 Cmdlet 所做的變更會記錄在 Exchange 系統管理稽核記錄中。 以動詞 **Get-**、**Search-** 或 **Test-** 開頭的 Cmdlet 不會記錄在稽核記錄中。 如需有關 Exchange 系統管理員稽核記錄的詳細資訊，請參閱[系統管理員稽核記錄功能](https://go.microsoft.com/fwlink/p/?LinkID=619225)。
 
 > [!IMPORTANT]
-> 未記錄在 Exchange 系統管理員稽核記錄 (或在稽核記錄中) 的某些 Exchange Online Cmdlet。 許多這些 Cmdlet 都與維護 Exchange Online 服務相關，並由 Microsoft 資料中心人員或服務帳戶執行。 之所以不記錄這些 Cmdlet，是因為這些 Cmdlet 會造成大量的「雜亂」稽核事件。 如果有 Exchange Online Cmdlet 未受到稽核，請傳送建議給[安全性與合規性的 User Voice 論壇](https://office365.uservoice.com/forums/289138-office-365-security-compliance)，並要求對其啟用稽核。 您也可以將設計變更要求 (DCR) 傳送到 Microsoft 支援服務。
+> 未記錄在 Exchange 系統管理員稽核記錄 (或在稽核記錄中) 的某些 Exchange Online Cmdlet。 許多這些 Cmdlet 都與維護 Exchange Online 服務相關，並由 Microsoft 資料中心人員或服務帳戶執行。 之所以不記錄這些 Cmdlet，是因為這些 Cmdlet 會造成大量的「雜亂」稽核事件。 如果有 Exchange Online Cmdlet 未受到稽核，請傳送建議給[安全性與合規性的 User Voice 論壇](https://office365.uservoice.com/forums/289138-office-365-security-compliance) (英文)，並要求對其啟用稽核。 您也可以將設計變更要求 (DCR) 傳送到 Microsoft 支援服務。
 
 以下是在搜尋稽核記錄時搜尋 Exchange 系統管理員活動的秘訣：
 

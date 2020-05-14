@@ -19,17 +19,17 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 localization_priority: Priority
-description: 在本文中，您將瞭解 Microsoft 365 中的反欺騙防護功能，可解決來自欺騙網域的網路釣魚攻擊。
-ms.openlocfilehash: a5236161e1df6df1d007135c9ae700e87a06ccf0
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 系統管理員可以了解 Exchange Online Protection (EOP) 中提供的反詐騙功能，可協助緩解來自詐騙寄件者和網域的網路釣魚攻擊。
+ms.openlocfilehash: c28f5cf18a8da3be06906eb1e6b118c856c40066
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034067"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209028"
 ---
-# <a name="anti-spoofing-protection"></a>反詐騙保護
+# <a name="anti-spoofing-protection-in-eop"></a>EOP 中的反詐騙保護
 
-如果您是 Microsoft 365 客戶並且有 Exchange Online 信箱，或是獨立版 Exchange Online Protection (EOP) 客戶且沒有 Exchange Online 信箱，EOP 所包含的功能可協助保護貴組織抵禦詐騙 (偽造) 寄件者。
+在擁有 Exchange Online 信箱的 Microsoft 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，EOP 所包含的功能可協助保護貴組織抵禦詐騙 (偽造) 寄件者。
 
 為保護使用者，Microsoft 嚴正看待網路釣魚攻擊。 詐騙是攻擊者所使用的常見技巧。 **詐騙訊息是來自實際來源以外的某人或某個位置**。 這是設計來取得使用者認證的網路釣魚攻擊的慣用伎倆。 EOP 中的反詐騙技術專門檢查郵件內文中的 [寄件者] 標頭(用於顯示電子郵件用戶端中的郵件寄件者)。 當 EOP 高度認為 [寄件者] 標頭為偽造時，會將該郵件視為詐騙。
 
@@ -37,11 +37,11 @@ EOP 中提供下列反詐騙技術：
 
 - **詐騙情報**：檢閱來自內部和外部網域中寄件者的詐騙郵件，並允許或封鎖那些寄件者。 如需詳細資訊，請參閱[在 Microsoft 365 中設定詐騙情報](learn-about-spoof-intelligence.md)。
 
-- **防網路釣魚原則**：在 EOP 中，內建的防網路釣魚原則可讓您開啟或關閉詐騙情報、開啟或關閉 Outlook 中未經驗證的寄件者識別碼，並針對已封鎖詐騙寄件者指定動作 (移至 [垃圾郵件] 資料夾或隔離)。 Office 365 進階威脅防護 (ATP) 中提供的進階防網路釣魚原則，也包含防冒充設定 (受保護的寄件者和網域)、信箱智慧設定，以及可調整的進階網路釣魚臨界值。 如需詳細資訊，請參閱 [Microsoft 365 中的防網路釣魚原則](set-up-anti-phishing-policies.md)。
+- **防網路釣魚原則**：在 EOP 中，防網路釣魚原則可讓您開啟或關閉詐騙情報、開啟或關閉 Outlook 中未經驗證的寄件者識別碼，並針對已封鎖詐騙寄件者指定動作 (移至 [垃圾郵件] 資料夾或隔離)。 Office 365 進階威脅防護 (Office 365 ATP) 中提供的進階防網路釣魚原則，也包含防冒充設定 (受保護的寄件者和網域)、信箱情報設定，以及可調整的進階網路釣魚臨界值。 如需詳細資訊，請參閱 [Microsoft 365 中的防網路釣魚原則](set-up-anti-phishing-policies.md)。
 
 - **電子郵件驗證**：任何反詐騙工作的整合部分就是在 DNS 中使用 SPF、DKIM 和 DMARC 記錄的電子郵件驗證 (Authentication) (也稱為電子郵件驗證 (Validation))。 您可以為網域設定這些記錄，這樣目的地電子郵件系統就能檢查您網域中寄件者所聲稱郵件的有效性。 針對內送郵件，Microsoft 365 需要寄件者網域的電子郵件驗證。 如需詳細資訊，請參閱 [Microsoft 365 中的電子郵件驗證](email-validation-and-authentication.md)。
 
-Microsoft 的反詐騙技術最初僅部署到具有 Office 365 進階威脅防護 (ATP) 的組織。 在 2018 年 10 月，已將反詐騙保護功能新增至 EOP。
+從 2018 年 10 月開始，EOP 中提供反詐騙防護功能。 在此之前，只有具有 Office 365 ATP 的組織才提供反詐騙防護功能。
 
 EOP 會分析並封鎖使用標準電子郵件驗證方法與寄件者信譽技術組合無法驗證的郵件。
 

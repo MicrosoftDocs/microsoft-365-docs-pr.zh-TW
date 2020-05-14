@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9564445f6b5a92479ba264947dbeaa109db76e14
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 196cbc0ebc05683315766b736dd9d5fc2d92afd2
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036216"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214567"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>使用 Microsoft 365 功能實現 GDPR 資訊保護
 
@@ -56,8 +56,8 @@ Microsoft 提供下列建議設定，可作為起點設定：
 
 威脅防護是跨 Microsoft 365 服務所建置。您可以從以下幾個資源開始著手：
 
-- [Office 365 安全性藍圖：前 30 天、前 90 天和之後的最高優先順序](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)。此藍圖包含實作功能的建議。 
-- [防範 Office 365 中的威脅](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)。 深入了解您可以在 Microsoft 365 資訊安全中心採取的保護動作。
+- [Office 365 安全性藍圖：前 30 天、前 90 天和之後的最高優先順序](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)。此藍圖包含實作功能的建議。 
+- [防範 Office 365 中的威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)。 深入了解您可以在 Microsoft 365 資訊安全中心採取的保護動作。
 - [Windows 威脅防護](https://docs.microsoft.com/windows/security/threat-protection/)。深入了解 Windows Defender 進階威脅防護與 Windows 10 的其他功能。
 
 ## <a name="learn-more"></a>深入了解

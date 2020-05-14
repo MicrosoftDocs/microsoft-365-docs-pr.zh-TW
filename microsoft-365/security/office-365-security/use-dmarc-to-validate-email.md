@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: 了解如何設定以網域為基礎的訊息驗證、報告和符合性 (DMARC) 來驗證從貴組織傳送的訊息。
-ms.openlocfilehash: 9de3ef1218be8152dc0795809c21efe8a93fd659
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 9ae159ccb2673fd9c8538b184e4de1b8e1c2b039
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708544"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224574"
 ---
 # <a name="use-dmarc-to-validate-email"></a>使用 DMARC 來驗證電子郵件
 
@@ -168,7 +168,7 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
-一旦您已形成記錄，您需要在網域註冊機構中更新記錄。如需將 DMARC TXT 記錄新增至 Microsoft 365 的 DNS 記錄之相關指示，請參閱[在管理 DNS 記錄時建立 Microsoft 365 的 DNS 記錄](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23)。
+一旦您已形成記錄，您需要在網域註冊機構中更新記錄。如需將 DMARC TXT 記錄新增至 Microsoft 365 的 DNS 記錄之相關指示，請參閱[在管理 DNS 記錄時建立 Microsoft 365 的 DNS 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
 
 ## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>在 Microsoft 365 中實作 DMARC 的最佳作法
 

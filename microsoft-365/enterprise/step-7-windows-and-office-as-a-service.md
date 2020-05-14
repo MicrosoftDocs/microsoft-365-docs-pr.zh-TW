@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在您的環境中準備 Windows 和 Office 服務。
-ms.openlocfilehash: bca8fbf39bbbcc7b0a37512383caf630ffe3da67
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: f30581408be1c69d7aec7e31e9b5d6461266adb1
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011612"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222670"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>步驟 7：Windows 和 Office 服務
 
@@ -95,7 +95,7 @@ Windows 10 提供三個服務通道：
 
 Microsoft 365 提供四個服務通道：
 
-- [**Office 測試人員計畫**](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16)，可供組織對仍在開發的最新 Office 功能進行測試並提供意見反應
+- [**Office 測試人員計畫**](https://products.office.com/office-insider)，可供組織對仍在開發的最新 Office 功能進行測試並提供意見反應
 - **每月通道**，可在最新的 Office 功能可供使用時，立即提供給使用者。
 - **半年通道**，每年只會提供兩次新的功能與新的特性
 - **半年通道 (有目標地)**，這是完整支援的 Office 組建，可讓試驗使用者和應用程式相容性測試者測試及驗證下一個半年通道

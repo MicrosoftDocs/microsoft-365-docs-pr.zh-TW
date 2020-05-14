@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全性與合規性中心的內容搜尋工具，在 Exchange 混合式部署中搜尋及匯出內部部署使用者的 Microsoft Teams 聊天資料 (稱為 1xN 聊天)。
-ms.openlocfilehash: 7b05460bb41ff97c8571a96b38a8eebd50a206fd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 488a08067a39ff4bab61696d5faf8b7c849b4ab8
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034569"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214597"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>搜尋內部部署使用者的雲端式信箱
 
@@ -59,7 +59,7 @@ ms.locfileid: "44034569"
   
 - 組織的預設網域名稱。
 
-- 組織的租用戶名稱和租用戶識別碼。 您可以在 Azure Active Directory 入口網站 (在 **[管理]** \> **[屬性]** 底下) 找到這些資訊。 請參閱[尋找 Microsoft 365 租用戶識別碼](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b)。
+- 組織的租用戶名稱和租用戶識別碼。 您可以在 Azure Active Directory 入口網站 (在 **[管理]** \> **[屬性]** 底下) 找到這些資訊。 請參閱[尋找 Microsoft 365 租用戶識別碼](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)。
 
 - 可在支援要求中使用下列目的標題或描述：「啟用內部部署使用者的應用程式內容搜尋」。 這可協助您將要求傳送到負責實作要求的電子文件探索工程團隊。
 

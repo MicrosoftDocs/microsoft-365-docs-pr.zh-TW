@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您將了解如何在 Microsoft 365 的安全性與合規性中心檢視及管理隔離的郵件。
-ms.openlocfilehash: ff6cb3dbf9a0a2010bf792115c53265689873090
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+description: 使用者可以了解如何在 Exchange Online Protection (EOP) 中查看和管理收到的隔離郵件。
+ms.openlocfilehash: 802c2a5ce196a1ca67b01b973be5889b141f57f5
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173377"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208848"
 ---
-# <a name="find-and-release-quarantined-messages-as-a-user"></a>以使用者身分找到並釋放被隔離的郵件
+# <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 尋找及釋出隔離的郵件
 
-在擁有 Exchange Online 信箱的 Microsoft 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，隔離區會保存可能有害或不想要的郵件。 如需詳細資訊，請參閱 [Office 365 中的隔離區](quarantine-email-messages.md)。
+在擁有 Exchange Online 信箱的 Microsoft 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，隔離區會保存可能有害或垃圾郵件。 如需詳細資訊，請參閱 [EOP 中的隔離區](quarantine-email-messages.md)。
 
 身為使用者，您可以檢視、釋出、刪除隔離郵件 (收件者是您，且經系統認定為是垃圾郵件或大量電子郵件而加以隔離的郵件)。 自 2020 年 4 月起，您可以查看或刪除收件者是您的已隔離網路釣魚 (不是高信賴度網路釣魚) 郵件。 您可以在安全性與合規性中心 (如果系統管理員已設定) 或[使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)中查看和管理您的隔離郵件。
 
@@ -36,11 +36,11 @@ ms.locfileid: "44173377"
 
 - 若要開啟安全性與合規性中心，請移至 <https://protection.office.com>。 若要直接開啟 [隔離區] 頁面，請移至 <https://protection.office.com/quarantine>。
 
-- 系統管理員可以設定郵件要先保留在隔離區中多久，然後才永久刪除 (反垃圾郵件原則)。 已在隔離區中到期的郵件將無法還原。 如需詳細資訊，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+- 系統管理員可以設定郵件要先保留在隔離區中多久，然後才永久刪除 (反垃圾郵件原則)。 已在隔離區中到期的郵件將無法還原。 如需詳細資訊，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-- 系統管理員也可以在反垃圾郵件原則中[啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)。 使用者可以直接從這些通知釋出垃圾郵件隔離郵件，但無法釋出網路釣魚隔離郵件。 如需詳細資訊，請參閱 [Office 365 中的使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
+- 系統管理員也可以在反垃圾郵件原則中[啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)。 使用者可以直接從這些通知釋出垃圾郵件隔離郵件，但無法釋出網路釣魚隔離郵件。 如需詳細資訊，請參閱 [EOP 中的使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
-- 經系統或郵件流程規則 (又稱為傳輸規則) 認為是高信賴度網路釣魚或惡意程式碼而遭到隔離的郵件，只會交給系統管理員處理。 使用者可以檢閱網路釣魚訊息，但只能由系統管理員發行。 如需詳細資訊，請參閱[以 Office 365 系統管理員身分管理隔離的郵件和檔案](manage-quarantined-messages-and-files.md)。
+- 經系統或郵件流程規則 (又稱為傳輸規則) 認為是高信賴度網路釣魚或惡意程式碼而遭到隔離的郵件，只會交給系統管理員處理。 使用者可以檢閱網路釣魚訊息，但只能由系統管理員發行。 如需詳細資訊，請參閱[在 EOP 中管理隔離的郵件和檔案](manage-quarantined-messages-and-files.md)。
 
 - 您只能釋出郵件並將其報告為誤判 (非垃圾郵件) 一次。
 
@@ -96,7 +96,7 @@ ms.locfileid: "44173377"
 
      - **垃圾郵件**
 
-     - **網路釣魚** (2020 年 4 月起)
+     - **網路釣魚**
 
    若要清除篩選，按一下 [清除]****。 若要隱藏 [篩選] 飛出視窗，再按一下 [篩選]****。
 
@@ -134,7 +134,7 @@ ms.locfileid: "44173377"
 
 - **主旨**
 
-- **隔離原因**：顯示是否已將郵件視為**垃圾郵件**、**大量郵件**或 (2020 年 4 月起) **網路釣魚**。
+- **隔離原因**：顯示是否將郵件識別為 [垃圾郵件]**** 或 [大量]**** 或 [網路釣魚]****。
 
 - **收件者**：如果郵件包含多個收件者，則必須按一下 [預覽郵件]**** 或 [檢視郵件標頭]**** 以查看完整的收件者清單。
 

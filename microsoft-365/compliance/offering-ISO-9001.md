@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 279ecf60b0d9c023449031a3c5f086f15b18049f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: b2542f697edb28c4949b844ae32d606dba5e7a1c
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065748"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214301"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>ISO 9001:2015 品質管理系統標準
 
@@ -57,15 +57,15 @@ ISO 9001:2015 是為品質管理系統建立準則的一項國際標準。 它�
 
 **可以在何處取得 Microsoft 服務的 ISO 9001:2015 稽核報告和範圍聲明？**
 
-[服務信任入口網站](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662)提供獨立稽核的合規性報告。 您可以使用此入口網站要求報告，讓您的稽核員可以比較 Microsoft 的雲端服務結果與您自己的法律和法規需求。 [FY17 Microsoft Azure ISO 9001 評定報告](https://aka.ms/Azure9001Report)和 [FY17 Microsoft Azure ISO 9001 認證](https://aka.ms/Azure9001Cert)都可供使用。
+[服務信任入口網站](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal)提供獨立稽核的合規性報告。 您可以使用此入口網站要求報告，讓您的稽核員可以比較 Microsoft 的雲端服務結果與您自己的法律和法規需求。 [FY17 Microsoft Azure ISO 9001 評定報告](https://www.microsoft.com/?ref=aka)和 [FY17 Microsoft Azure ISO 9001 認證](https://www.microsoft.com/?ref=aka)都可供使用。
 
 **Microsoft 是否每年針對基礎結構失敗執行測試？**
 
-是的。 ISO 9001:2015 年度評定包含基礎的實體基礎結構資料中心。 如需涵蓋範圍的詳細資訊，請[檢閱認證](https://aka.ms/Azure9001Cert)。
+是的。 ISO 9001:2015 年度評定包含基礎的實體基礎結構資料中心。 如需涵蓋範圍的詳細資訊，請[檢閱認證](https://www.microsoft.com/?ref=aka)。
 
 **可以在何處檢視 Microsoft 的 ISO 9001:2015 合規性資訊？**
 
-您可以為此評估範圍內的 Azure 和其他服務下載 [ISO 9001:2015 認證](https://aka.ms/Azure9001Cert)。
+您可以為此評估範圍內的 Azure 和其他服務下載 [ISO 9001:2015 認證](https://www.microsoft.com/?ref=aka)。
 
 ## <a name="resources"></a>資源
 

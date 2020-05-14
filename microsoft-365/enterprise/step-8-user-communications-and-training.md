@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何透過通訊和訓練，讓終端使用者準備迎接 Windows 10 和 Microsoft 365 Apps 企業版。
-ms.openlocfilehash: 7497925b7efd66dd4b86dd4d64df81490bbc7d90
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e6118e1029186c84bebdb0fee079364f22356c2e
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636744"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222658"
 ---
 # <a name="step-8-user-communications-and-training"></a>步驟 8：使用者的通訊和訓練
 
@@ -61,7 +61,7 @@ ms.locfileid: "43636744"
 
 比方說，如果您已啟用多重要素驗證，這會使用 Azure AD，並利用電話應用程式或 PIN 以安全地存取服務，藉以保護使用者登入資源。Azure 資訊保護可以方便使用者分類並為文件加上標籤。
 
-[為使用者設定多重要素驗證](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[為使用者設定多重要素驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)
 
 這些只是使用者會發現的幾個新功能，某些使用者可能會以正面方式或稍不正面的方式意外發現新功能。而這些意外，特別是若其變更了一般的工作流程，可能會導致您或服務台接到更多來電與問題票證。
 

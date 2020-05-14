@@ -124,38 +124,32 @@
                   items:
                     - name: 了解結構描述
                       href: mtp/advanced-hunting-schema-tables.md
-                    - name: AlertInfo
-                      href: mtp/advanced-hunting-alertinfo-table.md
                     - name: AlertEvidence
                       href: mtp/advanced-hunting-alertevidence-table.md
-                    - name: AccountInfo
-                      href: mtp/advanced-hunting-accountinfo-table.md
-                    - name: EmailEvents
-                      href: mtp/advanced-hunting-emailevents-table.md
-                    - name: EmailAttachmentInfo
-                      href: mtp/advanced-hunting-emailattachmentinfo-table.md
-                    - name: EmailUrlInfo
-                      href: mtp/advanced-hunting-emailurlinfo-table.md
-                    - name: DeviceInfo
-                      href: mtp/advanced-hunting-deviceinfo-table.md
-                    - name: DeviceNetworkInfo
-                      href: mtp/advanced-hunting-devicenetworkinfo-table.md
-                    - name: DeviceProcessEvents
-                      href: mtp/advanced-hunting-deviceprocessevents-table.md
-                    - name: DeviceNetworkEvents
-                      href: mtp/advanced-hunting-devicenetworkevents-table.md
-                    - name: DeviceFileEvents
-                      href: mtp/advanced-hunting-devicefileevents-table.md
-                    - name: DeviceRegistryEvents
-                      href: mtp/advanced-hunting-deviceregistryevents-table.md
-                    - name: DeviceLogonEvents
-                      href: mtp/advanced-hunting-devicelogonevents-table.md
-                    - name: DeviceImageLoadEvents
-                      href: mtp/advanced-hunting-deviceimageloadevents-table.md
+                    - name: AlertInfo
+                      href: mtp/advanced-hunting-alertinfo-table.md
+                    - name: AppFileEvents
+                      href: mtp/advanced-hunting-appfileevents-table.md
                     - name: DeviceEvents
                       href: mtp/advanced-hunting-deviceevents-table.md
                     - name: DeviceFileCertificateInfo
                       href: mtp/advanced-hunting-devicefilecertificateinfo-table.md
+                    - name: DeviceFileEvents
+                      href: mtp/advanced-hunting-devicefileevents-table.md
+                    - name: DeviceImageLoadEvents
+                      href: mtp/advanced-hunting-deviceimageloadevents-table.md
+                    - name: DeviceInfo
+                      href: mtp/advanced-hunting-deviceinfo-table.md
+                    - name: DeviceLogonEvents
+                      href: mtp/advanced-hunting-devicelogonevents-table.md
+                    - name: DeviceNetworkEvents
+                      href: mtp/advanced-hunting-devicenetworkevents-table.md
+                    - name: DeviceNetworkInfo
+                      href: mtp/advanced-hunting-devicenetworkinfo-table.md
+                    - name: DeviceProcessEvents
+                      href: mtp/advanced-hunting-deviceprocessevents-table.md
+                    - name: DeviceRegistryEvents
+                      href: mtp/advanced-hunting-deviceregistryevents-table.md
                     - name: DeviceTvmSecureConfigurationAssessment
                       href: mtp/advanced-hunting-tvm-configassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
@@ -164,8 +158,14 @@
                       href: mtp/advanced-hunting-tvm-softwareinventory-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
                       href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
-                    - name: AppFileEvents
-                      href: mtp/advanced-hunting-appfileevents-table.md
+                    - name: EmailAttachmentInfo
+                      href: mtp/advanced-hunting-emailattachmentinfo-table.md
+                    - name: EmailEvents
+                      href: mtp/advanced-hunting-emailevents-table.md
+                    - name: EmailUrlInfo
+                      href: mtp/advanced-hunting-emailurlinfo-table.md
+                    - name: IdentityInfo
+                      href: mtp/advanced-hunting-identityinfo-table.md
                     - name: IdentityLogonEvents
                       href: mtp/advanced-hunting-identitylogonevents-table.md
                     - name: IdentityQueryEvents
@@ -207,7 +207,7 @@
                 - name: 設定時區
                   href: mtp/mtp-time-zone.md
             - name: 檢視裝置設定檔
-              href: 'mtp:/device-profile.md'
+              href: mtp/device-profile.md
             - name: 提供意見反應
               href: mtp/feedback.md
             - name: 透過 ServiceNow 管理票證
@@ -375,15 +375,6 @@
                       href: ./office-365-security/download-existing-reports.md
                 - name: 檢視惡意檔案的相關資訊
                   href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
-            - name: EOP 是什麼？
-              href: ./office-365-security/what-is-eop.md
-              items:
-                - name: 在 EOP 獨立版中封鎖垃圾郵件
-                  href: ./office-365-security/block-email-spam-in-EOPStandalone.md
-                - name: 使用 Exchange Online Protection 保護內部部署的信箱
-                  href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
-                - name: '設定獨立 EOP 以將垃圾郵件傳送至 [垃圾郵件] 資料夾'
-                  href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
         - name: 進階威脅防護
           href: ./office-365-security/office-365-atp.md
           items:
@@ -523,14 +514,17 @@
               items: null
             - name: SIEM 伺服器整合
               href: ./office-365-security/siem-server-integration.md
-            - name: Exchange Online Protection
+            - name: Exchange Online Protection 概觀
               href: ./office-365-security/exchange-online-protection-overview.md
               items:
                 - name: EOP 功能
                   href: ./office-365-security/eop-features.md
-                - name: EOP 中的功能權限
+                - name: 獨立版 EOP 中的權限
                   href: ./office-365-security/feature-permissions-in-eop.md
-                - name: Exchange Online Protection 中的 Exchange 系統管理中心
+                  items:
+                    - name: 在獨立版 EOP 中管理角色群組
+                      href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
+                - name: 獨立版 EOP 中的 Exchange 系統管理中心
                   href: ./office-365-security/exchange-admin-center-in-exchange-online-protection-eop.md
                 - name: 設定 EOP 服務
                   href: ./office-365-security/set-up-your-eop-service.md
@@ -541,48 +535,42 @@
                       href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
                     - name: 套用 EOP 設定至多個租用戶的範例指令碼
                       href: ./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md
-                    - name: 將網域及設定從某個 EOP 組織移到另一個 EOP 組織
+                    - name: 將網域及設定從某個 EOP 組織移到另一個
                       href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
                     - name: 從 Google Postini、Barracuda Spam and Virus Firewall 或 Cisco IronPort 切換到 EOP
                       href: ./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
-                    - name: 非法回應郵件與 EOP
+                    - name: EOP 中的退信攻擊
                       href: ./office-365-security/backscatter-messages-and-eop.md
-                - name: EOP 中的訊息原則和規範
-                  href: ./office-365-security/messaging-policy-and-compliance-in-eop.md
+                - name: 獨立版 EOP 中的稽核報告
+                  href: ./office-365-security/auditing-reports-in-eop.md
                   items:
-                    - name: EOP 中的稽核報告
-                      href: ./office-365-security/auditing-reports-in-eop.md
-                    - name: 執行 EOP 中的系統管理員角色群組報告
+                    - name: 在獨立版 EOP 中執行系統管理員角色群組報告
                       href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
-                - name: 管理 EOP 中的收件者和系統管理員角色群組
-                  href: ./office-365-security/manage-recipients-and-admin-role-groups-in-eop.md
+                    - name: 在獨立版 EOP 中檢視系統管理稽核記錄
+                      href: ./office-365-security/view-the-admin-audit-log-eop.md
+                - name: 在獨立版 EOP 中管理收件者
+                  href: ./office-365-security/manage-recipients-in-eop.md
                   items:
-                    - name: 管理 EOP 中的收件者
-                      href: ./office-365-security/manage-recipients-in-eop.md
-                    - name: 管理 EOP 中的郵件使用者
+                    - name: 在獨立版 EOP 中管理郵件使用者
                       href: ./office-365-security/manage-mail-users-in-eop.md
-                    - name: 管理 EOP 中的群組
+                    - name: 在獨立版 EOP 中管理群組
                       href: ./office-365-security/manage-groups-in-eop.md
-                    - name: 管理 EOP 中的系統管理員角色群組權限
-                      href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
                 - name: EOP 中的郵件流程
                   href: ./office-365-security/mail-flow-in-eop.md
                   items:
-                    - name: 如何確保郵件不會被標示為垃圾郵件
-                      href: ./office-365-security/how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md
-                    - name: 郵件流程規則 (傳輸規則)
+                    - name: 獨立版 EOP 中的郵件流程規則 (傳輸規則)
                       href: ./office-365-security/mail-flow-rules-transport-rules-0.md
-                    - name: 使用郵件流程規則來設定大量電子郵件篩選
+                    - name: 在 EOP 中使用郵件流程規則來篩選大量電子郵件
                       href: ./office-365-security/use-transport-rules-to-configure-bulk-email-filtering.md
-                    - name: 透過檔案附件封鎖來降低惡意程式碼威脅
+                    - name: 在 EOP 中使用郵件流程規則來封鎖含有可執行附件的郵件
                       href: ./office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
-                    - name: 報告和郵件追蹤
+                    - name: 獨立版 EOP 中的報告和郵件追蹤
                       href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
-                    - name: Office 365 中的郵件流程情報
+                    - name: EOP 中的郵件流程情報
                       href: ./office-365-security/mail-flow-intelligence-in-office-365.md
                 - name: EOP 的疑難排解與支援
                   items:
-                    - name: 將疑難排解郵件傳送至 Office 365
+                    - name: 疑難排解傳送至 Microsoft 365 的郵件
                       href: ./office-365-security/troubleshooting-mail-sent-to-office-365.md
                     - name: EOP 的說明和支援
                       href: ./office-365-security/help-and-support-for-eop.md
@@ -599,6 +587,10 @@
                       href: ./office-365-security/sending-mail-to-office-365.md
                     - name: 非客戶的服務
                       href: ./office-365-security/services-for-non-customers.md
+                - name: 使用獨立版 EOP 保護中國的內部部署信箱
+                  href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
+                - name: '設定獨立版 EOP 將垃圾郵件傳送至 [垃圾郵件] 資料夾'
+                  href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
         - name: 傳統的安全性功能
           items:
             - name: S/MIME

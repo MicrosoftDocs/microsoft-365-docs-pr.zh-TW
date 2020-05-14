@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: 36866f457369248f642a4189f2d9f46e58baa2a3
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a4bf22f7064e74926935a228f84281af9171bedc
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165944"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214607"
 ---
 # <a name="overview-of-retention-policies"></a>保留原則概觀
 
@@ -422,7 +422,7 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
   
 ### <a name="exchange-online"></a>Exchange Online
 
-- [管理安全性與合規性中心的電子文件探索案例](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (電子文件探索保留) 
+- [管理安全性與合規性中心的電子文件探索案例](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (電子文件探索保留) 
     
 - [就地保留與訴訟暫止](https://go.microsoft.com/fwlink/?linkid=846124) (電子文件探索保留) 
 
@@ -432,15 +432,15 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
     
 ### <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 和商務用 OneDrive
 
-- [管理安全性與合規性中心的電子文件探索案例](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (電子文件探索保留) 
+- [管理安全性與合規性中心的電子文件探索案例](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (電子文件探索保留) 
     
-- [在電子文件探索中心將內容新增至案例及保留來源](https://support.office.com/article/54d70de9-1ec2-4325-84f3-aeb588554479) (電子文件探索保留) 
+- [在電子文件探索中心將內容新增至案例及保留來源](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (電子文件探索保留) 
     
-- [文件刪除原則的概觀](https://support.office.com/article/55e8d858-f278-482b-a198-2e62d6a2e6e5) (僅限刪除) 
+- [文件刪除原則的概觀](https://docs.microsoft.com/microsoft-365/compliance/document-deletion-policies) (僅限刪除) 
     
 - [設定就地記錄管理](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (保留) 
     
-- [網站關閉及刪除的使用原則](https://support.office.com/article/a8280d82-27fd-48c5-9adf-8a5431208ba5) (僅限刪除) 
+- [網站關閉及刪除的使用原則](https://support.microsoft.com/zh-TW/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (僅限刪除) 
     
 - [資料管理原則](intro-to-info-mgmt-policies.md) (僅限刪除) 
     

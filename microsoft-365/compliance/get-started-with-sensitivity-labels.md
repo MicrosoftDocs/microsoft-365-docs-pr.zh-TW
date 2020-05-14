@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: f024995f63af19efa410cdb02a1f8c8d110902eb
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: ab05b9226c244b1e6cdf1e552d32d4d9fc0d95d2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140989"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208674"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -38,7 +38,7 @@ ms.locfileid: "44140989"
 
 1. **建立標籤。** 根據貴組織用於不同內容敏感度層級的分類法，建立您的敏感度標籤並加以命名。 使用對您的使用者有意義的一般名稱或字詞。 如果您還沒有建立分類法，請考慮從 [個人]、[公用]、[一般]、[機密] 和 [高度機密] 等標籤名稱著手。 您可以接著使用子標籤，依類別將類似的標籤群組。 當您建立標籤時，請使用工具提示文字來協助使用者選取適當的標籤。
     
-    如需用於定義分類法的更廣泛指導方針，請從[服務信任入口網站](https://aka.ms/DataClassificationWhitepaper)下載白皮書《資料分類和敏感度標籤分類》(英文)。
+    如需更廣泛的定義分類法指導方針，請從[服務信任入口網站](https://aka.ms/DataClassificationWhitepaper)下載白皮書《資料分類和敏感度標籤分類》(英文)。
 
 2. **定義每個標籤的功能。** 設定您想要與每個標籤相關聯的保護設定。 例如，您可能希望較低敏感度內容 (如「一般」標籤) 只有套用頁首或頁尾，而較高敏感度內容 (如「機密」標籤) 則應套用浮水印、加密及端點保護。
 
@@ -75,14 +75,14 @@ ms.locfileid: "44140989"
 |----------------|---------------|
 |建立及發佈將協助保護我的組織資料的敏感度標籤|[建立及設定敏感度標籤及其原則](create-sensitivity-labels.md)|
 |使用敏感度標籤加密文件和電子郵件，並限制能夠存取該內容的人員以及使用方式 |[使用敏感度標籤來套用加密以限制存取內容](encryption-sensitivity-labels.md)|
-|在 SharePoint (和 OneDrive) 中針對具有加密標籤的文件啟用共同作業功能 | [對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)
+|在網頁上啟用 Office 的敏感度標籤，並提供共同撰寫、電子文件探索、資料遺失防護、搜尋支援，即使文件已加密。 | [對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)
 |管理 Office 應用程式的敏感度標籤，讓內容標示為已建立 |[在 Office 應用程式中使用敏感度標籤](sensitivity-labels-office-apps.md)|
 |自動將敏感度標籤套用至文件和電子郵件 | [自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)|
 |使用敏感度標籤來保護 Teams 和 SharePoint 中的內容 |[對 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站使用敏感度標籤 (公開預覽)](sensitivity-labels-teams-groups-sites.md)|
 |探索、標記和保護儲存在內部部署資料存放區中的檔案 |[部署 Azure 資訊保護掃描器以自動分類和保護檔案](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |探索、標記和保護儲存在雲端的資料存放區中的檔案|[探索、分類、標記和保護儲存在雲端中的控管和敏感性資料](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |套用並檢視 Power BI 中的敏感度標籤，以及保護已下載的報告|[Power BI 中的資料保護 (預覽)](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
-|將敏感度標籤的使用情況視覺化，以報告部署狀態和微調標籤組態|[利用標籤分析檢視標籤使用量](label-analytics.md)|
+|查看我的敏感度標籤的使用方式和位置，並深入探查以檢查加上標籤的內容|[了解您的資料 - 資料分類概觀 (預覽)](data-classification-overview.md)|
 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>敏感度標籤的使用者文件

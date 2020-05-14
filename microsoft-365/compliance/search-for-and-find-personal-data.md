@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 瞭解如何在 Office 365 中搜尋並尋找符合一般資料保護規定 (GDPR) 的個人資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 50c8db59cfd5e9a7de3da0dc696227e85dab1cee
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e0d29697a28221b5ff998f5ce923c143bf7a0804
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208087"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214577"
 ---
 # <a name="search-for-and-find-personal-data"></a>搜尋並找出個人資料
 
@@ -80,7 +80,7 @@ Microsoft 建議三階段方法，來尋找 Office 365 中的個人資料。本�
 
 本主題包含適用在歐盟地區公民的一些敏感性資訊類型的清單。 檢查安全性中心或合規性中心是否有加入新功能，能夠有助於 GDPR 合規性。
 
-另請參閱這篇文章：[敏感資訊類型的清單和每一種敏感資訊類型的樣子](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)。
+另請參閱這篇文章：[敏感資訊類型的清單和每一種敏感資訊類型的樣子](https://docs.microsoft.com/microsoft-365/compliance/content-search)。
 
 敏感資訊類型定義自動化程序如何辨識特定資訊類型，例如銀行帳號、健康服務號碼和信用卡號碼。敏感資訊類型也稱為條件。敏感資訊類型由規則運算式或函數所能識別的模式來定義。此外，也可使用關鍵字和總和檢查碼之類的佐證來識別敏感資訊類型。評估程序中也會使用信賴等級和鄰近性。
 
@@ -111,7 +111,7 @@ Microsoft 建議三階段方法，來尋找 Office 365 中的個人資料。本�
 <p>SensitiveType:&quot;France Passport Number&quot;</p>
 </blockquote>
 <p>限定 SharePoint (包括商務用 OneDrive) 的搜尋範圍。請確定語法完全正確，而且沒有多餘的空格或錯字。</p>
-<p>請參閱<a href="https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">形成查詢以搜尋儲存在網站上的敏感資料</a>。</p></td>
+<p>請參閱<a href="https://docs.microsoft.com/microsoft-365/compliance/form-a-query-to-find-sensitive-data-stored-on-sites">形成查詢以搜尋儲存在網站上的敏感資料</a>。</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>檢閱每個搜尋的結果</p></td>
@@ -218,4 +218,4 @@ Microsoft 建議三階段方法，來尋找 Office 365 中的個人資料。本�
 
 注意："SensitiveType" 會區分大小寫，但查詢的其餘部分不會。
 
-您也可以使用屬性和運算子來說明您如何修改查詢。如需詳細資訊和範例，請參閱[形成查詢以搜尋儲存在網站上的敏感資料](https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836)。
+您也可以使用屬性和運算子來說明您如何修改查詢。如需詳細資訊和範例，請參閱[形成查詢以搜尋儲存在網站上的敏感資料](https://docs.microsoft.com/microsoft-365/compliance/form-a-query-to-find-sensitive-data-stored-on-sites)。

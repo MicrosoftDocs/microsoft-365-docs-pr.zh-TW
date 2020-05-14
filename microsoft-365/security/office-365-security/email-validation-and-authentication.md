@@ -17,17 +17,17 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: 深入了解 Microsoft 365 中的 Exchange Online 和 Exchange Online Protection (EOP) 如何使用電子郵件驗證 (SPF、DKIM 和 DMARC) 來協助防止詐騙、網路釣魚和垃圾郵件。
-ms.openlocfilehash: f3a3ea902cb0c4fede4fcfd919f0969765bc4a96
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 系統管理員現在可以了解 Exchange Online Protection (EOP) 如何使用電子郵件驗證 (SPF、DKIM 和 DMARC) 來協助防止詐騙、網路釣魚和垃圾郵件。
+ms.openlocfilehash: c79a75f1ae520a0c4f885c923b4a56cdb0f7fb87
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637553"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209496"
 ---
-# <a name="email-authentication-in-microsoft-365"></a>Microsoft 365 中的電子郵件驗證
+# <a name="email-authentication-in-eop"></a>EOP 中的電子郵件驗證
 
-電子郵件驗證 (又稱為電子郵件驗證) 是一組嘗試停止詐騙 (來自偽造寄件者的電子郵件訊息) 的標準。 在擁有 Exchange Online 信箱的 Microsoft 365 組織中，和沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，EOP 會使用標準來驗證內送電子郵件：
+電子郵件驗證 (又稱為電子郵件驗證) 是一組嘗試停止詐騙 (來自偽造寄件者的電子郵件訊息) 的標準。 在擁有 Exchange Online 信箱的 Microsoft 365 組織中，和沒有 Exchange Online 信箱的獨立版 Exchange Online Protection (EOP) 組織中，EOP 會使用以下標準來驗證內送電子郵件：
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 

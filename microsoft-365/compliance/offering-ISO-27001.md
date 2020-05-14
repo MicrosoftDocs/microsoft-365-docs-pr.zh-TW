@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3cc92be00eca4f1e90917cadea26df8f10adf267
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: dfbb5ed43c5256109ccc0a137a3d144d084e573e
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066610"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214239"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 資訊安全性管理標準
 
@@ -125,7 +125,7 @@ ISO/IEC 27001 在國際上的接受度和適用性，是取得此標準認證為
 
 **我可以在哪裡取得 Microsoft 服務的 ISO/IEC 27001 稽核報告和範圍聲明？**
 
-[服務信任入口網站](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662)提供獨立稽核的合規性報告。 您可以使用入口網站要求報告，讓您的稽核員可以比較 Microsoft 的雲端服務結果與您自己的法律和法規需求。
+[服務信任入口網站](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal)提供獨立稽核的合規性報告。 您可以使用入口網站要求報告，讓您的稽核員可以比較 Microsoft 的雲端服務結果與您自己的法律和法規需求。
 
 **Microsoft 是否針對基礎結構失敗，每年執行測試？**
 

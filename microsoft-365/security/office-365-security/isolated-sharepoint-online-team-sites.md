@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: 瞭解獨立的 SharePoint Online 小組網站，包括使用、需求以及可以搭配使用的功能。
-ms.openlocfilehash: f88be4b16d7f3a65ba624f7bf4c490b0173883c8
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 91d8394c40597dfc66c4df39f49223e472e7c663
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036701"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209040"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>獨立的 SharePoint Online 小組網站
 
