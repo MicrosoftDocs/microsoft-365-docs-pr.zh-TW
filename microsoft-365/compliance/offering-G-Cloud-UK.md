@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 66db28688a483aea8c0092202eda258a2032027f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: cc6f2a8c52a5fc829a9f04c51f78cf7ea5c2f1e1
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066558"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214497"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>英國政府-雲端（G-Cloud）
 
@@ -105,7 +105,7 @@ UK 中的 Microsoft 雲端提供與英國的資料派駐所結合的可靠性和
 
 **如何取得審計員報表的複本？**
 
-[服務信任入口網站](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662)提供獨立稽核的合規性報告。 您可以使用入口網站來要求審核報告，讓審計員能夠比較 Microsoft 結果與您自己的法律和法規需求。
+[服務信任入口網站](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal)提供獨立稽核的合規性報告。 您可以使用入口網站來要求審核報告，讓審計員能夠比較 Microsoft 結果與您自己的法律和法規需求。
 
 ## <a name="resources"></a>資源
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 瞭解如何在 Office 365 中識別及修復 Outlook 規則和自訂表單注入攻擊
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6e818d05465f7b91268cc44c345c6699e8c6d0ed
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e18635b9b9d090dbc2808b5b8142b59ec1f29c6e
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034813"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224586"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>偵測並修復 Outlook 規則和自訂表單注入攻擊
 
@@ -137,7 +137,7 @@ ms.locfileid: "44034813"
 
 3. 以系統管理員身分開啟 PowerShell 實例，然後開啟您用來儲存腳本的資料夾。
 
-4. 以 .\Get-AllTenantRulesAndForms.ps1 的方式`.\Get-AllTenantRulesAndForms.ps1`執行此 PowerShell 命令列
+4. 以 .\Get-AllTenantRulesAndForms.ps1 的方式執行此 PowerShell 命令列 `.\Get-AllTenantRulesAndForms.ps1`
 
 #### <a name="interpreting-the-output"></a>解讀輸出
 
@@ -159,7 +159,7 @@ ms.locfileid: "44034813"
 
 1. 識別使用者已用於 Outlook 的所有裝置。 所有的潛在惡意程式碼都必須清除。 不允許使用者登入並使用電子郵件，直到所有裝置都已清除為止。
 
-2. 依照刪除每個裝置的[規則](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f)中的步驟進行。
+2. 依照刪除每個裝置的[規則](https://support.microsoft.com/en-us/office/delete-a-rule-2f0e7139-f696-4422-8498-44846db9067f)中的步驟進行。
 
 3. 如果您不確定是否存在其他惡意程式碼，您可以格式化及重新安裝裝置上的所有軟體。 針對行動裝置，您可以遵循製造商的步驟，將裝置重設為出廠影像。
 

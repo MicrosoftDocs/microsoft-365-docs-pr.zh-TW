@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 2b0d015485196bc76e7de580c888892967fe5d05
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+ms.openlocfilehash: 6429c3dee32087d6e82a427b2f374ec49bab5cac
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035120"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222682"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>保護 SharePoint 網站和檔案的原則建議
 
@@ -50,7 +50,7 @@ ms.locfileid: "43035120"
 |        |[套用應用程式資料保護原則](identity-access-policies.md#apply-app-data-protection-policies)|請確定所有建議的應用程式都包含在應用程式清單中。 請務必更新每個平臺的原則（iOS、Android、Windows）|
 |        |[需要相容的電腦](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在雲端應用程式清單中包含 SharePoint 線上|
 |        |[在 SharePoint Online 中使用應用程式強制限制](#use-app-enforced-restrictions-in-sharepoint-online)|新增此新原則。 這會通知 Azure AD 使用 SharePoint Online 中所指定的設定。 此規則會套用至所有使用者，但是只會影響 SharePoint 線上存取原則中所包含之網站的存取權|
-|**敏感性**|[當登入風險為*低*、*中*或*高*時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲端應用程式的指派中包含 SharePoint 線上|
+|**敏感度**|[當登入風險為*低*、*中*或*高*時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲端應用程式的指派中包含 SharePoint 線上|
 |         |[需要相容*的電腦和*行動裝置](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在雲端應用程式清單中包含 SharePoint 線上|
 ||[SharePoint 線上存取控制原則](#sharepoint-online-access-control-policies)：允許來自未受管理裝置之特定 SharePoint 網站的瀏覽器存取權|這可避免檔案的編輯和下載。 使用 PowerShell 來指定網站|
 |**高管制**|[*永遠*需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲端應用程式的指派中包含 SharePoint 線上|
@@ -60,7 +60,7 @@ ms.locfileid: "43035120"
 
 如果您在線上 SharePoint 中執行存取控制，您必須在 Azure AD 中建立此條件式存取原則，以通知 Azure AD 強制執行您在 SharePoint Online 中設定的原則。 此規則會套用至所有使用者，但是只會影響您在 SharePoint Online 中建立存取控制時，使用 PowerShell 所指定之網站的存取權。
 
-若要設定此原則，請參閱本文中的「封鎖或限制存取特定 SharePoint 網站集合或 OneDrive 帳戶」：[控制來自非管理裝置的存取](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622)。
+若要設定此原則，請參閱本文中的「封鎖或限制存取特定 SharePoint 網站集合或 OneDrive 帳戶」：[控制來自非管理裝置的存取](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)。
 
 ## <a name="sharepoint-online-access-control-policies"></a>SharePoint 線上存取控制原則
 
@@ -69,7 +69,7 @@ Microsoft 建議您使用裝置存取控制，以機密和高管制內容來保�
 - 機密網站：允許僅供瀏覽器存取。 這會防止使用者編輯及下載檔案。
 - 高度管制網站：封鎖非管理裝置的存取。
 
-請參閱本文中的「封鎖或限制存取特定 SharePoint 網站集合或 OneDrive 帳戶」：[控制非管理裝置的存取](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622)。
+請參閱本文中的「封鎖或限制存取特定 SharePoint 網站集合或 OneDrive 帳戶」：[控制非管理裝置的存取](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)。
 
 ## <a name="how-these-policies-work-together"></a>這些原則共同運作的方式
 

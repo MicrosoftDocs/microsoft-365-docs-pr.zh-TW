@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 0512d51f2789383c7612c3dbd97c0a77c2c4c7fa
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 4ffc6a8771a93e0aea4583dce092109afe57175d
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214659"
+ms.locfileid: "44222324"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
@@ -120,7 +120,7 @@ Azure AD 提供完整的身分識別管理功能套件。 為了保護存取，�
 
 本指南說明如何實施一組原則，以保護 Office 365 的存取，包括 Exchange Online、SharePoint 線上和商務 OneDrive。 除了執行這些原則之外，也建議您使用下列資源提升租使用者的保護層級：
 
-- [設定您的承租人以提升安全性](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355)：這些建議適用于您租使用者的基準安全性。
+- [設定您的承租人以提升安全性](https://docs.microsoft.com/microsoft-365/security/office-365-security/tenant-wide-setup-for-increased-security)：這些建議適用于您租使用者的基準安全性。
 - [Microsoft 365 安全性藍圖：前30天、90天和之後的主要優先順序](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)：這些建議包括記錄、資料管理、系統管理存取和威脅防護。
 
 

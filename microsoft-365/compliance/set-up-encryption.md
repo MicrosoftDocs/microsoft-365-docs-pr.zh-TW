@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: 使用 Office 365 時，有些加密功能會預設為開啟狀態;您可以設定其他功能以符合某些規範或法律需求。
-ms.openlocfilehash: bce7487f1cb57c04e262f068ea7e192808e43e8a
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 439ae3e848a521b143ab1ea67e3354ca21077f36
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943474"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222492"
 ---
 # <a name="set-up-encryption-in-office-365-enterprise"></a>設定 Office 365 企業版中的加密
 
@@ -34,7 +34,7 @@ ms.locfileid: "43943474"
 |**案例**|**加密方法**|
 |:-----|:-----|
 |檔案儲存在 Windows 電腦上  <br/> |您可以使用 Windows 裝置上的 BitLocker，進行電腦層級的加密。 若您是企業系統管理員或 IT 專業人員，您可以使用 Microsoft 部署工具組（MDT）加以設定。 請參閱[設定 BitLocker 的 MDT](https://go.microsoft.com/fwlink/?linkid=849282)。  <br/> |
-|檔案儲存在行動裝置上  <br/> |某些類型的行動裝置會根據預設，加密儲存至這些裝置的檔。 透過[內建行動裝置管理的 office 365 功能](https://support.office.com/article/a1da44e5-7475-4992-be91-9ccec25905b0)，您可以設定原則，以判斷是否允許行動裝置存取 Office 365 中的資料。 例如，您可以設定原則，只允許加密內容的裝置存取 Office 365 資料。 請參閱[建立及部署裝置安全性原則](https://support.office.com/article/d310f556-8bfb-497b-9bd7-fe3c36ea2fd6)。  <br/> 若要進一步控制行動裝置如何與 Office 365 互動，您可以考慮新增[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/setup-steps)。  <br/> |
+|檔案儲存在行動裝置上  <br/> |某些類型的行動裝置會根據預設，加密儲存至這些裝置的檔。 透過[內建行動裝置管理的 office 365 功能](https://support.microsoft.com/en-us/office/capabilities-of-built-in-mobile-device-management-for-microsoft-365-a1da44e5-7475-4992-be91-9ccec25905b0)，您可以設定原則，以判斷是否允許行動裝置存取 Office 365 中的資料。 例如，您可以設定原則，只允許加密內容的裝置存取 Office 365 資料。 請參閱[建立及部署裝置安全性原則](https://support.microsoft.com/en-us/office/create-and-deploy-device-security-policies-d310f556-8bfb-497b-9bd7-fe3c36ea2fd6)。  <br/> 若要進一步控制行動裝置如何與 Office 365 互動，您可以考慮新增[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/setup-steps)。  <br/> |
 |您需要控制用來加密 Microsoft 資料中心中資料的加密金鑰  <br/> | 做為 Office 365 系統管理員，您可以控制組織的加密金鑰，然後設定 Office 365，以使用這些金鑰在 Microsoft 資料中心內加密您的資料。  <br/> [Office 365 中的客戶金鑰服務加密](customer-key-overview.md) <br/> |
 |人們透過電子郵件進行通訊（Exchange Online）  <br/> | 做為 Exchange Online 管理員時，您有數個選項可以設定電子郵件加密。 包括：  <br/>  使用[Office 365 郵件加密（OME）](set-up-new-message-encryption-capabilities.md)搭配 Azure Rights Management （Azure RMS），讓使用者能夠在組織內部或外部傳送加密的郵件  <br/>  使用[S/MIME 進行郵件簽署和加密](https://aka.ms/c6dozg)，以加密及數位簽署電子郵件訊息  <br/>  使用 TLS 為[其他組織設定安全郵件流程的連接器](https://aka.ms/hs809p) <br/>  請參閱[Office 365 中的電子郵件加密](https://aka.ms/hic3f7)。  <br/> |
 |檔案從小組網站或文件庫存取（OneDrive 商務或 SharePoint 線上）  <br/> |當使用者使用儲存至 OneDrive 商務或 SharePoint 線上的檔案時，會使用 TLS 連線。 這會自動內置於 Office 365。 請參閱[OneDrive For Business and SharePoint Online 中的資料加密](https://go.microsoft.com/fwlink/?linkid=526379)。  <br/> |

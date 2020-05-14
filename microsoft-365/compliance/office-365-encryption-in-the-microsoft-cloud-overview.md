@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 在本文中，請閱讀用於將客戶資料安全地保存在 Microsoft 雲端中的各種加密形式的概述。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 62353725073f5010db1a8681bebad18bc671d81f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e48cc4fc54f0bc4553bab655611900523e11bd4d
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031383"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214271"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft Cloud 中的加密
 
@@ -30,7 +30,7 @@ Microsoft enterprise cloud services 中的客戶資料是由各種技術和程�
 
 不論客戶設定為何，儲存在 Microsoft 企業雲端服務中的客戶資料，都是使用一或多種加密形式來保護。 （驗證加密原則及其強制會獨立于多個協力廠商審計員進行驗證，而這些審核的報告可在[服務信任入口網站](https://aka.ms/stp)上進行。）
 
-Microsoft 提供的服務端技術會在靜止和傳輸過程中加密客戶資料。 例如，針對 rest 的客戶資料，Microsoft Azure 使用[BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview)和[DM Crypt](https://en.wikipedia.org/wiki/Dm-crypt)，而 microsoft 365 使用 BitLocker、 [Azure Storage Service 加密](https://azure.microsoft.com/documentation/articles/storage-service-encryption/)、[分散式金鑰管理員](https://support.office.com/article/989ba10c-f73f-4efb-ad1b-af3322e5f376)（DKM）和 microsoft 365 服務加密。 針對 transport 中的客戶資料，Azure，Office 365，Microsoft 商務版支援，Microsoft Dynamics 365，Microsoft Power BI，Visual Studio Team Services 使用業界標準的安全傳輸通訊協定，例如網際網路通訊協定安全性（IPsec）和傳輸層安全性（TLS）之間的 Microsoft 資料中心之間和使用者裝置與 Microsoft 資料中心之間的傳輸層安全性（TLS）。
+Microsoft 提供的服務端技術會在靜止和傳輸過程中加密客戶資料。 例如，針對 rest 的客戶資料，Microsoft Azure 使用[BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview)和[DM Crypt](https://en.wikipedia.org/wiki/Dm-crypt)，而 microsoft 365 使用 BitLocker、 [Azure Storage Service 加密](https://docs.microsoft.com/azure/)、[分散式金鑰管理員](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-secures-email-secrets)（DKM）和 microsoft 365 服務加密。 針對 transport 中的客戶資料，Azure，Office 365，Microsoft 商務版支援，Microsoft Dynamics 365，Microsoft Power BI，Visual Studio Team Services 使用業界標準的安全傳輸通訊協定，例如網際網路通訊協定安全性（IPsec）和傳輸層安全性（TLS）之間的 Microsoft 資料中心之間和使用者裝置與 Microsoft 資料中心之間的傳輸層安全性（TLS）。
 
 除了 Microsoft 所提供之密碼安全性的基準層級之外，我們的雲端服務也包含其他可管理的密碼編譯選項。 例如，您可以對其 Azure 虛擬機器（Vm）和其使用者之間的流量啟用加密。 透過[Azure 虛擬網路](https://azure.microsoft.com/services/virtual-network/)，您可以使用業界標準的 IPsec 通訊協定，對您公司 VPN 閘道和 Azure 之間的流量以及位於虛擬網路上的 vm 之間的流量進行加密。 此外，[新的 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)可讓您將加密郵件傳送給任何人。
 
@@ -46,7 +46,7 @@ Microsoft 會透過每個新版本的 Windows 作業系統，證明雲端服務�
 - Dynamics 365 和 Dynamics 365 美國政府
 - Office 365、Office 365 美國政府和 Office 365 美國政府國防版
 
-靜態客戶資料的加密是由多種服務端技術所提供，包括 BitLocker、DKM、Azure 儲存服務加密，以及 Exchange Online 中的服務加密、商務用 Skype、商務 OneDrive，以及 SharePoint 線上。 Office 365 服務加密包含一個選項，可使用儲存在 Azure Key Vault 中客戶管理的加密金鑰。 此客戶管理的金鑰選項（稱為「[客戶金鑰](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697)」）適用于 Exchange online、SharePoint 線上、商務用 Skype 和商務 OneDrive。
+靜態客戶資料的加密是由多種服務端技術所提供，包括 BitLocker、DKM、Azure 儲存服務加密，以及 Exchange Online 中的服務加密、商務用 Skype、商務 OneDrive，以及 SharePoint 線上。 Office 365 服務加密包含一個選項，可使用儲存在 Azure Key Vault 中客戶管理的加密金鑰。 此客戶管理的金鑰選項（稱為「[客戶金鑰](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview)」）適用于 Exchange online、SharePoint 線上、商務用 Skype 和商務 OneDrive。
 
 針對傳輸中的客戶資料，所有的 Office 365 伺服器都會使用 TLS 與用戶端電腦協商安全會話，以保護客戶資料。  這適用于用戶端（例如商務用 Skype、Outlook 和 Outlook 網頁版、行動用戶端和網頁瀏覽器）所使用之任何裝置上的通訊協定。
 

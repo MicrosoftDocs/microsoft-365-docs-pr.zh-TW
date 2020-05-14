@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: 了解如何開啟適用於 SharePoint、OneDrive 和 Teams 的 ATP，包括如何為偵測到的檔案設定警示。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7708697f191107176173f2bfaced576c024954c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b4dfe56b635714cedf033f2d4f14cd6bc0286650
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036725"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224608"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>開啟適用於 SharePoint、OneDrive 與 Microsoft Teams 的 ATP
 
@@ -49,7 +49,7 @@ ms.locfileid: "44036725"
 
 2. 在 [安全性 & 規範中心] 的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則** \> **安全附件**]。
 
-   ![在 [安全性 & 規範中心] 中，選擇\> [威脅管理原則]](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+   ![在 [安全性 & 規範中心] 中，選擇 [威脅管理 \> 原則]](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
 
 3. 選取 **[開啟適用於 SharePoint、OneDrive 與 Microsoft Teams 的 ATP]**。
 
@@ -71,13 +71,13 @@ ms.locfileid: "44036725"
 
 若要深入瞭解搭配 Microsoft 365 使用 PowerShell，請參閱使用[PowerShell 管理 Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。
 
-若要深入了解當檔案被偵測為惡意檔案時的使用者體驗，請參閱[在 SharePoint Online、OneDrive 或 Microsoft Teams 中找到惡意檔案時該怎麼做](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)。
+若要深入了解當檔案被偵測為惡意檔案時的使用者體驗，請參閱[在 SharePoint Online、OneDrive 或 Microsoft Teams 中找到惡意檔案時該怎麼做](https://support.microsoft.com/en-us/office/what-to-do-when-a-malicious-file-is-found-in-sharepoint-online-onedrive-or-microsoft-teams-01e902ad-a903-4e0f-b093-1e1ac0c37ad2)。
 
 ## <a name="set-up-alerts-for-detected-files"></a>為偵測到的檔案設定警示
 
 若要在 SharePoint Online、商務用 OneDrive 或 Microsoft Teams 中的檔案被識別為惡意檔案時收到通知，您可以設定警示。
 
-1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**警示** \> ] [**管理提醒**]。
+1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**警示**] [ \> **管理提醒**]。
 
 2. 選擇 **[新警示原則]**。
 

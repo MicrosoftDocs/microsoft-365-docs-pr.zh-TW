@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: '深入瞭解 Exchange 和 SharePoint 中的未編制索引的專案，您可以透過安全性 & 規範中心納入內容搜尋執行。 '
-ms.openlocfilehash: c44138c11c2703cda4accba9976c254a0b135d65
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 534f0014a448b4ef280586a724067f1a4f820693
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626677"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214209"
 ---
 # <a name="partially-indexed-items-in-content-search"></a>內容搜尋中已局部編製索引的項目
 
@@ -57,11 +57,11 @@ ms.locfileid: "43626677"
   
 如需支援和已停用的檔案格式清單，請參閱下列主題：
   
-- **Exchange**  - Exchange[搜尋編制索引的 exchange 檔案格式](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange**  - [Exchange 搜尋編制索引的檔案格式](https://go.microsoft.com/fwlink/p/?LinkID=386618)
     
-- **Exchange** - [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
+- **Exchange**  - [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
     
-- **SharePoint** - [SharePoint 中的預設編目副檔名及分析檔案類型](https://go.microsoft.com/fwlink/p/?LinkID=404033)
+- **SharePoint**  - [SharePoint 中的預設編目副檔名及分析檔案類型](https://go.microsoft.com/fwlink/p/?LinkID=404033)
     
 
   
@@ -112,7 +112,7 @@ ms.locfileid: "43626677"
 
 下表說明可導致電子郵件在 Office 365 的內容搜尋中傳回成部分索引項目目的索引限制。
   
-如需 SharePoint 檔的索引限制清單，請參閱[線上 SharePoint 的搜尋限制](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)。
+如需 SharePoint 檔的索引限制清單，請參閱[線上 SharePoint 的搜尋限制](https://docs.microsoft.com/sharepoint/search-limits)。
   
 |**索引限制**|**最大值**|**描述**|
 |:-----|:-----|:-----|
@@ -125,7 +125,7 @@ ms.locfileid: "43626677"
 |分析器輸出上限  <br/> |200 萬個字元  <br/> |已編制索引之分析程式的文字輸出數目上限。 例如，如果剖析器解壓縮了檔中的8000000個字元，只會為前2百萬個字元編制索引。  <br/> |
 |註解標記上限  <br/> |2000000  <br/> |當電子郵件訊息編制索引時，每個字都會以不同的處理指示加以批註，以指定如何索引該 word。 每一組處理指示稱為「批註」標記。 若要在 Office 365 中維護服務品質，電子郵件的限制是2000000的註解標記。  <br/> |
 |索引中的最大主體大小  <br/> |67000000個字元  <br/> |電子郵件內文中的字元總數及其所有附件。 當電子郵件訊息編制索引時，郵件和所有附件中的所有文字都會串連成單一字串。 已編制索引的此字串大小上限為67000000個字元。  <br/> |
-|Body 中的唯一標記上限  <br/> |1 百萬  <br/> |如先前所述，token 是從內容提取文字、移除標點符號和空間，然後分割成索引中儲存的字詞（稱為標記）的結果。 例如，片語`"cat, mouse, bird, dog, dog"`包含5個權杖。 但只有4個是唯一的標記。 每封電子郵件都有1000000個唯一的標記限制，這有助於防止索引因過大而無法使用隨機標記。  <br/> |
+|Body 中的唯一標記上限  <br/> |1 百萬  <br/> |如先前所述，token 是從內容提取文字、移除標點符號和空間，然後分割成索引中儲存的字詞（稱為標記）的結果。 例如，片語 `"cat, mouse, bird, dog, dog"` 包含5個權杖。 但只有4個是唯一的標記。 每封電子郵件都有1000000個唯一的標記限制，這有助於防止索引因過大而無法使用隨機標記。  <br/> |
 
 ## <a name="more-information-about-partially-indexed-items"></a>有關部分索引項目目的詳細資訊
 
@@ -141,7 +141,7 @@ ms.locfileid: "43626677"
 
 - 使用資訊版權管理（IRM）保護的郵件會進行索引，如果符合搜尋查詢，將會包含在搜尋結果中。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [調查 eDiscovery 中已部分索引的專案](investigating-partially-indexed-items-in-ediscovery.md)
 

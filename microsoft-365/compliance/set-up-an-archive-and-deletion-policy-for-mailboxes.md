@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: 在 Microsoft 365 中建立封存和刪除原則，以自動將專案移至使用者的封存信箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d4c1bd1c993444c38596642bf974e734870c79d8
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5bc48b8192af3ca4edd591307e5945b9171cf665
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208057"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222524"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>設定組織中的信箱封存和刪除原則
 
@@ -286,7 +286,7 @@ ms.locfileid: "44208057"
     
 - 下表提供使用本主題中的步驟所建立之每個保留標記的詳細資訊，其新增保留原則。
     
-    |**保留標記**|**這個標記的功能**|**內建或自訂的？**|**Type**|
+    |**保留標記**|**這個標記的功能**|**內建或自訂的？**|**類型**|
     |:-----|:-----|:-----|:-----|
     |高山房屋3年移至封存  <br/> |將1095天（3年）的專案移至封存信箱。  <br/> |自訂（請參閱[步驟2：建立封存和刪除原則的新保留標記](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)）  <br/> |預設原則標記（封存）;這個標記會自動套用至整個信箱。  <br/> |
     |高山房屋7年（永久刪除）  <br/> |當主要信箱或封存信箱中的專案有七年後，永久刪除該信箱中的專案。  <br/> |自訂（請參閱[步驟2：建立封存和刪除原則的新保留標記](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)）  <br/> |預設原則標記（刪除）;這個標記會自動套用至整個信箱。  <br/> |
@@ -298,6 +298,6 @@ ms.locfileid: "44208057"
     |永不刪除  <br/> |此標記會防止保留原則刪除專案。  <br/> |內建  <br/> |自己使用者可以套用此標記。  <br/> |
     |個人 1 年移至封存  <br/> |在1年後將專案移至封存信箱。  <br/> |內建  <br/> |自己使用者可以套用此標記。  <br/> |
    
-    > <sup>\*</sup>使用者可以使用 Outlook 和網頁版 Outlook （先前稱為 Outlook Web App）中的 [復原刪除的專案] 工具，在已刪除專案的保留期間內復原已刪除的專案，在 Exchange Online 中，預設為14天。 系統管理員可以使用 Windows PowerShell 將刪除的專案保留期間增加至最長30天。 如需詳細資訊，請參閱：[復原 Windows Outlook 中已刪除的郵件](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)，以及[變更 Exchange Online 中信箱的已刪除專案保留期間](https://go.microsoft.com/fwlink/p/?LinkId=286940)
+    > <sup>\*</sup>使用者可以使用 Outlook 和網頁版 Outlook （先前稱為 Outlook Web App）中的 [復原刪除的專案] 工具，在已刪除專案的保留期間內復原已刪除的專案，在 Exchange Online 中，預設為14天。 系統管理員可以使用 Windows PowerShell 將刪除的專案保留期間增加至最長30天。 如需詳細資訊，請參閱：[復原 Windows Outlook 中已刪除的郵件](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)，以及[變更 Exchange Online 中信箱的已刪除專案保留期間](https://www.microsoft.com/?ref=go)
   
 - 使用**可復原的專案14天移至**封存保留標記有助於在使用者主要信箱的 [可復原的專案] 資料夾中釋放儲存空間。 當使用者的信箱處於保留狀態時，這是很有用的，這表示永遠不會永久刪除使用者的信箱。 在不將專案移至封存信箱時，可能會到達主要信箱中 [可復原的專案] 資料夾的儲存配額。 如需這項功能及其避免方式的詳細資訊，請參閱[增加保留信箱的可復原專案配額](https://go.microsoft.com/fwlink/p/?LinkId=786479)。

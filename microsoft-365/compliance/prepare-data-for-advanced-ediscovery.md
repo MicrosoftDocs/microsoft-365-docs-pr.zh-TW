@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: '瞭解如何使用安全性 &amp; 與合規性中心，準備要使用高級 eDiscovery 進行分析的資料。 '
-ms.openlocfilehash: 25b500e88e53dfae9b8fa9d504a402f4e2f7ce12
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 31bf002c275b228de12b7ff9e39fabf7c72be74d
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208097"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214281"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>準備資料以供高級 eDiscovery （經典）
 
@@ -37,7 +37,7 @@ ms.locfileid: "44208097"
 如需在高級 eDiscovery 中準備搜尋結果以進行分析的詳細步驟，請參閱[準備高級 ediscovery 的搜尋結果](prepare-search-results-for-advanced-ediscovery.md)。
   
 > [!NOTE]
-> 如果您有超出 Microsoft 365 的資料，且想要將資料匯入至 Microsoft 365，以便在高級 eDiscovery 中準備及分析它，請參閱將 PST 檔案匯[入至 Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365)並封存[協力廠商資料](https://go.microsoft.com/fwlink/p/?linkid=716918)的總覽。 
+> 如果您有超出 Microsoft 365 的資料，且想要將資料匯入至 Microsoft 365，以便在高級 eDiscovery 中準備及分析它，請參閱將 PST 檔案匯[入至 Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365)並封存[協力廠商資料](https://www.microsoft.com/?ref=go)的總覽。 
   
 ## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>步驟2：在高級 eDiscovery 中將搜尋結果資料載入到案例中
 

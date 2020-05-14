@@ -25,19 +25,19 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 在您的 DNS 主機上新增 DNS 記錄，將您的網域新增至 Microsoft 365 系統管理中心中的 Office 365。 安裝精靈會引導您完成此程式。
-ms.openlocfilehash: bab4da6e4a8191d91ccdd38dd54f62f4d790c3b8
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 336e6ee78d7020d73c7e00f639e8f1e1b20c62cd
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140772"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222336"
 ---
-# <a name="add-a-domain-to-office-365"></a>新增網域至 Office 365
+# <a name="add-a-domain-to-microsoft-365"></a>新增網域至 Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ ms.locfileid: "44140772"
 
 ::: moniker-end
     
-2. 移至 [**安裝** > **網域**] 頁面。 
+2. 移至 [**安裝**  >  **網域**] 頁面。 
 
 3. 選取 [**新增網域**]。
     
@@ -82,7 +82,7 @@ ms.locfileid: "44140772"
     
 5. 選擇您要如何驗證您擁有該網域。
     
-    1. 如果您的網域註冊于 GoDaddy 或 1&amp;1，請**選取** > **[下一步]** ，Microsoft[將會自動設定記錄](../get-help-with-domains/domain-connect.md)。
+    1. 如果您的網域註冊于 GoDaddy 或 1 &amp; 1，請**Sign in**選取  >  **[下一步]** ，Microsoft[將會自動設定記錄](../get-help-with-domains/domain-connect.md)。
     
     2. 您可以傳送一封含有驗證碼的電子郵件給網域的已登記連絡人。 如果您無法辨識或存取記錄中的電子郵件，您可以使用第三個選項。
     
@@ -113,9 +113,9 @@ ms.locfileid: "44140772"
 
 請遵循下列步驟，為網站或協力廠商服務新增自訂記錄。
 
-1. 登入 Microsoft 系統管理中心，網址<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>為。
+1. 登入 Microsoft 系統管理中心，網址為 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。
 
-2. 移至 [**設定**  > **網域**] 頁面。
+2. 移至 [**設定**   >  **網域**] 頁面。
 
 3. 在 [**網域**] 頁面上，選取網域。 
     
@@ -136,7 +136,7 @@ ms.locfileid: "44140772"
   
 ### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>與 Microsoft 365 整合的網域連接註冊機構
 
-- [1&amp;1 IONOS](https://www.1and1.com/)
+- [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
 - [GoDaddy](https://www.godaddy.com/)
 - [Wordpress](https://wordpress.com/)

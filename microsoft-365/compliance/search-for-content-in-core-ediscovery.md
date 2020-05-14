@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以搜尋可能與核心 eDiscovery 案例相關的內容。
-ms.openlocfilehash: b8aa090094dc2699ee774a9b662da17fefde1188
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: d17a9d16643ec9077e02b5438597237b80f09af5
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551400"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224620"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>在核心 eDiscovery 案例中搜尋內容
 
@@ -30,7 +30,7 @@ ms.locfileid: "43551400"
 
 若要建立核心 eDiscovery 搜尋：
   
-1. 移至[https://compliance.microsoft.com](https://compliance.microsoft.com)並登入使用已獲指派適當 eDiscovery 許可權之使用者帳戶的認證。
+1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) 並登入使用已獲指派適當 eDiscovery 許可權之使用者帳戶的認證。
 
 2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [**全部顯示**]，然後按一下 [ **eDiscovery > Core**]。
 
@@ -44,7 +44,7 @@ ms.locfileid: "43551400"
 
     ![新的搜尋](../media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
   
-   a. 您可以指定關鍵字、郵件內容（如已傳送和接收的日期）或檔案屬性（例如，檔案名或檔最後變更的日期）。 您可以使用更複雜的查詢，使用布林運算子，例如**AND**、 **or**、 **NOT**、 **NEAR**或**ONEAR**。 您也可以搜尋文件中的機密資訊 (如身分證號碼) 或搜尋曾在外部共用的文件。 如果 [關鍵字] 方塊保留空白，則搜尋結果中會包含位於指定內容位置的所有內容。
+   a. 您可以指定關鍵字、郵件內容（如已傳送和接收的日期）或檔案屬性（例如，檔案名或檔最後變更的日期）。 您可以使用更複雜的查詢，使用布林運算子，例如**AND**、 **or**、 **NOT**或**NEAR**。 您也可以搜尋文件中的機密資訊 (如身分證號碼) 或搜尋曾在外部共用的文件。 如果 [關鍵字] 方塊保留空白，則搜尋結果中會包含位於指定內容位置的所有內容。
 
    b. 您可以按一下 [**顯示關鍵字清單**] 核取方塊，然後在每一列中輸入關鍵字。 如果您這麼做，每列的關鍵字會在建立的搜尋查詢中由**OR**運算子連線。 您最多可以在清單中輸入20個關鍵字。
 

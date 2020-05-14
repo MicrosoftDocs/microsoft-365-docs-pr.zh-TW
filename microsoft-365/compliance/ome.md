@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: 透過 Office 365 郵件加密，您的組織可以在組織內部和外部的人員之間傳送和接收加密的電子郵件。 電子郵件加密可協助確保只有預定的收件者可以查看郵件內容。
-ms.openlocfilehash: 3194381726e2798b9bcdb901ca61957e42863a96
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: e4210feb2f510507a1d930ffed6ac784566951b5
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165934"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214229"
 ---
 # <a name="message-encryption"></a>郵件加密
 
@@ -91,7 +91,7 @@ Microsoft 365 中的高級郵件加密可協助您符合法規遵從性義務，
 |[深入瞭解 Office 365 中的受保護郵件](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx)|想要深入瞭解加密郵件的運作方式，以及您可以使用哪些選項的使用者。|
 |[如何開啟受保護的郵件？](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)|想要讀取已傳送給您之受保護郵件的使用者。 本文包含閱讀 Outlook 和不同電子郵件帳戶（包括 Microsoft 365 以外的電子郵件帳戶，例如 gmail 和 Yahoo！）中之郵件的相關資訊。 帳戶。|
 |[在 Outlook 中傳送、查看和回復加密的郵件](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)|想要從 Outlook 傳送、查看或回復加密郵件的使用者。 即使您不是組織的成員，仍然會收到您在 Outlook 中傳送給您的加密郵件通知。 如需如何查看和回復從 Office 365 傳送之加密郵件的指示，請使用本文。|
-|[傳送數位簽署或加密的郵件](https://support.office.com/article/a18ecf7f-a7ac-4edd-b02e-687b05eff547)|要使用 Outlook for Mac 來傳送、查看或回復加密郵件的使用者。 本文也涵蓋如何使用 OME 以外的加密方法，例如 S/MIME。|
+|[傳送數位簽署或加密的郵件](https://support.microsoft.com/en-us/office/send-a-digitally-signed-or-encrypted-message-a18ecf7f-a7ac-4edd-b02e-687b05eff547)|要使用 Outlook for Mac 來傳送、查看或回復加密郵件的使用者。 本文也涵蓋如何使用 OME 以外的加密方法，例如 S/MIME。|
 |[在您的 Android 裝置上查看加密郵件](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb)|您可以使用免費 OME 檢視器應用程式，在您的 Android 裝置上收到使用 Office 365 郵件加密加密的郵件，您可以使用「免費檢視器」應用程式來查看郵件並傳送加密回復。 本文說明如何進行。|
 |[在 iPhone 或 iPad 上查看加密郵件](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf)|在您的 iPhone 或 iPad 上，收到使用 Office 365 郵件加密加密的郵件的使用者，您可以使用免費的 OME 檢視器應用程式來查看郵件，並傳送加密的回復。 本文說明如何進行。|
 ||

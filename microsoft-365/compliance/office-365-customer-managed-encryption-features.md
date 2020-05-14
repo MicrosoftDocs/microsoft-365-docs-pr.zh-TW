@@ -15,12 +15,12 @@ ms.collection: Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020
 description: 在本文中，您將瞭解可在 Microsoft 365 中管理及設定的加密技術。
-ms.openlocfilehash: 3c7050ba0417473b4b387937336aae02c1eba778
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a70f737d1af10622b093bddc682cc493396fff45
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033611"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214219"
 ---
 # <a name="customer-managed-encryption-features"></a>客戶管理的加密功能
 
@@ -56,11 +56,11 @@ Azure 版權管理可協助減少威脅，例如，網路攻絲、中間人攻�
 
 ## <a name="office-365-message-encryption"></a>Office 365 郵件加密
 
-以[Azure 資訊保護](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection)（AIP）為基礎的[Office 365 郵件加密](https://products.office.com/exchange/office-365-message-encryption)（OME）可讓您將加密和許可權保護的郵件傳送給任何人。 OME 可減少諸如電線攻絲和中間人攻擊等威脅，以及其他威脅，例如未經授權的使用者沒有適當許可權的 unwarranted 存取權。 我們為您提供的投資，為您提供以 Azure 資訊保護為基礎的更簡單、更具視覺安全性的電子郵件經驗。 您可以保護從 Microsoft 365 傳送給組織內部或外部任何人的郵件。 使用任何身分識別（包括 Azure Active Directory、Microsoft 帳戶和 Google IDs），可以跨一組不同的郵件客戶程式來查看這些郵件。 如需組織如何使用加密郵件的詳細資訊，請參閱[Office 365 Message Encryption](https://support.office.com/article/F87CB016-7876-4317-AE3C-9169B311FF8A)。
+以[Azure 資訊保護](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection)（AIP）為基礎的[Office 365 郵件加密](https://products.office.com/exchange/office-365-message-encryption)（OME）可讓您將加密和許可權保護的郵件傳送給任何人。 OME 可減少諸如電線攻絲和中間人攻擊等威脅，以及其他威脅，例如未經授權的使用者沒有適當許可權的 unwarranted 存取權。 我們為您提供的投資，為您提供以 Azure 資訊保護為基礎的更簡單、更具視覺安全性的電子郵件經驗。 您可以保護從 Microsoft 365 傳送給組織內部或外部任何人的郵件。 使用任何身分識別（包括 Azure Active Directory、Microsoft 帳戶和 Google IDs），可以跨一組不同的郵件客戶程式來查看這些郵件。 如需組織如何使用加密郵件的詳細資訊，請參閱[Office 365 Message Encryption](https://docs.microsoft.com/microsoft-365/compliance/ome)。
 
 ## <a name="transport-layer-security"></a>傳輸層安全性   
 
-如果您想要確保與夥伴之間的通訊安全，您可以使用輸入和輸出連接器，以提供安全性和郵件完整性。 您可以使用憑證設定每個連接器上的強制輸入和輸出 TLS。 使用加密的 SMTP 通道可防止透過中間人攻擊竊取資料。 如需詳細資訊，請參閱[Exchange Online 如何使用 TLS 來保護電子郵件](https://support.office.com/article/How-Exchange-Online-uses-TLS-to-secure-email-connections-in-Office-365-4CDE0CDA-3430-4DC0-B489-F2C0736C929F)連線。
+如果您想要確保與夥伴之間的通訊安全，您可以使用輸入和輸出連接器，以提供安全性和郵件完整性。 您可以使用憑證設定每個連接器上的強制輸入和輸出 TLS。 使用加密的 SMTP 通道可防止透過中間人攻擊竊取資料。 如需詳細資訊，請參閱[Exchange Online 如何使用 TLS 來保護電子郵件](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections)連線。
 
 ## <a name="domain-keys-identified-mail"></a>識別郵件的網域金鑰
 

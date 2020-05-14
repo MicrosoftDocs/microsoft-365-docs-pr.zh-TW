@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: 操作方法：將未儲存在 Microsoft 365 中的內容匯入 Azure blob，以便使用 AeD 來進行分析
-ms.openlocfilehash: daafcf003ded35868413d99c11ec1bf3941dca9f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: be49e7d44c56988baa3cdc718498a03ee4acd50b
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634155"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214537"
 ---
 # <a name="import-non-microsoft-365-content-for-advanced-ediscovery-classic-analysis"></a>匯入非 Microsoft 365 內容以取得 Advanced eDiscovery （傳統）分析
 
@@ -30,7 +30,7 @@ ms.locfileid: "43634155"
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 > [!NOTE]
-> 您可以購買非 Microsoft 365 內容的高級 eDiscovery 資料儲存區訂閱。 這只適用于使用高級 eDiscovery 進行分析的內容。 遵循[為商務用 Microsoft 365 購買或編輯附加](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6)元件中的步驟，並購買「Advanced eDiscovery 儲存」附加元件。 
+> 您可以購買非 Microsoft 365 內容的高級 eDiscovery 資料儲存區訂閱。 這只適用于使用高級 eDiscovery 進行分析的內容。 遵循[為商務用 Microsoft 365 購買或編輯附加](https://docs.microsoft.com/microsoft-365/commerce/buy-or-edit-an-add-on)元件中的步驟，並購買「Advanced eDiscovery 儲存」附加元件。 
   
 ## <a name="before-you-begin"></a>開始之前
 
@@ -51,7 +51,7 @@ ms.locfileid: "43634155"
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>將非 Office 365 內容上傳至高級電子檔探索
 
 
-1. 以 eDiscovery 管理員或 eDiscovery 管理員的身分開啟**ediscovery**，然後開啟非 Office 365 資料將上傳至的情況。 如果您需要建立案例，請參閱[在安全性&amp;與合規性中心管理 eDiscovery 案例](ediscovery-cases.md)
+1. 以 eDiscovery 管理員或 eDiscovery 管理員的身分開啟**ediscovery**，然後開啟非 Office 365 資料將上傳至的情況。 如果您需要建立案例，請參閱[在安全性與 &amp; 合規性中心管理 eDiscovery 案例](ediscovery-cases.md)
     
 2. 按一下 [**切換至高級 eDiscovery** ]
     
@@ -71,7 +71,7 @@ ms.locfileid: "43634155"
     
   - 根資料夾-C:\Collected 資料 
     
-  - 容器 url- https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17?sv=2015-04-05&amp; sr = c&amp;Si = NonOfficeData15% 7C0&amp;sig = Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA% 3d
+  - 容器 url- https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17?sv=2015-04-05&amp ; sr = c &amp; Si = NonOfficeData15% 7C0 &amp; sig = Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA% 3d
     
     AzCopy 命令列語法如下：
     

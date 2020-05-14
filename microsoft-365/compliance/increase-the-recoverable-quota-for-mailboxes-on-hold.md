@@ -1,5 +1,7 @@
 ---
 title: 增加保留信箱的可復原項目配額
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,139 +15,139 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
-description: '启用存档邮箱并启用自动展开存档，以增加 Office 365 中邮箱的可恢复项目文件夹的大小。 '
-ms.openlocfilehash: 4c2e36dae3c8677579569d55a9c5b88efb5c54e5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: '啟用封存信箱，並開啟自動擴充封存，以增加 Office 365 中信箱的 [可復原的專案] 資料夾的大小。 '
+ms.openlocfilehash: 884a03bc1693ec76cd3e80d85f62f4054e1d9911
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37076264"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222706"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>增加保留信箱的可復原項目配額
 
-自动应用于 Exchange Online 中新邮箱的默认保留策略（名为"默认 MRM 策略"）包含名为"可恢复项目"的保留标记，14 天移动到存档状态。 此保留标记在 14 天的保留期过期后将项目从用户主邮箱中的"可恢复项目"文件夹中移动到用户存档邮箱中的"可恢复项目"文件夹中。 为此，必须启用用户的存档邮箱。 如果未启用存档邮箱，则不执行任何操作，这意味着在 14 天保留期到期后，保留邮箱的"可恢复项目"文件夹中的项目不会移动到存档邮箱。 由于保留的邮箱中未删除任何内容，因此可能会超出"可恢复项目"文件夹的存储配额，尤其是在未启用用户的存档邮箱时。 
+在 Exchange Online 中自動套用至新信箱的預設保留原則（名為「預設 MRM 原則」）包含一個名為「可復原的專案」的保留標記，該保留標記會移至封存。 這項保留標記會將專案從使用者主要信箱的 [可復原的專案] 資料夾移至使用者封存信箱中的 [可復原的專案] 資料夾之後，在14天的保留期間到期的專案。 為做到這一點，必須啟用使用者的封存信箱。 如果未啟用封存信箱，則不會採取任何動作，這表示在14天保留期間到期後，信箱的 [可復原的專案] 資料夾中的專案不會移至封存信箱。 因為保留信箱中未刪除任何專案，可能會超出 [可復原的專案] 資料夾的儲存配額，尤其是在未啟用使用者的封存信箱的情況下。 
   
-为了帮助减少超出此限制的可能性，在 Exchange Online 中的邮箱上放置保留时，"可恢复项目"文件夹的存储配额将自动从 30 GB 增加到 100 GB。 如果启用了存档邮箱，则存档邮箱中的"可恢复项目"文件夹的存储配额也将从 30 GB 增加到 100 GB。 如果启用了 Exchange Online 中的自动扩展存档功能，则用户存档中的"可恢复项目"文件夹的存储配额将不受限制。
+為了協助降低超過此限制的機率，[可復原的專案] 資料夾的儲存配額會在 Exchange Online 中的信箱上進行保留時，自動從 30 GB 增加為 100 GB。 如果已啟用封存信箱，則封存信箱中 [可復原的專案] 資料夾的儲存配額也會從 30 GB 增加為 100 GB。 如果啟用 Exchange Online 中的自動展開封存功能，使用者封存中 [可復原的專案] 資料夾的儲存配額將不受限制。
   
- 下表汇总了"可恢复项目"文件夹的存储配额。 
+ 下表摘要說明 [可復原的專案] 資料夾的儲存配額。 
   
-|**可恢复项目文件夹的位置**|**邮箱未保持**|**邮箱保持**|
+|**[可復原的專案] 資料夾的位置**|**未保留信箱**|**保留信箱**|
 |:-----|:-----|:-----|
-|主邮箱  <br/> |30 GB  <br/> |100 GB  <br/> |
-|存档邮箱<sup>\*</sup> <br/> |無限制  <br/> |無限制  <br/> |
-|**可恢复项目文件夹的总存储配额** <br/> |無限制  <br/> |無限制  <br/> |
+|主要信箱  <br/> |30 GB  <br/> |100 GB  <br/> |
+|封存信箱<sup>\*</sup> <br/> |無限制  <br/> |無限制  <br/> |
+|**[可復原的專案] 資料夾的儲存配額總計** <br/> |無限制  <br/> |無限制  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>对于具有 Exchange Online（计划 2）许可证的用户，存档邮箱的初始存储配额为 100 GB。 但是，当为保留的邮箱启用自动展开存档时，存档邮箱和可恢复项目文件夹的存储配额将增加到 110 GB。 必要时将预配额外的存档存储空间，从而导致无限量的存档存储。 有关自动扩展存档的详细信息，请参阅[Office 365 中无限制存档概述。](unlimited-archiving.md) 
+> <sup>\*</sup>使用 Exchange Online （Plan 2）授權的使用者，封存信箱的初始儲存配額為 100 GB。 不過，當已開啟信箱的自動展開封存功能時，封存信箱和 [可復原的專案] 資料夾的儲存配額會增至 110 GB。 必要時會布建額外的封存儲存空間，這會產生無限的封存儲存量。 如需有關自動展開封存的詳細資訊，請參閱[Office 365 中的無限封存概述](unlimited-archiving.md)。 
   
-当保留邮箱的主邮箱中的"可恢复项目"文件夹的存储配额接近其限制时，可以执行以下操作：
+當信箱的主要信箱中 [可復原的專案] 資料夾的儲存配額接近達到限制時，您可以執行下列動作：
   
-- **启用存档邮箱并启用自动展开存档**- 只需启用存档邮箱，然后在 Exchange 中打开自动扩展存档功能，即可为"可恢复项目"文件夹启用无限存储容量在线。 这将导致主邮箱中的可恢复项目文件夹的 110 GB 和用户存档中的可恢复项目文件夹的无限容量的存储容量。 查看方法：[在"安全&合规性中心启用存档邮箱，](enable-archive-mailboxes.md)并在[Office 365 中启用无限制存档。](enable-unlimited-archiving.md)
+- **啟用封存信箱並開啟自動展開**的封存-您可以只啟用封存信箱，然後在 Exchange Online 中開啟自動展開的封存功能，即可為 [可復原的專案] 資料夾啟用無限儲存容量。 這會導致主要信箱中 [可復原的專案] 資料夾的 110 GB 和使用者封存中 [可復原的專案] 資料夾的儲存容量量不限。 請參閱操作方法：[在安全性 & 規範中心啟用封存信箱](enable-archive-mailboxes.md)，並[在 Office 365 中啟用無限](enable-unlimited-archiving.md)封存。
     
     > [!NOTE]
-    > 启用接近超出"可恢复项目"文件夹的存储配额的邮箱的存档后，可能需要运行托管文件夹助手以手动触发助手以处理邮箱，以便移动过期邮件。存档邮箱中的可恢复项目文件夹。 有关说明，请参阅[步骤 4。](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) 请注意，用户邮箱中的其他项目可能会移动到新的存档邮箱。 请考虑在启用存档邮箱后告诉用户可能发生这种情况。 
+    > 當您為接近超過 [可復原的專案] 資料夾的儲存配額的信箱啟用封存後，您可能會想要執行受管理的資料夾助理以手動觸發該信箱的處理常式，這樣到期的專案就會移動封存信箱中的 [可復原的專案] 資料夾。 如需指示，請參閱[步驟 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) 。 請注意，使用者信箱中的其他專案可能會移至新的封存信箱。 請考慮告知使用者啟用封存信箱之後可能會發生這種情況。 
   
-- **为保留邮箱创建自定义保留策略**- 除了启用存档邮箱和自动扩展对诉讼保留或就地保留的邮箱的存档外，您可能还希望为上的邮箱创建自定义保留策略保持。 这样，您就将保留策略应用于保留邮箱，该保留策略与应用于未处于保留状态的邮箱的默认 MRM 策略不同。 这允许您应用专为保留邮箱设计的保留标记。 这包括为"可恢复项目"文件夹创建新的保留标记。 
+- **為保留的信箱建立自訂保留原則**，除了啟用訴訟暫止或 In-Place 暫止的信箱的封存信箱和自動擴充封存之外，您也可以為保留信箱建立自訂保留原則。 這可讓您將保留原則套用至保留的信箱，與套用至未保留信箱的預設 MRM 原則不同。 這可讓您套用專為保留信箱所設計的保留標記。 這包括為 [可復原的專案] 資料夾建立新的保留標記。 
     
-本主题的其余部分介绍为保留邮箱创建自定义保留策略的分步过程。
+本主題的其餘部分將說明為保留信箱建立自訂保留原則的逐步程式。
   
-[步骤 1：为"可恢复项目"文件夹创建自定义保留标记](#step-1-create-a-custom-retention-tag-for-the-recoverable-items-folder)
+[步驟1：為 [可復原的專案] 資料夾建立自訂保留標記](#step-1-create-a-custom-retention-tag-for-the-recoverable-items-folder)
 
-•[步骤 2：为保留的邮箱创建新的保留策略](#step-2-create-a-new-retention-policy-for-mailboxes-on-hold)
+[[步驟2：為保留信箱建立新的保留原則](#step-2-create-a-new-retention-policy-for-mailboxes-on-hold)
 
-[步骤 3：将新的保留策略应用于保留的邮箱](#step-3-apply-the-new-retention-policy-to-mailboxes-on-hold)
+[步驟3：將新的保留原則套用至保留信箱](#step-3-apply-the-new-retention-policy-to-mailboxes-on-hold)
 
-[（可选）步骤 4：运行托管文件夹助手以应用新的保留设置](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings)
+[選步驟4：執行受管理的資料夾助理以套用新的保留設定](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings)
   
-## <a name="step-1-create-a-custom-retention-tag-for-the-recoverable-items-folder"></a>步骤 1：为"可恢复项目"文件夹创建自定义保留标记
+## <a name="step-1-create-a-custom-retention-tag-for-the-recoverable-items-folder"></a>步驟1：為 [可復原的專案] 資料夾建立自訂保留標記
 
-第一步是为"可恢复项目"文件夹创建自定义保留标记（称为保留策略标记或 RPT）。 如前所述，此 RPT 将项目从用户主邮箱中的"可恢复项目"文件夹移动到用户存档邮箱中的"可恢复项目"文件夹。 您必须使用 PowerShell 为"可恢复项目"文件夹创建 RPT。 不能使用 Exchange 管理中心 （EAC）。 
+第一步是為 [可復原的專案] 資料夾建立自訂保留標記（稱為保留原則標記或 RPT）。 如先前所述，此 RPT 會將專案從使用者主要信箱的 [可復原的專案] 資料夾移至使用者封存信箱中的 [可復原的專案] 資料夾。 您必須使用 PowerShell 為 [可復原的專案] 資料夾建立 RPT。 您無法使用 Exchange 系統管理中心（EAC）。 
   
 1. [使用遠端 PowerShell 連線到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=517283)
     
-2. 运行以下命令为"可恢复项目"文件夹创建新的 RPT： 
+2. 執行下列命令，為 [可復原的專案] 資料夾建立新的 RPT： 
     
-    ```
+    ```powershell
     New-RetentionPolicyTag -Name <Name of RPT> -Type RecoverableItems -AgeLimitForRetention <Number of days> -RetentionAction MoveToArchive
     ```
 
-    例如，以下命令为名为"可恢复项目 30 天，邮箱保留期"的可恢复项目文件夹创建 RPT，保留期为 30 天。 这意味着，在项目在"可恢复项目"文件夹中保留 30 天后，它将移动到用户存档邮箱中的"可恢复项目"文件夹中。
+    例如，下列命令會針對名為「暫止的信箱」之「可復原的專案30天」的 [可復原的專案] 資料夾，建立一個 RPT，保留期間為30天。 這表示專案已在 [可復原的專案] 資料夾中的30天之後，它會移至使用者的封存信箱中的 [可復原的專案] 資料夾。
     
-    ```
+    ```powershell
     New-RetentionPolicyTag -Name "Recoverable Items 30 days for mailboxes on hold" -Type RecoverableItems -AgeLimitForRetention 30 -RetentionAction MoveToArchive
     ```
 
     > [!TIP]
-    > 我们建议可恢复项目 RPT 的保留期（由_期限保留_参数定义）与将应用于 RPT 的邮箱的已删除项目保留期相同。 这允许用户在将已删除的项目移动到存档邮箱之前恢复已删除的项目。 在前面的示例中，保留期设置为 30 天，其假设邮箱的已删除项目保留期也是 30 天。 Exchange Online 信箱預設會將刪除的項目保留 14 天。 但是，您可以将此设置更改为最多 30 天。 有关详细信息，请参阅更改[Exchange Online 中邮箱的已删除项目保留期。](https://go.microsoft.com/fwlink/p/?LinkId=286940) 
+    > 建議 [可復原的專案 RPT] 的保留期間（由_AgeLimitForRetention_參數定義）與 RPT 將套用到之信箱的已刪除專案保留期間相同。 這可讓使用者在將刪除的專案移至封存信箱之前，先將其整個刪除的專案保留期間復原。 在上一個範例中，保留期間會設定為30天，但前提是信箱的刪除專案保留期間也是30天。 Exchange Online 信箱預設會將刪除的項目保留 14 天。 不過，您可以將此設定變更為最多30天。 如需詳細資訊，請參閱[在 Exchange Online 中變更信箱的已刪除專案保留期間](https://www.microsoft.com/?ref=go)。 
   
-## <a name="step-2-create-a-new-retention-policy-for-mailboxes-on-hold"></a>步骤 2：为保留的邮箱创建新的保留策略
+## <a name="step-2-create-a-new-retention-policy-for-mailboxes-on-hold"></a>步驟2：為保留信箱建立新的保留原則
 
-下一步是创建新的保留策略，并向其添加保留标记，包括您在步骤 1 中创建的可恢复项目 RPT。 此新策略将在下一步中应用于保留的邮箱。 
+下一步是建立新的保留原則並新增保留標記，包括您在步驟1中建立的可復原專案 RPT。 在下一個步驟中，此新原則會套用至信箱保留。 
   
-在创建新的保留策略之前，请确定要添加的其他保留标记。 有关添加到默认 MRM 策略的保留标记的列表以及有关创建新保留标记的信息，请参阅以下内容：
+在您建立新的保留原則之前，請先確定您想要新增的其他保留標記。 如需新增至預設 MRM 原則的保留標記清單，以及建立新保留標記的相關資訊，請參閱下列各項：
   
-- [在线交换中的默认保留策略](https://go.microsoft.com/fwlink/p/?LinkId=746954)
+- [Exchange Online 中的預設保留原則](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     
 - [支援保留原則標記的預設資料夾](https://go.microsoft.com/fwlink/p/?LinkId=746957)
     
-- [创建保留策略](https://go.microsoft.com/fwlink/p/?LinkId=404422)主题中的"创建保留标记"部分。
+- [[建立保留原則](https://go.microsoft.com/fwlink/p/?LinkId=404422)] 主題中的「建立保留標記」一節。
     
-您可以使用 EAC 或 Exchange 在线电源外壳创建保留策略。
+您可以使用 EAC 或 Exchange Online PowerShell 建立保留原則。
   
-### <a name="use-the-eac-to-create-a-retention-policy"></a>使用 EAC 创建保留策略
+### <a name="use-the-eac-to-create-a-retention-policy"></a>使用 EAC 建立保留原則
   
-1. 在 EAC 中，转到**合规性管理**\>**保留策略，****然后单击"添加**![添加图标"。](media/ITPro-EAC-AddIcon.gif)
+1. 在 EAC 中，移至 [**規範管理**] [ \> **保留原則**]，然後按一下 [**新增**] [新增] ![ 圖示 ](../media/ITPro-EAC-AddIcon.gif) 。
     
-2. 在"**新建保留策略"** 页上，**在"名称"** 下键入描述保留策略用途的名称;在"名称"下键入名称。"例如，**保留邮箱的 MRM 策略**。 
+2. 在 [**新增保留原則**] 頁面的 [**名稱**] 下，輸入描述保留原則目的的名稱，然後按一下 [是]。例如，**保留信箱的 MRM 原則**。 
     
-3. **在"保留"标记**下，**单击"添加**![图标"。](media/ITPro-EAC-AddIcon.gif)
+3. 在 [**保留標記**] 底下，按一下 [**新增**] ![ 圖示 ](../media/ITPro-EAC-AddIcon.gif) 。
     
-4. 在保留标记列表中，选择在步骤 1 中创建的可恢复项目 RPT，然后单击"**添加"。**
+4. 在 [保留標記] 清單中，選取您在步驟1中建立的 [可復原的專案 RPT]，然後按一下 [**新增**]。
     
-    ![選取自訂的 [可復原的項目] 保留標記](media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
+    ![選取自訂的 [可復原的項目] 保留標記](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
   
-5. 选择要添加到保留策略的其他保留标记。 例如，您可能希望添加默认 MRM 策略中包含的相同标记。
+5. 選取要新增至保留原則的其他保留標記。 例如，您可能想要加入預設 MRM 原則中所包含的相同標記。
     
-6. 添加完保留标记后，单击"**确定"。**
+6. 完成新增保留標記之後，請按一下 **[確定]**。
     
-7. **单击"保存"** 以创建新的保留策略。 
+7. 按一下 [**儲存**] 以建立新的保留原則。 
     
-    请注意，链接到保留策略的保留标记将显示在详细信息窗格中。
+    請注意，連結至保留原則的保留標記會顯示在詳細資料窗格中。
     
-    ![連結到保留原則的保留標記，會顯示在詳細資料窗格中](media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
+    ![連結到保留原則的保留標記，會顯示在詳細資料窗格中](../media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
   
-### <a name="use-exchange-online-powershell-to-create-a-retention-policy"></a>使用 Exchange 在线电源外壳创建保留策略
+### <a name="use-exchange-online-powershell-to-create-a-retention-policy"></a>使用 Exchange Online PowerShell 建立保留原則
   
-运行以下命令为保留邮箱创建新的保留策略。 
+執行下列命令，為保留信箱建立新的保留原則。 
   
-```
+```powershell
 New-RetentionPolicy <Name of retention policy>  -RetentionPolicyTagLinks <list of retention tags>
 
 ```
 
-例如，以下命令创建保留策略和链接保留标记，这些标记显示在上图中。
+例如，下列命令會建立上圖所顯示的保留原則及連結的保留標記。
   
-```
+```powershell
 New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks "Recoverable Items 30 days for mailboxes on hold","1 Month Delete","1 Week Delete","1 Year Delete","5 Year Delete","6 Month Delete","Default 2 year move to archive","Junk Email","Never Delete","Personal 1 year move to archive","Personal 5 year move to archive"
 ```
-  
-## <a name="step-3-apply-the-new-retention-policy-to-mailboxes-on-hold"></a>步骤 3：将新的保留策略应用于保留的邮箱
 
-最后一步是将您在步骤 2 中创建的新保留策略应用于组织中处于保留状态的邮箱。 您可以使用 EAC 或 Exchange 在线 PowerShell 将保留策略应用于单个邮箱或多个邮箱。 
+## <a name="step-3-apply-the-new-retention-policy-to-mailboxes-on-hold"></a>步驟3：將新的保留原則套用至保留信箱
+
+最後一個步驟是將您在步驟2中建立的新保留原則套用至組織中的信箱保留原則。 您可以使用 EAC 或 Exchange Online PowerShell 將保留原則套用至單一信箱或多個信箱。 
   
-### <a name="use-the-eac-to-apply-the-new-retention-policy"></a>使用 EAC 应用新的保留策略
+### <a name="use-the-eac-to-apply-the-new-retention-policy"></a>使用 EAC 來套用新的保留原則
   
-1. 转到**收件人**\>**邮箱**。
+1. 移至 **[** 收件者] [ \> **信箱**]。
     
-2. 在列表视图中，选择要应用保留策略的邮箱，然后单击"**编辑"**![图标](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)。
+2. 在清單視圖中，選取您要套用保留原則的信箱，然後按一下 [**編輯** ![ 編輯圖示] ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。
     
-3. 在"**用户邮箱"** 页上，**单击"邮箱功能"。**
+3. 在 [**使用者信箱**] 頁面上，按一下 [**信箱功能**]。
     
-4. **在"保留策略"** 下，选择在步骤 2 中创建的保留策略，**然后单击"保存"。**
+4. 在 [**保留原則**] 底下，選取您在步驟2中建立的保留原則，然後按一下 [**儲存**]。
     
-您还可以使用 EAC 将保留策略应用于多个邮箱。
+您也可以使用 EAC 將保留原則套用至多個信箱。
   
-1. 转到**收件人**\>**邮箱**。
+1. 移至 **[** 收件者] [ \> **信箱**]。
     
 2. 在清單檢視中，使用 Shift 鍵或 Ctrl 鍵來選取多個信箱。
     
@@ -153,76 +155,76 @@ New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks
     
 4. 在 [保留原則]**** 下方，按一下 [更新]****。
     
-5. 在**批量分配保留策略**页上，选择在步骤 2 中创建的保留策略，**然后单击"保存"。** 
+5. 在 [**大量指派保留原則**] 頁面上，選取您在步驟2中建立的保留原則，然後按一下 [**儲存**]。 
     
-### <a name="use-exchange-online-powershell-to-apply-the-new-retention-policy"></a>使用 Exchange 在线电源外壳应用新的保留策略
+### <a name="use-exchange-online-powershell-to-apply-the-new-retention-policy"></a>使用 Exchange Online PowerShell 套用新的保留原則
   
-您可以使用 Exchange 在线 PowerShell 将新的保留策略应用于单个邮箱。 但是，PowerShell 的真正功能是，您可以使用它快速标识组织中处于"诉讼保留"或"就地保留"中的所有邮箱，然后在单个命令中将新的保留策略应用于保留中的所有邮箱。 下面是使用 Exchange PowerShell 将保留策略应用于一个或多个邮箱的一些示例。 所有示例都应用在步骤 2 中创建的保留策略。
+您可以使用 Exchange Online PowerShell 將新的保留原則套用至單一信箱。 不過 PowerShell 的實際威力在於，您可以使用它來快速識別您組織中的所有信箱，不論是訴訟暫止或 In-Place 保留，然後在單一命令中將新的保留原則套用至保留的所有信箱。 以下是一些使用 Exchange PowerShell 將保留原則套用至一或多個信箱的範例。 所有範例會套用在步驟2中建立的保留原則。
   
-本示例将新的保留策略应用于 Pilar Pinilla 的邮箱。
+此範例會將新的保留原則套用至 Pilar Pinilla 的信箱。
   
-```
+```powershell
 Set-Mailbox "Pilar Pinilla" -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
-本示例将新的保留策略应用于组织中处于诉讼保留状态的所有邮箱。
+本範例會將新的保留原則套用至組織中的所有處於訴訟暫止狀態的信箱。
   
-```
+```powershell
 $LitigationHolds = Get-Mailbox -ResultSize unlimited | Where-Object {$_.LitigationHoldEnabled -eq 'True'}
 ```
 
-```
+```powershell
 $LitigationHolds.DistinguishedName | Set-Mailbox -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
-本示例将新的保留策略应用于组织中的所有邮箱，这些邮箱处于就地保留状态。
+本範例會將新的保留原則套用至組織中 In-Place 保留的所有信箱。
   
-```
+```powershell
 $InPlaceHolds = Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null}
 ```
 
-```
+```powershell
 $InPlaceHolds.DistinguishedName | Set-Mailbox -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
-您可以使用**获取邮箱**cmdlet 来验证是否已应用新的保留策略。 
+您可以使用**Get-Mailbox** Cmdlet 來驗證是否已套用新的保留原則。 
   
-下面是一些示例，用于验证上述示例中的命令是否将"保留邮箱的 MRM 策略"保留策略应用于诉讼保留上的邮箱和就地保留的邮箱。
+以下是一些範例，以驗證先前範例中的命令是否已將「保留信箱的 MRM 原則」保留原則套用至「In-Place 暫止」上的「訴訟暫止」和信箱上的信箱。
   
-```
+```powershell
 Get-Mailbox "Pilar Pinilla" | Select RetentionPolicy
 ```
 
-```
+```powershell
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.LitigationHoldEnabled -eq 'True'} | FT DisplayName,RetentionPolicy -Auto
 ```
 
-```
+```powershell
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null} | FT DisplayName,RetentionPolicy -Auto
 ```
-  
-## <a name="optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings"></a>（可选）步骤 4：运行托管文件夹助手以应用新的保留设置
 
-将新的保留策略应用于保留的邮箱后，托管文件夹助理最多可能需要 7 天时间才能使用新保留策略中的设置处理这些邮箱。 **您可以使用"开始管理文件夹**助手"cmdlet 手动触发助手以处理应用新保留策略的邮箱，而不是等待托管文件夹助手运行。 
+## <a name="optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings"></a>選步驟4：執行受管理的資料夾助理以套用新的保留設定
+
+將新的保留原則套用至保留信箱之後，您可以在 Exchange Online 中長達7天使用新的保留原則中的設定來處理這些信箱。 您可以使用**Start-ManagedFolderAssistant** Cmdlet 手動觸發助理，以處理套用新保留原則的信箱，而不是等待受管理的資料夾助理執行。 
   
-运行以下命令以启动 Pilar Pinilla 邮箱的托管文件夹助手。
+執行下列命令，以啟動 Pilar Pinilla 信箱的受管理的資料夾助理。
   
-```
+```powershell
 Start-ManagedFolderAssistant "Pilar Pinilla"
 ```
 
-运行以下命令以启动保留的所有邮箱的托管文件夹助手。
+執行下列命令，以啟動保留所有信箱的受管理的資料夾助理。
   
-```
+```powershell
 $MailboxesOnHold = Get-Mailbox -ResultSize unlimited | Where-Object {($_.InPlaceHolds -ne $null) -or ($_.LitigationHoldEnabled -eq "True")}
 ```
 
-```
+```powershell
 $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 
 ## <a name="more-information"></a>詳細資訊
 
-- 启用用户的存档邮箱后，请考虑告诉用户其邮箱中的其他项目（而不仅仅是"可恢复项目"文件夹中的项目）可能会移动到存档邮箱。 这是因为分配给 Exchange Online 邮箱的默认 MRM 策略包含保留标记（名为"默认 2 年移动到存档"），该标记在项目传递到邮箱或由用户。 有关详细信息，请参阅[联机交换中的默认保留策略](https://go.microsoft.com/fwlink/p/?LinkId=746954)
+- 在您啟用使用者的封存信箱之後，請考慮告知使用者其信箱中的其他專案（不只是 [可復原的專案] 資料夾中的專案）可能會移至封存信箱。 這是因為指派給 Exchange Online 信箱的預設 MRM 原則包含保留標記（命名為預設值2年移至封存），這會在專案傳遞至信箱或使用者建立的日期之後的兩年後，將專案移至封存信箱。 如需詳細資訊，請參閱[Exchange Online 中的預設保留原則](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     
-- 启用用户的存档邮箱后，还可以告诉用户，他们可以在其存档邮箱的"可恢复项目"文件夹中恢复已删除的项目。 他们可以在 Outlook 中执行此操作，为此可以在"主页"选项卡上选择"**已删除项目"** 文件夹，然后单击"**从主"** 选项卡**上的"从服务器恢复已删除项目"。** 有关恢复已删除项目的详细信息，请参阅[Windows Outlook 中恢复已删除的项目。](https://go.microsoft.com/fwlink/p/?LinkId=624829) 
+- 啟用使用者的封存信箱之後，您可能也會告訴使用者他們可以在其封存信箱的 [可復原的專案] 資料夾中復原已刪除的郵件。 在 Outlook 中，您可以選取封存信箱中的 [**刪除的郵件**] 資料夾，然後按一下 [從**首頁**] 索引標籤上的 [**從伺服器復原刪除的郵件**] 來執行此動作。如需復原已刪除專案的詳細資訊，請參閱[在 Outlook For Windows 中復原已刪除的郵件](https://go.microsoft.com/fwlink/p/?LinkId=624829)。 

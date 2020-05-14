@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: 瞭解如何透過 Microsoft Azure Active Directory Rights Management Services （RMS）使用 SharePoint Online IRM，以保護 SharePoint 清單和文件庫。
-ms.openlocfilehash: c981ceefde2cedb5f6c8731fd9a5ad9318174120
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ab045c2319897a98bffd14f898dd254b06890bee
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634775"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222370"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -40,7 +40,7 @@ ms.locfileid: "43634775"
     
 2. 在左上角選取應用程式啟動器圖示 ![Office 365 中的應用程式啟動器圖示](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png)，然後選擇 [系統管理員]**** 來開啟 Microsoft 365 系統管理中心。 （如果您沒有看到 [系統管理] 磚，表示您的組織不具備系統管理員許可權。） 
     
-3. 在左窗格中，選擇 [系統**管理中心** \> ] **SharePoint**。
+3. 在左窗格中，選擇 [系統**管理中心**] \> **SharePoint**。
     
 4. 在左窗格中，選擇 [**設定**]，然後選擇 [**傳統設定] 頁面**。
     
@@ -77,6 +77,6 @@ ms.locfileid: "43634775"
 
 在您為線上 SharePoint 啟用 IRM 之後，您可以開始將 rights management 套用至清單和文件庫。 如需詳細資訊，請參閱[將資訊版權管理套用至清單或文件庫](apply-irm-to-a-list-or-library.md)。
   
-新的 Windows OneDrive 同步處理用戶端現在支援同步 IRM 保護 SharePoint 文件庫和 OneDrive 位置（只要該庫的 IRM 設定不會設為 [到期檔存取權]）。 如需詳細資訊，或若要開始部署新的同步處理用戶端，請參閱[Deploy new OneDrive sync client For Windows](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668)。
+新的 Windows OneDrive 同步處理用戶端現在支援同步 IRM 保護 SharePoint 文件庫和 OneDrive 位置（只要該庫的 IRM 設定不會設為 [到期檔存取權]）。 如需詳細資訊，或若要開始部署新的同步處理用戶端，請參閱[Deploy new OneDrive sync client For Windows](https://docs.microsoft.com/onedrive/deploy-on-windows)。
   
 [頁首](#introduction)  

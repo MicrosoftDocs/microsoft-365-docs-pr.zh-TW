@@ -15,19 +15,19 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: '使用安全性 & 合規性中心，取得您 SharePoint 線上和 Exchange Online 組織的各種報告，以及 Azure Active Directory 報告。  '
-ms.openlocfilehash: 9134cf403c8452ea457983226be04ba139bf72e6
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 4783c3171f5f49dd50d6da8f5f4835ba243f7ab3
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943282"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214705"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>安全規範中心內的報告
 
 您可以使用 [安全性 & 規範中心] 中的 [**查看報告**] 頁面，快速存取 SharePoint Online 和 Exchange Online 組織的審計報告。 您也可以從 [**查看報告**] 頁面中，存取 Azure Active DIRECTORY （AD）使用者登入報告、使用者活動報告和 Azure AD 審核記錄。 這是因為您付費的 Microsoft 365 訂閱包含 Microsoft Azure 的免費訂閱。 您第一次嘗試存取這些 Azure 報告時，您必須完成一次性註冊程式。 
   
 > [!TIP]
-> 若要查看有關組織中活動的其他報告，請參閱[Microsoft 365 系統管理中心的活動報告](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)。 
+> 若要查看有關組織中活動的其他報告，請參閱[Microsoft 365 系統管理中心的活動報告](https://docs.microsoft.com/microsoft-365/admin/activity-reports/activity-reports)。 
   
  **開始之前**
   

@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 99a124ff57816481cde92dd79c3058a2e7b72d31
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bfbb0481670b2f957bf240c261fcbafab96717b9
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625203"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222586"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>實施身分識別與裝置存取原則的必要條件工作
 
@@ -32,7 +32,7 @@ ms.locfileid: "43625203"
 在執行建議的身分識別和裝置存取原則之前，您的組織必須符合一些必要條件。 下表詳細說明適用于您環境的必要條件。 
 
 
-| 設定 | 僅限雲端 | 具有密碼雜湊同步處理的 Active Directory |  傳遞驗證 |  與 AD FS 的同盟 |
+| 組態 | 僅限雲端 | 具有密碼雜湊同步處理的 Active Directory |  傳遞驗證 |  與 AD FS 的同盟 |
 | :------------- | :-----------: | :--------------: | :------------: | :------------: |
 |  [設定密碼雜湊同步](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization)處理。這必須啟用以偵測已洩漏的認證，並針對風險型條件式存取採取行動。 **附注：** 不論您的組織是否使用受管理的驗證（如傳遞驗證（PTA）或同盟驗證），都是必要的。 |    | 是 | 是 | 是 |
 | [啟用無縫單一登入](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso)，當使用者位於連接至公司網路的公司裝置時，自動簽署使用者。 |  | 是 | 是 |  |
@@ -42,7 +42,7 @@ ms.locfileid: "43625203"
 | **準備支援小組**. 已有針對無法完成 MFA 的使用者的計劃。 這可能會將其新增至原則排除群組，或為其註冊新的 MFA 資訊。 在進行其中一項安全性敏感性變更之前，您必須確定實際的使用者正在進行要求。 需要使用者的管理員協助進行核准是有效的步驟。 | 是 | 是 | 是 | 是 |  
 | [將密碼回寫設定成內部部署 AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。 密碼回寫可讓 Azure AD 要求使用者在偵測到高風險帳戶時變更其內部部署密碼。 您可以使用下列兩種方式之一，使用 Azure AD Connect 來啟用此功能：在 Azure AD Connect 安裝精靈的 [選用功能] 畫面啟用**密碼回寫**功能，或透過 Windows PowerShell 加以啟用。 |   | 是 | 是 | 是 |
 | [啟用 Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/enable)。 Azure AD 身分識別保護可讓您偵測影響組織之身分識別的潛在弱點，並設定自動修正原則為低、中、高的登入風險和使用者風險。  | 是 | 是 | 是 | 是 |
-| 為[Exchange Online](https://support.office.com/article/Enable-or-disable-modern-authentication-in-Exchange-Online-58018196-f918-49cd-8238-56f57f38d662)和[商務用 Skype Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)**啟用新式驗證**。 新式驗證是使用多重要素驗證（MFA）的必要條件。 Office 2016 用戶端、SharePoint Online 和商務用 OneDrive 預設會啟用新式驗證。 | 是 | 是 | 是 | 是 |
+| 為[Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)和[商務用 Skype Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)**啟用新式驗證**。 新式驗證是使用多重要素驗證（MFA）的必要條件。 Office 2016 用戶端、SharePoint Online 和商務用 OneDrive 預設會啟用新式驗證。 | 是 | 是 | 是 | 是 |
 ||||||
 
 
@@ -69,7 +69,7 @@ ms.locfileid: "43625203"
 
 |平台|用戶端|版本/附註|
 |:-------|:-----|:------------|
-|**Windows**|Outlook|2016，2013[啟用新式驗證](https://support.office.com/article/Enable-Modern-Authentication-for-Office-2013-on-Windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)，[必要更新](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
+|**Windows**|Outlook|2016，2013[啟用新式驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)，[必要更新](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|iOS 版 Outlook|[最新](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook for Android|[最新](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2016|
@@ -91,7 +91,7 @@ ms.locfileid: "43625203"
 |macOS|公開預覽|公開預覽|不適用|不適用|不支援|
 |Linux|不支援|未支援|未支援|未支援|未支援|
 
-<sup>*</sup>深入瞭解對[OneDrive 同步處理用戶端](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e)使用條件式存取。
+<sup>*</sup>深入瞭解對[OneDrive 同步處理用戶端](https://docs.microsoft.com/onedrive/enable-conditional-access)使用條件式存取。
 
 ### <a name="microsoft-365-client-support"></a>Microsoft 365 用戶端支援
 如需用戶端支援的詳細資訊，請參閱下列文章：
@@ -114,7 +114,7 @@ Azure AD 為您提供一種簡單的方法，讓您能夠使用預先設定的�
 其他建議包括下列專案：
 - 使用 Azure AD Privileged Identity Management 減少持續性系統管理帳戶數目。 請參閱[Start USING PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)。 
 - [使用 Office 365 中](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)的「特殊設定存取管理」，保護您的組織不會因可能使用現有的許可權系統管理員帳戶存取機密資料或存取重要的設定設定而遭到破壞。 
-- 僅使用管理員帳戶進行管理。 系統管理員應該要有個別的使用者帳戶，才能進行定期非系統管理，且只有在必要時才使用其系統管理帳戶，才可完成與工作職能相關聯的工作。 [Microsoft 365 系統管理員](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)角色所擁有的許可權，會比 Microsoft 365 服務多。
+- 僅使用管理員帳戶進行管理。 系統管理員應該要有個別的使用者帳戶，才能進行定期非系統管理，且只有在必要時才使用其系統管理帳戶，才可完成與工作職能相關聯的工作。 [Microsoft 365 系統管理員](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)角色所擁有的許可權，會比 Microsoft 365 服務多。
 - 依照[本文](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices)所述，遵循 Azure AD 中的許可權來保護許可權帳戶的最佳作法。
 
 ## <a name="next-steps"></a>後續步驟

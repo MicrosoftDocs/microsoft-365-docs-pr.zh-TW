@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: 使用 Microsoft PST 集合工具來搜尋您組織的網路，以取得分散于整個組織中的 PST 檔案清單。 在您找到 PST 檔案之後，您可以使用 PST 集合工具將其複製到一個集中位置，這樣您就可以將它們匯入 Office 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fd547d0d5244df40bd5fa118bccdfe95fcba9341
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d388eb9cfe0a894e5ae5eed89e5d4ed35a79a1fc
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033807"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224484"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>使用 PST 集合工具，在您的組織中尋找、複製和刪除 PST 檔案
 
@@ -54,7 +54,7 @@ ms.locfileid: "44033807"
     
     1. [下載 PST 集合工具](https://aka.ms/pstcollectiontool)。
     
-    2. 在快顯視窗中，按一下 [**另** \> **存新**檔]，將 PSTCollectionTool 儲存到本機電腦上的資料夾。 
+    2. 在快顯視窗中，按一下 [**另**存新檔]，將 \> **Save as** PSTCollectionTool 儲存到本機電腦上的資料夾。 
     
     3. 將 PSTCollectionTool .zip 檔案解壓縮至本機電腦上的資料夾;預設的資料夾名稱是 PSTCollectionTool。
     
@@ -70,7 +70,7 @@ ms.locfileid: "44033807"
     
 - 網路檔共用。 工具會搜尋指定的網路檔共用。 
     
-請參閱下列程式中`Locations`的參數的說明，以取得每個位置類型所使用之語法的範例。 
+請參閱下列程式中的參數的說明，以 `Locations` 取得每個位置類型所使用之語法的範例。 
   
 > [!IMPORTANT]
 > 您必須先在尋找模式中執行 PST 集合工具，才能執行其他動作，例如封鎖、收集或刪除 PST 檔案。 
@@ -92,13 +92,13 @@ ms.locfileid: "44033807"
     |參數 * * * *|****描述****|範例 * * * *|
     |:-----|:-----|:-----|
     | `DataSource` <br/> |會指定要搜尋之資料的類型。 目前，您可以使用 PST 集合工具來搜尋 PST 檔案。  <br/> | `-DataSource Pst` <br/> |
-    | `Mode` <br/> |會指定工具將執行的作業類型。 使用此值`Find`可在指定的位置中尋找 PST 檔案。 請注意，此工具可以尋找並取得 Outlook 和 PST 檔案中已連接至 Outlook 設定檔的 PST 檔案的相關資訊。  <br/> | `-Mode Find` <br/> |
+    | `Mode` <br/> |會指定工具將執行的作業類型。 使用此值 `Find` 可在指定的位置中尋找 PST 檔案。 請注意，此工具可以尋找並取得 Outlook 和 PST 檔案中已連接至 Outlook 設定檔的 PST 檔案的相關資訊。  <br/> | `-Mode Find` <br/> |
     | `JobName` <br/> |指定 PST 集合工作的名稱。 當您執行 PST 集合工具，以封鎖、收集和刪除在您執行工具以尋找 PST 檔案時所找到的 PST 檔案時，會使用相同的工作名稱。 工作名稱也會新增至記錄檔和設定檔案名。  <br/> | `-JobName PstSearch1` <br/> |
-    | `Locations` <br/> | 指定一或多個要搜尋 PST 檔案的位置。 如果您指定一個以上的位置，請使用分號（;)分隔個別位置。 請務必使用雙引號（""）將此參數的個別值括住。  <br/><br/>   以下是您可以搜尋的位置類型所需的身分識別值格式。  <br/><br/>        **Ou** -使用辨別名稱（DN）來識別 ou;例如：`"OU=NorthAmerica,OU=NWRegion,OU=ITServices,DC=contoso,DC=com"` <br/> > [!IMPORTANT]> 您無法指定內建的電腦容器（例如，CN = 電腦、DC=contoso,DC=com "），因為它不是組織單位。<br/> <br/> **機器**-使用 DN 或完整功能變數名稱（FQDN）來識別網路上的用戶端和伺服器電腦。例如：  <br/>  Dn：`"CN=FILESERVER01,CN=Computers,DC=contoso,DC=com"` <br/>  或者  <br/>  Fqdn：`"FILESERVER01.contoso.com"` <br/><br/>  **網路檔案共用**-使用 UNC 名稱來識別網路檔共用;例如，`"\\FILESERVER02\Users"` <br/> | `-Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com"` <br/> |
+    | `Locations` <br/> | 指定一或多個要搜尋 PST 檔案的位置。 如果您指定一個以上的位置，請使用分號（;)分隔個別位置。 請務必使用雙引號（""）將此參數的個別值括住。  <br/><br/>   以下是您可以搜尋的位置類型所需的身分識別值格式。  <br/><br/>        **Ou** -使用辨別名稱（DN）來識別 ou;例如：`"OU=NorthAmerica,OU=NWRegion,OU=ITServices,DC=contoso,DC=com"` <br/> > [!IMPORTANT]> 您無法指定內建的電腦容器（例如，CN = 電腦、DC=contoso,DC=com "），因為它不是組織單位。<br/> <br/> **機器**-使用 DN 或完整功能變數名稱（FQDN）來識別網路上的用戶端和伺服器電腦。例如：  <br/>  Dn：`"CN=FILESERVER01,CN=Computers,DC=contoso,DC=com"` <br/>  或  <br/>  Fqdn：`"FILESERVER01.contoso.com"` <br/><br/>  **網路檔案共用**-使用 UNC 名稱來識別網路檔共用;例如，`"\\FILESERVER02\Users"` <br/> | `-Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com"` <br/> |
     | `LogLocation` <br/> |指定將記錄檔複製到的資料夾。 如果資料夾不存在，則會在您執行工具時建立該資料夾。  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
     | `ConfigurationLocation` <br/> |指定 .xml 設定檔將複製到的資料夾。 此檔案包含您執行工具時所找到之每個 PST 檔案的相關資訊。 當您在步驟3中執行工具，以複製所找到的 PST 檔案時，就會使用此檔案。  <br/> | `-ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration"` <br/> |
     | `ExcludedLocations` <br/> |此選用參數會指定要在尋找作業期間略過的位置。 您可以排除特定 Ou、電腦及網路檔案共用。 例如，您可以排除機器，例如已設定為 SQL server （或其他類型的應用程式伺服器）的機器，使用者沒有存取權。 如果您指定要排除的位置超過一個位置，請使用分號（;)分隔個別位置。 請務必使用雙引號（""）將此參數的個別值括住。  <br/> | `-ExcludedLocations "SQLSERVER01.contoso.com"` <br/> |
-    | `ForceRestart` <br/> |此選用參數可讓您在尋找模式中為現有的 PST 集合工作執行工具。 當您使用此`ForceRestart`參數時，將會捨棄來自先前的「尋找」作業的結果，而且該工具將會重新掃描指定的位置，並建立新的記錄檔和設定檔。  <br/> | `-ForceRestart` <br/> |
+    | `ForceRestart` <br/> |此選用參數可讓您在尋找模式中為現有的 PST 集合工作執行工具。 當您使用此 `ForceRestart` 參數時，將會捨棄來自先前的「尋找」作業的結果，而且該工具將會重新掃描指定的位置，並建立新的記錄檔和設定檔。  <br/> | `-ForceRestart` <br/> |
    
     以下是針對每個參數使用實際值的 DataCollectorMaster 命令語法範例：
     
@@ -110,16 +110,16 @@ ms.locfileid: "44033807"
     
 ### <a name="results-of-running-datacollectormasterexe-in-the-find-mode"></a>在尋找模式中執行 DataCollectorMaster 的結果
 
-在您成功執行 PST 集合工具 [尋找] 模式後，會建立下列檔案，並將其`LogLocation`儲存在由和`ConfigurationLocation`參數指定的資料夾中。 
+在您成功執行 PST 集合工具 [尋找] 模式後，會建立下列檔案，並將其儲存在由和參數指定的資料夾中 `LogLocation` `ConfigurationLocation` 。 
   
-- ** \> _ _JobName Find\<DateTimeStamp\>-記錄檔包含顯示的狀態\<** 訊息。 此檔案會在`LogLocation`參數所指定的資料夾中建立。 
+- ** \< JobName \> _Find_ \< DateTimeStamp \> ** -記錄檔包含顯示的狀態訊息。 此檔案會在參數所指定的資料夾中建立 `LogLocation` 。 
     
-- ** \> _ _JobName 尋找\<DateTimeStamp\>-csv 檔案包含每個找到之 PST 檔案的\<** 列。 每個 PST 的資訊包括找到 PST 檔案所在的電腦、pst 檔案的完整檔案路徑位置、PST 檔案的擁有者，以及 PST 檔案的大小（kb，Kb）。 此檔案會在`LogLocation`參數所指定的資料夾中建立。 
+- ** \< JobName \> _尋找_ \< DateTimeStamp \> ** -csv 檔案包含每個找到之 PST 檔案的列。 每個 PST 的資訊包括找到 PST 檔案所在的電腦、pst 檔案的完整檔案路徑位置、PST 檔案的擁有者，以及 PST 檔案的大小（kb，Kb）。 此檔案會在參數所指定的資料夾中建立 `LogLocation` 。 
     
     > [!TIP]
     > 在 Excel 中使用 AutoSum 工具，計算 CSV 檔案中所列的所有 PST 檔案總大小（以 KB 為單位）。 然後，您可以使用轉換計算機，將總大小轉換成百萬位元組（MB）或千百萬位元組（GB）。 
   
-- ** \> _ _JobName find\<DateTimeStamp\>-xml 檔包含您在尋找模式中執行工具時所使用之參數值的相關\<** 資訊。 此檔案也包含每個找到之 PST 檔案的相關資訊。 當您為相同的工作執行重新執行工具以封鎖、收集或刪除所找到的 PST 檔案時，就會使用此檔案中的資料。 此檔案會在`ConfigurationLocation`參數所指定的資料夾中建立。 
+- ** \< JobName \> _find_ \< DateTimeStamp \> ** -xml 檔包含您在尋找模式中執行工具時所使用之參數值的相關資訊。 此檔案也包含每個找到之 PST 檔案的相關資訊。 當您為相同的工作執行重新執行工具以封鎖、收集或刪除所找到的 PST 檔案時，就會使用此檔案中的資料。 此檔案會在參數所指定的資料夾中建立 `ConfigurationLocation` 。 
     
     > [!IMPORTANT]
     > 請勿重新命名、變更或移動此檔案。 當您在相同工作的封鎖、複製或刪除模式中重新執行工具時，它會由 PST 集合工具使用。 
@@ -133,7 +133,7 @@ ms.locfileid: "44033807"
 - PST 使用方式控制 GPO 會在您組織中的機器上建立登錄設定。 根據您使用的參數，您可以建立登錄設定，以防止使用者建立新的 PST 檔案和登錄設定，以防止使用者變更現有的 PST 檔案。
     
 > [!NOTE]
-> 如果控制對您的組織的存取 PST 檔案的存取過於中斷，您可以考慮略過此步驟，並執行步驟3，將 PST 檔案複製到中央位置。 然後，您可以重複步驟1進行相同的工作（使用`ForceRestart`參數），以尋找將 pst 檔案複製到集合位置之後所建立的其他 pst 檔案。 如果找到新的 PST 檔案，您可以將其複製到集合位置。 當您在 [ `ForceRestart`尋找] 模式中重新執行工具時使用參數時，會捨棄工作先前的尋找作業的結果，而且該工具將會重新掃描指定的位置。 
+> 如果控制對您的組織的存取 PST 檔案的存取過於中斷，您可以考慮略過此步驟，並執行步驟3，將 PST 檔案複製到中央位置。 然後，您可以重複步驟1進行相同的工作（使用 `ForceRestart` 參數），以尋找將 pst 檔案複製到集合位置之後所建立的其他 pst 檔案。 如果找到新的 PST 檔案，您可以將其複製到集合位置。 當您 `ForceRestart` 在 [尋找] 模式中重新執行工具時使用參數時，會捨棄工作先前的尋找作業的結果，而且該工具將會重新掃描指定的位置。 
 
 若要封鎖 PST 檔案的存取：
 
@@ -152,12 +152,12 @@ ms.locfileid: "44033807"
     |參數 * * * *|****描述****|範例 * * * *|
     |:-----|:-----|:-----|
     | `DataSource` <br/> |會指定要搜尋之資料的類型。 目前，您可以使用 PST 集合工具來搜尋 PST 檔案。  <br/> | `-DataSource Pst` <br/> |
-    | `Mode` <br/> |會指定工具將執行的作業類型。 使用此值`Block`可防止使用者建立新的 pst 檔案，以及變更現有的 pst 檔案。  <br/> | `-Mode Block` <br/> |
+    | `Mode` <br/> |會指定工具將執行的作業類型。 使用此值 `Block` 可防止使用者建立新的 pst 檔案，以及變更現有的 pst 檔案。  <br/> | `-Mode Block` <br/> |
     | `JobName` <br/> |指定現有 PST 集合工作的名稱。 您必須使用這個相同的工作名稱，當您在步驟1的 [尋找] 模式中執行工具時使用。 當您以封鎖模式執行該工具時，此工作名稱也會新增至所建立的記錄檔名稱。  <br/> | `-JobName PstSearch1` <br/> |
     | `ConfigurationLocation` <br/> |指定資料夾包含當您在 [尋找] 模式中執行工具時所建立的 .xml 設定檔。 使用您在步驟1中用於此參數的相同值。  <br/> | `-ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration"` <br/> |
     | `LogLocation` <br/> |指定要將封鎖作業的記錄檔複製到其中的資料夾。 這是選用的參數。 若未加入，記錄檔會複製到您下載 PST 集合工具所在的資料夾。 當您在步驟1的尋找模式中執行工具時，請考慮使用與您使用的相同記錄位置，以便將所有記錄檔儲存在相同的資料夾中。  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
-    | `BlockChangesToFiles` <br/> |使用此參數可防止使用者變更 PST 檔案。 當您使用此參數時，會建立下列登錄專案： `HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\<version>\Outlook\PST\PstDisableGrow`並將資料值設為1。 當您在封鎖模式中執行 PST 集合工具時所建立的 GPO，就會在組織中的機器上建立此登錄設定。  <br/> | `-BlockChangesToFiles` <br/> |
-    | `BlockNewFiles` <br/> |使用此參數可防止使用者建立新的 PST 檔案、開啟和匯入 PST 檔案至 Outlook，以及從 Outlook 匯出 PST 檔案。 當您使用此參數時，會建立下列登錄專案： `HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\<version>\Outlook\DisablePst`並將資料值設為1。 當您在封鎖模式中執行 PST 集合工具時所建立的 GPO，就會在組織中的機器上建立此登錄設定。  <br/> | `-BlockNewFiles` <br/> |
+    | `BlockChangesToFiles` <br/> |使用此參數可防止使用者變更 PST 檔案。 當您使用此參數時，會建立下列登錄專案： `HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\<version>\Outlook\PST\PstDisableGrow` 並將資料值設為1。 當您在封鎖模式中執行 PST 集合工具時所建立的 GPO，就會在組織中的機器上建立此登錄設定。  <br/> | `-BlockChangesToFiles` <br/> |
+    | `BlockNewFiles` <br/> |使用此參數可防止使用者建立新的 PST 檔案、開啟和匯入 PST 檔案至 Outlook，以及從 Outlook 匯出 PST 檔案。 當您使用此參數時，會建立下列登錄專案： `HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\<version>\Outlook\DisablePst` 並將資料值設為1。 當您在封鎖模式中執行 PST 集合工具時所建立的 GPO，就會在組織中的機器上建立此登錄設定。  <br/> | `-BlockNewFiles` <br/> |
    
     以下是針對每個參數使用實際值的 DataCollectorMaster 命令語法範例：
 
@@ -189,13 +189,13 @@ ms.locfileid: "44033807"
     |參數 * * * *|****描述****|範例 * * * *|
     |:-----|:-----|:-----|
     | `DataSource` <br/> |會指定要搜尋之資料的類型。 目前，您可以使用 PST 集合工具來搜尋 PST 檔案。  <br/> | `-DataSource Pst` <br/> |
-    | `Mode` <br/> |會指定工具將執行的作業類型。 使用此值`Collect`可複製您在 [尋找] 模式中執行工具時所找到的 PST 檔案。 請注意，此工具可以複製 Outlook 中開啟的 PST 檔案，並複製連接至 Outlook 設定檔的 PST 檔案。  <br/> | `-Mode Collect` <br/> |
+    | `Mode` <br/> |會指定工具將執行的作業類型。 使用此值 `Collect` 可複製您在 [尋找] 模式中執行工具時所找到的 PST 檔案。 請注意，此工具可以複製 Outlook 中開啟的 PST 檔案，並複製連接至 Outlook 設定檔的 PST 檔案。  <br/> | `-Mode Collect` <br/> |
     | `JobName` <br/> |指定現有 PST 集合工作的名稱。 您必須使用這個相同的工作名稱，當您在步驟1的 [尋找] 模式中執行工具時使用。 當您在收集模式中執行工具時，此工作名稱也會新增至所建立的記錄檔名稱。  <br/> | `-JobName PstSearch1` <br/> |
-    | `Locations` <br/> |使用您在步驟1中用於`Locations`參數的相同值。 如果您想要在步驟5中重新執行工具以刪除其來源位置的 PST 檔案，請在收集模式下執行該工具時包含此參數。  <br/> | `-Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com"; "CN=FILESERVER02,CN=Computers,DC=contoso,DC=com"` <br/> |
+    | `Locations` <br/> |使用您在 `Locations` 步驟1中用於參數的相同值。 如果您想要在步驟5中重新執行工具以刪除其來源位置的 PST 檔案，請在收集模式下執行該工具時包含此參數。  <br/> | `-Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com"; "CN=FILESERVER02,CN=Computers,DC=contoso,DC=com"` <br/> |
     | `ConfigurationLocation` <br/> |指定包含您在尋找模式中執行工具時所建立的 .xml 設定檔所在的資料夾。 使用您在步驟1中用於此參數的相同值。  <br/> | `-ConfigurationLocation "c:\users\admin\desktop \PSTCollection\Configuration"` <br/> |
-    | `CopyLocation` <br/> |指定您要將 PST 檔案複製到的集合位置。 您可以將檔案複製到檔案伺服器、網路檔共用或硬碟。 在收集模式中執行工具之前，必須已存在位置。 工具不會建立位置，而且會傳回錯誤，指出該位置不存在。  <br/> 此外，您還必須寫入此參數所指定之集合位置的許可權。  <br/> | `-CopyLocation "\\FILESERVER03\PSTs"` <br/> |
+    | `CopyLocation` <br/> |指定您要將 PST 檔案複製到的集合位置。 您可以將檔案複製到檔案伺服器、網路檔共用或硬碟。 在收集模式中執行工具之前，必須已存在位置。 工具不會建立位置，而且會傳回錯誤，指出該位置不存在。  <br/> 此外，您還必須寫入此參數所指定之集合位置的許可權。  <br/><br/>若要將 PST 檔案複製到其中的裝置無法透過 `\\SERVER\SHARE` 語法顯示，請將磁碟機盤符對應至裝置，並使用此參數值的對應磁碟機號。 | `-CopyLocation "\\FILESERVER03\PSTs"` <br/>或<br/>`-CopyLocation "z:\"`|
     | `LogLocation` <br/> |指定要將收集模式的記錄檔複製到的資料夾。 這是選用的參數。 若未加入，記錄檔會複製到您下載 PST 集合工具所在的資料夾。 當您在步驟1的尋找模式中執行工具時，請考慮使用與您使用的相同記錄位置，以便將所有記錄檔儲存在相同的資料夾中。  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
-    | `ForceRestart` <br/> |此選用參數可讓您在集合模式中為現有的 PST 集合工作重新執行工具。 如果您先前在收集模式中執行工具，但接著使用`ForceRestart`切換命令重新掃描位置以重新掃描 pst 檔案，您可以使用此參數在集合模式中重新執行該工具，然後在重新掃描位置時，重新複製 pst 檔案。 當您在`ForceRestart`集合模式中使用切換參數時，此工具會略過任何先前的集合作業，並且會嘗試從零開始複製 PST 檔案。  <br/> | `-ForceRestart` <br/> |
+    | `ForceRestart` <br/> |此選用參數可讓您在集合模式中為現有的 PST 集合工作重新執行工具。 如果您先前在收集模式中執行工具，但接著使用 `ForceRestart` 切換命令重新掃描位置以重新掃描 pst 檔案，您可以使用此參數在集合模式中重新執行該工具，然後在重新掃描位置時，重新複製 pst 檔案。 當您 `ForceRestart` 在集合模式中使用切換參數時，此工具會略過任何先前的集合作業，並且會嘗試從零開始複製 PST 檔案。  <br/> | `-ForceRestart` <br/> |
    
     以下是 DataCollectorMaster 工具之語法的範例，使用每個參數的實際值：
     
@@ -207,16 +207,16 @@ ms.locfileid: "44033807"
     
 ### <a name="results-of-running-datacollectormasterexe-in-the-collect-mode"></a>在收集模式中執行 DataCollectorMaster 的結果
 
-在收集模式中成功執行 DataCollectorMaster 之後，會建立下列檔案，並將其`LogLocation`儲存在由和`ConfigurationLocation`參數指定的資料夾中。 
+在收集模式中成功執行 DataCollectorMaster 之後，會建立下列檔案，並將其儲存在由和參數指定的資料夾 `LogLocation` 中 `ConfigurationLocation` 。 
   
-- ** \> _ _JobName 收集\<DateTimeStamp\>-記錄檔包含所顯示的狀態\<** 訊息。 此檔案會在`LogLocation`參數所指定的資料夾中建立。 
+- ** \< JobName \> _收集_ \< DateTimeStamp \> ** -記錄檔包含所顯示的狀態訊息。 此檔案會在參數所指定的資料夾中建立 `LogLocation` 。 
     
-- ** \> _ _JobName 收集\<DateTimeStamp\>-xml 檔案只會包含在收集模式中執行工具時所使用之參數值的相關\<** 資訊。 當您執行重新執行 DataCollectorMaster 工具以刪除 PST 檔案時，會使用此檔案中的資料;請參閱[步驟 5](#step-5-delete-the-pst-files-found-on-your-network)。
+- ** \< JobName \> _收集_ \< DateTimeStamp \> ** -xml 檔案只會包含在收集模式中執行工具時所使用之參數值的相關資訊。 當您執行重新執行 DataCollectorMaster 工具以刪除 PST 檔案時，會使用此檔案中的資料;請參閱[步驟 5](#step-5-delete-the-pst-files-found-on-your-network)。
     
 
 ## <a name="step-4-import-the-pst-files-to-office-365"></a>步驟4：將 PST 檔案匯入 Office 365
 
-在您收集步驟1中找到的 PST 檔案之後，下一步是將其匯入 Office 365 中的信箱。 在元件或匯入程式中，您必須建立 CSV 對應檔，其中包含您要匯入之每個 PST 檔案的資料列。 每一列中的資訊都會指定 PST 檔的名稱、使用者的電子郵件地址，以及是否要將 PST 檔案匯入至使用者的主要或封存信箱。 使用**JobName\>_尋找_\<DateTimeStamp**檔案中的資訊（在步驟1中建立），以協助您建立 csv 對應檔。 
+在您收集步驟1中找到的 PST 檔案之後，下一步是將其匯入 Office 365 中的信箱。 在元件或匯入程式中，您必須建立 CSV 對應檔，其中包含您要匯入之每個 PST 檔案的資料列。 每一列中的資訊都會指定 PST 檔的名稱、使用者的電子郵件地址，以及是否要將 PST 檔案匯入至使用者的主要或封存信箱。 使用**JobName \> _尋找_ \< DateTimeStamp**檔案中的資訊（在步驟1中建立），以協助您建立 csv 對應檔。 
   
 如需將 PST 檔案匯入至 Office 365 的逐步指示，請參閱下列其中一個主題：
   
@@ -244,11 +244,11 @@ ms.locfileid: "44033807"
     |參數 * * * *|****描述****|範例 * * * *|
     |:-----|:-----|:-----|
     | `DataSource` <br/> |會指定要搜尋之資料的類型。 目前，您可以使用 PST 集合工具來搜尋 PST 檔案。 ![間隔](../media/b078d05c-3aee-4b9f-8805-6a8a9d8970ee.png)           <br/> | `-DataSource Pst` <br/> |
-    | `Mode` <br/> |會指定工具將執行的作業類型。 使用此值`Delete`可刪除您在 [尋找] 模式中執行工具時所找到的 PST 檔案。  <br/> | `-Mode Delete` <br/> |
+    | `Mode` <br/> |會指定工具將執行的作業類型。 使用此值 `Delete` 可刪除您在 [尋找] 模式中執行工具時所找到的 PST 檔案。  <br/> | `-Mode Delete` <br/> |
     | `JobName` <br/> |指定現有 PST 集合工作的名稱。 您必須使用此相同的工作名稱，當您在 [搜尋模式] 和 [步驟 3] 中的收集模式下執行工具時使用。 當您以刪除模式執行工具時，此工作名稱也會新增至所建立的記錄檔名稱。  <br/> | `-JobName PstSearch1` <br/> |
     | `ConfigurationLocation` <br/> |指定在收集模式中執行工具時所建立的 .xml 設定檔所在的資料夾。 使用您在步驟3中用於此參數的相同值。  <br/> | `-ConfigurationLocation "c:\users\admin\ desktop\PSTCollection\Configuration"` <br/> |
     | `LogLocation` <br/> |指定要將刪除模式的記錄檔複製到其中的資料夾。 這是選用的參數。 若未加入，記錄檔會複製到您下載 PST 集合工具所在的資料夾。 在 [步驟 1] 和 [步驟 3] 中的 [尋找及收集模式] 中執行工具時，請考慮使用相同的記錄位置，以便將所有記錄檔儲存在相同的資料夾中。  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
-    | `ForceRestart` <br/> |此選用參數可讓您在現有 PST 集合工作的刪除模式中重新執行工具。 如果您先前已在刪除模式中執行工具，但接著透過`ForceRestart`切換器重新掃描位置以重新掃描 pst 檔案，您可以使用此參數，在刪除模式中重新執行工具，並刪除重新掃描位置時找到的 PST 檔案。 當以刪除`ForceRestart`模式使用切換參數時，此工具會略過任何先前的 Delete 作業，並嘗試再次刪除 PST 檔案。  <br/> | `-ForceRestart` <br/> 
+    | `ForceRestart` <br/> |此選用參數可讓您在現有 PST 集合工作的刪除模式中重新執行工具。 如果您先前已在刪除模式中執行工具，但接著透過切換器重新 `ForceRestart` 掃描位置以重新掃描 pst 檔案，您可以使用此參數，在刪除模式中重新執行工具，並刪除重新掃描位置時找到的 PST 檔案。 當 `ForceRestart` 以刪除模式使用切換參數時，此工具會略過任何先前的 Delete 作業，並嘗試再次刪除 PST 檔案。  <br/> | `-ForceRestart` <br/> 
 
     以下是 DataCollectorMaster 工具之語法的範例，使用每個參數的實際值：
     
@@ -260,8 +260,8 @@ ms.locfileid: "44033807"
     
 ### <a name="results-of-running-datacollectormasterexe-in-the-delete-mode"></a>在刪除模式中執行 DataCollectorMaster 的結果
 
-在刪除模式中成功執行 DataCollectorMaster 之後，會建立下列檔案，並將其`LogLocation`儲存在由和`ConfigurationLocation`參數指定的資料夾中。 
+在刪除模式中成功執行 DataCollectorMaster 之後，會建立下列檔案，並將其儲存在由和參數指定的資料夾 `LogLocation` 中 `ConfigurationLocation` 。 
   
-- ** \> _ _JobName 刪除\<DateTimeStamp\>-記錄檔包含顯示的狀態\<** 訊息。 此檔案會在`LogLocation`參數所指定的資料夾中建立。 
+- ** \< JobName \> _刪除_ \< DateTimeStamp \> ** -記錄檔包含顯示的狀態訊息。 此檔案會在參數所指定的資料夾中建立 `LogLocation` 。 
     
-- ** \> _ _JobName 刪除\<DateTimeStamp\>-xml 檔案只會包含在刪除模式中執行工具時所使用之參數值的相關\<** 資訊。 它也會列出已刪除之每個 PST 檔案的名稱及檔案路徑。 此檔案會在`ConfigurationLocation`參數所指定的資料夾中建立。 
+- ** \< JobName \> _刪除_ \< DateTimeStamp \> ** -xml 檔案只會包含在刪除模式中執行工具時所使用之參數值的相關資訊。 它也會列出已刪除之每個 PST 檔案的名稱及檔案路徑。 此檔案會在參數所指定的資料夾中建立 `ConfigurationLocation` 。 
