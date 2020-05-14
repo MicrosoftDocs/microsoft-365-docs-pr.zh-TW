@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 設定 Office 365 的高級威脅防護，並保護機密資料，避免網路釣魚、惡意程式碼和其他威脅。
-ms.openlocfilehash: 2dd75b20bf203b9b8f0cdefb2459c45d1d0ccec1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 748868b07ac8759a66bac3c6b4165509270426a6
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627119"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224464"
 ---
 # <a name="increase-threat-protection"></a>加強威脅防護
 
@@ -34,15 +34,15 @@ ms.locfileid: "43627119"
 
 開始之前，請先檢查您的 Office 365 安全分數。 Office 365 安全分數會根據您的定期活動和安全性設定來分析貴組織的安全性，並指定分數。 請先記下您目前的分數。 若要增加您的分數，請完成本文中建議的動作。 目標不會達到最大分數，但請注意保護您的環境不會對使用者生產力造成不良影響的機會。 
 
-如需詳細資訊，請參閱[Microsoft 安全分數](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score)。
+如需詳細資訊，請參閱[Microsoft 安全分數](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)。
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>提升郵件中惡意程式碼的保護層級
 
 您的 Office 365 或 Microsoft 365 環境包括防範惡意程式碼。 您可以使用常用於惡意程式碼的檔案類型來封鎖附件，以提升這種保護。 若要提高電子郵件的惡意程式碼保護：
   
-1. 移至[https://protection.office.com](https://protection.office.com)並以您的系統管理員帳號憑證登入。 
+1. 移至 [https://protection.office.com](https://protection.office.com) 並以您的系統管理員帳號憑證登入。 
     
-2. 在&amp;安全性與合規性中心的左功能窗格中，在 [**威脅管理**] 底下，選擇 [**原則** \> **Anti-Malware**]。
+2. 在安全性與 &amp; 合規性中心的左功能窗格中，在 [**威脅管理**] 底下，選擇 [**原則** \> **Anti-Malware**]。
     
 3. 按兩下預設原則，以編輯此全公司原則。
     
@@ -67,17 +67,17 @@ ms.locfileid: "43627119"
 
 若要建立郵件傳輸規則：
   
-1. 移至 [系統管理中心] <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>，然後選擇 [系統**管理中心** \> ] [ **Exchange**]。
+1. 移至 [系統管理中心] <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> ，然後選擇 [系統**管理中心**] [ \> **Exchange**]。
     
 2. 在 [**郵件流程**] 類別中，選取 [**規則**]。
     
-3. 選取**+**[]，然後選取 [**建立新規則**]。
+3. 選取 [] **+** ，然後選取 [**建立新規則**]。
     
 4. 在對話方塊底部選取 [**更多選項**]，以查看完整的選項組。 
     
 5. 針對規則套用下表中的設定。 除非您想要變更預設值，否則請對其他設定使用預設值。
     
-6. 選取 **[儲存]**。
+6. 選取 [儲存]****。
     
 |**設定**|**開啟 Office 檔案的附件之前警告使用者**||
 |:-----|:-----|:-----|
@@ -99,17 +99,17 @@ ms.locfileid: "43627119"
   
 若要建立郵件傳輸規則，請觀看[這段簡短的影片](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7)，或遵循下列步驟：
   
-1. 在 Microsoft 365 系統管理中心中，選取 [系統**管理中心** \> ] [ **Exchange**]。
+1. 在 Microsoft 365 系統管理中心中，選取 [系統**管理中心**] [ \> **Exchange**]。
     
 2. 在 [**郵件流程**] 類別中，選取 [**規則**]。
     
-3. 選取**+**[]，然後選取 [**建立新規則**]。
+3. 選取 [] **+** ，然後選取 [**建立新規則**]。
     
 4. 若要查看所有選項，請選取對話方塊底部的 [**更多選項**]。 
     
 5. 套用下表中的設定。 除非您想要變更預設值，否則請對其他設定使用預設值。
     
-6. 選取 **[儲存]**。
+6. 選取 [儲存]****。
     
 |**設定**|**開啟 Office 檔案的附件之前警告使用者**|
 |:-----|:-----|
@@ -130,7 +130,7 @@ ms.locfileid: "43627119"
   
 1. 請移至 [https://protection.office.com](https://protection.office.com)。 
     
-2. 在安全性&amp;與合規性中心的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則**]。
+2. 在安全性與 &amp; 合規性中心的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則**]。
     
 3. 在 [**原則**] 頁面上，選擇 [ **ATP 反網路釣魚**]。
     
@@ -147,10 +147,10 @@ ms.locfileid: "43627119"
 |描述  <br/> |確定最重要的人員和我們的網域未進行類比。  <br/> |
 |新增要保護的使用者  <br/> |選取 **[+ 新增條件]，收件者是**。 輸入使用者名稱，或輸入候選人、活動管理員及其他重要員工成員的電子郵件地址。 您最多可以新增20個要從類比中保護的內部和外部地址。  <br/> |
 |新增要保護的網域  <br/> |選取 **[+ 新增條件]，收件者網域是**。 輸入您的 Microsoft 365 訂閱相關聯的自訂網域（如果您已定義的話）。 您可以輸入一個以上的網域。  <br/> |
-|選擇動作  <br/> |如果模仿的使用者傳送電子郵件：選擇 [重新**導向郵件至其他電子郵件地址**]，然後輸入安全性管理員的電子郵件地址。例如，*劉愛琳<span><span>@contoso .com*。 如果電子郵件來自冒充的網域：請選擇 **[隔離郵件]**。  <br/> |
+|選擇動作  <br/> |如果模仿的使用者傳送電子郵件：選擇 [重新**導向郵件至其他電子郵件地址**]，然後輸入安全性管理員的電子郵件地址。例如，*劉愛琳 <span> <span> @contoso .com*。 如果電子郵件來自冒充的網域：請選擇 **[隔離郵件]**。  <br/> |
 |信箱情報  <br/> |當您建立新的反網路釣魚原則時，系統會預設選取信箱情報。 請將此設定保留為 **[開啟]**，以獲得最佳結果。  <br/> |
 |新增受信任的寄件者與網域  <br/> |您可以在這裡新增您自己的網域或任何其他受信任的網域。  <br/> |
-|套用對象  <br/> |請選取 **[收件者的網域是]**。 在 **[任一項]** 底下選取 **[選擇]**。 選取 **[+ 新增]**。 選取功能變數名稱（例如 contoso）旁的核取方塊 *。<span>com <span> *，在清單中，然後選取 [**新增**]。 選取 **[完成]**。  <br/> |
+|套用對象  <br/> |請選取 **[收件者的網域是]**。 在 **[任一項]** 底下選取 **[選擇]**。 選取 **[+ 新增]**。 選取功能變數名稱（例如 contoso）旁的核取方塊 *。 <span> <span>com*，在清單中，然後選取 [**新增**]。 選取 **[完成]**。  <br/> |
   
 ## <a name="protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>使用 ATP 安全附件防護惡意附件和檔案
 
@@ -158,15 +158,15 @@ ms.locfileid: "43627119"
   
 若要建立 ATP 安全附件原則，請觀看[這段簡短的影片](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，或完成下列步驟：
   
-1. 移至[https://protection.office.com](https://protection.office.com)，然後使用您的系統管理員帳戶登入。 
+1. 移至 [https://protection.office.com](https://protection.office.com) ，然後使用您的系統管理員帳戶登入。 
     
-2. 在安全性&amp;與合規性中心的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則**]。
+2. 在安全性與 &amp; 合規性中心的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則**]。
     
 3. 在 [原則] 頁面上，選擇 [ **ATP 安全附件**]。
     
 4. 在 [安全附件] 頁面上，選取 [**開啟 SharePoint、OneDrive 和 Microsoft 小組的 ATP** ] 核取方塊，廣泛套用此保護。 
     
-5. 選取**+** 以建立新的原則。 
+5. 選取 **+** 以建立新的原則。 
     
 6. 套用下表中的設定。 
     
@@ -195,9 +195,9 @@ ms.locfileid: "43627119"
     
 若要設定 ATP 安全連結，請觀看[這段簡短的訓練影片](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)，或完成下列步驟：
   
-1. 移至[https://protection.office.com](https://protection.office.com)，然後使用您的系統管理員帳戶登入。 
+1. 移至 [https://protection.office.com](https://protection.office.com) ，然後使用您的系統管理員帳戶登入。 
     
-2. 在安全性&amp;與合規性中心的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則**]。
+2. 在安全性與 &amp; 合規性中心的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則**]。
     
 3. 在 [原則] 頁面上，選擇 [ **ATP 安全連結**]。
     
@@ -207,15 +207,15 @@ ms.locfileid: "43627119"
     
 2. 在 [**電子郵件除外，套用至內容**] 底下，選取 [適用于**企業的 Microsoft 365 應用程式、Office iOS 和 Android**]。
     
-3. 選取 **[儲存]**。 
+3. 選取 [儲存]****。 
     
 若要建立新的原則針對您網域中的所有收件者：
   
-1. 在 [安全連結] 頁面上，于 [套用**至整個組織**的原則**+** ] 底下，選取 [建立新原則]。 
+1. 在 [安全連結] 頁面上，于 [套用**至整個組織的原則**] 底下，選取 [ **+** 建立新原則]。 
     
 2. 套用下表所列的設定。
     
-3. 選取 **[儲存]**。 
+3. 選取 [儲存]****。 
 
 |**設定或選項**|**建議的設定** <br/>|
 |:-----|:-----|
