@@ -12,22 +12,22 @@ metadata:
   ms.author: sirkkuw
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: 4fbcbcf3b1d9f0e83c2077317cb0388a7acf14cc
-  ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+  ms.openlocfilehash: fd945d744870dd0c72cc91b727b47b3d2e1210f2
+  ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/13/2020
-  ms.locfileid: "44222512"
+  ms.lasthandoff: 05/14/2020
+  ms.locfileid: "44232128"
 highlightedContent:
   items:
   - title: Office 365 現在是 Microsoft 365！
     itemType: whats-new
     url: new-subscription-names.md
 productDirectory:
-  title: 入門
+  title: 開始使用
   summary: 設定您的訂閱和電子郵件、新增使用者和安裝應用程式。
   items:
-  - title: 入門
+  - title: 開始使用
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
     summary: 註冊並設定 Microsoft 365。
     url: setup/index.yml
@@ -37,7 +37,7 @@ productDirectory:
     url: setup/migrate-email-and-contacts-admin.md
   - title: 安裝應用程式
     imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
-    summary: 為您組織中的使用者安裝 Office 和其他 Microsoft 應用程式。
+    summary: 安裝 Office 和其他 Microsoft 應用程式。
     url: setup/install-applications.md
   - title: 訓練使用者
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
@@ -67,7 +67,7 @@ additionalContent:
       summary: 管理票據、訂閱及產品授權、更新支付方式，以及購買其他服務和儲存區。
       url: ../commerce/index.yml
     - title: 保護您的組織
-      summary: 建立資料遺失防護（DLP）原則，設定多重要素驗證（MFA），並瞭解 Microsoft 安全分數和 GDPR。
+      summary: 深入瞭解設定多因素驗證（MFA）的最佳方法，並瞭解 Microsoft 安全分數和 GDPR。
       url: security-and-compliance/secure-your-business-data.md
     - title: 與客戶合作
       summary: 共用檔，並使用團隊共同作業和開會。
