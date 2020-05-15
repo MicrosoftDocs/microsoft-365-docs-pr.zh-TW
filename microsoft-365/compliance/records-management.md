@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以利用 Microsoft 365 中的記錄管理，將組織的特定保留排程套用到檔案計畫，以便管理保留、記錄宣告和處置，以支援完整的內容生命週期。
-ms.openlocfilehash: e4454ba5940d9a67d9f160d90d0a9db14563bcf7
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 261ae3286792dde540d9bf648c15e529863091ed
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949246"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231866"
 ---
 # <a name="records-management-in-microsoft-365"></a>Microsoft 365 中的記錄管理
 
@@ -34,7 +34,7 @@ ms.locfileid: "43949246"
 
 - **使用檔案計畫移轉和管理您的保留計畫**，並使用[檔案計畫管理員](file-plan-manager.md)來帶出您的現有保留計畫，或使用檔案描述項建立新檔案並擴充階層。
 
-- **建立保留和刪除原則**。 根據包括上次修改或建立日期的各種因素，來定義[保留](retention-policies.md#retaining-content-for-a-specific-period-of-time)與[處置](retention-policies.md#deleting-content-thats-older-than-a-specific-age)期間。
+- **在記錄標籤中建立保留和刪除原則**。 根據各種因素，包括上次修改或建立日期，來定義[保留](create-retention-policies.md#retaining-content-for-a-specific-period-of-time)與[處置](create-retention-policies.md#deleting-content-thats-older-than-a-specific-age)期間。
 
 - 使用[以事件為基礎的保留](event-driven-retention.md)來**觸發以事件為基礎的保留**。
 

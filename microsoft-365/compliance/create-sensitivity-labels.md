@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 資訊保護解決方案的需求：建立、設定及發佈敏感度標籤，以便分類及保護貴組織的文件和電子郵件。
-ms.openlocfilehash: ea9b8d119f431079ff0558eddfae3caf0ec0fffb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 358b87fca010aa5e910337b0942df0b33ee38951
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635953"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232720"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>建立及設定敏感度標籤及其原則
 
@@ -102,13 +102,12 @@ Settings=@(
 @{key=$Languages[0];Value=$DisplayNames[0];}
 @{key=$Languages[1];Value=$DisplayNames[1];}
 @{key=$Languages[2];Value=$DisplayNames[2];})}
-Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSettings -Depth 3 -Compress)
 $TooltipLocaleSettings = [PSCustomObject]@{LocaleKey='Tooltip';
 Settings=@(
 @{key=$Languages[0];Value=$Tooltips[0];}
 @{key=$Languages[1];Value=$Tooltips[1];}
 @{key=$Languages[2];Value=$Tooltips[2];})}
-Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSettings -Depth 3 -Compress)
+Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSettings -Depth 3 -Compress),(ConvertTo-Json $TooltipLocaleSettings -Depth 3 -Compress)
 ```
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>建立標籤原則來發佈敏感度標籤

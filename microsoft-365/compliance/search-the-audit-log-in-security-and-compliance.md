@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 447777c4cf3eb8532e30977d97694445647889d4
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 34e9998ee0a17f44ba4f70d2cd1c5f1d12ce926f
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208077"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214291"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -429,7 +429,7 @@ ms.locfileid: "44208077"
 |已將權限等級新增至網站集合|PermissionLevelAdded|權限等級已新增至網站集合。|
 |已接受存取要求|AccessRequestAccepted|已接受網站、資料夾或文件的存取要求，而提出要求的使用者已獲授與存取權。|
 |已接受共用邀請|SharingInvitationAccepted|使用者 (成員或來賓) 已接受共用邀請，並獲授與資源的存取權。 此事件包括受邀的使用者，以及用來接受邀請的電子郵件地址 (它們可能不同) 之相關資訊。 此活動通常伴隨第二個事件，描述使用者如何獲授與資源的存取權。例如，將使用者新增至擁有資源存取權的群組。|
-|已封鎖的共用邀請|SharingInvitationBlocked|貴組織使用者所傳送的共用邀請遭到封鎖，因為外部共用原則會根據目標使用者的網域允許或拒絕外部共用。 在此案例中，共用邀請因下列原因而遭到刪除： <br/> 允許的網域清單中不包含目標使用者的網域。 <br/> 或者 <br/> 封鎖的網域清單中包含目標使用者的網域。 <br/> 如需根據網域允許或封鎖外部共用的詳細資訊，請參閱[在 SharePoint Online 和商務用 OneDrive 中限制網域共用](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9)。|
+|已封鎖的共用邀請|SharingInvitationBlocked|貴組織使用者所傳送的共用邀請遭到封鎖，因為外部共用原則會根據目標使用者的網域允許或拒絕外部共用。 在此案例中，共用邀請因下列原因而遭到刪除： <br/> 允許的網域清單中不包含目標使用者的網域。 <br/> 或者 <br/> 封鎖的網域清單中包含目標使用者的網域。 <br/> 如需根據網域允許或封鎖外部共用的詳細資訊，請參閱[在 SharePoint Online 和商務用 OneDrive 中限制網域共用](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)。|
 |已建立存取要求|AccessRequestCreated|使用者要求他們未擁有存取權限的網站、資料夾或文件之存取權。|
 |已建立公司可共用連結|CompanyLinkCreated|使用者已建立資源的全公司連結。 全公司連結只能讓您組織中的成員使用。 來賓無法使用這些連結。|
 |已建立匿名連結|AnonymousLinkCreated|使用者已建立資源的匿名連結。 任何人只要有此連結就可以存取資源，而不需要驗證。|
@@ -502,9 +502,9 @@ ms.locfileid: "44208077"
 |已允許使用者建立群組|AllowGroupCreationSet|網站系統管理員或擁有者新增權限等級至網站，以允許獲派該權限的使用者為該網站建立群組。|
 |已取消網站的地理位置移動|SiteGeoMoveCancelled|SharePoint 或全域系統管理員已成功取消 SharePoint 或 OneDrive 網站的地理位置移動。 多地理位置功能可讓組織橫跨多個 Microsoft 資料中心地理位置，這些地理位置稱為 geos。 如需詳細資訊，請參閱 [OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
 |已變更共用原則|SharingPolicyChanged|SharePoint 或全域系統管理員已使用 Microsoft 365 系統管理員入口網站、SharePoint 系統管理員入口網站或 SharePoint Online 管理命令介面變更了 SharePoint 共用原則。 將會記錄您的組織中的任何共用原則設定變更。 已變更的原則可在事件記錄詳細屬性中的 **ModifiedProperties** 欄位中找到。|
-|已變更裝置存取原則|DeviceAccessPolicyChanged|SharePoint 或全域系統管理員已變更您組織中未受控裝置的原則。 此原則可針對未加入您組織的裝置控制 SharePoint、OneDrive 及 Microsoft 365 的存取權。 設定此原則需要 Enterprise Mobility + Security 訂閱。 如需詳細資訊，請參閱[控制未受管理裝置的存取權](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622)。|
+|已變更裝置存取原則|DeviceAccessPolicyChanged|SharePoint 或全域系統管理員已變更您組織中未受控裝置的原則。 此原則可針對未加入您組織的裝置控制 SharePoint、OneDrive 及 Microsoft 365 的存取權。 設定此原則需要 Enterprise Mobility + Security 訂閱。 如需詳細資訊，請參閱[控制未受管理裝置的存取權](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)。|
 |已變更免除使用者代理程式|CustomizeExemptUsers|SharePoint 或全域系統管理員已在 SharePoint 系統管理員中心自訂免除使用者代理程式清單。 您可以指定要免除哪些使用者代理程式，以免於接收整個網頁進行索引。 這表示當您指定為免除的使用者代理程式遇到 InfoPath 表單時，會以 XML 檔案傳回該表單，而不是整個網頁。 這樣在進行 InfoPath 表單索引時會更迅速。|
-|已變更網路存取原則|NetworkAccessPolicyChanged|SharePoint 或全域系統管理員已在 SharePoint 系統管理員中心中 (或是使用 SharePoint Online PowerShell) 變更位置存取原則 (又稱為受信任的網路邊界)。 此類原則可根據您指定的授權 IP 位址範圍，控制能存取您組織 SharePoint 和 OneDrive 資源的使用者。 如需詳細資訊，請參閱[根據網路位置控制 SharePoint Online 與 OneDrive 資料的存取權](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f)。|
+|已變更網路存取原則|NetworkAccessPolicyChanged|SharePoint 或全域系統管理員已在 SharePoint 系統管理員中心中 (或是使用 SharePoint Online PowerShell) 變更位置存取原則 (又稱為受信任的網路邊界)。 此類原則可根據您指定的授權 IP 位址範圍，控制能存取您組織 SharePoint 和 OneDrive 資源的使用者。 如需詳細資訊，請參閱[根據網路位置控制 SharePoint Online 與 OneDrive 資料的存取權](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)。|
 |已完成網站的地理位置移動|SiteGeoMoveCompleted|已成功完成您組織全域系統管理員所排程的網站地理位置移動。 多地理位置功能可讓組織橫跨多個 Microsoft 資料中心地理位置，這些地理位置稱為 geos。 如需詳細資訊，請參閱 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
 |已建立 [傳送至] 連線|SendToConnectionAdded|SharePoint 或全域系統管理員在 SharePoint 系統管理員中心的 [記錄] 管理頁面上建立新的「傳送至」連線。 [傳送至] 連線會指定文件存放庫或記錄中心的設定。 當您建立 [傳送至] 連線時，[內容組合管理] 可提交文件至指定的位置。|
 |已建立網站集合|SiteCollectionCreated|SharePoint 或全域系統管理員在您的 SharePoint Online 組織中建立了網站集合，或是使用者佈建了商務用 OneDrive 網站。|
@@ -599,7 +599,7 @@ ms.locfileid: "44208077"
 
 ### <a name="azure-ad-group-administration-activities"></a>Azure AD 群組管理活動
 
-下表列出當系統管理員或使用者建立或變更 Microsoft 365 群組時，或當系統管理員透過 Microsoft 365 系統管理員中心或 Azure 管理入口網站建立安全性群組時，會記錄的群組管理活動。 如需有關 Office 365 中的群組詳細資訊，請參閱[檢視、建立及刪除 Microsoft 365 系統管理員中心的群組](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7)。
+下表列出當系統管理員或使用者建立或變更 Microsoft 365 群組時，或當系統管理員透過 Microsoft 365 系統管理員中心或 Azure 管理入口網站建立安全性群組時，會記錄的群組管理活動。 如需有關 Office 365 中的群組詳細資訊，請參閱[檢視、建立及刪除 Microsoft 365 系統管理員中心的群組](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
@@ -734,9 +734,9 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 
 下表列出稽核記錄中記錄的 Microsoft Teams 使用者和系統管理員活動。 Microsoft Teams 是 Office 365 中以聊天方式為主的工作區。 它能將小組的交談、會議、檔案及筆記存放在同一個位置。 如需詳細資訊以及說明主題的連結，請參閱：
 
-- [Microsoft Teams 的常見問題集 - 系統管理員說明](https://support.office.com/article/05cbe533-2181-4e95-a4b0-52cd7695fafc)
+- [Microsoft Teams 的常見問題集 - 系統管理員說明](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
 
-- [Microsoft Teams 說明](https://support.office.com/article/23156c0c-2c6e-49dd-8b7b-7c564b76508c)
+- [Microsoft Teams 說明](https://support.office.com/teams)
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
@@ -746,7 +746,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 |已新增成員|MemberAdded|小組擁有者將成員新增至小組、頻道或群組聊天。|
 |已新增索引標籤|TabAdded|使用者在頻道中新增索引標籤。|
 |已變更的頻道設定|ChannelSettingChanged|小組成員執行下列活動時會記錄 ChannelSettingChanged 作業。 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>* 變更小組頻道名稱 (**頻道名稱**)。 <br/><br/>* 變更小組頻道描述 (**頻道描述**)。|
-|已變更的組織設定|TeamsTenantSettingChanged|當全域系統管理員 (使用 Microsoft 365 系統管理員中心) 執行下列活動時，系統會將 TeamsTenantSettingChanged 作業記錄下來；請注意，這些活動會影響整個組織的 Microsoft Teams 設定。 如需詳細資訊，請參閱 [Microsoft Teams 的系統管理員設定](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2)。 <br/> 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>* 啟用或停用組織的 Microsoft Teams (**Microsoft Teams**)。 <br/><br/>* 啟用或停用組織中 Microsoft Teams 與商務用 Skype 之間的互通性 (**商務用 Skype 互通性**)。 <br/><br/>* 啟用或停用 Microsoft Teams 用戶端的組織圖檢視 (組織圖檢視**)。<br/><br/>* 啟用或停用小組成員排程私人會議的功能 (**私人會議排程**)。<br/><br/>* 啟用或停用小組成員排程頻道會議的功能 (頻道會議排程**)。<br/><br/>* 啟用或停用 Teams 會議中的視訊通話 (Skype 視訊會議**)。<br/><br/>* 啟用或停用組織中 Microsoft Teams 會議中的螢幕共用 (**Skype 會議的螢幕共用**)。 <br/><br/>* 啟用或停用將動畫影像 (稱為 Giphy) 新增至 Teams 交談的功能 (動畫影像**)。<br/><br/>* 變更組織的內容分級設定 (**內容分級**)。內容分級會限制交談中可以顯示的動畫影像類型。<br/><br/>* 啟用或停用小組成員將自訂影像 (稱為自訂 Meme) 從網際網路新增至小組交談的功能 (來自網際網路的自訂影像**)。<br/><br/>* 啟用或停用小組成員將可編輯影像 (稱為 Sticker) 新增至小組交談的功能 (**可編輯的影像**)。<br/><br/>* 啟用或停用小組成員可在 Microsoft Teams 聊天和頻道中使用 Bot 的功能 (整個組織中的 Bot**)。<br/><br/>* 啟用 Microsoft Teams 的特定 Bot。這不包括 T-Bot，也就是當組織啟用 Bot 功能時可用的 Teams 說明 Bot (**個人 Bot**)。<br/><br/>* 啟用或停用小組成員新增擴充功能或分頁的能 (**擴充功能或分頁**)。 <br/><br/>* 啟用或停用 Microsoft Teams 專屬 Bot 的側載功能 (**Bot 側載**)。 <br/><br/>* 啟用或停用使用者傳送電子郵件至 Microsoft Teams 頻道的功能 (**頻道電子郵件**)。|
+|已變更的組織設定|TeamsTenantSettingChanged|當全域系統管理員 (使用 Microsoft 365 系統管理員中心) 執行下列活動時，系統會將 TeamsTenantSettingChanged 作業記錄下來；請注意，這些活動會影響整個組織的 Microsoft Teams 設定。 如需詳細資訊，請參閱 [Microsoft Teams 的系統管理員設定](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)。 <br/> 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>* 啟用或停用組織的 Microsoft Teams (**Microsoft Teams**)。 <br/><br/>* 啟用或停用組織中 Microsoft Teams 與商務用 Skype 之間的互通性 (**商務用 Skype 互通性**)。 <br/><br/>* 啟用或停用 Microsoft Teams 用戶端的組織圖檢視 (組織圖檢視**)。<br/><br/>* 啟用或停用小組成員排程私人會議的功能 (**私人會議排程**)。<br/><br/>* 啟用或停用小組成員排程頻道會議的功能 (頻道會議排程**)。<br/><br/>* 啟用或停用 Teams 會議中的視訊通話 (Skype 視訊會議**)。<br/><br/>* 啟用或停用組織中 Microsoft Teams 會議中的螢幕共用 (**Skype 會議的螢幕共用**)。 <br/><br/>* 啟用或停用將動畫影像 (稱為 Giphy) 新增至 Teams 交談的功能 (動畫影像**)。<br/><br/>* 變更組織的內容分級設定 (**內容分級**)。內容分級會限制交談中可以顯示的動畫影像類型。<br/><br/>* 啟用或停用小組成員將自訂影像 (稱為自訂 Meme) 從網際網路新增至小組交談的功能 (來自網際網路的自訂影像**)。<br/><br/>* 啟用或停用小組成員將可編輯影像 (稱為 Sticker) 新增至小組交談的功能 (**可編輯的影像**)。<br/><br/>* 啟用或停用小組成員可在 Microsoft Teams 聊天和頻道中使用 Bot 的功能 (整個組織中的 Bot**)。<br/><br/>* 啟用 Microsoft Teams 的特定 Bot。這不包括 T-Bot，也就是當組織啟用 Bot 功能時可用的 Teams 說明 Bot (**個人 Bot**)。<br/><br/>* 啟用或停用小組成員新增擴充功能或分頁的能 (**擴充功能或分頁**)。 <br/><br/>* 啟用或停用 Microsoft Teams 專屬 Bot 的側載功能 (**Bot 側載**)。 <br/><br/>* 啟用或停用使用者傳送電子郵件至 Microsoft Teams 頻道的功能 (**頻道電子郵件**)。|
 |小組中已變更的成員角色|MemberRoleChanged|小組擁有者在小組中變更成員角色。 下列值指出已指派使用者的角色類型。 <br/><br/> **1** - 代表「擁有者」角色。<br/>**2** - 代表「成員」角色。 <br/>**3** - 代表「來賓」角色。 <br/><br/> 成員屬性也會包含貴組織名稱與成員的電子郵件。|
 |已變更的小組設定|TeamSettingChanged|小組擁有者執行下列活動時會記錄 TeamSettingChanged 作業。 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>* 變更小組存取類型。 您可以將小組設定為 [私人] 或 [公開] (**小組存取類型**)。 當小組設為私人時 (此為預設設定)，使用者僅能透過受邀的方式存取該小組。 當小組設為公開時，任何人都可以找到該小組。 <br/><br/>* 變更小組的資訊分類 (**小組分類**)。 <br/> 例如，小組資料可以分類為高業務衝擊、中業務衝擊或低業務衝擊。<br/><br/>* 變更小組名稱 (**小組名稱**)。 <br/><br/>* 變更小組描述 (小組描述**)。<br/><br/>* 對小組設定所做的任何變更。 小組擁有者只要以滑鼠右鍵按一下按一下所需小組，然後依序按一下 [管理小組]**** 和 [設定]**** 索引標籤，就能在 Teams 用戶端中存取這些設定。稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動顯示所變更設定的名稱。|
 |已建立小組|TeamCreated|使用者建立小組。|

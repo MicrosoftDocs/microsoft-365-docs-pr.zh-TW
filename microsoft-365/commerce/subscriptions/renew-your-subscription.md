@@ -1,5 +1,5 @@
 ---
-title: 更新 Microsoft 365 for business
+title: 續約商務用 Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -8,7 +8,7 @@ manager: mnirkhe
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,90 +23,90 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: '瞭解如何使用產品金鑰來更新 Microsoft 365 的商務版訂閱，以及如何關閉或開啟定期計費。 '
-ms.openlocfilehash: 7bcd0fcc9d3984589ff7c05ec2c1b95afad22c29
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
-ms.translationtype: MT
+description: '了解如何使用產品金鑰續約您的商務用 Microsoft 365 訂閱，並開啟或關閉週期性計費。 '
+ms.openlocfilehash: 992a3c2cb100f9153cae5cbd681f6f789a361935
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141075"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208425"
 ---
-# <a name="renew-microsoft-365-for-business"></a>更新 Microsoft 365 for business
+# <a name="renew-microsoft-365-for-business"></a>續約商務用 Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
-本文適用于大部分付費的 Microsoft 365 for business 訂閱。
+本文僅適用於大部分的付費商務用 Microsoft 365 訂閱。
   
-若要使用您從零售商店或 Microsoft 合作夥伴購買的產品金鑰來更新，請參閱[尋找並輸入您的產品金鑰](../enter-your-product-key.md)。
+若要使用從零售商店或 Microsoft 合作夥伴購買的產品金鑰續約，請參閱[尋找及輸入您的產品金鑰](../enter-your-product-key.md) (部分機器翻譯)。
 
 > [!NOTE]
-> 在某些國家或地區無法使用銀行帳戶付款。
+> 部分國家或地區不適用以銀行帳戶付款。
   
-## <a name="turn-recurring-billing-off-or-on"></a>關閉或開啟定期帳單
+## <a name="turn-recurring-billing-off-or-on"></a>關閉或開啟週期性計費
 
-如果您是以信用卡或銀行帳戶付款，系統會根據預設開啟**定期計費**。 當**定期計費**開啟時，您的訂閱將在您訂閱的當日每年繼續計費。 如果您的訂閱是作用中的，您可以在系統管理中心關閉或重新開啟。
+如果您是以信用卡或銀行帳戶付款，**[週期性計費]** 預設為開啟。 當 **[週期性計費]** 開啟時，您的訂閱會在每年的訂閱日期繼續計費。 如果您的訂閱有效，您可以在系統管理中心將它關閉或再次開啟。
   
-如果您使用產品金鑰預付訂閱，您的訂閱會在訂閱期限結束時到期。 您可以開啟**定期計費**，並提供信用卡或銀行帳戶資訊，讓您訂閱在您訂閱的當日每年繼續計費。 您也可以選擇每月支付，或在前支付全年款項。 您的初始訂閱期限到期後，才會支付您的信用卡或銀行帳戶。
+如果您使用產品金鑰來預付訂閱，您的訂閱就會隨訂閱期限結束而到期。 您可以開啟 **[週期性計費]** 並提供信用卡或銀行帳戶資訊，這樣您的訂閱會在每年的訂閱日期自動計費。 您也可以選擇每個月付款，或提前支付整年費用。 等到您的初始訂閱期限過期之後，我們才會向您的信用卡或銀行帳戶收費。
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 2. 選擇您想要管理週期性計費的訂閱。
 
-3. 在 [**帳單**] 底下的 [**續訂開啟**] 或 [**到期**日] 旁邊，選取 [**編輯**]。
+3. 在 **[帳單]** 下，於 **[更新日期]** 或 **[到期日]** 旁，選取 **[編輯]**。
 
-4. 在 [**週期性計費設定**] 窗格中，選取 [**關閉**] 以關閉該功能。 如果已關閉定期計費，請選取 [**每月**] 或 [**一次**] 開啟。
+4. 在 **[週期性計費設定]** 窗格中，選取 **[關閉]** 可將它關閉。 如果週期性帳單已關閉，選取 **[每月]** 或 **[一次]** 以將它開啟。
 
-5. 選取 [**提交變更**]。
+5. 選取 **[送出變更]**。
 
     > [!NOTE]
-    > - 您只可以變更使用中訂閱的**重複計費**設定。 如果您的訂閱已到期或已停用，您必須先將[其重新](reactivate-your-subscription.md)啟用，然後才能開啟或關閉**定期計費**。
-    > - 當**週期性記帳**關閉時，不會立即取消訂閱。 它會保持作用中直到到期為止。 您可以在 [**產品**] 頁面上，于 [訂閱詳細資料] 的 [**帳單**] 區段中查看到期日。
-    > - 若要瞭解如何立即取消訂閱，請參閱[取消我的訂閱](cancel-your-subscription.md)。
+    > - 您只能變更有效訂閱的 **[週期性計費]** 設定。 如果您的訂閱已過期或停用，您必須[重新啟用](reactivate-your-subscription.md)，才能開啟或關閉 **[週期性計費]**。
+    > - 當 **[週期性計費]** 關閉時，不會立即取消訂閱。 在到期之前，它會一直保持有效。 您可以在 **[您的產品]** 頁面上的訂閱詳細資料中，查看 **[帳單]** 區段中的到期日。
+    > - 若要了解如何立即取消訂閱，請參閱[取消訂閱](cancel-your-subscription.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
   
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
 
 2. 選擇您想要管理週期性計費的訂閱。
 
-3. 若要開啟**定期計費**，請將開啟開關切換為 [**開啟**]。
+3. 若要開啟 **[週期性帳單]**，請將開關切換到 **[開啟]**。
 
-    ![已開啟定期計費之訂閱卡的特寫。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![已開啟週期性計費的訂閱卡特寫。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
-    您可以將開關切換為 [**關閉**]，關閉**重複計費**。
+    您可以將開關切換到 **[關閉]**，關閉 **[週期性計費]**。
 
     > [!NOTE]
-    > - 您只可以變更使用中訂閱的**重複計費**設定。 如果您的訂閱已到期或已停用，您必須先將[其重新](reactivate-your-subscription.md)啟用，然後才能開啟或關閉**定期計費**。
-    > - 當**週期性記帳**關閉時，不會立即取消訂閱。 它會保持作用中直到到期為止。 您可以在訂閱卡片上查看到期日
-    > - 若要瞭解如何立即取消訂閱，請參閱[取消我的訂閱](cancel-your-subscription.md)。
+    > - 您只能變更有效訂閱的 **[週期性計費]** 設定。 如果您的訂閱已過期或停用，您必須[重新啟用](reactivate-your-subscription.md)，才能開啟或關閉 **[週期性計費]**。
+    > - 當 **[週期性計費]** 關閉時，不會立即取消訂閱。 在到期之前，它會一直保持有效。 您可以查看訂閱卡上的到期日
+    > - 若要了解如何立即取消訂閱，請參閱[取消訂閱](cancel-your-subscription.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
   
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
 
 2. 選擇您想要管理週期性計費的訂閱。
 
-3. 若要開啟**定期計費**，請將開啟開關切換為 [**開啟**]。
+3. 若要開啟 **[週期性帳單]**，請將開關切換到 **[開啟]**。
 
-    ![已開啟定期計費之訂閱卡的特寫。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![已開啟週期性計費的訂閱卡特寫。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
-    您可以將開關切換為 [**關閉**]，關閉**重複計費**。
+    您可以將開關切換到 **[關閉]**，關閉 **[週期性計費]**。
 
     > [!NOTE]
-    > - 您只可以變更使用中訂閱的**重複計費**設定。 如果您的訂閱已到期或已停用，您必須先將[其重新](reactivate-your-subscription.md)啟用，然後才能開啟或關閉**定期計費**。
-    > - 當**週期性記帳**關閉時，不會立即取消訂閱。 它會保持作用中直到到期為止。 您可以在訂閱卡片上查看到期日。
-    > - 若要瞭解如何立即取消訂閱，請參閱[取消我的訂閱](cancel-your-subscription.md)。
+    > - 您只能變更有效訂閱的 **[週期性計費]** 設定。 如果您的訂閱已過期或停用，您必須[重新啟用](reactivate-your-subscription.md)，才能開啟或關閉 **[週期性計費]**。
+    > - 當 **[週期性計費]** 關閉時，不會立即取消訂閱。 在到期之前，它會一直保持有效。 您可以查看訂閱卡上的到期日。
+    > - 若要了解如何立即取消訂閱，請參閱[取消訂閱](cancel-your-subscription.md)。
 
 ::: moniker-end
 
@@ -116,6 +116,6 @@ ms.locfileid: "44141075"
   
 [當訂閱結束時，我的資料與存取權會發生什麼情況？](what-if-my-subscription-expires.md)
 
-[輸入您的產品金鑰](../enter-your-product-key.md)
+[輸入產品金鑰](../enter-your-product-key.md)
   
-[購買 Microsoft 365 的試用版](../buy-a-subscription-from-your-free-trial.md)
+[購買商務用 Microsoft 365 試用版](../buy-a-subscription-from-your-free-trial.md)
