@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: '瞭解在不同地區，您要對 Microsoft 365 for business 訂閱收取多少稅收。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 0aeabd49477bdef856a7ddb9f3b7c39211be2479
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 7c071a29fa5cedfc12c69a6471d1321a9167106f
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045821"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232826"
 ---
 # <a name="tax-information"></a>稅務資訊
 
@@ -130,7 +130,7 @@ ms.locfileid: "44045821"
   
 1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
 
-2. 選取訂閱名稱，然後選取 [**其他動作** \> ] [**編輯加值稅號碼**]。
+2. 選取訂閱名稱，然後選取 [**其他動作**] [ \> **編輯加值稅號碼**]。
   
 3. 在 [**編輯服務使用位址**] 頁面的 [ **vat 號碼**] 方塊中，輸入您的 vat ID，然後選取 [**提交**]。
 
@@ -184,6 +184,6 @@ ms.locfileid: "44045821"
   
 ## <a name="related-articles"></a>相關文章
   
-[檢視您的帳單](view-your-bill-or-invoice.md)
+[檢視帳單](view-your-bill-or-invoice.md)
   
-[了解您的發票](understand-your-invoice.md)
+[瞭解您的帳單或發票](understand-your-invoice.md)

@@ -24,19 +24,19 @@ description: 瞭解哪些付款選項可用於商務用 Microsoft 365 訂閱。
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 613bb0fcc776b65090ee66faf6dc0516987947b2
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: a1ee158079e30348c3b1f9f26ef0b62160bf9544
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140868"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232872"
 ---
 # <a name="pay-for-your-subscription"></a>支付訂閱費用
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -107,7 +107,7 @@ ms.locfileid: "44140868"
 抱歉，如果您的訂閱設為以發票支付，就無法直接線上付款。不過，您可以[將您的付款方式改為信用卡或銀行帳戶](change-payment-method.md)，供系統在每次服務期間過後，自動從您的卡片或帳戶扣取應付金額。若您購買的是 Azure，請參閱[如何變更用來支付 Azure 訂閱的信用卡](https://go.microsoft.com/fwlink/p/?LinkId=718057)。
 
 > [!NOTE]
-> 如果您改用信用卡自動扣款來付費，請務必先支付所有未付餘額。 檢查帳單的付款選項和指示。 如需詳細資訊，請參閱[了解您的發票](understand-your-invoice2.md)。
+> 如果您改用信用卡自動扣款來付費，請務必先支付所有未付餘額。 檢查帳單的付款選項和指示。 如需詳細資訊，請參閱[瞭解您的帳單或發票](understand-your-invoice2.md)。
 
 ### <a name="where-do-i-send-my-check-or-eft-payment"></a>我要在哪裡送出我的支票或是 EFT 付款？
 
@@ -312,4 +312,4 @@ ms.locfileid: "44140868"
 
 [新增、更新或移除信用卡或銀行帳戶](add-update-or-remove-credit-card-or-bank-account.md)
 
-[了解您的發票](understand-your-invoice2.md)
+[瞭解您的帳單或發票](understand-your-invoice2.md)

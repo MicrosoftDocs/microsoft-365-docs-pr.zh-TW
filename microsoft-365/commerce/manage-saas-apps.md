@@ -13,19 +13,19 @@ ms.collection:
 - commerce
 search.appverid: MET150
 description: 瞭解如何在 Microsoft 365 系統管理中心中啟動和管理協力廠商應用程式。
-ms.openlocfilehash: eb2826a4b0c69d61eb35a9dfff37e9dc2dd6ad71
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3e6d77eec71ca1137e0aaf44b62d198d9c87b0c5
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141185"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232742"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>管理組織的協力廠商應用程式訂閱
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -51,7 +51,7 @@ ms.locfileid: "44141185"
 您可以在下列地區取得協力廠商應用程式的支援：
 
 - 阿根廷
-- 澳大利亞
+- 澳洲
 - 加拿大
 - 智利
 - 法國
@@ -67,7 +67,7 @@ ms.locfileid: "44141185"
 
 系統管理員必須先啟動協力廠商應用程式，才能將其指派給使用者。 這些應用程式會在協力廠商發行者的入口網站中啟用。
 
-1. 在系統管理中心中，移至 [**帳單** > **產品** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">應用程式</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  **產品**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">應用程式</a>] 頁面。
 2. 尋找並選取您要管理的應用程式。
 3. 在 [**設定] & 動作**] 底下，選取 **[在 publisher 的入口網站中管理]**。
 
@@ -89,7 +89,7 @@ ms.locfileid: "44141185"
 
 系統管理員必須先啟動協力廠商應用程式，再將其指派給使用者。 它們會在協力廠商發行者的入口網站中啟用。 在 [應用程式] 頁面的 [**設定] & 動作**] 底下，選取要指派授權的連結。
 
-1. 在系統管理中心中，移至 [**帳單** > **產品** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">應用程式</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  **產品**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">應用程式</a>] 頁面。
 2. 尋找並選取您要管理的應用程式。
 3. 在 [**設定 & 動作**] 底下，選取要**在 publisher 入口網站中管理**的連結。
 
@@ -97,7 +97,7 @@ ms.locfileid: "44141185"
 
 系統管理員可以變更其組織所擁有的授權數目。 這只適用于以以座位為基礎的定價所購買的應用程式。
 
-1. 在系統管理中心中，移至 [**帳單** > **產品** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">應用程式</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  **產品**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">應用程式</a>] 頁面。
 2. 尋找並選取您要管理的應用程式。
 3. 選取 [**變更授權數量**]。
 
@@ -113,16 +113,16 @@ ms.locfileid: "44141185"
 
 ### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>變更軟體即服務應用程式訂閱上的帳單設定檔
 
-1. 在系統管理中心中，移至 [**帳單** > **產品** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">應用程式</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  **產品**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">應用程式</a>] 頁面。
 2. 尋找並選取您要管理的應用程式。
 3. 選取 [**帳單設定檔**] 旁邊的 [**編輯**]。
 
-如需發票的詳細資訊，請參閱[瞭解發票](billing-and-payments/understand-your-invoice.md)。
+如需發票的詳細資訊，請參閱[瞭解您的帳單或發票](billing-and-payments/understand-your-invoice.md)。
 
 ## <a name="cancel-a-software-as-a-service-app-subscription"></a>取消軟體即服務應用程式訂閱
 
 您可以從 [應用程式] 頁面取消軟體即服務應用程式。
 
-1. 在系統管理中心中，移至 [**帳單** > **產品** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">應用程式</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  **產品**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">應用程式</a>] 頁面。
 2. 尋找並選取您要管理的應用程式。
 3. 在 [**設定] & 動作**] 下，選取 [**取消訂閱**]。

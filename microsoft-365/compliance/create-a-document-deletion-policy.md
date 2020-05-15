@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: 基於規範、法律或其他規定，組織通常必須將文件保留一段時間。但是，將文件保留超過要求時間，可能會讓組織暴露在法律風險下。
-ms.openlocfilehash: 5550f65e5b2ecb5dca775e1d851548913b8e8517
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 065cb3c278a4c859c46d7d1c13c1f1160822337b
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632258"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232108"
 ---
 # <a name="create-a-document-deletion-policy"></a>建立文件刪除原則
 
 > [!IMPORTANT]
-> 向前移動，我們建議您使用保留原則或在 Microsoft 365 規範中心、Microsoft 365 安全性中心或安全性&amp;與合規性中心建立的保留標籤，而不是檔刪除原則。 文件刪除原則會繼續與保留原則並行，但是如果您需要保留或刪除 Office 365 中任何地方的內容，我們建議您使用保留原則。 如需詳細資訊，請參閱[使用保留原則，而不是這些功能](retention-policies.md#use-a-retention-policy-instead-of-these-features)。 
+> 向前移動，我們建議您從 Microsoft 365 規範中心使用保留原則，而不是檔刪除原則。 檔刪除原則將繼續以保留原則為依據，但如果您需要保留或刪除 Office 365 中的任何地方，建議您使用保留原則或保留標籤。 如需詳細資訊，請參閱[使用保留原則而非舊版功能](retention-policies.md#use-a-retention-policy-instead-of-older-features)。
   
 基於規範、法律或其他規定，組織通常必須將文件保留一段時間。但是，將文件保留超過要求時間，可能會讓組織暴露在法律風險下。
   

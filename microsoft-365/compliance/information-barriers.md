@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用資訊障礙，以確保您的組織內的 Microsoft 小組能夠進行通訊法規遵從性。
-ms.openlocfilehash: c4b4b31de90e8c72c346da5574b8854492de19ba
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 341c4f54ac48cbebd17b8d9ded267091f098dcbd
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44047994"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232006"
 ---
 # <a name="information-barriers"></a>資訊屏障
 
@@ -65,7 +65,7 @@ Microsoft 雲端服務包含強大的通訊和協同作業功能。 不過，假
 - Microsoft 365 E5
 - Office 365 E5
 - Office 365 進階合規性
-- Microsoft 365 E5 資訊保護和合規性
+- Microsoft 365 規範 E5
 
 如需詳細資訊，請參閱[規範解決方案](https://products.office.com/business/security-and-compliance/compliance-solutions)。
 

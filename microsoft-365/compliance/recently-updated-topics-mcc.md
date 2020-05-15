@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: 就像 Microsoft 365 規範中心的功能一樣，我們的說明內容永遠都在發展中。 我們會持續建立新的文章、更新現有的文章，並根據您的意見反應進行變更。 瞭解本月新增及更新的功能。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6995413d6bbd068ac5e126351dc1a8fb761a0934
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.openlocfilehash: 750165aab3612e3edb6a56f69eebf0778e141fde
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221417"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231896"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 規範內容的最近更新
 
@@ -38,7 +38,7 @@ ms.locfileid: "44221417"
 
 [使用高級審計調查已遭破壞的帳戶](mailitemsaccessed-forensics-investigations.md)（新增）<br>有關使用新的*MailItemsAccessed*信箱審核動作進行鑒證調查的新指導方針。
 
-[搜尋審核記錄的](search-the-audit-log-in-security-and-compliance.md)多個更新，包括：
+[搜尋審計記錄](search-the-audit-log-in-security-and-compliance.md)檔（更新）<br>變更包括：
 - 包含審核記錄中所列 ' app@sharepoint ' 使用者詳細資料的[新章節](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)。
 - [新](search-the-audit-log-in-security-and-compliance.md#quarantine-activities)的隔離活動描述。
 - 在 [[使用者管理] 活動](search-the-audit-log-in-security-and-compliance.md#user-administration-activities)區段中，闡明當使用者變更自己的密碼（透過自助式密碼重設）時，會觸發「變更使用者密碼事件」，當系統管理員重設使用者的密碼時，就會觸發「重設使用者密碼」事件。
@@ -71,7 +71,7 @@ ms.locfileid: "44221417"
 
 [資料遺失防護](data-loss-prevention-policies.md)（更新）綜述<br>更新保留標籤生效所需的時間，以及未設定警示的預設行為原則。
 
-### <a name="ediscovery"></a>eDiscovery
+### <a name="ediscovery"></a>電子文件探索
 
 [開始使用高級 eDiscovery](get-started-with-advanced-ediscovery.md) （新增）<br>提供授權和許可權需求的相關資訊、設定全域設定的步驟，以及建立新的案例，以及高級 eDiscovery 工作流程的逐步解說。
 
@@ -147,7 +147,7 @@ ms.locfileid: "44221417"
 ## <a name="february-2020"></a>2020 年 2 月
 
 > [!NOTE]
-> 上個月所列的文章可能已更新、移動或刪除。 因此，下列部分詳細資料可能會過時，而且可能會中斷連結。
+> 上個月所列的文章可能會因為更新、移動或刪除。 因此，下列部分詳細資料可能會過時，而且可能會中斷連結。
 
 ### <a name="auditing"></a>稽核
 

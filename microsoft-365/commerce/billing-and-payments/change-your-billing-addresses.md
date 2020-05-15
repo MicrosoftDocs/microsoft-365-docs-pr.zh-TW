@@ -23,19 +23,19 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: 瞭解如何更新 Microsoft 365 for business 的帳單位址。 您也可以更新用來接收帳單通知的電子郵件地址。
 ms.custom: okr_SMB
-ms.openlocfilehash: 09f4ef95c9f8ab3dcce3b3a2511c5e407539020e
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 87a9540218f7ef4bef48154930b62bddab7b54e8
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140920"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232884"
 ---
 # <a name="change-your-billing-addresses"></a>變更帳單地址
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -51,13 +51,13 @@ ms.locfileid: "44140920"
   
 ::: moniker range="o365-worldwide"
 
-若要深入瞭解您的帳單或發票，請參閱[查看您的帳單或發票](view-your-bill-or-invoice.md)，並[瞭解您的發票](understand-your-invoice2.md)。
+若要深入瞭解您的帳單或發票，請參閱[查看您](view-your-bill-or-invoice.md)的帳單或發票，並[瞭解您的帳單或發票](understand-your-invoice2.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-若要深入瞭解您的帳單或發票，請參閱[查看您的帳單或發票](view-your-bill-or-invoice.md)，並[瞭解您的發票](understand-your-invoice2.md)。
+若要深入瞭解您的帳單或發票，請參閱[查看您的帳單或發票](view-your-bill-or-invoice.md)，並[瞭解您的帳單 orinvoice](understand-your-invoice2.md)。
 
 ::: moniker-end
 
@@ -192,7 +192,7 @@ ms.locfileid: "44140920"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心，移至 [**帳單** \> ] [帳單<a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">通知</a>] 頁面。
+1. 在系統管理中心，移至 [**帳單**] [帳單 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">通知</a>] 頁面。
 
 ::: moniker-end
 
@@ -204,7 +204,7 @@ ms.locfileid: "44140920"
 
 [檢視帳單](view-your-bill-or-invoice.md)
 
-[了解您的帳單](understand-your-invoice2.md)
+[瞭解您的帳單或發票](understand-your-invoice2.md)
 
 [支付您的訂閱](pay-for-your-subscription.md)
 

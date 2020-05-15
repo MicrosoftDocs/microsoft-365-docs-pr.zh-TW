@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
 description: '尋找適用于商務用 Microsoft 365 訂閱的最重要帳單問題的答案。 '
-ms.openlocfilehash: 3a75f9a754bf4f983ac0aca02b380e55d80be4b9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d5b705c8c283103c09dc13dd13b853ffb3b270b
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634989"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232802"
 ---
 # <a name="top-billing-questions-for-microsoft-365-for-business"></a>適用于商務用 Microsoft 365 的主要帳單問題
 
@@ -40,13 +40,13 @@ ms.locfileid: "43634989"
   
 ::: moniker range="o365-worldwide"
 
-如果您需要協助解釋您在帳單上看到的費用或瞭解所使用的條款，請參閱[瞭解您的發票](understand-your-invoice2.md)。
+如果您需要協助解釋您在帳單上看到的費用或瞭解所使用的條款，請參閱[瞭解您的帳單或發票](understand-your-invoice2.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-如果您需要協助解釋您在帳單上看到的費用或瞭解所使用的條款，請參閱[瞭解您的發票](understand-your-invoice2.md)。
+如果您需要協助解釋您在帳單上看到的費用或瞭解所使用的條款，請參閱[瞭解您的帳單或發票](understand-your-invoice2.md)。
 
 ::: moniker-end
 
@@ -120,7 +120,7 @@ ms.locfileid: "43634989"
 
 是。 若要以電子郵件附件形式取得帳單表述，請使用下列步驟：
   
-1. 在 Microsoft 365 系統管理中心中，移至<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">帳單通知</a>頁面，或選取 [**帳單** \> ] [帳單**通知**]。
+1. 在 Microsoft 365 系統管理中心中，移至<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">帳單通知</a>頁面，或選取 [**帳單**] [帳單 \> **通知**]。
 
 2. 在 [是否要以電子郵件附件形式接收對帳單?]**** 底下，將開關切換為 [開啟]****。
 

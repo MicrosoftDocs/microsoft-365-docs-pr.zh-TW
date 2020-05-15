@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: 瞭解如何在 Microsoft 小組中定義資訊障礙的原則。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c81fedddf5e3553ec4b24353fac43079305c5b2
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 41d56927f3f9c22782b10640330ca9d0167402d2
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035039"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232049"
 ---
 # <a name="define-information-barrier-policies"></a>定義資訊屏障原則
 
@@ -72,7 +72,7 @@ ms.locfileid: "44035039"
 
 - 無通訊錄原則-在您定義及套用資訊屏障原則之前，請確定沒有任何 Exchange 通訊錄原則存在到位。 資訊障礙是以通訊錄原則為基礎，但這兩種原則不相容。 如果您有這類原則，請務必先[移除您的通訊錄原則](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)。 一旦資訊障礙原則已啟用，且已啟用階層式通訊錄，所有***未包含***在資訊屏障區段中的使用者，都會在 Exchange online 中看到[階層式通訊錄](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books)。
 
-- 目前 PowerShell 中，資訊屏障原則是在 Office 365 安全性 & 規範中心使用 PowerShell Cmdlet 來定義及管理。 雖然本文提供了數個範例，但您需要熟悉 PowerShell Cmdlet 及參數。 您也會需要 AzureRM 模組。
+- 目前 PowerShell 中，資訊屏障原則是在 Office 365 安全性 & 規範中心使用 PowerShell Cmdlet 來定義及管理。 雖然本文提供了數個範例，但您需要熟悉 PowerShell Cmdlet 及參數。 您也會需要 Azure PowerShell 模組。
     - [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [安裝 Azure PowerShell 模組](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
@@ -81,10 +81,10 @@ ms.locfileid: "44035039"
    1. 執行下列 PowerShell Cmdlet：
 
       ```powershell
-      Login-AzureRmAccount 
+      Login-AzAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-      $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
-      if ($sp -eq $null) { New-AzureRmADServicePrincipal -ApplicationId $appId }
+      $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
+      if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
@@ -213,13 +213,13 @@ ms.locfileid: "44035039"
 
     |語法  |範例  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR" -State Inactive` <p>    在此範例中，我們為稱為「*製造*」的區段定義稱為「*製造業-HR* 」的原則。 使用中並套用此原則時，可讓*製造業*中的人員只與稱為*HR*的區段中的人員進行通訊。 （在此情況下，*製造*無法與不屬於*HR*的使用者進行通訊。）         |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>    在此範例中，我們為稱為「*製造*」的區段定義稱為「*製造業-HR* 」的原則。 使用中並套用此原則時，可讓*製造業*中的人員只與稱為*HR*的區段中的人員進行通訊。 （在此情況下，*製造*無法與不屬於*HR*的使用者進行通訊。）         |
 
     **如有需要，您可以使用此 Cmdlet 來指定多個區段，如下列範例所示。**
 
     |語法  |範例  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>在此範例中，我們定義了一個原則，可讓*調查*區段只與*HR*和*製造業*通訊。        |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name","segment1name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing","Research" -State Inactive` <p>在此範例中，我們定義了一個原則，可讓*調查*區段只與*HR*和*製造業*通訊。        |
 
     針對您要定義的每個原則重複此步驟，以允許特定的區段只與特定的特定區段進行通訊。
 
@@ -248,7 +248,7 @@ ms.locfileid: "44035039"
 
     語法：`Start-InformationBarrierPoliciesApplication`
 
-    在您執行`Start-InformationBarrierPoliciesApplication`允許30分鐘之後，系統才開始套用原則。 系統會將原則使用者套用至使用者。 一般系統處理每小時大約5000的使用者帳戶。
+    在您執行 `Start-InformationBarrierPoliciesApplication` 允許30分鐘之後，系統才開始套用原則。 系統會將原則使用者套用至使用者。 一般系統處理每小時大約5000的使用者帳戶。
 
 ## <a name="view-status-of-user-accounts-segments-policies-or-policy-application"></a>查看使用者帳戶、區段、原則或原則應用程式的狀態
 
@@ -256,7 +256,7 @@ ms.locfileid: "44035039"
 
 |若要查看此  |執行此動作  |
 |---------|---------|
-|使用者帳戶     |使用具有 Identity 參數的**InformationBarrierRecipientStatus** Cmdlet。 <p>語法：`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>您可以使用唯一識別每個使用者的任何值，例如名稱、別名、辨別名稱、正常化功能變數名稱、電子郵件地址或 GUID。 <p>範例： `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>在此範例中，我們會參考 Office 365 中的兩個使用者帳戶： *meganb* for *Megan*和*alexw* for *Alex*。 <p>（您也可以將此 Cmdlet 用於單一使用者： `Get-InformationBarrierRecipientStatus -Identity <value>`） <p>此 Cmdlet 會傳回使用者的相關資訊，例如屬性值以及所套用的任何資訊屏障原則。|
+|使用者帳戶     |使用具有 Identity 參數的**InformationBarrierRecipientStatus** Cmdlet。 <p>語法：`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>您可以使用唯一識別每個使用者的任何值，例如名稱、別名、辨別名稱、正常化功能變數名稱、電子郵件地址或 GUID。 <p>範例： `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>在此範例中，我們會參考 Office 365 中的兩個使用者帳戶： *meganb* for *Megan*和*alexw* for *Alex*。 <p>（您也可以將此 Cmdlet 用於單一使用者： `Get-InformationBarrierRecipientStatus -Identity <value>` ） <p>此 Cmdlet 會傳回使用者的相關資訊，例如屬性值以及所套用的任何資訊屏障原則。|
 |段     |使用**OrganizationSegment** Cmdlet。<p>語法：`Get-OrganizationSegment` <p>這會顯示針對您組織所定義的所有區段清單。         |
 |資訊屏障原則     |使用**InformationBarrierPolicy** Cmdlet。 <p> 語法：`Get-InformationBarrierPolicy` <p>這會顯示已定義的資訊屏障原則清單，及其狀態。       |
 |最新的資訊屏障原則應用程式     | 使用**InformationBarrierPoliciesApplicationStatus** Cmdlet。 <p>語法：`Get-InformationBarrierPoliciesApplicationStatus`<p>    這會顯示原則應用程式已完成、失敗或進行中的相關資訊。       |
@@ -321,7 +321,7 @@ Contoso 定義三個原則，如下表所述：
 |---------|---------|
 |原則1：防止銷售人員與調查進行通訊     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> 在此範例中，資訊屏障原則稱為「*銷售-調研*」。 當您使用並套用此原則時，會協助避免銷售資料段中的使用者與研究資料段中的使用者進行通訊。 這是單向原則;它不會防止「調查」與銷售進行通訊。 針對此，需要原則2。      |
 |原則2：防止調查與銷售通訊     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> 在此範例中，資訊屏障原則稱為「*調研-銷售*」。 當您使用並套用此原則時，它會協助避免使用調查區段中的使用者與銷售部門中的使用者進行通訊。       |
-|原則3：允許製造業只與 HR 和 Marketing 通訊     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing" -State Inactive` <p>在此情況下，資訊屏障原則稱為「*製造-HRMarketing*。 當您使用並套用此原則時，製造只能與 HR 和 Marketing 進行通訊。 請注意，HR 和 Marketing 不會受到限制，無法與其他的區段進行通訊。 |
+|原則3：允許製造業只與 HR 和 Marketing 通訊     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p>在此情況下，資訊屏障原則稱為「*製造-HRMarketing*。 當您使用並套用此原則時，製造只能與 HR 和 Marketing 進行通訊。 請注意，HR 和 Marketing 不會受到限制，無法與其他的區段進行通訊。 |
 
 在定義的區段和原則中，Contoso 會執行**InformationBarrierPoliciesApplication** Cmdlet 來套用原則。 
 

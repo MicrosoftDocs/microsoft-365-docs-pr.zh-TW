@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 瞭解如何識別可放在 Microsoft 365 信箱上的不同保留類型。 這些保留類型包括訴訟暫止、eDiscovery 保留及 Microsoft 365 保留原則。 您也可以判斷使用者是否已從整個組織的保留原則中排除。
-ms.openlocfilehash: 594b8550cdd418af9551c732b78091817da7bfc3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 12d91d987af2ba11b2d9aa417dff92adb745fb03
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208664"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232068"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何找出位於 Exchange Online 信箱的保留類型
 
@@ -41,7 +41,8 @@ Microsoft 365 提供數種方式，讓您的組織可以防止信箱內容遭到
     - **特定位置保留原則：** 這些是指派給特定使用者之內容位置的原則。 您可以在 Exchange Online PowerShell 中使用**Get-Mailbox** Cmdlet，以取得指派給特定信箱之保留原則的相關資訊。
 
     - **整個組織保留原則：** 這些是指派給組織中所有內容位置的原則。 您可以在 Exchange Online PowerShell 中使用**Get-OrganizationConfig** Cmdlet，以取得整個組織保留原則的資訊。
-  如需詳細資訊，請參閱[Microsoft 365 保留原則](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)中的「將保留原則套用至整個組織或特定位置」一節。
+    
+  如需詳細資訊，請參閱[將保留原則套用至整個組織或特定位置](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)區段。
 
 - **[Microsoft 365 保留標籤](labels.md)：** 如果使用者將 Microsoft 365 保留標籤（已設定為保留內容或保留，然後刪除內容）套用至其信箱中的*任何*資料夾或專案，則會在信箱上保留信箱，就像該信箱已處於訴訟暫止狀態或指派給 Microsoft 365 保留原則一樣。 如需詳細資訊，請參閱「保留中的信箱」，[因為保留標籤已套用至本文中的資料夾或專案](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item)一節。
 
@@ -97,7 +98,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 |適用于 Exchange 信箱、Exchange 公用資料夾和團隊聊天的 Microsoft 365 保留原則    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   套用至 Exchange 信箱、Exchange 公用資料夾和1xN 聊天室的組織內的保留原則，都是由以前置詞開頭的 Guid 來識別 `mbx` 。 附注1xN 聊天會儲存在個別聊天參與者的信箱中。      |
 |套用至 Microsoft 365 群組和團隊通道郵件的 microsoft 365 保留原則     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    在 Microsoft 小組中套用至 Microsoft 365 群組和通道郵件的全組織保留原則，會由以前置詞開頭的 Guid 來識別 `grp` 。 附注通道郵件會儲存在與 Microsoft 小組相關聯的群組信箱中。     |
 
-如需適用于 Microsoft 小組的詳細資訊保留原則，請參閱[保留原則](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)的「小組位置」一節。
+如需適用于 Microsoft 小組的詳細資訊保留原則，請參閱[保留原則](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)的「小組位置」一節。
 
 ### <a name="understanding-the-format-of-the-inplaceholds-value-for-retention-policies"></a>瞭解保留原則的 InPlaceHolds 值格式
 
@@ -117,7 +118,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 |**第**    |    表示保留原則設定為保留專案。 原則不會在保留期間到期之後刪除專案。     |
 |**個**     |   表示保留原則已設定為保留專案，然後在保留期間到期時加以刪除。      |
 
-如需有關保留動作的詳細資訊，請參閱[保留原則](retention-policies.md#retaining-content-for-a-specific-period-of-time)一節中的「在特定時段保留內容」一節。
+如需有關保留動作的詳細資訊，請參閱[保留原則](create-retention-policies.md#retaining-content-for-a-specific-period-of-time)一節中的「在特定時段保留內容」一節。
    
 ## <a name="step-2-use-the-guid-to-identify-the-hold"></a>步驟2：使用 GUID 識別保留
 
@@ -200,7 +201,7 @@ Get-Mailbox <username> | FL *HoldApplied*
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-或
+或者
  
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -214,7 +215,7 @@ Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
-或
+或者
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied

@@ -1,5 +1,5 @@
 ---
-title: 瞭解適用于商務用 Microsoft 365 的發票
+title: 瞭解適用于商務用 Microsoft 365 的帳單或發票
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,15 +23,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: 瞭解如何轉譯您的 Microsoft 365 商務發票上的費用、帳單和付款資訊，以及如何變更採購訂單編號。
-ms.openlocfilehash: 5cb2f961fa11f25e160ddd978783c7744776307e
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+description: 瞭解如何轉譯您的 Microsoft 365 for business 帳單或發票上的費用、帳單和付款資訊，以及如何變更採購訂單編號。
+ms.openlocfilehash: bd0204deb34d1fe08ec6391c24df5ab6fe6cc6d6
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045809"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232790"
 ---
-# <a name="understand-your-invoice-for-microsoft-365-for-business"></a>瞭解適用于商務用 Microsoft 365 的發票
+# <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>瞭解適用于商務用 Microsoft 365 的帳單或發票
 
 每月您都會收到一封電子郵件，告訴您您的新帳單報表可在系統管理中心中取得。 [瞭解如何尋找及查看您的帳單或發票](view-your-bill-or-invoice.md)。
   
@@ -73,7 +73,7 @@ ms.locfileid: "44045809"
 |帳單|這是您帳單部門的位址，通常與「銷售者」位址相同。 若要更新您的帳單位址，請參閱[變更您的帳單位址](change-your-billing-addresses.md)。|
 |收費|發票的第1頁摘要列出發票計費期間的所有費用。 第2頁顯示每個訂閱的詳細費用。|
 |檢查|如果您是在您的國家/地區提供發票和支票付款，則第1頁的底部會包含有關寄送付款的位置資訊。 請參考支票上的發票編號。|
-|製作群|您的發票第1頁會匯總發票計費期間的所有貸方。 第2頁顯示每個訂閱的詳細點數。|
+|參與名單|您的發票第1頁會匯總發票計費期間的所有貸方。 第2頁顯示每個訂閱的詳細點數。|
 |客戶 PO 編號|您的採購單（PO）編號。 如果您更新 PO 號碼，則未來的發票會包含它。 [變更您的採購訂單編號](#change-your-purchase-order-number)。 <br/> **記事**您無法將 PO 號碼新增至現有的發票。           |
 |天|每個帳單交易都與一個服務期間相關聯。 [天數] 欄位會指出服務週期中的天數。|
 |折扣|您的發票第1頁摘要發票計費期間的所有折扣。 第2頁顯示每個訂閱的詳細折扣。|
