@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 您的遠端工作者必須使用多重要素驗證 (MFA) 來登入。
-ms.openlocfilehash: 2cb16c78f7fb0b1f9f48559c61a6200d6adcf470
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a0350be5cf75024fbefadb21ae56017bf64ca0d8
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166134"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213469"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>步驟 1： 使用 MFA 提升遠端工作者的登入安全性
 
@@ -55,9 +55,9 @@ Microsoft 強烈建議包括遠端工作者 (特別是系統管理員) 在內的
 
 條件式存取原則是一組規則，可指定要在什麼條件下評估和允許登入。 例如，您可以建立敘述如下的條件式存取原則：
 
-- 如果使用者帳戶名稱適用於 Exchange、使用者、密碼、安全性、SharePoint 或全域系統管理員，則先要求 MFA 再允許存取。
+- 如果使用者帳戶名稱是獲派 Exchange、使用者、密碼、安全性、SharePoint 或全域管理員角色的使用者群組成員，則先要求 MFA 再允許存取。
 
-比起試著記得在這些系統管理員角色中新增或移除個別使用者帳戶時為其設定 MFA，此原則容易得多。
+此原則可讓您根據群組成員資格要求 MFA，而不是在指派或取消指派這些管理員角色時，嘗試針對 MFA 設定個別使用者帳戶。
 
 您也可以使用條件式存取原則來執行更進階的功能，例如要求登入必須是來自符合規範的裝置 (例如執行 Windows 10 的膝上型電腦)。
 
@@ -65,15 +65,15 @@ Microsoft 強烈建議包括遠端工作者 (特別是系統管理員) 在內的
 
 如需詳細資訊，請參閱這個[條件式存取概觀](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。
 
-## <a name="azure-ad-identity-protection-policies"></a>Azure AD Identity Protection 原則
+## <a name="azure-ad-identity-protection-support"></a>Azure AD Identity Protection 支援
 
-Azure AD Identity Protection 原則是可指定要在什麼條件下評估和允許登入的規則。 例如，您可以建立敘述如下的 Azure AD Identity Protection 原則：
+使用 Azure AD Identity Protection，您可建立敘述如下的額外條件式存取原則：
 
-- 如果經判斷登入風險屬於中或高風險時，使用者必須使用 MFA 才能登入。
+- 如果經判斷登入風險屬於中或高風險，則要求 MFA。
 
 Azure AD Identity Protection 需要 Azure AD Premium P2，此方案隨附於 Microsoft 365 E5。
 
-如需詳細資訊，請參閱這個 [Azure AD Identity Protection 概觀](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
+如需詳細資訊，請參閱[風險型條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users)。
 
 ## <a name="using-these-methods-together"></a>共同使用這些方法
 
@@ -84,12 +84,12 @@ Azure AD Identity Protection 需要 Azure AD Premium P2，此方案隨附於 Mic
 
 如果已啟用安全性預設，系統會提示所有新使用者註冊 MFA 並使用 Microsoft Authenticator 應用程式。 
 
-下表顯示啟用 MFA 與安全性預設、條件式存取原則和每一使用者帳戶設定的結果。
+下表顯示啟用 MFA 與安全性預設和條件式存取原則的結果。
 
-|| Enabled | 停用 | 次要驗證方法 |
+|| 啟用 | 停用 | 額外驗證方法 |
 |:-------|:-----|:-------|:-------|
 | **安全性預設**  | 無法使用條件式存取原則 | 可以使用條件式存取原則 | Microsoft Authenticator 應用程式 |
-| **條件式存取原則** | 如果已啟用任何原則，則無法啟用安全性預設 | 如果未啟用任何原則，則可以啟用安全性預設  | 在註冊 MFA 期間由使用者指定  |
+| **條件式存取原則** | 如果已啟用任何原則，則無法啟用安全性預設 | 如果已停用所有原則，則可啟用安全性預設  | 在 MFA 註冊期間由使用者指定  |
 ||||
 
 ## <a name="admin-training-and-technical-resources-for-mfa-and-identity"></a>適用於 MFA 和身分識別的系統管理員訓練與技術資源
