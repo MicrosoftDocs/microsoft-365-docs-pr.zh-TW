@@ -21,23 +21,23 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 瞭解如何在 Microsoft 365 系統管理中心中，設定新產品及功能更新的發行選項。
-ms.openlocfilehash: fc931893e95ff053cd251b6c1b12bfdbaadf49ae
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3a7a0562edef527718816bba6e67ea948cfad6b5
+ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139646"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44249881"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>設定標準或目標發行選項
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
-使用 Microsoft 365 時，您會在新的產品更新及功能可供使用時收到，而不是每隔幾年執行昂貴的更新。 您可以管理組織收到這些更新的方式。 例如，您可以註冊以在早期取得發行的更新，讓您的組織率先收到更新。 您可以指定僅特定人員收到這些更新。 或者，您可以維持預設的發行排程，於稍後收到更新。 本文說明不同的發行選項，以及您可以如何將它運用於您的組織。
+使用 Microsoft 365 時，您會在新的產品更新及功能可供使用時收到，而不是每隔幾年執行昂貴的更新。 您可以管理組織收到這些更新的方式。 例如，您可以註冊以在早期取得發行的更新，讓您的組織率先收到更新。 您可以指定僅特定人員收到這些更新。 或者，您可以維持預設的發行排程，於稍後收到更新。 本文說明不同的發行選項，以及您可以如何將它們用於您的組織。
   
 > [!IMPORTANT]
 > 本文所述的 Microsoft 365 更新適用于 Microsoft 365、SharePoint Online 和 Exchange Online。 這些不適用於商務用 Skype 及相關服務。 這些版本選項是針對目標的，將變更發佈至 Microsoft 365 的最佳操作方式，但在任何時間或所有更新皆無法保證。 
@@ -48,7 +48,7 @@ ms.locfileid: "44139646"
   
 ![Microsoft 365 的版本驗證鈴聲](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-對於重要的更新，Office 客戶最初是由[Microsoft 365 藍圖](https://products.office.com/business/office-365-roadmap)通知。 隨著更新變得更接近，它會透過您的[Microsoft 365 訊息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)進行傳遞。
+對於重要的更新，客戶最初是由[Microsoft 365 藍圖](https://products.office.com/business/office-365-roadmap)通知。 隨著更新變得更接近，它會透過您的[Microsoft 365 訊息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)進行傳遞。
 
 > [!NOTE]
 > 您必須使用 Microsoft 365 或 Azure AD 帳戶，透過系統[管理中心](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)存取您的郵件中心。 Microsoft 365 家用方案使用者沒有系統管理員中心。
@@ -99,7 +99,7 @@ ms.locfileid: "44139646"
 > [!IMPORTANT]
 > 在下列情況下，最多可能需要24小時的時間，才會在 Microsoft 365 中生效。 如果您在啟用已設定目標發行後選擇退出，使用者可能會無法存取尚未到達排定發行的功能。 
   
-1. 在系統管理中心中，移至 [**設定** > ] 設定，然後選擇 [**組織設定檔**] 索引標籤下的 [**發行喜好****設定**]。
+1. 在系統管理中心中，移至 [**設定**  >  ]**設定**，然後選擇 [**組織設定檔**] 索引標籤下的 [**發行喜好**設定]。
 
 5. 若要停用目標版本，請選取 [**標準版本**]，然後選取 [**儲存變更**]。 
     
@@ -112,10 +112,6 @@ ms.locfileid: "44139646"
 9. 當您新增使用者後，請選取 [**儲存變更**]。
 
 
-
-## <a name="get-the-targeted-release-version-of-office"></a>取得 Office 的目標發行版本本
-
-若要安裝 Office 已設定目標發行組建，[請遵循以下步驟](https://support.office.com/article/4dd8ba40-73c0-4468-b778-c7b744d03ead)。完成後您就能夠提早使用 Windows 傳統型 Office 2016 新功能。
   
 ## <a name="learn-more"></a>深入了解
 
