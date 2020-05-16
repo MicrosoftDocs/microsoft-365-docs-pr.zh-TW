@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
-ms.openlocfilehash: 38fa16b5270273813b4549b0c3c9baaa1b05b098
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 6aa343b337139c4d81f35f78a227634d3b6a8781
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224550"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262520"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>在 Exchange Online 中指定使用者提交垃圾郵件和網路釣魚郵件的信箱
 
@@ -51,36 +51,63 @@ ms.locfileid: "44224550"
 
 2. 在出現的 [**使用者提交**] 頁面中，選取下列其中一個選項：
 
-   - **啟用 outlook 的報告郵件功能（建議）**：如果您在網頁型 outlook 中使用報表訊息增益集或內建報告，請選取此選項，然後設定下列設定：
+   a. **啟用 outlook 的報告郵件功能（建議）**：如果您在網頁型 outlook 中使用報表訊息增益集或內建報告，請選取此選項，然後設定下列設定：
 
-     - **自訂使用者確認訊息**：按一下此連結。 在出現的 [**自訂確認訊息**] 浮出視窗中，設定下列設定：
+      - **自訂使用者確認訊息**：按一下此連結。 在出現的 [**自訂確認訊息**] 浮出視窗中，設定下列設定：
 
-       - **提交之前**：在 [**標題**] 和 [**確認訊息**] 方塊中，輸入使用者在使用「報告郵件增益集」報告郵件之前看到的描述性文字。 您可以使用變數% type% 來包含提交類型（垃圾郵件、非垃圾郵件網路釣魚等等）。
+      - **提交之前**：在 [**標題**] 和 [**確認訊息**] 方塊中，輸入使用者在使用「報告郵件增益集」報告郵件之前看到的描述性文字。 您可以使用變數% type% 來包含提交類型（垃圾郵件、非垃圾郵件網路釣魚等等）。
 
-         如前文所述，下列文字也會新增至通知：
+        如所述，如果您選取將報告的郵件傳送給 Microsoft 的選項，下列文字也會新增至通知：
 
-         > 您的電子郵件會向 Microsoft 提交，以進行分析。 有些電子郵件可能包含個人或機密資訊。
+        > 您的電子郵件會向 Microsoft 提交，以進行分析。 有些電子郵件可能包含個人或機密資訊。
 
-       - **提交後**：按一下 [ ![ 展開圖示] ](../../media/scc-expand-icon.png) 。 在 [**標題**] 和 [**確認訊息**] 方塊中，輸入使用者在使用「報告訊息增益集」報告訊息之後所看到的描述性文字。 您可以使用變數% type% 來包含提交類型。
+      - **提交後**：按一下 [ ![ 展開圖示] ](../../media/scc-expand-icon.png) 。 在 [**標題**] 和 [**確認訊息**] 方塊中，輸入使用者在使用「報告訊息增益集」報告訊息之後所看到的描述性文字。 您可以使用變數% type% 來包含提交類型。
 
-      完成後，按一下 [儲存]****。 若要清除這些值，請按一下 [**使用者報送**] 頁面上的 [**還原**回來]。
+      完成後，請按一下 **[儲存]**。 若要清除這些值，請按一下 [**使用者報送**] 頁面上的 [**還原**回來]。
 
-   - **將報告的郵件傳送至**：進行下列其中一項選擇：
+      - **將報告的郵件傳送至**：進行下列其中一項選擇：
 
-     - **Microsoft （建議使用）**：不使用使用者提交信箱（所有報告的郵件都會移至 Microsoft）。
+        - **Microsoft （建議使用）**：不使用使用者提交信箱（所有報告的郵件都會移至 Microsoft）。
 
-     - **Microsoft 和自訂信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。 不允許通訊群組。
+        - **Microsoft 和自訂信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。 不允許通訊群組。 使用者送出會同時移至 Microsoft 進行分析，以及您的系統管理員或安全性作業小組的自訂信箱進行分析。
 
-     - **自訂信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。 不允許通訊群組。
+        - **自訂信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。 不允許通訊群組。 如果您只想要讓郵件先移至 [系統管理] 或 [安全性作業] 小組進行分析，請使用此選項。 除非系統管理員轉寄郵件，否則郵件不會移至 Microsoft。
 
-     完成後，請按一下 [**確認**]。
+        完成後，請按一下 [**確認**]。
 
-     ![將報告的郵件傳送至 Microsoft 和自訂信箱](../../media/user-submission-enable-outlook-report-message.png)
+        ![將報告的郵件傳送至 Microsoft 和自訂信箱](../../media/user-submission-enable-outlook-report-message.png)
+
+     > [!CAUTION]
+     > 如果您已在 Outlook 網頁版 outlook 上使用 Outlook 來[停用 outlook 中的垃圾郵件報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)，但您設定上述任一設定將郵件報告給 microsoft，使用者就可以使用報告訊息增益集，在網頁型 outlook 中將郵件報告給 microsoft。
 
    - **停用 Outlook 的報告郵件功能**：如果您使用協力廠商的報表工具，而不是在 web 上的 Outlook 中使用協力廠商的報表工具或內建的報表，請選取這個選項，然後設定下列設定：
 
-     選取 [**使用此自訂信箱以接收使用者報告的提交**]。 在出現的方塊中，輸入現有信箱的電子郵件地址，或您要建立之信箱的電子郵件地址。
+      選取 [**使用此自訂信箱以接收使用者報告的提交**]。 在出現的方塊中，輸入已存在於 Office 365 的現有信箱的電子郵件地址。 這必須是 Exchange Online 中可接收電子郵件的現有信箱。
 
-     完成後，請按一下 [**確認**]。
+      完成後，請按一下 [**確認**]。
 
-     ![使用協力廠商工具將報告的郵件傳送至自訂信箱](../../media/user-submission-disable-outlook-report-message.png)
+      ![使用協力廠商工具將報告的郵件傳送至自訂信箱](../../media/user-submission-disable-outlook-report-message.png)
+     
+## <a name="message-submission-format"></a>郵件提交格式
+
+傳送至自訂信箱的郵件必須遵循特定提交郵件格式。 提交的主旨（信封標題）應採用此格式：
+
+`{(int)safetyApiAction}|{networkId}|{senderIp}|{fromAddress}|({subject.Substring(0, Math.Min(subjectLen, subject.Length))})`
+
+SafetyApiAction 為：
+
+- 垃圾郵件 = 1
+- NotJunk = 2
+- 網路釣魚 = 3
+
+在下列範例中：
+
+- 將郵件報告為網路釣魚。
+- 網路消息識別碼是49871234-6dc6-43e8-abcd-08d797f20abe。
+- 寄件者 IP 為167.220.232.101。
+- [寄件者] 位址為 test@contoso.com。
+- 郵件的電子郵件主體是「測試網路釣魚提交」
+
+`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phish submission)`
+
+不遵循此格式的郵件將無法在提交入口網站中正確顯示。

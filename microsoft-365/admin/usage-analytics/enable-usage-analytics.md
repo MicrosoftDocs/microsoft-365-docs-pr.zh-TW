@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 瞭解如何使用 Power BI 中的 Microsoft 365 流量分析範本應用程式，來開始收集租使用者的資料。
-ms.openlocfilehash: 386b64b1db15ba9f00450ac037a74bfc702e95ea
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3c5e1a35b93b755b92710f0499599d849a6c251c
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140680"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262532"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>啟用 Microsoft 365 使用情況分析
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -63,7 +63,7 @@ Microsoft 365 的流量分析也適用于 Microsoft 365 美國政府社區。
     
 2. 在 [**使用狀況**] 頁面上，找出 [ **Microsoft 365 流量分析**卡]，然後選取 [**開始**]。
     
-3. 在開啟的\> [報告] 面板上，設定 [**讓 power BI 的 Microsoft 365 流量分析使用的資料可供****儲存**]。 **On** 
+3. 在開啟的 [報告] 面板上，設定 [**讓 power BI 的 Microsoft 365 流量分析使用的資料可供** **On** \> **儲存**]。 
   
 這會啟動資料收集程式，並且會在2到48小時內完成，視租使用者的大小而定。 資料收集完成時，將會啟用（不再是灰色） [**移至 POWER BI** ] 按鈕。 
     
@@ -75,7 +75,7 @@ Microsoft 365 的流量分析也適用于 Microsoft 365 美國政府社區。
     
 2.  當您移到 Power BI 時，進行登入。 從流覽功能表中選取 [App->取得應用程式]。    
   
-3. 在 [**應用程式**] 索引標籤的 [搜尋] 方塊中，輸入 microsoft 365，然後選取 [ **microsoft 365 使用方式分析** \> ]**立即取得**。
+3. 在 [**應用程式**] 索引標籤的 [搜尋] 方塊中，輸入 microsoft 365，然後選取 [ **microsoft 365 使用方式分析**] \> **立即取得**。
 
     [![選取 [立即取得]](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     
@@ -83,9 +83,9 @@ Microsoft 365 的流量分析也適用于 Microsoft 365 美國政府社區。
 
 5.  按一下 [**流覽應用程式**] 以查看具有範例資料的應用程式。 按一下 **[連線]** ，將應用程式連線至您組織的資料。
 
-6.  按一下 [連線 **]** 之後，在 [連線**至 Microsoft 365 流量分析]** 畫面上，輸入您在步驟（1）中\>複製的租使用者識別碼（按 **[下一步]**）。
+6.  按一下 [連線 **]** 之後，在 [連線**至 Microsoft 365 流量分析]** 畫面上，輸入您在步驟（1）中複製的租使用者識別碼（按 \> **[下一步]**）。
     
-7. 在下一個畫面中，選取 [ **oAuth2** ] 作為**驗證方法** \> [登**入**]。 如果您選擇任何其他驗證方法，則與範本應用程式的連線將會失敗。
+7. 在下一個畫面中，選取 [ **oAuth2** ] 作為**驗證方法**[登 \> **入**]。 如果您選擇任何其他驗證方法，則與範本應用程式的連線將會失敗。
     
     ![Choose oAuth2 as authentication method](../../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
   
@@ -97,7 +97,7 @@ Microsoft 365 的流量分析也適用于 Microsoft 365 美國政府社區。
 
 若要將所有報表收集的資料匿名化，您必須是全域系統管理員。 這會在報表和範本應用程式中隱藏識別資訊，例如使用者、群組和網站名稱。
   
-1. 在系統管理中心中，移至 [**設定** \> ]**設定**，然後在 [**服務**] 索引標籤上選擇 [**報告**]。
+1. 在系統管理中心中，移至 [**設定** \> **組織設定**]，然後在 [**服務**] 索引標籤上選擇 [**報告**]。
     
 2. 選取 [**報告**]，然後選擇**顯示匿名識別碼**。 此設定會同時套用至使用狀況報告和範本應用程式。
   

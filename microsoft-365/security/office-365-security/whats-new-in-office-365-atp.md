@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/21/2020
+ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4e6dfaa8a6a2a0157e9274c7b25dae6e7aed2395
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 83ae99a75e3c3aa8d109766418abcf0888b8cbf4
+ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036581"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44267164"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新增功能
 
@@ -35,6 +35,10 @@ ms.locfileid: "44036581"
 > [!TIP]
 > 還沒有 Office 365 ATP？ [連絡人銷售人員開始試用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
 
+## <a name="marchapril-2020"></a>2020年3月/4 月
+
+- [使用自動調查和回應來處理已遭破壞之使用者帳戶](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide)的功能現在現已提供。
+
 ## <a name="januaryfebruary-2020"></a>2020年1月/2 月
 
 - [Office 365 ATP 中市場即時檢視的公開可用性](campaigns.md)
@@ -46,7 +50,7 @@ ms.locfileid: "44036581"
     - Advanced NOT 篩選（這些是包含不含包含的高級篩選選項，不包含等等）。
     - 細微時間篩選（日、小時、半小時） 
 
-- [**事件**] 小工具現在是「**動作中心**」小工具。 （若要查看您的安全性小元件，請在安全性 & 合規性中心內，移至 [**威脅管理** > ] [**檢查**]。）
+- [**事件**] 小工具現在是「**動作中心**」小工具。 （若要查看您的安全性小元件，請在安全性 & 合規性中心內，移至 [**威脅管理**  >  ]。**複習**。）
 
 - [Microsoft 365 中的安全檔](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **（預覽）**
 
@@ -84,7 +88,7 @@ ms.locfileid: "44036581"
 
 您知道 Office 365 ATP 提供兩種方案嗎？ [深入瞭解每個方案包含的內容](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 

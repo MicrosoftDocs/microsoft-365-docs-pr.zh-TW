@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 瞭解如何使用安全性預設值為使用者設定多重要素驗證。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 4c0df9198db8154c1aa748a68eff29dd9bf3bca1
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: c4ea6037b34d29f2d1e05e248e03e49ee6b06f56
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213007"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262372"
 ---
 # <a name="set-up-multi-factor-authentication"></a>設定多重要素驗證
   
@@ -79,7 +79,7 @@ ms.locfileid: "44213007"
 
 不過，您必須確定已啟用 ADAL 或新式驗證的 Microsoft 365 訂閱。
 
-1. 若要啟用新式驗證，請從[系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=834822)選取 [設定]**** \> [設定]****，然後在 [服務]**** 索引標籤中，從清單選擇 [新式驗證]****。
+1. 若要啟用新式驗證，請從系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=834822)選取 [**設定** \> **組織設定**]，然後在 [**服務**] 索引標籤中，挑選清單中的 [**新式驗證**]。
 
 2. 在 [**新式驗證**] 面板中，選取 [**啟用新式驗證（建議）** ] 方塊，然後選擇 [**儲存變更**]。 
 

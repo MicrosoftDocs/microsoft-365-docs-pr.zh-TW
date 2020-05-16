@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6685a542ac082b97ec771bb14481eecf212f4898
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: c7d3120f7094e91157c5a20df435c1c1438677bf
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066366"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254266"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>家庭教育權利和隱私權法案（FERPA）
 
@@ -49,11 +49,11 @@ FERPA 不需要或認可審核或其他憑證，所以任何受制于 FERPA 的�
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365、Office 365 美國政府和 Office 365 美國政府國防版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- 作為獨立服務的 Power BI、PowerApps 和 Microsoft Flow，或包含在 Office 365 品牌計畫或套件中
+- Power BI、PowerApps 及 Power 自動化（先前為 Microsoft 流程）作為獨立服務，或包含在 Office 365 品牌計畫或套件中。
 - Azure DevOps Services
 - Windows Defender ATP
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 FERPA 不需要或認可的審計或認證。
 

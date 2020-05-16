@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用規範界限在組織內建立邏輯界限，以控制 eDiscovery 管理員可搜尋的使用者內容位置。 規範界限使用「搜尋許可權篩選」（也稱為「合規性安全性篩選」）控制特定使用者可搜尋的信箱、SharePoint 網站及 OneDrive 帳戶。
-ms.openlocfilehash: 6bad8aaba9b9905966797c21abe211850bf805a3
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: da03f60be55b0ac6438adcc1648231e5b9798e56
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231846"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262566"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>設定 eDiscovery 調查的合規性界限
 
@@ -75,19 +75,20 @@ ms.locfileid: "44231846"
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>步驟2：以 Microsoft 支援檔作為要求來同步處理使用者屬性與 OneDrive 帳戶
 
-下一步是以 Microsoft 支援檔為要求，將您在步驟1中所選擇的 Azure Active Directory 屬性同步處理至組織中的所有 OneDrive 帳戶。 進行此同步處理之後，您在步驟1中所選擇的屬性（及其值）將會對應至名稱 SharePoint 中隱藏的 managed 屬性 `ComplianceAttribute` 。 您可以在步驟4中使用此屬性為 OneDrive 建立搜尋許可權篩選。
+下一步是以 Microsoft 支援檔為要求，將您在步驟1中所選擇的 Azure Active Directory 屬性同步處理至組織中的所有 OneDrive 帳戶。 進行此同步處理之後，您在步驟1中所選擇的屬性（及其值）將會對應至名為的隱藏 managed 屬性 `ComplianceAttribute` 。 您可以在步驟4中使用此屬性為 OneDrive 建立搜尋許可權篩選。
   
 當您將要求提交給 Microsoft 支援時包含下列資訊：
   
 - 組織的預設網功能變數名稱稱
-    
+
 - Azure Active Directory 屬性的名稱（步驟1）
-    
+
 - 以下是支援要求目的的標題或描述：「啟用相容性安全性篩選器的商務同步處理與 Azure Active Directory 的 OneDrive。 這有助於將要求路由傳送至實現要求的 eDiscovery 工程團隊。
-    
+
 在進行工程變更，並將屬性同步處理至 OneDrive 後，Microsoft 支援將會向您傳送所做變更的組建編號，以及預估的部署日期。 在您提交支援要求後，部署程式通常需要4–6周。
   
- **重要：** 您可以在部署變更之前，先完成步驟3到步驟5。 但是執行內容搜尋時，將不會從搜尋許可權篩選中指定的 OneDrive 網站傳回檔，直到部署變更為止。 
+> [!IMPORTANT]
+> 您可以在部署此屬性變更之前，先完成步驟3到步驟5。 但是執行內容搜尋時，將不會從搜尋許可權篩選中指定的 OneDrive 網站傳回檔，直到部署變更為止。
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>步驟3：建立每個代理人的角色群組
 

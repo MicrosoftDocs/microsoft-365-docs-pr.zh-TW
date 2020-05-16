@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9dd9b104-68f7-4d49-9a30-82561c7d79a3
 description: 在系統管理中心建立自訂的服務台卡片，並將自訂的支援連絡人資訊新增至 [說明] 窗格。
-ms.openlocfilehash: 2a803e339eef23025e6323ee408c4c442c90951e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dac276290f882aa1bd9f22eb6a3306f7869f4253
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627893"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262268"
 ---
 # <a name="add-customized-help-desk-info-to-the-help-pane"></a>將自訂的服務台資訊新增至 [說明] 窗格
 
@@ -40,7 +40,7 @@ ms.locfileid: "43627893"
 ### <a name="create-the-custom-help-desk-card-in-the-admin-center"></a>在系統管理中心中建立自訂的技術支援中心卡片
 <a name="BKMK_HelpDeskPreview"> </a>
 
-1. 在系統管理中心中，移至 [**設定** > ]**設定**，然後選擇 [**服務台資訊**] 索引標籤。
+1. 在系統管理中心中，移至 [**設定**  >  **組織設定**]，然後選擇 [**服務台資訊**] 索引標籤。
     
 2. 在 [**組織設定檔**] 索引標籤上，選擇 [**自訂應用程式啟動器**]。
   

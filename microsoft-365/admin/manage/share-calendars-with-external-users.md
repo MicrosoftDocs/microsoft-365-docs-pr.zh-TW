@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: '瞭解如何讓您的使用者與外部使用者共用會議及約會的行事曆。 '
-ms.openlocfilehash: 6e5a4a3a7e29dcbb6b19aeb1dd3b914ff98eb06e
-ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
+ms.openlocfilehash: 5853d285508c5ed0ec4771a145912e374c191089
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/15/2020
-ms.locfileid: "44249869"
+ms.locfileid: "44262292"
 ---
 # <a name="share-calendars-with-external-users"></a>與外部使用者共用行事曆
 
@@ -39,7 +39,7 @@ ms.locfileid: "44249869"
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 admin center 啟用行事曆共用
 
-1. 在系統管理中心中，移至 [**設定**] [設定] \> ** **。 
+1. 在系統管理中心中，移至 [**設定** \> **組織設定**]。 
     
 2. 在 [**服務**] 索引標籤上，選取 [行事**曆**]。
   

@@ -20,19 +20,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: '透過將自訂麻將牌新增至應用程式啟動器，建立電子郵件、檔、應用程式、SharePoint 網站、外部網站及其他資源的快速連結。 '
-ms.openlocfilehash: 2c0a1cbd2f7c605bc03a55787266c7a627f8e329
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f099eabef7a22e9ebd8f20b23ccd3d8da142f07f
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139718"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262360"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>新增自訂磚至 App 啟動器
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ ms.locfileid: "44139718"
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>在 App 啟動器上新增自訂磚
 
-1. 在系統管理中心中，移至 [**設定** > ]**[設定]，然後選擇**[**組織設定檔**] 索引標籤。
+1. 在系統管理中心中，移至 [**設定**  >  **Org 設定**]，然後選擇 [**組織設定檔**] 索引標籤。
     
 2. 在 [**組織設定檔**] 索引標籤上，選擇 [**自訂應用程式啟動器**]。
   
@@ -76,7 +76,7 @@ ms.locfileid: "44139718"
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. 在系統管理中心中，移至 [**設定** > **Settings** > ] [<a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">組織設定檔</a>] 索引標籤。
+1. 在系統管理中心中，移至 [**設定**組織  >  **設定**  >  **組織設定檔**] 索引標籤 </a> 。
     
 2. 在 [**組織設定檔**] 頁面上，按一下 [**新增組織的自訂麻將牌**] 旁邊的 [**編輯**]。
 
@@ -84,7 +84,7 @@ ms.locfileid: "44139718"
     
 4. 選取 [**更新** \> **關閉**]。 
     
-若要刪除自訂磚，請從 [**自訂磚**] 視窗中選取拼貼，選取 [**移除磚** > **刪除**]。 
+若要刪除自訂磚，請從 [**自訂磚**] 視窗中選取拼貼，選取 [**移除磚**  >  **刪除**]。 
   
 ## <a name="whats-next"></a>下一步是什麼？
 

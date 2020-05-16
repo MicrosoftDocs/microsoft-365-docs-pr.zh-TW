@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/07/2019
+ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,18 +15,18 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何使用威脅瀏覽器和即時偵測報告，調查和回應安全性 & 規範中心內的威脅。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 31fa228d69fcbe885f7639a47a5df2bf1ee0c60d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 824fde8d6f6a03dd61a46d1f0ccc08c93b85adf8
+ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035185"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44267188"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測中的視圖
 
 ![威脅總管](../../media/ThreatExplorerFirstOpened.png)
 
-[威脅瀏覽器](threat-explorer.md)（和即時偵測報告）是強大的近即時工具，可協助安全性運作小組調查和回應安全性&amp;與合規性中心內的威脅。 瀏覽器（和即時偵測報告）會顯示可疑的惡意程式碼和網路釣魚電子郵件中的電子郵件365和檔案的相關資訊，以及其他安全性威脅及組織面臨的風險。 
+[威脅瀏覽器](threat-explorer.md)（和即時偵測報告）是強大的近即時工具，可協助安全性運作小組調查和回應安全性與 &amp; 合規性中心內的威脅。 瀏覽器（和即時偵測報告）會顯示可疑的惡意程式碼和網路釣魚電子郵件中的電子郵件365和檔案的相關資訊，以及其他安全性威脅及組織面臨的風險。 
 
 - 如果您有[Office 365 Advanced 威脅防護](office-365-atp.md)（ATP）方案2，則會有 Explorer。
 - 如果您有 Office 365 ATP 方案1，則會有即時的偵測。
@@ -38,7 +38,7 @@ ms.locfileid: "44035185"
 |ATP P1 試用版     | 即時偵測        |   7       |
 |已支付 ATP P1     |   即時偵測      |    大約     |
 |ATP P1 付費測試 ATP P2 試用版     | 威脅總管   |   7    |
-|ATP P2 追蹤     |  威脅總管       |     7     |
+|ATP P2 試用版     |  威脅總管       |     7     |
 |ATP P2 已支付     |     威脅總管    |  大約       |
 
 使用 [ **View** ] （查看）功能表來變更顯示的資訊。 工具提示可協助您決定要使用的視圖。
@@ -49,7 +49,7 @@ ms.locfileid: "44035185"
 
 ## <a name="email--malware"></a>電子郵件 > 惡意程式碼
 
-若要查看此報告，請在 Explorer （或即時偵測）中，選擇 [ **view** > **Email** > **惡意**代碼]。 此視圖顯示識別為包含惡意程式碼之電子郵件的相關資訊。  
+若要查看此報告，請在 Explorer （或即時偵測）中，選擇 [ **view**  >  **Email**  >  **惡意**代碼]。 此視圖顯示識別為包含惡意程式碼之電子郵件的相關資訊。  
 
 ![查看識別為惡意程式碼的電子郵件資料](../../media/ExplorerEmailMalwareMenu.png) 
 
@@ -65,7 +65,7 @@ ms.locfileid: "44035185"
 
 ## <a name="email--phish"></a>電子郵件 > 網路釣魚
 
-若要查看此報告，請在 Explorer （或即時偵測）中，選擇 [ **view** > **Email** > **釣魚詐騙**]。 此視圖顯示視為網路釣魚企圖的電子郵件。  
+若要查看此報告，請在 Explorer （或即時偵測）中，選擇 [ **view**  >  **Email**  >  **釣魚詐騙**]。 此視圖顯示視為網路釣魚企圖的電子郵件。  
 
 ![查看識別為網路釣魚企圖的電子郵件資料](../../media/ThreatExplorerEmailPhish.png) 
 
@@ -85,13 +85,13 @@ ms.locfileid: "44035185"
 
 ## <a name="email--submissions"></a>電子郵件 > 提交
 
-若要查看此報告，請在 Explorer （或即時偵測）中，選擇 [ **view** > **Email** > **報送**]。 此視圖顯示使用者已舉報為垃圾郵件、非垃圾郵件或網路釣魚電子郵件的電子郵件。 
+若要查看此報告，請在 Explorer （或即時偵測）中，選擇 [ **view**  >  **Email**  >  **報送**]。 此視圖顯示使用者已舉報為垃圾郵件、非垃圾郵件或網路釣魚電子郵件的電子郵件。 
 
 ![使用者所報告的電子郵件](../../media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
 按一下 [**寄件者**] 開啟您的查看選項清單。 使用此清單，透過寄件者、收件者、報告類型（使用者判斷電子郵件為垃圾郵件，而非垃圾郵件或網路釣魚）等方式來查看資訊。 
 
-例如，若要查看報告為網路釣魚企圖的電子郵件資訊，請按一下 [**寄件者** > **報告類型**]，選取 [**網路釣魚**]，然後按一下 [重新整理] 按鈕。
+例如，若要查看報告為網路釣魚企圖的電子郵件資訊，請按一下 [**寄件者**  >  **報告類型**]，選取 [**網路釣魚**]，然後按一下 [重新整理] 按鈕。
 
 ![針對報表類型篩選選取的網路釣魚](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
@@ -103,7 +103,7 @@ ms.locfileid: "44035185"
 
 ## <a name="email--all-email"></a>電子郵件 > 所有電子郵件
 
-若要在瀏覽器中查看此報告，請選擇 [在**所有郵件**中**查看** > **電子** > 郵件]。 此視圖會顯示電子郵件活動的完整模式，包括因網路釣魚或惡意程式碼而識別為惡意的電子郵件，以及所有非惡意郵件（一般電子郵件、垃圾郵件和大宗郵件）。 
+若要在瀏覽器中查看此報告**View**，請選擇 [在  >  **Email**  >  **所有郵件**中查看電子郵件]。 此視圖會顯示電子郵件活動的完整模式，包括因網路釣魚或惡意程式碼而識別為惡意的電子郵件，以及所有非惡意郵件（一般電子郵件、垃圾郵件和大宗郵件）。 
 
 > [!NOTE]
 > 如果您收到的錯誤是**要顯示太多資料**，請新增篩選器，並視需要縮小您正在查看的日期範圍。 
@@ -116,7 +116,7 @@ ms.locfileid: "44035185"
 
 ## <a name="content--malware"></a>內容 > 惡意程式碼
 
-若要查看此報告，請在 Explorer （或即時偵測）中，選擇 [**查看** > **內容** > **惡意**代碼]。 此視圖會顯示[在 SharePoint Online、商務 OneDrive 商務和 Microsoft 小組中，由 Office 365 的「高級威脅防護](atp-for-spo-odb-and-teams.md)」識別為惡意的檔案。
+若要查看此報告，請在 Explorer （或即時偵測）中，選擇 [**查看**  >  **內容**  >  **惡意**代碼]。 此視圖會顯示[在 SharePoint Online、商務 OneDrive 商務和 Microsoft 小組中，由 Office 365 的「高級威脅防護](atp-for-spo-odb-and-teams.md)」識別為惡意的檔案。
 
 透過惡意程式碼系列、偵測技術（偵測惡意程式碼的方式）及工作負載（OneDrive、SharePoint 或小組）來查看資訊。 
 

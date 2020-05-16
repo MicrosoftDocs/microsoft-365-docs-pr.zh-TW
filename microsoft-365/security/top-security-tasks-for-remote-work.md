@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。
-ms.openlocfilehash: abc75a7c7a8b771e5b15fb3c4f0aeb2125be4684
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: 1b21c59e95eccced66a7b64ec7c67354de53e59d
+ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155418"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44267176"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>最常見的12個任務，可供安全性小組用來支援在家運作
 
@@ -37,11 +37,11 @@ ms.locfileid: "44155418"
   
 ||**工作**| 所有 Office 365 企業版方案|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
-|1      |[啟用 Azure Multi-Factor 驗證（MFA）](#1-enable-azure-multi-factor-authentication-mfa)   |   ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|第     | [防範威脅](#2-protect-against-threats) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|1       |[啟用 Azure Multi-Factor 驗證（MFA）](#1-enable-azure-multi-factor-authentication-mfa)   |   ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|2      | [防範威脅](#2-protect-against-threats) |![包含](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |個      |  [設定 Office 365 的高級威脅防護](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4       | [設定 Azure 高級威脅防護（ATP）](#4-configure-azure-advanced-threat-protection)   |   |      |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
-|5      |   [開啟 Microsoft 高級威脅防護](#5-turn-on-microsoft-advanced-threat-protection)  |  |      | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|5      |   [開啟 Microsoft 威脅防護](#5-turn-on-microsoft-threat-protection)  |  |      | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |6       | [設定電話和平板電腦的 Intune 行動裝置應用程式保護](#6-configure-intune-mobile-app-protection-for-phones-and-tablets) |    |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |7      | [設定來賓的 MFA 和條件式存取（包括 Intune 應用程式保護）](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)  |    |  ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)     | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |8       |  [將電腦登記到裝置管理並要求相容的電腦](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
@@ -114,7 +114,7 @@ Office 365 ATP：
 - 觀賞[影片： AZURE ATP 簡介](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
 - 檢查[AZURE ATP 部署的三個階段](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
 
-## <a name="5-turn-on-microsoft-advanced-threat-protection"></a>5：開啟 Microsoft 高級威脅防護
+## <a name="5-turn-on-microsoft-threat-protection"></a>5：開啟 Microsoft 威脅防護
 
 現在，您已設定 Office 365 ATP 和 Azure ATP，您可以在一個儀表板中查看這些功能的合併信號。 [Microsoft 威脅防護](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)（MTP）彙集了警示、事件、自動化調查和回應，以及跨工作負載（Azure ATP、OFFICE 365 Atp、MICROSOFT Defender ATP 和 Microsoft Cloud App Security）的高級搜尋，放入單一窗格的[security.microsoft.com](https://security.microsoft.com)。 
 <br>
@@ -236,7 +236,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12：監控威脅並採取動作
 
-Microsoft 365 包含數種監視狀態和採取適當動作的方式。 您最好的起點是 Microsoft 365 的安全性中心（[https://security.microsoft.com](https://security.microsoft.com)），您可以在其中查看組織的[Microsoft 安全分數](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide)，以及需要您注意的任何警示或實體。
+Microsoft 365 包含數種監視狀態和採取適當動作的方式。 您最好的起點是 Microsoft 365 的安全性中心（ [https://security.microsoft.com](https://security.microsoft.com) ），您可以在其中查看組織的[Microsoft 安全分數](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide)，以及需要您注意的任何警示或實體。
 
 - [開始使用 Microsoft 365 安全中心](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center?view=o365-worldwide)
 - [監視及檢視報告](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting?view=o365-worldwide)

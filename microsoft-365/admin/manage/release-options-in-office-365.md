@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 瞭解如何在 Microsoft 365 系統管理中心中，設定新產品及功能更新的發行選項。
-ms.openlocfilehash: 3a7a0562edef527718816bba6e67ea948cfad6b5
-ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
+ms.openlocfilehash: 2738cf7af32d2e15b0c2c790a241dabbb1f104bc
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/15/2020
-ms.locfileid: "44249881"
+ms.locfileid: "44262314"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>設定標準或目標發行選項
 
@@ -99,7 +99,7 @@ ms.locfileid: "44249881"
 > [!IMPORTANT]
 > 在下列情況下，最多可能需要24小時的時間，才會在 Microsoft 365 中生效。 如果您在啟用已設定目標發行後選擇退出，使用者可能會無法存取尚未到達排定發行的功能。 
   
-1. 在系統管理中心中，移至 [**設定**  >  ]**設定**，然後選擇 [**組織設定檔**] 索引標籤下的 [**發行喜好**設定]。
+1. 在系統管理中心中，移至 [**設定**  >  **組織設定**]，然後在 [**組織設定檔**] 索引標籤下，選擇 [**發行喜好**設定]。
 
 5. 若要停用目標版本，請選取 [**標準版本**]，然後選取 [**儲存變更**]。 
     

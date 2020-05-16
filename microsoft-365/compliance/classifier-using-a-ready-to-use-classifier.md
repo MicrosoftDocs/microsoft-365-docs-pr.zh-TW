@@ -1,5 +1,5 @@
 ---
-title: 使用內建的分類器（預覽）
+title: 使用保留標籤測試內建的分類器（預覽）
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,16 +14,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 隨附許多內建的分類符，您可以用來識別及標記整個組織中的內容。 本主題將告訴您如何準備使用這些分類器。
-ms.openlocfilehash: 2bd36ac42278cfe7b015d03caf2d9e1958908f8f
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: fad35d72c4c40c7b79cba4cb286ccc0f5bb5ab8d
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193501"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262544"
 ---
-# <a name="using-a-built-in-classifier-preview"></a>使用內建的分類器（預覽）
+# <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>使用保留標籤測試內建的分類器（預覽）
 
-Microsoft 已使用極大的範例資料集訓練及測試了五個分類符，可協助識別特定的內容類別別。 請參閱[trainable 類元的快速入門（預覽）](classifier-getting-started-with.md)。 這些分類器預設會顯示`Ready to use`在群組中。
+Microsoft 已訓練及測試五個分類器，可協助識別特定的內容類別別。 這些分類器預設會顯示在 `Ready to use` 群組中，並使用大量的範例資料集進行訓練。
+
+> [!IMPORTANT]
+> 在您的分類和標籤工作流程中使用內建的分類器之前，您應該針對組織內容的範例進行測試，以確認類別的分類預測符合您的預期。
+
+如需 trainable 的分類器的詳細資訊，請參閱[trainable 分類器（預覽）快速](classifier-getting-started-with.md)入門。
 
 Microsoft 365 隨附了五個建議的內建分類器：
 
@@ -45,13 +50,10 @@ Microsoft 365 隨附了五個建議的內建分類器：
 - **猥褻**語言：偵測特定類別的冒犯性語言文字專案，包含 embarrass 大部分人員的運算式。
 - **威脅**：偵測特定類別的冒犯性語言的文字專案與威脅，以認可暴力或對人員或財產造成實體損毀或損毀。
 
-> [!NOTE]
-> 在您的分類和標籤工作流程中使用內建的分類器之前，您應該針對組織內容的範例進行測試，以確認類別的分類預測符合您的預期。
-
 > [!IMPORTANT]
 > 請注意，冒犯性語言、騷擾、猥褻和威脅分類器只會使用可搜尋文字，並非完整或完整。 此外，語言和文化標準也會不斷變更，但在這些現實中，Microsoft 保留以其判斷來更新這些分類器的權利。 雖然分類程式可協助您的組織監控冒犯性和其他語言，但分類程式不會解決這類語言的影響，而且不是為了提供組織的唯一監視或回應這類語言的使用方式。 您的組織，而不是 Microsoft 或其子公司，仍然負責所有與監控、強制執行、封鎖、移除及保留預先訓練的分類器所識別的內容相關的決策。
 
-## <a name="how-to-prepare-for-and-use-a-built-in-classifier"></a>如何準備及使用內建的分類器
+## <a name="how-to-verify-that-a-built-in-classifier-will-meet-your-needs"></a>如何確認內建的分類器符合您的需求
 
 1. 收集您認為屬於內建分類器（肯定比對）類別的可處置內容專案，以及您要測試之類別中不應該包含的專案（負數相符）。
 
@@ -60,19 +62,19 @@ Microsoft 365 隨附了五個建議的內建分類器：
 
 2. 建立專用的 SharePoint 線上資料夾;至少等候一個小時的資料夾新增至搜尋索引。 請記下資料夾 URL。
 
-3. 使用合規性管理員或安全性系統管理員角色存取，登入 microsoft 365 合規性中心，並開啟**microsoft 365 規範中心** > **記錄管理（預覽）** > **標籤原則] 索引標籤**。
+3. 使用合規性管理員或安全性系統管理員角色存取，登入 microsoft 365 合規性中心，並開啟**microsoft 365 規範中心**  >  **記錄管理（預覽）**  >  **標籤原則] 索引標籤**。
 
-4. 選擇`Auto-apply a label`。
+4. 選擇 `Auto-apply a label` 。
 
-5. 選擇`Choose a label to auto-apply`。
+5. 選擇 `Choose a label to auto-apply` 。
 
-6. 選擇`Create new labels`並建立標籤，以用於此測試。 當您執行此動作時`Retention` ，請將設定為 [關閉]。 您不想開啟任何保留或其他動作。 在此情況下，您只會使用保留標籤做為文字標籤，而不會強制執行任何動作。 例如，您可以建立一個名為 "SourceCode 分類程式 test" 的保留標籤，但不會執行任何動作，然後將該保留標籤自動套用至來原始程式碼分類器為條件的內容。 若要深入瞭解建立保留標籤的詳細資訊，請參閱[保留標籤簡介](labels.md)。
+6. 選擇 `Create new labels` 並建立標籤，以用於此測試。 當您執行此動作時，請 `Retention` 將設定為 `off` 。 您不想開啟任何保留或其他動作。 在此情況下，您只會使用保留標籤做為文字標籤，而不會強制執行任何動作。 例如，您可以建立一個名為 "SourceCode 分類程式 test" 的保留標籤，但不會執行任何動作，然後將該保留標籤自動套用至來原始程式碼分類器為條件的內容。 若要深入瞭解建立保留標籤的詳細資訊，請參閱[保留標籤簡介](labels.md)。
   
-7. 選擇`Auto-apply a label` [和`Choose a label to auto-apply`]。 若要深入瞭解使用條件自動套用標籤的詳細資訊，請參閱，[根據條件自動套用保留標籤原則](labels.md#applying-a-retention-label-automatically-based-on-conditions)。
+7. 選擇 [ `Auto-apply a label` 和] `Choose a label to auto-apply` 。 若要深入瞭解使用條件自動套用標籤的詳細資訊，請參閱，[根據條件自動套用保留標籤原則](labels.md#applying-a-retention-label-automatically-based-on-conditions)。
 
-8. 從清單中選擇您的測試卷標`Next`，然後選擇 [。
+8. 從清單中選擇您的測試卷標，然後選擇 [ `Next` 。
 
-9. 選擇`Apply label to content that matches a trainable classifier`。
+9. 選擇 `Apply label to content that matches a trainable classifier` 。
 
 ![選取分類器做為條件](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
 
@@ -80,9 +82,9 @@ Microsoft 365 隨附了五個建議的內建分類器：
 
 11. 命名原則，例如「原始程式碼內建的分類程式測試」。
 
-12. 選擇`Let me choose specific locations`。
+12. 選擇 `Let me choose specific locations` 。
 
-13. 關閉除及選擇`SharePoint sites` `Choose sites`以外的所有位置。
+13. 關閉除 `SharePoint sites` 及選擇以外的所有位置 `Choose sites` 。
 
 14. 輸入步驟2中之網站的 URL。
 

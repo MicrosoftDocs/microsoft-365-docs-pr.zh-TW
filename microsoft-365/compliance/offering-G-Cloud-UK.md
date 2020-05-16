@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cc6f2a8c52a5fc829a9f04c51f78cf7ea5c2f1e1
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 5a8d0b95a0abb93eef352a442ff6c8203eda6e0e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214497"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254176"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>英國政府-雲端（G-Cloud）
 
@@ -44,10 +44,10 @@ Microsoft 服務對「數位市場」的預約表示，UK 政府的代理商和�
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Microsoft Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
+- 以獨立服務的功耗自動化（先前為 Microsoft 流程）雲端服務，或加入 Office 365 或 Dynamics 365 品牌計畫或套件。
 - Office 365： Exchange Online、SharePoint 線上和商務用 Skype Online
 - PowerApps 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Power BI 雲端服務，以獨立服務形式提供或包含在 Office 365 品牌方案或套件中
