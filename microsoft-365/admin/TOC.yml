@@ -69,6 +69,8 @@
               href: add-users/add-users.md
             - name: 新增新員工
               href: add-users/add-new-employee.md
+            - name: 將授權指派給使用者
+              href: manage/assign-licenses-to-users.md
             - name: 指派系統管理員角色
               href: add-users/assign-admin-roles.md
             - name: 移除使用者的授權
@@ -234,6 +236,8 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: 設定多重要素驗證 (搭配 Office 2013)
           href: security-and-compliance/enable-modern-authentication.md
+        - name: 安全分數
+          href: 'https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new'
         - name: GDPR 合規性指南
           href: security-and-compliance/gdpr-compliance.md
     - name: 與客戶合作

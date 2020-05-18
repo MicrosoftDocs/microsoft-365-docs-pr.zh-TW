@@ -28,7 +28,7 @@
       href: subscriptions/cancel-your-subscription.md
     - name: 訂閱到期時該怎麼辦？
       href: subscriptions/what-if-my-subscription-expires.md
-    - name: 管理協力廠商應用程式
+    - name: 管理第三方應用程式訂閱
       href: manage-saas-apps.md
     - name: 管理自助購買 (使用者)
       href: subscriptions/manage-self-service-purchases-users.md
@@ -46,9 +46,9 @@
       href: licenses/subscriptions-and-licenses.md
 - name: 帳單與付款
   items:
-    - name: 查看您的發票
+    - name: 檢視帳單或發票
       href: billing-and-payments/view-your-bill-or-invoice.md
-    - name: 了解您的發票
+    - name: 認識您的帳單或發票
       href: billing-and-payments/understand-your-invoice.md
     - name: 管理付款方式
       href: billing-and-payments/manage-payment-methods.md
@@ -62,15 +62,15 @@
       href: billing-and-payments/manage-billing-profiles.md
     - name: 變更帳單地址
       href: billing-and-payments/change-your-billing-addresses.md
-    - name: 第二號支付服務指令和加強客戶驗證
+    - name: 支付服務指令第二版和加強客戶驗證
       href: billing-and-payments/psd2.md
 - name: 帳單帳戶
   items:
-    - name: 管理帳單帳戶
+    - name: 管理計費帳戶
       href: manage-billing-accounts.md
     - name: 建立租用戶與帳單帳戶的關聯
       href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
-- name: 管理與合作夥伴之間的關聯
+- name: 管理與合作夥伴之間的關係
   href: manage-partners.md
 - name: 關閉您的帳戶
   href: close-your-account.md
