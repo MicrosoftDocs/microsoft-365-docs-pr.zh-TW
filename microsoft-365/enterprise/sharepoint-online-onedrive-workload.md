@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: 推行並發揮 SharePoint 在組織中的價值，規劃這整個程序的步驟。
-ms.openlocfilehash: ee2c5592015361a678785cb8e4aaad9074c5d804
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6b0483073a836f29b1faa5a30018848ef7b2df34
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636913"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268206"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>部署適用於 Microsoft 365 企業版的 SharePoint 和 OneDrive
 
@@ -67,10 +67,6 @@ SharePoint 可用於不同的用途。您必須判斷哪些用途對應到您的
 請參閱 [SharePoint 系統管理](https://docs.microsoft.com/sharepoint/sharepoint-online)，取得如何依需求設定 SharePoint 的資源。
 
 要查看 SharePoint 優點的其中一個方法，是檢查個人、小組、部門或整個組織現今互動的方式，並找出適當的案例，提供更輕鬆的方法來儲存及共用檔案。請注意，[Microsoft Teams](teams-workload.md) 對您部分的案例而言可能是較好的選擇。
-
-#### <a name="sharepoint-site-for-highly-regulated-data"></a>適用於高度管制資料的 SharePoint 網站
-
-高度管制資料受地區法規約束，或者是您組織中最有價值的資料，例如營業機密、財務或人力資源資訊以及組織策略。 您可以針對此類型的資料，設定 SharePoint 網站進行限制存取、資料分類、資料遺失防護和加密。 如需詳細資料，請參閱[適用於高管制資料的 Microsoft Teams 和 SharePoint 網站](teams-sharepoint-online-sites-highly-regulated-data.md)。
 
 #### <a name="result"></a>結果
 SharePoint 的案例清單，能解決組織對於文件儲存與共用、內容管理、共同作業與安全性的需求。

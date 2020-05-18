@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 摘要：使用各種資訊保護層級，對 SharePoint Online 小組網站套用保留標籤和資料外洩防護 (DLP) 原則。
-ms.openlocfilehash: ab9026fa4c00038abb166677277145c8129e33e2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b924b0d62d7c66a008739dfa12c0d1dd00deac9b
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081740"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262394"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>使用保留標籤與 DLP 來保護 SharePoint Online 檔案
 
@@ -216,8 +216,12 @@ ms.locfileid: "42081740"
 以下是高度機密 SharePoint Online 小組網站的設定結果。
   
 ![使用 [高度機密性] 保留標籤之隔離 SharePoint Online 小組網站的 DLP 原則](../media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+
+### <a name="support-for-sensitivity-labels-is-coming"></a>敏感度標籤的支援即將推出
+
+您目前只能使用保留標籤做為條件，不能使用[敏感度標籤](sensitivity-labels.md)。 我們目前正在努力支援在這個條件中使用敏感度標籤。
   
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 [使用敏感度標籤來保護 SharePoint Online 檔案](protect-sharepoint-online-files-with-sensitivity-label.md)
     

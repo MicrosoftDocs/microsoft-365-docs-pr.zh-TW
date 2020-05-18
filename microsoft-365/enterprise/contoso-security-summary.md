@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用整個 Microsoft 365 企業版的安全性功能。
-ms.openlocfilehash: f8a16b07c6d4cb9a62e0131a1f667b675d5eaf66
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c0f3497eb49a0490fccf6c0ec5174d932a21005e
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636483"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268395"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>適用於 Contoso Corporation 之 Microsoft 365 企業版安全性的摘要
 
@@ -134,9 +134,4 @@ Contoso 會使用下列步驟來準備部署 Microsoft 365 企業版的安全性
 - 適用於具有 Windows Defender 資訊安全中心之使用者的中央安全性儀表板
 
   Contoso 已將 [Windows 安全性應用程式](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) 部署至其執行 Windows 10 企業版的電腦和裝置，讓使用者可以一眼瀏覽其安全性狀態並採取動作。
-
-
-## <a name="next-step"></a>下一步
-
-[了解](contoso-sharepoint-online-site-for-highly-confidential-assets.md) Contoso 如何建立用於高管制資料的 Sharepoint 網站，使其研究小組之間能夠共同作業。
 

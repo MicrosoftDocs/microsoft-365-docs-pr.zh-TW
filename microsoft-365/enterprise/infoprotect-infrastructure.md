@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 企業版的資訊保護基礎結構部署步驟。
-ms.openlocfilehash: 0e6fdf1a9c63200bfb57fc9f833515553c1609f4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d6e3501e8262a0c3245c6e13da6633ac465276fb
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631618"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268300"
 ---
 # <a name="phase-6-information-protection"></a>第 6 階段：資訊保護
 
-![第 6 階段：資訊保護](../media/deploy-foundation-infrastructure/infoprotection_icon.png)
+![階段 6：資訊保護](../media/deploy-foundation-infrastructure/infoprotection_icon.png)
 
-資訊保護是定義如何傳送、儲存及處理機密資訊的一組原則和技術。在階段 6 中，您會逐步執行 Microsoft 365 企業版的資訊保護設定及功能，可協助您保護雲端式工作負載和案例的資料。
+資訊保護是定義如何傳送、儲存及處理機密資訊的一組原則和技術。在階段 6 中，您會逐步執行 Microsoft 365 企業版的資訊保護設定及功能，可協助您保護雲端式工作負載的資料。
 
 >[!Note]
 >如果您已部署資訊保護，請參閱此階段的[允出準則](infoprotect-exit-criteria.md)，確保其符合 Microsoft 365 企業版的必要與選用條件。
