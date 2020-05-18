@@ -210,14 +210,14 @@
               href: set-up-azure-rms-for-previous-version-message-encryption.md
     - name: 在 SharePoint 系統管理中心設定 IRM
       href: set-up-irm-in-sp-admin-center.md
-    - name: 了解資料分類 (預覽)
+    - name: 了解資料分類
       href: data-classification-overview.md
       items:
-        - name: 開始使用內容總管 (預覽)
+        - name: 開始使用內容總管
           href: data-classification-content-explorer.md
-        - name: 開始使用活動總管 (預覽)
+        - name: 開始使用活動總管
           href: data-classification-activity-explorer.md
-        - name: 資料分類公開預覽版本資訊 (預覽)
+        - name: 資料分類版本資訊
           href: data-classification-pub-preview-relnotes.md
         - name: 開始使用可訓練的分類器 (預覽)
           href: classifier-getting-started-with.md
