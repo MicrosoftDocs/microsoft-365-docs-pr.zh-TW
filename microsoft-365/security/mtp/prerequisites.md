@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 66b3f7e446416b6252050e6f41a2b22d99d25767
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 71e7b532e046015dd64e51fd422d276433d65b3a
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209232"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280531"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威脅防護先決條件
 
@@ -79,8 +79,12 @@ ms.locfileid: "44209232"
 ## <a name="browser-requirements"></a>瀏覽器需求
 使用 Microsoft Edge、Internet Explorer 11 或任何符合 HTML 5 標準的網頁瀏覽器，存取 microsoft 365 security center 中的 Microsoft 威脅防護。
 
-## <a name="us-gcc-and-gcc-high-availability"></a>美國 GCC 和 GCC 高可用性
-目前，我們的政府社區雲端（GCC）和政府社區雲端（GCC 高端）客戶無法使用 Microsoft 威脅防護。 
+## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>可供美國 GCC、GCC 高及其他美國政府機構供貨
+目前，Microsoft 威脅防護*無法*用於：
+- 美國政府社區雲端（GCC）
+- 美國政府社區雲端高（GCC 高）
+- 美國國防部
+- 具有商業授權的所有美國政府機構
 
 ## <a name="related-topics"></a>相關主題
 - [Microsoft 威脅防護概觀](microsoft-threat-protection.md)

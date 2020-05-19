@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文說明如何開始使用 Microsoft 365 中的核心 eDiscovery。 指派 eDiscovery 許可權並建立案例之後，您可以新增成員、建立 eDiscovery 保留，然後搜尋並匯出與調查相關的資料。
-ms.openlocfilehash: c9c3d8c3832703e8dbbcf8b2c04a566af0f5eb6b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 5faae81eb81ce8c69e3ae801d153c664ac152bda
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943382"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280543"
 ---
 # <a name="get-started-with-core-ediscovery"></a>開始使用核心電子文件探索
 
@@ -42,11 +42,11 @@ Microsoft 365 中的核心 eDiscovery 提供一種基本 eDiscovery 工具，可
 
    OR
 
-  - Microsoft 365 E1 或 Office 365 E1 授權與 Exchange Online 方案2或 Exchange Online 封存附加元件授權
+  - Office 365 E1 授權搭配 Exchange Online 方案2或 Exchange Online 封存附加元件授權
 
   AND
 
-  - Microsoft 365 E1 或 Office 365 E1 授權，具有 SharePoint Online Plan 2 或 OneDrive for Business Plan 2 附加元件授權
+  - Office 365 E1 授權與 SharePoint Online Plan 2 或 OneDrive for Business Plan 2 附加元件授權
   
   如需如何指派授權的詳細資訊，請參閱[將授權指派給使用者](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
 
@@ -62,7 +62,7 @@ Microsoft 365 中的核心 eDiscovery 提供一種基本 eDiscovery 工具，可
 
 完成下列步驟，將使用者新增至 eDiscovery 管理員角色群組：
 
-1. 移至[https://protection.office.com/permissions](https://protection.office.com/permissions)並使用您的 Microsoft 365 或 Office 365 組織中的系統管理員帳戶的認證登入。
+1. 移至 [https://protection.office.com/permissions](https://protection.office.com/permissions) 並使用您的 Microsoft 365 或 Office 365 組織中的系統管理員帳戶的認證登入。
 
 2. 在 [**許可權**] 頁面上，選取 [ **eDiscovery 管理員**] 角色群組。
 
@@ -98,7 +98,7 @@ EDiscovery 管理員角色群組中有兩個子群組。 這些子群組之間�
 
 下一步是建立案例，並開始使用核心 eDiscovery。 完成下列步驟以建立案例並新增成員。 建立案例的使用者會自動新增為成員。
 
-1. 移至[https://compliance.microsoft.com](https://compliance.microsoft.com)並登入使用已獲指派適當 eDiscovery 許可權之使用者帳戶的認證。 組織管理角色群組的成員也可以建立核心 eDiscovery 案例。
+1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) 並登入使用已獲指派適當 eDiscovery 許可權之使用者帳戶的認證。 組織管理角色群組的成員也可以建立核心 eDiscovery 案例。
 
 2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [**全部顯示**]，然後按一下 [ **eDiscovery > Core**]。
 
