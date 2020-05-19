@@ -271,12 +271,22 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: 保留資料
       items:
-        - name: 保留原則
+        - name: 了解保留原則
           href: retention-policies.md
+        - name: 建立及設定保留原則
+          href: create-retention-policies.md
+        - name: 適用於 SharePoint 和 OneDrive 的保留
+          href: retention-policies-sharepoint.md
+        - name: 適用於 Microsoft Teams 的保留
+          href: retention-policies-teams.md
+        - name: 適用於 Exchange 的保留
+          href: retention-policies-exchange.md
         - name: 檔案計劃管理員
           href: file-plan-manager.md
-        - name: 保留標籤
+        - name: 了解保留標籤
           href: labels.md
+        - name: 建立、發佈或自動套用保留標籤
+          href: create-retention-labels.md
         - name: 符合美國證券交易委員會規定 17A-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
         - name: 使用 PowerShell 建立及發佈保留標籤
@@ -325,9 +335,11 @@
           items:
             - name: 檔案計劃管理員
               href: file-plan-manager.md
-            - name: 保留標籤
+            - name: 了解保留標籤
               href: labels.md
-            - name: 使用 PowerShell 建立及發佈保留標籤
+            - name: 建立及發佈保留標籤
+              href: create-retention-labels.md
+            - name: 使用 PowerShell 大量建立及發佈保留標籤
               href: bulk-create-publish-labels-using-powershell.md
             - name: 利用標籤分析檢視標籤使用量
               href: label-analytics.md

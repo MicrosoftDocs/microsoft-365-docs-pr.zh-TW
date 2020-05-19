@@ -90,7 +90,7 @@
           href: deploy-with-existing-infrastructure.md
         - name: 非企業部署
           href: deploy-foundation-infrastructure-non-enterprises.md
-    - name: 部署工作負載和案例
+    - name: 部署工作負載
       href: deploy-workloads.md
       items:
         - name: Microsoft Teams
@@ -101,10 +101,6 @@
           href: sharepoint-online-onedrive-workload.md
         - name: 移轉
           href: migration-microsoft-365-enterprise-workload.md
-        - name: 強化遠端工作人員
-          href: empower-people-to-work-remotely.md
-        - name: 適用於高度管制資料的 SharePoint 網站
-          href: teams-sharepoint-online-sites-highly-regulated-data.md
     - name: 測試實驗室指南
       href: m365-enterprise-test-lab-guides.md
       items:
@@ -180,12 +176,6 @@
           href: contoso-info-protect.md
         - name: 安全性摘要
           href: contoso-security-summary.md
-        - name: 用於高度機密專案的團隊
-          href: contoso-team-for-top-secret-project.md
-        - name: 適用於高度管制資料的 SharePoint 網站
-          href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: Microsoft 365 企業版部署內容的變更
-      href: microsoft-365-deploment-guide-changes.md
     - name: Microsoft 365 服務健全狀態
       href: microsoft-365-service-health.md
 - name: 桌面部署中心
