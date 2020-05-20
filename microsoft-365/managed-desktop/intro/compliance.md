@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6114642b5899e2708703e3c0d62cadde25296504
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 31844ee413f89992babd2b1917fcb89d20db6804
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632812"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322014"
 ---
 # <a name="compliance"></a>合規性
 
@@ -21,7 +21,7 @@ ms.locfileid: "43632812"
 
 Microsoft 受管理的桌面已達到下列認證：
 
-- [ISO 27001 資訊安全性管理標準](../../compliance/offering-ISO-27001.md)
+- [ISO 27001 資訊安全性管理標準（ISM）](../../compliance/offering-ISO-27001.md)
 - [ISO 27701 隱私權資訊管理系統（PIMS）](../../compliance/offering-iso-27701.md)
 - [ISO 27017 資訊安全性控制慣例的程式碼](../../compliance/offering-ISO-27017.md)
 - [ISO 27018 保護雲端中個人資料的做法程式碼](../../compliance/offering-ISO-27018.md)
@@ -38,7 +38,7 @@ Microsoft 受管理的桌面已達到下列認證：
 您可以在[服務信任入口網站（STP）](https://servicetrust.microsoft.com/)中，找到相關的資訊，包括控制項和技術需求，以取得 Microsoft 雲端服務產品的相關資訊的中央存放庫。 您可以從 STP 的「[審核報告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)」區段下載審計員報告、符合性憑證等等。
 
 > [!NOTE]
-> 因為 Microsoft 受管理的桌面會在 Azure 上執行，所以有些相關的檔具有 "Microsoft Azure、Dynamics 365，及其他線上服務] 等的檔案名。 在這些檔中，您通常可以在「監控 + 管理」類別下找到 Microsoft 受管理的桌面。
+> 因為 Microsoft 受管理的桌面會在 Azure 上執行，所以相關的檔通常會有檔案名（如 "Microsoft Azure、Dynamics 365）及其他線上服務"）。 在這些檔中，您通常可以在「監控 + 管理」類別下找到 Microsoft 受管理的桌面。
 
 ## <a name="shared-responsibility"></a>共用責任
 

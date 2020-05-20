@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: 瞭解如何規劃 Microsoft 365 群組管理。
-ms.openlocfilehash: 85dfbb27899d7b79257eba4cff4b7cd715f762a5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: e5e3b640edd15cb46fa3da8b65141fe9f63d6399
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064784"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322096"
 ---
 # <a name="plan-for-governance-in-groups"></a>群組管理的規劃
 
@@ -249,14 +249,14 @@ Microsoft 365 群組是以 Microsoft 365 的高級安全性和合規性功能為
 - [連結至您的 Microsoft 365 群組使用指導方針](https://docs.microsoft.com/office365/enterprise/manage-office-365-groups-with-powershell#link-to-your-office-365-groups-usage-guidelines)
 - [為您組織中的 Office 群組建立分類](https://docs.microsoft.com/office365/enterprise/manage-office-365-groups-with-powershell#create-classifications-for-office-groups-in-your-organization)
 - [設定群組設定](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)
-- [保留原則概觀](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
-- [敏感度標籤概觀](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)
-- [標籤概觀](https://docs.microsoft.com/office365/securitycompliance/labels)
-- [搜尋稽核記錄](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)
+- [保留原則概觀](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
+- [敏感度標籤概觀](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
+- [標籤概觀](https://docs.microsoft.com/microsoft-365/compliance/labels)
+- [搜尋稽核記錄](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 - [建立或移除就地法律封存](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds)
-- [建立保留原則](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
-- [在安全性 & 規範中心執行內容搜尋](https://docs.microsoft.com/Office365/SecurityCompliance/content-search)
-- [使用 PowerShell 大量建立及發佈保留標籤](https://docs.microsoft.com/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+- [建立保留原則](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
+- [在安全性 & 規範中心執行內容搜尋](https://docs.microsoft.com/microsoft-365/compliance/content-search)
+- [使用 PowerShell 大量建立及發佈保留標籤](https://docs.microsoft.com/microsoft-365/compliance/bulk-create-publish-labels-using-powershell)
 
 ### <a name="upgrade-traditional-collaboration-tools"></a><a name="upgrade-traditional-collaboration-tools"></a>升級傳統共同作業工具
 在幾年中，組織必須依靠通訊群組與公司內部和外部的人員群組進行通訊及共同作業。 不過現在，Outlook 中的 Microsoft 365 群組可提供更強大的共同作業解決方案。 此外，如果您想要讓該網站現代化，可將 Microsoft 365 群組連接至現有的 SharePoint 網站很重要。
@@ -334,8 +334,8 @@ Microsoft 365 群組提供您組織可能需要的一組豐富的管理功能。
 
 | 階段 | 說明 |
 | --------------- | ------------------------------------------------------------ |
-| 指引 |<ul><li> 針對以分類為基礎之群組相關聯的 SharePoint 網站，定義其資料管理原則。</li><li>[使用標籤和 DLP 來保護 SharePoint 線上](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)檔案。</li><li>[使用 Azure 資訊保護來保護 SharePoint 線上](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-azure-information-protection)檔案。</li><li> 在與使用者的慣用資料位置（[多地理](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)位置）關聯的區域中布建的群組網站。</li><li> 具有外部成員之群組的成員資格審閱（[存取權檢查](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)）。</li><li>在取得存取之前，請確定員工或來賓使用者看到相關的免責聲明以取得法律或法規遵從性需求。 （[使用條款](https://docs.microsoft.com/azure/active-directory/governance/active-directory-tou)）。</li><li>以特定[分類（也就是外部使用者](https://techcommunity.microsoft.com/t5/Office-365-Groups/Sample-Powershell-to-identify-groups-with-HBI-classification-and/m-p/215561)）識別及報告 Microsoft 365 群組。</li><li>必須使用[set-unifiedgroup 指令程式](https://technet.microsoft.com/library/mt219359(v=exchg.160).aspx)（使用 HiddenGroup-MembershipEnabled 參數）建立群組建立時的機密群組，以供需要隱藏的成員資格。</li><li>定義組織的[靈敏度標籤](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)，以[使用加密來限制存取內容](https://docs.microsoft.com/Office365/SecurityCompliance/encryption-sensitivity-labels)，併發布至特定的 Microsoft 365 群組。</li><li>使用[具有 Windows 資訊保護的敏感度標籤，](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)防止敏感內容離開您的組織在執行 windows 的裝置上。 |
-| 後續步驟      | <ul><li> 使用網站設計和網站腳本，定義建立新網站時所發生的預設[動作](https://developer.microsoft.com/office/blogs/site-scripts-site-designs-summer-2018-update/)。 例如，[設定外部共用設定](https://github.com/SharePoint/sp-dev-site-scripts/tree/master/samples/site-apply-external-sharing-setting)或[觸發 Microsoft 流程以撥打 Azure 函式](https://github.com/SharePoint/sp-dev-site-scripts/tree/master/samples/site-azure-function)，以套用非本機支援的設定。 </li><li> 記錄需求，以[使用標籤和 DLP 來保護 SharePoint 線上](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)檔案，以與 Microsoft 365 群組相關聯的網站。</li><li>檔組織需求，以保護連線至 Microsoft 365 群組的[SharePoint Online 網站與](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files)檔案。 </li><li>記錄組織對特定使用者或群組發佈[敏感度標籤](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)的需求，以保護內容。</li></ul> |
+| 指引 |<ul><li> 針對以分類為基礎之群組相關聯的 SharePoint 網站，定義其資料管理原則。</li><li>[使用標籤和 DLP 來保護 SharePoint 線上](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)檔案。</li><li>[使用 Azure 資訊保護來保護 SharePoint 線上](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-azure-information-protection)檔案。</li><li> 在與使用者的慣用資料位置（[多地理](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)位置）關聯的區域中布建的群組網站。</li><li> 具有外部成員之群組的成員資格審閱（[存取權檢查](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)）。</li><li>在取得存取之前，請確定員工或來賓使用者看到相關的免責聲明以取得法律或法規遵從性需求。 （[使用條款](https://docs.microsoft.com/azure/active-directory/governance/active-directory-tou)）。</li><li>以特定[分類（也就是外部使用者](https://techcommunity.microsoft.com/t5/Office-365-Groups/Sample-Powershell-to-identify-groups-with-HBI-classification-and/m-p/215561)）識別及報告 Microsoft 365 群組。</li><li>必須使用[set-unifiedgroup 指令程式](https://technet.microsoft.com/library/mt219359(v=exchg.160).aspx)（使用 HiddenGroup-MembershipEnabled 參數）建立群組建立時的機密群組，以供需要隱藏的成員資格。</li><li>定義組織的[靈敏度標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)，以[使用加密來限制存取內容](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)，併發布至特定的 Microsoft 365 群組。</li><li>使用[具有 Windows 資訊保護的敏感度標籤，](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)防止敏感內容離開您的組織在執行 windows 的裝置上。 |
+| 後續步驟      | <ul><li> 使用網站設計和網站腳本，定義建立新網站時所發生的預設[動作](https://developer.microsoft.com/office/blogs/site-scripts-site-designs-summer-2018-update/)。 例如，[設定外部共用設定](https://github.com/SharePoint/sp-dev-site-scripts/tree/master/samples/site-apply-external-sharing-setting)或[觸發 Microsoft 流程以撥打 Azure 函式](https://github.com/SharePoint/sp-dev-site-scripts/tree/master/samples/site-azure-function)，以套用非本機支援的設定。 </li><li> 記錄需求，以[使用標籤和 DLP 來保護 SharePoint 線上](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)檔案，以與 Microsoft 365 群組相關聯的網站。</li><li>檔組織需求，以保護連線至 Microsoft 365 群組的[SharePoint Online 網站與](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files)檔案。 </li><li>記錄組織對特定使用者或群組發佈[敏感度標籤](hhttps://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)的需求，以保護內容。</li></ul> |
 
 ## <a name="groups-management-capability-planning-checklist"></a>群組管理功能規劃檢查清單
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ace04c61b8bb26661201b3a2616799f0dc4ea87e
-ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
+ms.openlocfilehash: 68e8f432008a6322921ef440878a1cca1354e196
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44162675"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292471"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
@@ -60,9 +60,9 @@ ms.locfileid: "44162675"
 
 完成下列步驟，以將使用者新增至「內部使用者風險管理」角色群組：
 
-1. 在 Microsoft [https://protection.office.com/permissions](https://protection.office.com/permissions) 365 組織中登入使用系統管理員帳戶的認證。 "" "" "" ""
+1. [https://protection.office.com/permissions](https://protection.office.com/permissions)在 Microsoft 365 組織中登入使用系統管理員帳戶的認證。 "" "" "" ""
 
-2. 在安全性&amp;與合規性中心，移至 [**許可權**]。 選取連結，以在 Office 365 中檢視及管理角色。
+2. 在安全性與 &amp; 合規性中心，移至 [**許可權**]。 選取連結，以在 Office 365 中檢視及管理角色。
 
 3. 選取您想要新增使用者的「內幕風險管理」角色群組，然後選取 [**編輯角色群組**]。
 
@@ -118,7 +118,7 @@ ms.locfileid: "44162675"
     >您必須選取一或多個指標，才能接收您原則中所定義之危險活動的警示。
 
 4. 在 [**原則時段**] 頁面上，選取[原則時段](insider-risk-management-policies.md#policy-timeframes)，當使用者觸發內部使用者風險原則的相符時，就會變成作用中的使用者。
-5. 在 [**智慧**偵測] 頁面上，設定內部擁有風險原則的[反常和冒犯性語言](insider-risk-management-policies.md#intelligent-detections)偵測。
+5. 在 [**智慧**偵測] 頁面上，設定內幕風險原則的[反常偵測、冒犯性語言偵測和警示磁片區層級](insider-risk-management-policies.md#intelligent-detections)。
 6. 選取 [**儲存**] 以啟用內部使用者風險原則的這些設定。
 
 ## <a name="step-5-required-create-an-insider-risk-management-policy"></a>步驟5（必要）：建立「內幕人員風險管理」原則
@@ -142,8 +142,8 @@ ms.locfileid: "44162675"
     - **敏感性資訊類型**：選取 **[新增敏感性資訊類型]**，然後選取要設定優先順序的敏感性類型。 例如，*[美國銀行帳戶號碼]* 和 *[信用卡號碼]*。
     - **敏感度標籤**：選取 **[新增敏感度標籤]**，然後選取要設定優先順序的標籤。 例如，*[機密]* 和 *[密碼]*。
 7. 選取 **[下一步]** 繼續。
-8. 在 [**提醒**指標] 頁面上，您會看到您已在 [**有問必答風險設定** > **指示器**] 頁面上定義的指示器。 如果您在精靈開始時選取 *[資料外洩]* 範本，必須從 **[DLP 原則]** 下拉式清單中選取 DLP 原則。
-9. 在 [**選取監看視窗]** 頁面上，您會看到 [**有問必答風險設定** > **原則時段**] 頁面上的原則[監控視窗條件](insider-risk-management-policies.md#policy-timeframes)。 如果您已選取「終止*員工資料竊取*」原則範本，您可以選取 [*檢查活動後終止*] 核取方塊，以在從 Microsoft 365 HR Connector 匯入的終止日期之後，偵測活動。
+8. 在 [**提醒**指標] 頁面上，您會看到您已在 [**有問必答風險設定**  >  **指示器**] 頁面上定義的指示器。 如果您在精靈開始時選取 *[資料外洩]* 範本，必須從 **[DLP 原則]** 下拉式清單中選取 DLP 原則。
+9. 在 [**選取監看視窗]** 頁面上，您會看到 [**有問必答風險設定**原則時段] 頁面上的原則[監控視窗條件](insider-risk-management-policies.md#policy-timeframes)  >  **Policy timeframes** 。 如果您已選取「終止*員工資料竊取*」原則範本，您可以選取 [*檢查活動後終止*] 核取方塊，以在從 Microsoft 365 HR Connector 匯入的終止日期之後，偵測活動。
 10. 選取 **[下一步]** 繼續。
 11. 在**檢閱**頁面上，檢閱您為原則選擇的設定。 選取 **[編輯]** 以變更任何原則值，或選取 **[提交]** 來建立並啟用原則。
 

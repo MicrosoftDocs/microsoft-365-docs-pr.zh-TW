@@ -24,19 +24,19 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: '遵循此檢查清單，從 Microsoft 365 中移除員工，並保護資料安全。 '
-ms.openlocfilehash: d54a37575c0280ca9ad23fdd4a4b878286dde1ab
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: bfde2f55f12967e15213ecb12274a215c4190c93
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140590"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322084"
 ---
 # <a name="remove-a-former-employee"></a>移除離職員工
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
   
@@ -135,7 +135,7 @@ ms.locfileid: "44140590"
     
     非作用中的信箱無法接收電子郵件，也不會顯示於貴組織的共用通訊錄或其他清單中。
     
-    若要瞭解如何對信箱進行保留，請參閱[在 Exchange Online 中管理非使用中的信箱](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes)。
+    若要瞭解如何對信箱進行保留，請參閱[在 Exchange Online 中管理非使用中的信箱](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes)。
     
 ## <a name="forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>將離職員工的電子郵件轉寄給另一個員工，或轉換為共用信箱
 <a name="bkmk_forward"> </a>
@@ -214,11 +214,11 @@ ms.locfileid: "44140590"
 
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>。
 
-3. 在 Exchange 系統管理中心中，**流覽至** \> [收件者] [**信箱**]。 
+3. 在 Exchange 系統管理中心中，**流覽至 [** 收件者] [ \> **信箱**]。 
     
 4. 選取使用者，然後在 [行動**裝置**] 底下，選取 [**查看詳細資料**]。 
     
-5. 在 [行動**裝置詳細資料**] 頁面的 [行動**裝置**] 下，選取行動裝置，選取 [](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)**清除資料**![清除裝置]，然後選取 [**封鎖**]。 
+5. 在 [行動**裝置詳細資料**] 頁面的 [行動**裝置**] 下，選取行動裝置，選取 [**清除資料** ![ 清除裝置] ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) ，然後選取 [**封鎖**]。 
     
 6. 選取 [儲存]****。 
     
@@ -272,7 +272,7 @@ ms.locfileid: "44140590"
 
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>。
      
-2. 在 Exchange 系統管理中心中，**流覽至** \> [收件者] [**信箱**]。 
+2. 在 Exchange 系統管理中心中，**流覽至 [** 收件者] [ \> **信箱**]。 
     
 3. 按兩下使用者並移至 [**信箱功能**] 頁面。 在 [行動**裝置**] 下，選取 [**停用 Exchange ActiveSync** ] 和 [**停用裝置的 OWA]，** 然後在出現提示時回答 **[是]** 
     
@@ -325,20 +325,20 @@ ms.locfileid: "44140590"
 
 
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
 
 ::: moniker-end
     

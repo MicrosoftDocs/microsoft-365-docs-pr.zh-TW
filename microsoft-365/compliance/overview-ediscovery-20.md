@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 本文概要說明 Microsoft 365 中的高級 eDiscovery，以及內部及外部調查的工具。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fae09b33364f9ff57233ee25ccf40e4956dfd408
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 84fbf3bbdc4a4ee08901001f7898355e4c8b2705
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034903"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322038"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 中的高級 eDiscovery 解決方案概述
 
@@ -106,7 +106,3 @@ Advanced eDiscovery 的內建工作流程會與「電子探索參考模型」（
 ## <a name="configuring-case-settings"></a>設定案例設定
 
 使用 [**設定**] 索引標籤來設定全案例設定。 這包括新增成員至案例、關閉或刪除案例，以及設定搜尋及分析設定。
-
-## <a name="advanced-ediscovery-reports"></a>高級 eDiscovery 報告
-
-您可以在首頁上使用高級 eDiscovery 報告，協助您的組織追蹤所有高級 eDiscovery 案例中的活動和狀態。 「高級 eDiscovery 報告」功能會匯總案例、保管人、資料來源和通訊的相關資訊。 您可以根據各種準則篩選報表資料，然後將匯總資訊匯出至 CSV 檔案，以進行進一步分析。  如需詳細資訊，請參閱[Advanced eDiscovery 報告](advanced-ediscovery-reports.md)。

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，方法是將它肯定和否定的範例，以查看。 在訓練分類器之後，請確認其結果是否正確。 然後，您可以使用它來搜尋組織的內容，並將其分類，以套用保留或敏感度標籤，或將其包含在資料遺失防護（DLP）或保留原則中。
-ms.openlocfilehash: 6ff13a8d33168e5ce46ef1dab5b1d27461f17c48
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: edfa708077e273d9c644801f5461c880d87261b5
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636301"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292429"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>開始使用可訓練的分類器 (預覽)
 
@@ -68,8 +68,8 @@ Microsoft 365 隨附了五個建議的內建分類器：
 > [!CAUTION]
 > 我們正在取代**冒犯性語言**內建的分類符，因為它所產生的是大量的誤報。 請勿使用它，如果您目前使用它，您應該將商務程式移出它。 建議您改為使用**威脅**、**猥褻**和**騷擾**內建的分類符。
 
-- **簡歷**：偵測屬於申請人個人、教育、專業資格、工作經驗及其他個人識別資訊的文字帳戶的專案。
-- **原始程式碼**：偵測包含一組指令和語句的專案，這些專案是以前25種使用電腦程式設計語言的 GitHub 上所撰寫。
+- **簡歷**：偵測屬於申請人個人、教育、專業資格、工作經驗及其他個人識別資訊的文字帳戶的專案
+- **原始程式碼**：偵測包含一組指令和語句的專案，這些專案是以前25種使用的電腦程式設計語言所撰寫的 GitHub
 
 |語言名稱|||||
 |---------|---------|---------|---------|---------|
@@ -79,12 +79,14 @@ Microsoft 365 隨附了五個建議的內建分類器：
 |Perl     |Php      |Python   |R        |紅寶石     |
 |Scala    |命令介面    |迅速    |Tex      |Vim 腳本|
 
+> [!NOTE]
+> 原始程式碼經過訓練，可在大量文字是原始程式碼時進行偵測。 它不會偵測到以純文字交錯的原始程式碼文字。
 
-- **騷擾**：偵測特定類別的冒犯性語言的文字專案，這些專案會根據下列特性，偵測一或多個個人：種族、ethnicity、宗教、全國原始、性別、性方向、年齡、傷殘等相關的攻擊性設定。
-- **猥褻**語言：偵測特定類別的冒犯性語言文字專案，包含 embarrass 大部分人員的運算式。
-- **威脅**：偵測特定類別的冒犯性語言的文字專案與威脅，以認可暴力或對人員或財產造成實體損毀或損毀。
+- **騷擾**：偵測特定類別的冒犯性語言的文字專案，這些專案會根據下列特性，針對一或多個個人設定相關的冒犯性語言：種族、ethnicity、宗教、本國原產地、性別、性方向、年齡、傷殘
+- **猥褻**語言：偵測特定類別的冒犯性語言的文字專案，包含 embarrass 大部分人員的運算式
+- **威脅**：偵測特定類別的冒犯性語言的文字專案與威脅以認可暴力或對人員或財產造成實體損毀或損毀的威脅
 
-這些會出現在**Microsoft 365 規範中心** > **資料分類（預覽）** > **Trainable 的分類**器視圖中， `Ready to use`狀態為。
+這些會出現在**Microsoft 365 規範中心**  >  **資料分類（預覽）**  >  **Trainable 的分類**器視圖中，狀態為 `Ready to use` 。
 
 ![分類器-可供使用-分類器](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -110,7 +112,7 @@ Microsoft 365 隨附了五個建議的內建分類器：
 
 ![處理流程 trainable 分類器](../media/classifier-trainable-classifier-flow.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [保留標籤](labels.md)
 - [保留原則](retention-policies.md)

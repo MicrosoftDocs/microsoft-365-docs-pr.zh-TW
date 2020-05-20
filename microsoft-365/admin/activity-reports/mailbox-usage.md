@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: 瞭解如何取得信箱使用方式報告，以瞭解具有使用者信箱之使用者的活動。
-ms.openlocfilehash: 7453bf20949e04f07d74f6cf1df13e88de522b92
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: a866a586c9d36be03b39cb1c75be884eae3cb41b
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046924"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44321990"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>系統管理中心的 Microsoft 365 報告-信箱使用量
 
@@ -48,7 +48,7 @@ ms.locfileid: "43046924"
 |1.  <br/> |**信箱使用方式**報告可用於查看過去7天、30天、90天或180天的趨勢。 不過，如果您選取報告中的特定一天，表格會顯示從目前日期的28天內的資料（並非報告產生的日期）。  <br/> |
 |2.  <br/> |每個報告中的資料通常會涵蓋過去24到48小時。  <br/> |
 |3.  <br/> |[信箱] 圖表顯示貴組織中的使用者信箱總數量，以及在任何指定的報表天數期間內為使用中狀態的總數量。 如果使用者信箱具有電子郵件傳送、讀取、建立約會、傳送會議、接受會議、謝絕會議和取消會議活動，就會被視為作用中。  <br/> |
-|4.  <br/> |[**儲存**空間] 圖表顯示組織中所使用的儲存量。 儲存圖表不包含封存信箱。 如需有關自動展開封存的詳細資訊，請參閱[Microsoft 365 中的無限封存概述](https://docs.microsoft.com/office365/securitycompliance/unlimited-archiving)。<br/> |
+|4.  <br/> |[**儲存**空間] 圖表顯示組織中所使用的儲存量。 儲存圖表不包含封存信箱。 如需有關自動展開封存的詳細資訊，請參閱[Microsoft 365 中的無限封存概述](https://docs.microsoft.com/microsoft-365/compliance/unlimited-archiving)。<br/> |
 |5.  <br/> | [**配額**] 圖表會顯示每個配額類別中的使用者信箱數目。 有以下四種配額類別：  <br/>  良好 - 已使用的儲存空間低於發出警告配額的使用者人數。  <br/>  警告 - 已使用的儲存空間等於或高於發出警告，但低於禁止傳送配額的使用者人數。  <br/>  無法傳送 - 已使用的儲存空間等於或高於禁止傳送配額，但低於禁止傳送/接收配額的的使用者人數。  <br/>  無法傳送/接收 - 已使用的儲存空間等於或高於禁止傳送/接收資料的使用者人數。  <br/> |
 |6.  <br/> | 在 [**信箱**] 圖表上，Y 軸是使用者信箱的計數。  <br/>  在 [**儲存空間**] 圖表上，Y 軸是您組織中的使用者信箱所使用的儲存空間量。  <br/>  在 [**配額**] 圖表上，Y 軸是每個儲存配額中的使用者信箱數目。  <br/>  [信箱] 和 [儲存空間] 圖表的 X 軸代表該特定報表的已選取日期範圍。  <br/>  [配額] 圖表的 X 軸代表配額類別。  <br/> |
 |7.  <br/> |您可以透過選取圖例中的專案來篩選所看到的圖表。  <br/> |

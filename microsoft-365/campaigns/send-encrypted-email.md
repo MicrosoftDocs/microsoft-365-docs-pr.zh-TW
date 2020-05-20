@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 瞭解如何使用 Outlook 傳送加密的電子郵件。
-ms.openlocfilehash: fe0835c7b5b3328114ce7820da3336ca9f300d3e
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 5318fbe045c909e3b7f81d195a8e6b4d5eb96dc1
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165682"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322144"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>加密或標記敏感的電子郵件
 
@@ -52,7 +52,7 @@ ms.locfileid: "44165682"
 
 ## <a name="admin-settings"></a>系統管理設定
 
-您可以[在 Office 365 中瞭解如何在電子郵件加密中](https://docs.microsoft.com/office365/securitycompliance/email-encryption)設定電子郵件加密。
+您可以[在 Office 365 中瞭解如何在電子郵件加密中](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)設定電子郵件加密。
 
 ### <a name="automatically-encrypt-email-messages"></a>自動加密電子郵件
 
@@ -64,9 +64,9 @@ ms.locfileid: "44165682"
 2. 選擇 [管理] 磚。 
 3. 在系統管理中心中，選擇 [系統**管理中心] > Exchange**。 
 
-如需詳細資訊，請參閱[定義郵件流程規則，以加密 Office 365 中的電子郵件訊息](https://docs.microsoft.com/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email)。
+如需詳細資訊，請參閱[定義郵件流程規則，以加密 Office 365 中的電子郵件訊息](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)。
 
 ### <a name="brand-your-encryption-messages"></a>標記加密郵件
 
-您也可以套用您的行銷活動品牌，以自訂電子郵件訊息中的外觀和文字。 如需詳細資訊，請參閱[將貴組織的品牌新增至加密的郵件](https://docs.microsoft.com/office365/securitycompliance/email-encryption)。
+您也可以套用您的行銷活動品牌，以自訂電子郵件訊息中的外觀和文字。 如需詳細資訊，請參閱[將貴組織的品牌新增至加密的郵件](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)。
 

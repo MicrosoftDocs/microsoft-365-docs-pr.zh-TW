@@ -6,7 +6,6 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: Admin
-ms.date: 05/17/2019
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -26,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，您將瞭解如何使用安全連結來保護您的組織免受網路釣魚和其他攻擊。
-ms.openlocfilehash: 9f6222889d213c25c7411e39f0714ccf09cfe0d9
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 3dfa4016b34f430a260c9af4be2ed0c4126dea34
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208944"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294226"
 ---
 # <a name="atp-safe-links"></a>ATP 安全連結
 
@@ -40,7 +39,7 @@ ms.locfileid: "44208944"
 > [!IMPORTANT]
 > 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您使用的是 Outlook.com、Microsoft 365 系列或 Microsoft 365 個人，而且您正在尋找 Outlook 中安全連結的相關資訊，請參閱[Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-Office 365 ATP 安全連結 ([進階威脅防護](office-365-atp.md)的一部份) 可在[電子郵件訊息](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email)和 [Office 文件](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents)中，針對網址 (URL) 提供點擊即進行驗證的功能，協助您保護組織。 保護是透過您的 Microsoft 365 安全小組所設定的[ATP 安全連結原則](set-up-atp-safe-links-policies.md)所定義。
+Office 365 ATP 安全連結（Office 365 的部分「[高級威脅防護](office-365-atp.md)」）可在[電子郵件訊息](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email)和[Office 檔](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents)中提供網頁位址（URLs）的時間驗證，以協助保護您的組織。 保護是透過您的 Microsoft 365 安全小組所設定的[ATP 安全連結原則](set-up-atp-safe-links-policies.md)所定義。
   
 在您的 ATP 安全連結原則就緒後，全域管理員、安全性管理員及安全性讀者便可[查看高級威脅防護的報告](view-reports-for-atp.md)。 這些報告中的資訊可協助安全性小組採取進一步的步驟來保護您組織或研究安全性事件。
 
@@ -48,7 +47,7 @@ Office 365 ATP 安全連結 ([進階威脅防護](office-365-atp.md)的一部份
          
 ## <a name="how-to-get-atp-safe-links-protection"></a>如何取得 ATP 安全連結保護
 
-**首先，請確定您的訂用帳戶包含[進階威脅防護](office-365-atp.md)**。 ATP 包含在訂閱中，例如[microsoft 365 企業](https://www.microsoft.com/microsoft-365/enterprise/home)版、 [Microsoft 365 商務版](https://www.microsoft.com/microsoft-365/business)、Office 365 企業版 E5、Office 365 教育版 A5 等等。如果您的組織有未包含 Office 365 ATP 的 Microsoft 365 訂閱，您可以將 ATP 購買為附加元件。 如需詳細資訊，請參閱下列資源： 
+**首先，請確定您的訂閱包含[Office 365 高級威脅防護](office-365-atp.md)** 方案1或計畫2。 Office 365 ATP 包含在訂閱中，例如[microsoft 365 企業](https://www.microsoft.com/microsoft-365/enterprise/home)版、 [Microsoft 365 商務版](https://www.microsoft.com/microsoft-365/business)、Office 365 企業版 E5、Office 365 教育版 A5 等等。如果您的組織有未包含 Office 365 ATP 的 Microsoft 365 訂閱，您可以將 ATP 購買為附加元件。 如需詳細資訊，請參閱下列資源： 
 
 - [Office 365 進階威脅防護的方案與定價](https://products.office.com/exchange/advance-threat-protection)
 

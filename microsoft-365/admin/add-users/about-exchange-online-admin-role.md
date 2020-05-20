@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange online 系統管理員會管理您組織的電子郵件和信箱。 例如，他們會在使用者的信箱中復原已刪除的郵件。 '
-ms.openlocfilehash: e45d6a0e9f2151e03a300b1e36bf53b7c9f8ef68
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 984345dd92e9b9a6da3c803b77b663bd8299c62e
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618905"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322072"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>關於 Exchange Online 系統管理員角色
 
@@ -37,7 +37,7 @@ ms.locfileid: "43618905"
   
 - [復原使用者信箱中刪除的郵件 - 系統管理說明](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
     
-- [設定組織中信箱的封存和刪除原則](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes)。
+- [設定組織中信箱的封存和刪除原則](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes)。
     
 - 設定信箱功能，例如信箱共用原則：使用者如何與組織外的其他人共用行事曆和連絡人資訊。 
     
@@ -45,7 +45,7 @@ ms.locfileid: "43618905"
     
 - [建立共用信箱](../email/create-a-shared-mailbox.md)，讓一群組人員可以從共同的電子郵件地址監視及傳送電子郵件。 
     
-- 組織的[電子郵件反垃圾郵件保護](https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection)和惡意程式碼篩選器。 
+- 組織的[電子郵件反垃圾郵件保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection)和惡意程式碼篩選器。 
     
 - 管理 Microsoft 365 群組
     

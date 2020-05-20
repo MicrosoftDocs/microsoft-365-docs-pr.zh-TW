@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 取得在 Microsoft 365 中提高保護層級的協助
-ms.openlocfilehash: d7ab554ae2f162260e978fe82d4a197cc0d84d02
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 39c79f438bd8018f2e70863225664c55e4bcd615
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633710"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322120"
 ---
 # <a name="increase-threat-protection"></a>加強威脅防護
 
@@ -35,16 +35,16 @@ ms.locfileid: "43633710"
 
 開始之前，請先檢查您的 Office 365 安全分數。 Office 365 安全分數會根據您的定期活動和安全性設定來分析貴組織的安全性，並指定分數。 請先記下您目前的分數。 採取本文中建議的動作可提升您的分數。 目標不會達到最大分數，但請注意保護您的環境不會對使用者生產力造成不良影響的機會。 
 
-如需詳細資訊，請參閱[Microsoft 安全分數](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score)。
+如需詳細資訊，請參閱[Microsoft 安全分數](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)。
 
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>提升郵件中惡意程式碼的保護層級
 
 您的 Office 365 或 Microsoft 365 環境包括防範惡意程式碼，但是您可以使用常見於惡意程式碼的檔案類型來封鎖附件，以提升這種保護。 若要將惡意程式碼保護放大電子郵件：
   
-1. 移至[https://protection.office.com](https://protection.office.com)並以您的系統管理員帳號憑證登入。 
+1. 移至 [https://protection.office.com](https://protection.office.com) 並以您的系統管理員帳號憑證登入。 
     
-2. 在&amp;安全性與合規性中心的左功能窗格中，在 [**威脅管理**] 底下，選擇 [**原則** \> **Anti-Malware**]。
+2. 在安全性與 &amp; 合規性中心的左功能窗格中，在 [**威脅管理**] 底下，選擇 [**原則** \> **Anti-Malware**]。
     
 3. 按兩下預設原則，以編輯此全公司原則。
     
@@ -69,17 +69,17 @@ ms.locfileid: "43633710"
 
 若要建立郵件傳輸規則：
   
-1. 移至 [系統管理中心] <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> ，然後選擇 [系統**管理中心** \> ] [ **Exchange**]。
+1. 移至 [系統管理中心] <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> ，然後選擇 [系統**管理中心**] [ \> **Exchange**]。
     
 2. 在 [**郵件流程**] 類別中，按一下 [**規則**]。
     
-3. 按一下**+**[]，然後按一下 [**建立新規則**]。
+3. 按一下 [] **+** ，然後按一下 [**建立新規則**]。
     
 4. 按一下對話方塊底部的 [**更多選項**]，以查看完整的選項組。 
     
 5. 針對規則套用下表中的設定。 除非您想要變更設定的預設值，否則請保留預設值。
     
-6. 按一下 [儲存]****。
+6. 按一下 **[儲存]**。
     
 |**設定**|**開啟 Office 檔案的附件之前警告使用者**||
 |:-----|:-----|:-----|
@@ -103,17 +103,17 @@ ms.locfileid: "43633710"
   
 若要建立郵件傳輸規則，請觀看[這段簡短的影片](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7)，或遵循下列步驟：
   
-1. 在 Microsoft 365 系統管理中心中，按一下 [系統**管理中心** \> ] [ **Exchange**]。
+1. 在 Microsoft 365 系統管理中心中，按一下 [系統**管理中心**] [ \> **Exchange**]。
     
 2. 在 [**郵件流程**] 類別中，按一下 [**規則**]。
     
-3. 按一下**+**[]，然後按一下 [**建立新規則**]。
+3. 按一下 [] **+** ，然後按一下 [**建立新規則**]。
     
 4. 按一下對話方塊底部的 [**更多選項**]，以查看完整的選項組。 
     
 5. 套用下表中的設定。 除非您想要變更設定的預設值，否則請保留預設值。
     
-6. 按一下 [儲存]****。
+6. 按一下 **[儲存]**。
     
 |**設定**|**開啟 Office 檔案的附件之前警告使用者**|
 |:-----|:-----|
@@ -134,7 +134,7 @@ ms.locfileid: "43633710"
   
 1. 請移至 [https://protection.office.com](https://protection.office.com)。 
     
-2. 在安全性&amp;與合規性中心的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則**]。
+2. 在安全性與 &amp; 合規性中心的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則**]。
     
 3. 在 [**原則**] 頁面上，選擇 [ **ATP 反網路釣魚**]。
     
@@ -148,25 +148,25 @@ ms.locfileid: "43633710"
 |**設定或選項**<br/>|**建議的設定** <br/>|
 |:-----|:-----|
 |名稱  <br/> |網域和最有價值的活動人員  <br/> |
-|描述  <br/> |確定最重要的人員和我們的網域未進行類比。  <br/> |
+|說明  <br/> |確定最重要的人員和我們的網域未進行類比。  <br/> |
 |新增要保護的使用者  <br/> |選取 **[+ 新增條件]，收件者是**。 輸入使用者名稱，或輸入候選人、活動管理員及其他重要員工成員的電子郵件地址。 您最多可以新增20個要從類比中保護的內部和外部地址。  <br/> |
 |新增要保護的網域  <br/> |選取 **[+ 新增條件]，收件者網域是**。 輸入您的 Microsoft 365 訂閱相關聯的自訂網域（如果您已定義的話）。 您可以輸入一個以上的網域。  <br/> |
-|選擇動作  <br/> |如果模仿的使用者傳送電子郵件：選擇 [重新**導向郵件至其他電子郵件地址**]，然後輸入安全性管理員的電子郵件地址。例如，*劉愛琳<span><span>@contoso .com*。          如果電子郵件來自冒充的網域：請選擇 **[隔離郵件]**。  <br/> |
+|選擇動作  <br/> |如果模仿的使用者傳送電子郵件：選擇 [重新**導向郵件至其他電子郵件地址**]，然後輸入安全性管理員的電子郵件地址。例如，*劉愛琳 <span> <span> @contoso .com*。          如果電子郵件來自冒充的網域：請選擇 **[隔離郵件]**。  <br/> |
 |信箱情報  <br/> |當您建立新的反網路釣魚原則時，系統會預設選取信箱情報。 請將此設定保留為 **[開啟]**，以獲得最佳結果。  <br/> |
 |新增受信任的寄件者與網域  <br/> |您可以在這裡新增您自己的網域或任何其他受信任的網域。  <br/> |
-|套用對象  <br/> |請選取 **[收件者的網域是]**。 在 **[任一項]** 底下選取 **[選擇]**。 選取 **[+ 新增]**。 選取功能變數名稱（例如 contoso）旁的核取方塊 *。<span>com <span> *，在清單中，然後選取 [**新增**]。 選取 **[完成]**。  <br/> |
+|套用對象  <br/> |請選取 **[收件者的網域是]**。 在 **[任一項]** 底下選取 **[選擇]**。 選取 **[+ 新增]**。 選取功能變數名稱（例如 contoso）旁的核取方塊 *。 <span> <span>com*，在清單中，然後選取 [**新增**]。 選取 **[完成]**。  <br/> |
    
 如需詳細資訊，請參閱[設定 Office 365 ATP 反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)。
   
 ## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>抵禦具有高級威脅防護（ATP）的惡意附件、檔案及連結
 
-![指向的橫幅https://aka.ms/aboutM365preview。](../media/m365admincenterchanging.png)
+![指向的橫幅 https://aka.ms/aboutM365preview 。](../media/m365admincenterchanging.png)
 
-首先，請確定您已開啟新的系統<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>管理中心預覽，請參閱系統管理員中心。 開啟**新系統管理中心**的文字旁的切換功能。
+首先，請確定 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 您已開啟新的系統管理中心預覽，請參閱系統管理員中心。 開啟**新系統管理中心**的文字旁的切換功能。
 
    ![新的系統管理中心預覽。](../media/previewon.png)
 
-如果您還沒有在租使用者中看到含卡的「**安裝**」頁面，請參閱 how to Complete &amp; The Security 合規性中心內的步驟。 請參閱在[安全性 & 規範中心內設定 atp 安全附件](#set-up-atp-safe-attachments-in-the-security--compliance-center)，並在[安全性 & 規範中心設定 atp 安全連結](#set-up-atp-safe-links-in-the-security--compliance-center)。
+如果您還沒有在租使用者中看到含卡的「**安裝**」頁面，請參閱 how to Complete the Security &amp; 合規性中心內的步驟。 請參閱在[安全性 & 規範中心內設定 atp 安全附件](#set-up-atp-safe-attachments-in-the-security--compliance-center)，並在[安全性 & 規範中心設定 atp 安全連結](#set-up-atp-safe-links-in-the-security--compliance-center)。
 
 1.  在左側導覽中，選擇 [**安裝**]。
 2. 在 [**安裝**] 頁面上，選擇 [**增加來自高級威脅的保護**] 的 [**查看**]。</br></br>
@@ -186,15 +186,15 @@ ms.locfileid: "43633710"
   
 若要建立 ATP 安全附件原則，請觀看[這段簡短的影片](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，或完成下列步驟：
   
-1. 移至[https://protection.office.com](https://protection.office.com)並以您的系統管理員帳戶登入。 
+1. 移至 [https://protection.office.com](https://protection.office.com) 並以您的系統管理員帳戶登入。 
     
-2. 在安全性&amp;與合規性中心的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則**]。
+2. 在安全性與 &amp; 合規性中心的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則**]。
     
 3. 在 [原則] 頁面上，選擇 [ **ATP 安全附件**]。
     
 4. 在 [安全附件] 頁面上，選取 [**開啟 SharePoint、OneDrive 和 Microsoft 小組的 ATP** ] 核取方塊，廣泛套用此保護。 
     
-5. 選取**+** 以建立新的原則。 
+5. 選取 **+** 以建立新的原則。 
     
 6. 套用下表中的設定。 
     
@@ -204,7 +204,7 @@ ms.locfileid: "43633710"
 |**設定或選項**|**建議的設定** <br/>|
 |:-----|:-----|
 |名稱  <br/> |使用偵測到的惡意程式碼封鎖目前和未來的電子郵件。  <br/> |
-|描述  <br/> |使用偵測到的惡意程式碼封鎖目前和未來的電子郵件和附件。  <br/> |
+|說明  <br/> |使用偵測到的惡意程式碼封鎖目前和未來的電子郵件和附件。  <br/> |
 |儲存附件未知的惡意程式碼回應  <br/> |Select **Block-封鎖目前和未來的電子郵件和附件偵測到的惡意**代碼。  <br/> |
 |在偵測時重新導向附件  <br/> |啟用重新導向（選取此方塊）輸入系統管理員帳戶或隔離的信箱設定。          若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍（選取此方塊）。  <br/> |
 |套用對象  <br/> |收件者網域是。 . . 選取您的網域。  <br/> |
@@ -223,9 +223,9 @@ ms.locfileid: "43633710"
     
 若要設定 ATP 安全連結，請觀看[這段簡短的訓練影片](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)，或完成下列步驟：
   
-1. 移至[https://protection.office.com](https://protection.office.com)並以您的系統管理員帳戶登入。 
+1. 移至 [https://protection.office.com](https://protection.office.com) 並以您的系統管理員帳戶登入。 
     
-2. 在安全性&amp;與合規性中心的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則**]。
+2. 在安全性與 &amp; 合規性中心的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則**]。
     
 3. 在 [原則] 頁面上，選擇 [ **ATP 安全連結**]。
     
@@ -235,15 +235,15 @@ ms.locfileid: "43633710"
     
 2. 在 [**電子郵件除外，套用至內容**] 底下，選取 [適用于**企業的 Microsoft 365 應用程式、Office iOS 和 Android**]。
     
-3. 按一下 [儲存]****。 
+3. 按一下 **[儲存]**。 
     
 若要建立新的原則針對您網域中的所有收件者：
   
-1. 在 [安全連結] 頁面的 [**適用于整個組織的原則**] 底下**+** ，按一下以建立新原則。 
+1. 在 [安全連結] 頁面的 [**適用于整個組織的原則**] 底下，按一下 **+** 以建立新原則。 
     
 2. 套用下表所列的設定。
     
-3. 按一下 [儲存]****。 
+3. 按一下 **[儲存]**。 
 
 |**設定或選項**|**建議的設定** <br/>|
 |:-----|:-----|
@@ -256,31 +256,31 @@ ms.locfileid: "43633710"
   
 ## <a name="turn-on-the-unified-audit-log"></a>開啟整合的審計記錄檔
 
-在安全性&amp;與合規性中心開啟「審核記錄搜尋」之後，您可以保留記錄中的系統管理員和其他使用者活動，並加以搜尋。 
+在安全性與合規性中心開啟「審核記錄搜尋」之後 &amp; ，您可以保留記錄中的系統管理員和其他使用者活動，並加以搜尋。 
 
 您必須獲指派 Exchange Online 中的「審計記錄」角色，才可在 Microsoft 365 訂閱中開啟或關閉審核記錄搜尋。 根據預設，此角色會指派給 Exchange 系統管理中心的 [許可權] 頁面上的 [規範管理] 和 [組織管理] 角色群組。 Microsoft 365 中的全域系統管理員預設為此群組的成員。
 
-1. 若要開啟 [審計記錄檔搜尋]，請移至系統管理中心<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> ，然後在左側導覽中的 [系統**管理中心**] 下選擇 [**合規性**]。 
-2. 在 [ **Microsoft 365 合規性**] 頁面上，選擇 [**其他資源**]，然後在 [ **Office 365 &amp;安全性中心**] 卡片上**開啟**。
+1. 若要開啟 [審計記錄檔搜尋]，請移至系統管理中心， <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 然後在左側導覽中的 [系統**管理中心**] 下選擇 [**合規性**]。 
+2. 在 [ **Microsoft 365 合規性**] 頁面上，選擇 [**其他資源**]，然後在 [ **Office 365 安全性 &amp; 中心**] 卡片上**開啟**。
 
     ![在安全性 & 合規性轎車上選擇 [開啟]。](../media/gotosecandcomp.png)
 3. 在 [安全性與合規性] 頁面上，選擇 [**搜尋**]，然後再**審核記錄搜尋**。
 1. 在 [**審計記錄搜尋**] 頁面的頂端，選擇 [**開啟審計**]。
 
-開啟功能後，您可以搜尋檔案、資料夾及許多活動。 如需詳細資訊，請參閱[搜尋審核記錄](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)檔。
+開啟功能後，您可以搜尋檔案、資料夾及許多活動。 如需詳細資訊，請參閱[搜尋審核記錄](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)檔。
 
 ## <a name="tune-up-anonymous-sharing-settings-for-sharepoint-and-onedrive-files-and-folders"></a>調整 SharePoint 和 OneDrive 檔案及資料夾的匿名共用設定
 
 （將預設匿名連結到期變更為14天，將預設共用類型變更為「特定人員」）若要變更 OneDrive 和 SharePoint 的共用設定：
 1. 移至 [系統管理中心] <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> ，然後選擇左側導覽中的 [系統**管理中心**] 底下的 [ **SharePoint** ]。 
-2. 在 SharePoint 系統管理中心，移至 [**原則** \> ] [**共用**]。
+2. 在 SharePoint 系統管理中心，移至 [**原則**] [ \> **共用**]。
 3. 在 [**共用**] 頁面的 [檔案**和資料夾連結**] 底下，選取 [**特定人員**]，然後在 **[任何人] 連結的 [高級設定**] 底下，選取 [**這些連結必須在這段天數內到期**]，然後輸入14（或您想要限制連結壽命的其他天數）。
 
     ![選擇 [特定人員]，並將連結到期設定為14天。](../media/anyonelinks.png)
 
 ## <a name="activity-alerts"></a>活動警示
 
-您可以使用活動警示來追蹤系統管理員和使用者活動，並偵測組織中的惡意程式碼和資料遺失防護事件。 您的訂閱包含一組預設原則，但您也可以建立自訂的原則。 如需詳細資訊，請參閱[警示原則](https://docs.microsoft.com/office365/securitycompliance/alert-policies)。 例如，如果您在 SharePoint 中儲存重要檔案，而您不想讓任何人在外部共用，您可以建立通知，以在使用者共用郵件時提醒您。
+您可以使用活動警示來追蹤系統管理員和使用者活動，並偵測組織中的惡意程式碼和資料遺失防護事件。 您的訂閱包含一組預設原則，但您也可以建立自訂的原則。 如需詳細資訊，請參閱[警示原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)。 例如，如果您在 SharePoint 中儲存重要檔案，而您不想讓任何人在外部共用，您可以建立通知，以在使用者共用郵件時提醒您。
 
 下圖顯示 Microsoft 365 隨附的預設原則。 <br/><br/>
     ![Microsoft 365 隨附的預設警示原則](../media/alertpolicies.png)

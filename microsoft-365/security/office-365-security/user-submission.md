@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
-ms.openlocfilehash: 6aa343b337139c4d81f35f78a227634d3b6a8781
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 2a1872aff88cd1cc21c6a6e3258671c303b55e17
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262520"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294190"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>在 Exchange Online 中指定使用者提交垃圾郵件和網路釣魚郵件的信箱
 
@@ -31,7 +31,7 @@ ms.locfileid: "44262520"
 - [Outlook 網頁版中的內建報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)（以前稱為 Outlook web App）
 
   > [!NOTE]
-  > 如果[在網頁上的 outlook 中已停用](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)報告，讓使用者在這裡提交，將會覆寫該設定，讓使用者再次在 Outlook 的 outlook 中報告郵件。
+  > 如果[在網頁上的 outlook 中已停用](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)報告，讓使用者在這裡提交，將會覆寫該設定，讓使用者再次在 Outlook 的 outlook 中報告郵件。
 
 您也可以設定協力廠商郵件報告工具，將郵件轉寄至您指定的信箱。
 
@@ -75,8 +75,6 @@ ms.locfileid: "44262520"
 
         完成後，請按一下 [**確認**]。
 
-        ![將報告的郵件傳送至 Microsoft 和自訂信箱](../../media/user-submission-enable-outlook-report-message.png)
-
      > [!CAUTION]
      > 如果您已在 Outlook 網頁版 outlook 上使用 Outlook 來[停用 outlook 中的垃圾郵件報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)，但您設定上述任一設定將郵件報告給 microsoft，使用者就可以使用報告訊息增益集，在網頁型 outlook 中將郵件報告給 microsoft。
 
@@ -86,8 +84,6 @@ ms.locfileid: "44262520"
 
       完成後，請按一下 [**確認**]。
 
-      ![使用協力廠商工具將報告的郵件傳送至自訂信箱](../../media/user-submission-disable-outlook-report-message.png)
-     
 ## <a name="message-submission-format"></a>郵件提交格式
 
 傳送至自訂信箱的郵件必須遵循特定提交郵件格式。 提交的主旨（信封標題）應採用此格式：

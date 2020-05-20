@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: 瞭解如何移除使用者帳戶中的授權。
-ms.openlocfilehash: 49d3b4b6786bc6ab66bc0416aac847ada592664d
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: d4ac823a7345cb4d04f599c5635248d6ce324257
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139634"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322026"
 ---
 # <a name="unassign-licenses-from-users"></a>取消指派給使用者的授權
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -129,7 +129,7 @@ ms.locfileid: "44139634"
 
 4. 在 [**取代現有產品**] 窗格中，選取 [**取代現有產品授權指派** \> **] [下一步]**。
 
-5. 在 [**取代現有產品**] 窗格的底部，選取 [**從選取的使用者移除所有產品授權**] 核取方塊，然後選取 [**取代** \> **關閉** \> ] **[關閉]。**
+5. 在 [**取代現有產品**] 窗格的底部，選取 [**從選取的使用者移除所有產品授權**] 核取方塊，然後選取 [**取代** \> **關閉**] [關閉] \> ** **。
 
 ::: moniker-end
 
@@ -143,7 +143,7 @@ ms.locfileid: "44139634"
 
 4. 在 [**取代現有產品**] 窗格中，選取 [**取代現有產品授權指派** \> **] [下一步]**。
 
-5. 在 [**取代現有產品**] 窗格的底部，選取 [**從選取的使用者移除所有產品授權**] 核取方塊，然後選取 [**取代** \> **關閉** \> ] **[關閉]。**
+5. 在 [**取代現有產品**] 窗格的底部，選取 [**從選取的使用者移除所有產品授權**] 核取方塊，然後選取 [**取代** \> **關閉**] [關閉] \> ** **。
 
 ::: moniker-end
 
@@ -159,9 +159,9 @@ ms.locfileid: "44139634"
 
 - 請注意，除非使用者從 Microsoft 365 系統管理中心中刪除，或是透過 Active Directory 同步處理移除，否則不會刪除在商務用 OneDrive 中儲存的檔案。 如需詳細資訊，請參閱[OneDrive 保留和刪除](https://docs.microsoft.com/onedrive/retention-and-deletion)。
 
-- 此外，移除授權時，使用者的信箱無法再使用「內容搜尋」或「高級 eDiscovery」等 eDiscovery 工具進行搜尋。 如需詳細資訊，請參閱[Microsoft 365 中內容搜尋](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes)中的「搜尋中斷連線或已取消授權的信箱」一節。
+- 此外，移除授權時，使用者的信箱無法再使用「內容搜尋」或「高級 eDiscovery」等 eDiscovery 工具進行搜尋。 如需詳細資訊，請參閱[Microsoft 365 中內容搜尋](https://docs.microsoft.com/microsoft-365/compliance/content-search#searching-disconnected-or-de-licensed-mailboxes)中的「搜尋中斷連線或已取消授權的信箱」一節。
 
-- 如果您有企業訂閱（如 Office 365 企業版 E3），Exchange Online 可讓您使用非使用中的[信箱](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365)來保留已刪除之使用者帳戶的信箱資料。 如需詳細資訊，請參閱[在 Exchange Online 中建立及管理非](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes)使用中的信箱。
+- 如果您有企業訂閱（如 Office 365 企業版 E3），Exchange Online 可讓您使用非使用中的[信箱](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365)來保留已刪除之使用者帳戶的信箱資料。 如需詳細資訊，請參閱[在 Exchange Online 中建立及管理非](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes)使用中的信箱。
 
 - 如需如何在移除授權後，封鎖使用者對 Microsoft 365 資料存取的相關資訊，以及如何在以後存取資料，請參閱[移除離職員工](../add-users/remove-former-employee.md)。
 
