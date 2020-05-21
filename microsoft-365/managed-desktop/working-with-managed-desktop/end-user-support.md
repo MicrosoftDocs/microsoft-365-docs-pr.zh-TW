@@ -6,60 +6,66 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 687b587da033b3c6cc8e027221043dd6c52e15c3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3e74f644457057eafe61235c874ca6290bfae6a3
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084985"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327889"
 ---
-# <a name="getting-help-for-end-users"></a><span data-ttu-id="9c053-103">取得使用者的說明</span><span class="sxs-lookup"><span data-stu-id="9c053-103">Getting help for end users</span></span>
+# <a name="getting-help-for-end-users"></a><span data-ttu-id="e0588-103">取得使用者的協助</span><span class="sxs-lookup"><span data-stu-id="e0588-103">Getting help for end users</span></span>
 
-<span data-ttu-id="9c053-104">您組織中的使用者可以使用其 Microsoft 受管理的電腦裝置取得協助的兩種方式：**取得協助**的應用程式或電話支援。</span><span class="sxs-lookup"><span data-stu-id="9c053-104">There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support.</span></span> <span data-ttu-id="9c053-105">這兩種支援選項可使用的使用者，每週 7 天，每天 24 小時。</span><span class="sxs-lookup"><span data-stu-id="9c053-105">Both of these support options are available to users 24 hours a day, 7 days a week.</span></span>
+<span data-ttu-id="e0588-104">組織中的使用者可透過下列兩種方式取得 Microsoft 受管理桌面裝置的協助：**取得協助**應用程式或電話支援。</span><span class="sxs-lookup"><span data-stu-id="e0588-104">There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support.</span></span> <span data-ttu-id="e0588-105">這兩種支援選項均可供使用者在一周7天、一天24小時。</span><span class="sxs-lookup"><span data-stu-id="e0588-105">Both of these support options are available to users 24 hours a day, 7 days a week.</span></span>
  
 >[!NOTE]
-><span data-ttu-id="9c053-106">這些就無法使用 [測試] 群組中的裝置的支援選項。</span><span class="sxs-lookup"><span data-stu-id="9c053-106">These support options are not available for devices in the Test group.</span></span>
+><span data-ttu-id="e0588-106">這些支援選項不適用於測試群組中的裝置。</span><span class="sxs-lookup"><span data-stu-id="e0588-106">These support options are not available for devices in the Test group.</span></span>
 
-## <a name="get-help-app"></a><span data-ttu-id="9c053-107">取得說明應用程式</span><span class="sxs-lookup"><span data-stu-id="9c053-107">Get Help app</span></span>
+## <a name="get-help-app"></a><span data-ttu-id="e0588-107">取得協助應用程式</span><span class="sxs-lookup"><span data-stu-id="e0588-107">Get Help app</span></span>
 
-<span data-ttu-id="9c053-108">提供支援，您的使用者的慣用的方法是**取得協助**，使用者裝置內建易於使用的介面。</span><span class="sxs-lookup"><span data-stu-id="9c053-108">The preferred method for providing support to your users is **Get Help**, an easy-to-use interface built into the end user device.</span></span>  
+<span data-ttu-id="e0588-108">為您的使用者提供支援的慣用方法，可**協助**您在使用者裝置內建便於使用的介面。</span><span class="sxs-lookup"><span data-stu-id="e0588-108">The preferred method for providing support to your users is **Get Help**, an easy-to-use interface built into the end user device.</span></span>  
 
-![取得說明應用程式圖示](../../media/get-help.png)
+![取得協助應用程式圖示](../../media/get-help.png)
 
-<span data-ttu-id="9c053-110">這是 Microsoft 受管理電腦的所有裝置上安裝並已釘選到工作列的應用程式。</span><span class="sxs-lookup"><span data-stu-id="9c053-110">This is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar.</span></span> 
+<span data-ttu-id="e0588-110">這是安裝在所有 Microsoft 受管理的桌面裝置上的應用程式，且會釘住至工作列。</span><span class="sxs-lookup"><span data-stu-id="e0588-110">This is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar.</span></span> 
 
-- <span data-ttu-id="9c053-111">使用者可以要求回到提供的電話號碼或線上服務代表具有的交談呼叫。</span><span class="sxs-lookup"><span data-stu-id="9c053-111">End users can request a call back to a provided phone number, or chat online with a service rep.</span></span>
-- <span data-ttu-id="9c053-112">屬於 Microsoft 受管理電腦的支援範圍以外的要求重新導向至本機 IT 服務台透過電話。</span><span class="sxs-lookup"><span data-stu-id="9c053-112">Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.</span></span>
+- <span data-ttu-id="e0588-111">使用者可以要求來電回提供的電話號碼，或與服務代表線上交談。</span><span class="sxs-lookup"><span data-stu-id="e0588-111">End users can request a call back to a provided phone number, or chat online with a service rep.</span></span>
+- <span data-ttu-id="e0588-112">在 Microsoft 受管理桌面支援範圍之外的要求會透過電話重新導向至本機 IT 支援人員。</span><span class="sxs-lookup"><span data-stu-id="e0588-112">Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.</span></span>
 
-### <a name="prerequisites"></a><span data-ttu-id="9c053-113">必要條件</span><span class="sxs-lookup"><span data-stu-id="9c053-113">Prerequisites</span></span>
-<span data-ttu-id="9c053-114">若要能夠透過應用程式取得協助您的使用者，請確認符合下列先決條件：</span><span class="sxs-lookup"><span data-stu-id="9c053-114">For your end users to be able to get help through the app, make sure these prerequisites are met:</span></span>
+### <a name="prerequisites"></a><span data-ttu-id="e0588-113">必要條件</span><span class="sxs-lookup"><span data-stu-id="e0588-113">Prerequisites</span></span>
+<span data-ttu-id="e0588-114">為了讓您的使用者能夠透過應用程式取得協助，請確定符合下列必要條件：</span><span class="sxs-lookup"><span data-stu-id="e0588-114">For your end users to be able to get help through the app, make sure these prerequisites are met:</span></span>
 
-- <span data-ttu-id="9c053-115">裝置必須註冊 Microsoft 受管理電腦中[設定 Microsoft 受管理的電腦裝置](../get-started/set-up-devices.md)，例如[自行註冊新的裝置](../get-started/register-devices-self.md)使用其中一個方法。</span><span class="sxs-lookup"><span data-stu-id="9c053-115">The device must be registered with Microsoft Managed Desktop using one of the methods in [Set up Microsoft Managed Desktop devices](../get-started/set-up-devices.md), such as [Register new devices yourself](../get-started/register-devices-self.md).</span></span>
-- <span data-ttu-id="9c053-116">裝置的顯示語言必須設定為任何這些英文地區設定： 英文-美國、 en-us gb、 en-us au、 en-us nz 或 en-us ca。</span><span class="sxs-lookup"><span data-stu-id="9c053-116">The display language for the device must be set to any of these English-language locales: en-us, en-gb, en-au, en-nz, or en-ca.</span></span>
-- <span data-ttu-id="9c053-117">取得說明應用程式應該是最新狀態。</span><span class="sxs-lookup"><span data-stu-id="9c053-117">The Get Help app should be up to date.</span></span> <span data-ttu-id="9c053-118">若要確認此，請檢查 Microsoft 網上商店中的應用程式更新。</span><span class="sxs-lookup"><span data-stu-id="9c053-118">To confirm this, check for app updates in the Microsoft Store.</span></span>
-- <span data-ttu-id="9c053-119">某些[端點](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop)必須可從裝置存取。</span><span class="sxs-lookup"><span data-stu-id="9c053-119">Certain [endpoints](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop) must be accessible from the device.</span></span>
+- <span data-ttu-id="e0588-115">裝置必須使用[設定 Microsoft 受管理的桌面裝置](../get-started/set-up-devices.md)中的其中一種方法，向 Microsoft managed desktop 註冊，例如[自行註冊新裝置](../get-started/register-devices-self.md)。</span><span class="sxs-lookup"><span data-stu-id="e0588-115">The device must be registered with Microsoft Managed Desktop using one of the methods in [Set up Microsoft Managed Desktop devices](../get-started/set-up-devices.md), such as [Register new devices yourself](../get-started/register-devices-self.md).</span></span>
+- <span data-ttu-id="e0588-116">裝置的顯示語言必須設定為下列任何一種英文語言地區設定： en-us、en、en、en 或 en-ca。</span><span class="sxs-lookup"><span data-stu-id="e0588-116">The display language for the device must be set to any of these English-language locales: en-us, en-gb, en-au, en-nz, or en-ca.</span></span>
+- <span data-ttu-id="e0588-117">「取得説明」應用程式應該是最新的。</span><span class="sxs-lookup"><span data-stu-id="e0588-117">The Get Help app should be up to date.</span></span> <span data-ttu-id="e0588-118">若要確認這一點，請檢查 Microsoft Store 中的應用程式更新。</span><span class="sxs-lookup"><span data-stu-id="e0588-118">To confirm this, check for app updates in the Microsoft Store.</span></span>
+- <span data-ttu-id="e0588-119">必須可從裝置存取特定[端點](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop)。</span><span class="sxs-lookup"><span data-stu-id="e0588-119">Certain [endpoints](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop) must be accessible from the device.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="9c053-120">取得說明應用程式可能需要最多一個小時之後裝置部署完全運作。</span><span class="sxs-lookup"><span data-stu-id="9c053-120">The Get Help app can take up to one hour after a device is deployed to fully function.</span></span>
+> <span data-ttu-id="e0588-120">在部署裝置以完全運作後，取得輔助應用程式最多可能需要一小時。</span><span class="sxs-lookup"><span data-stu-id="e0588-120">The Get Help app can take up to one hour after a device is deployed to fully function.</span></span>
 
-<span data-ttu-id="9c053-121">如果您已檢查這些必要條件並取得說明應用程式仍無法正常運作，您身為 IT 系統管理員應該檔案[支援要求](admin-support.md)。</span><span class="sxs-lookup"><span data-stu-id="9c053-121">If you've checked these prerequisites and the Get Help app still isn't working, you as an IT admin should file a [support request](admin-support.md).</span></span>
+<span data-ttu-id="e0588-121">如果您已檢查這些必要條件，但取得協助應用程式仍無法運作，您的 IT 系統管理員應該會將[支援要求](admin-support.md)歸檔。</span><span class="sxs-lookup"><span data-stu-id="e0588-121">If you've checked these prerequisites and the Get Help app still isn't working, you as an IT admin should file a [support request](admin-support.md).</span></span>
 
-## <a name="phone-support"></a><span data-ttu-id="9c053-122">電話支援</span><span class="sxs-lookup"><span data-stu-id="9c053-122">Phone support</span></span>
+## <a name="phone-support"></a><span data-ttu-id="e0588-122">電話支援</span><span class="sxs-lookup"><span data-stu-id="e0588-122">Phone support</span></span>
 
-<span data-ttu-id="9c053-123">使用 Microsoft 受管理的電腦裝置的使用者也可以存取他們可以撥的免付費電話號碼。</span><span class="sxs-lookup"><span data-stu-id="9c053-123">End users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call.</span></span> <span data-ttu-id="9c053-124">這是要用於時無法取得說明。</span><span class="sxs-lookup"><span data-stu-id="9c053-124">This is meant to be used when Get Help isn’t available.</span></span> <span data-ttu-id="9c053-125">例如，如果他們無法登入裝置或裝置會中斷。</span><span class="sxs-lookup"><span data-stu-id="9c053-125">For example, if they can’t sign in to the device, or the device is broken.</span></span> <span data-ttu-id="9c053-126">以下是電話支援的電話號碼：</span><span class="sxs-lookup"><span data-stu-id="9c053-126">Here are the phone numbers for phone support:</span></span>
+<span data-ttu-id="e0588-123">使用 Microsoft 受管理的桌面裝置的使用者也可以存取可撥打的免付費電話號碼。</span><span class="sxs-lookup"><span data-stu-id="e0588-123">End users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call.</span></span> <span data-ttu-id="e0588-124">這是在取得無法使用 [說明] 時使用。</span><span class="sxs-lookup"><span data-stu-id="e0588-124">This is meant to be used when Get Help isn’t available.</span></span> <span data-ttu-id="e0588-125">例如，如果他們無法登入裝置，或裝置遭到中斷。</span><span class="sxs-lookup"><span data-stu-id="e0588-125">For example, if they can’t sign in to the device, or the device is broken.</span></span> <span data-ttu-id="e0588-126">以下是電話支援電話號碼：</span><span class="sxs-lookup"><span data-stu-id="e0588-126">Here are the phone numbers for phone support:</span></span>
 
-- <span data-ttu-id="9c053-127">美國： +1 855 425 0216</span><span class="sxs-lookup"><span data-stu-id="9c053-127">United States: +1 855 425 0216</span></span>
-- <span data-ttu-id="9c053-128">加拿大 （不含魁北克）： +1 855 425 0216</span><span class="sxs-lookup"><span data-stu-id="9c053-128">Canada (excluding Quebec): +1 855 425 0216</span></span>
-- <span data-ttu-id="9c053-129">英國： +44 800 026 0698</span><span class="sxs-lookup"><span data-stu-id="9c053-129">United Kingdom: +44 800 026 0698</span></span>
-- <span data-ttu-id="9c053-130">比利時: + 32 800 58533</span><span class="sxs-lookup"><span data-stu-id="9c053-130">Belgium: +32 800 58533</span></span>
-- <span data-ttu-id="9c053-131">盧森堡： +352 800 40119</span><span class="sxs-lookup"><span data-stu-id="9c053-131">Luxembourg: +352 800 40119</span></span>
-- <span data-ttu-id="9c053-132">澳大利亞： +61 180 037 0619</span><span class="sxs-lookup"><span data-stu-id="9c053-132">Australia: +61 180 037 0619</span></span>
-- <span data-ttu-id="9c053-133">紐西蘭: + 64 988 44380</span><span class="sxs-lookup"><span data-stu-id="9c053-133">New Zealand: +64 988 44380</span></span>
+- <span data-ttu-id="e0588-127">美國： + 1 855 425 0216</span><span class="sxs-lookup"><span data-stu-id="e0588-127">United States: +1 855 425 0216</span></span>
+- <span data-ttu-id="e0588-128">加拿大（不包括魁北克）： + 1 855 425 0216</span><span class="sxs-lookup"><span data-stu-id="e0588-128">Canada (excluding Quebec): +1 855 425 0216</span></span>
+- <span data-ttu-id="e0588-129">英國： + 44 800 026 0698</span><span class="sxs-lookup"><span data-stu-id="e0588-129">United Kingdom: +44 800 026 0698</span></span>
+- <span data-ttu-id="e0588-130">比利時： + 32 800 58533</span><span class="sxs-lookup"><span data-stu-id="e0588-130">Belgium: +32 800 58533</span></span>
+- <span data-ttu-id="e0588-131">盧森堡： + 352 800 40119</span><span class="sxs-lookup"><span data-stu-id="e0588-131">Luxembourg: +352 800 40119</span></span>
+- <span data-ttu-id="e0588-132">澳大利亞： + 61 180 037 0619</span><span class="sxs-lookup"><span data-stu-id="e0588-132">Australia: +61 180 037 0619</span></span>
+- <span data-ttu-id="e0588-133">紐西蘭： + 64 988 44380</span><span class="sxs-lookup"><span data-stu-id="e0588-133">New Zealand: +64 988 44380</span></span>
+- <span data-ttu-id="e0588-134">瑞典： + 46 20 120 3554</span><span class="sxs-lookup"><span data-stu-id="e0588-134">Sweden: +46 20 120 3554</span></span>
+- <span data-ttu-id="e0588-135">挪威： + 47 800 62584</span><span class="sxs-lookup"><span data-stu-id="e0588-135">Norway: +47 800 62584</span></span>
+- <span data-ttu-id="e0588-136">冰島： + 354 800 9006</span><span class="sxs-lookup"><span data-stu-id="e0588-136">Iceland: +354 800 9006</span></span>
+- <span data-ttu-id="e0588-137">愛爾蘭： + 353 1 800 832272</span><span class="sxs-lookup"><span data-stu-id="e0588-137">Ireland: +353 1 800 832272</span></span>
+- <span data-ttu-id="e0588-138">丹麥： + 45 80 40 04 01</span><span class="sxs-lookup"><span data-stu-id="e0588-138">Denmark: +45 80 40 04 01</span></span>
+- <span data-ttu-id="e0588-139">芬蘭： + 358 800 525088</span><span class="sxs-lookup"><span data-stu-id="e0588-139">Finland: +358 800 525088</span></span>
 
 >[!NOTE]
-><span data-ttu-id="9c053-134">您需要已準備好您組織的電子郵件地址，當您呼叫若要確認您的身分識別。</span><span class="sxs-lookup"><span data-stu-id="9c053-134">You'll need to have your organizational email address ready when you call to verify your identity.</span></span> 
+><span data-ttu-id="e0588-140">當您呼叫以驗證身分識別時，您必須準備好組織的電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="e0588-140">You'll need to have your organizational email address ready when you call to verify your identity.</span></span> 
 
-## <a name="additional-resources"></a><span data-ttu-id="9c053-135">其他資源</span><span class="sxs-lookup"><span data-stu-id="9c053-135">Additional resources</span></span>
-- <span data-ttu-id="9c053-136">[系統管理員支援 Microsoft 受管理的電腦](admin-support.md)。</span><span class="sxs-lookup"><span data-stu-id="9c053-136">[Admin support for Microsoft Managed Desktop](admin-support.md).</span></span> 
-- <span data-ttu-id="9c053-137">[Microsoft 受管理電腦的支援](../service-description/support.md)。</span><span class="sxs-lookup"><span data-stu-id="9c053-137">[Support for Microsoft Managed Desktop](../service-description/support.md).</span></span>
-- <span data-ttu-id="9c053-138">如果您已訂閱 Microsoft 受管理的電腦，您可以找到詳細程序、 程序流程、 工作指示，與常見問題集 Microsoft 受管理電腦系統管理員指南 》 中[Microsoft 受管理的桌上型電腦系統管理入口網站](https://aka.ms/mwaasportal)的 [**線上資源**] 區段中。</span><span class="sxs-lookup"><span data-stu-id="9c053-138">If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** section of the [Microsoft Managed Desktop Admin Portal](https://aka.ms/mwaasportal).</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="e0588-141">其他資源</span><span class="sxs-lookup"><span data-stu-id="e0588-141">Additional resources</span></span>
+- <span data-ttu-id="e0588-142">[Microsoft 受管理的電腦的系統管理員支援](admin-support.md)。</span><span class="sxs-lookup"><span data-stu-id="e0588-142">[Admin support for Microsoft Managed Desktop](admin-support.md).</span></span> 
+- <span data-ttu-id="e0588-143">[Microsoft 受管理電腦的支援](../service-description/support.md)。</span><span class="sxs-lookup"><span data-stu-id="e0588-143">[Support for Microsoft Managed Desktop](../service-description/support.md).</span></span>
+- <span data-ttu-id="e0588-144">如果您已訂閱 Microsoft 受管理的電腦，您可以在[microsoft Managed Desktop Admin 入口網站](https://aka.ms/mwaasportal)的 [**線上資源**] 區段中，找到 [Microsoft managed desktop admin Guide] 中的詳細程式、處理流程、工作指示及 FAQs。</span><span class="sxs-lookup"><span data-stu-id="e0588-144">If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** section of the [Microsoft Managed Desktop Admin Portal](https://aka.ms/mwaasportal).</span></span>
