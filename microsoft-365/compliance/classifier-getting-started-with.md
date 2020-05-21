@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，方法是將它肯定和否定的範例，以查看。 在訓練分類器之後，請確認其結果是否正確。 然後，您可以使用它來搜尋組織的內容，並將其分類，以套用保留或敏感度標籤，或將其包含在資料遺失防護（DLP）或保留原則中。
-ms.openlocfilehash: edfa708077e273d9c644801f5461c880d87261b5
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 99d1d9039ef70347515f80da73a487f40534d2e7
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292429"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327755"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>開始使用可訓練的分類器 (預覽)
 
@@ -34,7 +34,7 @@ ms.locfileid: "44292429"
 這種分類機制類別包括尋找內容的方式：
 
 - 關鍵字或中繼資料值（關鍵字查詢語言）
-- 使用先前識別的敏感資訊模式，如社會保險、信用卡或銀行帳戶號碼[（敏感資訊類型）](what-the-sensitive-information-types-look-for.md)
+- 使用先前識別的敏感資訊模式，如社會保險、信用卡或銀行帳戶號碼[（敏感資訊類型實體定義）](sensitive-information-type-entity-definitions.md)
 - 識別專案，因為它是範本的變化[（檔指紋列印）](document-fingerprinting.md)
 - 使用完全字串的狀態[（完全符合資料）](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。 '
 
@@ -116,8 +116,8 @@ Microsoft 365 隨附了五個建議的內建分類器：
 
 - [保留標籤](labels.md)
 - [保留原則](retention-policies.md)
-- [資料遺失防護（DLP）](data-loss-prevention-policies.md)
-- [敏感度標籤](sensitivity-labels.md)
-- [敏感資訊類型](what-the-sensitive-information-types-look-for.md)
+- [資料外洩防護 (DLP)](data-loss-prevention-policies.md)
+- [敏感性標籤](sensitivity-labels.md)
+- [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
 - [檔指紋列印](document-fingerprinting.md)
 - [完全相符的資料](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

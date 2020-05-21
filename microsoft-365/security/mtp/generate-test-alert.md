@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f6f83be060a376e843a4224add6e5815f0a7b6b3
-ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
+ms.openlocfilehash: 7b46998f27bd620fe7ea4359b91f611cbf4c3d85
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43997677"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330755"
 ---
 # <a name="generate-a-test-alert-in-your-microsoft-threat-protection-evaluation-lab"></a>在您的 Microsoft 威脅防護評估實驗室中產生測試警示  
 
@@ -33,3 +33,7 @@ ms.locfileid: "43997677"
 
 1. 登入https://security.microsoft.com
 2. 在首頁上，尋找標為 [**類比**] 的麻將牌。  如需在 Microsoft 威脅防護中建立測試事件的步驟，請參閱逐步說明手冊。
+<br>![Microsoft 365 安全性儀表板中模擬卡的影像](../../media/mtp-eval-73.png) <br>
+
+## <a name="next-steps"></a>後續步驟
+流覽[Microsoft 365 解決方案和架構中心](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center?view=o365-worldwide)，以取得如何在您的獨特環境中實施安全性解決方案的指導方針。

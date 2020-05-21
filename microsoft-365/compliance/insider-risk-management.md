@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e820eed8e47adf040b267ffc0a3cf3e23410d7ef
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: 8b7d60d8b1a3c7295dbeda93c9f2e017ca6f9282
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043304"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327879"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 中的有問必答風險管理
 
@@ -101,7 +101,7 @@ Microsoft 365 中的測試人員風險管理採用完整的服務和協力廠商
 在案例儀表板上選取案例即可開啟要調查和檢閱的案例。 此步驟是測試人員風險管理工作流程的核心。 此區域是風險活動指標、原則條件、警示詳細資料和員工詳細資料的綜合區域，供檢閱者檢視。 此區域中的主要調查工具如下：
 
 - **使用者活動**：系統會自動在互動式圖表中顯示使用者活動，以繪製一段時間內的風險活動，以及目前或過去風險活動的風險層級。 檢閱者可以快速篩選和查看員工的完整風險歷程記錄，並深入了解特定活動，以取得更多詳細資料。
-- **內容瀏覽器**：系統會自動擷取與警示風險活動相關聯的所有資料檔案和電子郵件訊息，並顯示在內容瀏覽器中。 檢閱者可以依照資料來源、檔案類型、標記、交談和其他更多屬性篩選和查看檔案和郵件。
+- **內容瀏覽器**：與警示風險活動相關聯的所有資料檔案和電子郵件都會自動捕獲並顯示在內容瀏覽器中。 檢閱者可以依照資料來源、檔案類型、標記、交談和其他更多屬性篩選和查看檔案和郵件。
 - **案例附註**：檢閱者會在 [案例附註] 區段中提供案例附註。 此清單會整合集中檢視中的所有附註，並包括檢閱者和提交日期資訊。
 
 如需詳細資訊，請參閱[測試人員風險管理案例](insider-risk-management-cases.md)。

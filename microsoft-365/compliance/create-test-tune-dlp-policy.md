@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 在本文中，您將瞭解如何根據組織的需求來建立、測試及調整 DLP 原則。
-ms.openlocfilehash: 2a7ef029d00aff8450d9e8cf41253c2a86606807
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 2cbf30f3d0c5d70aecce77c7a07820812699797a
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035755"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327795"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>建立、測試及調整 DLP 原則
 
@@ -51,13 +51,13 @@ DLP 使用內容分析引擎檢查電子郵件訊息和檔案的內容，尋找�
 - 「您可以定購新的可擕式電腦。 使用我的簽證號碼1111-1111-1111-1111，到期11/22，當您有時，將預估的傳遞日期傳送給我。
 - 「我的膝上型電腦序號是2222-2222-2222-2222，其購買于11/2010。 順便說一來，我的旅行簽證是否已獲批准？
 
-[保留書簽] 的良好參考是[有關機密資訊類型](what-the-sensitive-information-types-look-for.md)的這一主題，說明每種資訊類型的偵測方式。
+[保留書簽] 的良好參考是「[機密資訊類型 ' 實體定義](sensitive-information-type-entity-definitions.md)，說明每種資訊類型的偵測方式。
 
 ## <a name="where-to-start-with-data-loss-prevention"></a>從資料遺失防護開始的位置
 
 當資料洩漏風險不完全顯而易見時，就很難實際開始執行 DLP。 幸運的是，DLP 原則可以在「測試模式」中執行，這樣您就能在開啟之前估量效能和精確度。
 
-可透過 Exchange 系統管理中心來管理 Exchange Online 的 DLP 原則。 不過，您可以透過安全性 & 規範中心設定所有工作負載的 DLP 原則，如此一來，我們將在本文中示範。 在 [安全性 & 規範中心] 中，您會在 [**資料遺失防護** > ]**原則**下找到 DLP 原則。 按一下 [**建立要啟動的原則**]。
+可透過 Exchange 系統管理中心來管理 Exchange Online 的 DLP 原則。 不過，您可以透過安全性 & 規範中心設定所有工作負載的 DLP 原則，如此一來，我們將在本文中示範。 在 [安全性 & 規範中心] 中，您會在 [**資料遺失防護**] 原則下找到 DLP 原則  >  ** **。 按一下 [**建立要啟動的原則**]。
 
 Microsoft 365 提供一系列[dlp 原則範本](what-the-dlp-policy-templates-include.md)，您可以用來建立 dlp 原則。 假設您是澳大利亞公司。 您可以篩選原則範本，只顯示與澳大利亞相關的使用者，這些範本屬於財務、醫療和健康情況和隱私權等一般類別。
 
@@ -95,7 +95,7 @@ Microsoft 365 提供一系列[dlp 原則範本](what-the-dlp-policy-templates-in
 
 ## <a name="test-a-dlp-policy"></a>測試 DLP 原則
 
-新的 DLP 原則會在大約1小時內開始生效。 您可以坐下來，等待一般的使用者活動觸發，否則您也可以嘗試自行觸發。 舊版 I 連結至此[主題的敏感資訊類型](what-the-sensitive-information-types-look-for.md)，可讓您瞭解如何觸發 DLP 相符的相關資訊。
+新的 DLP 原則會在大約1小時內開始生效。 您可以坐下來，等待一般的使用者活動觸發，否則您也可以嘗試自行觸發。 舊版 I 連結至[敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)，可提供有關如何觸發 DLP 相符的資訊。
 
 舉例來說，我為本文建立的 DLP 原則會偵測到澳大利亞稅收檔編號（TFN）。 根據檔，符合下列準則為基礎。
 
@@ -192,7 +192,7 @@ DLP 原則範本並不完全直接離開盒。 您很可能會發現環境中有
 
 除了變更實例計數之外，您也可以調整符合精確度（或信賴程度）。 如果您的敏感資訊類型有多種模式，您可以調整規則中的相符準確度，使規則只符合特定模式。 例如，若要協助減少誤報，您可以設定規則的符合準確度，使其只符合具有最高信賴度的模式。 瞭解信賴等級的計算方式有點棘手（但超出此文章的範圍），但是這裡是[如何使用信賴層級調整規則](data-loss-prevention-policies.md#match-accuracy)的好說明。
 
-最後，如果您想要更進一步的掌握，您可以自訂任何敏感資訊類型，例如，您可以從[澳大利亞駕照](what-the-sensitive-information-types-look-for.md#australia-drivers-license-number)的關鍵字清單中移除 "悉尼 NSW"，以消除上述誤報。 若要瞭解如何使用 XML 和 PowerShell 執行這項作業，請參閱本主題：[自訂內建的敏感資訊類型](customize-a-built-in-sensitive-information-type.md)。
+最後，如果您想要更進一步的掌握，您可以自訂任何敏感資訊類型，例如，您可以從[澳大利亞駕駛執照號碼](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)的關鍵字清單中移除「悉尼 NSW」，以消除上述假的誤報。 若要瞭解如何使用 XML 和 PowerShell 執行這項作業，請參閱本主題：[自訂內建的敏感資訊類型](customize-a-built-in-sensitive-information-type.md)。
 
 ## <a name="turn-on-a-dlp-policy"></a>開啟 DLP 原則
 

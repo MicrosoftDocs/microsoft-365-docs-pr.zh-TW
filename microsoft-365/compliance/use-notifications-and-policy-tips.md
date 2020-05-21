@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: '原則提示是指當有人使用與 DLP 原則衝突的內容時所顯示的通知或警告。 您可以使用電子郵件通知和原則提示來增加知名度，協助教育組織的原則。 您也可以讓使用者選擇覆寫原則，以便在有有效的業務需求或原則偵測到誤報時，不會封鎖這些原則。 '
-ms.openlocfilehash: fd6c7a33f8c75615019cca32797008a8fa4753ed
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6c9175045f7a93cab03acff891454536c8b5b7a0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626399"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327261"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>針對 DLP 原則傳送電子郵件通知並顯示原則提示
 
@@ -36,7 +36,7 @@ ms.locfileid: "43626399"
   
 您可以使用電子郵件通知和原則提示來增加知名度，協助教育組織的原則。 您也可以讓使用者選擇覆寫原則，以便在有有效的業務需求或原則偵測到誤報時，不會封鎖這些原則。
   
-在安全性&amp;與合規性中心中，當您建立 DLP 原則時，您可以將使用者通知設定為：
+在安全性與 &amp; 合規性中心中，當您建立 DLP 原則時，您可以將使用者通知設定為：
   
 - 傳送電子郵件通知給您選擇的描述問題的人員。
     
@@ -44,9 +44,9 @@ ms.locfileid: "43626399"
     
   - 針對 Outlook 網頁版和 Outlook 2013 和更新版本中的電子郵件，原則提示會出現在撰寫郵件的收件者上方的郵件上方。
     
-  - 對於商務用 OneDrive 的商務帳戶或 SharePoint 線上網站，原則提示會以顯示在專案上的警告圖示表示。 若要查看詳細資訊，您可以選取專案，然後選擇**Information** ![頁面右上角的](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) [資訊資訊窗格] 圖示，以開啟 [詳細資料] 窗格。 
+  - 對於商務用 OneDrive 的商務帳戶或 SharePoint 線上網站，原則提示會以顯示在專案上的警告圖示表示。 若要查看詳細資訊，您可以選取專案，然後選擇**Information** ![ 頁面右上角的 [資訊資訊窗格] 圖示， ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) 以開啟 [詳細資料] 窗格。 
     
-  - 針對儲存在 OneDrive for Business site or SharePoint Online 網站（包含在 DLP 原則中）的 Excel、PowerPoint 和 Word 檔，原則提示會出現在訊息列和 Backstage**視圖（[** 檔案] 功能表\> **資訊**）。
+  - 針對儲存在 OneDrive for Business site or SharePoint Online 網站（包含在 DLP 原則中）的 Excel、PowerPoint 和 Word 檔，原則提示會出現在訊息列和 Backstage**視圖（[** 檔案] 功能表 \> **資訊**）。
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>將使用者通知新增至 DLP 原則
 
@@ -54,21 +54,21 @@ ms.locfileid: "43626399"
   
 1. 請移至 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用您的公司或學校帳戶登入。 現在您已在安全性&amp;與合規性中心。
+2. 使用您的公司或學校帳戶登入。 現在您已在安全性與 &amp; 合規性中心。
     
-3. 在 [安全性&amp;與合規\>性中心\> ] 左側導覽**資料遺失防護** \> **原則** \>中，**建立原則**。
+3. 在 [安全性與 &amp; 合規性中心] \> 左側導覽 \> **資料遺失防護** \> **原則**中， \> **建立原則**。
     
     ![建立原則按鈕](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
-4. 選擇 DLP 原則範本，以保護您\> **下一步**所需的敏感資訊類型。
+4. 選擇 DLP 原則範本，以保護您 \> **下一步**所需的敏感資訊類型。
     
     若要從空白範本開始，請**選擇** \> **Custom policy** \> **[下一步]**。
     
-5. 將原則\>命名為 **[下一步]**。
+5. 將原則命名為 \> **[下一步]**。
     
 6. 若要選擇您想要 DLP 原則保護的位置，請執行下列其中一項操作：
     
-   - 在\> **[下一步]****中選擇 Office 365 的所有位置**。
+   - **在** \> **[下一步]** 中選擇 Office 365 的所有位置。
     
    - 選擇 [**讓我選擇特定位置** \> **] [下一步]**。
     
@@ -136,7 +136,7 @@ ms.locfileid: "43626399"
     
 - 允許人員覆寫 DLP 原則。 您也可以：
     
-  - 要求人員輸入用於覆寫原則的業務理由。 這項資訊會記錄下來，您可以在安全性&amp;與合規性中心的 [**報告**] 區段中的 [DLP 報告] 中查看。 
+  - 要求人員輸入用於覆寫原則的業務理由。 這項資訊會記錄下來，您可以在安全性與合規性中心的 [**報告**] 區段中的 [DLP 報告] 中查看 &amp; 。 
     
   - 允許人員報告誤報，並覆寫 DLP 原則。 此資訊也會記錄報告，所以您可以使用誤報來微調您的規則。
     
@@ -168,7 +168,7 @@ ms.locfileid: "43626399"
     
    ![OneDrive 帳戶中的檔的原則提示圖示](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
-若要對檔採取動作，您可以選取\>專案在頁面的右上角選擇 [**資訊** ![資訊] 窗格圖示](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) ，以開啟 [詳細資料] 窗格\>的 [詳細資料] 窗格的 [**顯示原則提示**]。
+若要對檔採取動作，您可以選取專案在 \> **Information** ![ 頁面的右上角選擇 [資訊資訊] 窗格圖示， ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) 以開啟 [詳細資料] 窗格的 [詳細資料] 窗格的 [ \> **顯示原則提示**]。
   
 原則提示會列出內容的問題，而且如果使用這些選項設定原則提示，您可以選擇 [**解決**]，然後覆**寫**原則提示或**報告**誤報。 
   
@@ -202,7 +202,7 @@ DLP 原則同步處理至網站，而且會定期及非同步評估 contented，
   
 ![原則提示，顯示附件與 DLP 原則衝突](../media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
   
-若原則提示設定為允許**覆寫，** \>您可以選擇 [**顯示詳細資料** \> ]。請輸入業務理由或報告誤報\> **。**
+若原則提示設定為允許覆寫，您可以選擇 [**顯示詳細資料**] \> **Override** \> 。請輸入業務理由或報告誤報 \> ** **。
   
 ![已展開郵件中的原則提示以顯示覆寫選項](../media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
   
@@ -219,13 +219,13 @@ DLP 原則同步處理至網站，而且會定期及非同步評估 contented，
 
 請注意，所有這些條件都是在 Outlook 中運作，其將會符合內容，並強制執行內容的保護動作。 但尚未支援使用者顯示原則提示。
   
-### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Exchange 系統管理中心與安全性&amp;與合規性中心的原則提示
+### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Exchange 系統管理中心與安全性與 &amp; 合規性中心的原則提示
 
-原則秘訣可以搭配在 Exchange 系統管理中心中建立的 DLP 原則和郵件流程規則，或是在安全性&amp;與合規性中心建立的 dlp 原則使用，但不能同時使用這兩者。 這是因為這些原則儲存在不同的位置，但是原則秘訣只能從單一位置進行繪製。
+原則秘訣可以搭配在 Exchange 系統管理中心中建立的 DLP 原則和郵件流程規則，或是在安全性與合規性中心建立的 DLP 原則使用 &amp; ，但不能同時使用這兩者。 這是因為這些原則儲存在不同的位置，但是原則秘訣只能從單一位置進行繪製。
   
-如果您已在 Exchange 系統管理中心中設定原則提示，在 [安全性&amp;與合規性中心] 中所設定的任何原則提示，都不會顯示在網頁和 outlook 2013 和更新版本中 outlook 的使用者，直到您關閉 Exchange 系統管理中心中的秘訣。 這可確保您目前的 Exchange 郵件流程規則（也稱為傳輸規則）可以繼續運作，直到您選擇切換到 [安全性&amp;與合規性中心] 為止。
+如果您已在 Exchange 系統管理中心中設定原則提示，在 [安全性與合規性中心] 中所設定的任何原則提示，都 &amp; 不會顯示在網頁和 outlook 2013 和更新版本中 outlook 的使用者，直到您關閉 Exchange 系統管理中心中的秘訣。 這可確保您目前的 Exchange 郵件流程規則（也稱為傳輸規則）可以繼續運作，直到您選擇切換到 [安全性與 &amp; 合規性中心] 為止。
   
-請注意，當原則提示只能從單一位置繪製時，系統會永遠傳送電子郵件通知，即使您同時在安全性&amp;與合規性中心和 Exchange 系統管理中心中使用 DLP 原則也是一樣。
+請注意，當原則提示只能從單一位置繪製時，系統會永遠傳送電子郵件通知，即使您同時在安全性 &amp; 與合規性中心和 Exchange 系統管理中心中使用 DLP 原則也是一樣。
   
 ### <a name="default-text-for-policy-tips-in-email"></a>電子郵件中原則提示的預設文字
 
@@ -287,4 +287,4 @@ Office 桌面程式會直接從 Office 365 自動同步處理 DLP 原則，然�
     
 - [DLP 原則範本包含哪些內容](what-the-dlp-policy-templates-include.md)
     
-- [敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
+- [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)

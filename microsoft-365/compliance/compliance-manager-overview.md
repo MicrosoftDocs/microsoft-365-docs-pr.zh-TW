@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 深入瞭解 microsoft 服務信任入口網站中的 Microsoft 合規性管理員（免費的工作流程型風險評估工具）。
-ms.openlocfilehash: 84f076a45a3944d1d711a8e04199b357aa52791d
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 79f3145e2512bfb174339ef2cde9a2594b116004
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224640"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330743"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合規性管理員（預覽）
 
@@ -155,20 +155,21 @@ ms.locfileid: "44224640"
 1. [巴西一般資料保護法（LGPD）](https://go.microsoft.com/fwlink/?linkid=2115387)
 2. [加州消費者隱私權法案（CCPA）](https://go.microsoft.com/fwlink/?linkid=2108871) （預覽）
 3. [雲端安全性同盟（CSA） Cloud Controls 矩陣（CCM）3.0。1](https://go.microsoft.com/fwlink/?linkid=2109076)
-4. [歐盟 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
-5. [聯邦金融機構檢查委員會（FFIEC）資訊安全性手冊](https://go.microsoft.com/fwlink/?linkid=2109077)
-6. [FedRAMP 適中](https://go.microsoft.com/fwlink/?linkid=2108869)
-7. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078)  / 高[科技](https://go.microsoft.com/fwlink/?linkid=2109079)
-8. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709)  / [澳大利亞政府 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) （預覽）
-9. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-10. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-11. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
-12. [Microsoft 365 資料保護基準](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
-13. [NIST 800-53 Rev 4](https://go.microsoft.com/fwlink/?linkid=2109075)
-14. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-15. [NIST Cybersecurity Framework （CSF）](https://go.microsoft.com/fwlink/?linkid=2108868)
-16. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
-17. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
+4. [杜拜資訊安全性解析（DGISR）](https://go.microsoft.com/fwlink/?linkid=2131193)
+5. [歐盟 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
+6. [聯邦金融機構檢查委員會（FFIEC）資訊安全性手冊](https://go.microsoft.com/fwlink/?linkid=2109077)
+7. [FedRAMP 適中](https://go.microsoft.com/fwlink/?linkid=2108869)
+8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078)  / 高[科技](https://go.microsoft.com/fwlink/?linkid=2109079)
+9. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709)  / [澳大利亞政府 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) （預覽）
+10. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+11. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+12. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+13. [Microsoft 365 資料保護基準](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+14. [NIST 800-53 Rev 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+15. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+16. [NIST Cybersecurity Framework （CSF）](https://go.microsoft.com/fwlink/?linkid=2108868)
+17. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
+18. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
 ## <a name="secure-score-integration"></a>安全分數整合
 

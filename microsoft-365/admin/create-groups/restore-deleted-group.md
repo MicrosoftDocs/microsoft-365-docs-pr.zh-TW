@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 瞭解如何還原已刪除的 Microsoft 365 群組。
-ms.openlocfilehash: 9d432d6ddb7e41b6560329b562c24f392a424412
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 123805750beff88904a8e3874f0d4d46a72e8f01
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140521"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327625"
 ---
 # <a name="restore-a-deleted-group"></a>還原已刪除的群組
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -72,6 +72,9 @@ ms.locfileid: "44140521"
 1. 移至系統[管理中心](https://admin.microsoft.com)。
 2. 展開 [**群組**]，然後按一下 [**刪除的群組**]。
 3. 選取您要還原的群組，然後按一下 [**還原群組**]。
+
+> [!NOTE]
+> 在某些情況下，您可能需要24小時的時間才能還原群組及其所有資料。 
   
 ## <a name="permanently-delete-a-microsoft-365-group"></a>永久刪除 Microsoft 365 群組
 

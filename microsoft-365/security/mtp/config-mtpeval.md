@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 80b7e209f87d3612e753127f5d1a1b3c36304cc3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: a41510deb8bad39e2f871babfbcb91a2e43f6dd8
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209350"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330834"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>設定試用實驗室環境的 Microsoft 威脅防護支柱
 
@@ -80,14 +80,14 @@ Microsoft 威脅防護包含四個支柱。 雖然一個 pillar 可以為您的�
 1. 流覽至[Office 365 Security & 合規性中心](https://protection.office.com/homepage)  >  **威脅管理**  >  **原則**。
 ![Image of_Office 365 Security & 合規性中心威脅管理原則頁面](../../media/mtp-eval-32.png) <br>
  
-2. 按一下 [ **ATP 反網路釣魚**]，選取 [**建立**並填入原則名稱和描述]。 按一下 **[下一步]**。
+2. 按一下 [ **ATP 反網路釣魚**]，選取 [**建立**並填入原則名稱和描述]。 按 [下一步]****。
 ![Image of_Office 365 Security & 合規性中心反網路釣魚原則頁面，您可以在其中命名原則](../../media/mtp-eval-33.png) <br>
 
 >[!NOTE]
 >編輯您的高級 ATP 反網路釣魚原則。 將**高級網路釣魚閥值**變更為**2-嚴格**。
 <br>
 
-3. 按一下 [**新增條件**] 下拉式功能表，然後選取您的網域做為收件者網域。 按一下 **[下一步]**。
+3. 按一下 [**新增條件**] 下拉式功能表，然後選取您的網域做為收件者網域。 按 [下一步]****。
 ![Image of_Office 365 Security & 合規性中心反網路釣魚原則頁面，您可以在其中新增其應用程式的條件](../../media/mtp-eval-34.png) <br>
  
 4. 請複查您的設定。 按一下 [**建立這個原則**] 以確認。 
@@ -188,7 +188,7 @@ Microsoft 威脅防護包含四個支柱。 雖然一個 pillar 可以為您的�
 1. 流覽至 microsoft Defender security center 的[microsoft 365 Security center](https://security.microsoft.com/info)  >  **More Resources**  >  ** **。 按一下 [開啟]****。
 <br>![Microsoft 365 Security Center 頁面中的影像 of_Microsoft Defender Security Center 選項](../../media/mtp-eval-58.png) <br>
  
-2. 遵循 Microsoft Defender 高級威脅防護嚮導。 按一下 **[下一步]**。 
+2. 遵循 Microsoft Defender 高級威脅防護嚮導。 按 [下一步]****。 
 <br>![Microsoft Defender 安全中心歡迎使用嚮導頁面上的影像 of_the](../../media/mtp-eval-59.png) <br>
 
 3. 選擇 [根據您慣用的資料儲存位置]、[資料保留原則]、[組織大小] 和 [加入宣告預覽] 功能。 
@@ -197,7 +197,7 @@ Microsoft 威脅防護包含四個支柱。 雖然一個 pillar 可以為您的�
 >您無法變更某些設定，例如，以後的資料儲存位置。 
 <br>
 
-按一下 **[下一步]**。 
+按 [下一步]****。 
 
 4. 按一下 [**繼續**]，它會布建您的 MICROSOFT Defender ATP 租使用者。
 <br>![影像 of_the 頁面提示您按一下 [繼續] 按鈕以建立您的雲端實例](../../media/mtp-eval-61.png) <br>
@@ -237,5 +237,14 @@ Microsoft 威脅防護包含四個支柱。 雖然一個 pillar 可以為您的�
 16. 向中按向下方，然後按一下 [**儲存偏好**設定] 以確認新的整合。
 <br>![您需要按一下的影像 of_Save 偏好設定按鈕](../../media/mtp-eval-72.png) <br>
 
+## <a name="turn-on-microsoft-threat-protection"></a>開啟 Microsoft 威脅防護
+1. 移至[Microsoft 365 Security Center](https://security.microsoft.com/homepage)。 流覽至 [**設定**]，然後選取 [ **Microsoft 威脅防護**]。
+<br>![Microsoft 365 安全性中心設定頁面中的影像 of_Microsoft 威脅防護選項螢幕擷取畫面](../../media/mtp-eval-72b.png) <br>
+
+2. 選取 [**開啟 Microsoft 威脅防護**] 核取方塊，然後按一下 [**儲存**]。
+<br>![Microsoft 365 安全性中心設定頁面中的影像 of_Microsoft 威脅防護選項螢幕擷取畫面](../../media/mtp-eval-72c.png) <br>
+
+恭喜！ 您剛剛建立的是 Microsoft 威脅防護試用實驗室環境！ 您現在可以模擬攻擊，並查看「向量積」功能如何偵測、建立提醒，以及自動回應端點上的 fileless 攻擊。
+
 ## <a name="next-steps"></a>後續步驟
-[開啟 Microsoft 威脅防護](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable?view=o365-worldwide#start-using-the-service)，然後[產生測試警示](generate-test-alert.md)。
+[產生測試警示](generate-test-alert.md)。

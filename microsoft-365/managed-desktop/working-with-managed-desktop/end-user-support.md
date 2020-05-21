@@ -6,60 +6,66 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 687b587da033b3c6cc8e027221043dd6c52e15c3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3e74f644457057eafe61235c874ca6290bfae6a3
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084985"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327889"
 ---
-# <a name="getting-help-for-end-users"></a>取得使用者的說明
+# <a name="getting-help-for-end-users"></a>取得使用者的協助
 
-您組織中的使用者可以使用其 Microsoft 受管理的電腦裝置取得協助的兩種方式：**取得協助**的應用程式或電話支援。 這兩種支援選項可使用的使用者，每週 7 天，每天 24 小時。
+組織中的使用者可透過下列兩種方式取得 Microsoft 受管理桌面裝置的協助：**取得協助**應用程式或電話支援。 這兩種支援選項均可供使用者在一周7天、一天24小時。
  
 >[!NOTE]
->這些就無法使用 [測試] 群組中的裝置的支援選項。
+>這些支援選項不適用於測試群組中的裝置。
 
-## <a name="get-help-app"></a>取得說明應用程式
+## <a name="get-help-app"></a>取得協助應用程式
 
-提供支援，您的使用者的慣用的方法是**取得協助**，使用者裝置內建易於使用的介面。  
+為您的使用者提供支援的慣用方法，可**協助**您在使用者裝置內建便於使用的介面。  
 
-![取得說明應用程式圖示](../../media/get-help.png)
+![取得協助應用程式圖示](../../media/get-help.png)
 
-這是 Microsoft 受管理電腦的所有裝置上安裝並已釘選到工作列的應用程式。 
+這是安裝在所有 Microsoft 受管理的桌面裝置上的應用程式，且會釘住至工作列。 
 
-- 使用者可以要求回到提供的電話號碼或線上服務代表具有的交談呼叫。
-- 屬於 Microsoft 受管理電腦的支援範圍以外的要求重新導向至本機 IT 服務台透過電話。
+- 使用者可以要求來電回提供的電話號碼，或與服務代表線上交談。
+- 在 Microsoft 受管理桌面支援範圍之外的要求會透過電話重新導向至本機 IT 支援人員。
 
 ### <a name="prerequisites"></a>必要條件
-若要能夠透過應用程式取得協助您的使用者，請確認符合下列先決條件：
+為了讓您的使用者能夠透過應用程式取得協助，請確定符合下列必要條件：
 
-- 裝置必須註冊 Microsoft 受管理電腦中[設定 Microsoft 受管理的電腦裝置](../get-started/set-up-devices.md)，例如[自行註冊新的裝置](../get-started/register-devices-self.md)使用其中一個方法。
-- 裝置的顯示語言必須設定為任何這些英文地區設定： 英文-美國、 en-us gb、 en-us au、 en-us nz 或 en-us ca。
-- 取得說明應用程式應該是最新狀態。 若要確認此，請檢查 Microsoft 網上商店中的應用程式更新。
-- 某些[端點](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop)必須可從裝置存取。
+- 裝置必須使用[設定 Microsoft 受管理的桌面裝置](../get-started/set-up-devices.md)中的其中一種方法，向 Microsoft managed desktop 註冊，例如[自行註冊新裝置](../get-started/register-devices-self.md)。
+- 裝置的顯示語言必須設定為下列任何一種英文語言地區設定： en-us、en、en、en 或 en-ca。
+- 「取得説明」應用程式應該是最新的。 若要確認這一點，請檢查 Microsoft Store 中的應用程式更新。
+- 必須可從裝置存取特定[端點](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop)。
 
 > [!NOTE]
-> 取得說明應用程式可能需要最多一個小時之後裝置部署完全運作。
+> 在部署裝置以完全運作後，取得輔助應用程式最多可能需要一小時。
 
-如果您已檢查這些必要條件並取得說明應用程式仍無法正常運作，您身為 IT 系統管理員應該檔案[支援要求](admin-support.md)。
+如果您已檢查這些必要條件，但取得協助應用程式仍無法運作，您的 IT 系統管理員應該會將[支援要求](admin-support.md)歸檔。
 
 ## <a name="phone-support"></a>電話支援
 
-使用 Microsoft 受管理的電腦裝置的使用者也可以存取他們可以撥的免付費電話號碼。 這是要用於時無法取得說明。 例如，如果他們無法登入裝置或裝置會中斷。 以下是電話支援的電話號碼：
+使用 Microsoft 受管理的桌面裝置的使用者也可以存取可撥打的免付費電話號碼。 這是在取得無法使用 [說明] 時使用。 例如，如果他們無法登入裝置，或裝置遭到中斷。 以下是電話支援電話號碼：
 
-- 美國： +1 855 425 0216
-- 加拿大 （不含魁北克）： +1 855 425 0216
-- 英國： +44 800 026 0698
-- 比利時: + 32 800 58533
-- 盧森堡： +352 800 40119
-- 澳大利亞： +61 180 037 0619
-- 紐西蘭: + 64 988 44380
+- 美國： + 1 855 425 0216
+- 加拿大（不包括魁北克）： + 1 855 425 0216
+- 英國： + 44 800 026 0698
+- 比利時： + 32 800 58533
+- 盧森堡： + 352 800 40119
+- 澳大利亞： + 61 180 037 0619
+- 紐西蘭： + 64 988 44380
+- 瑞典： + 46 20 120 3554
+- 挪威： + 47 800 62584
+- 冰島： + 354 800 9006
+- 愛爾蘭： + 353 1 800 832272
+- 丹麥： + 45 80 40 04 01
+- 芬蘭： + 358 800 525088
 
 >[!NOTE]
->您需要已準備好您組織的電子郵件地址，當您呼叫若要確認您的身分識別。 
+>當您呼叫以驗證身分識別時，您必須準備好組織的電子郵件地址。 
 
 ## <a name="additional-resources"></a>其他資源
-- [系統管理員支援 Microsoft 受管理的電腦](admin-support.md)。 
+- [Microsoft 受管理的電腦的系統管理員支援](admin-support.md)。 
 - [Microsoft 受管理電腦的支援](../service-description/support.md)。
-- 如果您已訂閱 Microsoft 受管理的電腦，您可以找到詳細程序、 程序流程、 工作指示，與常見問題集 Microsoft 受管理電腦系統管理員指南 》 中[Microsoft 受管理的桌上型電腦系統管理入口網站](https://aka.ms/mwaasportal)的 [**線上資源**] 區段中。
+- 如果您已訂閱 Microsoft 受管理的電腦，您可以在[microsoft Managed Desktop Admin 入口網站](https://aka.ms/mwaasportal)的 [**線上資源**] 區段中，找到 [Microsoft managed desktop admin Guide] 中的詳細程式、處理流程、工作指示及 FAQs。

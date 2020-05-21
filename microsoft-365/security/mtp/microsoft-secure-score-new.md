@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 965b4cf872129dc7bc9b439c1c15025acceb44c6
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: dbc8d1e8dae1845412b1fb3ad86b831b08a4a518
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173543"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327141"
 ---
 # <a name="microsoft-secure-score-new"></a>Microsoft 安全評分（新增）
 
@@ -31,7 +31,7 @@ ms.locfileid: "44173543"
 >
 >如果您沒有在 [歷程記錄] 旁看到 [**統計資料 & 趨勢**] 索引標籤，表示您在先前的小小版本。 [移至 Microsoft Secure 得分（先前的小小）](microsoft-secure-score.md)
 
-Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目，表示執行的改善動作越多。 可在https://security.microsoft.com/securescore [Microsoft 365 的安全性中心](overview-security-center.md)找到該網址。
+Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目，表示執行的改善動作越多。 可在 https://security.microsoft.com/securescore [Microsoft 365 的安全性中心](overview-security-center.md)找到該網址。
 
 遵循安全性分數建議可保護您的組織免受威脅。 透過 Microsoft 365 security center 中的集中式儀表板，組織可以監視及處理其 Microsoft 365 身分識別、資料、應用程式、裝置和基礎結構的安全性。
 
@@ -103,6 +103,9 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 * 應用程式（電子郵件和雲端應用程式，包括 Office 365 和 Microsoft Cloud App Security）
 * 基礎結構（現在沒有任何改進動作）
 
+>[!NOTE]
+>在最近發行的 Microsoft Secure 得分中，已發行的評分模型已發佈，使 Microsoft 安全分數暫時不相容身分識別安全分數和圖形 API。 [檢視詳細資料](microsoft-secure-score-new.md#incompatibility-with-identity-secure-score-and-graph-api)
+
 在 [Microsoft Secure 得分一覽] 頁面中，您可以看到各群組之間的點數如何分割，以及哪些點可供使用。 [一覽表] 頁面也是取得整體總分、您的安全分數與基準比較之歷史趨勢的完整視圖，以及可以採取以改善評分的優先改進動作的位置。
 
 ![安全分數首頁](../../media/secure-score/secure-score-homepage-new.png)
@@ -120,8 +123,8 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 當您選取特定的 [提升] 動作時，會出現完整的頁面快顯視窗。  
 
-![改進動作飛出](../../media/secure-score/secure-score-improvement-action-details.png)
-範例*圖2：改進動作飛出範例*
+![改進動作飛出範例 ](../../media/secure-score/secure-score-improvement-action-details.png)
+ *圖2：改進動作飛出範例*
 
 若要完成此動作，您有幾個選項：
 
@@ -177,6 +180,14 @@ Microsoft Secure 得分是根據系統設定、使用者行為和其他安全性
 ## <a name="whats-new"></a>新功能 
 
 若要讓 Microsoft 安全評分為您安全性狀況的更佳代表，我們進行了一些變更。 若要深入瞭解規劃的變更，請參閱[Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)。
+
+### <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>不相容身分識別安全分數與圖形 API
+
+在最近發行的 Microsoft Secure 得分中，已發佈一個已改進的計分模型。 這些變更可讓您更靈活且準確的安全性狀況的觀點。 不過，這些更新已讓 Microsoft 安全分數暫時不相容身分識別安全分數和圖形 API。
+
+在時間內，身分識別安全分數和圖形 API 將採用新的計分模型。 在此之前，客戶會看到 Microsoft 安全評分、身分識別安全分數及圖形 API 所報告的分數差異。 我們對這項不便的任何不便深表歉意，而且正在運作，以確保未來的體驗更具相容性。
+
+### <a name="updated-improvement-actions"></a>更新的改進動作
 
 - 新增 Azure Active Directory 改進動作
 - 新增 Azure 高級威脅防護改進動作

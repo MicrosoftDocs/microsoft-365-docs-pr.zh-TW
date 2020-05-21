@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 開始使用 Office 365 進階威脅防護方案 2 中的自動化調查及回應功能
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 4e36e0fa07f825d3259ef9e42b802c81ae929470
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: c2020c3d46fcf17194e2560af53d9a26fca30629
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159404"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327827"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>開始使用 Office 365 中的自動調查和回應（AIR）
 
@@ -31,7 +31,7 @@ ms.locfileid: "44159404"
 
 ## <a name="the-overall-flow-of-air"></a>空氣的整體流動
 
-在高層次，會觸發警示，安全性行動手冊會開始和自動調查，進而會產生結果和建議。 以下是空氣的整體流動流程，逐步執行：
+在高層次上會觸發警示，安全性行動手冊會開始進行自動調查，進而會產生結果和建議。 以下是空氣的整體流動流程，逐步執行：
 
 1. 自動調查是以下列其中一種方式啟動：
 

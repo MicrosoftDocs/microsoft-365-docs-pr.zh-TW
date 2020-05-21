@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 在 FAQ 中尋找問題的答案以深入瞭解網域。
 ms.custom: okr_smb
-ms.openlocfilehash: 09e811b64def4d507a9d825f95b9d22f910669bb
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 1af20ed0052a7bb4f98072a7142bf7e112b8305e
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140746"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327109"
 ---
 # <a name="domains-faq"></a>網域常見問題集
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ ms.locfileid: "44140746"
 
 網域是在電子郵件地址的 **@** 符號後，以及網址的 **www.** 後出現的唯一名稱。 它通常採用組織名稱和標準 Internet 尾碼的形式，例如*yourbusiness.com*或*stateuniversity.edu。* 
   
-使用自訂網域（例如「可信性**\@contoso.com**」）與 Office 365，可協助您建立品牌的信譽及認可。 
+使用自訂網域（例如「可信性** \@ contoso.com**」）與 Office 365，可協助您建立品牌的信譽及認可。 
   
 您可以[在 Office 365 購買網域，我們會自動加以設定](../get-help-with-domains/buy-a-domain-name.md)，或者您可以從網域註冊機構購買或為您提供自己的現有功能。
   
@@ -132,7 +132,7 @@ ms.locfileid: "44140746"
 
 ::: moniker-end
     
-2. 在 [**網域**] 頁面上，選取您要傳送至其他網域註冊機構的 Office 365 網域，然後選取 [**網域傳輸** > **啟用網域傳輸**]。
+2. 在 [**網域**] 頁面上，選取您要傳送至其他網域註冊機構的 Office 365 網域，然後選取 [**網域傳輸**  >  **啟用網域傳輸**]。
        
 4. 遵循步驟來準備轉移您的網域。
     
@@ -258,6 +258,8 @@ ms.locfileid: "44140746"
 - 商務用 skype Online 桌面用戶端可以使用自動探索，自動尋找商務用 Skype Online 服務，讓使用者不必輸入伺服器名稱即可登入。
     
 - 商務用 skype Online 行動用戶端可以使用自動探索，自動尋找商務用 Skype Online 服務，讓使用者不必輸入伺服器名稱即可登入。
+
+- Microsoft 團隊同盟與商務用 Skype 的同盟，不論是內部部署或線上。 如需詳細資訊，請參閱為[Microsoft 團隊準備組織的網路](https://docs.microsoft.com/microsoftteams/prepare-network)。
     
  **如果不支援 SPF/TXT 記錄**，其他人可能會使用您的網域來傳送垃圾郵件或其他惡意的電子郵件。 SPF 記錄會透過識別從您的網域傳送電子郵件的授權伺服器運作。 
   
@@ -342,7 +344,7 @@ ms.locfileid: "44140746"
 
 當您註冊服務時，Office 365 會為您建立網域，例如*contoso.onmicrosoft.com*。 您註冊時所建立的使用者識別碼包含網域，如*alan@contoso.onmicrosoft.com*。 
   
- **如果您想要讓您的電子郵件看起來像是*alan\@contoso.com*：** [購買網域，](../get-help-with-domains/buy-a-domain-name.md)或是只要您已擁有您的使用者和網域，請依照將您的[使用者與網域新增至 Office 365](add-domain.md)中的步驟進行。 
+ **如果您想要讓您的電子郵件看起來像是*alan \@ contoso.com*：** [購買網域，](../get-help-with-domains/buy-a-domain-name.md)或是只要您已擁有您的使用者和網域，請依照將您的[使用者與網域新增至 Office 365](add-domain.md)中的步驟進行。 
   
 - **您無法在註冊後重新命名 name.onmicrosoft.com17 網域。** 例如，如果您所選擇的初始網域是 fourthcoffee.onmicrosoft.com，您就無法將它變更為 fabrikam.onmicrosoft.com。 若要使用不同的 onmicrosoft.com 網域，您必須開始使用 Office 365 的新訂閱。 
     
@@ -405,7 +407,7 @@ ms.locfileid: "44140746"
     
     1. 使用您的公司或學校帳戶登入 Office 365。
         
-    2. 移至 [**設定** \> ] [**網域**]。 
+    2. 移至 [**設定**] [ \> **網域**]。 
     
 2. 確認您擁有要使用的網域
     
@@ -441,13 +443,13 @@ ms.locfileid: "44140746"
         
     3. 在 EAC 中，選取 [**保護**]，然後選取 [連線**篩選**]。 
         
-    4. 在 [ **IP 允許] 清單**中**+**，選取，並新增您可以從目前的電子郵件提供者取得的郵件伺服器 IP 位址。 
+    4. 在 [ **IP 允許] 清單**中，選取 **+** ，並新增您可以從目前的電子郵件提供者取得的郵件伺服器 IP 位址。 
     
 5. 建立使用者帳戶並設定主要（回復）位址
     
     1. 移至 Microsoft 365 系統管理中心。
         
-    2. 在左導覽列中，選取 [**使用者** \>作用中**使用者**]。 
+    2. 在左導覽列中，選取 [**使用者**作用中 \> **使用者**]。 
         
     3. 建立使用者帳戶。
         

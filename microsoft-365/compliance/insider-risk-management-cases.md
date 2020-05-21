@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7af3e54a13ceabf4acfaa2259ea0089854660721
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 9959d41cf112c1ebcc88a8dd0335cae5a5537059
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804841"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327859"
 ---
 # <a name="insider-risk-management-cases"></a>內部人員風險管理案例
 
@@ -101,7 +101,7 @@ ms.locfileid: "43804841"
 4. **風險活動 chronology**：會列出與案例相關聯之所有風險警示的完整 chronology，包括對應警示氣泡中所有可用的詳細資料。
 5. **案例動作**：解決案例的選項位於 [案例] 動作工具列上。 您可以解決案例、將電子郵件通知傳送給員工，或為數據或員工調查上報案例。
 
-### <a name="content-explorer"></a>內容總管
+### <a name="content-explorer"></a>內容瀏覽器
 
 [**內容瀏覽器**] 索引標籤可讓風險分析人員和調查人員檢查與風險警示相關聯之所有個別檔案和電子郵件的副本。 例如，如果當員工將數百個檔案從 SharePoint 線上下載到 USB 裝置，並觸發一個原則警示，便會建立警示，所有已下載的警示檔案都會從原始的儲存來源中捕獲並複製到「有問必答風險管理案例」。
 
@@ -172,7 +172,7 @@ ms.locfileid: "43804841"
 3. 在 [**升級以進行調查**] 對話方塊中，輸入新員工調查的名稱。 如有需要，請輸入有關案例的備註，然後選取 [**呈報**]。
 5. 選取 [**確認**] 以建立員工調查案例，或選取 [**取消**] 關閉對話方塊，而不建立新的員工調查案例。
 
-當「內幕風險管理案例」升級至新的員工調查案例之後，您可以在 Microsoft 365 規範中心的**eDiscovery** > **Advanced**區域中查看新案例。
+當「內幕風險管理案例」升級至新的員工調查案例之後，您可以在 Microsoft 365 規範中心的**eDiscovery**  >  **Advanced**區域中查看新案例。
 
 ### <a name="resolve-the-case"></a>解決案例
 

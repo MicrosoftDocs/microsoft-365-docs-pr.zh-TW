@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: '瞭解如何變更 Microsoft 365 的預設主題，並加以自訂，使其符合您公司的徽標或色彩。 '
-ms.openlocfilehash: 3674c26be50d622364a4dc077a85eaa974d71fcd
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: dba7003f6624a2635976ac689d608a83e62de5c0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262326"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327203"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自訂群組織的 Microsoft 365 主題
 
@@ -64,7 +64,7 @@ ms.locfileid: "44262326"
     
 4. 選取 [儲存變更]****。
     
-您會立即在系統管理中心看到新的主題，您會在一段短暫的延遲之後看到365它，包括 Outlook、SharePoint [SharePoint 行動應用程式中 iOS 的](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)網頁，以及[適用于 Android 的行動應用程式 SharePoint](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)。 如需您可以從系統管理中心自訂主題變更的範例，請參閱下列圖像。
+您會立即在系統管理中心上看到新的主題，在一段短暫的延遲之後，您將會看到整個 Microsoft 365 （包括 Outlook 中的網頁、SharePoint、 [SharePoint 行動應用 iOS 程式](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)），以及[SharePoint 適用于 Android 的行動應用程式](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)。 如需您可以從系統管理中心自訂主題變更的範例，請參閱下列圖像。
 
 ![m365-系統管理員-租使用者-主題-概念](../../media/m365-admin-tenant-theme-conceptual.png)
 

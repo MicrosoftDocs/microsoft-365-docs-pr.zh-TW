@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: 您可以在安全性 & 規範中心開啟「審核記錄搜尋」功能。 如果您變更了主意，您可以在任何時候關閉此功能。 當「審核記錄搜尋」關閉時，系統管理員無法在您的組織中搜尋使用者和系統管理員活動的 Microsoft 365 審核記錄。
-ms.openlocfilehash: 6b5ea41ff9f40291e54f8cc9f6660d0f86367994
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f3d88f62f466d9c868dfc6addb5865e144f5223b
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633418"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330787"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>開啟或關閉稽核記錄搜尋
 
@@ -48,22 +48,24 @@ ms.locfileid: "43633418"
   
 ### <a name="use-the-security--compliance-center-to-turn-on-audit-log-search"></a>使用安全性 & 規範中心開啟審核記錄搜尋
 
-1. 在 [安全性 & 規範中心] 中，移至 [**搜尋** \> **審核記錄搜尋**]。
-    
+1. [移至安全性 & 合規性中心](https://protection.office.com)並登入。
+
+2. 在 [安全性 & 規範中心] 中，移至 [**搜尋** \> **審核記錄搜尋**]。
+
    顯示旗標，指出必須開啟審計，以錄製使用者和系統管理員活動。
 
-2. 按一下 [**開啟審計**]。
-    
+3. 按一下 [**開啟審計**]。
+
     ![按一下 [開啟審計]](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
     橫幅已更新，表示已準備好審核記錄，而且您可以在數小時內搜尋使用者和系統管理員活動。
-    
+
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>使用 PowerShell 開啟審計記錄搜尋
 
 1. [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
-    
+
 2. 執行下列 PowerShell 命令，在 Office 365 中開啟審計記錄搜尋。
-    
+
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
     ```
@@ -75,23 +77,23 @@ ms.locfileid: "43633418"
 您必須使用連線至 Exchange Online 組織的遠端 PowerShell，關閉「審核記錄搜尋」。 與開啟審計記錄搜尋類似，您必須在 Exchange Online 中指派「審計記錄」角色，以關閉「審核記錄搜尋」。
   
 1. [連線到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
-    
+
 2. 執行下列 PowerShell 命令，關閉 Office 365 中的「審核記錄搜尋」。
-    
+
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
     ```
 
 3. 經過一段時間後，請確認已關閉審計記錄搜尋（停用）。 方法有兩種：
-    
+
     - 在 PowerShell 中，執行下列命令：
 
     ```powershell
     Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
     ```
 
-      UnifiedAuditLogIngestionEnabled 屬性的`False`值表示_UnifiedAuditLogIngestionEnabled_已關閉審核記錄搜尋。 
-    
-    - 在 [安全性 & 規範中心] 中，移至 [**搜尋** \> **審核記錄搜尋**]。
-    
+      `False` _UnifiedAuditLogIngestionEnabled_屬性的值表示已關閉審核記錄搜尋。 
+
+    - 在 [[安全性 & 規範中心](https://protection.office.com)] 中，移至 [**搜尋** \> **審核記錄搜尋**]。
+
       顯示旗標，指出必須開啟審計，才能錄製使用者和系統管理員活動。

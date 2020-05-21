@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Micr
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: d481a53da541b28975071a9dff6b7cdcc671345b
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 034305eec75bd369752915084b2857ebea455aa0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804802"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327921"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的桌面裝置 
 
@@ -25,7 +25,7 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本主題
 此處的裝置連結只供您參考。 如果您想要定購裝置，請與您的商業管道連絡人合作，以確保您選擇正確的設定。 在此表格中，「封存*日期*」是這些模型會受到較短 Microsoft 受管理桌面服務生命週期的日期;在此日期之後的任何這類裝置架，將不會從 Microsoft 受管理的電腦取得全三年的支援期限。 已封存裝置也會列在[Microsoft 受管理的桌面封存裝置](archived-device-list.md)中。 「*退休日期*」是 Microsoft 受管理的桌面完全不會支援此模型的日期。 在該日期，此模型的所有已註冊裝置都會從 Microsoft 受管理的桌面移除，不論已註冊。
 
 >[!NOTE]
->您可以隨時將裝置加入至此表格，但是我們會針對影響封存或退休日期的變更，提供90天的通知。 最近新增的裝置會以**\*** 標記。
+>您可以隨時將裝置加入至此表格，但是我們會針對影響封存或退休日期的變更，提供90天的通知。 最近新增的裝置會以標記 **\*** 。
 
 
 **Microsoft 受管理的桌面裝置**
@@ -60,13 +60,17 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本主題
 | [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel i5/8 GB RAM | 無 | Oct 16，2020 | Oct 16，2023 |
 | **\*[Surface Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB/Intel i5/8 GB RAM | 無 | Oct 22，2021 | Oct 22，2024 |
 
-
-
 此外，裝置也必須符合下列準則：     
 
 - 使用 Microsoft 受管理的電腦核准的影像。 當您定購裝置時，請確定您指定的是與 Microsoft 受管理的電腦搭配使用。
 - 尚未完成 Windows 第一次執行體驗。
 - 使用[Device Registration](https://aka.ms/mmddrhelp)功能向 Microsoft Managed Desktop 註冊
+
+>[!NOTE]
+>裝置使用2.0GHz 或更快的處理器，可為參與這些活動的使用者提供更佳的體驗：
+>- 搭配小組使用影片會議。 如需詳細資訊，請參閱[Microsoft 小組的硬體需求](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app)。
+>-  針對多個不同的工作負載使用一個裝置。
+>- 使用多個監視器。
 
 **其他協助**
 

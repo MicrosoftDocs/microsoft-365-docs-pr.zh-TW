@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 瞭解如何使用 Power BI 中的 Microsoft 365 流量分析範本應用程式，來開始收集租使用者的資料。
-ms.openlocfilehash: 3c5e1a35b93b755b92710f0499599d849a6c251c
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 375bc26a2e106d909eb9ea5d0990a054553d71b0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262532"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327669"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>啟用 Microsoft 365 使用情況分析
 
@@ -83,7 +83,7 @@ Microsoft 365 的流量分析也適用于 Microsoft 365 美國政府社區。
 
 5.  按一下 [**流覽應用程式**] 以查看具有範例資料的應用程式。 按一下 **[連線]** ，將應用程式連線至您組織的資料。
 
-6.  按一下 [連線 **]** 之後，在 [連線**至 Microsoft 365 流量分析]** 畫面上，輸入您在步驟（1）中複製的租使用者識別碼（按 \> **[下一步]**）。
+6.  按一下 [連線 **]** 之後，在 [連線**至 Microsoft 365 流量分析]** 畫面上，輸入您在步驟（1）複製的租使用者識別碼（無短杠），然後選取 **[下一步]**。
     
 7. 在下一個畫面中，選取 [ **oAuth2** ] 作為**驗證方法**[登 \> **入**]。 如果您選擇任何其他驗證方法，則與範本應用程式的連線將會失敗。
     

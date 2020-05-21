@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bfaead99bf439173cb353bc745488a5d0aee70c4
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.openlocfilehash: 6ca0edb1338c21f710ae493c8697b0c2740860ba
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210532"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327599"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -124,7 +124,7 @@ ms.locfileid: "44210532"
 - 隱私權
 - 自訂資訊類型
 
-若要深入瞭解敏感資訊詳細資料和預設類型中所包含的模式，請參閱[哪些敏感資訊類型的外觀](what-the-sensitive-information-types-look-for.md)。
+若要深入瞭解敏感資訊詳細資料和預設類型中所包含的模式，請參閱[敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)。
 
 ### <a name="custom-keyword-dictionaries"></a>自訂關鍵字字典
 

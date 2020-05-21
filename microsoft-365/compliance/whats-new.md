@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 我們不斷將新功能新增至 Microsoft 365 規範中心，以修正我們所學的問題，並根據您的意見反應進行變更。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 940d316c97370a477c963785ae7e90482b35a46c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: baccff8699f9ec7b38090fb5adc0fcde8811c764
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034265"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327735"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 規範中心的新功能
 
@@ -70,7 +70,7 @@ ms.locfileid: "44034265"
 > [!TIP]
 > 請再次閱讀去年的更新，以取得我們最近預覽之一些[新方案](#new-compliance-solutions)的複習，以及顯示安全性 & 合規性中心的相容性功能目前在 Microsoft 365 中的活動[藍圖](#updated-compliance-solutions)。
 
-[書簽和頭部]， [https://compliance.microsoft.com](https://compliance.microsoft.com)以導覽您在整個組織中管理法規遵從性的單一光圈。您也可以[閱讀本文](microsoft-365-compliance-center.md)以進一步深入。
+[書簽和頭部]， [https://compliance.microsoft.com](https://compliance.microsoft.com) 以導覽您在整個組織中管理法規遵從性的單一光圈。您也可以[閱讀本文](microsoft-365-compliance-center.md)以進一步深入。
 
 ![Microsoft 365 規範中心首頁](../media/mcc-home-ga.png)
 
@@ -162,7 +162,7 @@ ms.locfileid: "44034265"
 |**功能**|**Office 365 安全性與合規性中心**|**Microsoft 365 合規性中心**|**深入了解**|
 |:-----|:-----|:-----|:-----|
 |進階電子文件探索|eDiscovery > Advanced eDiscovery <br/> https://protection.office.com/advancedediscoverycases |eDiscovery > 高級 <br/> https://compliance.microsoft.com/advancedediscovery | [Microsoft 365 中的高級 eDiscovery 解決方案概述](overview-ediscovery-20.md) |
-|警示原則|警示原則 > 警示原則 <br/> https://protection.office.com/alertpolicies |此時，只會在 Office 365 安全性 & 合規性中心管理警示原則。 |[安全性與合規性中心內的警示原則](alert-policies.md) |
+|警示原則|警示原則 > 警示原則 <br/> https://protection.office.com/alertpolicies |此時，只會在 Office 365 安全性 & 合規性中心管理警示原則。 |[安全性與合規性中心的警示原則](alert-policies.md) |
 |警示|警示 > View alerts <br/> https://protection.office.com/viewalerts |警示 <br/> https://compliance.microsoft.com/compliancealerts |[查看提醒](alert-policies.md#viewing-alerts)|
 |封存|資訊管理 > 封存 <br/> https://protection.office.com/archiving |資訊管理 > 封存] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[啟用封存信箱](enable-archive-mailboxes.md)|
 |稽核記錄檔搜尋|搜尋 > 審計記錄搜尋 <br/> https://protection.office.com/unifiedauditlog |審計 <br/> https://compliance.microsoft.com/auditlogsearch | [在安全性 & 規範中心搜尋審核記錄檔](search-the-audit-log-in-security-and-compliance.md)|
@@ -177,7 +177,7 @@ ms.locfileid: "44034265"
 |標籤活動瀏覽器|資訊控管 > 標籤活動瀏覽器 <br/> https://protection.office.com/labelexplorer |資料分類 > 活動流覽] 索引標籤 <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[檢視套用標籤的內容上的活動 (預覽)](data-classification-activity-explorer.md)|
 |保留標籤及標籤原則 |分類 > 保留標籤 > 標籤及標籤原則] 索引標籤 <br/> https://protection.office.com/retentionlabels |資訊控管 > 標籤及標籤原則] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [保留標籤概觀](labels.md)|
 |保留原則|資訊管理 > 保留 <br/> https://protection.office.com/retention |資訊管理 > 保留] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[保留原則概觀](retention-policies.md)|
-|敏感資訊類型|分類 > 敏感資訊類型 <br/> https://protection.office.com/sensitivetypes |資料分類 > 敏感度資訊類型] 索引標籤 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)|
+|敏感資訊類型|分類 > 敏感資訊類型 <br/> https://protection.office.com/sensitivetypes |資料分類 > 敏感度資訊類型] 索引標籤 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)|
 |敏感度標籤及標籤原則|分類 > 敏感度標籤 > 標籤及標籤原則] 索引標籤 <br/> https://protection.office.com/sensitivity |資訊保護 > 標籤及標籤原則] 索引標籤 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[了解敏感度標籤](sensitivity-labels.md) |
 |服務保證|服務保證 <br/> https://protection.office.com/serviceassurance/dashboard |目前，服務保障資源只可在 Office 365 安全性 & 規範中心存取。 |[安全性 & 規範中心的服務保證](service-assurance.md)|
 |監督|監督 <br/> https://protection.office.com/supervisoryreviewv2 |通訊合規性 <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 中的通訊法規遵從性（預覽）](communication-compliance.md) |

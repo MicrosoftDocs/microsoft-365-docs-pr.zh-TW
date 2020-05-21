@@ -1,90 +1,61 @@
 ---
 title: 讓合作夥伴註冊裝置的步驟
-description: 如何合作夥伴可以註冊裝置，可由 Microsoft 受管理的電腦
+description: 合作夥伴如何註冊裝置，以便由 Microsoft 受管理的電腦來管理
 ms.prod: w10
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: dc446281e8a791b59a9ac97592ff6a53dcde310c
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: f1b1a8f03b7a11a0467826281bc2b789140dbcee
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557561"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327043"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>讓合作夥伴註冊裝置的步驟
 
 
-本主題說明適用於要遵循註冊裝置的合作夥伴的步驟。 自行註冊裝置的程序會詳細說明[自行註冊 Microsoft 受管理電腦中的裝置](register-devices-self.md)。
+本主題說明可讓合作夥伴遵循的步驟來註冊裝置。 您自行註冊裝置的程式會記錄在[Microsoft 受管理的桌面的註冊裝置](register-devices-self.md)中。
 
 
 
 ## <a name="prepare-for-registration"></a>準備註冊 
-完成之前註冊為客戶，您必須先建立與其[合作夥伴中心](https://partner.microsoft.com/dashboard)的關係。 請務必選取 [**包含委派管理 Azure Active Directory 和 Office 365 的權限**。 深入瞭解[合作夥伴中心的說明](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)。
+在完成客戶的註冊之前，您必須先在[夥伴中心](https://partner.microsoft.com/dashboard)建立與他們的關聯。 如需該程式的詳細資訊，請參閱[同意檔](https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#csp-authorization)。 任何 CSP 合作夥伴只要客戶 consents，即可代表任何客戶新增裝置。 您也可以在[夥伴中心協助](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#windows-autopilot)深入瞭解合作夥伴關係和 Autopilot 許可權。
 
-若要完成註冊您的客戶，請先建立 CSV 檔案。
+
+> [!NOTE]
+> 本檔僅供合作夥伴和 Oem 用。 自行註冊的程式會記錄在[Microsoft 受管理的桌面的註冊裝置](register-devices-self.md)中。
+
+
+## <a name="register-devices-by-using-partner-center"></a>使用夥伴中心註冊裝置
+
+當您建立與客戶的關聯之後，您可以遵循下列步驟，利用合作夥伴中心新增裝置，針對您具有關聯性的任何客戶 Autopilot：
+
+1. 流覽至 [[合作夥伴中心](https://partner.microsoft.com/dashboard)]
+2. 從 [合作夥伴中心] 功能表選取 [**客戶**]，然後選取您想要管理其裝置的客戶。
+3. 在客戶的詳細資料頁面上，選取 [**裝置**]。
+4. 在 [**將設定檔**套用至裝置] 底下，選取 [**新增裝置**]。
+5. 輸入組名的**Microsoft365Managed_Autopilot** ，然後選取 **[流覽]** ，將客戶的清單（csv 檔案格式）上傳至夥伴中心。
+
+
+> [!IMPORTANT]
+> 群組名稱必須完全符合**Microsoft365Managed_Autopilot** ，包括大小寫和特殊字元。 這將允許使用 Microsoft Managed Desktop Autopilot 設定檔來指派新註冊的裝置。
 
 >[!NOTE]
->以方便您使用，您可以下載[範例 CSV 檔](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.csv)此*協力廠商版本*。
+> 您應該會收到此 .csv 檔案與您的裝置購買。 如果您未收到 .csv 檔案，您可以遵循[新增裝置至 Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell)中的步驟，自行建立。 Windows PowerShell 腳本與[Microsoft Managed Desktop Admin 入口網站](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/register-devices-self?view=o365-worldwide#obtain-the-hardware-hash)所使用的腳本不同。 協力廠商應該使用[Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)在夥伴中心中為 Microsoft 受管理的桌面裝置註冊裝置。
 
-您的檔案必須包含**完全相同的欄標題**作為範例一 (製造商、型號等)，但您自己的資料適用於其他列。 如果您使用範本，請在記事本這類的文字編輯工具中開啟範本，然後不妨將列 1 的所有資料維持原狀，只在列 2 以下輸入資料。 
-    
-  ```
- Manufacturer,Model,Serial Number
-  SpiralOrbit,ContosoABC,000000000000
-  
-  
-  ```
+如果您在嘗試上傳 .csv 檔案時收到錯誤訊息，請檢查檔案的格式。 您可以只使用硬體雜湊，或 OEM 名稱、序號碼和模型（按該欄順序）或 Windows 產品識別碼。 您也可以使用 [**新增裝置**] 旁邊的連結所提供的範例 .csv 檔案，以建立裝置清單。 
+
+如需 Autopilot 在合作夥伴案例中的詳細資訊，請參閱[將裝置新增至客戶的帳戶](https://docs.microsoft.com/partner-center/autopilot#add-devices-to-a-customers-account)。
 
 
+## <a name="register-devices-by-using-the-oem-api"></a>使用 OEM API 註冊裝置
 
+在完成客戶的註冊之前，您必須先與其建立關聯。 您應該有一個唯一的連結，可提供給您的各個客戶。 請參閱[如何建立 OEM 關聯](https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#oem-authorization)。
 
->[!NOTE]
->這種格式是僅供合作夥伴程序。 自助註冊的程序會詳細說明[自行註冊 Microsoft 受管理電腦中的裝置](register-devices-self.md)。
+建立關聯之後，您可以開始使用群組標籤**Microsoft365Managed_Autopilot**為客戶註冊裝置。
 
->[!IMPORTANT]
->這些值必須 SMBIOS 的製造商值完全相符，包括大小寫和特殊字元。 
-
-- 裝置製造商 (範例： SpiralOrbit) 
-- 裝置型號 (範例： ContosoABC)
-- 裝置序號
-
-## <a name="register-devices-by-using-the-azure-portal"></a>使用 Azure 入口網站來註冊裝置
-
-除了在入口網站存取不同註冊使用 Azure 入口網站是與自助，相同。 請遵循下列步驟：
-
-1. 瀏覽至[合作夥伴中心](https://partner.microsoft.com/dashboard)
-2. 選取 [**客戶**]。
-3. 選取您想要管理的客戶。
-4. 選取 [**服務管理**]。
-5. 選取 [ **Intune**]。
-6. 搜尋 「 mmd 」 在上方的搜尋方塊中的 Azure 入口網站。
-7. 選取 [**裝置**]。
-8. 在 [檔案上傳]**** 中，提供您先前建立的 CSV 檔案路徑。
-9. 或者，您可以新增 [訂單識別碼]**** 或 [購買識別碼]****，以便自行追蹤。 這些值沒有格式需求。
-10. 選取 [註冊裝置]****。 系統會將裝置新增至 [裝置] 刀鋒視窗**** 上標示為 [註冊擱置]**** 的裝置清單。 註冊通常需要不到 10 分鐘的時間，而註冊成功時，裝置將會顯示為 [使用者就緒]****，標示其已準備就緒並等待終端使用者開始使用。
-
-
-您可以在主要 [Microsoft 受管理的電腦 - 裝置]**** 頁面上監視裝置註冊的進度。 其回報的可能狀態包括：
-
-| 狀態 | 描述 |
-|---------------|-------------|
-| 註冊擱置 | 尚未完成註冊。 稍後再回頭檢查。 |
-| 註冊失敗 | 無法完成註冊。 如需詳細資訊，請參閱[針對裝置註冊進行疑難排解](register-devices-self.md#troubleshooting-device-registration)。 |
-| 使用者就緒 | 註冊成功，且裝置現在已準備好交付給使用者。 Microsoft 受管理的電腦將會逐步引導使用者完成首次設定，因此您不需要再做任何進一步的準備。 |
-| 作用中 | 裝置已交付給終端使用者並已向您的租用戶註冊。 這也表示使用者經常使用該裝置。 |
-| 非作用中 | 裝置已交付給終端使用者並已向您的租用戶註冊。 不過，使用者最近尚未使用裝置 (在過去 7 天內)。  |
-
-
-
-## <a name="troubleshooting"></a>疑難排解
-
-| 錯誤訊息 | 詳細資料 |
-|---------------|-------------|
-| 找不到裝置 | 我們無法註冊這個裝置，因為我們找不到與所提供的製造商、型號或序號相符的裝置。 請與您的裝置供應商確認這些值。 |
-| 硬體雜湊無效 | 您為這個裝置提供的硬體雜湊格式不正確。 再次確認硬體雜湊，然後重新提交。 |
-| 裝置已經註冊 | 此裝置已經註冊到您的組織。 無需採取任何動作。 |
-| 其他組織所宣告的裝置 | 此裝置已經由其他組織所宣告。 請洽詢您的裝置供應商。 |
-| 未預期的錯誤 | 無法自動處理您的要求。 連絡客戶支援 (<support link>)，並提供 「 要求識別碼：<requestId> |
+> [!IMPORTANT]
+> 群組名稱必須完全符合**Microsoft365Managed_Autopilot** ，包括大小寫和特殊字元。 這將允許使用 Microsoft Managed Desktop Autopilot 設定檔來指派新註冊的裝置。

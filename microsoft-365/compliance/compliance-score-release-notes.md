@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 規範分數（預覽）的發行附注與已知問題，M365 規範中心的功能可協助簡化及自動化風險評估。
-ms.openlocfilehash: 4368255c87da118174ad08b52994865a8fdcd0af
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: 1567921b8bd07b0fe4deda0bab6601898eed75a9
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790588"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330777"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Microsoft 規範分數（預覽）發行附注
 
@@ -32,6 +32,7 @@ Microsoft 合規性分數的公開預覽可讓您及早存取即將推出的功�
 新的預先設定的範本可在實際執行時發佈，以進行相容性分數（預覽）。 [在這裡檢查範本的完整清單](compliance-score.md#templates)。 最近新增的範本包括：
 
 - 巴西一般資料保護法（LGPD）
+- 杜拜資訊安全性解析（DGISR）
 - IRAP/澳大利亞政府 ISM （預覽）
 - ISO 27701:2019
 - SOC 1
@@ -47,7 +48,7 @@ Microsoft 合規性分數的公開預覽可讓您及早存取即將推出的功�
 
 ## <a name="common-actions-will-synch-status-across-groups"></a>一般動作會在群組間同步處理狀態
 
-如果您的組織有多個評估群組，**技術**動作的行為（也就是影響整個組織的動作）已變更。 群組間的任何重複動作都已合併成一個單一動作。 單一巨集指令包含重複版本的所有上傳的記事及證據。 使用此變更，技術動作現在會如同屬於相同群組時的行為。 在一個群組或評估中對動作所做的任何變更現在都會反映在所有的實例中。 「 **實施」狀態**、「**實施日期**」、「**測試狀態**」及「**測試日期** 」會反映最新的更新。
+如果您的組織有多個評估群組，**技術**動作的行為（也就是影響整個組織的動作）已變更。 群組間的任何重複動作都已合併成一個單一動作。 單一巨集指令包含重複版本的所有上傳的記事及證據。 使用此變更，技術動作現在會如同屬於相同群組時的行為。 在一個群組或評估中對動作所做的任何變更現在都會反映在所有的實例中。 「 **實施」狀態**、「**實施日期**」、「**測試狀態**」及「**測試日期**」   會反映最新的更新。
 
 ## <a name="compliance-score-relationship-to-compliance-manager"></a>合規性分數與合規性管理員的關係
 

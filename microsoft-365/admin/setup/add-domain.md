@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 在您的 DNS 主機上新增 DNS 記錄，將您的網域新增至 Microsoft 365 系統管理中心中的 Office 365。 安裝精靈會引導您完成此程式。
-ms.openlocfilehash: 336e6ee78d7020d73c7e00f639e8f1e1b20c62cd
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: b40f537ec10b7d2406a9bb2fe281c39342f2d119
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222336"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327215"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>新增網域至 Microsoft 365
 
@@ -74,7 +74,7 @@ ms.locfileid: "44222336"
 
 ::: moniker-end
     
-2. 移至 [**安裝**  >  **網域**] 頁面。 
+2. 移至 [**設定**  >  **網域**] 頁面。 
 
 3. 選取 [**新增網域**]。
     
