@@ -129,8 +129,8 @@
               href: how-dlp-works-between-admin-centers.md
     - name: 敏感性資訊類型
       items:
-        - name: 敏感資訊類型在找什麼
-          href: what-the-sensitive-information-types-look-for.md
+        - name: 敏感資訊類型實體定義
+          href: sensitive-information-type-entity-definitions.md
         - name: DLP 功能所尋找的項目
           href: what-the-dlp-functions-look-for.md
         - name: 觀看自訂的 DLP 延伸概觀
