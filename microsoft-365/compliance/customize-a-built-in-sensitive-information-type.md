@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 在內容中尋找機密資訊時，您需要以所謂的規則來說明資訊。資料外洩防護 (DLP) 包含您可以立即使用之最常用機密資訊類型的規則。若要使用這些規則，您必須將其包含在原則中。您也許想要調整這些內建規則以符合貴組織的特定需求，您可以藉由建立自訂機密資訊類型來完成。本主題說明如何自訂其中包含現有規則集合的 XML 檔案，以偵測更大範圍的潛在信用卡資訊。
-ms.openlocfilehash: 4c61ab1a60b6259509d2928e22d31e447a996ec9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2aa552fb7a2623aaa7783063e82101a1993b9d1c
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595490"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327291"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自訂內建機密資訊類型
 
 在內容中尋找機密資訊時，您需要以所謂的規則** 來說明資訊。資料外洩防護 (DLP) 包含您可以立即使用之最常用機密資訊類型的規則。若要使用這些規則，您必須將其包含在原則中。您也許想要調整這些內建規則以符合貴組織的特定需求，您可以藉由建立自訂機密資訊類型來完成。本主題說明如何自訂其中包含現有規則集合的 XML 檔案，以偵測更大範圍的潛在信用卡資訊。 
   
-您可以採用此範例並且將其套用至其他內建機密資訊類型。如需預設機密資訊類型清單及 XML 定義，請參閱[機密資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)。 
+您可以採用此範例並且將其套用至其他內建機密資訊類型。如需預設機密資訊類型清單及 XML 定義，請參閱[敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)。 
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>匯出目前規則的 XML 檔案
 
@@ -234,8 +234,8 @@ Get-DlpSensitiveInformationType
    
 ## <a name="for-more-information"></a>相關資訊
 
-- [機密資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
+- [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
     
-- [建立自訂機密資訊類型](create-a-custom-sensitive-information-type.md)
+- [建立自訂的敏感性資訊類型](create-a-custom-sensitive-information-type.md)
     
 - [資料外洩防護原則概觀](data-loss-prevention-policies.md)

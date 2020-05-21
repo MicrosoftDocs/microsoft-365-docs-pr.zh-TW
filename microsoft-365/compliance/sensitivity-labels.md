@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 從 Microsoft 資訊保護架構使用敏感度標籤來分類及保護組織的資料，同時確保使用者生產效率和共同作業能力不受影響。 這些標籤可套用保護設定以包含加密視覺標記，如頁尾和浮水印。
-ms.openlocfilehash: 418a52a8a9798fa0e08a6a2d4951fe91e0685c1a
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+description: 從 Microsoft 資訊保護架構使用敏感度標籤來分類及保護組織的資料，而不會阻礙使用者的生產效率和共同作業。
+ms.openlocfilehash: 76d6a57c02f2623b65287b5429c41728a07724bd
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213281"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292541"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
