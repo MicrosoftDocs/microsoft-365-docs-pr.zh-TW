@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: bb35d4ed287e87ba17780c0e7106b837beb9666a
-ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
+ms.openlocfilehash: 62bc2b748cf004722f94a7231046930d78437603
+ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44170912"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44342505"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
@@ -106,7 +106,7 @@ ms.locfileid: "44170912"
 
 組織的全域系統管理員擁有建立及管理敏感度標籤所有層面的完整權限。 如果您未以全域系統管理員身分登入，請參閱[建立和管理敏感度標籤所需的權限](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels)。
 
-1. 登入[Microsoft 365 規範中心](https://compliance.microsoft.com/)，並流覽至**解決方案** > **資訊保護**
+1. 登入[Microsoft 365 規範中心](https://compliance.microsoft.com/)，並流覽至**解決方案**  >  **資訊保護**
     
     如果您沒有立即看到這個選項，請先選取 [全部顯示]****。 
 
@@ -117,13 +117,13 @@ ms.locfileid: "44170912"
     命令會立即執行，並在下一次重新整理頁面時，您就不會再看到訊息或按鈕。 
 
 > [!NOTE]
-> 如果您有 Office 365 多地理位置，您必須使用 PowerShell 來啟用所有地理位置的功能。 如需詳細資料，請參閱下一節。
+> 如果您有 Microsoft 365 多地理位置，您必須使用 PowerShell 來啟用所有地理位置的功能。 如需詳細資料，請參閱下一節。
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>使用 PowerShell 啟用敏感度標籤支援
 
 除了使用規範中心之外，您還可以使用[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) Cmdlet 從 SharePoint 線上 PowerShell 中，啟用敏感度標籤支援。 
 
-如果您有 Office 365 多地理位置，您必須使用 PowerShell 來啟用所有地理位置的支援。
+如果您有 Microsoft 365 多地理位置，您必須使用 PowerShell 來啟用所有地理位置的支援。
 
 #### <a name="prepare-the-sharepoint-online-management-shell"></a>準備 SharePoint 線上管理命令介面
 
@@ -149,16 +149,16 @@ ms.locfileid: "44170912"
 
 若要啟用新功能，請搭配使用[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) Cmdlet 搭配*EnableAIPIntegration*參數：
 
-1. 在 Office 365 中使用具有全域系統管理員或 SharePoint 系統管理員許可權的工作或學校帳戶，連接至 SharePoint。 若要了解如何進行，請參閱[開始使用 SharePoint Online 管理命令介面](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
+1. 在 Microsoft 365 中使用具有全域系統管理員或 SharePoint 系統管理員許可權的工作或學校帳戶，連接至 SharePoint。 若要了解如何進行，請參閱[開始使用 SharePoint Online 管理命令介面](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
     
-    附注：如果您有 Office 365 多地理位置，請搭配使用-Url 參數和[Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)，並為其中一個地理位置指定 SharePoint Online Administration CENTER 網站 Url。
+    附注：如果您有 Microsoft 365 多地理位置，請搭配使用-Url 參數和[Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)，並指定其中一個地理位置的 [SharePoint] 線上管理中心網站 Url。
 
 2. 執行下列命令，然後按**Y**確認：
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
-3. 針對 Office 365 多地理位置：對餘下的地理位置重複步驟1和2。
+3. 針對 Microsoft 365 多地理位置：針對您餘下的地理位置重複步驟1和2。
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>在您建立或變更靈敏度標籤之後排程部署
 
@@ -182,7 +182,7 @@ ms.locfileid: "44170912"
 Set-SPOTenant -EnableAIPIntegration $false
 ```
 
-如果您有 Office 365 多地理位置，您必須針對每個地理位置執行此命令。
+如果您有 Microsoft 365 多地理位置，您必須針對每個地理位置執行此命令。
 
 ## <a name="next-steps"></a>後續步驟
 

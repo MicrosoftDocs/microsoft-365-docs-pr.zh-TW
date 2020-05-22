@@ -20,77 +20,100 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
-description: 瞭解如何使用安全性預設值為使用者設定多重要素驗證。
+description: 瞭解如何為您的組織設定多重要素驗證。
 monikerRange: o365-worldwide
-ms.openlocfilehash: c4ea6037b34d29f2d1e05e248e03e49ee6b06f56
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 893a4ae535dfb781a4f77ee57c0ead40fda8454f
+ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262372"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44340771"
 ---
 # <a name="set-up-multi-factor-authentication"></a>設定多重要素驗證
   
-> [!IMPORTANT]
-> 如果您在2019年10月21日後購買訂閱或試用版，且意外提示您進行多重要素驗證（MFA），則會自動為您的訂閱啟用[安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
+根據您對[Microsoft 365 中的多重要素驗證（MFA）和支援](multi-factor-authentication-microsoft-365.md)的瞭解，您可以將它設定好，並將其部署至您的組織。
 
-每個新的 Microsoft 365 訂閱都會自動開啟[安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 這表示每位使用者都必須設定多重要素驗證（MFA），並在其行動裝置上安裝 Microsoft 驗證應用程式。 如需詳細資訊，請參閱[Set UP MFA for a Microsoft 365 account](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14)。
+開始之前，請先確定這些特殊條件是否適用于您並採取適當的動作：
 
-每次登入時，需要使用下列九個系統管理員角色來執行其他驗證：
+- 如果您有 Windows 裝置上的 Office 2013 用戶端，請[啟用新式驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)。
 
-- 全域系統管理員
-- SharePoint 系統管理員
-- Exchange 系統管理員
-- 條件式存取系統管理員
-- 安全性系統管理員
-- 服務台系統管理員或密碼管理員
-- 計費管理員
-- 使用者管理員
-- 驗證管理員
+- 如果您有使用 Active Directory Federation Services （AD FS）的協力廠商目錄服務，請設定 Azure MFA 伺服器。 如需詳細資訊，請參閱[使用 Azure Multi-Factor 驗證和協力廠商 VPN 解決方案的高級案例](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)。
 
-將會在需要時向所有其他使用者要求執行其他驗證。
+## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a>步驟1：決定要求使用者使用 MFA 的方法
 
-> [!NOTE]
-> 您必須是全域系統管理員才能設定或修改 MFA <br><br>
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
+有三種方式可要求使用者使用 MFA 進行登入。如需詳細資訊，請參閱[Microsoft 365 中的 MFA 支援](multi-factor-authentication-microsoft-365.md)。
 
-如果您先前已設定具有基準原則的 MFA，[您必須將其關閉以開啟安全性預設值](#move-from-baseline-policies-to-security-defaults)。 不過，如果您有 Microsoft 365 商務或您的訂閱包含[Azure Active Directory Premium P1 或 Azure Active Directory Premium P2](https://azure.microsoft.com/pricing/details/active-directory/)，您也可以設定[條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)原則。 若要使用條件式存取原則，您必須確定已停用安全性預設值，且已啟用[新式驗證](#enable-modern-authentication-for-your-organization)。
+- 安全性預設值（適用于小型企業的建議）
 
-> [!TIP]
-> 若要向您的使用者說明如何設定 Microsoft 驗證器應用程式，請參閱[使用 Microsoft 驗證與 Office 365](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411)。
+  如果您在2019年10月21日之後購買訂閱或試用版，且意外提示您進行 MFA，[安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)會自動為您的訂閱啟用。
+  
+  每個新的 Microsoft 365 訂閱都會自動開啟安全性預設值。 這表示每位使用者都必須在其行動裝置上設定 MFA，並安裝 Microsoft 驗證應用程式。
 
-## <a name="manage-security-defaults"></a>管理安全性預設
+  所有使用者都必須使用 Microsoft 驗證應用程式作為其他驗證方法，而且會封鎖舊版驗證。 
 
-1. 使用全域系統管理員認證登入[系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=834822)。
-2. 移至 [ [Azure Active Directory-屬性] 頁面](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。
-3. 在頁面底部，選擇 [管理安全性預設]****。
-4. 選擇 **[是]** 啟用安全性預設值，並選擇 [**否**] 以停用安全性預設值，然後選擇 [**儲存**]。
+- 條件式存取原則（建議企業使用）
 
-## <a name="move-from-baseline-policies-to-security-defaults"></a>從基準原則移至安全性預設
+  使用者在 MFA 登記期間選擇其他驗證方法。
 
-1. 移至 [[條件式存取原則] 頁面](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)。
-2. 選擇 [**開啟**的每一個基準原則]，並將 [**啟用原則**] 設定為 [**關閉**]。
-3. 移至 [ [Azure Active Directory-屬性] 頁面](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。
-4. 在頁面底部，選擇 [**管理安全性預設值**]，然後在 [**啟用安全性預設**值] 窗格中，設定 [**啟用安全性預設值**] 切換為 **[是]**，然後選擇 [**儲存**]。 
+- 每個使用者帳戶（不建議）
 
-## <a name="enable-modern-authentication-for-your-organization"></a>為您的組織啟用新式驗證
+  使用者在 MFA 登記期間選擇其他驗證方法。
 
-所有 Office 2016 用戶端應用程式都透過使用 Active Directory Authentication Library (ADAL) 來支援 MFA。 這表示 Office 2016 用戶端不需要 App 密碼。 如需詳細資訊，請參閱[本文](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings#app-passwords)。
+## <a name="step-2-test-mfa-on-your-pilot-users"></a>步驟 2： 在試驗使用者上測試 MFA
 
-不過，您必須確定已啟用 ADAL 或新式驗證的 Microsoft 365 訂閱。
+如果您使用的是條件式存取原則或個別使用者 MFA （不建議使用），請在您的公司或組織中選取試驗使用者，以測試 MFA 註冊和登入。例如：
 
-1. 若要啟用新式驗證，請從系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=834822)選取 [**設定** \> **組織設定**]，然後在 [**服務**] 索引標籤中，挑選清單中的 [**新式驗證**]。
+- 針對條件式存取原則，建立試驗使用者群組和需要 MFA 做為群組成員及所有應用程式的原則。 然後，將試驗使用者的帳戶新增至群組。
 
-2. 在 [**新式驗證**] 面板中，選取 [**啟用新式驗證（建議）** ] 方塊，然後選擇 [**儲存變更**]。 
+- 針對每一使用者 MFA，一次可對您的試驗使用者的使用者帳戶啟用 MFA。
 
-    ![已勾選啟用核取方塊的新式驗證面板。](../../media/enablemodernauth.png)
-    
-> [!IMPORTANT]
-> 到2017年8月為止，所有包含商務用 Skype online 和 Exchange online 的新 Microsoft 365 訂閱預設都會啟用新式驗證。 若要檢查您的商務用 Skype Online 的新式驗證狀態，您可以使用商務用 Skype Online PowerShell 搭配全域系統管理員認證。 執行 Get-CsOAuthConfiguration 以檢查 -ClientADALAuthOverride 的輸出。 如果 -ClientADALAuthOverride 是 'Allowed'，新式驗證即已開啟。
-若要檢查您的 Exchange Online 的 MA 狀態，請造訪[啟用 Exchange Online 中的新式驗證](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)。
+請與您的試驗使用者合作，以解決問題，以準備您的組織的順利推出。
 
-## <a name="related-articles"></a>相關文章
+## <a name="step-3-inform-your-organization-that-mfa-is-coming"></a>步驟 3： 通知組織即將推出 MFA
 
-[保護商務用 Microsoft 365 方案的十大方式](secure-your-business-data.md)
+使用電子郵件通知、hallway 海報、小組會議或正式訓練，以確保您的員工瞭解：
 
-[為 Windows 裝置上的 Office 2013 啟用新式驗證](enable-modern-authentication.md)
+- 為何登入需要 MFA
+- [如何註冊以進行其他驗證方法](https://support.office.com/article/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14?ui=en-US&rs=en-001&ad=US)
+- [註冊後如何登入](https://support.office.com/article/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
+- [如何變更其其他驗證方法](https://support.office.com/article/change-how-you-do-additional-verification-956ec8d0-7081-4518-a701-f8414cc20831)
+- [如何處理類似于新智慧型電話的情況](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2)
+
+最重要的是，請確定您***的員工瞭解何時要強制執行 MFA 需求***，使其不會令人感到驚訝。
+
+## <a name="step-4-roll-out-the-mfa-requirement-to-your-organization-or-users"></a>步驟 4： 向您的組織或使用者推出 MFA 需求
+
+根據您所選擇的 MFA 需求方法，將 MFA 驗證向外推行您的試驗測試人員之外的員工。
+
+### <a name="security-defaults"></a>安全性預設
+
+您可以在 Azure 入口網站中，從 Azure Active Directory （Azure AD）的**屬性**窗格中啟用或停用安全性預設值。
+
+1.  使用全域系統管理員認證登入[Microsoft 365 admin center](https://admin.microsoft.com) 。
+2.  移至 [ [Azure Active Directory-屬性] 頁面](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。
+3.  在頁面底部，選擇 [管理安全性預設]****。
+4.  選擇 **[是]** 啟用安全性預設值，並選擇 [**否**] 以停用安全性預設值，然後選擇 [**儲存**]。
+
+如果您已使用[基準條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)，以下是您移至使用安全性預設值的方式。
+
+1.  移至 [[條件式存取原則] 頁面](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)。
+2.  選擇 [**開啟**的每一個基準原則]，並將 [**啟用原則**] 設定為 [**關閉**]。
+2.  移至 [ [Azure Active Directory-屬性] 頁面](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。
+4.  在頁面底部，選擇 [管理安全性預設]****。
+5.  選擇 **[是]** 啟用安全性預設值，並選擇 [**否**] 以停用安全性預設值，然後選擇 [**儲存**]。
+
+### <a name="conditional-access-policies"></a>條件式存取原則
+
+建立、設定或啟用適當的原則，其中包括需要 MFA 進行 MFA 的使用者群組。
+
+### <a name="per-user-mfa-not-recommended"></a>每一使用者 MFA （不建議）
+
+針對與您的部署對應的 MFA 啟用使用者帳戶。
+
+### <a name="supporting-your-employees"></a>支援您的員工
+
+當您的員工註冊並開始以 MFA 登入時，請確定您的 IT 專家、IT 部門或服務台可以快速解答問題並解決問題。
+
+如需[疑難排解 MFA 登入的相關資訊](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2)，請參閱本文。 
+
+

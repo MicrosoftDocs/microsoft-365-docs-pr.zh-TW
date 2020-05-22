@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9d2c5ba495d6250ffb20f695edd515c63b123c30
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1e67d4a4af84da9651f091f45eddaa01f467e06c
+ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209256"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44339899"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Microsoft 威脅防護資料安全性與隱私權
 
@@ -32,6 +32,9 @@ ms.locfileid: "44209256"
 - Microsoft 威脅防護
 
 Microsoft 威脅防護是在 Microsoft Azure 資料中心的歐盟、英國和美國運作。 在 [布建] 或 [（b）] 中，由服務收集的客戶資料會儲存在 rest 中（a），如果 Microsoft 威脅防護使用另一部 Microsoft online 服務來處理這類資料，則是由其他線上服務之資料儲存規則所定義的地理位置。
+
+在假名化表單中的客戶資料也可以儲存在美國中央儲存區與處理系統中。
+
 
 如需有關特定產品的資料儲存與隱私權資訊的詳細資訊，請參閱：
 - [Microsoft Defender ATP 資料儲存與隱私權](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

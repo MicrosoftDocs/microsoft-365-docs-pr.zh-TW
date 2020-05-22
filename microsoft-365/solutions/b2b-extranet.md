@@ -14,12 +14,12 @@ ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解如何使用夥伴組織中的受管理來賓使用者建立 B2B 外部網路網站或小組。
-ms.openlocfilehash: 1b7542dd2fcd5fa28afc013f83da713c37e1187b
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: f01a558d55f497952494676f0148a1e3e4f06b35
+ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166146"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44342524"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>使用受管理來賓建立 B2B 外部網路
 
@@ -30,6 +30,12 @@ ms.locfileid: "44166146"
 本文將逐步逐步建立可透過自助存取註冊模型與夥伴組織共用的資源套件（此案例中為網站或小組）。 
 
 開始之前，請先建立您想要與夥伴組織共用的網站或小組，並為其啟用來賓共用。 請參閱[與網站中的客人共同](collaborate-in-site.md)作業，或[與小組的客人共同合作](collaborate-as-team.md)以取得詳細資訊。 我們也建議您複查[建立安全來賓共用環境](create-secure-guest-sharing-environment.md)，以取得安全性與合規性功能的相關資訊，以協助您在與來賓合作時維持您的管理原則。
+
+## <a name="video-demonstration"></a>影片示範
+
+這段影片會示範本文所述的程式。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wKUj?autoplay=false]
 
 ## <a name="connect-the-partner-organization"></a>連接夥伴組織
 

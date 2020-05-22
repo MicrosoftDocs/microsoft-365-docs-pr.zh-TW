@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，方法是將它肯定和否定的範例，以查看。 在訓練分類器之後，請確認其結果是否正確。 然後，您可以使用它來搜尋組織的內容，並將其分類，以套用保留或敏感度標籤，或將其包含在資料遺失防護（DLP）或保留原則中。
-ms.openlocfilehash: 99d1d9039ef70347515f80da73a487f40534d2e7
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: ba24bbe76bce5e3a41345c80616a57d3fb67a5fc
+ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327755"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44339911"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>開始使用可訓練的分類器 (預覽)
 
@@ -33,10 +33,10 @@ ms.locfileid: "44327755"
 
 這種分類機制類別包括尋找內容的方式：
 
-- 關鍵字或中繼資料值（關鍵字查詢語言）
-- 使用先前識別的敏感資訊模式，如社會保險、信用卡或銀行帳戶號碼[（敏感資訊類型實體定義）](sensitive-information-type-entity-definitions.md)
-- 識別專案，因為它是範本的變化[（檔指紋列印）](document-fingerprinting.md)
-- 使用完全字串的狀態[（完全符合資料）](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。 '
+- 關鍵字或中繼資料值（關鍵字查詢語言）。
+- 使用先前識別的敏感資訊模式，如社會保險、信用卡或銀行帳戶號碼[（敏感資訊類型實體定義）](sensitive-information-type-entity-definitions.md)。
+- 識別專案，因為它是範本的變化[（檔指紋列印）](document-fingerprinting.md)。
+- 使用完全字串的狀態[（完全符合資料）](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。
 
 然後，您可以自動套用敏感度和保留標籤，讓內容可用於[資料遺失防護（DLP）](data-loss-prevention-policies.md)和[保留原則](retention-policies.md)。
 
@@ -44,8 +44,10 @@ ms.locfileid: "44327755"
 
 這種分類方法特別適合無法透過手動或自動模式相符方法輕易識別的內容。 這種分類方法更詳細地訓練分類器，以根據專案的專案，而不是專案中的元素（模式對應）來識別專案。 分類器透過查看您要分類之內容的數百個範例，瞭解如何識別內容類型。 您可以在類別中進一步送入明確的範例。 一旦處理這些程式，您可以讓它混合使用比對和不相符的範例。 分類器接著會作出預測，以判斷是否有任何指定的專案屬於您所建立的類別。 然後，您可以確認其結果、將正值、負、誤報和 false 的否定排序，以提升預測的準確性。 當您發佈訓練的分類器時，它會在 SharePoint Online、Exchange 及 OneDrive 等位置中排序專案，並將內容分類。
 
-> [!IMPORTANT]
-> 內建的分類器和 trainable 分類器皆為根據條件和[通訊相容性](communication-compliance.md)[自動套用保留標籤原則](labels.md#applying-a-retention-label-automatically-based-on-conditions)的條件。 敏感度標籤只能使用內建的分類器作為條件，請參閱[自動將敏感度標籤套用至內容](apply-sensitivity-label-automatically.md)。
+### <a name="where-you-can-use-trainable-classifiers"></a>您可以使用 trainable 的分類器
+內建的分類器和 trainable 分類器皆為根據條件和[通訊相容性](communication-compliance-configure.md)[自動套用保留標籤原則](labels.md#applying-a-retention-label-automatically-based-on-conditions)的條件。 
+
+敏感度標籤可以使用內建及自行組建的分類器作為條件，請參閱對[內容自動套用靈敏度標籤](apply-sensitivity-label-automatically.md)，並[自動為 Office 應用程式](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)加上標籤。
 
 > [!IMPORTANT]
 > Trainable 的分類程式只會使用未加密及英文的專案。
@@ -53,6 +55,18 @@ ms.locfileid: "44327755"
 ### <a name="licensing-requirements"></a>授權需求
 
 Trainable 分類器是 Microsoft 365 E5 或 E5 規範功能。 您必須具有這些訂閱中的其中一項，才能使用這些訂閱。
+
+### <a name="pre-requisites"></a>先決條件
+
+在 UI 中存取 trainable 的分類器： 
+- 全域管理員需要自願加入租使用者
+- 合規性管理員角色或合規性資料管理員是訓練分類器所需的
+
+在下列案例中，您將需要具有這些許可權的帳戶，才能使用 trainable 分類器：
+
+- 保留標籤原則案例： RecordManagement 和保留管理角色 
+- 敏感度標籤原則案例：安全性管理員、合規性管理員、規範資料管理員
+- 通訊相容性原則案例：內幕人士風險管理管理員、主管審查管理員 
 
 ## <a name="types-of-classifiers"></a>分類器類型
 
@@ -113,6 +127,7 @@ Microsoft 365 隨附了五個建議的內建分類器：
 ![處理流程 trainable 分類器](../media/classifier-trainable-classifier-flow.png)
 
 ## <a name="see-also"></a>另請參閱
+
 
 - [保留標籤](labels.md)
 - [保留原則](retention-policies.md)
