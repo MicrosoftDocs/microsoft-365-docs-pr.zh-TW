@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Exchange Online 信箱中設定垃圾郵件設定。 在 Outlook 或 web 上的 Outlook 中，使用者可以使用許多這些設定。
-ms.openlocfilehash: ea3727bcfa90229da64db96b531885383d2bf7ed
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 11c01c289ad00475cfa458d0585f377287c495b0
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206625"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347792"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>設定 Exchange Online 信箱上的垃圾郵件設定
 
@@ -40,6 +40,9 @@ ms.locfileid: "44206625"
  當信箱上的垃圾郵件規則停用時，EOP 無法根據垃圾郵件篩選判定動作將郵件移至垃圾郵件資料夾。**將郵件移至垃圾郵件資料夾**或信箱上的安全清單集合。
 
 系統管理員可以使用 Exchange Online PowerShell 來停用、啟用和查看信箱上垃圾郵件規則的狀態。 系統管理員也可以使用 Exchange Online PowerShell 來設定信箱上的安全清單集合中的專案（[安全寄件者] 清單、[安全的收件者] 清單和 [封鎖寄件者] 清單）。
+
+> [!NOTE]
+> 來自使用者已新增至自己安全寄件者清單中寄件者的郵件將會略過 EOP 篩選（SCL 為-1）。 若要防止使用者將專案新增至 Outlook 的安全寄件者清單，請使用本主題稍後的 [[關於 Outlook 中的垃圾郵件設定](#about-junk-email-settings-in-outlook)] 區段中所述的群組原則。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -165,7 +168,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 ## <a name="about-junk-email-settings-in-outlook"></a>關於 Outlook 中的垃圾郵件設定
 
-若要啟用、停用及設定 Outlook 中可用的用戶端垃圾郵件篩選器設定，請使用「群組」原則。 如需詳細資訊，請參閱系統[管理範本檔案（ADMX/ADML）和 Office 自訂工具，適用于企業、office 2019 及 office 2016 的 Microsoft 365 應用程式](https://www.microsoft.com/download/details.aspx?id=49030)。
+若要啟用、停用及設定 Outlook 中可用的用戶端垃圾郵件篩選器設定，請使用「群組」原則。 如需詳細資訊，請參閱系統[管理範本檔案（ADMX/ADML）和 Office 自訂365工具（適用于企業、office 2019 及 office 2016](https://www.microsoft.com/download/details.aspx?id=49030) ）和[如何使用群組原則部署垃圾郵件設定，例如安全寄件者清單](https://support.microsoft.com/help/2252421/how-to-deploy-junk-email-settings-such-as-the-safe-senders-list-by-usi)。
 
 當 outlook 垃圾郵件篩選器設定為預設值時，**不會自動篩選****家用** \> **垃圾** \> **郵件 E-Mail 選項** \> **選項**，Outlook 不會嘗試將 massages 歸類為垃圾郵件，但仍然使用安全性群組集合（安全的寄件者清單、安全的收件者清單和封鎖的寄件者清單）將郵件移至 [垃圾郵件] 資料夾傳送後。 如需這些設定的詳細資訊，請參閱[垃圾郵件篩選程式的概述](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。
 

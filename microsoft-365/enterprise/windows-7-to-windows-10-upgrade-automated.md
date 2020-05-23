@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 適用於大型組織的 Windows 7 至 Windows 10 自動升級
-ms.openlocfilehash: 575ffba84b2cd7b7cfe5267a35a9f36c75dbe306
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: c151c5488fdbc77dc2da7dd308bafb75b6bb5f22
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011548"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221395"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>適用於大型組織的 Windows 7 至 Windows 10 自動就地升級
 
@@ -90,7 +90,7 @@ Configuration Manager 部署工作順序的[預先快取選項](https://docs.mic
 
 預先快取工作順序與相容性掃描結合
 
-除了節省套件下載的時間外，您可以預先快取升級套件，並使用 Windows 安裝程式評估就地升級是否會在執行實際的 Windows 升級之前成功完成。 下列命令列語法可以無訊息方式執行相容性掃描，找出 Windows 安裝程式評估為是否可以準備升級的裝置。
+除了節省套件下載的時間外，您可以預先快取升級套件，並使用 Windows 安裝程式評估就地升級是否會在執行實際的 Windows 升級之前成功完成。 下列命令列語法可以無訊息方式執行相容性掃描，並了解 Windows 安裝程式評估該裝置是否可以準備升級：**Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly**
 
 接下來，記錄會傳送至您定義的伺服器路徑，Windows 安裝程式本身不會顯示讓使用者看見，也無需使用者的互動來關閉。
 

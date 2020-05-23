@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 您現在可以將 DLP 原則套用至 Microsoft 團隊聊天和頻道。 請閱讀本文以深入瞭解其運作方式。
-ms.openlocfilehash: 290e1e7a7c3fd395c1f7e1739b08eba64c8d2d8d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2e65800f747b4e6eae4e19e9da92ad2589ac0d4e
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633052"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347852"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>資料遺失防護和 Microsoft 團隊
 
@@ -31,10 +31,8 @@ ms.locfileid: "43633052"
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Microsoft 小組的 DLP 簡介
 
-最近，[資料遺失防護](data-loss-prevention-policies.md)（DLP）功能已擴充，可包含 Microsoft 團隊聊天和通道訊息。
+最近，[資料遺失防護](data-loss-prevention-policies.md)（DLP）功能已擴充，包含 Microsoft 小組聊天和通道訊息，**包括私人通道訊息**。
 
-> [!NOTE]
-> 目前不支援 DLP 專用通道訊息。
 
 如果您的組織有 DLP，您現在可以定義原則，以防止人員在 Microsoft 小組通道或聊天會話中共用機密資訊。 以下是此保護運作方式的一些範例：
 
@@ -67,9 +65,9 @@ ms.locfileid: "43633052"
 
 若要執行這種工作，您必須被指派具有編輯 DLP 原則許可權的角色。 若要深入瞭解，請參閱[許可權](data-loss-prevention-policies.md#permissions)。
 
-1. 移至安全性 & 規範中心（[https://protection.office.com](https://protection.office.com)）並登入。
+1. 移至安全性 & 規範中心（ [https://protection.office.com](https://protection.office.com) ）並登入。
 
-2. 選擇 [**資料遺失防護** > ]**原則**。
+2. 選擇 [**資料遺失防護**]  >  **原則**。
 
 3. 選取原則，然後按一下 [**原則設定**] 旁的 [**編輯**]。
 
@@ -87,9 +85,9 @@ ms.locfileid: "43633052"
 
 若要執行這種工作，您必須被指派具有編輯 DLP 原則許可權的角色。 若要深入瞭解，請參閱[許可權](data-loss-prevention-policies.md#permissions)。
 
-1. 移至安全性 & 規範中心（[https://protection.office.com](https://protection.office.com)）並登入。
+1. 移至安全性 & 規範中心（ [https://protection.office.com](https://protection.office.com) ）並登入。
 
-2. 選擇 [**資料遺失防護** > ]**原則**。
+2. 選擇 [**資料遺失防護**]  >  **原則**。
 
 3. 選取原則，並查看 [**位置**] 底下的值。 如果您看到**小組聊天及通道訊息**，您就會全部設定。 如果不是，請按一下 [**編輯**]。<br/>![現有原則的位置](../media/dlp-teams-editexistingpolicy.png)<br/>
 
@@ -97,7 +95,7 @@ ms.locfileid: "43633052"
 
 5. 保留所有帳戶的預設設定，或指定要包含或排除的帳戶。
 
-6. 按一下 [儲存]****。
+6. 按一下 **[儲存]**。
 
 針對您的變更，允許大約一小時以透過您的資料中心進行，並同步處理至使用者帳戶。
 <!-- again, why user accounts? -->
@@ -105,9 +103,9 @@ ms.locfileid: "43633052"
 
 若要執行這種工作，您必須被指派具有編輯 DLP 原則許可權的角色。 若要深入瞭解，請參閱[許可權](data-loss-prevention-policies.md#permissions)。
 
-1. 移至安全性 & 規範中心（[https://protection.office.com](https://protection.office.com)）並登入。
+1. 移至安全性 & 規範中心（ [https://protection.office.com](https://protection.office.com) ）並登入。
 
-2. 選擇 [**資料遺失防護** > **原則** > **+ 建立原則**]。
+2. 選擇 [**資料遺失防護**  >  **原則**  >  **+ 建立原則**]。
 
 3. 選擇[範本](data-loss-prevention-policies.md#dlp-policy-templates)，然後選擇 **[下一步]**。<br/>在我們的範例中，我們選擇美國個人身分識別資訊資料範本。<br/>![DLP 原則的隱私權範本](../media/dlp-teams-createnewpolicy-template.png)<br/>
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
-ms.openlocfilehash: 2a1872aff88cd1cc21c6a6e3258671c303b55e17
-ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
+ms.openlocfilehash: d3ff44957864e3d5e959d6252d1d538cc715ae92
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44294190"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347804"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>在 Exchange Online 中指定使用者提交垃圾郵件和網路釣魚郵件的信箱
 
@@ -71,12 +71,15 @@ ms.locfileid: "44294190"
 
         - **Microsoft 和自訂信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。 不允許通訊群組。 使用者送出會同時移至 Microsoft 進行分析，以及您的系統管理員或安全性作業小組的自訂信箱進行分析。
 
-        - **自訂信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。 不允許通訊群組。 如果您只想要讓郵件先移至 [系統管理] 或 [安全性作業] 小組進行分析，請使用此選項。 除非系統管理員轉寄郵件，否則郵件不會移至 Microsoft。
+        - **自訂信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。 不允許通訊群組。 如果您只想要將郵件移至系統管理員或安全性作業小組進行分析，請使用此選項。 除非系統管理員自行轉寄，否則郵件不會移至 Microsoft。
 
-        完成後，請按一下 [**確認**]。
+        > [!NOTE]
+        > 美國政府組織（GCC，GCC-H 和 DoD）只能設定**自訂信箱**。 其他兩個選項會停用。 
 
-     > [!CAUTION]
-     > 如果您已在 Outlook 網頁版 outlook 上使用 Outlook 來[停用 outlook 中的垃圾郵件報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)，但您設定上述任一設定將郵件報告給 microsoft，使用者就可以使用報告訊息增益集，在網頁型 outlook 中將郵件報告給 microsoft。
+      完成後，請按一下 [**確認**]。
+
+      > [!CAUTION]
+      > 如果您已在 Outlook 網頁版 outlook 上使用 Outlook 來[停用 outlook 中的垃圾郵件報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)，但您設定上述任一設定將郵件報告給 microsoft，使用者就可以使用報告訊息增益集，在網頁型 outlook 中將郵件報告給 microsoft。
 
    - **停用 Outlook 的報告郵件功能**：如果您使用協力廠商的報表工具，而不是在 web 上的 Outlook 中使用協力廠商的報表工具或內建的報表，請選取這個選項，然後設定下列設定：
 
@@ -88,13 +91,13 @@ ms.locfileid: "44294190"
 
 傳送至自訂信箱的郵件必須遵循特定提交郵件格式。 提交的主旨（信封標題）應採用此格式：
 
-`{(int)safetyApiAction}|{networkId}|{senderIp}|{fromAddress}|({subject.Substring(0, Math.Min(subjectLen, subject.Length))})`
+`SafetyAPIAction|NetworkMessgeId|SenderIp|FromAddress|(Message Subject)`
 
-SafetyApiAction 為：
+SafetyAPIAction 為下列其中一個整數值：
 
-- 垃圾郵件 = 1
-- NotJunk = 2
-- 網路釣魚 = 3
+- 1：垃圾郵件
+- 2： NotJunk
+- 3：網路釣魚
 
 在下列範例中：
 
@@ -102,7 +105,7 @@ SafetyApiAction 為：
 - 網路消息識別碼是49871234-6dc6-43e8-abcd-08d797f20abe。
 - 寄件者 IP 為167.220.232.101。
 - [寄件者] 位址為 test@contoso.com。
-- 郵件的電子郵件主體是「測試網路釣魚提交」
+- 郵件的主旨行是「測試網路釣魚提交」
 
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phish submission)`
 

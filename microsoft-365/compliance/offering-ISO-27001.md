@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: dfbb5ed43c5256109ccc0a137a3d144d084e573e
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: c02e27ccf6b4c1a1c03849d1f599acef43385668
+ms.sourcegitcommit: dbc9ff159ed41160d8883c8a9787eba50b45f50b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214239"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278456"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 資訊安全性管理標準
 
@@ -35,28 +35,30 @@ ISO/IEC 27001 是安全性標準，正式指定想要在明確管理控制之下
 
 ISO/IEC 27001 在國際上的接受度和適用性，是取得此標準認證為最首要 Microsoft 實作及管理資訊安全性的主要原因。 Microsoft 達到 ISO/IEC 27001 認證，從商務、安全性合規性立場，表達了它為客戶提供良好服務的承諾。 目前 Azure 公用和 Azure 德國針對 ISO/IEC 27001 合規性，由第三方合格驗證實體一年進行一次稽核，提供安全性控制有實施並有效運作的獨立驗證。
 
-了解 Microsoft 雲端上 ISO-Iec-27001 的權益：[下載 ISO/IEC 27001：2013 背景資料](https://go.microsoft.com/fwlink/p/?linkid=2100068)
+了解 Microsoft 雲端上 ISO/IEC 27001 的權益：[下載 ISO/IEC 27001:2013 背景資料](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure、Azure Government 和 Azure 德國](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- [Dynamics 365 和 Dynamics 365 美國政府](https://aka.ms/d365-compliance-list)
-- Genomics
-- Graph
-- Health Bot
+- Azure DevOps Services
+- Microsoft Cloud App Security
+- Microsoft Defender 進階威脅防護
+- [Dynamics 365、Dynamics 365 Government 和 Dynamics 365 德國](https://aka.ms/d365-compliance-list)
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft 受管理的電腦
-- Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
+- Power Automate (先前為 Microsoft Flow) 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - [Office 365、Office 365 美國政府和 Office 365 美國政府國防版](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 德國
 - OMS 服務對應
 - PowerApps 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
+- Power BI Embedded
+- Power Virtual Agent
 - [Microsoft 專業服務](https://go.microsoft.com/fwlink/p/?linkid=2100022)
-- Stream
-- Azure DevOps Services
-- Microsoft Defender ATP - 端點偵測與回應、自動調查與補救、安全分數
+- Microsoft Stream
+- Microsoft 威脅專家
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
@@ -64,17 +66,11 @@ ISO/IEC 27001 在國際上的接受度和適用性，是取得此標準認證為
 
 ### <a name="azure"></a>Azure
 
-- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、Microsoft 受管理的電腦、OMS 服務對應、PowerApps、Power BI、Stream 及 Microsoft Datacenter - ISO 27001 認證](https://go.microsoft.com/fwlink/p/?linkid=2078342)
+- [Azure、Dynamics 365 和線上服務：ISO27001 憑證](https://aka.ms/azureiso27001cert)
 
 ### <a name="office-365"></a>Office 365
 
 - [Office 365 - 全球和德國 ISO 27001 - 資訊安全管理標準 - 認證](https://aka.ms/o365iso27001cert)
-
-### <a name="dynamics-365"></a>Dynamics 365
-
-- [Dynamics 365 - (先前稱為 Dynamics CRM) ISO 27001 - 資訊安全管理標準 - 認證](https://aka.ms/D365ISO27001Cert)
-- [Dynamics 365 - Microsoft Dynamics Marketing Service (MDM) ISO 27001 - 資訊安全管理標準 - 認證](https://aka.ms/d365mdm27001cert)
-- [Dynamics 365 - Microsoft Social Engagement Service ISO 27001 - 資訊安全管理標準 - 認證](https://aka.ms/d365siso27001cert)
 
 ### <a name="azure-devops-services"></a>Azure DevOps Services
 
@@ -84,36 +80,23 @@ ISO/IEC 27001 在國際上的接受度和適用性，是取得此標準認證為
 
 - [Microsoft 專業服務](https://www.bsigroup.com/Our-services/Certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=licence%3d601002%26company%3dMicrosoft&licencenumber=IS%20601002)
 
-### <a name="microsoft-defender-atp"></a>Microsoft Defender ATP
-
-- [Microsoft Defender ATP - 端點偵測與回應、自動調查與補救、安全分數 - ISO 27001 憑證](https://aka.ms/windowsdefenderatpiso27001certificate)
-
 ## <a name="assessments-and-reports"></a>評定和報告
 
 ### <a name="azure"></a>Azure
 
-- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、Microsoft 受管理的電腦、OMS 服務對應、PowerApps、Power BI、Stream 及 Microsoft Datacenter - ISO 27001 和 27018 稽核評定報告](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、OMS 服務對應、PowerApps、Power BI、Stream 及 Microsoft Datacenter - ISO 27001 和 27018 適用性聲明 (SOA)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure、Dynamics 365 和線上服務：ISO 27001、27018 和 27701 稽核評估報告](https://aka.ms/azureiso27001report)
+- [Azure、Dynamics 365 和線上服務：27001、27018、27701 適用性聲明 (SOA)](https://aka.ms/Azureiso27001soa)
 
 ### <a name="office-365"></a>Office 365
 
-- [Office 365 - ISO 27001、ISO 27018 和 ISO 27017 稽核評定報告](https://aka.ms/o365isoreport)
+- [Office 365：ISO 27001、27018 和 27017 稽核評估報告](https://aka.ms/o365isoreport)
 - [Office 365 資訊安全管理系統(ISMS) - 安全性和隱私權的適用性聲明](https://aka.ms/o365isosoa)
-- [Office 365 - 德國 ISO 27001、ISO 27017 和 ISO 27018 稽核評定報告](https://aka.ms/o365gerisoaudit)
-- [Yammer ISO 27001 稽核評定報告](https://aka.ms/yammeriso)
-
-### <a name="dynamics-365"></a>Dynamics 365
-
-- [Dynamics 365 - ISO 27001 適用性聲明 (SOA)](https://aka.ms/d365isosoa)
+- [Office 365 德國：ISO 27001、27017 和 27018 稽核評估報告](https://aka.ms/o365gerisoaudit)
+- [Yammer：ISO27001 稽核評估報告](https://aka.ms/yammeriso)
 
 ### <a name="azure-devops-services"></a>Azure DevOps Services
 
 - [Azure DevOps Services ISO 27001 認證 IS 619017](https://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=company%3dVisual%2bStudio%2bTeam%2bServices&licencenumber=IS%20619017)
-
-### <a name="microsoft-defender-atp"></a>Microsoft Defender ATP
-
-- [Microsoft Defender ATP - 端點偵測與回應、自動調查與補救、安全分數 - ISO 27001 稽核評定報告](https://aka.ms/windowsdefenderatpiso27001auditreport)
-- [Microsoft Defender ATP - 端點偵測與回應、自動調查與補救、安全分數 - ISO 27001 和 27018 SOA](https://aka.ms/windowsdefenderatpiso27001SOA)
 
 [查看其他稽核報告](https://aka.ms/auditreports)
 
@@ -148,7 +131,7 @@ ISO/IEC 27001 在國際上的接受度和適用性，是取得此標準認證為
 
 ## <a name="resources"></a>資源
 
-- [將 Microsoft 網路方案對應至：NIST 網路安全性 (CSF)、CIS 控制和 ISO27001：2013 架構](https://download.microsoft.com/download/B/1/8/B18F4C7D-5CBA-4E68-A437-31F1E908ACBA/Microsoft_Cyber_Offerings_Mapped_to_Security_Frameworks_EN_US.pdf)
+- [將 Microsoft 網路方案對應至：NIST 網路安全性 (CSF)、CIS 控制和 ISO27001:2013 架構](https://download.microsoft.com/download/B/1/8/B18F4C7D-5CBA-4E68-A437-31F1E908ACBA/Microsoft_Cyber_Offerings_Mapped_to_Security_Frameworks_EN_US.pdf)
 - [ISO/IEC 27000 目錄](https://www.27000.org/index.htm)
 - [ISO/IEC 27001：2013 標準](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=54534) (適用於購買)
 - [Microsoft 為資訊安全性設立了高標準](https://pages.bsigroup.com/l/73472/2015-07-24/v9btr) (BSI 案例研究)

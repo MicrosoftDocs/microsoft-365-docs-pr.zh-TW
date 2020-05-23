@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/08/2019
+ms.date: 05/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 提供非企業組織逐步執行 Microsoft 365 企業版底層基礎結構的簡化階段。
-ms.openlocfilehash: e1c747e5f4ab3e58adeaf91518512d8ece83d91b
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: caca093463e4a180f50c880a77fa18399103f069
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011896"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268382"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>適用於非企業的 Microsoft 365 企業版底層基礎結構
 
@@ -436,6 +436,6 @@ Microsoft 365 企業版有許多資訊保護功能，可讓您套用不同的控
    - 已安裝 Microsoft 365 Apps 企業版，它會使用最新的 Office 產品改良功能和安全性增強功能自動更新本身。
    - 已在 Intune 中註冊，而且遵守 Intune 裝置合規性原則和應用程式保護原則。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
-部署您的[工作負載和案例](deploy-workloads.md)，善加利用 Microsoft 365 企業版底層基礎結構的功能與設定。
+部署您的[工作負載](deploy-workloads.md)，善加利用 Microsoft 365 企業版基礎結構的功能與設定。

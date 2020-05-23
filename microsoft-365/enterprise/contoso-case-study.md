@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 虛構但有代表性的全球組織如何採用 Microsoft 365 企業版。
-ms.openlocfilehash: bf974d374b9c60744b2efda465a7c5e92f0386bb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e623e4a95172432dc790f345b1758afed63e144c
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625347"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268419"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>適用於 Contoso Corporation 的 Microsoft 365 企業版
 
@@ -68,16 +68,11 @@ Contoso 對於 Microsoft 365 企業版的整體目標是藉由使用雲端服務
 
   Contoso 針對身分識別與存取管理、威脅防護、資訊保護和安全性管理，使用 Microsoft 365 企業版安全性功能的完整功能。
 
-- [用於高度機密專案的團隊](contoso-team-for-top-secret-project.md)
+- [用於高度機密專案的團隊](../solutions/contoso-team-for-top-secret-project.md)
 
-  為了針對高度機密的專案建立安全的共同作業環境，Contoso 將一個團隊運用於高度管制的資料。
+  為了針對高度機密的專案建立安全的共同作業環境，Contoso 採用一個具有安全性隔離措施的團隊。
 
-- [適用於高度機密數位資產的 SharePoint Online 網站](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
-
-  為了要保護智慧財產權，並讓其研究小組能夠更輕鬆地共同作業，Contoso 使用 Sharepoint Online 網站做為高管制資料的網站。
-
-
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 [了解](contoso-overview.md) Contoso Corporation、其全球各地辦公室，和部署 Microsoft 365 企業版時訂定的設計考量。
 

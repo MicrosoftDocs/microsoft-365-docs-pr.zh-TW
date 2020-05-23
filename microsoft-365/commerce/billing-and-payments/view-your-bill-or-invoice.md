@@ -27,18 +27,18 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: 在 Microsoft 365 系統管理中心尋找您的發票或帳單。 您也可以儲存及列印帳單複本。
-ms.openlocfilehash: 9a7f6f7c28d429135959fa2612dd24721e35366b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 7425c0b49ff65fa0d5c777e3c7fdb7af99488a9d
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942862"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232778"
 ---
 # <a name="view-your-bill-or-invoice"></a>檢視帳單
 
 本文適用於擁有商務用 Microsoft 365 訂閱的使用者。您必須是全域系統管理員或計費系統管理員，才能執行本文所述的步驟。
   
-如果您需要協助來解讀帳單上顯示的費用，請參閱[了解帳單](understand-your-invoice2.md)以取得詳細的逐步解說。
+如果您需要協助來解讀帳單上顯示的費用，請參閱[了解帳單或發票](understand-your-invoice2.md) (部分機器翻譯) 以取得詳細的逐步解說。
   
  **不是系統管理員？** 請連絡您的 IT 系統管理員以取得協助。 
   

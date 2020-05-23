@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解 Exchange Online Protection （EOP）中的欺騙情報，您可以在其中允許或封鎖特定的欺騙寄件者。
-ms.openlocfilehash: 9cbbc263b05e68cc60de31eea35df7086ea15748
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: fb5193566ee359dfe2e5652707c1846280a45c33
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213337"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347840"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>在 EOP 中設定欺騙情報
 
@@ -137,7 +137,7 @@ Get-PhishFilterPolicy [-AllowedToSpoof <Yes | No | Partial>] [-ConfidenceLevel <
 此範例會傳回所有允許哄騙您網域中使用者之寄件者的詳細資訊。
 
 ```powershell
-Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
+Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 ```
 
 如需詳細的語法及參數資訊，請參閱[Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-phishfilterpolicy)。
@@ -183,10 +183,10 @@ Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
 - 在 PowerShell 中，執行下列命令，以查看允許和不允許哄騙的寄件者：
 
   ```powershell
-  Get-PhishFilter -AllowedToSpoof Yes -SpoofType Internal
-  Get-PhishFilter -AllowedToSpoof No -SpoofType Internal
-  Get-PhishFilter -AllowedToSpoof Yes -SpoofType External
-  Get-PhishFilter -AllowedToSpoof No -SpoofType External
+  Get-PhishFilterPolicy -AllowedToSpoof Yes -SpoofType Internal
+  Get-PhishFilterPolicy -AllowedToSpoof No -SpoofType Internal
+  Get-PhishFilterPolicy -AllowedToSpoof Yes -SpoofType External
+  Get-PhishFilterPolicy -AllowedToSpoof No -SpoofType External
   ```
 
 - 在 PowerShell 中，執行下列命令，將所有冒牌寄件者的清單匯出至 CSV 檔案：

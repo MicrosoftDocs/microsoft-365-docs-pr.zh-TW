@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 525d58a37fe4bb254d06ce7a4fcb6e2a54344a79
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42adeca60c97fa2a3877f04055725a99a453b032
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035795"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327775"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -494,7 +494,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 ## <a name="related-articles"></a>相關文章
 
-[內建的敏感性資訊類型以及其尋求的目標](what-the-sensitive-information-types-look-for.md)
+[敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
 
 [自訂敏感性資訊類型](custom-sensitive-info-types.md)
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates 已驗證當 Exchange Online 和安全性與合規性中心依建議設定時，則會符合 CFTC Rule 1.31(c)-(d)、FINRA Rule 4511 和 SEC Rule 17a-4 的相關儲存要求。您可以下載評估。
-ms.openlocfilehash: d2624dbc230bb0fb714ab1a5a66b91e70d301a9c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4d494c519576ed86ed56a331a3440d9237270e33
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626419"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231836"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>使用 Exchange Online 和安全性與合規性中心以符合 SEC Rule 17a-4
 
@@ -65,7 +65,7 @@ Cohasset 已驗證當 Exchange Online 和安全性與合規性中心依建議設
 
 ## <a name="how-to-set-up-preservation-lock"></a>如何設定保留鎖定
 
-您可以使用 PowerShell 鎖定保留原則。如需詳細資訊，請參閱[鎖定保留原則](retention-policies.md#locking-a-retention-policy)。
+您可以使用 PowerShell 鎖定保留原則。 如需詳細資訊，請參閱[使用保留鎖定以符合法規需求](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements)。
 
 ## <a name="known-limitations"></a>已知限制
 

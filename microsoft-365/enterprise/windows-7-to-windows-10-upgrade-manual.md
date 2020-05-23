@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows 7 至 Windows 10 手動升級指南。
-ms.openlocfilehash: ea1705a91baf6b0526e87bcf04529ab2668aa439
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3840a57e3672bdbe0f9fc3c785e20350646a0102
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086054"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222312"
 ---
 # <a name="windows-7-to-windows-10-manual-upgrade-step-by-step-guide"></a>Windows 7 至 Windows 10 手動升級逐步指南
 
@@ -110,6 +110,6 @@ ms.locfileid: "42086054"
 
 ## <a name="moving-to-windows-10-on-a-new-pc"></a>在新電腦上移至 Windows 10
 
-另外一個建議的方法是在新電腦上移至 Windows 10。 如果您偏好這麼做，可以使用 [OneDrive](https://support.office.com/article/b5e918be-0fd4-4095-98da-bceed57f8e0c?ocid=MoveToWindows10) 備份、[內建於 Windows 的備份與還原](https://support.microsoft.com/help/4469209?ocid=MoveToWindows10)、手動使用[外部儲存裝置](https://support.microsoft.com/help/4465814/windows-7-move-files-off-pc-with-an-external-storage-device?ocid=MoveToWindows10)，或使用像 [Laplink 的 PCmover Express](https://www.microsoft.com/windows/transfer-your-data) 的工具，轉移舊電腦的檔案。 如果使用上述任何一種選項，您還是必須重新安裝未隨附於 Windows 10 的所有必要應用程式。 若要深入了解從執行 Windows 7 的現有電腦手動移至 Windows 10 新電腦的選項，請參閱 Windows 支援中的[移至 Windows 10 電腦](https://support.microsoft.com/help/4229823?ocid=MoveToWindows10)。
+另外一個建議的方法是在新電腦上移至 Windows 10。 如果您偏好這麼做，可以使用 [OneDrive](https://support.office.com/article/b5e918be-0fd4-4095-98da-bceed57f8e0c?ocid=MoveToWindows10) 備份、[內建於 Windows 的備份與還原](https://support.microsoft.com/help/4469209?ocid=MoveToWindows10)、手動使用[外部儲存裝置](https://support.microsoft.com/help/4465814/windows-7-move-files-off-pc-with-an-external-storage-device?ocid=MoveToWindows10)，或使用像 Laplink 的 PCmover Express 的工具，轉移舊電腦的檔案。 如果使用上述任何一種選項，您還是必須重新安裝未隨附於 Windows 10 的所有必要應用程式。 若要深入了解從執行 Windows 7 的現有電腦手動移至 Windows 10 新電腦的選項，請參閱 Windows 支援中的[移至 Windows 10 電腦](https://support.microsoft.com/help/4229823?ocid=MoveToWindows10)。
 
-## <a name="desktop-deployment-centerhttpsakamshowtoshift"></a>[桌面部署中心](https://aka.ms/howtoshift)
+## <a name="desktop-deployment-center"></a>[桌面部署中心](https://aka.ms/howtoshift)

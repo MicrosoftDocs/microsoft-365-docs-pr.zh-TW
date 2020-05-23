@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在安全性與合規性中心建立及匯入 DLP 的自訂敏感性資訊類型。
-ms.openlocfilehash: b937cfe1ce4de7b380ef47d14d5fe4c500e173d3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 536662737e2e3fc4fc2796b616adf59b544b2376
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632348"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327785"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>在安全性與合規性中心 PowerShell 中建立自訂敏感性資訊類型
 
-Microsoft 365 中的資料外洩防護 (DLP) 包含許多內建[敏感性資訊類型](what-the-sensitive-information-types-look-for.md)，可讓您在 DLP 原則中使用。這些內建類型可以協助識別及保護信用卡號碼、銀行帳號、護照號碼等等。 
+Microsoft 365 中的資料外洩防護 (DLP) 包含許多內建[敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)，可讓您在 DLP 原則中使用。這些內建類型可以協助識別及保護信用卡號碼、銀行帳號、護照號碼等等。 
   
 但如果您需要識別及保護不同類型的機密資訊 (像是採用組織專用格式的員工 ID) 呢？若要這麼做，您可以建立自訂的機密資訊類型，機密資訊類型是在稱為*規則套件*的 XML 檔案中定義。
   
@@ -908,6 +908,6 @@ Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Pat
 
 - [資料外洩防護原則概觀](data-loss-prevention-policies.md)
     
-- [機密資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
+- [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
     
 - [DLP 功能所尋找的項目](what-the-dlp-functions-look-for.md)

@@ -1,8 +1,8 @@
 ---
-title: 企業用 Microsoft 365 工作負載和案例
+title: '適用於企業工作負載的 Microsoft 365 '
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,14 +12,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 讓貴組織的使用者快速上手企業用 Microsoft 365 的生產力工作負載。
-ms.openlocfilehash: 7767f01d87029c7fc641a65442a5171b0d03eab5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 0e1658655c4b97a7e571d1ac09c4b2edcc6c82ce
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066212"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268271"
 ---
-# <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>企業用 Microsoft 365 工作負載和案例
+# <a name="microsoft-365-for-enterprise-workloads"></a>適用於企業工作負載的 Microsoft 365 
 
 若要獲得企業用 Microsoft 365 的創意暨團隊合作優點，請將這些工作負載部署到底層基礎結構上：
 
@@ -29,31 +29,13 @@ ms.locfileid: "44066212"
 
 請參閱[移轉](migration-microsoft-365-enterprise-workload.md)文章，以了解用來將整個組織移轉到企業用 Microsoft 365 的一般藍圖，其內含 Microsoft Office 用戶端產品、內部部署 Office Server 產品和 Microsoft Windows 架構裝置。
 
-這些案例會以整合方式使用來自企業用 Microsoft 365 的功能和服務，以因應商務需求。 
+以下是整體企業用 Microsoft 365 部署指南中的工作負載：
 
-其中一個需求是，確保您的員工在不直接連線到內部網路時可以有效率且安全地工作。 請參閱[強化遠端工作人員](empower-people-to-work-remotely.md)案例，以取得部署基礎結構元素和推動遠端使用者採用關鍵工作負載的藍圖，例如 Teams 和 Exchange Online。
-
-另一個這類需求是保護 Microsoft 365 中所儲存的高管制資料。 高管制資料包含下列數位資產：
-
-- 受限於區域法規。
-- 貴組織最有價值的資料，例如營業秘密、財務或人力資源資訊，以及組織策略。
-
-若要保護此資料免於內部與外部威脅，請參閱：
-
-- [適用於高度管制資料的 Microsoft Teams](secure-teams-highly-regulated-data-scenario.md)
-- [適用於高度管制資料的 SharePoint 網站](teams-sharepoint-online-sites-highly-regulated-data.md)。 
-
-這些案例會逐步引導您完成 Microsoft Teams 小組或 SharePoint 網站的設定，以便安全地儲存您最有價值的資料。
-
-以下是整體企業用 Microsoft 365 部署指南中的工作負載和案例：
-
-![整體企業用 Microsoft 365 部署指南中的工作負載和案例](media/deploy-workloads/m365-deploy-content-arch-workloads.png)
-
-如需其他案例，請參閱 [Microsoft 365 生產力資源庫](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary)。 
+![整體企業用 Microsoft 365 部署指南中的工作負載](../media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 ## <a name="foundation-infrastructure-prerequisites"></a>底層基礎結構先決條件
 
-理論上**，您應該在設定好[底層基礎結構](deploy-foundation-infrastructure.md)的所有階段後部署工作負載和案例。 這可確保所有基礎層級都已就緒，而可為使用者及其裝置提供整合、安全性及最佳體驗。
+理論上**，您應該在設定好[底層基礎結構](deploy-foundation-infrastructure.md)的所有階段後，再部署工作負載。 這可確保所有基礎層級都已就緒，而可為使用者及其裝置提供整合、安全性及最佳體驗。
 
 | 階段 | 結果 |
 |:-------|:-----|

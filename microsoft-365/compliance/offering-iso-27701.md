@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e6d28d3095f0a08aa7c2bf66df3b32b2dc7bec86
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 8a4f59a817e8ddd38ee8132e7028a3357d15d578
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222015"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254166"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 隱私權資訊管理系統 (PIMS)
 
@@ -67,10 +67,30 @@ ISO/IEC 27001 和 PIMS 的要點：
 
 無論貴組織的規模以及是控制者或處理者，貴組織都應考慮為您自己的組織追求認證，或根據您的商務需求向廠商或供應商要求認證。 對於處理敏感性資料或大量個人資料的處理者、子處理者和共同控制者，更是如此。 在任何情況下，貴組織應評估其商務需求，以判斷本身產品和服務的認證是否適合。
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-- [Azure ISO/IEC 27701 認證](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
-- [Azure ISO/IEC 27701 評估報告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+- Azure、Azure Government 和 Azure 德國
+- Azure DevOps Services
+- Microsoft Cloud App Security
+- Dynamics 365、Dynamics 365 Government 和 Dynamics 365 德國
+- Microsoft Graph
+- Microsoft Healthcare Bot
+- Intune
+- Microsoft 受管理的電腦
+- Power Automate (之前稱為 Microsoft Flow) 
+- PowerApps
+- Power BI
+- Power BI Embedded
+- Power Virtual Agent
+- Microsoft Stream
+- Microsoft 威脅專家
+- Windows Defender 進階威脅防護
+
+
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+
+- [Azure、Dynamics 365 和線上服務：ISO27701 憑證](https://aka.ms/azureiso27701cert)
+- [Azure、Dynamics 365 和線上服務：ISO27701 評估報告](https://aka.ms/azureiso27701report)
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 695471d51e391957a5dfea8770cb1928dd39ee86
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 64a43fc281e5074314ca2b272306a0733297d34e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065908"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254432"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 商務持續性管理標準
 
@@ -35,21 +35,24 @@ Microsoft 是獲得商務持續性管理 ISO 22301 認證的第一個超大規�
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-- [Azure 和 Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Genomics
-- Graph
+- [Azure、Azure Government 和 Azure 德國](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Dynamics 365、Dynamics 365 Government 和 Dynamics 365 德國
+- Microsoft Defender 進階威脅防護
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft 受管理的電腦
-- Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
+- Power Automate (先前為 Microsoft Flow) 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - [Office 365 商業版、政府版和教育版](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - PowerApps 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
-- Power BI 雲端服務，以獨立服務形式提供或包含在 Office 365 品牌方案或套件中
+- Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
+- Power BI Embedded
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
-- [Azure 和 Azure ISO 22301 註冊認證](https://go.microsoft.com/fwlink/p/?linkid=2099078)
-- [Azure ISO 22301 評定報告](https://go.microsoft.com/fwlink/p/?linkid=2099079)
+- [Azure、Dynamics 365 和線上服務：ISO22301 憑證](https://aka.ms/azureiso22301cert)
+- [Azure、Dynamics 365 和線上服務：ISO22301 評估報告](https://aka.ms/azureiso22301report)
 - [BSI 22301 Microsoft Office 365 認證](https://go.microsoft.com/fwlink/p/?linkid=2092109)
 - [BSI 22301 Microsoft Office 365 階段 2 附錄](https://go.microsoft.com/fwlink/p/?linkid=2092209)
 - [Office 365 ISO 22301 階段 2 報告](https://go.microsoft.com/fwlink/p/?linkid=2092211)

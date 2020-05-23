@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 了解可用來在組織中部署 Microsoft 365 企業版的不同資源。
-ms.openlocfilehash: 0e588816cb2393af05b48900821d7aae92b6853d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42b193683a2e0c5efce73b62b00747b20baec05a
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031423"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268326"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>部署 Microsoft 365 企業版
 
@@ -55,7 +55,7 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
 - 為內建安全性與整合部署[基礎結構](deploy-foundation-infrastructure.md)來簡化管理，此可讓您更輕鬆確保用戶端軟體已更新，具備最新的生產力和安全性增強功能。 
  
-  基礎結構會組織為一系列有編號的階段，並且以彼此為基礎來進行建置，而目標就是建立能支援 Microsoft 365 企業版工作負載和案例的環境。 
+  基礎結構會組織為一系列有編號的階段，並且以彼此為基礎來進行建置，而目標就是建立能支援 Microsoft 365 企業工作負載的環境。 
 
   **如果您是規模較小或創立不久的組織**，請遵循這些階段以便有系統地建置基礎結構。
 
@@ -63,13 +63,13 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
   **如果您是企業組織**，請將這些階段視為 IT 基礎結構層級而非明確的路徑，並判斷最終要如何做才能符合組織內每一層級的需求。
 
-- 在基礎結構頂端部署關鍵產能的[工作負載和案例](deploy-workloads.md)。 這些都需要在您組織中發揮創意和團隊合作。
+- 在基礎結構之外，另部署關鍵產能的[工作負載](deploy-workloads.md)。 這些都需要在您組織中發揮創意和團隊合作。
 
-以下是基礎結構和工作負載及案例之間的關聯。
+以下是基礎結構和工作負載之間的關係。
 
-![基礎結構和工作負載及案例之間的關聯](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![基礎結構和工作負載之間的關係](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
-工作負載和案例會在基礎結構的頂端運作。 不過，您不一定要建置所有基礎結構階段才能開始進行生力及共同作業的工作負載。
+工作負載會在基礎結構之外運作。 不過，您不一定要建置所有基礎結構階段才能開始進行生力及共同作業的工作負載。
 
 [從此處](deploy-foundation-infrastructure.md)開始您自己的端對端部署旅程。
 
@@ -126,11 +126,7 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
 Contoso Corporation 是虛構但具代表性的全球製造業集團，其總部位於法國巴黎。 請參閱 [Contoso 如何部署 Microsoft 365 企業版](contoso-case-study.md)，並且針對網路、身分識別、Windows 10 企業版、Microsoft 365 Apps 企業版、行動裝置管理、資訊保護和安全性，訂定主要設計決策和實作詳細資料。 
 
-## <a name="stay-current-with-deployment-content"></a>隨時了解部署內容
-
-如需內容中的最新變更，請參閱 [本文章](microsoft-365-deploment-guide-changes.md)。
-
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 若需要 Microsoft 的直接協助以進行部署，請使用 [FastTrack](https://fasttrack.microsoft.com/microsoft365)。
 

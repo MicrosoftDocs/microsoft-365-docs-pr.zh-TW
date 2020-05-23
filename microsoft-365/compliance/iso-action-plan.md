@@ -14,12 +14,12 @@ audience: itpro
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: acab66e3f1e3fc8429e594686e6f0fb40056b0c1
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: e94e20cf3936fc28497074cec05ddcb949314e07
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211425"
+ms.locfileid: "44214527"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 ISO 27001 行動計畫 — 前 30 天、90 天及過後的首要工作
 
@@ -49,7 +49,7 @@ ISO/IEC 27001 是用來實作資訊安全性管理系統 (ISMS) 的國際標準�
 |**適用範圍**|**工作**|
 |了解您的 ISO 27001 控管和合規性需求。|• 使用[合規性分數](compliance-score.md)評估及管理您的合規性風險，以執行貴組織的 ISO 27001:2013 評估。為 14 個 ISO 27001 群組建立標準作業程序 (SOP)。
 |開始規劃將資訊分類和保留原則與工具推出至組織，以協助使用者識別、分類及保護敏感性資料和資產。|• 藉由推出分類原則和 [Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)應用程式，協助使用者根據您的資訊保護原則和標準作業程序 (SOP)，輕鬆地識別及分類敏感性資料。  開發貴組織的資訊分類架構 (原則)，以及實施教育和推出計劃。<br>• 藉由將 [Microsoft 365 標籤](https://docs.microsoft.com/microsoft-365/compliance/labels)推出至組織，協助使用者輕易地將記錄保留和保護原則套用至內容。根據資訊記錄保留的法規需求，規劃貴組織的標籤，以及實施教育和推出計劃。
-|藉由建立稽核和責任原則作為標準作業程序 (SOP) 的一部分，確保與資訊安全性相關的記錄受到保護，免於遺失、刪除、修改或未經授權的存取。|• 針對所有 Exchange 信箱啟用[稽核記錄](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) (部分機器翻譯) 和[信箱稽核](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) (部分機器翻譯)，以監視 Microsoft 365 中是否有潛在的惡意活動，並啟用資料外洩的鑑識調查分析。<br>• 以定期頻率搜尋貴公司的稽核記錄，以檢閱對租用戶組態設定所做的變更。<br>• 在 Microsoft 365 安全性或合規性中心中，針對機密活動啟用 [Microsoft 365 警示原則](https://support.office.com/article/alert-policies-in-the-office-365-security-compliance-center-8927b8b9-c5bc-45a8-a9f9-96c732e58264)，例如當使用者帳戶發生權限提升時。<br>• 針對長期儲存稽核記錄資料，使用 [Office 365 管理活動 API 參考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)以與安全性資訊和事件管理 (SIEM) 工具整合。
+|藉由建立稽核和責任原則作為標準作業程序 (SOP) 的一部分，確保與資訊安全性相關的記錄受到保護，免於遺失、刪除、修改或未經授權的存取。|• 針對所有 Exchange 信箱啟用[稽核記錄](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) (部分機器翻譯) 和[信箱稽核](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) (部分機器翻譯)，以監視 Microsoft 365 中是否有潛在的惡意活動，並啟用資料外洩的鑑識調查分析。<br>• 以定期頻率搜尋貴公司的稽核記錄，以檢閱對租用戶組態設定所做的變更。<br>• 在 Microsoft 365 安全性或合規性中心中，針對機密活動啟用 [Microsoft 365 警示原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)，例如當使用者帳戶發生權限提升時。<br>•   針對稽核記錄資料的長期儲存，使用 [Office 365 管理活動 API 參考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)以與安全性資訊和事件管理 (SIEM) 工具整合。
 |定義組織的系統管理和安全性角色，以及與職責劃分相關的適當原則。|• 使用 [Microsoft 365 系統管理角色](https://support.office.com/article/understanding-administrative-roles-52f29955-6a60-435f-aba9-eb69c898606a) (英文) 以區隔系統管理職責。附註：許多系統管理員角色在 Exchange Online、SharePoint Online 和商務用 Skype Online 中有對應的角色。<br>• 區隔權限以確保單一系統管理員不會具備超過必要的存取權。|
 
 ## <a name="90-days--enhanced-protections"></a>90 天 — 加強的保護
@@ -59,7 +59,7 @@ ISO/IEC 27001 是用來實作資訊安全性管理系統 (ISMS) 的國際標準�
 |||
 |:-----|:-----|
 |**適用範圍**|**工作**|
-|使用 Microsoft 365 安全性功能來控制對環境的存取，以及根據您定義的標準作業程序 (SOP)，保護組織資訊和資產。|• 藉由實作[身分識別與裝置存取原則](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations) (部分機器翻譯) 來保護系統管理員和使用者帳戶，包括針對所有使用者帳戶啟用多重要素驗證 (MFA)，針對所有應用程式啟用新式驗證。<br>• 建立[強式密碼原則](https://www.microsoft.com/research/publication/password-guidance/) (英文)，以管理與保護使用者帳戶認證。<br>• 設定 [Office 365 郵件加密 (OME)](https://support.office.com/article/office-365-message-encryption-f87cb016-7876-4317-ae3c-9169b311ff8a)，協助使用者在透過電子郵件傳送機密資料時，符合貴組織的 SOP。<br>• 將 [Windows Defender 進階威脅防護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (ATP) 部署至所有桌上型電腦以防範惡意程式碼，以及資料外洩防護和回應。<br>• 設定、測試及部署[資料外洩防護 (DLP) 原則](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) (部分機器翻譯)，以在文件和電子郵件內識別、監視及[自動保護](https://docs.microsoft.com/office365/enterprise/apply-protection-to-personal-data-in-office-365)超過 80 個常見的敏感性資料類型，包括財務、醫療及個人識別資訊。<br>• 藉由設定[原則提示](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips) (部分機器翻譯)，在電子郵件寄件者寄送違規郵件之前，通知他們可能會違反您的其中一項原則。 在 Outlook、Outlook 網頁版和適用於裝置的 OWA 中可以將原則提示設定為呈現簡短的通知，在建立郵件期間提供可能的原則違規資訊。<br>• 實作 [Office 365 進階威脅防護 (ATP)](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (部分機器翻譯)，協助防範最常見的攻擊，包括網路釣魚電子郵件和包含惡意連結和附件的 Office 文件。|
+|使用 Microsoft 365 安全性功能來控制對環境的存取，以及根據您定義的標準作業程序 (SOP)，保護組織資訊和資產。|• 藉由實作[身分識別與裝置存取原則](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations) (部分機器翻譯) 來保護系統管理員和使用者帳戶，包括針對所有使用者帳戶啟用多重要素驗證 (MFA)，針對所有應用程式啟用新式驗證。<br>• 建立[強式密碼原則](https://www.microsoft.com/research/publication/password-guidance) (英文)，以管理與保護使用者帳戶認證。<br>• 設定 [Office 365 郵件加密 (OME)](https://docs.microsoft.com/microsoft-365/compliance/ome)，協助使用者在透過電子郵件傳送機密資料時，符合組織的 SOP。<br>• 將 [Windows Defender 進階威脅防護 (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 部署至所有桌上型電腦以防範惡意程式碼，以及資料外洩防護和回應。<br>• 設定、測試及部署[資料外洩防護 (DLP) 原則](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) (部分機器翻譯)，以在文件和電子郵件內識別、監視及[自動保護](https://docs.microsoft.com/office365/enterprise/apply-protection-to-personal-data-in-office-365)超過 80 個常見的敏感性資料類型，包括財務、醫療及個人識別資訊。<br>• 藉由設定[原則提示](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips) (部分機器翻譯)，在電子郵件寄件者寄送違規郵件之前，通知他們可能會違反您的其中一項原則。 在 Outlook、Outlook 網頁版和適用於裝置的 OWA 中可以將原則提示設定為呈現簡短的通知，在建立郵件期間提供可能的原則違規資訊。<br>• 實作 [Office 365 進階威脅防護 (ATP)](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (部分機器翻譯)，協助防範最常見的攻擊，包括網路釣魚電子郵件和包含惡意連結和附件的 Office 文件。|
 
 
 ## <a name="beyond-90-days--ongoing-security-data-governance-and-reporting"></a>超過 90 天 - 持續的安全性、資料控管及報告

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 檢查資訊保護型服務和基礎結構的準則，確定您的設定符合 Microsoft 365 企業版的需求。
-ms.openlocfilehash: c0b4ff6a0d289b8a8c63255d817ea455df00bf13
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 19f4fc4ae93c00e33a2f58d8c23582e6e49cf887
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631630"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268218"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>資訊保護基礎結構的允出準則
 
@@ -116,4 +116,4 @@ ms.locfileid: "43631630"
 
 Microsoft 365 企業版的資訊保護基礎架構使用已定義的安全性層級、Office 365 的增強安全性、使用敏感資料類型和標籤的分類、Windows 資訊保護、資料外洩防護、電子郵件加密以及特殊存取權限管理。
 
-如果您遵照 Microsoft 365 企業版的端到端部署，那麼現在您已準備好讓[工作負載和案例](deploy-workloads.md)利用基礎架構的所有功能和設定。
+如果您遵照 Microsoft 365 企業版的端到端部署，那麼現在您已準備好讓[工作負載](deploy-workloads.md)利用基礎架構的所有功能和設定。

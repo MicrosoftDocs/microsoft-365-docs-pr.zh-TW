@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a305c66aaa3359417bd72b8525ed63787d655f8f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ab6f199cd27e56a24641ec52ba640cf5e2f5777b
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065678"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254462"
 ---
 # <a name="multi-tier-cloud-security-mtcs-standard-for-singapore"></a>新加坡多層雲端安全性 (MTCS) 標準
 
@@ -46,16 +46,16 @@ MTCS 是第一個具有不同安全性層級的雲端安全性標準，因此，
 
 - [Azure](https://go.microsoft.com/fwlink/p/?linkid=2092718)
 - [Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=2051700)
-- 雲端 App 安全性
+- Microsoft Cloud App Security
 - Genomics
-- Graph
-- Health Bot
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Flow
 - OMS 服務對應
 - PowerApps
 - Power BI
-- Stream
+- Microsoft Stream
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
