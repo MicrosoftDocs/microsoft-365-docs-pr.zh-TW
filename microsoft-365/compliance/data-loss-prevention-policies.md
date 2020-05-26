@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 透過安全性與合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監控及自動保護整個 Office 365 的敏感性資訊。
-ms.openlocfilehash: 705c105853a67d4bb006efbfd0f3d6150f5e7181
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 4328855a4a7332c452d7e2832e1b924c16652f8b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327701"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351848"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -521,7 +521,7 @@ Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容�
   
 1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     
-2. 使用任何 [policy-and-compliance-dlp cmdlets](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
+2. 使用任何 [policy-and-compliance-dlp cmdlets](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps)
     
 不過，DLP 報告需要從整個 Microsoft 365 擷取資料，包含 Exchange Online。 有鑑於此，**DLP 報告的 Cmdlet 可在 Exchange Online PowerShell 中使用，但安全性與合規性中心 PowerShell 則不行**。 因此，若要為 DLP 報告使用 Cmdlet，您需要︰
   
@@ -529,9 +529,9 @@ Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容�
     
 2. 為 DLP 報告使用下列任何 Cmdlet：
     
-    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
+    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetectionsReport?view=exchange-ps)
 
-    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
+    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>詳細資訊
 

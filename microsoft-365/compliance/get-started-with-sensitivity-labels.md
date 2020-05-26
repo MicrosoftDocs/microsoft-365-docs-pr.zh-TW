@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: ab05b9226c244b1e6cdf1e552d32d4d9fc0d95d2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c696c7b8b19b5c19ff3fcaf30029001604f791bf
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208674"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327131"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -40,7 +40,7 @@ ms.locfileid: "44208674"
     
     如需更廣泛的定義分類法指導方針，請從[服務信任入口網站](https://aka.ms/DataClassificationWhitepaper)下載白皮書《資料分類和敏感度標籤分類》(英文)。
 
-2. **定義每個標籤的功能。** 設定您想要與每個標籤相關聯的保護設定。 例如，您可能希望較低敏感度內容 (如「一般」標籤) 只有套用頁首或頁尾，而較高敏感度內容 (如「機密」標籤) 則應套用浮水印、加密及端點保護。
+2. **定義每個標籤的功能。** 設定您想要與每個標籤相關聯的保護設定。 例如，您可能希望將較低敏感度內容 (如「一般」標籤) 僅套用到頁首或頁尾，而較高敏感度內容 (如「機密」標籤) 則具有浮水印和加密。
 
 3. **發佈標籤。** 設定好敏感度標籤之後，請使用標籤原則加以發佈。 決定哪些使用者和群組應具有標籤，以及所要使用的原則設定。 單一標籤可重複使用；您只要定義一次，就可以將它納入指派給不同使用者的數個標籤原則中。 例如，您可以將標籤原則指派給少數幾個使用者來試驗您的敏感度標籤。 當您準備好在整個組織推出標籤時，您可以為標籤建立新的標籤原則，而這次指定所有使用者。
 
@@ -82,15 +82,15 @@ ms.locfileid: "44208674"
 |探索、標記和保護儲存在內部部署資料存放區中的檔案 |[部署 Azure 資訊保護掃描器以自動分類和保護檔案](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |探索、標記和保護儲存在雲端的資料存放區中的檔案|[探索、分類、標記和保護儲存在雲端中的控管和敏感性資料](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |套用並檢視 Power BI 中的敏感度標籤，以及保護已下載的報告|[Power BI 中的資料保護 (預覽)](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
-|查看我的敏感度標籤的使用方式和位置，並深入探查以檢查加上標籤的內容|[了解您的資料 - 資料分類概觀 (預覽)](data-classification-overview.md)|
+|監視並了解組織中使用敏感度標籤的方法|[了解您的資料 - 資料分類概觀](data-classification-overview.md) <br /><br /> [利用標籤分析檢視標籤使用量](label-analytics.md)|
 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>敏感度標籤的使用者文件
 
 最有效的使用者文件會是您為所選的標籤名稱和組態提供的自訂指導方針和指示。 不過，您可以使用下列資源來取得基本指示：   
 
-- [在 Office 中將敏感度標籤套用至您的檔案和電子郵件](https://support.office.com/article/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-    - [Office 敏感度標籤的已知問題](https://support.office.com/zh-TW/article/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [在 Office 中將敏感度標籤套用至您的檔案和電子郵件](https://support.microsoft.com/zh-TW/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+    - [Office 敏感度標籤的已知問題](https://support.microsoft.com/zh-TW/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 - [在 Office 中自動套用或建議敏感度標籤至您的檔案和電子郵件](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [自動套用或建議敏感度標籤的已知問題](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
