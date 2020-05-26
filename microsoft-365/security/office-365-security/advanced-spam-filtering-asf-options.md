@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解 Exchange Online Protection （EOP）中的反垃圾郵件原則中提供的高級垃圾郵件篩選（ASF）設定。
-ms.openlocfilehash: 904513780ca472efb91cfcd914ad6c72d6c720f7
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 691539b8abd4fcd2e749c71d7fd337b0105d66ae
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213409"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352473"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>EOP 中的高級垃圾郵件篩選器（ASF）設定
 
@@ -35,7 +35,7 @@ ms.locfileid: "44213409"
 > [!NOTE]
 > 啟用一或多個 ASF 設定是一種積極的垃圾郵件篩選方法。 您無法將以 ASF 篩選的郵件報告為誤報。 您可以使用下列方法來識別透過 ASF 篩選的郵件： <ul><li>週期性的使用者垃圾郵件隔離通知。</li><li>隔離中已篩選的郵件是否存在。</li><li>`X-CustomSpam:`如本主題所述，新增至郵件的特定 X 標頭欄位。</li></ul>
 
-下列各節說明安全性 & 規範中心及 Exchange Online PowerShell 或獨立 EOP PowerShell （[New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy)及[Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)）中的反垃圾郵件原則中可用的 ASF 設定和選項。 如需詳細資訊，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+下列各節說明安全性 & 規範中心及 Exchange Online PowerShell 或獨立 EOP PowerShell （[New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy)及[Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)）中的反垃圾郵件原則中可用的 ASF 設定和選項。 如需詳細資訊，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 ## <a name="enable-disable-or-test-asf-settings"></a>啟用、停用或測試 ASF 設定
 

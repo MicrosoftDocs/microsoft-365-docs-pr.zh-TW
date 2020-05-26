@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解 Exchange Online Protection （EOP）中的欺騙情報，您可以在其中允許或封鎖特定的欺騙寄件者。
-ms.openlocfilehash: fb5193566ee359dfe2e5652707c1846280a45c33
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.openlocfilehash: 638f130c448f14bf7214afc705b5650311866fce
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347840"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351936"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>在 EOP 中設定欺騙情報
 
@@ -48,7 +48,7 @@ ms.locfileid: "44347840"
 
   - 外部公司代表另一家公司傳送電子郵件（例如，自動化的報告或軟體即服務公司）。
 
-哄騙情報，特別是預設（而且只是）哄騙智慧原則，可協助確保合法寄件者所傳送的欺騙電子郵件不會陷入 Microsoft 365 或外部電子郵件系統的垃圾郵件篩選器中，同時也會保護您的使用者免受垃圾郵件或網路釣魚攻擊。
+哄騙情報，特別是預設（而且只是）哄騙智慧原則，可協助確保合法寄件者所傳送的欺騙電子郵件不會陷入 EOP 垃圾郵件篩選器或外部電子郵件系統中，同時也會保護您的使用者免受垃圾郵件或網路釣魚攻擊。
 
 您可以在安全性 & 合規性中心或 PowerShell （Exchange Online PowerShell 中，管理具有 Exchange Online 信箱的 Microsoft 365 組織; 獨立 EOP PowerShell （沒有 Exchange Online 信箱的組織）中的欺騙智慧。
 
@@ -60,7 +60,7 @@ ms.locfileid: "44347840"
 
 - 您必須已獲指派權限，才能執行這些程序。 若要修改欺騙性智慧原則或啟用或停用欺騙智慧，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要取得欺騙智慧原則的唯讀存取權，您必須是「**安全性讀者**」角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
-- 如需適用于哄騙情報的建議設定，請[EOP 預設的反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。
+- 如需適用于哄騙情報的建議設定，請參閱[EOP 預設的反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。
 
 ## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>使用安全性 & 規範中心管理欺騙寄件者
 
@@ -140,7 +140,7 @@ Get-PhishFilterPolicy [-AllowedToSpoof <Yes | No | Partial>] [-ConfidenceLevel <
 Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 ```
 
-如需詳細的語法及參數資訊，請參閱[Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-phishfilterpolicy)。
+如需詳細的語法及參數資訊，請參閱[Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-phishfilterpolicy)。
 
 若要在欺騙智慧中設定允許和封鎖的寄件者，請遵循下列步驟：
 
@@ -162,7 +162,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
    Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
    ```
 
-如需詳細的語法及參數資訊，請參閱[Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy)。
+如需詳細的語法及參數資訊，請參閱[Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-phishfilterpolicy)。
 
 ## <a name="use-the-security--compliance-center-to-configure-spoof-intelligence"></a>使用安全性 & 規範中心設定假冒情報
 
@@ -195,28 +195,16 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-- 在包含 Exchange Online 信箱的 Microsoft 365 組織中，執行下列其中一個步驟：
+- 在 [安全性 & 規範中心] 中，移至 [**威脅管理** \> **原則**] \> **反網路**釣魚或**ATP 反網路釣魚**，並執行下列其中一個步驟：  
 
-  - 在 [安全性 & 規範中心] 中，移至**威脅管理** \> **原則** \> **反網路釣魚** \> 按一下 [**預設原則**]，然後查看快顯視窗中的詳細資料。
+  - 從清單中選取原則。 在出現的快顯視窗中，確認 [**哄騙**] 區段中的值。
+  - 按一下 [**預設原則**]。 在出現的快顯視窗中，確認 [**哄騙**] 區段中的值。
 
-  - 在 Exchange Online PowerShell 中，執行下列命令並確認設定：
+- 在 Exchange Online PowerShell 中， \< \> 以 Office365 AntiPhish 預設值或自訂原則的名稱取代名稱，並執行下列命令來確認設定：
 
-    ```PowerShell
-    Get-AntiPhishPolicy -Identity "Office365 AntiPhish Default"
-    ```
-
-- 在 Microsoft 365 ATP 組織中，執行下列其中一個步驟：
-
-  - 在 [安全性 & 規範中心] 中，移至 [**威脅管理** \> **原則** \> **ATP 反網路釣魚**]，並執行下列其中一個步驟：
-
-    - 從清單中選取原則。 在出現的快顯視窗中，確認 [**哄騙**] 區段中的值。
-    - 按一下 [**預設原則**]。 在出現的快顯視窗中，確認 [**哄騙**] 區段中的值。
-
-  - 在 Exchange Online PowerShell 中， \< \> 以 Office365 AntiPhish 預設值取代名稱] 的預設值，或自訂 ATP 反網路釣魚原則的名稱，然後執行下列命令並確認設定：
-
-    ```PowerShell
-    Get-AntiPhishPolicy -Identity "<Name>"
-    ```
+  ```PowerShell
+  Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableAntiSpoofEnforcement,EnableUnauthenticatedSender,AuthenticationFailAction
+  ```
 
 ## <a name="other-ways-to-manage-spoofing-and-phishing"></a>其他管理哄騙和網路釣魚的方式
 

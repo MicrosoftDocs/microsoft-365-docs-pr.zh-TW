@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 在您設定客戶金鑰之後，請瞭解如何透過還原 AKV 機碼來管理它，以及管理許可權和您的資料加密原則。
-ms.openlocfilehash: 4796fcef69e052725b635acb4170d73bb36de787
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dbdbd61b4d06e183d8cc5461122e316b2b6b1797
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635599"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352200"
 ---
 # <a name="manage-customer-key"></a>管理客戶金鑰
 
@@ -88,7 +88,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
   Get-DataEncryptionPolicy
   ```
 
-  如需 Get-DataEncryptionPolicy Cmdlet 的詳細資訊，請參閱[Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-dataencryptionpolicy?view=exchange-ps)。
+  如需 Get-DataEncryptionPolicy Cmdlet 的詳細資訊，請參閱[Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps)。
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>將信箱遷移至雲端之前，請先指派 DEP
 
@@ -104,7 +104,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
   Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
   ```
 
-  其中*GeneralMailboxOrMailUserIdParameter*指定信箱，且*DataEncryptionPolicyIdParameter*是 DEP 的識別碼。 如需 Set-MailUser Cmdlet 的詳細資訊，請參閱[Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser?view=exchange-ps)。
+  其中*GeneralMailboxOrMailUserIdParameter*指定信箱，且*DataEncryptionPolicyIdParameter*是 DEP 的識別碼。 如需 Set-MailUser Cmdlet 的詳細資訊，請參閱[Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps)。
 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>決定指派給信箱的 DEP
 
@@ -116,7 +116,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
    ```
 
-   其中*GeneralMailboxOrMailUserIdParameter*指定信箱和 DataEncryptionPolicyID 會傳回 DEP 的 GUID。 如需 Get-MailboxStatistics Cmdlet 的詳細資訊，請參閱[Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxstatistics?view=exchange-ps)。
+   其中*GeneralMailboxOrMailUserIdParameter*指定信箱和 DataEncryptionPolicyID 會傳回 DEP 的 GUID。 如需 Get-MailboxStatistics Cmdlet 的詳細資訊，請參閱[Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps)。
   
 2. 執行 Get-DataEncryptionPolicy Cmdlet，以找出信箱所指派的 DEP 好記名稱。
   
@@ -148,7 +148,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 New-MoveRequest <alias>
 ```
 
-如需此 Cmdlet 的詳細資訊，請參閱[Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest?view=exchange-ps)。
+如需此 Cmdlet 的詳細資訊，請參閱[Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/new-moverequest?view=exchange-ps)。
 
 ### <a name="verify-encryption-completes-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>驗證 SharePoint 線上、商務 OneDrive 及小組檔案的加密是否已完成
 
@@ -201,7 +201,7 @@ Microsoft 365 會審核和驗證資料清除路徑。 如需詳細資訊，請�
 
 2. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，連線[至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
 
-3. 針對包含您要刪除之信箱的每個 DEP，執行[DataEncryptionPolicy 指令程式](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-dataencryptionpolicy)，如下所示。
+3. 針對包含您要刪除之信箱的每個 DEP，執行[DataEncryptionPolicy 指令程式](https://docs.microsoft.com/powershell/module/exchange/set-dataencryptionpolicy)，如下所示。
 
     ```powershell
     Set-DataEncryptionPolicy <Policy ID> -PermanentDataPurgeRequested -PermanentDataPurgeReason <Reason> -PermanentDataPurgeContact <ContactName>

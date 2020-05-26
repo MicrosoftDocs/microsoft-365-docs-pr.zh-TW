@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何將垃圾郵件路由傳送至 Exchange Online Protection 混合式環境中的使用者垃圾郵件資料夾。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5b4d16c864b25c4d47910f0dd69f0ed3e71a0de
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1d5d83f8cfb994499be98eccf77b36d83e1f3d7c
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209472"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351960"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>設定獨立 EOP，將垃圾郵件傳遞至混合式環境中的 [垃圾郵件] 資料夾
 
@@ -52,13 +52,13 @@ ms.locfileid: "44209472"
 
 - 當郵件傳遞至內部部署 Exchange 組織中的 [垃圾郵件] 資料夾時，由下列設定的組合來控制：
 
-  - Exchange 管理命令介面中[Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) Cmdlet 上的_SCLJunkThreshold_參數值。 預設值為4，表示 SCL 上限為5或以上，則應該會將郵件傳遞至使用者的 [垃圾郵件] 資料夾。
+  - Exchange 管理命令介面中[Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) Cmdlet 上的_SCLJunkThreshold_參數值。 預設值為4，表示 SCL 上限為5或以上，則應該會將郵件傳遞至使用者的 [垃圾郵件] 資料夾。
 
-  - Exchange 管理命令介面中[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) Cmdlet 上的_SCLJunkThreshold_參數值。 預設值為空白（$null），這表示使用組織設定。
+  - Exchange 管理命令介面中[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) Cmdlet 上的_SCLJunkThreshold_參數值。 預設值為空白（$null），這表示使用組織設定。
 
   如需詳細資訊，請參閱[Exchange 垃圾郵件信賴等級（SCL）閾值](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/scl)。
 
-  - 信箱上是否啟用垃圾郵件規則（ _enabled_參數值是在 Exchange 管理命令介面的[Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration)指令程式中 $true）。 這是垃圾郵件規則，它會在傳送後實際將郵件移至 [垃圾郵件] 資料夾。 依預設，會在信箱上啟用垃圾郵件規則。 如需詳細資訊，請參閱[設定信箱上的 Exchange 反垃圾郵件設定](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)。
+  - 信箱上是否啟用垃圾郵件規則（ _enabled_參數值是在 Exchange 管理命令介面的[Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration)指令程式中 $true）。 這是垃圾郵件規則，它會在傳送後實際將郵件移至 [垃圾郵件] 資料夾。 依預設，會在信箱上啟用垃圾郵件規則。 如需詳細資訊，請參閱[設定信箱上的 Exchange 反垃圾郵件設定](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)。
   
 - 若要在 Exchange 伺服器上開啟 EAC，請參閱 exchange [server 中的 exchange 系統管理中心](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center)。 若要開啟 Exchange 管理命令介面，請參閱 [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) 。
 
@@ -126,7 +126,7 @@ New-TransportRule -Name "EOP SFV:SKS to SCL 6" -HeaderContainsMessageHeader "X-F
 New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKB" -SetSCL 6
 ```
 
-如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule)。
+如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule)。
 
 ## <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 

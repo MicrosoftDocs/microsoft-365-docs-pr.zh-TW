@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 瞭解如何為您的組織設定多重要素驗證。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 893a4ae535dfb781a4f77ee57c0ead40fda8454f
-ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
+ms.openlocfilehash: ca1a8bd47e2fa5bbd7b7aed396debefaad10ea5e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44340771"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351712"
 ---
 # <a name="set-up-multi-factor-authentication"></a>設定多重要素驗證
   
@@ -104,7 +104,7 @@ ms.locfileid: "44340771"
 
 ### <a name="conditional-access-policies"></a>條件式存取原則
 
-建立、設定或啟用適當的原則，其中包括需要 MFA 進行 MFA 的使用者群組。
+建立、設定及啟用適當的原則，其中包括需要 MFA 進行 MFA 的使用者群組。
 
 ### <a name="per-user-mfa-not-recommended"></a>每一使用者 MFA （不建議）
 

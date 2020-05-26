@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 針對系統管理員：刪除使用者的 [可復原的專案] 資料夾中的專案，即使該信箱位於法律封存中也是一樣。 這是一種有效的方式，可刪除意外濺入 Microsoft 365 的資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 223c589d191eef14662b7e19aa5ed113db9ff3b2
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: ce363d558e5ce1de600ccf34863cc6524841e78b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232054"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352178"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>刪除雲端式信箱的 [可復原的專案] 資料夾中的專案，保留系統管理員協助
 
@@ -262,7 +262,7 @@ Get-Mailbox <username> | FL DelayHoldApplied,DelayReleaseHoldApplied
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-或者
+或
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -272,7 +272,7 @@ Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>步驟5：刪除 [可復原的專案] 資料夾中的專案
 
-現在，您已準備好使用 [安全性 & 規範中心] 中的[New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)和[New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction) Cmdlet 來實際刪除 [可復原的專案] 資料夾中的專案。 
+現在，您已準備好使用 [安全性 & 規範中心] 中的[New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)和[New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction) Cmdlet 來實際刪除 [可復原的專案] 資料夾中的專案。 
 
 若要執行此動作，請參閱[搜尋並刪除電子郵件訊息](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)。
 

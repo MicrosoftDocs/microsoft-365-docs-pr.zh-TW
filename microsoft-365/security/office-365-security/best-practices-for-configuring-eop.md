@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 請遵循這些最佳做法，以進行獨立 Exchange Online Protection （EOP），以便自行設定以取得成功，並避免常見的設定錯誤。
-ms.openlocfilehash: 157d6b76631336e3c6f6e5e669323266c17e015f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: ade41b5343e19f75658f01e6c395c470e230b315
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209616"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351924"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>設定獨立 EOP 的最佳作法
 
@@ -53,7 +53,7 @@ ms.locfileid: "44209616"
 |[POP 與信箱的連線能力](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|停用|停用||
 |已驗證的 SMTP 提交|停用|停用|POP3 和 IMAP4 用戶端傳送電子郵件時，需要已驗證的用戶端 SMTP 提交（也稱為「用戶端 SMTP 提交」或「SMTP 驗證」）。|
 |EWS 至信箱的連接|停用|停用||
-|[PowerShell 連線能力](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|停用|停用|可用於信箱使用者或郵件使用者（ [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user) Cmdlet 所傳回的使用者物件）。|
+|[PowerShell 連線能力](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|停用|停用|可用於信箱使用者或郵件使用者（ [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) Cmdlet 所傳回的使用者物件）。|
 |盡可能使用[哄騙智慧](learn-about-spoof-intelligence.md)白名單寄件者|是|是||
 |[以目錄為基礎的邊緣封鎖（DBEB）](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|已啟用|已啟用|網欄位型別 = 權威性|
 |[設定所有系統管理員帳戶的多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|已啟用|已啟用||

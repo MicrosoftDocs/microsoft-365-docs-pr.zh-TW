@@ -14,12 +14,12 @@ search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
 description: 瞭解如何將信箱設為訴訟暫止，並在調查期間保留所有信箱內容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3ea5c07065788e342edcd0b5c70ef9dcaae48e16
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8f4d95e1174c9070dd51f27ae9ab90c64bfeaafd
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035815"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351048"
 ---
 # <a name="create-a-litigation-hold"></a>建立訴訟資料暫留
 
@@ -44,7 +44,7 @@ ms.locfileid: "44035815"
 
 以下是使用 Exchange 系統管理中心，將信箱設為訴訟暫止狀態的步驟。
 
-1. 移至[https://outlook.office.com/ecp](https://outlook.office.com/ecp)並使用全域系統管理員帳戶登入。
+1. 移至 [https://outlook.office.com/ecp](https://outlook.office.com/ecp) 並使用全域系統管理員帳戶登入。
 
 2. 按一下左導覽窗格中的 [收件者] **> 信箱**。
 
@@ -78,7 +78,7 @@ Set-Mailbox <username> -LitigationHoldEnabled $true
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-如需詳細資訊，請參閱 [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)。
+如需詳細資訊，請參閱 [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)。
 
 ## <a name="how-does-litigation-hold-work"></a>訴訟暫止如何運作？
 

@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: 使用本文做為疑難排解資訊障礙的指南。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f73493f53937c38f33eeab9595ddb07ef4813c89
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5aa45e3e9dea5ce413b2b0e62d825003bc24e20e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035029"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352322"
 ---
 # <a name="troubleshooting-information-barriers"></a>疑難排解資訊屏障
 
@@ -32,7 +32,7 @@ ms.locfileid: "44035029"
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>問題：使用者意外封鎖，無法與 Microsoft 小組中的其他使用者通訊 
 
-在此情況下，使用者會在 Microsoft 小組中報告與其他人進行通訊的意外問題。 範例:
+在此情況下，使用者會在 Microsoft 小組中報告與其他人進行通訊的意外問題。 範例：
 - 使用者可搜尋，但找不到 Microsoft 小組中的其他使用者。
 - 使用者可以找到，但無法選取 Microsoft 小組中的另一位使用者。
 - 使用者可以查看其他使用者，但無法將郵件傳送給 Microsoft 小組中的其他使用者。
@@ -45,11 +45,11 @@ ms.locfileid: "44035029"
 
     |語法  |範例  |
     |---------|---------|
-    | `Get-InformationBarrierRecipientStatus -Identity` <p>您可以使用唯一識別每個收件者的任何 identity 值，例如 Name、Alias、辨別名稱（DN）、正常化 DN、電子郵件地址或 GUID。     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>在此範例中，我們使用了 Identity 參數的別名（*meganb*）。 此 Cmdlet 會傳回指出使用者是否受到資訊屏障原則影響的資訊。 （尋找 * ExoPolicyId： \<GUID>。）         |
+    | `Get-InformationBarrierRecipientStatus -Identity` <p>您可以使用唯一識別每個收件者的任何 identity 值，例如 Name、Alias、辨別名稱（DN）、正常化 DN、電子郵件地址或 GUID。     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>在此範例中，我們使用了 Identity 參數的別名（*meganb*）。 此 Cmdlet 會傳回指出使用者是否受到資訊屏障原則影響的資訊。 （請參閱 * ExoPolicyId： \<GUID>。）         |
 
     **如果使用者未包含在資訊屏障原則中，請與支援人員聯繫**。 否則，請繼續進行下一個步驟。
 
-2. 瞭解資訊屏障原則中所包含的段落。 若要這麼做，請`Get-InformationBarrierPolicy`使用 Cmdlet 搭配 Identity 參數。 
+2. 瞭解資訊屏障原則中所包含的段落。 若要這麼做，請使用 `Get-InformationBarrierPolicy` Cmdlet 搭配 Identity 參數。 
 
     |語法  |範例  |
     |---------|---------|
@@ -57,7 +57,7 @@ ms.locfileid: "44035029"
 
     在您執行 Cmdlet 後，請在 [結果] 中，尋找 [ **AssignedSegment**]、[ **SegmentsAllowed**] 及 [ **SegmentsBlocked** ] 值。
 
-    例如，執行`Get-InformationBarrierPolicy` Cmdlet 後，我們會在結果清單中看到下列專案：
+    例如， `Get-InformationBarrierPolicy` 執行 Cmdlet 後，我們會在結果清單中看到下列專案：
 
     ```powershell
         AssignedSegment      : Sales
@@ -68,13 +68,13 @@ ms.locfileid: "44035029"
     
     如果看起來正確，則資訊壁壘會如預期般運作。 若未完成，請繼續進行下一個步驟。
 
-4. 請確定已正確定義您的區段。 若要這麼做，請`Get-OrganizationSegment`使用 Cmdlet，並複查結果清單。 
+4. 請確定已正確定義您的區段。 若要這麼做，請使用 `Get-OrganizationSegment` Cmdlet，並複查結果清單。 
 
     |語法  |範例  |
     |---------|---------|
     |`Get-OrganizationSegment`<p>使用此 Cmdlet 搭配 Identity 參數。     |`Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p>在此範例中，我們會取得 GUID 為*c96e0837-c232-4a8a-841e-ef45787d8fcd*之網段的相關資訊。         |
 
-    查看區段的詳細資料。 如有必要，請[編輯區段](information-barriers-edit-segments-policies.md#edit-a-segment)，然後重新使用`Start-InformationBarrierPoliciesApplication` Cmdlet。
+    查看區段的詳細資料。 如有必要，請[編輯區段](information-barriers-edit-segments-policies.md#edit-a-segment)，然後重新使用 `Start-InformationBarrierPoliciesApplication` Cmdlet。
 
     **如果您仍有資訊屏障原則的問題，請與支援人員聯繫**。
 
@@ -104,7 +104,7 @@ ms.locfileid: "44035029"
     |---------|---------|
     |所選使用者未列出任何區段     |執行下列其中一項動作：<br/>-在 Azure Active Directory 中編輯使用者設定檔，將使用者指派至現有的網段。 （請參閱[使用 Office 365 PowerShell 設定使用者帳戶屬性](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)。）<br/>-使用[支援的資訊障礙屬性](information-barriers-attributes.md)定義區段。 然後，[定義新的原則](information-barriers-policies.md#part-2-define-information-barrier-policies)或[編輯現有的原則](information-barriers-edit-segments-policies.md#edit-a-policy)，以包含該區段。  |
     |會列出網段，但不會將資訊障礙原則指派給那些區段     |執行下列其中一項動作：<br/>- 為相關的每個區段[定義新的資訊屏障原則](information-barriers-policies.md#part-2-define-information-barrier-policies)<br/>- [編輯現有的資訊屏障原則](information-barriers-edit-segments-policies.md#edit-a-policy)，將其指派給正確的區段         |
-    |列出各段，且每個區段都包含在資訊屏障原則中     |-執行`Get-InformationBarrierPolicy` Cmdlet 以確認資訊屏障原則為作用中狀態。<br/>-執行`Get-InformationBarrierPoliciesApplicationStatus` Cmdlet 以確認已套用原則<br/>-執行`Start-InformationBarrierPoliciesApplication` Cmdlet 以套用所有作用中的資訊屏障原則          |
+    |列出各段，且每個區段都包含在資訊屏障原則中     |-執行 `Get-InformationBarrierPolicy` Cmdlet 以確認資訊屏障原則為作用中狀態。<br/>-執行 `Get-InformationBarrierPoliciesApplicationStatus` Cmdlet 以確認已套用原則<br/>-執行 `Start-InformationBarrierPoliciesApplication` Cmdlet 以套用所有作用中的資訊屏障原則          |
     
 
 ## <a name="issue-i-need-to-remove-a-single-user-from-an-information-barrier-policy"></a>問題：我需要從資訊屏障原則中移除單一使用者
@@ -126,7 +126,7 @@ ms.locfileid: "44035029"
 
 3. 若要從受資訊障礙影響的區段中移除使用者，請[在 Azure Active Directory 中更新使用者的設定檔資訊](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
 
-4. 等候大約30分鐘，以進行 FwdSync。 或者，執行`Start-InformationBarrierPoliciesApplication` Cmdlet 以套用所有作用中的資訊屏障原則。
+4. 等候大約30分鐘，以進行 FwdSync。 或者，執行 Cmdlet 以套用所有作用中的 `Start-InformationBarrierPoliciesApplication` 資訊屏障原則。
 
 ## <a name="issue-the-information-barrier-application-process-is-taking-too-long"></a>問題：資訊障礙應用程式處理時間過長
 
@@ -155,7 +155,7 @@ ms.locfileid: "44035029"
 
 ## <a name="issue-information-barrier-policies-are-not-being-applied-at-all"></a>問題：根本沒有套用資訊屏障原則
 
-在此情況下，您已定義區段、定義的資訊關卡原則，並嘗試套用這些原則。 不過，當您執行`Get-InformationBarrierPoliciesApplicationStatus` Cmdlet 時，您可以看到原則應用程式失敗。
+在此情況下，您已定義區段、定義的資訊關卡原則，並嘗試套用這些原則。 不過，當您執行 `Get-InformationBarrierPoliciesApplicationStatus` Cmdlet 時，您可以看到原則應用程式失敗。
 
 ### <a name="what-to-do"></a>處理方式
 
@@ -163,7 +163,7 @@ ms.locfileid: "44035029"
 
 1. 連接至[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。 
 
-2. 執行[Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/get-addressbookpolicy?view=exchange-ps) Cmdlet，並檢查結果。
+2. 執行[Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy?view=exchange-ps) Cmdlet，並檢查結果。
 
     |結果  |後續步驟  |
     |---------|---------|
@@ -175,7 +175,7 @@ ms.locfileid: "44035029"
 ## <a name="issue-information-barrier-policy-not-applied-to-all-designated-users"></a>問題：資訊屏障原則未套用至所有指定的使用者
 
 定義資料段、定義資訊屏障原則，並嘗試套用這些原則之後，您可能會發現原則套用至某些收件者，而不是其他收件者。
-當您執行`Get-InformationBarrierPoliciesApplicationStatus` Cmdlet 時，請搜尋輸出以取得類似的文字。
+當您執行 `Get-InformationBarrierPoliciesApplicationStatus` Cmdlet 時，請搜尋輸出以取得類似的文字。
 
 > 身份：`<application guid>`
 >
@@ -189,13 +189,13 @@ ms.locfileid: "44035029"
 
 ### <a name="what-to-do"></a>處理方式
 
-1. 在審核記錄中搜尋`<application guid>`。 您可以將此 PowerShell 程式碼和您的變數一起修改。
+1. 在審核記錄中搜尋 `<application guid>` 。 您可以將此 PowerShell 程式碼和您的變數一起修改。
 
 ```powershell
 $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
 ```
 
-2. 檢查 [ `"UserId"`和`"ErrorDetails"` ] 欄位的值之審核記錄中的詳細輸出。 這可讓您失敗的原因。 您可以將此 PowerShell 程式碼和您的變數一起修改。
+2. 檢查 [和] 欄位的值之審核記錄中的詳細 `"UserId"` 輸出 `"ErrorDetails"` 。 這可讓您失敗的原因。 您可以將此 PowerShell 程式碼和您的變數一起修改。
 
 ```powershell
    $DetailedLogs[1] |fl
@@ -206,7 +206,7 @@ $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDat
 > 
 >"ErrorDetails"： "Status： IBPolicyConflict。 錯誤： IB 區段 "segment id1" 和 IB 線段 "segment id2" 發生衝突，且無法指派給收件者。 
 
-3. 通常，您會發現使用者已包含在一個以上的區段中。 您可以更新中的`-UserGroupFilter`值以`OrganizationSegments`修正此問題。
+3. 通常，您會發現使用者已包含在一個以上的區段中。 您可以更新中的值以修正此問題 `-UserGroupFilter` `OrganizationSegments` 。
 
 4. 使用這些程式[資訊障礙原則](information-barriers-policies.md#part-3-apply-information-barrier-policies)，重新套用資訊屏障原則。
 

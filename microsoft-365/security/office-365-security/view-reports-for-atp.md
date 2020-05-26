@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 在安全性與合規性中心尋找及使用 Office 365 的「高級威脅防護」報告 &amp; 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: af5844cf05d14e34059a26291d2034187439ec56
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 857b98c02895f187d8639d991b74ed1fe12622ae
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208486"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351870"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>檢視 Office 365 進階威脅防護的報告
 
@@ -136,9 +136,9 @@ ATP 報告包含下列專案：
 |**報告**|**詳細資料**|
 |**瀏覽器**或**即時**偵測：（Office 365 ATP Plan 2 客戶具有 Explorer;Office 365 ATP Plan 1 客戶具備即時偵測。|[威脅總管 (及即時偵測)](threat-explorer.md)|
 |**電子郵件安全性報告**，例如主要寄件者和收件者報告、冒名郵件報告和垃圾郵件偵測報告。|[檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md)|
-|**ATP 安全連結 URL 追蹤**：（這是您使用 PowerShell 所產生的報表）。此報告顯示在過去七（7）天內 ATP 安全連結動作的結果。|[Get-UrlTrace Cmdlet 參考](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace)|
-|**EOP 和 ATP 結果**：（這是您使用 PowerShell 所產生的自訂報告）。 此報告包含資訊，例如網域、日期、事件種類、方向、動作和郵件數目。|[MailTrafficATPReport Cmdlet 參考](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport)|
-|**EOP 和 ATP**偵測：（這是您使用 PowerShell 所產生的自訂報告）。 此報告包含有關電子郵件或檔案中惡意檔案或 URLs、網路釣魚企圖、模仿及其他潛在威脅的詳細資料。|[MailDetailATPReport Cmdlet 參考](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport)|
+|**ATP 安全連結 URL 追蹤**：（這是您使用 PowerShell 所產生的報表）。此報告顯示在過去七（7）天內 ATP 安全連結動作的結果。|[Get-UrlTrace Cmdlet 參考](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|**EOP 和 ATP 結果**：（這是您使用 PowerShell 所產生的自訂報告）。 此報告包含資訊，例如網域、日期、事件種類、方向、動作和郵件數目。|[MailTrafficATPReport Cmdlet 參考](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
+|**EOP 和 ATP**偵測：（這是您使用 PowerShell 所產生的自訂報告）。 此報告包含有關電子郵件或檔案中惡意檔案或 URLs、網路釣魚企圖、模仿及其他潛在威脅的詳細資料。|[MailDetailATPReport Cmdlet 參考](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 |
 
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>查看 ATP 報表所需的許可權為何？

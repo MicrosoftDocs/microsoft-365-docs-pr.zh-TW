@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 將審核記錄搜尋的結果匯出並下載到 CSV 檔案之後，您可以在 Excel 的 Power Query 編輯器中使用 JSON 轉換功能，將 AuditData 欄中 JSON 物件的每個屬性都分割成自己的資料行。 這可協助您快速找到您要尋找的特定審核資料。 您也可以使用 PowerShell 來搜尋和匯出審計記錄檔。
-ms.openlocfilehash: c06fbe28a62cf04e1ffdd6ecf173d027e89b5074
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: 763a20a7da09007e54c0714b82b86ffe3586e501
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799926"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352383"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>匯出、 設定及檢視稽核記錄檔的記錄
 
@@ -100,7 +100,7 @@ ms.locfileid: "43799926"
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>使用 PowerShell 來搜尋和匯出審計記錄記錄
 
-您可以使用 Exchange Online PowerShell 中的[Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) Cmdlet，將審核記錄搜尋的結果匯出至 CSV 檔案，而不是在安全性 & 合規性中心使用「審核記錄搜尋」工具。 接著，您可以遵循步驟2所述的相同程式，以使用 Power Query 編輯器來格式化審核記錄檔。 使用 PowerShell Cmdlet 的其中一個優點是，您可以使用*RecordType*參數，從特定服務搜尋事件。 以下是一些使用 PowerShell 將審核記錄匯出至 CSV 檔案的範例，因此您可以使用 Power Query 編輯器，依步驟2所述，在**AuditData**欄中轉換 JSON 物件。
+您可以使用 Exchange Online PowerShell 中的[Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) Cmdlet，將審核記錄搜尋的結果匯出至 CSV 檔案，而不是在安全性 & 合規性中心使用「審核記錄搜尋」工具。 接著，您可以遵循步驟2所述的相同程式，以使用 Power Query 編輯器來格式化審核記錄檔。 使用 PowerShell Cmdlet 的其中一個優點是，您可以使用*RecordType*參數，從特定服務搜尋事件。 以下是一些使用 PowerShell 將審核記錄匯出至 CSV 檔案的範例，因此您可以使用 Power Query 編輯器，依步驟2所述，在**AuditData**欄中轉換 JSON 物件。
 
 在此範例中，執行下列命令以傳回與 SharePoint 共用作業相關的所有記錄。
 

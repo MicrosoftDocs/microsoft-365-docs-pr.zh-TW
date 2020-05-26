@@ -1,5 +1,5 @@
 ---
-title: 在獨立 EOP 中執行系統管理員角色群組報告
+title: 在獨立版 EOP 中執行系統管理員角色群組報告
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,14 +14,14 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: 管理員可以瞭解如何在獨立 Exchange Online Protection （EOP）中執行系統管理員角色群組報告。 當系統管理員在系統管理員角色群組中新增或移除成員時，此報告會登入，EOP 記錄每次出現一次。
-ms.openlocfilehash: f5641e9900c786f976d05cdeeec148caab12a03d
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 39022892075b295a26645157941195b97897c690
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209172"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350936"
 ---
-# <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>在獨立 EOP 中執行系統管理員角色群組報告
+# <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>在獨立版 EOP 中執行系統管理員角色群組報告
 
 在沒有 Exchange Online 信箱的獨立 Exchange Online Protection （EOP）組織中，當系統管理員新增成員至或移除系統管理角色群組中的成員時，服務會記錄每個事件。 如需獨立 EOP 中角色群組的詳細資訊，請參閱[獨立 EOP 中的許可權](feature-permissions-in-eop.md)。
 
@@ -115,7 +115,7 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
 
 如果您的搜尋傳回許多記錄專案，建議您使用使用 Exchange Online PowerShell 中提供的程式，**來搜尋審計記錄專案，並將結果傳送給**本主題稍後的收件者。 該章節中的程序會以電子郵件附件形式將 XML 檔案傳送給您指定的收件者，讓您更輕鬆擷取感興趣的資料。
 
-如需詳細的語法及參數資訊，請參閱 [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)。
+如需詳細的語法及參數資訊，請參閱 [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)。
 
 ### <a name="view-details-of-audit-log-entries"></a>檢視稽核記錄項目的詳細資料
 

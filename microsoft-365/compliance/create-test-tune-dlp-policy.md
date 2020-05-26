@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 在本文中，您將瞭解如何根據組織的需求來建立、測試及調整 DLP 原則。
-ms.openlocfilehash: 2cbf30f3d0c5d70aecce77c7a07820812699797a
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 9f5f1b1f84ba44dbf52366d30b0e26bbf310e9fe
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327795"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352220"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>建立、測試及調整 DLP 原則
 
@@ -200,7 +200,7 @@ DLP 原則範本並不完全直接離開盒。 您很可能會發現環境中有
 
 ![開啟原則的選項](../media/DLP-create-test-tune-turn-on-policy.png)
  
-如果您想要查看原則何時生效，請連線[至安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) ，並執行[Get-DlpCompliancePolicy Cmdlet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) ，以查看 DistributionStatus。
+如果您想要查看原則何時生效，請連線[至安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) ，並執行[Get-DlpCompliancePolicy Cmdlet](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy?view=exchange-ps) ，以查看 DistributionStatus。
 
 ![在 PowerShell 中執行 Cmdlet](../media/DLP-create-test-tune-PowerShell.png)
 

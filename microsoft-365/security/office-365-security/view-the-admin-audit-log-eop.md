@@ -1,5 +1,5 @@
 ---
-title: 在獨立 EOP 中查看系統管理員審核記錄
+title: 在獨立版 EOP 中檢視系統管理稽核記錄
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: 系統管理員可以瞭解如何在獨立 Exchange Online Protection （EOP）中查看及搜尋管理審核記錄。
-ms.openlocfilehash: 3aedebc97ccd32c1641510017a276ddbe4770633
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b3f2f2601be1ce6e2120b60d23f617ae4e174e08
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208473"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351858"
 ---
-# <a name="view-the-admin-audit-log-in-standalone-eop"></a>在獨立 EOP 中查看系統管理員審核記錄
+# <a name="view-the-admin-audit-log-in-standalone-eop"></a>在獨立版 EOP 中檢視系統管理稽核記錄
 
 在沒有 Exchange Online 信箱的獨立 Exchange Online Protection （EOP）組織中，您可以使用 Exchange 系統管理中心（EAC）或獨立的 EOP PowerShell，在系統管理員審核記錄中搜尋並查看專案。
 
@@ -100,7 +100,7 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 Search-AdminAuditLog -Cmdlets Update-RoleGroupMember -StartDate (Get-Date "08/04/2019").ToUniversalTime() -EndDate (Get-Date "10/03/2019").ToUniversalTime()
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)。
+如需詳細的語法及參數資訊，請參閱 [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)。
 
 ### <a name="view-details-of-audit-log-entries"></a>檢視稽核記錄項目的詳細資料
 

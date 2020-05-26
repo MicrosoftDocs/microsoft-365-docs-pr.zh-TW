@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何建立郵件流程規則（傳輸規則），以使用 Office 365 郵件加密來加密及解密郵件。
-ms.openlocfilehash: ec36e8ff57b45b0f6a3408d6e6bc1e07ce789ffd
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 869448ff1f5161fc71d332c1b5956015dca50fa2
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943120"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351790"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>定義郵件流程規則以加密電子郵件
 
@@ -46,9 +46,9 @@ ms.locfileid: "43943120"
 
 2. 選擇 [**管理**] 磚。
 
-3. 在 Microsoft 365 系統管理中心中，選擇 [系統**管理中心** \> ] [ **Exchange**]。
+3. 在 Microsoft 365 系統管理中心中，選擇 [系統**管理中心**] [ \> **Exchange**]。
 
-4. 在 EAC 中，移至 [**郵件流程** \> **規則**]，然後選取](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> [**新增** ![新圖示] 以**建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，移至 [**郵件流程** \> **規則**]，然後選取 [**新增**新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 [**名稱**] 中，輸入規則的名稱，例如 [加密 DrToniRamos@hotmail.com 的郵件]。
 
@@ -64,7 +64,7 @@ ms.locfileid: "43943120"
 
 7. 若要新增更多條件，請選擇 [**更多選項**]，然後選擇 [**新增條件**]，然後從清單中選取。
 
-   例如，若要在組織外部的收件者之外套用規則，請選取 [**新增條件** **]**，然後選取收件者在\> **組織** \>外**外部/內部的收件**者。
+   例如，若要在組織外部的收件者之外套用規則，請選取 [**新增條件**]，然後選取收件者在組織外**外部/內部的收件**者 \> **Outside the organization** \> ** **。
 
 8. 若要使用新的 OME 功能來啟用加密，請從**執行下列**動作，選取 **[修改郵件安全性**]，然後選擇 [套用**Office 365 郵件加密和許可權保護**]。 從清單中選取 RMS 範本，然後選擇 [**儲存**]，然後選擇 **[確定]**。
   
@@ -78,11 +78,11 @@ ms.locfileid: "43943120"
 
 2. 選擇 [**管理**] 磚。
 
-3. 在 Microsoft 365 系統管理中心中，選擇 [系統**管理中心** \> ] [ **Exchange**]。
+3. 在 Microsoft 365 系統管理中心中，選擇 [系統**管理中心**] [ \> **Exchange**]。
 
 4. 在 EAC 中，移至 [郵件流程]**** \> [規則]****。
 
-5. 在郵件流程規則清單中，選取您要修改的規則，以使用新的 OME 功能，然後選擇 [**編輯** ![編輯圖示](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)]。
+5. 在郵件流程規則清單中，選取您要修改的規則，以使用新的 OME 功能，然後選擇 [**編輯** ![ 編輯圖示] ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。
 
 6. 若要使用新的 OME 功能來啟用加密，請從**執行下列**動作，選擇 [**修改郵件安全性**]，然後選擇 [套用**Office 365 郵件加密和許可權保護**]。 從清單中選取 RMS 範本，然後選擇 [**儲存**]，然後選擇 **[確定]**。
 
@@ -90,7 +90,7 @@ ms.locfileid: "43943120"
 
    如果您想要指定另一個動作，您可以選擇 [**新增動作**]。
 
-7. 從 [**執行下列**動作] 清單中，移除指派給**修改郵件安全性** \>的任何動作套用**先前版本的 OME**。
+7. 從 [**執行下列**動作] 清單中，移除指派給**修改郵件安全性**的任何動作套用 \> **先前版本的 OME**。
 
 8. 選擇 [儲存]****。
 
@@ -104,9 +104,9 @@ ms.locfileid: "43943120"
 
 2. 選擇 [**管理**] 磚。
 
-3. 在 Microsoft 365 系統管理中心中，選擇 [系統**管理中心** \> ] [ **Exchange**]。
+3. 在 Microsoft 365 系統管理中心中，選擇 [系統**管理中心**] [ \> **Exchange**]。
 
-4. 在 EAC 中，移至 [**郵件流程** \> **規則**]，然後選取](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> [**新增** ![新圖示] 以**建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，移至 [**郵件流程** \> **規則**]，然後選取 [**新增**新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 [**名稱**] 中，輸入規則的名稱，例如 [從外寄郵件移除加密]。
 
@@ -126,9 +126,9 @@ ms.locfileid: "43943120"
 
 2. 選擇 [**管理**] 磚。
 
-3. 在 Microsoft 365 系統管理中心中，選擇 [系統**管理中心** \> ] [ **Exchange**]。
+3. 在 Microsoft 365 系統管理中心中，選擇 [系統**管理中心**] [ \> **Exchange**]。
 
-4. 在 EAC 中，移至 [**郵件流程** \> **規則**]，然後選取](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> [**新增** ![新圖示] 以**建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，移至 [**郵件流程** \> **規則**]，然後選取 [**新增**新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 [**名稱**] 中，輸入規則的名稱，例如 [加密 DrToniRamos@hotmail.com 的郵件]。
 
@@ -144,9 +144,9 @@ ms.locfileid: "43943120"
 
 7. 若要新增更多條件，請選擇 [**更多選項**]，然後選取 [**新增條件**]，然後從清單中選取。
 
-   例如，若要在組織外部的收件者之外套用規則，請選取 [**新增條件** **]**，然後選取收件者在\> **組織** \>外**外部/內部的收件**者。
+   例如，若要在組織外部的收件者之外套用規則，請選取 [**新增條件**]，然後選取收件者在組織外**外部/內部的收件**者 \> **Outside the organization** \> ** **。
 
-8. 若要在不使用新 OME 功能的情況下啟用加密，請在**執行下列**動作中，選取 **[修改郵件安全性** \> ] 套用**舊版的 OME**，然後選擇 [**儲存**]。
+8. 若要在不使用新 OME 功能的情況下啟用加密，請在**執行下列**動作中，選取 **[修改郵件安全性**] 套用 \> **舊版的 OME**，然後選擇 [**儲存**]。
 
   如果您收到未啟用 IRM 授權的錯誤，則表示尚未為您的組織設定 OME。 如果您想要立即設定 OME，則必須將它設定為使用新的 OME 功能。 如需詳細資訊，請參閱[在 Azure 資訊保護上建立新的 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)。 Microsoft 不再支援設定新的 OME 部署，沒有新功能。
 
@@ -156,7 +156,7 @@ ms.locfileid: "43943120"
 
 1. 連線至 Exchange Online PowerShell。 如需詳細資訊，請參閱＜[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)＞。
 
-2. 使用**New-TransportRule** Cmdlet 來建立規則，並將_ApplyOME_參數設為`$true`。
+2. 使用**New-TransportRule** Cmdlet 來建立規則，並將_ApplyOME_參數設為 `$true` 。
 
    本範例要求所有傳送至 DrToniRamos@hotmail.com 的電子郵件都必須加密。
 
@@ -170,9 +170,9 @@ ms.locfileid: "43943120"
    > 
    > - _SentTo_參數會指定郵件收件者（透過名稱、電子郵件地址、辨識名稱等）。 在此範例中，收件者會透過電子郵件地址 "DrToniRamos@hotmail.com" 加以識別。
    > 
-   > - _SentToScope_參數會指定郵件收件者的位置。 在此範例中，收件者的信箱是在 hotmail 中，而且不是組織的一部分， `NotInOrganization`因此會使用此值。
+   > - _SentToScope_參數會指定郵件收件者的位置。 在此範例中，收件者的信箱是在 hotmail 中，而且不是組織的一部分，因此 `NotInOrganization` 會使用此值。
    
-   如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)。
+   如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule)。
 
 ### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>從加密的電子郵件回復中移除加密，但不含新的 OME 功能
 
@@ -184,9 +184,9 @@ ms.locfileid: "43943120"
 
 2. 選擇 [**管理**] 磚。
 
-3. 在 Microsoft 365 系統管理中心中，選擇 [系統**管理中心** \> ] [ **Exchange**]。
+3. 在 Microsoft 365 系統管理中心中，選擇 [系統**管理中心**] [ \> **Exchange**]。
 
-4. 在 EAC 中，移至 [**郵件流程** \> **規則**]，然後選取](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> [**新增** ![新圖示] 以**建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，移至 [**郵件流程** \> **規則**]，然後選取 [**新增**新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 [**名稱**] 中，輸入規則的名稱，例如 [移除來自傳入郵件的加密]。
 
@@ -200,7 +200,7 @@ ms.locfileid: "43943120"
 
 1. 連線至 Exchange Online PowerShell。 如需詳細資訊，請參閱＜[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)＞。
 
-2. 使用**New-TransportRule** Cmdlet 來建立規則，並將_RemoveOME_參數設為`$true`。
+2. 使用**New-TransportRule** Cmdlet 來建立規則，並將_RemoveOME_參數設為 `$true` 。
 
    此範例會移除傳送給組織中收件者的所有郵件的加密。
 
@@ -212,7 +212,7 @@ ms.locfileid: "43943120"
    > 
    > - 新規則的唯一名稱是「移除來自傳入郵件的加密」。
    > 
-   > - _SentToScope_參數會指定郵件收件者的位置。 在此範例中，會`InOrganization`使用 value 值，表示：
+   > - _SentToScope_參數會指定郵件收件者的位置。 在此範例中， `InOrganization` 會使用 value 值，表示：
    > 
    >   - 收件者是組織中的信箱、郵件使用者、群組或擁有郵件功能的公用資料夾。
    > 
@@ -220,7 +220,7 @@ ms.locfileid: "43943120"
    > 
    >   - 收件者的電子郵件地址位於已設定為授權網域或組織內部轉送網域的公認網域中，_且_透過已驗證的連線來傳送或接收郵件。
 
-如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)。
+如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule)。
 
 ## <a name="related-topics"></a>相關主題
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6ca0edb1338c21f710ae493c8697b0c2740860ba
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: b524001f848a106ec2832c698b474cfce8ceb24b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327599"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352080"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -294,7 +294,7 @@ ms.locfileid: "44327599"
 | **Operations** | 對原則執行的作業。 |
 | **AuditData** | 此欄位是所有原則活動的主要資料來源。 所有活動都會以逗號分隔符號錄製及分隔。 |
 
-您也可以在整合的審計記錄中或使用[Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell Cmdlet 來查看審核活動。
+您也可以在整合的審計記錄中或使用[Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) PowerShell Cmdlet 來查看審核活動。
 
 例如，下列範例會傳回所有主管審查活動的活動（原則和規則）：
 

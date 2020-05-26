@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 系統管理員可以瞭解如何在 exchange Online Protection 中指派或移除 Exchange 系統管理中心（EAC）中的許可權。
-ms.openlocfilehash: 3d7b709304f901c4adc41c67b0d6fe9c6ff382bf
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: ba2d053e1e75bd8867ebb9eb7f426cde92abd3e8
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209672"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352332"
 ---
-# <a name="manage-role-groups-in-standalone-eop"></a>管理獨立 EOP 中的角色群組
+# <a name="manage-role-groups-in-standalone-eop"></a>在獨立版 EOP 中管理角色群組
 
 在沒有 Exchange Online 信箱的獨立 Exchange Online Protection （EOP）組織中，您可以使用 Exchange 系統管理中心（EAC）將使用者新增至角色群組。 將使用者新增至角色群組，可讓使用者執行特定系統管理員工作的許可權。 您也可以從角色群組中移除使用者。
 
@@ -92,7 +92,7 @@ ms.locfileid: "44209672"
 
    - 選取您要移除的使用者，然後按一下 [**移除** ![ 移除圖示] ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
-3. 完成後，按一下 [儲存]****。
+3. 完成後，請按一下 **[儲存]**。
 
    > [!NOTE]
    > 使用者可能必須先登出再登入，才能在您於角色群組中新增或移除成員後，看到其系統管理權限的變更。
@@ -135,7 +135,7 @@ Get-RoleGroup -Identity "Recipient Administrators" | Format-List
 Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR001,DC=PROD,DC=OUTLOOK,DC=COM'"
 ```
 
-如需詳細的語法及參數資訊，請參閱[Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup)。
+如需詳細的語法及參數資訊，請參閱[Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup)。
 
 ### <a name="use-standalone-eop-powershell-to-create-role-groups"></a>使用獨立 EOP PowerShell 建立角色群組
 
@@ -184,7 +184,7 @@ Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Micro
      New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members "Isabelle","Carter","Lukas"
      ```
 
-如需詳細的語法及參數資訊，請[New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup)。
+如需詳細的語法及參數資訊，請[New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup)。
 
 ### <a name="use-standalone-eop-powershell-modify-the-list-of-members-in-role-groups"></a>使用獨立 EOP PowerShell 修改角色群組中的成員清單
 
@@ -214,7 +214,7 @@ Update-RoleGroupMember -Identity "Help Desk" -Members "Gabriela Laureano","Hyun-
 Update-RoleGroupMember -Identity "Help Desk" -Members @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
 ```
 
-如需詳細的語法及參數資訊，請參閱[Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Update-RoleGroupMember)。
+如需詳細的語法及參數資訊，請參閱[Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember)。
 
 ### <a name="use-standalone-eop-powershell-to-remove-role-groups"></a>使用獨立 EOP PowerShell 移除角色群組
 
@@ -232,7 +232,7 @@ Remove-RoleGroup -Identity "<Role Group Name>" [-BypassSecurityGroupManagerCheck
 Remove-RoleGroup -Identity "Training Administrators"
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Remove-RoleGroup)。
+如需詳細的語法及參數資訊，請參閱 [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroup)。
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
 

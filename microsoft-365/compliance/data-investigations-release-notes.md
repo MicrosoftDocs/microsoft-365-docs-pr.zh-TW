@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 description: 在本文中，您將會看到版本資訊，其中包含 Microsoft 365 中「資料調查（預覽）」工具的變更和新功能。
-ms.openlocfilehash: 5bb18ccb3354082634780720938fb18164da0ccb
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9567e9d83c6fc952e61271e665b96fad8fc6b69a
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035725"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352280"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 中的資料調查（預覽）版本附注
 
@@ -50,4 +50,4 @@ ms.locfileid: "44035725"
 
 - **工作**–追蹤長時間執行程式的狀態。
 
-- **硬性刪除信箱專案**-在緊急情況下，您可能需要永久刪除錯放的專案。 若要這麼做，您可以在安全性 & 規範中心 PowerShell 中執行**New-ComplianceSearchAction-Purge PurgeType HardDelete**命令，以從信箱中永久移除專案。 如需詳細資訊，請參閱 [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction) (英文)。
+- **硬性刪除信箱專案**-在緊急情況下，您可能需要永久刪除錯放的專案。 若要這麼做，您可以在安全性 & 規範中心 PowerShell 中執行**New-ComplianceSearchAction-Purge PurgeType HardDelete**命令，以從信箱中永久移除專案。 如需詳細資訊，請參閱 [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction) (英文)。

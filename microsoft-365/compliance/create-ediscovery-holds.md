@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以建立與核心 eDiscovery 案例相關聯的保留，以保留可能與調查相關的內容。
-ms.openlocfilehash: 6405dac51c34163f8eadb359d9c29f1aa81a1b82
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: c4f3b258fecde8b5a49a77585fe8f1d6cdfe2c11
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551404"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352250"
 ---
 # <a name="create-an-ediscovery-hold"></a>建立電子文件探索保留
 
@@ -43,7 +43,7 @@ ms.locfileid: "43551404"
 
 若要建立與核心 eDiscovery 案例相關聯的 eDiscovery 保留：
   
-1. 移至[https://compliance.microsoft.com](https://compliance.microsoft.com)並登入使用已獲指派適當 eDiscovery 許可權之使用者帳戶的認證。
+1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) 並登入使用已獲指派適當 eDiscovery 許可權之使用者帳戶的認證。
 
 2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [**全部顯示**]，然後按一下 [ **eDiscovery > Core**]。
 
@@ -63,7 +63,7 @@ ms.locfileid: "43551404"
 
    b. **網站位置**-按一下 **[選擇網站**]，然後按一下 **[選擇網站**]，以指定要保留的 SharePoint 和 OneDrive 帳戶。 輸入您要保留之每個網站的 URL。 您也可以為 Microsoft 團隊、Office 365 群組或 Yammer 群組新增 SharePoint 網站的 URL。 按一下 **[選擇**]，然後按一下 [**完成**]。
   
-   c. **Exchange 公用資料夾。** 將切換切換![切換控制項](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)移至 [**全部**] 位置，將 Exchange Online 組織中的所有公用資料夾保留。 您無法選擇要保留的特定公用資料夾。 如果您不想要保留公用資料夾，請將切換參數設為 [**無**]。
+   c. **Exchange 公用資料夾。** 將切換切換切換 ![ 控制項移 ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 至 [**全部**] 位置，將 Exchange Online 組織中的所有公用資料夾保留。 您無法選擇要保留的特定公用資料夾。 如果您不想要保留公用資料夾，請將切換參數設為 [**無**]。
 
 8. 當您完成將內容位置新增至保留狀態時，按 **[下一步]**。
 
@@ -173,7 +173,7 @@ ms.locfileid: "43551404"
 若要收集組織中商務網站 OneDrive 的 URLs 清單，以便將其新增至與 eDiscovery 案例相關聯的保留或搜尋，請參閱[建立組織中所有 OneDrive 位置的清單](https://docs.microsoft.com/onedrive/list-onedrive-urls)。 本文中的腳本會建立一個文字檔，其中包含組織中所有 OneDrive 網站的清單。 若要執行此指令碼，您必須安裝並使用 SharePoint Online 管理命令介面。 請務必將您組織 MySite 網域的 URL 附加至您要搜尋的每個 OneDrive 網站。 這是包含您所有 OneDrive 的網域；例如，`https://contoso-my.sharepoint.com`。 以下是使用者 OneDrive 網站的 URL 範例：`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
 
 > [!IMPORTANT]
-> 使用者 OneDrive 帳戶的 URL 包含使用者主體名稱（UPN）（例如`https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`）。 在極少數的情況下，使用者的 UPN 變更時，其 OneDrive URL 也會變更，以加入新的 UPN。 如果使用者的 OneDrive 帳戶是 eDiscovery 保留的一部分，舊的，且其 UPN 已變更，您必須更新保留，而且必須更新保留，並新增使用者的新 OneDrive URL，並移除舊的。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes) (英文)。
+> 使用者 OneDrive 帳戶的 URL 包含使用者主體名稱（UPN）（例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ）。 在極少數的情況下，使用者的 UPN 變更時，其 OneDrive URL 也會變更，以加入新的 UPN。 如果使用者的 OneDrive 帳戶是 eDiscovery 保留的一部分，舊的，且其 UPN 已變更，您必須更新保留，而且必須更新保留，並新增使用者的新 OneDrive URL，並移除舊的。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes) (英文)。
 
 ## <a name="ediscovery-hold-limits"></a>eDiscovery 保留限制
 
@@ -189,4 +189,4 @@ ms.locfileid: "43551404"
   |||
 
    > [!NOTE]
-   > <sup>1</sup>若要查看超過1000案例、保留、搜尋或匯出的清單，您可以使用對應的 Office 365 安全性 & 合規性 PowerShell Cmdlet：<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction)
+   > <sup>1</sup>若要查看超過1000案例、保留、搜尋或匯出的清單，您可以使用對應的 Office 365 安全性 & 合規性 PowerShell Cmdlet：<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)

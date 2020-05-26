@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 瞭解如何使用 Office 365 郵件加密為組織建立機密資訊類型原則。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7ba94923c1f8c6ade6b7bf494636c562b4cc4102
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: da459ab5e92592f86bc32d7dd9d648de24b9a3ed
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165954"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352066"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>使用郵件加密為組織建立機密資訊類型原則
 
@@ -31,7 +31,7 @@ ms.locfileid: "44165954"
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>使用 EAC 中的郵件流程規則建立原則
 
-登入 Exchange 系統管理中心（EAC），然後移至**郵件流程** > **規則**。 在 [規則] 頁面上，建立套用 Office 365 郵件加密的規則。 您可以根據狀況（例如郵件或附件中的某些關鍵字或機密資訊類型的存在性）來建立規則。
+登入 Exchange 系統管理中心（EAC），然後移至**郵件流程**  >  **規則**。 在 [規則] 頁面上，建立套用 Office 365 郵件加密的規則。 您可以根據狀況（例如郵件或附件中的某些關鍵字或機密資訊類型的存在性）來建立規則。
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>若要使用 PowerShell 中的郵件流程規則建立原則
 
@@ -54,7 +54,7 @@ Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
 New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -SentToScope  NotInOrganization  -ApplyRightsProtectionTemplate "Encrypt" -MessageContainsDataClassifications @(@{Name="ABA Routing Number"; minCount="1"},@{Name="Credit Card Number"; minCount="1"},@{Name="Drug Enforcement Agency (DEA) Number"; minCount="1"},@{Name="U.S. / U.K. Passport Number"; minCount="1"},@{Name="U.S. Bank Account Number"; minCount="1"},@{Name="U.S. Individual Taxpayer Identification Number (ITIN)"; minCount="1"},@{Name="U.S. Social Security Number (SSN)"; minCount="1"}) -SenderNotificationType "NotifyOnly"
 ```
 
-如需詳細資訊，請參閱[Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration?view=exchange-ps)和[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule?view=exchange-ps)。
+如需詳細資訊，請參閱[Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-irmconfiguration?view=exchange-ps)和[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule?view=exchange-ps)。
 
 ## <a name="how-recipients-access-attachments"></a>收件者如何存取附件
 
@@ -77,4 +77,4 @@ Microsoft 365 會審核此活動，並使其可供系統管理員使用。 作�
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>停用或自訂敏感資訊類型原則
 
-在您建立 exchange 郵件流程規則之後，您可以在 exchange 系統管理中心（EAC）中移至**郵件流程** > **規則**，以[停用或編輯規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)，並停用 [*加密輸出的敏感電子郵件（不限箱規則）*] 規則。
+在您建立 exchange 郵件流程規則之後，您可以在 exchange 系統管理中心（EAC）中移至**郵件流程**規則，以[停用或編輯規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)  >  **Rules** ，並停用 [*加密輸出的敏感電子郵件（不限箱規則）*] 規則。

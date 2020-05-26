@@ -1,5 +1,5 @@
 ---
-title: 資料分類預覽版本資訊 (預覽)
+title: 資料分類版本資訊
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,34 +13,22 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 資料分類公開預覽版的版本資訊。
-ms.openlocfilehash: 1beae92089833327cedf6090690530d9e5457a37
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 資料分類的版本資訊。
+ms.openlocfilehash: bbef6729680db2c9a6aec4caa9036ec23fad6949
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076360"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327600"
 ---
-# <a name="data-classification-public-preview-release-notes-preview"></a>資料分類公開預覽版本資訊 (預覽)
+# <a name="data-classification-release-notes"></a>資料分類版本資訊
 
-此公開預覽版引進新功能，可在您建立任何原則*之前*，開始掃描敏感內容和標籤內容。 這稱為**零變更管理**。 這可讓您查看所有保留和敏感度標籤對環境的影響，並協助您開始評估自己的保護和控管原則需求。
-
-請檢閱這些版本資訊，讓您可以享有公開預覽版的最佳體驗。 我們將在目前版本與正式版本 (GA) 之間致力於處理這些要點。
-
-## <a name="permissions-for-accessing-content-explorer"></a>存取內容總管的權限
-
-內容總管的存取權限受到高度限制，因為該權限可讓您讀取掃描檔案的內容。 若要存取內容總管，需要**內容總管清單檢視器**和**內容總管內容檢視器**角色群組中的成員資格。 根據預設，沒有帳戶可以存取內容總管。 請參閱[使用資料分類內容總管 (預覽)](data-classification-content-explorer.md#permissions)。 全域系統管理員、合規性系統管理員或資料系統管理員可以指派必要的**內容總管清單檢視器**和**內容總管內容檢視器**角色群組成員資格。
-
-> [!TIP]
-> 在全球部署角色型存取控制 (RBAC) 時，**內容總管清單檢視器**和**內容總管內容檢視器**角色群組可能不會出現在權限頁面上。 如果權限頁面上沒有顯示該角色群組，則必須建立自訂角色群組，並將 `data classification list viewer` 角色和 (或) `data classification content viewer` 角色指派給您自訂的角色群組。
+請檢閱這些版本資訊，讓您可以享有資料分類的最佳體驗。
 
 ## <a name="exchange-mailbox-count"></a>Exchange 信箱帳戶
 
 當您深入了解 Exchange 信箱時，會注意到出現小工具提示。 這是為了表明以下事實：對於敏感資訊類型、敏感度標籤和保留標籤顯示的彙總計數，可能與信箱中所找到的項目數不完全相符。 原因是深入查看資料夾時會提取分類內容的即時檢視，同時計算彙總的計數。
 
-## <a name="seeing-guids-instead-of-label-names"></a>看到 GUID 而不是標籤名稱
-
-私人預覽版客戶已發現下列情況：當移轉或刪除的標籤，其內容若已經加上戳記，將導致標籤名稱在內容總管和活動總管中解析為32 位 GUID，而非標籤名稱。 
 
 ## <a name="rendering-of-encrypted-documents"></a>呈現加密的文件
 
@@ -50,6 +38,11 @@ ms.locfileid: "42076360"
 
 SharePoint search 不支援內含 `-``_` 的保留標籤名稱。 例如，不支援 `Label-MIP` 和 `Label_MIP`。 SharePoint 搜尋不支援在敏感性標籤名稱和敏感資訊類型名稱中使用那些字元。
 
+## <a name="onedrive-remains-in-preview"></a>OneDrive 仍處於預覽階段
+
+我們收到了您在預覽計劃期間對 OneDrive 整合的寶貴意見反應。 當我們瀏覽特定資訊時，您可能會遇到不一致的資料/流程。 我們會繼續在預覽中展示 OneDrive，直到所有修正都已推出為止。 非常感謝您的持續支持。
+
+
 ## <a name="see-also"></a>另請參閱
 
 - [開始使用資料分類 (預覽)](data-classification-overview.md)
@@ -57,5 +50,4 @@ SharePoint search 不支援內含 `-``_` 的保留標籤名稱。 例如，不�
 - [檢視已套用標籤的內容 (預覽)](data-classification-content-explorer.md)
 - [敏感性標籤](sensitivity-labels.md)
 - [保留標籤](labels.md)
-- [敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
-
+- [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)

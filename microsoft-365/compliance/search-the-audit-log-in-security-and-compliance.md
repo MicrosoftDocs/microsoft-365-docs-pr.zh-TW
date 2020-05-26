@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 34e9998ee0a17f44ba4f70d2cd1c5f1d12ce926f
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: d743a397d16e107b43c07ac1556b0a6b01c7181a
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214291"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352126"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -532,7 +532,7 @@ ms.locfileid: "44214291"
 
 下表列出信箱稽核記錄可以記錄的活動。 信箱擁有者、指定使用者或管理員所執行的信箱活動會記錄在稽核記錄中達 90 天。 系統管理員可能會關閉組織中所有使用者的信箱稽核記錄功能。 在此情況下，任何使用者的信箱動作都不會記錄。 如需詳細資訊，請參閱[管理信箱稽核](enable-mailbox-auditing.md)。
 
- 您也可以在 Exchange Online PowerShell 中使用 [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) Cmdlet 來搜尋信箱活動。
+ 您也可以在 Exchange Online PowerShell 中使用 [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) Cmdlet 來搜尋信箱活動。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
@@ -914,13 +914,13 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
 
 - 如需取得有關 Cmdlet 執行內容、使用哪些參數和參數值，以及影響哪些物件等相關資訊，您可以藉由選取 [下載所有結果]**** 選項來匯出搜尋結果。 如需詳細資訊，請參閱[匯出、設定及檢視稽核記錄檔的記錄](export-view-audit-log-records.md)。
 
-- 您也可以藉由在 Exchange Online PowerShell 中使用 `Search-UnifiedAuditLog -RecordType ExchangeAdmin` 命令，只傳回 Exchange 系統管理員稽核記錄中的稽核記錄。 執行 Exchange Cmdlet 之後，可能需要 30 分鐘的時間，搜尋結果中才會傳回對應的稽核記錄項目。 如需詳細資訊，請參閱 [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog)。 若要了解如何將 **Search-UnifiedAuditLog** Cmdlet 所傳回的搜尋結果匯出為 CSV 檔案，請參閱[匯出、設定及檢視稽核記錄檔的記錄](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log)中的＜匯出及檢視稽核記錄的秘訣＞一節。
+- 您也可以藉由在 Exchange Online PowerShell 中使用 `Search-UnifiedAuditLog -RecordType ExchangeAdmin` 命令，只傳回 Exchange 系統管理員稽核記錄中的稽核記錄。 執行 Exchange Cmdlet 之後，可能需要 30 分鐘的時間，搜尋結果中才會傳回對應的稽核記錄項目。 如需詳細資訊，請參閱 [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog)。 若要了解如何將 **Search-UnifiedAuditLog** Cmdlet 所傳回的搜尋結果匯出為 CSV 檔案，請參閱[匯出、設定及檢視稽核記錄檔的記錄](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log)中的＜匯出及檢視稽核記錄的秘訣＞一節。
 
 - 您也可以使用 Exchange 系統管理員中心或在 Exchange Online PowerShell 中執行 **Search-AdminAuditLog**，來檢視 Exchange 系統管理員稽核記錄中的事件。 這在搜尋 Exchange Online 系統管理員所執行的活動中，是絕佳的方式。 如需詳細指示，請參閱：
 
   - [檢視系統管理員稽核記錄](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx)
 
-  - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
+  - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)
 
    請記住，相同的 Exchange 系統管理員活動會同時記錄在 Exchange 系統管理員稽核記錄和稽核記錄中。
 

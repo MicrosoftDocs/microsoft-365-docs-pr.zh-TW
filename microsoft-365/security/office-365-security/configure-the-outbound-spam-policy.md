@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在 Exchange Online Protection （EOP）中查看、建立、修改和刪除輸出垃圾郵件原則。
-ms.openlocfilehash: 3f34c1ad27af1e0df2d2e2385f095da53e1cc318
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: e035fe26cea0fcd1f3051f7464722ae1c7a3b56f
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213029"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351996"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中設定輸出垃圾郵件篩選
 
@@ -120,7 +120,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
         您新增的收件者會出現在飛入的 [**收件者清單**] 區段中。 若要刪除收件者，請按一下 [ ![ 移除] 按鈕 ](../../media/scc-remove-icon.png) 。
 
-     e. 完成後，按一下 [儲存]****。
+     e. 完成後，請按一下 **[儲存]**。
 
      若要停用此設定，請清除核取方塊。
 
@@ -143,7 +143,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
         您新增的收件者會出現在飛入的 [**收件者清單**] 區段中。 若要刪除收件者，請按一下 [ ![ 移除] 按鈕 ](../../media/scc-remove-icon.png) 。
 
-     e. 完成後，按一下 [儲存]****。
+     e. 完成後，請按一下 **[儲存]**。
 
      若要停用此設定，請清除核取方塊。
 
@@ -308,7 +308,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 New-HostedOutboundSpamFilterPolicy -Name "Contoso Executives" -RecipientLimitExternalPerHour 400 -RecipientLimitInternalPerHour 800 -RecipientLimitPerDay 800 -ActionWhenThresholdReached BlockUser
 ```
 
-如需詳細的語法及參數資訊，請參閱[HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterpolicy)。
+如需詳細的語法及參數資訊，請參閱[HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterpolicy)。
 
 #### <a name="step-2-use-powershell-to-create-an-outbound-spam-filter-rule"></a>步驟2：使用 PowerShell 建立輸出垃圾郵件篩選規則
 
@@ -328,7 +328,7 @@ New-HostedOutboundSpamFilterRule -Name "<RuleName>" -HostedOutboundSpamFilterPol
 New-HostedOutboundSpamFilterRule -Name "Contoso Executives" -HostedOutboundSpamFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
 ```
 
-如需詳細的語法及參數資訊，請參閱[HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterrule)。
+如需詳細的語法及參數資訊，請參閱[HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterrule)。
 
 ### <a name="use-powershell-to-view-outbound-spam-filter-policies"></a>使用 PowerShell 來查看輸出垃圾郵件篩選原則
 
@@ -350,7 +350,7 @@ Get-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" | Format-List [<Spec
 Get-HostedOutboundSpamFilterPolicy -Identity "Executives" | Format-List
 ```
 
-如需詳細的語法及參數資訊，請參閱[Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy)。
+如需詳細的語法及參數資訊，請參閱[Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedoutboundspamfilterpolicy)。
 
 ### <a name="use-powershell-to-view-outbound-spam-filter-rules"></a>使用 PowerShell 來查看輸出垃圾郵件篩選規則
 
@@ -388,7 +388,7 @@ Get-HostedOutboundSpamFilterRule -Identity "<RuleName>" | Format-List [<Specific
 Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
 ```
 
-如需詳細的語法及參數資訊，請參閱[HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterrule)。
+如需詳細的語法及參數資訊，請參閱[HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/get-hostedoutboundspamfilterrule)。
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-policies"></a>使用 PowerShell 修改輸出垃圾郵件篩選原則
 
@@ -402,7 +402,7 @@ Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
 Set-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-如需詳細的語法及參數資訊，請參閱[Set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy)。
+如需詳細的語法及參數資訊，請參閱[Set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedoutboundspamfilterpolicy)。
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-rules"></a>使用 PowerShell 修改輸出垃圾郵件篩選規則
 
@@ -416,7 +416,7 @@ Set-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" <Settings>
 Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" <Settings>
 ```
 
-如需詳細的語法及參數資訊，請參閱[Set-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterrule)。
+如需詳細的語法及參數資訊，請參閱[Set-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/set-hostedoutboundspamfilterrule)。
 
 ### <a name="use-powershell-to-enable-or-disable-outbound-spam-filter-rules"></a>使用 PowerShell 來啟用或停用輸出垃圾郵件篩選規則
 
@@ -440,7 +440,7 @@ Disable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 Enable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 ```
 
-如需詳細的語法及參數資訊，請參閱[Enable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/enable-hostedoutboundspamfilterrule)和[Disable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/disable-hostedoutboundspamfilterrule)。
+如需詳細的語法及參數資訊，請參閱[Enable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/enable-hostedoutboundspamfilterrule)和[Disable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/disable-hostedoutboundspamfilterrule)。
 
 ### <a name="use-powershell-to-set-the-priority-of-outbound-spam-filter-rules"></a>使用 PowerShell 設定輸出垃圾郵件篩選規則的優先順序
 
@@ -480,7 +480,7 @@ Remove-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>"
 Remove-HostedOutboundSpamFilterPolicy -Identity "Marketing Department"
 ```
 
-如需詳細的語法及參數資訊，請參閱[Remove-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterpolicy)。
+如需詳細的語法及參數資訊，請參閱[Remove-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-hostedoutboundspamfilterpolicy)。
 
 ### <a name="use-powershell-to-remove-outbound-spam-filter-rules"></a>使用 PowerShell 移除輸出垃圾郵件篩選規則
 
@@ -498,9 +498,9 @@ Remove-HostedOutboundSpamFilterRule -Identity "<PolicyName>"
 Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 ```
 
-如需詳細的語法及參數資訊，請參閱[Remove-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterrule)。
+如需詳細的語法及參數資訊，請參閱[Remove-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/remove-hostedoutboundspamfilterrule)。
 
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="for-more-information"></a>相關資訊
 
 [從 [受限使用者] 入口網站中移除封鎖的使用者](removing-user-from-restricted-users-portal-after-spam.md)
 

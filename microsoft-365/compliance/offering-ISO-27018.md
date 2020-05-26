@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8c04362747a3e4767defcf746e1158849c00725b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: a5e5879bf176c7be72ead3c80c91934d0a1c5a01
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065758"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254412"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>保護雲端中個人資料的 ISO/IEC 27018 工作條例規定
 
@@ -43,22 +43,24 @@ Microsoft 和 ISO/IEC 27018
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure、Azure Government 和 Azure 德國](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Azure DevOps Services
+- Microsoft Cloud App Security
+- Dynamics 365、Dynamics 365 和 Dynamics 365 德國
 - Microsoft 專業服務：Azure、Dynamics 365、Intune 及商務用 Microsoft 365 中型企業和企業客戶的頂級與內部部署
-- [Dynamics 365 和 Dynamics 365 美國政府](https://aka.ms/d365-compliance-list)
-- Genomics
-- Graph
-- Health Bot
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft 受管理的電腦
-- Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
+- Power Automate (先前為 Microsoft Flow) 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - [Office 365、Office 365 美國政府和 Office 365 美國政府國防版](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 德國
 - OMS 服務對應
 - PowerApps 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
-- 資料流
-- Azure DevOps Services
+- Power BI Embedded
+- Power Virtual Agent
+- Microsoft 威脅專家
+- Microsoft Stream
 - Windows Defender ATP - 端點偵測與回應、自動調查與補救、安全分數
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
@@ -69,30 +71,18 @@ Microsoft 雲端和商業技術支援服務會一年根據 ISO/IEC 27018 工作�
 
 ### <a name="audits-and-reports"></a>稽核和報告
 
-- [Azure、Intune、Microsoft 受管理的電腦、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft Datacenter - ISO 27001 和 27018 憑證](https://go.microsoft.com/fwlink/p/?linkid=2078016)
-- [Azure、Intune、Microsoft 受管理的電腦、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft Datacenter - ISO 27001 和 27018 稽核評定報告](https://go.microsoft.com/fwlink/p/?linkid=2078020)
-- [Azure、Intune、Microsoft 受管理的電腦、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft Datacenter - ISO 27001 和 27018 適用性聲明 (SOA) 2017](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
-- [Azure 德國 ISO 27018 (保護雲端中個人資料的工作條例規定) 憑證](https://servicetrust.microsoft.com/Documents/ComplianceReports?downloadDocument=1&documentId=6a0dab80-8382-4af6-980c-ed2ed9a341c6)
+- [Azure、Dynamics 365 和線上服務：ISO27018 憑證](https://aka.ms/azureiso27018cert)
+- [Azure、Dynamics 365 和線上服務：ISO27018 評估報告](https://aka.ms/azureiso27001report)
+- [Azure 德國：ISO 27018 保護雲端中個人資料的工作條例規定 憑證](https://servicetrust.microsoft.com/Documents/ComplianceReports?downloadDocument=1&documentId=6a0dab80-8382-4af6-980c-ed2ed9a341c6)
 
 ### <a name="office-365"></a>Office 365
 
-- [Office 365 - ISO 27001、ISO 27018 和 ISO 27017 稽核評定報告](https://aka.ms/o365isoreport)
+- [Office 365：ISO 27001、27018 和 27017 稽核評估報告](https://aka.ms/o365isoreport)
 - [Yammer ISO 27018 稽核評定報告](https://aka.ms/YammerISO27018Auditreport)
-
-### <a name="dynamics-365"></a>Dynamics 365
-
-- [Dynamics 365 ISO 27018 稽核評定報告](https://aka.ms/dynamics365iso27018auditreport)
-- [用於行銷之 Dynamics 365 ISO 27018 稽核評定報告](https://aka.ms/dynamics365Marketingiso27018auditreport)
-- [Dynamics 365 Parature ISO 27018 稽核評定報告](https://aka.ms/dynamics365Paratureiso27018auditreport)
 
 ### <a name="azure-devops-services"></a>Azure DevOps Services
 
-- [Azure DevOps Services ISO 27018 憑證 PII 665918](https://go.microsoft.com/fwlink/p/?linkid=2062252)
-
-### <a name="windows-defender-atp"></a>Windows Defender ATP
-
-- [Windows Defender ATP - 端點偵測與回應、自動調查與補救、安全分數 - ISO 27018 憑證](https://aka.ms/windowsdefenderatpiso27018certificate)
-- [Windows Defender ATP - 端點偵測與回應、自動調查與補救、安全分數 - ISO 27001 和 ISO 27018 稽核評定報告](https://aka.ms/WindowsDefenderATPISO27001AuditReport)
+- [Azure DevOps Services：ISO 27018 憑證 PII 665918](https://go.microsoft.com/fwlink/p/?linkid=2062252)
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 

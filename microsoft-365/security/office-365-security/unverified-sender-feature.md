@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文將引導您開啟，如何防止網路釣魚郵件到達您的信箱、Outlook.com 和網頁型 Outlook。
-ms.openlocfilehash: 2172a9890d629dd840c3e2e2591d78546899d17e
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 9583161c9e64d6a24312565d68ae516a2be8606e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224870"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352451"
 ---
 # <a name="unverified-sender"></a>未驗證寄件者
 
@@ -50,7 +50,7 @@ ms.locfileid: "44224870"
 
 如果您是 Office 365 客戶，您可以透過 Office 365 安全性 & 規範中心管理這項功能。
 
-- 在安全性 & 規範中心中，全域或安全性管理員可以透過反網路釣魚原則的反欺騙防護功能開啟或關閉該功能。 此外，您可以在 Exchange Online PowerShell 中使用**AntiPhishPolicy 指令程式**。 如需詳細資訊，請參閱[Office 365 中的反網路釣魚保護](anti-phishing-protection.md)和 [設定 AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy)。
+- 在安全性 & 規範中心中，全域或安全性管理員可以透過反網路釣魚原則的反欺騙防護功能開啟或關閉該功能。 此外，您可以在 Exchange Online PowerShell 中使用**AntiPhishPolicy 指令程式**。 如需詳細資訊，請參閱[Office 365 中的反網路釣魚保護](anti-phishing-protection.md)和 [設定 AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/set-antiphishpolicy)。
 
     ![編輯圖形介面中未經驗證的寄件者。](../../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
@@ -58,7 +58,7 @@ ms.locfileid: "44224870"
 
   - 透過欺騙智慧洞察力新增網域配對。 如需詳細資訊，請參閱[演練：欺騙性智慧洞察力](walkthrough-spoof-intelligence-insight.md)。
 
-  - 透過 Exchange Online PowerShell 中的**Set-PhishFilterPolicy** Cmdlet 新增網域對。 如需詳細資訊，請參閱[Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy)和[設定 Office 365 ATP 反網路釣魚和反網路釣魚原則](set-up-anti-phishing-policies.md)。
+  - 透過 Exchange Online PowerShell 中的**Set-PhishFilterPolicy** Cmdlet 新增網域對。 如需詳細資訊，請參閱[Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-phishfilterpolicy)和[設定 Office 365 ATP 反網路釣魚和反網路釣魚原則](set-up-anti-phishing-policies.md)。
 
 此外，如果郵件透過郵件流程規則（也稱為傳輸規則）或安全網域清單（反垃圾郵件原則）傳遞至 [收件匣]，則不會套用未驗證寄件者的處理。
 

@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Exchange Online 信箱中設定垃圾郵件設定。 在 Outlook 或 web 上的 Outlook 中，使用者可以使用許多這些設定。
-ms.openlocfilehash: 11c01c289ad00475cfa458d0585f377287c495b0
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.openlocfilehash: 72b2680cb16e9d8d0f33ee3ec8a080206c68bf97
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347792"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352507"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>設定 Exchange Online 信箱上的垃圾郵件設定
 
@@ -77,7 +77,7 @@ Set-MailboxJunkEmailConfiguration -Identity "Ori Epstein" -Enabled $false
 $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All | foreach {Set-MailboxJunkEmailConfiguration $_.Name -Enabled $false}
 ```
 
-如需詳細的語法及參數資訊，請參閱[Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration)。
+如需詳細的語法及參數資訊，請參閱[Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration)。
 
 > [!NOTE]
 > 
@@ -140,7 +140,7 @@ Set-MailboxJunkEmailConfiguration "Ori Epstein" -BlockedSendersAndDomains @{Add=
 $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All | foreach {Set-MailboxJunkEmailConfiguration $_.Name -BlockedSendersAndDomains @{Remove="contoso.com"}}
 ```
 
-如需詳細的語法及參數資訊，請參閱[Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration)。
+如需詳細的語法及參數資訊，請參閱[Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration)。
 
 > [!NOTE]
 > 

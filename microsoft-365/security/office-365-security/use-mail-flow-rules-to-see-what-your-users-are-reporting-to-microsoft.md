@@ -15,12 +15,12 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何使用郵件流程規則（也稱為傳輸規則），接收使用者向 Microsoft 報告的郵件副本。
-ms.openlocfilehash: 3c0ff9556b9800a0c3be22f52d108d6b16cc6657
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: f8e4310fef19a8925640c485d060389352218e0b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213481"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352405"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>使用郵件流程規則來查看您的使用者報告給 Microsoft 哪些內容
 
@@ -73,7 +73,7 @@ ms.locfileid: "44213481"
 
 4. 您可以進行其他選擇來審核規則、測試規則、在特定時間週期內啟動規則，以及其他設定。 建議您先測試規則，再加以強制執行。
 
-5. 完成後，按一下 [儲存]****。
+5. 完成後，請按一下 **[儲存]**。
 
 ## <a name="use-powershell-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>使用 PowerShell 建立郵件流程規則，以接收報告訊息的副本
 
@@ -83,7 +83,7 @@ ms.locfileid: "44213481"
 New-TransportRule -Name "Bcc Messages Reported to Microsoft" -RecipientAddressContainsWords "junk@office365.microsoft.com","abuse@messaging.microsoft.com","phish@office365.microsoft.com","false_positive@messaging.microsoft.com" -BlindCopyTo "laura@contoso.com","julia@contoso.com".
 ```
 
-如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule)。
+如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule)。
 
 ## <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 

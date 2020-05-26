@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b2542f697edb28c4949b844ae32d606dba5e7a1c
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 3f733f3baf0db4d01a78e7984f44b17a5d5584e7
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214301"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254306"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>ISO 9001:2015 品質管理系統標準
 
@@ -33,21 +33,25 @@ ISO 9001:2015 是為品質管理系統建立準則的一項國際標準。 它�
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-- [Azure](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Genomics
-- Graph
+- [Azure、Azure Government 和 Azure 德國](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Dynamics 365、Dynamics 365 Government 和 Dynamics 365 德國
+- Microsoft Graph
 - Intune
+- Microsoft Defender 進階威脅防護
+- Microsoft Healthcare Bot
 - Microsoft 受管理的電腦
-- Microsoft Flow 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
-- PowerApps 雲端服務，以獨立服務形式提供或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
-- Power BI 雲端服務，以獨立服務形式提供或包含在 Office 365 品牌方案或套件中
+- Power Automate (先前為 Microsoft Flow) 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
+- PowerApps 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
+- Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
+- Power BI Embedded
+- Microsoft Stream
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
-- [FY19 Microsoft Azure ISO 9001 評定報告](https://go.microsoft.com/fwlink/p/?linkid=2077661)
-- [FY19 Microsoft Azure ISO 9001 認證](https://go.microsoft.com/fwlink/p/?linkid=2077747)
-- [查看其他稽核報告](https://aka.ms/auditreports)
+- [Azure、Dynamics 365 和線上服務：ISO9001 憑證](https://aka.ms/azureiso9001cert)
+- [Azure、Dynamics 365 和線上服務：ISO9001 評估報告](https://aka.ms/azureiso9001report)
+- [Azure、Dynamics 365 和線上服務：ISO9001 適用性聲明 (SOA)](https://aka.ms/azureiso9001soa)
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
@@ -61,7 +65,7 @@ ISO 9001:2015 是為品質管理系統建立準則的一項國際標準。 它�
 
 **Microsoft 是否每年針對基礎結構失敗執行測試？**
 
-是的。 ISO 9001:2015 年度評定包含基礎的實體基礎結構資料中心。 如需涵蓋範圍的詳細資訊，請[檢閱認證](https://www.microsoft.com/?ref=aka)。
+是的。 ISO 9001:2015 年度評定包含基礎的實體基礎結構資料中心。 請[檢閱認證](https://www.microsoft.com/?ref=aka)，以取得涵蓋範圍的詳細資訊。
 
 **可以在何處檢視 Microsoft 的 ISO 9001:2015 合規性資訊？**
 

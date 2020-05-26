@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: 使用此測試實驗室指南來啟用 Microsoft 365 企業版測試環境的特殊許可權存取管理。
-ms.openlocfilehash: 27f63de138f388b0dcbc1bc896bafcb9abc9ed6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1a81c62124177a328209f175262ac13455ca0899
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632860"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352519"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企業版測試環境的特殊權限存取管理
 
@@ -62,9 +62,9 @@ ms.locfileid: "43632860"
 
 ### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>測試執行沒有在特權存取原則中定義的工作的能力
 
-首先，以您的測試環境中設定為全域系統管理員之使用者的認證來連線至 Exchange 管理 PowerShell，並嘗試建立新的日誌規則。 目前未在組織的特殊許可權存取原則中定義[New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps)任務。
+首先，以您的測試環境中設定為全域系統管理員之使用者的認證來連線至 Exchange 管理 PowerShell，並嘗試建立新的日誌規則。 目前未在組織的特殊許可權存取原則中定義[New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule?view=exchange-ps)任務。
 
-1. 在您的本機電腦上，使用您測試環境的全域系統管理員帳戶，在**microsoft** > **exchange online remote PowerShell 模組**中開啟 Exchange online 遠端 PowerShell 模組，並登入。
+1. 在您的本機電腦上， **Microsoft Corporation**  >  使用您測試環境的全域系統管理員帳戶，在 microsoft**exchange online remote PowerShell 模組**中開啟 Exchange online 遠端 PowerShell 模組，並登入。
 
 2. 在 Exchange 管理 PowerShell 中，為您的組織建立新的日誌規則：
 
@@ -81,7 +81,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 1. 使用認證來登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)您的測試環境全域管理員帳戶。
 
-2. 在系統管理中心中，移至 [**設定** > **安全性 & 隱私權** > 特殊**許可權存取**]。
+2. 在系統管理中心中，移至 [**設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
 3. 選取 [**管理存取原則和要求**]。
 
@@ -103,7 +103,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>測試許可權存取原則中所定義之 New-JournalRule 工作的核准需求
 
-1. 在您的本機電腦上，使用您測試環境的全域系統管理員帳戶，在**microsoft** > **exchange online remote PowerShell 模組**中開啟 Exchange online 遠端 PowerShell 模組，並登入。
+1. 在您的本機電腦上， **Microsoft Corporation**  >  使用您測試環境的全域系統管理員帳戶，在 microsoft**exchange online remote PowerShell 模組**中開啟 Exchange online 遠端 PowerShell 模組，並登入。
 
 2. 在 Exchange 管理 PowerShell 中，為您的組織建立新的日誌規則：
 
@@ -125,7 +125,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 1. 使用您測試環境的全域系統管理員帳戶登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
 
-2. 在系統管理中心中，移至 [**設定** > **安全性 & 隱私權** > 特殊**許可權存取**]。
+2. 在系統管理中心中，移至 [**設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
 3. 選取 [**管理存取原則和要求**]。
 
@@ -147,7 +147,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 1. 使用測試環境（「特權存取核准者」安全性群組的成員）的測試環境中的使用者3的認證，登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
 
-2. 在系統管理中心中，移至 [**設定** > **安全性 & 隱私權** > 特殊**許可權存取**]。
+2. 在系統管理中心中，移至 [**設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
 3. 選取 [**管理存取原則和要求**]。
 
@@ -155,7 +155,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 ### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>測試使用 New-JournalRule 工作核准的特殊存取權來建立新的日誌規則
 
-1. 在您的本機電腦上，使用您測試環境的全域系統管理員帳戶，在**microsoft** > **exchange online remote PowerShell 模組**中開啟 Exchange online 遠端 PowerShell 模組，並登入。
+1. 在您的本機電腦上， **Microsoft Corporation**  >  使用您測試環境的全域系統管理員帳戶，在 microsoft**exchange online remote PowerShell 模組**中開啟 Exchange online 遠端 PowerShell 模組，並登入。
 
 2. 在 Exchange 管理 PowerShell 中，為您的組織建立新的日誌規則：
 
@@ -165,7 +165,7 @@ New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain>
 
 3. 查看已在 Exchange Management PowerShell 中成功建立新的日誌規則。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 在您的測試環境中探索其他[資訊保護](m365-enterprise-test-lab-guides.md#information-protection)功能和功能。
 

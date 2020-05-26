@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 透過安全性與合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監控及自動保護整個 Office 365 的敏感性資訊。
-ms.openlocfilehash: 68e81a83242ef4a1a099760044b5ccaec5bd91b7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 705c105853a67d4bb006efbfd0f3d6150f5e7181
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630600"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327701"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -289,7 +289,7 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
   
 ### <a name="match-accuracy"></a>比對精確度
 
-如上所述，機密資訊類型會由不同類型證據所形成的組合來定義與偵測。 一般而言，機密資訊類型會由多種這樣的組合 (稱為模式) 所定義。 證據需求較低的模式具有較低的比對精確度 (或信賴等級)，而證據需求較高的模式，其比對精確度 (或信賴等級) 則較高。 若要深入了解各機密資訊類型實際使用的模式及信賴等級，請參閱[機密資訊類型尋找的目標為何](what-the-sensitive-information-types-look-for.md)。
+如上所述，機密資訊類型會由不同類型證據所形成的組合來定義與偵測。 一般而言，機密資訊類型會由多種這樣的組合 (稱為模式) 所定義。 證據需求較低的模式具有較低的比對精確度 (或信賴等級)，而證據需求較高的模式，其比對精確度 (或信賴等級) 則較高。 若要深入了解各機密資訊類型實際使用的模式及信賴等級，請參閱[敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)。
   
 例如，名為 [信用卡號碼] 的機密資訊類型是由兩種模式所定義：
   
@@ -332,7 +332,7 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
 當您在 DLP 原則中使用先前建立及發佈的[保留標籤](labels.md)做為條件時，請注意下列事項：
 
 - 您必須具有先前建立、發佈並套用的保留標籤，然後才能嘗試將它用做為 DLP 原則中的條件。
-- 建立並發佈保留標籤之後，最多需要一天的時間來進行同步，以及最多需要七天的時間來自動套用。 如需詳細資訊，請參閱[保留標籤要多久才會生效](labels.md#how-long-it-takes-for-retention-labels-to-take-effect)。
+- 建立並發佈保留標籤之後，最多需要一天的時間來進行同步，以及最多需要七天的時間來自動套用。 如需詳細資訊，請參閱[保留標籤要多久才會生效](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect)。
 - ***僅 SharePoint Online 和商務用 OneDrive 中的項目***才支援在原則中使用保留標籤。
 
 
@@ -504,9 +504,13 @@ Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容�
 1. 在 Microsoft 365 中建立一個群組，並將法務人員新增至此群組。
     
 2. 在安全性與合規性中心的 **[權限]** 頁面上建立角色群組。 
+
+3. 建立角色群組時，請使用 [選擇角色]**** 區段，將下列角色新增至角色群組: [DLP 合規性管理]****。
     
-3. 將 Microsoft 365 群組新增至角色群組。
-    
+4. 使用 [選擇成員]**** 區段，將您建立的 Microsoft 365 群組新增至角色群組。
+
+您也可以透過授予 [僅限檢視 DLP 合規性管理]**** 角色，來建立擁有 DLP 原則和 DLP 報告的僅限檢視權限角色群組。
+
 如需詳細資訊，請參閱[授與使用者存取 Office 365 合規性中心的權限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
 需要這些權限才能建立及套用 DLP 原則。 原則強制執行不需要內容的存取權。
@@ -539,7 +543,7 @@ Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容�
     
 - [DLP 原則範本包含哪些內容](what-the-dlp-policy-templates-include.md)
     
-- [敏感性資訊類型在找什麼](what-the-sensitive-information-types-look-for.md)
+- [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
     
 - [DLP 功能所尋找的項目](what-the-dlp-functions-look-for.md)
     

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 05/22/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有關新郵件保護功能的運作方式有疑問嗎？ 在這裡檢查答案。
-ms.openlocfilehash: 75b414aecfbe9d3952d7e3c5994946775d353a6f
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: f7c6de7eba9cb5e0f165b345b5c97e98cb96b870
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049518"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352077"
 ---
 # <a name="message-encryption-faq"></a>郵件加密常見問題
 
@@ -28,7 +28,7 @@ ms.locfileid: "44049518"
 ## <a name="what-is-office-365-message-encryption-ome"></a>何謂 Office 365 郵件加密（OME）？
 
 OME 結合電子郵件加密和版權管理功能。 Rights management 功能由 Azure 資訊保護供電。
-  
+
 ## <a name="who-can-use-ome"></a>誰可以使用 OME？
 
 在下列情況下，您可以使用 OME 的新功能：
@@ -131,15 +131,15 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
 
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>我是否可以透過設定原則自動加密郵件？
 
-可以。 使用 Exchange Online 中的郵件流程規則，根據特定條件自動加密郵件。 例如，您可以建立以收件者識別碼、收件者網域或郵件內文或主旨的內容為基礎的原則。 請參閱[定義郵件流程規則，以加密 Office 365 中的電子郵件](define-mail-flow-rules-to-encrypt-email.md)。
+是。 使用 Exchange Online 中的郵件流程規則，根據特定條件自動加密郵件。 例如，您可以建立以收件者識別碼、收件者網域或郵件內文或主旨的內容為基礎的原則。 請參閱[定義郵件流程規則，以加密 Office 365 中的電子郵件](define-mail-flow-rules-to-encrypt-email.md)。
   
 ## <a name="can-i-automatically-remove-encryption-on-incoming-and-outgoing-mail"></a>我可以自動移除傳入和傳出郵件的加密嗎？
 
 系統管理員可以設定郵件流程規則，以移除外寄郵件的加密。 您無法設定規則來移除傳入郵件的加密。
 
-## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>是否可以透過安全性&amp;與合規性中心設定資料遺失防護（DLP）中的原則，自動加密郵件？
+## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>是否可以透過安全性與合規性中心設定資料遺失防護（DLP）中的原則，自動加密郵件 &amp; ？
 
-是的！ 您可以在 Exchange Online 中設定郵件流程規則，或在安全性&amp;與合規性中心使用 DLP。
+是的！ 您可以在 Exchange Online 中設定郵件流程規則，或在安全性與 &amp; 合規性中心使用 DLP。
   
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>我可以使用公司品牌來自訂加密郵件嗎？
 
@@ -151,7 +151,7 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>是否可以使用郵件加密搭配電子檔探索等相容性功能？
 
-可以。 所有加密的電子郵件都可透過 Microsoft 365 符合性功能來發現。
+是。 所有加密的電子郵件都可透過 Microsoft 365 符合性功能來發現。
 
 ## <a name="can-i-remove-encryption-from-email"></a>我可以從電子郵件移除加密嗎？
 
@@ -185,3 +185,9 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
 - 僅支援直接使用者指派至共用信箱的存取權。 我們不支援使用啟用電子郵件功能的安全性群組的工作分派。
 
 - 您無法使用 Outlook mobile 開啟您在行動裝置上接收的電子郵件附件。
+
+## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>我在要求它之後未收到一次性處理常式代碼時，該怎麼辦？
+
+首先，檢查您的電子郵件用戶端中的垃圾郵件或垃圾郵件資料夾。 您組織的 DKIM 和 DMARC 設定可能會導致這些電子郵件結束篩選為垃圾郵件。
+
+接下來，檢查安全性 & 規範中心內的隔離。 通常會包含一次性處理常式代碼的郵件，尤其是您的組織收到的第一個郵件，但會以隔離區結束。

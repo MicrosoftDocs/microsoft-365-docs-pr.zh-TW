@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 description: 系統管理員可了解如何設定 Exchange Online 中用來驗證 S/MIME 憑證的虛擬憑證集合。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 89061e3c07803d741e25846ffe8a3325a12668a4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5bd453383a263fdb2c0c7e2ce0014ad205e5fdc2
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035293"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352166"
 ---
 # <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>設定 Exchange Online 中的虛擬憑證集合以驗證 S/MIME
 
@@ -42,7 +42,7 @@ Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content <FileNameAndPath>.sst -E
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content "C:\My Documents\Exported Certificate Store.sst" -Encoding Byte)
 ```
 
-如需詳細的語法及參數資訊，請參閱 [Set-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-smimeconfig)。
+如需詳細的語法及參數資訊，請參閱 [Set-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/set-smimeconfig)。
 
 ## <a name="ensuring-a-certificate-is-valid"></a>確保憑證的有效性
 
@@ -52,4 +52,4 @@ Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content "C:\My Documents\Exporte
 
 [可用於訊息簽署和加密的 S/MIME](s-mime-for-message-signing-and-encryption.md)
 
-[Get-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-smimeconfig)
+[Get-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/get-smimeconfig)

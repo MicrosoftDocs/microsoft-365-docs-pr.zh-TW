@@ -20,19 +20,24 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員向 Microsoft 開啟支援票證。
 ms.custom: okr_smb
-ms.openlocfilehash: 4e3cec5b2ff86b35d02f8963a584efdb272f2c5e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2f3b5fedf77c2f763f60c097b25101255d55ecaf
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618917"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294207"
 ---
 # <a name="about-admin-roles"></a>關於系統管理員角色
 
-您的訂閱隨附一組系統管理員角色，您可以將這些角色指派給組織中的使用者。 每個系統管理員角色會與常見的商務功能對應，並可讓組織中的人員在系統管理中心執行特定工作的權限。 如需詳細資訊，請參閱[指派系統管理員角色](assign-admin-roles.md)
+您的 Microsoft 365 或 Office 365 訂閱隨附一組系統管理員角色，您可以使用 Microsoft 365 系統管理中心將這些角色指派給組織中的使用者。 每個系統管理員角色會與常見的商務功能對應，並可讓組織中的人員在系統管理中心執行特定工作的權限。
 
-> [!TIP] 
-> 正在尋找詳細的角色描述嗎？ 查看 [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+Microsoft 365 系統管理中心可讓您管理 Azure AD 角色和 Microsoft Intune 角色。 不過，這些角色是 Azure AD 入口網站和 Intune 系統管理中心中可用角色的子集。
+
+正在尋找 Azure AD 的詳細角色描述嗎？ 查看 [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+
+正在尋找 Microsoft Intune 的詳細角色描述嗎？ 請參閱 [使用 Microsoft Intune 的角色型存取控制 (RBAC)](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control)。
+
+如需在 Microsoft 365 系統管理中心指派角色的詳細資訊，請參閱[指派系統管理員角色](assign-admin-roles.md)。
 
 ## <a name="things-to-consider"></a>考量事項...
 
@@ -44,32 +49,21 @@ ms.locfileid: "43618917"
 | 指派*最嚴謹*角色    | 指派*最嚴謹*角色表示，僅提供系統管理員完成工作所需的存取權。 例如，如果您希望某人重設員工密碼，您不應指派無限制的全域系統管理員角色，而是應指派有限制的系統管理員角色，例如密碼系統管理員或服務台系統管理員。這可協助保護您的資料安全。                 |
 | 要求系統管理員使用多重要素驗證                  |    要求所有使用者使用 MFA 實際上是個好想法，但一定要要求系統管理員使用 MFA 登入。 MFA 可讓使用者輸入第二個身分識別方法，以驗證他們是否為他們所聲稱的人。 系統管理員可以存取許多客戶和員工資料，而且如果您需要進行 MFA，即使系統管理員的密碼遭到侵，密碼在沒有第二個格式身分識別格式的情況下毫無用處。  <br><br>當您開啟 MFA 時，使用者下次登入時，必須提供用於帳戶復原用途的備用電子郵件地址和電話號碼。  <br> [設定多重要素驗證](../security-and-compliance/set-up-multi-factor-authentication.md)          |
 
-  
-## <a name="some-roles-are-missing-from-active-users--manage-admin-roles-where-did-they-go"></a>[作用中的使用者] > [管理系統管理員角色] 中缺少部分角色。 它們去哪裡了？
-根據預設，我們會先顯示大部分組織使用的角色。 如果您找不到某個角色，請移至清單底部，然後選取 [查看更多角色]****。
-
-## <a name="how-can-i-tell-which-permissions-are-assigned-to-me"></a>我如何判斷指派給我的權限？
 如果您在系統管理中心收到一則訊息，指出您沒有權限可編輯某項設定或頁面，這是因為您獲指派的角色沒有該權限。
 
-## <a name="what-about-the-azure-active-directory-roles"></a>那 Azure Active Directory 角色呢？
+## <a name="azure-ad-roles-available-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心提供的 Azure AD 角色
 
-Azure 入口網站具有較 Microsoft 365 系統管理中心所提供更多的角色。 如果您有大型企業，則 Azure 入口網站中的角色可能符合您組織的需求。
-
-如需所有 Azure Active Directory 角色的清單和描述，請參閱 [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+Microsoft 365 系統管理中心可讓您管理超過 30 個 Azure AD 角色。 不過，這些角色是 Azure 入口網站中可用角色的子集。 如果您有大型企業，則 Azure 入口網站中的角色可能符合您組織的需求。
 
 無論您是在 Microsoft 365 系統管理中心或適用於 Windows PowerShell 的 Azure AD 模組中指派角色，已獲指派系統管理員角色的使用者，將對貴組織已訂閱的雲端服務具備相同層級的存取權。
-  
-## <a name="roles-available-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心提供的角色
-
-Microsoft 365 系統管理中心可讓您管理超過 30 個 Azure AD 角色。 不過，這些角色是 Azure 入口網站中可用角色的子集。
 
 ::: moniker range="o365-worldwide"
 
-在系統管理中心中，您可以移至 [角色]****，然後選取任何角色來開啟其詳細資料窗格。 選取 [權限]**** 索引標籤，以檢視系統管理員指派該角色具備權限之工作的詳細清單。
+在 Microsoft 365 系統管理中心中，您可以移至 [角色]****，然後選取任何角色來開啟其詳細資料窗格。 選取 [權限]**** 索引標籤，以檢視系統管理員指派該角色具備權限之工作的詳細清單。 選取 [已指派]**** 或 [指派的系統管理員]**** 索引標籤來將使用者新增至角色。
 
 ::: moniker-end
 
-您可能只需要在組織中指派下列角色。 (如需詳細資訊，包括與角色相關聯的 Cmdlet，請參閱 [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。)
+您可能只需要在組織中指派下列角色。 根據預設，我們會先顯示大部分組織使用的角色。 如果您找不到某個角色，請移至清單底部，然後選取 [查看更多角色]****。 (如需詳細資訊，包括與角色相關聯的 Cmdlet，請參閱 [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。)
 
 |系統管理員角色     |誰應獲指派此角色？  |
 |---------|---------|
@@ -84,7 +78,7 @@ Microsoft 365 系統管理中心可讓您管理超過 30 個 Azure AD 角色。 
 |Teams 服務管理員    |   將 Teams 服務管理員角色指派給需要存取和管理 Teams 系統管理中心的使用者。 <br><br>Teams 服務管理員也可以： <br> - 管理會議 <br> - 管理會議橋接器 <br> - 管理所有的全組織設定，包括同盟、Teams 升級和 Teams 用戶端設定   |
 |使用者系統管理員     |    將使用者系統管理員角色指派給需要為所有使用者執行下列動作的使用者： <br> - 新增使用者和群組 <br> - 指派授權 <br> - 管理最多使用者屬性 <br> - 建立與管理使用者檢視 <br> - 設定密碼到期原則 <br> - 管理服務要求 <br> - 監視服務健康情況 <br><br>  使用者系統管理員也可以針對非系統管理員和獲指派下列角色的使用者執行下列動作：目錄讀取者、來賓邀請者、服務台系統管理員、訊息中心讀取者、報告讀取者： <br> - 管理使用者名稱<br> - 刪除和還原使用者<br> - 重設密碼 <br> - 強制使用者登出 <br> - 更新 (FIDO) 裝置金鑰   |
 
-### <a name="all-roles"></a>所有角色
+### <a name="all-azure-ad-roles"></a>所有 Azure AD 角色
 
  以下是 Microsoft 365 系統管理中心提供的所有可用系統管理員角色的清單。
 
@@ -134,6 +128,17 @@ Microsoft 365 系統管理中心可讓您管理超過 30 個 Azure AD 角色。 
 |Teams 通訊支援工程師     |    讀取所有通話參與者的通話記錄詳細資料，以疑難排解通訊問題。     |
 |Teams 通訊支援專員     |    讀取僅特定使用者的使用者通話詳細資料，以疑難排解通訊問題。|
 |使用者系統管理員     |   重設使用者密碼、建立及管理使用者和群組，包括篩選、管理服務要求，以及監視服務健康情況。|
+
+## <a name="microsoft-intune-roles-available-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心提供的 Microsoft Intune 角色
+
+|系統管理員角色     |誰應獲指派此角色？  |
+|---------|---------|
+|應用程式管理員     |   將應用程式管理員角色指派給管理行動裝置應用程式之應用程式生命週期、設定原則管理的應用程式，以及檢視裝置資訊和組態設定檔的使用者。  |
+|技術支援中心操作員     |   將技術支援中心操作員角色指派給指派應用程式和原則給使用者和裝置的使用者。 |
+|Intune 角色系統管理員    |   將 Intune 角色系統管理員指派給可指派 Intune 權限給其他系統管理員，並可管理自訂和內建 Intune 角色的使用者。   |
+|原則和設定檔管理員     |   將原則和設定檔管理員角色指派給使用者管理合規性原則、組態設定檔和 Apple 註冊。   |
+|唯讀操作員     |   將唯讀操作員角色指派給只能檢視使用者、裝置、註冊詳細資料和設定的使用者。   |
+|學校系統管理員     |   將學校系統管理員角色指派給使用者，以取得在 Intune 教育版中管理 Windows 10 和 iOS 裝置、應用程式和設定的完整存取權。   |
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Microsoft 合作夥伴的委派系統管理
 

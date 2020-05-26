@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 MailItemsAccessed 信箱稽核動作執行遭入侵使用者帳戶的鑑識調查。
-ms.openlocfilehash: 20c57f1d11af8fded15cc2fdf280414f7172ffd7
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: cd76a49e1f7b6e52d2a21e74162781771a8552a1
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262576"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327647"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>使用進階稽核調查遭入侵帳戶
 
@@ -37,13 +37,13 @@ MailItemsAccessed 信箱稽核動作涵蓋所有郵件通訊協定：POP、IMAP�
 
 ### <a name="auditing-sync-access"></a>稽核同步處理存取
 
-同步處理作業只有在信箱是透過 Windows 或 Mac 的電腦版 Outlook 用戶端進行存取時才會記錄。 在同步處理作業期間，這些用戶端通常會從雲端下載大量的郵件項目到本機電腦。 同步處理作業的稽核量會變得相當可觀。 因此，我們不針對每個已同步處理的郵件產生稽核記錄，我們只針對其中包含已同步處理項目的郵件資料夾產生稽核事件。 這是假設已同步處理資料夾中「所有」** 郵件項目皆已遭入侵。 存取類型會記錄在稽核記錄的 OperationsProperties 欄位。 
+同步處理作業只有在信箱是透過 Windows 或 Mac 的電腦版 Outlook 用戶端進行存取時才會記錄。 在同步處理作業期間，這些用戶端通常會從雲端下載大量的郵件項目到本機電腦。 同步處理作業的稽核量會變得相當可觀。 因此，我們不針對每個已同步處理的郵件產生稽核記錄，我們只針對其中包含已同步處理項目的郵件資料夾產生稽核事件。 這是假設已同步處理資料夾中「所有」** 郵件項目皆已遭入侵。 存取類型會記錄在稽核記錄的 OperationProperties 欄位。 
 
 如需顯示稽核記錄中同步處理存取類型的範例，請參閱「[使用 MailItemsAccessed 稽核記錄進行鑑識調查](#use-mailitemsaccessed-audit-records-for-forensic-investigations)」一節中的步驟 2。
 
 ### <a name="auditing-bind-access"></a>稽核繫結存取
 
-繫結作業是電子郵件訊息的個別存取。 若是繫結存取，稽核記錄中會記錄個別訊息的 internet-message-id。 MailItemsAccessed 稽核動作會記錄繫結作業然後彙總至單一稽核記錄。 間隔 2 分鐘內發生的所有繫結作業會彙總於 AuditData 屬性內 Folders 欄位中的單一稽核記錄。 遭存取的每個訊息會使用其 internet-message-id 加以識別。記錄中所彙總的繫結作業數量會顯示在 AuditData 屬性中的 OperationCount 欄位。
+繫結作業是電子郵件訊息的個別存取。 若是繫結存取，稽核記錄中會記錄個別訊息的 InternetMessageId。 MailItemsAccessed 稽核動作會記錄繫結作業然後彙總至單一稽核記錄。 間隔 2 分鐘內發生的所有繫結作業會彙總於 AuditData 屬性內 Folders 欄位中的單一稽核記錄。 遭存取的每個訊息會使用其 InternetMessageId 加以識別。 記錄中所彙總的繫結作業數量會顯示在 AuditData 屬性中的 OperationCount 欄位。
 
 如需顯示稽核記錄中繫結存取類型的範例，請參閱「[使用 MailItemsAccessed 稽核記錄進行鑑識調查](#use-mailitemsaccessed-audit-records-for-forensic-investigations)」一節中的步驟 4。
 
@@ -152,13 +152,13 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
  
    您可以透過兩種不同的方式來使用繫結作業的稽核資料：
 
-     - 透過使用 internet-message-id 找到訊息，然後檢查是否有任何訊息包含敏感性資訊，存取或收集攻擊者已存取的所有電子郵件訊息。
+     - 透過使用 InternetMessageId 找到訊息，然後檢查是否有任何訊息包含敏感性資訊，存取或收集攻擊者已存取的所有電子郵件訊息。
 
-     - 使用 internet-message-id 搜尋與一組疑似敏感性電子郵件訊息相關的稽核記錄。 如果您只關注小量的訊息，那麼這個方式就相當實用。
+     - 使用 InternetMessageId 搜尋與一組疑似敏感性電子郵件訊息相關的稽核記錄。 如果您只關注小量的訊息，那麼這個方式就相當實用。
 
 ## <a name="filtering-of-duplicate-audit-records"></a>篩選重複的稽核記錄
 
-篩選出在彼此間隔一小時內發生之相同繫結作業的重複稽核作業以移除稽核干擾。 同步處理作業也會以一小時的時間間隔篩選出。 以相同的 internet-message-id 為例，如果下方表格中所述屬性有任何不同，則此刪除重複程序便會發生例外。 如果這些屬性之一在重複的作業中不相同，系統會產生新稽核記錄。 下一小節將會詳細說明此程序。
+篩選出在彼此間隔一小時內發生之相同繫結作業的重複稽核作業以移除稽核干擾。 同步處理作業也會以一小時的時間間隔篩選出。 以相同的 InternetMessageId 為例，如果下方表格中所述屬性有任何不同，則此刪除重複程序便會發生例外。 如果這些屬性之一在重複的作業中不相同，系統會產生新稽核記錄。 下一小節將會詳細說明此程序。
 
 | 屬性	| 說明|
 |:--------|:---------|

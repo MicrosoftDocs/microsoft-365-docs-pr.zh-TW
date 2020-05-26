@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 titleSuffix: Office 365 Compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9cbde149419320495e3848867846322733cb56f9
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 54ff4012767b156bc72289473e289fa4d93d1a2c
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033653"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352156"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>在 Office 365 中設定監督原則
 
@@ -83,7 +83,7 @@ ms.locfileid: "44033653"
 
 若要管理大型企業組織中的監督使用者，您可能需要跨大型群組監控所有使用者。 您可以使用 PowerShell 為指派的群組設定全域監督原則的通訊群組。 這可讓您以單一原則監控成千上萬的使用者，並在新員工加入您的組織時，維持監督原則的更新。
 
-1. 使用下列屬性，為全域監督原則建立專屬的[通訊群組](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)：請確定此通訊群組並未用於其他用途或其他 Office 365 服務。
+1. 使用下列屬性，為全域監督原則建立專屬的[通訊群組](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup?view=exchange-ps)：請確定此通訊群組並未用於其他用途或其他 Office 365 服務。
 
     - **MemberDepartRestriction = 封閉式**。 確保使用者無法從通訊群組中移除自己。
     - **MemberJoinRestriction = 封閉式**。 確保使用者無法將自己新增至通訊群組。
@@ -124,7 +124,7 @@ ms.locfileid: "44033653"
   
 ### <a name="add-members-to-the-supervisory-review-role-group"></a>新增成員至主管審查角色群組
 
-1. 登入[https://protection.office.com](https://protection.office.com)在組織中使用管理員帳戶的認證。
+1. 登入 [https://protection.office.com](https://protection.office.com) 在組織中使用管理員帳戶的認證。
 
 2. 在 [安全性 & 規範中心] 中，移至 [**許可權**]。
 
@@ -134,11 +134,11 @@ ms.locfileid: "44033653"
 
 ### <a name="create-a-new-role-group"></a>建立新的角色群組
 
-1. 登入[https://protection.office.com/permissions](https://protection.office.com/permissions)在組織中使用管理員帳戶的認證。
+1. 登入 [https://protection.office.com/permissions](https://protection.office.com/permissions) 在組織中使用管理員帳戶的認證。
 
-2. 在 [安全性 & 規範中心] 中，移至 [**許可權**]，**+** 然後按一下 [新增] （）。
+2. 在 [安全性 & 規範中心] 中，移至 [**許可權**]，然後按一下 [新增] （ **+** ）。
 
-3. 在 [**角色**] 區段中，按一下**+**[新增] （），然後向下滾動至「**主管審查管理員**」。 將此角色新增至角色群組。
+3. 在 [**角色**] 區段中，按一下 [新增] （ **+** ），然後向下滾動至「**主管審查管理員**」。 將此角色新增至角色群組。
 
 4. 在 [**成員**] 區段中，新增您要管理組織之通訊監督的人員。
 
@@ -167,11 +167,11 @@ ms.locfileid: "44033653"
 
     如需詳細資訊，請參閱[建立自訂機密資訊類型](create-a-custom-sensitive-information-type.md)及[建立關鍵字字典](create-a-keyword-dictionary.md)
 
-    在建立自訂字典/詞典之後，您可以使用[DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary)指令程式來查看已設定的關鍵字，或是使用[DlpKeywordDictionary 指令程式](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary)來新增及移除字詞。
+    在建立自訂字典/詞典之後，您可以使用[DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/get-dlpkeyworddictionary)指令程式來查看已設定的關鍵字，或是使用[DlpKeywordDictionary 指令程式](https://docs.microsoft.com/powershell/module/exchange/set-dlpkeyworddictionary)來新增及移除字詞。
 
 ## <a name="step-4-set-up-a-supervision-policy-required"></a>步驟4：設定監督原則（必要）
   
-1. 登入[https://protection.office.com](https://protection.office.com)在組織中使用管理員帳戶的認證。
+1. 登入 [https://protection.office.com](https://protection.office.com) 在組織中使用管理員帳戶的認證。
 
 2. 在 [安全性 & 規範中心] 中，選取 [**監督**]。
   
@@ -196,5 +196,5 @@ ms.locfileid: "44033653"
     >[!NOTE]
     >已定義原則的電子郵件會在近期即時處理，而且在設定原則之後可立即進行測試。 Microsoft 小組中的聊天可能需要長達24小時才能完全處理原則。 
 
-3. 以通訊監督原則中指定的檢閱者身分登入 Microsoft 365。 流覽至 [**監察** > ]*您的自訂原則* > **開啟**以查看原則的報告。
+3. 以通訊監督原則中指定的檢閱者身分登入 Microsoft 365。 流覽至 [**監察**]  >  *您的自訂原則*  >  **開啟**以查看原則的報告。
 

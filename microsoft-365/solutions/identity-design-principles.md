@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: c830e7f7b0366623520d7ba4e5a47a51e73f09ad
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 8b991fb6cf8f03f2ff686c89251f53f53f87a5e1
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160375"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352543"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>至身分識別和超過-一種架構師的視點
 
@@ -183,7 +183,7 @@ Azure AD 具有詳細的[審計及報告](https://docs.microsoft.com/azure/activ
 - 類比客戶的環境，而不會變更客戶的實際執行環境。 
 - 開發客戶的軟體。
 
-在這些多承租人案例中，客戶常常想要讓某些承租人的設定保持不變，或報告設定變更和 drifts。 這通常表示從手動變更變更為程式碼。 Microsoft Premiere 支援為以此公用 IP 為基礎的這些需求類型提供研討會： [https://Microsoft365dsc.com](https://Microsoft365dsc.com)。
+在這些多承租人案例中，客戶常常想要讓某些承租人的設定保持不變，或報告設定變更和 drifts。 這通常表示從手動變更變更為程式碼。 Microsoft Premiere 支援為以此公用 IP 為基礎的這些需求類型提供研討會： [https://Microsoft365dsc.com](https://Microsoft365dsc.com) 。
 
 
 ### <a name="multi-geo"></a>多地理位置 
@@ -209,7 +209,7 @@ Azure AD 具有詳細的[審計及報告](https://docs.microsoft.com/azure/activ
 
 您不可能委派所有專案（不過缺口會逐漸降低），這表示全域系統管理員角色將需要不時使用。 應該考慮改為程式碼和自動化，而不是此角色的人員成員資格。
 
-**附注**： Microsoft 365 系統管理中心具有方便使用介面，但具有與 Azure AD 系統管理經驗相較之功能的子集。 這兩個入口網站都使用相同的 Azure AD 角色，因此變更也會在相同的位置發生。 提示：如果您想要讓身分識別管理具有焦點的系統管理員 UI 沒有所有 Azure [https://aad.portal.azure.com](https://aad.portal.azure.com)雜亂，請使用。 
+**附注**： Microsoft 365 系統管理中心具有方便使用介面，但具有與 Azure AD 系統管理經驗相較之功能的子集。 這兩個入口網站都使用相同的 Azure AD 角色，因此變更也會在相同的位置發生。 提示：如果您想要讓身分識別管理具有焦點的系統管理員 UI 沒有所有 Azure 雜亂，請使用 [https://aad.portal.azure.com](https://aad.portal.azure.com) 。 
 
 名稱中的內容為何？ 請勿從角色名稱進行假設。 語言不是非常精確的工具。 目標應該是定義在查看所需的角色之前必須委派的作業。 將其他人新增至「Security Reader」角色並不會讓他們看到各項安全性設定。 
 
@@ -243,29 +243,29 @@ Azure AD 具有詳細的[審計及報告](https://docs.microsoft.com/azure/activ
 
 - **Exchange Online** - [https://docs.microsoft.com/exchange/permissions-exo/permissions-exo](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) 
 - **線上 SharePoint** - [https://docs.microsoft.com/sharepoint/manage-site-collection-administrators](https://docs.microsoft.com/sharepoint/manage-site-collection-administrators) 
-- **Microsoft**  -  [團隊https://docs.microsoft.com/microsoftteams/itadmin-readiness](https://docs.microsoft.com/microsoftteams/itadmin-readiness )
+- **Microsoft 團隊**  - [https://docs.microsoft.com/microsoftteams/itadmin-readiness ](https://docs.microsoft.com/microsoftteams/itadmin-readiness )
 - **eDiscovery** - [https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions](https://docs.microsoft.com/microsoft-365/compliance/) 
-  + **許可權** -  [篩選https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search](https://docs.microsoft.com/microsoft-365/compliance/)
-  + **規範** -  [界限https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
-  + **Advanced**  -  [eDiscoveryhttps://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
+  + **許可權篩選**  - [https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search ](https://docs.microsoft.com/microsoft-365/compliance/)
+  + **規範界限**  - [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries ](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
+  + **Advanced eDiscovery**  - [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 ](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
 - **Yammer** - [https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins) 
 - **多地理位置** - [https://docs.microsoft.com/office365/enterprise/add-a-sharepoint-geo-admin](https://docs.microsoft.com/office365/enterprise/add-a-sharepoint-geo-admin) 
 - **Dynamics 365** –[https://docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) <br>
   附注：此連結是檔的根。 有多種服務類型與系統管理/委派模式中的變化。
-- **電源** -  [平臺https://docs.microsoft.com/power-platform/admin/admin-documentation](https://docs.microsoft.com/power-platform/admin/admin-documentation )
-  + **電源應用程式** -  [ https://docs.microsoft.com/power-platform/admin/wp-security](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>
+- **電源平臺**  - [https://docs.microsoft.com/power-platform/admin/admin-documentation ](https://docs.microsoft.com/power-platform/admin/admin-documentation )
+  + **電源應用程式**  - [https://docs.microsoft.com/power-platform/admin/wp-security ](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>
     附注：系統管理員/委派模式中有多種類型具有變化。
-  + **Power Automate**  - 自動[功耗https://docs.microsoft.com/power-automate/environments-overview-admin](https://docs.microsoft.com/power-automate/environments-overview-admin )
-  + **PowerBI**  -  [PowerBIhttps://docs.microsoft.com/power-bi/service-admin-governance](https://docs.microsoft.com/power-bi/service-admin-governance ) <br>
+  + **自動功耗**  - [https://docs.microsoft.com/power-automate/environments-overview-admin ](https://docs.microsoft.com/power-automate/environments-overview-admin )
+  + **PowerBI**  - [https://docs.microsoft.com/power-bi/service-admin-governance ](https://docs.microsoft.com/power-bi/service-admin-governance ) <br>
 附注：資料平臺安全性及委派（此為元件的 Power BI）是一個複雜區域。
-- **MEM/Intune**  -  [ https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control )
-- **Microsoft Defender ATP**  -  [ https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles )
+- **MEM/Intune**  - [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control ](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control )
+- **Microsoft DEFENDER ATP**  - [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles )
 - **Microsoft 威脅防護** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions)
 - **Microsoft Cloud App Security** - [https://docs.microsoft.com/cloud-app-security/manage-admins](https://docs.microsoft.com/cloud-app-security/manage-admins)
-- **Stream**  -  [資料流程https://docs.microsoft.com/stream/assign-administrator-user-role](https://docs.microsoft.com/stream/assign-administrator-user-role )
-- **資訊** -  [障礙https://docs.microsoft.com/microsoft-365/compliance/information-barriers](https://docs.microsoft.com/microsoft-365/compliance/information-barriers )
+- **資料流程**  - [https://docs.microsoft.com/stream/assign-administrator-user-role ](https://docs.microsoft.com/stream/assign-administrator-user-role )
+- **資訊障礙**  - [https://docs.microsoft.com/microsoft-365/compliance/information-barriers ](https://docs.microsoft.com/microsoft-365/compliance/information-barriers )
 
-針對 rest，在檔中搜尋是最近的[https://docs.microsoft.com/](https://docs.microsoft.com/microsoft-365/compliance/information-barriers)工作。 
+針對 rest，在檔中搜尋是最近的工作 [https://docs.microsoft.com/](https://docs.microsoft.com/microsoft-365/compliance/information-barriers) 。 
 
 
 ### <a name="activity-logs"></a>活動記錄
@@ -273,7 +273,7 @@ Office 365 具有[統一的審計記錄](https://docs.microsoft.com/microsoft-36
 
 透過其他 API 所存取的 Microsoft 365 記錄範例包含下列專案：
 - [AZURE AD](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) （未與 Office 365 相關的活動）
-- [Exchange 郵件追蹤](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-messagetrace?view=exchange-ps)
+- [Exchange 郵件追蹤](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace?view=exchange-ps)
 - 上述威脅/UEBA 系統（例如，Azure AD Identity Protection、Microsoft Cloud App Security、Microsoft Defender ATP 等）
 - [Microsoft 資訊保護](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)

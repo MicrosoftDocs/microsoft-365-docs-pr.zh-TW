@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何使用郵件流程規則（傳輸規則），在 Exchange Online Protection （EOP）中識別及篩選大宗郵件（灰色郵件）。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a31030ea2f844cdeb4bee68bf748a2ab8ca29dad
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: fa2c13aed1fd7f9c34872d05693f88577bbbc9c5
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213361"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352393"
 ---
-# <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>使用郵件流程規則來篩選 EOP 中的大量電子郵件
+# <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>在 EOP 中使用郵件流程規則來篩選大量電子郵件
 
 在未使用 Exchange online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）組織中使用信箱的 Microsoft 365 組織中，EOP 會使用反垃圾郵件原則（也稱為垃圾郵件篩選原則或內容篩選原則）來掃描輸入郵件中的垃圾郵件和大宗郵件（也稱為灰色郵件）。 如需詳細資訊，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
@@ -140,7 +140,7 @@ New-TransportRule -Name "Bulk email filtering - RegEx" -SubjectOrBodyMatchesPatt
 New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWords "to change your preferences or unsubscribe","Modify email preferences or unsubscribe","This is a promotional email","You are receiving this email because you requested a subscription","click here to unsubscribe","You have received this email because you are subscribed","If you no longer wish to receive our email newsletter","to unsubscribe from this newsletter","If you have trouble viewing this email","This is an advertisement","you would like to unsubscribe or change your","view this email as a webpage","You are receiving this email because you are subscribed" -SetSCL 9
 ```
 
-如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule)。
+如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule)。
 
 ## <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 

@@ -1,5 +1,5 @@
 ---
-title: 管理獨立 EOP 中的郵件使用者
+title: 在獨立版 EOP 中管理郵件使用者
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,14 +13,14 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 瞭解如何在 Exchange Online Protection （EOP）中管理郵件使用者，包括使用目錄同步作業、EAC 和 PowerShell 來管理使用者。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e40465901747bcbd006d437fa527a9803aad1e24
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0e8a4585a16b579c28de719181eed65b65ec6f4f
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208642"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352429"
 ---
-# <a name="manage-mail-users-in-standalone-eop"></a>管理獨立 EOP 中的郵件使用者
+# <a name="manage-mail-users-in-standalone-eop"></a>在獨立版 EOP 中管理郵件使用者
 
 在沒有 Exchange Online 信箱的獨立 Exchange Online Protection （EOP）組織中，郵件使用者是使用者帳戶的基本類型。 郵件使用者在獨立 EOP 組織中具有帳號憑證，並且可以存取資源（已指派許可權）。 郵件使用者的電子郵件地址是外部電子郵件地址（例如，您的內部部署電子郵件環境）。
 
@@ -80,7 +80,7 @@ ms.locfileid: "44208642"
 
 3. 在開啟的 [郵件使用者屬性] 頁面上，按一下下列其中一個索引標籤以查看或變更屬性。
 
-   完成後，按一下 [儲存]****。
+   完成後，請按一下 **[儲存]**。
 
 #### <a name="general"></a>一般
 
@@ -149,7 +149,7 @@ Get-Recipient -Identity <MailUserIdentity> | Format-List
 Get-User -Identity <MailUserIdentity> | Format-List
 ```
 
-如需詳細的語法及參數資訊，請參閱[Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient)和[Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)。
+如需詳細的語法及參數資訊，請參閱[Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/get-recipient)和[Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user)。
 
 ### <a name="use-standalone-eop-powershell-to-create-mail-users"></a>使用獨立 EOP PowerShell 建立郵件使用者
 
@@ -178,7 +178,7 @@ New-EOPMailUser -Name "<UniqueName>" -MicrosoftOnlineServicesID <Account> -Passw
 New-EOPMailUser -Name JeffreyZeng -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -ExternalEmailAddress jeffreyz@tailspintoys.com -DisplayName "Jeffrey Zeng" -Alias jeffreyz -FirstName Jeffrey -LastName Zeng
 ```
 
-如需詳細的語法及參數資訊，請參閱[New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser)。
+如需詳細的語法及參數資訊，請參閱[New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/new-eopmailuser)。
 
 ### <a name="use-standalone-eop-powershell-to-modify-mail-users"></a>使用獨立 EOP PowerShell 修改郵件使用者
 
@@ -205,7 +205,7 @@ $Recip = Get-Recipient -RecipientType MailUser -ResultSize unlimited
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 ```
 
-如需詳細的語法及參數資訊，請參閱[Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser)。
+如需詳細的語法及參數資訊，請參閱[Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/set-eopmailuser)。
 
 ### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>使用獨立 EOP PowerShell 移除郵件使用者
 
@@ -221,7 +221,7 @@ Remove-EOPMailUser -Identity <MailUserIdentity\>
 Remove-EOPMailUser -Identity "Jeffrey Zeng"
 ```
 
-如需詳細的語法及參數資訊，請參閱[Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser)。
+如需詳細的語法及參數資訊，請參閱[Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/remove-eopmailuser)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
 
@@ -255,7 +255,7 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
 
 - 建議搭配下列功能一起使用目錄同步處理：
 
-  - **Outlook 安全寄件者清單和封鎖的寄件者清單**：同步處理至服務時，這些清單將優先于服務中的垃圾郵件篩選。 這可讓使用者管理其個人的安全寄件者清單和封鎖的寄件者清單和個別寄件者和網域專案。 如需詳細資訊，請參閱[在 Exchange Online 信箱上設定垃圾郵件設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes)。
+  - **Outlook 安全寄件者清單和封鎖的寄件者清單**：同步處理至服務時，這些清單將優先于服務中的垃圾郵件篩選。 這可讓使用者管理其個人的安全寄件者清單和封鎖的寄件者清單和個別寄件者和網域專案。 如需詳細資訊，請參閱[設定 Exchange Online 信箱的垃圾郵件設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes)。
 
   - **目錄架構邊緣封鎖（DBEB）**：如需 DBEB 的詳細資訊，請參閱[使用目錄架構邊緣封鎖以拒絕傳送至無效收件](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)者的郵件。
 

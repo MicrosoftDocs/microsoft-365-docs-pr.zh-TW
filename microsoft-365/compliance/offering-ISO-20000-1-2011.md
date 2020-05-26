@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5a30f856f418807025eb450537633aec1616c54f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 00657f3e1e223305c4e4a4202e8ff6f612b5374e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065918"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254196"
 ---
 # <a name="isoiec-20000-12011-information-technology-service-management"></a>ISO/IEC 20000-1:2011 資訊技術服務管理
 
@@ -37,24 +37,26 @@ ISO 20000-1:2011 在 2005 年的聯合 ISO/IEC 小組委員會中發佈並於 20
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
-- [Azure 和 Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- [Azure、Azure Government 和 Azure 德國](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Microsoft Defender 進階威脅防護
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft 受管理的電腦
-- Microsoft PowerApps
-- Microsoft Flow
-- Microsoft Graph
-- Microsoft Genomics
 - 由 21Vianet 運作的 Office 365
+- Microsoft PowerApps
+- Power Automate (之前稱為 Microsoft Flow)
 - Power BI
+- Power BI Embedded
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
-Azure 2017 ISO 20000-1 文件、Intune、Microsoft 受管理的電腦、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft Datacenter
+ISO 20000-1 文件如下：
 
-- [評定報告](https://go.microsoft.com/fwlink/p/?linkid=2077810)
-- [認證](https://go.microsoft.com/fwlink/p/?linkid=2077815)
-- [適用性聲明](https://aka.ms/AzureISO20000StatementofApplicability)
+- [Azure、Dynamics 365 和線上服務：ISO20000-1 憑證](https://aka.ms/azureiso200001cert)
+- [Azure、Dynamics 365 和線上服務：ISO20000-1 評估報告](https://aka.ms/azureiso200001report)
+- [Azure、Dynamics 365 和線上服務：ISO20000-1 適用性聲明 (SOA)](https://aka.ms/azureiso200001soa)
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 

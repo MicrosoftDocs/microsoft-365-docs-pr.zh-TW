@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 07/11/2019
+ms.date: 05/22/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: 如果您尚未將組織移至新的 OME 功能，但您已部署 OME，則本文中的資訊適用于您的組織。 Microsoft 建議您在組織合理的情況時，安排移至新的 OME 功能。 如需相關指示，請參閱設定以 Azure 資訊保護為基礎的新 Office 365 郵件加密功能。 如果您想要進一步瞭解新功能的運作方式，請參閱 Office 365 Message Encryption。 本文的其餘部分是在發行新的 OME 功能之前，OME 行為。
-ms.openlocfilehash: 9f9d4cdd9ee75becb6b7c7d9716b9fcb543c48d9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 00b42dfceaeac5b7e9e28263c56f9f7490644a3b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632682"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351904"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 郵件加密的舊版資訊
 
@@ -108,7 +108,7 @@ Office 365 郵件加密是以 Microsoft Azure 版權管理（Azure RMS）為基�
   
 1. 使用遠端 PowerShell 連接至 Exchange Online （如[使用遠端 PowerShell 連線到 Exchange online](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)中所述）。
 
-2. 使用如下所述的 Set-OMEConfiguration Cmdlet： [Set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)。 若要從 DisclaimerText、EmailText 及 PortalText 值中移除組織的署名自訂，請將值設為空字串`""`。 針對所有影像值，例如 [標誌]，將值設`"$null"`為。
+2. 使用如下所述的 Set-OMEConfiguration Cmdlet： [Set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)。 若要從 DisclaimerText、EmailText 及 PortalText 值中移除組織的署名自訂，請將值設為空字串 `""` 。 針對所有影像值，例如 [標誌]，將值設為 `"$null"` 。
 
    **加密自訂選項**
 
@@ -220,3 +220,9 @@ Office 365 郵件加密使用 Rights Management Services （RMS）作為加密�
  **問：Microsoft 會如何利用透過 OME 入口網站和 OME 檢視器應用程式所取得我的資訊？**
   
 [Office 365 郵件加密入口網站隱私權聲明](https://privacy.microsoft.com/privacystatement)提供 Microsoft 對您私人資訊的處理方式及不會有什麼作用的詳細資訊。
+
+## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>我在要求它之後未收到一次性處理常式代碼時，該怎麼辦？
+
+首先，檢查您的電子郵件用戶端中的垃圾郵件或垃圾郵件資料夾。 您組織的 DKIM 和 DMARC 設定可能會導致這些電子郵件結束篩選為垃圾郵件。
+
+接下來，檢查安全性 & 規範中心內的隔離。 通常會包含一次性處理常式代碼的郵件，尤其是您的組織收到的第一個郵件，但會以隔離區結束。
