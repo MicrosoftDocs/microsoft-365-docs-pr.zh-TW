@@ -17,27 +17,27 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 使用安全性 & 合規性中心，指派執行 eDiscovery 相關工作所需的許可權。
-ms.openlocfilehash: b56b2e59a7b3a40a4ea76c1172c3631198ddefe3
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 4c39dc3cd0d3c5d13d33330eca930e07227c38d3
+ms.sourcegitcommit: 17a45261926dde1a7cd24e0ac516cfc49e453806
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351105"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374402"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全性 & 規範中心指派 eDiscovery 許可權
 
-如果您想要讓使用者在 Office 365 或 Microsoft 365 規範中心的安全性 & 合規性中心使用任何 eDiscovery 相關工具，您必須指派適當的許可權。 若要執行此動作，最簡單的方法是在安全性 & 合規性中心的 [**許可權**] 頁面上，加入適當的角色群組。 本主題說明使用安全性 & 合規性中心執行 eDiscovery 和內容搜尋相關工作所需的許可權。 
+如果您想要讓使用者在 Office 365 或 Microsoft 365 規範中心的安全性 & 合規性中心使用任何[eDiscovery 相關工具](ediscovery.md)，您必須指派適當的許可權。 若要執行此動作，最簡單的方法是在安全性 & 合規性中心的 [**許可權**] 頁面上，加入適當的角色群組。 本主題說明使用安全性 & 合規性中心執行 eDiscovery 和內容搜尋相關工作所需的許可權。
   
 安全性 & 規範中心內主要 eDiscovery 相關角色群組稱為**EDiscovery 管理員**。 這個角色群組中有兩個子群組。 
   
-- **Ediscovery 管理員**-ediscovery 管理員可以使用安全性 & 合規性中心的內容搜尋工具來搜尋組織中的內容位置，並執行各種與搜尋相關的動作，例如預覽及匯出搜尋結果。 成員也可以建立及管理 eDiscovery 案例和高級 eDiscovery 案例、新增及移除成員至案例、建立案例保留、執行與案例相關聯的搜尋，以及存取案例資料。 eDiscovery 管理員只可存取及管理他們建立的案例。 他們無法存取或管理其他 eDiscovery 管理員所建立的案例。
-    
+- **Ediscovery 管理員**-ediscovery 管理員可以使用安全性 & 合規性中心的內容搜尋工具來搜尋組織中的內容位置，並執行各種與搜尋相關的動作，例如預覽及匯出搜尋結果。 成員也可以建立及管理核心 eDiscovery 案例和高級 eDiscovery 案例、新增及移除成員至案例、建立案例保留、執行與案例相關聯的搜尋，以及存取案例資料。 eDiscovery 管理員只可存取及管理他們建立的案例。 他們無法存取或管理其他 eDiscovery 管理員所建立的案例。
+  
 - **Ediscovery 管理員**-Ediscovery 系統管理員是 ediscovery 管理員角色群組的成員，可執行 ediscovery 管理員可執行檔相同內容搜尋與案例管理相關工作。 此外，電子檔探索管理員也可以：
-    
-  - 存取安全性 & 合規性中心的**ediscovery**和**Advanced ediscovery**頁面上列出的所有案例。 
+  
+  - 存取安全性 & 合規性中心的**ediscovery**和**Advanced ediscovery**頁面上列出的所有案例。
 
   - 針對組織中的任何案例，存取高級 eDiscovery 中的案例資料。
-    
+  
   - 在將自我新增為案例成員後，管理任何 eDiscovery 案例。
   
   請參閱[詳細資訊](#more-information)一節，瞭解您可能想要組織中的 EDiscovery 系統管理員的原因。
@@ -77,7 +77,9 @@ ms.locfileid: "44351105"
 |**Role**|**合規性系統管理員**|**eDiscovery 管理員 & 管理員**|**組織管理**|**檢閱者**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |案例管理 <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|通訊 <br/> | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |合規性搜尋 <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|監管人 <br/> | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |匯出 <br/> | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Hold <br/>  |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |預覽 <br/>  | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
@@ -90,7 +92,19 @@ ms.locfileid: "44351105"
 
 ### <a name="case-management"></a>案例管理
 
-此角色可讓使用者在安全性 & 規範中心內建立、編輯、刪除和控制 eDiscovery 和高級 eDiscovery 案例的存取。 如先前所述，必須先將案例管理角色指派給使用者，才能使用**eDiscoveryCaseAdmin**指令程式，讓他們成為 eDiscovery 管理員。 
+此角色可讓使用者在安全性 & 規範中心內建立、編輯、刪除及控制核心 eDiscovery 和高級 eDiscovery 案例的存取。 如先前所述，必須先將案例管理角色指派給使用者，才能使用**eDiscoveryCaseAdmin**指令程式，讓他們成為 eDiscovery 管理員。
+
+如需詳細資訊，請參閱：
+
+- [開始使用核心電子文件探索](get-started-core-ediscovery.md)
+
+- [開始使用進階電子文件探索](get-started-with-advanced-ediscovery.md)
+
+### <a name="communication"></a>通訊
+
+此角色可讓使用者管理在高級 eDiscovery 案例中識別的保管人的所有通訊。 這包括建立保留通知、保留提醒及上報到管理。 使用者也可以追蹤保留通知的保管人認可，並管理每位保管人所用的保管人入口網站存取，以追蹤識別為系統管理員的情況。
+
+如需詳細資訊，請參閱使用[高級 eDiscovery 中的通訊](managing-custodian-communications.md)。
 
 ### <a name="compliance-search"></a>合規性搜尋
 
@@ -100,7 +114,13 @@ ms.locfileid: "44351105"
 
 同樣地，已獲指派符合性搜尋角色，但沒有匯出角色的使用者，可以下載已獲指派「匯出」角色之使用者在其中啟動匯出動作的搜尋結果。 不含「匯出」角色的使用者可以在建立初始匯出動作後，下載兩周的搜尋結果。 之後，除非使用「匯出」角色的人重新開機匯出，否則他們無法下載結果。
 
-如需詳細資訊，請參閱[內容搜尋 In Office 365](content-search.md)。 
+如需詳細資訊，請參閱[內容搜尋 In Office 365](content-search.md)。
+
+### <a name="custodian"></a>監管人
+
+此角色可讓使用者針對高級 eDiscovery 案例識別及管理保管人，並使用 Azure Active Directory 和其他來源中的資訊來尋找與保管人相關聯的資料來源。 使用者可以在案例中，將其他資料來源（例如信箱、SharePoint 網站和團隊）與保管人產生關聯。 使用者也可以在與保管人相關聯的資料來源上進行合法保留，以在案例的上下文中保留內容。
+
+如需詳細資訊，請參閱[Advanced eDiscovery 中的使用保管人](managing-custodians.md)。
 
 ### <a name="export"></a>匯出
 
@@ -114,9 +134,9 @@ ms.locfileid: "44351105"
 
 如需有關保留的詳細資訊，請參閱：
 
-- [電子文件探索案例](ediscovery-cases.md) 
+- [在核心 eDiscovery 中建立保留](create-ediscovery-holds.md) 
 
-- [進階 eDiscovery](add-custodians-to-case.md#step-4-place-custodians-on-hold)
+- [在高級 eDiscovery 中建立保留](add-custodians-to-case.md#step-4-place-custodians-on-hold)
 
 ### <a name="preview"></a>預覽
 
@@ -140,19 +160,19 @@ ms.locfileid: "44351105"
 ## <a name="more-information"></a>詳細資訊
 
 - **為什麼要建立 eDiscovery 管理員？** 如先前所述，eDiscovery 系統管理員是 eDiscovery 管理員角色群組的成員，可在您的組織中查看和存取所有 eDiscovery 案例。 存取所有 eDiscovery 案例的能力有兩個重要的目的： 
-    
+
   - 如果身為 eDiscovery 案例唯一成員的人員離開您的組織，沒有任何人 (包括「組織管理」角色群組的成員或「eDiscovery 管理員」角色群組的其他成員) 可以存取該 eDiscovery 案例，因為他們不是案例的成員。 在此情況下，完全無法存取案例的資料。 不過，因為 eDiscovery 管理員可以存取組織中的所有 eDiscovery 案例，所以他們可以查看案例，並將自己或其他 eDiscovery 管理員新增為案例的成員。
-    
-  - 因為 eDiscovery 管理員可以查看和存取所有的 eDiscovery 和高級 eDiscovery 案例，所以他們可以審核和監控所有案例和相關聯的符合性搜尋。 這可協助避免任何濫用法規遵從性搜尋或 eDiscovery 案例。 而且，由於 eDiscovery 管理員可以存取符合性搜尋結果中可能的敏感資訊，因此您應該限制 eDiscovery 系統管理員的人數。
-    
+
+  - 因為 eDiscovery 管理員可以查看和存取所有核心 eDiscovery 和高級 eDiscovery 案例，所以他們可以審計及監督所有案例和相關聯的符合性搜尋。 這可協助避免任何濫用法規遵從性搜尋或 eDiscovery 案例。 而且，由於 eDiscovery 管理員可以存取符合性搜尋結果中可能的敏感資訊，因此您應該限制 eDiscovery 系統管理員的人數。
+
 - **我可以將群組新增為 eDiscovery 管理員角色群組的成員嗎？** 如先前所述，您可以使用安全性 & 規範中心 PowerShell 中的**Add-RoleGroupMember** Cmdlet，將擁有郵件功能的安全性群組新增為 ediscovery 管理員角色群組中的 ediscovery 管理員子群組成員。 例如，您可以執行下列命令，將擁有郵件功能的安全性群組新增至 eDiscovery 管理員角色群組。 
-    
+
   ```powershell
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
     不支援 Exchange 通訊群組和 Microsoft 365 群組。 您必須使用擁有郵件功能的安全性群組，您可以使用命令在 Exchange Online PowerShell 中建立 `New-DistributionGroup -Type Security` 。 您也可以在 Exchange 系統管理中心或 Microsoft 365 系統管理中心中，建立已啟用郵件功能的安全性群組（及新增成員）。 在您建立新的已啟用郵件功能的安全性後，可能需要長達60分鐘，才可將其新增至 eDiscovery 管理員角色群組。 
-    
-    也如先前所述，您無法使用安全性 & 合規性中心 PowerShell 中的**載入 eDiscoveryCaseAdmin**指令程式，讓 eDiscovery 管理員成為啟用郵件功能的安全性群組。 您只可以將個別使用者新增為 eDiscovery 管理員。 
-    
+
+    也如先前所述，您無法使用安全性 & 合規性中心 PowerShell 中的**載入 eDiscoveryCaseAdmin**指令程式，讓 eDiscovery 管理員成為啟用郵件功能的安全性群組。 您只可以將個別使用者新增為 eDiscovery 管理員。
+
     您也無法將擁有郵件功能的安全性群組新增為案例的成員。

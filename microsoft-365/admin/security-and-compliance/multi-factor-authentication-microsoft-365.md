@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 深入瞭解 Microsoft 365 中的多重要素驗證。
-ms.openlocfilehash: 128296b7dbc37ba5ebffb25a87bce589f8e5a904
-ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
+ms.openlocfilehash: eba9ae38dbc17a22abb5d5ef92b8cd30a827ae11
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44340823"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371449"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Microsoft 365 的多重要素驗證
 
@@ -151,17 +151,10 @@ ms.locfileid: "44340823"
 |:-------|:-----|:-------|:-------|
 | **安全性預設** | 無法使用條件式存取原則 |   可以使用條件式存取原則 | Microsoft Authenticator 應用程式 |
 | **條件式存取原則** |如果已啟用任何原則，則無法啟用安全性預設 | 如果已停用所有原則，則可啟用安全性預設 | 在註冊 MFA 期間由使用者指定 |
-| **每個使用者帳戶設定（不建議使用）** | 由安全性預設值和要求 MFA 的條件式存取原則所取代 | 由安全性預設值和條件式存取原則所取代 | 在註冊 MFA 期間由使用者指定|
+| **每個使用者帳戶設定（不建議使用）** | 覆寫安全性預設值，以及在每次登入時要求 MFA 的條件式存取原則 | 由安全性預設值和條件式存取原則所取代 | 在註冊 MFA 期間由使用者指定|
 ||||
 
 如果啟用安全性預設值，系統會提示所有新的使用者進行 MFA 註冊，並在下一個登入時使用 Microsoft 驗證應用程式。
-
-不過，如果使用者有可以接收文字訊息但無法執行 Microsoft 驗證應用程式的較舊電話，您可以在該特定使用者帳戶上啟用 MFA，然後使用文字代碼其他驗證方法，使用下列步驟來註冊 MFA：
-
-1. 停用 Azure 入口網站中的安全性預設值。
-2. 在 Microsoft 365 系統管理中心中，為使用者帳戶啟用 MFA。
-3. 讓使用者登入並註冊 MFA 和文字代碼驗證方法。
-4. 完成時，啟用 Azure 入口網站中的安全性預設值
 
 ## <a name="ways-to-manage-mfa-settings"></a>管理 MFA 設定的方法
 

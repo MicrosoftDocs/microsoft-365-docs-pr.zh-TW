@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解設定小組以與小組中的客人共同作業所需的 Microsoft 365 設定步驟。
-ms.openlocfilehash: dabcfa53e9ccf4b3ea136b5ab522619fe81ae738
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 6742409732e1ef9b466dae6854768c3843f33bd0
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160024"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371486"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在小組中與來賓共同作業
 
@@ -44,10 +44,10 @@ Microsoft 365 中的共用可透過 Azure Active Directory 中的組織關聯設
 
 設定組織關聯設定
 
-1. 登入 Microsoft Azure，網址[https://portal.azure.com](https://portal.azure.com)為。
+1. 登入 Microsoft Azure，網址為 [https://portal.azure.com](https://portal.azure.com) 。
 2. 在左側導覽中，按一下 [ **Azure Active Directory**]。
-3. 在 [**一覽表**] 窗格中，按一下 [**組織關聯**性]。
-4. 在 [**組織關聯**] 窗格中，按一下 [**設定**]。
+3. 在 [**一覽**] 窗格中，按一下 [**外部識別碼**]。
+4. 在 [**組織**識別] 窗格中，按一下 [**外部協同] 設定**。
 5. 確定**guest 和 guest inviter role 中的系統管理員和使用者都可以邀請**和**成員可以邀請**皆設定為 **[是]**。
 6. 如果您做了任何變更，請按一下 [儲存]****。
 
@@ -128,7 +128,7 @@ Microsoft 365 中的共用可透過 Azure Active Directory 中的組織關聯設
 2. 在 [檔案**和資料夾連結**] 底下，選取您要使用的預設共用連結。
 3. 如果您做了任何變更，請按一下 [儲存]****。
 
-## <a name="create-a-team"></a>建立團隊
+## <a name="create-a-team"></a>建立小組
 
 下一步是建立您計畫用以與客人合作的小組。
 
@@ -161,12 +161,12 @@ Microsoft 365 中的共用可透過 Azure Active Directory 中的組織關聯設
 現在已設定來賓共用設定，因此您可以開始將內部使用者和來賓新增至您的小組。 
 
 邀請內部使用者加入小組
-1. 在團隊中，按一下 [**更多選項**（）]，然後按一下 [**\*\*****新增成員**]。
+1. 在團隊中，按一下 [**更多選項**（ **\*\*\*** ）]，然後按一下 [**新增成員**]。
 2. 輸入您要邀請之人員的名稱。
 3. Click **Add**, and then click **Close**.
 
 邀請客人加入小組
-1. 在團隊中，按一下 [**更多選項**（）]，然後按一下 [**\*\*****新增成員**]。
+1. 在團隊中，按一下 [**更多選項**（ **\*\*\*** ）]，然後按一下 [**新增成員**]。
 2. 輸入您要邀請之來賓的電子郵件地址。
 3. 按一下 [**編輯來賓資訊**]。
 4. 輸入來賓的完整名稱，然後按一下核取記號。

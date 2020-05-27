@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 預設會開啟信箱審核記錄（也稱為預設信箱審計或預設的信箱審核）。 這表示信箱擁有者、代理人和系統管理員所執行的某些動作會自動記錄在信箱審核記錄檔中，您可以在此搜尋在信箱上執行的活動。
-ms.openlocfilehash: f25232dd30fe0fba0f4cc31acae3235012bb025a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 03e32a11176530d26f33076331f8f6a2093e7200
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352106"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371427"
 ---
 # <a name="manage-mailbox-auditing"></a>管理信箱稽核
 
@@ -39,7 +39,8 @@ ms.locfileid: "44352106"
 - 您的組織中的信箱審核原則一致（因為您正在審核所有信箱的相同動作）。
 
 > [!NOTE]
->* 根據預設，應記住的信箱審核版本的重要事項是：您不需要執行任何動作來管理信箱審核。 不過，若要深入瞭解，請自訂信箱審核的預設設定，或完全關閉，本主題可協助您。 <br><br>* 預設情況下，只有 E5 使用者的信箱審核事件可在安全性 & 合規性中心或 Office 365 管理活動 API 中的審計記錄搜尋中取得。 如需詳細資訊，請參閱本主題中的[詳細資訊](#more-information)一節。
+>* 根據預設，應記住的信箱審核版本的重要事項是：您不需要執行任何動作來管理信箱審核。 不過，若要深入瞭解，請自訂信箱審核的預設設定，或完全關閉，本主題可協助您。
+>- 根據預設，只有 E5 使用者的信箱審核事件可在安全性 & 合規性中心或 Office 365 管理活動 API 中的審計記錄搜尋中取得。 如需詳細資訊，請參閱本主題中的[詳細資訊](#more-information)一節。
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>驗證預設開啟的信箱審核
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 隨附許多內建的分類符，您可以用來識別及標記整個組織中的內容。 本主題將告訴您如何準備使用這些分類器。
-ms.openlocfilehash: 485ef8013c5a6656be9d0e025048154ec8b2f250
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 2652df8d79b06d6614e2478843195e67de0a8ebb
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292419"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371405"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>使用保留標籤測試內建的分類器（預覽）
 
@@ -38,13 +38,13 @@ Microsoft 365 隨附了五個建議的內建分類器：
 - **簡歷**：偵測屬於申請人個人、教育、專業資格、工作經驗及其他個人識別資訊的文字帳戶的專案
 - **原始程式碼**：偵測包含一組指令和語句的專案，這些專案是以前25種使用的電腦程式設計語言所撰寫的 GitHub
 
-|語言名稱|||||
-|---------|---------|---------|---------|---------|
-|ActionScript|C        |C#       |C++     |Clojure  |
-|CoffeeScript|Css     |移至       |Haskell |HTML     |
-|JAVA     |JavaScript|Lua      |Matlab   |目標-C|
-|Perl     |Php      |Python   |R        |紅寶石     |
-|Scala    |命令介面    |迅速    |Tex      |Vim 腳本|
+  |語言名稱|||||
+  |---------|---------|---------|---------|---------|
+  |ActionScript|C        |C#       |C++     |Clojure  |
+  |CoffeeScript|Css     |移至       |Haskell |HTML     |
+  |JAVA     |JavaScript|Lua      |Matlab   |目標-C|
+  |Perl     |Php      |Python   |R        |紅寶石     |
+  |Scala    |命令介面    |迅速    |Tex      |Vim 腳本|
 
 > [!NOTE]
 > 原始程式碼經過訓練，可在大量文字是原始程式碼時進行偵測。 它不會偵測到以純文字交錯的原始程式碼文字。
@@ -60,8 +60,8 @@ Microsoft 365 隨附了五個建議的內建分類器：
 
 1. 收集您認為屬於內建分類器（肯定比對）類別的可處置內容專案，以及您要測試之類別中不應該包含的專案（負數相符）。
 
-> [!IMPORTANT]
-> 範例專案不能加密，必須是英文。
+   > [!IMPORTANT]
+   > 範例專案不能加密，必須是英文。
 
 2. 建立專用的 SharePoint 線上資料夾;至少等候一個小時的資料夾新增至搜尋索引。 請記下資料夾 URL。
 
@@ -79,7 +79,7 @@ Microsoft 365 隨附了五個建議的內建分類器：
 
 9. 選擇 `Apply label to content that matches a trainable classifier` 。
 
-![選取分類器做為條件](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
+   ![選取分類器做為條件](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
 10. 在此情況下，從清單中選擇您的分類器`Source Code`
 

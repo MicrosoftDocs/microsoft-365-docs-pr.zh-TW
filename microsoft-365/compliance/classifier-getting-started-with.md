@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，方法是將它肯定和否定的範例，以查看。 在訓練分類器之後，請確認其結果是否正確。 然後，您可以使用它來搜尋組織的內容，並將其分類，以套用保留或敏感度標籤，或將其包含在資料遺失防護（DLP）或保留原則中。
-ms.openlocfilehash: ba24bbe76bce5e3a41345c80616a57d3fb67a5fc
-ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
+ms.openlocfilehash: de52c8c7f96d2d3c0383f27b17bcc5162bb662c5
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44339911"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371461"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>開始使用可訓練的分類器 (預覽)
 
@@ -85,13 +85,13 @@ Microsoft 365 隨附了五個建議的內建分類器：
 - **簡歷**：偵測屬於申請人個人、教育、專業資格、工作經驗及其他個人識別資訊的文字帳戶的專案
 - **原始程式碼**：偵測包含一組指令和語句的專案，這些專案是以前25種使用的電腦程式設計語言所撰寫的 GitHub
 
-|語言名稱|||||
-|---------|---------|---------|---------|---------|
-|ActionScript|C        |C#       |C++     |Clojure  |
-|CoffeeScript|Css     |移至       |Haskell |HTML     |
-|JAVA     |JavaScript|Lua      |Matlab   |目標-C|
-|Perl     |Php      |Python   |R        |紅寶石     |
-|Scala    |命令介面    |迅速    |Tex      |Vim 腳本|
+  |語言名稱|||||
+  |---------|---------|---------|---------|---------|
+  |ActionScript|C        |C#       |C++     |Clojure  |
+  |CoffeeScript|Css     |移至       |Haskell |HTML     |
+  |JAVA     |JavaScript|Lua      |Matlab   |目標-C|
+  |Perl     |Php      |Python   |R        |紅寶石     |
+  |Scala    |命令介面    |迅速    |Tex      |Vim 腳本|
 
 > [!NOTE]
 > 原始程式碼經過訓練，可在大量文字是原始程式碼時進行偵測。 它不會偵測到以純文字交錯的原始程式碼文字。
@@ -133,6 +133,6 @@ Microsoft 365 隨附了五個建議的內建分類器：
 - [保留原則](retention-policies.md)
 - [資料外洩防護 (DLP)](data-loss-prevention-policies.md)
 - [敏感性標籤](sensitivity-labels.md)
-- [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
+- [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
 - [檔指紋列印](document-fingerprinting.md)
 - [完全相符的資料](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
