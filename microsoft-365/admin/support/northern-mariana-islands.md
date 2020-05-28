@@ -1,5 +1,5 @@
 ---
-title: 北馬里亞納群島支援資訊
+title: 北馬里安納群島的支援資訊
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,30 +9,31 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何連絡您的國家或地區的客戶支援。
+description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 927559c221bad8d7fd11cb7b55b62f9970891920
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 183360a2968957357beecbfe91b68b7681249cf4
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42357104"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44393774"
 ---
-# <a name="contact-support-for-northern-mariana-islands"></a><span data-ttu-id="a33b7-103">連絡支援人員的北馬里亞納群島</span><span class="sxs-lookup"><span data-stu-id="a33b7-103">Contact support for Northern Mariana Islands</span></span>
+# <a name="contact-support-for-northern-mariana-islands"></a><span data-ttu-id="461ce-103">北馬里安納群島的接觸支援</span><span class="sxs-lookup"><span data-stu-id="461ce-103">Contact support for Northern Mariana Islands</span></span>
 
-<span data-ttu-id="a33b7-104">[尋找另一個國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="a33b7-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="461ce-104">[尋找其他國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="461ce-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="a33b7-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="a33b7-105">Phone number</span></span>
-<span data-ttu-id="a33b7-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="a33b7-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="461ce-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="461ce-105">Phone number</span></span>
+<span data-ttu-id="461ce-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="461ce-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="a33b7-107">小時</span><span class="sxs-lookup"><span data-stu-id="a33b7-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="a33b7-108">帳單支援：</span><span class="sxs-lookup"><span data-stu-id="a33b7-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="461ce-107">小時</span><span class="sxs-lookup"><span data-stu-id="461ce-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="461ce-108">帳單支援：</span><span class="sxs-lookup"><span data-stu-id="461ce-108">Billing Support:</span></span>
 
-<span data-ttu-id="a33b7-109">英文： 週一至週五上午 9 點-下午 5 點</span><span class="sxs-lookup"><span data-stu-id="a33b7-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="461ce-109">英文：週一至週五上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="461ce-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="a33b7-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="a33b7-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="461ce-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="461ce-110">Technical Support:</span></span>
 
-<span data-ttu-id="a33b7-111">英文： 每週 7 天，每天 24 小時</span><span class="sxs-lookup"><span data-stu-id="a33b7-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="461ce-111">英文：每週7天、每天24小時</span><span class="sxs-lookup"><span data-stu-id="461ce-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="a33b7-112">國際電話費用</span><span class="sxs-lookup"><span data-stu-id="a33b7-112">International call charges apply</span></span>
+<span data-ttu-id="461ce-112">國際通話費用適用</span><span class="sxs-lookup"><span data-stu-id="461ce-112">International call charges apply</span></span>
