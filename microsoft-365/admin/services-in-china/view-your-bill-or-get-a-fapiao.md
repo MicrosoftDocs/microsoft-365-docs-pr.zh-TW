@@ -14,37 +14,38 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEA150
 ms.assetid: c29d38b5-53a6-4bd9-b7aa-ce12c902da83
 description: 查看您的帳單報表或發票，瞭解您的 Office 365 由中國所運作的使用者。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 24a38afe834b147a7250a1c34b1c6af094b9421c
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 03417651817a4f61f03f84f232e8952771e1a53a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140798"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398999"
 ---
-# <a name="view-your-bill-or-get-a-fapiao-in-office-365-operated-by-21vianet"></a><span data-ttu-id="61706-103">在由世紀運作的 Office 365 中查看您的帳單或取得發票</span><span class="sxs-lookup"><span data-stu-id="61706-103">View your bill or get a Fapiao in Office 365 operated by 21Vianet</span></span>
+# <a name="view-your-bill-or-get-a-fapiao-in-office-365-operated-by-21vianet"></a><span data-ttu-id="2857e-103">在由世紀運作的 Office 365 中查看您的帳單或取得發票</span><span class="sxs-lookup"><span data-stu-id="2857e-103">View your bill or get a Fapiao in Office 365 operated by 21Vianet</span></span>
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="61706-104">系統管理中心變更。</span><span class="sxs-lookup"><span data-stu-id="61706-104">The admin center is changing.</span></span> <span data-ttu-id="61706-105">[！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。</span><span class="sxs-lookup"><span data-stu-id="61706-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
+> <span data-ttu-id="2857e-104">系統管理中心正在變更。</span><span class="sxs-lookup"><span data-stu-id="2857e-104">The admin center is changing.</span></span> <span data-ttu-id="2857e-105">如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。</span><span class="sxs-lookup"><span data-stu-id="2857e-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
 
 ::: moniker-end
 
-<span data-ttu-id="61706-106">您可以查看帳單報表或發票，以取得您的 Office 365 （由世紀訂閱費用運作）的相關資訊。</span><span class="sxs-lookup"><span data-stu-id="61706-106">You can view your billing statement or invoice for information about your Office 365 operated by 21Vianet subscription charges.</span></span> <span data-ttu-id="61706-107">您也可以取得發票（您的最終購買憑證）。</span><span class="sxs-lookup"><span data-stu-id="61706-107">You can also obtain a Fapiao (your final proof of purchase).</span></span> <span data-ttu-id="61706-108">您可以將發票要求提交至[發票管理系統](https://go.microsoft.com/fwlink/p/?linkid=837465)，在您支付之後大約三天。</span><span class="sxs-lookup"><span data-stu-id="61706-108">You can submit your Fapiao request to our [Fapiao management system](https://go.microsoft.com/fwlink/p/?linkid=837465) about three days after you have paid.</span></span> 
+<span data-ttu-id="2857e-106">您可以查看帳單報表或發票，以取得您的 Office 365 （由世紀訂閱費用運作）的相關資訊。</span><span class="sxs-lookup"><span data-stu-id="2857e-106">You can view your billing statement or invoice for information about your Office 365 operated by 21Vianet subscription charges.</span></span> <span data-ttu-id="2857e-107">您也可以取得發票（您的最終購買憑證）。</span><span class="sxs-lookup"><span data-stu-id="2857e-107">You can also obtain a Fapiao (your final proof of purchase).</span></span> <span data-ttu-id="2857e-108">您可以將發票要求提交至[發票管理系統](https://go.microsoft.com/fwlink/p/?linkid=837465)，在您支付之後大約三天。</span><span class="sxs-lookup"><span data-stu-id="2857e-108">You can submit your Fapiao request to our [Fapiao management system](https://go.microsoft.com/fwlink/p/?linkid=837465) about three days after you have paid.</span></span> 
   
-## <a name="find-your-billing-statement-or-request-a-fapiao"></a><span data-ttu-id="61706-109">尋找帳單報表或要求發票</span><span class="sxs-lookup"><span data-stu-id="61706-109">Find your billing statement or request a Fapiao</span></span>
-1. <span data-ttu-id="61706-110">在系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)中，移至 [**帳單** \> **票據 & 付款**] 頁面。</span><span class="sxs-lookup"><span data-stu-id="61706-110">In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), go to the **Billing** \> **Bills & payments** page.</span></span>
+## <a name="find-your-billing-statement-or-request-a-fapiao"></a><span data-ttu-id="2857e-109">尋找帳單報表或要求發票</span><span class="sxs-lookup"><span data-stu-id="2857e-109">Find your billing statement or request a Fapiao</span></span>
+1. <span data-ttu-id="2857e-110">在系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)中，移至 [**帳單** \> **票據 & 付款**] 頁面。</span><span class="sxs-lookup"><span data-stu-id="2857e-110">In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), go to the **Billing** \> **Bills & payments** page.</span></span>
     
-2. <span data-ttu-id="61706-111">找到您想要的發票，選取以查看或選擇下載 PDF。</span><span class="sxs-lookup"><span data-stu-id="61706-111">Find the invoice you want, select to view, or choose to download the PDF.</span></span>
+2. <span data-ttu-id="2857e-111">找到您想要的發票，選取以查看或選擇下載 PDF。</span><span class="sxs-lookup"><span data-stu-id="2857e-111">Find the invoice you want, select to view, or choose to download the PDF.</span></span>
 
     
-  - <span data-ttu-id="61706-112">若要要求發票，請選取 [**取得 Fapiaos**]。</span><span class="sxs-lookup"><span data-stu-id="61706-112">To request a Fapiao, select **Get Fapiaos**.</span></span>
+  - <span data-ttu-id="2857e-112">若要要求發票，請選取 [**取得 Fapiaos**]。</span><span class="sxs-lookup"><span data-stu-id="2857e-112">To request a Fapiao, select **Get Fapiaos**.</span></span>
     
     > [!NOTE]
-    > <span data-ttu-id="61706-113">您需要已註冊的帳戶才能存取[發票管理系統](https://go.microsoft.com/fwlink/p/?linkid=837465)。</span><span class="sxs-lookup"><span data-stu-id="61706-113">You need a registered account to access the [fapiao management system](https://go.microsoft.com/fwlink/p/?linkid=837465).</span></span> <span data-ttu-id="61706-114">若尚未設定帳戶，請參閱[Apply for a 發票 For Office 365 （由世紀運作](apply-for-a-fapiao.md)）。</span><span class="sxs-lookup"><span data-stu-id="61706-114">If you haven't already set up an account, see [Apply for a Fapiao for Office 365 operated by 21Vianet](apply-for-a-fapiao.md).</span></span> 
+    > <span data-ttu-id="2857e-113">您需要已註冊的帳戶才能存取[發票管理系統](https://go.microsoft.com/fwlink/p/?linkid=837465)。</span><span class="sxs-lookup"><span data-stu-id="2857e-113">You need a registered account to access the [fapiao management system](https://go.microsoft.com/fwlink/p/?linkid=837465).</span></span> <span data-ttu-id="2857e-114">若尚未設定帳戶，請參閱[Apply for a 發票 For Office 365 （由世紀運作](apply-for-a-fapiao.md)）。</span><span class="sxs-lookup"><span data-stu-id="2857e-114">If you haven't already set up an account, see [Apply for a Fapiao for Office 365 operated by 21Vianet](apply-for-a-fapiao.md).</span></span> 

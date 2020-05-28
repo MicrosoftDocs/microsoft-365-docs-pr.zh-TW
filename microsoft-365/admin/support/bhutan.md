@@ -1,5 +1,5 @@
 ---
-title: 不丹支援資訊
+title: 不丹的支援資訊
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,30 +9,31 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何連絡您的國家或地區的客戶支援。
+description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f06bea7159d0f945e096a7237101d7791594b4a1
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 0a7d9d47f48d0cfed7a2d9ecc6ad1be6847225ef
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42359884"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398495"
 ---
-# <a name="contact-support-for-bhutan"></a><span data-ttu-id="428a8-103">針對不丹連絡客戶支援</span><span class="sxs-lookup"><span data-stu-id="428a8-103">Contact support for Bhutan</span></span>
+# <a name="contact-support-for-bhutan"></a><span data-ttu-id="afe9e-103">支援不丹的連絡人</span><span class="sxs-lookup"><span data-stu-id="afe9e-103">Contact support for Bhutan</span></span>
 
-<span data-ttu-id="428a8-104">[尋找另一個國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="428a8-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="afe9e-104">[尋找其他國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="afe9e-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="428a8-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="428a8-105">Phone number</span></span>
-<span data-ttu-id="428a8-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="428a8-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="afe9e-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="afe9e-105">Phone number</span></span>
+<span data-ttu-id="afe9e-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="afe9e-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="428a8-107">小時</span><span class="sxs-lookup"><span data-stu-id="428a8-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="428a8-108">帳單支援：</span><span class="sxs-lookup"><span data-stu-id="428a8-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="afe9e-107">小時</span><span class="sxs-lookup"><span data-stu-id="afe9e-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="afe9e-108">帳單支援：</span><span class="sxs-lookup"><span data-stu-id="afe9e-108">Billing Support:</span></span>
 
-<span data-ttu-id="428a8-109">英文： 週一至週五上午 9 點-下午 5 點</span><span class="sxs-lookup"><span data-stu-id="428a8-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="afe9e-109">英文：週一至週五上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="afe9e-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="428a8-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="428a8-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="afe9e-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="afe9e-110">Technical Support:</span></span>
 
-<span data-ttu-id="428a8-111">英文： 每週 7 天，每天 24 小時</span><span class="sxs-lookup"><span data-stu-id="428a8-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="afe9e-111">英文：每週7天、每天24小時</span><span class="sxs-lookup"><span data-stu-id="afe9e-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="428a8-112">國際電話費用</span><span class="sxs-lookup"><span data-stu-id="428a8-112">International call charges apply</span></span>
+<span data-ttu-id="afe9e-112">國際通話費用適用</span><span class="sxs-lookup"><span data-stu-id="afe9e-112">International call charges apply</span></span>

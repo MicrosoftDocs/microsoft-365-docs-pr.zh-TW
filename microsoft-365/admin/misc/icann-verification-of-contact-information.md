@@ -13,28 +13,29 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0413dcce-26be-4b8c-b3fa-73ac1ac4fb35
 ROBOTS: NOINDEX
 description: 瞭解如何驗證您的連絡人資訊，使其符合 ICANN 法規。
-ms.openlocfilehash: c9a663a5795a542dfac01f7d4d29e7a3e76d16c9
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: e96ae69af282af84595283a431ccb73f869f1454
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212230"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399347"
 ---
-# <a name="icann-verification-of-contact-information"></a><span data-ttu-id="9cc63-103">連絡人資訊的 ICANN 驗證</span><span class="sxs-lookup"><span data-stu-id="9cc63-103">ICANN Verification of Contact Information</span></span>
+# <a name="icann-verification-of-contact-information"></a><span data-ttu-id="25f9f-103">連絡人資訊的 ICANN 驗證</span><span class="sxs-lookup"><span data-stu-id="25f9f-103">ICANN Verification of Contact Information</span></span>
 
-<span data-ttu-id="9cc63-104">當您購買網域或變更網域的連絡人資訊時，註冊機構必須用來驗證您的連絡人資訊，以符合 ICANN 法規。</span><span class="sxs-lookup"><span data-stu-id="9cc63-104">When you purchase a domain or make changes to the contact information for a domain, the registrar is required to validate your contact information to comply with ICANN regulations.</span></span>
+<span data-ttu-id="25f9f-104">當您購買網域或變更網域的連絡人資訊時，註冊機構必須用來驗證您的連絡人資訊，以符合 ICANN 法規。</span><span class="sxs-lookup"><span data-stu-id="25f9f-104">When you purchase a domain or make changes to the contact information for a domain, the registrar is required to validate your contact information to comply with ICANN regulations.</span></span>
 
-<span data-ttu-id="9cc63-105">為了進行驗證，會將電子郵件傳送至報名者的位址。</span><span class="sxs-lookup"><span data-stu-id="9cc63-105">For validation, an email is sent to the registrant's address.</span></span>
+<span data-ttu-id="25f9f-105">為了進行驗證，會將電子郵件傳送至報名者的位址。</span><span class="sxs-lookup"><span data-stu-id="25f9f-105">For validation, an email is sent to the registrant's address.</span></span>
 
- <span data-ttu-id="9cc63-106">**若要驗證您的連絡人資訊，請選取驗證電子郵件中的連結。**</span><span class="sxs-lookup"><span data-stu-id="9cc63-106">**To verify your contact information, select the link in the verification email.**</span></span> <span data-ttu-id="9cc63-107">如果網域擁有者未驗證電子郵件地址，則會暫停網域。</span><span class="sxs-lookup"><span data-stu-id="9cc63-107">If the domain owners don't verify the the email address, the domain will be suspended.</span></span> <span data-ttu-id="9cc63-108">然後，移至系統管理中心的 [[網域] 頁面](https://admin.microsoft.com/adminportal/home?ref=Domains)，並檢查您的網域狀態。</span><span class="sxs-lookup"><span data-stu-id="9cc63-108">Then, go to the [Domains page](https://admin.microsoft.com/adminportal/home?ref=Domains) in the admin center and check your domain status.</span></span>
+ <span data-ttu-id="25f9f-106">**若要驗證您的連絡人資訊，請選取驗證電子郵件中的連結。**</span><span class="sxs-lookup"><span data-stu-id="25f9f-106">**To verify your contact information, select the link in the verification email.**</span></span> <span data-ttu-id="25f9f-107">如果網域擁有者未驗證電子郵件地址，則會暫停網域。</span><span class="sxs-lookup"><span data-stu-id="25f9f-107">If the domain owners don't verify the the email address, the domain will be suspended.</span></span> <span data-ttu-id="25f9f-108">然後，移至系統管理中心的 [[網域] 頁面](https://admin.microsoft.com/adminportal/home?ref=Domains)，並檢查您的網域狀態。</span><span class="sxs-lookup"><span data-stu-id="25f9f-108">Then, go to the [Domains page](https://admin.microsoft.com/adminportal/home?ref=Domains) in the admin center and check your domain status.</span></span>
 
-<span data-ttu-id="9cc63-109">電子郵件會如下所示：</span><span class="sxs-lookup"><span data-stu-id="9cc63-109">The email will look like this:</span></span>
+<span data-ttu-id="25f9f-109">電子郵件會如下所示：</span><span class="sxs-lookup"><span data-stu-id="25f9f-109">The email will look like this:</span></span>
 
 ![電子郵件範例](../../media/8bf27c08-510c-4d49-b152-8d047d038f1f.jpg)
 
