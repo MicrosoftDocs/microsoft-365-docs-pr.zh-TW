@@ -14,24 +14,25 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '瞭解流量分析如何連接至 API，並提供各種 Microsoft 365 服務的每月使用趨勢。  '
-ms.openlocfilehash: 2c39edd66bda19233a67c4623044ffc9e0e8046d
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 6b0b005e6e07e52731a84490a6df7c9ead614321
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011768"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402043"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 使用情況分析資料模型
 
 ## <a name="data-for-the-microsoft-365-usage-analytics-tables"></a>Microsoft 365 使用方式分析方格的資料
 
-Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 API 是預覽版，可在 `https://reports.office.com/pbi/v1.0/\<tenantid\>` (將 \<租用戶識別碼\> 取代為您的租用戶 GUID) 存取。 
+Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs 位於預覽中，且可在中存取 `https://reports.office.com/pbi/v1.0/\<tenantid\>` （ \<tenant id\> 以您的租使用者 GUID 取代）。 
   
 > [!NOTE]
 > 如需詳細資訊，請參閱使用 microsoft [Graph 中的 microsoft 365 使用量報告](https://go.microsoft.com/fwlink/p/?linkid=864336)。 

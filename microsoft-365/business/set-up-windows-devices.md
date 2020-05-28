@@ -20,17 +20,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 瞭解如何設定執行 Windows 10 Pro for Microsoft 365 商務版使用者的 Windows 裝置，以啟用集中式管理及安全性控制。
-ms.openlocfilehash: efe81a5547496f502232e1db2f3f092165475641
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ecd9f5aa348d29d34e77061657619c015b09c41a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635445"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402951"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>為 Microsoft 365 商務版使用者設定 Windows 裝置
 
@@ -88,9 +89,9 @@ ms.locfileid: "43635445"
   
    ![Click Join this device to Azure Active Directory](../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
-5. 在 [**讓您登入**] 頁面上，輸入您\> **下一個**工作或學校帳戶。
+5. 在 [**讓您登入**] 頁面上，輸入您 \> **下一個**工作或學校帳戶。
   
-   在 [**輸入密碼**] 頁面上，輸入\>您的密碼登**入**。
+   在 [**輸入密碼**] 頁面上，輸入您的密碼登 \> **入**。
   
    ![Enter your work or school email on the Let's get you signed in page](../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
@@ -104,7 +105,7 @@ ms.locfileid: "43635445"
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>驗證裝置已連線到 Azure AD
 
-若要驗證您的同步處理狀態，請在 [**設定**] 中的 [**存取公司或學校**] \<頁面上\> ，按一下 [**已連線到**_ 組織名稱 _] 區域以顯示按鈕**資訊**並**中斷**連線。 按一下 [**資訊**] 以取得同步處理狀態。 
+若要驗證您的同步處理狀態，請在 [**設定**] 中的 [**存取工作或學校**] 頁面上，按一下 [**已連線到**_ \<organization name\> _ **]** 區域，以公開按鈕**資訊**並中斷連線。 按一下 [**資訊**] 以取得同步處理狀態。 
   
 在 [同步處理狀態] 頁面上，按一下 [同步處理] 將最新的行動裝置管理原則下載到 PC 上。
   
@@ -116,7 +117,7 @@ ms.locfileid: "43635445"
 
 請確認您的 Azure AD 加入 Windows 10 裝置已升級到 Windows 10 商務版，成為 Microsoft 365 商務版 Premium 訂閱的一部分。
   
-1. 移至 [**設定** \> **系統** \> **]。**
+1. 移至 [**設定** \> **系統**] \> ** **。
     
 2. 確認該版本顯示**Windows 10 商務****版**。
     
@@ -128,4 +129,4 @@ ms.locfileid: "43635445"
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>如需設定及使用 Microsoft 365 商務版 Premium 的詳細資訊
 
-[Microsoft 365 商務用訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[商務用 Microsoft 365 訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

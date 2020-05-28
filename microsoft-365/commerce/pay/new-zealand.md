@@ -9,29 +9,30 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 學習如何傳送帳單的付款。
+description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 657a97351180b35d1ea58afb6806fbadefcef604
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4b273177c32cf870a4df4687e0b545124796832b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239607"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401651"
 ---
 # <a name="payment-information-for-new-zealand"></a>紐西蘭的付款資訊
 
-[尋找另一個國家或地區](../billing-and-payments/pay-for-your-subscription.md)。
+[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。
 
-請付元只和參考發票轉接上您的付款匯款中。
+請只支付 NZD，並在您的付款匯款中支付參考發票號碼。
 
-## <a name="electronic-funds-transfer"></a>匯款
+## <a name="electronic-funds-transfer"></a>電子基金轉移
 
-**銀行：** Citibank  
-**銀行程式碼：** 31  
-**分支碼：** 2840年  
+**銀行：** 花旗 銀行  
+**銀行代號：** 31  
+**分支程式碼：** 2840  
 **SWIFT 程式碼：** CITINZ2X  
-**尾碼 （3 位數字）：** 004    
-**尾碼 （2 位數字）：** 04  
+**尾碼（3位數）：** 004    
+**尾碼（2位數）：** 04  
 **帳戶號碼：** 0026181  
-**帳戶名稱：** MICROSOFT 地區銷售 CORP  
+**帳戶名稱：** MICROSOFT 地區銷售公司  

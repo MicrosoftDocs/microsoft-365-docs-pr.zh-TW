@@ -14,15 +14,16 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 瞭解如何管理組織的免費自助註冊訂閱。
-ms.openlocfilehash: 46c77cb32fec4dfa1fb9c3d3f992bd842be1b969
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 81c67292a394c62d6057022babb88aa8796b9b3d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045251"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403243"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>管理自助註冊訂閱
 
@@ -43,7 +44,7 @@ ms.locfileid: "44045251"
 > [!IMPORTANT]
 > 當您刪除自助註冊訂閱時，會封鎖所有使用者存取其資料和電子郵件，以及刪除所有的資料和電子郵件。
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 2. 尋找您要刪除的自助註冊訂閱。 在 [**設定 & 動作**] 區段中，選取 [**刪除訂閱**]。
 3. 在 [**刪除訂閱**] 窗格中，選取核取方塊，然後選取 [**刪除訂閱**]。
 

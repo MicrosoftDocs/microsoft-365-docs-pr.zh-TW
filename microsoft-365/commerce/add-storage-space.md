@@ -18,6 +18,7 @@ ms.collection:
 ms.custom:
 - MAX_CampaignID
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -28,19 +29,19 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: 瞭解如何在 Microsoft 365 訂閱中新增及減少檔存放區。 使用額外的檔案存放區，您可以在 SharePoint 線上及 OneDrive 中儲存更多內容。
-ms.openlocfilehash: 921fd4a232d288971150a3379b138613f009f9dc
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f31495127feb345cccdc792c60333f5fc0c7cc6f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140963"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402675"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>新增您訂閱的儲存空間
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -58,7 +59,7 @@ ms.locfileid: "44140963"
 
 ::: moniker range="o365-germany"
 
-1. 以https://portal.office.de全域或 SharePoint 管理員身分登入，然後選取 [管理] 磚以開啟系統管理中心。 （如果您看到一則訊息，表示您沒有存取此頁面的許可權，則表示您的組織中沒有 Microsoft 365 系統管理員許可權。
+1. 以 https://portal.office.de 全域或 SharePoint 管理員身分登入，然後選取 [管理] 磚以開啟系統管理中心。 （如果您看到一則訊息，表示您沒有存取此頁面的許可權，則表示您的組織中沒有 Microsoft 365 系統管理員許可權。
 
 2. 在左窗格中，選取 [系統**管理中心**] 底下的 [ **SharePoint**]。 如果顯示的是傳統 SharePoint 系統管理中心，請選取頁面上方的 [立即開啟]****，以開啟新的 SharePoint 系統管理中心。
 
@@ -70,7 +71,7 @@ ms.locfileid: "44140963"
 
 ::: moniker range="o365-21vianet"
 
-1. 以https://login.partner.microsoftonline.cn/全域或 SharePoint 管理員身分登入，然後選取 [管理] 磚以開啟系統管理中心。 （如果您看到一則訊息，表示您沒有存取此頁面的許可權，則表示您的組織中沒有 Microsoft 365 系統管理員許可權。
+1. 以 https://login.partner.microsoftonline.cn/ 全域或 SharePoint 管理員身分登入，然後選取 [管理] 磚以開啟系統管理中心。 （如果您看到一則訊息，表示您沒有存取此頁面的許可權，則表示您的組織中沒有 Microsoft 365 系統管理員許可權。
 
 2. 在左窗格中，選取 [系統**管理中心**] 底下的 [ **SharePoint**]。 如果顯示的是傳統 SharePoint 系統管理中心，請選取頁面上方的 [立即開啟]****，以開啟新的 SharePoint 系統管理中心。
 
@@ -107,13 +108,13 @@ ms.locfileid: "44140963"
 
 6. 在 [**此外觀如何？** ] 頁面上，確認您選取的儲存體 gb 數目，然後查看定價資訊，然後選取 **[下一步]**。
 
-7. 在 [**完成順序**] 頁面上，確認 [合計]。 如果您需要進行任何變更，請選取 [**編輯訂單**]。 如果訂單需要信用檢查，請選取此核取方塊。 當您完成時，請選取 [下一張**訂單** \> ]**移至**[系統管理中心]。
+7. 在 [**完成順序**] 頁面上，確認 [合計]。 如果您需要進行任何變更，請選取 [**編輯訂單**]。 如果訂單需要信用檢查，請選取此核取方塊。 當您完成時，請選取 [下一張**訂單**] \> **移至**[系統管理中心]。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 [**帳單** \><a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。  
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。  
 
 2. 在 [**訂閱**] 頁面上，選擇您要新增儲存空間的訂閱，然後選取 [**附加**元件]。
 
@@ -138,7 +139,7 @@ ms.locfileid: "44140963"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
 
 2. 在 [**訂閱**] 頁面上，選擇您要新增儲存空間的訂閱，然後選取 [**附加**元件]。
 
@@ -167,7 +168,7 @@ ms.locfileid: "44140963"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 2. 選擇包含**Office 365 額外檔案儲存空間**附加元件的訂閱。
 
@@ -179,7 +180,7 @@ ms.locfileid: "44140963"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
 
 2. 在 [**訂閱**] 頁面上，選取 [**附加**元件]。
 
@@ -202,7 +203,7 @@ ms.locfileid: "44140963"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
 
 2. 在 [**訂閱**] 頁面上，選取 [**附加**元件]。
 

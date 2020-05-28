@@ -24,12 +24,13 @@ description: 瞭解哪些付款選項可用於商務用 Microsoft 365 訂閱。
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: a1ee158079e30348c3b1f9f26ef0b62160bf9544
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+- AdminSurgePortfolio
+ms.openlocfilehash: 387cc4af038bea572a60176b2c2b400f410aa6ad
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232872"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401759"
 ---
 # <a name="pay-for-your-subscription"></a>支付訂閱費用
 
@@ -58,7 +59,7 @@ ms.locfileid: "44232872"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 2. 找到未付餘額的訂閱。 在 [帳單]**** 區段中，在**有逾期款項的訂閱**旁，選取 [結算餘額]****。
 
@@ -312,4 +313,4 @@ ms.locfileid: "44232872"
 
 [新增、更新或移除信用卡或銀行帳戶](add-update-or-remove-credit-card-or-bank-account.md)
 
-[瞭解您的帳單或發票](understand-your-invoice2.md)
+[認識您的帳單或發票](understand-your-invoice2.md)

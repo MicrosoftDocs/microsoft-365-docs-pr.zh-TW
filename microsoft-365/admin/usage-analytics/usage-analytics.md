@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 深入瞭解您的組織如何採用 Microsoft 365 服務來進行通訊及共同作業。
-ms.openlocfilehash: 3e74160cc2e30dc9337e0203fd82ced98869faf7
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 6619205fb62cce3ba7c62c3df773f650dc125dac
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011756"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402019"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情況分析
 ---
@@ -55,23 +56,23 @@ Microsoft 365 流量分析包含下列各節所詳述的報表數目。
 
 Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上方的索引標籤來進行查看。 顯示在報表上方區段中的月份所有值，都是最新的完整月份。
 
-- **採用** &ndash;會提供採用趨勢的完整摘要。 使用本節中的報告，瞭解您的使用者採用 Microsoft 365 的方式，以及個別服務的整體使用量如何隨月份變更。 您可以瞭解如何啟用使用者、組織中的多少人積極使用 Microsoft 365、傳回使用者的數量，以及第一次使用該產品的數目。
+- **採用** &ndash;提供採用趨勢的完整摘要。 使用本節中的報告，瞭解您的使用者採用 Microsoft 365 的方式，以及個別服務的整體使用量如何隨月份變更。 您可以瞭解如何啟用使用者、組織中的多少人積極使用 Microsoft 365、傳回使用者的數量，以及第一次使用該產品的數目。
 
-- **使用** &ndash;方式提供向內流覽至作用中使用者的數量，以及最近12個月的每一種產品的主要活動。 使用本節中的報告，瞭解貴組織中的人員如何使用 Microsoft 365。
+- **使用** &ndash;可深入查看使用中使用者的數量，以及最近12個月的每一種產品的主要活動。 使用本節中的報告，瞭解貴組織中的人員如何使用 Microsoft 365。
 
-- **通訊** &ndash;您可以立即看到組織中的人員是否喜歡使用團隊、Yammer、電子郵件或 Skype 通話保持聯繫。 您可以觀察您的員工在使用通訊工具時，是否有變化的模式。 
+- **通訊** &ndash;您可以立即查看組織中的人員是否喜歡使用團隊、Yammer、電子郵件或 Skype 通話保持聯繫。 您可以觀察您的員工在使用通訊工具時，是否有變化的模式。 
 
-- 共同作業&ndash; **請參閱貴**組織中的人員如何使用 OneDrive 和 SharePoint 來儲存檔，以及彼此共同作業，以及這些趨勢如何隨月演變。 您也可以查看內部或外部共用的檔數量，以及正在使用的 SharePoint 網站或 OneDrive 帳戶數目，由擁有者及其他合作者分割。
+- 共同作業**Collaboration** &ndash;請參閱貴組織中的人員如何使用 OneDrive 和 SharePoint 來儲存檔，以及彼此共同作業，以及這些趨勢如何隨月演變。 您也可以查看內部或外部共用的檔數量，以及正在使用的 SharePoint 網站或 OneDrive 帳戶數目，由擁有者及其他合作者分割。
 
-- **Storage** &ndash;使用此報告來追蹤適用于信箱、OneDrive 及 SharePoint 網站的雲端儲存空間。
+- **儲存空間** &ndash;使用此報告可追蹤信箱、OneDrive 和 SharePoint 網站的雲端儲存空間。
 
-- **行動** &ndash;追蹤人員和裝置用來連線至電子郵件、小組、Skype 或 Yammer 的用戶端和裝置。
+- **行動性** &ndash;追蹤人員和裝置用來連線至電子郵件、小組、Skype 或 Yammer 的用戶端和裝置。
 
 ## <a name="activation-and-licensing"></a>啟用和授權
 
 「啟用與授權」頁面提供有關 Microsoft 365 啟用的報告;也就是說，有多少使用者已下載和啟用 Office 應用程式，以及您的組織已指派多少個授權。 朝上的月值指的是目前的月，而度量值會反映從當月開始到目前日期的匯總值。
 
-- **啟用** &ndash;追蹤服務方案（例如，適用于企業、Project 和 Visio 的 Microsoft 365 應用程式）在您的組織中啟動。 擁有 Office 授權的每個人員都能在多達五部裝置上安裝產品。 您也可以使用本節中的報告，查看人員已安裝 Office 應用程式的裝置。 請注意，若要啟動計畫，使用者必須安裝應用程式，並以其帳戶登入。
+- **啟用** &ndash;追蹤服務方案（例如，適用于企業、Project 和 Visio 的 Microsoft 365 應用程式）在您的組織中啟用。 擁有 Office 授權的每個人員都能在多達五部裝置上安裝產品。 您也可以使用本節中的報告，查看人員已安裝 Office 應用程式的裝置。 請注意，若要啟動計畫，使用者必須安裝應用程式，並以其帳戶登入。
 
 - **授權** &ndash;此報告包含授權類型、指派每個授權類型的使用者計數，以及每個月的授權指派發佈的概述。 朝上的月值指的是目前的月，而度量值會反映從當月開始到目前日期的匯總值。
 

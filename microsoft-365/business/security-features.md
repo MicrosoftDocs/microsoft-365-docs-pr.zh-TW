@@ -18,17 +18,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 深入瞭解 Microsoft 365 商務版 Premium 隨附的安全性功能，協助保護電腦、電話和平板電腦上的資料。
-ms.openlocfilehash: f6aef84afc76217161dee6b68d626128e0cc15b2
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 839b5481e27591e1762a0d8eb5623f279d6d22dd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165750"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402707"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 商務版安全性和合規性功能
 
@@ -105,11 +106,11 @@ Microsoft 365 商務版中的高級功能可協助您保護您的公司免受網
     
     Exchange Online 封存授權可讓郵件透過連續資料備份輕鬆封存。 它會儲存使用者的所有電子郵件，包括已刪除的專案，以備日後進行探索或還原時使用。 此外，您可以使用不同的保留原則來保留電子郵件資料，以用於訴訟保留、eDiscovery，或符合規範的需求。
     
-- **[敏感度標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
+- **[敏感性標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
    Microsoft 365 商務版 Premium 包含[Azure 資訊保護方案 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 透過這項計畫，您可以建立**靈敏度標籤**，讓您在電子郵件和檔中控制敏感資訊的存取權，例如「不要轉寄」和「不要複製」控制項。 您也可以將機密資訊分類為「機密」，並指定保密資訊在公司外及公司內部共用的方式。 企業級加密易於套用至電子郵件和檔，以將資訊保密。 您也可以安裝 Office 應用程式的 Azure 資訊保護用戶端增益集。 如需詳細資訊，請參閱[Azure 資訊保護統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 若為敏感度標籤，請安裝**AzInfoProtection_UL .exe**。
 
-您可以在安全性&amp;與合規性中心及 Intune 系統管理中心中管理這些功能。 經過一段時間後，簡化的控制項會新增至 Microsoft 365 系統管理中心。
+您可以在安全性與 &amp; 合規性中心及 Intune 系統管理中心中管理這些功能。 經過一段時間後，簡化的控制項會新增至 Microsoft 365 系統管理中心。
   
     
 ## <a name="faq"></a>常見問題集
@@ -118,7 +119,7 @@ Microsoft 365 商務版中的高級功能可協助您保護您的公司免受網
   
 是的，在銷售 Microsoft 365 商務版津貼的所有市場中，都有提供這些功能。
   
-### <a name="how-do-i-find-the-security-amp-compliance-center"></a>如何找到安全性&amp;與合規性中心？
+### <a name="how-do-i-find-the-security-amp-compliance-center"></a>如何找到安全性與 &amp; 合規性中心？
   
 1. 使用您的系統管理員認證登[入 Microsoft 365 商務版 Premium](https://portal.microsoft.com/) 。 
     
@@ -126,4 +127,4 @@ Microsoft 365 商務版中的高級功能可協助您保護您的公司免受網
     
     ![在 Microsoft 365 系統管理中心的左側導覽中，選擇 [系統管理中心]。](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. 選擇 **[ &amp;安全性符合性**] 以&amp;移至 [安全性與合規性中心]。
+3. 選擇 [**安全性 &amp; 符合性**] 以移至 [安全性與 &amp; 合規性中心]。

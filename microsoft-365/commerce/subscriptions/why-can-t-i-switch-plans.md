@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,12 +24,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: 瞭解有時切換方案必須手動完成或通過呼叫支援的原因。
-ms.openlocfilehash: 8b6c4069f2c7f0cfd86981c1001a7211aa298ff7
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 9f48ed56f230802ebd305d9b79e8ad694fadcc4c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943140"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403147"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>為什麼我無法切換商務方案的 Microsoft 365？
 
@@ -41,18 +42,18 @@ ms.locfileid: "43943140"
   
 ::: moniker range="o365-worldwide"
 
- **需要其他內容嗎？** [購買其他訂閱](../buy-another-subscription.md) | [取消您的訂閱](cancel-your-subscription.md) | [訂閱和帳單](../index.yml) | [通話支援](../../admin/contact-support-for-business-products.md)
+ **需要其他內容嗎？** [購買其他訂閱](../buy-another-subscription.md)  | [取消您的訂閱](cancel-your-subscription.md)  | [訂閱和帳單](../index.yml)  | [電話支援](../../admin/contact-support-for-business-products.md)
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **需要其他內容嗎？** [購買其他訂閱](../buy-another-subscription.md) | [取消您的訂閱](cancel-your-subscription.md) | [訂閱和帳單](../index.yml) | [通話支援](../../admin/contact-support-for-business-products.md)
+ **需要其他內容嗎？** [購買其他訂閱](../buy-another-subscription.md)  | [取消您的訂閱](cancel-your-subscription.md)  | [訂閱和帳單](../index.yml)  | [電話支援](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- **需要其他內容嗎？** [購買或試用由世紀](../../admin/services-in-china/buy-or-try-subscriptions.md) | 運作之 Office 365 的訂閱[取消您的訂閱](cancel-your-subscription.md) | [呼叫支援](../../admin/contact-support-for-business-products.md)
+ **需要其他內容嗎？** [購買或試用由世紀](../../admin/services-in-china/buy-or-try-subscriptions.md)  |  運作之 Office 365 的訂閱[取消您的訂閱](cancel-your-subscription.md)  | [電話支援](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 

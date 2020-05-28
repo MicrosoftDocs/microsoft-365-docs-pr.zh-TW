@@ -11,22 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 使用者可以瞭解如何管理其自助購買服務。
-ms.openlocfilehash: 8f141f28c2f1241d19ed34ae234c3b122dd9d69c
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: e8cb319b482ef49090544916b5e76a02083ebf06
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141121"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403255"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助購買 (使用者)
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -37,11 +38,11 @@ ms.locfileid: "44141121"
 
 ## <a name="view-your-subscriptions"></a>查看您的訂閱
 
-您可以查看您購買的所有自助服務購買的訂閱清單。 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+您可以查看您購買的所有自助服務購買的訂閱清單。 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>如何購買更多或減少授權
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 尋找您要購買更多或減少授權的訂閱。
 
@@ -54,7 +55,7 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ### <a name="to-assign-licenses"></a>指派授權
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。
 
 2. 選擇您要指派授權的訂閱。
 
@@ -69,7 +70,7 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ### <a name="to-unassign-licenses"></a>若要取消指派授權
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。
 
 2. 選擇您要為其取消指派授權的產品。
 
@@ -81,7 +82,7 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ## <a name="cancel-a-subscription"></a>取消訂閱
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 找到您要取消的訂閱。
 
@@ -91,7 +92,7 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ## <a name="manage-your-payment-details"></a>管理您的付款詳細資料
 
-1. 在系統管理中心中，移至**帳單** > **& 付款** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">設定檔</a>] 頁面。
+1. 在系統管理中心中，移至**帳單**  >  **& 付款**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">設定檔</a>] 頁面。
 
 2. 從清單中選取帳單設定檔。
 
@@ -104,7 +105,7 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ### <a name="update-an-existing-payment-method"></a>更新現有的付款方式
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">票據 & 付款</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">票據 & 付款</a>] 頁面。
 
 2. 若要編輯現有的支付方式，請從清單中選擇。
 
@@ -114,7 +115,7 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ### <a name="add-a-new-payment-method"></a>新增支付方式
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">票據 & 付款</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">票據 & 付款</a>] 頁面。
 
 2. 選擇 [**新增支付方式**]。
 
@@ -122,7 +123,7 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ## <a name="view-your-invoices"></a>查看您的發票
 
-1. 在系統管理中心中，移至 [**帳單** > 帳單<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& 付款</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**帳單  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& 付款</a>] 頁面。
 
 2. 在 [**發票**] 下，選取您要查看的發票。
 

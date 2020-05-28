@@ -16,6 +16,7 @@ ms.collection:
 - commerce
 ms.custom:
 - SaRA
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,19 +24,19 @@ search.appverid:
 - BEA160
 - GEA150
 description: 瞭解如何升級為新的訂閱。
-ms.openlocfilehash: b0f79233e6a05c2838026093bb0027cd4789b01b
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 2a0dcff5b4326fc75b4e8e4154ee73e0ac17897d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141063"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403171"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升級至不同的方案
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -133,7 +134,7 @@ ms.locfileid: "44141063"
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>您要升級為的計畫不是支援的選項
 
-當您升級計畫時，可供您升級的計畫，會根據您目前計畫中的服務來顯示。 您只能升級至具有相同資料相關服務的計畫，例如 Exchange Online 或 SharePoint 線上，或更高版本的服務。 這可確保在升級\'期間，使用者不會丟失與這些服務相關的資料。
+當您升級計畫時，可供您升級的計畫，會根據您目前計畫中的服務來顯示。 您只能升級至具有相同資料相關服務的計畫，例如 Exchange Online 或 SharePoint 線上，或更高版本的服務。 這可確保在升級期間，使用者不 \' 會丟失與這些服務相關的資料。
 
 如果您的計畫不符合自動升級計畫，您可以改為[手動變更方案](change-plans-manually.md)。 您也可以尋求協助的[支援](../../admin/contact-support-for-business-products.md)。
 

@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: 瞭解如何疑難排解 Microsoft 365 使用方式分析範本應用程式的問題。
-ms.openlocfilehash: 7164aa246a79a8d8c5aa50d995b53b6221003c01
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 4696dd0c5140cdc110781c226819fc64a90fae1b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212146"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402031"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Microsoft 365 流量分析疑難排解
 
@@ -39,7 +40,7 @@ ms.locfileid: "43212146"
   
  **原因：** 在您可以連線至應用程式之前，您必須訂閱 Microsoft 365 系統管理中心的資料。 若未執行此步驟，則即使您提供 Microsoft 365 租使用者識別碼，也無法連線至範本應用程式。 
   
- **若要修正此錯誤：** 若要訂閱資料，請移至 [系統管理中心\> ]**報告** \>的<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用狀況</a>，並在主要儀表板頁面上找到 [Microsoft 365 流量分析] 磚。 選取 [**開始**使用] 按鈕，然後在所開啟的 [**報告**] 窗格中，開啟 [**讓資料可365用於 Power BI 的流量分析**] 設定及 [**儲存**]。
+ **若要修正此錯誤：** 若要訂閱資料，請移至 [系統管理中心] \> **報告**的 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用狀況</a>，並在主要儀表板頁面上找到 [Microsoft 365 流量分析] 磚。 選取 [**開始**使用] 按鈕，然後在所開啟的 [**報告**] 窗格中，開啟 [**讓資料可365用於 Power BI 的流量分析**] 設定及 [**儲存**]。
   
 ## <a name="we-are-processing-your-data"></a>我們正在處理您的資料
 
@@ -67,7 +68,7 @@ ms.locfileid: "43212146"
   
  **原因：** 租使用者識別碼為 guid，且其格式必須為 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx （xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx）。 如果您在租用戶輸入方塊中輸入任何其他字串，就會收到這則錯誤訊息。 
   
- **若要修正此錯誤：** 移至 [系統管理中心\> ]**報告** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用狀況</a>，並在主要儀表板頁面上找到 [Microsoft 365 流量分析] 磚。 租用戶識別碼會列在磚當中。 您可以從這裡複製並貼到對話方塊中，以連接至範本應用程式。 
+ **若要修正此錯誤：** 移至 [系統管理中心] \> **報告** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用狀況</a>，並在主要儀表板頁面上找到 [Microsoft 365 流量分析] 磚。 租用戶識別碼會列在磚當中。 您可以從這裡複製並貼到對話方塊中，以連接至範本應用程式。 
   
 ## <a name="the-tenant-id-you-provided-is-not-recognized-by-our-system"></a>我們的系統無法辨識您提供的租用戶識別碼
 
@@ -77,7 +78,7 @@ ms.locfileid: "43212146"
   
  **原因：** 您提供的租使用者識別碼無效或不存在。 
   
- **若要修正此錯誤：** 移至 [系統管理中心\> ]**報告** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用狀況</a>，並在主要儀表板頁面上找到 [Microsoft 365 流量分析] 磚。 租用戶識別碼會列在磚當中。 您可以從這裡複製並貼到對話方塊中，以連接至範本應用程式。 
+ **若要修正此錯誤：** 移至 [系統管理中心] \> **報告** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用狀況</a>，並在主要儀表板頁面上找到 [Microsoft 365 流量分析] 磚。 租用戶識別碼會列在磚當中。 您可以從這裡複製並貼到對話方塊中，以連接至範本應用程式。 
   
 ## <a name="please-re-enter-your-credentials-to-sign-in-to-power-bi-again"></a>請重新輸入您的認證以再次登入 Power BI
 

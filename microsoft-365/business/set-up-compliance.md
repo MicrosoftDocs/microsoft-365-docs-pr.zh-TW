@@ -17,16 +17,17 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: 設定規范功能以避免資料遺失，並協助保護您的和客戶的敏感資訊。
-ms.openlocfilehash: a3405207cd7d2d6565807ef0f3a51acbcb80409a
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 9b900367c22ec5bb5c2719af63049045ecd5e466
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165730"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402687"
 ---
 # <a name="set-up-compliance-features"></a>設定合規性功能
 
@@ -46,7 +47,7 @@ DLP 隨附許多可用於許多不同地區設定的現成原則範本。 例如
     
 若要將信箱設為訴訟暫止狀態，請在系統管理中心：
     
-1. 在左側導覽中，移至 [**使用者** \> ] [作用中**使用者**]。
+1. 在左側導覽中，移至 [**使用者**] [作用中 \> **使用者**]。
     
 2. 選取您要對其信箱進行訴訟暫止的使用者。 在 [使用者] 窗格中，展開 [**郵件設定**]，然後按一下 [**其他設定**] 旁的 [**編輯 Exchange 屬性**]。
     

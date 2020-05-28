@@ -1,5 +1,5 @@
 ---
-title: 瞭解您的帳單或發票
+title: 認識您的帳單或發票
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,19 +13,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 瞭解如何閱讀和瞭解 Microsoft 商務產品的帳單或發票。
 keywords: 計費帳戶、組織資訊、發票
-ms.openlocfilehash: 25e9f2865c5970d11fac14d9427cb54374884541
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: 17cfba93e8d892081900f6fcefb4504fb553b5bf
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232814"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402639"
 ---
-# <a name="understand-your-bill-or-invoice"></a>瞭解您的帳單或發票
+# <a name="understand-your-bill-or-invoice"></a>認識您的帳單或發票
 
 ::: moniker range="o365-21vianet"
 
@@ -42,7 +42,7 @@ ms.locfileid: "44232814"
 
 第一頁的頂端會識別負責付款的人員、計費傳送至的人員，以及費用的摘要。
 
-| 術語 | 描述 |
+| 術語 | 說明 |
 | --- | --- |
 | 銷售至 |用來識別負責付款之法人的名稱和位址的帳單帳戶。 您可以在 [<a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">帳單帳戶</a>] 頁面上管理此資訊，您可以在其中找到帳戶合約和管理角色和許可權。 |
 | 付款人 |識別接收發票的人員。 此資訊可在 [<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">帳單設定檔</a>] 頁面上管理。 計費設定檔也會顯示在 [線上發票] 頁面上的 [**發票摘要**] 區段中。 若要深入瞭解計費設定檔，以及如何使用它們為您的組織建立更靈活的計費選項，請參閱[Manage 計費設定檔](manage-billing-profiles.md)。 |
@@ -55,7 +55,7 @@ ms.locfileid: "44232814"
 
 **計費摘要**會顯示自上次計費期間、所套用的任何貸方、稅金和到期總額的費用摘要。
 
-| 術語 | 描述 |
+| 術語 | 說明 |
 | --- | --- |
 | 收費|為此帳單期限購買的產品總數，以及其相關的費用和稅款。 匯總購買以提供您的帳單的簡潔觀點。 |
 | 參與名單 |您從傳回獲得的學分 |
@@ -67,7 +67,7 @@ ms.locfileid: "44232814"
 
 [費用] 頁面會顯示依產品細分的成本。 針對 Azure 客戶，費用可能會依發票區段進行組織。 如需有關發票區段如何搭配 Azure 產品使用的詳細資訊，請參閱[您的 Microsoft 客戶合約計費帳戶快速入門](https://docs.microsoft.com/azure/billing/billing-mca-overview)中的 [[發票] 區段](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections)。 在每個產品訂單內，成本會依服務系列細分。
 
-| 術語 |描述 |
+| 術語 |說明 |
 | --- | --- |
 | 單價 | 用於計算費用的服務有效單價（以定價幣種）。 這項價格對於產品、服務系列、計量和服務都是唯一的。 |
 | 數量 | 計費期間所購買或消耗的數量 |

@@ -17,17 +17,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: 在 Windows 10 裝置上驗證 Microsoft 365 商務高級應用程式保護設定，並確認使用者無法將公司資料複製到個人檔案或非受管理的應用程式。
-ms.openlocfilehash: 20b2e43ae53486c046440ff1066d241ec9661888
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 589d2fc25cc1425a775523595881660cc03e152e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635737"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403383"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>驗證 Windows 10 PC 上的 App 保護設定
 
@@ -37,11 +38,11 @@ ms.locfileid: "43635737"
   
  **驗證連線設定**
   
-1. 使用 microsoft 365 商務版認證登入並聯機至 Azure AD 後，如[設定 microsoft 365 商務版使用者的 Windows 裝置](set-up-windows-devices.md)中所述，請移至 [ **windows 設定** \> **帳戶** \> ]，**存取工作或學校**。 選擇 [**連線\<至租\>使用者名稱 Azure AD**]，然後選擇 [**資訊**]。
+1. 使用 microsoft 365 商務版認證登入並聯機至 Azure AD 後，如[設定 microsoft 365 商務版使用者的 Windows 裝置](set-up-windows-devices.md)中所述，請移至 [ **windows 設定** \> **帳戶**]， \> **存取工作或學校**。 選擇 [**連線到 \<tenant name\> Azure AD**]，然後選擇 [**資訊**]。
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
-2. 在 [**由** \<租使用者名稱\>管理] 頁面上，您可以看到包含**管理伺服器位址**的連線**資訊**，如下圖所示。 
+2. 在 [**管理者**] \<tenant name\> 頁面上，您可以看到包含**管理伺服器位址**的連線**資訊**，如下圖所示。 
     
     ![Managed by page shows connection info of the device manager URL.](../media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
@@ -67,7 +68,7 @@ ms.locfileid: "43635737"
     
 2. 在 [**存取工作或學校**] 底下，選擇 **[連接]**。
     
-3. 在 [**設定公司或學校帳戶] 對話方塊** \>的 [登**入] 中**輸入您的 Microsoft 365 商務版認證。
+3. 在 [**設定公司或學校帳戶] 對話方塊**的 [登入] 中輸入您的 Microsoft 365 商務版認證 \> ** **。
     
 4. 在 [**存取公司或學校**] 頁面上，選擇 [**公司或學校帳戶**]，然後選擇 [**資訊**]。
     

@@ -11,22 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 系統管理員可以瞭解如何管理組織中使用者所進行的自我服務購買。
-ms.openlocfilehash: 991dc87c40f41a6cbd2f1c08d4bc72bbb34d28f1
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 562e0e26d9ca7d10d71a46b8cf2d87c487c1b529
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141147"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403267"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助購買 (管理員)
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -36,7 +37,7 @@ ms.locfileid: "44141147"
 
 ## <a name="view-self-service-subscriptions"></a>查看自助訂閱
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 在 [**精煉結果**] 旁邊的 [**帳戶類型**] 下拉式清單中，選擇 [**自助**]。
 
@@ -44,7 +45,7 @@ ms.locfileid: "44141147"
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>查看誰有自助購買訂閱的授權
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。
 
 2. 選擇 [篩選] 圖示，然後選擇 [**自我服務**]。
 
@@ -63,7 +64,7 @@ ms.locfileid: "44141147"
 
 您可以使用**MSCommerce** PowerShell 模組來：
 
-- 查看**AllowSelfServicePurchase**參數值&mdash;的預設狀態，不論它是由產品啟用或停用
+- 查看**AllowSelfServicePurchase**參數值的預設狀態， &mdash; 不論它是由產品啟用或停用
 - 查看適用產品的清單，以及是否啟用或停用自助購買功能
 - 查看或修改特定產品的目前設定，以啟用或停用
 
@@ -75,7 +76,7 @@ ms.locfileid: "44141147"
 
 1. 使用您的全域系統管理員帳戶或計費系統管理員帳戶登入系統<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>。
 
-2. 移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a>] 頁面。
+2. 移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a>] 頁面。
 
 3. 尋找並選擇您想要購買的產品，然後選擇 [**購買**]。
 

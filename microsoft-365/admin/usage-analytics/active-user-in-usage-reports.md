@@ -11,18 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: 深入瞭解 Microsoft 365 流量分析、活動報告和採用度量的使用者。
-ms.openlocfilehash: 2117bae32913ad713318c1df25be66d6ef6859e5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b4834d96b2f762d77f0d27309cf8c71a782b0dcd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631788"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402879"
 ---
 # <a name="active-user-in-microsoft-365-usage-reports"></a>Microsoft 365 使用方式報告中的作用中使用者
 
@@ -45,7 +46,7 @@ Microsoft [365 使用方式分析](usage-analytics.md)的 microsoft 365 產品�
 
 [Microsoft 365 流量分析](usage-analytics.md)包含與使用中的使用者相關的其他採用量值，以顯示隨時間的產品採用方式。 在選取的月、年及產品中，這些計量值都是有效的，並且定義如下。 
   
-|**度量**|**描述**|
+|**計量**|**描述**|
 |:-----|:-----|
 |EnabledUsers  <br/> |在月份中啟用要使用產品的使用者人數。  <br/> |
 |ActiveUsers  <br/> |在當月使用中的使用者人數。  <br/> |

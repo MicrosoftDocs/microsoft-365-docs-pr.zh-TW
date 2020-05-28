@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: 瞭解如何在瀏覽器和 Power BI Desktop 中自訂報告。
-ms.openlocfilehash: 4f0c85802ecb5db9c57add2fa6dd561827e8fa22
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 121a9be4a83570b7fcf358c48bf558d3bc7c1131
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140706"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402927"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>在 Microsoft 365 使用方式分析中自訂報告
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -49,7 +50,7 @@ Microsoft 365 流量分析提供 Power BI 中的儀表板，可深入瞭解使�
   
 1. 在 [**啟用/授權**] 報告中，按一下 [**啟用**] 索引標籤。
     
-2. 按一下上方的 [**編輯**] 按鈕，然後按一下 [Power BI ![ ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) ] 按鈕中的 [其他頁面] 按鈕，以進入編輯模式。 
+2. 按一下上方的 [**編輯**] 按鈕，然後按一下 [ ![ Power BI] 按鈕中的 [其他頁面] 按鈕，以進入編輯模式 ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 。 
     
     ![按一下右上方導覽中的 [編輯報告]](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
@@ -69,7 +70,7 @@ Microsoft 365 流量分析提供 Power BI 中的儀表板，可深入瞭解使�
   
 1. 使用左導覽，然後按一下 [ **Yammer** ] 索引標籤移至 [**產品使用方式**] 報告。
     
-2. 按一下 Power BI ![ ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)和**edit**中的 [更多頁面] 按鈕，切換至編輯模式。 
+2. 按一下 ![ POWER BI ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 和**edit**中的 [更多頁面] 按鈕，切換至編輯模式。 
     
 3. 在頁面底部，按一下 ![Power BI 中的 [新增頁面] 按鈕](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 以建立新的頁面。
   
@@ -95,7 +96,7 @@ Microsoft 365 流量分析提供 Power BI 中的儀表板，可深入瞭解使�
 
     ![選取 Yammer 核取方塊](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. 在視覺效果的清單下方，按一下 [ **Format** Power BI ![Visualizaions](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)] 中的格式圖示格式圖示。
+12. 在視覺效果的清單下方，按一下 [ **Format** ![ Power BI Visualizaions] 中的格式圖示格式圖示 ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) 。
 
 13. 按月，展開 [標題]，然後將 [**標題] 文字**值變更為 [**第一次 Yammer] 使用者**。
     
@@ -113,9 +114,9 @@ Microsoft 365 流量分析提供 Power BI 中的儀表板，可深入瞭解使�
 
 您可以開始直接連線至 Microsoft 365 的 ODATA 報告 APIs，以加上這些報告。
   
-1. 移至 [**取得資料** \> ]**其他** \> **ODATA** \>摘要**Connect**。
+1. 移至 [**取得資料** \> ]**其他** \> **ODATA**摘要 \> **Connect**。
     
-2. 在 [URL] 視窗中，<i></i>輸入\<"\>HTTPs://reports.office.com/pbi/v1.0/tenantid"
+2. 在 [URL] 視窗中，輸入 "HTTPs:// <i></i> reports.office.com/pbi/v1.0/ \<tenantid\> "
     
     **附注：** 報告 APIs 是在預覽中，且在實際執行之前必須變更。 
   

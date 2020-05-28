@@ -1,5 +1,5 @@
 ---
-title: 管理帳單帳戶
+title: 管理計費帳戶
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -11,18 +11,18 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 深入瞭解記帳帳戶及管理方式。
-ms.openlocfilehash: ce7b9d2a2cc35261c7e6e3f5547574ea9c49e658
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 87cc861ab48b99106a3cbd50d8ded91205ffb0a2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826264"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402603"
 ---
-# <a name="manage-billing-accounts"></a>管理帳單帳戶
+# <a name="manage-billing-accounts"></a>管理計費帳戶
 
 當您註冊以嘗試或購買 Microsoft 產品時，即會建立帳單帳戶。 您可以使用您的計費帳戶來管理帳戶設定、發票、支付方式及購買。 您可以存取多個帳單帳戶。 例如，您已直接註冊 Microsoft 365，或您可以存取組織的企業合約、Microsoft 產品 & 服務合約或 Microsoft 客戶合約。 針對上述每個案例，您會有個別的帳單帳戶。
 
@@ -40,7 +40,7 @@ Microsoft 365 admin center 目前支援下列類型的計費帳戶：
 
 下表列出您在 [**帳單帳戶**詳細資料] 頁面中看到的重要字詞。
 
-| 欄位名稱 | 描述 |
+| 欄位名稱 | 說明 |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 銷售位址 | 負責支付及識別發票上的法律法人。 除非您選擇在購買過程中提供替代的寄送位址，否則這裡提供的位址是用來判斷您的稅率。 如需詳細資訊，請參閱[稅務資訊](billing-and-payments/tax-information.md)。 |
 | 段 | 可識別您組織之業務區段的唯讀欄位（商業性、教育、政府或非贏利）。 |
@@ -66,9 +66,9 @@ Microsoft 365 admin center 目前支援下列類型的計費帳戶：
 
 您可以讓其他人透過角色和許可權，存取 Microsoft 365 系統管理中心內的帳單帳戶。 只有帳單帳戶擁有者可以授與帳單帳戶的存取權。 您可以將下列角色之一指派給使用者：
 
-- **帳單帳戶擁有** &mdash;者可以指派許可權、編輯帳戶、簽署合約和 view accounts。
-- **帳單帳戶參與者** &mdash;可以編輯帳戶、簽署協定和查看帳戶。
-- **帳單帳戶讀者** &mdash;可以查看帳戶。
+- **帳單帳戶擁有** &mdash; 者可以指派許可權、編輯帳戶、簽署協定及查看帳戶。
+- **帳單帳戶參與者** &mdash;可以編輯帳戶、簽署協定及查看帳戶。
+- **帳單帳戶讀取器** &mdash;可以查看帳戶。
 
 > [!Note]
 > 計費帳戶角色只適用于帳單帳戶，不適用於其他 Microsoft 365 系統管理中心案例。

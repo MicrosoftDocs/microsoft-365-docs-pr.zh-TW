@@ -17,16 +17,17 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何將您的業務移至 Microsoft 365 商務版，從 Office 365 E3。
-ms.openlocfilehash: 0d23e293d599f5b9d6c829d101f2395d6ac21215
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 23d024ed7f18fe6a5f5dc9b59e3ad20069dc3e6a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633184"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402235"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>從 Office 365 E3 遷移至 Microsoft 365 商務版 Premium 
 
@@ -41,7 +42,7 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 | 功能    | Microsoft 365 商務版 Premium 中的支援    | Office 365 E3 中的支援 | 
 |:-------|:-----|:-----|
 | **內部部署**        | | | 
-| Office app<sup>1</sup>    | Microsoft 365 商務應用程式    | 適用于企業的 Microsoft 365 應用程式 | 
+| Office app<sup>1</sup>    | Microsoft 365 Apps 商務版    | Microsoft 365 Apps 企業版 | 
 | **雲端生產力應用程式**        | | | 
 | Exchange Online 和 Outlook    | 每個信箱 50 GB 儲存空間限制和 Exchange Online 封存數目不受限制    | 每個信箱 100 GB 儲存空間限制和 Exchange Online 封存數目不受限制 | 
 | Teams    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Office 365 E3](../media/check-mark.png) | 

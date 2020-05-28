@@ -11,23 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 瞭解如何使用 Microsoft 關閉您的帳戶。
-ms.openlocfilehash: e41d11502b0c0f738cc23405c387bd5fca1cb0fe
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f399a1ba4d67abf5982c111e9b915f02324150a5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141275"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402175"
 ---
 # <a name="close-your-account"></a>關閉您的帳戶
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ ms.locfileid: "44141275"
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>步驟2：取消所有作用中的訂閱
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 如果 [訂閱] 清單位於**表格**視圖中，請在右側選取 [**卡片**]。
 
@@ -59,7 +59,7 @@ ms.locfileid: "44141275"
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>步驟3：刪除所有已停用的訂閱
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 如果 [訂閱] 清單位於**表格**視圖中，請在右側選取 [**卡片**]。
 
@@ -73,7 +73,7 @@ ms.locfileid: "44141275"
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>步驟4：停用多重要素驗證
 
-1. 在系統管理中心中，移至 [**使用者** > 作用中<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">使用者</a>] 頁面。
+1. 在系統管理中心中，移至 [**使用者**作用中  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">使用者</a>] 頁面。
 
 2. 選擇**多重要素驗證**。
 

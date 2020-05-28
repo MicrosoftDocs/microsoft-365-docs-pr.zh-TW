@@ -19,17 +19,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 瞭解如何設定 Microsoft 365 活動的條件式存取原則，以增加大量額外的安全性。
-ms.openlocfilehash: 26fadecc69486d7931dac069d8f53061592f397f
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: d7c9cfee2ef00e4ebe231a28ccca185c10f53c6b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153759"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403011"
 ---
 # <a name="set-up-conditional-access-policies"></a>設定條件式存取原則
 
@@ -38,10 +39,10 @@ ms.locfileid: "43153759"
 這些原則要求系統管理員和使用者在符合特定條件時，輸入第二種形式的驗證（稱為多重驗證或 MFA）。 例如，如果使用者從不同的國家/地區登入，則可能會認為登入是危險的，而且使用者必須提供其他形式的驗證。 
 
 目前的基準原則包括下列各項：
-- **需要** &ndash;對系統管理員進行 MFA，必須對特權最高的系統管理員角色（包括全域管理員）進行多重要素驗證。
-- 只有在登入危險時 **，使用者才** &ndash;需要使用者的多重要素驗證。 
+- **需要對系統管理員** &ndash; 進行 MFA需要對最具許可權的系統管理員角色（包括全域管理員）進行多重要素驗證。
+- **使用者保護** &ndash;只有在登入危險時，才需要使用者的多重要素驗證。 
 - **封鎖舊版驗證** &ndash;舊版用戶端應用程式和某些新的應用程式不會使用較新、更安全的驗證通訊協定。 這些繼承應用程式可略過條件式存取原則，並對您的環境進行未授權的存取。 這個原則會封鎖不支援條件式存取之用戶端的存取權。 
-- **需要 MFA for Service management** &ndash;才能存取管理工具（包括 Azure 入口網站（您設定基準原則）的多重要素驗證。 
+- **需要 MFA 進行服務管理** &ndash;需要多重要素驗證，以存取管理工具，包含 Azure 入口網站（您設定基準原則的位置）。 
 
 Microsoft 建議您啟用所有的基準原則。 啟用這些原則之後，系統會提示系統管理員和使用者註冊 Azure Multii 要素驗證。
 

@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: 購買新的訂閱以手動變更訂閱，並確保訂閱同時列出並使用中。
-ms.openlocfilehash: fcaa3ebfd9d20fa50c9f37f3366aec9d4dd69103
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 20f5492a816c6c819456ac2ca4aa0f20da24eccd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046189"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403279"
 ---
 # <a name="change-plans-manually"></a>手動變更計畫
 
@@ -53,12 +54,12 @@ OR
 
 **購買新的訂閱與授權：** 請遵循[購買其他 Microsoft 365 for business 訂閱](../buy-another-subscription.md)中的步驟，購買新的訂閱。
 
-請確認您購買的是使用者現在所在組織的訂閱。 例如，檢查您要移動之使用者的電子郵件地址。 如果他們的電子郵件\@位址包括 contoso.com，您必須購買 contoso.com 的新訂閱。
+請確認您購買的是使用者現在所在組織的訂閱。 例如，檢查您要移動之使用者的電子郵件地址。 如果他們的電子郵件地址包括 \@ contoso.com，您必須購買 contoso.com 的新訂閱。
 針對每個您想要移動的使用者，加入一個授權。
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>步驟3：檢查您的新訂閱與授權
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 2. **確認同時列出和使用中的兩個訂閱**您要將使用者移至其中的訂閱，以及您要將使用者移至其中的訂閱，必須一起列出。 如果您第一次檢查時新的訂閱不在那裡，請稍後再試一次。 檢查這兩個訂閱是否都在使用中。 [未列出或未使用中的新訂閱](#the-new-subscription-isnt-listed-or-isnt-active)。
 

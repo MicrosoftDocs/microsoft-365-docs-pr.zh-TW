@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,19 +22,19 @@ search.appverid:
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: 瞭解如何在30天內擴充試用訂閱。
-ms.openlocfilehash: e634c43c1d6399abc3a88438fe410f5a1a19361e
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 50f0548ddcd2eeef36a853cfb08b279cee8095a9
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141249"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402151"
 ---
 # <a name="extend-your-trial"></a>延長試用期
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -41,7 +42,7 @@ ms.locfileid: "44141249"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 2. 在 [**產品**] 頁面上，尋找您要擴充的試用訂閱。 在 [**設定 & 動作**] 區段中，選取 [**擴充試用**]。
 
@@ -51,7 +52,7 @@ ms.locfileid: "44141249"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
 
 2. 在 [**訂閱**] 頁面上，選取您要擴充的試用訂閱，然後在 [到期日] 底下，選取 [**擴充試用**]。
 
@@ -61,7 +62,7 @@ ms.locfileid: "44141249"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
 
 2. 在 [**訂閱**] 頁面上，選取您要擴充的試用訂閱，然後在 [到期日] 底下，選取 [**擴充試用**]。
 

@@ -14,24 +14,25 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: 瞭解如何取得免費試用版或購買 Microsoft 365 的訂閱。
-ms.openlocfilehash: 19529192e2fa48ac081a84e9ad54669c3ef16791
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 28ec622d32c3218238edf9c171b1eb0566a93c60
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141051"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403135"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>試用或購買 Microsoft 365 訂閱
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -50,7 +51,7 @@ Microsoft 365 是完整的解決方案，可結合 Office 365 與 Windows 10 搭
 ::: moniker range="o365-worldwide"
 
 
-1. 登入[https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)admin center，然後移至**帳單** \> **購買服務**。
+1. 登入 admin center [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) ，然後移至**帳單** \> **購買服務**。
 
 2. 在 [**購買服務**] 頁面上，會列出您的組織可使用的訂閱。 選擇您要嘗試或購買的 Microsoft 365 方案。
 
@@ -79,7 +80,7 @@ Microsoft 365 是完整的解決方案，可結合 Office 365 與 Windows 10 搭
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-1. 登入[https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686)admin center，然後移至**帳單** \> **購買服務**。
+1. 登入 admin center [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686) ，然後移至**帳單** \> **購買服務**。
 
 2. 在 [**購買服務**] 頁面上，會列出您的組織可使用的訂閱。 
 
@@ -107,7 +108,7 @@ Microsoft 365 是完整的解決方案，可結合 Office 365 與 Windows 10 搭
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-1. 登入[https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628)admin center，然後移至**帳單** \> **購買服務**。
+1. 登入 admin center [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628) ，然後移至**帳單** \> **購買服務**。
 
 2. 在 [**購買服務**] 頁面上，會列出您的組織可使用的訂閱。 
 

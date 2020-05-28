@@ -20,22 +20,23 @@ ms.custom:
 - MiniMaven
 - MSB365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
-description: 了解可讓您管理使用者如何存取 Office 應用程式保護原則，以及工作從行動裝置的檔案。
-ms.openlocfilehash: 870706103a6c05e2e193c80f7a586eab529bb1e7
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: 深入瞭解保護原則，可讓您管理使用者從行動裝置存取 Office 應用程式和工作檔的方式。
+ms.openlocfilehash: f613e518c3607010cae55443456be9d3ddc3d689
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561493"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403071"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>管理使用者如何在行動裝置上存取 Office 文件
 
- 控制使用者如何透過行動裝置存取 Office 檔案的原則設定預設為**關閉**。 我們建議您接受套用至所有使用者的預設值為建立應用程式原則 Android、 iOS 和 Windows 10 的安裝期間。 設定完成後，您可以建立更多原則。 
+ 控制使用者從行動裝置存取 Office 檔案的原則設定預設為**關閉**。 建議您在設定時接受預設值，以建立適用于所有使用者的 Android、iOS 和 Windows 10 應用程式原則。 設定完成後，您可以建立更多原則。 
   
 ## <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>控制使用者如何透過行動裝置存取 Office 檔案的設定
 
@@ -43,11 +44,11 @@ ms.locfileid: "42561493"
   
 |||
 |:-----|:-----|
-|設定  <br/> |描述  <br/> |
-|需要 PIN 或指紋才能存取 Office App  <br/> |如果**開啟**此設定時，使用者必須提供另一種形式的驗證，除了使用者名稱和密碼，才能在其行動裝置上使用 Office 應用程式。  <br/> |
+|設定  <br/> |說明  <br/> |
+|需要 PIN 或指紋才能存取 Office App  <br/> |若此設定為 [**開啟**]，除了使用者的使用者名稱和密碼以外，使用者還必須提供另一種形式的驗證，才能在其行動裝置上使用 Office 應用程式。  <br/> |
 |在登入失敗達下列次數時重設 PIN  <br/> |為了避免未經授權的使用者隨機猜測 PIN，當達到您指定的輸入錯誤次數時將會重設 PIN。  <br/> |
-|在 Office App 閒置下列時間之後要求使用者重新登入  <br/> |此設定可決定多久使用者可閒置之前提示這些再次登入。  <br/> |
-|拒絕在已進行 JB 或 Root 破解的裝置上存取工作檔案  <br/> |聰明的使用者可能擁有已進行 JB 或 Root 破解的裝置。 這表示使用者可以修改作業系統，這可能導致裝置較容易遭到惡意程式碼。 **此設定時**，會封鎖這些裝置。  <br/> |
-|不允許使用者從 Office 應用程式複製內容到個人應用程式  <br/> |**在**設定時，使用者無法將複製資訊工作檔案中的個人檔案。 如果設定為**關閉**，使用者可以複製資訊工作檔案到個人 app 或個人帳戶。  <br/> |
+|在 Office App 閒置下列時間之後要求使用者重新登入  <br/> |此設定會決定使用者在有多久之後才會收到重新登入的時間。  <br/> |
+|拒絕在已進行 JB 或 Root 破解的裝置上存取工作檔案  <br/> |聰明的使用者可能擁有已進行 JB 或 Root 破解的裝置。 這表示使用者可以修改作業系統，這可讓裝置更容易遭到惡意程式碼攻擊。 當此設定為 [**開啟**] 時，即會封鎖這些裝置。  <br/> |
+|不允許使用者從 Office 應用程式複製內容到個人應用程式  <br/> |當設定為 [**開啟**] 時，使用者無法將工作檔案中的資訊複製到個人檔案。 如果設定為 [**關閉**]，使用者可以將工作檔案中的資訊複製到個人 app 或個人帳戶。  <br/> |
    
 

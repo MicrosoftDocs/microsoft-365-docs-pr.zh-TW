@@ -16,19 +16,20 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 瞭解如何將您的企業從 Microsoft 365 商務版移至 Microsoft 365 E3。
-ms.openlocfilehash: a41b27b91bd049abb2231a397a328f4f53af9500
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6a795d96ccae7e054e7e52d4fd60a4e73b3c71dd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633172"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401987"
 ---
-# <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>從 Microsoft 365 商務版遷移至 Microsoft 365 E3
+# <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>從 Microsoft 365 商務進階版移轉至 Microsoft 365 E3
 
 Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合了最佳的雲端架構應用程式與簡單的裝置管理和安全性，可讓您的員工採取最佳的運作方式。 不過，在某些情況下，您可能需要將 Microsoft 365 商務版訂閱遷移至 Microsoft 365 E3。 
 
@@ -50,7 +51,7 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 |:-------|:-----|:-----|
 | **內部部署**        | | | 
 | Windows 10    | Windows 10 商務版  |     Windows 10 企業版 E3| 
-| Office app *    | [Microsoft 365 商務應用程式](#office-365-business)    | 適用于企業的 Microsoft 365 應用程式 | 
+| Office app *    | [Microsoft 365 Apps 商務版](#office-365-business)    | Microsoft 365 Apps 企業版 | 
 | **雲端生產力應用程式**        | | | 
 | Exchange Online 和 Outlook    | 每個信箱 50 GB 儲存空間限制和 Exchange Online 封存數目不受限制    | 每個信箱 100 GB 儲存空間限制和 Exchange Online 封存數目不受限制 | 
 | Teams    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
@@ -140,7 +141,7 @@ Windows 10 企業版 E3 也包含以硬體為基礎的 Microsoft Edge 隔離的�
 Microsoft 365 商務版特優包含 Windows 10 商務版，您可以使用 Windows AutoPilot 進行安裝。 當您遷移至 Microsoft 365 E3 時，每個使用者授權都會包含 Windows 10 企業版 E3，您也可以使用 Windows Autopilot 進行安裝。
 
 <a name="office-365-business"></a>
-###  <a name="microsoft-365-apps-for-business"></a>Microsoft 365 商務應用程式
+###  <a name="microsoft-365-apps-for-business"></a>Microsoft 365 Apps 商務版
 
 您裝置上安裝的 Microsoft 365 應用程式商務用用戶端將會自動開始使用 Microsoft 365 應用程式的企業版功能。 遷移後，您現在可以使用：
 

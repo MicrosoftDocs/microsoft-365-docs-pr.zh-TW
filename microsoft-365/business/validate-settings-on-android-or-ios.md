@@ -17,17 +17,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: 瞭解如何在 Android 或 iOS 裝置中驗證 Microsoft 365 商務版的應用程式保護設定。
-ms.openlocfilehash: d25a23bc8eb56e05bd74f7bf4658ee9e18dc41f8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d4b8ec3ff3a15c25133b20d437249611530977a5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635717"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403363"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>驗證 Android 或 iOS 裝置上的應用程式保護設定
 
@@ -41,7 +42,7 @@ ms.locfileid: "43635717"
   
 首先，請確定原則套用至您要驗證的應用程式。
   
-1. 在 Microsoft 365 商務版系統[管理中心](https://portal.office.com)中，移至 [**原則** \> ] [**編輯原則**]。
+1. 在 Microsoft 365 商務版系統[管理中心](https://portal.office.com)中，移至 [**原則**] [ \> **編輯原則**]。
     
 2. 針對您在安裝時所建立的設定，選擇 [ **Android 應用程式原則**]，或選擇您建立的其他原則，然後驗證它是否強制適用于 Outlook，例如。 
     
@@ -130,7 +131,7 @@ ms.locfileid: "43635717"
   
 首先，請確定原則套用至您要驗證的應用程式。
   
-1. 在 Microsoft 365 商務版系統[管理中心](https://portal.office.com)中，移至 [**原則** \> ] [**編輯原則**]。
+1. 在 Microsoft 365 商務版系統[管理中心](https://portal.office.com)中，移至 [**原則**] [ \> **編輯原則**]。
     
 2. 針對您在安裝程式所建立的設定，或您已建立的其他原則，選擇**iOS 的應用程式原則**，並確認已針對 Outlook 強制執行。 
     

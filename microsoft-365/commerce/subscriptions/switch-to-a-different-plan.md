@@ -1,5 +1,5 @@
 ---
-title: 切換至不同的 Microsoft 365 for business 方案
+title: 切換到其他的商務用 Microsoft 365 方案
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,6 +16,7 @@ ms.collection:
 - commerce
 ms.custom:
 - SaRA
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,14 +25,14 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: 瞭解如何切換至新的 Microsoft 365 for business 訂閱。
-ms.openlocfilehash: 8682ced4aab6fd1b0cbfc132527e977eabc59306
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: c1216f0eb5069610ea63ca1a81d90243d3ef111d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707496"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403183"
 ---
-# <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>切換至不同的 Microsoft 365 for business 方案
+# <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>切換到其他的商務用 Microsoft 365 方案
 
 當您的業務變更時，或需要更多功能時，您可以切換方案。  
 
@@ -49,25 +50,25 @@ ms.locfileid: "43707496"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[訂閱]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單]**** > [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單]**** > [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
 
 ::: moniker-end
 
 2. 選取 [**切換方案**]，以查看可用的新方案清單。
 
-    [[切換方案] 按鈕](#the-switch-plans-button-isnt-there) | 沒有[看到想要的計畫](#i-dont-see-the-plan-i-want)
+    [[切換方案] 按鈕不存在](#the-switch-plans-button-isnt-there)  | [我看不到想要的計畫](#i-dont-see-the-plan-i-want)
 
 3. 選取計畫，以查看每月的新總成本。 請務必閱讀**重要資訊**，然後選取 **[下一步]** 以取出。
 

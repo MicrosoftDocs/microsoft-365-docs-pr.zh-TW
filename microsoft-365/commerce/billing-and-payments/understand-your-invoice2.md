@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: 瞭解如何轉譯您的 Microsoft 365 for business 帳單或發票上的費用、帳單和付款資訊，以及如何變更採購訂單編號。
-ms.openlocfilehash: bd0204deb34d1fe08ec6391c24df5ab6fe6cc6d6
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: 13eea485a6d748ce8798ddb5075309bec727c6bb
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232790"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402627"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>瞭解適用于商務用 Microsoft 365 的帳單或發票
 
@@ -104,7 +105,7 @@ ms.locfileid: "44232790"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 2. 如果您是在**表格**視圖中，請選取 [**卡片**] 以切換視圖。
 
@@ -118,7 +119,7 @@ ms.locfileid: "44232790"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
 
 2. 選取您要變更的訂閱，然後在 [**付款條件**] 區段中，選取 [**變更付款明細**]。
 
@@ -128,7 +129,7 @@ ms.locfileid: "44232790"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
 
 2. 選取您要變更的訂閱，然後在 [**付款條件**] 區段中，選取 [**變更付款明細**]。
 

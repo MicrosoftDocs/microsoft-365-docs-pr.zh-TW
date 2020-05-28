@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: 購買新的訂閱並確保訂閱已列出且作用中，以手動方式切換 Microsoft 365 的商務訂閱。
-ms.openlocfilehash: f06e6a5f441286cbe048187eea39889772bb4e75
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 6d6f28dc45f1d5c8efc7202f1be718f8517cf12f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707508"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403195"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>手動切換 Microsoft 365 的商務方案
 
@@ -64,19 +65,19 @@ ms.locfileid: "43707508"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[訂閱]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單]**** > [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單]**** > [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
 
 ::: moniker-end
 
@@ -110,19 +111,19 @@ ms.locfileid: "43707508"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
 
 ::: moniker-end
 
@@ -137,25 +138,25 @@ ms.locfileid: "43707508"
   
 5. 針對此使用者不再需要的授權，將開關切換到 [**關閉**] 位置。
 
-6. 在 [**產品授權**] 窗格的底部，選取 [**指派** \> **關閉** \> ] **[關閉]。**
+6. 在 [**產品授權**] 窗格的底部，選取 [**指派** \> **關閉**] [關閉] \> ** **。
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>一次為多位使用者重新指派授權
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [**使用者** \>作用中<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">使用者</a>] 頁面。
+1. 在系統管理中心中，移至 [**使用者**作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">使用者</a>] 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
 
 ::: moniker-end
 

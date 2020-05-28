@@ -9,19 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: None
-search.appverid:
-- MET150
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 description: 深入瞭解新的服務配額功能。
-ms.openlocfilehash: e6fe91ee2c0e2de58b54e40eddba6d3066999e6d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: c8c472fbf30bb898f9a10eca778ee7c668c8c388
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942172"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402411"
 ---
 # <a name="allotment-basics"></a>服務配額基礎
 
@@ -51,4 +49,4 @@ ms.locfileid: "43942172"
 
 ## <a name="getting-started"></a>快速入門
 
-僅限少數客戶可以使用「服務配額」功能的私人預覽。 如果您想要加入，請填寫此表單： [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)。
+僅限少數客戶可以使用「服務配額」功能的私人預覽。 如果您想要加入，請填寫此表單： [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) 。

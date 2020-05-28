@@ -13,24 +13,24 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 瞭解帳單設定檔如何支援發票。
 keywords: 計費設定檔、發票、費用、受管理的費用
-ms.openlocfilehash: f93ca5af11ba416fecd13fcceffe75055a776553
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 64f0f6bf456b1251a2db49aa9c2f7473cb7c885b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140887"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401771"
 ---
 # <a name="manage-billing-profiles"></a>管理帳單設定檔
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -38,11 +38,11 @@ ms.locfileid: "44140887"
 
 計費設定檔包含下列資訊：
 
-- 與設定檔相關之帳單帳戶的**帳單帳戶** &ndash;名稱
-- **支付方式** &ndash;信用卡或轉帳卡、銀行帳戶、支票或電匯卡
-- **連絡人資訊** &ndash;的帳單位址和連絡人名稱
-- 根據帳單帳戶的國家/地區、選擇性的 PO 編號，以及以電子郵件附件形式接收發票的選項的**發票設定** &ndash;貨幣
-- **許可權** &ndash;許可權，可讓您變更帳單設定檔、支付帳單或使用計費設定檔上的付款條件進行購買
+- **計費帳戶** &ndash;設定檔相關的帳單帳戶名稱
+- **付款條件** &ndash;信用卡或借貸卡、銀行帳戶、支票或電匯
+- **連絡人資訊** &ndash;帳單位址和連絡人名稱
+- **發票設定** &ndash;以計費帳戶的國家/地區為基礎的貨幣、選擇性的 PO 編號，以及以電子郵件附件形式接收發票的選項
+- **許可權** &ndash;可讓您變更帳單設定檔、支付帳單或使用計費設定檔中的付款條件進行購買的許可權
 
 使用計費設定檔來控制購買及自訂發票。 每月發票會產生為以帳單設定檔購買的產品。 您可以自訂發票，例如更新採購訂單編號和電子郵件發票偏好設定。
 

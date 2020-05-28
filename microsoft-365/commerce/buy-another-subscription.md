@@ -21,20 +21,22 @@ search.appverid:
 - BEA160
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: '瞭解當您已有訂閱時，如何為您的組織購買其他 Microsoft 365 for business 訂閱。 '
-ms.custom: okr_SMB
-ms.openlocfilehash: 63dc9554d1783f81615e52a83ad338368d482e93
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: ebadf9a019829080c145eec2f3f5d612473e91b3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141299"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402199"
 ---
 # <a name="buy-another-microsoft-365-for-business-subscription"></a>購買其他 Microsoft 365 for business 訂閱
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -59,13 +61,13 @@ ms.locfileid: "44141299"
 
 5. 查看定價資訊，然後選取 **[下一步]**。
 
-6. 提供您的付款資訊，然後選取 [**下訂單** \> ]**移至**[系統管理] 首頁。
+6. 提供您的付款資訊，然後選取 [**下訂單**] \> **移至**[系統管理] 首頁。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
 
 2. 在 [**訂閱**] 頁面上，選取 [**新增訂閱**]。
 
@@ -91,7 +93,7 @@ ms.locfileid: "44141299"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
 
 2. 在 [**訂閱**] 頁面上，選取 [**新增訂閱**]。
 

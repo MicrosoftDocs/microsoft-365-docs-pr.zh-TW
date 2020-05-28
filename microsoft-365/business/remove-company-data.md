@@ -18,17 +18,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: 探索如何使用 Microsoft 365 for business 移除使用者在其裝置或 Windows 電腦上的公司資料。
-ms.openlocfilehash: 80997a48bb3924ab20f16a454120d24caf76e1e7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42784149fcf6b850e7d0483c17dd605e7ecb7cf0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634841"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402779"
 ---
 # <a name="remove-company-data-from-devices"></a>從裝置移除公司資料
 
@@ -40,7 +41,7 @@ ms.locfileid: "43634841"
   
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。
     
-2. 在左側導覽上，選擇 [**裝置**\> **管理**]。  
+2. 在左側導覽上，選擇 [**裝置** \> **管理**]。  
   
 3. 在 [**管理**] 頁面上，選擇或搜尋您要移除其資料的使用者，然後選擇名稱。 
     

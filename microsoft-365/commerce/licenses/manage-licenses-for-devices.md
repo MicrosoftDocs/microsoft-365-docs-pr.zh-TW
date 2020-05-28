@@ -15,15 +15,17 @@ ms.collection:
 - Adm_TOC
 - commerce
 description: 瞭解如何將授權指派給群組，以用於裝置。
-ms.custom: okr_SMB
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - MET150
-ms.openlocfilehash: 1a525117c25a2471ad696ef1447fd7e4ccb6bed0
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: ce3c8f7d669f2fe5d19c48d7a1fb1f224aaec7f4
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011182"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402867"
 ---
 # <a name="manage-licenses-for-devices"></a>管理裝置的授權
 
@@ -41,7 +43,7 @@ ms.locfileid: "44011182"
 
 當您指派授權給群組時，您可以將授權指派給群組中的所有裝置。 您只可以將一個預訂指派給任何單一群組。
 
-1. 在 Microsoft 365 系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。
+1. 在 Microsoft 365 系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。
 2. 在 [**授權**] 頁面上，選擇 [教育版（裝置）或**microsoft 365 應用程式（裝置）**] 的 [ **microsoft 365 應用程式**]。
 3. 在下一個頁面上，選擇訂閱，然後選擇 [**指派授權**]。
 4. 在 [**將授權指派給群組**] 窗格中，開始輸入組名，然後從結果中加以選擇以將其新增至清單。
@@ -51,7 +53,7 @@ ms.locfileid: "44011182"
 
 當您取消指派群組中的授權時，會從群組內的所有裝置中移除授權。 所有應用程式及其相關聯的資料都是唯讀的。
 
-1. 在系統管理中心中，移至 [**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。
 2. 在 [**授權**] 頁面上，選擇 [教育版（裝置）或**microsoft 365 應用程式（裝置）**] 的 [ **microsoft 365 應用程式**]。
 3. 在下一個頁面上，選擇訂閱，選擇 [**其他動作**]，然後選擇 [未**指派授權**]。
 4. 在 [未**指派的授權**] 對話方塊中，選擇 [**取消指派**]。

@@ -19,17 +19,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: 在 iPhone 或 Android 手機上安裝 Office，而且 Office 應用程式中的工作檔案會受到 Microsoft 365 for business 的保護。
-ms.openlocfilehash: 1263a922ba41083511fec8030634ed6cfaf70f00
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e96e2edc0fc2bc25449d8f50239fa25179b345bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632560"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402991"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>為商務用 Microsoft 365 使用者設定行動裝置
 
@@ -59,7 +60,7 @@ ms.locfileid: "43632560"
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-在 [**新增電子郵件帳戶**] \>畫面的 [新增**帳戶**] 中輸入您的工作電子郵件地址，然後\>輸入您的 Microsoft 365 for business 身分登**入**。
+在 [**新增電子郵件帳戶**] 畫面的 [新增帳戶] 中輸入您的工作電子郵件地址 \> ** **，然後輸入您的 Microsoft 365 for business 身分登 \> **入**。
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
@@ -87,7 +88,7 @@ ms.locfileid: "43632560"
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-在 Outlook app 中，按一下 [**開始**使用]，然後新增您的 Microsoft 365 以\>取得商務電子**郵件帳戶，** 然後使用您的組織認證登入。
+在 Outlook app 中，按一下 [**開始**使用]，然後新增您的 Microsoft 365 以取得商務電子郵件帳戶 \> ** **，然後使用您的組織認證登入。
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -105,6 +106,6 @@ ms.locfileid: "43632560"
 
 ## <a name="see-also"></a>請參閱
 
-[Microsoft 365 商務用訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[商務用 Microsoft 365 訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
 
 ---

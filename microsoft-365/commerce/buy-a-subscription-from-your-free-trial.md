@@ -20,6 +20,7 @@ ms.custom:
 - TopSMBIssues
 - MSStore_Link
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: 購買商務用 Microsoft 365 訂閱。 您可以購買與您嘗試使用的相同類型的訂閱，或其他計畫。
-ms.openlocfilehash: 48786ffc4bd0a8c5e8e13e0062b6db1dd5bed561
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: de141cb42b310bff6221d0bef6d923882dadadfd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045797"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402615"
 ---
 # <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>從免費試用版購買為商務用 Microsoft 365 的訂閱
 
@@ -50,7 +51,7 @@ ms.locfileid: "44045797"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 2. 在 [**產品**] 頁面上，找到您要購買的訂閱。 在 [**授權**] 區段中，選取 [**購買訂閱**]。
 
@@ -66,7 +67,7 @@ ms.locfileid: "44045797"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
 
 2. 在 [**訂閱**] 頁面上，為您要購買的試用訂閱選取 [**立即購買**] 按鈕。
 
@@ -80,7 +81,7 @@ ms.locfileid: "44045797"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
 
 2. 在 [**訂閱**] 頁面上，為您要購買的試用訂閱選取 [**立即購買**] 按鈕。
 
@@ -109,13 +110,13 @@ ms.locfileid: "44045797"
 
 5. 查看定價資訊，然後選取 **[下一步]**。
 
-6. 提供您的付款資訊，然後選取 [**下訂單** \> ]**移至**[系統管理] 首頁。
+6. 提供您的付款資訊，然後選取 [**下訂單**] \> **移至**[系統管理] 首頁。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
 
 2. 在 [**訂閱**] 頁面上，選取 [**新增訂閱**]。
 
@@ -138,7 +139,7 @@ ms.locfileid: "44045797"
 ::: moniker range="o365-21vianet"
 
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
 
 2. 在 [**訂閱**] 頁面上，選取 [**新增訂閱**]。
 

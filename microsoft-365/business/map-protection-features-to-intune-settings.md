@@ -20,17 +20,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: 瞭解 Microsoft 365 商務版中的保護功能如何對應至 Intune 設定。 訂閱提供您的授權，可修改 Intune 設定。
-ms.openlocfilehash: 572d3364e465067536e8369b49404d3d1de1bb5b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ce75073f748f6005a843e31f7c38d06b38a3c706
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633236"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401571"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Microsoft 365 商務版中的保護功能如何對應至 Intune 設定
 
@@ -44,7 +45,7 @@ ms.locfileid: "43633236"
  > 
  > Microsoft 365 商務版特優訂閱提供您的授權，可修改所有的 Intune 設定。 請參閱[Intune 簡介開始吧。](https://docs.microsoft.com/intune/introduction-intune)
   
-選取您想要&mdash;的原則名稱（例如，適用于 Android &mdash;的應用程式原則），然後選擇 [**原則設定**]。
+選取您想要的原則名稱 &mdash; （例如，適用于 Android 的應用程式原則）， &mdash; 然後選擇 [**原則設定**]。
   
 低於在**裝置遺失或遭竊時保護工作檔**
   
@@ -83,11 +84,11 @@ ms.locfileid: "43633236"
   
 |**Windows 10 應用程式原則設定**|**Intune 設定**|
 |:-----|:-----|
-|加密工作檔案  <br/> |「**高級設定** \> **資料保護**」：**在取消註冊時撤銷加密金鑰**，並撤銷對**MDM 註冊的存取權**，都是設定為**開啟**狀態。  <br/> |
-|防止使用者將公司資料複製到個人檔案。  <br/> |**必要設定** \> **Windows 資訊保護模式**。 在 Microsoft 365 商務版對應中**的**：**隱藏覆寫**，在 Microsoft 365 商務版 premium 地圖中**關閉**： **off**。  <br/> |
-|Office 文件存取控制  <br/> | 如果這是在 Microsoft 365 商務版 Premium 中設定為 [**開啟**]，則  <br/> 「**高級設定** \> **存取**」，**使用 windows Hello 企業版作為登入 Windows 的方法**，會設定為 [**開啟**]，具有下列其他設定：  <br/> **設定 PIN 碼所需的最小字元數**設定為**4**。  <br/> **在 Windows Hello 企業版 PIN 中設定大寫字母的使用**，**不允許使用大寫字母做為 PIN 碼**。  <br/> 設定**Windows Hello 企業版 PIN 碼中的小寫字母的使用**是設定為**不允許使用小寫字母的 pin 碼**。  <br/> 設定**Windows Hello 企業版 PIN 碼中的特殊字元的使用**，不**允許使用 PIN 碼中的特殊字元**。  <br/> **指定在系統要求使用者變更之前可使用 PIN 碼的期間（以天數為單位）** 設定為**0**。  <br/> **指定可以與無法重複使用之使用者帳戶相關聯的過去 pin 碼數目**設定為**0**。  <br/> 在**擦除裝置之前所允許的驗證失敗次數**，會設定為與 Microsoft 365 商務版相同（預設為5）。  <br/> 在**裝置閒置時允許的最長時間（以分鐘為單位），會導致裝置變成 PIN 碼或密碼鎖定**設定為與 Microsoft 365 商務中的相同。  <br/> |
-|啟用復原受保護的資料  <br/> |**高級設定** \> **資料保護**：**顯示企業資料保護圖示**，並**使用 Azure RMS for WIP**已設定為 [**開啟**]。  <br/> |
-|保護其他公司雲端位置  <br/> |「**高級設定** \> **受保護的網域**」和「**雲端資源**」顯示網域和 SharePoint 網站。  <br/> |
+|加密工作檔案  <br/> |**高級設定** \>**資料保護**：**在取消註冊時撤銷加密金鑰**，並**撤銷對 MDM 註冊的受保護資料裝置的存取**，都是設定為 [**開啟**]。  <br/> |
+|防止使用者將公司資料複製到個人檔案。  <br/> |**必要設定** \>**Windows 資訊保護模式**。 在 Microsoft 365 商務版對應中**的**：**隱藏覆寫**，在 Microsoft 365 商務版 premium 地圖中**關閉**： **off**。  <br/> |
+|Office 文件存取控制  <br/> | 如果這是在 Microsoft 365 商務版 Premium 中設定為 [**開啟**]，則  <br/> **高級設定** \>**Access**，**使用 Windows Hello 企業版作為登入 Windows 的方法**，會設定為 [**開啟**]，具有下列其他設定：  <br/> **設定 PIN 碼所需的最小字元數**設定為**4**。  <br/> **在 Windows Hello 企業版 PIN 中設定大寫字母的使用**，**不允許使用大寫字母做為 PIN 碼**。  <br/> 設定**Windows Hello 企業版 PIN 碼中的小寫字母的使用**是設定為**不允許使用小寫字母的 pin 碼**。  <br/> 設定**Windows Hello 企業版 PIN 碼中的特殊字元的使用**，不**允許使用 PIN 碼中的特殊字元**。  <br/> **指定在系統要求使用者變更之前可使用 PIN 碼的期間（以天數為單位）** 設定為**0**。  <br/> **指定可以與無法重複使用之使用者帳戶相關聯的過去 pin 碼數目**設定為**0**。  <br/> 在**擦除裝置之前所允許的驗證失敗次數**，會設定為與 Microsoft 365 商務版相同（預設為5）。  <br/> 在**裝置閒置時允許的最長時間（以分鐘為單位），會導致裝置變成 PIN 碼或密碼鎖定**設定為與 Microsoft 365 商務中的相同。  <br/> |
+|啟用復原受保護的資料  <br/> |**高級設定** \>**資料保護**：**顯示企業資料保護圖示**，並**使用 Azure RMS for WIP**已設定為 [**開啟**]。  <br/> |
+|保護其他公司雲端位置  <br/> |**高級設定** \>**受保護的網域**和**雲端資源**顯示網域和 SharePoint 網站。  <br/> |
 |這些 App 使用的檔案已受保護  <br/> |受保護應用程式的清單會列在**允許的應用程式**中。  <br/> |
 |||
    
@@ -95,7 +96,7 @@ ms.locfileid: "43633236"
 
 下表詳述 Windows 10 裝置組態設定對應至 Intune 設定的方式。
   
-若要尋找 Intune 設定，請使用 Microsoft 365 商務版的系統管理員認證登入，並移至[Azure 入口網站](https://portal.azure.com)，然後選取 [**其他服務**]，然後在 [intune] 中的 [加入]**篩選**中，選取 [ **intune** \> **裝置** \>設定**設定檔**]。 然後選取 [ **Windows 10** \> **屬性** \> **設定**] 的 [裝置原則]。
+若要尋找 Intune 設定，請使用 Microsoft 365 商務版的系統管理員認證登入，並移至[Azure 入口網站](https://portal.azure.com)，然後選取 [**其他服務**]，然後在 [intune] 中的 [加入]**篩選**中，選取 [ **intune** \> **裝置**設定 \> **設定檔**]。 然後選取 [ **Windows 10** \> **屬性** \> **設定**] 的 [裝置原則]。
   
 |**Windows 10 裝置原則設定**|**Intune 設定**|
 |:-----|:-----|
@@ -103,7 +104,7 @@ ms.locfileid: "43633236"
 |協助保護電腦免於遭受 Microsoft Edge 中的網路安全威脅  <br/> |在**Edge Browser**設定中**SmartScreen**設定為 [**必要**]。  <br/> |
 |閒置這段時間之後關閉裝置螢幕 (分鐘)  <br/> |在停止活動最少幾分鐘後鎖定螢幕 (分鐘)  <br/> |
 |允許使用者從 Microsoft Store 下載 App  <br/> |自訂 URI 原則  <br/> |
-|允許使用者存取 Cortana  <br/> |**一般** \> **Cortana**設定為在 Microsoft 365 商務版 Premium 中**關閉**時，在 Intune 中**封鎖**。  <br/> |
+|允許使用者存取 Cortana  <br/> |**一般** \>當您在 Microsoft 365 商務版 Premium 設定為**off**時， **Cortana**會設定為在 Intune 中**封鎖**。  <br/> |
 |允許使用者接收來自 Microsoft 的 Windows 祕訣和廣告  <br/> |**Windows 聚焦**，全部封鎖如果此設定為 [Microsoft 365 商務版 Premium] 中的 [**關閉**]。  <br/> |
 |自動讓 Windows 10 裝置保持在最新狀態  <br/> | 此設定是在**Microsoft Intune** \> **Service 更新-windows 10 更新環**中，選擇 [ **windows 10 裝置的更新原則**]，然後按一下 [**屬性** \> **設定**]。  <br/>  當 Microsoft 365 商務版 Premium 設定設為 [**開啟**] 時，會設定下列所有設定：  <br/> **服務分支**設定為**CB** （在 Microsoft 365 商務版 Premium 中關閉此功能時為 CBB）。  <br/> **Microsoft 產品更新**已設定為 [**允許**]。  <br/> **Windows 驅動程式**已設定為 [**允許**]。  <br/> **自動更新行為**會設定為**在維護時間和下列專案中自動安裝**：  <br/> **當時段開始時間**設定為**6 AM**。  <br/> 使用**時段結束**設定為**10 PM**。  <br/> **品質更新延遲期間（天）** 設定為**0**。  <br/> **功能更新延遲期間（天）** 設定為**0**。  <br/> **傳遞優化下載模式**是設定為**使用相同 NAT 的對等的 HTTP 混合**。  <br/> |
 |||

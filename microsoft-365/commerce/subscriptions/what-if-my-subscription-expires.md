@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 瞭解當您的 Microsoft 365 訂閱到期、停用或取消時，您的資料會發生什麼情況。
-ms.openlocfilehash: 363d8379bb2fa34e58a81892beadcebb9c6624f2
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: e1953f439577b9339b035968a63e8d1a6eddcd29
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165116"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403159"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>365 Microsoft 商務版訂閱結束時，我的資料與存取權會發生什麼情況？
 
@@ -40,9 +41,9 @@ ms.locfileid: "44165116"
 
 下表說明當您付費的 Microsoft 365 for business 訂閱到期時，您可以預期的結果。
 
-| **Active**                                                             | **已<br/>到期（30\*天）**                                                | **停<br/>用（90\*天）**                                               | **取消佈建**                                                                         |
+| **Active**                                                             | **已到期 <br/> （30天 \* ）**                                                | **停用 <br/> （90天 \* ）**                                               | **取消佈建**                                                                         |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| *所有可存取的資料*                                               | *所有可存取的資料*                                                     | *僅限系統管理員可存取的資料*                                             | **資料刪除<br/>的 Azure Active Directory 已移除，如果其他服務未使用該 Active Directory** |
+| *所有可存取的資料*                                               | *所有可存取的資料*                                                     | *僅限系統管理員可存取的資料*                                             | **資料刪除的 <br/> Azure Active Directory 已移除，如果其他服務未使用該 Active Directory** |
 | 使用者具有對 Microsoft 365、資料和 Office 應用程式的一般存取權  | 使用者具有對 Microsoft 365、檔案及應用程式的一般存取權              | 使用者無法存取 Microsoft 365、檔或應用程式                        | 使用者無法存取 Microsoft 365、檔或應用程式                                     |
 | 系統管理員可以一般存取 Microsoft 365、data 和 Office 應用程式 | 系統管理員可以存取系統管理中心                                           | 系統管理員可以存取系統管理中心，但無法將授權指派給使用者       | 系統管理員可以存取系統管理中心，以購買及管理其他訂閱             |
 |                                                                        | 全域或計費系統管理員可以在系統管理中心重新啟用訂閱 | 全域或計費系統管理員可以在系統管理中心重新啟用訂閱 |                                                                                           |

@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,13 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: 瞭解如何更新 Microsoft 365 for business 的帳單位址。 您也可以更新用來接收帳單通知的電子郵件地址。
-ms.custom: okr_SMB
-ms.openlocfilehash: 87a9540218f7ef4bef48154930b62bddab7b54e8
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: 1985299d1ed4388ea8ffa0255935f1ee7c8ac3b7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232884"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401795"
 ---
 # <a name="change-your-billing-addresses"></a>變更帳單地址
 
@@ -92,7 +94,7 @@ ms.locfileid: "44232884"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
 
 2. 選取您要變更的訂閱，然後選取 [**變更付款明細**]。
 
@@ -112,7 +114,7 @@ ms.locfileid: "44232884"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
 
 2. 選取您要變更的訂閱，然後選取 [**變更付款明細**]。
 
@@ -128,7 +130,7 @@ ms.locfileid: "44232884"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 2. 尋找您要變更的訂閱。 在 [**設定 & 動作**] 區段中，選取 [**編輯服務使用位址**]。
 
@@ -138,7 +140,7 @@ ms.locfileid: "44232884"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
 
 2. 選取您要變更的訂閱，選取 [**其他動作**]，然後選擇 [**編輯服務使用位址**]。
 
@@ -150,7 +152,7 @@ ms.locfileid: "44232884"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
 
 2. 選取您要變更的訂閱，選取 [**其他動作**]，然後選擇 [**編輯服務使用位址**]。
 
@@ -204,7 +206,7 @@ ms.locfileid: "44232884"
 
 [檢視帳單](view-your-bill-or-invoice.md)
 
-[瞭解您的帳單或發票](understand-your-invoice2.md)
+[認識您的帳單或發票](understand-your-invoice2.md)
 
 [支付您的訂閱](pay-for-your-subscription.md)
 

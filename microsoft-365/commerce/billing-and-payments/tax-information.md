@@ -20,13 +20,15 @@ search.appverid:
 - MOE150
 - BEA160
 description: '瞭解在不同地區，您要對 Microsoft 365 for business 訂閱收取多少稅收。 '
-ms.custom: okr_SMB
-ms.openlocfilehash: 7c071a29fa5cedfc12c69a6471d1321a9167106f
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: 72939c40ad340e751be30aecc6e102570ea42eb0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232826"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401747"
 ---
 # <a name="tax-information"></a>稅務資訊
 
@@ -114,7 +116,7 @@ ms.locfileid: "44232826"
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>新增您的 VAT 識別碼 (僅限歐盟國家/地區)
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 2. 尋找您要更新之訂閱的訂閱卡。
 
@@ -128,7 +130,7 @@ ms.locfileid: "44232826"
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>新增您的 VAT 識別碼 (僅限歐盟國家/地區)
   
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
 
 2. 選取訂閱名稱，然後選取 [**其他動作**] [ \> **編輯加值稅號碼**]。
   
@@ -186,4 +188,4 @@ ms.locfileid: "44232826"
   
 [檢視帳單](view-your-bill-or-invoice.md)
   
-[瞭解您的帳單或發票](understand-your-invoice.md)
+[認識您的帳單或發票](understand-your-invoice.md)

@@ -9,27 +9,28 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 學習如何傳送帳單的付款。
+description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 37872115733faf8667a2d606c2a16cfd8a5d8dad
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0c26fe99423890f5821af9dbdc80960890c81559
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239603"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402091"
 ---
 # <a name="payment-information-for-netherlands"></a>荷蘭的付款資訊
 
-[尋找另一個國家或地區](../billing-and-payments/pay-for-your-subscription.md)。
+[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。
 
-請只 EUR 和參考發票轉接上您的付款匯款付款。
+請只在您的付款匯款中付款並參考發票號碼。
 
-## <a name="electronic-funds-transfer"></a>匯款
+## <a name="electronic-funds-transfer"></a>電子基金轉移
 
-**銀行：** Citibank 倫敦  
-**SWIFT 程式碼/BIC:** CITIGB2L  
-**IBAN:** GB31CITI18500812207591  
-**排序的程式碼：** 185008  
+**銀行：** Citibank，倫敦  
+**SWIFT Code/BIC：** CITIGB2L  
+**IBAN：** GB31CITI18500812207591  
+**分類程式代碼：** 185008  
 **帳戶號碼：** 12207591  
-**帳戶名稱：** MICROSOFT
+**帳戶名稱：** 微軟

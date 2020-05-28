@@ -23,17 +23,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解 Microsoft 365 商務進階版，這是一項訂閱服務，其中包含 Office 生產力應用程式和供企業防禦網路威脅的進階防護。
-ms.openlocfilehash: 14f6acdec79323d1dfff836ba945bb3c29059a3e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 61f4c34ade180717486ce889162947afe9be7ba6
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633216"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402247"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 商務進階版的概觀
 

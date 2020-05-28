@@ -21,13 +21,15 @@ search.appverid:
 - GEA150
 ms.assetid: 7ac93507-0e38-4398-8bfe-9c1d123cb387
 description: '深入瞭解 Microsoft 365 for business 中的訂閱與授權，並知道誰可以指派授權，以及當您指派授權給某人時會發生什麼情況。 '
-ms.custom: okr_SMB
-ms.openlocfilehash: 5178b25de6f66968f8a89c7b2c34ee466f8855bd
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: 5ed1925fd51dd1798d4c6ab275494fde01535177
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211435"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402399"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>瞭解 Microsoft 365 for business 中的訂閱與授權
 

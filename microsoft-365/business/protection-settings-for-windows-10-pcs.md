@@ -17,17 +17,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: 深入瞭解 Microsoft 365 for business 中可用的預設和其他設定，以保護 Windows 10 裝置。
-ms.openlocfilehash: 9096fb6a8fc790d9a9432578cfd8623f9cb69c7a
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 0403ea2c30221dd5693b7f3e9b4921ad175399a1
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011560"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402799"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>設定適用於 Windows 10 電腦的裝置保護設定
 
@@ -39,19 +40,19 @@ ms.locfileid: "44011560"
   
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。 
     
-2. 在左側導覽中，選擇 [**裝置** \> **原則** \> ] [**新增**]。
+2. 在左側導覽中，選擇 [**裝置** \> **原則**] [ \> **新增**]。
   
 3. 在 [**新增原則**] 窗格中，輸入這個原則的唯一名稱。 
     
 4. 在 [**原則類型**] 底下，選擇 [ **Windows 10 Device Configuration**]。
     
-5. 展開 [**安全的 Windows 10 裝置** \> ] 設定您想要的設定。 如需詳細資訊，請參閱[可用設定](#available-settings)。 
+5. 展開 [**安全的 Windows 10 裝置**] 設定 \> 您想要的設定。 如需詳細資訊，請參閱[可用設定](#available-settings)。 
     
     您可以隨時使用 [**重設預設值設定**] 連結，以回到預設設定。 
     
     ![Add policy pane with Windows 10 Device configuration selected](../media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
   
-6. 下一步決定**誰將取得這些設定？** 如果您不想要使用預設的 [**所有使用者**] 安全性群組，請選擇 [**變更**]，然後搜尋將取得這些\> **設定的**安全性群組。
+6. 下一步決定**誰將取得這些設定？** 如果您不想要使用預設的 [**所有使用者**] 安全性群組，請選擇 [**變更**]，然後搜尋將取得這些設定的安全性群組 \> ** **。
     
 7. 最後，選擇 [**完成**] 以儲存原則，並將其指派給裝置。 
     
@@ -63,7 +64,7 @@ ms.locfileid: "44011560"
   
 |||
 |:-----|:-----|
-|設定  <br/> |描述  <br/> |
+|設定  <br/> |說明  <br/> |
 |使用 Windows Defender 防毒軟體來協助保護電腦免於遭受病毒與其他威脅的侵害  <br/> |需要開啟 Windows Defender 防毒軟體，以保護電腦免於遭受連接至網際網路時的安全威脅。  <br/> |
 |協助保護電腦免於遭受 Microsoft Edge 中的網路安全威脅  <br/> |開啟 Microsoft Edge 中的設定，以協助保護使用者免受惡意網站與下載檔案的威脅。  <br/> |
 |使用能減少裝置受攻擊面的規則  <br/> |設定為 [開啟] 時，受攻擊面縮減能協助系統封鎖惡意程式碼通常會用來感染裝置的動作和 App。只有在 Windows Defender 防毒軟體設為 [開啟] 時，這項設定才能夠使用。請參閱[縮減受攻擊面](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)以深入了解。  <br/> |

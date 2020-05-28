@@ -1,5 +1,5 @@
 ---
-title: 美國境內的付款資訊
+title: 美國的付款資訊
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,33 +9,34 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 學習如何傳送帳單的付款。
+description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 49c29e15dc6e50a3c0559550e6d6aa5f7483a92b
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: e47565fff08c7dabb454b844bdcd536b8eb0a3a0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239953"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401939"
 ---
-# <a name="payment-information-for-united-states"></a>美國境內的付款資訊
+# <a name="payment-information-for-united-states"></a>美國的付款資訊
 
-[尋找另一個國家或地區](../billing-and-payments/pay-for-your-subscription.md)。
+[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。
 
-請僅支付 USD 中，並參照在您的付款匯款您發票轉接。
+請只以 USD 支付，並且在您的付款匯款上參考您的發票號碼。
 
 ## <a name="check"></a>檢查
 
-**Payee:** Microsoft  
+**收款人：** 微軟  
 **郵寄地址：**   
-標準郵件： 郵政信箱 842103，Dallas，TX 75284-2103  
-快速郵件： Lockbox 842103，1950 n 的數目 Stemmons Frwy Ste. 5010，Dallas，TX 75207-2103
+標準郵件： PO 箱842103，達拉斯，TX 75284-2103  
+Express Mail：密碼箱842103，1950 Stemmons Frwy，Ste。 5010，達拉斯，TX 75207-2103
 
-## <a name="electronic-funds-transfer"></a>匯款
+## <a name="electronic-funds-transfer"></a>電子基金轉移
 
-**銀行：** 銀行的 America  
+**銀行：** 美洲銀行  
 **SWIFT 程式碼：** BOFAUS3N  
-**阿拉巴馬州銀行/路由號碼：** 111 000 012  
+**ABA/路由號碼：** 111 000 012  
 **帳戶號碼：** 4426587954  
-**帳戶名稱：** Microsoft  
+**帳戶名稱：** 微軟  

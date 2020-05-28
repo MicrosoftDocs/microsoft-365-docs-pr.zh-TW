@@ -11,17 +11,17 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 深入瞭解方案，以協助您購買 Microsoft 產品和服務。
-ms.custom: ''
 ROBOTS: NOINDEX
-ms.openlocfilehash: 18d106894aeebe499cca2254a6e3a534cd255db6
-ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
+ms.openlocfilehash: ded29a4eab3dd19d7ce3a1f60dff968e34b434a0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44340115"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403123"
 ---
 # <a name="understand-the-proposal-workflow"></a>瞭解提案工作流程
 
@@ -129,7 +129,7 @@ Microsoft 客戶合約（MCA）可讓組織購買 Microsoft 產品和服務。 �
 | 準備者 | 準備提案之 Microsoft 代表的電子郵件地址。 |
 | 摘要 | 顯示與提案相關聯的小計。 如有必要，它也會顯示用來計算成本的外部 exchange （FX）率。 |
 | 提案行專案 | 此區段包含提案中包含的所有專案的數量、單價及小計。 |
-| 下一步 | 本節指出您必須採取的必要動作。 |
+| 後續步驟 | 本節指出您必須採取的必要動作。 |
 
 若要簽署 MCA，請選取 **[下一步]** 下的按鈕。 如果您必須簽署補充字詞，您可以使用連結的 DocuSign 網站，您可以在其中依照步驟簽署檔。
 
