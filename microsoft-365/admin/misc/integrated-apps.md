@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: 深入瞭解整合式應用程式，以及如何將其開啟以允許協力廠商應用程式存取使用者的 Microsoft 365 資訊。
-ms.openlocfilehash: 2e292afc4ab33eef1ace91808f93588b9cec4702
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 070150662daeefb2a4d02c7e0940dfd242bd4b5f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022105"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399335"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>開啟或關閉整合式應用程式
 
@@ -35,7 +36,7 @@ ms.locfileid: "44022105"
 
 以下說明如何開啟或關閉整合式應用程式。
 
-1. 在 Microsoft 365 系統管理中心中，移至 [**設定** \> **] [設定] 頁面** \>的 [**服務**] 索引標籤，然後選取 [**整合式應用程式**]。
+1. 在 Microsoft 365 系統管理中心中，移至 [**設定**] [設定] 頁面的 [服務] 索引標籤 \> **Settings** \> **Services** ，然後選取 [**整合式應用程式**]。
 
 2. 在 [**整合式應用程式**] 頁面上，選取要開啟或關閉整合式應用程式的選項。
 

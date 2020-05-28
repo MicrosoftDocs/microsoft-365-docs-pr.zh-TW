@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +21,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: 瞭解如何在系統管理中心建立連絡人，以及如何管理您的全域通訊清單。
-ms.openlocfilehash: f8298713944bdb88c7fbcb31d4bd5a5738cb081b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 8abf16fd3332e4ba5789545d54d2a7a99232032d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064742"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399419"
 ---
 # <a name="quick-help-contacts"></a>快速說明：連絡人
 

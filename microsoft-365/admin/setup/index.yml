@@ -2,7 +2,7 @@
 title: 開始使用
 summary: 請參閱這些資源，以協助系統管理員進行常見的工作，或參閱左側的功能窗格以取得完整清單。
 metadata:
-  title: 入門
+  title: 開始使用
   description: 設定您的訂閱和電子郵件。 新增使用者和安裝應用程式
   ms.service: O365-administration
   ms.topic: landing-page
@@ -10,12 +10,13 @@ metadata:
   ms.author: sirkkuw
   ms.date: 04/16/2020
   localization_priority: Priority
-  ms.openlocfilehash: 0396ea8146e3e0d0419f6f1d9caeee9df7b86d59
-  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: 82575756389813a3ddec91fa2b278acee0d9eef1
+  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43952677"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "44398891"
 landingContent:
 - title: 註冊
   linkLists:

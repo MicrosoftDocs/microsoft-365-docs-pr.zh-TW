@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: 使用 Azure Active Directory 自訂 Microsoft 365 登入頁面。 您可以將圖例、標誌及文字新增至登入頁面。
-ms.openlocfilehash: daf5f9007a297615d04051d3364895053572343a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2f6df71a46e7510413601fe7dc00143280b4e6aa
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627627"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398939"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>將公司商標新增至登入頁面
 

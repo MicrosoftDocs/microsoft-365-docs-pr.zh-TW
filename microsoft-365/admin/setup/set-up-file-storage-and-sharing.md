@@ -19,6 +19,7 @@ ms.custom:
 - IT_Networking
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 瞭解如何使用 OneDrive 和小組網站進行檔案儲存與共享。
-ms.openlocfilehash: 7eb9ece0408fc495938c319390267790b01a2b89
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e41e180417cb8543a73b08668d18ef9d2998c782
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208183"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398831"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>設定檔案儲存與共用
 
@@ -144,7 +145,7 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
 
     ![在此畫面變更您的本機資料夾](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
-6. 小組網站中的檔案會以組織名稱顯示在 [檔案瀏覽器] 的左窗格中。 OneDrive 中的檔案會出現在「OneDrive- \< 組織名稱」下方。 \>
+6. 小組網站中的檔案會以組織名稱顯示在 [檔案瀏覽器] 的左窗格中。 OneDrive 中的檔案會出現在 "OneDrive- \<Name of Organization\> " 底下。
 
     ![在您的本機資料夾中查看已同步處理的專案](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   

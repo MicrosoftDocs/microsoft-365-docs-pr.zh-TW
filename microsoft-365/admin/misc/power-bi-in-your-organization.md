@@ -12,18 +12,19 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - PWB150
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 深入瞭解 Power BI，以及組織中的使用者可以如何使用此商務 analytics 服務。
-ms.openlocfilehash: 3cf0c96534b6d8d02ef89f430ae246c6f32ac356
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cabe489915061a773c0faeb8687695f2672fe478
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627809"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399299"
 ---
 # <a name="power-bi-in-your-organization"></a>貴組織中的 Power BI
 
@@ -209,7 +210,7 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
     
 4. 開啟 [ **Microsoft POWER BI** ] 選項。
     
-5. 選取 **[儲存]**。
+5. 選取 [儲存]****。
 
 ::: moniker-end 
 

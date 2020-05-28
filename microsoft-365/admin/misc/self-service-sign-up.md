@@ -13,6 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom:
+- AdminSurgePortfolio
+- okr_SMB
 search.appverid:
 - BCS160
 - MET150
@@ -20,13 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: 深入瞭解 Microsoft 365 自助註冊和可用自助服務程式，例如 Microsoft Power App、Microsoft Flow 及 Dynamics 365 （適用于金融）。
-ms.custom: okr_SMB
-ms.openlocfilehash: 02d318fbafb6e062f9c3d1592cd6adc7f764fd56
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: d2d4d23eeb3ddeda0dc5b66acfe072a66f4ce267
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045269"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399287"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>在您的組織中使用自助註冊
 
@@ -63,6 +65,6 @@ ms.locfileid: "44045269"
 |**Microsoft 商務中心** <br/> |Microsoft 商務中心是透過 Microsoft 產品和服務合約（MPSA）進行購買之客戶的入口網站。 <br/> |[快速入門：註冊 Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841479) <br/> |[Microsoft 商務中心](https://go.microsoft.com/fwlink/p/?linkid=841470) <br/> |
 |**Microsoft 大量授權服務中心** <br/> |Microsoft 大量授權服務中心會顯示「企業」、「選擇」、「教育版」（校園或 School）、「開放價值」、「開啟授權」和「ISV 版稅協定」所購買的授權。  <br/> |[VLSC 訓練和資源](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |
 |**Minecraft 教育版** <br/> |透過使用 Minecraft 做為教學的平臺，教師可以激勵和鼓舞每個學生以取得更多，並 ignite 熱情的教學。 加入教育教育的群組如何使用 Minecraft 以解除鎖定學生潛力。  <br/> |[Minecraft 教育版](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft 教育版](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
-|**Microsoft Stream** <br/> |上傳和共用整個組織的影片，以改善通訊、參與和學習。  <br/> |[註冊 1 &amp;天的經驗](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
+|**Microsoft Stream** <br/> |上傳和共用整個組織的影片，以改善通訊、參與和學習。  <br/> |[註冊 &amp; 1 天的經驗](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**自動功耗** <br/> |電力自動化是一種產品，可協助您設定最喜歡的應用程式與服務之間的自動化工作流程，以同步處理檔案、取得通知、收集資料等等。  <br/> |[註冊並登入以進行自動功能](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[自動功耗](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**Power Virtual Agent** <br/> |使用虛擬代理程式可讓小組使用無程式碼的圖形介面輕鬆建立強大的 bot，而不需要資料科學家或開發人員。 Power Virtual Agent 解決當今的 bot 組建許多主要問題。 它可以消除主題專家和建立 bot 的開發小組之間的缺口，以及識別問題和更新 bot 以解決問題的團隊間的長時間延遲。  <br/> |[授權和存取詳細資料](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[註冊 Power Virtual Agent](https://aka.ms/TryPVA) <br/> |

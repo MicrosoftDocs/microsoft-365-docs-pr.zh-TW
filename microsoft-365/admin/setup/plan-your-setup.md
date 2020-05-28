@@ -14,17 +14,18 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: 深入瞭解設定 Microsoft 365 for business 所需的功能。
-ms.openlocfilehash: d02e1aaf03449bd976b8db549274002b3ebb6ed6
-ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
+ms.openlocfilehash: 7c329e8f4df5076a9f4826d18e8a82bcc7cd6dd8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43794029"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398843"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>規劃 Microsoft 365 for business 的設定
 
@@ -49,7 +50,7 @@ ms.locfileid: "43794029"
 > [!NOTE]
 > 如果您需要[將 Microsoft 365 for business 中的系統管理員角色指派](../add-users/assign-admin-roles.md)給您新增至嚮導的使用者，您可以稍後在 [**使用者**] 頁面上進行。 
   
-如果您未完成安裝精靈，您可以隨時從系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339) > **設定**完成安裝工作。 從這裡，您可以從其他電子郵件服務遷移電子郵件和連絡人、變更您系統管理員帳戶的網域、管理帳單資訊、新增或移除使用者、重設密碼，以及執行其他商務功能。 如需安裝精靈與**安裝程式**頁面之間差異的詳細資訊，請參閱[Microsoft 365 安裝精靈與安裝程式頁面之間的差異](o365-setup-wizard-and-setup-page.md)。
+如果您未完成安裝精靈，您可以隨時從系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >  **設定**完成安裝工作。 從這裡，您可以從其他電子郵件服務遷移電子郵件和連絡人、變更您系統管理員帳戶的網域、管理帳單資訊、新增或移除使用者、重設密碼，以及執行其他商務功能。 如需安裝精靈與**安裝程式**頁面之間差異的詳細資訊，請參閱[Microsoft 365 安裝精靈與安裝程式頁面之間的差異](o365-setup-wizard-and-setup-page.md)。
 
 如果您在任何時刻都停滯，請撥打 us。 [我們在這裡協助您！](../contact-support-for-business-products.md)
   
@@ -93,7 +94,7 @@ ms.locfileid: "43794029"
   
 如果您要將 Microsoft 365 用於您的電子郵件：
   
-- 若要將商務電子郵件地址（例如 *，\@contoso.com*）從其他電子郵件服務移至 Microsoft 365，您必須將您的郵件指引傳送至新的 microsoft 365 信箱。 若要執行此動作，請選取 [**設定**] 頁面上的 [**遷移使用者的資料**]，我們將引導您完成您在網域主機上進行的更新（逐步逐步進行）。
+- 若要將商務電子郵件地址（例如 *， \@ contoso.com*）從其他電子郵件服務移至 Microsoft 365，您必須將您的郵件指引傳送至新的 microsoft 365 信箱。 若要執行此動作，請選取 [**設定**] 頁面上的 [**遷移使用者的資料**]，我們將引導您完成您在網域主機上進行的更新（逐步逐步進行）。
 
 - 更新您的網域主機後，相關變更通常在 1 到 2 小時內就會生效。 不過，請注意，在網際網路上更新的變更有時可能需要長達72小時。
 

@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 瞭解如何將電子郵件簽章、法律免責聲明或披露聲明新增至所有進入或離開組織的電子郵件。
-ms.openlocfilehash: affd091f951b81541214b4f98c414b5cd4675cd3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5149f6f4a0276cc1384f15a8134d1ede0b673b8c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631974"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398951"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>建立整個組織的簽名和免責聲明
 
@@ -62,7 +63,7 @@ ms.locfileid: "43631974"
 
 ::: moniker-end
 
-1. 選取應用程式啟動器![圖示](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)，然後選取 [**管理**]。
+1. 選取應用程式啟動器 ![ 圖示 ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) ，然後選取 [**管理**]。
    
     Can't find the app you're looking for? 從應用程式啟動器中，選取 [**所有應用程式**]，以查看您可以使用之應用程式的字母順序清單。 From there, you can search for a specific app. 
     
@@ -70,7 +71,7 @@ ms.locfileid: "43631974"
     
 3. 在 [郵件流程] 下，選取 [**規則**]。
     
-4. 選取**+** （新增）圖示，並選擇 [套用**免責聲明**]。
+4. 選取 **+** （新增）圖示，並選擇 [套用**免責聲明**]。
     
 5. 為這個規則命名。
     

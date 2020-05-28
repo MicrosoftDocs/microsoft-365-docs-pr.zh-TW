@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: 深入瞭解 Microsoft 365 for business 如何協助您使用一般資料保護規定（GDPR）程式。
-ms.openlocfilehash: a77de1b835e4cf6e312b8976a972ac10eb60e3b4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 066803e15fe107c8a20b61d9871b6807629f2a9f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627713"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399155"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR 簡體：適用于小型企業的指南
 
@@ -53,7 +54,7 @@ GDPR 與下列資料類型相關：
   
 GDPR 狀態：「個人資料的處理應設計為服務于 mankind。」 GDPR 可在處理個人資料時使用同意，取得此目標。 這可能是詢問客戶是否要從您的公司接收電子郵件訊息的簡單行動。 當您想要使用資料進行行銷時，也表示您的網站上沒有其他自願退出核取方塊。 您必須使用 "clear affirmative act" 進行明確同意。 此外，您還必須保留或撤銷同意的記錄。
   
- **資料主體權利**
+ **資料主體權力**
   
 GDPR 會建立資料主體權力，這表示，相對於個人資料、客戶、員工、商務合作夥伴、用戶端、合同工、學生、供應商等等，有權：
   

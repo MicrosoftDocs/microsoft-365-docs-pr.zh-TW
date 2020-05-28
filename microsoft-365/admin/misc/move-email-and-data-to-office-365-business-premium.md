@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: 瞭解如何將資料移至新的商務身分識別。
-ms.openlocfilehash: 64db403b27d661fe812acd209ca6ed8e95961125
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: 03a8ff6b3cfab43d80401a10825a1c274e278ed9
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155358"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399323"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>將電子郵件和資料移至 Microsoft 365 商務標準
 
@@ -39,7 +40,7 @@ ms.locfileid: "44155358"
  **複製您的 OneDrive 資料**
 1. 在您的硬碟上建立暫存資料夾，以暫時存放您要遷移至 Microsoft 365 for business 的檔案。
     
-2. 移至[https://onedrive.live.com/](https://onedrive.live.com/)並使用您用來存取 Microsoft 365 家族訂閱的 Microsoft 帳戶登入。 
+2. 移至 [https://onedrive.live.com/](https://onedrive.live.com/) 並使用您用來存取 microsoft 365 家族訂閱的 Microsoft 帳戶登入。 
     
 3. 將您想要用於商務用 Microsoft 365 的檔案複製到您在步驟1中建立的本機資料夾。
     

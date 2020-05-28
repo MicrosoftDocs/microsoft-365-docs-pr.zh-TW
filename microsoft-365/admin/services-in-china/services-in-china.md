@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEU150
@@ -21,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 深入瞭解由世紀運作的 Office 365，其設計目的是為了符合中國安全、可靠及可伸縮的雲端服務的需求。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 6d3facba5beb9398f26ede5345b9121275a47b94
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: f18dd909cedb69e509d6da69e45940337cda8c17
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155406"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399011"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由 21Vianet 運作的 Office 365
 
@@ -178,7 +179,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
 
 |||
 |:-----|:-----|
-|從**File** \> **開啟**的檔案中開啟 Office 應用程式 .。。 按鈕  <br/> |可用。 即將推出漫遊的功能。  <br/> |
+|從開啟**的檔案**中開啟 Office 應用程式 \> ** **.。。 按鈕  <br/> |可用。 即將推出漫遊的功能。  <br/> |
 |在使用 Microsoft 帳戶登入時，儲存至商務用 OneDrive  <br/> |若要在您的國家/地區內保留資料，當您使用 Microsoft 帳戶登入 Office 時，無法將檔儲存至組織網站（OneDrive 商務用）。  <br/> |
 |能夠轉譯文字或頁面  <br/> |此功能可供使用，但預設為關閉。 系統管理員可以將其開啟，但會收到警告訊息，指出可讓您的國家/地區以外的資料存取。  <br/> |
    
@@ -186,7 +187,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
 
 |||
 |:-----|:-----|
-|管理帳戶（從 Office 用戶端內）  <br/> |這項功能，以及要移至 Office 365 入口網站的其他功能，目前指向全球 Office 365 入口網站，您無法使用由您的 Office 365 （由世紀帳戶運作）進行登錄。 這是正修正的已知問題。 同時，您可以使用 URL https://portal.partner.microsoftonline.cn/登入您的帳戶，並從那裡管理設定。 如需詳細資訊，請參閱[Manage a office 365 Pro Plus account for 由世紀運作的 office 365](https://support.office.com/article/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8.aspx)。  <br/> |
+|管理帳戶（從 Office 用戶端內）  <br/> |這項功能，以及要移至 Office 365 入口網站的其他功能，目前指向全球 Office 365 入口網站，您無法使用由您的 Office 365 （由世紀帳戶運作）進行登錄。 這是正修正的已知問題。 同時，您可以使用 URL 登 https://portal.partner.microsoftonline.cn/ 入您的帳戶，並從那裡管理設定。 如需詳細資訊，請參閱[Manage a office 365 Pro Plus account for 由世紀運作的 office 365](https://support.office.com/article/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8.aspx)。  <br/> |
    
 ## <a name="onenote"></a>OneNote
 
