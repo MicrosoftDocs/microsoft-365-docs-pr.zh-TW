@@ -1,5 +1,5 @@
 ---
-title: 澳門特別行政區支援資訊
+title: 澳門特別行政區的支援資訊
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,40 +9,41 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何連絡您的國家或地區的客戶支援。
+description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1f8127e40322fd8e579f0bd144d8960f2bc42210
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b00f395d2edddd717e0805f2ef739b24766b6248
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42357904"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397259"
 ---
-# <a name="contact-support-for-macau-sar"></a><span data-ttu-id="8d619-103">連絡支援人員的澳門特別行政區</span><span class="sxs-lookup"><span data-stu-id="8d619-103">Contact support for Macau SAR</span></span>
+# <a name="contact-support-for-macau-sar"></a><span data-ttu-id="120e0-103">澳門特別行政區的連絡人支援</span><span class="sxs-lookup"><span data-stu-id="120e0-103">Contact support for Macau SAR</span></span>
 
-<span data-ttu-id="8d619-104">[尋找另一個國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="8d619-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="120e0-104">[尋找其他國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="120e0-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="8d619-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="8d619-105">Phone number</span></span>
-<span data-ttu-id="8d619-106">0800 111</span><span class="sxs-lookup"><span data-stu-id="8d619-106">0800 111</span></span>
+## <a name="phone-number"></a><span data-ttu-id="120e0-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="120e0-105">Phone number</span></span>
+<span data-ttu-id="120e0-106">0800 111</span><span class="sxs-lookup"><span data-stu-id="120e0-106">0800 111</span></span>
 
-<span data-ttu-id="8d619-107">撥號後, 輸入</span><span class="sxs-lookup"><span data-stu-id="8d619-107">After dialing, enter</span></span>
+<span data-ttu-id="120e0-107">撥號後，請輸入</span><span class="sxs-lookup"><span data-stu-id="120e0-107">After dialing, enter</span></span>
 
-<span data-ttu-id="8d619-108">877 860 4890</span><span class="sxs-lookup"><span data-stu-id="8d619-108">877 860 4890</span></span>
+<span data-ttu-id="120e0-108">877 860 4890</span><span class="sxs-lookup"><span data-stu-id="120e0-108">877 860 4890</span></span>
 
-## <a name="hours"></a><span data-ttu-id="8d619-109">小時</span><span class="sxs-lookup"><span data-stu-id="8d619-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="8d619-110">帳單支援：</span><span class="sxs-lookup"><span data-stu-id="8d619-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="120e0-109">小時</span><span class="sxs-lookup"><span data-stu-id="120e0-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="120e0-110">帳單支援：</span><span class="sxs-lookup"><span data-stu-id="120e0-110">Billing Support:</span></span>
 
-<span data-ttu-id="8d619-111">廣東： 週一至週五上午 9 點-下午 5 點</span><span class="sxs-lookup"><span data-stu-id="8d619-111">Cantonese: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="120e0-111">Cantonese：週一至週五上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="120e0-111">Cantonese: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="8d619-112">中文： 週一至週五上午 9 點-下午 5 點</span><span class="sxs-lookup"><span data-stu-id="8d619-112">Mandarin: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="120e0-112">僅中文：週一至週五上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="120e0-112">Mandarin: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="8d619-113">英文： 週一至週五上午 9 點-下午 5 點</span><span class="sxs-lookup"><span data-stu-id="8d619-113">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="120e0-113">英文：週一至週五上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="120e0-113">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="8d619-114">技術支援：</span><span class="sxs-lookup"><span data-stu-id="8d619-114">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="120e0-114">技術支援：</span><span class="sxs-lookup"><span data-stu-id="120e0-114">Technical Support:</span></span>
 
-<span data-ttu-id="8d619-115">廣東： 週一至週五上午 9 點-下午 5 點</span><span class="sxs-lookup"><span data-stu-id="8d619-115">Cantonese: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="120e0-115">Cantonese：週一至週五上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="120e0-115">Cantonese: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="8d619-116">中文： 週一至週五上午 9 點-下午 5 點</span><span class="sxs-lookup"><span data-stu-id="8d619-116">Mandarin: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="120e0-116">僅中文：週一至週五上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="120e0-116">Mandarin: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="8d619-117">英文： 每週 7 天，每天 24 小時</span><span class="sxs-lookup"><span data-stu-id="8d619-117">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="120e0-117">英文：每週7天、每天24小時</span><span class="sxs-lookup"><span data-stu-id="120e0-117">English: 24 hours a day, 7 days a week</span></span>

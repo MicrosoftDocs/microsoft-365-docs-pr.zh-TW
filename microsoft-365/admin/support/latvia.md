@@ -1,5 +1,5 @@
 ---
-title: 拉脫維亞支援資訊
+title: 拉脫維亞的支援資訊
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,28 +9,29 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何連絡您的國家或地區的客戶支援。
+description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0cc3004f519b4007f072930d1e924f0b8ada8d3a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 9f76c62b21fa7e8a100c3afb9da4c199e3a62dcd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42358004"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397355"
 ---
-# <a name="contact-support-for-latvia"></a><span data-ttu-id="6c37e-103">拉脫維亞的連絡客戶支援</span><span class="sxs-lookup"><span data-stu-id="6c37e-103">Contact support for Latvia</span></span>
+# <a name="contact-support-for-latvia"></a><span data-ttu-id="0aa3e-103">對拉脫維亞的支援聯繫</span><span class="sxs-lookup"><span data-stu-id="0aa3e-103">Contact support for Latvia</span></span>
 
-<span data-ttu-id="6c37e-104">[尋找另一個國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="6c37e-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="0aa3e-104">[尋找其他國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="0aa3e-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="6c37e-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="6c37e-105">Phone number</span></span>
-<span data-ttu-id="6c37e-106">8000 42 33</span><span class="sxs-lookup"><span data-stu-id="6c37e-106">8000 42 33</span></span>
+## <a name="phone-number"></a><span data-ttu-id="0aa3e-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="0aa3e-105">Phone number</span></span>
+<span data-ttu-id="0aa3e-106">8000 42 33</span><span class="sxs-lookup"><span data-stu-id="0aa3e-106">8000 42 33</span></span>
 
-## <a name="hours"></a><span data-ttu-id="6c37e-107">小時</span><span class="sxs-lookup"><span data-stu-id="6c37e-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="6c37e-108">帳單支援：</span><span class="sxs-lookup"><span data-stu-id="6c37e-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="0aa3e-107">小時</span><span class="sxs-lookup"><span data-stu-id="0aa3e-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="0aa3e-108">帳單支援：</span><span class="sxs-lookup"><span data-stu-id="0aa3e-108">Billing Support:</span></span>
 
-<span data-ttu-id="6c37e-109">英文： 週一至週五上午 9 點-下午 5 點</span><span class="sxs-lookup"><span data-stu-id="6c37e-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="0aa3e-109">英文：週一至週五上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="0aa3e-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="6c37e-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="6c37e-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="0aa3e-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="0aa3e-110">Technical Support:</span></span>
 
-<span data-ttu-id="6c37e-111">英文： 每週 7 天，每天 24 小時</span><span class="sxs-lookup"><span data-stu-id="6c37e-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="0aa3e-111">英文：每週7天、每天24小時</span><span class="sxs-lookup"><span data-stu-id="0aa3e-111">English: 24 hours a day, 7 days a week</span></span>
