@@ -9,19 +9,20 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何連絡您的國家或地區的客戶支援。
+description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ba5bff0335a2261f81365f38ec543c6d252b7a44
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 138c60b4091250140effe48b324abc47fee91707
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42359754"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398411"
 ---
-# <a name="contact-support-for-brazil"></a>巴西連絡客戶支援
+# <a name="contact-support-for-brazil"></a>巴西的連絡人支援
 
-[尋找另一個國家或地區](../contact-support-for-business-products.md)。
+[尋找其他國家或地區](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話號碼
 0800 762 1146
@@ -29,18 +30,18 @@ ms.locfileid: "42359754"
 ## <a name="hours"></a>小時
 ### <a name="billing-support"></a>帳單支援：
 
-葡萄牙文： 週一至週五上午 9 點-下午 5 點
+葡萄牙文：週一至週五上午9點-下午5點
 
-英文： 週一至週五上午 9 點-下午 5 點
+英文：週一至週五上午9點-下午5點
 
 ### <a name="technical-support"></a>技術支援：
 
-葡萄牙文： 每週 7 天，每天 24 小時
+葡萄牙文：一天24小時、每週7天
 
-英文： 每週 7 天，每天 24 小時
+英文：每週7天、每天24小時
 
-替代電話號碼：
+其他電話號碼：
 
 0800 047 4958 （本機免付費電話）
 
-11 4700 1999 （費用套用本機通話）
+11 4700 1999 （本機通話費用適用）

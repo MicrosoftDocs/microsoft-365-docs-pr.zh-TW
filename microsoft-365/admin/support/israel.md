@@ -1,5 +1,5 @@
 ---
-title: 以色列支援資訊
+title: 以色列的支援資訊
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,19 +9,20 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何連絡您的國家或地區的客戶支援。
+description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 55a4d7a9e440cae539cabafcebe97cfaa346c307
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 620db5e60b219ec1d2cc29e3c64ddaffb38babfb
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42358274"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397535"
 ---
-# <a name="contact-support-for-israel"></a>以色列的連絡客戶支援
+# <a name="contact-support-for-israel"></a>支援以色列的連絡人
 
-[尋找另一個國家或地區](../contact-support-for-business-products.md)。
+[尋找其他國家或地區](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話號碼
 1 809 344 179
@@ -29,12 +30,12 @@ ms.locfileid: "42358274"
 ## <a name="hours"></a>小時
 ### <a name="billing-support"></a>帳單支援：
 
-希伯來文： Sun-星期四上午 9 點-下午 6 點
+希伯來文： Sun-Thu 9 AM-6 PM
 
-英文： 週一至週五上午 9 點-下午 6 點
+英文：週一至週五上午9點-下午6點
 
 ### <a name="technical-support"></a>技術支援：
 
-希伯來文： Sun-星期四上午 9 點-下午 6 點
+希伯來文： Sun-Thu 9 AM-6 PM
 
-英文： 每週 7 天，每天 24 小時
+英文：每週7天、每天24小時

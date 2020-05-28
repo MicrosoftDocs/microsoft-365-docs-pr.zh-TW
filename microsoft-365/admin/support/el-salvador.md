@@ -1,5 +1,5 @@
 ---
-title: 薩爾瓦多支援資訊
+title: 薩爾瓦多的支援資訊
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,32 +9,33 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何連絡您的國家或地區的客戶支援。
+description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1696edd8375adbec9eaf16de6a5c8d76c3cd7a6f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 9022eb7457c590a8959dc10be03d8cacf1c9cd98
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42359074"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398015"
 ---
-# <a name="contact-support-for-el-salvador"></a>薩爾瓦多連絡客戶支援
+# <a name="contact-support-for-el-salvador"></a>以薩爾瓦多為中心的支援人員
 
-[尋找另一個國家或地區](../contact-support-for-business-products.md)。
+[尋找其他國家或地區](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話號碼
 800 6676
 
-選取選項 4
+選取選項4
 
-輸入代碼 7007
+輸入程式碼7007
 
 ## <a name="hours"></a>小時
 ### <a name="billing-support"></a>帳單支援：
 
-西班牙文： 週一至週五上午 9 點-下午 5 點
+西班牙文：週一至週五上午9點-下午5點
 
 ### <a name="technical-support"></a>技術支援：
 
-西班牙文： 每週 7 天，每天 24 小時
+西班牙文：每週7天，每天24小時

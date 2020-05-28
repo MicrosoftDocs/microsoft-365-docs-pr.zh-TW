@@ -1,5 +1,5 @@
 ---
-title: 海地支援資訊
+title: 海地的支援資訊
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,34 +9,35 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何連絡您的國家或地區的客戶支援。
+description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 452f3a30403a5e6f9a39df5b712794528d522004
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4d18015d644e5c8733fbc0146d23a360811cf4f4
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42358494"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397667"
 ---
-# <a name="contact-support-for-haiti"></a>針對海地連絡客戶支援
+# <a name="contact-support-for-haiti"></a>針對海地的連絡人支援
 
-[尋找另一個國家或地區](../contact-support-for-business-products.md)。
+[尋找其他國家或地區](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話號碼
-+1 312 843 5147
++ 1 312 843 5147
 
 ## <a name="hours"></a>小時
 ### <a name="billing-support"></a>帳單支援：
 
-法文： 週一至週五上午 3 AM-11
+法文：週一至週五上午4點-11 點
 
-英文： 週一至週五上午 3 AM-11
+英文：週一至週五上午3點到11點
 
 ### <a name="technical-support"></a>技術支援：
 
-法文： 週一至週五上午 2-3 PM
+法文：週一至週五上午2點，下午3點
 
-英文： 每週 7 天，每天 24 小時
+英文：每週7天、每天24小時
 
-國際電話費用
+國際通話費用適用
