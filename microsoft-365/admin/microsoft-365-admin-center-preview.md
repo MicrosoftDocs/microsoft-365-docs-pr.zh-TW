@@ -12,17 +12,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - FRP150
 description: 深入瞭解新的 Microsoft 365 系統管理中心。
-ms.openlocfilehash: 95453380fc693c4313debf5baaa96264d486385b
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 0eeebcd0c96b5f3741c01a2776391ceaa698a40e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952636"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399479"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>關於新的 Microsoft 365 系統管理中心
 
@@ -30,7 +31,7 @@ ms.locfileid: "43952636"
 
 新的 Microsoft 365 系統管理中心是專為 IT 小組建立，以簡化 Microsoft 365 服務的管理方式。 系統管理中心會根據您角色或組織的獨特需求，提供量身定制的經驗，提高日常工作的效率，並提供可行動的觀點，以協助您進行資料導向，以提供更佳的使用者體驗。
 
-Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般進入點，可供存取[https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)。 專業工作區（如安全性或裝置管理），允許更細微的控制。 如需系統管理中心如何一起運作的詳細資訊，請參閱本文稍後[的特定類型的 IT 角色及其他工作區（如安全性、裝置管理或 Exchange）](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) 。
+Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般進入點，可供存取 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) 。 專業工作區（如安全性或裝置管理），允許更細微的控制。 如需系統管理中心如何一起運作的詳細資訊，請參閱本文稍後[的特定類型的 IT 角色及其他工作區（如安全性、裝置管理或 Exchange）](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) 。
 
 ::: moniker-end
 
@@ -38,7 +39,7 @@ Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般
 
 新的 Microsoft 365 系統管理中心（目前是預覽）是為 IT 小組建立，以簡化 Microsoft 365 服務的簡化方式。 系統管理中心會根據您角色或組織的獨特需求，提供量身定制的經驗，提高日常工作的效率，並提供可行動的觀點，以協助您進行資料導向，以提供更佳的使用者體驗。
 
-Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般進入點，可透過登入來存取[https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627)。 此外，專業工作區，如 Azure Active Directory 和 Exchange，允許更精細的控制。 您可以從 Microsoft 365 系統管理中心的功能窗格中存取專家工作區。
+Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般進入點，可透過登入來存取 [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627) 。 此外，專業工作區，如 Azure Active Directory 和 Exchange，允許更精細的控制。 您可以從 Microsoft 365 系統管理中心的功能窗格中存取專家工作區。
 
 ::: moniker-end
 
@@ -118,13 +119,13 @@ Microsoft 365 是完整的智慧解決方案，包括 Office 365、Windows 10 �
 
 ## <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>IT 角色的特定類型及其他工作區（如安全性、裝置管理或 Exchange）的情況為何？
 
-Microsoft 365 系統管理中心是所有用來管理 Microsoft 365 的團隊和角色的一般進入點。 您可以針對每個系統管理員和角色，量身定制和自訂經驗、資訊和控制項。 此外，專業工作區允許深度、精細的控制。 這些專家工作區包括 SharePoint、 &amp;小組 Skype、Exchange、安全性、規範、裝置管理和 Azure Active Directory。 您可以從 Microsoft 365 系統管理中心的流覽窗格中，找到專家工作區[https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)。
+Microsoft 365 系統管理中心是所有用來管理 Microsoft 365 的團隊和角色的一般進入點。 您可以針對每個系統管理員和角色，量身定制和自訂經驗、資訊和控制項。 此外，專業工作區允許深度、精細的控制。 這些專家工作區包括 SharePoint、小組 &amp; Skype、Exchange、安全性、規範、裝置管理和 Azure Active Directory。 您可以從 Microsoft 365 系統管理中心的流覽窗格中，找到專家工作區 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) 。
   
 更新所有系統管理中心以取得一致的經驗，但您可以深入瞭解已開始 makeover 的系統管理中心：
   
 - [開始使用新 SharePoint 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2024186)
     
-- [在轉換至新的 Microsoft 團隊&amp;商務用 Skype 系統管理中心時管理團隊](https://go.microsoft.com/fwlink/?linkid=2024308)
+- [在轉換至新的 Microsoft 團隊商務用 Skype 系統管理中心時管理團隊 &amp;](https://go.microsoft.com/fwlink/?linkid=2024308)
     
 - [Microsoft 365 裝置管理的概述](https://go.microsoft.com/fwlink/?linkid=2006262)
     

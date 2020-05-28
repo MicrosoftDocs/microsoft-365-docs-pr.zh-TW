@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: 瞭解如何在 Microsoft 365 購買時，新增訂閱顧問合作夥伴作為記錄的合作夥伴，變更合作夥伴或從訂閱刪除合作夥伴。
-ms.openlocfilehash: daefb83335af84403cb2dd4e9c7759700eab8278
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: fa9cd549c0af616776722f6d2be4ecb9ecac1bc7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045281"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399467"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>新增、變更或刪除訂閱顧問合作夥伴
 
@@ -114,23 +115,23 @@ ms.locfileid: "44045281"
 > [!NOTE]
 > 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
     
 2. 如果您有一個以上的訂閱，請選取您要編輯的訂閱。
   
 3. 在 [訂閱] 頁面上，選取 [**夥伴**] 索引標籤，然後輸入您要新增之合作夥伴的夥伴網路識別碼。請詢問合作夥伴，以取得協力廠商的 MICROSOFT 合作夥伴識別碼。
     
-4. 選取 [新增]****。
+4. 選取 **[新增]**。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
     
 2. 如果您有一個以上的訂閱，請選取您要編輯的訂閱。
   
-3. 在右側的 [訂閱成本] 底下，選擇 [**其他動作** > ] [**新增記錄的夥伴**]。
+3. 在右側的 [訂閱成本] 底下，選擇 [**其他動作**] [ > **新增記錄的夥伴**]。
 
 4. 輸入您要新增之合作夥伴的 Microsoft 合作夥伴 ID、選取 [**檢查 ID**]，然後再進行**提交**。 您可以詢問合作夥伴，以取得對方的 Microsoft 合作夥伴識別碼。
 
@@ -161,7 +162,7 @@ ms.locfileid: "44045281"
 > [!NOTE]
 > 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
     
 2. 如果您有多個訂閱，請選取您要編輯的訂閱名稱。
     
@@ -173,7 +174,7 @@ ms.locfileid: "44045281"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
   
 2. 如果您有多個訂閱，請選取您要編輯的訂閱名稱。
     
@@ -185,7 +186,7 @@ ms.locfileid: "44045281"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
   
 2. 如果您有多個訂閱，請選取您要編輯的訂閱名稱。
     
@@ -198,7 +199,7 @@ ms.locfileid: "44045281"
 
 ## <a name="view-your-partner-relationships"></a>查看您的合作夥伴關係
 
-- 在系統管理中心中，移至 [**設定** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">合作夥伴關係</a>] 頁面。 您的合作夥伴已列于此頁面上。 
+- 在系統管理中心中，移至 [**設定**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">合作夥伴關係</a>] 頁面。 您的合作夥伴已列于此頁面上。 
   
   如果您沒有合作夥伴，您會看到訊息說「這裡沒有任何反應」。
   
@@ -209,7 +210,7 @@ ms.locfileid: "44045281"
 > [!NOTE]
 > 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
-1.  在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1.  在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
     
 2. 如果您有多個訂閱，請選取您要編輯的訂閱名稱。
     
@@ -221,7 +222,7 @@ ms.locfileid: "44045281"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
 
 2. 如果您有多個訂閱，請選取您要編輯的訂閱名稱。
     
@@ -233,7 +234,7 @@ ms.locfileid: "44045281"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
 
 2. 如果您有多個訂閱，請選取您要編輯的訂閱名稱。
     

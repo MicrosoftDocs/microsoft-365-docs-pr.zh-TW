@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '瞭解如何將私人信箱轉換為可供多位使用者存取的共用信箱。 '
-ms.openlocfilehash: 51817001b02c1dd5dd0e82f5795ef1a3f66bf7c7
-ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
+ms.openlocfilehash: c4f71f12b430e239f5ea5791ba5b98a3109452b0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44162695"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400109"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>將使用者信箱轉換為共用信箱
 
@@ -44,7 +45,7 @@ ms.locfileid: "44162695"
  
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>。
 
-2. \>選取 **[** 收件者]**信箱**。
+2. 選取 **[** 收件者] \> **信箱**。
 
 3. 選取使用者信箱。 在 [**轉換為共用信箱**] 底下，選取 [**轉換**]。
 
@@ -117,7 +118,7 @@ ms.locfileid: "44162695"
 
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>。
    
-2. \>選取 **[** **共用**收件者]。
+2. 選取 **[** 共用收件者] \> ** **。
 
 3. 選取共用信箱。 在 [**轉換為一般信箱**] 底下，選取 [**轉換**]。
 

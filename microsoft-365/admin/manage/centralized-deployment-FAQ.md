@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 從 Microsoft 365 系統管理中心，回顧有關集中式部署的常見問題解答。
-ms.openlocfilehash: c389ab07136b8a6e625db9ecfeff514a6899cd7d
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 0d0f2163982042f7b8f868a36f5cc115a17295a2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011732"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399821"
 ---
 # <a name="centralized-deployment-faq"></a>集中式部署常見問題集
 
@@ -35,7 +36,7 @@ ms.locfileid: "44011732"
  
 僅支援線上信箱的集中式部署。 它不支援部署至內部部署 Exchange 信箱。
  
-您可以使用[Office 365 集中式部署相容性檢查](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker) 程式，判斷您的訂閱是否符合資格。 
+您可以使用[Office 365 集中式部署相容性檢查](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)   程式，判斷您的訂閱是否符合資格。 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>如何使用集中式部署來瞄準增益集使用者的指派？  
 
@@ -59,7 +60,7 @@ ms.locfileid: "44011732"
 
 是。 集中式部署為系統管理員提供彈性，為增益集部署期間的 Outlook 增益集選擇三種部署方法之一：
 
-**Fixed （預設值）**  增益集會自動部署至指派的使用者，且無法加以移除。  
+**固定（預設值）**  增益集會自動部署至指派的使用者，且無法加以移除。  
  
 **可用**使用者可以在 Outlook 中安裝增益集，方法是選擇 [首頁] > > 管理管理] 中取得更多增益集。   
  

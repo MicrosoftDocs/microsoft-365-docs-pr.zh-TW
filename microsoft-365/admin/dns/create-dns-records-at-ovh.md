@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft OVH。
-ms.openlocfilehash: 18ddcba9cdb4f45f624d32369db07b24f9a357cf
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: b462979a3ab1bcf769c78d15d9fd3ad03f307ef0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048912"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400337"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>在 OVH 建立 Microsoft 的 DNS 記錄
 
@@ -83,7 +84,7 @@ ms.locfileid: "44048912"
     
     |**記錄類型**|**子域**|**TTL**|**值**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |(保留空白)  <br/> |3600（秒）  <br/> |MS= msxxxxxxxx  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |TXT  <br/> |(保留空白)  <br/> |3600（秒）  <br/> |MS= msxxxxxxxx  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. 選取 [**確認**]。 
     
@@ -140,9 +141,9 @@ ms.locfileid: "44048912"
     > [!NOTE]
     > 依預設，OVH 會對目標使用相對符號，將功能變數名稱新增至目標記錄的結尾。 若要改為使用絕對標記法，請將點新增至目標記錄，如下表所示。 
   
-    |**記錄類型**|**子域**|**TTL**|**Priority** (優先順序)|**Target** (目標)|
+    |**記錄類型**|**子域**|**TTL**|**優先順序**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(保留空白)  <br/> |3600（秒）  <br/> |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |\<網域金鑰\>。 mail.protection.outlook.com  <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(保留空白)  <br/> |3600（秒）  <br/> |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |\<domain-key\>mail.protection.outlook.com。  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![郵件的 OVH MX 記錄](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -187,7 +188,7 @@ ms.locfileid: "44048912"
     
     在每一筆新記錄的方塊中，輸入或複製並貼上下表第一列中的值。 若要指派 TTL 值，請從下拉式清單中選擇 [**個人**化]，然後在文字方塊中輸入值。 
     
-    |**記錄類型**|**子域**|**Target** (目標)|**TTL**|
+    |**記錄類型**|**子域**|**Target**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com。  <br/> |3600秒  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com。  <br/> |3600秒  <br/> |
@@ -274,10 +275,10 @@ ms.locfileid: "44048912"
     
     在每一筆新記錄的方塊中，輸入或複製並貼上下表第一列中的值。 若要指派 TTL 值，請從下拉式清單中選擇 [**個人**化]，然後在文字方塊中輸入值。 
     
-    |**記錄類型**|**子域**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**TTL**|**Target** (目標)|
+    |**記錄類型**|**子域**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service) (SRV (服務))  <br/> |_sip。 _tls  <br/> |100  <br/> |1  <br/> |443  <br/> |3600（秒）  <br/> |sipdir.online.lync.com。  <br/> |
-    |SRV (Service) (SRV (服務))  <br/> |_sipfederationtls。 _tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600（秒）  <br/> |sipfed.online.lync.com。  <br/> |
+    |SRV (Service) (SRV (服務))  <br/> |_sip。 _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |3600（秒）  <br/> |sipdir.online.lync.com。  <br/> |
+    |SRV (Service) (SRV (服務))  <br/> |_sipfederationtls。 _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600（秒）  <br/> |sipfed.online.lync.com。  <br/> |
        
     ![OVH SRV 記錄](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   

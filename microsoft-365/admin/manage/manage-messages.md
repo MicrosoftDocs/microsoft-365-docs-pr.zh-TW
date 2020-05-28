@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: 瞭解如何管理郵件中心訊息，以協助變更管理。
-ms.openlocfilehash: 95a4544dd99ebce793242532ae144f00c3b16fcb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 63c46b10913b3388c833470041da3695f0988327
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628145"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399713"
 ---
 # <a name="manage-messages-in-message-center"></a>在訊息中心管理郵件
 
@@ -32,7 +33,7 @@ ms.locfileid: "43628145"
   
 ## <a name="read-a-message"></a>閱讀郵件
 
-若要移至消息中心，請移至系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)，然後選取 [**狀況** > **訊息中心**]。 
+若要移至消息中心，請移至系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)，然後選取 [**狀況**  >  **訊息中心**]。 
 
 選取郵件標題，以在讀取窗格中開啟它。 每封郵件都包含變更摘要、變更對您有何影響的說明、您如何準備組織以進行變更的相關資訊，以及（在大多數情況下）您可以在其中深入瞭解的其他資訊連結。 即使郵件到期，其他資訊仍可繼續使用。
 
@@ -111,7 +112,7 @@ ms.locfileid: "43628145"
 
 1. 選取郵件以加以開啟。
 
-2. \>選擇 **[** 從動作欄**取得連結**]。
+2. 選擇**More** \> [從動作欄**取得連結**]。
 
 3. 允許網頁存取您的剪貼簿。 直接連結會複製到您的剪貼簿。
 
@@ -123,7 +124,7 @@ ms.locfileid: "43628145"
 
 1. 選取郵件以加以開啟。
 
-2. \>選擇 **[** 從動作欄**取得連結**]。
+2. 選擇**More** \> [從動作欄**取得連結**]。
 
 3. 允許網頁存取您的剪貼簿。 直接連結會複製到您的剪貼簿。
 

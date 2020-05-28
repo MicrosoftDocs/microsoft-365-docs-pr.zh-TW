@@ -21,17 +21,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: 協助您的使用者在 Windows 10 裝置上安裝 Office 應用程式，並在 Microsoft 365 系統管理中心輕鬆安裝 Windows 10 電腦上的 Office。
-ms.openlocfilehash: a7078ad6d7423900aefba47605cb2b2852856108
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 617942c08b1fb27e8e864906774b4120486e0bb3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627195"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400903"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>協助您的使用者在 Windows 10 裝置上安裝 Office
 
@@ -49,7 +50,7 @@ ms.locfileid: "43627195"
 
 ## <a name="manage-office-deployments"></a>管理 Office 部署
 
-1. 移至 [系統管理中心] <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>，然後使用全域系統管理員認證登入。 
+1. 移至 [系統管理中心] <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> ，然後使用全域系統管理員認證登入。 
 
 2. 移至左導覽窗格中的 [**安裝程式**]，然後在 [**安裝程式**] 頁面上，滾動至 [**應用程式和更新**]。
     > [!NOTE]
@@ -64,4 +65,4 @@ ms.locfileid: "43627195"
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>如需設定及使用 Microsoft 365 商務版 Premium 的詳細資訊
 
-[Microsoft 365 商務用訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[商務用 Microsoft 365 訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

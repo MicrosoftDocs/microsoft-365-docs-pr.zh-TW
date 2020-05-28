@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以在 Microsoft 的 Windows 基礎 DNS 上進行。
-ms.openlocfilehash: 1aaf81dddf27911ad3562bec6f56fb34c64fd37d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 8f65a397552813f22d4bde82f7fcd51c478d82bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048840"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400241"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>使用以 Windows 為基礎的 DNS 建立 Microsoft 的 DNS 記錄
 
@@ -38,21 +39,21 @@ ms.locfileid: "44048840"
 新增 DNS 記錄後，出現郵件流程或其他問題的相關問題，請參閱[疑難排解變更功能變數名稱或 DNS 記錄後的問題](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>在 Windows 架構的 DNS 中尋您的 DNS 記錄
-<a name="BKMK_find_your_dns_1"> </a>移至具有您網域之 DNS 記錄的頁面。 如果您是在 Windows Server 2008 中工作，請移至**開始** > **執行**。 如果您是在 Windows Server 2012 中工作，請按 Windows 鍵和**r**。 輸入**dnsmgmnt**，然後選取 **[確定]**。 在 [dns 管理員] 中，展開** \<[dns 伺服器名稱\> \>正向對應區域  **]。 選取您的網域。 您現在可以建立 DNS 記錄了！
+<a name="BKMK_find_your_dns_1"> </a>移至具有您網域之 DNS 記錄的頁面。 如果您是在 Windows Server 2008 中工作，請移至**開始**  >  **執行**。 如果您是在 Windows Server 2012 中工作，請按 Windows 鍵和**r**。 輸入**dnsmgmnt**，然後選取 **[確定]**。 在 [DNS 管理員] 中，展開 [ ** \<DNS server name\> \> 正向對應區域  **]。 選取您的網域。 您現在可以建立 DNS 記錄了！
    
 ## <a name="add-mx-record"></a>新增 MX 記錄
 <a name="BKMK_add_MX"> </a>
 
 新增 MX 記錄，使您網域的電子郵件將會傳送給 Microsoft。
-- 您要新增的 MX 記錄包含一個類似 \<MX token\>.mail.protection.outlook.com 的值 (**[指向位址]** 值)，其中 \<MX token\> 值類似 MSxxxxxxx。 
+- 您將新增的 MX 記錄會包含類似如下的值（**指向位址**值） \<MX token\> 。 mail.protection.outlook.com，其中 \<MX token\> 是像是 MSxxxxxxx 的值。 
 - 從 Microsoft 的 [新增 DNS 記錄] 頁面的 [Exchange Online] 區段中的 [MX] 列中，複製列于 [位址] 底下的值。 您將會在您要建立的記錄中使用此值。 
-- 在網域的 [DNS 管理員] 頁面上，移至 [**動作** > **郵件交換器（MX）**]。 若要尋找網域的此頁面，請參閱[在 Windows 型 dns 中尋找您的 DNS 記錄](#find-your-dns-records-in-windows-based-dns)。  
+- 在網域的 [DNS 管理員] 頁面上，移至 [**動作**  >  **郵件交換器（MX）**]。 若要尋找網域的此頁面，請參閱[在 Windows 型 dns 中尋找您的 DNS 記錄](#find-your-dns-records-in-windows-based-dns)。  
 - 在 [**新增資源記錄**] 對話方塊中，確定已將欄位設定為嚴格下列值： 
     - 主機名稱： 
     - @Address：將點貼到您剛剛從 Microsoft 複製的位址值。  
     - Pref: 
 - 選取 [**儲存變更**]。
-- 移除任何過時的 MX 記錄。 如果您有此網域的任何舊版 MX 記錄，可將電子郵件路由傳送至其他地方，請選取每個舊記錄旁邊的核取方塊，然後選取 [**刪除** > **確定]**。 
+- 移除任何過時的 MX 記錄。 如果您有此網域的任何舊版 MX 記錄，可將電子郵件路由傳送至其他地方，請選取每個舊記錄旁邊的核取方塊，然後選取 [**刪除**  >  **確定]**。 
    
 ## <a name="add-cname-records"></a>新增 CNAME 記錄
 <a name="BKMK_add_CNAME"> </a>
@@ -62,7 +63,7 @@ ms.locfileid: "44048840"
 > [!IMPORTANT]
 > 如果您有 Microsoft 的行動裝置管理（MDM），則必須建立兩個額外的 CNAME 記錄。 請按照您針對其他四筆 CNAME 記錄所進行的程序執行，但提供下表的值。 （如果您沒有 MDM，您可以略過此步驟。） 
 
-- 在網域的 [DNS 管理員] 頁面上，移至 [**動作** > **CNAME （cname）**]。
+- 在網域的 [DNS 管理員] 頁面上，移至 [**動作**  >  **CNAME （cname）**]。
 - 在 [**新增資源記錄**] 對話方塊中，確定已將欄位設定為嚴格下列值：  
     - 主機名稱：自動探索
     - 類型： 
@@ -132,7 +133,7 @@ ms.locfileid: "44048840"
 新增 Microsoft 所需的兩筆 SRV 記錄。
 
 為商務用 Skype Online Web 會議新增 SIP SRV 記錄。  <br/> 
--  在您網域的 [DNS 管理員] 頁面上，移至 [**動作** \> ] [**其他新記錄**]。 
+-  在您網域的 [DNS 管理員] 頁面上，移至 [**動作**] [ \> **其他新記錄**]。 
 -   在 [**資源記錄類型**] 視窗中，選取 [**服務位置（SRV）**]，然後選取 [**建立記錄**]。 
 -   在 [**新增資源記錄**] 對話方塊中，確定已將欄位設定為嚴格下列值：  
     -  服務： _sip
@@ -145,7 +146,7 @@ ms.locfileid: "44048840"
 
 
 為商務用 Skype Online 同盟新增 SIP SRV 記錄。  
--  在您網域的 [DNS 管理員] 頁面上，移至 [**動作** \> ] [**其他新記錄**]。  
+-  在您網域的 [DNS 管理員] 頁面上，移至 [**動作**] [ \> **其他新記錄**]。  
 -  在 [**資源記錄類型**] 視窗中，選取 [**服務位置（SRV）**]，然後選取 [**建立記錄**]。 
 -   在 [**新增資源記錄**] 對話方塊中，確定已將欄位設定為嚴格下列值：  
     -  服務： _sipfederationtls
@@ -183,7 +184,7 @@ ms.locfileid: "44048840"
 - 主機名稱：@
 - 類型： TXT
 - Address：貼上您剛從 Microsoft 複製的目的地或指向位址值。  
-- 選取 **[確定** > **完成**]。
+- 選取 **[確定**  >  **完成**]。
 
 在 Microsoft 中驗證您的網域。  
 > [!IMPORTANT]

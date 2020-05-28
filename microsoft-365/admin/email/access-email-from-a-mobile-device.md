@@ -12,16 +12,17 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解如何從行動裝置存取電子郵件。
-ms.openlocfilehash: 42784d652d26222fc53b3e11f3427cf286cb32dd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 594091776025adcb7bbd92e2fa982cda36d50053
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048816"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400193"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>從行動裝置存取電子郵件的選項
 

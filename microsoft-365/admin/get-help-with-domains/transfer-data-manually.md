@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: 尋找當您變更計畫或公司名稱時，如何在兩部 Microsoft 365 帳戶之間手動傳輸資料，或將多個訂閱組合為一個。
-ms.openlocfilehash: 1eaaf48f445eb54ebf91b96924c39e9062eea4fb
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 69476687915024accabdce2a603ebdd7e8b653af
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053737"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399869"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>在兩個帳戶間手動傳輸資料
 
@@ -61,16 +62,16 @@ Microsoft 365 企業版和 Microsoft 365 中型企業版：
   
 |**位置**|**用途**|
 |:-----|:-----|
-|**Admin** \> **Microsoft 365** \> **服務設定** <br/> |選取每個索引標籤，以查看郵件、網站、Lync、使用者軟體、密碼、群組、版權管理及行動裝置的設定。  <br/> |
-|系統**管理員** \> **Exchange** <br/> | Exchange Online 設定  <br/> |
-|系統**管理員** \> **SharePoint** <br/> | SharePoint 線上設定  <br/> |
-|**管理** \> **商務用 Skype** <br/> |其他商務用 Skype 設定  <br/> |
+|系統**管理員** \>**Microsoft 365** \>**服務設定** <br/> |選取每個索引標籤，以查看郵件、網站、Lync、使用者軟體、密碼、群組、版權管理及行動裝置的設定。  <br/> |
+|系統**管理員** \>**Exchange** <br/> | Exchange Online 設定  <br/> |
+|系統**管理員** \>**SharePoint** <br/> | SharePoint 線上設定  <br/> |
+|系統**管理員** \>**商務用 Skype** <br/> |其他商務用 Skype 設定  <br/> |
 
 適用于 Microsoft 365 Small Business
   
 |**位置**|**用途**|
 |:-----|:-----|
-|系統**管理員** \> **管理整個組織的設定** <br/> |管理設定  <br/> |
+|系統**管理員** \>**管理整個組織的設定** <br/> |管理設定  <br/> |
 
 ## <a name="transfer-a-public-website-between-subscriptions"></a>在訂閱間傳輸公用網站
 

@@ -16,17 +16,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: 瞭解如何在 Windows 10 電腦上自動安裝32位 Office 應用程式，並將其保持更新。
-ms.openlocfilehash: b5f01bc9bb10765929f3c6bdd5908e8b48a51a11
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6f3a80be9729a3818607c0f42e2cc7ece66a07ee
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633092"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401315"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>Microsoft 365 for business 準備 Office 用戶端部署
 
@@ -69,5 +70,5 @@ ms.locfileid: "43633092"
 |現有的 MSI Office 2013 (或更舊版本) 安裝和/或獨立版本 Office App  <br/> |無  <br/> |隨選即用 32 位元版本的 Office 2016 與既有的 MSI Office 安裝 (和獨立版本 App) 並存  <br/> |
 ||||
    
- **（\*）注意：** 不會升級為 Click-to-Run 32 位版本的 Office 2016，因為有已知的錯誤。 修正程式正在進行中。 
+ **（ \* ）注意：** 由於已知的錯誤，不會升級為 Click-to-Run 32 位版本的 Office 2016。 修正程式正在進行中。 
   

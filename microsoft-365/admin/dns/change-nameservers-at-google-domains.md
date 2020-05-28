@@ -14,29 +14,30 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
 description: 瞭解如何設定 Microsoft 以管理 Google 網域的自訂網域的 DNS 記錄。
-ms.openlocfilehash: ac2f98a6ff783917d88a2bd8d28e8242e0ba41a8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 65649632b5e28e97909d91ca3e04355375afe3ac
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629896"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400650"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-google-domains"></a>變更名稱伺服器以設定 Microsoft 搭配 Google 網域
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。 （如果您願意，您可以[管理 Google 網域中的所有 DNS 記錄](create-dns-records-at-google-domains.md)。）
   
     
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 
-在將您的網域與 Microsoft 搭配使用之前，我們必須先確認您擁有該網域。 您能夠在您的網域註冊機構登入您的帳戶，並為您擁有網域的 Microsoft 建立 DNS 記錄證明。
+在您將自己的網域用於 Microsoft 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Microsoft 就能確信您擁有該網域。
   
 > [!NOTE]
 >  這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
@@ -57,28 +58,28 @@ ms.locfileid: "43629896"
     
 |||||
 |:-----|:-----|:-----|:-----|
-|**名稱** <br/> |**Type** <br/> |**TTL** <br/> |**資料** <br/> |
-|@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX* <br/> **附註：** 這是範例。 從表格中，使用您的特定**目的地或指向位址**值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
+|**Name** <br/> |**Type** <br/> |**TTL** <br/> |**資料** <br/> |
+|@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX* <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
    
-4. 選取 [新增]****。
+4. 選取 **[新增]**。
     
 5. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
 現在，您已在網域註冊機構的網站上新增記錄，您會回到 Microsoft 並要求搜尋該記錄。
   
-當 Microsoft 找到正確的 TXT 記錄後，您的網域就會經過驗證。
+在 Microsoft 找到正確的 TXT 記錄後，您的網域就完成驗證了。
   
-1. 在 Microsoft 系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+1. 在 Microsoft 系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
 
     
 2. 在 **[網域]** 頁面上，選取您要驗證的網域。 
     
 3. 在 **[設定]** 頁面上，選取 **[開始設定]**。
     
-4. 在 [驗證網域]**** 頁面上，選取 [驗證]****。
+4. 在 **[驗證網域]** 頁面上，選取 **[驗證]**。
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 如果您在新增 DNS 記錄後遇到郵件流程或其他問題的問題，請參閱[尋找並修正新增您的網域或 DNS 記錄後的問題](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>變更您網域的名稱伺服器 (NS) 記錄
 
@@ -133,7 +134,7 @@ ms.locfileid: "43629896"
     
     重複這個程序，直到四筆名稱伺服器記錄全部建立完畢。
     
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
     
     ![Google-網域-BP-重新委派-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
@@ -174,7 +175,7 @@ ms.locfileid: "43629896"
     
     重複這個程序，直到四筆名稱伺服器記錄全部建立完畢。
     
-6. 選取 **[儲存]**。
+6. 選取 [儲存]****。
     
     ![Google-網域-BP-重新委派-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   

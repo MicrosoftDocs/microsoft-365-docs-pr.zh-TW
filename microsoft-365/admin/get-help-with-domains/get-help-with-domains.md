@@ -14,18 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 28343f3a-dcee-41b6-9b97-5b0f4999b7ef
 description: 開始針對 Office 365 中的電子郵件、網站和帳戶使用您自己的網域。 深入瞭解網域、變更您的網域、整合電子郵件與網站，以及取得工具和秘訣。
-ms.openlocfilehash: f1b159f33d60c9a927f495b5bdce8a8eb24e9a44
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1d3e7fb12f497d512693b8289f072106173356bb
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42897025"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399917"
 ---
 # <a name="get-help-with-office-365-domains"></a>取得 Office 365 網域的說明
 
@@ -152,7 +153,7 @@ ms.locfileid: "42897025"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>入門</h3>
+                        <h3>開始使用</h3>
                             <p><a href="../setup/add-domain.md">驗證您的網域 (證明您擁有該網域)</a></p>
                             <p><a href="information-for-dns-records.md">收集建立 DNS 記錄所需的資訊</a></p>
                             <p><a href="find-your-domain-registrar.md">尋找網域的註冊機構</a></p>

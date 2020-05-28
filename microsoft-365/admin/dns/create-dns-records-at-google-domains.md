@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
 description: 瞭解如何驗證您的網域，並為 Microsoft 的 Google 網域上的電子郵件、Lync 及其他服務設定 DNS 記錄。
-ms.openlocfilehash: 6bfe32ba8f77adec97f4ab5ee40e92126be91f10
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: e6b1dd1eb90957a4e7fe22bd4b66ac87b2a51d09
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049008"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400446"
 ---
 # <a name="create-dns-records-at-google-domains-for-microsoft"></a>在 Google 網域上建立 Microsoft 的 DNS 記錄
 
@@ -65,9 +66,9 @@ ms.locfileid: "44049008"
     |||||
     |:-----|:-----|:-----|:-----|
     |**Name** <br/> |**Type** <br/> |**TTL** <br/> |**資料** <br/> |
-    |@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
-4. 選取 [新增]****。
+4. 選取 **[新增]**。
     
 5. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
@@ -75,14 +76,14 @@ ms.locfileid: "44049008"
   
 在 Microsoft 找到正確的 TXT 記錄後，您的網域就完成驗證了。
   
-1. 在 Microsoft 系統管理中心中，移至 [設定]**** \> [網域]<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> 頁面。
+1. 在 Microsoft 系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
 
     
 2. 在 **[網域]** 頁面上，選取您要驗證的網域。 
     
 3. 在 **[設定]** 頁面上，選取 **[開始設定]**。
     
-4. 在 [驗證網域]**** 頁面上，選取 [驗證]****。
+4. 在 **[驗證網域]** 頁面上，選取 **[驗證]**。
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
@@ -119,11 +120,11 @@ ms.locfileid: "44049008"
     
     |**Name**|**Type**|**TTL**|**資料**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1H  <br/> |0  *\<網域金鑰\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **0**是 MX 優先順序值。 請將它新增到 MX 值的開頭，並以空格分隔該值的其餘部分。  <br/> **注意：** 從您的 Microsoft 帳戶取得您的\<*網域金鑰*\>。  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |@  <br/> |MX  <br/> |1H  <br/> |*\<domain-key\>* mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **0**是 MX 優先順序值。 請將它新增到 MX 值的開頭，並以空格分隔該值的其餘部分。  <br/> **附注：**\<*domain-key*\>從您的 Microsoft 帳戶取得。  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
     ![在自訂資源記錄區段中輸入或貼上值](../../media/b660ca9e-984d-449f-ae59-a65fe4e2c6bd.png)
   
-5. 選取 [新增]****。
+5. 選取 **[新增]**。
     
     ![選取 [新增]](../../media/32f8f23c-0b80-48da-b08e-4e04052971af.png)
   
@@ -145,7 +146,7 @@ ms.locfileid: "44049008"
   
 ## <a name="add-the-five-cname-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的五個 CNAME 記錄
 
-1. 若要開始，請移至 [Google 網域] 頁面]https://domains.google.com/registrar) （並登入。
+1. 若要開始，請移至 [Google 網域] 頁面] （ https://domains.google.com/registrar) 並登入。
     
 2. 在 [**網域**] 頁面上的 [**網域**] 區段中，針對您要編輯的網域選取 [**設定 DNS** ]。 
     
@@ -167,7 +168,7 @@ ms.locfileid: "44049008"
    
     ![在自訂資源記錄區段中輸入或貼上值](../../media/cff9832a-6d57-421f-a183-55320974ed87.png)
   
-4. 選取 [新增]****。
+4. 選取 **[新增]**。
     
     ![選取 [新增]](../../media/4a78080a-e0b2-4582-9696-3fe4fea41e91.png)
   
@@ -246,7 +247,7 @@ ms.locfileid: "44049008"
    
     ![在自訂資源記錄區段中輸入或貼上值](../../media/429d06a9-c0af-4961-b7d2-7a8dea6db37e.png)
   
-6. 選取 [新增]****。
+6. 選取 **[新增]**。
     
     ![選取 [新增]](../../media/89df6efd-e641-4441-baa2-d9a890424569.png)
   

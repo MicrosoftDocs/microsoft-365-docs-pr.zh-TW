@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Hostgator。
-ms.openlocfilehash: fb510bcdcdefb141535e9a1099e18b63adffd2ab
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 8adfc4b6154dad0da7dd2fe037c73fcfc4f84d58
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048996"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400434"
 ---
 # <a name="create-dns-records-at-hostgator-for-microsoft"></a>在 Hostgator 建立 Microsoft 的 DNS 記錄
 
@@ -77,7 +78,7 @@ ms.locfileid: "44048996"
   
 1. 若要開始使用，請移至您位於 Hostgator 的 cPanel 頁面。系統會提示您先登入。
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 Nm-server-w15-cpanel-short 位址應該如下所示https://YourSiteAddress:secure-port-number：。 您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且**主控**頁面也可以使用 nm-server-w15-cpanel-short 連結。
+    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 Nm-server-w15-cpanel-short 位址應該如下所示： https://YourSiteAddress:secure-port-number 。 您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且**主控**頁面也可以使用 nm-server-w15-cpanel-short 連結。
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 若要開始使用 Microsoft，您可以從 Hostgator 或重新委派名稱伺服器購買主控帳戶，[以指向 Microsoft](change-nameservers-at-hostgator.md)。 
@@ -91,7 +92,7 @@ ms.locfileid: "44048996"
     |||||
     |:-----|:-----|:-----|:-----|
     |**Name** <br/> |**TTL** <br/> |**類型** <br/> |**TXT Data** <br/> |
-    |使用您的*domain_name*。 (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |使用您的*domain_name*。 (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. 選取 [**新增記錄**]。
     
@@ -107,7 +108,7 @@ ms.locfileid: "44048996"
     
 3. 在 **[設定]** 頁面上，選取 **[開始設定]**。
     
-4. 在 [驗證網域]**** 頁面上，選取 [驗證]****。
+4. 在 **[驗證網域]** 頁面上，選取 **[驗證]**。
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
@@ -120,7 +121,7 @@ ms.locfileid: "44048996"
   
 1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 Nm-server-w15-cpanel-short 位址應該如下所示https://YourSiteAddress:secure-port-number：。 您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且**主控**頁面也可以使用 nm-server-w15-cpanel-short 連結。
+    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 Nm-server-w15-cpanel-short 位址應該如下所示： https://YourSiteAddress:secure-port-number 。 您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且**主控**頁面也可以使用 nm-server-w15-cpanel-short 連結。
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 若要開始使用 Microsoft，您可以從 Hostgator 或重新委派名稱伺服器購買主控帳戶，[以指向 Microsoft](change-nameservers-at-hostgator.md)。 
@@ -134,9 +135,9 @@ ms.locfileid: "44048996"
   
 5. 在 [新增**記錄**] 區域的新記錄方塊中，輸入或複製並貼上下表中的值。 
     
-    |**Priority** (優先順序)|**目的地**|
+    |**優先順序**|**目的地**|
     |:-----|:-----|
-    |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附注：** 從您\<的 Microsoft 帳戶取得您的*網域金鑰*\> 。    [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **附注：**\< *domain-key*  \>從您的 Microsoft 帳戶取得。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
   
 6. 選取 [**新增記錄**]。
    
@@ -152,7 +153,7 @@ ms.locfileid: "44048996"
   
 1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 Nm-server-w15-cpanel-short 位址應該如下所示https://YourSiteAddress:secure-port-number：。 您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且**主控**頁面也可以使用 nm-server-w15-cpanel-short 連結。
+    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 Nm-server-w15-cpanel-short 位址應該如下所示： https://YourSiteAddress:secure-port-number 。 您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且**主控**頁面也可以使用 nm-server-w15-cpanel-short 連結。
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 若要開始使用 Microsoft，您可以從 Hostgator 或重新委派名稱伺服器購買主控帳戶，[以指向 Microsoft](change-nameservers-at-hostgator.md)。 
@@ -193,7 +194,7 @@ ms.locfileid: "44048996"
   
 1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 Nm-server-w15-cpanel-short 位址應該如下所示https://YourSiteAddress:secure-port-number：。 您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且**主控**頁面也可以使用 nm-server-w15-cpanel-short 連結。
+    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 Nm-server-w15-cpanel-short 位址應該如下所示： https://YourSiteAddress:secure-port-number 。 您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且**主控**頁面也可以使用 nm-server-w15-cpanel-short 連結。
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 若要開始使用 Microsoft，您可以從 Hostgator 或重新委派名稱伺服器購買主控帳戶，[以指向 Microsoft](change-nameservers-at-hostgator.md)。 
@@ -218,7 +219,7 @@ ms.locfileid: "44048996"
   
 1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 Nm-server-w15-cpanel-short 位址應該如下所示https://YourSiteAddress:secure-port-number：。 您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且**主控**頁面也可以使用 nm-server-w15-cpanel-short 連結。
+    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 Nm-server-w15-cpanel-short 位址應該如下所示： https://YourSiteAddress:secure-port-number 。 您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且**主控**頁面也可以使用 nm-server-w15-cpanel-short 連結。
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 若要開始使用 Microsoft，您可以從 Hostgator 或重新委派名稱伺服器購買主控帳戶，[以指向 Microsoft](change-nameservers-at-hostgator.md)。 
@@ -232,10 +233,10 @@ ms.locfileid: "44048996"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Name**|**TTL**|**類型**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|
+    |**Name**|**TTL**|**類型**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip。 _tls。 *domain_name*。 （例如 _sip，_tls fourthcoffee）  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls。 _tcp。 *domain_name*。 （例如 _sipfederationtls，_tcp fourthcoffee）  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip。 _tls。 *domain_name*。 （例如 _sip，_tls fourthcoffee）  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls。 _tcp。 *domain_name*。 （例如 _sipfederationtls，_tcp fourthcoffee）  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
 
 4. 選取 [**新增記錄**]。

@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: '瞭解如何尋找新的 Microsoft 365 合作夥伴，或取得您已在過去使用之合作夥伴的連絡人資訊。 '
-ms.openlocfilehash: 54933174816047188a8c084c63df6c1e8e166d82
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 749f1a12ffbd1512b15a83e7979aea3b0cb3be48
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628181"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399761"
 ---
 # <a name="find-your-partner-or-reseller"></a>尋找您的合作夥伴或轉銷商
 
@@ -50,7 +51,7 @@ ms.locfileid: "43628181"
   
 ## <a name="get-partner-info-in-the-admin-center"></a>在系統管理中心取得夥伴資訊
 
-1. 在系統管理中心中，移至 [**設定** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">合作夥伴關係</a>] 頁面。
+1. 在系統管理中心中，移至 [**設定**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">合作夥伴關係</a>] 頁面。
   
 2. 如果您有合作夥伴，合作夥伴的名稱和組織的關聯性將會列在這裡。 若要查看夥伴連絡人資訊（電話號碼和電子郵件地址），請選取合作夥伴名稱。
     

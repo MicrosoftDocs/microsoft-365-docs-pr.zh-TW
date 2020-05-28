@@ -19,27 +19,28 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: 瞭解如何在 Android 或 iOS 裝置上建立、編輯或刪除應用程式管理原則，以及保護工作檔。
-ms.openlocfilehash: 0d9e901cac94fe7692ffe705c6b0a51df2bc542f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 01c50e6660d8d8640a2bff2794ee0ea8a69188c8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627427"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401047"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>設定 Android 或 iOS 裝置的 App 保護設定
 
-![指向的橫幅https://aka.ms/aboutM365preview。](../media/m365admincenterchanging.png)
+![指向的橫幅 https://aka.ms/aboutM365preview 。](../media/m365admincenterchanging.png)
 
 ## <a name="create-an-app-management-policy"></a>建立應用程式管理原則
 
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。 
     
-2. 在左側導覽中，選擇 [**裝置** \> **原則** \> ] [**新增**]。
+2. 在左側導覽中，選擇 [**裝置** \> **原則**] [ \> **新增**]。
   
 3. 在 [**新增原則**] 窗格中，輸入這個原則的唯一名稱。 
     
@@ -51,7 +52,7 @@ ms.locfileid: "43627427"
     
     ![Screenshot of Create a policy with Application management for Android selected](../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
-6. 下一步決定**誰將取得這些設定？** 如果您不想要使用預設的 [**所有使用者**] 安全性群組，請選擇 [**變更**]，然後選擇 [ \>會**選取**下列設定的安全性群組]。
+6. 下一步決定**誰將取得這些設定？** 如果您不想要使用預設的 [**所有使用者**] 安全性群組，請選擇 [**變更**]，然後選擇 [會選取下列設定的安全性群組] \> ** **。
     
 7. 最後，選擇 [**完成**] 以儲存原則，並將其指派給裝置。 
     
@@ -83,7 +84,7 @@ ms.locfileid: "43627427"
   
 |||
 |:-----|:-----|
-|設定  <br/> |描述  <br/> |
+|設定  <br/> |說明  <br/> |
 |在下列天數之後刪除非作用中裝置上的工作檔案  <br/> |如果裝置沒有用於您在此處指定的天數，將會自動刪除該裝置上儲存的任何工作檔。  <br/> |
 |強制使用者將所有工作檔案儲存到商務用 OneDrive  <br/> |若此設定為 [**開啟**]，則唯一可用的工作檔案儲存位置為商務 OneDrive。  <br/> |
 |加密工作檔案  <br/> |將此設定保持**開啟**，讓工作檔案受到加密保護。 即使裝置遺失或被盜，任何人都無法讀取您的公司資料。  <br/> |
@@ -94,7 +95,7 @@ ms.locfileid: "43627427"
   
 |||
 |:-----|:-----|
-|設定  <br/> |描述  <br/> |
+|設定  <br/> |說明  <br/> |
 |需要 PIN 或指紋才能存取 Office App  <br/> |如果此設定是**在**使用者在其行動裝置上使用 Office 應用程式之前，除了使用者的使用者名稱和密碼以外，還必須提供另一種形式的驗證。<br/> |
 |在登入失敗達下列次數時重設 PIN  <br/> |為了避免未經授權的使用者隨機猜測 PIN，當達到您指定的輸入錯誤次數時將會重設 PIN。  <br/> |
 |在 Office App 閒置下列時間之後要求使用者重新登入  <br/> |此設定會決定使用者在有多久之後才會收到重新登入的時間。  <br/> |

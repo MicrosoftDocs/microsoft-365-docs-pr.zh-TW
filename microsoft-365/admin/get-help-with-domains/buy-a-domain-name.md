@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -21,20 +24,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 瞭解如何在 Microsoft 365 中購買功能變數名稱。
-ms.custom: okr_smb
-ms.openlocfilehash: e60947b2f0f2591d09add00bd5aeb2ad3a5aa161
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 9358df6728e1e29228241887be65fb68a4720281
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140414"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400001"
 ---
 # <a name="buy-a-domain-name"></a>購買網域名稱
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -42,7 +44,7 @@ ms.locfileid: "44140414"
 
  若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
-### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>登入並前往設定\>網域\>購買網域
+### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>登入並前往設定 \> 網域 \> 購買網域
 
 1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
     
@@ -80,7 +82,7 @@ ms.locfileid: "44140414"
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>向其他網域註冊機構購買網域
 如果您想要從[GoDaddy](https://www.godaddy.com)以外的網域註冊機構購買網域，我們建議您在下列其中一個支援自動安裝的產品（網域連接）。 
   
-- [1&amp;1 IONOS](https://www.1and1.com/)
+- [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [Wordpress](https://www.wordpress.com) 
 
    

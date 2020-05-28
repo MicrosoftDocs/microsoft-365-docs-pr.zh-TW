@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom:
+- okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,17 +25,16 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 瞭解如何在 Microsoft 365 中新增及設定您的網域，如此一來，諸如電子郵件和商務用 Skype Online 等服務也會使用您自己的功能變數名稱。
-ms.custom: okr_smb
-ms.openlocfilehash: e987d1194d3ee86548a6628310ebdfd14cdbb9ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 16e8699c1c8588a4368f04078fea44c165c13e29
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628503"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399989"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>使用任何網域註冊機構變更名稱伺服器以設定 Microsoft 365
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 請先檢查[[設定您的網域（主機專用指示）](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) ]，以查看是否有註冊機構的指示。 
   
@@ -48,7 +50,7 @@ ms.locfileid: "43628503"
 > [!NOTE]
 > 您只能建立這些記錄的其中一種。TXT 是慣用的記錄類型，但部分 DNS 主機服務提供者不支援，在這種情況下，您可以改為建立 MX 記錄。 
   
-在將您的網域與 Microsoft 365 搭配使用之前，我們必須確定您擁有該網域。 您能夠在您的網域註冊機構登入您的帳戶，並建立 DNS 記錄，以證明您擁有該網域的 Microsoft 365。
+在您將自己的網域用於 Microsoft 365 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Microsoft 365 就能確信您擁有該網域。
   
 > [!NOTE]
 > 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
@@ -71,20 +73,20 @@ ms.locfileid: "43628503"
 |:-----|:-----|:-----|:-----|
 |**Record Type** (記錄類型) <br/> |**Alias** (別名) 或 **Host Name** (主機名稱) <br/> |**Value** (值) <br/> |**TTL** <br/> |
 |TXT  <br/> |請執行下列其中一項操作：輸入 **@** ，或是保留欄位空白，或輸入您的網域名稱。  <br/> > [!NOTE]> 不同的 DNS 主機對此欄位有不同的要求。           
-|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> 這是範例。 從 Microsoft 365 的表格中，使用您的特定**目的地或指向位址**值。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |將此值設為 **1 hour** (1 小時)，或設為等同的分鐘數 ( **60** )、秒數 ( **3600** ) 等。  <br/> |
+|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> 這是範例。 在這裡請使用您自己的 [目的地或指向位址]**** 值，請參閱 Microsoft 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |將此值設為 **1 hour** (1 小時)，或設為等同的分鐘數 ( **60** )、秒數 ( **3600** ) 等。  <br/> |
    
 **如果您建立 MX 記錄，請使用以下值：**
     
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Record Type** (記錄類型)|**Alias** (別名) 或 **Host Name** (主機名稱)|**Value** (值)|**Priority** (優先順序)|**TTL**|
-|MX|輸入 **@** 或您的網域名稱。 |MS=ms *XXXXXXXX* > [!NOTE]> This is an example. 從 Microsoft 365 的表格中，使用您的特定**目的地或指向位址**值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |針對 **[Priority]** (優先順序)，為避免跟用於郵件流程的 MX 記錄發生衝突，請使用比任一現有 MX 記錄更低的優先順序。 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.md#what-is-mx-priority) |將此值設為 **1 hour** (1 小時)，或設為等同的分鐘數 ( **60** )、秒數 ( **3600** ) 等。 |
+|MX|輸入 **@** 或您的網域名稱。 |MS=ms *XXXXXXXX* > [!NOTE]> This is an example. 在這裡請使用您自己的 [目的地或指向位址]**** 值，請參閱 Microsoft 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |針對 **[Priority]** (優先順序)，為避免跟用於郵件流程的 MX 記錄發生衝突，請使用比任一現有 MX 記錄更低的優先順序。 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.md#what-is-mx-priority) |將此值設為 **1 hour** (1 小時)，或設為等同的分鐘數 ( **60** )、秒數 ( **3600** ) 等。 |
    
 ### <a name="save-the-record"></a>儲存記錄
 
-現在，您已在網域註冊機構的網站上新增記錄，您會回到 Microsoft 365，並要求 Microsoft 365 尋找該記錄。
+現在您已在網域註冊機構網站新增記錄，請返回 Microsoft 365 並要求 Microsoft 365 尋找該記錄。
   
-當 Microsoft 365 找到正確的 TXT 記錄後，您的網域就會得到驗證。
+在 Microsoft 365 找到正確的 TXT 記錄後，您的網域就完成驗證了。
   
 
 1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
@@ -166,7 +168,7 @@ ms.locfileid: "43628503"
 
 5. 選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。
 
-6. 選取 **[儲存]**。
+6. 選取 [儲存]****。
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. 然後，您的 Microsoft 電子郵件和其他服務將全部設定為與您的網域搭配使用。 

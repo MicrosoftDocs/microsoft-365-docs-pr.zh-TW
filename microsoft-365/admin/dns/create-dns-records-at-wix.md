@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Wix。
-ms.openlocfilehash: 6f88cc65ae19f747a9fc3740ea1578f30d18b5e2
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: b5fe216e65954bbcbdd9a1da223258a8362743ca
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048852"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400289"
 ---
 # <a name="create-dns-records-at-wix-for-microsoft"></a>在 Wix 建立 Microsoft 的 DNS 記錄
 
@@ -69,7 +70,7 @@ ms.locfileid: "44048852"
 ||||
 |:-----|:-----|:-----|
 |**Host Name** <br/> |**TXT Value** (TXT 值) <br/> |**TTL** <br/> |
-|自動填入  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)|1 Hour <br/> |          |
+|自動填入  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)|1 Hour <br/> |          |
    
 5. 選取 [DNS 編輯器] 頂端的 [**儲存 DNS** ] 按鈕。 
     
@@ -109,7 +110,7 @@ ms.locfileid: "44048852"
     
 |**Host Name**|**Points to** (指向)|**Priority** (優先順序)|**TTL**|
 |:-----|:-----|:-----|:-----|
-|自動填入 <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) | 1 Hour|
+|自動填入 <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) | 1 Hour|
    
 6. 如果有列出任何其他的 MX 記錄，請將其全部刪除。 
     
@@ -173,10 +174,10 @@ ms.locfileid: "44048852"
     
 4. 在新記錄的方塊中，輸入或複製並貼上下清單格中的值：
     
-|**服務**|**Protocol** (通訊協定)|**Name**|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|**Priority** (優先順序)|**TTL**|
+|**Service** (服務)|**Protocol** (通訊協定)|**Name**|**Weight** (權數)|**Port** (連接埠)|**Target**|**Priority** (優先順序)|**TTL**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|sip  |tls  |自動填入 |1  |443   |sipdir.online.lync.com |100 |1 Hour |
-|sipfed|tcp |自動填入|1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
+|sip  |tls  |自動填入 |1   |443   |sipdir.online.lync.com |100 |1 Hour |
+|sipfed|tcp |自動填入|1  |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
 5. 選取 [DNS 編輯器] 頂端的 [**儲存 DNS** ] 按鈕。 
     

@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: 在設定自訂網域時，請確定已正確設定 DNS 記錄，以追蹤在設定自訂網域時所執行的任何問題。
-ms.openlocfilehash: 457b9a0f76e66f121572064f359f120b770b65de
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: e3c66e10a673d840cfddad81a057739b6dfac721
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053715"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399941"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>尋找並修正新增網域或 DNS 記錄之後所發生的問題
 
@@ -35,7 +36,7 @@ ms.locfileid: "44053715"
 將您的網域設定為與 Microsoft 365 搭配使用可能是挑戰性。 使用 DNS 系統的限制頗多，而且您網域的 DNS 設定也會影響到重要的商務活動，例如電子郵件！
 
 > [!NOTE]
-> 您可以檢查您的網域的狀態，以查看其是否存在問題。 移至 [**安裝** > **網域**]，然後在 [**狀態**] 欄中查看通知。 如果您看到問題，請選取 [其他動作（三個點）]，然後選擇 [**檢查健康情況**]。 隨即開啟的窗格會描述您的網域所發生的任何問題。
+> 您可以檢查您的網域的狀態，以查看其是否存在問題。 移至 [**安裝**  >  **網域**]，然後在 [**狀態**] 欄中查看通知。 如果您看到問題，請選取 [其他動作（三個點）]，然後選擇 [**檢查健康情況**]。 隨即開啟的窗格會描述您的網域所發生的任何問題。
   
 ## <a name="whats-going-on"></a>What's going on?
 

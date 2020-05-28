@@ -18,17 +18,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: 瞭解如何將個人工作檔案和機密公司檔案移至 OneDrive 以進行商務用，只需幾個簡單的步驟即可完成。
-ms.openlocfilehash: 4c41928ac51950a5a8c372ef0a170a76ff48ed2e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ec225eb43d79bebaa7035178d4d1751c58149e7a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633132"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401355"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>將檔案移至商務用 OneDrive
 
@@ -47,10 +48,10 @@ ms.locfileid: "43633132"
 
 2. 按一下應用程式啟動器 ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) ，然後移至 OneDrive。 
     
-3. 在功能表列中選擇 [**上傳**![上傳]，然後流覽至您要儲存的檔案。](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) 
+3. 在功能表列中選擇 [**上傳**上傳 ![ ](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) ]，然後流覽至您要儲存的檔案。 
     
 若要傳輸使用者個人資料和重要檔案，您也可以使用協力廠商工具，例如 ForensiT。此外，您也必須將產生的檔案上傳至商務用 OneDrive。
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>如需設定及使用 Microsoft 365 for business
 
-[Microsoft 365 商務用訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[商務用 Microsoft 365 訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

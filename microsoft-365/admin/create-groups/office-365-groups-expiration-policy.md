@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 365 群組到期原則。
-ms.openlocfilehash: 0cb67b87a542d021387365802bd5969f4c4332b8
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 00dfb09cdf4fe3f70344152444e7433c1de8a8c2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064818"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400722"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 群組到期原則
 
@@ -53,11 +54,11 @@ ms.locfileid: "44064818"
 |角色|可以執行的動作|
 |---------|---------|
 |全域管理員（在 Azure、公司管理員）、使用者管理員|建立、讀取、更新或刪除 Microsoft 365 群組到期原則設定。|
-|使用者|更新或[還原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)擁有的 Microsoft 365 群組|
+|User|更新或[還原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)擁有的 Microsoft 365 群組|
 
 ## <a name="how-to-set-the-expiration-policy"></a>如何設定到期原則
 
-如以上所述，到期會預設為關閉狀態。 管理員必須啟用到期原則，並將其設定為生效。 若要啟用它，請移至**Azure Active Directory （AAD）** > **群組** > **到期**。 您可以在這裡設定預設的組生命週期，並指定您要提前多久的時間，將第一和第二個到期通知移至群組擁有者。
+如以上所述，到期會預設為關閉狀態。 管理員必須啟用到期原則，並將其設定為生效。 若要啟用它，請移至**Azure Active Directory （AAD）**  >  **群組**  >  **到期**。 您可以在這裡設定預設的組生命週期，並指定您要提前多久的時間，將第一和第二個到期通知移至群組擁有者。
 
 群組存留時間是以天數指定，可設定為180、365或您指定的自訂值。 自訂值至少必須是30天。
 

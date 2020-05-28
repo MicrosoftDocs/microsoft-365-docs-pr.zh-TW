@@ -20,18 +20,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: 瞭解如何建立 AutoPilot 設定檔，並將其套用至裝置，以及編輯或刪除設定檔，或從裝置移除設定檔。
-ms.openlocfilehash: a6e02ab56faeb08718a9831657b55cff0356a4ec
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e58418813ed0b4d23a5fa7e1d23aae33d8850e7f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627367"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400967"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>建立及編輯 AutoPilot 設定檔
 
@@ -39,9 +40,9 @@ ms.locfileid: "43627367"
 
 設定檔適用於單一裝置或一組裝置。
   
-1. 在 Microsoft 365 系統管理中心，選擇 [**裝置** \> ] **AutoPilot**。
+1. 在 Microsoft 365 系統管理中心，選擇 [**裝置**] \> **AutoPilot**。
   
-2. 在 [ **AutoPilot** ] 頁面上，選擇 [ \> **設定檔**] 索引標籤**建立設定檔**。
+2. 在 [ **AutoPilot** ] 頁面上，選擇 [**設定檔**] 索引標籤 \> **建立設定檔**。
     
 3. 在 [**建立設定檔**] 頁面上，輸入設定檔的名稱，以協助您識別，例如「行銷」。 開啟您想要的設定，然後選擇 [**儲存**]。 如需 AutoPilot 設定檔設定的詳細資訊，請參閱[關於 AutoPilot 設定檔設定](autopilot-profile-settings.md)。
     
@@ -53,7 +54,7 @@ ms.locfileid: "43627367"
   
 1. 在 [**準備 Windows** ] 頁面上，選擇 [**裝置**] 索引標籤。 
     
-2. 選取裝置名稱旁邊的核取方塊，然後在 [**裝置**] 面板中，從 [**已指派的設定檔**] \> **下拉式清單中**選擇設定檔。
+2. 選取裝置名稱旁邊的核取方塊，然後在 [**裝置**] 面板中，從 [**已指派的設定檔**] 下拉式清單中選擇設定檔 \> ** **。
     
     ![In the Device panel, select an Assigned profile to apply it.](../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -65,7 +66,7 @@ ms.locfileid: "43627367"
 
 1. 在 [**準備 Windows** ] 頁面上，選擇 [**設定檔**] 索引標籤。 
     
-2. 選取裝置名稱旁邊的核取方塊，然後在 [**設定檔**] 面板中，更新任何可用的設定\> **儲存**。
+2. 選取裝置名稱旁邊的核取方塊，然後在 [**設定檔**] 面板中，更新任何可用的設定 \> **儲存**。
     
     如果您在使用者將裝置連線到網際網路之前這麼做，設定檔則會套用到設定程序。
     
@@ -81,5 +82,5 @@ ms.locfileid: "43627367"
 
 1. 在 [**準備 Windows** ] 頁面上，選擇 [**裝置**] 索引標籤。 
     
-2. 選取裝置名稱旁邊的核取方塊，然後在 [**裝置**] 面板中，從 [**已指派的設定檔**] \> **下拉式清單中**選擇 [**無**]。
+2. 選取裝置名稱旁邊的核取方塊，然後在 [**裝置**] 面板中，從 [**已指派的設定檔**] 下拉式清單中選擇 [**無**] \> ** **。
     

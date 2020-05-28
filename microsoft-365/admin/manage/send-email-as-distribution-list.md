@@ -14,18 +14,19 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: 瞭解如何在 Microsoft 365 中以通訊群組清單形式傳送電子郵件。
-ms.openlocfilehash: e9f8e52350dfd27e58ee160ed10f5c45e33391d7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a917e59bbac40846fa289a97465f6d6e065b87ee
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628061"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399587"
 ---
 # <a name="send-email-as-a-distribution-list"></a>以通訊群組清單傳送電子郵件
 
@@ -45,7 +46,7 @@ ms.locfileid: "43628061"
     
 4. 在郵件的底部，選取 [**其他** \> **顯示來源**]。<br/> ![選取 [其他]，然後選擇 [顯示來源]](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. 在 [寄件者位址-- `Ina@weewalter.me` ] 上按一下滑鼠右鍵，然後選擇 [**移除**]。<br/> ![移除寄件者別名](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. 在 [寄件者位址--] 上按一下滑鼠右鍵 `Ina@weewalter.me` ，然後選擇 [**移除**]。<br/> ![移除寄件者別名](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
 6. 然後輸入通訊群組清單位址（如 support@contoso.com），然後傳送郵件。 當您下次從通訊群組清單回復時，其位址會顯示為 [**發件**人] 清單中的選項。<br/>![共用信箱的別名會出現](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
   

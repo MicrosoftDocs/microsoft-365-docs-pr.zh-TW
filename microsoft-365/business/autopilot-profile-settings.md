@@ -23,18 +23,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: AutoPilot 設定檔可協助您控制 Windows 在使用者裝置上安裝的方式。 設定檔包含略過 Cortana 安裝等預設和選用設定。
-ms.openlocfilehash: 0c706d12ba262856ff40ea3bee57c64234fd77f7
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 100de5e9548f901008d3ae154ac5a237ef265ffb
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165834"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401027"
 ---
 # <a name="about-autopilot-profile-settings"></a>關於 AutoPilot 設定檔的設定
 

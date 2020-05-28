@@ -14,22 +14,23 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
 description: 瞭解如何透過 Google 網域頁面存取 eNom 及建立 DNS。
-ms.openlocfilehash: 7d79350f163d1b120d3dd45bc7bbb3e57583bf05
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6c6698f3d11f42cd0298bdb66710ec3c62bac5ca
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629128"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400253"
 ---
 # <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>當您的網域由 Google 管理時建立 DNS 記錄（eNom）
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 若要將您的郵件帳戶遷移至 Microsoft，您必須在您的網域註冊機構中建立 DNS 記錄。
   
@@ -89,11 +90,11 @@ ms.locfileid: "43629128"
     |@  <br/> ||TXT  <br/> |
 
     > [!NOTE]
-    > This is an example. 從表格中，使用您的特定**目的地或指向位址**值。 
+    > This is an example. 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 
   
     [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)
   
-12. 選取 **[儲存]**。
+12. 選取 [儲存]****。
     
     ![Google-Apps-eNom-Configure-1-9](../../media/7a6f7b45-8f79-487b-afe4-05949c2c04e8.png)
   

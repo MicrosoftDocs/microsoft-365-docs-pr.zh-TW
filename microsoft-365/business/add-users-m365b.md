@@ -21,17 +21,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: 深入瞭解在 Microsoft 365 商務版 Premium 中輕鬆新增新使用者、保護其裝置及指派角色的步驟。
-ms.openlocfilehash: d57f7470d53a6c80e04872726c634f67f091fb0d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9d2efe62ed1c48df5c10a765b8d3499934e6aebd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627467"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401067"
 ---
 # <a name="add-more-users"></a>新增更多使用者
 
@@ -46,7 +47,7 @@ ms.locfileid: "43627467"
 若要新增使用者：
 
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。 
-2. 在左功能窗格中，選擇 [**使用者** \> ] [作用中**使用者**]。
+2. 在左功能窗格中，選擇 [**使用者**] [作用中 \> **使用者**]。
 3. 在 [作用中**使用者**] 頁面上，選擇 [**新增使用者**]。
 4. 在 [**新增使用者**] 窗格中，輸入必要的資訊。 
   

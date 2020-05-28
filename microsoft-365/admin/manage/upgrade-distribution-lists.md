@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 瞭解如何將一或多個通訊群組清單升級至 Outlook 中的 Microsoft 365 群組，以及如何使用 PowerShell 同時升級多個通訊群組清單。
-ms.openlocfilehash: 993b0baf46b702322df64693f682e25b0240a0ab
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: cac0232b721c07ce8e07c7b101e0313eb9cd91df
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065666"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399491"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>將通訊群組清單升級至 Outlook 中的 Microsoft 365 群組
 
@@ -38,7 +39,7 @@ ms.locfileid: "44065666"
 
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>。
 
-2. 在 Exchange 系統管理中心中，**移至** \> [收件者**群組**]。<br/>您會看到一則通知，指出您有資格升級為 Microsoft 365 群組的通訊群組清單（也稱為**通訊群組**）。<br/> ![選取 [快速入門] 按鈕](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. 在 Exchange 系統管理中心中，**移至 [** 收件者 \> **群組**]。<br/>您會看到一則通知，指出您有資格升級為 Microsoft 365 群組的通訊群組清單（也稱為**通訊群組**）。<br/> ![選取 [快速入門] 按鈕](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
 3. 從 [**群組**] 頁面中選取一或多個通訊群組清單（也稱為**通訊群組**）。<br/>![選取通訊群組](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
@@ -89,7 +90,7 @@ Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address
 \< DL SMTP address3\>, \< DL SMTP address 4\>
 ```
 
-例如，如果您想要使用 SMTP 位址`dl1@contoso.com`升級5個 DLs， `dl2@contoso.com`並`dl3@contoso.com` `dl4@contoso.com` `dl5@contoso.com`執行下列命令：
+例如，如果您想要使用 SMTP 位址升級5個 DLs `dl1@contoso.com` ， `dl2@contoso.com` 並 `dl3@contoso.com` `dl4@contoso.com` `dl5@contoso.com` 執行下列命令：
 
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
 
@@ -98,7 +99,7 @@ Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address
 您可以透過兩種方式升級所有合格的 DLs。
 
 > [!NOTE]
-> New-distributiongroup 指令程式不會從管線接收資料，因此，您必須使用「foreach-object{}」運算子才能成功執行。
+> New-distributiongroup 指令程式不會從管線接收資料，因此，您必須使用「foreach-object」 {} 運算子才能成功執行。
 
 1. 在租使用者中取得合格的 DLs，並使用升級命令進行升級：
 

@@ -14,68 +14,69 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c5f6140a-4a12-401b-9bbd-7dfb0d6b0ba3
 description: 瞭解如何設定 Microsoft，以在 MyDomain 管理自訂網域的 DNS 記錄。
-ms.openlocfilehash: 8f4a72aa0ece24ed09c4d036239a2a13c196be6c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d8fc61c3adbe8b5b865bd82b8c4e0944198921e7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629788"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400626"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-mydomain"></a>使用 MyDomain 變更名稱伺服器以設定 Microsoft
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。
   
 如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。 （如果您願意，您可以[在 MyDomain 管理所有的 MICROSOFT DNS 記錄](create-dns-records-at-mydomain.md)。）
   
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 
-在將您的網域與 Microsoft 搭配使用之前，我們必須先確認您擁有該網域。 您能夠在您的網域註冊機構登入您的帳戶，並為您擁有網域的 Microsoft 建立 DNS 記錄證明。
+在您將自己的網域用於 Microsoft 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Microsoft 就能確信您擁有該網域。
   
 > [!NOTE]
 > 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
   
 1. 首先，請用[此連結](https://www.mydomain.com/controlpanel)移至您在 MyDomain 的網域頁面。系統會提示您先登入。
     
-2. 在 [我的最愛]**** 區段中，選取 [網域中央]****。
+2. 在 **[我的最愛]** 區段中，選取 **[網域中央]**。
     
-3. 在 [網域]**** 下方，選取要編輯的網域名稱。
+3. 在 **[網域]** 下方，選取要編輯的網域名稱。
     
-4. 在 [總覽]**** 區段，選取 [DNS]****。
+4. 在 **[總覽]** 區段，選取 **[DNS]**。
     
-5. 從 [修改]**** 下拉式清單中，選擇 [TXT/SPF 記錄]****。
+5. 從 **[修改]** 下拉式清單中，選擇 **[TXT/SPF 記錄]**。
     
-6. 在 [內容] 底下，於新記錄的方塊中，輸入或複製並貼上下表中的值。
+6. 在 **[內容]** 底下，於新記錄的方塊中，輸入或複製並貼上下表中的值。
     
 ||
 |:-----|
 |**內容** <br/> |
-|MS=ms *XXXXXXXX*  <br/> **請注意**：這是一個範例。 從表格中，使用您的特定**目的地或指向位址**值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+|MS=ms *XXXXXXXX*  <br/> **請注意**：這是一個範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
-7. 選取 [新增]****。
+7. 選取 **[新增]**。
     
 8. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
-現在，您已在網域註冊機構的網站上新增記錄，您會回到 Microsoft 365，並要求 Microsoft 365 尋找該記錄。
+現在您已在網域註冊機構網站新增記錄，請返回 Microsoft 365 並要求 Microsoft 365 尋找該記錄。
   
-當 Microsoft 找到正確的 TXT 記錄後，您的網域就會經過驗證。
+在 Microsoft 找到正確的 TXT 記錄後，您的網域就完成驗證了。
   
-1. 在 Microsoft 系統管理中心，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。
+1. 在 Microsoft 系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
 
     
 2. 在 **[網域]** 頁面上，選取您要驗證的網域。 
     
 3. 在 **[設定]** 頁面上，選取 **[開始設定]**。
     
-4. 在 [驗證網域]**** 頁面上，選取 [驗證]****。
+4. 在 **[驗證網域]** 頁面上，選取 **[驗證]**。
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。 如果您在新增 DNS 記錄後遇到郵件流程或其他問題的問題，請參閱[尋找並修正新增您的網域或 DNS 記錄後的問題](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>變更您網域的名稱伺服器 (NS) 記錄
 
@@ -89,9 +90,9 @@ ms.locfileid: "43629788"
   
 1. 首先，請用[此連結](https://www.mydomain.com/controlpanel)移至您在 MyDomain 的網域頁面。系統會提示您先登入。
     
-2. 在 [我的最愛]**** 區段中，選取 [網域中央]****。
+2. 在 **[我的最愛]** 區段中，選取 **[網域中央]**。
     
-3. 在 [網域]**** 下方，選取要編輯的網域名稱。
+3. 在 **[網域]** 下方，選取要編輯的網域名稱。
     
 4. 在 [**一覽**] 列中，選取 [**名稱伺服器**]。
     
@@ -133,7 +134,7 @@ ms.locfileid: "43629788"
    
    ![MyDomain-重新委派-1-4](../../media/7427e99c-49c7-4a2e-a5bf-66fc46900cd1.png)
   
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
     
     ![MyDomain-重新委派-1-5](../../media/48473816-b881-47f0-9344-74622efa3bf8.png)
   

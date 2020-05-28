@@ -19,18 +19,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: 瞭解如何使用 Microsoft 365 商務版 Premium 中的 AutoPilot 上傳裝置。 您可以將設定檔指派給裝置或裝置群組。
-ms.openlocfilehash: 83c027cfe019e037518c4ca13eb331e5300fc2c1
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 8c3d029d682ae30444bdc7d30a4790a8f982e0e0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165854"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400987"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>建立及編輯 AutoPilot 裝置
 
@@ -44,13 +45,13 @@ ms.locfileid: "44165854"
     
 - 尚未透過 Windows 現成體驗的新裝置
 
-1. 在 Microsoft 365 系統管理中心，選擇 [**裝置** \> ] **AutoPilot**。
+1. 在 Microsoft 365 系統管理中心，選擇 [**裝置**] \> **AutoPilot**。
   
 2. 在 [ **AutoPilot** ] 頁面上，選擇 [**裝置**] 索引標籤 [ \> **新增裝置**]。
     
     ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. 在 [**新增裝置**] 面板上，流覽至您準備\> **儲存** \> **關閉**的[裝置清單 CSV](https://docs.microsoft.com/microsoft-365/admin/misc/device-list)檔案。
+3. 在 [**新增裝置**] 面板上，流覽至您準備儲存關閉的[裝置清單 CSV](https://docs.microsoft.com/microsoft-365/admin/misc/device-list)檔案 \> **Save** \> ** **。
     
     您可以從硬體廠商取得此資訊，也可以使用[Get-WindowsAutoPilotInfo PowerShell 腳本](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)來產生 CSV 檔案。 
     

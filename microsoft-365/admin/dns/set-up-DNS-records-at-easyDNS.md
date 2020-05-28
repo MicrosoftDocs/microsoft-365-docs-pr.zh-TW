@@ -14,17 +14,18 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以供 Microsoft easyDNS。
-ms.openlocfilehash: b7b29900108ab94f0fd99dcf3404cfa137ce92ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 24f477d240af936975141c53d382e114a24c0ac5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631354"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400229"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>在 Microsoft 的 easyDNS 建立 DNS 記錄
 
@@ -36,7 +37,7 @@ ms.locfileid: "43631354"
   
 ## <a name="verify-that-you-own-the-domain-with-a-txt-record"></a>確認您擁有包含 TXT 記錄的網域
 
-1. 移至[https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/)並以您的認證登入。 
+1. 移至 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) 並以您的認證登入。 
     
 2. 在 [**所有網域**] 標題下，選取 [ **dns]。**
     
@@ -44,7 +45,7 @@ ms.locfileid: "43631354"
     
 4. 在 [文字] 欄位中輸入下列記錄：
     
-    |**Host**|**Text**|
+    |**Host** (主機)|**Text**|
     |:-----|:-----|
     |@  <br/> |MS=msXXXXXXXX （在系統管理中心的 [網域] 頁面上，使用您提供的值）  <br/> |
    
@@ -54,7 +55,7 @@ ms.locfileid: "43631354"
     
 7. 請等候幾分鐘，再繼續進行，這樣您剛才建立的記錄便可以傳播到網際網路，並由 Microsoft 偵測到。
     
-8. 現在，您已在網域註冊機構的網站上新增記錄，您會回到 Microsoft 並要求記錄。
+8. 現在您已在網域註冊機構網站新增記錄，請返回 Microsoft 並要求該記錄。
     
 9. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
     
@@ -62,11 +63,11 @@ ms.locfileid: "43631354"
     
 11. 在 [**安裝**] 頁面上，選取 [**啟動安裝程式]。**
     
-12. 在 [驗證網域]**** 頁面上，選取 [驗證]****。 
+12. 在 **[驗證網域]** 頁面上，選取 **[驗證]**。 
     
 ## <a name="add-an-mx-record-to-route-email-to-microsoft"></a>新增 MX 記錄以將電子郵件路由傳送至 Microsoft
 
-1. 移至[https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/)並以您的認證登入。 
+1. 移至 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) 並以您的認證登入。 
     
 2. 在 [**所有網域**] 標題下，選取 [ **dns]。**
     
@@ -76,7 +77,7 @@ ms.locfileid: "43631354"
     
     |**區域的郵件**|**郵件伺服器**|**PREF**|
     |:-----|:-----|:-----|
-    |@  <br/> |\<網域金鑰\>。 mail.protection.outlook.com （從系統管理中心\<的 [網域\> ] 頁面取得您的網域金鑰值）  <br/> |0  <br/> |
+    |@  <br/> |\<domain-key\>。 mail.protection.outlook.com （從系統 \<domain-key\> 管理中心的 [網域] 頁面取得您的價值）  <br/> |0  <br/> |
    
 2. 如果您想要儲存其他的 MX 記錄以用於備份目的，請將其複製到某個地方。 在移動之前，請在這裡移除所有其他 MX 記錄。
     
@@ -86,7 +87,7 @@ ms.locfileid: "43631354"
     
 ## <a name="add-the-required-cname-records"></a>新增必要的 CNAME 記錄
 
-1. 移至[https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/)並以您的認證登入。 
+1. 移至 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) 並以您的認證登入。 
     
 2. 在 [**所有網域**] 標題下，選取 [ **dns]。**
     
@@ -109,7 +110,7 @@ ms.locfileid: "43631354"
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>新增 SPF 的 TXT 記錄以協助防範垃圾郵件
 
-1. 移至[https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/)並以您的認證登入。 
+1. 移至 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) 並以您的認證登入。 
     
 2. 在 [**所有網域**] 標題下，選取 [ **dns]。**
     
@@ -117,7 +118,7 @@ ms.locfileid: "43631354"
     
 4. 在 [文字] 欄位中輸入下列記錄：
     
-    |**Host**|**Text**|
+    |**Host** (主機)|**Text**|
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> |
    
@@ -125,11 +126,11 @@ ms.locfileid: "43631354"
     
 6. 請確認記錄是否正確，然後選取 [**確認**]。 
     
-## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的兩筆 SRV 記錄
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增兩筆 Microsoft 所需的 SRV 記錄
 
 附注： SRV 記錄目前無法用於 easyDNS ' 網域加服務層級。 您可能需要使用 easyDNS 來新增 SRV 記錄，以升級至較高的服務層級 
   
-1. 移至[https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/)並以您的認證登入。 
+1. 移至 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) 並以您的認證登入。 
     
 2. 在 [**所有網域**] 標題下，選取 [ **dns]。**
     

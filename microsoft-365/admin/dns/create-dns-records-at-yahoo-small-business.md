@@ -14,22 +14,23 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務 Yahoo！的 DNS 記錄 適用于 Microsoft 的小型企業。
-ms.openlocfilehash: 12efa8f7056f0d06cbf78b2486ea67dc85d2e705
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c44ad1cde79fdc401f1cd7411a4019d31ade6d02
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629152"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400277"
 ---
 # <a name="create-dns-records-at-yahoo-small-business-for-microsoft"></a>在 Yahoo! 適用于 Microsoft 的小型企業
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 如果 Yahoo! Small Business 一直是您的 DNS 主機服務提供者，請注意，您的提供者現在應該是 Aabaco Small Business。
   

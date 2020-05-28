@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 建立共用信箱之後，您會想要設定其使用者的某些設定，例如電子郵件轉寄及自動回復。 稍後，您可能想要變更其他設定，例如信箱名稱或成員。
-ms.openlocfilehash: 63d3d0a5867875344ff4635071bbbad69e02eadc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7c88ffa3276f40ea983f9060658f4e4091e36280
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629044"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400145"
 ---
 # <a name="configure-a-shared-mailbox"></a>設定共用信箱
 
@@ -55,7 +56,7 @@ ms.locfileid: "43629044"
 
 3. 輸入新的名稱，或新增其他別名。 如果您想要變更主要電子郵件地址，您的信箱必須有一個以上的電子郵件別名。
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
 
 ## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a>轉寄傳送到共用信箱的電子郵件
 
@@ -79,11 +80,11 @@ ms.locfileid: "43629044"
 
 ::: moniker-end
 
-2. 選取您要編輯的共用信箱，然後選取 [**電子郵件** \>轉寄] [**編輯**]。
+2. 選取您要編輯的共用信箱，然後選取 [**電子郵件**轉寄] [ \> **編輯**]。
     
 3. 將切換設定為 [**開啟**]，然後輸入一個電子郵件地址，以轉寄郵件。 它可以是任何有效的電子郵件地址。 若要轉寄至多個位址，您必須為位址[建立通訊群組](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide)，然後在此方塊中輸入群組的名稱。
     
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
 
 ## <a name="send-automatic-replies-from-a-shared-mailbox"></a>從共用信箱傳送自動回覆
 
@@ -105,7 +106,7 @@ ms.locfileid: "43629044"
 
 ::: moniker-end
 
-2. 選取您要編輯的共用信箱，然後選取 [**自動回復** \> ] [**編輯**]。
+2. 選取您要編輯的共用信箱，然後選取 [**自動回復**] [ \> **編輯**]。
     
 3. 將切換設定為 [**開啟**]，然後選擇是否要將回復傳送給組織內或組織外的人員。
 
@@ -113,13 +114,13 @@ ms.locfileid: "43629044"
 
 5. 如果您*也*想要將回復傳送給組織外部的人員，請選取您要取得回復的核取方塊，然後輸入文字。 There's no way to only send to people outside your organization but not to people inside your organization.
 
-6. 選取 **[儲存]**。
+6. 選取 [儲存]****。
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>允許所有人都看到已傳送的電子郵件 (回覆)
 
 根據預設，從共用信箱寄出的郵件不會儲存至共用信箱的 [寄件備份] 資料夾。不過，這些郵件會儲存到寄件者的 [寄件備份] 資料夾。
 
-如果您想要允許所有人查看已傳送的電子郵件，請在系統管理中心中編輯共用信箱設定，然後選取 [**已傳送的專案** \> ] [**編輯**]。
+如果您想要允許所有人查看已傳送的電子郵件，請在系統管理中心中編輯共用信箱設定，然後選取 [**已傳送的專案**] [ \> **編輯**]。
 
 
 ## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>選擇共用信箱可用於存取 Microsoft 電子郵件的應用程式
@@ -146,7 +147,7 @@ ms.locfileid: "43629044"
 
 3. 針對您想要讓成員存取共用信箱的所有應用程式，將 [開啟] 設定為 [**開啟**]。 針對您不想要使用的任何應用程式，將其開關設定為 [**關閉**]。 
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
 
 
 ## <a name="put-a-shared-mailbox-on-litigation-hold"></a>讓共用信箱處於訴訟暫止狀態
@@ -171,13 +172,13 @@ ms.locfileid: "43629044"
 
 ::: moniker-end
 
-2. 選取您要編輯的共用信箱，然後選取 [**訴訟暫** \>止] [**編輯**]。
+2. 選取您要編輯的共用信箱，然後選取 [**訴訟暫**止] [ \> **編輯**]。
 
 3. 將開啟開關設定為 [**開啟**]。 
 
 4. （選用）輸入持續時間、有關保留的備註，以及包含詳細資訊的 URL。  
 
-5. 選取 **[儲存]**。
+5. 選取 [儲存]****。
 
 
 ## <a name="add-or-remove-members"></a>新增或移除成員
@@ -260,11 +261,11 @@ ms.locfileid: "43629044"
 
 ::: moniker-end
 
-2. 選取您要編輯的共用信箱，然後選取 [**在全域通訊清單** \> **編輯**] 中的 [顯示]。
+2. 選取您要編輯的共用信箱，然後選取 [**在全域通訊清單**編輯] 中的 [顯示] \> ** **。
 
 3. 將開啟或關閉切換為 **[開啟]** 或 [**關閉**]。 
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
 
 > [!NOTE]
 > 從通訊清單中隱藏共用信箱，將無法將隱藏的信箱新增至他們的 Outlook 設定檔，直到共用信箱再次顯示在通訊清單中為止。 

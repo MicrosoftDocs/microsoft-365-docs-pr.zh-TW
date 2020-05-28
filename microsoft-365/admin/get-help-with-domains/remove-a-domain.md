@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,19 +22,19 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 瞭解如何從 Microsoft 365 移除舊的網域，以及將使用者和群組移至另一個網域。
-ms.openlocfilehash: ef0209d6ccb7534745172585fe599f627e386cb4
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: c5e629f0d683c6dc3e18b1278027ac3a88cc834b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140402"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399893"
 ---
 # <a name="remove-a-domain"></a>移除網域
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
   
@@ -52,7 +53,7 @@ ms.locfileid: "44140402"
 
 1. 移至系統<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>。
 
-2. 選取 [**使用者** >作用中**使用者**]。
+2. 選取 [**使用者**作用 > 中**使用者**]。
 
 3. 選取您要移動之所有使用者之名稱旁的方塊。
 
@@ -68,7 +69,7 @@ ms.locfileid: "44140402"
 
 1. 移至系統<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>。  
 
-2. 選取 [**使用者** >作用中**使用者**]。
+2. 選取 [**使用者**作用 > 中**使用者**]。
 
 3. 選取您要移動之所有使用者之名稱旁的方塊。
 
@@ -84,7 +85,7 @@ ms.locfileid: "44140402"
 
 1. 移至系統<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>。  
 
-2. 選取 [**使用者** >作用中**使用者**]。
+2. 選取 [**使用者**作用 > 中**使用者**]。
 
 3. 選取您要移動之所有使用者之名稱旁的方塊。
 
@@ -105,7 +106,7 @@ ms.locfileid: "44140402"
 
 1. 移至系統<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>。
 
-2. 移至 [**使用者** \>作用中**使用者**]，然後從清單中選取您的帳戶。
+2. 移至 [**使用者**作用 \> 中**使用者**]，然後從清單中選取您的帳戶。
 
 3. 在 [**帳戶**] 索引標籤上，選取 [**管理使用者名稱**]，然後選擇不同的網域。
   
@@ -119,7 +120,7 @@ ms.locfileid: "44140402"
 
 ::: moniker range="o365-germany"
 
-1. 移至 [**使用者** \>作用中**使用者**]，然後在清單中選取您的名稱。
+1. 移至 [**使用者**作用 \> 中**使用者**]，然後在清單中選取您的名稱。
 
 2. 在 [使用者**名稱/電子郵件**] 區段中，選取 [**編輯**]，然後選擇不同的網域。
 
@@ -135,7 +136,7 @@ ms.locfileid: "44140402"
 
 ::: moniker range="o365-21vianet"
 
-1. 移至 [**使用者** \>作用中**使用者**]，然後在清單中選取您的名稱。
+1. 移至 [**使用者**作用 \> 中**使用者**]，然後在清單中選取您的名稱。
 
 2. 在 [使用者**名稱/電子郵件**] 區段中，選取 [**編輯**]，然後選擇不同的網域。
 

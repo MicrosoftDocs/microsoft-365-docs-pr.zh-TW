@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft name.com。
-ms.openlocfilehash: e9133b3701c2b454cad11b9579dc7463f1a74460
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 646f486e73705f4b1e1bab63866fc7601d34cf92
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048960"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400397"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>在 name.com 建立 Microsoft 的 DNS 記錄
 
@@ -66,7 +67,7 @@ ms.locfileid: "44048960"
     |||||
     |:-----|:-----|:-----|:-----|
     |**類型** <br/> |**主機** <br/> |**答案** <br/> |**TTL** <br/> |
-    |TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |
+    |TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |
    
     ![Name-BP-Verify-1-1](../../media/0c352fd3-cf84-439f-a481-0705e225cc54.png)
   
@@ -118,7 +119,7 @@ ms.locfileid: "44048960"
     
     |**類型**|**主機**|**答案**|**TTL**|**Prio (優先順序)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(將此欄位保留空白。)  <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |MX  <br/> |(將此欄位保留空白。)  <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![Name-BP-Configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   
@@ -232,10 +233,10 @@ ms.locfileid: "44048960"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**類型**|**服務**|**Weight** (權數)|**TTL**|**Prio (優先順序)**|**Protocol** (通訊協定)|**Port** (連接埠)|**Target** (目標)|
+    |**類型**|**Service** (服務)|**Weight**|**TTL**|**Prio (優先順序)**|**Protocol** (通訊協定)|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|1|使用預設值 (300)。|100|tls|443|sipdir.online.lync.com <br> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
-    |SRV|sipfederationtls|1|使用預設值 (300)。|100|tcp|5061|sipfed.online.lync.com <br>**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |SRV|sip|1 |使用預設值 (300)。|100|tls|443|sipdir.online.lync.com <br> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |SRV|sipfederationtls|1 |使用預設值 (300)。|100|tcp|5061|sipfed.online.lync.com <br>**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
    ![Name-BP-Configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   

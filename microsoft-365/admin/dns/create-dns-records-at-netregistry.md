@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Netregistry。
-ms.openlocfilehash: ed3e3bae232dcbb3c8e4eea3d1a3bc4dd0a88799
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: c4e81e92b9f86d0a2974e6f95e397f3584c9a01e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939152"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400361"
 ---
 # <a name="create-dns-records-at-netregistry-for-microsoft"></a>在 Netregistry 建立 Microsoft 的 DNS 記錄
 
@@ -83,7 +84,7 @@ ms.locfileid: "43939152"
     
     |**Name**|**TTL （秒）**|**TXT （指向 address 或 value）**|
     |:-----|:-----|:-----|
-    |(保留空白)  <br/> |3600（秒）  <br/> |"MS=msXXXXXXXX"  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)  |
+    |(保留空白)  <br/> |3600（秒）  <br/> |"MS=msXXXXXXXX"  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)  |
        
     ![Netregistry_verificationTXTvalues](../../media/cfe8b05a-fa8b-4dba-9554-7a3466e6c012.png)
   
@@ -137,7 +138,7 @@ ms.locfileid: "43939152"
     
     |**Name**|**TTL （秒）**|**Exchange （指向 address 或 value）**|**主機是否已完全合格？**|**喜好設定（優先順序）**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(保留空白)  <br/> |3600（秒）  <br/> | *\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)      |（選取核取方塊）  <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
+    |(保留空白)  <br/> |3600（秒）  <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)      |（選取核取方塊）  <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   
@@ -213,7 +214,7 @@ ms.locfileid: "43939152"
   
     |**Name**|**Type**|**TTL**|**TXT 資料（目標）**|
     |:-----|:-----|:-----|:-----|
-    |(保留空白)  <br/> |TXT  <br/> |3600（秒）  <br/> |"v = spf1 包含: spf.protection.outlook.com. .com-all"  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |(保留空白)  <br/> |TXT  <br/> |3600（秒）  <br/> |"v = spf1 包含: spf.protection.outlook.com. .com-all"  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
     ![Netregistry_SPF TXTvalues](../../media/a369345a-d774-48bc-8160-b628ab8247f9.png)
   
@@ -245,7 +246,7 @@ ms.locfileid: "43939152"
     > [!NOTE]
     > Name 欄位是服務的組合（例如，_sip）和通訊協定（例如，_tls）。 
   
-    |**類型**|**名稱**|**TTL （秒）**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|
+    |**類型**|**名稱**|**TTL （秒）**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV （服務）  <br/> |_sip。 _tls  <br/> |3600（秒）  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |SRV （服務）  <br/> |_sipfederationtls。 _tcp  <br/> |3600（秒）  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |

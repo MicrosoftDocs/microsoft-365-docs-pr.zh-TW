@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: 就像 Microsoft 365 規範中心的功能一樣，我們的說明內容永遠都在發展中。 我們會持續建立新的文章、更新現有的文章，並根據您的意見反應進行變更。 瞭解本月新增及更新的功能。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 750165aab3612e3edb6a56f69eebf0778e141fde
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: 94a4025a0a30ce26175a1a598713721aaa835ee7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231896"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401197"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 規範內容的最近更新
 
@@ -100,13 +100,6 @@ ms.locfileid: "44231896"
 ### <a name="pst-import"></a>PST 匯入
 
 匯[入 PST](faqimporting-pst-files-to-office-365.md)檔案的常見問題（更新）<br>新增有關 PST 匯入處理如何處理重複電子郵件專案的常見問題。
-
-### <a name="retention"></a>保留
-
-[保留原則](retention-policies.md)（已更新）的概述<br>變更包括：
-
-- 新增保留原則及僅限刪除保留原則的內容路徑（先前會說明的內容路徑只保留，然後刪除）。
-- 「[更新」一節](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)說明，針對 SharePoint 位置，您現在可以指定 URL，而不是選擇網站。 這表示您不需要存取網站的許可權，即可將其包含在保留原則中。
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 

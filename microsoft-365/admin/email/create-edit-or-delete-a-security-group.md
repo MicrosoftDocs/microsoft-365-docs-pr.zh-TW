@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 瞭解如何建立、編輯或刪除安全性群組。
-ms.openlocfilehash: 6f4daa66c11675674fdbfbfeb625128d8f817520
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 283f1eca7500bfb1d8172657639bbc7cff76906f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140438"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400085"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 admin center 中建立、編輯或刪除安全性群組
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -46,7 +47,7 @@ ms.locfileid: "44140438"
 
 ### <a name="add-a-security-group"></a>新增安全性群組
 
-1. 在 Microsoft 365 系統管理中心中，移至 [**群組** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>] 頁面。
+1. 在 Microsoft 365 系統管理中心中，移至 [**群組**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>] 頁面。
   
 2. 在 [**群組**] 頁面上，選取 [**新增群組**]。
     
@@ -132,7 +133,7 @@ ms.locfileid: "44140438"
 
 ### <a name="delete-a-security-group"></a>刪除安全性群組
 
-1. 在系統管理中心中，移至 [**群組** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>] 頁面。
+1. 在系統管理中心中，移至 [**群組**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>] 頁面。
     
 2. 在 [**群組**] 頁面上，選取群組的名稱。 
     
@@ -142,7 +143,7 @@ ms.locfileid: "44140438"
     
 ## <a name="groups-in-exchange-online-and-sharepoint-online"></a>Exchange Online 和 SharePoint Online 中的群組
 
-如果您想要建立使用者群組，以便同時將電子郵件傳送給他們，您可以移至「**管理** \> **Exchange** \> **Recipients** \>收件者」**群組**，在 Exchange 系統管理中心中執行這項作業。 接下來， ** ** ![選取 [](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png)新增]，然後選取您要建立的群組類型： 
+如果您想要建立使用者群組，以便同時將電子郵件傳送給他們，您可以移至「**管理**Exchange 收件者」群組，在 Exchange 系統管理中心中執行這項作業 \> **Exchange** \> **Recipients** \> ** **。 接下來，選取 [**新增**] ![ ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) ，然後選取您要建立的群組類型： 
   
 - **通訊群組**：用於發送訊息至使用者群組。 也稱為*啟用郵件功能的通訊群組*或*通訊群組清單*。 如需詳細資訊，請參閱 [管理通訊群組](https://technet.microsoft.com/library/bb124513.aspx)。
     

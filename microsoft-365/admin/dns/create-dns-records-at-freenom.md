@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Freenom。
-ms.openlocfilehash: 39963b5c0f5f3f82fe193160e8aa8ab03894cedd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: f139c21915d6922c2f77281990dd09949d9db928
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049032"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400470"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>在 Freenom 建立 Microsoft 的 DNS 記錄
 
@@ -70,9 +71,9 @@ ms.locfileid: "44049032"
   
 6. 在新記錄的方塊中，輸入或複製並貼上下表中的值。 
     
-    |**Name**|**Type**|**TTL**|**Target** (目標)|
+    |**Name**|**Type**|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|
-    |(保留空白)  <br/> |TXT  <br/> |3600（秒）  <br/> |MS=msXXXXXXXX  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |(保留空白)  <br/> |TXT  <br/> |3600（秒）  <br/> |MS=msXXXXXXXX  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Freenom 用於驗證的 TXT 值](../../media/650098df-b3aa-47e5-9763-7fde24e34c3f.png)
   
@@ -86,7 +87,7 @@ ms.locfileid: "44049032"
   
 在 Microsoft 找到正確的 TXT 記錄後，您的網域就完成驗證了。
   
-1. 在 Microsoft 系統管理中心中，移至 [設定]**** \> [網域]<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> 頁面。
+1. 在 Microsoft 系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
 
     
 2. 在 **[網域]** 頁面上，選取您要驗證的網域。 
@@ -137,9 +138,9 @@ ms.locfileid: "44049032"
   
 8. 在每一筆新記錄的方塊中，輸入或複製並貼上下表第一列中的值。 
     
-    |**Name**|**Type**|**TTL**|**Target** (目標)|**Priority** (優先順序)|
+    |**Name**|**Type**|**TTL**|**Target**|**優先順序**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(保留空白)  <br/> |MX (郵件交換程式)  <br/> |3600（秒）  <br/> |\<網域金鑰\>。 mail.protection.outlook.com  <br/> **附注：** 從您的 Microsoft 帳戶取得您* \<的網域金鑰\> * 。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |(保留空白)  <br/> |MX (郵件交換程式)  <br/> |3600（秒）  <br/> |\<domain-key\>。 mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![Freenom MX 記錄](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
@@ -174,7 +175,7 @@ ms.locfileid: "44049032"
   
 6. 建立第一筆 CNAME 記錄。 在每一筆新記錄的方塊中，輸入或複製並貼上下表第一列中的值。 
     
-    |**Name**|**記錄類型**|**TTL**|**Target** (目標)|
+    |**Name**|**記錄類型**|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |3600（秒）  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |3600（秒）  <br/> |sipdir.online.lync.com  <br/> |
@@ -220,7 +221,7 @@ ms.locfileid: "44049032"
   
 6. In the boxes for the new record, type or copy and paste the following values. 
     
-    |**Name**|**記錄類型**|**TTL**|**Target** (目標)|
+    |**Name**|**記錄類型**|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|
     |(保留空白)  <br/> |TXT  <br/> |3600（秒）  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    

@@ -13,22 +13,23 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: 瞭解如何驗證您的電子郵件和網域擁有權，以在 Microsoft 365 中接管未受管理的租使用者
-ms.openlocfilehash: 1772ba9929433c87603d4b9d7027419063fd2fca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4c2dcdb0f6c4f6b795d9579c8796e9668ed2ed05
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627941"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399443"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>執行內部系統管理員接管
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
 
 如果您是系統管理員，而且想要接管自助使用者註冊所建立的非管理租使用者，您可以使用內部系統管理員接管。
 
@@ -40,9 +41,9 @@ ms.locfileid: "43627941"
 > [!NOTE]
 > 如果您的承租人中已啟用自助功能，使用者可以自行訂閱免費服務，例如 Power BI。 這些步驟假設自助使用者訂閱已建立您想要當作系統管理員接管的非管理租使用者。在第一個步驟中，您會在未受管理的租使用者中建立使用者內容，使用 Power BI 來說明管理接管路徑。
 
-1. 若要註冊 power bi，請移至[power bi site](https://powerbi.com) ，然後選取 **[開始免費** > **開始免費試用版**（在與 Power BI Pro] 方塊中的 [共用]）。 
+1. 若要註冊 power bi，請移至[power bi site](https://powerbi.com) ，然後選取 [**開始免費**  >  **開始免費試用版**（在與 Power BI Pro] 方塊中的 [共用]）。 
 
-2. 使用您組織的功能變數名稱（例如`powerbiadmin@contoso.com`）註冊使用者帳戶。 若您的帳戶已在使用中，請使用您目前的密碼登入。
+2. 使用您組織的功能變數名稱（例如）註冊使用者帳戶 `powerbiadmin@contoso.com` 。 若您的帳戶已在使用中，請使用您目前的密碼登入。
 
 3. 請檢查您的電子郵件是否有**驗證碼**，並輸入驗證電子郵件地址的程式碼。
     

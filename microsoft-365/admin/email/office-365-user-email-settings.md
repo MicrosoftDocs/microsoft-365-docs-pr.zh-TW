@@ -11,17 +11,18 @@ ms.service: o365-administration
 ms.collection:
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: 本文提供管理使用者設定的相關資訊。
-ms.openlocfilehash: 86c74c5de0dc568622b2be1812b7db10799863be
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 65396339f099628911da1dbaaef83bc18181e680
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942136"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400037"
 ---
 # <a name="user-email-settings"></a>使用者電子郵件設定
 

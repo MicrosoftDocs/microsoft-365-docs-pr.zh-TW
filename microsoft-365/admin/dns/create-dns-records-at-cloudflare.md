@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Cloudflare。
-ms.openlocfilehash: 36578d8eed2c5630a9ce5abfb355983a26028888
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 9b717ddedaf6435f6599f4f75cc0fa7c4e618d59
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049068"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400542"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>在 Cloudflare 建立 Microsoft 的 DNS 記錄
 
@@ -87,7 +88,7 @@ ms.locfileid: "44049068"
     
     |**類型**|**名稱**|**自動 TTL**|**內容**|
     |:-----|:-----|:-----|:----|
-    |TXT  <br/> |@  <br/> |30 分鐘  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 [目的地或指向位址]**** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)    |
+    |TXT  <br/> |@  <br/> |30 分鐘  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)    |
   
     
 5. 選取 [儲存]****。
@@ -99,7 +100,7 @@ ms.locfileid: "44049068"
   
 在 Microsoft 找到正確的 TXT 記錄後，您的網域就完成驗證了。
   
-1. 在 Microsoft 系統管理中心中，移至 [設定]**** \> [網域]<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a> 頁面。
+1. 在 Microsoft 系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
 
     
 2. 在 **[網域]** 頁面上，選取您要驗證的網域。 
@@ -131,7 +132,7 @@ ms.locfileid: "44049068"
     
     |**類型**|**名稱**|**郵件伺服器**|**Priority** (優先順序)|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<網域金鑰\>*  .mail.protection.outlook.com  <br/> **附注：** 從 Microsoft 365 帳戶取得您* \<的網域金鑰\> * 。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |1  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 分鐘  <br/> |
+    |MX  <br/> |@  <br/> |*\<domain-key\>*。 mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 365 帳戶取得。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 分鐘  <br/> |
    
 
   
@@ -216,10 +217,10 @@ ms.locfileid: "44049068"
 
     在 [ **DNS 管理**] 頁面上，按一下 [**新增記錄**]，然後選取下表中第一列的值。
         
-    |**類型**|**服務**|**Protocol** (通訊協定)|**Name**|**TTL**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target** (目標)|
+    |**類型**|**Service** (服務)|**Protocol** (通訊協定)|**Name**|**TTL**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|_sip |TLS |使用您的*domain_name*;例如，contoso.com  |30 分鐘 | 100|1 |443 |sipfed.online.lync.com  |
-    |SRV|_sipfederationtls | TCP|使用您的*domain_name*;例如，contoso.com   |30 分鐘 |100 |1 |5061 | sipfed.online.lync.com |
+    |SRV|_sip |TLS |使用您的*domain_name*;例如，contoso.com  |30 分鐘 | 100|1  |443 |sipfed.online.lync.com  |
+    |SRV|_sipfederationtls | TCP|使用您的*domain_name*;例如，contoso.com   |30 分鐘 |100 |1  |5061 | sipfed.online.lync.com |
 
   
 5. 選取 [儲存]****。
