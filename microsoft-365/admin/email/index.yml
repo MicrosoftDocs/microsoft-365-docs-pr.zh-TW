@@ -10,12 +10,13 @@ metadata:
   ms.author: sirkkuw
   ms.date: 04/16/2020
   localization_priority: Priority
-  ms.openlocfilehash: 65b0a249c5574ca149c0abe1e0ed879f649143fe
-  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: dd490fa2dd85189931e9917ba5c3ba60a2742b46
+  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43952710"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "44400061"
 landingContent:
 - title: 管理電子郵件
   linkLists:
@@ -23,7 +24,7 @@ landingContent:
     links:
     - text: 管理使用者電子郵件設定
       url: office-365-user-email-settings.md
-    - text: 關於電子郵件協同作業
+    - text: 關於電子郵件共同作業
       url: email-collaboration.md
   - linkListType: how-to-guide
     links:
@@ -53,7 +54,7 @@ landingContent:
       url: configure-a-shared-mailbox.md
     - text: 將使用者信箱轉換為共用信箱
       url: convert-user-mailbox-to-shared-mailbox.md
-    - text: 從共用信箱中移除授權
+    - text: 從共用信箱移除授權
       url: remove-license-from-shared-mailbox.md
     - text: 解決共用信箱的問題
       url: resolve-issues-with-shared-mailboxes.md
