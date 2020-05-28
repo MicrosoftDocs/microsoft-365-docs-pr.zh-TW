@@ -11,20 +11,20 @@
   items:
     - name: 概觀
       href: foundation-solutions-overview.md
-    - name: 使用 Microsoft 365 提供遠端工作者
+    - name: 使用 Microsoft 365 強化遠端工作者
       href: empower-people-to-work-remotely.md
       items:
-        - name: 步驟 1。 增加具有 MFA 的遠端工作者的登入安全性
+        - name: 步驟 1： 增加登入安全性
           href: empower-people-to-work-remotely-secure-sign-in.md
-        - name: 步驟 2。 提供遠端存取
+        - name: 步驟 2： 提供遠端存取
           href: empower-people-to-work-remotely-remote-access.md
-        - name: 步驟 3： 部署裝置、電腦及其他端點的端點管理
+        - name: 步驟 3： 部署端點管理
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: 步驟 4。 部署遠端工作者生產力應用程式和服務
+        - name: 步驟 4： 部署生產力應用程式和服務
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: 步驟 5。 建立 COVID-19 危機通訊基地說明
+        - name: 步驟 5。 建立通訊基地說明
           href: empower-people-to-work-remotely-communication-venues.md
-        - name: 步驟6。 訓練遠端工作者和位址使用意見反應
+        - name: 步驟6。 訓練遠端工作者
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: 使用 Microsoft 365 設定安全協同作業
       href: setup-secure-collaboration-with-teams.md
@@ -39,7 +39,7 @@
               href: configure-teams-sensitive-protection.md
             - name: 設定高敏感度保護
               href: configure-teams-highly-sensitive-protection.md
-            - name: 設定具有安全性隔離的團隊
+            - name: 為小組設定安全性隔離
               href: secure-teams-security-isolation.md
         - name: 設定外部共用
           items:
@@ -113,7 +113,7 @@
               href: 'https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Contoso 案例研究
       items:
-        - name: Contoso Corporation 的 Microsoft 365 解決方案
+        - name: 適用於 Contoso Corporation 的 Microsoft 365 解決方案
           href: contoso-case-study-solutions.md
         - name: 主要機密專案的隔離團隊
           href: contoso-team-for-top-secret-project.md

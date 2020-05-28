@@ -1,5 +1,5 @@
 ---
-title: 卡達的付款資訊
+title: 卡塔爾的付款資訊
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,26 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 學習如何傳送帳單的付款。
+description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 905fc7322683d07c5832f7affc471ecfc99a6e60
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5e4afa46b30777c874f98f4f8075bdafe00c7bbb
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239570"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404583"
 ---
-# <a name="payment-information-for-qatar"></a><span data-ttu-id="c166a-103">卡達的付款資訊</span><span class="sxs-lookup"><span data-stu-id="c166a-103">Payment information for Qatar</span></span>
+# <a name="payment-information-for-qatar"></a><span data-ttu-id="7f5f2-103">卡塔爾的付款資訊</span><span class="sxs-lookup"><span data-stu-id="7f5f2-103">Payment information for Qatar</span></span>
 
-<span data-ttu-id="c166a-104">[尋找另一個國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="c166a-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="7f5f2-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="7f5f2-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="c166a-105">請只 USD 和參考發票轉接上您的發票匯款付款。</span><span class="sxs-lookup"><span data-stu-id="c166a-105">Please pay in USD only and reference invoice number(s) on your invoice remittance.</span></span>
+<span data-ttu-id="7f5f2-105">請在您的發票匯款上，只以 USD 及參考發票編號付款。</span><span class="sxs-lookup"><span data-stu-id="7f5f2-105">Please pay in USD only and reference invoice number(s) on your invoice remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="c166a-106">匯款</span><span class="sxs-lookup"><span data-stu-id="c166a-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="7f5f2-106">電子基金轉移</span><span class="sxs-lookup"><span data-stu-id="7f5f2-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="c166a-107">**銀行：** Citibank 倫敦</span><span class="sxs-lookup"><span data-stu-id="c166a-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="c166a-108">**SWIFT 程式碼：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="c166a-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="c166a-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="c166a-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="c166a-110">**帳戶號碼：** 12510049</span><span class="sxs-lookup"><span data-stu-id="c166a-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="c166a-111">**帳戶名稱：** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="c166a-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="7f5f2-107">**銀行：** Citibank，倫敦</span><span class="sxs-lookup"><span data-stu-id="7f5f2-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="7f5f2-108">**SWIFT 程式碼：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="7f5f2-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="7f5f2-109">**IBAN：** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="7f5f2-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="7f5f2-110">**帳戶號碼：** 12510049</span><span class="sxs-lookup"><span data-stu-id="7f5f2-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="7f5f2-111">**帳戶名稱：** 微軟</span><span class="sxs-lookup"><span data-stu-id="7f5f2-111">**Account Name:** MICROSOFT</span></span>  

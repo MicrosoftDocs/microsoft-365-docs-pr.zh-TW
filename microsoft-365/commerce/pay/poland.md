@@ -9,27 +9,28 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 學習如何傳送帳單的付款。
+description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 73e0f3ce30d2b9d56011ac6ae1769dfd95b30d80
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b50afbba7abd65a0c25b848c565d93f9228086fe
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239591"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403875"
 ---
-# <a name="payment-information-for-poland"></a><span data-ttu-id="18a3a-103">波蘭的付款資訊</span><span class="sxs-lookup"><span data-stu-id="18a3a-103">Payment information for Poland</span></span>
+# <a name="payment-information-for-poland"></a><span data-ttu-id="1cab8-103">波蘭的付款資訊</span><span class="sxs-lookup"><span data-stu-id="1cab8-103">Payment information for Poland</span></span>
 
-<span data-ttu-id="18a3a-104">[尋找另一個國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="18a3a-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="1cab8-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="1cab8-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="18a3a-105">請只 EUR 和參考發票轉接上您的付款匯款付款。</span><span class="sxs-lookup"><span data-stu-id="18a3a-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="1cab8-105">請只在您的付款匯款中付款並參考發票號碼。</span><span class="sxs-lookup"><span data-stu-id="1cab8-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="18a3a-106">匯款</span><span class="sxs-lookup"><span data-stu-id="18a3a-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="1cab8-106">電子基金轉移</span><span class="sxs-lookup"><span data-stu-id="1cab8-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="18a3a-107">**銀行：** Citibank 倫敦</span><span class="sxs-lookup"><span data-stu-id="18a3a-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="18a3a-108">**SWIFT 程式碼/BIC:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="18a3a-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
-<span data-ttu-id="18a3a-109">**IBAN:** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="18a3a-109">**IBAN:** GB31CITI18500812207591</span></span>  
-<span data-ttu-id="18a3a-110">**排序的程式碼：** 185008</span><span class="sxs-lookup"><span data-stu-id="18a3a-110">**SORT Code:** 185008</span></span>  
-<span data-ttu-id="18a3a-111">**帳戶號碼：** 12207591</span><span class="sxs-lookup"><span data-stu-id="18a3a-111">**Account Number:** 12207591</span></span>  
-<span data-ttu-id="18a3a-112">**帳戶名稱：** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="18a3a-112">**Account Name:** MICROSOFT</span></span>
+<span data-ttu-id="1cab8-107">**銀行：** Citibank，倫敦</span><span class="sxs-lookup"><span data-stu-id="1cab8-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="1cab8-108">**SWIFT Code/BIC：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="1cab8-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
+<span data-ttu-id="1cab8-109">**IBAN：** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="1cab8-109">**IBAN:** GB31CITI18500812207591</span></span>  
+<span data-ttu-id="1cab8-110">**分類程式代碼：** 185008</span><span class="sxs-lookup"><span data-stu-id="1cab8-110">**SORT Code:** 185008</span></span>  
+<span data-ttu-id="1cab8-111">**帳戶號碼：** 12207591</span><span class="sxs-lookup"><span data-stu-id="1cab8-111">**Account Number:** 12207591</span></span>  
+<span data-ttu-id="1cab8-112">**帳戶名稱：** 微軟</span><span class="sxs-lookup"><span data-stu-id="1cab8-112">**Account Name:** MICROSOFT</span></span>
