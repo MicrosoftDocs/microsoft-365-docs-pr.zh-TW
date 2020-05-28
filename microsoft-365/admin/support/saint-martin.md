@@ -1,5 +1,5 @@
 ---
-title: 法屬聖馬丁支援資訊
+title: 聖聖馬丁的支援資訊
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,34 +9,35 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何連絡您的國家或地區的客戶支援。
+description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 34051ffea7721a9e524009fea932103e2999e422
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 730c55ce9884054f12271e6ed2d6aa03232375d6
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42356704"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44389778"
 ---
-# <a name="contact-support-for-saint-martin"></a>法屬聖馬丁連絡支援
+# <a name="contact-support-for-saint-martin"></a>聖聖馬丁的連絡人支援
 
-[尋找另一個國家或地區](../contact-support-for-business-products.md)。
+[尋找其他國家或地區](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話號碼
-+1 312 843 5147
++ 1 312 843 5147
 
 ## <a name="hours"></a>小時
 ### <a name="billing-support"></a>帳單支援：
 
-法文： 週一至週五 4 AM 中午
+法文：週一至週五上午4點-中午
 
-英文： 週一至週五 4 AM 中午
+英文：週一至週五上午4點–中午
 
 ### <a name="technical-support"></a>技術支援：
 
-法文： 週一至週五下午 3 AM-4
+法文：週一至週五下午4點-4 點
 
-英文： 每週 7 天，每天 24 小時
+英文：每週7天、每天24小時
 
-國際電話費用
+國際通話費用適用
