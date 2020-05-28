@@ -9,36 +9,37 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何連絡您的國家或地區的客戶支援。
+description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9b6f2b16dbe61ac1f5289858bf9dae1839fe6057
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3ba15712054641d88fe7fbe0d0213e7ca82aa7e6
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42356754"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44390778"
 ---
-# <a name="contact-support-for-russia"></a>俄羅斯的連絡客戶支援
+# <a name="contact-support-for-russia"></a>俄羅斯的連絡人支援
 
-[尋找另一個國家或地區](../contact-support-for-business-products.md)。
+[尋找其他國家或地區](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話號碼
-8 10 800 2548年 1044
+8 10 800 2548 1044
 
 ## <a name="hours"></a>小時
 ### <a name="billing-support"></a>帳單支援：
 
-俄文： 週一至週五上午 10 點-7 PM 莫斯科
+俄語：週一至週五上午10點-7 下午莫斯科
 
-英文： 週一至週五上午 9 點-下午 5 點倫敦
+英文：週一至週五上午9點至下午5點（倫敦）
 
 ### <a name="technical-support"></a>技術支援：
 
-俄文： 週一至週五上午 7-8 PM 莫斯科
+俄語：週一至週五上午7點-8 下午莫斯科
 
-英文： 每週 7 天，每天 24 小時
+英文：每週7天、每天24小時
 
 替代電話號碼： 499 922 86 23
 
-市內電話費用
+適用本機通話費用
