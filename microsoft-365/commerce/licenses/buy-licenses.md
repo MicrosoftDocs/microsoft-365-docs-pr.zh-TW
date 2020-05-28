@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - SaRA
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,19 +26,19 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: 瞭解如何新增及移除 Microsoft 365 for business 訂閱的授權。
-ms.openlocfilehash: f8ae177052be325673af96d9535f25dfcdc93180
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: c4b2b30c9d444aad11ea4cd2faf8b2546e33c39c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141230"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404019"
 ---
 # <a name="manage-subscription-licenses"></a>管理訂閱授權
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -49,7 +50,7 @@ ms.locfileid: "44141230"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 2. 在 [**產品**] 頁面上，尋找您要新增或移除授權的訂閱，然後選取 [**新增/移除授權**]。
 
@@ -63,7 +64,7 @@ ms.locfileid: "44141230"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
 
 2. 在 [**訂閱**] 頁面上，選取您要新增或移除授權的訂閱，然後選取 [**新增/移除授權**]。
 
@@ -77,7 +78,7 @@ ms.locfileid: "44141230"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 [帳單]**** \> [訂閱]<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank"></a> 頁面。
+1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
 
 2. 在 [**訂閱**] 頁面上，選取您要新增或移除授權的訂閱，然後選取 [**新增/移除授權**]。
 
@@ -93,7 +94,7 @@ ms.locfileid: "44141230"
 
 下表說明 [**新增/移除授權**] 連結可能無法使用的原因，以及您可以採取的措施。 
 
-|原因  |描述  |解決方案  |
+|原因  |說明  |解決方案  |
 |---------|---------|---------|
 |已擱置信用檢查。 |如果正在等待信用查核，您會看到「等待信用查核」的訊息，等到信用查核完成後才能購買授權。  | 稍後再次查看，查看是否已完成信用檢查。 信用查核通常需要長達兩個工作天的時間才能完成。<br>After the credit check is complete, you should see the **Add/Remove licenses** link in the **Users** section. 如果是的話，請移至[管理訂閱授權](#manage-subscription-licenses)。 |
 |您已使用產品金鑰啟用訂閱。| 如果訂閱是使用 25 個字元的產品金鑰購買且啟用，您會看到「預付」字樣。  |請參閱[將授權新增至使用產品金鑰支付的訂閱](add-licenses-using-product-key.md)。 |

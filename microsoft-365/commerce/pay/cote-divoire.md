@@ -1,5 +1,5 @@
 ---
-title: 科特迪瓦 （象牙海岸） 的付款資訊
+title: 象牙海岸的付款資訊
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -10,25 +10,26 @@ ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Adm_Commerce_Pay
-description: 學習如何傳送帳單的付款。
+ms.custom: AdminSurgePortfolio
+description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d5a243337c681284c78a84923bbac24055397655
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 114c84a791cf83c5cde99d01ec5b4480609e9277
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42251816"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404151"
 ---
-# <a name="payment-information-for-cte-divoire"></a>科特迪瓦 （象牙海岸） 的付款資訊
+# <a name="payment-information-for-cte-divoire"></a>象牙海岸的付款資訊
 
-[尋找另一個國家或地區](../billing-and-payments/pay-for-your-subscription.md)。
+[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。
 
-請僅支付 USD 中，並參照在您的付款匯款您發票轉接。
+請只以 USD 支付，並且在您的付款匯款上參考您的發票號碼。
 
-## <a name="electronic-funds-transfer"></a>匯款
+## <a name="electronic-funds-transfer"></a>電子基金轉移
 
-**銀行：** Citibank 倫敦  
+**銀行：** Citibank，倫敦  
 **SWIFT 程式碼：** CITIGB2L  
-**IBAN:** GB95CITI18500812510049  
+**IBAN：** GB95CITI18500812510049  
 **帳戶號碼：** 12510049  
-**帳戶名稱：** MICROSOFT  
+**帳戶名稱：** 微軟  

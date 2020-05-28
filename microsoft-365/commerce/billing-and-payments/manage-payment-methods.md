@@ -17,18 +17,19 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 description: 瞭解如何在 Microsoft 365 系統管理中心中管理您的支付方式。
-ms.openlocfilehash: d31da19c10eb61719ba813d271dbdcf573a5aff3
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 0320f71180a5c2c127217ebf01854943409e6386
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322156"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403675"
 ---
 # <a name="manage-payment-methods"></a>管理付款方式
 

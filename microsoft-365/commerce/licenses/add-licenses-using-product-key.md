@@ -16,6 +16,7 @@ ms.collection:
 - Adm_NonTOC
 ms.custom:
 - TopSMBIssues
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
 description: 瞭解如何將授權新增至您的訂閱。
-ms.openlocfilehash: 20e822d6124b3a4383df5308e7a5d47a34d49ed6
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 370ed833a1c7c5142c7725666885a945e1524b53
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045401"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404007"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>新增授權或擴充使用產品金鑰支付的訂閱
 
@@ -42,7 +43,7 @@ ms.locfileid: "44045401"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 2. 尋找您要新增授權的訂閱。 在 [**授權**] 區段中，選取 [**新增更多授權**]。
 
@@ -78,7 +79,7 @@ ms.locfileid: "44045401"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 [**帳單** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">產品 & 服務</a>] 頁面。  
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">產品 & 服務</a>] 頁面。  
 
 2. 尋找您要新增授權的訂閱。 選取 [**其他動作**] 下拉式清單，然後選擇 [**使用權杖更新] 或 [新增授權**]。
 
@@ -99,7 +100,7 @@ ms.locfileid: "44045401"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 2. 尋找您要擴充的訂閱。 在 [**帳單**] 區段中，選取 [**結束日期**]。
 

@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: 在變更 Microsoft 365 方案之前，請先備份 Outlook、OneDrive、Yammer 及 SharePoint 內容。
-ms.openlocfilehash: a482d59e92cd7055362663ed92630322e4ccf68a
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: b7a29912416bd659f2e0dd40c7aa6b9f6309676e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708092"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403615"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>切換 Microsoft 365 for business 方案之前備份資料
 
@@ -61,8 +62,8 @@ ms.locfileid: "43708092"
 https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 ```
 
-其中_ \<orgDomain\> _是組織的 URL。
+_\<orgDomain\>_ 組織的 URL 位於何處。
   
-例如，如果組織的網域為 contoso.onmicrosoft.com，小組網站的直接 URL 就會是https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx。
+例如，如果組織的網域為 contoso.onmicrosoft.com，小組網站的直接 URL 就會是 https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx 。
   
 當然，使用者也可以將 SharePoint 線上檔從 SharePoint 小組網站下載至他們的本機電腦，也可以在任何時間從其他位置下載。

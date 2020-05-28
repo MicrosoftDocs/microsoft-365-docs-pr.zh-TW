@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 在系統管理中心更新您的系統管理員電話號碼和電子郵件地址。 如果您想要重設自己的系統管理員密碼，您將需要此資訊。
-ms.openlocfilehash: 6f4303cd637bfb87fc4d35ce49904cedf5bf7f0a
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: bd8ee28cbc7982ea5b057fecb34d362557a5d5a9
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139586"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407917"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>更新您的系統管理員電話號碼和電子郵件地址
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 本文說明您的系統管理員可以如何在 Microsoft 365 中變更您的商務電話和電子郵件地址。
@@ -44,7 +45,7 @@ ms.locfileid: "44139586"
   
 1. 流覽至 Microsoft 365 系統管理中心。
 
-2. 在頁首中，選取您的配置\>檔圖示**My account** \> **個人資訊**。
+2. 在頁首中，選取您的設定檔圖示 \> **My account** \> **個人資訊**。
 
 3. 在 [**連絡人詳細資料**] 區段中，選取 [編輯]。 更新您的行動電話、電話和備用電子郵件地址。 請確認您使用的電子郵件地址與您的備選電子郵件地址不同。
 
@@ -57,4 +58,4 @@ ms.locfileid: "44139586"
   
 - [變更 Microsoft 365 商務用帳單的帳單位址](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [在 Microsoft 365 for business 中新增、更新或移除信用卡或銀行帳戶](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [管理付款方式](../../commerce/billing-and-payments/manage-payment-methods.md)

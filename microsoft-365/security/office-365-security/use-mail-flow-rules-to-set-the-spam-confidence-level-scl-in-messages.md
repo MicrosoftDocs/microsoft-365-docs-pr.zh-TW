@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何建立郵件流程規則（傳輸規則）來識別郵件，以及在 Exchange Online Protection 中設定郵件的垃圾郵件信賴等級（SCL）。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9af154a9f71992597e111147b792cd5286e2ad3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 223e676579c99eca7db641146d3a1b6bd22f9ca2
+ms.sourcegitcommit: 1f3101326e8a54b9bda4ba0324eae00fafcf5e7b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208558"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44405116"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>使用郵件流程規則來設定 EOP 中郵件的垃圾郵件信賴等級（SCL）
 
@@ -54,7 +54,7 @@ ms.locfileid: "44208558"
 
    - **請執行下列**動作：選取 [**修改郵件屬性**] \> **設定垃圾郵件信賴等級（SCL）**。 在出現的 [**指定 SCL** ] 對話方塊中，設定下列其中一個值：
 
-   - **略過垃圾郵件篩選**：這會將 SCL 設為-1，這表示郵件會略過垃圾郵件篩選。
+   - **略過垃圾郵件篩選**：郵件會略過垃圾郵件篩選。
 
      > [!CAUTION]
      > 請務必小心允許郵件略過垃圾郵件篩選。 攻擊者可以利用此弱點，將網路釣魚和其他惡意郵件傳送至您的組織。 郵件流程規則需要的不僅僅是寄件者的電子郵件地址或網域。 如需詳細資訊，請參閱[在 EOP 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。

@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: 瞭解如何變更商務用訂閱的付款條件。
-ms.openlocfilehash: babc8911305fe009ad3b9dc49163a0525c6d0666
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7350546da14ebd68182e158c0d15cdfb727f5718
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401807"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407965"
 ---
 # <a name="change-your-payment-method"></a>變更您的付款方式
 
@@ -43,7 +43,7 @@ ms.locfileid: "44401807"
 > [!IMPORTANT]
 > 在某些國家或地區無法使用銀行帳戶付款。
 
- **只想變更您的信用卡或銀行帳戶資訊？** 請參閱[新增、更新或移除信用卡或銀行帳戶](add-update-or-remove-credit-card-or-bank-account.md)。
+ **只想變更您的信用卡或銀行帳戶資訊？** 請參閱[管理支付方式](manage-payment-methods.md)。
 
  **只想變更您的計費頻率？** 請參閱[變更您的付款頻率](change-payment-frequency.md)。
   
@@ -67,7 +67,7 @@ ms.locfileid: "44401807"
   
  **想變更您的付款頻率嗎？** 如果您想要變更您為訂閱付費的頻率（從每年到每月或每年），您必須[致電 Microsoft 支援人員](../../admin/contact-support-for-business-products.md)以取得協助。
   
- **只想變更您的信用卡或銀行帳戶資訊？** 請參閱[新增、更新或移除信用卡或銀行帳戶](add-update-or-remove-credit-card-or-bank-account.md)。
+ **只想變更您的信用卡或銀行帳戶資訊？** 請參閱[管理支付方式](manage-payment-methods.md)。
   
  **如果我有未付餘額，該怎麼辦？**
   

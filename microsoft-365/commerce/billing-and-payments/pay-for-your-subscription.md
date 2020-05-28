@@ -25,12 +25,12 @@ ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-ms.openlocfilehash: 387cc4af038bea572a60176b2c2b400f410aa6ad
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: baf09d87f6229cb530c328d570fa70dc25729a11
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401759"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407953"
 ---
 # <a name="pay-for-your-subscription"></a>支付訂閱費用
 
@@ -48,7 +48,7 @@ ms.locfileid: "44401759"
 
 ## <a name="pay-by-credit-card-or-bank-account"></a>以信用卡或銀行帳戶付款
 
-若以信用卡或銀行帳戶付款，系統將會在發票日期隔天自動向您收取訂閱的款項，直到您的訂閱期結束為止。 您可以依需求隨時[更新信用卡或銀行帳戶資訊](add-update-or-remove-credit-card-or-bank-account.md)。 您也可以選擇[透過電子郵件接收帳單明細的複本](#receive-a-copy-of-your-billing-statement-in-email)。
+若以信用卡或銀行帳戶付款，系統將會在發票日期隔天自動向您收取訂閱的款項，直到您的訂閱期結束為止。 您可以隨時[管理支付方式](manage-payment-methods.md)。 您也可以選擇[透過電子郵件接收帳單明細的複本](#receive-a-copy-of-your-billing-statement-in-email)。
 
 ### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a>如果我的信用卡被拒絕且款項逾期，該怎麼辦？
 
@@ -63,12 +63,12 @@ ms.locfileid: "44401759"
 
 2. 找到未付餘額的訂閱。 在 [帳單]**** 區段中，在**有逾期款項的訂閱**旁，選取 [結算餘額]****。
 
-3. 如果您是信用卡所有人，您可以變更卡片到期日、挑選其他卡片，或[新增卡片](add-update-or-remove-credit-card-or-bank-account.md)。
+3. 如果您是信用卡所有人，您可以變更卡片到期日、挑選其他卡片，或[新增卡片](manage-payment-methods.md)。
 
     > [!NOTE]
     > 使用 [結算餘額]**** 功能時，您要支付帳戶上的所有未付餘額，這可能比其他地方顯示的應付金額還要多。
 
-4. 如果您不是信用卡所有人，您可以選擇其他信用卡，或[新增卡片](add-update-or-remove-credit-card-or-bank-account.md)。
+4. 如果您不是信用卡所有人，您可以選擇其他信用卡，或[新增卡片](manage-payment-methods.md)。
 
 5. 更新信用卡資訊或變更之前用於支付訂閱的卡片後，請選擇 [儲存]****。
 
@@ -80,12 +80,12 @@ ms.locfileid: "44401759"
 
 2. 選取您要變更的訂閱。 在 [我的帳單]**** 區段中，選取 [立即付款]****。
 
-3. 如果您是信用卡所有人，您可以變更卡片到期日、挑選其他卡片，或[新增卡片](add-update-or-remove-credit-card-or-bank-account.md)。
+3. 如果您是信用卡所有人，您可以變更卡片到期日、挑選其他卡片，或[新增卡片](manage-payment-methods.md)。
 
     > [!NOTE]
     > 使用 [立即付款]**** 功能時，您要支付帳戶上的所有未付餘額，這可能比其他地方顯示的應付金額還要多。
 
-4. 如果您不是信用卡所有人，您可以選擇其他信用卡，或[新增卡片](add-update-or-remove-credit-card-or-bank-account.md)。
+4. 如果您不是信用卡所有人，您可以選擇其他信用卡，或[新增卡片](manage-payment-methods.md)。
 
 5. 更新信用卡資訊或變更之前用於支付訂閱的卡片後，請選擇 [提交]****。 您會看到確認訊息顯示「您的付款方式已更新，且所有未付款項已結清。 感謝您。」
 
@@ -311,6 +311,6 @@ ms.locfileid: "44401759"
 
 ## <a name="related-articles"></a>相關文章
 
-[新增、更新或移除信用卡或銀行帳戶](add-update-or-remove-credit-card-or-bank-account.md)
+[管理付款方式](manage-payment-methods.md)
 
 [認識您的帳單或發票](understand-your-invoice2.md)

@@ -20,17 +20,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: 瞭解如何驗證 Microsoft 365 for business app protection 設定會在使用者的 Windows 10 裝置上生效。
-ms.openlocfilehash: b63681f040b0fe49127693e9cb7aac7ba6c41af6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 39aee3bc811cb0090d58f9a282de7a8162c097b3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635697"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403583"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>在 Windows 10 電腦上驗證裝置保護設定
 
@@ -38,21 +39,21 @@ ms.locfileid: "43635697"
 
 [設定裝置原則](protection-settings-for-windows-10-pcs.md)之後，可能需要數小時的時間，才能讓原則在使用者的裝置上生效。 您可以在使用者的裝置上查看各種 Windows 設定畫面，以確認原則是否生效。 因為使用者無法修改其 Windows 10 裝置上的 Windows Update 和 Windows Defender 防病毒設定，所以許多選項會變暗。
   
-1. 移至 [**設定** \> ] [**更新&amp;安全性** \> ] [ **Windows 更新** \> **重新開機] 選項**，並確認所有設定均呈現灰色。 
+1. 移至 [**設定**] [ \> **更新 &amp; 安全性**] [ \> **Windows 更新** \> **重新開機] 選項**，並確認所有設定均呈現灰色。 
     
     ![所有重新開機選項都是灰色的。](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. 移至 [**設定** \> ] [ ** &amp;更新安全性** \> ] [ **Windows 更新** \> ] [**高級選項**]，確認所有設定均呈現灰色。 
+2. 移至 [**設定**] [ \> **更新 &amp; 安全性**] [ \> **Windows 更新**] [ \> **高級選項**]，確認所有設定均呈現灰色。 
     
     ![Windows 高級更新選項都是灰色的。](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
-3. 移至 **[設定** \> **更新&amp;安全性** \> ] **Windows 更新** \> [**高級選項** \> ]**選擇如何傳送更新**。
+3. 移至 [**設定** \> **更新 &amp; 安全性**] \> **Windows 更新** \> [**高級選項**] \> **選擇如何傳送更新**。
     
     請確認您可以看到郵件（紅色）某些設定已隱藏或由您的組織管理，且所有選項均呈現灰色。
     
     ![選擇如何傳送更新頁面表示設定已隱藏或由您的組織管理。](../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. 若要開啟 Windows defender 安全中心，請移至 [**設定** \> ** &amp;更新安全性** \> ] **Windows defender** \>按一下 [**開啟 windows defender 安全中心** \> **病毒&amp;執行緒防護** ** &amp; ** \>病毒防護] 設定。 
+4. 若要開啟 Windows defender 安全中心，請移至 [**設定** \> **更新 &amp; 安全性**] \> **Windows defender** \> 按一下 [**開啟 windows defender 安全中心** \> **病毒 &amp; 執行緒防護** \> **病毒 &amp; 防護] 設定**。 
     
 5. 確認所有選項均呈現灰色。 
     

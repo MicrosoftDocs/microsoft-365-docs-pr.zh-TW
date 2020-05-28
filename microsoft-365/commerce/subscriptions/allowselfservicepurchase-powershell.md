@@ -11,17 +11,17 @@ ms.service: o365-administration
 localization_priority: None
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 瞭解如何使用 AllowSelfServicePurchase PowerShell Cmdlet 來開啟或關閉自助購買服務。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6c0bcec70eab4266674ca2a22f1b2054807a26e8
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: ec5ebe814066916de5cafc176cdcd82bfd416a57
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011672"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403687"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>針對 MSCommerce PowerShell 模組使用 AllowSelfServicePurchase
 
