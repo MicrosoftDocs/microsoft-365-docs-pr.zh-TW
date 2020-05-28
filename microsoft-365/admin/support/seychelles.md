@@ -1,5 +1,5 @@
 ---
-title: 塞錫爾支援資訊
+title: 塞席爾的支援資訊
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,30 +9,31 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何連絡您的國家或地區的客戶支援。
+description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9c493dd7be206e61789e11eebad734f8ffce3524
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: a446a0a333b246aeb8e8c02eccaad01e9f90b11f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42356544"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388410"
 ---
-# <a name="contact-support-for-seychelles"></a><span data-ttu-id="2fc88-103">連絡支援人員的塞錫爾</span><span class="sxs-lookup"><span data-stu-id="2fc88-103">Contact support for Seychelles</span></span>
+# <a name="contact-support-for-seychelles"></a><span data-ttu-id="0b0c3-103">取得塞席爾的技術支援</span><span class="sxs-lookup"><span data-stu-id="0b0c3-103">Contact support for Seychelles</span></span>
 
-<span data-ttu-id="2fc88-104">[尋找另一個國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="2fc88-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="0b0c3-104">[尋找其他國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="0b0c3-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="2fc88-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="2fc88-105">Phone number</span></span>
-<span data-ttu-id="2fc88-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="2fc88-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="0b0c3-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="0b0c3-105">Phone number</span></span>
+<span data-ttu-id="0b0c3-106">+ 1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="0b0c3-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="2fc88-107">小時</span><span class="sxs-lookup"><span data-stu-id="2fc88-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="2fc88-108">帳單支援：</span><span class="sxs-lookup"><span data-stu-id="2fc88-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="0b0c3-107">小時</span><span class="sxs-lookup"><span data-stu-id="0b0c3-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="0b0c3-108">帳單支援：</span><span class="sxs-lookup"><span data-stu-id="0b0c3-108">Billing Support:</span></span>
 
-<span data-ttu-id="2fc88-109">英文： 週一至週五下午 1-9</span><span class="sxs-lookup"><span data-stu-id="2fc88-109">English: Mon-Fri 1 PM-9 PM</span></span>
+<span data-ttu-id="0b0c3-109">英文：週一至週五下午1點-9 PM</span><span class="sxs-lookup"><span data-stu-id="0b0c3-109">English: Mon-Fri 1 PM-9 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="2fc88-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="2fc88-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="0b0c3-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="0b0c3-110">Technical Support:</span></span>
 
-<span data-ttu-id="2fc88-111">英文： 每週 7 天，每天 24 小時</span><span class="sxs-lookup"><span data-stu-id="2fc88-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="0b0c3-111">英文：每週7天、每天24小時</span><span class="sxs-lookup"><span data-stu-id="0b0c3-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="2fc88-112">國際電話費用</span><span class="sxs-lookup"><span data-stu-id="2fc88-112">International call charges apply</span></span>
+<span data-ttu-id="0b0c3-112">國際通話費用適用</span><span class="sxs-lookup"><span data-stu-id="0b0c3-112">International call charges apply</span></span>
